@@ -1,8 +1,8 @@
 ---
 title: Käyttöomaisuuserien tapahtuma-asetukset
 description: Tässä ohjeaiheessa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764260"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344687"
 ---
 # <a name="fixed-asset-transaction-options"></a>Käyttöomaisuuserien tapahtuma-asetukset
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät.
 
@@ -57,15 +58,17 @@ Käyttöomaisuustapahtumatyyppejä voi kirjata Kirjauskansio-sivulla. Voit käyt
 |                                     | Hankinta | Ostotilaus                            |
 | Poisto                        | Käyttöomaisuudet             | Käyttöomaisuudet                              |
 |                                     | Kirjanpito           | Kirjauskansio                           |
-| Luovutus                            | Käyttöomaisuuserät             | Käyttöomaisuuserät                              |
-| ** **                               | Kirjanpito           | Kirjauskansio                           |
-| ** **                               | Myyntireskontra      | Vapaatekstilasku                         |
+| Luovutus                            | Käyttöomaisuus             | Käyttöomaisuus                              |
+|                                     | Kirjanpito           | Kirjauskansio                           |
+|                                     | Myyntireskontra      | Vapaatekstilasku                         |
 
-Käyttöomaisuuden poistokausien jäljellä olevaa arvoa ei päivitetä, kun poistotapahtumatyypin kirjauskansion rivi luodaan tai tuodaan manuaalisesti tietoyksikön kautta. Tämä arvo päivitetään, kun kirjauskansion rivi luodaan käyttämällä poistoehdotusprosessia.
+Käyttöomaisuuden poistokausien jäljellä olevaa arvoa ei päivitetä, kun poistotapahtumatyypin kirjauskansion rivi luodaan tai tuodaan manuaalisesti tietoyksikön kautta. Jäljellä oleva arvo päivitetään, kun kirjauskansion rivi luodaan käyttämällä poistoehdotusprosessia.
 
 Lisätietoja on ohjeaiheessa [Käyttöomaisuuden integrointi](fixed-asset-integration.md).
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>Tapahtumat, joille vaaditaan eri tositenumeroita
+Järjestelmä estää poiston kirjauksen kahdesti samalla kaudella. Jos esimerkiksi kaksi käyttäjää luo poistoehdotukset erikseen tammikuulle, ensimmäisen käyttäjän poisto kirjataan ensimmäisessä kirjauskansiossa. Kun toinen käyttäjä kirjaa poiston toisessa kirjauskansiossa, järjestelmä tarkistaa päivämäärän, jolloin poisto suoritettiin viimeksi eikä kirjaa saman kauden poistoa toista kertaa.
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>Tapahtumat, joissa tarvitaan eri tositenumero
 
 Seuraavissa käyttöomaisuustapahtumissa käytetään eri tositenumeroita:
 

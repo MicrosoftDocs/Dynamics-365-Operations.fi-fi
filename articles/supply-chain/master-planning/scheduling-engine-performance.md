@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 223ad9b5a297a5bcdbb0314d406f64d5de2b239431c6df21299ddebd9e47b8a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a37e3463273d1ffd35b267b36dfbd6fd92bb255
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343474"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Ajoitusmoduulin suorituskyvyn parantaminen
 
@@ -70,7 +70,7 @@ Käytetään esimerkkinä seuraavassa taulukossa ja kuvassa näkyvää reittiä,
 
 Kun tämä lähetetään moduuliin, se jakautuu kahdeksaksi työksi, kuten seuraavassa kuvassa. (Voit suurentaa kuvan valitsemalla sen.)
 
-[![Ajoitusmoduulin työt](media/scheduling-engine-jobs.png "Ajoitusmoduulin työt."](media/scheduling-engine-jobs-large.png)
+[![Ajoitusmoduulin työt](media/scheduling-engine-jobs.png "Ajoitusmoduulin työt")](media/scheduling-engine-jobs-large.png)
 
 Kahden työn välinen vakiolinkki on `FinishStart`. Tämä tarkoittaa sitä, että yhden työn päättymisajan on oltava ennen toisen työn alkamisaikaa. Koska määrityksen tekijän on oltava sama resurssi, joka tekee myöhemmin prosessin, niiden välillä on `OnSameResource`-rajoituksia. Kohdan 10 ensisijaisen ja toissijaisen työvaiheen välillä on `StartStart`- ja `FinishFinish`-linkit. Tämä tarkoittaa sitä, että kummankin työn on alettava ja päätyttävä samanaikaisesti. `NotOnSameResource`-rajoitukset puolestaan estävät sen, että sama resurssi ei voi olla ensisijainen ja toissijainen.
 

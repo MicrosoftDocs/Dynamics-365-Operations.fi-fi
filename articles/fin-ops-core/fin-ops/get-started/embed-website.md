@@ -2,7 +2,7 @@
 title: Kolmannen osapuolen sovellusten upottaminen
 description: Tässä ohjeaiheessa käsitellään kolmannen osapuolen sovellusten upottamista laajentamaan tuotteen toimintoja.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f47fb6a2fdb586fbc9f25938c3b9c1cfc16ddc1af432b91621421bd829b23925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737796"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345407"
 ---
 # <a name="embed-third-party-apps"></a>Kolmannen osapuolen sovellusten upottaminen
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Monet asiakkaat käyttävät useita sovelluksia liiketoiminnan harjoittamiseen. Osa sovelluksista on kolmannen osapuolen verkkosovelluksia, jotka toimivat yhdessä Finance and Operations -sovellusten kanssa. Jos haluat tarjota saumattomamman käyttökokemuksen, voit käyttää **(Esiversio) Koko sivun sovellukset** -toimintoa, kun haluat upottaa nämä kolmannen osapuolen sovellukset suoraan Finance and Operations -sovelluksiin (jos kolmannen osapuolen sovellukset sallivat upottamisen). Näin käyttäjät voivat käyttää tarvitsemiaan sivustoja ja sovelluksia ilman, että heidän tarvitsee vaihtaa välilehtiä tai ikkunoita.
+Monet asiakkaat käyttävät useita sovelluksia liiketoiminnan harjoittamiseen. Osa sovelluksista on kolmannen osapuolen verkkosovelluksia, jotka toimivat yhdessä Finance and Operations -sovellusten kanssa. Jos haluat antaa entistä sujuvamman käyttökokemuksen, voit käyttää **Koko sivun sovellukset** -toimintoa, kun haluat upottaa nämä kolmannen osapuolen sovellukset suoraan Finance and Operations -sovelluksiin (jos kolmannen osapuolen sovellukset sallivat upottamisen). Näin käyttäjät voivat käyttää tarvitsemiaan sivustoja ja sovelluksia ilman, että heidän tarvitsee vaihtaa välilehtiä tai ikkunoita.
 
-Ennen kuin voit upottaa kolmannen osapuolen sovellukset tuotteeseen, ota ominaisuuksien hallinnassa käyttöön **(Esiversio) Koko sivun sovellukset**. Sen jälkeen voit upottaa kolmannen osapuolen sovelluksen tai sivuston jollais seuraavista tavoista. Nämä menetelmät ovat analogisia menetelmille, joita käytetään kaaviosovellusten upottamiseen Microsoft Power Apps -sovelluksista Finance and Operations -sovelluksiin.
+Ennen kuin voit upottaa kolmannen osapuolen sovellukset tuotteeseen, ota ominaisuuksien hallinnassa käyttöön **Koko sivun sovellukset**. Sen jälkeen voit upottaa kolmannen osapuolen sovelluksen tai sivuston jollais seuraavista tavoista. Nämä menetelmät ovat analogisia menetelmille, joita käytetään kaaviosovellusten upottamiseen Microsoft Power Apps -sovelluksista Finance and Operations -sovelluksiin.
 
 - Upota sovellus tai sivusto aiemmin luodulle sivulle uutena välilehtenä (pivot-välilehti, pikavälilehti, lehti tai työtilan osa).
 - Luo sovellukselle tai sivustolle uusi koko sivun kokemus koontinäytössä.
@@ -64,7 +64,7 @@ Käytä tätä menettelyä, jos haluat täydentää järjestelmässä olevaa siv
 Käytä tätä menettelyä, jos upotettava sovellus ei liity aiemmin luotuun sivuun tai jos haluat vain koko sivun kokemuksen sovellukselle Finance and Operations -sovelluksessa.
 
 1. Avaa koontinäyttö.
-2. Pidä sivua valittuna (tai napsauta sitä hiiren kakkospainikkeella), valitse **Mukauta** ja valitse sitten **Lisää sivu**.
+2. Tee valinta ja pidä se valittuna koontinäytössä (tai napsauta hiiren kakkospainikkeella), valitse sitten **Mukauta** ja valitse lopuksi **Lisää sivu**.
 3. Valitse **Lisää sivu** -ruudussa **Sivusto**.
 4. Määritä upotettu sovellus seuraavasti:
 
@@ -76,15 +76,15 @@ Käytä tätä menettelyä, jos upotettava sovellus ei liity aiemmin luotuun siv
     > - Sovelluksen tai verkkosivuston asetukset on määritettävä niin, että ne sallivat upottamisen.
 
 5. Lisää sovellus koontinäyttöön uutena ruutuna valitsemalla **Tallenna**.
-6. Valitse uusi ruutu koontinäytöstä ja vahvista, että sovellus näkyy odotetulla tavalla. Jos sovellusta ei hahmonneta, katso [Vianmääritys](#troubleshooting)-osa jäljempänä tässä ohjeaiheessa.
+6. Valitse uusi ruutu koontinäytöstä ja vahvista, että sovellus näkyy odotetulla tavalla. Jos sovellusta ei hahmonneta, lisätietoja on jäljempänä tässä aiheessa kohdassa [Vianmääritys](#troubleshooting).
 
 ## <a name="sharing-embedded-apps"></a>Upotettujen sovellusten jakaminen
 
 Kun olet upottanut sovelluksen käyttämällä jotakin aiemmissa osissa kuvatuista menetelmistä, voit jakaa näkymän järjestelmän muiden käyttäjien kanssa. Voit jakaa upotetun sovelluksen jollain seuraavista tavoista:
 
-- **Julkaise näkymä (Suositeltu):** Jos upotettu sovellus on tallennettu näkymään, suositeltu ja ensisijainen tapa jakaa se on julkaista näkymä käyttäjille, joilla on asianmukaiset käyttöoikeusroolit. Sitten kaikki käyttäjät, joilla on julkaistun näkymän kohteena olevat käyttöoikeusroolit, näkevät sovelluksen Finance and Operations -sovelluksissa. Lisätietoja näkymän julkaisemisesta on kohdassa [Julkaisunäkymät](saved-views.md#publishing-views).
+- **Julkaise näkymä (suositus):** Jos upotettu sovellus on tallennettu näkymään, sen suositeltu ja ensisijainen jakotapa on julkaista näkymä käyttäjille, joilla on soveltuvat käyttöoikeusroolit kohteena olevissa yrityksissä. Silloin vain toivotut käyttäjät näkevät upotetun sovelluksen kyseisellä sivulla. Lisätietoja näkymän julkaisemisesta on kohdassa [Julkaisunäkymät](saved-views.md#publishing-views).
 
-    Voit myös julkaista sovelluksen, joka on upotettu koko sivun käyttökokemuksena koontinäytöstä. Koontinäytössä valitse ja pidä valittuna (tai valitse hiiren kakkospainikkeella) sovellukseen liittyvä ruutu, valitse **Mukauta** valitse sitten **Julkaise sivu**. Tällä hetkellä voit julkaista vain käyttöoikeusrooleihin. Toiminto julkaisuun yrityksille lisätään kuitenkin ennen kuin ominaisuus tulee yleisesti käyttöön.
+    Voit myös julkaista sovelluksen, joka on upotettu koko sivun käyttökokemuksena koontinäytöstä. Koontinäytössä valitse ja pidä valittuna (tai valitse hiiren kakkospainikkeella) sovellukseen liittyvä ruutu, valitse **Mukauta** valitse sitten **Julkaise sivu**. *Näkymien julkaiseminen* -kokemusta muistuttava kokemus näytetään, ja käyttöoikeudet, joihin julkaisu tehdään, voidaan valita. Jos päivityksestä 10.0.21 alkaen **Tallennettujen näkymien parannetut yritystuki** -ominaisuus on otettu käyttöön, sovellus voidaan julkaista myös toivottuihin yrityksiin.
 
 - **Kopioi mukauttaminen**: Jos sivu ei tue näkymiä (esimerkiksi valintaikkunat tai työtilat), tai koko sivun sovelluskokemusta varten, voit kopioida mukautuksen asianmukaisille käyttäjille. Lisätietoja on kohdassa [Mukauttamisen jakaminen](personalize-user-experience.md#sharing-personalizations).
 

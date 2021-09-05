@@ -2,7 +2,7 @@
 title: Haun tietolähteiden määrittäminen ER-sovelluskohtaisten parametrien käyttämiseksi
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää hakutietolähteet sähköisen raportoinnin (ER) muodoissa käyttämään ER-sovelluskohtaisia parametreja.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723186"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343426"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Haun tietolähteiden määrittäminen ER-sovelluskohtaisten parametrien käyttämiseksi 
 
@@ -69,7 +69,7 @@ Voit määrittää valitun ER-muodon hakusäännöt käyttämällä käyttöliit
 Seuraavassa kuvassa havainnollistetaan, miten **lasketun kenttä** tyypin `Model.Data.Summary.LevelByLookup`-tietolähteen voi konfiguroida niin, että se kutsui määritettyä **haku** tietolähdettä ja antaa tarvittavat parametrit. Voit käsitellä tätä puhelua ajon aikana ER käy läpi määritetyssä järjestyksessä määritettyjen sääntöjen luettelon ja etsii ensimmäisen säännön, joka täyttää määritetyt ehdot. Tässä esimerkissä sääntö, joka sisältää annettua verokoodia vastaavat verokoodit. Näin saadaan selville, mikä sääntö on sopivin ja mikä on sääntöä varten konfiguroitu valintalista-arvo, jonka tämä tietolähde palauttaa.
 
 > [!NOTE]
-> Poikkeus ilmenee, jos sovellettavaa sääntöä ei löydy. Voit estää nämä poikkeukset määrittämällä sääntöluettelon lopussa lisää sääntöjä, jotka käsittelevät tapauksia, joissa annetaan ei-konfiguroitu arvo tai arvoa ei ole. Käytä **\*Ei tyhjä\***- ja **\*Tyhjä\***-asetuksia vastaavasti.  
+> Poikkeus ilmenee, jos sovellettavaa sääntöä ei löydy. Voit estää nämä poikkeukset määrittämällä sääntöluettelon lopussa lisää sääntöjä, jotka käsittelevät tapauksia, joissa annetaan ei-konfiguroitu arvo tai arvoa ei ole. Käytä **\*Ei tyhjä**\*- ja **\*Tyhjä**\*-asetuksia vastaavasti.  
 >
 > ![Määritetyn hakutietolähteen kutsuminen tietolähteen lisäämiseksi.](./media/er-lookup-data-sources-img7.png)
 

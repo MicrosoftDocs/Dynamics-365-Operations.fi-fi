@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a0ea3efc08ac9305887727c57a3821c694d6b25d3355edb6a60a6348967842c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2efa7021c302e771f36179be690fc1c8653a07
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763091"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402370"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Dynamics 365 Financen toiminnallisen konsultin oppimisluettelo
 
@@ -34,6 +34,7 @@ Toiminnallisten konsulttien osalta meidän työtehtäväanalyysimme osoitti, ett
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia |
 | [Finance and Operations -sovellusten käytön aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
+| [Dynamics 365 Intelligent Order Managementn käytön aloittaminen](/learn/modules/get-started-intelligent-order-management/) | Asiakkaat voivat hallita Dynamics 365 Intelligent Order Managementin avulla tilausten orkestrointia täyttämiseen saakka. Näiden ominaisuuksien avulla organisaatiot voivat orkestroida tilauksen työnkulut eri ympäristöissä ja sovelluksissa. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 30 minuuttia |
 | [Ennen ostamista](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Voit käyttää vaihe vaiheelta -opasta silloin, kun arvioit Finance and Operations -sovellusta tai kun olet valmis hankkimaan sen. | Dokumentaatio | |
 | [Julkaisusuunnitelma](/dynamics365/release-plans/) | Lisätietoja Dynamics 365 -järjestelmän uusimmista ominaisuuksista ja parannuksista | Dokumentaatio | |
 
@@ -41,6 +42,7 @@ Toiminnallisten konsulttien osalta meidän työtehtäväanalyysimme osoitti, ett
 
 | Sisältö  | kuvaus | Muoto  | Pituus    |
 |----------|-------------|---------|-----------|
+| [Success by Design for Dynamics 365 -ratkaisujen käyttäminen](/learn/paths/use-success-design/) | FastTrack for Dynamics 365 on suunniteltu auttamaan asiakkaita tai kumppaneita ottamaan Dynamics 365 -ratkaisut käyttöön. Ratkaisuarkkitehtien on käytettävä Success by Designia tämän palvelun toimittamiseen. Tässä oppimispolussa käsitellään Success by Designin käsitteitä. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 12 tuntia |
 | [Lifecycle Servicesin käyttö Finance and Operations -sovellusten suunnittelussa ja käyttöönotossa](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) on yhteistoiminnallinen työtila, jonka avulla asiakkaat ja heidän kumppaninsa voivat hallita Finance and Operations -sovellusprojekteja esimyynnistä toteutusvaiheeseen ja lopuksi tuotantoympäristöön. Se sisältää tarkistuslistoja ja työkaluja, joiden avulla voit hallita projektia, mukaan lukien käyttövalmiit menetelmät, jotka helpottavat toteutusta ja jotka päivitetään säännöllisesti. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Organisaation asetusten määrittäminen Finance and Operations -sovelluksissa](/learn/paths/configure-your-organization-finance-ops/) | Finance and Operations -sovellusten kanssa toimivana toiminnallisena konsulttina sinun on ymmärrettävä, miten voit määrittää asiakkaan organisaation. Tämä oppimispolku näyttää muun muassa, miten voit määrittää yritykset, ottaa käyttöön suojausasetukset, mukauttaa käyttäjien käyttöliittymää, suunnitella ja muodostaa mobiilisovelluksia sekä toteuttaa yleisiä integrointeja. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 12 tuntia |
 | [Tietojen siirtäminen ja Finance and Operations -sovellusten julkaisu](/learn/paths/migrate-data-go-live-finance-operations/) | Toiminnallisena konsulttina sinun on ymmärrettävä, miten voit valmistella asiakkaan tiedot siirtoa varten, käsitellä tietojen hallintaa ja suorittaa käyttäjän hyväksymistestauksen, jotta voit julkaista Finance and Operations -sovellusten avulla. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
@@ -102,6 +104,5 @@ Toiminnallisten konsulttien osalta meidän työtehtäväanalyysimme osoitti, ett
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Financials Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Financials Functional Consultant -konsultit yhtenäistävät globaalin taloushallinnon ja toiminnot ja automatisoivat tehtäviä ja työnkulkuja, virtaviivaistavat asiakkaiden tilauksen, myynnin, laskutuksen ja raportoinnin. | Sertifikaatti, kustannukset vaihtelevat alueittain |
 | [Tentti MB-300: Microsoft Dynamics 365 Unified Operationsin perustoiminnot](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: Käytä yleisiä toimintoja ja toteutustyökaluja; Määritä suojaus, prosessit ja asetukset; tietojen siirron suorittaminen; tukea ratkaisua. | Tentti, kustannukset vaihtelevat alueittain |
 | [Tentti MB-310: Microsoft Dynamics 365 for Finance and Operations, taloushallinto](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: taloushallinnon määrittäminen ja konfiguroiminen; hallita ja soveltaa yhteisiä prosesseja; toimeenpanee ja hallinnoi osto- ja myynti saamisia; budjetoinnin ja käyttöomaisuuden hallinta. | Tentti, kustannukset vaihtelevat alueittain |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

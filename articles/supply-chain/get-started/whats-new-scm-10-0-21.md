@@ -2,7 +2,7 @@
 title: Dynamics 365 Supply Chain Management 10.0.21:n esiversio (lokakuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.21 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-ms.date: 08/02/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 517411512760374f1d1fd3b8ea3615563c47202c2e847569d00cb17a94657630
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012034"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391205"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Management 10.0.21:n esiversio (lokakuu 2021)
 
@@ -29,17 +29,18 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 - **Version yleinen saatavuus (automaattinen päivitys):** lokakuu 2021
 
 ## <a name="known-deployment-issue"></a>Tiedossa oleva käyttöönoton ongelma
+
 Kun IaaS-versio 10.0.21 otetaan käyttöön, näyttöön saattaa tulla seuraava varoitus:
 
 **Varoituskoodi:** 95017
 
-**Varoitussanoma:** Komentosarja [SetupDiagnostics] epäonnistui VM:n suoritusta vastaan
+**Varoitussanoma:** Komentosarja \[SetupDiagnostics\] epäonnistui VM:n suoritusta vastaan
 
-Käyttöönottaminen toimii varoituksista huolimatta, mutta seuraavat tunnetut ongelmat ovat tiedossa Lifecycle Services (LCS) -palveluissa:
+Käyttöönotto toimii varoituksesta huolimatta. Lifecycle Servicesissä (LCS) voi kuitenkin esiintyä seuraavia tunnettuja ongelmia:
 
--   **Ympäristön seuranta** -sivulla ei näy **version yksityiskohtaisen linkin tietoja**, joten et voi tarkastella ympäristösi moduulien erityisiä versioita. Jos näitä tietoja ei ole, kaikki sen jälkeen epäonnistuvat, koska he varmistavat tämän tiedon avulla, että moduuliversion edellytykset täyttyvät. Koska PEAP/esiversio-koontiversiota ei voi käyttää tuotannossa tai käyttää tuotantoversioita, vaikutuksen on oltava mahdollisimman pieni.
--   SQL-analyysin **Ympäristön seuranta** -sivun **Suorituskykymittari**- ja **indeksianalyysi**-välilehtiä ei näytetä. Kaikki muut **ympäristön seuranta** -ominaisuudet toimivat suunnitellusti.
--   **Järjestelmän diagnostiikkatiedot** -sivu ei ole käytettävissä. Myös sen sääntöjen havaitsemista yösijainnin ajoista ja sen sääntöjen tunnistamista ongelmista koskevat liittyvät tiedot eivät näy.
+- **Ympäristön seuranta** -sivulla ei näy **version yksityiskohtaisen linkin tietoja**, joten et voi tarkastella ympäristösi moduulien erityisiä versioita. Jos näitä tietoja ei ole, kaikki sen jälkeen epäonnistuvat, koska he varmistavat tämän tiedon avulla, että moduuliversion edellytykset täyttyvät. Koska PEAP/esiversio-koontiversiota ei voi käyttää tuotannossa tai käyttää tuotantoversioita, vaikutuksen on oltava mahdollisimman pieni.
+- SQL-analyysin **Ympäristön seuranta** -sivun **Suorituskykymittari**- ja **indeksianalyysi**-välilehtiä ei näytetä. Kaikki muut **ympäristön seuranta** -ominaisuudet toimivat suunnitellusti.
+- **Järjestelmän diagnostiikkatiedot** -sivu ei ole käytettävissä. Myös sen sääntöjen havaitsemista yösijainnin ajoista ja sen sääntöjen tunnistamista ongelmista koskevat liittyvät tiedot eivät näy.
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
@@ -52,10 +53,10 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 | Varasto&nbsp;ja&nbsp;logistiikka | [Yleinen varastokirjanpitoapuohjelma Dynamics 365 Supply Chain Managementille](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Yleisen varastokirjanpidon aloitussivu](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Kirjaa käyttökelpoisia oikaisuja käyttäen vastatileihin liitettyjä syykoodeja](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Varastoinventoinnin syykoodit](../warehousing/reason-codes-for-counting-journals.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Myyntitarjouksen viitattujen tietojen vientikäytäntö](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Valitse, aiheuttaako lainausten viittaamien tietojen muutokset kyseiset lainaukset (tai rivit) sisällytettäviksi seuraavaan lisävientitoimintaan. Lisäviennit suoritetaan nopeammin, jos tällaisia tarjouksia tai rivejä ei sisällytetä.<br><br>Tämä ominaisuus lisää asetuksen, jota kutsutaan **Ohita myyntitarjoukseen viitatut tiedot, kun muutoksia seurataan** **Myyntireskontra-parametrit** -sivulla. |
-| Varasto&nbsp;ja&nbsp;logistiikka | [Skannaa varaston viivakoodit GS1-muotostandardien avulla](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | *Tulossa pian*<!-- KFM: Add doc link when ready. --> |
-| Varasto&nbsp;ja&nbsp;logistiikka | Salattu tarjous <!-- KFM: Add RP link when available --> | *Tulossa pian*<!-- KFM: Add doc link when ready. --> |
+| Varasto&nbsp;ja&nbsp;logistiikka | [Skannaa varaston viivakoodit GS1-muotostandardien avulla](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-viivakoodit ja QR-koodit](../warehousing/gs1-barcodes.md) |
+| Varasto&nbsp;ja&nbsp;logistiikka | [Varaston näkyvyyden apuohjelman alustava varaus](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Varaston näkyvyyden varaukset](../inventory/inventory-visibility-reservations.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Ostohyvityksen hallinnan vähennyksen ja todellisen painon parannukset](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Hallitse vähennyksiä käyttämällä vähennyksen työtilaa](../rebate-management/deduction-workbench.md )<br><br>[Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen](../rebate-management/process-review-post.md)<br><br>[Ostohyvitysten hallintasopimukset](../rebate-management/rebate-management-deals.md) |
-| Varasto&nbsp;ja&nbsp;logistiikka | [Varastosovelluksen vaiheohjeet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Tulossa pian*<!-- KFM: Add doc link when ready --> |
+| Varasto&nbsp;ja&nbsp;logistiikka | [Varastosovelluksen vaiheohjeet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen](../warehousing/mobile-app-titles-instructions.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Aiheutuneiden kustannusten päivitysten työtauot ja seurantapäivitykset](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Hyllytyksen päivitysseuranta](../landed-cost/update-tracking-putaway.md )<br><br>[Kuljetettavien tuotteiden käsittely](../landed-cost/in-transit-processing.md) |
 | Pääsuunnittelu | [Negatiiviset päivät suunnittelun optimoinnissa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Viivetoleranssi (negatiiviset päivät)](../master-planning/planning-optimization/delay-tolerance.md) |
 
@@ -66,9 +67,9 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukse
 | Ominaisuusalue | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
 | Kustannushintojen hallinta | Varaston sulkemisen edistymistiedot | Tämä esiversiotoiminto ottaa varaston sulkemisen edistymisen yksityiskohtaisen näkymän käyttöön. |
-| Pääsuunnittelu | (Esiversio) Suunnittelun optimointiin perustuva prioriteetin MRP-tuki | Tämä suunnittelun optimoinnin esiversiotoiminto ottaa käyttöön pääsuunnittelun, jonka suunnittelu on prioriteetilla varustettu uudelleentilauspiste. Korostettuja muutoksia ovat: Myyntitilausrivien, ostotilausten rivien, kysynnän ennustamisen ja suunniteltujen tilausten **suunnittelun prioriteetti** -kenttä; uusi peittokoodivaihtoehto; **Kohteen kattavuus** -kenttä uudelleenjärjestyspisteelle; Pääsuunnittelun määrityslomakkeet, joilla hallitaan suunnittelun prioriteettiasetuksia; ja suunnittelun optimoinnin laskentalogiikka suunnitteluprioriteetin asettamiseksi ja kunnioittamiseksi. |
 | Hankinta | Estä yleisten budjettivarausten ylikulutus, kun työnkulussa on useita ostoehdotuksia | Tämä esiversiotoiminto parantaa virheentarkistusta, kun käyttäjät lähettävät ja hyväksyvät ostoehdotuksia, jotka ylittävät yleisen budjetin varausrivin jäljellä olevan saldon. Tämä auttaa estämään yleisten budjettivarausten ylityönkulun, kun työnkulussa on useita ostoehdotuksia. |
 | Tuotannonhallinta | Näytä täydet sarja-, erä- ja rekisterinumerot tuotannon käyttöliittymässä | Tämä ominaisuus tarjoaa paremman käyttökokemuksen sarja-, erä- ja lisenssinumeroiden tarkastelusta tuotannonohjausliittymässä. Näyttö muuttuu korttinäkymästä niin, että näkyvissä on rajallinen määrä merkkejä luettelonäkymään, jossa on tarpeeksi tilaa näyttää kaikki arvot. Luettelossa on myös mahdollisuus etsiä tiettyjä numeroita. |
+| Myynti ja markkinointi | Rajoita kirjausta varten valittavien myyntitilausten määrää | Tällä ominaisuudella voidaan määrittää, kuinka monta myyntitilausta voidaan enintään valita, kun vahvistuksia, keräysluetteloita, pakkausluetteloita ja laskuja kirjataan myyntitilausten luettelosivulta. Se otetaan käyttöön automaattisesti. Ominaisuus lisää **Kirjattavien myyntitilausten enimmäismäärä** -asetuksen **Myyntireskontran parametrit** -sivulle. Uuden asetuksen oletusarvo on *100*. Ominaisuus auttaa parantamaan myyntitilausten luettelosivun suorituskykyä, kun merkittävä määrä myyntitilauksia valitaan. Se ei vaikuta myyntitilausten määrään, jotka voidaan käsitellä kausittaisen tehtävän perusteella. |
 | Varastonhallinta   | Erota hyllytys lähetysilmoituksista (ASN) | Tätä toimintoa tarvitaan lähetettäessä ja vastaanottaessa ennakkoilmoitusta, kun varastonhallinnan kuormitusta suoritetaan skaalausyksikössä (osana jaettua hybriditopologiaa). Siihen lisätään uusi tietokantataulu, johon tallennetaan poispanotyön tiedot. Aiemmin nämä tiedot on tallennettu tauluihin, joita käytettiin myös ASN-tietoina. |
 | Varastonhallinta   | Paikoita yhdistetyt yksiköt | Sallii järjestelmän käyttää nimikkeitä eri yksikköjen (kuten laatikoiden että koteloiden) sijainnissa. Tämän ominaisuuden avulla voit valita jokaisen korttipaikkamallin rivin eri yksikköjen tai yhden yksikön sijainnit. |
 | Varastonhallinta   | Käytä nopeampaa ohjelmointirajapintaa konttien sulkemiseen/uudelleenavaamiseen pakkausasemalla | Kun tämä esiversiotoiminto on käytössä, konttiin liittyvät varastotapahtumat luodaan käyttämällä uutta valopainoprosessia, joka parantaa konttien sulkemista tai avaamista uudelleen manuaalisen pakkausluettelon käsittelyn aikana. |

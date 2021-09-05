@@ -1,8 +1,8 @@
 ---
 title: Etujen hallinnan yleiskatsaus
-description: Dynamics 365 Human Resourcesin etujen hallintaominaisuuden yleiskuvaus. Tarjoa työntekijöillesi laajennetut etuvaihtoehdot helppokäyttöisellä verkkokokemuksella.
-author: andreabichsel
-ms.date: 07/13/2021
+description: Tässä aiheessa on Dynamics 365 Human Resourcesin etujen hallintaominaisuuden yleiskatsaus.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719140"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417389"
 ---
-# <a name="benefits-management-overview"></a>Etujen hallinnan yleiskuvaus
+# <a name="benefits-management-overview"></a>Etujen hallinnan yleiskatsaus
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Pysyäksesi kilpailukykyisenä sinun on tarjottava laaja etuvalikoima. Näin houkuttelet parhaita työntekijöitä ja saat heidät pidettyä. Vakioetujen, kuten terveyshuollon ja hammashoidon lisäksi, sinun kannattaa ehkä tarjota myös laajennettuja palveluja, kuten adoptioapua, virkistysohjelmia ja vaatetuslisiä. Microsoft Dynamics 365 Human Resourcesin etujen hallinta tarjoaa sinulle joustavan ratkaisun, joka tukee laajaa kirjoa etuvaihtoehtoja. Human Resources sisältää myös helppokäyttöisen työntekijäkokemuksen, joka esittelee valikoimasi.
+Pysyäksesi kilpailukykyisenä sinun on tarjottava laaja etuvalikoima. Näin houkuttelet parhaita työntekijöitä ja saat heidät pidettyä. Vakioetujen, kuten terveyshuollon ja hammashoidon lisäksi, sinun kannattaa ehkä tarjota myös laajennettuja palveluja, kuten adoptioapua, virkistysohjelmia ja vaatetuslisiä. Microsoft Dynamics 365 Human Resourcesin etujen hallinta on joustava ratkaisu, joka tukee monenlaisia etuvaihtoehtoja. Human Resources sisältää myös helppokäyttöisen työntekijäkokemuksen, joka esittelee valikoimasi.
 
 - Parannettujen etuussuunnitelmien avulla voit luoda ja hallita yksilöllisiä etuussuunnitelmia ja tukea monimutkaisia etujen hinnastoja ja sisäkkäisiä tasoja. Voit helposti luoda etuusohjelmia ja -nippuja sekä automaattisen rekisteröinnin sääntöjä, jotka helpottavat työntekijöiden kokemusta.
 - Joustoluotto-ohjelmien avulla voit käyttää suhteellista laskentaa eläköitymisen ja muiden elämäntapahtumien tukemiseen.
@@ -37,13 +37,13 @@ Pysyäksesi kilpailukykyisenä sinun on tarjottava laaja etuvalikoima. Näin hou
 Jos haluat käyttää demotietoja, sinun on otettava eristysympäristösi uudelleen käyttöön.
 
 > [!NOTE]
-> Voit nyt mukauttaa etujen hallinnan lomakkeita. Voit nyt lisätä kattavuusprosentteihin liittyviä mukautettuja kenttiä etusuunnitelmien **Kattavuusvaihtoehto** -lomakkeeseen. Lisätietoja mukautettujen kenttien käyttämisestä on kohdassa [Mukautetut kentät](hr-developer-custom-fields.md).
+> Voit nyt mukauttaa etujen hallinnan sivuja. Kattavuusprosentteihin liittyviä mukautettuja kenttiä voidaan lisätä etusuunnitelmien **Kattavuusvaihtoehto**-sivulle. Lisätietoja mukautettujen kenttien käyttämisestä on kohdassa [Mukautetut kentät](hr-developer-custom-fields.md).
 >
 > ![Etujen hallinnan mukautetut kentät](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Etujen hallinnan käyttöönotto
 
-Tässä aiheessa esitellään, miten ominaisuudet otetaan käyttöön Human Resourcesissa. Siinä kerrotaan myös, mitkä Human Resourcesin olemassa olevat ominaisuudet Etujen hallinta korvaa ja mitkä ominaisuudet poistetaan käytöstä sen jälkeen, kun etujen hallinta otetaan käyttöön.
+Tässä aiheessa esitellään, miten ominaisuudet otetaan käyttöön Human Resourcesissa. Siinä käsitellään myös, mitkä Human Resourcesin olemassa olevat ominaisuudet etujen hallinta korvaa ja mitkä ominaisuudet poistetaan käytöstä sen jälkeen, kun etujen hallinta otetaan käyttöön.
 
 > [!IMPORTANT]
 > Kun etujenhallinta on otettu käyttöön **Tuotanto**-ympäristössä, sitä ei voi poistaa käytöstä. On suositeltavaa ottaa käyttöön ja testata etujenhallinta **Eristys**-ympäristössä, ennen kuin otat sen käyttöön **Tuotanto** -ympäristössä. Vanhojen etutoimintojen ja uusien etujen hallintatoimintojen välillä on huomattavia eroja, jotka edellyttävät lisäasetuksia ja jotka on testattava ennen niiden asettamista tuotantoon.

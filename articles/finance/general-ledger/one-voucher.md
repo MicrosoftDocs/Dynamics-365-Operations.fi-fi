@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720523"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344055"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Mikä on yhden tositteen toiminto?
@@ -81,7 +82,7 @@ Asiakaspalautteen perusteella Microsoft on kääntänyt seuraavat skenaariot, jo
 
 Seuraavat skenaariot voidaan toteuttaa vain käyttämällä yhden tositteen toiminnolla. Jos organisaatiossa on jokin näistä skenaariosta, tositteessa on otettava käyttöön useiden tapahtumien kirjaaminen muuttamalla **Salli useita tapahtumia yhdessä tositteessa** -parametrin asetusta **Kirjanpitoparametrit**-sivulla. Nämä toiminnalliset aukot täytetään muilla toiminnoilla myöhemmissä versioissa.
 
-> [!Note]
+> [!NOTE]
 > [Kussakin seuraavassa skenaariossa **Salli useita tapahtumia yhdessä tositteessa** -kentän asetuksiksi on valittava Kyllä **Kirjanpidon parametrit** -sivun **Yleiset**-pikavälilehdessä.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Kirjaa yhteenvetolomakkeen toimittaja- tai asiakasmaksut pankkitilille
@@ -115,15 +116,7 @@ Tässä skenaariossa yhden tositteen asiakkaat ovat samoja, koska tapahtuma simu
 Jos hyvityksen kausittainen tehtävä suoritetaan myyntireskontramoduulista, se luo saldon siirtotapahtuman asiakkaalta toimittajalle. Tässä skenaariossa hyvitys asiakkaalle on tehtävä yhden tositteen toiminnolla.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Käyttöomaisuuden ylläpito: Poiston kertymä, käyttöomaisuuden jako, poiston laskeminen luovutuksen yhteydessä
-Myös seuraavat käyttöomaisuustapahtumat luovat useita tapahtumia yhteen tositteeseen:
-
-- Käyttöomaisuudelle tehdään lisähankinta ja kertynyt poisto lasketaan.
-- Käyttöomaisuus jaetaan.
-- Parametri, jota käytetään luovutuksen poistossa, on käytössä. Käyttöomaisuus poistetaan.
-- Käyttöomaisuuden käyttöottopäivämäärä on ennen hankintapäivämäärää. Tämän vuoksi kirjataan poisto-oikaisu.
-
-> [!Note]
-> Varmista tapahtumia kirjattaessa, että tapahtumat kohdistetaan samaan käyttöomaisuuteen. Tositetta ei kirjata, jos siinä enemmän kuin yksi käyttöomaisuus, vaikka **Uusi tosite** -kentän asetuksena on Vain yksi tositenumero **Kirjauskansioiden nimet** -sivulla kirjanpidossa. Jos tositteessa on useampi kuin yksi käyttöomaisuus, sanoma **Tositetta kohden voi olla vain yksi käyttöomaisuustapahtuma** avautuu etkä voi kirjata tositetta.  
+Versiosta 10.0.21 alkaen poiston kertymän, käyttöomaisuuden jaon ja poiston laskemisen käyttöomaisuustapahtumat luovutuksen yhteydessä luodaan käyttämällä eri tositenumeroita.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Vekselit ja velkakirjat
 Vekselit ja velkakirjat edellyttävät yhden tositteen käyttöä, koska tapahtumat siirtävät asiakkaan tai toimittajan saldon yhdeltä myyntireskontran/ostoreskontran kirjanpitotililtä toiselle maksun tilan perusteella.

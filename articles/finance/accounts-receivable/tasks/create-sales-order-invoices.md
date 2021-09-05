@@ -1,6 +1,6 @@
 ---
 title: Luo myyntitilauksen laskut
-description: Tässä tehtävän ohjauksessa kuvataan myyntitilauksen laskuttaminen sekä laskujen yhdistäminen ja eräkäsittely.
+description: Tässä aiheessa käsitellään myyntitilauksen laskuttamista sekä laskujen yhdistämistä ja eräkäsittelyä.
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a6556838a2843f961e1538947a6eda090b94894ed4df8476ea60abeda8056b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771821"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394607"
 ---
 # <a name="create-sales-order-invoices"></a>Luo myyntitilauksen laskut
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä tehtävän ohjauksessa kuvataan myyntitilauksen laskuttaminen sekä laskujen yhdistäminen ja eräkäsittely. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
+Tässä aiheessa käsitellään myyntitilauksen laskuttamista sekä laskujen yhdistämistä ja eräkäsittelyä. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Laskun luominen myyntitilauksesta
 1. Valitse **Siirtymisruutu > Moduulit > Myyntireskontra > Tilaukset > Myyntitilaukset, jotka on lähetetty mutta joita ei ole laskutettu.**
 2. Valitse myyntitilaus luettelosta. 
-3. Valitse **toimintoruudussa** **Lasku > Luo > Lasku**. Ota huomioon, että tälle myyntitilaukselle on liitetty useita pakkausluetteloita. Näkyvissä on vain sana <multiple> pakkausluetteloiden numeroiden sijaan.  
+3. Valitse **toimintoruudussa** **Lasku > Luo > Lasku**. Ota huomioon, että tälle myyntitilaukselle on liitetty useita pakkausluetteloita. Näkyvissä on vain sana *useita* pakkausluetteloiden numeroiden sijaan.  
 4. Laajenna **Parametrit**-osa.
     - Kirjauksen arvoksi on annettava Kyllä, jotta lasku kirjataan. Voit myös ottaa kirjauksen pois päältä ja vain tulostaa laskun. Saat kuitenkin saman tuloksen, kun luot proformalaskun laskun sijaan.  
     - Tätä vaihtoehtoa käytetään komentojonotöissä. Kysely suoritetaan, kun komentojonotyö suoritetaan.

@@ -1,6 +1,6 @@
 ---
 title: Käyttöomaisuuserien luominen ja hankkiminen ostoreskontrasta
-description: Tässä tehtävän ohjauksessa esitellään käyttöomaisuuden luominen ja hankinta ostoprosessissa.
+description: Tässä menettelyssä käsitellään käyttöomaisuuden luontia ja hankintaa ostoprosessin avulla.
 author: saraschi2
 ms.date: 08/13/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 035fa86f0ff09faaa21c561cf7934455a6883cd8a7f917ac95bc7d096294d824
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742998"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394655"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Käyttöomaisuuserien luominen ja hankkiminen ostoreskontrasta
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä tehtävän ohjauksessa esitellään käyttöomaisuuden luominen ja hankinta ostoprosessissa.  Siinä tarvitaan kirjanpitäjää ja ostoreskontran käsittelijää sekä esittely-yritystä USMF.
+Tässä menettelyssä käsitellään käyttöomaisuuden luontia ja hankintaa ostoprosessin avulla.  Siinä tarvitaan kirjanpitäjää ja ostoreskontran käsittelijää sekä esittely-yritystä USMF.
 
 
 ## <a name="set-fixed-assets-parameters"></a>Käyttöomaisuusparametrien määrittäminen

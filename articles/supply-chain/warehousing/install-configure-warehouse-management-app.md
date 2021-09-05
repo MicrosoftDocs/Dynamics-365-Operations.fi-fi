@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 338c3129d81fa0428f3470808bc13fc76483ff3aaf19b06708a986aec64b4030
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782344"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384608"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -150,8 +150,8 @@ Yhteysasetukset voidaan tuoda joko tiedostona tai QR-koodina. Kummassakin tapauk
 | ConnectionName | Määritä yhteysasetuksen nimi. Enimmäispituus on 20 merkkiä. Koska tämä arvo on yhteysasetuksen yksilöivä tunniste, varmista, että se on ainoa kyseinen tunniste luettelossa. Jos laitteessa on jo saman niminen yhteys, tuodun tiedoston asetukset korvaavat sen. |
 | ActiveDirectoryClientAppId | Määritä se asiakasohjelman tunnus, jonka kirjoitit muistiin määritettäessä Azure AD:tä kohdassa [Verkkopalvelusovelluksen luominen Azure Active Directoryssa](#create-service). |
 | ActiveDirectoryResource | Määritä Supply Chain Managementin URL-pääosoite. |
-| ActiveDirectoryTenant | Määritä Supply Chain Management -palvelimen kanssa käytettävä Azure AD -vuokraaja. Tämän arvon muoto on `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
-| Yritys  | Määritä Supply Chain Managementin yritys, johon sovellus halutaan yhdistää. |
+| ActiveDirectoryTenant | Määritä Supply Chain Management -palvelimen kanssa käytettävä Azure AD -toimialuenimi. Tämän arvon muoto on `https://login.windows.net/<your-Azure-AD-domain-name>`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com`. Lisätietoja Azure AD -toimialuenimen etsimisetä on kohdassa [Käyttäjän tärkeiden tunnusten etsiminen](/partner-center/find-ids-and-domain-names). |
+| Yhtiö | Määritä Supply Chain Managementin yritys, johon sovellus halutaan yhdistää. |
 | ConnectionType | (Valinnainen) Määritä, muodostaako yhteysasetus yhteyden ympäristöön varmenteen vai asiakasohjelman salauskoodin avulla. Kelvollisia arvoja ovat *"certificate"* ja *"clientsecret"*. Oletusarvo on *"certificate"*.<p>**Huomautus:** asiakasohjelman salauskoodeja ei voi tuoda.</p> |
 | IsEditable | (Valinnainen) Määritä, saako sovelluksen käyttäjä muokata yhteysasetusta. Kelvolliset arvot ovat *true* ja *false*. Oletusarvo on *true*. |
 | IsDefault | (Valinnainen) Määritä, onko yhteys oletusyhteys. Oletusyhteydeksi määritetty yhteys valitaan automaattisesti, kun sovellus avataan. Vain yksi yhteys voidaan määrittää oletusyhteydeksi. Kelvolliset arvot ovat *true* ja *false*. Oletusarvo on *false*. |
@@ -268,7 +268,7 @@ Sovelluksen voi määrittää laitteessa muodostamaan yhteyden manuaalisesti Sup
         > [!IMPORTANT]
         > Kauttaviiva (/) ei voi olla tämän arvon viimeinen merkki.
 
-    - **Active Directory -vuokraaja** – Anna Azure AD -vuokraajaa, jota käytetään Supply Chain Management -palvelimen kanssa. Tämän arvon muoto on `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active Directory -vuokraaja** – Anna Azure AD -toimialuenimi, jota käytetään Supply Chain Management -palvelimen kanssa. Tämän arvon muoto on `https://login.windows.net/<your-Azure-AD-domain-name>`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com`. Lisätietoja Azure AD -toimialuenimen etsimisetä on kohdassa [Käyttäjän tärkeiden tunnusten etsiminen](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Kauttaviiva (/) ei voi olla tämän arvon viimeinen merkki.

@@ -1,8 +1,8 @@
 ---
 title: Etujen hallinnan ja työntekijän itsepalveluparametrien määrittäminen kaikille yrityksille
 description: Etujen hallinnan ja työntekijän itsepalveluparametrien määrittäminen Microsoft Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-ms.date: 12/07/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9c6761c549aaa38d16616f3e9e9084cbff7c93d9350f8adc50720d263efaff25
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdda08ad2debe6ffe40f1f3fd2ac84ce9fc1d620
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423420"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Etujen hallinnan ja työntekijän itsepalveluparametrien määrittäminen kaikille yrityksille
 
@@ -53,7 +53,7 @@ Ennen kuin voit määrittää etusuunnitelmat Microsoft Dynamics 365 Human Resou
 
 3. Valitse **Tallenna**.
 
-## <a name="configure-employee-self-service-parameters"></a>Työntekijän itsepalveluparametrien määrittäminen
+## <a name="configure-employee-self-service-parameters"></a>Määritä työntekijän itsepalveluparametrit
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdassa **Henkilöstöhallinnon parametrit**.
 
@@ -61,7 +61,7 @@ Ennen kuin voit määrittää etusuunnitelmat Microsoft Dynamics 365 Human Resou
 
    | Kenttä | kuvaus |
    | --- | --- |
-   | **Edun vahvistus** | Itsepalvelu-etujen aikana käytettävä tarkistusteksti kassalla. |
+   | **Edun vahvistus** | Etuuksien itsepalvelun kassalla käytettävä tarkistusteksti. |
    | **Valitse edustajat automaattisesti** | Määrittää, valitaanko huollettavat ja edunsaajat automaattisesti suunnitelmavaihtoehtojen kelpoisuuden perusteella. |
 
 3. Valitse **Tallenna**.

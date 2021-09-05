@@ -1,8 +1,8 @@
 ---
 title: Järjestelmävaatimukset
-description: Tässä artikkelissa kuvataan Microsoft Dynamics 365 Human Resourcesin vaatimukset.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin järjestelmävaatimuksista.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ef0176926fd6c5c5d2bc852080dde5273d05d0f2edd20e091d97c71e503dce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15770595a0639c03df1138ec25010ca8168bd9a8
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761089"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393470"
 ---
 # <a name="system-requirements"></a>Järjestelmävaatimukset
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä artikkelissa kuvataan Microsoft Dynamics 365 Human Resourcesin vaatimukset. Siinä esitellään myös maat ja alueet, joissa Human Resources on käytettävissä sekä Human Resources -tietojen kielistä ja lokalisoinnista.
+Tässä aiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin järjestelmävaatimuksista. Siinä esitellään myös maat ja alueet, joissa Human Resources on käytettävissä sekä Human Resources -tietojen kielistä ja lokalisoinnista.
 
 ## <a name="supported-web-browsers"></a>Tuetut selaimet
 
-Human Resources toimii kaikilla seuraavilla verkkoselaimilla, joita käytetään määritetyissä käyttöjärjestelmissä: 
+Käyttäjät voivat käyttää Microsoft Dynamics 365 Human Resources seuraavilla selaimilla, joita käytetään määritetyissä käyttöjärjestelmissä: 
 
 *   Microsoft Edge (uusin saatavana oleva versio) Windows 10 -käyttöjärjestelmässä
 *   Internet Explorer 11 Windows 10-, Windows 8.1- tai Windows 7 -käyttöjärjestelmässä
@@ -39,14 +39,17 @@ Human Resources toimii kaikilla seuraavilla verkkoselaimilla, joita käytetään
 
 Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta versiosta. 
 
-> [!NOTE]
-> * Voit tallentaa tehtävän tallennustoiminnon luomat kuvat ja sisällyttää ne Microsoft Word -asiakirjoihin, jos asennettuna on Chrome-laajennus. 
-> * Työnkulkueditori käynnistetään ClickOnce-sovelluksena. Vain Microsoft Edge ja Internet Explorer (tuetuissa Microsoft Windows -versioissa) tukevat ClickOnce-sovelluksia. Työnkulkueditorin ClickOnce-sovellus vaatii 64-bittisen käyttöjärjestelmän.
-> * PDF-tiedostojen esikatseluun suosittelemme modernia verkkoselainta, kuten Microsoft Edgeä (uusin julkinen versio) Windows 10 -käyttöjärjestelmässä tai Google Chromea (uusin julkinen versio) Windows 10-, Windows 8.1-, Windows 8- tai Windows 7 -käyttöjärjestelmässä tai Google Nexus 10 -tabletissa.
->   Verkon vaatimukset
-> * Human Resources on suunniteltu verkkoihin, joiden viive on enintään 250–300 millisekuntia (ms). Tämä viive on selaimen asiakasohjelman ja Human Resourcesia isännöivän Microsoft Azure -palvelinkeskuksen välillä. On suositeltavaa testata verkon viive osoitteessa [www.azurespeed.com](https://www.azurespeed.com "Azuren viivetesti").
-> * Human Resourcesin kaistanleveyden vaatimukset riippuvat skenaariostasi. Yleisimmät tilanteet vaativat yli 50 kilotavua sekunnissa (KBps) kaistanleveyttä.
-> 
+## <a name="special-considerations"></a>Erityiset huomioitavat asiat
+
+* Chrome-laajennuksen ennakkojulkaisuversio on asennettava, jotta tehtävien tallennustoiminto voi siepata luodut kuvat ja sisällyttää ne Microsoft Word -asiakirjoihin.
+* Työnkulkueditori käynnistetään ClickOnce-sovelluksena. Vain Microsoft Edge ja Internet Explorer (tuetuissa Microsoft Windows -versioissa) tukevat ClickOnce-sovelluksia. Työnkulkueditorin ClickOnce-sovellus vaatii 64-bittisen käyttöjärjestelmän.
+* PDF-tiedostojen esikatseluun suosittelemme modernia verkkoselainta, kuten Microsoft Edgeä (uusin julkinen versio) Windows 10 -käyttöjärjestelmässä tai Google Chromea (uusin julkinen versio) Windows 10-, Windows 8.1-, Windows 8- tai Windows 7 -käyttöjärjestelmässä tai Google Nexus 10 -tabletissa.
+
+## <a name="network-requirements"></a>Verkon vaatimukset
+
+* Human Resources on suunniteltu verkkoihin, joiden viive on enintään 250–300 millisekuntia (ms). Tämä viive on selaimen asiakasohjelman ja Human Resourcesia isännöivän Microsoft Azure -palvelinkeskuksen välillä. On suositeltavaa testata verkon viive osoitteessa [www.azurespeed.com](https://www.azurespeed.com "Azuren viivetesti").
+* Human Resourcesin kaistanleveyden vaatimukset riippuvat skenaariostasi. Tyypillisissä skenaarioissa tarvittava kaistanleveys on yli 50 kilotavua sekunnissa (kb/s).
+ 
 > [!WARNING]
 > Älä laske kaistanleveysvaatimuksia asiakkaan sijainnista kertomalla käyttäjien määrä kaistanleveyden vähimmäisvaatimuksella. Tietyn sijainnin samanaikainen käyttö on hyvin vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimuksista voivat käyttää Human Resourcesin kokeiluversiota.
 
@@ -63,6 +66,5 @@ Voit ladata PDF-tiedoston maista, alueista ja kielistä, joita Human Resources t
 > Kun käyttöliittymä on lokalisoitu muille kielille, kaikki käyttäjätiedot tallennetaan kielellä, jolla ne on kirjoitettu. Voit luoda sähköposteja ja malleja muilla kielillä, mutta tiedot, kuten aikataulun tiedot, ovat tällä hetkellä käytettävissä vain englanniksi.
 
 Jos olet kehittäjä, joka on kiinnostunut maa- tai aluekohtaisten mukautusten luonnista, tai kun luot ratkaisun maalle tai alueelle, jota Microsoft ei tällä hetkellä tue, Katso lisätietoja kohdasta [Globalisaatio](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

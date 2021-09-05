@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 75fbf177cd74739b35e72f2cae56a6c46fe69540145f16c80766b3ec260e8d0b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc4067ff395042ec30bdb6a846d12509a1436256
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713753"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402541"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Dynamics 365 Financen käyttäjien oppimisluettelo
 
@@ -32,6 +32,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 8 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia   |
 | [Finance and Operations -sovellusten käytön aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä.   Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
+| [Dynamics 365 Intelligent Order Managementn käytön aloittaminen](/learn/modules/get-started-intelligent-order-management/) | Asiakkaat voivat hallita Dynamics 365 Intelligent Order Managementin avulla tilausten orkestrointia täyttämiseen saakka. Näiden ominaisuuksien avulla organisaatiot voivat orkestroida tilauksen työnkulut eri ympäristöissä ja sovelluksissa. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 30 minuuttia |
 | [Kurssi MB-900T01-A: Dynamics 365:n perusteet](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Kurssi tutustuttaa oppijan Dynamics 365:n toimintoihin ja liiketoiminta-arvoon. Kurssi kattaa Dynamics 365 -sovellukset, Power Platformin, pilvipalvelun käsitteet, suojausmallin sekä lisensointinäkökohdat. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
 
 ## <a name="core-platform-knowledge"></a>Ympäristöä koskevat perustiedot<a name="core-platform-knowledge"></a>

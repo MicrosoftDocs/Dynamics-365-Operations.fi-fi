@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345225"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Liitä TDS-verokoodit TDS-veroryhmiin ja määritä TDS:n laskentakaava
 
@@ -55,7 +55,7 @@ Seuraavia ohjeita noudattamalla voit määrittää TDS-veroryhmän, liittää si
     > [!NOTE]
     > **Veron peruste** -kentän arvoksi ei voi määrittää **Ilman bruttosummaa** TDS-verokoodille, jonka prioriteettitunnus on **1**.
 
-12. TDS-laskenta perustuu kaavaan, joka on määritetty **Laskelmalauseke**-kentässä jokaiselle TDS-veroryhmään liitetylle verokoodille. Valitse plusmerkki- (**+**), miinusmerkki- (**-**), kertomerkki- (**\**_) tai jakomerkki (_*/**) -painike syöttääksesi laskemalausekkeen valitulle TDS-verokoodille **Laskelmalauseke**-kentässä.
+12. TDS-laskenta perustuu kaavaan, joka on määritetty **Laskelmalauseke**-kentässä jokaiselle TDS-veroryhmään liitetylle verokoodille. Valitsemalla plusmerkki- (+), miinusmerkki- (-), kertomerkki- (\*) tai jakomerkki (/) -painike laskelmalauseke voidaan antaa valitulle TDS-verokoodille **Laskelmalauseke**-kentässä.
 
     > [!NOTE]
     > TDS-verokoodille, jonka prioriteettitunnus on **1**, ei voida määrittää laskelmalauseketta.

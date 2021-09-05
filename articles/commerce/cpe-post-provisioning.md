@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce -arviointiympäristön määritykset
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen arviointiympäristön, kun se on valmisteltu.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742437"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416476"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön määritykset
 
@@ -128,7 +128,7 @@ Suorita täydellinen tietojen synkronointi Commercessa, toimi seuraavasti Commer
 Voit käyttää seuraavia luottokortin testitietoja sivuston testitapahtumien suorittamisessa:
 
 - **Kortin numero:** 4111-1111-1111-1111
-- **Vanhentumispäivä:** 10/20
+- **Vanhentumispäivä:** 10/30
 - **Kortin tarkistusnumero (CVV) -koodi:** 737
 
 > [!IMPORTANT]
@@ -139,6 +139,9 @@ Voit käyttää seuraavia luottokortin testitietoja sivuston testitapahtumien su
 Kun valmistelu- ja määritysvaiheet on suoritettu, voit aloittaa arviointiympäristön käytön. Siirry sisällönluontikokemukseen Commercen sivustonmuodostimen URL-osoitteen avulla. Siirry vähittäismyynnin asiakassivustokokemukseen Commercen sivuston URL-osoitteen avulla.
 
 Lisätietoja Commercen arviointiympäristön valinnaisten ominaisuuksien määrittämisestä on kohdassa [Commercen arviointiympäristön valinnaisten ominaisuuksien määrittäminen](cpe-optional-features.md).
+
+> [!NOTE]
+> Commerce-arviointiympäristöihin ladattu valmiiksi Azure Active Directory (Azure AD) kuluttajakauppavuokraaja esittelyä varten. Arviointiympäristöissä ei tarvitse määrittää omaa Azure AD -kuluttajakauppavuokraajaa. Jos arviointiympäristö kuitenkin määritetään käyttämään omaa Azure AD -kuluttajakauppavuokraajaa, ``https://login.commerce.dynamics.com/_msdyn365/authresp`` on muistettava lisätä Azure AD -kuluttajakauppasovellukseen URL-vastausosoitteena Azure-portaalin kautta.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -159,6 +162,8 @@ Lisätietoja Commercen arviointiympäristön valinnaisten ominaisuuksien määri
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce -sivusto](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Kuluttajakaupan vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

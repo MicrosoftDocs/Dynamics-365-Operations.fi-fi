@@ -4,24 +4,17 @@ description: Tässä ohjeaiheessa on vianmääritys tietoja, joiden avulla voit 
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736371"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416978"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Ongelmien vianmääritys synkronoinnin aikana
 
@@ -46,7 +39,7 @@ Kun otat yhdistämismallit käyttöön, karttojen tilan on oltava **Käytössä*
 
 Näyttöön saattaa tulla seuraava virhesanoma, kun yrität suorittaa yhdistämismääritystä ja alkuperäistä synkronointia:
 
-*(\[Virheellinen pyyntö\], Etäpalvelin palautti virheen: (400) Virheellinen pyyntö.), AX-vienti kohtasi virheen*
+*(\[Virheellinen pyyntö\], etäpalvelin palautti virheen: (400) Virheellinen pyyntö.), AX-vienti havaitsi virheen.*
 
 Esimerkki täydestä virheviestistä.
 
@@ -198,7 +191,7 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
 
         ![CustomerAccount- ja ContactPersonId-määritteet päivittävä tietojen integrointiprojekti.](media/cust_selfref6.png)
 
-    2. Lisää yrityksen ehdot suodattimen Dataversen puolelle, jotta vain suodatusehtoja vastaavat rivit päivitetään Finance and Operations -sovelluksessa. Lisää suodatin valitsemalla suodatinpainike. Voit sitten lisätä **Muokkaa kyselytä** -valintaikkunassa suodatinkyselyn, kuten **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Lisää yrityksen ehdot suodattimen Dataversen puolelle, jotta vain suodatusehtoja vastaavat rivit päivitetään Finance and Operations -sovelluksessa. Lisää suodatin valitsemalla suodatinpainike. Voit sitten lisätä **Muokkaa kyselytä** -valintaikkunassa suodatinkyselyn, kuten **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [HUOMAUTUS] Jos suodatinpainike ei ole näkyvissä, luo tukipyyntö, jotta tietojen integrointiryhmä voi ottaa suodattimen käyttöön vuokraajassa.
 
@@ -210,5 +203,36 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
 
 8. Ota muutosten seuranta taas käyttöön Finance and Operations -sovelluksen **Asiakkaat V3** -taulussa.
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Ensimmäisen synkronoinnin virheet, kun yhdistämisissä on yli 10 hakukenttää.
+
+Seuraava sanoma voidaan antaa, kun yritetään suorittaa ensimmäinen synkronointi ja virheitä on **Asiakkaat V3 tileille**, **Myyntitilaukset** yhdistämismäärityksissä tai missä tahansa yhdistämisessä, jossa on yi 10 hakukenttää.
+
+*CRMExport: Paketti suoritettu. Virheen kuvaus 5 yritystä hakea tietoja osoitteesta https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc epäonnistui.*
+
+Kyselyn hakurajoituksen vuoksi ensimmäinen synkronointi epäonnistuu, entiteetin yhdistämismäärityksessä on yli 10 hakua. Lisätietoja on kohdassa [Liittyvän taulukon tietueiden noutaminen kyselyn avulla](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Ongelma korjataan seuraavasti:
+
+1. Poista valinnaisia hakukenttiä kaksoiskirjoituksen entiteetin yhdistämismäärityksestä siten, että hakujen määrä on enintään 10.
+2. Tallenna määritys ja tee ensimmäinen synkronointi.
+3. Kun ensimmäisen vaiheen ensimmäinen synkronointi onnistuu, lisää loput hakukentät ja poista hakukentät, jotka synkronoitiin ensimmäisessä vaiheessa. Varmista, että hakukenttien määrä on enintään 10. Tallenna määritys ja suorita ensimmäinen synkronointi.
+4. Toista nämä vaiheet, kunnes kaikki hakukentät on synkronoitu.
+5. Lisää kaikki hakukentät takaisin yhdistämismääritykseen, tallenna määritys ja suorita yhdistämismääritys **Ohita ensimmäinen synkronointi** valittuna.
+
+Tämä prosessi antaa mahdollisuuden yhdistämismääritystä live-synkronointitilassa.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Osapuolen postiosoitteen ja osapuolen sähköisten osoitteiden ensimmäisen synkronoinnin tunnettu ongelma
+
+Seuraava virhesanoma voi avautua kun osapuolen postiosoitteen ja osapuolen sähköisten osoitteiden ensimmäinen synkronointi yritetään suorittaa:
+
+*Osapuolen numeroa ei löytynyt Dataversesta.*
+
+Tämä alue määritetään Finance and Operations -sovellusten **DirPartyCDSEntity**-kohdassa suodattamaan **Henkilö**- ja **Organisaatio**-tyypin osapuolia. Tämän vuoksi **CDS-osapuolet – msdyn_parties** -yhdistämismäärityksen ensimmäinen synkronointi ei synkronoi muita osapuolityyppejä, kuten **Yritys** ja **Toimintayksikkö**. Virhe voi esiintyä, kun ensimmäistä **CDS-osapuolen postiosoitteet (msdyn_partypostaladdresses)**- tai **Osapuolen yhteyshenkilöt V3 (msdyn_partyelectronicaddresses)** -synkronointia.
+
+Korjausta, jolla osapuolityyppialue voidaan poistaa Finance and Operations -entiteetistä, kehitetään, jotta kaiken tyyppisten osapuolien synkronointi Dataverseen onnistuu.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Esiintyykö asiakas- tai yhteyshenkilötietojen ensimmäisessä synkronoinnissa suorituskykyongelmia?
+
+Jos **Asiakas**-tietojen ensimmäinen synkronointi on suoritettu ja **Asiakas**-yhdistämismäärityksiä suoritetaan, minkä jälkeen suoritetaan **Yhteyshenkilöt**-tietojen ensimmäisen synkronointi, **Yhteyshenkilöt**-osoitteiden **LogisticsPostalAddress**- ja **LogisticsElectronicAddress**-taulukkoja koskevien lisäysten ja päivitysten aikana voi esiintyä suorituskykyongelmia. Samaa yleistä postiosoitteen ja sähköisen osoitteen taulukoita seurataan **CustCustomerV3Entity**- ja **VendVendorV2Entity**-entiteettien osalta, minkä lisäksi kaksoiskirjoitus yrittää muodostaa lisää kyselyjä kirjoittamaan tietoja toiselle puolelle. Jos ensimmäinen **Asiakas**-synkronointi on jo suoritettu, pysäytä vastaava yhdistämismääritys **Yhteyshenkilöt**-tietojen ensimmäisen synkronoinnin ajaksi. Tee samoin **Toimittaja**-tietojen kohdalla. Kun ensimmäinen synkronointi on valmis, kaikki yhdistämismääritykset voidaan sitten suorittaa ohittamalla ensimmäinen synkronointi.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Kattavuusasetusten luominen
-description: Microsoft Dynamics 365 Human Resources -ohjelman kattavuustasot osallistujan valitsemiselle etuussuunnitelmassa tai -ohjelmassa.
-author: andreabichsel
-ms.date: 06/25/2021
+description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin kattavuusvaihtoehtoja, joilla osallistujan valinnalle etuussuunnitelmassa tai -ohjelmassa.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 447317d0e9cb23bea21dae448048d05a3d989c89df17e4b8ea836201c20aefff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a553fa1aa4bac0d2fb11b87ee05e4e52c019411d
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741426"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423517"
 ---
 # <a name="create-coverage-options"></a>Kattavuusasetusten luominen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Kattavuusvaihtoehdot määrittävät, kuka katetaan tai kuinka paljon vakuutuspaketissa on vakuutusturvaa. Esimerkiksi lääketieteellisessä palvelupaketissa sinulla voi olla **vain työntekijä** -vaihtoehto, **työntekijä + 1** -vaihtoehto ja **perhe**-vaihtoehto. Henkivakuutuksen osalta voit tarjota vakuutusturvaa **1 x palkalla** tai **2 x palkalla**.
+Kattavuusvaihtoehdot määrittävät, kuka katetaan tai kuinka paljon vakuutuspaketissa on vakuutusturvaa. Esimerkiksi lääketieteellisessä palvelupaketissa sinulla voi olla **Vain työntekijä** -vaihtoehto, **Työntekijä + 1** -vaihtoehto ja **Perhe**-vaihtoehto. Henkivakuutuksen osalta voit tarjota vakuutusturvaa **1 x palkalla** tai **2 x palkalla**.
 
 Voit käyttää kattavuusasetuksia uudelleen, kun ne on määritetty. Voit liittää vaihtoehdon yhteen tai useaan suunnitelmaan.
 
@@ -46,7 +46,7 @@ Voit käyttää kattavuusasetuksia uudelleen, kun ne on määritetty. Voit liitt
    | **Kuvaus** | Kattavuusasetuksen kuvaus. |
    | **Kattavuuskoodi** | Kattavuuskoodit määrittävät kullekin kelvolliselle katetulle henkilötyypille enimmäis- ja vähimmäismäärät. Kattavuuskoodi ilmaisee, kenet katetaan tai suunnitelmatyypille sallitun kattavuusmäärän. Voit ilmaista kattavuusmäärän dollarisummana tai prosenttiosuutenta. Esimerkki:<ul><li>**Työnt+1** – Täyttääkseen kelpoisuusvaatimuksen työntekijällä on oltava valittuna yksi huollettava (tämän määrän ylittävät valitut huollettavat eivät enää kuulu suunnitelman piiriin).</li><li>**Työnt+perhe** – Täyttääkseen kelpoisuusvaatimukset työntekijällä on oltava valittuna vähintään kaksi huollettavaa.</li></ul> |
    | **Enimmäismäärä** | Huollettavien enimmäismäärä. |
-   | **Tila** | Kattavuusasetuksen tila. Jos kattavuusasetuksen tilaksi asetetaan Passiivinen, kyseistä kattavuusasetusta ei voida valita suunnitelmatyypeissä. |
+   | **Tila** | Kattavuusasetuksen tila. Jos kattavuusasetuksen tilaksi määritetään **Passiivinen**, kyseistä kattavuusasetusta ei voida valita suunnitelmatyypeissä. |
    | **Prosenttia** | Prosenttiosuus. Tämä kenttä on aktiivinen vain, jos kattavuuskoodikentässä on valittu % x palkka. |
    | **Jakaja** | Laskennassa käytettävä jalkaja, kun valitaan kattavuuskoodi % x palkka. |
    | **Vähimmäisprosenttiosuus** | Vähimmäisprosenttiosuus, kun valitset Prosenttiosuus-kattavuuskoodin. |
@@ -58,7 +58,7 @@ Voit käyttää kattavuusasetuksia uudelleen, kun ne on määritetty. Voit liitt
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | **Salli työntekijän korvaussumma** | Määrittää, saavatko työntekijät muokata etujen itsepalvelun maksumäärää, kun he valitsevat etuja. Jos valitset tämän valintaruudun, järjestelmä laskee etuussuunnitelman parametrit sen maksumäärän perusteella, jonka työntekijä syöttää etujen itsepalveluun. |
+   | **Salli työntekijän korvaussumma** | Määrittää, saavatko työntekijät muokata etujen itsepalvelun maksumäärää, kun he valitsevat etuja. Jos valitset tämän valintaruudun, järjestelmä laskee etuussuunnitelman parametrit sen maksumäärän perusteella, jonka työntekijä antaa etujen itsepalveluun. |
    | **Salli työntekijän kattavuussumma** | Määrittää, saavatko työntekijät muokata etujen itsepalvelun kattavuusmäärää, kun he valitsevat etuja. Jos valitset tämän valintaruudun, järjestelmä laskee etuussuunnitelman parametrit sen kattavuusmäärän perusteella, jonka työntekijä syöttää työntekijän itsepalveluun. |
 
 6. Valitse **Tallenna**. 

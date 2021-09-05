@@ -2,7 +2,7 @@
 title: Sähköpostin ER-kohteen tyyppi
 description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla määritetään sähköpostikohde.
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769316"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343857"
 ---
 # <a name="email-er-destination-type"></a>Sähköpostin ER-kohteen tyyppi
 
@@ -53,9 +53,22 @@ Yksi tulostiedosto tai useita tulostiedostoja voidaan lähettää sähköpostits
 
 ## <a name="configure-an-email-destination"></a>Sähköpostikohteen määrittäminen
 
-Sähköpostin lähettäjä ja sen vastaanottajat voidaan määrittää. Lisäksi sähköpostin aihetta ja sähköpostin tekstiosaa voidaan muokata. Sähköpostiviestin aiheen ja tekstinosan vakioteksti voidaan määrittää tai sähköpostitekstejä voidaan luoda dynaamisesti ER-[kaavojen](er-formula-language.md) avulla.
+### <a name="email-content"></a>Sähköpostiviestin sisältö
 
-Sähköposti lähetetään oletusarvoisesti nykyisen käyttäjän puolesta. Joku muu sähköpostin lähettäjä voidaan määrittää määrittämällä **Lähettäjä**-kenttä.
+Sähköpostiviestin aihetta ja tekstiä on helppo muokata.
+
+Kirjoita **Aihe**-kenttään sähköpostin aiheen teksti, joka näkyy suorituksen aikana luodun sähköisen viestin aihekentässä. Kirjoita **Teksti**-kenttään sähköpostin varsinainen teksti, joka näkyy suorituksen aikana luodun sähköisen viestin tekstikentässä. Sähköpostiviestin aiheen ja tekstinosan vakioteksti voidaan määrittää tai sähköpostitekstejä voidaan luoda dynaamisesti suorituksen aikana ER-[kaavojen](er-formula-language.md) avulla. Määritetyn kaavan on palautettava [Merkkijono](er-formula-supported-data-types-primitive.md#string)-tyyppinen arvo.
+
+Sähköpostin tekstiosassa käytetään TEXT- tai HTML-muotoa sähköpostiohjelman mukaan. Voit käyttää mitä tahansa asettelua, tyyliä ja brändäystä, joiden käytön HTML ja CSS-tyylisivut sallivat.
+
+> [!NOTE]
+> Sähköpostiohjelmissa on asettelu- ja tyylirajoituksia, jotka voivat edellyttää viestin tekstissä käytettävän HTML-koodin ja CSS-tyylisivujen muokkaamista. Tämän vuoksi kannattaa tutustua sellaisen HTML-koodin luomisen parhaisiin käytäntöihin, joita suositut sähköpostiohjelmat tukevat.
+>
+> Toteuta rivinvaihto käyttämällä tekstiosan muotoilun mukaista koodausta. Lisätietoja on [Merkkijono](er-formula-supported-data-types-primitive.md#string)-tietotyypin määritelmässä.
+
+### <a name="email-addresses"></a>Sähköpostiosoitteet
+
+Sähköpostin lähettäjä ja sähköpostin vastaanottajat voidaan määrittää. Sähköposti lähetetään oletusarvoisesti nykyisen käyttäjän puolesta. Joku muu sähköpostin lähettäjä voidaan määrittää määrittämällä **Lähettäjä**-kenttä.
 
 > [!NOTE]
 > Kun sähköpostikohde määritetään, vain käyttäjät, joilla on `ERFormatDestinationSenderEmailConfigure`-suojausoikeus **ER-muodon kohteiden lähettäjän sähköpostiosoitteen määrittäminen**, näkevät **Lähettäjä**-kentän.

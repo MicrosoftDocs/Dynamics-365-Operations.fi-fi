@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da812bcc7d31db25abc0ed7e6c1a7f9e5433f80bfdfc5421e4e18d6b8af68884
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1374a451c65b4bafdc6efeb10949d1f6eceb4758
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738912"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343915"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean-valmistuksen yleiskatsaus
 
@@ -66,7 +66,7 @@ Lean-valmistus tuo näkyvyyttä kanban-sääntöjen hallitsemien valmistus- ja l
 Seuraavassa luettelossa käsitellään erikoistuneita kanban-tauluja:
 -   Kanban-työn aikataulutus – Kanban-töiden yhteenveto. Taulu sisältää kanban-työt ja niiden tilat yhdessä tai useassa työsolussa. Työt on lueteltu tuotantovirran mallissa määritettyjen suunnittelukausien (päiviä tai viikkoja) mukaisesti. Taulussa on myös kapasiteetin kulutus jokaisena suunnittelujaksona, jotta aikataulutettua kuormaa voidaan valvoa. Voit muuttaa kanban-töiden tilan, ajoittaa kanban-työt eri suunnittelukaudella ja suorittaa muita tehtäviä.
 -   Siirtotöiden Kanban-taulu – Nykyisten siirtotöiden yhteenveto. Voit päivittää ja rekisteröidä keräysluetteloita, aloittaa ja päättää siirtotöitä sekä suorittaa muita tehtäviä.
--   Prosessitöiden kanban-taulu – Taulu on suunniteltu tukemaan normaalia tuotantovirtaa sekä antamaan yleiskuva yhden tai usean työsolun tämän hetkisestä tilanteesta. Tässä taulussa kanbaneja voidaan priorisoida, kerätä tai valmistaa. Taulu on myös suunniteltu tukemaan kanbanien ilmoittamista viivakoodien avulla.
+-   Prosessitöiden kanban-taulu – Taulu on suunniteltu tukemaan normaalia tuotantovirtaa sekä antamaan yleiskuva yhden tai usean työsolun tämän hetkisestä tilanteesta. Tässä taulussa kanbaneja voidaan priorisoida, kerätä tai valmistaa. Taulu on suunniteltu myös tukemaan kanbanien ilmoittamista viivakoodien avulla.
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-työt ja integrointi Supply Chain Management -prosesseihin
 Kanban-työt on integroitu täysin Supply Chain Managementin varastotapahtumien nykyisiin prosesseihin.

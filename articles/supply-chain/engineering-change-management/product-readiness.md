@@ -1,6 +1,6 @@
 ---
 title: Tuotteen valmius
-description: Tässä aiheessa käsitellään valmiustarkistusten käyttöä varmistamaan, että tuotteen pakolliset päätiedot ovat valmiit, ennen kuin tuotetta käytetään tapahtumissa.
+description: Tässä aiheessa käsitellään valmiustarkistusten käyttöä sen varmistamiseen, että tuotteen pakolliset päätiedot ovat valmiit, ennen kuin tuotetta käytetään tapahtumissa.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723548"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415318"
 ---
 # <a name="product-readiness"></a>Tuotteen valmius
 
 [!include [banner](../includes/banner.md)]
 
-Valmiustarkistusten avulla varmistetaan, että tuotteen kaikki pakolliset päätiedot on määritetty, ennen kuin tuotetta käytetään tapahtumissa. Valmiustarkistuksia käytettäessä tietty käyttäjä tai ryhmä vastaa tiettyjen ennaltamääritettyjen tuotteeseen liittyvien tietojen tarkistamisesta. Jos tuotteella on avoin valmiustarkistus, tuotetta ei voi vapauttaa eikä käyttää tapahtumissa.
+Valmiustarkistusten avulla varmistetaan, että tuotteen kaikki pakolliset päätiedot on määritetty, ennen kuin tuotetta käytetään tapahtumissa. Valmiustarkistuksia käytettäessä tietty käyttäjä tai ryhmä vastaa tiettyjen ennaltamääritettyjen tuotteeseen liittyvien tietojen tarkistamisesta. Jos tuotteella on avoin valmiustarkistus, tuotetta ei voi käyttää tapahtumissa.
 
-Suunnittelutuotteen, sen variantin tai version **Aktiivinen**-valintaruutu on käytettävissä vasta, kun kaikki pakolliset tiedot on annettu ja tarkistettu ja kaikki valmistustarkistukset on käsitelty. Tässä vaiheessa tuote, versio tai variantti voidaan vapauttaa muille yrityksille ja sitä voidaan käyttää tapahtumissa. Valmiustarkistuksia voidaan luoda uusille tuotteille, uusille varianteille ja uusille suunnitteluversioille.
+Suunnittelutuotteen, sen variantin tai version **Aktiivinen**-valintaruutu on käytettävissä vasta, kun kaikki pakolliset tiedot on annettu ja tarkistettu ja kaikki valmistustarkistukset on käsitelty. Tässä vaiheessa tuotetta, versiota tai varianttia voidaan käyttää tapahtumissa. Valmiustarkistuksia voidaan luoda uusille tuotteille, uusille varianteille ja uusille suunnitteluversioille.
 
 Voit myös käyttää valmiustarkistuksia vakiotuotteisiin (ei-tekninen suunnittelu). Lisätietoja on jäljempänä tässä ohjeaiheessa [Standardituotteiden valmiustarkistus](#standard-products) -osassa.
 

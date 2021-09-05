@@ -1,8 +1,8 @@
 ---
 title: Luo Affordable Care Act -raportit etujen hallinnassa
-description: Tässä aiheessa kuvataan, kuinka etujen hallinnan avulla voit seurata tietoja, jotka on raportoitu Affordable Care Act (ACA) työnantajan toimeksiannosta lomakkeella 1095-B ja lomakkeessa 1095-C.
-author: andreabichsel
-ms.date: 12/28/2020
+description: Tässä aiheessa käsitellään tapaa, jolla etujen hallinta seuraa Affordable Care Actin (ACA) työnantajan toimeksiannosta lomakkeella 1095-B ja lomakkeella 1095-C raportoituja tietoja.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d681514f53dbaf4aafce33722d0c1837c3d270407c19d629c3383ff1a2472d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99ac67795cd3f587e54a84361dd4744b79b4dbbd
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727062"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416251"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>ACA-raporttien luominen etujen hallinnassa
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Etujen hallinnan avulla voit seurata tietoja, jotka on raportoitu Affordable Care Act (ACA) työnantajan toimeksiannosta lomakkeella 1095-B ja lomakkeessa 1095-C. Kuten ACA-raportointitoiminto vanhassa **Edut**-työtilassa, tämä toiminto koskee vain Yhdysvalloissa olevia yrityksiä.
+Etujen hallinnan avulla voidaan seurata tietoja, jotka on raportoitu Affordable Care Actin (ACA) työnantajan toimeksiannosta lomakkeella 1095-B ja lomakkeella 1095-C. Kuten ACA-raportointitoiminto vanhassa **Edut**-työtilassa, tämä toiminto koskee vain Yhdysvalloissa olevia yrityksiä.
 
 Jotta voit käyttää näitä toimintoja, sinun on ensin otettava käyttöön **Lisäetujen hallinta**. Lisätietoja, kuten tärkeät etujen hallintaa koskevat tiedot ovat kohdassa [Etujen hallinnan ottaminen käyttöön ja poistaminen käytöstä](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -145,7 +145,7 @@ Voit luoda ACA:n 1095-B- ja 1095-C-lomakkeita ja jakaa ne työntekijöille. Voit
 2. Muuta parametreja tarpeen mukaan ja valitse sitten **OK**.
 
     > [!NOTE]
-    > Jos tulostat 1095-C-lomakkeet yli 500 työntekijälle, PDF-tiedostoja on useita. **Tiedostonhallinnan parametrit** -sivun **Tiedoston enimmäiskoko megatavuina** -kentän arvo on suositeltavaa suurentaa arvoksi **150**. (Voit avata sivun nopeasti siirtymispalkin hakukentän avulla.)
+    > Jos tulostat 1095-C-lomakkeet yli 500 työntekijälle, PDF-tiedostoja on useita. **Tiedostonhallinnan parametrit** -sivun **Tiedoston enimmäiskoko megatavuina** -kentän arvo on suositeltavaa suurentaa arvoksi **150**. (Sivu voidaan avata nopeasti siirtymispalkin hakukentän avulla.)
     >
     > ![Tiedoston enimmäiskoon muuttaminen.](./media/hr-benefits-management-aca-maximum-file-size.png)
 

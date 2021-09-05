@@ -2,7 +2,7 @@
 title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344371"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -169,7 +169,7 @@ Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat sovelluksen. S
 Yksi ainutlaatuinen mukautusominaisuus, joka on käytettävissä koontinäytössä, on mahdollisuus lisätä ruutuja. 
 
 - Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää työtila**. Uusi työtilan ruutu luodaan koontinäytön alareunaan. Voit nimetä tämän uuden työtilan ruudun haluamallasi tavalla. Voit myös lisätä luetteloita, ruutuja ja linkkejä työtilaa aiemmin tämän ohjeaiheen kohdassa [Ruutujen, luetteloiden ja linkkien lisääminen työtilaan](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) kuvatulla tavalla.
-- Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää sovellus**. Määritä valintaikkunassa, haluatko lisätä ruudun uuteen työtilaan tai ruutuun, jolla on sisältöä Power Appsista tai verkkosivulta. Määritä sitten valitsemasi vaihtoehto ohjeiden mukaan. Uusi ruutu luodaan koontinäytön alareunaan. 
+- Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää sovellus**. Määritä valintaikkunassa, haluatko lisätä ruudun uuteen työtilaan tai ruutuun, jolla on sisältöä Power Appsista tai verkkosivulta. Määritä sitten valitsemasi vaihtoehto ohjeiden mukaan. Uusi ruutu luodaan koontinäytön alareunaan. Lisätietoja näiden upotettujen sovellusten lisäämisestä, muokkaamisesta, poistamisesta ja jakamisesta on kohdissa [Pohjaan perustuvien sovellusten upottaminen Power Appsista](embed-power-apps.md) ja [Kolmannen osapuolen sovellusten upottaminen](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Mukauttamisen jakaminen
 

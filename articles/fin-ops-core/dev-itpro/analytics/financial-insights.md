@@ -2,7 +2,7 @@
 title: Talousanalyysi
 description: Talousanalyysi kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätökset.
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767824"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416302"
 ---
 # <a name="financial-analysis"></a>Talousanalyysi
 
@@ -36,9 +36,9 @@ ms.locfileid: "6767824"
 > - **Sivu** – Yhden välilehden sisältävä .pbix-tiedosto. Kullakin sivulla voi olla useita visualisointeja.
 > - **Visualisointi** – Yksi tietolähde, kuten kortti, tunnusluku, kaavio, taulukko tai raportti. Jos sivulla oleva visualisointi on raportti, siinä ei voi olla muita visualisointeja raportoitavien tietojen koon vuoksi.
 
-Tällä hetkellä **talousanalyysissa** voi katsella aktiivisen yrityksen ja kaikkien yritysten tietoja. Tulevissa versioissa työtila kehittyy paikaksi, jossa voit muokata ja luoda visualisointeja Power BI:n avulla.
+**Talousanalyysi**-työtila keskittyy siihen, että aiemmin luotuja raportteja voidaan tarkastella ja suodattaa. Uusia visualisointeja voidaan lisätä **Talousanalyysi** -työtilaan. **Talousanalyysi**-työtila on käytettävissä nykyisessä yrityksessä sekä kaikissa yrityksissä, ja siinä näytetään kaikkien yritysten tiedot riippumatta siitä, minkä yritysten käyttöoikeus roolilla on.
 
-Vaikka **Talousjohtajan yhteenveto** -työtilassa on samat visualisoinnit **talousanalyysissa**, se keskittyy ennen kaikkea aiemmin luotujen tietojen tarkasteluun ja suodattamiseen. Tulevissa versioissa voit lisätä uusia visualisointeja **Talousanalyysi** -työtilaan. Uudet visualisointeja on ehkä mahdollista käyttää myös muissa työtiloissa, jotka keskittyvät toisiin rooleihin, kuten projekti- tai ostoreskontrapäälliköihin. **Talousjohtajan yhteenveto** -työtilassa on jatkossakin näkyvissä kaikkien yritysten tiedot riippumatta siitä, minkä yrityksen käyttöoikeudet roolilla on.
+- [Power BI -visualisointien lisääminen tai muokkaaminen koontinäytössä](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance -asetukset
 **Kirjanpito**

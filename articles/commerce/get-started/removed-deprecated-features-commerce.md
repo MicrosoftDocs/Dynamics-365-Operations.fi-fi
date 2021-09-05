@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Commercesta.
 author: josaw
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aa6030468259069cf031feb8df48d6710e1160f310a1d82c1034afe69249f00f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740404"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386738"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -32,6 +32,55 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commercen version 10.0.21 poistetut tai vanhentuneet ominaisuudet
+
+[!include [banner](../includes/preview-banner.md)]
+
+### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Retail SDK:n jakelu Lifecycle Servicesin avulla
+
+Retail SDK toimitetaan Lifecycle Servicesin (LCS) mukana. Tämä jakelutapa vanhenee versiossa 10.0.21. Jatkossa Retail SDK -viitepaketit, -kirjastot ja -näytteet julkaistaan GitHubin julkisissa säilöissä.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Retail SDK toimitetaan LCS:n mukana. LCS-prosessin valmistuminen kestää muutaman tunnin, ja tämä prosessi on toistettava kunkin päivityksen yhteydessä. Jatkossa Retail SDK -viitepaketit, -kirjastot ja -näytteet julkaistaan GitHubin julkisissa säilöissä. Laajennusnäytteiden ja viitepakettien käyttäminen on helppoa, ja päivitykset valmistuvat muutamassa minuutissa. |
+| **Onko toinen ominaisuus korvannut?**   |  [Retail SDK -näytteiden ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md) |
+| **Tuotealueet, joihin vaikutetaan**         | Retail SDK |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: versiosta 10.0.21 alkaen LCS-virtuaalikoneiden kautta toimitettu SDK poistetaan lokakuussa 2022. |
+
+### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Retail-käyttöottopaketti sekä yhdistetyt myyntipisteen, Hardware stationin ja Cloud Scale unitin asennusohjelmat
+
+Retail-käyttöottopaketit, jotka luotiin Retail SDK MSBuildin avulla, vanhentuvat versiossa 10.0.21. Jatkossa käytetään Cloud Scale Unit -laajennusten (Commerce Runtime, kanavatietokanta, Commerce headless-ohjelmointirajapinnat, maksut ja Cloud Point of Sale) Cloud Scale Unit (CSU) -pakettia. Vain laajennusten myyntipisteen, Hardware stationiin ja Cloud scale unitin asennusohjelmia käytetään paikallisessa ympäristössä.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Retail-käyttöönottopaketti on yhdistelmäpaketti, joka sisältää kaikki laajennuspaketit ja asennusohjelmat. Tämän yhdistelmäpaketin vuoksi käyttöönotto on monimutkaista, sillä CSU-laajennukset koskevat Cloud scale unitia ja asennusohjelmat otetaan käyttöön myymälöissä. Asennusohjelmat sisältävät laajennuksen ja perustuotteen, mikä hankaloittaa päivityksiä. Kunkin päivityksen yhteydessä on suoritettava koodien yhdistämien ja paketin luonti. Prosessia yksinkertaistetaan siten, että laajennuspaketit ovat nyt erillisiä osia, mikä helpottaa käyttöönottoa ja hallintaa. Tämän uuden menettelyn ansiosta laajennusten ja perustuotteen asennusohjelmat on erotettu toisistaan, ja niitä voidaan ylläpitää ja päivittää erikseen ilman koodin yhdistämistä tai uudelleenpakkausta.|
+| **Onko toinen ominaisuus korvannut?**   | CSU-laajennukset, myyntipistelaajennuksen asennusohjelmat, Hardware station -laajennuksen asennusohjelmat |
+| **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Commerce -laajennus ja käyttöönotto |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: versiosta 10.0.21 alkaen, LCS:n RetailDeployablePackage-käyttöönoton tuki poistetaan lokakuussa 2022. |
+
+Lisätietoja:
+
++ [Commerce Cloud Scale Unitin (CSU) erillisen paketin luominen](../dev-itpro/retail-sdk/retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu)
++ [Modern POS -laajennuspaketin luominen](../dev-itpro/pos-extension/mpos-extension-packaging.md)
++ [Myyntipisteen integroiminen uuteen laitteeseen](../dev-itpro/hardware-device-extension.md)
++ Koodimallit
+    + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+    + [Myyntipiste, CSU and Hardware station](https://github.com/microsoft/Dynamics365Commerce.InStore)
+
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>Retail SDK:n ModernPos.Sln ja CloudPOs.sln
+
+Myyntipistelaajennuksen kehittäminen ModernPos.sln-, CloudPOs.sln-, POS.Extension.csproj-tiedostojen avulla ja myyntipistekansio vanhentuvat versiossa 10.0.21. Jatkossa käytetään itsenäistä myyntipisteen myyntipistelaajennusten pakkaus-SDK:ta.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Jos aiemmissa Retail SDK -versioissa oli myyntipistelaajennuksia, päivittäminen uusimpaan myyntipisteversioon edellytti koodin yhdistämistä ja uudelleenpakkaamista. Koodin yhdistämisen vuoksi päivitysprosessi kesti kauan, minkä lisäksi säilössä oli ylläpidettävä täydellistä Retail SDK:ta. Lisäksi oli käännettä POS.App-ydinprojekti. Itsenäistä pakkausmallia käytettäessä vain laajennusta on ylläpidettävä. Myyntipistelaajennusten uusimpaan versioon päivittämien sujuu kätevästi päivittämällä projektin käyttämä NuGet-paketin versio. Laajennukset voidaan ottaa käyttöön itsenäisesti, ja palvelut käyttävät laajennuksen asennusohjelmia. Perusmyyntipisteet voivaan ottaa käyttöön ja niitä voidaan huoltaa erikseen, eikä koodia tarvitse yhdistää tai pakata uudelleen perusasennusohjelmaan tai koodiin. |
+| **Onko toinen ominaisuus korvannut?**   | [Myyntipisteen itsenäinen pakkauksen SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Commercen myyntipistelaajennus ja käyttöönotto |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: versiosta 10.0.21 alkaen yhdistettyjen myyntipistepakettien ja laajennusmallin tuki ModernPos.Sln-, CloudPOs.sln- ja POS.Extensons.csproj-tiedostojen käytölle Retail SDK:ssa poistetaan lokakuussa 2022. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Commercen version 10.0.17 poistetut tai vanhentuneet ominaisuudet
 

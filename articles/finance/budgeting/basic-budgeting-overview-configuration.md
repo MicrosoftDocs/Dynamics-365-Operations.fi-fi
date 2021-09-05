@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2144d2ca9b2f5e06f0a21f6f97b7ca6440ffe8ce300bdbf329279505059459
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 849b1202ea2c0080f5fc5bacba1f95180fc4008a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720595"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343653"
 ---
 # <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus
 
@@ -38,7 +38,7 @@ Budjettitapahtumia voi luoda monella eri tavalla:
 
 -   Syötä tiedoston tiedot manuaalisesti **Budjettitapahtumat**-sivulla.
 -   Käytä Microsoft Excel -mallia, jonka voit avata napsauttamalla **Avaa Excelissä** -painiketta **Budjettitapahtumat**-sivulla.
--   Tuo budjettitapahtumat Tietojen hallinnan **Budjettitiliviennit** -tietoyksikön kautta. Sinun tulisi harkita tämän menetelmän käyttämistä ja **Joukkoon perustuva** -**käsittelyn** parametrin käyttöön ottamista, kun joudut tuomaan useita budjettitilin merkintöjä järjestelmään.
+-   Tuo budjettitapahtumat Tietojen hallinnan **Budjettitiliviennit** -tietoyksikön kautta. Tämän menetelmän käyttämistä ja **Joukkoon perustuva käsittely** -parametrin käyttöönottamista kannattaa harkita, kun useita budjettitilivientejä on tuotava järjestelmään.
 -   Jos yritys käyttää Budjettisuunnittelu-toimintoa budjettitietojen valmisteluun, voit käyttää **Luo budjettitapahtuma** -kausittaista prosessia.
 
 Budjettirekisterin tapahtumaa pidetään valmiina kun budjettisaldot on päivitetty. Valitse **Budjettirekisterimerkinnät** -sivulla **Päivitä budjettisaldot** valitulle budjettirekisterin tapahtumalle tai useille tapahtumille. Kun olet päivittänyt budjettisaldot, budjettitapahtuman tila muuttuu arvoksi **Valmis**. Valmista budjettitapahtumaa ei voida avata uudelleen muokkausta varten. Näin ollen, jos budjettitietoja täytyy korjata, sinun on luotava uusi budjettitapahtuma sen sijaan, että korjaisit valmiin budjettitapahtuman tietoja.

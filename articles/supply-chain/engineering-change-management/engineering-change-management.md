@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714327"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384582"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Suunnittelutuotteiden muutostenhallinta
 
@@ -113,16 +113,16 @@ Voit tarkastella tapahtumia, joihin vaikutus ulottuu, estää valitut tapahtumat
     - **Näytä tapahtuma** – Avaa valittu tapahtumatietue.
     - **Estä tilaus** – Tämä painike on käytettävissä vain **Myyntitilaukset**-välilehdessä. Valitse tämä, jos haluat estää valitun myyntitilauksen.
     - **Estä rivi** – Tämä painike on käytettävissä vain **Ostotilaukset**-välilehdessä. Valitse tämä, jos haluat estää valitun ostotilausrivin.
-    - **Ilmoita vastuuhenkilölle** – Tämä painike on käytettävissä vain **Myyntitilaukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen käyttäjälle, joka on määritetty vastuuhenkilöksi valitulle myyntitilaukselle.
-    - **Ilmoita tilaajalle** – Tämä painike on käytettävissä vain **Ostotilaukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen tilaajalle, joka on määritetty tilaajaksi valitulle ostotilaukselle.
-    - **Ilmoita tuotannolle** – Tämä painike on käytettävissä vain **Tuotantotilaukset**-välilehdessä. Toisin kuin myynti- ja ostotilauksissa, tuotantotilauksilla ei ole yksittäistä käyttäjää, joka on määritetty vastuulliseksi niistä alusta loppuun. Sen sijaan eri valvojat tai suunnittelijat yleensä omistavat omistajuuden tietyn sivuston tai tietyn tuotannon osan osalta (esimerkiksi tietyille resursseille tai resurssiryhmille). Kun valitset tämän painikkeen, kaikki valittuun tuotantotilaukseen liittyvästä resurssista vastuussa olevat käyttäjät saavat muutosilmoituksen.
-    - **Ilmoita valmistelijalle** – Tämä painike on käytettävissä vain **Ostoehdotus**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen valmistelijalle, joka on määritetty valistelijaksi valitulle ostoehdotukselle.
-    - **Ilmoita myynnin vastuuhenkilölle** – Tämä painike on käytettävissä vain **Tarjoukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen käyttäjälle, joka on määritetty vastuuhenkilöksi valitulle tarjoukselle.
+    - **Ilmoita vastuuhenkilölle** – Tämä painike on käytettävissä vain **Myyntitilaukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen käyttäjälle, joka on määritetty vastuuhenkilöksi valitulle myyntitilaukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
+    - **Ilmoita tilaajalle** – Tämä painike on käytettävissä vain **Ostotilaukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen tilaajalle, joka on määritetty tilaajaksi valitulle ostotilaukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
+    - **Ilmoita tuotannolle** – Tämä painike on käytettävissä vain **Tuotantotilaukset**-välilehdessä. Toisin kuin myynti- ja ostotilauksissa, tuotantotilauksilla ei ole yksittäistä käyttäjää, joka on määritetty vastuulliseksi niistä alusta loppuun. Sen sijaan eri valvojat tai suunnittelijat yleensä omistavat omistajuuden tietyn sivuston tai tietyn tuotannon osan osalta (esimerkiksi tietyille resursseille tai resurssiryhmille). Kun valitset tämän painikkeen, kaikki valittuun tuotantotilaukseen liittyvästä resurssista vastuussa olevat käyttäjät saavat muutosilmoituksen. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
+    - **Ilmoita valmistelijalle** – Tämä painike on käytettävissä vain **Ostoehdotus**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen valmistelijalle, joka on määritetty valistelijaksi valitulle ostoehdotukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
+    - **Ilmoita myynnin vastuuhenkilölle** – Tämä painike on käytettävissä vain **Tarjoukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen käyttäjälle, joka on määritetty vastuuhenkilöksi valitulle tarjoukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
     - **Hävikki** – Tämä painike on käytettävissä vain **Varasto**-välilehdessä. Valitse tämä, kun haluat hävikkiin valitun varaston.
     - **Näytä historia** – Avaa valittuun tapahtumaan liittyvät toimenpiteet käyttämällä **Liiketoimintavaikutukset avoimiin tapahtumiin** -valintaikkunaa. (Historiassa näkyy esimerkiksi, onko ilmoitukset lähetetty vai onko tapahtumia estetty.) 
     - **Tarkastele kaikkia tapahtumia** – Avaa kaikkien tapahtumien koko luettelo, ei vain avoimia tapahtumia.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen
 
 Voit lukea ja käsitellä muutosilmoitukset seuraavasti:
 

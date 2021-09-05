@@ -2,19 +2,19 @@
 title: Osapuolen ja yleinen osoitekirja
 description: Tässä aiheessa kuvataan kaksoiskirjoituksen osapuolen ja yleinen osoitekirja.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 3cb4cdaefe7bd82dec612a11d75aeedb77bce152a00ff90fb0095f75b23a4bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729773"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386682"
 ---
 # <a name="party-and-global-address-book"></a>Osapuolen ja yleinen osoitekirja
 
@@ -139,7 +139,10 @@ Ruudukko sisältää seuraavat sarakkeet:
 
 Voit luoda niin monta postiosoitetta kuin haluat ruudukon yläpuolella olevalla **Uusi sähköinen osoite** -painikkeella.
 
-Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa versioissa kaikki postiosoitteen ja sähköisenosoitteen kentät poistetaan muista välilehdistä (esimerkiksi **Yhteenveto**- ja **Tiedot**-välilehdistä).
+Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa versioissa kaikki postiosoitteen ja sähköisenosoitteen kentät poistetaan muista välilehdistä, kuten **Yhteenveto**- ja **Tiedot**-välilehdistä. **Tiedot**-välilehdessä näkyvät yhteystiedot ovat vain luku -muotoisia kopioita ensisijaisesta sähköisestä osoitteesta, kuten ensisijainen puhelinnumero, ensisijainen sähköposti, ensisijainen faksinumero ja ensisijainen Twitter-tunnus. Liidin hyväksyntäprosessin aikana voidaan antaa sekä työnumero että matkapuhelimenumero. Työnumero katsotaan ensisijaiseksi puhelinnumeroksi, jos **IsMobile=No**, ja matkapuhelinnumero katsotaan toissijaiseksi puhelinnumeroksi, jos **IsMobile=Yes**.
+
+> [!TIP]
+> Postiosoitetta ja sähköistä osoitetta hallitaan käyttämällä **Tili**- ja **Yhteyshenkilö**-lomakkeiden **Osoitteet**- ja **Sähköiset osoitteet** -välilehtiä. Näin varmistetaan, että osoitetiedot synkronoidaan Finance and Operations -sovelluksiin.
 
 ## <a name="setup"></a>Luo perustiedot
 
@@ -249,13 +252,11 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
     [CDS-myyntitilauksien otsikot](mapping-reference.md#217) | salesorders
     [Myyntilaskun otsikot V2](mapping-reference.md#118) | laskut
 
-> [!Note]
+> [!NOTE]
 > `CDS Contacts V2 (contacts)`-kartta on kartta, jonka olet keskeyttänyt vaiheessa 1. Kun yrität suorittaa muita karttoja, nämä 2 karttaa saattavat näkyä riippuvaisten luettelossa. Älä suorita näitä karttoja.
-
-> [!Note]
+>
 > Jos osapuolen ja yleisen osoitekirjan ratkaisu on asennettu, sinun on poistettava käytöstä laajennus `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Jos poistat osapuolen ja yleisen osoitekirjan ratkaisun asennuksen, laajennus on otettava uudelleen käyttöön.
-
-> [!Note]
+>
 > `msdyn_*partynumber`-kenttää (yksirivinen tekstikenttä), joka sisältyy **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-taulukoihin, ei pitäisi käyttää jatkossa. Etiketin nimessä on etuliite **(Vanhentunut)** selkeyden vuoksi. Käytä sen sijaan **msdyn_partyid**-kenttää. Kenttä on haku **msdyn_party**-taulukkoon.
 
 > Taulun nimi | Vanha kenttä | Uusi kenttä
@@ -296,7 +297,6 @@ Lisätietoja on [kaksoiskirjoituksen yhdistämismäärityksen viitteessä](mappi
 
 + Kun luot asiakkaan ja osoitteen ja tallennat sen Finance and Operations -sovelluksissa, osoite ei välttämättä synkronoidu **Osoite**-taulukkoon. Tämä johtuu kaksoiskirjoitusalustan järjestysongelmasta. Voit ratkaista ongelman luomalla ensin asiakkaan ja tallentamalla sen. Lisää sitten osoite.
 + Finance and Operations -sovelluksissa kun asiakastietueessa on ensisijainen osoite ja luot asiakkaalle uuden yhteyshenkilön, yhteyshenkilötietue perii ensisijaisen osoitteen liitetystä asiakastietueesta. Näin tapahtuu myös toimittajan yhteyshenkilölle. Dataverse ei tue tällä hetkellä tätä toimintatapaa. Jos kaksoiskirjoitus on käytössä, ensisijaisella osoitteella perityt asiakkaan yhteyshenkilöt Finance and Operations -sovelluksesta synkronoidaan Dataversen kanssa osoitteineen.
-+ `msdyn_partyelectronicaddress`-taulun sähköiset osoitteet siirry **Tili**- ja **Yhteyshenkilö**-taulukoiden sähköisten osoitteiden kenttiin. Tämä ongelma aiotaan korjata asteittaisessa julkaisussa. **Tili**- ja **Yhteyshenkilö**-taulukoiden sähköisissä osoitekentissä olevia tietoja ei korvata.
 + **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-lomakkeiden sähköisten osoitteiden välilehdessä määritetyt sähköiset osoitteet tulevat `msdyn_partyelectronicaddress`-taulukosta. Nämä tiedot eivät siirry liittyviin tapahtumiin, kuten myyntitilaukseen, tarjoukseen ja ostotilaukseen. Tämä ongelma aiotaan korjata asteittaisessa julkaisussa. Tili- ja yhteyshenkilötietueiden sähköisten osoitekenttien olemassa olevat tiedot toimivat edelleen myyntitilausten, tarjousten ja ostotilausten kaltaisissa tapahtumissa.
 + Finance and Operations -sovelluksissa voit luoda yhteyshenkilötietueen **Lisää yhteyshenkilö** -lomakkeesta. Kun yrität luoda uuden yhteyshenkilön **Näytä yhteyshenkilö** -lomakkeesta, toimenpide epäonnistuu. Tämä on tiedossa oleva ongelma.
 

@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 76e7c0be047decb40019be207a735be27f79d78b4cde9321e8c3728bdbd45e35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b337e80db6d47354dc187477832add370a164172
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760535"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402198"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Oppimisluettelo käyttöönoton projektipäälliköille, jotka työskentelevät Dynamics 365 Supply Chain Management parissa
 
@@ -27,8 +27,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
-| Sisältö | kuvaus  | Muoto  | Pituus    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia |
 | [Finance and Operations -sovellusten käytön aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
@@ -38,8 +38,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="core-platform-knowledge"></a>Ympäristöä koskevat perustiedot<a name="core-platform-knowledge"></a>
 
-| Sisältö  | kuvaus  | Muoto   | Pituus    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Lifecycle Servicesin käyttö Finance and Operations -sovellusten suunnittelussa ja käyttöönotossa](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) on yhteistoiminnallinen työtila, jonka avulla asiakkaat ja heidän kumppaninsa voivat hallita Finance and Operations -sovellusprojekteja esimyynnistä toteutusvaiheeseen ja lopuksi tuotantoympäristöön. Se sisältää tarkistuslistoja ja työkaluja, joiden avulla voit hallita projektia, mukaan lukien käyttövalmiit menetelmät, jotka helpottavat toteutusta ja jotka päivitetään säännöllisesti. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Organisaation asetusten määrittäminen Finance and Operations -sovelluksissa](/learn/paths/configure-your-organization-finance-ops/) | Finance and Operations -sovellusten kanssa toimivana toiminnallisena konsulttina sinun on ymmärrettävä, miten voit määrittää asiakkaan organisaation. Tämä oppimispolku näyttää muun muassa, miten voit määrittää yritykset, ottaa käyttöön suojausasetukset, mukauttaa käyttäjien käyttöliittymää, suunnitella ja muodostaa mobiilisovelluksia sekä toteuttaa yleisiä integrointeja. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 12 tuntia |
 | [Tietojen siirtäminen ja Finance and Operations -sovellusten julkaisu](/learn/paths/migrate-data-go-live-finance-operations/) | Toiminnallisena konsulttina sinun on ymmärrettävä, miten voit valmistella asiakkaan tiedot siirtoa varten, käsitellä tietojen hallintaa ja suorittaa käyttäjän hyväksymistestauksen, jotta voit julkaista Finance and Operations -sovellusten avulla. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
@@ -69,8 +69,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="supply-chain-management"></a>Toimitusketjun hallinta<a name="supply-chain-management"></a>
 
-| Sisältö  | kuvaus  | Muoto | Pituus    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Tuotteiden ja varaston konfiguroiminen ja hallinta Dynamics 365 Supply Chain Managementissa](/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Tuotetiedot ovat keskeinen osa toimitusketju- ja vähittäismyyntisovelluksia toimialasta riippumatta. Liiketoimintaratkaisun eri moduuleissa tarvitaan tuotekohtaisia tietoja ja määrityksiä, jotta tiettyihin tuotteisiin, tuoteperheisiin, tuoterakenteisiin tai tuoteluokkiin liittyviä liiketoimintaprosesseja voidaan hallita. Varastoraporteissa näkyy useilla eri tavoilla, kuinka paljon varastoa on, ja selittää, miten on tehokkaampaa tehdä invesointeja varastointiin. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 6 tuntia |
 | [Hankinnan ja toimittajien konfiguroiminen ja hallinta Dynamics 365 Supply Chain Managementissa](/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Toimittajien etsiminen ja käsitteleminen, tuotteiden ostaminen sekä tavaroiden ja palveluiden laadun varmistaminen ovat tärkeitä tekijöitä, jotka vaikuttavat yrityksen maineeseen ja menestykseen. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 6 tuntia |
 | [Varastonhallinnan konfiguroiminen ja käsitteleminen Dynamics 365 for Finance and Operationsissa](/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Varastonhallinta Dynamics 365 for Finance and Operationsissa auttaa optimoimaan ja virtaviivaistamaan varastoprosessit yksilöllisten tarpeiden mukaan ja antaa käsityksen varastostasi ja työkaluista, jotka auttavat lisäämään asiakastyytyväisyyttä ja vähentämään kustannuksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5 tuntia |
@@ -86,8 +86,8 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="manufacturing"></a>Valmistus<a name="manufacturing"></a>
 
-| Sisältö  | kuvaus  | Muoto    | Pituus    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
 | [Erillisen valmistuksen konfiguroiminen ja käyttäminen Dynamics 365 Supply Chain Managementissa](/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | Jos yritys tuottaa vain yksinkertaisia tuotteita, tuotanto voidaan ajoittaa manuaalisesti tuoterakenteen osien saapuessa tuotantotilaan oikeaan aikaan ja asianmukaiseen resurssiin. Valmistuksen toiminnallisena konsulttina sinun on tiedettävä, miten voit määrittää Dynamics 365 for Finance and Operationsissa erillisen valmistuksen, jotta asiakkaasi voivat suorittaa ja hallita tuotannon elinkaarta. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 9 tuntia |
 | [Lean-valmistuksen konfiguroiminen ja käyttäminen Dynamics 365 Supply Chain Managementissa](/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | Lean-valmistus on jatkuvan parantamisen matka. Tavoitteena on tuottaa täsmälleen, mitä asiakas haluaa, milloin asiakas haluaa, ja tehdä sen taloudellisesti. Voit käyttää lean-valmistusta yhdistelmätuotantoympäristössä, joka yhdistää erilaiset toimitus-, tuotanto- ja hankintastrategiat. Näitä strategioita ovat tuotantotilaukset, prosessiteollisuuden erätilaukset, ostotilaukset ja siirtotilaukset. Dynamics 365 for Finance and Operationsissa lean-valmistuksen arkkitehtuuri koostuu tuotantovirroista, tehtävistä ja kanban-säännöistä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 6.5 tuntia |
 | [Prosessivalmistuksen konfiguroiminen ja käyttäminen Dynamics 365 Supply Chain Managementissa](/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | Prosessivalmistus liittyy kaavoihin ja valmistusresepteihin, toisin kuin erillinen valmistus, jossa käytetään erillisiä yksiköitä ja tuoterakenteita. Prosessivalmistusta käytetään valmistusympäristöissä, joissa tuotanto suoritetaan eräprosesseissa tai puolijatkuvissa prosesseissa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 6 tuntia |
@@ -98,13 +98,12 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="exams"></a>Tentit<a name="exams"></a>
 
-| Sisältö  | kuvaus  | Muoto   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|---------------------------------------------------------------------------|
+| Sisältö | kuvaus | Muoto |
+|---------|-------------|--------|
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Supply Chain Management Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Supply Chain Management Functional Consultant -konsultit virtaviivaistavat kustannuslaskennan, varastonhallinnan, pääsuunnittelun ja varastonhallinnan asiakkailleen. | Sertifikaatti, kustannukset vaihtelevat alueittain |
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Manufacturing Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-manufacturing.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Manufacturing Functional Consultant -konsultit integroivat digitaaliset ja fyysiset järjestelmät; parantavat näkyvyyttä, valmistustehokkuutta ja joustavuutta ja alhaisemmat kustannukset asiakkailleen. | Sertifikaatti, kustannukset vaihtelevat alueittain |
 | [Tentti MB-300: Microsoft Dynamics 365 Unified Operationsin perustoiminnot](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: Käytä yleisiä toimintoja ja toteutustyökaluja; Määritä suojaus, prosessit ja asetukset; tietojen siirron suorittaminen; tukea ratkaisua. | Tentti, kustannukset vaihtelevat alueittain |
 | [Tentti MB-320: Microsoft Dynamics 365 for Finance and Operations, valmistus](/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: tuotannon määrittäminen ja konfiguroiminen; Luo ja hallitse tuotantoa ja Lean-tilauksia; luo, käsittele ja hallitse tuotannon erätilauksia. | Tentti, kustannukset vaihtelevat alueittain |
 | [Tentti MB-330: Microsoft Dynamics 365 for Finance and Operations, Toimitusketjun hallinta](/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Tämä tentti mittaa kykyäsi suorittaa seuraavat tekniset tehtävät: tuotetietojen hallinnan käyttöönotto; varastonhallinnan toteuttaminen; toimitusketjun prosessien toteuttaminen ja hallinta; toteuttaa varastoinninhallinnan ja kuljetuksenhallinnan ja suorittaa liiketoimintaprosesseja. | Tentti, kustannukset vaihtelevat alueittain |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

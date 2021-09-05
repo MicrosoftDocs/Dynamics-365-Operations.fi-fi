@@ -2,7 +2,7 @@
 title: Finance and Operations -sovellusten ohjekokemuksen määrittäminen
 description: Tässä ohjeaiheessa käsitellään joidenkin Microsoft Dynamics 365 -sovellusten ohjejärjestelmän osista.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714520"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343809"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten ohjekokemuksen määrittäminen
 
@@ -54,7 +54,7 @@ Ratkaisun tehtäväoppaiden määrittämisohjeet ovat **Järjestelmän parametri
 > [!IMPORTANT]
 > Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja hae **Järjestelmäparametrit**-sivu valitsemalla **OK**.
 >
-> [![Yhdistäminen LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Yhdistäminen LCS:ään."](./media/connect-to-lcs-crop.png)
+> [![Muodosta yhteys LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Yhteyden muodostaminen LCS:ään")](./media/connect-to-lcs-crop.png)
 
 1. Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 2. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.

@@ -1,8 +1,8 @@
 ---
-title: Dayforceen integroinnin määritys
-description: Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen välinen integrointi käyttää useita konfiguraation vaiheita, jotka on kuvattu tässä artikkelissa. Sekä Human Resourcesin että Dayforcen integrointi on määritettävä ennen kuin voit käsitellä palkka-ajoa.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Integroinnin määrittäminen Dayforcen kanssa
+description: Tässä aiheessa käsitellään määritysvaiheita, joita tarvitaan Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen väliseen integrointiin.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 961d3bd61e85549f4124391389682bb24aceae3e16e52dc8111a44c365a8c081
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782728"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414581"
 ---
-# <a name="configure-integration-with-dayforce"></a>Dayforceen integroinnin määritys
+# <a name="configure-integration-with-dayforce"></a>Integroinnin määrittäminen Dayforcen kanssa
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen välinen integrointi käyttää useita konfiguraation vaiheita, jotka on kuvattu tässä artikkelissa. Sekä Human Resourcesin että Dayforcen integrointi on määritettävä ennen kuin voit käsitellä palkka-ajoa.
+Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen välinen integrointi käyttää useita konfiguraation vaiheita, jotka on kuvattu tässä ohjeaiheessa. Sekä Human Resourcesin että Dayforcen integrointi on määritettävä ennen kuin voit käsitellä palkka-ajoa.
 
 Käytettäessä jotakin palvelua, kuten Dayforcea palkka-ajojen suorittamiseen, on otettava käyttöön integrointi Human Resourcesissa. Integrointi edellyttää tiettyjä tietoja Human Resourcesista. Sinun on varmistettava, että Dayforceen yhdistetyt tiedot on konfiguroitu Human Resourcesissa siten, että ne tukevat integrointia. Integraatio käyttää seuraavanlaisia laajoja tietoryhmiä:
 
@@ -35,7 +35,7 @@ Käytettäessä jotakin palvelua, kuten Dayforcea palkka-ajojen suorittamiseen, 
 - Palkanlaskentatietoja, kuten maksujaksot, maksukaudet ja ansiokoodit
 - Työntekijän tiedot
 
-Tässä artikkelissa kuvataan vaiheita, joita sinun on noudatettava ottaaksesi integroinnin käyttöön. Lisäksi kerrotaan minkä tyyppisiä tietoja ja konfigurointitietoja integrointi edellyttää.
+Tässä aiheessa käsitellään ohjeita, joiden avulla integrointi otetaan käyttöön, sekä tietotyyppejä ja määritystietoja, joita integraatio edellyttää.
 
 ## <a name="enable-the-integration"></a>Ota integraatio käyttöön
 
@@ -50,7 +50,7 @@ Ota integrointi käyttöön Human Resourcesissa seuraavien vaiheiden mukaan.
 
 Kun integrointi otetaan käyttöön, tietojen viennin paketti ja tiedostot luodaan ja taajuus määritetään. Voit muuttaa tätä taajuutta tarpeen mukaan.
 
-Lisätietoja Azure-tallennustilien ja Azure-tallennusyhteyden yhteysmerkkijonoista seuraavissa Azure-artikkeleissa:
+Lisätietoja Azure-tallennustilien ja Azure-tallennusyhteyden yhteysmerkkijonoista seuraavissa Azure-aiheissa:
 
 - [Lisätietoja Azure-tallennustileistä](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Määritä Azure-tallennustilan yhteysmerkkijonot](/azure/storage/common/storage-configure-connection-string)
@@ -122,9 +122,9 @@ Dayforce luo seuraavat vähennykset, jotka perustuvat palkanlaskennan vaikutukse
 | Vain osuus          | Työnantajavähennys on luotu.             |
 | Vähennys ja osuus | Työntekijän ja työnantajan vähennykset luodaan. |
 
-Lisätietoja etuohjelman määrittämisestä ja hallitsemisesta seuraavissa artikkeleissa:
+Lisätietoja etuohjelman määrittämisestä ja hallitsemisesta seuraavissa aiheissa:
 
-- [Työsuhde-etuusohjelman toteuttaminen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Työsuhde-etuohjelman toteuttaminen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
 - [Luo uusi etu](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
 - [Määritä edun oikeutussäännöt ja -käytännöt](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
 - [Rekisteröi etuja työntekijöille ja poista niitä](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
@@ -135,7 +135,7 @@ Kompensaationhallinnan avulla ohjataan peruspalkan ja palkkioiden maksamista. Ty
 
 Dayforce käyttää kompensaatiotietoja laskeakseen työntekijän tunti- tai vuosihinnan. Kiinteät kompensaatiosuunnitelmat ja palkkojen muunnokset vaaditaan. Työntekijöiden täytyy olla liitettynä kiinteään kompensaatiosuunnitelmaan.
 
-Katso lisätietoja kompensaatiosuunnitelmista seuraavista artikkeleista:
+Katso lisätietoja kompensaatiosuunnitelmista seuraavista ohjeaiheista:
 
 - [Kiinteiden kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [Muuttuvien kompensaatiosuunnitelmien luominen](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
@@ -147,10 +147,10 @@ Katso lisätietoja kompensaatiosuunnitelmista seuraavista artikkeleista:
 
 #### <a name="jobs"></a>Työt 
 
-Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Lisätietoja on seuraavissa artikkeleissa:
+Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Lisätietoja on seuraavissa aiheissa:
 
 - [Työn komponenttien määrittäminen](/dynamics365/unified-operations/talent/create-job)
-- [Uusien töiden määrittäminen](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Määritä uudet työt](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Toimet
 
@@ -172,7 +172,7 @@ Muista seuraavat tiedot ja määritykset, kun määrität toimia:
 
 Mikäli useita toimia samalla osastolla liittyy samaan työhön, ne yhdistetään yhteen toimeen Dayforcessa.
 
-Lisätietoja on seuraavissa artikkeleissa:
+Lisätietoja on seuraavissa aiheissa:
 
 - [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [Toimien määritys](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
@@ -181,7 +181,7 @@ Lisätietoja on seuraavissa artikkeleissa:
 
 Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-aluetta. Osasto on vastuussa määrätystä organisaation alueesta, kuten myynnistä, kirjanpidosta tai henkilöstöhallinnosta. Voit käyttää osastoja toiminnallisia alueita koskevaan raportointiin. Osastot voivat olla tulosvastuullisia.
 
-Lisätietoja on seuraavissa artikkeleissa:
+Lisätietoja on seuraavissa aiheissa:
 
 - [Osaston luominen ja liittäminen osastohierarkiaan](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [Määritä uudet osastot](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)

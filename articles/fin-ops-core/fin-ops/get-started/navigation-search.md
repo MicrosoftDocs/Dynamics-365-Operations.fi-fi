@@ -2,7 +2,7 @@
 title: Siirtymishaku
 description: Tässä ohjeaiheessa kerrotaan, miten sivujen välillä voi siirtyä hakutoiminnon avulla.
 author: aneesmsft
-ms.date: 04/27/2017
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82c7bf17eaf0276c448223182b4268a50addb37f1ff115fec0223bc3313905e5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e30b56287520bb3536b250a886e74e6cbe30b412
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749601"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344395"
 ---
 # <a name="navigation-search"></a>Siirtymishaku
 
@@ -34,7 +34,7 @@ Kun haluat käyttää tätä toimintoa, valitse **hakukuvake**, jolloin **hakuke
 > [!NOTE]
 > **Hakukentän** avulla voit etsiä sivut ja siirtyä niille. Sen avulla ei voi etsiä tiettyjä tietoja tai toimintoja.
 
-[![hakuruutu.](media/navigation-search.png "Hakuruutu")
+![hakuruutu](media/navigation-search.png "Hakuruutu")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Siirry nopeasti tietylle sivulle
 

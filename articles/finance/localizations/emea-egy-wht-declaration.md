@@ -10,20 +10,19 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 51f0ab8f76fe3bce91d6e4ed56bdfa8529c1aacbd326a8b4b3d80615f872f8c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729548"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403888"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Egyptin ennakonpidätysilmoitus (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Yleiskuvaus
@@ -113,7 +112,7 @@ Luo veroilmoitusraportti noudattamalla seuraavia ohjeita.
 1. Siirry kohtaan **Vero** > **Ilmoitus** > **Ennakonpidätys** > **Ennakonpidätysmaksu*.
 2. Valitse tilityskausi ja valitse sitten raportin aloituspäivämäärä. 
 3. Syötä tapahtuman päivämäärä ja valitse **OK**.
-4. Valitse näyttöön tulevassa valintaikkunassa yksi tai useampi lomaketyypeistä **Form nro 41**, **Form nro 11** tai **Ei mikään**. Jos valitset **Ei mikään**, luodaan vakioraportti. 
+4. Valitse näyttöön avautuvassa valintaikkunassa ainakin yksi seuraavista lomaketyypeistä: **Lomakenro 41**, **Lomakenro 11** tai **Ei mitään**. Jos valitset **Ei mikään**, luodaan vakioraportti. 
 5. Valitse kieli. Kaikki raportit käänetään kielille **en-us** ja **ar-eg**.
 6. Syötä sen pankin sivuliike ja nimi, josta veromaksu maksetaan.
 7. Valitse yrityksen tyyppi ja kirjoita sitten tarkistus- ja asiakirjanumerot. 

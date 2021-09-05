@@ -2,7 +2,7 @@
 title: Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
 description: Tässä ohjeaiheessa on tietoja suunnittelun optimoinnin julkaisuprosessista ja julkaisuhistoriasta.
 author: crytt
-ms.date: 7/28/2021
+ms.date: 8/17/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 64c8cd3ed6ff522a9ef90831ae502c5d50fbc05816aaa764d2a8e122934fc2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcd18341629afcf3092a457ae711e27b0bbfeb2a
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722388"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394411"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
 
@@ -33,7 +33,8 @@ Koska ilmoitukset eivät näy, kun suunnittelun optimointi päivitetään ympär
 
 | Muutokset | Ominaisuuksien hallinnan tiedot | Vapautuspäivä |
 |---|---|---|
-| <p>Rajattoman kapasiteetin ajoituksen resurssityypin vaatimukset</p><p>Resurssin tehokkuus ja kalenterin tehokkuus rajattoman kapasiteetin ajoituksessa</p><p>Lisätietoja on kohdassa [Ajoittaminen rajattoman kapasiteetin avulla](infinite-capacity-planning.md). | <p>Käytettävissä ominaisuuksien hallinnassa versiosta 10.0.20.</p><p>Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus*</p> | 6. heinäkuuta 2021 |
-| Yleiset laadun parannukset | Ominaisuuksien hallintaa ei tarvita. | 6. heinäkuuta 2021 |
+| <p>Lisättiin **Läpimenoaika**-kenttä suunniteltuihin tilauksiin.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset.</p> | Ominaisuuksien hallintaa ei tarvita. | 16. elokuuta 2021 |
+| <p>Lisättiin rajattoman kapasiteetin ajoituksen resurssityypin vaatimukset.</p><p>Parannettiin rajattoman kapasiteetin ajoituksen resurssin tehokkuutta ja kalenterin tehokkuutta.</p><p>Lisätietoja on kohdassa [Ajoittaminen rajattoman kapasiteetin avulla](infinite-capacity-planning.md). | <p>Käytettävissä ominaisuuksien hallinnassa versiosta 10.0.20.</p><p>Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus*</p> | 6. heinäkuuta 2021 |
+| Yleiset laadun parannukset. | Ominaisuuksien hallintaa ei tarvita. | 6. heinäkuuta 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

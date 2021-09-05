@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720081"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386096"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
@@ -23,7 +23,23 @@ ms.locfileid: "6720081"
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
 
-## <a name="2070"></a>2.0.7.0
+## <a name="version-2090"></a>Versio 2.0.9.0
+
+Tämä versio korjaa ongelman, jossa sovellus saattoi lopettaa vastaamisen, jos käyttäjät siirtyvät sivulla ylöspäin luettelon yläosasta.
+
+## <a name="version-2080"></a>Versio 2.0.8.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Lisättiin [vaiheen ohjeominaisuuden](mobile-app-titles-instructions.md) tuki. Tämä ominaisuus otettiin käyttöön Supply Chain Managementin versiossa 10.0.21.
+- Lisättiin vihjeanimaatio näyttämään käyttäjille, että he voivat sulkea lisäykset sipaisemalla alaspäin.
+- Lisättiin toimintonäppäimien tuki toimintoluetteloihin ja valikkoihin. Käyttäjät saavat käytettävissä olevien komentojen luettelon pitämällä toimintonäppäimiä painettuna kolme sekuntia.
+- Korjattiin ongelma, joka aiheutti seuraavan virhesanoman näyttämisen joissakin laiteissa: Määritetylle koolle ei löydy sopivaa näkymää.
+- Korjattiin ongelma, jossa koko näytön tila ei toiminut näyttönäppäimistöä käytettäessä.
+- Korjattiin ongelma, jossa sivun sipaiseminen ei toiminut Windows-laitteissa.
+- Korjattu useita ongelmia, jotka saivat järjestelmän lopettamaan vastaamisen.
+
+## <a name="version-2070"></a>Versio 2.0.7.0
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Uudet ominaisuudet, korjaukset ja parannukset versiossa 2.0.7.0
 

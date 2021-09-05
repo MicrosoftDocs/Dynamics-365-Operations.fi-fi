@@ -1,8 +1,8 @@
 ---
 title: Hallinnan yleiskatsaus
-description: Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynamics 365 Human Resourcesia ja tehdä sille vianmäärityksiä.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Tässä aiheessa on luettelo Dynamics 365 Human Resourcesin määrittämisessä, hallinnassa ja vianmäärityksessä käytettävistä ohjeaiheista ja muista resursseista.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765611"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393568"
 ---
 # <a name="administration-overview"></a>Hallinnan yleiskatsaus
 
@@ -28,11 +28,11 @@ ms.locfileid: "6765611"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynamics 365 Human Resourcesia ja tehdä sille vianmäärityksiä.
+Tässä aiheessa on luettelo Dynamics 365 Human Resourcesin määrittämisessä, hallinnassa ja vianmäärityksessä käytettävistä ohjeaiheista ja muista resursseista.
 
 - [Järjestelmävaatimukset](hr-admin-system-requirements.md)
 
-- Voit määrittää ja hallita esiintymiä
+- Määritä ja hallitse esiintymiä
   - [Human Resourcesin valmisteleminen](hr-admin-setup-provision.md)
   - [Kopioi esiintymä](hr-admin-setup-copy-instance.md)
   - [Poista esiintymä](hr-admin-setup-remove-instance.md)
@@ -94,7 +94,16 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
   - [Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources ei näy Dynamics 365 -sovelluksissa](hr-admin-troubleshooting-not-in-apps.md)
   - [Raportointivaihtoehdot](hr-admin-troubleshooting-reporting.md)
-  - [Integroinnin usein kysytyt kysymykset](hr-admin-troubleshooting-integration.md)
+  - [Integraatioiden usein kysytyt kysymykset](hr-admin-troubleshooting-integration.md)
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+### <a name="elearning-courses"></a>eLearning-kurssit
+Online-kursseista ja -koulutuksesta saat tietoa [Dynamics 365 Human Resourcesin Microsoft Learn -sivulta](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### <a name="videos"></a>Videot
+
+Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
 
 ## <a name="see-also"></a>Lisätietoja
 

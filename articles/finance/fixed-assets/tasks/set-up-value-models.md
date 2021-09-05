@@ -1,8 +1,8 @@
 ---
 title: Arvomallien asetukset
 description: Näiden ohjeiden avulla voit luoda uuden käyttöomaisuuskirjan ja liittää sen käyttöomaisuusryhmään.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344655"
 ---
 # <a name="set-up-value-models"></a>Arvomallien asetukset
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 Näiden ohjeiden avulla voit luoda uuden käyttöomaisuuskirjan ja liittää sen käyttöomaisuusryhmään. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.
-
 
 ## <a name="create-a-book"></a>Luo uusi kirja
 1. Valitse Käyttöomaisuudet > Asetukset > Kirjat.
@@ -48,9 +49,10 @@ Näiden ohjeiden avulla voit luoda uuden käyttöomaisuuskirjan ja liittää sen
 1. Valitse Käyttöomaisuusryhmät.
 2. Syötä tai valitse arvo Käyttöomaisuusryhmä-kentässä.
 3. Syötä Käyttöikä-kenttään numero.
-    * Ota huomioon, että Poistokaudet-kentän arvo lasketaan käyttöiän määrittämisen jälkeen.  
-    * Voit määrittää poistomenetelmän verotustarpeen mukaan.  
 
+  - Poistokaudet lasketaan käyttöomaisuuden käyttöiän antamisen jälkeen.  
+  - Poistomenetelmä voidaan määrittää verotustarpeen mukaan.
+  - Vuokrasopimuksiin liitettyjen käyttöomaisuuserien **Käyttöikä**-kentän arvo ohitetaan joko käyttöomaisuuskirjan vuokra-ajan tai käyttöomaisuuden käyttöiän arvolla sen mukaan, kumpi on lyhyempi. Jos **Omistajuuden siirto** -kentän arvoksi on määritetty käyttöomaisuuskirjassa **Kyllä**, **Käyttöikä**-kentän arvo on aina käyttöomaisuuden käyttöikä.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

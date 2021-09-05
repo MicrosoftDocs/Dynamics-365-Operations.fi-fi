@@ -1,8 +1,8 @@
 ---
-title: Rekisteröintikelpoisuuden käsittely
-description: Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoritetaan.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Rekisteröitymiskelpoisuuksien käsittely
+description: Tässä aiheessa käsitellään rekisteröitymiskelpoisuusprosessin suorittamista.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 989b493af6e8386f9517737c582150470a4e226d161e63c3f7a6088dbd3df903
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c83753c17721487ba6adbf822c994a71ae0a0e6
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782069"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417481"
 ---
-# <a name="process-enrollment-eligibility"></a>Rekisteröintikelpoisuuden käsittely
+# <a name="process-enrollment-eligibility"></a>Rekisteröitymiskelpoisuuksien käsittely
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoritetaan.
+Tässä aiheessa käsitellään rekisteröitymiskelpoisuusprosessin suorittamista.
 
 1. Valitse **Etujen hallinta** -työtilassa **Käsittely**-kohdasta **Rekisteröintikelpoisuuden käsittely**.
 
@@ -53,11 +53,11 @@ Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoriteta
 
 ## <a name="view-process-results"></a>Näytä prosessitulokset
 
-Tässä artikkelissa kerrotaan, miten kelpoisuusprosessitulokset näytetään.
+Tässä aiheessa käsitellään kelpoisuusprosessin tulosten näyttämistä.
 
 1.  Valitse **Etujen hallinta** -työtilassa **Käsittely**-kohdasta **Prosessitulokset**.
 
-2.  **Prosessitulokset**-lomakkeessa määritetään seuraavat kentät:
+2.  **Prosessitulokset**-sivulla määritetään seuraavat kentät:
 
    | Kenttä | kuvaus |
    | --- | --- |

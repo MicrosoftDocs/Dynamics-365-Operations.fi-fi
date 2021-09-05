@@ -1,8 +1,8 @@
 ---
-title: Valitse tietojen integraatioteknologia
-description: Tässä artikkelissa on tietoja, jotka liittyvät henkilöstöhallinnon hallitsemien tietojen integroimiseen. Siinä kuvataan erilaisia integrointitekniikoita, joiden avulla voit päättää, mitkä tekniikat sopivat parhaiten tarpeisiisi.
-author: andreabichsel
-ms.date: 02/28/2020
+title: Valitse tietojen integrointiteknologia
+description: Tässä aiheessa on tietoja, jotka liittyvät henkilöstöhallinnon hallitsemien tietojen integroimiseen.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720465"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414711"
 ---
-# <a name="choose-a-data-integration-technology"></a>Valitse tietojen integraatioteknologia
+# <a name="choose-a-data-integration-technology"></a>Valitse tietojen integrointiteknologia
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tässä artikkelissa on tietoja Dynamics 365 Human Resourcesin hallitsemien tietojen integroimiseen. Siinä kuvataan erilaisia integrointitekniikoita, joiden avulla voit päättää, mitkä tekniikat sopivat parhaiten tarpeisiisi.
+Tässä aiheessa on tietoja Dynamics 365 Human Resourcesin hallitsemien tietojen integroimiseen. Siinä kuvataan erilaisia integrointitekniikoita, joiden avulla voit päättää, mitkä tekniikat sopivat parhaiten tarpeisiisi.
 
 ## <a name="data-integration-background"></a>Tietojen integroinnin taustatietoja
 
 Liiketoimintatiedot ovat keskeinen resurssi, joka tekee yrityksestä yksilöllisen. Liiketoimintatietosi ovat todella arvokkaita. Voit käyttää koko yrityksessä kerättyjen tietojen välisiä suhteita liiketoimintaprosessien ja liiketoimintatietojen parantamiseen koko organisaatiossa. Pyrimme tarjoamaan liiketoimintatietoihin helpon, turvallisen ja vakaan käyttöoikeuden riippumatta siitä, mistä järjestelmästä se on peräisin.
 
-Historiallisesti tietojen integrointi eri järjestelmien välillä on ollut vaikeaa.
-Microsoft on ryhtynyt toimenpiteisiin helpottaakseen tietojen integrointia, ja merkittävä edistysaskel tässä on saavutettu [Dataversellä](/powerapps/maker/common-data-service/data-platform-intro).
+Historiallisesti tietojen integrointi eri järjestelmien välillä on ollut vaikeaa. Microsoft on ryhtynyt toimenpiteisiin helpottaakseen tietojen integrointia, ja merkittävä edistysaskel tässä on saavutettu [Dataversellä](/powerapps/maker/common-data-service/data-platform-intro).
 
 Human Resources tekee Dataversestä ensisijaisen julkisen rajapinnan Human Resourcesin tietoja varten. Ajan mittaan odotamme, että kaikki tärkeimmät henkilöhallintoon liittyvät tiedot näkyvät Dataversessä. Suosittelemme Dataverseä ensisijaiseksi teknologiaksi suurimmassa osassa integrointisovelluksista.
 
@@ -47,7 +46,7 @@ Seuraavissa osissa kuvataan erilaiset tiedonintegrointiteknologiat, jotka ovat k
 
 ### <a name="dataverse-tables"></a>Dataverse-taulut
 
-Dataverse on ensisijainen julkinen tietorajapinta Human Resourcesia varten. Se syntyi Dynamics 365 XRM-alustasta, jota [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) -ratkaisut käyttävät.
+Dataverse on ensisijainen julkinen tietorajapinta Human Resourcesia varten. Se syntyi Dynamics 365 XRM -ympäristöstä, jota [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) -ratkaisut käyttävät.
 
 Dataverse tarjoaa tietotaulukoille alustan ja ohjelmointirajapintaliittymän. Kun otat henkilöstöhallinnon käyttöön, se muodostaa yhteyden Dataverse -yksikköön. Henkilöstöhallinnon tiedot otetaan käyttöön kyseisessä Dataverse -yksikössä. Taulukot ja niiden tiedot ovat kaikkien niiden sovellusten käytettävissä, jotka pystyvät muodostamaan yhteyden Dataverse -esiintymään. Henkilöstöhallinto synkronoi tiedot tulevien ja lähtevien Dataverse-taulukoiden välillä.
 

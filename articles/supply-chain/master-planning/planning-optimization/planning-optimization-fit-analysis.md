@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 52048ea6cced6f670faf13ef07f1288183e6d9b67a016608030f9e192a98faa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344975"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -51,6 +51,9 @@ Saat suunnittelun optimoinnin sopivuusanalyysin tulokset valitsemalla ensin **P�
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Yhteenveto sopivuusanalyysin mahdollisista tuloksista
 
 Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopivan analyysin jälkeen. Numeromerkit (_\#_) korvataan numerolla, joka ilmaisee luettelossa olevan varasto-oton sisältävien tietojen määrän. Tuotetut tai esiversion toiminnot ovat saatavana versiossa 10.0.9 tai sitä uudemmassa versiossa (ellei Odotettu käytettävyys -sarakkeessa ole mainittu suurempi versionumero).
+
+> [!NOTE]
+> Suunnittelun optimoinnin sopivuusanalyysi ei tunnista tiettyjä epäjohdonmukaisuuksia. Lisätietoja on kohdassa [Perinteisen pääsuunnittelun ja suunnittelun optimoinnin erot](planning-optimization-differences-with-built-in.md).
 
 | Ominaisuus | Lueteltu ongelma | Selitys | Odotettu käytettävyys |
 | --- | --- | --- | --- |
@@ -105,6 +108,10 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 [Suunnittelun optimoinnin yleiskatsaus](planning-optimization-overview.md)
 
 [Suunnittelun optimoinnin aloittaminen](get-started.md)
+
+[Perinteisen pääsuunnittelun ja suunnittelun optimoinnin erot](planning-optimization-differences-with-built-in.md)
+
+[Parametrit, joita ei käytetä suunnittelun optimoinnissa](not-used-parameters.md)
 
 [Suunnitelman historia- ja suunnittelulokien tarkasteleminen](plan-history-logs.md)
 

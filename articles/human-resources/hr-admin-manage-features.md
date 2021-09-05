@@ -1,8 +1,8 @@
 ---
 title: Ominaisuuksien hallinta Human Resourcesissa
-description: Tutustu uusien ominaisuuksien käyttöönottoon ja käytöstä poistamiseen Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-ms.date: 04/06/2020
+description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a9c459b2b34164a9be3ed609a99deb4c5b710d340ef560e6f991e760375d6146
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 61e40f7177a1c8cf3d60a9a991ecbb0ed4d93aa1
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738364"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414630"
 ---
 # <a name="manage-features-in-human-resources"></a>Ominaisuuksien hallinta Human Resourcesissa
 
@@ -69,7 +69,7 @@ Etujen hallinta **Edut** -työtilan toimintoja. Kun otat etujen hallinnan esikat
 - **Etuuskelpoisuuden käytännöt**
 - **Kelpoisuustapahtumat**
 
-Voit tarkastella näiden lomakkeiden tietoja vain luku -tilassa. Jos haluat muokata tietoja, sinun on ensin poistettava käytöstä etujenhallinta (sovellettavissa vain **Eristys**-ympäristöissä).
+Voit tarkastella näiden sivujen tietoja vain luku -tilassa. Jos haluat muokata tietoja, sinun on ensin poistettava käytöstä etujenhallinta (sovellettavissa vain **Eristys**-ympäristöissä).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Loman ja poissaolon ottaminen käyttöön tai poistaminen käytöstä
 

@@ -1,8 +1,8 @@
 ---
 title: Tilityksen yleiskatsaus
 description: Tässä aiheessa on yleisiä tietoja tilitysprosessista. Siinä kuvataan, mitkä tapahtumatyypit voidaan selvittää, sekä ajoitus ja prosessi niiden ratkaisemiseksi. Siinä kuvataan myös selvitysprosessin tulokset.
-author: kweekley
-ms.date: 04/10/2020
+author: panolte
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 30a96b377d70c74a29e9e90699ccb077c727b20758378b5336660c6c056c6022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4a4fd0756a4516b0c14e136730d21d062a106a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755687"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344808"
 ---
 # <a name="settlement-overview"></a>Tilityksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Tässä aiheessa on yleisiä tietoja tilitysprosessista. Siinä kuvataan, mitkä tapahtumatyypit voidaan selvittää, sekä ajoitus ja prosessi niiden ratkaisemiseksi. Siinä kuvataan myös selvitysprosessin tulokset.
 
@@ -74,9 +76,25 @@ Tilitykset voivat myös luoda tapahtumia. Esimerkiksi laskun ja maksun tilitys v
 
 Kun yrität selvittää tapahtuman, saatat huomata symbolin, joka ilmaisee, että tapahtuma on merkitty toiseen sijaintiin. Tässä tapauksessa voit valita tapahtuman **Selvitä tapahtumat** -sivulla ja valita sitten selvityksen **Kysely \>Tilitys tilitysikkunasta**. Tämän kyselyn näkymä sisältää kirjauskansiot, myyntitilaukset, laskut, maksuehdotukset ja asiakkaan sijainnit, jotka voivat estää tapahtuman tilitystä. Voit ratkaista ongelman valitsemalla linkin, joka siirtyy suoraan kyselyn estettyyn sijaintiin. Tämän jälkeen voit päivittää asiakirjan sen tilittämiseen tarvittavilla oikaisuilla. **Merkityn** mittarin avulla voit myös tunnistaa muut samaan estosijaintiin sisältyvät tiedostot.
 
+## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>Ongelmien ratkaisu, kun tapahtumia ei voi selvittää
+
+Joskus tapahtumia ei voi selvittää, koska toinen toiminto käsittelee asiakirjaa sillä hetkellä. Jos tapahtumat yritetään selvittää, tapahtuu virhe, koska kyseisiä tapahtumia käytetään. Tämän ongelman voi korjata etsimällä **Merkityn tapahtuman tiedot** -sivun avulla tapahtumia, jotka on merkitty selvitettäviksi, ja määrittää muut mahdolliset niitä käyttävät prosessit.
+
+Tapahtumat merkitään selvitettäviksi joko silloin, kun toimittajan laskuja maksetaan, tai silloin, kun asiakkaat maksavat avoimet laskunsa. Joskus kyseiset laskut on ehkä jo merkitty selvitettäviksi. Sen vuoksi käyttäjät eivät voi valita niitä maksettaviksi. Toinen asiakkaan maksukirjauskansio, myyntitilaus, toimittajan maksukirjauskansio tai ostotilaus on voinut merkitä laskut nykyisessä yrityksessä tai toisessa yrityksessä.
+
+Jos tapahtuman selvitys on estetty, kun asiakkaan maksua kirjataan, avaa **Asiakkaan merkityn tapahtuman tiedot** -sivu (**Ostoreskontra \> Kausittaiset tehtävät \> Asiakkaan merkityn tapahtuman tiedot**). Kohta, jossa tapahtuma on estetty, voidaan tunnistaa nopeasti määrittämällä jokin seuraavista valintaparametreista: **Asiakastili**, **Tosite**, **Päivämäärä** tai **Lasku**. Jos mitään valintaparametria ei määritetä, järjestelmä näyttää kaikki nykyisen yrityksen tai muun valitun yrityksen estetyt asiakirjat. Kun tapahtuma, jonka selvitys on estetty, on tunnistettu, sen voi valita, minkä jälkeen voidaan valita **Poista valittujen tapahtumien merkintä**. Valittu tapahtuma poistetaan sitten niistä kirjauskansioista, joihin se sisältyy. Asiakirjaa ei kuitenkaan poisteta muusta sijainnista. Vain merkintätiedot poistetaan kyseisestä kirjauskansiosta.
+
+Jos tapahtuman selvitys on estetty, kun toimittajan maksua kirjataan, avaa **Toimittajan merkityn tapahtuman tiedot** -sivu (**Myyntireskontra \> Kausittaiset tehtävät \> Toimittajan merkityn tapahtuman tiedot**). Kohta, jossa tapahtuma on estetty, voidaan tunnistaa nopeasti määrittämällä jokin seuraavista valintaparametreista: **Toimittajan tili**, **Tosite**, **Päivämäärä** tai **Lasku**. Jos mitään valintaparametria ei määritetä, järjestelmä näyttää kaikki nykyisen yrityksen tai muun valitun yrityksen estetyt asiakirjat. Kun tapahtuma on tunnistettu, estämisongelman voidaan korjata valitsemalla ensin tapahtuma ja sitten **Poista valittujen tapahtumien merkintä**. Valittu tapahtuma poistetaan sitten niistä kirjauskansioista, joissa se on valittu. Asiakirjaa ei kuitenkaan poisteta muusta sijainnista. Vain merkintätiedot poistetaan kyseisestä kirjauskansiosta.
+
+Kaikki estetyt asiakirjat tunnistetaan avaamalla **Kaikki merkityt tapahtuman tiedot** -sivu (**Myyntireskontra \> Kausittaiset tehtävät \> Kaikki merkityt tapahtumat tiedot** tai **Ostoreskontra \> Kausittaiset tehtävät \> Kaikki merkityt tapahtuman tiedot**). Kohta, jossa tapahtuma on estetty, voidaan tunnistaa nopeasti määrittämällä jokin seuraavista valintaparametreista: **Asiakastili**, **Toimittajan tili**, **Tosite**, **Päivämäärä** tai **Lasku**. Jos mitään valintaparametria ei määritetä, järjestelmä näyttää kaikki nykyisen yrityksen tai muun valitun yrityksen estetyt asiakirjat. Kun tapahtuma on tunnistettu, estämisongelman voidaan korjata valitsemalla ensin tapahtuma ja sitten **Poista valittujen tapahtumien merkintä**. Valittu tapahtuma poistetaan sitten niistä kirjauskansioista, joissa se on valittu. Asiakirjaa ei kuitenkaan poisteta muusta sijainnista. Vain merkintätiedot poistetaan kyseisestä kirjauskansiosta.
+
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+
+- **Moduuli:** Maksuliikenteen hallinta
+- **Ominaisuuden nimi**: Merkityn tapahtuman tiedot -lomake
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Selvitä jäljellä olevan summa](settle-remainder.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 328791cc321eeaf8f032a1eecedbe50cf9498eccd442c718d2e44e246915bc9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726184"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423444"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
@@ -81,9 +81,9 @@ Koska tuote ilmaista varastointiyksikkönä, käsitteet erilliset tuotteet, pä�
 
 ![Tuotteiden tietomalli.](media/dual-write-product.png)
 
-Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos**-tilassa. Ne lisätään ensimmäiseen hinnastoon, jossa on sama valuutta. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan Finance and Operations -sovelluksessa. Jos ilmoitetulla valuutalla ei ole hinnastoa, hinnasto luodaan automaattisesti ja tuote määritetään siihen.
+Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos**-tilassa. Ne lisätään ensimmäiseen hinnastoon siinä valuutassa, jota käytetään asiakkaiden aktivointisovelluksessa, ja käyttämällä aakkosellista lajittelua hinnaston nimen mukaan. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan Finance and Operations -sovelluksessa. Jos ilmoitetulla valuutalla ei ole hinnastoa, hinnasto luodaan automaattisesti ja tuote määritetään siihen.
 
-Finance and Operations -sovellukseen liittyvän valuutan yksikköhaun oletusarvoiseen hintaluetteloon liittävän kaksoiskirjoituksen laajennusten nykyinen toteutus ja asiakasvuorovaikutusovelluksen ensimmäinen hinnasto käyttävät aakkosellista lajittelua hinnaston nimessä. Jos haluat määrittää tietyn valuutan oletushintaluettelon, kun valuuttaa varten on useita hinnastoja, hintaluettelon nimi on päivitettävä aakkosjärjestyksessä aiempaan nimeen kuin muut saman valuutan hinnastoissa.
+Finance and Operations -sovellukseen liittyvän valuutan yksikköhaun oletusarvoiseen hintaluetteloon liittävän kaksoiskirjoituksen laajennusten nykyinen toteutus ja asiakasvuorovaikutusovelluksen ensimmäinen hinnasto käyttävät aakkosellista lajittelua hinnaston nimessä. Jos haluat määrittää tietyn valuutan oletushintaluettelon, kun valuuttaa varten on useita hinnastoja, hintaluettelon nimi on päivitettävä aakkosjärjestyksessä aiempaan nimeen kuin muut saman valuutan hinnastoissa. Jos tietyllä valuutalla ei ole hinnastoa, uusi hinnasto luodaan.
 
 Finance and Operations -sovellusten oletustuotteet synkronoidaan muihin Dynamics 365 -sovelluksiin **Luonnos**-tilassa. Jos haluat synkronoida **Aktiivinen**-tilassa olevan tuotteen, jotta sitä voi käyttää esimerkiksi suoraan myyntitilauksen tarjouksissa, seuraavat asetukset on valittava: valitse ensin **Järjestelmä> Hallinto > Järjestelmän hallinta > Järjestelmäasetukset > Sales**-välilehti ja sitten **Luo tuotteet aktiivisessa tilassa = kyllä**.
 

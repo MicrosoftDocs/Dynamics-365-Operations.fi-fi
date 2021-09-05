@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3fee88c9822956672469968c3f4fa171a65e1cf301d61d48d5d31e08949797a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764881"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402222"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Dynamics 365 Supply Chain Managementn järjestelmänvalvojien oppimisluettelo
 
@@ -61,14 +61,23 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Finance and Operations: Päivittäminen versiosta 7.x versioon 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Liity meihin seuraavaan TechTalkiin, jonka aikana me kerromme päivitysprosessista versiosta 7.X versioon 8.X. Keskustelemme eri skenaarioista ja vaiheista, jotka suoritetaan koodin päivitystä ja tietojen päivitystä varten. Käsittelemme myös laajennuspyyntöskenaarioita ja niiden nostamista tarvittaessa. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
 | [Päivittäminen 7.2 (heinäkuu 2017) -versiosta 7.0 (RTW)- /7.1 (Release 1611) -versioon (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | Tässä istunnossa kerromme, miten voit päivittää Dynamics 365 Finance and Operations -version v7.0 (RTW) tai v7.1 (1611) versioon v7.2 (heinäkuu 2017). Teemme selkeän eron ratkaisun julkaisseiden asiakkaiden ja käynnissä olevien projektien välillä (ei vielä julkaistu). | Verkkokokouksen maksuton tallenne | 58 minuuttia |
 | [Päivitys AX2012-versiosta Dynamics 365 for Operations -versioon (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Tämä Tech Talk antaa yleiskuvan siitä, miten päivittää koodit ja tiedot Dynamics AX 2012 -versiosta Dynamics 365 for Operationsiin. | Verkkokokouksen maksuton tallenne | 45 minuuttia |
+| [AX2009-versiosta Dynamics 365 for Operations -versioon siirtymisen työkalut (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Tämä istunto kattaa työkalut, jotka auttavat sinua siirtymään AX2009-versiosta D365 for Operationsiin. | Verkkokokouksen maksuton tallenne | 55 minuuttia |
+| [AX2009 - siirtotyökalu](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Tämä istunto kattaa työkalut, jotka auttavat sinua siirtymään AX2009-versiosta D365 for Operationsiin. | Verkkokokouksen maksuton tallenne | 55 minuuttia |
 
-## <a name="servicing"></a>Päivitetään<a name="servicing"></a>
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="scm"></a>
+
+| Sisältö | kuvaus | Muoto | Pituus |
+|---------|-------------|--------|--------|
+| [Dynamics 365 Supply Chain Managementin suunnittelun muutosten hallinnan määrittäminen](/learn/paths/set-up-engineering-change-management/) | Valmistajat tarvitsevat nykyisin tehokasta tuotetietojen hallintaa, versionhallintaa ja suunnittelun muutoksenhallintaa, jotta ne menestyisivät jatkuvasti lyhenevistä tuotteiden elinkaaresta, kasvavista laatu- ja luotettavuusvaatimuksista sekä entistä tarkemmasta tuotteiden turvallisuustarkkailusta huolimatta. Tässä oppimispolussa on tietoja suunnittelun muutosten hallinnan määrittämisestä. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
+
+## <a name="servicing"></a>Ylläpito<a name="servicing"></a>
 
 | Sisältö  | kuvaus   | Muoto  | Pituus    |
 |----------|---------------|---------|-----------|
 | [Finance and Operations: Ominaisuuksien hallinta (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Tech Talk ominaisuuksien hallinnasta. Se sisältää työtilan, jossa voit tarkastella, ottaa käyttöön, poistaa käytöstä ja ajoittaa kussakin julkaisussa toimitettuja toimintoja. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota. Osallistu tähän kokoukseen ja katso, mitä toimitetaan versiossa 10.0.3 ja tulevien versioiden suunnitelmat. | Verkkokokouksen maksuton tallenne | 47 minuuttia |
 | [Finance and Operations: Tuotannon ylläpito, tukeminen ja ylläpito (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Teknisiä keskusteluja siitä, kuinka voit tehokkaasti tukea, ylläpitää ja palvella Dynamics 365 for Finance and Operations -tuotantoympäristöä. | Verkkokokouksen maksuton tallenne | 53 minuuttia |
 | [Finance And Operations: Microsoftin hallinnoimat jatkuvat päivitykset (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Jatkuvan päivityksen rytmi Finance and Operationsille on alkanut! Liity meihin tämän tunnin aikana keskustellaksesi Microsoftin hallinnoimista jatkuvista päivityksistä, nyt jo käytettävissä olevasta Lifecycle Services -käyttökokemuksesta ja tulevista päivityksistä. | Verkkokokouksen maksuton tallenne | 61 minuuttia |
+| [Finance and Operations: Microsoftin hallinnoimat jatkuvat päivitykset: 1. marraskuun päivitys 2018:n uudet ominaisuudet (DYN533cust)](https://community.dynamics.com/Techtalks-FinOps-Videos/MicrosoftManagedContinuousUpdates-WhatsNew-DYN533cust.mp4) | Tämän tunnin aikana keskustelemme Microsoftin hallinnoimien jatkuvien päivitysten tiheydestä sekä tutustumme Lifecycle Servicesin käyttökokemukseen. | Verkkokokouksen maksuton tallenne | 59 minuuttia |
 | [Microsoftin hallinnoimat jatkuvat päivitykset: uudet ominaisuudet (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | Tämän tunnin aikana kerromme, mikä on uutta Microsoftin hallinnoimien jatkuvien päivitysten alkuperäisen julkistamisen jälkeen. Tulemme keskustelemaan päivitystiheydestä, miten olemme vastanneet asiakkaiden arvokkaaseen palautteeseen prosessista, ja katsomme tulevan Lifecycle Services -käyttäjäkokemukseen, jonka avulla voit hallita päivityksiä. | Verkkokokouksen maksuton tallenne | 56 minuuttia |
 | [Microsoftin hallinnoimat jatkuvat päivitykset (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Keskustelemme Microsoftin suunnitelmista pitää järjestelmäsi ajan tasalla uusimman version kanssa. Tulemme kattamaan aikajanat, suurten ja pienten päivitysten tiheyden, suunnitellut menettelyt, vaikutukset, ja mitä pitäisi tehdä optimaalisen tuloksen saavuttamiseksi. | Verkkokokouksen maksuton tallenne | 62 minuuttia |
 | [Seuranta, optimointiavustaja ja kriittiset KB-päivitykset (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Keskustelemme seurantatoiminnoista ja siitä, mitä Microsoft valvoo tuotantoympäristössäsi, optimointineuvojasta ja miten sitä voidaan laajentaa. Lisäksi käsittelyssä ovat "Kriittiset X++ -päivitykset" -kokemus LCS:ssä ja "Ilmoita tuotantokatkoksesta" -asetuksen parhaat käytännöt LCS:ssä. | Verkkokokouksen maksuton tallenne | 40 minuuttia |
@@ -86,6 +95,5 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö  | kuvaus  | Muoto  |
 |----------|--------------|---------|
 | [Dynamics 365:n perusteet](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Todista, että ymmärrät Microsoft Dynamics 365:n: Power Platformin; pilvikonseptit; lisensointivaihtoehdot; sekä käyttöönotto- ja julkaisuvaihtoehdot. | Tentti, kustannukset vaihtelevat alueittain |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

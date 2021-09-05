@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763689"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388930"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
 
@@ -42,15 +42,6 @@ Jos haluat ottaa käyttöön kanavanpalautuskäytäntötoiminnon Commerce headqu
 1. Etsi ominaisuuksien nimien luettelosta **Ota käyttöön kanavan palautuksen käytännöt** -toiminto.
 1. Valitse **Ota käyttöön nyt**.
 1. Suorita **1110** (Yleinen konfigurointi) -työ **Jakeluaikataulu**-sivulta jakaaksesi ominaisuuden muutoksen.
-
-## <a name="initialize-the-commerce-scheduler"></a>Commerce-ajastuksen alustaminen
-
-Kun kanavan **Ota kanavan palautuskäytännöt käyttöön** -ominaisuus on käytössä, Commerce-ajastus on alustettava, jotta uudet ominaisuustietokannan muutokset voidaan lisätä Commerce Data Exchange (CDX) -synkronoinnin avulla. 
-
-Voit määrittää Commerce-ajoitustoiminnon Commerce Headquarters -sovelluksessa seuraavasti.
-
-- Siirry kohtaan **Retail ja Commerce \> Headquarters-asetukset \> Commerce-ajastus \> Alusta Commerce-ajastus**. Vaihtoehtoisesti voit tehdä haun käyttämällä Alusta Commerce -ajoitustoiminto -lausetta.
-- Varmista **Alusta Commerce-ajoitustoiminto** -valintaikkunassa, että **Poista olemassa oleva määritys** -vaihtoehdon arvoksi on määritetty **Ei**. Valitse sitten **OK**.
 
 ## <a name="configure-return-policy"></a>Määritä palautuskäytäntö
 

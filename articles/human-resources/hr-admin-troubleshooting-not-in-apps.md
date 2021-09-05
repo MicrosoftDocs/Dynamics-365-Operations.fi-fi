@@ -1,8 +1,8 @@
 ---
 title: Human Resources ei näy Microsoft Dynamics 365 -sovelluksissa
-description: Tässä artikkelissa kerrotaan, mitä on tehtävä, jos asiakas ei näe Microsoft Dynamics 365 Human Resources -sovellusta muiden Microsoft Dynamics 365 -sovellusten joukossa.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Tässä aiheessa käsitellään, miten toimitaan, jos Microsoft Dynamics 365 Human Resources ei ole Microsoft Dynamics 365 -sovellusten luettelossa.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f90af26483cf82de57cbe8dd4237b39b281786804557319d5f6a7fc407027523
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dfed82463eece882bed66c7b2dac1dd30e04720e
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782117"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413398"
 ---
-# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources ei näy Microsoft Dynamics 365 -sovelluksissa
+# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources -sovellus ei näy Microsoft Dynamics 365 -sovelluksissa
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-**Lähetä**
+**Ongelma**
 
 Asiakas ei näe Dynamics 365 Human Resourcesia Microsoft Dynamics 365 -sovellusten joukossa.
 

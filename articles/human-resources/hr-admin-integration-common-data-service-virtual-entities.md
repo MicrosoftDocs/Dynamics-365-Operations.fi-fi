@@ -1,8 +1,8 @@
 ---
-title: Määritä Dataverse -virtuaalitaulukot
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin virtuaalitaulukoiden määrittämistä. Virtuaalitaulukoiden luominen ja aiemmin luotujen päivittäminen sekä luotujen ja käytettävissä olevien taulukoiden analysoiminen.
-author: andreabichsel
-ms.date: 01/25/2021
+title: Määritä Dataverse-virtuaalitaulukot
+description: Tässä aiheessa käsitellään virtuaalitaulukoiden määrittämistä, luontia ja päivittämistä sekä Dynamics 365 Human Resourcesissa luotujen ja käytettävissä olevien taulukoiden analysointia.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721604"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414661"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Määritä Dataverse -virtuaalitaulukot
+# <a name="configure-dataverse-virtual-tables"></a>Määritä Dataverse-virtuaalitaulukot
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -140,6 +140,9 @@ Seuraavaksi määritetään virtuaalitaulukon tietolähde Power Apps -ympärist�
 
      >[!NOTE]
      >Virheiden välttämiseksi varmista, että URL-osoittee lopussa on merkki **/**.
+
+     >[!NOTE]
+     >Kohde-URL määrittää Human Resources -ympäristön, jonka virtuaalitaulukot osoittavat tiedoille. Jos eristysympäristö luodaan luomalla tuotantoympäristön kopio, tähän arvoon on päivitettävä uuden eristysympäristön nimitilan URL-osoite. Näin varmistetaan, että virtuaalitaulukot on yhdistetty eritysympäristön tietoihin sen sijaan, että osoittaisivat edelleen tuotantoympäristöön.
 
    - **Vuokraajan tunnus**: Azure Active Directory (Azure AD) -vuokraajan tunnus.
 
