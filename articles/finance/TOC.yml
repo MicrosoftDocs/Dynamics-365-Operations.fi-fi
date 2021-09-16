@@ -6,6 +6,8 @@
           href: index.md
         - name: Aloittaminen
           items:
+            - name: Palvelun kuvaus
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
             - name: Ennen ostamista
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Kokeiluversioiden tilaaminen
@@ -72,6 +74,8 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.22 (marraskuu 2021)
+                      href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (lokakuu 2021)
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (elokuu 2021)
@@ -1168,8 +1172,12 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Alkusaldot puuttuvat tilinpäätöksestä
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Miten taloushallinnon dimensioiden tasaus määritetään?
+                  href: general-ledger/set-up-balance-dimensions.md
                 - name: Talouskirjauskansiomallien avaaminen Officessa
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Talouskirjauskansioiden taloushallinnon oletusdimensiot
+                  href: general-ledger/dimension-default-values.md
                 - name: Kirjauskansioon kirjaamisen epäonnistuminen epätasapainon vuoksi
                   href: general-ledger/posting-fail-imbalance.md
                 - name: Miksi tätä tapahtumaa ei voi palauttaa?
@@ -1472,17 +1480,17 @@
               items:
                 - name: Globalisointipalvelujen yleiskatsaus
                   href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory Configuration Service
+                - name: Regulatory Configuration Service (RCS)
                   items:
-                    - name: Regulatory configuration service -yleiskatsaus
+                    - name: Regulatory configuration service (RCS) -yleiskatsaus
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory configuration service – globalisointiominaisuudet
+                    - name: Regulatory configuration service (RCS) – globalisointiominaisuudet
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-                    - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service -palvelussa ja niiden lataaminen yleiseen säilöön
+                    - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service (RCS) -palvelussa ja niiden lataaminen yleiseen säilöön
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory Configuration Service – poista RCS-ympäristö
+                    - name: Regulatory Configuration Service (RCS) – poista RCS-ympäristö
                       href: localizations/rcs-delete-environment.md
-                    - name: Regulatory Configuration Service – Lifecycle Services -säilön poistaminen käytöstä
+                    - name: Regulatory Configuration Service (RCS) – Lifecycle Services -säilön poistaminen käytöstä
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin määritysten lataaminen Financeen
                       items:
@@ -1550,6 +1558,8 @@
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Määritys
                       items:
+                        - name: Verolaskennan tietomalli
+                          href: localizations/tax-calculation-data-model-overview.md
                         - name: Arvonlisäveron käytettävyys ja arvonlisäveroryhmän määrityslogiikka
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: Laskenta
@@ -1574,6 +1584,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-myyntiluettelo
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Ruotsin raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                              href: localizations/emea-swe-VAT-declaration-Sweden.md
                         - name: Sveitsin raportointi
                           items:
                             - name: ALV-ilmoitus
@@ -2690,6 +2704,8 @@
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
                 - name: Italian Intrastat
                   href: localizations/emea-ita-intrastat.md
+                - name: Tuonnin ja viennin kirjaaminen Intrastat-raportointia varten
+                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
                 - name: Muut kulut kilogrammalta Intrastat-ilmoituksessa
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Aiesopimukset – laskutuksen tavalliset viejät
@@ -2982,6 +2998,8 @@
               items:
                 - name: Oman – yleiskatsaus
                   href: localizations/oman.md
+                - name: Omanin ALV-ilmoitus (OM-00003)
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Alankomaat
               items:
                 - name: Alankomaat – yleiskatsaus
@@ -3366,6 +3384,10 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Ruotsin arvonlisäveromaksun raportti
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
+                - name: Ruotsin ALV-ilmoitus
+                  href: localizations/emea-swe-VAT-declaration-Sweden.md
+                - name: Ruotsin Intrastat
+                  href: localizations/emea-swe-intrastat.md
             - name: Sveitsi
               items:
                 - name: Sveitsi – yleiskatsaus
@@ -3420,6 +3442,28 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Käänteisen verovelvollisuuden arvonlisäveroryhmien määrittäminen
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: Yhdistyneen kuningaskunnan raportointi
+                  items:
+                    - name: 'ALV:n määrittäminen digitaaliseksi'
+                      items:
+                        - name: 'ALV:n määrittäminen digitaaliseksi -palautuslähetys Yhdistyneessä Kuningaskunnassa'
+                          href: localizations/emea-gbr-mtd-vat-integration.md
+                        - name: 'Ympäristön valmisteleminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
+                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                        - name: 'Finance-ympäristön valtuuttaminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: 'Toiminnan testaaminen ALV:n määrittäminen digitaaliseksi -eristyksen kanssa'
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: 'ALV-palautuksen lähettäminen HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalveluun'
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                        - name: 'Tarkistusluettelo sähköisten sanomien määrittämiselle ALV:n määrittäminen digitaaliseksi -verkkopalvelussa'
+                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                        - name: ALV-ilmoituksen luominen paperimuodossa (ALV 100 -raportti)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                        - name: ALV-asetustiedot Yhdistyneen kuningaskunnan ALV-ilmoituksia varten
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: 'ALV-maksujen ja velkojen tietojen noutaminen HMRC:stä'
+                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
                 - name: Maksukäytäntöjen raportin tilastot
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Yhdysvallat
@@ -4147,6 +4191,30 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: Määritysten tuonti (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Regulatory Configuration Service (RCS)
+                  items:
+                    - name: Regulatory configuration service (RCS) -yleiskatsaus
+                      href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
+                    - name: Sähköisen raportoinnin määritysten lataaminen Financeen
+                      items:
+                        - name: 'Määritysten lataaminen RCS:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Konfiguraatioiden tuonti RCS:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Yleinen tietovarasto (GR)
+                      items:
+                        - name: 'Konfiguraatioiden tuonti GR:stä'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Sähköisen raportoinnin konfiguraatioiden päivitettyjen versioiden tuominen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Tehostettu suodatus konfiguraatioiden löytämiseksi GR:ssä'
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Lataa konfiguraatiot GR-järjestelmään
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Jaa kokoonpanot GR:ssä'
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Määritysten lopettaminen RCS:n yleisessä säilössä'
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Pika-aloitusoppaat
               items:
                 - name: Sähköisen raportoinnin muodon määrittäminen mukautetun sähköisen asiakirjan luomiseksi
@@ -4207,6 +4275,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: HAUN tietolähteiden määrittäminen sähköisen raportoinnin sovelluskohtaisten parametrien käyttämiseksi
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: TIETOJENKERUU-tietolähteiden käyttäminen ER-muodoissa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Tietolähteiden vianmääritys
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Mallimääritysten määrittäminen
@@ -4275,6 +4345,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Toimintosidonnaisten kohteiden määrittäminen
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: Tulostuksenhallinnan tietuekohtaisten ER-kohteiden määrittäminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
                 - name: Sähköisen raportoinnin muodon viitteen määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Luotujen raporttien vahvistaminen automaattisesti
@@ -4323,6 +4395,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
                     - name: Application Update 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
+                    - name: Application Update 10.0.21
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
@@ -4333,6 +4407,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: Tietolähdearvojen käynnistäminen lähdekoodin USER INPUT PARAMETER -tyypistä
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
+                - name: Koodin muuttaminen antamaan käyttäjille mahdollisuus määrittää ja käyttää nimettyjä ER-kohteita
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Mobiilisovellus
           items:
             - name: Mobiilisovelluksen aloitussivu
