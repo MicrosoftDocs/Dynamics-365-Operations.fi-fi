@@ -2,7 +2,7 @@
 title: Sähköiset sanomat
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Financen sähköisten sanomien yleiskatsaus ja määritystiedot.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16b0e0fa74109f1c63ed47606bebe2fefc604fc5
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768336"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478721"
 ---
 # <a name="electronic-messaging"></a>Sähköiset sanomat
 
@@ -57,6 +57,16 @@ EM-ominaisuus tukee seuraavia skenaarioita:
 - Kaikkien luotujen raporttien tallentaminen ja tarkastelu.
 - Kaikkien niiden lokitietojen tallentaminen ja tarkasteleminen, jotka liittyvät sanoman tai sanoman nimikkeen yhteydessä suoritettuihin toimintoihin.
 - Käsittelyn hallinta sanoman ja sanoman nimikkeen erilaisten tilojen avulla.
+
+## <a name="security-privileges"></a>Suojausoikeudet
+
+Seuraavat suojausoikeudet ovat käytettävissä sähköisiä sanomia varten.
+
+| Suojausoikeus           | Käyttöoikeustaso | Liitos |
+|------------------------------|--------------|-------------|
+| Säilytä sähköiset sanomat | Tämä oikeus antaa täyden pääsyn EM-ominaisuuksiin. Jos sinulla on tämä oikeus, voit määrittää sähköisen viestinnän ja suorittaa kaiken käsittelyn. | Tämä oikeus sisältyy **Ylläpidä myyntiverotapahtumia** -käyttöoikeusvelvollisuuteen. Kyseinen velvollisuus vuorostaan sisältyy **Kirjanpitäjä**-käyttöoikeusrooliin. |
+| Näytä sähköiset sanomat     | Tämä oikeus antaa vain luku -pääsyn EM-ominaisuuksiin. Jos sinulla on tämä oikeus, voit tarkastella sähköisen viestinnän asetuksia ja sanomia. Et kuitenkaan voi määrittää tai suorittaa mitään. | Tämä oikeus sisältyy **Tarkastele myyntiveron tapahtumatilaa** -käyttöoikeusvelvollisuuteen. Kyseinen velvollisuus vuorostaan sisältyy seuraaviin käyttöoikeusrooleihin:<ul><li>Perintäjohtaja</li><li>Myyntireskontranhoitaja</li><li>Myyntireskontrapäällikkö</li><li>Verokirjanpitäjä</li><li>Kirjanpitäjä</li><li>Laskentapäällikkö</li><li>Taloushallintopäällikkö</li><li>Myyntipäällikkö</li><li>Ostoreskontra-assistentti</li></ul> |
+| Käytä sähköisiä viestejä  | Tämä oikeus antaa käyttöoikeuden vain **Sähköiset sanomat**- ja **Sähköisen sanoman kohteet** -sivuihin. Jos sinulla on tämä oikeus, voit suorittaa kaiken käsittelyn, joka kutsutaan kyseiseltä sivuilta. | Tämä oikeus sisältyy **Käytä sähköisiä sanomia** -käyttöoikeusvelvollisuuteen. Kyseinen velvollisuus vuorostaan sisältyy **Sähköisten sanomien käyttäjä** -käyttöoikeusrooliin. |
 
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>EM-ominaisuuden tukemat maakohtaisiin säännöksiin perustuvat ominaisuudet
 

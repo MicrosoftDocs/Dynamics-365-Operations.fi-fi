@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a367b95a65c45b1e7ac46e9ac96baa2417bf3e48e3d5bfeca21c82cc8c427c24
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5cb4c2b9b4a3c54e71f73369096d00b436079c1c
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714351"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475009"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Suunnittelumääritteet ja suunnittelumääritteen haku
 
@@ -26,15 +26,13 @@ ms.locfileid: "6714351"
 
 Kaikkien päätuotetietojen rekisteröinti järjestelmään voidaan varmistaa määrittämällä kaikki muut kuin vakio-ominaisuudet suunnittelumääritteiden avulla. Sen jälkeen suunnittelumääritteiden haun avulla voi etsiä kätevästi tuotteita kyseisten rekisteröityjen ominaisuuksien perusteella.
 
-## <a name="engineering-attributes"></a>Suunnittelun määritteet
+## <a name="create-engineering-attributes-and-attribute-types"></a>Suunnittelun määritteiden ja määritetyyppien luominen
 
 Yleensä suunnittelutuotteilla on monenlaisia ominaisuuksia, jotka on siepattava. Vaikka osa ominaisuuksista voidaan rekisteröidä vakiotuotekenttien avulla, tarvittaessa voidaan luoda myös uusia suunnitteluominaisuuksia. Omien *suunnittelun määritteiden* määrittäminen ja niiden käyttäminen tuotemääritelmän osana on mahdollista.
 
-### <a name="create-engineering-attributes-and-attribute-types"></a>Suunnittelun määritteiden ja määritetyyppien luominen
-
 Kunkin suunnittelun määritteen on kuuluttava *määritetyyppiin*. Tätä edellytetään, koska kullakin suunnittelun määritteellä on oltava *tietotyyppi*, jolla määritetään siinä käytettävien tyyppien arvot. Suunnittelun määritetyyppi voi olla vakiotyyppi (kuten vapaateksti, kokonaisluku tai desimaali) tai mukautettu tyyppi (kuten teksti, jossa voi valita tiettyjä arvoja). Voit käyttää kutakin määritetyyppiä rajoittamattomassa määrässä suunnittelun määritteitä.
 
-#### <a name="set-up-engineering-attribute-types"></a>Suunnittelun määritetyyppien määrittäminen
+### <a name="set-up-engineering-attribute-types"></a>Suunnittelun määritetyyppien määrittäminen
 
 Suunnittelun määritetyyppi näytetään, luodaan ja sitä muokataan seuraavasti:
 
@@ -48,7 +46,7 @@ Suunnittelun määritetyyppi näytetään, luodaan ja sitä muokataan seuraavast
     - **Arvoalue** – Tämä vaihtoehto on käytettävissä vain, jos **Tyyppi**-kentän asetuksena on *Kokonaisluku*, *Desimaali* tai *Valuutta*. Luo tässä määritetyypissä hyväksyttävät vähimmäis- ja enimmäisarvot valitsemalla asetukseksi *Kyllä*. Vähimmäis- ja enimmäisarvot määritetään **Alue**-pikavälilehdessä ja (valuutan osalta) valuutta, joka koskee annettuja rajoja. Määritä asetukseksi *Ei*, jos mikä tahansa arvo hyväksytään. 
     - **Mittayksikkö** – Tämä kenttä on käytettävissä vain, jos **Tyyppi**-kentän asetuksena on *Kokonaisluku* tai *Desimaali*. Valitse tässä määritetyypissä käytettävä mittayksikkö. Jos yksikköä ei tarvita, jätä kenttä tyhjäksi.
 
-#### <a name="set-up-engineering-attributes"></a>Suunnittelun määritteiden määrittäminen
+### <a name="set-up-engineering-attributes"></a>Suunnittelun määritteiden määrittäminen
 
 Suunnittelun määrite näytetään, luodaan ja sitä muokataan seuraavasti:
 
@@ -70,17 +68,43 @@ Suunnittelun määrite näytetään, luodaan ja sitä muokataan seuraavasti:
     - **Minimi** – anna pienin suositeltu tai hyväksytty arvo.
     - **Maksimi** – anna suurin suositeltu tai hyväksytty arvo.
 
-### <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Suunnittelun määritteiden yhdistäminen suunnittelun tuoteluokkaan
+### <a name="engineering-attribute-inheritance"></a>Määritteiden periytymisen suunnittelu
+
+Tuoterakenteissa, kuten tuotantorakenteita tai resepteissä, valittuja määritteitä voidaan välittää alinimikkeistä päänimikkeeseen. Tämän prosessin voi ajatella olevan käänteisenä periytymisenä.
+
+#### <a name="turn-on-this-feature-for-your-system"></a>Tämän ominaisuuden ottaminen käyttöön järjestelmällesi
+
+Jos järjestelmäsi ei vielä sisällä tässä aiheessa osassa ominaisuuksia, avaa [Ominaisuuksienhallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Muutostenhallinnan suunnittelun parannettu määritteiden periytyminen* -ominaisuus käyttöön.
+
+#### <a name="attribute-inheritance-example"></a>Esimerkki määritteiden periytymisestä
+
+Porkkanakakun kaltaisen elintarviketuotteen osalta järjestelmän on tallennettava jokainen tuotteen sisältämä allergeeni. Porkkanakakku voidaan mallintaa järjestelmässä suunnittelutuotteena, jolla on resepti. Tämä resepti sisältää porkkanakakun ainesosat, kuten jauhot, maidon, porkkanat ja pähkinät. Tässä esimerkissä yrityksellä on kaksi porkkanakakun mallia: yksi laktoosia sisältävä ja yksi laktoositon.
+
+Laktoosia sisältävällä kakulla on ainesosatasolla seuraavat määritteet:
+
+- Ainesosa "jauho": määrite "gluteeni" = kyllä
+- Ainesosa "maito": määrite "laktoosi" = kyllä
+- Ainesosa "pähkinät": määrite "pähkinää" = kyllä
+
+Laktoosittomassa kakussa käytetään laktoositonta maitoa, ja sillä on ainesosatasolla seuraavat määritteet:
+
+- Ainesosa "jauho": määrite "gluteeni" = kyllä
+- Ainesosa "maito": määrite "laktoosi" = ei
+- Ainesosa "pähkinät": määrite "pähkinää" = kyllä
+
+Koska tuotteet ovat pääosin samanlaisia, näiden määritteiden välittäminen aliversiolta (mainitut kaksi versiota) päätuotteeseen (perustason porkkanakakku). Tämän "käänteisen periytymisen" toteuttamiseen voi käyttää *Määritteen periytyminen* -ominaisuutta. Tämä toiminto määritetään kullekin [suunnitteluversiolle](engineering-versions-product-category.md).
+
+## <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Suunnittelun määritteiden yhdistäminen suunnittelun tuoteluokkaan
 
 Joitakin suunnittelun määritteitä käytetään kaikissa tuotteissa, kun taas toiset koskevat yksittäisiä tuotteita tai tuoteluokkia. Esimerkiksi sähkömääritteitä ei tarvita mekaanisissa tuotteissa. Tämän vuoksi voidaan määrittää *suunnittelun tuoteluokkia*. Suunnittelun tuoteluokka määrittää suunnittelun määritekokoelman, jonka on oltava kyseiseen luokkaan kuuluvien tuotteiden määritelmää. Voit määrittää myös, mitkä suunnittelun määritteet ovat pakollisia, ja mahdollisen oletusarvon.
 
 Lisätietoja suunnittelun tuoteluokkien käyttämisestä sekä tietoja määritteiden yhdistämisestä luokkiin on kohdassa [Suunnitteluversiot ja suunnittelun tuoteluokat](engineering-versions-product-category.md).
 
-### <a name="set-values-for-engineering-attributes"></a>Suunnittelun määritteiden arvojen määrittäminen
+## <a name="set-attribute-values-for-engineering-attributes"></a>Suunnittelun määritteiden määritearvojen määrittäminen
 
 Suunnittelun tuoteluokkaan yhdistetyt suunnittelun määritteet ovat esillä, kun kyseiseen luokaan perustuva uusi suunnittelutuote luodaan. Tässä vaiheessa voidaan määrittää määritteiden arvot: Myöhemmin näitä arvoja voidaan muuttaa **Suunnitteluversio**-sivulla tai osana suunnittelun muutostenhallintaan suunnittelun muutostilauksessa. Lisätietoja on kohdassa [Suunnittelutuotteiden muutosten hallinta](engineering-change-management.md).
 
-### <a name="create-an-engineering-product"></a>Suunnittelutuotteen luominen
+## <a name="create-an-engineering-product"></a>Suunnittelutuotteen luominen
 
 Luo suunnittelutuote avaamalla **Vapautetut tuotteet** -sivu. Valitse sitten toimintoruudun **Tuote**-välilehden **Uusi**-ryhmässä **Suunnittelutuote**.
 

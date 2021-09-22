@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0919706ddcc70fecd15df6bf1cbdd58fe9a8e337b2d45cd61a4fb9d821e4114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: b9c82f28dcc7ebd223b2483ca257ba934024d755
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757803"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475081"
 ---
 # <a name="inventory-forecasts"></a>Varastoennusteet
 
@@ -94,7 +94,7 @@ Seuraavassa taulukossa kuvataan komennot, jotka ovat käytettävissä **Tarjonta
 
 | Komento | kuvaus |
 |---|---|
-| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. |
+| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennusteen kohdistus](#allocate-forecast).) |
 | Joukkopäivitys | Avaa **Muokkaa ennustetapahtumia** -sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennustetapahtumien joukkopäivitys](#bulk-update).) |
 | Varastoennuste | Avaa valitulle nimike-/malliyhdistelmälle suodatettu **Varastoennuste**-sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Varastoennusteet](#inventory-forecast).) |
 | Luo nimiketarve | Avaa valintaikkuna, jossa voit luoda nimiketarpeet sekä projektiin liittyvien ennustetapahtumien myyntitilaus- tai nimikekirjauskansion rivit. Vaikka tämä komento on käytettävissä sekä tarjontaennusteriveillä että kysyntäennusteriveillä, sitä ei voi käyttää **Tarjontaennuste**-sivulla. |
@@ -201,7 +201,7 @@ Seuraavassa taulukossa kuvataan komennot, jotka ovat käytettävissä **Kysyntä
 
 | Komento | kuvaus |
 |---|---|
-| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. |
+| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennusteen kohdistus](#allocate-forecast).)|
 | Joukkopäivitys | Avaa **Muokkaa ennustetapahtumia** -sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennustetapahtumien joukkopäivitys](#bulk-update).) |
 | Varastoennuste | Avaa valitulle nimike-/malliyhdistelmälle suodatettu **Varastoennuste**-sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Varastoennusteet](#inventory-forecast).) |
 | Luo nimiketarve | Avaa valintaikkuna, jossa voit luoda nimiketarpeet sekä projektiin liittyvien ennustetapahtumien myyntitilaus- tai nimikekirjauskansion rivit. |
@@ -296,7 +296,7 @@ Seuraavassa taulukossa kuvataan **Kysyntäennuste**-sivun **Yhteenveto**-välile
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Kysyntäennuste-sivun Kohdistus-ruudukko
 
-Jos käytät nimikkeenkohdistustunnusta tai olet syöttänyt nimike-ennusteen yhdelle tai useammalle tulevalle kaudelle, voit kohdistaa ennusteen valitsemalla **Yhteenveto**-välilehden työkaluriviltä **Kohdista ennuste**. Määrä jaetaan **Kohdistus**-ruudukon rivien osoittamalla tavalla.
+Jos käytät nimikkeenkohdistustunnusta tai olet syöttänyt nimike-ennusteen yhdelle tai useammalle tulevalle kaudelle, voit kohdistaa ennusteen valitsemalla **Yhteenveto**-välilehden työkaluriviltä **Kohdista ennuste**. Määrä jaetaan **Kohdistus**-ruudukon rivien osoittamalla tavalla. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennusteen kohdistus](#allocate-forecast).)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Varastoennuste
 
@@ -328,6 +328,25 @@ Seuraavassa taulukossa kuvataan **Varastoennuste** -sivun ruudukon kentät.
 | **Alituoterakenne** | Määritetyn alituoterakenteen numero. |
 | **Alireititys** | Määritetyn alireitityksen reititysnumero. |
 | (Muut dimensiot) | Ruudukon sarakkeina voidaan näyttää lisädimensioita. Valitse toimintoruudusta **Varasto \> Näytä dimensiot** valitaksesi näytettävät lisädimensiot. |
+
+## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Kohdista ennuste
+
+Näiden ohjeiden avulla voit käsitellä valittuja ennustetapahtumarivejä. Kun kohdistat ennusteen, määrä jaetaan **Kohdistus**-ruudukon rivien mukaisesti.
+
+1. Sen mukaan, millaista yksikköä varten ennuste luodaan, ja luotavan ennustetyypin mukaan, avaa tarjonta- tai kysyntäennustesivu kohdassa [Ennusterivien tarkastelu ja manuaalinen kirjaaminen](#manual-entry) kuvatulla tavalla.
+1. Valitse tarjonta- tai kysyntäennusterivien sivulla ennusterivi ja valitse sitten **Yhteenveto**-välilehden työkalupalkista **Kohdista ennuste**.
+1. Määritä seuraavassa taulukossa kuvatut kentät **Kohdista ennuste** -valintaikkunassa. (**Menetelmä**-kentässä valittu arvo määrittää muut käytettävissä olevat kentät.)
+
+    | Kenttä | kuvaus |
+    |---|---|
+    | Tapa | <p>Valitse ennustetapahtuman kohdistusmenetelmä:</p><ul><li>**Ei mitään** – Kohdistusta ei tehdä.</li><li>**Kausi** – Ennusta sama määrä jokaiselle kaudelle. Jos valitset tämän arvon, määritä määrä **Per**-kentässä ja aikayksikkö **Yksikkö**-kentässä.</li><li>**Avain** – Kohdista ennuste **Kausiavain**-kentässä määritettävän kauden kohdistustunnuksen perusteella. Voit käyttää tätä menetelmää, kun haluat ottaa huomioon kausittaiset vaihtelut.</li><ul>|
+    | Per | <p>Kirjoita aikavälien määränä aika, kuinka pitkälle ennuste ulottuu tulevaisuudessa. Tämä kenttä on käytettävissä vain, jos valitset **Menetelmä**-kentässä *Kausi*.</p><p>Jos esimerkiksi valitset **Menetelmä**-kentästä *Kausi*-vaihtoehdon, syötä **Per**-kenttään arvoksi *1* ja valitse **Yksikkö**-kentästä *Kuukaudet*-vaihtoehto, Määritä sitten **Loppu**-kentässä päättymispäivämäärä vuoden päähän tulevaisuudessa. Tässä tapauksessa luodaan kullekin tulevan vuoden kuukaudelle yksi ennusterivi, joka perustuu otsikkorivillä määritettyyn nimikkeeseen ja määrään. |
+    | Yksikkö | Valitse aikavälin yksikkö: *Päivät*, *Kuukaudet* tai *Vuodet*. Kohdistus vastaa **Per**-kenttään määritettyjen päivien, kuukausien tai vuosien määrää.|
+    | Kausiavain | Määritä ennusteen kohdistuksessa käytettävä kauden kohdistustunnus. Lisätietoja kohdassa [Budjettisuunnittelun tietojen kohdistus](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | Loppu | Määritä asetustesi päättymispäivä kentissä **Per** ja **Yksikkö**. |
+
+1. Vahvista asetukset valitsemalla **OK**.
+1. Voit tarkistaa tulokset saman rivin **Kohdistus**-välilehdessä.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Ennustetapahtumien joukkopäivitys
 

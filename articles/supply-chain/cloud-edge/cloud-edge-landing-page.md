@@ -1,5 +1,5 @@
 ---
-title: Valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Unitit
+title: Asteikon yksiköt jaetussa hybriditopologiassa
 description: Tässä aiheessa on lisätietoja valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Uniteista.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780671"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471737"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Pilven ja reunan asteikon yksiköt valmistuksen ja varaston hallinnan kuormituksia varten
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Asteikon yksiköt jaetussa hybriditopologiassa
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780671"
 >
 > Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjältä pyydetään vahvistus, että hän ymmärtää, että joitakin pilvi- ja reunapalvelujen scale unitien määrityksiin ja käsittelyyn liittyviä tietoja voidaan tallentaa Yhdysvalloissa sijaitsevaan palvelinkeskukseen. Lisätietoja pilvipalvelun ja reunan skaalausyksiköiden tietojenkäsittelystä on [tietojenkäsittely skaalausyksiköiden hallinnan aikana](#data-processing-management) -osassa myöhemmin tässä aiheessa.
 
-## <a name="core-value-proposition-for-scale-units"></a>Skaalausyksiköiden ydinarvoehdotus
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Jaetun hybriditopologian ydinarvoehdotus
 
-Valmistuksessa ja jakelussa toimivien yritysten on voitava suorittaa keskeisiä liiketoimintaprosesseja ympärivuorokautisesti, ilman keskeytyksiä ja skaalautuvasti. Pilvi- ja reunapalvelujen Scale Unitien avulla yritykset voivat suorittaa toiminnan kannalta välttämättömiä valmistus- ja varastoprosesseja ilman keskeytyksiä myös satunnaisten verkkoyhteyksiin tai viiveisiin liittyvien ongelmien yhteydessä.
+Valmistuksessa ja jakelussa toimivien yritysten on voitava suorittaa keskeisiä liiketoimintaprosesseja ympärivuorokautisesti, ilman keskeytyksiä ja skaalautuvasti. Jaetun hybriditopologian avulla yritykset voivat suorittaa toiminnan kannalta välttämättömiä valmistus- ja varastoprosesseja ilman keskeytyksiä myös satunnaisten verkkoyhteyksiin tai viiveisiin liittyvien ongelmien yhteydessä.
 
-Pilvi- ja reunapalvelujen Scale Uniteilla voidaan jakaa tuotannon ja varaston ohjauksen kuormitukset eri ympäristöihin. Tämä toiminto voi auttaa parantamaan suorituskykyä, estämään palvelukatkoja ja maksimoimaan toiminta-ajan. Skaalausyksiköt tarjotaan Supply Chain Managementin ylläpitosopimukseen seuraavien apuohjelmien kautta:
+Jaetussa hybriditopologiassa otetaan käyttöön *scale unitit*, jotka mahdollistavat tuotannon ja varaston toteutustyökuormien jakamisen eri ympäristöihin. Tämä toiminto voi auttaa parantamaan suorituskykyä, estämään palvelukatkoja ja maksimoimaan toiminta-ajan. Skaalausyksiköt tarjotaan Supply Chain Managementin ylläpitosopimukseen seuraavien apuohjelmien kautta:
 
 - Cloud Scale Unitin apuohjelma Dynamics 365 Supply Chain Managementille (*saatavana huhtikuussa 2021*)
 - Edge Scale Unitin apuohjelma Dynamics 365 Supply Chain Managementille (*saatavana pian*)

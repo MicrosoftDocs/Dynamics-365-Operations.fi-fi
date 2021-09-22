@@ -2,7 +2,7 @@
 title: B2C-vuokraajan määrittäminen Commercessa
 description: Tässä ohjeaiheessa kerrotaan, miten Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään Dynamics 365 Commercen käyttäjän sivuston todennusta varten.
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344495"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466265"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -37,6 +37,26 @@ Dynamics 365 Commerce käyttää Azure AD B2C -ratkaisua käyttäjän tunnisteti
 
 > [!TIP]
 > Sivuston käyttäjiä voi suojata entisestään ja parantaa Azure AD:n B2C-vuokraajien suojausta Azure AD:n tunnistetietojen suojauksella ja ehdollisella käyttöoikeudella. Lisätietoja Azure AD:n B2C Premium P1- ja Premium P2 -vuokraajien käytettävissä olevien ominaisuuksien tarkastelemisesta on kohdassa [Azure AD B2C:n tunnistetietojen suojauksella ja ehdollisella käyttöoikeudella](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Dynamics-ympäristön edellytykset
+
+Varmista ennen aloittamista, että Dynamics 365 Commerce -ympäristösi ja sähköisen kaupankäynnin kanavasi on määritetty asianmukaisesti täyttämällä seuraavat edellytykset.
+
+- Määritä myyntipistetoimintojen **AllowAnonymousAccess**-arvoksi 1 Commerce-pääkonttorissa:
+    1. Siirry kohtaan **Myyntipistetoiminnot**.
+    1. Napsauta **Mukauta**-kohtaa toimintoruudukossa hiiren kakkospainikkeella ja valitse se.
+    1. Valitse **Lisää kenttä**.
+    1. Lisää käytettävissä olevien sarakkeiden luettelosta **AllowAnonymousAccess**-sarake valitsemalla se.
+    1. Valitse **Päivitä**.
+    1. Muuta **612**-asiakkaanlisäystoiminnon osalta **AllowAnonymousAccess**-arvoksi 1.
+    1. Suorita **1090 (rekisterit)** -työ.
+- Määritä numerosarjan asiakastilin **Manuaalinen**-määritteen arvoksi **Ei** Commerce-pääkonttorissa:
+    1. Valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Myyntireskontran parametrit**.
+    1. Valitse **Numerosarjat**.
+    1. Kaksoisnapsauta **Numerosarjan koodi** -arvoa **Asiakastili**-rivillä.
+    1. Määritä numerosarjan **Yleistä**-pikavälilehden **Manuaalinen**-arvoksi **Ei**.
+
+Kun Dynamics 365 Commerce -ympäristö on otettu käyttöön, on myös suositeltavaa [alustaa alkutiedot](enable-configure-retail-functionality.md) ympäristössä.
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Olemassa olevan AAD B2C -vuokraajan luominen tai linkittäminen Azure-portaalissa
 

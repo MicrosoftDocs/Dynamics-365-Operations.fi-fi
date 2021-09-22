@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394506"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465074"
 ---
 # <a name="get-started-with-tax-calculation"></a>Verolaskennan aloittaminen
 
@@ -49,13 +49,9 @@ Seuraavien edellytysten on toteuduttava tuotantoympäristössä:
 - Organisaatiolle on luotava RCS-ympäristö ja käytössä on oltava tilin käyttöoikeus. Lisätietoja RCS-ympäristön luomisesta on kohdassa [Regulatory Configuration Servicen yleiskatsaus](rcs-overview.md).
 - Seuraavat toiminnot on otettava käyttöön liiketoimintatarpeiden mukaan käyttöönotetun Finance- tai Supply Chain Management -ympäristön **Ominaisuuksien hallinta** -työtilassa:
 
-    - Verolaskenta
+    - Verolaskentapalvelu
     - Tue useita ALV-rekisteröintinumeroita
     - Vero siirtotilauksessa
-    - EU-myyntiluettelon siirto vain verotapahtumien perusteella
-    - Intrastat-raportointi usean verotunnuksen mukaan
-    - EU-myyntiluettelon raportointi usean verotunnuksen mukaan
-    - Arvonlisäverotilitys usean verotunnuksen mukaan
 
 - Seuraavat toiminnot on otettava käyttöön käyttöönotetun RCS-ympäristön **Ominaisuuksien hallinta** -työtilassa.
 
@@ -65,18 +61,14 @@ Seuraavien edellytysten on toteuduttava tuotantoympäristössä:
 
 Seuraavien edellytysten on toteuduttava testiympäristössä:
 
-- LCS-tilin käyttöoikeus ja sellainen käyttöönotettu LCS-projekti, jonka vähintään tason 2 ympäristössä on käytössä Dynamics 365:n versio 10.0.18 ja KB4616360 tai uusin versio.
+- LCS-tilin käyttöoikeus ja sellainen käyttöönotettu LCS-projekti, jonka vähintään tason 2 ympäristössä on käytössä Dynamics 365:n versio 10.0.21 tai uudempi versio.
 - Organisaatiolle on luotava RCS-ympäristö ja käytössä on oltava tilin käyttöoikeus. Lisätietoja RCS-ympäristön luomisesta on kohdassa [Regulatory Configuration Servicen yleiskatsaus](rcs-overview.md).
 - Väliversioiden ottaminen käyttöön käyttöönotetussa Finance- tai Supply Chain Management -ympäristössä edellyttää yhteydenottoa Microsoftiin lähettämällä sähköpostia osoitteeseen <taxcalc@microsoft.com>.
 - Seuraavat toiminnot on otettava käyttöön liiketoimintatarpeiden mukaan käyttöönotetun Finance- tai Supply Chain Management -ympäristön **Ominaisuuksien hallinta** -työtilassa:
 
-    - Verolaskenta
+    - Verolaskentapalvelu
     - Tue useita ALV-rekisteröintinumeroita
     - Vero siirtotilauksessa
-    - EU-myyntiluettelon siirto vain verotapahtumien perusteella
-    - Intrastat-raportointi usean verotunnuksen mukaan
-    - EU-myyntiluettelon raportointi usean verotunnuksen mukaan
-    - Arvonlisäverotilitys usean verotunnuksen mukaan
 
 - Seuraavat toiminnot on otettava käyttöön käyttöönotetun RCS-ympäristön **Ominaisuuksien hallinta** -työtilassa.
 
@@ -103,12 +95,12 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 7. Siirry kohtaan **Verotietomalli**, laajenna tiedostopuu ja valitse sitten **Veromääritys**.
 8. Valitse oikea veromääritysversio Finance-version perusteella ja valitse sitten **Tuo**.
 
-    | Julkaisuversio | Verokonfiguraatio                       | Mallin määritys                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Veromääritys – Eurooppa 30.12.82     |                                 |
-    | 10.0.19         | Verolaskentamääritys 36.38.193 |                                 |
-    | 10.0.20         | Verolaskentamääritys 40.43.208 |                                 |
-    | 10.0.21         | Verolaskentamääritys 40.46.212 | Dataverse-mallin yhdistämismääritys 40.46.9 |
+    | Julkaisuversio | Verokonfiguraatio                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Veromääritys – Eurooppa 30.12.82     |
+    | 10.0.19         | Verolaskentamääritys 36.38.193 |
+    | 10.0.20         | Verolaskentamääritys 40.43.208 |
+    | 10.0.21         | Verolaskentamääritys 40.46.212 |
 
 9. Valitse **Globalisaatio-ominaisuudet** -työtilaan, valitse **Ominaisuudet**, valitse **Verolaskenta**-ruutu ja valitse sitten **Lisää**.
 10. Valitse jokin seuraavista ominaisuustyypeistä:

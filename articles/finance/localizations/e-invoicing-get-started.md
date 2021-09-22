@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen käytön aloittaminen
 description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen käytön Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3a62f68718a9bd46cdf15146bbb6a4e5166bfcc7abcf99b24d3fbc7e3e6c94ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732978"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463831"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Sähköisen laskutuksen käytön aloittaminen
 
@@ -40,14 +40,14 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Tuo sähköisen laskutuksen ominaisuus Microsoftin konfiguraatiopalvelusta. 
 
 1. Kirjaudu sisään Regulatory Configuration Service (RCS) -tilillesi.
-2. Valitse **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
+2. Valitse **Globalisaatio-ominaisuukset**-työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
 3. Valitse **Tuo** ja valitse sitten **Synkronoi**.
 4. Suodata **Konfigurointipalvelu**-sarake hakusanan **Microsoft** avulla.
-5. Valitse sähköisen laskutuksen toiminnon nimi tämän ohjeaiheen alussa olevasta taulusta ja valitse sitten **Tuo**.
+5. Valitse sähköisen laskutusominaisuuden nimi taulukosta ja valitse sitten **Tuo**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Luo organisaation palveluntarjoajassa sähköisen laskutuksen ominaisuus
 
-1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
+1. Valitse RCS:ssä **Globalisaatio-ominaisuudet** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
 2. Valitse **Lisää** > **Perustuu aiempaan ominaisuuteen** ja anna **Nimi**-kentässä sähköisen lasktuksen ominaisuuden nimi.
 3. Anna ominaisuuden kuvaus **Kuvaus**-kentässä.
 4. Valitse **Perustoiminto**-kentästä tuotu sähköinen laskutusominaisuus Microsoftin konfiguraatiopalvelusta.
@@ -113,7 +113,7 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
     | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
     | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
 
-7. Valitse ja määritä kontekstiarvo seuraavan taulukon mukaisesti kuellekin luodulle taulukon nimelle.
+6. Valitse ja määritä kontekstiarvo seuraavan taulukon mukaisesti kuellekin luodulle taulukon nimelle.
 
     | Toiminnon nimi                         | Yritysasiakirja | Konteksti |
     |--------------------------------------|-------------------|---------|
@@ -134,7 +134,7 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
     | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
     | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
 
-8. Valitse ja määritä jokaiselle taulukon nimelle ja kontekstille liiketoimintatiedoston määrityksen arvo seuraavan taulukon mukaisesti.
+7. Valitse ja määritä jokaiselle taulukon nimelle ja kontekstille liiketoimintatiedoston määrityksen arvo seuraavan taulukon mukaisesti.
 
     | Toiminnon nimi                         | Yritysasiakirja | Liiketoiminta-asiakirjan yhdistämismääritys |
     |--------------------------------------|-------------------|---------------------------|
@@ -177,11 +177,11 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Sähköisen laskutuksen toiminnon käyttöönotto yhdistetyssä sovelluksessa
 
 1. Valitse **Versiot**-välilehdestä se sähköisen laskutuksen toiminnon versio, jonka haluat ottaa käyttöön.
-4. Valitse **Ota käyttöön**.
-5. Määritä **Ota käyttöön yhdistetyssä sovelluksessa** -asetuksen arvoksi **Kyllä**.
-6. Valitse **Yhdistä sovellus** -kentässä yhteys, joka liittyy Financen tai Supply Chain Managementin esiintymään.
-7. Määritä **Ota käyttöön palveluympäristössä** -asetuksen arvoksi **Ei**.
-10. Valitse **OK**.
+2. Valitse **Ota käyttöön**.
+3. Määritä **Ota käyttöön yhdistetyssä sovelluksessa** -asetuksen arvoksi **Kyllä**.
+4. Valitse **Yhdistä sovellus** -kentässä yhteys, joka liittyy Financen tai Supply Chain Managementin esiintymään.
+5. Määritä **Ota käyttöön palveluympäristössä** -asetuksen arvoksi **Ei**.
+6. Valitse **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Sähköisen laskutuksen ominaisuuden käyttöönotto Financessa tai Supply Chain Managementissa
 

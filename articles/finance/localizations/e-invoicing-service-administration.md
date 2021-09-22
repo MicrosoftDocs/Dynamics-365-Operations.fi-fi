@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen hallintakomponentit
 description: Tässä ohjeaiheessa on tietoja sähköisen laskutuksen hallintaan liittyvistä komponenteista.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6582a0a9eda19fe69ead853ea5d79d763afcb8a468717fde84a32146fd0f79af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721723"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463878"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Sähköisen laskutuksen hallintakomponentit
 
@@ -31,14 +31,14 @@ Tässä ohjeaiheessa on tietoja sähköisen laskutuksen hallintaan liittyvistä 
 
 ## <a name="azure"></a>Azure
 
-Microsoft Azuren avulla voit luoda Key Vaultin ja tallennustilin salaisia koodeja. Käytä sen jälkeen sen salaisia koodeja sähköisen laskutuksen konfiguroinnissa.
+Microsoft Azuren avulla voit luoda avainsäilön salaisia koodeja ja määrittää tallennustilin. Sitten voit käyttää avainsäilön salaisia koodeja ja tallennustilin SAS-tunnusta sähköisen laskutuksen määrityksessä.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Ota Microsoft Dynamics Lifecycle Servicesin (LCS) avulla käyttöön mikropalvelut LCS-käyttöönottoprojektille.
+Ota Microsoft Dynamics Lifecycle Servicesin (LCS) avulla käyttöön LCS-käyttöönottoprojektin sähköisen laskutuksen apuohjelma.
 
 > [!NOTE]
-> Mikropalveluiden asennus LCS:ssä edellyttää vähintään Tier 2 -virtuaalikoneen asentamista. Lisätietoja ympäristöjen suunnittelusta on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> Apuohjelmien asennus LCS:ssä edellyttää vähintään **Tier 2 -ympäristöä**. Lisätietoja ympäristöjen suunnittelusta on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
@@ -53,20 +53,21 @@ Lisätietoja RCS:stä: [Regulatory Configuration Services (RCS) – globalisoint
 
 Ennen kuin sähköisten laskujen konfiguroinnissa voi käyttää RCS:ää, RCS on määritettävä sallimaan tietoliikenne sähköisen laskutuksen kanssa. Tämä konfigurointi tehdään **Sähköisen raportoinnin parametrit** -sivun **Sähköinen laskutus** -välilehdessä.
 
-#### <a name="service-endpoint"></a>Palvelun päätepiste
+#### <a name="service-endpoint"></a><a id='svc-endpoint-uris'></a>Palvelun päätepiste
 
 Sähköinen laskutus on käytössä useilla Azure-palvelinkeskusten maantieteellisillä alueilla. Seuraavassa taulukossa luetellaan käytettävyys alueittain.
 
-| Azure-konesalin alue |
-|----------------------------|
-| Yhdysvallat              |
-| Eurooppa                     |
-| Iso-Britannia             |
-| Aasia                       |
+
+| Konesalin Azure-alue | Palvelun päätepisteen URI-osoite                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| Yhdysvallat              | <p>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing</p> |
+| Eurooppa                     | <p>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Iso-Britannia             | <p>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Aasia                       | <p>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
 
 ### <a name="service-environments"></a>Palveluympäristöt
 
-Palveluympäristöt ovat loogisia osioita, jotka luodaan sähköisen laskutuksen sähköisten laskutusominaisuuksien suorittamista varten. Suojauksen salasanat ja digitaaliset varmenteet sekä hallinto (eli käyttöoikeudet) on määritettävä palveluympäristön tasolla.
+Palveluympäristöt ovat loogisia osioita, jotka luodaan sähköisen laskutuksen globalisaatio-ominaisuuksien suorittamista varten. Suojauksen salasanat ja digitaaliset varmenteet sekä hallinto (eli käyttöoikeudet) on määritettävä palveluympäristön tasolla.
 
 Asiakkaat voivat luoda niin monta palveluympäristöä kuin haluavat. Kaikki asiakkaan luomat palveluympäristöt ovat toisistaan riippumattomia.
 
@@ -84,8 +85,8 @@ Palveluympäristöjä voidaan hallita tilan kautta. Mahdolliset vaihtoehdot ovat
 
 Sähköinen laskutus vastaa kaikkien liiketoimintatietojen tallentamisesta yrityksen omistamiin Azure-resursseihin. Sen varmistamiseksi, että palvelu toimii oikein ja että kaikki sähköistä laskutusta varten tarvittavat ja sen luomat liiketoimintatiedot ovat asianmukaisesti käytettävissä, on luotava kaksi keskeistä Azure-resurssia:
 
-- Azure-tallennustili (Blob-tallennus) sähköisten laskujen tallentamista varten
-- Azure Key Vault, johon tallennetaan tallennustilin tallennusvarmenteet ja Uniform Resource Identifier (URI)
+- Azure-tallennustili (blob-tallennustila), johon tallennetaan sähköisiä asiakirjoja, kuten sähköisiä laskuja, asiakirjamuuntojen tuloksia ja vastuksia ulkopuolisilta verkkopalveluilta.
+- Azuren avainsäilö, johon tallennetaan tallennustilin (SAS-tunnus) tallennusvarmenteet ja Uniform Resource Identifier (URI)
 
 
 Erillinen Key Vault ja asiakkaan tallennustili on määritettävä nimenomaisesti käytettäväksi sähköisen laskutuksen kanssa. Lisätietoja: [Azure-tallennustilin ja Key Vaultin luominen](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -122,13 +123,13 @@ Financen ja Supply Chain Managementin ja sähköisen laskutuksen välisen viesti
 
 Palvelun päätepiste on URL-osoite, jossa sähköinen laskutus sijaitsee. Ennen kuin sähköisiä laskuja voidaan lähettää palvelun päätepiste pitää määrittää Financessa ja Supply Chain Managementissa niin, että se sallii viestinnän palvelun kanssa.
 
-Voit määrittää palvelun päätepisteen siirtymällä kohtaan **Organisaation hallinto \> Määritys \> Sähköisen asiakirjan parametri** ja kirjoita **Lähetyspalvelut**-välilehden **Sähköisen laskutuksen URL-osoite** -kenttään URL-osoite, kuten on kuvattu osan **Palvelun päätepiste** -osan taulukossa.
+Voit määrittää palvelun päätepisteen siirtymällä kohtaan **Organisaation hallinto \> Määritys \> Sähköisen asiakirjan parametrit** ja kirjoita **Sähköinen laskutus**-välilehden **Päätepisteen URL-osoite** -kenttään asianmukainen URL-osoite [Palvelun päätepiste](#svc-endpoint-uris) -osan taulukosta aiemmin tässä aiheessa.
 
 #### <a name="environments"></a>Ympäristöt
 
 Financeen ja Supply Chain Managementiin syötetty ympäristönimi viittaa RCS:ssä luotavaan ja sähköiseen laskutukseen julkaistavaan ympäristön nimeen.
 
-Ympäristö on konfiguroitava **Sähköisen tiedoston parametri** -sivun **Lähetyspalvelut**-välilehdessä, jotta kaikki sähköisten laskujen lähetyspyynnöt sisältävät ympäristön, jossa sähköinen laskutus voi määrittää, mikä sähköisen laskutuksen toiminto käsittelee pyynnön.
+Ympäristö on määritettävä **Sähköisen asiakirjan parametrit** -sivun **Sähköinen laskutus** -välilehdessä. Tällöin kaikki pyynnöt sähköisen laskun tekemiseksi sisältävät ympäristön, jossa sähköinen laskutus voi määrittää, mitä sähköisen laskutuksen ominaisuutta on käytettävä pyynnön käsittelyssä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

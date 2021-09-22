@@ -1,8 +1,8 @@
 ---
 title: Muokkaa henkilökohtaisia tietoja
 description: Tässä artikkelissa kuvataan, miten henkilötietoja muokataan työntekijän ja esimiehen itsepalvelussa.
-author: andreabichsel
-ms.date: 03/19/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80b4537601491c97c24cfa1fef5088cbf1ac276df76534034117161b0fe79dc2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715892"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431459"
 ---
-# <a name="edit-personal-information"></a>Muokkaa henkilökohtaisia tietoja
+# <a name="edit-personal-information"></a>Henkilökohtaisten tietojen muokkaaminen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Voit muokata henkilökohtaisia tietojasi Dynamics 365 Human Resourcesissa **Työntekijän itsepalvelu -työtilassa**.
+Voit muokata henkilötietojasi Dynamics 365 Human Resourcesissa **Työntekijän itsepalvelu** -työtilassa.
 
 Voit muokata myös seuraavia henkilökohtaisia tietoja:
 
@@ -40,7 +40,7 @@ Voit muokata myös seuraavia henkilökohtaisia tietoja:
 >[!NOTE]
 >Et välttämättä voi muokata kaikkia henkilökohtaisia tietoja, kuten yrityksen yhteystietoja. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
 
-Yleisessä osoitekirjassa määritetyt parametrit määrittävät roolit, jotka voivat tarkastella henkilökohtaisia tietojasi.
+**Yleisen osoitekirjan parametrit** -sivulla määritetyt parametrit määrittävät roolit, jotka voivat tarkastella henkilökohtaisia tietojasi.
 
 1. Valitse henkilöstöhallinnossa **Työntekijän itsepalvelu**.
 

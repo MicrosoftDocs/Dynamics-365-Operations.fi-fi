@@ -1,8 +1,8 @@
 ---
 title: Työntekijän ja esimiehen itsepalvelun yleiskatsaus
 description: Tässä artikkelissa on työntekijän ja esimiehen itsepalvelun työtilan yleiskuvaus.
-author: andreabichsel
-ms.date: 10/20/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2effea18c149ae4fe8a4fd6a1a26882d4adb058f3f09e4f9fdac7d594db3acc9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cea92092701f960f12aa74efe4c82c379a2b2c6d
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719620"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431208"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Työntekijän ja esimiehen itsepalvelun yleiskatsaus
 
@@ -40,7 +40,7 @@ Jos et ole linkittänyt käyttäjää **Työntekijä**-tietueeseen **Käyttäjä
 
 **Käyttäjätunnustasi ei ole liitetty työntekijätietueeseesi järjestelmässä. Et voi katsella tai päivittää tietojasi, ennen kuin tunnus on liitetty. Ota yhteyttä esimieheesi tai tukitiimiin lisäohjeita varten.**
 
-Voit liittää käyttäjän **Työntekijä**-tietueeseen siirtymällä **Käyttäjät**-kohtaan ja valitsemalla käyttäjän. Valitse **Muokkaa**, lisää vastaava työntekijä lomakkeen **Henkilö**-kenttään ja valitse sitten **Tallenna**. Työntekijän itsepalvelun käytön pitäisi olla nyt mahdollista.
+Voit liittää käyttäjän **Työntekijä**-tietueeseen siirtymällä **Käyttäjät**-kohtaan ja valitsemalla käyttäjän. Valitse **Muokkaa**, lisää vastaava työntekijä sivun **Henkilö**-kenttään ja valitse sitten **Tallenna**. **Työntekijän itsepalvelun** käytön pitäisi olla nyt mahdollista.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Työntekijän ja esimiehen itsepalvelun suojausvaatimukset
 
@@ -55,7 +55,7 @@ Työntekijän ja esimiehen itsepalvelu edellyttää kahta käyttöoikeusroolia:
 
 ## <a name="employee-self-service"></a>Työntekijän itsepalvelu
 
-**Omat tiedot** -välilehdessä näkyvät seuraavat työntekijän itsepalvelun tiedot.  
+**Omat tiedot**-välilehdessä näkyvät seuraavat **työntekijän itsepalvelun** tiedot.  
 
 ### <a name="summary"></a>Yhteenveto
 
@@ -69,33 +69,33 @@ Työntekijän ja esimiehen itsepalvelu edellyttää kahta käyttöoikeusroolia:
 
 ### <a name="my-career-information"></a>Oman uran tiedot
 
-Työntekijän itsepalvelun **Omat uratiedot** -osiossa on vapaata ja poissaoloa, suorituskyvyn hallintaa, osaamisalueita, etuja, tehtäviä ja liitteitä koskevia kortteja.
+**Työntekijän itsepalvelun** **Omat uratiedot** -osiossa näkyy vapaata ja poissaoloa, suorituskyvyn hallintaa, osaamisalueita, etuja, tehtäviä ja liitteitä koskevia ruutuja.
 
-**Jäljellä olevat saldot** -kortti näyttää kaikkien rekisteröityjen suunnitelmien saldot. Tämä kortti ennustaa saldosi perustuen kertymismenetelmään. Voit määrittää ja lähettää aikapyyntöjä, jotka käyvät läpi hyväksynnän työnkulkuprosessin. Lisätietoja lomista ja poissaoloista on kohdassa [Lomien ja poissaolojen yleiskatsaus](hr-leave-and-absence-overview.md).
+**Jäljellä olevat saldot** -ruutu näyttää kaikkien rekisteröityjen suunnitelmien saldot. Tämä ruutu ennustaa saldosi perustuen kertymismenetelmään. Voit määrittää ja lähettää aikapyyntöjä, jotka käyvät läpi hyväksynnän työnkulkuprosessin. Lisätietoja lomista ja poissaoloista on kohdassa [Lomien ja poissaolojen yleiskatsaus](hr-leave-and-absence-overview.md).
 
-**Tehtävät**-kortissa näkyvät tehtävät, jotka on määritetty sinulle ja jonka avulla voit tarkastella ja hallita niitä.
+**Tehtävät**-ruudussa näkyvät tehtävät, jotka on määritetty sinulle ja jonka avulla voit tarkastella ja hallita niitä.
 
-**Seuraava rekisteröity kurssi** -kortti näyttää seuraavan kurssin, jolle olet rekisteröitynyt. Voit tarkastella tietoja ja rekisteröityä mille tahansa avoimille kursseille. Kaikkien rekisteröitymiseen avointen kurssien tilana on **Aloitettu**, ja tämän kortin avulla työntekijät voivat rekisteröityä itse. Organisaation asetuksista riippuen kurssin rekisteröinnissä saattaa olla hyväksymisprosessi.
+**Seuraava rekisteröity kurssi** näyttää seuraavan kurssin, jolle olet rekisteröitynyt. Voit tarkastella tietoja ja rekisteröityä mille tahansa avoimille kursseille. Kaikkien rekisteröitymiseen avointen kurssien tilana on **Aloitettu**, ja työntekijät voivat rekisteröityä itse. Organisaation asetuksista riippuen kurssin rekisteröinnissä saattaa olla hyväksymisprosessi.
 
-**Varmenteet**-kortissa näkyy nykyistä päivämäärää lähimpänä olevan sertifikaatin voimassaoloaika ja vanhentumispäivämäärä. Voit päivittää, lisätä tai poistaa sertifikaatteja. Organisaation asetuksista riippuen todistuspäivityksissä saattaa olla hyväksymisprosessi.
+**Varmenteet**-ruudussa näkyy nykyistä päivämäärää lähimpänä olevan sertifikaatin voimassaoloaika ja vanhentumispäivämäärä. Voit päivittää, lisätä tai poistaa sertifikaatteja. Organisaation asetuksista riippuen todistuspäivityksissä saattaa olla hyväksymisprosessi.
 
-**Seuraava ajoitettu tarkistus** -kortti näyttää seuraavan suorituskykytarkistuksen. Voit aloittaa uuden arvostelun tästä kortista. Esimies tai HR-edustaja voi myös aloittaa arvion. Organisaation asetuksista riippuen saatat myös pystyä tarkastelemaan, päivittämään ja lähettämään poistumisarvosteluja tästä kortista.
+**Seuraava ajoitettu tarkistus** näyttää seuraavan suorituskykytarkistuksen. Voit aloittaa uuden arvostelun tästä ruudusta. Esimies tai HR-edustaja voi myös aloittaa arvion. Organisaation asetuksista riippuen saatat myös pystyä tarkastelemaan, päivittämään ja lähettämään poistumisarvosteluja.
 
-Voit hallita tavoitteitasi **Suorituskykytavoite**-kortilla. Tässä kortissa näkyy kunkin tilan tavoitteiden määrä **(Ei aloitettu**, **Aikataulussa** ja **Vaatii parannusta**). Voit luoda, päivittää ja poistaa tavoitteita roolipohjaisen suojauksen mukaan. Voit halutessasi lisätä uusia tavoitteita ryhmistä tai malleista. Esimiehet ja HR voivat myös luoda tavoitteita työntekijöiden puolesta ja määrittää, miten yksityiskohtainen kukin tavoite on. Esimiehet ja työntekijät voivat tehdä tavoitteita ja päivittää tehtäviä, mittauksia ja tilaa. Voit myös sisällyttää liitteitä.
+Voit hallita tavoitteitasi **Suorituskykytavoite**-ruudulla. Tässä ruudussa näkyy kunkin tilan tavoitteiden määrä **(Ei aloitettu**, **Aikataulussa** ja **Vaatii parannusta**). Voit luoda, päivittää ja poistaa tavoitteita roolipohjaisen suojauksen mukaan. Voit halutessasi lisätä uusia tavoitteita ryhmistä tai malleista. Esimiehet ja HR voivat myös luoda tavoitteita työntekijöiden puolesta ja määrittää, miten yksityiskohtainen kukin tavoite on. Esimiehet ja työntekijät voivat tehdä tavoitteita ja päivittää tehtäviä, mittauksia ja tilaa. Voit myös sisällyttää liitteitä.
 
-Voit tarkastella **Osaaminen**-kortissa olevia osaamisalueita. Voit päivittää osaamisalueita, lisätä uusia tai poistaa niitä, jotka eivät ole enää olennaisia. Organisaation asetuksista riippuen, muutokset osaamisessasi saattavat vaatia hyväksymisprosessin.
+Voit tarkastella **Koko osaaminen**-ruudussa olevia osaamisalueita. Voit päivittää osaamisalueita, lisätä uusia tai poistaa niitä, jotka eivät ole enää olennaisia. Organisaation asetuksista riippuen, muutokset osaamisessasi saattavat vaatia hyväksymisprosessin.
 
-Voit tarkastella nykyistä kompensaatiotasi **Kompensaatio**-kortin kautta. Valitse **Näytä**, jos haluat nähdä vuosittaisen palkan ja viimeisen korotusmäärän. Jos olet töissä useammassa kuin yhdessä yrityksessä, jokainen vuosittainen summa näkyy kortissa. Jos haluat tarkastella yksityiskohtaista kompensaatiohistoriaasi, valitse vuosittainen palkkasumma, joka avaa **Vakio- ja muuttuva kompensaatiohistoria** -lomakkeen. Tuleva kompensaatio ei näy tässä lomakkeessa. Jos sinulla on useita töitä, voit siirtyä tämän lomakkeen yrityksistä toiseen ja tarkastella kompensaatiohistoriaasi kirjautumatta jokaiseen yritykseen.
+Voit tarkastella nykyistä kompensaatiotasi **Kompensaatio**-ruudussa. Valitse **Näytä**, jos haluat nähdä vuosittaisen palkan ja viimeisen korotusmäärän. Jos olet töissä useammassa kuin yhdessä yrityksessä, jokainen vuosittainen summa näkyy. Jos haluat tarkastella yksityiskohtaista kompensaatiohistoriaasi, valitse **Vuosittainen palkkasumma**, joka avaa **Vakio- ja muuttuva kompensaatiohistoria** -sivun. Tuleva kompensaatio ei näy tällä sivulla. Jos sinulla on useita töitä, voit siirtyä tämän sivun yrityksistä toiseen ja tarkastella kompensaatiohistoriaasi kirjautumatta jokaiseen yritykseen.
 
-Tarkastele ja hallitse tiedostoja, joissa on **Liite**-kortti. Voit hallita kaikkia **Ulkoisia** liitteitä. Sekä HR että työntekijät voivat lisätä liitteitä työntekijän itsepalvelun tai **työntekijä**-lomakkeen avulla. Liitteet asetetaan oletusarvoisesti **Ulkoinen**-tilaan.
+Tarkastele ja hallitse tiedostoja, joissa on **Liite**-ruutu. Voit hallita kaikkia **Ulkoisia** liitteitä. Sekä HR että työntekijät voivat lisätä liitteitä **työntekijän itsepalvelun** tai **Työntekijä**-sivun avulla. Liitteet asetetaan oletusarvoisesti **Ulkoinen**-tilaan.
 
 ### <a name="additional-information"></a>Lisätiedot
 
-Tässä osassa on linkkejä muihin työntekijöiden itsepalvelualueisiin, jotka muistuttavat **Uratietoni**-osiota.
+Tässä osassa on linkkejä muihin **työntekijöiden itsepalvelu** -alueisiin, jotka muistuttavat **Uratietoni**-osiota.
 
 Voit rekisteröityä etuuksiksi **Edut**-linkin kautta. Lisätietoja etujen hallinnasta on kohdassa [Etujen yleiskuvaus](hr-benefits-management-overview.md).
 
-**Suorituskyky**-kohdassa voit valita **Suorituskykykirjauskansiot**, joiden avulla suorituskykytavoitteet ja arvostelut voidaan luoda. Voit antaa palautetta organisaatiosi muille työntekijöille valitsemalla **Lähetä palaute**. Organisaation asetuksista riippuen sähköpostit voidaan lähettää vastaanottajalle, lähettäjälle ja esimiehille. Voit lähettää palautetta organisaation kaikille työntekijöille. Yritys ei rajoita palautteen lähettämistä.
+**Suorituskyky**-kohdassa voit valita **Suorituskykykirjauskansio** luodaksesi suorituskykykirjauskansiomerkintöjä, joita voi käyttää sekä suorituskykytavoitteissa että -arvoisissa. Voit antaa palautetta organisaatiosi muille työntekijöille valitsemalla **Lähetä palaute**. Organisaation asetuksista riippuen sähköpostit voidaan lähettää vastaanottajalle, lähettäjälle ja esimiehille. Voit lähettää palautetta organisaation kaikille työntekijöille. Yritys ei rajoita palautteen lähettämistä.
 
 **Osaamisalueet**-kohdassa voit tehdä muutoksia **Kursseihin**, **Koulutukseen**, **Luottamustoimiin** ja **Ammattikokemukseen**. Organisaation asetuksista riippuen osaamisen päivityksissä saattaa olla hyväksymisprosessi.
 
@@ -105,11 +105,11 @@ Voit tarkastella työn tietoja **Organisaation** alla. Työn tietoihin sisältyv
 
 Voit määrittää käyttäjän määrittämiä linkkejä **Henkilöstöhallinnon parametreihin**. Voit esimerkiksi määrittää linkit maksulausekkeisiin, vuoden lopun dokumentaatioon tai ulkoisiin ratkaisuihin. Nämä linkit näkyvät tämän osan alaosassa, mutta voit siirtää niitä käyttämällä mukauttamista.
 
-Voit myös luoda uusia välilehtiä upottamalla Power Appsin työntekijän itsepalvelutyötilaan. **Asetukset**-valikon avulla voit mukauttaa sivun millä tahansa Power Appsilla. **Asetukset**-valikossa voit halutessasi lisätä Power Appin, viimeistellä tiedot ja lisätä sovelluksen. Power Apps näkyy oletusarvon mukaan järjestyksessä ensimmäisenä välilehtenä. Voit muuttaa järjestystä käyttämällä normaalia mukauttamista.
+Voit myös luoda uusia välilehtiä upottamalla Power Appsin **työntekijän itsepalvelu** -työtilaan. **Asetukset**-valikon avulla voit mukauttaa sivun millä tahansa Power Appsilla. **Asetukset**-valikossa voit halutessasi lisätä Power Appin, viimeistellä tiedot ja lisätä sovelluksen. Power Apps näkyy oletusarvon mukaan järjestyksessä ensimmäisenä välilehtenä. Voit muuttaa järjestystä käyttämällä normaalia mukauttamista.
 
 ## <a name="my-team"></a>Oma ryhmä
 
-**Oma ryhmä** -välilehdessä näkyvät seuraavat esimiehen itsepalvelun tiedot. Vain esimiehet voivat käyttää **Oma ryhmä** -välilehteä.
+**Oma ryhmä** -välilehdessä näkyvät seuraavat **esimiehen itsepalvelun** tiedot. Vain esimiehet voivat käyttää **Oma ryhmä** -välilehteä.
 
 ### <a name="personnel-actions"></a>Henkilöstötoiminnot
 
@@ -160,11 +160,11 @@ Voit määrittää seuraavat asetukset, joiden avulla esimiehet voivat tehdä mu
 
 ### <a name="my-team-information"></a>Oman ryhmän tiedot
 
-Ryhmän tietojen avulla esimiehet voivat tarkastella ja päivittää suoria ja laajennettuja raportteja. Jos haluat käyttää laajennettuja raportteja, valitse työntekijä, joka ohjaa ja valitse sitten kortissa **Näytä ryhmä**. Kaikki samat asetukset koskevat laajennettuja raportteja kuin suoria raportteja. 
+**Oma ryhmä** -ruudun avulla esimiehet voivat tarkastella ja päivittää suoria ja laajennettuja raportteja. Jos haluat käyttää laajennettuja raportteja, valitse työntekijä, joka ohjaa ja valitse sitten ruudussa **Näytä ryhmä**. Kaikki samat asetukset koskevat laajennettuja raportteja kuin suoria raportteja. 
 
 #### <a name="summary-tab"></a>Yhteenveto-välilehti
 
-**Yhteenveto**-välilehden avulla voit tarkastella suoria raportteja nopeasti. Jos suora raportti sisältää myös työntekijöitä, jotka raportoivat heille, kortissa näkyy yläosassa olevien suorien raporttien määrä sekä **Näytä ryhmä** -painike. Kunkin kortin yläpuolella olevat vaihtoehdot koskevat valittua työntekijää. Jos esimerkiksi haluat määrittää lomapyynnön työntekijän puolesta, valitse työntekijä ja valitse sitten korttien yläpuolella oleva **Lomapyyntö**. 
+**Yhteenveto**-välilehden avulla voit tarkastella suoria raportteja nopeasti. Jos suora raportti sisältää myös työntekijöitä, jotka raportoivat heille, kortissa näkyy yläosassa olevien suorien raporttien määrä sekä **Näytä ryhmä** -painike. Kunkin ruudun yläpuolella olevat vaihtoehdot koskevat valittua työntekijää. Jos esimerkiksi haluat määrittää lomapyynnön työntekijän puolesta, valitse työntekijä ja valitse sitten **Lomapyyntö**. 
 
 Jos valitset **Tiedot**-painikkeen työntekijän valitsemisen jälkeen, näyttöön tulevat seuraavat asetukset:
 
@@ -183,12 +183,12 @@ Organisaation asetuksista riippuen voit joko tehdä muutoksia tai vain tarkastel
 
 #### <a name="position-tab"></a>Toimi-välilehti
 
-**Toimet**-välilehdessä on yhteenvetonäkymä työntekijöistä niiden ensisijaisessa sijainnissa. Kunkin kortin otsikkoalueella näkyy nimi, ruutu ja osasto. Tämä kortti sisältää:
+**Toimi**-välilehdessä on yhteenvetonäkymä työntekijöistä niiden ensisijaisessa sijainnissa. Kunkin ruudun otsikkoalueella näkyy nimi, ruutu ja osasto. Tämä ruutu sisältää seuraavaa:
 
-- **Ikälisäpäivä** - Näytetään työntekijälomakkeen työntekijän Yhteenveto-osiosta
-- **Huoltovuodet** - Laskettu työntekijän työsuhteen alkamispäivämäärän perusteella
-- **Aiempien toimien määrä** - Sijaintihistorian perusteella tämän numeron valitseminen avaa kaikkien aiemmin pidossa olevien toimien yksityiskohtaisen näkymän.
-- **Syntymäaika** - Työntekijän syntymäpäivän kuukausi ja päivä
+- **Ikälisäpäivä** – Näytetään **Työntekijä**-sivun työntekijän yhteenveto-osiosta.
+- **Huoltovuodet** – Laskettu työntekijän työsuhteen alkamispäivämäärän perusteella.
+- **Aiempien toimien määrä** – Sijaintihistorian perusteella tämän numeron valitseminen avaa kaikkien aiemmin pidossa olevien toimien yksityiskohtaisen näkymän.
+- **Syntymäaika** – Työntekijän syntymäpäivän kuukausi ja päivä.
 
 Voit tarkastella sekä suorien että laajennettujen raporttien toimitietoja.
 
@@ -196,13 +196,13 @@ Voit tarkastella sekä suorien että laajennettujen raporttien toimitietoja.
 
 **Kompensaatio**-välilehdessä näkyy työntekijän vuosipalkka. Yrityksen tunnus näkyy palkan summa -kentässä. Jos työntekijällä on useampi kuin yksi työsuhde ja hän saa maksun useista yrityksistä, työntekijällä on useita kompensaatiosuunnitelmia. Voit tarkastella kaikkia eri yrityksissä olevia kompensaatiosuunnitelmia yrityksiä vaihtamatta ottamalla käyttöön yritystenvälisen kompensaation. Se tehdään valitsemalla **Henkilöstöhallinto > Jaetut parametrit > Lisäkäyttöoikeudet > Ota yritystenvälinen kompensaatio käyttöön**.
 
-Voit tarkastella kompensaatiohistoriaa valitsemalla palkan määrän, joka avaa **Tiedot**-lomakkeen. Vain nykyiset ja historialliset pysyvät ja muuttuvat kompensaatiotiedot näkyvät **Kompensaatio**-lomakkeessa. Jos työntekijällä on useita työsuhteita, kompensaatiohistoriaa voi tarkastella kussakin yrityksessä tai yritystenvälinen kompensaatio voidaan ottaa käyttöön henkilöstöhallinnan jaetuissa resursseissa, jolloin kaikki kompensaatiosuunnitelmat ovat näkyvissä.
+Voit tarkastella kompensaatiohistoriaa valitsemalla **Palkan määrä**, joka avaa **Tiedot**-sivun. Vain nykyiset ja historialliset pysyvät ja muuttuvat kompensaatiotiedot näkyvät **Kompensaatio**-sivulla. Jos työntekijällä on useita työsuhteita, kompensaatiohistoriaa voi tarkastella kussakin yrityksessä tai yritystenvälinen kompensaatio voidaan ottaa käyttöön **henkilöstöhallinnan jaetuissa resursseissa**, jolloin kaikki kompensaatiosuunnitelmat ovat näkyvissä.
 
 Voit tarkastella sekä suorien että laajennettujen raporttien kompensaatiotietoja.
 
 #### <a name="leave-and-absence-tab"></a>Loma- ja poissaolovälilehti
 
-**Loma-ja poissaolo** -välilehdessä näkyvät tehtävän työntekijöiden ylimmät saldot. Jos haluat suorittaa toiminnon tai tarkastella täydellistä luetteloa tehtävistä, **Valitse tiedot** ja valitse sitten **Poissaolo**. **Loma**-lomakkeella voit tarkastella saldot, pyynnöt, hyväksytyn vapaa-ajan ja ennustaa saldot ja auttaa työntekijöitä hallitsemaan aikaa paremmin. Organisaation asetuksista riippuen voit myös pyytää lomaa, joka on käytössä suorissa ja laajennetuissa raporteissa.
+**Loma-ja poissaolo** -välilehdessä näkyvät tehtävän työntekijöiden ylimmät saldot. Jos haluat suorittaa toiminnon tai tarkastella täydellistä luetteloa tehtävistä, **Valitse tiedot** ja valitse sitten **Poissaolo**. **Loma**-sivulla voit tarkastella saldot, pyynnöt, hyväksytyn vapaa-ajan ja ennustaa saldot ja auttaa työntekijöitä hallitsemaan aikaa paremmin. Organisaation asetuksista riippuen voit myös pyytää lomaa, joka on käytössä suorissa ja laajennetuissa raporteissa.
 
 #### <a name="performance-goals-tab"></a>Suorituskykytavoitteet-välilehti
 

@@ -2,20 +2,20 @@
 title: Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
 description: Tässä ohjeaiheessa on tietoja suunnittelun optimoinnin julkaisuprosessista ja julkaisuhistoriasta.
 author: crytt
-ms.date: 8/17/2021
+ms.date: 09/02/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: fcd18341629afcf3092a457ae711e27b0bbfeb2a
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394411"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474697"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
 
@@ -31,10 +31,11 @@ Ympäristöt, joissa suunnittelu optimointia käytetään, saavat automaattisest
 
 Koska ilmoitukset eivät näy, kun suunnittelun optimointi päivitetään ympäristössäsi, voit tarkistaa julkaisutiedot seuraavassa taulukossa ja selvittää, milloin muutokset on julkaistu ja mitä toimintoja on otettu käyttöön. Tässä taulukossa näkyvät suunnittelun optimointiin vapautetut muutokset sekä tiedot siitä, liittyvätkö muutokset ominaisuuden hallintaan, ja päivämäärän, jolloin muutokset on tehty.
 
-| Muutokset | Ominaisuuksien hallinnan tiedot | Vapautuspäivä |
+| Muutokset | Ominaisuuksien hallinnan tiedot | Vapautuspäivät |
 |---|---|---|
-| <p>Lisättiin **Läpimenoaika**-kenttä suunniteltuihin tilauksiin.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset.</p> | Ominaisuuksien hallintaa ei tarvita. | 16. elokuuta 2021 |
-| <p>Lisättiin rajattoman kapasiteetin ajoituksen resurssityypin vaatimukset.</p><p>Parannettiin rajattoman kapasiteetin ajoituksen resurssin tehokkuutta ja kalenterin tehokkuutta.</p><p>Lisätietoja on kohdassa [Ajoittaminen rajattoman kapasiteetin avulla](infinite-capacity-planning.md). | <p>Käytettävissä ominaisuuksien hallinnassa versiosta 10.0.20.</p><p>Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus*</p> | 6. heinäkuuta 2021 |
-| Yleiset laadun parannukset. | Ominaisuuksien hallintaa ei tarvita. | 6. heinäkuuta 2021 |
+| Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuksien hallintaa ei tarvita. | 25.–30. elokuuta 2021 |
+| <p>Lisättiin **Läpimenoaika**-kenttä suunniteltuihin tilauksiin.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset.</p> | Ominaisuuksien hallintaa ei tarvita. | 12.–17. elokuuta 2021 |
+| <p>Lisättiin rajattoman kapasiteetin ajoituksen resurssityypin vaatimukset.</p><p>Parannettiin rajattoman kapasiteetin ajoituksen resurssin tehokkuutta ja kalenterin tehokkuutta.</p><p>Lisätietoja on kohdassa [Ajoittaminen rajattoman kapasiteetin avulla](infinite-capacity-planning.md). | <p>Käytettävissä ominaisuuksien hallinnassa versiosta 10.0.20.</p><p>Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus*</p> | 6.–12. heinäkuuta 2021 |
+| Yleiset laadun parannukset. | Ominaisuuksien hallintaa ei tarvita. | 6.–12. heinäkuuta 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

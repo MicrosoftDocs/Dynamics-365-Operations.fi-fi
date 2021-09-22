@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393520"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441162"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -43,6 +43,11 @@ Seuraavien edellytysten on toteuduttava, ennen kuin tuotantoympäristön valmist
 Ennen ensimmäisen tuotantoympäristön tai tuotantoympäristön varausta voit varata [henkilöstöhallinnon koeympäristön](https://go.microsoft.com/fwlink/p/?LinkId=2115962) henkilöstöhallinnon toimintojen tarkistamista varten. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon järjestelmänhallintakokemuksen kautta. 
 
 Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Koeajan kesto on enintään 60 päivää. Kun kokeiluympäristö vanhenee, ympäristö ja sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Ympäristöä ei voi muuntaa tuotantotilauksen tai tuotantoympäristön muotoon. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
+
+Kun luot henkilöstöhallinnon koeympäristön, vuokraajalla luodaan myös Power Apps -koeympäristö, joka linkitetään henkilöstöhallinnon ympäristöön. Power Apps -ympäristöllä, jonka nimi on TestDrive, on sama koeaika kuin henkilöstöhallinnon ympäristöllä.
+
+> [!NOTE]
+> Henkilöstöhallinnon koeympäristön valmistelu epäonnistuu, jos varmennetulla käyttäjällä ei ole oikeutta luoda Power Apps -koeympäristöjä. Käyttäjän on kuuluttava käyttäjäryhmään, joka voi luoda koeympäristöjä Power Platformin hallintakeskuksessa. Lisätietoja [Hallitse sitä, kuka voi luoda ja hallita ympäristöjä Power Platformin hallintakeskuksessa](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Human Resources -ympäristöjen suunnitteleminen
 
@@ -69,7 +74,7 @@ Luo ensin LCS-projekti, jotta voit hallinnoida Human Resources -ympäristöjä L
 1. Kirjaudu sisään [LCS:ään](https://lcs.dynamics.com/Logon/Index) samalla tilillä, jota käytit tilatessasi Human Resources -sovelluksen.
 
    > [!NOTE]
-   > Onnistuneen valmistelun varmistamiseksi Human Resources -ympäristön valmisteluun käytetyn tilin on oltava määritettynä joko **Järjestelmänvalvoja**- tai **Järjestelmän mukauttaja** -roolille Power Apps -ympäristössä, joka liittyy Human Resources -ympäristöön. Kohdassa [Käyttäjäsuojauksen määrittäminen resursseille](/power-platform/admin/database-security) on lisätietoa käyttöoikeusroolien määrittämisestä käyttäjille Power Platformissa.
+   > Onnistuneen valmistelun varmistamiseksi Human Resources -ympäristön valmisteluun käytetyn tilin on oltava määritettynä joko **Järjestelmänvalvoja**- tai **Järjestelmän mukauttaja** -roolille Power Apps -ympäristössä, joka liittyy Human Resources -ympäristöön. Lisätietoja käyttöoikeusroolien määrittämisestä käyttäjille Power Platformissa: [Käyttöoikeuksien määritys resursseille](/power-platform/admin/database-security).
 
 2. Luo projekti valitsemalla plusmerkki (**+**).
 

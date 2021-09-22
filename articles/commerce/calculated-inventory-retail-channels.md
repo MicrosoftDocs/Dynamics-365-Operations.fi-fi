@@ -2,7 +2,7 @@
 title: Vähittäismyyntikanavien varaston käytettävyyden laskeminen
 description: Tässä ohjeaiheessa kerrotaan, miten yritys voi käyttää Microsoft Dynamics 365 Commercea arvioitujen käytettävissä olevan varaston tarkastelussa tuotteille online- ja myymäläkanavissa.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: da79aadace09ad480fa34bc03220831023e469645bb7d53af1647bd2d35af0ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3cfd8c2f0b88a4e634cee0398283a51eddf60b2
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741809"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472168"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Vähittäismyyntikanavien varaston käytettävyyden laskeminen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten yritys voi käyttää Microsoft Dynamics 365 Commercea arvioitujen käytettävissä olevan varaston tarkastelussa tuotteille online- ja myymäläkanavissa.
 
@@ -43,6 +44,21 @@ Seuraavat varastomuutokset on tällä hetkellä otettu huomioon kanavanpuoleisen
 - Myymälän tai verkkokanavan asiakastilausten kautta myyty varasto.
 - Myymälälle palautettu varasto
 - Täytetty varasto (kerää, pakkaa, lähetä) myymälävarastosta
+
+Kanavapuolen varastonlaskennan käyttämistä varten sinun on otettava **Optimoitu tuotteen saatavuuslaskenta** -ominaisuus käyttöön.
+
+Jos Commerce-ympäristösi versio on **10.0.8–10.0.11**, noudata seuraavia ohjeita.
+
+1. Siirry Commerce-pääkonttorissa kohtaan **Retail ja Commerce** \> **Commercen jaetut parametrit**.
+1. Valitse **Varasto**-välilehden **Tuotteen saatavuus -työ** -kentässä **Käytä optimoitua prosessia tuotteen saatavuuden työssä**.
+
+Jos Commerce-ympäristösi versio on **10.0.12 tai uudempi**, noudata seuraavia ohjeita.
+
+1. Siirry Commerce-pääkonttorissa kohtaan **Työtilat \> Ominaisuuksienhallinta** ja ota **Optimoitu tuotteen saatavuuden laskenta** -ominaisuus käyttöön.
+1. Jos verkko- ja myymäläkanavissa käytetään samoja toteutusvarastoja, sinun on otettava käyttöön myös **Parannettu sähköisen kaupankäynnin kanavanpuoleinen varaston laskentalogiikka** -ominaisuus. Tällöin ohjelmointirajapinnan kanavanpuoleinen laskentalogiikka ottaa huomioon myymäläkanavassa luodut kirjaamattomat tapahtumat. (Nämä tapahtumat voivat olla itsepalvelutukkutapahtumia, asiakastilauksia ja palautuksia).
+1. Suorita **1070** (**Kanavan määritys**) -työ.
+
+Jos Commerce-ympäristö on päivitetty Commerce-versiota 10.0.8 aiemmasta versiosta, sinun on suoritettava myös **Alusta Commerce-ajastus**, kun olet ottanut käyttöön **Optimoitu tuotteen saatavuuslaskenta** -ominaisuus, jotta ominaisuus tulee käyttöön. Suorita alustus menemällä kohtaan **Retail ja Commerce** \> **Pääkonttorina asetukset** \> **Commerce-ajastus**.
 
 Jos kanavanpuoleisen varaston laskentaa halutaan käyttää, **Tuotteen saatavuus** -työn luoma pääkonttorin varastotietojen kausittainen tilannevedos on lähetettävä kanavatietokantoihin. Tilannevedos vastaa tietoja, jotka pääkonttorisovelluksella on varaston saatavuudesta tietylle tuotteen tai tuotevariantin ja varaston yhdistelmälle. Se sisältää vain varastotapahtumat, jotka on käsitelty ja kirjattu pääkonttorissa tilannevedoksen määrityksen yhteydessä, eikä se ole välttämättä 100 prosenttisen tarkka reaaliajassa jaetuissa palvelimissa olevan vakiomyyntikäsittelyn vuoksi.
 
@@ -75,8 +91,6 @@ Molemmat ohjelmointirajapinnat käyttävät sisäisesti kanavanpuoleista laskent
 
 Vaikka Commercen muut ohjelmointirajapinnat voivat siirtyä suoraan pääkonttorisovellukseen ja hakea käytettävissä olevan varaston määrät tuotteille, tätä ei suositella käytettäväksi sähköisen kaupankäynnin ympäristössä. Tämä johtuu siitä, että nämä toistuvat pyynnöt voivat vaikuttaa pääkonttorin palvelimiin ja aiheuttaa mahdollisia suorituskykyongelmia. Lisäksi kanavanpuoleisen laskennan avulla edellä mainitut kaksi ohjelmointirajapintaa voivat antaa tarkemman arvion tuotteen saatavuudesta ottamalla huomioon niiden kanavien tapahtumat, joista ei vielä tiedetä pääkonttorissa.
 
-Ennen kahden aiemmin mainitun ohjelmointirajapinnan käyttöä on otettava käyttöön **Optimoitu tuotteen saatavuuden laskenta** -toiminto pääkonttorin **Toimintojen hallinta** -työtilassa. Jos verkko- ja myymäläkanavien käytössä ovat samat toteutusvarastot, sinun on otettava myös käyttöön **Parannettu sähköisen kaupankäynnin kanavanpuoleinen varaston laskentalogiikka** -ominaisuus, jotta kahden ohjelmointirajapinnan kanavanpuoleinen laskentalogiikka voi ottaa huomioon myymäläkanavassa luodut kirjaamattomat tapahtumat (itsepalvelutukku, asiakastilaukset, palautukset). Suorita **1070** (**Kanavan määritys**) -työ näiden ominaisuuksien käyttöönoton jälkeen.
-
 Seuraavia ohjeita noudattamalla voit määrittää, miten tuotemäärä palautetaan ohjelmointirajapinnan tuotoksessa.
 
 1. Valitse **Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Kaupan parametrit**.
@@ -85,17 +99,17 @@ Seuraavia ohjeita noudattamalla voit määrittää, miten tuotemäärä palautet
 
 **Ohjelmointirajapinnan tuotoksen määrä** -asetuksessa on kolme vaihtoehtoa:
 
-- **Palauta varastomäärä** - Pyydetyn tuotteen fyysinen käytettävissä oleva määrä ja käytettävissä oleva kokonaismäärä palautetaan palautetaan ohjelmointirajapinnan tuotoksessa.
-- **Palauta varastomäärä vähentämällä varastopuskuri** - Ohjelmointirajapinnan tuotoksen palauttama määrä oikaistaan vähentämällä varastopuskurin arvo. Lisätietoja varastopuskurista on kohdassa [Varastopuskureiden ja varastotasojen konfiguroiminen](inventory-buffers-levels.md).
-- **Ei palauta varastomäärää** - Vain varastotaso palautetaan ohjelmointirajapinnan tuotoksessa. Lisätietoja varastotasoista on kohdassa [Varastopuskureiden ja varastotasojen konfiguroiminen](inventory-buffers-levels.md).
+- **Palauta varastomäärä** – Pyydetyn tuotteen fyysinen käytettävissä oleva määrä ja käytettävissä oleva kokonaismäärä palautetaan ohjelmointirajapinnan tuotoksessa.
+- **Palauta varastomäärä vähentämällä varastopuskuri** – Ohjelmointirajapinnan tuotoksen palauttama määrä oikaistaan vähentämällä varastopuskurin arvo. Lisätietoja varastopuskurista on kohdassa [Varastopuskureiden ja varastotasojen konfiguroiminen](inventory-buffers-levels.md).
+- **Ei palauta varastomäärää** – Vain varastotaso palautetaan ohjelmointirajapinnan tuotoksessa. Lisätietoja varastotasoista on kohdassa [Varastopuskureiden ja varastotasojen konfiguroiminen](inventory-buffers-levels.md).
 
 `QuantityUnitTypeValue`-ohjelmointirajapinnan parametrin avulla voit määrittää yksikkötyypin, joissa haluat ohjelmointirajapintojen palauttavan määrän. Tämä parametri tukee **Varastoyksikkö**- (oletusarvo), **Ostoyksikkö**- ja **Myyntiyksikkö**-vaihtoehtoja. Palautettu määrä pyöristetään vastaavan mittayksikön määritettyyn tarkkuuteen pääkonttorissa.
 
 **GetEstimatedAvailability**-ohjelmointirajapinta tarjoaa seuraavat syöteparametrit tukemaan erilaisia kyselyskenaarioita:
 
-- `DefaultWarehouseOnly` - Tämän parametrin avulla voit tehdä kyselyn tuotteelle varastosta online-kanavan oletusvarastossa. 
-- `FilterByChannelFulfillmentGroup` ja `SearchArea` - Näiden kahden parametrin avulla voit tehdä kyselyn tuotteelle varastosta kaikista tietyn hakualueen noutosijainneista, perustana `longitude`, `latitude` ja `radius`. 
-- `FilterByChannelFulfillmentGroup` ja `DeliveryModeTypeFilterValue` - Näiden kahden parametrin avulla voit tehdä kyselyn tuotteelle tietyistä varastoista, jotka on linkitetty online-kanavan täytäntöönpanoryhmään ja jotka on määritetty tukemaan tiettyjä toimitustapoja. `DeliveryModeTypeFilterValue`-parametri tukee **kaikki**- (oletusarvo), **lähetys**- ja **nouto**-vaihtoehtoja. Jos esimerkiksi online-tilaus voidaan täyttää useista lähetysvarastoista, voit tehdä kyselyn tuotteen varaston saatavuudesta näiden kahden parametrin avulla kaikissa lähetysvarastoissa. Tässä tapauksessa ohjelmointirajapinta palauttaa tuotteen käytettävissä olevan määrän ja varaston tason kaikissa lähetysvarastoissa sekä koostetun määrän ja koostetun varastotason kyselyn laajuuden kaikista lähetysvarastoista.
+- `DefaultWarehouseOnly` – Tämän parametrin avulla voit tehdä kyselyn tuotteelle varastosta online-kanavan oletusvarastossa. 
+- `FilterByChannelFulfillmentGroup` ja `SearchArea` – Näiden kahden parametrin avulla voit tehdä kyselyn tuotteelle varastosta kaikista tietyn hakualueen noutosijainneista, perustana `longitude`, `latitude` ja `radius`. 
+- `FilterByChannelFulfillmentGroup` ja `DeliveryModeTypeFilterValue` – Näiden kahden parametrin avulla voit tehdä kyselyn tuotteelle tietyistä varastoista, jotka on linkitetty online-kanavan täytäntöönpanoryhmään ja jotka on määritetty tukemaan tiettyjä toimitustapoja. `DeliveryModeTypeFilterValue`-parametri tukee **kaikki**- (oletusarvo), **lähetys**- ja **nouto**-vaihtoehtoja. Jos esimerkiksi online-tilaus voidaan täyttää useista lähetysvarastoista, voit tehdä kyselyn tuotteen varaston saatavuudesta näiden kahden parametrin avulla kaikissa lähetysvarastoissa. Tässä tapauksessa ohjelmointirajapinta palauttaa tuotteen käytettävissä olevan määrän ja varaston tason kaikissa lähetysvarastoissa sekä koostetun määrän ja koostetun varastotason kyselyn laajuuden kaikista lähetysvarastoista.
  
 Commercen ostoruutu-, myymälän valitsin-, toivelista-, ostoskori- ja ostokorikuvakemoduulit käyttävät yllä mainittuja ohjelmointirajapintoja ja parametreja varastotason sanomien tarkastelemiseksi koko sähköisen kaupan sivustossa. Commercen sivustonmuodostin tarjoaa useita varastoasetuksia myynninedistämisen ja oston toiminnan ohjaamista varten. Lisätietoa kohdassa [Varastoasetusten käyttöönotto](inventory-settings.md).
 
@@ -136,6 +150,5 @@ Voit varmistaa varaston parhaan mahdollisen arvion saamisen, jos käytät seuraa
 > - Kun kanavan varaston saatavuuden laskelmia käytetään varaston saatavuuspyynnön luomisessa sähköisen kaupankäynnin ohjelmointirajapintaa tai myyntipisteen kanavan varastointilogiikkaa, suorituskyvyn varmistamiseksi laskelma käyttää välimuistia ja määrittää sen avulla, onko laskentalogiikan suorittamisesta kulunut riittävästi aikaa, jotta sen suorittaminen uudelleen on perusteltua. Välimuistin oletusarvoksi on määritetty 60 sekuntia. Tässä esimerkissä otetaan käyttöön kanavan laskennan myymälässä ja tarkastellaan tuotteen käytettävissä olevaa varastoa **Varastohaku**-sivulla. Jos tuotetta tämän jälkeen myydään yksi yksikkö, **Varastohaku**-sivulla ei näy vähennetty varasto ennen välimuistin tyhjentämistä. Käyttäjien kirjattua tapahtumia myyntipisteeseen, heidän tulee odottaa 60 sekuntia. Tämän jälkeen he voivat tarkistaa, onko käytettävissä olevaa varastoa vähennetty tapahtuman mukaan.
 
 Jos liiketoimintaskenaario edellyttää lyhyempää välimuistin aikaa, ota yhteyttä tuotetuen edustajaan.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

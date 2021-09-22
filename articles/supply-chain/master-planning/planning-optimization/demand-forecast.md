@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778673"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474841"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Pääsuunnittelu ja kysynnän ennusteet
 
@@ -137,32 +137,85 @@ Tällöin jos suoritat ennusteajoituksen 1. tammikuuta, kysynnän ennustetarpeit
 
 #### <a name="transactions--reduction-key"></a>Tapahtumat - vähennysavain
 
-Jos valitset **Tapahtumat - vähennysavain**: ennusteen tarpeita vähennetään vähennysavaimen määrittämien kausien aikaisten tapahtumien mukaan.
+Jos määrität **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentän arvoksi *Tapahtumat – vähennysavain*, ennustevaatimuksista vähennetään kelvollisilla kysyntätapahtumilla, jotka esiintyvät vähennysavaimen määrittäminä ajanjaksoina.
+
+Kelvollinen kysyntä määritetään **Kattavuusryhmät**-sivun **Ennusteen vähennysperuste** -kentän avulla. Jos **Ennusteen vähennysperuste** -kentän arvoksi määritetään *Tilaukset*, vain tilaustapahtumat katsotaan kelvolliseksi kysynnäksi. Jos sen arvoksi määritetään *Kaikki tapahtumat*, kaikki muut kuin konsernin sisäiset varastonsiirrot katsotaan kelvolliseksi kysynnäksi. Jos myös konsernin sisäiset myynnit katsotaan kelvolliseksi kysynnäksi, **Sisällytä konsernin sisäiset tilaukset** -asetuksen arvoksi *Kyllä*.
+
+Ennusteen vähennys alkaa vähennysavaimen jakson ensimmäisestä (aikaisimmasta) kysynnän ennustetietueesta. Jos kelvollisten varastotapahtumien määrä ylittää kysynnän ennusterivien määrän samalla vähennysavainjaksolla, varastotapahtumien määrän saldo vähennetään edellisen jakson kysynnän ennustemäärästä (jos käyttämätöntä ennustetta on jäljellä).
+
+Jos edelliseltä vähennysavaimen jaksolta ei ole jäljellä käyttämätöntä ennustetta, varastotapahtumien määrän saldo vähennetään seuraavan kuukauden ennustemäärästä (jos käyttämätöntä ennustetta on).
+
+Vähennysavainrivien **Prosenttiosuus**-kentän arvoa ei käytetä, kun **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentän asetuksena on *Tapahtumat – vähennysavain*. Vain päivämääriä käytetään vähennysavainjakson määrittämiseen.
+
+> [!NOTE]
+> Kulloisenakin päivämääränä tai sitä ennen kirjattuja ennusteita ei oteta huomioon eikä käytetä suunniteltujen tilausten luomiseen. Jos esimerkiksi kuukauden kysynnän ennuste on luotu 1. tammikuuta ja suoritat pääsuunnittelun, johon kuuluu kysynnän ennuste 2. tammikuuta, laskennassa ei oteta huomioon kysyntäennusteriviä, jonka päivämääränä on 1. tammikuuta.
 
 ##### <a name="example-transactions--reduction-key"></a>Esimerkki: Tapahtumat - vähennysavain
 
 Tämä esimerkki osoittaa, miten vähennysavaimen määrittelemillä jaksoilla toteutuvat tilaukset pienentävät kysynnän ennustetarpeita.
 
-Tässä esimerkissä valitset **Pääsuunnitelmat** -sivun **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Tapahtumat - vähennysavain**.
+[![Toteutuneet tilaukset ja ennuste ennen pääsuunnittelun suorittamista.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-1. tammikuuta mennessä on tehty seuraavat myyntitilaukset.
+Tässä esimerkissä valitset *Pääsuunnitelmat* -sivun **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Tapahtumat - vähennysavain**.
 
-| Kuukausi    | Tilattu kappalemäärä |
-|----------|--------------------------|
-| Tammikuu  | 956                      |
-| Helmikuu | 1 176                    |
-| Maaliskuu    | 451                      |
-| Huhtikuu    | 119                      |
+Seuraavat kysyntäennusterivit ovat olemassa 1. huhtikuuta.
 
-Jos käytät edellisen esimerkin kanssa samaa 1 000 kappaleen kysyntäennustetta kuukaudessa, pääsuunnitelmaan siirretään seuraavat tarvemäärät.
+| Päivämäärä     | Ennustettu kappalemäärä |
+|----------|-----------------------------|
+| Huhtikuun 5.  | 100                         |
+| Huhtikuun 12. | 100                         |
+| Huhtikuun 19. | 100                         |
+| Huhtikuun 26. | 100                         |
+| Toukokuun 3.    | 100                         |
+| Toukokuun 10.   | 100                         |
+| Toukokuun 17.   | 100                         |
 
-| Kuukausi                | Kappaletarve |
-|----------------------|---------------------------|
-| Tammikuu              | 44                        |
-| Helmikuu             | 0                         |
-| Maaliskuu                | 549                       |
-| Huhtikuu                | 881                       |
-| Touko–joulukuu | 1 000                     |
+Seuraavat myyntitilausrivit ovat olemassa huhtikuun osalta.
+
+| Päivämäärä     | Tarvittava kappalemäärä |
+|----------|----------------------------|
+| Huhtikuun 27. | 240                        |
+
+[![Suunniteltu huhtikuun tilausten perusteella muodostettu tarjonta.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Seuraavat tarvemäärät siirretään pääsuunnitelmaan, kun pääsuunnittelu suoritetaan 1. huhtikuuta. Kuten näkyy, huhtikuun ennustetapahtumia vähennettiin kysyntämäärällä 240 sarjassa, joka alkaa ensimmäisestä näistä tapahtumista.
+
+| Päivämäärä     | Kappaletarve |
+|----------|---------------------------|
+| Huhtikuun 5.  | 0                         |
+| Huhtikuun 12. | 0                         |
+| Huhtikuun 19. | 60                        |
+| Huhtikuun 26. | 100                       |
+| Huhtikuun 27. | 240                       |
+| Toukokuun 3.    | 100                       |
+| Toukokuun 10.   | 100                       |
+| Toukokuun 17.   | 100                       |
+
+Oletetaan nyt, että toukokuulle on tuotu uusia tilauksia.
+
+Seuraavat myyntitilausrivit ovat olemassa toukokuun osalta.
+
+| Päivämäärä   | Tarvittava kappalemäärä |
+|--------|----------------------------|
+| Toukokuun 4.  | 80                         |
+| Toukokuun 11. | 130                        |
+
+[![Suunniteltu huhtikuun ja toukokuun tilausten perusteella muodostettu tarjonta.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Seuraavat tarvemäärät siirretään pääsuunnitelmaan, kun pääsuunnittelu suoritetaan 1. huhtikuuta. Kuten näkyy, huhtikuun ennustetapahtumia vähennettiin kysyntämäärällä 240 sarjassa, joka alkaa ensimmäisestä näistä tapahtumista. Toukokuun ennustetapahtumien määrää kuitenkin vähennettiin yhteensä 210:llä alkaen toukokuun ensimmäisestä kysyntäennustetapahtumasta. Jaksokohtainen kokonaissumma kuitenkin säilytetään (400 huhtikuussa ja 300 toukokuussa).
+
+| Päivämäärä     | Kappaletarve |
+|----------|---------------------------|
+| Huhtikuun 5.  | 0                         |
+| Huhtikuun 12. | 0                         |
+| Huhtikuun 19. | 60                        |
+| Huhtikuun 26. | 100                       |
+| Huhtikuun 27. | 240                       |
+| Toukokuun 3.    | 0                         |
+| Toukokuun 4.    | 80                        |
+| Toukokuun 10.   | 0                         |
+| Toukokuun 11.   | 130                       |
+| Toukokuun 17.   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Tapahtumat - dynaaminen kausi
 

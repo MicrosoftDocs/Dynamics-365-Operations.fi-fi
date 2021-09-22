@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: defbcdc7ada4471345f8c728522e15f16a8bec8f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 644eb0d682c35bd604c188aa02e4a6c69b3ff209
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344285"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474985"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Varaston näkyvyyden apuohjelman yleiskatsaus
 
@@ -31,22 +31,20 @@ Varaston näkyvyyssovelluksen on Microsoft Dataverseen perustuva mikrosovellus, 
 
 Varaston näkyvyyssovelluksen voi integroida useisiin kolmannen osapuolen järjestelmiin määrittämällä standardoitujen varastodimensioiden määritysvaihtoehdot ja määrittämällä tapahtumatyypit. Varaston näkyvyyssovellus tukee myös mukautettua laajennettavuutta määritettävien laskennallisten määrien kautta.
 
-## <a name="supported-features"></a>Tuetut ominaisuudet
+## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Varaston näkyvyyssovelluksen ja Dynamics 365 Supply Chain Managementin integrointi
 
-### <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Varaston näkyvyyssovelluksen ja Dynamics 365 Supply Chain Managementin integrointi
+Integroitu ratkaisu noutaa tietoja Dynamics 365 Supply Chain Managementista ja seuraa jatkuvasti varaston muutoksia. Lisätietoja: [Asenna ja määritä varaston näkyvyys](inventory-visibility-setup.md) ja [Määritä varaston näkyvyys](inventory-visibility-configuration.md).
 
-Integroitu ratkaisu noutaa tietoja Dynamics 365 Supply Chain Managementista ja seuraa jatkuvasti varaston muutoksia. Lisätietoja on kohdassa [Varaston näkyvyyden apuohjelman määrittäminen](inventory-visibility-setup.md).
+## <a name="get-a-global-view-of-inventory"></a>Varaston yleisen näkymän hakeminen
 
-### <a name="get-a-global-view-of-inventory"></a>Varaston yleisen näkymän hakeminen
-
-Integroidun ratkaisun avulla voidaan määrittää omat tietolähteet ja keskittää varastotiedot. Lisätietoja on kohdassa [Varaston näkyvyyden määritykset](inventory-visibility-configuration.md).
+Integroidun ratkaisun avulla voidaan määrittää omat tietolähteet ja keskittää varastotiedot. Lisätietoja: [Varaston näkyvyyden määritys](inventory-visibility-configuration.md).
 
 Varastoa voi tarkastella kahdella tavalla:
 
 - Kyselyn lähettäminen tehokkaan ohjelmointirajapinnan avulla. Tämä ohjelmointirajapinta voi palauttaa lähes reaaliaikaiset varastotiedot suoraan välimuistiin tallennetusta esiintymästä. Sopimuksia ja esimerkkejä on kohdassa [Varaston näkyvyyden julkiset ohjelmointirajapinnat](inventory-visibility-api.md).
 - Varastosaldoluettelon raakatietojen tarkasteleminen. Tämä luettelo synkronoidaan säännöllisesti välimuistiin tallennetusta esiintymistä ja näkyy Dataversessa. Lisätietoja on kohdassa [Varaston näkyvyyssovellus](inventory-visibility-power-platform.md).
 
-### <a name="soft-reservations"></a>Alustavat varaukset
+## <a name="soft-reservations"></a>Alustavat varaukset
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

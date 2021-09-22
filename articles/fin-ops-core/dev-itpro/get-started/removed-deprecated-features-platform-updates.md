@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7bd5a64553afa04517633ed03d8bbd6077208c0b511d8fa131dc9a2849998708
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774406"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463617"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -32,7 +32,29 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
 
-## <a name="feature-deprecation-notice-effective-may-2021"></a>Ominaisuuksien poistoilmoitus, voimassa toukokuussa 2021
+## <a name="feature-deprecation-effective-august-2021"></a>Elokuussa 2021 poistettavat ominaisuudet
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azuren SQL-raportit Lifecycle Servicesissä (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Osa SQL-raporteista poistetaan käytöstä LCS:ssä. Näitä raportteja ei enää tarvitse seurata, koska tämä ominaisuus on korvattu muilla palveluilla. |
+| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Tuotealueet, joihin vaikutetaan**         | SQL-raportit: Nykyinen DTU, Nykyisen DTU:n tiedot, Nouda lukituksen tiedot, Nykyisen suunnitteluoppaan luettelo, Nouda kyselytunnusten luettelo, Nouda tietyn suunnitelmatunnuksen SQL-kyselysuunnitelma, Nouda kyselysuunnitelmat ja suoritustila, Nouda rajoitusmääritys, Nouda odotustilastot, Luetteloi kalleimmat kyselyt |
+| **Käytön asetukset**              | Pilvikäyttöönotto: vaikuttaa Microsoftin hallitsemiin tuotantoympäristöihin ja tason 2–5 eristysympäristöihin. |
+| **Tila**                         | Vanhentunut: suunniteltu poistopäivä lokakuussa 2021. |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL -toiminnot LCS:ssä
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Osa SQL-toiminnoista poistetaan käytöstä LCS:ssä.  |
+| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Tuotealueet, joihin vaikutetaan**         | SQL-toiminnot: Luo suunnitelmaopas suunnitelmatunnuksen pakottamiselle, Luo suunnitelmaopas taulukkovinkkien lisäämiselle, Poista suunnitteluopas, Poista käytöstä / ota käyttöön sivulukitukset ja lukitusten eskalointi, Päivitä taulukon tilastot, Muodosta indeksi uudelleen, Luo indeksi |
+| **Käytön asetukset**              | Pilvikäyttöönotto: vaikuttaa Microsoftin hallitsemiin tuotantoympäristöihin ja tason 2–5 eristysympäristöihin. |
+| **Tila**                         | Vanhentunut: suunniteltu poistopäivä lokakuussa 2021. |
+
+## <a name="feature-deprecation-effective-may-2021"></a>Toukokuussa 2021 poistettavat ominaisuudet
 
 ### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Lifecycle Services (LCS) -globalisoinnin portaali
 

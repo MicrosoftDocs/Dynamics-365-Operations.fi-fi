@@ -1,5 +1,5 @@
 ---
-title: Varaston näkyvyyden apuohjelman määrittäminen
+title: Varaston näkyvyyden lisäapuohjelman asentaminen
 description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelman asentamista.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8573fe01abb1c6092012baf85e8b7df40b74a31f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343581"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474817"
 ---
-# <a name="set-up-inventory-visibility"></a>Varaston näkyvyyden apuohjelman määrittäminen
+# <a name="install-and-set-up-inventory-visibility"></a>Varaston näkyvyyden asennus ja määritys
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -41,7 +41,7 @@ Seuraavat tehtävät on tehtävä ennen varaston näkyvyyden apuohjelman asentam
     - `Inventory Visibility Integration.zip` (jos käynnissä ollut Supply Chain Managementin versio on aiempi kuin 10.0.18)
 
 > [!NOTE]
-> Tällä hetkellä tuettuja maita ja alueita ovat esimerkiksi Kanada (CCA, ECA), Yhdysvallat (WUS, EUS), Euroopan unioni (NEU, WEU), Yhdistyneet kuningaskunnat (SUK, WUK) ja Australia (EAU, SEAU).
+> Tällä hetkellä tuettuja maita ja alueita ovat esimerkiksi Kanada (CCA, ECA), Yhdysvallat (WUS, EUS), Euroopan unioni (NEU, WEU), Yhdistyneet kuningaskunnat (SUK, WUK), Australia (EAU, SEAU), Japani (EJP, WJP) ja Brasilia (SBR, SCUS).
 
 Näitä edellytyksiä koskevia kysymyksiä voi esittää varaston näkyvyyden tuotetiimille.
 
@@ -119,6 +119,9 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 1. Hyväksy käyttöehdot valitsemalla **Käyttöehdot**-valintaruutu.
 1. Valitse **Asenna**. Apuohjelman tilana näkyy nyt **Asennetaan**. Kun asennus on valmis, päivitä sivu. Tilan pitäisi olla nyt **Asennettu**.
 
+> [!IMPORTANT]
+> Jos sinulla on useita LCS-ympäristöjä, luo kullekin ympäristölle erilainen Azure AD -sovellus. Jos käytät samaa sovellustunnusta ja vuokraajatunnusta varaston näkyvyyden lisäosan asentamisessa eri ympäristöihin, vanhemmissa ympäristöissä ilmenee tunnusongelma. Vain viimeinen asennus on kelvollinen.
+
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Varaston näkyvyyden apuohjelman asennuksen poistaminen
 
 Varaston näkyvyyden apuohjelma poistetaan valitsemalla **Poista asennus** LCS-sivulla. Asennuksen poistoprosessi lopettaa varaston näkyvyyden apuohjelman, poistaa apuohjelman rekisteröinnin LCS:stä ja poista mahdolliset varaston näkyvyyden apuohjelman tietojen välimuistiin tallennetut tilapäiset tiedot. Dataverse-tilaukseen tallennettuja ensisijaisia varastotietoja ei kuitenkaan poisteta.
@@ -133,7 +136,7 @@ Dataverse-tilaukseen tallennettujen varastotietojen asennus poistetaan avaamalla
 
 Kun nämä ratkaisut on poistettu, myös taulukoihin tallennetut tiedot poistetaan.
 
-## <a name="set-up-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Supply Chain Managementin määritys
+## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Varaston näkyvyyden määritys Supply Chain Managementissa
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Varaston näkyvyyden integrointipaketin käyttöönotto
 
@@ -153,8 +156,23 @@ Varmista, että seuraavat ominaisuudet on otettu käyttöön Supply Chain Manage
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Määritä Varaston näkyvyyden integrointi
 
-1. Avaa Supply Chain Managementissa **[Ominaisuuden hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -työtila ja ota käyttöön *Varaston näkyvyyden integraatio* -ominaisuus.
-1. Siirry kohtaan **Varastonhallinta \> Määritys \> Varaston näkyvyyden integraation parametrit** ja kirjoita sen ympäristön URL-osoite, jossa varaston näkyvyys on käytössä. Lisätietoja on kohdassa [Palvelun päätepisteen etsiminen](inventory-visibility-power-platform.md#get-service-endpoint).
+Kun olet asentanut lisäosan, valmistele Supply Chain Management -järjestelmäsi toimimaan sen kanssa noudattamalla seuraavia ohjeita.
+
+1. Avaa Supply Chain Managementissa **[Ominaisuuden hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -työtila ja ota seuraavat ominaisuudet käyttöön:
+    - *Varaston näkyvyyden integrointi* – Vaaditaan.
+    - *Varaston näkyvyyden integrointi varauksen vastakirjauksella* – Suositeltava mutta valinnainen. Vaatii version 10.0.22 tai sitä uudemman. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md).
+
+1. Valitse **Varastonhallinta \> Määritys \> Varaston näkyvyyden integroinnin parametrit**.
+1. Avaa **Yleistä**-välilehti ja määritä seuraavat asetukset:
+    - **Varaston näkyvyyden päätepiste** – Anna sen ympäristön URL-osoite, jossa suoritat varaston näkyvyyden. Lisätietoja on kohdassa [Palvelun päätepisteen etsiminen](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Yksittäisen pyynnön tietueiden enimmäismäärä** – Määritä yhteen pyyntöön sisällytettävien tietueiden enimmäismäärä. Sinun on annettava positiivinen kokonaisluku, joka on enintään 1 000. Oletusarvo on 512. On erittäin suositeltavaa pitää oletusarvo voimassa, ellei Microsoftin tuki ole muuta neuvonut tai ellet ole muuten varma, että sinun on muutettava sitä.
+
+1. Jos olet ottanut valinnaisen *Varaston näkyvyyden integrointi varauksen vastakirjauksella* -ominaisuuden, avaa **Varauksen vastakirjaus** -välilehti ja määritä seuraavat asetukset:
+    - **Ota varauksen vastakirjaus käyttöön** – Voit ottaa tämän toiminnon käyttöön asettamalla arvoksi *Kyllä*.
+    - **Varauksen vastakirjauksen muuttuja** – Valitse varaston tapahtumatila, joka vastakirjaa varaston näkyvyydessä tehdyt varaukset. Tämä asetus määrittää tilauksen käsittelytilan, joka käynnistää vastakirjaukset. Vaihetta seurataan tilauksen varastotapahtuman tilan perusteella. Valitse yksi seuraavista:
+        - *Tilauksessa* – kun tilana on *Tapahtumassa*, tilaus lähettää vastakirjauspyynnön, kun se luodaan. Vastakirjauksen määrä on luodun tilauksen määrä.
+        - *Varaus* – Kun tilana on *Varaa tilattu tapahtuma*, tilaus lähettää vastakirjauspyynnön, kun tilaus varataan tai poimitaan, kun sen pakkausluettelo kirjataan tai kun se laskutetaan. Pyyntö käynnistetään vain kerran ensimmäisessä vaiheessa, kun mainittu prosessi tapahtuu. Vastakirjauksen määrä on määrä, jossa varastotapahtuman tila muuttui tilasta *Tilauksessa* tilaan *Tilaukseen varattu* (tai myöhempään tilaan) kulloisellakin tilausrivillä.
+
 1. Valitse **Varastonhallinta \> Kausittainen \> Varaston näkyvyyden integraatio** ja ota työ käyttöön. Kaikki Supply Chain Managementin varastomuutostapahtumat kirjataan nyt varaston näkyvyyteen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

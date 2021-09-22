@@ -1,8 +1,8 @@
 ---
 title: Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä
-description: Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
+description: Tässä ohjeaiheessa annetaan ohjeita Azure Data Lake Storage Gen 2 -ratkaisun yhdistämiseen Dynamics 365 Commerce -ympäristön yksikkösäilöön. Tämä on pakollinen vaihe ennen tuotesuositusten käyttöönottoa.
 author: bebeale
-ms.date: 04/13/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,42 +16,41 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8ec56a260501c0d33145c23cb9656446bc871f7c448bbbf33330ad591c506e49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775359"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466289"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Azure Data Lake Storagen käyttöönotto Dynamics 365 Commerce -ympäristössä
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
+Tässä ohjeaiheessa annetaan ohjeita Azure Data Lake Storage Gen 2 -ratkaisun yhdistämiseen Dynamics 365 Commerce -ympäristön yksikkösäilöön. Tämä on pakollinen vaihe ennen tuotesuositusten käyttöönottoa.
 
-Dynamics 365 Commerce -ratkaisussa kaikkia tuote- ja tapahtumatietoja seurataan ympäristön yksikkösäilöön. Näiden tietojen muiden Dynamics 365:n palvelujen, kuten tietojen analytiikan, yritystietojen ja mukautettujen suositusten, käyttöön asettamista varten ympäristö on yhdistettävä asiakkaan omistamaan toisen sukupolven Azure Data Lake Storage Gen 2 -ratkaisuun.
+Dynamics 365 Commerce -ratkaisussa suositusten, tuotteiden ja tapahtumien käsittelyyn tarvittavat tiedot koostetaan ympäristön yksikkösäilössä. Näiden tietojen muiden Dynamics 365:n palvelujen, kuten tietojen analytiikan, yritystietojen ja mukautettujen suositusten, käyttöön asettamista varten ympäristö on yhdistettävä asiakkaan omistamaan toisen sukupolven Azure Data Lake Storage Gen 2 -ratkaisuun.
 
-Koska Azure Data Lake Storage on määritetty ympäristössä, kaikki tarvittavat tiedot peilataan yksikkösäilöstä samalla, kun ne ovat edelleen suojattuja ja asiakkaan valvonnassa.
+Kun edellä mainitut vaiheet on suoritettu, kaikki ympäristön yksikkösäilön asiakastiedot peilataan automaattisesti asiakkaan Azure Data Lake Storage Gen 2 -ratkaisuun. Kun suositusominaisuudet on otettu käyttöön Commerce-pääkonttorin ominaisuuksienhallinnan työtilassa, suosituspinolle annetaan käyttöoikeus samaan Azure Data Lake Storage Gen 2 -ratkaisuun.
 
-Jos myös tuotesuositukset tai mukautetut suositukset ovat käytössä ympäristössä, tuotesuositusten pinolle myönnetään käyttöoikeus Azure Data Lake Storagen varattuun kansioon asiakastietojen noutamista ja niihin perustuvien suositusten laskemista varten.
+Asiakastiedot pysyvät koko prosessin ajan suojattuna ja asiakkaiden hallinnassa.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Asiakkailla on oltava Azure Data Lake Storage määritettynä omistamassaan Azure-tilauksessa. Tässä ohjeaiheessa ei käsitellä Azure-tilauksen hankkimista eikä Azure Data Lake Storage -yhteensopivan säilötilin määrittämistä.
+Dynamics 365 Commerce -ympäristön yksikkösäilön on oltava yhdistettynä Azure Data Lake Gen Storage Gen2 -tiliin ja siihen liittyviin palveluihin.
 
-Lisätietoja Azure Data Lake Storagesta on kohdassa [Azure Data Lake Storage Gen2:n virallinen dokumentaatio](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Lisätietoja Azure Data Lake Storage Gen 2:sta ja sen määrityksestä: [Azure Data Lake Storage Gen 2:n virallinen dokumentaatio](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Määritysvaiheet
 
-Tämä osa sisältää määritysvaiheet, jotka ovat tarpeen, jotta Azure Data Lake Storage voidaan ottaa käyttöön ympäristössä, joka liittyy tuotesuosituksiin.
-Lisätietoja Azure Data Lake Storage -lisäosan käyttöön tarvittavista vaiheista on ohjeaiheessa [Määritä yksikkösäilö käytettäväksi Data Lakessa](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+Tämä osa sisältää määritysvaiheet, jotka ovat tarpeen, jotta Azure Data Lake Storage Gen 2 voidaan ottaa käyttöön ympäristössä, joka liittyy tuotesuosituksiin.
+Lisätietoja Azure Data Lake Storage Gen 2 -lisäosan käyttöön tarvittavista vaiheista on ohjeaiheessa [Määritä yksikkösäilö käytettäväksi Data Lakessa](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Azure Data Lake Storagen käyttöönotto ympäristössä
 
 1. Kirjaudu ympäristön taustajärjestelmäportaaliin.
 1. Etsi **Järjestelmäparametrit** ja siirry **Tietoyhteydet**-välilehteen. 
 1. Määritä **Ota Data Lake -integrointi käyttöön** -parametrin arvoksi **Kyllä**.
-1. Määritä **Data Laken vähittäinen päivitys** -parametrin arvoksi **Kyllä**.
 1. Syötä sitten seuraavat vaaditut tiedot:
     1. **Sovellustunnus** // **Sovelluksen salauskoodi** // **DNS-nimi** – Tarvitaan siihen KeyVault-säilöön yhdistämistä varten, johon Azure Data Lake Storage -salauskoodi on tallennettu.
     1. **Salainen nimi** – KeyVaultiin tallennettu ja Azure Data Lake Storage -todennukseen käytetty salainen nimi.
@@ -67,7 +66,7 @@ Seuraavassa kuvassa näkyy esimerkki Azure Data Lake Storage -määrityksessä.
 1. Testaa yhteys Azure Data Lake Storageen käyttämällä **Testaa Azure-tallennustila** -linkin avulla.
 
 > [!NOTE]
-> Jos testit epäonnistuvat, tarkista uudelleen, että kaikki edellä lisätyt KeyVault-tiedot ovat oikein. Kokeile sen jälkeen uudelleen.
+> Jos toinen edellä mainituista testeistä epäonnistuu, varmista, että kaikki edellä lisätyt KeyVault-tiedot ovat oikein. Kokeile sen jälkeen uudelleen.
 
 Kun kaikki yhteystestit ovat onnistuneet, sinun on otettava yksikkötallennustilan automaattinen päivitys käyttöön.
 

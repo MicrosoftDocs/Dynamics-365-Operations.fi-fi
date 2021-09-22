@@ -10,18 +10,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 57eda6a833df6ff8e91c006bbc5096554eff6c503a8b7ba2bd0b13e2f8e98f56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e2133263f4bee09a3365236601e0d2fdd08a7ae
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766144"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471833"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Muuttujan muodostaminen suunnittelutuotteita varten
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan, miten muuttuja luodaan suunnittelutuotteita varten.
+
+## <a name="turn-on-variant-generation-for-engineering-products"></a>Ota suunnittelutuotteiden muuttujien muodostaminen käyttöön
+
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+
+- **Moduuli:** *Suunnittelun muutostenhallinta*
+- **Ominaisuuden nimi:** *Suunnittelutuotteiden muuttujien muodostus*
+
+> [!IMPORTANT]
+> *Suunnittelutuotteiden muuttujien muodostus* -ominaisuus tulee näkyviin järjestelmässä vasta, kun *Suunnittelun muutostenhallinta* -määritysavain on otettu käyttöön. Ohjeet: [Suunnittelun muutostenhallinnan yleiskatsaus](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Suunnittelutuotteen yhden tai useamman uuden muuttujan muodostaminen
 
@@ -38,10 +49,15 @@ Seuraavassa on esimerkki siitä, miten voit luoda useita eri versioita, jotka si
 1. Lisää muuttujaan tuoterakenne ja reititys tarpeen mukaan.
 1. Avaa sitten toimintoruudun **Tuote**-välilehti ja valitse **Päätuote**-ryhmästä **Tuotedimensiot**.
 1. **Tuotedimensiot** -sivu avautuu. Sivulla on välilehti jokaista käytettävissä olevaa dimensiota kohti. Lisää kuhunkin välilehteen rivi jokaista arvoa varten, joka tukee kutakin asiaankuuluvaa dimensiota. (Tässä esimerkissä voit lisätä **Väri**-välilehdelle rivit *Valkoinen*, *Keltainen* ja *Vihreä*).
-1. Sulje sivu ja valitse **Vapautetut tuotemuuttujat**. Huomaa, että ensimmäinen luotu muuttuja (white V-1) tulee näkyviin.
-1. Valitse **Muuttujat-ehdotukset**.
-1. Järjestelmä ehdottaa muuttujia, joilla on luodut väriarvot (esimerkiksi white V-1, keltainen V-1 ja vihreä V-1).
-1. Valitse ehdotetut muuttujat ja valitse **OK**, jos haluat vapauttaa muuttujat suunnitteluyritystä varten. Huomaa, että seuraavat ehdot täyttyvät: 
+1. Sulje sivu ja valitse sitten **Vapautetut tuotemuuttujat**. Ota huomioon, että näkyviin tulee ensimmäinen luotu muuttuja (sininen V-1).
+1. Valitse toimintoruudun **Tuotevariantti**-välilehdessä **Varianttiehdotukset**.
+1. Noudata **Varianttiehdotukset**-valintaikkunassa yhtä seuraavista ohjeista:
+
+    - Valintaikkunan yläreunassa on osio kullekin käytettävissä olevalle dimensiolle. Valitse kullekin dimensiolle valintaruutu jokaiselle arvolle, jolle haluat luoda varianttiehdotuksen ja valitse sitten työkalupalkista **Ehdota**. Asiaankuuluvat ehdotukset lisätään **Ehdotetut variantit** -osioon.
+    - Valitse työkaluriviltä **Ehdota kaikkia**, kun haluat luoda varianttiehdotuksia kaikille käytettävissä oleville dimensioarvojen yhdistelmille. Ehdotukset lisätään **Ehdotetut variantit** -osioon.
+
+1. Valitse **Ehdotetut variantit** -osassa kunkin luotavan variantin valintaruutu. Muodosta ja vapauta valitut variantit suunnitteluyritykselle valitsemalla **Luo**. Seuraavat ehdot pätevät:
+
     - Millään luoduilla muuttujavaihtoehdoilla ei ole tuoterakennetta tai reititystä.
     - Näiden muuttujien määritteet ovat oletusarvona suunnitteluluokasta, eikä niitä kopioida edellisestä versiosta.
 

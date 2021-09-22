@@ -2,7 +2,7 @@
 title: Kysynnän ennusteiden asetukset
 description: Tässä ohjeaiheessa kuvataan asetustehtävät, jotka sinun on suoritettava kysynnän ennusteita valmistellessasi.
 author: roxanadiaconu
-ms.date: 01/07/2020
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f282d26f4b2f607cf5f16cdf3dee4ad2c6b9c203973135f75db3f652fdd81c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fec20130a1621d4cb55394db75a7ac0a16fdf3
+ms.sourcegitcommit: 4fbf031319109660c0462a800f85848571eb040d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746205"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7471332"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
@@ -31,73 +31,84 @@ Tässä ohjeaiheessa kuvataan asetustehtävät, jotka sinun on suoritettava kysy
 
 Määritystehtäviin kuuluu seuraavien tietojen ja parametrien asettaminen:
 
-## <a name="item-allocation-key"></a>Nimikkeenkohdistustunnus
-Kysynnän ennuste lasketaan nimikkeelle ja sen dimensioille vain, jos nimike on nimikkeen kohdistustunnuksen osa. Tätä sääntöä käytetään suurten nimikejoukkojen ryhmittämiseen niin, että kysynnän ennusteita voidaan luoda nopeammin. Nimikkeen kohdistustunnuksen prosenttiosuus ohitetaan kysynnän ennusteita luotaessa. Ennusteet luodaan pelkästään historiallisten tietojen perusteella. 
+## <a name="item-allocation-keys"></a>Nimikkeenkohdistustunnukset
 
-Nimikkeen ja sen dimensioiden on oltava osa vain yhtä nimikkeen kohdistustunnusta, jos tätä nimikkeen kohdistustunnusta käytetään ennusteen luonnin aikana. 
+Kysynnän ennuste lasketaan nimikkeelle ja sen dimensioille vain, jos nimike on nimikkeen kohdistustunnuksen osa. Tätä sääntöä käytetään suurten nimikejoukkojen ryhmittämiseen niin, että kysynnän ennusteita voidaan luoda nopeammin. Nimikkeen kohdistustunnuksen prosenttiosuus ohitetaan kysynnän ennusteita luotaessa. Ennusteet luodaan pelkästään historiallisten tietojen perusteella.
 
-Varastointiyksikkö (SKU) lisätään nimikkeen kohdistustunnukselle kohdassa **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Nimikkeen kohdistustunnukset**. Määritä nimike kohdistustunnukselle **Määritä nimikkeet** -sivulla.
+Nimikkeen ja sen dimensioiden on oltava osa vain yhtä nimikkeen kohdistustunnusta, jos tätä nimikkeen kohdistustunnusta käytetään ennusteen luonnin aikana.
+
+Varastointiyksikkö (SKU) lisätään nimikkeen kohdistustunnukselle kohdassa **Pääsuunnittelu \> Asetukset \> Kysynnän ennuste \> Nimikkeen kohdistustunnukset**. Määritä nimike kohdistustunnukselle **Määritä nimikkeet** -sivulla.
 
 ## <a name="intercompany-planning-groups"></a>Konsernin sisäiset suunnitteluryhmät
-Kysynnän ennusteet luovat kaikki yritykset kattavia ennusteita. Dynamics 365 Supply Chain Managementissa yritykset, joiden suunnittelu suoritetaan yhdessä, ryhmitetään yhdeksi konsernin sisäiseksi suunnitteluryhmäksi. Määritelläksesi yrityskohtaisesti mitkä nimikkeen kohdistustunnukset tulisi ottaa huomioon kysynnän ennusteissa, liitä nimikkeen kohdistustunnus konsernin suunnitteluryhmän jäseneen menemällä kohtaan **Pääsuunnittelu** &gt; **Asetukset** &gt; **Konsernin sisäiset suunnitteluryhmät**. 
 
-Jos nimikkeen kohdistustunnuksia ei ole määritetty konsernin sisäisen suunnitteluryhmän jäsenille, kysynnän ennuste lasketaan oletusarvoisesti kaikille niille nimikkeille, jotka on määritetty kaikkiin nimikkeen kohdistustunnuksiin kaikista yrityksistä. Lisäsuodatusvaihtoehtoja yrityksille ja nimikkeen kohdistustunnuksille löytyy **Luo tilastollinen perusennuste** -sivulta. 
+Kysynnän ennusteet luovat kaikki yritykset kattavia ennusteita. Dynamics 365 Supply Chain Managementissa yritykset, joiden suunnittelu suoritetaan yhdessä, ryhmitetään yhdeksi konsernin sisäiseksi suunnitteluryhmäksi. Määritelläksesi yrityskohtaisesti mitkä nimikkeen kohdistustunnukset tulisi ottaa huomioon kysynnän ennusteissa, liitä nimikkeen kohdistustunnus konsernin suunnitteluryhmän jäseneen menemällä kohtaan **Pääsuunnittelu \> Asetukset \> Konsernin sisäiset suunnitteluryhmät**.
+
+Jos nimikkeen kohdistustunnuksia ei ole määritetty konsernin sisäisen suunnitteluryhmän jäsenille, kysynnän ennuste lasketaan oletusarvoisesti kaikille niille nimikkeille, jotka on määritetty kaikkiin nimikkeen kohdistustunnuksiin kaikista yrityksistä. Lisäsuodatusvaihtoehtoja yrityksille ja nimikkeen kohdistustunnuksille löytyy **Luo tilastollinen perusennuste** -sivulta.
 
 Tarkista nimikkeiden ennustettu lukumäärä. Tarpeettomat nimikkeet saattavat aiheuttaa lisäkustannuksia käyttäessäsi Microsoft Azure automaattianalyysipalvelua.
 
 ## <a name="demand-forecasting-parameters"></a>Kysynnän ennusteen parametrit
-Määritä kysynnän ennusteen parametrit kohdassa **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennusteen parametrit**. Koska kysynnän ennusteet suoritetaan kaikki yritykset kattavasti, asetukset yleiset. Asetukset koskevat toisin sanoen kaikkia yrityksiä. 
 
-Kysynnän ennusteet luovat ennusteet lukumäärinä. Näin ollen mittayksikkö, jossa määrä ilmaistaan, on määritettävä **Kysynnän ennusteen yksikkö** -kentässä. Mittayksikön on oltava yksilöivä sen varmistamiseksi, että kooste ja prosenttijakauma ovat järkevät. Lisätietoja koosteesta ja prosenttijakaumasta on kohdassa [Manuaalisten muutosten tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md). Varmista, että jokaiselle mittayksikölle, jota käytetään kysynnän ennusteeseen sisältyvälle varastointiyksikölle, on muuntosääntö kyseiselle mittayksikölle ja yleinen ennusteen mittayksikkö. Kysynnän ennustetta luotaessa niiden nimikkeiden luettelo, joilla ei ole mittayksikön muuntoa, kirjataan niin, että voit helposti korjata asetukset. 
+Määritä kysynnän ennusteen parametrit kohdassa **Pääsuunnittelu \> Asetukset \> \> Kysynnän ennuste \> Kysynnän ennusteen parametrit**. Koska kysynnän ennusteet suoritetaan kaikki yritykset kattavasti, asetukset yleiset. Tämä tarkoittaa, että asetukset koskevat kaikkia yrityksiä.
 
-Kysynnän ennusteita voidaan käyttää ennustamaan sekä riippuvaista että riippumatonta kysyntää. Jos esimerkiksi vain **Myyntitilaus**-valintaruutu on valittuna ja jos kaikki kysynnän ennusteessa huomioitavat nimikkeet ovat myytäviä nimikkeitä, järjestelmä laskee riippumattoman kysynnän. Tärkeitä alikomponentteja voidaan kuitenkin lisätä nimikkeen kohdistustunnuksille ja sisällyttää kysynnän ennusteisiin. Tässä tapauksessa, jos **Tuotantolinja**-valintaruutu on valittuna, lasketaan riippuvainen ennuste. 
+Kysynnän ennusteet luovat ennusteet lukumäärinä. Näin ollen mittayksikkö, jossa määrä ilmaistaan, on määritettävä **Kysynnän ennusteen yksikkö** -kentässä. Mittayksikön on oltava yksilöivä sen varmistamiseksi, että kooste ja prosenttijakauma ovat järkevät. Lisätietoja koosteesta ja prosenttijakaumasta on kohdassa [Manuaalisten muutosten tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md). Varmista, että jokaiselle mittayksikölle, jota käytetään kysynnän ennusteeseen sisältyvälle varastointiyksikölle, on muuntosääntö kyseiselle mittayksikölle ja yleinen ennusteen mittayksikkö. Kysynnän ennustetta luotaessa niiden nimikkeiden luettelo, joilla ei ole mittayksikön muuntoa, kirjataan niin, että voit helposti korjata asetukset.
 
-Perusennuste voidaan luoda kahdella tavalla. Voit käyttää ennustemalleja historiallisten tietojen päällä, tai voit vain kopioida historialliset tiedot ennusteeseen. **Kysynnän luontistrategia** -kentässä voit tehdä valinnan näiden kahden menetelmän välillä. Käytä ennustemalleja valitsemalla **Azuren automaattianalyysipalvelu**. 
+Kysynnän ennusteita voidaan käyttää ennustamaan sekä riippuvaista että riippumatonta kysyntää. Jos esimerkiksi vain **Myyntitilaus**-valintaruutu on valittuna ja jos kaikki kysynnän ennusteessa huomioitavat nimikkeet ovat myytäviä nimikkeitä, järjestelmä laskee riippumattoman kysynnän. Tärkeitä alikomponentteja voidaan kuitenkin lisätä nimikkeen kohdistustunnuksille ja sisällyttää kysynnän ennusteisiin. Tässä tapauksessa, jos **Tuotantolinja**-valintaruutu on valittuna, lasketaan riippuvainen ennuste.
 
-Napsauttamalla **Ennustedimensiot** sivun **Kysynnän ennusteen parametrit** vasemmassa ruudussa, voit myös valita kysynnän ennusteen luonnissa käytettävän ennustedimensioiden joukon. Ennustedimensio osoittaa ennusteelle määritetyn erittelytason. Yritys, toimipaikka ja nimikkeen kohdistustunnus ovat pakollisia ennustedimensioita, mutta voit myös luoda ennusteita varastossa, varaston tilan, asiakasryhmän, asiakastilin, maan/alueen, osavaltion ja nimikkeen sekä kaikkien nimikedimensioiden tasoilla. 
+Perusennuste voidaan luoda kahdella tavalla. Voit käyttää ennustemalleja historiallisten tietojen päällä, tai voit vain kopioida historialliset tiedot ennusteeseen. **Kysynnän luontistrategia** -kentässä voit tehdä valinnan näiden kahden menetelmän välillä. Käytä ennustemalleja valitsemalla **Azuren automaattianalyysipalvelu**.
 
-Voit missä tahansa vaiheessa lisätä ennustedimensioita kysynnän ennusteissa käytettävien dimensioiden luetteloon. Voit myös poistaa ennustedimensioita luettelosta. Manuaaliset muutokset kuitenkin menetetään, jos lisäät tai poistat ennustedimension. 
+Valitsemalla **Ennustedimensiot** sivun **Kysynnän ennusteen parametrit** vasemmassa ruudussa, voit myös valita kysynnän ennusteen luonnissa käytettävän ennustedimensioiden joukon. Ennustedimensio osoittaa ennusteelle määritetyn erittelytason. Yritys, toimipaikka ja nimikkeen kohdistustunnus ovat vaadittavia ennustedimensioita, mutta voit myös luoda ennusteita varastossa, varaston tilan, asiakasryhmän, asiakastilin, maan/alueen, osavaltion ja nimikkeen sekä kaikkien nimikedimensioiden tasoilla.
 
-Kaikki nimikkeet eivät toimi samalla tavalla kysynnän ennusteiden näkökulmasta. Samanlaisia nimikkeitä voidaan ryhmittää yhteen nimikkeen kohdistustunnukseen ja tapahtumatyypin ja ennustemenetelmän asetusten kaltaisille parametreille voidaan määrittää asetuksia nimikkeen kohdistustunnuskohtaisesti. Valitse **Kysynnän ennusteen parametrit** -sivun vasemmanpuoleisesta ruudusta **Nimikkeen kohdistustunnukset**. 
+Voit missä tahansa vaiheessa lisätä ennustedimensioita kysynnän ennusteissa käytettävien dimensioiden luetteloon. Voit myös poistaa ennustedimensioita luettelosta. Manuaaliset muutokset kuitenkin menetetään, jos lisäät tai poistat ennustedimension.
 
-Supply Chain Management käyttää automaattianalyysipalveluiden verkkopalvelua ennusteen luomiseen. Muodosta yhteys palveluun antamalla seuraavat tiedot Microsoft Azuren automaattianalyysistudioon kirjautumista varten (perinteinen):
+Kaikki nimikkeet eivät toimi samalla tavalla kysynnän ennusteiden näkökulmasta. Samanlaisia nimikkeitä voidaan ryhmittää yhteen nimikkeen kohdistustunnukseen ja tapahtumatyypin ja ennustemenetelmän asetusten kaltaisille parametreille voidaan määrittää asetuksia nimikkeen kohdistustunnuskohtaisesti. Valitse **Kysynnän ennusteen parametrit** -sivun vasemmanpuoleisesta ruudusta **Nimikkeen kohdistustunnukset**.
 
--   Verkkopalvelun ohjelmointirajapinta- (API)-avain
--   Verkkopalvelun päätepisteen URL-osoite
--   Azuren tallennustilin nimi
--   Azuren tallennustilin avain
+Supply Chain Management käyttää koneoppimisen verkkopalvelua ennusteen luomiseen. Muodosta yhteys palveluun antamalla seuraavat tiedot Microsoft Azuren automaattianalyysistudioon kirjautumista varten (perinteinen):
+
+- Verkkopalvelun ohjelmointirajapinta- (API)-avain
+- Verkkopalvelun päätepisteen URL-osoite
+- Azuren tallennustilin nimi
+- Azuren tallennustilin avain
 
 > [!NOTE]
-> Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysi voi käyttää historiallisia tietoja. 
+> Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysi voi käyttää historiallisia tietoja.
 
-Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysistudion tai Supply Chain Managementin kysynnän ennusteiden luomisen kokeilujen avulla. Supply Chain Managementissa on ohjeita kysynnän ennusteiden luomiskokeilujen käyttöönottamisesta verkkopalveluna. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
+Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysistudion tai Supply Chain Managementin kysynnän ennusteiden luomisen kokeilujen avulla. Supply Chain Managementissa on ohjeita kysynnän ennusteiden luomiskokeilujen käyttöönottamisesta verkkopalveluna. Avaa **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Kysynnän ennusteiden automaattianalyysipalveluiden asetukset
-Jos haluat tarkastella parametreja, jotka voidaan määrittää kysynnän ennustepalvelulle, valitse **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Ennustealgoritmin parametrit**. **Ennustealgoritmin parametrit** sivu näyttää parametrien oletusarvot. Voit korvata nämä parametrit **Kysynnän ennusteen parametrit** -sivulla. Korvaa parametrit yleisesti **Yleinen** -välilehdessä, tai nimikkeen kohdistustunnuskohtaisesti **Nimikkeen kohdistustunnus** -välilehdessä. Nimikkeen kohdistustunnuksella korvattavat parametrit vaikuttavat vain kyseiseen nimikkeen kohdistustunnukseen määritettyjen nimikkeiden ennusteisiin.
+
+Jos haluat tarkastella parametreja, jotka voidaan määrittää kysynnän ennustepalvelulle, valitse **Pääsuunnittelu \> Asetukset \> Kysynnän ennuste \> Ennustealgoritmin parametrit**. **Ennustealgoritmin oletusparametrit** sivu näyttää parametrien oletusarvot. Voit korvata nämä parametrit siirtymällä kohtaan **Pääsuunnittelu \> Määritys \> Kysynnän ennuste \> Kysynnän ennusteen parametrit**, jossa voit tehdä seuraavaa:
+
+- Käyttää **Yleistä**-välilehteä parametrien yleiseen korvaamiseen.
+- Käyttää **Nimikkeenkohdistusavaimet**-välilehteä parametrien korvaamiseksi nimikkeenkohdennusavainta kohden. Nimikkeen kohdistustunnuksella korvattavat parametrit vaikuttavat vain kyseiseen nimikkeen kohdistustunnukseen määritettyjen nimikkeiden ennusteisiin.
 
 ### <a name="forecast-algorithm-parameters"></a>Ennustealgoritmin parametrit
 
-Voit määrittää **Kohdistustunnukset**-välilehdessä kunkin kohdistustunnuksen **Ennustealgoritmin parametrit**. Valittavissa ovat seuraavat vaihtoehdot.
-- **Luotettavuustasoprosentti**: Luottamusväli koostuu arvoalueesta, joka toimii hyvinä ennusteina kysynnän ennusteelle. 95 prosentin luotettavuustasoprosentti osoittaa, että on 5 prosentin riski siitä, että tuleva kysyntä on luottamusvälin ulkopuolella.
-- **Pakota kausivaihtelu**: Määrittää, pakotetaanko malli käyttämään tietyn kausivaihtelutyyppiä. Koskee vain vaihtoehtoja ARIMA ja ETS. Vaihtoehdot: AUTO(oletus), NONE, ADDITIVE, MULTIPLICATIVE.
-- **Ennustemalli**: vaihtoehdot: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. Valitse parhaiten sopiva malli käyttämällä **ALL**-vaihtoehtoa.
-- **Ennusteen enimmäisarvo**: Määrittää ennusteissa käytettävän enimmäisarvon. Muoto: +1E[n] tai numeerinen vakio.
-- **Ennusteen vähimmäisarvo**: Määrittää ennusteissa käytettävän vähimmäisarvon. Muoto: -1E[n] tai numeerinen vakio.
-- **Puuttuvan arvon korvaus**: Määrittää, miten historiallisten tietojen aukot täytetään. Vaihtoehdot: numeerinen arvo, KESKIARVO, EDELLINEN, INTERPOLOI LINEAARINEN, INTERPOLOI POLYNOMINEN.
-- **Puuttuvan arvon korvausalue**: Määrittää, koskeeko arvon korvaus vain kunkin yksittäisen rakeisuusmääritteen päivämääräaluetta vai koko tietojoukkoa. Vaihtoehdot: GRANULARITY_ATTRIBUTE(oletus), GLOBAL.
-- **Kausivaihtelun vihje**: Anna ennustemallia varten kausivaihtelutietojen vihje ennusteen tarkkuuden parantamiseksi. Muoto: kokonaisluku, joka kuvaa niiden jaksojen pituutta, jolloin kysyntäkuvio toistuu. Syötä esimerkiksi luku 6, jos tiedot toistuvat kuuden kuukauden välein.
-- **Testijoukon koon prosenttiosuus**: Historiatietojen prosenttiosuus käytettäväksi testiaineistona ennusteen tarkkuuden laskennassa. 
+**Kysynnän ennusteen parametrit** -sivun **Nimikkeenkohdistusavaimet**-välilehdellä voit käyttää **Ennustealgoritmin parametrit**-pikavälilehteä ennustealgoritmin parametrien määrittämiseksi ruudukossa vasemmalla valittuna olevalle nimikkeenkohdistusavaimelle. Työkalupalkin **Lisää**- ja **Poista**-painikkeilla voit luoda tarvittavan parametrijoukon. Valitse jokaiselle luettelon parametrille jokin seuraavista **Nimi**-kentän arvoista ja anna sitten sopiva arvo **Arvo**-kentässä:
+
+- **Luotettavuustasoprosentti** – Luottamusväli koostuu arvoalueesta, joka toimii hyvinä ennusteina kysynnän ennusteelle. 95 prosentin luotettavuustasoprosentti osoittaa, että on 5 prosentin riski siitä, että tuleva kysyntä on luottamusvälin ulkopuolella.
+- **Pakota kausivaihtelu** – Määrittää, pakotetaanko malli käyttämään tietyn kausivaihtelutyyppiä. Koskee vain vaihtoehtoja ARIMA ja ETS. Vaihtoehdot: AUTO(oletus), NONE, ADDITIVE, MULTIPLICATIVE.
+- **Ennustemalli** – Vaihtoehdot: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. Valitse parhaiten sopiva malli käyttämällä **ALL**-vaihtoehtoa.
+- **Ennusteen enimmäisarvo** – Määrittää ennusteissa käytettävän enimmäisarvon. Muoto: +1E[n] tai numeerinen vakio.
+- **Ennusteen vähimmäisarvo** – Määrittää ennusteissa käytettävän vähimmäisarvon. Muoto: -1E[n] tai numeerinen vakio.
+- **Puuttuvan arvon korvaus** – Määrittää, miten historiallisten tietojen aukot täytetään. Vaihtoehdot: numeerinen arvo, KESKIARVO, EDELLINEN, INTERPOLOI LINEAARINEN, INTERPOLOI POLYNOMINEN.
+- **Puuttuvan arvon korvausalue** – Määrittää, koskeeko arvon korvaus vain kunkin yksittäisen rakeisuusmääritteen päivämääräaluetta vai koko tietojoukkoa. Seuraavat vaihtoehdot ovat käytettävissä sen päivämääräalueen määrittämiseen, jota järjestelmä käyttää täyttäessään historiatietojen aukkoja:
+
+  - GLOBAL – Järjestelmä käyttää kaikkien rakeisuusmääritteiden koko päivämääräalueita.
+  - HISTORY_DATE_RANGE – Järjestelmä käyttää tiettyä **Luo tilastollinen perusennuste** -valintaruudun **Historiallinen horisontti** -kenttäryhmän **Alkamispäivä**- ja **Päättymispäivä**-kentissä määritettyä päivämääräaluetta.
+  - GRANULARITY_ATTRIBUTE – Järjestelmä käyttää kulloinkin käsiteltävänä olevan rakeisuusmääritteen päivämääräaluetta.
+
+  > [!NOTE]
+  > Rakeisuusmäärite on yhdistelmä ennustedimensioita, joiden perusteella ennuste tehdään. Voit määrittää ennustedimensioita **Kysynnän ennusteen parametrit** -sivulla.
+
+- **Kausivaihtelun vihje** – Anna ennustemallia varten kausivaihtelutietojen vihje ennusteen tarkkuuden parantamiseksi. Muoto: kokonaisluku, joka kuvaa niiden jaksojen pituutta, jolloin kysyntäkuvio toistuu. Syötä esimerkiksi luku 6, jos tiedot toistuvat kuuden kuukauden välein.
+- **Testijoukon koon prosenttiosuus** – Historiatietojen prosenttiosuus käytettäväksi testiaineistona ennusteen tarkkuuden laskennassa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
-
-[Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
-
-[Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
-
-
-
+- [Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
+- [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
+- [Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

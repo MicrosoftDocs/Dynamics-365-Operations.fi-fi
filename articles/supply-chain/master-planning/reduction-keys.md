@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32d1c7efaefaecae12031073d67b0e4c2cf78a78
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736620"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474769"
 ---
 # <a name="forecast-reduction-keys"></a>Ennusteen vähennysavaimet
 
@@ -86,7 +86,18 @@ Tällöin jos suoritat ennusteajoituksen 1. tammikuuta, kysynnän ennustetarpeit
 
 ### <a name="transactions--reduction-key"></a>Tapahtumat - vähennysavain
 
-Jos valitset **Tapahtumat - vähennysavain**: ennusteen tarpeita vähennetään vähennysavaimen määrittämien kausien aikaisten tapahtumien mukaan.
+Jos määrität **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentän arvoksi *Tapahtumat – vähennysavain*, ennustevaatimuksista vähennetään kelvollisilla kysyntätapahtumilla, jotka esiintyvät vähennysavaimen määrittäminä ajanjaksoina.
+
+Kelvollinen kysyntä määritetään **Kattavuusryhmät**-sivun **Ennusteen vähennysperuste** -kentän avulla. Jos **Ennusteen vähennysperuste** -kentän arvoksi määritetään *Tilaukset*, vain tilaustapahtumat katsotaan kelvolliseksi kysynnäksi. Jos sen arvoksi määritetään *Kaikki tapahtumat*, kaikki muut kuin konsernin sisäiset varastonsiirrot katsotaan kelvolliseksi kysynnäksi. Jos myös konsernin sisäiset myynnit katsotaan kelvolliseksi kysynnäksi, **Sisällytä konsernin sisäiset tilaukset** -asetuksen arvoksi *Kyllä*.
+
+Ennusteen vähennys alkaa vähennysavaimen jakson ensimmäisestä (aikaisimmasta) kysynnän ennustetietueesta. Jos kelvollisten varastotapahtumien määrä ylittää kysynnän ennusterivien määrän samalla vähennysavainjaksolla, varastotapahtumien määrän saldo vähennetään edellisen jakson kysynnän ennustemäärästä (jos käyttämätöntä ennustetta on jäljellä).
+
+Jos edelliseltä vähennysavaimen jaksolta ei ole jäljellä käyttämätöntä ennustetta, varastotapahtumien määrän saldo vähennetään seuraavan kuukauden ennustemäärästä (jos käyttämätöntä ennustetta on).
+
+Vähennysavainrivien **Prosenttiosuus**-kentän arvoa ei käytetä, kun **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentän asetuksena on *Tapahtumat – vähennysavain*. Vain päivämääriä käytetään vähennysavainjakson määrittämiseen.
+
+> [!NOTE]
+> Kulloisenakin päivämääränä tai sitä ennen kirjattuja ennusteita ei oteta huomioon eikä käytetä suunniteltujen tilausten luomiseen. Jos esimerkiksi kuukauden kysynnän ennuste on luotu 1. tammikuuta ja suoritat pääsuunnittelun, johon kuuluu kysynnän ennuste 2. tammikuuta, laskennassa ei oteta huomioon kysyntäennusteriviä, jonka päivämääränä on 1. tammikuuta.
 
 #### <a name="example-transactions--reduction-key"></a>Esimerkki: Tapahtumat - vähennysavain
 

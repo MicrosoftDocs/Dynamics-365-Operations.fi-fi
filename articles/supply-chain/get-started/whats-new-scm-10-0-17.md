@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760511"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474599"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.17 (huhtikuu 2021)
 
@@ -99,10 +99,6 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 
 Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittävästi. Ne eivät välttämättä liity tähän versioon liitettyihin uusiin ominaisuuksiin, jotka on mainittu edellisessä osassa, mutta ne voivat auttaa käyttämään nykyisiä ominaisuuksia tehokkaammin.
 
-### <a name="cost-management"></a>Kustannushintojen hallinta
-
-- [Kustannusten hallinnan vianmääritys](../cost-management/troubleshoot-costmanagement.md)
-
 ### <a name="asset-management"></a>Resurssien hallinta
 
 - [Resurssien hallinnan mobiilityötilan asetukset](../asset-management/set-up-asset-management-mobile.md)
@@ -114,8 +110,6 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 - [Sijainnin osittainen inventointi](../warehousing/partial-location-cycle-counting.md)
 
 - [Keräilyrivin ryhmittely](../warehousing/pick-line-grouping.md)
-
-- [Varastotoimintojen vianmääritys](../inventory/troubleshoot-inventory-operations.md)
 
 - [Varastopaikoitus](../warehousing/warehouse-slotting.md)
 

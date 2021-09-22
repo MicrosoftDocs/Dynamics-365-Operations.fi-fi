@@ -1,5 +1,5 @@
 ---
-title: Varaston näkyvyyden määritykset
+title: Varaston näkyvyyden määrittäminen
 description: Tässä aiheessa käsitellään varaston näkyvyyden määrittämistä.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 92e42b22d424ab80303d771f760cfcf0599b9f4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345030"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474673"
 ---
-# <a name="inventory-visibility-configuration"></a>Varaston näkyvyyden määritykset
+# <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-Tässä aiheessa käsitellään varaston näkyvyyden määrittämistä.
+Tässä aiheessa käsitellään varaston näkyvyyden määrittämistä varaston näkyvyyssovelluksen avulla Power Appsissa.
 
 ## <a name="introduction"></a><a name="introduction"></a>Johdanto
 
@@ -35,27 +35,58 @@ Ennen varaston näkyvyyssovelluksen käytön aloittamista on tehtävä seuraavat
 - [Varausmääritykset (valinnainen)](#reservation-configuration)
 - [Oletusmääritysnäyte](#default-configuration-sample)
 
-> [!NOTE]
-> Varaston näkyvyysmäärityksiä voi tarkastella ja muokata [Microsoft Power Appsissa](./inventory-visibility-power-platform.md#configuration). Kun määritykset on tehty, valitse sovelluksessa **Päivitä määritys**.
+## <a name="prerequisites"></a>Edellytykset
 
-## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Tietolähteen määritykset
+Varaston näkyvyyden apuohjelma on asennettava ja määritettävä ennen aloittamista kohdassa [Varaston näkyvyyden asennus ja määritys](inventory-visibility-setup.md) kuvatulla tavalla.
 
-Tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Niitä ovat esimerkiksi `fno` (eli Dynamics 365 Finance and Operations -sovellukset) ja `pos` (eli myyntipiste).
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Varaston näkyvyysominaisuuksien käyttöönotto Power Appsin ominaisuuksienhallinnassa
 
-Tietolähdemääritykset sisältävät seuraavat osat:
+Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominaisuuksia. Nämä ominaisuudet on oletusarvoisesti poistettu käytöstä. Niitä voidaan käyttää avaamalla **Määritys**-sivu Power Appsissa ja ottamalla seuraavat ominaisuudet sitten käyttöön **Ominaisuuden hallinta** -välilehdessä.
 
-- Dimensio (dimension yhdistämismääritys)
-- Fyysinen mitta
-- Laskennallinen mitta
+- *OnHandReservation*
+- *OnHandMostSpecificBackgroundService*
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Palvelun päätepisteen etsiminen
+
+Jos oikea varaston näkyvyyspalvelun päätepiste ei ole tiedossa, avaa **Määritys**-sivu Power Appsissa ja valitse sitten **Näytä palvelun päätepiste** oikeassa yläkulmassa. Sivulla näkyy oikea palvelun päätepiste.
+
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Varaston näkyvyyssovelluksen määrityssivu
+
+Power Appsissa [varaston näkyvyyssovelluksen](inventory-visibility-power-platform.md) **Määritys**-sivu auttaa määrittämään käytettävissä olevan varaston ja alustavan varauksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin arvon (`fno`-tietolähde). Oletusasetukset voidaan tarkistaa. Määritystä voidaan lisäksi muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä. Tämän ohjeaiheen jäljellä olevissa osissa selitetään, miten kutakin **Määritys**-sivun osaa käytetään.
+
+Kun määritykset on tehty, muista valita sovelluksessa **Päivitä määritys**.
+
+## <a name="data-source-configuration"></a>Tietolähteen määritykset
+
+Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 Finance and Operations -sovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
 
 > [!NOTE]
 > `fno`-tietolähde on varattu Dynamics 365 Supply Chain Managementin käyttöön.
 
-### <a name="dimension-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimensio (dimension yhdistämismääritys)
+Tietolähde lisätään seuraavasti:
 
-Dimensiomääritysten tarkoitus on standardoida monien järjestelmien integrointi dimensioyhdistelmiin perustuvien tapahtumien kirjaamista ja niihin perustuvia kyselyjä varten.
+1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
+1. Avaa **Määritykset**-sivu.
+1. Lisää tietolähde valitsemalla **Tietolähde**-välilehdessä **Uusi tietolähde**.
 
-Varaston näkyvyyssovellus tukee seuraavia yleisiä perusdimensioita:
+> [!NOTE]
+> Tietolähdettä lisättäessä tietolähteen nimi, fyysiset mitat ja dimensioiden yhdistämismääritykset on tarkistettava ennen määrityksen päivittämistä varaston näkyvyyspalveluun. Näitä asetuksia ei voi muokata sen jälkeen, kun **Päivitä määritys** on valittu.
+
+Tietolähdemääritykset sisältävät seuraavat osat:
+
+- Dimensiot (dimension yhdistämismääritys)
+- Fyysiset mitat
+- Laskennalliset mitat
+
+### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimensiot (dimension yhdistämismääritys)
+
+Dimensiomääritysten tarkoitus on standardoida monien järjestelmien integrointi dimensioyhdistelmiin perustuvien tapahtumien kirjaamista ja niihin perustuvia kyselyjä varten. Varaston näkyvyyssovelluksessa on luettelo perusdimensioita, jotka voidaan yhdistää tietolähteen dimensioista. Yhdistämismäärityksissä on käytettävissä 33 dimensiota.
+
+- Jos yhtenä tietolähteenä on Supply Chain Management, 13 dimensiota yhdistetään oletusarvoisesti Supply Chain Managementin vakiodimensioihin. 12 muuta dimensiosta (`inventDimension1`– `inventDimension12`) yhdistetään Supply Chain Managementin mukautettuihin dimensioihin. Loput kahdeksan dimensiota ovat laajennettuja dimensioita, jotka voidaan yhdistää ulkoisiin tietolähteisiin.
+- Jos Supply Chain Managementia ei käytetä yhtenä tietolähteenä, dimensiot voidaan yhdistää vapaasti. Seuraavassa taulukossa on käytettävissä olevien dimensioiden täydellinen luettelo.
+
+> [!NOTE]
+> Jos dimensio ei ole oletusdimensioluettelossa ja käytössä on ulkoinen tietolähde, yhdistämismäärityksessä kannattaa käyttää dimensioita `ExtendedDimension1`–`ExtendedDimension8`.
 
 | Dimensiotyyppi | Perusdimensio |
 |---|---|
@@ -73,7 +104,8 @@ Varaston näkyvyyssovellus tukee seuraavia yleisiä perusdimensioita:
 | Varastokohtainen | `LicensePlateId` |
 | Muut | `VersionId` |
 | Varasto (mukautettu) | `InventDimension1`–`InventDimension12` |
-| Alanumero | `ExtendedDimension1`–`ExtendedDimension8` |
+| Laajennus | `ExtendedDimension1`–`ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > Edellisessä taulukossa mainitut dimensiotyypit on tarkoitettu vain tiedoksi. Niitä ei tarvitse määrittää varaston näkyvyyssovelluksessa.
@@ -92,11 +124,24 @@ Ulkoiset järjestelmät voivat käyttää varaston näkyvyyssovellusta sovelluks
 
 Dimension yhdistämismäärityksen avulla ulkoiset dimensiot voidaan lähettää suoraan varaston näkyvyyssovellukseen. Varaston näkyvyyssovellus muuntaa sitten ulkoiset dimensiot automaattisesti perusdimensioiksi.
 
+Dimension yhdistämismääritykset lisätään seuraavasti:
+
+1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
+1. Avaa **Määritykset**-sivu.
+1. Lisää dimension yhdistämismääritykset valitsemalla **Tietolähde**-välilehden **Dimension yhdistämismääritykset** -osassa **Lisää**.
+    ![Dimension yhdistämismääritysten lisääminen](media/inventory-visibility-dimension-mapping.png "Dimension yhdistämismääritysten lisääminen")
+
+1. Määritä lähdedimensio **Dimension nimi** -kentässä.
+1. Valitse **Perusdimensioon**-kentässä yhdistettävä varaston näkyvyyssovelluksen dimensio.
+1. Valitse **Tallenna**.
+
+Jos tietolähde sisältää esimerkiksi tuotteen väridimension, se voidaan yhdistää `ColorId`-perusdimensioon, jolloin mukautettu `ProductColor`-dimensio lisätään `exterchannel`-tietolähteeseen. Se yhdistetään sitten `ColorId`-perusdimensioon.
+
 ### <a name="physical-measures"></a>Fyysiset mitat
 
-Fyysiset mitat muokkaavat määrän vastaamaan varaston tilaa. Fyysiset mitat voidaan määrittää omien tarpeiden mukaan.
+Kun tietolähde kirjaa varastonmuutoksen varaston näkyvyyssovellukseen, muutoksen kirjaamiseen käytetään *fyysisiä mittoja*. Fyysiset mitat muokkaavat määrän vastaamaan varaston tilaa. Fyysiset mitat voidaan määrittää omien tarpeiden mukaan. Kyselyt voivat perustua fyysisiin mittoihin.
 
-Varaston näkyvyyssovelluksessa on luettelo fyysisistä oletusmitoista, ja tämä luettelo on linkitetty Supply Chain Managementiin (`fno`-tietolähteeseen). Seuraavassa taulukossa on esimerkki fyysisistä mitoista:
+Varaston näkyvyyssovelluksessa on luettelo fyysisistä oletusmitoista, ja tämä luettelo on linkitetty Supply Chain Managementiin (`fno`-tietolähteeseen). Nämä fyysiset oletusmitat saadaan Supply Chain Managementin **Varastoluettelo**-sivulla (**Varastonhallinta \> Kyselyt ja raportit \> Varastoluettelo**) olevista varastotapahtuman tiloista. Seuraavassa taulukossa on esimerkki fyysisistä mitoista:
 
 | Fyysisen mitan nimi | kuvaus |
 |---|---|
@@ -117,9 +162,31 @@ Varaston näkyvyyssovelluksessa on luettelo fyysisistä oletusmitoista, ja täm�
 | `ReservOrdered` | Tilatut varatut |
 | `ReservPhysical` | Fyysiset varatut |
 
-### <a name="calculated-measures"></a><a name="data-source-configuration-calculated-measure"></a>Laskennalliset mitat
+Jos tietolähde on Supply Chain Management, fyysisiä oletusmittoja ei tarvitse luoda uudelleen. Jos kyse on kuitenkin ulkoisista tietolähteistä, uudet fyysiset mitat voidaan luoda seuraavasti:
 
-Laskennalliset mitat ovat mukautettu laskentakaava, joka koostuu fyysisten mittojen yhdistelmästä. Tämä toiminto antaa mahdollisuuden määrittää lisättävät ja/tai vähennettävät fyysiset mitat, joiden avulla voidaan muodostaa mukautettu mitta.
+1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
+1. Avaa **Määritykset**-sivu.
+1. Valitse **Tietolähde**-välilehden **Fyysiset mitat** -osassa **Lisää**, määritä lähdemitan nimi ja tallenna muutokset.
+
+### <a name="calculated-measures"></a>Laskennalliset mitat
+
+Varaston näkyvyyssovelluksen avulla voidaan tehdä sekä varaston fyysisiä mittoja että *mukautettuja laskennallisia mittoja* koskevia kyselyjä. Laskennalliset mitat ovat mukautettu laskentakaava, joka koostuu fyysisten mittojen yhdistelmästä. Tämä toiminto antaa mahdollisuuden määrittää lisättävät ja/tai vähennettävät fyysiset mitat, joiden avulla voidaan muodostaa mukautettu mitta.
+
+Määritys antaa mahdollisuuden määrittää määrejoukon, jota lisäämällä tai vähentämällä saadaan koostetuloksen kokonaismäärä.
+
+Voit määrittää mukautetun laskennallisen mitan noudattamalla seuraavia ohjeita.
+
+1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
+1. Avaa **Määritykset**-sivu.
+1. Lisää laskennallinen mitta valitsemalla **Laskennallinen mitta** -välilehdessä **Uusi laskennallinen mitta**. Määritä sitten kentät seuraavassa taulukossa ilmaistulla tavalla.
+
+    | Kenttä | Arvo |
+    |---|---|
+    | Uuden laskennallisen mitan nimi | Anna laskennallisen mitan nimi. |
+    | Tietolähde | Kyselyjärjestelmä on tietolähde. |
+    | Määreen tietolähde | Anna määreen tietolähde. |
+    | Määre | Anna määreen nimi. |
+    | Määreen tyyppi | Valitsee määreen tyyppi (*Lisäys* tai *Vähennys*). |
 
 Kyse voi olla esimerkiksi seuraavasta kyselyn tuloksesta.
 
@@ -202,7 +269,7 @@ Tätä laskentakaavaa käytettäessä uudessa kyselyn tuloksessa on mukautettu m
 ]
 ```
 
-Mukautettujen mittojen laskenta-asetukseen perustuva `MyCustomAvailableforReservation`-tulos on 100+50+80+90+30–10– 20–60–40=220.
+Mukautettujen mittojen laskenta-asetukseen perustuva `MyCustomAvailableforReservation`-tulos on 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Osion määritykset
 
@@ -230,11 +297,21 @@ Varaston näkyvyyssovellus tuo joustavuutta antamalla mahdollisuuden _indeksien_
 | Dimensio | Perusdimensiot, joiden perusteella kyselyn tulos koostetaan. |
 | Hierarkia | Hierarkian avulla määritetään tuetut dimensioyhdistelmät, joissa voidaan tehdä kyselyjä. Määritetään esimerkiksi dimensiojoukko, jonka hierarkiajärjestys on `(ColorId, SizeId, StyleId)`. Tässä tapauksessa järjestelmä tukee neljän dimensioyhdistelmän kyselyitä. Ensimmäinen yhdistelmä on tyhjä, toinen on `(ColorId)`, kolmas `(ColorId, SizeId)` ja neljäs `(ColorId, SizeId, StyleId)`. Muita yhdistelmiä ei tueta. Lisätietoja seuraavassa esimerkissä. |
 
+Tuotehierarkiaindeksi määritetään seuraavasti:
+
+1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
+1. Avaa **Määritykset**-sivu.
+1. Lisää dimension yhdistämismääritykset valitsemalla **Tuotehierarkiaindeksi**-välilehden **Dimension yhdistämismääritykset** -osassa **Lisää**.
+1. Indeksiluettelo annetaan oletusarvoisesti. Muokkaa aiemmin luotua indeksiä valitsemalla **Muokkaa** tai **Lisää** kyseisen indeksin kohdalla. Luo uusi indeksijoukko valitsemalla **Uusi indeksijoukko**. Tee indeksijoukon kunkin rivin **Dimensio**-kentässä valinta perusdimensioluettelossa. Seuraavien kenttien arvot luodaan automaattisesti:
+
+    - **Joukon numero** – samaan ryhmään (indeksiin) kuuluvat dimensiot ryhmitellään yhteen ja niille määritetään sama joukon numero.
+    - **Hierarkia** – Hierarkian avulla määritetään tuetut dimensioyhdistelmät, joissa voidaan tehdä kyselyjä dimensioryhmässä (indeksissä). Jos määritetään esimerkiksi dimensioryhmä, jonka hierarkia järjestys on *tyyli*, *väri* ja *koko*, järjestelmän tukee kolmen kyselyryhmän tuloksia. Ensimmäinen ryhmä on vain tyyli. Toinen ryhmä on tyylin ja värin yhdistelmä. Kolmas ryhmä on puolestaan tyylin, värin ja koon yhdistelmä. Muita yhdistelmiä ei tueta.
+
 ### <a name="example"></a>Esimerkki
 
 Tämän osan esimerkki näyttää, miten hierarkia toimii.
 
-Varastossa on seuraavat nimikkeet.
+Seuraavassa taulukossa on luettelo tässä esimerkissä käytettävissä olevasta varastosta.
 
 | Nimike | ColorId | SizeId | StyleId | Määrä |
 |---|---|---|---|---|
@@ -246,7 +323,7 @@ Varastossa on seuraavat nimikkeet.
 | T-paita | Punainen | Pieni | Säännöllinen | 6 |
 | T-paita | Punainen | Suuri | Säännöllinen | 7 |
 
-Indeksi on seuraavanlainen:
+Seuraavassa taulukko näyttää, miten indeksihierarkia määritetään.
 
 | Joukon numero | Dimensio | Hierarkia |
 |---|---|---|
@@ -284,6 +361,8 @@ Indeksin antaa mahdollisuuden tehdä kyselyjä käytettävissä olevassa varasto
 
 > [!NOTE]
 > Osiomäärityksessä määritettyjä perusdimensioita ei saa määrittää indeksimäärityksissä.
+> 
+> Jos sinun tarvitsee kysellä vain varastoa, joka koostetaan kaikkien dimensioyhdistelmien perusteella, voit määrittää yksittäisen hakemiston, joka sisältää perusdimension `Empty`.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Varausmääritykset (valinnainen)
 
@@ -296,22 +375,37 @@ Varausmääritys on välttämätön, jos alustavaa varaustoimintoa halutaan käy
 
 ### <a name="soft-reservation-mapping"></a>Alustavan varauksen yhdistämismääritys
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Varausta tehtäessä halutaan ehkä tietää, riittääkö käytettävissä oleva varasto varaukseen. Vahvistus on linkitetty laskennalliseen mittaan, joka ilmaistaan fyysisten mittojen yhdistelmän laskentakaavana.
 
-Varausmitta voi perustua esimerkiksi `iv` (varaston näkyvyys) -tietolähteen fyysiseen `SoftReservOrdered`-mittaan. Siinä tapauksessa `iv`-tietolähteen laskennallinen `AvailableToReserve`-mitta määritetään kuten seuraavassa:
+Kun yhdistämismääritys määritetään fyysisestä mitasta laskennalliseen mittaan, varaston näkyvyyspalvelu voi tarkistaa automaattisesti varauksen saatavuuden fyysisen mitan perusteella.
 
-| Laskentalaji | Tietolähde | Fyysinen mitta |
-|---|---|---|
-| Lisäys | `fno` | `AvailPhysical` |
-| Lisäys | `pos` | `Inbound` |
-| Vähennyslasku | `pos` | `Outbound` |
-| Vähennyslasku | `iv` | `SoftReservOrdered` |
+Ennen kuin tämä yhdistämismääritys voidaan määrittää, fyysiset mitat, laskennalliset mitat ja niiden tietolähteet on määritettävä Power Appsin **Määritys**-sivun **Tietolähde**- ja **Laskennallinen mitta** -välilehdissä (aiemmin tässä aiheessa kuvatulla tavalla).
 
-Alustavan varauksen yhdistämismääritys määritetään sitten muodostamaan yhdistämismääritys varastusta `SoftReservOrdered`-mitasta laskennalliseen `AvailableToReserve`-mittaan.
+Alustavan varauksen yhdistämismääritys määritetään seuraavasti:
 
-| Fyysisen mitan tietolähde | Fyysinen mitta | Varaukseen käytettävissä olevan tietolähde | Varaukseen käytettävissä oleva laskennallinen mitta |
-|---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+1. Määritä alustavana varausmittana toimiva fyysinen mitta (esimerkki: `SoftReservOrdered`).
+1. Määritä **Määritys**-sivun **Laskennallinen mitta** -välilehdessä laskennallinen *käytettävissä varaukseen* -mitta, jonka sisältämä laskentakaava halutaan yhdistää fyysiseen mittaan. Esimerkiksi `AvailableToReserve` (käytettävissä varaukseen) voidaan määrittää siten, että se yhdistetään aiemmin määritettyyn fyysiseen `SoftReservOrdered` -mittaan. Tällä tavoin voidaan etsiä, mitkä sellaiset määrät ovat käytettävissä varaukseen, joiden varaston tila on `SoftReservOrdered`. Seuraavassa taulukossa on laskentakaava varaukseen käytettävissä olevasta varastosta.
+
+    | Laskentalaji | Tietolähde | Fyysinen mitta |
+    |---|---|---|
+    | Lisäys | `fno` | `AvailPhysical` |
+    | Lisäys | `pos` | `Inbound` |
+    | Vähennyslasku | `pos` | `Outbound` |
+    | Vähennyslasku | `iv` | `SoftReservOrdered` |
+
+    On suositeltavaa määrittää laskennallinen mitta niin, että se sisältää fyysisen mitan, jolle varausmitta perustuu. Tällöin varausmitan määrä vaikuttaa laskennallisen mitan määrään. Siksi tässä esimerkissä `iv`-tietolähteen laskinnallisen mitan `AvailableToReserve` pitäisi sisältää komponenttina `iv`-tietolähteen fyysinen mitta `SoftReservOrdered`.
+
+1. Avaa **Määritykset**-sivu.
+1. Määritä **Alustavan varauksen yhdistämismääritys** -välilehdessä yhdistämismääritys fyysisestä mitasta laskennalliseen mittaan. Edellisessä esimerkissä `AvailableToReserve` voidaan yhdistää aiemmin määritettyyn fyysiseen `SoftReservOrdered`-mittaan seuraavien asetusten avulla:
+
+    | Fyysisen mitan tietolähde | Fyysinen mitta | Varaukseen käytettävissä olevan tietolähde | Varaukseen käytettävissä oleva laskennallinen mitta |
+    |---|---|---|---|
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+
+    > [!NOTE]
+    > Jos et voi muokata **Alustavan varauksen yhdistämismääritys** -välilehteä, voi olla tarpeen ottaa *OnHandReservation*-ominaisuus käyttöön **Ominaisuuksien hallinta** -välilehdessä.
 
 Kun `SoftReservOrdered`-varaus nyt tehdään, varaston näkyvyyssovellus etsii automaattisesti `AvailableToReserve`-mitan ja siihen liittyvän laskentakaavan varauksen vahvistusta varten.
 
@@ -348,11 +442,16 @@ Tässä tapauksessa käytetään seuraavaa laskelmaa:
 
 Niinpä jos `iv.SoftReservOrdered`-varausta yritetään tehdä ja jos määrä on pieni tai sama kuin `AvailableToReserve` (10), varaus voidaan tehdä.
 
+> [!NOTE]
+> Kun kutsut varausten ohjelmointirajapintaa, voit ohjata varausten vahvistamista määrittämällä `ifCheckAvailForReserv`-totuusarvoparametrin pyynnön tekstiosassa. `True`-arvo tarkoittaa, että vahvistus vaaditaan, ja `False`-arvo, että vahvistusta ei vaadita. Oletusarvona on `True`.
+
 ### <a name="soft-reservation-hierarchy"></a>Alustavan varauksen hierarkia
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Varaushierarkia ilmaisee dimensiojärjestyksen, joka on määritettävä varauksia tehtäessä. Se toimii samalla tavoin kuin tuoteindeksihierarkia käytettävissä olevaa varastoa koskevissa kyselyissä.
 
-Varaushierarkia on erillään tuoteindeksihierarkiasta. Tämä erillisyys antaa mahdollisuuden toteuttaa sellainen luokanhallinta, jossa käyttäjät voivat eritellä dimensiot vaatimukset määrittäviksi tiedoiksi. Tämä puolestaan antaa mahdollisuuden entistä tarkempiin varauksiin.
+Varaushierarkia on erillään tuoteindeksihierarkiasta. Tämä erillisyys antaa mahdollisuuden toteuttaa sellainen luokanhallinta, jossa käyttäjät voivat eritellä dimensiot vaatimukset määrittäviksi tiedoiksi. Tämä puolestaan antaa mahdollisuuden entistä tarkempiin varauksiin. Alustavan varauksen historian pitäisi sisältää tunnukset `SiteId` ja `LocationId` komponentteina, koska ne muodostavat osionmäärityksen. Kun teet varauksen, sinun on määritettävä tuotteelle osio.
 
 Esimerkki alustavan varauksen hierarkiasta.
 
@@ -364,10 +463,8 @@ Esimerkki alustavan varauksen hierarkiasta.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-Tässä esimerkissä varaus voidaan tehdä seuraavissa dimensiojärjestyksissä:
+Tässä esimerkissä varaus voidaan tehdä seuraavissa dimensiojärjestyksissä. Sinun on määritettävä tuotteelle osio, kun teet varauksen. Siksi perushierarkia, jota voit käyttää, on `(SiteId, LocationId)`.
 
-- `()` – dimensiota ei määritetä.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
@@ -375,9 +472,24 @@ Tässä esimerkissä varaus voidaan tehdä seuraavissa dimensiojärjestyksissä:
 
 Kelvollisen dimensiojärjestyksen on noudatettava varaushierarkiaa tarkasti dimensio kerrallaan. Esimerkiksi hierarkiajärjestys `(SiteId, LocationId, SizeId)` ei kelpaa, koska `ColorId` puuttuu.
 
+## <a name="complete-and-update-the-configuration"></a>Määrityksen viimeisteleminen ja päivittäminen
+
+Kun määritys on valmis, kaikki muutokset on vahvistettava varaston näkyvyyssovellukseen. Vahvista muutokset valitsemalla **Päivitä määritys** Power Appsin **Määritys**-sivun oikeassa yläkulmassa.
+
+Kun **Päivitä määritys** valitaan ensimmäisen kerran, järjestelmä kysyy tunnistetietoja.
+
+- **Asiakastunnus** – varaston näkyvyyssovellukselle luotu Azure-sovelluksen tunnus.
+- **Vuokraajan tunnus** – Azure-vuokraajan tunnus.
+- **Asiakasohjelman salasana** – varaston näkyvyyssovellukselle luotu Azure-sovelluksen tunnus.
+
+Määritys päivitetään varaston näkyvyyspalveluun kirjautumisen jälkeen.
+
+> [!NOTE]
+> Tietolähteen nimi, fyysiset mitat ja dimensioiden yhdistämismääritykset on tarkistettava ennen määrityksen päivittämistä varaston näkyvyyspalveluun. Näitä asetuksia ei voi muokata sen jälkeen, kun **Päivitä määritys** on valittu.
+
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Oletusmääritysnäyte
 
-Varaston näkyvyys määrittää alustuksen aikana oletusmäärityksen. Määritystä voi muokata tarpeen mukaan.
+Varaston näkyvyys määrittää alustuksen aikana oletusmäärityksen, joka esitellään tässä. Määritystä voi muokata tarpeen mukaan.
 
 ### <a name="data-source-configuration"></a>Tietolähteen määritykset
 

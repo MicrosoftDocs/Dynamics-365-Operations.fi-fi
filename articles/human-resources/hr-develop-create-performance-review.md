@@ -1,8 +1,8 @@
 ---
 title: Työsuorituksen arviointien luominen
 description: Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus.
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscu
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a4a9f83c2b6cb30888ed5a797fb72b9f382187cb8f119d15a5fa437ed5aba1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1340653c1e9a21d41743b8e3c0b81a4285245d5a
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732246"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431157"
 ---
 # <a name="create-performance-reviews"></a>Työsuorituksen arviointien luominen
 
@@ -65,13 +65,13 @@ Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvio
 30. Valitse **Luokitukset**-välilehti.  
 
     - Työntekijät ja esimiehet voivat tehdä luokituksen nopeasti **Luokituksen lisätiedot** -pikavälilehdellä. Jos painotukset ovat käytössä, pisteiden painotettu arvo lasketaan automaattisesti.  
-    - Jotta voit tarkastella tätä osaa, ota käyttöön työntekijän luokitukset näyttävä parametriasetus.  
+    - Ota tämän osan tarkastelua varten työntekijäluokitusten näyttämisen parametriasetukset käyttöön **Henkilöstöhallinnon jaetut parametrit** -sivulla.  
 
-31. Valitse **Kuittaukset**-välilehti. Jos arvioinnissa käytetään työnkulkua, hyväksynnät näkyvät vasta, kun työnkulku on valmis. Jos työnkulku ei ole käytössä, sekä työntekijä että esimies näytetään tässä. Pakollinen-valintaruutu on valittuna arviointityypin perusteella.  
+31. Valitse **Kuittaukset**-välilehti. Jos arvioinnissa käytetään työnkulkua, hyväksynnät näkyvät vasta, kun työnkulku on valmis. Jos työnkulku ei ole käytössä, sekä työntekijä että esimies näytetään tässä. **Hyväksyntä**-kohdan **Pakollinen**-valintaruutu on valittuna arviointityypin perusteella.  
 32. Valitse **Yleinen**-välilehti.
 
     - Suorituskaudelle luodaan oletuksena aloitus- ja päättymispäivämäärät. Päivämäärät ovat muokattavissa.  
-    - Tiloilla hallitaan arvioinnin käyttöoikeutta. **Ei alkanut** -tila sallii kaikkien käyttäjien muokata arviointia. **Käsittelyssä**-tilassa olevaa arviointia voi tarkastella ja muokata vain työntekijä. **Valmis tarkistettavaksi** -tilassa olevaa arviointia voi tarkastella ja muokata vain esimies. **Lopullinen arviointi** -tila mahdollistaa sekä työntekijälle että esimiehelle arvioinnin tarkastelun. Muokkaaminen on mahdollista, jos se on otettu käyttöön arviointityypissä. Tilat **Valmis** ja **Peruutettu** asettavat arvioinnin vain luku -tilaan. Jos tarkistus on **Hylätty** ja lähetetään takaisin työntekijälle, sekä työntekijä että esimies voivat tehdä tarvittavat muokkaukset, jotta työntekijä voi lähettää sen uudelleen.
+    - Tiloilla hallitaan arvioinnin käyttöoikeutta. **Ei alkanut** -tila sallii kaikkien käyttäjien muokata arviointia. **Käsittelyssä**-tilassa olevaa arviointia voi tarkastella ja muokata vain työntekijä. **Valmis tarkistettavaksi** -tilassa olevaa arviointia voi tarkastella ja muokata vain esimies. **Lopullinen arvostelu** -tila sallii sekä työntekijän että esihenkilön tarkastella ja muokata arvostelua, jos **Salli lopullisen arvostelun muokkaukset** -asetus on valittuna arvostelutyypissä. Tilat **Valmis** ja **Peruutettu** asettavat arvioinnin vain luku -tilaan. Jos tarkistus on **Hylätty** ja lähetetään takaisin työntekijälle, sekä työntekijä että esimies voivat tehdä tarvittavat muokkaukset, jotta työntekijä voi lähettää sen uudelleen.
 
 33. Kirjoita arvo kenttään **Yhteenveto**.
 34. Valitse **Arviointi**-välilehti. Arvioinnin tilan vaihtuessa työntekijä ja esimies voivat lisätä kommentteja kullekin tavoitteelle tai osaamisalueelle.  

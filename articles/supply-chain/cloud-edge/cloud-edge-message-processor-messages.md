@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748856"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471641"
 ---
 # <a name="message-processor-messages"></a>Sanoman käsittelijän sanomat
 
@@ -44,7 +44,7 @@ Keskuksen ja yksiköiden käyttöönottoympäristöjen välillä vaihdetaan palj
   - *Jonossa* – Sanoma on valmis sanoman käsittelijän käsiteltäväksi.
   - *Käsitelty* – Sanoman käsittely sanoman käsittelijän toimesta onnistui.
   - *Peruutettu* – Sanoma käsiteltiin, mutta käsittely epäonnistui.
-- **Sanoman sisältö** – Tämän suodattimen avulla voit tehdä tekstihakuja sanoman sisällöstä. (Sanoman sisältöä ei näytetä ruudukossa.) Suodatin käsittelee useimmat erikoissymbolit (kuten ”-”) välilyönteinä ja käsittelee kaikkia välilyöntimerkkejä TAI-totuusarvo-operaattoreina. T=Tämä tarkoittaa esimerkiksi sitä, että jos haet tiettyä `journalid`-arvoa, joka on sama kuin "USMF-123456", järjestelmä etsii kaikki sanomat, joissa on "USMF" tai "123456", joka on todennäköisesti pitkä luettelo. Siksi olisi parempi syöttää vain "123456" siksi, että se palauttaa yksityiskohtaisia tuloksia.
+- **Sanoman sisältö** – Tämän suodattimen avulla voit tehdä tekstihakuja sanoman sisällöstä. (Sanoman sisältöä ei näytetä ruudukossa.) Suodatin käsittelee useimmat erikoissymbolit (kuten ”-”) välilyönteinä ja käsittelee kaikkia välilyöntimerkkejä TAI-totuusarvo-operaattoreina. Tämä tarkoittaa esimerkiksi sitä, että jos haet tiettyä `journalid`-arvoa, joka on sama kuin "USMF-123456", järjestelmä etsii kaikki sanomat, joissa on "USMF" tai "123456", joka on todennäköisesti pitkä luettelo. Siksi olisi parempi syöttää vain "123456" siksi, että se palauttaa yksityiskohtaisia tuloksia.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Sanoman tyypin esimerkki: Varasto-oikaisun taloudellisen päivityksen pyytäminen
 
@@ -65,7 +65,7 @@ Voit etsiä yksityiskohtaisia tietoja sanomasta valitsemalla sen ruudukosta ja a
 
 ## <a name="message-processor-batch-job"></a>Sanoman käsittelijän erätyö
 
-Pilvi- ja reunapalveluita suoritettaessa *Sanoman käsittelijä* -erätyö käynnistyy automaattisesti, kun uusi sanoma luodaan käsittelyä varten, joten tätä työtä ei tarvitse ajoittaa manuaalisesti.
+Suoritettaessa jaettua hybriditopologiaa, jossa on scale uniteja *Sanoman käsittelijä* -erätyö käynnistyy automaattisesti, kun uusi sanoma luodaan käsittelyä varten, joten tätä työtä ei tarvitse ajoittaa manuaalisesti.
 
 Voit tarvittaessa käyttää erätyötä valitsemalla **Järjestelmänvalvonta > Sanoman käsittelijä > Sanoman käsittelijä**.
 

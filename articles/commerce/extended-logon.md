@@ -1,8 +1,8 @@
 ---
 title: Jatketun sisäänkirjautumisen määrittäminen MPOS:ille ja Cloud POS:ille
 description: Tässä aiheessa käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä.
-author: rubencdelgado
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45284ddb3ec082e3bac8a95ed3ba7901cbce2bf303a8523b9c0a7af56938d560
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748543"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478668"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen
 
@@ -58,6 +58,8 @@ Oletuksena vain päälliköt voivat määrittää työntekijöille jatketun sis�
 Poista työntekijälle määritetty jatkettu sisäänkirjautuminen etsimällä työntekijä **Jatkettu kirjautuminen** -toiminnon avulla. Valitse työntekijä ja napsauta sitten **Poista määritys**. Kaikki tälle käyttäjälle määritetyt jatketun kirjautumisen tunnistetiedot poistetaan.
 
 ## <a name="extending-extended-logon"></a>Jatketun kirjautumisen laajentaminen
+
+Laajennettu kirjautuminen sallii valmiin yksilöivän tunnuksen koostuvan vain viidestä merkittävästä merkistä. Jos esimerkiksi määrität kaksi korttia, joiden tunnukset ovat "1234567" ja "1234578", molempien tunnukseksi katsotaan "12345". Voisit luoda laajennuksen tukemaan lisää merkkejä. Yksityiskohtaiset ohjeet [Laajennetun MPOS- ja pilvimyyntipistekirjautumisen laajentaminen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 Kirjautumispalvelua voidaan laajentaa niin, että ne tukevat laajennettuja kirjautumislaitteita kuten käsiskannereita. Lisätietoja on POS-laajennettavuusdokumentaatiossa.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 2fe94ea1afb74520ee97268f62d42832bad5c3df
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384582"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467419"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Suunnittelutuotteiden muutostenhallinta
 
@@ -122,6 +122,9 @@ Voit tarkastella tapahtumia, joihin vaikutus ulottuu, estää valitut tapahtumat
     - **Näytä historia** – Avaa valittuun tapahtumaan liittyvät toimenpiteet käyttämällä **Liiketoimintavaikutukset avoimiin tapahtumiin** -valintaikkunaa. (Historiassa näkyy esimerkiksi, onko ilmoitukset lähetetty vai onko tapahtumia estetty.) 
     - **Tarkastele kaikkia tapahtumia** – Avaa kaikkien tapahtumien koko luettelo, ei vain avoimia tapahtumia.
 
+> [!IMPORTANT]
+> **Ilmoita tuotantoon** -painike on käytettävissä vain, jos *Suunnitteluilmoitukset tuotannolle* -ominaisuus on käytössä järjestelmässä. Ohjeet: [Suunnittelun muutostenhallinnan yleiskatsaus](product-engineering-overview.md).
+
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen
 
 Voit lukea ja käsitellä muutosilmoitukset seuraavasti:
@@ -131,6 +134,9 @@ Voit lukea ja käsitellä muutosilmoitukset seuraavasti:
 - Tuotantotilauksia varten voit tarkistaa vain hallitsemaani tuotantoresursseihin liittyvät muutosilmoitukset. Valitse **tuotannonhallinnan** työtilan toimintoruudusta **Määritä työtila** ja suodata sivu siten, että siinä näkyvät tiedot vain hallitsemistasi tuotantoyksiköistä, ryhmistä ja/tai resursseista. **Yhteenveto**-osassa ruudussa, jonka nimi on **Tuotantotilaukset, joissa on muutettuja tuotteita**, näkyy suodatusasetuksiasi vastaavat ilmoitukset. Valitse tämä ruutu, kun haluat avata **Suunnitteluilmoitukset**-sivun, joka sisältää suodatuksen ehdot täyttävien tapahtumien luettelon.
 
 Kun tarkastelet tuotantotilauksen ilmoituksia **Suunnitteluilmoitukset**-sivulla, voit seurata linkkejä niihin liittyviin muutostilauksiin tai tuotantotilauksiin valitsemalla sarakearvot tai käyttämällä toimintoruudussa olevia komentoja. Kun olet lopettanut muutoksen arvioinnin, voit merkitä ilmoituksen ratkaistuksi, kun olet peruuttanut tai muokannut tuotantotilauksia tarpeen mukaan. Valitse ilmoitus ja valitse sitten toimintoruudusta **Ratkaise**. Ilmoitus poistetaan kaikkien käyttäjien näkymistä.
+
+> [!IMPORTANT]
+> Tuotantotilauksia koskevien ilmoitusten lähettäminen edellyttää, että *Suunnitteluilmoitukset tuotannolle* -ominaisuus on käytössä järjestelmässä. Ohjeet: [Suunnittelun muutostenhallinnan yleiskatsaus](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Muutostilauksen luominen muutospyynnöstä
 

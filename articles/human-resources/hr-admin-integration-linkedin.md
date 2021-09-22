@@ -15,20 +15,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3afce380f1fd6d83c7e05424079e9e4b9e72bdf9ef90ee8baaa26748aab9d4e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fb75c391809f1ce5c7d48728a735f347ef1784ed
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764977"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441262"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn Talent Hub -integrointi
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [banner](includes/preview-feature.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> Tässä aiheessa kuvattu Dynamics 365 Human Resourcesin ja LinkedIn Talent Hubin integraatio poistetaan käytöstä 31. joulukuuta 2021. Integrointipalvelu ei ole enää käytettävissä tämän päivämäärän jälkeen. Organisaatiot, jotka eivät vielä käytä integrointipalvelua, eivät voi ottaa palvelua käyttöön ennen sen käytöstä poistamista.
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) on ATS (hakijoiden seurantajärjestelmä) -ympäristö. Sen avulla voit hakea, hallita ja palkata työntekijöitä samassa paikassa. Kun Microsoft Dynamics 365 Human Resources integroidaan LinkedIn Talent Hubiin, Human Resourcesissa on helppo luoda työntekijätietueita toimeen palkatuille hakijoille.
 

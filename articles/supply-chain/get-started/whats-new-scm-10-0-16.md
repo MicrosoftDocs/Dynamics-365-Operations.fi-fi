@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712046"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474913"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.16 (helmikuu 2021)
 
@@ -54,36 +54,12 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 - [Määriteperusteiset myyntihinnat rajoiteperusteiselle tuotekonfiguraatiolle](../pim/attribute-based-product-configurator.md)
 - [Kulujen automaattinen kohdistaminen](../procurement/automatic-charges-allocation.md)
 - [Vaarallisten materiaalien yleiskatsaus](../pim/hazmat-overview.md) (ja liittyvät aiheet)
-- [Siirtyminen suunnittelun optimoinnin pääsuunnitteluun](../master-planning/new-master-planning-engine.md)
+- [Siirtyminen suunnittelun optimointiin pääsuunnittelua varten](../master-planning/new-master-planning-engine.md)
 - [Ostojen cXML-parannukset](../procurement/purchasing-cxml-enhancements.md)
-- [Kustannusten hallinnan vianmääritys](../cost-management/troubleshoot-costmanagement.md)
-- [Saapuvien varastotoimintojen vianmääritys](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Kuorman luonnin ja lähetysten vianmääritys](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Pääsuunnittelun vianmääritys](../master-planning/troubleshoot-masterplanning.md)
-- [Lähtevien varastotoimintojen vianmääritys](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Osittaisten vapautusten ja osalähetysten vianmääritys](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Tuotteen määritystoiminnon vianmääritys](../pim/troubleshooting-productconfigurator.md)
-- [Tuotetietojen vianmääritys](../pim/troubleshooting-productinformation.md)
-- [Hankinnan työnkulkujen vianmääritys](../procurement/troubleshoot-procurementworkflows.md)
-- [Ostotilauksiin liittyvien ongelmien vianmääritys](../procurement/troubleshoot-purchaseorders.md)
-- [Hintoihin, alennuksiin, sopimuksiin ja ostohyvityksiin liittyvien ongelmien vianmääritys](../procurement/troubleshooting-pricediscountagreements.md)
-- [Tuotteiden vastaanottoihin ja laskutukseen liittyvien ongelmien vianmääritys](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Erillisen valmistuksen vianmääritys](../production-control/troubleshoot-discretemanufacturing.md)
-- [Keräilyn ja pakkauksen vianmääritys](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Prosessivalmistuksen vianmääritys](../production-control/troubleshoot-processmanufacturing.md)
-- [Varastonhallinnan varausten vianmääritys](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Myyntitilauksiin liittyvien ongelmien vianmääritys](../sales-marketing/troubleshooting-sales.md)
-- [Myyntitarjouksiin liittyvien ongelmien vianmääritys](../sales-marketing/troubleshooting-salesquotation.md)
-- [Päivityksen vianmääritys ja siirto edistyneeseen varastonhallintaan](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Varastonhallinnan mobiilisovelluksen yhteysongelmien vianmääritys](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Varaston määrityksen vianmääritys](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Varaston täydennyksen vianmääritys](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Varaston asetusten vianmääritys](../warehousing/troubleshoot-warehouse-setup.md)
-- [Varastotyön vianmääritys](../warehousing/troubleshoot-warehouse-work.md)
 - [Hyllytyksen klusterit](../warehousing/putaway-clusters.md)
 - [Täydennysstrategiat](../warehousing/replenishment-strategies.md)
 - [Työn jako](../warehousing/work-split.md)
-- [Sijaintidirektiivien käyttäminen](../warehousing/create-location-directive.md)
+- [Sijaintidirektiivien käsitteleminen](../warehousing/create-location-directive.md)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

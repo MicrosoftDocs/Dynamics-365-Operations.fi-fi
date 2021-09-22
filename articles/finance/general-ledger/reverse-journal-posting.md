@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae4e25874488890f0eeb601038e308fdc7e89485b5f6a8cf5d5fab713107dfcf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a4fd7c242fc2d857cb35f8ef8c08567c758b768
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753477"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463586"
 ---
 # <a name="reverse-journal-posting"></a>Käänteinen kirjauskansion kirjaus
 
@@ -28,11 +28,15 @@ ms.locfileid: "6753477"
 
 Tässä aiheessa kuvataan Microsoft Dynamics 365 Finance -ominaisuuksia, joiden avulla voit muuttaa koko kirjauskansion tai yhden tai useamman tositteen käänteiseksi tositetapahtumien luettelosta riippumatta niiden alkuperästä. 
 
+Ennen jonkin tässä aiheessa käsitellyn toiminnon käyttöä se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+ - Moduuli: Kirjanpito
+ - Ominaisuuden nimi: **Useiden asiakirjojen joukkoperuutus**
+
 ## <a name="reversing-journals"></a>Kirjauskansioiden muuttaminen käänteiseksi
 
 Voit muuttaa kirjauskansion rivejä käänteisiksi yksittäin. Käänteisen kirjauskansion kirjauksen avulla voit myös muuttaa koko talouskirjauskansion käänteiseksi. Kirjauskansion muuttaminen käänteiseksi: 
 
-- Avaa talouskirjauskansio ja suodata kirjattujen kirjauskansioiden mukaan.
+- Suodata kirjattuja kirjauskansioita ja avaa kirjauskansion **Rivit**-näkymä.
 - Valitse **Käänteinen**-valikko sivun ylälaidasta.
 - Näet tositteiden ja tositerivien kokonaismäärän sekä käänteiseksi muunnettavien rivien kokonaissumman.
 - Valitse **Kyllä** käyttääksesi olemassa olevia tapahtumapäiviä tai **Ei** luodaksesi uuden. Joissakin tapauksissa alkuperäisen tapahtuman ajanjakso voi olla suljettu, ja sinun on syötettävä uusi tapahtumapäivä käänteiseksi muuttamista varten.
@@ -52,7 +56,7 @@ Voit muuttaa tositteita käänteisiksi myös minkä tahansa alareskontran **tosi
 
 Yhden tai usean tositteen muuttaminen käänteiseksi: 
 
-- Valitse **Käänteinen**-valikko sivun ylälaidasta
+- Valitse **Peruuta koko kirjauskansio** -pudotusvalikko sivun ylälaidasta.
 - Näet tositteiden ja tositerivien kokonaismäärän sekä käänteiseksi muunnettavien rivien kokonaissumman.
 - Valitse **Kyllä** käyttääksesi olemassa olevia tapahtumapäiviä tai **Ei** luodaksesi uuden. Joissakin tapauksissa alkuperäisen tapahtuman ajanjakso voi olla suljettu, ja sinun on syötettävä uusi tapahtumapäivä käänteiseksi muuttamista varten.
 - Jos valitsit **Ei**, syötä tapahtumapäivä käänteiseksi muutamista varten. 

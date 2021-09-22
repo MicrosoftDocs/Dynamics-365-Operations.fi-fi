@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731886"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471689"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Varastotilausten pilvi- ja reunapalvelujen scale unitit
 
@@ -27,16 +27,18 @@ ms.locfileid: "6731886"
 
 ## <a name="what-are-warehouse-orders"></a>Mitä varastotilaukset ovat?
 
-*Varastotilaukset* ovat tilaustyyppi, joka luotiin tukemaan keskusta ja scale unitia hyödyntäviä varaston käyttöönottoja. Niiden avulla voidaan vastaanottaa varastoa, kun varastotyökuorma suoritetaan scale unitissa. Niitä käytetään tällä hetkellä vain ostotilausten yhteydessä.
+*Varastotilaukset* ovat tilaustyyppi, jota käytetään tukemaan keskusta ja scale unitia hyödyntäviä varaston käyttöönottoja. Niiden avulla voidaan vastaanottaa ja lähettää varastoa, kun varastotyökuorma suoritetaan scale unitissa.
 
-Varastotilauksia käytetään varastonhallintaprosessien osana esimerkiksi silloin, kun varastonhallinnan mobiilisovelluksella kirjataan fyysinen käytettävissä oleva varasto saapuvan ostotilauksen käsittelyn aikana. Varastotilaukset luodaan *Vapauta varastoon* -prosessin osana. Tätä prosessia voi käyttää ostotilauksissa, jotka määrittävät scale unit -varaston, ja nimikkeissä, joissa varastonhallintaprosessien käyttö on otettu käyttöön.
+Varastotilauksia käytetään sekä saapuvien että lähtevien varastonhallintakäsittelyjen osana. Ne luodaan osana *Varastoon vapautus* -prosessia, joka käynnistetään keskuksessa.
+Saapuvan käsittelyn osalta Warehouse Mobile Appia käytetään fyysisen käytettävissä olevan varaston rekisteröintiin saapuvien tilausten käsittelyssä. Tämä on käytettävissä osto- ja tuotantotilauksissa, joissa eritellään scale unit -varasto ja nimikkeet, joiden osalta voi käyttää varastonhallintaprosesseja.
+Lähteviä varastotilauksia käytetään osana lähetyksen aaltoprosessia siirto- ja ostotilausten osalta.
 
 > [!IMPORTANT]
 > Varastotilaukset ovat käytettävissä vain käyttöönotoissa, joissa käytetään [varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale uniteja](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Varastotilauksen luominen
+## <a name="create-an-inbound-warehouse-order"></a>Saapuvan varastotilauksen luominen
 
-Varastotilaus luodaan seuraavasti:
+Voit luoda saapuvan varastotilauksen ostotilausprosessia varten noudattamalla seuraavia ohjeita.
 
 1. Kirjaudu Microsoftin Dynamics 365 Supply Chain Managementn esiintymään, joka suoritetaan keskuksessa. (*Vapauta varastoon* -prosessi on käynnistettävä keskukseen kirjautuneena.)
 1. Siirry kohtaan **Hankinta ja alihankinta \> Ostotilaukset \> Kaikki ostotilaukset**.

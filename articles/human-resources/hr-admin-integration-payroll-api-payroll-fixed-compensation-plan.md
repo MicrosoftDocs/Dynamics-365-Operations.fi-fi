@@ -2,7 +2,7 @@
 title: Palkanlaskennan kiinteän kompensaation suunnitelma
 description: Tämä ohjeaihe sisältää tietoja ja esimerkkikyselyn palkanlaskennan kiinteän kompensaatiosuunnitelman yksiköstä Dynamics 365 Human Resourcesissa.
 author: jcart
-ms.date: 04/07/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1e5345d9f27106bdf3a3a60cb0480a9b072e340c01236e4d48c5e2ae592ddbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738388"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429219"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Palkanlaskennan kiinteän kompensaation suunnitelma
 
@@ -34,18 +34,27 @@ Fyysinen nimi: mshr_payrollfixedcompensationplanentity.
 
 ## <a name="properties"></a>Ominaisuudet
 
-| Ominaisuus<br>**Fyysinen nimi**<br>**_Laji_** | Käytä | kuvaus |
+| Ominaisuus</br>**Fyysinen nimi**</br>**_Laji_** | Käytä | kuvaus |
 | --- | --- | --- |
-| **Työntekijän tunnus**<br>mshr_fk_employee_id_value<br>*GUID* | Vain luku<br>Vaadittu<br>Foreign key:mshr_Employee_id of mshr_payrollemployeeentity entity  | Työntekijän tunnus |
-| **Palkkio**<br>mshr_payrate<br>*Desimaali* | Vain luku<br>Vaadittu | Kiinteässä kompensaatiosuunnitelmassa määritetty palkkio. |
-| **Suunnitelman tunnus**<br>mshr_planid<br>*Merkkijono* | Vain luku<br>Vaadittu |Määrittää kompensaatiosuunnitelman.  |
-| **Voimassaolo alkaa**<br>mshr_validfrom<br>*Päivämäärä aika siirros* |  Vain luku<br>Vaadittu |Päivämäärä, josta alkaen työntekijän kiinteä kompensaatio on voimassa.  |
-| **Palkanlaskennan kiinteän kompensaatiosuunnitelman yksikkö**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Vaadittu<br>Järjestelmän luoma | Järjestelmän luoma GUID-arvo, jonka avulla kompensaatiosuunnitelma voidaan yksilöivästi tunnistaa. |
-| **Maksutiheys**<br>mshr_payfrequency<br>*Merkkijono* | Vain luku<br>Vaadittu |Kuinka usein työntekijälle maksetaan palkkoja.  |
-| **Voimassaolo päättyy**<br>mshr_validto<br>*Päivämäärä aika siirros* | Vain luku <br>Vaadittu | Päivämäärä, johon asti työntekijän kiinteä kompensaatio on voimassa. |
-| **Toimen tunnus**<br>mshr_positionid<br>*Merkkijono* | Vain luku <br>Vaadittu | Työntekijään ja kiinteän kompensaation suunnitelman rekisteröintiin liittyvän toimen tunnus. |
-| **Valuutta**<br>mshr_currency<br>*Merkkijono* | Vain luku <br>Vaadittu |Kiinteälle kompensaatiosuunnitelmalle määritetty valuutta   |
-| **Henkilöstönumero**<br>mshr_personnelnumber<br>*Merkkijono* | Vain luku<br>Vaadittu |Työntekijän yksilöivä henkilökuntanumero.  |
+| **Suunnitelman tunnus**</br>mshr_planid</br>*Merkkijono* | Vain luku | Määrittää kompensaatiosuunnitelman.  |
+| **Henkilöstönumero**</br>mshr_personnelnumber</br>*Merkkijono* | Vain luku | Työntekijän yksilöivä henkilökuntanumero. |
+| **Palkkio**</br>mshr_payrate</br>*Desimaali* | Vain luku | Kiinteässä kompensaatiosuunnitelmassa määritetty palkkio. |
+| **Toimen tunnus**</br>mshr_positionid</br>*Merkkijono* | Vain luku | Työntekijään ja kiinteän kompensaation suunnitelman rekisteröintiin liittyvän toimen tunnus. |
+| **Voimassaolo alkaa**</br>mshr_validfrom</br>*Päivämäärä aika siirros* |  Vain luku | Päivämäärä, josta alkaen työntekijän kiinteä kompensaatio on voimassa.  |
+| **Voimassaolo päättyy**</br>mshr_validto</br>*Päivämäärä aika siirros* | Vain luku | Päivämäärä, johon asti työntekijän kiinteä kompensaatio on voimassa. |
+| **Maksutiheys**</br>mshr_payfrequency</br>*Merkkijono* | Vain luku | Kuinka usein työntekijälle maksetaan palkkoja.  |
+| **Valuutta**</br>mshr_currency</br>*Merkkijono* | Vain luku | Kiinteälle kompensaatiosuunnitelmalle määritetty valuutta. |
+| **Palkanlaskennan kiinteän kompensaatiosuunnitelman yksikkö**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Järjestelmän luoma | Järjestelmän luoma GUID-arvo, jonka avulla kompensaatiosuunnitelma voidaan yksilöivästi tunnistaa. |
+
+## <a name="relations"></a>Suhteet
+
+|Ominaisuuden arvo | Liittyvä yksikkö | Siirtymisominaisuus | Kokoelmatyyppi |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
 
 ## <a name="example-query"></a>Esimerkkikysely
 

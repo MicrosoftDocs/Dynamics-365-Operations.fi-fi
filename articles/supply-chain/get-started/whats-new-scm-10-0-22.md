@@ -1,0 +1,89 @@
+---
+title: Dynamics 365 Supply Chain Managementin esiversio 10.0.22 (Marraskuu 2021)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.22 uusia tai muuttuneita ominaisuuksia.
+author: kamaybac
+ms.date: 08/09/2021
+ms.topic: article
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2021-08-02
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 6fc4b9d0a0f5319c8a75e7d687ee82ea81497844
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471857"
+---
+# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Managementin esiversio 10.0.22 (Marraskuu 2021)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.22 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.995. Se on käytettävissä seuraavasti:
+
+- **Julkaisun esiversio:** Syyskuu 2021
+- **Version yleinen saatavuus (oma päivitys):** lokakuu 2021
+- **Version yleinen saatavuus (automaattinen päivitys):** marraskuu 2021
+
+## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
+
+Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. *Ominaisuus*-sarakkeessa on linkki [julkaisusuunnitelmaan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), jossa voit tarkastella kuinkin ominaisuuden virallisia julkaisupäiviä. *Lisätietoja*-sarakkeessa on lisätietoja ja/tai linkkejä liittyvään dokumentaatioon. Ominaisuuden käyttöönottotapa selviää *Mahdollistaja*-sarakkeesta. Lisätietoja ominaisuuksienhallinen käytöstä: [Ominaisuuksienhallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tämän aiheen päivitys saattaa sisältää ominaisuuksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+
+| Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
+|---|---|---|---|
+| Suunnittelu | [Suorituskykypohjaisen resurssikohdistuksen suunnittelun optimoinnin tuki](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Ajoitus rajattoman kapasiteetin avulla](../master-planning/planning-optimization/infinite-capacity-planning.md) | Ominaisuuksienhallinta: (*Suunnittelun optimoinnin ääretön kapasiteetin ajoitus*) |
+
+## <a name="feature-enhancements-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnon parannukset
+
+Seuraavassa taulukossa on tämän julkaisun sisältämät ominaisuuksien parannukset. Jokainen näistä parannuksista parantaa aiemmin luotua toimintoa lisäysten avulla. Koska ne ovat vain parannuksia, niitä ei ole lueteltu [vapautussuunnitelmassa](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). Jos kuitenkin haluat varmistaa, että nämä parannukset eivät ole ristiriidassa aiemmin luotujen mukautuksiesi tai asetuksesi kanssa, kaikki muutokset ovat oletusarvon mukaan pois käytöstä (ellei toisin ilmoiteta). Jos haluat käyttää mitä tahansa näistä ominaisuuksista, ne on nimenomaisesti otettava käyttöön [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Ominaisuusalue | Ominaisuuden nimi ominaisuuksienhallinnassa | Lisätietoja |
+|---|---|---|
+| Kustannushintojen hallinta | Asiaan liittyvien tositteiden luonti vakiokustannusten pyöristysten uudelleenarvostuksille | <p>Kun tehdään varaston taloushallinnollinen kirjaus (kuten myyntitilauslasku tai varastonsiirto), tämä ominaisuus saa järjestelmän luomaan erillisen tositteen kaikille asiaan liittyville vakiokustannusten pyöristysten udelleenarvostuksille ja liittämään sen taloushallinnollisen kirjauksen tositteeseen asiaan liittyvänä tositteena.</p><p>Ilman tätä ominaisuutta, järjestelmä tallentaa vakiokustannusten pyöristysten uudelleenarvostukset samalle tositekirjaukselle. Tämä toimintatapa voi joskus aiheuttaa ristiriitaisia päivämäärätietoja, koska uudelleenarvostukset käyttävät istunnon tai järjestelmän päivämäärää, kun taas taloushallinnolliset kirjaukset käyttävät kirjauspäivämäärää.</p> |
+| Jaettu hybriditopologia | *(Ominaisuuksienhallintaa ei tarvita.)* | <p>Tämä julkaisu laajentaa varastonhallinnan työkuorman kuormansuunnittelun ominaisuuksia pilven ja reunan asteikon yksiköitä varten.</p><p>Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
+| Suunnittelun muutosten hallinta | Muuttujien luominen suunnittelun tuotteille | <p>Tämän ominaisuuden avulla voit luoda suunnittelutuotteelle useita variantteja värin, koon, tyylin tai määritysdimensioiden perusteella.</p><p>Lisätietoja: [Varianttien luominen suunnittelutuotteista](../engineering-change-management/engineering-variants.md).</p> |
+| Varastonhallinta | Varaston näkyvyyden integrointi ja varauksen siirtymä | <p>Tämä ominaisuus voidaan ottaa käyttöön vasta, kun *Varastonäkyvyyden integrointi* -ominaisuus on otettu käyttöön. Se tarjoaa toiminnon, jolla varastonäkyvyydessä tehtyjä varauksia voi vastakirjata.</p><p>Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](../inventory/inventory-visibility-reservations.md).</p> |
+| Myynti ja markkinointi | Rajoita kirjausta varten valittavien myyntitilausten määrää | <p>Tämä ominaisuus on automaattisesti käytössä. Se lisää **Kirjattavien myyntitilausten enimmäismäärä** -kentän **Myyntireskontran parametrit** -sivulle. Tällä kentällä voidaan määrittää, kuinka monta myyntitilausta voidaan enintään valita, kun vahvistuksia, keräysluetteloita, pakkausluetteloita ja laskuja kirjataan myyntitilausten luettelosivulta. Oletusarvona on *100*.</p><p>Ominaisuus auttaa parantamaan myyntitilausten luettelosivun suorituskykyä, kun merkittävä määrä myyntitilauksia valitaan. Se ei vaikuta myyntitilausten määrään, jotka voidaan käsitellä kausittaisen tehtävän perusteella.</p> |
+
+## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
+
+Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittävästi. Nämä ohjeaiheet eivät välttämättä liity tällä julkaisulla lisättyihin, edellisessä osassa lueteltuihin uusiin ominaisuuksiin. Niiden avulla saatat kuitenkin saada enemmän irti olemassa olevista ominaisuuksista.
+
+| Ominaisuusalue | Uudet tai päivitetyt ohjeaiheet |
+|---|---|
+| Suunnittelun muutosten hallinta | [Suunnittelun muutostenhallinnan yleiskuvaus](../engineering-change-management/product-engineering-overview.md) luetteloi nyt kaikki asiaan liittyvät valinnaiset ominaisuudet, jotka ovat käytettävissä ominaisuuksienhallinnassa |
+| Pääsuunnittelu | [Kysynnän ennusteiden asetukset](../master-planning/demand-forecasting-setup.md) |
+| Pääsuunnittelu | [Nettotarpeet ja tarvekohdistustiedot suunnittelun optimoinnin avulla](../master-planning/planning-optimization/net-requirements.md) |
+| Varastonhallinta   | [Vapautus varastoon](../warehousing/release-to-warehouse-process.md) antaa yksityiskohtaisen yhteenvedon täydestä varastoon vapautuksen prosessista |
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
+
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (marraskuu 2021) käyttöympäristön päivitysversio 10.0.22](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
+
+### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
+
+Saat lisätietoja version 10.0.22 virheenkorjauksista päivityksissä kirjautumalla sisään Lifecycle Services (LCS) -sovellukseen ja tarkastelemalla [Knowledge Base -artikkelia](https://fix.lcs.dynamics.com/Issue/Details?bugId=615299).
+
+### <a name="dynamics-365-and-industry-clouds-2021-release-wave-2-plan"></a>Dynamics 365:n ja toimialan pilvipalvelu: 2021 julkaisuaalto 2 -suunnitelma
+
+Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
+
+Katso [Dynamics 365:n ja toimialan pilvipalvelu: 2021 julkaisuaalto 2 -suunnitelma](/dynamics365-release-plan/2021wave2/). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+
+### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
+
+[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
+
+- *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
+- *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
+
+Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
+
+Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
