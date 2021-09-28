@@ -2,7 +2,7 @@
 title: Tuottokirjauksen uudelleenkohdistus
 description: Tässä ohjeaiheessa kerrotaan uudelleenkohdistuksesta, jonka avulla organisaatiot voivat laskea tuottohinnat uudelleen, kun sopimusmyynnin ehtoja muutetaan. Se sisältää linkkejä muihin aiheisiin, joissa kuvataan, miten tuotto kirjataan erilaisissa skenaarioissa.
 author: kweekley
-ms.date: 12/21/2020
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50ae395c370947e348714ce5685123328849966f3a67903e9ddf8c27dee42f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53304842bdbe7dadb435ab3a0381f3835c2c443a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745034"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487015"
 ---
 # <a name="revenue-recognition-reallocation"></a>Tuottokirjauksen uudelleenkohdistus
 
@@ -35,10 +35,22 @@ Organisaation on itse määritettävä, tarvitaanko uudelleenkohdistusta. Uuden 
 Uudelleenkohdistusprosessissa on muutamia tärkeitä rajoituksia:
 
 - Prosessi voidaan suorittaa vain kerran. Siksi on tärkeää, että suoritat sen vasta, kun kaikki muutokset on tehty.
+
+    - Tämä rajoitus poistetaan versiosta 10.0.17 ja sitä myöhemmistä versioista.
+
 - Prosessia ei voi suorittaa projektin myyntitilauksille.
+
+    - Tämä rajoitus poistetaan versiosta 10.0.17 ja sitä myöhemmistä versioista.
+
 - Jos prosessiin liittyy useita myyntitilauksia, niiden on oltava samalle asiakastilille.
 - Kaikkien uudelleenkohdistettavien myyntitilausten tapahtumavaluutan on oltava sama.
 - Prosessia ei voi peruuttaa tai kumota sen jälkeen, kun se on suoritettu.
+
+    - Tämä rajoitus poistetaan versiosta 10.0.17 ja sitä myöhemmistä versioista.
+
+- Uudelleenkohdistuksen voi tehdä vain joko myyntitilauksille tai projektin myyntitilauksille. Sitä ei voi tehdä myyntitilausten ja projektin myyntitilausten yhdistelmälle.
+
+    - Tämä rajoitus poistetaan versiosta 10.0.17 ja sitä myöhemmistä versioista.
 
 ## <a name="set-up-reallocation"></a>Uudelleenkohdistuksen määrittäminen
 
@@ -78,7 +90,7 @@ Voit käynnistää uudelleenkohdistusprosessin valitsemalla **Uudelleenkohdista 
 
 [![Uudelleenkohdista hinta uusilla tilausriveillä ‑sivu.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-**Uudelleenkohdista hinta uusilla tilausriveillä** ‑sivun ylemmän ruudukon nimi on **Myynti**. Siinä on lueteltu asiakkaan myyntitilaukset. Valitse myyntitilaukset, jotka on kohdistettava uudelleen. Projektin myyntitilauksia ei voi valita, koska projektin myyntitilauksia ei voi kohdistaa uudelleen. Et myöskään voi valita myyntitilauksia, joilla on jo uudelleenkohdistustunnus, koska muut kuin projektin myyntitilaukset voidaan kohdistaa uudelleen vain kerran. Jos myyntitilauksella on uudelleenkohdistustunnus, toinen käyttäjä on jo merkinnyt sen uudelleenkohdistettavaksi.
+**Uudelleenkohdista hinta uusilla tilausriveillä** ‑sivun ylemmän ruudukon nimi on **Myynti**. Siinä on lueteltu asiakkaan myyntitilaukset. Valitse myyntitilaukset, jotka on kohdistettava uudelleen. Jos myyntitilauksella on uudelleenkohdistustunnus, toinen käyttäjä on jo merkinnyt sen uudelleenkohdistettavaksi. Jos jotkin myyntitilaukset on uudelleenkohdistettu jo aiemmin ja sisällytettävä nyt toiseen uudelleenkohdistukseen, kyseisten myyntitilausten uudelleenkohdistus on ensin kumottava. Sen jälkeen ne voidaan sisällyttää uuteen uudelleenkohdistukseen. Lisätietoja on jäljempänä tässä ohjeaiheessa kohdissa [Uudelleenkohdistuksen kumoaminen](#undo-a-reallocation) ja [Uudelleenkohdistaminen useita kertoja](#reallocate-multiple-times).
 
 Sivun alemman ruudukon nimi on **Rivit**. Kun olet valinnut **Myynti**-ruudukosta yhden tai useamman myyntitilauksen, myyntitilausrivit näkyvät **Rivit**-ruudukossa. Valitse myyntitilausrivit, jotka on kohdistettava uudelleen. Jos olet valinnut vain yhden myyntitilauksen, saman myyntitilauksen rivit on kohdistettava uudelleen. Näin voi tapahtua, kun jokin myyntitilausriveistä on laskutettu aiemmin ja sitten on lisätty uusi rivi tai aiemmin luotu rivi on poistettu tai peruutettu. Jos rivi on poistettu, se ei näy ruudukossa. Näin ollen sitä ei voi valita. Se otetaan kuitenkin edelleen huomioon, kun uudelleenkohdistusprosessi suoritetaan.
 
@@ -104,6 +116,26 @@ Kun olet valinnut tarvittavat myyntitilausrivit, käytä toimintoruudun painikke
 
 - **Tyhjennä valitun asiakkaan tiedot** – jos uudelleenkohdistusprosessi on aloitettu, mutta se ei ole valmistunut, tyhjennä uudelleenkohdistustaulun tiedot vain valitun asiakkaan osalta. Tällainen on esimerkiksi tilanne, jossa merkitset useita myyntitilausrivejä uudelleenkohdistusta varten ja jätät sivun auki valitsematta **Käsittele**, minkä jälkeen sivu aikakatkaistaan. Tällöin myyntitilausrivit säilyvät merkittyinä eivätkä ne ole toisen käyttäjän käytettävissä uudelleenkohdistusprosessin viimeistelyä varten. Sivu saattaa jopa olla tyhjä, kun se avataan. Tässä tilanteessa voit tyhjentää käsittelemättömät myyntitilaukset **Tyhjennä valitun asiakkaan tiedot** -painikkeen avulla, jotta toinen käyttäjä voi viimeistellä uudelleenkohdistusprosessin.
 
+## <a name="undo-a-reallocation"></a>Uudelleenkohdistuksen kumoaminen
+
+Uudelleenkohdistus kumotaan suorittamalla toinen uudelleenkohdistus. Uudelleenkohdistus tehdään uudelleen, ja käyttäjä valitsee eri myyntitilausrivit sisällytettäviksi toiseen uudelleenkohdistusprosessiin.
+
+Jos uudelleenkohdistus on tehty kahdelle tai useammalle erilliselle myyntitilaukselle, sen voi kumota valitsemalla **Kohdista hinta uudelleen uusille tilausriveille** missä tahansa myyntitilauksessa, joka sisältyy uudelleenkohdistukseen. Et voi kumota uudelleenkohdistusta valitsemalla **Tuottokirjaus \> Kausittaiset tehtävät \> Kohdista hinta uudelleen uusille tilausriveille**, koska tällä tavalla avautuvalla sivulla näkyvät vain myyntitilaukset, joilla ei ole uudelleenkohdistustunnusta. Uudelleenkohdistustunnus määritetään sen jälkeen, kun asiakirja on kohdistettu uudelleen.
+
+Poista **Kohdista hinta uudelleen uusille tilausriveille** ‑sivulla sellaisten myyntitilausten merkintä, jotka tulisi jättää pois sopimuksesta. Käytä uudelleenkohdistuksen käsittelyyn asianmukaisia toimintoruudun painikkeita, kuten **Päivitä uudelleenkohdistus** ja **Käsittele**. Jos kaikilta myyntitilauksilta paitsi aktiiviselta myyntitilaukselta puuttuu merkintä, uudelleenkohdistus tunnus poistetaan, kun muutos käsitellään.
+
+Jos uudelleenkohdistus on tehty lisäämällä uusi rivi kokonaan tai osittain laskutettuun myyntitilaukseen, uudelleenkohdistuksen voi kumota vain poistamalla kyseinen rivi myyntitilauksesta ja suorittamalla sitten uudelleenkohdistus uudelleen. Myyntitilausrivi on poistettava, koska kaikkien myyntitilauksen rivien oletetaan olevan osa samaa sopimusta. Et voi poistaa myyntitilausrivin merkintää, kun olet **Kohdista hinta uudelleen uusille tilausriveille** ‑sivulla.
+
+## <a name="reallocate-multiple-times"></a>Uudelleenkohdistaminen useita kertoja
+
+Samalle myyntitilaukselle voi tehdä useita uudelleenkohdistuksia, jos sopimukseen on tehty useita muutoksia. Jokainen uudelleenkohdistus aiheuttaa uudelleenkohdistustunnuksen määrittämisen myyntitilaukselle tai myyntitilausryhmälle muutosten ryhmittelyä varten. Jos uudelleenkohdistuksia tehdään useita, jokainen uusi uudelleenkohdistus käyttää samaa uudelleenkohdistustunnusta kuin ensimmäinen uudelleenkohdistus.
+
+Esimerkki: Syötetään myyntitilaus 00045, jossa on useita rivejä. Kun myyntitilaus on laskutettu kokonaan, siihen lisätään uusi myyntitilausrivi. Tämän jälkeen suoritetaan uudelleenkohdistus avaamalla **Kohdista hinta uudelleen uusille tilausriveille** ‑sivu joko myyntitilauksesta 00045 tai valitsemalla **Tuottokirjaus \> Kausittaiset tehtävät \> Kohdista hinta uudelleen uusille tilausriveille**. Myyntitilaukselle määritetään uudelleenkohdistustunnus **Reall000001**.
+
+Samalle sopimukselle luodaan toinen myyntitilaus 00052. Uudelleenkohdistuksen voi suorittaa uudelleen avaamalla **Kohdista hinta uudelleen uusille tilausriveille** ‑sivun myyntitilauksesta 00045, mutta ei myyntitilauksesta 00052. Jos avaat **Kohdista hinta uudelleen uusille tilausriveille** ‑sivun myyntitilauksesta 00052, myyntitilausta 00045 ei näytetä, koska sille on määritetty uudelleenkohdistustunnus. Sivulla näkyvät vain myyntitilaukset, joilla ei ole uudelleenkohdistustunnusta.
+
+Toisen uudelleenkohdistuksen voi tehdä kahdella tavalla. Voit kumota myyntitilauksen 00045 uudelleenkohdistuksen. Tässä tapauksessa uudelleenkohdistustunnus poistetaan, minkä jälkeen voit tehdä uudelleenkohdistuksen joko myyntitilauksesta 00045 tai myyntitilauksesta 00052. Vaihtoehtoisesti voit avata **Kohdista hinta uudelleen uusille tilausriveille** ‑sivun myyntitilauksesta 00045 ja lisätä toisen myyntitilauksen. Kun uudelleenkohdistusta käsitellään, uudelleenkohdistustunnus **Reall000001** määritetään sekä myyntitilaukselle 00045 että myyntitilaukselle 00052.
+
 ## <a name="scenarios-for-reallocation"></a>Uudelleenkohdistusskenaariot
 
 Seuraavissa ohjeaiheissa käsitellään erilaisia tuottojen kirjaamisen skenaarioita:
@@ -112,6 +144,5 @@ Seuraavissa ohjeaiheissa käsitellään erilaisia tuottojen kirjaamisen skenaari
 - [Tuottokirjauksen uudelleenkohdistus – skenaario 2](rev-rec-reallocation-scenario-2.md) – kaksi myyntitilausta syötetään, ja sitten asiakas lisää nimikkeen sopimukseen ensimmäisen myyntitilauksen laskuttamisen jälkeen.
 - [Tuottokirjauksen uudelleenkohdistus – skenaario 3 ](rev-rec-reallocation-scenario-3.md) – aiemmin luotuun, laskutettuun myyntitilaukseen lisätään uusi rivi.
 - [Tuottokirjauksen uudelleenkohdistus – skenaario 4 ](rev-rec-reallocation-scenario-4.md) – aiemmin luodusta, osittain laskutetusta myyntitilauksesta poistetaan rivi.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

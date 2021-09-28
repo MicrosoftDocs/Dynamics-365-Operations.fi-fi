@@ -1007,10 +1007,14 @@
                 - name: Suunniteltu ylläpitoajankohta – usein kysytyt kysymykset
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Valvonta ja diagnostiikka
-              href: lifecycle-services/monitoring-diagnostics.md
+              items:
+                - name: Valvonta- ja diagnostiikkatyökalut
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Azure Data Explorerin käyttäminen raakatietolokien kyselemiseen
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Ympäristöpalvelujen käynnistäminen uudelleen
               href: lifecycle-services/restart-environment-services.md
-            - name: Raportoi tuotantokatkos
+            - name: Tuotantokatkoksesta ilmoittaminen
               href: lifecycle-services/report-production-outage.md
             - name: Käyttäjien sisäänkirjautumisten seuraaminen
               href: lifecycle-services/user-logins.md

@@ -102,8 +102,6 @@
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (elokuu 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
-                    - name: Commerce 10.0.19 (kesäkuu 2021)
-                      href: get-started/whats-new-commerce-10-0-19.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -668,6 +666,8 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: Kauppasopimusten luominen luokan hinnoittelusääntöjen avulla
                   href: tasks/category-pricing-rules-trade-agreements.md
+                - name: Tarkan hinnan ja alennuksen laskennan viivytys
+                  href: delayed-price-calculation.md
             - name: Suositukset
               items:
                 - name: Tuotesuositusten yleiskatsaus
@@ -1326,8 +1326,10 @@
                   href: localizations/latam-bra-nfce-cancel-return.md
                 - name: Offline-varasuunnitelmatilassa tehtyjen NFC-e-asiakirjojen viivytetty rekisteröinti
                   href: localizations/latam-bra-nfce-contingency-mode.md
-                - name: Julkaise Brasilian veroasiakirjoja vähittäismyynnin tiliotteiden avulla Commerce-pääkonttorissa
+                - name: Brasilian veroasiakirjojen julkaiseminen vähittäismyynnin tiliotteiden avulla Commerce-pääkonttorisovelluksessa
                   href: localizations/latam-bra-retail-statements.md
+                - name: Dynamics 365 Payment Connector Adyenia varten Brasilian Commerce-myyntipisteessä
+                  href: localizations/latam-bra-adyen.md
             - name: Itä-Eurooppa
               items:
                 - name: Yleinen
@@ -2436,7 +2438,7 @@
                       href: e-commerce-extensibility/event-based-data-actions.md
                     - name: Perustietotoiminnot
                       href: e-commerce-extensibility/core-data-actions.md
-                    - name: Retail Server -ohjelmointirajapintojen kutsuminen
+                    - name: Commerce Scale Unit -ohjelmointirajapintojen kutsuminen
                       href: e-commerce-extensibility/call-retail-server-apis.md
                     - name: Retail Server -ohjelmointirajapintalaajennusten kutsuminen
                       href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2514,8 +2516,6 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: 'Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten'
                   href: dev-itpro/build-pipeline.md
-                - name: Commerce- ja Finance and Operations -koontijärjestelmien yhdistäminen
-                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: 'Retail SDK:n siirtäminen Visual Studio 2015:stä Visual Studio 2017:ään'
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: 'Retail SDK:n laajennettavuusmallit'
@@ -2628,8 +2628,6 @@
                               href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Hardware Stationin laajennettavuus
               items:
-                - name: Hardware Station ja laajennettavuus
-                  href: dev-itpro/hardware-station-extensibility.md
                 - name: Myyntipisteen integroiminen uuteen laitteeseen
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Serverin laajennettavuus

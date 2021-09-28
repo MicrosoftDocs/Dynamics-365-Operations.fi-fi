@@ -80,8 +80,6 @@
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (elokuu 2021)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (kesäkuu 2021)
-                      href: get-started/whats-new-changed-10-0-19.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -450,6 +448,8 @@
                   href: accounts-receivable/tasks/review-collections-information.md
                 - name: Perintäprosessin automatisointi
                   href: accounts-receivable/collections-process-automate.md
+                - name: Perintäprosessien automatisoinnin parametrien määrittäminen
+                  href: accounts-receivable/config-paramtrs-collections-proc-automate.md
                 - name: Luotonhallinnan määritys
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Luotonhallinta-asetusten tiedot
@@ -1635,7 +1635,9 @@
                 - name: ALV-ilmoitus
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Kansainväliset palvelut -raportti
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
+                - name: Intrastats-raportti
+                  href: localizations/emea-aut-intrastat.md
                 - name: Ostoverot
                   href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
@@ -1668,6 +1670,8 @@
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: PRODCOM-tietojen määrittäminen ja ylläpito
                   href: localizations/emea-bel-prodcom-report.md
+                - name: Kotimaan myynnin vuosittainen ALV-luettelo
+                  href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
             - name: Brasilia
               items:
                 - name: Brasilia – yleiskatsaus
@@ -1942,7 +1946,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: Raporttien ja asiakirjojen summien esitysmuodon päivittäminen
                   href: localizations/emea-amount-printing-forms.md
-                - name: VAT-ilmoitus
+                - name: ALV-ilmoitus
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: ALV-ilmoitus (Tšekin tasavalta)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
@@ -2376,7 +2380,7 @@
                               href: localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
                         - name: Veroasetukset
                           items:
-                            - name: Verokokoonpanon määrittäminen ja ottaminen käyttöön oikeushenkilöille
+                            - name: Verokokoonpanon määrittäminen ja ottaminen käyttöön yrityksille
                               href: localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
                             - name: Kokoonpanon verotyyppien kartoittaminen - Mukautetut
                               href: localizations/apac-ind-GST-map-configuration-tax-types.md
@@ -2974,9 +2978,11 @@
                   href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
                 - name: Sähköiset laskut
                   href: localizations/latam-mex-CFDI-electronic-invoices.md
+                - name: Rahtikirjan (Carta de Porte) täydennys (versio 1.0)
+                  href: localizations/latam-mex-carta-de-porte.md
                 - name: Sähköiset kirjanpitoilmoitukset
                   href: localizations/latam-mex-electronic-ledger-accounting-statements.md
-                - name: Kirjoita veron rekisteröintitunnukset Meksikon oikeushenkilöille
+                - name: Veron rekisteröintitunnusten kirjoittaminen Meksikon yrityksille
                   href: localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
                 - name: Pyydä ja tulosta sähköinen lasku
                   href: localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
@@ -2994,19 +3000,13 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Toimittajien rekisteröintitunnukset
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Oman
-              items:
-                - name: Oman – yleiskatsaus
-                  href: localizations/oman.md
-                - name: Omanin ALV-ilmoitus (OM-00003)
-                  href: localizations/emea-oma-vat-declaration.md
             - name: Alankomaat
               items:
                 - name: Alankomaat – yleiskatsaus
                   href: localizations/netherlands.md
                 - name: ALV-ilmoitus
                   href: localizations/emea-nl-VAT-declaration.md
-                - name: Sähköiset ALV-ilmoitukset
+                - name: Sähköiset veroilmoitukset (EVAT)
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL -integrointi
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
@@ -3016,6 +3016,10 @@
                   href: localizations/emea-nl-vat-declaration-netherlands.md
                 - name: EU-myyntiluettelo
                   href: localizations/emea-nl-EU-sales-list.md
+            - name: Uusi-Seelanti
+              items:
+                - name: GST-veroilmoituslomake GST101A Uutta-Seelantia varten (NZ-00003)
+                  href: localizations/apac-nzl-gst-declaration.md
             - name: Norja
               items:
                 - name: Norja – yleiskatsaus
@@ -3028,10 +3032,16 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: ALV-ilmoitus
                   href: localizations/emea-nor-sales-tax-payment-report.md
-                - name: Verotuksen perustarkistustiedosto (SAF-T) - Norja
+                - name: Verotuksen perustarkistustiedosto (SAF-T) – Norja
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Asiakkaiden sähköiset laskut Norjassa
                   href: localizations/emea-nor-e-invoices.md
+            - name: Oman
+              items:
+                - name: Oman – yleiskatsaus
+                  href: localizations/oman.md
+                - name: Omanin ALV-ilmoitus (OM-00003)
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Puola
               items:
                 - name: Puola – yleiskatsaus
@@ -3450,20 +3460,20 @@
                           href: localizations/emea-gbr-mtd-vat-integration.md
                         - name: 'Ympäristön valmisteleminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
                           href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: 'Finance-ympäristön valtuuttaminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: 'Toiminnan testaaminen ALV:n määrittäminen digitaaliseksi -eristyksen kanssa'
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: 'ALV-palautuksen lähettäminen HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalveluun'
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: 'Tarkistusluettelo sähköisten sanomien määrittämiselle ALV:n määrittäminen digitaaliseksi -verkkopalvelussa'
                           href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: ALV-ilmoituksen luominen paperimuodossa (ALV 100 -raportti)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-                        - name: ALV-asetustiedot Yhdistyneen kuningaskunnan ALV-ilmoituksia varten
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: 'Toiminnan testaaminen ALV:n määrittäminen digitaaliseksi -eristyksen kanssa'
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: 'Finance-ympäristön valtuuttaminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: 'ALV-palautuksen lähettäminen HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalveluun'
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: 'ALV-maksujen ja velkojen tietojen noutaminen HMRC:stä'
                           href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                        - name: ALV-asetustiedot Yhdistyneen kuningaskunnan ALV-ilmoituksia varten
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: ALV-ilmoituksen luominen paperimuodossa (ALV 100 -raportti)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Maksukäytäntöjen raportin tilastot
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Yhdysvallat
@@ -4119,6 +4129,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: Sarakkeiden lisääminen dynaamisesti Excel-raportteihin muotoja suorittamalla
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                    - name: Sähköisen raportoinnin muodon suunnitteleminen luotujen tiedostojen sivutusta varten Excelissä
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Konfiguraatioiden suunnitteleminen raporttien luontiin Word-muodossa
                   items:
                     - name: Uuden sähköisen raportoinnin konfiguraation suunnitteleminen raporttien luomiseksi Word-muodossa
