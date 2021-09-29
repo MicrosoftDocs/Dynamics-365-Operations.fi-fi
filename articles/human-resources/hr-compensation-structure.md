@@ -1,8 +1,8 @@
 ---
 title: Kompensaatiorakenteen kehittäminen
-description: Tässä artikkelissa kerrotaan kiinteän kompensaatiosuunnitelman luomisesta ja siitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla.
-author: andreabichsel
-ms.date: 02/10/2020
+description: Tässä aiheessa kerrotaan kiinteän kompensaatiosuunnitelman luomisesta ja siitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPar
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2649a392b5c8bb2482622eba22b0b2f458058314dce25a8b9032eb2ef518240c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec30d6259b755bf7c304e8796b32d373027ce7ff
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732366"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483949"
 ---
 # <a name="develop-a-compensation-structure"></a>Kompensaatiorakenteen kehittäminen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä artikkelissa kerrotaan kiinteän kompensaatiosuunnitelman luomisesta ja siitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla. Tässä artikkelissa käytetään USMF-esittelytietoja. Artikkeli on tarkoitettu kompensaatio- ja etuuspäälliköille.
+Tässä aiheessa kuvaillaan kiinteän kompensaatiosuunnitelman luomista ja sitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla. Tässä aiheessa käytetään USMF-esittelytietoja. Artikkeli on tarkoitettu kompensaatio- ja etuuspäälliköille.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Luo kiinteä kompensaatiosuunnitelma
 
@@ -42,7 +42,7 @@ Tässä artikkelissa kerrotaan kiinteän kompensaatiosuunnitelman luomisesta ja 
 
 7. Määritä **Tyyppi**-kentässä, onko kiinteä kompensaatiosuunnitelma **kompensaatioluokka**-, **palkkaluokka**- vai **vaihesuunnitelma**.
 
-8. **Suositus sallitaan** -valintaruutu toimii minkä tahansa käsittelytapahtumassa tähän suunnitelmaan lisätyn toiminnon oletusarvona. Jos suositukset ovat käytössä, voit korvata lasketun ohjeellisen summan kompensaation käsittelyn yhteydessä.
+8. **Suositus sallitaan** -valintaruutu on minkä tahansa käsittelytapahtumassa tähän suunnitelmaan lisätyn toiminnon oletusarvo. Jos suositukset ovat käytössä, voit korvata lasketun ohjeellisen summan kompensaation käsittelyn yhteydessä.
 
 9. **Alueen ulkopuolisuuden toleranssi** -kentän avulla voit määrittää, miten annetun tason määritetyn kompensaatiorakenteen alueen ulkopuolella olevia kompensaatiosummia käsitellään. Kun määrität **Alueen ulkopuolisuuden toleranssi** -kentän arvoksi **Ei mitään**, voit käyttää mitä tahansa kompensaatiosummaa. **Alustava toleranssi** varoittaa käyttäjää, jos kompensaatiosumma on pienempi kuin vähimmäisviitepisteen summa tai suurempi kuin tason enimmäissumma. Käyttäjät voivat ohittaa varoituksen ja jatkaa. **Kiinteä toleranssi** luo virheen, jos työntekijän kompensaatio on tason vähimmäis- ja enimmäisviitepisteen ulkopuolella. Se muokkaa työntekijän kompensaatiota automaattisesti niin, että se kuuluu alueeseen.
 

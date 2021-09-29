@@ -2,7 +2,7 @@
 title: Valmis maksettavaksi
 description: Tässä ohjeaiheessa esitetään, miten työntekijä merkitään maksuvalmiiksi Dynamics 365 Human Resourcesissa.
 author: marcelbf
-ms.date: 07/13/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70b3f31db459fe021caf08fe09b2e44a597294d1992ee16a69efd8745941a4bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732414"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483779"
 ---
 # <a name="ready-to-pay"></a>Valmis maksettavaksi
 
@@ -39,7 +39,7 @@ Työntekijätietojen kerääminen ja vahvistaminen voi olla aikaa vievää ja vi
 
 Toimi näin, kun haluat merkitä työntekijän maksuvalmiiksi:
 
-1. Avaa **Kompensaation hallinta**. Työtilassa on kaksi ruutua 
+1. Avaa **Kompensaation hallinta**. Työtilassa on kaksi ruutua: 
     - **Työntekijät, jotka ovat valmiita maksamaan**
     - **Työntekijät eivät ole maksuvalmiita**
     ![Kompensaation hallinnan työtila.](./media/hr-ready-to-pay-1-workspace.png)
@@ -53,22 +53,20 @@ Toimi näin, kun haluat merkitä työntekijän maksuvalmiiksi:
 
 ## <a name="validation"></a>Valintasäännöt
 
-Ennen kuin työntekijä merkitään maksuvalmiiksi, järjestelmä tekee profiilin täydellisyyden perustarkistuksen.
+Ennen kuin työntekijä merkitään maksuvalmiiksi, järjestelmä tekee profiilin täydellisyyden tarkistuksen.
 
 ![Tulosten tarkistaminen.](./media/hr-ready-to-pay-3-results.png)
 
-Seuraavassa taulukossa on lisätietoja kustakin suoritettavasta tarkistuksesta. 
-
 | Valintasäännöt | Lisätietoja |
 | --- | --- |
-| Osoitteen tarkoituksen parametri | Vahvistaa, onko parametri **Käytä palkanlaskentaosoitteiden tarkoitusta** käytössä. |
-| Palkanlaskennan osoite | Vahvistaa, onko työntekijäprofiililla vähintään yksi osoite, jonka tarkoitus on "Palkanlaskennan sijainti" tai "Palkanlaskennan työsijainti", ja tarkoitusta kohden on vain yksi osoite. |
-| Työsuhde | Tarkistaa, onko työntekijällä vähintään yksi työsuhde (nykyinen, edellinen tai tuleva). |
-| Tunnusnumero | Tarkistaa, onko parametri "Käytä tunnustyyppejä palkanlaskennan käsittelyssä" kyllä ja jos on, onko parametrissa ilmoitettu tunnustyyppi on täytetty työntekijäprofiilissa. |
-| Etu- ja sukunimi | Tarkistaa, onko työntekijäprofiili kelvollinen, ja tarkistaa, onko kentät **Nimi** ja **Sukunimi** täytetty.|
-| Lajittele | Tarkistaa, onko työntekijälle määritetty tehtävä. |
-| Syntymäpäivämäärä | Tarkistaa, onko työntekijäprofiili kelvollinen, ja tarkistaa, onko kenttä **Syntymäpäivä** täytetty. |
-| Kompensaatio | Tarkistaa, onko työntekijä rekisteröity kiinteään kompensaatiosuunnitelmaan. |
+| **Osoitteen tarkoituksen parametri** | Vahvistaa, onko parametri **Käytä palkanlaskentaosoitteiden tarkoitusta** valittuna. |
+| **Palkanlaskennan osoite** | Vahvistaa, onko työntekijäprofiililla vähintään yksi osoite, jonka tarkoitus on **Palkanlaskennan sijainti** tai **Palkanlaskennan työsijainti**, ja tarkoitusta kohden on vain yksi osoite. |
+| **Työsuhde** | Vahvistaa, onko työntekijällä vähintään yksi työsuhde (nykyinen, edellinen tai tuleva). |
+| **Tunnusnumero** | Vahvistaa, onko **Käytä tunnustyyppejä palkanlaskennan käsittelyssä** -kentässä **Kyllä** **Henkilöstöhallintoparametrit**-sivulla, ja onko parametrissa ilmoitettu tunnustyyppi täytetty työntekijäprofiilissa. |
+| **Etu- ja sukunimi** | Vahvistaa, että kentät **Nimi** ja **Sukunimi** ovat täytetyt.|
+| **Lajittele** | Vahvistaa, että työntekijälle on määritetty tehtävä. |
+| **Syntymäpäivämäärä** | Vahvistaa, että **Syntymäpäivä**-kenttä on täytetty. |
+| **Kompensaatio** | Vahvistaa, että työntekijä on rekisteröity kiinteään kompensaatiosuunnitelmaan. |
 
 Jos jokin näistä vahvistuksista epäonnistuu, et voi merkitä työntekijää maksuvalmiiksi.
 
@@ -77,7 +75,7 @@ Jos **Maksuvalmis** -kentän arvo on **Ei**, tämä on merkki siitä, että sinu
 ## <a name="known-issues"></a>Tunnetut ongelmat
 
 - **Virtaviivaistettu työntekijän syöttö** -ominaisuus on poistettava käytöstä ominaisuuksien hallinnassa. Kompensaation hallinnan työtilan ruudut eivät toimi oikein, jos käytät tätä ominaisuutta.
-- Työntekijä-lomakkeen **Palkanlaskenta-välilehti**, **Maksuvalmis** -ryhmä on käytettävissä missä tahansa käyttäjäroolissa. 
+- **Työntekijä**-sivulla **Palkanlaskenta-välilehti**, **Maksuvalmis**-ryhmä on käytettävissä missä tahansa käyttäjäroolissa. 
 
 ## <a name="see-also"></a>Lisätietoja
 

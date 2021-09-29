@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 86735065864149df27cd3d8b03451ace773af048
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474889"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506852"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.19 uudet tai muuttuneet ominaisuudet (kesäkuu 2021)
 
@@ -40,8 +40,7 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 | Varasto ja logistiikka | [Varastojen suoritustoimintojen asteittaiset parannukset scale uniteilla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Sanoman käsittelijän sanomat](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Varasto-oikaisu](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Varasto ja logistiikka | [Hakutoiminnot asiakirjan esittely- ja loppulausekentissä Myyntitarjous-sivulla](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Tämä ominaisuus lisää hakutoiminnon **asiakirjan esittely**- ja **loppulausekentissä** **Myyntitarjous**-sivulle.<br><br>Tämä ominaisuus on oletusarvoisesti käytössä. |
 | Varasto ja logistiikka | [Varastonohjaus reunan scale uniteilla mukautetussa laitteistossa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Ota reunan scale unitit käyttöön mukautetussa laitteistossa LBD:n avulla](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Valmistus | [Tuotannonohjaus reunan scale uniteilla mukautetussa laitteistossa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Suunnittelu | [Suunnittelun optimoinnin ääretön kapasiteetin ajoitus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Ajoitus rajattoman kapasiteetin avulla](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Valmistus | [Tuotannonohjaus reunan scale uniteilla mukautetussa laitteistossa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Ota reunan scale unitit käyttöön mukautetussa laitteistossa LBD:n avulla](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Suunnittelu | Kyselypohjainen suunniteltujen tilausten vahvistaminen | [Vahvista suunnitellut tilaukset](../master-planning/planning-optimization/planned-order-firming.md) |
 | Tuotetietojen hallinta | [Muuttujaehdotukset-sivun parannukset](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Luo ennalta määriteltyjä tuotevariantteja](../pim/tasks/create-predefined-product-variants.md) |
 

@@ -2,7 +2,7 @@
 title: Kolmannen osapuolen sovellusten upottaminen
 description: Tässä ohjeaiheessa käsitellään kolmannen osapuolen sovellusten upottamista laajentamaan tuotteen toimintoja.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345407"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488231"
 ---
 # <a name="embed-third-party-apps"></a>Kolmannen osapuolen sovellusten upottaminen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Monet asiakkaat käyttävät useita sovelluksia liiketoiminnan harjoittamiseen. Osa sovelluksista on kolmannen osapuolen verkkosovelluksia, jotka toimivat yhdessä Finance and Operations -sovellusten kanssa. Jos haluat antaa entistä sujuvamman käyttökokemuksen, voit käyttää **Koko sivun sovellukset** -toimintoa, kun haluat upottaa nämä kolmannen osapuolen sovellukset suoraan Finance and Operations -sovelluksiin (jos kolmannen osapuolen sovellukset sallivat upottamisen). Näin käyttäjät voivat käyttää tarvitsemiaan sivustoja ja sovelluksia ilman, että heidän tarvitsee vaihtaa välilehtiä tai ikkunoita.
 

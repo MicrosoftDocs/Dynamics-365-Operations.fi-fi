@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99248a1bc231cfe58270b043827cde00a520f872658217b85dffd810bed391c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 984669d5e4bde4bd967bf0a181d1b45df16ee569
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736668"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484046"
 ---
 # <a name="demand-forecasting-overview"></a>Kysynnän ennustepalveluiden yleiskatsaus
 
@@ -34,7 +34,9 @@ Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitil
 Perusennusteen luonnissa historiallisten tapahtumien yhteenveto viedään Microsoft Azuren automaattianalyysiin, jota isännöidään Azuressa. Koska tätä palvelua ei jaeta käyttäjien kesken, sitä voidaan mukauttaa alakohtaisten vaatimusten täyttämiseksi. Voit käyttää Supply Chain Managementia ennusteen visualisointiin ja muuttamiseen sekä ennusteen tarkkuutta koskevien suorituskykyilmaisimien (KPI:t) tarkastelemiseen.
 
 > [!NOTE]
-> Microsoft Azuren koneoppimisstudio (perinteinen) tarvitaan ennusteen luontiin koneoppimisen avulla. Tammikuusta 2021 alkaen se on saatavana Itä-Japanissa, keskisessä Etelä-Yhdysvalloissa, Kaakkois-Aasiassa ja Länsi-Euroopassa. Päivitetyt tiedot tämän hetkisestä saatavuudesta on [aluekohtaisissa Azure-tuotteissa.](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=machine-learning-studio)
+> Microsoft Azuren koneoppimisstudio (perinteinen) tarvitaan ennusteen luontiin koneoppimisen avulla. Joulukuun 1.12.2021 jälkeen et voi luoda uusia koneoppimisstudion (perinteinen) resursseja. Voit kuitenkin jatkaa koneoppimisstudion (perinteinen) -resurssien käyttöä 31.8.2024 saakka. Päivitettyjä tietoja on kohdassa [Azuren koneoppimisstudio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
+> 
+> Dynamics 365 Supply Chain Management -versio 10.0.23 ja sitä myöhemmät versiot tukevat uutta Azuren koneoppimisstudiota.
 
 ## <a name="key-features-of-demand-forecasting"></a>Kysynnän ennusteen tärkeimmät ominaisuudet
 

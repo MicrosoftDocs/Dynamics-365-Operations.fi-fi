@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748469"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488135"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -138,6 +138,55 @@ Lisätietoja kuvien ja muotojen upottamisesta on kohdassa [Kuvien ja muotojen up
 
 **Sivunvaihto**-osa pakottaa Excelin aloittamaan uuden sivun. Tämä osa ei ole pakollinen, jos haluat käyttää Excelin oletussivusta, mutta sitä kannattaa käyttää, jos haluat Excelin jäsentävän sivutuksen ER-muodon mukaisesti.
 
+## <a name="page-component"></a><a name="page-component"></a>Sivun komponentti
+
+### <a name="overview"></a>Yleiskuvaus
+
+Voit käyttää **Sivu**-komponenttia, kun haluat, että Excel seuraa ER-muotoasi ja rakennesivutustasi muodostetussa lähtevässä asiakirjassa. Kun ER-muoto suorittaa komponentteja, jotka ovat **Sivu**-komponentin alaisia, vaaditut sivunvaihdot lisätään automaattisesti. Tämän prosessin aikana on otettava huomioon muodostetun sisällön koko, Excel-mallin sivuasetukset ja Excel-mallissa valittu paperikoko.
+
+Jos muodostettu asiakirja on jaettava eri osiin, joissa kullakin on oma sivutuksensa, voit määrittää useita **Sivu**-komponentteja jokaisessa [Arkki](er-fillable-excel.md#sheet-component)-komponentissa.
+
+### <a name="structure"></a><a name="page-component-structure"></a>Rakenne
+
+Jos ensimmäinen komponentti **Sivu**-komponentin alla on [Alue](er-fillable-excel.md#range-component)-komponentti, jossa **Replikointisuunta** -ominaisuus on määritetty muotoon **Ei replikointia**, tämä alue tulkitaan sivun ylätunnisteeksi sivutuksessa, joka perustuu nykyisen **Sivu**-komponentin asetuksiin. Tähän muotokomponenttiin liittyvä Excel-alue toistuu jokaisen sivun yläosassa, joka muodostetaan käyttämällä nykyisen **Sivu**-komponentin asetuksia.
+
+> [!NOTE]
+> Oikeata sivutusta varten: jos [Yläosassa toistettavat rivit](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) -alue on määritetty Excel-mallissasi, tämän Excel-alueen osoitteen on oltava sama kuin osoite Excel-alueessa, joka on liitetty aiemmin kuvailtuun **Alue**-komponenttiin.
+
+Jos viimeinen komponentti **Sivu**-komponentin alla on **Alue**-komponentti, jossa **Replikointisuunta** -ominaisuus on määritetty muotoon **Ei replikointia**, tämä alue tulkitaan sivun alatunnisteeksi sivutuksessa, joka perustuu nykyisen **Sivu**-komponentin asetuksiin. Tähän muotokomponenttiin liittyvä Excel-alue toistuu jokaisen sivun alaosassa, joka muodostetaan käyttämällä nykyisen **Sivu**-komponentin asetuksia.
+
+> [!NOTE]
+> Jotta sivutus olisi oikea, Excel-alueiden, jotka on liitetty **Alue**-komponentteihin, kokoa ei tule muuttaa suorituspalvelussa. Ei ole suositeltavaa muotoilla tämän alueen soluja käyttämällä **Rivitä solun teksti**- ja **Sovita rivin korkeus** -Excel-[asetuksia](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84).
+
+Voit lisätä useita muita **Alue**-komponentteja valinnaisten **Alue**-komponenttien väliin määrittääksesi, miten muodostettu asiakirja täytetään.
+
+Jos sisäkkäisten **Alue**-komponenttien joukko **Sivu**-komponentin alla ei vastaa aiemmin kuvailtua rakennetta, tapahtuu vahvistus[virhe](er-components-inspections.md#i17) suunnittelun aikana ER-muodon suunnitteluohjelmassa. Virhesanoma ilmoittaa, että ongelma voi aiheuttaa ongelmia suorituspalvelussa.
+
+> [!NOTE]
+> Jotta tulosteesta tulee oikea, älä määritä sidontaa millekään **Alue**-komponentille **Sivu**-komponentin alla, jos **Replikointisuunta**-ominaisuus kyseisessä **Alue**-komponentissa on määritetty muotoon **Ei replikointia** ja alue on määritetty muodostamaan sivun ylä- tai alatunnisteita.
+
+Jos haluat sivutukseen liittyvien laskentojen ja summaamisten käsittelevän käynnissä olevat juoksevat kokonaismäärät ja kokonaismäärät sivua kohden, on suositeltavaa määrittää tarvittavat [Tietokokoelma](er-data-collection-data-sources.md)-tietolähteet. Kun haluat oppia käyttäään **Sivu**-komponenttia muodostetun Excel-asiakirjan sivuttamiseen, noudata menettelyjä kohdassa [Suunnittele ER-muoto sivuttamaan muodostettu asiakirja Excel-muodossa](er-paginate-excel-reports.md).
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Rajoitukset
+
+Kun käytät **Sivu**-komponenttia Excel-sivutukseen, et tiedä muodostetun asiakirjan sivujen lopullista määrää ennen kuin sivutus on valmis. Siksi sivujen kokonaismäärää ei voi laskea ER-kaavan avulla ja tulostaa oikeata muodostetun asiakirjan sivumäärää millään ennen viimeistä sivua edeltävällä sivulla.
+
+> [!TIP]
+> Tämän tuloksen saavuttaminen Excelin ylä- tai alaviitteessä käyttämällä Excelin lisä[muotoilua](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) ylä- ja alatunnisteita varten.
+
+Määritettyjä **Sivu**-komponentteja ei oteta huomioon, kun päivität Excel-mallin muokattavassa muodossa Dynamics 365 Finance -versiossa 10.0.22. Tämä toiminto saattaa tulla voimaan myöhemmissä Finance-julkaisuissa.
+
+Jos määrität Excel-mallisi käyttämään [ehdollista muotoilua](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), se ei ehkä toimi odotetulla tavalla joissakin tapauksissa.
+
+### <a name="applicability"></a>Soveltuvuus
+
+**Sivu**-komponentti toimii [Excel-tiedoston](er-fillable-excel.md#excel-file-component) mallikomponentille vain, jos kyseinen komponentti on määritetty käyttämään Excel-mallia. Jos [korvaat](tasks/er-design-configuration-word-2016-11.md) Excel-mallin Word-mallilla ja suoritat sitten muokattavan ER-muodon, **Sivu**-komponenttia ei oteta huomioon.
+
+**Sivu**-komponentti toimii vain, kun **Ota käyttöön EPPlus-kirjasto sähköisen raportoinnin sovelluskehyksessä** -ominaisuus on otettu käyttöön. Suorituspalvelussa tulee poikkeus, jos ER yrittää käsitellä **Sivu**-komponenttia silloin, kun ominaisuus on otettu pois käytöstä.
+
+> [!NOTE]
+> Suorituspalvelussa tulee poikkeus, jos ER-muoto käsittelee **Sivu**-komponenttia Excel-mallissa, joka sisältää vähintään yhden kaavan, joka viittaa soluun, joka ei ole kelvollinen. Jotta voit estää suorituspalvelun virheet, korjaa Excel-malli siten kuin on kuvattu kohdassa [#REF! -virheen korjaaminen](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Alatunnistekomponentti
 
 **Alatunniste**-komponentin avulla täytetään Excel-työkirjassa luodun laskentataulukon alaosaan alatunniste.
@@ -197,9 +246,12 @@ Muokattavaa ER-muotoa vahvistettaessa tehdään yhdenmukaisuustarkistus, jolla v
 Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin tämän asiakirjan solut voivat sisältää Excel-kaavoja. Kun **Ota käyttöön EPPlus-kirjaston sähköinen raportointijärjestelmä** -toiminto on käytössä, voit määrittää, milloin kaavat lasketaan, muuttamalla **Laskentavalinnat**-[parametrin](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) arvoa käytetyssä Excel-mallissa:
 
 - Valitse **Automaattinen**, jos haluat laskea kaikki riippuvaiset kaavat uudelleen aina, kun luotu tiedosto liitetään uusilla alueilla, soluissa jne.
+
     >[!NOTE]
     > Tämä saattaa aiheuttaa suorituskykyongelman niille Excel-malleille, jotka sisältävät useita toisiinsa liittyviä kaavoja.
+
 - Valitse **Manuaalinen**, jos haluat välttää kaavojen uudelleenlaskennan, kun asiakirja luodaan.
+
     >[!NOTE]
     > Kaavan uudelleenlaskenta pakotetaan manuaalisesti, kun luotu asiakirja avataan esikatselua varten Excelissä.
     > Älä käytä tätä vaihtoehtoa, jos määrität ER-kohteen, joka olettaa, että luotu tiedosto on käytössä ilman sen esikatselua Excelissä (PDF-muunnos, sähköpostin lähetys jne.) koska luotu tiedosto ei ehkä sisällä kaavoja sisältävien solujen arvoja.

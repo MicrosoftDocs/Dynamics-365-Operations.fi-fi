@@ -1,8 +1,8 @@
 ---
 title: Määritä loman ja poissaolon tyypit
 description: Määritä Dynamics 365 Human Resourcesissa lomatyypit, joita työntekijät voivat valita.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730415"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485804"
 ---
 # <a name="configure-leave-and-absence-types"></a>Määritä loman ja poissaolon tyypit
 
@@ -65,9 +65,9 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 
 1. Määritä lomatyypin pyöristysasetukset. Vaihtoehtoja ovat **Ei mitään**, **Ylös**, **Alas** ja **Lähin**. Voit myös määrittää lomatyypin pyöristystarkkuuden.
 
-2. Määritä lomatyypin **Lomakorjaukset**. Kun valitset tämän vaihtoehdon, henkilöstöhallinto käyttää työpäivään kuuluvien lomien määrää määrittääkseen, miten lomatyypille voidaan jaksottaa aikaa. Jos esimerkiksi joulupäivä osuu maanantaihin, henkilöstöhallinto vähentää yhden päivän lomatyypistä jaksotusten käsittelyn yhteydessä.
+2. Määritä lomatyypin **Lomakorjaukset**. Kun valitset tämän vaihtoehdon, työpäivään kuuluvien lomien määrää käytetään sen määrittämiseen, miten lomatyypille voidaan jaksottaa aikaa. Jos esimerkiksi joulupäivä osuu maanantaihin, henkilöstöhallinto vähentää yhden päivän lomatyypistä jaksotusten käsittelyn yhteydessä.
 
-   Voit määrittää lomat työaikakalenteriin. Lisätietoja on ohjeaiheessa [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
+   Voit määrittää lomat työaikakalenteriin. Lisätietoja on ohjeaiheessa [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md).
    
  3. Määritä vapaan tyypiksi **Siirretty lomatyyppi**. Kun valitset tämän vaihtoehdon, kaikki siirrettävät saldot siirretään määritettyyn lomatyyppiin. Siirretyn lomatyypin on sisällyttävä myös loma- ja poissaolosuunnitelmaan. 
  
@@ -76,7 +76,7 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Määritä tarvittava liite lomatyyppiä kohden
 
 > [!NOTE]
-> Jos haluat käyttää **Liite pakollinen** -kenttää, sinun on ensin otettava **(Esiversio) Määritä lomapyyntöjen pakollinen liite** -ominaisuus käyttöön ominaisuuksien hallinnassa. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
+> Jos haluat käyttää **Liite pakollinen** -kenttää, sinun on ensin otettava **Määritä lomapyyntöjen pakollinen liite** -ominaisuus käyttöön ominaisuuksien hallinnassa. Lisätietoja ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
 
 1. Valitse **Loma ja poissaolo** -sivun **Linkit**-välilehden **Asetukset**-kohdassa **Loma- ja poissaolotyypit**.
 
@@ -87,7 +87,7 @@ Työntekijöiden on ladattava liite, kun he lähettävät uuden lomapyynnön, jo
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Määritä lomayksiköt (päivät/tunnit) lomatyypin mukaan
 
 > [!NOTE]
-> Jos haluat käyttää lomayksiköitä lomatyyppiä kohden -toimintoa, sinun on ensin otettava käyttöön **(Esiversio) Määritä lomayksiköt lomatyyppiä kohden** -ominaisuus ominaisuuksien hallinnassa. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
+> Jos haluat käyttää lomayksiköitä lomatyyppiä kohden -toimintoa, sinun on ensin otettava käyttöön **Määritä lomayksiköt lomatyyppiä kohden** -ominaisuus ominaisuuksien hallinnassa. Lisätietoja ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > Oletusarvon mukaan yrityksen lomatyypit käyttävät lomayksiköitä yritystason lomaparametrien konfiguraatiosta.

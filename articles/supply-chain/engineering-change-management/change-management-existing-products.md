@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744175"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488199"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön
 
@@ -47,7 +47,9 @@ Jos sinulla on siis erillinen tuote, voit muuttaa sen vain suunnittelutuotteeksi
 
 Jokaiselle suunnittelutuotteelle täytyy kohdistaa *suunnittelun tuoteluokka*. Teet tämän kohdistuksen, kun suoritat ohjatun **Muunna suunnittelutuotteeksi** -toiminnon. Kaikilla asiaankuuluvilla vakiotuotteilla täytyy olla suunnittelun tuoteluokat *ennen* kuin voit muuntaa kyseiset tuotteet.
 
-Suunnittelun tuoteluokka tarjoaa perustan suunnittelutuotteen luomiseksi, ja se määrittää joukon oletusarvoja ja käytäntöjä. Suunnittelun tuoteluokan täytyy vastata tuotetta, johon kohdistat sen. Esimerkiksi tuotetyypin ja dimensioryhmän täytyy vastata sekä tuotetta että sen suunnittelun tuoteluokkaa. Lisätietoja on kohdassa [Suunnitteluversiot ja suunnittelun tuoteluokat](engineering-versions-product-category.md).
+Suunnittelun tuoteluokka tarjoaa perustan suunnittelutuotteen luomiseksi, ja se määrittää joukon oletusarvoja ja käytäntöjä. Tuloksena syntyvässä suunnittelutuotteessa käytetään myös suunnittelumääritteitä ja niiden (suunnitteluluokalle määritettyjä) oletusarvoja. Voit muokata määritteiden arvoja ja/tai lisätä tuloksena syntyvään tuotteeseen lisää suunnittelumääritteitä tarpeen mukaan.
+
+Suunnittelun tuoteluokan täytyy vastata tuotetta, johon kohdistat sen. Esimerkiksi tuotetyypin ja dimensioryhmän täytyy vastata sekä tuotetta että sen suunnittelun tuoteluokkaa. Lisätietoja on kohdassa [Suunnitteluversiot ja suunnittelun tuoteluokat](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Ohjattu **Muunna suunnittelutuotteeksi** -toiminto voi muuntaa tuotteen vain suunnittelutuotteisiksi, joissa versiota ei seurata tapahtumissa. Tästä syystä **Versioiden seuranta tapahtumissa** -vaihtoehdoksi täytyy määrittää *Ei* suunnittelun tuoteluokille, joita luot nykyisten tuotteiden muuntamista varten.

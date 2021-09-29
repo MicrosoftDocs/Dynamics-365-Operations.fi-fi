@@ -2,7 +2,7 @@
 title: Määritä ja suunnittele vastaanottoluetteloiden muodot
 description: Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Dynamics 365 Commerce sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715355"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500167"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Määritä ja suunnittele vastaanottoluetteloiden muodot
 
@@ -46,7 +46,12 @@ Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittä
 
 ## <a name="print-images"></a>Kuvien tulostaminen
 
-Kuittien suunnittelussa on **Logo**-muuttuja, jonka avulla kuittiin tulostettavat kuvat voidaan määrittää. **Logo**-muuttujaa käyttäen kuitteihin lisättyjen kuvien on mustavalkoisia bittikartan (.bmp) tiedostotyyppejä. Jos kuittien suunnittelussa on määritetty .bmp-kuva, mutta se ei tulostu tulostimelle lähetettäessä, tiedoston koko voi olla liian suuri tai kuvan kuvapistedimensiot eivät ole yhteensopivia tulostimen kanssa. Jos näin tapahtuu, kokeile pienentää kuvatiedoston tarkkuutta.   
+Kuittien suunnitteluohjelmaan kuuluu **Logo**-muuttuja. Voit käyttää tätä muuttujaa, kun haluat määrittää kuitteihin tulostettavan kuvan. **Logo**-muuttujaa käyttäen kuitteihin tulostettujen kuvien on oltava mustavalkoisia bittikartan (.bmp) tiedostotyyppejä. Jos kuittien suunnitteluohjelmassa on määritetty bittikarttakuva, mutta sitä ei tulosteta, kun kuitti lähetetään tulostimelle, joku näistä ongelmista voi olla syy:
+
+- Tiedoston koko on liian suuri, tai kuvan kuvapistedimensiot eivät ole yhteensopivia tulostimen kanssa. Tässä tapauksessa voit pienentää kuvatiedoston tarkkuutta tai dimensioita.
+- Jotkin tulostinajurit, jotka on tarkoitettu myyntipisteille ja objektin linkittämiseen ja upottamiseen (OPOS), eivät käytä **PrintMemoryBitmap**-menetelmää, joita laitteet käyttävät logokuvien tulostamiseen. Tässä tapauksessa voit yrittää seuraavan merkinnän lisäämistä laitteesi tai jaetun laiteen **HardwareStation.Extension.config**-tiedostoon.
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Kuitin muodon suunnittelu
 

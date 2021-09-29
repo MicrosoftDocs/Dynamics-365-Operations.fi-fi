@@ -1,8 +1,8 @@
 ---
-title: Luo muuttuvia kompensaatiosuunnitelmia
-description: Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
-author: andreabichsel
-ms.date: 06/20/2017
+title: Muuttuvien kompensaatiosuunnitelmien luominen
+description: Tässä aiheessa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,32 +12,32 @@ ms.search.scope: Human Resources
 ms.custom: 16011
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5bceecbf0095eaac6c8cab3a954cd6d03fd380c66061b3996169fced7e14ca9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a8e3f8535e509b4c1922f083e4182eb5f1a83c3c
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732318"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484165"
 ---
 # <a name="create-variable-compensation-plans"></a>Luo muuttuvia kompensaatiosuunnitelmia
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
+Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä aiheessa selitetään, miten määritetään komponentit, jotka tarvitaan muuttuvan kompensaation käyttämiseen ja työntekijöiden määrittämiseen muuttuvaan kompensaatiosuunnitelmaan.
 
 Useat tekijät, kuten työntekijän suorituskyky, työntekijän kompensaatiotaso ja osaston suorituskyky, voivat vaikuttaa työntekijöiden muuttuvien kompensaatiosummien laskennassa.
 
 ## <a name="variable-compensation-components"></a>Muuttuvan kompensaation komponentit
 ### <a name="create-compensation-types"></a>Luo kompensaatiotyypit
 
-**Muuttuvat kompensaatiotyypit** ovat pakollinen osa. Muuttuvien kompensaatiotyyppien avulla voidaan kuvata sellaisia muuttuvia kompensaatioita, joita organisaatiosi antaa. Niiden avulla voit määrittää, lasketaanko korvaus tai käteisenä vai ei-rahallisessa muodossa, esimerkiksi osakepääomana.
+**Muuttuvat kompensaatiotyypit** ovat pakollinen osa. **Muuttuvien kompensaatiotyyppien** avulla voidaan kuvata sellaisia muuttuvia kompensaatioita, joita organisaatiosi antaa. Niiden avulla voit määrittää, lasketaanko korvaus tai käteisenä vai ei-rahallisessa muodossa, esimerkiksi osakepääomana.
 
 ### <a name="describe-vesting-rules"></a>Kuvaile hyvityssäännöt
 
-Vaihtoehtoisesti, yritykset voivat määrittää **hyvityssäännöt**. Hyvityssäännöt kuvaavat, kuinka muuttuva palkkio olisi jaettava ajan mittaan. Esimerkiksi hyvityssääntö saattaa määrittää, että työntekijä saa 25 prosenttia kokonaispalkkiostaan vuosittain seuraavan neljän vuoden ajan. Hyvityssäännöt ovat vain tiedoksi.
+Vaihtoehtoisesti, yritykset voivat määrittää **hyvityssäännöt**. **Hyvityssäännöt** kuvaavat, kuinka muuttuva palkkio olisi jaettava ajan mittaan. Esimerkiksi hyvityssääntö saattaa määrittää, että työntekijä saa 25 prosenttia kokonaispalkkiostaan vuosittain seuraavan neljän vuoden ajan. Hyvityssäännöt ovat vain tiedoksi.
 
 ## <a name="variable-compensation-plans"></a>Muuttuvat kompensaatiosuunnitelmat
 **Muuttuvassa kompensaatiosuunnitelmassa** on säännöt, laskentamenetelmät ja oletusarvot muuttuvan kompensaation laskemiseksi rekisteröityneille työntekijöille. Kun luot muuttuvan kompensaatiosuunnitelman, muuttuvan kompensaation tyyppi on määritettävä. Muuttuvan kompensaation tyyppi määrittää, onko laskeeko järjestelmä valuuttasumman tai yksiköiden määrän palkkioksi. Määritä myös laskentamenetelmä:
@@ -50,9 +50,9 @@ Muuttuvan palkkion summa voi perustua, joko prosenttiosuuteen työntekijän tava
 -   Valitse **Perusprosentti** -vaihtoehto syöttääksesi oletusarvoisen prosentin ja määritä, onko peruste työntekijän kiinteä taksa vai työntekijän kompensaatiotason ohjauspiste. Korvauksen taso on määritetty työntekijän työhön. Yksi kompensaatiorakenteen viitepisteistä voidaan määrittää hallintapisteeksi kiinteään kompensaatiosuunnitelmaan. Järjestelmä käyttää työntekijän työn kompensaatiotasoa ja viittaa siihen sen tarkistuspisteen kanssa, joka näkyy työntekijän kiinteässä kompensaatiosuunnitelmassa, löytääkseen työntekijän kompensaation tason tarkistuspistesumman. Tarkistuspistesummaa käytetään työntekijän kiinteän palkan sijasta palkkion perustana.
 -   Valitse **Yksikkömäärä**-vaihtoehto syöttääksesi oletusmäärä yksiköitä, kunkin yksikön arvo ja yksikköarvon valuutta, jos kompeesaatiosuunnitelma on ei-käteispalkkiolle (esimerkiksi 200 osakeyksikköä arvoltaan 40 USD) tai vain yksikkömäärä, jos kompensaatiosuunnitelman on käteispalkkiolle. Käteispalkkiona työntekijä saa määritetyn määrän yksikköjä valuutassa, jota käytetään hänen kiinteässä kompensaatiosuunnitelmassaan (esimerkiksi 500 yksikköä, valuutta 1 USD). Yksi-yhteen-suhteen tarkistusta voidaan käyttää osoittamaan, onko olemassa suora vastaavuus yksiköiden ja yksikköarvon välillä. Kun luot muuttuvan kompensaatiosuunnitelman käteiseen perustuvalle suunnitelmalle yksiköiden avulla, tämä vaihtoehto on lukittu automaattisesti arvoon **Kyllä** ja yksikköarvo on **1,0000**.
 
-**Työhönottosääntö**-asetuksien avulla voit määrittää kaikkien työntekijöiden vastaanottavan saman lisäyksen riippumatta päivämäärästä, jolloin heidät palkattiin (**Työhönottosääntö**  =  **Ei yhtään**), tai saavatko työntekijät prosenttiosuuden palkasta, joka perustuu siihen kauanko he työskentelivät kauden aikana (**Työhönottosääntö**  =  **Prosentti**). 
+**Työhönottosääntö** määrittää kaikkien työntekijöiden vastaanottavan saman lisäyksen riippumatta päivämäärästä, jolloin heidät palkattiin (**Työhönottosääntö** = **Ei yhtään**), tai saavatko työntekijät prosenttiosuuden palkasta, joka perustuu siihen kauanko he työskentelivät kauden aikana (**Työhönottosääntö** =  **Prosentti**). 
 
-**Suorituskykykertoimen** avulla voit määrittää työntekijän palkkion työntekijän osaston suorituskyvyn perusteella. Suorituskyvyn mittarit voidaan määrittää kullekin osastolle **Osastot**-sivulla kohdassa **Liittyvät lomakkeet** &gt; **Kompensaatio** &gt; **Suorituskyky**. Kyseisen osaston työntekijöiden saama palkkio riippuu **Tavoitteesta saavutettu prosentti** -kentän arvosta, joka kertoo osaston suorituskyvystä:
+**Suorituskykykerroin** määrittää työntekijän palkkion työntekijän osaston suorituskyvyn perusteella. Suorituskyvyn mittarit voidaan määrittää kullekin osastolle **Osastot**-sivulla kohdassa **Liittyvät lomakkeet** &gt; **Kompensaatio** &gt; **Suorituskyky**. Kyseisen osaston työntekijöiden saama palkkio riippuu **Tavoitteesta saavutettu prosentti** -kentän arvosta, joka kertoo osaston suorituskyvystä:
 
 -   Jos osaston suorituskyky on 100 prosenttia, osaston työntekijöiden palkkio lasketaan prosenttiarvolla, joka on määritetty **Maksu tasolla 100 %**-kentässä.
 -   Jos osaston suorituskyky on yli 100 prosenttia, järjestelmä lisää prosenttiosuuden, joka on määritetty **1 % objektiivin yli** -kentässä siihen prosenttiin, joka on määritetty **Maksu tasolla 100 %** -kentässä, kunnes arvo, joka on asetettu **Suurin sallittu maksu**-kentässä, saavutetaan.
@@ -60,7 +60,7 @@ Muuttuvan palkkion summa voi perustua, joko prosenttiosuuteen työntekijän tava
 
 Voit määrittää **toleranssitasot** rajaprosenteille, niin että näkyviin tulee varoitussanoma, jos suorituskykykerroin määrittää prosentin raja-arvo prosentin ulkopuolelle. 
 
-Oletusarvon mukaan järjestelmä etsii osaston, joka on määritetty työntekijän toimelle. Kuitenkin joidenkin työntekijöiden palkkio saattaa määräytyä useiden yksiköiden suorituskyvyn mukaan. Tällöin eri osastot ja palkkion prosentti, joka kohdistetaan kunkin osaston suorituskykyyn, voidaan määrittää työntekijän muuttuvan kompensaation voimaan astuessa. Lisätietoja on kohdassa "Muuttuvan kompensaation voimaanastuminen", joka on seuraavana. 
+Oletusarvon mukaan osastoa, joka on määritetty työntekijän toimelle, käytetään työntekijän palkkioita varten. Kuitenkin joidenkin työntekijöiden palkkio saattaa määräytyä useiden yksiköiden suorituskyvyn mukaan. Tällöin eri osastot ja palkkion prosentti, joka kohdistetaan kunkin osaston suorituskykyyn, voidaan määrittää työntekijän muuttuvan kompensaation voimaan astuessa. Lisätietoja on kohdassa "Muuttuvan kompensaation voimaanastuminen", joka on seuraavana. 
 
 Suorituskykykertointa käytetään vain, jos **Suoritusperusteinen palkka** valitaan kompensaatioprosessin suorittamisen yhteydessä. 
 
@@ -92,7 +92,7 @@ Nyt voit rekisteröidä työntekijäitä muuttuvan kompensaation suunnitelmaan. 
 
 Varmista, että **Voimaantulopäivä**-kenttä on määritetty oikein. Jos muuttuva kompensaatiosuunnitelma käyttää **Yhdistelmä**-laskentatapaa, rekisteröinnin voimaantulopäivämäärä voidaan ottaa huomioon työntekijän palkkion laskennan aikana. 
 
-Voit käyttää **Ohitukset**-välilehteä, jos haluat ohittaa työntekijän tietyt arvot. Esimerkiksi jos **Työhönottosääntö** on suunnitelmassa **Prosentti** ja pitäisi käyttää eri työhönottopäivää työntekijän työsuhteen prosentin laskentaan, voit määrittää työsuhteen alkamispäivän **Työhönottosäännön päivämäärä** -kentässä. Voit myös ohittaa joko **Palkkioprosentti** -arvon tai **Yksiköiden määrä** -arvon tietyn työntekijän osalta suunnitelman asetusten mukaan. Näitä arvoja kuitenkin lasketaan työhönottosäännön, suorituskykykertoimien ja muiden suunnitelman asetuksien mukaan. 
+Voit käyttää **Ohitukset**-välilehteä, jos haluat ohittaa työntekijän tietyt arvot. Esimerkiksi jos **Työhönottosääntö** on suunnitelmassa **Prosentti** ja pitäisi käyttää eri työhönottopäivää työntekijän työsuhteen prosentin laskentaan, voit määrittää työsuhteen alkamispäivän **Työhönottosäännön päivämäärä** -kentässä. Voit myös ohittaa **Palkkioprosentti** -arvon tai **Yksiköiden määrä** -arvon tietyn työntekijän osalta suunnitelman asetusten mukaan. Näitä arvoja kuitenkin lasketaan työhönottosäännön, suorituskykykertoimien ja muiden suunnitelman asetuksien mukaan. 
 
 **Organisaation ohituksia** käytetään perustana työntekijän palkinnolle yhden tai useamman osaston toiminnasta. Prosentin, joka kohdistetaan osastojen kesken, tulee olla yhteensä 100 prosenttia. Työntekijän yksilösuorituskyky otetaan myös huomioon. Näitä asetuksia käytetään vain, jos **Suoritusperusteinen palkka** valitaan kompensaatioprosessin suorittamisen yhteydessä.
 

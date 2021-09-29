@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471713"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500424"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -157,6 +157,7 @@ Seuraavia varastonhallintatoimintoja ei tueta tällä hetkellä scale unitin ty�
 
 - Kuormaan määritetyn ostotilausrivien saapuvien käsittely.
 - Projektin ostotilausten saapuvien käsittely.
+- Aiheutuneen kustannuksen hallinta, matkojen käyttäminen ja kuljetuksessa olevien tuotteiden seuraaminen.
 - Sellaisten nimikkeiden saapuvien ja lähtevien käsittely, joissa on aktiiviset **Omistaja**- ja/tai **Eränumero**-seurantadimensiot.
 - Sellaisen varaston käsittely, jonka tilan-arvona on esto.
 - Varaston tilan muuttaminen minkä tahansa siirtoprosessin aikana.
@@ -187,6 +188,7 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 |--------------------------------------------------------------|-----|------------------------------|
 | Lähdeasiakirjan käsittely                                   | Kyllä | Nro |
 | Lastauksen ja kuljetusten hallinnan käsittely                | Kyllä, mutta vain kuormansuunnitteluprosessit. Kuljetuksen hallinnan käsittely ei tueta  | Nro |
+| Aiheutunut kustannus ja kuljetettavien tuotteiden vastaanottaminen                                         | Kyllä | Nro |
 | Vapauta varastoon                                         | Kyllä | Nro |
 | Suunniteltu cross-docking                                        | Nro  | Nro |
 | Lähetyksen konsolidointi                                       | Kyllä, käytettäessä kuormansuunnittelua | Kyllä |

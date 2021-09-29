@@ -2,7 +2,7 @@
 title: Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 description: Tässä aiheessa selitetään, miten määritetyt Sähköisen raportoinnin (ER) komponentit voidaan tarkistaa mahdollisten suorituksen aikaisten ongelmien välttämiseksi.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718620"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488111"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 
@@ -229,6 +229,12 @@ Seuraavassa taulukossa on yhteenveto ER:n tarjoamista tarkistuksista. Lisätieto
 <p>Otsikot/alatunnisteet (&lt;component type: Header or Footer&gt;) ovat ristiriidassa</p>
 <p><b>Suorituksen aikainen:</b> Viimeistä konfiguroitua osaa käytetään ajon aikana, jos konfiguroitu ER-muodon luonnosversio suoritetaan.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Sivukomponentin epäyhtenäinen määritys</a></td>
+<td>Tietojen eheys</td>
+<td>Virhe</td>
+<td>Enemmän kuin kaksi aluekomponenttia ilman replikointia. Poista tarpeettomat komponentit.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Voit muokata konfiguroitua muotoa poistamalla yhden ristiriitaisista **Excel\\Ot
 #### <a name="option-2"></a>Asetus 2
 
 Muokkaa yhden ristiriitaisen **Excel\\Otsikko**- tai **Excel\\Alatunniste**-osan **Otsikon/alatunnisteen ulkoasu** -ominaisuutta.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Sivukomponentin epäyhtenäinen määritys
+
+Kun [määrität](er-fillable-excel.md) ER-muotokomponentin käyttämään Excel-mallia lähtevän asiakirjan muodostamiseksi, voit lisätä **Excel\\Sivu** -komponentin muodostetun asiakirjan sivutusta varten käyttäen ER-kaavoja. Jokaista lisäämääsi **Excel\\Sivu** -komponenttia kohden voit lisätä useita sisäkkäisiä [Alue](er-fillable-excel.md#range-component)-komponentteja ja silti säilyttää yhteensopivuuden seuraavan [rakenteen](er-fillable-excel.md#page-component-structure) kanssa.
+
+- Ensimmäisen sisäkkäisen **Alue**-komponentin voi määrittää niin, että **Replikointisuunta**-ominaisuus on määritetty arvoon **Ei replikointia**. Tätä aluetta käytetään muodostettujen asiakirjojen sivun ylätunnisteiden tekemiseen.
+- Voit lisätä useita muita sisäkkäisiä **Alue**-komponentteja, joissa **Replikointisuunta**-ominaisuus on määritetty arvoon **Pystysuora**. Näitä alueita käytetään muodostettujen asiakirjojen täyttämiseen.
+- Viimeisen sisäkkäisen **Alue**-komponentin voi määrittää niin, että **Replikointisuunta**-ominaisuus on määritetty arvoon **Ei replikointia**. Tätä aluetta käytetään sivun alatunnisteiden tekemiseen muodostetuissa asiakirjoissa ja pakollisten sivunvaihtojen lisäämiseen.
+
+Jos et noudata tätä ER-muodon rakennetta ER-muodon suunnitteluohjelmassa suunnitteluhetkellä, tulee vahvistusvirhe, ja saat seuraavan virhesanoman: ”Enemmän kuin kaksi aluekomponenttia ilman replikointia. Poista tarpeettomat komponentit."
+
+### <a name="automatic-resolution"></a>Automaattinen ratkaisu
+
+Tätä ongelmaa ei voi korjata automaattisesti.
+
+### <a name="manual-resolution"></a>Manuaalinen ratkaisu
+
+#### <a name="option-1"></a>Asetus 1
+
+Muokkaa määritettyä muotoa vaihtamalla **Replikointisuunta**-ominaisuus kaikille epäyhtenäisille **Excel\\Alue** -komponenteille.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

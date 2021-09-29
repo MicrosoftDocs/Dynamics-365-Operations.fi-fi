@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ef28fcaf308225a78bcbac42f591e6b24b21b1b1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 8f438e18356a6c16cc75bb59153ae7353d984a5a
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384534"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500327"
 ---
 # <a name="gs1-bar-codes-and-qr-codes"></a>GS1-viivakoodit ja QR-koodit
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Varastotyöntekijöiden on usein suoritettava useita tehtäviä, kun rekisteröivät nimikkeen, kuormalavan tai kontin liikkeitä mobiililaitteen skannerin avulla. Nämä tehtävät voivat sisältää sekä viivakoodien skannauksen että tietojen antamisen manuaalisesti mobiililaitteessa. Viivakoodeissa käytetään yrityskohtaista muotoa, joka määritetään ja jota hallitaan Microsoft Dynamics 365 Supply Chain Managementissa.
 

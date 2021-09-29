@@ -2,7 +2,7 @@
 title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uusi ruudukkotoiminto on otettava käyttöön näiden ominaisuuksien käyttämistä varten.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775239"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483851"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -30,7 +30,7 @@ Uusi ruudukon ohjausobjekti sisältää useita hyödyllisiä ja tehokkaita omina
 -  Lasketaan kokonaissummia
 -  Järjestelmän ennakoiva kirjoitus
 -  Matemaattisten lausekkeiden arviointi 
--  Taulukkomuotoisten tietojen ryhmittely (käytössä erikseen **(Esiversio) Ryhmittely ruudukoissa** -toiminnossa)
+-  Taulukkomuotoisten tietojen ryhmittely (käytössä erikseen **Ryhmittely ruudukoissa** -toiminnossa)
 -  Sarakkeiden kiinnittäminen
 
 ## <a name="calculating-totals"></a>Lasketaan kokonaissummia
@@ -93,7 +93,7 @@ Tuottavuutta tehostaakseen käyttäjät voivat antaa matemaattisia kaavoja ruudu
 Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsuuruusmerkillä (**=**). Lisätietoja tuetuista operaattoreista ja syntaksista on kohdassa [Tuetut matemaattiset symbolit](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Taulukkomuotoisten tietojen ryhmittely
-Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, **Ryhmittely ruudukoissa** -toiminto, joka on yleisesti saatavilla versiossa 10.0.16/Alustapäivitys 40 ja riippuvainen uudesta ruudukonhallintaominaisuudesta, käyttäjät voivat järjestää taulukkomuotoiset tiedot mielenkiintoisilla tavoilla Finance and Operations -sovelluksissa. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
+Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, **Ryhmittely ruudukoissa** -toimintoa (joka on erillinen uuden ruudukon ohjausominaisuus), käyttäjät voivat järjestää taulukkomuotoiset tiedot mielenkiintoisilla tavoilla Finance and Operations -sovelluksia käyttäen. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
 
 Jos haluat käyttää tätä toimintoa, napsauta hiiren kakkospainikkeella saraketta, jota haluat käyttää ryhmittelyperusteena ja valitse **Ryhmittele tämän sarakkeen perusteella**. Tämä toiminto lajittelee tiedot valitun sarakkeen mukaan, lisää uuden **Ryhmittelyperuste**-sarakkeen ruudukon alkuun ja lisää otsikkorivit kunkin ryhmän alkuun. Nämä otsikkorivit sisältävät seuraavat tiedot kustakin ryhmästä: 
 -  Ryhmän tietojen arvo 
@@ -108,9 +108,6 @@ Kun olet ryhmitellyt tiedot yhden sarakkeen mukaan, voit ryhmitellä tiedot eri 
 
 Voit milloin tahansa poistaa ryhmittelyn mistä tahansa sarakkeesta napsauttamalla saraketta hiiren kakkospainikkeella ja valitsemalla **Pura ryhmittely**. Voit myös poistaa ryhmittelyn kaikista sarakkeista valitsemalla **Ruudukon asetukset** ja sitten **Pura kaikki ryhmittelyt**.   
 
-Huomautus, ennen versiota 10.0.16/Alustapäivitys 40 tuetaan vain yhtä ryhmittelytasoa. Jos tiedot on ryhmitelty näissä versioissa ja valitset **Ryhmittele tämän sarakkeen mukaan** -ryhmityksen eri saraketta varten, alkuperäinen ryhmittely korvataan.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Ryhmien laajentaminen ja kutistaminen
 Tietojen alkuperäisessä ryhmittelyssä ryhmät ovat laajennettuina. Voit luoda tiedoista yhteenvetonäkymiä kutistamalla yksittäisiä ryhmiä. Vaihtoehtoisesti voit käyttää ryhmän laajentamista ja kutistamista, jos haluat auttaa tiedoissa siirtymisessä. Jos haluat laajentaa tai kutistaa ryhmän, valitse vastaavan ryhmän otsikkorivin kaksoisnuolikuvakkeen (>) painike. Huomaa, että eri ryhmien laajennus- tai kutistustilaa **ei** tallenneta mukautuksessa.
 
@@ -118,10 +115,10 @@ Tietojen alkuperäisessä ryhmittelyssä ryhmät ovat laajennettuina. Voit luoda
 Voit valita nopeasti ryhmän kaikki rivit tai poistaa niiden valinnan valitsemalla vastaavan ryhmän otsikkorivin valintaruudun. Tämä on samanlainen toiminto kuin rivien valitseminen (tai valinnan poistaminen) ruudukossa. Ryhmän otsikkorivin valintaruutu vaikuttaa aina nykyisen valinnan tilaan kyseisen ryhmän riveillä. Näin siitä huolimatta, onko valittuna kaikki rivit, osa riveistä tai ei yhtään riviä.
 
 ### <a name="hiding-column-names"></a>Sarakkeiden nimien piilottaminen
-Kun ryhmittelet tietoja, oletusarvo on sarakkeen nimen näkyminen ryhmän otsikkorivillä. Versiosta 10.0.14 ja Platform-päivityksestä 38 alkaen voit valita, haluatko supistaa sarakkeen nimen ryhmän otsikkorivillä valitsemalla **Ruudukkovalinnat** > **Piilota ryhmän sarakkeen nimi**.
+Kun ryhmittelet tietoja, oletusarvo on sarakkeen nimen näkyminen ryhmän otsikkorivillä. Voit valita, haluatko supistaa sarakkeen nimen ryhmän otsikkorivillä valitsemalla **Ruudukkovalinnat** > **Piilota ryhmän sarakkeen nimi**.
 
 ## <a name="freezing-columns"></a>Sarakkeiden kiinnittäminen
-Osa ruudukon sarakkeista voi olla kontekstin kannalta niin tärkeitä, ettei niitä haluta vierittää pois näkyvistä. Näiden sarakkeiden arvojen halutaan sen sijaan olevan koko ajan näkyvissä. Versiossa 10.0.17 **Kiinnitä ruudukon sarakkeet** -toiminto antaa tämän joustavuuden käyttäjille. 
+Osa ruudukon sarakkeista voi olla kontekstin kannalta niin tärkeitä, ettei niitä haluta vierittää pois näkyvistä. Näiden sarakkeiden arvojen kannattaa sen sijaan olla aina näkyvissä. **Kiinnitä ruudukon sarakkeet** -toiminto antaa tämän joustavuuden käyttäjille. 
 
 Sarake kiinnitetään napsauttamalla sarakkeen otsikkoa kakkospainikkeella ja valitsemalla sitten **Kiinnitä sarake**. Kun tämä vaihe viimeistellään ensimmäisen kerran, valitusta sarakkeesta tulee ensimmäisen sarake eikä sitä vieritetä pois näkyvistä. Tämän jälkeen kiinnitettävät sarakkeet lisätään viimeksi kiinnitetyn sarakkeen oikealle puolelle. Vakiosiirtotoiminnolla voi järjestää kiinnitettyjen sarakkeiden järjestyksen uudelleen tarpeen mukaan. Kiinnitettyjä sarakkeita ei kuitenkaan voi siirtää niin, että ne näkyvät kiinnittämättömien sarakkeiden joukossa. Kiinnittämättömiä sarakkeita ei vastaavasti voi siirtää niin, että ne näkyvät kiinnitettyjen sarakkeiden joukossa.
 
@@ -132,32 +129,16 @@ Huomaa, että uuden ruudukon rivivalinta ja rivin tilasarakkeet on aina kiinnite
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Miten otan uuden ruudukonhallinnan käyttöön omassa ympäristössäni? 
 
-**10.0.9 / Platform update 33 ja uudemmat**
+**Uusi ruudukon ohjausobjekti** -toiminto on käytettävissä suoraan ominaisuuksien hallinnassa missä tahansa ympäristössä. Kun ominaisuus on käytössä ominaisuuksien hallinnassa, kaikki myöhemmät käyttäjäistunnot käyttävät uutta ruudukon ohjausobjektia. 
 
-**Uusi ruudukon ohjausobjekti** -toiminto on käytettävissä suoraan ominaisuuksien hallinnassa missä tahansa ympäristössä. Kuten muutkin julkiset esikatseluominaisuudet, tämän toiminnon ottaminen käyttöön tuotannossa edellyttää [Lisäkäyttöehdot-sopimusta](public-preview-terms.md).  
-
-**10.0.8 / Platform update 32 ja 10.0.7 / Platform update 31**
-
-**Uusi ruudukon ohjausobjekti** -toiminto voidaan ottaa käyttöön Taso 1 (kehitys/testaus)- ja Taso 2 (eristys) -ympäristöissä, jotta voit tarjota lisätestejä ja rakennemuutoksia noudattamalla seuraavia ohjeita.
-
-1.  **Ota pikapäivitys käyttöön**: Suorita seuraava SQL-lause: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Palauta IIS** tyhjentääksesi staattisen välimuistin. 
-
-3.  **Etsi ominaisuus**: Siirry **Ominaisuuksien hallinta** -työtilaan. Jos **Uusi ruudukonhallinta** -ohjausobjekti ei näy kaikkien ominaisuuksien luettelossa, valitse **Tarkista päivitykset**.   
-
-4.  **Ota ominaisuus käyttöön**: Etsi **Uusi ruudukonhallinta** -ominaisuus ominaisuuksien luettelosta ja napsauta **Ota käyttöön nyt** tietoruudussa. Huomaa, että selaimen päivitys on pakollinen. 
-
-Kaikki myöhemmät käyttäjäistunnot alkavat, kun uusi ruudukonhallinta on käytössä.
+Tämä ominaisuus otetaan oletusarvoisesti käyttöön versiosta 10.0.21 lähtien ja sen on määrä tulla pakolliseksi versiossa 10.0.25. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
-Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, versiosta 10.0.13 / Platform updatesta 37 alkaen ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
+Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.
 
  ```this.forceLegacyGrid();```
 
-Tämä ohjelmointirajapinta on käytössä vuoden 2021 lokakuuhun asti. Sen jälkeen uusi ruudukon ohjausobjekti tulee pakolliseksi. Jos jokin ongelma edellyttää tämän ohjelmointirajapinnan käyttöä, ilmoita siitä Microsoftille.
+Tämä ohjelmointirajapinta on voimassa, kunnes uudesta ruudukonhallinnasta tulee pakollinen, tavoitteena on huhtikuu 2022. Jos jokin ongelma edellyttää tämän ohjelmointirajapinnan käyttöä, ilmoita siitä Microsoftille.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Sivun pakottaminen käyttämään uutta ruudukkoa sen jälkeen, kun ruudukon käyttöä ei hyväksytty aiemmin
 Jos yksittäinen sivu on jätetty pois uudesta ruudukosta, uusi ruudukko halutaan ehkä myöhemmin ottaa uudelleen käyttöön, kun taustalla olevat ongelmat on ratkaistu. Se tehdään yksinkertaisesti poistamalla `forceLegacyGrid()`-kutsu. Muutos tulee voimaan vasta, kun jokin seuraavista tapahtuu:

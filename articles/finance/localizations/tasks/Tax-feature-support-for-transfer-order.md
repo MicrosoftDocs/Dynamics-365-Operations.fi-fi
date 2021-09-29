@@ -1,8 +1,8 @@
 ---
 title: Siirtotilausten verotoiminnon tuki
 description: Tässä aiheessa kuvataan siirtotilausten uutta verotoimintoa veron laskentapalvelua käyttäen.
-author: kailiang
-ms.date: 04/20/2021
+author: Kai-Cloud
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1c47c327841b8c712220e440e2aa6b4fe2b31b4a1ccd03dc0a200dbeb7394071
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721686"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500073"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Siirtotilausten verotoiminnon tuki
 
@@ -53,7 +53,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         4. Valitse **Prosentti**-välilehdessä **Lisää**.
         5. Vaihda **On veroton** -arvoksi **Kyllä** **Yleiset**-osassa.
 
-        ![NL-Exempt-verokoodi.](../media/tax-feature-support-02.png)
+           ![NL-Exempt-verokoodi.](../media/tax-feature-support-02.png)
 
     - Kun siirtotilaus vastaanotetaan Belgian varastossa, käänteisen veloituksen menetelmää käytetään **BE-RC-21**- ja **BE-RC+21**-verokoodien avulla.
         
@@ -66,7 +66,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         6. Vaihda **On käänteinen veloitus** -arvoksi **Kyllä** **Yleiset**-osassa.
         7. Valitse **Tallenna**.
 
-        ![BE-RC-21-verokoodi käänteiselle veloitukselle.](../media/tax-feature-support-03.png)
+           ![BE-RC-21-verokoodi käänteiselle veloitukselle.](../media/tax-feature-support-03.png)
         
         Luo verokoodi **BE-RC+21**.
         1. Valitse **Lisää** ja kirjoita **Verokoodi**-kenttään **BE-RC-21**.
@@ -76,7 +76,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         5. Kirjoita **Veroprosentti**-kenttään **21**.
         6. Valitse **Tallenna**.
 
-        ![BE-RC+21-verokoodi käänteiselle veloitukselle.](../media/tax-feature-support-04.png)
+           ![BE-RC+21-verokoodi käänteiselle veloitukselle.](../media/tax-feature-support-04.png)
 
 3. Määritä verokoodien kohdistettavuus.
 
@@ -97,6 +97,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         7. Syötä **Veroryhmä**- ja **Nimikkeen veroryhmä** -kentissä liittyvä arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä, jotka on määritetty Finance-järjestelmässäsi.
         
         Lisää toinen sääntö siirtotilauksen vastaanottoon.
+        
         1. Valitse **Soveltuvuussäännöt**-välilehdessä **Lisää**.
         2. Ota sääntö käyttöön siirtotilausta varten valitsemalla **Liiketoimintaprosessi**-kentässä **Varasto**.
         3. Kirjoita **Toimitus maasta/alueelta** -kenttään **NLD**.
@@ -105,7 +106,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
         6. Valitse **Verokoodit**-kentästä **BE-RC+21** ja **BE-RC-21**.
         7. Syötä **Veroryhmä**- ja **Nimikkeen veroryhmä** -kentissä liittyvä arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä, jotka on määritetty Finance-järjestelmässäsi.
 
-        ![Soveltuvuussäännöt.](../media/image5.png)
+           ![Soveltuvuussäännöt.](../media/image5.png)
 
 4. Täydennä ja julkaise uusi vero-ominaisuusversio.
 
@@ -115,7 +116,7 @@ Seuraavia ohjeita noudattamalla voit määrittää siirtotilauksen veron. Täss�
 
 Ota käyttöön ja määritä verot siirtotilauksille seuraavien ohjeiden avulla.
 
-1. Valitse Financessa **Työtilat** \> **Ominaisuuden hallinta**.
+1. Valitse Financessa **Työtilat** > **Ominaisuuden hallinta**.
 2. Etsi ja valitse luettelosta **Siirtotilauksen vero** -ominaisuus ja ota se sitten käyttöön valitsemalla **Ota käyttöön nyt**.
 
     > [!IMPORTANT]
@@ -128,10 +129,10 @@ Ota käyttöön ja määritä verot siirtotilauksille seuraavien ohjeiden avulla
     > [!IMPORTANT]
     > Tämä vaihe on suoritettava jokaiselle Financen oikeushenkilölle, jossa haluat veropalvelun ja Siirtotilauksen vero -toiminnon olevan käytettävissä.
 
-    1. Siirry kohtaan **Vero** \> **Asetukset** \> **Veromääritys** \> **Veropalvelun määritys**.
+    1. Siirry kohtaan **Vero** > **Asetukset** > **Veromääritys** > **Veropalvelun määritys**.
     2. Valitse **Liiketoimintaprosessi**-kentässä **Varasto**.
 
-    ![Liiketoimintaprosessi-kentän määrittäminen.](../media/image8.png)
+      ![Liiketoimintaprosessi-kentän määrittäminen.](../media/image8.png)
 
 4. Varmista, että käänteinen veloitusmekanismi on määritetty. Siirry kohtaan **Kirjanpito** \> **Asetukset** \> **Parametrit** ja varmista sitten **Käänteinen veloitus** -välilehdessä, että **Ota käänteinen veloitus käyttöön** -asetuksen arvo on **Kyllä**.
 
@@ -140,10 +141,10 @@ Ota käyttöön ja määritä verot siirtotilauksille seuraavien ohjeiden avulla
 5. Varmista, että liittyvät verokoodit, veroryhmät, nimikkeen veroryhmät ja ALV-rekisterinumerot on määritetty Financessa veropalvelun ohjeistuksen mukaisesti.
 6. Määritä väliaikainen siirtotili. Tämä vaihe on pakollinen vain, jos siirtotilaukseen sovellettavaa veroa ei sovelleta verovapautukseen tai käännetyn veloituksen verojen mekanismiin.
 
-    1. Siirry kohtaan **Vero** \> **Asetukset** \> **Arvonlisävero** \> **Kirjanpidon kirjausryhmät**.
+    1. Siirry kohtaan **Vero** > **Asetukset** > **Arvonlisävero** \ **Kirjanpidon kirjausryhmät**.
     2. Valitse **Väliaikainen siirto** -kentästä kirjanpitotili.
 
-    ![Väliaikaisen siirtotilin valinta.](../media/image10.png)
+       ![Väliaikaisen siirtotilin valinta.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Perusvaraston määrittäminen siirtotilaustapahtumia varten
 
@@ -151,7 +152,7 @@ Näiden vaiheiden avulla voit määrittää perusvaraston, joka ottaa siirtotila
 
 1. Luo lähetys- ja vastaanottotoimipaikat eri maiden tai alueiden varastoille ja lisää kunkin toimipaikan ensisijainen osoite.
 
-    1. Valitse **Varastonhallinta** \> **Asetukset** \> **Varasto** \> **Toimipaikat**.
+    1. Valitse **Varastonhallinta** > **Asetukset** > **Varasto** > **Toimipaikat**.
     2. Valitse **Uusi**, jos haluat luoda toimipaikan, jonka liität varastoon myöhemmin.
     3. Toista vaihe 2 kaikille muille toimipaikoille, jotka sinun on luotava.
 
@@ -162,11 +163,11 @@ Näiden vaiheiden avulla voit määrittää perusvaraston, joka ottaa siirtotila
 
 2. Luo lähetys-, siirto- ja vastaanottovarastot. Kaikki fyysisessä varastossa ylläpidettävät osoitetiedot ohittavat toimipaikan osoitteen veronlaskennan aikana.
 
-    1. Valitse **Varastonhallinta** \> **Asetukset** \> **Varasto** \> **Varastot**.
+    1. Siirry kohtaan **Varastonhallinta** > **Asetukset** > **Varasto** > **Varastot**.
     2. Valitse **Uusi**, jos haluat luoda fyysisien varaston ja liittää sen vastaavaan toimipaikkaan.
     3. Toista vaihe 2, jos haluat luoda fyysisen varaston kullekin toimipaikalle tarpeen mukaan.
 
-    ![Fyysisten varastojen määrittäminen.](../media/image12.png)
+       ![Fyysisten varastojen määrittäminen.](../media/image12.png)
 
     > [!NOTE]
     > Lähetysvarastolle siirtovarasto on valittava **Siirtovarasto**-kentässä siirtotilaustapahtumia varten.
@@ -175,7 +176,7 @@ Näiden vaiheiden avulla voit määrittää perusvaraston, joka ottaa siirtotila
 
 3. Varmista, että siirtotilaustapahtumien varastokirjauskonfiguraatio on määritetty.
 
-    1. Siirry kohtaan **Varastonhallinta** \> **Määritys** \> **Kirjaus** \> **Kirjaus**.
+    1. Siirry kohtaan **Varastonhallinta** > **Määritys** > **Kirjaus** > **Kirjaus**.
     2. Varmista **Varasto**-välilehdessä, että kirjanpitotili on määritetty sekä **Varasto-otto**- että **Varastovastaanotto** -kirjausta varten.
 
         ![Varasto-oton ja varastovastaanoton kirjauksen määrittäminen.](../media/image14.png)
@@ -187,3 +188,6 @@ Näiden vaiheiden avulla voit määrittää perusvaraston, joka ottaa siirtotila
     4. Varmista, että kirjanpitotilille on määritetty **Yksiköiden väliset maksettavat** -kirjaus.
 
         ![Yksiköiden väliset maksettavat -kirjauksen määrittäminen.](../media/image16.png)
+        
+        
+  [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

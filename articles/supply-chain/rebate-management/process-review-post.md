@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729407"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500472"
 ---
 # <a name="process-review-and-post-rebates"></a>Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen
 
@@ -43,8 +43,6 @@ Voit seurata sopimusta määrittämällä kullekin sopimukselle tilan. Tila on t
 Siirry kohtaan **Ostohyvitysten hallinta \> Kausittaiset tehtävät \> Laske FIFO-ostohinta**. Suorita laskenta valitsemalla näyttöön tulevassa valintaikkunassa **OK**.
 
 ## <a name="create-source-transactions"></a>Lähdetapahtumien luominen
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Voit luoda myynti- tai ostotilauksia, joissa on lähdetapahtumia joko ennen sovellettavien ostohyvitystenhallintasopimuksen luontia tai sen jälkeen.
 
@@ -158,8 +156,6 @@ Sen sijaan, että käsiteltäisiin tiettyjä sopimuksia tai sopimusrivejä, voit
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Käsittelee tarjoukset ostohyvityksen työtilan avulla
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Sen sijaan, että käsiteltäisiin tiettyjä sopimuksia tai sopimusrivejä, voit käyttää *ostohyvityksen työtilaa* käsitelläksesi useita sopimuksia samanaikaisesti. Voit halutessasi käyttää tietuesuodattimia ja/tai määrittää toistuvan aikataulun. Rivejä ei tarvitse valita. Järjestelmä käsittelee kaikki rivit, jotka täyttävät asettamasi päivämäärä- ja suodatusvaatimukset.
 
 Voit käsitellä sopimukset ostohyvityksen työtilan avulla noudattamalla seuraavia vaiheita.
@@ -213,8 +209,6 @@ Voit tarkastella ja muokata Ostohyvitysten hallintatapahtumia alennustarjousten 
 > Jos käytät lunastusprosessia, kun käsittelet seuraavaa kautta, tapahtumaluettelossa ovat aiemman kirjauksen jälkeen käsittelemättömät tapahtumat sekä valitun kauden kaikki uudet tapahtumat.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Ostohyvitysten hallintatapahtumien tarkasteleminen ja muokkaaminen ostohyvitysten työtilan avulla
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Voit tarkastella ja muokata Ostohyvitysten hallintatapahtumia ostohyvityksen työtilan avulla seuraavasti.
 
@@ -295,8 +289,6 @@ Sen sijaan, että tapahtumat kirjataisiin tietyille sopimuksille tai sopimusrive
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Kirjaa tapahtumat ostohyvityksen työtilan avulla
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Kun olet käsitellyt varaus-, ostohyvitys- tai poiskirjaustapahtumia, voit tarkistaa ja kirjata kaikkien tarjousten yhden tai usean tapahtumarivin luodut tapahtumat ostohyvityksen työn perusteella näiden vaiheiden avulla.
 
 1. Siirry kohtaan **Ostohyvityksen hallinta \> Ostohyvityksen hallintasopimukset \> Ostohyvityksen työtila**.
@@ -332,8 +324,6 @@ Noudattamalla näitä vaiheita voit tarkistaa ostohyvitysten hallinnan sopimukse
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Tarkista kirjauskansiot ostohyvityksen työtilan avulla
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Voit tarkastaa kirjauskansiot ostohyvityksen työtilan avulla noudattamalla seuraavia vaiheita.
 
 1. Siirry kohtaan **Ostohyvityksen hallinta \> Ostohyvityksen hallintasopimukset \> Ostohyvityksen työtila**.
@@ -342,8 +332,6 @@ Voit tarkastaa kirjauskansiot ostohyvityksen työtilan avulla noudattamalla seur
 1. Näyttöön tulee luettelo kirjauskansioista, asiakirjoista tai nimikkeistä. Jos haluat lisätietoja kirjauskansiosta, asiakirjasta tai nimikkeestä, valitse sen rivi ja valitse sitten toimintoruudusta **Näytä tiedot**.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Ostohyvityksen työtilan ostohyvitysten hallintatapahtumat
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Kun kirjaat ostohyvityksen hallintatapahtuman, jolla on jokin seuraavista **maksutyypin** arvoista, järjestelmä luo asiakkaan vähennyskirjauskansion tai vapaatekstilaskun asianmukainen asiakastilille:
 
@@ -358,8 +346,6 @@ Lisätietoja on kohdassa [Vähennysten hallinta vähennysten työtilaa käyttäm
 
 ## <a name="purge-unposted-transactions"></a>Kirjaamattomien tapahtumien tyhjentäminen
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Kun olet käsitellyt varaus-, ostohyvitys- tai alennustapahtumia, voit poistaa valitut kirjaamattomat tapahtumat näiden vaiheiden mukaisesti.
 
 1. Siirry kohtaan **Ostohyvityksen hallinta \> Ostohyvityksen hallintasopimukset \> Ostohyvityksen työtila**.
@@ -368,8 +354,6 @@ Kun olet käsitellyt varaus-, ostohyvitys- tai alennustapahtumia, voit poistaa v
 4. Poista kirjaamattomat tapahtumat napsauttamalla **OK**.
 
 ## <a name="cancel-a-posted-provision"></a>Kirjatun varauksen peruuttaminen
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Kun olet käsitellyt ja kirjaanut varauksen, voit peruuttaa kirjatut varaustapahtumat noudattamalla näitä vaiheita.
 

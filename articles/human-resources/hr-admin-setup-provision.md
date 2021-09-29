@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441162"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488080"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -41,6 +41,8 @@ Seuraavien edellytysten on toteuduttava, ennen kuin tuotantoympäristön valmist
 ## <a name="provision-a-human-resources-trial-environment"></a>Henkilöstöhallinnon koeympäristön valmistelu
 
 Ennen ensimmäisen tuotantoympäristön tai tuotantoympäristön varausta voit varata [henkilöstöhallinnon koeympäristön](https://go.microsoft.com/fwlink/p/?LinkId=2115962) henkilöstöhallinnon toimintojen tarkistamista varten. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon järjestelmänhallintakokemuksen kautta. 
+
+Koeympäristöt tarjoavat mahdollisuuden arvioida henkilöstöresurssitoimintoja niiden henkilöiden osalta, joilla ei ole vielä henkilöstöresurssiympäristön käyttöoikeutta. Jos olet valmistelemassa koeympäristöä ja todennetulla käyttäjällä on jo käyttöoikeus yhteen tai useampaan olemassa olevaan henkilöstöresurssiympäristöön, käyttäjä ohjataan aiemmin luotuun ympäristöön tai ympäristöjen luetteloon.
 
 Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Koeajan kesto on enintään 60 päivää. Kun kokeiluympäristö vanhenee, ympäristö ja sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Ympäristöä ei voi muuntaa tuotantotilauksen tai tuotantoympäristön muotoon. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
 
@@ -135,7 +137,12 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
    
     - **Maantieteelliset alueet, joita ei tueta** - Ympäristön on oltava tuetulla maantieteellisellä alueella. Lisätietoja on kohdassa [Tuetut maantieteelliset alueet](hr-admin-setup-provision.md#supported-geographies).
 
-6. Kun olet määrittänyt oikean ympäristön, voit jatkaa valmisteluprosessia. 
+6. Kaksoiskirjoitustoimintoa voidaan käyttää henkilöstötietojen integroimiseen Power Apps -ympäristön kanssa vain, jos **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehto on valittu ympäristölle. Siirry [Kaksoiskirjoituksen kotisivulle](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), kun haluat lisätietoja kaksoiskirjoituksesta.
+
+    > [!NOTE]
+    > **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehdon on oltava valittuna sillä hetkellä, kun Power Apps -ympäristö luodaan. Jos vaihtoehto ei ole valittuna valmistelun aikana, et voi käyttää kaksoiskirjoitusta integroidaksesi tietoja Dynamics 365 Human Resourcesin ja Power Apps -ympäristön välillä, etkä voi asentaa Dynamics 365 -sovelluksia (kuten Dynamics 365 Sales, Field Service) ympäristöön. Tätä vaihtoehtoa ei voi perua. Lisätietoja löytyy kohdasta [Huomioon otettavia asioita uutta ympäristöä luotaessa](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) Power Platform -ohjesivustolla.
+
+7. Kun olet määrittänyt oikean ympäristön, voit jatkaa valmisteluprosessia. 
 
 ### <a name="supported-geographies"></a>Tuetut maantieteelliset alueet
 

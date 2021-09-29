@@ -2,7 +2,7 @@
 title: Poissaolopäällikön roolin määrittäminen
 description: Tässä ohjeaiheessa kerrotaan, miten poissaolopäällikön rooli määritetään työntekijöiden lomanhallintaa varten.
 author: hasrivas
-ms.date: 07/19/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f2a2fd0a1ad1cca19625ff1029962f608251f1d
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732342"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485751"
 ---
 # <a name="configure-the-absence-manager-role"></a>Poissaolopäällikön roolin määrittäminen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 Joissakin organisaatioissa ihmisten esimiehet eivät ehkä hallitse tiiminsä lomaa. Sen sijaan poissaolopäällikkö voi käsitellä tätä prosessia tiimin jäsenille useilla osastoilla ja tiimeissä. Poissaolopäälliköillä on seuraavat ominaisuudet lomanhallintaan:
 
@@ -38,7 +36,7 @@ Joissakin organisaatioissa ihmisten esimiehet eivät ehkä hallitse tiiminsä lo
 
 1. Valitse **Järjestelmänvalvojan**-työtilassa **Ominaisuuksien hallinta**.
 
-2. Ota **Ominaisuuksien hallinta** -välilehdessä käyttöön **(Esiversio) Poissaolopäällikkö hallitsee vapaata** -ominaisuus.
+2. Ota **Ominaisuuksien hallinta** -välilehdessä käyttöön **Poissaolopäällikkö hallitsee vapaata** -ominaisuus.
 
 ## <a name="define-a-custom-hierarchy"></a>Mukautetun hierarkian määrittäminen
 

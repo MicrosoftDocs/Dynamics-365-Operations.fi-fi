@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
-ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
+ms.openlocfilehash: 4467d313aa2518b23434ec05989eb3e87cd35dfa
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7481312"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485731"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synkronointi tarvittaessa Supply Chain Managementin hinnoittelumoduulin kanssa
 
@@ -60,6 +60,7 @@ Kun Salesin sarakkeet on täytetty, seuraavat rajoitukset ovat voimassa:
 + Supply Chain Managementin kuluja ja kulujen kohdistuksia ei replikoida Salesiin.
 + Hinnoittelu ei ota huomioon erikoisvähittäismyyntihinnoittelua, joka on määritetty **Vähittäismyyntikanava**-sarakkeessa myyntitilausrivisivulla Supply Chain Managementissa.
 + Supply Chain Managementin **Myynninedistämispalkkioiden hallinta** -osassa määritettyjä alennuksia ei oteta huomioon.
++ Hinnoittelu ei ota huomioon myyntisopimuksia.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

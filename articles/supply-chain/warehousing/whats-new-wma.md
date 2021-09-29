@@ -1,27 +1,39 @@
 ---
 title: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 description: Tässä aiheessa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386096"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485619"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20100"></a>Versio 2.0.10.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Lisätty animaatio, joka näkyy luetteloiden ja sivujen sipaisun yhteydessä.
+- Teksti näkyy nyt oikein yhteyden virhesivulla.
+- Yhdistelmäruudut, joissa ei ole oletusarvoja, näkyvät nyt oikein.
+- Alaotsikon alueella olevat tiedot näkyvät nyt vain yksityiskohtaisilla tietosivuilla.
+- Tyhjät syötekentät eivät enää näy lisätietokortissa.
+- Vahvistusarvot eivät enää toistu lisätietokortissa.
+- Korjattu useita ongelmia, jotka saivat järjestelmän lopettamaan vastaamisen.
 
 ## <a name="version-2090"></a>Versio 2.0.9.0
 

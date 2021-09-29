@@ -1,20 +1,20 @@
 ---
 title: Italian Intrastat
 description: Tässä ohjeaiheessa on tietoja Intrastat-raportoinnista Italiassa.
-author: andosip
-ms.date: 7/9/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: f80a82f4c3c00ee263cc0bf31b0dc5fc69a05dea324fe96e3e0db9a13a488fac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779365"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488256"
 ---
 # <a name="italian-intrastat"></a>Italian Intrastat
 
@@ -597,13 +597,10 @@ Viranomaiselle on lähetettävä kaksi raporttia. Yksi raportti on yhteisön sis
 
 - **Kansilehti**
 
-- **Osa 1. Tavarat** – Tämä osa sisältää tietoja normaalitapahtumista ja hyvityslaskuista, jotka liittyvät tavaroiden laskuihin samalla raportointikaudella kuin Intrastat-ilmoituskausi.
-
-- **Osa 2. Tavaroiden korjaukset** – Tämä osa sisältää tietoja korjauksista ja hyvityslaskuista, jotka liittyvät tavaroiden laskuihin edellisillä Intrastat-ilmoituskausilla.
-
-- **Osa 3. Palvelut** – Tämä osa sisältää tietoja normaalitapahtumista ja hyvityslaskuista, jotka liittyvät palveluiden laskuihin samalla raportointikaudella kuin Intrastat-ilmoituskausi.
-
-- **Osa 4. Palveluiden korjaukset** – Tämä osa sisältää tietoja korjauksista ja hyvityslaskuista, jotka liittyvät palveluiden laskuihin edellisillä Intrastat-ilmoituskausilla.
+- **Osa 1. Tavarat**: Tämä osa sisältää tietoja normaalitapahtumista ja hyvityslaskuista, jotka liittyvät tavaroiden laskuihin samalla raportointikaudella kuin Intrastat-ilmoituskausi.
+- **Osa 2. Tavaroiden korjaukset**: Tämä osa sisältää tietoja korjauksista ja hyvityslaskuista, jotka liittyvät tavaroiden laskuihin edellisillä Intrastat-ilmoituskausilla.
+- **Osa 3. Palvelut**: Tämä osa sisältää tietoja normaalitapahtumista ja hyvityslaskuista, jotka liittyvät palveluiden laskuihin samalla raportointikaudella kuin Intrastat-ilmoituskausi.
+- **Osa 4. Palveluiden korjaukset**: Tämä osa sisältää tietoja korjauksista ja hyvityslaskuista, jotka liittyvät palveluiden laskuihin edellisillä Intrastat-ilmoituskausilla.
 
 ## <a name="set-up-intrastat"></a>Määritä Intrastat
 
@@ -611,21 +608,14 @@ Viranomaiselle on lähetettävä kaksi raporttia. Yksi raportti on yhteisön sis
 
 Ennen Intrastat-käyttöä on määritettävä seuraavat yleistiedot:
 
--   Kauppatavarakoodit. Palveluille on määritettävä kuusinumeroiset kauppatavarakoodit.
-
--   Tapahtumakoodit. Huomaa, että Italia käyttää yksinumeroisia tapahtumakoodeja.
-
--   Välitystavat.
-
--   Tilastomenettelyt.
-
--   Ulkomaankaupan parametrit.
-
--   Varastointi.
-
--   Vapautetun tuotteen tiedot.
-
--   Edustajan yhteystiedot.
+   - Kauppatavarakoodit. Palveluille on määritettävä kuusinumeroiset kauppatavarakoodit.
+   - Tapahtumakoodit. Huomaa, että Italia käyttää yksinumeroisia tapahtumakoodeja.
+   - Välitystavat.
+   - Tilastomenettelyt.
+   - Ulkomaankaupan parametrit.
+   - Varastointi.
+   - Vapautetun tuotteen tiedot.
+   - Edustajan yhteystiedot.
 
 Lisätietoja on kohdassa [Intrastat-yleiskatsaus](emea-intrastat.md).
 
@@ -633,97 +623,68 @@ Lisätietoja on kohdassa [Intrastat-yleiskatsaus](emea-intrastat.md).
 
 Määritä italialaiset asetukset Intrastat-käyttöä varten noudattamalla näitä ohjeita.
 
-1.  Lataa [Microsoft Dynamics Lifecycle Servicesin (LCS)](https://lcs.dynamics.com/Logon/Index) jaetussa resurssikirjastossa viimeisin versio seuraavista elektronisen raportoinnin (ER) määrityksistä Intrastat-ilmoitukselle:
+1. Lataa [Microsoft Dynamics Lifecycle Servicesin (LCS)](https://lcs.dynamics.com/Logon/Index) jaetussa resurssikirjastossa viimeisin versio seuraavista elektronisen raportoinnin (ER) määrityksistä Intrastat-ilmoitukselle:
 
-    -   Intrastat-malli
+    - Intrastat-malli
+    - Intrastat-raportti
+    - Intrastat (IT)
 
-    -   Intrastat-raportti
+    Lisätietoja on aiheessa [Lataa sähköisen raportoinnin määritykset Lifecycle Servicesistä](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-    -   Intrastat (IT)
+2. Valitse Dynamics 365 Financessa **Vero** > **Määritys** > **Ulkomaankaupan parametrit**.
+3. Määritä **Intrastat**-välilehden **Yleiset**-pikavälilehdessä seuraavat kentät:
 
-Lisätietoja on aiheessa [Lataa sähköisen raportoinnin määritykset Lifecycle Servicesistä](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    - **Alkuperä-/kohdemaakunta**: Valitse yrityksen maakunta. Tätä maakuntaa käytetään lähetyksissä.
+    - **Tapahtumakoodi**: Valitse ominaisuussiirtojen tapahtumakoodi. Tätä koodia käytetään tapahtumille, jotka aiheuttavat todellisen tai suunnitellun ominaisuuden siirtymän kompensaatiota vastaan, sekä korjauksille.
 
-2.  Siirry Dynamics 365 Financessa kohtaan **Vero** &gt; **Määritys** &gt; **Ulkomaankaupan parametrit**.
+    - **Hyvityslasku**: Valitse tapahtumakoodi tavaroiden palautusta varten.
+    - **Myyntiraportointikausi**: Valitse vienti-ilmoituksen raportointikausi: **Kuukausi** tai **Vuosineljännes**. Neljännesvuosittaiset ilmoitukset viedään yksinkertaisessa muodossa.
+    - **Ostoraportointikausi**: Valitse tuonti-ilmoituksen raportointikausi: **Kuukausi** tai **Vuosineljännes**. Neljännesvuosittaiset ilmoitukset viedään yksinkertaisessa muodossa.
 
-3.  Määritä **Intrastat**-välilehden **Yleiset**-pikavälilehdessä seuraavat kentät:
+4. Määritä **Elektroninen raportointi** -pikavälilehdessä seuraavat kentät:
 
-    - **Alkuperä-/kohdemaakunta** – Valitse yrityksen maakunta. Tätä maakuntaa käytetään lähetyksissä.
+    - **Tiedostomuodon määritys**: Valitse **Intrastat (IT)**.
+    - **Raporttimuodon määritys**: Valitse **Intrastat-raportti**.
 
-    <!-- -->
+5. Valitse **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kentästä **Intrastat**.
+6. Määritä **Tilastollinen arvo** -pikavälilehdessä **Tilastotietojen tulostaminen ja vieminen**  -asetuksen arvoksi tarvittaessa **Kyllä**. Tämä asetus aktivoi tilastollisen osan siirron. Tilastollinen sisältää painoja, lisäyksiköitä, tilastoarvoja, toimitusehtoja, toimitusaikatauluja, kuljetustapoja ja alkuperäalueita koskevat tiedot.
 
-    - **Tapahtumakoodi** – Valitse ominaisuussiirtojen tapahtumakoodi. Tätä koodia käytetään tapahtumille, jotka aiheuttavat todellisen tai suunnitellun ominaisuuden siirtymän kompensaatiota vastaan, sekä korjauksille.
+    > [!NOTE]
+    > Neljännesvuosittaisen ilmoituksen Instrastat-raportti ei sisällä tilastollista osaa tai tietoja toimitusehdoista ja välitystavoista. Lisätietoja on taulukossa tämän aiheen [Yleiskatsaus](#overview)-osassa.
 
-    - **Hyvityslasku** – Valitse tapahtumakoodi tavaroiden palautusta varten. Tätä koodia käytetään tavaroiden palauttamiseen sen jälkeen, kun alkuperäinen tapahtuma on kirjattu tapahtumakoodiin.
+7. Tee **maa-/alueominaisuuksien** välilehdessä luettelo kaikista maista tai alueista, joiden kanssa organisaatiosi käy liiketoimintaa. Määritä kullekin maalle tai alueelle seuraavat kentät:
 
-    - **Myyntiraportointikausi** – Valitse vienti-ilmoituksen raportointikausi: **Kuukausi** tai **Vuosineljännes**. Neljännesvuosittaiset ilmoitukset viedään yksinkertaisessa muodossa.
+    - **Osapuolen maa tai alue**: Valitse maa-/aluekoodi.
+    - **Intrastat-koodi**: Syötä kaksinumeroinen Intrastat-koodi.
+    - **Valuutta**: Määritä maan tai alueen kansallinen/alueellinen valuutta. Jos toimittaja perustuu EU-maassa, jossa ei ole käytössä euroa, laskusummat raportoidaan sekä toimittajan valuuttana että euroina. Jos toimittaja sijaitsee esimerkiksi Tanskassa, tuontiilmoituksen ilmoitetut summat ovat sekä Tanskan kruunu (DKK) että euroina (EUR).
+    - **Maa-/aluetyyppi**: Valitse maan tai alueen tyyppi organisaatiosi suhteen. Intrastat-kirjauskansiota varten siirretään vain **EU**:n maat tai alueet sekä **erityinen kotimaa** -tyypit.
 
-    - **Ostoraportointikausi** – Valitse tuonti-ilmoituksen raportointikausi: **Kuukausi** tai **Vuosineljännes**. Neljännesvuosittaiset ilmoitukset viedään yksinkertaisessa muodossa.
+    > [!NOTE]
+    > Maat tai alueet, joiden tyyppi on **Erityinen kotimainen**, Intrastat-raporttitiedostosta jätetään pois seuraavat kentät: **Paino**, **Lisäyksiköt**, **Tilastollinen arvo**, **Toimitusehdot**, **Välityskoodi**, **alkuperä-/kohdemaa tai -alue** ja **Alkuperä-/kohdemaakunta**. Valitse esimerkiksi **Osapuolen maa tai alue** -kentästä **SMR (San Marino)** ja valitse sitten **maa tai alue**-kentästä **Erityinen kotimainen**.
 
-4.  Määritä **Elektroninen raportointi** -pikavälilehdessä seuraavat kentät:
-
-    - **Tiedostomuodon määritys** – Valitse **Intrastat (IT)**.
-
-    <!-- -->
-
-    - **Raporttimuodon määritys** – Valitse **Intrastat-raportti**.
-
-5.  Valitse **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kentästä **Intrastat**.
-
-6.  Määritä **Tilastollinen arvo** -pikavälilehdessä **Tilastotietojen tulostaminen ja vieminen**  -asetuksen arvoksi tarvittaessa **Kyllä**. Tämä asetus aktivoi tilastollisen osan siirron. Tilastollinen sisältää painoja, lisäyksiköitä, tilastoarvoja, toimitusehtoja, toimitusaikatauluja, kuljetustapoja ja alkuperäalueita koskevat tiedot.
-
->[!NOTE]
->
->Neljännesvuosittaisen ilmoituksen Instrastat-raportti ei sisällä tilastollista osaa tai tietoja toimitusehdoista ja välitystavoista. Lisätietoja on taulukossa tämän aiheen [Yleiskatsaus](#overview)-osassa.
-
-7.  Tee **maa-/alueominaisuuksien** välilehdessä luettelo kaikista maista tai alueista, joiden kanssa organisaatiosi käy liiketoimintaa. Määritä kullekin maalle tai alueelle seuraavat kentät:
-
-- **Osapuolen maa tai alue** – Valitse maa-/aluekoodi.
-
-- **Intrastat-koodi** – Syötä kaksinumeroinen Intrastat-koodi.
-
-- **Valuutta** – Määritä maan tai alueen kansallinen/alueellinen valuutta. Jos toimittaja perustuu EU-maassa, jossa ei ole käytössä euroa, laskusummat raportoidaan sekä toimittajan valuuttana että euroina. Jos toimittaja sijaitsee esimerkiksi Tanskassa, tuontiilmoituksen ilmoitetut summat ovat sekä Tanskan kruunu (DKK) että euroina (EUR).
-
-- **Maa-/aluetyyppi** – Valitse maan tai alueen tyyppi organisaatiosi suhteen. Intrastat-kirjauskansiota varten siirretään vain **EU**:n maat tai alueet sekä **erityinen kotimaa** -tyypit.
-
->[!NOTE]
->
->Maat tai alueet, joiden tyyppi on **Erityinen kotimainen**, Intrastat-raporttitiedostosta jätetään pois seuraavat kentät: **Paino**, **Lisäyksiköt**, **Tilastollinen arvo**, **Toimitusehdot**, **Välityskoodi**, **alkuperä-/kohdemaa tai -alue** ja **Alkuperä-/kohdemaakunta**. Valitse esimerkiksi **Osapuolen maa tai alue** -kentästä **SMR (San Marino)** ja valitse sitten **maa tai alue**-kentästä **Erityinen kotimainen**.
-
-8.  Go to **Ostoreskontra** &gt; **Asetukset** &gt; **Toimitusehdot**.
-
-9.  Valitse toimitusehdot ruudukosta.
-
+8. Valitse **Ostoreskontra** > **Määritys** > **Toimitusehdot**.
+9. Valitse toimitusehdot ruudukosta.
 10. Syötä **Yleiset**-pikavälilehden **Intrastat-koodi**- kentässä yksinumeroinen koodi, jota käytetään Intrastat-raportissa.
-
 11. Määritä verovapausnumerot asiakkaille ja toimittajille noudattamalla seuraavia ohjeita. Nämä numerot näkyvät Intrastat-raportissa.
+12. Siirry kohtaan **Vero** > **Asetukset** > **Arvonlisävero** > **Verovapausnumerot** ja luettele kaikki asiakkaidesi ja toimittajiesi verovapausnumerot. Määritä kullekin kumppanille seuraavat kentät:
 
--   Siirry kohtaan **Vero** &gt; **Asetukset** &gt; **Arvonlisävero** &gt; **Verovapausnumerot** ja luettele kaikki asiakkaidesi ja toimittajiesi verovapausnumerot. Määritä kullekin kumppanille seuraavat kentät:
+    - **maa tai alue**: Valitse kumppanin maa tai alue.
+    - **Verovapausnumero**: Syötä kumppanin verovapausnumero.
+    - **Yrityksen nimi**: Syötä kumppanin nimi.
 
-    - **maa tai alue** – Valitse kumppanin maa tai alue.
+13. Siirry kohtaan **Myyntireskontra** > **Asiakkaat** > **Kaikki asiakkaat** ja seuraa näitä vaiheita jokaiselle asiakkaalle:
 
-    - **Verovapausnumero** – Syötä kumppanin verovapausnumero.
+    1. Valitse asiakas.
+    2. Valitse **Lasku ja toimitus** -pikavälilehden **Arvonlisävero**-osan **Verovapausnumero**-kentässä **Kaikki**.
+    3. Valitse asiakkaan verovapausnumero.
 
-    - **Yrityksen nimi** – Syötä kumppanin nimi.
+14. Siirry kohtaan **Ostoreskontra** > **Toimittajat** > **Kaikki toimittajat** ja seuraa näitä vaiheita jokaiselle toimittajalle:
 
-<!-- -->
+    1. Valitse toimittaja.
+    2. Valitse **Lasku ja toimitus** -pikavälilehden **Arvonlisävero**-osan **Verovapausnumero**-kentässä **Kaikki**.
+    3. Valitse toimittajan verovapausnumero.
 
--   Siirry kohtaan **Myyntireskontra** &gt; **Asiakkaat** &gt; **Kaikki asiakkaat** ja seuraa näitä vaiheita jokaiselle asiakkaalle:
-
-    1.  Valitse asiakas.
-
-    2.  Valitse **Lasku ja toimitus** -pikavälilehden **Arvonlisävero**-osan **Verovapausnumero**-kentässä **Kaikki**.
-
-    3.  Valitse asiakkaan verovapausnumero.
-
--   Siirry kohtaan **Ostoreskontra** &gt; **Toimittajat** &gt; **Kaikki toimittajat** ja seuraa näitä vaiheita jokaiselle toimittajalle:
-
-    1.  Valitse toimittaja.
-
-    2.  Valitse **Lasku ja toimitus** -pikavälilehden **Arvonlisävero**-osan **Verovapausnumero**-kentässä **Kaikki**.
-
-    3.  Valitse toimittajan verovapausnumero.
-
-12. Siirry kohtaan **Vero** &gt; **Asetukset** &gt; **Ulkomaankauppa** &gt; **Intrastatin pakkaus** ja valitse kentät, joita tulisi vertailla, kun Intrastat-tiedoista tehdään yhteenveto. Valitse Italialle **Verovapausnumero**, **Tapahtumakoodi**, **Kauppatavara**, **Toimitusehdot**, **Välitys**, **maa tai alue**, **Alkuperämaa/-alue**, **Alkuperämaakunta**, **Alkuperä-/kohdemaakunta**, **Valuutta**, **Kuukausi**, **Vuosineljännes** ja **Korjausvuosi**.
+15. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Intrastatin pakkaus** ja valitse sitten kentät, joita on vertailtava, kun Intrastat-tiedoista tehdään yhteenveto. Valitse Italialle **Verovapausnumero**, **Tapahtumakoodi**, **Kauppatavara**, **Toimitusehdot**, **Välitys**, **maa tai alue**, **Alkuperämaa/-alue**, **Alkuperämaakunta**, **Alkuperä-/kohdemaakunta**, **Valuutta**, **Kuukausi**, **Vuosineljännes** ja **Korjausvuosi**.
 
 ## <a name="italian-vendor-invoice-journal-for-foreign-trade"></a>Italian toimittajan laskukirjauskansio ulkomaankaupalle
 
@@ -762,10 +723,10 @@ Avaa Intrastat-kirjauskansio siirtymällä kohtaan **Vero** &gt; **Ilmoitukset**
 >
 >Jos vastaanotat negatiivisen korjauksen (hyvityslaskun) samalla kaudella kuin raportointikausi, Intrastat-kirjauskansio on muutettava manuaalisesti seuraavien vaiheiden mukaisesti.
 >
->1.  Siirry kohtaan **Vero** &gt; **Ilmoitukset** &gt; **Ulkomaankauppa** &gt; **Intrastat**.
->2.  Etsi ja poista korjaukseksi merkitty tapahtuma.
->3.  Etsi alkuperäinen tapahtuma ja muuta **Laskun summa** -kentän arvoa tarpeen mukaan.
->Esimerkiksi 10 000:n lasku sisältää hyvityslaskun, jonka summa on -2 000. Tällöin on otettava käyttöön Intrastat-kirjauskansio ja etsittävä ja poistettava tapahtuma summalle -2 000. Etsi sitten alkuperäinen 10 000:n tapahtuma ja määritä laskun summaksi 8 000 (= 10 000 - 2 000).
+> 1. Valitse **Vero** > **Ilmoitukset** > **Ulkomaankauppa** > **Intrastat**.
+> 2. Etsi ja poista korjaukseksi merkitty tapahtuma.
+> 3. Etsi alkuperäinen tapahtuma ja muuta **Laskun summa** -kentän arvoa tarpeen mukaan.
+> Esimerkiksi 10 000:n lasku sisältää hyvityslaskun, jonka summa on -2 000. Tällöin on otettava käyttöön Intrastat-kirjauskansio ja etsittävä ja poistettava tapahtuma summalle -2 000. Etsi sitten alkuperäinen 10 000:n tapahtuma ja määritä laskun summaksi 8 000 (= 10 000 - 2 000).
 
 ### <a name="intrastat-transfer"></a>Intrastat-siirto
 
@@ -773,235 +734,30 @@ Toimintoruudussa voit valita **Siirto**-kentässä automaattisesti siirrettävik
 
 Vaihtoehtoisesti voit syöttää tapahtumat manuaalisesti valitsemalla toimintoruudusta **Uusi**.
 
-Voit määrittää kullekin tapahtumalle useita Italia-kohtaisia parametreja **Yleiset**-välilehdessä.
+Voit määrittää jokaiselle tapahtumalle Italiaa koskevia parametrejä **Yleiset**-välilehdessä. Seuraavassa taulukossa on lisätietoja kentistä.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Kenttä</strong></p>
-</td>
-<td>
-<p><strong>Kuvaus</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Yleiset</strong>-osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nimiketyyppi</p>
-</td>
-<td>
-<p>Tämän kentän arvoksi voidaan määrittää <strong>Tavarat</strong> tai <strong>Palvelut</strong>.</p>
-<p>Jotta tapahtuma olisi palvelu, laskurivi on määritettävä jollakin seuraavista tavoista:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sillä ei ole kauppatavarakoodia.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sillä on kuusinumeroinen kauppatavarakoodi</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Alkuperämää tai -alue</strong> -osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Alkuperämaa</p>
-</td>
-<td>
-<p>Tuotteen tai palvelun alkuperämaakunta. Tämä arvo määritetään <strong>Julkaistut tuotteet</strong> -sivulla.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Koodit</strong>-osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Toimitustapa</p>
-</td>
-<td>
-<p>Toimitustapa. Määritä toimitustapa siirtymällä kohtaan <strong>Myynti ja markkinointi</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Jakelu</strong> &gt; <strong>Toimitustavat</strong>.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Korjaukset</strong>-osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Kuukausi</p>
-</td>
-<td>
-<p>Alkuperäisen tapahtuman kuukausi.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Vuosineljännes</p>
-</td>
-<td>
-<p>Alkuperäisen tapahtuman vuosineljännes.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Korjausvuosi</p>
-</td>
-<td>
-<p>Alkuperäisen tapahtuman vuosi.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Alkuperäinen Intrastat-tietue</p>
-</td>
-<td>
-<p>Kirjoita palvelun korjauksia varten alkuperäisen Intrastat-tietueen numero.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Laskun arvo</strong> -osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Valuutta</p>
-</td>
-<td>
-<p>Kumppanin kansallinen tai alueellinen valuutta.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Laskun summa tapahtuman valuuttana</p>
-</td>
-<td>
-<p>Laskun määrä kumppanin kansallisena tai alueellisena valuuttana.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Laskun kulujen summa tapahtuman valuuttana</p>
-</td>
-<td>
-<p>Laskun kulut kumppanin kansallisena tai alueellisena valuuttana.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Laskun arvo tapahtuman valuuttana</p>
-</td>
-<td>
-<p>Laskun arvo kumppanin kansallisena tai alueellisena valuuttana.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Kenttä | kuvaus |
+|-------|-------------|
+| Nimiketyyppi | Tämän kentän arvoksi voidaan määrittää **Tavarat** tai **Palvelut**.<br> Jotta tapahtuma olisi palvelu, laskurivi on määritettävä jollakin seuraavista tavoista:<br>- Sillä ei ole kauppatavarakoodia<br>- Sillä on kuusinumeroinen kauppatavarakoodi  |
+| Alkuperämaa | Tuotteen tai palvelun alkuperämaakunta. Tämä arvo määritetään **Julkaistut tuotteet** -sivulla. |
+| Toimitustapa | Toimitustapa. <br>Määritä toimitustapa siirtymällä kohtaan **Myynti ja markkinointi** > **Asetukset** > **Jakelu** > **Toimitustavat**. |
+| Kuukausi | Alkuperäisen tapahtuman kuukausi. |
+| Vuosineljännes | Alkuperäisen tapahtuman vuosineljännes. |
+| Korjausvuosi | Alkuperäisen tapahtuman vuosi. |
+| Alkuperäinen Intrastat-tietue | Kirjoita palvelun korjauksia varten alkuperäisen Intrastat-tietueen numero. |
+| Valuutta | Kumppanin kansallinen tai alueellinen valuutta. |
+| Laskun summa tapahtuman valuuttana | Laskun määrä kumppanin kansallisena tai alueellisena valuuttana. |
+| Laskun kulujen summa tapahtuman valuuttana | Laskun kulut kumppanin kansallisena tai alueellisena valuuttana. |
+| Laskun arvo tapahtuman valuuttana | Laskun arvo kumppanin kansallisena tai alueellisena valuuttana. |
 
 Lisätietoja laskun kuluista yhteistyökumppanin kansallisena tai alueellisena valuuttana on kohdassa [Intrastat-yhteenvedon edellytykset (Muut kulut)](emea-intrastat.md).
 
 ### <a name="generate-an-intrastat-report"></a>Luo Intrastat-raportti
 
-1.  Avaa Intrastat-raportti siirtymällä kohtaan **Vero** &gt; **Ilmoitukset** &gt; **Ulkomaankauppa** &gt; **Intrastat**.
-
-2.  Valitse toimintoruudussa **Tuloste** &gt; **Raportti**.
-
-3.  Määritä seuraavat kentät **Intrastat-raportti**-valintaruudussa.
-
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Kenttä</strong></p>
-</td>
-<td>
-<p><strong>Kuvaus</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Päivämäärä</strong>-osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Päivämäärästä</p>
-</td>
-<td>
-<p>Valitse raportin aloituspäivä.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Päivämäärään</p>
-</td>
-<td>
-<p>Valitse raportin päättymispäivä.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Vientiasetukset</strong>-osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Luo tiedosto</p>
-</td>
-<td>
-<p>Määritä tämän vaihtoehdon arvoksi <strong>Kyllä</strong>, jos haluat luoda .txt-tiedoston.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Tiedostonimi</p>
-</td>
-<td>
-<p>Kirjoita Intrastat-raporttisi .txt-tiedoston nimi.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Luo raportti</p>
-</td>
-<td>
-<p>Määritä tämän vaihtoehdon arvoksi <strong>Kyllä</strong>, jos haluat luoda .xlsx-tiedoston.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Raporttitiedoston nimi</p>
-</td>
-<td>
-<p>Kirjoita Intrastat-raporttisi .xlsx-tiedoston nimi.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Siirtosuunta</p>
-</td>
-<td>
-<p>Valitse <strong>Saapumiset</strong>, kun haluat raportin yhteisön sisäisistä saapumisista. Valitse <strong>Lähetykset</strong>, kun haluat raportin yhteisön sisäisistä lähetyksistä.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Tiedostomuodon määritys</strong> -osa</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Viitenumero</p>
-</td>
-<td>
-<p>Syötä asiakirjan numero. Tämä arvo vaikuttaa Intrastat-tiedostoraportin <strong>tiedostonumero</strong>-koodiin. Lisätietoja on kohdassa Tiedostomuoto.</p>
-</td>
-</tr>
-</tbody>
-</table>
+1. Muodosta Intrastat-raportti siirtymällä kohtaan **Vero** > **Ilmoitukset** > **Ulkomaankauppa** > **Intrastat**.
+2. Valitse toimintoruudussa **Tuloste** > **Raportti**.
+3. Valitse **Intrastat-raportti**-valinta-ikkunassa raportin aloitus- ja päättymispäivät.
+4. Valitse **Muodosta tiedosto** -kentässä **Kyllä** muodostaaksesi .txt-tiedoston ja syöttääksesi tiedostolle nimen.
+5. Valitse **Muodosta raportti** -kentässä **Kyllä** muodostaaksesi .xlsx-tiedoston ja syöttääksesi raportille nimen.
+6. Valitse **Saapuvat** tai **Toimitukset** sen perusteella, mitä raportti käsittelee.
+7. Syötä **Viitenumero**-kenttään asiakirjan numero. Tämä arvo vaikuttaa Intrastat-tiedostoraportin tiedostonumerokoodiin. 

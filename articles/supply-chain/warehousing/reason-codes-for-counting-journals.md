@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345263"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500587"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Varastoinventoinnin syykoodit
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Syykoodien avulla voit analysoida inventointiprosessin tuloksia ja prosessin aikana mahdollisesti esiintyviä ristiriitoja. Voit määrittää inventoinnin syyn, kuten vioittuneen kuormalavan tai varasto-otantaan perustuvan varasto-oikaisun. Oikaisutoiminnon avulla voit samalla kirjata käytettävissä olevan varaston oikaisujen arvon asianmukaiselle vastatilille kunkin varasto-oikaisun syyn perusteella.
 
@@ -42,8 +41,6 @@ Ennen järjestelmän määrittämistä kannattaa määrittää syykoodien käytt
 - Tuleeko syykoodien käyttää kirjanpidon vastatilikirjauksia?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Syykoodiominaisuuksien käyttöönottaminen järjestelmässä
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Jos et näe kaikkia tässä aiheessa kuvattuja ominaisuuksia järjestelmässäsi, sinun on todennäköisesti otettava käyttöön *Kirjaa varastosta -oikaisut käyttämällä konfiguroitavissa olevia syykoodeja, jotka on liitetty vastatili* -toiminto. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99e95a7fbdce3d040ab7bf01474921ae1f616468
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773510"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506828"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.20. (elokuu 2021)
 
@@ -38,7 +38,8 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 | Varasto&nbsp;ja&nbsp;logistiikka | [Myyntitilauksen tietojen suorituskykyparannus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Tämä ominaisuus tekee käyttöliittymästä joustavamman, kun myyntitilauksia avataan, erityisesti monia rivejä sisältävät tilaukset. |
 | Valmistus | [Prosessin automaation aktivoiminen laatutilausten luontia varten](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | [Prosessin automaation aktivoiminen laatutilausten luontia varten](../production-control/process-automation-quality-orders.md ) |
 | Valmistus | [Parannettu tuotantokerroksen tehtävän käyttöliittymä](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [Tuotannon käyttöliittymän määrittäminen](../production-control/production-floor-execution-configure.md) |
-| Tuotetietojen hallinta | [Kaavojen ja niiden osien muutosten hallinta](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Kaavojen ja niiden osien muutosten hallinta](../engineering-change-management/manage-formula-changes.md) |
+| Suunnittelu | [Suunnittelun optimoinnin ääretön kapasiteetin ajoitus](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Ajoitus rajattoman kapasiteetin avulla](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Tuotetietojen hallinta | [Reseptien ja niiden ainesosien muutosten hallinta](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Kaavojen ja niiden osien muutosten hallinta](../engineering-change-management/manage-formula-changes.md) |
 | Tuotetietojen hallinta | [Tuotteen valmiustarkistukset](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Tuotteen valmius](../engineering-change-management/product-readiness.md) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnon parannukset

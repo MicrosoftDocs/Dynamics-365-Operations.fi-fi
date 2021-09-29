@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415318"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500595"
 ---
 # <a name="product-readiness"></a>Tuotteen valmius
 
 [!include [banner](../includes/banner.md)]
 
-Valmiustarkistusten avulla varmistetaan, että tuotteen kaikki pakolliset päätiedot on määritetty, ennen kuin tuotetta käytetään tapahtumissa. Valmiustarkistuksia käytettäessä tietty käyttäjä tai ryhmä vastaa tiettyjen ennaltamääritettyjen tuotteeseen liittyvien tietojen tarkistamisesta. Jos tuotteella on avoin valmiustarkistus, tuotetta ei voi käyttää tapahtumissa.
+Valmiustarkistusten avulla varmistetaan, että tuotteen kaikki pakolliset päätiedot on määritetty, ennen kuin tuotetta käytetään tapahtumissa. Valmiustarkistuksia käytettäessä tietty käyttäjä tai ryhmä vastaa tiettyjen ennaltamääritettyjen tuotteeseen liittyvien tietojen tarkistamisesta.
 
-Suunnittelutuotteen, sen variantin tai version **Aktiivinen**-valintaruutu on käytettävissä vasta, kun kaikki pakolliset tiedot on annettu ja tarkistettu ja kaikki valmistustarkistukset on käsitelty. Tässä vaiheessa tuotetta, versiota tai varianttia voidaan käyttää tapahtumissa. Valmiustarkistuksia voidaan luoda uusille tuotteille, uusille varianteille ja uusille suunnitteluversioille.
+Voit merkitä suunnittelutuotteen, sen variantin tai version **Aktiivinen**-valintaruudun, kun kaikki pakolliset tiedot on annettu ja tarkistettu ja kaikki valmistustarkistukset on käsitelty. Jos vähintään yksi tarkistus on tekemättä tuotteelle, sen versiolle tai sen variantille, yrittäessäsi merkitä **Aktiivinen**-valintaruutua tulee näkyviin kehote, joka varoittaa siitä, ettei kaikkia tarkistuksia ole tehty.
 
-Voit myös käyttää valmiustarkistuksia vakiotuotteisiin (ei-tekninen suunnittelu). Lisätietoja on jäljempänä tässä ohjeaiheessa [Standardituotteiden valmiustarkistus](#standard-products) -osassa.
+Valmiustarkistuksia voidaan luoda uusille suunnittelutuotteille, varianteille ja uusille versioille. Voit tehdä valmisutarkistuksia myös vakiotuotteille eli muille kuin suunnittelutuotteille (katso myös [Vakiotuotteiden valmiustarkistukset](#standard-products)). 
+
+Voit käyttää vakiotuotteita tapahtumissa, vaikka kaikki valmiustarkistukset eivät olisi valmiit. Jos haluat estää tuotteen käytön tapahtumissa, käytä sen elinkaaren tilaa. Voit määrittää elinkaaren tilan, joka estää tuotteen käyttämisen tapahtumissa ja sitten, kun valmiustarkistukset ovat valmiit, määrittää uuden elinkaaren tilan, joka sallii tarvittavat tapahtumat.
 
 ## <a name="types-of-readiness-checks"></a>Valmiustarkistustyypit
 
