@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Ympäristön päivitykset versioon 10.0.20 (elokuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Ympäristön päivitykset versioon 10.0.19 (kesäkuu 2021)
-                  href: get-started/whats-new-platform-updates-10-0-19.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -1080,6 +1078,8 @@
                   items:
                     - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
                       href: data-entities/dual-write/customizing-mappings.md
+                    - name: Kaksoiskirjoituksen mukautusohjeet
+                      href: data-entities/dual-write/custom-best-practices.md
                     - name: Useiden entiteettikarttojen käsitteleminen
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Yrityksen muokkaaminen kaksoiskirjoituksen käyttöönoton jälkeen

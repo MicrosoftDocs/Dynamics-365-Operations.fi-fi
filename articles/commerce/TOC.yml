@@ -1398,12 +1398,16 @@
               items:
                 - name: Commercen lokalisointi – Venäjä
                   href: localizations/rus-commerce-localization.md
-                - name: 'Yksinkertaistettu asiakkaan osoitemuoto Commerce-myyntipisteessä, Venäjä'
-                  href: localizations/rus-simplified-address.md
                 - name: Commercen lokalisointi – Venäjä -määritys
                   href: localizations/rus-commerce-setup.md
                 - name: Ennakkomaksut Commercessa – Venäjä
                   href: localizations/rus-commerce-prepayments.md
+                - name: 'Yksinkertaistettu asiakkaan osoitemuoto Commerce-myyntipisteessä, Venäjä'
+                  href: localizations/rus-simplified-address.md
+                - name: Näyte verotusta varten olevan tulostimen integroinnista Venäjällä
+                  href: localizations/rus-fpi-sample.md
+                - name: Venäjän asiakastietojen hallinta
+                  href: localizations/rus-customer-information.md
             - name: Ruotsi
               items:
                 - name: Kassakoneen toiminnot
@@ -2220,6 +2224,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Yleisen osoitekirjan määrittäminen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Osoitemääritys
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Osoitekirjat – usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Osoitekirjojen määrittäminen
@@ -2329,7 +2335,11 @@
         - name: Laajennettavuus
           items:
             - name: Commercen kehittäminen ja laajennettavuus
-              href: dev-itpro/dev-retail-home-page.md
+              items:
+                - name: Commerce IT-asiantuntijoille ja kehittäjille
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Paikallisen kehitysympäristön määrittäminen
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Online-kanavan laajennettavuus
               items:
                 - name: Online-kanavan laajennettavuuden yleiskatsaus

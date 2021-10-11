@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: 'Parametrit, joita ei käytetä suunnittelun optimoinnissa'
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Toimitusaikataulu
+                  href: master-planning/supply-schedule.md
                 - name: Suodattimien käyttäminen suunnitelmaan
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Pääsuunnittelu ja kysynnän ennuste
@@ -1755,12 +1757,10 @@
                       href: master-planning/master-plan-explosion-bom-version.md
                 - name: Negatiiviset päivät ja dynaamiset negatiiviset päivät
                   href: master-planning/more-about-dynamic-negative-days.md
-                - name: Konserniyritysten välisen suunnitelman luominen
+                - name: Konsernin sisäisen suunnitelman luominen
                   href: master-planning/tasks/create-intercompany-plan.md
-                - name: 'Lähtevän, suunnitellun konserniyritysten välisen kysynnän tarkasteleminen'
+                - name: 'Lähtevän, suunnitellun konsernin sisäisen kysynnän tarkasteleminen'
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Nettotarpeet ja tarvekohdistustiedot sisäänrakennetun pääsuunnittelun avulla
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Ennusteet
@@ -2037,8 +2037,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Ostotilauksen hyväksymisen mobiilityötila
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Konsernin sisäisen ostotilauksen luominen ja laskuttaminen sisäiseen käyttöön
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Konsernin sisäisten tilaushintojen erojen tarkistaminen
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Ostotilauksen tuotteiden vastaanoton kirjaaminen
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Ostotilauksen luonti
               items:
                 - name: Ostotilausten manuaalinen luonti
@@ -2725,10 +2729,66 @@
               items:
                 - name: Hintasimulointi
                   href: sales-marketing/price-simulation.md
-                - name: Myyntitarjousten joukkoluonti
+                - name: Useiden myyntitarjousten luominen
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Myyntitarjousten luonti ja muokkaus
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Konsernin sisäinen kauppa
+              items:
+                - name: Konsernin sisäisen kaupan määrittäminen
+                  items:
+                    - name: Konsernin sisäisen kaupan määrittäminen
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Konsernin sisäiset parametrit
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Toimittajien, asiakkaiden ja nimikkeiden määrittäminen konsernin sisäisessä kaupassa'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Konsernin sisäisten tilausten kulujen määrittäminen
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Konsernin sisäisen tilauksen kirjausparametrien määrittäminen
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Konsernin sisäisten tietojen synkronoiminen
+                  items:
+                    - name: Konsernin sisäisten hintojen ja alennusten synkronoiminen
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Konsernin sisäisten kulujen synkronoiminen
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Konsernin sisäisten asiakastietojen synkronoiminen
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Konsernin sisäisten käsittelykoodien synkronoiminen
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Konsernin sisäiset myyntitilaukset ja laskut
+                  items:
+                    - name: Konsernin sisäisten osto- ja myyntitilausten luominen useissa yrityksissä
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Konsernin sisäiset tilaukset ja palautustilaukset
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Konsernin sisäisen myyntitilauksen luominen sisäiseen käyttöön
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Konsernin sisäisen myyntitilauksen luominen ja laskuttaminen ulkoiselle asiakkaalle
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Konsernin sisäiset varaukset
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Alkuperäisen konsernin sisäisen myyntitilauksen muuttaminen tai poistaminen
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Konsernin sisäisten myyntitilausten muuttaminen
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Konsernin sisäiset erä- ja sarjanumerot
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Konsernin sisäiset pakkausluettelot
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: Maksujen rekisteröiminen automaattisesti konsernin sisäisiin myyntilaskuihin
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Konsernin sisäiset ostotilaukset
+                  items:
+                    - name: Konsernin sisäisen ostotilauksen luominen ja laskuttaminen sisäiseen käyttöön
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Konsernin sisäisten tilaushintojen erojen tarkistaminen
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Konsernin sisäiset valuuttamuunnokset
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Konsernin sisäinen pääajoitus
+                  href: sales-marketing/intercompany-master-scheduling.md
             - name: Palautukset
               items:
                 - name: Myyntipalautukset
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Aiheutuneet kustannukset -moduulin määrittäminen ja konfiguroiminen
               items:
+                - name: Aiheutuneet kustannukset -moduulin ottaminen käyttöön järjestelmässäsi
+                  href: landed-cost/landed-cost-enable.md
                 - name: Aiheutuneiden kustannusten parametrit
                   href: landed-cost/landed-cost-parameters.md
                 - name: Aiheutuneiden kustannusten hankintaparametrit
@@ -3185,6 +3247,8 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Sijaintidirektiivin varastonkeräilyn erääntyminen
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Ankkurointi
+                      href: warehousing/anchoring.md
                     - name: Lähtevien lajittelu
                       href: warehousing/outbound-sorting.md
                     - name: Asettaminen seinälle – asettaminen myymälään
@@ -3341,6 +3405,8 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Mobiililaitteen vanhimman erän kerääminen
                       href: warehousing/pick-oldest-batch.md
+                - name: Yleiset mobiililaitteen parametrit
+                  href: warehousing/mobile-device-parameters.md
                 - name: Mobiililaitteen käyttäjäasetukset
                   href: warehousing/mobile-device-user-settings.md
                 - name: Varastosovelluksen tapahtumakäsittely

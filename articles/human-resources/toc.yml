@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 20. syyskuuta 2021
+          href: hr-whats-new-2021-09-20.md
         - name: 6. syyskuuta 2021
           href: hr-whats-new-2021-09-06.md
         - name: 23. elokuuta 2021
@@ -291,6 +293,8 @@
               href: hr-admin-troubleshooting-batch-history.md
             - name: Jumittuneiden erätöiden nollaaminen
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Dataverse-synkronoinnin nollaaminen
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: Analytiikkaraportteja ei päivitetä
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Power Apps ‑hallintakeskuksessa ei voi luoda ympäristöä
@@ -485,6 +489,12 @@
               items:
                 - name: Palkanlaskennan työntekijän etusuunnitelma
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Muut entiteetit
+              items:
+                - name: Henkilön nimen historia
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: Vaihtokurssi
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: Asetusjoukot
               items:
                 - name: Sukupuoli
@@ -543,6 +553,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Yleisen osoitekirjan määrittäminen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Osoitemääritys
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
                 - name: Osoitekirjat – usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Osoitekirjojen määrittäminen
@@ -781,6 +793,8 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: ACA-raportointi
                   href: hr-benefits-management-aca-reports.md
+                - name: Etulauseke
+                  href: hr-benefits-statement.md
             - name: Etuohjelman määrittäminen ja hallinta
               href: hr-benefits-manage-program.md
             - name: Etukelpoisuuden käytännöt

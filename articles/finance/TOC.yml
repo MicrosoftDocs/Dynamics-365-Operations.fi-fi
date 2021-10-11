@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: Provisiosopimusten hallinta
               href: accounts-payable/royalty-contract.md
+            - name: Viittaaminen alkuperäisiin laskuihin hyvityslaskuissa (toimittajan laskuissa)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: Maksut ja selvitykset
               items:
                 - name: Ostoreskontran keskitetyt maksut
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Tilannevedosten yleiskatsaus
                   href: finance-insights/payment-snapshots.md
+            - name: Finance Insightsin vianmäärityksen usein kysytyt kysymykset
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: Projektinhallinta ja kirjanpito
           items:
             - name: Projektinhallinnan ja kirjanpidon yleiskatsaus
@@ -1574,6 +1578,10 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Useiden ALV-rekisteröintien raportointi
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Itävallan raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                              href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Ranskan raportointi
                           items:
                             - name: ALV-ilmoitus
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Kansainväliset palvelut -raportti
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Intrastats-raportti
+                - name: Itävallan Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Ostoverot
                   href: localizations/emea-aut-purchase-duties.md
+                - name: ALV-ilmoitus
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrain
               items:
                 - name: Bahrain – yleiskatsaus
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Neljännesvuosittainen ALV-viestintäraportti
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Mustan listan raportti
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Ennakonpidätyspäivämäärä ja verokirjauskansio
                   href: localizations/emea-ita-competence-date.md
                 - name: Käyttöomaisuuden poisto
@@ -3801,6 +3809,8 @@
           items:
             - name: Sähköisen raportoinnin yleiskatsaus
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Sähköisen raportoinnin komponentit
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfiguraatiot
               items:
                 - name: Konfiguraatioiden luonti
@@ -4509,6 +4519,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Yleisen osoitekirjan määrittäminen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Osoitemääritys
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Osoitekirjat – usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Osoitekirjojen määrittäminen
