@@ -1,7 +1,7 @@
 ---
-title: Näytä lähtevä suunniteltu konserniyritysten välinen kysyntä
-description: Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja.
-author: ShylaThompson
+title: Lähtevän, suunnitellun konserniyritysten välisen kysynnän tarkasteleminen
+description: Tässä aiheessa on menettely, jonka avulla voidaan tarkastella lähtevää suunniteltua konsernin sisäistä kysyntää.
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,36 +10,34 @@ ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqO
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3529c65944d1563f107d0186aa314a178eb1ee6a9e2898d2810ba110cc6d1c46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8cf2350d754c5da9d3d428e2b75950d027ccfd63
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755272"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569742"
 ---
-# <a name="view-outbound-planned-intercompany-demand"></a>Näytä lähtevä suunniteltu konserniyritysten välinen kysyntä
+# <a name="view-outbound-planned-intercompany-demand"></a>Lähtevän, suunnitellun konserniyritysten välisen kysynnän tarkasteleminen
 
 [!include [banner](../../includes/banner.md)]
 
 Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja. Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.
 
-1. Valitse Pääsuunnittelu.
-2. Anna tai valitse Suunnitelma-kentässä arvo.
-    * Valitse suunnitelma 10 Suunitelma-kenttään.  
-3. Valitse Suorita.
-4. Syötä Säikeiden määrä -kenttään numero.
+1. Valitse **Pääsuunnittelu**.
+2. Anna tai valitse **Suunnitelma**-kentässä arvo.
+    * Valitse **Suunnitelma**-kentässä suunnitelma *10*.  
+3. Valitse *Suorita*.
+4. Syötä **Säikeiden määrä** -kenttään numero.
     * Tämä vastaa pääsuunnittelussa käytettävien rinnakkaisten säikeiden määrää.  
-5. Valitse OK.
+5. Valitse **OK**.
     * Tämä saattaa kestää jonkin aikaa.  
-6. Valitse Suunniteltu konsernin sisäinen kysyntä.
-7. Valitse Lähtevä suunniteltu konserniyritysten välinen kysyntä.
+6. Valitse **Suunniteltu konsernin sisäinen kysyntä**.
+7. Valitse **Lähtevä suunniteltu konsernin sisäinen kysyntä**.
     * Tällä sivulla on yleiskuvaus suunnitellusta kysynnästä, jonka täyttää sisäisen toimitusketjun toimittaja.  
-8. Laajenna Ylöspäin suuntautuvan kysynnän tiedot -osa.
+8. Laajenna **Ylöspäin suuntautuvan kysynnän tiedot** -osa.
     * Tässä osassa näytetään tietoja kysynnän täyttämisestä. Voit joutua odottamaan pääsuunnittelun valmistumista toimittajayrityksessä, ennen kuin näet lisätietoja tässä.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

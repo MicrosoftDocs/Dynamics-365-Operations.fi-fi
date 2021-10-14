@@ -1,7 +1,7 @@
 ---
 title: Ylläpitosopimuksen myyntihinnat
 description: Kun ylläpitosopimus luodaan, myyntihinta saadaan Myyntihinta (ylläpitosopimus) -lomakkeessa luoduista myyntihinta-asetuksista.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59e9084c1b1a2d27ac7a813dd412ebf49011252a199742b31af7c3c328c5ffd2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd63fc290263babafabd6e29441f008d0cf10e13
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712931"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569982"
 ---
-# <a name="subscription-sales-prices"></a>Ylläpitosopimuksen myyntihinnat   
+# <a name="subscription-sales-prices"></a>Ylläpitosopimuksen myyntihinnat
 
 [!include [banner](../includes/banner.md)]
-
 
 Kun ylläpitosopimus luodaan, myyntihinta saadaan **Myyntihinta (ylläpitosopimus)** -lomakkeessa luoduista myyntihinta-asetuksista.
 
@@ -33,14 +32,14 @@ Kun ylläpitosopimus luodaan, myyntihinta saadaan **Myyntihinta (ylläpitosopimu
 
 Jos ylläpitosopimuksen ja myyntihinnan kausikoodi ja valuutta ovat identtiset, ylläpitosopimuksen myyntihinnat valitaan seuraavassa taulukossa lueteltujen prioriteettien perusteella. Tyhjä solu taulussa merkitsee tyhjää kenttää ja X merkitsee samaa arvoa kuin ylläpitosopimuksessa, josta tapahtuma luodaan.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -120,7 +119,6 @@ Jos ylläpitosopimuksen ja myyntihinnan kausikoodi ja valuutta ovat identtiset, 
 </tbody>
 </table>
 
-
 Kun ylläpitosopimusmaksu luodaan, tarkimmin määritetty myyntihinta (kuten yllä olevasta taulukosta ilmenee) valitaan ylläpitosopimuksen myyntihinnaksi.
 
 ## <a name="update-and-index-subscription-sales-prices"></a>Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen
@@ -135,15 +133,15 @@ Kun ylläpitosopimusmaksu luodaan, myyntihinta perustuu ylläpitosopimuksen myyn
 
 Haluat määrittää uuden projektin 9030 ylläpitosopimukselle 500 euron myyntihinnat. **Myyntihinta (ylläpitosopimus)** -lomakkeessa voit luoda ylläpitosopimuksen myyntihinnan rivin seuraavassa taulukossa esitetyllä tavalla.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -174,14 +172,14 @@ Huomaa, että **Luokka**- ja **Ylläpitosopimus**-kentät ovat tyhjät.
 
 Sitten luot seuraavat ylläpitosopimukset.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -226,14 +224,14 @@ Molemmille ylläpitosopimuksille luodaan ylläpitosopimusmaksut, joiden myyntihi
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -274,15 +272,15 @@ Molemmille ylläpitosopimuksille luodaan ylläpitosopimusmaksut, joiden myyntihi
 
 Myöhemmin päätät, että haluat määrittää myyntihinnat SubCat1-luokalle projektissa 9030. Luot siksi uuden myyntihintarivin, jonka myyntihinta on 550 euroa projektin 9030 ja maksuluokan SubCat1 yhdistelmälle. Projektille 9030 on nyt kaksi ylläpitosopimuksen myyntihintariviä, seuraavassa taulukossa esitetyllä tavalla.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -317,19 +315,18 @@ Myöhemmin päätät, että haluat määrittää myyntihinnat SubCat1-luokalle p
 </tbody>
 </table>
 
-
 Toistat yllä kuvatun menettelyn ja luot ylläpitosopimusmaksut molemmille ylläpitosopimusryhmän Sub1 ylläpitosopimuksille. Seuraava taulukko osoittaa, että tapahtumat on luotu kullekin ylläpitosopimusryhmään liitetylle ylläpitosopimukselle.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -367,16 +364,10 @@ Toistat yllä kuvatun menettelyn ja luot ylläpitosopimusmaksut molemmille yllä
 </tbody>
 </table>
 
-
 Ylläpitosopimukseen 00020\_135 liittyvässä ensimmäisessä tapahtumassa 550 euron myyntihinta on peräisin tietyn projektin ja luokan yhdistelmälle määritetystä ylläpitosopimuksen myyntihinnasta. Ylläpitosopimukseen 00021\_135 liittyvässä toisessa tapahtumassa 500 euron myyntihintaa käytetään projektin ylläpitosopimuksen myyntihintana, koska projektin 9030 ja luokan SubCat2 yhdistelmälle ei ole määritetty hintaa.
 
 ## <a name="see-also"></a>Lisätietoja
 
 [Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen](update-and-index-subscription-sales-prices.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

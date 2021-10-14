@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Commercesta.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386738"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559556"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -37,6 +37,18 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 [!include [banner](../includes/preview-banner.md)]
 
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Commercen parametrien päällekkäisten alennusten käsittelyasetus
+
+**Päällekkäisten alennusten käsittely** -asetus **Commercen parametrit** -sivulla on vanhentunut Commercen versiossa 10.0.21. Jatkossa Commercen hinnoittelumoduuli käyttää yhtä algoritmia päällekkäisten alennusten optimaalisen yhdistelmän määrittämiseen.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | <p>Commercen parametrien **Päällekkäisten alennusten käsittely** -asetus ohjaa, miten Commerce-hinnoittelumoduuli hakee ja määrittää päällekkäisten alennusten optimaalisen yhdistelmän. Tällä hetkellä käytettävissä on kolme vaihtoehtoa:<p><ul><li> **Paras suorituskyky** – tämä vaihtoehto käyttää edistynyttä heuristista algoritmia ja [raja-arvon luokittelua](../optimal-combination-overlapping-discounts.md) parhaan alennusyhdistelmän priorisointiin, arviointiin ja määrittämiseen oikea-aikaisesti.</li><li>**Tasapainotettu laskenta** – Nykyisessä koodikannassa tämä vaihtoehto toimii samoin kuin **Paras suorituskyky** -vaihtoehto. Niinpä se on käytännössä kaksinkertainen vaihtoehto.</li><li>**Tyhjentävä laskenta** – Tämä vaihtoehto käyttää vanhaa algoritmia, joka käsittelee kaikki mahdolliset alennuslaskelmat hinnanlaskennan aikana. Jos tilauksessa on paljon rivejä ja suuria määriä, tämä vaihtoehto voi aiheuttaa suorituskykyongelmia.</li></ul><p>Määrityksien yksinkertaistamista, suorituskyvyn parantamista ja vanhan algoritmin aiheuttamien tapahtumien vähentämistä varten **Päällekkäisten alennusten käsittely** -asetus poistetaan kokonaan ja Commercen hinnoittelumoduuliin sisäinen logiikka päivitetään siten, se käyttää nyt vain kehittynyttä algoritmia (eli algoritmia, johon **Paras suorituskyky** -vaihtoehto perustuu).</p> |
+| **Onko toinen ominaisuus korvannut?**   | Et voi. Organisaatioiden kannattaa käyttää **Tasapainotettu laskenta**- tai **Tyhjentävä laskenta** -vaihtoehto korvataan **Paras suorituskyky** -vaihtoehdolla ennen tämän ominaisuuden poistamista. |
+| **Tuotealueet, joihin vaikutetaan**         | Hinnoittelu ja alennukset |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Versiosta 10.0.21 alkaen **Päällekkäisten alennusten käsittely** -asetus poistetaan Commercen parametreista lokakuussa 2022. |
+
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Retail SDK:n jakelu Lifecycle Servicesin avulla
 
 Retail SDK toimitetaan Lifecycle Servicesin (LCS) mukana. Tämä jakelutapa vanhenee versiossa 10.0.21. Jatkossa Retail SDK -viitepaketit, -kirjastot ja -näytteet julkaistaan GitHubin julkisissa säilöissä.
@@ -55,7 +67,7 @@ Retail-käyttöottopaketit, jotka luotiin Retail SDK MSBuildin avulla, vanhentuv
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Retail-käyttöönottopaketti on yhdistelmäpaketti, joka sisältää kaikki laajennuspaketit ja asennusohjelmat. Tämän yhdistelmäpaketin vuoksi käyttöönotto on monimutkaista, sillä CSU-laajennukset koskevat Cloud scale unitia ja asennusohjelmat otetaan käyttöön myymälöissä. Asennusohjelmat sisältävät laajennuksen ja perustuotteen, mikä hankaloittaa päivityksiä. Kunkin päivityksen yhteydessä on suoritettava koodien yhdistämien ja paketin luonti. Prosessia yksinkertaistetaan siten, että laajennuspaketit ovat nyt erillisiä osia, mikä helpottaa käyttöönottoa ja hallintaa. Tämän uuden menettelyn ansiosta laajennusten ja perustuotteen asennusohjelmat on erotettu toisistaan, ja niitä voidaan ylläpitää ja päivittää erikseen ilman koodin yhdistämistä tai uudelleenpakkausta.|
+| **Poiston tai vanhentumisen syy** | Retail-käyttöönottopaketti on yhdistelmäpaketti, joka sisältää kaikki laajennuspaketit ja asennusohjelmat. Tämän yhdistelmäpaketin vuoksi käyttöönotto on monimutkaista, sillä CSU-laajennukset koskevat Cloud scale unitia ja asennusohjelmat otetaan käyttöön myymälöissä. Asennusohjelmat sisältävät laajennuksen ja perustuotteen, mikä hankaloittaa päivityksiä. Kunkin päivityksen yhteydessä on suoritettava koodien yhdistäminen ja paketin luonti. Prosessia yksinkertaistetaan siten, että laajennuspaketit ovat nyt erillisiä osia, mikä helpottaa käyttöönottoa ja hallintaa. Tämän uuden menettelyn ansiosta laajennusten ja perustuotteen asennusohjelmat on erotettu toisistaan, ja niitä voidaan ylläpitää ja päivittää erikseen ilman koodin yhdistämistä tai uudelleenpakkausta.|
 | **Onko toinen ominaisuus korvannut?**   | CSU-laajennukset, myyntipistelaajennuksen asennusohjelmat, Hardware station -laajennuksen asennusohjelmat |
 | **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Commerce -laajennus ja käyttöönotto |
 | **Käytön asetukset**              | Kaikki |

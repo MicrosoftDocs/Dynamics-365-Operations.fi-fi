@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d5f84a1a6ff794cdc8b4b81e8518983789a0b33f1708719906f6ad094d9c4285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0b70411e6535b22d698545438dcb0b16935e731
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722628"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559580"
 ---
 # <a name="payroll-position-job"></a>Palkanlaskennan työ
 
@@ -34,16 +34,22 @@ Fyysinen nimi: mshr_payrollpositionjobentity.
 
 ## <a name="properties"></a>Ominaisuudet
 
-| Ominaisuus<br>**Fyysinen nimi**<br>**_Laji_** | Käytä | kuvaus |
+| Ominaisuus</br>**Fyysinen nimi**</br>**_Tyyppi_** | Käytä | Kuvaus |
 | --- | --- | --- |
-| **Työn tunnus**<br>mshr_jobid<br>*Merkkijono* | Vain luku<br>Vaadittu |Työn tunnus. |
-| **Voimassaolo alkaa**<br>mshr_validto<br>*Päivämäärä aika siirros* | Vain luku <br>Vaadittu | Päivämäärä, josta alkaen toimi- ja työsuhde on voimassa. |
-| **Voimassaolo päättyy**<br>mshr_validto<br>*Päivämäärä aika siirros* | Vain luku <br>Vaadittu | Päivämäärä, johon kirjaamis- ja työsuhde on voimassa.  |
-| **Toimen tunnus**<br>mshr_positionid<br>*Merkkijono* | Vain luku<br>Vaadittu | Toimen tunnus. |
-| **Ensisijainen kenttä**<br>mshr_primaryfield<br>*Merkkijono* | Vaadittu<br>Järjestelmän luoma |  |
-| **Toimen työn tunnuksen arvo**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Vain luku<br>Vaadittu<br>Foreign key:mshr_PayrollPositionJobEntity of the mshr_payrollpositionjobentity |Toimeen liittyvän työn tunnus.|
-| **Kiinteän kompensaatiosuunnitelman tunnuksen arvo**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Vain luku<br>Vaadittu<br>Foreign key: mshr_FixedCompPlan_id of mshr_payrollfixedcompensationplanentity  | Toimeen liittyvän kiinteän kompensaatiosuunnitelman tunnus. |
-| **Palkanlaskennan työn yksikkötunnus**<br>mshr_payrollpositionjobentityid<br>*Guid* | Vaadittu<br>Järjestelmän luoma. | Järjestelmän luoma GUID-arvo, jonka avulla työ voidaan yksilöivästi tunnistaa.  |
+| **Toimen tunnus**</br>mshr_positionid</br>*Merkkijono* | Vain luku | Toimen tunnus. |
+| **Voimassaolo alkaa**</br>mshr_validto</br>*Päivämäärä aika siirros* | Vain luku | Päivämäärä, josta alkaen toimi ja työsuhde on voimassa. |
+| **Voimassaolo päättyy**</br>mshr_validto</br>*Päivämäärä aika siirros* | Vain luku | Päivämäärä, johon toimi ja työsuhde on voimassa. |
+| **Työn tunnus**</br>mshr_jobid</br>*Merkkijono* | Vain luku | Työn tunnus. |
+| **Ensisijainen kenttä**</br>mshr_primaryfield</br>*Merkkijono* | Järjestelmän luoma | Ensisijainen kenttä. |
+| **Palkanlaskennan työn yksikkötunnus**</br>mshr_payrollpositionjobentityid</br>*Guid* | Järjestelmän luoma. | Järjestelmän muodostama GUID-arvo, jolla työ tunnistetaan yksilöivästi. |
+
+## <a name="relations"></a>Suhteet
+
+| Ominaisuuden arvo | Liittyvä yksikkö | Siirtymisominaisuus | Kokoelmatyyppi |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Ei käytettävissä |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>Esimerkkikysely
 

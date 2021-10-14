@@ -1,8 +1,8 @@
 ---
 title: Kassavirtaennusteet
 description: Tässä ohjeaiheessa on kassavirran ennusteprosessin yleiskatsaus. Siinä kerrotaan myös kassavirtaennusten integroinnista muihin järjestelmän moduuleihin.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779443"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547952"
 ---
 # <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
@@ -83,7 +83,10 @@ Voit ohittaa tietyn asiakkaan kirjausprofiilien **Rahatili**-kentän oletusarvon
 
 ### <a name="budgeting"></a>Budjetointi
 
-Budjettimalleista luodut budjetit voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Budjetointi**-välilehdessä ennusteeseen sisällytettävät budjettimallit. Uudet budjettirekisterimerkinnät sisältyvät oletusarvoisesti ennusteisiin sen jälkeen, kun budjettimalli on otettu käyttöön kassavirtaennusteessa. Kassavirtaennusteen sisällyttäminen voidaan ohittaa yksittäisissä budjettirekisterimerkinnöissä.
+Budjettimalleista luodut budjetit voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Budjetointi**-välilehdessä ennusteeseen sisällytettävät budjettimallit. Uudet budjettirekisterimerkinnät sisältyvät oletusarvoisesti ennusteisiin sen jälkeen, kun budjettimalli on otettu käyttöön kassavirtaennusteessa.
+
+Budjettirekisteritapahtumat voidaan sisällyttää kassavirtaennusteeseen yksitellen mukauttamisen avulla. Kun Sisällytä kassavirtaennusteisiin -sarake lisätään **Budjettirekisteritapahtumat**-sivulle, järjestelmä korvaa **Kassavirtaennusten asetukset** -sivulla olevat asetukset siten, että yksittäinen budjettirekisteritapahtuma sisällytetään ennusteeseen.
+
 
 ### <a name="inventory-management"></a>Inventoinnin- ja varastonhallinta
 
@@ -144,7 +147,7 @@ Nykyisen yrityksen työntilan käyttöä hallitaan **Näytä kassavirta – nyky
 
 **Kassayhteenveto – nykyinen yritys** -työtilassa kassavirtaennusteen analytiikka näkyy yrityksen määrittämänä kirjanpitovaluuttana. Analytiikassa käytettävä kirjanpitovaluutta määritetään **Kirjanpito**-sivulla. Työtilassa on nykyisen yrityksen kassavirtaennusteiden ja pankkitilin saldojen yhteenveto. Tilikartan saapuvat ja lähtevät kassavirrat on yhteenveto käteisvarojen tulevista siirroista ja saldoista kirjanpitovaluuttana. Siinä on myös tarkkoja tietoja ennakoiduista tapahtumista. Näkyvissä on myös valuuttasaldojen ennuste.
 
-Lisätietoja kassavirtaennusteiden analytiikasta on kohdassa [Käteisvarojen yleiskatsaus - Power BI -sisältö](./cash-overview-power-bi-content.md) topic.
+Lisätietoja kassavirtaennusteiden analytiikasta on kohdassa [Käteisvarojen yleiskatsauksen Power BI -sisältö](Cash-Overview-Power-BI-content.md).
 
 Voit tarkastella myös tiettyjen tilien, tilausten ja nimikkeiden kassavirtaennustetietoja seuraavilla sivuilla:
 

@@ -2,7 +2,7 @@
 title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344371"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581062"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -119,7 +119,8 @@ Kun **Mukautus**-työkalurivi on auki, taustalla oleva sivu on vain luku -muodos
 
 - Valitse elementin ominaisuuksia ja muuta niitä **Valitse**-työkalulla. Voit käyttää tätä työkalua valitsemalla työkalurivin **Valitse**-painikkeen ja valitsemalla sitten haluamasi elementin. Elementin ominaisuusikkuna avautuu. Voit muuttaa elementin kaikkia ominaisuuksia. Voit toistaa prosessin muille kyseisen sivun mukautettaville elementeille. Ota huomioon, että kaikki mukautusominaisuudet eivät välttämättä ole käytettävissä kaikissa tilanteissa. Et esimerkiksi voi lukita pakollista kenttää.
 - Voit piilottaa elementin sivulla **Piilota**-työkalulla. Voit käyttää tätä työkalua valitsemalla työkalurivin **Piilota**-painikkeen ja valitsemalla piilotettavan elementin. Kun käytät **Piilota**-työkalua, kaikki tällä hetkellä piilotettuna olevat elementit tulevat näkyviin varjostetussa säilössä. Voit tehdä elementistä näkyvän valitsemalla sen. Valitsemalla toisen mukautustyökalun tai sulkemalla mukautuksen työkalurivin näet, miltä sivu näyttää, kun elementit piilotetaan.
-- Voit lisätä sivullesi kenttiä **Lisää kentät** -työkalun avulla. Tällä työkalulla voidaan lisätä vain kenttiä, jotka sisältyvät sivumääritykseen. Lisätietoja nykyisen sivumääritelmän ulkopuolisten uusien kenttien luomisesta on kohdassa [Mukautettujen kenttien luominen ja käyttäminen](user-defined-fields.md). Sinun on valittava työkalurivin **Lisää kentät** -painikkeen valitsemisen jälkeen ensin ruudukko tai osa, johon haluat lisätä kentän. Valintaikkunassa näkyy luettelo valittuun ruudukkoon tai osaan liittyvistä kentistä. Valitse valintaluettelossa ensin vähintään yksi lisättävä kenttä ja sitten **Päivitä**. Voit poistaa aiemmin lisätyn kentän toistamalla edellä mainitut vaiheet mutta poistamalla valintaikkunassa kentän valinnan.
+- Voit lisätä sivullesi kenttiä **Lisää kentät** -työkalun avulla. Tällä työkalulla voidaan lisätä vain sivumääritykseen sisältyviä kenttiä. Lisätietoja nykyisen sivumääritelmän ulkopuolisten uusien kenttien luomisesta on kohdassa [Mukautettujen kenttien luominen ja käyttäminen](user-defined-fields.md). Sinun on valittava työkalurivin **Lisää kentät** -painikkeen valitsemisen jälkeen ensin ruudukko tai osa, johon haluat lisätä kentän. Valintaikkunassa näkyy luettelo valittuun ruudukkoon tai osaan liittyvistä kentistä. Valitse valintaikkunassa ainakin yksi kenttä, joka lisätään joko **Suositellut kentät**- tai **Kaikki kentät** -luetteloon. Valitse kenttien valitseminen jälkeen **Päivitä**. Voit poistaa aiemmin lisätyn kentän toistamalla edellä mainitut vaiheet mutta poistamalla valintaikkunassa kentän valinnan.
+    - **Suositellut kentät** -luettelossa näkyvät kentät, jotka organisaation muut käyttäjät ovat aiemmin lisänneet. Tämä kenttäluettelo päivitetään **Suosituksen erätyö** -kohdan toistovälin perusteella. Kokemus on vastaavanlainen kuin lisättäessä uusia suodatinkenttiä sivun Suodatin-ruudussa.
 - Voit siirtää elementin **Siirrä**-työkalulla toiseen sijaintiin nykyisen elementtiryhmän sisällä. Ota huomioon, ettet voi siirtää elementtiä sen pääryhmän ulkopuolelle. Voit käyttää tätä työkalua valitsemalla työkalurivin **Siirrä**-painikkeen ja valitsemalla siirrettävän elementin. Kun valitset elementin, sovellus määrittää sijainnit, joihin elementti voidaan siirtää. Näitä sijainteja kutsutaan *pudotusalueiksi*. Kun vedät elementtiä valitussa ryhmässa, värillinen lihavoitu viiva osoittaa pudotusalueen, johon elementti voidaan pudottaa.
 - Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset työkalurivin **Ohita**-painikkeen, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit lisätä kenttiä sarkainjärjestykseen ja poistaa niitä vuorovaikutteisesti.
 - Voit lisätä kentän pikavälilehtien yhteenveto-osaan käyttämällä **Näytä otsikossa**-työkalua. Kun valitset työkalurivin **Näytä otsikossa**-painikkeen, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa kenttiä niistä valitsemalla kenttiä.

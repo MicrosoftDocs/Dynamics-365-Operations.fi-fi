@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483779"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559604"
 ---
 # <a name="ready-to-pay"></a>Valmis maksettavaksi
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Jos haluat merkitä työntekijän maksuvalmiiksi, sinun on ensin otettava käyttöön **Palkanlaskennan integrointitoiminto (esiversio)** ominaisuuksien hallinnassa. Lisätietoja esiversiotoimintojen käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
@@ -72,10 +70,9 @@ Jos jokin näistä vahvistuksista epäonnistuu, et voi merkitä työntekijää m
 
 Jos **Maksuvalmis** -kentän arvo on **Ei**, tämä on merkki siitä, että sinun on tehtävä toimenpide varmistaaksesi, että työntekijäprofiili on valmis. Tämä ei estä tietojen näkymistä missään tietoentiteetissä. 
 
-## <a name="known-issues"></a>Tunnetut ongelmat
+## <a name="process-automation"></a>Prosessien automatisointi
 
-- **Virtaviivaistettu työntekijän syöttö** -ominaisuus on poistettava käytöstä ominaisuuksien hallinnassa. Kompensaation hallinnan työtilan ruudut eivät toimi oikein, jos käytät tätä ominaisuutta.
-- **Työntekijä**-sivulla **Palkanlaskenta-välilehti**, **Maksuvalmis**-ryhmä on käytettävissä missä tahansa käyttäjäroolissa. 
+Kaikkien työntekijöiden tarkistus voidaan automatisoida [prossien automaation](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation) avulla. Valitse **Kompensaation hallinta** -työtilassa **Linkit** \> **Parametrit** \> **Prosessien automatisoinnit**.
 
 ## <a name="see-also"></a>Lisätietoja
 
