@@ -2,7 +2,7 @@
 title: Varaston näkyvyyden julkiset ohjelmointirajapinnat
 description: Tässä aiheessa käsitellään varaston näkyvyyden julkisia ohjelmointirajapintoja.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474649"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592485"
 ---
 # <a name="inventory-visibility-public-apis"></a>Varaston näkyvyyden julkiset ohjelmointirajapinnat
 
@@ -82,6 +82,8 @@ Microsoft on muodostanut Power Appsiin käyttöliittymän, jonka avulla saadaan 
 
 Varaston näkyvyyden julkisen ohjelmointirajapinnan kutsumiseen käytetään ympäristön suojaustunnusta. Siksi sinun on luotava _Azure Active Directory (Azure AD) -tunnus_ Azure AD -sovelluksen avulla. Tämän jälkeen Azure AD -tunnuksen avulla saat _käyttöoikeustunnuksen_ suojauspalvelusta.
 
+Microsoft toimittaa käyttövalmiin *Postman*-tunnusten hakukokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+
 Palvelun suojaustunnus haetaan seuraavasti:
 
 1. Kirjaudu Azure-portaaliin ja etsi sen avulla Dynamics 365 Supply Chain Management -sovelluksen `clientId`- ja `clientSecret`-arvot.
@@ -131,7 +133,7 @@ Palvelun suojaustunnus haetaan seuraavasti:
    - `context`-arvon on oltava LCS-ympäristötunnus, jossa apuohjelma halutaan ottaa käyttöön.
    - Kaikki muut arvot määritetään samoiksi kuin esimerkissä.
 
-1. Lähetä HTTP-pyyntö, jossa on seuraavat ominaisuudet:
+1. Nouda käyttöoikeustietue (`access_token`) lähettämällä HTTP-pyyntö, jossa on seuraavat ominaisuudet:
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **Menetelmä:** `POST`
@@ -148,7 +150,8 @@ Palvelun suojaustunnus haetaan seuraavasti:
    }
    ```
 
-Myöhemmissä osissa `$access_token` ilmaisee tunnuksen, joka noudettiin viimeisessä vaiheessa.
+> [!IMPORTANT]
+> Kun *Postman*-pyyntökokoelmalla kutsutaan varaston näkyvyyden julkinen ohjelmointirajapinta, jokaiseen pyyntöön on lisättävä haltijatunnus. Haltijatunnuksen voi etsiä valitsemalla **Valtuutus**-välilehden pyynnön URL-osoitteessa, valitsemalla **Haltijatunnus**-tyypin ja kopioimalla edellisessä vaiheessa noudetun käyttöoikeustietueen. Tämä aiheen myöhemmissä osissa `$access_token` ilmaisee tunnuksen, joka noudettiin viimeisessä vaiheessa.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Varastosaldon muutostapahtumien luominen
 
@@ -508,7 +511,7 @@ Tämän pyynnön tekstiosassa `dimensionDataSource` on edelleen valinnainen para
 
 - `organizationId`-kentän pitäisi sisältää vain yksi arvo, mutta se on silti matriisi.
 - `productId` voi sisältää yhden tai useampia arvoja. Jos se on tyhjä matriisi, kaikki tuotteet palautetaan.
-- Kenttiä `siteId` ja `locationId`n käytetään varaston näkyvyydessä osiointiin.
+- Kenttiä `siteId` ja `locationId` käytetään varaston näkyvyydessä osiointiin. *Varastosaldokysely*-pyynnössä voi määrittää useita `siteId`- ja `locationId`-arvoja. Nykyisessä versiossa on määritettävä sekä `siteId`- että `locationId`-arvo.
 
 `groupByValues`-parametrin pitäisi noudattaa indeksointimääritystä. Lisätietoja on kohdassa [Tuoteindeksihierarkian määrittäminen](./inventory-visibility-configuration.md#index-configuration).
 

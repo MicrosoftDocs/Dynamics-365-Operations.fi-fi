@@ -3,7 +3,7 @@ title: Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 323d9f4816a4f622143692ead3d1871980b19b52
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343284"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512577"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -141,6 +141,7 @@ Seuraavat kirjanpidon integrointimallit ovat käytettävissä Commerce SDK:ssa:
 - [Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli](./emea-cze-fi-sample.md)
 - [Tarkistusyksikön integrointimalli – Ruotsi](./emea-swe-fi-sample.md)
 - [Saksan tilikausirekisteröintipalvelun integroinnin malli](./emea-deu-fi-sample.md)
+- [Näyte kuittitulostimen integroinnista Venäjällä](./rus-fpi-sample.md)
 
 Seuraava kirjanpidon integrointitoiminto otetaan käyttöön myös käyttämällä kirjanpidon integrointikehystä, mutta se on saatavana käyttövalmiina eikä se sisälly Commerce SDK:hon:
 

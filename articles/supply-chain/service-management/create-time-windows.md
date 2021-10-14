@@ -1,7 +1,7 @@
 ---
 title: Aikaikkunoiden luominen
-description: Voit optimoida huoltotilausrivien ajoittamisen aikaikkunoiden avulla.
-author: ShylaThompson
+description: Tämä aihe käsittelee aikaikkunoiden luontimenettelyä.
+author: kamaybac
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: ''
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e88277181a00479af85561f078803ec495a94a50ef1cbd4059f594709b47a7d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93c8426fd03a849cf8c241d694507bd033fb34c5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775528"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571423"
 ---
-# <a name="create-time-windows"></a>Aikaikkunoiden luominen   
+# <a name="create-time-windows"></a>Aikaikkunoiden luominen
 
 [!include [banner](../includes/banner.md)]
 
 Voit optimoida huoltotilausrivien ajoittamisen aikaikkunoiden avulla.
 
-1. Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltosopimukset** \> **Aikaikkuna**.
+1. Valitse **Huoltohallinto** \> **Asetukset** \> **Huoltosopimukset** \> **Aikaikkuna**.
 2. Luo uusi aikaikkuna painamalla näppäinyhdistelmää **Alt+N**.
 3. Kirjoita **Aikaikkuna**-kenttään aikaikkunan nimi.
 4. Kirjoita **Kuvaus**-kenttään aikaikkunan kuvaus.

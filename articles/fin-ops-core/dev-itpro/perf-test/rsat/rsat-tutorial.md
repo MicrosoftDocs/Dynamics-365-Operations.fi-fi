@@ -1,24 +1,21 @@
 ---
 title: Regression Suite Automation Tool -opas
 description: Tässä ohjeaiheessa käsitellään Regression Suite Automation Tool (RSAT) -työkalun käyttämistä. Siinä käsitellään erilaisia toimintoja ja annetaan esimerkkejä edistyneestä komentosarjojen käytöstä.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 21761
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d70b2e7cf497fbf165a452f7977a14a98b9e1956e5a964d42c7bf8a6c3abe0bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f1d818944ed2779cdad15d84673369e31243285f
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714546"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556762"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -opas
 
@@ -82,15 +79,21 @@ Kun testitapaus on suoritettu, Excelin parametritiedostoa verrataan näytettäv�
 
 Tämä toiminto ottaa näyttökuvat tehtävätallenteen aikana suoritetuista vaiheista. Se on hyödyllinen tarkistus- tai virheenkorjaustarkoituksiin.
 
-- Avaa tällä toiminnolla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuta seuraavan elementin arvo **epätosi** arvoksi **tosi**.
+- Tätä ominaisuutta voi käyttää, kun RSAT on käytössä käyttöliittymässä, avaamalla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuttamalla seuraavan elementin arvo **epätosi** arvoksi **tosi**.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Kun ajat testitapauksen, RSAT luo tilannevedoksia (kuvia) vaiheista, jotka näytetään työskentelyhakemistossa olevien testitapausten toistokansiossa. Jos käytät vanhaa RSAT-versiota, kuvat tallennetaan kohteeseen **C:\\Käyttäjät\\\<Username\>\\AppData\\verkkovierailu\\regressionTool\\toisto**, erillinen kansio luodaan kullekin testitapaukselle, joka suoritetaan.
+- Tätä ominaisuutta voi käyttää, kun RSAT on komentorivikäyttöliittymän käytössä (esimerkiksi Azure DevOps) käyttää sitä, avaamalla **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuttamalla seuraavan elementin arvo **epätosi** arvoksi **tosi**.
 
-## <a name="assignment"></a>Toimeksianto
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+Kun testitapaukset suoritetaan, RSAT luo tilannevedoksia (näköistiedostoja) vaiheista ja tallentaa työskentelyhakemistossa olevien testitapausten toistokansioon. Toistokansioon luodaan erillinen **StepSnapshots**-alikansio. Tämä kansio sisältää suoritettavien testitapausten tilannevedokset.
+
+## <a name="assignment"></a>Liitos
 
 ### <a name="scenario"></a>Skenaario
 
@@ -521,7 +524,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 Seuraavassa esimerkissä ostotilauksen tila etsitään Open Data Protocol (OData) -kutsun avulla. Jos tila ei ole **invoiced**, voit esimerkiksi kutsua laskun kirjaavan RSAT-testitapauksen.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

@@ -1,22 +1,22 @@
 ---
 title: Sinetöidyt tarjoukset tarjouspyyntöihin
 description: Tässä aiheessa kuvaillaan, miten määritetään eriävät lausekkeet, jotta toimittajien tarjousvastaukset voidaan säilyttää, kunnes ostohenkilöstö ei hallitse niitä.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500631"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578077"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Sinetöidyt tarjoukset tarjouspyyntöihin
 
@@ -53,7 +53,11 @@ Varmista ennen toiminnon määrittämistä tai käyttämistä, että se on saata
 Supply Chain Managementissa käytetään salausavaimia, jotka suojaavat kaikkia tarjouksia ja pitävät tarjoukset salassa, kunnes aika on sopiva. Se hyödyntää Key Vaultin ominaisuuksia tarvittavien avainten luomiseen ja hallintaan. Siksi sinun on määritettävä yhteys Supply Chain Managementista avainsäilöön, jotta järjestelmää olisi mahdollista käyttää.
 
 > [!IMPORTANT]
-> Avainsäilö on luotava Azure-tilauksessa, jonka omistaa organisaatiosi (ei tilaus, jossa käytät Supply Chain Managementia).
+> Suljetussa tarjouksessa käytettävien avainsäilöjen on vastattava seuraavia vaatimuksia:
+>
+> - Jos kehittämiseen ja testaukseen käytetään eristysympäristöä, eristysympäristöllä ja tuotantoympäristöllä on kummallakin oltava oma avainsäilö.
+> - Kukin avainsäilö on luotava Azure-tilauksessa, jonka omistaa organisaatiosi (ei tilaus, jossa käytät Supply Chain Managementia).
+> - Kutakin avainsäilöä on käytettävä ainoastaan suljetussa tarjouksessa. Suljetun tarjouksen avainsäilöjä ei saa käyttää mihinkään muuhun tarkoitukseen.
 
 Jokainen tarjous hakee oman salaisen avaimensa. Tätä avainta käytetään aina, kun käyttäjä avaa tarjouksen, päivittää tai poistaa sen käytöstä.
 

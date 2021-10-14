@@ -1,7 +1,7 @@
 ---
 title: Palautettujen nimikkeiden poistotavan määrittäminen
 description: Palautettujen nimikkeiden poistotavan määrittäminen.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 594832f4d89a630bd88b18f665a6afbc7a918f0e5c9627f835f18d4b1a4d2cab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e609c1c285b34a5416a2058809b2fc4fafb73fca
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722244"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571326"
 ---
-# <a name="specify-how-to-dispose-of-returned-items"></a>Palautettujen nimikkeiden poistotavan määrittäminen 
+# <a name="specify-how-to-dispose-of-returned-items"></a>Palautettujen nimikkeiden poistotavan määrittäminen
 
 [!include [banner](../includes/banner.md)]
-
 
 Kun käsittelet palautustilausta, sinun on määritettävä palautuksen syykoodi, jonka avulla tunnistetaan miksi tuote palautetaan. Sinun on myös myös määritettävä käsittelykoodi ja käsittelytoiminto määrittääksesi mitä itse palautetulle tuotteelle tulisi tehdä.
 
@@ -35,9 +34,9 @@ Voit määrittää mitä tahansa tarvitsemiasi käsittelykoodeja liiketoimintapr
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -125,8 +124,8 @@ Sinun on määritettävä jokaiselle määrittämällesi käsittelykoodille käs
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -162,24 +161,15 @@ Sinun on määritettävä jokaiselle määrittämällesi käsittelykoodille käs
 </tbody>
 </table>
 
-
 ## <a name="select-a-disposition-code-for-a-quarantine-order"></a>Karanteenitilauksen käsittelykoodin valitseminen
 
-1.  Valitse **Varastonhallinta** \> **Kausittainen** \> **Laadunhallinta** \> **Karanteenitilaukset**.
-
-2.  Jos kyseessä on aiemmin luotu karanteenitilaus, valitse **Käsittelykoodi**-kenttä **Yleiskatsaus**-välilehdestä.
-
-
+1. Valitse **Varastonhallinta** \> **Kausittainen** \> **Laadunhallinta** \> **Karanteenitilaukset**.
+1. Jos kyseessä on aiemmin luotu karanteenitilaus, valitse **Käsittelykoodi**-kenttä **Yleiskatsaus**-välilehdestä.
 
 ## <a name="see-also"></a>Lisätietoja
 
 [Karanteenitilaus (lomake)](/dynamicsax-2012//quarantine-order-form)
 
 [Käsittelykoodit (lomake)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

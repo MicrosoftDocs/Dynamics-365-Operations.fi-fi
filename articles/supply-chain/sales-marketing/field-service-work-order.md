@@ -1,7 +1,7 @@
 ---
 title: Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin
 description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Field Servicen työtilaukset synkronoidaan Supply Chain Managementin myyntitilauksiin.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d7688e757a3ab9746ae0307a7c15f0624c1d8aceeb0dc935b0da32d3ab2994b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c54f5eaec1ae453ba9e55ef54d47c8591276ec89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752679"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568372"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin
 
@@ -245,31 +245,31 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 Suodata: (msdyn_systemstatus ne 690970005) ja (msdyn_systemstatus ne 690970000) ja (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineEstimate
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja (msdyn_linestatus eq 690970000) ja (msdynce_headersystemstatus ne 690970004)
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineUsed
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004))
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineEstimate
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja (msdyn_linestatus eq 690970000) ja (msdynce_headersystemstatus ne 690970004) ja (msdyn_allocated eq true)
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineUsed
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004) tai (msdyn_allocated ne true))
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 83b2d3c35e3e68aaad22bc03a46b17abc1526073895057717fd055dacdfbee5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718474"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594906"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Mukautetun tallennustilan sijaintien määrittäminen luoduille asiakirjoille
 
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Muokkaa aiemmin luotua `AssetRollForwardService`-luokkaa ja kirjoita koodi määrittääksesi mukautetun kohdetehtaan raportin suorittajalle. Huomaa, että kun mukautettu kohdetehdas on muodostettu, kohdekansion määrittävä sovellusvetoinen parametri välitetään. Näin kohd kansiota käytetään luotujen tiedostojen tallentamiseen.
 
     > [!NOTE] 
-    > Varmista, että määritetty kansio (**c:\\0** tässä esimerkissä) esiintyy AOS-palvelua suorittavan palvelimen paikallisessa tiedostojärjestelmässä. Muussa tapauksessa suorituksen aikana ilmenee [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-poikkeus.
+    > Varmista, että määritetty kansio (**c:\\0** tässä esimerkissä) esiintyy AOS-palvelua suorittavan palvelimen paikallisessa tiedostojärjestelmässä. Muussa tapauksessa suorituksen aikana ilmenee [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception)-poikkeus.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 9342ab8121b41aa98d93d80198296f721d6e080182e432ead0f84ac7b051fc06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 48e3b93b7e53a47673f824d35ac95b65d8566bce
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717744"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594799"
 ---
 # <a name="clienteling-overview"></a>Asiakashallinnan yleiskuvaus
 
@@ -125,7 +125,7 @@ Määritä integrointi noudattamalla seuraavia ohjeita:
 - Kohdassa **Salauskoodit**:
     - **Nimi**: Mikä tahansa nimi, esimerkiksi "CISecret".
     - **Kuvaus**: Mikä tahansa arvo.
-    - **Salainen koodi**: **vault**://<Name of key vault>/<name of secret>> Tässä esimerkissä se on "vault://KeyVaultName/SecretName".
+    - **Salainen koodi**: **säilö**:`//<Name of key vault>/<name of secret>>` Tässä esimerkissä se on `vault://KeyVaultName/SecretName`.
 
 Kun olet päivittänyt kentät, varmista valitsemalla **Vahvista**, että Commerce-sovellus voi käyttää salaista koodia.
 

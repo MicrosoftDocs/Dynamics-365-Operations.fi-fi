@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9996b4d6ab84070cc3e9863a454c4fd8ed14091490273cde0eec1ea2bc508fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756223"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594716"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>ALV-/GST-mallin käänteinen veloitusmekanismi
 
@@ -45,7 +45,6 @@ Seuraavat asetukset on tehtävä käänteisen veron käyttöä varten.
 Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäverokoodeja.
 
 <table>
-<body>
 <tr>
 <td><strong>Myynnin arvonlisäverokoodi</strong></td>
 <td>Luo myyntikoodi käänteisen veron myyntitoiminnoille (<strong>Verot</strong> &gt; <strong>Välilliset verot</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Arvonlisäverokoodit</strong>).
@@ -62,7 +61,6 @@ Tämä negatiivinen arvonlisäverokoodi on määritettävä ensin nimikkeen arvo
 <p>Lisätietoja on seuraavassa kohdassa &quot;Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen.&quot;</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen

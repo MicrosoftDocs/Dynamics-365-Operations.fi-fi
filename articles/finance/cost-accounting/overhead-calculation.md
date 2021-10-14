@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 98fd0b4a18b02ed58034ec6e22763ed7c66f567f5c9eeeed124996757470c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
+ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "7551801"
 ---
 # <a name="overhead-calculation"></a>Yleiskustannuslaskenta
 
@@ -1328,83 +1328,12 @@ Seuraavassa taulukossa näytetään tulos, kun Pakkauspalveluita käytetään ko
 ## <a name="conclusion"></a>Johtopäätökset
 Kirjanpidossa kirjataan tyhjään kustannuspaikkatunnukseen sähkökustannus arvolla 10 000,00. Tämän ansiosta kustannuslaskijat tietävät, että kustannus on kohdistettava. Kustannukset virtaavat kirjanpidossa organisaation yksiköiden ja tasojen läpi käytössä olevien käytäntöjen ja sääntöjen mukaisesti. Kukin kustannus on liitetty kustannusperusteeseen, joka sisältää parhaan arvion kustannusten kohdistuksesta.
 
-<table>
-<thead>
-<tr>
-<th colspan="2" rowspan="2">Kustannustaso</th>
-<th colspan="9">Kustannusobjekti</th>
-<th rowspan="2">Yhteensä</th>
-</tr>
-<tr>
-<th>CC099</th>
-<th>CC001</th>
-<th>CC002</th>
-<th>CC003</th>
-<th>CC004</th>
-<th>Proj 1</th>
-<th>Proj 2</th>
-<th>Tuote 1</th>
-<th>Tuote 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">10001 Sähkö</td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"><strong>30,00</strong></td>
-<td style="text-align: right;"><strong>10,00</strong></td>
-<td style="text-align: right;"><strong>7.770,57</strong></td>
-<td style="text-align: right;"><strong>2.189,43</strong></td>
-<td style="text-align: right;"><strong>10.000,00</strong></td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align: left;">Luokittelematon</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">Kiinteä kustannus</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">776.36</td>
-<td style="text-align: right;">223.64</td>
-<td style="text-align: right;"><strong>1.000,00</strong></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">Muuttuva kulu</td>
-<td style="text-align: right;">000</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">30,00</td>
-<td style="text-align: right;">10,00</td>
-<td style="text-align: right;">6,994.21</td>
-<td style="text-align: right;">1,965.79</td>
-<td style="text-align: right;"><strong>9.000,00</strong></td>
-</tr>
-</tbody>
-</table>
+Kustannustaso | Kustannusobjekti<br>CC099 | Kustannusobjekti<br>CC001 | Kustannusobjekti<br>CC002 | Kustannusobjekti<br>CC003 | Kustannusobjekti<br>CC004 | Kustannusobjekti<br>Proj 1 | Kustannusobjekti<br>Proj 2 | Kustannusobjekti<br>Tuote 1 | Kustannusobjekti<br>Tuote 2 | Yhteensä
+---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
+10001 Sähkö | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
+Luokittelematon | 0,00 |  |  |  |  |  |  |  |  |  |
+Kiinteä kustannus | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
+Muuttuva kulu | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30,00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
 > Tässä ohjeaiheessa esitellään, miten ensisijainen kustannuselementti, 10001 Sähkö, virtaa kustannusobjektien läpi. Tästä syystä tämä yleiskustannus kohdistetaan organisaation alimmalle tasolle. Toisin sanoen alimman tason kustannusobjektit kantavat kustannuksen. Jos tarvitset visuaalisen näkymän kustannuksen virrasta kustannusobjektien välillä, voit käyttää kustannuksen koontikäytäntösääntöjä kustannusvirran visualisointiin. Lisätietoja on kohdassa [Kustannusten koontikäytäntö ja yleiskustannuslaskenta](cost-rollup.md).

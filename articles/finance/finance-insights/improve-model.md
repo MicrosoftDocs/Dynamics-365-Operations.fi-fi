@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: de753eda43cb358dfa9edc76f102d4b268291b4e
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386435"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595034"
 ---
 # <a name="improve-the-prediction-model"></a>Ennustemallin parantaminen
 
@@ -75,6 +75,6 @@ Seuraavaa kenttää ei saa valita koulutukselle:
 
 Voit suodattaa koulutuksessa käytettäviä laskuja määrittämällä suodatusehtoja laskun tai asiakastaulukoiden kentille. Voit esimerkiksi määrittää kynnysarvon sisällyttääksesi mukaan vain laskut, joiden kokonaissumma on yhtä suuri kuin tai suurempi kuin tietty summa. Voit myös jättää pois laskut, jotka liittyvät tietyn asiakasryhmän asiakkaisiin.
 
-Lisätietoja tietojen suodattamisesta on kohdassa [Ennustemallin luominen](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+Lisätietoja tietojen suodattamisesta on kohdassa [Ennustemallin luominen](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

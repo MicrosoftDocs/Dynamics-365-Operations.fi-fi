@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f92850a741f2a0d4d1c2636cbbdf21fe95f307df
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414581"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559458"
 ---
 # <a name="configure-integration-with-dayforce"></a>Integroinnin määrittäminen Dayforcen kanssa
 
@@ -64,7 +64,6 @@ Palkanlaskennan integroinnin käytöstäpoistamisella on kaksi pääasiallista v
 
 > [!NOTE]
 > SFTP-päätepisteeseen siirretty tietopaketti salataan paketin yksilöllisellä avaimella. Avain on Azure Key Vaultissa, jota vain Ceridian voi käyttää. Tietopaketin sisällön salausta ei voi purkaa eikä sisältöä tutkia. Jos tietopaketin sisältöä on tarkasteltava, Palkanlaskennan integroinnin vienti -tietoprojekti on vietävä manuaalisesti, jonka jälkeen on ladattava ja avattava. Manuaalisessa viennissä ei käytetä salausta eikä pakettia siirretä.
-> Jos integroinnin tiedostot lähetetään Dynamics 365 Human Resources UAT- tai eristysympäristöstä Ceridian Dayforce -testiympäristöön, voit käyttää seuraavaa key vault -URL-osoitetta: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Määritä tietosi 
 

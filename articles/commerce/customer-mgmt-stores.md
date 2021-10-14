@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 09caa7fa8f10d1afc44bb9343550bc633b8ec99a
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 4fd6039843be09ec706e45746d5724faa99a95e6
+ms.sourcegitcommit: 3f59b15ba7b4c3050f95f2b32f5ae6d7b96e1392
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472222"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7563058"
 ---
 # <a name="customer-management-in-stores"></a>Myymälöiden asiakashallinta
 
@@ -45,7 +45,8 @@ Myyjät voivat siepata useita asiakkaan osoitteita. Asiakkaan nimi ja puhelinnum
 
 ## <a name="sync-customers-and-async-customers"></a>Synkroniset asiakkaat ja asynkroniset asiakkaat
 
-> [TÄRKEÄÄ] Kun myyntipiste siirtyy offline-tilaan, järjestelmä luo asiakkaat automaattisesti asynkronisesti, vaikka asynkronisen asiakasluonnin tila olisi pois käytöstä. Siksi Commerce-pääkonttorin järjestelmänvalvojien on riippumatta siitä, oletko valinnut synkronisen vai asynkronisen asiakasluonnin, luotava ja ajoitettava toistuva erätyö **P-työlle**, **Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työlle (ennen "**Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työ") ja **1010**-työlle, jotta kaikki asynkroniset asiakkaat muunnetaan Commerce-pääkonttorissa synkronoiduiksi asiakkaiksi.
+> [!IMPORTANT]
+> Kun myyntipiste siirtyy offline-tilaan, järjestelmä luo asiakkaat automaattisesti asynkronisesti, vaikka asynkronisen asiakasluonnin tila olisi pois käytöstä. Siksi Commerce-pääkonttorin järjestelmänvalvojien on riippumatta siitä, oletko valinnut synkronisen vai asynkronisen asiakasluonnin, luotava ja ajoitettava toistuva erätyö **P-työlle**, **Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työlle (ennen "**Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työ") ja **1010**-työlle, jotta kaikki asynkroniset asiakkaat muunnetaan Commerce-pääkonttorissa synkronoiduiksi asiakkaiksi.
 
 Commercessa asiakkaan luomisessa on kaksi eri tilaa: Synkroninen ja Asynkroninen. Oletusarvon mukaan asiakkaat luodaan synkronisesti. Toisin sanoen ne luodaan Commerce headquarters -sovelluksessa reaaliaikaisesti. Synkroninen asiakkaan luontitila on hyödyllinen, koska uusia asiakkaita voidaan hakea välittömästi eri kanavien kautta. Sillä on kuitenkin myös haittapuolensa. Koska se luo [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) -kutsuja Commerce headquarters -sovelluksessa, suorituskykyyn voi vaikuttaa, jos tehdään samanaikaisia asiakkaan luontikutsuja.
 

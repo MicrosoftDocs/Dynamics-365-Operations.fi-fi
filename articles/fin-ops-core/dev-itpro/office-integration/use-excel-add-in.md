@@ -2,7 +2,7 @@
 title: Yksikön tietojen näyttäminen ja päivittäminen Excelissä
 description: Tässä aiheessa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761351"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592662"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Yksikön tietojen näyttäminen ja päivittäminen Excelissä 
 
@@ -60,7 +60,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 
 6. Valitse **OK** ja vahvista muutos valitsemalla **Kyllä**. Excel-lisäosa käynnistetään uudelleen. Se lataa metatiedot.
 
-    **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -painike, et ehkä ole kirjautunut oikeana käyttäjänä. Lisätietoja on tämän ohjeaiheen [Vianmääritys](../office-integration/use-excel-add-in.md#troubleshooting) -osan Lataa sovelmat -painike on näkyvissä -kohdassa.
+    **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -linkki, et ole todennäköisesti kirjautunut oikeana käyttäjänä. Lisätietoja tämän ongelman ratkaisemisesta on kohdan [Sovelmien lataaminen](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) vianmääritysosassa.
 
 7. Valitse **Rakenne**. Excel-lisäosa hakee yksikön metatiedot.
 8. Valitse **Lisää taulu**. Näkyviin tulee luettelo yksiköistä. Yksiköt näytetään muodossa "Nimi – Otsikko".
@@ -136,7 +136,7 @@ Ympäristöstä työkirjaan luettavat tiedot voidaan kopioida toiseen ympärist�
 ## <a name="troubleshooting"></a>Vianmääritys
 Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.
 
-- **Lataa sovelmat -painike on näkyvissä** – Jos Excel-lisäosassa on **Lataa sovelmat** -painike kirjautumisen jälkeen, et ehkä ole kirjautunut oikeana käyttäjänä. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, valitse se. Kirjaudu sitten ulos ja kirjaudu takaisin sisään.
+- **Lataa sovelmat -linkki näytetään** – Lisätietoja tämän ongelman ratkaisemisesta on kohdan [Sovelmien lataaminen](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) vianmääritysosassa. 
 - **Näyttöön tulee Kielletty-virhesanoma** –Jos näyttöön tulee Kielletty-virhesanoma, kun Excel-lisäosa lataa metatietoja, Excel-lisäosaan kirjautuneella tilillä ei ole käyttöoikeutta kohteena olevaan palveluun, ilmentymään tai tietokantaan. Ratkaise ongelma varmistamalla, että Excel-lisäosan oikeassa yläkulmassa on oikea käyttäjänimi. Jos näkyvillä on väärä käyttäjänimi, valitse se. Kirjaudu sitten ulos ja kirjaudu takaisin sisään.
 - **Excelin päällä näkyy tyhjä verkkosivu** – Jos kirjautumisen aikana avautuu tyhjä verkkosivu, tili vaatii AD FS:n käytön, mutta Excel-lisäosan suorittava Excel-versio ei ole tarpeeksi uusi eikä kirjautumisikkunaa voi ladata. Ratkaise ongelma päivittämällä käytössä oleva Excel-versio. Jos olet yritys, jolla on käytössä hidas päivityskanava, voit päivittää Excel-version käyttämällä [Office Deployment Tool -työkalua](/deployoffice/overview-office-deployment-tool) [vaihtaaksesi hitaan päivityskanavan nykyiseen päivityskanavaan](/deployoffice/overview-update-channels).
 - **Aikakatkaisu tapahtuu tietojen muutoksia julkaistaessa** – Jos ilmoitus aikakatkaisusta avautuu, kun tietojen muutoksia yritetään julkaista yksikköön, kyseisen työnkirjan julkaisuerän koon pienentämistä kannattaa harkita. Jos yksikkö käynnistää suuren määrän logiikkaa tietueen muutosten yhteydessä, aikakatkaisujen estäminen voi edellyttää, että päivitykset lähetetään pienissä erissä.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
-ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
+ms.openlocfilehash: a3cc431307d840d393a454e91f202c07c38d2512
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7429219"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559336"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Palkanlaskennan kiinteän kompensaation suunnitelma
 
@@ -42,7 +42,7 @@ Fyysinen nimi: mshr_payrollfixedcompensationplanentity.
 | **Toimen tunnus**</br>mshr_positionid</br>*Merkkijono* | Vain luku | Työntekijään ja kiinteän kompensaation suunnitelman rekisteröintiin liittyvän toimen tunnus. |
 | **Voimassaolo alkaa**</br>mshr_validfrom</br>*Päivämäärä aika siirros* |  Vain luku | Päivämäärä, josta alkaen työntekijän kiinteä kompensaatio on voimassa.  |
 | **Voimassaolo päättyy**</br>mshr_validto</br>*Päivämäärä aika siirros* | Vain luku | Päivämäärä, johon asti työntekijän kiinteä kompensaatio on voimassa. |
-| **Maksutiheys**</br>mshr_payfrequency</br>*Merkkijono* | Vain luku | Kuinka usein työntekijälle maksetaan palkkoja.  |
+| **Maksutiheys**</br>mshr_payfrequency</br>*Merkkijono* | Vain luku | Tietyn maksumäärän [kompensaation maksutiheyden](hr-admin-integration-payroll-api-compensation-pay-frequency.md) tunnus. |
 | **Valuutta**</br>mshr_currency</br>*Merkkijono* | Vain luku | Kiinteälle kompensaatiosuunnitelmalle määritetty valuutta. |
 | **Palkanlaskennan kiinteän kompensaatiosuunnitelman yksikkö**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Järjestelmän luoma | Järjestelmän luoma GUID-arvo, jonka avulla kompensaatiosuunnitelma voidaan yksilöivästi tunnistaa. |
 
