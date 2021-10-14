@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343857"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595200"
 ---
 # <a name="email-er-destination-type"></a>Sähköpostin ER-kohteen tyyppi
 
@@ -75,7 +75,7 @@ Sähköpostin lähettäjä ja sähköpostin vastaanottajat voidaan määrittää
 >
 > Kun sähköpostiosoite voidaan muokata [suorituspalvelussa](electronic-reporting-destinations.md#security-considerations), vain käyttäjät, joilla on `ERFormatDestinationSenderEmailMaintain`-suojausoikeus **ER-muodon kohteen lähettäjän sähköpostiosoitteen ylläpito**, näkevät **Lähettäjä**-kentän.
 >
-> Kun **Lähettäjä**-kenttä määritetään käyttämään muuta kuin nykyisen käyttäjän sähköpostiosoitetta, joko **Lähetä käyttäjänä**- tai **Lähetä puolesta** -oikeus on oltava oikein [määritettynä](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) ennakolta. Muussa tapauksessa suorituksen aikana annetaan virhe, jonka mukaan sähköpostia ei voida lähettää käyttäjänä \<from email account\> tililtä \<current user account\>, minkä vuoksi Lähetä käyttäjänä -oikeudet on tarkistettava tilillä \<from email account\>.
+> Kun **Lähettäjä**-kenttä määritetään käyttämään muuta kuin nykyisen käyttäjän sähköpostiosoitetta, joko **Lähetä käyttäjänä**- tai **Lähetä puolesta** -oikeus on oltava oikein [määritettynä](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) ennakolta. Muussa tapauksessa suorituksen aikana annetaan virhe, jonka mukaan sähköpostia ei voida lähettää käyttäjänä \<from email account\> tililtä \<current user account\>, minkä vuoksi Lähetä käyttäjänä -oikeudet on tarkistettava tilillä \<from email account\>.
 
 **Lähettäjä**-kenttä voidaan määrittää palauttamaan useampi kuin yksi sähköpostiosoite. Siinä tapauksessa luettelon ensimmäistä osoitetta käytetään sähköpostin lähettäjän osoitteena.
 

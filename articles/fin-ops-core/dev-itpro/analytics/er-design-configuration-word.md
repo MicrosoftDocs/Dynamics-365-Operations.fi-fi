@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718354"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595259"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Uuden ER-määrityksen suunnitteleminen luomaan Word-muotoisia raportteja
 
@@ -46,7 +46,7 @@ Sisäkkäiset **Excel\\Alue**- ja **Excel\\Solu**-elementit voidaan lisätä **E
 
 ![Sisäkkäisten elementtien lisääminen Muodon suunnittelija -sivulla.](./media/er-design-configuration-word-image4.gif)
 
-Kun ER-muodon muutokset tallennetaan suunnittelun yhteydessä, muodon hierarkkinen rakenne tallennetaan liitettyyn Word-malliin **Raportti**-nimisenä [mukautettuna XML-osana](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019). Mukautettuun malliin on siirryttävä ja se on ladattava Financesta, tallennettava paikallisesti ja avattava Wordin työpöytäsovelluksessa. Seuraavassa kuvassa paikallisesti tallennettu esimerkkimalli valvontaraportista, joka sisältää mukautetun **Raportti**-XML-osan.
+Kun ER-muodon muutokset tallennetaan suunnittelun yhteydessä, muodon hierarkkinen rakenne tallennetaan liitettyyn Word-malliin **Raportti**-nimisenä [mukautettuna XML-osana](/visualstudio/vsto/custom-xml-parts-overview). Mukautettuun malliin on siirryttävä ja se on ladattava Financesta, tallennettava paikallisesti ja avattava Wordin työpöytäsovelluksessa. Seuraavassa kuvassa paikallisesti tallennettu esimerkkimalli valvontaraportista, joka sisältää mukautetun **Raportti**-XML-osan.
 
 ![Raporttimalliesimerkin esikatselu Wordin työpöytäsovelluksessa.](./media/er-design-configuration-word-image5.gif)
 
