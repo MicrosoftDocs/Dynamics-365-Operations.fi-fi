@@ -1,23 +1,23 @@
 ---
 title: Kulujen automaattinen kohdistaminen
 description: Microsoft Dynamics 365 Supply Chain Managementin kulutoiminnolla voi automaattisesti kohdistaa kuluja osto- tai myyntitilauksiin.
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 04e17947073fca63ab68f0b5d0d72eb8366a1600117f61851179e8b0ed2c8184
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753936"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592537"
 ---
 # <a name="automatic-allocation-of-charges"></a>Kulujen automaattinen kohdistaminen
 
@@ -26,6 +26,16 @@ ms.locfileid: "6753936"
 Asiakkaan tai myytävän nimikkeen perusteella halutaan ehkä käyttää tiettyjä lisämaksuja. Microsoft Dynamics 365 Supply Chain Managementin *kulutoiminnolla* voi automaattisesti kohdistaa kuluja osto- tai myyntitilauksiin.
 
 Automaattisia kuluja käytetään automaattisesti, kun luot myynti- tai ostotilauksen. Voit määrittää automaattiset kulut tietyille toimittajille, asiakkaille, toimittajien ryhmille tai nimikkeille. Voit määrittää automaattisesti kuluja, joita käytetään kaikille toimittajille, asiakkaille tai nimikkeille.
+
+## <a name="set-up-parameters"></a>Määritä parametrit
+
+**Hankintaparametrit**-sivulla on joitakin asetuksia, jotka ovat erityisen tärkeitä, kun kulut halutaan kohdistaa automaattisesti. Viimeiste määritys noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Hankkiminen ja hankinta \> Asetukset \> Hankkiminen ja hankinta -parametrit**.
+1. Avaa **Hinnat**-välilehti.
+1. Tee **Hinnat**-pikavälilehdessä seuraavat asetukset:
+    - **Etsi otsikon automaattiset kulut** – Määrittää, mitkä ostotilauksen otsikoiden kulut on kohdistettava automaattisesti. Valitse arvoksi *Kyllä*, jos kulut halutaan kohdistaa automaattisesti.
+    - **Etsi rivin automaattiset kulut** – Määrittää, mitkä ostotilauksen rivien kulut on kohdistettava automaattisesti. Valitse arvoksi *Kyllä*, jos kulut halutaan kohdistaa automaattisesti.
 
 ## <a name="set-up-charges-codes"></a>Kulujen koodien määrittäminen
 

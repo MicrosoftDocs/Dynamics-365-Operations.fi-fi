@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474817"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581862"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Varaston näkyvyyden asennus ja määritys
 
@@ -35,63 +35,11 @@ Seuraavat tehtävät on tehtävä ennen varaston näkyvyyden apuohjelman asentam
 
 - Sellaisen LCS-toteutusprojektin hankkiminen, jossa on otettu käyttöön vähintään yksi ympäristö.
 - Varmistetaan, että apuohjelmien asennusedellytykset toteutuvat. Lisätietoja näistä edellytyksistä on kohdassa [Apuohjelmien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Varaston näkyvyys ei edellytä kaksoiskirjoituslinkitystä.
-- Seuraavat tarvittavat tiedostot saadaan ottamalla yhteyttä varaston näkyvyyden tuotetiimiin osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com):
-
-    - `InventoryServiceApplication.PackageDeployer.zip`
-    - `Inventory Visibility Integration.zip` (jos käynnissä ollut Supply Chain Managementin versio on aiempi kuin 10.0.18)
 
 > [!NOTE]
 > Tällä hetkellä tuettuja maita ja alueita ovat esimerkiksi Kanada (CCA, ECA), Yhdysvallat (WUS, EUS), Euroopan unioni (NEU, WEU), Yhdistyneet kuningaskunnat (SUK, WUK), Australia (EAU, SEAU), Japani (EJP, WJP) ja Brasilia (SBR, SCUS).
 
-Näitä edellytyksiä koskevia kysymyksiä voi esittää varaston näkyvyyden tuotetiimille.
-
-## <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Määritys Dataverse
-
-Varaston näkyvyyden kanssa käytettävä Dataverse asennetaan ottamalla varaston näkyvyyspaketti käyttöön Package Deployer -työkalulla. Seuraavissa aliosissa käsitellään kunkin tehtävän suorittamista.
-
-> [!NOTE]
-> Tällä hetkellä vain LCS:n avulla luotuja Dataverse-ympäristöjä tuetaan. Jos Dataverse-ympäristö luotiin jollain muulla tavalla (esimerkiksi Power Apps -hallintakeskuksessa) ja jos se on linkitetty Supply Chain Management -ympäristöön, yhdistämismäärityksen ongelma voidaan korjata ottamalla ensin yhteys varaston näkyvyyden tuotetiimiin. Varaston näkyvyyden apuohjelma voidaan asentaa sen jälkeen.
-
-### <a name="migrate-from-an-old-version-of-the-dataverse-solution"></a>Siirtyminen Dataverse-ratkaisun vanhasta versiosta
-
-Jos varaston näkyvyyden Dataverse-ratkaisun vanha versio on asennettu, päivitä versio seuraavien ohjeiden avulla. Tapausvaihtoehtoja on kaksi:
-
-- **Tapaus 1:** Jos Dataverse asennetaan manuaalisesti tuomalla `Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip` -ratkaisu, toimi seuraavasti:
-
-    1. Lataa seuraavat kolme tiedostoa:
-
-        - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
-        - `InventoryServiceBase_managed.cab`
-        - `InventoryServiceApplication.PackageDeployer.zip`
-
-    1. Tuo `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` ja `InventoryServiceBase_managed.cab` manuaalisesti Dataverseen toimimalla seuraavasti:
-
-        1. Avaa Dataverse-ympäristön URL-osoite.
-        1. Avaa **Ratkaisut**-sivu.
-        1. Valitse **Tuo**.
-
-    1. Ota `InventoryServiceApplication.PackageDeployer.zip`-paketti käyttöön käyttämällä Package Deployer -työkalua. Lisätietoja on jäljempänä tämän aiheen kohdassa [Paketin ottaminen käyttöön Package Deployer -työkalun avulla](#deploy-package).
-
-- **Tapaus 2:** Jos Dataverse asennetaan Package Deployer -työkalulla ennen vanhan `.*PackageDeployer.zip`-paketin asentamista, lataa `InventoryServiceApplication.PackageDeployer.zip` ja tee päivitys. Lisätietoja on kohdassa [Paketin ottaminen käyttöön Package Deployer -työkalun avulla](#deploy-package).
-
-### <a name="use-the-package-deployer-tool-to-deploy-the-package"></a><a name="deploy-package"></a>Paketin ottaminen käyttöön Package Deployer -työkalun avulla
-
-1. Asenna kehittäjien työkalut kohdassa [Työkalujen lataaminen NuGetistä](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget) kuvatulla tavalla.
-1. Poista Teams-ryhmästä ladatun `InventoryServiceApplication.PackageDeployer.zip`-tiedoston esto seuraavasti:
-
-    1. Pidä tietuetta valittuna (tai napsauta sitä hiiren kakkospainikkeella) ja valitse **Ominaisuudet**.
-    1. Etsi **Ominaisuudet**-valintaikkunan **Yleiset**-välilehden **Suojaus**-osa, valitse **Poista esto** ja käytä muutosta. Jos **Yleiset**-välilehdessä ei ole **Suojaus**-osaa, tiedostoa ei ole estetty. Siirry siinä tapauksessa seuraavaan vaiheeseen.
-
-    ![Ladatun tiedoston eston poistaminen](media/unblock-file.png "Ladatun tiedoston eston poistaminen")
-
-1. Pura `InventoryServiceApplication.PackageDeployer.zip`-tiedosto ja etsi seuraavat:
-
-    - `InventoryServiceApplication`-kansio
-    - `[Content_Types].xml`-tiedosto
-    - `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`-tiedosto
-
-1. Kopio edellä mainitut kohteet `.\Tools\PackageDeployment`-hakemistoon. (Tämä hakemisto luotiin, kun kehittäjien työkalut asennettiin.)
-1. Suorita `.\Tools\PackageDeployment\PackageDeployer.exe` ja tuo ratkaisut näytön ohjeiden mukaisesti.
+Jos sinulla on näitä edellytyksiä koskevia kysymyksiä, ota yhteys varaston näkyvyyden tuotetiimiin osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Varaston näkyvyyden lisäapuohjelman asentaminen
 
@@ -102,7 +50,11 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 1. Kirjaudu sisään [LCS:ään](https://lcs.dynamics.com/Logon/Index).
 1. Valitse aloitussivulla projekti, jossa ympäristö on otettu käyttöön.
 1. Valitse projektisivulla ympäristö, johon haluat asentaa apuohjelman.
-1. Siirry ympäristösivulla alaspäin **Power Platform -integrointi** -osan **Ympäristön lisäosat** -osaan. Dataverse-ympäristön nimi löytyy sieltä.
+1. Siirry ympäristösivulla alaspäin **Power Platform -integrointi** -osan **Ympäristön lisäosat** -osaan. Dataverse-ympäristön nimi löytyy sieltä. Varmista, että Dataverse-ympäristön nimi on se, jota halutaan käyttää varaston näkyvyydessä.
+
+    > [!NOTE]
+    > Tällä hetkellä vain LCS:n avulla luotuja Dataverse-ympäristöjä tuetaan. Jos Dataverse-ympäristö luotiin jollain muulla tavalla (esimerkiksi Power Apps -hallintakeskuksessa) ja jos se on linkitetty Supply Chain Management -ympäristöön, yhdistämismäärityksen ongelma voidaan korjata ottamalla ensin yhteys varaston näkyvyyden tuotetiimiin osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com). Varaston näkyvyyden apuohjelma voidaan asentaa sen jälkeen.
+
 1. Valitse **Ympäristöapuohjelmat**-osassa **Asenna uusi apuohjelma**.
 
     ![Ympäristösivu LCS:ssä](media/inventory-visibility-environment.png "Ympäristösivu LCS:ssä")
@@ -118,6 +70,7 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 
 1. Hyväksy käyttöehdot valitsemalla **Käyttöehdot**-valintaruutu.
 1. Valitse **Asenna**. Apuohjelman tilana näkyy nyt **Asennetaan**. Kun asennus on valmis, päivitä sivu. Tilan pitäisi olla nyt **Asennettu**.
+1. Valitse Dataversen vasemmassa siirtymisruudussa **Sovellukset**-osa ja varmista, että **Varaston näkyvyys** Power Apps -asennus onnistui. Jos **Sovellukset**-osaa ei ole, ota yhteys varaston näkyvyyden tuotetiimiin osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 > [!IMPORTANT]
 > Jos sinulla on useita LCS-ympäristöjä, luo kullekin ympäristölle erilainen Azure AD -sovellus. Jos käytät samaa sovellustunnusta ja vuokraajatunnusta varaston näkyvyyden lisäosan asentamisessa eri ympäristöihin, vanhemmissa ympäristöissä ilmenee tunnusongelma. Vain viimeinen asennus on kelvollinen.
@@ -126,13 +79,13 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 
 Varaston näkyvyyden apuohjelma poistetaan valitsemalla **Poista asennus** LCS-sivulla. Asennuksen poistoprosessi lopettaa varaston näkyvyyden apuohjelman, poistaa apuohjelman rekisteröinnin LCS:stä ja poista mahdolliset varaston näkyvyyden apuohjelman tietojen välimuistiin tallennetut tilapäiset tiedot. Dataverse-tilaukseen tallennettuja ensisijaisia varastotietoja ei kuitenkaan poisteta.
 
-Dataverse-tilaukseen tallennettujen varastotietojen asennus poistetaan avaamalla [Power Apps](https://make.powerapps.com), valitsemalla siirtymispalkissa **Ympäristö** ja valitsemalla sitten Dataverse-ympäristö, joka on sidottu LCS-ympäristöön. Valitse sitten **Ratkaisut** ja poista seuraavat viisi ratkaisua:
+Dataverse-tilaukseen tallennettujen varastotietojen asennus poistetaan avaamalla [Power Apps](https://make.powerapps.com), valitsemalla siirtymispalkissa **Ympäristö** ja valitsemalla sitten Dataverse-ympäristö, joka on sidottu LCS-ympäristöön. Valitse sitten **Ratkaisut** ja poista seuraavat viisi ratkaisua mainitussa järjestyksessä:
 
-- Varaston näkyvyyssovelluksen ankkurisovellus Dynamics 365 -ratkaisuissa
-- Dynamics 365 FNO SCM:n varaston näkyvyyden sovellusratkaisu
-- Varastopalvelumääritykset
-- Erillinen varaston näkyvyys
-- Dynamics 365 FNO SCM:n varaston näkyvyyden perusratkaisu
+1. Varaston näkyvyyssovelluksen ankkurisovellus Dynamics 365 -ratkaisuissa
+1. Dynamics 365 FNO SCM:n varaston näkyvyyden sovellusratkaisu
+1. Varastopalvelumääritykset
+1. Erillinen varaston näkyvyys
+1. Dynamics 365 FNO SCM:n varaston näkyvyyden perusratkaisu
 
 Kun nämä ratkaisut on poistettu, myös taulukoihin tallennetut tiedot poistetaan.
 

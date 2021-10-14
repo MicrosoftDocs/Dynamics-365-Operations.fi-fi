@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761971"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559506"
 ---
 # <a name="payroll-worker-address"></a>Palkanlaskennan työntekijän osoite
 
@@ -34,22 +34,28 @@ Tämä yksikkö tarjoaa tietyn työntekijän palkanlaskennan asuinsijainnista ja
 
 ## <a name="properties"></a>Ominaisuudet
 
-| Ominaisuus</br>**Fyysinen nimi**</br>**_Laji_** | Käytä | kuvaus |
+| Ominaisuus</br>**Fyysinen nimi**</br>**_Tyyppi_** | Käytä | Kuvaus |
 | --- | --- | --- |
-| **Paikkakunta**</br>mshr_city</br>*Merkkijono* | Vain luku</br>Vaadittu | Osoitteessa määritetty paikkakunta.   |
-| **Henkilöstönumero**</br>mshr_personnelnumber</br>*Merkkijono* | Vain luku</br>Vaadittu | Työntekijän yksilöivä henkilökuntanumero.  |
-| **Maa alue**</br>mshr_countryregionid</br>*Merkkijono* | Vain luku</br>Vaadittu | Osoitteelle määritetty maa tai alue.  |
-| **Voimassaolo alkaa**</br>mshr_postaladdressvalidfrom</br>*Päivämäärä aika siirros* | Vain luku </br>Vaadittu | Päivämäärä, josta alkaen osoite on voimassa. |
-| **Työskenteli osoitteessa** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes-asetusjoukko](hr-admin-integration-payroll-api-no-yes.md)* | Vain luku</br>Vaadittu | Osoittaa, onko osoite se, jossa työntekijä työskentelee. |
-| **Lääni**</br>mshr_county</br>*Merkkijono* | Vain luku</br>Vaadittu | Osoitteessa määritetty maakunta.  |
-| **Palkanlaskennan työntekijän osoitteen tunnus**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Vaadittu</br>Järjestelmän luoma | Järjestelmän luoma GUID-arvo, jonka avulla osoite voidaan yksilöivästi tunnistaa.  |
-| **Ensisijainen kenttä**</br>mshr_primaryfield</br>*Merkkijono* | Vain luku</br>Vaadittu |  |
-| **Katu**</br>mshr_street</br>*Merkkijono* | Vain luku</br>Vaadittu | Osoitteessa määritetty katu. |
-| **Voimassaolo päättyy**</br>mshr_postaladdressvalidto</br>*Päivämäärä aika siirros* | Vain luku </br>Vaadittu | Päivämäärä, johon asti osoite on voimassa.  |
-| **Sijainnin tunnus**</br>mshr_locationidbr>*Merkkijono* | Vain luku <br>Vaadittu | Osoitteen tunnus.  |
-| **Postinumero**</br>mshr_zipcode<br>*Merkkijono* | Vain luku <br>Vaadittu |Työntekijälle määritetty tunnusnumero.  |
-| **Asui osoitteessa**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes-asetusjoukko](hr-admin-integration-payroll-api-no-yes.md)* | Vain luku</br>Vaadittu | Osoittaa, onko osoite se, jossa työntekijä asuu. |
-| **Alue**</br>mshr_state</br>*Merkkijono* | Vain luku</br>Vaadittu | Osoitteessa määritetty osavaltio.  |
+| **Henkilöstönumero**</br>mshr_personnelnumber</br>*Merkkijono* | Vain luku | Työntekijän yksilöivä henkilökuntanumero. |
+| **Sijainnin tunnus**</br>mshr_locationidbr>*Merkkijono* | Vain luku | Osoitteen tunnus. |
+| **Asui osoitteessa**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes-asetusjoukko](hr-admin-integration-payroll-api-no-yes.md)* | Vain luku | Arvo ilmaisee, asuuko työntekijä kyseisessä osoitteessa. |
+| **Työskenteli osoitteessa** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes-asetusjoukko](hr-admin-integration-payroll-api-no-yes.md)* | Vain luku | Arvo ilmaisee, työskenteleekö työntekijä kyseisessä osoitteessa. |
+| **Maa alue**</br>mshr_countryregionid</br>*Merkkijono* | Vain luku</br>Vaadittu | Osoitteelle määritetty maa tai alue. |
+| **Postinumero**</br>mshr_zipcode<br>*Merkkijono* | Vain luku | Työntekijälle määritetty tunnusnumero. |
+| **Katuosoite**</br>mshr_street</br>*Merkkijono* | Vain luku | Osoitteelle määritetty katu. |
+| **Kaupunki**</br>mshr_city</br>*Merkkijono* | Vain luku | Osoitteelle määritetty paikkakunta. |
+| **Alue**</br>mshr_state</br>*Merkkijono* | Vain luku | Osoitteelle määritetty osavaltio tai provinssi. |
+| **Piirikunta**</br>mshr_county</br>*Merkkijono* | Vain luku | Osoitteelle määritetty maakunta. |
+| **Voimassaolo alkaa**</br>mshr_postaladdressvalidfrom</br>*Päivämäärä aika siirros* | Vain luku | Päivämäärä, josta alkaen osoite on voimassa. |
+| **Voimassaolo päättyy**</br>mshr_postaladdressvalidto</br>*Päivämäärä aika siirros* | Vain luku | Päivämäärä, johon asti osoite on voimassa. |
+| **Ensisijainen kenttä**</br>mshr_primaryfield</br>*Merkkijono* | Vain luku | Ensisijainen kenttä. |
+| **Palkanlaskennan työntekijän osoitteen tunnus**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Järjestelmän luoma | Järjestelmän muodostama GUID-arvo, jolla osoite tunnistetaan yksilöivästi. |
+
+## <a name="relations"></a>Suhteet
+
+| Ominaisuuden arvo | Liittyvä yksikkö | Siirtymisominaisuus | Kokoelmatyyppi |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Esimerkkikysely
 

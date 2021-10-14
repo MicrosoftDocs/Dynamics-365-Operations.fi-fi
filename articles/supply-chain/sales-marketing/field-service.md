@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dynamics 365 Field Service -integroinnin yleiskatsaus
 description: Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 Field Servicen integroinnista.
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ecfd19cf79b9547c67b5bb90cef451d4aeab8f5ee775e50578161783e370462f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761755"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566452"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Microsoft Dynamics 365 Field Service -integroinnin yleiskatsaus
 
@@ -58,7 +58,7 @@ Tämä toisen vaiheen lisätoiminto keskittyi antamaan kenttätyöntekijöille k
 - Supply Chain Management -projektit, jotka liittyvät Dynamics 365 Field Service -työtilauksiin
 - Dynamics 365 Field Servicen työtilaukset, joissa on linkki Supply Chain Management -projekteihin, käyttävät tätä projektinumeroa myyntitilauksessa, mikä mahdollistaa laskutuksen projektista. 
 
-![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSv2overview.png)
+![Liiketoimintaprosessien, mukaan lukien varasto- ja projektitietojen, synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Field Servicen ja Supply Chain Managementin toisen vaiheen integrointi mahdollistaa seuraavien mallien synkronoinnin:
 - Varastot (Supply Chain Managementista Field Serviceen) - varastot Supply Chain Managementista Field Serviceen [edistynyt kysely] 

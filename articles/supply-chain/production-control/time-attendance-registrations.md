@@ -1,7 +1,7 @@
 ---
 title: Työaikarekisteröinti – yleiskatsaus
 description: Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä ohjeaiheessa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin.
-author: ShylaThompson
+author: johanhoffmann
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc026562d06fcc569cebe540d47b6ef9185c2bc3a131363748e7c08b2d0f7b1c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0755a22365a2fdcbc6ed06c7e85c47d86808912e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713587"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567964"
 ---
 # <a name="time-and-attendance-registration-overview"></a>Työaikarekisteröinti – yleiskatsaus
 

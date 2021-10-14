@@ -2,19 +2,19 @@
 title: Finance and Operations -sovellusten palvelunkuvaus
 description: Tässä ohjeaiheessa esitetään Finance and Operations -sovellusten palvelunkuvaus.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472502"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581813"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten palvelunkuvaus
 
@@ -28,7 +28,7 @@ Finance and Operations -sovellukset ovat yrityksen resurssisuunnittelun (ERP) oh
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Yhdessä [yritystietojen](/power-bi/fundamentals/power-bi-service-overview), [infrastruktuurin](https://azure.microsoft.com/global-infrastructure/), [laskennan](/azure/service-fabric/service-fabric-overview) ja [tietokantapalvelujen](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) kanssa nämä sovellukset mahdollistavat organisaatioille toimialakohtaisten ja toiminnallisten liiketoimintaprosessien suorittamisen. Asiakkaat määrittävät käyttöönottokumppaninsa tuella yrityssovelluksen logiikan määrityksen, joka sopii parhaiten sen yksilöllisille liiketoimintaprosesseille. Toimintoja ja liiketoimintaprosesseja voi kasvattaa tai laajentaa yhdellä tai useammalla seuraavista ratkaisuista:
+Yhdessä [yritystietojen](/power-bi/fundamentals/power-bi-service-overview), [infrastruktuurin](https://azure.microsoft.com/global-infrastructure/), [laskennan](/azure/service-fabric/service-fabric-overview) ja [tietokantapalvelujen](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) kanssa nämä sovellukset mahdollistavat organisaatioille toimialakohtaisten ja toiminnallisten liiketoimintaprosessien suorittamisen. Asiakkaat määrittävät käyttöönottokumppaninsa tuella yrityssovelluksen logiikan määrityksen, joka sopii parhaiten sen yksilöllisille liiketoimintaprosesseille. Toimintoja ja liiketoimintaprosesseja voi kasvattaa tai laajentaa yhdellä tai useammalla seuraavista ratkaisuista:
 
 - Sisäinen [mukautuskokemus](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) -työkalut
@@ -197,17 +197,17 @@ Seuraavassa taulukossa kuvataan palvelun tyypillisiä skenaarioita ja toimia. si
 | Kaikkien tuotantoesiintymien ja muiden kuin tuotantoympäristöjen valmistelu. | X | |
 | Käyttöönotettujen tuotantoesiintymien ja muiden kuin tuotantoesiintymien vahvistaminen. | | X |
 | **Palvelupäivitykset** | |
-| Microsoft suorittaa palvelupäivityksiä tietyille muille kuin tuotantoesiintymille ja tuotantoesiintymille. | X | X |
-| Päivityksen lataaminen LCS:stä, päivityksen märitys, kehitys ja testaus sekä koodipäivityspaketin palauttaminen LCS:ään. | | X |
-| Sen pyytäminen, että laajennuspäivityksiä sovelletaan tuotantoesiintymään. | | X |
+| Käytä palvelupäivityksiä tietyissä muissa kuin tuotantoesiintymissä ja tuotantoesiintymissä. | X | |
+| Käytä palvelupäivityksiä manuaalisesti LCS:stä eristysesiintymiin. Määritä, kehitä ja testaa päivitys sekä toimita koodin päivityspaketti takaisin LCS:hen. | | X |
+| Pyydä ja ajoita tuotantoesiintymään käytettävät laajennuspäivitykset. | | X |
 | Koodi- ja tietovarmuuskopion luominen tuotantoesiintymälle, ennen kuin päivityksiä otetaan käyttöön. | X | |
 | Tuotantoesiintymän palautus koodi- ja tietovarmuuskopioon, jos tapahtuu virheitä. | X | |
 | **Tiedonhallinta (varmuuskopiointi, palautus ja päivitys)** | | |
 | Tietokannan varmuuskopiointi. | X | |
 | Korkean käytettävyyden ja järjestelmäpalautuksen suunnitelman määritys. | X | |
-| Tuotantoesiintymän tietokannan suorituskyvyn seuranta. | X | X |
-| Tuotantoesiintymän tietokannan hienosäätö suorituskykyä varten. | X | X |
-| Tuotantoesiintymän tietokannan muuhun kuin tuotantoesiintymään kopioinnin aloitus. | | X |
+| Tuotantoesiintymän tietokannan suorituskyvyn seuranta. | X | |
+| Tuotantoesiintymän tietokannan hienosäätö suorituskykyä varten. | X | |
+| Suorita tuotantoesiintymän tietokannan tietyn ajankohdan päivitys muussa kuin tuotantoesiintymässä. | | X |
 | **Infrastruktuurin päivittäminen** | | |
 | Säännöllisten infrastruktuuripäivitysten ajoittaminen. | X | |
 | **Skaalaus molempiin suuntiin (käyttäjät, tallennustila ja esiintymät)** | | |
@@ -215,7 +215,7 @@ Seuraavassa taulukossa kuvataan palvelun tyypillisiä skenaarioita ja toimia. si
 | Käyttömuutosten päivitys LCS:n tilauksen arviointityökaluun. | | X |
 | Palvelun käyttöön vaikuttavien merkittävien suorituskykyongelmien ilmoittaminen. | | X |
 | Käytettävään palveluun tarvittavien resurssien ennakoiva hallinta. | X | |
-| Tapahtumien tutkiminen ja vianmääritys. | X | X |
+| Tapahtumien tutkiminen ja vianmääritys. | X | |
 | **Suojaus (käyttöoikeudet)** | | |
 | Palvelun käyttöoikeuksien myöntäminen käyttäjille. | | X |
 | LCS-projektikäyttöoikeuksien myöntäminen LCS:n kautta käyttöönotettujen esiintymien hallintaa ja käyttöä varten. | | X |

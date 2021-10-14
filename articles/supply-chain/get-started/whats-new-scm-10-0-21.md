@@ -4,18 +4,18 @@ description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Manag
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500552"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579733"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.21 uudet tai muuttuneet ominaisuudet (lokakuu 2021)
 
@@ -26,20 +26,6 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin
 - **Julkaisun esiversio:** Elokuu 2021
 - **Version yleinen saatavuus (oma päivitys):** syyskuu 2021
 - **Version yleinen saatavuus (automaattinen päivitys):** lokakuu 2021
-
-## <a name="known-deployment-issue"></a>Tiedossa oleva käyttöönoton ongelma
-
-Kun IaaS-versio 10.0.21 otetaan käyttöön, näyttöön saattaa tulla seuraava varoitus:
-
-**Varoituskoodi:** 95017
-
-**Varoitussanoma:** Komentosarja \[SetupDiagnostics\] epäonnistui VM:n suoritusta vastaan
-
-Käyttöönotto toimii varoituksesta huolimatta. Lifecycle Servicesissä (LCS) voi kuitenkin esiintyä seuraavia tunnettuja ongelmia:
-
-- **Ympäristön seuranta** -sivulla ei näy **version yksityiskohtaisen linkin tietoja**, joten et voi tarkastella ympäristösi moduulien erityisiä versioita. Jos näitä tietoja ei ole, kaikki sen jälkeen epäonnistuvat, koska he varmistavat tämän tiedon avulla, että moduuliversion edellytykset täyttyvät. Koska PEAP/esiversio-koontiversiota ei voi käyttää tuotannossa tai käyttää tuotantoversioita, vaikutuksen on oltava mahdollisimman pieni.
-- SQL-analyysin **Ympäristön seuranta** -sivun **Suorituskykymittari**- ja **indeksianalyysi**-välilehtiä ei näytetä. Kaikki muut **ympäristön seuranta** -ominaisuudet toimivat suunnitellusti.
-- **Järjestelmän diagnostiikkatiedot** -sivu ei ole käytettävissä. Myös sen sääntöjen havaitsemista yösijainnin ajoista ja sen sääntöjen tunnistamista ongelmista koskevat liittyvät tiedot eivät näy.
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 

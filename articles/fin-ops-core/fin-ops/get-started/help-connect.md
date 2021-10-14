@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343809"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594854"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten ohjekokemuksen määrittäminen
 
@@ -30,7 +30,7 @@ Tässä ohjeaiheessa on Finance and Operations -sovellusten, kuten Microsoft Dyn
 
 ## <a name="help-architecture"></a>Ohjearkkitehtuuri
 
-Finance and Operations -sovellukset sisältävä käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [https://docs.microsoft.com/dynamics365](/dynamics365/)-sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
+Finance and Operations -sovellukset sisältävä käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [Microsoft Dynamics 365 -ohjeet](/dynamics365/) -sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
 
 [![Ohjearkkitehtuuri.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +39,7 @@ Tuotteen ohjejärjestelmä hakee artikkeleita docs.microsoft.comista ja muista y
 ## <a name="adding-task-guides"></a>Tehtäväoppaiden lisääminen
 
 > [!NOTE]
-> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Human Resourcesissa tai Commercessa. <!--We are currently working to enable this functionality in a future release.--> Perustoimintoja koskevat Human Resourcesin aloituskokemuksen tehtäväoppaat ovat kuitenkin edelleen käytettävissä. Sekä Human Resourcesin että Commercen menettelyohjeet ovat käytettävissä [https://docs.microsoft.com/dynamics365](/dynamics365/)-sivustossa.
+> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Human Resourcesissa tai Commercessa. <!--We are currently working to enable this functionality in a future release.--> Perustoimintoja koskevat Human Resourcesin aloituskokemuksen tehtäväoppaat ovat kuitenkin edelleen käytettävissä. Sekä Human Resourcesin että Commercen menettelyohjeet ovat käytettävissä [Microsoft Dynamics 365 -ohjeet](/dynamics365/) -sivustossa.
 
 Järjestelmänvalvojat voivat määrittää **Järjestelmän parametrit** -sivulla käyttöönottoon soveltuvien tehtäväopaskirjastojen käyttöoikeudet.
 

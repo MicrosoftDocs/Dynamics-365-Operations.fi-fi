@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772275"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581134"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -116,7 +116,7 @@ Jokainen viivakoodin skannaus päivittää määrän **Lähetys nyt** -kentäss�
 
 ### <a name="over-delivery-shipping-validations"></a>Ylitoimituksen lähetyksen tarkistukset
 
-Tarkistukset tapahtuvat asiakirjarivien vastaanottoprosessin aikana. Ne sisältävät ylitoimituksen tarkistukset. Jos käyttäjä yrittää vastaanottaa enemmän varastoa kuin ostotilauksen mukaan on tilattu, mutta ylitoimitusta ei ole määritetty tai vastaanotettu määrä ylittää ostotilausrivillä määritetyn ylitoimitustoleranssin, käyttäjä vastaanottaa virheen, koska ylimääräistä määrää ei voi vastaanottaa.
+Tarkistukset tapahtuvat asiakirjarivien täyttämisprosessin aikana. Ne sisältävät ylitoimituksen tarkistukset. Jos käyttäjä yrittää lähettää enemmän varastoa kuin siirtotilauksen mukaan on tilattu, mutta ylitoimitusta ei ole määritetty tai lähetetty määrä ylittää siirtotilausrivillä määritetyn ylitoimitustoleranssin, käyttäjä vastaanottaa virheen, koska ylimääräistä määrää ei voi lähettää.
 
 ### <a name="underdelivery-close-lines"></a>Alitoimituksen sulkemisrivit
 

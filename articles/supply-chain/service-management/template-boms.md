@@ -1,7 +1,7 @@
 ---
 title: Mallituoterakenteet
 description: Mallituoterakenteen avulla luodaan säännöllisesti huollettavien huoltokohteiden komponentit sisältävä vakioitu luettelo.
-author: ShylaThompson
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
@@ -15,25 +15,23 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab8586f81dc4a897d243b9d289109f039c390fcbf90c5c205125cf49eb5e8e39
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724745"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571304"
 ---
-# <a name="template-boms"></a>Mallituoterakenteet    
+# <a name="template-boms"></a>Mallituoterakenteet
 
 [!include [banner](../includes/banner.md)]
-
 
 Mallituoterakenteen avulla luodaan säännöllisesti huollettavien huoltokohteiden komponentit sisältävä vakioitu luettelo. Mallituoterakenteessa luetteloidut komponentit edustavat huoltokohteen yksittäisiä alikomponentteja. Kohdistamalla mallituoterakenteen huoltokohteeseen voit pitää kirjaa huoltokohteeseen vaihdetuista alikomponenteista.
 
 Voit kohdistaa mallituoterakenteen huoltosopimukseen tai huoltotilaukseen liittämällä sen huoltokohteen suhteeseen.
 
-
 > [!NOTE]
-> <P>Voit liittää huoltokohteeseen vain yhden mallituoterakenteen.</P>
+> Voit liittää huoltokohteeseen vain yhden mallituoterakenteen.
 
 ## <a name="create-a-template-bom"></a>Mallituoterakenteen luominen
 
@@ -41,8 +39,8 @@ Seuraavassa taulukossa on tietoja eri menetelmistä, joiden avulla voit luoda ma
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -70,7 +68,6 @@ Seuraavassa taulukossa on tietoja eri menetelmistä, joiden avulla voit luoda ma
 </tbody>
 </table>
 
-
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>Mallituoterakenteen kohdistaminen huoltosopimukseen tai huoltotilaukseen
 
 Mallituoterakenne voidaan kohdistaa huoltosopimukseen, huoltotilaukseen tai niihin molempiin. Huoltosopimus kattaa yleensä pitkäaikaisen asiakassuhteen. Huollon tuoterakenteeseen tallennetut aiemmat korvaukset voidaan tallentaa huoltosopimukseen.
@@ -81,7 +78,7 @@ Mallituoterakenne voidaan kohdistaa myös huoltokohteeseen sen huoltohistorian k
 
 Voit kopioida huollon tuoterakennerivin historiatiedot yhdestä huoltosopimuksesta toiseen. Kopioimalla huollon historiatiedot huoltosopimusten välillä voit säilyttää nimikkeen korvaustiedot.
 
-**Esimerkki**
+### <a name="example"></a>Esimerkki
 
 Olet määrittänyt asiakkaan autolle kolmen vuoden huoltosopimuksen. Tänä aikana asiakas on tottunut hyvään palveluun, jota yritys tarjoaa. Siksi sopimuksen päättyessä asiakas haluaa määrittää uuden. Voit nyt neuvotella paremman sopimuksen yritykselle. Kirjaukset vaihdetuista komponenteista voivat olla hyödyllisiä tulevaisuudessa, joten kopioit huollon tuoterakenteen historiatiedot uuteen sopimukseen.
 
@@ -99,26 +96,18 @@ Voit muuttaa mallituoterakenteiden tai huollon tuoterakenteiden tietojen näytt�
 
 Mallituoterakenteiden käyttämiseksi sinun on määritettävä kaksi numerosarjaa. Määritä yksinumerosarja mallituoterakenteelle ja toinen tuoterakennehistorian rivinumerolle.
 
-
 > [!NOTE]
-> <P>Numerosarjoja käytetään tunnisteiden kohdistamiseksi tietueisiin, jotka edellyttävät niitä. Ennen kuin voit liittää numerosarjan mallituoterakenteeseen tuoterakennehistorian rivinumeroon, numerosarjakoodit on määritettävä.</P>
-
+> Numerosarjoja käytetään tunnisteiden kohdistamiseksi tietueisiin, jotka edellyttävät niitä. Ennen kuin voit liittää numerosarjan mallituoterakenteeseen tuoterakennehistorian rivinumeroon, numerosarjakoodit on määritettävä.
 
 ## <a name="set-up-number-sequences"></a>Määritä numerosarjat
 
-1.  Valitse **Numerosarjat**-luettelosivu ja luo numerosarjat mallituoterakenteita ja tuoterakennehistorian rivinumeroa varten. 
-
-2.  Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltohallinnan parametrit**.
-
-3.  Valitse **Numerosarjat**, ja valitse sitten numerosarjakoodi numerosarjaviitteille, jotka loit **Numerosarjat**-lomakkeessa.
-
-4.  Tallenna muutokset sulkemalla lomake.
-
+1. Valitse **Numerosarjat**-luettelosivu ja luo numerosarjat mallituoterakenteita ja tuoterakennehistorian rivinumeroa varten.
+1. Valitse **Huollon hallinta** \> **Asetukset** \> **Huollon hallinnan parametrit**.
+1. Valitse **Numerosarjat** ja valitse sitten numerosarjakoodi numerosarjaviitteille, jotka luotiin **Numerosarjat**-lomakkeessa.
+1. Tallenna muutokset sulkemalla lomake.
 
 > [!NOTE]
-> <P>Järjestelmä käyttää tuoterakennehistorian rivinumeroa yhdistääkseen tuoterakenteen historian tapahtumat huoltosopimukseen tai huoltotilaukseen. Numeroa ei näytetä käyttöliittymässä.</P>
-
-
+> Järjestelmä käyttää tuoterakennehistorian rivinumeroa yhdistääkseen tuoterakenteen historian tapahtumat huoltosopimukseen tai huoltotilaukseen. Numeroa ei näytetä käyttöliittymässä.
 
 ## <a name="see-also"></a>Lisätietoja
 
@@ -127,10 +116,5 @@ Mallituoterakenteiden käyttämiseksi sinun on määritettävä kaksi numerosarj
 [Mallituoterakenteiden hallitseminen kohteiden suhteissa](manage-template-boms-on-object-relations.md)
 
 [Huoltotuoterakenteen muokkaaminen](modify-service-bom.md)
-
- 
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

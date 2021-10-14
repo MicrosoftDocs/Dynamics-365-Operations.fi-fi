@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767948"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592625"
 ---
 # <a name="confirm-and-transfer"></a>Vahvista ja siirrä
 
@@ -45,8 +45,8 @@ Voit jakaa vain ne kuormat, jotka täyttävät kaikki seuraavat ehdot:
 
 - Yhdellä tai useammalla kuormarivillä on keräiltyjä tuotteita.
 - Kuorman tila on pienempi kuin kuorman todellinen määrä.
-- Kuormarivin tietoja ei ole. (Nämä tiedot luodaan rekisterikilven konsolidoinnin avulla väliaikaisessa sijainnissa, ja *Vahvistus ja siirto* -toiminto ei tue rekisterikilven konsolidointia.)
-- Pakkaussijainnissa ei ole pakkaamista odottavaa varastoa. (*Vahvistus ja siirto* -toiminto ei tue varastoa, joka on keräilty pakkausasemalle mutta ei vielä pakattu.)
+- Kuormarivin tietoja ei ole. (Nämä tiedot luodaan rekisterikilven konsolidoinnin avulla väliaikaisessa sijainnissa, ja Vahvistus ja siirto -toiminto ei tue rekisterikilven konsolidointia.)
+- Pakkaussijainnissa ei ole pakkaamista odottavaa varastoa. (*Vahvista ja siirrä* -ominaisuus ei tue varastoa, joka on kerätty pakkausasemalle mutta jota ei ole pakattu ellei pakattuja kontteja ole sijoitettu väliaikaisiin sijainteihin ja ellei niille ole luotu lataustyötä.)
 
 > [!NOTE]
 > Tämä toiminto eroaa kuljetuskuormatoiminnosta, jota käytetään sellaisissa varastoissa, joissa kuormia ei koskaan voida suunnitella ja luoda ennen keräilyä, vaan joissa vapaa kuljetustila kuormataan, kun keräily on saatu valmiiksi.

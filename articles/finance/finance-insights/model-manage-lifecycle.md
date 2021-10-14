@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 28a5451f4932669fb66d5e47fd2f574eb3648428
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 0b16cfdce801e8a63b47397526b47995018b99c9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386335"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594828"
 ---
 # <a name="model-management-lifecycle"></a>Mallien hallinnan elinkaari
 
@@ -32,4 +32,4 @@ Suosittelemme, että koulutat tekoälymallia eristysympäristössä ja käytät 
 
 Koska tekoälymalli perustuu käytettävissä oleviin lasku- ja asiakastietoihin, on tärkeää, että eristysympäristössä on tuore kopio tuotantotiedoista. Voit aloittaa mallisi kouluttamisen noudattamalla kohdassa [Asiakkaan maksuennusteiden käyttäminen](use-customer-payment-predictions.md) kuvattuja ohjeita. Kun malli on koulutettu uudelleen, arvioi tulokset kohdassa [Asiakkaan alkuperäisen maksuennustemallin arvioiminen](evaluate-payment-prediction.md) kuvatulla tavalla. Käytä kohdassa [Ennustemallin parantaminen](improve-model.md) kuvattuja tietoja kokeillaksesi ominaisuuksien ja suodattimien yhdistelmiä, jotka voivat auttaa parantamaan mallia.
 
-Kun olet tyytyväinen koulutuksen tuloksiin, noudata kohdassa [Tekoälymallin jakaminen](https://docs.microsoft.com/ai-builder/distribute-model) kuvattuja ohjeita siirtääksesi mallin tuotantoympäristöösi.
+Kun olet tyytyväinen koulutuksen tuloksiin, noudata kohdassa [Tekoälymallin jakaminen](/ai-builder/distribute-model) kuvattuja ohjeita siirtääksesi mallin tuotantoympäristöösi.
