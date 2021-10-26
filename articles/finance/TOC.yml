@@ -1194,9 +1194,11 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
             - name: Taloushallinnon raportoinnin valuutta-ominaisuudet
               href: general-ledger/financial-reporting-currency-capability.md
+            - name: Jakamattoman voiton laskenta Financial Reportingissa
+              href: general-ledger/retained-earnings-enhancements.md
             - name: Taseraportit
               href: general-ledger/balance-sheet-financial-reports.md
-            - name: Taloushallinnon raporttien luonti
+            - name: Taloushallinnon raporttien luominen
               href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
             - name: Tuloslaskelman raportti
               href: general-ledger/income-statement-financial-report.md

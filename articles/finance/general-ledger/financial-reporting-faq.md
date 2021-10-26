@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733608"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605276"
 ---
 # <a name="financial-reporting-faq"></a>Taloushallinnon raportoinnin usein kysytyt kysymykset
 
@@ -100,6 +100,29 @@ Historiallisen valuuttamuunnon yhteydessä voidaan käyttää ennalta laskettuja
 
 Kun raporteissa esitetyt tiedot päivitetään, saattaa esiintyä viivettä, koska summat on laskettava uudelleen tarkistamalla tapahtumatiedot. Viive käynnistyy aina, kun hinnat päivitetään tai uusia tapahtumia kirjataan. Jos esimerkiksi tuhansia tilejä on määritetty historiallista muunnosta varten pari kertaa päivässä, raportin tietojen päivittäminen saattaa kestää jopa tunnin. Toisaalta, jos tiettyjä tilejä on vähemmän, raporttitietojen päivitysten käsittelyajat voidaan lyhentää minuutteihin tai alle minuutiksi.
 
-Niin ikään silloin kun raportteja luodaan käyttämällä valuuttamuunnosta historiatyyppisille tileille, suoritetaan ylimääräisiä tapahtumakohtaisia laskelmia. Raporttien luontiaika voi tilien lukumäärästä riippuen yli kaksinkertaistua.
+Niin ikään silloin kun raportteja luodaan käyttämällä valuuttamuunnosta historiatyyppisille tileille, suoritetaan ylimääräisiä tapahtumakohtaisia laskelmia. Raporttien luontiaika voi tilien lukumäärän mukaan yli kaksinkertaistua.
+
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Mitkä ovat arvioidut tietovaraston osajoukon integrointivälit?
+
+Financial Reporter kopioi tiedot Dynamics 365 Financesta Financial Reporter ‑tietokantaan 16 tehtävän avulla. Seuraavassa taulukossa luetellaan nämä 16 tehtävää sekä aikavälit, jotka määrittävät, kuinka usein kukin tehtävä suoritetaan. Näitä aikavälejä ei voi muuttaa.
+
+| Nimi                                                       | Aikaväli | Aikavälin ajoitus |
+|------------------------------------------------------------|----------|-----------------|
+| AX 2012 -tililuokista tililuokkaan            | 41       | minuuttia         |
+| AX 2012 ‑tileistä tiliin                                | 7        | minuuttia         |
+| AX 2012 ‑yrityksistä yritykseen                               | 300      | sekuntia         |
+| AX 2012 ‑yrityksistä organisaatioon                          | 23       | minuuttia         |
+| AX 2012 ‑dimensioyhdistelmistä dimensioyhdistelmään    | 1        | minuuttia         |
+| AX 2012 ‑dimensioarvoista dimensioarvoon                | 11       | minuuttia         |
+| AX 2012 -dimensioista dimensioon                            | 31       | minuuttia         |
+| AX 2012 ‑vaihtokursseista vaihtokurssiin                    | 17       | minuuttia         |
+| AX 2012 ‑tilikausista tilikauteen                        | 13       | minuuttia         |
+| AX 2012 -kirjanpitotapahtumista tietoon                | 1        | minuuttia         |
+| AX 2012 ‑organisaatiohierarkioista puurakenteeseen                   | 3 600    | sekuntia         |
+| AX 2012 ‑skenaarioista skenaarioon                              | 29       | minuuttia         |
+| AX 2012 ‑tapahtumatyypin tarkenteista tietotyypin tarkenteeseen | 19       | minuuttia         |
+| Ylläpitotehtävä                                           | 1        | minuuttia         |
+| MR-raportin määrityksistä AX7-talousraportteihin             | 45       | sekuntia         |
+| MR-raportin versioista AX-talousraportin versioihin         | 45       | sekuntia         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

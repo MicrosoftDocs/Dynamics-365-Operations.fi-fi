@@ -1,10 +1,12 @@
 - name: Dynamics 365 Human Resources
   href: ./index.md
   items:
-    - name: Uudet ominaisuudet
+    - name: Uutta
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 5. lokakuuta 2021
+          href: hr-whats-new-2021-10-04.md
         - name: 20. syyskuuta 2021
           href: hr-whats-new-2021-09-20.md
         - name: 6. syyskuuta 2021

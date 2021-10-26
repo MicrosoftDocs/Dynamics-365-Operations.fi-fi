@@ -798,10 +798,12 @@
               items:
                 - name: Palautusten luominen myyntipisteessä
                   href: POS-returns.md
-                - name: Sarjanumeron avulla seurattujen tuotteiden palautus myyntipisteessä
+                - name: Sarjanumeron avulla seurattujen tuotteiden palauttaminen myyntipisteessä
                   href: POS-serial-returns.md
                 - name: Linkitetyt palautukset
                   href: dev-itpro/linked-refunds.md
+                - name: Linkittämättömien palautusten käsitteleminen Dynamics 365 Commerce Payment Connectorilla Adyenia varten
+                  href: dev-itpro/unlinked-refunds.md
                 - name: Myymälän valikoimaan sisältymättömien tuotteiden myynti ja palauttaminen
                   href: sell-return-outside-assortments.md
                 - name: Palautustilaukseen liittyvän vaihdon määritys ja käsittely
