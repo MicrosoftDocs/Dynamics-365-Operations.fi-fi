@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6923954e2d287a16425a9f823e8f8800503735ec0b3837cff764cf8d6e752039
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605328"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta
 
@@ -63,7 +63,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
     > [!NOTE]
     > **Tuo**-painike ei ole käytettävissä ER-määritysversioille, jotka on jo ladattu nykyiseen Finance-esiintymään.
 
-    ![Konfiguraatiosäilön sivu.](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfiguraatiotietovarastosivu, Konfiguroinnit-pikavälilehti.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Tuo suodatetut määritykset
 
@@ -77,7 +77,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 4. Lataa suodatetut konfiguraatiot yleisestä tietovarastosta nykyiseen esiintymään valitsemalla **Konfiguraatiot**-pikavälilehdessä **Tuo**.
 5. Voit tyhjentää määritetyt valintaehdot valitsemalla **Konfiguraatiot**-pikavälilehdessä **Nollaa suodatin**.
 
-    ![Konfiguraatiosäilön sivu.](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurointitietovarastosivu, Versiot-pikavälilehti, Tuo-painike.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > ER-asetusten mukaan määritykset tarkistetaan tuonnin jälkeen. Voit saada ilmoituksia havaituista epäyhtenäisyysongelmista. Ennen kuin voit käyttää tuotua konfiguraatioversiota, kyseiset ongelmat on ratkaistava. Lisätietoja saat tähän aiheeseen liittyvistä resursseista.

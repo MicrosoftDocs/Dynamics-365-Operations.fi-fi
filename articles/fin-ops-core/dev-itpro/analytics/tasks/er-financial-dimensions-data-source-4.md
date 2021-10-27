@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3bf58ec746fedb046b6014f5343d4ac92c2e6aba72882dec5b1f737aa1aaae46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f14be560ab014224e32169b4ac97682a669249b4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743210"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605302"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 4 – Raportin suorittaminen)
 
@@ -37,16 +37,16 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 ![Sähköisen raportoinnin konfiguroinnit -sivu.](../media/er-financial-dimensions-guides-run1.png)
 5. Syötä tai valitse Dimension nimi -kentän arvo.
     * Jos haluat valita kaikki nykyisen yrityksen dimensiot, kirjoita seuraavat tiedot: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-![Sähköisen raportoinnin konfiguroinnit -sivu.](../media/er-financial-dimensions-guides-run2.png)
+![Sähköisen raportin parametrit -liukuikkuna, avattava Dimension nimi -valikko.](../media/er-financial-dimensions-guides-run2.png)
 6. Laajenna Tietueet-kohta ja sisällytä osaan.
 7. Valitse Suodatin.
 8. Valitse Kirjanpidon kirjauskansio -taulukon rivi ja Kirjauskansion eränumero -kenttä.
 9. Kirjoita Ehdot-kenttään 00057.
 10. Valitse OK.
 11. Valitse OK.
-![Sähköisen raportoinnin konfiguroinnit -sivu.](../media/er-financial-dimensions-guides-run3.png)
+![Sähköisen raportin parametrit -liukuikkuna, Sisällytettävät raportit -osa.](../media/er-financial-dimensions-guides-run3.png)
     * Tarkista aikaansaatu tuotos. Jokaiselle valitun erän tapahtumalle esitetään vastaavan dimensiojoukon taloushallinnon dimensiot. Aja raportti ja valitse eri dimensioita, jotta näet, että raportti ei ole riippuvainen valittujen dimensioiden määrästä tai tälle esiintymälle konfiguroitujen dimensioden määrästä.  
-![Sähköisen raportoinnin konfiguroinnit -sivu.](../media/er-financial-dimensions-guides-run4.png)
+![ER-konfiguraatioiden luoma tuotos.](../media/er-financial-dimensions-guides-run4.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

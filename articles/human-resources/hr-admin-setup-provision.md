@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
+ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488080"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7644524"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -49,7 +49,7 @@ Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. K
 Kun luot henkilöstöhallinnon koeympäristön, vuokraajalla luodaan myös Power Apps -koeympäristö, joka linkitetään henkilöstöhallinnon ympäristöön. Power Apps -ympäristöllä, jonka nimi on TestDrive, on sama koeaika kuin henkilöstöhallinnon ympäristöllä.
 
 > [!NOTE]
-> Henkilöstöhallinnon koeympäristön valmistelu epäonnistuu, jos varmennetulla käyttäjällä ei ole oikeutta luoda Power Apps -koeympäristöjä. Käyttäjän on kuuluttava käyttäjäryhmään, joka voi luoda koeympäristöjä Power Platformin hallintakeskuksessa. Lisätietoja [Hallitse sitä, kuka voi luoda ja hallita ympäristöjä Power Platformin hallintakeskuksessa](//power-platform/admin/control-environment-creation).
+> Henkilöstöhallinnon koeympäristön valmistelu epäonnistuu, jos varmennetulla käyttäjällä ei ole oikeutta luoda Power Apps -koeympäristöjä. Käyttäjän on kuuluttava käyttäjäryhmään, joka voi luoda koeympäristöjä Power Platformin hallintakeskuksessa. Lisätietoja [Hallitse sitä, kuka voi luoda ja hallita ympäristöjä Power Platformin hallintakeskuksessa](/power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Human Resources -ympäristöjen suunnitteleminen
 

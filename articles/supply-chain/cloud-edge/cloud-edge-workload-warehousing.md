@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500424"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641157"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -171,7 +171,8 @@ Seuraavia varastonhallintatoimintoja ei tueta tällä hetkellä scale unitin ty�
 - Negatiivisen käytettävissä olevan varaston käsittely.
 - Kuormakirjoja sisältävän varastotyön käsittely.
 - Materiaalikäsittelyä tai varastoautomaatiota sisältävän varastotyön käsittely.
-- Tuotteen päätietojen kuvan käyttö (esimerkiksi Warehouse Managementin mobiilisovelluksessa).
+- Tuotteen päätietojen kuvat (esimerkiksi Warehouse Management -mobiilisovelluksessa).
+- Yritysten välisten tietojen jakaminen tuotteita varten.
 
 > [!WARNING]
 > Jotkin varastotoiminnot eivät ole käytettävissä varastoissa, joissa varastonhallinnan työkuormia suoritetaan scale unitissa eikä sitä myöskään tueta keskuksessa tai scale unitin työkuormassa.
@@ -188,7 +189,6 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 |--------------------------------------------------------------|-----|------------------------------|
 | Lähdeasiakirjan käsittely                                   | Kyllä | Nro |
 | Lastauksen ja kuljetusten hallinnan käsittely                | Kyllä, mutta vain kuormansuunnitteluprosessit. Kuljetuksen hallinnan käsittely ei tueta  | Nro |
-| Aiheutunut kustannus ja kuljetettavien tuotteiden vastaanottaminen                                         | Kyllä | Nro |
 | Vapauta varastoon                                         | Kyllä | Nro |
 | Suunniteltu cross-docking                                        | Nro  | Nro |
 | Lähetyksen konsolidointi                                       | Kyllä, käytettäessä kuormansuunnittelua | Kyllä |
@@ -222,9 +222,10 @@ Seuraava taulukko sisältää tuetut saapuvien toiminnot ja missä näitä toimi
 
 | Käsittele                                                          | Keskus | Varaston ohjauksen työkuorma scale unitissa<BR>*(Nimikkeet, joissa on Kyllä-merkintä, koskevat vain varastotilauksia)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Lähdeasiakirjan&nbsp;käsittely                             | Kyllä | Nro |
-| Lastauksen ja kuljetusten hallinnan käsittely                    | Kyllä | Nro |
-| Saapuvan lähetyksen vahvistus                                    | Kyllä | Nro |
+| Lähdeasiakirjan&nbsp;käsittely                             | Kyllä | Ei |
+| Lastauksen ja kuljetusten hallinnan käsittely                    | Kyllä | Ei |
+| Aiheutunut kustannus ja kuljetettavien tuotteiden vastaanottaminen                       | Kyllä | Ei |
+| Saapuvan lähetyksen vahvistus                                    | Kyllä | Ei |
 | Ostotilauksen vapautus varastoon (varastotilausten käsittely) | Kyllä | Nro |
 | Varastotilausrivien peruuttaminen<p>Huomaa, että tätä tuetaan vain silloin, kun riviin ei kohdistu rekisteröintiä</p> | Kyllä | Nro |
 | Ostotilausnimikkeen vastaanotto ja poispano                       | <p>Kyllä,&nbsp;kun &nbsp;varastotilausta ei&nbsp;ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p> |

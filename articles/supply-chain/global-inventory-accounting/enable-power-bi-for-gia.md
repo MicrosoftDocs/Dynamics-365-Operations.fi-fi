@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 562b56a85ad2f40cb673f8f2101bf92c39853d1f1a087d0498b6f7d19d1cca01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b00de29a4f12719e469c063861b52e0fc20c5f1
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773342"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641108"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Power BI:n ottaminen käyttöön yleisessä varastokirjanpidossa
 
@@ -49,7 +49,10 @@ Määritä Power BI -integrointi noudattamalla näitä ohjeita.
 1. Konfiguroi **Yleisen varastokirjanpidon** Power BI -raportti seuraavien vaiheiden mukaisesti:
 
     1. Siirry kohtaan **Oma työtila**, etsi yleisen varastokirjanpidon tietojoukko ja valitse **Asetukset** **Asetukset**-valikosta.
-    1. Laajenna **Yleisen varastokirjanpidon asetukset** -kohdassa **Parametrit** ja päivitä kaikki parametrit tarpeen mukaan.
+    1. Laajenna **Yleisen varastokirjanpidon asetukset** -kohdassa **Parametrit** ja päivitä kaikki parametrit tarpeen mukaan. Varmista erityisesti seuraavat asetukset:
+        1. Korvaa **Dataverse URL**- ja **Ympäristötunnus**-oletusarvot käyttäen LCS:n (**Power Platform -integroinnin** osassa) **Ympäristön tiedot** -sivulla olevia arvoja.
+        1. Valitse **Tietolähteen tunnistetiedot** -osassa Olevan **Cds**-otsikon vieressä oleva **Muokkaa tunnistetietoja** -linkki. Kirjaudu sitten Dataverse-tilillesi **OAuth2**-todennusmenetelmällä.
+    1. Tarkista, että Power BI -raportit kohdassa **Oma työtila \> Raportit \> Yleinen varastolaskenta** toimivat oikein ja näyttävät järjestelmän sisältöä.
 
 1. Rekisteröi sovellus [Määritä PowerBI.com-integrointi](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process) -kohdassa kuvatulla tavalla.
 1. Integroi **Yleisen varastokirjanpidon** Power BI -raporttitiedosto Dynamics 365 Supply Chain Managementiin seuraavien vaiheiden mukaisesti:

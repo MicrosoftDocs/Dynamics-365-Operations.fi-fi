@@ -1,8 +1,8 @@
 ---
 title: Vähittäismyynnin kuponkien määrittäminen
-description: Tässä ohjeaiheessa on yleiskatsaus kupongeista ja niiden määrittämisestä.
-author: scott-tucker
-ms.date: 06/04/2020
+description: Tässä ohjeaiheessa on yleiskatsaus kupongeista ja niiden määrittämisestä Dynamics 365 Commercessa.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc79970528e23397b756fa15a715fba834edcc06e4522c6c35b64aede4976300
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745305"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603120"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Vähittäismyynnin kuponkien määrittäminen
 
@@ -40,6 +40,8 @@ Alennus ja kuponki luodaan kuponkia varten erikseen. Sitten linkität ne valitse
 > Kun kuponki on linkitetty alennukseen, monet Commercen alennussivun kentät muuttuvat Vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.
 > 
 > Kun käytät kuponkeja puhelinkeskuskanavassa, sinun on valittava **Laske uudelleen** -painike **(Myy-välilehti > Laske > Uudelleenlaskenta)**, jotta kupongin alennus voidaan ottaa käyttöön. Tämä lisävaihe poistetaan tulevassa versiossa.
+
+Jos haluat käyttää kuponkia myyntitapahtumaan myyntipisteessä (POS), voit käyttää **kupongin koodia** tai **kupongin viivakoodia**. Jos haluat käyttää **kupongin koodia**, **Lisää kupongin koodi** -toiminto on määritettävä myyntipisteen **Tapahtuma** [-näyttöasettelussa](pos-screen-layouts.md). Valitse **Lisää kupongin koodi** ja kirjoita kuponkikoodi. Vaihtoehtoisesti voit käyttää **kupongin viivakoodia** skannaamalla viivakoodin tai kirjoittamalla viivakoodin **Tapahtuma**-näytöllä numeronäppäimistön avulla.
 
 ### <a name="limited-use-coupons"></a>Kupongit, joiden käyttö on rajoitettua
 

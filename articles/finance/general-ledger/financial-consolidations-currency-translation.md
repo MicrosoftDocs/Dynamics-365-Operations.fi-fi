@@ -1,8 +1,8 @@
 ---
 title: Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja.
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748977"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615932"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -182,5 +182,17 @@ Taloushallinnan raportointi tukee esimerkiksi seuraavia konsolidointiskenaarioit
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Suurten konsolidointien suorituskyvyn parannus
+
+Ympäristöissä, joissa on useita kirjanpitotapahtumia, voidaan suorittaa hitaammin kuin on optimaalista. Voit korjata tämän ongelman asettamalla rinnakkaiskäsittelyn erille, jotka käyttävät käyttäjän määrittämiä päivämääriä. Varmista, että ratkaisu toimii suunnitellulla tavalla, lisäämällä konsolidointiin laajennuspiste päivämäärävälien säilön palauttamiseksi. Peruskäyttöönoton pitäisi sisältää yhden päivämäärävälin konsolidoinnin aloitus- ja päättymispäiville. Perustoteutuksen päivämäärävälit tarkistetaan, jotta varmistetaan, ettei niissä ole aukkoja tai päällekkäisyyksiä. Päivämäärävälien avulla luodaan rinnakkaisia eränippuja kullekin yritykselle.
+
+Voit mukauttaa päivämäärävälien määrää organisaation vaatimusten mukaisesti. Päivämäärävälien määrää mukauttamalla voit helpottaa testausta ja pienentää vaikutusta aiemmin luotuun koodiin, koska kohdistuslogiikkaa ei ole. Ainoat pakolliset uudet testit vahvistavat eränippujen luomisen, päivämäärävälit ja testin päivämäärävälien osajoukon sen varmistamiseksi, että eriä voi yhdistää lopulliseen erätehtävään. 
+
+Tämä ominaisuus parantaa kirjanpidon konsolidointiprosessia, kun prosessi suoritetaan erätyönä. Parannus parantaa kirjanpidon konsolidointiprosessin suorituskykyä jakamalla konsolidoinnin useisiin tehtäviin, jotka voidaan käsitellä rinnakkain. Konsolidoinnin suorituksen oletusmenetelmässä jokainen tehtävä käsittelee kahdeksan päivän mittaisen kauden kirjanpitoaktiviteetteja. On kuitenkin lisätty laajennuspiste, jonka avulla voit mukauttaa luotujen tehtävien määrää.
+
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+
+- **Moduuli:** Kirjanpito
+- **Ominaisuuden nimi:** Suurten konsolidointien suorituskyvyn parannus
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

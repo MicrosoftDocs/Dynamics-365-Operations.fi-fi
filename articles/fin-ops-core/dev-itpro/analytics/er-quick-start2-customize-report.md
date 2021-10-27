@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770017"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605227"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
 
@@ -160,7 +160,7 @@ Jos haluat lisätä ER-vakiokonfiguraatiot nykyiseen Microsoft Dynamics 365 Fina
     - **Maksumallin määritys 1611** – tämä konfiguraatio sisältää [mallin määrityksen](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-osan, joka kuvaa, miten tietomalli täytetään hakemuksen tiedoilla suorituspalvelussa.
     - **BACS (Iso-Britannia)** – tämä konfiguraatio sisältää [muodon](general-electronic-reporting.md#FormatComponentOutbound) ja muodon määrityksen ER-osat. Muoto-osa määrittää raportin asettelun. Muodon määritysosa sisältää mallin tietolähteen ja määrittää, miten raportin asettelu täytetään käyttämällä tätä tietolähdettä suorituspalvelussa.
 
-![Konfiguraatiot-sivu.](./media/er-quick-start2-imported-solution1.png)
+![Konfiguroinnit-sivu, jolla on käytettävissä olevat ER-konfiguraatiot puumuodossa.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Valmistele toimittajamaksu käsittelyä varten
 
@@ -222,7 +222,7 @@ Sinun on määritettävä sähköinen maksutapa, jolloin se käyttää tuotua ER
 4. Määritä **Tiedostomuoto**-pikavälilehdessä **Yleinen sähköinen vientimuoto** -asetukseksi **Kyllä**.
 5. Valitse **Vientimuodon konfigurointi** -kentässä **BACS (Iso-Britannia)** -muotoinen konfiguraatio.
 
-    ![Maksutapa - Toimittajat -sivu.](./media/er-quick-start2-method-of-payment1.png)
+    ![Maksutavat – toimittajat -sivulla voit määrittää sähköisen maksutavan, jolla toimittajamaksut käsitellään vakiomuodossa.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Valitse **Tallenna**.
 
@@ -273,7 +273,7 @@ Tässä tapauksessa Litware, Inc. -yhtiön edustajana sinun on luotava uusi ER-m
 
 **BACS (Iso-Britannia, mukautettu)** -ER-muotokonfiguraation versio 1.1.1 luodaan. Tämän version [tila](general-electronic-reporting.md#component-versioning) on **Luonnos**, ja sitä voidaan muokata. Mukautetun ER-muodon nykyinen sisältö vastaa Microsoftin toimittaman muodon sisältöä.
 
-![Konfiguraatiot-sivu.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfiguraatiosivu, jossa BACS (Yhdistynyt kuningaskunta, mukautettu) -ER-muotokonfiguraation versio 1.1.1.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Muokkaa mukautettua muotoa
 
@@ -349,7 +349,7 @@ Sinun on määritettävä sähköinen maksutapa siten, että mukautettua ER-muot
 4. Määritä **Tiedostomuoto**-pikavälilehdessä **Yleinen sähköinen vientimuoto** -asetukseksi **Kyllä**.
 5. Valitse **Vientimuodon konfigurointi** -kentässä **BACS (Iso-Britannia, mukautettu)** -muotoinen konfiguraatio.
 
-    ![Maksutapa - Toimittajat -sivu.](./media/er-quick-start2-method-of-payment2.png)
+    ![Maksutavat – toimittajat -sivulla voit määrittää sähköisen maksutavan, jolla toimittajamaksut käsitellään mukautetussa muodossa.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Valitse **Tallenna**.
 
@@ -378,7 +378,7 @@ Sinun on määritettävä sähköinen maksutapa siten, että mukautettua ER-muot
 
         Huomaa, että mukautetun ER-muotosi rakenteen mukaisesti luodun tiedoston maksurivi [alkaa](#PositionSWIFTCode) nyt SWIFT-koodilla, joka [syötettiin](#DefineSWIFTCode) sen toimittajan pankkitilille, jonka maksu on käsitelty.
 
-        ![Maksutiedosto TXT-muodossa.](./media/er-quick-start2-payment-file2.png)
+        ![Toimittajamaksun käsittelemiseen käytettävä maksutiedosto TXT-muodossa.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Tuo ER-muodon vakiokonfiguraatioiden uudet versiot
 
@@ -395,7 +395,7 @@ Jos haluat lisätä ER-konfiguraatioiden uusia versioita nykyiseen Finance-esiin
 5. Valitse **Versiot**-pikavälilehdestä valitun ER-muodon konfiguraation versio **3.3**.
 6. Lataa valittu versio yleisestä säilöpalvelusta nykyiseen Finance-esiintymään valitsemalla **Tuo**.
 
-![Konfiguraatiosäilön sivu.](./media/er-quick-start2-import-solution2.png)
+![Konfigurointitietovarastosivu, Versiot-pikavälilehti, Tuo-painike.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Jos sinulla on ongelmia [yleiseen säilöön](er-download-configurations-global-repo.md) pääsyssä, voit [ladata konfiguraatiot](download-electronic-reporting-configuration-lcs.md) sen sijaan LCS-palvelusta.
@@ -507,7 +507,7 @@ Jos haluat alkaa käyttää **BACS (Iso-Britannia)** -muodon version 3.3 uutta t
 
         Huomaa, että luodun tiedoston maksurivi alkaa SWIFT-koodilla, joka syötettiin sen toimittajan pankkitilille, jonka maksu on käsitelty.
 
-        ![Maksutiedosto TXT-muodossa.](./media/er-quick-start2-payment-file3.png)
+        ![Toimittajamaksun käsittelemiseen käytettävä maksutiedosto TXT-muodossa, joka käyttää pohjustettua ER-muotoa.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Lisäresurssit
 

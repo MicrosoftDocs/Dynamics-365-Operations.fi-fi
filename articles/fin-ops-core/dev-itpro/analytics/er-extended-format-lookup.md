@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 59b2cc1dae5774322d47f76e1213f0e8c8a0b8b244a68c113e34484c1e59b209
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 395282eb267e7e356fca6087f99c6f193741ac9d
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767215"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605154"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Salli käyttäjien määrittää ER-muotoviittaus, jolla kysytään muotoa yleisestä tietovarastosta
 
@@ -34,27 +34,27 @@ Kun esimerkiksi määrität [ulkomaankaupan parametreja](../../../finance/locali
 
 Jos kulloinenkin Finance-esiintymä ei sisällä Intrastat-liiketoimintaprosessiin liittyviä ER-muotoja, tämä hakukenttä on tyhjä.
 
-[![Ulkomaankaupan parametrisivu.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Ulkomaankaupan parametrit -sivu, tyhjä Raporttimuodon määritys -kenttä.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Jos kulloinenkin Finance-esiintymä sisältää Intrastat-liiketoimintaprosessiin liittyviä ER-muotoja, tämä hakukenttä tarjoaa ER-muodot.
 
-[![Ulkomaankaupan parametrisivu.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Ulkomaankaupan parametrit -sivu, Raporttimuodon määritys -kenttä, jossa asetuksia.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Tämä haku tarjoaa vain ne ER-muodot, jotka on jo tuotu kulloiseenkin Finance-esiintymään. [Tuodaksesi](./tasks/er-import-configuration-lifecycle-services.md) ER-ratkaisuja kulloiseenkin Finance-esiintymään sinulla on oltava käyttöoikeudet suorittaa asianmukainen ER-kehyksen toiminto, joka tukee ER-muotoja sisältävien ER-ratkaisujen [elinkaarta](general-electronic-reporting-manage-configuration-lifecycle.md).
 
 Alkaen Financen versiosta 10.0.9 (huhtikuun 2020 julkaisu) ER-muodon haun käyttöliittymää, jota käytetään ER-kehyksen ohjelmointirajapinnan avulla, on laajennettu. Voit edelleen valita olemassa olevia ER-muotoja, jotka löydät **Valitse muotomääritys** -pikavälilehdestä. Tämän lisäksi laajennettu haku tarjoaa uuden mahdollisuuden etsi tiettyjä ER-muotoja Yleisestä tietovarastosta (GR). Kaikki yleisen tietovaraston ER-muodot esitetään **tuo yleisestä tietovarastosta** -pikavalikossa.
 
-[![Ulkomaankaupan parametrisivu.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Ulkomaankaupan parametrit -sivu, Tuonti yleisestä tietovarastosta -pikavälilehti.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Samankaltaisesti kuin **Valitse muodon määritys** -pikavälilehti myös **Tuo yleisestä tietovarastosta**-pikavälilehdessä näkyvät vain sille liiketoimintaprosessille sopivat ER-muodot, jolle on valittu ER-muoto tässä hakukentässä. Tässä esimerkissä luodaan Intrastat-ilmoitus. ER-muoto on sovellettavissa sille yritykselle, johon käyttäjä on tällä hetkellä kirjautunut yrityksen maakontekstista riippuen.
 
 Kun valitset **Tuo yleisestä tietovarastosta** -pikavälilehdestä ER-muodon, valitun ER-muodon [määritys](general-electronic-reporting.md#Configuration) tuodaan yleisestä tietovarastosta kulloiseenkin Finance-esiintymään.
 
-[![Ulkomaankaupan parametrisivu.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Ulkomaankaupan parametrit -sivu, Käsitellään toimintoa -huomautus.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Jos tuonti sitten saadaan suoritettua loppuun onnistuneesti, viite tuotuun ER-muotoon tallennettaan tähän hakukenttään. Kun käytät yleistä tietovarastoa ensimmäisen kerran, sinun on seurattava annettua linkkiä ja rekisteröidyttävä [Regulatory Configuration Serviceen](https://aka.ms/rcs) (RCS), jota käytetään yleisen tietovaraston käyttöoikeuksien hallintaan.
 
-[![Ulkomaankaupan parametrisivu.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Ulkomaankaupan parametrit -sivu, linkki RCS-rekisteröintiin.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Oletusarvoisesti **Tuo yleisesti** -pikavälilehdessä näkyy yleisen tietovaraston sisällön perusteella suorituskykyparannuksia varten automaattisesti luotavan väliaikaisen tallennustilan ER-muotojen luettelo. Tämä tapahtuu, kun **Tuo yleisestä tietovarastosta** -pikavälilehti avataan ensimmäistä kertaa, mikä saattaa kestää useita sekunteja.
 
