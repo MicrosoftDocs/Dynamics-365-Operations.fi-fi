@@ -74,12 +74,12 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (marraskuu 2021)
                       href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (lokakuu 2021)
                       href: get-started/whats-new-changed-10-0-21.md
-                    - name: Finance 10.0.20 (elokuu 2021)
-                      href: get-started/whats-new-changed-10-0-20.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -240,6 +240,10 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: Toimittajan laskutusautomaation asetusvaihtoehdot
                   href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Ennakkomaksujen kohdistaminen automaattisesti toimittajan laskujen yleiskatsaukseen
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: Laskurivien luominen toimittajan laskuja tuotaessa
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
                 - name: Laskujen lähettäminen työnkulkujärjestelmään ja tuotteen vastaanottorivien täsmäyttäminen
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Toimittajan laskujen automaatiotulosten tarkasteleminen
@@ -272,6 +276,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Toimittajan kirjausprofiilit
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Toimittajan laskujen päivämäärät
+              href: accounts-payable/vendor-invoice-dates.md
             - name: Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobiililaskujen hyväksynnät
@@ -990,6 +996,8 @@
                   href: general-ledger/tasks/create-main-account.md
                 - name: Tilikartan suunnittelu
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Paikallisen tilikartan suunnittelu
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Tapahtumien selvitys kirjanpitotilien välillä
                   href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
                 - name: Määritä kirjanpitotilin alias
@@ -1104,6 +1112,8 @@
                   href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Arvonlisäveromaksun luominen
                   href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: Veron tilityksen pyöristys mukautettujen valuutan desimaalien perusteella
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
                 - name: Luo arvonlisäverotapahtumia asiakirjoihin
                   href: general-ledger/tasks/create-sales-tax-transactions-documents.md
                 - name: Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen
@@ -1546,6 +1556,8 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Meksikon sähköisen laskutuksen käytön aloittaminen
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Saudi-Arabian sähköisen laskutuksen käytön aloittaminen
+                          href: localizations/e-invoicing-sa-get-started.md
                         - name: Sähköisen laskutuspalvelun avulla voit tuoda toimittajan laskuja
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Sähköisen laskutuksen määrittäminen
@@ -1568,9 +1580,11 @@
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: Arvonlisäveron käytettävyys ja arvonlisäveroryhmän määrityslogiikka
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-                    - name: Laskenta
+                        - name: Veroviranomaisten parametrien käyttäminen käteisalennuksen laskenta-asetuksissa
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
+                    - name: Laskelma
                       items:
-                        - name: 'Veron laskeminen hintoihin, kun päälle, kun Hinnat sisältävät verot ‑asetus on otettu käyttöön'
+                        - name: 'Veron laskeminen hintoihin, kun Hinnat sisältävät verot ‑asetus on otettu käyttöön'
                           href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
                         - name: Verolaskennan pyöristyssäännöt
                           href: localizations/tax-calculation-rounding-rules.md
@@ -1594,6 +1608,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-myyntiluettelo
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Espanjan raportointi
+                          items:
+                            - name: 'ALV-tietojen välitön lähetys (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
                         - name: Ruotsin raportointi
                           items:
                             - name: ALV-ilmoitus
@@ -1604,18 +1622,24 @@
                               href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Yhdistyneen kuningaskunnan raportointi
                           items:
-                            - name: 'MTD:n integroinnin valmisteleminen ALV:tä varten'
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: ALV-ilmoitus
+                              href: localizations/emea-gbr-vat-declaration.md
                     - name: Veron laskennan käyttöönotto siirtotilausta varten
                       items:
                         - name: Verotoimintojen tuen määrittäminen
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                        - name: Siirtotilausasiakirjojen verotietojen tulostaminen
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Laajennus
                       items:
                         - name: Tietokenttien lisääminen veromäärityksiin
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Tietokenttien lisääminen verointegrointiin laajennusten avulla
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: Veromääritysten mukauttaminen perustietojen hakuun
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: Verolaskennan usein kysytyt kysymykset
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Pakolliset päivitykset
               href: localizations/regulatory-updates.md
             - name: Australia
@@ -1684,6 +1708,8 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: Kotimaan myynnin vuosittainen ALV-luettelo
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: Belgian Intrastat
+                  href: localizations/emea-bel-intrastat.md
             - name: Brasilia
               items:
                 - name: Brasilia – yleiskatsaus
@@ -2312,6 +2338,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: Intian lokalisointiin liittyvät uudet tai muuttuneet ominaisuudet
                   items:
+                    - name: Versioiden 10.0.20–10.0.22 uudet ja muuttuneet ominaisuudet
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: Versioiden 10.0.15–10.0.19 uudet ja muuttuneet ominaisuudet
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Version 10.0.14 uudet ja muuttuneet ominaisuudet
@@ -2680,6 +2708,12 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: 'TDS:n tapahtumien sertifikaattien numeroiden ja päivämäärien päivittäminen'
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: Indonesia
+              items:
+                - name: Indonesia – yleiskatsaus
+                  href: localizations/indonesia.md
+                - name: Indonesian ALV-ilmoitus
+                  href: localizations/apac-idn-ppn-declaration.md
             - name: Italia
               items:
                 - name: Italia – yleiskatsaus
@@ -3024,6 +3058,8 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: ALV-ilmoitus (Alankomaat)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Alankomaiden Intrastat
+                  href: localizations/emea-nl-intrastat.md
                 - name: EU-myyntiluettelo
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Uusi-Seelanti
@@ -3352,6 +3388,8 @@
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Pankkitositekulujen kohdistaminen lähetykseen
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: Asiakkaiden sähköiset laskut Saudi-Arabiassa
+                  href: localizations/emea-sau-e-invoices.md
             - name: Singapore
               items:
                 - name: Singapore – yleiskatsaus
@@ -3378,6 +3416,8 @@
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: Yhteisön sisäinen ALV
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: Espanjan Intrastat
+                  href: localizations/emea-esp-intrastat.md
                 - name: Kerta-asiakkaat
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: Espanjan asettelun mukainen sekkien tulostus
@@ -3462,28 +3502,26 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Käänteisen verovelvollisuuden arvonlisäveroryhmien määrittäminen
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Yhdistyneen kuningaskunnan raportointi
+                - name: 'ALV:n määrittäminen digitaaliseksi'
                   items:
-                    - name: 'ALV:n määrittäminen digitaaliseksi'
-                      items:
-                        - name: 'ALV:n määrittäminen digitaaliseksi -palautuslähetys Yhdistyneessä Kuningaskunnassa'
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: 'Ympäristön valmisteleminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: 'Tarkistusluettelo sähköisten sanomien määrittämiselle ALV:n määrittäminen digitaaliseksi -verkkopalvelussa'
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: 'Toiminnan testaaminen ALV:n määrittäminen digitaaliseksi -eristyksen kanssa'
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: 'Finance-ympäristön valtuuttaminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: 'ALV-palautuksen lähettäminen HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalveluun'
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: 'ALV-maksujen ja velkojen tietojen noutaminen HMRC:stä'
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: ALV-asetustiedot Yhdistyneen kuningaskunnan ALV-ilmoituksia varten
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: ALV-ilmoituksen luominen paperimuodossa (ALV 100 -raportti)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: 'ALV:n määrittäminen digitaaliseksi -palautuslähetys Yhdistyneessä Kuningaskunnassa'
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: 'Ympäristön valmisteleminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: 'Tarkistusluettelo sähköisten sanomien määrittämiselle ALV:n määrittäminen digitaaliseksi -verkkopalvelussa'
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: 'Toiminnan testaaminen ALV:n määrittäminen digitaaliseksi -eristyksen kanssa'
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: 'Finance-ympäristön valtuuttaminen toimimaan HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalvelun kanssa'
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: 'ALV-palautuksen lähettäminen HMRC:n ALV:n määrittäminen digitaaliseksi -verkkopalveluun'
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: 'ALV-maksujen ja velkojen tietojen noutaminen HMRC:stä'
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: ALV-asetustiedot Yhdistyneen kuningaskunnan ALV-ilmoituksia varten
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: ALV-ilmoituksen luominen paperimuodossa (ALV 100 -raportti)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Maksukäytäntöjen raportin tilastot
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Yhdysvallat
@@ -3877,6 +3915,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -4021,6 +4061,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4421,6 +4463,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                     - name: Application Update 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                    - name: Application Update 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
@@ -4433,6 +4477,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: Koodin muuttaminen antamaan käyttäjille mahdollisuus määrittää ja käyttää nimettyjä ER-kohteita
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: Saapuvien tiedostojen mukautetun ER-lähteen käyttöönottaminen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobiilisovellus
           items:
             - name: Mobiilisovelluksen aloitussivu

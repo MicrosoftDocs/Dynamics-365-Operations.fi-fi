@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c395aabfc8705b4713cf1041b5644ac478d8c1a4c4c211334aea3572f1618b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759014"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675175"
 ---
 # <a name="revenue-recognition-setup"></a>Tuottokirjauksen määritys
 [!include [banner](../includes/banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "6759014"
 Uusi **Tuottokirjauksen** moduuli on lisätty, Se sisältää valikkovaihtoehtoja kaikille tarvittaville määrityksille. Tässä aiheessa kuvataan määritysasetukset ja niiden vaikutukset.
 
 > [!NOTE]
-> Tuoton kirjaustoimintoa ei voi ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
-
-> Tuottokirjausten, mukaan lukien myyntirakennetoiminnot, käyttämistä Commerce-kanavissa (verkkokauppa, myyntipiste, puhelinkeskus) ei tueta. Tuottokirjausten kanssa määritettyjä nimikkeitä ei tulisi lisätä Commerce-kanavissa luotuihin tilauksiin tai tapahtumiin.
+> Tuoton kirjaustoiminto on nyt oletusarvoisesti käytössä käyttöön ominaisuuksien hallinnan kautta. Jos organisaatiosi ei käytä tätä toimintoa, voit poistaa sen käytöstä **Omaisuuksien hallinta** -työtilassa.
+>
+> Tuottokirjausten käyttämistä, myyntirakennetoiminnot mukaan lukien, ei tueta Commerce-kanavissa (verkkokauppa, myyntipiste ja puhelinkeskus). Tuottokirjaukseen määritettyjä nimikkeitä ei tulisi lisätä Commerce-kanavissa luotuihin tilauksiin tai tapahtumiin.
 
 **Tuottokirjaus**-moduulissa on seuraavat määritysvaihtoehdot:
 
@@ -40,12 +40,16 @@ Uusi **Tuottokirjauksen** moduuli on lisätty, Se sisältää valikkovaihtoehtoj
     - Nimikeryhmät ja vapautetut tuotteet
     - Tuottoaikataulun määritys
     - Tuottohinnan määritys
+    - Varaston määritys
 
-        - Kirjausprofiilit
-        - Niput
+        - Tuottoaikataulun määritys
+        - Tuottohinnan määritys
 
-    - Nippukomponentit
-    - Nippunimike
+    - Kirjausprofiilit
+    - Niput
+
+        - Nippukomponentit
+        - Nippunimike
 
 - Projektimääritykset
 
@@ -91,20 +95,27 @@ Syötä kuvaavia arvoja kenttiin **Tuottoaikataulu** ja **Kuvaus**. Seuraavia li
 - **Automaattiset sopimusehdot** – Tämä valintaruutu valitaan, jos sopimuksen alkamis- ja päättymispäivät on tarkoitus asettaa automaattisesti. Nämä päivämäärät asetetaan automaattisesti vain tuottotyypin **Sopimuksenjälkeinen tuki** vapautetuille tuotteille. Sopimuksen alkamispäiväksi asetetaan automaattisesti myyntitilausrivin pyydetty lähetyspäivämäärä ja sopimuksen päättymispäivä asetetaan automaattisesti lisäämällä tuottoaikataulun määrityksessä annettujen kuukausien tai esiintymien määrä alkamispäivämäärään. Myyntitilauksen tuote voi olla esimerkiksi vuoden takuu. Tuottoaikataulun oletusarvo on **12M** (12 kuukautta) ja **Automaattiset sopimusehdot** -valintaruutu on valittuna tälle tuottoaikataululle. Jos myyntitilauksen pyydetty lähetyspäivämäärä on 16.12.2019, sopimuksen oletusarvoinen alkamispäivä on 16.12.2019 ja oletusarvoinen päättymispäivä on 15.12.2020.
 - **Kirjausperusteet** – Kirjausperuste määrittää, miten tuottohinta kohdistetaan esiintymiin.
 
-    - **Kuukausittain päivämäärien mukaan** – Summa kohdistetaan kunkin kuukauden todellisten päivien perusteella.
+    - **Kuukausittain päivien mukaan** – Summa kohdistetaan kunkin kalenterikuukauden todellisten päivien perusteella.
     - **Kuukausittain** – Summa jaetaan tasan esiintymissä määritetyn kuukausimäärän kesken.
     - **Esiintymät** – Summa jaetaan tasan esiintymien kesken, mutta se voi sisältää lisäajan, jos **Todellinen alkamispäivä** valitaan kirjausmenetelmäksi.
+    - **Tilikausi päivien mukaan** – Summa kohdistetaan kunkin tilikauden todellisten päivien perusteella. 
 
-- **Kirjausmenetelmä** – Kirjausmenetelmällä määritetään oletuspäivämäärät, jotka asetetaan laskun tuottoaikataululle.
+    **Kuukausittain päivien mukaan**- ja **Tilikausi päivien mukaan** -kohdat ovat samat, kun tilikaudet noudattavat kalenterikuukausia. Ainoa poikkeus on, jos kirjausmenetelmäksi määritetään **Kuukauden/kauden loppu** ja **Sopimuksen alkamispäivä**- ja **Päättymispäivä**-kentät jätetään tyhjiksi myyntitilausrivillä.
+
+- **Kirjausmenetelmä** – Kirjausmenetelmällä määritetään päivämäärät, jotka asetetaan laskun tuottoaikataululle.
 
     - **Todellinen alkamispäivä** – Aikataulu luodaan käyttämällä joko sopimuksen alkamispäivää (sopimuksenjälkeisen tuen \[PCS\] nimikkeille) tai laskun päiväystä (oleellisille ja muille kuin oleellisille nimikkeille).
-    - **Kuun 1. päivä** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden ensimmäiselle päivälle.
-    - **Jako keskellä kuukautta** – Ensimmäisen aikataulurivin päivämäärä määräytyy laskun päiväyksen mukaan. Jos lasku kirjataan kuun 1.–15. päivän välisenä aikana, tuottoaikataulu luodaan käyttämällä kuukauden ensimmäistä päivää. Jos lasku kuun 15. päivän jälkeen, tuottoaikataulu luodaan käyttämällä seuraavan kuukauden ensimmäistä päivää.
-    - **Seuraavan kuun 1. päivä** – Aikataulun päivämääränä on seuraavan kuukauden ensimmäinen päivä.
+    - **Kuun/kauden 1. päivä** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden tai tilikauden ensimmäiselle päivälle.
+    - **Jako keskellä kuukautta** – Ensimmäisen aikataulurivin päivämäärä määräytyy laskun päiväyksen mukaan. Jos lasku kirjataan kuun 1.–15. päivän välisenä aikana, tuottoaikataulu luodaan käyttämällä kuukauden ensimmäistä päivää. Jos lasku kirjataan kuun 15. päivän jälkeen, tuottoaikataulu luodaan käyttämällä seuraavan kuukauden ensimmäistä päivää.
 
-Valitse **Tuottoaikataulun tiedot** -painike tarkastellaksesi yleisiä kausia ja prosenttiosuuksia, jotka kirjataan kunkin kauden aikana. Oletusarvoisesti **Kirjausprosentti** -arvo jaetaan tasan kausimäärän kesken. Jos kirjausperusteen arvoksi on asetettu joko **Kuukausittain** tai **Esiintymät**, kirjausprosenttia voidaan muuttaa. Kun muutat kirjausprosenttia, saat varoitusviestin siitä, että kokonaismäärä ei ole 100 prosenttia. Jos saat viestin, voit jatkaa rivien muokkaamista. Kokonaismäärän on kuitenkin oltava 100 prosenttia ennen sivun sulkemista.
+        **Jako keskellä kuukautta** -kohtaa ei voi valita, jos kirjausperusteeksi on määritetty **Tilikausi päivien mukaan**.
 
-[![Tuottoaikataulun tiedot.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+    - **Seuraavan kuun/kauden 1. päivä** – Päivämäärä, jona aikataulu alkaa, on seuraavan kuukauden tai tilikauden ensimmäinen päivä.
+    - **Kuukauden/kauden loppu** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden tai tilikauden viimeiselle päivälle. 
+
+Valitse **Tuottoaikataulun tiedot** -painike tarkastellaksesi yleisiä kausia ja prosenttiosuuksia, jotka kirjataan kunkin kauden aikana. Oletusarvoisesti **Kirjausprosentti**-arvo jaetaan tasan kausimäärän kesken. Jos kirjausperusteen arvoksi on asetettu **Kuukausittain**, kirjausprosenttia voidaan muuttaa. Kun muutat kirjausprosenttia, saat varoitusviestin siitä, että kokonaismäärä ei ole 100 prosenttia. Jos saat viestin, voit jatkaa rivien muokkaamista. Kokonaismäärän on kuitenkin oltava 100 prosenttia ennen sivun sulkemista.
+
+[![Tuottoaikataulun tiedot.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## <a name="inventory-setup"></a>Varaston määritys
 

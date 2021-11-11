@@ -1,7 +1,7 @@
 ---
 title: Käyttöomaisuuden aloitussivu
-description: Käyttöomaisuus on arvonimike, joka ovat henkilön tai organisaation omistuksessa. Nimikkeisiin sisältyy rakennuksia, ajoneuvoja, maata ja varusteita.
-author: ShylaThompson
+description: Tässä aiheessa sellaisten resurssien käytöstä, jotka voivat auttaa käyttöomaisuuden käytössä Microsoft Dynamics 365 Financessa.
+author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,21 +14,21 @@ ms.custom:
 - intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c483073c924a9a881a3d2668d41614703046f718746f5f439accc3646f6f822
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753549"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674848"
 ---
 # <a name="fixed-assets-home-page"></a>Käyttöomaisuuden aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Käyttöomaisuus on arvonimike, joka ovat henkilön tai organisaation omistuksessa. Nimikkeisiin sisältyy rakennuksia, ajoneuvoja, maata ja varusteita. 
+Tässä aiheessa sellaisten resurssien käytöstä, jotka voivat auttaa käyttöomaisuuden käytössä Microsoft Dynamics 365 Financessa. Käyttöomaisuus viittaa henkilön tai organisaation omistuksessa oleviin arvonimikkeisiin. Nimikkeisiin sisältyy rakennuksia, ajoneuvoja, maata ja varusteita. 
 
 Voit määrittää ja syöttää käyttöomaisuuden hankintatiedot ja hallita omaisuutta tekemällä käyttöomaisuuden poistoja ja määrittämällä aktivointirajan poiston määrittämistä varten. Voit laskea käyttöomaisuuserille oikaisut ja myös poistaa niitä. Jos käytät kirjanpitoa käyttöomaisuuserien yhteydessä, voit tarkastella kaiken käyttöomaisuuden nykyistä arvoa. Käyttöomaisuuserien käsittelytavan on vastattava sekä kansainvälisiä kirjanpidon säännöksiä että kunkin maan tai alueen kirjanpitoon liittyvää lainsäädäntöä. Vaatimuksiin saattaa sisältyä sääntöjä, jotka koskevat käyttöomaisuuserien hankinta- ja poistotapahtumien kirjaamista, poistoja, elinkaarta, korotuksia ja alennuksia. Monet näistä standardeista ja säännöistä sisältyvät käyttöomaisuuserien toiminnallisuuteen.
 
