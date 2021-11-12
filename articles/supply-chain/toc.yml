@@ -74,12 +74,12 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (marraskuu 2021)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: Supply Chain Management 10.0.21 (lokakuu 2021)
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: Supply Chain Management 10.0.20 (elokuu 2021)
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Pääsuunnittelu ja ostokauppasopimukset
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Varmuusmarginaalit
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Viivetoleranssi (negatiiviset päivät)
@@ -1885,6 +1887,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Yleisen osoitekirjan määrittäminen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Osoitemääritys
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Osoitekirjat – usein kysytyt kysymykset
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Osoitekirjojen määrittäminen
@@ -2427,21 +2431,9 @@
                       href: production-control/release-production-orders.md
                     - name: Tuotantotilausten ilmoittaminen valmistuneiksi
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Tuotannon käyttöliittymän määrittäminen ja käyttäminen
-                      items:
-                        - name: Tuotannon käyttöliittymän määrittäminen
-                          href: production-control/production-floor-execution-configure.md
-                        - name: Tuotannon käyttöliittymän suunnitteleminen
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
-                          href: production-control/production-floor-execution-setup.md
-                        - name: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
-                          href: production-control/production-floor-execution-use.md
-                        - name: Tuotannon käyttöliittymän tyylin määrittäminen
-                          href: production-control/production-floor-execution-styles.md
-                    - name: Laitteiden työnkortin määrittäminen
+                    - name: Konfiguroi työkortti laitteita varten
                       href: production-control/config-job-card-device.md
-                    - name: Ilmoittaminen valmiiksi työkorttilaitteesta
+                    - name: Ilmoita valmiiksi työkorttilaitteesta
                       href: production-control/report-finished-job-device.md
                     - name: Tarjoa yhdistetyn todellisuuden oppaita tuotannon työntekijöiden käyttöön
                       href: production-control/instruction-guides-in-production-overview.md
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: Tuotannon kirjaus
                       href: cost-management/production-posting.md
+            - name: Tuotannon käyttöliittymän määrittäminen ja käyttäminen
+              items:
+                - name: Tuotannon käyttöliittymän määrittäminen
+                  href: production-control/production-floor-execution-configure.md
+                - name: Tuotannon käyttöliittymän suunnitteleminen
+                  href: production-control/production-floor-execution-tabs.md
+                - name: Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
+                  href: production-control/production-floor-execution-setup.md
+                - name: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
+                  href: production-control/production-floor-execution-use.md
+                - name: Tuotannon käyttöliittymän tyylin määrittäminen
+                  href: production-control/production-floor-execution-styles.md
         - name: Ostohyvitysten hallinta
           items:
             - name: Ostohyvitysten hallintamoduulin yleiskatsaus
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: Laitteen vaiheiden ylennettyjen kenttien määrittäminen
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Mobiililaitteen valikkokohteiden vaiheiden kiertämisen määrittäminen
+                      href: warehousing/warehouse-app-detours.md
                     - name: Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
@@ -3409,6 +3417,8 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: Yleiset mobiililaitteen parametrit
                   href: warehousing/mobile-device-parameters.md
+                - name: Mobiililaitteen käyttäjätilit
+                  href: warehousing/mobile-device-work-users.md
                 - name: Mobiililaitteen käyttäjäasetukset
                   href: warehousing/mobile-device-user-settings.md
                 - name: Varastosovelluksen tapahtumakäsittely
@@ -3737,6 +3747,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Varastonhallinta
               items:
+                - name: Warehouse Mobile App
+                  items:
+                    - name: 'Sertifiointipolun luottamusankkuria ei löydy, kun sovellusyhteys määritetään'
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: 'Sertifiointipolun luottamusankkuria ei löydy päivityksen ja WMS:ään siirtymisen aikana'
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: Eränumeron automaattinen varauskehote näkyy myös saatavissa olevan varaston yhteydessä
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Keräystyön estoa ei voi poistaa keskeneräisen täydennystyön vuoksi
@@ -3747,8 +3763,6 @@
                   href: troubleshooting/warehousing/cant-move-license-plate.md
                 - name: Varastoa ei voi siirtää rekisterikilpiohjattuun sijaintiin
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: 'Sertifiointipolun luottamusankkuria ei löydy, kun sovellusyhteys määritetään'
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
                 - name: Klusteriprofiilia ei löydy
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
                 - name: Toimitusilmoituksen korjausta ei voi käsitellä
@@ -3819,8 +3833,6 @@
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: Varaston varausta ei voi poistaa myyntitilausrivillä
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: 'Sertifiointipolun luottamusankkuria ei löydy päivityksen ja WMS:ään siirtymisen aikana'
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: 'Et voi vahvistaa lähetystä, koska asiakas on pidossa'
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: 'Et voi vahvistaa lähetystä, koska kuormitusrivien määrä on nolla'
