@@ -1,7 +1,7 @@
 ---
 title: Poistojen vaikutukset ja peruutukset
 description: Tässä artikkelissa kuvataan käyttöomaisuustapahtuman peruuttamisen mahdolliset vaikutukset.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37f0412166404e6903819840debcdd0ab0630115dcdb68297e0072723adacb53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a8e5b1b7d468dbc37b295087815937fb49ad44f
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760659"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674547"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Poistojen vaikutukset ja peruutukset
 
@@ -30,7 +30,7 @@ Tässä artikkelissa kuvataan käyttöomaisuustapahtuman peruuttamisen mahdollis
 
 Voit palauttaa käyttöomaisuustapahtumia sekä kyseiseen käyttöomaisuuserään liittyviä tapahtumia. Voit myös peruuttaa palautetun tapahtuman. 
 
-Voit peruuttaa tai palauttaa tapahtuman, joka ei ollut viimeisin omaisuuden kirjaan kirjattu tapahtuma. Määritä ensin, onko poistotapahtumia kirjattu peruutettavan tapahtuman jälkeen. Tämä johtuu siitä, että poistoa ei lasketa uudelleen, kun palautat tapahtuman. Niinpä poisto jää usein liian suureksi tai liian pieneksi peruutuksen jälkeen, kuten esimerkeissä osoitetaan. 
+Voit peruuttaa tai palauttaa tapahtuman, joka ei ollut viimeisin omaisuuden kirjaan kirjattu tapahtuma. Määritä ensin, onko poistotapahtumia kirjattu peruutettavan tapahtuman jälkeen. Tämä vaihe on tarpeen, koska poistoa ei lasketa uudelleen, kun palautat tapahtuman. Niinpä poisto jää usein liian suureksi tai liian pieneksi peruutuksen jälkeen, kuten esimerkeissä osoitetaan. 
 
 Voit varmistaa, että poiston määrä säilyy oikeana tapahtumaa palautettaessa, kun et jatka palautustoimintoa, jos näyttöön tulee sanoma, jonka mukaan poistoa ei lasketa uudelleen. Palauta sen sijaan ensin poistotapahtuma, joka on kirjattu palautettavan tapahtuman jälkeen, ja jatka sitten tapahtuman palautusta. Tällöin järjestelmä ei varoita poiston uudelleenlaskennasta ja voit jatkaa palautusta. 
 

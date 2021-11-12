@@ -1,8 +1,8 @@
 ---
 title: Toimittajan laskuautomaation määritysasetukset (esiversio)
 description: Tässä ohjeaiheessa käsitellään asetuksia, joilla toimittajan laskuautomaatio voidaan asentaa ja määrittää.
-author: abruer
-ms.date: 10/16/2020
+author: sunfzam
+ms.date: 10/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32f105ffcf41f5e39ec34ec6500040e28673086d25196a32690975ee0234ab43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8e5aac8f108cf9a46c80c61891b057b8dc2b4672
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724276"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675466"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>Toimittajan laskutusautomaation asetusvaihtoehdot
 
@@ -27,12 +27,18 @@ ms.locfileid: "6724276"
 
 Tässä ohjeaiheessa käsitellään asetuksia, joilla toimittajan laskuautomaatio voidaan asentaa ja määrittää. Laskuautomaatio-ominaisuus käyttää seuraavia määritysparametrityyppejä:
 
+- Parametrit ennakkomaksujen automaattiselle kohdistamiselle tuoduissa laskuissa.
 - Parametrit, joilla lähetetään tuodut toimittajan laskut työnkulkujärjestelmään ja täsmäytetään kirjatut tuotteen vastaanottorivit odottaviin toimittajan laskurivit.
 - Prosessin automatisoinnin taustatehtävien parametrit. Prosessin automatisointikehyksellä lähetetään tuodut toimittajan laskut työnkulkujärjestelmään. Sen avulla voidaan myös automaattisesti täsmäyttää kirjatut tuotteen vastaanottorivit odottaviin toimittajan laskuriveihin ja suorittaa laskujen täsmäytyksen tarkistus manuaalisia laskuja varten, jotka on täsmäytetty automaattisesti tuotteen vastaanottoriveille. Eri liiketoimintaprosessit käyttävät tätä kehystä määrittämään, kuinka usein valittu prosessi suoritetaan. **Täsmäytä tuotteen vastaanotto laskuriveihin**- ja **Lähetä toimittajan laskut työnkulkuun** -taustaprosesseissa on valittavana toistuvuusasetukseksi **Tunti** ja **Päivittäin**.
 
 Voit määrittää taustatehtävän tai määrittää sen tiedot valitsemalla **Järjestelmänvalvonta \> Asetukset \> Prosessin automatisoinnit** ja valitsemalla sitten **Taustatehtävä**-välilehden.
 
 Toimittajan laskutyönkulun määrittäminen on välttämätöntä, jotta automaatio tuontiprosessista toimittajan laskun kirjaamiseen tapahtuu ilman käyttäjän toimintoja. Määritä työnkulku valitsemalla **Ostoreskontra > Asetukset > Ostoreskontran työnkulut**. Laskun käsitteleminen alusta loppuun ilman manuaalisia toimia edellyttää, että automaattinen kirjaustehtävä sisältyy työnkulun määritykseen.
+
+## <a name="parameters-for-automatically-applying-prepayments-in-imported-invoices"></a>Parametrit ennakkomaksujen automaattiselle kohdistamiselle tuoduissa laskuissa
+
+- **Kohdista ennakkomaksua automaattisesti tuotuihin laskuihin** – Kun tämän asetuksen arvona on **Kyllä**, järjestelmä etsii automaattisesti olemassa olevia ennakkomaksuja vastaavaa ostotilausta varten, kun toimittajan laskuja tuodaan. Jos kohdistettavia ennakkomaksuja löytyy, lisätään ylimääräinen rivi ennakkomaksujen kohdistamiseksi tuotaviin toimittajan laskuihin.
+- **Estä seurannan automaattinen prosessi ennakkomaksun kohdistusvirheen sattuessa** – Kun tämän asetuksen arvona on **Kyllä**, laskut estetään, jos ennakkomaksua ei voi kohdistaa. Kuten muissa automaattisissa prosesseissa, kuten tositteiden täsmäytysprosessissa ja työnkulkuun lähettämisen prosessissa, automaattisessa laskutusprosessissa ei poimita estettyjä laskuja, ennen kuin ennakkomaksu on kohdistettu manuaalisesti. 
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Parametrit tuotujen toimittajan laskujen lähettämiseen työnkulkujärjestelmään
 

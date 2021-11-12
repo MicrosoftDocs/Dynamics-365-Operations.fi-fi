@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463831"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700376"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Sähköisen laskutuksen käytön aloittaminen
 
@@ -84,6 +84,7 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
 | Norjan sähköinen lasku (NO)    | <p>Myyntilaskun kontekstimalli</p><p>Laskumalli</p> |
 | Espanjan sähköinen lasku (ES)      | <p>Myyntilaskun kontekstimalli</p><p>Laskumalli</p> |
 | Sähköinen PEPPOL-lasku            | <p>Myyntilaskun kontekstimalli</p><p>Laskumalli</p> |
+| Saudi-Arabian sähköinen lasku (SA)| <p>Myyntilaskun kontekstimalli</p><p>Laskumalli</p> |
 
 
 ## <a name="configure-the-application-setup"></a>Määritä sovellusasetukset
@@ -111,7 +112,8 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
     | Alankomaiden sähköinen lasku (NL)        | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
     | Norjan sähköinen lasku (NO)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
     | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
-    | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektilasku</p> |
+    | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektin lasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektin lasku</p> |
+    | Saudi-Arabian sähköinen lasku (SA)| <p>Myyntilasku</p><p>Projektin lasku</p> | <p>Myyntilaskukirjauskansio</p><p>Projektin lasku</p> |
 
 6. Valitse ja määritä kontekstiarvo seuraavan taulukon mukaisesti kuellekin luodulle taulukon nimelle.
 
@@ -133,6 +135,7 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
     | Norjan sähköinen lasku (NO)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
     | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
     | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
+    | Saudi-Arabian sähköinen lasku (SA)| <p>Myyntilasku</p><p>Projektin lasku</p> | <p>Myyntilaskun kontekstimalli – myyntilaskun konteksti</p><p>Myyntilaskun kontekstimalli – projektilaskun konteksti</p> |
 
 7. Valitse ja määritä jokaiselle taulukon nimelle ja kontekstille liiketoimintatiedoston määrityksen arvo seuraavan taulukon mukaisesti.
 
@@ -154,6 +157,7 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
     | Norjan sähköinen lasku (NO)    | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
     | Espanjan sähköinen lasku (ES)      | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
     | Sähköinen PEPPOL-lasku            | <p>Myyntilasku</p><p>Projektilasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
+    | Saudi-Arabian sähköinen lasku (SA)| <p>Myyntilasku</p><p>Projektin lasku</p> | <p>Laskumallin määritys – Myyntilasku</p><p>Laskumallin määritys – projektilasku</p> |
 
 
 ## <a name="country-specific-configuration-of-application-setup"></a>Sovellusasetusten maa-/aluekohtainen konfigurointi
@@ -207,6 +211,8 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
     | Norjan sähköinen lasku (NO)                     | Norja          |
     | Sähköinen PEPPOL-lasku                             | Yleinen          |
     | Espanjan sähköinen lasku (ES)                       | Espanja           |
+    | Saudi-Arabian sähköinen lasku (SA)                 | Saudi-Arabia    |
+    
 
 4. Valitse **Tallenna**.
 
@@ -244,6 +250,7 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
 - [Meksikon sähköisen laskutuksen käytön aloittaminen](e-invoicing-mex-get-started.md)
 - [Italian sähköisen laskutuksen käytön aloittaminen](e-invoicing-ita-get-started.md)
 - [Asiakkaiden sähköiset laskut Egyptissä](emea-egy-e-invoices.md)
+- [Asiakkaiden sähköiset laskut Saudi-Arabiassa](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Dynamics 365 Supply Chain Managementin version 10.0.21 uudet tai muuttuneet ominaisuudet (lokakuu 2021)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.21 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-ms.date: 08/09/2021
+ms.date: 10/28/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579733"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715251"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.21 uudet tai muuttuneet ominaisuudet (lokakuu 2021)
 
@@ -38,7 +38,7 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 | Varasto&nbsp;ja&nbsp;logistiikka | [Yleinen varastokirjanpitoapuohjelma Dynamics 365 Supply Chain Managementille](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Yleisen varastokirjanpidon aloitussivu](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Kirjaa käyttökelpoisia oikaisuja käyttäen vastatileihin liitettyjä syykoodeja](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Varastoinventoinnin syykoodit](../warehousing/reason-codes-for-counting-journals.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Myyntitarjouksen viitattujen tietojen vientikäytäntö](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Valitse, aiheuttaako lainausten viittaamien tietojen muutokset kyseiset lainaukset (tai rivit) sisällytettäviksi seuraavaan lisävientitoimintaan. Lisäviennit suoritetaan nopeammin, jos tällaisia tarjouksia tai rivejä ei sisällytetä.<br><br>Tämä ominaisuus lisää asetuksen, jota kutsutaan **Ohita myyntitarjoukseen viitatut tiedot, kun muutoksia seurataan** **Myyntireskontra-parametrit** -sivulla. |
-| Varasto&nbsp;ja&nbsp;logistiikka | Salattu tarjous <!-- KFM: Add RP link when available --> | [Sinetöidyt tarjoukset tarjouspyyntöihin](../procurement/sealed-bidding.md) |
+| Varasto&nbsp;ja&nbsp;logistiikka | [Salattu tarjous](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Sinetöidyt tarjoukset tarjouspyyntöihin](../procurement/sealed-bidding.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Skannaa varaston viivakoodit GS1-muotostandardien avulla](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-viivakoodit ja QR-koodit](../warehousing/gs1-barcodes.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Varaston näkyvyyden apuohjelman alustava varaus](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Varaston näkyvyyden varaukset](../inventory/inventory-visibility-reservations.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Ostohyvityksen hallinnan vähennyksen ja todellisen painon parannukset](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Hallitse vähennyksiä käyttämällä vähennyksen työtilaa](../rebate-management/deduction-workbench.md )<br><br>[Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen](../rebate-management/process-review-post.md)<br><br>[Ostohyvitysten hallintasopimukset](../rebate-management/rebate-management-deals.md) |
@@ -50,7 +50,7 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 
 Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukset. Jokainen näistä parantaa aiemmin luotua toimintoa lisäysten avulla. Koska ne ovat vain parannuksia, niitä ei ole lueteltu [vapautussuunnitelmassa](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). Jos kuitenkin haluat varmistaa, että nämä parannukset eivät ole ristiriidassa aiemmin luotujen mukautuksiesi tai asetuksesi kanssa, kaikki muutokset ovat oletusarvon mukaan pois käytöstä (ellei toisin ilmoiteta). Jos haluat käyttää mitä tahansa näistä ominaisuuksista, ne on nimenomaisesti otettava käyttöön [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Ominaisuusalue | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
+| Moduuli | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
 | Kustannushintojen hallinta | Varaston sulkemisen edistymistiedot | Tämä esiversiotoiminto ottaa varaston sulkemisen edistymisen yksityiskohtaisen näkymän käyttöön. |
 | Hankinta | Estä yleisten budjettivarausten ylikulutus, kun työnkulussa on useita ostoehdotuksia | Tämä esiversiotoiminto parantaa virheentarkistusta, kun käyttäjät lähettävät ja hyväksyvät ostoehdotuksia, jotka ylittävät yleisen budjetin varausrivin jäljellä olevan saldon. Tämä auttaa estämään yleisten budjettivarausten ylityönkulun, kun työnkulussa on useita ostoehdotuksia. |
@@ -59,6 +59,64 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukse
 | Varastonhallinta   | Erota hyllytys lähetysilmoituksista (ASN) | Tätä toimintoa tarvitaan lähetettäessä ja vastaanottaessa ennakkoilmoitusta, kun varastonhallinnan kuormitusta suoritetaan skaalausyksikössä (osana jaettua hybriditopologiaa). Siihen lisätään uusi tietokantataulu, johon tallennetaan poispanotyön tiedot. Aiemmin nämä tiedot on tallennettu tauluihin, joita käytettiin myös ASN-tietoina. |
 | Varastonhallinta   | Paikoita yhdistetyt yksiköt | Sallii järjestelmän käyttää nimikkeitä eri yksikköjen (kuten laatikoiden että koteloiden) sijainnissa. Tämän ominaisuuden avulla voit valita jokaisen korttipaikkamallin rivin eri yksikköjen tai yhden yksikön sijainnit. |
 | Varastonhallinta   | Käytä nopeampaa ohjelmointirajapintaa konttien sulkemiseen/uudelleenavaamiseen pakkausasemalla | Kun tämä esiversiotoiminto on käytössä, konttiin liittyvät varastotapahtumat luodaan käyttämällä uutta valopainoprosessia, joka parantaa konttien sulkemista tai avaamista uudelleen manuaalisen pakkausluettelon käsittelyn aikana. |
+
+## <a name="features-turned-on-by-default-in-this-release"></a>Tässä julkaisussa oletusarvoisesti käytössä olevat ominaisuudet
+
+Seuraavassa taulukossa luetellaan ominaisuudet, jotka ovat oletusarvoisesti käytössä versiossa 10.0.21. Useimmat automaattisesti käyttöön otetut ominaisuudet voi ottaa käyttöön [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Toiminnon nimi | Ota käyttöön päivämäärä | Toiminnon lisäysajankohta | Ominaisuuden tila | Moduuli |
+| :--- | :--- | :--- | :--- | :--- |
+| Käytettävissä olevan varaston raporttitallennus | 1.9.2021 | 1.4.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Siirtotilauksen peruutus | 1.9.2021 | 13.7.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Avaa varastokirjauskansion lukitus | 1.9.2021 | 17.8.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Inventoinnin- ja varastonhallinnan tallennetut näkymät | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Siirtyminen tuoterakenneriveiltä tuoterakenneversioon. | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Käytetään mittayksikköä ja yksikkömäärää varastokirjauskansioissa. | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Salli tyhjät erämääritteiden arvot | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Varaston siirtotilausrivien automaattinen rivinumeroiden lisäys. | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Varaston kirjauskansion hyväksynnän työnkulku | 1.9.2021 | 6.1.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Ota käyttöön varaston laadunhallinnan parametrien varoitusominaisuus | 1.9.2021 | 7.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Luo siirtotilaus myyntiriviltä | 1.9.2021 | 31.8.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Ennustemallinvalinta kysynnän ennusteen tiedoissa | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Pääsuunnittelu |
+| Pääsuunnittelun edistymisen visualisointi | 1.9.2021 | 7.10.2019 | Käytössä oletusarvoisesti | Pääsuunnittelu |
+| Suunnittelun optimoinnin automaattinen vahvistus | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Pääsuunnittelu |
+| Suunniteltujen tilausten rinnakkainen vahvistaminen | 1.9.2021 | 31.8.2019 | Käytössä oletusarvoisesti | Pääsuunnittelu |
+| Tarjouksen lähettämisen onnistumissanoma | 1.9.2021 | 15.5.2019 | Käytössä oletusarvoisesti | Hankinta |
+| Tarjouspyynnön viitelinkki lisätty ostotilaukseen | 1.9.2021 | 31.8.2019 | Käytössä oletusarvoisesti | Hankinta |
+| Mahdollisuus vahvistaa hyväksytyt ostotilaukset toimittajayhteistyöstä erässä | 1.9.2021 | 10.9.2019 | Käytössä oletusarvoisesti | Hankinta |
+| Ostojen cXML-parannukset | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Hankinta |
+| Näytä &quot;Avaa julkaistut tarjouspyynnöt&quot; -linkki ruutuna | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Hankinta |
+| Tarjouspyyntöjen kysymykset ja vastaukset | 1.9.2021 | 19.2.2020 | Käytössä oletusarvoisesti | Hankinta |
+| Vaarallisten materiaalien tuotetiedot ja lähetysasiakirjat | 1.9.2021 | 14.6.2020 | Käytössä oletusarvoisesti | Tuotetietojen hallinta |
+| Oletustilausmäärien tarkka vahvistus | 1.9.2021 | 24.6.2020 | Käytössä oletusarvoisesti | Tuotetietojen hallinta |
+| Alkuperämaan/-alueen hallinnan ominaisuus | 1.9.2021 | 13.7.2020 | Käytössä oletusarvoisesti | Tuotetietojen hallinta |
+| Julkaistujen tuotteiden tallennetut näkymät | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Tuotetietojen hallinta |
+| Töiden hyväksynnän ja siirron valintaikkunoiden parannukset | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen | 1.9.2021 | 31.8.2019 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Työkorttipääte-sivulle on lisätty uusi Lopeta tauko -painike. | 1.9.2021 | 19.2.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Ota käyttöön alihankintana hankittujen nimikkeiden osittainen vastaanotto ja korjaa Toimittaja-tyypin tuoterakennerivien hävikkilaskennan ongelma. | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Tuotannonohjauksen tallennetut näkymät | 1.9.2021 | 17.8.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Dynamics 365 Guides valmistukselle | 1.9.2021 | 13.7.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Tuotannon suoritus | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Toiminto, jolla voi lukita työkorttilaitteen ja työkorttipäätteen desinfiointia varten. | 1.9.2021 | 10.5.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Myyntitilauksen kulujen kohdistus | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Myynti ja markkinointi |
+| Rajoita kirjausta varten valittavien myyntitilausten määrää | 1.9.2021 | 1.9.2021 | Käytössä oletusarvoisesti | Myynti ja markkinointi |
+| Tyhjennä myyntitilauksen päivityshistoria | 1.9.2021 | 1.9.2021 | Käytössä oletusarvoisesti | Myynti ja markkinointi |
+| Muuta inventointityön numerosarjaa | 1.9.2021 | 7.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Tehtävään perustuvan aallon kysynnän täydennys | 1.9.2021 | 7.10.2019 | Pakollinen | Varastonhallinta   |
+| Piilota Kokonaisarvo-kenttä &quot;Kaikki kuormat&quot;- ja &quot;Kuorman tiedot&quot; -sivuilla | 1.9.2021 | 7.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Aallon etiketin tulostus | 1.9.2021 | 19.2.2020 | Pakollinen | Varastonhallinta   |
+| Liitä ostotilauksen varastotapahtumat kuorman kanssa | 1.9.2021 | 6.1.2020 | Pakollinen | Varastonhallinta   |
+| Laajennetut rekisterikilpien etikettien asettelut | 1.9.2021 | 19.2.2020 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Organisaation laajuinen työn esto | 1.9.2021 | 19.2.2020 | Pakollinen | Varastonhallinta   |
+| Työrivin tiedot | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Tee mobiililaitteen varastosiirron varaston tilan kentästä muokattava | 1.9.2021 | 16.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Vahvista lähtevät lähetykset erätöistä | 1.9.2021 | 13.7.2020 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Määritä, näytetäänkö vastaanoton yhteenvetosivu mobiililaitteissa | 1.9.2021 | 1.4.2020 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Moniselitteisten &#39;sijainnin ja rekisterikilven&#39; nimien ratkaisukehote | 1.9.2021 | 1.4.2020 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Tallenna tuotevariantit ja seurantadimensiot varastointisovelluksessa kuormanimikkeen vastaanoton aikana | 1.9.2021 | 10.5.2020 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Älä salli sellaisten kuormien luomista, jotka eivät täytä aallon kuormanrakennusmallin vaatimuksia. | 1.9.2021 | 17.8.2020 | Käytössä oletusarvoisesti | Varastonhallinta   |
+| Arvioi kaikki useiden varastointiyksiköiden sijaintidirektiivien toiminnot | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Varastonhallinta   |
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 

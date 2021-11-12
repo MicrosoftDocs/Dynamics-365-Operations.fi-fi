@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0b39c3eee84a66082f1785f7f4d8a6d7dd96b63d
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7638467"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647212"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.19 uudet tai muuttuneet ominaisuudet (kesäkuu 2021)
 
@@ -48,7 +48,7 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 
 Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukset. Jokainen näistä parantaa aiemmin luotua toimintoa lisäysten avulla. Koska ne ovat vain parannuksia, niitä ei ole lueteltu [vapautussuunnitelmassa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Jos kuitenkin haluat varmistaa, että nämä parannukset eivät ole ristiriidassa aiemmin luotujen mukautuksiesi tai asetuksesi kanssa, kaikki muutokset ovat oletusarvon mukaan pois käytöstä (ellei toisin ilmoiteta). Jos haluat käyttää mitä tahansa näistä ominaisuuksista, ne on nimenomaisesti otettava käyttöön [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Ominaisuusalue | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
+| Moduuli | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
 | Myynti ja markkinointi | Myyntihistorian poistamisen suorituskyvyn parannukset | Myyntihistorian poistaminen voi kestää kauan, jos sitä ei suoriteta säännöllisesti ympäristöissä, joissa myyntipäivityksiä on paljon. Voit vähentää kestoa ja parantaa luotettavuutta ja jakaa sitten puhdistuserät, jotka suoritetaan rajoitetun keston ajan. Jos mahdollista, tietokantaominaisuudet suorituskykykertoimella voidaan vähentää lukitusta ja välttää tapahtumatauluihin liittyminen puhdistusta varten. Lisätietoja on kohdassa [Myyntihistorian tyhjennyksen suorituskyvyn parannukset](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Myynti ja markkinointi | Päivitä pyydetty vastaanottopäivämäärä vahvistetulla päivämäärällä konsernin sisäisille tilauksille | Tämän ominaisuuden avulla voit ohjata, mitä tapahtuu myynti- ja ostopäivämäärän kenttien arvoille käytettäessä konsernin sisäistä suoraa toimitusta. Voit valita, päivittääkö järjestelmä pyydetyt päivämäärät vai jättääkö se ne päivittämättä. Jos ohitat päivityksen, pyydetyt päivämäärät edustavat sitä, mitä asiakas on pyytänyt. Jos otat päivityksen käyttöön, pyydetyt päivämäärät (kun käytetään toimituspäivämäärän hallintaa) edustavat vain aluksi sitä, mitä asiakas pyysi. Jos toimituspäivän ohjaus eroaa *Ei mitään* -päivästä, se ohita alun perin pyydetyn päivämäärän. Voit asettaa tämän vaihtoehdon käyttämällä **uutta päivityspyynnön vastaanottopäivää ja Vahvistettu päivämäärä** -asetusta yrityksen sisäisissä toimittajissa tai asiakasasetuksissa.<br><br>Jos toiminto ei ole käytössä, järjestelmä korvaa alkuperäisen myyntitilauksen pyydetyn vastaanottopäivämäärän toimituspäivän valvontasäännön perusteella, mutta pyydetty lähetyspäivämäärä säilyy ennallaan. |

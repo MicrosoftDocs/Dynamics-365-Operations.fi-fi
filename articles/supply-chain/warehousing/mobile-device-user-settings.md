@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769416"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647482"
 ---
 # <a name="mobile-device-user-settings"></a>Mobiililaitteen käyttäjäasetukset
 
@@ -54,7 +54,7 @@ Voit myös määrittää asetusprofiilin, jota sovelletaan kaikkiin laitemerkkei
 
 Noudattamalla näitä ohjeita voit luoda ja hallita mobiililaitteen käyttäjäasetuksia.
 
-1. Valitse **Varastonhallinta \> Mobiililaite \> Mobiililaitteen käyttäjäasetukset**.
+1. Siirry kohtaan **Varastonhallinta \> Määritys \> Mobiililaite \> Mobiililaitteen käyttäjäasetukset**.
 1. Avaa olemassa olevan käyttäjäasetusprofiilin tietue valitsemalla se luetteloruudusta. Vaihtoehtoisesti voit luoda uuden profiilin valitsemalla toimintoruudusta **Uusi**.
 
     Kunkin luetteloruudun profiiliin on merkitty merkki, malli ja/tai käyttäjätunnus, johon profiilia sovelletaan. Yleisemmillä profiileilla joidenkin tai kaikkien näiden ominaisuuksien arvona on *Kaikki*.
@@ -83,7 +83,7 @@ Noudattamalla näitä ohjeita voit luoda ja hallita mobiililaitteen käyttäjäa
 
 Noudattamalla näitä ohjeita voit luoda ja hallita mobiililaitteiden merkkejä ja malleja.
 
-1. Valitse **Varastonhallinta \> Mobiililaite \> Mobiililaitteen merkit**.
+1. Valitse **Varastonhallinta \> Asetukset \> Mobiililaite \> Mobiililaitebrändit**.
 1. Voit avata mobiililaitteen merkin tietueen valitsemalla sen luetteloruudusta. Vaihtoehtoisesti voit luoda uuden merkin valitsemalla toimintoruudusta **Uusi**.
 1. Määritä uuden tai valitun laitemerkin tietueen otsikossa seuraavat kentät:
 

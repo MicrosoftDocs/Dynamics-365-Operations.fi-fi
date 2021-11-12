@@ -2,7 +2,7 @@
 title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612361"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675366"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -68,6 +68,9 @@ Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot mä�
 | Excel                  | Excel                                      | \-–                     |
 | XML                    | \-–                                      | XML-elementin XML-määrite |
 | Erotin, kiinteä leveys | Pilkku, puolipiste, sarkain, pystyviiva, kaksoispiste | \-–                     |
+
+> [!NOTE]
+> On tärkeää valita oikea arvo asetuksille **Rivin erotin**, **Sarakkeen erotin** ja **Tekstimäärite**, jos **Tiedostomuoto**-asetuksen arvona on **Erotettu**. Varmista, että tiedot eivät sisällä erottimena tai määritteenä käytettyä merkkiä, koska tämä voi johtaa virheisiin tuonnissa ja viennissä.
 
 ### <a name="sequence-the-entities"></a>Aseta yksiköt sarjaan
 Yksiköt voi järjestää tietomallissa tai tuonti- ja vientitöissä. Kun suoritat työn, joka sisältää useamman tietoyksikön, varmista, että yksiköt on järjestetty oikein. Yksiköt järjestetään ensisijaisesti siten, että voit käsitellä kaikki yksiköiden väliset toiminnalliset riippuvuudet. Jos yksiköillä ei ole toiminnallisia riippuvuuksia, ne voidaan ajoittaa tuotavaksi tai vietäväksi rinnakkain.

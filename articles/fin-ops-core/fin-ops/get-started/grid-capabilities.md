@@ -2,7 +2,7 @@
 title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uusi ruudukkotoiminto on otettava käyttöön näiden ominaisuuksien käyttämistä varten.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483851"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700134"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Uusi ruudukon ohjausobjekti sisältää useita hyödyllisiä ja tehokkaita ominaisuuksia, joilla voidaan parantaa käyttäjien tuottavuutta, kehittää mielenkiintoisempia näkymiä tiedoillesi ja hankkia merkityksellisiä tietoja datastasi. Tämä artikkeli käsittelee seuraavia ominaisuuksia: 
@@ -32,6 +33,8 @@ Uusi ruudukon ohjausobjekti sisältää useita hyödyllisiä ja tehokkaita omina
 -  Matemaattisten lausekkeiden arviointi 
 -  Taulukkomuotoisten tietojen ryhmittely (käytössä erikseen **Ryhmittely ruudukoissa** -toiminnossa)
 -  Sarakkeiden kiinnittäminen
+-  Sarakeleveyden automaattinen sovittaminen
+-  Venytettävät sarakkeet
 
 ## <a name="calculating-totals"></a>Lasketaan kokonaissummia
 Finance and Operations -sovelluksissa käyttäjät voivat tarkastella summia ruudukkojen numeeristen sarakkeiden alla. Nämä kokonaissummat näkyvät alatunnisteosassa ruudukon alareunassa. 
@@ -43,7 +46,7 @@ Finance and Operations -sovellusten jokaisen taulukkomuotoisen ruudukon alaosass
 - Kokonaismäärät määritettyjen numeeristen sarakkeiden alla
 - Tietojoukon rivimäärä 
 
-Tämä alatunniste on oletusarvoisesti piilotettuna, sen voi ottaa käyttöön. Jos haluat ruudukon alatunnisteen näkyviin, napsauta ruudukon sarakeotsikkoa hiiren kakkospainikkeella ja valitse **Näytä alatunniste** -asetus. Kun alatunniste otetaan käyttöön tietyssä ruudukossa, kyseinen asetus muistetaan, kunnes käyttäjä valitsee alatunnisteen piilottamisen. Alatunniste piilotetaan napsauttamalla sarakeotsikkoa kakkospainikkeella ja valitsemalla **Piilota alatunniste**.  (**Näytä alatunniste tai piilota alatunniste** -toiminnon sijainti saatetaan muuttaa uuteen sijaintiin tulevassa päivityksessä. 
+Tämä alatunniste on oletusarvoisesti piilotettuna, sen voi ottaa käyttöön. Jos haluat ruudukon alatunnisteen näkyviin, valitse **Ruudukon asetukset** ruudukon otsikosta ja valitse sitten **Näytä alatunniste** -asteus. Kun alatunniste otetaan käyttöön tietyssä ruudukossa, kyseinen asetus muistetaan, kunnes käyttäjä valitsee alatunnisteen piilottamisen. Voit piilottaa alatunnisteen valitsemalla **Ruudukon asetukset** -valikosta **Piilota alatunniste**.  
 
 ### <a name="specifying-columns-with-totals"></a>Summia sisältävien sarakkeiden määritys
 Yksikään sarake ei näytä kokonaissummia tällä hetkellä oletusarvoisesti. Sen sijaan tämä katsotaan yksivaiheiseksi määritystoiminnoksi, joka muistuttaa sarakkeiden leveyden muuttamista ruudukoissa. Kun määrität, että haluat nähdä sarakkeen summat, tämä asetus muistetaan, kun seuraavan kerran käyt sivulla.  
@@ -82,7 +85,7 @@ Tämän uuden toiminnon tukemiseksi rivitilan sarakkeen oikealle puolelle on lis
 Kun käyttäjät syöttävät tietoja ennen palvelimen käsittelemisen paikkaa, he voivat odottaa, että tietojen syöttämisessä ilmenee joitakin heikentymistä, kuten hakujen puuttumista, ohjaustason tarkistamista ja oletusarvojen syöttämistä. Käyttäjiä, jotka tarvitsevat avattavan luettelon löytääkseen arvon, kehotetaan odottamaan, että palvelin on kiinni nykyiselle riville. Ohjaustason oikeellisuustarkistus ja oletusarvojen määritys tapahtuvat myös, kun palvelin käsittelee rivin.   
 
 ### <a name="pasting-from-excel"></a>Liittäminen Excelistä
-Käyttäjät ovat aina voineet viedä tietoja Finance and Operations -sovellusten ruuduista Exceliin käyttämällä **Vie Exceliin** -mekanismia. Mahdollisuus syöttää tietoja ennen järjestelmää mahdollistaa kuitenkin sen, että uusi ruudukko tukee taulujen kopioimista Excelistä ja liittämistä suoraan Finance and Operations -sovellusten ruudukkoihin. Ruudukon solu, josta liittämistoiminto käynnistetään, määrittää, mihin kopioitu taulukko alkaa liittää. Kopioidun taulun sisältö korvaa ruudukon sisällön lukuun ottamatta kahta tapausta:
+Käyttäjät ovat aina voineet viedä tietoja Finance and Operations -sovellusten ruuduista Microsoft Exceliin käyttämällä **Vie Exceliin** -mekanismia. Mahdollisuus syöttää tietoja ennen järjestelmää mahdollistaa kuitenkin sen, että uusi ruudukko tukee taulujen kopioimista Excelistä ja liittämistä suoraan Finance and Operations -sovellusten ruudukkoihin. Ruudukon solu, josta liittämistoiminto käynnistetään, määrittää, mihin kopioitu taulukko alkaa liittää. Kopioidun taulun sisältö korvaa ruudukon sisällön lukuun ottamatta kahta tapausta:
 
 - Jos kopioidun taulukon sarakkeiden määrä ylittää ruudukon jäljellä olevien sarakkeiden määrän, alkaen liittämissijainnista, käyttäjälle ilmoitetaan, että ylimääräiset sarakkeet on ohitettu. 
 - Jos kopioidun taulukon rivien määrä ylittää ruudukon rivien määrän alkaen liittämissijainnista, aiemmin luodut solut korvataan liitetystä sisällöstä ja kopioidun taulukon ylimääräiset rivit lisätään uusina riveinä ruudukon alaosaan. 
@@ -125,6 +128,9 @@ Sarake kiinnitetään napsauttamalla sarakkeen otsikkoa kakkospainikkeella ja va
 Sarakkeen kiinnitys poistetaan napsauttamalla lukitun sarakkeen otsikkoa kakkospainikkeella ja valitsemalla sitten **Poista sarakkeen kiinnitys**. 
 
 Huomaa, että uuden ruudukon rivivalinta ja rivin tilasarakkeet on aina kiinnitetty kahtena ensimmäisenä sarakkeena. Tämä tarkoittaa, että nämä sarakkeet ovat aina näkyvissä käyttäjille, kun ne lisätään ruudukkoon, riippumatta vaakasuuntaisesta vierityssijainnista ruudukossa. Näiden kahden sarakkeen järjestystä ei voi muuttaa.
+
+## <a name="autofit-column-width"></a>Sarakeleveyden automaattinen sovittaminen
+Kuten Excelissä käyttäjät voivat automaattisesti pakottaa sarakkeen koon muuttamisen sen sisällön perusteella, joka sarakkeessa näkyy. Voit tehdä tämän kaksoisnapsauttamalla sarakkeen koonmuuttokahvoja tai kohdistamalla sarakkeen otsikkoon ja painamalla **A** (automaattinen sovittaminen). Tämä ominaisuus on käytettävissä versiosta 10.0.23 alkaen.  
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Miten otan uuden ruudukonhallinnan käyttöön omassa ympäristössäni? 

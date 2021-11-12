@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: db1d9d2cddfab5ca5abb50cc3ecb9c841e06b8b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580981"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647311"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.20. (elokuu 2021)
 
@@ -46,7 +46,7 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 
 Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukset. Jokainen näistä parantaa aiemmin luotua toimintoa lisäysten avulla. Koska ne ovat vain parannuksia, niitä ei ole lueteltu [vapautussuunnitelmassa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Jos kuitenkin haluat varmistaa, että nämä parannukset eivät ole ristiriidassa aiemmin luotujen mukautuksiesi tai asetuksesi kanssa, kaikki muutokset ovat oletusarvon mukaan pois käytöstä (ellei toisin ilmoiteta). Jos haluat käyttää mitä tahansa näistä ominaisuuksista, ne on nimenomaisesti otettava käyttöön [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Ominaisuusalue | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
+| Moduuli | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
 | Pääsuunnittelu | Oikaistun kysynnän ennusteen rinnakkainen valtuuttaminen | Tämä ominaisuus sallii oikaistun tarve-ennusteen rinnakkaisen valtuuttamisen **oikaistun kysynnän ennuste** -sivulta. Tämän ominaisuuden tarkoituksena on parantaa suorituskykyä, kun suuri määrä ennusteita on valtuutettu. Valtuutettaessa käyttäjä voi määrittää **säikeiden määrän** valtuuttamisen valintaikkunassa. |
 | Pääsuunnittelu | (Esiversio) Suunniteltujen bulkki- ja pakkauserätilausten eräkelpoinen vahvistaminen ja konsolidointi | Tämän ominaisuuden avulla voit käyttää erätöitä bulkki- ja pakkaustilausten vahvistamiseen ja konsolidointiin. |

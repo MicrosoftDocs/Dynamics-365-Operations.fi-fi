@@ -1,7 +1,7 @@
 ---
-title: Alv-koodien koko summa- ja väli-laskentavaihtoehdot
-description: Tässä artikkelissa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
-author: ShylaThompson
+title: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
+description: Tässä aiheessa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb3d622f8a81c0eabc84fb165203aa193f5e7dd6ad148ff50a9f55c87453be9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731473"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726820"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alv-koodien koko summa- ja väli-laskentavaihtoehdot
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
+Tässä aiheessa kuvataan arvonlisäverokoodien **Laskentatapa**-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
 
-Voit määrittää, että alv-koodi lasketaan koko summan tai välisumman perusteella. Valitse Arvonlisäverokoodit-sivulla alv-koodin laskentatapa Laskenta-pikavälilehden Laskentatapa-kentässä.
+Voit määrittää, että alv-koodi lasketaan koko summan tai välisumman perusteella. Valitse **Arvonlisäverokoodit**-sivulla alv-koodin laskentatapa **Laskenta**-pikavälilehden **Laskentatapa**-kentässä.
 - Koko summa – veroprosentti kohdistetaan koko verotettavaan summaan.
 - Väli – Verotettava summa on jaettu osiin, joista jokainen kuuluu tietyn alv-prosentin alueeseen. Määritetylle välille osuvan summan vero lasketaan kyseistä väliä koskevan prosentin mukaan. Arvonlisävero on kullekin summavälille laskettavien verosummien yhteissumma.
   > [!NOTE]                                                                                                                              

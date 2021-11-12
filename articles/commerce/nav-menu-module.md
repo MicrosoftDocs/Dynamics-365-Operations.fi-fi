@@ -2,7 +2,7 @@
 title: Siirtymisvalikkomoduuli
 description: Tässä ohjeaiheessa on tietoja siirtymisvalikkomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 486f20c26f97c236dfde2cbaedd8df434fe762947a6caa1c7cc03e4d244f4d47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5379aa4496c1c448d147bb260689ebe38aaf903f
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761583"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713849"
 ---
 # <a name="navigation-menu-module"></a>Siirtymisvalikkomoduulit
 
@@ -41,8 +41,8 @@ Seuraavassa kuvassa on esimerkki Fabrikam-sivuston siirtymisvalikosta, jossa on 
 |---------------------------|-----------------------|-------------|
 | Lähde                  | **Vähittäismyynti**, **Manuaalinen luominen**, **Vähittäismyynti ja manuaalinen luominen** | **Vähittäismyynti**-arvon ansiosta Commerce Headquarters -sovelluksen kanavan siirtymishierarkia voidaan näyttää siirtymisvalikossa. **Manuaalisen luominen** -arvo sallii staattisten valikon vaihtoehtojen kuratoinnin. **Vähittäismyynti ja manuaalinen luominen** -arvo sallii näiden yhdistämisen. |
 | Näytä luokan kuvat | **Tosi** vai **Epätosi**    | Kun tämä ominaisuus on käytössä, tämä ominaisuus näyttää siirtymisvalikon luokan kuvat Commerce Headquarters -sovelluksessa määritetyllä tavalla. Lisätty Commercen versioon 10.0.14. |
-| Näytä kampanjat | **Tosi** vai **Epätosi** | Kun tämä ominaisuus on käytössä, kampanjat voidaan konfiguroida kuvien, linkkien ja tekstin avulla. Tämä ominaisuus on lisätty Commerce-version 10.0.17 julkaisuun. |
-| Kampanjoiden lisääminen | Teksti, kuva tai linkki | Kun **Näytä kampanja**-ominaisuus on käytössä, voit lisätä siirtymisvalikkoon tekstiä, kuvia tai linkkejä kampanjasisällöksi. |
+| Näytä mainoskuvat | **Tosi** vai **Epätosi** | Kun tämä ominaisuus on käytössä, kampanjat voidaan konfiguroida kuvien, linkkien ja tekstin avulla. Tämä ominaisuus on lisätty Commerce-version 10.0.17 julkaisuun. |
+|Lisää luokan markkinointisisältö | Teksti, kuva tai linkki | Kun **Näytä markkinointikuvat**-ominaisuus on käytössä, voit lisätä siirtymisvalikkoon tekstiä, kuvia tai linkkejä kampanjasisällöksi. |
 | Ota monitasoinen siirtymisvalikko käyttöön | **Tosi** vai **Epätosi** | Jos tämä ominaisuus on otettu käyttöön, siirtymisvalikossa näkyy monta siirtymishierarkian tasoa. Tämä ominaisuus on käytettävissä Commerce-version 10.0.15 julkaisussa. |
 | Tasojen määrä | kokonaisluku | Tämä ominaisuus määrittää, kuinka monta tasoa voidaan näyttää, jos **Ota monitasoinen siirtymisvalikko käyttöön** -ominaisuuden arvoksi on määritetty **Tosi**. |
 | Staattinen valikon vaihtoehto| Arvomatriisi| Staattisia valikon vaihtoehtoha, jotka liittävät valikon vaihtoehdon nimen ja linkin staattisen sivuston sivuun. Voit luoda valikon vaihtoehtoja muiden valikon vaihtoehtojen alle. Oletusarvoisesti staattinen valikko näkyy juuri tasolla. Se liitetään kanavan siirtymishierarkiaan, jos se on olemassa. |

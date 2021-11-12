@@ -1,8 +1,8 @@
 ---
 title: Arvonlisäveromaksut ja pyöristyssäännöt
-description: Tässä artikkelissa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
-author: ShylaThompson
-ms.date: 04/20/2020
+description: Tässä aiheessa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
+author: kailiang
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: pacheren
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1838666b57bf2ce4eb78f5d3486c03e4c2447646a121a537efd6bffa0019b96f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a75d41195875c5ed48cbe8ce5f5e448f173e718
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760683"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726797"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Arvonlisäveromaksut ja pyöristyssäännöt
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
+Tässä aiheessa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
 
-Arvonlisäverot täytyy ilmoittaa ja maksaa säännöllisesti. Tämä voidaan tehdä suorittamalla arvonlisäveron tilitys- ja kirjausprosessi Arvonlisävero-sivulla. Kauden arvonlisävero tilitetään arvonlisäverotilejä vastaan, ja alv-saldo kirjataan arvonlisäveron maksutilille. Arvonlisäveron maksutilille kirjattu alv-saldo voidaan pyöristää veroviranomaisten ohjeiden mukaan määrittämällä Arvonlisävero-sivulla pyöristyssääntö. 
+Arvonlisäverot täytyy ilmoittaa ja maksaa säännöllisesti. Tämä toiminto voidaan suorittaa suorittamalla arvonlisäveron tilitys- ja kirjausprosessi **Arvonlisävero**-sivulla. Kauden arvonlisävero tilitetään arvonlisäverotilejä vastaan, ja alv-saldo kirjataan arvonlisäveron maksutilille. Arvonlisäveron maksutilille kirjattu alv-saldo voidaan pyöristää veroviranomaisten ohjeiden mukaan määrittämällä **Arvonlisävero**-sivulla pyöristyssääntö. 
 
 Pyöristysero kirjataan arvonlisäveron pyöristystilille, joka valitaan kirjanpidossa Automaattisten tapahtumien tilit -kentästä.
 
@@ -63,11 +63,11 @@ Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään 
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normaali pyöristys ja pyöristyksen tarkkuus on 0,01
 
-<table>
+```<table>
   <tr>
-    <td>Pyöristys
+    <td>Rounding
     </td>
-    <td>Laskentaprosessi
+    <td>Calculation process
     </td>
   </tr>
     <tr>
@@ -116,6 +116,7 @@ Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään 
     </td>
   </tr>
 </table>
+```
 
 > [!NOTE]                                                                                  
 > Jos valitset Oma etu, pyöristys tehdään aina yrityksen eduksi. 

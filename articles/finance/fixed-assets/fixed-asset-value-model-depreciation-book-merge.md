@@ -1,8 +1,8 @@
 ---
 title: Käyttöomaisuuserän arvomallin ja poistokirjan yhdistäminen
 description: 'Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations (1611) -versiossa arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, jota kutsutaan kirjaksi.'
-author: ShylaThompson
-ms.date: 06/20/2017
+author: moaamer
+ms.date: 10/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,32 +11,33 @@ ms.reviewer: roschlom
 ms.custom: 221564
 ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a8e04f89673b3e0eb07e19aa1e14276f1f22c25b9aaabc91e2919892f74ed985
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b11edcbf03b0917e35d9cef03834629b7b67fad
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727980"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674923"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Käyttöomaisuuserän arvomallin ja poistokirjan yhdistäminen
 
 [!include [banner](../includes/banner.md)]
 
-Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operations (1611) -versiossa arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, jota kutsutaan kirjaksi.
+Tässä aiheessa kuvataan nykyiset käyttöomaisuuden kirjatoiminto. Tämä toiminto perustuu arvomallitoimintoon, joka oli käytettävissä aiemmissa versioissa, mutta se sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyneet toiminnot.
 
-Uusi kirja-toiminto perustuu aiempaan arvomalli-toimintoon, mutta sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyvät toiminnot. [![Kirja arvomallin yhdistämisenä ja poistokirjan toiminnot.](./media/fixed-assets.png)](./media/fixed-assets.png) Yhdistämisen ansiosta voit nyt käyttää samaa sivu-, kysely- ja raporttisarjaa kaikille käyttöomaisuusprosesseille. Tämän aiheen taulukoissa kuvataan aiempia arvomallien ja poistokirjojen toimintoja verrattuina uusien kirjojen toimintoihin.
+Kirjatoiminnon avulla voit käyttää yksittäistä sivujen, kyselyjen ja raporttien sarjaa kaikkiin organisaation käyttöomaisuusprosesseihin. Tämän aiheen taulukoissa kuvataan aiempia arvomallien ja poistokirjojen toimintoja verrattuina nykyisiin kirjojen toimintoihin.
 
-## <a name="setup"></a>Luo perustiedot
+## <a name="setup"></a>Asetusten määrittäminen
 Kirjat suorittavat oletusarvoisesti kirjauksia sekä kirjanpitoon (GL) että käyttöomaisuuserän alareskontraan. Kirjoissa on uusi **Kirjaa kirjanpitoon** -asetus, joka mahdollistaa Kirjataan kirjanpitoon- ja Kirjaa vain käyttöomaisuuserän alareskontraan -toimintojen poistamisen käytöstä. Tämä toiminto muistuttaa aiempaa poistokirjojen kirjaustapaa. Kirjauskansioiden nimien asetuksissa on uusi kirjanpitotaso "Ei mitään". Tämä kirjanpitotaso lisättiin erityisesti käyttöomaisuustapahtumia varten. Kirjoissa, jotka eivät kirjaa tapahtumia kirjanpitoon, on käytettävä kirjaamiseen kirjauskansionimeä, joka on määritetty kirjanpitotasolle **Ei mitään**.
+
 
 | &nbsp;                                           | Poistokirja               | Arvomalli                     | Kirja (uusi)                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-| Kirjaa kirjanpitoon                                   | En koskaan                           | Aina                          | Kirjanpitoon kirjaamisen vaihtoehto                                |
+| Kirjaa kirjanpitoon                                   | Ei koskaan                           | Aina                          | Kirjanpitoon kirjaamisen vaihtoehto                                |
 | Kirjanpitotasot                                   | Ei käytettävissä                  | 3: Nykyinen, Liiketoiminnot, Verot | 11: Nykyinen, Liiketoiminnot, Vero, 7 mukautettua tasoa, Ei mitään |
-| Kirjauskansioiden nimet                                    | Poistokirjan kirjauskansioiden nimet | Kirjanpito - Kirjauskansioiden nimet              | Kirjanpito - Kirjauskansioiden nimet                                      |
+| Kirjauskansioiden nimet                                    | Poistokirjan kirjauskansioiden nimet | Kirjanpito – Kirjauskansioiden nimet              | Kirjanpito – Kirjauskansioiden nimet                                      |
 | Johdetut kirjat                                    | Ei sallittu                     | Sallittu                         | Sallittu                                                 |
 | Poistoprofiili ohittaa käyttöomaisuustasolla | Sallittu                         | Ei sallittu                     | Sallittu                                                 |
 

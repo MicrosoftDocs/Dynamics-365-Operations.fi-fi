@@ -2,7 +2,7 @@
 title: Verolaskennan yleiskatsaus
 description: Tässä ohjeaiheessa selitetään verolaskentamahdollisuuden yleinen laajuus ja ominaisuudet.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394583"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647054"
 ---
 # <a name="tax-calculation-overview"></a>Verolaskennan yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Verolaskenta on hyperskaalautuva monivuokaajapalvelu, jonka avulla Global Tax Engine voi automatisoida ja yksinkertaistaa verotuksen määritys- ja laskentaprosessia. Veromoduuli on täysin konfiguroitavissa. Määritettäviä elementtejä ovat muun muassa verotettava tietomalli, verokoodi, verojen kohdistuksen matriisi ja verolaskelmakaava. Veromoduuli toimii Microsoft Azure -ydinpalvelualustalla ja tarjoaa modernia teknologiaa ja eksponentiaalisen skaalautuvuuden.
 
@@ -120,6 +118,10 @@ Seuraavia tapahtumia tuetaan versiossa 10.0.21:
     - Siirtotilaus – lähetä
     - Siirtotilaus – vastaanota
 
+Seuraavia tapahtumia tuetaan versiossa 10.0.23: 
+
+- Vapaatekstilasku
+
 ## <a name="supported-countriesregions"></a>Tuetut maat/alueet
 
 Yritys voi ottaa verolaskennan käyttöön. 
@@ -145,6 +147,28 @@ Versiossa 10.0.21 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena 
 - Sveitsi
 - Iso-Britannia
 - Yhdysvallat
+
+Versiossa 10.0.22 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+
+- Australia
+- Bahrain
+- Kanada
+- Egypti
+- Hongkong, erityishallintoalue
+- Kuwait
+- Uusi-Seelanti
+- Oman
+- Qatar
+- Saudi-Arabia
+- Etelä-Afrikka
+- Yhdistyneet arabiemiirikunnat
+
+Versiossa 10.0.23 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+
+- Thaimaa
+- Japani
+- Malesia
+- Singapore
 
 ## <a name="related-resources"></a>Liittyvät resurssit
 

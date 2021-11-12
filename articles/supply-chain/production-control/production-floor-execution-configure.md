@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 15fcfd72027e081e633fe68209cf85f528ff02d7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576925"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647186"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -74,6 +74,12 @@ Tämä toiminto lisää resurssien hallinnan välilehden tuotannon käyttöliitt
 Tämän ominaisuuden avulla voit lisätä hakukentän työluetteloon. Työntekijät voivat etsiä tietyn työn syöttämällä työtunnuksen tai etsimällä tietyn tilauksen kaikki työt antamalla tilaustunnuksen. Työntekijät voivat syöttää tunnuksen näppäimistön avulla tai skannaamalla viivakoodia. Jos haluat käyttää sitä, ota seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Töiden haku tuotannon työnohjausliittymälle
+
+### <a name="enable-reporting-on-co-products-and-by-products"></a>Oheis- ja sivutuotteiden raportoinnin käyttöönotto
+
+Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon suoritusliittymää erätilausten edistymisen raportointiin. Tähän raportointiin kuuluu oheis- ja sivutuotteita koskeva raportointi. Jos haluat käyttää tätä toimintoa, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Raportti tuotannon käyttöliittymän rinnakkais- ja sivutuotteista
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Tuotannon käyttöliittymämääritysten käyttäminen
 

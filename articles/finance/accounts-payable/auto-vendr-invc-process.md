@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c409b460df4c6a8b2f7811083e8c13c8fdfc186c09f859ecb91e2f3cc0b8b59f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2acb6d1c31f54a23a0b3c761e2147fa2dd43a161
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749123"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674949"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automaattisten toimittajan laskutusprosessien yleiskuvaus
 
@@ -34,6 +34,7 @@ Tietyt ostoreskontran toimittajan laskutusprosessit voidaan automatisoida. Näit
 
 Automatisoiduilla prosesseilla voidaan suorittaa seuraavia tehtäviä:
 
+- Ennakkomaksujen kohdistaminen automaattisesti toimittajan laskuihin
 - Tuotujen laskujen lähettäminen automaattisesti työnkulkujärjestelmään.
 - Tuotteen vastaanottojen täsmäyttäminen odottaviin toimittajan laskuriveihin.
 - Kirjauksen simuloiminen ennen toimittajan laskun kirjaamista.

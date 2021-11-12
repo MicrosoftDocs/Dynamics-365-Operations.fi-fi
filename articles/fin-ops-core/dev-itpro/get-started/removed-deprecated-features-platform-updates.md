@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan Finance and Operations -sovellusten ympäristöpäivityksissä.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595142"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725046"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -31,6 +31,64 @@ Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden po
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="feature-removal-effective-october-2021"></a>Ominaisuuden poistaminen tulee voimaan lokakuussa 2021
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azuren SQL-raportit Lifecycle Servicesissä (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Kaikki toiminnot ja seuranta suoritetaan sisäisesti ympäristön kautta ja automaation avulla. Tämä ei edellytä manuaalista keskeytystä.|
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Käytössä on nyt automaattinen järjestelmä, joiden vuoksi nämä ominaisuudet ovat vanhentuneet. |
+| **Tuotealueet, joihin vaikutetaan**         | SQL-raportit: Nykyinen DTU, Nykyisen DTU:n tiedot, Nouda lukituksen tiedot, Nykyisen suunnitteluoppaan luettelo, Nouda kyselytunnusten luettelo, Nouda tietyn suunnitelmatunnuksen SQL-kyselysuunnitelma, Nouda kyselysuunnitelmat ja suoritustila, Nouda rajoitusmääritys, Nouda odotustilastot, Luetteloi kalleimmat kyselyt |
+| **Käytön asetukset**              | Pilvikäyttöönotto: vaikuttaa Microsoftin hallitsemiin tuotantoympäristöihin ja tason 2–5 eristysympäristöihin. |
+| **Tila**                         | Poistettu |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL -toiminnot LCS:ssä
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Osa SQL-toiminnoista poistetaan käytöstä LCS:ssä. Kaikki toiminnot ja seuranta suoritetaan sisäisesti ympäristön kautta ja automaation avulla. Tämä ei edellytä manuaalista keskeytystä. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Käytössä on nyt automaattinen järjestelmä, joiden vuoksi nämä ominaisuudet ovat vanhentuneet. |
+| **Tuotealueet, joihin vaikutetaan**         | SQL-toiminnot: Luo suunnitelmaopas suunnitelmatunnuksen pakottamiselle, Luo suunnitelmaopas taulukkovinkkien lisäämiselle, Poista suunnitteluopas, Poista käytöstä / ota käyttöön sivulukitukset ja lukitusten eskalointi, Päivitä taulukon tilastot, Muodosta indeksi uudelleen, Luo indeksi |
+| **Käytön asetukset**              | Pilvikäyttöönotto: vaikuttaa Microsoftin hallitsemiin tuotantoympäristöihin ja tason 2–5 eristysympäristöihin. |
+| **Tila**                         | Poistettu |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>Lokakuussa 2021 poistettavat ominaisuudet
+
+### <a name="show-related-document-attachments-feature"></a>Näytä asiaan liittyvät asiakirjaliitteet -ominaisuus
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Toiminto palautti odottamattomia tuloksia. |
+| **Onko toinen ominaisuus korvannut?**   | Et voi. Mahdolliset tätä toimintoa koskevat jatkosuunnitelmat ilmoitetaan vakiomuotoisen julkaisuaallosta ilmoittamisen prosessissa. |
+| **Tuotealueet, joihin vaikutetaan**         | Verkkoasiakasohjelma – Asiakirjan liittämiskokemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.23
+
+### <a name="ondbsynchronize-event"></a>OnDBSynchronize-tapahtuma
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tämän tapahtuman suorittamiselle ei ole ohjausobjektia. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, siirrä olemassa olevat **OnDBSynchronize**-tapahtuman tilaamat menetelmät SysSetup-laajennusluokkaan. |
+| **Tuotealueet, joihin vaikutetaan**         | Tietokannan synkronointi |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut. Poisto on suunniteltu lokakuulle 2022. |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>SystemNotificationsManager.AddNotification-ohjelmointirajapinta
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Microsoft edellyttää lisäparametreja ilmoitusten lisäämisessä. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, **SystemNotificationsManager.AddSystemNotification()**-ohjelmointirajapinta. Tämä ohjelmointirajapinta edellyttää, että määrität luotujen ilmoitusten arvot ExpirationDateTime ja RuleID nimenomaisesti. |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut. Poisto on suunniteltu huhtikuulle 2023. |
 
 ## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Finance and Operations -sovellusalustan päivitykset sovellusten versiolle 10.0.21
 

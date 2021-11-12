@@ -2,7 +2,7 @@
 title: Ttuote- ja asiakashaku myyntipisteessä (POS)
 description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Dynamics 365 Commercen tuote- ja asiakashakuihin.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716392"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700086"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -47,7 +47,7 @@ Paikallinen tuotehaku kohdistuu seuraaviin tuotteen ominaisuuksiin:
 - Viivakoodi
 - Hae nimellä
 
-### <a name="additional-local-product-search-capabilities"></a>Paikalliset tuotteiden lisähakutoiminnot
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Muut paikalliset tuotehakuominaisuudet (tavanomainen SQL-tekstihaku) 
 
 - Useita sanoja käytettäessä (eli hakuehtoja käytettäessä) jälleenmyyjät voivat määrittää, sisältyykö hakutuloksiin kohteita, jotka vastaavat *mitä tahansa* hakuehtoja vai kohteita, jotka vastaavat *kaikkia* hakuehtoja. Tämän toiminnon asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Oletusarvo on **Kohdista mikä tahansa hakusana**. Tämä asetus on suositeltu asetus. **Kohdista mikä tahansa hakusana**-asetusta käytettäessä tulokseksi palautetaan kaikki tuotteet, jotka vastaavat osittain tai kokonaan vähintään yhtä hakuehtoa. Nämä tulokset järjestetään automaattisesti nousevaan järjestykseen siten, että tuotteet, jotka vastaavat parhaiten avainsanoja (kokonaan tai osittain), ovat ensimmäisenä.
 
@@ -55,6 +55,8 @@ Paikallinen tuotehaku kohdistuu seuraaviin tuotteen ominaisuuksiin:
 
     - Haku tehdään yksittäisiin tuoteominaisuuksiin. Haku palauttaa esimerkiksi vain tuotteita, jolla on vähintään yksi tuoteominaisuus, joka sisältää kaikki hakusanat.
     - Haku ei koske dimensioita.
+> [!NOTE]
+> Seuraavia **Minkä tahansa hakutermin vastaavuus**/**Kaikkien hakutermien vastaavuus** -asetusten määrityksiä myyntipisteen toimintoprofiileissa voidaan käyttää vain **paikallisiin** hakuihin (tavanomainen SQL-tekstihaku). Tällä määrityksellä ei ole vaikutuksia pilvipohjaisiin hakukokemuksiin. Uudella hakumoduulilla on oma edistynyt algoritminsa, joka on pohjana tuotehakutulosten hakuosuvuudelle. 
 
 - Vähittäismyyjät voivat määrittää tuotehaun näyttämään hakuehdotuksia käyttäjien kirjoittaessa tuotenimiä. Tämän toiminnon uusi asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Asetuksen nimi on **Näytä hakuehdotukset kirjoittamisen aikana**. Työntekijät voivat käyttää tätä toimintoa löytämään etsimänsä tuotteet nopeasti, koska koko tuotenimeä ei tarvitse kirjoittaa.
 - Tuotehaun algoritmi etsii hakusanoja nyt myös tuotteen **Hakunimi**-ominaisuudesta.
@@ -147,7 +149,5 @@ Seuraavassa luettelossa kerrotaan, miten pilvipohjainen asiakashakutoiminto eroa
 > Azure Cognitive Search -palvelua käyttävä asiakshaku on ksaatavilla esiversiona vain rajoitetulla määrällä alueita. Asiakashakutoiminto *ei* ole käytettävissä seuraavilla alueilla:
 > - Brasilia
 > - Intia
-> - Kanada
-> - Iso-Britannia
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569334"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678686"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -93,7 +93,6 @@ Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 1. **Rekisteröi seisokki** – Tämän painikkeen valinta avaa valintaikkunan, jossa voi rekisteröidä koneen seisokin. Seisokille voidaan valita syykoodi ja antaa seisokin ajankohta ja kesto. Koneen seisokkirekisteröinnin avulla lasketaan koneresurssin tehokkuus.
 1. **Näytä tai muokkaa** – tämän painikkeen valinta avaa valintaikkunan, jossa voi muokata tai tarkastella aiemmin luotuja seisokkitietueita.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Tuotantotöiden aloittaminen ja valmistuminen
 
 Työntekijä aloittaa tuotantotyön valitsemalla työn **Kaikki työt** -välilehdessä ja avaamalla **Aloita työ** -valintaikkunan sitten valitsemalla **Aloita työ**.
@@ -109,6 +108,32 @@ Työntekijät voivat aloittaa työn riippumatta siitä, mikä sen tila on. Jos t
 Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida tuotetut hyväksyttävät määrät valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Raportointi on meneillään**. Tämän jälkeen työntekijä antaa **Raportointi on meneillään** -valintaikkunassa hyväksyttyjen määrän numeronäppäimistössä. Määrä on oletusarvoisesti tyhjä. Työntekijä voi määrän antamisen jälkeen päivittää työn tilaksi *Käsittelyssä*, *Pysäytetty* tai *Valmis*.
 
 ![Raportointi on meneillään -valintaikkuna.](media/pfei-report-progress-dialog.png "Raportointi on meneillään -valintaikkuna")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Tuotemäärien raportointi sellaisten erätilausten osalta, joilla on oheis- ja sivutuotteita
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+Työntekijät voivat käyttää tuotannon suoritusliittymää erätilausten edistymisen raportointiin. Tähän raportointiin kuuluu oheis- ja sivutuotteita koskeva raportointi.
+
+Jotkut valmistajat erityisesti prosessitoimialoilla käyttävät erätilauksia tuotantoprosessiensa hallintaan. Erätilaukset luodaan kaavojen perusteella, ja nämä kaavat voidaan määritellä siten, että niiden tuloksena on oheis- ja sivutuotteita. Kun palautetta näistä erätilauksista raportoidaan, tulosten määrä on rekisteröitävä reseptinimikkeeseen sekä oheis- ja sivutuotteisiin.
+
+Kun työntekijä saa erätilaukseen liittyvän tehtävän valmiiksi tai osittain valmiiksi, hän voi raportoida kullekin tilauksen tulokseksi määritetylle tuotteelle tuote- tai hävikkimääriä. Erätilauksen tulokseksi määritetyt tuotteet voivat olla tyyppiä *Kaava*, *Oheistuote* tai *Sivutuote*.
+
+Tuotteiden tuotemäärien raportointia varten työntekijä valitsee tehtävän **Aktiiviset tehtävät** -välilehdestä ja valitsee sitten **Raportoi edistyminen**.
+
+Sitten työntekijä voi valita **Raportoi edistyminen** -valintaruudussa raportoitavan tuotteen niiden tuotteiden joukosta, jotka on määritetty erätyön tuloksiksi. Työntekijä voi valita jonkin luettelon useista tuotteista ja valita sitten **Raportoi edistyminen**. Kunkin tuotteen osalta määrä on oletusarvoisesti tyhjä, ja työntekijä voi syöttää määrän numeronäppäimistöllä. Työntekijä voi siirtyä valittujen tuotteiden välillä painikkeiden **Edellinen** ja **Seuraava** avula. Työntekijä voi kunkin tuotteen määrän antamisen jälkeen päivittää työn tilaksi *Käsittelyssä*, *Pysäytetty* tai *Valmis*.
+
+![Oheis- ja sivutuotteiden raportointi.](media/report-co-by-products.png "Oheis- ja sivutuotteiden raportointi")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Suunnittelunimikkeiden erätilauksia koskeva raportointi
+
+Kun työntekijä saa suunnittelunimikkeen erätilauksen tehtävän valmiiksi, hän raportoi määrät vain oheis- ja sivutuotteiden osalta, koska suunnittelunimikkeet eivät sisällä *Kaava*-tyypin nimikettä.
+
+### <a name="reporting-co-product-variation"></a>Oheistuotteiden vaihtelua koskeva raportointi
+
+Jos erätilaus luodaan kaavaversiosta, jossa **Oheistuotteen variaatiot** -asetuksen arvoksi on määritetty *Kyllä*, työntekijä voi raportoida oheistuotteista, jotka eivät kuulu erätuotteiden määritelmään. Tätä toimintoa käytetään skenaarioissa, joissa tuotantoprosessissa voi esiintyä odottamaton tuotetulos.
+
+Tällöin työntekijä voi määrittää raportoitavan oheistuotteen ja määrän valitsemalla **Oheistuotteiden variaatiot** raportin edistymisen valintaikkunassa. Sitten työntekijä voi valita kaikista julkaistuista tuotteista, jotka on määritetty oheistuotteiksi.
 
 ## <a name="reporting-scrap"></a>Hävikin raportointi
 

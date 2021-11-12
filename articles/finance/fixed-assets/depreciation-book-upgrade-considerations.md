@@ -1,7 +1,7 @@
 ---
-title: Poistokirjan päivityksen yleiskatsaus
-description: 'Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat.'
-author: ShylaThompson
+title: Poistokirjojen päivityksen yleiskatsaus
+description: Tässä aiheessa kuvataan nykyiset käyttöomaisuuden kirjatoiminto. Tämä toiminto perustuu arvomallitoimintoon, joka oli käytettävissä aiemmissa versioissa, mutta se sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyneet toiminnot.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,25 +13,25 @@ ms.custom:
 - intro-internal
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: c36e0ab53f8a10e81e1bed207417861066dd6917
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344711"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675149"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Poistokirjojen päivityksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Aiemmissa julkaisuversioissa oli kaksi käyttöomaisuuserien arviointikäsitettä: arvomallit ja poistokirjat. Microsoft Dynamics 365 for Operationsissa (1611) arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, jota kutsutaan kirjaksi. Tämä aihe käsittelee päivityksessä huomioitavia seikkoja. 
+Tässä aiheessa kuvataan nykyiset käyttöomaisuuden kirjatoiminto. Tämä toiminto perustuu arvomallitoimintoon, joka oli käytettävissä aiemmissa versioissa, mutta se sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyneet toiminnot. Arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, jota kutsutaan kirjaksi. Kirjatoiminnon avulla voit käyttää yksittäistä sivujen, kyselyjen ja raporttien sarjaa kaikkiin organisaation käyttöomaisuusprosesseihin. Tämä aihe sisältää joitakin asioita, jotka on otettava huomioon ennen päivittämistä. 
 
-Päivitysprosessi siirtää aiemmin määritetyt asetukset ja kaikki olemassa olevat tapahtumat uuden kirjan rakenteeseen. Arvomallit säilyvät nykyisellään, kirjana joka tekee kirjauksia kirjanpitoon. Poistokirjat siirretään kirjaan, jonka **Kirjaa kirjanpitoon** -asetus on **Ei**. Poistokirjan kirjauskansioiden nimet siirretään kirjanpidon kirjauskansion nimeen, jonka kirjanpitotasoksi on määritetty **Ei mitään**. Poistokirjatapahtumat siirretään käyttöomaisuustapahtumiin. 
+Päivitysprosessi siirtää aiemmin määritetyt asetukset ja kaikki olemassa olevat tapahtumat uuden kirjan rakenteeseen. Arvomallit säilyvät nykyisellään, kirjana joka tekee kirjauksia kirjanpitoon. Poistokirjat siirretään kirjaan, jonka Kirjaa kirjanpitoon -asetus on Ei. Poistokirjan kirjauskansioiden nimet siirretään kirjanpidon kirjauskansion nimeen, jonka kirjanpitotasoksi on määritetty Ei mitään. Poistokirjatapahtumat siirretään käyttöomaisuustapahtumiin.
 
-Ennen tietojen päivityksen suorittamista sinun on hyvä ymmärtää käytettävissä olevat kaksi vaihtoehtoa poistokirjan kirjauskansion rivien päivittämiseksi tapahtumatositteisiin, ja numerosarja, jota käytetään tositesarjaan. 
+Ennen tietojen päivityksen suorittamista sinun on hyvä ymmärtää käytettävissä olevat kaksi vaihtoehtoa poistokirjan kirjauskansion rivien päivittämiseksi tapahtumatositteisiin, ja numerosarja, jota käytetään tositesarjaan.
 
 Vaihtoehto 1: **Järjestelmän määrittämä numerosarjan**: tämä on oletusasetus päivityksen suorituskyvyn parantamiseksi. Päivitys ei käytä numerosarjojen kehystä, mutta sen sijaan kohdistaa tositteet joukkoon perustuvan mallin pohjalta. Päivityksen jälkeen uusi numerosarjan luodaan **Seuraava numerosarja** asianmukaisesti päivitettyjen tapahtumien perusteella. Oletuksena käytettävä numerosarjan muoto on FADBUpgr\#\#\#\#\#\#\#\#\#. Voit muuttaa muotoa muutamien parametrien avulla käyttäen tätä menetelmää:
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384608"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647617"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -109,7 +109,7 @@ Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä on seura
     - [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](/azure/active-directory/develop/quickstart-register-app)
     - [Toimintaohje: Azure AD -sovelluksen ja resursseja käyttävän palvelun päänimen luonti portaalin avulla](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Supply Chain Managementin käyttäjätilin luominen ja määrittäminen
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Supply Chain Managementin käyttäjätilin luominen ja määrittäminen
 
 Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden mukaisesti:
 
@@ -117,17 +117,24 @@ Supply Chain Management voi käyttää Azure AD -sovellusta seuraavien ohjeiden 
 
     1. Valitse Supply Chain Managementissa **Järjestelmän hallinta \> Käyttäjät \> Käyttäjät**.
     1. Luo käyttäjä.
-    1. Määritä varastoinnin mobiililaitteen käyttäjä.
+    1. Määritä käyttäjälle rooli *Varastoinnin mobiililaitteen käyttäjä*.
 
     ![Määritä varastoinnin mobiililaitteen käyttäjä.](media/app-connect-app-users.png "Varastoinnin mobiililaitteen käyttäjän määrittäminen")
 
 1. Azure AD -sovelluksen liittäminen varastonhallinnan mobiilisovelluksen käyttäjään:
 
     1. Valitse **Järjestelmän hallinta \> Asetukset \> Azure Active Directory -sovellukset**.
-    1. Luo rivi.
-    1. Anna edellisessä osassa muistiin kirjoitettu asiakasohjelman tunnus, nimeä se ja valitse juuri luotu käyttäjä. Kaikille laitteille kannattaa antaa tunniste. Tällä tavoin kadotetun laitteen Supply Chain Managementin käyttöoikeus on helppo poistaa tällä sivulla.
+    1. Luo rivi valitsemalla toimintoruudussa **Uusi**.
+    1. Kirjoita **Asiakastunnus**-kenttään se asiakastunnus, jonka merkitsit muistiin edellisessä osassa.
+    1. Anna nimi **Nimi**-kenttään.
+    1. Valitse juuri luomasi käyttäjätunnus **Käyttäjätunnus**-kentässä.
 
     ![Azure Active Directory -sovellukset.](media/app-connect-aad-apps.png "Azure Active Directory -sovellukset")
+
+> [!TIP]
+> Yksi tapa käyttää näitä asetuksia on luoda Azuressa asiakastunnus kullekin fyysiselle laitteellesi ja lisätä sitten kukin asiakastunnus **Azure Active Directory -sovellukset** -sivulle. Tällä tavoin kadotetun laitteen Supply Chain Managementin käyttöoikeus on helppo poistaa poistamalla sen asiakastunnus kyseiseltä sivulta. (Tämä menetelmä toimii, koska kullekin laitteelle tallennetut yhteyden valtuustiedot määrittävät myös asiakastunnuksen, kuten myöhemmin tässä aiheessa kuvataan.)
+>
+> Lisäksi kunkin asiakastunnuksen oletuskieli-, numeromuoto- ja aikavyöhykeasetukset määritetään asetuksissa, jotka määritetään tähän yhdistämismääritetylle **Käyttäjätunnus**-arvolle. Siten voit käyttää näitä asetuksia oletusasetusten määrittämiseen kullekin laitteelle tai laitekokoelmalle asiakastunnuksen perusteella. Nämä oletusasetukset ohitetaan kuitenkin, jos ne on määritetty myös siinä *varastosovelluksen käyttäjätilissä*, jota käyttäjä käyttää laitteelle kirjautumisessa. (Lisätietoja: [Mobiililaitteiden käyttäjätunnukset](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Todennus käyttämällä varmenteen tai asiakasohjelman salauskoodia
 

@@ -2,7 +2,7 @@
 title: Verolaskennan aloittaminen
 description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää verolaskennan.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562123"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647431"
 ---
 # <a name="get-started-with-tax-calculation"></a>Verolaskennan aloittaminen
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on tietoja verolaskennan käytön aloittamisesta. Se auttaa määrittämään Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicen (RCS) ja Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin. Tämän jälkeen se tarkastelee yleistä prosessia, jossa veronlaskennan mahdollisuuksia käytetään Financen ja Supply Chain Managementin tapahtumissa.
 
@@ -41,29 +39,10 @@ Asetukset koostuvat neljästä päävaihesta:
 
 Ennen tämän aiheen ohjeiden mukaan toimimista seuraavien edellytysten on toteuduttava kussakin ympäristötyypissä.
 
-### <a name="for-a-production-environment"></a>Tuotantoympäristö
-
-Seuraavien edellytysten on toteuduttava tuotantoympäristössä:
+Seuraavien edellytysten on täytyttävä:
 
 - LCS-tilin käyttöoikeus ja sellainen käyttöönotettu LCS-projekti, jonka vähintään tason 2 ympäristössä on käytössä Dynamics 365:n versio 10.0.21 tai uudempi.
 - Organisaatiolle on luotava RCS-ympäristö ja käytössä on oltava tilin käyttöoikeus. Lisätietoja RCS-ympäristön luomisesta on kohdassa [Regulatory Configuration Servicen yleiskatsaus](rcs-overview.md).
-- Seuraavat toiminnot on otettava käyttöön liiketoimintatarpeiden mukaan käyttöönotetun Finance- tai Supply Chain Management -ympäristön **Ominaisuuksien hallinta** -työtilassa:
-
-    - Verolaskentapalvelu
-    - Tue useita ALV-rekisteröintinumeroita
-    - Vero siirtotilauksessa
-
-- Seuraavat toiminnot on otettava käyttöön käyttöönotetun RCS-ympäristön **Ominaisuuksien hallinta** -työtilassa.
-
-    - Globalisaatio-ominaisuudet
-
-### <a name="for-a-test-environment-public-preview"></a>Testiympäristö (julkinen esiversio)
-
-Seuraavien edellytysten on toteuduttava testiympäristössä:
-
-- LCS-tilin käyttöoikeus ja sellainen käyttöönotettu LCS-projekti, jonka vähintään tason 2 ympäristössä on käytössä Dynamics 365:n versio 10.0.21 tai uudempi versio.
-- Organisaatiolle on luotava RCS-ympäristö ja käytössä on oltava tilin käyttöoikeus. Lisätietoja RCS-ympäristön luomisesta on kohdassa [Regulatory Configuration Servicen yleiskatsaus](rcs-overview.md).
-- Väliversioiden ottaminen käyttöön käyttöönotetussa Finance- tai Supply Chain Management -ympäristössä edellyttää yhteydenottoa Microsoftiin lähettämällä sähköpostia osoitteeseen <taxcalc@microsoft.com>.
 - Seuraavat toiminnot on otettava käyttöön liiketoimintatarpeiden mukaan käyttöönotetun Finance- tai Supply Chain Management -ympäristön **Ominaisuuksien hallinta** -työtilassa:
 
     - Verolaskentapalvelu

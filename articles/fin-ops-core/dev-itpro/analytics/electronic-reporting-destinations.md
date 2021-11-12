@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin (ER) kohteet
 description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743308"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647090"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -164,12 +164,12 @@ Ota PDF-muunnosasetus käyttöön kulloisessakin Finance-esiintymässä avaamall
 
 ### <a name="applicability"></a>Soveltuvuus
 
-PDF-muunnon asetus voidaan ottaa käyttöön vain sellaisten tiedostokomponenttien osalta, joiden avulla luodaan tuloksia Office (Excel tai Word) -muodossa (**Excel-tiedosto**). Kun tämä asetus on käytössä, Office-muodossa luotu tulos muunnetaan automaattisesti PDF-muotoon. Financen versioissa **ennen 10.0.18 -versiota** voit ottaa tämän vaihtoehdon käyttöön vain **Excel\\Tiedosto**-tyypin komponentteihin, joita käytetään tulostamiseen [Excel](er-fillable-excel.md)- tai [Word](er-design-configuration-word.md)-muodossa. **Version 10.0.18** ja sitä myöhempien versioiden osalta voit kuitenkin ottaa tämän vaihtoehdon käyttöön myös **Yhteiset\\Tiedosto**-tyypin komponenteille.
+Financen versioissa **ennen 10.0.18 -versiota** PDF-muuntoasetus voidaan ottaa käyttöön vain käyttöön vain **Excel\\Tiedosto**-komponenteissa, joita käytetään tulostamiseen Office-muodossa (Excel tai Word). Kun tämä asetus on käytössä, Office-muodossa luotu tulos muunnetaan automaattisesti PDF-muotoon. **Version 10.0.18** ja sitä myöhempien versioiden osalta voit kuitenkin ottaa tämän vaihtoehdon käyttöön myös **Yhteiset\\Tiedosto**-tyypin komponenteille.
 
 > [!NOTE]
 > Huomaa varoitussanoma, joka tulee näyttöön, kun otat käyttöön **Yhteiset\\Tiedosto**-tyyppisen ER-komponentin PDF-muuntovaihtoehdon. Tämä sanoma kertoo, että suunnittelun aikana ei ole mahdollista varmistaa, että valittu tiedostokomponentti paljastaa sisällön PDF-muodossa tai PDF-muunnettavana sisältönä suorituksen aikana. Tämän vuoksi asetus on otettava käyttöön vain, jos olet varma, että valittu tiedostokomponentti on määritetty siten, että se paljastaa sisällön PDF-muodossa tai PDF-muunnettavassa muodossa suorituksen aikana.
 > 
-> Jos otat **Excel\\Tiedosto**-tyypin komponentin PDF-muuntovaihtoehdon käyttöönja jos tämä komponentti paljastaa sisältöä jossakin muussa kuin PDF-muodossa ja jos sen sisältöä ei voi muuntaa PDF-muotoon, ajon aikana tapahtuu poikkeus. Sanoma, jonka vastaanotat, ilmoittaa, että luotua sisältöä ei voi muuntaa PDF-muotoon.
+> Jos otat muotokomponentin PDF-muuntovaihtoehdon käyttöön ja jos tämä komponentti paljastaa sisältöä jossakin muussa kuin PDF-muodossa ja jos sen sisältöä ei voi muuntaa PDF-muotoon, ajon aikana tapahtuu poikkeus. Sanoma, jonka vastaanotat, ilmoittaa, että luotua sisältöä ei voi muuntaa PDF-muotoon.
 
 ### <a name="limitations"></a>Rajoitukset
 
@@ -189,16 +189,26 @@ Ota PDF-muunnos käyttöön tiedostokohteen osalta valitsemalla **Muunna PDF-muo
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Sivun suunnan valitseminen PDF-muunnosta varten</a>
 
-Jos luot Excel-muodossa ER-konfiguraation ja haluat muuntaa sen PDF-muotoon, voit määrittää PDF-tiedoston sivun suunnan. Kun valitset **Muunna PDF -muotoon** -valintaruudun ja otat PDF-muunnoksen käyttöön tiedostokohteelle, joka tuottaa tulostetiedoston Excel-muodossa, **Sivun suunta** -kenttä on käytettävissä **PDF-muunnosasetukset** -pikavälilehdessä. Valitse **Sivun suunta** -kentästä haluamasi suunta.
+Jos luot Excel-muodossa ER-konfiguraation ja haluat muuntaa sen PDF-muotoon, voit nimenomaisesti määrittää PDF-tiedoston sivun suunnan. Kun valitset **Muunna PDF -muotoon** -valintaruudun ja otat PDF-muunnoksen käyttöön tiedostokohteelle, joka tuottaa tulostetiedoston Excel-muodossa, **Sivun suunta** -kenttä on käytettävissä **PDF-muunnosasetukset** -pikavälilehdessä. Valitse **Sivun suunta** -kentästä haluamasi suunta.
 
 [![Sivun suunnan valitseminen PDF-muunnosta varten.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Jos haluat valita PDF-sivun suunnan, sinun on asennettava Financen versio 10.0.10 tai uudempi.
->
-> Valittua sivun suuntaa käytetään kaikissa Excel-muodossa luoduissa ER-kokoonpanoissa ja muunnetaan sitten PDF-muotoon.
->
-> Jos Word-muotoinen ER-määritys muunnetaan PDF-muotoon, PDF-tiedoston sivun suunta otetaan Word-asiakirjasta.
+Jos haluat valita PDF-sivun suunnan, asenna Financen versio 10.0.10 tai uudempi. Financen **versiota 10.0.23 edeltävissä** versioissa tällä asetuksella on seuraavat sivun suuntavaihtoehdot:
+
+- Pystytulostus
+- Vaakatulostus
+
+Valittua sivun suuntaa käytetään kaikissa Excel-muodossa luoduissa lähtevän asiakirjan sivuissa, jotka sitten muunnetaan PDF-muotoon.
+
+**Versiossa 10.0.23 ja sitä uudemmissa versioissa** sivun suuntavaihtoehtojen luetteloa on laajennettu seuraavasti:
+
+- Pystytulostus
+- Vaakatulostus
+- Laskentataulukkokohtainen
+
+Kun valitset **Laskentataulukkokohtainen**-vaihtoehdon, kaikki luodun Excel-työkirjan laskentataulukot muunnetaan PDF-tiedostoiksi käyttämällä sivun suuntaa, joka on määritetty laskentataulukolle käytetyssä Excel-mallissa. Siten lopullisessa PDF-asiakirjassa voi olla pysty- ja vaakasivuja. 
+
+Jos Word-muotoinen ER-määritys muunnetaan PDF-muotoon, PDF-tiedoston sivun suunta otetaan aina Word-asiakirjasta.
 
 ## <a name="output-unfolding"></a>Tulosteen avautuminen
 

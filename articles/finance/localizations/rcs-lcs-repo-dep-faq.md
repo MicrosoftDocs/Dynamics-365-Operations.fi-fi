@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) -tallennustilan vanhentuminen
 description: Tässä aiheessa on tietoja Microsoft Dynamics Lifecycle Services (LCS) -tallennusvaraston poistosta, joka suunnitellaan osana Regulatory Configuration Service (RCS) -yleistietovaraston käyttöönottoa.
 author: JaneA07
-ms.date: 05/25/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 7a738af04da4425e76bd3b224400f91bc4eb8364d323da67ea457eaba9e65643
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782195"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715227"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) -tallennustilan vanhentuminen
 
@@ -38,8 +38,9 @@ LCS:n käyttö varastona -toiminnon poisto ilmoitettiin seuraavassa: [Poistetut 
 
 ## <a name="key-features"></a>Tärkeimmät ominaisuudet
 
-- RCS:n avulla voit luoda ja muokata konfiguraatioita. Tämän jälkeen voit työntää nämä konfiguraatiot suoraan suunnitteluohjelmasta liitettyyn sovellukseen. Näin ollen voit muuttaa ja testata konfiguraatioita nopeasti.
-- Yleinen tietovarasto on keskitetty tallennuspaikka kaikille ER-konfiguraatioille.
+- Käytä RCS:ää ER-määritysten ja globalisointiominaisuuksien luomiseen.
+- Vie määrityksiä suoraan RCS-suunnitteluohjelmasta liitettyyn sovellukseen, kuten Dynamics 365 Finance -ympäristöön, jotta voit tehdä määrityksiin muutoksia ja testata ne nopeasti.
+- Tallenna, jaa ja hallitse sekä ER-määritysten että globalisointiominaisuuksien elinkaaria keskitetysti yleisen tietovaraston keskitetyn tallennustilan avulla.
 
 ## <a name="guidance-for-one-time-and-ongoing-actions"></a>Ohje kertaluotoisille ja jatkuville toimenpiteille
 
@@ -53,11 +54,20 @@ Tuo kaikki pakolliset konfiguraatiot LCS:stä RCS:iin ja julkaise ne RCS:stä yl
 2. Rekisteröi varatussa RCS-instanssissa soveltuva LCS-säilö kullekin käyttöomaisuuskirjaston LCS-projektille, joka sisältää johdetut ER-konfiguraatiot.
 3. Tuo ER-konfiguraatiot LCS-tietovarastosta RCS:ään. Lisätietoja on kohdassa [Konfiguraatioiden tuonti LCS:stä](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
 4. Jos yleistietovarastoa ei valmistella automaattisesti, rekisteröi se RCS:ssä.
-5. Lataa kaikki johdetut konfiguraatiot nykyisestä RCS-instanssista yleistietovarastoon. Käytä **Konfiguraatiopaketit, joiden avulla käyttäjä voi ladata kaikki konfiguraatiot yleistietovarastoon yhdellä toiminnolla** -ominaisuutta auttamaan lataamisessa. Lisätietoja on kohdassa [Lataus yleiseen RCS-tietovarastoon](rcs-global-repo-upload.md).
+5. Lataa kaikki johdetut konfiguraatiot nykyisestä RCS-instanssista yleistietovarastoon. Käytä **Määrityspaketit**-ominaisuutta apuna latauksessa. Lisätietoja on kohdassa [Lataus yleiseen RCS-tietovarastoon](rcs-global-repo-upload.md).
 
 ### <a name="going-forward"></a>Siirtyminen eteenpäin
 
-Luo kaikki uudet konfiguroinnit RCS:n visuaalisten suunnittelutoimintojen avulla. Lataa sitten konfiguraatiot yleiseen säilöön tallennusta varten. Lisätietoja: [ER-konfiguraation luominen RCS:ssä ja lataaminen yleiseen tietovarastoon](rcs-global-repo-upload.md).
+Käytä RCS:n visuaalisia suunnittelutoimintoja seuraaviin tarkoituksiin:
+
+- Laajenna Microsoftin tarjoamia malleja.
+- Luo uusia määrityksiä, joita organisaatio tarvitsee.
+- Mukauta sähköisen laskutuksen ja veronlaskentapalvelun globalisointiominaisuuksia.
+
+Käytä Globalisointisäilöä seuraaviin tarkoituksiin:
+
+- Käytä Microsoftin tuottamia määrityksiä ja globalisointiominaisuuksia.
+- Lataa luomasi tai laajentamasi määritykset yleiseen säilöön säilyttämistä varten ja jaa ne organisaation Dynamics 365 -sovellusympäristöihin tai ulkoisille organisaatioille. Lisätietoja: [ER-konfiguraation luominen RCS:ssä ja lataaminen yleiseen tietovarastoon](rcs-global-repo-upload.md).
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 
@@ -76,3 +86,22 @@ RCS käyttää *liitetyn sovelluksen* käsitettä. Liitetty sovellus muodostaa y
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Onko joitakin esimerkkejä, jotka näyttävät määritykset ja hallinnan?
 
 Esimerkkejä ei ole, mutta voit edellä tämän ohjeaiheen vaiheiden mukaisesti siirtääksesi konfiguraatiosi RCS:n yleistietovarastoon.
+
+### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Onko RCS edellytys sähköisen raportoinnin määritykselle?
+
+Kyllä. RCS sisältää ominaisuuksia, jotka tukevat globalisointiominaisuuksia, joita globalisointipalvelut, kuten sähköinen laskutus ja veronlaskentapalvelu, käyttävät. Palvelulla on kuitenkin sama visuaalinen suunnittelutoiminto, jonka avulla voit laajentaa tai luoda uusia ER-määrityksiä. RCS tarjoaa myös elinkaarihallintaa sekä ER-määrityksille että globalisointiominaisuuksille.
+
+### <a name="which-regions-can-rcs-be-deployed-in"></a>Millä alueilla RCS voidaan ottaa käyttöön?
+
+RCS on käytettävissä seuraavilla Azure-alueilla:
+
+- Yhdysvallat
+- Intia
+- Ranska
+- Eurooppa
+
+Lisätietoja tuotetuesta: [Dynamicsin globalisointipalvelujen yleiskatsaus](globalization-services-overview.md). Lisätietoja maantieteellisestä tuesta: [Dynamics 365 ja Power Platform: Saatavuus, tietojen sijainti, kieli ja localization](https://aka.ms/rcs/D365Productavailabilityguide).
+
+### <a name="whats-the-cost-of-using-rcs"></a>Mitä RCS:n käyttö maksaa?
+
+RCS ja globalisointisäilö tarjotaan maksutta osana olemassa olevia Finance and Operations -sovellusten käyttöoikeuksia. RCS:n suunnittelutoiminnon käytöstä tai määritysten tallennuksesta yleiseen säilöön ei aiheudu erillisiä kustannuksia. Määritysten tai yhdistettyjen sovellusten määrää ei tällä hetkellä ole rajoitettu.

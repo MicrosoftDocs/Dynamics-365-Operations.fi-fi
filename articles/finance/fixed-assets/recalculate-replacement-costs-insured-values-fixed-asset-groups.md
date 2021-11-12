@@ -1,7 +1,7 @@
 ---
 title: Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta
-description: Tässä artikkelissa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
-author: ShylaThompson
+description: Tässä aiheessa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
+author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.reviewer: roschlom
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 074a976e3d815211f4a4fe24268ffc7ac7e9c4f4b4449167d288876a93749e1a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 33d3dba59e459193798d790e64d2493c244d49a3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763139"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674873"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
+Tässä aiheessa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
 
 Tiettyjen käyttöomaisuuserien jälleenhankintahinta tai vakuutusarvo voi toisinaan muuttua. Esimies voi esimerkiksi ilmoittaa, että inflaatio on ollut viime vuonna 3 prosenttia, joten kaikkien käyttöomaisuuserien jälleenhankintahintaa täytyy korottaa 3 prosenttia. 
 

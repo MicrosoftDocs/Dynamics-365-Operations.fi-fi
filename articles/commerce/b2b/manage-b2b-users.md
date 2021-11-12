@@ -2,7 +2,7 @@
 title: Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
 description: Tässä aiheessa kuvataan, kuinka järjestelmänvalvojat voivat lisätä, muokata ja poistaa yritysten välisten (B2B) verkkokauppasivustojen liikekumppanikäyttäjiä.
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734940"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713690"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
 
@@ -68,6 +68,18 @@ Noudattamalla seuraavia ohjeita voit hyväksyä ja määrittää liikekumppanin 
 1. Siirry kohtaan **Retail ja Commerce IT \> Jakeluaikataulu** ja suorita työ **1010** (**Asiakkaat**) työntääksesi uudet asiakas- ja asiakashierarkiatietueet kanavatietokantaan.
 
 Kun pyyntö on hyväksytty ja asiakas- ja asiakashierarkiatietueet synkronoidaan kanavatietokantaan, pyytäjä voi kirjautua B2B-verkkokauppasivustoon käyttäen heidän pyynnön mukana toimittamaansa sähköpostiosoitetta. Käyttäjät voivat kirjautumisvirran avulla määrittää tilinsä salasanan. Jos haluat sallia tunnistetietojen tarjoajan (Azure AD B2C) tietueen linkittämiseen yritysten väliseen asiakastietueeseen, joka luotiin rekisteröitymisen tai sisäänkirjautumisen aikana, seuraa ohjeita kohdassa [Salli tunnistetietueiden automaattinen linkitys asiakkaiden tileihin](../identity-record-linking.md).
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>B2B-prospekteille ilmoittaminen, kun heidät on hyväksytty tai hylätty
+
+Kun hyväksyt tai hylkäät B2B-prospektin aktivointipyynnön, voit lähettää prospektille automaattisesti sähköposti-ilmoituksen. 
+
+Voit määrittää Commerce-pääkonttorisovelluksessa sähköposti-ilmoituksia ilmoitustyypin B2B-prospekti hyväksytty tai B2B-prospekti hylätty tapahtumalle seuraavalla tavalla.
+
+1. Luo sähköpostimalleja prospekteille lähetettäville sähköposteille, kun ilmoitustyyppi B2B-prospekti hyväksytty tai B2B-prospekti hylätty käynnistyy.
+
+    Lisätietoja paikkamerkeistä, joita ilmoitustyypit B2B-prospekti hyväksytty tai B2B-prospekti hylätty tukevat: [Ilmoitustyypit](../email-templates-transactions.md#notification-types). Tietoja sähköpostimallien luonnista: [Sähköpostimallin luonti](../email-templates-transactions.md#create-an-email-template). 
+
+1. Lisää ilmoitustyypit B2B-prospekti hyväksytty tai B2B-prospekti hylätty sähköposti-ilmoitusprofiilisi ja yhdistä ne luomiisi sähköpostimalleihin. Lisätietoja ilmoitusprofiileista: [Määritä sähköposti-ilmoitusprofiili](../email-notification-profiles.md). 
 
 ## <a name="onboard-additional-business-partner-users"></a>Lisäliikekumppanikäyttäjien perehdyttäminen
 

@@ -2,7 +2,7 @@
 title: Pikanäppäimet
 description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet Finance and Operations -sovelluksia.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743168"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647533"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti Finance and Operations -sovelluksissa.
 
@@ -148,14 +149,15 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
 | Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |
 | Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)                                              | Enter                           |
+| Muuta nykyisen sarakkeen kokoa, jotta sisältö mahtuu siihen (kohdistus otsikkorivillä)                                           | A                               |
 
 ## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
 
-| Toiminto                                                                   | Näppäinyhdistelmä                         |
+| Toiminto                                                                   | Paina                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Avaa hyperlinkki                                                           | Ctrl+Enter                    |
-| Lisää istuntopäivämäärä päivämääräkenttään                                       | T                         |
-| Lisää nykyinen päivämäärä päivämääräkenttään                                       | T                         |
+| Lisää istuntopäivämäärä päivämääräkenttään                                       | T                             |
+| Lisää nykyinen päivämäärä päivämääräkenttään                                       | T                             |
 | Avaa haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                         | Alt+Alanuoli                |
 | Sulje haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                        | Esc                           |
 | Siirrä kohdistus hakuun (kun haku on avoinna)                   | Alt+Alanuoli                |
@@ -202,8 +204,8 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Käytä siirtotyökalua (mukauttamistilassa)                                                                       | M                                   |
 | Valitse nykyinen ohjausobjekti siirrettäväksi (kun siirtotyökalu on käytössä eikä siirrettävää objektia ole valittu)  | Väli tai Enter                      |
 | Poista ohjausobjektin siirtäminen (kun siirtotyökalu on käytössä)                                                                   | Esc                                 |
-| Siirry seuraavaan paikkaan valitussa ohjausobjektissa (kun siirtotyökalu on käytössä)                                          | Sarkain tai Oikea nuoli tai Alanuoli    |
-| Siirry edelliseen paikkaan valitussa ohjausobjektissa (kun siirtotyökalu on käytössä)                                      | Vaihto + Sarkain tai Vasen nuoli tai Ylänuoli |
+| Siirrä valittu ohjausobjekti seuraavaan paikkaan (kun siirtotyökalu on käytössä)                                              | Sarkain tai Oikea nuoli tai Alanuoli    |
+| Siirrä valittu ohjausobjekti edelliseen paikkaan (kun siirtotyökalu on käytössä)                                          | Vaihto + Sarkain tai Vasen nuoli tai Ylänuoli |
 | Käytä piilotustyökalua (mukauttamistilassa)                                                                       | H                                   |
 | Vaihda nykyisen objektin näkyvyys (piilotustyökalu)                                     | Väli tai Enter                      |
 | Käytä ohitustyökalua (mukauttamistilassa)                                                                       | K                                   |

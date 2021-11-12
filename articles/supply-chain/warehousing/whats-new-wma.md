@@ -10,18 +10,31 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
-ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
+ms.openlocfilehash: 6ab5f6887cb60d3d0434b59cda82b44eca272d7e
+ms.sourcegitcommit: 60ade60f72fd0fa0683f7a3eaf93439d10cf3373
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485619"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655382"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20110"></a>Versio 2.0.11.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Lisätty korotettujen kenttien tuki.
+- Lisätty tuki laitenäppäimistön siirtymistoiminnolle.
+- Parannettu helppokäyttöisyyttä.
+- Parannettu tietokortteja.
+- Parannettu valikkokohdevaiheiden kiertoteitä.
+- Tehty pieniä käyttöliittymäparannuksia.
+- Korjattu ongelma, joka saattoi aiheuttaa sovelluksen kaatumisen viivakoodien lukemisen yhteydessä.
+- Korjattu useita ongelmia, jotka saattoivat saada järjestelmän lopettamaan vastaamisen.
 
 ## <a name="version-20100"></a>Versio 2.0.10.0
 

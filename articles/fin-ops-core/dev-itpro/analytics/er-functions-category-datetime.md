@@ -2,7 +2,7 @@
 title: Luettelo ER-funktioista päivämäärä- ja aikaluokassa
 description: Tässä ohjeaiheessa on tietoja sähköisen raportoinnin (ER) tukemista päivämäärä- ja aikafunktioista.
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f0f421afcaf720366c76c2728721598540a37f0b627123b3386a3174c039a96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760047"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647260"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Luettelo ER-funktioista päivämäärä- ja aikaluokassa
 
@@ -31,8 +31,9 @@ Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan
 
 | Toiminto | Kuvaus |
 |----------|-------------|
-| [AddDays](er-functions-datetime-adddays.md) | Tämä funktio palauttaa *DateTime*-arvon, joka on määritetty päivien määrä ennen määritettyä alkamispäivää tai sen jälkeen. |
-| [DateFormat](er-functions-datetime-dateformat.md) | Tämä funktio palauttaa *Merkkijonoarvon*, joka esittää tietyn päivämääräarvon tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa. |
+| [AddDays](er-functions-datetime-adddays.md) | Tämä funktio palauttaa *[DateTime](er-formula-supported-data-types-primitive.md#datetime)*-arvon, joka on määritetty päivien määrä ennen määritettyä alkamispäivää tai sen jälkeen. |
+| [ChangeTimeZone](er-functions-datetime-changetimezone.md) | Tämä funktio palauttaa *DateTime*-arvon , joka muunnetaan tietystä päivämäärä/aika-arvosta yhdellä aikavyöhykkeellä päivämäärä- ja aika-arvoksi toisella aikavyöhykkeellä. |
+| [DateFormat](er-functions-datetime-dateformat.md) | Tämä funktio palauttaa *[Merkkijono](er-formula-supported-data-types-primitive.md#string)*-arvon, joka esittää tietyn päivämääräarvon tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa. |
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Tämä funktio palauttaa *Merkkijonoarvon*, joka esittää tietyn päivämäärä-/aika-arvon tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Tämä funktio palauttaa *DateTime-arvon*, joka muunnetaan tietystä tekstiarvosta tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa päivämäärä-/aika-arvoksi. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Tämä funktio palauttaa *DateTime-arvon* , joka muunnetaan tietyn päivämäärän arvosta päivämäärä- ja aika-arvoksi koordinoidussa yleisajassa (Greenwichin aika \[GMT\]). |

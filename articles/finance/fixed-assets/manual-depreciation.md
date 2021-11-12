@@ -1,7 +1,7 @@
 ---
 title: Manuaalinen poisto
 description: Tämä artikkeli sisältää manuaalisen poistomenetelmän yleiskatsauksen.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 444506bdbf33cb1bd05ae7b55f2059e0eb1ab5b136e8fb1adb6f9e5f53b7067c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743022"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674824"
 ---
 # <a name="manual-depreciation"></a>Manuaalinen poisto
 
@@ -30,11 +30,11 @@ Tämä artikkeli sisältää manuaalisen poistomenetelmän yleiskatsauksen.
 
 Kun määrität käyttöomaisuuden poistoprofiilin ja valitset **Poistoprofiilit**-sivun **Menetelmä**-kentässä **Manuaalinen**, poistoprofiiliin määritetty käyttöomaisuuden poisto määräytyy sen prosentin mukaan, joka annetaan kalenterivuoden kullekin aikavälille. Aikavälit, joille määrität prosenttiosuuden, kirjataan **Poistoprofiilit**-sivun **Yleinen**-pikavälilehden **Kausifrekvenssi**-kentässä valitun arvon mukaisesti. Valittavana on seuraavat arvot:
 
--   Vuosittain
--   Kuukausittain
--   Neljännesvuosittain
--   Puolivuosittain
--   Päivittäin
+- Vuosittain
+- Kuukausittain
+- Neljännesvuosittain
+- Puolivuosittain
+- Päivittäin
 
 Valitse kausifrekvenssin valinnan jälkeen **Manuaalinen aikataulu** ja määritä kunkin kirjausvälin prosenttiosuudet. Manuaaliset aikataulut ja kirjausvälit määrittävät yhdessä poistosumman, kuten artikkelissa myöhemmin käsiteltävissä esimerkeissä. Manuaalinen poisto lasketaan aina prosenttina hankintahinnasta. Manuaalisissa poistoissa poistoväleille annettavien prosenttien summan ei tarvitse olla 100 prosenttia. Manuaalinen poisti on joustava poistomenetelmä, jota käytetään usein määritettäessä **Kirjat**-sivulla lisäpoistoprofiili, esimerkiksi muu kuin kausittainen poisto jotain erityistarkoitusta (esimerkiksi verotusta) varten.
 

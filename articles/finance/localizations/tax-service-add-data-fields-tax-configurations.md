@@ -2,7 +2,7 @@
 title: Tietokenttien lisääminen verokonfiguraatioihin
 description: Tässä ohjeaiheessa kerrotaan, miten veromäärityksiä mukautetaan lisäämällä tietokenttiä.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb10fb5feb317dca5253eea6e5694a3960a58a7d
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 590c2d62995f260ba4277e1031349b0dc43f1417
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500143"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674897"
 ---
 # <a name="add-data-fields-in-tax-configurations"></a>Tietokenttien lisääminen verokonfiguraatioihin
 
@@ -31,8 +31,12 @@ Tässä ohjeaiheessa kerrotaan, miten verokonfiguraatioita mukautetaan [käyttä
 ## <a name="customize-the-tax-data-model"></a>Veron tietomallin mukauttaminen
 
 1. Siirry Microsoft Dynamics 365 Financessa kohtaan **Sähköinen raportointi** > **Verokonfiguraatiot**.
-2. Valitse määrityspuussa **Verotietomalli – Eurooppa**. Valitse siten toimintoruudussa **Luo konfigurointi**.
-3. Valitse avattavasta valintaikkunasta **Verotettavan asiakirjan malli, johdettu nimestä: Verotietomalli – Eurooppa, Microsoft**, kirjoita uuden verotietomallin nimi ja valitse sitten **Luo konfiguraatio**.
+2. Valitse määrityspuussa **Verolaskennan tietomalli**. Valitse siten toimintoruudussa **Luo konfigurointi**. 
+
+  > [!NOTE] 
+  > Jos käytettävissä ei ole määrityslähdettä, luo sellainen ja ota se käyttöön veronmäärityksessäsi. Lisätietoja on kohdassa [Määrityspalvelujen luonti ja merkitseminen aktiiviseksi](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+  
+3. Valitse avattavasta valintaikkunasta **Verotettavan asiakirjan malli, johdettu nimestä: Verolaskentatietomalli, Microsoft**, kirjoita uuden verotietomallin nimi ja valitse sitten **Luo konfiguraatio**.
 4. Valitse juuri luomasi verotietomalli ja valitse sitten toimintoruudussa **Suunnitteluohjelma**.
 5. Laajenna tietomallipuu, valitse **Rivit** ja valitse sitten **Uusi**.
 6. Kirjoita **Luo solmu** -valintaikkunaan nimi, määritä kohteen tyyppi ja valitse sitten **Lisää**.
@@ -43,8 +47,8 @@ Tässä ohjeaiheessa kerrotaan, miten verokonfiguraatioita mukautetaan [käyttä
 ## <a name="customize-the-tax-configuration"></a>Veromäärityksen mukauttaminen
 
 1. Siirry Financessa kohtaan **Sähköinen raportointi** > **Verokonfiguraatiot**.
-2. Valitse määrityspuussa **Veromääritys – Eurooppa**. Valitse siten toimintoruudussa **Luo konfigurointi**.
-3. Valitse avattavasta valintaikkunasta **Veropalvelun määritys, johdettu nimestä: Veromääritys – Eurooppa, Microsoft**, kirjoita uuden veromäärityksen nimi ja valitse sitten **Luo konfiguraatio**.
+2. Valitse määrityspuussa **Verolaskennan tietomallimääritys**. Valitse siten toimintoruudussa **Luo konfigurointi**.
+3. Valitse avattavasta valintaikkunasta **Veropalvelun määritys, johdettu nimestä: Veronlaskentamääritys – Eurooppa, Microsoft**, kirjoita uuden veromäärityksen nimi ja valitse sitten **Luo konfiguraatio**.
 4. Valitse juuri luomasi veromääritys ja valitse sitten toimintoruudussa **Suunnitteluohjelma**.
 5. Valitse **Ominaisuudet**-osan **Tietomalli**-kentästä aiemmin luomasi mukautettu verotietomalli.
 6. Valitse **Tietomallin versio** -kentästä verotietomallin valmis versio.

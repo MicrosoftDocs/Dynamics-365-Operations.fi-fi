@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721004"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713745"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Yritystenvälisen yhteistyön sähköisen kaupankäynnin sivuston määrittäminen
 
@@ -37,7 +37,7 @@ Yritysten välisillä (B2B) verkkokauppasivustoilla on joitakin avaintoimintoja,
 
 Voit käyttää sivustotason asetuksia sivustonmuodostajassa kohdassa **Sivuston asetukset \> Laajennukset**. Seuraavat kaksi sivustotason asetusta koskevat B2B-skenaarioita:
 
-- **Ota käyttöön asiakastilin maksut** – Tämän ominaisuuden avulla käyttäjät voivat maksaa tilauksista asiakastilien avulla. Käytettävissä olevat arvot ovat **Käytössä B2B-asiakkaille**, **Käytössä B2C-asiakkaille**, **Käytössä kaikille asiakkaille** ja **Pois käytöstä kaikilta asiakkailta**. Jos B2B-sivusto tukee asiakastilejä, valitse **Käytössä B2C-asiakkaille**.
+- **Ota käyttöön asiakastilin maksut** – Tämän ominaisuuden avulla käyttäjät voivat maksaa tilauksista asiakastilien avulla. Käytettävissä olevat arvot ovat **Käytössä B2B-asiakkaille**, **Käytössä B2C-asiakkaille**, **Käytössä kaikille asiakkaille** ja **Pois käytöstä kaikilta asiakkailta**. Jos B2B-sivusto tukee asiakastilejä, valitse **Käytössä B2B-asiakkaille**.
 - **Ota käyttöön tilausten määrärajat** – Tämän ominaisuuden avulla voit määrittää kullekin tuotteelle tai luokalle tilattavan nimikemäärän rajoitukset. Käytettävissä olevat arvot ovat **Käytössä B2B-asiakkaille**, **Käytössä B2C-asiakkaille**, **Käytössä kaikille asiakkaille** ja **Pois käytöstä kaikilta asiakkailta**.
 
 > [!NOTE]

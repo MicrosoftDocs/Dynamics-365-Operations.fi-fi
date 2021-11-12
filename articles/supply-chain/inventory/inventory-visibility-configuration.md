@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474673"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678468"
 ---
 # <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
 
@@ -366,16 +366,12 @@ Indeksin antaa mahdollisuuden tehdä kyselyjä käytettävissä olevassa varasto
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Varausmääritykset (valinnainen)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Varausmääritys on välttämätön, jos alustavaa varaustoimintoa halutaan käyttää. Määrityksessä on kaksi keskeistä osaa:
 
 - Alustavan varauksen yhdistämismääritys
 - Alustavan varauksen hierarkia
 
 ### <a name="soft-reservation-mapping"></a>Alustavan varauksen yhdistämismääritys
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Varausta tehtäessä halutaan ehkä tietää, riittääkö käytettävissä oleva varasto varaukseen. Vahvistus on linkitetty laskennalliseen mittaan, joka ilmaistaan fyysisten mittojen yhdistelmän laskentakaavana.
 
@@ -446,8 +442,6 @@ Niinpä jos `iv.SoftReservOrdered`-varausta yritetään tehdä ja jos määrä o
 > Kun kutsut varausten ohjelmointirajapintaa, voit ohjata varausten vahvistamista määrittämällä `ifCheckAvailForReserv`-totuusarvoparametrin pyynnön tekstiosassa. `True`-arvo tarkoittaa, että vahvistus vaaditaan, ja `False`-arvo, että vahvistusta ei vaadita. Oletusarvona on `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Alustavan varauksen hierarkia
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Varaushierarkia ilmaisee dimensiojärjestyksen, joka on määritettävä varauksia tehtäessä. Se toimii samalla tavoin kuin tuoteindeksihierarkia käytettävissä olevaa varastoa koskevissa kyselyissä.
 
@@ -747,8 +741,6 @@ Seuraavassa taulukossa on indeksin oletusmääritys.
 Tässä osassa käsitellään varauksen oletusmääritystä.
 
 #### <a name="reservation-mapping"></a>Varauksen yhdistämismääritys
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Seuraavassa taulukossa on varauksen oletusarvoinen yhdistämismääritys.
 

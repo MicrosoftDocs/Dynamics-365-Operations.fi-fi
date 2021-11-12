@@ -2,7 +2,7 @@
 title: Varastoasetusten käyttäminen
 description: Tässä ohjeaiheessa käsitellään varastoasetuksia ja kuvataan, miten niitä käytetään Microsoft Dynamics 365 Commerce -ohjelmassa.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f57f1f941fe0c0c70394d1ecbf8d88a13c7a3682fdfa8b5439a4f3830f616876
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765263"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647581"
 ---
 # <a name="apply-inventory-settings"></a>Varastoasetusten käyttäminen
 
@@ -39,7 +39,7 @@ Commercen sivustotyökalussa voidaan määrittää tuotteen tai luokan varastora
 
 ## <a name="inventory-settings"></a>Varastoasetukset
 
-Commercessa varastoasetukset määritetään sivustotyökalussa kohdassa **Sivuston asetukset \> Laajennukset \> Varaston hallinta**. Varastoasetuksia on viisi, joista yksi on poistettu käytöstä (vanhentunut):
+Commercessa varastoasetukset määritetään sivustotyökalussa kohdassa **Sivuston asetukset \> Laajennukset \> Varaston hallinta**. Varastoasetuksia on kuusi, joista yksi on poistettu käytöstä (vanhentunut):
 
 - **Ota käyttöön varastotarkistus sovelluksessa** – Tämä asetus ottaa tuotevaraston tarkistuksen pois käytöstä. Osta-ruutu, ostoskori ja nouto myymälästä -moduulit tarkistavat tuotevaraston ja sallivat tuotteen lisäämisen ostoskoriin vain, jos varasto on käytettävissä.
 - **Varastotaso perustuu** – Tämä asetus määrittää, miten varastotasot lasketaan. Käytettävissä olevat arvot ovat **Käytettävissä olevat yhteensä**, **Fyysisesti käytettävissä olevat** ja **Loppu varastosta**. Commercessa varaston kynnysarvo ja alueet voidaan määritellä jokaiselle tuotteelle ja luokalle. Varasto-APIt palauttavat tuotevarastotiedot sekä **käytettävissä olevan kokonaismäärän** että **fyysisen käytettävissä olevan** ominaisuuden osalta. Jälleenmyyjä päättää, käytetäänkö **Käytettävissä olevaa** tai **Fyysisesti käytettävissä olevaa** arvoa varaston inventoinnin ja varasto- ja loppuvarastotilojen vastaavien alueiden määrittämiseen.
@@ -48,8 +48,13 @@ Commercessa varastoasetukset määritetään sivustotyökalussa kohdassa **Sivus
 
 - **Usean varaston varastotaso** – Tämän asetuksen avulla varastotaso voidaan laskea oletusvarastoa tai useita varastoja vasten. **Perustuu yksittäiseen varastoon** -vaihtoehto laskee varastotasot oletusvaraston perusteella. Sähköisen kaupankäynnin toimipiste voi myös helpottaa täyttämistä viitaten useisiin varastoihin. Tässä tapauksessa varaston käytettävyys ilmaistaan **lähetys- ja noutovarastojen koostamisen perusteella**. Jos asiakas esimerkiksi ostaa nimikkeen ja valitsee toimitustyypiksi "lähetys", nimike voidaan lähettää mistä tahansa täyttämisryhmän varastosta, jossa on käytettävissä oleva varasto. Tuotetietosivulla näkyy lähetyssanoma "Varastossa", jos täyttämisryhmän käytettävissä olevalla lähetysvarastolla on varastoa. 
 
-> [!IMPORTANT] 
-> **Usean varaston varastotaso** -asetus on käytettävissä Commerce-versiosta 10.0.19 lähtien. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+    > [!IMPORTANT] 
+    > **Usean varaston varastotaso** -asetus on käytettävissä Commerce-versiosta 10.0.19 lähtien. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Tuoteluettelosivujen varastoasetukset** – Tällä asetuksella määritetään, miten varastosta loppuneet tuotteet näkyvät tuotekokoelman ja hakutulosten moduulien muodostamisissa tuoteluetteloissa. Käytettävissä ovat arvot **Näytä tilauksessa muiden tuotteiden kanssa**, **Piilota varastosta loppuneet tuotteet luettelosta** ja **Näytä varastosta loppuneet tuotteet luettelon lopussa**. Tämän asetuksen käyttö edellyttää, että tietyt edellytysasetukset määritetään ensin Commerce-pääkonttorisovelluksessa. Lisätietoja: [Varastotietoisuuden käyttöönotto hakutulosmoduulissa](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > **Tuoteluettelosivujen varastoasetukset** -asetus on käytettävissä Commerce-versiosta 10.0.20 lähtien. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Varastoalueet** – Tämä asetus määrittää, mitkä varastoalueet, joille sanoma näytetään sivustomoduuleissa. Sitä voi käyttää vain, jos **Käytettävissä oleva kokonaisarvo** tai **Käytettävissä oleva fyysinen** arvo on valittu **Varastotaso perusteella** -asetukselle. Käytettävissä olevat arvot ovat **Kaikki**, **Alhaiset ja loppunut varastosta** ja **Loppunut varastosta**.
 

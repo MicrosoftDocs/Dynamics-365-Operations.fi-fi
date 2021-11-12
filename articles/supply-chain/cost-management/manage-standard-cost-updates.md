@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 942b144c78176e9a00cdc12101e2948e8aa4685e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579757"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678662"
 ---
 # <a name="manage-standard-cost-updates"></a>Vakiokustannuspäivitysten hallinta
 
@@ -43,8 +43,6 @@ Seuraavassa esimerkissä kuvataan, miten yhden version ja kahden version menette
 Tässä esimerkissä käytettiin vielä yhtä kustannuslaskelmaversiota koko vuoden 2020 päivitysten hallintaan. Lisäkustannuslaskelmaversioita voi käyttää useita; esimerkiksi jokaisella päivityserällä voi olla oma, erillinen versionsa. Kun käytössä on useampia kustannuslaskentoja, varmistus on ilmaistava aktiivisina kustannuksina, koska ne jakautuvat useille kustannuslaskentaversioille.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Vakiokustannusten uudelleenarvostuksen taloushallinnon dimensiot
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Uuden vakiohinnan aktivointi arvostaa yleensä uudelleen käytettävissä olevan varaston arvon vakiokustannuksen uudelleenarvostustapahtumien perusteella. Nimikkeen taloushallinnon dimensiot kirjataan yleensä tapahtumiin. Jos kuitenkin haluat hallita taloushallinnon dimensioiden kirjaamista ja kirjaamistapaa, ota *Varaston vakiokustannusten uudelleenarvostuksen taloushallinnon dimensioihin oletusarvoihin palaamisen vaihtoehdot* -toiminto käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Kun tämä toiminto on otettu käyttöön valitse **Kustannusten hallinta > Varaston kirjanpitokäytäntöjen määrittäminen > Parametrit** ja määritä avattavassa **Taloushallinnon dimension alkuperä** luettelossa jokin seuraavista arvoista:
 

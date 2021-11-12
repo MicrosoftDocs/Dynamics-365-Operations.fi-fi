@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fac6a0232f7e51e859fcc5b23244be092ce8d76123ec42f586063a02abab603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e846cde14fe078d6675ec31d1a3271f751dd6468
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722788"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647127"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
@@ -72,12 +72,9 @@ Organisaatiosi saattaa hallita toimittajan laskujen tarkistusprosessia työnkulk
 Seuraavilla tavoilla voi estää laskua lähtemästä työnkulkuun.
 
 - **Laskun kokonaissumma ja rekisteröity kokonaissumma eivät ole samat.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan yhteissummat eivät ole yhtä suuret. Hälytyksen kautta voit korjata saldot, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskun kokonaissumma ja rekisteröidyn laskun kokonaissumma eivät ole samat** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön. 
-
 - **Lasku sisältää kohdistamattomia kuluja.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan laskulla on kohdistamattomia kuluja. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos toimittajan laskussa on kohdistamattomia kuluja** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
-
 - **Lasku sisältää saman laskunumeron kuin toinen kirjattu lasku.** Laskun lähettänyt henkilö saa sanoman, jossa ilmoitetaan, että lasku, jonka numero on kaksoiskappale, löydettiin. Numeron kaksoiskappaleen voi korjata, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä hälytys näytetään, kun Ostoreskontra-parametrin **Tarkista käytetty laskunumero** arvoksi on määritetty **Hylkää kaksoiskappale**. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskunumero on jo olemassa kirjatussa laskussa ja järjestelmää ei ole määritetty hyväksymään laskunumeroiden kaksoiskappaleita** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
-
-- **Lasku sisältää rivin, jonka laskun määrä on pienempi kuin täsmäytetty tuotteen vastaanottomäärä.** Henkilö, joka lähettää laskun tai yrittää kirjata sen, saa sanoman, jonka mukaan määrät eivät täsmää. Sanoman kautta voit korjata arvot, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä ominaisuus on käytettävissä, jos **Estä toimittajan laskujen kirjaaminen ja lähettäminen työnkulkuun** -parametriin on otettu käyttöön **ominaisuuden hallinta** -sivulla ja **Ostoreskontran parametrit** -sivun **Estä kirjaus ja lähetys työnkulkuparametriin** -toiminto on käytössä.  
+- **Lasku sisältää rivin, jonka laskun määrä on pienempi kuin täsmäytetty tuotteen vastaanottomäärä.** Henkilö, joka lähettää laskun tai yrittää kirjata sen, saa sanoman, jonka mukaan määrät eivät täsmää. Sanoman kautta voit korjata arvot, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä ominaisuus on käytettävissä, jos **Estä toimittajan laskujen kirjaaminen ja lähettäminen työnkulkuun** -parametriin on otettu käyttöön **ominaisuuden hallinta** -sivulla ja **Ostoreskontran parametrit** -sivun **Estä kirjaus ja lähetys työnkulkuparametriin** -toiminto on käytössä.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Toimittajan laskujen täsmäytys tuotteen vastaanottoihin
 
@@ -122,9 +119,32 @@ Peruuttamattoman virheen vuoksi pysäytetyn työnkulun esiintymän työnkulun ti
 Voit palauttaa työnkulun tilaksi **Luonnos** käyttämällä **Työnkulkuhistoria**-sivua. Voit avata tämän sivun **Toimittajan lasku** -kohdasta tai kohdasta **Yhteiset > Kyselee** > Työnkulku. Voit nollata työn kulun tilaksi **Luonnos** valitsemalla **Peruuta**. Voit myös nollata työn kulun tilaksi Luonnos valitsemalla **Peruuta**-toiminnon **Toimittajan lasku**- tai **Odottavat toimittajan laskut** -sivulla. Kun työnkulun tila palautetaan **luonnos**-tilaan, se on muokattavissa **toimittajan lasku** -sivulla.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Odottavat toimittajan laskut -sivun laskun kokonaissumman tarkasteleminen
+
 Voit tarkastella laskujen kokonaismäärää **Odottavat toimittajan laskut** -sivulla ottamalla käyttöön **Näytä laskun loppusumma odottavien toimittajalaskujen luettelossa** -parametrin **Ostoreskontran parametrit** -sivulla. 
 
+## <a name="vendor-open-transactions-report"></a>Toimittajan avointen tapahtumien raportti
 
+**Toimittajan avoimet tapahtumat** -raportti antaa yksityiskohtaisia tietoja kunkin toimittajan avoimista tapahtumista kulloinkin määritetyn päivän tilanteen mukaan. Tätä raporttia käytetään usein tarkastusmenettelyn aikana toimittajan kirjaustapahtumien ja kirjanpidon tilitapahtumien välisen tasapainon tarkistamisessa.
+
+Raportti sisältää seuraavat tiedot kunkin tapahtuman osalta:
+
+- Laskun numero
+- Tapahtuman päivämäärä
+- Tositenumero
+- Tapahtuman summa tapahtumavaluutassa ja kirjanpitovaluutassa
+- Maksettavien saldo tapahtumavaluutassa ja kirjanpitovaluutassa
+- Saatavien saldo tapahtumavaluutassa ja kirjanpitovaluutassa
+- Välisumma kirjanpitovaluutassa
+- Maksun eräpäivä
+
+### <a name="filter-the-data-on-the-report"></a>Raportin tietojen suodattaminen
+
+Kun luot **Toimittajan avoimet tapahtumat** -raportin, seuraavat oletusparametrit ovat käytettävissä. Voit käyttää niitä suodattamaan raporttiin sisältyvät tiedot.
+
+- **Jätä tuleva tilitys pois** – Valitse tämä valintaruutu, jos haluat jättää pois tapatumat, jotka tilitetään **Avoimet tapahtumat päivänä** -kenttään syötetyn päivämäärän jälkeen.
+- **Avoimet tapahtumat päivänä** – Anna päivämäärä, jotta kyseisenä päivänä avoimina olevat tapahtumat sisällytetään. Jos et syötä päivämäärää, tämän kentän arvoksi määritetään enimmäispäivämäärä. (Enimmäispäivämäärä on viimeisin päivämäärä, jonka järjestelmä hyväksyy, eli 31.12.2154.) Oletusarvoisesti tämän kentän arvoksi määritetään siihen viimeksi syötetty päivämäärä, kun raportti suoritetaan seuraavan kerran.
+
+Voit rajoittaa raporttiin sisällytettäviä siirtotietoja edelleen **Sisällytettävä tietue** -kentän suodattimien avulla.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 1fcea155f330fa1eced8035f11f7cf204d3b2de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 382814eb3d4322ed52bd39fcb22740201335614e
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575700"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7679002"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Ajoitus resurssivalintojen avulla toiminnon perusteella
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Määrittämällä tuotantoreitityksen operaation resurssitarpeet voit määrittää, mitä operaation suorittamiseen tarvitaan. Operaatio voi esimerkiksi edellyttää tiettyä resurssia, resurssiryhmää tai taitojen tai toimintojen yhdistelmää. Tässä aiheessa kuvataan resurssin valintaa rajattoman kapasiteetin ajoituksen aikana, kun toimintoja määritetään operaation resurssitarpeiksi.
 
