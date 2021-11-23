@@ -706,61 +706,19 @@
               href: general-ledger/electronic-messaging-setup.md
             - name: Sähköisten sanomatoimintojen käyttäminen
               href: general-ledger/electronic-messaging-work-with-em.md
-            - name: Excel-raportin muodostaminen kutsumalla yksinkertaista sähköisen raportoinnin muotoa
+            - name: Kutsu yksinkertaista vienti-ER-muotoa luodaksesi Excel-raportin
               href: general-ledger/electronic-messaging-example.md
-        - name: Kulujenhallinta
-          items:
-            - name: Kulujenhallinnan yleiskatsaus
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Kuluraporttien uusi toteutus
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Kulujen hallinnan suunnittelu
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Kulujen hallinnan parametrit
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Kulujen hallinnan mobiilityötila
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Kulujenhallinnan työnkulkujen määrittäminen
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: Kulujenhallinnan työnkulku
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Hallitse kulujen delegointia
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Kulukuittien käsittely
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Luottokorttitapahtumien tuonti ja ylläpito
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Kuluraportin jaot
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Konsernin sisäiset kulut
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Määritä kulukäytännöt
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Näytä kuluraportti
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Kuluraportin kirjaaminen
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Kuluraportit ja useita hyväksyjiä
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: 'ALV:n palautus matkalaskuissa'
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Päivärahasäännöt
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Matkustusehdotukset
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Henkilökohtaiset kulut kuluraportissa
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Käyttöomaisuuserät
           items:
-            - name: Käyttöomaisuuden aloitussivu
+            - name: Käyttöomaisuuserän aloitussivu
               href: fixed-assets/fixed-assets.md
-            - name: Luo käyttöomaisuuserä
+            - name: Käyttöomaisuuden luominen
               href: fixed-assets/tasks/create-fixed-asset.md
             - name: Käyttöomaisuuden lisäyksen määrittäminen
               href: fixed-assets/tasks/enter-addition-fixed-asset.md
             - name: Ehdota käyttöomaisuuden hankintaa
               href: fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-            - name: Luokittele käyttöomaisuus uudelleen
+            - name: Luokittele käyttöomaisuuserät uudelleen
               href: fixed-assets/tasks/reclassify-fixed-assets.md
             - name: Käyttöomaisuuden työtila
               href: fixed-assets/fixed-asset-management-workspace.md
@@ -804,7 +762,7 @@
               href: fixed-assets/acquire-assets-procurement.md
             - name: Määritys ja integraatio
               items:
-                - name: Käyttöomaisuuserien määrittäminen
+                - name: Käyttöomaisuuden määrittäminen
                   href: fixed-assets/set-up-fixed-assets.md
                 - name: Käyttöomaisuuden kirjausprofiilien määrittäminen
                   href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
@@ -1244,17 +1202,15 @@
               href: general-ledger/financial-reporting-faq.md
         - name: Finance Insights
           items:
-            - name: Finance Insights -kotisivu
+            - name: Finance Insightsin aloitussivu
               href: finance-insights/finance-insights-home-page.md
-            - name: Määritys ja hallinta
+            - name: Asetukset ja hallinta
               items:
-                - name: Finance Insightsin määrittäminen julkista esiversiota varten
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Finance Insightsin määrittäminen yksityistä esiversiota varten
+                - name: Finance Insightsin määritys
                   href: finance-insights/configure-for-fin-insites.md
-                - name: Asiakkaan maksuennusteiden ottaminen käyttöön
+                - name: Ota käyttöön asiakkaan maksuennusteet
                   href: finance-insights/enable-cust-paymnt-prediction.md
-                - name: Kassavirtaennusteiden ottaminen käyttöön
+                - name: Ota käyttöön kassavirran ennustaminen
                   href: finance-insights/enable-cash-flow-forecasting.md
                 - name: Budjettiehdotusten ottaminen käyttöön
                   href: finance-insights/enable-budget-proposal.md
@@ -1286,95 +1242,13 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Tilannevedosten yleiskatsaus
                   href: finance-insights/payment-snapshots.md
-            - name: Finance Insightsin vianmäärityksen usein kysytyt kysymykset
+            - name: Finance Insightsin vianetsinnän usein kysytyt kysymykset
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: Projektinhallinta ja kirjanpito
-          items:
-            - name: Projektinhallinnan ja kirjanpidon yleiskatsaus
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Konsernin sisäinen laskutus
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Konsernin sisäisen projektilaskutuksen määrittäminen
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: Määritä työn ja kulujen vakiokustannukset
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Toimittajan maksupidätysehtojen luominen ja käyttäminen
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Maksettaessa maksettavien toimittajan maksujen määrittäminen ja käyttäminen
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Projektikustannusten jaksotus ostokuiteissa
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Projektin laskutus
-              href: accounts-payable/project-invoicing.md
-            - name: Projektisopimukset
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Tilaan perustuvien edistyksellisten laskutussopimusten luominen
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: Projektiennusteet ja -budjetit
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Projektibudjettien ennustemallien luominen
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Projektibudjettien siirtäminen tilikauden lopussa
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Projektin myyntitilaukset
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Projektin ostotilaukset
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Projektitarjoukset
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Projektitarjouksen vahvistaminen, päivittäminen ja lähettäminen'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Tarjouksen siirtäminen projektiin
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Projektin resursointi
-              items:
-                - name: Projektin resursoinnin yleiskatsaus
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Projektiresurssien määrittäminen
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Resurssin osaamisalueiden hallinta
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Uuden projektin luominen
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Roolipohjaisen hinnoittelun määrittäminen
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Projektiryhmän luominen
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Resurssin kapasiteetin synkronoiminen
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Projektiresurssin ajoituksen suorituskyky
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Roolien määrittäminen työrakennemalleissa
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: Resurssin toteuttaminen suunnitelluille resursseille
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: Ostotilauksen nimikkeiden vastaanottaminen nimiketarpeen perusteella
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Työrakenteet
-              items:
-                - name: Työrakenteet – yleiskatsaus
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Microsoft Project Client -integrointi
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Project-mobiilisovellusten yleiskuvaus
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Projektin aikamerkintöjen mobiilityötila
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Project Timesheet -mobiilisovellus
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Projektin työaikaraportit mobiililaitteessa
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Mukautettujen kenttien toteuttaminen Project Timesheet -mobiilisovelluksessa
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Projektimäärärahat
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Projektiarvion poistaminen
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Julkinen sektori
           items:
             - name: Julkisen sektorin aloitussivu
               href: public-sector/public-sector-functionality.md
-            - name: Julkisen sektorin toimintojen suunnittelu
+            - name: Julkisen sektorin toiminnallisuuden suunnitelma
               href: public-sector/plan-public-sector-functionality.md
             - name: Maksuraporttien kansi- ja allekirjoitussivujen luominen julkiselle sektorille
               href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
@@ -1800,11 +1674,13 @@
                       href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'NF-e XML- ja DANFE-asiakirjojen määritys, tuonti ja tarkistus'
                       href: localizations/latam-bra-set-up-import-nfe.md
-                    - name: Liittovaltion NF-e-parametrien määrittäminen
+                    - name: Määritä NF-e-liittovaltioparametrit
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
-                    - name: Veroviranomaisen NF-e-parametrien määrittäminen
+                    - name: Määritä NF-e-parametrit veroviranomaiselle
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
-                    - name: NT2020.005 – sähköisen veroasiakirjan (NF-e) asettelun ja vahvistuksen päivitykset
+                    - name: Siirrä NF-e-XML-tiedostot liitteinä
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+                    - name: NT2020.005 – Asettelu- ja vahvistuspäivitykset sähköisessä veroasiakirjassa (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: 'NT2020.006 – Välittäjän myynnin digitaalinen alusta NF-e:lle'
                       href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
@@ -2186,15 +2062,17 @@
                       href: localizations/emea-tax-point-date.md
                     - name: 'ALV:n ilmoittaminen'
                       href: localizations/emea-vat-reporting.md
-                    - name: ALV-ilmoituksen luominen ja lähettäminen
+                    - name: ALV-raporttien luominen ja lähettäminen
                       href: localizations/tasks/create-submit-vat-report.md
-                - name: Tilitettävien tapahtumien näyttäminen
+                - name: Tapahtumien tarkasteleminen tilityksessä
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Taloudellinen syy
+                  href: localizations/emea-financial-reason.md
             - name: Suomi
               items:
-                - name: Suomi – yleiskatsaus
+                - name: Suomen yleiskatsaus
                   href: localizations/finland.md
-                - name: Suomen arvonlisäveromaksun raportti
+                - name: Suomen arvonlisäveron maksuraportti
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
             - name: Ranska
               items:
@@ -2746,15 +2624,19 @@
                   href: localizations/emea-ita-exil-separate-account-credit.md
                 - name: Järjestä myyntilaskurivit pakkausluettelon mukaan
                   href: localizations/emea-ita-exil-invoicing-packing-slips.md
-                - name: Nollalaskujen kirjaaminen
+                - name: Nollasummaisten laskujen kirjaaminen
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Pankkitietojen käytettävyyden parannus
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Italian Intrastat
-                  href: localizations/emea-ita-intrastat.md
-                - name: Tuonnin ja viennin kirjaaminen Intrastat-raportointia varten
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
-                - name: Muut kulut kilogrammalta Intrastat-ilmoituksessa
+                - name: Intrastat
+                  items:
+                    - name: Italian intrastat
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Saapumisten ja lähetysten kirjaaminen Intrastatiin
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Intrastatin (IT) tiedostomuoto
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
+                - name: Sekalaiset kulut kiloa kohden Intrastat-ilmoituksessa
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Aiesopimukset – laskutuksen tavalliset viejät
                   href: localizations/emea-ita-exil-intent-letter.md
@@ -3104,17 +2986,19 @@
                   href: localizations/emea-pol-fixed-assets-depreciation.md
                 - name: Käyttöomaisuuden luovutustoimintojen laajennus
                   href: localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
-                - name: Ulkomaanvaluutan uudelleenarvostus
+                - name: Ulkomaanvaluutan valuutan uudelleenarvostus
                   href: localizations/emea-foreign-currency-revaluation.md
-                - name: Palautettavissa oleva pakkaus
+                - name: Palautettava pakkaus
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Arvonlisäveroraportit
                   href: localizations/emea-pol-sales-tax-reports.md
-                - name: Varastokohtaisten numerosarjojen määrittäminen
+                - name: Puolan Intrastat
+                  href: localizations/emea-pol-intrastat.md
+                - name: Määritä numerosarjat varaston mukaan
                   href: localizations/emea-pol-number-sequence-warehouses.md
-                - name: Vakiotarkistustiedosto
+                - name: Vakioseurantatiedosto
                   href: localizations/emea-pol-standard-audit-file-saf.md
-                - name: Veron korko ja vapaa korko
+                - name: Veron korot ja vapaan käden korko
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Liikevaihdon saldoilmoitus
                   href: localizations/emea-pol-turnover-balances-statement.md
@@ -4375,7 +4259,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Suhteellinen polku tietojen sidonnoissa
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
-            - name: Sähköisen raportoinnin ratkaisujen käyttäminen Financessa
+                - name: Suunnittele lausekkeet kutsumaan sovellusluokan menetelmiä
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
+            - name: ER-ratkaisujen käyttäminen Financessa
               items:
                 - name: Kehyksen määrittäminen
                   items:

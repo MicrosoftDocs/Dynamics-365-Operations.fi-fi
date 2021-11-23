@@ -1166,17 +1166,19 @@
                   href: power-platform/enable-virtual-entities.md
                 - name: Power Apps -portaalit Finance and Operationsin kanssa
                   href: power-platform/power-portal-reference.md
-                - name: Finance and Operations -virtuaaliyksiköiden usein kysytyt kysymykset
+                - name: Finance and Operationsin virtuaalisten yksiköiden usein kysytyt kysymykset
                   href: power-platform/faq.md
             - name: Liiketoimintatapahtumat
               items:
                 - name: Liiketoimintatapahtumien yleiskatsaus
                   href: business-events/home-page.md
-                - name: Sovellusliiketoimintatapahtumat
+                - name: Liiketoimintatapahtumien päätepisteiden hallinta
+                  href: business-events/managing-business-event-endpoints.md
+                - name: Sovellusliiketoiminnan tapahtumat
                   href: business-events/app-business-events.md
                 - name: Työnkulun liiketoimintatapahtumat
                   href: business-events/business-events-workflow.md
-                - name: Liiketoimintatapahtumien eräkäsittely
+                - name: Eräliiketoiminnan tapahtumat
                   href: business-events/system-business-events.md
                 - name: Hälytykset liiketoimintatapahtumina
                   href: business-events/alerts-business-events.md
@@ -1194,21 +1196,25 @@
                   items:
                     - name: Liiketoimintatapahtumat ja Power Automate
                       href: business-events/how-to/how-to-flow.md
-                    - name: Liiketoimintatapahtumat ja Azuren tapahtumaruudukko
+                    - name: Liiketoimintatapahtumat ja Azure-tapahtumaverkko
                       href: business-events/how-to/how-to-eventgrid.md
-                    - name: Liiketoimintatapahtumat ja Azure-palveluväylä
+                    - name: Liiketoimintatapahtumat ja Azuren palveluväylä
                       href: business-events/how-to/how-to-servicebus.md
+                    - name: Liiketoimintatapahtumat ja Azuren palveluväyläjono
+                      href: business-events/how-to/how-to-servicebus-queue.md
                     - name: Liiketoimintatapahtumat ja työnkulun hyväksynnät
                       href: business-events/how-to/how-to-workflow.md
                     - name: Liiketoimintatapahtumat ja Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
-                    - name: Liiketoimintatapahtumat ja Azuren tapahtumatoiminnot
+                    - name: Liiketoimintatapahtumat ja Azuren tapahtumakeskukset
                       href: business-events/how-to/event-hub.md
-                    - name: Tilikauden sulkemisen liiketoimintatapahtumat
+                    - name: Tapahtumien tilaaminen Dataversessä
+                      href: business-events/how-to/how-to-dataverse-events.md
+                    - name: Liiketoimintatapahtumat tilikauden lopussa
                       href: business-events/how-to/period-close.md
             - name: Apuohjelmat
               items:
-                - name: Apuohjelmien yleiskatsaus
+                - name: Apuohjelmien yleiskuvaus
                   href: power-platform/add-ins-overview.md
             - name: Käytännöt ja tietoliikenne
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
@@ -1436,15 +1442,15 @@
               href: process-automation/log-results.md
             - name: Käyttöliittymän mukauttaminen
               href: process-automation/ui-customization.md
-        - name: Regression Suite Automation Tool
+        - name: Regression suite automation tool
           items:
-            - name: Regression Suite Automation Tool – yleiskatsaus
+            - name: Regression suite automation tool – yleiskatsaus
               href: perf-test/rsat/rsat-overview.md
             - name: Asennus ja määrittäminen
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Regression Suite Automation Toolin käyttäminen
+            - name: Regression suite automation toolin käyttäminen
               href: perf-test/rsat/rsat-run.md
-            - name: Regression Suite Automation Toolin testitapausten ylläpitäminen
+            - name: Regression suite automation toolin testitapausten ylläpitäminen
               href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Odotettujen arvojen tarkistaminen
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1454,7 +1460,7 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Parametritiedostojen päivittäminen
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Regression Suite Automation Tool -opas
+            - name: Regression suite automation tool -opas
               href: perf-test/rsat/rsat-tutorial.md
             - name: Muiden kuin järjestelmänvalvojakäyttäjien konfigurointi
               href: perf-test/rsat/rsat-configure-nonadmin.md
@@ -1650,13 +1656,11 @@
                   href: migration-upgrade/2012-upgrade-cutover.md
                 - name: Päivitys versiosta AX 2012 - Tietojen päivityksen usein kysytyt kysymykset
                   href: migration-upgrade/upgrade-faq.md
-                - name: 'Muutokset, jotka vaikuttavat päivitykseen versiosta AX 2012'
+                - name: 'Muutokset, jotka vaikuttavat AX 2012 alkaen päivitykseen'
                   items:
-                    - name: Tilikartan erottimen muuttaminen yksilöiväksi
+                    - name: Tee tilikartan erottimesta yksilöllinen
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: Yhden tositteen kirjauskansioiden ja valuutan uudelleenarvostusten päivittäminen
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
-                    - name: Projektiresurssin ajoituksen tietomalli
+                    - name: Projektin resurssien aikataulutuksen tietomalli
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: Työnkulun alijärjestelmän muutokset
                       href: migration-upgrade/workflow-subsystem.md

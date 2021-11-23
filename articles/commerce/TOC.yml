@@ -1092,7 +1092,7 @@
                       href: add-accordion.md
                     - name: Välilehtimoduuli
                       href: add-tab.md
-                    - name: iFrame-moduuli
+                    - name: Iframe-moduuli
                       href: iframe-module.md
                 - name: Markkinointimoduulit
                   items:
@@ -1272,7 +1272,7 @@
               href: store-performance-information.md
             - name: 'RFM-analyysin (äskettäisyys, toistuvuus ja rahallinen arvo) määrittäminen'
               href: set-up-rfm-analysis.md
-            - name: Microsoft Clarityn määrittäminen Dynamics 365 Commercessa
+            - name: Microsoft Clarityn määrittäminen Dynamics 36 Commercessa
               href: set-up-clarity.md
         - name: Maailmanlaajuinen toiminta
           items:
@@ -2532,15 +2532,17 @@
                   items:
                     - name: Dynamics 365 Commerce -kehityksen parhaat käytännöt
                       href: e-commerce-extensibility/best-practices-dev.md
-                    - name: 'Dynamics 365 Commerce Online SDK:n usein kysytyt kysymykset'
+                    - name: 'Dynamics 365 Commerce online SDK:n usein kysytyt kysymykset'
                       href: e-commerce-extensibility/sdk-faq.md
-                    - name: Dynamics 365 Commerce -kehityksen parhaat virheenkorjauskäytännöt
+                    - name: Dynamics 365 Commercen kehittämisen vianetsinnän parhaat käytännöt
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: Retail SDK
               items:
-                - name: Retail SDK -arkkitehtuuri
+                - name: 'Siirrä Commercen SDK:hon'
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                - name: Retail SDK ‑arkkitehtuuri
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: 'Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten'
+                - name: 'Määritä itsenäisen pakkaus-SDK:n koontiversioputki'
                   href: dev-itpro/build-pipeline.md
                 - name: 'Retail SDK:n siirtäminen Visual Studio 2015:stä Visual Studio 2017:ään'
                   href: dev-itpro/retail-sdk/migrate-sdk.md
@@ -2588,7 +2590,7 @@
                   href: dev-itpro/pos-handler.md
                 - name: Myyntipisteen laajennuspaketin tietojen tarkasteleminen
                   href: dev-itpro/view-pos-extension-package-details.md
-                - name: Testien tallennustoiminto ja Regression Suite Automation Tool pilvimyyntipistettä varten
+                - name: Testien tallennustoiminto ja Regression suite automation tool -pilvimyyntipistettä varten
                   href: dev-itpro/pos-rsat.md
                 - name: Mukautettujen kenttien lisääminen myyntipisteen Summat-ruutuun
                   href: dev-itpro/custom-field-pos-totals.md
