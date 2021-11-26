@@ -42,7 +42,7 @@ Esimerkkijärjestelmässä on seuraavat varastodimensiot.
 | Nimi      | Aktiiviset | Fyysinen varasto | Kirjanpitovarasto |
 |-----------|--------|--------------------|---------------------|
 | Sivusto      | Kyllä    | Kyllä                | Kyllä                 |
-| Varasto | Kyllä    | Kyllä                | Nro                  |
+| Varasto | Kyllä    | Kyllä                | Ei                  |
 
 ### <a name="inventory-model"></a>Varastomalli
 

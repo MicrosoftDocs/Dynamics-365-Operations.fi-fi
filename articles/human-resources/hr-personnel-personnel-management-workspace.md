@@ -1,27 +1,27 @@
 ---
 title: Henkilöstöhallinto-työtila
 description: Tässä ohjeaiheessa kuvataan Henkilöstöhallinto-työtilan käsitteelliset elementit.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923d4a980c3f8f9b3bf5be1f77d8910081123fa08b068f1fd8fa935312d3a101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4332be972ab3dc81e7e4f3cc297a91cd247e721e
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754813"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771335"
 ---
 # <a name="personnel-management-workspace"></a>Henkilöstöhallinto-työtila
 
@@ -33,11 +33,11 @@ ms.locfileid: "6754813"
 
 **Tehtävä**-välilehti sisältää osioita, jotka ryhmittelevät työntekijät sen perusteella, missä vaiheessa he ovat työhönottoprosessissa:
 
-- Palkattavat ehdokkaat
-- Alkaa pian
-- Äskettäin palkatut
-- Lopettaa
-- Lopettaneet
+- **Palkattavat ehdokkaat**
+- **Alkaa pian**
+- **Äskettäin palkatut**
+- **Lopettaa**
+- **Lopettaneet**
 
 Kun työntekijä on jossakin näissä vaiheissa, tietyt toiminnot ovat käytettävissä painikkeena kortissa tai valikossa, joka näytetään, kun valitset oikeasta yläkulmasta kolmen pisteen kuvakkeen (**...**). **Tehtävä**-välilehden osiot ja käytettävissä olevat toiminnot on kuvattu seuraavissa alaosioissa.
 
@@ -51,9 +51,9 @@ Työtilan **Työhön otettavat hakijat** -osio täytetään useista lähteistä:
 
 Kun **Työhön otettavat hakijat** -osiossa näytetään hakijoita, voit suorittaa seuraavat toiminnot valitsemalla kolmen pisteen kuvakkeen ehdokaskortista:
 
-- Hylkää ehdokas
-- Älä palkkaa
-- Palkkaa
+- **Hylkää ehdokas**
+- **Älä palkkaa**
+- **Palkkaa**
 
 > [!NOTE]
 > Jos ehdokasluettelo täytetään Microsoft Dataversesta, kaikissa yrityksissä näytetään samat ehdokkaat, koska ehdokkaaseen ei ole liitetty yritystä.
@@ -65,7 +65,7 @@ Kun **Työhön otettavat hakijat** -osiossa näytetään hakijoita, voit suoritt
 Jos esimiestä ei näytetä kortissa, työntekijälle ei ole kohdistettu toimea.
 
 > [!NOTE] 
-> Suosittelemme, että kohdistat työntekijälle toimen ennen tarkistusluettelon käyttämistä, koska joskus uuden palkatun työntekijän esimiehelle on kohdistettu perehdystehtäviä. Jos toimea ei kuitenkaan ole kohdistettu, uuden työntekijän esimiestä ei voi määrittää. Tällöin esimiehelle tarkoitetut perehdytystehtävät kohdistetaan tarkistusluettelon omistajalle sen sijaan.
+> Toimi kannattaa määrittää työntekijälle, ennen tarkistusluettelon käyttämistä. Perehdytystehtäviä määritetään joskus juuri palkatun työntekijän esimiehelle. Jos toimea ei kuitenkaan ole kohdistettu, uuden työntekijän esimiestä ei voi määrittää. Tällöin esimiehelle tarkoitetut perehdytystehtävät kohdistetaan tarkistusluettelon omistajalle sen sijaan.
 
 Kun **Aloittaa pian** -osiossa näytetään työntekijöitä, seuraavat toiminnot ovat heidän käytettävissään:
 
@@ -85,7 +85,7 @@ Kun **Aloittaa pian** -osiossa näytetään työntekijöitä, seuraavat toiminno
 Luettelossa näytetään oletusarvoisesti työntekijät, jotka palkattiin edellisen seitsemän päivän aikana. Jos haluat muuttaa tätä asetusta, määritä **Viimeksi palkatut** -aikaväli **Henkilöstöhallinnon parametrit** -sivun **Yleiset**-välilehdestä. **Viimeksi palkatut** -osiossa olevat tiedot voidaan näyttää tietyltä päivien, kuukausien tai vuosien ajalta. Jos haluat esimerkiksi nähdä edellisen 14 päivän aikana palkattujen työntekijöiden luettelon, määritä **Kausi**-kentän arvoksi **14** ja **Yksikkö**-kentän arvoksi **Päivät**.
 
 > [!NOTE]
-> **Henkilöstöhallinnon parametrit** -sivulla olevat asetukset ovat yrityskohtaisia. Tästä johtuen aikaväli, jolta tarkastelet viimeksi palkattuja työntekijöitä, voi vaihdella yrityksittäin. Saatat esimerkiksi haluta nähdä kaikki USMF-yrityksen edellisen seitsemän päivän aikana palkkaamat työntekijät. Toisaalta saatat nähdä kaikki USSI-yrityksen edellisen 14 päivän aikana palkkaamat työntekijät. Tällöin sinun on avattava kunkin yrityksen **Henkilöstöhallinnan parametrit** -sivu ja määrittää tarvittavat parametrit.
+> **Henkilöstöhallinnon parametrit** -sivulla olevat asetukset ovat yrityskohtaisia. Tästä johtuen aikaväli, jolta tarkastelet viimeksi palkattuja työntekijöitä, voi vaihdella yrityksittäin. Saatat esimerkiksi haluta nähdä kaikki USMF-yrityksen edellisen seitsemän päivän aikana palkkaamat työntekijät. Toisaalta saatat haluta nähdä kaikki USSI-yrityksen edellisen 14 päivän aikana palkkaamat työntekijät. Siinä tapauksessa avataan kunkin yrityksen **Henkilöstöhallinnan parametrit** -sivu ja määritetään tarvittavat parametrit.
 
 Jos esimiestä ei näytetä kortissa, työntekijälle ei ole kohdistettu toimea.
 
@@ -132,13 +132,9 @@ Kun **Lopettaneet**-osiossa näytetään työntekijöitä, seuraavat toiminnot o
 
 **Työntekijöiden muutokset** -välilehdessä näytetään kaikkien työntekijöihin liittyvien henkilöstötoimintojen luettelo. Tämä luettelo ei ole oletusarvoisesti käytettävissä. Jos haluat ottaa tämän ominaisuuden käyttöön, valitse **Henkilöstöhallinnon jaetut parametrit** -sivun **Henkilöstötoiminnot**-välilehdestä **Ota käyttöön työntekijätoiminnot** -asetukseksi **Kyllä**.
 
-Lisätietoja henkilöstötoiminnoista on kohdassa (Linkki Henkilöstötoiminnot-sivulle).
-
 ## <a name="position-changes-tab"></a>Toimien muutokset -välilehti
 
 **Toimien muutokset** -välilehdessä näytetään kaikkien toimiin liittyvien henkilöstötoimintojen luettelo. Tämä luettelo ei ole oletusarvoisesti käytettävissä. Jos haluat ottaa tämän ominaisuuden käyttöön, valitse **Henkilöstöhallinnon jaetut parametrit** -sivun **Henkilöstötoiminnot**-välilehdestä **Ota käyttöön toimen toiminnot** -asetukseksi **Kyllä**.
-
-Lisätietoja henkilöstötoiminnoista on kohdassa (Linkki Henkilöstötoiminnot-sivulle).
 
 ## <a name="open-positions-tab"></a>Avoimet toimet -välilehti
 
@@ -151,11 +147,11 @@ Lisätietoja henkilöstötoiminnoista on kohdassa (Linkki Henkilöstötoiminnot-
 
 **Vanhentuvat tietueet** -välilehdessä näytetään luettelo kaikista nimikkeistä, jotka ovat vanhentuneet tai jotka vanhentuvat työntekijöille yrityksessä, johon käyttäjä on kirjautunut. Luettelossa näytetään seuraavat nimikkeet:
 
-- Sertifikaatit
-- Tunnus
-- Koeajat
-- Seulonnat
-- Testit
+- **Sertifikaatit**
+- **Tunnus**
+- **Koeajat**
+- **Seulonnat**
+- **Testit**
 
 Jos haluat määrittää, näytetäänkö luettelossa vanhentuneet vai vanhentuvat tietueet, määritä **Henkilöstöhallinnon parametrit** -sivun **Yleiset**-välilehdestä aikaväli **Vanhentuvat tietueet**- tai **Vanhentuvat tietueet** -vaihtoehdoille. **Vanhentuvat tietueet** -välilehden tiedot voidaan näyttää tietyltä määrältä päiviä. Jos haluat nähdä esimerkiksi seuraavan 14 päivän aikana vanhentuvien tietueiden luettelon, määritä **Päivien määrä** -kentän arvoksi **14**.
 

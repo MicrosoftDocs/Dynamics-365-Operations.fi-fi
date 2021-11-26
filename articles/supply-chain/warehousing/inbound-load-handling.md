@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577837"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778056"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Ostotilausten saapuvien kuormien varastokäsittely
 
@@ -205,7 +205,7 @@ Seuraavassa taulukossa on yhteenveto **Salli usean tuotteen vastaanottaminen kuo
 | Usean tuotteen vastaanoton salliminen kuormaa kohden | Kuorman määrä | Kuorman tila | Seteli |
 |---|---|---|---|
 | Kun tämä kenttä ei ole käytettävissä (vanhemmat versiot kuin 10.0.10) | <p>Kuorman määrä määritetään siten, että se on sama kuin rekisteröity määrä.</p><p>Jos kuorman määräksi on päivitetty 0 (nolla), mikä tarkoittaa, että rekisteröintiä ei ole tehty, kuormarivi poistetaan.</p><p>Jos kuormassa ei ole kuormalinjoja, kuorma poistetaan.</p> | _Vastaanotettu_ | Jos tilausrivin rekisteröidylle määrälle on useita kuormia, vain sen kuorman tila, josta vastaanotto kirjattiin, on päivitetty _vastaanotetuksi_. |
-| Nro | <p>Kuorman määrä määritetään siten, että se on sama kuin kuorman tunnukseen liittyvä rekisteröity määrä.</p><p>Jos varastotapahtumalle ei ole rekisteröity kuormatunnusta, käyttäytyminen vastaa versioita ennen versiota 10.0.10.</p> | _Vastaanotettu_ | |
+| Ei | <p>Kuorman määrä määritetään siten, että se on sama kuin kuorman tunnukseen liittyvä rekisteröity määrä.</p><p>Jos varastotapahtumalle ei ole rekisteröity kuormatunnusta, käyttäytyminen vastaa versioita ennen versiota 10.0.10.</p> | _Vastaanotettu_ | |
 | Kyllä | Ei päivityksiä | _Vastaanotettu_, jos rekisteröity kokonaiskuormamäärä on yhtä suuri tai suurempi kuin kuormamäärä | |
 | Kyllä | Ei päivityksiä | _Lähetetty_ tai _työn alla_, jos rekisteröity kokonaiskuormamäärä on vähemmän kuin kuormamäärä | |
 
@@ -267,7 +267,7 @@ Nämä skenaariot edellyttävät _Useita tuotteen vastaanoton kirjauksia kuormaa
 
 1. Avaa **Ominaisuuksien hallinta** -työtila. (Lisätietoja tämän työtilan määrittämisestä ja käyttämisestä on kohdassa [Ominaisuuksien hallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Ota käyttöön _Liitä ostotilauksen varastotapahtumat kuormaan_ -ominaisuudella, joka on lueteltu seuraavalla tavalla:
+1. Varmista, että _Ostotilauksen varastotapahtumien liittäminen kuormaan_ -ominaisuus on otettu käyttöön. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä. Ominaisuus on kuitenkin edelleen mainittu [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) seuraavasti:
 
     - **Moduuli:** _Varastonhallinta_
     - **Ominaisuuden nimi:** _Ostotilauksen varastotapahtumien yhdistäminen kuormalla_

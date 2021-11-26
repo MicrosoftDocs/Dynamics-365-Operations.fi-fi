@@ -1,8 +1,8 @@
 ---
 title: Määritä Human Resourcesin parametrit
 description: Tässä ohjeaiheessa kerrotaan, miten voit määrittää yrityskohtaisia parametreja Dynamics 365 Human Resources -sovelluksessa.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739248"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771432"
 ---
 # <a name="configure-human-resources-parameters"></a>Määritä Human Resourcesin parametrit
 
@@ -65,7 +65,7 @@ Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja.
 
 **Työhönotto**-välilehden asetukset määrittävät asiakirjatyypit, joita käytetään hakijoille automaattisesti lähetettävässä viestinnässä. Voit myös valita avoimille hakemuksille käytettävän työhönottoprojektin.
 
-Työhönottoprojektin vanhentumiselle määritetty ajanjakso määrittää työhönottoprojektit, jotka sisällytetään **Työhönoton hallinta** -työtilan **Vanhentuvat projektit** -ruutuun. Hakemuksen määräajan varoitukselle määritettyä ajanjaksoa käytetään näyttämään työhönottoprojektit, jotka lähestyvät hakemuksille asetettua määräaikaansa **Työhönotto**-työtilan **Hakemuksen määräaika lähestyy** -ruudussa.
+**Työhönottoprojektin vanhentuminen** -kohdassa määritetty ajanjakso määrittää ne työhönottoprojektit, jotka sisällytetään **Vanhentuvat projektit** -ruutuun **Työhönoton hallinta** -työtilassa. Hakemuksen määräaikavaroitukselle määritettyä ajanjaksoa käytetään näyttämään ne työhönottoprojektit, jotka lähestyvät hakemuksille määritettyä määräaikaa **Hakemuksen määräaika lähestyy** -ruudussa **Työhönotto**-työtilassa.
 
 Lisätietoja työhönotosta on kohdassa [Ehdokkaiden työhönotto](hr-personnel-recruit.md).
 
@@ -107,20 +107,20 @@ Voit määrittää FMLA-kelpoisuusvaatimukset ja FMLA-korvausajat FMLA-välilehd
 
 ## <a name="employee-self-service"></a>Työntekijän itsepalvelu
 
-**Työntekijän itsepalvelu** -välilehden asetukset vaikuttavat siihen, miten työntekijän itsepalvelu näytetään työntekijöille. Tästä välilehdestä voit suorittaa seuraavat toimet:
+**Työntekijän itsepalvelu** -välilehden asetukset vaikuttavat siihen, miten **työntekijän itsepalvelu** näytetään työntekijöille. Tässä välilehdessä voidaan suorittaa seuraavat tehtävät:
 
-- Anna työntekijän itsepalvelutyötilalle nimi
+- **Työntekijän itsepalvelu** -työtilan nimeäminen
 - Valitse tiedot, joita esimies voi syöttää työntekijöille
 - Lisää hyödyllisiä linkkejä työntekijöille
 - Estä työntekijöitä lisäämästä muokkaamasta yrityksen yhteystietoja. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
 
-Lisätietoja työntekijän itsepalvelun määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
+Lisätietoja **työntekijän itsepalvelun** määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
 
 ![Työntekijän itsepalvelu -välilehti.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Esimiehen itsepalvelu
 
-**Esimiehen itsepalvelu** -välilehden asetukset vaikuttavat siihen, mitä esimiehet näkevät esimiehen itsepalvelussa. Tästä välilehdestä voit määrittää seuraavat vaihtoehdot:
+**Esimiehen itsepalvelu** -välilehden asetukset vaikuttavat siihen, mitä esimiehet näkevät **esimiehen itsepalvelussa**. Tästä välilehdestä voit määrittää seuraavat vaihtoehdot:
 
 - Vanhentuvien tietueiden ajanjakso
 - Tiedot, jotka esimiehet näkevät vanhentuvissa tietueissa
@@ -128,13 +128,13 @@ Lisätietoja työntekijän itsepalvelun määrittämisestä on kohdassa [Työnte
 - Poistuvien työntekijöiden näkymät
 - Hyödyllisiä linkkejä esimiehille
 
-Lisätietoja esimiehen itsepalvelun määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
+Lisätietoja **esimiehen itsepalvelun** määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
 
 ![Esimiehen itsepalvelu -välilehti.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Etujen hallinta
 
-Voit määrittää etujen hallinnan sähköpostiasetukset Etujen hallinta -välilehdestä. Lisätietoja etujen hallinnan määrittämisestä ja käytöstä on kohdassa [Etujen hallinnan yleiskatsaus](hr-benefits-management-overview.md).
+Voit määrittää etujen hallinnan sähköpostiasetukset **Etujen hallinta** -välilehdestä. Lisätietoja etujen hallinnan määrittämisestä ja käytöstä on kohdassa [Etujen hallinnan yleiskatsaus](hr-benefits-management-overview.md).
 
 ![Etujen hallinta -välilehti.](./media/hr-setup-parameters-benefits-management.png)
 

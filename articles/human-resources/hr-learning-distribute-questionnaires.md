@@ -1,8 +1,8 @@
 ---
-title: Kyselylomakkeiden jakelu ja aikataulutus
+title: Aikatauluta ja jaa kyselylomakkeita
 description: Tässä artikkelissa kerrotaan, miten suunnittelemasi kyselylomakkeet jaetaan niin, että ne ovat oikean henkilön tai henkilöryhmän täytettävissä.
-author: andreabichsel
-ms.date: 04/04/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60354a3e7fed5403321d5ec4440cece84b13233bef80fcd5c5f61d72e5e3aa85
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a13f699c8c0951b32f7826e8cfe8d7dcf02a7f55
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755512"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729000"
 ---
-# <a name="distribute-and-schedule-questionnaires"></a>Kyselylomakkeiden jakelu ja aikataulutus
+# <a name="distribute-and-schedule-questionnaires"></a>Aikatauluta ja jaa kyselylomakkeita
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -30,7 +30,7 @@ Tässä artikkelissa kerrotaan, miten suunnittelemasi kyselylomakkeet jaetaan ni
 
 Kyselylomakkeen voi jakaa seuraavilla tavoilla:
 
--   Merkitse kyselylomake aktiiviseksi. Tämän jälkeen kyselylomake on kaikkien työntekijöiden käytettävässä, jos kyselylomakeryhmän määrityksissä ei ole valittu toisin.
+-   Merkitse kyselylomake **aktiiviseksi**. Tämän jälkeen kyselylomake on kaikkien työntekijöiden käytettävässä, jos kyselylomakeryhmän määrityksissä ei ole valittu toisin.
 -   Liitä käyttöoikeudet kyselylomakeryhmään. Tämän jälkeen kyselylomake on valitun ryhmän jokaisen jäsenen käytettävissä.
 -   Luo suunniteltuja vastausistuntoja. Näin kyselylomake on vain tietyn henkilön käytettävissä.
 -   Luo aikataulu. Näin kyselylomake voi olla useiden henkilöiden käytettävissä.

@@ -2,7 +2,7 @@
 title: iFrame-moduuli
 description: Tässä ohjeaiheessa käsitellään iFrame-moduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 570901e3afca82abd21172df4c0b6fc575b57262f2b5d1decad11cabc00db31d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767287"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754011"
 ---
 # <a name="iframe-module"></a>iFrame-moduuli
 
@@ -66,7 +66,10 @@ Voit lisätä sivulle ulkoisen videon näyttävän iFrame-moduulin seuraavasti.
 1. Määritä halutessasi muut ominaisuudet, kuten **otsikko** ja **korkeus**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry sivuston markkinointisivulle. Videon tulisi olla hahmonnettu iFrame-moduuliin.
- 
+
+> [!NOTE]
+> Koska iframe-moduuli isännöi ulkoista sisältöä, sivuston tekijöiden on varmistettava, että iframe-moduulissa isännöity sisältö ei riko sisällön rajoituskäytäntöjä kyseisellä markkina-alueella. Jos iframe-moduulia käyttävällä sivulla on sisältörikkomus, sivuston tekijä voi poistaa iframe-moduulin avaamalla sivun sivustonmuodostimessa, valitsemalla **Poista moduuli** iframe-moduulipaikassa sekä tallentamalla sivun ja julkaisemalla sivun sitten uudelleen.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Moduulikirjaston yleiskatsaus](starter-kit-overview.md)

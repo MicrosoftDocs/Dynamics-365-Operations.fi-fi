@@ -38,9 +38,9 @@ Seuraava taulukko osoittaa, milloin järjestelmä kirjaa varastotapahtumia käyt
 
 | Olosuhteet                                               | Järjestelmä käyttää arvioitua kustannushinnan käyttökeskiarvoa | Järjestelmä käyttää kustannushintaa, joka on määritetty nimikkeen päätietueessa |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Sekä osoittaja\* että nimittäjä\*\* ovat positiivisia.  | Kyllä                                                      | Nro                                                                |
-| Osoittaja\* tai nimittäjä\*\* on negatiivinen tai molemmat ovat negatiivisia. | Nro                                                       | Kyllä                                                               |
-| Nimittäjä\*\* on 0 (nolla).                        | Nro                                                       | Kyllä                                                               |
+| Sekä osoittaja\* että nimittäjä\*\* ovat positiivisia.  | Kyllä                                                      | Ei                                                                |
+| Osoittaja\* tai nimittäjä\*\* on negatiivinen tai molemmat ovat negatiivisia. | Ei                                                       | Kyllä                                                               |
+| Nimittäjä\*\* on 0 (nolla).                        | Ei                                                       | Kyllä                                                               |
 
 \*Osoittaja = (fyysinen summa + rahoituksellinen summa) \*\* nimittäjä = (fyysinen määrä + rahoituksellinen määrä) 
 

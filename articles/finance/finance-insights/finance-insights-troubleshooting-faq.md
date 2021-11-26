@@ -2,7 +2,7 @@
 title: Finance Insightsin määritysongelmien vianmääritys
 description: Tässä on aiheessa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512887"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752614"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insightsin määritysongelmien vianmääritys
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä on aiheessa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
 
@@ -53,6 +54,12 @@ Päivitä tietojen integrointiprojektit seuraavien ohjeiden mukaisesti [Power Pl
 
 1. Jos käytössä on Finance Insights -esiversio, poista se tietojen integrointiprojekti, joka on liitetty **Asiakasmaksujen tietojen tulokset (CDS:stä Fin and Opsiin)** -malliin.
 2. Toimi kohdassa [Tietojen integrointiprojektin luominen](create-data-integrate-project.md) annettujen ohjeiden mukaisesti. Käytä **Asiakasmaksujen tietojen tulokset (CDS:stä Fin and Opsiin versioon 10.0.17 ja sitä uudempiin versioihin)** -mallia.
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Oire: Kun yritän avata AI Builderin Asiakkaan maksuennusteiden asetus -sivun linkkien avulla, miksi seuraava virhesanoma avautuu: Yhteys on valitettavasti katkaistu?
+
+### <a name="resolution"></a>Ratkaisu
+
+Dynamics 365 Finance -käyttäjillä on oltava ympäristön Microsoft Power Apps -käyttäjätili ja kyseisellä käyttäjätilillä on oltava järjestelmän mukauttajan rooli. Microsoft Power Appsin järjestelmänvalvoja voi luoda käyttäjätilin ja määrittää roolin. Voit sitten siirtyä sivustoon <https://make.preview.powerapps.com/>, kirjautua sisään käyttämällä kyseistä käyttäjätiliä ja kokeilemalla linkkejä uudelleen.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Oire: miksi Kassavirtaennuste-työtilan Kassavirtaennuste-välilehdessä ei ole tietoja?
 

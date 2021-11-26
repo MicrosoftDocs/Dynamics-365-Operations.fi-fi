@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 03489629a74d33147ac77dd18b59efbfc9c9e4b5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5311c13154baafdc7225ee869b3ef524eecc0d00
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574662"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778350"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Rekisterikilven otsikoiden asiakirjareitityksen asettelu
 
@@ -53,7 +53,7 @@ Useiden laajalti käytettävissä olevien etikettityökalujen avulla voit muotoi
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Tämän ominaisuuden ottaminen käyttöön järjestelmällesi
 
-Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Rekisterikilpien etikettien parannetut asettelut* -ominaisuus käyttöön.
+Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Rekisterikilpien etikettien parannetut asettelut* -ominaisuus käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
 
 ## <a name="custom-number-formats"></a>Mukautetut lukumuodot
 

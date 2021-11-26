@@ -88,21 +88,21 @@ Seuraavassa taulukossa on yhteenveto erilaisten tuoterivien yhdistelmistä.
 | Järjestelmän tila <br>(Field Service) | Rivin tila <br>(Field Service) | Kohdistettu <br>(Field Service) |Synkronoitu arvo <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Avoin - ajoitettu   | Ennakkolaskettu   | Kyllä       | Ennakkolaskettu                       |
-| Avoin - ajoitettu   | Ennakkolaskettu   | En        | Käytetty                            |
+| Avoin - ajoitettu   | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Avoin - ajoitettu   | Käytetty        | Kyllä       | Käytetty                            |
-| Avoin - ajoitettu   | Käytetty        | En        | Käytetty                            |
+| Avoin - ajoitettu   | Käytetty        | Ei        | Käytetty                            |
 | Avoin - käsittelyssä | Ennakkolaskettu   | Kyllä       | Ennakkolaskettu                       |
-| Avoin - käsittelyssä | Ennakkolaskettu   | En        | Käytetty                            |
+| Avoin - käsittelyssä | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Avoin - käsittelyssä | Käytetty        | Kyllä       | Käytetty                            |
-| Avoin - käsittelyssä | Käytetty        | En        | Käytetty                            |
+| Avoin - käsittelyssä | Käytetty        | Ei        | Käytetty                            |
 | Avoin - valmis   | Ennakkolaskettu   | Kyllä       | Ennakkolaskettu                       |
-| Avoin - valmis   | Ennakkolaskettu   | En        | Käytetty                            |
+| Avoin - valmis   | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Avoin - valmis   | Käytetty        | Kyllä       | Käytetty                            |
-| Avoin - valmis   | Käytetty        | En        | Käytetty                            |
+| Avoin - valmis   | Käytetty        | Ei        | Käytetty                            |
 | Suljettu - kirjattu    | Ennakkolaskettu   | Kyllä       | Käytetty                            |
-| Suljettu - kirjattu    | Ennakkolaskettu   | En        | Käytetty                            |
+| Suljettu - kirjattu    | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Suljettu - kirjattu    | Käytetty        | Kyllä       | Käytetty                            |
-| Suljettu - kirjattu    | Käytetty        | En        | Käytetty                            |
+| Suljettu - kirjattu    | Käytetty        | Ei        | Käytetty                            |
 
 Seuraavassa taulukossa on yhteenveto erilaisten huoltorivien yhdistelmistä.
 

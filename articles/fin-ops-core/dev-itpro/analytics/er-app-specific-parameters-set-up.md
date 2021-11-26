@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0fce566bea6340b4016e559b1f5f1764a6881e28
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9b57c6165e5de4a115818a135ed1455e3b05e3f0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675390"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733460"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>ER-muodon parametrien määrittäminen yrityskohtaisesti
 
@@ -226,15 +226,6 @@ Tällä tuonti-vienti-menetelmällä voit siirtää myös yhteen Financen esiint
 Jos määrität sovelluskohtaiset parametrit yhdelle ER-muotoa versiolle ja tuot myöhemmin saman muodon myöhemmän version kulloiseenkin Finance-esiintymään, aiemmin luotuja sovelluskohtaisia parametreja ei käytetä tuodussa versiossa, ellet käytä **Käytä sovelluskohtaisia parametreja sähköisen raportoinnin muotojen aiemmista versioista** -ominaisuutta. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Aiemmin luotujen parametrien käyttäminen uudelleen](#reuse-existing-parameters).
 
 Kun valitset tuotavan tiedoston, kyseisen tiedoston sovelluskohtaisten parametrien rakennetta verrataan vastaavan tuotavaksi valitun ER-muodon **Haku**-tyypin tietolähteiden rakenteeseen. Oletusarvoisesti tuonti suoritetaan vain, jos kunkin sovelluskohtaisen parametrin rakenne vastaa vastaavan tietolähteen rakennetta tuotavaksi valitussa ER-muodossa. Jos rakenteet eivät vastaa toisiaan, saat varoitussanoman, jonka mukaan tuontia ei vois suorittaa. Jos pakotat tuonnin, valitun ER-muodon aiemmin luodut sovelluskohtaiset parametrit tyhjennetään ja ne on määritettävä alusta alkaen.
-
-Dynamics 365 Financen versiosta 10.0.23 alkaen voit muuttaa oletustoimintatapaa ja välttää virhesanoman ottamalla käyttöön **Kohdista sähköisen raportoinnin sovelluskohtaiset parametrit tuonnin aikana** -ominaisuuden käyttöön **Ominaisuuksienhallinta**-työtilassa. Kun tämä ominaisuus on käytössä ja tuotavien sovelluskohtaisten parametrien rakenne poikkeaa vastaavien tietolähteiden rakenteesta tuotavaksi valitussa kohde-ER-muodosta, tuonti onnistuu seuraavissa tapauksissa:
-
-- Kohde-ER-muodon rakennetta on muutettu lisäämällä uusia ehtosarakkeita kaikkiin olemassa oleviin **Haku**-tyypin tietolähteisiin. Kun tuonti on suoritettu, sovelluskohtaiset parametrit päivitetään. Jokaisen lisätyn ehtosarakkeen arvot alustetaan kyseisen sarakkeen [tietotyypin](er-formula-supported-data-types-primitive.md) oletusarvolla kaikissa sovelluskohtaisten parametrien tuoduissa tietueissa.
-- Kohde-ER-muodon rakennetta on muutettu poistamalla ehtosarakkeita kaikista olemassa olevista **Haku**-tyypin tietolähteistä. Kun tuonti on suoritettu, sovelluskohtaiset parametrit päivitetään. Jokaisen poistetun ehtosarakkeen arvot on poistettu kaikista tuotujen sovelluskohtaisten parametrien tietueista.
-- Kohde-ER-muodon rakennetta on muutettu lisäämällä uusia **Haku**-tyypin tietolähteitä. Kun tuonti on suoritettu, lisätyt haut liitetään sovelluskohtaisiin parametreihin.
-- Kohde-ER-muodon rakennetta on muutettu poistamalla joitakin olemassa olevia **Haku**-tyypin tietolähteitä. Kun tuonti on valmis, kaikki kohde-ER-muodosta poistetut **Haku**-tyypin tietolähteisiin liittyvät artefaktit poistetaan tuoduista sovelluskohtaisista parametreista.
-
-Kun tuonti on valmis, suoritetaan edellä mainittujen muutosten lisäksi tuotujen sovelluskohtaisten parametrien tilan muuttaminen arvoon **Käynnissä**. Varoitussanoma kertoo, että automaattisesti oikaistuja sovelluskohtaisia parametreja on muutettava manuaalisesti.
 
 ### <a name="reuse-existing-parameters"></a>Olemassa olevien parametrien käyttäminen uudelleen
 

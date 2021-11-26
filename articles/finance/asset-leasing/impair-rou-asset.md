@@ -92,8 +92,8 @@ Seuraavissa taulukoissa ovat arvot, jotka on määritetty **Yleistiedot**- ja **
     | Tapahtuman päivämäärä       | 1.1.2022 |
     | Kausia jäljellä      | 84       |
     | Kirjaa                   | Kyllä      |
-    | Esikatsele ennen kirjausta | Nro       |
-    | Sulje kirja             | Nro       |
+    | Esikatsele ennen kirjausta | Ei       |
+    | Sulje kirja             | Ei       |
 
 6. Arvonalentumisen kulukirjauskansiovienti on luotu ja kirjattu. Voit tarkastella sitä siirtymällä resurssin leasingkirjauskansioon vuokrauskirjassa. Huomaa, että arvonalennuksen summa on veloitettu arvonalennuksen kulukirjaustililtä ja käyttöoikeusomaisuuserän kirjaustiliä on hyvitetty.
 7. Voit tarkastella arvonalennuksen nettovaikutusta siirtymällä velka- ja resurssitapahtumien taulukoihin. Huomaa, että arvonalennuksen kulu on vähentänyt käyttöoikeusomaisuuserää, mutta vuokrasopimusvelan kirjanpitosumma ei ole muuttunut.

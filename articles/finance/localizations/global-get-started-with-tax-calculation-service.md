@@ -201,7 +201,7 @@ Tämän osan määritykset tehdään yrityskohtaisesti. Se on määritettävä k
 3. Määritä **Laskelma**-välilehdessä yrityksen odotettu pyöristyssääntö. Lisätietoja pyöristyslogiikasta on kohdassa [Verolaskennan pyöristyssäännöt](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Määritä **Virheen käsittely** -välilehdessä yrityksen odotettu virheenkäsittelymenetelmä. Käytössä on kolme vaihtoehtoa:
 
-    - Nro
+    - Ei
     - Varoitus
     - Virhe
 

@@ -1,8 +1,8 @@
 ---
 title: Henkilöstötoiminnot – usein kysytyt kysymykset
-description: Tässä artikkelissa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä.
-author: andreabichsel
-ms.date: 06/23/2021
+description: Tässä ohjeaiheessa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,23 +11,33 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c005c08c7ceafffc63650b64c3602aa65ae94e2788a5c70b5fd372a4f54a0301
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfaa67e051529dac8f29a5b289d7025aee681178
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748832"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731675"
 ---
 # <a name="personnel-actions-faq"></a>Henkilöstötoiminnot – usein kysytyt kysymykset
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä artikkelissa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä. Esimerkkejä henkilöstötoimintoja mahdollisesti vaativista tehtävistä ovat uusien toimien luonti, olemassa olevien toimien arvojen muuttaminen, uusien työntekijöiden palkkaus, työntekijöiden siirto, työntekijän kompensaation muuttaminen, toimen määritysten muuttaminen tai työntekijöiden työsuhteiden päättäminen.
+Tässä ohjeaiheessa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä. 
 
-**Huomautus:** Henkilöstötoiminnot ovat käytettävissä vain, jos **Henkilöstöhallinnon jaetut parametrit** -sivun **Henkilöstötoiminnot**-välilehden **Ota käyttöön työntekijätoiminnot** ja **Ota käyttöön toimen toiminnot** -kenttien arvoksi on asetettu **Kyllä**. 
+Esimerkkejä tehtävistä, jotka voivat edellyttää henkilökunnan toimintoja:
+ - Uusien toimien luonti. 
+ - Aiemmin luotujen toimiarvojen muokkaaminen. 
+ - Uusien työntekijöiden palkkaaminen. 
+ - Työntekijöiden siirtäminen. 
+ - Työntekijän kompensaation muuttaminen 
+ - Toimimääritysten muuttaminen. 
+ - Työntekijöiden irtisanominen.
+
+> [!NOTE]
+> Henkilöstötoiminnot ovat käytettävissä vain, jos **Henkilöstöhallinnon jaetut parametrit** -sivun **Henkilöstötoiminnot**-välilehden **Ota käyttöön työntekijätoiminnot** ja **Ota käyttöön toimen toiminnot** -kenttien arvoksi on määritetty **Kyllä**. 
 
 ## <a name="how-can-i-tell-if-my-organization-requires-personnel-actions"></a>Miten selvittää, edellyttääkö organisaationi henkilökunnan toimintoja?
 Henkilökunnan tehtävää tarvitaan organisaatiossasi, jos sinua pyydetään valitsemaan henkilöstötoimenpide, kun luodaan uusia toimia, muutetaan aiemmin luotuja toimia, palkataan uusia työntekijöitä, siirretään työntekijöitä, muutetaan työntekijän kompensaatiota, muutetaan työtehtävät, päätetään työntekijöiden työsuhteita tai työntekijöille annetaan lomaa. 
@@ -35,26 +45,26 @@ Henkilökunnan tehtävää tarvitaan organisaatiossasi, jos sinua pyydetään va
 ## <a name="what-is-the-difference-between-a-position-action-and-a-worker-action"></a>Mikä ero on toimen toiminnolla ja työntekijätoiminnolla?
 Henkilöstötoimintoja on kahta eri tyyppiä.
 
-- Toimen toiminto – Toimen toiminto suoritetaan nykyisissä tai uusissa toimissa. Esimerkiksi toimen toiminto voi olla pakollinen, jos vaihdat olemassa olevan toimen arvon tai jos luot uuden kausiluontoisen toimen. Lisätietoja toimen toimintojen käyttämisestä on ohjeaiheessa Avaintehtävät: aiemmin luodut työtekijätoimet tai Avaintehtävät: uudet työntekijätoimet.
+- **Toimi**- toiminto – Toimitoiminto suoritetaan nykyisissä tai uusissa toimissa. Esimerkiksi toimen toiminto voi olla pakollinen, jos vaihdat olemassa olevan toimen arvon tai jos luot uuden kausiluontoisen toimen. 
 
-- Työntekijätoiminto – Työntekijätoiminnon suoritetaan aiemmin luoduille työntekijöille tai uusille työntekijöille. Työntekijätoimintoa saatetaan vaatia esimerkiksi uuden työntekijän palkkauksessa tai nykyisen työntekijän ylennyksessä. Lisätietoja työntekijätoimintojen käyttämisestä on ohjeaiheessa Henkilöstötoimenpiteiden määrittäminen työntekijöille.
+- **Työntekijä**-toiminto – Työntekijätoiminnon suoritetaan aiemmin luoduille työntekijöille tai uusille työntekijöille. Työntekijätoimintoa saatetaan vaatia esimerkiksi uuden työntekijän palkkauksessa tai nykyisen työntekijän ylennyksessä. 
 
 ## <a name="what-do-the-statuses-of-the-personnel-actions-mean"></a>Mitä henkilöstötoimintojen tilat tarkoittavat?
 Henkilöstötoimenpiteillä voi olla seuraavia tiloja:
 
 - **Luonnos** – Jos työnkulkua käytetään, toimintoa ei ole lähetetty. Jos työnkulkua ei käytetä, toimintoa ei ole vielä suoritettu.
 - **Tarkistuksessa** – Henkilöstötoiminto on lähetetty työnkulkuun, mutta työnkulku ei ole valmis.
-- **Hyväksytty ja odottaa**– Työnkulku on valmis, mutta muutoksia toteutetaan vielä. Peruutettu – Työnkulku tai henkilöstötoimenpide peruutettiin. Hylätty – Hyväksyjä hylkäsi toimintopyynnön.
+- **Hyväksytty ja odottaa**– Työnkulku on valmis, mutta muutoksia toteutetaan vielä. **Peruutettu** – Työnkulku tai henkilöstötoimenpide peruutettiin. **Hylätty** – Hyväksyjä hylkäsi toimintopyynnön.
 - **Käsittelytoiminto** – Toimintopyyntö on hyväksytty ja muutoksia toteutetaan parhaillaan.
-- **Työnkulku valmis** – Työnkulku on valmis ja muutokset on käsitelty. Ei hyväksytty – Työnkulku epäonnistui, koska tiedot ovat vanhentuneet. Näytä uusimmat tiedot valitsemalla Aktivoi uudelleen ja jatka
-- **Valmis** – Toimen luonti tai muokkaus onnistui, työntekijän palkkaus, siirto tai irtisanominen onnistui tai työntekijän kompensaatio muuttui. Virhe – Ilmeni jostain muusta kuin vanhentuneista tiedoista aiheutunut ongelma. Selvitä virheen syy avaamalla henkilöstötoimenpiteiden sanomaloki.
+- **Työnkulku valmis** – Työnkulku on valmis ja muutokset on käsitelty. **Epäonnistui** – Työnkulku epäonnistui, koska tiedot ovat vanhentuneet. Näytä uusimmat tiedot valitsemalla **Aktivoi uudelleen** ja jatka.
+- **Valmis** – Toimen luonti tai muokkaus onnistui, työntekijän palkkaus, siirto tai irtisanominen onnistui tai työntekijän kompensaatio muuttui. **Virhe** – Tapahtui jostain muusta kuin vanhentuneista tiedoista aiheutunut ongelma. Selvitä virheen syy avaamalla **henkilöstötoimenpiteiden sanomaloki**.
 - **Hylätty** – Hyväksyjä hylkäsi toimintopyynnön.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Voinko poistaa henkilökohtaisen toimenpiteen?
 Kyllä, voit poistaa henkilöstötoimenpiteet, joiden tilana on **Luonnos**, **Virhe**, **Ei hyväksytty** tai **Peruutettu**. Voit poistaa **Valmis**-tilassa olevia henkilöstötoimintoja vain, jos olet määrittänyt **Salli valmiiden työntekijätoimintojen poistaminen** -asetukseksi **Kyllä** **Henkilöstöhallinnon jaetut parametrit** -sivulla.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Mikä on nopein tapa tarkistaa henkilöstötoimintopyynnön tila?
-Avaa mikä tahansa henkilöstötoimintojen luettelosivuista ja valitse henkilöstötoiminto.
+Avaa mikä tahansa **Henkilöstötoiminto**-luettelosivu ja valitse henkilöstötoiminto.
 
 ## <a name="what-should-i-do-if-a-personnel-action-request-fails"></a>Mitä minun pitäisi tehdä, jos henkilöstötoimintopyyntö epäonnistuu?
 Jos henkilökunnan toimenpidepyyntö epäonnistuu, noudata seuraavia vaiheita ratkaistaksesi tämän ongelman ja lähetä pyyntö uudelleen:
@@ -66,23 +76,23 @@ Jos henkilökunnan toimenpidepyyntö epäonnistuu, noudata seuraavia vaiheita ra
 > 3. Korjaa virhe ja valitse sitten **Valmis** tai **Lähetä**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Mitä tapahtuu työnkulkua käyttävälle henkilöstötoiminnolle, kun lopullinen hyväksyntä on valmis?
-Jos virheitä ei ole, henkilökunnan toimenpide on vain lukukelpoinen. (Voit tarkastella historiatietoja **Kaikki työntekijätoiminnot** -luettelosivulla, mutta et voi muuttaa henkilöstötoimintoa). Kun henkilöstötoiminnon tila on **Valmis**, toimi- tai työntekijätietue on jo päivitetty. Voit tarkastella tehtyjä muutoksia avaamalla **Toimet**- tai **Työntekijät**-luettelosivun.
+Jos virheitä ei ole, henkilökunnan toimenpide on vain lukukelpoinen. (Voit tarkastella historiatietoja **Kaikki työntekijätoiminnot** -luettelosivulla muttet voi muuttaa henkilöstötoimintoa). Kun henkilöstötoiminnon tila on **Valmis**, toimi- tai työntekijätietue on jo päivitetty. Voit tarkastella tehtyjä muutoksia avaamalla **Toimet**- tai **Työntekijät**-luettelosivun.
 
 ## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Miksi tulee seuraava virhe, kun syötän nollasta poikkeavan arvon palkkiokenttään? "Arvo ei ole sallitulla alueella. Sen on oltava 0,00–0,00."
-Saat tämän ilmoituksen, koska työlomakkeen tasokenttä on tyhjä valittuun toimeen liitetyn työn kohdalla.
+Saat tämän ilmoituksen, koska **Työ**-lomakkeen **Taso** kenttä on tyhjä valittuun toimeen liitetyn työn kohdalla.
 
 Korjaa tämä virhetilanne seuraavien ohjeiden avulla:
 
-> 1. Valitse työntekijän toimen määrityslomakkeessa Toimi-kenttä.  
-> 2. Avaa Työ-sivu napsauttamalla Työ-kentän arvoa.
-> 3. Valitse toimintoruudussa Muokkaa.
-> 4. Valitse Kompensaatio-välilehti.
-> 5. Valitse Taso-kentässä taso.
-> 6. Sulje Työ-sivu.
-> 7. Sulje Toimi-sivu.
-> 8. Palaa Työntekijä-sivun Kompensaatio-välilehteen ja valitse Kiinteä kompensaatio.  Valitse Uusi ja syötä työtekijän toimi Toimi-kenttään.  Syötä arvo Suunnitelma-kenttään ja syötä sitten työntekijän kompensaatio Palkkio-kenttä.
+> 1. Valitse **Työntekijän toimen määritykset** -sivulla **Toimi**-kenttä.  
+> 2. Avaa **Työ**-sivu napsauttamalla **Työ**-kentän arvoa.
+> 3. Valitse toimintoruudussa **Muokkaa**.
+> 4. Valitse **Kompensaatio**-välilehti.
+> 5. Valitse **Taso**-kentässä taso.
+> 6. Sulje **Työ**-sivu.
+> 7. Sulje **Toimi**-sivu.
+> 8. Palaa **Työntekijä**-sivun **Kompensaatio**-välilehteen ja valitse **Kiinteä kompensaatio**.  Valitse **Uusi** ja syötä työtekijän toimi **Toimi**-kenttään.  Anna arvo **Suunnitelma**-kentässä ja anna sitten työntekijän kompensaatio **Palkkio**-kenttä.
 
-## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Miksi en voi muuttaa voimaantulopäivää työntekijätoimintolomakkeen ylätunnisteessa?
+## <a name="why-cant-i-change-the-effective-date-on-the-header-of-the-worker-action-page"></a>Miksi en voi muuttaa voimaantulopäivää työntekijätoimintosivun ylätunnisteessa?
 Et voi muuttaa voimaantulopäivää, koska kenttään on täytetty toimintotyypin loogisin päivämäärä.
 
 Esimerkiksi:

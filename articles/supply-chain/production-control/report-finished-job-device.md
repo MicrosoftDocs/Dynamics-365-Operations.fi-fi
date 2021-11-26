@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 19c4e3c6ad682f3814d334f88c0653c4e7a51d23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569284"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778228"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ilmoita valmiiksi työkorttilaitteesta
 
@@ -218,7 +218,7 @@ Lisävarastoprosessit voivat käyttää käyttöoikeuskilpi-dimensiota tähän t
 
 Tässä osassa kuvattujen toimintojen käyttäminen edellyttää, että otat seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla (tässä järjestyksessä):
 
-1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
+1. Valmiiksi ilmoittamisen rekisterikilpi lisättiin työkorttilaitteeseen (Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on otettu oletusarvoisesti käyttöön.)
 1. Ota käyttöön rekisterikilven numeron automaattinen luonti, kun työkorttilaitteessa raportoidaan valmiiksi
 1. Tulosta etiketti työkorttilaitteesta
 

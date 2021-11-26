@@ -187,34 +187,34 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 
 | Käsittele                                                      | Keskus | Varaston ohjauksen työkuorma scale unitissa |
 |--------------------------------------------------------------|-----|------------------------------|
-| Lähdeasiakirjan käsittely                                   | Kyllä | Nro |
-| Lastauksen ja kuljetusten hallinnan käsittely                | Kyllä, mutta vain kuormansuunnitteluprosessit. Kuljetuksen hallinnan käsittely ei tueta  | Nro |
-| Vapauta varastoon                                         | Kyllä | Nro |
-| Suunniteltu cross-docking                                        | Nro  | Nro |
+| Lähdeasiakirjan käsittely                                   | Kyllä | Ei |
+| Lastauksen ja kuljetusten hallinnan käsittely                | Kyllä, mutta vain kuormansuunnitteluprosessit. Kuljetuksen hallinnan käsittely ei tueta  | Ei |
+| Vapauta varastoon                                         | Kyllä | Ei |
+| Suunniteltu cross-docking                                        | Ei  | Ei |
 | Lähetyksen konsolidointi                                       | Kyllä, käytettäessä kuormansuunnittelua | Kyllä |
-| Lähetysaallon käsittely                                     | Nro  |Kyllä, paitsi **Kuorman kokoaminen ja lajittelu** |
-| Aallon lähetysten ylläpito                                  | Nro  | Kyllä|
-| Varastotyön käsittely (mukaan lukien rekisterikilven tulostus)        | Nro  | Kyllä, mutta vain edellä mainittujen tuettujen ominaisuuksien osalta |
-| Klusterin keräily                                              | Nro  | Kyllä|
-| Manuaalinen pakkaamisen käsittely, mukaan lukien Pakatun kontin keräily -työn käsittely | Nro <P>Osa käsittelystä voidaan tehdä scale unitin käsittelemän ensimmäisen keräilyn käsittelyn jälkeen, mutta sitä ei suositella seuraavien estettyjen toimintojen vuoksi.</p>  | Nro |
-| Poista kontti ryhmästä                                  | Nro  | Nro |
-| Lähtevien lajittelun käsittely                                  | Nro  | Nro |
+| Lähetysaallon käsittely                                     | Ei  |Kyllä, paitsi **Kuorman kokoaminen ja lajittelu** |
+| Aallon lähetysten ylläpito                                  | Ei  | Kyllä|
+| Varastotyön käsittely (mukaan lukien rekisterikilven tulostus)        | Ei  | Kyllä, mutta vain edellä mainittujen tuettujen ominaisuuksien osalta |
+| Klusterin keräily                                              | Ei  | Kyllä|
+| Manuaalinen pakkaamisen käsittely, mukaan lukien Pakatun kontin keräily -työn käsittely | Ei <P>Osa käsittelystä voidaan tehdä scale unitin käsittelemän ensimmäisen keräilyn käsittelyn jälkeen, mutta sitä ei suositella seuraavien estettyjen toimintojen vuoksi.</p>  | Ei |
+| Poista kontti ryhmästä                                  | Ei  | Ei |
+| Lähtevien lajittelun käsittely                                  | Ei  | Ei |
 | Lastaukseen liittyvien asiakirjojen tulostaminen                           | Kyllä | Kyllä|
-| Rahtikirjan ja ASN-ilmoituksen luonti                            | Nro  | Kyllä|
-| Lähetyksen vahvistus                                             | Nro  | Kyllä|
-| Lähetyksen vahvistus sekä Vahvista ja siirrä            | Nro  | Nro |
-| Pakkausluettelon ja laskutuksen käsittely                        | Kyllä | Nro |
-| Lyhyt keräily (myynti- ja siirtotilaukset)                    | Nro  | Kyllä, poistamatta lähdeasiakirjojen varauksia|
-| Ylikeräily (myynti- ja siirtotilaukset)                     | Nro  | Kyllä|
-| Työsijaintien muuttaminen (myynti- ja siirtotilaukset)         | Nro  | Kyllä|
-| Työn viimeistely (myynti- ja siirtotilaukset)                    | Nro  | Kyllä|
+| Rahtikirjan ja ASN-ilmoituksen luonti                            | Ei  | Kyllä|
+| Lähetyksen vahvistus                                             | Ei  | Kyllä|
+| Lähetyksen vahvistus sekä Vahvista ja siirrä            | Ei  | Ei |
+| Pakkausluettelon ja laskutuksen käsittely                        | Kyllä | Ei |
+| Lyhyt keräily (myynti- ja siirtotilaukset)                    | Ei  | Kyllä, poistamatta lähdeasiakirjojen varauksia|
+| Ylikeräily (myynti- ja siirtotilaukset)                     | Ei  | Kyllä|
+| Työsijaintien muuttaminen (myynti- ja siirtotilaukset)         | Ei  | Kyllä|
+| Työn viimeistely (myynti- ja siirtotilaukset)                    | Ei  | Kyllä|
 | Työraportin tulostus                                            | Kyllä | Kyllä|
-| Aallon otsikko                                                   | Nro  | Kyllä|
-| Työn jako                                                   | Nro  | Kyllä|
-| Työn käsittely – Kuljetuksen kuormaus -ohjattu            | Nro  | Nro |
-| Vähennä kerättyä määrää                                       | Nro  | Nro |
-| Palauta työ                                                 | Nro  | Nro |
-| Käännä lähetyksen vahvistus                                | Nro  | Kyllä|
+| Aallon otsikko                                                   | Ei  | Kyllä|
+| Työn jako                                                   | Ei  | Kyllä|
+| Työn käsittely – Kuljetuksen kuormaus -ohjattu            | Ei  | Ei |
+| Vähennä kerättyä määrää                                       | Ei  | Ei |
+| Palauta työ                                                 | Ei  | Ei |
+| Käännä lähetyksen vahvistus                                | Ei  | Kyllä|
 
 ### <a name="inbound"></a>Saapuva
 
@@ -226,27 +226,27 @@ Seuraava taulukko sisältää tuetut saapuvien toiminnot ja missä näitä toimi
 | Lastauksen ja kuljetusten hallinnan käsittely                    | Kyllä | Ei |
 | Aiheutunut kustannus ja kuljetettavien tuotteiden vastaanottaminen                       | Kyllä | Ei |
 | Saapuvan lähetyksen vahvistus                                    | Kyllä | Ei |
-| Ostotilauksen vapautus varastoon (varastotilausten käsittely) | Kyllä | Nro |
-| Varastotilausrivien peruuttaminen<p>Huomaa, että tätä tuetaan vain silloin, kun riviin ei kohdistu rekisteröintiä</p> | Kyllä | Nro |
+| Ostotilauksen vapautus varastoon (varastotilausten käsittely) | Kyllä | Ei |
+| Varastotilausrivien peruuttaminen<p>Huomaa, että tätä tuetaan vain silloin, kun riviin ei kohdistu rekisteröintiä</p> | Kyllä | Ei |
 | Ostotilausnimikkeen vastaanotto ja poispano                       | <p>Kyllä,&nbsp;kun &nbsp;varastotilausta ei&nbsp;ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p> |
 | Ostotilausrivin vastaanotto ja poispano                       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p></p> |
-| Palautustilauksen vastaanotto ja poispano                              | Kyllä | Nro |
+| Palautustilauksen vastaanotto ja poispano                              | Kyllä | Ei |
 | Yhdistetyn rekisterikilven vastaanotto ja poispano                       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä |
-| Kuorman nimikkeen vastaanotto                                              | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Rekisterikilven vastaanotto ja poispano                             | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Siirtotilausnimikkeen vastaanotto ja poispano                       | Kyllä | Nro |
-| Siirtotilausrivin vastaanotto ja poispano                       | Kyllä | Nro |
+| Kuorman nimikkeen vastaanotto                                              | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
+| Rekisterikilven vastaanotto ja poispano                             | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
+| Siirtotilausnimikkeen vastaanotto ja poispano                       | Kyllä | Ei |
+| Siirtotilausrivin vastaanotto ja poispano                       | Kyllä | Ei |
 | Työn peruuttaminen (saapuva)                                            | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, mutta vain silloin kun <b>Poista vastaanoton rekisteröinti, kun työ peruutetaan</b> -asetuksen (<b>Varastonhallinnan parametrit</b> -sivulla) valinta on tyhjennetty</p> |
-| Ostotilauksen tuotteen vastaanoton käsittely                        | Kyllä | Nro |
+| Ostotilauksen tuotteen vastaanoton käsittely                        | Kyllä | Ei |
 | Alitoimituksen sisältävän ostotilauksen vastaanotto                      | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä, mutta vain tekemällä peruutuspyyntö keskuksesta |
 | Ylitoimituksen sisältävän ostotilauksen vastaanotto                       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Kyllä  |
-| *Cross docking* -työn luonnin sisältävä vastaanotto                 | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| *Laatutilaus*-työn luonnin sisältävä vastaanotto                  | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| *Laatunimikkeen otanta* -työn luonnin sisältävä vastaanotto          | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| *Laatu laaduntarkistuksessa* -työn luonnin sisältävä vastaanotto       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Laatutilauksen luonnin sisältävä vastaanotto                            | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Nro |
-| Työnkäsittely – *Klusterihyllytys*-ohjattu                 | Kyllä | Nro |
-| *Lyhyt keräilyn* sisältävän työn käsittely                               | Kyllä | Nro |
+| *Cross docking* -työn luonnin sisältävä vastaanotto                 | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
+| *Laatutilaus*-työn luonnin sisältävä vastaanotto                  | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
+| *Laatunimikkeen otanta* -työn luonnin sisältävä vastaanotto          | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
+| *Laatu laaduntarkistuksessa* -työn luonnin sisältävä vastaanotto       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
+| Laatutilauksen luonnin sisältävä vastaanotto                            | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
+| Työnkäsittely – *Klusterihyllytys*-ohjattu                 | Kyllä | Ei |
+| *Lyhyt keräilyn* sisältävän työn käsittely                               | Kyllä | Ei |
 | Rekisterikilven lataus                                           | Kyllä | Kyllä |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Varastotoiminnot ja poikkeuksien käsittely
@@ -261,20 +261,20 @@ Seuraava taulukko sisältää tuetut varastotoimintojen ja poikkeuksien käsitte
 | Vaihda varastoa                                   | Kyllä | Kyllä                          |
 | Siirto                                           | Kyllä | Kyllä                          |
 | Siirto mallin mukaan                               | Kyllä | Kyllä                          |
-| Varastosiirto                                 | Kyllä | Nro                           |
-| Siirtotilauksen luominen varastosovelluksesta           | Kyllä | Nro                           |
+| Varastosiirto                                 | Kyllä | Ei                           |
+| Siirtotilauksen luominen varastosovelluksesta           | Kyllä | Ei                           |
 | Oikaisu (sisään/ulos)                                | Kyllä | Kyllä, mutta ei oikaisu ulos -skenaariota varten, jossa varastovaraus on poistettava käyttämällä varasto-oikaisutyyppien **Poista varaukset** -asetusta.</p>                           |
-| Varaston tilamuutos                            | Kyllä | Nro                           |
+| Varaston tilamuutos                            | Kyllä | Ei                           |
 | Inventointi ja poikkeamien käsittely | Kyllä | Kyllä                           |
 | Etiketin uudelleentulostus (rekisterikilven tulostus)             | Kyllä | Kyllä                          |
-| Rekisterikilpikoonti                                | Kyllä | Nro                           |
-| Rekisterikilven tauko                                | Kyllä | Nro                           |
-| Pakkaa sisäkkäisiin rekisterikilpiin                                | Kyllä | Nro                           |
-| Kuljettajan sisäänkuittaus                                    | Kyllä | Nro                           |
-| Kuljettajan uloskuittaus                                   | Kyllä | Nro                           |
+| Rekisterikilpikoonti                                | Kyllä | Ei                           |
+| Rekisterikilven tauko                                | Kyllä | Ei                           |
+| Pakkaa sisäkkäisiin rekisterikilpiin                                | Kyllä | Ei                           |
+| Kuljettajan sisäänkuittaus                                    | Kyllä | Ei                           |
+| Kuljettajan uloskuittaus                                   | Kyllä | Ei                           |
 | Eräkäsittelykoodin muuttaminen                      | Kyllä | Kyllä                          |
 | Näytä avoin työluettelo                             | Kyllä | Kyllä                          |
-| Konsolidoi rekisterikilvet                         | Kyllä | Nro                           |
+| Konsolidoi rekisterikilvet                         | Kyllä | Ei                           |
 | Vähimmäis- ja enimmäistäydennyksen sekä vyöhykkeen rajatäydennyksen käsittely| Kyllä <p>Suosituksena on, että samaa sijaintia ei sisällytetä kyselyjen osana</p>| Kyllä                          |
 | Paikoitustäydennyksen käsittely                  | Kyllä  | Kyllä<p>Huomaa, että määritys on tehtävä scale unitissa</p>                           |
 | Työn esto ja eston poisto                             | Kyllä | Kyllä                          |
@@ -290,8 +290,8 @@ Seuraavassa taulukossa esitellään, mitä varastonhallinnan tuotantoskenaarioit
 |---------|-----|------------------------------|
 | Ilmoita valmiiksi ja valmiiden tuotteiden hyllytys | Kyllä | Kyllä |
 | Rinnakkaistuotteen ja sivutuotteen poispano | Kyllä | Kyllä |
-| <p>Kaikki muut tuotantoon liittyvät varastonhallintaprosessit, esim:</p><li>Vapauta varastoon</li><li>Tuotannon aallon käsittely</li><li>Raaka-aineiden keräily</li><li>Kanban-poispano</li><li>Kanban-keräily</li><li>Käynnistä tuotantotilaus</li><li>Tuotannon hävikki</li><li>Tuotannon viimeinen kuormalava</li><li>Rekisteröi materiaalikulutus</li><li>Tyhjennä kanban</li></ul> | Kyllä | Nro |
-| Raaka-aineiden täydennys | Nro | Nro |
+| <p>Kaikki muut tuotantoon liittyvät varastonhallintaprosessit, esim:</p><li>Vapauta varastoon</li><li>Tuotannon aallon käsittely</li><li>Raaka-aineiden keräily</li><li>Kanban-poispano</li><li>Kanban-keräily</li><li>Käynnistä tuotantotilaus</li><li>Tuotannon hävikki</li><li>Tuotannon viimeinen kuormalava</li><li>Rekisteröi materiaalikulutus</li><li>Tyhjennä kanban</li></ul> | Kyllä | Ei |
+| Raaka-aineiden täydennys | Ei | Ei |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Scale unitien ylläpito varaston ohjausta varten
 

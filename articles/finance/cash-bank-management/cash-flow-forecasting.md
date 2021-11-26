@@ -2,7 +2,7 @@
 title: Kassavirtaennusteet
 description: Tässä ohjeaiheessa on kassavirran ennusteprosessin yleiskatsaus. Siinä kerrotaan myös kassavirtaennusten integroinnista muihin järjestelmän moduuleihin.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547952"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752901"
 ---
 # <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Voit analysoida tulevaa kassavirtaa ja valuuttavaatimuksia kassavirran ennustetyökaluilla. Voit tällä tavoin arvioida yrityksen käteisvarojen tarvetta tulevaisuudessa. Sinun on tehtävä seuraavat tehtävät kassavirtaennustetta varten:
 
@@ -93,9 +94,12 @@ Budjettirekisteritapahtumat voidaan sisällyttää kassavirtaennusteeseen yksite
 Varaston kysynnän ja tarjonnan ennusteet voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Inventoinnin- ja varastonhallinta**-välilehdessä kassavirtaennusteeseen sisällytettävät ennustemallit. Kassavirtaennusteen sisällyttäminen voidaan ohittaa yksittäisillä kysynnän ja tarjonnan ennusteriveillä.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Kassavirran ennustamisen dimensioiden määrittäminen
-**Kassavirran ennustamisen määritykset** -sivun uuden välilehden avulla voit määrittää, mitkä taloushallinnon dimensiot otetaan käyttöön suodatettaessa **Kassavirran ennustaminen** -työtilaa. Tämä välilehti näkyy vain, kun Kassavirtaennusteet-toiminto on käytössä. 
+**Kassavirran ennustamisen määritykset** -sivun uuden välilehden avulla voit määrittää, mitkä taloushallinnon dimensiot otetaan käyttöön suodatettaessa **Kassavirran ennustaminen** -työtilaa. Tämä välilehti näkyy vain, kun Finance Insightsin Kassavirtaennusteet-toiminto on käytössä. 
 
 Valitse **Dimensiot**-välilehdessä suodatuksessa käytettävät dimensiot luettelosta ja siirrä ne oikeanpuoleiseen sarakkeeseen nuolinäppäinten avulla. Kassavirtaennustetietojen suodattamiseen voidaan valita vain kaksi dimensiota. 
+
+### <a name="setting-up-external-source"></a>Ulkoisen lähteen määrittäminen
+Ulkoisia tietoja voidaan lisätä tai tuoda kassavirtaennusteisiin. Ulkoiset lähteet on määritettävä ennen ulkoisten tietojen antamista tai tuomista. Määritä ulkoiset kassavirtaluokat **Ulkoinen lähde** -välilehdessä. Luokka voi olla joko **Lähtevä** tai **Saapuva**. Kirjaustyypiksi on valittava **Maksuvalmius**. Valitse **Yrityksen asetukset** -ruudukossa yritykset ja vastaavat päätilit, joita ulkoiset kassavirtaluokat koskevat.
 
 ### <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
 

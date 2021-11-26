@@ -2,7 +2,7 @@
 title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581062"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777982"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -219,6 +219,9 @@ Jos tallennetut näkymät eivät ole käytössä, kopioi mukautus noudattamalla 
 ### <a name="export-and-import-views-or-personalizations"></a>Vie ja tuo näkymiä tai mukautuksia
 
 Mukautuksia voidaan jakaa myös viennin ja tuonnin kautta. Yksittäiset käyttäjät tai järjestelmänvalvoja, joka toimii heidän puolestaan, voivat viedä mukautuksen tai näkymiä tämän menetelmän avulla ja antaa viedyn tiedoston sitten toisille käyttäjille tuontia varten. Vaihtoehtoisesti käyttäjät voivat antaa viedyt mukautukset käyttäjälle, jolla on järjestelmänvalvojan käyttöoikeudet. Tällöin käyttäjä voi käyttää mukautustiedostoa samalla kertaa useille käyttäjille **Mukauttaminen**-hallintasivulla.
+
+> [!IMPORTANT]
+> Koska mukautukset säilyvät päivityksestä toiseen, kaikkien mukautusten uudelleentuonti palvelupäivityksen jälkeen tai joskus muulloin on tarpeetonta eikä sitä missään nimessä suositella.   
 
 #### <a name="export"></a>Vie
 

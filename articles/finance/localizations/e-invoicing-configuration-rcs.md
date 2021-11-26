@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 description: Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen määrittämisestä.
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757971"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779667"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Sähköisen laskutuksen määrittäminen Regulatory Configuration Services (RCS) -palvelussa
 
@@ -28,7 +28,7 @@ ms.locfileid: "6757971"
 
 Tässä ohjeaiheessa on tietoja Dynamics 365 Regulatory Configuration Servicesin (RCS) sähköisen laskutuksen konfigurointiominaisuuksista.
 
-Sähköinen laskutus auttaa sähköisten laskujen liiketoiminta- ja sääntelyvaatimusten saavuttamisessa tarvitsematta tehdä koodausta. Skenaarioissa, joissa verkkopalveluiden on hyväksyttävä sähköiset laskut sähköisesti, konfigurointiominaisuudet auttavat myös viestinvaihdossa verkkopalvelujen kanssa ilman koodia.
+Sähköinen laskutus auttaa sähköisten laskujen liiketoiminta- ja sääntelyvaatimusten saavuttamisessa tarvitsematta tehdä koodausta. Skenaarioissa, joissa verkkopalvelun on hyväksyttävä sähköiset laskut sähköisesti, määritysominaisuudet auttavat myös viestinvaihdossa verkkopalvelun kanssa ilman koodia.
 
 ## <a name="electronic-reporting"></a>Sähköinen raportointi
 
@@ -73,6 +73,7 @@ Seuraavassa taulukossa näkyvät sähköiset laskutusominaisuudet, jotka ovat yl
 | Espanja          | Espanjan sähköinen lasku (ES)      | Myyntilaskut ja projektilaskut |
 | Eurooppa         | Sähköinen PEPPOL-lasku            | PEPPOL-myyntilaskut ja -projektilaskut |
 | Eurooppa         | Toimittajan PEPPOL-lasku                | Toimittajan laskujen PEPPOL-tuonti |
+| Saudi-Arabia   | Saudi-Arabian sähköinen lasku (SA)| Myyntilaskut ja projektilaskut |
 
 ### <a name="preview-features"></a>Esiversio-ominaisuudet
 
@@ -196,6 +197,11 @@ Seuraavissa luetteloissa näkyvät sähköisen laskutuksen ominaisuuksissa käyt
 
 - Myyntilasku (ES)
 - Projektilasku (ES)
+
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Saudi-Arabian (SA) sähköinen lasku: Saudi-Arabian myynti- ja projektilaskut
+
+- Sähköinen myyntilasku (SA)
+- Sähköinen projektilasku (SA)
 
 Sähköisen laskutuspalvelun kanssa käytettävissä olevista ER-muotokonfiguraatioista voit luoda myös omia ER-muotokonfiguraatioita. Sähköisen laskutuksen ominaisuuksissa käytettävät muotokonfiguraatiot eivät kuitenkaan tue suoraa viittausta Financen tai Supply Chain Managementin tauluihin tai vastaaviin metatietoihin. Vain viitteitä ER-mallin määritykseen tuetaan.
 

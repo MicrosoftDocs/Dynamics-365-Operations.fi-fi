@@ -43,7 +43,7 @@ Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 |            | Komposiittituloja         | 0–10                        | 2             |
 |            | Komponenttituloja         | 0–10                        | 1             |
 | LCD-näyttö        | 3D-valmius                 | Kyllä tai Ei                   | Kyllä           |
-|            | 3D käytössä               | Kyllä tai Ei                   | En            |
+|            | 3D käytössä               | Kyllä tai Ei                   | Ei            |
 | Plasma     | Toimintalämpötila vähintään      | 0–43 astetta              | 32            |
 |            | Toimintalämpötila korkeintaan        | 0–43 astetta              | 100           |
 | Projektio | Projektiokuvaputken takuu | 6, 12, tai 18 kuukautta         | 12            |

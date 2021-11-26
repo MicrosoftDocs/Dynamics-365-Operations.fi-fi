@@ -1,8 +1,8 @@
 ---
 title: Muokkaa toimen raportointisuhteita
 description: Tässä menettelyssä näytetään, miten työntekijän raportointisuhde muutetaan.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup, HcmP
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0083614a6e52b2450d17a0e78f5bc7d9b5717872359ffc77dab160e6b9caeab0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db15394bf4bcd1b56781d269ad81aa1ad20b5e69
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722532"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728806"
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Muokkaa toimen raportointisuhteita
 
@@ -28,20 +28,19 @@ ms.locfileid: "6722532"
 
 Tässä menettelyssä näytetään, miten työntekijän raportointisuhde muutetaan. Asiakirjoja voi reitittää työnkulussa raportointisuhteen avulla. Menettelyssä näytetään myös, miten työntekijä määritetään lisähierarkioihin. Työntekijä voi esimerkiksi kuulua projektiryhmään ja hänellä voi olla epävirallinen raportointisuhde projektivastaavaan. Toimelle voidaan määrittää lisäraportointisuhteita erilaisten projekti- tai matriisiskenaarioiden tarpeiden mukaan. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
-1. Valitse Henkilöstöhallinto > Toimet > Toimet.
-2. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa Toimi-kenttää arvolla 000091.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Laajenna Raportoi toimelle -osa.
-5. Avaa valintaikkuna valitsemalla Uusi.
-6. Anna tai valitse Raportoi:-kentässä arvo.
-7. Valitse Luo.
-8. Laajenna Suhteet-osa.
-9. ValitseLisää.
-10. Valitse valintaruutu ruudukossa vasemmalta.
-11. Anna tai valitse Hierarkian nimi -kentässä arvo.
-    * Esimerkki: projekti  
-12. Anna tai valitse Raportoi toimelle -kentässä arvo.  Esimerkki: 000437
-13. Valitse Tallenna.
+1. Valitse **Henkilöstöhallinto** \> **Toimet** \> **Toimet**.
+2. Käytä pikasuodatinta tietueiden etsimiseen. Voit esimerkiksi suodattaa **Toimi**-kenttää arvolla **000091**.
+3. Valitse luettelossa valitulla rivillä oleva linkki.
+4. Laajenna **Raportoi toimelle** -osa.
+5. Avaa avattava valintaikkuna valitsemalla **Uusi**.
+6. Anna tai valitse arvo **Raportoi:**-kentässä.
+7. Valitse **Luo**.
+8. Laajenna **Suhteet**-osa.
+9. Valitse **Lisää**.
+10. Valitse valintaruutu ruudukon vasemmalla puolella.
+11. Anna tai valitse **Hierarkian nimi** -kentässä arvo (kuten **Projekti**).
+12. Anna tai valitse **Raportoi toimelle** -kentässä arvo (kuten **000437)**.
+13. Valitse **Tallenna**.
 
 
 

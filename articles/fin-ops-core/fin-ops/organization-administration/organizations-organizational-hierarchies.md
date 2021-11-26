@@ -2,7 +2,7 @@
 title: Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
 description: Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita.
 author: sericks007
-ms.date: 07/25/2019
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74aa2736b4cfb11039ea1cee3f62e74cf4928a1b27cea16e7e0e86f66bdddd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
+ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715986"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7798343"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
 
@@ -64,9 +64,19 @@ Ryhmä on organisaatio, jonka jäsenet jakavat yhteisen vastuun, intressin tai t
 
 Määritä organisaatiohierarkioita liiketoiminnan tarkastelemiseen ja raportointiin eri näkökulmista. Voit esimerkiksi määrittää yritysten hierarkian verotuksellista, oikeudellista tai lakisääteistä raportointia varten. Aseta hierarkia, joka perustuu toimintayksiköihin, raportoimaan sellaiset taloustiedot, joiden raportointia lainsäädäntö ei edellytä mutta joita käytetään sisäisessä valvonnassa. Voit esimerkiksi luoda ostohierarkian ostokäytäntöjen, sääntöjen ja liiketoimintaprosessien hallintaan.
 
+> [!NOTE]
+> Kun toimintayksikkö on lisätty hierarkiaan, toimintayksikköä ei voi poistaa. 
+
 Jokaiseen hierarkiaan liitetään tarkoitus. Hierarkian tarkoitus määrittää hierarkiaan sisällytettävät organisaatiotyypit. Tarkoitus määrittää myös käyttötilanteet, joissa hierarkiaa voidaan käyttää.
 
 Hierarkian organisaatiot voivat jakaa parametrejä, käytäntöjä ja tapahtumia. Organisaatio voi periä tai ohittaa ylätason organisaation parametrit. Jaetut perustiedot, kuten tuotteet ja osoitekirja, koskevat koko organisaatiota, mutta niitä ei voi ohittaa yksittäisissä organisaatioissa. Organisaatioiden ja hierarkioiden luominen edellyttää huolellista suunnittelua. Lisätietoja on kohdassa [Organisaatiohierarkian suunnitteleminen](plan-organizational-hierarchy.md).
+
+## <a name="additional-resources"></a>Lisäresurssit
+- [Organisaatiohierarkian suunnitteleminen](plan-organizational-hierarchy.md)
+- [Organisaation hierarkian luominen](tasks/create-organization-hierarchy.md)
+- [Yrityksen luominen](tasks/create-legal-entity.md)
+- [Toimintayksikön luominen](tasks/create-operating-unit.md)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

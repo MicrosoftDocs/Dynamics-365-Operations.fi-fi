@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579877"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778254"
 ---
 # <a name="work-split"></a>Työn jako
 
@@ -33,7 +33,7 @@ Työnjakotoiminnolla voidaan jakaa suuret työtunnukset (eli useita rivejä sis�
 
 Ennen kuin työn jakotoimintoa voidaan käyttää, se ja sen edellytyksenä oleva toiminto on otettava käyttöön. Järjestelmänvalvojat voivat tarkistaa [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksissa toimintojen tilan ja ottaa ne tarvittaessa käyttöön.
 
-Jos edellytyksenä oleva *Organisaation laajuinen työn esto* -toiminto ei ole vielä käytössä, se on otettava käyttöön. **Ominaisuuksien hallinta** -työtilassa tämä ominaisuus on luetteloitu seuraavalla tavalla:
+Jos edellytyksenä oleva *Organisaation laajuinen työn esto* -toiminto ei ole vielä käytössä, se on otettava käyttöön. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä. Ominaisuus on kuitenkin edelleen mainittu [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) seuraavasti:
 
 - **Moduuli:** *Varastonhallinta*
 - **Toiminnon nimi:** *Organisaation laajuinen työn esto*

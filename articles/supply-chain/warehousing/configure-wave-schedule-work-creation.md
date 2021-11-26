@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 358f5a87cdb42f0ff646948da8d38475cf49e3f2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577909"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778374"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Työn luonnin aikatauluttaminen aallon aikana
 
@@ -33,7 +33,7 @@ Kun toiminto on otettu käyttöön, suunniteltu työ luodaan automaattisesti, ja
 
 Jos haluat käyttää tässä ohjeaiheessa kuvattuja ominaisuuksia, niiden on oltava käytössä järjestelmässäsi. Ota [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa käyttöön seuraavat ominaisuudet seuraavassa järjestyksessä:
 
-1. **Organisaation laajuinen töiden nesto** – Tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen.
+1. **Organisaation laajuinen töiden nesto** – Tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
 1. **Työn luomisen ajoitus** – Tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen.
 1. **Organisaation laajuinen Työn luomisen ajoitus -aaltomenetelmä** – Tarvitaan ajoitetun työn luomisen automaattiseen määritykseen. Et tarvitse tätä ominaisuutta, jos käytät vain manuaalista määritystä.
 

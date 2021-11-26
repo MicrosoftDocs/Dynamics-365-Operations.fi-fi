@@ -1,5 +1,5 @@
 ---
-title: Ota reunapalvelujen scale unitit käyttöön mukautetussa laitteistossa LBD:n avulla (esikatselu)
+title: Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
 description: Tässä ohjeaiheessa kerrotaan, paikallisia reunapalvelujen scale uniteja valmistellaan käyttämällä mukautettua laitteistoa ja käyttöönottoa, joka perustuu paikallisiin liiketoimintatietoihin.
 author: cabeln
 ms.date: 04/22/2021
@@ -9,24 +9,21 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678978"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729072"
 ---
-# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>Ota reunapalvelujen scale unitit käyttöön mukautetussa laitteistossa LBD:n avulla (esikatselu)
+# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 Reunan asteen yksiköillä on tärkeä rooli toimitusketjun hallinnan hajautetussa hybriditopologiassa. Hybriditopologiassa voit jakaa työkuormia Supply Chain Management -pilvikeskuksen ja ylimääräisten scale unitien välillä pilvessä tai reunalla.
 
 Reunapalvelujen scale unitit voidaan ottaa käyttöön luomalla paikallisen yritystiedon (LBD) [paikallinen ympäristö](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) ja määrittämällä se sitten toimimaan scale unitina toimitusketjun hallinnan hajautetussa hybriditopologiassa. Tämä saavutetaan yhdistämällä paikallinen LBD-ympäristö pilvessä toimivaan Supply Chain Management -ympäristöön, joka on määritetty toimimaan keskuksena.  
-
-Reunapalvelujen scale unitit ovat parhaillaan esikatselussa. Tämän vuoksi voit käyttää tällaista ympäristöä vain [esikatseluehtojen](https://aka.ms/scmcnepreviewterms) mukaisesti.
 
 Tässä aiheessa kuvataan, miten paikallinen LBD-ympäristö määritetään reunapalvelujen scale unitiksi ja yhdistetään sitten keskukseen.
 
@@ -36,11 +33,9 @@ Tässä on käyttöönottovaiheiden yleiskatsaus.
 
 1. **Ota LBD-paikka käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) LBD-projektissa.**
 
-    Esikatselussa LBD:n reunapalvelujen scale unitit kohdistuvat olemassa oleviin LBD-asiakkaisiin. Lisäksi 60 päivän rajoitettu LBD-eristyspaikka tarjotaan vain tietyissä asiakastilanteissa.
-
 1. **Määritä ja ota käyttöön LBD-ympäristö *tyhjällä* tietokannalla.**
 
-    Käytä LCS:ää LBD-ympäristön käyttöönottoon viimeisimmällä topologialla ja tyhjällä tietokannalla. Lisätietoja on myöhemmin tämän aiheen kohdassa [LBD-ympäristön määritys ja käyttöönotto tyhjällä tietokannalla](#set-up-deploy). Sinun on käytettävä Supply Chain Managementin versiota 10.0.19, jossa on vähintään platform update 43 keskus- ja scale unit -ympäristöissä.
+    Käytä LCS:ää LBD-ympäristön käyttöönottoon viimeisimmällä topologialla ja tyhjällä tietokannalla. Lisätietoja on myöhemmin tämän aiheen kohdassa [LBD-ympäristön määritys ja käyttöönotto tyhjällä tietokannalla](#set-up-deploy). Keskus- ja scale unit -ympäristössä on käytettävä vähintään Supply Chain Managementin versiota 10.0.21.
 
 1. **Lataa kohdepaketit LCS:n LBD-projektiresursseihin**
 
@@ -60,7 +55,7 @@ Loput tämän ohjeaiheen osat sisältävät tarkempia tietoja näiden vaiheiden 
 
 Tämä vaihe luo toimivan LBD-ympäristön. Ympäristöllä ei kuitenkaan välttämättä ole samoja sovellusten ja ympäristöjen versioita kuin keskusympäristöllä. Lisäksi siitä puuttuvat vielä mukautukset, eikä sitä ole vielä määritetty toimimaan scale unitina.
 
-1. Noudata kohdan [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) ohjeita. Sinun on käytettävä Supply Chain Managementin versiota 10.0.19, jossa on vähintään ympäristöpäivitys 43 keskus- ja scale unit -ympäristöissä
+1. Noudata kohdan [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) ohjeita. Keskus- ja scale unit -ympäristössä on käytettävä vähintään Supply Chain Managementin versiota 10.0.21. Lisäksi infrastruktuurikomentosarjoissa on oltava käytössä vähintään versio 2.12.0. 
 
     > [!IMPORTANT]
     > Lue tämän osan loppuosa, **ennen** kuin suoritat kyseisen aiheen vaiheet.
@@ -75,9 +70,50 @@ Tämä vaihe luo toimivan LBD-ympäristön. Ympäristöllä ei kuitenkaan vältt
     > Tämä komentosarja poistaa kaikki määritykset, joita ei tarvita reunapalvelujen scale unitien käyttöönotossa.
 
 1. Määritä tyhjiä tietoja sisältävä tietokanta kohdassa [Tietokantojen määritys](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) kuvatulla tavalla. Käytä tässä vaiheessa tyhjää data.bak-tiedostoa.
-1. Määritä käyttöönottoa edeltävä komentosarja. Lisätietoja: [Paikallisen edustajan ennen käyttöönottoa ja sen jälkeen suoritettavat komentosarjat](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+1. Kun [Tietokantojen määrittäminen](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) -vaihe on suoritettu, Scale Unit Alm Orchestrator -tietokanta on määritettävä suorittamalla seuraava komentosarja.
 
-    1. Kopioi **ScaleUnit**-kansio kohdasta **Infrastruktuurikomentosarjat** **Komentosarjat**-kansioon edustajatiedostojen jaettuun tallennustilaan, joka on märitetty ympäristössä. Tyypillinen polku on \\\\lbdiscsi01\\edustaja\\Komentosarjat.
+    > [!NOTE]
+    > Financial Reporting -tietokantaa ei määritetä [Tietokantojen määrittäminen](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) -vaiheessa.
+
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
+    ```
+
+    Initialize-Database.ps1-komentosarja suorittaa seuraavat toiminnot:
+
+    1. Luo tyhjä **ScaleUnitAlmDb**-niminen tietokanta.
+    2. Yhdistä käyttäjät tietokantarooleihin seuraavan taulukon mukaisesti.
+
+        | Käyttäjä            | Tyyppi | Tietokantarooli |
+        |-----------------|------|---------------|
+        | svc-LocalAgent$ | gMSA | db\_owner     |
+
+1. Jatka kohdan [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) ohjeiden noudattamista.
+1. Kun [AD FS -määritys](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) -vaihe on suoritettu, toimi seuraavasti:
+
+    1. Luo uusi Active Directory Federation Services (AD FS) -sovellus, jonka avulla Alm Orchestration -palvelu voi olla yhteydessä AOS (Application Object Server) -palvelimeen.
+
+        ```powershell
+        # Host URL is your DNS record\host name for accessing the AOS
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        ```
+
+    1. Luo uusi Azure Active Directory (Azure AD) -sovellus, jonka avulla Alm Orchestration -palvelu voi olla yhteydessä Scale Unit -hallintapalveluun.
+
+        ```powershell
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+        ```
+
+1. Jatka kohdan [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) ohjeiden noudattamista. Kun paikallisen edustajan määritys on annettava, varmista, että reunan Scale Unit -ominaisuudet on otettu käyttöön ja että kaikki tarvittavat parametrit on annettu.
+
+    ![Reunan Scale unit -ominaisuuksien ottaminen käyttöön](media/EnableEdgeScaleUnitFeatures.png "Reunan Scale unit -ominaisuuksien ottaminen käyttöön")
+
+1. Määritä käyttöönottoa edeltävä komentosarja ennen ympäristön käyttöönottoa LCS:stä. Lisätietoja: [Paikallisen edustajan ennen käyttöönottoa ja sen jälkeen suoritettavat komentosarjat](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+
+    1. Kopioi Configure-CloudAndEdge.ps1-komentosarja **infrastruktuurikomentosarjojen** **ScaleUnit**-kansiosta **Komentosarjat**-kansioon siinä edustajatiedostojen jaetussa tallennustilassa, joka on määritetty ympäristössä. Tyypillinen polku on \\\\lbdiscsi01\\edustaja\\Komentosarjat.
     2. Luo komentosarja **PreDeployment.ps1**, joka käynnistää komentosarjat käyttäen tarvittavia parametreja. Käyttöönottoa edeltävä komentosarja on sijoitettava edustajatiedostojen jaetun tallennustilan **Komentosarjat**-kansioon. Muuten sitä ei voi suorttaa. Tyypillinen polku on \\\\lbdiscsi01\\edustaja\\Komentosarjat\\PreDeployment.ps1.
 
         PreDeployment.ps1-komentosarjan sisältö muistuttaa seuraavaa esimerkkiä.
@@ -86,7 +122,7 @@ Tämä vaihe luo toimivan LBD-ympäristön. Ympäristöllä ei kuitenkaan vältt
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
         ```
 
         > [!NOTE]
@@ -101,6 +137,75 @@ Tämä vaihe luo toimivan LBD-ympäristön. Ympäristöllä ei kuitenkaan vältt
         >   - @#
 
 1. Ota ympäristö käyttöön käyttäen uusinta käytettävissä olevaa perustopologiaa.
+1. Kun ympäristö on otettu käyttöön, toimi seuraavasti:
+
+    1. Suorita seuraava SQL-komennot yritystietokannassa (AXDB).
+
+        ```sql
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        delete from NumberSequenceTable
+        delete from NumberSequenceReference
+        delete from NumberSequenceScope
+        delete from FeatureManagementMetadata
+        delete from FeatureManagementState
+        delete from SysFeatureStateV0
+        ```
+
+    1. Lisää samanaikaisten eräistuntojen enimmäismääräksi arvo, joka on suurempi kuin 4.
+
+        ```sql
+        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
+        ```
+
+    1. Tarkista, että muutoksen seuranta on otettu käyttöön yritystietokannassa (AXDB).
+
+        1. Avaa SQL Server Management Studio (SSMS).
+        1. Pidä yritystietokantaa (AXDB) valittuna (tai napsauta sitä hiiren kakkospainikkeella) ja valitse sitten **Ominaisuudet**.
+        1. Valitse avautuvassa ikkunassa **Muutosten seuranta** ja määritä sitten seuraavat arvot:
+
+            - **Muutosten seuranta:** *Tosi*
+            - **Säilytysaika:** *7*
+            - **Säilytyksen yksiköt:** *Päivää*
+            - **Automaattinen puhdistus:** *Tosi*
+
+    1. Lisää aiemmin luotu AD FS -sovelluksen tunnus (käyttämällä Create-ADFSServerApplicationForEdgeScaleUnits.ps1-komentosarjaa) Azure AD -sovellustaulukkoon scale unitissa. Tämä vaihe voidaan suorittaa manuaalisesti käyttöliittymässä. Vaihtoehtoisesti se voidaan suorittaa tietokannan kautta seuraavan komentosarjan avulla.
+
+        ```sql
+        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
+
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+        BEGIN
+            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+        END
+        ```
+
+## <a name="set-up-an-azure-key-vault-and-an-azure-ad-application-to-enable-communication-between-scale-units"></a><a name="set-up-keyvault"></a>Azure Key Vaultin ja Azure AD -sovelluksen määrittäminen ottamaan käyttöön scale unitien välinen viestintä
+
+1. Kun ympäristö on otettu käyttöön, Azure AD -lisäsovellus luodaan ottamaan käyttöön luotettava viestintä sovelluksen ja scale unitin välillä.
+
+    ```powershell
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+    ```
+
+1. Kun sovellus on luotu, asiakasohjelman salasana on luotava ja tallennettava Azure Key Vaultiin. Lisäksi on myönnettävä luodun Azure AD -sovelluksen käyttöoikeus, jotta se voi noutaa avainsäilöön tallennetut salasanat. Seuraava komentosarja suorittaa kätevästi kaikki tarvittavat toiminnot automaattisesti.
+
+    ```powershell
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any key vault within your resource group>' `
+                                         -Location '<Any Azure location where Azure Key Vault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
+    ```
+
+    > [!NOTE]
+    > Jos määritettyä **KeyVaultName**-arvoa ei ole yhdessäkään avainsäilössä, komentosarja luo sellaisen automaattisesti.
+
+1. Lisää juuri luotu Azure AD -sovelluksen tunnus (Create-SpokeToHubAADApplication.ps1-komentosarjaa käytettäessä) Azure AD -sovellustaulukkoon keskuksessa. Tämä vaihe voidaan suorittaa manuaalisesti käyttöliittymässä.
 
 ## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a>Lataa kohdepaketit LCS:n LBD-projektiresursseihin
 
@@ -116,122 +221,13 @@ Tässä vaiheessa täsmäytetään LBD:n scale unit -ympäristön sovellusversio
 1. Anna LBD-ympäristön käyttöön yhdistetty sovellus-/ympäristöpaketti, jonka latasit edellisessä vaiheessa.
 1. Anna LBD-ympäristön käyttöön mukautettu käyttöönotettava paketti, jonka latasit edellisessä vaiheessa.
 
-    ![Toiminnon Ylläpidä > Ota päivitykset käyttöön LCS:ssä valitseminen.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Toiminnon Ylläpidä > Ota päivitykset käyttöön LCS:ssä valitseminen")
+    ![Päivitysten käyttäminen LCS:ssä](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Päivitysten käyttäminen LCS:ssä")
 
     ![Mukautuspaketin valitseminen.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Mukautuspaketin valitseminen")
 
 ## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a>Kohdista LBD:n reunapalvelujen scale unit keskukseen
 
-Kun reunapalvelujen scale unitit ovat edelleen esikatselussa, LBD:n reunapalvelujen scale unitin keskukseen kohdistamisessa on käytettävä GitHubissa käytettävissä olevia [scale unitien käyttöönotto- ja määritystyökaluja](https://github.com/microsoft/SCMScaleUnitDevTools). Tämän prosessin ansiosta LBD-määritys voi toimia reunapalvelujen scale unitina, ja se kohdistaa sen keskukseen. Prosessi muistuttaa yhden ruudun kehitysympäristön määrittämistä.
-
-1. Lataa [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases)-tiedoston viimeisin versio ja pura sen sisältö.
-1. Luo kopio tiedostosta `UserConfig.sample.xml` ja anna sille nimeksi `UserConfig.xml`.
-1. Luo Microsoft Azure Active Directory (Azure AD) -sovellus Azure AD -vuokraajassasi [Scale unitien ja työkuormien käyttöönotto-opas](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations) -oppaassa esitetyllä tavalla.
-    1. Kun olet luonut sen, siirry keskuksen Azure AD -sovelluslomakkeeseen (SysAADClientTable).
-    1. Luo uusi merkintä ja määritä luomasi sovelluksen tunnus **Asiakastunnus**-tunnukseksi. Määritä **Nimi**-kohdan arvoksi *ScaleUnits* ja **Käyttäjätunnus**-kohdan arvoksi *Järjestelmänvalvoja*.
-
-1. Luo Active Directory -liittoutumispalvelut (AD FS) -sovellus oppaassa [Scale unitien ja työkuormien käyttöönotto-opas](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations) esitetyllä tavalla.
-    1. Kun olet luonut sen, siirry reunapalvelujen scale unitin Azure AD -sovelluslomakkeeseen (SysAADClientTable).
-    1. Luo uusi merkintä ja määritä luomasi sovelluksen tunnus **Asiakastunnus**-tunnukseksi. Määritä kohdan **Käyttäjätunnus** arvoksi *Järjestelmänvalvoja*.
-
-1. Muokkaa `UserConfig.xml`-tiedostoa.
-    1. Syötä `InterAOSAADConfiguration`-osaan aiemmin luomasi Azure AD -sovelluksen tiedot.
-        - Syötä `AppId`-elementtiin Azure-sovelluksen sovellustunnus.
-        - Syötä `AppSecret`-elementtiin Azure-sovelluksen salainen koodi.
-        - `Authority`-elementin on sisällettävä URL-osoite, joka määrittää vuokraajan suojausviranomaisen.
-
-        ```xml
-        <InterAOSAADConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </InterAOSAADConfiguration>
-        ```
-
-    1. Muokkaa `ScaleUnitConfiguration`-osassa ensimmäisen `ScaleUnitInstance`-esiintymän `AuthConfiguration`-osaa.
-        - Syötä `AppId`-elementtiin Azure-sovelluksen sovellustunnus.
-        - Syötä `AppSecret`-elementtiin Azure-sovelluksen salainen koodi.
-        - `Authority`-elementin on sisällettävä URL-osoite, joka määrittää vuokraajan suojausviranomaisen.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Määritä lisäksi tälle samalle `ScaleUnitInstance`-esiintymälle seuraavat arvot:
-        - Määritä `Domain`-elementissä keskuksesi URL-osoite. Esimerkki: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - Varmista `EnvironmentType`-elementissä, että arvo `LCSHosted`on määritetty.
-
-    1. Muokkaa `ScaleUnitConfiguration`-osassa toisen `ScaleUnitInstance`-esiintymän `AuthConfiguration`-osaa.
-        - Syötä `AppId`-elementtiin AD FS -sovelluksen sovellustunnus.
-        - Syötä `AppSecret`-elementtiin AD FS -sovelluksen salainen koodi.
-        - `Authority`-elementin on sisällettävä AD FS -esiintymän URL-osoite.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
-            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
-            <Authority>https://adfs.contoso.com/adfs</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Määritä lisäksi tälle samalle `ScaleUnitInstance`-esiintymälle seuraavat arvot:
-        - Määritä `Domain`-elementissä reunapalvelujen scale unitin URL-osoite. Esimerkki: https://ax.contoso.com/
-        - Varmista `EnvironmentType`-elementissä, että arvo LDB on määritetty.
-        - Syötä `ScaleUnitId`-elementtiin sama arvo, jonka määritit `InstanceId`-tunnukseksi, kun määritit käyttöönottoa edeltävän `Configure-CloudandEdge.ps1`-komentosarjan.
-
-        > [!NOTE]
-        > Jos et käytä oletustunnusta (@A), varmista, että päivität Työkuormat-osan jokaisen ConfiguredWorkload-työkuorman ScaleUnitId-tunnuksen.
-
-1. Avaa PowerShell ja siirry `UserConfig.xml`-tiedoston sisältävään kansioon.
-
-1. Suorita työkalu tällä komennolla.
-
-    ```powershell
-    .\CLI.exe
-    ```
-
-    > [!NOTE]
-    > Työkalu on käynnistettävä uudelleen jokaisen toiminnon jälkeen.
-
-1. Valitse työkalussa **2. Valmistele ympäristöt työkuorman asennusta varten**. Suorita sitten seuraavat vaiheet:
-    1. Valitse **1. Valmistele keskus**.
-    1. Valitse **2. Valmistele scale unit**.
-
-    > [!NOTE]
-    > Jos et suorita tätä komentoa puhtaasta asennuksesta ja se epäonnistuu, toimi seuraavasti:
-    >
-    > - Poista kaikki kansiot `aos-storage`-kansiosta (ei `GACAssemblies`-kansiota).
-    > - Suorita seuraava SQL-komento yritystietokannassasi (AXDB):
-    >
-    > ```sql 
-    > delete from storagefoler
-    > ```
-
-1. Suorita seuraava SQL-komennot yritystietokannassasi (AXDB):
-
-    ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
-    ```
-
-1. Tarkista, että muutoksen seuranta on otettu käyttöön yritystietokannassa (AXDB)
-    1. Käynnistä SQL Server Management Studio (SSMS).
-    1. Napsauta yritystietokantaa (AXDB) hiiren kakkospainikkeella ja valitse ominaisuudet.
-    1. Valitse avautuvassa ikkunassa **Muutosten seuranta** -vaihtoehto ja määritä seuraavat asetukset:
-
-        - **Muutosten seuranta:** *Tosi*
-        - **Säilytysaika:** *7*
-        - **Säilytyksen yksiköt:** *Päivää*
-        - **Automaattinen puhdistus:** *Tosi*
-
-1. Valitse työkalussa **3. Asenna työkuormat**. Suorita sitten seuraavat vaiheet:
-    1. Valitse **1. Asenna keskuksessa**.
-    1. Valitse **2. Asenna scale unitissa**.
+Reunan scale unitit määritetään ja niitä hallitaan Scale Unit -hallintaportaalissa. Lisätietoja on kohdassa [Scale unitien ja kuormitusten hallinta Scale Unit -hallintaportaalissa](./cloud-edge-landing-page.md#scale-unit-manager-portal).
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

@@ -1,8 +1,8 @@
 ---
 title: Loma- ja poissaolopyyntöjen hallinta Teamsissa
 description: Tässä ohjeaiheessa käsitellään poissaolopyyntöjä Microsoft Teamsin Dynamics 365 Human Resources -sovelluksessa.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94fa4dca7ff8372d4cf1aeee225e821574f4104048db5ad8a816be2bce496de8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725863"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771528"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Lomapyyntöjen hallinta Teamsissa
 
@@ -41,7 +41,7 @@ Löydät Dynamics 365 Human Resources -sovelluksen Teams-kaupasta.
 Jos sisäänkirjautuminen ei tapahdu automaattisesti, kirjaudu sitään valitsemalla **Asetukset**-välilehti.
 
 > [!NOTE]
-> Jos kirjautumisikkuna ei ole näkyvissä, varmista, että selaimen asetukset sallivat ponnahdusikkunat. 
+> Jos kirjautumisikkuna ei ole näkyvissä, päivitä selaimen asetukset sallimaan ponnahdusikkunat. 
 
 Jos käytössä on useita Human Resources -esiintymiä, valitse **Asetukset**-välilehdessä, mihin ympäristöön yhteys muodostetaan.
 
@@ -53,13 +53,13 @@ Jos käytössä on useita Human Resources -esiintymiä, valitse **Asetukset**-v�
 Kun sovellus on asennettu, näkyviin tuleva tervehdyssanoma ilmoittaa, minkälaisia toimintoja botti voi tehdä puolestasi.
 
 > [!NOTE]
-> Kun bottia käytetään ensimmäinen kerran, sisäänkirjautuminen voi olla välttämätöntä. Jos kirjautumisikkuna ei ole näkyvissä, varmista, että selaimen asetukset sallivat ponnahdusikkunat.
+> Kun bottia käytetään ensimmäinen kerran, sisäänkirjautuminen voi olla välttämätöntä. Jos kirjautumisikkuna ei ole näkyvissä, päivitä selaimen asetukset sallimaan ponnahdusikkunat.
 
 Botilta voi pyytää seuraavia:
 
 - Tarkastele nykyisiä lomasaldoja. Lähetä esimerkiksi sanoma, jossa sanotaan "Näytä lomasaldot".
 
-- Lomapyynnön käynnistäminen käyttäjän puolesta. Lähetä esimerkiksi viesti "Pidä vapaata" tai "Haluan pitää vapaata ensi torstaina ja perjantaina", jotta voit tarkemmin kysyä vapaata poissaolon lomatyypille. 
+- Lomapyynnön käynnistäminen käyttäjän puolesta. Lähetä esimerkiksi viesti Pidä vapaata tai Haluan pitää vapaata ensi torstaina ja perjantaina, jotta voit tarkemmin kysyä vapaata poissaolon lomatyypille. 
 
   ![Lomapyynnön käynnistäminen Teams-keskustelussa.](./media/hr-teams-leave-app-initiate.png)
 
@@ -113,7 +113,7 @@ Botilta voi pyytää seuraavia:
    
 ### <a name="respond-to-teams-notifications"></a>Teams-ilmoituksiin vastaaminen
 
-Kun lomapyyntöjen lähetysten hyväksyjänä olet sinä tai vaihtoehtoisesti työntekijä, saat ilmoituksen Teamsin Human Resources -sovellukseen. Voit tarkastella ilmoitusta valitsemalla sen. Ilmoitukset näkyvät myös **Keskustelu**-alueella.
+Kun lomapyyntöjen lähetysten hyväksyjänä olet sinä tai vaihtoehtoisesti työntekijä, saat ilmoituksen Teamsin Human Resources -sovellukseen. Voit tarkastella ilmoitusta valitsemalla lomapyynnön. Ilmoitukset näkyvät myös **Keskustelu**-alueella.
 
 Jos olet hyväksyjä, voit valita ilmoituksessa **Hyväksy** tai **Hylkää**. Voit myös määrittää valinnaisen sanoman.
 
@@ -167,7 +167,7 @@ Jos sinulla on vaikeuksia Dynamics 365 Human Resources Teams -sovellukseen kirja
 
 Jos et voi kirjautua sovellukseen, Microsoft Teamsiin kirjautumiseen käytettyä tiliä ei ehkä ole liitetty työntekijätietueeseen Dynamics 365 Human Resourcesissa. Ota yhteys järjestelmänvalvojaan ja varmista, että työntekijätietue on liitetty oikein.
 
-### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Ympäristöä Dynamics 365 Human Resources ei löydy Asetuksista
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Dynamics 365 Human Resources -ympäristöä ei löydy asetuksista
 
 Jos et voi valita oikeaa Dynamics 365 -ympäristöä, käyttäjätietuetta ei ehkä ole synkronoitu oikein. Ota yhteyttä järjestelmänvalvojaan, jos haluat luoda käyttäjätietueen uudelleen ja liittää sen käyttäjän tunnistetietoihin. Yritä sitten kirjautua Human Resources -sovellukseen Microsoft Teamsille muutaman minuutin kuluttua.
 
@@ -199,7 +199,7 @@ Jos saat virheilmoituksen, kun yrität hyväksyä lomapyyntöjä Teams-sovelluks
 
 2. Varmista, että käyttäjät ovat kirjautuneet **Keskustelut**-välilehteen samoilla tunnistetiedoilla, kuin mitä he käyttävät lomapyyntöjen hyväksymisessä. Käytä viestejä "kirjaudu ulos" ja sitten "kirjaudu sisään" kirjautuaksesi sisään oikeilla tunnistetiedoilla.
 
-3. Jos ongelma säilyy, tarkista Business Events -järjestelmän erätyön tila järjestelmänvalvojana. Jos se on odotus- tai suoritusvaiheessa, palaa muutaman minuutin kuluttua. Jos tila ei muutu, kirjaa tukipalvelupyyntö, jotta tiimimme voi ratkaista ongelman.
+3. Jos ongelma jatkuu, tarkista **Liiketoimintatapahtumat -järjestelmän** erätyön tila järjestelmänvalvojana. Jos se on **Odotetaan**- tai **Suoritetaan**-vaiheessa, tarkista uudelleen muutaman minuutin kuluttua. Jos tila ei muutu, kirjaa tukipalvelupyyntö, jotta tiimimme voi auttaa korjaamaan ongelman.
 
 ## <a name="known-accessibility-issues"></a>Tunnetut helppokäyttöisyyteen liittyvät ongelmat
 
@@ -208,7 +208,7 @@ Teamsin Human Resources -sovellus sisältää seuraavat käytettävyysongelmat. 
 | Varasto-otto | Ratkaisuehdotus tai selitys |
 | --- | --- |
 | Työpöydän suurentaminen käyttämällä 400 %:n zoomausta piilottaa jotkin näkymän toimintopainikkeet. | Suosittelemme suurennuslasin käyttöä siihen asti, kunnes tämän zoomaustason tuki on käytettävissä. |
-| **Poissaolo**-välilehdessä VoiceOver-toiminto ilmoittaa painiketoiminnosta, kun poissaoloruudukon otsikkoa luetaan. | Ruudukon otsikko ja elementit ryhmitellään vuoden mukaan. Ne voidaan tiivistää. VoiceOver tulkitsee tämän toiminnalliseksi nimikkeeksi, vaikka näin ei ole. |
+| **Poissaolo**-välilehdessä VoiceOver-toiminto ilmoittaa painiketoiminnosta, kun poissaoloruudukon otsikkoa luetaan. | Ruudukon otsikko ja elementit ryhmitellään vuoden mukaan, ja ne voidaan tiivistää. VoiceOver tulkitsee tämän esityksen toimintaa ohjaavaksi kohteeksi, vaikka näin ei ole. |
 | **Poissaolo**-välilehdessä on ylimääräinen sipaisuele siirryttäessä uuden pyynnön **Syykoodi**-kohtaan. | Piilotettua ohjausobjektia, jota sipaisulla siirtyminen yrittää käyttää, ei ole. |
 | Jos sipaiset **Poissaolo**-välilehdessä kalenterin ollessa auki, näkymä siirtyy ohjausobjektin ulkopuolelle uuden pyynnön yläosan tai pyynnön muokkauksen sijaan. | Kun käyttäjä on kohdassa **Siirry tähän päivään**, tätä pidetään ohjausobjektin päättymisenä. Näkymä siirtyy takaisin yläosaan sipaisemalla vastakkaiseen suuntaan. |
 | **Keskustelu**-välilehdessä kohdistus siirtyy takaisin alkuun, jossa syötettiin päivämäärä käyttöä helpottavan työkalun tai näppäimistön siirtymistoiminnon avulla. | Siirry käyttämällä sarkainta, kunnes olet jälleen syöttöalueella. |
@@ -217,9 +217,9 @@ Teamsin Human Resources -sovellus sisältää seuraavat käytettävyysongelmat. 
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoftin Language Understanding Intelligent Service (LUIS)
 
-Microsoft Teamsin Dynamics 365 Human Resources -botin avulla käyttäjän tekstinsyöttö analysoidaan, jotta taustalla oleva kysely tai tarkoitus saataisiin selville. Käyttäjän teksti, kuten Hae tili Contoso, reititetään yhteen Microsoftin kognitiiviseen palveluun, jonka nimi on Language Understanding Intelligent Service (LUIS). Lisätietoja LUIS-palvelusta on  [täällä](https://www.luis.ai/). LUIS-palvelu tulkitsee tai selvittää käyttäjän syötteen tarkoituksen (tässä tapauksessa tarkoituksena on etsiä tietoja) ja kohde-entiteetin (tässä tapauksessa tarkoitettu entiteetti on Contoso-niminen tili). Nämä tiedot välitetään sitten Microsoftin  [Azure-bottikehykseen](https://azure.microsoft.com/services/bot-service/), joka käyttää Dynamics 365 Human Resourcesin tietoja ja noutaa käyttäjän kyselyn haluamat tiedot. 
+Microsoft Teamsin Dynamics 365 Human Resources -botin avulla käyttäjän tekstinsyöttö analysoidaan, jotta taustalla oleva kysely tai tarkoitus saataisiin selville. Käyttäjän teksti, kuten Hae tili Contoso, reititetään yhteen Microsoftin kognitiiviseen palveluun, jonka nimi on Language Understanding Intelligent Service (LUIS). Lisätietoja LUIS-palvelusta on  [täällä](https://www.luis.ai/). LUIS-palvelu tulkitsee tai selvittää käyttäjän syötteen tarkoituksen (tässä tapauksessa tarkoituksena on etsiä tietoja) ja kohde-entiteetin (tässä tapauksessa tarkoitettu entiteetti on Contoso-niminen tili). Nämä tiedot välitetään sitten Microsoftin  [Azure Bot Frameworkiin](https://azure.microsoft.com/services/bot-service/), joka käyttää Dynamics 365 Human Resourcesin tietoja ja noutaa käyttäjän kyselyn haluamat tiedot. 
 
-Asentamalla botin ja sallimalla sen käytön hyväksyt sen, että LUIS-palvelu ja Azure-bottikehys käsittelevät syötteen varsinaisen tarkoituksen, mikä parantaa käyttäjän keskustelukokemusta. LUIS-palvelun ja Azure-bottikehyksen vaatimustenmukaisuustasot voivat vaihdella Dynamics 365 Human Resourcesiin verrattuna. Vaikka LUIS-palvelu voi käyttää vain käyttäjäkyselyitä eikä sitä ole suunniteltu muodostamaan yhteyttä käyttäjän Dynamics 365 Human Resources -tietoihin tai -tiliin, Dynamics 365 Human Resources -botin käyttäjä voi vapaaehtoisesti tehdä kyselyn, joka sisältää asiakastietoja, henkilökohtaisia tietoja tai muita vastaavia tietoja ja kyseinen kysely voi tulla lähetetyksi LUIS-palveluun ja Azure-bottikehykseen. 
+Asentamalla botin ja sallimalla sen käytön hyväksyt sen, että LUIS-palvelu ja Azure-bottikehys käsittelevät syötteen varsinaisen tarkoituksen, mikä parantaa käyttäjän keskustelukokemusta. LUIS-palvelun ja Azure-bottikehyksen vaatimustenmukaisuustasot voivat vaihdella Dynamics 365 Human Resourcesiin verrattuna. Vaikka LUIS-palvelu voi käyttää vain käyttäjäkyselyitä eikä sitä ole suunniteltu muodostamaan yhteyttä käyttäjän Dynamics 365 Human Resources -tietoihin tai -tiliin, Dynamics 365 Human Resources -botin käyttäjä voi vapaaehtoisesti tehdä kyselyn, joka sisältää asiakastietoja, henkilökohtaisia tietoja tai muita vastaavia tietoja ja kyseinen kysely voi tulla lähetetyksi LUIS-palveluun ja Azure Bot Frameworkiin. 
 
 Käyttäjän kyselyjen ja viestien sisältöä säilytetään LUIS-järjestelmässä enintään 30 päivää. Nämä tiedot salataan eikä niitä käytetä koulutuksen tai palvelun parantamiseen. Lisätietoja kognitiivisista palveluista on  [täällä](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
@@ -227,7 +227,7 @@ Microsoft Teamsin sovellusten järjestelmänvalvojan asetuksia hallitaan [Micros
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure-tapahtumaverkko ja Azure Cosmos DB
 
-Kun Dynamics 365 Human Resources -sovellus on käytössä Microsoft Teamsissä, tietyt asiakastiedot voivat siirtyä sen maantieteellisen alueen ulkopuolelle, jossa vuokraajan Human Resources -palvelua käytetään.
+Kun Dynamics 365 Human Resources -sovellus on käytössä Microsoft Teamsissa, tietyt asiakastiedot voivat siirtyä sen maantieteellisen alueen ulkopuolelle, jossa vuokraajan Human Resources -palvelua käytetään.
 
 Dynamics 365 Human Resources lähettää työntekijän lomapyynnön ja työnkulun tehtävän tiedot Microsoft Azuren tapahtumaruudukkoon ja Microsoft Teamsille. Näitä tietoja voidaan tallentaa Microsoft Azure -tapahtumaverkossa enintään 24 tunnin ajan. Tiedot käsitellään Yhdysvalloissa ja ne salataan siirron ja tallennuksen aikana. Microsoft tai sen alihankkijat eivät käytä tietoja koulutuksessa tai palvelun parantamisessa. Tietoja siitä, mihin tietosi tallennetaan Teamsissä: [Tietojen sijainti Microsoft Teamsissä](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 

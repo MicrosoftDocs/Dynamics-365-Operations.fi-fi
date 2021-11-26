@@ -34,7 +34,7 @@ Tämä valintalista mahdollistaa asetusjoukon kyllä/ei-ominaisuuksille, jotka s
 | --- | --- | --- |
 | 200000000 | Tyhjä | Arvoa ei ole valittu. |
 | 200000001 | Kyllä | Kyllä. |
-| 200000002 | Nro | Nro |
+| 200000002 | Ei | Ei |
 
 ## <a name="see-also"></a>Lisätietoja
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 966a878a7e5b0a92d6d53e67bea19c50274087a4416980859175b12c6fdfbcdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764833"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778518"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -39,7 +39,7 @@ Useimmat suunnitellut tilaustoiminnot ovat käytettävissä kaikissa Microsoft D
 
 Rinnakkainen vahvistus nopeuttaa vahvistusprosessia rinnakkaistamalla sen useissa säikeissä. Tämä menetelmä voi olla hyödyllinen, kun useita suunniteltuja tilauksia vahvistetaan.
 
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunniteltujen tilausten rinnakkainen vahvistus* -ominaisuuden käyttöön.
+Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunniteltujen tilausten rinnakkainen vahvistus* -ominaisuuden käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Ota suunniteltujen tilausten vahvistaminen käyttöön suodatuksen avulla
 
@@ -51,7 +51,7 @@ Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Omina
 
 Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuunnitteluprosessin osana vahvistuksen aikarajan aikana. Automaattista vahvistamista tuetaan aina suunnittelumoduulissa, joka on integroitu Supply Chain Managementiin. Kuitenkin jos sitä käytetään myös suunnittelun optimointiin, ominaisuus on otettava käyttöön.
 
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuuden käyttöön.
+Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuuden käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
 
 ## <a name="manually-firm-planned-orders"></a>Vahvista suunnitellut tilaukset manuaalisesti
 

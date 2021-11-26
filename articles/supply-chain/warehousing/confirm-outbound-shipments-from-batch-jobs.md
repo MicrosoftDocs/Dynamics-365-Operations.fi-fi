@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d47b88fcc5e25fc85377b52fa9832916a4bb2217
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4af84383fe1d214849d5d05463bd0cbfad7d0536
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572382"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778470"
 ---
 # <a name="confirm-outbound-shipments-from-batch-jobs"></a>Vahvista lähtevät lähetykset erätöistä
 
@@ -27,7 +27,7 @@ Tässä ohjeaiheessa on ohjeita erätyön määrittämiseksi. Erätyö vahvistaa
 
 ## <a name="enable-the-confirm-outbound-shipments-from-batch-jobs-feature"></a>Lähtevien lähetysten vahvistaminen erätöistä -ominaisuuden käyttöönotto
 
-Ennen kuin käytät tätä toimintoa, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) sivua ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön tarvittaessa. Ominaisuus näkyy seuraavasti:
+Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla toiminnon tilan sekä ottaa sen käyttöön tai poistaa sen käytöstä tarvittaessa. Toiminto näkyy seuraavasti:
 
 - **Moduuli** - *Varastonhallinta*
 - **Ominaisuuden nimi** - *Lähtevien lähetysten vahvistaminen erätöistä*

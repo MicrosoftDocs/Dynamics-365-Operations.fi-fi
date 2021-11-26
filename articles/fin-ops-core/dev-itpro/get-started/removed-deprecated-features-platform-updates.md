@@ -178,7 +178,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Dynamics AX 2012 -yritysportaaliin (EP) liitetyt metatietojen artefaktit ovat vanhentuneet, sillä EP:tä ei koskaan tuettu Finance and Operations -sovelluksissa. |
-| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Kaikki EP-koodit on ajoitettu poistettavaksi lokakuun 2021 julkaisussa. |
@@ -335,7 +335,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Palvelun hahmontamat asiakirjoihin upotetut siirtymisen URL-osoitteet voivat sisältää luottamuksellista liiketoimintatietoa. Kaikkien upotettujen porautumislinkkien tuki asiakirjoissa poistetaan. Näin turvataan asiakastiedot jatkossa. Käyttäjät hyötyvät myös paremmasta suorituskyvystä samalla, kun asiakirjoja tuotetaan interaktiivisesti tämän muutoksen seurauksena.  |
-| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Raportointi |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Tämä toiminto poistetaan käytöstä palvelusta.<br><br>Uusi asiakasohjelma tarjoaa useita vaihtoehtoja näkymien tuottamiseen. Se luo myös linkkejä automaattisesti sovelluksessa siirtymistä varten. Palvelun hahmontamia sivutettuja asiakirjoja suositellaan ulkoista viestintää varten sähköpostissa, arkistoinnissa ja vastaanottajien tulostuksissa. Asiakirjojen esikatselua suoraan selaimessa on parannettu. Näin voidaan käyttää paikallisia tulostimia suoraan. Lisätietoja on kohdassa [PDF-asiakirjojen esikatselu upotetussa katseluohjelmassa](../analytics/preview-pdf-documents.md). |

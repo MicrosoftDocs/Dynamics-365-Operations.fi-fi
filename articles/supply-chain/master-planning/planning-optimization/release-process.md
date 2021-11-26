@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec1683554e389948a64aee68e4d069be1e93cc1a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2e0145c28b40f4fbfb54ad7e7ed32fbc130c569
+ms.sourcegitcommit: 8afd0cdb39ec443fb7631c39401967cce0fac34e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567340"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7727429"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
 
@@ -33,6 +33,9 @@ Koska ilmoitukset eivät näy, kun suunnittelun optimointi päivitetään ympär
 
 | Muutokset | Ominaisuuksien hallinnan tiedot | Vapautuspäivät |
 |---|---|---|
+| <p>Lisättiin käsittelyajan laskentakaavojen, päällekkäisen tuotantoreitin ja tuotannon työvaihenumeron toimintojen tuki tarvetapahtumissa.</p><p>Parannettiin tuotannon aikataulutuksen virhesanomia, jotka liittyvät aikakatkaisuun, kapasiteettiin, jota ei löytynyt, ja sykliseen reittiin.</p><p>Parannettiin yhdenmukaisuutta laskettaessa vastaanotto- ja varasto-ottopäivämääriä sekä suunnitelluissa että vahvistetuissa tilauksissa.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus* | 22.–27. lokakuuta 2021 |
+| <p>Lisättiin hävikkiprosentin huomioonottamisen tuki aikalaskentaa käsiteltäessä.</p><p>Lisättiin työvaihenumeron ja materiaalin käytön aikataulutuksen aikainen tuki. | Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus* | 5.–7. lokakuuta 2021 |
+| <p>Lisättiin tuotantoreittien työtyyppien tuki: **Jonon ennen**, **Jono jälkeen** ja **Kuljetusaika**.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus* | 25.–30. syyskuuta 2021 |
 | <p>Lisätty pääsuunnitelmien tuki asettamalla **Ajoitusmenetelmä** arvoon *Työvaiheiden ajoitus*.</p><p>Pidä **Reititysryhmät** -sivulla **Aktivointi**-, **Työaika**- ja **Kapasiteetti**-valintaruutujen asetukset riveillä, joissa **Työreitin/työn laji** on *Asennus* tai *Prosessi*. </p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | <p>Työvaiheiden ajoitus on käytettävissä ominaisuuksien hallinnassa versiosta 10.0.20.</p><p>Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus*</p>  | 9.–17. syyskuuta 2021 |
 | Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuksien hallintaa ei tarvita. | 25.–30. elokuuta 2021 |
 | <p>Lisättiin **Läpimenoaika**-kenttä suunniteltuihin tilauksiin.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset.</p> | Ominaisuuksien hallintaa ei tarvita. | 12.–17. elokuuta 2021 |

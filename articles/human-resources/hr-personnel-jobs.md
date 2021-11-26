@@ -1,26 +1,26 @@
 ---
 title: Työn komponenttien määrittäminen
-description: Tässä artikkelissa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi.
-author: andreabichsel
-ms.date: 06/24/2021
+description: Tässä aiheessa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754773"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731537"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Työn komponenttien määrittäminen
 
@@ -60,7 +60,7 @@ Työtehtävät kuvaavat toiminnalliset luokat korkealla tasolla ja yhdistävät 
 Voit ylläpitää työtehtäviä **Työtehtävät**-sivulla. Anna **Työtehtävät**-sivulla työtehtävän tunnistekoodi ja lyhyt kuvaus.
 
 ## <a name="compensation"></a>Kompensaatio
-Jos haluat kohdistaa kiinteän kompensaatiosuunnitelman työntekijälle, jolla on toimi työssä, sinun täytyy määrittää työlle kompensaatiotasot. Kompensaatiotasoa käytetään, kun vähimmäis-, keskipiste- ja enimmäissummat on määritetty kompensaatiorakenteessa (kompensaatioruudukko). Kun kiinteä kompensaatiosuunnitelma luodaan, kompensaatiorakenne valitaan. Kompensaatiorakenne sisältää myös kompensaatiotason. Kun valitset työntekijälle kiinteää kompensaatiosuunnitelmaa, valittavissa olevat kompensaatiotasot riippuvat työstä, johon työntekijän toimi on liitetty. Lisätietoja kompensaation määrittämisestä on kohdassa [Kompensaatiosuunnitelmat](hr-compensation-overview.md).
+Jos haluat kohdistaa kiinteän kompensaatiosuunnitelman työntekijälle, jolla on toimi työssä, sinun täytyy määrittää työlle kompensaatiotasot. **Kompensaatiotasoa** käytetään, kun vähimmäis-, keskipiste- ja enimmäissummat on määritetty kompensaatiorakenteessa (kompensaatioruudukko). Kun kiinteä kompensaatiosuunnitelma luodaan, kompensaatiorakenne valitaan. Kompensaatiorakenne sisältää myös kompensaatiotason. Kun valitset työntekijälle kiinteää kompensaatiosuunnitelmaa, valittavissa olevat kompensaatiotasot riippuvat työstä, johon työntekijän toimi on liitetty. Lisätietoja kompensaation määrittämisestä on kohdassa [Kompensaatiosuunnitelmat](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Työ osaamisalueet
 Työn osaamisalueet kuvaavat työn suorittamiseen tarvittavia taitoja. Jokaiseen osaamisalueeseen täytyy liittää osaamistaso. Osaamistasot ovat käyttäjien määrittämiä. Ne ilmaisevat osaamisalueen edellyttämän tietämyksen tai osaamisen tason. Yritykset voivat esimerkiksi määrittää numeerisia tasoja, kuten 1–5, jossa **1** tarkoittaa aloittelijaa ja **5** asiantuntijaa. Vaihtoehtoisesti yritykset voivat määrittää tasoja, joilla on otsikot **Aloittelija**, **Keskitaso** tai **Asiantuntija**. Kun osaamistaso on määritetty, myös osaamisen tärkeys voidaan määrittää. Jos esimerkiksi kirjanpitäjältä edellytetään vahvaa tietämystä Microsoft Excelistä, voit luoda osaamisalueen nimeltään **Excel-taidot**. Osaamistasoksi voidaan määrittää **Keskitaso** ja tärkeydeksi voidaan määrittää **Tärkein**.

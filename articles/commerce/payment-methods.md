@@ -1,8 +1,8 @@
 ---
 title: Maksutavat
 description: Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä, kun järjestelmä on määritetty. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi.
-author: rubencdelgado
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c174dd136cecedc9b23bdaa778885f75e51c9aa556a9e2709bc7da171faa8617
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713963"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779567"
 ---
 # <a name="payment-methods"></a>Maksutavat
 
@@ -47,5 +47,10 @@ Maksutapojen määrittämistä varten on suoritettava seuraavat tehtävät:
 3. Myymälän maksutavan määrittäminen. Liitä maksutavat kuhunkin myymälään ja määritä sitten myymäläkohtaiset asetukset kullekin myymälän maksutavalle.
 4. Aseta liikkeille korttimaksutavat. Suorita korttimaksujen määritys loppuun kaikille korttimaksutavoille, jotka hyväksyt liikkeessä.
 
+## <a name="handle-change-tendering-for-payment-methods"></a>Vaihtorahan maksuvälineen käsitteleminen maksutavoissa
+
+Jotkin maksutavat eivät tue suoraa vaihtorahan maksuvälinetapahtumaa, jos asiakkaille on maksettava vaihtorahaa myyntipistetapahtuman aikana. Vaihtorahan maksuvälineenä voi käyttää vain **Käteinen**- ja **Valuutta**-maksutapoja. 
+
+Sellaisia tilanteita varten, joissa vaihtorahan maksuvälinetapahtumaa tarvitaan tapahtuman aikana mutta maksutapa ei tue sitä, voidaan määrittää **Vaihtorahan maksuväline** -maksutapa. Käytettävä maksutapa valitaan, kun myymälän maksutapoja määritetään. Anna sen jälkeen **Vaihtoraha**-osan **Vaihtorahan maksuväline** -kentässä vaihtorahan maksuvälinemaksun vaihtoehto. Esimerkiksi **1** voidaan antaa ilmaisemaan, että käteistä voidaan käyttää vaihtorahan maksuvälinemaksun vaihtoehtona.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

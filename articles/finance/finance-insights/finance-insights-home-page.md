@@ -2,7 +2,7 @@
 title: Finance Insights -kotisivu
 description: Finance Insights sisältää määritettävät ja laajennettavat mallit, joiden avulla yrityksen kassavirta voidaan ennustaa tarkasti ja älykkäästi silloin, kun selvittämättömien saatavien maksu vastaanotetaan. Se auttaa myös budjetointiprosessia nopeuttavan budjettiesityksen luomisessa. Kaikki nämä ominaisuudet perustuvat älykkäisiin koneoppimismalleihin.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,24 +17,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4b77b7872ed163a94ab57e4efea8fe0fbca22156
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386383"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752853"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insights -kotisivu
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights sisältää määritettävät ja laajennettavat mallit, joiden avulla yrityksen kassavirta voidaan ennustaa tarkasti ja älykkäästi silloin, kun selvittämättömien saatavien maksu vastaanotetaan. Se auttaa myös budjetointiprosessia nopeuttavan budjettiesityksen luomisessa. Kaikki nämä ominaisuudet perustuvat älykkäisiin koneoppimismalleihin. Kun nämä uudet ominaisuudet yhdistetään automaation kanssa toimittajan maksuissa ja perinnöissä, saadaan aikaan monipuolinen ja älykäs talousjärjestelmä. Se auttaa päätöstenteossa ja nykyisten ja odotettavissa olevien liiketoimintahaasteiden tehokkaassa käsittelemisessä.
-
-> [!NOTE]
-> Finance Insightsin esiversio on saatavilla käyttöön otettavaksi Yhdysvalloissa, Kanadassa, Yhdistyneessä kuningaskunnassa, Euroopassa, Aasian ja Tyynenmeren alueella, Australiassa ja Uudessa-Seelannissa. Microsoft lisää tukea jatkuvasti myös muilla alueilla. Jos haluat ottaa Finance Insightsin käyttöön tuotantoympäristöissä, [Vie Data Lakeen](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) -ominaisuudet tulee ottaa ensin käyttöön tuotantoympäristössä.
+Finance Insights sisältää määritettävät ja laajennettavat mallit, joiden avulla yrityksen kassavirta voidaan ennustaa ja älykkäästi silloin, kun selvittämättömien saatavien maksu vastaanotetaan. Se auttaa myös budjetointiprosessia nopeuttavan budjettiesityksen luomisessa. Kaikki nämä ominaisuudet perustuvat älykkäisiin koneoppimismalleihin. Kun nämä uudet ominaisuudet yhdistetään automaation kanssa toimittajan maksuissa ja perinnöissä, saadaan aikaan monipuolinen ja älykäs talousjärjestelmä. Se auttaa päätöstenteossa ja nykyisten ja odotettavissa olevien liiketoimintahaasteiden tehokkaassa käsittelemisessä.
 
 > [!NOTE]
-> Tätä toimintoa tarjotaan esikatselutoimintojen joukkona. Esiversiotoimintoa ei tule käyttää tuloksena syntyneissä koneoppimismalleissa, jotka edistävät tai vaikuttavat liiketoimintapäätöksiin tai budjetointiehdotuksiin. Tämän ominaisuuden käyttö määräytyy [Täydentävien käyttöehtojen](https://go.microsoft.com/fwlink/?linkid=2105274) mukaan.
+> Finance Insightsin esiversio on saatavilla käyttöön otettavaksi Yhdysvalloissa, Kanadassa, Yhdistyneessä kuningaskunnassa, Euroopassa, Aasian ja Tyynenmeren alueella, Japanissa, Australiassa ja Uudessa-Seelannissa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -50,28 +48,15 @@ Finance Insightsin esikatselu edellyttää Taso 2 -ympäristön (useita pakettej
 
 ### <a name="version-requirements"></a>Version vaatimukset
 
-Tämä asiakirja koskee Finance and Operations -sovellusten (Platform update 35) versiota 10.0.11 ja uudempia versioita.
+Tämä aihe koskee Microsoft Dynamics 365 Financen versiota 10.0.21 ja sitä uudempia versioita.
 
 ### <a name="historical-data-requirements"></a>Aiemmat tietovaatimukset
 
-Asiakkaan maksuennusteet -toiminnossa käytettävän koneoppimismallin onnistunut kouluttaminen edellyttää myyntilaskuja vähintään vuoden ajalta.
+Asiakkaan maksuennusteet -toiminnossa käytettävän koneoppimismallin onnistunut kouluttaminen edellyttää myyntilaskuja vähintään vuoden ajalta. Kassavirtaennusteita varten suositellaan kolmen vuoden historiatietoja. Älykkäisiin budjettiehdotuksiin suositellaan kolmen vuoden historiallisia ja/tai toteutuneita budjetteja.
 
-### <a name="role-and-permission-requirements"></a>Rooli- ja käyttöoikeusvaatimukset
+## <a name="configure-finance-insights"></a>Finance Insightsin määrittäminen
 
-Microsoft Dynamics 365 Financeen, Microsoft Dynamics Lifecycle Servicesiin (LCS), Power Appsiin ja Azureen tehdään muutoksia. Näissä ympäristöissä tarvitaan oikeat käyttöoikeudet. Tässä on joitakin esimerkkejä tulevista muutoksista:
-
-- Microsoft Power Platformiin luodaan uusi ympäristö.
-- Azuressa luodaan tallennustili, avainsäilö ja sovellus.
-- Active Directoryn vuokraajan järjestelmänvalvojan on annettava AI Builder -sovellukselle Data Laken käyttöoikeus.
-- Toiminto otetaan käyttöön Dynamics 365:ssä.
-
-Azuren, Microsoft Dataversen ja LCS:n resurssien luonti- ja hallintakokemus auttaa tässä prosessissa.
-
-## <a name="configure-finance-insights"></a>Taloushallinnon tietojen määrittäminen
-
-Sinun on suoritettava joitakin määritysvaiheita, ennen kuin voit käyttää Finance Insightsia. Lisätietoja Finance Insightsin määrittämisestä:
-  - Versioille 10.0.19 asti: [Finance Insightsin (esiversio) määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
-  - Versioille 10.0.20 ja sitä uudemmat versiot: [Finance Insightsin (esiversio) määritys versiolle 10.0.20 ja siitä eteenpäin](configure-for-fin-insites-PubPrvw.md).
+Määritysvaiheet on suoritettava ennen Finance Insightsin käyttämistä. Lisätietoja Finance Insightsin määrittämisestä on kohdassa [Finance Insightsin määrittäminen](configure-for-fin-insites.md).
 
 ## <a name="create-a-data-integrator-project"></a>Tietojen integrointiprojektin luominen
 
@@ -97,17 +82,14 @@ Budjettiehdotukset-ominaisuus käyttää koneoppimismallia ja organisaation hist
 
 ### <a name="using-customer-payment-predictions"></a>Asiakkaan maksuennusteiden käyttäminen
 
-Älykäs kassavirtaennuste on luotu Dynamics 365 Financen olemassa olevan kassavirtaennusteen avulla. Lisätietoja olemassa olevan ominaisuuden tarkastelemisesta on kohdassa [Kassavirtaennusteet](../cash-bank-management/cash-flow-forecasting.md).
-
-- Lisätietoja siitä, miten asiakkaan maksuennusteista saadaan tietoja perintätehtäviä varten, on kohdassa [Asiakkaan maksuennusteiden käyttäminen](use-customer-payment-predictions.md).
+- Lisätietoja asiakkaan maksuennusteista saatavista tiedoista, joita tarvitaan perintätehtävien ennakoivaa aloittamista varten, on kohdassa [Asiakkaan maksuennusteiden käyttäminen](use-customer-payment-predictions.md).
 - Lisätietoja ennustemallin tehokkuuden arvioimisesta ominaisuuden käyttöönoton jälkeen on kohdassa [Alkuperäisen asiakkaan maksuennustemallin arvioiminen](evaluate-payment-prediction.md).
 - Lisätietoja ennusteen luomisessa käytettyjen tietojen muokkaamisesta ja ennusteen tehokkuuden parantamisesta on kohdassa [Ennustemallin parantaminen](improve-model.md).
-
-Lisätietoja tekoälyennustemallien tuloksista on kohdassa [Koneoppimismallien tulokset](confusion-matrix.md).
+- Lisätietoja tekoälyennustemallien tuloksista on kohdassa [Koneoppimismallien tulokset](confusion-matrix.md).
 
 ### <a name="using-cash-flow-forecasts"></a>Kassavirtaennusteiden käyttäminen
 
-Kassavirtaennusteominaisuus voi auttaa kassatilanteen tarkemmassa arvioimisessa. 
+Kassavirtaennusteominaisuus voi auttaa kassatilanteen tarkemmassa arvioimisessa. Älykäs kassavirtaennuste on luotu Dynamics 365 Financen olemassa olevan kassavirtaennustetoiminnon pohjalta. Lisätietoja olemassa olevan ominaisuuden tarkastelemisesta on kohdassa [Kassavirtaennusteet](../cash-bank-management/cash-flow-forecasting.md).
 
 - Lisätietoja kassavirtaennusteiden uusista ominaisuuksista on kohdassa [Kassavirtaennuste](cash-flow-forecast-intro.md).
 - Lisätietoja ulkoisten tietojen tuomisesta kassavirtaennusteeseen on kohdassa [Ulkoisten tietojen käyttäminen kassavirtaennusteissa](external-data-in-cash-flow.md). 
@@ -120,6 +102,6 @@ Lisätietoja budjetin luomisen nopeuttamisesta on kohdassa [Budjettiehdotukset](
 
 ## <a name="feedback-and-support"></a>Palaute ja tuki
 
-Lähetä sähköpostiviesti [Asiakasmaksujen tiedot (esiversio) -kohteeseen](mailto:fiap@microsoft.com), jos haluat antaa palautetta tai tarvitset tukea.
+Lähetä sähköpostia [Finance Insightsiin](mailto:fiap@microsoft.com), jos haluat antaa palautetta tai tarvitset tukea.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

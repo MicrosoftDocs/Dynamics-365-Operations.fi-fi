@@ -1,8 +1,8 @@
 ---
 title: Luo lainauskohteet
 description: Lainan kohteet ovat tietueita, joiden avulla voit seurata fyysisiä yrityksen työntekijöille lainaamia kohteita, kuten puhelimia ja tietokoneita.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, Hcm
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5fb303015c3616bd2d033517bc21fda0834e9135b92e16374df26a98188c75ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a812887f20a8ae5ae3b677ac452a498230c244a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718080"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731733"
 ---
 # <a name="create-loan-items"></a>Luo lainauskohteet
 
@@ -30,32 +30,32 @@ Lainan kohteet ovat tietueita, joiden avulla voit seurata fyysisiä yrityksen ty
 
 
 ## <a name="create-loan-types"></a>Lainatyyppien luominen
-1. Valitse Henkilöstöhallinto > Työntekijät > Lainan kohteet > Lainatyypit.
-2. Valitse Uusi.
-3. Syötä arvo Lainatyyppi-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
+1. Valitse **Henkilöstöhallinto** > **Työntekijät** > **Lainan kohteet** > **Lainatyypit**.
+2. Valitse **Uusi**.
+3. Anna arvo **Lainatyyppi**-kenttään.
+4. Kirjoita **Kuvaus**-kenttään arvo.
 5. Määritä, kuinka monta päivää tätä lainatyyppiä olevat nimikkeet voivat olla myöhässä. 
-6. Valitse Tallenna.
+6. Valitse **Tallenna**.
 7. Sulje sivu.
 8. Päivitä sivu.
 
 ## <a name="create-loan-items"></a>Luo lainauskohteet
-1. Valitse Henkilöstöhallinto > Työntekijät > Lainan kohteet > Lainan kohteet.
-2. Valitse Luo lainan kohteita.
-3. Syötä Määrä-kenttään numero.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Avaa haku valitsemalla Lainatyyppi-kentässä avattavan valikon painike.
+1. Valitse **Henkilöstöhallinto** > **Työntekijät** > **Lainan kohteet** > **Lainan kohteet**.
+2. Valitse **Luo lainauskohteet**.
+3. Anna **Määrä**-kenttään numero.
+4. Kirjoita **Kuvaus**-kenttään arvo.
+5. Avaa haku valitsemalla **Lainatyyppi**-kentässä avattavan valikon painike.
 6. Etsi haluamasi tietue luettelosta ja valitse se.
 7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 8. Määritä, miten monta päivää kohde voi olla lainassa.
     * Lainatut välineet -sivun Suunniteltu palautus -kentän oletusarvo lasketaan lisäämällä kuluvaan päivämäärään tämä numero.  
-9. Avaa haku valitsemalla Vastuuhenkilö-kentässä avattavan valikon painike.
-10. Klikkaa Valitse.
-11. Syötä numero Aloitusarvo-kenttään.
-12. Syötä numero Väli-kenttään.
-13. Syötä arvo Muoto-kenttään.
-    * Jos lainan kohteen aloitusnumero on esimerkiksi 10, syötä numero Muoto-kenttään kaksi numeromerkkiä.  
-14. Valitse OK.
+9. Avaa haku valitsemalla **Vastuuhenkilö**-kentässä avattavan valikon painike.
+10. Klikkaa **Valitse**.
+11. Anna numero **Aloitusarvo**-kenttään.
+12. Syötä numero **Väli**-kenttään.
+13. Anna arvo **Muoto**-kenttään.
+    * Jos lainan kohteen aloitusnumero on esimerkiksi 10, anna **Muoto**-kenttään kaksi numeromerkkiä.  
+14. Valitse **OK**.
 15. Päivitä sivu.
 
 

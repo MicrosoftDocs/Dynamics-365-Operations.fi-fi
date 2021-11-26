@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745173"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753023"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -84,7 +84,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: **setUtcString()**-menetelmää ei ole enää tarkoitus tukea 1.10.2020 jälkeen. Kehittäjien on käytettävä sen sijaan **setUtcDateTime()**-menetelmää. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Mustan listan raportti (IT) – toimintoviite IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Estoluetteloraportti (IT) – ominaisuusviite IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -360,7 +360,7 @@ Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja. Tämä ominaisuude
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminto ei ole yhteensopiva Finance and Operationsin laajennettavuusmallin kanssa. |
-| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Vero |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
@@ -371,7 +371,7 @@ Venäjän maakohtainen moduuli, jossa hallitaan henkilökunnan hallintatietoja, 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Palkanlaskentaa ei sisällytetä Dynamics 365:n -valikoiman yleiseen strategiseen keskiöön. Yhteistyökumppaneille ja ISV-toimittajille kannattaa antaa palkanlaskentatoimintoja, jotka ovat paikallisten säännösten ja veropäivitysten mukaisia.|
-| **Onko toinen ominaisuus korvannut?**   | Nro|
+| **Onko toinen ominaisuus korvannut?**   | Ei|
 | **Tuotealueet, joihin vaikutetaan**         | Palkanlaskennan ja Henkilöstöhallinnon hallinta Venäjällä |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on jokin version 10.0 tulevista päivityksistä. |
@@ -455,7 +455,7 @@ Nämä verot on sisällytetty Intian GST-veroon.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Poiston tai vanhentumisen syy**       | Toimintoa ei käytetty                                                  |
-| **Onko toinen ominaisuus korvannut?**            | En                                                                      |
+| **Onko toinen ominaisuus korvannut?**            | Ei                                                                      |
 | **Tuotealueet, joihin vaikutetaan**                  | Intian ennakonpidätys                                                  |
 | **Käytön asetukset**                       | Kaikki moduulit                                                                    |
 | **Tila**                                  | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.   |        
@@ -467,7 +467,7 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Poiston tai vanhentumisen syy**       | Toimintoa ei käytetty                                                  |
-| **Onko toinen ominaisuus korvannut?**            | En                                                                      |
+| **Onko toinen ominaisuus korvannut?**            | Ei                                                                      |
 | **Tuotealueet, joihin vaikutetaan**                  | Intian ennakonpidätys                                                  |
 | **Käytön asetukset**                       | Kaikki moduulit                                                                   |
 | **Tila**                                  | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.     |    
@@ -478,7 +478,7 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Poiston tai vanhentumisen syy**       | Toimintoa ei käytetty                                                  |
-| **Onko toinen ominaisuus korvannut?**            | En                                                                      |
+| **Onko toinen ominaisuus korvannut?**            | Ei                                                                      |
 | **Tuotealueet, joihin vaikutetaan**                  | Tuo ja vie                                                       |
 | **Käytön asetukset**                       | Kaikki moduulit                                                                    |
 | **Tila**                                  | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.  |    
@@ -578,7 +578,7 @@ Tätä työkalua käytetään, kun Espanjan tilikartta edellyttää suuria muuto
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Rajoitettu käyttö                                                  |
-| **Onko toinen ominaisuus korvannut?**   | En                                                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                             |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito                                                 |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -622,7 +622,7 @@ EDIVAT on Belgian vanhentunut standardi sähköiselle ilmoitukselle suojatun sä
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tätä toimintoa ei enää käytetä.                           |
-| **Onko toinen ominaisuus korvannut?**   | En                                                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                             |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito                                                 |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -699,7 +699,7 @@ Tätä toimintoa käytetään Espanjan tilikartan ja kirjanpitosääntöjen muut
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Rajoitettu käyttö                                                  |
-| **Onko toinen ominaisuus korvannut?**   | En                                                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                             |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito                                                 |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -787,7 +787,7 @@ Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetä�
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö ja rajoitetut toiminnot.   |
-| **Onko toinen ominaisuus korvannut?**   | En                                              |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                              |
 | **Tuotealueet, joihin vaikutetaan**         | Inventoinnin- ja varastonhallinta                            |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen. |
 
@@ -798,7 +798,7 @@ Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityis
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Valtion määrittämää laskujen numerointia ei tarvitse enää ylläpitää. Käytettyjen laskunumeroiden raporttia ei enää vaadita. |
-| **Onko toinen ominaisuus korvannut?**   | En       |
+| **Onko toinen ominaisuus korvannut?**   | Ei       |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra    |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.  |
 
@@ -860,7 +860,7 @@ Henkilöstöhallinnon palkanlaskentatiedot
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö                                                           |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                  |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                  |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilöstöhallinto                                                     |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen |
 
@@ -883,7 +883,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Suorituskyvyn parannus        |
-| **Onko toinen ominaisuus korvannut?**   | En                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                             |
 | **Tuotealueet, joihin vaikutetaan**         | Ostoreskontra               |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen. |
 
@@ -916,7 +916,7 @@ Kun **Tuoterakenneversiot**-määritysavain poistettiin käytöstä, tuoterakenn
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tuoterakenneversioiden ohjaamista määritysavaimella ei voi skaalata pilviympäristöön. |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                                      |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                                      |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta, inventoinnin- ja varastonhallinta                                    |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                                                          |
 
@@ -927,7 +927,7 @@ Erityismaksutapa Brasilian yrityksille
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Brasilian Bordero-maksutavan tuki on lopetettu Brasilian lokalisointiversiosta |
-| **Onko toinen ominaisuus korvannut?**   | En   |
+| **Onko toinen ominaisuus korvannut?**   | Ei   |
 | **Tuotealueet, joihin vaikutetaan**         | Ostoreskontra   |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -949,7 +949,7 @@ Liittovaltion veroraportti ICMS-verolle
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tämä varamenetelmä ei ole enää käytettävissä kaikissa Brasilian osavaltioissa |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                          |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                          |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra                                                         |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.              |
 
@@ -1000,7 +1000,7 @@ Compliance Center oli Sarbanes-Oxley-lakiin liittyvien vaatimustenmukaisuusaloit
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toimintoa ei käytetty. Microsoft SharePoint sisältää Compliance Centerin käytössä olleet ominaisuudet. |
-| **Onko toinen ominaisuus korvannut?**   | En   |
+| **Onko toinen ominaisuus korvannut?**   | Ei   |
 | **Tuotealueet, joihin vaikutetaan**         | Yhteensopivuus ja sisäinen valvonta  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.    |
 
@@ -1029,7 +1029,7 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Dyn
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Pinoryhmiä käytettiin näyttämään vähintään yksi pino tietoruutualueella. Toiminto oli rajallinen ja siihen liittyi suorituskykyongelmia, koska tietueen muuttuminen päälomakkeessa loi jokaiselle pinolle yhden kyselyn pinoryhmässä. |
-| **Onko toinen ominaisuus korvannut?**   | En      |
+| **Onko toinen ominaisuus korvannut?**   | Ei      |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit    |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.  |
 
@@ -1047,7 +1047,7 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Dyn
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tanskan sekkimuodon tuki on lopetettu ja raportti on poistettu tanskalaisesta lokalisoinnista. |
-| **Onko toinen ominaisuus korvannut?**   | En    |
+| **Onko toinen ominaisuus korvannut?**   | Ei    |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit    |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.  |
 
@@ -1079,7 +1079,7 @@ Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettuihin tiedo
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminnolle ei ollut käyttöä. |
-| **Onko toinen ominaisuus korvannut?**   | En                                     |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                     |
 | **Tuotealueet, joihin vaikutetaan**         | Työajan seuranta                    |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.         |
 
@@ -1137,7 +1137,7 @@ Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulos
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö ja rajoitetut toiminnot  |
-| **Onko toinen ominaisuus korvannut?**   | En              |
+| **Onko toinen ominaisuus korvannut?**   | Ei              |
 | **Tuotealueet, joihin vaikutetaan**         | Yhteensopivuus ja sisäisen tarkistus, ostoreskontra  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen. |
 
@@ -1193,7 +1193,7 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | XML-muotoa Saksan EU:n arvonlisäveron yhteenvetoilmoitusta varten ei enää tueta. Saksan EU:n arvonlisäveron yhteenvetoilmoitus voidaan lähettää Saksan veroviranomaiselle ainoastaan ELMA5-tekstitiedostomuodossa. |
-| **Onko toinen ominaisuus korvannut?**   | En         |
+| **Onko toinen ominaisuus korvannut?**   | Ei         |
 | **Tuotealueet, joihin vaikutetaan**         | Vero        |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.   |
 
@@ -1246,7 +1246,7 @@ Tällä ominaisuudella voitiin luoda Meksikossa sähköisiä laskuja käyttämä
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Menetelmää ei enää käytetä. Veroviranomaiset lopettivat CFD-menetelmällä luotavat sähköiset laskut ja niiden tilalla käytetään CFDI (Comprobante Fiscal Digital a través de Internet) -menetelmää, jossa allekirjoitus on delegoitu kolmannen osapuolen palveluntarjoajalle (PAC). Kuukausiraportti on poistettu, ja käyttäjät voivat tehdä kyselyvaihtoehdolla kyselyjä historiallisista tapahtumista. |
-| **Onko toinen ominaisuus korvannut?**   | En    |
+| **Onko toinen ominaisuus korvannut?**   | Ei    |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra, projekti   |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -1278,7 +1278,7 @@ Varastokirjauskansiot eivät enää tue kirjauskansion merkitsemistä yksityisek
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminnolle ei ollut käyttöä. |
-| **Onko toinen ominaisuus korvannut?**   | En                                     |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                     |
 | **Tuotealueet, joihin vaikutetaan**         | Inventoinnin- ja varastonhallinta                   |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.         |
 
@@ -1311,7 +1311,7 @@ Tällä toiminnolla voi vaihtaa yhden kolmesta vakiotuotedimension nimestä (kok
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Dynamics AX:n nykyinen versio ei tue suorituksen aikaisia otsikkomuutoksia. |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                            |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                            |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta                                                |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                                                |
 
@@ -1340,7 +1340,7 @@ Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdolli
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö ja rajoitetut toiminnot |
-| **Onko toinen ominaisuus korvannut?**   | En                                           |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                           |
 | **Tuotealueet, joihin vaikutetaan**         | Yhdysvaltojen arvonlisävero                                 |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.               |
 
@@ -1351,7 +1351,7 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Dynamics AX:n käyttämässä Microsoft Azuren infrastruktuurissa on uusia korvaavia ominaisuuksia (esimerkiksi Azure-sivustot). |
-| **Onko toinen ominaisuus korvannut?**   | En   |
+| **Onko toinen ominaisuus korvannut?**   | Ei   |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilön työhönotto, palvelupyynnön hallinta, tarjouspyynnöt, toimittajan rekisteröinti, mahdollisuuksien ja kampanjoiden yhteistyötyötila  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.    |
 

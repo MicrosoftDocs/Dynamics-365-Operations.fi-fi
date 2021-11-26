@@ -1,8 +1,8 @@
 ---
 title: Kyselylomakkeiden luonti
-description: Tässä artikkelissa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a8c156aa75b02b69da3ee70a1ee60ea9d73a8aa67c70babdaaad88d6eb81f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08c8015e8729a4ca33f3fb3c48f654e489f32f3f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755561"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729048"
 ---
 # <a name="create-questionnaires"></a>Kyselylomakkeiden luonti
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä artikkelissa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
+Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
 
 Huolellisesti suunnittelu kyselylomake voi parantaa keräämiesi tietojen laatua. Huolellisen suunnittelun avulla voit valita kyselylomakkeeseen kulloinkin sopivat vaihtoehdot. Seuraavat seikat auttavat tehokkaan kyselylomakkeen suunnittelemisessa:
 
@@ -63,7 +63,7 @@ Joidenkin edellytysten on täytyttävä, ennen kuin kyselylomakkeet, vastaukset 
 
 ### <a name="questionnaire-types"></a>Kyselylomaketyypit
 
-Kyselylomakkeen tyypit ovat pakollisia. Ne on liitettävä kyselylomakkeen luomisen yhteydessä. Kyselylomakkeen tyypit auttavat kyselylomakkeiden hallinnassa ja luokittelussa. Kyselylomaketyyppien avulla voit luokitella kyselylomakkeita ja erottaa ne toisistaan. Jos esimerkiksi valittavissa on useita kyselylomakkeita, tietyn kyselylomakkeen löytäminen helpottuu, kun suodatat niitä tyypin mukaan. Seuraavassa on joitakin esimerkkejä kyselylomaketyypeistä:
+**Kyselylomakkeen tyypit** ovat pakollisia. Ne on liitettävä kyselylomakkeen luomisen yhteydessä. **Kyselylomakkeen tyypit** auttavat kyselylomakkeiden hallinnassa ja luokittelussa. Kyselylomaketyyppien avulla voit luokitella kyselylomakkeita ja erottaa ne toisistaan. Jos esimerkiksi valittavissa on useita kyselylomakkeita, tietyn kyselylomakkeen löytäminen helpottuu, kun suodatat niitä tyypin mukaan. Seuraavassa on joitakin esimerkkejä kyselylomaketyypeistä:
 
 -   henkilöstön kehitys
 -   asiakastutkimukset
@@ -71,9 +71,9 @@ Kyselylomakkeen tyypit ovat pakollisia. Ne on liitettävä kyselylomakkeen luomi
 
 ### <a name="question-types"></a>Kysymystyypit
 
-Kysymystyypit ovat pakollisia. Ne on liitettävä kysymykseen luomisen yhteydessä. 
+**Kysymystyypit** ovat pakollisia. Ne on liitettävä kysymykseen luomisen yhteydessä. 
 
-Kysymystyyppien avulla voit luokitella kysymyksiä raportointia varten. Kysymystyyppien avulla on myös helppo etsiä kysymyksiä, koska voit käyttää tyyppejä suodattimina **Kysymykset**-sivulla. Seuraavassa on joitakin esimerkkejä kysymystyypeistä:
+**Kysymystyyppien** avulla voidaan luokitella kysymyksiä raportointia varten. **Kysymystyypit** myös helpottavat kysymysten etsimistä, koska tyyppejä voi käyttää suodattimina **Kysymykset**-sivulla. Seuraavassa on joitakin esimerkkejä kysymystyypeistä:
 
 -   henkilöstöhallinto
 -   liiketoiminnan hallinta
@@ -105,7 +105,7 @@ Voit määrittää monivalintakysymysten mahdollisten vastausten luettelon luoma
 
 Vastausryhmät ja vastaukset ovat komponentteja, jotka muodostavat kysymysten luomisessa käytettävien tietojen päätekstiosan. Kun olet luonut vastausryhmän, voit liittää sen kysymykseen **Kysymykset**-sivun **Vastausryhmä**-kentässä. 
 
-Vastausryhmää voit käyttää useassa saman kyselylomakkeen kysymyksessä tai useassa eri kyselylomakkeessa. 
+**Vastausryhmää** voi käyttää useassa saman kyselylomakkeen kysymyksessä tai useassa eri kyselylomakkeessa. 
 
 > [!NOTE]
 > Tietojen arviointi vaikeutuu, jos täytetyissä kysymyslomakkeissa käytettyjen vastausryhmien vastausten tekstiä muokataan, eivätkä kyselylomakkeen tulokset välttämättä ole enää voimassa. Jos vastausryhmää on muutettava, kannattaa ehkä luoda uusi vastausryhmä aiemmin luodun ryhmän muuttamisen sijaan. Kysymykseen tai vastaukseen liitettyjä vastausryhmiä tai vastausryhmiä, joihin on vastattu, ei voi poistaa.
@@ -171,7 +171,7 @@ Seuraavia kysymystyyppejä ei voi poistaa kyselylomakkeesta:
 
 ### <a name="result-groups"></a>Tulosryhmät
 
-Tulosryhmiä ei ole pakko käyttää, kun kyselylomakkeeseen liitetään kysymyksiä. 
+**Tulosryhmiä** ovat valinnaisia, kun kyselylomakkeeseen liitetään kysymyksiä. 
 
 Tulosryhmää käytetään pisteiden laskemisessa ja kyselylomakkeen tulosten luokittelussa. Jos tulosryhmät ovat käytössä, voit suorittaa seuraavat tehtävät:
 

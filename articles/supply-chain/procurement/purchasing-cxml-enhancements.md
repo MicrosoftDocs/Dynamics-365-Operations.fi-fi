@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575461"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777764"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Ostojen cXML-parannukset
 
@@ -28,7 +28,7 @@ _Ostojen cXML-parannusten_ ominaisuus perustuu [aiemmin luotuun ulkoiseen luette
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Ostojen cXML-parannusten toiminnon käyttöönotto
 
-Voit ottaa toiminnon käyttöön avaamalla **[Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -sivun ja etsimällä toiminnon, jonka nimi on *Ostojen cXML-parannukset*. Valitse toiminto ja ota se käyttöön valitsemalla **Ota käyttöön nyt**.
+Voit ottaa toiminnon käyttöön avaamalla **[Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -sivun ja etsimällä toiminnon, jonka nimi on *Ostojen cXML-parannukset*. Valitse toiminto ja ota se käyttöön valitsemalla **Ota käyttöön nyt**. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
 
 Kun olet ottanut toiminnon käyttöön, sinun kannattaa määrittää asetukset kolmella seuraavalla alueella:
 

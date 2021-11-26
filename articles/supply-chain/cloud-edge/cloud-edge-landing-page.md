@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471737"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733436"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Asteikon yksiköt jaetussa hybriditopologiassa
 
@@ -32,8 +32,8 @@ Valmistuksessa ja jakelussa toimivien yritysten on voitava suorittaa keskeisiä 
 
 Jaetussa hybriditopologiassa otetaan käyttöön *scale unitit*, jotka mahdollistavat tuotannon ja varaston toteutustyökuormien jakamisen eri ympäristöihin. Tämä toiminto voi auttaa parantamaan suorituskykyä, estämään palvelukatkoja ja maksimoimaan toiminta-ajan. Skaalausyksiköt tarjotaan Supply Chain Managementin ylläpitosopimukseen seuraavien apuohjelmien kautta:
 
-- Cloud Scale Unitin apuohjelma Dynamics 365 Supply Chain Managementille (*saatavana huhtikuussa 2021*)
-- Edge Scale Unitin apuohjelma Dynamics 365 Supply Chain Managementille (*saatavana pian*)
+- Dynamics 365 Supply Chain Managementin pilvipalvelujen Scale Unit -apuohjelma
+- Dynamics 365 Supply Chain Managementin reunapalvelujen Scale Unit -apuohjelma
 
 Kuormituksen ominaisuuksia vapautetaan jatkuvasti lisäparannusten avulla.
 
@@ -51,21 +51,12 @@ Voit määrittää keskittimesi ympäristön ja cloud scale unitit valituille ku
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen varastonhallinnan kuormituksen ominaisuudet
 
-Varastonhallinnan kuormitus on ensimmäinen skaalausyksiköiden jaettu kuormitus, joka on vapautettu yleiseen saatavuuteen.
-
-Skaalausyksiköt toimittavat varastonhallinnassa seuraavat toiminnot:
-
-- Järjestelmä voi käsitellä valittuja aaltomenetelmiä myyntitilauksissa ja kysynnän täydennyksessä.
-- Varastotyöntekijät voivat suorittaa myynnin ja kysynnän täydennyksen varastotyön käyttämällä varastonhallinnan mobiilisovellusta.
-- Varastotyöntekijät voivat tehdä varastonhallinnan mobiilisovelluksella kyselyjä käytettävissä olevasta varastosta.
-- Varastotyöntekijät voivat luoda ja suorittaa varastosiirtoja varastonhallinnan mobiilisovelluksella.
-- Varastotyöntekijät voivat rekisteröidä ostotilauksia ja tehdä hyllytyksiä varastonhallinnan mobiilisovelluksella.
-
+Varastonhallinnan kuormituksen avulla varastonhallintaprosesseja voidaan suorittaa eristetyssä käyttöönotossa.
 Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen tuotannonohjauksen kuormituksen ominaisuudet
 
-Valmistuksen kuormituksen ensimmäinen versio on esiversiona, ja se sisältää seuraavat toiminnot:
+Valmistuksen kuormitukseen sisältyy seuraavat ominaisuudet:
 
 - Koneenkäyttäjät ja työnjohtajat voivat käyttää operatiivista tuotantosuunnitelmaa.
 - Koneenkäyttäjät voivat pitää suunnitelman ajan tasalla suorittamalla erillisen valmistuksen ja prosessivalmistuksen töitä.
@@ -191,17 +182,33 @@ Microsoft tarkistaa pyynnön ja ilmoittaa seuraavista vaiheista lähettämällä
 
 Kun käyttöönottosi on valmis, voit konfiguroida skaalausyksiköt ja kuormituksen portin avulla.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Pilvipalvelun scale unitien ja kuormitusten hallinta Scale Unit -hallintaportaalissa
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Scale unitien ja kuormitusten hallinta Scale Unit -hallintaportaalissa
 
 Siirry [Scale Unit -hallintaportaaliin](https://aka.ms/SCMSUM) ja käytä kirjautumiseen vuokraajan tiliä. Voit lisätä keskusympäristön **Määritä scale unitit** -sivulla, jos se ei ole vielä luettelossa. Voit sitten valita keskuksen, johon haluat määrittää scale unitit ja kuormitukset.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unitin ja kuormituksen hallintakokemus.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit -hallintaportaali, Määritä scale unitit -sivu":::
 
 Jos haluat lisätä vähintään yhden tilauksessa olevan skaalausyksikön, valitse **Lisää skaalausyksiköitä**.
 
 Lisää varastonhallinnan kuormitus yhteen scale unitiin valitsemalla **Määritetyt kuormitukset** -välilehdessä **Luo kuormitus** -painike. Kunkin kuormituksen osalta on määritettävä kuormituksen omistamien prosessien konteksti. Varastonhallinnan kuormituksissa konteksti on tietyn toimipaikan ja yrityksen tietty varasto.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Kuormituksen luominen.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Määritä kuormitukset -ikkuna":::
+
+#### <a name="manage-workloads"></a>Kuormitusten hallinta
+
+Kun vähintään kuormitus on otettu käyttöön, alusta ja hallitse **Kuormitusten hallinta** -asetuksen avulla prosesseja, kuten seuraavassa taulukossa mainittuja prosesseja.
+
+| Käsittele | Kuvaus |
+|---|---|
+| Scale unit -viestinnän keskeyttäminen | Keskuksen ja scale unitin välisten pipeline-sanomien keskeyttäminen. Tämä prosessi pysäyttää viestinnän ja tyhjentää keskuksen ja scale unitien välisen tietoputken. Tämä prosessi on suoritettava ennen Supply Chain Management -huoltotoiminnon suorittamista joko keskuksessa tai scale unitissa, mutta sitä voi käyttää myös muissa tilanteissa. |
+| Scale unit -viestinnän jatkaminen | Keskuksen ja scale unitin välisten pipeline-sanomien jatkaminen. Tätä prosessia voi käyttää esimeriksi sen jälkeen, kun Supply Chain Management -huoltotoiminto on suoritettu joko keskuksessa tai scale unitissa. |
+| Päivityksen kuormitukset | Uuden toiminnon keskuksen ja scale unitin kuormitusten synkronointi. Tätä prosessia on ehkä käytettävä, kun huolto on aiheuttanut tiedonsiirtokyselyjen muuttumisen ja/tai lisännyt uusia taulukoita tai kenttiä kuormitukseen. |
+| Kuormituksen siirtäminen scale unitiin | Keskuksessa tällä hetkellä suoritettavan kuormituksen scale unitiin siirtämisen aikatauluttaminen. Kun tämä prosessi suoritetaan, tietojen synkronointi tapahtuu sujuvasti. Lisäksi keskus ja scale unit määritetään vaihtamaan kuormituksen omistus. |
+| Scale unitin siirtäminen keskukseen | Scale unitissa tällä hetkellä suoritettavan kuormituksen keskukseen siirtämisen aikatauluttaminen. Kun tämä prosessi suoritetaan, tietojen synkronointi tapahtuu sujuvasti. Lisäksi keskus ja scale unit määritetään vaihtamaan kuormituksen omistus.
+| Siirtäminen hätätilanteessa keskukseen | <p>Aiemmin luodun kuormituksen siirtäminen välittömästi keskukseen. *Tämä prosessi vaihtaa vain keskuksessa tällä hetkellä käytettävissä olevien tietojen omistuksen.*</p><p><strong>Varoitus:</strong> Tämä prosessi voi aiheuttaa synkronoimattomien tietojen menetyksen ja liiketoimintaprosessien käsittelyn epäonnistumisen. Tämän vuoksi prosessia pitäisi käyttää vain hätätilanteissa, joissa liiketoimintaprosessit on käsiteltävä keskuksessa sen vuoksi, että scale unitissa on käyttökatkos, jota ei voi korjata kohtuullisessa ajassa.</p> |
+| Jaetun topologian käytön lopettaminen | Scale unitin käyttöönoton poistaminen ja suorittaminen vain keskuksessa ilman kuormituksen käsittelyä. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Scale unitin ja kuormituksen hallintakokemus.":::
 
 > [!TIP]
 > Ajan mittaan skaalausyksikköjen hallintakokemukseen lisätään lisäparannuksia, jotka helpottavat elinkaarenhallinnan toimintoja. Nykyisen julkaisun erityisominaisuudet on dokumentoitu mukana olevassa käyttökirjassa, joka on niiden asiakkaiden käytettävissä, jotka ovat mukana mukana jaetussa hybriditopologiassa Supply Chain Managementia varten. <!-- KFM: Add a link to the handbook when it is published -->

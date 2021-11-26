@@ -128,7 +128,7 @@ Useimmat lähdejärjestelmät voivat välittää tietoa, joka vastaa vähintää
 |---|---|---|---|
 | Kustannustason dimension jäsenet  |  Kyllä | Kyllä  | Kyllä  |
 |  Kustannusobjektin dimension jäsenet |  Kyllä | Kyllä  | Kyllä  |
-|  Tilastodimension jäsenet | Kyllä  | En  | En  |
+|  Tilastodimension jäsenet | Kyllä  | Ei  | Ei  |
 |  Kirjanpito | Kyllä  | Kyllä  | Kyllä  |
 |  Budjettiviennit  | Kyllä  | Kyllä  | Kyllä  |
 |  Tilastomittaukset | Kyllä  | Kyllä  | Kyllä  |

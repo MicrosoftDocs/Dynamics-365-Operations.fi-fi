@@ -1,8 +1,8 @@
 ---
 title: Tee kysymys edellisen kysymyksen vastauksen perusteella
 description: Ehdollisten kysymysten avulla voit määrittää vastaajalle näkyvän seurantakysymyksen aiemman kysymyksen perusteella.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree, Hc
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9397b3dfa353398a5d326ae68ec8269369ebf85b7b2e61c73013db76c5dd475
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11787aa0b32c0d7493e4528b00304e51f01a655f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745691"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728903"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>Tee kysymys edellisen kysymyksen vastauksen perusteella
 
@@ -30,28 +30,28 @@ Ehdollisten kysymysten avulla voit määrittää vastaajalle näkyvän seurantak
 
 
 ## <a name="find-the-existing-questionnaire"></a>Aiemmin määritetyn kyselylomakkeen etsiminen
-1. Siirry kohtaan Kyselylomake > Suunnittelu > Kyselylomakkeet.
+1. Valitse **Kyselylomake** > **Suunnittelu** > **Kyselylomakkeet**.
 2. Valitse luettelosta WorkFH-kyselylomake.
 
 ## <a name="add-all-questions-and-sub-questions-to-the-questionnaire"></a>Kaikkien kysymysten ja alikysymysten lisääminen kyselylomakkeeseen
-1. Valitse Kysymykset.
-2. Valitse Uusi.
-3. Valitse Kysymys-kentässä kysymys numero 00016.
+1. Valitse **Kysymykset**.
+2. Valitse **Uusi**.
+3. Valitse **Kysymys**-kentässä kysymys numero 00016.
 4. Etsi haluamasi tietue luettelosta ja valitse se.
 5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Valitse Tallenna.
+6. Valitse **Tallenna**.
 7. Sulje sivu.
 
 ## <a name="set-the-questionnaire-sequence-to-conditional-and-make-the-question-dependent-on-the-appropriate-question"></a>Kyselylomakkeen järjestyksen määrittäminen ehdolliseksi ja kysymyksen määrittäminen sopivan vastauksen perusteella
-1. Valitse Muokkaa.
-2. Laajenna osa Asetukset.
-3. Valitse Kysymysjärjestys-kentässä Ehdollinen.
-4. Valitse Ehdollinen kysymys.
+1. Valitse **Muokkaa**.
+2. Laajenna osa **Asetukset**.
+3. Valitse **Kysymysjärjestys**-kentässä Ehdollinen.
+4. Valitse **Ehdollinen**-kysymys.
 5. Valitse puussa solmu Questions\Explain why you answered the previous question the way you did?
-6. Valitse Ensisijainen kysymys -kentässä kysymys numero 00009
+6. Valitse **Ensisijainen kysymys** -kentässä kysymys numero 00009.
 7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-8. Syötä Vastaus-kenttään sen vastauksen numerojärjestyksen tunnus, jonka perusteella haluat määrittää kysymyksen. Syötä esimerkiksi 1 ensimmäiselle vastausvaihtoehdolle.
-9. Valitse Tallenna.
+8. Anna **Vastaus**-kenttään sen vastauksen numerojärjestyksen tunnus, jonka perusteella haluat määrittää kysymyksen. Syötä esimerkiksi 1 ensimmäiselle vastausvaihtoehdolle.
+9. Valitse **Tallenna**.
 10. Valitse puussa solmu Questions\I am paid fairly for the work I do.
     * Huomaa, että päivitetyssä kysymyksen puussa näkyy riippuvuus.  
 

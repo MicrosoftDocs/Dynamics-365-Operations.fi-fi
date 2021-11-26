@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0df6aee6a5ec1ecc751713c19c659c5471cc4146
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576037"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777599"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksella
 
@@ -77,7 +77,7 @@ Kun tämä toiminto on otettu käyttöön, mobiililaitteiden valikkokohteet, jot
 - **Näytä yksityiskohtainen yhteenveto** – Rekisterikilven vastaanottamisen aikana työntekijät näkevät ylimääräisen sivun, jossa näkyvät kaikki ASN-tiedot.
 - **Ohita yhteenveto** – Työntekijät eivät näe kaikkia ASN-tietoja. Varastotyöntekijät eivät voi määrittää käsittelykoodia tai lisätä poikkeuksia vastaanottoprosessin aikana.
 
-Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otettava käyttöön *ohjausobjekti, joka näyttää vastaanottajan yhteenvetosivun ominaisuuksien hallinnan mobiililaitteissa* -toiminto [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Jotta tämä toiminto olisi käytettävissä järjestelmässä, *Määritä, näytetäänkö vastaanoton yhteenvetosivu mobiililaitteissa* -toiminto on otettava käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Estä siirtotilauksen lähettämien rekisterikilpien käyttö muissa varastoissa kuin kohdevarastossa
 

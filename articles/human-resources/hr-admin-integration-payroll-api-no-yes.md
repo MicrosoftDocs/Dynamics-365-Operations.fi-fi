@@ -34,7 +34,7 @@ Tämä luettelointi tarjoaa asetusjoukon tyypillisille totuusarvo-ominaisuuksill
 
 | Arvo | Nimiö | kuvaus |
 | --- | --- | --- |
-| 200000000 | Nro | Et voi. |
+| 200000000 | Ei | Et voi. |
 | 200000001 | Kyllä | Kyllä. |
 
 ## <a name="see-also"></a>Lisätietoja

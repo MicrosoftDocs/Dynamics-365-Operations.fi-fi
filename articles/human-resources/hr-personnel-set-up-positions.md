@@ -1,8 +1,8 @@
 ---
 title: Toimien määrittäminen
-description: Toimet ovat organisaatiohierarkian alemman tason tärkeä osa.
-author: andreabichsel
-ms.date: 08/29/2018
+description: Tässä aiheessa käsitellään, millä tavoin toimet ovat organisaatiohierarkian alatason tärkeä osa.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart,
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83d30b7b0945051e2f3c0ee014cff6c98a2287ad64eb565282f497393b8cf0d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f4b9f09db8465cc55c9b0c4dc403c2c7a3647d7e
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775768"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728709"
 ---
 # <a name="set-up-positions"></a>Toimien määrittäminen
 
@@ -28,43 +28,55 @@ ms.locfileid: "6775768"
 
 Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yksittäinen esiintymä. Esimerkiksi toimi Myyntipäällikkö (Itä) on yksi Myyntipäällikkö-työhön liittyvistä toimista. Toimi sijoittuu osastoille, ja sen voi määrittää vain yhdelle työntekijälle. Tässä tehtävässä käydään läpi toimen luomiseen vaadittavat vaiheet. Menettely on tarkoitettu henkilöstöhallinnon asiantuntijalle.
 
-1. Valitse Työvoiman hallinta.
-2. Napsauta Avoimet toimet.
-3. Avaa valintaikkuna valitsemalla Uusi.
-4. Syötä tai valitse arvo Työ-kenttään.
-    * Työnkuvauksen otsikko ja kokopäivätyötä vastaava työsuhdekerroin kopioidaan automaattisesti valitusta työstä oikeaan kohtaan.  
+1. Valitse **Työvoiman hallinta**.
+2. Valitse **Avaa toimet**.
+3. Avaa avattava valintaikkuna valitsemalla **Uusi**.
+4. Anna tai valitse arvo **Työ**-kenttään.
+
+    **Työnkuvaus**-, **Tehtävänimike**- ja **Vastaava kokopäivätyön työsuhdekerroin** -kentät kopioidaan automaattisesti valitusta työstä toimeen.
+
 5. Ratkaise muutokset työssä.
-6. Napsauta Luo toimi.
-7. Syötä tai valitse Osasto-kentän arvo.
-8. Anna tai valitse Toimityyppi-kentän arvo.
-9. Syötä tai valitse Kompensaatioalue-kentän arvo.
-    * Kompensaatioalue-kenttä määrittää kompensaation oikeutussäännöt ja kiinteät lisäysbudjetit, jotka koskevat kyseisessä toimessa olevaa työntekijää.  
-10. Syötä päivämäärä ja kellonaika Käytettävissä toimeksiantoa varten -kenttään.
-11. Laajenna Toimen kesto -osa.
-    * Toimen kesto syötetään oletusarvoisesti aiemmin annettujen aktivointi- ja päättymispäivämäärän perusteella.  
-12. Laajenna Raportoi toimelle -osa.
-    * Kun määrität työntekijän toimeen, joka raportoi toiselle toimelle, luot näihin kahteen toimeen määritettyjen työntekijöiden välisen suoran raportointisuhteen.  
-13. Avaa valintaikkuna valitsemalla Uusi.
-14. Anna tai valitse Raportoi:-kentässä arvo.
-15. Valitse Luo.
-16. Laajenna Työntekijän tehtävä -osa.
-17. Laajenna Suhteet-osa.
-    * Jos organisaatio käyttää matriisihierarkiaan tai jotakin toista mukautettua hierarkiaa, voit määrittää toimien hierarkiatyypit ja lisätä sitten toimiin raportointisuhteet jokaiselle määrittämällesi hierarkiatyypille.  
-18. ValitseLisää.
+6. Valitse **Luo toimi**.
+7. Anna tai valitse arvo **Osasto**-kentässä.
+8. Anna tai valitse arvo **Toimityyppi**-kentässä.
+9. Anna tai valitse arvo **Kompensaatioalue**-kentässä.
+
+    **Kompensaatioalue**-kenttä määrittää kompensaation oikeutussäännöt ja kiinteät lisäysbudjetit, jotka koskevat kyseisessä toimessa olevaa työntekijää.
+
+10. Anna päivämäärä ja kellonaika **Käytettävissä toimeksiantoa varten** -kenttään.
+11. Laajenna **Toimen kesto** -osa.
+
+    Toimen kesto syötetään oletusarvoisesti aiemmin annettujen aktivointi- ja päättymispäivämäärän perusteella.
+
+12. Laajenna **Raportoi toimelle** -osa.
+
+    Kun määrität työntekijän toimeen, joka raportoi toiselle toimelle, luot näihin kahteen toimeen määritettyjen työntekijöiden välisen suoran raportointisuhteen.
+
+13. Avaa avattava valintaikkuna valitsemalla **Uusi**.
+14. Anna tai valitse arvo **Raportoi:**-kentässä.
+15. Valitse **Luo**.
+16. Laajenna **Työntekijän tehtävä** -osa.
+17. Laajenna **Suhteet**-osa.
+
+    Jos organisaatio käyttää matriisihierarkiaan tai jotakin toista mukautettua hierarkiaa, voit määrittää toimien hierarkiatyypit ja lisätä sitten toimiin raportointisuhteet jokaiselle määrittämällesi hierarkiatyypille.
+
+18. Valitse **Lisää**.
 19. Merkitse valittu rivi luettelossa.
-20. Anna tai valitse Hierarkian nimi -kentässä arvo.
-21. Anna tai valitse Raportoi toimelle -kentässä arvo.
-22. Laajenna Palkanlaskenta-osa.
-23. Syötä tai valitse arvo Maksujakso-kenttään.
-24. Syötä tai valitse Maksaja-kentän arvo.
-25. Lisää Vuosittaiset vakiotunnit -kenttään luku.
-    * Tämä on säännöllisesti maksettujen työtuntien määrä, jonka toimessa olevan työntekijän odotetaan työskentelevän vuosittain.  
-26. Laajenna Ammattijärjestö-osa.
-27. Tiivistä Ammattijärjestö-osa.
-28. Laajenna Taloushallinnon dimensiot -osa.
-29. Syötä tai valitse Jakomalli-kentän arvo.
-30. Syötä tai valitse Osasto-kentän arvo.
-31. Valitse Tallenna.
+20. Anna tai valitse arvo **Hierarkian nimi** -kentässä.
+21. Anna tai valitse arvo **Raportoi toimelle** -kentässä.
+22. Laajenna **Palkanlaskenta**-osa.
+23. Anna tai valitse arvo **Maksujakso**-kentässä.
+24. Anna tai valitse arvo **Maksaja**-kentässä.
+25. Anna luku **Vuosittaiset vakiotunnit** -kentässä.
+
+    Annettava arvo on säännöllisesti maksettujen työtuntien määrä, jonka toimessa olevan työntekijän odotetaan työskentelevän vuosittain.
+
+26. Laajenna **Ammattijärjestö**-osa.
+27. Tiivistä **Ammattijärjestö**-osa.
+28. Laajenna **Taloushallinnon dimensiot** -osa.
+29. Anna tai valitse arvo **Jakomalli**-kentässä.
+30. Anna tai valitse arvo **Osasto**-kentässä.
+31. Valitse **Tallenna**.
 
 
 

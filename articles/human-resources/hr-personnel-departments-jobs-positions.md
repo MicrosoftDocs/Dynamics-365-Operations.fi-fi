@@ -1,8 +1,8 @@
 ---
 title: Työvoiman järjestäminen osastojen, töiden ja toimien avulla
-description: Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä artikkelissa kuvataan elementtien käsitteellisiä tietoja.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Tässä aiheessa käsitellään osastoja, töitä ja toimia koskevia käsitteellisiä tietoja. Ne ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: cd50bf7e8e03d72d6d0e1e2b0b065a5d9c7a3ef44e96f92a5fc342a0d820d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778793"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731805"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Työvoiman järjestäminen osastojen, töiden ja toimien avulla
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä artikkelissa kuvataan elementtien käsitteellisiä tietoja. 
+Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja. 
 
 Seuraavassa esimerkissä on kuvattu tässä artikkelissa käytettäviä käsitteitä.
 
@@ -49,7 +49,6 @@ Osasto on toimintayksikkö, joka edustaa organisaation luokkaa tai toiminta-alue
 ## <a name="jobs-and-positions"></a>Työt ja toimet
 Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Toimi on työn yksittäinen esiintymä. Työssä tarvittavat vastuualueet, työtehtävät, taidot, koulutustiedot ja todistukset tarvitaan myös työhön liittyvissä toimissa.
 ### <a name="job-tasks"></a>Työtehtävät
-
 Voit luoda työtehtäviä, jotka kuvaavat kyseisessä toimessa toimivan työntekijän perustehtäviä. Samaan työtehtävään voidaan lisätä useita töitä, ja töiden toimet perivät työtehtävät. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
 
 <table>
@@ -106,24 +105,21 @@ Toimet ovat organisaatiohierarkian alemman tason tärkeä osa. Toimi on työn yk
 -   Voit määrittää työnkulun niin, että toimien lisäämiselle ja muuttamiselle tarvitaan hyväksyntä.
 
 ### <a name="position-duration"></a>Toimen kesto
-
 Jokainen toimi on voimassa tietyn aikavälin. Sitä kutsutaan kestoksi. Esimerkiksi kesätöiden kesto voi olla 1.5.2015–31.8.2015.
 
 ### <a name="worker-assignments"></a>Työntekijämääritykset
-
 Kun määrität työntekijän johonkin toimeen, täytät kyseisen toimen. Voit määrittää työntekijöitä useisiin toimiin, mutta kuhunkin toimeen voi määrittää vain yhden työntekijän kerrallaan.
 
 ### <a name="reporting-relationships"></a>Raportointisuhteet
+Toimet ovat organisaatiohierarkian alemman tason tärkeitä osia. **Toimi**-sivulta voit määrittää toimen, jolle toinen toimi raportoi. Kun määrität työntekijän toimeen, joka raportoi toiselle toimelle, luot näihin kahteen toimeen määritettyjen työntekijöiden välisen raportointisuhteen. Esimerkki: Toimi Kirjanpitäjä A raportoi toimelle Kirjanpidon esimies. Ana Bowman on nimitetty kirjanpidon esimieheksi ja Felix Henderson kirjanpitäjäksi A. Tämän vuoksi Felix Henderson raportoi Ana Bowmanille. 
 
-Toimet ovat organisaatiohierarkian alemman tason tärkeitä osia. Toimi-lomakkeessa voit määrittää toimen, jolle toinen toimi raportoi. Kun määrität työntekijän toimeen, joka raportoi toiselle toimelle, luot näihin kahteen toimeen määritettyjen työntekijöiden välisen raportointisuhteen. Esimerkki: Toimi Kirjanpitäjä A raportoi toimelle Kirjanpidon esimies. Kim Akers on nimitetty kirjanpidon esimieheksi ja Sanjay Patel kirjanpitäjäksi A. Sanjay Patel raportoi siis Kim Akersille. 
+Jos organisaatio käyttää matriisihierarkiaan tai jotakin toista mukautettua hierarkiaa, voit määrittää toimien hierarkiatyypit ja lisätä sitten toimiin raportointisuhteet jokaiselle määrittämällesi hierarkiatyypille. Esimerkki: Olivia Wilson on Adventure Worksin johtaja, joka nimitetään pääjohtajan toimeen. Olivia johtaa pienoissovellusten puhdistamiseen käytettävän tuotteen kehitystyötä. Olivia tarvitsee kirjanpitäjän avuksi tuotekehityksen taloushallintoon. Hän on rekrytoinut Felix Hendersonin kirjanpitäjäksi. Felix raportoi suoraan Ana Bowmanille, mutta hän työskentelee myös Olivia Wilsonin kanssa pienoissovelluksen tuotekehityksen taloushallinnossa. 
 
-Jos organisaatio käyttää matriisihierarkiaan tai jotakin toista mukautettua hierarkiaa, voit määrittää toimien hierarkiatyypit ja lisätä sitten toimiin raportointisuhteet jokaiselle määrittämällesi hierarkiatyypille. Esimerkki: Lori Penor on Adventure Worksin johtaja, joka nimitetään pääjohtajan toimeen. Lori johtaa pienoissovellusten puhdistamiseen käytettävän tuotteen kehitystyötä. Lori tarvitsee kirjanpitäjän avuksi tuotekehityksen taloushallintoon. Hän on rekrytoinut Sanjay Patelin kirjanpitäjäksi. Sanjay raportoi suoraan Kim Akersille, mutta hän työskentelee myös Lori Penorin kanssa pienoissovelluksen tuotekehityksen taloushallinnossa. 
-
-Edellisessä esimerkissä määrittäisit Sanjay Patelin ja Lori Penorin välisen työsuhteen suorittamalla seuraavat tehtävät:
+Edellisessä esimerkissä Felix Hendersonin ja Ana Bowmanin välinen työskentelysuhde määritettiin suorittamalla seuraavat tehtävät:
 1.  Luo Pienoissovellus-niminen mukautettu toimen hierarkiatyyppi, jotta voit luoda hierarkian, joka sisältää pienoissovelluksen tuotekehityksestä vastaavat toimet.
 2.  Määritä pääjohtajan toimi toimeksi, jolle kirjanpitäjä A:n toimi raportoi Pienoissovellus-hierarkiassa.
 
-Toimihierarkian avulla voit tarkastella toimien raportointirakennetta. Jos toimihierarkioita on useita, voit tarkastella kutakin hierarkiatyyppiä toimihierarkiassa. Voit myös hakea toimia toimen tunnuksen tai siihen nimitetyn henkilön nimen perusteella. Toimihierarkia on organisaatiohierarkia.
+**Toimihierarkia**-sivulla voidaan tarkastella toimien raportointirakennetta. Jos toimihierarkioita on useita, voit tarkastella kutakin hierarkiatyyppiä **toimihierarkiassa**. Voit myös hakea toimia toimen tunnuksen tai siihen nimitetyn henkilön nimen perusteella. **Toimihierarkia** on organisaatiohierarkia.
 
 ## <a name="date-effective-records"></a>Voimassaolotietueet
 Joissakin tietueissa voit määrittää tietueeseen tehtävät tulevat muutokset. Seuraavat tiedot ovat voimassaolotietueita.
@@ -155,13 +151,5 @@ Joissakin tietueissa voit määrittää tietueeseen tehtävät tulevat muutokset
 </tr>
 </tbody>
 </table>
-
-Voit muokata edellä olevassa taulukossa mainittuja toimen tai työn tietoja ja määrittää päivämäärän, jona toimen tai työn muutokset tulevat voimaan. Esimerkki: Toimi voidaan määrittää vain yhdelle työntekijälle, mutta Sanjay Patel, joka on nimitetty kirjanpitäjä A:n toimeen, on lähdössä yrityksestä kahden viikon kuluttua. Joe Healy tulee Sanjayn tilalle. Vaikka Sanjay on edelleen toimessaan, voit määrittää Joe Healyn samaan toimeen siten, että määritys tulee voimaan vasta Sanjayn viimeisen työpäivän jälkeen.
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

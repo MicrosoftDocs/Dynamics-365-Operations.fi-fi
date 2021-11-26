@@ -40,7 +40,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Ei sisälly sähköisten viestien käsittelyyn sähköisten viestien välitysjärjestelmän kanssa |
-| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Hakemus |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Huhtikuun 15.4.2022 mennessä suunnitelma ei enää tue MUODON RTIR Query Invoice Data Request (HU) -muotoa. |

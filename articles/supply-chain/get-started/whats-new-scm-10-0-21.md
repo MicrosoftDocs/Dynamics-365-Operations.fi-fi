@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715251"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777934"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.21 uudet tai muuttuneet ominaisuudet (lokakuu 2021)
 
@@ -71,9 +71,9 @@ Seuraavassa taulukossa luetellaan ominaisuudet, jotka ovat oletusarvoisesti käy
 | Avaa varastokirjauskansion lukitus | 1.9.2021 | 17.8.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
 | Inventoinnin- ja varastonhallinnan tallennetut näkymät | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
 | Siirtyminen tuoterakenneriveiltä tuoterakenneversioon. | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
-| Käytetään mittayksikköä ja yksikkömäärää varastokirjauskansioissa. | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Käytetään mittayksikköä ja yksikkömäärää varastokirjauskansioissa | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
 | Salli tyhjät erämääritteiden arvot | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
-| Varaston siirtotilausrivien automaattinen rivinumeroiden lisäys. | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
+| Varaston siirtotilausrivien automaattinen rivinumeroiden lisäys | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
 | Varaston kirjauskansion hyväksynnän työnkulku | 1.9.2021 | 6.1.2020 | Käytössä oletusarvoisesti | Varastonhallinta |
 | Ota käyttöön varaston laadunhallinnan parametrien varoitusominaisuus | 1.9.2021 | 7.10.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
 | Luo siirtotilaus myyntiriviltä | 1.9.2021 | 31.8.2019 | Käytössä oletusarvoisesti | Varastonhallinta |
@@ -93,12 +93,12 @@ Seuraavassa taulukossa luetellaan ominaisuudet, jotka ovat oletusarvoisesti käy
 | Julkaistujen tuotteiden tallennetut näkymät | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Tuotetietojen hallinta |
 | Töiden hyväksynnän ja siirron valintaikkunoiden parannukset | 1.9.2021 | 11.10.2019 | Käytössä oletusarvoisesti | Tuotannonhallinta |
 | Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen | 1.9.2021 | 31.8.2019 | Käytössä oletusarvoisesti | Tuotannonhallinta |
-| Työkorttipääte-sivulle on lisätty uusi Lopeta tauko -painike. | 1.9.2021 | 19.2.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Työkorttipääte-sivulle on lisätty uusi Lopeta tauko -painike | 1.9.2021 | 19.2.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
 | Ota käyttöön alihankintana hankittujen nimikkeiden osittainen vastaanotto ja korjaa Toimittaja-tyypin tuoterakennerivien hävikkilaskennan ongelma. | 1.9.2021 | 11.11.2019 | Käytössä oletusarvoisesti | Tuotannonhallinta |
 | Tuotannonohjauksen tallennetut näkymät | 1.9.2021 | 17.8.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
 | Dynamics 365 Guides valmistukselle | 1.9.2021 | 13.7.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
 | Tuotannon suoritus | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
-| Toiminto, jolla voi lukita työkorttilaitteen ja työkorttipäätteen desinfiointia varten. | 1.9.2021 | 10.5.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
+| Ominaisuus, jolla voi lukita työkorttilaitteen ja työkorttipäätteen desinfiointia varten | 1.9.2021 | 10.5.2020 | Käytössä oletusarvoisesti | Tuotannonhallinta |
 | Myyntitilauksen kulujen kohdistus | 1.9.2021 | 30.9.2020 | Käytössä oletusarvoisesti | Myynti ja markkinointi |
 | Rajoita kirjausta varten valittavien myyntitilausten määrää | 1.9.2021 | 1.9.2021 | Käytössä oletusarvoisesti | Myynti ja markkinointi |
 | Tyhjennä myyntitilauksen päivityshistoria | 1.9.2021 | 1.9.2021 | Käytössä oletusarvoisesti | Myynti ja markkinointi |

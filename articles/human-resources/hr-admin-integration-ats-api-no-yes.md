@@ -34,7 +34,7 @@ Tämä valintalista mahdollistaa asetusjoukon tyypillisille Boolean-ominaisuuksi
 
 | Arvo | Nimiö | kuvaus |
 | --- | --- | --- |
-| 200000000 | Nro | Nro |
+| 200000000 | Ei | Ei |
 | 200000001 | Kyllä | Kyllä. |
 
 ## <a name="see-also"></a>Lisätietoja

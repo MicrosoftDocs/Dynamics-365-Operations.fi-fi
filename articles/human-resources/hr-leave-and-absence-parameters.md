@@ -1,8 +1,8 @@
 ---
 title: Loma- ja poissaoloparametrien määrittäminen
-description: Määritä henkilöstöhallinnon parametrit lomaa ja poissaoloa varten Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-ms.date: 11/02/2020
+description: Tässä aiheessa käsitellään lomien ja poissaolojen henkilöstöresurssien parametrien määrittämistä Dynamics 365 Human Resourcesissa.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777956"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728854"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Loma- ja poissaoloparametrien määrittäminen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ennen kuin määrität loma- ja poissaolosuunnitelmat Dynamics 365 Human Resources -ohjelmassa, kannattaa tarkistaa kaikkien liittyvien henkilöstöparametrien asetukset, kuten esimerkiksi seuraavat:
+Ennen kuin määrität loma- ja poissaolosuunnitelmat Dynamics 365 Human Resourcesissa, kannattaa tarkistaa kaikkien liittyvien **henkilöstöparametrien** asetukset, kuten esimerkiksi seuraavat:
 
 - Lomapyyntöjen numerosarja
 - Perhe- ja sairauspoissaolon säädös (FMLA) -asetukset
@@ -74,7 +74,7 @@ Ennen kuin määrität loma- ja poissaolosuunnitelmat Dynamics 365 Human Resourc
 
     - Valitse **Saldon laskeminen**, kun haluat näyttää saldon kuluvan päivän ja jaksotuskauden mukaan. Jos valitset **Saldo tänään** -vaihtoehdon, saldo näyttää kaikkien kertymien, oikaisujen ja pyyntöjen kokonaissumman tänään. Jos valitset **Saldo jaksotuskaudelta**, saldo näyttää kaikkien jaksotusten, oikaisujen ja pyyntöjen kokonaissumman niiden jaksotuskauden mukaan, jotka on määritetty lomasuunnitelman frekvenssin mukaan. 
 
-    - Määritä siirtokirjauksen tekemisen vanhentumisen erätyön aloitusaika.  
+    - Määritä **Siirtokirjauksen vanhentuminen** -erätyön **alkamisaika**.  
     
     - Valitse **Työntekijät voivat ostaa lomaa**- ja **Salli työntekijöiden myydä lomaa** -kohdissa **Kyllä**. Jos valitse näissä vaihtoehdoissa **Kyllä**, voit luoda käytännöt loman vaihtamisesta rahaksi ja lomapalkan vaihtamisesta vapaaksi ja antaa työntekijöille mahdollisuuden lähettää loman rahaksi tai lomapalkan vapaaksi vaihtamispyyntöjä.
 

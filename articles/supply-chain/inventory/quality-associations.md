@@ -344,7 +344,7 @@ Jos asetat tuotannossa **Tapahtumatyyppi**-kentän arvoksi *Ilmoita valmiiksi* j
 </tr>
 <tr>
 <td>Kiinteä määrä: 1</td>
-<td>Nro</td>
+<td>Ei</td>
 <td>
 <p>Eränumero: Ei</p>
 <p>Sarjanumero: Ei</p>
@@ -399,7 +399,7 @@ Jos asetat tuotannossa **Tapahtumatyyppi**-kentän arvoksi *Ilmoita valmiiksi* j
 </tr>
 <tr>
 <td>Kiinteä määrä: 2</td>
-<td>Nro</td>
+<td>Ei</td>
 <td>
 <p>Eränumero: Kyllä</p>
 <p>Sarjanumero: Kyllä</p>

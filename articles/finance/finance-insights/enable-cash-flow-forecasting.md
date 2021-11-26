@@ -2,7 +2,7 @@
 title: Kassavirtaennusteiden ottaminen käyttöön
 description: Tässä ohjeaiheessa kerrotaan, miten kassavirtaennusteiden toiminto otetaan käyttöön Finance Insightsissa.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,45 +15,37 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b5e54772b132b4098df8259e954a484a0838ee38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: d968f28126cf205a487d84301aa28f1251713386
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386708"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752685"
 ---
 # <a name="enable-cash-flow-forecasting"></a>Kassavirtaennusteiden ottaminen käyttöön
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten kassavirtaennusteiden toiminto otetaan käyttöön Finance Insightsissa.
+Tässä aiheessa käsitellään Kassavirtaennusteet-toiminnon ottamista käyttöön Finance Insightsissa.
 
 > [!NOTE]
 > Jos haluat käyttää kassavirran maksuennusteita, sinun on määritettävä asiakkaan maksuennusteiden toiminto kohdan [Asiakkaan maksuennusteiden käyttöönotto](enable-cust-paymnt-prediction.md) ohjeiden mukaan.
-
-1. Muodosta yhteys ympäristön Azure SQL:n ensisijaiseen esiintymään Microsoft Dynamics Lifecycle Services (LCS) -ratkaisun ympäristösivun tietojen avulla. Suorita seuraava Transact-SQL (T-SQL) -komento, jos haluat ottaa käyttöön eristysympäristön väliversiotestaukset. (Sinun on ehkä otettava käyttöön IP-osoitteen käyttö LCS:ssä ennen etäyhteyden muodostamista Application Object Serveriin \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > Ohita tämä vaihe, jos käytössä on versio 10.0.20 tai myöhempi versio tai jos käytössä on Service Fabric -toteutus. Finance Insightsin ryhmä on todennäköisesti jo ottanyt sen käyttöön. Jos et näe ominaisuutta **Toimintojen hallinta** -työtilassa tai jos sen käyttöönotossa on ongelmia, ota yhteyttä käyttämällä osoitetta <fiap@microsoft.com>.
   
-2. Avaa **Toimintojen hallinta** -työtila ja toimi seuraavasti:
+1. Avaa **Toimintojen hallinta** -työtila ja toimi seuraavasti:
 
     1. Valitse **Tarkista päivitysten saatavuus**.
-    2. Ota seuraavat toiminnot käyttöön:
+    2. Käytä **Kaikki**-välilehdessä hakusanaa **Kassavirtaennusteet**. Jos ominaisuutta ei löydy, käytä hakusanaa **(Esiversio) Kassavirtaennusteet**. 
+    3. Ota toiminto käyttöön.
 
-        - Uusi ruudukko-ohjausobjekti
-        - Ryhmitteleminen ruudukoissa (esiversio) 
-        - Asiakkaan maksuennusteet (esiversio)
-        - Kassavirtaennusteet (esiversio)
-
-3. Siirry kohtaan **Maksuliikenteen hallinta \> Kassavirtaennusteen määritys** ja lisää rahatilit, jotka ennusteisiin lisätään.
+2. Siirry kohtaan **Maksuliikenteen hallinta \> Kassavirtaennusteen määritys** ja lisää rahatilit, jotka ennusteisiin lisätään. Määritä myös rahatili maksuja varten **Myyntireskontra**- ja **Ostoreskontra**-välilehdissä. Muista laskea kassavirtaennuste uudelleen.
 
     > [!NOTE]
     > Jos rahatilejä ei ole määritetty, kassavirtaa ei voi luoda.
+    >
+    > Lisätietoja kassavirtaennusteiden määrittämisestä on kohdassa [Kassavirtaennusteet](../cash-bank-management/cash-flow-forecasting.md).
 
-4. Siirry kohtaan **Maksuliikenteen hallinta \> Asetukset \> Finance Insights (esiversio) \> Kassavirtaennusteet (esiversio)** ja tee seuraavat toiminnot:
+3. Siirry kohtaan **Maksuliikenteen hallinta \> Asetukset \> Finance Insights (esiversio) \> Kassavirtaennusteet (esiversio)** ja tee seuraavat toiminnot:
 
     1. Valitse **Kassavirtaennuste**-välilehdessä **Ota toiminto käyttöön**.
     2. Valitse **Luo ennustemalli**.

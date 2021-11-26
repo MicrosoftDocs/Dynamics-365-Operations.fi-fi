@@ -333,9 +333,9 @@ Microsoft tarjoaa Finance and Operationsin asiakkaille kolme tukisopimusta: Prem
 | Rajoittamaton häiriö-/korjaustapausten lähetys | Kyllä | Kyllä | Kyllä |
 | Ympärivuorokautinen käyttö LCS:n kautta | Kyllä | Kyllä | Kyllä |
 | Tapahtuman vastausaika | Alle yksi tunti | Alle yksi tunti | Seuraava arkipäiviä |
-| Neuvonta-ajat | Poolit hankitaan sopimuksen mukaan. | Nro | Nro |
-| Erillinen tukitilivastaava | Kyllä | Nro | Nro |
-| Erillinen tukiasiantuntija | Saatavilla erillisestä sopimuksesta | Nro | Nro |
+| Neuvonta-ajat | Poolit hankitaan sopimuksen mukaan. | Ei | Ei |
+| Erillinen tukitilivastaava | Kyllä | Ei | Ei |
+| Erillinen tukiasiantuntija | Saatavilla erillisestä sopimuksesta | Ei | Ei |
 
 Lisätietoja on kohdassa [Tuen yleiskatsaus](/power-platform/admin/support-overview).
 

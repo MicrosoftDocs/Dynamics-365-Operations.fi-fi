@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647186"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777958"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -39,7 +39,7 @@ Tuotannon käyttöliittymä sekä monet tässä aiheessa käsiteltävät valinna
 
 ### <a name="the-production-floor-execution-interface"></a>Tuotannon käyttöliittymä
 
-Tätä ominaisuutta käsitellään ensisijaisesti tässä aiheessa. Se lisää tuotannon käyttöliittymän järjestelmään. Ota se käyttöön ottamalla seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tätä ominaisuutta käsitellään ensisijaisesti tässä aiheessa. Supply Chain Managementin versiosta 10.0.21 alkaen se on poistettu oletusarvoisesti käytöstä. Se lisää tuotannon käyttöliittymän järjestelmään. Ota se käyttöön ottamalla seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Tuotannon toteutus
 
@@ -47,19 +47,19 @@ Tätä ominaisuutta käsitellään ensisijaisesti tässä aiheessa. Se lisää t
 
 Näillä ominaisuuksilla rekisterikilpitoiminnot saadaan käyttöön tuotannon käyttöliittymässä. Jos haluat käyttää niitä, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (seuraavassa järjestyksessä):
 
-1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
+1. Valmiiksi ilmoittamisen rekisterikilpi lisättiin työkorttilaitteeseen (Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on otettu oletusarvoisesti käyttöön.)
 1. Ota käyttöön rekisterikilven numeron automaattinen luonti, kun työkorttilaitteessa raportoidaan valmiiksi
 
 ### <a name="print-labels"></a>Tulosta etiketit
 
 Näillä ominaisuuksilla etikettitulostus saadaan käyttöön tuotannon käyttöliittymässä. Jos haluat käyttää niitä, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (seuraavassa järjestyksessä):
 
-1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
+1. Valmiiksi ilmoittamisen rekisterikilpi lisättiin työkorttilaitteeseen (Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on otettu oletusarvoisesti käyttöön.)
 1. Tulosta etiketti työkorttilaitteesta
 
 ### <a name="allow-locking-the-touch-screen"></a>Kosketusnäytön lukitsemisen salliminen
 
-Tämä ominaisuus lisää tuotannon käyttöliittymään painikkeen, jolla työntekijät voivat puhdistaa kosketusnäytön. Jos haluat käyttää sitä, ota seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Se lisää tuotannon käyttöliittymään painikkeen, jolla työntekijät voivat puhdistaa kosketusnäytön. Jos haluat käyttää sitä, varmista, että seuraava toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Ominaisuus, jolla voi lukita työkorttilaitteen ja työkorttipäätteen desinfiointia varten
 

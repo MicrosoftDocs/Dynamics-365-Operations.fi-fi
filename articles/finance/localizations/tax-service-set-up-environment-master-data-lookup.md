@@ -1,8 +1,8 @@
 ---
-title: Ympäristön määrittäminen päätietojen hakua varten
-description: Tässä aiheessa kerrotaan, miten ympäristö määritetään käyttämään veron laskennan perustietojen hakutoimintoa.
+title: Verolaskentamäärityksen päätietojen haun ottaminen käyttöön
+description: Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista.
 author: kai-cloud
-ms.date: 10/26/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 901f8bcb0220355866952b68e92bc2dd906bb430
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700401"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749507"
 ---
-# <a name="set-up-an-environment-for-master-data-lookup"></a>Ympäristön määrittäminen päätietojen hakua varten
+# <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Verolaskentamäärityksen päätietojen haun ottaminen käyttöön 
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten ympäristö määritetään käyttämään veron laskennan perustietojen hakutoimintoa.
+Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista. Käytössä on avattava luettelo, jossa voi valita verolaskentamäärityksen arvoja esimerkiksi **Toimittajan tili**-, **Nimikekoodi**- ja **Toimitusehto**-kenttiin. Nämä arvot saadaan Microsoft Dataverse -tietolähdettä käyttävästä yhdistetystä Microsoft Dynamics 365 Finance -ympäristöstä.
 
 1. Määritä Microsoft Power Platformin integraatio Microsoft Dynamics Lifecycle Services (LCS) -palveluissa. Lisätietoja on kohdassa [Microsoft Power Platform -apuohjelmien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Kun olet suorittanut tämän vaiheen, Microsoft Power Platform -ympäristön nimi näkyy **Power Platform -integrointi** -osassa.
 2. Siirry [Microsoft Power Platformin hallintakeskukseen](https://admin.powerplatform.microsoft.com/environments) ja valitse ympäristön nimi. Ympäristön URL-osoite annetaan.

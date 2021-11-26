@@ -2,7 +2,7 @@
 title: Kassatilanne
 description: Tässä ohjeaiheessa kerrotaan, miten kassavirtaennustetoiminto ennustaa organisaation kassatilenteen tiettyinä aikoina. Se kuvaa myös vaihtoehdot, joiden avulla eri kausien ennusteet voidaan näyttää.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386311"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752877"
 ---
 # <a name="cash-position"></a>Kassatilanne
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Kassatilanne on kassavirran ennuste. Se perustuu kassakuittien ennusteeseen niiltä asiakkailta, jotka maksavat maksamattomia laskuja ja tilauksia ja myös ennusteen käteissuorituksiin, jotka on maksettu toimittajille ostolaskuja ja -tilauksia varten.
 
@@ -44,8 +45,5 @@ Samankaltaista menetelmää käytetään toimittajille suoritettavien maksujen e
 - **Pankkitili**-ruudukossa on odottujen saapuvien ja lähtevien kassavirtojen vaikutus pankkitilin saldoon.
 
 Jos haluat tallentaa ja muokata kassatilannetta, luo tilannevedos. Lisätietoja tilannevedosten käsittelemisestä on kohdassa [Tilannevedosten yleiskatsaus](payment-snapshots.md).
-
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

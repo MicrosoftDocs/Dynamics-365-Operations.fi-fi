@@ -47,11 +47,11 @@ Seuraavassa taulukossa on tyypillisiä esimerkkejä ostohyvityksen vähennysperi
 
 | Ostohyvityksen vähentämisperiaate | kuvaus | Vähennyksen kohdistaminen | Vähennysperuste | Poissulkeminen vähennyksestä |
 |---|---|---|---|---|
-| Lykätty | Vähennä ostohyvitystä | Kyllä | Molemmat | Nro |
+| Lykätty | Vähennä ostohyvitystä | Kyllä | Molemmat | Ei |
 | Exclreb | Poissulje ostohyvitys | Kyllä | Hyvitys   | Kyllä |
 | Usea | Useita ostohyvityksiä | Kyllä | Molemmat | Kyllä |
-| None | Vain varaus ja ostohyvitys | Nro | Molemmat | Kyllä |
-| Varaa | Vain varaus | Kyllä | Varaa | Nro |
+| None | Vain varaus ja ostohyvitys | Ei | Molemmat | Kyllä |
+| Varaa | Vain varaus | Kyllä | Varaa | Ei |
 | Hyvitys   | Vain ostohyvitys | Kyllä | Hyvitys   | Kyllä |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Esimerkkejä ostohyvitysvähennysperiaatteen laskelmista

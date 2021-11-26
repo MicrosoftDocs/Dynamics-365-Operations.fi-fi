@@ -1,8 +1,8 @@
 ---
 title: Työehdotusten luominen ja avaaminen
 description: Työhönottoprojektit auttavat rekrytointiprosessin hallinnassa.
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df60f6461c52e45849d3de89fde4ae53f915dbc3cce417a30790acf443c5fecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778769"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731558"
 ---
 # <a name="create-and-open-job-requisition"></a>Työehdotusten luominen ja avaaminen
 
@@ -39,7 +39,7 @@ Työhönottoprojektit auttavat rekrytointiprosessin hallinnassa. Työhönottopro
 6. Etsi tietue luettelosta ja valitse se.
 7. Valitse luettelossa valitulla rivillä oleva linkki.
 8. Valitse **Valitse**.
-9. Avaa haku valitsemalla Osasto-kentässä avattavan valikon painike.
+9. Avaa haku valitsemalla **Osasto**-kentässä avattavan valikon painike.
 10. Valitse luettelossa valitulla rivillä oleva linkki.
 11. Avaa haku valitsemalla **Työ**-kentässä avattavan valikon painike.
 12. Etsi tietue luettelosta ja valitse se.
@@ -58,10 +58,10 @@ Työhönottoprojektit auttavat rekrytointiprosessin hallinnassa. Työhönottopro
 25. Syötä päivämäärä **Päättymispäivä**-kenttään.
 26. Valitse **Tallenna**.
 27. Sulje sivu.
-28. Valitse työpaikkamainokset.
+28. Valitse **Työpaikkailmoitukset**.
 29. Valitse **Tallenna**.
 30. Sulje sivu.
-31. Valitse **Näytä työntekijän itsepalvelussa** -valintaruutu tai poista sen valinta. Valitse **Näytä työntekijän itsepalvelussa** -valintaruutu. Tämän valinnan ansiosta työhönottoprojekti on työntekijöiden nähtävillä työntekijöiden itsepalvelusivuilla.
+31. Valitse **Näytä työntekijän itsepalvelussa** -valintaruutu tai poista sen valinta. Valitse **Näytä työntekijän itsepalvelussa** -valintaruutu. Tämän valinnan ansiosta työhönottoprojekti on työntekijöiden nähtävillä **Työntekijöiden itsepalvelu** -sivuilla.
 32. Valitse **Työhönottoprojektin tila**.
 33. Valitse **Aloita**. **Aloitettu** tila tarkoittaa, että projekti on valmis vastaanottamaan hakemuksia.  
 34. Valitse **OK**.

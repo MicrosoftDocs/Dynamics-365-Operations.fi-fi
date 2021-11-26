@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488135"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731635"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -85,6 +85,8 @@ ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Taul
 
 **Alue**-osa ilmaisee Excel-alueen, joka on oltava tämän ER-osan hallinnassa. Alueen nimi määritetään tämän osan **Excel-alue**-ominaisuudessa.
 
+### <a name="replication"></a>Replikointi
+
 **Replikointisuunta**-ominaisuus määrittää, toistetaanko alue luodussa tiedostossa ja millä tavoin se toistetaan:
 
 - Jos **Replikointisuunta**-ominaisuudeksi on määritetty **Ei replikointia**, soveltuvaa Excel-aluetta ei toisteta luodussa tiedostossa.
@@ -92,6 +94,8 @@ ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Taul
 - Jos **Replikointisuunta**-ominaisuudeksi on määritetty **Vaakasuuntainen**, soveltuvaa Excel-alue toistetaan luodussa tiedostossa. Jokainen replikoitu alue sijoitetaan Excel-mallin alkuperäisen alueen oikealle puolelle. Toistojen määrä määräytyy tähän ER-osaan sidotun **Tietueluettelo**-tyypin tietolähteen tietueiden määrän mukaan.
 
 Lisätietoja vaakasuuntaisesta replikoinnista on kohdan [Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäämiseen Excel-raportteihin](tasks/er-horizontal-1.md) ohjeissa.
+
+### <a name="nested-components"></a>Sisäkkäiset komponentit
 
 **Alue**-osassa voi olla muita sisäkkäisiä ER-osia, joiden avulla annetaan arvoja soveltuvilla Excelin nimetyillä alueilla.
 
@@ -105,11 +109,40 @@ Lisätietoja vaakasuuntaisesta replikoinnista on kohdan [Vaakasuunnassa laajenne
     > [!NOTE]
     > Tämän mallin avulla Excel-sovelluksessa voidaan ottaa käyttöön annettujen arvojen muotoilu sen paikallisen tietokoneen alueasetusten perusteella, joka avaa lähtevän tiedoston.
 
+### <a name="enabling"></a>Otetaan käyttöön
+
 ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Alue**-osan **Käytössä**-ominaisuus voidaan määrittää määrittämään, onko osa sijoitettava luotuun tiedostoon:
 
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Tosi** tai jos mitään lauseketta ei ole määritetty, sopiva alue täytetään luotuun tiedostoon.
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Epätosi** tai jos tämä alue ei vastaa kokonaisia rivejä tai sarakkeita, sopivaa aluetta ei täytetä luotuun tiedostoon.
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Epätosi** tai jos tämä alue vastaa kokonaisia rivejä tai sarakkeita, luoto tiedosto sisältää kyseiset rivit ja sarakkeet piilotettuina riveinä ja sarakkeina.
+
+### <a name="resizing"></a>Koon muuttaminen
+
+Excel-malli voidaan määrittää käyttämään soluja tekstitietojen esittämiseen. Solu voidaan määrittää rivittämään solussa oleva teksti automaattisesti. Tällä tavoin voidaan varmistaa, että koko solussa oleva teksti näkyy muodostetussa asiakirjassa. Lisäksi kyseisen solun sisältävä rivi voidaan määrittää automaattisesti muuttamaan korkeutta, jos rivitetty teksti ei ole kokonaan näkyvissä. Lisätietoja on kohdan [Soluissa katkenneiden tietojen korjaaminen](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e) osassa Solussa olevan tekstin rivittäminen.
+
+> [!NOTE]
+> [Excelin tunnetun rajoituksen](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) vuoksi Excelin **Sovita**- ja **Rivitä teksti** -ominaisuuksien käyttö ei ehkä onnistu yhdistetyissä soluissa ja solut sisältävillä riveillä, vaikka solut olisi määritetty rivittämään teksti ja kyseiset solut sisältävät rivit olisi määritetty muuttamaan automaattisesti korkeus rivitetyn tekstin mukaiseksi. 
+
+Dynamics 365 Financen versiosta 10.0.23 alkaen sähköinen raportointi voidaan pakottaa laskemaan luodussa asiakirjassa kunkin sellaisen rivin korkeus, joka on määritetty sovittamaan korkeus automaattisesti sisäkkäisten solujen sisällön mukaisesti aina, kun kyseinen rivi sisältää ainakin yhden yhdistetyn solun, joka määritettiin rivittämään solussa oleva teksti. Laskettua korkeutta käytetään sitten rivin korkeuden muuttamiseen. Näin varmistetaan, että kaikki rivin solut näkyvät luodussa asiakirjassa. Tämän toiminnon käyttö aloitetaan seuraavasti, kun suoritetaan sellaisia ER-muotoja, jotka on määritetty käyttämään Excel-malleja lähtevien asiakirjojen luontiin.
+
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.
+3. Määritä **Sähköisen raportoinnin parametrit** -sivun **Suorituksen aikainen** -välilehdessä **Sovita rivin korkeus** -asetukseksi **Kyllä**.
+
+Tämä sääntö voidaan muuttaa yhden ER-muodon osalta päivittämällä kyseisen muodon luonnosversio seuraavasti:
+
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+2. Valitse **Lokalisointimääritykset**-sivun **Konfiguroinnit**-osassa **Raportointimääritykset**-ruutu.
+3. Valitse **Määritykset**-sivun määrityspuun vasemmassa ruudussa ER-määritys, joka on suunniteltu luomaan lähteviä asiakirjoja Excel-mallin avulla.
+4. Valitse **Versiot**-pikavälilehdessä konfiguraatioversio, jonka tila on **Luonnos**.
+5. Valitse toimintoruudussa **Suunnittelija**.
+6. Valitse **Muodon suunnittelija** -sivun muotopuun vasemmassa ruudussa Excel-malliin linkitetty Excel-osa.
+7. Valitse **Muoto**-välilehden **Säädä rivin korkeutta** -kentässä arvo määrittämään, pakotetaanko sähköinen raportointi suorituksen aikana muuttamaan sellaisen lähtevän asiakirjan rivien korkeus, jotka on luotu muokatun ER-muodon avulla:
+
+    - **Oletus** – käytä yleistä asetusta, joka on määritetty **Sähköisen raportoinnin parametrit** -sivun **Sovita rivin korkeus** -kentässä.
+    - **Kyllä** – ohita yleinen asetus ja muuta rivin korkeutta suorituksen aikana.
+    - **Ei** – ohita yleinen asetus mutta älä muuta rivin korkeutta suorituksen aikana.
 
 ## <a name="cell-component"></a>Solu-osa
 

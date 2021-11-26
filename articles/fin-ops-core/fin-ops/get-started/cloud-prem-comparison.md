@@ -48,21 +48,21 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |                                      | Tietojen integroinnit                                                                         | Kyllä       | Kyllä             |
 | Tiedoston hallinta                  |                                                                                           | Kyllä       | Kyllä             |
 | Taloushallinto                 |                                                                                           | Kyllä       | Kyllä             |
-| Ohje                                 |                                                                                           | Kyllä       | En              |
+| Ohje                                 |                                                                                           | Kyllä       | Ei              |
 | Henkilöstöhallinto                      |                                                                                           | Kyllä       | Kyllä             |
 | Tiedot                         |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Sähköinen raportointi (ER)                                                                 | Kyllä       | Kyllä             |
 |                                      | ER: Integrointi LCS:n kanssa                                                                  | Kyllä       | Ei              |
 |                                      | ER: Integrointi SharePointin kanssa                                                           | Kyllä       | Ei              |
 |                                      | ER: Integrointi Regulatory Configuration Services (RCS) -palvelun kanssa                              | Kyllä       | Ei              |
-|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Nro        | Kyllä             |
-|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Nro              |
-|                                      | PowerBI Desktop -integrointi                                                          | Nro        | Kyllä             |
-|                                      | Analyysityötilat                                                                     | Kyllä       | Nro              |
-|                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Nro              |
-|                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Nro              |
+|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Ei        | Kyllä             |
+|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Ei              |
+|                                      | PowerBI Desktop -integrointi                                                          | Ei        | Kyllä             |
+|                                      | Analyysityötilat                                                                     | Kyllä       | Ei              |
+|                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Ei              |
+|                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Ei              |
 |                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | Kyllä             |
-|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | Nro              |
+|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | Ei              |
 | Käyttöikäpalvelut                   |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Konfiguroitavat liiketoimintaprosessit                                                           | Kyllä       | Ei              |
 | Lokalisoinnit                        |                                                                                           | Kyllä       | Kyllä             |
@@ -75,7 +75,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 | Suojaus                             |                                                                                           | Kyllä       | Kyllä             |
 | Huoltohallinta                   |                                                                                           | Kyllä       | Kyllä             |
 | WWW-asiakasohjelma                           |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Tehtävien tallennustoiminto - tallenna tai lataa tehtävätallenteita BPM-kirjastosta                         | Kyllä       | En              |
+|                                      | Tehtävien tallennustoiminto - tallenna tai lataa tehtävätallenteita BPM-kirjastosta                         | Kyllä       | Ei              |
 | Tuki                              |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Nopea tuki Ohje ja tuki -valikon kautta                                             | Kyllä       | Ei              |
 |                                      | Liiketoimintatapahtumat                                                                           | Kyllä       | Kyllä (internet-yhteys on pakollinen tai mukautetut päätepisteet on otettava käyttöön liiketoimintatapahtumien lähettämistä ja vastaanottamista varten intranetissä)              |
@@ -86,14 +86,14 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |-------------------------|-------------------|-----------|-----------------|
 | Resurssien hallinta                     |                                                                                           | Kyllä       | Kyllä             |
 | Yhteensopivuus ja sertifiointi        |                                                                                           | Kyllä       | Kyllä             |
-|                                      | SOC 1 Type 1 -sertifikaatti                                                                | Kyllä       | Nro              |
+|                                      | SOC 1 Type 1 -sertifikaatti                                                                | Kyllä       | Ei              |
 | Kustannuslaskenta                      |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Kustannuslaskennan Power BI -sisältöpaketti                                                 | Kyllä       | Nro              |
-|                                      | Kustannuslaskennan mobiilityötila                                                  | Kyllä       | Nro              |
+|                                      | Kustannuslaskennan Power BI -sisältöpaketti                                                 | Kyllä       | Ei              |
+|                                      | Kustannuslaskennan mobiilityötila                                                  | Kyllä       | Ei              |
 | Kustannushintojen hallinta                      |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Kustannushallinnan Power BI -sisältöpaketti                                                 | Kyllä       | Nro              |
+|                                      | Kustannushallinnan Power BI -sisältöpaketti                                                 | Kyllä       | Ei              |
 | Tietojen hallinta ja integraatio      |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Määritysperustainen laajennus                                                            | Kyllä       | En              |
+|                                      | Määritysperustainen laajennus                                                            | Kyllä       | Ei              |
 |                                      | Tietojen vienti omaan tietovarastoon                                                    | Kyllä       | Kyllä             |
 |                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | Kyllä             |
 |                                      | Tietojen integroinnit                                                                         | Kyllä       | Kyllä             |
@@ -104,44 +104,44 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |                                      | ER: Integrointi LCS:n kanssa                                                                  | Kyllä       | Ei              |
 |                                      | ER: Integrointi SharePointin kanssa                                                           | Kyllä       | Ei              |
 |                                      | ER: Integrointi Regulatory Configuration Services (RCS) -palvelun kanssa                              | Kyllä       | Ei              |
-|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Nro        | Kyllä             |
-|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Nro              |
-|                                      | PowerBI Desktop -integrointi                                                          | Nro        | Kyllä             |
-|                                      | Analyysityötilat                                                                     | Kyllä       | Nro              |
-|                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Nro              |
-|                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Nro              |
+|                                      | ER: Käyttää paikallista tiedostojärjestelmää ER-kokoonpanojen tallennuksena, joka on käytettävissä ER-tietovarastojen kautta | Ei        | Kyllä             |
+|                                      | PowerBI.com-integrointi                                                              | Kyllä       | Ei              |
+|                                      | PowerBI Desktop -integrointi                                                          | Ei        | Kyllä             |
+|                                      | Analyysityötilat                                                                     | Kyllä       | Ei              |
+|                                      | Älykkäät liiketoimintaprosessit: Suositukset                                             | Kyllä       | Ei              |
+|                                      | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla    | Kyllä       | Ei              |
 |                                      | SQL Server Reporting Services (SSRS) tukee skaalautumista                                 | Kyllä       | Kyllä             |
-|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | Nro              |
+|                                      | Telemetria siirretään pilveen                                                   | Kyllä       | Ei              |
 | Inventoinnin- ja varastonhallinta                 |                                                                                           | Kyllä       | Kyllä             |
 | Käyttöikäpalvelut                   |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Konfiguroitavat liiketoimintaprosessit                                                           | Kyllä       | En              |
+|                                      | Konfiguroitavat liiketoimintaprosessit                                                           | Kyllä       | Ei              |
 | Lokalisoinnit                        |                                                                                           | Kyllä       | Kyllä             |
 | Valmistus                        |                                                                                           | Kyllä       | Kyllä             |
 | Pääsuunnittelu ja ennusteet      |                                                                                           | Kyllä       | Kyllä             |
-| Suunnittelun optimointi                |                                                                                           | Kyllä       | Nro              |
+| Suunnittelun optimointi                |                                                                                           | Kyllä       | Ei              |
 | Mobiilisovellus, -työtilat ja -ympäristö |                                                                                           | Kyllä       | Kyllä             |
 | Office-integraatio                   |                                                                                           | Kyllä       | Kyllä             |
 | Organisaation hallinto          |                                                                                           | Kyllä       | Kyllä             |
 | Hankinta             |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Siirto ulkoiseen luetteloon ostoehdotuksesta                                   | Kyllä       | Nro              |
-|                                      | Osto- ja kulutusanalyysin Power BI -raportit                                                  | Kyllä       | Nro              |
+|                                      | Siirto ulkoiseen luetteloon ostoehdotuksesta                                   | Kyllä       | Ei              |
+|                                      | Osto- ja kulutusanalyysin Power BI -raportit                                                  | Kyllä       | Ei              |
 | Tuotetietojen hallinta       |                                                                                           | Kyllä       | Kyllä             |
 | Päätuotetiedot                  |                                                                                           | Kyllä       | Kyllä             |
 | Tuotanto                           |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Tuotannon suorituskyvyn Power BI -raportit                                                   | Kyllä       | Nro              |
+|                                      | Tuotannon suorituskyvyn Power BI -raportit                                                   | Kyllä       | Ei              |
 | Projektinhallinta ja kirjanpito    |                                                                                           | Kyllä       | Kyllä             |
 | Myynti                                |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Myynnin ja tuottavuuden suorituskyvyn Power BI -raportit                                      | Kyllä       | Nro              |
+|                                      | Myynnin ja tuottavuuden suorituskyvyn Power BI -raportit                                      | Kyllä       | Ei              |
 | Suojaus                             |                                                                                           | Kyllä       | Kyllä             |
 | Huoltohallinta                   |                                                                                           | Kyllä       | Kyllä             |
 | Toimitusketjun hallinta              |                                                                                           | Kyllä       | Kyllä             |
 | Kuljetustenhallinta            |                                                                                           | Kyllä       | Kyllä             |
-| Toimittajayhteistyö                 |                                                                                           | Kyllä       | En              |
+| Toimittajayhteistyö                 |                                                                                           | Kyllä       | Ei              |
 | Varastonhallinta                   |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Varaston mobiilisovellus                                                                      | Kyllä       | Kyllä             |
-|                                      | Varastoinnin Power BI -raportit                                                              | Kyllä       | Nro              |
+|                                      | Varastoinnin Power BI -raportit                                                              | Kyllä       | Ei              |
 | WWW-asiakasohjelma                           |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Tehtävien tallennustoiminto - tallenna tai lataa tehtävätallenteita BPM-kirjastosta                         | Kyllä       | En              |
+|                                      | Tehtävien tallennustoiminto - tallenna tai lataa tehtävätallenteita BPM-kirjastosta                         | Kyllä       | Ei              |
 | Tuki                              |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Nopea tuki Ohje ja tuki -valikon kautta                                             | Kyllä       | Ei              |
 
@@ -164,12 +164,12 @@ Lisätietoja paikallisissa ympäristöissä käytettävissä olevista ominaisuuk
 | Seuranta ja telemetria   |                                           | Kyllä       | Kyllä             |
 | Ympäristöyhteensopivuus     |                                           | Kyllä       | Kyllä             |
 | Päivitetään                  |                                           | Kyllä       | Kyllä             |
-|                            | Päivitysympäristöt                    | Kyllä       | Nro              |
+|                            | Päivitysympäristöt                    | Kyllä       | Ei              |
 | Jäljityksen jäsennin               |                                           | Kyllä       | Kyllä             |
 | PerfTimer                  |                                           | Kyllä       | Kyllä\*           |
 | Päivitä                    |                                           | Kyllä       | Kyllä             |
-|                            | Päivitä                                   | Kyllä       | Nro              |
-|                            | Aiempien versioiden päivittäminen ja tuki | Kyllä       | Nro              |
+|                            | Päivitä                                   | Kyllä       | Ei              |
+|                            | Aiempien versioiden päivittäminen ja tuki | Kyllä       | Ei              |
 | Visual Studion kehitys  |                                           | Kyllä       | Kyllä             |
 
 \* Paikallisessa ympäristössä PerfTimer näyttää vain asiakkaan tulokset.

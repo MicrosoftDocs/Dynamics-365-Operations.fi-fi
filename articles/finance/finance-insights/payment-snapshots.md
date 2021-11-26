@@ -2,7 +2,7 @@
 title: Tilannevedosten yleiskatsaus
 description: Tässä ohjeaiheessa kerrotaan tilannevedostoiminnosta. Sen avulla voit tallentaa kassavirtaennusteen analyysia tai kertymien kanssa vertailua varten. Kun luot kassavirtaennusteen, voit tallentaa ennusteen tilannevedokseksi. Tämän jälkeen voit muokata tilannevedosten avulla ennusteeseen sisältyviä tilejä tai verrata tilannevedoksen ennustetta todellisiin arvoihin.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bcaaa9fe13e36bbe71e29d82c9f22a4fff9248ef
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: a91300ac17b36d890840e6c0c3104fad5fce68f0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386560"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752754"
 ---
 # <a name="snapshots-overview"></a>Tilannevedosten yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tilannevedosten avulla organisaatiot voivat muokata ja tallentaa kassatilanteen ja kassaennusteet tiettynä ajankohtana. Voit vertailla tilannevedosta todellisiin taloustietoihin, tutkia varianssia ja käyttää näitä tietoja kassavirtaennusteiden parantamisessa. Tilannevedoksia voidaan käyttää seuraavasti:
 
@@ -40,8 +41,6 @@ Voit luoda tilannevedoksen valitsemalla **Uusi tilannevedos** **Kassatilanne**- 
 
 Kassan saapuvia ja lähteviä virtoja tilannevedoksessa voi muokata milloin tahansa. Kun saapuvan tai lähtevän virran summaa muokataan, päivitetty summa jaetaan alkuperäisen saldon muodostaneille rahatileille. Kun olet muokannut tilannevedoksen, tallenna muutokset valitsemalla **Tallenna**.
 
-Jos haluat vertailla useita tilannevedoksia, valitse **Vertaa tilannevedoksia**. Voit vertailla kahta tilannevedosta kerrallaan. Valitse kaksi vertailtavaa tilannevedosta ja valitse sitten **OK**. **Vertaa tilannevedoksia** -sivulla on valittujen tilannevedosten vertailu. Sivun yläosassa oleva kaavio näyttää näiden kahden tilannevedoksen välisten päällekkäisten kausien saapuvien ja lähtevien kassavirtojen ja palkkitilien saldojen vertailun. Alaosassa olevassa ruudukossa näkyy kahden ennusteen yksityiskohtainen vertailu kullekin maksuvalmiussummalle. Ruudukon **Varianssi**-sarake näyttää kauden saldojen erot.
-
-Jos haluat verrata todellisia taloushallinnon tuloksia ennusteeseen, joka tallennettiin tilannevedoksena, valitse **Vertaa todellisiin arvoihin**. **Vertaa tilannevedoksia** -sivulla on todellisten summien ja ennusteen vertailu. Sivun yläosassa oleva kaavio näyttää näiden kahden tilannevedoksen välisten päällekkäisten kausien saapuvien ja lähtevien kassavirtojen ja palkkitilien saldojen vertailun. Alaosassa olevassa ruudukossa näkyy kauden todellisten saldojen ja ennustetun saldon yksityiskohtainen vertailu kullekin maksuvalmiussummalle. Ruudukon **Varianssi**-sarake näyttää kauden todellisen saldon ja ennustetun saldon erot.
+Jos haluat verrata todellisia taloushallinnon tuloksia ennusteeseen, joka tallennettiin tilannevedoksena, valitse **Vertaa todellisiin arvoihin**. **Vertaa toteutuneisiin** -sivulla on toteutuneiden summien ja ennusteen vertailu. Sivun yläosassa oleva kaavio näyttää näiden kahden tilannevedoksen välisten päällekkäisten kausien saapuvien ja lähtevien kassavirtojen ja palkkitilien saldojen vertailun. Alaosassa olevassa ruudukossa näkyy kauden todellisten saldojen ja ennustetun saldon yksityiskohtainen vertailu kullekin maksuvalmiussummalle. Ruudukon **Varianssi**-sarake näyttää kauden todellisen saldon ja ennustetun saldon erot.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

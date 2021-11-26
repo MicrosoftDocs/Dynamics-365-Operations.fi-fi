@@ -101,7 +101,7 @@ Myyntipistelaajennuksen kehittäminen ModernPos.sln-, CloudPOs.sln-, POS.Extensi
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tästä versiosta lähtien Dynamics 365 headquarters -sovelluksen **Kaupankäynnin ajoitustyökalun parametrit** -lomakkeessa **Täyden tietojoukon luonnin aikaväli päivinä** poistetaan. Tästä versiosta alkaen kenttä poistetaan visuaalisesti, jotta arvoa ei voi muokata. Tämä pysyy arvona **0**. |
-| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Commerce |
 | **Käytön asetukset**              | Kaikki|
 | **Tila**                         | Vanhentunut. Älä käytä tätä kenttää tai muuta sen arvoa.|

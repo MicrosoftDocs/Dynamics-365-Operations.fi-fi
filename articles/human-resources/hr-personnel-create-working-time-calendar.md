@@ -1,8 +1,8 @@
 ---
 title: Kalenterien ja työaikojen luominen
-description: Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä artikkeli auttaa määrittämään työkalenterin työaikamallin perusteella.
-author: andreabichsel
-ms.date: 07/09/2019
+description: Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä aihe auttaa määrittämään työkalenterin työaikamallin perusteella.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalend
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e25acf541fe607d1b28ba8a0492186f2a8eaad949c84d8d61ba492a2072e38e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c1d299a77c5a02c531838aae0750dea87e89e34
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726990"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731665"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Kalenterien ja työaikojen luominen
 
@@ -26,15 +26,15 @@ ms.locfileid: "6726990"
 
 
 
-Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä artikkeli auttaa määrittämään työkalenterin työaikamallin perusteella. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
+Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä aihe auttaa määrittämään työkalenterin työaikamallin perusteella. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
 
 1. Valitse aloitussivulla **Resurssin elinkaaren hallinta**.
 2. Valitse **Kalenterit**.
 3. Valitse **Uusi**.
 4. Luokittele kalenteri **Kalenteri**-kentässä. Tämä on kalenterin tunnus, jota käytetään viitteenä, kun kalentereita määritetään esimerkiksi operatiiviseen resurssiin tai resurssiryhmään.  
-5. Syötä **Nimi**-kenttään kalenterin nimi.
+5. Kirjoita **Nimi**-kenttään kalenterin nimi.
 6. Lisää **Tavallisen työpäivän kesto tunteina** -kenttään numero.
-7. Varmista, että rivi on valittuna, ja valitse sitten **Työajat** toimintoruudusta.
+7. Varmista, että rivi on valittu, ja valitse sitten **Työajat** **toimintoruudussa**.
 8. Valitse **Kokoa työajat**. Luo työtunnit jokaiselle päivälle kautena, jolloin haluat ajoittaa töitä. Ajan mittaan voit luo työaikoja lisäkausille.  
 9. Syötä päivämäärä **Päivämäärästä**-kenttään. Tämä on ensimmäinen päivä, jolloin kalenterin on oltava avoinna.  
 10. Kirjoita päivämäärä **Päivämäärään**-kenttään. Tämä on viimeinen päivä, jolloin kalenteri on avoinna.  

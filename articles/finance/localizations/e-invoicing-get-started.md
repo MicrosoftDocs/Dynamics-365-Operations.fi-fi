@@ -2,7 +2,7 @@
 title: Sähköisen laskutuksen käytön aloittaminen
 description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen käytön Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700376"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779691"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Sähköisen laskutuksen käytön aloittaminen
 
@@ -57,7 +57,12 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
 Maan tai alueen mukaan sähköinen laskutustoiminto saattaa edellyttää tiettyjä konfiguraatiota. 
 
-Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloitusdokumentaatiossa.
+> [!NOTE]
+> Kun Suomen sähköinen laskutustoiminto otetaan käyttöön, hakujen sovelluskohtaisia parametreja ei tueta. Tämän ongelman voi ratkaista tarkastelemalla myynti- ja projektilaskumuotojen määrityksiä **Sähköinen raportointi** -moduulissa. Määritä **$PaymentMethodSubstitution**-yhdistämismäärityksen laskennallinen kenttä manuaalisesti ja sido kyseinen kenttä sitten myynti- ja projektilaskumuotojen **EpiPaymentMeansCode**-kenttään.
+>
+> Kun Italian sähköinen laskutustoiminto otetaan käyttöön, hakujen sovelluskohtaisia parametreja ei tueta. Ongelman voi ratkaista määrittämällä manuaalisesti **$NaturaReverseCharge**-yhdistämismäärityksen laskennallisen kentän **Sähköinen raportointi** -moduulissa.
+>
+> Muihin sijainteihin liittyvät ohjeet ovat omaa maata tai aluetta koskevissa aloittamisen ohjeissa.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Tuo mallin määrityksen konfiguraatioita sähköisestä raportoinnista
 
@@ -241,6 +246,14 @@ Yksityiskohtaiset vaiheet ovat maasi tai alueesi käytettävissä olenassa aloit
 
 3. Valitse lasku ruudukosta ja valitse sitten **Kysely** \> **Lähetystiedot**.
 
+## <a name="download-an-electronic-document-file"></a>Sähköisen asiakirjatiedoston lataaminen
+
+1. Siirry kohtaan **Organisaation hallinta** \> **Säännölliset** \> **Sähköiset asiakirjat** \> **Sähköisen asiakirjan lähetysloki**.
+2. Valitse **Asiakirjatyyppi**-kentässä taulukko, joka sisältää laskut.
+3. Valitse ensin asiakirja ruudukossa ja sitten **Sähköinen asiakirja** \> **Lataa tiedosto**. Sähköisen asiakirjatiedoston sisältävän arkiston lataamista ehdotetaan.
+
+> [!NOTE]
+> Ennen kuin tiedostoja voidaan ladata, **Vie tulokset** -vaihtoehto on otettava käyttöön liittyvässä toiminnossa RCS:n sähköisessä laskutustoiminnossa.
 
 ## <a name="related-topics"></a>Liittyvät aiheet
 

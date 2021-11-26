@@ -69,7 +69,7 @@ Organisaation raportointivaatimukset täyttävä dimension hierarkia voidaan mä
 
 | Dimensiohierarkian nimi | Dimensio    | Dimensiohierarkiatyypin nimi      | Käyttöoikeusluettelohierarkia |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisaatio             | Kustannuspaikat | Dimension luokitteluhierarkia | Nro                    |
+| Organisaatio             | Kustannuspaikat | Dimension luokitteluhierarkia | Ei                    |
 
 **Dimensiohierarkia**
 

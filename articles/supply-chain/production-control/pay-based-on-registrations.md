@@ -170,7 +170,7 @@ Valitse **Laskentaparametrit**-sivulla profiilin määritystyypiksi **Ylityö** 
 
 | Rekisterin määrittely | Profiilin määrittelylaji | Laskelma   | Asetus | Maksettu         | Asetus |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Työaika       | Ylityö                   | Vakioaika | Kyllä | Maksetaan ajasta     | Nro  |
+| Työaika       | Ylityö                   | Vakioaika | Kyllä | Maksetaan ajasta     | Ei  |
 |                    |                            | Maksetaan ajasta      | Kyllä | Maksetaan ylityöstä | Kyllä |
 
 Kun laskentaparametrit on oikaistu, seuraavat palkkatapahtumat luodaan.

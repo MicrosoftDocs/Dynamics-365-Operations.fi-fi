@@ -2,7 +2,7 @@
 title: Asiakkaan maksuennusteiden käyttäminen
 description: Tässä ohjeaiheessa kerrotaan edellytyksistä ja vaiheista, jotka Finance Insightsin kokeiluversion käyttäminen edellyttää.
 author: ShivamPandey-msft
-ms.date: 07/17/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,33 +15,29 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 156136508c5465dc9351434251afc3bbdb9c6052
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386287"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752781"
 ---
 # <a name="use-customer-payment-predictions"></a>Asiakkaan maksuennusteiden käyttäminen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten asiakkaan maksuennusteita käytetään. Ennen kuin käytät tätä toimintoa, varmista, että olet tehnyt sen määritysvaiheet. Lisätietoja on ohjeaiheessa [Asiakkaan maksuennusteiden käyttöönotto](enable-cust-paymnt-prediction.md).
 
-Voit tarkastella asiakkaan maksuennusteita **Asiakkaan luotonvalvonnan hallinta** -työtilassa ja kahdella uudella luettelosivulla, joiden nimet ovat **Maksuennusteet tapahtuman mukaan** ja **Maksuennusteet asiakkaan mukaan**.
+Voit tarkastella asiakkaan maksuennusteita **Hallitse asiakkaan luotonvalvontaa** -työtilassa ja kahdella uudella luettelosivulla: **Tapahtuman maksuennusteet** ja **Asiakkaan maksuennusteet**.
 
 ### <a name="manage-customer-credit-and-collections-workspace"></a>Asiakkaan luotonvalvonnan hallinta -työtila
 
-**Asiakkaan luotonvalvonnan hallinta** -työtila sisältää kaksi uutta ruutua, joiden nimet ovat **Maksuennuste tapahtuman mukaan** ja **Asiakkaat ja ennustetut myöhässä olevat saldot**.
+**Hallitse asiakkaan luotonvalvontaa** -työtila sisältää kaksi uutta ruutua: **Tapahtuman maksuennusteet** ja **Asiakkaan maksuennusteet**.
 
-- **Maksuennuste tapahtuman mukaan** -ruudussa on niiden avointen asiakastapahtumien määrä, joiden maksun todennäköisyys on alle 50 prosenttia **Ajoissa**-säilössä. Voit valita tämän ruudun, jos haluat avata **Maksuennusteet tapahtuman mukaan** -luettelosivun.
-- **Asiakkaat ja ennustetut myöhässä olevat saldot** -ruudussa on niiden asiakkaiden määrä, joiden kokonaissaldosta yli puolet (50 prosenttia) ennustetaan maksettavan myöhässä ja/tai erittäin paljon myöhässä. Valitse tämä ruutu, jos haluat avata **Maksuennuste asiakkaan mukaan** -luettelosivun.
+### <a name="transaction-payment-predictions-list-page"></a>Tapahtuman maksuennusteet -luettelosivu
 
-[![Asiakkaan luotonvalvonnan hallinta -työtila.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
-
-### <a name="payment-predictions-per-transaction-list-page"></a>Maksuennusteet tapahtuman mukaan -luettelosivu
-
-**Maksuennusteet tapahtuman mukaan** -luettelosivulla ovat näkyvissä avointen tapahtumien todennäköisyys **Ajoissa**-, **Myöhässä**- ja **Erittäin paljon myöhässä** -säilöissä. **Ajoissa-todennäköisyys**-sarakkeessa on kunkin ruudukon tapahtuman todennäköisyys sille, että lasku maksetaan ajoissa tai ennen eräpäivää. Jos todennäköisyys ajoissa tehdylle maksulle on alle 50 prosenttia, **Ajoissa-todennäköisyys**-sarakkeen prosenttiosuuden vieressä on punainen ympyrä. Se osoittaa myöhässä tehtävän maksun riskin.
+**Tapahtuman maksuennusteet** -luettelosivulla näkyy maksamisen todennäköisyys avoimien tapahtumien **Ajoissa**-, **Myöhässä**- ja **Erittäin paljon myöhässä** -säilöissä. **Ajoissa-todennäköisyys**-sarakkeessa on kunkin ruudukon tapahtuman todennäköisyys sille, että lasku maksetaan ajoissa tai ennen eräpäivää. Jos todennäköisyys ajoissa tehdylle maksulle on alle 50 prosenttia, **Ajoissa-todennäköisyys**-sarakkeen prosenttiosuuden vieressä on punainen ympyrä. Se osoittaa myöhässä tehtävän maksun riskin.
 
 [![Maksuennuste tapahtuman mukaan -sivu.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
@@ -55,9 +51,9 @@ Sivun oikealla puolella oleva **Liittyvät tiedot** -paneeli sisältää seuraav
 
 [![Liittyvät tiedot -ruudun maksuennusteiden graafiset ilmaisimet.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
-### <a name="payment-prediction-per-customer-list-page"></a>Maksuennuste asiakkaan mukaan -luettelosivu
+### <a name="customer-payment-predictions-list-page"></a>Asiakkaan maksuennusteet -luettelosivu
 
-**Maksuennuste asiakkaan mukaan** -luettelosivu sisältää avoimen kokonaissaldo ja summan, joka ennustetaan maksettavaksi **Ajoissa**-, **Myöhässä**- ja **Erittäin paljon myöhässä** -säilöissä.
+**Asiakkaan maksuennusteet** -luettelosivu sisältää avoimen kokonaissaldo ja summan, joka ennustetaan maksettavan **Ajoissa**-, **Myöhässä**- ja **Erittäin paljon myöhässä** -säilöissä.
 
 [![Maksuennusteet asiakkaan mukaan -sivu.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
@@ -81,11 +77,11 @@ Tässä tapauksessa maksut ennustetaan jokaiselle säilölle seuraavasti.
 
 Sivun oikealla puolella oleva **Liittyvät tiedot** -osa sisältää seuraavat ennusteen lisätiedot:
 
-- Ruudukossa valitun tapahtuman **Maksuennusteet**-pikavälilehdessä näkyvät maksuennusteiden tiedot **Ajoissa**-, **Myöhässä**- ja **Erittäin paljon myöhässä** -säilöissä. **Tärkeimmät tekijät** -osassa näkyvät maksuihin vaikuttaneet tärkeimmät tekijät. Tärkeimmät tekijät ovat valitun tapahtuman määritteet ja/tai kyseisen tapahtuman asiakas.
+- Ruudukossa valitun tapahtuman **Maksuennusteet**-pikavälilehdessä näkyvät maksuennusteiden tiedot **Ajoissa**-, **Myöhässä**- ja **Erittäin paljon myöhässä** -säilöissä.
 - **Customer Insights** -pikavälilehti sisältää nykyisen laskun, maksun ja perinnän tilastotiedot valitun tapahtuman asiakasta varten.
 - **Asiakashistoria**-pikavälilehdessä on asiakkaan maksuhistoria **Ajoissa**-, **Myöhässä**- ja **Erittäin paljon myöhässä** -säilöissä.
 
-**Tärkeimmät tekijät** -osan sekä **Customer Insights**- ja **Asiakashistoria**-pikavälilehtien tiedot auttavat maksuennusteiden ymmärtämisessä. Ne tuovat luottamusta ennusteiden tehokkuuteen.
+**Asiakkaan merkitykselliset tiedot**- ja **Asiakashistoria**-pikavälilehtien tiedot auttavat hahmottamaan maksuennusteita. Ne tuovat luottamusta ennusteiden tehokkuuteen.
 
 ## <a name="improving-the-accuracy-of-payment-predictions"></a>Maksuennusteiden tarkkuuden parantaminen
 
@@ -96,11 +92,5 @@ Voit tarkastella maksuennusteiden tarkkuutta siirtymällä kohtaan **Luotonvalvo
 Jos et ole tyytyväinen tarkkuuteen, avaa AI Builder -laajennuskokemus valitsemalla **Paranna mallint arkkuutta** -linkki. AI Builder -laajennuskokemuksen avulla voit valita kenttiä tai peruuttaa niiden valinnan ja näin valita kentät, jotka ovat tärkeimmät maksun todennäköisyyksien tarkassa ennustamisessa. Kun olet valmis, voit helposti kouluttaa ennustemallin ja julkaista muutokset. Juuri koulutettu ennustemalli valitaan automaattisesti Dynamics 365 Financen ennusteita varten.
 
 [![AI Builder -laajennuskokemus.](./media/ai-builder.png)](./media/ai-builder.png)
-
-## <a name="release-details"></a>Julkaisun tiedot
-
-Finance Insightsin julkinen esiversio on saatavilla käyttöönotoissa kokeilua varten Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
-
-Julkisen esiversion ominaisuudet voidaan ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei voi siirtää tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

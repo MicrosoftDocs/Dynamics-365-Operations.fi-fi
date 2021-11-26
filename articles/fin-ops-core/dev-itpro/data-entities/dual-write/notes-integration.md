@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e850b44479d36c16db3c993e196cd6bfdbc52ee7
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416598"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782353"
 ---
 # <a name="note-integration"></a>Muistiinpanojen integrointi
 
@@ -26,7 +26,7 @@ Liiketoimintaprosessien aikana Microsoft Dynamics 365 -käyttäjät usein kerä�
 
 Asiakastiedot voidaan luokitella seuraavilla tavoilla:
 
-+ **Toiminnan perustana toimivat tiedot, joita Dynamics 365 -käyttäjä käsittelee asiakkaan puolesta** – Esimerkiksi Contoso (Dynamics 365 -käyttäjä) pitää pelinäytöksen. Yksi Contoson asiakkaista (asiakas) haluaa osallistua pelinäytökseen. Asiakas pyytää Contoso-työntekijää varaamaan paikan pelinäytökseen. Varaus tehdään Contoson tapahtuman osallistujan kalenterissa.
++ **Toiminnan perustana toimivat iedot, joita Dynamics 365 -käyttäjä käsittelee asiakkaan puolesta** – Esimerkiksi Contoso (Dynamics 365 -käyttäjä) pitää pelinäytöksen. Yksi Contoson asiakkaista (asiakas) haluaa osallistua pelinäytökseen. Asiakas pyytää Contoso-työntekijää varaamaan paikan pelinäytökseen. Varaus tehdään Contoson tapahtuman osallistujan kalenterissa.
 + **Dynamics 365 -käyttäjän tiedot toiminnan pohjaksi** – Esimerkiksi Surface-yksikköä ostava asiakas määrittää erityisohjeet, jotka ilmaisevat, että laitteen tulee olla lahjapaketissa ennen toimitusta. Nämä ohjeet ovat toimintakelpoisia tietoja, joita pakkauksesta vastaavan Contoso-työntekijän tulisi käsitellä.
 + **Ei-toimittavissa olevat tiedot** – Asiakas esimerkiksi käy Contoso-myymälässä ja ilmaisee myyjälle kiinnostuksen *Halo*-peleihin ja -pelivälineisiin. Myyjä kirjoittaa nämä tiedot muistiinpanoihin. Tämän jälkeen tuotesuositusten ohjelma antaa asiakkaalle suosituksia tiedon perusteella.
 

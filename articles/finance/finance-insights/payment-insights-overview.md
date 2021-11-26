@@ -2,7 +2,7 @@
 title: Asiakkaan maksuennusteet
 description: Tässä ohjeaiheessa kerrotaan maksuennusteiden ominaisuudesta. Sen avulla saat lisätietoja asiakkaan tyypillisistä maksutavoista. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit ehkä aloitetaan normaalia aikaisemmin.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386658"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752733"
 ---
 # <a name="customer-payment-predictions"></a>Asiakkaan maksuennusteet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan maksuennusteiden ominaisuudesta. Sen avulla saat lisätietoja asiakkaan tyypillisistä maksutavoista. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit ehkä aloitetaan normaalia aikaisemmin.
 
@@ -67,11 +68,5 @@ Monissa yrityksissä perintäprosessi on ollut reaktiivinen toiminto. Toisin san
 ## <a name="methodology"></a>Metodologia
 
 Aiemmin on yleensä ollut vaikeaa kehittää ja käyttää tekoälyratkaisuja. Tämä prosessi vaati tiimin, joka sisältää datatieteilijöitä, aihealueen asiantuntijoita ja teknikoita, jotka käyttävät paljon aikaa käyttökelpoisen tekoälyratkaisun muotoiluun, kehittämiseen, käyttöönottamiseen ja ylläpitoon. Asiakkaan maksuennusteiden avulla on helppo ottaa käyttöön ja käyttää tekoälysovellusta Microsoft Dynamics 365 Financessa. Microsoft toimittaa valmiiksi pakattuja tekoälyratkaisuja, jotka on muodostettu Microsoft AI Builderin pohjalta. Tämän vuoksi käyttäjät voivat ottaa tekoälysovelluksen käyttöön yhdellä hiiren napsautuksella. Näin he saavat käyttöönsä älykkäät ennusteet. Jos et ole tyytyväinen ennusteiden tarkkuuteen, tehokäyttäjä voi lisätä (jälleen yhdellä hiiren napsautuksella) AI Builderin laajennuskokemuksen ja sitten valita ennusteiden muodostamiseen käytettäviä kenttiä tai poistaa niiden valinnan. Kun olet valmis, voit kouluttaa mallia ja julkaista muutokset. Juuri koulutettu malli valitaan automaattisesti ja ennusteet luodan Dynamics 365 Financessa.
-
-## <a name="release-details"></a>Julkaisun tiedot
-
-Finance Insightsin julkinen esiversio on saatavilla käyttöönotoissa kokeilua varten Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
-
-Julkisen esiversion ominaisuudet tulee ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei ehkä siirretä tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

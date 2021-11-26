@@ -75,14 +75,14 @@ Seuraavassa taulukossa on esimerkkejä siitä, miten vapautetun tuotteen eri ase
 
 | Vapautettu tuote: Toimittaja | Tilauksen oletusasetuset: Läpimenoaika | Nimikekattavuus: Ohita toimittaja | Nimikekattavuus: Ohita läpimenoaika | Kauppasopimus: Toimittaja | Kauppasopimus: Läpimenoaika | Kauppasopimus: Ohita läpimenoaika | Tuloksena oleva toimittaja | Tuloksena oleva läpimenoaika |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Nro | Nro | US003 | 3 | Nro | _ *US001** | **1** |
-| US001 | 1 | ***Kyllä: US002** _ | _*_Kyllä: 2_*_ | US003 | 3 | Nro | _ *US002** | **2** |
-| *(Tyhjä)* | 1 | Nro | Nro | ***US003** _ | _*_3_*_ | Nro | _ *US003** | **3** |
-| *(Tyhjä)* | ***1** _ | Nro | Nro | _*_US003_*_ | 3 | Kyllä | _ *US003** | **1** |
-| *(Tyhjä)* | ***1** _ | _*_Kyllä: US002_*_ | Nro | US003 | 3 | Nro | _ *US002** | **1** |
-| *(Tyhjä)* | ***1** _ | _*_Kyllä: US002_*_ | Nro | US003 | 3 | Nro | _ *US002** | **1** |
-| *(Tyhjä)* | 1 | Nro | Kyllä: 2 | ***US003** _ | _*_3_*_ | Nro | _ *US003** | **3** |
-| *(Tyhjä)* | 1 | Nro | ***Kyllä: 2** _ | _*_US003_*_ | 3 | Kyllä | _ *US003** | **2** |
+| ***US001** _ | _*_1_*_ | Ei | Ei | US003 | 3 | Ei | _ *US001** | **1** |
+| US001 | 1 | ***Kyllä: US002** _ | _*_Kyllä: 2_*_ | US003 | 3 | Ei | _ *US002** | **2** |
+| *(Tyhjä)* | 1 | Ei | Ei | ***US003** _ | _*_3_*_ | Ei | _ *US003** | **3** |
+| *(Tyhjä)* | ***1** _ | Ei | Ei | _*_US003_*_ | 3 | Kyllä | _ *US003** | **1** |
+| *(Tyhjä)* | ***1** _ | _*_Kyllä: US002_*_ | Ei | US003 | 3 | Ei | _ *US002** | **1** |
+| *(Tyhjä)* | ***1** _ | _*_Kyllä: US002_*_ | Ei | US003 | 3 | Ei | _ *US002** | **1** |
+| *(Tyhjä)* | 1 | Ei | Kyllä: 2 | ***US003** _ | _*_3_*_ | Ei | _ *US003** | **3** |
+| *(Tyhjä)* | 1 | Ei | ***Kyllä: 2** _ | _*_US003_*_ | 3 | Kyllä | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

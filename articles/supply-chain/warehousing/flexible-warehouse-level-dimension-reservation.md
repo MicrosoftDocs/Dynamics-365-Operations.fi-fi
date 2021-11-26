@@ -421,7 +421,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Ei käytettävissä</td>
 </tr>
 <tr>
-<td>Nro</td>
+<td>Ei</td>
 <td>
 <ol>
 <li>Valitse valikkovaihtoehto <strong>Ohita sijainti</strong> varastonhallintasovelluksessa, kun aloitat keräilytyön.</li>
@@ -719,7 +719,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 </tr>
 <tr>
 <td>Määritetään <strong>Lyhyt keräily</strong> -tyypin poikkeus, jossa <strong>Nimikkeen uudelleenosoitus</strong> = <strong>Manuaalinen</strong>, <strong>Varaston oikaisu</strong> = <strong>Kyllä</strong> ja <strong>Poista varaukset</strong> = <strong>Ei</strong>. Lisäksi <strong>Salli manuaalinen nimikkeiden uudelleenkohdistus</strong> -asetus on käytössä työn tekijän kohdalla.</td>
-<td>Nro</td>
+<td>Ei</td>
 <td>
 <ol>
 <li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastonhallintasovelluksessa, kun suoritat keräilytyötä.</li>
@@ -732,7 +732,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 </tr>
 <tr>
 <td>Määritetään <strong>Lyhyt keräily</strong> -tyypin poikkeus, jossa <strong>Nimikkeen uudelleenosoitus</strong> = <strong>Manuaalinen</strong>, <strong>Varaston oikaisu</strong> = <strong>Kyllä</strong> ja <strong>Poista varaukset</strong> = <strong>Kyllä</strong>. Lisäksi <strong>Salli manuaalinen nimikkeiden uudelleenkohdistus</strong> -asetus on käytössä työn tekijän kohdalla.</td>
-<td>Nro</td>
+<td>Ei</td>
 <td>
 <ol>
 <li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastonhallintasovelluksessa, kun suoritat keräilytyötä.</li>

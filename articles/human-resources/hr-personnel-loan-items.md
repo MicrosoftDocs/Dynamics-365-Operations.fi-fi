@@ -1,8 +1,8 @@
 ---
 title: Työntekijöille lainattujen kohteiden hallinta
 description: Lainakohteet ovat tietueita, joiden avulla esimiehet voivat seurata yrityksen työntekijöille lainaamia fyysisiä kohteita.
-author: andreabichsel
-ms.date: 06/20/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2399cd1c00f2c1f301b2d514c20cca00017465c90436cd01d44eb584f1b66ce6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9f9404ebbcbc7359ee9927d7a92e31808a478a
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760583"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728756"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Työntekijöille lainattujen kohteiden hallinta
 
@@ -29,6 +29,7 @@ ms.locfileid: "6760583"
 Lainakohteet ovat tietueita, joiden avulla esimiehet voivat seurata yrityksen työntekijöille lainaamia fyysisiä kohteita. 
 
 Seuraavissa kohdissa on esimerkkejä kohteista, joita yritys voi lainata työntekijöille:
+
 -   matkapuhelimia
 -   autopuhelimia
 -   tietokoneet.
@@ -37,7 +38,7 @@ Jokaisella fyysisellä kohteella on oltava vastaava lainakohde. Jokaisessa laina
 
 Kun kohde lainataan, kirjataan sen lainauspäivämäärä ja suunniteltu palautuspäivämäärä. Kun kohde palautetaan, kirjataan todellinen palautuspäivämäärä.
 
-Työntekijät voivat heille lainattujen kohteiden tietueita Työntekijän itsepalvelu -työtilassa. He voivat myös muokata aiemmin luotuja tietueita tai kirjata uusia lainakohteita, jos he saavat uusia fyysisiä kohteita.  Työnkulku voidaan määrittää reitittämään uusien ja aiemmin luotujen lainakohteiden muutokset hyväksyntäprosessin vaiheissa. 
+Työntekijät tarkastella heille lainattujen kohteiden tietueita **Työntekijän itsepalvelu** -työtilassa. He voivat myös muokata aiemmin luotuja tietueita tai kirjata uusia lainakohteita, jos he saavat uusia fyysisiä kohteita. Työnkulku voidaan määrittää reitittämään uusien ja aiemmin luotujen lainakohteiden muutokset hyväksyntäprosessin vaiheissa. 
 
 Esimiehet voivat tarkastella suorille alaisille lainattuja kohteita. Heille voidaan myös myöntää oikeus lisätä uusia lainakohteita työntekijöiden puolesta.
 

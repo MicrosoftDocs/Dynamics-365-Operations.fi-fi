@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576949"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777737"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfiguroi työkortti laitteita varten
 
@@ -34,19 +34,19 @@ Jotkin tässä ohjeaiheessa kuvatut asetukset on otettava käyttöön järjestel
 
 Jos haluat käyttää tätä toimintoa, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (järjestyksessä):
 
-1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
+1. Valmiiksi ilmoittamisen rekisterikilpi lisättiin työkorttilaitteeseen (Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on otettu oletusarvoisesti käyttöön.)
 1. Ota käyttöön rekisterikilven numeron automaattinen luonti, kun työkorttilaitteessa raportoidaan valmiiksi
 
 ### <a name="print-label"></a>Tulosta etiketti
 
 Jos haluat käyttää tätä toimintoa, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (järjestyksessä):
 
-1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
+1. Valmiiksi ilmoittamisen rekisterikilpi lisättiin työkorttilaitteeseen (Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on otettu oletusarvoisesti käyttöön.)
 1. Tulosta etiketti työkorttilaitteesta
 
 ### <a name="allow-locking-of-touch-screen"></a>Salli kosketusnäytön lukitseminen
 
-Jos haluat käyttää tätä toimintoa, ota seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Jos haluat käyttää sitä, varmista, että seuraava toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Ominaisuus, jolla voi lukita työkorttilaitteen ja työkorttipäätteen desinfiointia varten
 

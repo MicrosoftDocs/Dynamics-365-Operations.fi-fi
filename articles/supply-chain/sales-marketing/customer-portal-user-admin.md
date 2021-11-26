@@ -88,9 +88,9 @@ Seuraavasta taulukosta ilmenee, mitkä myyntitilaukset kunkin verkkoroolin käyt
 
 | Myyntitilaus | Järjestelmänvalvoja | Asiakkaan&nbsp;X asiakasedustaja | Valtuutettu käyttäjä: Jane | Valtuutettu käyttäjä: Sam | Luvattomat käyttäjät: May |
 |---|---|---|---|---|---|
-| Asiakas&nbsp;X Tilaaja:&nbsp;Jane | Kyllä | Kyllä | Kyllä | Nro | Nro |
-| Asiakas&nbsp;X Tilaaja:&nbsp;Sam | Kyllä | Kyllä | Nro | Kyllä | Nro |
-| Asiakas&nbsp;Y Tilaaja:&nbsp;May | Kyllä | Nro | Nro | Nro | Nro |
+| Asiakas&nbsp;X Tilaaja:&nbsp;Jane | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| Asiakas&nbsp;X Tilaaja:&nbsp;Sam | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| Asiakas&nbsp;Y Tilaaja:&nbsp;May | Kyllä | Ei | Ei | Ei | Ei |
 
 > [!NOTE]
 > Vaikka sekä Sam että Jane ovat yhteyshenkilöitä, jotka työskentelevät asiakas X:ssä, he näkevät vain itse asettamiaan tilauksia eikä mitään muuta. Vaikka Maylla on järjestelmässä tilaus, hän ei näe tilausta asiakasportaalissa, koska hän on luvaton käyttäjä. (Lisäksi hän on asettanut tilauksen jonkin muun kanavan kautta kuin asiakasportaali.)

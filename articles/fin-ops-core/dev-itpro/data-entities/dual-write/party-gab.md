@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386682"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781341"
 ---
 # <a name="party-and-global-address-book"></a>Osapuolen ja yleinen osoitekirja
 
@@ -30,12 +30,12 @@ Osapuoli on henkilö tai organisaatio, joka osallistuu liiketoimintaan. Käyttä
 
 + **Työntekijä** – työntekijä. Esimerkkinä on Contoson työntekijä.
 + **Toimittaja** – Toimittajaorganisaatio tai elinkeinonharjoittaja, joka toimittaa tavaroita tai palveluja yritykselle. Jos Fabrikam esimerkiksi myy Contosolle toimituksia, Fabrikam on Contoson toimittaja.
-+ **Yhteyshenkilö** – yhteyshenkilö. Jos Contoso esimerkiksi ostaa toimituksia Fabrikamista, Contoso-yrityksen työntekijät ottavat yhteyttä Fabrikamin yhteyshenkilöön.
++ **Yhteyshenkilö** – yhteyshenkilö. Jos Contoso esimerkiksi ostaa toimituksia Fabrikamista, Contoson työntekijät ottavat yhteyttä Fabrikamin yhteyshenkilöön.
 + **Asiakas** – asiakas on henkilö tai yritys, joka ostaa tavaroita yritykseltä. Jos Contoso esimerkiksi ostaa toimituksia Fabrikamista, Contoso on Fabrikamin asiakas.
 
 Osapuolimallia käytetään usein keskitasoisten ja monimutkaisten organisaatioiden ja ihmisten välisten suhteiden kuvaamiseen erityisesti silloin, kun osapuolilla on enemmän kuin yksi rooli. Joitakin yleisiä esimerkkejä:
 
-+ Osapuoli voi olla sekä asiakas että toimittaja. Esimerkiksi Pohjois-Amerikassa Fabrikam myy sähköjohtoja Contosolle ja ostaa Contosolta koottuja kaiuttimia. Euroopassa Fabrikam myy varaosia Contosolle, mutta ei osta mitään Contosolta.
++ Osapuoli voi olla sekä asiakas että toimittaja. Esimerkiksi Pohjois-Amerikassa Fabrikam myy sähköjohtoja Contosolle ja ostaa Contosolta koottuja kaiuttimia. Euroopassa Fabrikam myy varaosia Contosolle mutta ei osta mitään Contosolta.
 + Osapuoli voi olla sekä työntekijä että asiakas. Contoson työntekijä esimerkiksi ostaa Contosolta elektroniikkaa omaan käyttöön.
 + Henkilön ja organisaation välillä voi olla monta-moneen-suhteita (N:N). Esimerkiksi Fabrikam toimittaa huoltoasiantuntijoita, ja sen palveluksessa on sijoittelun koordinaattori. Sijoittelun koordinaattori löytää huoltoasiantuntijoita Fabrikamin useiden asiakkaiden työpyyntöihin. Contoso on yksi Fabrikamin asiakkaista. Kun Contoso tarvitsee palveluasiantuntijan, se ottaa yhteyttä sijoittelun koordinaattoriin, joka tämän jälkeen edistää pyyntöä. Koska sijoittelun koordinaattori käsittelee kaikkien asiakkaiden pyyntöjä, tähän liittyy N:N-suhde.
 

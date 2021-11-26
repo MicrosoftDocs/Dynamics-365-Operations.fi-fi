@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579637"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778030"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Manuaalisten oikaisujen tekeminen perusennusteeseen
 
@@ -67,7 +67,7 @@ Voit avata **Kysynnän ennusteen tiedot** -sivun nähdäksesi ennustetta koskevi
 
 **Huomautuksia:**
 
--   Jos otat **Ennustemallin valinnan käyttöön kysynnän ennusteen tiedoissa** ominaisuuksien hallinnasta, voit valita ennustemallit, jotka sisällytetään historialliseen ennusteeseen **Kysynnän ennusteen tiedot** -sivulla.
+-   Jos otat **Ennustemallin valinnan käyttöön kysynnän ennusteen tiedoissa** ominaisuuksien hallinnasta, voit valita ennustemallit, jotka sisällytetään historialliseen ennusteeseen **Kysynnän ennusteen tiedot** -sivulla. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
 -   Sivun **Ennuste** -kohdassa näkyvä luottamusväli kuvaa luottamusvälin ylärajan ja luottamusvälin alarajan erotusta. Jos haluat nähdä ylärajan ja alarajan arvot, pidä kohdistinta **Historiallinen kysyntä ja ennuste graafisesti** -osiossa olevan kaavion yläpuolella.
 -   Jos käytät kysynnän ennustamisen Microsoft Azuren automaattianalyysiä, voit määrittää luotettavuustasoprosentin, joka luodulla ennusteella tulee olla. Luottamusväli koostuu arvoalueesta, joka toimii hyvinä ennusteina kysynnän ennusteelle. 95 prosentin luotettavuustasoprosentti osoittaa, että on 5 %:n riski, että kysynnän ennuste on luottamusvälin ulkopuolella.
 

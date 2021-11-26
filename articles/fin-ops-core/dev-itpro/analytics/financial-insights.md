@@ -89,16 +89,16 @@ Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:
 
 | Ominaisuus                                                   | Financial Reporting                                               | Talousanalyysi |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Muokkaa oletusraportteja**                                 | Kyllä                                                               | Nro |
-| **Luo uusia raportteja**                                   | Kyllä                                                               | Nro |
-| **Tulosta raportit**                                        | Kyllä                                                               | En |
+| **Muokkaa oletusraportteja**                                 | Kyllä                                                               | Ei |
+| **Luo uusia raportteja**                                   | Kyllä                                                               | Ei |
+| **Tulosta raportit**                                        | Kyllä                                                               | Ei |
 | **Vie Exceliin**                                      | Kyllä                                                               | Rajoitettu raakatietojen vienti Exceliin, muotoilematon raportti |
-| **Raportointihierarkian/organisaatiohierarkian tuki**   | Kyllä                                                               | En |
+| **Raportointihierarkian/organisaatiohierarkian tuki**   | Kyllä                                                               | Ei |
 | **Alareskontran tietojen raportti**                             | Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen                              | Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne. |
 | **Raportointivaluutta**                                   | Kyllä Kirjanpitovaluutta ja muuntaminen raportointivaluutaksi       | Ei Vain kirjanpitovaluutta |
 | **Suojaus**                                             | Kyllä Financen ja raporttipuun suojauksen noudattaminen | Rajoitettu kaikkien yritysten raporttien näyttäminen (Finance and Operationsin suojauksesta riippumatta) tai vain aktiivinen yritys |
-| **Erilaisten tilikarttojen ja tilivuosien tuki** | Kyllä                                                               | En |
-| **Ulkoisten tietojen raportti**                              | En                                                                | En |
+| **Erilaisten tilikarttojen ja tilivuosien tuki** | Kyllä                                                               | Ei |
+| **Ulkoisten tietojen raportti**                              | Ei                                                                | Ei |
 | **Konsolidointien tuki**                               | Kyllä                                                               | Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö |
 
 Seuraavat tilinpäätökset ovat käytettävissä:

@@ -1,8 +1,8 @@
 ---
 title: Pyydä poissaoloaikaa
 description: Pyydä poissaoloaikaa Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8fead1105412e5fe967a19632e1875058f4026c722140eaed056c5412c6558f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e12ac21e80c46f5cb5f231aadab7272fc279194
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756097"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771409"
 ---
 # <a name="request-time-off"></a>Pyydä poissaoloaikaa
 
@@ -42,7 +42,7 @@ Voit lähettää aikaa koskevia pyyntöjä, tarkastella lomaa ja jättää saldo
 
 6. Valitse **Lähetä**, kun olet valmis lähettämään pyyntösi. Muussa tapauksessa valitse **Tallenna vedos**.
 
-Työntekijät, jotka lähettävät uuden lomapyynnön, voivat muodostaa lomapyyntönsä valitsemalla eri lomatyyppejä. Kaikilla yksittäisen lomapyynnön osana valituilla lomatyypeillä on kuitenkin oltava sama lomayksikkö. Työntekijät voivat tarkastella kunkin lomatyypin lomayksikköä **Pyydä vapaa-aikaa** -lomakkeessa.
+Työntekijät, jotka lähettävät uuden lomapyynnön, voivat muodostaa lomapyyntönsä valitsemalla eri lomatyyppejä. Kaikilla yksittäisen lomapyynnön osana valituilla lomatyypeillä on kuitenkin oltava sama lomayksikkö. Työntekijät voivat tarkastella kunkin lomatyypin lomayksikköä **Pyydä vapaata** -sivulla.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Lisää liite aiemmin luotuun pyyntöön
 
@@ -58,13 +58,13 @@ Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös 
 
 1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
-2. Voit tarkastella hyväksyttyjä lomapyyntöjä valitsemalla **Hyväksytty loma-aika**. Voit tarkastella odottavia lomapyyntöjä valitsemalla **Loma-aika pyynnöt**.
+2. Voit tarkastella hyväksyttyjä lomapyyntöjä valitsemalla **Hyväksytty poissaolo**. Voit tarkastella odottavia poissaolopyyntöjä valitsemalla **Poissaolopyynnöt**.
 
 ## <a name="cancel-time-off-requests"></a>Poissaolopyyntöjen peruuttaminen
 
 1. Valitse **työntekijän itsepalvelu** -työtilassa **Näytä poissaoloaika** **Vapaasaldot**-ruudusta.
 
-2. Valitse **Poissaolo**-lomakkeesta yksi tai useita peruutettavia aikapyyntöjä.
+2. Valitse **Poissaolo**-sivulla yksi tai usea peruutettavaa poissaolopyyntö.
 
 3. Valitse **Peruuta**-painike.
 
