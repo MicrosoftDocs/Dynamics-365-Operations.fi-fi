@@ -47,7 +47,7 @@ IFRS 16 -kirja määritetään niin, että se on yhdenmukainen IFRS 16 -kirjanpi
 | Nykyinen arvo / resurssin käyvän arvon määrittäminen | 0,00           |
 | Lyhytaikainen kynnysarvo                    | 12             |
 | Arvoltaan vähäinen kynnysarvo                     | 5,000.00       |
-| Maksu toimittajalle                           | Nro             |
+| Maksu toimittajalle                           | Ei             |
 
 **Lakisääteinen kirja**
 
@@ -64,7 +64,7 @@ Lakisääteinen kirja on käteisvaroihin perustuva kirja, jonne yritys kirjaa vu
 | Nykyinen arvo / resurssin käyvän arvon määrittäminen | 0,00        |
 | Lyhytaikainen kynnysarvo                    | 0           |
 | Arvoltaan vähäinen kynnysarvo                     | 0           |
-| Maksu toimittajalle                           | Nro          |
+| Maksu toimittajalle                           | Ei          |
 
 **Lakisääteinen palautuskirja**
 
@@ -81,7 +81,7 @@ Lakisääteinen palautuskirja määritetään samalla tavalla kuin lakisäätein
 | Nykyinen arvo / resurssin käyvän arvon määrittäminen | 0,00                           |
 | Lyhytaikainen kynnysarvo                    | 0                              |
 | Arvoltaan vähäinen kynnysarvo                     | 0                              |
-| Maksu toimittajalle                           | Nro                             |
+| Maksu toimittajalle                           | Ei                             |
 
 Tässä esimerkissä on luotu vuokraus, jolla on seuraavat asetukset **Yleistä**- ja **Maksuaikataulurivit**-välilehdissä.
 
