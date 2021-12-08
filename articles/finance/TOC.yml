@@ -62,10 +62,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Varastoinnin määrittäminen paikallisille ympäristöille
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations -sovellukset Ranskassa
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Uudet ja muuttuneet ominaisuudet
               items:
                 - name: Finance and Operations -sovellusten uudet ja muuttuneet ominaisuudet
@@ -496,10 +492,12 @@
               href: accounts-receivable/process-collection-letters-example.md
             - name: Määritä ja luo myyntireskontran erääntymistiedot
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Asiakkaan erääntymistilannevedos
+            - name: Myyntireskontran erääntymistilannevedos
               href: accounts-receivable/customer-aging-snapshot.md
             - name: Myyntireskontran erääntymisraportti
               href: accounts-receivable/customer-aging.md
+            - name: Myyntireskontran erääntymistietojen tallennustila
+              href: accounts-receivable/customer-aging-data-storage.md
             - name: Poiskirjauksen kirjauskansion luominen asiakkaalle
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Lisähuomautusten hallinta
@@ -1476,6 +1474,10 @@
                           items:
                             - name: ALV-ilmoitus
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Saksan raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                              href: /localizations/emea-deu-vat-declaration-germany.md
                         - name: Alankomaiden raportointi
                           items:
                             - name: ALV-ilmoitus
@@ -2160,11 +2162,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Toisen vuoden lisähankintojen poistojen oikaisut
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: ALV-ilmoitus
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: ALV-ilmoituksen antaminen sähköisesti (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Saksalainen Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Saksan ALV-ilmoitus
+                - name: ALV-ilmoitus
                   href: localizations/emea-de-vat-declaration.md
                 - name: Asiakkaiden sähköiset laskut -raportti
                   href: localizations/emea-deu-e-invoices.md

@@ -458,6 +458,16 @@
                   href: help/language-locale.md
                 - name: 'Ohjeen laajentaminen, mukauttaminen ja käyttäminen yhdessä'
                   href: help/contributor-guide.md
+            - name: Käyttöönotossa huomioitavaa
+              items:
+                - name: Maakohtaisia ja paikallista pilvipalvelukäyttöönottoja Dynamics 365 Financelle ja Dynamics 365 Supply Chain Managementille
+                  href: deployment/deployment-options-geo.md
+                - name: Finance ja Supply Chain Management Yhdysvaltain Government Community Cloudissa (GCC)
+                  href: deployment/us-gcc-deployment.md
+                - name: 21Vianetin ylläpitämät Finance ja Supply Chain Management -sovellukset Kiinassa
+                  href: deployment/china-local-deployment.md
+                - name: Finance and Operations -sovellukset Ranskassa
+                  href: deployment/france-local-deployment.md
         - name: Kehittäminen ja mukauttaminen
           items:
             - name: Kehittäminen ja mukauttaminen – aloitussivu
@@ -1118,6 +1128,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Osapuolen tietojen tarkasteleminen
+                      href: data-entities/dual-write/view-party.md
                     - name: Huomautusten integrointi
                       href: data-entities/dual-write/notes-integration.md
                     - name: Määritysviite
@@ -1582,9 +1594,9 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: Eräkäsittely ja eräpalvelimet
                   href: sysadmin/batch-server-overview.md
-                - name: Erätöiden luominen
+                - name: Luo erätyöt
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Automaattisten uudelleenyritysten ottaminen käyttöön erätöissä
+                - name: Eräuudelleenyritysten ottaminen käyttöön
                   href: sysadmin/retryable-batch.md
                 - name: Erätyön kopiointi
                   href: sysadmin/copy-batch-job.md

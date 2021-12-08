@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchangen käyttöönotto-ohje
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations -sovellukset Ranskassa
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Hanki tukea
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Päivitys ja N-1-tuki
@@ -1272,8 +1268,10 @@
               href: store-performance-information.md
             - name: 'RFM-analyysin (äskettäisyys, toistuvuus ja rahallinen arvo) määrittäminen'
               href: set-up-rfm-analysis.md
-            - name: Microsoft Clarityn määrittäminen Dynamics 36 Commercessa
+            - name: Microsoft Clarityn määrittäminen Dynamics 365 Commercessa
               href: set-up-clarity.md
+            - name: Commercen analytiikka (esiversio)
+              href: commerce-analytics.md
         - name: Maailmanlaajuinen toiminta
           items:
             - name: Commerce-kanavan kirjanpidon integroinnin yleiskatsaus
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Venäjän asiakastietojen hallinta
                   href: localizations/rus-customer-information.md
+            - name: Saudi-Arabia
+              items:
+                - name: QR-koodien luominen ja niiden tulostaminen kuitteihin Saudi-Arabiaan
+                  href: localizations/emea-sau-qr-code.md
             - name: Ruotsi
               items:
                 - name: Kassakoneen toiminnot
@@ -2536,6 +2538,8 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Dynamics 365 Commercen kehittämisen vianetsinnän parhaat käytännöt
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Verkkokaupan sivujen testaaminen muistivuotojen varalta
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: Retail SDK
               items:
                 - name: 'Siirrä Commercen SDK:hon'
