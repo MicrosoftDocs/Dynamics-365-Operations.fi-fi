@@ -1,59 +1,45 @@
 ---
-title: Lähetä ja hyväksy projektibudjetti
+title: Projektibudjettityönkulun luominen ja lähettäminen
 description: Tämä menettely osoittaa, miten voit luoda ja lähettää projektin budjetin.
 author: Henrikan
-ms.date: 08/13/2019
-ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
+ms.date: 11/22/2021
+ms.topic: article
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: Service industries
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16a4f8102a954fa8337aa7f5de0f8dcd2b3a288
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6f410d824be717537e6dfb5dbd8b71ff7d992e0a
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569367"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860406"
 ---
-# <a name="submit-and-approve-project-budget"></a>Lähetä ja hyväksy projektibudjetti
+# <a name="create-and-submit-a-project-budget-workflow"></a>Projektibudjettityönkulun luominen ja lähettäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tämä menettely osoittaa, miten voit luoda ja lähettää projektin budjetin. 
+Kun luot projektibudjettia, voit antaa projektin arvioidut tuotot ja kustannukset ja hallita sitten toteutuneita projektitapahtumia näiden arvojen avulla. Projektin budjetoinnissa kaikki alkuperäisen budjetit ja muutokset on käsiteltävä projektityönkulun läpi hyväksyttäväksi. Työnkulku parantaa budjetoinnin hallintaa ja luo muutoshistoriatietueen. Kun [luot projektin](/dynamicsax-2012/appuser-itpro/create-a-project), käytä tätä menetelmää, kun haluat luoda ja lähettää budjetin.
 
-Kun luot projektibudjettia, voit antaa projektin arvioidut tuotot ja kustannukset ja hallita sitten toteutuneita projektitapahtumia niiden avulla. Projektin budjetoinnissa kaikki alkuperäiset budjetit ja muutokset on lähettävä projektityönkulkuun hyväksyttäväksi. Työnkulku parantaa prosessin hallintaa ja luo muutoshistoriatietueen.
-
-Tämän tehtävä luotiin USSI-tietojoukkoa.
-
-1. Siirry **siirtymisruudussa** kohtaan **Moduulit > Projektinhallinta ja kirjanpito > Projektit > Kaikki projektit**.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Valitse **toimintoruudussa** **Suunnitelma**.
-5. Valitse **Projektibudjetti**.
-6. Kirjoita **Kuvaus**-kenttään arvo.
-7. Laajenna **Kustannukset**-pikavälilehti.
-8. Valitse **Uusi**.
-9. Valitse **Tapahtumatyyppi**-kentässä vaihtoehto.
-10. Anna tai valitse **Luokka**-kentässä arvo.
-11. Anna luku **Alkuperäinen budjetti** -kentässä.
-12. Laajenna **Tuotot**-pikavälilehti.
-13. Valitse **Uusi**.
-14. Merkitse valittu rivi luettelossa.
-15. Valitse **Tapahtumatyyppi**-kentässä vaihtoehto.
-16. Anna tai valitse **Luokka**-kentässä arvo.
-17. Anna luku **Alkuperäinen budjetti** -kentässä.
-18. Valitse **Tallenna**.
-19. Valitse **Työnkulku**.
-20. Valitse **Lähetä**.
-21. Kirjoita **Kommentti**-kenttään arvo.
-22. Valitse **Lähetä**.
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+1. Valitse **Moduulit** > **Projektinhallinta ja kirjanpito** > **Projektit** > **Kaikki projektit**.
+1. Valitse projekti luettelosta.
+1. Valitse projektin tietosivulla **Suunnitelma**-välilehti.
+1. Valitse **Budjetti**-ryhmästä **Projektin budjetti**.
+1. Kirjoita **Yleinen**-pikavälilehdelle seuraavat tiedot:
+   - Kirjoita **Kuvaus**-ruutuun arvo.
+   - Valitse **alkuperäisen budjetin** asetus.
+   - Valitse **jäljellä olevan budjetin** asetus.
+1. Laajenna **Kustannukset**-pikavälilehti ja valitse **Uusi**. Määritä sitten seuraavat asetukset:
+   - Valitse **Tapahtumatyyppi**-vaihtoehto.
+   - Valitse asianmukainen **Luokka**.
+   - Kirjoita arvo kohtaan **Alkuperäinen budjetti**.
+1. Laajenna **Tuotot**-pikavälilehti ja valitse **Uusi**. Määritä sitten seuraavat asetukset:
+   - Valitse **Tapahtumatyyppi**-vaihtoehto.
+   - Valitse **Luokka**.
+   - Kirjoita arvo kohtaan **Alkuperäinen budjetti**.
+1. Valitse **Tallenna**.
+1. Valitse **Työnkulku \> Lähetä**.
+1. Kirjoita **Tarkista alkuperäinen budjetti -työnkulku – Lähetä**-sivulla **Kommentti** ja valitse **Lähetä**.

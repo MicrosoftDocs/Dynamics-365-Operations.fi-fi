@@ -2,7 +2,7 @@
 title: Finance Insightsin määritykset
 description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
 author: ShivamPandey-msft
-ms.date: 1/03/2021
+ms.date: 11/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5668d3ddff777645b4f1c6608f025d0c5a63208a
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752975"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827025"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insightsin määritykset
 
@@ -43,14 +43,34 @@ Määritä ympäristöt näiden ohjeiden avulla.
 
 2. Jos Finance Insightsia määritetään eristysympäristössä, tuotantotiedot on ehkä kopioitava tähän ympäristöön, jotta ennusteet toimisivat. Ennustemallissa käytetään useiden vuosien tietoja ennusteiden luomiseen. Contoso-esittelytiedot eivät sisällä riittävästi historiatietoja ennustemallin kouluttamiseen. 
 
+## <a name="configure-your-azure-ad-tenant"></a>Azure AD -vuokraajan konfiguroiminen
+
+Azure Active Directory (Azure AD) on määritettävä niin, että sitä voidaan käyttää Dataversen ja Microsoft Power Platform -sovellusten kanssa. Määritys edellyttää **ympäristön esimiehen** tai **projektin omistajan** roolin määritettynä käyttäjälle LCS:n **Projektin suojausrooli** -kentässä.
+
+Tarkista, että seuraavat asetukset on tehty:
+
+- Sinulla on **järjestelmänvalvojan** ja **järjestelmän mukauttajan** käyttöoikeus Power Portal -hallintakeskuksessa.
+- Finance Insights -lisäosan asentavalla käyttäjällä on Dynamics 365 Finance -lisenssi tai vastaava lisenssi.
+
+Seuraavat Azure AD -sovellukset on rekisteröity Azure AD:ssä.
+
+|  Hakemus                             | Sovelluksen tunnus                               |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
+    
 ## <a name="configure-dataverse"></a>Määritä Dataverse
 
 Näitä ohjeita noudattamalla voit määrittää Dataversen Finance Insightsille.
 
 - Avaa ympäristösivu LCS:ssä ja tarkista, että **Power Platform -integrointi** -osa on jo asennettu.
 
-    - Jos se on jo asennettu, Dataverse-ympäristön nimi, joka on linkitetty Finance-ympäristöön, pitäisi olla luettelossa.
-    - Jos sitä ei ole vielä määritetty, valitse **Määritys**. Dataverse-ympäristön määrittäminen voi kestää tunnin. Kun ympäristö on määritetty, Finance-ympäristöön linkitetyn Dataverse-ympäristön nimen pitäisi olla luettelossa.
+    - Dataverse on jo asennettu; Dataverse-ympäristön nimi, joka on linkitetty Finance-ympäristöön, pitäisi olla luettelossa.
+    - Jos Dataversea ei ole vielä määritetty, valitse **Määritys**. Dataverse-ympäristön määrittäminen voi kestää tunnin. Kun määritys on valmis, Finance-ympäristöön linkitetyn Dataverse-ympäristön nimen pitäisi olla luettelossa.
+    - Jos integrointi on määritetty aiemmin luodussa Microsoft Power Platform -ympäristössä, varmista järjestelmänvalvojalta, ettei linkitetty ympäristö ole poissa käytöstä.
+
+        Lisätietoja on kohdassa [Power Platform -integroinnin käyttöönotto](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). 
+
+        Jos haluat käyttää Microsoft Power Platform -hallintasivustoa, siirry osoitteeseen <https://admin.powerplatform.microsoft.com/environments>.
 
 ## <a name="configure-the-finance-insights-add-in"></a>Finance Insights -lisäosan määrittäminen
 

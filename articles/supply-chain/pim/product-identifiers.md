@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1a311b4a304984044a1c3bd3924c129821afbbb9
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569670"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825372"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset
 
@@ -39,7 +39,7 @@ Dynamics 365 Supply Chain Managementissa tuotteen ensisijainen tunniste on tuote
 
 Tuotenumeroa ei usein ole luotu alun perin Dynamics 365 Supply Chain Management -sovelluksessa. Sen sijaan se liitetään tuotteen elinkaaren hallinta (PLM)- tai tuotteen tiedonhallinta (PDM) -järjestelmään. Tässä tapauksessa tietoyksiköitä käytetään tuotteiden ja tuotevarianttien tuonnissa. Supply Chain Management käyttää sitten numeroita kaikissa toiminnoissa.
 
-Kiinnitä erityistä huomiota tuotenumeroihin Supply Chain Managementin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Hyvässä tuotetunnuksessa on enintään 15 merkkiä. Merkkejä tulisi olla alle 10 ja luokittelevia merkkejä enintään viisi. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
+Kiinnitä erityistä huomiota tuotenumeroihin Supply Chain Managementin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Tuotetunnuksen pitäisi yleensä olla enintään 20 merkkiä, mutta yleensä on suositeltavaa käyttää alle 10:tä merkkiä ja enintään 5:tä luokittelumerkkiä. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
 
 Kun käytät Microsoft Dataversea, Supply Chain Managementissa oleva tuotenumero on tuotenumero myös Microsoft Dataversessa. Tuotevariantit synkronoidaan Dataverseen erillisinä tuotteina.
 

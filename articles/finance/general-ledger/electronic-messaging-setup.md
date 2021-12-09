@@ -2,7 +2,7 @@
 title: Sähköisten sanomien määrittäminen
 description: Tässä ohjeaiheessa on tietoja sähköisten sanomien (EM) ominaisuuden määrittämisestä.
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752172"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860555"
 ---
 # <a name="set-up-electronic-messages"></a>Sähköisten sanomien määrittäminen
 
@@ -34,6 +34,7 @@ Jos et tuo tietoyksikköpakettia, voit määrittää EM-ominaisuuden manuaalises
 - [Lisäkentät](#additional)
 - [Suoritettavan luokan asetukset](#executable)
 - [Tietueiden täyttötoiminnot](#populate)
+- [Tietueiden täyttäminen useista yrityksistä](#multiple-companies-populate)
 - [Verkkosovellukset](#applications)
 - [Verkkopalvelun asetukset](#settings)
 - [Sanoman käsittelytoiminnot](#actions)
@@ -139,6 +140,38 @@ Lisää **Tietolähteiden määritys** -pikavälilehdessä rivi jokaiselle prose
 | Yhtiö                | Tämä kenttä on käytettävissä, kun **Yritysten väliset kyselyt tietueiden täyttötoiminnoille** -ominaisuus otetaan käyttöön **Ominaisuuksien hallinta** -työtilasta. Käytä tätä ominaisuuttaa määrittääksesi yritysten välisiä tietolähteitä tietueiden täyttötoimintoja varten. Tietoja voi noutaa useista yrityksistä. |
 | Käyttäjän kysely             | <p>Jos määrität kyselyn valitsemalla ruudukon yläpuolelta **Muokkaa kyselyä** ja määrität ehdot, joita on käytettävä valitussa päätaulukossa, josta tiedot täytetään, tämä valintaruutu valitaan automaattisesti. Muussa tapauksessa kaikki tietueet täytetään valitusta päätaulukon lähteestä.</p><p>Kun **Yritysten väliset kyselyt tietueiden täyttötoiminnoille** -ominaisuus on käytössä **Ominaisuuksien hallinta** -työtilassa ja tietueita täytyy kerätä useista yrityksistä, lisää jokaiselle raportointiin sisällytettävälle lisäyritykselle rivi. Valitse kullekin uudelle riville **Muokkaa kyselyä** ja määritä ehto, joka koskee vain rivin **Yritys**-kentässä määritettyä yritystä. Kun olet valmis, **Tietolähteiden määritys** -ruudukko sisältää rivit kaikille yrityksille, jotka on sisällytettävä raportointiin.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a>Tietueiden täyttäminen useista yrityksistä
+
+Jos yrityksen täytyy raportoida usealta yritykseltä samassa -Financetietokannassa, määritä [tietueiden täyttötoiminnot](#populate) kaikille yrityksille, joiden tiedot on sisällytettävä raportointiin.
+
+Ota tämä ominaisuus käyttöön Finance-ympäristössä tekemällä seuraavat vaiheet. 
+
+1. Valitse **Työtilat** \> **Ominaisuuden hallinta**.
+2. Etsi ja valitse **Yritysten väliset kyselyt tietueiden täyttötoiminnoille** -toiminto luettelosta.
+3. Valitse **Ota käyttöön nyt**. 
+
+Noudattamalla seuraavia ohjeita voit määrittää usean yrityksen [tietueiden täyttötoiminnot](#populate), joista tiedot on sisällytettävä raportointiin.
+
+1. Valitse **Vero** \> **Asetukset** \> **Sähköiset sanomat** \> **Tietueiden täyttötoiminnot**.
+
+    Kun **Yritysten väliset kyselyt tietueiden täyttötoiminnoille** -toiminto on käytössä, **Tietueiden täyttötoiminnot** -sivun **Tietolähteiden asetukset** -ruudukko sisältää **Yritys**-kentän. Tässä kentässä näkyy nykyisen yrityksen tunnus aiemmin luotujen tietueiden osalta, jotka on luotu yleisen [tietueiden täyttötoimintojen](#populate) määrityksen yhteydessä.
+
+2. Lisää **Tietolähteiden asetukset** -ruudukkoon rivi kutakin raportointiin sisällytettävää tytäryhtiötä varten ja määritä seuraavat kentät.
+
+    | Kentän nimi             | Arvo |
+    |------------------------|-------|
+    | Nimi                   | Kirjoita tekstiarvo, joka auttaa ymmärtämään, mistä tämä tietue tulee. Kirjoita esimerkiksi **Tietolähteen nimi – tytäryhtiö 1**. |
+    | Sanoman nimiketyyppi      | Valitse viestinimiketyyppi, jota EM-käsittely edellyttää. |
+    | Tilityyppi           | Määritä tilityyppi, jota EM-käsittely edellyttää. Valitse **Kaikki**, jos EM-käsittelyllä ei ole tiettyä tilityyppiä. |
+    | Päätaulun nimi      | Määritä sen päätaulun nimi, jota EM-käsittely edellyttää. |
+    | Asiakirjan numerokenttä  | Määritä kenttä, joka sisältää EM-käsittelyn tietueiden asiakirjan numeron. |
+    | Asiakirjan päivämääräkenttä    | Määritä kenttä, joka sisältää EM-käsittelyn tietueiden asiakirjan päivämäärän. |
+    | Asiakirjan tilikenttä | Määritä kenttä, joka sisältää EM-käsittelyn tietueiden asiakirjan tilin. |
+    | Yritys                | Valitse tytäryhtiön tunnus. |
+    | Käyttäjän kysely             | Tämä valintaruutu valitaan automaattisesti, kun määrität ehtoja valitsemalla **Muokkaa kyselyä**. |
+
+3. Valitse kullekin uudelle riville **Muokkaa kyselyä** ja määritä ehto, joka koskee rivin **Yritys**-kentässä määritettyä yritystä.
+
 ## <a name="web-applications"></a><a id="applications"></a>Verkkosovellukset
 
 Käytä verkkosovellusten asetuksia määrittääksesi verkkosovelluksen tukemaan Open Authorization (OAuth) 2.0 -protokollaa. OAuth on avoin standardi, jonka avulla käyttäjät voivat muodostaa suojatun delegoidun käyttöoikeuden sovellukseen käyttäjätunnuksia jakamatta. Voit käyttää myös valtuutusprosessia hakemalla valtuutuskoodin ja käyttöoikeustunnuksen. Voit määrittää verkkosovellusten asetukset kohdasta **Vero** \> **Asetukset** \> **Sähköiset sanomat** \> **Verkkosovellukset**.
@@ -214,6 +247,7 @@ Seuraavissa taulukoissa käsitellään **Sanoman käsittelytoiminnot** -sivun ke
 | Suoritettava luokka                          | Valitse olemassa oleva suoritettavan luokan asetus. Tämä kenttä on käytettävissä vain **Sanoman nimikkeen suoritustaso**- ja **Sanoman suoritustaso** -tyyppien toiminnoissa. |
 | Tietueiden täyttötoiminto                   | Valitse olemassa oleva tietueiden täyttötoiminto. Tämä kenttä on käytettävissä vain **Täytä tietueet** -tyypin toiminnoilla. |
 | Internet-palvelu                               | Valitse olemassa oleva verkkopalvelu. Tämä kenttä on käytettävissä vain **Verkkopalvelu** -tyypin toiminnoilla. |
+| Lähetettävän tiedoston nimi                         | Kirjoita sen sähköisen sanoman liitteen nimi, joka tämän toiminnon on lähetettävä. Jos useilla liitteillä on sama alkuperäinen tiedostonimi, viimeisin tiedosto lähetetään. Jos liitettä ei löydy, jolla on määritetty alkuperäinen tiedostonimi, pyyntö lähetetään ilman sisältöä. Tämä kenttä on käytettävissä vain **Verkkopalvelu** -tyypin toiminnoilla. |
 | Tiedostonimi                                 | Määritä toiminnon tuloksena olevan tiedoston nimi. Tämä tiedosto voi olla verkkopalvelimen tai muodostetun raportin vastaus. Tämä kenttä on vain **Verkkopalvelu**- ja **Sähköisen raportoinnin vientiviesti** -tyypin toimintojen käytettävissä. |
 | Tiedostojen liittäminen lähdeasiakirjoihin          | Valitse tämä valintaruutu liittääksesi luodut tiedostot EM-nimikkeiden viitatun päätaulukon tietueisiin. Tämä kenttä on käytettävissä vain **Sähköisen raportoinnin vienti**- ja **Verkkopalvelu**-tyyppien toiminnoille. |
 | Liitä tiedostoja tulostusarkistosta nimikkeisiin | Valitse tämä valintaruutu noutaaksesi erilliset XML-tiedostot tulosarkistotiedostosta ja liittääksesi ne vastaaviin sähköisten sanomien nimikkeisiin. Tämä kenttä on vain **Sähköisen raportoinnin vienti** -tyypin toimintojen käytettävissä. |

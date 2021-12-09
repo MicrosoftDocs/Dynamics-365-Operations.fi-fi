@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15b0ad9faf2bcac25dec01a7ab44f804ad2345cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c3947c8a51facfb02012cc8e9a3ffd5887073bd9
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567220"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860610"
 ---
 # <a name="define-coverage-rules-for-items"></a>Nimikkeiden kattavuussääntöjen määrittäminen
 
@@ -113,6 +113,7 @@ Luo nimikkeen kattavuussäännöt seuraavasti:
 1. Syötä **Ostoaika**-kenttään 5.
 1. Valitse **Tallenna**.
 
-
+> [!NOTE]
+> Valmistettujen nimikkeiden osalta **tuotannon läpimenoaikaa** käytetään, jos nimikkeelle ei ole reittiä. Jos nimikkeeseen on liitetty aktiivinen reititys, pääsuunnittelu ajoittaa tilauksen ja laskee päivämäärät resurssien reititysaikojen ja kapasiteetin mukaan (jos käytettävissä).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

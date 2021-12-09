@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752614"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827050"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insightsin määritysongelmien vianmääritys
 
@@ -70,3 +70,26 @@ Kassavirtaennustetoiminto on oltava otettuna käyttöön maksuliikenteen hallinn
 Ensimmäiseksi määritetään ja otetaan käyttöön kassavirtaennuste- ja maksuvalmiustilit. Lisätietoja on kohdassa [Kassavirtaennusteet](../cash-bank-management/cash-flow-forecasting.md). Jos nämä määrityksen on suoritettu mutta tulokset eivät vastaa odotuksia, lisätietoja on kohdassa [Kassavirtaennusteiden asetusten vianmääritys](../cash-bank-management/cash-flow-forecasting-tsg.md).
 
 Seuraavaksi vahvistetaan, että Finance Insightsin Kassavirtaennusteet ominaisuus (**Maksuliikenteen hallinta \> Asetukset \> Finance Insights \> Kassavirtaennusteet**) on otettu käyttöön ja että tekoälymallin koulutus on suoritettu loppuun. Jos koulutus ei ole valmis, aloita mallin koulutusprosessi valitsemalla **Ennusta nyt**.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Oire: Miksi Microsoft Dynamics Lifecycle Services -palveluissa ei näy Asenna uusi lisäosa -painiketta?
+
+### <a name="resolution"></a>Ratkaisu
+
+Tarkista ensin, että **ympäristön esimiehen** tai **projektin omistajan** rooli on määritetty kirjautuneelle käyttäjälle Microsoft Dynamics Lifecycle Servicesin (LCS) **Projektin suojausrooli** -kentässä. Uusien lisäosien asennus edellyttää jonkin näistä projektin käyttöoikeusrooleista.
+
+Jos sinulle on määritetty oikea projektin käyttöoikeusrooli, sinun on ehkä päivitettävä selaimen ikkuna, niin näkyviin tulee **Asenna uusi lisäosa** -painike.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Oire: Finance Insights -lisäosa ei näytä asentuvan. Miksi?
+
+### <a name="resolution"></a>Ratkaisu
+
+Seuraavat vaiheet on suoritettava.
+
+- Tarkista, että sinulla on **järjestelmänvalvojan** ja **järjestelmän mukauttajan** käyttöoikeus Power Portal -hallintakeskuksessa.
+- Tarkista, että lisäosan asentavalla käyttäjällä on Dynamics 365 Finance -lisenssi tai vastaava lisenssi.
+- Tarkista, että seuraava Azure AD -sovellus on rekisteröity Azure AD:ssä: 
+
+  | Hakemus                  | Sovelluksen tunnus           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  
