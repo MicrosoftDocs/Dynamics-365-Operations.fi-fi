@@ -70,12 +70,12 @@
                   items:
                     - name: Financen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.23
+                    - name: Finance 10.0.24 (helmikuu)
+                      href: get-started/whats-new-changed-10-0-24.md
+                    - name: Finance 10.0.23 (tammikuu)
                       href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (marraskuu 2021)
                       href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (lokakuu 2021)
-                      href: get-started/whats-new-changed-10-0-21.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -518,7 +518,9 @@
               href: budgeting/budget-control-overview-configuration.md
             - name: Budjetoinnin yleiskatsaus
               href: budgeting/basic-budgeting-overview-configuration.md
-            - name: Toimien ennustus
+            - name: Käytettävissä olevat budjettivarat
+              href: budgeting/budget-funds-available.md
+            - name: Toimien ennusteet
               href: budgeting/position-forecasting.md
             - name: Budjettisuunnittelun perusteluasiakirjat
               href: budgeting/budget-planning-justification-docs.md
@@ -1430,20 +1432,30 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Saudi-Arabian sähköisen laskutuksen käytön aloittaminen
                           href: localizations/e-invoicing-sa-get-started.md
-                        - name: Sähköisen laskutuspalvelun avulla voit tuoda toimittajan laskuja
+                        - name: Toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Sähköisen laskutuksen määrittäminen
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Power Platform -laajennuksen järjestelmänvalvojan viitetiedot
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Sähköisen laskutuksen usein kysytyt kysymykset
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Verolaskenta
                   items:
                     - name: Verolaskennan yleiskatsaus
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Asetusten määrittäminen
+                    - name: Asetukset
                       items:
                         - name: Verolaskennan aloittaminen
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Verokoodien määrittäminen
+                          href: localizations/set-up-tax-codes.md
+                        - name: Veroryhmien määrittäminen
+                          href: localizations/set-up-tax-groups.md
+                        - name: Nimikkeiden veroryhmien määrittäminen
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Verolaskelmien tuominen ja vieminen
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Ympäristön määrittäminen päätietojen hakua varten
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Määritys
@@ -1542,7 +1554,7 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Pakkausmateriaalimaksut
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: ALV-ilmoitus
+                - name: ALV-laskelma
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Kansainväliset palvelut -raportti
                   href: localizations/emea-aut-vat-statement-details.md
@@ -1862,7 +1874,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: Raporttien ja asiakirjojen summien esitysmuodon päivittäminen
                   href: localizations/emea-amount-printing-forms.md
-                - name: ALV-ilmoitus
+                - name: ALV-laskelma
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: ALV-ilmoitus (Tšekin tasavalta)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
@@ -1918,7 +1930,7 @@
                   href: localizations/estonia.md
                 - name: Henkilökohtaisten tietojen pyynnöt
                   href: localizations/emea-est-personal-info.md
-                - name: ALV-ilmoitus
+                - name: ALV-laskelma
                   href: localizations/emea-est-vat-statement-details.md
             - name: Eurooppa
               items:
@@ -2168,7 +2180,7 @@
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Saksalainen Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: ALV-ilmoitus
+                - name: ALV-laskelma
                   href: localizations/emea-de-vat-declaration.md
                 - name: Asiakkaiden sähköiset laskut -raportti
                   href: localizations/emea-deu-e-invoices.md
@@ -2594,13 +2606,15 @@
               items:
                 - name: Indonesia – yleiskatsaus
                   href: localizations/indonesia.md
+                - name: Verolaskujen numerointi ja laskutus
+                  href: localizations/apac-idn-invoicing.md
                 - name: Indonesian ALV-ilmoitus
                   href: localizations/apac-idn-ppn-declaration.md
             - name: Italia
               items:
                 - name: Italia – yleiskatsaus
                   href: localizations/italy.md
-                - name: ALV-ilmoitusten tiedot
+                - name: ALV-laskelman tiedot
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Neljännesvuosittainen ALV-viestintäraportti
                   href: localizations/emea-ita-quarterly-vat-communication.md
@@ -2662,6 +2676,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Asiakkaiden sähköiset laskut
                   href: localizations/emea-ita-e-invoices.md
+                - name: Toimittajan sähköiset laskut
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Vuosittainen veroviestintä
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Maksun jäljitettävyys
@@ -2844,7 +2860,7 @@
                   href: localizations/emea-invoices-packing-slips-numbering.md
                 - name: Luonnonvarojen verotusraportti
                   href: localizations/emea-lva-tax-natural-resources.md
-                - name: ALV-ilmoituksen tiedot
+                - name: ALV-laskelman tiedot
                   href: localizations/emea-lva-vat-statement-details.md
             - name: Liettua
               items:
@@ -2854,7 +2870,7 @@
                   href: localizations/emea-ltu-fixed-asset-repair-statement.md
                 - name: Käyttöomaisuuden varastojen välisen siirron asiakirjan luominen
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: ALV-ilmoituksen tiedot
+                - name: ALV-laskelman tiedot
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: Liettuan i.SAF-raportointi
                   href: localizations/emea-ltu-isaf.md
@@ -2962,8 +2978,22 @@
                   href: localizations/tasks/no-00002-customer-payment-based-payment-id.md
                 - name: Nets-tuontimuoto
                   href: localizations/emea-nor-nets-import-format.md
-                - name: ALV-ilmoitus
+                - name: ALV-laskelma
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: ALV-palautus ja suora Altinnille lähetys
+                  items:
+                    - name: ALV-palautuksen ja suoran Altinnille lähetyksen yleiskatsaus
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Integrointipisteen rekisteröiminen ID-Porten-verkkoportaalissa
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: 'Valmistele ympäristö niin, että se voi toimia yhdessä ID-Porten- ja Altinn-verkkopalveluiden kanssa'
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Tarkistusluettelo sähköisten sanomien määrittämiselle ALV-palautuksissa
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: 'Anna Finance-ympäristölle käyttöoikeus, jotta se voi toimia yhdessä ID-Porten- ja Altinn-verkkopalveluiden kanssa'
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: ALV-palautuksen lähettäminen Altinn-verkkopalveluun
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Verotuksen perustarkistustiedosto (SAF-T) – Norja
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Asiakkaiden sähköiset laskut Norjassa
@@ -3831,7 +3861,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Luettelo
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                    - name: List
                       items:
                         - name: Luettelotoiminnot
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3855,7 +3887,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
-                        - name: Luettelo
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
                         - name: ListDistinct
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json

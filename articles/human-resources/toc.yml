@@ -1,9 +1,11 @@
 - name: Dynamics 365 Human Resources
   href: ./index.md
   items:
-    - name: Uutta
+    - name: Uudet ominaisuudet
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
+          href: hr-whats-new-2021-11-29.md
+        - name: 29. marraskuuta 2021
           href: hr-admin-whats-new.md
         - name: 5. lokakuuta 2021
           href: hr-whats-new-2021-10-04.md
@@ -793,6 +795,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Hintamuutosten käsittely
                       href: hr-benefits-process-rate-changes.md
+                - name: Työntekijäetujen valinta
+                  href: employee-select-benefits-ess.md
                 - name: ACA-raportointi
                   href: hr-benefits-management-aca-reports.md
                 - name: Etulauseke

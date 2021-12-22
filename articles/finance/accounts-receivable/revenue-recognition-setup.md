@@ -2,7 +2,7 @@
 title: Tuottokirjauksen määritys
 description: Tässä aiheessa kuvataan tuottokirjauksen määritysasetukset ja niiden vaikutukset.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675175"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867217"
 ---
 # <a name="revenue-recognition-setup"></a>Tuottokirjauksen määritys
 [!include [banner](../includes/banner.md)]
@@ -61,11 +61,11 @@ Ensimmäinen skenaario toteutuu sopimusvelvoitteiden täyttämisen jälkeen, kun
 
 Toinen skenaario toteutuu, kun kirjauskansio luodaan uudelleenkohdistuksen jälkeen. Uudelleenkohdistus tapahtuu, kun myyntitilausrivi lisätään aiemmin laskutettuun myyntitilaukseen tai kun luodaan uusi myyntitilaus, joka sisältää alkuperäiseen sopimukseen kuuluvan rivin. Jos lasku on kirjattu ennen uuden myyntitilausrivin lisäämistä, kirjatulle myyntilaskulle on luotava korjaava kirjanpitomerkintä.
 
-Kirjauskansio määritetään **Kirjauskansioiden nimet** -sivulla (**Tuottokirjaus \> Määritys \> Kirjauskansioiden nimi**). Kirjauskansion tyypiksi on asetettava **Tuottokirjaus**. Tuottokirjauskansiossa voidaan valita kirjanpitotaso, jolle se kirjataan.
+Kirjauskansio määritetään **Kirjauskansioiden nimet** -sivulla (**Tuottokirjaus \> Määritys \> Kirjauskansioiden nimet**). Kirjauskansion tyypiksi on määritettävä **Tuottokirjaus**. 
 
 ## <a name="parameters-for-revenue-recognition"></a>Tuottokirjauksen parametrit
 
-Tuottokirjauksen asetukset määritetään **Kirjanpitoparametrit** -sivun **Tuottokirjaus** välilehdellä (**Tuottokirjaus \> Määritys \> Kirjanpitoparametrit**). Seuraavat asetukset ovat käytettävissä:
+Tuottokirjauksen asetukset määritetään **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Määritys \> Kirjanpitoparametrit**). Seuraavat asetukset ovat käytettävissä:
 
 - **Tuottokirjauskansion nimi** – Valitse kirjauskansio, joka luotiin tuottokirjausta varten. Kirjauskansio vaaditaan, kun tuotto kirjataan tuottoaikataulusta tai kun suoritetaan uudelleenkohdistus myyntitilauksessa, joka on jo laskutettu.
 - **Ota alennuksen kohdistus -menetelmä käyttöön** – Määritä tämä asetus arvoon **Kyllä**, jotta tuottohinta määritetään kohdistamalla käyvä markkina-arvo, joka määritetään kunkin vapautetun tuotteen tuottohinnassa. Tämä kohdistus sisältää nimikkeiden mahdollisten rivialennusten kohdistuksen. Jos asetuksen arvoksi määritetään **EI**, järjestelmä käyttää mediaanihintaa, joka on määritetty kunkin vapautetun tuotteen tuottohinnassa. Jos tämän asetuksen arvoksi asetetaan **Ei**, mutta vapautetuille tuotteille ei ole määritetty mediaanihintaa, tuottohintaa ei kohdisteta.

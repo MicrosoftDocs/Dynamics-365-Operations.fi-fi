@@ -12,14 +12,14 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Platform update -päivitysten uudet ja muuttuneet ominaisuudet
               items:
-                - name: Ympäristön päivitysten aloitussivun uudet ja muuttuneet ominaisuudet
+                - name: Platform update -päivitysten kotisivun uudet ja muuttuneet ominaisuudet
                   href: get-started/whats-new-home-page.md
-                - name: Platform update -päivitykset versioon 10.0.23
+                - name: Platform update -päivitykset versioon 10.0.24 (helmikuu 2022)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: Platform update -päivitykset versioon 10.0.23 (tammikuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
-                - name: Ympäristön päivitykset versioon 10.0.22 (marraskuu 2021)
+                - name: Platform update -päivitykset versioon 10.0.22 (marraskuu 2021)
                   href: get-started/whats-new-platform-updates-10-0-22.md
-                - name: Ympäristön päivitykset versioon 10.0.21 (lokakuu 2021)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -232,9 +232,9 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Azure Data Lake -yleiskuvaus
-              href: data-entities/azure-data-lake-overview.md
-            - name: Azure Data Lake -viennin määritys
+            - name: Vieminen Azue Data Lake -yleiskuvaukseen
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Vieminen Azure Data Lake -apuohjelman asentaminen
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations -sovellukset Azure Data Lakessa
               href: data-entities/finance-data-azure-data-lake.md
@@ -406,6 +406,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Saman AD FS -esiintymän käyttäminen uudelleen useissa ympäristöissä
                       href: deployment/onprem-reuseadfs.md
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) -ympäristöjen SQL Server -esiintymän päivittäminen
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Paikallinen edustaja
                   items:
                     - name: AD FS Microsoft 365 -yhteensopivuus
@@ -1012,7 +1014,7 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform -integrointi
           items:
-            - name: Microsoft Power Platform- ja Finance and Operations -integrointi
+            - name: Yleiskatsaus
               href: power-platform/overview.md
             - name: Power Platform -integraation ottaminen käyttöön
               href: power-platform/enable-power-platform-integration.md
