@@ -2,7 +2,7 @@
 title: Alareskontran siirto pääkirjanpitoon
 description: Tässä aiheessa kuvataan ominaisuuksia, jotka liittyvät alareskontran siirtoprosessiin pääkirjanpitoon.
 author: rcarlson
-ms.date: 07/20/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 03c04a5eb8b544b582019ddd204382900b162d952842c901f69ed4a853bd8183
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716642"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900727"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Alareskontran siirto pääkirjanpitoon
 
@@ -39,7 +39,7 @@ Versioon 10.0.8 tehtiin parannuksia, jotka parantavat **Asynkroninen**-vaihtoehd
 
 Toiminto, jonka avulla alareskontran eriä siirretään asynkronisesti, helpottaa tietojen siirtämistä alareskontrasta pääkirjanpitoon. Toiminto käsittelee tapahtumat tehokkaammin ryhmittelemällä pienempien tapahtumien joukkoja ja siirtämällä tapahtumat ryhmiin. Kun tapahtumat on ryhmitelty, eräpalvelimen resursseja käytetään tehokkaammin.
 
-Alareskontran erien asynkroninen siirto edellyttää, että eräpalvelin määritetään, on online-tilassa ja että se toimii. Muutoin **Asynkroninen**-siirtovaihtoehto ei toimi.
+Alareskontraerien asynkroninen siirto edellyttää, että eräpalvelin on asetettu, online-tilassa ja toimiva, koska erätehtävät luodaan välittömästi suoritettavaksi eräpalvelimella. Kun **Alareskontran siirto kirjanpidon suorituskyvyn optimointi** -ominaisuus on käytössä, **prosessin automaation** järjestelmän erätyön nimeltä **Prosessin automaation kyselyjärjestelmän työn** on myös oltava käytössä. Lisätietoja on kohdassa [Prosessin automatisointi](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 Erätason tehokkuusmuutos käyttää yhtä toistuvaa erätyötä järjestelmän kaikille yrityksille. Suorituksen aikana luodaan uusi erätyö, joka käsittelee pakolliset tietueet, joita ei ole vielä siirretty. Lisäasetuksia voidaan ohjata järjestelmän hallinnan **Prosessiautomaatio**-sivulla. Tällä sivulla voit muokata taustaprosessia, muuttaa tiheyttä ja määrittää odotuskauden.
 

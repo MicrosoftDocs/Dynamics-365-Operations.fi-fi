@@ -2,7 +2,7 @@
 title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uusi ruudukkotoiminto on otettava käyttöön näiden ominaisuuksien käyttämistä varten.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700134"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890853"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -119,6 +119,9 @@ Voit valita nopeasti ryhmän kaikki rivit tai poistaa niiden valinnan valitsemal
 
 ### <a name="hiding-column-names"></a>Sarakkeiden nimien piilottaminen
 Kun ryhmittelet tietoja, oletusarvo on sarakkeen nimen näkyminen ryhmän otsikkorivillä. Voit valita, haluatko supistaa sarakkeen nimen ryhmän otsikkorivillä valitsemalla **Ruudukkovalinnat** > **Piilota ryhmän sarakkeen nimi**.
+
+### <a name="grouping-on-date-and-time-columns"></a>Päivämäärä- ja aikasarakkeiden ryhmittely
+Alkaen versiosta 10.0.24 Date- tai DateTime-kentissä vaihtoehto on lisätty ryhmään vuoden, kuukauden tai päivän mukaan. Vastaavan otsikkorivin ryhmä "arvo" vastaa kyseisen kentän muotoa. Lisäksi DateTime- ja Time-kentät voi ryhmitellä tunnin, minuutin tai sekunnin mukaan.    
 
 ## <a name="freezing-columns"></a>Sarakkeiden kiinnittäminen
 Osa ruudukon sarakkeista voi olla kontekstin kannalta niin tärkeitä, ettei niitä haluta vierittää pois näkyvistä. Näiden sarakkeiden arvojen kannattaa sen sijaan olla aina näkyvissä. **Kiinnitä ruudukon sarakkeet** -toiminto antaa tämän joustavuuden käyttäjille. 

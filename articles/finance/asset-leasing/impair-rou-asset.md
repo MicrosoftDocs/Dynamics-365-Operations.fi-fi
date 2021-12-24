@@ -2,7 +2,7 @@
 title: Käyttöoikeusomaisuuserän arvon alentaminen
 description: Tässä ohjeaiheessa kuvataan toiminto, joka tallentaa arvonalentumisen ja muuttaa ASC 842:n mukaista resurssin poistoaikataulua käyttöleasingsopimuksessa.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 816f65cff77339ef8684c0449ed2e5f0762b17a2e22174412d5ea9f2a1a62069
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723820"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890827"
 ---
 # <a name="impair-right-of-use-assets"></a>Käyttöoikeusomaisuuserän arvon alentaminen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Jos käyttöoikeusomaisuuserän kirjanpitosumma ei ole palautettavissa, käyttäjän on ehkä testattava, onko resurssin arvoa alennettu. Jos resurssin arvoa on alennettu, resurssin vuokraus ei voi tallentaa arvonalenemista ja oikaista poistoaikataulua vastaavasti. Tässä ohjeaiheessa kuvataan toiminto, joka tallentaa arvonalentumisen ja muuttaa ASC 842:n mukaista poistoaikataulua käyttöleasingsopimuksessa. Sama menetelmä koskee myös IFRS 16 -vuokrasopimuksia.
 
@@ -37,13 +38,16 @@ Jäljellä oleva käyttöoikeusomaisuuserän saldo kuoletetaan jäljellä olevie
 3. Syötä näyttöön tulevan valintaikkunan **Arvonalennussumma**-kenttään resurssin arvonalennuksen summa. Jos haluat pienentää käyttöoikeusomaisuuserää, anna positiivinen arvo.
 4. Anna **Tapahtumapäivämäärä**-kenttään päivämäärä, jona arvonalennusviennin kirjaus tulisi tehdä.
 5. Anna **Jäljellä olevat kaudet** -kenttään jäljellä olevien kuoletettavien kuukausien määrä.
-6. Ota käyttöön **Kirjaa**-parametri, jos haluat järjestelmän kirjaavan arvonalennuksen kulukirjauskansioviennin automaattisesti. Jos jätät tämän parametrin pois käytöstä, järjestelmä luo viennin, mutta ei kirjaa sitä. Tämän jälkeen voit kirjata viennin **Käyttöomaisuuden vuokrauskirjauskansiot** -sivulla.
-7. Määritä **Esikatselu ennen kirjausta** -vaihtoehdon arvoksi **Kyllä**, jos haluat tarkastella ehdotettua vientiä ennen sen luomista tai kirjausta.
-8. Määritä **Sulje kirja** -asetuksen arvoksi **Kyllä**, jos haluat sulkea vuokrauskirjan. Tätä toimintoa ei voi kumota. Vientejä ei voi kirjata suljettuihin vuokrasopimuksiin, eikä suljettuja vuokrasopimuksia voi oikaista.
-9. Luo tai kirjaa arvonalennusvienti valitsemalla **OK**.
-10. Voit tarkastella sitä resurssin poistoaikataulua, jonka arvoa on alennettu, ja avata kyseisen vuokrauskirjan resurssin poistoaikataulun. Käyttöomaisuus poistetaan nyt **Kausia jäljellä** -kentään syötettyjen kuukausien määrän perusteella tasaisesti.
-11. Voit tarkastella kulukirjauskansiovientiä, jonka arvoa alennettiin, valitsemalla **Käyttöomaisuuserän leasingkirjauskansio** arvonalennuksen vuokrauskirjan toimintoruudussa. Järjestelmä luo kirjauskansioviennin, joka veloittaa arvonalennuksen kulukirjauksen tiliä ja hyvittää vuokrauksen resurssin tiliä.
-12. Jos haluat tarkastella käyttöoikeusomaisuuserän kirjanpitoarvoa, valitse **Käyttöomaisuustapahtumat** vuokrauskirjan toimintoruudussa.
+6. Määritä **Esikatselu**-vaihtoehto nähdäksesi ehdotetun omaisuuserän saldon ja rahoitusmerkinnän ennen niiden luomista tai kirjaamista.
+7. Määritä **Sulje kirja** -asetuksen arvoksi **Kyllä**, jos haluat sulkea vuokrauskirjan. Voit peruuttaa tämän toiminnon käyttämällä **Avaa vuokra uudelleen** -tilaa. Vientejä ei voi kirjata suljettuihin vuokrasopimuksiin, eikä suljettuja vuokrasopimuksia voi oikaista. 
+8. Luo tai kirjaa arvonalennusvienti valitsemalla **Kirjaa**.
+
+    > [!NOTE]
+    > Sen jälkeen, kun tapahtuma on kirjattu, luodaan uusi kirjaversio.
+
+9. Voit tarkastella sitä resurssin poistoaikataulua, jonka arvoa on alennettu, ja avata vuokrauskirjan resurssin poistoaikataulun. Käyttöomaisuus poistetaan nyt **Kausia jäljellä** -kentään syötettyjen kuukausien määrän perusteella tasaisesti.
+10. Voit tarkastella kulukirjauskansiovientiä, jonka arvoa alennettiin, valitsemalla **Käyttöomaisuuserän leasingkirjauskansio** arvonalennuksen vuokrauskirjan toimintoruudussa. Järjestelmä luo kirjauskansioviennin, joka veloittaa arvonalennuksen kulukirjauksen tiliä ja hyvittää vuokrauksen resurssin tiliä. 
+11. Jos haluat tarkastella käyttöoikeusomaisuuserän kirjanpitoarvoa, valitse **Käyttöomaisuustapahtumat** vuokrauskirjan toimintoruudussa.
 
 ## <a name="example-of-rou-asset-impairment"></a>Käyttöoikeusomaisuuserän arvonalennuksen esimerkki
 

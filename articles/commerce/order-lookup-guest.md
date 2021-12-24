@@ -2,7 +2,7 @@
 title: Tilaushaun käyttöönotto vierailijoiden uloskuittauksessa
 description: Tässä aiheessa kuvataan, miten tilaushaku otetaan käyttöön vierailijoiden uloskuittauksessa Microsoft Dynamics 365 Commercessa.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674973"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891495"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Tilaushaun käyttöönotto vierailijoiden uloskuittauksessa
 
@@ -63,6 +63,16 @@ Kun olet muuttanut **Sisällytä henkilötiedot vierailijoiden tilaushakuun**, s
 ## <a name="configure-the-order-lookup-module"></a>Määritä tilaushakumoduuli
 
 Commerce-moduulikirjaston tilaushakumoduulin avulla hahmonnetaan lomake, jonka avulla vieraskäyttäjät voivat etsiä tilauksia. Tilaushakumoduulin voi sisällyttää minkä tahansa sellaisen sivun tekstiosapaikkaan, joka ei edellytä asiakkaan sisäänkirjautumista. Lisätietoja moduulin määrittämisestä: [Tilaushakumoduuli](order-lookup-module.md).
+
+## <a name="configure-the-order-details-page"></a>Tilauksen tietosivun konfiguroiminen
+
+Ennen kuin vieraskäyttäjät voivat tarkastella tilaustietojaan, sähköisen kupankäynnin sivuston tilaustiedot on määritettävä niin, että se ei edellytä kirjautumista. Jos haluat poistaa tilaustietosivun kirjautumisvaatimuksen käytöstä, avaa Commerce-sivustonmuodostinsivu, valitse puunäkymästä **oletussivu (pakollinen)** ja poista Oikeanpuoleisen ominaisuusruudun alaosassa oleva **Vaatii kirjautumista?** -valintaruudun valinta.
+
+## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Linkin lisääminen tapahtumasähköpostiviestien tilauseriin
+
+Voit lähettää tilaukseen liittyviä sähköpostiviestejä linkin tai painikkeen, jonka avulla asiakkaat voivat avata tilauksen tietosivun. Voit lisätä tämän linkin tai painikkeen luomalla HTML-hyperlinkin, joka osoittaa sähköisen kauppasivuston tilaustietosivulle, ja siirrä tilausvahvistustunnus ja asiakkaan sähköpostiosoite URL-parametreiksi seuraavan esimerkin mukaisesti.
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

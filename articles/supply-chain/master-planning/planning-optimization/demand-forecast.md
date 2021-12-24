@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474841"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867244"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Pääsuunnittelu ja kysynnän ennusteet
 
@@ -86,9 +86,9 @@ Kun lisäät ennusteen pääsuunnitelman, voit valita kuinka ennusteen tarpeita 
 
 Voit sisällyttää ennusteen pääsuunnitelmaan ja valita menetelmän, jolla voit pienentää ennustetarpeita siirtymällä kohtaan **Pääsuunnittelu \> Määritys \> Suunnitelmat \> Pääsuunnitelmat**. Valitse **Ennustemalli** -kentästä ennustemalli. Valitse **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentästä menetelmä. Käytettävissä ovat seuraavat asetukset:
 
-- None
+- Ei mitään
 - Prosentti - vähennysavain
-- Tapahtumat – vähennysavain (ei vielä tueta suunnittelun optimoinnissa)
+- Tapahtumat - vähennysavain
 - Tapahtumat - dynaaminen kausi
 
 Seuraavissa osissa on lisätietoja kustakin vaihtoehdosta.

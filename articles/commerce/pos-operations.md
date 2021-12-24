@@ -2,7 +2,7 @@
 title: Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 description: Tässä ohjeaiheessa on tietoja Dynamics 365 Commercen myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
 author: jblucher
-ms.date: 02/21/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc4835258c7a1968c51e4d1a3a4d0eb33aaf2cddf31efd965adff0ac80aa4ec1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88daca466e0e01bf3870b6eeee0628e0c159fea3
+ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745281"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7875474"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
 [!include [banner](includes/banner.md)]
 
-Useimmat käyttäjän myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Dynamics 365 Commercen taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.
+Useimmat käyttäjien myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Dynamics 365 Commercen taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.
 
 Seuraavassa taulukossa on tietoja Modern POS- ja Cloud POS -toiminnoista. Taulukossa määritetään myös, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä, kun myyntipiste on offline-tilassa.
 
@@ -72,18 +72,17 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 121 | Tyhjennä myyjä | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei |
 | 1 055 | Sulje vuoro | Sulje nykyinen vuoro, tulosta Z-raportti ja kirjaa käyttäjä ulos järjestelmästä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 139 | Päätä tapahtuma | Pyytää käyttäjää valitsemaan maksutavan | Kyllä | Kyllä | Ei | Kyllä | Ei |
-| 620 | Luo asiakastilaus | Muunna myyntipisteen tapahtuma asiakastilaukseksi. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 925 | Kopioi pankkisekki | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Kyllä |
 | 620 | Luo asiakastilaus | Muunna myyntipisteen tapahtuma asiakastilaukseksi. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 621 | Luo tarjous | Muunna myyntipisteen tapahtuma myyntitarjoukseksi. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
-| 636 | Vähittäismyyntitapahtuman luominen | Tämän toiminnon avulla käyttäjä voi luoda vakiomyyntitapahtuman, kun oletusmyyntipisteen toiminta on asiakastilausten luominen. | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| 636 | Vähittäismyyntitapahtuman luominen | Luo vakiomyyntitapahtuma, kun oletusmyyntipisteen toiminta on asiakastilausten luominen. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 600 | Asiakas | Lisää määritetty asiakas tapahtumaan. | Ei | Ei | Ei | Kyllä | Ei |
 | 1 100 | Asiakastilin talletus | Suorita maksu asiakkaan tilille. | Kyllä | Kyllä | Kyllä | Kyllä | Kyllä |
-| 612 | Asiakkaan lisääminen | Tämän toiminnon avulla käyttäjä voi luoda uuden asiakastietueen. | Kyllä | Kyllä | Kyllä | Kyllä† | Ei |
+| 612 | Asiakkaan lisääminen | Uuden asiakastietueen luominen. | Kyllä | Kyllä | Kyllä | Kyllä† | Ei |
 | 603 | Asiakkaan tyhjentäminen | Poista asiakas nykyisestä tapahtumasta. | Kyllä | Kyllä | Ei | Kyllä | Ei |
-| 602 | Asiakashaku | Tämän toiminnon avulla käyttäjä voi hakea asiakastietueen siirtymällä asiakkaan hakusivulle myyntipisteessä. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| 602 | Asiakashaku | Hae asiakastietuetta siirtymällä asiakkaan hakusivulle myyntipisteessä. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 609 | Asiakastapahtumat | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei |
-| 917 | Tietokantayhteyden tila | Tämän toiminnon avulla käyttäjä voi tarkastella nykyisen yhteyden asetuksia ja siirtyä online- ja offline-tilojen välillä. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| 917 | Tietokantayhteyden tila | Tarkastele nykyisen yhteyden asetuksia ja siirtyä online- ja offline-tilojen välillä. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 1 200 | Tilitä aloitussumma | Määritä summa, joka on kassassa päivän tai vuoron alkaessa. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 132 | Talletuksen ohitus | Ohita asiakastilausten oletusarvoinen ennakkomaksu. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 913 | Suunnittelutilan poistaminen käytöstä | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei |
@@ -96,14 +95,14 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 615 | Muokkaa tarjousta | Jatka valittua tarjousta niin, että sitä voidaan muokata myyntipisteessä. | Ei | Ei | Ei | Ei | Ei |
 | 518 | Kulutilit | Kirjaa kassasta satunnaisia kuluja varten poistettavat rahat. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 919 | Jatkettu kirjautuminen | Määritä tai poista sisäänkirjautumisoikeus lukemalla viivakoodi tai kortti. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
-| 1201 | Liukuva merkintä | Tämän toiminnon avulla käyttäjä voi lisätä rahaa nykyiseen kassaan tai vuoroon. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| 1201 | Liukuva merkintä | Lisää rahaa nykyiseen kassaan tai vuoroon. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 1218 | Pakota oheislaitteen lukituksen poisto | Järjestelmä käyttää tätä toimintoa sisäisesti myyntipisteen oheislaitteiden lukituksen poistamiseen. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei |
 | 520 | Lahjakortin saldo | Näytä lahjakortin saldo. | Kyllä | Kyllä | Ei | Ei | Ei |
 | 708 | Poista laitteen aktivointi | Poista nykyisen laitteen aktivointi niin, että sitä ei voi käyttää myyntipisteen kassakoneena. | Ei | Ei | Ei | Ei | Ei |
 | 804 | Saapuva toiminto | Käytä saapuvan myymälän varastonhallinnan toimintoja. | Kyllä | Ei | Kyllä | Ei| Ei |
 | 517 | Tulotilit | Rahasumma, joka sijoitetaan kassaan muusta kuin myynnistä johtuvasta syystä. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 801 | Varastohaku | Haku käytettävissä tilauksessa ja luvattavissa olevat määrät (ATP) nykyisessä myymälässä ja muissa käytettävissä olevissa sijainneissa. | Kyllä | Kyllä | Kyllä | Ei | Ei |
-| 122 | Laskun kommentti | Tämän toiminnon avulla käyttäjä voi syöttää nykyistä tapahtumaa koskevan kommentin. | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| 122 | Laskun kommentti | Lisää nykyistä tapahtumaa koskeva kommentti. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 511 | Myönnä hyvityslasku | Luo hyvityslasku ja anna tosite palautuksen sijaan. | Kyllä | Kyllä | Ei | Ei | Ei |
 | 512 | Myönnä lahjakortti | Luo uusi lahjakortti määritetylle summalle. | Kyllä | Kyllä | Ei | Ei | Ei |
 | 625 | Myönnä kanta-asiakaskortti | Anna asiakkaalle kanta-asiakkuuskortti, jotta asiakas voi osallistua myymälän kanta-asiakasohjelmaan. | Kyllä | Kyllä | Kyllä | Ei | Ei |
@@ -147,42 +146,42 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 1 056 | Tulosta X | Tulosta nykyinen vuoro ja muodosta siitä X-raportti. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 103 | Tuotteen kommentti | Lisää kommentti valittuun rivinimikkeeseen tapahtumassa. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 100 | Tuotemyynti | Lisää määritetty tuote tapahtumaan. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
-| 108 | Tuotehaku | Tämän toiminnon avulla käyttäjä voi hakea tuotteen siirtymällä tuotteen hakusivulle myyntipisteessä. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
-| 633 | Tarjouksen vanhentumispäivä | Tämän toiminnon avulla käyttäjä voi tarkastella myyntitarjouksen vanhentumispäivämäärää tai muokata sitä. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
+| 108 | Tuotehaku | Hae tuotetta siirtymällä tuotteen hakusivulle myyntipisteessä. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| 633 | Tarjouksen vanhentumispäivä | Tarkastele myyntitarjouksen vanhentumispäivämäärää tai muokkaa sitä. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 627 | Laske uudelleen | Laske kaikki asiakastilauksen rivit ja verot uudelleen nykyisen konfiguraation perusteella. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 143 | Laske veloitukset uudelleen | Laske uudelleen tilausta koskevat automaattiset kulut. | Kyllä | Kyllä | Ei | Ei| Ei |
-| 515 | Jatka tilausta | Tämän toiminnon avulla käyttäjä voi hakea ja jatkaa asiakastilauksia ja myyntitarjouksia. | Kyllä | Kyllä | Kyllä | Ei | Ei |
-| 504 | Jatka tapahtumaa | Tämän toiminnon avulla käyttäjä voi jatkaa aiemmin keskeytetyn tapahtuman nykyisessä myymälässä. | Kyllä | Kyllä | Ei | Kyllä# | Ei |
+| 515 | Jatka tilausta | Hae ja jatka asiakastilauksia ja myyntitarjouksia. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 504 | Jatka tapahtumaa | Jatka aiemmin keskeytettyä tapahtumaa nykyisessä myymälässä. | Kyllä | Kyllä | Ei | Kyllä# | Ei |
 | 305 | Lunasta kanta-asiakkuuspisteet | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Kyllä |
-| 635 | Hyvitä toimitusmaksut | Tämän toiminnon avulla käyttäjä voi hyvittää peruutetun tilauksen toimitusmaksut. | Ei | Ei | Ei | Ei | Ei |
+| 635 | Hyvitä toimitusmaksut | Peruuta tilauksen lähetyskulujen hyvitys. | Ei | Ei | Ei | Ei | Ei |
 | 644 | Poista kuponkikoodi | Käyttäjää pyydetään poistamaan kupongit valitsemalla ne tapahtumaan tällä hetkellä liitetystä kuponkiluettelosta. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 1 057 | Tulosta Z uudelleen | Tulosta edellisen vuoron tai valitun vuoron Z-raportti. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 1 216 | Nollaa salasana | Tämän toiminnon avulla salasanan palautuksen käyttöoikeuden omaava käyttäjä voi palauttaa toisen työntekijän salasanan tilapäisen salasanan avulla. | Kyllä | Kyllä | Kyllä | Ei | Ei |
-| 1219 | URL-linkin avaaminen POS-sovelluksessa | Käyttäjä voi avata tämän toiminnon avulla järjestelmänvalvojan määrittämän URL-osoitteen POS:ssa. | Kyllä | Kyllä | Kyllä | Kyllä | Ei | 
+| 1219 | URL-osoitteen avaaminen myyntipisteessä | Avaa myyntipisteen järjestelmänvalvojan konfiguroitu URL-osoite. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 109 | Palauta tuote | Suorita yksittäisten tuotteiden palautus. Seuraava skannattu tuote näytetään palautettuna tuotteena, jolla on negatiivinen määrä ja hinta. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 114 | Palautustapahtuma | Jatka edellistä tapahtumaa sen vastaanottonumeron avulla ja palauta jotkin sen tuotteista. | Kyllä | Kyllä | Kyllä | Kyllä§ | Ei |
 | 1 211 | Toimitus kassakaappiin | Suorita toimitus kassakaappiin, jossa rahat siirretään kassakoneesta kassakaappiin. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 516 | Myyntilasku | Tämän toiminnon avulla asiakas voi maksaa valitun myyntilaskun. | Kyllä | Kyllä | Ei | Ei | Ei |
-| 502 | Myyjä | Tämän toiminnon avulla käyttäjä voi määrittää **myynnin vastaanottajan** arvon myyntipisteen asiakastilausten myyntitilauksissa. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
+| 502 | Myyjä | Määritä **myynnin vastaanottajan** arvo myyntipisteen asiakastilausten myyntitilauksissa. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 2000 | Aikataulujen hallinta | Tätä toimintoa ei tueta vielä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 2001 | Aikataulupyynnöt | Tätä toimintoa ei tueta vielä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 622 | Etsi tilauksia | Tämän toiminnon avulla käyttäjät voivat määrittää ennalta myyntipisteen painikkeita ja suorittaa hakuja nimikkeen, asiakkaan tai luokan mukaan. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 1 213 | Hae toimitusosoitetta | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei |
-| 709 | Valitse laiteasema | Tämän toiminnon avulla käyttäjä voi valita laiteaseman käytettävissä olevien laiteasemien luettelosta. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
-| 637 | Määritä tapahtuman oletusmyyntiedustaja | Tämän toiminnon avulla käyttäjä voi valita jonkin provisiomyyntiryhmän (myyjät) myöhemmin lisättävien rivien oletusmyyjäksi. | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| 709 | Valitse hardware station | Valitse laiteasema käytettävissä olevien laiteasemien luettelosta. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| 637 | Määritä tapahtuman oletusmyyntiedustaja | Valitse jokin provisiomyyntiryhmä (myyjät) myöhemmin lisättävien rivien oletusmyyjäksi. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 105 | Määritä määrä | Muuta tapahtuman rivinimikkeen määrää. | Kyllä | Kyllä | Ei | Kyllä | Ei |
-| 638 | Aseta myyntiedustaja riville | Tämän toiminnon avulla käyttäjä voi valita jonkin provisiomyyntiryhmän (myyjät) parhaillaan valittuna olevalle riville. | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| 638 | Aseta myyntiedustaja riville | Valitse jokin provisiomyyntiryhmä (myyjät) parhaillaan valittuna olevalle riville. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 630 | Lähetä kaikki tuotteet | Määritä kaikkien rivinimikkeiden toteutustavaksi **Lähetys**. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 629 | Lähetä valitut tuotteet | Määritä valittujen rivien toteutustavaksi **Lähetys**. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 115 | Näytä kirjauskansio | Näytä myymälän kirjauskansio. Voit tarkastella tapahtumia, tulostaa kuitteja ja lahjojen kuitteja uudelleen ja palauttaa niitä palautusta varten. | Kyllä | Kyllä | Kyllä | Kyllä\*\* | Ei |
-| 802 | Varaston inventointi | Tämän toiminnon avulla käyttäjä voi luoda varastotilanteelle tai inventoinneille varastonlaskennan kirjauskansioita tai muokata niitä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 802 | Varaston inventointi | Luo varastotilanteelle tai inventoinneille varastonlaskennan kirjauskansioita tai muokkaa niitä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 401 | Alavalikko | Tämä toiminto siirtää käyttäjän toiseen linkitettyyn painikeruudukkoon. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 1 054 | Keskeytä vuoro | Keskeytä nykyinen vuoro niin, että nykyiselle kassakoneelle voidaan aktivoida uusi vuoro tai jokin muu vuoro. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 503 | Keskeytä tapahtuma | Keskeytä nykyinen myyntitapahtuma niin, että sitä voidaan jatkaa myöhemmin myymälässä. | Kyllä | Kyllä | Ei | Kyllä# | Ei |
 | 1004 | Tehtävän tallennustoiminto | Avaa tehtävien tallennustoiminto ja tallenna myyntipisteen menettelytapavaiheet. | Ei | Ei | Ei | Kyllä | Ei |
-| 1 052 | Kassan laskeminen maksuvälineittäin | Tämän toiminnon avulla käyttäjä voi määrittää kassan rahasumman kullekin inventoidulle maksutavalle. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
-| 1 210 | Maksuvälineen poisto | Tämän toiminnon avulla käyttäjä voi poistaa rahaa nykyisestä kassasta tai vuorosta. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
-| 920 | Kello | Tämän toiminnon avulla käyttäjät voivat leimata itsensä sisään työvuoroihin ja tauoille ja niiltä ulos. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 1 052 | Kassan laskeminen maksuvälineittäin | Määritä kassan rahasumma kullekin inventoidulle maksutavalle. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| 1 210 | Maksuvälineen poisto | Poista rahaa nykyisestä kassasta tai työvuorosta. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
+| 920 | Kellonaika | Leimaa sisään työvuoroihin ja tauoille ja niiltä ulos. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 302 | Kokonaisalennuksen summa | Syötä tapahtuman alennussumma. Tätä toimintoa käytetään vain nimikkeissä, joista voidaan antaa alennusta määritettyjen alennusrajojen mukaisesti. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 303 | Kokonaisalennusprosentti | Syötä tapahtuman alennusprosentti. Tätä toimintoa käytetään vain nimikkeissä, joista voidaan antaa alennusta määritettyjen alennusrajojen mukaisesti. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 501 | Tapahtuman kommentti | Lisää kommentti nykyiseen tapahtumaan. | Kyllä | Kyllä | Ei | Kyllä | Ei |

@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Financesta.
 author: roschlom
-ms.date: 04/14/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7ce7353de5795fd82e53bb1b7919c95dae4fe0ab6b8f536361613a7bcae19101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781198"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890950"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -32,6 +32,58 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Financen version 10.0.24 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Ruotsin arvonlisäveroraportti (suunnittelu raportointikoodien perusteella)
+
+[Ruotsin arvonlisäveroraportti](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Ruotsin ALV-ilmoituksella](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Ruotsin arvonlisäveroraporttia ei enää tueta joulukuun 1. päivän 2022 jälkeen (Ruotsin raportin asettelu). Uudet **ALV-ilmoitus XML (SE**) ja **ALV-ilmoitus Excel (SE)** Sähköiset raportointimuodot (ER) otetaan käyttöön mallin **Veroilmoitus** mallissa. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Itävallan ALV-ilmoitus (suunnittelu raportointikoodien perusteella)
+
+[ALV-ilmoituksen erittely, Itävalta](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Itävallan ALV-ilmoituksella](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä, ettei **ALV-ilmoitusta (AT)** sähköisessä raportoinnissa (ER) **ALV-ilmoitusmallin (AT)** alla enää tueta. Uudet **ALV-ilmoitus XML (AT)** ja **ALV-ilmoitus Excel (AT)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>Saksan ELSTER-ilmoitus (suunnittelu raportointikoodien perusteella)
+
+[ALV-ilmoitus](../localizations/emea-de-vat-declaration.md)</br>
+[Sähköisen veroilmoituksen määrittäminen, Saksa](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[ALV-ilmoituksen antaminen sähköisesti (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Saksan ALV-ilmoituksella](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä, ettei **Elster (DE)**- ja **Elster-malli (DE)**- sähköisen raportoinnin (ER) -muotoja enää tueta. Uudet **ALV-ilmoitus XML (DE)** ja **ALV-ilmoitus Excel (DE)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Alankomaiden OB-ilmoitus (suunnittelu raportointikoodien perusteella)
+
+[OB-ilmoitus](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Alankomaiden ALV-ilmoituksella](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä lopettavamme **OB-ilmoituksen (NL)** ja **OB-ilmoitusmallin** sähköisen raportoinnin (ER) tukemisen. Uudet **ALV-ilmoitus XML (NL)** ja **ALV-ilmoitus Excel (NL)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Financen version 10.0.20 poistetut tai vanhentuneet ominaisuudet
 

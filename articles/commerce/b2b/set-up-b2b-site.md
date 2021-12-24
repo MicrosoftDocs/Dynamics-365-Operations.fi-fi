@@ -2,7 +2,7 @@
 title: B2B-verkkokauppasivuston määrittäminen
 description: Tässä aiheessa kuvataan, kuinka määritetään yritysten (B2B) verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713745"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891382"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Yritystenvälisen yhteistyön sähköisen kaupankäynnin sivuston määrittäminen
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Yritysten välisillä (B2B) verkkokauppasivustoilla on joitakin avaintoimintoja, jotka optimoivat B2B-käyttäjän työnkulun. Tässä aiheessa kuvataan, kuinka määritetään B2B-verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla. Se käy läpi moduulit ja sivuston asetukset, jotka pitää olla konfiguroitu B2B-skenaarioiden käyttöön ottamiseksi.
 
@@ -306,6 +307,30 @@ Voit lisätä pikalisäysmoduulin ostoskorisivulle Commercen sivustonmuodostimes
 
 > [!NOTE] 
 > Pikalisäysmoduuli on käytettävissä Commerce 10.0.17 -versiosta eteenpäin. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Lisää joukko-ostosmoduuli tuotetietosivulle
+
+Tuotetietosivun (PDP) joukko-ostomoduuli tarjoaa matriisipohjaisen kokemuksen, jonka avulla ostaja voi lisätä nopeasti useita tuotteen muunnelmia ostoskoriin. Kun sivuston käyttäjän on tilattava useita saman tuotteen muuttuja, tämän kokemus eliminoi tuotedimensioiden yhdistelmän valitsemisen, määrän määrittämisen, muuttujan lisäämisen kärryyn ja prosessin toistamisen muiden tuotedimensioyhdistelmien osalta.
+
+Joukko-ostomoduuli lisätään PDP:hen Commercen sivustonmuodostimessa seuraavasti.
+
+1. Valitse **Mallit** ja valitse sivuston PDP-malli.
+1. Valitse **Muokkaa**.
+1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Joukko-osto**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Valitse **Sivut** ja valitse sivuston PDP.
+1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse **Säilö**-moduulin ominaisuusruudussa **Leveys**-kohdassa **Täytä säilö**.
+1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Joukko-osto**-moduuli ja valitse sitten **OK**.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
+
+> [!NOTE] 
+> Joukko-ostomoduuli on käytettävissä Commerce 10.0.24 -versiosta eteenpäin. Jos päivität vanhemmasta Commerce -versiosta, sinun on päivitettävä appsettings.json-tiedosto manuaalisesti. Ohjeita on kohdassa [SDK:n ja moduulikirjaston päivitykset](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -2,7 +2,7 @@
 title: Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
 description: Tässä ohjeaiheessa kerrotaan, paikallisia reunapalvelujen scale uniteja valmistellaan käyttämällä mukautettua laitteistoa ja käyttöönottoa, joka perustuu paikallisiin liiketoimintatietoihin.
 author: cabeln
-ms.date: 04/22/2021
+ms.date: 11/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 8913debd614827ef66ded88e0da61663ca9c6b3d
+ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7729072"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7894715"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
 
@@ -95,7 +95,7 @@ Tämä vaihe luo toimivan LBD-ympäristön. Ympäristöllä ei kuitenkaan vältt
 
         ```powershell
         # Host URL is your DNS record\host name for accessing the AOS
-        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
         ```
 
     1. Luo uusi Azure Active Directory (Azure AD) -sovellus, jonka avulla Alm Orchestration -palvelu voi olla yhteydessä Scale Unit -hallintapalveluun.

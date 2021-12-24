@@ -2,7 +2,7 @@
 title: Pikanäppäimet
 description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet Finance and Operations -sovelluksia.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800190"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913515"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti Finance and Operations -sovelluksissa.
 
@@ -150,6 +149,7 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Suorita ruudukon oletustoiminto<blockquote>[!NOTE] Tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.</blockquote> | Enter                           |
 | Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
 | Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |
+| Siirrä nykyinen sarake seuraavaan/edelliseen asemaan (kohdistus otsikkorivillä)                                   | Ctrl+Vaihto+Oikea nuoli / Ctrl+Vaihto+Vasen nuoli |
 | Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)                                              | Enter                           |
 | Muuta nykyisen sarakkeen kokoa, jotta sisältö mahtuu siihen (kohdistus otsikkorivillä)                                           | A (tai sarakkeen kokokahvan kaksoisnapsautus) |
 

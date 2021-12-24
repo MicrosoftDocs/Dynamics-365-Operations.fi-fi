@@ -1,8 +1,8 @@
 ---
 title: Laskelman kirjaamisen toiminnallisuuden parannukset
 description: Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -10,19 +10,20 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772201"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891438"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
 [!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations7.3.2 -versiossa.
 
@@ -116,9 +117,17 @@ Laskelma käy läpi eri työvaiheet (esimerkiksi Luo, Laske, Tyhjennä ja Kirjaa
 
 ### <a name="aggregated-transactions"></a>Kootut tapahtumat
 
-Kirjausprosessin aikana myyntitapahtumat kootaan konfiguraation mukaan. Nämä kootut transaktiot tallennetaan järjestelmässä ja niitä käytetään myyntitilausten luomiseen. Jokainen koottu transaktio luo vastaavan myyntitilauksen järjestelmässä. Voit tarkastella koottuja transaktioita käyttämällä **Kootut tapahtumat** -painiketta laskelman **Suorituksen tiedot** -ryhmässä.
+Kirjaamisen aikana käteis- ja siirtotapahtumat yhdistetään asiakkaan ja tuotteen mukaan. Näin ollen myyntitilausten ja luotujen rivien määrä pienenee. Kootut transaktiot tallennetaan järjestelmässä ja niitä käytetään myyntitilausten luomiseen. Jokainen koottu transaktio luo vastaavan myyntitilauksen järjestelmässä. 
 
-Kootun transaktion **Myyntitilauksen tiedot** -välilehdessä näkyvät seuraavat tiedot:
+Jos laskelmaa ei ole kirjattu kokonaan, voit tarkastella laskelman koostettuja tapahtumia. Valitse toimintoruudun **Laskelma**-välilehden **Suorituksen tiedot** -ryhmässä **Koostetut tapahtumat**.
+
+![Koostettu tapahtuma -painike laskelmalle, jota ei ole kirjattu kokonaan.](media/aggregated-transactions.png)
+
+Kirjattujen tiliotteiden osalta voit tarkastella koottuja tapahtumia **Kirjatut tiliotteet** -sivulla. Valitse toimintoruudussa **Kyselyt** ja valitse sitten **Koostetut tapahtumat**.
+
+![Kirjattujen lauseiden koostettujen tapahtumien komento.](media/aggregated-transactions-posted-statements.png)
+
+Kootun transaktion **Myyntitilauksen tiedot** -pikavälilehdessä näkyvät seuraavat tiedot:
 
 - **Tietuetunnus** – Kootun transaktion tunnus.
 - **Laskelman numero** – Laskelma, johon koottu transaktio kuuluu.
@@ -127,12 +136,28 @@ Kootun transaktion **Myyntitilauksen tiedot** -välilehdessä näkyvät seuraava
 - **Koostettujen rivien määrä** – Kootun transaktion ja myyntitilauksen rivien kokonaismäärä.
 - **Tila** – Kootun transaktion viimeisin tila.
 - **Laskun tunnus** – Myyntilaskun tunus, kun kootun transaktion myyntitilaus laskutetaan. Jos tämä kenttä on tyhjä, myyntitilauksen laskua ei ole kirjattu.
+- **Virhekoodi** – Tämä kenttä määritetään, jos koostamisen tilana on virhe.
+- **Virhesanoma** – Tämä kenttä määritetään, jos koostamisen tilana on virhe. Se sisältää tietoja siitä, mikä on aiheuttanut prosessin epäonnistumisen. Voit korjata ongelman virhekoodin tietojen avulla ja käynnistää prosessin sitten manuaalisesti uudelleen. Koostettu myynti on ehkä poistettava ja käsiteltävä uudella laskelmalla ratkaisutyypin mukaan.
 
-Kootun taphtuman **Tapahtuman tiedot** -välilehdessä näkyvät kaikki tapahtumat, jotka on tuotu koottuun tapahtumaan. Kootun tapahtuman kootuilla riveillä näkyvät kaikki tapahtumien kootut tietueet. Kootuilla riveillä näkyy myös tietoja, kuten nimike, malli, määrä, hinta, nettosumma, yksikkö ja varasto. Kukin koottu rivi vastaa yleisesti yhtä myyntitilausriviä.
+![Yhdistetyn tapahtuman myyntitilausten tiedot -pikavälilehden kentät.](media/aggregated-transactions-error-message-view.png)
 
-**Kootut tapahtumat** -sivulla voit ladata tietyn kootun tapahtuman XML:n valitsemalla **Vie myyntitilausten XML** -painikkeen. Voit korjata myyntitilauksen luomisen ja kirjaamiseen liittyviä ongelmia XML-tiedoston avulla. Lataa XML, lähetä se testiympäristöön ja tee virheenkorjaus testiympäristössä. Koottujen tapahtumien XML:n lataustoiminto ei ole käytettävissä laskelmille, jotka on kirjattu.
+Kootun taphtuman **Tapahtuman tiedot** -pikavälilehdessä näkyvät kaikki tapahtumat, jotka on tuotu koottuun tapahtumaan. Kootun tapahtuman kootuilla riveillä näkyvät kaikki tapahtumien kootut tietueet. Kootuilla riveillä näkyy myös tietoja, kuten nimike, malli, määrä, hinta, nettosumma, yksikkö ja varasto. Kukin koottu rivi vastaa yleisesti yhtä myyntitilausriviä.
 
-Kootun tapahtuman näkymä tarjoaa seuraavat edut:
+![Koostettujen tapahtumien tapahtumatiedot -pikavälilehti.](media/aggregated-transactions-sales-details.png)
+
+Joissakin tilanteissa koostettuihin tapahtumiin saattaa epäonnistua konsolidoidun myyntitilauksen kirjaaminen. Näissä tilanteissa laskelman tilaan liittyy virhekoodi. Jos haluat tarkastella vain koostettuja tapahtumia, joissa on virheitä, voit ottaa **Näytä vain epäonnistuneet** -suodattimen käyttöön yhdistettyjen tapahtumien näkymässä valitsemalla valintaruudun. Ottamalla suodattimen käyttöön voit rajoittaa tulokset yhteenlasketuille tapahtumille, joissa on virheitä, jotka edellyttävät ratkaisua. Lisätietoja näiden virheiden korjaamisesta löydät kohdasta [asynkronisten asiakastilausten tapahtumien muokkaaminen ja tarkistaminen](edit-order-trans.md).
+
+![Näytä vain epäonnistuneet -suodattimen valintaruutu koostettujen tapahtumien näkymässä.](media/aggregated-transactions-failure-view.png)
+
+**Kootut tapahtumat** -sivulla voit ladata tietyn kootun tapahtuman XML:n valitsemalla **Vie kootut tiedot**. Voit tarkastella XML-muotoa missä tahansa XML-muotoilussa, kun haluat nähdä myyntitilauksen luontiin ja kirjaamiseen liittyvät todelliset tiedot. Koottujen tapahtumien XML:n lataustoiminto ei ole käytettävissä laskelmille, jotka on kirjattu.
+
+![Vie koostetut tiedot -painike Koostetut tapahtumat -sivulla.](media/aggregated-transactions-export.png)
+
+Jos et voi korjata virhettä korjaamalla myyntitilauksen tai myyntitilausta tukevan tiedon, **Asiakkaan tilauksen poistaminen** -painike on käytettävissä. Jos haluat poistaa tilauksen, valitse epäonnistunut koostettu tapahtuma ja valitse sitten **Poista asiakastilaus**. Sekä koostettu transaktio että vastaava myyntitilaus poistetaan. Voit nyt tarkistaa tapahtumat käyttämällä muokkaus- ja kirjaustoimintoja. Vaihtoehtoisesti ne voidaan käsitellä uudelleen uudella laskelmalla. Kun kaikki viat on korjattu, voit jatkaa laskelman kirjaamista suorittamalla laskelman kirjaustoiminnon.
+
+![Poista asiakastilauspainike koostettujen tapahtumien näkymässä.](media/aggregated-transactions-delete-cust-order.png)
+
+Koottujen tapahtumien näkymä tarjoaa seuraavat edut:
 
 - Käyttäjä näkee kootut tapahtumat, jotka epäonnistuivat myyntitilauksen luonnin aikana, sekä myyntitilaukset, jotka epäonnistuivat laskutuksen aikana.
 - Käyttäjä näkee, kuinka tapahtumat kootaan.

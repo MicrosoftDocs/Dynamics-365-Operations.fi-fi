@@ -2,7 +2,7 @@
 title: Verolaskentamäärityksen päätietojen haun ottaminen käyttöön
 description: Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista.
 author: kai-cloud
-ms.date: 11/03/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
-ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "7749507"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867349"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Verolaskentamäärityksen päätietojen haun ottaminen käyttöön 
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista. Käytössä on avattava luettelo, jossa voi valita verolaskentamäärityksen arvoja esimerkiksi **Toimittajan tili**-, **Nimikekoodi**- ja **Toimitusehto**-kenttiin. Nämä arvot saadaan Microsoft Dataverse -tietolähdettä käyttävästä yhdistetystä Microsoft Dynamics 365 Finance -ympäristöstä.
+Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista. Käytössä on avattava luettelo, jossa voi valita verolaskentamäärityksen arvoja esimerkiksi **Yritys**, **Toimittajan tili**-, **Nimikekoodi**- ja **Toimitusehto**-kenttiin. Nämä arvot saadaan Microsoft Dataverse -tietolähdettä käyttävästä yhdistetystä Microsoft Dynamics 365 Finance -ympäristöstä.
+
+> [!NOTE] 
+> Verolaskennan perustietojen hakutoiminto on valinnainen toiminto. Voit ohittaa seuraavat vaiheet, jos poistat **Veropalvelun tietolähde Dataverse-tietolähdetukiominaisuuden** käytöstä RCS (Regulatory Configuration Service) -palvelussa. Tällöin avattava luettelo ei kuitenkaan ole käytettävissä verolaskelman konfiguraatiossa.
 
 1. Määritä Microsoft Power Platformin integraatio Microsoft Dynamics Lifecycle Services (LCS) -palveluissa. Lisätietoja on kohdassa [Microsoft Power Platform -apuohjelmien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Kun olet suorittanut tämän vaiheen, Microsoft Power Platform -ympäristön nimi näkyy **Power Platform -integrointi** -osassa.
 2. Siirry [Microsoft Power Platformin hallintakeskukseen](https://admin.powerplatform.microsoft.com/environments) ja valitse ympäristön nimi. Ympäristön URL-osoite annetaan.

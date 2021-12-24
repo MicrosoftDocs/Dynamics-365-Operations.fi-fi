@@ -2,7 +2,7 @@
 title: Meksikon sähköisen laskutuksen käytön aloittaminen
 description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen käytön.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4266d7bca163b1d6aa1261e086f10a4f0f5d7e360051db169fbcab34363c81c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
+ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742150"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881588"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Meksikon sähköisen laskutuksen käytön aloittaminen
 
@@ -35,7 +35,15 @@ Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen la
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin suoritat tämän aiheen vaiheet, sinun on suoritettava aiheen [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
+Ennen kuin suoritat tämän aiheen vaiheet, sinun on suoritettava aiheiden [Sähköisen laskutuspalvelun hallinnan käytön aloittaminen](e-invoicing-get-started-service-administration.md) ja [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
+
+## <a name="set-up-the-cadena-xslt"></a>Cadena XSLT:n määrittäminen
+
+Jos haluat lisätä Cadena XSLT -skeeman CFDI-käsittelyn globalisointiominaisuuteen, noudata seuraavia ohjeita.
+
+1. Lataa skeema [SAT-verkkosivulta](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
+2. Tiivistä skeema ZIP-tiedostoksi.
+3. Tallenna xslt-tiedosto Azure-tallennustilille, joka on määritetty palveluympäristössä uutta konttia varten.
 
 ## <a name="rcs-setup"></a>RCS-asetukset
 
@@ -127,6 +135,17 @@ CFDI-laskun peruutuksen lähettämiseen vaaditaan toimintomääritykset **Peruut
 
 > [!NOTE]
 > Käytä samoja vaiheita toimintovaiheiden **Peruuta** ja **Peruutuspyyntö** **Kutsu Meksikon PAC-palvelua**-toiminnon URL-osoitteen päivittämiseen.
+
+### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>Cadena XLST -skeeman polun määrittäminen
+
+1. Voit hallita muuttujia valitsemalla **Toimintoversion määritys** -sivun **Muuttujat**-välilehdessä muuttujan nimen **DigitalSignatureXSLT**.
+2. Kirjoita **Arvot**-kenttään: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+   
+    missä: <RelativePath> = kansio\\kansio\\tiedostonimi, jossa on kaksi kenoviivaa ContainerName-nimen on osoitettava palvelussa käytettävää säilöä.
+   
+    Muuttujan esimerkki:
+    
+    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>Luonnosversion määrittäminen sähköisen laskutuksen ympäristölle
 

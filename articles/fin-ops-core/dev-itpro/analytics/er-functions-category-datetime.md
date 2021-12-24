@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647260"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890774"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Luettelo ER-funktioista päivämäärä- ja aikaluokassa
 
@@ -37,8 +37,8 @@ Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Tämä funktio palauttaa *Merkkijonoarvon*, joka esittää tietyn päivämäärä-/aika-arvon tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Tämä funktio palauttaa *DateTime-arvon*, joka muunnetaan tietystä tekstiarvosta tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa päivämäärä-/aika-arvoksi. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Tämä funktio palauttaa *DateTime-arvon* , joka muunnetaan tietyn päivämäärän arvosta päivämäärä- ja aika-arvoksi koordinoidussa yleisajassa (Greenwichin aika \[GMT\]). |
-| [DateValue](er-functions-datetime-datevalue.md) | Tämä funktio palauttaa *Date-arvon*, joka muunnetaan annetusta tekstiarvosta määrätyssä muodossa ja valinnaisesti määritellyssä kulttuurissa päivämääräarvoksi. |
-| [DayOfYear](er-functions-datetime-dayofyear.md) | Tämä toiminto palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrää kuvaavan arvon *kokonaislukuna*. |
+| [DateValue](er-functions-datetime-datevalue.md) | Tämä funktio palauttaa *[Date](er-formula-supported-data-types-primitive.md#date)*-arvon, joka muunnetaan annetusta tekstiarvosta määrätyssä muodossa ja valinnaisesti määritellyssä kulttuurissa päivämääräarvoksi. |
+| [DayOfYear](er-functions-datetime-dayofyear.md) | Tämä toiminto palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrää kuvaavan arvon *[kokonaislukuna](er-formula-supported-data-types-primitive.md#integer)*. |
 | [Päivää](er-functions-datetime-days.md) | Tämä toiminto palauttaa ensimmäisen määritetyn päivämäärän ja toisen määritetyn päivämäärän välisten päivien määrää kuvaavan arvon *kokonaislukuna*. |
 | [Now](er-functions-datetime-now.md) | Tämä funktio palauttaa *DateTime*-arvon, joka edustaa nykyistä sovelluspalvelimen päivämäärää ja aikaa. |
 | [NullDate](er-functions-datetime-nulldate.md) | Tämä funktio palauttaa *päivämäärän* arvon, joka vastaa **Null** -arvoa (1. tammikuuta 1900). |
@@ -46,6 +46,7 @@ Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan
 | [SessionNow](er-functions-datetime-sessionnow.md) | Tämä funktio palauttaa *DateTime*-arvon, joka edustaa nykyistä sovellusistunnon päivämäärää ja aikaa. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | Tämä funktio palauttaa *Date*-arvon, joka edustaa nykyistä sovellusistunnon päivämäärää. |
 | [Tänään](er-functions-datetime-today.md) | Tämä funktio palauttaa *Date*-arvon, joka edustaa nykyistä sovelluspalvelimen päivämäärää. |
+| [WeekNum](er-functions-datetime-weeknum.md) | Tämä funktio palauttaa *Kokonaisluku*-arvon, joka edustaa tiettyä viikkoa vuodessa. |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

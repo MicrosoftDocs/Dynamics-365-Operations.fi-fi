@@ -1,7 +1,7 @@
 ---
 title: Konsolidointitiliryhmät ja lisäkonsolidointitilit
-description: Tässä ohjeaiheessa on tietoja konsolidointitiliryhmistä ja lisäkonsolidointitileistä ja siinä kerrotaan, kuinka niitä käytetään Microsoft Dynamics 365 Financessa.
-author: aprilolson
+description: Tässä aiheessa on tietoja konsolidointitiliryhmistä ja lisäkonsolidointitileistä ja siinä kerrotaan, kuinka niitä käytetään.
+author: panolte
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
@@ -12,25 +12,25 @@ ms.reviewer: roschlom
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
-ms.author: aolson
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3e6671e5f3ceff671210011913a3a91194613c7c0e4e1d8e8063e4e27e5f3cf5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 489f5417b6044e02d4711a03a17d6c19031cc2ee
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727417"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883384"
 ---
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolidointitiliryhmät ja lisäkonsolidointitilit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja konsolidointitiliryhmistä ja lisäkonsolidointitileistä ja siinä kerrotaan, kuinka niitä käytetään Microsoft Dynamics 365 Financessa.
+Tässä aiheessa on tietoja konsolidointitiliryhmistä ja lisäkonsolidointitileistä ja siinä kerrotaan, kuinka niitä käytetään.
 
 ## <a name="consolidation-account-groups"></a>Konsolidointitiliryhmät
 
-Konsolidointitiliryhmien avulla voit luoda tiliryhmiä, joita haluat käyttää tietojen konsolidointiin. Useimmiten konsolidointitiliryhmä vastaa hallituksen määräämää tilikarttaa tai yhdistää tilit ryhmään, joka on määritetty yrityksen pääkonttorissa. Löydät konsolidoinnin tiliryhmät **Konsolidoinnit**-moduulin **Määritys**-alueelta. Kun lisäät uuden ryhmän, kirjoita tiliryhmän yksilöivä tunnus sekä nimi.
+Konsolidointitiliryhmien avulla voit luoda tiliryhmiä, joita haluat käyttää tietojen konsolidointiin. Konsolidointitiliryhmä edustaa yleensä valtion valtuuttamaa tilikarttaa. Konsolidointitiliryhmä voi myös määrittää tilit ryhmään, jonka yrityksen pääkonttori määrittää. Löydät konsolidoinnin tiliryhmät **Konsolidoinnit**-moduulin **Määritys**-alueelta. Kun lisäät uuden ryhmän, kirjoita tiliryhmän yksilöivä tunnus ja lisäksi nimi.
 
 ## <a name="additional-consolidation-accounts"></a>Lisäkonsolidointitilit
 Lisäkonsolidointitilien avulla voit liittää tilin aiemmin luodusta tilikartasta konsolidoinnin tiliryhmään. Sitten voit määrittää konsolidointitilin arvon ja nimen. 

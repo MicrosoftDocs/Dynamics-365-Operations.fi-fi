@@ -1,7 +1,7 @@
 ---
 title: Maksuliikenteen työtila
-description: Tässä ohjeaiheessa on tietoja maksuliikenteen työtilasta. Työtilassa on näkyvillä yrityksen pankkitileihin liittyviä tietoja. Siinä on myös yhteenvetonäkymä ja analytiikkasivu. Yhteenvetonäkymässä on yhteenvetoruudut, pankkitilitiedot, saldokaavio ja liittyvät tiedot. Analytiikkasivu näyttää Microsoft Power BI:n ominaisuuksien avulla pankkitilin saldoihin liittyviä visuaalisia tietoja.
-author: saraschi2
+description: Tässä ohjeaiheessa on tietoja maksuliikenteen työtilasta. Tässä työtilassa on yrityksen pankkitileihin liittyviä tietoja.
+author: roschlom
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 18171dd17165268fe0f7ac0cf7b3b225f679b9b6b7aeafb7789e837059cf5d79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f12f907e6135af60e092a2c20ebfd4d196b2d861
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755711"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883334"
 ---
 # <a name="bank-management-workspace"></a>Maksuliikenteen työtila
 

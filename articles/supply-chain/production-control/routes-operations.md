@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b31f949304dfc9cf8723c29c1354c35ff41dbe17
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566692"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891950"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -223,7 +223,7 @@ Tällöin **Työvaihesuhteet**-sivusta tulee ensisijainen kohde, kun ylläpidät
 Jos et määritä operatiivista resurssia tai resurssiryhmää osaksi työvaiheen resurssivaatimuksia, käytettävissä olevat resurssit saattavat toimia eri nopeuksilla. Tämän vuoksi työvaiheen käsittelyyn kuluva aika saattaa vaihdella. Voit ratkaista tämän ongelman määrittämällä työvaihesuhteen **Kaava**-kenttään prosessiajan laskentatavan. Valittavissa ovat seuraavat vaihtoehdot:
 
 - **Vakio** – (oletusvalinta) Laskelmassa käytetään vain työvaihesuhteen kenttiä. Määritetty ajoaika kerrotaan tilausmäärällä.
-- **Kapasiteetti** – Laskenta sisältää operatiivisen resurssin **Kapasiteetti**-kentän. Aika siis riippuu resurssista. Operatiiviselle resurssille määritetty arvo on kapasiteetti tuntia kohti. **Käsittelyaika** lasketaan **kapasiteetilla** jaetulla **tilausmäärällä**.
+- **Kapasiteetti** – Laskenta sisältää operatiivisen resurssin **Kapasiteetti**-kentän. Aika siis riippuu resurssista. Operatiiviselle resurssille määritetty arvo on kapasiteetti tuntia kohti. **Käsittelyaika** lasketaan **kapasiteetilla** jaetulla **tilausmäärällä**. Kapasiteetin arvo ei ole tietty mittayksikkö eikä sitä sen vuoksi muunneta **Kapasiteettiyksikkö**-kentän perusteella, joka on vain kuvaava kenttä, jota ei käytetä laskelmissa.
 - **Erä** – Erän kapasiteetti lasketaan työvaihesuhteen tietojen avulla. Erien määrä ja prosessiaika voidaan laskea tilausmäärän perusteella.
 - **Resurssierä** – Tämä vaihtoehto on periaatteessa sama kuin **Erä**-vaihtoehto. Laskenta sisältää kuitenkin operatiivisen resurssin **Eräkapasiteetti**-kentän. Aika siis riippuu resurssista.
 

@@ -2,7 +2,7 @@
 title: Budjetin hallinnan yleiskatsaus
 description: Tässä aiheessa esitellään budjetin hallintatoiminto ja tietoja, joiden avulla voit määrittää budjetin hallinnan organisaation taloudellisten resurssien hallinnan optimoimiseksi.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772876"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890697"
 ---
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
@@ -78,9 +78,7 @@ Seuraavaksi määritetään käyttäjäryhmät **Budjetin ylitysoikeudet** -väl
 **Käytettävissä olevat budjettivarat** -välilehdessä voit määrittää seuraavaksi kaavan, jota käytetään käytettävissä olevien budjettivarojen laskennassa. Laskelma voi sisältää luonnoksia tai kirjaamattomia asiakirjoja riippuen siitä, miten konservatiivisesti organisaatiossa hallitaan taloushallinnon resursseja tai millaiset säädökset tai toimialan vaatimukset ovat. 
 
 > [!NOTE]
-> Jos tätä laskelmaa muokataan budjettijakson aikana, muutokset eivät vaikuta budjetin hallinnan tarkistuksissa hyväksyttyihin tai aiemmin kirjattuihin tai valmistuneisiin asiakirjoihin. Sovelluksen julkaisussa 10.0.17 uusi **Seuraa vain summia budjettivarojen saatavilla olevassa laskelmassa** -toiminto tulee saataville rajoitetuille asiakkaille. Tämän ominaisuuden avulla voit muuttaa tietoja, joita seurataan BudgetSourceTracking-tauluissa. Kun tämä toiminto on käytössä, summat tallennetaan vain, jos ne on valittu käytettävissä olevan budjettivaran laskennassa käytettäviksi. Jos haluat, että **Seuraa vain summia budjettivarojen saatavilla olevassa laskennassa** -toiminto otetaan käyttöön, ota yhteyttä tukeen. 
-
-### <a name="documents-and-journals"></a>Tiedostot ja kirjauskansiot
+> Jos tätä laskelmaa muokataan budjettijakson aikana, muutokset eivät vaikuta budjetin hallinnan tarkistuksissa hyväksyttyihin tai aiemmin kirjattuihin tai valmistuneisiin asiakirjoihin. Ominaisuuden nimeltä **Seuraa vain summia käytettävissä olevien budjettivarojen laskennassa** avulla voit muuttaa BudgetSourceTracking-taulujen seurattavia tietoja. Kun tämä toiminto on käytössä, summat tallennetaan vain, jos ne on valittu käytettävissä olevan budjettivaran laskennassa käytettäviksi. Lisätietoja on kohdassa [Saatavilla olevat budjettivarat](budget-funds-available.md).
 
 Seuraavaksi valitaan **Tiedostot ja kirjauskansiot** -välilehdessä budjetin hallinnan tarkistuksiin mukaan otettavat lähdeasiakirjat ja -kirjauskansiot ja se, tehdäänkö tarkistus rivimerkinnän tasolla vai asiakirjalle kokonaisuutena. 
 

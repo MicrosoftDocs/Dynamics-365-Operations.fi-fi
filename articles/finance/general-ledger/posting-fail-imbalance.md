@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605426"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903247"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Kirjauskansioon kirjaamisen epäonnistuminen täsmäämättömyyden vuoksi
 
@@ -52,13 +52,13 @@ Tositteella voi olla yhdessä tuetussa skenaariossa monta tapahtumavaluuttaa. Si
 
 Jos kaikilla tositteen riveillä on sama tapahtumavaluutta ja jos tapahtumavaluutan summat on täsmäytetty, järjestelmä tarkistaa, että kirjanpitovaluutan summat on täsmäytetty. Jos tosite viedään ulkomaanvaluuttana, tapahtumavaluutan summat muunnetaan kirjanpitovaluutaksi tositteen rivien vaihtokurssin avulla: Ensin tositteen jokainen rivi käännetään ja pyöristetään kahteen desimaaliin. Sen jälkeen rivit lasketaan yhteen ja määritetään tällä tavoin debetien summa ja kreditien summa. Koska kukin rivi muunnetaan, debetien summa ja kreditien summa eivät ehkä täsmää. Jos eron itseisarvo on kuitenkin **Kirjanpitoparametrit**-sivulla määritetyn **Suurin pyöristysero** -arvon mukainen, tosite kirjataan ja ero kirjataan automaattisesti pyörityserotilille.
 
-Jos tositteessa on useita tapahtumavaluuttoja, kukin tositteen rivi muunnetaan kirjanpitovaluutaksi ja pyöristetään kahteen desimaalin tarkkuuteen, jonka jälkeen rivit lasketaan yhteen. Näin määritetään debetien summa ja kreditien summa. Jotta se olisi täsmäytetty debet- ja kredit-summat on täsmäytettävä joko käännettynä tai kun kirjanpitovaluutan pyöristysero sisältyy.
+Jos tositteessa on useita tapahtumavaluuttoja, kukin tositteen rivi muunnetaan kirjanpitovaluutaksi ja pyöristetään kahteen desimaalin tarkkuuteen, jonka jälkeen rivit lasketaan yhteen. Näin määritetään debetien summa ja kreditien summa. Täsmäyttäminen edellyttää, että debetit ja kreditit on täsmäytetty kirjanpitovaluuttana.  Pyöristyserotiliä ei koskaan lisätä tositteeseen kirjanpitovaluutassa, jotta veloitukset ja hyvitykset saadaan tasapainoon. 
 
 ### <a name="reporting-currency"></a>Raportoinnin valuutta
 
 Jos kaikilla tositteen riveillä on sama tapahtumavaluutta ja jos tapahtumavaluutan summat on täsmäytetty, järjestelmä tarkistaa, että raportointivaluutan summat on täsmäytetty. Jos tosite viedään ulkomaanvaluuttana, tapahtumavaluutan summat muunnetaan raportointivaluutaksi tositteen rivien vaihtokurssin avulla: Ensin tositteen jokainen rivi käännetään ja pyöristetään kahteen desimaaliin. Sen jälkeen rivit lasketaan yhteen ja määritetään tällä tavoin debetien summa ja kreditien summa. Koska kukin rivi muunnetaan, debetien summa ja kreditien summa eivät ehkä täsmää. Jos ero on kuitenkin **Kirjanpitoparametrit**-sivulla määritetyn **Suurin pyöristys raportointivaluuttana** -arvon mukainen, tosite kirjataan ja ero kirjataan automaattisesti pyörityserotilille.
 
-Jos tositteessa on useita tapahtumavaluuttoja, kukin tositteen rivi muunnetaan raportointivaluutaksi ja pyöristetään kahteen desimaalin tarkkuuteen, jonka jälkeen rivit lasketaan yhteen. Näin määritetään debetien summa ja kreditien summa. Jotta se olisi täsmäytetty debet- ja kredit-summat on täsmäytettävä joko käännettynä tai kun raportointivaluutan pyöristysero sisältyy.
+Jos tositteessa on useita tapahtumavaluuttoja, kukin tositteen rivi muunnetaan raportointivaluutaksi ja pyöristetään kahteen desimaalin tarkkuuteen, jonka jälkeen rivit lasketaan yhteen. Näin määritetään debetien summa ja kreditien summa. Täsmäyttäminen edellyttää, että debetit ja kreditit on täsmäytetty raportointivaluuttana.  Pyöristyserotiliä ei koskaan lisätä tositteeseen raportointivaluutassa, jotta veloitukset ja hyvitykset saadaan tasapainoon.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Esimerkki kirjanpitovaluutan täsmäämättömyydestä
 

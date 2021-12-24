@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731635"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890862"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
 [!include[banner](../includes/banner.md)]
 
-Voit suunnitella [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muotomäärityksen, jonka ER[-muoto-osan](general-electronic-reporting.md#FormatComponentOutbound) voi määrittää luomaan lähtevän tiedoston Microsoft Excel -muotoisena työkirjana. Tätä tarkoitusta varten on käytettävä tiettyjä ER-muoto-osia.
+Voit suunnitella [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muotomäärityksen, jonka ER-muoto-osan voi määrittää luomaan lähtevän tiedoston Microsoft Excel -muotoisena työkirjana. Tätä tarkoitusta varten on käytettävä tiettyjä ER-muoto-osia.
 
 Lisätietoja tästä toiminnosta on ohjeaiheen [Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md) ohjeissa.
 
@@ -330,6 +330,40 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
 6. Luo tulostettava FTI-tiedosto ja tarkista luodun tiedoston alatunniste.
 
     ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Esimerkki 2: Yhdistettyjen solujen EPPlus-ongelman korjaaminen
+
+Voit luoda lähtevän asiakirjan Excel-työkirjamuodossa suorittamalla ER-muodon. Kun **Ota EPPlus-kirjaston käyttö käyttöön sähköisessä raportointikehyksessä** -ominaisuus on käytössä **Ominaisuudenhallinta**-työtilassa, Excel-laskentataulukon tuotossa käytetään [EPPlus-kirjastoa](https://www.nuget.org/packages/epplus/4.5.2.1). Koska [Excelin toiminta](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) ja EPPlus-kirjaston rajoitus on tiedossa, saattaa kuitenkin ilmetä seuraava poikkeus: "Yhdistettyjä soluja ei voi poistaa tai korvata. Alue yhdistetään osittain toiseen yhdistettyyn alueeseen." Seuraavassa esimerkissä voit lukea, millaiset Excel-mallit voivat aiheuttaa tämän poikkeuksen ja ongelman korjaamisen.
+
+1. Luo Excel-työpöytäsovelluksessa uusi Excel-työkirja.
+2. Lisää laskentataulukossa **Sheet1** **ReportTitle**-nimi solulle **A2**.
+3. Yhdistä solut **A1** ja **A2**.
+
+    ![Tarkista solujen A1 ja A2 yhdistämisen tulokset Excel-työpöytäsovelluksen suunnitellussa Excel-työkirjassa.](./media/er-fillable-excel-example2-1.png)
+
+3. **Määritykset**-sivulla [Lisää uusi ER-muoto](er-fillable-excel.md#add-a-new-er-format) luodaksesi lähtevän asiakirjan Excel-työkirjamuodossa.
+4. [Tuo](er-fillable-excel.md#template-import) suunniteltu Excel-työkirja **Muotoilun suunnittelija** -sivulla lisättyyn ER-muotoon lähtevien tiedostojen uudella mallilla.
+5. Määritä **Yhdistäminen**-välilehdellä [solu](er-fillable-excel.md#cell-component)-tyypin **ReportTitle**-komponentin sidonta.
+6. Määritetyn ER-muodon suorittaminen. Huomaa, että seuraava poikkeus on näytetään: "Yhdistettyjä soluja ei voi poistaa tai korvata. Alue yhdistetään osittain toiseen yhdistettyyn alueeseen."
+
+    ![Tarkastele muotosuunnittelun suunnittelusivulla ER:n määritetyn muodon määrityksen tuloksia.](./media/er-fillable-excel-example2-2.png)
+
+Voit korjata nimikkeen jommallakummalla seuraavista tavoista:
+
+- **Helpompaa mutta ei suositeltavaa:** Poista **ominaisuuden hallinnan** työtilassa **Ota EPPlus-kirjaston käyttö käyttöön sähköisessä raportointikehyksessä** -ominaisuus. Vaikka tämä tapa olisikin helpompi, saattaa sitä käyttää myös muita ongelmia, koska joitakin ER-toimintoja tuetaan vain, kun **Ota käyttöön EPPlus-kirjaston käyttö sähköisessä raportointikehyksessä** on otettu käyttöön.
+- **Suositeltavaa:** Noudata näitä ohjeita:
+
+    1. Muokkaa Excel-työkirjaa Excel-työpöytäsovelluksessa jollakin seuraavista tavoista:
+
+        - Irrota taulukossa **Sheet1** solut **A1** ja **A2**.
+        - Muuta **ReportTitle**-nimen viitteen nimi **=Sheet1!$A$2** nimeksi **=Sheet1!$A$1**.
+
+        ![Tarkista viitteen muuttamisen tulokset Excel-työpöytäsovelluksen suunnitellussa Excel-työkirjassa.](./media/er-fillable-excel-example2-3.png)
+
+    2. [Tuo](er-fillable-excel.md#template-import) muokattu Excel-työkirja **Muotosuunnittelu**-sivulla muokattavaan ER-muotoon ja päivitä aiemmin luotu malli.
+    3. Muokatun ER-muodon suorittaminen.
+
+        ![Luodun asiakirjan tarkistaminen Excel-työpöytäsovelluksessa.](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

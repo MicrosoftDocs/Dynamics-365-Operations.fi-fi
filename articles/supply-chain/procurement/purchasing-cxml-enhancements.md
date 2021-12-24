@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777764"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900702"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Ostojen cXML-parannukset
 
@@ -141,7 +141,7 @@ Kun olet määrittänyt kaikki ominaisuudet ja ulkoisen luettelon muut asetukset
 
 Kuten [Tilausten ominaisuuksien määrittäminen](#set-order-properties) -osassa mainitaan, voit määrittää ominaisuuden **POCOMMENTS** ja/tai ominaisuuden **VENDCOMMENTS** arvoksi _TOSI_ ulkoisen luettelon määrityksissä, jos haluat, että toimitettu cXML sisältää tekstiä siihen liittyvästä ostotilauksesta ja/tai toimittajatietueista. Tässä osassa on lis tietoja siitä, miten järjestelmä valitsee ja käsittelee nämä liitteet, jos niitä käytetään.
 
-Voit määrittää kaikki järjestemlän etsimät muistiinpanotyypit kohdassa **Ostot ja hankinnat \> Määritys \> Lomakkeet \> Lomakkeen määritys**. Määritä sitten **Ostotilaus** välilehdessä **Sisällytä tämäntyyppiset asiakirjat** kentän arvoksi niiden muistiinpanojen tyypit, joita haluat voida sisällyttää. Vain tekstihuomautukset sisällytetään, ei asiakirjaliitteitä.
+Voit määrittää kaikki järjestelmän etsimät muistiinpanotyypit kohdassa **Ostot ja hankinnat \> Määritys \> Lomakkeet \> Lomakkeen määritys**. Määritä sitten **Ostotilaus** välilehdessä **Sisällytä tämäntyyppiset asiakirjat** kentän arvoksi niiden muistiinpanojen tyypit, joita haluat voida sisällyttää. Vain tekstihuomautukset sisällytetään, ei asiakirjaliitteitä.
 
 ![Lomakkeen määrityssivu.](media/cxml-form-setup.png "Lomakkeen määrityssivu")
 

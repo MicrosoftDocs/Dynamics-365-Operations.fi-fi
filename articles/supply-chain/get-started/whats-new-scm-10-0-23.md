@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Management 10.0.23:n esikatselu
+title: Dynamics 365 Supply Chain Managementin esiversio 10.0.23 (tammikuu 2022)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.23 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777788"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891790"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Dynamics 365 Supply Chain Management 10.0.23:n esikatselu
+# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Dynamics 365 Supply Chain Managementin esiversio 10.0.23 (tammikuu 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,6 +26,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 - **Esiversio:** lokakuu 2021
 - **Version yleinen saatavuus (oma päivitys):** joulukuu 2021
+- **Version yleinen saatavuus (automaattinen päivitys):** tammikuu 2022
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
@@ -53,6 +54,7 @@ Jos haluat ottaa näitä ominaisuuksista käyttöön tai poistaa niitä käytös
 | Varastonhallinta | \[Venäjä\] Kirjaa Stornon taloushallinnon varastotapahtumat myyntitilausten taloushallinnon tositteen korjausmerkinnän mukaan | Tämä ominaisuus vaikuttaa hyvityslaskujen korjaustoimintoon Venäjän osalta. Se mahdollistaa varastotapahtumien kirjaamisen myyntilaskuille kirjanpidon korjausvaihtoehdon mukaisesti. Kun tämä ominaisuus on käytössä, varastotapahtuman tositteen **Korjaus**-merkinnän ja varastotapahtumien **Storno**-merkinnän välillä ei ole enää eroja. |
 | Varastonhallinta | (Venäjä) Suorita Varastosaldon kiertonopeus -raportin laskelmat erätoimintona | Venäjänkielisten Supply Chain Managementin lokalisointien osalta tämän ominaisuuden avulla *Varastosaldon vaihtuvuus* -raportti voidaan suorittaa erätoimintona ja tallentaa. Myös aiemmin luotujen raporttien tarkasteleminen on mahdollista. |
 | Varastonhallinta | (Venäjä) Käytä tapahtumia paikallisella kielellä maa- tai aluekohtaisissa ensisijaisissa lomakkeissa varastonhallinnassa | Venäjänkielisten Supply Chain Managementin lokalisointien osalta tämä ominaisuus ottaa käyttöön tuotteiden/nimikkeiden nimien ja mittayksiköiden venäjänkieliset käännökset seuraavissa venäjänkielisissä varaston tulosteissa: Inventointiluettelo (INV-3),Inventointiluettelo (INV-5) ja Inventointiluettelo (INV-6). |
+| Pääsuunnittelu | Azuren koneoppimispalvelu kysynnän ennustetta varten | Tämän ominaisuuden avulla Azuren koneoppimispalvelu voi luoda kysyntäennusteita historiallisten tietojen perusteella. Lisätietoja on kohdassa [Kysynnän ennusteen määritys](../master-planning/demand-forecasting-setup.md). |
 | Hankinta | Tyhjennä ostotilauksen päivityshistoria | Tämän ominaisuuden avulla voit puhdistaa ostotilausten päivityksiin liittyvät väliaikaiset historiatietueet. Se lisää uuden **Puhdista ostopäivityshistoria** -painikkeen **Kaikki ostotilaukset** -sivun toimintoruutuun. Tämä ominaisuus on oletusarvoisesti käytössä. |
 | Tuotannonhallinta | (Esiversio) Varastomateriaalien automaattinen keräily automaattisesti kirjattuja keräysluetteloita varten | Tämän ominaisuuden avulla voidaan tehdä keräily automaattisesti ja ratkaista varastodimensiot automaattisesti kirjattuja, jaettuja ja jälkikustannuslaskennassa olleita keräysluettelon kirjauskansioita varten. |
 | Tuotannonhallinta | Raaka-aineiden vanhenemisen tarkistaminen suunnitellun käyttöpäivän perusteella | Tämä ominaisuus muuttaa sitä, miten erien vanhanemispäivät tarkistetaan, kun raaka-aine-erä varataan käytettäväksi tuotannossa. Kun tämä ominaisuus on käytössä, erän vanhenemispäivä tarkistetaan tuotannon tuoterakennerivillä tai erätilauksen kaavarivillä esitetyn suunnitellun käyttöpäivämäärän (eli raaka-ainepäivämäärään) perusteella. Kun tämä ominaisuus ei ole käytössä, erän vanhentumispäivä tarkistetaan tuotannon tai erätilauksen suunnitellun toimituspäivän perusteella (kuten aiemmin). |

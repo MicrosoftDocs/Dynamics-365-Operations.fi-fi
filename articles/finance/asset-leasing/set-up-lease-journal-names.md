@@ -2,7 +2,7 @@
 title: Vuokrakirjauskansioiden nimien määrittäminen
 description: Tässä ohjeaiheessa kerrotaan, miten vuokrakirjauskansioiden nimet määritetään. Vuokrakirjauskansioiden nimien määrittävät kirjauskansiot, joihin resurssin vuokrauksen viennit kirjataan.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1ea35ec40ddd459e1a9e7641557147e23fe45d3e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b9d8136ae4f960a586b9526751fc8bf6e7675c8d
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343211"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890747"
 ---
 # <a name="set-up-lease-journal-names"></a>Vuokrakirjauskansioiden nimien määrittäminen
 
@@ -33,12 +33,13 @@ Vuokrakirjauskansioiden nimien määrittävät kirjauskansiot, joihin resurssin 
 Järjestelmä lukitsee tietyt taloushallinnon kentät ja estää niiden muokkaamisen. Tällä tavoin estetään tapahtumien ja aikataulujen väliset varianssit. Lukittuja ovat esimerkiksi seuraavat kentät: **Tili**, **Summat**, **Taloushallinnon dimensiot**, **Valuutta** ja **Tapahtumatyyppi**. Lisäksi kirjauskansiovientirivejä ei voi lisätä tai poistaa missään resurssin vuokrauskirjauskansion vienneissä, sillä se voi aiheuttaa aikataulujen ja tapahtumien välisiä variansseja.
 
 
-Voit määrittää vuokrakirjauskansioiden nimet seuraavasti.
+Voit määrittää vuokrakirjauskansioiden nimet suorittamalla seuraavat vaiheet.
 
 1. Siirry kohtaan **Resurssin vuokraus \> Asetukset \> Resurssin vuokrausparametrit**.
 2. Valitse **Yleistiedot**-välilehden **Alkuperäisen tuloutuksen kirjauskansion nimi** -kentässä kirjauskansio. Kaikki alkuperäisen tuloutuksen kirjauskansioviennit kirjataan tähän kirjauskansioon.
 3. Valitse **Laskukirjauskansion nimi** -kentässä kirjauskansio. Jos **Maksa toimittajalle** -vaihtoehdon arvoksi on määritetty **Kyllä** vuokrasopimuskirjassa, vuokrasopimuksen ja kulun maksujen laskut kirjataan tähän kirjauskansioon.
 4. Valitse **Vuokrakirjauskansion nimi** -kentässä kirjauskansio. Kaikki poistot, korot ja lyhytaikaiset uudelleenluokitusviennit kirjataan tähän kirjauskansioon. Jos **Maksa toimittajalle** -vaihtoehdon arvoksi on määritetty **Ei** vuokrasopimuskirjassa, vuokrien ja kulun maksujen viennit kirjataan myös tähän kirjauskansioon.
+5. Valitse **Vuokran muokkauskirjauskansion nimi** -kentässä kirjauskansio. Tähän kirjauskansion nimeen kirjataan vuokraoikaisut, irtisanomiset ja arvonalennustapahtumat. Valitsemaani kirjauskansion nimeen ei saa liittää työnkulkua tai hyväksyntää. Jos vuokramuutoksen kirjauskansion nimeä ei ole määritetty, vuokrasopimusten oikaisut, irtisanomiset ja irtisanomistapahtumat kirjataan **Vuokrakirjauskansion nimi** -kentässä valittuun kirjauskansion nimeen. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

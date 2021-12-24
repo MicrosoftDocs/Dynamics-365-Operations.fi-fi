@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce -arviointiympäristön määritykset
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen arviointiympäristön, kun se on valmisteltu.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416476"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913724"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön määritykset
 
@@ -39,6 +39,7 @@ Kun Commercen arviointiympäristö on valmisteltu kokonaisuudessaan, valmistelun
 1. Valitse ympäristö luettelosta.
 1. Valitse oikealla ympäristön tiedoista **Kirjaudu ympäristöön**. Siirryt Commercen pääkonttorisovellukseen.
 1. Varmista, että valittuna on **USRT**-yritys oikealla yläkulmassa.
+2. Siirry kohtaan **Commerce-parametrit > Määritysparametrit** ja varmista, että **ProductSearch.UseAzureSearch**-merkinnän arvo on **tosi**. Jos tämä merkintä puuttuu, voit lisätä tämän merkinnän ja suorittaa **kanavatietokanta > täysi synkronointi** eCommerce-sivustoon liittyvälle Commerce Scale Unitille.
 
 Varmista Commercen pääkonttorissa tehtävien valmistelun jälkeisten toimintojen aikana, että **USRT**-yritys on koko ajan valittuna.
 
@@ -105,6 +106,12 @@ Voit ottaa käyttöön työt Commercessa seuraavien vaiheiden avulla.
     1. Valitse tietue.
     1. Valitse toimintoruudussa **Erätyö**-välilehdellä **Muuta tila**.
     1. Valitse ensin **Peruuttaminen** ja sitten **OK**.
+
+1. Jos työn tila on **Pidätetty**, seuraa näitä vaiheita:
+
+    1. Valitse tietue.
+    1. Valitse toimintoruudussa **Erätyö**-välilehdellä **Muuta tila**.
+    1. Valitse **Odottaa** ja valitse sitten **OK**.
 
 Vaihtoehtoisesti voit määrittää toistuvuusvälin yhteen (1) minuuttiin seuraavissa töissä:
 

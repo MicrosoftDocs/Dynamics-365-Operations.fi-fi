@@ -2,7 +2,7 @@
 title: Teamsin Human Resources -sovellus
 description: Tässä ohjeaiheessa käsitellään Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovellusta.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771503"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913486"
 ---
 # <a name="human-resources-app-in-teams"></a>Teamsin Human Resources -sovellus
 
@@ -111,6 +111,9 @@ Seuraavat työnimikkeet on ajoitettu tulevia julkaisuja varten:
 ## <a name="troubleshooting"></a>Vianmääritys
 
 Jos käyttäjällä on vaikeuksia Human Resources Teams -sovellukseen kirjautumisessa tai sen käyttämisessä, seuraavat vianmääritysohjeet voivat olla hyödyllisiä. Jos ongelmat jatkuvat vianmäärityksen jälkeen, ota yhteys tukeen. Lisätietoja on kohdassa [Pyydä tukea](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Varmista, että Teamsin Human Resources -sovellus on ajan tasalla
+Jos Teamsin Human Resources -sovelluksessa ilmenee ongelmia, sinun on vahvistettava, että käytössä on viimeisin versio. Tuettu vähimmäisversio on 1.1.5. Lisätietoja Teams-sovelluksen päivittämisestä on [Teamsin ohjeissa](/MicrosoftTeams/apps-update-experience).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kirjautuminen Human Resources -sovelluksen ei onnistu Teamsissa
 

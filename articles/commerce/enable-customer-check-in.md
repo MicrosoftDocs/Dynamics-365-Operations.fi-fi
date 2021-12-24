@@ -2,7 +2,7 @@
 title: Asiakkaan sisäänkuittausilmoitusten ottaminen käyttöön myyntipisteessä
 description: Tässä aiheessa kuvataan, kuinka asiakkaan sisäänkuittausilmoitukset otetaan käyttöön Microsoft Dynamics 365 Commerce -myyntipisteessä (POS).
 author: bicyclingfool
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: cf9331e1da54520787686a3f190e2ef6d150c0c10bd521919407f5e6c74551d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 320e9d73ca98bf4ed22ac9bdff2fc34ae83223ec
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774580"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891409"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Asiakkaan sisäänkuittausilmoitusten ottaminen käyttöön myyntipisteessä
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan, kuinka asiakkaan sisäänkuittausilmoitukset otetaan käyttöön Microsoft Dynamics 365 Commerce -myyntipisteessä (POS).
 
@@ -50,17 +51,48 @@ Sähköisen kaupankäynnin sivustossa luo uusi sivu, jota käytetään sisäänk
 
 Lisää tapahtumasähköpostimalliin **Olen paikalla** -linkki tai -painike, jonka asiakkaat saavat, kun heidän tilauksensa on valmis noudettavaksi. Tämän linkin tai painikkeen avulla asiakkaat voivat ilmoittaa myymälälle, että he ovat saapuneet noutamaan tilauksen. 
 
-Lisää linkki tai painike malliin, joka on yhdistetty **Pakkaus valmis** -ilmoituksen tyyppiin ja toimitustapaan, jota käytät tien vierestä noudettavan tilauksen täyttämisessä. Luo mallissa HTML-linkki tai -painike, joka osoittaa luomasi sisäänkuittaussivun URL-osoitteeseen. Esimerkki:
+Lisää linkki tai painike malliin, joka on yhdistetty **Pakkaus valmis** -ilmoituksen tyyppiin ja toimitustapaan, jota käytät tien vierestä noudettavan tilauksen täyttämisessä. Luo mallissa HTML-linkki tai -painike, joka osoittaa luomasi sisäänvahvistussivun URL-osoitteeseen ja joka sisältää parametrien nimet ja arvot seuraavan esimerkin mukaisesti.
 
-```
-<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%channelreferenceid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
-```
+`<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%confirmationid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>`
+
 Lisätietoja sähköpostimallien määrittämisestä on kohdassa [Tapahtumasähköpostien mukauttaminen toimitustilan mukaan](customize-email-delivery-mode.md). 
 
 ## <a name="a-check-in-confirmation-task-is-created-in-pos"></a>Sisäänkuittaustehtävä luodaan myyntipisteessä
 
-Kun asiakas ilmoittaa myymälälle, että hän on paikalla noutoa varten, hän saa kuittausvahvistusilmoituksen ja tehtävä luodaan myyntipisteen tehtäväluetteloon myymälälle, josta asiakas noutaa tilauksen. Tehtävä sisältää kaikki tilauksen täyttämisen edellyttämät asiakas- ja tilaustiedot. Tehtävän ohjeet-kentässä näkyvät kaikki asiakkaalta lisätietolomakkeella kerätyt tiedot. 
+Kun asiakas on ilmoittanut myymälälle, että he ovat paikalla noutoa varten, näyttöön tulee vahvistussanoma ja valinnainen QR-koodi, joka sisältää asiakkaan tilausvahvistustunnuksen. Samalla tehtävä luodaan myyntipisteen tehtäväluetteloon myymälälle, jossa asiakas kerää tilauksen. Tämä tehtävä sisältää kaikki tilauksen täyttämisen edellyttämät asiakas- ja tilaustiedot. Tehtävän ohjeet-kentässä näkyvät kaikki asiakkaalta lisätietolomakkeella kerätyt tiedot.
+
+## <a name="end-to-end-testing"></a>Päästä päähän -testaus
+
+Asiakkaan kirjautuminen edellyttää, että tietyt parametrit ja arvot välitetään sisäänkirjautumissivulle ja sitten asiakkaan sisäänkirjautumisohjelmointirajapintaan. Helpoin tapa on testata ympäristössä, jossa voidaan luoda ja pakata testitilaus. Näin voidaan luoda sähköposti "tilaus, joka on valmis noutoa varten" ja jolla on URL-osoite, joka sisältää vaaditut parametrien nimet ja arvot.
+
+Voit testata asiakkaan sisään sisäänkirjautumisominaisuuden noudattamalla seuraavia ohjeita.
+
+1. Luo asiakkaan sisäänkirjautumissivu ja lisää ja konfiguroi sitten asiakkaan sisäänkirjautumismoduuli. Lisätietoja on [Sisäänkirjautuminen noutomoduuliin](check-in-pickup-module.md) -kohdassa. 
+1. Kirjaa sivu sisään, mutta älä julkaise sitä.
+1. Lisää seuraava linkki sähköpostimalliin, jonka pakkaus on valmis -ilmoitustyyppi kutsuu noutotavalle. Lue lisätietoja kohdasta [Tapahtuman tapahtumien sähköpostimallien luominen](email-templates-transactions.md).
+
+    - **Esituotantoympäristöihin (UAT):** Lisää koodin katkelma aiemmin tässä ohjeaiheessa kuvatusta [Tapahtumasähköpostimallien määrittäminen](#configure-the-transactional-email-template) -osasta.
+    - **Tuotantoympäristöissä:** Lisää seuraava huomautuskoodi, jotta asiakkaalla ei ole vaikutusta aiemmin luotuihin asiakkaisiin.
+
+        `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
+
+1. Luo tilaus, jossa on määritetty noutotapa.
+1. Kun vastaanotat sähköpostiviestin, jonka on käynnistänyt pakkaus valmis -ilmoitustyyppi, testaa sisäänkirjautuminen avaamalla sisäänkirjautumissivu, jolla on aiemmin lisäämäsi URL-osoite. Koska URL-osoite sisältää `&preview=inprogress`-merkinnän, järjestelmä pyytää todentamaan, ennen kuin voit tarkastella sivua.
+1. Syötä kaikki lisätiedot, joita tarvitaan moduulin määrittämiseen.
+1. Tarkista, että vahvistusnäkymä on oikein.
+1. Avaa sen myymälän kassapääte, josta tilaus noudetaan.
+1. Valitse **Noudettavat tilaukset** -ruutu ja tarkista, että tilaus tulee näyttöön.
+1. Varmista, että sisääntarkistusmoduuliin määritetyt lisätiedot näkyvät tietoruudussa.
+
+Kun olet varmistanut, että asiakkaan sisään sisäänkirjautumistoiminto toimii päästä päähän, noudata seuraavia ohjeita.
+
+1. Julkaise sisäänkirjautumissivu.
+1. Jos testaat tuotantoympäristössä, poista sähköpostimallin "Tilauksen nouto valmis" -URL-osoite, niin näkyviin tulee **Olen tässä** -linkki tai -painike. Lataa sitten malli uudelleen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Noutomoduulin sisäänkuittaus](check-in-pickup-module.md)
+
+[Tapahtumasähköpostien mukauttaminen toimitustilan mukaan](customize-email-delivery-mode.md)
+
+[Tapahtuman tapahtumien sähköpostimallien luominen](email-templates-transactions.md)

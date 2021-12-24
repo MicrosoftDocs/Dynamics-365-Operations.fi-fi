@@ -1,7 +1,7 @@
 ---
 title: Jäännöspoisto 200 prosenttia
-description: Tässä artikkelissa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
-author: saraschi2
+description: Tässä ohjeaiheessa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f7d821dbd6603eba7a228e5caa6def6d783e4774c72687839bd198f4e228633
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a199489ffe42bc7b2d21e85b18dcd0bf35c165
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767001"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883490"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>Jäännöspoisto 200 prosenttia
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
+Tässä ohjeaiheessa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 200 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 40 (200 % ÷ 5). 
 

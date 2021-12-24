@@ -2,19 +2,19 @@
 title: Finance and Operations -sovellusten palvelunkuvaus
 description: Tässä ohjeaiheessa esitetään Finance and Operations -sovellusten palvelunkuvaus.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825397"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898386"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten palvelunkuvaus
 
@@ -314,7 +314,7 @@ Microsoftin järjestelmäpalautuksen suunnitelmia ja menettelyjä tutkitaan jatk
 | Microsoft valmistelee Azuren yhdistettyyn palvelinkeskukseen toissijaisen ympäristön, kun ensisijainen tuotantoesiintymä otetaan käyttöön. Lisätietoja: [Liiketoiminnan jatkuvuus ja järjestelmäpalautus: Azuren yhdistetyt alueet](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft ottaa Azure SQL:n ja Azure blob-tallennustilan maantieteellisen päällekkäisyyden käyttöön, kun ensisijainen tuotantoesiintymä otetaan käyttöön. | None |
 | Microsoft ottaa automaattisen varmuuskopioinnin käyttöön Azuren SQL-tietokannoissa. | None |
-| <p>Käyttökatkoksen yhteydessä Microsoft märittää, onko asiakkaalle luotava vikasietoalue ja menetetäänkö tietoja. Tietojen menetys voi koskea enintään viittä sekuntia. Lisätietoja [Azuren SQL-tietokannan maantieteellinen palautus](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>Tietojen häviämisen tapauksessa Microsoft pyytää asiakkaan suostumusta vikasietoaluetta varten.</p> | Tietojen häviämisen tapauksessa asiakkaan voi olla tarpeen antaa kirjallinen suostumus vikasietoalueen käynnistämistä varten. |
+| <p>Käyttökatkoksen yhteydessä Microsoft märittää, onko asiakkaalle luotava vikasietoalue ja menetetäänkö tietoja. Asiakkaat voivat kokea tietojen menetystä jopa 15 minuuttia riippuen katkon luonteesta ja ajasta. | Tietojen häviämisen tapauksessa asiakkaan voi olla tarpeen antaa kirjallinen suostumus vikasietoalueen käynnistämistä varten. |
 | Kun vikasietoalue otetaan käyttöön, kulloinenkin palvelu toimii rajoitetussa tilassa. Päivitysylläpitoa ei voi käynnistää vikasietotilassa. | Asiakas ei voi pyytää pakettien käyttöönottoa tai esittää muita tavanomaisia ylläpitopyyntöjä vikasietotilassa. |
 | Kun palvelinkeskus tulee käyttöön, Microsoft palaa ensisijaisen Azure-alueen tuotantoesiintymään. Normaalit työvaiheet jatkuvat. | Asiakkaan voi olla tarpeen antaa suostumus tuotantoesiintymään palaamiseen ensisijaisella Azure-alueella. |
 

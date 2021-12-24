@@ -2,7 +2,7 @@
 title: Etujen hallinnan yleiskatsaus
 description: Tässä aiheessa on Dynamics 365 Human Resourcesin etujen hallintaominaisuuden yleiskatsaus.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417389"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892499"
 ---
 # <a name="benefits-management-overview"></a>Etujen hallinnan yleiskatsaus
 
@@ -109,21 +109,29 @@ Liukumahyvitysohjelmien avulla voit rekisteröidä työntekijöitä etuuksiin en
 
 ## <a name="configure-required-employee-information"></a>Määritä pakolliset työntekijätiedot
 
-Ennen kuin voit rekisteröidä työntekijöitä etuuksiin, sinun on annettava heistä tarvittavat tiedot. Jokaisella työntekijällä on oltava työ. Sinun on rekisteröitävä työntekijät kiinteään kompensaatiosuunnitelmaan heidän aloituspäivänään tai heillä on oltava vuotuinen etuuspalkka. Lisäksi **Työn tiedot** -osassa **Työntekijä**-sivulla on valittava arvo kentässä **Etuuksien maksutiheys**.
+Ennen kuin voit rekisteröidä työntekijöitä etuuksiin, sinun on annettava heistä tarvittavat tiedot. 
 
-Jos sinulla on työntekijä, joka saa lisäkompensaation, kuten provisioita, voit lisätä **Etuuksien vuosipalkka** -summan työntekijätietueesta. Human Resources käyttää **Etuuksien vuosipalkka** -summaa määrittämään katetut summat kiinteän vuosittaisen kompensaatiosumman sijaan. **Etuuksien vuosipalkan** on oltava voimassa työntekijän alkamispäivästä tai etuuskauden alusta sen mukaan, kumpi on uudempi. Jos työntekijälle kirjataan sekä kiinteän kompensaation että etuuksien vuosipalkan summa, etuuksien vuosipalkkaa käytetään katettavien summien määrittämiseen.
+Työntekijällä on oltava **Toimi** määritettynä. Työntekijälle voidaan määrittää **Toimi** **Työntekijä**- tai **Toimi**-sivuilla päivittämällä **Työntekijän määritys**. 
+
+Seuraavaksi työntekijöiden on kuuluttava kiinteään palkkiojärjestelmään aloituspäivänä tai heillä on oltava **Vuotuinen etuuspalkka**. Ennen **Kiinteän kompensaation** liittämistä työntekijälle on määritettävä **Toimi**. 
+
+> [!NOTE] 
+> **Kiinteän kompensaation alkamispäivämäärä** ei voi olla ennen **Toimen määrityksen päivämäärää**.
+
+Vaihtoehtoisesti, jos sinulla on työntekijä, joka saa lisäkompensaation, kuten provisioita, voit lisätä **Etuuksien vuosipalkka** -summan työntekijätietueesta. Human Resources käyttää **Etuuksien vuosipalkka** -summaa määrittämään katetut summat **Kiinteän vuosittaisen kompensaatio** -summan sijaan. **Etuuksien vuosipalkan** on oltava voimassa työntekijän alkamispäivästä tai etuuskauden alusta sen mukaan, kumpi on uudempi. **Etujen vuosipalkan** kohdistaminen ei kuitenkaan ole tarpeen. Voit ottaa **Etujen vuosipalkan** käyttöön **henkilöstöhallinnon jaetut parametrit** -sivulla **Etujenhallinta**-välilehdessä. Tämä toiminto on oletusarvoisesti poissa käytöstä.
+
+> [!IMPORTANT]
+> Jos työntekijälle syötetään sekä **kiinteän kompensaation** että **etuuksien vuosipalkan** summa, **etuuksien vuosipalkkaa** käytetään katettavien summien määrittämiseen. **Työn tiedot** -osassa **Työntekijä**-sivulla on valittava arvo kentässä **Etuuksien maksutiheys**.
 
 ## <a name="configure-optional-employee-information"></a>Määritä valinnaiset työntekijätiedot
-
 Kun luot etuussuunnitelman, joka käyttää sukupuoleen tai ikään perustuvia kursseja, sinun on syötettävä työntekijän syntymäpäivämäärä ja sukupuoli, jotta voit laskea etuuskustannuksen.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Käsittele työntekijät oikeutuksen määrittämiseksi
+Ennen kuin työntekijät voidaan rekisteröidä palvelupaketteihin, kelpoisuuskäsittely suoritetaan sen määrittämiseksi, mihin paketteihin he ovat oikeutettuja. Voit tarkastella kelpoisuusprosessin tuloksia prosessin **tulosten katseluohjelmassa**. Lisätietoja on kohdassa [Rekisteröimisen kelpoisuuden käsittely](hr-benefits-process-enrollment-eligibility.md).
 
-Ennen kuin työntekijät voidaan rekisteröidä palvelupaketteihin, kelpoisuuskäsittely suoritetaan sen määrittämiseksi, mihin paketteihin he ovat oikeutettuja. Voit tarkastella kelpoisuusprosessin tuloksia prosessin tulosten katseluohjelmassa. Lisätietoja on kohdassa [Rekisteröimisen kelpoisuuden käsittely](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Työntekijät valitsevat palvelupaketit **työntekijän itsepalvelun** avulla (valinnainen)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Työntekijät valitsevat palvelupaketit työntekijän itsepalvelun kautta (valinnainen)
-
-Kun avoin ilmoittautuminen tapahtuu, työntekijät on juuri palkattu, tai tapahtuu elämäntapahtuma, työntekijät voivat valita tai päivittää etunsa työntekijän itsepalvelun kautta. Lisätietoja on kohdassa [Työntekijän itsepalvelun määrittäminen](hr-benefits-setup-employee-self-service.md).
+Kun avoin ilmoittautuminen tapahtuu, työntekijät on juuri palkattu, tai tapahtuu elämäntapahtuma, työntekijät voivat valita tai päivittää etunsa **Työntekijän itsepalvelun** kautta. Lisätietoja on kohdassa [Työntekijän itsepalvelun määrittäminen](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Vahvista työntekijöiden palvelupakettivalinnat
 

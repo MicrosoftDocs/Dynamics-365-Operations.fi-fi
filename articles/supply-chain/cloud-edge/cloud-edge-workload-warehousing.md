@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813720"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891748"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -50,6 +50,11 @@ Liiketoimintaprosesseista riippuen saman tietueen omistus voi vaihdella keskukse
 > Joitakin tietoja voidaan luoda sekä keskuksessa että scale unitissa. Esimerkkejä ovat **Rekisterikilvet** ja **Eränumerot.** Erillistä ristiriitojen käsittelyä voidaan käyttää tilanteissa, joissa sama yksilöllinen tietue luodaan sekä keskuksessa että scale unitissa saman synkronointisyklin aikana. Jos näin tapahtuu, seuraava synkronointi epäonnistuu ja sinun on siirryttävä kohtaan **Järjestelmänhallinta > Kyselyt > Kuormituskyselyt > Tietueiden kaksoiskappaleet**, jossa voit tarkastella ja yhdistellä tietoja.
 
 ## <a name="outbound-process-flow"></a>Lähtevien käsittelyn työnkulku
+
+Ennen kuin otat varastonhallinnan kuormituksen käyttöön pilvipalvelussa tai reunan skaalausyksikössä, varmista, että yritykselläsi on *skaalausyksikön tuki lähtevien tilausten varaston vapautusta* varten. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+
+- **Moduuli:** *Varastonhallinta*
+- **Ominaisuuden nimi:** *Lähtevien tilausten varastoon vapauttamisen asteikon yksikön tuki*
 
 Lähtevien tietojen omistusprosessi määräytyy sen mukaan, käytätkö kuormansuunnitteluprosessia. Kaikissa tapauksissa keskus omistaa *lähdeasiakirjat*, kuten myynti- ja siirtotilaukset, sekä tilausten kohdistusprosessin ja siihen liittyvät tilaustapahtumatiedot. Kun käytät kuormansuunnitteluprosessia, kuormat luodaan keskuksessa, minkä vuoksi keskus myös omistaa ne aluksi. Osana *varastoon vapauttamisen* prosessia kuormatietojen omistus siirretään erilliselle scale unitin esiintymälle, josta tulee tästä seuraavan *lähetysaallon käsittelyn* (esim. töiden kohdistuksen, täyttötöiden ja kysyntätyön luonnin) omistaja. Tämän vuoksi varastotyöntekijät voivat käsitellä lähtevien myynti- ja siirtotilausten töitä vain käyttämällä Warehouse Management -mobiilisovellusta, joka on yhteydessä siihen esiintymään, joka suorittaa kulloistakin scale unitin työkuormaa.
 
@@ -202,7 +207,7 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 | Lastaukseen liittyvien asiakirjojen tulostaminen                           | Kyllä | Kyllä|
 | Rahtikirjan ja ASN-ilmoituksen luonti                            | Ei  | Kyllä|
 | Lähetyksen vahvistus                                             | Ei  | Kyllä|
-| Lähetyksen vahvistus sekä Vahvista ja siirrä            | Ei  | Ei |
+| Lähetyksen vahvistus sekä Vahvista ja siirrä            | Ei  | Kyllä|
 | Pakkausluettelon ja laskutuksen käsittely                        | Kyllä | Ei |
 | Lyhyt keräily (myynti- ja siirtotilaukset)                    | Ei  | Kyllä, poistamatta lähdeasiakirjojen varauksia|
 | Ylikeräily (myynti- ja siirtotilaukset)                     | Ei  | Kyllä|
@@ -212,8 +217,8 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 | Aallon otsikko                                                   | Ei  | Kyllä|
 | Työn jako                                                   | Ei  | Kyllä|
 | Työn käsittely – Kuljetuksen kuormaus -ohjattu            | Ei  | Ei |
-| Vähennä kerättyä määrää                                       | Ei  | Ei |
-| Palauta työ                                                 | Ei  | Ei |
+| Vähennä kerättyä määrää                                       | Ei  | Kyllä|
+| Palauta työ                                                 | Ei  | Kyllä|
 | Käännä lähetyksen vahvistus                                | Ei  | Kyllä|
 
 ### <a name="inbound"></a>Saapuva
@@ -227,7 +232,7 @@ Seuraava taulukko sisältää tuetut saapuvien toiminnot ja missä näitä toimi
 | Aiheutunut kustannus ja kuljetettavien tuotteiden vastaanottaminen                       | Kyllä | Ei |
 | Saapuvan lähetyksen vahvistus                                    | Kyllä | Ei |
 | Ostotilauksen vapautus varastoon (varastotilausten käsittely) | Kyllä | Ei |
-| Varastotilausrivien peruuttaminen<p>Huomaa, että tätä tuetaan vain silloin, kun riviin ei kohdistu rekisteröintiä</p> | Kyllä | Ei |
+| Varastotilausrivien peruuttaminen<p>Huomaa, että tätä tuetaan vain silloin, kun riviin ei kohdistu rekisteröintiä, kun prosessoidaan *pyydä peruutusta* -toimintoa</p> | Kyllä | Ei |
 | Ostotilausnimikkeen vastaanotto ja poispano                       | <p>Kyllä,&nbsp;kun &nbsp;varastotilausta ei&nbsp;ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p> |
 | Ostotilausrivin vastaanotto ja poispano                       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | <p>Kyllä, jos ostotilaus ei ole <i>kuorman</i> osa</p></p> |
 | Palautustilauksen vastaanotto ja poispano                              | Kyllä | Ei |
@@ -246,7 +251,7 @@ Seuraava taulukko sisältää tuetut saapuvien toiminnot ja missä näitä toimi
 | *Laatu laaduntarkistuksessa* -työn luonnin sisältävä vastaanotto       | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
 | Laatutilauksen luonnin sisältävä vastaanotto                            | <p>Kyllä, kun varastotilausta ei ole</p><p>Ei, kun varastotilaus on</p> | Ei |
 | Työnkäsittely – *Klusterihyllytys*-ohjattu                 | Kyllä | Ei |
-| *Lyhyt keräilyn* sisältävän työn käsittely                               | Kyllä | Ei |
+| *Lyhyt keräilyn* sisältävän työn käsittely                               | Kyllä | Kyllä |
 | Rekisterikilven lataus                                           | Kyllä | Kyllä |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Varastotoiminnot ja poikkeuksien käsittely

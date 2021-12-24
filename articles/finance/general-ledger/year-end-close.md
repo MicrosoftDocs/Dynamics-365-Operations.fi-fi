@@ -2,7 +2,7 @@
 title: Tilikauden lopetus
 description: Tässä aiheessa kuvataan kirjanpidon tilivuoden sulkemisprosessissa tarvittavat asetukset ja ohjeet.
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5677ebeee6b8260280d4c9c7c8a7a0e18e7bd78f68a42d23967948a2e75120cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778263"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892474"
 ---
 # <a name="year-end-close"></a>Tilikauden lopetus
 
@@ -44,7 +44,7 @@ Vahvista seuraavat asetukset ennen tilivuoden sulkemisprosessin suorittamista:
 **Kirjanpidon parametrit** -sivun **Tilivuoden sulkeminen** -kohdassa:
 
 - **Poista tilivuoden päätöksen tapahtumat kun tilivuosi suljetaan** -asetuksella määritetään, poistetaanko järjestelmän luoma edellisen tilivuoden päätöksen avaustapahtuma, kun tilivuoden päätös suoritetaan uudelleen. Jos tämä asetus on **Kyllä**, aiemmat avaustapahtumat ja valinnaiset sulkutapahtumat poistetaan ja uusi avaus- tai sulkutapahtuma luodaan nykyisten saldojen perusteella. Jos tämä asetus on **Ei**, edelliset avaus- ja valinnaiset sulkutapahtumat säilytetään ja järjestelmä luo uuden avaus- tai sulku tapahtuman, jolla saldot siirretään edelleen edellisen tilivuoden sulkemisen jälkeen kirjatuista korjaustapahtumista.
-- **Luo päätöstapahtumat siirron yhteydessä** -asetuksella luodaan sulkemistapahtumat suljettavalle tilivuodelle, jotta voitto- ja tappiotilien saldot voidaan asettaa nollaan (0). Jos tämä asetus on **Kyllä**, sekä avaus- että sulkemistapahtumat luodaan. Jos tämä asetus on **Ei**, vain avaustapahtuma luodaan tulevalle tilivuodelle saldojen siirtämiseksi. Voitto- ja tappiotilien saldot säilytetään tilikauden lopussa.
+- **Luo päätöstapahtumat siirron yhteydessä** -asetuksella luodaan sulkemistapahtumat suljettavalle tilivuodelle, jotta kaikkien päätilien saldot voidaan asettaa nollaan (0). Jos tämä asetus on **Kyllä**, sekä avaus- että sulkemistapahtumat luodaan. Jos tämä asetus on **Ei**, vain avaustapahtuma luodaan tulevalle tilivuodelle saldojen siirtämiseksi. Päätilien saldot säilytetään tilikauden lopussa.
 - **Muuta tilikauden tilaksi pysyvästi suljettu** -asetuksella tilivuosi asetetaan pysyvästi suljettuun tilaan. Käytä tätä vaihtoehtoa huolellisesti, koska kausia, joiden tila on pysyvästi suljettu, ei voi avata uudelleen. Sen vuoksi oikaisuja ei voi kirjata tilivuoteen. On suositeltavinta asettaa arvoksi **Ei**.
 - **Tositenumero on täytettävä** -vaihtoehto on poistettu. Tosite on nyt pakollinen, kun vuoden lopun sulkemisprosessi suoritetaan. Tositenumero syötetään silloin manuaalisesti.
 
