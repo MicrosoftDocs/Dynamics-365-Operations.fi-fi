@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731028"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944710"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Hyvitysmaksujen käsittely puhelinkeskuksissa
 
@@ -33,11 +33,14 @@ Puhelinkeskuksen logiikka määrittää maksurivin maksutavan alkuperäisessä t
 
 Soittokeskus määrittää palautustilauksessa käytettävän maksutavan alkuperäisen tilauksen maksutavan avulla. Tämän prosessin toimintatavat ovat seuraaville alkuperäisille maksutavoille:
 
-- **Normaali** (käteinen) tai **Sekki** – Kun luotu palautustilaus viittaa alkuperäiseen tilaukseen, joka on maksettu normaalin (käteis-) tai sekkimaksutyypin avulla, soittokeskuksen sovellus viittaa **Puhelinkeskuksen palautusmenetelmät** -sivun konfiguraatioihin. Tällä sivulla organisaatiot voivat määrittää tilausvaluutan mukaan, miten asiakkaille myönnetään palautusten hyvitykset tilauksista, jotka on alun perin maksettu normaalin tai sekin maksutavan mukaan. Lisäksi **Puhelinkeskuksen palautusmenetelmät** -sivulla organisaatiot voivat valita, lähetetäänkö asiakkaalle järjestelmän luoma palautussekki vai luodaanko asiakastilin hyvitys sisäisen asiakastilin saldoa vasten. Näissä tilanteissa soittokeskuksen logiikka viittaa palautustilauksen valuuttaan ja luo sitten **Vähittäismyynnin maksutapa** -arvon avulla palautusmyyntitilaukseen palautusmaksurivin kyseisenä valuuttana. Valuuttaan linkitetään myöhemmin myyntireskontran asiakkaan maksukirjauskansio, joka käyttää määritettyä myyntireskontran maksutapaa.
+- **Normaali** (käteinen) tai **Sekki** – Kun luotu palautustilaus viittaa alkuperäiseen tilaukseen, joka on maksettu normaalin (käteis-) tai sekkimaksutyypin avulla, soittokeskuksen sovellus viittaa **Puhelinkeskuksen palautusmenetelmät** -sivun konfiguraatioihin. Tällä sivulla organisaatiot voivat määrittää tilausvaluutan mukaan, miten asiakkaille myönnetään palautusten hyvitykset tilauksista, jotka on alun perin maksettu normaalin tai sekin maksutavan mukaan. **Puhelinkeskuksen hyvitysmenetelmät** -sivulla organisaatiot voivat myös valita, lähetetäänkö asiakkaalle järjestelmän luoma hyvityssekki. Näissä tilanteissa soittokeskuksen logiikka viittaa palautustilauksen valuuttaan ja luo sitten **Vähittäismyynnin maksutapa** -arvon avulla palautusmyyntitilaukseen palautusmaksurivin kyseisenä valuuttana. Valuuttaan linkitetään myöhemmin myyntireskontran asiakkaan maksukirjauskansio, joka käyttää määritettyä myyntireskontran maksutapaa.
 
     Seuraavassa kuvassa esitetään skenaarion konfiguraatio, jossa asiakas palauttaa tuotteet USD-valuuttaan linkitetystä myyntitilauksesta, joka on alunperin maksettu normaali- tai sekkimaksulajin mukaan. Tässä skenaariossa asiakkaalle hyvitetään järjestelmän luoma palautussekki. **REF-CHK** -myyntireskontramaksutapa on määritetty hyvityssekin maksutyypiksi.
 
     ![Soittokeskuksen palautustapojen konfiguroiminen alkuperäisille tavallisille ja sekkimaksuille.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Asiakastiliä ei tueta käteis- tai sekkimaksujen hyvitysmenetelmänä.
 
 - **Luottokortti** – Kun luotu palautustilaus viittaa luottokortilla maksettuun alkuperäiseen tilaukseen, soittokeskuksen palautusmaksujen logiikka käyttää samaa alkuperäistä luottokorttia palautustilauksessa.
 - **Kanta-asiakaskortti** – Kun luotu palautustilaus viittaa kanta-asiakaskortilla maksettuun alkuperäiseen tilaukseen, soittokeskuksen palautusmaksujen logiikka kohdistaa hyvityksen samaan kanta-asiakaskorttiin.

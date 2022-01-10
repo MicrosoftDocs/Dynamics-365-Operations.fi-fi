@@ -2,7 +2,7 @@
 title: Luotonhallinnan parametrien määrittäminen
 description: Tässä ohjeaiheessa käsitellään asetuksia, joilla luotonhallinta voidaan määrittää vastaamaan yrityksen tarpeita.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 768fb5121ae6be513c4a533a20027cf784640b2a
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753462"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921212"
 ---
 # <a name="credit-management-parameters-setup"></a>Luotonhallinnan parametrien määrittäminen
 
@@ -31,7 +31,7 @@ Luotonhallintaa ohjaavia parametreja voi muuttaa **Luotto**-osan neljässä pika
 
 ### <a name="credit-holds"></a>Luoton pidot
 
-- Jos **Salli myyntitilausten arvon muokkaus sen jälkeen, kun tilaus on vapautettu pidosta** -asetuksena on **Ei**, kirjaussäännöt on tarkistettava uudelleen, jos myyntitilauksen arvo (laajennettu hinta) on noussut sen jälkeen, kun myyntitilaus vapautettiin pitoluettelosta. .
+- Jos **Salli myyntitilausten arvon muokkaus sen jälkeen, kun tilaus on vapautettu pidosta** -asetuksena on **Ei**, kirjaussäännöt on tarkistettava uudelleen, jos myyntitilauksen arvo (laajennettu hinta) on noussut sen jälkeen, kun myyntitilaus vapautettiin pitoluettelosta.
 - Valitse **Peruutettujen tilausten syyt** -kentässä vapautuksen syy, jotka käytetään oletusarvoisesti, kun luotonhallinnan pidossa ollut myyntitilaus peruutettiin.
 - Jos **Tarkista asiakkaan luottoryhmän luottoraja** -asetuksena on **Kyllä**, asiakkaan luottoryhmän luottoraja tarkistetaan, kun myyntitilauksen asiakas kuuluu asiakkaan luottoryhmään. Ryhmän luottoraja tarkistetaan, minkä jälkeen tarkistetaan asiakkaan luottoraja, jos ryhmän luottoraja on riittävä.
 - Jos **Tarkista luottoraja, kun maksuehtoja suurennetaan** -asetuksena on **Kyllä**, maksuehtojen sijoitus tarkistetaan ja sen perusteella määritetään, onko asiakkaan oletusmaksuehdoissa eroja. Jos uusien maksuehtojen sijoitus on korkeampi kuin alkuperäisten maksuehtojen sijoitus, tilaus asetetaan luotonvalvonnan pitoon.
@@ -72,6 +72,10 @@ Odottavia ylimääräisiä päiviä ei voi määrittää joihinkin kirjauksen ta
 
 - Asiakkaan luottoraja näytetään luotonhallinnassa asiakkaan valuuttana. Luottorajan vaihtokurssin tyyppi on määritettävä asiakkaan valuuttana. Valitse **Luottorajan vaihtokurssin tyyppi** -kentässä vaihtokurssin tyyppi, jota käytetään muuntamaan ensisijainen luottoraja asiakkaan luottorajaksi.
 - Kun **Salli luottorajojen manuaalinen muokkaus** -asetuksena on **Ei**, käyttäjät eivät voi muokata luottorajoja **Asiakkaat**-sivulla. Jos tässä asetuksessa on valittu **Ei**, asiakkaan luottorajaa voi muuttaa vain kirjaamalla luottorajan oikaisutapahtumia.
+- Määritä **Ohita varaston varaukset** -asetukseksi **Kyllä**, jos haluat ohittaa varastovaraukset, kun luotonhallinnan estosäännöt tarkistetaan. Tässä tapauksessa järjestelmä tarkistaa täydet rivimäärät ja ottaa käyttöön tarkistuspisteiden jatkoajat varastovarausmäärästä riippumatta.
+- Kun luotonhallinta on käytössä, **Sanoma luottorajan ylittyessä** -kentän asetusta käytetään vain vapaatekstilaskujen käsittelemiseen. Vaikka sanomat lisätään edelleen myyntitilauksiin, kun asiakkaat ovat ylittäneet luottorajansa, näiden sanomien näyttäminen ei estä vahvistusta, keräysluetteloiden ja pakkausluetteloiden tulostamista tai laskujen kirjaamista.
+
+    Luotonhallinta on oletusarvoisesti käytössä, mutta sen voi poistaa käytöstä. Jos se on käytössä, tunnistat luottorajan ylittäneet asiakkaat hyvityshallinnan estosääntöjen ja tarkistuspisteiden avulla. Jos se ei ole käytössä, myyntitilauksiin lisätyt sanomat, jotka perustuvat **Sanoma luottorajakentän ylittyessä** -kentän asetukseen, voivat auttaa tunnistamaan, milloin asiakkaat ovat ylittäneet luottorajansa.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Numerosarjat ja jaetut numerosarjaparametrit
 

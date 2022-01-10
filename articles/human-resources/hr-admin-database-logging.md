@@ -1,8 +1,8 @@
 ---
 title: Tietokannan lokikirjauksen määrittäminen ja hallinta
 description: Voit seurata Dynamics 365 Human Resourcesin taulukoiden ja kenttien muutoksia tietokantakirjausten avulla.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781654"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924817"
 ---
 # <a name="configure-and-manage-database-logging"></a>Tietokannan lokikirjauksen määrittäminen ja hallinta
 
@@ -93,14 +93,14 @@ Voit poistaa kaikki tietokantalokit tai osan niistä seuraavien vaihtoehtojen av
 Tietokantalokin tyhjentäminen määritetään seuraavasti: 
 
 1. Valitse **Järjestelmänvalvoja > Linkit > Tietokanta > Tietokantaloki**. Valitse **Tyhjennä loki**.
+2. Valitse **Suodatus** **Sisällytettävät tietueet** -osassa.
+3. Valitse poistettavien lokien valitsemismenetelmä. Valitse jompikumpi seuraavista vaihtoehdoista:
 
-2. Valitse poistettavien lokien valintamenetelmä antamalla jokin seuraavista vaihtoehdoista:
-
-   - Taulun tunnus
+   - Taulun ID-tunnus
    - Lokin tyyppi
    - Luonnin päivämäärä ja aika
 
-3. Määritä lokin tyhjentämistehtävän suorittamisen ajankohta **Tietokantalokin tyhjentäminen** -välilehdessä. Tietokantalokit ovat oletusarvoisesti käytettävissä 30 päivää.
+4. Määritä lokin tyhjentämistehtävän suorittamisen ajankohta **Tietokantalokin tyhjentäminen** -välilehdessä. Tietokantalokit ovat oletusarvoisesti käytettävissä 30 päivää.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

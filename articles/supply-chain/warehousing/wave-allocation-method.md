@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fd874f3c6c1f4d25b3257d6465686dcb8e95b933
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576013"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920595"
 ---
 # <a name="wave-allocation"></a>Aallon kohdistus
 
@@ -77,7 +77,7 @@ Rinnakkainen kohdistuksen käsittely edellyttää, että aallon käsittely suori
 
 Voit tarvittaessa kumota kaikki asetukset, jotka on tehty oletusarvoisesti, kun *Aaltojen rinnakkaisuus Allocate Wave -menetelmälle* -ominaisuus on automaattisesti otettu käyttöön esiintymässä. Toimi seuraavasti:
 
-- Valitse **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**. Käytä **Aallon käsittely** -välilehdessä haluamiasi arvoja **Käsittele aallot erinä**- ja **Odota lukitusta (ms)** -asetuksille.
+- Siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**. Käytä **Aallon käsittely** -välilehdessä haluamiasi arvoja **Käsittele aallot erinä**- ja **Odota lukitusta (ms)** -asetuksille.
 - Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**. Valitse `allocateWave`-menetelmä. Valitse toimintoruudusta **Tehtävän määritys** avataksesi sivun, jolla luetellaan kaikki varastot, joissa menetelmä on määritetty suoritettavaksi rinnakkain. Muokkaa tai poista erätehtävien määrää ja määritettyä aaltoryhmää kullekin luettelossa olevalle varastolle tarpeen mukaan.
 
 ## <a name="troubleshooting"></a>Vianmääritys

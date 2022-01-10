@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 5b1e798ac0558e7c5b0bbe4b6a732cbdcf5729a1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778374"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920110"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Työn luonnin aikatauluttaminen aallon aikana
 
@@ -65,7 +65,7 @@ Jos et ottanut käyttöön [*Organisaation laajuinen Työn luomisen ajoitus -aal
 
 Varastotyön luominen hyödyntämällä rinnakkaista, asynkronista menetelmää edellyttää, että aaltokäsittely suoritetaan erinä. Se määritetään seuraavasti:
 
-1. Valitse  **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**.
+1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**.
 1. Määritä **Yleiset**-välilehden **Käsittele aaltoja erässä** -asetukseksi *Kyllä*. Valinnaisena on mahdollista valita myös erillinen **Aallon käsittelyn eräryhmä**, joka estää eräjonon käsittelemisen suorittaminen samanaikaisesti muiden prosessien kanssa.
 1. Määritä **Odota lukitusta (ms)**, jota käytetään, kun järjestelmä käsittelee useita aaltoja samanaikaisesti. Useimmille suurille aaltokäsittelyille arvoksi kannattaa valita *60 000*.
 
@@ -73,8 +73,8 @@ Varastotyön luominen hyödyntämällä rinnakkaista, asynkronista menetelmää 
 
 Aloita luomalla uusi aallon vaihemenetelmä ja ottamalla se käyttöön rinnakkaisessa, asynkronisessa tehtävän käsittelyssä.
 
-1. Valitse  **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
-1. Valitse  **Luo menetelmät uudelleen** ja kiinnitä huomiota siihen, että *WHSScheduleWorkCreationWaveStepMethod* on lisätty luetteloon lähetyksen aaltomalleissa käytettävissä olevista aallon käsittelymenetelmistä.
+1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
+1. Valitse **Luo menetelmät uudelleen** ja kiinnitä huomiota siihen, että *WHSScheduleWorkCreationWaveStepMethod* on lisätty luetteloon lähetyksen aaltomalleissa käytettävissä olevista aallon käsittelymenetelmistä.
 1. Valitse tietue, jonka **Menetelmän nimi** on *WHSScheduleWorkCreationWaveStepMethod*, ja valitse **Tehtävän määritys**.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Uusi** ja käyttämällä seuraavia asetuksia:
 
@@ -84,7 +84,7 @@ Aloita luomalla uusi aallon vaihemenetelmä ja ottamalla se käyttöön rinnakka
 
 Aiemmin luotu aaltomalli voidaan nyt päivittää (tai uusi aaltomalli luoda) käyttämään aallon *Aikatauluta työn luonti* -käsittelymenetelmää.
 
-1. Valitse  **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
+1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 1. Valitse toimintoruudussa **Muokkaa**.
 1. Valitse luetteloruudussa päivitettävä aaltomalli. (Jos testaukseen käytetään esittelytietoja, voit käyttää mallia *24 Lähetyksen oletus*).
 1. Laajenna **Menetelmät**-pikavälilehti ja valitse **Jäljellä olevat menetelmät** -ruudukossa rivi, jonka **Nimi** on *Aikatauluta työn luonti*.

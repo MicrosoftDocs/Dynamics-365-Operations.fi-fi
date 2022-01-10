@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae02846c0ec937ebaff440dc5272a135e16c8aa7355ecc303929e760a54b6627
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760295"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920695"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>Määrä ylittää alitoimitusprosentin pakkausluettelon luonnin aikana
 
@@ -49,8 +49,8 @@ Seuraavia ohjeita noudattamalla voit säätää alitoimitusprosenttia.
 
 1. Valitse **Myyntireskontra \> Tilaukset \> Kaikki tilaukset**.
 1. Valitse myyntitilaus, jolle et voi kirjata pakkausluetteloa kuormalle.
-1. Valitse  **Myyntitilausrivit**-välilehdessä nimikkeelle myyntitilausrivi, joka ylittää alitoimitusprosenttia.
-1. Valitse  **Rivin erittely** -välilehdessä **Toimitus**.
+1. Valitse **Myyntitilausrivit**-välilehdessä nimikkeelle myyntitilausrivi, joka ylittää alitoimitusprosentin.
+1. Valitse **Rivin erittely** -välilehdessä **Toimitus**.
 1. Määritä **Alitoimitus**-kentässä arvoksi suurempi prosenttiarvo, joka sopii kerättyyn määrään suhteessa kuormituksen määrään, jotta lähetysluettelon luonti voi jatkua.
 
 ### <a name="reverse-and-make-adjustments"></a>Palauta ja tee tarvittavat oikaisut
@@ -60,14 +60,14 @@ Peruuta kaikki kuormitukselle kirjatut tiedot (esimerkiksi pakkausluettelo, läh
 Seuraavia ohjeita noudattamalla voit peruuttaa pakkausluettelon.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
-1. Valitse toimintoruudun  **Lähetys ja vastaanotto** -välilehden  **Pakkausluettelon peruutus**  **Käänteinen**-ryhmässä.
+1. Valitse toimintoruudun **Lähetys ja vastaanotto** -välilehden **Pakkausluettelon peruutus** **Käänteinen**-ryhmässä.
 
 Seuraavia ohjeita noudattamalla voit peruuttaa lähetyksen vahvistuksen.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
-1. Valitse toimintoruudun  **Lähetys ja vastaanotto** -välilehden  **Käänteisen lähetyksen vahvistus**  **Käänteinen**-ryhmässä.
+1. Valitse toimintoruudun **Lähetys ja vastaanotto** -välilehden **Käänteisen lähetyksen vahvistus** **Käänteinen**-ryhmässä.
 
 Seuraavia ohjeita noudattamalla voit peruuttaa työn.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
-1. Valitse toimintoruudun  **Kuormitukset**-välilehden  **Työ**-ryhmässä  **Peruuta työ**.
+1. Valitse toimintoruudun **Kuormitukset**-välilehden **Työ**-ryhmässä **Peruuta työ**.

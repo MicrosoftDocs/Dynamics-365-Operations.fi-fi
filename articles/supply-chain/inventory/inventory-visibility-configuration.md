@@ -2,7 +2,7 @@
 title: Varaston näkyvyyden määrittäminen
 description: Tässä aiheessa käsitellään varaston näkyvyyden määrittämistä.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678468"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920295"
 ---
 # <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
 
@@ -61,7 +61,7 @@ Kun määritykset on tehty, muista valita sovelluksessa **Päivitä määritys**
 Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 Finance and Operations -sovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
 
 > [!NOTE]
-> `fno`-tietolähde on varattu Dynamics 365 Supply Chain Managementin käyttöön.
+> `fno`-tietolähde on varattu Supply Chain Managementia varten. Jos varaston näkyvyyden lisäosa on integroitu Supply Chain Management -ympäristöön, on suositeltavaa, ettei `fno`-tietolähteeseen liittyviä konfiguraatioita poisteta.
 
 Tietolähde lisätään seuraavasti:
 
@@ -273,17 +273,17 @@ Mukautettujen mittojen laskenta-asetukseen perustuva `MyCustomAvailableforReserv
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Osion määritykset
 
-Osion määritykset muodostuvat perusdimensioiden yhdistelmästä. Se määrittää tietojen jakelumallin. Saman osion tietotoiminnot ovat suorituskykyisiä ja suhteellisen edullisia. Tämän vuoksi hyvillä osiointimalleilla voidaan saada merkittäviä etuja.
-
-Varaston näkyvyyssovelluksessa on seuraava osion oletusmääritys.
+Tällä hetkellä osiointimääritys koostuu kahdesta perusdimensiosta (`SiteId` ja `LocationId`), jotka ilmaisevat tietojen jakelun. Samaan osiointiin liittyvät toiminnot voivat tuottaa suuremman suorituskyvyn alhaisemmin kustannuksin. Seuraavassa taulukossa näkyy osion oletusmääritys, jonka varaston näkyvyyssovellus tarjoaa.
 
 | Perusdimensio | Hierarkia |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Osion oletusmääritys on vain tiedoksi. Sitä ei tarvitse määrittää varaston näkyvyyssovelluksessa. Osion määrityksen päivitystä ei tällä hetkellä tueta.
+Ratkaisu sisältää oletusarvon mukaan tämän osiointimäärityksen. Näin ollen *sinun ei tarvitse määrittää sitä itse*.
+
+> [!IMPORTANT]
+> Älä mukauta oletusosiointimääritystä. Jos poistat tai muutat sitä, se aiheuttaa todennäköisesti odottamattoman virheen.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Tuotehierarkiaindeksin määritykset
 
