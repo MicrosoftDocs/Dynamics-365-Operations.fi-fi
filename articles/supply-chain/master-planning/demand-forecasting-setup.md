@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3abe82bb888b7501b00af44b48bfb40fbe8e2ee3
-ms.sourcegitcommit: 6ef4906621fbb4e3afaf2b0d6697536288365bb1
+ms.openlocfilehash: 4f53171361b655ab4ae05894d098203df0af8d60
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7868634"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920770"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
@@ -195,9 +195,6 @@ Voit ohittaa nämä arvot siirtymällä kohtaan **Pääsuunnittelu \> Määritys
 ## <a name="set-up-the-azure-machine-learning-service"></a><a name="setup-amls"></a>Azuren koneoppimispalvelun määrittäminen
 
 Supply Chain Management laskee kysyntäennusteet käyttäen Azuren koneoppimispalvelua, joka on määritettävä ja suoritettava omassa Azure-tilauksessasi. Tässä osassa kuvaillaan, kuinka muodostit Azuren koneoppimispalvelun Azuressa, ja liitä se sitten Supply Chain Management -ympäristöön.
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.23 GA -->
 
 ### <a name="enable-the-azure-machine-learning-service-in-feature-management"></a>Ota Azuren koneoppimispalvelu käyttöön ominaisuudenhallinnassa
 

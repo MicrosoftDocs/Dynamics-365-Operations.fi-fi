@@ -232,7 +232,7 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Vieminen Azue Data Lake -yleiskuvaukseen
+            - name: Vieminen Azure Data Lake – yleiskatsaus
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Vieminen Azure Data Lake -apuohjelman asentaminen
               href: data-entities/configure-export-data-lake.md
@@ -478,7 +478,7 @@
               href: dev-tools/application-stack-server-architecture.md
             - name: Kokeiluversioiden hankkiminen
               href: dev-tools/get-evaluation-copy.md
-            - name: Kokeiluversioiden tilaaminen
+            - name: Esiversiotilauksiin rekisteröityminen
               href: dev-tools/sign-up-preview-subscription.md
             - name: Kehitysympäristöjen käyttöönotto ja käyttö
               items:
@@ -1012,6 +1012,8 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Käännösmuistitiedostot
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps -laajennus (julkinen esiversio)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform -integrointi
           items:
             - name: Yleiskatsaus
@@ -1596,12 +1598,14 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: Eräkäsittely ja eräpalvelimet
                   href: sysadmin/batch-server-overview.md
-                - name: Luo erätyöt
+                - name: Erätöiden luominen
                   href: sysadmin/tasks/create-batch-job.md
                 - name: Eräuudelleenyritysten ottaminen käyttöön
                   href: sysadmin/retryable-batch.md
-                - name: Erätyön kopiointi
+                - name: Erätyön kopioiminen
                   href: sysadmin/copy-batch-job.md
+                - name: Prioriteettipohjainen erän ajoitus
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktiiviset eräkaudet
                   href: sysadmin/activeperiod.md
                 - name: Aktiivisten eräkausien kesäajan tuki

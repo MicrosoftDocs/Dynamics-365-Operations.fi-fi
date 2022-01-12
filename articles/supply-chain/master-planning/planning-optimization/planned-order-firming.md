@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778518"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920720"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -80,6 +80,9 @@ Voit vahvistaa suunnitellut tilaukset manuaalisesti etsimällä ja valitsemalla 
     - **Ryhmittele ostosopimuksen mukaan** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat ryhmitellä suunnitellut ostotilaukset, joissa on sama toimittaja kuin aiemmin luoduilla ostosopimuksilla ja luo yksi ostotilaus ostosopimusta kohden. Tämä vaihtoehto on automaattisesti käytössä, kun **Ryhmittele toimittajan mukaan** on käytössä. Jos haluat käyttää **Ostosopimus-ryhmittelyä**, **Etsi ostosopimus** -asetus on määritettävä *Kyllä* **pääsuunnittelun parametrit** -sivulla.
     - **Ryhmittely kauden mukaan** (**Ostotilaukset**-osassa) – Valitse kausi, jonka mukaan suunnitellut ostotilaukset ryhmitellään. Jos haluat käyttää tätä asetusta, sinun täytyy valita myös **Ryhmittely toimittajan mukaan** -vaihtoehto.
     - **Ryhmittely kauden mukaan** (**Siirrot**-osassa) – Valitse kausi, jonka mukaan suunnitellut siirtotilaukset ryhmitellään. Tilaukset ryhmitellään **Varastosta**- ja **Varastoon**-arvojen mukaan.
+
+    > [!NOTE]
+    > Kukin Group by -asetus aiheuttaa sen, että järjestelmä muuntaa kunkin suunnitellun tilauksen ryhmittelyn perusteella yhden ostotilauksen riviksi.
 
     ![Parametrit-pikavälilehti Vahvistus-valintaikkunassa.](./media/manual-firming.png "Parametrit-pikavälilehti Vahvistus-valintaikkunassa")
 

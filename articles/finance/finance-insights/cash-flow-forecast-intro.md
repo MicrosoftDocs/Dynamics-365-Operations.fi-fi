@@ -1,8 +1,8 @@
 ---
-title: Kassavirtaennuste
+title: Kassaennuste
 description: Tässä ohjeaiheessa kuvataan kassavirtaennusteominaisuutta.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ad568fcd126ad3dc9e5ff269cc3bc99b218e822a
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 62e30e382d94e4eff73789b3e884c6b81afce6c1
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386610"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945826"
 ---
-# <a name="cash-flow-forecast"></a>Kassavirtaennuste
+# <a name="cash-forecast"></a>Kassaennuste
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,10 +43,6 @@ Useimmissa yrityksissä kassavirran hallinta ja kassavirtaennusteiden suorittami
 ## <a name="details-of-the-cash-flow-forecasts-capability"></a>Kassavirtaennusteominaisuuden tiedot
 Kassavirtaennusteominaisuus sisältää seuraavat toiminnot. 
 
-- Kassavirtatietojen helppo integroiminen ulkoisista järjestelmistä Dynamics 365 Financeen. Kassavirtaennusteissa voi käyttää myös tietojen tuonti- ja vientikehystä. Tämän kehyksen avulla on helppo integroida tiedot Excel ODatan kanssa. Voit yhdistää tietoja useista lähteistä ja luoda kattavan kassavirtaratkaisun. 
-
-- Esittelee älykkään kassatilanteen. Kassatilanne luodaan asiakkaan maksutoiminnan perusteella. Sen avulla ennustetaan, milloin yritys voi odottaa rahojen tulevan tilille. Se myös analysoi maksavien toimittajien aiempia malleja ja ennustaa, milloin tulevat laskut ja tilaukset todennäköisesti maksetaan. 
-
 - Esittelee älykkäitä kassavirtaennusteita pitkän aikavälin ennustamista varten käyttämällä aikasarjojen ennustamista automaattisen integroinnin ja AI Builderin kautta.
 
 - Mahdollisuus tallentaa tietty kassavirran tilanne tai ennusteet, muokata niitä ja tämän jälkeen vertailla helposti ja mitata ennusteen suorituskyky todellisten taloustietojen avulla.
@@ -59,9 +55,5 @@ Kassavirtaennusteominaisuus sisältää seuraavat toiminnot.
 
 Dynamics 365 Financen kassavirtaennustetoiminnon avulla organisaatio voi muuntaa työlään, monimutkaisen ja silti toistuvan kassavirtaennusteen yksinkertaiseksi, automatisoiduksi prosessiksi. Kassavirtaennusteen työläimpien kohtien automatisointi mahdollistaa kriittiseen päätöksentekoon keskittymisen ja haluttujen tulosten saamisen.
 
-## <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Kassavirran ennustamisen dimensioiden määrittäminen
-**Kassavirran ennustamisen määritykset** -sivun uuden välilehden avulla voit määrittää, mitkä taloushallinnon dimensiot otetaan käyttöön suodatettaessa **Kassavirran ennustaminen** -työtilaa. Tämä välilehti näkyy vain, kun Kassavirtaennusteet-toiminto on käytössä. 
-
-Valitse **Dimensiot**-välilehdessä suodatuksessa käytettävät dimensiot luettelosta ja siirrä ne oikeanpuoleiseen sarakkeeseen nuolinäppäinten avulla. Kassavirtaennustetietojen suodattamiseen voidaan valita vain kaksi dimensiota. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

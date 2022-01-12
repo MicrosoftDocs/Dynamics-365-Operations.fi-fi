@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 00e3da7767b80e16f9351f59b109765bffc0128fe149cefafc1edda3a6cbcb96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc74c5748950b1f0f001fd89acb2e023640065ee
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781342"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920047"
 ---
 # <a name="quantity-exceeds-over-delivery-percentage-during-packing-slip-generation"></a>Määrä ylittää ylitoimitusprosentin pakkausluettelon luonnin aikana
 
@@ -50,10 +50,10 @@ Seuraavia ohjeita noudattamalla voit säätää kuormarivin määrää.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
 1. Valitse kuorma, jota varten pakkausluetteloa ei voi luoda.
-1. Valitse toimintoruudun  **Lähetys ja vastaanotto** -välilehden  **Käänteisen lähetyksen vahvistus**  **Käänteinen**-ryhmässä.
-1. Valitse  **Kuormitusrivit**-välilehdessä nimikkeelle kuormitusrivi, joka ylittää ylitoimitusprosenttia.
+1. Valitse toimintoruudun **Lähetys ja vastaanotto** -välilehden **Käänteisen lähetyksen vahvistus** **Käänteinen**-ryhmässä.
+1. Valitse **Kuormitusrivit**-välilehdessä nimikkeelle kuormitusrivi, joka ylittää ylitoimitusprosentin.
 1. Valitse **Vähennä kerättyä määrää** säätääksesi keräysmäärää.
-1. Valitse  **Rivin erittely** -välilehdessä **Tilaus**.
+1. Valitse **Rivin erittely** -välilehdessä **Tilaus**.
 1. Määritä **Määrä**-kentässä arvo kerätyksi määräksi (eli **Työn luontimäärä** -kentän arvo), jotta lähetysluettelon luontia voidaan jatkaa.
 
 ### <a name="adjust-the-over-delivery-percentage"></a>Muokkaa ylitoimitusprosenttia
@@ -62,8 +62,8 @@ Seuraavia ohjeita noudattamalla voit säätää ylitoimitusprosenttia.
 
 1. Valitse **Myyntireskontra \> Tilaukset \> Kaikki tilaukset**.
 1. Valitse myyntitilaus, jolle et voi kirjata pakkausluetteloa kuormalle.
-1. Valitse  **Myyntitilausrivit**-välilehdessä nimikkeelle myyntitilausrivi, joka ylittää ylitoimitusprosenttia.
-1. Valitse  **Rivin erittely** -välilehdessä **Toimitus**.
+1. Valitse **Myyntitilausrivit**-välilehdessä nimikkeelle myyntitilausrivi, joka ylittää ylitoimitusprosentin.
+1. Valitse **Rivin erittely** -välilehdessä **Toimitus**.
 1. Määritä **Ylitoimitus**-kentässä arvoksi suurempi prosenttiarvo, joka sopii kerättyyn määrään suhteessa kuormituksen määrään, jotta lähetysluettelon luonti voi jatkua.
 
 ### <a name="reverse-and-make-adjustments"></a>Palauta ja tee tarvittavat oikaisut
@@ -73,14 +73,14 @@ Peruuta kaikki kuormitukselle kirjatut tiedot (esimerkiksi pakkausluettelo, läh
 Seuraavia ohjeita noudattamalla voit peruuttaa pakkausluettelon.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
-1. Valitse toimintoruudun  **Lähetys ja vastaanotto** -välilehden  **Pakkausluettelon peruutus**  **Käänteinen**-ryhmässä.
+1. Valitse toimintoruudun **Lähetys ja vastaanotto** -välilehden **Pakkausluettelon peruutus** **Käänteinen**-ryhmässä.
 
 Seuraavia ohjeita noudattamalla voit peruuttaa lähetyksen vahvistuksen.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
-1. Valitse toimintoruudun  **Lähetys ja vastaanotto** -välilehden  **Käänteisen lähetyksen vahvistus**  **Käänteinen**-ryhmässä.
+1. Valitse toimintoruudun **Lähetys ja vastaanotto** -välilehden **Käänteisen lähetyksen vahvistus** **Käänteinen**-ryhmässä.
 
 Seuraavia ohjeita noudattamalla voit peruuttaa työn.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
-1. Valitse toimintoruudun  **Kuormitukset**-välilehden  **Työ**-ryhmässä  **Peruuta työ**.
+1. Valitse toimintoruudun **Kuormitukset**-välilehden **Työ**-ryhmässä **Peruuta työ**.

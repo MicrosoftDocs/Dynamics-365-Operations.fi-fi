@@ -2,7 +2,7 @@
 title: Teamsin Human Resources -sovellus
 description: Tässä ohjeaiheessa käsitellään Microsoft Teamsin Microsoft Dynamics 365 Human Resources -sovellusta.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913486"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924719"
 ---
 # <a name="human-resources-app-in-teams"></a>Teamsin Human Resources -sovellus
 
@@ -41,6 +41,21 @@ Löydät Dynamics 365 Human Resources -sovelluksen Teams-kaupasta. Lisätietoja 
 Lisätietoja sovellusten käyttöoikeuksien hallinnasta Teamsissa on kohdassa [Sovellusten käyttöoikeuskäytäntöjen hallinta Microsoft Teamsissa](/MicrosoftTeams/teams-app-permission-policies).
 
 Jos haluat käyttäjien näkevän loma- ja poissaolokalenterin sovelluksessa, sinun on täytyy ottaa **Loma- ja poissaolokalenteri Teamsissa** -ominaisuus käyttöön ominaisuuksien hallinnasta. Lisätietoja ominaisuuksien käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
+
+## <a name="update-app"></a>Päivitä sovellus
+>[!NOTE]
+> 20.12.2021 jälkeen Microsoftin vuokraajassa isännöidyt Human Resources App -bottipalvelut poistetaan käytöstä. Ajan tasalla olevaan laajennukseen (versio tai 1.1.5), joka voidaan asentaa, tämä ei vaikuta. Tärkein vaikutus on vanhentuneeseen laajennukseen (versio 1.1.4). Tämän version keskustelubotti lopettaa toiminnan. **Poissaolo**-välilehti toimii edelleen molemmissa laajennuksissa.
+
+Versiossa 1.1.4 keskustelubotti lopettaa vastaamisen mihin tahansa sanomaan. Voit esimerkiksi **kirjautua sisään**, **tarkastella saldoja** ja **tarkastella poissaoloja**. Sovellus on päivitettävä manuaalisesti uusimpaan versioon. Lisätietoja on kohdassa [Sovellusten päivitys Microsoft Teamsissa](/MicrosoftTeams/apps-update-experience).
+
+Päivitä versioon 1.1.5 seuraavasti:
+1. Siirry Microsoft Teamsissa kohtaan **Sovellukset**.
+2. Etsi **Human Resources** -sovellus.
+3. Valitse **Päivitä**.
+
+Voit tarkistaa Human Resources -sovelluksen version joko **Tietoja**-välilehdestä tai **Henkilökohtainen sovellus** -osasta.  
+
+![Human Resourcesin **Tietoja**-välilehti.](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Ilmoitusten käyttöönotto Teamsin Human Resources -sovelluksessa
 

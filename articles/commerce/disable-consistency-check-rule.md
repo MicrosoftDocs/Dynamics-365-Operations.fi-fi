@@ -1,8 +1,8 @@
 ---
-title: Vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen sääntöjen käytöstäpoisto
-description: Tässä aiheessa kuvataan tapahtumien yhdenmukaisuuden tarkistussääntöjen käytöstäpoistotoiminto Microsoft Dynamics 365 Commerce -sovelluksessa.
-author: josaw1
-ms.date: 10/15/2019
+title: Tapahtuman tarkistusprosessissa käytettävien sääntöjen käytöstäpoisto
+description: Tässä aiheessa kuvataan tapahtuman tarkistussääntöjen käytöstäpoiston toiminto Microsoft Dynamics 365 Commerce -sovelluksessa.
+author: analpert
+ms.date: 12/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,21 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 381bc8534d4b0a06a50c8c18b3f78aba9d43a1f497bfd271361216ed1dee9197
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdaea51b4c84e6a62f0eb9412315ae77b4c11503
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746658"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919522"
 ---
-# <a name="disable-rules-in-the-retail-transaction-consistency-checker"></a>Vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen sääntöjen käytöstäpoisto 
+# <a name="disable-rules-used-in-the-transaction-validation-process"></a>Tapahtuman tarkistusprosessissa käytettävien sääntöjen käytöstäpoisto
 
 [!include [banner](../includes/banner.md)]
 
-Jälleenmyyjillä voi olla yksilöllisiä liiketoimintaskenaarioita ja -prosesseja. Tämän vuoksi kaikki kauppatapahtumien yhdenmukaisuuden tarkistukseen oletusarvoisesti sisältyvät säännöt eivät ole kaikkien jälleenmyyjien käytettävissä. Microsoft Dynamics 365 Commerce sisältää myös toiminnon, jonka avulla voi poistaa käytöstä säännöt, jotka eivät ole käytettävissä.
+Jälleenmyyjillä voi olla yksilöllisiä liiketoimintaskenaarioita ja -prosesseja. Tämän vuoksi kaikki kauppatapahtumien tarkistusprosessiin sisältyvät säännöt eivät ole kaikkien jälleenmyyjien käytettävissä. Microsoft Dynamics 365 Commerce sisältää myös toiminnon, jonka avulla voi poistaa käytöstä säännöt, jotka eivät ole käytettävissä.
 
-Saat näkyviin ympäristösi vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen käytettävissä olevien sääntöjen luettelon ja kunkin säännön tilan siirtymällä kohtaan **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen parametrit** ja valitsemalla **Tapahtuman tarkistus** -välilehden.
+Saat näkyviin ympäristösi tapahtuman tarkistusprosessin käytettävissä olevien sääntöjen luettelon ja kunkin säännön tilan siirtymällä kohtaan **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen parametrit** ja valitsemalla **Tapahtuman tarkistus** -välilehden. Kaikkia käytössä olevia sääntöjä käytetään tapahtumien tarkistuksessa **Tarkista myymälän tapahtumat** -prosessin aikana. Tapahtumat on hyväksyttävä, kerättävä ja kirjattava tapahtumaraporttiin.
 
-Kunkin säännön tilaksi on oletusarvoisesti määritetty **Käytössä**. Tämän vuoksi kaikkia sääntöjä käytetään tarkistettaessa vähittäismyyntitapahtumat ennen niiden noutamista kauppalaskelmiin. Jos haluat poistaa säännön käytöstä, muuta sen tilaksi **Ei käytössä**. Käytöstä poistettuja sääntöjä ei käytetä kauppatapahtumien tarkistuksessa laskelman laskentaprosessin aikana.
-
-Jos haluat ohittaa koko tarkistusprosessin käytössä olevista säännöistä huolimatta, siirry kohtaan **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen parametrit**. Määritä sitten **Tapahtuman tarkistus** -välilehdessä **Poista Commercen tapahtumien yhdenmukaisuuden tarkistus käytöstä** -asetuksen arvoksi **Kyllä**. Kun tämän asetuksen arvoksi on määritetty **Ei**, arvoksi ei voi enää määrittää **Kyllä** käyttöliittymässä.
-
+Kunkin säännön tilaksi on oletusarvoisesti määritetty **Käytössä**. Tämän vuoksi kaikkia sääntöjä käytetään tarkistettaessa tapahtumat, ennen kuin ne noudetaan kaupankäynnin tapahtumaraportteihin. Jos haluat poistaa säännön käytöstä, muuta sen tilaksi **Ei käytössä**. Käytöstä poistettuja sääntöjä ei käytetä, kun tapahtumat tarkistetaan **Tarkista myymälän tapahtumat** -prosessin aikana.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

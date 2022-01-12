@@ -2,7 +2,7 @@
 title: Kassatilanne
 description: Tässä ohjeaiheessa kerrotaan, miten kassavirtaennustetoiminto ennustaa organisaation kassatilenteen tiettyinä aikoina. Se kuvaa myös vaihtoehdot, joiden avulla eri kausien ennusteet voidaan näyttää.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752877"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945786"
 ---
 # <a name="cash-position"></a>Kassatilanne
 
@@ -45,5 +45,17 @@ Samankaltaista menetelmää käytetään toimittajille suoritettavien maksujen e
 - **Pankkitili**-ruudukossa on odottujen saapuvien ja lähtevien kassavirtojen vaikutus pankkitilin saldoon.
 
 Jos haluat tallentaa ja muokata kassatilannetta, luo tilannevedos. Lisätietoja tilannevedosten käsittelemisestä on kohdassa [Tilannevedosten yleiskatsaus](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>Kassatilanneominaisuuden tiedot 
+
+Kassatilanneominaisuus sisältää seuraavat toiminnot. 
+
+- Kassatilannetoiminto näyttää kassavirran järjestelmässä aiemmin luotujen asiakirjojen sekä ulkoisista järjestelmistä tuotavien kassavirta- ja ulosvirtausrivien perusteella.
+- Kassavirtatietojen helppo integroiminen ulkoisista järjestelmistä Dynamics 365 Financeen. Kassatilanne voi käyttää myös tietojen tuonti- ja vientikehystä. Tämän kehyksen avulla on helppo integroida tiedot Excel ODatan kanssa. Voit yhdistää tietoja useista lähteistä ja luoda kattavan kassatilanneratkaisun.
+- Esittelee älykkään kassatilanteen. Kassatilanne luodaan asiakkaan maksutoiminnan perusteella. Sen avulla ennustetaan, milloin yritys voi odottaa rahojen tulevan tilille.
+- Asiakastilausten ja laskujen yhteydessä asiakkaan maksujen ennusteen tekoälytoimintojen avulla määritetään asiakkaan historiallinen maksutoiminta tilauksen tai laskun maksamisen yhteydessä.
+- Toimittajatilauksissa ja laskuissa käytetään keskimääräistä aikaa lähetyksen ja laskun välillä sekä toimittajalaskun maksamista. Näin määritetään, milloin toimittajatilaus tai lasku maksetaan, mikä tekee kassavirroista tarkempia.
+
+Tämä luo kassavirran tarkemman näkymän, joka perustuu asiakkaiden historiallisiin maksutoimintoihin. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

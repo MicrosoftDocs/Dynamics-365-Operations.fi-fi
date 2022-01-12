@@ -2,19 +2,19 @@
 title: Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 description: Tässä ohjeaiheessa käsitellään kaksoiskirjoituksen valuutan osalta tukemien desimaalien määrän muuttamista.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782804"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917727"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 
@@ -83,9 +83,20 @@ Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tar
 
 ![Tietyn alueen valuutta-asetukset.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>taulut: Valuutta-sarake
+### <a name="tables-currency-column"></a>Taulut: Valuutta-sarake
 
 Tiettyihin valuuttasarakkeisiin määritettävien desimaalien määrä on rajoitettu neljään.
 
+### <a name="default-currency-decimal-precision"></a>Valuutan oletusdesimaalitarkkuus
+Seuraavassa taulussa on lisätietoja oletusvaluutan desimaalitarkkuusmallista siirtoa ja muita skenaarioita varten. 
+
+| Luontipäivä  | Valuutan desimaalikenttä    | Aiemmin luotu organisaatio (valuuttakenttää ei siirretä) | Aiemmin luotu organisaatio (valuuttakenttää siirretään) | Uusi organisaatio luotu koontiversion 9.2.21062.00134 jälkeen |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Ennen koontiversiota 9.2.21111.00146 luotu valuuttakenttä  |     |  |       |
+|    | Käyttöliittymässä näkyvä enimmäistarkkuus   | 4 numeroa    | 10 numeroa    | Ei saatavilla    |
+| | Tietokannan ja tietokantakyselyn tulosten käyttöliittymän enimmäistarkkuus         | 4 numeroa   | 10 numeroa   | Ei saatavilla    |
+| Koontiversion 9.2.21111.00146 jälkeen luotu valuuttakenttä |    |  |     |   |
+|   | Käyttöliittymässä näkyvä enimmäisdesimaalitarkkuus     | 4 numeroa   | 10 numeroa   | 10 numeroa     |
+|          | Tietokannan ja tietokantakyselyn tulosten käyttöliittymän enimmäisdesimaalitarkkuus | 10 numeroa. Kuitenkin vain neljä on merkittäviä, kun kaikki on nollia neljän desimaalin ulkopuolella. Tämä helpottaa ja nopeuttaa organisaation siirtoa tarpeen mukaan. | 10 numeroa      | 10 numeroa     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

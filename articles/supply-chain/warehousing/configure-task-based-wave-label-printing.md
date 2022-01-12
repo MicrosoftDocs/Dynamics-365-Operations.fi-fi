@@ -1,22 +1,22 @@
 ---
 title: Aallon etikettien tulostamisen ajoittaminen aallon aikana
 description: Tässä aiheessa kuvataan, miten tehtäväpohjaisen aallon etikettien tulostustoiminnon voi määrittää ja käyttää.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777862"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920146"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Aallon etikettien tulostamisen ajoittaminen aallon aikana
 
@@ -40,7 +40,7 @@ Jos haluat käyttää tässä ohjeaiheessa kuvattuja ominaisuuksia, niiden on ol
 
 Luo ensin uusi aallon vaihemenetelmä ja ota se käyttöön rinnakkaisessa, asynkronisessa tehtävän käsittelyssä.
 
-1. Valitse  **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
+1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
 1. Valitse toimintoruudussa **Luo menetelmä uudelleen**. Huomaa, että *waveLabelPrinting* on lisätty aaltoprosessimenetelmien luetteloon, jota voit käyttää toimitusaaltomalleissasi.
 1. Valitse tietue, jossa **Menetelmän nimi** -kentän arvoksi on asetettu *waveLabelPrinting* , ja valitse sitten toimintoruudusta **Tehtävän konfiguraatio**.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Uusi**. Määritä sitten uudelle rivillä seuraavat kentät:
@@ -51,7 +51,7 @@ Luo ensin uusi aallon vaihemenetelmä ja ota se käyttöön rinnakkaisessa, asyn
 
 Voit nyt päivittää aiemmin luodun aaltomallin niin, että se käyttää *Aallon etikettien tulostus* -aaltokäsittelymenetelmää. Voit myös luoda uuden aaltomallin, joka käyttää sitä.
 
-1. Valitse  **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
+1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 1. Valitse toimintoruudussa **Muokkaa**.
 1. Valitse luetteloruudusta aaltomalli, jonka haluat päivittää. (Jos testausta varten käytetään esittelytietoja, voit valita varaston *24 - oletustoimitus*.)
 1. Valitse **Menetelmät**-pikavälilehden **Jäljellä olevat menetelmät** -sarakkeessa rivi, jossa **Nimi** -kentän asetuksena on *waveLabelPrinting*.

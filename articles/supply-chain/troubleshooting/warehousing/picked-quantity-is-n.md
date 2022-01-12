@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 361b61690e9e16a690234ed9319478d864c743e7559746654e4868272de13524
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6febc340f140d0b3a3f08ea32a59d9eb4e6e5204
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716465"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920445"
 ---
 # <a name="picked-quantity-isnt-sufficient-during-packing-slip-generation"></a>Kerätyt määrät eivät riitä pakkausluettelon luonnin aikana
 
@@ -66,8 +66,8 @@ Seuraavia ohjeita noudattamalla voit säätää kuormarivin määrää.
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
 1. Valitse kuorma, jota varten pakkausluetteloa ei voi luoda.
-1. Valitse toimintoruudun  **Lähetys ja vastaanotto** -välilehden  **Käänteisen lähetyksen vahvistus**  **Käänteinen**-ryhmässä.
-1. Valitse  **Kuormitusrivit**-välilehdessä kuormitusrivi nimikkeelle, joka aiheuttaa ongelman.
+1. Valitse toimintoruudun **Lähetys ja vastaanotto** -välilehden **Käänteisen lähetyksen vahvistus** **Käänteinen**-ryhmässä.
+1. Valitse **Kuormitusrivit**-välilehdessä kuormitusrivi nimikkeelle, joka aiheuttaa ongelman.
 1. Valitse **Vähennä kerättyä määrää** säätääksesi keräysmäärää.
 1. Määritä **Pienennä kuormitusrivi** -kenttä vastaamaan kuormitusrivin oikaisuja.
 
@@ -79,5 +79,5 @@ Seuraavia ohjeita noudattamalla voit peruuttaa keräilyrekisteröinnin.
 
 1. Valitse **Myyntireskontra \> Tilaukset \> Kaikki tilaukset**.
 1. Valitse myyntitilaus, jolle et voi kirjata pakkausluetteloa kuormalle.
-1. Valitse  **Myyntitilausrivit**-välilehdestä myyntitilausrivi, jota varten rekisteröinti on tehty.
+1. Valitse **Myyntitilausrivit**-välilehdestä myyntitilausrivi, jota varten rekisteröinti on tehty.
 1. Voit poistaa nimikkeet valitsemalla **Päivitä rivi \> Kerää**.

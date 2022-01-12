@@ -13,12 +13,12 @@ ms.search.region: Finland
 ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: adb69cf90241fb56b470dd1f1f71b1241c8b3dca8eb5b20e98f786c059dffd50
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ba92d087fb16a78645dc85e46f2fc92ed0235bc
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771587"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922382"
 ---
 # <a name="finland-overview"></a>Suomi – yleiskatsaus
 
@@ -28,6 +28,8 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 
 - [Suomen arvonlisäveromaksun raportti](emea-fin-sales-tax-payment-report-finland.md)
 
+Tässä ohjeaiheessa on tietoja Suomen Intrastat-raportista.
 
+- [Suomen Intrastat](emea-fin-intrastat.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Varaston näkyvyyden julkiset ohjelmointirajapinnat
 description: Tässä aiheessa käsitellään varaston näkyvyyden julkisia ohjelmointirajapintoja.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678784"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920097"
 ---
 # <a name="inventory-visibility-public-apis"></a>Varaston näkyvyyden julkiset ohjelmointirajapinnat
 
@@ -41,8 +41,8 @@ Seuraavassa taulukossa on tällä hetkellä käytettävissä olevat ohjelmointir
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Kirjaa | [Varastosaldomäärien määrittäminen tai ohittaminen](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Kirjaa | [Yhden varaustapahtuman luominen](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Kirjaa | [Useiden varaustapahtumien luominen](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Hae | [Post-menetelmää käyttävä kysely](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Kirjaa | [Get-menetelmää käyttävä kysely](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Kirjaa | [Post-menetelmää käyttävä kysely](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Hae | [Get-menetelmää käyttävä kysely](#query-with-get-method) |
 
 Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
@@ -476,7 +476,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Varastosaldokysely
 
-_Query on-hand_-ohjelmointirajapinnalla noudetaan tuotteiden tämän hetkiset varastosaldotiedot.
+_Query on-hand_-ohjelmointirajapinnalla voit noutaa tuotteiden tämän hetkiset varastosaldotiedot. Sovellusrajapinta tukee tällä hetkellä kyselyä, jossa on enintään 100 yksittäistä nimikettä `ProductID`-arvon mukaan. Jokaisessa kyselyssä voi määrittää myös useita `SiteID`- ja `LocationID`-arvoja. Enimmäisrajaksi määritetään `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Post-menetelmää käyttävä kysely
 
@@ -551,7 +551,7 @@ Seuraavissa esimerkeissä esitetään, miten kaikkia tuotteita kysellään tiety
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -568,7 +568,7 @@ Query(Url Parameters):
 get URL -esimerkki: Tämä get-pyyntö täsmälleen sama kuin aiemmin annettu post-näyte.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

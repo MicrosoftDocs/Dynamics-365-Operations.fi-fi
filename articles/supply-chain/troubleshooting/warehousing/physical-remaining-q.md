@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 187363db3030ee0741f0c7e7746295b88320162c156120112332bb78593bb673
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744651"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920221"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>Fyysisen jäljelle jäävän määrän yksikkö ei saa olla nolla
 
@@ -63,10 +63,10 @@ Tarkista seuraavan ohjeen avulla kuormarivit ja tee tarvittavat korjaukset, jott
 
 1. Siirry kohtaan **Varastonhallinta \> Kuormat \> Kaikki kuormat**.
 1. Valitse kuorma, jota varten pakkausluetteloa ei voi luoda.
-1. Valitse toimintoruudun  **Lähetys ja vastaanotto** -välilehden  **Käänteisen lähetyksen vahvistus**  **Käänteinen**-ryhmässä.
-1. Valitse  **Kuormitusrivit**-välilehdessä nimikkeelle kuormitusrivi, joka ylittää ylitoimituksen.
+1. Valitse toimintoruudun **Lähetys ja vastaanotto** -välilehden **Käänteisen lähetyksen vahvistus** **Käänteinen**-ryhmässä.
+1. Valitse **Kuormitusrivit**-välilehdessä nimikkeelle kuormitusrivi, joka ylittää ylitoimituksen.
 1. Valitse **Vähennä kerättyä määrää** säätääksesi keräysmäärää.
-1. Valitse  **Rivin erittely** -välilehdessä **Tilaus**.
+1. Valitse **Rivin erittely** -välilehdessä **Tilaus**.
 1. Määritä **Määrä**-kentässä arvo kerätyksi määräksi (eli **Työn luontimäärä** -kentän arvo), jotta lähetysluettelon luontia voidaan jatkaa.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Tarkista kuormarivit ja tee tarvittavat korjaukset, jotta yksikkö ja määrä ovat yksikön desimaalitarkkuuden tasalla

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
-ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
+ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
+ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7893642"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7931978"
 ---
 # <a name="add-or-copy-leases-preview"></a>Vuokrasopimuksen lisääminen tai kopioiminen (esiversio)
 
@@ -50,6 +50,9 @@ Kun olet syöttänyt vuokrasopimuksen tiedot, luo vuokrasopimusaikataulu seuraav
     **Kirjan tiedot** -sivulla on tietoja vuokrasopimuksen kirjaamisesta kirjoihin, jotka on kohdistettu sille. Tässä voit tarkastella vuokrasopimusaikatauluja.
 
     Maksuaikataulu sisältää syötteet **Maksuaikataulurivit**-välilehdestä **Lisää vuokrasopimus** -sivulla. Voit kuitenkin muuttaa kunkin maksusumman ja muuttuvan maksun. Vuokrasopimusvelka lasketaan muutetun maksuaikataulun mukaan.
+    
+> [!NOTE]
+> Vuokranmaksun alkamispäivämäärän on oltava sama tai myöhempi kuin vuokran aloituspäivämäärä. Jos syötät vuokramaksun alkamispäivämäärän, joka on aiempi kuin vuokrasopimuksen alkamispäivämäärä, saat virhesanoman. 
 
 4. Kun maksuaikataulun tarkastelu on päättynyt, valitse **Vahvista aikataulu**. Kun aikataulu on vahvistettu, vuokrasopimusta ei enää voi muokata.
 

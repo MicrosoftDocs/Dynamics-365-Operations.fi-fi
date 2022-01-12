@@ -1,8 +1,8 @@
 ---
 title: Maksukehotusjärjestyksen määrittäminen
 description: Tällä menettelyllä luodaan maksukehotusjärjestys.
-author: abruer
-ms.date: 07/22/2019
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc5bd0b1228ef28631da8746b2eb60e4cf488c1
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753583"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921196"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Maksukehotusjärjestyksen määrittäminen
 
@@ -31,10 +31,10 @@ Tällä menettelyllä luodaan maksukehotusjärjestys. Tässä tehtävässä käy
 3. Syötä **Maksukehotusjärjestys**-kenttään sarjaa kuvaavan järjestyksen tunnus. Sitä käytetään kirjausprofiilin määrittämisessä.
 4. Kirjoita **Kuvaus**-kenttään arvo.  Maksuehdot ovat valinnaisia. Jos syötät tähän arvon, maksukehotuksen perintälaskussa käytetään näitä maksuehtoja asiakkaan tietoihin tallennettujen maksuehtojen sijaan.  
 5. Valitse **Maksukehotuskoodi**-kenttään ensimmäisenä lähetettävän maksukehotuksen koodi. Ensimmäinen maksukehotus luodaan laskun eräpäivän, tämän rivin Päivät-kenttään syöttämäsi lisäajan ja muiden tälle riville syöttämiesi tietojen perusteella.  
-6. Kirjoita **Kuvaus**-kenttään arvo. Lisämaksun valuutan oletusarvo on asiakkaan valuutta. Tämä valuuttakoodi voi olla eri kuin laskun valuutta.  
-7. Lisää järjestyksessä seuraavana lähetettävä maksukehotus valitsemalla **Lisää**. Usein ensimmäinen maksukehotus toimii vain varoituksena. Voit lisätä lisämaksuja tarvittaessa.  
-8. Valitse Maksukehotuskoodi-kentässä järjestyksessä seuraavana lähetettävä maksukehotus.
-9. Kirjoita **Kuvaus**-kenttään arvo.
+6. Kirjoita **Kuvaus**-kenttään arvo. 
+7. Maksun oletusvaluutta on yrityksen valuutta. Tämä valuuttakoodi voi olla eri kuin laskun valuutta.   
+8. Lisää järjestyksessä seuraavana lähetettävä maksukehotus valitsemalla **Lisää**. Usein ensimmäinen maksukehotus toimii vain varoituksena. Voit lisätä lisämaksuja tarvittaessa.  
+9. Valitse **Maksukehotuskoodi**-kentässä järjestyksessä seuraavana lähetettävä maksukehotus.
 10. Valitse **Päätili**-kentässä lisämaksuissa käytettävä tuottotili.
 11. Syötä lisämaksu, joka veloitetaan tämän maksukehotuksen kirjaamisen yhteydessä.
 12. Avaa haku valitsemalla **Nimikkeen arvonlisäveroryhmä** -kentässä avattavan valikon painike. Valitse nimikkeen arvonlisäveroryhmä, jos lisämaksulle on laskettava arvonlisävero.  

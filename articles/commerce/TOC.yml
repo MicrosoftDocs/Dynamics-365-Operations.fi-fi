@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (marraskuu 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (lokakuu 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -842,7 +840,7 @@
           items:
             - name: Laskelmien yleiskatsaus
               href: retail-statements.md
-            - name: Tapahtumien yhdenmukaisuuden tarkistus
+            - name: Myymälän tapahtumien tarkistaminen laskelman laskemista varten
               href: valid-checker.md
             - name: Vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen sääntöjen käytöstäpoisto
               href: disable-consistency-check-rule.md
@@ -858,7 +856,7 @@
                   href: create-excel-edit.md
                 - name: Kenttien lisääminen Excel-työkirjaan vähittäismyyntitapahtumien muokkaamista varten
                   href: add-fields-excel.md
-            - name: Vähittäismyyntitapahtumien syötteisiin perustuvien tilausten vähittäinen luominen
+            - name: Vähittäismyyntitapahtumien vähittäisiin syötteisiin perustuvien tilausten luominen
               href: trickle-feed.md
             - name: 'Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen'
               href: tasks/create-calculate-post-statement-retail-store.md
@@ -1286,13 +1284,15 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Commerce-kanavan kirjanpidon integroinnin määrittäminen
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Kirjanpidon integrointimallin koontijakson määrittäminen
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
               items:
-                - name: Regulatory configuration service (RCS) -yleiskatsaus
+                - name: Regulatory Configuration Service (RCS) -yleiskatsaus
                   href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: (RCS) Regulatory configuration service (RCS) – globalisointiominaisuudet
+                - name: (RCS) Regulatory Configuration Service (RCS) – globalisointiominaisuudet
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
                 - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service (RCS) -palvelussa ja niiden lataaminen yleiseen säilöön
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
@@ -1320,8 +1320,10 @@
                           href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Itävalta
               items:
-                - name: Itävallan tilikausirekisteröintipalvelun integroinnin malli
+                - name: Itävallan tilikausirekisteröintipalvelun integrointimalli
                   href: localizations/emea-aut-fi-sample.md
+                - name: Itävallan kirjanpidon integrointimallin käyttöönotto-ohjeet (vanha)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilia
               items:
                 - name: Commercen lokalisointi – Brasilia
@@ -1356,14 +1358,18 @@
                       href: localizations/emea-eeu-deployment.md
                 - name: Tšekin tasavalta
                   items:
-                    - name: Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli
+                    - name: Tšekin tasavallan tilikausirekisteröintipalvelun integrointimalli
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Tšekin tasavallan kirjanpidon integrointimallin käyttöönotto-ohjeet (vanha)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Puola
                   items:
-                    - name: Näyte verotusta varten olevan tulostimen integroinnista Puolassa
+                    - name: Puolan kuittitulostimen integrointimalli
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Puolan asiakastietojen hallinta
                       href: localizations/emea-pol-customer-information.md
+                    - name: Puolan kirjanpidon integrointimallin käyttöönotto-ohjeet (vanha)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Ranska
               items:
                 - name: Kassakoneen toiminnot
@@ -1378,8 +1384,10 @@
                   href: localizations/emea-fra-deployment.md
             - name: Saksa
               items:
-                - name: Saksan tilikausirekisteröintipalvelun integroinnin malli
+                - name: Saksan tilikausirekisteröintipalvelun integrointimalli
                   href: localizations/emea-deu-fi-sample.md
+                - name: Saksan kirjanpidon integrointimallin käyttöönotto-ohjeet (vanha)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: Intia
               items:
                 - name: Arvonlisäveron (GST) integrointi kassakoneisiin
@@ -1394,10 +1402,12 @@
                   href: localizations/apac-ind-e-commerce.md
             - name: Italia
               items:
-                - name: Näyte verotusta varten olevan tulostimen integroinnista Italiassa
+                - name: Italian kuittitulostimen integrointimalli
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Italian asiakastietojen hallinta
                   href: localizations/emea-ita-customer-information.md
+                - name: Italian kirjanpidon integrointimallin käyttöönotto-ohjeet (vanha)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Meksiko
               items:
                 - name: Meksikon globaalit CFDI-laskut
@@ -1407,6 +1417,8 @@
                 - name: Kassakoneen toiminnot
                   href: localizations/emea-nor-cash-registers.md
                 - name: Kassakoneiden käyttöönotto-ohjeet
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Kassakoneiden käyttöönotto-ohjeet (vanha)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Venäjä
               items:
@@ -1430,8 +1442,10 @@
               items:
                 - name: Kassakoneen toiminnot
                   href: localizations/emea-swe-cash-registers.md
-                - name: Tarkistusyksikön integrointimalli – Ruotsi
+                - name: Ruotsin tarkistusyksikön integrointimalli
                   href: localizations/emea-swe-fi-sample.md
+                - name: Ruotsin tarkistusyksikön integrointimallin käyttöönotto-ohjeet (vanha)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: 'Retail POS -integrointimalli, jossa on tarkistusyksiköt (vanha)'
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Raportointi ja Power BI -integroinnit
@@ -1946,7 +1960,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service (RCS)
                   items:
-                    - name: Regulatory configuration service (RCS) -yleiskatsaus
+                    - name: Regulatory Configuration Service (RCS) -yleiskatsaus
                       href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
                     - name: Sähköisen raportoinnin määritysten lataaminen Commerceen
                       items:
@@ -2466,11 +2480,13 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: Pyynnön jakson liitännäiskoukun luominen
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Kuvan osa
+                      href: e-commerce-extensibility/image-component.md
                 - name: Tietotoimintojen kehittäminen
                   items:
                     - name: Tietotoimintojen yleiskatsaus
                       href: e-commerce-extensibility/data-actions.md
-                    - name: Tietotoiminnon välimuistiasetukset
+                    - name: Tietotoiminnon välimuistivalinnat
                       href: e-commerce-extensibility/data-action-cache.md
                     - name: Tietotoimintojen testaaminen vedosten avulla
                       href: e-commerce-extensibility/test-data-action-mocks.md
@@ -2574,6 +2590,8 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Mallien ja pakettien lataaminen GitHub- ja NuGet-palvelusta
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: 'Visual Studio 2017 -koontiversion agentin määrittäminen Modern POS:n luomiseksi'
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: 'Retail SDK:n usein kysytyt kysymykset'
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Myyntipisteen (POS) laajennettavuus
