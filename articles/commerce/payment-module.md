@@ -2,7 +2,7 @@
 title: Maksumoduuli
 description: Tässä ohjeaiheessa on tietoja maksumoduulista ja sen määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 author: anupamar-ms
-ms.date: 11/18/2020
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 303b5f0bdfdb00accab2598acc2545bca69660412e170202152303c8ed81314e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774554"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952466"
 ---
 # <a name="payment-module"></a>Maksumoduuli
 
@@ -90,7 +90,24 @@ Kuten maksumoduulit, **Tuetut maksuvälinetyypit** -ominaisuus on lisätty Comme
 
 Maksumoduuli voidaan lisätä vain kassalle-moduuliin. Lisätietoja maksumoduulin määrittämisestä kassasivulle on kohdassa [Kassamoduuli](add-checkout-module.md).
 
-Jos sekä Adyen- että PayPal-maksuyhdistimiä tarvitaan, lisää molemmat moduulit maksuosaan. Varmista, että **Tuetut maksuvälinetyypit** -ominaisuuden arvo on määritetty PayPalille, ja jätä se tyhjäksi Adyenia varten. Määritä myös Adyenille **On ensisijainen maksu** -ominaisuus arvoon **Tosi**.
+## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Adyen- ja PayPal-maksuliittimien konfiguroiminen, kun molempia käytetään
+
+Jos sivustosi käytössä on sekä Adyen- että PayPal-maksuliittimet, lisää kullekin liittimelle maksumoduulit kassamoduuliin ja määritä sitten kunkin moduulin ominaisuudet noudattamalla seuraavia vaiheita Commerce-sivustonmuodostimessa.
+
+1. Noudata seuraavia vaiheita PayPal-maksumoduulin ominaisuusruudussa:
+
+    1. Määritä **Tuetut maksuvälinetyypit** -ominaisuuden kenttään **PayPal**.
+    1. Poista **On ensisijainen maksutapa** -ominaisuuden valintaruudun valinta.
+    1. Valitse **Käytä yhdistimen tunnusta** -ominaisuuden valintaruutu.
+
+1. Noudata seuraavia vaiheita Adyen-maksumoduulin ominaisuusruudussa:
+
+    1. Jätä **Tuetut maksuvälinetyypit** -ominaisuuden kenttä tyhjäksi.
+    1. Valitse **On ensisijainen maksutapa** -ominaisuuden valintaruutu.
+    1. Valitse **Käytä yhdistimen tunnusta** -ominaisuuden valintaruutu.
+
+> [!NOTE]
+> Kun määrität yhdessä käytettävät Adyen- ja PayPal-liittimet, **Dynamics 365 Payment Connector – Adyen** -konfiguraation on oltava ensimmäisenä online-kanavan **Maksutilit**-yhdistinkonfiguraatiossa Commerce Headquartersissa. Voit vahvistaa liittimien järjestyksen tai muuttaa sitä valitsemalla **Online-myymälät** ja sitten sivuston kanavan. Varmista sitten **Maksutilit**-pikavälilehden **Asetukset**-välilehden **Yhdistin**-kohdasta, että **Dynamics 365 Payment Connector – Adyen** -konfiguraatio on ensimmäisessä kohdassa (ylimmällä rivillä) ja että **Dynamics 365 Payment Connector – PayPal** -konfiguraatio on toisella rivillä. Lisää tai poista liittimiä tarpeen mukaan niiden järjestämistä varten.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

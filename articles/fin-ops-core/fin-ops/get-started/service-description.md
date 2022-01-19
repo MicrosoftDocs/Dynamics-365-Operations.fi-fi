@@ -2,19 +2,19 @@
 title: Finance and Operations -sovellusten palvelunkuvaus
 description: Tässä ohjeaiheessa esitetään Finance and Operations -sovellusten palvelunkuvaus.
 author: tomhig
-ms.date: 12/07/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898386"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952363"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten palvelunkuvaus
 
@@ -117,7 +117,7 @@ Finance and Operations -sovelluksia tarjotaan useilla eri Azure-alueilla ympäri
 ### <a name="countryregion-specific-considerations"></a>Maa- tai aluekohtaiset seikat
 
 - Säädellyissä teollisuus- tai kauppaorganisaatioissa toimivat asiakkaat, jotka harjoittavat liiketoimintaa sellaisten Ranskassa toimivien yritysten kanssa, joilta vaaditaan paikallista tietojen sijaintia, kannattaa tutustua aiheeseen [Finance and Operations Ranskassa](../../dev-itpro/deployment/france-local-deployment.md).
-- Asiakkaiden, jotka toimivat Kiinassa kannattaa tutustua aiheeseen [Finance and Operations 21Vianetin tarjoamana Kiinassa](../../dev-itpro/deployment/china-local-deployment.md).
+- Asiakkaiden, jotka toimivat Kiinassa kannattaa tutustua artikkeleihin [Azure Kiinassa -käsikirja](/azure/china/) ja [Finance and Operations 21Vianetin tarjoamana Kiinassa](../../dev-itpro/deployment/china-local-deployment.md).
 - Venäjällä toimivien asiakkaiden kannattaa tutustua aiheeseen [Venäjän henkilötietojen lokalisointilaki](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Yleinen tietosuoja-asetus (GDPR)
@@ -356,6 +356,7 @@ Microsoft on sitoutunut palvelun 99,9-prosenttiseen kuukausittaiseen käytettäv
 - **[Käyttöoikeusopas](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Tämän oppaan avulla voit oppia lisää Dynamics 365:n lisensoinnista.
 - **[Asiakastuki](https://dynamics.microsoft.com/support/)** – Hanki alan johtava tuki Dynamics 365 -sovelluksillesi.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Hallitse sovelluksen elinkaarta ja siirry koti ennustettavissa olevia, toistettavia ja korkealuokkaisia käyttöönottoja.
+- **[Dynamics 365 -käyttöönotto-opas](https://aka.ms/D365ImplementationGuideFlip)** - Dynamics 365 -käyttöönotto-opas dokumentoi aikatestatut Success by Design -periaatteet ja antaa ohjeita Dynamics 365 -ratkaisujen suunnitteluun, kehittämiseen, testaamiseen ja käyttöönottoon.
 
 ## <a name="definitions"></a>Määritelmät
 
@@ -428,6 +429,10 @@ Microsoftin verkkopalveluihin sovellettava palvelutasosopimus. Lisätietoja: [Pa
 ### <a name="service-update"></a>Palvelupäivitys
 
 Microsoft huoltaa Finance and Operations -ympäristöjä jatkuvasti palvelupäivitysten kautta. Asiakkaat määrittävät oman palvelupäivityskalenterinsa liiketoiminnan tarpeiden mukaan. Lisätietoja: [Yhden version palvelupäivitykset](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Kehys, joka ohjaa toteutusta järjestelmällisesti arvioinneilla kriittisissä vaiheissa, jotta voidaan varmistaa Dynamics 365 -ratkaisun optimaalinen arkkitehtuuri, suojaus, suorituskyky ja käyttäjäkokemus.
 
 ### <a name="user"></a>Käyttäjä
 

@@ -10,7 +10,7 @@
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
             - name: Ennen ostamista
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
-            - name: Kokeiluversioiden tilaaminen
+            - name: Esiversiotilauksiin rekisteröityminen
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
             - name: One Version -palvelupäivitykset
               items:
@@ -1208,10 +1208,12 @@
               items:
                 - name: Finance Insightsin määritys
                   href: finance-insights/configure-for-fin-insites.md
-                - name: Ota käyttöön asiakkaan maksuennusteet
+                - name: Asiakkaan maksuennusteiden ottaminen käyttöön
                   href: finance-insights/enable-cust-paymnt-prediction.md
-                - name: Ota käyttöön kassavirran ennustaminen
+                - name: Kassavirtaennusteiden ottaminen käyttöön
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Ulkoiset tiedot kassavirtaennusteissa
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Budjettiehdotusten ottaminen käyttöön
                   href: finance-insights/enable-budget-proposal.md
                 - name: Tietojen integrointiohjelman projektin luominen
@@ -1232,10 +1234,8 @@
                   href: finance-insights/budget-proposals.md
                 - name: Kassatilanne
                   href: finance-insights/cash-position.md
-                - name: Kassavirtaennuste
+                - name: Kassaennuste
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Ulkoisten tietojen käyttäminen kassavirta ennusteissa
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Asiakkaan maksuennusteet
                   href: finance-insights/payment-insights-overview.md
                 - name: Asiakkaan maksuennusteiden käyttäminen
@@ -1328,9 +1328,9 @@
                   href: public-sector/general-budget-reservations-project-accounting.md
             - name: Julkisen sektorin käyttöomaisuuserät
               href: public-sector/fixed-asset-public-sector.md
-            - name: Julkisen sektorin kirjanpito
+            - name: Julkisen sektorin pääkirjanpito
               items:
-                - name: Julkisen sektorin kirjanpito – yleiskatsaus
+                - name: Julkisen sektorin pääkirjanpito – yleiskatsaus
                   href: public-sector/general-ledger-public-sector.md
                 - name: Julkisen sektorin kehittyneet kirjanpidon merkinnät
                   href: public-sector/advanced-ledger-entries-public-sector.md
@@ -1372,9 +1372,9 @@
                   href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory Configuration Service (RCS)
                   items:
-                    - name: Regulatory configuration service (RCS) -yleiskatsaus
+                    - name: Regulatory Configuration Service (RCS) -yleiskatsaus
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory configuration service (RCS) – globalisointiominaisuudet
+                    - name: Regulatory Configuration Service (RCS) – globalisointiominaisuudet
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin konfiguraatioiden luominen Regulatory Configuration Service (RCS) -palvelussa ja niiden lataaminen yleiseen säilöön
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
@@ -1432,6 +1432,8 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Saudi-Arabian sähköisen laskutuksen käytön aloittaminen
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: 'Italian FatturaPA:n ja SDI:n suoran integroinnin määrittäminen'
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Sähköisen laskutuksen määrittäminen
@@ -1512,6 +1514,10 @@
                           items:
                             - name: ALV-ilmoitus
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Norjan raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Veron laskennan käyttöönotto siirtotilausta varten
                       items:
                         - name: Verotoimintojen tuen määrittäminen
@@ -1557,7 +1563,7 @@
                 - name: ALV-laskelma
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Kansainväliset palvelut -raportti
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Itävallan Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Ostoverot
@@ -1820,11 +1826,11 @@
                   href: localizations/apac-chn-vouchers.md
                 - name: Verointegroinnin määritys
                   href: localizations/apac-chn-tax-integration.md
-                - name: Golden tax -veron integraation viennin määritys – Kiina
+                - name: Kiinan arvonlisäverojen integroinnin viennin määritys – Kiina
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Käyttöomaisuuserien poistomenetelmät
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Kiinalaisen Golden Tax -tietoyksikön tuonti
+                - name: Kiinan arvonlisäverotiedostojen tuominen
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Kuukausittainen keskiarvo -kustannusmalli
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -2084,13 +2090,15 @@
                   href: localizations/emea-financial-reason.md
             - name: Suomi
               items:
-                - name: Suomen yleiskatsaus
+                - name: Suomi – yleiskatsaus
                   href: localizations/finland.md
                 - name: Suomen arvonlisäveron maksuraportti
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Suomen Intrastat
+                  href: localizations/emea-fin-intrastat.md
             - name: Ranska
               items:
-                - name: Ranska – yleiskuvaus
+                - name: Ranska – yleiskatsaus
                   href: localizations/france.md
                 - name: Julkinen sektori
                   items:
@@ -2610,11 +2618,13 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: Indonesian ALV-ilmoitus
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Indonesian ennakonpidätysraportti
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Italia
               items:
                 - name: Italia – yleiskatsaus
                   href: localizations/italy.md
-                - name: ALV-laskelman tiedot
+                - name: ALV-laskelmien tiedot
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Neljännesvuosittainen ALV-viestintäraportti
                   href: localizations/emea-ita-quarterly-vat-communication.md
@@ -4179,7 +4189,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory Configuration Service (RCS)
                   items:
-                    - name: Regulatory configuration service (RCS) -yleiskatsaus
+                    - name: Regulatory Configuration Service (RCS) -yleiskatsaus
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin määritysten lataaminen Financeen
                       items:

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890827"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947337"
 ---
 # <a name="impair-right-of-use-assets"></a>Käyttöoikeusomaisuuserän arvon alentaminen
 
@@ -44,6 +44,8 @@ Jäljellä oleva käyttöoikeusomaisuuserän saldo kuoletetaan jäljellä olevie
 
     > [!NOTE]
     > Sen jälkeen, kun tapahtuma on kirjattu, luodaan uusi kirjaversio.
+
+    > Jos vuokra luokitellaan käyttövuokraksi, kuukausittainen poisto arvonalennuksen jälkeen lasketaan tasapoistomenetelmällä.
 
 9. Voit tarkastella sitä resurssin poistoaikataulua, jonka arvoa on alennettu, ja avata vuokrauskirjan resurssin poistoaikataulun. Käyttöomaisuus poistetaan nyt **Kausia jäljellä** -kentään syötettyjen kuukausien määrän perusteella tasaisesti.
 10. Voit tarkastella kulukirjauskansiovientiä, jonka arvoa alennettiin, valitsemalla **Käyttöomaisuuserän leasingkirjauskansio** arvonalennuksen vuokrauskirjan toimintoruudussa. Järjestelmä luo kirjauskansioviennin, joka veloittaa arvonalennuksen kulukirjauksen tiliä ja hyvittää vuokrauksen resurssin tiliä. 
@@ -100,6 +102,7 @@ Seuraavissa taulukoissa ovat arvot, jotka on määritetty **Yleistiedot**- ja **
     | Sulje kirja             | Ei       |
 
 6. Arvonalentumisen kulukirjauskansiovienti on luotu ja kirjattu. Voit tarkastella sitä siirtymällä resurssin leasingkirjauskansioon vuokrauskirjassa. Huomaa, että arvonalennuksen summa on veloitettu arvonalennuksen kulukirjaustililtä ja käyttöoikeusomaisuuserän kirjaustiliä on hyvitetty.
+
 7. Voit tarkastella arvonalennuksen nettovaikutusta siirtymällä velka- ja resurssitapahtumien taulukoihin. Huomaa, että arvonalennuksen kulu on vähentänyt käyttöoikeusomaisuuserää, mutta vuokrasopimusvelan kirjanpitosumma ei ole muuttunut.
 
 Arvonalennuksella on toinen vaikutus, joka tulee ottaa huomioon. Koska käyttöoikeusomaisuuserän summa on nyt pienempi kuin vuokrasopimusvelka, summa on vähennettävä eri tavalla kuin ennen. Resurssi on nyt vähennetty tasapoistomenetelmällä kaikista vuokrasopimuksen jäljellä olevista 84 kuukaudesta tapahtumapäivämäärästä alkaen.

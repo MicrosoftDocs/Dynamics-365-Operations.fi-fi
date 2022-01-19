@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920097"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952624"
 ---
 # <a name="inventory-visibility-public-apis"></a>Varaston näkyvyyden julkiset ohjelmointirajapinnat
 
@@ -48,6 +48,8 @@ Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voi
 
 > [!NOTE]
 > Polun {environmentId}-osa on ympäristötunnus Microsoft Dynamics Lifecycle Servicesissä (LCS).
+> 
+> Joukkotoimintosovellusliittymä voi palauttaa kullekin pyynnölle enintään 512 tietuetta.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services -ympäristön mukaisen päätepisteen etsiminen
 
@@ -249,7 +251,7 @@ Seuraavassa esimerkissä on näytteen tekstisisältö ilman `dimensionDataSource
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Useiden muutostapahtumien luominen
 
-Tällä ohjelmointirajapinnalla voidaan luoda useita tietueita samanaikaisesti. Tämän ohjelmointirajapinnan ja [yhden tapahtuman ohjelmointirajapinnan](#create-one-onhand-change-event) ainoat erot ovat `Path`- ja `Body` -arvoissa. Tässä ohjelmointirajapinnassa `Body` tuottaa tietuematriisin.
+Tällä ohjelmointirajapinnalla voidaan luoda useita tietueita samanaikaisesti. Tämän ohjelmointirajapinnan ja [yhden tapahtuman ohjelmointirajapinnan](#create-one-onhand-change-event) ainoat erot ovat `Path`- ja `Body` -arvoissa. Tässä ohjelmointirajapinnassa `Body` tuottaa tietuematriisin. Tietueiden enimmäismäärä on 512, mikä tarkoittaa, että käsillä oleva joukkotoiminto-ohjelmointirajapinta voi tukea enintään 512 muutostapahtumaa kerrallaan.
 
 ```txt
 Path:

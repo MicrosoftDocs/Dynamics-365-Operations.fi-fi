@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dea2724f574383298c5deac9b76b4cd1d802b5427c8ec2a59a9d1ab0de4e0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab125f963b8f2e00c8d937c6eea091970feaef65
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741581"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952543"
 ---
 # <a name="cost-accounting-home-page"></a>Kustannuslaskennan aloitussivu
 
@@ -38,7 +38,7 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Perusyksiköiden määrittäminen (eLearning)](https://mbspartner.microsoft.com/Home) (tarvitaan CustomerSource-tilin)  |[Kustannustason dimensiot](cost-elements.md)  |
+|  [Kustannuslaskennan käytön aloittaminen (Learn)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Kustannustason dimensiot](cost-elements.md)  |
 |  [Dimensiohierarkia](dimension-hierarchy.md)  |[Määritä kustannusseurantayksiköt](./tasks/define-cost-control-units.md)| 
 | [Kohdistusperusteet](allocation-bases.md)|[Luo ja määritä kustannusten kohdistuksen käytäntö kustannusten hallinnan yksikköön](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [Kustannuslaskennan kirjanpidon tietolähteen hallinta](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Lähdetietojen käsittely ja seuranta](./tasks/process-trace-source-data.md)     | 

@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943609"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952649"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -379,7 +379,7 @@ Jos jokin malleista sisältää PivotTable-taulukon, joka perustuu [ulkoiseen ti
     2. Luo ER:n avulla toinen Excel-työkirja (työkirja B) Financesta, jossa on tarvittavat tiedot. 
     3. Viittaa työkirjaan B työkirjassa A heti, kun työkirja B on luotu.
 
-- Voit poistaa ominaisuuden käytöstä muun vaihtoehdon kuin EPPlus-vaihtoehdon avulla. 
+- Poista käytöstä toiminto **Ota käyttöön EPPlus-kirjasto sähköisessä raportointikehyksessä** jos haluat käyttää muuta vaihtoehtoa EPPlus-vaihtoehdon sijaan. 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

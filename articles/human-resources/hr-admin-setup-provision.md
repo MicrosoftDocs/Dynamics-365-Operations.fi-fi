@@ -2,7 +2,7 @@
 title: Valmistele Human Resources
 description: Tässä aiheessa käsitellään Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
+ms.openlocfilehash: b5ea27c6650df0b94284902eb37e2169ea36261a
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644524"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952699"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -44,7 +44,7 @@ Ennen ensimmäisen tuotantoympäristön tai tuotantoympäristön varausta voit v
 
 Koeympäristöt tarjoavat mahdollisuuden arvioida henkilöstöresurssitoimintoja niiden henkilöiden osalta, joilla ei ole vielä henkilöstöresurssiympäristön käyttöoikeutta. Jos olet valmistelemassa koeympäristöä ja todennetulla käyttäjällä on jo käyttöoikeus yhteen tai useampaan olemassa olevaan henkilöstöresurssiympäristöön, käyttäjä ohjataan aiemmin luotuun ympäristöön tai ympäristöjen luetteloon.
 
-Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Koeajan kesto on enintään 60 päivää. Kun kokeiluympäristö vanhenee, ympäristö ja sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Ympäristöä ei voi muuntaa tuotantotilauksen tai tuotantoympäristön muotoon. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
+Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Koeajan kesto on enintään 30 päivää. Kun kokeiluympäristö vanhenee, ympäristö ja sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Ympäristöä ei voi muuntaa tuotantotilauksen tai tuotantoympäristön muotoon. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
 
 Kun luot henkilöstöhallinnon koeympäristön, vuokraajalla luodaan myös Power Apps -koeympäristö, joka linkitetään henkilöstöhallinnon ympäristöön. Power Apps -ympäristöllä, jonka nimi on TestDrive, on sama koeaika kuin henkilöstöhallinnon ympäristöllä.
 

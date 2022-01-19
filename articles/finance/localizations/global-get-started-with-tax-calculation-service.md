@@ -2,7 +2,7 @@
 title: Verolaskennan aloittaminen
 description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää verolaskennan.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,74 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647431"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952518"
 ---
 # <a name="get-started-with-tax-calculation"></a>Verolaskennan aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja verolaskennan käytön aloittamisesta. Se auttaa määrittämään Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicen (RCS) ja Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin. Tämän jälkeen se tarkastelee yleistä prosessia, jossa veronlaskennan mahdollisuuksia käytetään Financen ja Supply Chain Managementin tapahtumissa.
+Tässä ohjeaiheessa on tietoja verolaskennan käytön aloittamisesta. Tämän aiheen osat opastavat sinua Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicen (RCS) ja Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin korkean tason suunnittelu- ja määritysvaiheissa. 
 
-Asetukset koostuvat neljästä päävaihesta:
+Asetukset koostuvat kolmesta päävaiheesta.
 
 1. Asenna LCS:ssä verolaskennan apuohjelma.
 2. Määritä RCS:ssä veronlaskentaominaisuus. Nämä määritykset eivät ole yrityskohtaisia. Se voidaan jakaa Financen ja Supply Chain Managementin oikeushenkilöiden kanssa.
 3. Määritä Financessa ja Supply Chain Managementissa verolaskennan parametrit oikeushenkilöittäin.
-4. Luo Financessa ja Supply Chain Managementissa tapahtumia, kuten myyntitilauksia, ja määritä ja laske verot verolaskennan avulla.
+
+## <a name="high-level-design"></a>Korkean tason rakenne
+
+### <a name="runtime-design"></a>Suorituksenaikainen rakenne
+
+Seuraavassa kuvassa esitellään verolaskennan korkean tason suorituksenaikainen rakenne. Koska verolaskenta voidaan integroida useisiin Dynamics 365 -sovelluksiin, havainnollistuksessa käytetään esimerkkinä Finance-integrointia.
+
+1. Financessa luodaan tapahtuma, kuten myyntitilaus tai ostotilaus.
+2. Finance käyttää automaattisesti arvonlisäveroryhmän ja nimikkeen arvonlisäveroryhmän oletusarvoja.
+3. Kun tapahtuman **Arvonlisävero**-painike on valittuna, verolaskenta käynnistyy. Finance lähettää sitten tiedot verolaskentapalveluun.
+4. Arvonlisäveron laskentapalvelu etsii tiedoille vastaavuuden verotoiminnon ennalta määritetyillä säännöillä, jotta löydetään tarkempi arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä samanaikaisesti.
+
+    - Jos tiedot voidaan yhdistää **Veroryhmän käytettävyys** -matriisiin, se korvaa arvonlisäveroryhmän arvon sovellettavuussäännön veroryhmän arvolla. Muuten se jatkaa Financen arvonlisäveroryhmän arvon käyttöä.
+    - Jos tiedot voidaan yhdistää **Nimikkeen veroryhmän käytettävyys** -matriisiin, se korvaa nimikkeen arvonlisäveroryhmän arvon sovellettavuussäännön nimikkeen veroryhmän arvolla. Muuten se jatkaa Financen nimikkeen arvonlisäveroryhmän arvon käyttöä.
+
+5. Veron laskentapalvelu määrittää lopulliset verokoodit arvonlisäveroryhmän ja nimikkeen arvonlisäveroryhmän leikkauksen avulla.
+6. Veron laskentapalvelu laskee veron määrittämiensä lopullisten verokoodien perusteella.
+7. Veron laskentapalvelu palauttaa veron laskennan tuloksen Financeen.
+
+![Verolaskennan suoritusaikainen rakenne.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Korkean tason konfiguraatio
+
+Seuraavissa vaiheissa on korkean tason yleiskuvaus verolaskentapalvelun konfigurointiprosessista.
+
+1. Asenna LCS:ssä **Verolaskenta**-apuohjelma LCS-projektissa.
+2. Luo RCS:ssä **Verolaskenta**-ominaisuus.
+3. Määritä RCS:ssä **Verolaskenta**-ominaisuus:
+
+    1. Valitse veromäärityksen versio.
+    2. Luo verokoodit.
+    3. Veroryhmän luominen.
+    4. Luo nimikkeiden veroryhmä.
+    5. Valinnainen: Luo veroryhmän käytettävyys, jos haluat ohittaa asiakkaan tai toimittajan päätietoihin kirjoitettavan oletusarvoisen arvonlisäveroryhmän.
+    6. Valinnainen: Luo nimikeryhmän käytettävyys, jos haluat ohittaa nimikkeen päätietoihin kirjoitettavan oletusarvoisen nimikkeen arvonlisäveroryhmän.
+
+4. Täydennä ja julkaise **Verolaskenta**-ominaisuus RCS:ssä.
+5. Valitse Financessa julkaisu **Verolaskenta**-toiminto.
+
+Kun olet suorittanut nämä vaiheet, seuraavat asetukset synkronoidaan automaattisesti RCS:stä Financeen.
+
+- Arvonlisäverokoodit
+- Arvonlisäveroryhmät
+- Nimikkeiden arvonlisäveroryhmät
+
+Loput tämän ohjeaiheen osat sisältävät tarkempia tietoja määritysvaiheista.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen tämän aiheen ohjeiden mukaan toimimista seuraavien edellytysten on toteuduttava kussakin ympäristötyypissä.
-
-Seuraavien edellytysten on täytyttävä:
+Ennen kuin voit suorittaa tämän ohjeaiheen loput vaiheet, seuraavien edellytysten on toteuduttava:<!--TO HERE-->
 
 - LCS-tilin käyttöoikeus ja sellainen käyttöönotettu LCS-projekti, jonka vähintään tason 2 ympäristössä on käytössä Dynamics 365:n versio 10.0.21 tai uudempi.
 - Organisaatiolle on luotava RCS-ympäristö ja käytössä on oltava tilin käyttöoikeus. Lisätietoja RCS-ympäristön luomisesta on kohdassa [Regulatory Configuration Servicen yleiskatsaus](rcs-overview.md).
@@ -72,15 +115,7 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
 5. Kirjoita **Tyyppi**-kenttään **Yleinen**.
 6. Valitse **Avaa**.
 7. Siirry kohtaan **Verotietomalli**, laajenna tiedostopuu ja valitse sitten **Veromääritys**.
-8. Valitse oikea veromääritysversio Finance-version perusteella ja valitse sitten **Tuo**.
-
-    | Julkaisuversio | Verokonfiguraatio                       |
-    | --------------- | --------------------------------------- |
-    | 10.0.18         | Veromääritys – Eurooppa 30.12.82     |
-    | 10.0.19         | Verolaskentamääritys 36.38.193 |
-    | 10.0.20         | Verolaskentamääritys 40.43.208 |
-    | 10.0.21         | Verolaskentamääritys 40.48.215 |
-
+8. Valitse oikea [veromääritysversio](global-tax-calcuation-service-overview.md#versions) Finance-version perusteella ja valitse sitten **Tuo**.
 9. Valitse **Globalisaatio-ominaisuudet** -työtilaan, valitse **Ominaisuudet**, valitse **Verolaskenta**-ruutu ja valitse sitten **Lisää**.
 10. Valitse jokin seuraavista ominaisuustyypeistä:
 
@@ -209,42 +244,3 @@ Tämän osan määritykset tehdään yrityskohtaisesti. Se on määritettävä k
 
 5. **Useita ALV-rekisteröintejä** -välilehdessä ALV-ilmoitus, EU:n arvonlisäveron yhteenvetoilmoitus ja Intrastat-ilmoitus voidaan ottaa erikseen käyttöön, jos kyse on useita ALV-rekisteröintejä käyttävästä skenaariosta. Lisätietoja useiden ALV-rekisteröintien veroilmoituksesta on kohdassa [Useiden ALV-rekisteröintien raportointi](emea-reporting-for-multiple-vat-registrations.md).
 6. Tallenna määritykset ja toista edelliset vaiheet kunkin yrityksen kohdalla. Julkaistua uuttaa versiota voidaan käyttää tekemällä määritys **Verolaskennan parametrit** -sivun **Yleiset**-välilehden **Ominaisuuden asetus** -kentässä (katso vaihe 2).
-
-## <a name="transaction-processing"></a>Tapahtumien käsittely
-
-Kun kaikki määritykset ovat valmiita, verolaskentaa voi käyttää verojen määrittämiseen ja laskemiseen Financessa. Tapahtumien käsittelyvaiheet säilyvät samana. Financen versio 10.0.21 tukee seuraavia tapahtumia:
-
-- Myyntiprosessi
-
-    - Myyntitarjous
-    - Myyntitilaus
-    - Vahvistus
-    - Materiaaliluettelo
-    - Pakkausluettelo
-    - Myyntilasku
-    - Hyvityslasku
-    - Palautustilaus
-    - Otsikkomaksu
-    - Riviveloitus
-
-- Ostoprosessi
-
-    - Ostotilaus
-    - Vahvistus
-    - Saapumisluettelo
-    - Tuotteen vastaanotto
-    - Ostolasku
-    - Otsikkomaksu
-    - Riviveloitus
-    - Hyvityslasku
-    - Palautustilaus
-    - Ostoehdotus
-    - Ostoehdotuksen rivin veloitus
-    - Tarjouspyyntö
-    - Tarjouspyynnön otsikon kulu
-    - Tarjouspyynnön rivin kulu
-
-- Varastoprosessi
-
-    - Siirtotilaus – lähetä
-    - Siirtotilaus – vastaanota

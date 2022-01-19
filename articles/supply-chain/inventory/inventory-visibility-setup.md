@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581862"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952493"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Varaston näkyvyyden asennus ja määritys
 
@@ -71,6 +71,9 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 1. Hyväksy käyttöehdot valitsemalla **Käyttöehdot**-valintaruutu.
 1. Valitse **Asenna**. Apuohjelman tilana näkyy nyt **Asennetaan**. Kun asennus on valmis, päivitä sivu. Tilan pitäisi olla nyt **Asennettu**.
 1. Valitse Dataversen vasemmassa siirtymisruudussa **Sovellukset**-osa ja varmista, että **Varaston näkyvyys** Power Apps -asennus onnistui. Jos **Sovellukset**-osaa ei ole, ota yhteys varaston näkyvyyden tuotetiimiin osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!TIP]
+> On suositeltavaa liittyä Varaston näkyvyyden lisäosa -käyttäjäryhmään, josta on käyttökelpoisia ohjeita, saada uusimpia päivityksiä ja kirjata varaston näkyvyyteen mahdollisesti liittyvät kysymykset. Jos haluat liittyä, lähetä sähköpostia varaston näkyvyyden tuotetiimille osoitteeseen [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) ja sisällytä Supply Chain Management -ympäristön tunnus.
 
 > [!IMPORTANT]
 > Jos sinulla on useita LCS-ympäristöjä, luo kullekin ympäristölle erilainen Azure AD -sovellus. Jos käytät samaa sovellustunnusta ja vuokraajatunnusta varaston näkyvyyden lisäosan asentamisessa eri ympäristöihin, vanhemmissa ympäristöissä ilmenee tunnusongelma. Vain viimeinen asennus on kelvollinen.
