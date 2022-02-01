@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d3642392ed2cf231f261b24428756c6e32a79f98
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c6356f7c085b93e3e3f292e72f813f823e924487
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674571"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968174"
 ---
 # <a name="ratings-and-reviews-faq"></a>Luokitusten ja arvostelujen usein kysytyt kysymykset
 
@@ -41,5 +41,17 @@ Ohjeita luokitusten ja arvostelujen käyttöönottoon ja pakottamiseen automaatt
 [Luokitusten ja arvostelujen käytön hyväksyminen](opt-in-ratings-reviews.md)
 
 [Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
+
+[Hallitse luokituksia ja arvosteluja](manage-reviews.md)
+
+[Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
+
+[Synkronoi tuoteluokitukset](sync-product-ratings.md)
+
+[Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
+
+[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
+
+[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
 
 [Luokitusten tarkennus näkyy hakutuloksissa ja luokkasivuilla, kun luokitusten ja arvostelujen ratkaisu ei ole käytössä](troubleshoot/hide-ratings-refiner.md)

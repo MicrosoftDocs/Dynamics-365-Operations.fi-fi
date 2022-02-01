@@ -1,68 +1,73 @@
 ---
 title: Työehdotusten kehittäminen ja avaaminen
 description: Työhönottoprojektit auttavat rekrytointiprosessissa.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae2e42627d7d3dbbc0bde2740e7c017c5858eab8cd825b77a1bc4611a3a4ab7b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a97c2a8bb6c334a5a060fcbfc9527a41ba592750
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738477"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964652"
 ---
 # <a name="develop-and-open-job-requisition"></a>Työehdotusten kehittäminen ja avaaminen
 
 [!include [banner](../../includes/banner.md)]
 
-Työhönottoprojektit auttavat rekrytointiprosessissa. Voit määrittää jokaiselle työhönottoprojektille tietoja, kuten työn, johon rekrytoidaan, rekrytoijan nimen, projektin tilan ja osaston, jossa työ sijaitsee. Kun työhönottoprojekti on luotu, voit kirjoittaa projektille työilmoituksen, julkaista sen työntekijöiden itsepalvelusivuilla, liittää työhakemukset projektiin ja seurata kyseisen projektin aktiviteetteja. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Aloita menettely valitse Henkilöstöhallinto > Työhönotto > Työhönottoprojektit > Työhönottoprojektit
+Työhönottoprojektit auttavat rekrytointiprosessissa. Voit määrittää jokaiselle työhönottoprojektille tietoja, kuten työn, johon rekrytoidaan, rekrytoijan nimen, projektin tilan ja osaston, jossa työ sijaitsee. Kun työhönottoprojekti on luotu, voit kirjoittaa sille työilmoituksen, julkaista sen **työntekijöiden itsepalvelu** -sivuilla, liittää työhakemukset projektiin ja seurata kyseisen projektin aktiviteetteja. Tämän menettelyn luomisessa käytetty esittely-yritys on **USMF**.
 
-1. Valitse Uusi.
-2. Kirjoita arvo Työhönottoprojekti-kenttään.
-3. Kirjoita arvo Kuvaus-kenttään.
-4. Avaa haku valitsemalla Rekrytoija-kentässä avattavan valikon painike.
-5. Etsi haluamasi tietue luettelosta ja valitse se.
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Klikkaa Valitse.
-8. Avaa haku valitsemalla Osasto-kentässä avattavan valikon painike.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Avaa haku valitsemalla Työ-kentässä avattavan valikon painike.
-11. Etsi haluamasi tietue luettelosta ja valitse se.
-12. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-13. Syötä Avoimien paikkojen määrä -kenttään numero.
-14. Avaa haku valitsemalla Työhön ottava esimies -kentässä avattavan valikon painike.
-15. Etsi haluamasi tietue luettelosta ja valitse se.
-16. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-17. Klikkaa Valitse.
-18. Syötä päivämäärä Hakemuksen viimeinen jättöpäivä -kenttään.
-19. Valitse Media.
-    * Työhönottoprojektien avulla voidaan määrittää lehdistötiedotteita avointen työpaikkojen mainostamista varten.  
-20. Valitse Uusi.
-21. Avaa haku valitsemalla Media-kentässä avattavan valikon painike.
-22. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-23. Syötä päivämäärä Aloituspäivä-kenttään.
-24. Syötä päivämäärä Päättymispäivä-kenttään.
-25. Valitse Tallenna.
-26. Sulje sivu.
-27. Valitse Työpaikkailmoitukset.
-28. Valitse Tallenna.
-29. Sulje sivu.
-30. Valitse Näytä työntekijän itsepalvelussa -valintaruutu tai poista sen valinta.
-    * Valitse Näytä työntekijän itsepalvelussa -valintaruutu, kun haluat työhönottoprojektin näkyvän työntekijöiden omilla itsepalvelusivuilla.  
-31. Valitse Työhönottoprojektin tila.
-32. Valitse Käynnistys.
-    * Aloitettu tila tarkoittaa, että projekti on valmis vastaanottamaan hakemuksia.  
-33. Valitse OK.
+1. Siirry kohtaan **Henkilöstöhallinto \> Työhönotto \> Työhönottoprojektit \> Työhönottoprojektit**.
+2. Valitse **Uusi**.
+3. Syötä arvo **Työhönottoprojekti**-kenttään.
+4. Anna arvo **Kuvaus**-kentässä.
+5. Avaa haku valitsemalla **Työhönottaja**-kentässä avattavan valikon nuoli.
+6. Etsi haluamasi tietue luettelosta ja valitse se.
+7. Valitse luettelossa valitulla rivillä oleva linkki.
+8. Valitse **Valitse**.
+9. Avaa haku valitsemalla **Osasto**-kentässä avattavan valikon nuoli.
+10. Valitse luettelossa valitulla rivillä oleva linkki.
+11. Avaa haku valitsemalla **Työ**-kentässä avattavan valikon nuoli.
+12. Etsi haluamasi tietue luettelosta ja valitse se.
+13. Valitse luettelossa valitulla rivillä oleva linkki.
+14. Syötä **Avoimien paikkojen määrä** -kenttään numero.
+15. Avaa haku valitsemalla **Työhön ottava esimies** -kentässä avattavan valikon nuoli.
+16. Etsi haluamasi tietue luettelosta ja valitse se.
+17. Valitse luettelossa valitulla rivillä oleva linkki.
+18. Valitse **Valitse**.
+19. Syötä päivämäärä **Hakemuksen viimeinen jättöpäivä** -kenttään.
+20. Valitse **Media**.
 
+    Työhönottoprojektien avulla voidaan määrittää lehdistötiedotteita avointen työpaikkojen mainostamista varten.
 
+21. Valitse **Uusi**.
+22. Avaa haku valitsemalla **Media**-kentässä avattavan valikon nuoli.
+23. Valitse luettelossa valitulla rivillä oleva linkki.
+24. Syötä päivämäärä **Aloituspäivä**-kenttään.
+25. Syötä päivämäärä **Päättymispäivä**-kenttään.
+26. Valitse **Tallenna**.
+27. Sulje sivu.
+28. Valitse **Työpaikkailmoitukset**.
+29. Valitse **Tallenna**.
+30. Sulje sivu.
+31. Valitse tai tyhjennä **Näytä työntekijän itsepalvelussa** -valintaruutu.
+
+    Valitse valintaruutu, että työhönottoprojekti on työntekijöiden nähtävillä **Työntekijöiden itsepalvelu** -sivuilla.
+
+32. Valitse **Työhönottoprojektin** tila.
+33. Valitse **Aloita**.
+
+    **Aloitettu** tila ilmaisee, että projekti on valmis vastaanottamaan hakemuksia.
+
+34. Valitse **OK**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

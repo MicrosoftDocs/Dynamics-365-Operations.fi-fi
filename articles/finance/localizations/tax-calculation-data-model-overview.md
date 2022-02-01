@@ -3,7 +3,7 @@ title: Verolaskennan tietomalli
 description: Tämä ohjeaihe sisältää tietoja verotietomallista ja siitä, miten veronlaskennan tapahtumien konteksti määrittää kunkin tietomallin kenttäarvot.
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864257"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985963"
 ---
 # <a name="tax-calculation-data-model"></a>Verolaskennan tietomalli
 
 Tämä ohjeaihe sisältää tietoja siitä, miten verotietomallin kenttäarvot määritetään veronlaskennan tapahtumissa.
 
-*Verotietomalli* koostuu kentistä, joita tarvitaan verolaskennassa. Microsoft tarjoaa *veronlaskennan tietomallin*, joka sisältää Finance and Operations -sovelluksissa olevien tapahtuma-asiakirjojen otsikko- ja rivikentät. Veronlaskennan tietomallissa määritetyt kentät ovat veronlaskennan ominaisuusmäärityksen määrityksen käytettävyyssääntötaulukkojen käytettävissä olevat sarakkeet.
+*Verotietomalli* koostuu kentistä, joita tarvitaan verolaskennassa. Microsoft tarjoaa *veronlaskennan tietomallin*, joka sisältää rahoitus- ja toiminta -sovelluksissa olevien tapahtuma-asiakirjojen otsikko- ja rivikentät. Veronlaskennan tietomallissa määritetyt kentät ovat veronlaskennan ominaisuusmäärityksen määrityksen käytettävyyssääntötaulukkojen käytettävissä olevat sarakkeet.
 
 > [!NOTE] 
 > Osa tietomallissa määritetyistä solmuista, kuten **Tietuetunnus** ja **Taulukkotunnus**, on suunniteltu teknisiä tarkoituksia varten. Ne eivät ole käytettävissä olevia sarakkeita veronlaskennan ominaisuusmäärityksessä.
@@ -55,7 +55,7 @@ Voit myös tarkastella veronlaskennan tietomallia ja käytettävyyssääntötaul
 
     [![Hallitse sarakkeita.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Veronlaskennan tietomalli on integroitu Finance and Operations -sovelluksiin. Jokaisen veronlaskentaan liittyvän tapahtuman aikana käytettävyyssääntöjen taulukoissa määritettyjen kenttien arvot kerätään ja lähetetään veronlaskentapalveluun laskettavaksi. Versiossa 40.46 on käytettävissä 57 ennalta määritettyä tietomallia seuraaville tapahtumatyypeille: ostotilaukset, myyntitilaukset, siirtotilaukset, ostoehdotukset, tarjouspyynnöt ja myyntitarjoukset.
+Veronlaskennan tietomalli on integroitu rahoitus- ja toiminta -sovelluksiin. Jokaisen veronlaskentaan liittyvän tapahtuman aikana käytettävyyssääntöjen taulukoissa määritettyjen kenttien arvot kerätään ja lähetetään veronlaskentapalveluun laskettavaksi. Versiossa 40.46 on käytettävissä 57 ennalta määritettyä tietomallia seuraaville tapahtumatyypeille: ostotilaukset, myyntitilaukset, siirtotilaukset, ostoehdotukset, tarjouspyynnöt ja myyntitarjoukset.
 
 31 tietomallia voidaan lisätä tapahtuman otsikon kentiksi. Kaikki kentät eivät kuitenkaan ole käytettävissä kaikissa tapahtumatyypeissä. Seuraavassa taulukossa näkyy, mitkä otsikkokentät ovat käytettävissä tietyissä tapahtumatyypeissä. Joissakin tapauksissa kenttien yhdistämismääritys on määritettävä esimääritetyllä logiikalla. Logiikka on käytettävissä tarpeen mukaan.
 

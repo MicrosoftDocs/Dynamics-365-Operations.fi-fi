@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752781"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968909"
 ---
 # <a name="use-customer-payment-predictions"></a>Asiakkaan maksuennusteiden käyttäminen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten asiakkaan maksuennusteita käytetään. Ennen kuin käytät tätä toimintoa, varmista, että olet tehnyt sen määritysvaiheet. Lisätietoja on ohjeaiheessa [Asiakkaan maksuennusteiden käyttöönotto](enable-cust-paymnt-prediction.md).
 
@@ -89,7 +88,7 @@ Voit tarkastella maksuennusteiden tarkkuutta siirtymällä kohtaan **Luotonvalvo
 
 [![Maksuennusteiden tarkkuus.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
-Jos et ole tyytyväinen tarkkuuteen, avaa AI Builder -laajennuskokemus valitsemalla **Paranna mallint arkkuutta** -linkki. AI Builder -laajennuskokemuksen avulla voit valita kenttiä tai peruuttaa niiden valinnan ja näin valita kentät, jotka ovat tärkeimmät maksun todennäköisyyksien tarkassa ennustamisessa. Kun olet valmis, voit helposti kouluttaa ennustemallin ja julkaista muutokset. Juuri koulutettu ennustemalli valitaan automaattisesti Dynamics 365 Financen ennusteita varten.
+Jos et ole tyytyväinen tarkkuuteen, avaa AI Builder -laajennuskokemus valitsemalla **Paranna mallin tarkkuutta** -linkki. AI Builder -laajennuskokemuksen avulla voit valita kenttiä tai peruuttaa niiden valinnan ja näin valita kentät, jotka ovat tärkeimmät maksun todennäköisyyksien tarkassa ennustamisessa. Kun olet valmis, voit helposti kouluttaa ennustemallin ja julkaista muutokset. Juuri koulutettu ennustemalli valitaan automaattisesti Dynamics 365 Financen ennusteita varten.
 
 [![AI Builder -laajennuskokemus.](./media/ai-builder.png)](./media/ai-builder.png)
 

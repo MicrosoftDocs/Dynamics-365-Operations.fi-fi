@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b21fba6fbfd4fe2a645efd56fb3592252c2a3fe0
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: e4a120dd4199b143c3103392515c85e7b887194b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920620"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982712"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 
@@ -31,7 +31,7 @@ Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Dynamics 3
 
 | Versio | Koontikäännös | Automaattisten päivitysten saatavuus | Lisätietoja |
 |---|---|---|---|
-| 10.0.24 | 10.0.1084 | Helmikuun 2022. | [Dynamics 365 Supply Chain Management 10.0.24:n esiversio](whats-new-scm-10-0-24.md) |
+| 10.0.24 | 10.0.1084 | Helmikuun 2022. | [Dynamics 365 Supply Chain Managementin version 10.0.24 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | 2022. tammikuuta | [Dynamics 365 Supply Chain Managementin version 10.0.23 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | marraskuu 2021 | [Dynamics 365 Supply Chain Managementin version 10.0.22 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-22.md) |
 | 10.0.21 | 10.0.960 | 2021. lokakuuta | [Dynamics 365 Supply Chain Managementin version 10.0.21 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-21.md) |
@@ -62,8 +62,8 @@ Seuraavissa ohjeaiheissa on tietoja ennen marraskuuta 2019 julkaistujen versioid
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.3      | 10.0.107         | 2019. kesäkuuta        | [Dynamics 365 for Finance and Operationsin version 10.0.3 uudet tai muuttuneet ominaisuudet (kesäkuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.2      | 10.0.80          | Toukokuun 2019.         | [Dynamics 365 for Finance and Operationsin version 10.0.2 uudet tai muuttuneet ominaisuudet (toukokuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-2.md)                     |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.1      | 10.0.51          | Huhtikuun 2019.       | [Dynamics 365 for Finance and Operationsin version 10.0.1 uudet tai muuttuneet ominaisuudet (huhtikuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                   |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | Huhtikuun 2019.       | [Finance and Operationsin version 10.0 uudet tai muuttuneet ominaisuudet (huhtikuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
-| Microsoft Dynamics 365 for Finance and Operations                     | 8,1,3       | 8,1,227          | Tammikuu 2019     | [Dynamics 365 for Finance and Operationsin version 8.1.3 uudet tai muuttuneet ominaisuudet (tammikuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
+| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | Huhtikuun 2019.       | [Finance and Operationsin version 10.0:n (huhtikuu 2019) uudet ja muuttuneet ominaisuudet](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
+| Microsoft Dynamics 365 for Finance and Operations                     | 8.1.3       | 8.1.227          | Tammikuu 2019     | [Dynamics 365 for Finance and Operationsin version 8.1.3 uudet tai muuttuneet ominaisuudet (tammikuu 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8,1,2       | 8,1,195          | 2018. joulukuuta    | [Dynamics 365 for Finance and Operationsin version 8.1.2 uudet ja muuttuneet ominaisuudet (joulukuu 2018)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-2.md)                  |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8,1,1       | 8,1,170          | 2018. lokakuuta     | [Dynamics 365 for Finance and Operationsin version 8.1.1 uudet ja muuttuneet ominaisuudet (lokakuu 2018)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-1.md)                   |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8.1         | 8.1.136          | 2018. lokakuuta     | [Dynamics 365 for Finance and Operationsin version 8.1 uudet ja muuttuneet ominaisuudet (lokakuu 2018)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-october-2018.md)          |

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 7434c2ed486fe0546a746afdd2c4c4aacdcc3d5c
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: eaafe8d98049cb8838317396f28e9d6ca720a677
+ms.sourcegitcommit: 08dcbc85e372d4e4fb3ba64389f6d5051212c212
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817285"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "8015712"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
 
@@ -24,7 +24,7 @@ ms.locfileid: "7817285"
 
 [Microsoft Azure Data Factory -mallien](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) avulla voit päivittää seuraavat aiemmin luodut tiedot kaksoiskirjoituksessa osapuolen ja yleisen osoitekirjan malleissa: **Asiakas**-, **Yhteyshenkilö**- ja **Toimittaja**-taulujen tiedot sekä postiosoitteiden ja sähköisten osoitteiden tiedot.
 
-Seuraavat kolme Data Factory -mallia ovat käytettävissä. Niiden avulla voidaan yhdistää Finance and Operations -sovellusten ja Customer Engagement -sovellusten tiedot.
+Seuraavat kolme Data Factory -mallia ovat käytettävissä. Ne auttavat täsmäyttämään sekä rahoitus- ja toiminta -sovellusten että asiakkaiden sitouttamissovellusten tiedot.
 
 - **[Osapuolimalli](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Päivitä tiedot kaksoiskirjoituksen Party-GAB-skeemaan/arm_template.json-tiedostoon)** – Tämä malli auttaa päivittämään **Asiakas**-, **Yhteyshenkilö**- ja **Toimittaja**-tietoihin liittyvät **Osapuoli**- ja **Yhteyshenkilö**-tiedot.
 - **[Osapuolen postiosoitemalli](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Tietojen päivittäminen kaksoiskirjoituksen Party-GAB-skeemaan / Päivitä osapuolen postiosoitteeksi - GAB/arm_template.json)** – Tämän mallin avulla voit päivittää **Asiakas**-, **Yhteyshenkilö**- ja **Toimittaja**-tietoihin liittyvät postiosoitteet.
@@ -34,16 +34,16 @@ Prosessin lopussa luodaan seuraavat pilkuilla erotettujen arvojen (.csv) tiedost
 
 | Tiedoston nimi | Tarkoitus |
 |---|---|
-| FONewParty.csv | Tämän tiedoton avulla luodaan uudet **Osapuoli**-tietueet Finance and Operations -sovelluksessa. |
-| ImportFONewPostalAddressLocation.csv | Tämän tiedoston avulla voit luoda Finance and Operations -sovelluksessa uusia **Postiosoitteen sijainti** -tietueita. |
-| ImportFONewPartyPostalAddress.csv | Tämän tiedoston avulla voit luoda Finance and Operations -sovelluksessa uusia **Osapuolen postiosoite** -tietueita. |
-| ImportFONewPostalAddress.csv | Tämän tiedoston avulla voit luoda Finance and Operations -sovelluksessa uusia **Postiosoite** -tietueita. |
-| ImportFONewElectronicAddress.csv | Tämän tiedoston avulla voit luoda Finance and Operations -sovelluksessa uusia **Sähköinen osoite** -tietueita. |
+| FONewParty.csv | Tämä tiedosto auttaa luomaan uudet **osapuoli**-tietueet rahoitus- ja toiminta -sovelluksessa. |
+| ImportFONewPostalAddressLocation.csv | Tämän tiedoston avulla voit luoda rahoitus- ja toiminta -sovelluksessa uusia **Postiosoitteen sijainti** -tietueita. |
+| ImportFONewPartyPostalAddress.csv | Tämän tiedoston avulla voit luoda rahoitus- ja toiminta -sovelluksessa uusia **Osapuolen postiosoite** -tietueita. |
+| ImportFONewPostalAddress.csv | Tämän tiedoston avulla voit luoda rahoitus- ja toiminta -sovelluksessa uusia **Postiosoite**-tietueita. |
+| ImportFONewElectronicAddress.csv | Tämän tiedoston avulla voit luoda rahoitus- ja toiminta -sovelluksessa uusia **Sähköinen osoite**-tietueita. |
 
 Tämä aihe sisältää Data Factory -mallin käytön ja tietojen päivittämisen ohjeet. Jos mukautuksia ei ole, voit käyttää malleja sellaisina kuin ne ovat. Jos olet mukauttanut **Asiakas**-, **Yhteyshenkilö**- ja **Toimittaja**-tietoja, sinun on muokattava malleja tämän aiheen ohjeiden mukaisesti.
 
 > [!IMPORTANT]
-> On noudatettava erityisohjeita, jos suoritat osapuolen postiosoitteen ja osapuolen sähköisen osoitteen malleja. Sinun on suoritettava ensin osapuolen malli, sitten osapuolen postiosoitemalli ja sitten osapuolen sähköisen osoitteen malli.
+> On noudatettava erityisohjeita suoritettaessa osapuolen postiosoitteen ja osapuolen sähköisen osoitteen malleja. Sinun on suoritettava ensin osapuolen malli, sitten osapuolen postiosoitemalli ja sitten osapuolen sähköisen osoitteen malli. Kukin malli on suunniteltu tuotavaksi erillisessä datatehtaassa.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -61,7 +61,7 @@ Päivitys edellyttää seuraavat valmistelut:
 + **Integrointiavaimet**: **Tili (Asiakas)**-, **Yhteyshenkilö**- ja **Toimittaja**-taulut Customer Engagement -sovelluksissa käyttävät käyttövalmiita integrointiavaimia. Jos olet mukauttanut integrointiavaimia, mukauta mallia.
 + **Osapuolinumero:** Kaikki päivitettävät **Tili (asiakas)**-, **Yhteyshenkilö**- ja **Toimittaja**-tietueet saavat osapuolinumeron. Tietueet, joissa ei ole osapuolen numeroa, ohitetaan. Jos haluat päivittää nämä tietueet, lisää niille osapuolen numero ennen päivitysprosessin käynnistämistä.
 + **Järjestelmän käyttökatko**: Päivitysprosessin aikana sekä Finance and Operations- että Customer Engagement -ympäristöt on siirrettävä offline-tilaan.
-+ **Tilannevedos:** Ota tilannekuvat sekä Finance and Operations- että Customer Engagement -sovelluksista. Voit sitten tarvittaessa palauttaa edellisen tilan tilannevedosten avulla.
++ **Tilannekuva:** Ota tilannekuva sekä rahoitus- ja toiminta- että Customer Engagement -sovelluksista. Voit sitten tarvittaessa palauttaa edellisen tilan tilannevedosten avulla.
 
 ## <a name="deployment"></a>Käyttöönotto
 
@@ -120,7 +120,7 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>Osapuolen postiosoitemallin suorituksen asetukset
 
-1. Kirjaudu sisään Customer Engagement -sovelluksiin ja siirry kohtaan **Asetukset** \> **Mukautusasetukset**. Määritä sitten järjestelmän järjestelmänvalvojan tilin aikavyöhykeasetus **Yleiset**-välilehdessä. Aikavyöhykkeen on oltava UTC (Coordinated Universal Time) -muodossa, jotta sovellusten postiosoitteen "voimassaolon alkamisaika"- ja "voimassaolon päättymisaika" -päivämäärät päivittyvät Finance and Operationsista.
+1. Kirjaudu sisään Customer Engagement -sovelluksiin ja siirry kohtaan **Asetukset** \> **Mukautusasetukset**. Määritä sitten järjestelmän järjestelmänvalvojan tilin aikavyöhykeasetus **Yleiset**-välilehdessä. Aikavyöhykkeen on oltava UTC (Coordinated Universal Time) -muodossa, jotta sovellusten postiosoitteen "voimassaolon alkamisaika"- ja "voimassaolon päättymisaika" -päivämäärät päivittyvät rahoitus- ja toiminta -sovelluksista.
 
     ![Järjestelmän järjestelmänvalvojan tilin aikavyöhykeasetus.](media/ADF-1.png)
 
@@ -128,7 +128,7 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
     | Numero | Nimi | Tyyppi | Arvo |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | merkkijono | Tämä parametri lisää sarjanumeron juuri luotuihin postiosoitteisiin etuliitteeksi. Varmista, että kirjoitat merkkijonon, joka ei ole ristiriidassa Finance and Operations -sovellusten ja Customer Engagement -sovellusten postiosoitteiden kanssa. Käytä esimerkiksi merkkijonoa **ADF-PAD-**. |
+    | 1 | PostalAddressIdPrefix | merkkijono | Tämä parametri lisää sarjanumeron juuri luotuihin postiosoitteisiin etuliitteeksi. Varmista, että kirjoitat merkkijonon, joka ei ole ristiriidassa rahoitus- ja toiminta -sovellusten ja Customer Engagement -sovellusten postiosoitteiden kanssa. Käytä esimerkiksi merkkijonoa **ADF-PAD-**. |
 
     ![Hallinta-välilehdessä luotu yleinen PostalAddressIdPrefix-parametri.](media/ADF-2.png)
 
@@ -142,8 +142,8 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
     | Numero | Nimi | Tyyppi | Arvo |
     |---|---|---|---|
-    | 1 | IsFOSource | bool | Tämä parametri määrittää, mitkä ensisijaiset järjestelmäosoitteet korvataan ristiriitojen yhteydessä. Jos arvo on **true**, Finance and Operations -sovellusten ensisijaiset osoitteet korvaavat Customer Engagement -sovellusten ensisijaiset osoitteet. Jos arvo on **false**, Customer Engagement -sovellusten ensisijaiset osoitteet korvaavat Finance and Operations -sovellusten ensisijaiset osoitteet. |
-    | 2 | ElectronicAddressIdPrefix | merkkijono | Tämä parametri lisää sarjanumeron juuri luotuihin sähköisiin osoitteisiin etuliitteeksi. Varmista, että kirjoitat merkkijonon, joka ei ole ristiriidassa Finance and Operations -sovellusten ja Customer Engagement -sovellusten sähköisten osoitteiden kanssa. Käytä esimerkiksi merkkijonoa **ADF-EAD-**. |
+    | 1 | IsFOSource | bool | Tämä parametri määrittää, mitkä ensisijaiset järjestelmäosoitteet korvataan ristiriitojen yhteydessä. Jos arvo on **true**, rahoitus- ja toiminta -sovellusten ensisijaiset osoitteet korvaavat Customer Engagement -sovellusten ensisijaiset osoitteet. Jos arvo on **false**, customer engagement -sovellusten ensisijaiset osoitteet korvaavat rahoitus- ja toiminta -sovellusten ensisijaiset osoitteet. |
+    | 2 | ElectronicAddressIdPrefix | merkkijono | Tämä parametri lisää sarjanumeron juuri luotuihin sähköisiin osoitteisiin etuliitteeksi. Varmista, että kirjoitat merkkijonon, joka ei ole ristiriidassa rahoitus- ja toiminta -sovellusten ja Customer Engagement -sovellusten sähköisten osoitteiden kanssa. Käytä esimerkiksi merkkijonoa **ADF-EAD-**. |
 
     ![Yleiset IsFOSource- ja ElectronicAddressIdPrefix-parametrit, jotka on luotu Hallinta-välilehdessä.](media/ADF-4.png)
 
@@ -151,7 +151,7 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
 ## <a name="run-the-templates"></a>Suorita mallit
 
-1. Lopeta Finance and Operations -sovellusta käyttävä seuraava kaksoiskirjoituksen **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-yhdistämismääritys:
+1. Lopeta rahoitus- ja toiminta -sovellusta käyttävä seuraava kaksoiskirjoituksen **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-yhdistämismääritys:
 
     + Asiakkaat V3 (accounts)
     + Asiakkaat V3 (yhteyshenkilöt)
@@ -161,7 +161,7 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
 2. Varmista, että yhdistämismääritykset on poistettu kohteen **msdy_dualwriteruntimeconfig**-taulusta Dataversessa.
 3. Asenna [kaksoskirjoituksen osapuoli ja yleisiä osoitekirjaratkaisuja](https://aka.ms/dual-write-gab) AppSourcesta.
-4. Jos seuraavat taulut sisältävät tietoja Finance and Operations -sovelluksessa, suorita niiden **ensimmäinen synkronointi**.
+4. Jos seuraavat taulut sisältävät tietoja rahoitus- ja toiminta -sovelluksessa, suorita niiden **ensimmäinen synkronointi**:
 
     + Tervehdykset
     + Henkilökohtaisten luonteenpiirteiden tyypit
@@ -261,10 +261,10 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
     > [!NOTE]
     > Jos olet muokannut **tiliä**, **yhteyshenkilöä** ja **toimittajaa**, sinun on muokattava mallia.
 
-8. Tuo uudet **osapuoli**-tietueet Finance and Operations -sovellukseen.
+8. Tuo uudet **osapuoli**-tietueet rahoitus- ja toiminta -sovellukseen.
 
     1. Lataa **FONewParty.csv**-tiedosto Azure Blob -objektisäilöstä. Polku on **partybootstrapping/output/FONewParty.csv**.
-    2. Muunna **FONewParty.csv**-tiedosto Excel-tiedostoksi ja tuo Excel-tiedosto Finance and Operations -sovellukseen. Jos CSV-tuonti toimii sinulle, voit tuoda CSV-tiedoston vaihtoehtoisesti suoraan. Tämän vaiheen suoritus saattaa kestää joitakin tunteja tietojen määrän perusteella. Lisätietoja on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../data-import-export-job.md).
+    2. Muunna **FONewParty.csv**-tiedosto Excel-tiedostoksi ja tuo Excel-tiedosto rahoitus- ja toiminta -sovellukseen. Jos CSV-tuonti toimii sinulle, voit tuoda CSV-tiedoston vaihtoehtoisesti suoraan. Tämän vaiheen suoritus saattaa kestää joitakin tunteja tietojen määrän perusteella. Lisätietoja on kohdassa [Tietojen tuonti- ja vientitöiden yleiskatsaus](../data-import-export-job.md).
 
     ![Osapuolen Dataverse-tietueiden tuominen.](media/data-factory-import-party.png)
 
@@ -275,7 +275,7 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
     ![Osapuolen postiosoitteen ja osapuolen sähköisen osoitteen mallien suorittaminen.](media/ADF-7.png)
 
-10. Jotta Finance and Operations -sovellukseen voidaan päivittää nämä tiedot, sinun on muunnettava .csv-tiedostot Excel-työkirjaksi ja [tuotava se Finance and Operations -sovellukseen](/data-entities/data-import-export-job). Jos CSV-tuonti toimii sinulle, voit tuoda CSV-tiedostot vaihtoehtoisesti suoraan. Tämän vaiheen suoritus saattaa kestää joitakin tunteja määrän perusteella.
+10. Jotta rahoitus- ja toiminta -sovellukseen voidaan päivittää nämä tiedot, sinun on muunnettava .csv-tiedostot Excel-työkirjaksi ja [tuotava se rahoitus- ja toiminta -sovellukseen](/data-entities/data-import-export-job). Jos CSV-tuonti toimii sinulle, voit tuoda CSV-tiedostot vaihtoehtoisesti suoraan. Tämän vaiheen suoritus saattaa kestää joitakin tunteja määrän perusteella.
 
     ![Onnistunut tuonti.](media/ADF-8.png)
 
@@ -358,9 +358,9 @@ Tässä osassa on tietoja kunkin Data Factory -mallin vaiheista.
 ### <a name="steps-in-the-party-template"></a>Osapuolimallin vaiheet
 
 1. Vaiheet 1-6 yksilöivät yritykset, jotka on otettu käyttöön kaksoiskirjoitukselle, ja rakentaa niille suodatinlausekkeen.
-2. Vaiheet 7-1 – 7-9 hakevat tietoja sekä Finance and Operations -sovelluksesta että Customer Engagement -sovelluksesta ja valmistavat tiedot päivitystä varten.
-3. Vaiheet 8-9 vertaavat Finance and Operations -sovelluksen ja Customer Engagement -sovelluksen välistä **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-tietueiden osapuolinumeroa. Kaikki tietueet, joissa ei ole osapuolen numeroa, ohitetaan.
-4. Vaihe 10 luo kaksi .csv-tiedostoa osapuolitietueille, jotka on luotava Customer Engagement -sovelluksessa ja Finance and Operations -sovelluksessa.
+2. Vaiheet 7-1 – 7-9 hakevat tietoja sekä rahoitus- ja toiminta -sovelluksesta että Customer Engagement -sovelluksesta ja valmistavat tiedot päivitystä varten.
+3. Vaiheet 8-9 vertaavat rahoitus- ja toiminta -sovelluksen ja Customer Engagement -sovelluksen välistä **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-tietueiden osapuolinumeroa. Kaikki tietueet, joissa ei ole osapuolen numeroa, ohitetaan.
+4. Vaihe 10 luo kaksi .csv-tiedostoa osapuolitietueille, jotka on luotava Customer Engagement -sovelluksessa ja rahoitus- ja toiminta -sovelluksessa.
 
     - **FOCDSParty.csv** – Tämä tiedosto sisältää molempien järjestelmien kaikki osapuolitietueet riippumatta siitä, onko yritys otettu käyttöön kaksoiskirjoitukselle.
     - **FONewParty.csv** – Tämä tiedosto sisältää osajoukon osapuolitietueita, joista Dataverse on tietoinen (esimerkiksi **Prospekti**-tyypin tilit).
@@ -376,12 +376,12 @@ Tässä osassa on tietoja kunkin Data Factory -mallin vaiheista.
 
 ### <a name="steps-in-the-party-postal-address-template"></a>Osapuolen postiosoitemallin vaiheet
 
-1. Vaiheet 1-1 – 1-10 hakevat tietoja sekä Finance and Operations -sovelluksesta että Customer Engagement -sovelluksesta ja valmistavat tiedot päivitystä varten.
-2. Vaihe 2 denormalisoi Finance and Operations -sovelluksen postiosoitetiedot liittämällä postiosoitteen ja osapuolen postiosoitteen.
+1. Vaiheet 1-1 – 1-10 hakevat tietoja sekä rahoitus- ja toiminta -sovelluksesta että Customer Engagement -sovelluksesta ja valmistavat tiedot päivitystä varten.
+2. Vaihe 2 denormalisoi rahoitus- ja toiminta -sovelluksen postiosoitetiedot liittämällä postiosoitteen ja osapuolen postiosoitteen.
 3. Vaihe 3 poistaa kaksoisarvot ja yhdistää Customer Engagement -sovelluksen tili-, yhteyshenkilö- ja toimittajaosoitetiedot.
-4. Vaihe 4 luo Finance and Operations -sovellukselle .csv-tiedostot, jotka luovat uusia osoitetietoja, jotka perustuvat tili-, yhteyshenkilö- ja toimittajaosoitteisiin.
-5. Vaihe 5-1 luo .csv-tiedostot Customer Engagement -sovellukselle kaikkien osoitetietojen luomiseen sekä Finance and Operations -sovelluksen että Customer Engagement -sovelluksen perusteella.
-6. Vaihe 5-2 muuntaa .csv-tiedostot manuaalisen tuonnin Finance and Operations -tuontimuodoksi.
+4. Vaihe 4 luo rahoitus- ja toiminta -sovellukselle .csv-tiedostot, jotka luovat uusia osoitetietoja, jotka perustuvat tili-, yhteyshenkilö- ja toimittajaosoitteisiin.
+5. Vaihe 5-1 luo .csv-tiedostot Customer Engagement -sovellukselle kaikkien osoitetietojen luomiseen sekä rahoitus- ja toiminta -sovelluksen että Customer Engagement -sovelluksen perusteella.
+6. Vaihe 5-2 muuntaa .csv-tiedostot manuaalisen tuonnin rahoitus- ja toiminta -tuontimuodoksi.
 
     - ImportFONewPostalAddressLocation.csv
     - ImportFONewPartyPostalAddress.csv
@@ -395,13 +395,13 @@ Tässä osassa on tietoja kunkin Data Factory -mallin vaiheista.
 
 ### <a name="steps-in-the-party-electronic-address-template"></a>Osapuolen sähköisen osoitteen mallin vaiheet
 
-1. Vaiheet 1-1 – 1-5 hakevat tietoja sekä Finance and Operations -sovelluksesta että Customer Engagement -sovelluksesta ja valmistavat tiedot päivitystä varten.
+1. Vaiheet 1-1 – 1-5 hakevat tietoja sekä rahoitus- ja toiminta -sovelluksesta että Customer Engagement -sovelluksesta ja valmistavat tiedot päivitystä varten.
 2. Vaihe 2 konsolidoi sähköiset osoitteet Customer Engagement -sovelluksessa tili-, yhteyshenkilö- ja toimittajayksiköistä.
-3. Vaihe 3 yhdistää ensisijaiset sähköiset osoitetiedot Customer Engagement -sovelluksesta ja Finance and Operations -sovelluksesta.
+3. Vaihe 3 yhdistää ensisijaiset sähköiset osoitetiedot Customer Engagement -sovelluksesta ja rahoitus- ja toiminta -sovelluksesta.
 4. Vaihe 4 luo .csv-tiedostot.
 
-    - Luo Finance and Operations -sovellukselle uudet sähköiset osoitetiedot tilin, yhteyshenkilön ja toimittajan osoitteiden perusteella.
-    - Luo uusia sähköisiä osoitetietoja Customer Engagement -sovellusta varten. Tiedot perustuvat Finance and Operations -sovelluksen sähköisiin osoitteisiin sekä tili-, yhteyshenkilö- ja toimittajaosoitteisiin.
+    - Luo rahoitus- ja toiminta -sovellukselle uudet sähköiset osoitetiedot tilin, yhteyshenkilön ja toimittajan osoitteiden perusteella.
+    - Luo uusia sähköisiä osoitetietoja Customer Engagement -sovellusta varten. Tiedot perustuvat rahoitus- ja toiminta -sovelluksen sähköisiin osoitteisiin sekä tili-, yhteyshenkilö- ja toimittajaosoitteisiin.
 
 5. Vaihe 5-1 tuo sähköiset osoitteet Customer Engagement -sovellukseen.
 6. Vaihe 5-2 luo .csv-tiedostoja päivittämään asiakkaiden ja yhteyshenkilöiden ensisijaiset osoitteet Customer Engagement -sovelluksessa.

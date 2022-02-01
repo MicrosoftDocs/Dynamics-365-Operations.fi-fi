@@ -2,25 +2,25 @@
 title: Vuokrasopimuksen lisääminen tai kopioiminen (esiversio)
 description: Tässä aiheessa kuvataan, miten uusi vuokrasopimus luodaan antamalla sille tietoja resurssin vuokrauksesta tai kopioimalla tiedot olemassa olevasta vuokrasopimuksesta.
 author: moaamer
-ms.date: 12/06/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
-ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7931978"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967923"
 ---
 # <a name="add-or-copy-leases-preview"></a>Vuokrasopimuksen lisääminen tai kopioiminen (esiversio)
 
@@ -35,8 +35,19 @@ Näiden ohjeiden avulla voit luoda vuokrasopimuksen resurssin vuokrauksessa.
 1. Valitse **Vuokrasopimusyhteenveto**-sivun toimintoruudussa **Uusi**.
 2. Syötä vuokrasopimuksen tiedot. Pakollisilla kentillä on punaiset reunat.
 
-> Vuokramaksun alkamispäivämäärä ei voi olla ennen vuokrasopimuksen alkamispäivämäärää. Jos syötät vuokramaksun alkamispäivämäärän, joka on aiempi kuin vuokrasopimuksen alkamispäivämäärä, saat virhesanoman.
-  
+Vuokramaksun alkamispäivämäärä ei voi olla ennen vuokrasopimuksen alkamispäivämäärää. Jos syötät vuokramaksun alkamispäivämäärän, joka on aiempi kuin vuokrasopimuksen alkamispäivämäärä, saat virhesanoman.
+
+Oletusarvon mukaan **Vuokran tiedot** -sivun **Yleiset**-pikavälilehden **Erittelymaksusumma**-asetus on **Ei**, jos **Käyttöomaisuuden parametrit** -sivun **Salli maksuerittely** -asetus on **Kyllä**. 
+
+Jos **Maksun erittelysumma** -asetus on **Kyllä**, **Maksusuunnitelmarivit**-pikavälilehden **Maksun summa** -kenttä on lukittu. Sen arvoksi määritetään maksun loppusummat, jotka syötetään myöhemmin **maksun summan erittely** -luetteloon.
+
+Valitse **Maksun summan erittely**, kun haluat avata sivun, jolla voit lisätä eritettyjä maksutyyppejä. **Lisää kokonaissummat maksun summa** -painike siirtää summat **Maksun summa** -kenttään.
+
+> [!NOTE]
+> Jos lisäät eritellyn maksun summan ja valitset sitten **Esc**-näppäimen, määritettyjä summia ei lisätä **Maksuaikataulun rivit** -pikavälilehden **Maksusumma**-kenttään. Sen sijaan ne tallennetaan **Maksun summan erittely** -valintaikkunaan. Jos haluat, että valintaikkunassa näytetään kokonaissumma, valitse **Summa**-sarake, pidä painettuna (tai napsauta hiiren kakkospainikkeella) ja valitse sitten **Yhteensä tämä sarake**. 
+
+**Kopioi rivi** -painike kopioi eritellyn maksuerittelyn.
+
 ## <a name="create-a-lease-schedule"></a>Vuokrasopimusaikataulun luominen
 
 Kun olet syöttänyt vuokrasopimuksen tiedot, luo vuokrasopimusaikataulu seuraavasti.
@@ -50,9 +61,9 @@ Kun olet syöttänyt vuokrasopimuksen tiedot, luo vuokrasopimusaikataulu seuraav
     **Kirjan tiedot** -sivulla on tietoja vuokrasopimuksen kirjaamisesta kirjoihin, jotka on kohdistettu sille. Tässä voit tarkastella vuokrasopimusaikatauluja.
 
     Maksuaikataulu sisältää syötteet **Maksuaikataulurivit**-välilehdestä **Lisää vuokrasopimus** -sivulla. Voit kuitenkin muuttaa kunkin maksusumman ja muuttuvan maksun. Vuokrasopimusvelka lasketaan muutetun maksuaikataulun mukaan.
-    
-> [!NOTE]
-> Vuokranmaksun alkamispäivämäärän on oltava sama tai myöhempi kuin vuokran aloituspäivämäärä. Jos syötät vuokramaksun alkamispäivämäärän, joka on aiempi kuin vuokrasopimuksen alkamispäivämäärä, saat virhesanoman. 
+
+    > [!NOTE]
+    > Vuokranmaksun alkamispäivämäärän on oltava sama tai myöhempi kuin vuokran aloituspäivämäärä. Jos syötät vuokramaksun alkamispäivämäärän, joka on aiempi kuin vuokrasopimuksen alkamispäivämäärä, saat virhesanoman. 
 
 4. Kun maksuaikataulun tarkastelu on päättynyt, valitse **Vahvista aikataulu**. Kun aikataulu on vahvistettu, vuokrasopimusta ei enää voi muokata.
 

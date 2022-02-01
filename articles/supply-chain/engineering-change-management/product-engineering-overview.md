@@ -2,23 +2,22 @@
 title: Suunnittelun muutostenhallinnan yleiskatsaus (sisältää videon)
 description: Tässä aiheessa on yleiskatsaus suunnittelun muutostenhallintaan, jonka avulla voi suunnitella ja hallita tuotteen versiointia sekä hallita tuotteen elinkaaria ja suunnittelun muutoksia.
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952595"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985209"
 ---
 # <a name="engineering-change-management-overview"></a>Suunnittelun muutostenhallinnan yleiskuvaus
 
@@ -39,9 +38,9 @@ Suunnittelun muutostenhallinta auttaa suunnittelemaan ja hallitsemaan tuotteen v
 - Työnkulkujen tukemat suunnittelun muutospyynnöt
 - Työnkulkujen tukemat suunnittelun muutostilaukset
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Edellä oleva video ([Dynamics 365 Supply Chain Managementin muutostenhallinnan ominaisuudet](https://youtu.be/N313FqvRuBc)) sisältyy [Finance and Operations -toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
+Edellä oleva video ([Dynamics 365 Supply Chain Managementin muutostenhallinnan ominaisuudet](https://youtu.be/N313FqvRuBc)) sisältyy [rahoitus- ja toiminta -toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Järjestelmän suunnittelun muutostenhallinnan ominaisuuksien ottaminen käyttöön
 
@@ -71,7 +70,9 @@ Ota seuraavaksi määritysavaimet käyttöön seuraavia vaiheita noudattamalla.
 
 1. Jos haluat myös käyttää versiodimensiota, valitse myös **Tuotedimensio – Versio** -valintaruutu. (Tämä valintaruutu on luettelossa alempana, ei **Suunnittelun muutoshallinta** -solmussa.)
 1. Poista järjestelmän ylläpitotila käytöstä kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
-1. Suorita tietokantasynkronointi, kun haluat varmistaa, että määritysavaimet ovat oikein käytössä.
+1. Tietokanta tulee synkronoida, että voidaan varmistaa, että määritysavaimet ovat oikein käytössä. Tee jokin seuraavista toimista käytettävän ympäristötyypin mukaan:
+    - **Tier 1 (development) -ympäristöissä**: Avaa projekti Microsoft Visual Studiossa ja valitse sitten **Dynamics 365 \> Synchronize database \> Synchronize**.
+    - **Tier 2 (ja sitä suuremmat) ympäristöt**: Tietokanta synkronoi automaattisesti sen jälkeen, kun ympäristö on laitettu ylläpitotilaan ja siitä pois, joten voit ohittaa tämän vaiheen.
 
 > [!IMPORTANT]
 > Huhtikuussa 2022 alkaen sekä **Suunnittelun muutostenhallinta**- että **Tuotedimensio - Versio** -lisenssiavaimet ovat oletusarvon mukaan käytössä kaikissa uusissa asennuksissa, mutta ne voidaan tarvittaessa poistaa käytöstä.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7ac91dd1d3dfffbf98733bbd8fe8beda538250da
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
+ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473546"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968099"
 ---
 # <a name="configure-ratings-and-reviews"></a>Määritä luokitukset ja arvostelut
 
@@ -87,9 +87,17 @@ Lisätietoja luokitus- ja arvostelumoduulien määrittämisestä tuotetietojen s
 
 [Hallitse luokituksia ja arvosteluja](manage-reviews.md)
 
-[Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla](ratings-reviews-modules.md)
-
 [Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa](sync-product-ratings.md)
+
+[Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
+
+[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
+
+[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
+
+[Luokitusten ja arvostelujen usein kysytyt kysymykset](ratings-reviews-faq.md)
+
+[Luokitusten ja arvosteluiden moduulit](ratings-reviews-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

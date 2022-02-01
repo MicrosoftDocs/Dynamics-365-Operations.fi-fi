@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e86294b8b467367d954013764a029f7b20270b95
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: f0a8f5948d9e30eb220aa8177a4b9718223a4f9d
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860664"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8013831"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Power BI:n ottaminen käyttöön yleisessä varastokirjanpidossa
 
@@ -51,8 +51,9 @@ Määritä Power BI -integrointi noudattamalla näitä ohjeita.
 
     1. Siirry kohtaan **Oma työtila**, etsi yleisen varastokirjanpidon tietojoukko ja valitse **Asetukset** **Asetukset**-valikosta.
     1. Laajenna **Yleisen varastokirjanpidon asetukset** -kohdassa **Parametrit** ja päivitä kaikki parametrit tarpeen mukaan. Varmista erityisesti seuraavat asetukset:
-        1. Korvaa **Dataverse URL**- ja **Ympäristötunnus**-oletusarvot käyttäen LCS:n (**Power Platform -integroinnin** osassa) **Ympäristön tiedot** -sivulla olevia arvoja.
-        1. Valitse **Tietolähteen tunnistetiedot** -osassa Olevan **Cds**-otsikon vieressä oleva **Muokkaa tunnistetietoja** -linkki. Kirjaudu sitten Dataverse-tilillesi **OAuth2**-todennusmenetelmällä.
+        1. Korvaa **Dataverse-URL**-oletusarvot käyttäen **Power platform -ympäristön tiedot** -sivulla olevia arvoja LCS:n (**Power platform-integroinnin** osassa).
+        1. Korvaa **Ympäristötunnus**-oletusarvot käyttäen LCS:n **Ympäristötiedot**-kohdassa olevia arvoja (**Ympäristön hallinta** -osiossa).
+        1. Valitse **Tietolähteen tunnistetiedot** -osassa Olevan **CDS**-otsikon vieressä oleva **Muokkaa tunnistetietoja** -linkki. Kirjaudu sitten Dataverse-tilillesi **OAuth2**-todennusmenetelmällä.
     1. Tarkista, että Power BI -raportit kohdassa **Oma työtila \> Raportit \> Yleinen varastolaskenta** toimivat oikein ja näyttävät järjestelmän sisältöä.
 
 1. Rekisteröi sovellus [Määritä PowerBI.com-integrointi](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process) -kohdassa kuvatulla tavalla.

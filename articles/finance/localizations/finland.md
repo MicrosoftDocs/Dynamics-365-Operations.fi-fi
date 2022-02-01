@@ -3,22 +3,21 @@ title: Suomi – yleiskatsaus
 description: Tässä ohjeaiheessa on linkkejä Microsoft Dynamics 365 Financen ohjeistukseen Suomessa.
 author: kfend
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: Finland
 ms.author: roschlom
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 4ba92d087fb16a78645dc85e46f2fc92ed0235bc
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: bb10effdad722966c3531c9a6c9ced6bdf8fd80e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922382"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984790"
 ---
 # <a name="finland-overview"></a>Suomi – yleiskatsaus
 

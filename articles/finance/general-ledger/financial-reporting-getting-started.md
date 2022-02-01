@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "10444"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486967"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983974"
 ---
 # <a name="get-started-with-financial-reporting"></a>Taloushallinnon raportoinnin aloittaminen 
 
@@ -148,7 +146,7 @@ Luotavien raportointipuiden määrälle ei ole asetettu ylärajaa. Eri puiden av
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Talousraportointiversion päivittäminen integroidun asennuksen avulla
 
-Finance and Operations -sovellukset päivitetään kuukausittain. Talousraportointia ei kuitenkaan välttämättä päivitetä samaan tahtiin. Lisäksi asiakkailla on käytettävissään lisäasetuksia siihen, milloin he ottavat Finance and Operations -sovellusten päivitykset käyttöön. Talousraportoinnin päivitykset asennetaan automaattisesti. Talousraportoinnilla on määrätty versio, joka kulutetaan asiakasympäristössä, kun palvelun päivitystä tehdään, kun käyttämättömyysaika käynnistetään tai kun asiakkaan ympäristö on ylläpitotilassa. Tämä prosessi on nimeltään *integroitu asennus* tai *seuranta*, koska kaikki asiakkaan toteutukset määritetään samaan taloushallinnan raportoinnin versioon.
+Rahoitus- ja toiminta -sovellukset päivitetään joka kuukausi. Talousraportointia ei kuitenkaan välttämättä päivitetä samaan tahtiin. Lisäksi asiakkailla on käytettävissään lisäasetuksia siihen, milloin he ottavat rahoitus- ja toiminta -sovellusten päivitykset käyttöön. Talousraportoinnin päivitykset asennetaan automaattisesti. Talousraportoinnilla on määrätty versio, joka kulutetaan asiakasympäristössä, kun palvelun päivitystä tehdään, kun käyttämättömyysaika käynnistetään tai kun asiakkaan ympäristö on ylläpitotilassa. Tämä prosessi on nimeltään *integroitu asennus* tai *seuranta*, koska kaikki asiakkaan toteutukset määritetään samaan taloushallinnan raportoinnin versioon.
 
 Kuhunkin versioon vapautetut muutokset löytyvät kohdasta [Uudet ominaisuudet ja muutokset Dynamics 365 Financessa](../../finance/get-started/whats-new-home-page.md). Ympäristöpäivitykset ja korjaustiedostot löytyvät kunkin julkaisun sivun alaosassa olevasta "Lisäresurssit"-osasta.
 

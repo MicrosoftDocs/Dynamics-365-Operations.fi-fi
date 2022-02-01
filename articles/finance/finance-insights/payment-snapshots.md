@@ -3,7 +3,7 @@ title: Tilannevedosten yleiskatsaus
 description: Tässä ohjeaiheessa kerrotaan tilannevedostoiminnosta. Sen avulla voit tallentaa kassavirtaennusteen analyysia tai kertymien kanssa vertailua varten. Kun luot kassavirtaennusteen, voit tallentaa ennusteen tilannevedokseksi. Tämän jälkeen voit muokata tilannevedosten avulla ennusteeseen sisältyviä tilejä tai verrata tilannevedoksen ennustetta todellisiin arvoihin.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a91300ac17b36d890840e6c0c3104fad5fce68f0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: f9b6d44b7381817a40b86c17ee4eaf3dbfc46b67
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752754"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983514"
 ---
 # <a name="snapshots-overview"></a>Tilannevedosten yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tilannevedosten avulla organisaatiot voivat muokata ja tallentaa kassatilanteen ja kassaennusteet tiettynä ajankohtana. Voit vertailla tilannevedosta todellisiin taloustietoihin, tutkia varianssia ja käyttää näitä tietoja kassavirtaennusteiden parantamisessa. Tilannevedoksia voidaan käyttää seuraavasti:
 

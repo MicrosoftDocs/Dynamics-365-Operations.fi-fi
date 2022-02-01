@@ -2,7 +2,7 @@
 title: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 description: Tässä aiheessa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9d50c1380418365f7c51d6b96051e9ea68a5f104
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 6f45cacd7f43c8caf836fd1ea24d354e4bcf5853
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901885"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007571"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20140"></a>Versio 2.0.14.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Korjattu ongelma, joka poisti oletusarvoisen Lähetä-painikkeen käytöstä.
+
+## <a name="version-20130"></a>Versio 2.0.13.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+ 
+- Parannettu sivujen vierittämistä sujuvammalla animaatiolla.
+- Korjattu intuitiivisia vasteita pyyhkäisyliikkeisiin ja satunnaisiin näytön jumiutumiseen.
+- Paranneltu tumman tilan teksti- ja taustaväriyhdistelmiä luettavuuden parantamiseksi.
+- Korjattu ongelma, jossa osa tekstistä voi muuttua hyvin pieneksi, kun sovellusikkunan kokoa muutetaan.
+- Korjattu ongelma, joka saattoi aiheuttaa välillä sovelluksen kaatumisen viivakoodien lukemisen yhteydessä.
+- Lisätty mahdollisuus korvata liukusäädin painikkeella.
+- Korjattu ongelma, joka saattoi saada sovelluksen näyttämään virheilmoituksen "AADSTS7000215: Asiakkaan salainen koodi on virheellinen."
+- Korjattu vihjeanimaatio, joka näyttää kuinka sivu suljetaan pyyhkäisyeleellä.
+- Lisättiin mahdollisuus sulkea sivu käyttäen sipaise alas -elettä.
+- Korjattu ongelma, jossa avattavan luettelon otsikot eivät näkyneet **Käyttäjäasetukset**-sivulla.
+- Korjattu lokalisointiongelma, jossa sovellus ei tunnista pilkkua (,) desimaalierottimena.
+- Parannettu helppokäyttöisyyttä.
+- Korjattu navigointia **Uusi yhteys** -sivulla käytettävyyden parantamiseksi.
+- Korjattu ongelma, jossa pehmeä (näytöllä oleva) näppäimistö ei tullut näkyviin syöttökenttää valittaessa.
+- Korjattu ongelma, joka saattoi kaataa sovelluksen, jos käyttäjät muuttivat sen ikkunan kokoa nopeasti.
+- Korjattu ongelma, jossa pikanäppäimen painaminen on joskus tulkittu pitkäksi painallukseksi.
+- Korjattu ongelma, jossa sovelluksen asettelu voi muuttua virheellisiksi Supply Chain Managementiin tehtyjen kenttien mukautusten vuoksi.
+- Korjattu ongelma, jossa nimikesijainnit eivät näy oikein.
+- Korjattu tuotevariantin työnkulun lyhyeen keräykseen liittyvä ongelma.
+- Poistaa esimääritettyjen oletusarvoja sisältävien kenttien tarpeettoman oikeellisuustarkistuksen.
+- Parannettu suorituskykyä.
+- Lisätty uusi asetus, jonka avulla käyttäjät voivat valita, kuinka kentät suodatetaan ja tilataan korttisivulla.
 
 ## <a name="version-20110"></a>Versio 2.0.11.0
 

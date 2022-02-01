@@ -1,21 +1,20 @@
 ---
 title: Kaksoiskirjoituksen yleiskatsaus
-description: Tässä aiheessa on kaksoiskirjoituksen yleiskatsaus, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja Finance and Operations -sovellusten välillä.
+description: Tässä aiheessa on kaksoiskirjoituksen yleiskatsaus, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja rahoitus- ja toiminta -sovellusten välillä.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 audience: Application User, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: e71d1496da24b21949259e8f43a32cd4ff60249c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817358"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984138"
 ---
 # <a name="dual-write-overview"></a>Kaksoiskirjoituksen yleiskatsaus
 
@@ -27,9 +26,9 @@ ms.locfileid: "7817358"
 
 ## <a name="what-is-dual-write"></a>Mikä on kaksoiskirjoitus?
 
-Kaksoiskirjoitus on valmis infrastruktuuri, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja Finance and Operations -sovellusten välillä. Kun asiakkaiden, tuotteiden, henkilöiden ja toimintojen tiedot siirretään sovellusten ulkopuolelle, kaikki organisaation osastot voivat käyttää niitä.
+Kaksoiskirjoitus on valmis infrastruktuuri, joka sisältää lähes reaaliaikaisen vuorovaikutuksen customer engagement -sovellusten ja rahoitus- ja toiminta -sovellusten välillä. Kun asiakkaiden, tuotteiden, henkilöiden ja toimintojen tiedot siirretään sovellusten ulkopuolelle, kaikki organisaation osastot voivat käyttää niitä.
 
-Kaksoiskirjoitus sisältää tiukasti yhdistetyn kaksisuuntaisen integroinnin Finance and Operations -sovellusten ja Dataversen välillä. Kaikki tietojen muutokset Finance and Operations -sovelluksissa aiheuttavat kaksoiskirjoituksia Dataversessä ja Dataversen tietojen muutokset puolestaan kirjoituksia Finance and Operations -sovelluksissa. Tämä automatisoitu tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa.
+Kaksoiskirjoitus sisältää tiiviisti yhdistetyn, kaksisuuntaisen integroinnin rahoitus- ja toiminta -sovellusten ja Dataversen välillä. Kaikki tietojen muutokset rahoitus- ja toiminta -sovelluksissa aiheuttavat kaksoiskirjoituksia Dataversessä ja Dataversen tietojen muutokset puolestaan kirjoituksia rahoitus- ja toiminta -sovelluksissa. Tämä automatisoitu tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa.
 
 ![Tietojen suhde sovellusten välillä.](media/dual-write-overview.jpg)
 
@@ -52,7 +51,7 @@ Kaksoiskirjoituksen infrastruktuuri on laajennettavissa. Se on luotettava infras
 
 ### <a name="application"></a>Hakemus
 
-Kaksoiskirjoitus luo yhdistämismäärityksen Finance and Operations -sovellusten käsitteiden ja asiakkaiden aktivointisovellusten käsitteiden välille. Tämä integraatio tukee seuraavia skenaarioita:
+Kaksoiskirjoitus luo yhdistämismäärityksen rahoitus- ja toiminta -sovellusten käsitteiden ja asiakkaiden aktivointisovellusten käsitteiden välille. Tämä integraatio tukee seuraavia skenaarioita:
 
 + Integroidut asiakkaan päätiedot
 + Asiakkaan kanta-asiakaskorttien ja palkkiopisteiden käyttöoikeus
@@ -81,15 +80,15 @@ Kaksoiskirjoitus mahdollistaa tietojen integroinnin Microsoft Dynamics 365 -sove
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Mitä kaksoiskirjoitus tarkoittaa asiakkaiden aktivointisovellusten kehittäjille ja arkkitehdeille?
 
-Kaksoiskirjoitus automatisoi tietovirran Finance and Operations -sovellusten ja asiakkaiden aktivointisovellusten välillä. Kaksoiskirjoitus sisältää kaksi AppSource-ratkaisua, jotka on asennettu Dataverseen. Ratkaisut laajentavat taulukon rakennetta, laajennuksia ja työnkulkuja Dataversessa niin, että ne voidaan ottaa käyttöön ERP:ssä. Käyttöönotto onnistuu, jos asiakkaiden aktivointisovellusten kehittäjät ja arkkitehdit ymmärtävät nämä muutokset ja tekevät yhteistyötä Finance and Operations -sovellusten vastaavien henkilöiden kanssa.
+Kaksoiskirjoitus automatisoi tietovirran rahoitus- ja toiminta -sovellusten ja asiakkaiden aktivointisovellusten välillä. Kaksoiskirjoitus sisältää kaksi AppSource-ratkaisua, jotka on asennettu Dataverseen. Ratkaisut laajentavat taulukon rakennetta, laajennuksia ja työnkulkuja Dataversessa niin, että ne voidaan ottaa käyttöön ERP:ssä. Käyttöönotto onnistuu, jos asiakkaiden aktivointisovellusten kehittäjät ja arkkitehdit ymmärtävät nämä muutokset ja tekevät yhteistyötä rahoitus- ja toiminta -sovellusten vastaavien henkilöiden kanssa.
 
-Jos haluat luoda pariteetin Finance and Operations -sovellusten kanssa, kaksoiskirjoitus tekee joitakin tärkeitä muutoksia Dataverse -rakenteeseen. Voit välttää suunnittelu- ja kehitystyön toistoja tulevaisuudessa, jos ymmärrät tämän suunnitelman.
+Jos haluat luoda pariteetin rahoitus- ja toiminta -sovellusten kanssa, kaksoiskirjoitus tekee joitakin tärkeitä muutoksia Dataverse -rakenteeseen. Voit välttää suunnittelu- ja kehitystyön toistoja tulevaisuudessa, jos ymmärrät tämän suunnitelman.
 
-+ Kun kaksoiskirjoituksen AppSource-paketti on asennettu, Dataverse sisältää uusia käsitteitä, kuten yritys ja osapuoli. Näiden käsitteiden avulla Dataversen päälle luodut sovellukset, kuten Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service ja Dynamics 365 Field Service voivat toimia saumattomasti yhdessä Finance and Operations -sovellusten kanssa.
++ Kun kaksoiskirjoituksen AppSource-paketti on asennettu, Dataverse sisältää uusia käsitteitä, kuten yritys ja osapuoli. Näiden käsitteiden avulla Dataversen päälle luodut sovellukset, kuten Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service ja Dynamics 365 Field Service voivat toimia saumattomasti yhdessä rahoitus- ja toiminta -sovellusten kanssa.
 
 + Toiminnot ja huomautukset ovat yhtenäisiä ja laajenevat tukemaan sekä C1 (järjestelmän käyttäjät)- että C2 (järjestelmän asiakkaat) -kohteita.
 
-+ Voit estää tietojen menettämisen Finance and Operations -sovellusten ja Dataversen välisessä tiedonsiirrossa laajentamalla desimaalien määrää asiakkaiden aktivointisovellusten valuuttatietotyypissä. Ominaisuus muuntaa automaattisesti olemassa olevat taulut uuteen laajennettuun tilaan metatietotasolla. Tämän prosessin aikana valuutta-arvo muunnetaan desimaalidataksi, ei rahamääräiseksi dataksi. Valuutta-arvo tukee 10 desimaalia. Tämän ominaisuuden käyttäminen edellyttää suostumusta. Organisaatiot, joilla ei ole tarvetta yli 4 desimaalin tarkkuudelle, eivät tarvitse ominaisuutta. Lisätietoja on kohdassa [Valuutan tietotyypin siirto kaksoiskirjoitusta varten](currrency-decimal-places.md).
++ Voit estää tietojen menettämisen rahoitus- ja toiminta -sovellusten ja Dataversen välisessä tiedonsiirrossa laajentamalla desimaalien määrää asiakkaiden aktivointisovellusten valuuttatietotyypissä. Ominaisuus muuntaa automaattisesti olemassa olevat taulut uuteen laajennettuun tilaan metatietotasolla. Tämän prosessin aikana valuutta-arvo muunnetaan desimaalidataksi, ei rahamääräiseksi dataksi. Valuutta-arvo tukee 10 desimaalia. Tämän ominaisuuden käyttäminen edellyttää suostumusta. Organisaatiot, joilla ei ole tarvetta yli 4 desimaalin tarkkuudelle, eivät tarvitse ominaisuutta. Lisätietoja on kohdassa [Valuutan tietotyypin siirto kaksoiskirjoitusta varten](currrency-decimal-places.md).
 
 + [Voimassaolopäivä](../../dev-tools/date-effectivity.md) lisätään Dataverseen. Se tukee mennyttä, nykyistä ja tulevaa päivämäärää samassa taulukossa.
 

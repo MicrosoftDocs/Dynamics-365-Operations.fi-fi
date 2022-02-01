@@ -1,9 +1,9 @@
 ---
 title: Ohjejärjestelmä (sisältää videon)
-description: Tämä ohjeaihe sisältää Finance and Operations -sovellusten ohjejärjestelmän yleiskatsauksen.
+description: Tämä ohjeaihe sisältää rahoitus- ja toiminta -sovellusten ohjejärjestelmän yleiskatsauksen.
 author: edupont04
 ms.date: 07/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemParameters
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d272221cc7a976d48b09b2f78bdb3f7fded2fc53
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 67f2fe493c57cd004b1003c1d95734bd455fde8c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937526"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984431"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -50,7 +50,7 @@ Docs.microsoft.com-sivuston sisältöä voi etsiä millä tahansa hakukoneella. 
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
 
-Jos haluat tilata kaikkien docs.microsoft.com-sisältöön Finance and Operations -sovelluksissa tehtyjen päivitysten RSS-syötteen, käytä seuraavaa linkkiä:
+Jos haluat tilata kaikkien docs.microsoft.com-sisältöön rahoitus- ja toiminta -sovelluksissa tehtyjen päivitysten RSS-syötteen, käytä seuraavaa linkkiä:
 
 [RSS-syöte](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 

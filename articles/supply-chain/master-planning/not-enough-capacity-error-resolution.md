@@ -1,5 +1,5 @@
 ---
-title: Ajoistusmoduulin "Kapasiteettia ei löytynyt riittävästi" -virheen korjaaminen
+title: Ajoitusmoduulin "Kapasiteettia ei löytynyt riittävästi" -virheen ja rajallisen kapasiteetin korjaaminen
 description: Tässä ohjeaiheessa on tietoja ajoitusmoduulin "Tuotantotilausta %1 ei voitu ajoittaa. Kapasiteettia ei löytynyt riittävästi" -virheen syistä ja ratkaisuista.
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565756"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985027"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Ajoistusmoduulin "Kapasiteettia ei löytynyt riittävästi" -virheen korjaaminen
 
@@ -105,5 +105,11 @@ Voit tarkistaa resurssiryhmän käytettävissä olevan kapasiteetin noudattamall
 
 1. Siirry kohtaan **Organisaationhallinta \> Resurssit \> Resurssiryhmät** ja valitse resurssiryhmä, joka on sovellettavissa tilaukseen, jota ei voi ajoittaa.
 1. Valitse toimintoruudun **Näytä**-ryhmän **Resurssiryhmä**-välilehdessä **Kapasiteetin kuormitus** tai **Kapasiteetin kuormitus, graafisesti** ja varmista, että kapasiteettia on käytettävissä.
+
+## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Yleissuunnittelu kirjaa resurssin, kun resurssikalenteri on suljettu
+
+Kun työvaiheita ajoitetaan, pääsuunnittelu suunnittelee kapasiteetin ensisijaisen resurssiryhmän kalenterin mukaisesti. Se kirjaa toissijaisen työvaiheen yhtä aikaa kuin ensisijainen työvaihe, eikä se ota huomioon toissijaisen työvaiheen kalentereita tai kapasiteettia. Tällöin tuotantotilaus ajoitetaan suljettuun kalenteriin tai kun toissijainen työvaihe ei ole käytettävissä (kalenteri suljettu, ei kapasiteettia).
+
+Töiden ajoitusta käytettäessä pääsuunnittelu ottaa huomioon sekä ensisijaisen että toissijaisen työvaiheen kapasiteetin ja kalenterin tilausta ajoitettaessa. Jotta tilaus voidaan ajoittaa, molempien työvaiheiden resurssien kalenterien on oltava avoimia ja niiden kapasiteetti on oltava käytettävissä.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

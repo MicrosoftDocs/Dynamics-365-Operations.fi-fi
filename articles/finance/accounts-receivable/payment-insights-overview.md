@@ -3,7 +3,7 @@ title: Asiakasmaksujen tiedot (esiversio)
 description: Täsäs ohjeaiheessa kerrotaan maksun tietojen ominaisuudesta. Sen avulla saadaan lisätietoja yksittäisten asiakkaiden tyypillistä maksukäytännöistä. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit voidaan aloittaa tapauksissa, joissa muuten et niin tekisi.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: ecd368237f949b6cbfbbb7293f6ddc5b1199d6fc0aef7e0bf44f4a2a808a6ccb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737770"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983999"
 ---
 # <a name="customer-payment-insights-preview"></a>Asiakasmaksujen tiedot (esiversio)
 
@@ -69,7 +69,7 @@ Lähetä sähköpostia osoitteeseen [Asiakasmaksujen tiedot (esiversio)](mailto:
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
+Esikatselut (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) ei pidä käyttää henkilötietojen tai muiden sellaisten tietojen prosessoimiseen, joita koskevat lait tai määräykset, ja (4) sillä on rajoitettu tuki.
 
 
 

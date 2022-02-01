@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0a2bd50ef11e92fb427a61a1e8624fcd7d15e163
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 6ea27f4e38697d517b1520176eb5dfeee651a598
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920171"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982147"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Rajoittamattoman kapasiteetin ajoitus
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 *Rajattoman kapasiteetin ajoitus suunnittelun optimoinnille* -ominaisuus sallii reittitietoihin perustuvan ajoituksen. Se sallii sinun ajoittaa töitä monen eri reititysasetuksen perusteella. Suunnittelun optimoinnin ajoitus kattaa usein käytetyt reititysasetukset, kuten reitityksen työvaiheiden järjestyksen tai reitityksen työvaiheiden resurssien vaatimukset.
 
@@ -51,7 +49,9 @@ Järjestelmä huomioi ajoitusprosessin aikana myös työvaihetta koskevat *resur
 - Ominaisuus (Lisätietoja on kohdassa [Ajoitus resurssin valinnan avulla ja ominaisuuden perusteella](capability-based-scheduling.md).)
 
 > [!NOTE]
-> Henkilöstöhallintoon liittyviä vaatimuksia, kuten osaamisalueita tai todistusvaatimuksia, ei tueta vielä.
+>
+> - Jos resurssi ja/tai resurssiryhmä on asetettu rajattoman kapasiteetin arvoksi, pääsuunnittelu pitää niitä rajattomana kapasiteetina.
+> - Henkilöstöhallintoon liittyviä vaatimuksia, kuten osaamisalueita tai todistusvaatimuksia, ei tueta vielä.
 
 Ominaisuus tukee myös operatiivisia **Asetusaika**- ja **Ajoaika**-ominaisuuksia. Kun määrität nämä ominaisuudet reitityksen työvaiheelle, ajoitusprosessi luo asianmukaiset asetus- ja prosessityöt.
 

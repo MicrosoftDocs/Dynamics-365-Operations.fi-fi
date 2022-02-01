@@ -1,6 +1,6 @@
 ---
-title: Finance Insightsin konfigurointi – julkinen esiversio (esiversio) - versio 10.0.20 ja sitä myöhemmät
-description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin julkisen esiversion ominaisuuksia voi käyttää (versiossa 10.0.20 ja sitä uudemmissa).
+title: Finance Insightsin määritys – versio 10.0.20 ja myöhempi
+description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin version ominaisuuksia voi käyttää (versiossa 10.0.20 ja sitä uudemmissa).
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927401"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968959"
 ---
-# <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Finance Insightsin konfigurointi – julkinen esiversio (esiversio) - versio 10.0.20 ja sitä myöhemmät
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Finance Insightsin määritys – versio 10.0.20 ja myöhempi
 
 [!include [banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet Dynamics 365 Finance -versiossa 10.0.20 on suoritettava, jotta Finance Insightsin julkisen esiversion ominaisuuksia voi käyttää.
+Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet Dynamics 365 Finance -versiossa 10.0.20 on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
 
 > [!NOTE]
 > Tässä ohjeaiheessa kuvatut konfigurointivaiheet koskevat vain Finance-versiota 10.0.20 ja sitä myöhempiä. Jos haluat määrittää Finance Insightsin versiolle 10.0.19 tai sitä aikaisemmalle versiolle, katso [Finance Insightsin määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
@@ -38,7 +38,7 @@ Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen
 
 Määritä ympäristöt näiden ohjeiden avulla.
 
-1. Luo tai päivitä Finance-ympäristö Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa. Ympäristö edellyttää, että käytössä on Finance and Operations -sovellusten versio 10.0.20 tai sitä uudempi.
+1. Luo tai päivitä Finance-ympäristö Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa. Ympäristö edellyttää rahoitus- ja toiminta -sovellusten sovellusversiota 10.0.20 tai uudempaa.
 2. Ympäristön on oltava korkean käytettävyyden ympäristö eristysympäristössä. (Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Jos olet konfiguroimassa Finance Insightsia eristysympäristössä, tuotantotiedot on ehkä kopioitava tähän ympäristöön, jotta ennusteet toimisivat. Ennustemallissa käytetään useiden vuosien tietoja ennusteiden luomiseen. Contoso-esittelytiedot eivät sisällä riittävästi historiatietoja ennustemallin kouluttamiseen. 
 
@@ -126,7 +126,7 @@ Jos et löydä ainoatakaan edellisistä sovelluksista, kokeile alla mainittuja v
         - **Suorituskyky** – Suorituskyvyn arvoksi kannattaa valita **Standardi**.
         - **Tilin tyyppi** – Valitse **TallennustilaV2**.
 
-    3. Valitse **Data Laken tallennustila Gen2** -asetuksen **Lisäasetukset**-valintaikkunassa **Ota käyttöön** **Hierarkkiset nimitilat**-toiminnon alla. Jos et ota tätä toimintoa käyttöön, et voi käyttää Finance and Operations -sovellusten kirjoittamia tietoja käyttämällä palveluita, kuten Power BI:n tiedonkulkuja.
+    3. Valitse **Data Laken tallennustila Gen2** -asetuksen **Lisäasetukset**-valintaikkunassa **Ota käyttöön** **Hierarkkiset nimitilat**-toiminnon alla. Jos et ota tätä toimintoa käyttöön, et voi käyttää rahoitus- ja toiminta -sovellusten kirjoittamia tietoja käyttämällä palveluita, kuten Power BI:n tiedonkulkuja.
     4. Valitse **Tarkista ja luo**. Kun käyttöönotto on valmis, uusi resurssi näkyy Azure-portaalissa.
     5. Siirry luotuun tallennustiliin.
     6. Valitse vasemmanpuoleisessa valikossa **Käyttöoikeusavaimet**.
@@ -752,6 +752,6 @@ Apuohjelman asentaminen voi kestää useita minuutteja.
 
 ## <a name="feedback-and-support"></a>Palaute ja tuki
 
-Lähetä sähköpostiviesti [Finance Insights (esiversio) -tiimille](mailto:fiap@microsoft.com), jos haluat antaa palautetta tai tarvitset tukea.
+Lähetä sähköpostiviesti [Finance Insights](mailto:fiap@microsoft.com) -tiimille, jos haluat antaa palautetta tai tarvitset tukea.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

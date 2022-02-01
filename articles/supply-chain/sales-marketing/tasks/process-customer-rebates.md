@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 355ca6b8a06b15b68e0fd6236999b4e64a83bf2a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573342"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969084"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Luo ja käsittele asiakkaan ostohyvityksiä
 
@@ -69,7 +69,7 @@ Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimu
 2. Valitse **Kumuloi**.
 3. Kirjoita **Asiakas**-kenttään arvo tai valitse se.
 4. Valitse **Alkamispäivä**-kentässä kuluvan päivän päivämäärä.
-5. Valitse **OK**. **Kumuloi**-toiminnon suorittamisen jälkeen arvioitua vaatimussummaa on säädetty ottamaan huomioon, että asiakkaan kokonaismyyntimäärä on kyseisellä kaudella on suurempi kuin ensimmäistä ostohyvistä muodostettaessa. Tämä siis tarkoittaa, että koska kokonaisostomäärä on 100 yksikköä, asiakas on nyt oikeutettu 40 dollarin yksikkökohtaiseen hyvitykseen (sopimuksen toisen määrärajan mukaisesti) tai 400 dollarin kokonaisostohyvitykseen. Ero kirjataan uutena vaatimuksen ylimääräisenä 800 dollarin oikaisuna. Kumulointipäivitykseen sisällytettyjen ostohyvitysvaatimusten tilaksi on nyt määritetty Laskettu. 
+5. Valitse **OK**. **Kumuloi**-toiminnon suorittamisen jälkeen arvioitua vaatimussummaa on säädetty ottamaan huomioon, että asiakkaan kokonaismyyntimäärä on kyseisellä kaudella on suurempi kuin ensimmäistä ostohyvistä muodostettaessa. Tämä siis tarkoittaa, että koska kokonaisostomäärä on 100 yksikköä, asiakas on nyt oikeutettu 40 dollarin yksikkökohtaiseen hyvitykseen (sopimuksen toisen määrärajan mukaisesti) tai 4,000 dollarin kokonaisostohyvitykseen. Ero kirjataan uutena vaatimuksen ylimääräisenä 800 dollarin oikaisuna. Kumulointipäivitykseen sisällytettyjen ostohyvitysvaatimusten tilaksi on nyt määritetty Laskettu. 
 6. Merkitse luettelossa kaikki rivit.
 7. Valitse **Hyväksy**.
 8. Valitse **Prosessi**.

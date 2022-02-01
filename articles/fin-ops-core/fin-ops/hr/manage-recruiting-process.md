@@ -1,8 +1,8 @@
 ---
 title: Työhönottoprosessien hallinta
-description: Tässä artikkelissa kuvataan käsite, jonka avulla rekrytoijat voivat seurata rekrytointiprosessin vaiheita.
+description: Tässä ohjeaiheessa kuvataan käsite, jonka avulla rekrytoijat voivat seurata rekrytointiprosessin vaiheita.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf873a58900fa86d068d9ebc75f4f389e7d8359cc685d4635e083437c55ae56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752987"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965061"
 ---
 # <a name="manage-recruiting-processes"></a>Työhönottoprosessien hallinta
 
@@ -42,7 +42,7 @@ Työhönottoprojektien avulla työhönottajat voivat seurata yhden tai useamman 
 - Hakemuksen viimeinen jättöpäivä
 - Arvioitu alkamispäivämäärä
 
-Työhönottoprojekti sisältää **työpaikkailmoituksen**, jota käytetään **työntekijän itsepalveluosiossa** avoimen työpaikan ilmoituksena. Näyttääksesi avoimen toimen työntekijöille, työhönottoprojektilla on oltava **työpaikkailmoitus**, sen **Näytä työntekijän itsepalvelussa** -kentän valinta on oltava Kyllä, **hakemuksen viimeisen jättöpäivän** tulee olla tulevaisuudessa, ja työhönottoprojektin **tilana** on oltava Aloitettu. Seuraavassa taulukossa luetellaan mahdolliset työhönottoprojektin tilat ja niiden kuvaukset.
+Työhönottoprojekti sisältää **työpaikkailmoitus**-arvon, jota käytetään **työntekijän itsepalvelu** -sivulla avoimen työpaikan ilmoituksena. Avaus voidaan näyttää työntekijöille vain, jos rekrytointiprojektilla on **Työpaikkailmoitus**-arvo, **Näytä työntekijän itsepalvelussa** -kentän arvo on **Kyllä**, **Hakemuksen määräaika** -kenttä on asetettu tulevaan päivämäärään, ja rekrytointiprojektin **Projektin tila** -arvo on **Aloitettu**. Seuraavassa taulukossa luetellaan mahdolliset työhönottoprojektin tilat ja niiden kuvaukset.
 
 | Tila    | Merkitsee, että...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ Työhönottajat voivat myös tallentaa ulkoisissa työpaikkailmoituskanavissa k�
 
 ## <a name="applicants"></a>Hakijat
 
-Hakija on henkilö, joka hakee töihin yritykseesi. Hakijat jaetaan kaikkien organisaatiosi yritysten kesken, joten käytettävissä oleva osaajajoukko on suuri. Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, osaamisalueita ja erityisjärjestelyjä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan. Voit käyttää **Hakija**-sivua päivittääksesi seuraavat tiedot hakijoista yleiseen osoitekirjaan:
+Hakija on henkilö, joka hakee töihin yritykseesi. Hakijat jaetaan organisaation kaikkien tahojen kesken. Siksi sinulla on suuri osaaja-pooli, jonka avulla voit hakea osaajaa. Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, osaamisalueita ja erityisjärjestelyjä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan. Voit käyttää **Hakija**-sivua päivittääksesi seuraavat tiedot hakijoista yleiseen osoitekirjaan:
 
 - Osoitetiedot
 - Yhteystiedot
@@ -84,7 +84,7 @@ Hakemuksen tila ilmaisee, missä vaiheessa työhönottoprosessia hakemus on. Seu
 
 ### <a name="correspondence-actions"></a>Vastaustoimenpiteet
 
-**Hakemuksen** vastaustoimenpide määrittää asiakirjan tai sähköpostiviestin mallin, jota käytetään viestinnässä hakemuksen lähettäneen henkilön kanssa. Voit liittää **hakemuksen kirjanmerkkejä** vastaustoimenpiteisiin käyttääksesi Hakemus-, Hakija-, Haastattelu- ja Työhönottoprojekti-sivujen arvoja viestinnässä hakijoiden kanssa. Vastaustoimenpiteille voi luoda **sähköpostimalleja**, joiden avulla hakijoille, joiden hakemuksella on tietyn tilan ja vastaustoimenpiteen yhdistelmä, voi lähettää nopeasti sähköpostiviestejä. Voit esimerkiksi lähettää vahvistussähköpostin kaikille hakemuksille, joiden **tila** on Vastaanotettu ja **vastaustoimenpide** on Vastaanotettu. Viestien lähettämisen jälkeen voit päivittää hakemusten tilan automaattisesti.
+Hakemuksen vastaustoimenpide määrittää asiakirjan tai sähköpostiviestin mallin, jota käytetään viestinnässä hakemuksen lähettäneen henkilön kanssa. Liittämällä **hakemuksen kirjanmerkkejä** vastaustoimenpiteisiin, voit käyttää **Hakemus**-, **Hakija**-, **Haastattelu**- ja **Työhönottoprojekti**-sivujen arvoja viestinnässä hakijoiden kanssa. Luomalla **hakemussähköpostimalleja** kirjeenvaihtotoimintoja varten voit lähettää nopeasti sähköposteja hakijoille, joiden hakemuksissa on tietty tilan ja kirjeenvaihdon yhdistelmä. Voit esimerkiksi lähettää vahvistussähköpostin kaikille hakemuksille, joiden **tila** on **Vastaanotettu** ja **vastaustoimenpide** on **Vastaanotettu**. Viestien lähettämisen jälkeen voit päivittää hakemusten tilan automaattisesti.
 
 ## <a name="application-routing"></a>Hakemusten reititys
 
@@ -101,6 +101,5 @@ Jos useiden työntekijöiden täytyy tarkistaa hakemus, voit hallita tätä pros
 ## <a name="hiring-applicants"></a>Hakijoiden ottaminen palvelukseen
 
 Käytä **Hakemukset**-sivua ottaaksesi hakija palvelukseen. Kun hakija palkataan, hakemustietueen tilaksi merkitään **Palkattu** ja hakijan yleisessä osoitekirjassa olevat tiedot liitetään uuteen työntekijätietueeseen. Yleiseen osoitekirjan tietoihin tehdyt muutokset uuden työntekijätietueen kautta näkyvät myös hakijatietueessa. Tämä voi vähentää tietokirjausten määrää, jos uusi työntekijäsi hakee koskaan yrityksen sisällä uutta työtä. Vanhan työntekijän palkkaamisen uuteen toimeen voit tehdä napsauttamalla **Hakemuksen tila** -valikosta **Muuta toimea**, joka aloittaa siirtoprosessin.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

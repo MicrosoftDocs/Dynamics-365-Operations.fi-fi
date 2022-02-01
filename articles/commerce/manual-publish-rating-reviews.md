@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25ae7074fcf39bf4408ea1fa0acfc334281bb254
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 443ebaa13d7ac29df66ffe77a2ed938e44a0c488
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675046"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968200"
 ---
 # <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Moderaattorien suorittaman arvostelujen ja arviointien manuaalisen julkaisun käyttöönotto
 
@@ -68,3 +68,17 @@ Seuraavassa kuvassa näkyy esimerkki, jossa Commercen sivustonluontiohjelman **M
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luokitukset ja arvostelut – yleiskatsaus](ratings-reviews-overview.md)
+
+[Luokitusten ja arvostelujen käytön hyväksyminen](opt-in-ratings-reviews.md)
+
+[Hallitse luokituksia ja arvosteluja](manage-reviews.md)
+
+[Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
+
+[Synkronoi tuoteluokitukset](sync-product-ratings.md)
+
+[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
+
+[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
+
+[Luokitusten ja arvostelujen usein kysytyt kysymykset](ratings-reviews-faq.md)

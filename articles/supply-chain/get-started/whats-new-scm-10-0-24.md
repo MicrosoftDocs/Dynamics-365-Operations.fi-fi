@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Managementin esiversio 10.0.24 (helmikuu 2022)
+title: Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.24 (helmikuu 2022)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.24 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 12/03/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f6402d7f9f433ca621c475bd62553529943dbe62
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920545"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986300"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10024-february-2022"></a>Dynamics 365 Supply Chain Managementin esiversio 10.0.24 (helmikuu 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.24 (helmikuu 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esiversion 10.0.24 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1084. Se on käytettävissä seuraavasti:
+Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.24 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1084. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esiversio:** Joulukuu 2021
 - **Version yleinen saatavuus (oma päivitys):** tammikuu 2022
@@ -69,9 +68,9 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Rahoitus- ja toiminta -sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (marraskuu 2021) käyttöympäristön päivitysversio 10.0.24](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 sisältää Platform updateja. Lisätietoja on kohdassa [rahoitus- ja toiminta -sovellusten (marraskuu 2021) käyttöympäristön päivitysversio 10.0.24.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

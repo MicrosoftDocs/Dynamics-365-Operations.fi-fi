@@ -1,0 +1,73 @@
+---
+title: Maakohtaisten säännösten päivitysten hakeminen
+description: Tässä ohjeaiheessa on linkkejä Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista maakohtaisista pakollisista päivityksistä.
+author: AKroshkina
+ms.date: 01/20/2022
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
+audience: Application User
+ms.reviewer: kfend
+ms.search.region: Global
+ms.author: kfend
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: 1796fbb56467b8a3e5b9431b1db400dc83fbae2f
+ms.sourcegitcommit: 68655c5673aef9892063e5913ffee6bfc3817387
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "8016167"
+---
+# <a name="search-for-country-specific-regulatory-updates"></a>Maakohtaisten säännösten päivitysten hakeminen
+
+[!include [banner](../includes/banner.md)]
+
+Tässä ohjeaiheessa on linkkejä Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista maakohtaisista pakollisista päivityksistä. Nämä tiedot saadaksesi sinun on kirjauduttava Microsoft Dynamics Lifecycle Services (LCS) -palveluihin.
+
+| Maa tai alue    | Ongelma LCS:n ongelmahaussa |
+|----------------------|---------------------------|
+| Australia            | [Australiaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=1_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Itävalta              | [Itävaltaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=2_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Bahrain              | [Bahrainia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=37_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Belgia              | [Belgiaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=3_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Brasilia               | [Brasiliaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=4_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Kiina                | [Kiinaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=6_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Tšekin tasavalta                | [Tšekin tasavaltaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=7_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Tanska              | [Tanskaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=8_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Egypti                | [Egyptiä koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=42_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Viro              | [Viroa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=9_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Suomi              | [Suomea koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=10_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Ranska               | [Ranskaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=11_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Saksa              | [Saksaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=12_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Hongkong, erityishallintoalue        | [Hongkongia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?q=&dm=0&v=8_versionClass&i=2_issueTypeClass_1_issueTypeClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=38_countryClass&pi=&pm=&pc=&rd=&d=&envId=&permission=) |
+| Unkari              | [Unkaria koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=13_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Islanti              | [Islantia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?q=&dm=0&v=8_versionClass&i=2_issueTypeClass_1_issueTypeClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=14_countryClass&pi=&pm=&pc=&rd=&d=&envId=&permission=) |
+| Intia                | [Intiaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=15_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Irlanti              | [Irlantia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=16_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Italia                | [Italiaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=17_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Japani                | [Japania koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=18_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Kuwait               | [Kuwaitia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=39_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClasshttps://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=39_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Latvia               | [Latviaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=19_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Liettua            | [Liettuaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=20_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Malesia             | [Malesiaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=21_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Meksiko               | [Meksikoa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=22_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Alankomaat          | [Alankomaita koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=23_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Uusi-Seelanti          | [Uutta-Seelantia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=24_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Norja               | [Norjaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=25_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Oman                 | [Omania koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=40_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Puola               | [Puolaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=26_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Qatar                | [Qataria koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=41_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Venäjä               | [Venäjää koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=27_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Saudi-Arabia         | [Saudi-Arabiaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=28_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Singapore            | [Singaporea koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=29_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Etelä-Afrikka         | [Etelä-Afrikkaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?q=&dm=0&v=8_versionClass&i=2_issueTypeClass_1_issueTypeClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=30_countryClass&pi=&pm=&pc=&rd=&d=&envId=&permission=) |
+| Espanja                | [Espanjaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=31_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Ruotsi               | [Ruotsia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=32_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Sveitsi          | [Sveitsiä koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=33_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Thaimaa             | [Thaimaata koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=34_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Yhdistyneet arabiemiirikunnat | [Yhdistyneitä arabiemiirikuntia koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://fix.lcs.dynamics.com/Issue/Results?v=8_versionClass&ct=2_categoryClass_6_categoryClass&ft=1_featureClass_2_featureClass_3_featureClass&cu=43_countryClass&o=D&mode=Full&i=2_issueTypeClass_1_issueTypeClass) |
+| Yhdistynyt kuningaskunta       | [Yhdistynyttä kuningaskuntaa koskevat suunnitellut ja julkaistut sääntelytoiminnot](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FResults%3Fv%3D8_versionClass%26ct%3D2_categoryClass_6_categoryClass%26ft%3D1_featureClass_2_featureClass_3_featureClass%26cu%3D3_countryClass%26o%3DD%26mode%3DFull%26i%3D2_issueTypeClass_1_issueTypeClass&data=04%7C01%7Cvastrup%40microsoft.com%7C6e8a12140a0548c9224508d94add50a5%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637623136671200065%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=eiZzncdY20RjysdC8rpru54YONhSlJUec093vwFK5jI%3D&reserved=0) |
+
+Saat lisätietoja kuukausittaisiin päivityksiin sisältyvistä globalisaatio-ominaisuuksista liittymällä [DGX-GLOBALISAATIO-OMINAISUUDET](https://www.yammer.com/dynamicsaxfeedbackprograms/) Yammer-ryhmään.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

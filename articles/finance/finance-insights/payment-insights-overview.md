@@ -3,7 +3,7 @@ title: Asiakkaan maksuennusteet
 description: Tässä ohjeaiheessa kerrotaan maksuennusteiden ominaisuudesta. Sen avulla saat lisätietoja asiakkaan tyypillisistä maksutavoista. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit ehkä aloitetaan normaalia aikaisemmin.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752733"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982034"
 ---
 # <a name="customer-payment-predictions"></a>Asiakkaan maksuennusteet
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan maksuennusteiden ominaisuudesta. Sen avulla saat lisätietoja asiakkaan tyypillisistä maksutavoista. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit ehkä aloitetaan normaalia aikaisemmin.
 
@@ -39,7 +38,7 @@ Organisaatiot pitävät usein haastavana ennustaa milloin asiakkaat maksavat las
 - Liian myöhään alkavat perintäprosessit
 - Tilausten vapauttaminen asiakkaille, jotka voivat jättää laskut maksamatta
 
-Asiakkaan maksuennusteet (esiversio) auttaa organisaatioita ennustamaan, milloin myyntilasku maksetaan. Näin voidaan luoda perintästrategioita, joiden avulla voidaan nostaa ajoissa maksamisen todennäköisyyttä.
+Asiakkaan maksuennusteet auttaa organisaatioita ennustamaan, milloin myyntilasku maksetaan. Näin voidaan luoda perintästrategioita, joiden avulla voidaan nostaa ajoissa maksamisen todennäköisyyttä.
 
 ## <a name="predictions"></a>Ennusteet
 

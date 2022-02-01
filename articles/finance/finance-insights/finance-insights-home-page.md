@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813744"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968783"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insightsin aloitussivu
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance Insights sisältää määritettävät ja laajennettavat ratkaisut, joiden avulla yrityksen kassavirta voidaan ennustaa ja älykkäästi silloin, kun selvittämättömien saatavien maksu vastaanotetaan. Se auttaa myös budjetointiprosessia nopeuttavan budjettiesityksen luomisessa. Näissä ominaisuuksissa käytetään koneoppimisen mallipohjia mallien luomiseen tietojasi käyttäen (mukaan lukien tiedot kolmannelta osapuolelta, kuten toimiston kulutusraportit). Nämä älykkäät toiminnot antavat tietoja päätöksentekoon ja auttavat sinua vastaamaan tehokkaasti nykyisiin ja odotettuihin liiketoimintaominaisuuksiin. Olet vastuussa kaikista Finance Insightsissa käytetyistä tiedoista ja sen tuottamista tiedoista.
 
 > [!NOTE]
-> Finance Insightsin esiversio on saatavilla käyttöön otettavaksi Yhdysvalloissa, Kanadassa, Yhdistyneessä kuningaskunnassa, Euroopassa, Aasian ja Tyynenmeren alueella, Japanissa, Australiassa ja Uudessa-Seelannissa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
+> Finance Insights on saatavilla käyttöön otettavaksi Yhdysvalloissa, Kanadassa, Yhdistyneessä kuningaskunnassa, Euroopassa, Aasian ja Tyynenmeren alueella, Japanissa, Australiassa ja Uudessa-Seelannissa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
 
 ## <a name="prerequisites"></a>Edellytykset
 

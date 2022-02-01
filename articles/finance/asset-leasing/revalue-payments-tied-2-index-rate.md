@@ -2,25 +2,25 @@
 title: Indeksikorkoon linkitettyjen vuokrien uudelleenarvostus
 description: Tässä ohjeaiheessa kuvataan oikaisu, joka tehdään käyttöoikeusomaisuuserän velan vuokraamista varten, kun muuttuvat vuokrat muuttuvat indeksikoron muuttumisen vuoksi.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734583"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968049"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Indeksikorkoon linkitettyjen vuokrien uudelleenarvostus
 
@@ -43,7 +43,7 @@ Näiden vaiheiden avulla voit arvostaa uudelleen indeksikorkoon linkitetyt vuokr
 4. Valitse suodattimet taustaprosessiin sisällytettävien vuokrasopimusten valintaa varten ja valitse sitten **OK**.
 
     Näyttöön tulee **Indeksikoron uudelleenarvostuksen esikatselu** -valintaikkuna, jossa näkyvät uudelleenarvostettavat vuokrasopimukset. Se näyttää myös resurssin ja velan oikaisut tai muuttuvien maksujen oikaisut.
-    
+
 5. Jos haluat estää vuokrasopimusten uudelleenarvostuksen, valitse vuokrasopimukset, jotka **tulee** arvostaa uudelleen. Jos et valitse vuokrasopimuksia, kaikki vuokrasopimukset arvostetaan uudelleen. Kun olet valmis, arvosta vuokrat uudelleen valitsemalla **OK**.
 6. Jos haluat tarkastella tietylle indeksin uudelleenarvostusprosessille luotuja tapahtumia, valitse prosessitunnus ja valitse sitten **Tapahtumat**.
 
@@ -66,5 +66,7 @@ Voit tarkastella vain juuri luotua maksuaikataulua, joka alkaa uudelleenarvostus
 
 Kirjauskansiovienti on kirjannut automaattisesti oikaisukirjauskansioviennin tilille niiden vuokrien muutokselle, jotka liittyvät indeksin uudelleenarvostukseen.
 
+> [!NOTE]
+> Jos **Erittelyn maksusumma** -vaihtoehto on käytössä **Vuokrasopimuksen tiedot** -sivun **Yleinen**-pikavälilehdessä ja siihen liittyvä kirja on IFRS 16, indeksin uudelleenarvostusprosessi lisää automaattisesti tietueen **Maksun summan erittely** -valintaikkunaan. Summa vastaa indeksin uudelleenarvostuksen vuoksi maksuun tehtyä muutosta. Tietue merkitään **käytetyksi IRFS 16 -indeksin uudelleenarvostuksessa**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
