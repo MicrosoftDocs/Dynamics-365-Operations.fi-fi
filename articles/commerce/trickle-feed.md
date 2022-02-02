@@ -2,7 +2,7 @@
 title: Vähittäismyyntitapahtumien vähittäisiin syötteisiin perustuvien tilausten luominen
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commerce -sovelluksen tapahtumien syötteisiin perustuvien tilausten vähittäisestä luomisesta.
 author: analpert
-ms.date: 12/14/2021
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 67b66cd4bf2a77f3ab7f33f691156e38cc13770a
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921242"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964626"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Vähittäismyyntitapahtumien vähittäisiin syötteisiin perustuvien tilausten luominen
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Commercen versiossa 10.0.5 ja uudemmissa versioissa suositellaan siirtämään kaikkien laskelmien kirjausprosessit vähittäisiin syötteisiin perustuviksi laskelmien kirjausprosesseiksi. Vähittäisten syötteiden toimintoon liittyy merkittäviä suorituskyvyn ja liiketoiminnan etuja. Myyntitapahtumia käsitellään koko päivän ajan. Maksuvälineiden ja kassanhallinnan tapahtumat käsitellään tapahtumaraportissa päivän lopuksi. Vähittäisten syötteiden toiminto mahdollistaa myyntitilausten, laskujen ja maksujen jatkuvan käsittelyn. Tämän vuoksi varasto, tuotto ja maksut voidaan päivittää ja kirjata lähes reaaliaikaisesti.
+Microsoft Dynamics 365 Commercen versiossa 10.0.5 ja uudemmissa versioissa suositellaan siirtämään kaikkien laskelmien kirjausprosessit vähittäisiin syötteisiin perustuviksi laskelmien kirjausprosesseiksi. Vähittäisten syötteiden toimintoon liittyy merkittäviä suorituskyvyn ja liiketoiminnan etuja. Myyntitapahtumia käsitellään koko päivän ajan. Maksuvälineiden ja kassanhallinnan tapahtumat käsitellään tapahtumaraportissa päivän lopuksi. Vähittäisten syötteiden toiminto mahdollistaa myyntitilausten, laskujen ja maksujen jatkuvan käsittelyn. Tämän vuoksi varasto, tuotto ja maksut päivitetään ja kirjataan lähes reaaliaikaisesti.
 
 ## <a name="use-trickle-feed-based-posting"></a>Vähittäisiin syötteisiin perustuvien kirjausten käyttäminen
 
@@ -47,6 +47,10 @@ Ajoita seuraavat usein suoritettavat työt:
 ### <a name="financial-statements"></a>Tilinpäätökset
 
 Tilinpäätösten käsittelyprosessi on tarkoitettu suoritettavaksi päivän lopussa. Tämäntyyppinen tilinpäätösten käsittely tukee vain **Vuoro**-sulkemistapaa. Se valitsee vain suljetut vuorot. Tilinpäätökset koskevat vain taloushallinnon täsmäytystä. Tämä luo kirjauskansiot vain maksuvälineiden lasketun summan ja tapahtuman summan välisille eroaville summille ja muun kassanhallinnan tapahtumille.
+
+Tilinpäätökset mahdollistavat myös seuraavien tapahtumien tarkastelun: kassan laskemistapahtumat maksuvälineittäin, maksutapahtumat, pankkiin toimitetut maksuvälinetapahtumat ja kassakaapin maksuvälinetapahtumat. Maksuvälineen tietosivu näkyy vain silloin, kun tilinpäätös on valittuna.
+
+![Kuvassa näkyy kirjattujen laskelmien lomakkeen maksuvälineen tietosivu vain silloin, kun tilinpäätös on valittuna.](./media/Trickle-feed-posted-statements-transaction-view.png)
 
 Ajoita seuraavien tilinpäätöstöiden aloitus- ja päättymisajat päivän odotetun päättymisen perusteella seuraavasti:
 
