@@ -92,6 +92,8 @@
                   items:
                     - name: Commercen aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.25 (huhtikuu 2022)
+                      href: get-started/whats-new-commerce-10-0-25.md
                     - name: Commerce 10.0.24 (helmikuu 2022)
                       href: get-started/whats-new-commerce-10-0-24.md
                     - name: Commerce 10.0.23 (tammikuu 2022)
@@ -124,8 +126,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: Videot
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-                - name: Sanasto
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Oppimisluettelo
               items:
                 - name: Oppimisluettelon kotisivu
@@ -1936,6 +1936,8 @@
                   items:
                     - name: Konfiguraatioiden luonti tietojen tuomiseksi ulkoisesta XML-tiedostosta
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tietojen tuonti manuaalisesti valituista tiedostoista erätilassa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
                 - name: Tietojen tuonnin konfiguroiminen erätilassa SharePointissa sijaitsevista tiedostoista
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
                 - name: Tiedostojen tuonti XML-muodossa
@@ -2166,6 +2168,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
                     - name: Application Update 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+                    - name: Application Update 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
@@ -2384,6 +2388,8 @@
               items:
                 - name: Commerce IT-asiantuntijoille ja kehittäjille
                   href: dev-itpro/dev-retail-home-page.md
+                - name: Commercen kaupallisen teknologiapinon (tekninen raportti) modernisointi
+                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Paikallisen kehitysympäristön määrittäminen
                   href: dev-itpro/setup-local-dev-env.md
             - name: Online-kanavan laajennettavuus

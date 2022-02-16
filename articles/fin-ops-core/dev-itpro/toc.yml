@@ -14,6 +14,8 @@
               items:
                 - name: Platform update -päivitysten kotisivun uudet ja muuttuneet ominaisuudet
                   href: get-started/whats-new-home-page.md
+                - name: Ympäristön päivitykset versioon 10.0.25 (huhtikuu 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Platform update -päivitykset versioon 10.0.24 (helmikuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Platform update -päivitykset versioon 10.0.23 (tammikuu 2022)
@@ -430,6 +432,8 @@
                   href: deployment/install-deployable-package.md
                 - name: Paketin asennuksen poistaminen
                   href: deployment/uninstall-deployable-package.md
+                - name: Mukautettujen X++-komentosarjojen suorittaminen ja käyttökatkoja
+                  href: deployment/run-custom-scripts.md
                 - name: Paketin käyttöönotto-ongelmien vianmääritys
                   href: deployment/deployable-package-troubleshooting.md
             - name: Mukautetun ohjeen käyttöönotto
@@ -854,6 +858,8 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-suodatus luokka- ja metodiattribuutteja käyttäen
                   href: perf-test/systest-filtering.md
+                - name: SysTestRow-määrite useiden arvojen testaamista varten
+                  href: perf-test/systest-row.md
                 - name: Hyväksyntätestikirjasto
                   items:
                     - name: Hyväksyntätestikirjaston resurssit

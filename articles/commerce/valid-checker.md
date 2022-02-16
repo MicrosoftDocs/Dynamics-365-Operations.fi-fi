@@ -2,7 +2,7 @@
 title: Myymälän tapahtumien tarkistaminen laskelman laskemista varten
 description: Tässä aiheessa esitellään myymälän tapahtumien tarkistamisen toiminnot Microsoft Dynamics 365 Commercessa.
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924768"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087446"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Myymälän tapahtumien tarkistaminen laskelman laskemista varten
 
@@ -51,7 +51,7 @@ Seuraavassa kuvassa ovat toistuvat päiväprosessit tapahtumien lataamista ja ta
 
 Seuraavassa taulussa ovat tapahtuman otsikon tarkistussäännöt, joita verrataan vähittäismyyntitapahtumien otsikkoon ennen tapahtumien välittämistä laskelman kirjaukseen.
 
-| Otsikko | Kuvaus |
+| Sääntö | Kuvaus |
 |-------|-------------|
 | Liiketoimintapäivämäärä | Tämä sääntö tarkistaa, että tapahtuman liiketoimintapäivämäärä liittyy kirjanpidon avoimeen kauteen. |
 | Valuutan pyöristys | Tämä sääntö tarkistaa, että tapahtuman summat pyöristetään valuutan pyöristyssäännön mukaan. |
@@ -72,7 +72,7 @@ Seuraavassa taulussa ovat tapahtuman otsikon tarkistussäännöt, joita verrataa
 
 Seuraavassa taulussa ovat tapahtumarivin tarkistussäännöt, joita verrataan vähittäismyyntitapahtumien rivitietoihin ennen tapahtumien välittämistä laskelman kirjaukseen.
 
-| Otsikko | Kuvaus |
+| Sääntö | Kuvaus |
 |-------|-------------|
 | Viivakoodi | Tämä sääntö tarkistaa, että kaikki tapahtumariveillä käytettävät nimikkeen viivakoodit ovat tietokannassa. |
 | Kulurivit | Tämä sääntö tarkistaa, että laskettu summa ja kulurivien verovapaa summa yhteensä on yhtä suuri kuin alkuperäinen laskettu summa. |

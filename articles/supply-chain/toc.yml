@@ -12,6 +12,8 @@
               items:
                 - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.25 (huhtikuu 2022)
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: Supply Chain Management 10.0.24 (helmikuu 2022)
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (tammikuu 2022)
@@ -102,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videot
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Sanasto
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oppimisluettelo
               items:
                 - name: Oppimisluettelon kotisivu
@@ -308,6 +308,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Warehouse Management -mobiilisovelluksen määrittäminen pilven ja reunan asteikon yksiköitä varten
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Varastotilaukset pilven ja reunan asteikon yksiköitä varten
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Varasto-oikaisu
@@ -1233,6 +1235,8 @@
                   items:
                     - name: Konfiguraatioiden luonti tietojen tuomiseksi ulkoisesta XML-tiedostosta
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Tietojen tuonti manuaalisesti valituista tiedostoista erätilassa
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tietojen tuonnin konfiguroiminen erätilassa SharePointissa sijaitsevista tiedostoista
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tiedostojen tuonti XML-muodossa
@@ -1461,6 +1465,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Application Update 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application Update 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application Update 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
                   items:
                     - name: Tapahtuman tilaaminen ja vastauksen pyytäminen tilaajakäsittelijältä
@@ -1691,12 +1699,16 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Vahvista suunnitellut tilaukset
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Yksinkertaiset suunnitellut tilaukset
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Suunnittelu negatiivisilla käytettävissä olevalla määrillä
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Suunnittelutyön peruuttaminen
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Toimintosanomat
+                  href: master-planning/action-messages.md
                 - name: Suunnittelun optimoinnin vianmääritys
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Suunnittelun optimoinnin laajennettavuus
@@ -1729,8 +1741,6 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Räjähdyksen seurannan käyttäminen
                   href: master-planning/trace-explosion.md
-                - name: Toimintosanomat
-                  href: master-planning/action-messages.md
                 - name: Pääsuunnitteluajon valvonta
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Aikataulun luominen toimipisteelle
@@ -3763,6 +3773,8 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: 'Sertifiointipolun luottamusankkuria ei löydy päivityksen ja WMS:ään siirtymisen aikana'
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: Skaalausyksikkövaraston kuormituksen asentamisen jälkeen ilmenee käsittelyongelmia
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: Eränumeron automaattinen varauskehote näkyy myös saatavissa olevan varaston yhteydessä
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Keräystyön estoa ei voi poistaa keskeneräisen täydennystyön vuoksi
@@ -3907,3 +3919,5 @@
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md
