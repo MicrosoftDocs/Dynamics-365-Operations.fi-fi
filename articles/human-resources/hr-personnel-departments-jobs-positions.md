@@ -2,7 +2,7 @@
 title: Työvoiman järjestäminen osastojen, töiden ja toimien avulla
 description: Tässä aiheessa käsitellään osastoja, töitä ja toimia koskevia käsitteellisiä tietoja. Ne ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731805"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071468"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Työvoiman järjestäminen osastojen, töiden ja toimien avulla
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,34 +51,20 @@ Osasto on toimintayksikkö, joka edustaa organisaation luokkaa tai toiminta-alue
 
 ## <a name="jobs-and-positions"></a>Työt ja toimet
 Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Toimi on työn yksittäinen esiintymä. Työssä tarvittavat vastuualueet, työtehtävät, taidot, koulutustiedot ja todistukset tarvitaan myös työhön liittyvissä toimissa.
+
 ### <a name="job-tasks"></a>Työtehtävät
+
 Voit luoda työtehtäviä, jotka kuvaavat kyseisessä toimessa toimivan työntekijän perustehtäviä. Samaan työtehtävään voidaan lisätä useita töitä, ja töiden toimet perivät työtehtävät. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
 
-<table>
-<thead>
-<tr class="header">
-<th>Työ</th>
-<th>Työtehtävä</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Myyntipäällikkö</td>
-<td><ul>
-<li><span class="input">Suorituskykytarkistus</span> – Arvioi jokaisen myyjän suorituskykyä.</li>
-<li><span class="input">Poissaolotarkistus</span> – Hyväksy tai hylkää kunkin myyjän poissaolopyynnöt tai -rekisteröinnit.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Kirjanpitäjä</td>
-<td><span class="input">TAL-raportti</span> – Esitä viikoittaiset talousraportit talousjohtajalle.</td>
-</tr>
-</tbody>
-</table>
+| Työ           | Työtehtävä                                                |
+|---------------|-------------------------------------------------------------|
+| Myyntipäällikkö | Suorituskykytarkistus – Arvioi jokaisen myyjän suorituskykyä.    |
+| Kirjanpitäjä    | Poissaolotarkistus – Hyväksy tai hylkää kunkin myyjän poissaolopyynnöt tai -rekisteröinnit. |
+
 
 ### <a name="job-functions"></a>Työtehtävät
 
-Työtehtävät ovat työhön määritettyjä tehtäviä tai vastuita. Työtehtävät voidaan määrittää töille, ja niitä voidaan käyttää kompensaatiosuunnitelmien kelpoisuussääntöjen määrittämisessä ja käyttöönotossa. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
+Työtehtävät ovat Työtehtävä kuvaa työhön määritettyjä tehtäviä tai vastuita. Työtehtävät voidaan määrittää töille, ja niitä voidaan käyttää kompensaatiosuunnitelmien kelpoisuussääntöjen määrittämisessä ja käyttöönotossa. Seuraavassa taulukossa on esimerkkejä työtehtävistä.
 
 | Työ           | Työtehtävä                                                |
 |---------------|-------------------------------------------------------------|

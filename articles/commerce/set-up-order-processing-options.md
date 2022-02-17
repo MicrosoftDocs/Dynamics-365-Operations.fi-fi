@@ -2,7 +2,7 @@
 title: Puhelinkeskuksen kanavien määrittäminen
 description: Tässä ohjeaiheessa on tietoja siitä, kuinka voit käsitellä puhelinkeskusten tilauksia käyttämällä Dynamics 365 Commercessa.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f9afd1b67d6b164facc4dd15a8680866fe8c5b4e4b491d969cda6554eebb1de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750645"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092429"
 ---
 # <a name="set-up-call-center-channels"></a>Puhelinkeskuskanavien määrittäminen
 
@@ -56,6 +56,9 @@ Jos **Ota käyttöön tilausten viimeistely** on otettu käyttöön puhelinkesku
 Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, kun käyttäjät luovat myyntitilauksia ja ovat rivinimikkeen merkintätilassa, myös **Lähde**-kenttä on käytössä päämyyntitilauksen otsikossa. **Lähde**-kenttään tallennetaan [luettelon lähdekoodi](/dynamics365/unified-operations/retail/call-center-catalogs) suoramarkkinoinnin myyntiskenaariossa. Tämä koodi voi sitten ohjata erikoishintoja ja kampanja-alennuksia.
 
 Vaikka **Ota käyttöön tilausten viimeistely** -asetus olisi poistettu käytöstä, käyttäjät voivat silti käyttää lähdekoodia myyntitilauksessa. Heidän on kuitenkin ensin avattava myyntitilauksen otsikon tiedot, jotta he pääsevät käyttämään **Lähde**-kenttää. Toisin sanoen heidän on tehtävä muutama ylimääräinen toimi. Sama menettely koskee myös sellaisia ominaisuuksia, kuten Valmis lähetettäväksi ja Nopeutetut tilaukset. Näitä ominaisuuksia voi käyttää kaikissa puhelinkeskuksessa luoduissa tilauksissa. Kun **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, käyttäjät voivat kuitenkin nähdä näiden ominaisuuksien määritykset myynnin otsikossa, kun he ovat rivimerkintänäkymässä. Heidän ei tarvitse porautua etsimään asetuksia ja kenttiä myyntitilauksen otsikon tietoihin.
+
+> [!NOTE]
+> Kun **Monikanavaisten Commerce-tilausten maksut** -toiminto on käytössä **Ota käyttöön tilausten viimeistely** -painike piilotetaan headquartersissa kanavasi **Yleiset**-pikavälilehdessä kohdassa **Retail ja Commerce \> Kanavat \> Puhelinkeskukset**.
 
 ### <a name="enable-direct-selling"></a>Ota ohjattu myynti käyttöön
 

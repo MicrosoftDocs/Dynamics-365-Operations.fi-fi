@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413373"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071107"
 ---
 # <a name="integration-with-finance-faq"></a>Financeen integroinnin usein kysytyt kysymykset
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tässä ohjeaiheessa vastaan yleisiin kysymyksiin, jotka koskevat Dynamics 365 Human Resourcesista synkronoitavia tietoja, kun Talent integroidaan Dynamics 365 Financein kanssa.
 
@@ -86,7 +89,7 @@ Poikkeuksen käsittelyyn ei tarvita mitään erityisiä asetuksia. Tietojen inte
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Voinko määrittää kaksisuuntaisen integroinnin?
 
-Ei, integraatio on tällä hetkellä yksisuuntaista (Human Resourcesista Finance and Operationsiin). Käytettävissä on kuitenkin oletusmalli, jolla tietoja voi lähettää Human Resourcesista Financeen.
+Ei, sillä tällä hetkellä integrointi on yksisuuntaista (Human Resourcesista taloushallintoon ja toimintoihin). Käytettävissä on kuitenkin oletusmalli, jolla tietoja voi lähettää Human Resourcesista Financeen.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Voinko sallia tietueiden poiston integroinnin osana?
 

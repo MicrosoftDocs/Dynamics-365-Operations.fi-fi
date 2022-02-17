@@ -1,6 +1,6 @@
 ---
-title: Integroidut toimittajan päätiedot
-description: Tässä aiheessa kuvataan alihankkijatietojen integraatiota Finance and Operations -sovelluksen ja Dataversen välillä.
+title: Integroidut toimittajien päätiedot
+description: Tässä aiheessa käsitellään toimittajan tietojen integrointia taloushallinnon ja toimintojen sovellusten ja Dataversen välillä.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fce5e072d39533fa5d54fe34e90c7aca9d01d67e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7794f33aed7364b76a7d5ffd08a068342887e468
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782474"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063159"
 ---
 # <a name="integrated-vendor-master"></a>Integroidut toimittajan päätiedot
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Termi *toimittaja* viittaa toimittajaorganisaatioon tai elinkeinonharjoittajaan, joka toimittaa tavaroita tai palveluja yrityksille. Vaikka *toimittaja* on vakiintunut käsite Microsoft Dynamics 365 Supply Chain Management issa, toimittajan konseptia ei ole muissa asiakasvuorovaikutussovelluksissa. Voit kuitenkin ylikuormittaa **Tili/yhteyshenkilö**-taulukon toimittajatietojen tallentamista varten. Integroitu päätoimittaja esittelee eksplisiittisen toimittajan käsitteen asiakasvuorovaikutussovelluksiin. Voit käyttää uuden toimittajan rakennetta tai tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-taulukkoon. Kaksoiskirjoitus tukee molempia lähestymistapoja.
 
@@ -37,13 +37,13 @@ Jos haluat edelleen tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-tau
 ![Laajennettu toimittajatietojen virta.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Jos käytät itsepalvelutoimittajien Power Apps -portaaleja, toimittajatiedot voivat virrata suoraan Finance and Operations -sovelluksiin.
+> Jos käytät itsepalvelutoimittajien Power Apps -portaaleja, toimittajatiedot voivat virrata suoraan taloushallinnon ja toimintojen sovelluksiin.
 
-## <a name="templates"></a>Mallipohjat
+## <a name="templates"></a>Mallit
 
 Toimittajan tiedot sisältävät kaikki toimittajan tiedot, kuten toimittajaryhmän, osoitteet, yhteystiedot, maksuprofiilin ja laskutusprofiilin. Taulukarttojen kokoelma toimii yhdessä toimittajatietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
 ----------------------------|-----------------------------|------------
 [CDS-yhteyshenkilöt V2](mapping-reference.md#115) | yhteyshenkilöt | Tämä malli synkronoi kaikki sekä asiakkaiden että toimittajien ensisijaiset, toissijaiset ja kolmannentason yhteystiedot
 [Nimen jälkiliitteet](mapping-reference.md#155) | msdyn_nameaffixes | Tämä malli synkronoi sekä asiakkaiden että toimittajien nimen jälkiliitteiden viitetiedot.
@@ -52,7 +52,7 @@ Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset     | ku
 [Maksusuunnitelmarivit](mapping-reference.md#159) | msdyn_paymentschedulelines | Synkronoi sekä asiakkaiden että toimittajien maksusuunnitelmarivien viitetiedot.
 [Maksusuunnitelma](mapping-reference.md#160) | msdyn_paymentschedules | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksusuunnitelman viitetiedot.
 [Maksuehdot](mapping-reference.md#161) | msdyn_paymentterms | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksuehtojen (maksuehdot) viitetiedot.
-[Toimittajat V2](mapping-reference.md#202) | msdyn_vendors | Yritykset, jotka käyttävät mukautettua toimittajaratkaisua, voivat hyödyntää käyttövalmista toimittajakäsitettä, joka otetaan käyttöön Dataversessä Finance and Operations -sovellusten integroinnin ansiosta.
+[Toimittajat V2](mapping-reference.md#202) | msdyn_vendors | Yritykset, jotka käyttävät mukautettua toimittajaratkaisua, voivat hyödyntää käyttövalmista toimittajakäsitettä, joka otetaan käyttöön Dataversessa taloushallinnon ja toimintojen sovellusten integroinnin ansiosta.
 [Toimittajaryhmät](mapping-reference.md#200) | msdyn_vendorgroups | Tämä malli synkronoi toimittajaryhmän tiedot.
 [Toimittajan maksutapa](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Tämä malli synkronoi toimittajan maksutavan tiedot.
 

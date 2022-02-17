@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c7e64dbfe6a300c097b5b3711ac4310f3386df11
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944737"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077137"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Käyttöönotto-ohjeet Norjan kassakoneille
 
@@ -29,7 +29,7 @@ Tässä aiheessa on ohjeita kassan käyttötoimintojen käyttöönottamisesta No
 
 ## <a name="set-up-fiscal-registration-for-norway"></a>Kirjanpidon rekisteröinnin määrittäminen (Norja)
 
-Norjan verorekisteröinnin esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Retail SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\SequentialSignatureNorway** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä (esim. [julkaisun 9.34 esimerkki](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)). Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) veroasiakirjan tarjoajasta ja veroliittimestä, jotka ovat Commerce Runtimen (CRT) laajennuksia. Lisätietoja Retail SDK:n käytöstä on kohdissa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Määritä itsenäisen pakkaus-SDK:n koontiversioputki](../dev-itpro/build-pipeline.md).
+Norjan verorekisteröinnin esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Retail SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\SequentialSignatureNorway** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä (esim. [julkaisun 9.34 esimerkki](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)). Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) veroasiakirjan tarjoajasta ja veroliittimestä, jotka ovat Commerce Runtimen (CRT) laajennuksia. Lisätietoja Retail SDK:n käytöstä on kohdissa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Määritä itsenäisen pakkaus-SDK:n koontiversioputki](../dev-itpro/build-pipeline.md).
 
 Suorita verorekisteröinnin määritysvaiheet [Commerce-kanavien kirjanpidon integroinnin määrittäminen](./setting-up-fiscal-integration-for-retail-channel.md) -kohdassa kuvatulla tavalla:
 

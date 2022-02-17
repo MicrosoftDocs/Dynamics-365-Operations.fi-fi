@@ -12,16 +12,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7e867b2815920a68e3cd79843ba7b15ed6bb635
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7981982"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071082"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä **Tietojen hallinta** -työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
 
@@ -203,7 +206,7 @@ Kun ajoitat puhdistusprosessia, seuraavat parametrit on määritettävä, jotta 
 ## <a name="job-history-clean-up-and-archival"></a>Työhistorian puhdistus ja arkistointi 
 Työhistorian tyhjennys ja arkistointi -toiminnallisuus korvaa aiemmat siivoustoiminnon versiot. Tämä osio kertoo näistä uusista ominaisuuksista.
 
-Yksi puhdistustoiminnon tärkeimmistä muutoksista on järjestelmän erätyön käyttö historiatietojen poistamiseen. Järjestelmän erätyön käyttö sallii rahoitus- ja toiminta -sovellusten ajoittaa siivouserätyön automaattisesti ja suorittaa sen, kun järjestelmä on valmis. Erätyötä ei enää tarvitse ajoittaa manuaalisesti. Tässä oletussuoritustilassa erätyö suoritetaan tunnin välein alkaen puolilta öin, ja se säilyttää viimeisimmän 7 päivän suoritushistorian. Tyhjennetty historia arkistoidaan tulevaa noutamista varten. Alkaen versiosta 10.0.20 tämä ominaisuus on aina käytössä.
+Yksi puhdistustoiminnon tärkeimmistä muutoksista on järjestelmän erätyön käyttö historiatietojen poistamiseen. Järjestelmän erätyön käyttö sallii taloushallinnon ja toimintojen sovellusten ajoittaa siivouserätyön automaattisesti ja suorittaa sen, kun järjestelmä on valmis. Erätyötä ei enää tarvitse ajoittaa manuaalisesti. Tässä oletussuoritustilassa erätyö suoritetaan tunnin välein alkaen puolilta öin, ja se säilyttää viimeisimmän 7 päivän suoritushistorian. Tyhjennetty historia arkistoidaan tulevaa noutamista varten. Alkaen versiosta 10.0.20 tämä ominaisuus on aina käytössä.
 
 Toinen puhdistusprosessin muutos on tyhjennetyn suoritushistorian arkistointi. Puhdistustyö arkistoi poistetut tietueet blob-tallennustilaan, jota DIXF käyttää säännölliseen kanssakäymiseen. Arkistoitu tiedosto on DIXF-pakettimuodossa, ja se on käytettävissä 7 päivän ajan blob-objektissa, jolloin se voidaan ladata. Oletusarvon mukainen arkistoidun tiedoston 7 päivän säilytysaika voidaan muuttaa enintään 90 päiväksi parametreissä.
 

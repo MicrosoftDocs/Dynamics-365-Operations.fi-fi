@@ -4,18 +4,19 @@ description: Tässä aiheessa on lisätietoja valmistuksen ja varastoinnin halli
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733436"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065761"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Asteikon yksiköt jaetussa hybriditopologiassa
 
@@ -51,8 +52,7 @@ Voit määrittää keskittimesi ympäristön ja cloud scale unitit valituille ku
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen varastonhallinnan kuormituksen ominaisuudet
 
-Varastonhallinnan kuormituksen avulla varastonhallintaprosesseja voidaan suorittaa eristetyssä käyttöönotossa.
-Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](cloud-edge-workload-warehousing.md).
+Varastonhallinnan kuormitus on ensimmäinen skaalausyksiköiden jaettu kuormitus, joka vapautetaan yleiseen saatavuuteen. Sen avulla varastotyövaiheet voidaan skaalata ja suorittaa joustavassa ympäristössä käyttämällä yksittäisiä ylläpitoikkunoita. Varastonhallinnan kuormitus tukee useimpia yrityksen varastohallinnan prosesseja. Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen tuotannonohjauksen kuormituksen ominaisuudet
 

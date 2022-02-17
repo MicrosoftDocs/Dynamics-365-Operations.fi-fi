@@ -2,7 +2,7 @@
 title: Tietojen SharePointista tuonnin määrittäminen
 description: Tässä ohjeaiheessa käsitellään tietojen tuominen Microsoft SharePointista.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675342"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074763"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Tietojen SharePointista tuonnin määrittäminen
 
@@ -192,11 +192,11 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 
 ## <a name=""></a><a name="limitations">Rajoitukset</a>
 
-ER-kehys ei tarjoa mahdollisuutta aloittaa uutta erätyötä, joka suorittaa mallin yhdistämisen valvomattomassa tilassa tietojen tuontia varten. Jotta voisit tehdä tämän, sinun on kehitettävä uusi logiikka, jotta konfiguroitua ER-mallikartoitusta voidaan kutsua sovelluksen käyttöliittymästä (UI) tietojen tuomiseksi saapuvista tiedostoista. Siksi tarvitaan joitakin teknisiä töitä. 
+Dynamics 365 Finance -versioissa, jotka ovat vanhempia kuin 10.0.25, ER-kehyksen käyttöliittymä ei tarjoa mahdollisuutta aloittaa uutta erätyötä, joka suorittaa mallin yhdistämisen valvomattomassa tilassa tietojen tuontia varten. Sen sijaan sinun on kehitettävä uusi logiikka, jotta konfiguroitua ER-mallikartoitusta voidaan kutsua sovelluksen käyttöliittymästä tietojen tuomiseksi saapuvista tiedostoista. Tämän logiikan kehittämiseen tarvitaan hieman suunnittelutyötä. 
 
-Lisätietoja tähän liittyvästä ER-ohjelmointirajapinnasta on aiheen [Koodi, joka suorittaa mallin yhdistämismäärityksen tietojen tuonnista](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) osassa [ER-kehyksen ohjelmointirajapinnan muutokset Sovelluspäivitykselle 7.3](er-apis-app73.md).
+Lisätietoja tähän liittyvästä ER-ohjelmointirajapinnasta on [Koodi, joka suorittaa mallin yhdistämismäärityksen tietojen tuonnista](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) -osassa aiheessa [ER-kehyksen ohjelmointirajapinnan muutokset Sovelluspäivitykselle 7.3](er-apis-app73.md). Tarkastele koodia `BankImport_RU`-luokassa `Application Suite` -mallissa nähdäksesi, kuinka mukautettu logiikka voidaan toteuttaa. `BankImport_RU`-luokka laajentaa luokkaa `RunBaseBatch`. Tarkastele erityisesti metodia `runER()`, jossa `ERIModelMappingDestinationRun`-objekti luodaan ER-mallin yhdistämismäärityksen suorittajaksi.
 
-Tarkastele koodia `BankImport_RU`-luokassa `Application Suite` -mallissa nähdäksesi, kuinka mukautettu logiikka voidaan toteuttaa. Tämä luokka laajentaa luokkaa `RunBaseBatch`. Tarkastele erityisesti metodia `runER()`, jossa `ERIModelMappingDestinationRun`-objekti luodaan ER-mallin yhdistämismäärityksen suorittajaksi.
+Finance-versiossa 10.0.25 ja sitä uudemmissa versioissa ER-kehyksen käyttöliittymä ei tarjoa mahdollisuutta aloittaa uutta erätyötä, joka suorittaa mallin yhdistämisen valvomattomassa tilassa tietojen tuontia varten. Lisätietoja tästä prosessista on kohdassa [Tietojen tuominen erätilassa manuaalisesti valituista tiedostoista](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -205,6 +205,8 @@ Tarkastele koodia `BankImport_RU`-luokassa `Application Suite` -mallissa nähdä
 [ER-kehyksen ohjelmointirajapinnan muutokset Sovelluspäivitykselle 7.3](er-apis-app73.md)
 
 [ER-kehyksen ohjelmointirajapinnan muutokset Sovelluspäivitykselle 10.0.23](er-apis-app10-0-23.md)
+
+[ER-kehyksen ohjelmointirajapinnan muutokset Sovelluspäivitykselle 10.0.25](er-apis-app10-0-25.md)
 
 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec6d47c44136f7a105a702358370dd676d9339c1
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018345"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024564"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources -infrastruktuurin yhdistäminen - Julkaisun 10.0.25 päivitys
 
@@ -53,7 +53,7 @@ Yhdistämisen avulla Human Resourcesin käyttäjät voivat olla yhdenmukaisia se
     | Tulosta suorituskykyarviot | Voit tulostaa suorituskykyyn liittyvät vaihtoehdot PDF-muodossa. | Yleisesti saatavilla | 
     | Mukautetut linkit **Esimiehen itsepalvelussa** | Voit luoda mukautettuja linkkejä, jotka näkyvät **Esimiehen itsepalvelun** **Liittyvät linkit** -osassa. | Yleisesti saatavilla | 
     | Yritystenvälinen kompensaationäkymä | Käyttäjät voivat tarkastella kompensaatiosuunnitelmia **Esimiehen itsepalvelussa** kaikkien yritysten välillä ilman, että yrityksiä ei tarvitse vaihtaa. | Yleisesti saatavilla | 
-    | Määritä useita kompensaatiotasoja työn mukaan\*&dagger; | Töissä tuetaan nyt useita kompensaatiotasoja. | Yleisesti saatavilla | 
+    | Määritä useita kompensaatiotasoja työn mukaan\*&dagger; | Töissä tuetaan nyt useita kompensaatiotasoja. | Esikatselu | 
     | Tehtävienhallinta\* | Voit luoda tarkistusluetteloita ja tehtäviä perehdytys-, irtisanomis- ja siirtymisprosessille. | Esikatselu | 
     | Yksinkertaistettu työntekijän lisääminen | Tämä ominaisuus tarjoaa päivitetyn käyttökokemuksen aiemmin luodulla **Työntekijä**-sivulla. | Esikatselu | 
     | Henkilöstöhallinnon käyttäjäkokemuksen parannukset | Katso seuraavan osan taulu.  | Esikatselu | 

@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e41d600464d707d01a0e319dd3cd343b04aa26b7
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782377"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063644"
 ---
 # <a name="integrated-ledger"></a>Integroitu kirjanpito
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Yrityssovelluksen kirjanpitotiedot määrittävät perusasetukset sille, miten yritys harjoittaa liiketoimintaa. Kirjanpitotiedot esimerkiksi kuvaavat, mitä tilikautta noudattaa sekä mitä valuuttoja ja tilejä se käyttää. Tässä ohjeaiheessa käsitellään näiden perustaloustietojen integrointia.
 
@@ -28,7 +28,7 @@ Yrityssovelluksen kirjanpitotiedot määrittävät perusasetukset sille, miten y
 
 Kirjanpitotiedot sisältävät perustaloushallinnon taulukarttojen kokoelman, joita käytetään yhdessä tietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
 ---------------------------------|----------------------------------|------------
 [CDS-vaihtokurssit](mapping-reference.md#123) | msdyn_currencyexchangerates |
 [Tilikartta](mapping-reference.md#121) | msdyn_chartofaccountses |

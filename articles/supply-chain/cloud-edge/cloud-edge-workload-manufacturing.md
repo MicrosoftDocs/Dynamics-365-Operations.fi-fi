@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345295"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068841"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Tuotannon suorituksen kuormitus on esikatseltavissa tällä hetkellä.
+> [!IMPORTANT]
+> Valmistuksen suorittamisen kuormitus on tällä hetkellä käytettävissä vain esiversiona.
+>
 > Joitakin liiketoimintatoimintoja ei tueta kokonaisuudessaan julkisessa esiversiossa, kun kuormituksen scale uniteja käytetään.
+>
+> Et voi suorittaa valmistuksen suorituksen työkuorman esiversiota Scale Unitille, jos varaston suorituksen työkuorma on myös asennettu.
 
 Tuotannon suorittamisessa asteikkoyksiköt toimittavat seuraavat toiminnot:
 
@@ -128,6 +131,22 @@ Nykyisessä versiossa [varaston suorittamisen kuormitus](cloud-edge-workload-war
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aloitustoiminnon käyttöönotto ja käyttö vaakayksikössä
+
+Nykyisessä versiossa [varaston suorittamisen kuormitus](cloud-edge-workload-warehousing.md) tukee aloitustoimintoa tuotanto- ja erätilauksille (ei valmistuksen suorituksen kuormitus). Jos siis haluat käyttää tätä toimintoa Scale Unitin yhteydessä, toimi seuraavasti:
+
+- Asenna Scale Unitiin sekä varaston suorituksen kuormitus että valmistuksen suorittamisen kuormitus.
+- Ota käyttöön *Käynnistä tuotantotilaus varaston hallinnan kuormituksessa nykyisen pilven ja reunan skaalausyksiköitä varten* -toiminto [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Aloita tuotanto- tai erätilaus Warehouse Management -mobiilisovelluksen avulla.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Materiaalikulutuksen käyttöönotto ja käyttö vaakayksikössä
+
+Nykyisessä versiossa Warehouse Management -mobiilisovelluksen materiaalinkulutuksen rekisteröimistä tukee [varaston suorittamisen kuormitus](cloud-edge-workload-warehousing.md) (ei valmistuksen suorittamisen kuormitus). Jos siis haluat käyttää tätä toimintoa Scale Unitin yhteydessä, toimi seuraavasti:
+
+- Asenna Scale Unitiin sekä varaston suorituksen kuormitus että valmistuksen suorittamisen kuormitus.
+- Ota käyttöön *Rekisteröi materiaalikulutus skaalausyksikön mobiilisovelluksessa* -toiminto [ominaisuudenhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Rekisteröi materiaalinkulutus Warehouse Management -mobiilisovelluksen avulla.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

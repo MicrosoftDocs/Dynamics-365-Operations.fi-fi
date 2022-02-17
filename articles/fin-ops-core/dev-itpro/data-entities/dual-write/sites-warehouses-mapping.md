@@ -1,6 +1,6 @@
 ---
 title: Integroidut toimipaikat ja varastot
-description: Tässä aiheessa kuvataan sivuston ja varaston tietojen integraatiota Finance and Operationsin ja Dataversen välillä.
+description: Tässä aiheessa kuvataan toimipaikkojen ja varastojen tietojen integraatiota Finance and Operationsin ja Dataversen välillä.
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
@@ -9,26 +9,26 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: f0c477d869e0bc1e0c3f58a722c140284fbcffca
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782256"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063209"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integroidut toimipaikat ja varastot
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tässä aiheessa kuvataan sivuston ja varaston tietojen integraatiota Finance and Operationsin ja Dataversen välillä. Toiminnalliset toimipaikat ja varastot ovat Supply Chain Management -sovelluksen yleisiä käsitteitä. Niitä käytetään yrityksen toimitusketjun mallintamiseen.
+
+Tässä aiheessa kuvataan toimipaikkojen ja varastojen tietojen integraatiota Finance and Operationsin ja Dataversen välillä. Toiminnalliset toimipaikat ja varastot ovat Supply Chain Management -sovelluksen yleisiä käsitteitä. Niitä käytetään yrityksen toimitusketjun mallintamiseen.
 
 ## <a name="templates"></a>Mallit
 
 Dataverse -integraation kanssa nämä käsitteet ja kaikki niihin liittyvät tiedot ovat käytettävissä Dataversessa seuraavassa taulukossa esitettyjen toimipaikkojen ja varastojen tietotaulujen avulla.
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
 --------------------------|---------------------------|---
 [Sivustot](mapping-reference.md#156) | msdyn_operationalsites | |
 [Varastot](mapping-reference.md#204) | msdyn_warehouses | |

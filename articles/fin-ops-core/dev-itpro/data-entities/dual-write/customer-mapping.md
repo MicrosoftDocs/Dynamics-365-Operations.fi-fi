@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 48070628aafd7daac65327a484c87dc01ffb3954
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 41e4b6c192b6125a144e4d5ef952ba0975821d44
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781687"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063286"
 ---
 # <a name="integrated-customer-master"></a>Integroidut asiakkaan päätiedot
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Asiakastietoja voidaan hallita useammassa kuin yhdessä Dynamics 365 -sovelluksessa. Esimerkiksi asiakasrivi voi olla peräisin myyntitehtävästä Dynamics 365 Salesissa (asiakasvuorovaikutussovellus) tai rivi voi olla peräisin Dynamics 365 Commercen vähittäismyynnistä (taloushallinnon toimintojen sovellus). Riippumatta siitä, mistä asiakastiedot ovat peräisin, ne integroidaan näkymän taakse. Integroidut asiakkaan päätiedot antavat sinulle joustavuutta hallita asiakastietoja missä tahansa Dynamics 365-sovelluksessa ja tarjoaa kattavan näkymän asiakkaasta kautta koko Dynamics 365 -sovelluspaketin.
 
@@ -30,7 +30,7 @@ Asiakastietoja voidaan hallita useammassa kuin yhdessä Dynamics 365 -sovellukse
 
 ![Asiakastietojen virta.](media/dual-write-customer-data-flow.png)
 
-Asiakkaat voidaan luokitella laajasti kahteen eri luokkaan: kaupalliset/organisaation asiakkaat ja kuluttajat/loppukäyttäjät. Nämä kaksiasiakas tyyppiä tallennetaan ja käsitellään eri tavalla Finance and Operationsissa ja Dataversessä.
+Asiakkaat voidaan luokitella laajasti kahteen eri luokkaan: kaupalliset/organisaation asiakkaat ja kuluttajat/loppukäyttäjät. Nämä kaksiasiakas tyyppiä tallennetaan ja käsitellään eri tavalla Finance and Operationsissa ja Dataversessa.
 
 Finance and Operationsissa sekä kaupalliset/organisaation asiakkaat että kuluttajat/loppukäyttäjät hallittaan yhdessä taulukossa, jonka nimi on **CustTable** (CustCustomerV3Entity), ja ne luokitellaan **Tyyppi**-määritteen avulla. (Jos **tyypiksi** on määritetty **Organisaatio**, asiakas on kaupallinen/organisaation asiakas ja jos **tyypiksi** on määritetty **Henkilö**, asiakas on kuluttaja/loppukäyttäjä.) Ensisijaisen yhteyshenkilön tietoja käsitellään SMMContactPersonEntity-taulukossa.
 
@@ -42,7 +42,7 @@ Kun ei-Myytävissä oleva kontakti osallistuu tarjous- tai tilausprosessiin, **M
 
 Asiakkaan tiedot sisältävät kaikki asiakkaan tiedot, kuten asiakasryhmän, osoitteet, yhteystiedot, maksuprofiilin, laskutusprofiilin ja kanta-asiakkuuden tilan. Taulukarttojen kokoelma toimii yhdessä asiakastietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset         | kuvaus
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset         | kuvaus
 ----------------------------|---------------------------------|------------
 [CDS-yhteyshenkilöt V2](mapping-reference.md#115) | yhteyshenkilöt | Tämä malli synkronoi kaikki sekä asiakkaiden että toimittajien ensisijaiset, toissijaiset ja kolmannentason yhteystiedot
 [Asiakasryhmät](mapping-reference.md#126) | msdyn_customergroups | Tämä malli synkronoi asiakasryhmän tiedot.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774846"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074964"
 ---
 # <a name="safety-margins"></a>Varmuusmarginaalit
 
@@ -61,9 +61,6 @@ Huomaa, että vastaanottomarginaalia ei käytetä, kun käytettävissä olevaa v
 
 ### <a name="reorder-margin"></a>Uudelleentilausmarginaali
 
-> [!NOTE]
-> **Tulossa pian:** Suunnittelun optimointi ei vielä tue tätä toimintoa. Siihen asti kaikkia **Nimikkeen läpimenoaikaan lisätty uudelleenjärjestyksen marginaali** -kenttään syötettyjä arvoja kohdellaan kuten arvoa *0* (nolla).
-
 Seuraavassa kuvassa näkyy uudelleentilausmarginaali.
 
 ![Uudelleentilausmarginaali.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ Seuraavassa kuvassa näkyy uudelleentilausmarginaali.
 Uudelleentilausmarginaali lisätään ennen nimikkeen läpimenoaikaa kaikille suunnitelluille tilauksille pääsuunnittelun aikana. Näin se varmistaa, että toimitustilauksen asettamiselle on käytettävissä lisäaikaa. Tätä marginaalia käytetään yleensä puskurina, jotta voidaan varmistaa riittävä aika toimitustilausten luonnin aikana tarvittaville hyväksymisprosesseille ja muille sisäisille prosesseille. Uusintatilausmarginaali asetetaan toimituksen *tilauspäivämäärän* ja *alkupäivämäärän* välille.
 
 ### <a name="issue-margin"></a>Toimitusmarginaali
-
-> [!NOTE]
-> **Tulossa pian:** Suunnittelun optimointi ei vielä tue tätä toimintoa. Siihen asti kaikkia **Tarvepäivästä vähennetty toimitusmarginaali** -kenttään syötettyjä arvoja kohdellaan kuten arvoa *0* (nolla).
 
 Seuraavassa kuvassa näkyy toimitusmarginaali.
 

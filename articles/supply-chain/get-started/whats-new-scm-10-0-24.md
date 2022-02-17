@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a254e20dd7fcc29ca520282b4bf9fcd903e4de58
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986300"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087547"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.24 (helmikuu 2022)
 
@@ -34,6 +34,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän aih
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
 | Jaettu hybriditopologia | [Tehostettu varastonohjauksen toiminta skaalausyksiköissä](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md) | Oletusarvoisesti käytössä. |
+| Jaettu hybriditopologia | [Aloita pilvi- ja reunamittakaavayksikön varastonhallinnan työmäärän tuotantotilaus](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-manufacturing.md) | Ominaisuuksien hallinta (*Käynnistä tuotantotilaus varaston hallinnan kuormituksessa nykyisen pilven ja reunan skaalausyksiköitä varten*)  |
 | Suunnittelu | [Uudelleentilausmarginaalin ja varasto-ottomarginaalin suunnittelun optimointi](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Varmuusmarginaalit](../master-planning/planning-optimization/safety-margins.md) | Oletusarvoisesti käytössä. |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnon parannukset
@@ -47,7 +48,6 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 | Tuotannonhallinta | Tuotantotilausten käytettävissä olevan materiaalin saatavuustarkistus | Tämä ominaisuus nopeuttaa **tuotantotilausten avaamista vapautus**-sivulle, joka on käytettävissä **tuotannonhallinnan** työtilassa. Jos tätä toimintoa ei ole, järjestelmä tarkistaa automaattisesti, onko kaikkien luetteloitujen tuotantotilausten käytettävissä materiaaleja heti, kun avaat sivun. Tämä voi kestää huomattavan kauan, jos tilauksia on paljon. Kun tämä ominaisuus on käytössä, järjestelmä käyttää työkalurivin painiketta, jonka avulla voit käynnistää materiaalien tarkistamisen vain valittujen tilausten osalta ja tarvittaessa. |
 | Tuotannonhallinta | (Esiversio) Rekisteröi materiaalin kulutus tuotannon käyttöliittymässä (muu kuin VHJ) | Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Tämä toiminto tukee vain nimikkeitä, joita ei ole otettu käyttöön varaston lisäprosessien (WMS) käytössä. WMS-käytössä olevien nimikkeiden tuki on ajoitettu tulevaan versioon.<p>Joidenkin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen, että materiaalista ei ole mitään materiaalia valmistava. |
 | Tuotannonhallinta | Raportoi valmiiksi pilvi- ja reunamittakaavayksikön varastonhallinnan työmäärästä | Tämän ominaisuuden avulla työntekijät voivat Warehouse Management -mobiilisovelluksen avulla ilmoittaa tuotannon tai erätilauksen valmiiksi, kun sovellus on käynnissä varastonhallinnan kuormitusta pilvipalvelussa tai reunalla. Lisätietoja on kohdassa [Ilmoita valmiiksi ja aseta mittayksikköön](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Tuotannonhallinta | Aloita pilvi- ja reunamittakaavayksikön varastonhallinnan työmäärän tuotantotilaus | Tämän ominaisuuden avulla työntekijät voivat Warehouse Management -mobiilisovelluksen avulla aloittaa tuotannon tai erätilauksen, kun sovellus on käynnissä varastonhallinnan kuormitusta pilvipalvelussa tai reunalla. |
 | Varastonhallinta   | Uudet kuormasuunnittelun työtilan sivut | Ottaa käyttöön uudet kuormasuunnittelun työtilan sivut: **Saapuvan kuormasuunnittelun työtila** ja **Lähtevän kuormasuunnittelun työtila**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
@@ -68,9 +68,9 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Rahoitus- ja toiminta -sovellusten ympäristöpäivitykset
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 sisältää Platform updateja. Lisätietoja on kohdassa [rahoitus- ja toiminta -sovellusten (marraskuu 2021) käyttöympäristön päivitysversio 10.0.24.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (helmikuu 2022) käyttöympäristön päivitysversio 10.0.24.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

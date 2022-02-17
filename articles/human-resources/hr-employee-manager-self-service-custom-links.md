@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 1cf4ed8d2373a71594b9b03306c582ed998b6e39
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431181"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071451"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Mukautettujen linkkien luominen esimiehen itsepalvelussa
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,11 +39,11 @@ Tätä ominaisuutta voi käyttää ottamalla **Esimiehen itsepalvelun mukautetut
 
 1. Valitse **Human Resourcesin parametrit** -kohdassa **Esimiehen itsepalvelu**.
 
-2. **Esimiesten linkkien määrittämine** -kohdassa voi lisätä tai poistaa linkin sekä muokata sitä. Linkkejä voi myös ryhmittää yhteen siten, että näkyvät ryhmänä esimiehen itsepalvelussa.
+2. **Esimiesten linkkien määrittämine** -kohdassa voi lisätä tai poistaa linkin sekä muokata sitä. Linkkejä voi myös ryhmittää yhteen siten, että näkyvät ryhmänä **esimiehen itsepalvelussa**.
 
    ![Mukautettujen linkkien määrittäminen esimiehen itsepalvelussa.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. Voit tarkastella linkkejä siirtymällä työntekijän itsepalvelussa **Oma ryhmä** -välilehteen.
+3. Voit tarkastella linkkejä siirtymällä **työntekijän itsepalvelussa** **Oma ryhmä** -välilehteen.
 
    ![Mukautettujen linkkien näyttäminen esimiehen itsepalvelussa.](./media/hr-employee-manager-self-service-custom-links-view.png)
 
