@@ -1,7 +1,7 @@
 ---
 title: Osaamisalueiden määritykset
 description: Voit seurata työntekijän osaamisalueita Dynamics 365 Human Resourcesissa. Voit myös määrittää tietyn työn edellyttämät osaamisalueet.
-author: andreabichsel
+author: twheeloc
 manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
@@ -13,19 +13,21 @@ ms.search.scope: Human Resources
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a8025dd4000a3678e7f7eb7faebfa45852f0054570a2948dadbc21913c63f578
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13206bb3c961f001620e8b65a8b1bb39bf95ee49
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732150"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075068"
 ---
 # <a name="configure-skills"></a>Osaamisalueiden määritykset
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+> [!IMPORTANT]
+> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä Finance-infrastruktuurin Human Resources -asiakkaiden käytettävissä.  
+
 
 Voit seurata työntekijän osaamisalueita Dynamics 365 Human Resourcesissa. Voit myös määrittää tietyn työn edellyttämät osaamisalueet.
 

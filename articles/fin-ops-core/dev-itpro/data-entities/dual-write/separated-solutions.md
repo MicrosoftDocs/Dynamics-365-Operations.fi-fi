@@ -10,30 +10,30 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3fe1b7707df72927fba78ee9659502cc62471799
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924867"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063259"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Erillinen kaksoiskirjoitussovelluksen hallintapaketti
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Aiemmin kaksoiskirjoitussovelluksen hallintapaketti oli vain yksi paketti, joka sisälsi seuraavat ratkaisut:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Common Anchor
-- Dynamics 365 Finance and Operations Dual Write Entity Maps
+- Dynamics 365 Finance and Operations – yleinen ankkuri
+- Dynamics 365 Finance and Operations – kaksoiskirjoituksen entiteettien yhdistämismääritykset
 - Dynamics 365 resurssien hallintasovellus
 - Dynamics 365 resurssien hallinta
 - HCM, yhteinen
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Dynamics 365 Finance and Operations – yleinen
 - Dynamics 365 Company
 - Currency Exchange Rates
 - Field Service Common
@@ -46,19 +46,19 @@ Tässä aiheessa kerrotaan kunkin paketin sisältämät ratkaisut ja määrityks
 
 ## <a name="dual-write-application-core"></a>Kaksoiskirjoituksen sovellusydin
 
-Kaksoiskirjoituksen sovellusydinpaketin avulla käyttäjät voivat asentaa ja konfiguroida kaksoiskirjoituksen ilman customer engagement -sovellusta. Se sisältää seuraavat viisi ratkaisua.
+Kaksoiskirjoituksen sovellusydinpaketin avulla käyttäjät voivat asentaa ja konfiguroida kaksoiskirjoituksen ilman asiakasvuorovaikutussovellusta. Se sisältää seuraavat viisi ratkaisua.
 
 | Yksilöivä nimi                           | Näyttönimi                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations – yleinen |
 | CurrencyExchangeRates                 | Currency Exchange Rates                    |
 | msdyn_DualWriteAppCoreMaps            | Kaksoiskirjoituksen sovellusytimen entiteettien yhdistämismääritykset   |
 | msdyn_DualWriteAppCoreAnchor          | Kaksoiskirjoituksen sovellusytimen ankkuri        |
 
 Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
 
-| Finance and Operations -sovellukset     | Asiakkaiden aktivointisovellukset                    |
+| Taloushallinnon ja toimintojen sovellukset     | Asiakkaiden aktivointisovellukset                    |
 |---------------------------------|---------------------------------------------|
 | Toimintayksikkö                  | msdyn_internalorganizations                 |
 | Organisaatiohierarkia          | msdyn_internalorganizationhierarchies       |
@@ -89,7 +89,7 @@ Human Resourcesin kaksoiskirjoituspaketti sisältää Human Resources -tietojen 
 
 Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
 
-| Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset         |
+| Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset         |
 |-----------------------------|----------------------------------|
 | Etniset alkuperät              | cdm_ethnicorigins                |
 | Kompensaation työtehtävä   | cdm_jobfunctions                 |
@@ -119,7 +119,7 @@ Toimitusketjun kaksoiskirjoituspaketti sisältää Supply Chain Management -tiet
 
 Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
 
-| Finance and Operations -sovellukset                 | Asiakkaiden aktivointisovellukset                      |
+| Taloushallinnon ja toimintojen sovellukset                 | Asiakkaiden aktivointisovellukset                      |
 |---------------------------------------------|-----------------------------------------------|
 | Yksiköt                                       | uoms                                          |
 | CDS-myyntitilauksien otsikot                     | salesorders                                   |
@@ -197,7 +197,7 @@ Financen kaksoiskirjoituspaketti sisältää Dynamics 365 Finance -tietojen synk
 
 Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
 
-| Finance and Operations -sovellukset             | Asiakkaiden aktivointisovellukset        |
+| Taloushallinnon ja toimintojen sovellukset             | Asiakkaiden aktivointisovellukset        |
 |-----------------------------------------|---------------------------------|
 | Ennakonpidätysryhmät                  | msdyn_withholdingtaxgroups      |
 | CDS-yhteyshenkilöt V2 (asiakas)              | yhteyshenkilöt                        |
@@ -274,7 +274,7 @@ Resurssien hallinnan kaksoiskirjoituspaketti sisältää Supply Chain Management
 
 Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
 
-| Finance and Operations -sovellukset                           | Asiakkaiden aktivointisovellukset                |
+| Taloushallinnon ja toimintojen sovellukset                           | Asiakkaiden aktivointisovellukset                |
 |-------------------------------------------------------|-----------------------------------------|
 | Resurssien hallinnan takuu                             | msdyn_warranties                        |
 | Resurssien hallinnan mallit                               | msdyn_models                            |

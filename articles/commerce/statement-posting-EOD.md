@@ -2,27 +2,24 @@
 title: Laskelman kirjaamisen toiminnallisuuden parannukset
 description: Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon.
 author: analpert
-ms.date: 12/03/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9a5a7d6394a87eccde8e1c364caaaabdb0297fd2
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982200"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087600"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations7.3.2 -versiossa.
 
@@ -53,12 +50,24 @@ Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uu
 
 - **Poista pakollinen laskenta käytöstä** – kun asetukseksi on määritetty **Kyllä**, laskelma jatkuu kirjausprosessin aikana, vaikka ero lasketun summan ja transaktion summan välillä ylittää rajan, joka on määritetty myymälöiden **Laskelma**-pikavälilehdessä.
 
+> [!NOTE]
+> Commerce-versiosta 10.0.14 alkaen, kun **Vähittäismyyntilaskelmat – vähittäinen syöttö** -ominaisuus on käytössä, **Kirjaa varasto** -erätyö ei ole enää käytettävissä eikä sitä voi suorittaa.
+
 Lisäksi seuraavat parametrit on esitelty **Eräkäsittely**-pikavälilehdellä **Kirjaus**-välilehdellä **Kaupan parametrit** -sivun kirjausvälilehden eräkäsittelypikavälilehdessä: 
 
 - **Rinnakkaisen laskelman kirjauksen enimmäismäärä** – Tämä kenttä määrittää useiden laskelmien kirjaamiseen käytettävien erätehtävien määrän. 
 - **Tilausten käsittelyn enimmäissäie** – Tämä kenttä edustaa laskelman kirjauksen eräajossa käytettävien säikeiden enimmäismäärää, kun halutaan luoda ja laskuttaa yhden laskelman myyntitilauksia. Laskelman kirjaus prosessissa käytettävien säikeiden kokonaismäärä lasketaan tämän parametrin arvon mukaan kerrottuna **Rinnakkaisen laskelman kirjausten enimmäismäärä**-parametrin arvolla. Tämän parametrin arvon määrittäminen liian suureksi voi vaikuttaa kielteisesti laskelman kirjausprosessin suorituskykyyn.
 - **Koontia varten sisällytettyjen tapahtuma rivien enimmäismäärä** – Tämä kenttä määrittää, montako tapahtumariviä sisällytetään yksittäiseen yhteenlaskettavaan tapahtumaan ennen uuden luomista. Yhdistetyt tapahtumat luodaan erilaisten koostekriteerien, kuten asiakkaan, liiketoiminnan päivän tai taloushallinnon dimensioiden, perusteella. On tärkeää huomata, että yksittäisen tapahtuman rivejä ei jaeta eri yhdistettyjen tapahtumien kesken. Tämä tarkoittaa, että on mahdollista, että yhdistettyjen tapahtumien rivien määrä on hieman suurempi tai pienempi niiden tekijöiden perusteella, kuten erillisten tuotteiden määrä.
 - **Säikeiden enimmäismäärä varastotapahtumien tarkistamista varten** – Tämä kenttä määrittää tapahtumien vahvistamiseen käytettävien säikeiden määrän. Tapahtumien vahvistaminen on pakollinen vaihe, joka on suoritettava, ennen kuin tapahtumat voidaan noutaa lausekkeissa. Sinun on myös määritettävä uuden kirjausprosessin aikana **Lahjakorttituote** **Lahjakortti**-pikavälilehdessä **Kaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä on määritettävä myös silloin, kun organisaatio ei käytä lahjakortteja.
+
+Seuraavassa taulukossa luetellaan edellisten parametrien suositellut arvot. Nämä arvot on testattava ja räätälöitävä käyttöönoton konfiguraation ja käytettävissä olevan infrastruktuurin mukaan. Suositeltujen arvojen suureneminen voi vaikuttaa haitallisesti muihin eräkäsittelyihin, ja ne on tarkistettava.
+
+| Parametri | Suositeltava arvo | Yksityiskohtaiset tiedot |
+|-----------|-------------------|---------|
+| Rinnakkaisten laskelmien kirjaamisen enimmäismäärä | <p>Määritä tämän parametrin arvoksi niiden erätöiden määrä, joka on käytettävissä eräryhmälle, joka suorittaa **Laskelma**-työn.</p><p>**Yleinen sääntö:** Kertomalla Application Object Serverin (AOS) virtuaalipalvelinten määrän AOS-virtuaalipalvelimessa käytettävissä olevien erätehtävien lukumäärällä.</p> | Tätä parametria ei voi käyttää, kun **Vähittäismyyntilaskelmat – vähittäinen syöttö** -ominaisuus on käytössä. |
+| Säikeiden enimmäismäärä tilausten käsittelyssä laskelmaa kohti | Aloita testaamaan arvoilla kohdasta **4**. Yleensä arvo ei saa ylittää arvoa **8**. | Tämä parametri määrittää myyntitilausten luomiseen ja kirjaamiseen käytettyjen säikeiden määrän. Se edustaa säikeiden määrää, jonka avulla voidaan kirjata laskelmaa kohti. |
+| Suurin mahdollinen tapahtumarivien määrä sisällytetty koosteeseen | Aloita testaamaan arvoilla kohdasta **1000**. Pääkonttorin konfiguraation mukaan pienemmät luvut voivat olla tehokkaammin suorituskyvylle hyödyllisiä. | Tämä parametri määrittää kuhunkin myyntitilaukseen sisällytettävien rivien määrän laskelman kirjaamisen yhteydessä. Kun tämä numero on saavutettu, rivit jaetaan uuteen tilaukseen. Vaikka myyntirivien määrä ei ole tarkka, koska jako tapahtuu myyntitilauksen tasolla, se on lähellä määritettyä lukua. Tätä parametria käytetään, kun luodaan myyntitilauksia vähittäismyyntitapahtumille, joissa ei ole nimettyä asiakasta. |
+| Myymälän tapahtumien tarkistuksen säikeiden enimmäismäärä | Suosittelemme tämän parametrin arvoksi **4** ja korotusta vain, jos et saavuta hyväksyttävää suorituskykyä. Tämän prosessin käytössä olevien säikeiden määrä ei voi ylittää eräpalvelimen käytettävissä olevien suorittimien määrää. Jos määrität tässä liian monta säiettä, saatat vaikuttaa muihin eräkäsittelyihin. | Tämä parametri ohjaa niiden tapahtumien määrää, jotka voidaan vahvistaa tietyn myymälän osalta samanaikaisesti. |
 
 > [!NOTE]
 > Kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Commerce-parametrit**-sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.

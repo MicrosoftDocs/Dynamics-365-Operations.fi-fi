@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431459"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071441"
 ---
 # <a name="edit-personal-information"></a>Henkilökohtaisten tietojen muokkaaminen
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ Voit muokata myös seuraavia henkilökohtaisia tietoja:
     - Voit lisätä tunnusnumeron valitsemalla **Uusi**. Täytä tarvittavat kentät ja valitse **Tallenna**.
     - Jos haluat muokata numeroa, valitse **Muokkaa**. Muokkaa tarvittavat kentät ja valitse **Tallenna**.
 
-7. Jos haluat muuttaa maksutapoja, valitse **Omat maksutiedot** -välilehti. Tämä välilehti on käytettävissä vain, jos maksutavat ovat käytössä **Henkilöstöhallinnon parametrit** -lomakkeessa. HR voi ottaa käyttöön **pankkiluonnoksen**, **käteisen**, **sekin**, **sähköisen maksamisen** tai **muun**. HR voi myös poistaa käytöstä sähköisen maksun vahvistuksen (käytetään Yhdysvaltain palkanlaskennassa) sekä pankkitilin ja reititysnumeron oikeellisuustarkistuksen.
+7. Jos haluat muuttaa maksutapoja, valitse **Omat maksutiedot** -välilehti. Tämä välilehti on käytettävissä vain, jos maksutavat ovat käytössä **Henkilöstöhallinnon parametrit** -sivulla. HR voi ottaa käyttöön **pankkiluonnoksen**, **käteisen**, **sekin**, **sähköisen maksamisen** tai **muun**. HR voi myös poistaa käytöstä sähköisen maksun vahvistuksen (käytetään Yhdysvaltain palkanlaskennassa) sekä pankkitilin ja reititysnumeron oikeellisuustarkistuksen.
 
 8. Jos haluat vaihtaa henkilöstöhallinnossa näkyvän profiilikuvan, valitse **Kuva**-välilehti. Organisaation asetuksista riippuen kuvat saatetaan reitittää hyväksyttäväksi.
 

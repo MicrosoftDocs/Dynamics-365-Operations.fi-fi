@@ -2,7 +2,7 @@
 title: Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) selitteiden käyttöä monikielisten raporttien suunnittelussa ja luonnissa.
 author: NickSelin
-ms.date: 09/03/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf02e8f90fb83acd8448339f411489851742af18
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e5c6b28dc115719922e418cb7a6156032d994d39
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674426"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074939"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 
@@ -28,9 +28,9 @@ ms.locfileid: "7674426"
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Yrityskäyttäjänä voit käyttää [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehystä määrittämään lähtevien sähköisten asiakirjojen muodot, jotka on luotava eri maiden ja alueiden lakisääteisten vaatimusten mukaan. Kun nämä vaatimukset edellyttävät, että lähtevät asiakirjat luodaan eri kielellä eri maissa tai eri alueilla, voit määrittää yhden ER-[muodon](general-electronic-reporting.md#FormatComponentOutbound), jotka sisältää kieliriippuvaiset resurssit. Tällä tavoin luoda eri kielten tai alueiden lähteviä asiakirjoja käyttämällä muotoa uudelleen. Lisäksi yhdellä ER-muodolla on mahdollista luoda lähtevä asiakirja eri kielellä asiakkaille, toimittajille, tytäryhtiöille tai muille osapuolille.
+Yrityskäyttäjänä voit käyttää [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehystä määrittämään lähtevien sähköisten asiakirjojen muodot, jotka on luotava eri maiden ja alueiden lakisääteisten vaatimusten mukaan. Kun nämä vaatimukset edellyttävät, että lähtevät asiakirjat luodaan eri kielellä eri maissa tai eri alueilla, voit määrittää yhden ER-muodon, jotka sisältää kieliriippuvaiset resurssit. Tällä tavoin luoda eri kielten tai alueiden lähteviä asiakirjoja käyttämällä muotoa uudelleen. Lisäksi yhdellä ER-muodolla on mahdollista luoda lähtevä asiakirja eri kielellä asiakkaille, toimittajille, tytäryhtiöille tai muille osapuolille.
 
-ER-tietomallit ja mallimääritykset voidaan määrittää määritettyjen ER-muotojen tietolähteiksi. Tällä tavoin voidaan määrittää tietovirrat, joilla määritetään luotuihin asiakirjoihin sijoitettavat sovelluksen tiedot. ER-konfiguraation [lähteenä](general-electronic-reporting.md#Provider) voit [julkaista](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) määritettyjä [tietomalleja](general-electronic-reporting.md#data-model-and-model-mapping-components), [mallimäärityksiä](general-electronic-reporting.md#data-model-and-model-mapping-components) ja [muotoja](general-electronic-reporting.md#FormatComponentOutbound) ER-ratkaisun osina, joita käytetään tiettyjen lähtevien asiakirjojen luontiin. Voit myös antaa asiakkaille mahdollisuuden [ladata](general-electronic-reporting-manage-configuration-lifecycle.md) julkaistun ER-ratkaisun, jolloin sitä voidaan käyttää ja mukauttaa. Jos oletat, että asiakkaat puhuvat muita kieliä, voit määrittää ER-osat siten, että niissä on kieliriippuvaisia resursseja. Tällä tavoin muokattavan ER-osan sisältö voidaan ilmaista asiakkaan käyttäjän valitsemalla kielellä suunnitteluvaiheessa.
+ER-tietomallit ja mallimääritykset voidaan määrittää määritettyjen ER-muotojen tietolähteiksi. Tällä tavoin voidaan määrittää tietovirrat, joilla määritetään luotuihin asiakirjoihin sijoitettavat sovelluksen tiedot. ER-konfiguraation [lähteenä](general-electronic-reporting.md#Provider) voit [julkaista](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) määritettyjä [tietomalleja](general-electronic-reporting.md#data-model-and-model-mapping-components), [mallimäärityksiä](general-electronic-reporting.md#data-model-and-model-mapping-components) ja muotoja ER-ratkaisun osina, joita käytetään tiettyjen lähtevien asiakirjojen luontiin. Voit myös antaa asiakkaille mahdollisuuden [ladata](general-electronic-reporting-manage-configuration-lifecycle.md) julkaistun ER-ratkaisun, jolloin sitä voidaan käyttää ja mukauttaa. Jos oletat, että asiakkaat puhuvat muita kieliä, voit määrittää ER-osat siten, että niissä on kieliriippuvaisia resursseja. Tällä tavoin muokattavan ER-osan sisältö voidaan ilmaista asiakkaan käyttäjän valitsemalla kielellä suunnitteluvaiheessa.
 
 Kieliriippuvaiset resurssit voidaan määrittää ER-selitteinä. ER-osat voidaan sitten määrittää kyseisten selitteiden avulla seuraavia tarkoituksia varten:
 
@@ -232,6 +232,19 @@ Kuten aiemmin tässä ohjeaiheessa todettiin, jokaisen [mallin](#LinkModelEnum) 
 ## <a name="performance"></a><a name=performance></a>Suoritustaso
 
 Kun määrität ER-muotokomponentin luomaan raportin ensisijaisella [kielelläsi](#language) tai tuomaan saapuvan asiakirjan, jossa sisältö on jäsennetty ensisijaisella kielelläsi, on suositeltavaa ottaa käyttöön **Tallenna nykyisen käyttäjän ensisijainen kieli ER-suorituksia varten** -ominaisuus [Ominaisuuksienhallinta](../../fin-ops/get-started/feature-management/feature-management-overview.md)-työtilassa. Tämä ominaisuus parantaa suorituskykyä erityisesti sellaisten ER-muotokomponenttien osalta, jotka sisältävät useita viitteitä ER-reseptien ja -sidontojen otsikoihin sekä useita [vahvistus](general-electronic-reporting-formula-designer.md#TestFormula)-sääntöjä käyttäjäsanomien luontia varten ensisijaisella kielelläsi.
+
+Kun vaihdat ER-konfigurointiversion tilan **Luonnos**-versiosta **Valmis**-tilaksi, nämä otsikot tallennetaan sovellustietokantaan, jos konfiguraatioversiossa on ER-otsikot. Tallennusskeema vaihtelee **Nopeuta ER-otsikoiden tallennusta** -ominaisuuden tilan mukaan:
+
+- Jos toimintoa ei ole otettu käyttöön, kaikki otsikot tallennetaan **ERSOLUTIONVERSIONTABLE**-taulun **LABELXML**-kenttään yksittäisenä XML-katkelmana.
+- Jos ominaisuus on käytössä, kullekin kielelle luodaan erillinen tietue **ERSOLUTIONVERSIONLABELSTABLE**-taulussa. Tämän taulun **CONTENTS**-kenttään tallennetaan kielikohtaiset otsikot pakattuna XML-koodina.
+
+Suosittelemme, että otat **Nopeuta ER-otsikoiden tallennusta** -toiminnon käyttöön **ominaisuudenhallinnan** työtilassa. Tämän ominaisuuden avulla voit parantaa kaistanleveyden käyttöä ja järjestelmän yleistä suorituskykyä, koska useimmissa tapauksissa yksittäisen kielen ER-otsikot ovat käytössä, kun käytössä on yksi ER-konfiguraatio.
+
+Jos haluat käyttää valittua tallennusskeemaa kaikkien ER-konfiguraatioiden otsikoiden pitämiseksi nykyisessä Finance-esiintymässä, noudata seuraavia ohjeita.
+
+1. Siirry kohtaan **Organisaation hallinto** > **Kausittaiset** > **Käytä valittua otsikoiden tallennuksen skeemaa kaikille ER-konfiguraatioille**.
+2. Valitse **OK**.
+
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

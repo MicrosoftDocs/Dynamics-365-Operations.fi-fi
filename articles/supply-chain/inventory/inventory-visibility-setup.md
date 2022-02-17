@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952493"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062647"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Varaston näkyvyyden asennus ja määritys
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelman asentamista.
 
-Varaston näkyvyyden apuohjelman asentamiseen on käytettävä Microsoft Dynamics Lifecycle Servicesiä (LCS). LCS on yhteistyöportaali, jonka muodostamassa ympäristössä ja jonka säännöllisesti päivitetyillä palveluilla voi hallita Finance and Operations -sovellusten elinkaarta.
+Varaston näkyvyyden apuohjelman asentamiseen on käytettävä Microsoft Dynamics Lifecycle Servicesiä (LCS). LCS on yhteistyöportaali, jonka muodostamassa ympäristössä ja jonka säännöllisesti päivitetyillä palveluilla voi hallita taloushallinnon ja toimintojen sovellusten elinkaarta.
 
 Lisätietoja on kohdassa [Lifecycle Services -resurssit](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 

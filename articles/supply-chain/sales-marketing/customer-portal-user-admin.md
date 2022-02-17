@@ -12,17 +12,17 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 20751a25a6dedb04806068780bc2f4e381bf79bc
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937450"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062487"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Asiakasportaalin käyttäjien luominen ja hallinta
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Käyttöönottototeutuksessa käyttäjät eivät voi rekisteröityä itse verkkosivustoihin, jotka luodaan asiakasportaalin avulla. Kirjautuminen ja sivuston käyttäminen edellyttää, että järjestelmänvalvoja kutsuu käyttäjät. Microsoft on tarkoituksellisesti torjunut käyttäjien mahdollisuuden rekisteröityä itse.
 
@@ -33,7 +33,7 @@ Kun käyttäjät rekisteröivät itsensä, niiden yhteystiedot luodaan automaatt
 ## <a name="video"></a>Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-[Asiakkaiden kutsuminen rekisteröitymään ja käyttämään asiakasportaalia](https://youtu.be/drGUYHX9QIQ) -video (alla) sisältyy [Finance and Operations -toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on YouTubessa.
+[Asiakkaiden kutsuminen rekisteröitymään ja käyttämään asiakasportaalia](https://youtu.be/drGUYHX9QIQ) -video (alla) sisältyy [Taloushallinnon ja toimintojen toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on YouTubessa.
 
 ## <a name="prerequisite-setup"></a>Vaadittavat asetukset
 

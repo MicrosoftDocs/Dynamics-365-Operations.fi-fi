@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: bff3a6ad74d50e7b706d4df92b17a4a3af36521b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944812"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076985"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Puola) (vanha)
 
@@ -116,7 +116,7 @@ Edellisessä menettelyssä on otettu käyttöön laajennukset, jotka ovat kirjan
 
 ## <a name="design-of-extensions"></a>Laajennusten rakenne
 
-Puolan verotulostimen integrointiesimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md). Lisätietoja kirjanpidon integroinnin ratkaisun rakenteesta on kohdassa [Kirjanpidon integrointiesimerkin rakenteen yleiskatsaus](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Puolan verotulostimen integrointiesimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md). Lisätietoja kirjanpidon integroinnin ratkaisun rakenteesta on kohdassa [Kirjanpidon integrointiesimerkin rakenteen yleiskatsaus](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime -laajennusten rakenne
 
@@ -124,7 +124,7 @@ Veroasiakirjojen palveluntarjoajana toimivan laajennuksen tarkoituksena on luoda
 
 CRT-laajennus on **Runtime.Extensions.DocumentProvider.PosnetSample**. Tämä laajennus luo tulostinkohtaiset JavaScript Object Notation (JSON) -muodossa, joka on määritelty POSNET-määrityksessä 19-3678.
 
-Lisätietoja kirjanpidon integroinnin rakenteesta on kohdassa [Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Lisätietoja kirjanpidon integroinnin rakenteesta on kohdassa [Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden ja palveluiden kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Pyyntökäsittelijä
 

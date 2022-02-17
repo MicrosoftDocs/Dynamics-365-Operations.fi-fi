@@ -2,7 +2,7 @@
 title: Finance Insights -kotisivu
 description: Finance Insights sisältää määritettävät ja laajennettavat mallit, joiden avulla yrityksen kassavirta voidaan ennustaa tarkasti ja älykkäästi silloin, kun selvittämättömien saatavien maksu vastaanotetaan. Se auttaa myös budjetointiprosessia nopeuttavan budjettiesityksen luomisessa. Kaikki nämä ominaisuudet perustuvat älykkäisiin koneoppimismalleihin.
 author: ShivamPandey-msft
-ms.date: 11/15/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: 05b0de8b0104238a33f006234d4a0e8ba9fcdb2a
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968783"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087290"
 ---
 # <a name="finance-insights-home-page"></a>Finance Insightsin aloitussivu
 
@@ -37,10 +37,6 @@ Finance Insights sisältää määritettävät ja laajennettavat ratkaisut, joid
 
 Tässä ohjeaiheessa luetellaan Finance Insightsin käyttövaatimukset. Lisätietolinkit ovat käytettävissä aina, kun se on mahdollista.
 
-### <a name="legal-requirements"></a>Lakisääteiset vaatimukset
-
-Voit hakea esiversio-ohjelman käyttäjäksi täyttämällä [Finance Insightsin esiversio Dynamics 365 Financea varten -sopimuksen](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
-
 ### <a name="system-requirements"></a>Järjestelmävaatimukset
 
 Finance Insightsin esikatselu edellyttää Taso 2 -ympäristön (useita paketteja) käyttämistä. Ympäristöjen taustatietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -48,6 +44,10 @@ Finance Insightsin esikatselu edellyttää Taso 2 -ympäristön (useita pakettej
 ### <a name="version-requirements"></a>Version vaatimukset
 
 Tämä aihe koskee Microsoft Dynamics 365 Financen versiota 10.0.21 ja sitä uudempia versioita.
+
+### <a name="license-requirements"></a>Käyttöoikeusvaatimukset
+
+Finance käyttää AI Builder -pisteitä taloudellisten ennusteiden luomiseen. Kaikki tähän tarvittavat käyttöoikeudet sisältyvät vuokraajan lisenssiin. Jokaiselle Dynamics 365 Finance -vuokraajalle annetaan kuukausittain 20 000 AI Builder -pistettä. Jos liiketoiminnan tarpeiden edellyttämiä lisäpisteitä tarvitaan, ne voidaan ostaa suoraan AI Builderista.
 
 ### <a name="historical-data-requirements"></a>Aiemmat tietovaatimukset
 

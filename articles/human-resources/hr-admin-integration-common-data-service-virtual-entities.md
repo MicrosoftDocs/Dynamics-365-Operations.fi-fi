@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414661"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069143"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Määritä Dataverse-virtuaalitaulukot
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources on Microsoft Dataversen virtuaalinen tietolähde. Se sisältää Dataversen ja Microsoft Power Platformin täydet CRUD (luonti, luku, päivitys ja poisto) -toiminnot. Virtuaalitaulukoiden tietoja ei tallenneta Dataverseen vaan sovelluksen tietokantaan.
 
@@ -119,10 +122,10 @@ Seuraavaksi määritetään virtuaalitaulukon tietolähde Power Apps -ympärist�
 
 4. Valitse **Ratkaisun kunnon keskus** -kohdassa **Erikoishaku**-kuvake sovellussivun oikeassa yläkulmassa.
 
-5. Valitse **Erikoishaku**-sivun avattavassa **Etsi**-luettelossa **Finance and Operations -virtuaalitietolähteen määritykset**.
+5. Valitse **Erikoishaku**-sivun avattavassa **Etsi**-luettelossa **Taloushallinnon ja toimintojen virtuaalitietolähteen määritykset**.
 
    > [!NOTE]
-   > Virtuaalitaulusovelluksen asentaminen edellisestä asennusvaiheesta voi kestää muutaman minuutin. Jos **Finance and Operations -virtuaalitietolähteen määritykset** eivät ole käytettävissä luettelossa, odota minuutti ja päivitä luettelo.
+   > Virtuaalitaulusovelluksen asentaminen edellisestä asennusvaiheesta voi kestää muutaman minuutin. Jos **Taloushallinnon ja toimintojen virtuaalitietolähteen määritykset** eivät ole käytettävissä luettelossa, odota minuutti ja päivitä luettelo.
 
 6. Valitse **Tulokset**.
 

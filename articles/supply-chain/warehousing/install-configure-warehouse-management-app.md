@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901986"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069376"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -143,6 +143,10 @@ Azure AD:n todennuksen avulla mobiililaite voidaan yhdistää turvallisesti Supp
 Varmenteita voidaan käyttää salauskoodeina, joilla voidaan todistaa sovelluksen käyttäjätiedot tunnusta pyydettäessä. Siinä missä varmenteen julkinen osa ladataan sovelluksen rekisteröintiin Azure-portaalissa, koko varmenne on otettava käyttöön jokaisessa laitteessa, johon varastonhallinnan mobiilisovellus on asennettu. Organisaatio vastaa varmenteen hallinnassa esimerkiksi kierron osalta. Itseallekirjoitettujen varmenteiden käyttö on mahdollista, mutta käyttävien varmenteiden on aina oltava ei-vietäviä.
 
 Jokaisessa laitteessa, jossa varastonhallinnan mobiilisovellusta käytetään, on varmistettava, että varmenne on käytettävissä paikallisesti. Lisätietoja varmenteiden hallinnasta Intune-ohjatuissa laitteissa Intunea käytettäessä on kohdassa [Varmenteiden käyttö todennukseen Microsoft Intunessa](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Warehouse Management -mobiilisovelluksen konfiguroiminen pilven ja reunan vaakayksiköitä varten
+
+Warehouse Management -mobiilisovelluksen suorittaminen pilvipalvelun tai reunan skaalausyksiköissä edellyttää joitakin lisävaiheita. Lisätietoja on kohdassa [Määritä Warehouse Management -mobiilisovellus pilvi- ja reunapalvelujen Scale Uniteille](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Sovelluksen määrittäminen tuomalla yhteysasetukset
 
@@ -306,5 +310,6 @@ Jos laite katoaa tai vaarantuu, laitteen Supply Chain Managementin käyttöoikeu
 
 - [Mobiililaitteen käyttäjäasetukset](mobile-device-user-settings.md)
 - [Warehouse Management -mobiilisovelluksen vaihekuvakkeiden ja otsikoiden määrittäminen](step-icons-titles.md)
+- [Warehouse Management -mobiilisovelluksen konfiguroiminen pilven ja reunan vaakayksiköitä varten](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

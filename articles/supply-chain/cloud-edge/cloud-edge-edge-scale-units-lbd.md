@@ -2,7 +2,7 @@
 title: Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
 description: Tässä ohjeaiheessa kerrotaan, paikallisia reunapalvelujen scale uniteja valmistellaan käyttämällä mukautettua laitteistoa ja käyttöönottoa, joka perustuu paikallisiin liiketoimintatietoihin.
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920670"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024539"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
 
@@ -26,6 +26,13 @@ Reunan asteen yksiköillä on tärkeä rooli toimitusketjun hallinnan hajautetus
 Reunapalvelujen scale unitit voidaan ottaa käyttöön luomalla paikallisen yritystiedon (LBD) [paikallinen ympäristö](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) ja määrittämällä se sitten toimimaan scale unitina toimitusketjun hallinnan hajautetussa hybriditopologiassa. Tämä saavutetaan yhdistämällä paikallinen LBD-ympäristö pilvessä toimivaan Supply Chain Management -ympäristöön, joka on määritetty toimimaan keskuksena.  
 
 Tässä aiheessa kuvataan, miten paikallinen LBD-ympäristö määritetään reunapalvelujen scale unitiksi ja yhdistetään sitten keskukseen.
+
+## <a name="infrastructure-considerations"></a>Infrastruktuuriin liittyvät seikat
+
+Reunan vaakayksiköt suoritetaan paikallisissa ympäristöissä, joten infrastruktuurivaatimukset ovat hyvin samanlaiset. Huomaa kuitenkin tiettyjä eroja:
+
+- Reunan skaalausyksiköt eivät käytä Financial Reportingia, joten ne eivät edellytä Financial Reporting -solmuja.
+- Valmistus- ja varastokuormitukset eivät ole tietojenkäsittelyintensiivisiä, joten harkitse AOS-solmujen tietojenkäsittelytehon koon määrittämistä vastaavasti.
 
 ## <a name="deployment-overview"></a>Käyttöönoton yleiskatsaus
 

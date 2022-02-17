@@ -2,7 +2,7 @@
 title: Finance Insightsin määritysongelmien vianmääritys
 description: Tässä on aiheessa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968833"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064863"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insightsin määritysongelmien vianmääritys
 
@@ -92,3 +92,25 @@ Seuraavat vaiheet on suoritettava.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Oire: Virhe: "Ei löytynyt tietoja valitusta suodatinalueesta. Valitse toinen suodatusalue ja yritä uudelleen." 
+
+### <a name="resolution"></a>Ratkaisu
+
+Tarkista tietojen integroijan asetukset ja vahvista, että se toimii odotetulla tavalla, ja lisää (upsert) tiedot AI Builderista takaisin Financeen.  
+Lisätietoja on kohdassa [Tietojen integrointiprojektin luominen](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Oire: Asiakkaan maksujen ennusteen koulutus epäonnistui; AI Builder -virhe: "Ennusteilla tulisi olla vain kaksi erillistä tulosarvoa mallin kouluttamiseen. Määritä kaksi tulosta ja kouluta uudelleen", "Koulutusraportin ongelma: IsNotMinRequiredDistinctNonNullValues".
+
+### <a name="resolution"></a>Ratkaisu
+
+Tämä virhe ilmaisee, että viime vuonna ei ole tarpeeksi historiatapahtumia, jotka kuvaavat jokaista **Ajoissa**-, **Myöhässä**- ja **Erittäin myöhässä** -luokissa kuvattua luokkaa. Voit ratkaista virheen oikaisemalla **Erittäin myöhässä** -tapahtumakauden. Jos **Erittäin myöhässä** -tapahtumakauden oikaiseminen ei korjaa virhettä, **Asiakkaan maksuennusteet** eivät ole paras ratkaisu, koska ne tarvitsevat tietoja kussakin luokassa koulutustarkoituksiin.
+
+Lisätietoja **Ajoissa**-, **Myöhässä**- ja **Erittäin myöhässä** -luokkien oikaisemisesta on kohdassa [Asiakkaan maksuennusteiden ottaminen käyttöön](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Oire: Mallin koulutus epäonnistui
+
+### <a name="resolution"></a>Ratkaisu
+
+**Kassavirtaennuste**-mallin koulutus vaatii tietoja, jotka kattavat yli vuoden ja sisältää yli 100 tapahtumaa. Näiden tapahtumien täytyy vaikuttaa kassavirtaennusteen määritykseen sisältyviin rahatileihin.
+
+**Asiakkaan maksuennusteiden** luominen edellyttää vähintään 100 asiakkaan lasku- ja maksutapahtumaa viimeisen 6-9 kuukauden aikana.  

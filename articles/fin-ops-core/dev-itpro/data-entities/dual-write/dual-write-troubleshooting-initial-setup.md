@@ -9,33 +9,33 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c9bf5d9017579b4207e09769cff38361442e3938
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781437"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061464"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Ongelmien vianmääritys alkumäärityksen aikana
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista Finance and Operations -sovellusten ja Dataversen välillä. Erityisesti se tarjoaa tietoa vianmääritystietoja, joiden avulla voit korjata ongelmat, joita voi ilmetä kaksoiskirjoituksen integroinnin alkuasennuksen aikana.
+
+Tässä ohjeaiheessa on vianetsintätietoja kaksoiskirjoituksen integroinnista taloushallinnon ja toimintojen sovellusten ja Dataversen välillä. Erityisesti se tarjoaa tietoa vianmääritystietoja, joiden avulla voit korjata ongelmat, joita voi ilmetä kaksoiskirjoituksen integroinnin alkuasennuksen aikana.
 
 > [!IMPORTANT]
 > Jotkin tämän ohjeaiheen osoitteet saattavat edellyttää joko järjestelmänvalvojan roolia tai Microsoftin Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tunnistetietoja.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Et voi linkittää Finance and Operations -sovellusta Dataverseen
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Taloushallinnon ja toimintojen sovellusta ei voi linkittää Dataverseen
 
-**Kaksoiskirjoituksen asettamiseen vaadittava rooli:** Järjestelmän ylläpitäjä Finance and Operations -sovelluksissa ja Dataversessä.
+**Kaksoiskirjoituksen asettamiseen vaadittava rooli:** Järjestelmän ylläpitäjä taloushallinnon ja toimintojen sovelluksissa ja Dataversessä.
 
 **Asennuslinkki Dataverseen** -sivulla olevat virheet johtuvat yleensä puutteellisista määritys- tai käyttöoikeusongelmista. Varmista, että koko terveystarkistus siirtyy **Asennuslinkillä Dataverseen**, kuten seuraavasta kuvasta käy ilmi. Kaksoiskirjoittamista ei voi linkittää, ellei koko terveystarkistus ole ohi.
 
 ![Onnistunut kuntotarkistus.](media/health_check.png)
 
-Sinulla on oltava Azure AD -vuokralaisen järjestelmänvalvojan käyttöoikeudet Finance and Operations- ja Dataverse -ympäristöjen linkittämiseen. Kun olet linkittänyt ympäristöt, käyttäjät voivat kirjautua sisään käyttämällä tilinsä tunnistetietoja ja päivittää aiemmin luotua taulujen yhdistämiskarttaa.
+Sinulla on oltava Azure AD -vuokraajan järjestelmänvalvojan käyttöoikeudet taloushallinnon ja toimintojen ympäristön ja Dataverse-ympäristön linkittämiseen. Kun olet linkittänyt ympäristöt, käyttäjät voivat kirjautua sisään käyttämällä tilinsä tunnistetietoja ja päivittää aiemmin luotua taulujen yhdistämiskarttaa.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Kaksoiskirjoittamiseen liittyvien lakitaulujen tai yritysten määrän rajoittaminen
 
@@ -55,7 +55,7 @@ Kaksoiskirjoitus ei tue useita samannimisiä yrityksiä/yhtiöitä. Tämä virhe
 
 Asiakkaan esto poistetaan poistamalla tietueiden kaksoiskappaleet Dataversen **cdm_company**-taulukosta. Jos **cdm_company**-taulukossa on tietueita, joiden nimi on tyhjä, myös nämä tietueet on poistettava tai korjattava.
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Virhe avattaessa kaksoiskirjoitussivua Finance and Operations -sovelluksessa
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Virhe avattaessa kaksoiskirjoitussivua taloushallinnon ja toimintojen sovelluksissa
 
 Seuraava virhesanoma voi avautua, kun Dataverse-ympäristö yritetään linkittää kaksoiskirjoittamista varten:
 
@@ -70,22 +70,22 @@ Tämä virhe tapahtuu, kun sovelluksen suostumusvaihetta ei ole valmis. Hyväksy
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + Anna hyväksyntä valitsemalla **Hyväksy**. Hyväksyntä annetaan sovelluksen (jonka tunnus on `id=33976c19-1db5-4c02-810e-c243db79efde`) asentamiselle vuokraajaan.
-+ Dataverse tarvitsee sovelluksen viestintään Finance and Operations -sovellusten kanssa.
++ Dataverse tarvitsee sovelluksen viestintään taloushallinnon ja toimintojen sovellusten kanssa.
 
     ![Ensimmäisen synkronoinnin määrityksen vianmääritys](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > Jos tämä ei auta, käynnistä URL-osoite Microsoft Edgen yksityisessä tilassa tai Chromen incognito-tilassa.
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>Finance and Operations -ympäristöä ei havaita
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>Taloushallinnon ja toimintojen ympäristö ei ole löydettävissä
 
 Seuraava virhesanoma voi avautua:
 
-*Finance and Operations -sovellusympäristö \*\*\*.cloudax.dynamics.com ei ole löydettävissä.*
+*Taloushallinnon ja toimintojen sovellusympäristö \*\*\*.cloudax.dynamics.com ei ole löydettävissä.*
 
 Kaksi seikkaa voi aiheuttaa ongelman, jos ympäristö ei ole löydettävissä:
 
-+ Kirjautumiseen käytetty käyttäjä ei ole samassa vuokraajassa kuin Finance and Operations -esiintymä.
-+ Joissakin vanhoissa Microsoftin isännöimissä Finance and Operations -esiintymissä oli löydettävyyteen liittyvä ongelma. Ongelma korjataan päivittämällä Finance and Operations -esiintymä. Ympäristöstä tulee löydettävä millä tahansa päivityksellä.
++ Kirjautumiseen käytetty käyttäjä ei ole samassa vuokraajassa kuin taloushallinnon ja toimintojen esiintymä.
++ Joissakin vanhoissa Microsoftin isännöimissä taloushallinnon ja toimintojen esiintymissä oli löydettävyyteen liittyvä ongelma. Ongelma korjataan päivittämällä taloushallinnon ja toimintojen esiintymä. Ympäristöstä tulee löydettävä millä tahansa päivityksellä.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

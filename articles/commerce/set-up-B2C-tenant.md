@@ -2,7 +2,7 @@
 title: B2C-vuokraajan määrittäminen Commercessa
 description: Tässä ohjeaiheessa kerrotaan, miten Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään Dynamics 365 Commercen käyttäjän sivuston todennusta varten.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952441"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092456"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -109,7 +109,7 @@ Luo B2C-sovellus seuraavasti.
 1. Syötä **Uudelleenohjauksen URI** -kenttään erilliset vastaus-URL-osoitteet **Internet**-tyyppisinä. Katso lisätietoja vastauksen URL-osoitteista ja niiden muotoilusta allal olevasta [Vastauksen URL-osoitteet](#reply-urls) -kohdasta. Sinun on syötettävä uudelleenohjauksen URI tai vastauksen URL-osoite, jotta Azure AD B2C -järjestelmän uudelleenohjaus takaisin sivustoon voidaan ottaa käyttöön, kun käyttäjä tekee todennuksen. Vastauksen URL-osoite voidaan lisätä rekisteröintiprosessin aikana, tai sen voi lisätä myöhemmin valitsemalla B2C-sovelluksen **Yhteenveto**-osan **Yhteenveto**-valikosta **Lisää uudelleenohjauksen URI** -linkin.
 1. Jos sinulla on **käyttöoikeudet**, valitse **Myönnä järjestelmänvalvojan hyväksyntä OpenId- ja offline_access-käyttöoikeuksille**.
 1. Valitse **Rekisteröi**.
-1. Valitse juuri luotu sovellus ja siirry **Ohjelmointirajapinnan käyttöoikeudet**-valikkoon. 
+1. Valitse juuri luotu sovellus ja siirry **Todennus**-valikkoon. 
 1. Jos vastauksen URL-osoite on syötetty, ota se käyttöön sovelluksessa valitsemalla **Implisiittinen myöntäminen ja hybridityönkulut** -kohdassa sekä **Käyttöoikeustunnukset** että **Tunnuksen tunnisteet** ja valitse sitten **Tallenna**. Jos vastauksen URL-osoitetta ei ole syötetty rekisteröinnin aikana, voit lisätä sen myös tälle sivulle valitsemalla **Lisää ympäristö**, valitsemalla **Verkko** ja syöttämällä sitten sovelluksen uudelleenohjauksen URI-osoitteen. Tämän jälkeen voit **Implisiittinen myöntäminen ja hybridityönkulut** -kohdassa valita sekä **Käyttöoikeustunnukset** että **Tunnuksen tunnisteet** -vaihtoehdot.
 1. Siirry Azure-portaalin **Yhteenveto**-valikkoon ja kopioi **Sovelluksen (asiakasohjelman) tunnus**. Huomaa, että tämä tunnus tarvitaan myöhemmissä määritysvaiheissa (viitataan myöhemmin nimellä **Asiakasohjelman GUID**).
 
@@ -309,19 +309,15 @@ Kun Azure AD B2C -vuokraajan määrittäminen on tehty, B2C-vuokraaja on määri
 
 Voit kerätä tarvittavat sovellustiedot seuraavasti.
 
-1. Siirry Azure-portaalissa kohtaan **Aloitus \> Azure AD B2C - sovellukset**.
-1. Valitse sovellus ja valitse sitten vasemmanpuoleisesta navigointiruudusta **Ominaisuudet**, jos haluat hakea sovelluksen tiedot.
-1. Kerää **Sovelluksen tunnus** -ruudusta B2C-sovelluksen tunnus, jonka B2C-vuokraaja loi. Tämä syötetään myöhemmin **Asiakasohjelman GUID** -arvona sivuston luontiohjelmaan.
-1. Kerää **Vastauksen URL-osoite** -kohdasta vastauksen URL-osoite.
-1. Siirry kohtaan **Aloitus \> Azure AD B2C – käyttäjän työnkulut (käytännöt)** ja kerää sitten kunkin käyttäjän työnkulkukäytännön nimet.
+1. Siirry Azure-portaalissa kohtaan **Aloitus \> Azure AD B2C - sovellusrekisteröinnit**.
+1. Valitse sovellus ja valitse sitten vasemmanpuoleisesta navigointiruudusta **Yleiskatsaus**, jos haluat hakea sovelluksen tiedot.
+1. Kerää **Sovelluksen (asiakasohjelman) tunnus** -viitteestä B2C-sovelluksen tunnus, jonka B2C-vuokraaja loi. Tämä syötetään myöhemmin **Asiakasohjelman GUID** -arvona sivuston luontiohjelmaan.
+1. Valitse **Uudelleenohjaa URI-osoitteet** ja kerää sivustolle näytetty vastauksen URL-osoite (määrityksen yhteydessä kirjoitettu vastauksen URL-osoite).
+1. Siirry kohtaan **Aloitus \> Azure AD B2C – käyttäjän työnkulut** ja kerää sitten kunkin käyttäjän työnkulkukäytännön koko nimet.
 
-Seuraavassa kuvassa on esimerkki **Azure AD B2C - sovellukset** -sivusta.
+Seuraavassa kuvassa on esimerkki **Azure AD B2C - sovellusrekisteröinnit** -yleiskuvaussivusta.
 
-![Siirtyminen vuokraajan B2C-sovellukseen.](./media/B2CImage_19.png)
-
-Seuraavassa kuvassa on esimerkki sovelluksen **Ominaisuudet** -sivusta Azure AD B2C -ratkaisussa. 
-
-![Sovelluksen tunnuksen kopioiminen B2C-sovelluksen ominaisuuksista.](./media/B2CImage_21.png)
+![Azure AD B2C - sovellusrekisteröinnit -yhteenvetosivu, jossa sovelluksen (asiakkaan) tunnus on korostettuna](./media/ClientGUID_Application_AzurePortal.png)
 
 Seuraavassa kuvassa on esimerkki käyttäjän työnkulkukäytännöistä **Azure AD B2C – käyttäjän työnkulut (käytännöt)** -sivulla.
 

@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 413143afb578aed29ce0836aaa3ac98ffc0c6cc3
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484093"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071487"
 ---
 # <a name="process-compensation"></a>Kompensaation käsittely
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,10 +44,10 @@ Kun prosessitapahtuman parametrit on tallennettu, voit valita tähän prosessiaj
 
 Lisää kompensaatiosuunnitelma prosessitapahtumaan napsauttamalla **Lisää**-painiketta **Suunnitelmat**-välilehdessä. **Käytä muuta suorituskykykerrointa**-, **Suorituskykykerroin**- ja **Suorituskykykertoimen kuvaus** -sarakkeita käytetään vain muuttuvan kompensaation suunnitelmissa, eikä niitä käsitellä tässä blogikirjoituksessa.
 
-Tallenna tietue ja lisää sitten valitun suunnitelman kiinteän kompensaation toiminnot napsauttamalla **Lisää**-painiketta **Toiminnot**-välilehdessä. Käytä **Ota suositus käyttöön** -vaihtoehtoa, jos haluat antaa toiminnon lasketusta ohjekorotuksesta poikkeavan summan. Jos haluat laskea toiminnon, joka perustuu edellisen toiminnon tulokseen, linkittääksesi useita kompensaatiotoimintoja, merkitse **Käytä edellistä tulosta** -vaihtoehto. Kiinteän kompensaation toiminnot ovat kompensaatiologiikan tyyppejä, joille voit antaa kuvailevia nimiä. Palkkaluokka- ja Kompensaatioluokka-suunnitelmissa voit lisätä vain seuraavan tyyppisiä kiinteän kompensaation toimintoja:
+Tallenna tietue ja lisää sitten valitun suunnitelman kiinteän kompensaation toiminnot napsauttamalla **Lisää**-painiketta **Toiminnot**-välilehdessä. Käytä **Ota suositus käyttöön** -vaihtoehtoa, jos haluat antaa toiminnon lasketusta ohjekorotuksesta poikkeavan summan. Jos haluat laskea toiminnon, joka perustuu edellisen toiminnon tulokseen, linkittääksesi useita kompensaatiotoimintoja, merkitse **Käytä edellistä tulosta** -vaihtoehto. Kiinteän kompensaation toiminnot ovat kompensaatiologiikan tyyppejä, joille voit antaa kuvailevia nimiä. **Palkkaluokka**- ja **Kompensaatioluokka**-suunnitelmissa voit lisätä vain seuraavan tyyppisiä kiinteän kompensaation toimintoja:
 
-| Kiinteän kompensaation toiminnon tyyppi | Toiminnallisuus                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kiinteän kompensaation toiminnon tyyppi | Toiminnallisuus                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Oma pääoma                        | Oman pääoman toiminnoissa työntekijän palkkatasoa jakson päättymispäivänä verrataan työntekijän työhön liittyvän tason alhaisimpaan vertailukohtaan. Jos työntekijän palkkio on pienempi kuin pienin vertailukohta, korotus lasketaan niin, että työntekijän palkka nousisi alueen vähimmäistasolle.                                                                                |
 | Ansio                         | Pätevyyteen liittyvissä toiminnoissa korotus lasketaan työntekijän jakson päättymispäivän palkkion sekä työntekijän osaston, ammattiliiton tai toimipaikan kiinteässä lisäysbudjetissa olevan korotusprosentin perusteella.                                                                                                                                                                                         |
 | Yleiset                       | Yleisissä toiminnoissa korostus lasketaan koko prosentin perusteella tai työntekijälle annetaan kiinteä summa. Tämä määritetään **Yleiset**-välilehden **Kiinteä kompensaatio** -asetusten perusteella.                                                                                                                                                                                                                        |
@@ -53,12 +56,12 @@ Tallenna tietue ja lisää sitten valitun suunnitelman kiinteän kompensaation t
 
 Voit lisätä vain niitä **Kiinteä kompensaatio** -toimintoja, joissa on vaiheittainen suunnitelmatyyppi.
 
-| Kiinteän kompensaation toiminnon tyyppi | Toiminnallisuus                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kiinteän kompensaation toiminnon tyyppi | Toiminnallisuus                |
+|--------------------------------|------------------------------|
 | Vaihe                           | Ilmoita **Yleiset**-välilehdessä, siirtääkö tämä vaihetoiminto työntekijää eteenpäin 0 vaihetta, 1 vaiheen vai 2 vaihetta.                                                                                  |
 |                                | **0 vaihetta** – työntekijä saa palkkion nykyisen vaiheensa mukaan.                                                                                                                      |
 |                                | **1 vaihe**– järjestelmä tarkistaa, onko työntekijä jo oman tasonsa viimeisessä viitepisteessä.                                                                                             |
-|                                | **2 vaihetta** – järjestelmä siirtää työntekijän kaksi vaihetta eteenpäin nykyisellä tasolla. Järjestelmä voi siirtää työntekijän vain yhden vaiheen tai nolla vaihetta, jos he pääsevät tasonsa viimeiseen viitepisteeseen. |
+|                                | **2 vaihetta** – työntekijä siirtyy kaksi vaihetta eteenpäin nykyisellä tasolla. Työntekijä voi siirtyä vain yhden vaiheen tai nolla vaihetta, jos he pääsevät tasonsa viimeiseen viitepisteeseen. |
 
 ## <a name="run-the-compensation-process"></a>Suorita kompensaatioprosessi
 Kun prosessitapahtumaan on määritetty tarvittavat päivämääräkentät, suunnitelmat ja toiminnot, napsauta **Suorita prosessi** **Prosessitapahtuma**-sivulla. Sen jälkeen avautuu **Suorita kompensaatioprosessin tapahtumat** -valintaikkuna. Napsauta **Näytä käsittelyn tulokset** -vaihtoehto, niin näet, miten kompensaation summat on laskettu kullekin työntekijälle. Kun valitset **OK**, kaikkien valitussa kompensaatiosuunnitelmassa jakson päättymispäivänä olevien työntekijöiden kompensaatioprosessi suoritetaan.

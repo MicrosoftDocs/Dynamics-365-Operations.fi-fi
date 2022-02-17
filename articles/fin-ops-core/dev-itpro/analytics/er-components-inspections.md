@@ -2,7 +2,7 @@
 title: Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 description: Tässä aiheessa selitetään, miten määritetyt Sähköisen raportoinnin (ER) komponentit voidaan tarkistaa mahdollisten suorituksen aikaisten ongelmien välttämiseksi.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488111"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074788"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 
 [!include[banner](../includes/banner.md)]
 
-Jokainen määritetty [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [muoto-](general-electronic-reporting.md#FormatComponentOutbound) ja [mallin yhdistämismääritys -](general-electronic-reporting.md#data-model-and-model-mapping-components) komponentti voidaan [oikeellisuustarkistaa](er-fillable-excel.md#validate-an-er-format) suunnittelun aikana. Tämän oikeellisuustarkistuksen aikana suoritettava yhdenmukaisuustarkistus auttaa estämään suorituksen aikaisia ongelmia, kuten suoritusvirheitä ja suorituskyvyn heikentymistä. Tarkistus ilmoittaa jokaiselle löydetylle ongelmalle ongelmallisen elementin polun. Automaattista korjausta voidaan käyttää joihinkin ongelmiin.
+Jokainen määritetty [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [muoto-](er-overview-components.md#format-components-for-outgoing-electronic-documents) ja [mallin yhdistämismääritys -](er-overview-components.md#model-mapping-component) komponentti voidaan [oikeellisuustarkistaa](er-fillable-excel.md#validate-an-er-format) suunnittelun aikana. Tämän oikeellisuustarkistuksen aikana suoritettava yhdenmukaisuustarkistus auttaa estämään suorituksen aikaisia ongelmia, kuten suoritusvirheitä ja suorituskyvyn heikentymistä. Tarkistus ilmoittaa jokaiselle löydetylle ongelmalle ongelmallisen elementin polun. Automaattista korjausta voidaan käyttää joihinkin ongelmiin.
 
 Oletusarvon mukaan oikeellisuustarkistusta käytetään seuraavissa tapauksissa automaattisesti ER-kokoonpanossa, joka sisältää aiemmin mainitut ER-komponentit:
 
@@ -236,6 +236,15 @@ Seuraavassa taulukossa on yhteenveto ER:n tarjoamista tarkistuksista. Lisätieto
 <td>Virhe</td>
 <td>Enemmän kuin kaksi aluekomponenttia ilman replikointia. Poista tarpeettomat komponentit.</td>
 </tr>
+<tr>
+<td><a href='#i18'>ORDERBY-funktion sisältävän lausekkeen suoritettavuus</a></td>
+<td>Suoritettavuus</td>
+<td>Virhe</td>
+<td>
+<p>ORDERBY-toiminnon luettelolausekkeesta ei voi tehdä kyselyjä.</p>
+<p><b>Suorituksenaikainen virhe:</b> Lajittelua ei tueta. Vahvista määritykset saadaksesi tästä lisätietoja.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -365,7 +374,7 @@ Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 8. Anna uudelle sisäkkäiselle kentälle nimeksi **$AccNumber** ja määritä se sisältämään lauseke `TRIM(Vendor.AccountNum)`.
 9. Valitse **Oikeellisuustarkistus** tarkastellaksesi muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmista, että `FILTER(Vendor, Vendor.AccountNum="US-101")`-lauseke **Vendor**-tietolähteessä on kyseltävissä.
 
-    ![Lausekkeen kyseltävyyden tarkistaminen Mallin yhdistämismäärityksen suunnittelija -sivulla.](./media/er-components-inspections-04.gif)
+    ![FILTER-funktion sisältävän lausekkeen kyseltävyyden tarkistaminen Mallin yhdistämismäärityksen suunnittelija -sivulla.](./media/er-components-inspections-04.gif)
 
 10. Huomaa, että oikeellisuustarkistus virhe ilmenee, koska **Vendor**-tietolähde sisältää sisäkkäisen kentän tyyppiä **Laskettu kenttä**, joka ei salli **FilteredVendor**-tietolähteen lausekkeen kääntämistä suoraksi SQL-lausekkeeksi.
 
@@ -671,19 +680,19 @@ Seuraavassa kuvassa näkyy suorituksenaikainen virhe, joka ilmenee, jos ohitat v
 
 ![Suorituksenaikainen virhe joka ilmenee, kun Muodon suunnittelija -sivulla suoritetaan muodon yhdistämismääritykset.](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution&quot;></a>Automaattinen ratkaisu
+### <a name="automatic-resolution"></a>Automaattinen ratkaisu
 
 Tätä ongelmaa ei voi korjata automaattisesti.
 
-### <a name=&quot;manual-resolution&quot;></a>Manuaalinen ratkaisu
+### <a name="manual-resolution"></a>Manuaalinen ratkaisu
 
-#### <a name=&quot;option-1&quot;></a>Asetus 1
+#### <a name="option-1"></a>Asetus 1
 
 Poista **Välimuisti**-merkintä **Vendor**-tietolähteestä. Tietolähde **FilteredVendor** muuttuu silloin suorituskelpoiseksi, mutta tietolähdettä **Vendor** , johon viitataan taulussa VendTable table käytetään joka kerta, kun tietolähdettä **FilteredVendor** kutsutaan.
 
-#### <a name=&quot;option-2&quot;></a>Asetus 2
+#### <a name="option-2"></a>Asetus 2
 
-Muuta tietolähteen **FilteredVendor** lauseke arvosta `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` arvoksi `WHERE(Vendor, Vendor.AccountNum="US-101")`. Tässä tapauksessa tietolähdettä **Vendor**, johon viitataan VendTable-taulussa, käytetään ainoastaan, kun tietolähdettä **Vendor** kutsutaan ensimmäisen kerran. Tietueiden valinta tapahtuu kuitenkin muistissa. Näin ollen tämä lähestymistapa voi heikentää suorituskykyä.
+Muuta tietolähteen **FilteredVendor** lauseke arvosta `FILTER(Vendor, Vendor.AccountNum="US-101")` arvoksi `WHERE(Vendor, Vendor.AccountNum="US-101")`. Tässä tapauksessa tietolähdettä **Vendor**, johon viitataan VendTable-taulussa, käytetään ainoastaan, kun tietolähdettä **Vendor** kutsutaan ensimmäisen kerran. Tietueiden valinta tapahtuu kuitenkin muistissa. Näin ollen tämä lähestymistapa voi heikentää suorituskykyä.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Puuttuva sidonta
 
@@ -892,6 +901,47 @@ Tätä ongelmaa ei voi korjata automaattisesti.
 #### <a name="option-1"></a>Asetus 1
 
 Muokkaa määritettyä muotoa vaihtamalla **Replikointisuunta**-ominaisuus kaikille epäyhtenäisille **Excel\\Alue** -komponenteille.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>ORDERBY-funktion sisältävän lausekkeen suoritettavuus
+
+Sisäinen [ORDERBY](er-functions-list-orderby.md) -ER-toiminto lajittelee toiminnon argumenttina määritetyn **[tietueluettelo](er-formula-supported-data-types-composite.md#record-list)** tyypin ER-tietolähteen tietueet.
+
+`ORDERBY`-funktion argumentit voidaan [määrittää](er-functions-list-orderby.md#syntax-2) sovelluksen taulujen, näkymien tai tietoentiteettien tietueiden lajitteluun sijoittamalla yksittäinen tietokantakutsu hakemaan lajiteltu tieto tietueluettelona. Tietolähdettä, jonka tyyppi on **Tietueluettelo**, käytetään funktion argumenttina, ja se määrittää sovelluslähteen kutsulle.
+
+ER tarkistaa, voidaanko suora tietokantakysely määrittää tietolähteelle, johon viitataan `ORDERBY`-funktiossa. Jos suoraa kyselyä ei voi määrittää, ER-mallin yhdistämismäärityksen suunnittelijassa ilmenee oikeellisuustarkistusvirhe. Näyttöön tulee sanoma, jonka mukaan toiminnon sisältävä ER `ORDERBY` -funktio ei voi toimia suorituksen aikana.
+
+Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
+
+1. Aloita ER-mallin yhdistämismäärityskomponentin määrittäminen.
+2. Lisää tietolähde, jonka tietotyyppi on **Dynamics 365 for Operations \\ -taulutietueet**.
+3. Anna uudelle tietolähteelle nimeksi **Vendor**. Valitse **Taulu**-kentässä **VendTable** määrittämään, että tämä tietolähde pyytää **VendTable**-taulua.
+4. Lisää tietolähde, jonka tietotyyppi on **Laskettu kenttä**.
+5. Anna uudelle tietolähteelle nimeksi **OrderedVendors** ja määritä se sisältämään lauseke `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+ 
+    ![Tietolähteiden määrittäminen Mallin yhdistämismäärityksen suunnittelija -sivulla.](./media/er-components-inspections-18-1.png)
+
+6. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmistaa, että lauseke **OrderedVendors**-tietolähteessä on kyseltävissä.
+7. Muokkaa **Vendor**-tietolähdettä lisäämällä sisäkkäinen kenttä, jonka tyyppi on **Laskettu kenttä** saadaksesi lyhennetyn toimittajan tilin numeron.
+8. Anna uudelle sisäkkäiselle kentälle nimeksi **$AccNumber** ja määritä se sisältämään lauseke `TRIM(Vendor.AccountNum)`.
+9. Valitsemalla **Oikeellisuustarkistus** voidaan tarkastella muokattavaa mallin yhdistämismäärityskomponenttia **Mallin yhdistämismäärityksen suunnittelija** -sivulla ja varmistaa, että lauseke **Vendor**-tietolähteessä on kyseltävissä.
+
+    ![Vendor-tietolähteen lausekkeen kyseltävyyden tarkistaminen Mallin yhdistämismäärityksen suunnittelija -sivulla.](./media/er-components-inspections-18-2.png)
+
+10. Huomaa, että oikeellisuustarkistus virhe ilmenee, koska **Vendor**-tietolähde sisältää sisäkkäisen kentän tyyppiä **Laskettu kenttä**, joka ei salli **OrderedVendors**-tietolähteen lausekkeen kääntämistä suoraksi tietokantalausekkeeksi. Sama virhe tapahtuu ajon aikana, jos ohitat oikeellisuustarkistusvirheen ja suoritat tämän mallin määrityksen valitsemalla **Suorita**.
+
+### <a name="automatic-resolution"></a>Automaattinen ratkaisu
+
+Tätä ongelmaa ei voi korjata automaattisesti.
+
+### <a name="manual-resolution"></a>Manuaalinen ratkaisu
+
+#### <a name="option-1"></a>Asetus 1
+
+Sen sijaan, että lisättäisiin sisäkkäinen kenttä, jonka tyyppi on **Laskettu kenttä** tietolähteeseen **Vendor**, lisää sisäkkäinen kenttä **$AccNumber** tietolähteeseen **FilteredVendors** ja määritä kenttä sisältämään lauseke `TRIM(FilteredVendor.AccountNum)`. Näin `ORDERBY("Query", Vendor, Vendor.AccountNum)`-lauseke voidaan suorittaa tietokantatasolla ja laskea sisäkkäinen kenttä **$AccNumber** jälkeenpäin.
+
+#### <a name="option-2"></a>Asetus 2
+
+Muuta tietolähteen **FilteredVendors** lauseke arvosta `ORDERBY("Query", Vendor, Vendor.AccountNum)` arvoksi `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Emme suosittele sellaisen taulukon lausekkeen muuttamista, jossa on suuri tietomäärä (tapahtumataulu), koska kaikki tiedot haetaan ja tarvittavien tietojen järjestäminen tehdään muistissa. Näin ollen tämä lähestymistapa voi heikentää suorituskykyä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

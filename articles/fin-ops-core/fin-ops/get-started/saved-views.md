@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: d6a7b1b21816db43a92364584e15ec04b891c611
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487838"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065703"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="introduction"></a>Johdanto
 
@@ -212,7 +215,7 @@ Lisätietoja tunnetuista ongelmista ja tallennetuista näkymistä on kohdassa [T
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Miten voin ottaa tallennetut näkymät käyttöön omassa ympäristössäni?
 
 > [!NOTE]
-> **Tallennetut näkymät** -toiminto edellyttää, että mukautusjärjestelmä Finance and Operationsissa otetaan käyttöön. Jos mukauttaminen on poistettu käytöstä koko ympäristössä, näkymät poistetaan käytöstä, vaikka noudattaisit alla mainittuja vaiheita. 
+> **Tallennetut näkymät** -toiminto edellyttää, että mukautusjärjestelmä taloushallinnossa ja toiminnoissa otetaan käyttöön. Jos mukauttaminen on poistettu käytöstä koko ympäristössä, näkymät poistetaan käytöstä, vaikka noudattaisit alla mainittuja vaiheita. 
 
 **Tallennetut näkymät** -toiminto voidaan ottaa käyttöön ja poistaa käytöstä ominaisuuksien hallinnassa kaikissa ympäristöissä. Kun toiminto on otettu käyttöön, tallennetut näkyvät ovat käytössä kaikissa seuraavissa käyttäjäistunnoissa.
 

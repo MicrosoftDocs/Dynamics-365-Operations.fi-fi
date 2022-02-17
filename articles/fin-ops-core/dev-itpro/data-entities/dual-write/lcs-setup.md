@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 1fd15b5d664fead10949750678a2d3eab967af22
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781389"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063669"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tässä aiheessa käsitellään kaksoiskirjoitusyhteyden käyttöön ottamista Microsoft Dynamics Lifecycle Servicesistä (LCS).
 
@@ -53,18 +53,18 @@ Noudattamalla näitä ohjeita voit määrittää kaksoiskirjoituksen LCS-**ympä
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Yhdistä Power Platform -ympäristöön.":::
 
-8. Kun yhdistäminen on valmis, hyperlinkki tulee näkyviin. Linkin avulla voit kirjautua sisään kaksoiskirjoitusalueelle Finance and Operations -ympäristössä. Siellä voit tehdä entiteettien yhdistämismäärityksiä.
+8. Kun yhdistäminen on valmis, hyperlinkki tulee näkyviin. Linkin avulla voit kirjautua sisään kaksoiskirjoitusalueelle taloushallinnon ja toimintojen ympäristössä. Siellä voit tehdä entiteettien yhdistämismäärityksiä.
 
 ## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Määritä kaksoiskirjoitus olemassa olevalle Dataverse-ympäristölle
 
 Määrittääksesi kaksoiskirjoituksen aiemmin luotuun Dataverse-ympäristöön, sinun tulee luoda Microsoft [tukipyyntö](../../lifecycle-services/lcs-support.md). Pyynnössä on oltava seuraavat tiedot:
 
-+ Finance and Operations -ympäristösi tunnus.
++ Taloushallinnon ja toimintojen ympäristön tunnus.
 + Lifecycle Services -ympäristösi nimi.
 + Dataverse-organisaatiotunnus tai Power Platform -ympäristötunnus Power Platform -hallintakeskuksesta. Pyydä tukipyynnössäsi, että esiintymän tunnusta voi käyttää Power Platform -integroinnissa.
 
 > [!NOTE]
-> Et voi poistaa ympäristöjen välistä linkitystä LCS-sovelluksen avulla. Jos haluat poistaa linkityksen, avaa **Tietojen integrointi** -työtila Finance and Operations -ympäristössä ja valitse sitten **Poista linkitys**.
+> Et voi poistaa ympäristöjen välistä linkitystä LCS-sovelluksen avulla. Jos haluat poistaa linkityksen, avaa **Tietojen integrointi** -työtila taloushallinnon ja toimintojen ympäristössä ja valitse sitten **Poista linkitys**.
 
 ## <a name="linking-mismatch"></a>Linkitysristiriita
 

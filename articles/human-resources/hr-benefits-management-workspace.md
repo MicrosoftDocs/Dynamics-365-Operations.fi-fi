@@ -2,7 +2,7 @@
 title: Etujen hallinnan työtila
 description: Tässä aiheessa kuvataan Dynamics 365 Human Resources -sovellukseen sisältyvä etujen hallinnan työtila.
 author: twheeloc
-ms.date: 09/21/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: 424f4a2098e05b4f7dc6fa84df133dda81cc59f0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512471"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071461"
 ---
 # <a name="benefits-management-workspace"></a>Etujen hallinnan työtila
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 
@@ -94,7 +97,7 @@ Jos haluat tarkastella etuja toiselta ajanjaksolta, valitse se avattavassa **Kau
 Voit tarkastella toimintonimikkeitä valitsemalla joko ruudun tai välilehden. Jos valitset välilehden, voit tarkastella ja valita työntekijöitä suoraan työtilan sivulta.
 **Avaa rekisteröinti** -välilehdellä on avoimen rekisteröintiprosessin tunnuslukuja, 
 
-Avointa rekisteröintiä koskevat tiedot ovat näkyvissä 30 päivää ennen **rekisteröitymisen alkamispäivämäärää**. Se määritetään **Kaudet**-määrityksissä valitsemalla ensin **Etujen hallinta** > **Linkit** > **Kaudet** ja sitten **Rekisteröitymisen alkamispäivämäärä** -kenttä.  Tämä asetus voidaan muuttaa valitsemalla **Human Resourcesin jaetut parametrit** > **Etujen hallinta** > **Avaa rekisteröitymisvaihtoehdot** ja päivittämällä **Määrä**-kenttä.  
+Avointa rekisteröintiä koskevat tiedot ovat näkyvissä 30 päivää ennen **rekisteröitymisen alkamispäivämäärää**. Se määritetään **Kaudet**-määrityksissä valitsemalla ensin **Etujen hallinta** > **Linkit** > **Kaudet** ja sitten **Rekisteröitymisen alkamispäivämäärä** -kenttä.  Tämä asetus voidaan muuttaa valitsemalla **Henkilöstöhallinnon jaetut parametrit** > **Etujen hallinta** > **Avaa rekisteröitymisvaihtoehdot** ja päivittämällä **Määrä**-kenttä.  
 
 **Avaa rekisteröinti** -välilehdessä on seuraavat tiedot:
  - Työntekijät, jotka eivät ole aloittaneet avointa rekisteröintiprosessia

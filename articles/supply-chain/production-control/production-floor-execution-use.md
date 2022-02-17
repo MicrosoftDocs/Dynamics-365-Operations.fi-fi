@@ -2,7 +2,7 @@
 title: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 description: Tässä ohjeaiheessa käsitellään tuotannon käyttöliittymää työntekijän näkökulmasta.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920645"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075016"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -138,6 +138,65 @@ Tällöin työntekijä voi määrittää raportoitavan oheistuotteen ja määrä
 Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida hävikin valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Hävikin raportointi**. Tämän jälkeen työntekijä antaa **Hävikin raportointi** -valintaikkunassa hävikin määrän numeronäppäimistöllä. Työntekijä valitsee myös syyn (*Ei yhtään*, *Kone*, *Käyttäjä* tai *Materiaali*).
 
 ![Hävikin raportointi -valintaikkuna.](media/pfei-report-scrap-dialog.png "Hävikin raportointi -valintaikkuna")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Materiaalikulutuksen oikaiseminen ja materiaalivarausten tekeminen
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Työntekijät voivat säätää kunkin tuotantotyön materiaalikulutusta. Tätä toimintoa käytetään tilanteissa, joissa tuotantotyössä kulutetun materiaalien todellinen määrä on suurempi tai pienempi kuin suunniteltu määrä. Siksi varastotasot on muutettava niin, että ne ovat ajan tasalla.
+
+Työntekijät voivat myös tehdä varauksia materiaalien erä- ja sarjanumeroista. Tätä toimintoa käytetään tilanteissa, joissa työntekijän on määritettävä manuaalisesti, mitä materiaalin erä- tai sarjanumeroita kulutettiin, täyttääkseen materiaaliin liittyvät jäljitysvaatimukset.
+
+Työntekijät voivat määrittää oikaistavat määrän valitsemalla **Oikaise materiaali**. Tämä painike on käytettävissä seuraavissa sijainneissa:
+
+- **Hävikin raportointi** -valintaikkunassa
+- **Edistymisen raportointi** -valintaikkunassa
+- Oikealla työkalurivissä
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Materiaalikulutuksen oikaiseminen Hävikin raportointi- ja Raportointi on meneillään -valintaikkunoissa
+
+Kun työntekijä on syöttänyt määrän raporttiin **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa, **Materiaalin oikaiseminen** -painike on käytettävissä. Kun käyttäjä valitsee tämän painikkeen, näyttöön tulee **Materiaalin oikaiseminen** -valintaikkuna. Tässä valintaikkunassa luetellaan nimikkeet, jotka on suunniteltu kulutettavaksi, kun työn hyvä määrä tai hävikkimäärä raportoidaan.
+
+Valintaikkunan luettelossa on seuraavat tiedot:
+
+- **Tuotenumero** – Päätuote ja tuotevariantti.
+- **Tuotteen nimi** – Tuotteen nimi.
+- **Ehdotus** – Arvioitu materiaalimäärä, joka kulutetaan, kun työn määritetyn määrän edistyminen tai hävikki ilmoitetaan.
+- **Kulutus** – Todellinen materiaalimäärä, joka kulutetaan, kun työn määritetyn määrän edistyminen tai hävikki ilmoitetaan.
+- **Varattu** – Materiaalimäärä, joka on fyysisesti varattu varastossa.
+- **Yksikkö** – Tuoterakenteen (BOM) yksikkö.
+
+Valintaikkunan oikeassa reunassa näkyy seuraavat tiedot:
+
+- **Tuotenumero** – Päätuote ja tuotevariantti.
+- **Arvioitu** – Arvioitu kulutettava määrä.
+- **Aloitettu** – Tuotantotyön aloitettu määrä.
+- **Jäljelle jäävä määrä** – Arvioidusta määrästä se määrä, joka on vielä kulutettava.
+- **Vapautettu määrä** – Määrä, joka on kulutettu.
+
+Voidaan tehdä seuraavia toimenpiteitä:
+
+- Työntekijä voi määrittää materiaalin oikaistavat määrän valitsemalla **Oikaise kulutus**. Kun määrä on vahvistettu, **Kulutus**-sarakkeen määrä päivitetään oikaistulla määrällä.
+- Kun työntekijä valitsee **Materiaalin oikaiseminen**, tuotannon keräysluettelon kirjauskansio luodaan. Tämä kirjauskansio sisältää samat nimikkeet ja määrät kuin **Oikaise materiaali** -luettelo.
+- Kun työntekijä muuttaa määrää **Oikaise materiaali** -valintaikkunassa, vastaavan kirjauskansiorivin **Ehdotus**-kenttään päivitetään sama määrä. Jos työntekijä valitsee **Oikaise materiaali** -valintaikkunassa **Peruuta**, keräysluettelo poistetaan.
+- Jos työntekijä valitsee **OK**, keräysluetteloa ei poisteta. Se kirjataan, kun työ raportoidaan **Hävikin raportointi**- tai **Edistymisen raportointi**-valintaikkunassa.
+- Jos työntekijä valitsee **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa **Peruuta**, keräysluettelo poistetaan.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Materiaalin säätäminen oikealla olevan työkalurivin avulla
+
+**Materiaalin säätäminen** -painike voidaan konfiguroida niin, että se näkyy työkalurivillä oikeassa reunassa. (Lisätietoja on kohdassa [Suunnittele tuotantotilan suorituksen liittymä](production-floor-execution-tabs.md).) Työntekijä voi valita käynnissä olevaa tuotantotyötä varten **materiaalin oikaisemisen**. Tässä tapauksessa näyttöön tulee **Materiaalin oikaiseminen** -valintaikkuna, jossa työntekijä voi tehdä haluamansa muutokset. Kun valintaikkuna avataan, tuotantotilausta varten luodaan oikaistuja määriä sisältävien rivien tuotannon keräysluettelo. Jos työntekijä valitsee **Kirjaa nyt**, oikaisu vahvistetaan ja keräysluettelo kirjataan. Jos työntekijä valitsee **Peruuta**, keräysluettelo poistetaan eikä oikaisua tehdä.
+
+### <a name="reserve-materials"></a>Varaa materiaalit
+
+**Materiaalien oikaiseminen** -valintaikkunassa työntekijä voi tehdä ja oikaista materiaalivarauksia valitsemalla **Varaa materiaali**. Näyttöön tulevassa **Varaa materiaali** -valintaikkunassa näkyy nimikkeen fyysisesti saatavilla oleva varasto kutakin varasto- ja seurantadimensiota varten.
+
+Jos materiaali on otettu käyttöön lisävarastoprosesseissa, luettelossa näkyy vain tuotannon syötteen materiaalin sijainnin fyysisesti käytettävissä oleva varasto. Tuotannon syötteen sijainti määritetään resurssissa, jossa tuotantotyö suunnitellaan. Jos nimiketunnusta ohjataan erä- tai sarjanumerolla, näkyvissä on fyysisesti käytettävissä olevien erä- ja sarjanumeroiden luettelo. Jos haluat määrittää varattavan määrän, työntekijä voi valita **Varaa materiaali**. Jos haluat poistaa aiemmin luodun varauksen, työntekijä voi valita **Poista varaus**.
+
+Lisätietoja tuotannon syötesijainnin määrittämisestä on seuraavassa blogikirjoituksessa: [Tuotannon syötesijainnin määrittäminen](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Työntekijän **Varaa materiaali** -valintaikkunassa varaukset säilyvät, kun työntekijä valitsee **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa **Peruuta**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Työn valmistuminen ja uuden työn aloittaminen
 

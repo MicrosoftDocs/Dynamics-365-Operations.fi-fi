@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ac3067c03bf2cf336848301e8c27b60da8dc8c
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a9753e220e62794b157340c9f8e6f8a053e9ba7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964828"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067980"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Ehdokkaiden valintatyökalujen määrittäminen ja käyttöönotto
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Hyväksyttyjen ehdokkaiden joukon löytäminen avointen toimien täyttämistä varten voi olla vaikeaa erityisesti silloin, kun paikka vaatii eritystä osaamisaluejoukkoa. Organisaatiossasi voi jo olla töissä tarvittuja osaamisalueita omaavia ehdokkaita. Voit hakea nykyisten työntekijöiden tai uusien hakijoiden joukosta henkilöitä, jotka omaavat tietyt osaamisalueet. Näin rekrytoija voi nopeasti kerätä hakijoiden tiedot ja tarkistaa, kuka on hakenut avointa toimea nyt tai aiemmin, tai etsiä mahdollisia ehdokkaita aiemmin luoduista ehdokasryhmästä. Tämän menettelyn avulla opit, miten osaamisaluekartoituksen toiminto auttaa etsimään oikean henkilön avoimeen toimeen. Tämän menettelyn luomisessa käytetty esittely-yritys on **USMF**.
 

@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations -sovellusten aloitussivun uudet ominaisuudet ja muutokset
-description: Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Finance and Operations -sovellusten uusista ominaisuuksista.
+title: Taloushallinnon ja toimintojen sovellusten aloitussivun uudet ominaisuudet ja muutokset
+description: Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien taloushallinnon ja toimintojen sovellusten uusista ominaisuuksista.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,30 +17,37 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 06f7e9b39b72a5e2cbbc06949dda7f16f2405250dd6c25b919260daca76e33bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8348f935ddee557a5f47b550c24f78cf68e37db2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759182"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075197"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Finance and Operations -sovellusten aloitussivun uudet ominaisuudet ja muutokset
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Taloushallinnon ja toimintojen sovellusten aloitussivun uudet ominaisuudet ja muutokset
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="application-releases"></a>Sovelluksen versiot
 
-Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Finance and Operations -sovelluksen jokaisessa versiossa on.
+Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua taloushallinnon ja toimintojen sovelluksen jokaisessa versiossa on.
 
-- **Finance:** [Dynamics 365 Financen uudet ja muuttuneet ominaisuudet](../../../finance/get-started/whats-new-home-page.md) 
+- **Finance:** [Dynamics 365 Financen uudet ja muuttuneet ominaisuudet](../../../finance/get-started/whats-new-home-page.md)
+- **Human Resources (yhdistetty infrastruktuuri):**[Uutta tai muuttunutta Microsoft Dynamics 365 Human Resourcesissa](../../../human-resources/get-started/hr-whats-new-changed-10-0-25.md)  
 - **Supply Chain Management:** [Dynamics 365 Supply Chain Managementin uudet ominaisuudet ja muutokset](../../../supply-chain/get-started/whats-new-home-page.md) 
 - **Commerce:** [Dynamics 365 Commercen uudet ominaisuudet ja muutokset](../../../commerce/get-started/whats-new-home-page.md)
+
+
+## <a name="stand-alone-applications"></a>Itsenäiset sovellukset
+
+Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua erillisessä Dynamics 365 Human Resourcesissa on:
+
 - **Human Resources:** [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>Ympäristön päivitykset
 
-Lisätietoja Finance and Operations -sovellusten ympäristöpäivitysten uusista tai muuttuneesta päivityksistä on seuraavassa ohjeaiheessa:
+Lisätietoja taloushallinnon ja toimintojen sovellusten ympäristöpäivitysten uusista tai muuttuneesta päivityksistä on seuraavassa ohjeaiheessa:
 
 - [Platform-päivitysten uudet ja muuttuneet ominaisuudet](../../dev-itpro/get-started/whats-new-home-page.md)
 

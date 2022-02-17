@@ -9,54 +9,54 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: nhelgren
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: c2d1f1e39a5ddccddf6fbbf524ff7eb0945b3c32
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782233"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061275"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Taulumäärityksen kuntotarkistusta koskevat virhekoodit
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tässä aiheessa kuvataan taulumäärityksen kuntotarkistusta koskevat virhekoodit.
 
 ## <a name="error-100"></a>Virhe 100
 
-Virhesanoma on Finance and Operations -suositusten suorittaminen edellyttää vähintään Finance and Operations -ympäristön versiota PU 43.
+Virheilmoitus on "Taloushallinnon ja toimintojen alustan vähimmäisvaatimusversio on PU 43 taloushallinnon ja toimintojen suositusten suorittamista varten."
 
-Ominaisuus vaatii platform update -päivitykset Finance and Operations -sovellusten versioon 10.0.19 tai sitä uudempiin.
+Ominaisuus vaatii Platform update -päivitykset taloushallinnon ja toimintojen sovellusten versioon 10.0.19 tai sitä uudempiin.
 
 ## <a name="error-400"></a>Virhe 400
 
-Virhesanoma on Yksiköstä \{Finance and Operations UniqueEntityName\} ei löydetty liiketapahtumien rekisteröintitietoja, mikä tarkoittaa, että määritys ei ole käynnistä tai kaikki kenttämääritykset ovat yksisuuntaisia.
+Virhesanoma on "Yksiköstä \{Taloushallinto ja toiminnot UniqueEntityName\} ei löydetty liiketapahtumien rekisteröintitietoja, mikä tarkoittaa, että määritys ei ole käynnissä tai kaikki kenttämääritykset ovat yksisuuntaisia".
 
 ## <a name="error-500"></a>Virhe 500
 
-Virhesanoma on Projektille \{projektin nimi\} ei löydy projektimäärityksiä. Tämä voi johtua joko siitä, että projekti ei ole käytössä tai kaikki kenttämääritykset ovat yksisuuntaisia Customer Engagementista Finance and Operationsiin.
+Virhesanoma on Projektille \{projektin nimi\} ei löydy projektimäärityksiä. Tämä voi johtua joko siitä, että projekti ei ole käytössä tai kaikki kenttämääritykset ovat yksisuuntaisia asiakasvuorovaikutussovelluksesta taloushallintoon ja toimintoihin.
 
-Tarkista taulumäärityksen määritykset. Jos ne ovat yksisuuntaisia Customer Engagement -sovelluksista Finance and Operations -sovelluksiin, reaaliaikaiselle synkronoinnille Finance and Operations -sovelluksista Dataverseen ei luoda liikennettä.
+Tarkista taulumäärityksen määritykset. Jos ne ovat yksisuuntaisia asiakasvuorovaikutussovelluksista taloushallinnon ja toimintojen sovelluksiin, reaaliaikaiselle synkronoinnille taloushallinnon ja toimintojen sovelluksista Dataverseen ei luoda liikennettä.
 
 ## <a name="error-900"></a>Virhe 900
 
-Virhesanomana on Virheellinen lähdesuodattimen \{sourceFilter\} muoto yksikölle \{Finance and Operations UniqueEntityName\}."
+Virhesanomana on "Virheellinen lähdesuodattimen \{sourceFilter\} muoto yksikölle \{Taloushallinto ja toiminnot UniqueEntityName\}."
 
-Finance and Operations -sovellusten taulumäärityksessä määritetty lähdesuodatin ei ole syntaksisesti oikein. Ohjeet suodatinperusteiden tarkistamiseen: [Reaaliaikaisen synkronoinnin ongelmien vianmääritys](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
+Taloushallinnon ja toimintojen sovellusten taulumäärityksessä määritetty lähdesuodatin ei ole syntaktisesti oikein. Ohjeet suodatinperusteiden tarkistamiseen: [Reaaliaikaisen synkronoinnin ongelmien vianmääritys](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
 
 ## <a name="error-1000"></a>Virhe 1000
 
-Virhesanoma Yksikön \{Finance and Operations UniqueEntityName\} kaksoiskirjoituksen reaaliaikaiseen synkronointiin käytetty kysely on \{Finance and Operations EntityFilterQueryString\}. Tietueet, jotka täyttävät kyselyperusteet noudetaan reaaliaikaista synkronointia varten.
+Virhesanoma on "Yksikön \{Taloushallinto ja toiminnot UniqueEntityName\} kaksoiskirjoituksen reaaliaikaiseen synkronointiin käytetty kysely on \{Taloushallinto ja toiminnot EntityFilterQueryString\}". Tietueet, jotka täyttävät kyselyperusteet noudetaan reaaliaikaista synkronointia varten.
 
 Palautettu yksikkökysely on yksikön SQL-kyselyn taustakysely. Tarkista sisäliitosten tai kyselysuodattimien varalta, jotka määrittävät reaaliaikaista synkronointia varten noudettavat liiketoimintatiedot. Sisäliitokset ja suodattimet ovat pakollisia ehtoja, jotka on täytettävä jokaisen kaksoiskirjoituksen reaaliaikaiseen synkronointiin noudettavan tietueen osalta.
 
 ## <a name="error-1300"></a>Virhe 1300
 
-Virhesanoma on Yksikön \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} virtuaalikenttiä \{s.EntityFieldName\} ei voi jäljittää kaksoiskirjoituksen osalta.
+Virhesanoma on "Yksikön \{Taloushallinto ja toiminnot EntityMetadata.EntityProperties.LogicalEntityName\} virtuaalikenttiä \{s.EntityFieldName\} ei voi jäljittää kaksoiskirjoituksen osalta".
 
-Finance and Operations -taulujen virtuaalikenttiä ei voi jäljittää. Reaaliaikainen synkronointi voi synkronoida tiedot, mutta se ei voi noutaa sarakkeisiin tehtyjä muutoksia.
+Taloushallinnon ja toimintojen taulujen virtuaalikenttiä ei voi jäljittää. Reaaliaikainen synkronointi voi synkronoida tiedot, mutta se ei voi noutaa sarakkeisiin tehtyjä muutoksia.
 
 ## <a name="error-1500"></a>Virhe 1500
 
@@ -66,9 +66,9 @@ Yksikön tietolähteellä ei ole kaksoiskirjoitusta varten määritettyä kentt�
 
 ## <a name="error-1600"></a>Virhe 1600
 
-Virhesanoma on yksikön \{Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName\} tietolähteellä \{datasource.DataSourceName\} on alue. Vain alue-ehtoa vastaavat tietueet noudetaan lähteviä varten.
+Virhesanoma on "Yksikön \{Taloushallinto ja toiminnot EntityMetadata.EntityProperties.LogicalEntityName\} tietolähteellä \{datasource.DataSourceName\} on alue. Vain alue-ehtoa vastaavat tietueet noudetaan lähteviä varten.
 
-Finance and Operations -sovellusten yksiköillä voi olla tietolähteitä, joissa on käytössä suodatinalueita. Nämä alueet määrittävät tietueet, jotka noudetaan reaaliaikaiseen synkronointiin. Jos joitakin tietueita ohitetaan Finance and Operations -sovelluksesta Dataverseen, tarkista, täyttävätkö tietueet yksikön alueperusteet. Yksinkertainen tapa tehdä tämä tarkistus on suorittaa SQL-kysely, joka muistuttaa seuraavaa esimerkkiä.
+Taloushallinnon ja toimintojen sovellusten yksiköillä voi olla tietolähteitä, joissa on käytössä suodatinalueita. Nämä alueet määrittävät tietueet, jotka noudetaan reaaliaikaiseen synkronointiin. Jos joitakin tietueita ohitetaan taloushallinnon ja toimintojen sovelluksesta Dataverseen, tarkista, täyttävätkö tietueet yksikön alueperusteet. Yksinkertainen tapa tehdä tämä tarkistus on suorittaa SQL-kysely, joka muistuttaa seuraavaa esimerkkiä.
 
 ```sql
 select * from <EntityName> where <filter criteria for the records> on SQL.

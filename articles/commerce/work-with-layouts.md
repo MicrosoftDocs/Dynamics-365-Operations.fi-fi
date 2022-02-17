@@ -2,7 +2,7 @@
 title: Esimääritettyjen asettelujen käyttö
 description: Tässä ohjeaiheessa käsitellään esimääritettyjen asettelujen käsittelemistä Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0f6effd4dda669041a269d568bd39beda607a2bcc05c65e40bb76c6f1d02cd5e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775309"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090842"
 ---
 # <a name="work-with-preset-layouts"></a>Esimääritettyjen asettelujen käyttö
 
@@ -91,12 +91,24 @@ Voit esikatsella muutoksia avaamalla olemassa olevan esimääritettyä asettelua
 
 Kun olet esikatsellut esimääritettyyn asetteluun tehdyt muutokset, julkaise asettelu live-sivustossa jonkin seuraavan vaiheen avulla.
 
-* Siirry **Asettelut**-kohtaan, valitse asettelu ja valitse sitten **Julkaise**.
-* Valitse asettelun nimi avataksesi asettelueditorin ja valitse sitten **Julkaise**.
-* Julkaise sivu, joka viittaa julkaisemattomaan asetteluun. Asettelu julkaistaan automaattisesti.
+1. Siirry **Asettelut**-kohtaan, valitse asettelu ja valitse sitten **Julkaise**.
+1. Valitse asettelun nimi avataksesi asettelueditorin ja valitse sitten **Julkaise**.
+1. Julkaise sivu, joka viittaa julkaisemattomaan asetteluun. Asettelu julkaistaan automaattisesti.
 
 > [!WARNING]
 > Useat sivut voivat viitata esimääritettyihin asetteluihin. Kun julkaiset esimääritetyn asettelun, ota huomioon, että saatat vaikuttaa useiden sivujen asetteluun.
+
+## <a name="rename-a-preset-layout"></a>Esimääritetyn asettelun uudelleennimeäminen
+
+Voit nimetä esimääritetyn asettelun uudelleen sivuston muodostimessa seuraavasti.
+
+1. Valitse vasemmassa siirtymisruudussa **Asettelut**.
+1. Valitse sen asettelun asettelun nimi, jonka haluat nimetä uudelleen.
+1. Aloita asettelun muokkaaminen valitsemalla **Muokkaa**.
+1. Valitse asettelun nimen vieressä oleva kynäsymboli asettelun ominaisuusruudusta.
+1. Muokkaa asettelun nimeä tarpeen mukaan.
+1. Vahvista nimenmuutos valitsemalla valintamerkki.
+1. Valitse **Viimeistele muokkaus**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

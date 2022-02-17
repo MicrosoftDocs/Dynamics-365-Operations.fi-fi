@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40fc4c06c563415cd5b1a13c145b778276274fd97279dc9f56ff5e3f8954dc76
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1857d2e35e369bcd0c8f02a059a307f31da8b3b9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732006"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067451"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimoi Dataversen virtuaalitaulukoiden kyselyt
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## <a name="issue"></a>Varasto-otto
 
@@ -47,12 +50,12 @@ Yksi henkilöstöhallinnon virtuaalitaulujen suorituskyvyn hidastamisista on tau
 Tämä vaikutus voi olla esimerkiksi kyselyissä työntekijää (**mshr_hcmworkerentity**) tai perustyöntekijää (**mshr_hcmworkerbaseentity**) vastaan. Voit nähdä suorituskykyongelman itse monin eri tavoin:
 
 - **Kyselyn suorittaminen on hidasta**: Kysely virtuaalitaulua vastaan saattaa palauttaa odotetut tulokset, mutta kyselyn suorittaminen kestää odotettua kauemmin.
-- **Kyselyn aikakatkaisu**: Kysely voi aikakatkaisua ja palauttaa seuraavan virheen: "ATunnuksen avulla soitettiin Finance and Operationsiin, mutta Finance and Operations palautti InternalServerError-tyypin virheen."
+- **Kyselyn aikakatkaisu**: Kysely voi aikakatkaisua ja palauttaa seuraavan virheen: "Tunnuksen avulla kutsuttiin taloushallinnon ja toimintojen sovellusta, mutta taloushallinnon ja toimintojen sovellus palautti InternalServerError-tyypin virheen."
 - **Odottamaton virhe**: Kysely saattaa palauttaa virhetyypin 400. Näyttöön tulee seuraava sanoma: Odottamaton virhe.
 
   ![Virhetyyppi 400 HcmWorkerBaseEntity-yksikössä.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Ylikuormitus** Kysely voi käyttää palvelinresursseja liian paljon, ja siitä tulee vain osa välityspalvelinta. Tässä tapauksessa kysely palauttaa seuraavan virheen: "Tunnus haettiin Finance and Operationskutsua varten, mutta Finance and Operations palautti virheen, tyyppi 429." Lisätietoja henkilöstöhallinnon rajoittamisesta on kohdassa [rajoitusten usein kysytyt kysymykset](./hr-admin-integration-throttling-faq.md).
+- **Ylikuormitus** Kysely voi käyttää palvelinresursseja liian paljon, ja siitä tulee vain osa välityspalvelinta. Tässä tapauksessa kysely palauttaa seuraavan virheen: "Tunnus haettiin taloushallinnon ja toimintojen sovelluksen kutsua varten, mutta taloushallinnon ja toimintojen sovellus palautti virheen, tyyppi 429." Lisätietoja henkilöstöhallinnon rajoittamisesta on kohdassa [rajoitusten usein kysytyt kysymykset](./hr-admin-integration-throttling-faq.md).
 
   ![Virhetyyppi 429 HcmWorkerBaseEntity-yksikössä.](./media/HcmWorkerBaseEntityErrorType429.png)
 

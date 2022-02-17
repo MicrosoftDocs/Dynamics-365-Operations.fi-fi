@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647557"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075497"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Luettelo tekstiluokan ER-funktioista
 
@@ -35,6 +35,7 @@ Sähköisen raportoinnin (ER) tekstifunktioiden avulla voidaan suorittaa toimint
 | [Liitä](er-functions-text-concatenate.md) | Tämä funktio palauttaa kaikki määritetyt tekstimerkkijonot *Merkkijono*-arvona sen jälkeen, kun ne on liitetty yhdeksi merkkijonoksi. |
 | [Muoto](er-functions-text-format.md) | Tämä funktio palauttaa määritetyn *Merkkijono*-arvon sen jälkeen, kun se on muotoiltu korvaamalla kaikki **%N**-esiintymät *N*:llä argumentilla. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Tämä funktio etsii määritetystä luettelointitietolähteestä tiettyä *Enum*-arvoa käyttämällä *merkkijono*-arvona määritettyä luetteloinnin nimeä. Jos *Enum*-arvo löytyy, funktio palauttaa sen. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Tämä toiminto etsii tiettyä otsikkoa ja palauttaa *[merkkijono](er-formula-supported-data-types-primitive.md#string)* arvon, joka edustaa määritetyn otsikon käännöstä määritetyllä kielellä. |
 | [GuidValue](er-functions-text-guidvalue.md) | Tämä funktio muuntaa *Merkkijono*-tyypin määritetyn syötteen *GUID*-tyypin tietokohteeksi. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Tämä funktio jäsentää tiedot JavaScript Object Notation (JSON) -muodossa, jota käytettään tietyssä polussa, ja se purkaa skalaariarvon, joka perustuu tiettyyn tunnukseen. Sen jälkeen se palauttaa puretut skalaariarvot *merkkijono*-arvona. |
 | [Vasemmalle](er-functions-text-left.md) | Tämä funktio palauttaa määritetystä luettelosta *merkkijono*-arvon, joka esittää määritetyn määrän merkkejä määritetyn merkkijonon alusta. |

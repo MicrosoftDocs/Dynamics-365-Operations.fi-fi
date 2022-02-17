@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 614f37236bbd0239925e37ebf29f59ac006d09cd
-ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
+ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "7948791"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087214"
 ---
 # <a name="task-management"></a>Tehtävienhallinta
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Tehtävänhallinnan avulla voit luoda tehtäviä, jotka on suoritettava, jotta työntekijöitä voi palkata (perehdyttäminen), lopettaa työsuhteen (poistuminen) ja siirtää (siirto). Tehtävänhallinnassa käytetään tarkistusluetteloiden käsitettä. Tarkistusluettelo on luettelo, joka sisältää perehdytys-, poistumis- ja siirtymistehtävät. Tehtävänhallinta ryhmittelee tehtävät yhteen tarkistusluetteloiden avulla sekä määrittää niitä yksittäisille henkilöille tai ryhmille. Tarkistusluettelotoiminnot ovat samankaltaisia perehdytykselle, poistumiselle ja siirtymiselle.
 

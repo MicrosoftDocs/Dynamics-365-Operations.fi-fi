@@ -13,14 +13,17 @@ ms.search.industry: Service industries
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e33b9216838313e8f294f4f0f196b07a3d5cc9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: c57ba991de366b4a0e1aa02971a107bed488f914
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964931"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070472"
 ---
 # <a name="enter-project-timesheets"></a>Syötä projektin työaikaraportit
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Voit luoda tässä menettelyssä aikaraportin käyttämällä tyhjää aikaraporttisivua. Uusi aikaraportti voi perustua aiemman aikaraportin tietoihin tai **Omat suosikit** -sivun projekti- ja tehtävämäärityksiin. Oletusarvoisesti **Kaikki työaikaraportit** -luettelosivu näyttää kaikki kuluvan kauden aikaraportit. Voit käyttää **Omat aikaraportit** -sivun **Näytä**-kenttää suodattamaan aikaraporttiluetteloa ajanjakson tai raportin mukaan. Voit myös tarkastella sen avulla muiden työntekijöiden puolesta luotuja aikaraportteja. Tämän menettelyn luomisessa käytetty esittely-yritys on **USSI**.
 

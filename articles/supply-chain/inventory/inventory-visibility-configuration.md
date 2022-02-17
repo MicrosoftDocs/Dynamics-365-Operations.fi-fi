@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920295"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060998"
 ---
 # <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Tässä aiheessa käsitellään varaston näkyvyyden määrittämistä varaston näkyvyyssovelluksen avulla Power Appsissa.
 
@@ -58,7 +58,7 @@ Kun määritykset on tehty, muista valita sovelluksessa **Päivitä määritys**
 
 ## <a name="data-source-configuration"></a>Tietolähteen määritykset
 
-Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 Finance and Operations -sovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
+Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 Finance- ja toimintosovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
 
 > [!NOTE]
 > `fno`-tietolähde on varattu Supply Chain Managementia varten. Jos varaston näkyvyyden lisäosa on integroitu Supply Chain Management -ympäristöön, on suositeltavaa, ettei `fno`-tietolähteeseen liittyviä konfiguraatioita poisteta.

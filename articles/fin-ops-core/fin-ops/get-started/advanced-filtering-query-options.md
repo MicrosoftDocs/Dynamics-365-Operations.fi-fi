@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8bbecf85a13056225b0d35023d759456cade40fe10ca1978058abd8e47693ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740905"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070006"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Suodatuksen ja kyselysyntaksin lisäasetukset
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan **vastaavuusoperaattoria** Suodatinruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
 
@@ -119,7 +122,7 @@ Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot, jotka ovat käytet
 <td>Kaksi peräkkäistä lainausmerkkiä<strong>("</strong>") etsii rivejä, joilla ei ole arvoa nykyiselle sarakkeelle.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations -kysely</span>) (Finance and Operations -kysely sulkeissa)</td>
+<td>(<span class="code">Finance and Operations -kysely</span>) (Finance and Operations -kysely sulkeiden sisällä)</td>
 <td>Vastaa määritettyä kyselyä.</td>
 <td>Kirjoita kysely SQL-lausekkeena sulkuihin käyttämällä Finance and Operations -kyselykieltä.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 

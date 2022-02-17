@@ -2,7 +2,7 @@
 title: Katkelmien käyttäminen
 description: Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35a19f064b63ce476252064253032d35697bd69c84c4c93db1d0349a57527c2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776191"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090741"
 ---
 # <a name="work-with-fragments"></a>Katkelmien käyttäminen 
 
@@ -121,6 +121,20 @@ Osaa muokataan Commercen sivustonmuodostimessa seuraavasti:
 1. Muokkaa osan moduulin ominaisuuksia ja rakennetta tarpeen mukaan. Prosessi muistuttaa moduulien muokkausprosessia, jossa moduuleja muokataan sivueditorinäkymässä.
 
 Voit muokata osaa myös valitsemalla sen sivulla, mallissa tai pääosassa ja valitsemalla sitten **Muokkaa osaa** -kohdan oikeanpuoleisessa ominaisuusruudussa.
+
+### <a name="rename-a-fragment"></a>Katkelman nimeäminen uudelleen
+
+Olemassa oleva katkelma nimetään uudelleen sivustonmuodostimessa seuraavasti.
+
+1. Valitse vasemmassa siirtymisruudussa **Katkelmat**.
+1. Valitse sen katkelman nimi, jonka haluat nimetä uudelleen.
+1. Aloita katkelman muokkaaminen valitsemalla **Muokkaa**. Huomaa, että katkelmaa ei voi muokata, jos joku muu on jo muokkaamassa katkelmaa.
+1. Valitse katkelman nimen vieressä oleva kynäsymboli katkelman ominaisuusruudusta.
+1. Muokkaa katkelman nimeä tarpeen mukaan.
+1. Vahvista nimenmuutos valitsemalla valintamerkki.
+1. Valitse **Viimeistele muokkaus**.
+
+Voit nimetä katkelman myöhemmin uudelleen muokkaamalla sivua ja valitsemalla sitten kynäsymbolin ominaisuusruudussa katkelman nimen vierestä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

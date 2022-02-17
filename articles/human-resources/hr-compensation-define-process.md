@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 883948c6e3f7b205d7e0f1f2b6adef1173616dc1
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 188a87f580c274e073710601ef306139f723c797
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431122"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071458"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Kompensaatioprosessin määrittäminen ja tulosten laskeminen
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -40,13 +43,13 @@ Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin 
     * Tapahtuman aktivointipäivämäärä on päivä, jolloin uudet kompensaatiosuhteet tulevat voimaan. Monissa yrityksissä syklin päättymisen ja uusien kompensaatiosuhteiden voimaantuloajan välillä on muutama kuukausi. Lisäaika käytetään uuden kompensaation käsittelyyn ja tarkistamiseen.  
 8. Anna **Tapahtuman aktivointipäivämäärä** -kentässä päivämäärä.
     * Ajankohtaan perustuvaa päivämäärää käytetään muuttuvissa kompensaatiosuunnitelmissa, jotka määrittävät työntekijän palkkiosumman kyseisen ajankohdan kompensaatiosuhteen perusteella.  
-    * Kiinteään suhteellisesti jaettuun palkkioon liittyvä työhönottopäivämäärää käytetään kiinteissä kompensaatiosuunnitelmissa, joissa työhönottosääntönä on Prosentti.  Työntekijät, jotka on palkattu syklin alkamispäivämäärän ja kiinteään suhteellisesti jaettuun palkkioon liittyvän työhönottopäivämäärän välillä, saavat 100 % lasketusta kompensaation jaetun prosenttiosuuden sijaan.  
+    * Kiinteään suhteellisesti jaettuun palkkioon liittyvä työhönottopäivämäärää käytetään kiinteissä kompensaatiosuunnitelmissa, joissa työhönottosääntönä on **Prosentti**. Työntekijät, jotka on palkattu syklin alkamispäivämäärän ja kiinteään suhteellisesti jaettuun palkkioon liittyvän työhönottopäivämäärän välillä, saavat 100 % lasketusta kompensaation jaetun prosenttiosuuden sijaan.  
 9. Anna **Kiinteään suhteellisesti jaettuun palkkioon liittyvä työhönottopäivämäärä** -kentässä päivämäärä.
     * Tarkistuksen aikaraja on päivämäärä, johon mennessä kaikki käsittelyn tulokset on tarkistettava, jotta ne voidaan ladata työntekijän kompensaatiotietueeseen ennen tapahtuman aktivointipäivää. Tämä kenttä on vain tiedoksi.  
 10. Anna **Tarkasta aikaraja** -kentässä päivämäärä.
 11. Valitse **Tallenna**.
 
-## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a>Määritä kompensaatiosuunnitelmien ja kompensaatioprosessin toiminnot
+## <a name="set-up-the-compensation-plans-and-actions-for-a-compensation-process"></a>Määritä kompensaatiosuunnitelmien ja kompensaatioprosessin toiminnot
 1. Valitse **Asetukset**.
     * **Asetukset**-sivulta valitaan suunnitelmat, jotka käsitellään tämän kompensaatioprosessin osana, sekä kussakin suunnitelmassa tehtävät toiminnot.  
 2. Anna tai valitse **Suunnitelma**-kentässä arvo.
@@ -56,7 +59,7 @@ Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin 
 6. Valitse **Lisää**.
 7. Valitse **Toiminto**-kentässä toimintotyypiksi **Ansio**.
     * Kompensaatiotoiminnot voidaan ketjuttaa yhteen **Käytä aiempaa tulosta** -kentän avulla ilmaisemaan, käytetäänkö valittua toimintoa työntekijöiden peruspalkkana vai ovatko edellisen toiminnot tulokset tämän toiminnon laskennan lähtökohta.  
-8. Valitse Käytä aiempaa tulosta -kentässä **Kyllä**.
+8. Valitse **Käytä aiempaa tulosta** -kentässä **Kyllä**.
 9. Valitse **Lisää**.
 10. Valitse **Toiminto**-kentässä toimintotyypiksi **Yleinen**.
     * Kompensaation toimintotyyppi määrittää käytettävissä olevat kentät. Jos kompensaation toimintotyyppi on Yleinen, prosentin tai summan kasvu määritetään.  
@@ -85,7 +88,7 @@ Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin 
 1. Valitse **Prosessin tulokset**.
 2. Valitse **Työntekijätulokset**.
 3. Etsi haluamasi tietue luettelosta ja valitse se.
-4. Laajenna Kiinteä kompensaatio -osa.
+4. Laajenna **Kiinteä kompensaatio** -osa.
     * Voit avata käsittelyn tulokset laajentamalla pikavälilehdet. Jos kompensaatiotoiminnossa valittiin **Ota suosituksen käyttöön**, **Suositus**-kentät otetaan käyttöön kyseisessä toiminnossa.  
 5. Etsi haluamasi tietue luettelosta ja valitse se.
     * Yhden työntekijän tuloksia voi tarkastella napsauttamalla **Näytä tulokset** -painiketta.  

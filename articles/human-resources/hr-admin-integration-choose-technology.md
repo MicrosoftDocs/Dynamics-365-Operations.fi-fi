@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414711"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065038"
 ---
 # <a name="choose-a-data-integration-technology"></a>Valitse tietojen integrointiteknologia
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tässä aiheessa on tietoja Dynamics 365 Human Resourcesin hallitsemien tietojen integroimiseen. Siinä kuvataan erilaisia integrointitekniikoita, joiden avulla voit päättää, mitkä tekniikat sopivat parhaiten tarpeisiisi.
 
@@ -53,7 +56,7 @@ Dataverse tarjoaa tietotaulukoille alustan ja ohjelmointirajapintaliittymän. Ku
 > [!NOTE]
 > Human Resources -yksiköt vastaavat Dataverse-tauluja. Lisätietoja Dataversesta (aiemmin Common Data Service) ja terminologiapäivityksistä on kohdassa [Mikä on Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
-Kun integroiviin sovelluksiin tarvittavat tietotaulukot ovat käytössä Dataversessä, voit käyttää täysin [Dataverse -järjestelmän ja sen tukemien ohjelmointirajapintaliittymien tietoja](/powerapps/?panel=developer#pivot=home). Yksi tuetuista ohjelmointirajapinnoista on [Dynamics 365:n verkko-ohjelmointirajapinta](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), joka tarjoaa OData-toteutuksen Dataverse -tietojen käyttöä varten.
+Kun integroiviin sovelluksiin tarvittavat tietotaulukot ovat käytössä Dataversessä, voit käyttää täysin [Dataversen ja sen tukemien ohjelmointirajapintaliittymien tietoja](/powerapps/?panel=developer#pivot=home). Yksi tuetuista ohjelmointirajapinnoista on [Dynamics 365:n verkko-ohjelmointirajapinta](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api), joka tarjoaa OData-toteutuksen Dataverse -tietojen käyttöä varten.
 
 Dataverse-taulukot ja niihin liittyvät ohjelmointirajapinnat ovat paras vaihtoehto Human Resources -tietojen käyttämiselle verkkosovelluksilla, verkkopalveluilla/verkko-ohjelmointirajapinnoilla ja millä tahansa muilla sovelluksilla, jotka muodostavat yhteyden OData-syötteisiin.
 
@@ -68,7 +71,7 @@ Dataverse-taulukot ja niihin liittyvät ohjelmointirajapinnat ovat paras vaihtoe
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-yksiköt
 
-Henkilöresurssit, jotka on rakennettu ensisijaisesti samalle alustalle kuin Finance and Operations -sovellukset, tarjoavat [Tietojenhallintakehyksen (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF tunnetaan myös tietojen tuonnin vientikehyksenä (DIXF). Henkilöstöhallinnossa on joukko tietokokonaisuuksia, joita voidaan käyttää henkilöstöhallinnon tietojen tuomiseen ja viemiseen. Vaikka Dataverse-taulukot ovat ensisijainen tietojen integrointirajapinta Human Resourcesia varten, DMF-yksiköt ovat edelleen hyödyllisiä joissakin olosuhteissa, kuten:
+Human Resources, joka on rakennettu ensisijaisesti samalle alustalle kuin taloushallinnon ja toimintojen sovellukset, tarjoavat [Tietojenhallintakehyksen (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF tunnetaan myös tietojen tuonnin vientikehyksenä (DIXF). Henkilöstöhallinnossa on joukko tietokokonaisuuksia, joita voidaan käyttää henkilöstöhallinnon tietojen tuomiseen ja viemiseen. Vaikka Dataverse-taulukot ovat ensisijainen tietojen integrointirajapinta Human Resourcesia varten, DMF-yksiköt ovat edelleen hyödyllisiä joissakin olosuhteissa, kuten:
 
 - Dataverse-taulukot eivät ole vielä käytettävissä.
 
@@ -111,7 +114,7 @@ BYOD soveltuu raportointiratkaisuihin, tietojen integrointiin, tietojen yhdistä
 
 ### <a name="odata-enabled-entities"></a>OData-yhteensopivat yksiköt
 
-Useimpia DMF-yksikköjä voi käyttää myös Human Resources -tietopalvelun kautta (OData). [Finance and Operationsin OData-palvelua](/dynamics365/unified-operations/dev-itpro/data-entities/odata) koskevat asiakirjat koskevat henkilöresursseja, lukuun ottamatta omien ODatan suojaamien yksiköiden luomista.
+Useimpia DMF-yksikköjä voi käyttää myös Human Resources -tietopalvelun kautta (OData). [Taloushallinnon ja toimintojen OData-palvelua](/dynamics365/unified-operations/dev-itpro/data-entities/odata) koskevat asiakirjat koskevat henkilöresursseja, lukuun ottamatta omien ODatan suojaamien yksiköiden luomista.
 
 Vaikka Dataverse ja Dataversen tarjoama OData-täytäntöönpano ([Dynamics 365:n verkko-ohjelmointirajapinnalla](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) on suositeltava Human Resourcesin tietopalvelun sijaan, Human Resourcesin tietopalvelu kattaa tällä hetkellä Human Resources -tietojen yksiköt laajemmin.
 
@@ -129,7 +132,7 @@ Tietojen integrointiprojektit soveltuvat Dataversen eräintegraatioihin. Ne ovat
 
 ### <a name="power-query"></a>Power Query
 
-Tietojen integrointiohjelma tukee [Power Queryä](/power-query/power-query-what-is-power-query) [Lisäkysely-toiminnollaan](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query tarjoaa tehokkaan, joustavan tietojen suodatuksen ja muunnoksen, mukaan lukien Rich M-kaavakielen. Power Query on todennäköisesti tuttu, jos olet kehittänyt Power BI -raportteja.
+Tietojen integrointiohjelma tukee [Power Queryä](/power-query/power-query-what-is-power-query) [Lisäkysely-toiminnollaan](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query tarjoaa tehokkaan, joustavan tietojen suodatuksen ja muunnoksen, mukaan lukien monipuolisen M-kaavakielen. Power Query on todennäköisesti tuttu, jos olet kehittänyt Power BI -raportteja.
 
 ## <a name="deciding-on-an-integration-technology"></a>Integrointiteknologian valinta
 

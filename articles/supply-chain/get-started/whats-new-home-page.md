@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e4a120dd4199b143c3103392515c85e7b887194b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4c37a91a00aa6b7896bfbf9b57567a25c30d8b35
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982712"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075121"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 
@@ -31,6 +31,7 @@ Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Dynamics 3
 
 | Versio | Koontikäännös | Automaattisten päivitysten saatavuus | Lisätietoja |
 |---|---|---|---|
+| 10.0.25 | 10.0.1149 | Huhtikuun 2022. | [Dynamics 365 Supply Chain Management 10.0.25:n esiversio](whats-new-scm-10-0-25.md) |
 | 10.0.24 | 10.0.1084 | Helmikuun 2022. | [Dynamics 365 Supply Chain Managementin version 10.0.24 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | 2022. tammikuuta | [Dynamics 365 Supply Chain Managementin version 10.0.23 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | marraskuu 2021 | [Dynamics 365 Supply Chain Managementin version 10.0.22 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-22.md) |

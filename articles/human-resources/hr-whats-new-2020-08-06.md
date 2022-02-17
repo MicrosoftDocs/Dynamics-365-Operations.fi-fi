@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c9cd01f5d96794cf3ed7f29a9fae21b67cd298acda36401b7f0f65d073cbbfbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761875"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062183"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (06. huhtikuuta 2020)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3444. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
 
 ## <a name="platform-update-1001236-is-now-available"></a>Platform Update 10.0.12(36) on nyt saatavana
 
-Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.12 ympäristöpäivitykset (elokuu 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Lisätietoja on [Rahoitus ja toiminnot -sovellusten version 10.0.12 alustan päivityksissä (elokuu 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Tietojen hallintakehys (DMF) -yksiköt etuuksien hallintaa varten
  

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777934"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075296"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.21 uudet tai muuttuneet ominaisuudet (lokakuu 2021)
 
@@ -39,7 +39,6 @@ Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](..
 | Varasto&nbsp;ja&nbsp;logistiikka | [Kirjaa käyttökelpoisia oikaisuja käyttäen vastatileihin liitettyjä syykoodeja](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Varastoinventoinnin syykoodit](../warehousing/reason-codes-for-counting-journals.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Myyntitarjouksen viitattujen tietojen vientikäytäntö](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Valitse, aiheuttaako lainausten viittaamien tietojen muutokset kyseiset lainaukset (tai rivit) sisällytettäviksi seuraavaan lisävientitoimintaan. Lisäviennit suoritetaan nopeammin, jos tällaisia tarjouksia tai rivejä ei sisällytetä.<br><br>Tämä ominaisuus lisää asetuksen, jota kutsutaan **Ohita myyntitarjoukseen viitatut tiedot, kun muutoksia seurataan** **Myyntireskontra-parametrit** -sivulla. |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Salattu tarjous](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Sinetöidyt tarjoukset tarjouspyyntöihin](../procurement/sealed-bidding.md) |
-| Varasto&nbsp;ja&nbsp;logistiikka | [Skannaa varaston viivakoodit GS1-muotostandardien avulla](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-viivakoodit ja QR-koodit](../warehousing/gs1-barcodes.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Varaston näkyvyyden apuohjelman alustava varaus](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Varaston näkyvyyden varaukset](../inventory/inventory-visibility-reservations.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Ostohyvityksen hallinnan vähennyksen ja todellisen painon parannukset](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Hallitse vähennyksiä käyttämällä vähennyksen työtilaa](../rebate-management/deduction-workbench.md )<br><br>[Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen](../rebate-management/process-review-post.md)<br><br>[Ostohyvitysten hallintasopimukset](../rebate-management/rebate-management-deals.md) |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Varastosovelluksen vaiheohjeet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen](../warehousing/mobile-app-titles-instructions.md) |
@@ -138,9 +137,9 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (lokakuu 2021) käyttöympäristön päivitysversio 10.0.21](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (lokakuu 2021) käyttöympäristön päivitysversio 10.0.21.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

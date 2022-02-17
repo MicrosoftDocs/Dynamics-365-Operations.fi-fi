@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753023"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063234"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
-> Tätä ohjeaihetta ei enää päivitetä. Jos haluat nähdä Finance and Operations -sovelluksista poistettujen tai niiden vanhentuneiden toimintojen luettelon, hae **Poistetut ja vanhentuneet toiminnot** -sisältö, joka viittaa käyttämääsi sovellukseen.
+> Tätä ohjeaihetta ei enää päivitetä. Jos haluat nähdä taloushallinnon ja toimintojen sovelluksista poistettujen tai niiden vanhentuneiden toimintojen luettelon, hae **Poistetut ja vanhentuneet toiminnot** -sisältö, joka viittaa käyttämääsi sovellukseen.
 
 Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhentuneet Dynamics 365 for Finance and Operations -sovelluksessa ja tuotteen aiemmissa versioissa.
 
@@ -37,7 +37,7 @@ Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhe
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 ja Platform update 31
 
@@ -265,13 +265,13 @@ Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella 
 | **Onko toinen ominaisuus korvannut?**   | Nro |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta |
 | **Käytön asetukset**              | Kaikki  |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 10.0.0 Platform update 24 alkaen.|
+| **Tila**                         | Poistettu alkaen Finance and Operations 10.0.0 ja Platform update 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 ja Platform update 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>SQL Server Reporting Services ReportViewer -ohjausobjekti
-Asiakkaat voivat käyttää upotetun SQL Server Reporting Services (SSRS) ReportViewer -ohjausobjektin **vientitoimintoa** Finance and Operations -sovellusten asiakirjojen lataamisessa. Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.
+Asiakkaat voivat käyttää upotetun SQL Server Reporting Services (SSRS) ReportViewer -ohjausobjektin **vientitoimintoa** taloushallinnon ja toimintojen sovellusten asiakirjojen lataamisessa. Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
@@ -302,7 +302,7 @@ Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäytt�
 | **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä. |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Varoitus on nyt kääntäjän virhe Finance and Operations -sovellusalustan päivityksille versiossa 10.0.11. |
+| **Tila**                         | Vanhentunut: Varoitus on nyt kääntämisen aikainen virhe taloushallinnon ja toimintojen sovellusten alustan päivityksen versiossa 10.0.11. |
 
 #### <a name="complete-list"></a>Täydellinen luettelo
 Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa [Menetelmien ja metatietojen elementtien poisto](deprecation-deletion-apis.md).
@@ -329,7 +329,7 @@ Toiminto ilmoitusten .txt- ja .xml-tiedostomuotojen määrittämiseen.
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Rahoitusraporttien luonti Venäjää varten
 Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC-raporttimalleihin. Toiminnalliset osat: tietojen vienti XLS- ja DOC-raporttimalleihin, kyselyt, kiinteät edellytykset poistetaan. 
@@ -340,7 +340,7 @@ Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tieto
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. Tilinpäätösten määrityksen käyttöliittymää olisi käytettävä tiedonkeruusääntöjen määrittämiseen kirjanpitotilien tai verorekistereiden mukaan. Sähköisessä raportoinnissa olisi määritettävä äännöt, jotka koskevat tietojen vientiä erilaisiin tiedostotyyppeihin, kiinteitä edellytyksiä ja kyselyjen kaltaisten tietojen keruuta. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili. |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrointi ulkoisten toimittajien kanssa sähköisen raportoinnin lähettämiseksi viestintäkanavien kautta Venäjää varten
 Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetetään edelleen sähköisen raportoinnin virallisille palveluntarjoajille, sekä tilan tuonti takaisin.
@@ -351,7 +351,7 @@ Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetet
 | **Onko toinen ominaisuus korvannut?**   | Kyllä.  |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili, vero |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Voittojen verorekisterin ohjattu toiminto
@@ -363,7 +363,7 @@ Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja. Tämä ominaisuude
 | **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Vero |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
 ### <a name="payroll-and-human-resources-for-russia"></a>Palkanlaskenta ja Henkilöstöhallinto Venäjällä
 Venäjän maakohtainen moduuli, jossa hallitaan henkilökunnan hallintatietoja, työntekijöiden aikaraporttitietoja, palkanlaskentaa ja palkkaraporttien luomista. 
@@ -401,7 +401,7 @@ Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei 
 | **Onko toinen ominaisuus korvannut?**   | Ei mitään. Aina kun uutta sisäistä tarvitaan, uusi laajennuspyyntö on osoitettava ER-kehikkotiimille.<br><br>ER-tiimi kehittää pyydettyä toimintoa, mutta ongelman voi väliaikaisesti välttää ohjelmoimalla tarvittavan logiikan mukautetun sovellusluokan menetelmänä. Tätä menetelmää voi käyttää ER-lausekkeessa mukautettuun sovellusluokkaan viittaavan **Sovellus\luokka**-tyypin lisätyn ER-tietolähteen ominaisuutena.  |
 | **Tuotealueet, joihin vaikutetaan**         | Sähköisen raportoinnin kehikko                                                      |
 | **Käytön asetukset**              | Kaikki                                                                                      |
-| **Tila**                         | Poistettu versiosta Finance and Operations, Enterprise edition 7.3 alkaen.    |
+| **Tila**                         | Poistettu alkaen Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Erääntymisraportti varastoryhmittäin ja Erääntymisraportti varastodimensioittain
 
@@ -514,12 +514,12 @@ Valuuttamuunnos kirjanpito- ja raportointivaluutoille otettiin käyttöön, kun 
 
 ### <a name="warehouse-mobile-devices-portal"></a>Varaston mobiililaiteportaali
 
-Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon. Tätä komponenttia ei enää tueta Finance and Operationsissa. Alkuperäinen, käyttäjäkokemusta parantava sovellus, on korvannut WMDP-toiminnot.
+Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon. Finance and Operations ei enää tue tätä osaa. Alkuperäinen, käyttäjäkokemusta parantava sovellus, on korvannut WMDP-toiminnot.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Sama toiminto.       |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations - varastonhallinta on korvannut tämän toiminnon. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Varastointisovelluksen asennuksen ja määrityksen yleiskatsaus](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Varastointisovelluksen asennuksen ja määrityksen yleiskatsaus](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Tuotealueet, joihin vaikutetaan**         | Varaston hallinta, kuljetusten hallinta     |
 | **Käytön asetukset**              | Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.               |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2019 4. vuosineljännes.   |
@@ -870,7 +870,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Suorituksen hallinta on suunniteltu kokonaan uudelleen Finance and Operationsissa.     |
+| **Poiston tai vanhentumisen syy** | Suorituskyvyn hallinta on suunniteltu kokonaan uudelleen Finance for Operationsissa.     |
 | **Onko toinen ominaisuus korvannut?**   | Uudelleen suunnitellulla suorituskyvyn hallintatoiminnolla voidaan seurata tarkemmin tavoitteiden sisältöä ja mittauksia, joiden avulla voidaan seurata etenemistä, sekä tukidokumentaation liittämistä. Tavoitteet voidaan tallentaa malleina ja käyttää uudelleen. Tämän toiminnon avulla voit määrittää lisätavoitteita työntekijöille entistä nopeammin. |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilöstöresurssien hallinta                 |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen. |
@@ -1058,7 +1058,7 @@ Tieto-osiot erottavat Dynamics AX:n tietokannan tiedot loogisesti.
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tieto-osiot otettiin käyttöön Dynamics AX 2012 R2:ssa tietojen eristämistä varten. Yleisessä skenaariossa yrityksellä on tytäryhtiöitä mutta tytäryhtiön tiedot eivät saisi olla toisen tytäryhtiön nähtävissä, vaikka kumpikin tytäryhtiö on saman IT-osaston alaisuudessa. Ohjelmassa oli kuitenkin otettava käyttöön ylimääräisiä komentosarjoja ja hallintakustannuksia, jotta uusia osioita voitaisiin luoda, tiedot voitaisiin lisätä ja osiotiedot voitaisiin varmuuskopioida. Pilvipalvelussa, jossa meillä on käyttöympäristövuokrattuja (PaaS-palvelu) tietokantapalveluja (Microsoft Azuren SQL-tietokanta), tietokantaa on tehokkaampaa käyttää erityssäilönä kuin tehdä eristys ohjelmassa. Riippumatta siitä, tarvitaanko tietojen osiointia tytäryhtiöitä tai useita vuokraajia varten tai koon vuoksi, skenaariot voidaan mielestämme käsitellä paremmin useissa Finance and Operations -esiintymissä. |
-| **Onko toinen ominaisuus korvannut?**   | Tieto-osioita käyttävien asiakkaiden on käytettävä useita Finance and Operations -esiintymiä, jos tietokantatasojen erottaminen on tärkeää.    |
+| **Onko toinen ominaisuus korvannut?**   | Tieto-osioita käyttävien asiakkaiden on käytettävä useita Finance and Operations -esiintymiä, jos tietokantatasoiden erottaminen on tärkeää.    |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.  |
 
@@ -1069,7 +1069,7 @@ Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettuihin tiedo
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Tallennusta jaettuna tiedostoresurssina ei enää tueta, koska pilvipalveluympäristöt eivät voi viestiä paikallisten jaettujen tiedostoresurssien kanssa. Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä. Azure Blob -tallennus vastaa tietokantatallennusta, sillä asiakirjoja voi käyttää vain Finance and Operations -asiakasohjelman lomakkeiden kautta. Lisäksi tällä tavoin saadaan tallennustila, joka ei heikennä tietokannan toimintaa. Blob-tallennus on asiakirjanhallinnan oletustallennusmekanismi ja toimii välittömästi. |
+| **Poiston tai vanhentumisen syy** | Tallennusta jaettuna tiedostoresurssina ei enää tueta, koska pilvipalveluympäristöt eivät voi viestiä paikallisten jaettujen tiedostoresurssien kanssa. Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä. Azure Blob Storage vastaa tietokantatallennusta, sillä asiakirjoja voi käyttää vain Finance and Operations -asiakasohjelman lomakkeiden kautta. Lisäksi tällä tavoin saadaan tallennustila, joka ei heikennä tietokannan toimintaa. Blob-tallennus on asiakirjanhallinnan oletustallennusmekanismi ja toimii välittömästi. |
 | **Onko toinen ominaisuus korvannut?**   | Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä.   |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.   |
@@ -1391,7 +1391,7 @@ Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Finance and Operations on yhteensopiva taulutietokoneiden kanssa. Tablettisovellusta ei enää tarvita.    |
+| **Poiston tai vanhentumisen syy** | Finance and Operationsia voi käyttää tableteissa. Tablettisovellusta ei enää tarvita.    |
 | **Onko toinen ominaisuus korvannut?**   | Nro          |
 | **Tuotealueet, joihin vaikutetaan**         | Kulujen hallinta   |
 | **Tila**                         | Poistettu: Tämä toiminto on käytössä vain Dynamics AX 2012 R3:ssa. |

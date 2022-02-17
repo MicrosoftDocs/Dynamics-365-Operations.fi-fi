@@ -2,7 +2,7 @@
 title: Kompensaatioruudukoiden määrittäminen
 description: Kompensaatioruudukoiden avulla voidaan määrittää ja ylläpitää kiinteiden kompensaatiosuunnitelmien palkkarakenteita.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483814"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071448"
 ---
 # <a name="set-up-compensation-grids"></a>Kompensaatioruudukoiden määrittäminen
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -67,28 +70,16 @@ Kompensaatioruudukoiden avulla voidaan määrittää ja ylläpitää kiinteiden 
 7. Valitse **Oikaisulaji**-kentässä vaihtoehto.
 8. Anna **Oikaisusumma**-kenttään arvo.
 9. Etsi haluamasi tietue luettelosta ja valitse se.
-10. Etsi haluamasi tietue luettelosta ja valitse se.
-11. Etsi haluamasi tietue luettelosta ja valitse se.
-12. Etsi haluamasi tietue luettelosta ja valitse se.
-13. Valitse **Käytä ruudukossa**.
-14. Etsi haluamasi tietue luettelosta ja valitse se.
-15. Etsi haluamasi tietue luettelosta ja valitse se.
-16. Etsi haluamasi tietue luettelosta ja valitse se.
-17. Valitse **Käytä ruudukossa**.
-18. Etsi haluamasi tietue luettelosta ja valitse se.
-19. Etsi haluamasi tietue luettelosta ja valitse se.
-20. Valitse **Käytä ruudukossa**.
-21. Etsi haluamasi tietue luettelosta ja valitse se.
-22. Valitse Sovella ruudukkoon.
+10. Valitse **Käytä ruudukossa**.
     * Nyt joukkomuutostoiminnolla muutetaan kunkin tason pienintä ja suurinta viitepistettä. Tässä esimerkissä käytetään 50 prosentin hajontaa, joten pienintä viitepistettä vähennetään 20 prosentilla ja suurinta suurennetaan 20 prosentilla.  
-23. Anna **Oikaisusumma**-kenttään arvo.
-24. Syötä tai valitse arvo **Viitepiste**-kentässä.
-25. Merkitse kaikki rivit tai poista kaikkien rivien merkinnät luettelossa.
-26. Valitse **Käytä ruudukossa**.
-27. Anna **Oikaisusumma**-kenttään arvo.
-28. Syötä tai valitse arvo **Viitepiste**-kentässä.
-29. Merkitse kaikki rivit tai poista kaikkien rivien merkinnät luettelossa.
-30. Valitse **Käytä ruudukossa**.
+11. Anna **Oikaisusumma**-kenttään arvo.
+12. Syötä tai valitse arvo **Viitepiste**-kentässä.
+13. Merkitse kaikki rivit tai poista kaikkien rivien merkinnät luettelossa.
+14. Valitse **Käytä ruudukossa**.
+15. Anna **Oikaisusumma**-kenttään arvo.
+16. Syötä tai valitse arvo **Viitepiste**-kentässä.
+17. Merkitse kaikki rivit tai poista kaikkien rivien merkinnät luettelossa.
+18. Valitse **Käytä ruudukossa**.
 
 
 

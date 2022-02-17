@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46ae85fc4f4f305d1ff8063b43aeef51d043742f9860940add0e0dbca02413d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750457"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069295"
 ---
 # <a name="find-information-by-using-lookups"></a>Tietojen etsiminen hakujen avulla
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Monessa kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti.
 

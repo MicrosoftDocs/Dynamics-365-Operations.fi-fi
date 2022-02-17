@@ -1,6 +1,6 @@
 ---
 title: Yhtenäinen tuotekokemus
-description: Tässä aiheessa kuvataan tuotetietojen integraatiota Finance and Operations -sovellusten ja Dataversen välillä.
+description: Tässä aiheessa käsitellään tuotetietojen integraatiota taloushallinnon ja toimintojen sovellusten ja Dataversen välillä.
 author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
@@ -9,42 +9,42 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 81f49cf08dcd1b4b1c3d71ff286a1f070e65e914
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 1b3dc1d16fc34992df0c9478b8b4d163c310b67b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782329"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062595"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Jos liiketoiminnan ekosysteemi muodostuu Dynamics 365 -sovelluksista, kuten Financesta, Supply Chain Managementista ja Salesista, yritykset käyttävät usein näitä sovelluksia tuotetietojen lähteenä. Tämä johtuu siitä, nämä sovellukset muodostavat toimivan tuoteinfrastruktuurin, jota kehittyneet hinnoittelukäsitteet ja tarkat käytettävissä olevan varaston tiedot täydentävät. Jos yritykset käyttävät ulkoista tuotteen elinkaaren hallinta- eli PLM-järjestelmää tuotetietojen lähteenä, he voivat kanavoida tuotteita Finance and Operations -sovelluksista muihin Dynamics 365 -sovelluksiin. Integroitu tuotetietomalli voidaan tuoda yhtenäisen tuotekokemuksen avulla Dataverseen, jolloin kaikki sovelluksen käyttäjät, myös Power Platform -käyttäjät, voivat hyödyntää Finance and Operations -sovelluksista saatavia monipuolisia tuotetietoja.
+
+Jos liiketoiminnan ekosysteemi muodostuu Dynamics 365 -sovelluksista, kuten Financesta, Supply Chain Managementista ja Salesista, yritykset käyttävät usein näitä sovelluksia tuotetietojen lähteenä. Tämä johtuu siitä, nämä sovellukset muodostavat toimivan tuoteinfrastruktuurin, jota kehittyneet hinnoittelukäsitteet ja tarkat käytettävissä olevan varaston tiedot täydentävät. Jos yritykset käyttävät ulkoista tuotteen elinkaaren hallinta- eli PLM-järjestelmää tuotetietojen lähteenä, he voivat kanavoida tuotteita taloushallinnon ja toimintojen sovelluksista muihin Dynamics 365 -sovelluksiin. Integroitu tuotetietomalli voidaan tuoda yhtenäisen tuotekokemuksen avulla Dataverseen, jolloin kaikki sovelluksen käyttäjät, myös Power Platform -käyttäjät, voivat hyödyntää taloushallinnon ja toimintojen sovelluksista saatavia monipuolisia tuotetietoja.
 
 Salesin tuotetietomalli.
 
 ![CE-tuotetietomalli.](media/dual-write-product-4.jpg)
 
-Finance and Operations -sovellusten tuotetietomalli.
+Taloushallinnon ja toimintojen sovellusten tuotetietomalli.
 
-![Tuotetietomalli Finance and Operationsissa.](media/dual-write-products-5.jpg)
+![Finance and Operationsin tuotetietomalli.](media/dual-write-products-5.jpg)
 
 Nämä kaksi tuotetietomallia on integroitu Dataversessä seuraavan kuvan osoittamalla tavalla.
 
 ![Dynamics 365 -sovellusten tuotetietomalli.](media/dual-write-products-6.jpg)
 
-Tuotteiden kaksoiskirjoituksen taulukartat on suunniteltu vain yksisuuntaista tiedonkulkua varten, ja tieto kulkee Finance and Operations -sovelluksista Dataverseen lähes reaaliaikaisesti. Tuoteinfrastruktuuri on kuitenkin avoin, joten se voidaan tarvittaessa muuttaa kaksisuuntaiseksi. Vaikka voit mukauttaa sitä omalla vastuullasi, Microsoft ei suosittele tätä lähestymistapaa.
+Tuotteiden kaksoiskirjoituksen taulukkokartat on suunniteltu vain yksisuuntaista tiedonkulkua varten, ja tieto kulkee taloushallinnon ja toimintojen sovelluksista Dataverseen lähes reaaliaikaisesti. Tuoteinfrastruktuuri on kuitenkin avoin, joten se voidaan tarvittaessa muuttaa kaksisuuntaiseksi. Vaikka voit mukauttaa sitä omalla vastuullasi, Microsoft ei suosittele tätä lähestymistapaa.
 
 ## <a name="templates"></a>Mallit
 
 Tuotetiedot sisältävät kaiken tuotteeseen liittyvät tiedot ja tuotteen määrityksen, kuten tuotedimensiot tai seuranta- ja varastodimensiot. Seuraava taulukko osoittaa, miten taulukarttakokoelma luodaan synkronoimaan tuotteita ja liittyviä tietoja.
 
-Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset | kuvaus
+Taloushallinnon ja toimintojen sovellukset | Muut Dynamics 365 -sovellukset | Kuvaus
 -----------------------|--------------------------------|---
-[Kaikki tuotteet](mapping-reference.md#138) | msdyn_globalproducts | Kaikkien tuotteiden taulu sisältää kaikki tuotteet, jotka ovat käytettävissä Finance and Operations -sovelluksessa – siis sekä vapautetut tuotteet että tuotteet, joita ei ole vapautettu.
+[Kaikki tuotteet](mapping-reference.md#138) | msdyn_globalproducts | Kaikkien tuotteiden taulukko sisältää kaikki tuotteet, jotka ovat käytettävissä taloushallinnon ja toimintojen sovelluksessa – siis sekä vapautetut tuotteet että tuotteet, joita ei ole vapautettu.
 [CDS-vapautetut erilliset tuotteet](mapping-reference.md#213) | Tuote | **Tuote**-taulun sarakkeet määrittävät tuotteen. Se sisältää yksittäisiä tuotteita (tuotteita, joissa on alatyypin tuote) ja tuotevariantteja. Yhdistämismääritykset ovat seuraavassa taulukossa.
 [Värit](mapping-reference.md#170) | msdyn\_productcolors
 [Konfiguraatiot](mapping-reference.md#171) | msdyn\_productconfigurations
@@ -61,7 +61,7 @@ Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset | kuvaus
 [Päätuotteen tyylit](mapping-reference.md#191) | msdyn_sharedproductstyles | **Jaettu tuotetyyli** -taulu ilmaisee tyylit, joita tietyllä päätuotteella voi olla. Tämä käsite siirretään Dataverseen, jotta tiedot pysyvät yhdenmukaisina.
 [Tuotenumeron viivakoodi](mapping-reference.md#164) | msdyn\_productbarcodes | Tuotteen viivakoodeja käytetään tuotteiden yksilöimiseen.
 [Tuotekohtaiset yksikkömuunnokset](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Vapautetut tuotteet V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails**-taulu sisältää ne Finance and Operations -sovellusten sarakkeet, jotka määrittävät tuotteen ja jotka sisältävät tuotteen taloudelliset ja hallinnolliset tiedot.
+[Vapautetut tuotteet V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails**-taulu sisältää ne taloushallinnon ja toimintojen sovellusten sarakkeet, jotka määrittävät tuotteen ja jotka sisältävät tuotteen taloudelliset ja hallinnolliset tiedot.
 [Koot](mapping-reference.md#174) | msdyn\_productsizes
 [Varastodimensioryhmät](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | Tuotteen varastodimensioryhmä ilmaisee menetelmän, jolla tuotteiden sijoittaminen varastoon määritetään.
 [Tyylit](mapping-reference.md#178) | msdyn\_productsytles
@@ -81,19 +81,19 @@ Koska tuote ilmaista varastointiyksikkönä, käsitteet erilliset tuotteet, pä�
 
 ![Tuotteiden tietomalli.](media/dual-write-product.png)
 
-Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos**-tilassa. Ne lisätään ensimmäiseen hinnastoon siinä valuutassa, jota käytetään asiakkaiden aktivointisovelluksessa, ja käyttämällä aakkosellista lajittelua hinnaston nimen mukaan. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan Finance and Operations -sovelluksessa. Jos ilmoitetulla valuutalla ei ole hinnastoa, hinnasto luodaan automaattisesti ja tuote määritetään siihen.
+Kun kaksoiskirjoitustoiminto on käytössä, Finance and Operationsin tuotteet synkronoidaan muissa Dynamics 365 -tuotteissa **Luonnos**-tilassa. Ne lisätään ensimmäiseen hinnastoon siinä valuutassa, jota käytetään asiakkaiden aktivointisovelluksessa, ja käyttämällä aakkosellista lajittelua hinnaston nimen mukaan. Ne siis toisin sanoen lisätään ensimmäiseen Dynamics 365 -sovelluksen hinnastoon, joka vastaa sen yrityksen valuuttaa, jossa tuote vapautetaan taloushallinnon ja toimintojen sovelluksessa. Jos ilmoitetulla valuutalla ei ole hinnastoa, hinnasto luodaan automaattisesti ja tuote määritetään siihen.
 
-Finance and Operations -sovellukseen liittyvän valuutan yksikköhaun oletusarvoiseen hintaluetteloon liittävän kaksoiskirjoituksen laajennusten nykyinen toteutus ja asiakasvuorovaikutusovelluksen ensimmäinen hinnasto käyttävät aakkosellista lajittelua hinnaston nimessä. Jos haluat määrittää tietyn valuutan oletushintaluettelon, kun valuuttaa varten on useita hinnastoja, hintaluettelon nimi on päivitettävä aakkosjärjestyksessä aiempaan nimeen kuin muut saman valuutan hinnastoissa. Jos tietyllä valuutalla ei ole hinnastoa, uusi hinnasto luodaan.
+Taloushallinnon ja toimintojen sovellukseen liittyvän valuutan yksikköhaun oletusarvoiseen hintaluetteloon liittävän kaksoiskirjoituksen laajennusten nykyinen toteutus ja asiakasvuorovaikutussovelluksen ensimmäinen hinnasto käyttävät aakkosellista lajittelua hinnaston nimessä. Jos haluat määrittää tietyn valuutan oletushintaluettelon, kun valuuttaa varten on useita hinnastoja, hintaluettelon nimi on päivitettävä aakkosjärjestyksessä aiempaan nimeen kuin muut saman valuutan hinnastoissa. Jos tietyllä valuutalla ei ole hinnastoa, uusi hinnasto luodaan.
 
-Finance and Operations -sovellusten oletustuotteet synkronoidaan muihin Dynamics 365 -sovelluksiin **Luonnos**-tilassa. Jos haluat synkronoida **Aktiivinen**-tilassa olevan tuotteen, jotta sitä voi käyttää esimerkiksi suoraan myyntitilauksen tarjouksissa, seuraavat asetukset on valittava: valitse ensin **Järjestelmä> Hallinto > Järjestelmän hallinta > Järjestelmäasetukset > Sales**-välilehti ja sitten **Luo tuotteet aktiivisessa tilassa = kyllä**.
+Taloushallinnon ja toimintojen sovellusten oletustuotteet synkronoidaan muihin Dynamics 365 -sovelluksiin **Luonnos**-tilassa. Jos haluat synkronoida **Aktiivinen**-tilassa olevan tuotteen, jotta sitä voi käyttää esimerkiksi suoraan myyntitilauksen tarjouksissa, seuraavat asetukset on valittava: valitse ensin **Järjestelmä> Hallinto > Järjestelmän hallinta > Järjestelmäasetukset > Sales**-välilehti ja sitten **Luo tuotteet aktiivisessa tilassa = kyllä**.
 
-Tuotteita synkronoitaessa on annettava arvo **Myyntiyksikkö**-kenttään Finance and Operations -sovelluksessa, koska se on pakollinen kenttä Salesissa.
+Tuotteita synkronoitaessa on annettava arvo **Myyntiyksikkö**-kenttään taloushallinnon ja toimintojen sovelluksessa, koska se on pakollinen kenttä Salesissa.
 
 Tuoteperheiden luomista Dynamics 365 Salesista ei tueta tuotteiden kaksoiskirjoituksen synkronoinnissa.
 
-Tuotteet synkronoidaan Finance and Operations -sovelluksesta Dataverseen. Tämän vuoksi tuotetaulusarakkeiden arvot voidaan muuttaa Dataversessa, mutta kun synkronointi käynnistyy (tuotesaraketta muokataan Finance and Operations -sovelluksessa), se korvaa Dataversen arvot.
+Tuotteet synkronoidaan taloushallinnon ja toimintojen sovelluksesta Dataverseen. Tämän vuoksi tuotetaulusarakkeet arvot voidaan muuttaa Dataversessa, mutta kun synkronointi käynnistyy (tuotesaraketta muokataan taloushallinnon ja toimintojen sovelluksessa), se korvaa Dataversen arvot.
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset |
 ---|---
 [CDS-vapautetut erilliset tuotteet](mapping-reference.md#213) | Tuote |
 [Vapautetut tuotteet V2](mapping-reference.md#189) | msdyn_sharedproductdetails |
@@ -105,7 +105,7 @@ Tuotedimensiot ovat ominaisuuksia, joilla voidaan tuotevariantti tunnistetaan. N
 
 ![Tuotedimensioiden tietomalli.](media/dual-write-product-two.png)
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset |
 ---|---
 [Värit](mapping-reference.md#170) | msdyn\_productcolors
 [Koot](mapping-reference.md#174) | msdyn\_productsizes
@@ -116,7 +116,7 @@ Kun tuotteella on erilaisia tuotedimensioita (esimerkiksi koko ja väri ovat pä
 
 Päätuotteen käytössä olevien tuotedimensioiden seuraamista varten on luotu seuraavat taulut, jotka on yhdistetty kunkin tuotedimension osalta Dataverseen. Lisätietoja on kohdassa [Tuotetietojen yleiskatsaus](../../../../supply-chain/pim/product-information.md).
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset |
 ---|---
 [Päätuotteen värit](mapping-reference.md#187) | msdyn_sharedproductcolors |
 [Päätuotteen konfiguraatiot](mapping-reference.md#188) | msdyn_sharedproductconfigurations |
@@ -128,7 +128,7 @@ Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
 
 Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Näitä tietoja voidaan käyttää Dataversessa käyttämällä tilauksen oletusasetusten ja tuotekohtaisen tilauksen oletusasetusten yksikön avulla. Lisätietoja toiminnosta on kohdassa [Tilauksen oletusasetukset](../../../../supply-chain/production-control/default-order-settings.md).
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset |
 ---|---
 [Tilauksen oletusasetukset](mapping-reference.md#172) | msdyn_productdefaultordersettings |
 [Tuotteen oletustilausasetukset V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
@@ -139,9 +139,9 @@ Mittayksikkö ja sen muunnos ovat käytettävissä Dataversessa seuraavassa kuva
 
 ![Mittayksikön tietomalli.](media/dual-write-product-three.png)
 
-Mittayksikkökäsite on integroitu Finance and Operations- ja muiden Dynamics 365 -sovellusten välillä. Kullekin Finance and Operations -sovelluksen yksikköluokalle luodaan Dynamics 365 -sovelluksessa yksikköryhmä, joka sisältää yksikköluokkaan kuuluvat yksiköt. Jokaiselle yksikköryhmälle luodaan myös oletusarvoinen perusyksikkö.
+Mittayksikkökäsite on integroitu Finance and Operations- ja muiden Dynamics 365 -sovellusten välillä. Kullekin taloushallinnon ja toimintojen sovelluksen yksikköluokalle luodaan Dynamics 365 -sovelluksessa yksikköryhmä, joka sisältää yksikköluokkaan kuuluvat yksiköt. Jokaiselle yksikköryhmälle luodaan myös oletusarvoinen perusyksikkö.
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset |
 ---|---
 [Tuotekohtaiset yksikkömuunnokset](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
 [Yksiköt](mapping-reference.md#219) | uoms
@@ -151,30 +151,30 @@ Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
 
 ### <a name="initial-synchronization-of-units"></a>Yksiköiden ensimmäinen synkronointi
 
-Kun kaksoiskirjoitus on otettu käyttöön, Finance and Operations -sovellusten yksiköt synkronoidaan muihin Dynamics 365 -sovelluksiin. Finance and Operations -sovelluksista Dataversessä synkronoiduilla yksikköryhmillä on merkintäjoukko, joka ilmaisee niiden olevan ulkoisesti ylläpidettyjä.
+Kun kaksoiskirjoitus on otettu käyttöön taloushallinnon ja toimintojen sovellusten yksiköt synkronoidaan muihin Dynamics 365 -sovelluksiin. Taloushallinnon ja toimintojen sovelluksista Dataversessa synkronoiduilla yksikköryhmillä on merkintäjoukko, joka ilmaisee niiden olevan "ulkoisesti ylläpidettyjä".
 
 ### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Finance and Operations- ja muiden Dynamics 365 -sovellusten yksiköiden ja yksikköluokkien tai -ryhmien täsmäyttäminen
 
-Ensinnäkin on tärkeää huomata, että yksikön integrointiavain on msdyn_symbol. Tämän vuoksi tämän arvon on oltava yksilöivä Dataversen tai muun Dynamics 365 -sovelluksen arvo. Koska muissa Dynamics 365 -sovelluksissa Yksikköryhmän tunnus- ja Nimi-pari määrittää yksikön yksilöllisyyden, Finance and Operations -sovellusten ja Dataversen yksikkötietojen täsmäyttämisessä on otettava huomioon erilaisia skenaarioita.
+Ensinnäkin on tärkeää huomata, että yksikön integrointiavain on msdyn_symbol. Tämän vuoksi tämän arvon on oltava yksilöivä Dataversen tai muun Dynamics 365 -sovelluksen arvo. Koska muissa Dynamics 365 -sovelluksissa "Yksikköryhmän tunnus"- ja "Nimi"-pari määrittää yksikön yksilöllisyyden, taloushallinnon ja toimintojen sovellusten ja Dataversen yksikkötietojen täsmäyttämisessä on otettava huomioon erilaisia skenaarioita.
 
-Finance and Operations -sovellusten ja muiden Dynamics 365 -sovellusten samanlaiset tai päällekkäiset yksiköt:
+Taloushallinnon ja toimintojen sovellusten ja muiden Dynamics 365 -sovellusten samanlaiset tai päällekkäiset yksiköt:
 
-+ **Yksikkö kuuluu johonkin muun Dynamics 365 -sovelluksen yksikköryhmään, joka vastaa Finance and Operations -sovellusten liitettyä luokkaa**. Tässä tapauksessa muiden Dynamics 365 -sovellusten msdyn_symbol-sarakkeeseen on täytettävä Finance and Operations -sovellusten yksikkösymboli. Tämän vuoksi tietoja täsmäytettäessä yksikköryhmä määritetään ulkoisesti ylläpidetyksi muissa Dynamics 365 -sovelluksissa.
-+ **Yksikkö kuuluu johonkin muun Dynamics 365 -sovelluksen yksikköryhmään, joka ei vastaa Finance and Operations -sovellusten liitettyä luokkaa (Finance and Operations -sovelluksissa ei ole aiemmin luotua yksikköluokkaa muiden Dynamics 365 -sovellusten yksikköluokalle)**. Tässä tapauksessa kenttään msdyn_symbol on täytettävä satunnainen merkkijono. Huomaa, että tämän arvon on oltava yksilöivä muissa Dynamics 365 -sovelluksissa.
++ **Yksikkö kuuluu johonkin muun Dynamics 365 -sovelluksen yksikköryhmään, joka vastaa taloushallinnon ja toimintojen sovellusten liitettyä luokkaa**. Tässä tapauksessa muiden Dynamics 365 -sovellusten msdyn_symbol-sarakkeeseen on täytettävä taloushallinnon ja toimintojen sovellusten yksikkösymboli. Tämän vuoksi tietoja täsmäytettäessä yksikköryhmä määritetään ulkoisesti ylläpidetyksi muissa Dynamics 365 -sovelluksissa.
++ **Yksikkö kuuluu johonkin muun Dynamics 365 -sovelluksen yksikköryhmään, joka ei vastaa taloushallinnon ja toimintojen sovellusten liitettyä luokkaa (taloushallinnon ja toimintojen sovelluksissa ei ole aiemmin luotua yksikköluokkaa muiden Dynamics 365 -sovellusten yksikköluokalle).** Tässä tapauksessa kenttään msdyn_symbol on täytettävä satunnainen merkkijono. Huomaa, että tämän arvon on oltava yksilöivä muissa Dynamics 365 -sovelluksissa.
 
 Finance and Operationsin yksiköitä ja yksikköluokkia ei ole muissa Dynamics 365 -sovelluksissa:
 
-Kaksoiskirjoituksen osana Finance and Operations -sovellusten yksikköryhmät ja niitä vastaavat yksiköt luodaan ja synkronoidaan muissa Dynamics 365 -sovelluksissa ja Dataversessä. Lisäksi yksikköryhmä määritetään ulkoisesti ylläpidetyksi. Ylimääräisiä käynnistystoimia ei tarvita.
+Kaksoiskirjoituksen osana taloushallinnon ja toimintojen sovellusten yksikköryhmät ja niitä vastaavat yksiköt luodaan ja synkronoidaan muissa Dynamics 365 -sovelluksissa ja Dataversessa. Lisäksi yksikköryhmä määritetään "ulkoisesti ylläpidetyksi". Ylimääräisiä käynnistystoimia ei tarvita.
 
-Muiden Dynamics 365 -sovellusten yksiköitä ei ole Finance and Operations -sovelluksissa:
+Muiden Dynamics 365 -sovellusten yksiköitä ei ole taloushallinnon ja toimintojen sovelluksissa:
 
-Kaikkien yksiköiden msdyn_symbol-sarake on täytettävä. Yksiköt voidaan aina luoda Finance and Operations -sovellusten vastaavassa yksikköluokassa (jos sellainen on). Jos yksikköluokkaa ei ole, muiden Dynamics 365 -sovellusten yksikköryhmää vastaava ensimmäinen yksikköluokka on luotava. (Huomaa, että Finance and Operations -sovelluksissa ei voi luoda yksikköluokkaa muuten kuin laajentamalla, jos luettelointia laajennetaan.) Voit luoda sitten yksikön. Huomaa, että Finance and Operations -sovellusten yksikkösymbolin on oltava se msdyn_symbol, joka määritettiin yksikölle aiemmin muissa Dynamics 365 -sovelluksissa.
+Kaikkien yksiköiden msdyn_symbol-sarake on täytettävä. Yksiköt voidaan aina luoda taloushallinnon ja toimintojen sovellusten vastaavassa yksikköluokassa (jos sellainen on). Jos yksikköluokkaa ei ole, muiden Dynamics 365 -sovellusten yksikköryhmää vastaava ensimmäinen yksikköluokka on luotava. (Huomaa, että taloushallinnon ja toimintojen sovelluksissa ei voi luoda yksikköluokkaa muuten kuin laajentamalla, jos luettelointia laajennetaan.) Voit luoda sitten yksikön. Huomaa, että taloushallinnon ja toimintojen sovellusten yksikkösymbolin on oltava se msdyn_symbol, joka määritettiin yksikölle aiemmin muissa Dynamics 365 -sovelluksissa.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Tuotekäytännöt: dimensio-, seuranta- ja varastoryhmät
 
 Tuotekäytännöt ovat käytäntöjoukkoja, jolla määritetään varaston tuotteet ja niiden ominaisuudet. Tuotedimensioryhmää, tuotteen seurantadimensioryhmää ja varastodimensioryhmää voi etsiä tuotekäytäntöinä.
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset |
 ---|---
 [Tuotedimension ryhmät](mapping-reference.md#173) | msdyn\_productdimensiongroups |
 [Varastodimensioryhmät](mapping-reference.md#177) | msdyn_productstoragedimensiongroups |
@@ -182,7 +182,7 @@ Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
 
 ## <a name="product-hierarchies"></a>Tuotehierarkiat
 
-Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset |
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset |
 ---|---
 [Tuoteluokan määritykset](mapping-reference.md#167) | msdyn_productcategoryassignments |
 [Tuoteluokkahierarkiat](mapping-reference.md#168) | msdyn_productcategoryhierarchies |
@@ -201,12 +201,12 @@ Jos muodostat sovelluksia Dataversessä, kiinnitä huomiota **productnumber**-ko
 
 ### <a name="initial-synchronization-of-products"></a>Tuotteiden ensimmäinen synkronointi
 
-Kun kaksoiskirjoitus on otettu käyttöön, Finance and Operations -sovellusten tuotteet synkronoidaan Dataverseen ja muihin asiakkaan aktivointisovelluksiin. Dataversessä ja muissa Dynamics 365 -sovelluksissa ennen kaksoiskirjoituksen julkaisua luotuja tuotteita ei päivitetä eikä täsmäytetä Finance and Operations -sovellusten tuotetietojen kanssa.
+Kun kaksoiskirjoitus on otettu käyttöön, taloushallinnon ja toimintojen sovellusten tuotteet synkronoidaan Dataverseen ja muihin asiakkaan aktivointisovelluksiin. Dataversessa ja muissa Dynamics 365 -sovelluksissa ennen kaksoiskirjoituksen julkaisua luotuja tuotteita ei päivitetä eikä täsmäytetä taloushallinnon ja toimintojen sovellusten tuotetietojen kanssa.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Tuotetietojen täsmäyttäminen Finance and Operationsista ja muista Dynamics 365 -sovelluksista
 
 Jos samat tuotteet säilytetään (päällekkäiset tai vastaavat) Finance and Operationsissa sekä Dataversessa ja muissa Dynamics 365 -sovelluksissa, kun kaksoiskirjoitusta otetaan käyttöön, Finance and Operationsin tuotteiden synkronointi tehdään ja Dataversessa näkyy saman tuotteen rivien kaksoiskappaleita.
-Jotta näin ei tapahtuisi siinä tapauksessa, että muissa Dynamics 365 -sovelluksissa on tuotteita, jotka ovat Finance and Operationsin päällekkäisiä tai vastaavia tuotteita, kaksoiskirjoituksen käyttöönottavan järjestelmänvalvojan on käynnistettävä sarakkeet **Yritys** (esimerkki: USMF) ja **msdyn_productnumber** (esimerkki: 1234:Black:S), ennen kuin tuotteet synkronoidaan. Toisin sanoen näiden kahden Dataversen tuotteen sarakkeisiin on täytettävä se Finance and Operationsin yritys, johon tuote on täsmäytettävä, ja sen tuotenumero.
+Jotta näin ei tapahtuisi siinä tapauksessa, että muissa Dynamics 365 -sovelluksissa on tuotteita, jotka ovat päällekkäisiä tai vastaavia kuin Finance and Operationsin tuotteet, kaksoiskirjoituksen käyttöönottavan järjestelmänvalvojan on käynnistettävä sarakkeet **Yritys** (esimerkki: USMF) ja **msdyn_productnumber** (esimerkki: 1234:Black:S), ennen kuin tuotteet synkronoidaan. Toisin sanoen näiden kahden Dataversen tuotteen sarakkeisiin on täytettävä se Finance and Operationsin yritys, johon tuote on täsmäytettävä, ja sen tuotenumero.
 
 Kun synkronointi sitten otetaan käyttöön ja sitä käytetään, Finance and Operationsin tuotteet synkronoidaan vastaaviin Dataversen ja muiden Dynamics 365 -sovellusten tuotteisiin. Tämä koskee sekä erillisiä tuotteita että tuotevariantteja.
 

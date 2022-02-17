@@ -2,7 +2,7 @@
 title: Uuden sivuston sivun lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten uusi sivu lisätään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b031431499eba0e109ac04dc46ec187250eba694284864bf78bb1f90265d788
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725383"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090716"
 ---
 # <a name="add-a-new-site-page"></a>Uuden sivuston sivun lisääminen
 
@@ -33,11 +33,11 @@ Kun olet luonut sivustoon malleja ja osia, seuraava vaihe on luoda sivuja, jotka
 
 Voit käyttää uudella sivulla mallia tai asettelua. Lisätietoja on kohdassa [Mallien ja asettelujen yleiskatsaus](templates-layouts-overview.md).
 
-## <a name="page-name"></a>Sivun nimi
+## <a name="specify-the-page-name"></a>Määritä sivun nimi
 
-Sivun nimen on oltava yksilöllinen. Sen on oltava kuvaava, jotta voit löytää sen helposti ja muut tietävät, mitä varten sivu on tarkoitettu. Valitse sivun nimi huolellisesti, koska sitä ei voi muuttaa myöhemmin.
+Sivun nimen on oltava yksilöllinen sivustossa ja sen on oltava kuvaava, jotta voit löytää sen helposti ja muut tietävät, mitä varten sivu on tarkoitettu. Voit nimetä sivun myöhemmin uudelleen muokkaamalla sivua ja valitsemalla sitten kynäsymbolin ominaisuusruudussa sivun nimen vierestä.
 
-## <a name="page-url"></a>Sivun URL
+## <a name="specify-the-page-url"></a>Määritä sivun URL-osoite
 
 Voit määrittää uuden sivun URL-osoitteen. Kun luot sivun, voit kirjoittaa merkkijonon, jota käytetään täydellisen URL-osoitteen määrittämiseen. Tämä merkkijono on suhteellinen URL-osoite tai URL-osoitteen kuvaava osa. Koko URL-osoite muodostetaan URL-osoitteen kuvaavan osan perusteella. Uusi sivu liitetään siihen. Voit muuttaa URL-osoitteen kuvaavaa osaa myöhemmin ennen sivun julkaisemista. Lisätietoja on kohdassa [Sivun URL-osoitteen luominen](create-page-URL.md).
 

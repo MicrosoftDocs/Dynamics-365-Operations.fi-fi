@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations -sovellusten tai elinkaaripalveluiden (LCS) tuen saaminen
-description: Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
+title: Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
+description: Tässä aiheessa kerrotaan taloushallinnon ja toimintojen sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713331"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068031"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations -sovellusten tai elinkaaripalveluiden (LCS) tuen saaminen
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta. 
+
+[!INCLUDE [PEAP](../../../includes/peap-2.md)]
+
+Tässä aiheessa kerrotaan taloushallinnon ja toimintojen sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta. 
 
 <table>
 <thead>
@@ -48,7 +51,7 @@ Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft 
 <td>Voit etsiä <a href="https://lcs.dynamics.com/">LCS</a>-sivustossa <strong>Ongelmanhaku</strong>-työkalun avulla nopeasti Microsoft Knowledge Base (KB) -artikkeleita, hotfix-korjauksia ja ilmoitettujen ongelmien ratkaisuehdotuksia. Näet, mitä ilmoitettuja ongelmia korjataan parhaillaan tai mitkä on jo korjattu tiettyjen toiminta-alueiden osalta. Lisätietoja on kohdassa <a href="issue-search-lcs.md">Ongelmahaku (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Hae tukea Finance and Operations -sovelluksessa.</td>
+<td>Hanki tukea taloushallinnon ja toimintojen sovelluksessa.</td>
 <td>Valitse sovelluksen oikeasta yläkulmasta <strong>Ohje</strong>-painike (<strong>?</strong>) ja valitse sitten <strong>Tuki</strong>. Ongelmista ilmoitetaan LCS:n <strong>Aktiiviset ongelmat</strong> -välilehdessä. Siellä järjestelmänvalvojat voivat määrittää, haluavatko he tarjota sisäistä tukea vai lähettää ongelmat Microsoftille.</td>
 </tr>
 <tr>

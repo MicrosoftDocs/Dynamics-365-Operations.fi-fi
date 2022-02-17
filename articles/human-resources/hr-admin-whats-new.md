@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15a46c73da664f9133ce45149f1e2dd5e7b94fbc
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: 86322fdf14bdefb5c9d4793a69e95ca913843e53
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902530"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087521"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resourcesin uudet ja muuttuneet ominaisuudet
+
+> [!IMPORTANT]
+> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä erillistä Dynamics 365 Human Resourcesia käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat käytettävissä osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.25 jälkeen.  
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

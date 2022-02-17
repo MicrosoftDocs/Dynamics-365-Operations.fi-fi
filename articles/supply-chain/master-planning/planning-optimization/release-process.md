@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2e0145c28b40f4fbfb54ad7e7ed32fbc130c569
-ms.sourcegitcommit: 8afd0cdb39ec443fb7631c39401967cce0fac34e
+ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7727429"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087163"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Suunnittelun optimoinnin julkaisuprosessi ja julkaisuhistoria
 
@@ -33,6 +33,8 @@ Koska ilmoitukset eivät näy, kun suunnittelun optimointi päivitetään ympär
 
 | Muutokset | Ominaisuuksien hallinnan tiedot | Vapautuspäivät |
 |---|---|---|
+| <p>Tuotantotilausten suunnittelun prioriteetin tuki lisätty. | Saatavana versiossa 10.0.25 osana toimintoa nimeltä *Suunnittelun optimointiin perustuva prioriteetin MRP-tuki*. | 12.-18.11.2021 |
+| <p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuksien hallintaa ei tarvita. | 12.-18.11.2021 |
 | <p>Lisättiin käsittelyajan laskentakaavojen, päällekkäisen tuotantoreitin ja tuotannon työvaihenumeron toimintojen tuki tarvetapahtumissa.</p><p>Parannettiin tuotannon aikataulutuksen virhesanomia, jotka liittyvät aikakatkaisuun, kapasiteettiin, jota ei löytynyt, ja sykliseen reittiin.</p><p>Parannettiin yhdenmukaisuutta laskettaessa vastaanotto- ja varasto-ottopäivämääriä sekä suunnitelluissa että vahvistetuissa tilauksissa.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus* | 22.–27. lokakuuta 2021 |
 | <p>Lisättiin hävikkiprosentin huomioonottamisen tuki aikalaskentaa käsiteltäessä.</p><p>Lisättiin työvaihenumeron ja materiaalin käytön aikataulutuksen aikainen tuki. | Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus* | 5.–7. lokakuuta 2021 |
 | <p>Lisättiin tuotantoreittien työtyyppien tuki: **Jonon ennen**, **Jono jälkeen** ja **Kuljetusaika**.</p><p>Yleiset suorituskyvyn, laadun ja vakauden parannukset. | Ominaisuuden nimi: *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus* | 25.–30. syyskuuta 2021 |

@@ -1,6 +1,6 @@
 ---
 title: Integroitu vero
-description: Tässä aiheessa kuvataan verotietojen integraatiota Finance and Operationsin ja Dataversen välillä.
+description: Tässä ohjeaiheessa käsitellään verotietojen integraatiota Finance and Operationsin ja Dataversen välillä.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d1e74bbbeba019ca48dd823b58251643e96edd0c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782207"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063184"
 ---
 # <a name="integrated-tax"></a>Integroitu vero
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Veron asetustiedot määrittävät sekä välillisten verojen (ALV, GST-vero) ja ennakonpidätyksen asetukset Siinä käsitellään veron laskentasääntö, veroprosentti, verokirjanpito, tilitys ja muut käsitteet.
 
@@ -28,7 +28,7 @@ Veron asetustiedot määrittävät sekä välillisten verojen (ALV, GST-vero) ja
 
 Verotiedot sisältävät taulukarttojen kokoelman, joita käytetään yhdessä tietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-| Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset | kuvaus |
+| Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset | Kuvaus |
 |-----------------------------|-----------------------------------|-------------|
 [Nimikkeen arvonlisäveroryhmä](mapping-reference.md#196) | msdyn_taxitemgroups | |
 [Alv-viranomaiset](mapping-reference.md#193) | msdyn_taxauthorities | |
