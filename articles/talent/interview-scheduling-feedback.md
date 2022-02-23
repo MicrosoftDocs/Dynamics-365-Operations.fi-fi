@@ -102,6 +102,3 @@ Jos **Peri palautteeseen osallistujat työhönottoryhmältä** -kenttä valitaan
 Valinnaisessa haastattelutehtävässä on kolme osaa: **ehdokkaan käytettävyystietojen pyytäminen**, **aikataulu** ja **palaute**. Käytä työmallin haastattelutehtävää, jos haluat kaikki ehdokkaan käytettävyystietojen pyytämiset aikataulun ja palautteen prosessin osaksi sen sijaan, että käyttäisit niitä yksittäin.
 
 Voit sisällyttää tai rajoittaa haastateltavia ehdokkaita valitsemalla arvon **Ketä haastattelet** -kentässä. Käytettävissä ovat seuraavat vaihtoehdot: **Kaikki ehdokkaat**, **Ulkoiset ehdokkaat** ja **Sisäiset ehdokkaat**. Jos haluat esimerkiksi ohittaa sisäiset ehdokkaat haastatteluiden ensimmäisellä kierroksella, määritä **Ketä haastattelet** -kentän arvoksi **Ulkoiset ehdokkaat**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

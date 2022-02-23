@@ -2,13 +2,16 @@
 title: Määritteiden ja määriteryhmien hallinta
 description: Näiden ohjeiden avulla voit kuvata tuotteen ja sen ominaisuudet käyttäjän kenttämääritteiden avulla.
 author: ashishmsft
+manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727651"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411952"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Määritteiden ja määriteryhmien hallinta
 
@@ -43,7 +46,7 @@ Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 |            | Komposiittituloja         | 0–10                        | 2             |
 |            | Komponenttituloja         | 0–10                        | 1             |
 | LCD-näyttö        | 3D-valmius                 | Kyllä tai Ei                   | Kyllä           |
-|            | 3D käytössä               | Kyllä tai Ei                   | Ei            |
+|            | 3D käytössä               | Kyllä tai Ei                   | En            |
 | Plasma     | Toimintalämpötila vähintään      | 0–43 astetta              | 32            |
 |            | Toimintalämpötila korkeintaan        | 0–43 astetta              | 100           |
 | Projektio | Projektiokuvaputken takuu | 6, 12, tai 18 kuukautta         | 12            |
@@ -70,7 +73,7 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
     - Anna toisen määritetyypin nimeksi **Linssin muoto** ja lisää seuraavat arvot: **Soikea**, **Neliö** ja **Suorakaide**.
     - Anna toisen määritetyypin nimeksi **Aurinkolasien merkki** ja lisää seuraavat arvot: **Ray ban**, **Aviator** ja **Oakley**.
 
-![Määritetyypit.](media/AttributeType.png)
+![Määritetyypit](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Määritteen määrittäminen
 
@@ -79,7 +82,7 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
 3. Luo määrite, jonka nimi on **Linssi**.
 4. Määritä **Määritteen tyyppi** -kentän arvoksi **Linssin muoto**.
 
-![Määritteet.](media/Attribute.png)
+![Ominaisuudet](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Määritteen metatiedot
 
@@ -101,7 +104,7 @@ Muut **Määritteet**-sivun määritteen metatietoasetukset:
 
 Nämä asetukset oli tarkoitettu alun perin verkkokaupan hakutoimintojen parantamista varten. Vaikka verkkokauppa ei ole heti käytettävissä Commercessa, se sisältää eCommerce Publishing Software Development Kitin (SDK). Asiakkaat voivat viedä tuotteita tämän SDK:n avulla valitsemaansa hakuindeksiin. Vaikka tuotetiedot tuodaan, asiakkaiden on silti voitava erottaa toisistaan haettavissa olevat tiedot, tiedot, joissa voidaan tehdä hakuja ja niin edelleen. Tällä tavoin voidaan luoda optimaalinen indeksi, jolla voi varmistaa, että vain *heidän mielestään* indeksoitavat määritteet indeksoidaan.
 
-Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](/SharePoint/search/search-schema-overview).
+Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Määritteiden suodatusasetukset
 
@@ -134,7 +137,7 @@ Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suod
     - 200–500
     - 500 tai enemmän
 
-![Määritteen suodatusasetukset.](media/AttributeFilterSettings.PNG)
+![Määritteen suodatusasetukset](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Määriteryhmät
 
@@ -142,7 +145,7 @@ Kun määritteet on määritetty, ne voidaan määrittää määriteryhmiin *Mä
 
 Voit määrittää oletusarvot myös määriteryhmään sisältyvillä määritteille. Voit esimerkiksi lisätä värin määritteen määriteryhmään ja valita määritteen oletusarvoksi **sinisen**. Kun määriteryhmä sitten lisätään tuotteeseen, jossa väri on yksi määritteistä, **Sininen** näkyy kyseisen tuotteen oletusvärinä.
 
-![Määriteryhmät.](media/AttributeGroup.png)
+![Määriteryhmät](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Luo ominaisuusryhmä
 
@@ -155,7 +158,7 @@ Voit määrittää oletusarvot myös määriteryhmään sisältyvillä määritt
 
 Vähintään yksi määriteryhmä voidaan liittää luokkasolmuihin seuraavan tyyppisiä vähittäismyynnin luokkahierarkioissa: Commerce-tuotehierarkia, Kanavan siirtymisluokkahierarkia ja Lisätuoteluokkahierarkia. Kun tuotteet sitten luokitellaan, ne perivät määriteryhmiin sisältyvät määritteet.
 
-![Tuotehierarkia – Tuotemääriteryhmät.](media/AGRetailProdHierarchy.PNG)
+![Tuotehierarkia – tuotemääriteryhmät](media/AGRetailProdHierarchy.PNG)
 
 Määritä määriteryhmät luokkiin Commerce-tuotehierarkiassa seuraavasti.
 
@@ -200,7 +203,7 @@ Vähintään yksi määriteryhmä voidaan liittää vähintään yhteen myymäl�
     3. Valitse ensin **Muodin asusteet** -luokkasolmu, sitten **Merkkiaurinkolasit**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
     4. Valitse ensin **Miesten vaatteet** -luokkasolmu, sitten **Housut**-luokka ja lopuksi **Kanavan tuotemääritteet** -pikavälilehdessä kunkin määritteen kohdalla **Sisällytä määrite**.
 
-![Kanavaluokat ja tuotemääritteet – Määriteryhmät.](media/CCPAttrGrp.png)
+![Kanavaluokat ja tuotemääritteet – määriteryhmät](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Määritearvojen ohittaminen
 
@@ -214,7 +217,7 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 4. Valitse tarvittava tuote ruudukossa. Valitse sitten toimintoruudun **Tuote**-välilehden **Asetukset**-ryhmässä **Tuotemääritteet**.
 5. Valitse määrite vasemmassa ruudussa ja päivitä sen arvo oikeassa ruudussa.
 
-![Tuotetiedot-sivu – Tuotemääriteryhmät.](media/ProdDetailsProdAttrValues.png)
+![Tuotetiedot-sivu – tuotemääriteryhmät](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Luettelon tuotteiden määritearvojen ohittaminen
 
@@ -233,7 +236,7 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
     > [!NOTE]
     > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin tuotteisiin.
 
-![Luettelon tuotemääriteryhmät.](media/CatalogProdAttrValues.png)
+![Luettelon tuotemääriteryhmät](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Kanavan tuotteiden määritearvojen ohittaminen
 
@@ -254,6 +257,3 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 
     > [!NOTE]
     > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin tuotteisiin.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

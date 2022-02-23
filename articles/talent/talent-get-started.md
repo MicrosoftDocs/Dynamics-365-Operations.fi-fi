@@ -66,6 +66,3 @@ Ratkaisuja koskevia mielipiteitä, uutisia ja muita ostoreskontraa koskevia tiet
 ### <a name="videos"></a>Videot
 Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

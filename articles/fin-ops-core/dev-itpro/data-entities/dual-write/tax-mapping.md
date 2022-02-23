@@ -1,24 +1,35 @@
 ---
 title: Integroitu vero
-description: Tässä ohjeaiheessa käsitellään verotietojen integraatiota Finance and Operationsin ja Dataversen välillä.
-author: tonyafehr
+description: Tässä aiheessa kuvataan verotietojen integraatiota Finance and Operationsin ja Dataversen välillä.
+author: robinarh
+manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.author: tfehr
+ms.search.industry: ''
+ms.author: rhaertle
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 14c22dd6602b5fbf866c8dc6b057f6c8acb1f48f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063184"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679293"
 ---
 # <a name="integrated-tax"></a>Integroitu vero
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -28,14 +39,30 @@ Veron asetustiedot määrittävät sekä välillisten verojen (ALV, GST-vero) ja
 
 Verotiedot sisältävät taulukarttojen kokoelman, joita käytetään yhdessä tietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-| Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset | Kuvaus |
-|-----------------------------|-----------------------------------|-------------|
-[Nimikkeen arvonlisäveroryhmä](mapping-reference.md#196) | msdyn_taxitemgroups | |
-[Alv-viranomaiset](mapping-reference.md#193) | msdyn_taxauthorities | |
-[Arvonlisäveron verovapauskoodin yksikkö CDS:lle](mapping-reference.md#194) | msdyn_taxexemptcodes | |
-[Arvonlisäveroryhmät](mapping-reference.md#195) | msdyn_taxgroups | |
-[Arvonlisäveron kirjanpidon kirjausryhmät V2](mapping-reference.md#197) | msdyn_taxpostinggroups | |
-[Ennakonpidätyskoodit](mapping-reference.md#210) | msdyn_withholdingtaxcodes | |
-[Ennakonpidätysryhmät](mapping-reference.md#211) | msdyn_withholdingtaxgroups | |
+Finance and Operations -sovellukset | Dynamics 365:n mallipohjaiset sovellukset | kuvaus |
+-------------------------|---------------------------------|----|
+Nimikkeen arvonlisäveroryhmä | msdyn_taxitemgroups |
+Alv-viranomaiset | msdyn_taxauthorities |
+Arvonlisäveron verovapauskoodin yksikkö CDS:lle | msdyn_taxexemptcodes |
+Arvonlisäveroryhmät | msdyn_taxgroups |
+Arvonlisäveron kirjanpidon kirjausryhmät V2 | msdyn_taxpostinggroups |
+Ennakonpidätyskoodit | msdyn_withholdingtaxcodes |
+Ennakonpidätysryhmät | msdyn_withholdingtaxgroups | 
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+[!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
+
+[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
+
+[!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
+
+[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
+
+[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
+
+[!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
+
+[!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
+

@@ -1,26 +1,29 @@
 ---
 title: Kirjaaminen johdettujen kirjojen avulla
 description: Tässä artikkelissa kerrotaan, miten johdettuja kirjoja käytetään.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef0c7b2ad93f4a9c4ff24052c749f7891f9e915d
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 2b58b2da949211f7eef804af98c866bf5074d47f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675416"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442628"
 ---
 # <a name="post-with-derived-books"></a>Kirjaaminen johdettujen kirjojen avulla
 
@@ -52,10 +55,7 @@ Kun hankintahinta kirjataan käyttöomaisuudelle, jonka kirja on AM 1, hankintah
 > [!NOTE]                                                                                                         
 > Jos et käytä johdettuja poistokirjoja, sinun on tehtävä käyttöomaisuuden hankintahinnan kirjaus sekä kirjaa AM 1 että kirjaa AM 2 varten.
 
-Lisätietoja on kohdassa [Johdetut kirjat](derived-books.md).
+Lisätietoja on kohdassa [Johdetut kirjat](derived-books.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

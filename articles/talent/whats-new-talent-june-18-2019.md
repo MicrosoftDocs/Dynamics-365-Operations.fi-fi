@@ -86,6 +86,3 @@ Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuor
 ### <a name="print-performance-reviews"></a>Kehityskeskustelujen tulostaminen
 
 Työntekijät, esimiehet ja henkilöstöhallinto voi tulostaa työntekijän kehityskeskustelun.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

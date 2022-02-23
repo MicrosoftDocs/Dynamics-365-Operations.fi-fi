@@ -1,33 +1,31 @@
 ---
 title: Tietokannan lokikirjauksen määrittäminen ja hallinta
 description: Voit seurata Dynamics 365 Human Resourcesin taulukoiden ja kenttien muutoksia tietokantakirjausten avulla.
-author: twheeloc
-ms.date: 12/15/2021
+author: Darinkramer
+manager: AnnBe
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066437"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418326"
 ---
 # <a name="configure-and-manage-database-logging"></a>Tietokannan lokikirjauksen määrittäminen ja hallinta
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Voit seurata Dynamics 365 Human Resourcesin taulukoiden ja kenttien muutoksia tietokantakirjausten avulla. Tässä ohjeaiheessa käsitellään seuraavia:
 
@@ -68,22 +66,7 @@ Voit parantaa suorituskykyä rajaamalla lokikirjausten määrää ja valitsemall
 Tietokantakirjauksen voi määrittää käyttämällä ohjattua **Tietokantamuutosten kirjaaminen lokiin** -toimintoa. Ohjattu toiminto on joustava tapa määrittää taulukoiden tai kenttien lokiin kirjaaminen.
 
 1. Valitse **Järjestelmänvalvoja > Linkit > Tietokanta > Tietokantalokin asetukset**. Käynnistä ohjattu **Tietokantamuutosten kirjaaminen lokiin** -toiminto valitsemalla **Uusi**.
-2. Valitse **Seuraava**. 
-3. Valitse ohjatun toiminnon **Taulut ja kentät** -sivulla taulut ja kentät, joille tietokannan lokiin kirjaamisen haluat ottaa käyttöön, ja valitse **Seuraava**.
-
-   > [!Note]
-   > Tietokannan lokiinkirjaus ei ole käytettävissä kaikissa Human Resources -tietokannan taulukoissa. Jos valitset **Näytä kaikki taulukot** luettelon alapuolella taulujen ja kenttien luettelo laajennetaan näyttämään kaikkien ne tietokantataulut, joiden tietokantaloki on käytettävissä, mutta tämä on kaikkien tietokantataulujen luettelon osajoukko.
-
-4. Valitse ohjatun toiminnon **Muutostyypit**-sivulla tietotoiminnot, joiden muutoksia haluat seurata kullekin taululle ja kentälle, ja valitse sitten **Seuraava**. Alla olevassa taulukossa on lokiin kirjattavissa olevien tietotoimintojen kuvaus.
-5. Tarkista tehdyt muutokset **Valmis**-sivulla ja valitse **Valmis**.
-
-| Toiminto | kuvaus |
-| -- | -- |
-| Seuraa uusia tapahtumia | Luo loki tauluun luoduille uusille tietueille. |
-| Päivitys | Luo loki taulutietueiden päivitystä varten tai taulun yksittäisten kenttien päivitykselle. Jos kirjaat lokiin taulun päivitykset, lokitietue luodaan aina, kun taulun mihin tahansa tietueen kenttään tehdään päivitys. Jos kirjaat lokiin tiettyjen kenttien päivitykset, lokitietue luodaan vain, kun taulutietueiden kyseisiin kenttiin tehdään päivityksiä. |
-| Delete-näppäin | Luo loki taulusta poistettuja tietueita varten. |
-| Nimeä tunnus uudelleen | Luo lokitietue, kun taulun avain nimetään uudelleen. |
-
+2. Suorita ohjattu toiminto loppuun.
 
 ## <a name="clean-up-database-logs"></a>Tietokantalokien tyhjentäminen
 
@@ -96,14 +79,11 @@ Voit poistaa kaikki tietokantalokit tai osan niistä seuraavien vaihtoehtojen av
 Tietokantalokin tyhjentäminen määritetään seuraavasti: 
 
 1. Valitse **Järjestelmänvalvoja > Linkit > Tietokanta > Tietokantaloki**. Valitse **Tyhjennä loki**.
-2. Valitse **Suodatus** **Sisällytettävät tietueet** -osassa.
-3. Valitse poistettavien lokien valitsemismenetelmä. Valitse jompikumpi seuraavista vaihtoehdoista:
 
-   - Taulun ID-tunnus
+2. Valitse poistettavien lokien valintamenetelmä antamalla jokin seuraavista vaihtoehdoista:
+
+   - Taulun tunnus
    - Lokin tyyppi
    - Luonnin päivämäärä ja aika
 
-4. Määritä lokin tyhjentämistehtävän suorittamisen ajankohta **Tietokantalokin tyhjentäminen** -välilehdessä. Tietokantalokit ovat oletusarvoisesti käytettävissä 30 päivää.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. Määritä lokin tyhjentämistehtävän suorittamisen ajankohta **Tietokantalokin tyhjentäminen** -välilehdessä. Tietokantalokit ovat oletusarvoisesti käytettävissä 30 päivää.

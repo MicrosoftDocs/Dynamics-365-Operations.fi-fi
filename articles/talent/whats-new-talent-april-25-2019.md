@@ -80,6 +80,3 @@ Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila
 
 ### <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
 Finance and Operationsin Platform update 26:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

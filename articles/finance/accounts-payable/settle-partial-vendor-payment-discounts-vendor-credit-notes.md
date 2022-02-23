@@ -1,28 +1,31 @@
 ---
-title: Hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
+title: Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
 description: Tässä artikkelissa käydään läpi skenaario, jossa hyvityslasku selvitetään laskua vastaan.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14222
 ms.assetid: 2b19f7fd-9ff9-4ee4-bddf-f582946d008e
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 553150a59d132bb1d8b563e03456995cbc8d2be5f36bab0c1fe6b8bbbf77dce1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 923ab0305ac75c1156984c7a6d051f036479a16d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737110"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442613"
 ---
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,10 +43,10 @@ April luo 29. kesäkuuta 1 000,00 arvoisen laskun toimittajalle 3050. 2. heinäk
 
 Hyvityslaskun alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
-| Kenttä                        | Arvo     |
+|                              |           |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 13.7.2015 |
-| Käteisalennussumma         | 2.00      |
+| Käteisalennussumma         | 2,00      |
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | 2,00      |
@@ -68,6 +71,3 @@ April voi tarkistaa toimittajan tapahtumat **Toimittajan tapahtumat** -sivulla v
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

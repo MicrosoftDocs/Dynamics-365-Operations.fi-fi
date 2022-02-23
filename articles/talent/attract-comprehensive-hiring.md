@@ -85,6 +85,3 @@ Seuraavassa kerrotaan syitä siihen, miksi et ehkä näe kaikkia Attractin omina
 
 - Työtoverisi käyttää Attractin sellaista kokeiluversiota tai hänellä on sellainen käyttöoikeus, joka sisältää kattavan työhönottolaajennuksen. Sinulla sen sijaan on käytössä Attractin perusversio.
 - Käytössä on Attract, joka sisältää kattavan työhönottolaajennuksen, mutta sinulle ei ole delegoitu oikeita rooleja kaikkien toimintojen käyttämistä varten. Lisätietoja on kohdassa [Suojaus ja roolien hallinta Attractissa](security-attract.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

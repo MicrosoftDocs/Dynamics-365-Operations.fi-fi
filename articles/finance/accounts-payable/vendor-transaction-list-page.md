@@ -1,24 +1,27 @@
 ---
 title: Näytä avoimien toimittajatapahtumien listaussivu
 description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 Financen toimittajatapahtumien luettelosivusta.
-author: sunfzam
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6029e67cbbe72bbe95082cb7146834c0d7318261
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4f4535d08ff1bb6f83172efb4ceada5a7d02ebd4
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754069"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4442996"
 ---
 # <a name="vendor-transactions-list-page"></a>Näytä avoimien toimittajatapahtumien listaussivu
 
@@ -94,6 +97,3 @@ Kukin kenttä vaikuttaa eri tavalla tapahtumaan, kun muokkaat sitä:
 - **Muokkaa käteisalennuksen ehtoja** – Käteisalennuksia muutetaan peruspäivämäärän ja käteisalennuksen ehtojen perusteella.
 
 Kun olet muokannut maksuasetuksia, tallenna muutokset valitsemalla **Sulje**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

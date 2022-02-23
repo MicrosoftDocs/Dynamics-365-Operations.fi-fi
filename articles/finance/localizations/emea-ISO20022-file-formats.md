@@ -1,24 +1,27 @@
 ---
 title: ISO20022-tiedostojen tuominen
 description: Tässä ohjeaiheessa käsitellään tapaa, jolla ISO 20022 -maksutiedostojen camt.054- ja pain.002-muodot tuodaan Microsoft Dynamics 365 Financeen.
-author: anasyash
+author: neserovleo
+manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
-ms.author: anasyash
+ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 19b9e90ac42c496931c2fc936a25ee3b1b16ce58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592602"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407882"
 ---
 # <a name="import-iso20022-files"></a>ISO20022-tiedostojen tuominen
 
@@ -114,7 +117,7 @@ Kun tuot LCS:n muotokonfiguraatioita, tuot koko konfiguraatiopuun, johon myös m
  - **Pain.002** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan pain.002-tiedosto toimittajan maksujen siirtokirjauskansioon.
  - **Camt.054** – tätä muotoa käytetään yhdessä Maksumallin yhdistämismääritys kohteeseen ISO20022 -konfiguraation kanssa tuomaan camt.054-tiedosto toimittajan maksujen siirtokirjauskansioon. Samaa muotokonfiguraatiota käytetään asiakkaan maksujen tuontitoiminnossa mutta Maksumallin yhdistämismääritykset kohteeseen ISO20022 -konfiguraatiossa käytetään erilaista yhdistämismääritystä.
 
-Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoinnin yleiskatsaus](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoinnin yleiskatsaus](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
@@ -126,6 +129,3 @@ Lisätietoja sähköisestä raportoinnista on ohjeaiheessa [Sähköisen raportoi
 - [Maksutavan määrittäminen ISO20022-tilisiirtoja varten](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Maksutavan määrittäminen ISO20022-suoraveloitusta varten](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Määritä toimittajat ja toimittajien pankkitilit ISO20022-tilisiirtoja varten](./tasks/set-up-vendor-iso20022-credit-transfers.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

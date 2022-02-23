@@ -2,27 +2,27 @@
 title: Sähköisten raportointimääritysten mukauttaminen luomaan sähköinen asiakirja
 description: Tässä aiheessa käsitellään niiden Microsoftin toimittamien sähköisen raportoinnin (ER) määritysten mukauttamista, joilla luodaan mukautettu sähköinen asiakirja.
 author: NickSelin
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3c867af3b4d93e5a124d14e88eae60ff45987aebc639bd78806ff7a12009447
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769993"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683012"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Sähköisten raportointimääritysten mukauttaminen luomaan sähköinen asiakirja
 
@@ -108,7 +108,7 @@ ER-vakiomääritys voidaan lisätä Finance-esiintymään tuomalla ne kyseiselle
 5. Valitse **Versiot**-pikavälilehdessä versio **11.2.2**.
 6. Lataa valittu versio yleisestä säilöstä valitsemalla **Tuo**.
 
-![Konfiguraatiosäilön sivu.](./media/er-quick-start3-import-solution1.png)
+![Konfiguraatiosäilön sivu](./media/er-quick-start3-import-solution1.png)
 
 > [!TIP]
 > Jos sinulla on ongelmia [yleiseen säilöön](er-download-configurations-global-repo.md) pääsyssä, voit [ladata konfiguraatiot](download-electronic-reporting-configuration-lcs.md) sen sijaan Microsoft Dynamics Lifecycle Services (LCS) -palvelusta.
@@ -122,7 +122,7 @@ ER-vakiomääritys voidaan lisätä Finance-esiintymään tuomalla ne kyseiselle
 
 Huomaa, että valitun **Peppol-myyntilasku** -ER-muodon lisäksi myös muut tarvittavat ER-muodot tuotiin. Koska ER-määritysten uusia versioita julkaistaan jatkuvasti yleiseen säilöön ja LCS:ään, jotta niitä vastaavat ratkaisut pysyvät uusien vaatimusten mukaisina, pakollisen [tietomallin](general-electronic-reporting.md#data-model-and-model-mapping-components) määrityksen uusimmat versiot ja sen [mallimääritykset](general-electronic-reporting.md#data-model-and-model-mapping-components) tuotiin.
 
-![Konfiguraatiot-sivu.](./media/er-quick-start3-imported-solution1a.png)
+![Konfiguroinnit-sivu](./media/er-quick-start3-imported-solution1a.png)
 
 Seuraavien ohjeiden avulla voi simuloida tilan, jossa ER-määritykset olisivat nykyisessä Finance-esiintymässä, jos **Peppol-myyntilasku** -ER-muodon versio **11.2.2** tuotiin aiemmin (esimerkiksi 7. elokuuta 2019):
 
@@ -136,7 +136,7 @@ Varmista sitten, seuraavat määritykset ovat määrityspuussa:
     - Versio 11 sisältää [tietomallin](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-osan version 10, joka ilmaisee laskutuksen liiketoiminnan toimialueen tietorakenteen. Tämä ER-määritys on tuotu tuotavaksi valitun **Peppol-myyntilasku** -ER-muodon edeltäjänä.
     - Versio 50 sisältää tietomallin ER-osan version 31. Tämä ER-määritys on tuotu **Laskumallin yhdistämismääritys** -ER-mallin yhdistämismäärityksen elokuun 7. päivän 2019 version edeltäjänä
 
-    ![Laskumallin ER-tietomallin määritys Määritykset-sivulla.](./media/er-quick-start3-imported-solution1b1.png)
+    ![Laskumallin ER-tietomallin määritys Määritykset-sivulla](./media/er-quick-start3-imported-solution1b1.png)
 
     > [!TIP]
     > Jos tämän tietomallin versio 50 ei ole näkyvissä, avaa yleinen säilö ja tuo **Laskumallin yhdistämismääritys** -ER-määrityksen versio 50.19.
@@ -145,7 +145,7 @@ Varmista sitten, seuraavat määritykset ovat määrityspuussa:
 
     - Versio 50.19 on tuotu **Laskumalli**-ER-tietomallin määrityksen version 50 uusimpana toteutuksena. Siinä on kaksi [mallin yhdistämismäärityksen](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-osaa, joissa kuvataan sovelluksen tietojen täyttämistä suorituspalvelussa.
 
-    ![Laskumallin ER-tietomallin määritys Määritykset-sivulla.](./media/er-quick-start3-imported-solution1b2.png)
+    ![Laskumallin ER-tietomallin määritys Määritykset-sivulla](./media/er-quick-start3-imported-solution1b2.png)
 
     > [!TIP]
     > Jos tämän mallin yhdistämismäärityksen versio 50.19 ei ole näkyvissä, avaa yleinen säilö ja tuo **Laskumallin yhdistämismääritys** -ER-määrityksen versio 50.19.
@@ -158,7 +158,7 @@ Varmista sitten, seuraavat määritykset ovat määrityspuussa:
 
     - Versio 11.2.2 sisältää ne muodon ja muodon yhdistämismäärityksen ER-osat, jotka määritettiin luomaan PEPPOL (Pan-European Public Procurement OnLine) -muotoisia e-laskuja.
 
-    ![Peppol-myyntilaskun ER-muodon määritys Määritykset-sivulla.](./media/er-quick-start3-imported-solution1b3.png)
+    ![Peppol-myyntilaskun ER-muodon määritys Määritykset-sivulla](./media/er-quick-start3-imported-solution1b3.png)
 
 ## <a name="configure-the-accounts-receivable-parameters"></a><a name="ConfigureAR1"></a>Myyntireskontran parametrien määrittäminen
 
@@ -166,7 +166,7 @@ Varmista sitten, seuraavat määritykset ovat määrityspuussa:
 2. Valitse **Sähköiset asiakirjat** -välilehden **Sähköinen raportointi** -pikavälilehden **Hyvityslasku ja vapaatekstihyvityslasku** -kentässä **Peppol-myyntilasku**.
 3. Valitse **Tallenna**.
 
-![Sähköiset asiakirjat -välilehti Myyntireskontran parametrit -sivulla.](./media/er-quick-start3-configure-ar1.png)
+![Sähköiset asiakirjat -välilehti Myyntireskontran parametrit -sivulla](./media/er-quick-start3-configure-ar1.png)
 
 ## <a name="configure-the-legal-entity-parameters"></a><a name="ConfigureLE"></a>Yritysparametrien määrittäminen
 
@@ -218,7 +218,7 @@ Voit nyt käyttää tuotuja ER-vakiomäärityksiä vapaatekstilaskun lähettämi
 
 5. Valitse **Tallenna**.
 
-![Vapaatekstilaskun sivu.](./media/er-quick-start3-add-invoice.png)
+![Vapaatekstilaskun sivu](./media/er-quick-start3-add-invoice.png)
 
 Lisätietoja on kohdassa [Vapaatekstilaskun luominen](../../../finance/accounts-receivable/create-free-text-invoice-new.md).
 
@@ -228,14 +228,14 @@ Lisätietoja on kohdassa [Vapaatekstilaskun luominen](../../../finance/accounts-
 2. Valitse **Vapaatekstilasku**-sivun toimintoruudussa **Kirjaa**
 3. Valitse **Kirjaa vapaatekstilasku** -valintaikkunassa **OK**.
 
-![Vapaatekstilaskun tietosivu.](./media/er-quick-start3-post-invoice.png)
+![Vapaatekstilaskun tietosivu](./media/er-quick-start3-post-invoice.png)
 
 ### <a name="send-a-posted-invoice"></a>Kirjatun laskun lähettäminen
 
 1. Siirry kohtaan **Myyntisaamiset** \> **Laskut** \> **Kaikki vapaatekstilaskut**.
 2. Valitse **Vapaatekstilasku**-sivun toimintoruudun **Asiakirja**-ryhmässä **Lähetä** \> **Alkuperäinen**.
 
-    ![Alkuperäisen laskun esikatselu.](./media/er-quick-start3-send-invoice.png)
+    ![Alkuperäisen laskun esikatselu](./media/er-quick-start3-send-invoice.png)
 
 3. Sulje **Vapaatekstilasku**-sivu.
 
@@ -245,12 +245,12 @@ Lisätietoja on kohdassa [Vapaatekstilaskun luominen](../../../finance/accounts-
 2. Valitse **Sähköisen raportoinnin työt** -sivulla alkuperäinen tietue, jonka tehtävän kuvaus on **Lähetä eInvoice XML**.
 3. Siirry luotujen tiedostojen luetteloon valitsemalla **Näytä tiedostot**.
 
-    ![Sähköisen raportoinnin töiden sivu.](./media/er-quick-start3-jobs-list.png)
+    ![Sähköisen raportoinnin töiden sivu](./media/er-quick-start3-jobs-list.png)
 
 4. Lataa e-laskun luotu XML-tiedosto valitsemalla **Avaa**.
 5. Analysoi e-laskun XML-tiedosto. Huomaa, että asiakkaan veromalli ilmaistaan tällä hetkellä XML-määritteillä **schemeID** ja **schemeAgencyID**. Huomaa myös, että XML-elementti **cbc:CustomizationID** sisältää tällä hetkellä seuraavan tekstin: `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0`.
 
-    ![Luodun e-laskun XML-tiedoston esikatselu.](./media/er-quick-start3-e-invoice1.png)
+    ![Luodun e-laskun XML-tiedoston esikatselu](./media/er-quick-start3-e-invoice1.png)
 
 ## <a name="add-a-custom-database-field"></a><a name="AddCustomField"></a>Mukautetun tietokantakentän lisääminen
 
@@ -282,7 +282,7 @@ Tee mukautukset seuraavasti:
 12. Valitsemalla avautuvassa sanomaruudussa **Kyllä** vahvistat, että haluat luoda uuden **FederalTaxID**-kentän **Asiakkaat**-taulukkoon.
 13. Lisää <a name="insert_custom_field"></a>**FederalTaxID\_Custom** -kenttä nykyiselle sivulle valitsemalla **Lisää**.
 
-    ![Kaikki asiakkaat -sivu.](./media/er-quick-start3-create-new-field.gif)
+    ![Kaikki asiakkaat -sivu](./media/er-quick-start3-create-new-field.gif)
 
 14. Sulje **Kaikki asiakkaat** -sivu.
 
@@ -312,7 +312,7 @@ Sähköisen raportoinnin toiminnallisen konsultin roolia käyttävä käyttäjä
 
 ER-tietomallin suunnitteluohjelmassa voi nyt muokata **Luonnos**-[tilassa](general-electronic-reporting.md#component-versioning) olevaa **Laskumalli (Litware)** -ER-määrityksen versiota 50.1.
 
-![ER-määrityksen versio 50.1 Määritykset-sivulla.](./media/er-quick-start3-added-custom-model.png)
+![ER-määrityksen versio 50.1 Määritykset-sivulla](./media/er-quick-start3-added-custom-model.png)
 
 #### <a name="configure-a-custom-data-model"></a>Mukautetun tietomallin määrittäminen
 
@@ -328,7 +328,7 @@ Mukautettua tietomallia on muokattava lisäämällä uusi kenttä antamaa liitto
 8. Hyväksy **Nimiketyyppi**-kentän oletusarvo **Merkkijono**.
 9. Valitse ensin **Lisää** ja sitten **Tallenna**.
 
-    ![Tietomallin suunnitteluohjelman sivu.](./media/er-quick-start3-add-data-model-field.png)
+    ![Tietomallin suunnitteluohjelman sivu](./media/er-quick-start3-add-data-model-field.png)
 
     > [!NOTE]
     > **Selite**- ja **Kuvaus**-kentissä on tietoja uuden kentän tarkoituksesta. Näiden kenttien käyttämiseen voidaan käyttää useita kieliä. Lisätietoja on kohdassa [Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa](er-design-multilingual-reports.md).
@@ -345,7 +345,7 @@ Mukautetun ER-tietomallin määrityksen version 50.1 käsitteleminen on [pääte
 
 Version 50.1 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muuttuu vain luku -tilaan. Uusi muokattava versio 50.2 on lisätty, ja sen tila on **Luonnos**. Tällä versiolla voi tehdä muita muutoksia mukautetun ER-tietomallin määritykseen.
 
-![Valmis versio 50.1 Määritykset-sivulla.](./media/er-quick-start3-completed-custom-model1.png)
+![Valmis versio 50.1 Määritykset-sivulla](./media/er-quick-start3-completed-custom-model1.png)
 
 ### <a name="customize-the-model-mapping-configuration"></a>Mallin yhdistämismäärityksen mukauttaminen
 
@@ -365,7 +365,7 @@ Sähköisen raportoinnin kehittäjän roolia käyttävä käyttäjä voi suunnit
 
 7. Lisää uusi ER-määritys valitsemalla **Luo määritys**.
 
-![Mukautetun mallin yhdistämismäärityksen määrityksen lisääminen Määritykset-sivulla.](./media/er-quick-start3-adding-custom-mapping.png)
+![Mukautetun mallin yhdistämismäärityksen määrityksen lisääminen Määritykset-sivulla](./media/er-quick-start3-adding-custom-mapping.png)
 
 #### <a name="configure-a-custom-model-mapping"></a>Mukautetun mallin yhdistämismäärityksen määrittäminen
 
@@ -386,7 +386,7 @@ Mukautettua mallin yhdistämismääritystä on muokattava. Lisäksi on määrite
 10. Laajenna **Tietomalli**-ruudussa **Asiakastiedot (asiakas)** ja valitse **FederalTaxID\_Litware**-tietomallikenttä.
 11. Valitse **Sido**.
 
-    ![Mallimäärityksen suunnittelun sivu.](./media/er-quick-start3-customize-model-mapping.gif)
+    ![Mallimäärityksen suunnittelun sivu](./media/er-quick-start3-customize-model-mapping.gif)
 
 12. Valitse **Tallenna**.
 13. Sulje **Mallimäärityksen sunnittelun** sivu.
@@ -402,7 +402,7 @@ Mukautetun ER-mallin yhdistämismäärityksen version 50.19.1 määritys on [pä
 
 Version 50.19.1 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muuttuu vain luku -tilaan. Uusi muokattava versio 50.19.2 on lisätty, ja sen tila on **Luonnos**. Tällä versiolla voi tehdä muita muutoksia mukautetun ER-mallin yhdistämismäärityksen määritykseen.
 
-![Valmis versio 50.19.1 Määritykset-sivulla.](./media/er-quick-start3-completed-custom-mapping1.png)
+![Valmis versio 50.19.1 Määritykset-sivulla](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
 > Määrityksen tuettu [elinkaari](general-electronic-reporting-manage-configuration-lifecycle.md) ei koske tietokantamuutosten elinkaarta. Jos **Laskumallin yhdistämismääritys (Litware)** -määrityksen versio 50.19.1 viedään nykyisestä Finance-esiintymästä, ja se yritetään tuoda toiseen esiintymään, jossa ei ole mukautettua **FederalTaxID\_Custom**-kenttää **CustTable**-taulukossa, tapahtuu poikkeus. Poikkeus ilmoittaa, että tuotu ER-määritys ei ole yhteensopiva Financen kohde-esiintymän metatietojen kanssa.
@@ -426,11 +426,11 @@ Sähköisen raportoinnin toiminnallisen konsultin roolia käyttävä käyttäjä
 7. Valitse **Tietomalli**-kentässä **InvoiceCustomer**-juurimääritelmä.
 8. Lisää uusi ER-määritys valitsemalla **Luo määritys**.
 
-![Mukautetun muodon määrityksen lisääminen Määritykset-sivulla.](./media/er-quick-start3-adding-custom-format.png)
+![Mukautetun muodon määrityksen lisääminen Määritykset-sivulla](./media/er-quick-start3-adding-custom-format.png)
 
 ER-toimintojen suunnitteluohjelmassa voi nyt muokata **Luonnos**-[tilassa](general-electronic-reporting.md#component-versioning) olevaa **Peppol-myyntilasku (Litware)** -ER-määrityksen versiota 11.2.2.1.
 
-![ER-määrityksen versio 11.2.2.1 Määritykset-sivulla.](./media/er-quick-start3-added-custom-format.png)
+![ER-määrityksen versio 11.2.2.1 Määritykset-sivulla](./media/er-quick-start3-added-custom-format.png)
 
 #### <a name="configure-a-custom-format"></a>Mukautetun muodon määrittäminen
 
@@ -446,7 +446,7 @@ Mukautettua muotoa on muokattava lisäämällä uusi muotoelementti täyttämä�
 8. Valitse kohdassa **XMLHeader** \> **Lasku** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** \> **cbc:ID** **FederalTaxID**.
 9. Valitse **Siirrä ylös**.
 
-![Uusi muotoelementti Muodon suunnitteluohjelma -sivulla.](./media/er-quick-start3-customized-format.png)
+![Uusi muotoelementti Muodon suunnitteluohjelma -sivulla](./media/er-quick-start3-customized-format.png)
 
 #### <a name="configure-a-custom-format-mapping"></a>Mukautetun muodon yhdistämismäärityksen määrittäminen
 
@@ -454,7 +454,7 @@ Mukautettua muotoa on muokattava lisäämällä uusi muotoelementti täyttämä�
 2. Laajenna **Lasku**-kohdassa **Asiakastiedot (asiakas)** ja valitse **FederalTaxID\_Litware**.
 3. Valitse **Sido**.
 
-    ![Muodon suunnittelutoiminto -sivu.](./media/er-quick-start3-customized-format-mapping.png)
+    ![Muodon suunnittelutoiminto -sivu](./media/er-quick-start3-customized-format-mapping.png)
 
 4. Valitse **Malli**-tyypin **Lasku**-tietolähde ja valitse sitten **Muokkaa**.
 5. Valitse **Versio**-kentässä mukautetun tietomallin version **1** ja valitse sitten **OK**.
@@ -471,7 +471,7 @@ Mukautetun ER-muotomäärityksen version 11.2.2.1 määritys on [päätettävä]
 
 Version 11.2.2.1 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muuttuu vain luku -tilaan. Uusi muokattava versio 11.2.2.2 on lisätty, ja sen tila on **Luonnos**. Tällä versiolla voi tehdä lisämuutoksia mukautetun ER-muodon määritykseen.
 
-![Valmis versio 11.2.2.1 Määritykset-sivulla.](./media/er-quick-start3-completed-custom-format1.png)
+![Valmis versio 11.2.2.1 Määritykset-sivulla](./media/er-quick-start3-completed-custom-format1.png)
 
 ## <a name="configure-the-accounts-receivable-parameters-to-start-to-use-custom-er-configurations"></a><a name="ConfigureAR2"></a>Mukautettujen ER-määritysten käytön aloittaminen määrittämällä myyntireskontran parametrit
 
@@ -479,7 +479,7 @@ Version 11.2.2.1 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio m
 2. Valitse **Sähköiset asiakirjat** -välilehden **Sähköinen raportointi** -pikavälilehden **Hyvityslasku ja vapaatekstihyvityslasku** -kentässä **Peppol-myyntilasku (Litware)**.
 3. Valitse **Tallenna**.
 
-![Myyntireskontran parametrit -sivulla, Sähköiset asiakirjat -välilehti, Sähköinen raportointi -pikavälilehti.](./media/er-quick-start3-configure-ar2.png)
+![Myyntireskontran parametrit -sivulla, Sähköiset asiakirjat -välilehti, Sähköinen raportointi -pikavälilehti](./media/er-quick-start3-configure-ar2.png)
 
 ## <a name="update-a-customer-record-by-adding-a-federal-tax-identification-code"></a><a name="ConfigureCustomer2"></a>Asiakastietueen päivittäminen lisäämällä liittovaltion verotunnuskoodi
 
@@ -488,7 +488,7 @@ Version 11.2.2.1 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio m
 3. Anna **Yleiset**-pikavälilehden **Liittovaltion verotunnus** -kentässä **LITWARE-6789**.
 4. Valitse **Tallenna**.
 
-    ![DE-014 asiakastietojen sivu.](./media/er-quick-start3-added-tax-id-value.png)
+    ![DE-014 asiakastietojen sivu](./media/er-quick-start3-added-tax-id-value.png)
 
 5. Sulje **Kaikki asiakkaat** -sivu.
 
@@ -509,7 +509,7 @@ Version 11.2.2.1 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio m
 4. Lataa e-laskun luotu XML-tiedosto valitsemalla **Avaa**.
 5. Analysoi e-laskun XML-tiedosto. Huomaa, että mukautuksen vuoksi asiakkaan veromalli sisältää mukautetun XML-määritteen **FederalTaxID** XML-määritteiden **schemeID** ja **schemeAgencyID** lisäksi. Tämän uuden XML-määritteen arvon määrittää laskutetulle asiakkaalle annettu liittovaltion verotunnus **LITWARE-6789**.
 
-    ![Mukautusten perusteella luodun e-laskun XML-tiedoston esikatselu.](./media/er-quick-start3-e-invoice2.png)
+    ![Mukautusten perusteella luodun e-laskun XML-tiedoston esikatselu](./media/er-quick-start3-e-invoice2.png)
 
 ## <a name="import-the-latest-versions-of-standard-er-configurations"></a><a name="ImportERConfigurations2"></a>ER-vakiomääritysten viimeisimpien versioiden tuominen
 
@@ -522,7 +522,7 @@ Voit pitää Finance-esiintymän ER-vakiomäärityksen [ajan tasalla](general-el
 5. Valitse **Versiot**-pikavälilehdessä sen valitun ER-muotomäärityksen versio **32.6.7**, joka on julkaistu tukemaan asiakkaan sähköisiä laskuja PEPPOL BIS 3 -muodossa. Lisätietoja on kohdassa [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Lataa valittu versio yleisestä säilöpalvelusta nykyiseen Finance-esiintymään valitsemalla **Tuo**.
 
-![Määrityksen säilösivulla valittu versio 32.6.7.](./media/er-quick-start3-import-solution2.png)
+![Määrityksen säilösivulla valittu versio 32.6.7](./media/er-quick-start3-import-solution2.png)
 
 Lisätietoja tämän prosessin automatisoinnista on kohdassa [ER-määritysten päivitettyjen versioiden tuominen](er-download-updated-versions-global-repo.md).
 
@@ -543,13 +543,13 @@ Varmista, että seuraavat ER-määritykset tuleva ajan mittaan käytettäviksi m
 
     - Versio 206 (tai uudempi) sisältää tietomallin ER-osan version 24 (tai uudemman), joka ilmaisee laskutuksen liiketoiminnan toimialueen tietorakenteen. Tämä ER-määritys on tuotu **Laskumallin yhdistämismääritys** -ER-mallin yhdistämismäärityksen uusimman käytettävissä olevan määrityksen edeltäjänä.
 
-    ![Versio 206 Määritykset-sivulla.](./media/er-quick-start3-imported-solution2b1.png)
+    ![Versio 206 Määritykset-sivulla](./media/er-quick-start3-imported-solution2b1.png)
 
 - **Laskumallin yhdistämismääritys** ER-mallien yhdistämismäärityksen määritys:
 
     - Versio 206.132 (tai uudempi) on tuotu **Laskumalli**-ER-tietomallin määrityksen version 206 uusimpana toteutuksena. Siinä on useita mallin yhdistämismäärityksen ER-osia, joissa kuvataan sovelluksen tietojen täyttämistä suorituspalvelussa.
 
-    ![Versio 206.132 Määritykset-sivulla.](./media/er-quick-start3-imported-solution2b2.png)
+    ![Versio 206.132 Määritykset-sivulla](./media/er-quick-start3-imported-solution2b2.png)
 
 - **UBL-myyntilasku** ER-muodon määritys:
 
@@ -559,7 +559,7 @@ Varmista, että seuraavat ER-määritykset tuleva ajan mittaan käytettäviksi m
 
     - Versio 32.6.7 sisältää ne muodon ja muodon yhdistämismäärityksen ER-osat, jotka määritettiin luomaan e-laskuja PEPPOL-muodossa.
 
-    ![Versio 32.6.7 Määritykset-sivulla.](./media/er-quick-start3-imported-solution2b3.png)
+    ![Versio 32.6.7 Määritykset-sivulla](./media/er-quick-start3-imported-solution2b3.png)
 
 ## <a name="adopt-the-changes-to-the-new-standard-er-configurations-in-your-custom-er-configurations"></a><a name="RebaseCustomERConfigurations"></a>Mukautetuissa ER-määrityksissä ER-vakiomääritysten uusiin versioihin tehtyjen muutosten ottaminen käyttöön
 
@@ -579,7 +579,7 @@ Varmista, että seuraavat ER-määritykset tuleva ajan mittaan käytettäviksi m
 
 Version 206.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muuttuu vain luku -tilaan. Uusi muokattava versio 206.3 on lisätty, ja sen tila on **Luonnos**. Tällä versiolla voi tehdä muita muutoksia mukautetun ER-tietomallin määritykseen.
 
-![Valmis versio 206.2 Määritykset-sivulla.](./media/er-quick-start3-completed-custom-model2.png)
+![Valmis versio 206.2 Määritykset-sivulla](./media/er-quick-start3-completed-custom-model2.png)
 
 ### <a name="adopt-your-custom-er-model-mapping"></a>Mukautetun ER-mallin yhdistämismäärityksen ottaminen käyttöön
 
@@ -592,12 +592,12 @@ Version 206.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muut
 
     Huomaa, että joitakin pohjustusristiriitoja löytyi. Nämä ristiriidat on ratkaistava nyt manuaalisesti.
 
-    ![Pohjustusristiriitailmoitus Määritykset-sivulla.](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
+    ![Pohjustusristiriitailmoitus Määritykset-sivulla](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. Valitse toimintoruudussa ensin **Suunnitteluohjelma** ja sitten yhdistämismääritysluettelossa **Myyntilasku**.
 6. Valitse kussakin pohjustusristiriidassa **Säilytä oma arvo**, koska mukautetun tietomallin versionumero on säilytettävä jokaisessa mainitussa osassa.
 
-    ![Pohjustusristiriitoja Mallin yhdistämismäärityksen suunnitteluohjelman sivulla.](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
+    ![Pohjustusristiriitoja Mallin yhdistämismäärityksen suunnitteluohjelman sivulla](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
 7. Valitse **Tallenna** ja sulje sitten **Mallin yhdistämismäärityksen suunnitteluohjelma** -sivu.
 8. Valitse yhdistämismääritysluettelossa **Projektilasku**.
@@ -611,7 +611,7 @@ Version 206.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muut
 
 Version 206.132.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muuttuu vain luku -tilaan. Uusi muokattava versio 206.132.3 on lisätty, ja sen tila on **Luonnos**. Tällä versiolla voi tehdä muita muutoksia mukautetun ER-mallin yhdistämismäärityksen määritykseen.
 
-![Valmis versio 206.132.2 Määritykset-sivulla.](./media/er-quick-start3-completed-custom-mapping2.png)
+![Valmis versio 206.132.2 Määritykset-sivulla](./media/er-quick-start3-completed-custom-mapping2.png)
 
 ### <a name="adopt-your-custom-er-format"></a>Mukautetun ER-muodon ottaminen käyttöön
 
@@ -639,7 +639,7 @@ Version 206.132.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio 
 
 Version 32.6.7.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio muuttuu vain luku -tilaan. Uusi muokattava versio 32.6.7.3 on lisätty, ja sen tila on **Luonnos**. Tällä versiolla voi tehdä lisämuutoksia mukautetun ER-muodon määritykseen.
 
-![Valmis versio 32.6.7.2 Määritykset-sivulla.](./media/er-quick-start3-completed-custom-format2.png)
+![Valmis versio 32.6.7.2 Määritykset-sivulla](./media/er-quick-start3-completed-custom-format2.png)
 
 ## <a name="process-a-customer-invoice-by-using-new-versions-of-the-custom-er-configurations"></a><a name="ProcessInvoice3"></a>Myyntilaskun käsitteleminen mukautettujen ER-määritysten uusien versioiden avulla
 
@@ -662,15 +662,12 @@ Version 32.6.7.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio m
 4. Lataa e-laskun luotu XML-tiedosto valitsemalla **Avaa**.
 5. Analysoi e-laskun XML-tiedosto. Huomaa, että mukautuksen vuoksi asiakkaan veromalli sisältää edelleen mukautetun XML-määritteen **FederalTaxID** XML-määritteiden **schemeID** ja **schemeAgencyID** lisäksi. Ja koska **UBL-myyntilasku**-perusmuodon uusi versio yhdistettiin mukautukseen, XML-elementin **cbc:CustomizationID** teksti `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` on muuttunut tekstiksi `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0`.
 
-    ![Mukautusten perusteella luodun e-laskun XML-tiedoston esikatselu.](./media/er-quick-start3-e-invoice3.png)
+    ![Mukautusten perusteella luodun e-laskun XML-tiedoston esikatselu](./media/er-quick-start3-e-invoice3.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [ER-konfiguraatioiden lataaminen Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md)
 - [Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta](er-download-configurations-global-repo.md)
-- [Luo tekstimuotoinen lasku](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
-- [Mukautettujen kenttien luominen ja käsitteleminen](../../fin-ops/get-started/user-defined-fields.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- [Luo tekstimuotoinen lasku](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
+- [Mukautettujen kenttien luominen ja käsitteleminen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)

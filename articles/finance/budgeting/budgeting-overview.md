@@ -1,28 +1,28 @@
 ---
 title: Budjetoinnin aloitussivu
 description: Tässä aiheessa käsitellään yleisesti Microsoft Dynamics 365 Finance -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja.
-author: panolte
-ms.date: 04/29/2021
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 08/09/2017
+ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "106043"
-- intro-internal
+ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: panolte
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: af006a94d29781473c164d108fb48ca7d00d169d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983949"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962907"
 ---
 # <a name="budgeting-home-page"></a>Budjetoinnin aloitussivu
 
@@ -30,11 +30,12 @@ ms.locfileid: "7983949"
 
 Tässä aiheessa käsitellään yleisesti budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja. 
 
-## <a name="components-of-budgeting-functionality"></a>Budjetointitoimintojen osat
+<a name="components-of-budgeting-functionality"></a>Budjetointitoimintojen osat
+-------------------------------------
 
 Yrityksen resurssien suunnittelujakso koostuu yleensä suunnittelu-, budjetointi- ja ennustetehtävistä.
 
-[![Budjetointitoimintojen osat.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Budjetointitoimintojen osat](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Sekä pitkän aikavälin strategisen suunnittelun että vuosittaisen budjetin suunnittelun prosesseja tuetaan budjettisuunnitelman avulla. Budjettisuunnitelman asiakirjat on integroitu tiiviisti Microsoft Exceliin. Käyttäjien määrittämien rahallisten ja määrällisten skenaarioiden määrää ei rajoiteta. Käyttäjät voivat myös määrittää budjetoinnin organisaatiohierarkian tukemaan sekä ylhäältä alaspäin että alhaalta ylöspäin suuntautuvia budjetointimenetelmiä. Kun budjetti on laadittu ja hyväksytty sovelluksessa, voit muuntaa budjettisuunnitelman budjettirekisteritapahtumaksi. Budjettirekisteritapahtumat tarjoavat työkaluja budjetin ylläpitämiseen ja summien jäljittämiseen budjettikoodien avulla. Budjettirekisteritapahtumien avulla voit korjata alkuperäisiä budjetteja, suorittaa siirtoja ja tehdä budjettisummien siirtokirjauksia edelliseltä vuodelta. Yritys voi ottaa muodostettuun budjettiin perustuvan budjetin hallinnan käyttöön. Hallinnan taso määräytyy organisaatiokulttuurin ja organisaation kypsyystason mukaan. Alhaisen kypsyystason organisaatiot voivat antaa budjetin olla koskemattomana, ja ne ehkä enemminkin reagoivat kuin toimivat ennakoivasti, jos budjetti ei vastaa odotuksia. Toiset organisaatiot voivat ottaa käyttöön budjetin hallintakäytännöt, jotka estävät käyttäjien ostot, jos budjettirahoitusta ei ole.
 
@@ -48,7 +49,7 @@ Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaati
 -   [Excelin budjettisuunnittelumallit](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budjetointityökalut
-[![Budjetointityökalut.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budjetointityökalut](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Käytettävissä on suunnittelu- ja budjetointitoimintoja, jotka on integroitu kirjanpitobudjetteihin.
 
@@ -69,6 +70,3 @@ Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja m
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

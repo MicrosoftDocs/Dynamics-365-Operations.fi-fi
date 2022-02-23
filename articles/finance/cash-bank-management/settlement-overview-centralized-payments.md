@@ -2,27 +2,28 @@
 title: Keskitettyjen maksujen tilityksen yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Financen keskitettyjen maksujen tilitystä.
 author: abruer
+manager: AnnBe
 ms.date: 08/02/2018
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "222414"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d00455d36b4350deffdd0bccb5529ce9e69a7cc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ea661441c6c810d144d423b054c1bef058cdd9d6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982224"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442757"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Keskitettyjen maksujen tilityksen yleiskatsaus
 
@@ -107,6 +108,3 @@ Toimittajamaksujen maksuyrityksen erääntymiskohteen ja erääntymislähteen ta
 
 ## <a name="withholding-tax"></a>Ennakonpidätys
 Laskuun liittyvää toimittajatiliä käytetään määrittämään, pitääkö ennakonpidätys laskea. Jos ennakonpidätys lasketaan, se lasketaan laskuun liitetystä yrityksestä. Jos yritykset käyttävät eri valuuttoja, käytetään laskuun liitetyn yrityksen vaihtokurssia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

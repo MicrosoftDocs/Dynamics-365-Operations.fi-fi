@@ -142,6 +142,3 @@ Organisaatiot voivat tarjota työntekijöille useita erilaisia vapaatyyppejä. T
 ### <a name="view-performance-information-for-direct-and-extended-reports-in-manager-self-service"></a>Suorien ja epäsuorien alaisten suoritustietojen näyttäminen esimiehen itsepalvelutoiminnossa
 
 Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuorien alaisten suoriutumista. Tällä hetkellä linjapäälliköt voivat määrittää ja päivittää suorituskykytavoitteita ja antaa uusia arvioita. Lisäksi suorat esimiehet ja heidän alaisensa voivat ylläpitää ja päivittää suoritustason kirjauskansioita. Tämä auttaa varmistamaan, että kehityskeskusteluprosessi toimii sujuvasti. Kun tämä muutos otetaan käyttöön, esimiehet voivat tarkastella ja ylläpitää epäsuorien alaisten suoritustasotietoja suorien alaisten tietojen lisäksi.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

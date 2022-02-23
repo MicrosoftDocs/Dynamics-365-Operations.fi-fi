@@ -2,9 +2,11 @@
 title: Helppokäyttötoiminnot
 description: Tässä ohjeaiheessa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä.
 author: TLeforMicrosoft
+manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,19 +14,16 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071055"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798692"
 ---
 # <a name="accessibility-features"></a>Helppokäyttötoiminnot
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä käyttämään tämä sovellusta. Käytettävissä on esimerkiksi toimintoja henkilöille, joilla on käytössä näkövammaisille tarkoitettua teknologiaa, kuten Microsoft Windows Narrator.
 
@@ -55,13 +54,13 @@ Jokaista sivun toimintoa voi käyttää näppäimistön sarkainjärjestyksen avu
 
 Haluat suorittaa **Sähköposti-ilmoitusloki**-toiminnon, joka on toimintoruudun **Myyntitilaus**-välilehden **Sähköposti-ilmoitus**-ryhmässä.
 
-![Toimintoruudun Sähköposti-ilmoitusloki-toiminto.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Toimintoruudun Sähköposti-ilmoitusloki-toiminto")
+![Toimintoruudun Sähköposti-ilmoitusloki-toiminto](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Toimintoruudun Sähköposti-ilmoitusloki-toiminto")
 
 Näppäimistön käyttäminen on eräs vaihtoehto. Paina näppäinyhdistelmää Ctrl+F6 ja siirrä kohdistus toimintoruutuun. Paina sitten sarkainnäppäintä toistuvasti ja siirry kaikkien välilehtien ja toimintojen kautta **Sähköposti-ilmoitusloki** -toimintoon.
 
 Voit suorittaa toiminnon myös suoremmin. Paina missä tahansa sivun kohdassa näppäinyhdistelmää Ctrl+heittomerkki ('), jolloin näkyviin tulee toimintojen hakukenttä.
 
-![Toimintojen hakukenttä.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Toimintojen hakukenttä")
+![Toimintojen hakukenttä](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Toimintojen hakukenttä")
 
 Kirjoita hakukenttään toimintoa kuvaavia sanoja. Toiminto on käytettävissä ja voit suorittaa sen suoraan. Kirjoita esimerkiksi **sähköposti**, **ilmoit** (osa sanasta) tai **loki**. Tämän jälkeen voit hypätä Sähköposti-ilmoitusloki-toimintoon.
 
@@ -98,6 +97,3 @@ Tuote on suunniteltu toimimaan erilaisissa laitteissa ja laitemuodoissa sekä pi
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Ohjeita, joiden avulla kehittäjät ja asiakkaat voivat ottaa helppokäyttöisyyden huomioon mukautuksissa
 
 Lisätietoja Microsoftin helppokäyttötoimintojen käyttöönoton parhaista käytännöistä on kohdassa [Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttötoiminnot](../../dev-itpro/user-interface/enable-accessibility.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

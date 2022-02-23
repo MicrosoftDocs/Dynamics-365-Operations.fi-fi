@@ -1,30 +1,33 @@
 ---
 title: Siirrä käyttöomaisuuserä
 description: Tässä tehtäväoppaassa siirretään käyttöomaisuuskirjan taloushallinnon tiedot yhdestä taloushallinnon dimensiojoukosta uuteen taloushallinnon dimensiojoukkoon.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e573386ddbb97bf60e2e501ba92b225f8716c73a
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: eb38483d3ac61acb4513e87d8c36ddd0f8863a10
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883359"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442781"
 ---
 # <a name="transfer-a-fixed-asset"></a>Siirrä käyttöomaisuuserä
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä tehtäväoppaassa siirretään käyttöomaisuuskirjan taloushallinnon tiedot yhdestä taloushallinnon dimensiojoukosta uuteen taloushallinnon dimensiojoukkoon.  
+Tässä tehtäväoppaassa siirretään käyttöomaisuuskirjan taloushallinnon tiedot yhdestä taloushallinnon dimensiojoukosta uuteen taloushallinnon dimensiojoukkoon.  Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.
 
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Käyttöomaisuuserät > Käyttöomaisuuserät > Käyttöomaisuuserät**.
 2. Etsi ja valitse luettelosta siirrettävä käyttöomaisuus.
@@ -45,6 +48,3 @@ Tässä tehtäväoppaassa siirretään käyttöomaisuuskirjan taloushallinnon ti
     * Tarkastele tuloksia, ennen kuin siirrät käyttöomaisuuskirjat.  
 10. Valitse **Siirrä**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

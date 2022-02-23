@@ -2,24 +2,27 @@
 title: Työntekijän konfiguroiminen
 description: Tässä menettelyssä kerrotaan, miten määrität työntekijästä myyntiedustajan, joka on oikeutettu myyntipisteen myyntiprovisioihin.
 author: jblucher
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, HcmWorker
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a21d5f2d5963db2a92b653e8e520f96f11ba1bf6acbb238812211154d5b39fc0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd437f549ffc1f8879ce3814ace1193040b280e1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726380"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412060"
 ---
 # <a name="configure-a-worker"></a>Työntekijän konfiguroiminen
 
@@ -54,6 +57,3 @@ Tässä menettelyssä kerrotaan, miten määrität työntekijästä myyntiedusta
 6. Syötä tai valitse arvo Oletusryhmä-kentässä.
 7. Valitse Tallenna.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

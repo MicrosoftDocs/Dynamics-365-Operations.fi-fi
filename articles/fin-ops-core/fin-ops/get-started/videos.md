@@ -2,9 +2,11 @@
 title: Videot
 description: Tällä sivulla on Microsoftin luomia toimintaohjeita ja Finance and Operations -sovelluksiin liittyviä teknisiä keskusteluja sisältäviä videoita, joita voi katsoa YouTubessa ja muissa sivustoissa.
 author: sericks007
-ms.date: 09/15/2021
+manager: AnnBe
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 3fe44a9a7fcef2f22dff3be00ddfadd5b8c59574
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487988"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797872"
 ---
 # <a name="videos"></a>Videot 
 
@@ -34,6 +36,7 @@ ms.locfileid: "7487988"
 
 ### <a name="data-integration"></a>Tietojen integrointi
 
+- [Prospektista käteiseksi -integrointi](https://youtu.be/AVV9x5x-XCg)
 - [Työtilauksen synkronointi Dynamics 365 for Field Servicen ja Finance and Operations -sovellusten välillä](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Tietojen hallinta
@@ -83,14 +86,14 @@ ms.locfileid: "7487988"
 
 ## <a name="videos-for-dynamics-365-finance"></a>Dynamics 365 Financea koskevat videot
 
-### <a name="business-document-management"></a>Liiketoiminta-asiakirjojen hallinta
-- [Uuden asiakirjan luominen liiketoiminta-asiakirjan hallinnan avulla](https://www.youtube.com/watch?v=gAIYl-mM_pw)
-
 ### <a name="customize-the-app"></a>Sovelluksen mukauttaminen
 - [Lisää mukautettuja kenttiä](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Power Appsin upottaminen](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
-### <a name="financial-reporting"></a>Taloushallinnan raportointi
+### <a name="expenses"></a>Kulut
+- [Kulukokemus](https://youtu.be/Ocy-MsTvEE0)
+
+### <a name="financial-reporting"></a>Taloushallinnon raportointi
 - [Raporttien suunnitteluohjelman version tarkistaminen](https://www.youtube.com/embed/icfA5Q3kp4w)
 
 ### <a name="help-system"></a>Ohjejärjestelmä
@@ -114,9 +117,6 @@ ms.locfileid: "7487988"
 
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementia koskevat videot
-
-### <a name="business-document-management"></a>Liiketoiminta-asiakirjojen hallinta
-- [Uuden asiakirjan luominen liiketoiminta-asiakirjan hallinnan avulla](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### <a name="costs"></a>Kustannukset
 - [Kustannusseurannan mobiilityötila](https://youtu.be/imsuTg8rUVk)
@@ -167,6 +167,3 @@ ms.locfileid: "7487988"
 [FastTrack for Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) -keskustelut keskittyvät teknisiin näkemyksiin ja parhaisiin käytäntöihin, jotka tarjoavat asiakkaille ja kumppaneille tarkkaa liiketoiminta-aluekohtaista tietoa.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

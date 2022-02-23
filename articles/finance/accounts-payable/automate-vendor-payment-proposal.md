@@ -2,24 +2,27 @@
 title: Toimittajan maksatusehdotusten automatisointi
 description: Tässä ohjeaiheessa kerrotaan, kuinka organisaatiot, jotka maksavat toimittajille toistuvassa aikataulussa, voivat automatisoida toimittajan maksuehdotusten luonnin.
 author: kweekley
+manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 1c5012fdc4f3bfab3f91adfee1eab758dd9c1a0f
-ms.sourcegitcommit: 5aecb04178e45e1fdea032b3ef3ce338332005dc
+ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7966712"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4442990"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Toimittajan maksatusehdotusten automatisointi
 
@@ -32,9 +35,6 @@ Organisaatiot, jotka maksavat toimittajille toistuvassa aikataulussa, voivat nyt
 - Mihin toimittajan maksukirjauskansioon tuloksena olevat maksut tallennetaan
 
 Maksuehdotuksen automaatiot eivät kirjaa maksuja automaattisesti. Tämän vuoksi voit jatkaa sellaisten oikeellisuustarkistus- ja työnkulkuprosessien käyttämistä, joiden avulla voit hyväksyä luodut maksutavat.
-
-> [!NOTE]
-> **Toimittajan maksuehdotusten automaatio** -ominaisuuden on oltava käytössä toimintojen hallinnassa, jotta tätä toimintoa voidaan käyttää. 
 
 ## <a name="define-the-occurrence-of-vendor-payment-proposals"></a>Toimittajan maksuehdotusten esiintymän määrittäminen
 
@@ -100,11 +100,11 @@ Suosittelemme, että arvioit tarpeittesi mukaan, onko automaatio hyödyllinen or
 
 Kun toimittajan maksatusehdotuksen automaatiosarja on tehty, kunkin suorituksen esiintymät näkyvät prosessiautomaation viikkonäkymässä. Toimittajamaksuissa prosessiautomaation viikkonäkymä on lisätty sekä **Toimittajamaksu**-työtilaan että **Prosessiautomaatio**-sivulle.
 
-[![Toimittajamaksut-työtilan prosessiautomaation viikoittainen näkymä.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Toimittajamaksu-työtilan prosessiautomaation viikoittainen näkymä](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 **Toimittajamaksut**-työtilan prosessiautomaation viikkonäkymä näyttää vain toimittajien maksuehdotusten automaatiot. Se näyttää kaikki nykyisen viikon maksujen esiintymät kaikille yrityksille, joihin kirjautuneen käyttäjän suojausoikeudet on määritetty. Jos esimerkiksi ostoreskontran työntekijä vastaa USMF- ja USSI-yritysten maksuista, hän näkee toimittajan maksuehdotuksen automatisoinnin esiintymät näille kahdelle yritykselle, mutta ei muille yrityksille.
 
-[![Prosessiautomaation viikkonäkymä USMF- ja USSI-yrityksille.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Prosessiautomaation viikkonäkymä USMF- ja USSI-yrityksille](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Kukin esiintymä näyttää yrityksen, johon kirjauskansio on luotu tai tullaan luomaan. Jos maksuja luodaan keskitettyjen maksuerien avulla, näytettävä yritys on yritys, jolle maksu suoritetaan. Tapahtuma ei välttämättä näytä, mitkä yritysten laskut maksetaan.
 
@@ -144,6 +144,3 @@ Toimittajamaksujen ehdotusautomaatioita varten on lisätty seuraavat tehtävät 
 | Aikataulutapahtumien kysely | Ostoreskontran maksuvirkailija, ostoreskontran keskitetty maksuvirkailija | Tämä velvollisuus antaa oikeudet näyttää maksuehdotuksen automaatioesiintymiä seuraavien oikeuksien avulla:<ul><li>Näytä ajoituksen esiintymiä</li><li>Näytä esiintymä viikoittain -näkymä</li></ul> |
 | Kohdista kyselyjä ajoitussarjoihin      | None                                                                       | Tämä velvollisuus antaa oikeudet näyttää sarjojen asetuksia ja esiintymiä seuraavien oikeuksien avulla:<ul><li>Näytä ajoituksen esiintymiä</li><li>Näytä esiintymät -luettelosivu</li><li>Näytä esiintymä viikoittain -näkymä</li></ul>|
 | Ylläpidä ajoituksen esiintymiä     | None                                                                       | Tämä velvollisuus myöntää oikeuden luoda ja ylläpitää esiintymää seuraavien oikeuksien avulla:<ul><li>Ylläpidä ajoituksen esiintymiä</li><li>Näytä esiintymä viikoittain -näkymä</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

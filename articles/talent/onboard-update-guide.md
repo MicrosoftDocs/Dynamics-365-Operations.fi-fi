@@ -52,6 +52,3 @@ Onboard lähettää automaattisesti uudelleen työntekijälle muutoksista ilmoit
     ![[Perehdytysmallin muutosten siirtäminen kaikkiin siitä luotuihin oppaisiin](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Perehdytysoppaita avaavat uudet työntekijät näkevät nämä muutokset. Onboard ei kuitenkaan ilmoita sähköpostihälytyksillä uusille työntekijöille, että perehdytysopas on muuttunut. Muutokset on helppo tunnistaa, sillä kunkin muutoksen vieressä on **Uusi**-tunniste. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -94,6 +94,3 @@ Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila
 Finance and Operationsin Platform update 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

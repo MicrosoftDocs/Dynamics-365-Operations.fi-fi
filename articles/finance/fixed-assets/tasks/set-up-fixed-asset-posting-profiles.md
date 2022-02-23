@@ -1,30 +1,33 @@
 ---
 title: Käyttöomaisuuden kirjausprofiilien määrittäminen
-description: Tässä kuvataan, miten käyttöomaisuuden kirjausprofiilit määritetään.
-author: moaamer
+description: Tässä tehtävän ohjauksessa määritetään käyttöomaisuuden kirjausarvot.
+author: saraschi2
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883765"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442832"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Käyttöomaisuuden kirjausprofiilien määrittäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä kuvataan, miten käyttöomaisuuden kirjausprofiilit määritetään. Tehtävän aiheen esimerkeissä käsitellään peruskirjausprofiileja. Kirjausprofiileja on luotava myös erityisiä tilikartan ja taloushallinnon raportoinnin tarpeita varten.
+Tässä tehtävän ohjauksessa määritetään käyttöomaisuuden kirjausarvot.  Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.  Tehtävän ohjauksen esimerkeissä käsitellään peruskirjausprofiileja. Kirjausprofiileja on luotava myös erityisiä tilikartan ja taloushallinnon raportoinnin tarpeita varten.
 
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Käyttöomaisuuserät > Asetukset > Käyttöomaisuuserän kirjausprofiili**.
 2. Valitse **Uusi**.
@@ -120,6 +123,3 @@ Tässä kuvataan, miten käyttöomaisuuden kirjausprofiilit määritetään. Teh
 88. Määritä **Päätili**-kenttään haluamasi arvot.
 89. Määritä **Vastatili**-kenttään haluamasi arvot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

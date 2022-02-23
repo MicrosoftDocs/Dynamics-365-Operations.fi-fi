@@ -2,23 +2,26 @@
 title: Siirretyn tuoton kirjaus
 description: Tässä ohjeaiheessa annetaan tietoja tuottojen kirjaamisesta tuottokirjaustoiminnon avulla.
 author: kweekley
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f6b221104d7012d82a0021b6d8f9cc10fe44cb7b8f3473ab8e7ae7a89be0a5e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726107"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458932"
 ---
 # <a name="recognize-deferred-revenue"></a>Siirretyn tuoton kirjaus
 
@@ -36,7 +39,7 @@ Tuottokirjausaikataulun tietoja voidaan tarkastella kahdella tavalla.
 - Voit avata tuottokirjausaikataulun suoraan laskutetusta myyntitilauksesta. Tällöin tuottoaikataulun tiedot suodatetaan näyttämään vain valitun myyntitilauksen tiedot. Tämä on hyödyllistä myyntitilauksen aikataulutietojen tarkistamisessa.
 - Tuottokirjausaikataulu voidaan avata **Tuottokirjaus \> Kausittaiset tehtävät** -sivulta. Tätä toimintatapaa käytetään usein, kun tuotto kirjataan kauden lopussa. Kun sivu avataan ensimmäistä kertaa, tietoja ei ole näkyvissä. Ruudukon yläpuolella olevilla suodattimilla voidaan määrittää perusteet näytettäville aikataulutiedoille. Laskutuspäivämääriä voidaan suodattaa määrittämällä päivämääräväli, myyntitilaus, asiakas, projektitunnus tai tila.
 
-[![Kuva Tuottoaikataulut-sivusta.](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
+[![Tuottoaikataulujen sivu](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 **Taloushallinnon dimensio** -pikavälilehti ruudukon alla avaa myyntitilausrivin taloushallinnon dimensiot. Nämä dimensiot otettiin huomioon kirjauksessa siirrettyyn tuottoon. Ne otetaan huomioon myös tuoton kirjauksessa. Käytettävät dimensioarvot määräytyvät tuotolle määritetyn tilirakenteen ja siirretyn tuoton päätilien mukaan.
 
@@ -46,7 +49,7 @@ Tuotto kirjataan suorittamalla **Tuoton kirjaus** -sivun **Luo kirjauskansio** -
 
 Tuoton valitsemisen ja kirjauksen perusteet määritetään valitsemalla **Luo kirjauskansio**, jolloin avautuu **Luo kirjauskansio** -valintaruutu.
 
-[![Luo kirjauskansion parametrivaihtoehdot.](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
+[![Luo kirjauskansion parametrivaihtoehdot](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
 
 Määritä tuoton kirjauksessa käytettävä kirjauspäivämäärä valintaikkunan **Käsittelypäivämäärä**-kenttäryhmän asetuksilla. Jos valitset **Valittu päivämäärä**, voit syöttää kirjauspäivämäärän **Tapahtuman päivämäärä** -kenttään. Jos valitset **Tuottoaikataulun päivämäärä**, tapahtuman päivämäärää ei käytetä. Kirjauspäivämääränä käytetään sen sijaan kunkin aikataulun rivin **Kirjauspäivämäärä**-kentän arvoa.
 
@@ -56,11 +59,11 @@ Kun päivämäärät on määritetty, luo kirjauskansio valitsemalla valintaikku
 
 Kun prosessi on suoritettu, kirjauskansioon siirretyt aikataulun rivit saavat merkinnän **Käsitelty**. **Käsitelty**-merkintä ilmaisee, että rivit on siirretty kirjauskansioon. Ne voivat kuitenkin olla kirjattuja tai kirjaamattomia. Kun tuottokirjauskansio on kirjattu, **Käsitelty**-merkintä säilyy. Jos tuottokirjauskansio poistetaan tai jos rivi poistetaan, **Käsitelty**-merkintä poistetaan. Tällä tavoin rivi voidaan kirjata, kun **Luo kirjauskansio** -prosessi suoritetaan uudelleen.
 
-[![Tuottokirjausaikataulujen sivu.](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
+[![Tuottokirjausaikataulujen sivu](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
 
 Avaa **Tuottokirjauskansio**-sivulla (**Tuottokirjaus \> Kirjauskansioviennit \> Tuottokirjauskansio**) kohta **Rivit** tarkastellaksesi tietoja kirjattavista asioista. Kullekin kirjattavan aikataulun riville luodaan erillinen tapahtuma, vaikka rivit kirjattaisiin samana päivänä samoille kirjanpitotileille.
 
-[![Kirjauskansion tositesivu.](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
+[![Kirjauskansion tositesivu](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
 
 **Tili**-sarakkeessa näkyy siirretyn tuoton kirjanpitotili. Tätä kirjanpitotiliä ei voi muokata. Tämä rajoitus auttaa takaamaan, että oikea siirretyn tuoton kirjanpitotili vapautetaan. Tätä kirjanpitotiliä tarkisteta tilirakenteeseen verraten, koska se on saattanut muuttua sen jälkeen, kun viitattuun kirjanpitotiliin tehtiin edellinen kirjaus.
 
@@ -82,7 +85,7 @@ Aikataulun riveihin voi tehdä joitakin muutoksia. Rivien seuraavia kenttiä voi
 
 - **Pidossa** – Tämä merkintä voidaan lisätä tai poistaa ennen rivin käsittelyä. Merkintä poistetaan valitsemalla rivi ja sitten **Poista pito**. Tuottoa ei voi muuttaa riveillä, jotka ovat pidossa. Rivejä voidaan laittaa automaattisesti pitoon, jos tuottoaikataulu sallii automaattisen pidon.
 
-    [![Tuottoaikataulut – aikataulurivien muokkaaminen.](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+    [![Tuottoaikataulut – aikataulurivien muokkaaminen](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 - **Kirjauspäivämäärä** – Kirjauspäivämäärää voi muuttaa ennen rivin käsittelyä. Kun tuottokirjauskansion luova prosessi suoritetaan, **Tuottokirjauksen tilannepäivämäärä** -kenttään täytetään päivämäärä. Kyseistä päivämäärää verrataan **Kirjauspäivämäärä**-kenttään sen määrittämiseksi, mitkä rivit kirjataan.
 - **Vapautettava summa** – Vapautettavaa summa voidaan muuttaa ennen rivin käsittelyä. Kirjattavan tuoton summaa voidaan pienentää, mutta ei suurentaa. Tämän kentän avulla organisaatio voi kirjata osan tuotosta kirjauspäivämääränä. Jos summaa on muutettu, **Jäljellä oleva summa** -kentässä oleva summa ilmaisee, kuinka paljon tuottoa on vielä kirjattava.
@@ -98,14 +101,11 @@ Aikataulua voidaan muuttaa valitsemalla mikä tahansa muutettavan nimikkeen aika
 
 Sopimuksen alkamis- ja päättymispäivät muutetaan vastaamaan oikeaa aikaväliä. Kun aikaväliä muutetaan, **Esiintymien määrä**-kentän arvon on vastattava järjestelmässä määritettyä tuottoaikataulua. Koska sopimus tässä esimerkissä muutettiin 24 kuukauden kestoiseksi, on määritettävä 24 kuukauden tuottoaikataulu. Koska 24 kuukauden tuottoaikataulu on olemassa, se annetaan oletusarvoisesti, ja sopimusta voidaan muuttaa. Jos olemassa olevaa tuottoaikataulua, jolla on sama määrä esiintymiä, ei ole, sopimusta ei voi muuttaa. Kun sopimusehtoja ja tuottoaikataulua on päivitetty halutulla tavalla, tallenna muutoksesi valitsemalla valintaikkunassa **OK**.
 
-[![Päivitetty sopimuksen aikaväli.](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
+[![Päivitetty sopimuksen aikaväli](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
 
 Sopimuksen muutoksilla on seuraavat vaikutukset tuottoaikataulutietoihin:
 
 - Jos tuotteen tuotto on kirjattu, kaikki aiemmat aikataulutiedot poistetaan ja korvataan uusilla tuottoaikataulutiedoilla. Esimerkiksi nimikkeellä S0008 oli alun perin aikataulutiedoissa 12 riviä. Nämä 12 riviä poistetaan ja korvataan 24:llä uuteen tuottoaikatauluun perustuvalla rivillä.
 - Jos tuotteelle on kirjattu tuottoa, tuottoa on kirjattu väärin, koska kirjaus on perustunut virheelliseen tuottoaikatauluun. Nämä rivit on takaisinkirjattava ja kirjattava uudelleen uuden aikataulun perusteella. Tässä skenaariossa luodaan uusia tuottoaikataulurivejä, joilla on negatiivinen summa alkuperäisenä kirjauspäivänä. Sitten luodaan uusia rivejä, joilla summat kirjataan uuden tuottoaikataulun perusteella. 8.8.2019 esimerkiksi kirjattiin 10,53 dollarin tuotto. 8. syyskuuta 2019 taas kirjattiin 13,16 dollarin tuotto. Siten samoina päivinä luodaan kaksi uutta riviä. Yhden rivin arvo on -10,53 dollaria ja toisen -13,16 dollaria. Sitten luodaan 24 uutta riviä, joille siirretyn tuoton kokonaismäärä eli 160,61 dollaria kohdistetaan. Takaisinkirjausrivit voidaan kirjata suorittamalla **Luo kirjauskansio** -prosessi.
 
-[![Tuottokirjausaikataulu.](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Tuottokirjausaikataulu](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)

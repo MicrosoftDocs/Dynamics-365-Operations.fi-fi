@@ -49,6 +49,3 @@ Heti kun hakija on hyväksynyt työpaikan, hänelle lähetetään sähköpostivi
 
 ## <a name="analytic-reports"></a>Analyyttiset raportit
 Työhönottotiimit voivat käyttää palkkausprosessin avainmittareiden näkymiä yhteen työhön tai yhdessä kaikkien töiden kanssa [Attractin analyyttisissä raporteissa.](analytic-reports.md) Tämä toiminto on saatavana [esiversiona](access-preview-feature.md) niille asiakkaille, joilla on [Microsoft Dynamics 365 Talent – Attractin versio](attract-comprehensive-hiring.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

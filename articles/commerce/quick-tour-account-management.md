@@ -2,9 +2,11 @@
 title: Tilinhallintasivujen yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tilinhallintasivujen yleiskatsaus.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,18 +16,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e194004476545fb142f71aa4bd889dbbc70c6ed4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984516"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969848"
 ---
 # <a name="account-management-pages-overview"></a>Tilinhallintasivujen yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tilinhallintasivujen yleiskatsaus.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Tilinhallintasivujen avulla asiakkaat voivat tarkastella tietoja, jotka liittyvät heidän tiliinsä ja tilauksiin. Tilinhallinnan sivut sisältävät tilinhallinnan saapumissivun, käyttäjäprofiilisivun, osoitteiden sivun, tilaushistoriasivun, tilaustietojen sivun, kanta-asiakaspisteiden sivun ja toivomusluettelosivun.
 
@@ -35,7 +39,7 @@ Kun asiakas kirjautuu sisään ja valitsee **Oma tili**, tilinhallinnan saapumis
 
 Seuraavassa kuvassa on esimerkki tilinhallinnan saapumissivusta.
 
-![Esimerkki tilinhallinnan saapumissivusta.](./media/Account-Management.PNG)
+![Esimerkki tilinhallinnan saapumissivusta](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Oma profiili -sivu
 
@@ -43,7 +47,7 @@ Seuraavassa kuvassa on esimerkki tilinhallinnan saapumissivusta.
 
 Seuraavassa kuvassa on esimerkki **Oma profiili** -sivusta, joka on luotu moduulikirjaston avulla.
 
-![Esimerkki Oma profiili -sivusta.](./media/Account-Management-MyProfile.PNG)
+![Esimerkki Oma profiili -sivusta](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Osoitteet-sivu
 
@@ -51,7 +55,7 @@ Seuraavassa kuvassa on esimerkki **Oma profiili** -sivusta, joka on luotu moduul
 
 Seuraavassa kuvassa on esimerkki **Osoitteet**-sivusta.
 
-![Esimerkki Osoitteet-sivusta.](./media/Account-Management-Address.png)
+![Esimerkki Osoitteet-sivusta](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Tilaushistoria- ja Tilaustiedot-sivut
 
@@ -59,11 +63,11 @@ Seuraavassa kuvassa on esimerkki **Osoitteet**-sivusta.
 
 Seuraavassa kuvassa on esimerkki **Tilaushistoria**-sivusta.
 
-![Esimerkki Tilaushistoria-sivusta.](./media/Account-Management-OrderHistory.PNG)
+![Esimerkki Tilaushistoria-sivusta](./media/Account-Management-OrderHistory.PNG)
 
 Seuraavassa kuvassa on esimerkki **Tilauksen tiedot** -sivusta.
 
-![Esimerkki Tilauksen tiedot -sivusta.](./media/Account-Management-OrderDetails.PNG)
+![Esimerkki Tilauksen tiedot -sivusta](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Kanta-asiakasohjelma-sivu
 
@@ -71,15 +75,15 @@ Seuraavassa kuvassa on esimerkki **Tilauksen tiedot** -sivusta.
 
 Seuraavassa kuvassa on **Kanta-asiakasohjelma** -sivun esimerkki.
 
-![Esimerkki Kanta-asiakasohjelma-sivusta.](./media/Account-Management-Loyalty.PNG)
+![Esimerkki Kanta-asiakasohjelma-sivusta](./media/Account-Management-Loyalty.PNG)
 
-### <a name="wishlist-page"></a>Toivomuslistasivu
+### <a name="wishlist-page"></a>Toivelistasivu
 
 **Toivomuslista**-sivulla on niiden nimikkeiden luettelo, jotka asiakas on lisännyt toivomuslistaansa. Sekä tuotteet että tuotevariantit voidaan lisätä toivomuslistaan. Tällä sivulla asiakas voi poistaa nimikkeen toivomuslistasta tai lisätä nimikkeen suoraan ostoskoriin.
 
 Seuraavassa kuvassa on **Toivomuslista**-sivun esimerkki.
 
-![Esimerkki Toivomuslista-sivusta.](./media/Account-Management-Wishlist.PNG)
+![Esimerkki Toivomuslista-sivusta](./media/Account-Management-Wishlist.PNG)
 
 Lisätietoja tilienhallintamoduuleista ja niiden muokkaamisesta on kohdassa [Tilinhallinta](account-management.md).
 
@@ -91,6 +95,3 @@ Lisätietoja tilienhallintamoduuleista ja niiden muokkaamisesta on kohdassa [Til
 
 [Ostoskorin ja maksusivun yleiskatsaus](quick-tour-cart-checkout.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

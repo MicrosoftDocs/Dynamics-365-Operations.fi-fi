@@ -1,26 +1,29 @@
 ---
 title: Kuljetuksenhallinnan moduulit
 description: Kuljetuksenhallinnan moduulit määrittävät logiikan, jota käytetään kuljetushintojen luomiseen ja käsittelemiseen Kuljetuksenhallinnassa.
-author: Henrikan
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bce886b8029b3a00c6572642d339efa9dcad4267
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580117"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427442"
 ---
 # <a name="transportation-management-engines"></a>Kuljetuksenhallinnan moduulit
 
@@ -43,7 +46,8 @@ Seuraavassa taulukossa on kuvattu käytettävissä olevat kuljetuksenhallintamod
 | **Rahtilaskun tyyppi**            | Standardoi rahtilaskun ja rahtikirjan rivit ja sitä käytetään automaattiseen rahtikirjan täsmäyttämiseen.                                                                                                                                                                                                                |
 
 
-## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mitä laskentoja on määritettävä, jotta lähetykselle voidaan laskea hinta?
+<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mitä laskentoja on määritettävä, jotta lähetykselle voidaan laskea hinta?
+---------------------------------------------------
 
 Jos haluat arvioida lähetyksen käyttäen tiettyä rahdinkuljettajaa, sinun on määritettävä useita kuljetushallintamoduuleita. **Hinnan laskenta** on pakollinen, mutta muiden kuljetuksen hallinnan moduulien on ehkä tuettava **Hinnan laskenta** -moduulia. **Hinnan laskenta** -moduulia voidaan käyttää esimerkiksi tietojen noutamiseen **Kilometrien laskenta** -moduulista ja hinnan laskemiseksi lähteen ja kohteen välillä kilometrien perusteella.
 
@@ -61,7 +65,8 @@ Useimmissa tapauksissa voit konfiguroida alustustiedot valitsemalla **Parametrit
 |  <em>MileageEngineCode</em>  |                       Kilometrien laskennan koodi, joka tunnistaa kilometrien laskentatietueen tietokannassa.                        |
 | <em>Jako-osuuden laskenta</em> |                        Yleinen jako-osuuden laskennan yksilöivä koodi tietokannassa.                        |
 
-## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Metatietojen käyttö kuljetuksen hallintalaskuihin
+<a name="how-is-metadata-used-in-transportation-management-engines"></a>Metatietojen käyttö kuljetuksen hallintalaskuihin
+----------------------------------------------------------
 
 Kuljetuksenhallinnan moduulit, jotka perustuvat Supply Chain Managementissa määriteltyihin tietoihin, saattavat käyttää erilaisia tietomalleja. Kuljetuksen hallintajärjestelmä mahdollistaa, että erilaiset kuljetuksen hallintamoduulit voivat käyttää samoja yleisiä fyysisiä tietokantatauluja. Varmistaaksesi, että ajoaikainen moottorin tietojen tulkinta on täsmällistä, voit määrittää metatiedot tietokannan taulukoihin. Tämä vähentää uusien kuljetuksenhallintamoduulien rakentamiskustannuksia, koska Operations ei vaadi lisärakenteita tauluille ja lomakkeille.
 
@@ -84,7 +89,7 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | **Vyöhykkeen laskenta**                                | Edellyttää, että metatiedot voidaan määrittää suoraan vyöhykkeessä.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Siirtoajan laskenta** ja **Kilometrien laskenta** | Hakee metatietoja suoraan kilometrikorvausmoduulin konfigurointiasetuslomakkeesta.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Esimerkki hinnan laskennan metatiedoista** Kuljetuksen hallintamoduuli vaatii alkuperäisen osoitteen, kohdeosavaltion ja maan/alueen sekä lähetyksen alku- ja päätepisteen tunnistamisen. Käyttämällä näitä vaatimuksia metatiedot näyttävät tiedot seuraavan taulukon mukaisesti. Taulukko sisältää myös tietoja vaadittavien syöttötietojen tyypistä.
+  **Esimerkki hinnan laskennan metatiedoista** Kuljetuksen hallintamoduuli vaatii alkuperäisen osoitteen, kohdeosavaltion ja maan/alueen sekä lähetyksen alku- ja päätepisteen tunnistamisen. Käyttämällä näitä vaatimuksia metatiedot näyttävät tiedot seuraavan taulukon mukaisesti. Taulukko sisältää myös tietoja vaadittavien syöttötietojen tyypistä.
 -   Voit määrittää nämä tiedot valitsemalla **Hintaperusteen tyyppi** -sivulta **Kuljetuksen hallinta** &gt; **Asetukset**.
 
 | Järjestys | Nimi                          | Kentän tyyppi | Tietotyyppi | Hakutyyppi    | Pakollinen |
@@ -93,13 +98,4 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | 2        | Kohteen osavaltio             | Määritys | merkkijono    | Tila          |           |
 | 3        | Kohteen alkupostinumero | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 4        | Kohteen loppupostinumero   | Määritys | merkkijono    | Postinumero    | Valittu  |
-| 5        | Kohdemaa           | Liitos | Merkkijono    | Maa tai alue |           |
-
-### <a name="whitepaper"></a>Tekninen raportti
-
-Lisätietoja saa lataamalla seuraava tekninen raportti (joka on kirjoitettu tukemaan AX2012-versiota, mutta koskee myös Dynamics 365 Supply Chain Managementia)
-
-- [Kuljetustenhallintamoduulit](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+| 5        | Kohdemaa           | Määritys | merkkijono    | Maa/alue |           |

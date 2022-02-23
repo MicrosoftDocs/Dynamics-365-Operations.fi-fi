@@ -2,13 +2,16 @@
 title: Ota tuotesuositukset käyttöön
 description: Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesuosituksia voidaan tehdä Microsoft Dynamics 365 Commerce -asiakkaiden käyttöä varten.
 author: bebeale
-ms.date: 08/31/2021
+manager: AnnBe
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a7be82b3a40aba621693f080ff41767fdaea474
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466313"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411854"
 ---
 # <a name="enable-product-recommendations"></a>Ota tuotesuositukset käyttöön
 
@@ -31,28 +34,32 @@ Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesu
 
 ## <a name="recommendations-pre-check"></a>Suositusten esitarkistus
 
-1. Varmista, että sinulla on voimassa oleva Dynamics 365 Commerce -suositusten käyttöoikeus.
-1. Varmista, että yksikkösäilö on yhteydessä asiakkaan omistamaan Azure Data Lake Storage Gen 2 -tiliin. Katso lisätietoja kohdasta [Varmista, että Azure Data Lake Storage on ostettu ja todennettu onnistuneesti ympäristössä](enable-ADLS-environment.md).
-1. Vahvista, että Azure AD -käyttäjätietojen määritys sisältää suositusten merkinnän. Lisätietoja tästä toiminnosta alla.
-1. Varmista, että yksikkösäilön päivittäinen päivitys Azure Data Lake Storage Gen 2:een on ajoitettu. Lisätietoja on kohdassa [Varmista, että yksikkösäilön päivitys on automatisoitu](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
-1. Ota RetailSale-mittaukset käyttöön yksikkösäilössä. Lisätietoja tämän prosessin määrittämisestä: [Mittayksiköiden käsitteleminen](/dynamics365/ai/customer-insights/pm-measures).
+Ota huomioon ennen käyttöönottoa, että tuotesuosituksia tuetaan vain Commerce-asiakkaille, jotka ovat siirtäneet tallennustilansa Azure Data Lake Storagea käyttäen. 
 
-Kun edellä mainitut vaiheet on suoritettu, olet valmis ottamaan suositukset käyttöön.
+Seuraavat kokoonpanot on otettava käyttöön taustajärjestelmässä ennen suositusten käyttöönottoa:
+
+1. Varmista, että Azure Data Lake Storage on ostettu ja todennettu onnistuneesti ympäristössä. Katso lisätietoja kohdasta [Varmista, että Azure Data Lake Storage on ostettu ja todennettu onnistuneesti ympäristössä](enable-ADLS-environment.md).
+2. Varmista, että yksikkösäilön päivitys on automatisoitu. Lisätietoja on kohdassa [Varmista, että yksikkösäilön päivitys on automatisoitu](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Vahvista, että Azure AD -käyttäjätietojen määritys sisältää suositusten merkinnän. Lisätietoja tästä toiminnosta alla.
+
+Varmista myös, että RetailSale-mittarit on otettu käyttöön. Lisätietoja tästä määritysprosessista on kohdassa [Mittayksiköiden käsitteleminen](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="azure-ad-identity-configuration"></a>Azure AD -tunnisteen konfiguraatio
 
-Tämä vaihe on pakollinen vain asiakkaille, jotka käyttävät infrastruktuuria palvelun (IaaS) määrityksenä. Azure AD:n käyttäjätietojen määritys on automaattinen asiakkaille, jotka käyttävät Azure Service Fabricia, mutta on suoriteltavaa varmistaa, että asetus on määritetty odotetulla tavalla.
+Tämä vaihe on pakollinen kaikille asiakkaille, jotka käyttävät infrastruktuuria palvelun (IaaS) määrityksenä. Jos asiakas käyttää Service fabric (SF) -palvelua, tämän vaiheen tulisi olla automaattinen ja suosittelemme, että asetus määritetään odotetulla tavalla.
 
-### <a name="setup"></a>Asetusten määrittäminen
+### <a name="setup"></a>Määritys
 
-1. Etsi Commerce-pääkonttorissa **Azure Active Directory -sovellukset** -sivua
-1. Tarkista, että **RecommendationSystemApplication-1**-merkintä on olemassa. Jos merkintää ei ole, luo sellainen käyttäen seuraavia tietoja:
+1. Etsi taustaohjelmistosta **Azure Active Directory -sovellukset** -sivu.
+2. Tarkista, onko "RecommendationSystemApplication-1"-merkintää olemassa.
 
-    - **Asiakastunnus**: d37b07e8-dd1c-4514-835d-8b918e6f9727
-    - **Nimi**: RecommendationSystemApplication-1
-    - **Käyttäjätunnus**: RetailServiceAccount
+Jos tapahtumaa ei ole olemassa, lisää uusi tietue, jossa on seuraavat tiedot:
 
-1. Tallenna ja sulje sivu. 
+- **Asiakastunnus** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Nimi** - RecommendationSystemApplication-1
+- **Käyttäjätunnus** - RetailServiceAccount
+
+Tallenna ja sulje sivu. 
 
 ## <a name="turn-on-recommendations"></a>Suositusten ottaminen käyttöön
 
@@ -64,23 +71,18 @@ Voit ottaa tuotesuositukset käyttöön noudattamalla seuraavia ohjeita.
 1. Valitse **Tuotesuositukset** -ominaisuus.
 1. Valitse **Tuotesuositukset** -ominaisuusruudussa **Ota käyttöön nyt**.
 
-![Suositusten ottaminen käyttöön.](./media/FeatureManagement_Recommendations.PNG)
+![Suositusten ottaminen käyttöön](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
-> - Edellä mainittu menettely käynnistää tuotesuositusluetteloiden luontiprosessin. Luetteloiden luominen, niiden saaminen käyttöön ja näkyminen myyntipisteessä tai Dynamics 365 Commerce -sovelluksessa voi kestää useita tunteja.
-> - Tämä määritys ei ota käyttöön kaikkia suositusominaisuuksia. Erilliset ominaisuuksienhallinnan merkinnät ohjaavat edistyneitä ominaisuuksia, kuten yksilöllisiä suosituksia, kuten "osta samankaltaiselta näyttäviä" tai "osta samankaltaisen kuvauksen perusteella". Lisätietoja näiden ominaisuuksien käyttöönotosta Commerce-pääkonttorista: [Yksilöllisten suositusten käyttöönotto](personalized-recommendations.md), [Osta samankaltaisia näyttäviä -suositusten käyttöönotto](shop-similar-looks.md) ja [Osta samankaltaisen kuvauksen perusteella -suositusten käyttöönotto](shop-similar-description.md).
+> Tämä menettely käynnistää tuotesuositusluetteloiden luontiprosessin. Luetteloiden luominen, niiden saaminen käyttöön ja näkyminen myyntipisteessä tai Dynamics 365 Commerce -sovelluksessa voi kestää useita tunteja.
 
 ## <a name="configure-recommendation-list-parameters"></a>Suositusluettelon parametrien määrittäminen
 
 Oletusarvoisesti tekoälyyn perustuva tuotesuositusluettelo sisältää ehdotetut arvot. Voit muuttaa ehdotettuja oletusarvoja haluamallasi tavalla. Lisätietoja oletusparametrien muuttamisesta on kohdassa [Tekoälyn koneoppimiseen perustuvan tuotesuositusluettelon hallinta](modify-product-recommendation-results.md).
 
-## <a name="include-recommendations-in-e-commerce-experiences"></a>Suositusten sisällyttäminen sähköisen kaupankäynnin kokemuksiin
-
-Kun suositukset on otettu käyttöön Commerce-pääkonttorissa, sähköisen kaupankäynnin kokemuksia koskevien suositustulosten näyttämiseen käytettävät Commerce-moduulit ovat valmiina määritettäväksi. Lisätietoja: [Tuotteiden keräilymoduulit](product-collection-module-overview.md).
-
 ## <a name="show-recommendations-on-pos-devices"></a>Suositusten näyttäminen myyntipistelaitteissa
 
-Kun suositukset on otettu käyttöön Commerce-pääkonttorissa, suosituspaneeli on lisättävä ohjausobjektin myyntipistenäyttöön asettelutyökalun avulla. Lisä tietoja tästä prosessista on kohdassa [Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle](add-recommendations-control-pos-screen.md). 
+Kun suositukset on otettu käyttöön Commercen taustatoiminnossa, suosituspaneeli on lisättävä ohjausobjektin myyntipistenäyttöön asettelutyökalun avulla. Lisä tietoja tästä prosessista on kohdassa [Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle](add-recommendations-control-pos-screen.md). 
 
 ## <a name="enable-personalized-recommendations"></a>Kohdennettujen suositusten ottaminen käyttöön
 
@@ -112,6 +114,3 @@ Lisätietoja mukautetuista suosituksista on kohdassa [Mukautettujen suositusten 
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

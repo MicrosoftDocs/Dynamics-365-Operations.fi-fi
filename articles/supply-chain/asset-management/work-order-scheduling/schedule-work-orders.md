@@ -1,10 +1,12 @@
 ---
 title: Ajoita työtilauksia
 description: Tässä ohjeaiheessa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718056"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020226"
 ---
 # <a name="schedule-work-orders"></a>Ajoita työtilauksia
 
@@ -56,7 +58,7 @@ Voidaan ajoittaa vain työtilaukset, joissa on työtilauksen elinkaaritila, joka
 
 *Esimerkki:* Alla olevassa kuvassa **Odotettu alku** -kenttään lisätty kaava luo työtilausten aikataulutuksen kaikille työtilauksille, joiden odotettu alkamispäivä on viikko tästä lähtien ja myöhemmin. Tämä kaava voi olla hyödyllinen, kun suoritat työtilausten ajoitusta jatkuvasti, mutta haluat varmistaa, että seuraaville 5-6 päivälle ajoitettuja työtilauksia ei ajoiteta uudelleen.
 
-![Kuva 1.](media/03-work-order-scheduling.png)
+![Kuva 1](media/03-work-order-scheduling.png)
 
 Työtilauksiin liittyvä työtilaustyyppi voi määrittää yhden kunnossapitotyöntekijän ajoituksen (**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Työtilaustyypit** > **Yksi ylläpitotyöntekijä** -valintanäppäimeksi määritetty "Kyllä"). Tämä tarkoittaa, että jos työtilaustyyppiä käytetään työtilauksessa, **Yksi ylläpitotyöntekijä** -vaihtopainikkeen arvoksi tulee automaattisesti "Kyllä" **Kaikki työtilaukset** -tietosivun **Otsikko**-näkymän **Ajoita**-pikavälilehdessä. Työtilauksen ajoituksen aikana kaikki työtilaukseen luodut työtilaustyöt ajoitetaan myöhemmin samalle kunnossapitotyöntekijälle. Voit tarvittaessa muokata **Yksi ylläpitotyöntekijä** -valintaa **Kaikki työtilaukset** -kohdassa, jolloin useiden työntekijöiden tai yhden työntekijän työtilaustöiden ajoittaminen sallitaan.
 
@@ -135,6 +137,3 @@ Gantt-kaavion tarkasteleminen ja käsitteleminen:
     - Jos haluat ajoittaa näytössä olevan työtilauksen uudelleen, valitse ja vedä se sitten sopivaan uuteen päivämäärään ja kellonaikaan.
 
 1. Jos teit muutoksia, tallenna ne valitsemalla toimintoruudussa **Tallenna**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

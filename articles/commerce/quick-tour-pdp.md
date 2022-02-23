@@ -2,24 +2,27 @@
 title: Tuotetietosivujen yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotetietosivujen (PDP:t) yleiskatsaus.
 author: anupamar-ms
+manager: annbe
 ms.date: 01/23/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986198"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412076"
 ---
 # <a name="product-details-pages-overview"></a>Tuotetietosivujen yleiskatsaus
 
@@ -27,11 +30,13 @@ ms.locfileid: "7986198"
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotetietosivujen (PDP:t) yleiskatsaus.
 
+## <a name="overview"></a>Yleiskatsaus
+
 PDP-sivulla on tuotteen eritellyt tiedot. Sen avulla asiakkaat voivat valita tuotevaihtoehtoja, kuten koon, tyylin ja värin. PDP-sivulla on oltava kaikki tuotteen tiedot, joita asiakas tarvitsee ostopäätöksen tekemiseen.
 
 Seuraavassa kuvassa on esimerkki PDP-sivusta.
 
-![Esimerkki tuotetietosivusta.](./media/pdp.PNG)
+![Esimerkki tuotetietosivusta](./media/pdp.PNG)
 
 ## <a name="header-and-footer-modules"></a>Ylä- ja alatunnistemoduulit
 
@@ -83,6 +88,3 @@ Jos markkinointisisältö koskee vain tiettyä tuotetta, mikä tahansa markkinoi
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
 
 [Tuotetietosivun täydentäminen](enrich-product-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

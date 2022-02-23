@@ -1,10 +1,12 @@
 ---
 title: Tulostimen ER-kohteen tyyppi
-description: Tässä aiheessa käsitellään tulostinkohteen määrittämistä sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla.
+description: Tässä ohjeaiheessa selitetään, miten kullekin lähteviä asiakirjoja joko PDF-muodossa tai Microsoft Office -muodossa (Excel/Word) luomaan määritetty sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-komponentin tulostinkohde määritetään.
 author: NickSelin
-ms.date: 02/24/2021
+manager: AnnBe
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712709"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679603"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Tulostinkohde
 
@@ -30,7 +32,7 @@ Voit lähettää luodun asiakirjan suoraan verkkotulostimeen suoraa tulostusta v
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen aloittamista sinun on asennettava ja määritettävä asiakirjan reititysagentti ja rekisteröitävä sitten verkkotulostimet. Lisätietoja on kohdassa [Verkkotulostuksen käyttöönotto asentamalla asiakirjan reititysagentti](./install-document-routing-agent.md)
+Ennen aloittamista sinun on asennettava ja määritettävä asiakirjan reititysagentti ja rekisteröitävä sitten verkkotulostimet. Lisätietoja on kohdassa [Verkkotulostuksen käyttöönotto asentamalla asiakirjan reititysagentti](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent)
 
 ## <a name="make-the-printer-destination-available"></a>Tulostinkohteen käytettäväksi asettaminen
 
@@ -39,13 +41,15 @@ Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoftin Dynamics 36
 1. Muunna sähköisen raportoinnin lähtevät asiakirjat Microsoft Office -muodoista PDF-muotoon
 2. Asiakirjareitityksen agentti lähtevien asiakirjojen sähköisen raportoinnin kohteena
 
-[![ER-tulostinkohteen toiminnon käyttöönotto ominaisuuksien hallinnassa.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![ER-tulostinkohteen toiminnon käyttöönotto ominaisuuksien hallinnassa](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Soveltuvuus
 
 **Tulostin**-kohde voidaan määrittää vain tiedostokomponenteille, joita käytetään tulosteen luomiseen joko tulostettavassa PDF-muodossa (PDF Mergerin tai PDF-tiedoston muotoelementit) tai Microsoft Office Excel/Word -muodossa (Excel-tiedosto). Kun tuloste luodaan PDF-muodossa, se lähetetään tulostimeen. Kun tuloste luodaan Microsoft Office -muodossa, se muunnetaan automaattisesti PDF-muotoon ja lähetetään sitten tulostimeen.
 
 ### <a name="limitations"></a>Rajoitukset
+
+Tämä ominaisuus on esikatseluominaisuus, ja siihen sovelletaan ehdoissa [Microsoft Dynamics 365 -esikatselujen lisäkäyttöehdot](https://go.microsoft.com/fwlink/?linkid=2105274) esitettyjä käyttöehtoja.
 
 **Tulostin**-kohdetta käytetään vain pilvikäyttöönotoissa.
 
@@ -55,7 +59,7 @@ Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoftin Dynamics 36
 2. Valitse **Tulostimen nimi** -kentässä asianmukainen verkkotulostin.
 3. Aseta **Tallenna tulostusarkistoon?** -asetuksen arvoksi **Kyllä**, jos haluat tallentaa luodun tulosteen tulostusarkistoon, jotta se voidaan tulostaa myös myöhemmin. Arkistoitu tuloste on myöhemmin käytettävissä kohdassa **Organisaation hallinta** \> **Kyselyt ja raportit** \> **Raporttiarkisto**.
 
-[![Tulostinkohteen käyttö.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Tulostinkohteen käyttö](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > **Muunna PDF-muotoon** -asetuksen ei tarvitse olla käytössä, kun määrität **Tulostin**-kohteen. PDF-muunnos tulostusta varten tapahtuu, vaikka asetus ei olisi käytössä.
@@ -66,6 +70,3 @@ Jos haluat käyttää tiettyä [sivun suuntaa](electronic-reporting-destinations
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

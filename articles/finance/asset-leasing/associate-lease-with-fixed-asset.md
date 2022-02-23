@@ -2,30 +2,32 @@
 title: Käyttöomaisuuserien liittäminen vuokrasopimuksiin
 description: Tässä ohjeaiheessa kerrotaan, miten aiemmin luotu käyttöomaisuuserä liitetään uuteen vuokrasopimukseen.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeaseDetail
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
-ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
+ms.openlocfilehash: d627633e43c2e6f5cad90dfe4100ff95a71541f7
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7392471"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4442974"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Käyttöomaisuuserien liittäminen vuokrasopimuksiin
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten aiemmin luotu käyttöomaisuuserä liitetään uuteen vuokrasopimukseen. Kun liität käyttöomaisuuserän vuokrasopimukseen, käyttöoikeusomaisuuserän arvo alkuperäisen tuloutuksen aikana on käyttöomaisuuserän hankintakustannus.
 
@@ -50,18 +52,5 @@ Kun olet kirjannut alkuperäisen tuloutuksen kirjauskansioviennin, tapahtuma nä
 
 Käyttöomaisuus voidaan nyt poistaa Käyttöomaisuuserät-kohdan vakiopoistotoimintojen avulla. Lisätietoja poistosta on kohdassa [Poistomenetelmät ja -käytännöt](../fixed-assets/depreciation-methods-conventions.md).
 
-Kun vuokrasopimus on liitetty käyttöomaisuuteen, käyttöomaisuuskirjan **Käyttöikä**-kenttä päivitetään kohdistumaan pienimpään seuraavien ehtojen arvoon: 
-
- - Käyttöomaisuuden käyttöikä
- - Vuokra-aika liitetystä vuokrakirjasta
-
-Jos **Omistajuuden siirto** -kentän arvoksi on määritetty käyttöomaisuuskirjassa **Kyllä**, **Käyttöikä**-kentän arvo on aina käyttöomaisuuden käyttöikä. 
- 
-Käyttöikä päivitetään joka kerta, kun vuokrasopimusta muutetaan. Näin varmistetaan, että käyttöoikeusomaisuuserä poistetaan vuokra-ajan mukaan aivan kuin se poistettaisiin resurssin vuokrauksessa.
-
 > [!NOTE]
 > Jos käyttöomaisuus liitetään vuokrasopimukseen, **Resurssin poisto** ja **Vuokrasopimuksen arvonalennus** -painikkeet eivät ole käytössä resurssin vuokrauksessa. Voit tarkastella resurssin poistoa ja vuokrasopimuksen arvonalennustapahtumia Käyttöomaisuuserät-kohdassa. **Resurssitapahtumat**-painike, joka avaa kyselylomakkeen, on myös poistettu käytöstä. Voit avata myös **Resurssitapahtumat**-kyselyn Käyttöomaisuuserät-kohdassa.  
-
-**Käyttöomaisuuserät**- ja **Käyttöomaisuuskirja**-sivut näyttävät käyttöomaisuuteen liitetyn vuokrasopimuksen tunnus. Jos käyttöomaisuus on liitetty vuokrasopimukseen, vuokrasopimuksen tunnus ja sen kuvaus näytetään **Käyttöomaisuuserät**-sivun **Vuokrasopimuksen tiedot** -pikavälilehdessä. Vuokrakirjoissa, jotka on liitetty käyttöomaisuuskirjoihin, **Vuokrasopimuksen tunnus**- ja **Vuokrasopimuksen kuvaus**- ja **Kirjan tyyppi** -kentissä näytetään valitun käyttöomaisuuskirjan tiedot **Vuokrasopimuksen tiedot** -pikavälilehdessä. Näin ilmaistaan, että se on liitetty vuokrakirjaan.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

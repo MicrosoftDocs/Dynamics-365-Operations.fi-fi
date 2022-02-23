@@ -2,9 +2,11 @@
 title: Yhtä mallin juurta koskevien useiden johdettujen yhdistämismääritysten hallinta
 description: Tässä aiheessa käsitellään yhdelle mallin juurelle määritettyjen useiden johdettujen yhdistämismääritysten hallintaa.
 author: NickSelin
+manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10363371713bd5a882b41900249e7061afc577ba6473fdb3356a822c8e48f8f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743284"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4826106"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Yhtä mallin juurta koskevien useiden johdettujen yhdistämismääritysten hallinta
 
@@ -55,7 +57,7 @@ ER-vakiomääritys voidaan lisätä Financen nykyiseen esiintymään tuomalla ne
 2. Valitse **Lokalisointimääritykset**-sivun **Konfiguroinnit**-osassa **Raportointimääritykset**-ruutu.
 3. Laajenna **Konfiguraatiot**-sivun määrityspuun vasemmassa ruudussa **Laskumalli**.
 
-    ![Konfiguraatiot-sivun tuotujen määritysten tarkastelu.](./media/er-multiple-model-mappings-image1.png)
+    ![Konfiguraatiot-sivun tuotujen määritysten tarkastelu](./media/er-multiple-model-mappings-image1.png)
 
 4. **Vapaatekstilasku (Excel)** -muodon tarkastelu:
 
@@ -66,7 +68,7 @@ ER-vakiomääritys voidaan lisätä Financen nykyiseen esiintymään tuomalla ne
     
        Nykyinen ER-muoto on määritetty käyttämään **laskumallin** **InvoiceCustomer**-juurimääritelmää. Kun tämä muoto suoritetaan, **Malli**-tietolähde kutsutaan, **InvoiceCustomer**-juurimääritelmälle määritetyn mallin yhdistämismäärityksen avulla käytetään sovelluksen tietoja ja täytetään tietomalli.
 
-        ![Mallin tietolähteen tarkastelu Muodon suunnittelija -sivulla.](./media/er-multiple-model-mappings-image2.png)
+        ![Mallin tietolähteen tarkastelu Muodon suunnittelija -sivulla](./media/er-multiple-model-mappings-image2.png)
 
     6. Sulje **Muodon suunnittelija** -sivu.
 
@@ -79,7 +81,7 @@ ER-vakiomääritys voidaan lisätä Financen nykyiseen esiintymään tuomalla ne
         + **Myyntilasku**-mallin yhdistämismääritys on määritetty **laskumallin** **InvoiceCustomer**-juurimääritelmälle. Niinpä **Vapaatekstilasku (Excel)** -ER-muotoa suoritettaessa tämän ER-määrityksen **Myyntilasku**-mallin yhdistämismääritys voidaan valita käyttämään sovelluksen tietoja ja täyttämään tietomalli.
         + **Projektilasku**-mallin yhdistämismääritys on määritetty **laskumallin** **InvoiceProject**-juurimääritelmälle. Niinpä **Projektilasku (Excel)** -ER-muotoa suoritettaessa tämän ER-määrityksen **Projektilasku**-mallin yhdistämismääritys voidaan valita käyttämään sovelluksen tietoja ja täyttämään tietomalli.
 
-        ![Laskumallin yhdistämismääritys Yhdistäminen mallista tietolähteeseen -sivulla.](./media/er-multiple-model-mappings-image3.png)
+        ![Laskumallin yhdistämismääritys Yhdistäminen mallista tietolähteeseen -sivulla](./media/er-multiple-model-mappings-image3.png)
 
     4. Sulje **Malli tietolähteen yhdistämismääritystä varten** -sivu.
     5. Valitsemalla **Versiot**-pikavälilehdessä **Poista** voidaan poistaa kaikki tämän ER-määrityksen versiot, jotka ovat uudempia kuin versio 240.175.
@@ -90,7 +92,7 @@ ER-vakiomääritys voidaan lisätä Financen nykyiseen esiintymään tuomalla ne
     2. Valitse toimintoruudussa **Suunnittelija**.
     3. Huomaa **Yhdistäminen mallista tietolähteeseen** -sivulla, että nykyinen ER-mallin yhdistämismääritys sisältää **InvoiceProject**-mallin yhdistämismäärityksen ja että tämä mallin yhdistämismääritys on määritetty **laskumallin** **InvoiceProject**-juurimääritelmälle. Valitse tämän vuoksi **Projektilasku (Excel)** -ER-muotoa suoritettaessa tämän ER-määrityksen **InvoiceProject**-mallin yhdistämismääritys sovelluksen tietojen käyttämistä ja tietomallin täyttämistä varten.
 
-        ![Projektilaskumallin yhdistämismääritys Yhdistäminen mallista tietolähteeseen -sivulla.](./media/er-multiple-model-mappings-image4.png)
+        ![Projektilaskumallin yhdistämismääritys Yhdistäminen mallista tietolähteeseen -sivulla](./media/er-multiple-model-mappings-image4.png)
 
     4. Sulje **Malli tietolähteen yhdistämismääritystä varten** -sivu.
     5. Valitsemalla **Versiot**-pikavälilehdessä **Poista** voidaan poistaa kaikki tämän ER-määrityksen versiot, jotka ovat uudempia kuin versio 226.35.
@@ -115,7 +117,7 @@ Tässä osassa käsitellään Microsoftin toimittamien mallin yhdistämismääri
 
 7. Tarkista tämän määrityksen mallin yhdistämismääritykset valitsemalla toimintoruudussa **Suunnitteluohjelma**.
 
-    ![Laskumallin yhdistämismääritysten tarkasteleminen Yhdistäminen mallista tietolähteeseen -sivulla.](./media/er-multiple-model-mappings-image5.png)
+    ![Laskumallin yhdistämismääritysten tarkasteleminen Yhdistäminen mallista tietolähteeseen -sivulla](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > Mukautetun logiikan voi nyt määrittää avaamalla jokin tämän ER-määrityksen ER-mallin yhdistämismäärityksen osa suunnittelutoiminnossa. Lisätietoja on kohdassa [Mallin yhdistämismäärityksen mukauttaminen](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -126,7 +128,7 @@ Tässä osassa käsitellään Microsoftin toimittamien mallin yhdistämismääri
  
 > Tietomallilla \<model name\> (\<root descriptor\>) on useita mallien yhdistämismäärityksiä määrityksissä \<configuration names separated by commas\>. Määritä jokin määrityksistä oletukseksi.
 
-![Muodon avaaminen muokattavaksi Konfiguraatiot-sivulla.](./media/er-multiple-model-mappings-image6.gif)
+![Muodon avaaminen muokattavaksi Konfiguraatiot-sivulla](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>Projektilaskumallin yhdistämismäärityksen (RDP) mukauttaminen
 
@@ -138,7 +140,7 @@ Tässä osassa käsitellään Microsoftin toimittamien mallin yhdistämismääri
 6. Määritä **Suorita luonnos** -asetukseksi **Kyllä** siinä **Projektilaskumallin yhdistämismääritys Litware** -määrityksessä, joka on valittuna määrityspuussa.
 7. Tarkista tämän määrityksen mallin yhdistämismääritykset valitsemalla toimintoruudussa **Suunnitteluohjelma**.
 
-    ![Mukautetun projektilaskumallin yhdistämismääritysten tarkasteleminen Yhdistäminen mallista tietolähteeseen -sivulla.](./media/er-multiple-model-mappings-image7.png)
+    ![Mukautetun projektilaskumallin yhdistämismääritysten tarkasteleminen Yhdistäminen mallista tietolähteeseen -sivulla](./media/er-multiple-model-mappings-image7.png)
 
 8. Sulje **Malli tietolähteen yhdistämismääritystä varten** -sivu.
 
@@ -149,7 +151,7 @@ Tässä osassa käsitellään Microsoftin toimittamien mallin yhdistämismääri
 1. Valitse **Konfiguraatiot**-sivun vasemman ruudun määrityspuussa **Laskumallin yhdistämismääritys Litware**.
 2. Määritä **Mallin yhdistämisasetuksen** oletusarvoksi **Kyllä**.
 
-    ![Mallin yhdistämismäärityksen määrittäminen mallin oletusyhdistämismääritykseksi Konfiguraatiot-sivulla.](./media/er-multiple-model-mappings-image8.png)
+    ![Mallin yhdistämismäärityksen määrittäminen mallin oletusyhdistämismääritykseksi Konfiguraatiot-sivulla](./media/er-multiple-model-mappings-image8.png)
 
     Tämän asetuksen vuoksi käytetään **Myyntilaskun kopio** -mallin yhdistämismääritystä, kun **Vapaatekstilasku (Excel)** suoritetaan tai kun sitä muokataan tai se tarkistetaan. **Laskumallin yhdistämismääritys** -määrityksen **Myyntilasku**-mallin yhdistämismääritys ohitetaan.
 
@@ -167,7 +169,7 @@ Tässä osassa käsitellään Microsoftin toimittamien mallin yhdistämismääri
 5. Muuta sivu tarpeen muokattavaksi valitsemalla **Yhdistäminen mallista tietolähteeseen** -sivulla **Muokkaa**.
 6. Valitse ensin **Projektilaskun kopio** -mallin yhdistämismääritys ja sitten sen **On poistettu**-valintaruutu.
 
-    ![Mallin yhdistämismäärityksen määrittäminen virtuaalisesti poistetuksi Yhdistäminen mallista tietolähteeseen -sivulla.](./media/er-multiple-model-mappings-image9.png)
+    ![Mallin yhdistämismäärityksen määrittäminen virtuaalisesti poistetuksi Yhdistäminen mallista tietolähteeseen -sivulla](./media/er-multiple-model-mappings-image9.png)
 
     Tämän asetuksen vuoksi **Laskun mallin yhdistämismääritys Litware** -määritystä käsitellään aivan kuin sillä ei olisi **InvoiceProject**-juurimääritelmän mallin yhdistämismääritystä. **InvoiceProject kopio** -mallin yhdistämismääritys annettiin oletusarvoisesti. Tämä mallin yhdistämismäärityksen sisältävä **Projektilaskumallin yhdistämismääritys Litware** -määritys merkitään oletusmääritykseksi. Koska se on määritetty oletukseksi, sen prioriteetti on korkeampi kuin **Projektilaskumallin yhdistämismääritys (RDP)** -määrityksen **InvoiceProject**-mallin yhdistämismääritys.
 
@@ -180,6 +182,3 @@ Tässä osassa käsitellään Microsoftin toimittamien mallin yhdistämismääri
 - [Sähköisen raportointimallin kartoituksen hallinta erillisissä sähköisen raportoinnin konfiguraatioissa](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen](er-country-dependent-model-mapping.md)
 - [Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset](er-apis-app10-0-11.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

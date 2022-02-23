@@ -1,28 +1,28 @@
 ---
 title: Toiminnallisten sijaintien esittely
 description: Tässä aiheessa on yleiskatsaus toiminnallisista sijainneista resurssien hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationEditSubLocations, EntAssetFunctionalLocationLookup, EntAssetFunctionalLocationRename, EntAssetFunctionalLocation
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2214"
-- intro-internal
+ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0cb76a05f0f19d3e57d1f79751e8bc5870b3c331aa4d1c37ec8dfde0a3c6d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 62cfd913393c3533c232dd89c90c3cdfffa72244
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767552"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018175"
 ---
 # <a name="introduction-to-functional-locations"></a>Toiminnallisten sijaintien esittely
 
@@ -82,6 +82,3 @@ Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa taulukossa k
 | Viat                              | Avaa **Resurssin viat** -sivu, jolla voit tarkastella luetteloa resurssin vikarekisteröinneistä, jotka liittyvät valittuun toiminnalliseen sijaintiin. |
 | Päivitä toiminnallisen sijainnin tila    | Päivitä valitun toiminnallisen siajinnin vaihe                                                                                        |
 | Elinkaaren tilan loki                 | Tarkastele lokia, joka näyttää valitun toiminnallisen sijainnin vaiheet.                                                                        |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,6 +67,3 @@ Kun **Työntekijän itsepalvelu** -työtila on valittu käyttäjän alkuperäise
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Työsuhteen päättämisen syykoodi päivittää toimen määritystietueen
 Työsuhteen päättämisen syykoodi päivittää nyt toimimäärityksen, kun työntekijän työsuhde päättyy ja toimi lopetetaan. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

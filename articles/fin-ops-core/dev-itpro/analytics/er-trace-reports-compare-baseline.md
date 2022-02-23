@@ -2,9 +2,11 @@
 title: Seuraa luotuja raporttituloksia ja vertaa niitä perusarvoihin
 description: Tässä ohjeaiheessa on tietoja tavasta, jolla voit verrata tuloksia luoduista sähköisen raportoinnin (ER) raporteista perusriviraportin arvoihin.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9fabdef96b02747c84a76bf42997633842f185e9
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: d89922bd10b6db17d3fee22409137d6ec966858b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605202"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682820"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Seuraa luotuja raporttituloksia ja vertaa niitä perusarvoihin
 
@@ -52,7 +54,7 @@ Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaihee
 2. Anna **Luokka**-kentässä **Liitä tiedosto**.
 3. Anna **Ryhmä**-kentässä **Tiedosto**.
 
-![Tiedostotyypit-sivu.](media/GER-BaselineSample-SetupDocumentType.PNG "Näyttökuva Tiedostotyypit-sivusta")
+![Asiakirjatyypit-sivu](media/GER-BaselineSample-SetupDocumentType.PNG "Näyttökuva Tiedostotyypit-sivusta")
 
 > [!NOTE]
 > Saman niminen uusi tiedostotyyppi on määritettävä jokaiselle tietojoukolle, jossa aiot käyttää ER-perusrivitaulua.
@@ -61,11 +63,11 @@ Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaihee
 
 1. Valitse **Sähköisen raportointi** -työtilan **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.
 
-    ![Sähköisen raportoinnin työtila.](media/GER-BaselineSample-ERWorkspace.PNG "Näyttökuva Sähköinen raportointi -työtilasta")
+    ![Sähköisen raportoinnin työtila](media/GER-BaselineSample-ERWorkspace.PNG "Näyttökuva Sähköinen raportointi -työtilasta")
 
 2. Anna tai valitse juuri luomasi asiakirjatyyppi **Liitteet**-välilehden **Perusrivi**-kenttä.
 
-    ![Sähköisen raportoinnin parametrit -sivun Liitteet-välilehti.](media/GER-BaselineSample-ERParameters.PNG "Näyttökuva sähköisen raportoinnin parametreista")
+    ![Sähköisen raportoinnin parametrit -sivun Liitteet-välilehti](media/GER-BaselineSample-ERParameters.PNG "Näyttökuva sähköisen raportoinnin parametreista")
 
 3. Valitse **Tallenna** ja sulje sitten **Sähköisen raportoinnin parametrit** -sivu.
 
@@ -76,7 +78,7 @@ Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaihee
 3. Kirjoita avattavan luettelon **Nimi**-kenttään **ER-perusrivien oppimismalli**.
 4. Vahvista uuden ER-tietomallimerkinnän luonti valitsemalla **Luo konfigurointi**.
 
-![Luo konfigurointi -valintaikkuna ja lisää uusi ER-mallikonfiguraatio.](media/GER-BaselineSample-ModelAdd.PNG "Näyttökuva Avattava Luo konfigurointi -luettelo -valintaruudusta")
+![Avattava Luo konfigurointi -luettelo -valintaruutu](media/GER-BaselineSample-ModelAdd.PNG "Näyttökuva Avattava Luo konfigurointi -luettelo -valintaruudusta")
 
 ### <a name="design-a-data-model"></a>Tietomallin suunnitteleminen
 
@@ -90,7 +92,7 @@ Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaihee
 8. Valitse **Muutoksen tila**.
 9. Valitse ensin **Valmis** ja sitten **OK**.
 
-![Konfiguraatiot-sivu.](media/GER-BaselineSample-ModelComplete.PNG "Näyttökuva Konfiguroinnit-sivusta")
+![Konfiguroinnit-sivu](media/GER-BaselineSample-ModelComplete.PNG "Näyttökuva Konfiguroinnit-sivusta")
 
 ### <a name="add-a-new-er-format-configuration"></a>Uuden ER-muotokonfiguraation lisääminen
 
@@ -99,7 +101,7 @@ Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaihee
 3. Anna **Nimi**-kentässä **ER-perusrivien oppimismuoto**.
 4. Vahvista uuden ER-muotomerkinnän luonti valitsemalla **Luo konfigurointi**.
 
-![Luo konfigurointi -valintaikkuna ja lisää uusi ER-muotokonfiguraatio.](media/GER-BaselineSample-FormatAdd.PNG "Näyttökuva Avattava Luo konfigurointi -luettelo -valintaruudusta")
+![Avattava Luo konfigurointi -luettelo -valintaruutu](media/GER-BaselineSample-FormatAdd.PNG "Näyttökuva Avattava Luo konfigurointi -luettelo -valintaruudusta")
 
 ### <a name="design-a-format"></a>Muodon suunnittelu
 
@@ -107,41 +109,41 @@ Tässä esimerkissä luodaan yksinkertainen ER-muoto XML-tiedostojen luontia var
 
 1. Valitse toimintoruudun **Konfiguroinnit**-välilehdessä **Suunnittelutoiminto**.
 2. Valitse **Lisää pääkansio**.
-3. Toimi avattavassa valintaikkunassa seuraavasti:
+2. Toimi avattavassa valintaikkunassa seuraavasti:
 
     1. Valitse puussa **Common\\File**.
     2. Kirjoita **Nimi**-kenttään **Tulos**.
     3. Valitse **OK**.
 
-4. Valitse **Lisää**.
-5. Toimi avattavassa valintaikkunassa seuraavasti:
+3. Valitse **Lisää**.
+4. Toimi avattavassa valintaikkunassa seuraavasti:
 
     1. Valitse puussa **XML\\Elementti**.
     2. Kirjoita **Nimi**-kenttään **Asiakirja**.
     3. Valitse **OK**.
 
-6. Valitse puussa **Tuloste\\Asiakirja**.
-7. Valitse **Lisää**.
-8. Toimi avattavassa valintaikkunassa seuraavasti:
+5. Valitse puussa **Tuloste\\Asiakirja**.
+6. Valitse **Lisää**.
+7. Toimi avattavassa valintaikkunassa seuraavasti:
 
     1. Valitse puussa **XML\\Määrite**.
     2. Kirjoita **Nimi**-kenttään **Tunnus**.
     3. Valitse **OK**.
 
-    ![Muotosuunnittelu-sivu, puussa valittu XML-määrite.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
+    ![Muodon suunnittelutoiminto -sivu](media/GER-BaselineSample-FormatLayoutDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
 
-9. Valitse **Yhdistämismääritys**-välilehdessä **Poista**.
-10. Valitse **Lisää pääkansio**.
-11. Valitse puun avattavassa valintaikkunassa **Yleinen\\Käyttäjän syöttöparametrit** ja toimi sitten seuraavasti:
+8. Valitse **Yhdistämismääritys**-välilehdessä **Poista**.
+9. Valitse **Lisää pääkansio**.
+10. Valitse puun avattavassa valintaikkunassa **Yleinen\\Käyttäjän syöttöparametrit** ja toimi sitten seuraavasti:
 
     1. Kirjoita **Nimi**-kenttään **Tunnus**.
     2. Kirjoita **Etiketti**-kenttään **Anna tunnus**.
     3. Valitse **OK**.
 
-12. Valitse puussa **Tuloste\\Asiakirja\\Tunnus**.
-13. Valitse ensin **Sidonta** ja sitten **Tallenna**.
+11. Valitse puussa **Tuloste\\Asiakirja\\Tunnus**.
+12. Valitse ensin **Sidonta** ja sitten **Tallenna**.
 
-![Muodon suunnittelutoiminnon sivu, Määritys-välilehti.](media/GER-BaselineSample-FormatMappingDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
+![Muodon suunnittelutoiminto -sivu](media/GER-BaselineSample-FormatMappingDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
 
 Määritetty muoto luo XML-tiedoston suunnitellun rakenteen perusteella. Tämä XML-tiedosto sisältää **Juuri**-elementin, jonka **Tunnus**-määrite on määritetty käyttäjän ER-ajonaikaisuus-valintaikkunaan annettavaksi arvoksi.
 
@@ -151,11 +153,11 @@ Määritetty muoto luo XML-tiedoston suunnitellun rakenteen perusteella. Tämä 
 2. Kirjoita **Anna tunnus** -kenttään **1**.
 3. Valitse **OK**.
 
-    ![Sähköisen raportin parametrit -valintaikkuna.](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Näyttökuva Sähköisen raportin parametrit -valintaikkunasta")
+    ![Sähköisen raportin parametrit -valintaikkuna](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Näyttökuva Sähköisen raportin parametrit -valintaikkunasta")
 
 4. Tallenna luodun **out.Admin.xml**-tiedoston paikallinen kopio, jotta voit käyttää sitä myöhemmin ER-muodon perusrivinä.
 
-    ![Ilmoitus luodusta tiedostosta Konfiguroinnit-sivulla.](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Näyttökuva ilmoituksesta luodusta tiedostosta Konfiguroinnit-sivulla")
+    ![Ilmoitus luodusta tiedostosta Konfiguroinnit-sivulla](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Näyttökuva ilmoituksesta luodusta tiedostosta Konfiguroinnit-sivulla")
 
 ### <a name="configure-er-parameters-to-use-the-baseline-feature"></a>ER-parametrien määrittäminen käyttämään perusrivitoimintoa
 
@@ -163,20 +165,20 @@ Määritetty muoto luo XML-tiedoston suunnitellun rakenteen perusteella. Tämä 
 2. Määritä **Suorita virheenkorjaustila** -asetukseksi **Kyllä**.
 3. Valitse **OK**.
 
-![Käyttäjän parametrit -valintaikkuna.](media/GER-BaselineSample-ERUserParameters.PNG "Näyttökuva Käyttäjän parametrit -valintaikkunasta")
+![Käyttäjän parametrit -valintaikkuna](media/GER-BaselineSample-ERUserParameters.PNG "Näyttökuva Käyttäjän parametrit -valintaikkunasta")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Uuden perusrivitiedoston lisääminen suunnitellulle ER-muodolle
 
 1. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Konfiguraatiot**.
 2. Valitse toimintoruudussa **Perusrivit**.
 
-    ![Konfigurointi-sivun Perusrivit-painike.](media/GER-BaselineSample-OpenBaselinePage.PNG "Näyttökuva Konfigurointi-sivun Perusrivit-painikkeesta")
+    ![Konfigurointi-sivun Perusrivit-painike](media/GER-BaselineSample-OpenBaselinePage.PNG "Näyttökuva Konfigurointi-sivun Perusrivit-painikkeesta")
 
 3. Valitse toimintoruudussa **Uusi**.
 4. Valitse **ER-perusrivien oppimismuoto** -kohdassa aiemmin suunniteltu ER-muoto.
 5. Valitse **Tallenna**.
 
-![Sähköisen raportointimuotojen perusrivit -sivu.](media/GER-BaselineSample-AddBaseline.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
+![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-AddBaseline.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
 
 Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 
@@ -186,7 +188,7 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 2. Valitse toimintoruudussa **Uusi** \> **Tiedosto**. ER-parametreissa **Tiedosto**-asiakirjatyyppi on pitänyt valita aiemmin perusrivitiedostojen tallentamiseen käytettävänä asiakirjatyyppinä.
 3. Valitse ensin **Selaa** ja sitten **out.Admin.xml**-tiedosto, joka luotiin, kun suoritit aiemmin määritetyn ER-muodon.
 
-    ![Liitteet-sivu.](media/GER-BaselineSample-UploadBaselineFile.PNG "Näyttökuva Liitteet-sivusta")
+    ![Liitteet-sivu](media/GER-BaselineSample-UploadBaselineFile.PNG "Näyttökuva Liitteet-sivusta")
 
 4. Sulje **Liitteet**-sivu.
 5. Valitse **Perusrivit**-pikavälilehdessä **Uusi**.
@@ -201,7 +203,7 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 10. Anna tai valitse **Perusrivi**-kentässä **out.Admin**-liite.
 11. Valitse **Tallenna**.
 
-![Sähköisen raportointimuodon perusrivit -sivu, Perusrivit-pikavälilehden perusrivi valittu.](media/GER-BaselineSample-SetupBaselineLine.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
+![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-SetupBaselineLine.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Suunnitellun ER-muoto suorittaminen ja tulosten analysointi lokia tarkastelemalla
 
@@ -212,7 +214,7 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 5. Valitse **OK**.
 6. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Määritysten virheenkorjauslokit**.
 
-    ![Sähköisen raportoinnin suorittamisen lokisivu, jossa on samat perusrivit.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Näyttökuva Sähköisen raportoinnin ajolokit -sivusta")
+    ![Sähköisen raportoinnin ajolokit -sivulla](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Näyttökuva Sähköisen raportoinnin ajolokit -sivusta")
 
     > [!NOTE]
     > Suorituslokissa sisältää tietoja luodun tiedoston ja määritetyn perusrivin vertailutuloksista. Tässä esimerkissä loki ilmaisee, että luotu tiedosto ja perusaikataulu ovat samanlaisia.
@@ -228,7 +230,7 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 5. Valitse **OK**.
 6. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Määritysten virheenkorjauslokit**.
 
-    ![Sähköisen raportoinnin suorittamisen lokisivu, jossa on eri perusrivit.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Näyttökuva Sähköisen raportoinnin ajolokit -sivusta")
+    ![Sähköisen raportoinnin ajolokit -sivulla](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Näyttökuva Sähköisen raportoinnin ajolokit -sivusta")
 
     > [!NOTE]
     > Suorituslokissa sisältää tietoja luodun tiedoston ja määritetyn perusrivin vertailutuloksista. Tässä esimerkissä loki ilmaisee, että luotu tiedosto ja perusaikataulu ovat erilaisia.
@@ -241,6 +243,3 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

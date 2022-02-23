@@ -1,31 +1,34 @@
 ---
 title: Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta
-description: Tässä aiheessa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
-author: moaamer
+description: Tässä artikkelissa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33d3dba59e459193798d790e64d2493c244d49a3
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a9dd04072b4845fe5df2a918b64ba1835ea584dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674873"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442827"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
+Tässä artikkelissa on selostettu prosessia, jolla päivitetään käyttöomaisuuden jälleenhankintahinnat ja vakuutusarvot.
 
 Tiettyjen käyttöomaisuuserien jälleenhankintahinta tai vakuutusarvo voi toisinaan muuttua. Esimies voi esimerkiksi ilmoittaa, että inflaatio on ollut viime vuonna 3 prosenttia, joten kaikkien käyttöomaisuuserien jälleenhankintahintaa täytyy korottaa 3 prosenttia. 
 
@@ -75,6 +78,3 @@ Seuraavana päivänä esimies ilmoittaa, että tietokoneiden pienennyksen oli ta
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

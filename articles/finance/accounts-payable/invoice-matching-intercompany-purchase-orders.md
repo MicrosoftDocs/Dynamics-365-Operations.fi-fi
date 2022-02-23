@@ -2,25 +2,28 @@
 title: Laskujen täsmäytys ja konsernin sisäiset ostotilaukset
 description: Konsernin sisäisen kauppatapahtuman ostavan yrityksen asetukset on voitu määritettää siten, että käytössä on ostoreskontran laskujen täsmäytys. Tässä tapauksessa sekä konsernin sisäisen välisen kaupan että ostoreskontran laskujen täsmäytyksen kirjausvaatimusten on täytyttävä, ennen kuin konsernin sisäiset ostolaskut voidaan kirjata.
 author: abruer
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afa7021278d5dc8ba307ae1cf72504d08660f7ce34dea86ce2e8ca2a709366b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aaa4a08f65e4a3452782cf2b928464dff27ed59b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737379"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442597"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Laskujen täsmäytys ja konsernin sisäiset ostotilaukset
 
@@ -67,6 +70,3 @@ Esimerkiksi seuraavia ohjeita noudatetaan.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

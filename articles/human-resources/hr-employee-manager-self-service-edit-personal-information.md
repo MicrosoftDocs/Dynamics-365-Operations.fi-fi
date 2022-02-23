@@ -1,35 +1,33 @@
 ---
 title: Muokkaa henkilökohtaisia tietoja
 description: Tässä artikkelissa kuvataan, miten henkilötietoja muokataan työntekijän ja esimiehen itsepalvelussa.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0158bd4ee74e24006e338c0477ee0ac4210b1bf5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071441"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418254"
 ---
-# <a name="edit-personal-information"></a>Henkilökohtaisten tietojen muokkaaminen
+# <a name="edit-personal-information"></a>Muokkaa henkilökohtaisia tietoja
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Voit muokata henkilötietojasi Dynamics 365 Human Resourcesissa **Työntekijän itsepalvelu** -työtilassa.
+Voit muokata henkilökohtaisia tietojasi Dynamics 365 Human Resourcesissa **Työntekijän itsepalvelu -työtilassa**.
 
 Voit muokata myös seuraavia henkilökohtaisia tietoja:
 
@@ -40,16 +38,13 @@ Voit muokata myös seuraavia henkilökohtaisia tietoja:
 - Maksutapa
 - Henkilöstöhallinnossa käytettävä kuva
 
->[!NOTE]
->Et välttämättä voi muokata kaikkia henkilökohtaisia tietoja, kuten yrityksen yhteystietoja. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
-
-**Yleisen osoitekirjan parametrit** -sivulla määritetyt parametrit määrittävät roolit, jotka voivat tarkastella henkilökohtaisia tietojasi.
+Yleisessä osoitekirjassa määritetyt parametrit määrittävät roolit, jotka voivat tarkastella henkilökohtaisia tietojasi.
 
 1. Valitse henkilöstöhallinnossa **Työntekijän itsepalvelu**.
 
 2. Valitse **Muokkaa henkilökohtaisia tietoja**.
 
-3. Jos haluat muuttaa osoitetta, valitse **Osoitteet** -välilehti. Tekemäsi muutokset näkyvät **Henkilöstöhallinnan** työtilassa ja varoittavat henkilöstöhallintoa.
+3. Jos haluat muuttaa osoitetta, valitse **Osoitteet** -välilehti. Tekemäsi muutokset näkyvät **Henkilöstöhallinnan** työtilassa ja varoittavat henkilöstöhallintoa. 
 
     - Valitse **Lisää** lisätäksesi uuden osoitteen.
     - Jos haluat muokata aiemmin luotua osoitetta, valitse osoite ja valitse sitten **Muokkaa**.
@@ -57,13 +52,11 @@ Voit muokata myös seuraavia henkilökohtaisia tietoja:
     - Voit lisätä tai poistaa yhteystiedon valitsemalla **Lisää asetuksia** ja valitsemalla sitten **Lisäasetukset**. Valitse **Yhteystiedot**-kohdasta **Lisää** tai **Poista** ja muokkaa kenttiä tarpeen mukaan.
     - Jos haluat määrittää aikavyöhykkeen ja sijainnin, valitse **Lisää asetuksia** ja valitse sitten **Lisäasetukset**. Muokkaa **Yleiset**-kohdan kenttiä tarpeen mukaan.
 
-4. Voit muuttaa yhteystietoja valitsemalla **Yhteystiedot**-välilehden. Voit määrittää erityyppisiä yhteystietoja, kuten puhelin-, sähköposti- ja sosiaalisen median linkkejä. Voit määrittää yhteystiedot ensisijaiseksi, mutta voit määrittää vain yhden kunkin tyypin ensisijaiseksi vaihtoehdoksi.
+4. Voit muuttaa yhteystietoja valitsemalla **Yhteystiedot**-välilehden. Voit määrittää erityyppisiä yhteystietoja, kuten puhelin-, sähköposti- ja sosiaalisen median linkkejä. Voit määrittää yhteystiedot ensisijaiseksi, mutta voit määrittää vain yhden kunkin tyypin ensisijaiseksi vaihtoehdoksi. 
 
     - Valitse **Lisää** lisätäksesi uuden yhteystiedon. Muokkaa kenttiä tarvittavalla tavalla.
     - Jos haluat muokata aiemmin luotua yhteystietoa, valitse nimike ja valitse sitten **Muokkaa**. Muokkaa kenttiä tarvittavalla tavalla.
     - Voit määrittää yhteystiedon yksityiseksi valitsemalla kohteen, valitsemalla **Lisäasetukset** ja määrittämällä sitten **Yksityisen** vaihtoehdon arvoksi **Kyllä**. Valitse **OK**.
-      >[!NOTE]
-      >**Lisäasetukset**-painike ei ole käytettävissä, jos järjestelmänvalvojasi on ottanut **(Esikatselu) Estä työntekijöitä lisäämästä tai muokkaamasta osoite- ja yhteystietoja tiettyihin tarkoituksiin** -ominaisuuden käyttöön ympäristössäsi. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
   
 5. Voit muuttaa henkilökohtaisia yhteystietoja valitsemalla **Omat yhteystiedot** -välilehden. Voit määrittää hätäyhteyshenkilöitä, edunsaajia ja huollettavia. Yhteystieto voi olla henkilö tai organisaatio. **Etujen hallinta** -toiminto käyttää henkilökohtaisia yhteystietoja. Katso lisätietoja kohdasta [Henkilökohtaisten yhteyshenkilöiden oikeutusasetusten määrittäminen](hr-benefits-setup-contact-eligibility-options.md).
 
@@ -72,13 +65,10 @@ Voit muokata myös seuraavia henkilökohtaisia tietoja:
     - Voit lisätä tunnusnumeron valitsemalla **Uusi**. Täytä tarvittavat kentät ja valitse **Tallenna**.
     - Jos haluat muokata numeroa, valitse **Muokkaa**. Muokkaa tarvittavat kentät ja valitse **Tallenna**.
 
-7. Jos haluat muuttaa maksutapoja, valitse **Omat maksutiedot** -välilehti. Tämä välilehti on käytettävissä vain, jos maksutavat ovat käytössä **Henkilöstöhallinnon parametrit** -sivulla. HR voi ottaa käyttöön **pankkiluonnoksen**, **käteisen**, **sekin**, **sähköisen maksamisen** tai **muun**. HR voi myös poistaa käytöstä sähköisen maksun vahvistuksen (käytetään Yhdysvaltain palkanlaskennassa) sekä pankkitilin ja reititysnumeron oikeellisuustarkistuksen.
+7. Jos haluat muuttaa maksutapoja, valitse **Omat maksutiedot** -välilehti. Tämä välilehti on käytettävissä vain, jos maksutavat ovat käytössä **Henkilöstöhallinnon parametrit** -lomakkeessa. HR voi ottaa käyttöön **pankkiluonnoksen**, **käteisen**, **sekin**, **sähköisen maksamisen** tai **muun**. HR voi myös poistaa käytöstä sähköisen maksun vahvistuksen (käytetään Yhdysvaltain palkanlaskennassa) sekä pankkitilin ja reititysnumeron oikeellisuustarkistuksen.
 
 8. Jos haluat vaihtaa henkilöstöhallinnossa näkyvän profiilikuvan, valitse **Kuva**-välilehti. Organisaation asetuksista riippuen kuvat saatetaan reitittää hyväksyttäväksi.
 
     - Lataa kuva valitsemalla **Lataa uusi kuva**.
     - Jos haluat poistaa kuvan, valitse kuva ja valitse sitten **Poista**.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

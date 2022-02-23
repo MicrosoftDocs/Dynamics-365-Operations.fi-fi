@@ -1,35 +1,33 @@
 ---
-title: Kyselylomakkeiden luonti
-description: Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia.
-author: twheeloc
-ms.date: 10/28/2021
+title: Kyselylomakkeiden suunnitteleminen
+description: Tässä artikkelissa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065198"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418391"
 ---
-# <a name="create-questionnaires"></a>Kyselylomakkeiden luonti
+# <a name="design-questionnaires"></a>Kyselylomakkeiden suunnitteleminen
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
+Tässä artikkelissa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen. 
 
 Huolellisesti suunnittelu kyselylomake voi parantaa keräämiesi tietojen laatua. Huolellisen suunnittelun avulla voit valita kyselylomakkeeseen kulloinkin sopivat vaihtoehdot. Seuraavat seikat auttavat tehokkaan kyselylomakkeen suunnittelemisessa:
 
@@ -66,7 +64,7 @@ Joidenkin edellytysten on täytyttävä, ennen kuin kyselylomakkeet, vastaukset 
 
 ### <a name="questionnaire-types"></a>Kyselylomaketyypit
 
-**Kyselylomakkeen tyypit** ovat pakollisia. Ne on liitettävä kyselylomakkeen luomisen yhteydessä. **Kyselylomakkeen tyypit** auttavat kyselylomakkeiden hallinnassa ja luokittelussa. Kyselylomaketyyppien avulla voit luokitella kyselylomakkeita ja erottaa ne toisistaan. Jos esimerkiksi valittavissa on useita kyselylomakkeita, tietyn kyselylomakkeen löytäminen helpottuu, kun suodatat niitä tyypin mukaan. Seuraavassa on joitakin esimerkkejä kyselylomaketyypeistä:
+Kyselylomakkeen tyypit ovat pakollisia. Ne on liitettävä kyselylomakkeen luomisen yhteydessä. Kyselylomakkeen tyypit auttavat kyselylomakkeiden hallinnassa ja luokittelussa. Kyselylomaketyyppien avulla voit luokitella kyselylomakkeita ja erottaa ne toisistaan. Jos esimerkiksi valittavissa on useita kyselylomakkeita, tietyn kyselylomakkeen löytäminen helpottuu, kun suodatat niitä tyypin mukaan. Seuraavassa on joitakin esimerkkejä kyselylomaketyypeistä:
 
 -   henkilöstön kehitys
 -   asiakastutkimukset
@@ -74,9 +72,9 @@ Joidenkin edellytysten on täytyttävä, ennen kuin kyselylomakkeet, vastaukset 
 
 ### <a name="question-types"></a>Kysymystyypit
 
-**Kysymystyypit** ovat pakollisia. Ne on liitettävä kysymykseen luomisen yhteydessä. 
+Kysymystyypit ovat pakollisia. Ne on liitettävä kysymykseen luomisen yhteydessä. 
 
-**Kysymystyyppien** avulla voidaan luokitella kysymyksiä raportointia varten. **Kysymystyypit** myös helpottavat kysymysten etsimistä, koska tyyppejä voi käyttää suodattimina **Kysymykset**-sivulla. Seuraavassa on joitakin esimerkkejä kysymystyypeistä:
+Kysymystyyppien avulla voit luokitella kysymyksiä raportointia varten. Kysymystyyppien avulla on myös helppo etsiä kysymyksiä, koska voit käyttää tyyppejä suodattimina **Kysymykset**-sivulla. Seuraavassa on joitakin esimerkkejä kysymystyypeistä:
 
 -   henkilöstöhallinto
 -   liiketoiminnan hallinta
@@ -93,9 +91,9 @@ Numerosarjan koodeja käytetään kysymysten ja vastausten järjestämisessä. A
 Kaikki parametrit tulee määritettävä, ennen kuin tietoja aletaan luoda. Voit muokata kyselylomakeparametrien asetuksia milloin tahansa.
 
 ## <a name="questionnaire-components"></a>Kyselylomakkeen osat
-Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta. Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
+Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta.  Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
 
-[![QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Vastausryhmät ja vastaukset
 
@@ -108,7 +106,7 @@ Voit määrittää monivalintakysymysten mahdollisten vastausten luettelon luoma
 
 Vastausryhmät ja vastaukset ovat komponentteja, jotka muodostavat kysymysten luomisessa käytettävien tietojen päätekstiosan. Kun olet luonut vastausryhmän, voit liittää sen kysymykseen **Kysymykset**-sivun **Vastausryhmä**-kentässä. 
 
-**Vastausryhmää** voi käyttää useassa saman kyselylomakkeen kysymyksessä tai useassa eri kyselylomakkeessa. 
+Vastausryhmää voit käyttää useassa saman kyselylomakkeen kysymyksessä tai useassa eri kyselylomakkeessa. 
 
 > [!NOTE]
 > Tietojen arviointi vaikeutuu, jos täytetyissä kysymyslomakkeissa käytettyjen vastausryhmien vastausten tekstiä muokataan, eivätkä kyselylomakkeen tulokset välttämättä ole enää voimassa. Jos vastausryhmää on muutettava, kannattaa ehkä luoda uusi vastausryhmä aiemmin luodun ryhmän muuttamisen sijaan. Kysymykseen tai vastaukseen liitettyjä vastausryhmiä tai vastausryhmiä, joihin on vastattu, ei voi poistaa.
@@ -174,7 +172,7 @@ Seuraavia kysymystyyppejä ei voi poistaa kyselylomakkeesta:
 
 ### <a name="result-groups"></a>Tulosryhmät
 
-**Tulosryhmiä** ovat valinnaisia, kun kyselylomakkeeseen liitetään kysymyksiä. 
+Tulosryhmiä ei ole pakko käyttää, kun kyselylomakkeeseen liitetään kysymyksiä. 
 
 Tulosryhmää käytetään pisteiden laskemisessa ja kyselylomakkeen tulosten luokittelussa. Jos tulosryhmät ovat käytössä, voit suorittaa seuraavat tehtävät:
 
@@ -209,7 +207,7 @@ Käytössä on johtamistaitotestin kyselylomake, jossa on 15 kysymystä kolmessa
 -   johtamistaidot
 -   tekniset taidot.
 
-Kun käytössä ovat pisteisiin perustuvat viestit, voit määrittää jokaiselle tulosryhmälle tekstivälit. Jokaiseen kysymykseen liitetään kaksi pistettä. Tämän vuoksi kunkin tulosryhmän enimmäispistemäärä on 10. 
+Kun käytössä ovat pisteisiin perustuvat viestit, voit määrittää jokaiselle tulosryhmälle tekstivälit. Jokaiseen kysymykseen liitetään kaksi pistettä. Tämän vuoksi kunkin tulosryhmän enimmäispistemäärä on 10 
 
 Seuraavassa taulussa näkyvät johtamistaidot-tulosryhmälle määritetyt pisteisiin perustuvat sanomat.
 
@@ -238,5 +236,3 @@ Jos käytät ehdollisia kysymyksiä kyselylomakkeen kysymyshierarkian luomiseen,
 Yritys tarjoaa asiakkailleen sekä nimikkeitä että palveluita. Tällaisissa tapauksissa käy usein niin, että asiakkaat saattavat ostaa pelkästään tuotteita tai palveluita tai molempia. Ku yritys siis lähettää asiakastyytyväisyyskyselyn, kyselylomakkeeseen lisätään ehdollinen rakenne, jolloin vain palveluita ostaneiden asiakkaiden ei tarvitse vastata nimikkeitä koskeviin kysymyksiin. 
 
 Vaihtoehtoisesti kyselylomakkeen voi määrittää niin, että jos vastaaja valitsee kysymykseen 1 vastaksen A, seuraavaksi esitetään kysymys 2. Mutta jos vastaaja valitsee kysymykseen 1 vastauksen B, seuraavaksi esitetään kysymys 5.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

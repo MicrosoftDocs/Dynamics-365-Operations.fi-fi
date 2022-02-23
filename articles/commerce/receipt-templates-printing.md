@@ -1,27 +1,30 @@
 ---
 title: Määritä ja suunnittele vastaanottoluetteloiden muodot
 description: Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Dynamics 365 Commerce sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
-author: BrianShook
-ms.date: 09/16/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac0ad75ff35367b5d6ac84c75c68e22e2cb0cb1
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779398"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412075"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Määritä ja suunnittele vastaanottoluetteloiden muodot
 
@@ -43,15 +46,6 @@ Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittä
     - **Älä tulosta** – Kuittia ei tulosteta.
     - **Kehote käyttäjälle** – Käyttäjää kehotetaan tulostamaan kuitti..
     - **Tarvittaessa** – Tätä vaihtoehtoa käytetään vain lahjojen kuiteille. Kun tämä vaihtoehto on valittuna, käyttäjä voi tulostaa lahjan kuitin **Muuta**-sivulta, jos lahjan kuitti tarvitaan.
-
-## <a name="print-images"></a>Kuvien tulostaminen
-
-Kuittien suunnitteluohjelmaan kuuluu **Logo**-muuttuja. Voit käyttää tätä muuttujaa, kun haluat määrittää kuitteihin tulostettavan kuvan. **Logo**-muuttujaa käyttäen kuitteihin tulostettujen kuvien on oltava mustavalkoisia bittikartan (.bmp) tiedostotyyppejä. Jos kuittien suunnitteluohjelmassa on määritetty bittikarttakuva, mutta sitä ei tulosteta, kun kuitti lähetetään tulostimelle, joku näistä ongelmista voi olla syy:
-
-- Tiedoston koko on liian suuri, tai kuvan kuvapistedimensiot eivät ole yhteensopivia tulostimen kanssa. Tässä tapauksessa voit pienentää kuvatiedoston tarkkuutta tai dimensioita.
-- Jotkin tulostinajurit, jotka on tarkoitettu myyntipisteille ja objektin linkittämiseen ja upottamiseen (OPOS), eivät käytä **PrintMemoryBitmap**-menetelmää, joita laitteet käyttävät logokuvien tulostamiseen. Tässä tapauksessa voit yrittää seuraavan merkinnän lisäämistä laitteesi tai jaetun laiteen **HardwareStation.Extension.config**-tiedostoon.
-
-    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Kuitin muodon suunnittelu
 
@@ -83,11 +77,8 @@ Lomakkeen asettelun suunnittelutoiminnon avulla voit luoda lomakkeen asettelun g
 
 Kuittiprofiilit määritetään suoraan tulostimeen laitteistoprofiilin kautta.
 
-1. Avaa laitteistoprofiili valitsemalla **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Laiteprofiili**.
+1. Avaa laitteistoprofiili valitsemalla **Retail and Commerce** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Laiteprofiili**.
 2. Valitse tulostin ja määritä sitten **Kuittiprofiili**-kentässä kassapäätteessä käytettävä kuittiprofiili.
 
 > [!NOTE]
 > Jos käytössä on kaksi tulostinta, yhtä tulostinta voidaan käyttää standardimuotoisten 40-sarakkeisten lämpökuittien tulostamiseen. Toista tulostinta käytetään tyypillisesti suuremman tietomäärän vaativien koko sivun kuittityyppien tulostamiseen. Näihin kuittityyppeihin sisältyvät asiakastilausten kuitit ja myyntilaskut.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Välilehtimoduuli
 description: Tässä ohjeaiheessa on tietoja välilehtimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9062e584d159e0f1986c46140d535f06f5d2817af048f30e812f9049bd52d4f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723284"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411915"
 ---
 # <a name="tab-module"></a>Välilehtimoduuli
 
@@ -28,13 +31,15 @@ ms.locfileid: "6723284"
 
 Tässä ohjeaiheessa on tietoja välilehtimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
+## <a name="overview"></a>Yleiskuvaus
+
 Välilehtimoduulit ovat kontin kaltaisia moduuleja, joita käytetään välilehtien sivujen tietojen järjestämiseen. Niitä voidaan käyttää millä tahansa sivulla, jolla tiedot on esitettävä välilehdissä.
 
 Jokaisessa välilehtimoduulissa voidaan lisätä yksi tai useampia välilehtimoduuleja. Jokainen välilehtinimikemoduuli edustaa yhtä välilehteä. Jokaiseen välilehtinimikemoduuliin voidaan lisätä yksi tai useita moduuleja. Välilehtinimikemoduuleihin lisättävien moduulien tyyppiä ei ole rajoitettu.
 
 Seuraavassa kuvassa on esimerkki välilehtimoduulista sivuston sivulla. Tässä esimerkissä valittu **Toimitus**-välilehti on valittuna.
 
-![Esimerkki välilehtimoduulista.](./media/ecommerce-tab.PNG)
+![Esimerkki välilehtimoduulista](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Välilehtimoduulin ominaisuudet
 
@@ -79,6 +84,3 @@ Voit lisätä välilehtimoduulin sivulle ja määrittää ominaisuudet seuraavas
 [Haitarivalikkomoduuli](add-accordion.md)
 
 [Tekstilohkomoduuli](add-content-rich-block.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

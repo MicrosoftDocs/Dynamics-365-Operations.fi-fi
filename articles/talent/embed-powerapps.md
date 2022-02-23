@@ -66,6 +66,3 @@ Voit vaihtoehtoisesti noudattaa seuraavia ohjeita.
 2. Valitse työkaluriviltä **Lisää sovellus Power Appsista**.
 
     ![Power Apps-sovelluksen lisääminen mukauttamisen työkalurivin avulla](media/powerapp-bar.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

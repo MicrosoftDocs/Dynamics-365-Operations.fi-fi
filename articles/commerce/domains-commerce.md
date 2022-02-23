@@ -1,27 +1,30 @@
 ---
-title: Toimialueet Dynamics 365 Commercessa
+title: Dynamics 365 Commercen toimialueet
 description: Tässä aiheessa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 author: BrShoo
-ms.date: 03/17/2021
+manager: AnnBe
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733988"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517352"
 ---
-# <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
+# <a name="domains-in-dynamics-365-commerce"></a>Dynamics 365 Commercen toimialueet
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +41,7 @@ Kun sähköisen kaupankäynnin ympäristöä valmistellaan [Microsoft Dynamics L
 
 Seuraavassa kuvassa on LCS:n sähköisen kaupankäynnin valmistelunäyttö, jossa on **Tuetut isäntänimet** -ruutu korostettuna. 
 
-![LCS:n sähköisen kaupankäynnin valmistelunäyttö ja **Tuetut isäntänimet** -ruutu korostettuna.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS:n sähköisen kaupankäynnin valmistelunäyttö ja **Tuetut isäntänimet** -ruutu korostettuna](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Voit luoda palvelupyynnön lisätoimialueiden lisäämiseksi ympäristöön, jos valmistelu on jo tapahtunut. Jos haluat luoda palvelupyynnön LCS:ssä, siirry ympäristössäsi kohtaan **Tuki \> Tukea vaativat ongelmat** ja valitse **Lähetä tapaus**.
 
@@ -56,7 +59,7 @@ Kun määrität sivuston ensimmäisen kerran sivuston luontiohjelmassa, **Määr
 
 Seuraavassa kuvassa näkyy Oletus-nimisen sivuston **Määritä sivusto** -valintaruutu, kun käytät sivustoa ensimmäisen kerran sivuston luontiohjelmassa.
 
-![**Määritä sivusto** -valintaruutu.](./media/Domains_SetupyoursiteScreen.png)
+![**Määritä sivusto** -valintaruutu](./media/Domains_SetupyoursiteScreen.png)
 
 **Valitse toimialue** -ruudussa voit liittää yhden sivustolle LCS:ssä annetuista tuetuista isäntänimistä sivuston luontiohjelmassa.
 
@@ -79,11 +82,11 @@ Kun sivustosi on määritetty poluksi, kaikki sivuston luontiohjelman sivuihin l
 
 Seuraavassa kuvassa näkyy **Uusi URL-osoite**-valintaruutu sivuston luontiohjelmassa sekä URL-osoitteen esimerkkipolku korostettuna. 
 
-![**Uusi URL-osoite** -valintaruutu sivuston luontiohjelmassa.](./media/Domains_PageSetup2a.png)
+![**Uusi URL-osoite**-valintaruutu sivuston luontiohjelmassa](./media/Domains_PageSetup2a.png)
 
 Seuraavassa kuvassa näkyy **URL-osoitteet**-sivu sivuston luontiohjelmassa sekä URL-osoite korostettuna luettelossa.
 
-![Käyttäjän työnkulku -vaihtoehdon suorittaminen käytännön työnkulussa.](./media/Domains_URLsInSiteBuilder2a.png)
+![Käyttäjän työnkulku -vaihtoehdon suorittaminen käytännön työnkulussa](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Toimialueet sivuston luontiohjelmassa
 
@@ -151,7 +154,7 @@ Commercen toimittama Azure Front Door -esiintymä ei tue apex-toimialueita (juur
 
   [Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto](deploy-ecommerce-site.md)
 
-  [Määritä verkkokauppakanava](./channel-setup-online.md)
+  [Määritä verkkokauppakanava](online-stores.md)
 
   [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
@@ -170,6 +173,3 @@ Commercen toimittama Azure Front Door -esiintymä ei tue apex-toimialueita (juur
   [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
   [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

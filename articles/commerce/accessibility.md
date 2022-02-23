@@ -1,31 +1,37 @@
 ---
 title: Helppokäyttöisyyden toiminnot ja ominaisuudet
-description: Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.
+description: Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercein eri versioissa.
 author: BrianShook
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716273"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411892"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Helppokäyttöisyyden toiminnot ja ominaisuudet
 
+
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.
+Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercein eri versioissa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Helppokäyttöominaisuudet ja -toiminnot mahdollistavat kaikkien käyttäjien toimintojen käytön ja suorittamisen, jotta he voivat saavuttaa tavoitteensa. Tämä laaja käyttäjäryhmä voi tarvita apuvälineitä kuulo-, näkö-, liikkuvuus- tai neurodiversiteetin vuoksi.
 
@@ -95,11 +101,11 @@ Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+[Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
 
 [Microsoftin helppokäyttökeskus](https://www.microsoft.com/accessibility)
 
-[Dynamics 365:n helppokäyttökeskus](/dynamics365/get-started/accessibility/index)
+[Dynamics 365:n helppokäyttökeskus](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
 
 [Yhteensopivuuden yleiskatsaus](compliance-overview.md)
 
@@ -108,6 +114,3 @@ Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla
 [Lisää tietosuojakäytäntösivu](add-privacy-page.md)
 
 [Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen](replace-IDs-tracked-changes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Työtilauksen elinkaaren tilat
 description: Tässä ohjeaiheessa selitetään työtilausten elinkaaren tilat käyttöomaisuuden hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2a8052942ff97c9e8033d5915723e82c42f964c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768663"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021576"
 ---
 # <a name="work-order-lifecycle-states"></a>Työtilauksen elinkaaren tilat
 
@@ -35,11 +37,11 @@ Työtilausten vaatimat elinkaaritilat on liitettävä vastaviin projektivaiheisi
 
 Seuraavassa taulukossa on kuvattu vaihtoehdot **Työtilaus**- ja **Ajoita**-osissa **Yleiset**-välilehdessä **Työtilauksen elinkaaren tila** -sivulla (**Resurssien hallinta** \> **Asetukset** \> **Työtilaukset** \> **Elinkaaren tilat**).
 
-![Työtilauksen elinkaaren tila -sivu.](media/09-setup-for-work-orders.png)
+![Työtilauksen elinkaaren tilasivu](media/09-setup-for-work-orders.png)
 
-| Vaihtoehdon nimi                   | kuvaus |
+| Vaihtoehdon nimi                   | Kuvaus |
 |-------------------------------|-------------|
-| Käytössä                        | Määritä asetukseksi **Kyllä**, jos työtilauksen on oltava aktiivinen tässä elinkaaritilassa. |
+| Aktiiviset                        | Määritä asetukseksi **Kyllä**, jos työtilauksen on oltava aktiivinen tässä elinkaaritilassa. |
 | Lisää rivi                      | Määritä asetukseksi **Kyllä**, jos työtilauksen töitä voidaan lisätä tässä elinkaaritilassa olevaan työtilaukseen. |
 | Poista                        | Määritä asetukseksi **Kyllä**, jos työtilaus voidaan poistaa tässä elinkaaritilassa. |
 | Poista rivi                   | Määritä asetukseksi **Kyllä**, jos työtilauksen töitä voidaan poistaa tässä elinkaaritilassa olevasta työtilauksesta. |
@@ -93,7 +95,7 @@ Seuraavassa taulukossa on kuvattu vaihtoehdot **Työtilaus**- ja **Ajoita**-osis
     - Jos **Ylläpidon käyttökatko** -asetukseksi on määritetty **Kyllä** elinkaaren tilalle, johon työtilaus on päivitetty, kunnossapitoseisokkien oikeellisuustarkistus tehdään työtilaukseen liittyvälle resurssille. Jos kunnossapitoseisokkimerkintä on tehty, mutta ei ole **Päättynyt**-rekisteröintiä, näkyviin tulee sanoma, kun työtilaus päivitetään tähän elinkaaritilaan.
     - Jos projektin vakioasetukset eivät sisällä kaikkia käyttöomaisuuden hallinnan asetuksiin liittyviä vaiheita, voit määrittää käyttäjän määrittämiä projektin vaiheita  **Projektinhallinnan ja kirjanpidon parametrit** -sivun **Projektin vaiheet**-välilehdessä. Seuraavassa kuvassa näkyy **Projektinhallinnan ja kirjanpidon parametrit** -sivun **Projektin vaihe** -välilehti.
 
-    ![Eri projektityyppien projektivaiheiden määrityssivu.](media/10-setup-for-work-orders.png)
+    ![Eri projektityyppien projektivaiheiden määrityssivu](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Jos työtilauksen elinkaaritila johon päivitetään on ei-aktiivinen, työtilaukseen liittyvät kirjauskansiot, joita ei vielä ole kirjattu, poistetaan automaattisesti. Tämä toiminto auttaa takaamaan käyttämättömien tietojen automaattisen tyhjennyksen. (Elinkaari tila ei ole käytössä, **Aktiivinen**-asetukseksi on määritetty **Ei** **Yleiset** pikavälilehdessä **Työtilauksen elinkaaren tila** -sivulla.)
@@ -111,7 +113,7 @@ Tyyppien käyttämisen syy on se, että kun tyyppi on määritetty esimerkiksi t
 
 Seuraavassa kuvassa näkyy työtilaustyyppien, elinkaarimallien ja elinkaaritilojen välinen suhde.
 
-![Työtilauksen tyyppisivu verrattuna työtilauksen elinkaarimallisivuun.](media/11-setup-for-work-orders.png)
+![Työtilauksen tyyppisivu verrattuna työtilauksen elinkaarimallisivuun](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Työtilausten elinkaarimallit
 
@@ -126,16 +128,13 @@ Kun olet luonut työtilauksille tarvittavat elinkaaritilat, ne voidaan jakaa ty�
 
 5. Valitse **Elinkaaren tilat** -pikavälilehdessä ne elinkaaren tilat, jotka sisällytetään elinkaarimalliin.
 
-    - Jos haluat sisällyttää elinkaaren tilan elinkaarimalliin, valitse se **Jäljellä olevat elinkaaren tilat** -osiosta ja valitse sitten oikealle osoittava nuolipainike ![Oikea nuoli.](media/12-setup-for-work-orders.png) siirtääksesi sen **Valitut elinkaaren tilat** -osioon.
-    - Jos haluat lisätä kaikki käytettävissä olevat elinkaaritilat elinkaarimalliin, valitse **Valitse kaikki käytettävissä olevat vaiheet** -painike ![Valitse kaikki käytettävissä olevat vaiheet.](media/13-setup-for-work-orders.png). Kaikki elinkaaritilat siirretään **Valitut elinkaaren tilat** -osioon.
-    - Jos haluat poistaa elinkaaren tilan elinkaarimallista, valitse se **Valitut elinkaaren tilat** -osiosta ja valitse sitten vasemmalle osoittava nuolipainike ![Vasen nuoli.](media/14-setup-for-work-orders.png) siirtääksesi sen **Jäljellä olevat elinkaaren tilat** -osioon.
+    - Jos haluat lisätä elinkaaritilan elinkaarimalliin, valitse se **Jäljellä olevat elinkaaren tilat** -osiosta ja siirrä se sitten **Valitut elinkaaren tilat** -osaan valitsemalla ![oikea nuoli](media/12-setup-for-work-orders.png).
+    - Jos haluat lisätä kaikki käytettävissä olevat elinkaaritilat elinkaarimalliin, valitse **Valitse kaikki käytettävissä olevat vaiheet** -painike ![Valitse kaikki käytettävissä olevat vaiheet](media/13-setup-for-work-orders.png). Kaikki elinkaaritilat siirretään **Valitut elinkaaren tilat** -osioon.
+    - Jos haluat poistaa elinkaaritilan elinkaarimallista, valitse se **Valitut elinkaaren tilat** -osiosta ja siirrä se sitten **Jäljellä olevat elinkaaren tilat** -osaan valitsemalla ![vasen nuoli](media/14-setup-for-work-orders.png).
 
 6. Valitse **Elinkaaren tilan päivitykset** määrittääksesi, mitkä elinkaaren tilat voivat seurata valittua elinkaaren tilaa.
 7. Valitse **Päivitykset**-pikavälilehden **Ajoitettu-tila**-kentästä elinkaaritila, joka on aina valittava työtilaukselle, jonka työtilauksen ajoitus on tehty, riippumatta siitä, mikä on työtileuksen edellinen elinkaaren tila.
 8. Valitse **Ajoittamattoman elinkaaren tila** -kentässä elinkaaritila, joka on aina valittava työtilaukselle, jos työtilauksen ajoittaminen poistetaan.
 9. Tallenna työtilauksen elinkaarimalli.
 
-![Työtilausten elinkaarimallit -sivu.](media/15-setup-for-work-orders.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Työtilausten elinkaarimallisivu](media/15-setup-for-work-orders.png)

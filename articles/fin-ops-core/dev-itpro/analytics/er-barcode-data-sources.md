@@ -2,9 +2,11 @@
 title: Viivakoodikuvien luominen viivakoodin tietolähteiden avulla
 description: Tässä ohjeaiheessa käsitellään tapaa, jolla viivakoodikuvia voidaan luoda viivakoodin tietolähteiden avulla.
 author: NickSelin
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: 72c79c37ca5b5f98637ba5069e25465bb1391306
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343260"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681421"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Viivakoodikuvien luominen viivakoodin tietolähteiden avulla
 
@@ -37,7 +39,7 @@ ER tukee nyt **viivakoodia** tietolähdetyyppinä. Niinpä nyt voi luoda kuvan, 
 
 Viivakoodikuvia voidaan lisätä raporttimalleihin seuraavien paikkamerkkien avulla:
 
-- [Kuva](/office/client-developer/word/content-controls-in-word) Wordin sisällön ohjausobjektina
+- [Kuva](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) Wordin sisällön ohjausobjektina
 - [Kuva](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) Excelin objektina
 
 **Viivakoodi**-tyyppisiä tietolähteitä käyttämällä voi luoda seuraavan muotoisia viivakoodeja:
@@ -116,21 +118,21 @@ Jos et ole vielä suorittanut tätä esimerkkiä ohjeaiheessa [Kuvien ja muotoje
 
 | Sisällön kuvaus         | Tiedostonimi                   |
 |-----------------------------|-----------------------------|
-| ER-tietomallin konfigurointi | [Model for cheques.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
-| ER-muodon konfigurointi     | [Cheques printing format.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
+| ER-tietomallin konfigurointi | Model for cheques.xml       |
+| ER-muodon konfigurointi     | Cheques printing format.xml |
 
 Lataa lisäksi seuraava Excel-tiedosto, joka sisältää annetun ER-ratkaisun muokatun mallin.
 
 | Sisällön kuvaus | Tiedostonimi                 |
 |---------------------|---------------------------|
-| Raporttimalli     | [Check template Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
+| Raporttimalli     | Check template Excel.xlsx |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivoi määrityslähde
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Tarkista **Lokalisointimääritykset**-sivun **Määrityksen lähteet** -osassa, että näyteyrityksen **Litware, Inc.** [määrityksen lähde](general-electronic-reporting.md#Provider) on luettelossa ja että sen tila on aktiivinen. Jos sitä ei ole luettelossa tai jos sitä ei ole merkitty aktiiviseksi, noudata ohjeaiheen [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) ohjeita.
 
-![Näyteyrityksen määrittäminen aktiiviseksi Lokalisointimääritykset-sivulla.](./media/er-barcode-data-source-active-provider.png)
+![Näyteyrityksen määrittäminen aktiiviseksi Lokalisointimääritykset-sivulla](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>Annetun ER-ratkaisun tuonti
 
@@ -160,14 +162,14 @@ Lataa lisäksi seuraava Excel-tiedosto, joka sisältää annetun ER-ratkaisun mu
 7. Valitse toimintoruudussa **Tulosta testi**.
 8. Määritä valintaikkunassa **Siirtokelpoinen sekkimuoto** -asetukseksi **Kyllä** ja valitse sitten **OK**.
 
-    ![Sekin asettelu – tulosta testi -valintaikkuna.](./media/er-barcode-data-source-check-layout.png)
+    ![Sekin asettelu – tulosta testi -valintaikkuna](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="review-the-generated-payment-check"></a><a name="ExampleReviewGeneratedCheque"></a>Luodun maksettavan sekin tarkistaminen
 
 - Avaa luotu sekki Excelissä.
 2. Tarkista luotu sekki.
 
-    ![Luotu maksettava sekki Excelissä.](./media/er-barcode-data-source-cheque1.png)
+    ![Luotu maksettava sekki Excelissä](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="modify-the-format-of-the-provided-er-solution"></a><a name="ExampleModifyFormat"></a>Annetun ER-ratkaisun muodon muokkaaminen
 
@@ -175,7 +177,7 @@ Lataa lisäksi seuraava Excel-tiedosto, joka sisältää annetun ER-ratkaisun mu
 
 Voit avata aiemmin tuodun **Cheque template Excel.xlsx** -tiedoston Excelin työpöytäsovelluksella. Huomaa, että malli on erilainen kuin malli, jolla maksettava sekki luotiin annetussa ER-ratkaisussa. Lisäksi se sisältää **AmountBarcode**-elementin viivakoodikuvaa varten.
 
-![AmountBarcode-elementti Excel-mallissa.](./media/er-barcode-data-source-cheque2.png)
+![AmountBarcode-elementti Excel-mallissa](./media/er-barcode-data-source-cheque2.png)
 
 ER-ratkaisua on nyt muokattava, jonka jälkeen muokattua mallia [käytetään uudelleen](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -186,7 +188,7 @@ ER-ratkaisua on nyt muokattava, jonka jälkeen muokattua mallia [käytetään uu
 5. Valitse ER-toimintojen suunnitteluohjelma **Yhdistämismääritys**-välilehti sivun oikealla puolella ja valitse sitten vasemmalla muotopuun ruudussa **Laajenna tai kutista**.
 6. Huomaa, että solun kaikki muotoelementit on sidottu sopiviin tietolähteisiin.
 
-    ![Solun muotoelementtien sitominen tietolähteisiin ER-toimintojen suunnitteluohjelmassa.](./media/er-barcode-data-source-cells-bound.png)
+    ![Solun muotoelementtien sitominen tietolähteisiin ER-toimintojen suunnitteluohjelmassa](./media/er-barcode-data-source-cells-bound.png)
 
 7. Valitse sivun oikealla puolella **Muoto**-välilehti.
 8. Valitse toimintoruudussa ensin kolme pistettä (**...**) ja sitten **Tuo**.
@@ -195,7 +197,7 @@ ER-ratkaisua on nyt muokattava, jonka jälkeen muokattua mallia [käytetään uu
 11. Valitse **Yhdistämismääritys**-välilehti sivun oikealla puolella ja valitse sitten vasemmalla muotopuuruudussa **Laajenna tai kutista**.
 12. Huomaa, että **AmountBarcode**-soluelementti on lisätty muotoon. Tämä elementti on liitetty **AmountBarcode**-elementtiin, joka on lisätty muokattuun Excel-malliin viivakoodikuvan paikkamerkkinä.
 
-    ![Muotoon ER-toimintojen suunnitteluohjelmassa lisätty AmountBarcode-soluelementti.](./media/er-barcode-data-source-cell-added.png)
+    ![Muotoon ER-toimintojen suunnitteluohjelmassa lisätty AmountBarcode-soluelementti](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>Uuden Viivakoodi-tietolähteen lisääminen
 
@@ -204,14 +206,14 @@ Seuraavaksi on lisättävä uusi **Viivakoodi**-tyyppinen tietolähde.
 1. Valitse ER-toimintojen suunnitteluohjelmassa sivun oikealla puolella **Yhdistämismääritys**-välilehdessä **tulostus**-tietolähde.
 2. Valitse ensin **Lisää** ja sitten **Toiminnot**-ryhmässä **Viivakoodi**-tietolähdetyyppi.
 
-    ![Viivakoodi-tietolähdetyypin valitseminen.](./media/er-barcode-data-source-add.png)
+    ![Viivakoodi-tietolähdetyypin valitseminen](./media/er-barcode-data-source-add.png)
 
 3. Kirjoita valintaikkunan **Nimi**-kentässä **viivakoodi**.
 4. Valitse **Viivakoodimuoto**-kohdassa **Koodi 128**.
 5. Kirjoita **Leveys**-kenttään **500**.
 6. Valitse **OK**.
 
-    ![Tietolähteen ominaisuudet -valintaikkuna.](./media/er-barcode-data-source-add2.png)
+    ![Tietolähteen ominaisuudet -valintaikkuna](./media/er-barcode-data-source-add2.png)
 
 #### <a name="bind-a-new-format-element"></a><a name="ExampleModifyFormatBindFormatElement"></a>Uuden muotoelementin sitominen
 
@@ -222,7 +224,7 @@ Uusi muotoelementti on sidottava seuraavaksi juuri lisättyyn tietolähteeseen.
 3. Valitse toimintoruudussa **Näytä tiedot**.
 4. Huomaa, että koska **Viivakoodi**-tietolähde ilmaistaan sidonnassa toimintona, joka sisältää yhden parametrin, sidotun muotoelementin nimi on otettu automaattisesti kyseisen parametrin argumenttina.
 
-    ![ER-toimintojen suunnitteluohjelman Viivakoodi-tietolähteen tiedot.](./media/er-barcode-data-source-bind1.png)
+    ![ER-toimintojen suunnitteluohjelman Viivakoodi-tietolähteen tiedot](./media/er-barcode-data-source-bind1.png)
 
 5. Säädä sidontaa valitsemalla **Muokkaa kaavaa**.
 
@@ -232,7 +234,7 @@ Uusi muotoelementti on sidottava seuraavaksi juuri lisättyyn tietolähteeseen.
 7. Valitse **Tallenna** ja sulje sitten [ER-muodon suunnitteluohjelma](general-electronic-reporting-formula-designer.md).
 8. Huomaa, että sidontaa on säädetty.
 
-    ![Säädetty sidonta ER-toimintojen suunnitteluohjelmassa.](./media/er-barcode-data-source-bind2.png)
+    ![Säädetty sidonta ER-toimintojen suunnitteluohjelmassa](./media/er-barcode-data-source-bind2.png)
 
 9. Valitse **Tallenna** ja sulje sitten ER-toimintojen suunnitteluohjelma.
 
@@ -277,7 +279,7 @@ Valitun muodon luonnosversio merkitään käytettäväksi, kun valittu muoto suo
 6. Valitse **OK**.
 7. Tarkista luotu sekki. Huomaa, että viivakoodi on luotu koodaamaan sekin maksettava summa.
 
-    ![Excelissä luotu viivakoodin sisältävä maksettava sekki.](./media/er-barcode-data-source-cheque3.png)
+    ![Excelissä luotu viivakoodin sisältävä maksettava sekki](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > Poikkeus annetaan, jos **Viivakoodi**-tietolähteen argumentti ei vastaa viivakoodimuodolle ominaisia vaatimuksia. Jos esimerkiksi **Viivakoodi**-tietolähde käynnistetään luomaan [EAN-8](https://wikipedia.org/wiki/EAN-8)-viivakoodi annetulle tekstille, poikkeus annetaan, jos tekstin pituus ylittää seitsemän merkkiä.
@@ -288,7 +290,7 @@ Kuten ohjeaiheessa [Tulostettavien FTI-lomakkeiden luominen](er-generate-printab
 
 Jos viivakoodit kuitenkin tuotetaan käyttämällä **Viivakoodi**-tietolähdettä, kyseisten viivakoodien hahmonnus ei määräydy minkään fontin mukaan. Tämän vuoksi viivakoodeja sisältävien asiakirjojen muuntaminen PDF-muotoon on helppoa. Seuraavassa kuvassa on sellaisen luodun maksettavan sekin esikatselu, joka on [muunnettu](electronic-reporting-destinations.md#OutputConversionToPDF) PDF-muotoon määritetyn ER-[kohteen](electronic-reporting-destinations.md) asetuksen mukaan.
 
-![Maksettavan sekin PDF-muodon esikatselu.](./media/er-barcode-data-source-cheque4.png)
+![Maksettavan sekin PDF-muodon esikatselu](./media/er-barcode-data-source-cheque4.png)
 
 ## <a name="limitations"></a>Rajoitukset
 
@@ -301,6 +303,3 @@ Jos viivakoodit kuitenkin tuotetaan käyttämällä **Viivakoodi**-tietolähdett
 - [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
 - [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
 - [NUMBERFORMAT-funktio](er-functions-text-numberformat.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

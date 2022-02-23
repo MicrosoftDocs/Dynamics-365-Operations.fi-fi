@@ -2,26 +2,27 @@
 title: Financen aloitussivu
 description: Tässä aiheessa on luettelo Microsoft Dynamics 365 Finance -ohjelman taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista.
 author: roschlom
-ms.date: 11/04/2021
+manager: AnnBe
+ms.date: 06/20/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "206434"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 206434
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13a5e12c7ea45ff343a5c7ae14b8ed5a030aabf5
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: c39d8ea92b5482b32e27d433b745151373553120
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753718"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458944"
 ---
 # <a name="finance-home-page"></a>Financen aloitussivu
 
@@ -35,16 +36,16 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
     :::column:::
         - [Ostoreskontra](accounts-payable/accounts-payable.md) 
         - [Myyntireskontra](accounts-receivable/accounts-receivable.md)
-        - [Resurssi-leasing](asset-leasing/asset-leasing-homepage.md)
         - [Budjetointi](budgeting/budgeting-overview.md) 
-        - [Kassa- ja pankkihallinta](cash-bank-management/cash-bank-management.md)
+        - [Maksuliikenteen hallinta](cash-bank-management/cash-bank-management.md)
         - [Kustannuslaskenta](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
+        - [Kulujenhallinta](expense-management/expense-management.md)
+        - [Taloushallinnon raportointi](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Käyttöomaisuuserät](fixed-assets/fixed-assets.md)
-        - [Finance insights](finance-insights/finance-insights-home-page.md)
-        - [Pääkirjanpito ja talousraportointi](general-ledger/general-ledger.md) 
+        - [Kirjanpidon ja talousraportoinnin aloitussivu](general-ledger/general-ledger.md) 
+        - [Projektinhallinta ja kirjanpito](project-management/overview-project-management-accounting.md)
         - [Julkinen sektori](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -55,8 +56,11 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 ### <a name="blogs"></a>Blogit
 
 - [Microsoft Dynamics 365 -blogi](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
-- [Talousblogi](https://community.dynamics.com/365/financeandoperations/b/financials) 
+- [Financials -blogi](https://community.dynamics.com/365/financeandoperations/b/financials) 
 - [Microsoft Dynamics Operations -kumppaniyhteisön blogi](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
+
+### <a name="task-guides"></a>Tehtäväoppaat
+Finance and Operations -tehtäväoppaat sisältävät lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
 
 ### <a name="videos"></a>Videot
 
@@ -64,22 +68,9 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 
 ### <a name="countryregion-functionality"></a>Maa/alue-toiminto
 
-Maan tai alueen säännökset vaikuttavat verojärjestelyihin ja muihin taloushallinnon osa-alueisiin. Lisätietoja maa- tai aluekohtaisista toiminnoista on kohdassa [Lokalisointi- ja sääntelyominaisuudet](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
+Maiden/alueiden säädökset vaikuttavat veroasetuksiin ja taloushallinnon muihin alueisiin. Ohjeiden [Lokalisointi- ja säädösominaisuudet](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) -osassa on lisätietoja maa-/aluekohtaisista ominaisuuksista.
 
-### <a name="additional-content"></a>Lisäsisältö
+### <a name="additional-content"></a>Lisää sisältöä
 
-Supply chain management -toiminnallisuus kattaa osia hankinnasta maksuun -prosessista, jotka sisältävät:
+Supply Chain Managementin toiminnallisuus kattaa hankinnasta maksuun -prosessin osia. Niihin kuuluvat varasto-otot, tilaaminen, vastaanotto, laskutus sekä organisaation ostamien tavaroiden ja palveluiden maksaminen. Lisätietoja ostojen, varaston ja valmistuksen ominaisuuksista on [!Supply Chain Management -sovelluksen kotisivulla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 
-   - Ehdotukset
-   - Tilaaminen 
-   - Vastaanotto
-   - Laskutus
-   - Organisaatiosi ostamien tuotteiden tai palveluiden maksaminen 
-    
-Lisätietoja ostojen, varaston ja valmistuksen hallinnan ominaisuuksista on [Supply Chain Management -sivustolla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
-
-## <a name="elearning-courses"></a>eLearning-kurssit
-
-Lisätietoja online-kursseista ja -koulutuksesta on kohdassa [Dynamics 365 Finance Microsoft Learnissa](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

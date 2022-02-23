@@ -2,25 +2,28 @@
 title: Kustannustason dimensiot
 description: Koska kustannustasodimensio on yksi kustannuslaskennan perustekijöistä, sitä käytetään luokittelemaan ja jäljittämään kustannusvirran suuntaa.
 author: AndersGirke
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 667fb81a2c1c8f564c09fe8fb7921c7aff75920bfa4326e82078583df61576e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e67ce047d08af6d34090ee4e1dc379dd16ecce07
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728766"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442862"
 ---
 # <a name="cost-element-dimensions"></a>Kustannustason dimensiot
 
@@ -63,7 +66,7 @@ Kustannustasoja on kahdenlaisia: ensisijaiset ja toissijaiset kustannustasot. Se
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kustannustason dimensiot ja kustannustason dimension jäsenet
 Kustannustasoja kutsutaan *kustannustasodimensioiksi* . Yksittäisiä dimensioarvoja kutsutaan *kustannusluokkien dimensiojäseniksi*. Esimerkki: US tilikartan rakennetta (COA) käytetään lakisääteinen raportoinnin perustana. Tätä tilikarttaa käytetään kustannustason dimensiona. Tilit, jotka ovat ensisijaisia kustannustasoja, esitetään kustannustason dimensiojäseninä kustannuslaskennassa. Seuraavassa kuvankaappauksessa on esimerkki päätileistä kustannustasodimensioina ja toteutuneista päätileistä kustannustasodimension jäseninä. 
 
-[![Näyttökuva päätileistä kustannustason dimensiona.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Näyttökuva päätileistä kustannustason dimensiona](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Kustannustason dimension jäsenten tuominen tietoyhdistimillä
 Voit helpottaa kustannustason dimension jäsenten asetusta kustannuslaskennassa käyttämällä valmiita tai mukautettuja tietoyhdistimiä, joilla haetaan ensisijaiset kustannustasot yhdestä tai useammasta lähdejärjestelmästä.
@@ -73,6 +76,3 @@ Koska kustannustasot vastaavat alimman tason kustannustietoja, varmista, että k
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

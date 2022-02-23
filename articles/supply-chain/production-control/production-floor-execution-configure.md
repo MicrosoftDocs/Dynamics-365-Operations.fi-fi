@@ -2,27 +2,30 @@
 title: Tuotannon käyttöliittymän määrittäminen
 description: Tässä ohjeaiheessa käsitellään tuotannon käyttöliittymämääritysten luontia. Kun tuotannon käyttöliittymä avataan, se lataa automaattisesti selain- ja laitekohtaisen valitun määrityksen ja työsuodattimen. Määrityksessä määritetään käytännöt, joita on käytettävä tietyssä käyttötilanteessa.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
+ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777958"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664293"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tuotannon työntekijät rekisteröivät tuotannon käyttöliittymällä päivittäisen työnsä, kuten töiden aloittamisen, töitä koskevan palautteen antamisen, epäsuorien tehtävien rekisteröimisen ja poissaolon raportoinnin. Nämä rekisteröinnit ovat perusta, jolla seurataan tuotantotilausten edistymistä ja kustannuksia sekä lasketaan työntekijöiden palkka.
 
@@ -39,47 +42,28 @@ Tuotannon käyttöliittymä sekä monet tässä aiheessa käsiteltävät valinna
 
 ### <a name="the-production-floor-execution-interface"></a>Tuotannon käyttöliittymä
 
-Tätä ominaisuutta käsitellään ensisijaisesti tässä aiheessa. Supply Chain Managementin versiosta 10.0.21 alkaen se on poistettu oletusarvoisesti käytöstä. Se lisää tuotannon käyttöliittymän järjestelmään. Ota se käyttöön ottamalla seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
+Tätä ominaisuutta käsitellään ensisijaisesti tässä aiheessa. Se lisää tuotannon käyttöliittymän järjestelmään. Ota se käyttöön ottamalla seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
 - Tuotannon toteutus
 
 ### <a name="generate-license-plates"></a>Rekisterikilpien muodostaminen
 
 Näillä ominaisuuksilla rekisterikilpitoiminnot saadaan käyttöön tuotannon käyttöliittymässä. Jos haluat käyttää niitä, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (seuraavassa järjestyksessä):
 
-1. Valmiiksi ilmoittamisen rekisterikilpi lisättiin työkorttilaitteeseen (Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on otettu oletusarvoisesti käyttöön.)
+1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
 1. Ota käyttöön rekisterikilven numeron automaattinen luonti, kun työkorttilaitteessa raportoidaan valmiiksi
 
 ### <a name="print-labels"></a>Tulosta etiketit
 
 Näillä ominaisuuksilla etikettitulostus saadaan käyttöön tuotannon käyttöliittymässä. Jos haluat käyttää niitä, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (seuraavassa järjestyksessä):
 
-1. Valmiiksi ilmoittamisen rekisterikilpi lisättiin työkorttilaitteeseen (Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on otettu oletusarvoisesti käyttöön.)
+1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
 1. Tulosta etiketti työkorttilaitteesta
 
 ### <a name="allow-locking-the-touch-screen"></a>Kosketusnäytön lukitsemisen salliminen
 
-Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Se lisää tuotannon käyttöliittymään painikkeen, jolla työntekijät voivat puhdistaa kosketusnäytön. Jos haluat käyttää sitä, varmista, että seuraava toiminto on otettu käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tämä ominaisuus lisää tuotannon käyttöliittymään painikkeen, jolla työntekijät voivat puhdistaa kosketusnäytön. Jos haluat käyttää sitä, ota seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Ominaisuus, jolla voi lukita työkorttilaitteen ja työkorttipäätteen desinfiointia varten
-
-### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Tuotannonohjausliittymän käyttöomaisuuden hallintatoiminto
-
-Tämä toiminto lisää resurssien hallinnan välilehden tuotannon käyttöliittymään. Työtekijät voivat valita tässä välilehdessä siihen koneresurssiin liittyvän resurssin, joka on työluettelon valitussa suodattimessa. Työtekijä voi tarkastella valitun koneresurssin tilaa ja kuntoa enintään neljän valitun laskurin arvojen avulla. Jos haluat käyttää tätä toimintoa, ota seuraava toiminto käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Tuotannonohjausliittymän käyttöomaisuuden hallintatoiminto
-
-### <a name="enable-job-search"></a>Työhaun ottaminen käyttöön
-
-Tämän ominaisuuden avulla voit lisätä hakukentän työluetteloon. Työntekijät voivat etsiä tietyn työn syöttämällä työtunnuksen tai etsimällä tietyn tilauksen kaikki työt antamalla tilaustunnuksen. Työntekijät voivat syöttää tunnuksen näppäimistön avulla tai skannaamalla viivakoodia. Jos haluat käyttää sitä, ota seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Töiden haku tuotannon työnohjausliittymälle
-
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Oheis- ja sivutuotteiden raportoinnin käyttöönotto
-
-Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon suoritusliittymää erätilausten edistymisen raportointiin. Tähän raportointiin kuuluu oheis- ja sivutuotteita koskeva raportointi. Jos haluat käyttää tätä toimintoa, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Raportti tuotannon käyttöliittymän rinnakkais- ja sivutuotteista
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Tuotannon käyttöliittymämääritysten käyttäminen
 
@@ -90,8 +74,6 @@ Voit luoda ja ylläpitää laitemäärityksiä valitsemalla **Tuotannonhallinta 
 
 Määritä seuraavaksi valitun laitemäärityksen asetukset. Seuraavat kentät ovat käytettävissä:
 
-- **Vain sisään- ja uloskirjaus** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat luoda yksinkertaistetun liittymän, jossa on vain sisään- ja uloskirjaustoiminnot. Tällöin suurin osa sivun muista asetuksista poistuu käytöstä. Ennen tämän asetuksen käyttöönottoa on poistettava kaikki rivit **Välilehtivalinta**-pikavälilehdestä.
-- **Ota haku käyttöön** - Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat sisällyttää työluetteloon hakukentän. Työntekijät voivat etsiä tietyn työn syöttämällä työtunnuksen tai etsimällä tietyn tilauksen kaikki työt antamalla tilaustunnuksen. Työntekijät voivat syöttää tunnuksen näppäimistön avulla tai skannaamalla viivakoodia.
 - **Ilmoita määrä uloskuittauksessa** – Määritä asetukseksi *Kyllä*, jos haluat, että työntekijöitä pyydetään antamaan palautetta meneillään olevista töistä, kun he kuittaavat itsensä ulos. Jos asetuksena on *Ei*, työntekijät eivät saa tätä kehotetta.
 - **Lukitse työntekijä** – Jos asetuksena on *Ei*, työntekijät kirjautuvat ulos heti, kun he tekevät rekisteröinnin (kuten uuden työn): Laite palaa sitten kirjautumissivulle. Kun asetuksena on *Kyllä*, työntekijät pysyvät kirjautuneena työkorttilaitteeseen. Työntekijä voi kuitenkin kirjautua ulos manuaalisesti, jolloin toinen työntekijä voi kirjautua sisään, jolloin työkorttilaitetta käytetään edelleen samalla järjestelmäkäyttäjätilillä. Lisätietoja tämän tyyppisistä tileistä on kohdassa [Määritetyt käyttäjät](config-job-card-device.md#assigned-users).
 - **Käytä todellista kirjaamisaikaa** – Jos asetuksen on *Kyllä*, kukin uusi kirjaus vastaa tarkkaa aikaa, jolloin työntekijä on lähettänyt rekisteröitymisen. Jos asetuksena on *Ei*, käytössä on kirjautumisaika. Yleensä tämä asetus on *Kyllä*, jos **Lukitse työntekijä**- ja/tai **Yksittäinen työntekijä** -asetuksena on *Kyllä* tilanteissa, joissa työntekijät pysyvät usein kirjautuneina pitkiä aikoja.
@@ -112,6 +94,3 @@ Erätyö poistaa säännöllisesti viitetaulukoista niiden laitteiden merkinnät
 1. Valitse toimintoruudussa **Tyhjennä asiakasohjelmamäärityksiä**.
 1. Määritä **Tyhjennä asiakasohjelmamäärityksiä** -valintaikkunan **Päivien määrä** -kentässä, kuinka monta päivää (ennen kuluvaa päivää) ilman toimintaa otetaan huomioon. Kaikkien niiden laitteiden määritykset ja kirjautumistietueet poistetaan, jotka eivät ole olleet aktiivisia kyseisenä aikana.
 1. Tyhjennä soveltuvat määritykset **Päivien määrä** -asetuksen perusteella valitsemalla **OK**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

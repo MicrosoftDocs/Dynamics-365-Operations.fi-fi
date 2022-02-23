@@ -2,9 +2,11 @@
 title: Laitteiston kokovaatimukset paikallisissa ympäristöissä
 description: Tässä ohjeaiheessa käsitellään laitteiston kokovaatimukset paikallisissa ympäristöissä
 author: sericks007
-ms.date: 06/02/2021
+manager: AnnBe
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9d4f2e59d4dd78d15d561ff0da47e4b9b1a2fce3
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763431"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798301"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Laitteiston kokovaatimukset paikallisissa ympäristöissä
 
@@ -36,7 +38,7 @@ Kun olet perehtynyt dokumentaatioon, voit aloittaa tapahtumien ja samanaikaisten
 
 Kaikki seuraavan kuvan tekijät vaikuttavat koon. Mitä tarkempia kerätyt tiedot ovat, sitä tarkemmin voit määrittää koon. Jos laitteiston koko määritetään ilman taustatietoja, lopputulos ei ole todennäköisesti tarkka. Suurin tapahtumarivien määrä tunnissa on tieto, joka vähintäänkin tarvitaan.
 
-[![Laitteiston koon määrittäminen paikallisissa ympäristöissä.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Laitteiston koon määrittäminen paikallisissa ympäristöissä](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Vasemmalta oikealle tarkasteltaessa tärkein tekijä, jonka avulla koko voidaan määrittää tarkasti, on tapahtumaprofiili tai tapahtuman kuvaus. On tärkeää, että suurin tapahtumien määrä tunnissa on tiedossa. Jos kuormitushuippuja on useita, nämä jaksot on määritettävä tarkasti.
 
@@ -132,15 +134,10 @@ Ellei käyttö ole erittäin suurta suositeltu vähimmäisvaatimus on useimmissa
 
 Yleisesti saatavilla olevassa julkaisuversiossa voidaan ottaa käyttöön vain yksi SSRS-solmu. Seuraa SSRS-solmua testauksen aikana ja lisää SSRS:n käytössä olevien ytimien määrää tarvittaessa. Varmista, että virtuaali-isäntään valmiiksi määritetty toissijainen solmu ei ole sama kuin SSRS VM. Tämä on tärkeää, jos SSRS:ää isännöivässä virtuaalikoneessa tai virtuaali-isännässä on ongelma. Siinä tapauksessa ne on vaihdettava.
 
-Versiosta 10.0.17 alkaen on mahdollista määrittää lisää SSRS-solmuja, jotta niiden käytettävyys on mahdollisimman suuri. Lisätietoja: [SQL Server Reporting Services (SSRS) -solmujen korkean käytettävyyden konfigurointi](../../dev-itpro/deployment/onprem-ssrsha.md).
-
 ## <a name="environment-orchestrator"></a>Ympäristön Orchestrator-palvelu
 
-Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä. Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta. Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut. Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen. Lisätietoja on ohjeaiheessa [Service Fabric -klusterin erillisen käyttöönoton suunnittelu ja valmistelu](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä. Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta. Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut. Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen. Lisätietoja on ohjeaiheessa [Service Fabric -klusterin erillisen käyttöönoton suunnittelu ja valmistelu](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisointi ja ylitilaus
 
 Toiminnan kannalta keskeiset palvelut, kuten AOS, on isännöitävä virtuaali-isännissä, joille on varattu omat resurssit (ytimet, muisti ja levy).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

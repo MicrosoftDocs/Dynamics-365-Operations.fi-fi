@@ -1,10 +1,12 @@
 ---
 title: Ostotilausten luominen
 description: Tässä artikkelissa käsitellään ostotilauksen manuaalisen luonnin prosesseja ja vaihtoehtoja.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b8e00316b45126b028b6d9812a455ef0e53f19
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575509"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022278"
 ---
 # <a name="create-purchase-orders"></a>Ostotilausten luominen
 
@@ -65,7 +67,7 @@ Haluat ehkä joskus jakaa tilatun määrän, jotta sen eri osat toimitetaan eri 
 Kulut voidaan lisätä automaattisesti ostotilausriveille, jos automaattiset kulut on määritetty toimittajalle tai toimittajan kuluryhmälle ja nimike tai nimikkeen kuluryhmälle. Kulut lisätään kuitenkin enemmän yleensä kulut lisätään manuaalisesti että tilausrivin tasolla. Voit lisätä kulun avaamalla **Kulujen ylläpito** -sivun **Kulujen ylläpito** -toiminnon **Myyntitiedot**-valikossa **Rivit**-näkymässä. Kulujen lisäämisen etuna suoraan tilausrivitasolla on kulujen kohdistaminen varastokustannuksena. Voit määrittää koodit tilin tuotekustannukseen **Nimike**-debet-vaihtoehdolla. Tällaiset kulut on kohdistettava ostotilauksen otsikosta riveille ennen tilauksen vahvistamista. Haluat ehkä esimerkiksi kohdistaa kulut kullekin riville määrän perusteella. Kululuokan vaikuttaa myös siihen, miten kulut lasketaan. Kiinteät kulut esimerkiksi määrittävät kiinteän summan ja prosenttikulut lasketaan tilausrivin nettosumman prosenttiosuutena. Ostotilaukset voidaan määrittää kuormalle, ja kuorma voi sisältää arvion kuljetuskustannusten odotetuista kuluista. Voit kohdistaa tämän kulun kuormasta takaisin ostotilausriveille.
 
 ## <a name="purchase-order-actions"></a>Ostotilaustehtävät
-Kun olet lisännyt otsikon ja rivit ostotilaukseen, lisävaiheet on täydennettävä, ennen kuin tilaus voidaan vahvistaa. Koska valittavia vaihtoehtoja on niin monia, [Toiminnon haku](../../fin-ops-core/fin-ops/get-started/action-search.md) voi auttaa löytämään sopivan valikkovaihtoehdon.  
+Kun olet lisännyt otsikon ja rivit ostotilaukseen, lisävaiheet on täydennettävä, ennen kuin tilaus voidaan vahvistaa. Koska valittavia vaihtoehtoja on niin monia, [Toiminnon haku](../../fin-and-ops/get-started/action-search.md) voi auttaa löytämään sopivan valikkovaihtoehdon.  
 
 Voit määrittää tilauksen tuotteet niin, että niillä lisänimikkeitä. Lisänimikkeet ovat tuotteita, jotka on ostettava tai jotka voidaan ostaa yhdessä muiden tuotteiden kanssa. Lisätuotteita voidaan lisätä maksutta liittyvinä tuotteina tai voit päättää, lisätäänkö ne tilaukseen vai ei. Voit tarkistaa lisätuotteet, kun kukin tilausrivi on lisätty. Todennäköisesti on kuitenkin kätevämpää tarkastella kaikkien tilausrivien lisänimikkeitä tai lisätä niitä **Lisänimikkeet**-sivulla, jonka voit avata toimintoruudusta.  
 
@@ -80,7 +82,8 @@ Ostotilauksen voidaan määrittää edellyttämään, että budjettirahoitus koh
 
 Joudut ehkä viivyttämään ostotilauksen valmistumista. Joudut esimerkiksi ehkä pyytämään lisätietoja tuotteista tai palveluista tai sinun on ehkä hankittava kulutuslupa. Tilauksen pidättämiseen on useita tapoja. Voit esimerkiksi odottaa tilauksen vahvistusta. Vaihtoehtoisesti, jos käytössä on muutoksenhallinnan työnkulku, tilausta ei lähetetä hyväksyttäväksi. Jos tietyn toimittajan kaikki tilauksen on estettävä, voit merkitä toimittajan **pitoon** päätoimittajassa käsiteltäväksi. Myös tietyt tilanteet voivat estää tilauksen käsittelyn. Käsittely voidaan esimerkiksi estää, jos luottorajat on ylitetty tai tarvittava budjettirahoitus ei ole käytettävissä.
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
@@ -92,6 +95,3 @@ Joudut ehkä viivyttämään ostotilauksen valmistumista. Joudut esimerkiksi ehk
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

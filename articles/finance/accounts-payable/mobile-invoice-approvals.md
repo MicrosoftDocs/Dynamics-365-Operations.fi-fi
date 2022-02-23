@@ -2,24 +2,27 @@
 title: Mobiililaskujen hyväksynnät
 description: Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737352"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442722"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
@@ -27,11 +30,12 @@ ms.locfileid: "6737352"
 
 Mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
 
-## <a name="prerequisites"></a>Edellytykset
+<a name="prerequisites"></a>Edellytykset
+-------------
 
 | Edellytys                                                                                            | kuvaus                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Ympäristö, johon on asennettu in versio 1611 ja Platform update 3 (marraskuu 2016)                   |
 | Asenna hotfix-korjaus KB 3204341.                                                                              | Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Platform update 3:een (marraskuun 2016 päivitys). |
 | Asenna hotfix-korjaus KB 3207800.                                                                              | Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Platform update 3:een (marraskuun 2016 päivitys).           |
@@ -136,7 +140,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
 1.  Korvaa URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
 
-    [![Minulle määritettyjen odottavien toimittajalaskujen luettelosivu.](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    [![Minulle määritettyjen odottavien toimittajalaskujen luettelosivu](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
     
 2.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
 3.  Valitse työtila ja sitten **Muokkaa**
@@ -145,7 +149,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 6.  Valitse **Valmis**.
 7.  Valitse mobiilisivujen suunnitteluohjelmassa **Kentät**-välilehdessä **Valitse kentät**. Luettelosivun sarakkeiden tulisi olla likipitäen kuin seuraavassa kuvassa. 
 
-    [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla.](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
     
 8.  Lisää tarvittavat sarakkeet luettelosivulta, joka on näytettävä käyttäjille mobiilisivulla. Kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. Tämän skenaarion vaatimusten mukaan seuraavat kahdeksan kenttää ovat pakollisia. Joidenkin käyttäjien mielestä kahdeksan kenttää mobiililaitteessa saattaa kuitenkin olla liikaa. Siksi näytämme vain tärkeimmät kentät mobiilissa luettelonäkymässä. Muut kentät näkyvät tietonäkymässä, jonka suunnittelemme myöhemmin. Nyt lisäämme seuraavat kentät. Napsauta plus-merkkiä (**+**) sarakkeissa lisätäksesi ne mobiilisivulle.
     - Toimittajan nimi
@@ -156,7 +160,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
     Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. 
     
-    [![Sivu kenttien lisäämisen jälkeen.](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  On myös lisättävä seuraavat sarakkeet nyt, että voimme ottaa työnkulkutoimintoja myöhemmin käyttöön.
     - Näytä Suorita-tehtävä
@@ -175,7 +179,7 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
 Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeaderDetails**-sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. 
 
-[![Työnkulku-sivu.](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+[![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. Korvaa URL-osoitteessa valikkovaihtoehto nimi merkkijonolla **VendMobileInvoiceHeaderDetails**, jos haluat avata lomakkeen
 
@@ -212,7 +216,7 @@ Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeader
 
 11. Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**. Sivun tulisi olla likipitäen kuin seuraavassa kuvassa.
     
-    [![Kuva, jossa näkyy lisättyjä kenttiä.](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Valitse **Valmis** poistuaksesi muokkaustilasta.
 
@@ -322,7 +326,7 @@ Käytä **VendMobileInvoiceHeaderDetails**-sivua lisätäksesi työnkulkutoimint
 
 4. Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.
    
-   ![Tiedoston hallinta.](./media/docmanagement-216x300.png)
+   ![Tiedoston hallinta](./media/docmanagement-216x300.png)
 
 5. Valitse **Valmis** poistuaksesi muokkaustilasta.
 
@@ -339,7 +343,7 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
 
 1.  Korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Sivun, joka näkyy, on muistutettava seuraavaa kuvaa.
 
-    [![Kaikki jaot -sivu.](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
 
@@ -531,6 +535,3 @@ Skenaariolle 1 voidaan tehdä seuraavat muunnelmat perustuen skenaarion 2 vaatim
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

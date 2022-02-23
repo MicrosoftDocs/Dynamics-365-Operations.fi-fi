@@ -2,22 +2,25 @@
 title: ALV-/GST-mallin käänteinen veloitusmekanismi
 description: Tässä ohjeaiheessa kerrotaan, miten käänteinen arvonlisävero määritetään Euroopan maissa, Saudi-Arabiassa ja Singaporessa.
 author: epodkolz
+manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
+ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594716"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4515048"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>ALV-/GST-mallin käänteinen veloitusmekanismi
 
@@ -45,6 +48,7 @@ Seuraavat asetukset on tehtävä käänteisen veron käyttöä varten.
 Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäverokoodeja.
 
 <table>
+<body>
 <tr>
 <td><strong>Myynnin arvonlisäverokoodi</strong></td>
 <td>Luo myyntikoodi käänteisen veron myyntitoiminnoille (<strong>Verot</strong> &gt; <strong>Välilliset verot</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Arvonlisäverokoodit</strong>).
@@ -61,6 +65,7 @@ Tämä negatiivinen arvonlisäverokoodi on määritettävä ensin nimikkeen arvo
 <p>Lisätietoja on seuraavassa kohdassa &quot;Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen.&quot;</p>
 </td>
 </tr>
+</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen
@@ -119,7 +124,7 @@ Kun käänteisen veron sisältävä ostolasku kirjataan, kirjanpitoon luodaan ka
 
 Seuraavassa näyttökuvassa yhdessä tapahtumassa suuntana on **Saatava arvonlisävero** ja toisessa **Maksettava arvonlisävero**. 
 
-![Kirjattu arvonlisävero.](media/apac-sau-posted-sales-tax.png)
+![Kirjattu arvonlisävero](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Ota ALV/GST-veromalliominaisuuden käänteisen verovelvollisuuden mekanismi käyttöön
 Hae ominaisuus **Ominaisuuksien hallinta** -työtilassa ja valitse **Ota käyttöön**.
@@ -132,6 +137,3 @@ Seuraavat ominaisuusasetuksiin liittyvät sivut ja valikkovaihtoehdot ovat käyt
  - **Ulkomaankauppaparametrit** (**Vero** > **Asetus** > **Arvonlisävero** > **Ulkomaankauppa** > **Ulkomaankauppaparametrit**). Katso [Maan/alueen ominaisuuksien määrittäminen](#Set-up-Country/region-properties).
 
 **Käänteinen veloitus** -valintaruutu on käytettävissä **Arvonlisäveroryhmä** ja **Kirjattu arvonlisävero** -sivuilla. Lisätietoja on kohdissa [Arvonlisäveroryhmien ja nimikkeen arvonlisäveroryhmien määrittäminen](#sales-tax-item-sales-tax-groups), [Myyntilaskun käänteinen veloitus](#reverse-charge-sale) ja [Ostolaskun käänteinen veloitus](#reverse-charge-purchase).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

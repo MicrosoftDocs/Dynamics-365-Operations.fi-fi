@@ -2,23 +2,26 @@
 title: Työrivin tiedot
 description: Tässä ohjeaiheessa on tietoja Työrivin tiedot -sivusta, joka sisältää kattavan, lajiteltavissa olevan luettelon sekä suodatettavissa olevan luettelon järjestelmäsi yksittäisistä työriveistä.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778278"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427451"
 ---
 # <a name="work-line-details"></a>Työrivin tiedot
 
@@ -28,7 +31,7 @@ ms.locfileid: "7778278"
 
 ## <a name="turn-on-the-work-line-details-feature"></a>Työrivin erittelytoiminnon ottaminen käyttöön
 
-Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla toiminnon tilan sekä ottaa sen käyttöön tai poistaa sen käytöstä tarvittaessa. Toiminto näkyy seuraavasti:
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Varastonhallinta*
 - **Ominaisuuden nimi:** *Työrivin tiedot*
@@ -125,6 +128,3 @@ Seuraa seuraavia ohjeita luodaksesi poimintatyön.
 
 > [!IMPORTANT]
 > Jos peruutat vain osan työrivin määrästä, myös vanhentunut määrä on poistettava kuormarivistä. Muussa tapauksessa kuormariviä ei voi vahvistaa, ellei alitoimitus ole määritetty oikein.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

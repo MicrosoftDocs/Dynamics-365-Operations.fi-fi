@@ -79,6 +79,3 @@ Lataa **suositussovellus** siirtymällä [Dynamics 365 Talent -laajennusratkaisu
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Sovelluksen siirtäminen vuokraajien ja ympäristöjen kesken](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

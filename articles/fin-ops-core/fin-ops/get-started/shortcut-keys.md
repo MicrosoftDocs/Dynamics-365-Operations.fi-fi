@@ -1,10 +1,12 @@
 ---
 title: Pikanäppäimet
-description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet taloushallinnon ja toimintojen sovelluksia.
+description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet Finance and Operations -sovelluksia.
 author: jasongre
-ms.date: 12/10/2021
+manager: AnnBe
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070980"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798223"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti taloushallinnon ja toimintojen sovelluksissa.
+Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti Finance and Operations -sovelluksissa.
 
 > [!NOTE]
 > Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
@@ -130,10 +129,8 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="grid-shortcuts"></a>Ruudukon pikanäppäimet
 
-| Toiminto                                                                                                             | Paina                            |
+| Toiminto                                                                                                             | Näppäinyhdistelmä                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Vieritys pystysuunnassa                                                                                                     | Vierityspainike                     |
-| Vieritys vaakasuunnassa                                                                                                   | Vaihto + vierityspainike             |
 | Siirry seuraavaan/edelliseen sarakkeeseen                                                                                       | Sarkain / Vaihto+Sarkain                 |
 | Siirry seuraavalle/edelliselle riville                                                                                          | Ylänuoli/alanuoli           |
 | Siirry seuraavalle/edelliselle riville valitsematta<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote> | Ctrl+Ylänuoli / Ctrl+Alanuoli |
@@ -145,24 +142,22 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirry ensimmäiseen tietueeseen                                                                                               | Ctrl+Home                       |
 | Siirry viimeiseen tietueeseen                                                                                                | Ctrl+End                        |
 | Valitse kaikki rivit tai poista ne                                                                                               | Ctrl+Vaihto+M                    |
-| Siirry ensimmäiselle merkitylle riville                                                                                           | Alt+Shift+M, F                  |
-| Siirry seuraavalle merkitylle riville                                                                                            | Alt+Shift+M, L                  |
-| Siirry edelliselle merkitylle riville                                                                                        | Alt+Shift+M, P                  |
-| Siirry viimeiselle merkitylle riville                                                                                           | Alt+Shift+M, N                  |
+| Siirry ensimmäiselle merkitylle riville                                                                                           | Alt+Shift+M, F                    |
+| Siirry seuraavalle merkitylle riville                                                                                            | Alt+Shift+M, L                    |
+| Siirry edelliselle merkitylle riville                                                                                        | Alt+Shift+M, P                    |
+| Siirry viimeiselle merkitylle riville                                                                                           | Alt+Shift+M, N                    |
 | Suorita ruudukon oletustoiminto<blockquote>[!NOTE] Tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.</blockquote> | Enter                           |
 | Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
 | Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |
-| Siirrä nykyinen sarake seuraavaan/edelliseen asemaan (kohdistus otsikkorivillä)                                   | Ctrl+Vaihto+Oikea nuoli / Ctrl+Vaihto+Vasen nuoli |
 | Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)                                              | Enter                           |
-| Muuta nykyisen sarakkeen kokoa, jotta sisältö mahtuu siihen (kohdistus otsikkorivillä)                                           | A (tai sarakkeen kokokahvan kaksoisnapsautus) |
 
 ## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
 
-| Toiminto                                                                   | Paina                          |
+| Toiminto                                                                   | Näppäinyhdistelmä                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Avaa hyperlinkki                                                           | Ctrl+Enter                    |
-| Lisää istuntopäivämäärä päivämääräkenttään                                       | T                             |
-| Lisää nykyinen päivämäärä päivämääräkenttään                                       | T                             |
+| Lisää istuntopäivämäärä päivämääräkenttään                                       | T                         |
+| Lisää nykyinen päivämäärä päivämääräkenttään                                       | T                         |
 | Avaa haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                         | Alt+Alanuoli                |
 | Sulje haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                        | Esc                           |
 | Siirrä kohdistus hakuun (kun haku on avoinna)                   | Alt+Alanuoli                |
@@ -209,8 +204,8 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Käytä siirtotyökalua (mukauttamistilassa)                                                                       | M                                   |
 | Valitse nykyinen ohjausobjekti siirrettäväksi (kun siirtotyökalu on käytössä eikä siirrettävää objektia ole valittu)  | Väli tai Enter                      |
 | Poista ohjausobjektin siirtäminen (kun siirtotyökalu on käytössä)                                                                   | Esc                                 |
-| Siirrä valittu ohjausobjekti seuraavaan paikkaan (kun siirtotyökalu on käytössä)                                              | Sarkain tai Oikea nuoli tai Alanuoli    |
-| Siirrä valittu ohjausobjekti edelliseen paikkaan (kun siirtotyökalu on käytössä)                                          | Vaihto + Sarkain tai Vasen nuoli tai Ylänuoli |
+| Siirry seuraavaan paikkaan valitussa ohjausobjektissa (kun siirtotyökalu on käytössä)                                          | Sarkain tai Oikea nuoli tai Alanuoli    |
+| Siirry edelliseen paikkaan valitussa ohjausobjektissa (kun siirtotyökalu on käytössä)                                      | Vaihto + Sarkain tai Vasen nuoli tai Ylänuoli |
 | Käytä piilotustyökalua (mukauttamistilassa)                                                                       | H                                   |
 | Vaihda nykyisen objektin näkyvyys (piilotustyökalu)                                     | Väli tai Enter                      |
 | Käytä ohitustyökalua (mukauttamistilassa)                                                                       | K                                   |
@@ -260,6 +255,3 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 [Puuttuvien tilien analyysin pikanäppäimet](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

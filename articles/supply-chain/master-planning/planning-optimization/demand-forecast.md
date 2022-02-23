@@ -2,13 +2,16 @@
 title: Pääsuunnittelu ja kysynnän ennusteet
 description: Tässä aiheessa käsitellään kysynnän ennusteiden sisällyttämistä pääsuunnitteluun suunnittelun optimoinnin avulla
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
+ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
+ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867244"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666719"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Pääsuunnittelu ja kysynnän ennusteet
 
@@ -86,9 +89,9 @@ Kun lisäät ennusteen pääsuunnitelman, voit valita kuinka ennusteen tarpeita 
 
 Voit sisällyttää ennusteen pääsuunnitelmaan ja valita menetelmän, jolla voit pienentää ennustetarpeita siirtymällä kohtaan **Pääsuunnittelu \> Määritys \> Suunnitelmat \> Pääsuunnitelmat**. Valitse **Ennustemalli** -kentästä ennustemalli. Valitse **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentästä menetelmä. Käytettävissä ovat seuraavat asetukset:
 
-- Ei mitään
+- None
 - Prosentti - vähennysavain
-- Tapahtumat - vähennysavain
+- Tapahtumat – vähennysavain (ei vielä tueta suunnittelun optimoinnissa)
 - Tapahtumat - dynaaminen kausi
 
 Seuraavissa osissa on lisätietoja kustakin vaihtoehdosta.
@@ -137,85 +140,32 @@ Tällöin jos suoritat ennusteajoituksen 1. tammikuuta, kysynnän ennustetarpeit
 
 #### <a name="transactions--reduction-key"></a>Tapahtumat - vähennysavain
 
-Jos määrität **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentän arvoksi *Tapahtumat – vähennysavain*, ennustevaatimuksista vähennetään kelvollisilla kysyntätapahtumilla, jotka esiintyvät vähennysavaimen määrittäminä ajanjaksoina.
-
-Kelvollinen kysyntä määritetään **Kattavuusryhmät**-sivun **Ennusteen vähennysperuste** -kentän avulla. Jos **Ennusteen vähennysperuste** -kentän arvoksi määritetään *Tilaukset*, vain tilaustapahtumat katsotaan kelvolliseksi kysynnäksi. Jos sen arvoksi määritetään *Kaikki tapahtumat*, kaikki muut kuin konsernin sisäiset varastonsiirrot katsotaan kelvolliseksi kysynnäksi. Jos myös konsernin sisäiset myynnit katsotaan kelvolliseksi kysynnäksi, **Sisällytä konsernin sisäiset tilaukset** -asetuksen arvoksi *Kyllä*.
-
-Ennusteen vähennys alkaa vähennysavaimen jakson ensimmäisestä (aikaisimmasta) kysynnän ennustetietueesta. Jos kelvollisten varastotapahtumien määrä ylittää kysynnän ennusterivien määrän samalla vähennysavainjaksolla, varastotapahtumien määrän saldo vähennetään edellisen jakson kysynnän ennustemäärästä (jos käyttämätöntä ennustetta on jäljellä).
-
-Jos edelliseltä vähennysavaimen jaksolta ei ole jäljellä käyttämätöntä ennustetta, varastotapahtumien määrän saldo vähennetään seuraavan kuukauden ennustemäärästä (jos käyttämätöntä ennustetta on).
-
-Vähennysavainrivien **Prosenttiosuus**-kentän arvoa ei käytetä, kun **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentän asetuksena on *Tapahtumat – vähennysavain*. Vain päivämääriä käytetään vähennysavainjakson määrittämiseen.
-
-> [!NOTE]
-> Kulloisenakin päivämääränä tai sitä ennen kirjattuja ennusteita ei oteta huomioon eikä käytetä suunniteltujen tilausten luomiseen. Jos esimerkiksi kuukauden kysynnän ennuste on luotu 1. tammikuuta ja suoritat pääsuunnittelun, johon kuuluu kysynnän ennuste 2. tammikuuta, laskennassa ei oteta huomioon kysyntäennusteriviä, jonka päivämääränä on 1. tammikuuta.
+Jos valitset **Tapahtumat - vähennysavain**: ennusteen tarpeita vähennetään vähennysavaimen määrittämien kausien aikaisten tapahtumien mukaan.
 
 ##### <a name="example-transactions--reduction-key"></a>Esimerkki: Tapahtumat - vähennysavain
 
 Tämä esimerkki osoittaa, miten vähennysavaimen määrittelemillä jaksoilla toteutuvat tilaukset pienentävät kysynnän ennustetarpeita.
 
-[![Toteutuneet tilaukset ja ennuste ennen pääsuunnittelun suorittamista.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
+Tässä esimerkissä valitset **Pääsuunnitelmat** -sivun **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Tapahtumat - vähennysavain**.
 
-Tässä esimerkissä valitset *Pääsuunnitelmat* -sivun **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Tapahtumat - vähennysavain**.
+1. tammikuuta mennessä on tehty seuraavat myyntitilaukset.
 
-Seuraavat kysyntäennusterivit ovat olemassa 1. huhtikuuta.
+| Kuukausi    | Tilattu kappalemäärä |
+|----------|--------------------------|
+| Tammikuu  | 956                      |
+| Helmikuu | 1 176                    |
+| Maaliskuu    | 451                      |
+| Huhtikuu    | 119                      |
 
-| Päivämäärä     | Ennustettu kappalemäärä |
-|----------|-----------------------------|
-| Huhtikuun 5.  | 100                         |
-| Huhtikuun 12. | 100                         |
-| Huhtikuun 19. | 100                         |
-| Huhtikuun 26. | 100                         |
-| Toukokuun 3.    | 100                         |
-| Toukokuun 10.   | 100                         |
-| Toukokuun 17.   | 100                         |
+Jos käytät edellisen esimerkin kanssa samaa 1 000 kappaleen kysyntäennustetta kuukaudessa, pääsuunnitelmaan siirretään seuraavat tarvemäärät.
 
-Seuraavat myyntitilausrivit ovat olemassa huhtikuun osalta.
-
-| Päivämäärä     | Tarvittava kappalemäärä |
-|----------|----------------------------|
-| Huhtikuun 27. | 240                        |
-
-[![Suunniteltu huhtikuun tilausten perusteella muodostettu tarjonta.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
-
-Seuraavat tarvemäärät siirretään pääsuunnitelmaan, kun pääsuunnittelu suoritetaan 1. huhtikuuta. Kuten näkyy, huhtikuun ennustetapahtumia vähennettiin kysyntämäärällä 240 sarjassa, joka alkaa ensimmäisestä näistä tapahtumista.
-
-| Päivämäärä     | Kappaletarve |
-|----------|---------------------------|
-| Huhtikuun 5.  | 0                         |
-| Huhtikuun 12. | 0                         |
-| Huhtikuun 19. | 60                        |
-| Huhtikuun 26. | 100                       |
-| Huhtikuun 27. | 240                       |
-| Toukokuun 3.    | 100                       |
-| Toukokuun 10.   | 100                       |
-| Toukokuun 17.   | 100                       |
-
-Oletetaan nyt, että toukokuulle on tuotu uusia tilauksia.
-
-Seuraavat myyntitilausrivit ovat olemassa toukokuun osalta.
-
-| Päivämäärä   | Tarvittava kappalemäärä |
-|--------|----------------------------|
-| Toukokuun 4.  | 80                         |
-| Toukokuun 11. | 130                        |
-
-[![Suunniteltu huhtikuun ja toukokuun tilausten perusteella muodostettu tarjonta.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
-
-Seuraavat tarvemäärät siirretään pääsuunnitelmaan, kun pääsuunnittelu suoritetaan 1. huhtikuuta. Kuten näkyy, huhtikuun ennustetapahtumia vähennettiin kysyntämäärällä 240 sarjassa, joka alkaa ensimmäisestä näistä tapahtumista. Toukokuun ennustetapahtumien määrää kuitenkin vähennettiin yhteensä 210:llä alkaen toukokuun ensimmäisestä kysyntäennustetapahtumasta. Jaksokohtainen kokonaissumma kuitenkin säilytetään (400 huhtikuussa ja 300 toukokuussa).
-
-| Päivämäärä     | Kappaletarve |
-|----------|---------------------------|
-| Huhtikuun 5.  | 0                         |
-| Huhtikuun 12. | 0                         |
-| Huhtikuun 19. | 60                        |
-| Huhtikuun 26. | 100                       |
-| Huhtikuun 27. | 240                       |
-| Toukokuun 3.    | 0                         |
-| Toukokuun 4.    | 80                        |
-| Toukokuun 10.   | 0                         |
-| Toukokuun 11.   | 130                       |
-| Toukokuun 17.   | 90                        |
+| Kuukausi                | Kappaletarve |
+|----------------------|---------------------------|
+| Tammikuu              | 44                        |
+| Helmikuu             | 0                         |
+| Maaliskuu                | 549                       |
+| Huhtikuu                | 881                       |
+| Touko–joulukuu | 1 000                     |
 
 #### <a name="transactions--dynamic-period"></a>Tapahtumat - dynaaminen kausi
 
@@ -300,7 +250,7 @@ Siksi luodaan seuraavat suunnitellut tilaukset.
 Ennusteen vähennysavainta käytetään **Tapahtumat - vähennysavain**- ja **Prosentti - vähennysavain** -menetelmissä ennusteen tarpeiden vähentämiseen. Näiden ohjeiden avulla voit luoda ja määrittää vähennysavaimen.
 
 1. Siirry kohtaan **Pääsuunnittelu \> Määritys \> Kattavuus \> Vähennysavaimet**.
-2. Luo vähennysavain valitsemalla **Uusi**.
+2. Valitse **Uusi** tai paina **Ctrl + N** luodaksesi vähennysavaimen.
 3. Syötä **Vähennysavain**-kenttään ennusteen vähennysavaimen yksilöivä tunnus. Syötä **Nimi**-kenttään nimi. 
 4. Määritä kaudet sekä kunkin kauden vähennysavaimen prosentti:
 
@@ -316,78 +266,11 @@ Ennusteen vähennysavain on määritettävä nimikkeen kattavuusryhmään. Mää
 2. Valitse **Muut**-pikavälilehden **Vähennysavain**-kentässä kattavuusryhmään määritettävä vähennysavain. Vähennysavaimen sitten kohdistetaan kaikkiin nimikkeisiin, jotka kuuluvat kyseiseen kattavuusryhmään.
 3. Voit käyttää vähennysavainta laskemaan ennusteen vähennykset pääajoituksen aikana määrittämällä tämän asetuksen pääsuunnitelman tai ennustesuunnitelman asetuksissa. Valitse jokin seuraavista sijainneista:
 
-    - **Pääsuunnittelu \> Määritys \> Suunnitelmat \> Ennustesuunnitelmat**
-    - **Pääsuunnittelu \> Määritys \> Suunnitelmat \> Pääsuunnitelmat**
+    - Pääsuunnittelu \> Määritys \> Suunnitelmat \> Ennustesuunnitelmat
+    - Pääsuunnittelu \> Asetukset \> Suunnitelmat \> Pääsuunnitelmat
 
 4. Kun olet **Ennustesuunnitelmat** tai **Pääsuunnitelmat**-sivulla, valitse edelleen **Yleiset**-pikavälilehden **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentässä **Prosentti - vähennysavain** tai **Tapahtumat - vähennysavain**.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Vähennä ennustetta tapahtumien mukaan
 
 Kun valitset **Tapahtumat - vähennysavain** tai **Tapahtumat - dynaaminen kausi** ennustetarpeita vähennystapana, voit määrittää, mitkä tapahtumat vähentävät ennustetta. Valitse **Kattavuusryhmät** -sivun **Muut**-pikavälilehden **Vähennä ennustetta seuraavasti** -kentässä **Kaikki tapahtumat**, jossa kaikkien tapahtumien tulisi vähentää ennustetta, tai **Tilaukset**, jos vain myyntitilausten tulisi vähentää ennustetta.
-
-## <a name="forecast-models-and-submodels"></a>Ennustemallit ja osamallit
-
-Tässä osiossa kuvataan, kuinka voit luoda ennustemalleja ja yhdistää useita ennustemalleja yhdistetään määrittämällä osamalleja.
-
-*Ennustemalli* nimeää ja yksilöi tietyn ennusteen. Kun olet luonut ennustemallin, voit lisätä siihen ennusterivejä. Jos haluat lisätä ennusterivejä useille nimikkeille, käytä **Kysynnän ennusteen rivit** -sivua. Jos haluat lisätä ennusterivejä tietylle valitulle nimikkeelle, käytä **Vapautetut tuotteet** -sivua.
-
-Ennustemalli voi sisältää ennusteita muista ennustemalleista. Voit tehdä näin lisäämällä muita ennustemalleja pääennustemallin *osamalleiksi*. Sinun täytyy luoda malli ennen kuin voit lisätä sen pääennustemallin osamalliksi.
-
-Tuloksena oleva rakenne tarjoaa sinulle tehokkaan tavan hallita ennusteita, koska sen avulla voit yhdistää (koostaa) useiden yksittäisten ennusteiden syötteet toisiinsa. Näin ollen ennusteiden yhdistäminen simulaatioita varten on helppoa suunnittelun näkökulmasta. Voit esimerkiksi luoda simulaation, joka perustuu tavallisen ennusteen ja kevätkampanjan ennusteen yhdistelmään.
-
-### <a name="submodel-levels"></a>Osamallien tasot
-
-Pääennustemalliin lisättävien osamallien määrää ei ole rajoitettu. Rakenne voi kuitenkin olla vain yhden tason syvä. Toisin sanoen ennustemallilla, joka on toisen ennustemallin osamalli, ei voi olla omia osamalleja. Kun lisäät ennustemalliin osamalleja, järjestelmä tarkastaa, onko ennustemalli jo toisen ennustemallin osamalli.
-
-Jos pääsuunnittelu kohtaa osamallin, jolla on omia osamalleja, näkyviin tulee virhesanoma.
-
-#### <a name="submodel-levels-example"></a>Esimerkki osamallien tasoista
-
-Ennustemallilla A on osamallina ennustemalli B. Näin ollen ennustemallilla B ei voi olla omia osamallejaan. Jos yrität lisätä osamallia ennustemalliin B, näet tämän virhesanoman: "Ennustemalli B on mallin A osamalli”.
-
-### <a name="aggregating-forecasts-across-forecast-models"></a>Ennusteiden koostaminen yhteen eri ennustemalleista
-
-Samana päivänä tapahtuvat ennusterivit yhdistetään niiden ennustemallista ja sen osamalleista.
-
-#### <a name="aggregation-example"></a>Esimerkki koostamisesta
-
-Ennustemallilla A on osamalleina ennustemallit B ja C.
-
-- Ennustemalli A sisältää kysynnän ennusteen 2 kappaleelle (kpl) 15. kesäkuuta.
-- Ennustemalli B sisältää kysynnän ennusteen 3 kappaleelle 15. kesäkuuta.
-- Ennustemalli C sisältää kysynnän ennusteen 4 kappaleelle 15. kesäkuuta.
-
-Tuloksena syntyvä kysynnän ennuste on yksi 9 kpl (2+3+4) kysyntä 15. kesäkuuta.
-
-> [!NOTE]
-> Jokainen osamalli käyttää omia parametrejään, ei pääennustemallin parametrejä.
-
-### <a name="create-a-forecast-model"></a>Ennustemallin luominen
-
-Voit luoda ennustemallin noudattamalla seuraavia ohjeita.
-
-1. Avaa **Pääsuunnittelu \> Määritys \> Kysynnän ennuste \> Ennustemallit**.
-1. Valitse toimintoruudussa **Uusi**.
-1. Määritä uudelle ennustemallille seuraavat kentät:
-
-    - **Malli** – Syötä mallille yksilöivä tunnus.
-    - **Nimi** – Anna mallille kuvaava nimi.
-    - **Pysäytetty** – Tavallisesti sinun tulisi valita täksi vaihtoehdoksi *Ei*. Valitse *Kyllä* vain, jos haluat estää kaikkien malliin kohdistettujen ennusterivien muokaamisen.
-
-    > [!NOTE]
-    > **Sisällytä kassavirtaennusteisiin** -kenttä ja **Projekti**-pikavälilehden kentät eivät liity pääsuunnitteluun. Sinun ei tarvitse siis huomioida niitä tässä asiayhteydessä. Sinun täytyy ottaa ne huomioon vain, kun käytät **Projektinhallinta ja kirjanpito** -moduulin ennusteita.
-
-### <a name="assign-submodels-to-a-forecast-model"></a>Osamallien kohdistaminen ennustemalliin
-
-Kohdista ennustemalliin osamalleja noudattamalla seuraavia ohjeita.
-
-1. Valitse **Varastonhallinta \> Määritys \> Ennuste \> Ennustemallit**.
-1. Valitse luetteloruudusta ennustemalli, jolle haluat määrittää osamallin.
-1. Valitse **Osamalli**-pikavälilehdestä **Lisää** lisätäksesi ruudukkoon uuden rivin.
-1. Määritä uudella rivillä seuraavat kentät:
-
-    - **Osamalli** – Valitse ennustemalli, joka lisätään osamalliksi. Tämän ennustemallin täytyy olla jo olemassa, eikä sillä saa olla omia osamalleja.
-    - **Nimi** – Anna osamallille kuvaava nimi. Tämä nimi voi esimerkiksi osoittaa osamallin suhteen pääennustemalliin.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

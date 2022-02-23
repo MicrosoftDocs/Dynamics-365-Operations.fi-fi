@@ -1,35 +1,33 @@
 ---
 title: Luo etusuunnitelma
-description: Tässä aiheessa käsitellään etuussuunnitelmien määrittämistä Dynamics 365 Human Resourcesissa.
-author: twheeloc
-ms.date: 08/23/2021
+description: Etuussuunnitelmine määrittäminen Dynamics 365 Human Resourcesissa.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d3163bf30af9ed0eac2c753ed4aabb15d568ff4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: bcbf4c1a7f136e5563bf1210b6c09228dad95dea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065323"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418282"
 ---
-# <a name="create-a-benefit-plan"></a>Etuussuunnitelmien luominen
+# <a name="create-a-benefits-plan"></a>Luo etusuunnitelma
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Tässä aiheessa käsitellään etuussuunnitelmien määrittämistä Dynamics 365 Human Resourcesissa.
+Tässä artikkelissa kerrotaan, miten etuussuunnitelmia määritetään Dynamics 365 Human Resourcesissa.
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
@@ -46,8 +44,9 @@ Tässä aiheessa käsitellään etuussuunnitelmien määrittämistä Dynamics 36
    | **Ohjelma** | Määrittää ohjelman, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
    | **Nippu** | Määrittää nipun, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
    | **Päärahtikirja** | Määrittää, onko suunnitelma pääsuunnitelma, johon on liitetty nippu. |
+   | **Tila** | Määrittää etuussuunnitelman kulloisenkin tilan. Oletusarvo on Aktiivinen. Jos muutat tilaksi passiivinen, suunnitelma ei ole valittavissa rekisteröinnin yhteydessä. |
    | **Voimaantulopäivämäärä ja -aika** | Suunnitelman alkamispäivä ja -aika. Oletusarvo on nykyinen järjestelmän päivämäärä. |
-   | **Voimassaolon päättymispäivämäärä ja -aika** | Suunnitelman päättymispäivä ja -aika. Oletusarvona on 12/31/2154, joka tarkoittaa ei koskaan. |
+   | **Voimassaolon päättymispäivämäärä ja -aika** | Suunnitelman päättymispäivä ja -aika (kun tilaksi asetetaan passiivinen). Oletusarvona on 12/31/2154, joka tarkoittaa ei koskaan. |
 
 4. Määritä **Määritys**-välilehdessä seuraavien kenttien arvot luotavan suunnitelman tyypin mukaan:
 
@@ -55,18 +54,18 @@ Tässä aiheessa käsitellään etuussuunnitelmien määrittämistä Dynamics 36
    | --- | --- | --- |
    | Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO) | COBRA | Määrittää, onko suunnitelma COBRA-oikeutettu (Consolidated Omnibus Budget Reconciliation Act) oikeutettu. |
    | Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO) | HIPAA | Määrittää, onko suunnitelma HIPAA-oikeutettu (Health Insurance Portability and Accountability Act). |
-   | Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO)<br><br>Muu (PTO, kunto)<br><br>Muu<br><br>Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki)<br><br>Säästö (esimerkiksi 401(k))<br><br>FSA | Ennen veroja, sallittu | Määrittää, voiko suunnitelmaan tehdä maksuja ennen verojen soveltamista. |
-   | Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO)<br><br>Muu (PTO, kunto)<br><br>Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki)<br><br>Säästö (esimerkiksi 401(k))<br><br>FSA | Verojen jälkeen, sallittu | Määrittää, voiko suunnitelmaan tehdä maksuja verojen soveltamisen jälkeen. |
-   | Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO)<br><br>Muu (PTO, kunto)<br><br>Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki)<br><br>Säästö (esimerkiksi 401(k))<br><br>FSA | Osallistuja | Määrittää, kuka tekee maksuja suunnitelmaan – työntekijään, työnantaja vai molemmat. |
-   | Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki) | Vähimmäiskattavuus | Suunnitelman vaatima vakuutuksen vähimmäiskattavuus. |
-   | Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki) | Enimmäiskattavuus | Suunnitelman vaatima vakuutuksen enimmäiskattavuus. |
-   | Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki) | Käytä kattavuuden lisäyksiä | Määrittää, vahvistetaanko, että kattavuus vastaa kelvollista lisämäärää. |
-   | Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki) | Lisäävä summa | Suunnitelman vakuutuskattavuuden lisämäärä. Jos lisämäärä esimerkiksi on 1 000, työntekijällä ei voi olla vakuutusta 200 500 dollarin edestä, vaan summa on pyöristettävä arvoon 201 000 tai 200 000. |
-   | Pitkäaikainen vamma<br><br>ADD (perushenki, vapaaehtoinen henki) | Lisäävä suunta | Määrittää pyöristyksen suunnan joko ylös- tai alaspäin, kun kattavuussumma ei täytä lisäyssumman arvoa. |
+   | <ul><li>Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO)</li><li>Muu (PTO, kunto)</li><li>Muu</li><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li><li>Säästö (esimerkiksi 401(k))</li><li>FSA</li></ul> | Ennen veroja, sallittu | Määrittää, voiko suunnitelmaan tehdä maksuja ennen verojen soveltamista. |
+   | <ul><li>Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO)</li><li>Muu (PTO, kunto)</li><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li><li>Säästö (esimerkiksi 401(k))</li><li>FSA</li></ul> | Verojen jälkeen, sallittu | Määrittää, voiko suunnitelmaan tehdä maksuja verojen soveltamisen jälkeen. |
+   | <ul><li>Terveydenhuolto (terveydenhuolto, hammashoito, näkö, HMO)</li><li>Muu (PTO, kunto)</li><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li><li>Säästö (esimerkiksi 401(k))</li><li>FSA</li></ul> | Osallistuja | Määrittää, kuka tekee maksuja suunnitelmaan – työntekijään, työnantaja vai molemmat. |
+   | <ul><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li></ul> | Vähimmäiskattavuus | Suunnitelman vaatima vakuutuksen vähimmäiskattavuus. |
+   | <ul><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li></ul> | Enimmäiskattavuus | Suunnitelman vaatima vakuutuksen enimmäiskattavuus. |
+   | <ul><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li></ul> | Käytä kattavuuden lisäyksiä | Määrittää, vahvistetaanko, että kattavuus vastaa kelvollista lisämäärää. |
+   | <ul><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li></ul> | Lisäävä summa | Suunnitelman vakuutuskattavuuden lisämäärä. Jos lisämäärä esimerkiksi on 1 000, työntekijällä ei voi olla vakuutusta 200 500 dollarin edestä, vaan summa on pyöristettävä arvoon 201 000 tai 200 000. |
+   | <ul><li>Pitkäaikainen vamma</li><li>ADD (perushenki, vapaaehtoinen henki)</li></ul> | Lisäävä suunta | Määrittää pyöristyksen suunnan joko ylös- tai alaspäin, kun kattavuussumma ei täytä lisäyssumman arvoa. |
    | ADD (perushenki, vapaaehtoinen henki) | Todiste vakuutuskelpoisuudesta | Määrittää, onko työntekijän todistettava vakuutettavuutensa. |
    | ADD (perushenki, vapaaehtoinen henki) | Määrä | Summa kirjanpitovaluuttana. Tämä kenttä on aktiivinen vain, jos Todisteet vakuutettavuudesta -valintaruutu on valittuna. |
-   | Säästö (esimerkiksi 401(k))<br><br>FSA | Vuosittainen vähimmäisosuus | Suunnitelman vaatima vähimmäismaksu. |
-   | Säästö (esimerkiksi 401(k))<br><br>FSA | Vuosittainen enimmäisosuus | Suunnitelman vaatima enimmäismaksu. |
+   | <ul><li>Säästö (esimerkiksi 401(k))</li><li>FSA</li></ul> | Vuosittainen vähimmäisosuus | Suunnitelman vaatima vähimmäismaksu. |
+   | <ul><li>Säästö (esimerkiksi 401(k))</li><li>FSA</li></ul> | Vuosittainen enimmäisosuus | Suunnitelman vaatima enimmäismaksu. |
    | Säästö (esimerkiksi 401(k)) | Työnantajan vuosittainen enimmäissumma | Enimmäissumma, jonka työntekijä voi maksaa työntekijän säästösuunnitelmaa varten etuusjakson aikana. Tämän kentän käyttö edellyttää Työnantajan vastaus -valintaruudun valitsemista. |
    | Säästö (esimerkiksi 401(k)) | Työnantajan vastaavuus | Määrittää, osallistuuko työnantaja työntekijän säästösuunnitelmaan. |
    | Säästö (esimerkiksi 401(k)) | Työnantajan vastaavuusprosentti | Prosenttiosuus työntekijän maksumäärästä, jonka myös työnantaja maksaa. |
@@ -121,7 +120,7 @@ Voit tarkastella työntekijöitä, jotka ovat rekisteröityneet valittuun etuuss
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
-2. Valitse siirtymispalkin **Edut**-välilehdessä **Rekisteröidyt työntekijät**.
+2. Valitse **Rekisteröityneet työntekijät**.
 
 ## <a name="attach-coverage-options"></a>Liitä kattavuusvaihtoehdot
 
@@ -129,7 +128,7 @@ Voit lisätä valittuun etuussuunnitelmaan kattavuusasetuksia. Kattavuusasetuste
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
-2. Valitse siirtymispalkin **Edut**-välilehdessä **Liitä kattavuusvaihtoehdot**.
+2. Valitse **Liitä kattavuusvaihtoehdot**.
 
 ## <a name="override-eligibility-rules"></a>Kelpoisuussääntöjen ohitus
 
@@ -137,7 +136,7 @@ Voit lisätä työntekijöitä suunnitelmaan kelpoisuussääntöjen poikkeuksina
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
-2. Valitse siirtymispalkin **Edut**-välilehdessä **Kelpoisuussääntöjen ohitus**.
+2. Valitse **Kelpoisuussääntöjen ohitus**.
 
 ## <a name="view-attached-periods"></a>Liitettyjen jaksojen tarkastelu
 
@@ -145,21 +144,18 @@ Voit nähdä luettelon käytettävissä olevista etuisuusjaksoista.
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
-2. Valitse sivunavigointipalkista **Kaudet**-välilehti.
+2. Valitse **Jaksot**.
 
-## <a name="view-plan-description"></a>Näytä suunnitelman kuvaus
+## <a name="view-plan-information"></a>Näytä suunnitelman tiedot
 
-Voit antaa kuvauksen suunnitelmasta auttaaksesi työntekijöitä etuusvalinnoissaan. Tässä antamasi suunnitelman kuvaus näkyy työntekijän itsepalvelussa, kun suunnitelmaa osoitetaan kattavuusvaihtoehtoluettelossa.
+Voit antaa kuvauksen suunnitelmasta auttaaksesi työntekijöitä etuusvalinnoissaan. Tässä antamasi suunnitelmatiedot näkyvät työntekijän itsepalvelussa, kun suunnitelmaa osoitetaan kattavuusvaihtoehtoluettelossa.
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
-2. Valitse siirtymispalkin **Edut**-välilehdessä **Suunnitelman kuvaus**.
+2. Valitse **Suunnitelman tiedot**.
 
 ## <a name="view-flex-credit-programs"></a>Näytä bonushyvitysohjelmat
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 
-2. Valitse siirtymispalkin **Edut**-välilehdessä **Bonushyvitysohjelmat**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+2. Valitse **Joustoluotto-ohjelmat**.

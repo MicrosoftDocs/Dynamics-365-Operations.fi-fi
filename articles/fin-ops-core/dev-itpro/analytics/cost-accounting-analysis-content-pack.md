@@ -1,10 +1,12 @@
 ---
 title: Kustannuslaskenta-analyysin Power BI -sisältö
-description: Tässä aiheessa kuvataan, mitä kuuluu kustannuslaskennan analyysin Power BI -sisältöön.
+description: Tässä aiheessa kuvataan, mitä kuuluu kustannuslaskennan analyysin Power BI -sisältöön. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 author: AndersGirke
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747366"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683868"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskenta-analyysin Power BI -sisältö
 
@@ -40,7 +42,7 @@ Katso lisätietoja kustannuslaskennasta ohjeaiheesta [Kustannuslaskennan aloitus
 Määrittämällä käyttäjätason suojauksen kustannuslaskentaan ja yhdistämällä sen rivitason suojaukseen Power BI:ssä, voit myöntää kaikille kustannusobjektien omistajille pääsyn **kustannuslaskennan analyysin** Power BI -sisältöön. Kaikki visualisoinnin data sitten suodatetaan sen käyttöoikeustason perusteella, jota ohjataan kustannuslaskennassa. Lisätietoja käyttöoikeustason suojauksesta ja rivitason suojauksesta on kohdassa [Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
-Löydät **kustannuslaskennan analyysin** Power BI -sisällön Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Löydät **kustannuslaskennan analyysin** Power BI -sisällön Microsoft Dynamics Lifecycle Services (LCS):n jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 Muista ladata käyttämääsi Microsoft Dynamics 365 -versiota vastaava **Kustannuslaskenta-analyysi** -sisältö.
 
@@ -121,6 +123,3 @@ Suodattimina käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemi
 | Kirjanpidon kalenterit                   | Kalenteri, kalenterin kuvaus                                                                                       |
 | Tilikaudet                       | Kalenterivuosi                                                                                                        |
 | Tilikaudet                     | Kalenterivuoden kausi                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

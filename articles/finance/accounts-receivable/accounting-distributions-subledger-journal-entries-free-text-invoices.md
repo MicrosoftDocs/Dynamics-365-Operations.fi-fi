@@ -1,34 +1,38 @@
 ---
-title: Tekstimuotoisten laskujen kirjanpidolliset jaot ja kirjauskansioviennit
+title: Vapaatekstilaskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
 description: Kirjanpidollisia jakoja käytetään määritettäessä summan käsittely, kuten esimerkiksi se, miten tuottoa, veroa tai maksua käsitellään vapaatekstilaskussa. Jokaisella määrällä, joka on huomioitava vapaatekstilaskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da1d1b41c4da1fafcf20246022c4020b60152917f5df85f8e003e23aaef9433c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 515d0a9c35507fad04b776e1f0b6225ac5a162d3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728934"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442617"
 ---
-# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran viennit
+# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Vapaatekstilaskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
 
 [!include [banner](../includes/banner.md)]
 
 Kirjanpidollisia jakoja käytetään määritettäessä summan käsittely, kuten esimerkiksi se, miten tuottoa, veroa tai maksua käsitellään vapaatekstilaskussa. Jokaisella määrällä, joka on huomioitava vapaatekstilaskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako.
 
-## <a name="accounting-distributions"></a>Kirjanpidolliset jaot
+<a name="accounting-distributions"></a>Kirjanpidolliset jaot
+------------------------
 
 Seuraavilla Vapaatekstilasku-sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin vapaatekstilaskun summalle.
 
@@ -132,6 +136,3 @@ Ennen kuin kirjaat vapaatekstilaskun, voit tarkastella laskun koko kirjanpitokir
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

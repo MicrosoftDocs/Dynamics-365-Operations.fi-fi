@@ -1,13 +1,16 @@
 ---
 title: Haitarimoduuli
-description: Tässä ohjeaiheessa on tietoja haitarivalikkomoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+description: Tässä ohjeaiheessa on tietoja haitarimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fa2515a0cbc5b69a1a69e15ec9e1ba2739fa2fbeffb5b0eb22b49fd8cab18e6f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2bb18539f610e5af05f8d9a20a0ba9f34db5c94f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411889"
 ---
-# <a name="accordion-module"></a>Haitarivalikkomoduuli
+# <a name="accordion-module"></a>Haitarimoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja haitarivalikkomoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+Tässä ohjeaiheessa on tietoja haitarimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+
+## <a name="overview"></a>Yleiskuvaus
 
 Haitarimoduulit ovat konttimoduulin kaltaisia ja niitä käytetään tietojen tai moduulien järjestämiseen sivulla tarjoamalla tiivistettävän laatikon kaltaisen ominaisuuden. Haitarimoduulia voidaan käyttää millä tahansa sivulla.
 
@@ -34,7 +39,7 @@ Jokaisen haitarimoduulin sisällä voidaan lisätä yksi tai useampia haitarinim
 
 Seuraavassa kuvassa on esimerkki haitarimoduulista, jota käytetään myymälän usein kysyttyjen kysymysten (FAQ) tietojen järjestämiseen.
 
-![Esimerkki haitarimoduulista.](./media/ecommerce-accordion.PNG)
+![Esimerkki haitarimoduulista](./media/ecommerce-accordion.PNG)
 
 ## <a name="accordion-module-properties"></a>Haitarimoduulin ominaisuudet
 
@@ -82,6 +87,3 @@ Voit lisätä haitarimoduulin Usein kysyttyjä kysymyksiä -sivulle ja määritt
 [Välilehtimoduuli](add-tab.md)
 
 [Tekstilohkomoduuli](add-content-rich-block.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

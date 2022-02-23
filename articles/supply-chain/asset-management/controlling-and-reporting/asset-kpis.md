@@ -1,10 +1,12 @@
 ---
 title: Resurssien suorituskykyilmaisimet
 description: Tässä ohjeaiheessa kerrotaan resurssien tunnusluvuista resurssien hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectKPI
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bdc60d993a784ffc123d36b5e51cbd6028316f18a2dee6f4ee134a93ffc024e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f75db96926e72bab80d0a65ce6f0ab3a92590699
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778745"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021777"
 ---
 # <a name="asset-kpis"></a>Resurssien suorituskykyilmaisimet
 
@@ -82,11 +84,8 @@ Alla olevassa taulukossa on kuvaus **Resurssien suorituskykyilmaisimet** -sivun 
 
 Alla olevassa kuvassa näkyy kuvakaappaus neljän käyttöomaisuuden KPI-laskennasta.
 
-![Näyttökuva neljän käyttöominaisuuden KPI-laskennasta.](media/11-controlling-and-reporting.png)
+![Näyttökuva neljän resurssi KPI-laskennasta](media/11-controlling-and-reporting.png)
 
 - Voit valita useita käyttöomaisuuseriä kohdassa **Kaikki resurssit** napsauttamalla **Resurssien suorituskykyilmaisimet** -painiketta **Yleiset**-välilehdessä. Valitse sitten **OK** **Laske resurssien suorituskykyilmaisimet** -valintaikkunassa laskeaksesi valittujen resurssien suorituskykyilmaisimet.  
 - KPI-laskennasta saadut tulokset eivät välttämättä sisällä [kunnossapitoseisokkeja koskevia rekisteröintejä](../work-orders/maintenance-downtime.md), jotka määräytyvät huoltoseisokkien syykoodien asetusten ja käytön mukaan. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

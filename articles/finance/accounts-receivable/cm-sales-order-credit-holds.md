@@ -1,27 +1,29 @@
 ---
 title: Myyntitilausten luottojen pidot
 description: Tässä ohjeaiheessa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon.
-author: JodiChristiansen
-ms.date: 07/20/2021
+author: mikefalkner
+manager: AnnBe
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723964"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442641"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Myyntitilausten luottojen pidot
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon. Luotonhallinnan estosäännöt voidaan ottaa käyttöön yhden asiakkaan tai asiakasryhmän osalta. Estosäännöt määrittävät, mihin seuraaviin tilanteisiin vastataan.
 
@@ -42,11 +44,6 @@ Lisäksi on käytössä on kaksi parametria, joilla hallitaan myyntitilauksen es
 
 Kun asiakas aloittaa myyntitapahtuman, myyntitilauksen tietoja verrataan estosääntöjoukkoon, jonka avulla päätetään, myönnetäänkö asiakkaalle luottoa vai ei, ja joka sallii myynnin siirtymisen eteenpäin. Voit määrittää myös poikkeuksia, jotka ohittavat estosäännöt ja sallivat myyntitilauksen käsittelyn. Esto- ja poikkeussäännöt määritetään valitsemalla **Luotonhallinta > Asetukset > Luotonhallinnan asetukset > Estosäännöt**-sivu.
 
-Versiosta 10.0.21 alkaen luotonhallinnan estosäännöt on järjestelty joustavuuden parantamisesti uudelleen seuraavasti:
-
-- Laajennettavuuspyynnöt on otettu käyttöön, joten omien estosääntöjen luonti on mahdollista.
-- **Vapauta myyntitilaus** -valintaruutu on nyt käytettävissä kaikissa estosäännöissä. Aiemmin se oli käytettävissä vain myyntitilauksen estosäännössä. Kun tämä valintaruutu on valittu, poikkeussääntö vapauttaa myyntitilauksen ottamatta huomioon mitään muuta sääntöä, joka voi estää myyntitilauksia. Tämä valintaruutu on käytettävissä vain **Poikkeus**-sääntötyypissä.
-
 ### <a name="days-overdue"></a>Erääntymispäivät
 
 Avaa **Erääntymispäivät**-välilehti, jos estosääntö otetaan käyttöön asiakkaalla, jolla vähintään yksi lasku on erääntynyt tiettyjen päivien ajan.
@@ -63,7 +60,7 @@ Avaa **Erääntymispäivät**-välilehti, jos estosääntö otetaan käyttöön 
 5. Valitse **Arvotyyppi**. Oletusarvo on kiinteä päivien lukumäärä. Jos olet luomassa poikkeusta, voit määrittää sen sijaan kiinteä päivien lukumäärän tai summan. 
 6. Anna **Erääntyneet**-arvoksi päivien lukumäärä, joka sallitaan valitussa estosäännössä, ennen kuin tilaus asetetaan luotonhallinnan pitoon arviointia varten. Erääntyneiden päivien lukumäärä ilmaisee päivinä ylimääräisen eräpäivän jälkeisen maksuajan, joka lisätään maksun eräpäivään ja joka aika laskulla on, ennen kuin sen katsotaan erääntyneen. Jos **Arvotyyppi** on määritetty poikkeuksessa summana, anna summa ja summan valuutta.
 
-### <a name="account-status"></a>Tilin tila
+### <a name="accounts-status"></a>Tilien tila
 
 Avaa **Tilien tila** -välilehti, jos estosääntöä koskee asiakasta, jolla on valittu tilin tila.
 1. Valitse määritettävän säännön tyyppi.  **Esto** luo tilauksen estävän säännön. **Poikkeus** luo säännön, joka ohittaa säännön tilauksen estossa. 
@@ -108,7 +105,7 @@ Avaa **Erääntynyt summa** -välilehti, jos estosääntö koskee asiakkaita, jo
    - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
    - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
 5. Anna valitun estosäännön **Erääntynyt summa** -arvo, jonka jälkeen tilaus asetetaan luotonhallinnan pitoon arviointia varten. 
-6. Valitse **Arvotyyppi**, jonka määrittämää arvon tyyppiä käytetään myös testaamaan sitä, kuinka paljon luottorajasta on käytetty. Esto- ja poikkeussäännöt sallivat vain prosentin käytön **Erääntynyt summa** -kohdassa. Raja liittyy luottorajaan.
+6. Valitse **Arvotyyppi**, jonka määrittämää arvon tyyppiä käytetään myös testaamaan sitä, kuinka paljon luottorajasta on käytetty. Prosenttiosuus on oltava estosäännöissä, mutta poisjätössä voi olla kiinteä summa tai prosenttiosuus Raja liittyy luottorajaan.
 7. Anna valitun säännön **Luottorajan raja-arvo**, jonka jälkeen asiakas asetetaan luotonhallinnan pitoon. Arvo voi olla summa tai prosenttiosuus sen mukaan, mikä arvotyyppi on valittu.
 8. Sääntö tarkistaa, että **Erääntynyt summa** ja **Luottorajan raja-arvo** on ylitetty. 
 
@@ -128,6 +125,8 @@ Valitse **Myyntitilaus**, jos estosääntö koskee myyntitilauksen arvoa.
    - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
    - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
 5. Anna valitun estosäännön **Myyntitilauksen summa** -arvo, jonka jälkeen tilaus asetetaan luotonhallinnan pitoon. 
+
+Myyntitilaussääntö sisältää kaikki muut säännöt ohittavan lisäasetuksen. Voit luoda poikkeuksen, joka vapauttaa myyntitilauksen ottamatta huomioon mitään muita sääntöjä, valitsemalla **Vapauta myyntitilaus** -valintaruudun poikkeusrivillä.
 
 ### <a name="credit-limit-used"></a>Käytetty luottoraja
 
@@ -266,6 +265,3 @@ Myyntitilauksia, joilla on pakotetun pidon syy, ei voi vapauttaa automaattisesti
 Luotonhallintaa voi käyttää tällä hetkellä vain myyntitilauksissa. Vapaatekstilaskut, myyntipistetilaukset ja puhelinkeskustilaukset käyttävät tilapäisiä luottorajoja sekä vakuuksia/takauksia, joita lisäämällä luottorajaa säädetään. Niissä ei käytetä estosääntöjä eikä niitä aseteta pitoluetteloon, jos luottorajassa ongelma.
 
 Luotonhallinta ei tue projektilaskuja.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

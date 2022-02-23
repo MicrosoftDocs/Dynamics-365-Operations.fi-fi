@@ -1,10 +1,12 @@
 ---
 title: ostoehdotuksen työnkulku
 description: Työnkulkuprosessi siirtää ostoehdotuksia tarkistusprosessissa eteenpäin alkuperäisestä Luonnos-tilasta lopulliseen Hyväksytty-tilaan. Kun hankintapyyntö lähetetään tarkastettavaksi, työnkulkuprosessi alkaa. Sen jälkeen kun hankintapyyntö on hyväksytty, ostotilaus voidaan kehittää hankintapyyntöriveille ja lähettää toimittajalle, jotta tilaus voidaan toteuttaa.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569454"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021977"
 ---
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
@@ -51,7 +53,7 @@ Seuraava esimerkki näyttää kuinka hankintapyyntö voi mennä työnkulun tarka
 -   **Hankintaedustaja** – käyttäjä, joka tekee hankintatarkistuksen ja voi hyväksyä asiakirjan.
 -   **Pyytäjän esimies** – käyttäjä, joka tekee johtotason tarkistuksen ja voi hyväksyä asiakirjan.
 
-![Ostoehdotustyönkulun tarkasteluprosessi.](./media/purchreqworkflowoverview_submission.gif)  
+![Ostoehdotustyönkulun tarkasteluprosessi](./media/purchreqworkflowoverview_submission.gif)  
 Tässä esimerkissä hankintapyyntöjen työnkulkuprosessi sisältää seuraavat vaiheet:
 
 1.  Valmistelija lähettää hankintapyynnön tarkistettavaksi.
@@ -74,7 +76,7 @@ Tässä esimerkissä, seuraavat roolit sisältyvät työnkulkuun:
 -   **Osaston esimies** – käyttäjä, joka tekee menojen tarkistuksen ja voi hyväksyä asiakirjan.
 -   **Ryhmän esimies** – käyttäjä, jolla on nimenkirjoitusoikeus tarkistuksessa ja joka voi hyväksyä asiakirjan.
 
-![Ostoehdotusrivin työnkulun tarkasteluprosessi.](./media/purchreqlineworkflowoverview.gif)  
+![Ostoehdotusrivin työnkulun tarkasteluprosessi](./media/purchreqlineworkflowoverview.gif)  
 Tässä esimerkissä hankintapyyntölinjojen työnkulkuprosessi sisältää seuraavat vaiheet:
 
 1.  Valmistelija lähettää hankintapyynnön tarkistettavaksi. Jokainen rivi reititetään tarkistajalle, joka on määrätty vastaanottajaksi työnkulkuprosessissa.
@@ -105,7 +107,8 @@ Voit määrittää menojen tarkistajat **Ostoehdotuksen kulujen tarkistajat** -s
 
 Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistajaa, määritä **Osallistujan tyyppi** -asetukseksi **Kulujen osallistujat** kyseisen työnkulun elementin **Toimeksianto**-ominaisuuksissa.
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
 [Luo kulutusehdotus](tasks/create-requisition-consumption.md)
 
@@ -117,6 +120,3 @@ Jos haluat käyttää jotakuta työnkulussa määrittämääsi menojen tarkistaj
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

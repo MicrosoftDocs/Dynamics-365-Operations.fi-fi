@@ -2,9 +2,11 @@
 title: Ajan kohdistaminen työnipun töihin
 description: Voit niputtaa töitä tuotannonohjauksessa. Tämän jälkeen voit käynnistää samanaikaisesti useita töitä luettelosivulta.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0236f9f39afc67cb5c8cedecee5278a6555d03deefb859fc134a4a4160285b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 382cf8d12d9695c80c3b13497886d20f29f3680c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766604"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966577"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Ajan kohdistaminen työnipun töihin
 
@@ -80,7 +82,7 @@ Seuraavassa taulukossa esitetään kaava, jolla kohdistettu aika lasketaan. Kaav
 ## <a name="net-time-allocation-key"></a>Nettoaika-kohdistusavain
 Seuraavassa taulukossa esitetään kaava, jolla kohdistettu aika lasketaan. Kaava on seuraava: Laskettu raporttikohtainen aika = nipun aika ÷ töiden määrä
 
-| Esimerkki                       | 09:00–10:00 (1 tunti) | 10:00–11:00 (1 tunti) | 11:00–13:00 (2 tuntia) | 13:00–15:00 (2 tuntia) | Kohdistettu aika |
+|                              | 09:00–10:00 (1 tunti) | 10:00–11:00 (1 tunti) | 11:00–13:00 (2 tuntia) | 13:00–15:00 (2 tuntia) | Kohdistettu aika |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | Nipun työmäärä | 1                    | 3                    | 2                     | 1                     | Ei käytettävissä |
 | Työ 1                        | 1 ÷ 1 = 1 tunti       | 1 ÷ 3 = 0.33 tuntia    | Ei käytettävissä        | Ei käytettävissä        | 1,33 tuntia     |
@@ -108,6 +110,3 @@ Korjattu tuntikohtainen kustannus ja työn aika kirjataan tuotantokirjauskansioo
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

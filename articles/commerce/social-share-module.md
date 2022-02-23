@@ -2,12 +2,15 @@
 title: Jako yhteisöpalveluissa -moduuli
 description: Tässä ohjeaiheessa on tietoja yhteisöpalveluissa jaon moduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730944"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4412101"
 ---
-# <a name="social-share-module"></a>Yhteisöpalvelujakamisen moduuli
+# <a name="social-share-module"></a>Jako yhteisöpalveluissa -moduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja yhteisöpalveluissa jaon moduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+
+## <a name="overview"></a>Yleiskuvaus
 
 Jako yhteisöpalveluissa -moduulien avulla käyttäjät voivat jakaa sähköisen kaupankäynnin sivuston sivujen URL-osoitteita yhteisöpalveluissa, kuten Facebookissa, Twitterissä, Pinterestissä ja LinkedInissä. Sivuston sivun URL-osoitteita voi jakaa myös sähköpostitse. Jako yhteisöpalveluissa -moduuleja käytetään yleisesti tuotetietosivuilla (PDP-sivuilla). Niiden avulla käyttäjät voivat jakaa tuotetietoja.
 
@@ -36,7 +41,7 @@ Kukin yhteisöpalvelun ympäristö voi seurata evästeitä. Tämä moduuli vaati
 
 Seuraavassa kuvassa on esimerkki tuotetietosivulla käytetystä Jako yhteisöpalveluissa -moduulista.
 
-![Esimerkki Jako yhteisöpalveluissa -moduulista.](./media/ecommerce-socialshare.png)
+![Esimerkki Jako yhteisöpalveluissa -moduulista](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Jako yhteisöpalveluissa -moduulin ominaisuudet
 
@@ -77,6 +82,3 @@ Jos haluat lisätä Jako yhteisöpalveluissa -moduulin ostoruutumoduuliin, tee s
 [Ostoruutumoduuli](add-buy-box.md)
 
 [Evästeen yhteensopivuus](cookie-compliance.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

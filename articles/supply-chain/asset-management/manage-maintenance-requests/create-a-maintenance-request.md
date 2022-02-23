@@ -1,10 +1,12 @@
 ---
 title: Luo ylläpitopyyntöjä
 description: Tässä ohjeaiheessa kerrotaan, kuinka ylläpitopyynnöt luodaan resurssien hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714977"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019175"
 ---
 # <a name="create-maintenance-requests"></a>Luo ylläpitopyyntöjä
 
@@ -52,7 +54,7 @@ Ylläpitopyyntöjä voidaan käyttää, jos huoltotyöntekijät tai tuotannon ty
 11. Kirjoita **Huomautukset**-kenttään tarvittavat lisähuomautukset.
 12. Valitse **OK**.
 
-![Luo ylläpitopyyntö.](media/03-manage-maintenance-requests.png)
+![Luo ylläpitopyyntö](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Kunnossapitopyyntöjen myöhempi käsittely
 
@@ -67,10 +69,7 @@ Tiedot-näkymässä voit päivittää erilaisia tietoja. Seuraavassa on muutamia
 - Valitse kunnossapitotyön tyyppi ja, jos nämä tiedot ovat merkityksellisiä, liittyvä kunnossapitotyön variantti ja työn toimiala.
 - Kirjoita **Leveysaste**- ja **Pituusaste**-kenttiin maantieteelliset koordinaatit. Kaikki ylläpitopyyntöön lisätyt koordinaatit siirretään automaattisesti liittyvään työtilaukseen. 
 
-![Ylläpitopyynnön päivitys.](media/04-manage-maintenance-requests.png)
+![Ylläpitopyynnön päivitys](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Jos valitset resurssin, kun luot ylläpitopyynnön, voit lisätä resurssiin yhden virheen. Kun kunnossapitopyyntö on luotu, voit lisätä vikoja, kuten tarvitset. Jos haluat lisätä vikoja, valitse **Resurssin vika** **Kaikki ylläpito pyynnöt** -sivulla.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

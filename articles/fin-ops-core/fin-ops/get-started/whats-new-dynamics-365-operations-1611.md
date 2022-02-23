@@ -2,9 +2,11 @@
 title: Dynamics 365 for Operationsin version 1611 uudet tai muuttuneet ominaisuudet (marraskuu 2016)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 for Operationsin version 1611 uusia tai muuttuneita ominaisuuksia.
 author: sericks007
+manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752805"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797192"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operationsin version 1611 uudet tai muuttuneet ominaisuudet (marraskuu 2016)
 
@@ -496,7 +498,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 for Operationsin version 1611 u
 <li>Italian ISO20022-suoraveloituksen maksumuoto</li>
 <li>Italian RIBA-maksukehotuksen maksusuorituksen muoto</li>
 <li>Italian kotimaisten verotapahtumien raportti</li>
-<li>Italian estolistaraportti</li>
+<li>Italian mustan listan raportti</li>
 <li>Italian Modello770-raportti</li>
 <li>Italian vuosittaisen veroviestinnän raportti</li>
 </ul>
@@ -714,7 +716,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 for Operationsin version 1611 u
 | Mitä voit tehdä | Miksi tämä on tärkeää |
 |-----------------|-----------------------|
 | Myöhäinen-valinnan käyttö kirjattaessa erän laskuehdotukset eränä | Projektin kirjanpitäjä voi määrittää erätyön poimimaan automaattisesti laskuehdotukset kirjaukseen, jos, ehdotukset täyttävät erätyölle määritetyt ehdot. Tämä toiminto parantaa automaattista laskun kirjaamista, koska erätyö voidaan suorittaa jatkuvasti ja noutaa ehdotukset kirjausta varten automaattisesti. |
-| Luo analyysi Power BI Desktopissa. | Liiketoimintatietojen (BI) sisällön projektikohtaiset ja resurssiin liittyvät tiedot voidaan luoda helposti Power BI Desktopissa. |
+| Luo analyysi Power BI desktopissa. | Liiketoimintatietojen (BI) sisällön projektikohtaiset ja resurssiin liittyvät tiedot voidaan luoda helposti Power BI desktopissa. |
 | Ostotilauksen ennakkomaksujen käyttö ja sisällyttäminen oikein projektien arviointiprosessiin | Projektin ostotilausten ennakkomaksut on käsiteltävä ennen maksujen lähettämistä toimittajille. Näiden ennakkomaksulaskut näkyvät projektin arvio/kirjausprosessissa **kiinteähintainen**-projektityypissä. |
 | Kustannusten ja tuoton arvioiden ja nimiketarpeiden käyttö ja hallinta suoraan työrakenteesta | Voit hallita määritetyn WBS-tehtävän kustannusarvioita, tuottoarvioita ja nimiketarpeita tehtävän tiedot-valintaikkunassa WBS-suunnittelunäkymässä. |
 | Rahoituslähteen valinta maksukirjauskansioissa | Jos projektisopimuksella on useita rahoituslähteitä, voit valita tietyn rahoituslähteen, kun maksut kirjataan. Jos et valitse tiettyä rahoituslähdettä, rahoitussääntöjä, jotka on määritetty sopimuksessa, käytetään maksun kohdistukseen. |
@@ -943,6 +945,3 @@ Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovell
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Uudet ja muuttuneet ominaisuudet Finance and Operationsin aloitussivulla](whats-new-changed.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

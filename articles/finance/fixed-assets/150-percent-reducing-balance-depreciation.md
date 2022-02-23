@@ -1,32 +1,35 @@
 ---
 title: Jäännöspoisto 150 prosenttia
-description: Tässä ohjeaiheessa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
-author: moaamer
+description: Tässä artikkelissa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
+author: saraschi2
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8a794e9d5f01e4cd8844b5388b37970607d0be
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: a132a8d6e5eaf0dad54133fc9d0c12dcf5866c7c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883309"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442745"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>Jäännöspoisto 150 prosenttia
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
+Tässä artikkelissa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Jäännösarvo 150 %** -kentästä valitaan **Menetelmä**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Tämä prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 30 (150 % ÷ 5). 
 
@@ -64,7 +67,7 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Esimerkki 150 %:n jäännöspoistosta
 
-| &nbsp;                         | &nbsp; |
+|                                |        |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |
 | Jäännösarvo                  | 1 000  |
@@ -85,6 +88,3 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

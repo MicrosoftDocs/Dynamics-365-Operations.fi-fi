@@ -1,27 +1,28 @@
 ---
 title: Hankinnan aloitussivu
 description: Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista.
-author: Henrikan
+author: mkirknel
+manager: tfehr
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "50651"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565492"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427355"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
 
@@ -77,19 +78,20 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Ostotilauksen luominen myyntitilauksesta](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Luo ostotilaus kertatoimittajalle](tasks/create-purchase-order-one-time-supplier.md)
 -   [Luo ostotilaus, jolla on toimitusaikataulu](tasks/create-purchase-order-delivery-schedule.md)
--   [Ostopalautustilauksen luonti](tasks/create-purchase-return-order.md)
--   [Ostosopimuksen käyttö ostotilausta luotaessa](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Luo ostopalautustilaus](tasks/create-purchase-return-order.md)
+-   [Vapautustilauksen luominen ostosopimuksesta](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Oston vapautustilauksen luominen ostotilausta luotaessa](tasks/create-purchase-release-order-creating-purchase-order.md)
 -   [Luo tavaralähetyksen täydennystilaus](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Hinnat ja alennukset
 -   [Ostosopimukset](purchase-agreements.md)
 -   [Luo ostosopimus](tasks/create-purchase-agreement.md)
--   [Toimittajien ostohyvitykset](/dynamics/s-e/) (raportti)
+-   [Toimittajien ostohyvitykset](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (raportti)
 
 ## <a name="product-receipt-and-invoicing"></a>Tuotteen vastaanotto ja laskutus
 -   [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
--   [Toimittajan laskujen yleiskatsaus](../../finance/accounts-payable/vendor-invoices-overview.md)
--   [Toimittajan kirjausprofiilit](../../finance/accounts-payable/vendor-posting-profiles.md)
+-   [Toimittajan laskujen yleiskatsaus](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Toimittajan kirjausprofiilit](../../financials/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Hankinnan työnkulut
 -   [Hankinnan yleiskatsaus](procurement-sourcing-overview.md)
@@ -102,6 +104,3 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

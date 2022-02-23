@@ -102,6 +102,3 @@ Yhteen päivään voi liittyä vain yksi tyyppi kutakin.
 | 000337                | 8.8.2018             | Säännöllinen               | 8                    |
 | 000337                | 7.8.2018             | Säännöllinen               | 8                    |
 | 000337                | 9.8.2018             | Säännöllinen               | 8                    |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

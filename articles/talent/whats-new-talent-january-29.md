@@ -41,6 +41,3 @@ Lomiin ja poissaoloihin on lisätty uusia asetuksia (**Henkilöstöhallinto**-pa
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Työntekijän työhönottotoiminnot ovat juuttuneet Työnkulku valmis -tilaan
 Tehdyillä muutoksilla on korjattu ongelma, jossa pieni määrä työnkulkuja päättyi Työnkulku valmis -tilaan. Uusien työnkulkujen pitäisi nyt siirtyä Valmis- tilaan, kun työnkulku päättyy. Jos työnkulku on Työnkulku valmis -tilassa, se siirretään virhetilaan, jotta se voidaan tarvittaessa päivittää tai poistaa. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

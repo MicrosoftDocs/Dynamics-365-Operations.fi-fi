@@ -2,25 +2,28 @@
 title: Toimittajan kirjausprofiilit
 description: Toimittajan kirjausprofiilit ohjaavat toimittajatapahtumien kirjaamista kirjanpitoon.
 author: abruer
+manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPosting
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f8ebb67bddf6fa9aae8ba6c6ed290c94bb2e0a047ca6157aa1325f4cf21f148f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43450c5f7ab8295b896b591880da9d0bddd955cf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777213"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442601"
 ---
 # <a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
 
@@ -28,7 +31,8 @@ ms.locfileid: "6777213"
 
 Toimittajan kirjausprofiilit ohjaavat toimittajatapahtumien kirjaamista kirjanpitoon.
 
-## <a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
+<a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
+-----------------------
 
 Voit määrittää toimittajan kirjausprofiilin avulla kirjanpitotilejä ja asiakirja-asetuksia kaikille toimittajille, toimittajaryhmälle tai yhdelle toimittajalle. Näitä asetuksia käytetään, kun luot ostotilauksia, toimittajan laskuja ja käteismaksuja. Voit valita joissakin tapahtumissa eri kirjausprofiilin, joka ohittaa tällä sivulla tapahtumille määritetyn kirjausprofiilin. Oletuskirjausprofiili määritetään **Ostoreskontran parametrit** -sivun **Kirjanpito ja arvonlisävero** -pikavälilehdessä. Oletuskirjausprofiili sisällytetään sitten automaattisesti uusien asiakirjojen otsikkoon, jossa voit vaihtaa tarvittaessa toisen kirjausprofiilin.
 
@@ -115,6 +119,3 @@ Määritä kirjausprofiili määrittämällä seuraavat arvot
 | **Tilitys** | Ota tämän kirjausprofiilin sisältävien tapahtumien automaattinen tilitys käyttöön valitsemalla tämä asetus. Jos tämä asetus poistetaan käytöstä, tapahtumat on tilitettävä manuaalisesti **Tilitä avoimet tapahtumat** -sivulla. |
 | **Peruuta**     | Valitse tämä asetus, jos haluat mahdollisuuden tämän kirjausprofiilin sisältävien tapahtumien peruuttamiseen.                                                                                                               |
 | **Sulje**      | Valitse toinen kirjausprofiili, jota siirrytään käyttämään, kun tämän kirjausprofiilin tapahtumia suljetaan. Tapahtuma katsotaan suljetuksi, kun se on selvitetty kokonaan.                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

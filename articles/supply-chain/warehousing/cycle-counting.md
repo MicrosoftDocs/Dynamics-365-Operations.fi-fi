@@ -1,26 +1,29 @@
 ---
 title: Inventointi
 description: Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinnassa käytettävissä olevassa varastoratkaisussa. Artikkeli ei koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902218"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427412"
 ---
 # <a name="cycle-counting"></a>Inventointi
 
@@ -34,7 +37,7 @@ Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien va
 2.  **Inventoinnin käsittely** – kun inventointityö on luotu, voit suorittaa sen laskemalla varastosijainnin nimikkeet ja kirjaamalla tuloksen Dynamics 365 Supply Chain Managementiin mobiililaitteella. Vaihtoehtoisesti voit laskea varastosijainnin nimikkeet inventointityötä luomatta. Tätä prosessia kutsutaan nimellä *spot-inventointi*.
 3.  **Lasketussa arvossa ilmenevien erojen selvittäminen** – inventoinnin jälkeen nimikkeillä, joiden lasketussa arvossa on eroja, työn tilana on **Odottaa tarkistusta** **Kaikki työ** -sivulla. Voit selvittää erot **Tarkistusta odottava inventointityö** -sivulla.
 
-Seuraavassa kuvassa on esitetty inventointiprosessi. ![Inventointiprosessin kulku.](./media/performcyclecountinginawarehouselocation.jpg)
+Seuraavassa kuvassa on esitetty inventointiprosessi. ![Inventointiprosessin kulku](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Inventoinnin edellytykset
 Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen inventointia.
@@ -137,6 +140,3 @@ Voit oikaista inventointiarvojen eroja ja hyväksyä lasketun arvon **Inventoint
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

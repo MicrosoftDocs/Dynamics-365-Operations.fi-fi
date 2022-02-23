@@ -2,30 +2,36 @@
 title: Vähittäismyyntikanavan määrittäminen
 description: Tässä ohjeaiheessa käsitellään uuden vähittäismyyntikanavan luomisesta Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-ms.date: 04/23/2021
+manager: annbe
+ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6a8db8bb4b42c7ad6c0c0e0c257bc03e356de7d525f524c22eab46e38c018d49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745403"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411933"
 ---
 # <a name="set-up-a-retail-channel"></a>Vähittäismyyntikanavan määrittäminen
+
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään uuden vähittäismyyntikanavan luomisesta Microsoft Dynamics 365 Commercessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Dynamics 365 Commerce tukee useita vähittäismyynnin kanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Jokaisella vähittäismyymäläkanavalla voi olla omat maksuvälineet, hintaryhmät, kassakoneet, tulo- ja kulutilit sekä oma henkilökunta. Sinun on määritettävä kaikki nämä elementit, ennen kuin voit luoda vähittäismyymäläkanavan. 
 
@@ -50,11 +56,11 @@ Varmista ennen vähittäismyyntikanavan luontia, että [kanavan edellytykset](ch
 
 Seuraavassa kuvassa näytetään, miten uusi vähittäismyyntikanava luodaan.
 
-![Uusi vähittäismyyntikanava.](media/channel-setup-retail-1.png)
+![Uusi vähittäismyyntikanava](media/channel-setup-retail-1.png)
 
 Seuraavassa kuvassa on esimerkki vähittäismyyntikanavasta.
 
-![Vähittäismyyntikanavan esimerkki.](media/channel-setup-retail-2.png)
+![Vähittäismyyntikanavan esimerkki](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Muut asetukset
 
@@ -64,17 +70,17 @@ Lisätietoja näytön oletusasettelun määrittämisestä **Näytön asettelu** 
 
 Seuraavassa kuvassa on esimerkki vähittäismyyntikanavan asetusten määrityksistä.
 
-![Vähittäismyyntikanavan määritysesimerkki.](media/channel-setup-retail-3.png)
+![Vähittäismyyntikanavan määritysesimerkki](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Lisäkanavan määrittäminen
 
-Muita kanavaan määritettäviä kohteita on **Asetukset**-osan toimintoruudussa.
+Muita kanavaan määritettäviä kohteita on **Asetukset**-osan **toimintoruudussa**.
 
 Verkkokanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen, kassatilityksen, toimitustapojen, tulo- ja kulutilin, osien, täytäntöönpanoryhmään määrityksen ja säilöjen määrittäminen.
 
 Seuraavassa kuvassa on erilaisia vähittäismyyntikanavan määritysvaihtoehtoja **Asetukset**-välilehdessä.
 
-![Kanavan määrittäminen.](media/channel-setup-retail-4.png)
+![Kanavan määrittäminen](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Maksutapojen määrittäminen
 
@@ -89,7 +95,7 @@ Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille 
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
-![Esimerkki maksutavoista.](media/channel-setup-retail-5.png)
+![Esimerkki maksutavasta](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Kassatilityksen määrittäminen
 
@@ -98,11 +104,11 @@ Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
 Seuraavassa kuvassa näkyy esimerkki kassatilityksestä.
 
-![Kassatilitysten määrittäminen.](media/channel-setup-retail-6.png)
+![Kassatilitysten määrittäminen](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
-Määritetyt toimitustavat saadaan näkyviin valitsemalla **Toimitustapa** toimintoruudun **Asetukset**-välilehdessä.  
+Määritetyt toimitustavat saadaan näkyviin valitsemalla **Toimitustapa** **toimintoruudun** **Asetukset**-välilehdessä.  
 
 Voit muuttaa toimitustapaa tai lisätä sen seuraavien ohjeiden mukaisesti.
 
@@ -112,7 +118,7 @@ Voit muuttaa toimitustapaa tai lisätä sen seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa on esimerkki toimitustavasta.
 
-![Määritä toimitustavat.](media/channel-setup-retail-7.png)
+![Määritä toimitustavat](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Tulo- ja kulutilin määrittäminen
 
@@ -129,7 +135,7 @@ Voit määrittää tulo- ja kulutilin noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa on esimerkki tulo- ja kulutilistä.
 
-![Tulo- ja kulutilien määrittäminen.](media/channel-setup-retail-8.png)
+![Tulo- ja kulutilien määrittäminen](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Osien määrittäminen
 
@@ -151,11 +157,11 @@ Voit määrittää täytäntöönpanoryhmän määrityksen noudattamalla seuraav
 1. Valitse toimintoruudussa **Uusi**.
 1. Valitse täytäntöönpanoryhmä avattavassa **Täytäntöönpanoryhmä**-luettelossa.
 1. Anna kuvaus avattavassa **Kuvaus**-luettelossa.
-1. Valitse toimintoruudussa **Tallenna**
+1. Valitse toimintoruudussa **Tallenna**.
 
 Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määrittämisestä.
 
-![Täytäntöönpanoryhmän määritysten määrittäminen.](media/channel-setup-retail-9.png)
+![Täytäntöönpanoryhmän määritysten määrittäminen](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Säilöjen määrittäminen
 
@@ -166,47 +172,13 @@ Voit määrittää säilöjä noudattamalla seuraavia ohjeita.
 1. Anna säilön nimi.
 1. Valitse toimintoruudussa **Tallenna**.
 
-### <a name="ensure-unique-transaction-ids"></a>Yksilöivien tapahtumatunnusten varmistaminen
-
-Commerce-version 10.0.18 jälkeen myyntipistettä varten luodut tapahtumatunnukset ovat peräkkäisiä, ja ne sisältävät seuraavat osat:
-
-- Kiinteä osa, joka on myymälän tunnuksen ja päätteen tunnuksen ketjutus. 
-- Peräkkäinen osa, joka on numerosarja. 
-
-Muoto on tarkalleen ottaen *{store}-{terminal}-{numbersequence}*. 
-
-Koska tapahtumatunnuksia voi luoda offline-tilassa ja online-tiloissa, luotuja tapahtumatunnuksia on olemassa kaksoiskappaleita. Tapahtumatunnuksen kaksoiskappaleiden poistaminen edellyttää manuaalisten tietojen korjausta. 
-
-Commerce-versiossa 10.0.19 tapahtumatunnuksen muoto on päivitetty poistamaan järjestysosa ja siinä käytetään sen sijaan 13-numeroista lukua, joka on luotu laskemalla aika millisekunteina 1970 jälkeen. Muutoksen jälkeen uusi tapahtumatunnuksen muoto on *{store}-{terminal}-{millisecondsSince1970}*. Tämä päivitys tekee tapahtumatunnuksesta ei-peräkkäisen ja varmistaa, että tapahtumatunnukset ovat aina yksilöiviä. 
-
-> [!NOTE]
-> Tapahtumatunnukset on tarkoitettu vain sisäistä järjestelmää varten, joten niiden ei tarvitse olla peräkkäisiä. Monissa maissa kuittitunnusten pitää kuitenkin olla peräkkäisiä.
-
-Uuden tapahtumatunnuksen muoto-ominaisuuden voi ottaa käyttöön **Ominaisuuksien hallinta** -työtilassa. 
-
-Voit ottaa uudet tapahtumatunnukset käyttöön seuraavasti:
-
-1. Valitse Commerce-pääkonttorissa **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
-1. Suodata "retail ja commerce" -moduuli.
-1. Etsi **Ota käyttöön uusi tapahtumatunnus tapahtumatunnusten kaksoiskappaleiden estämiseksi** -toiminnon nimeä.
-1. Valitse ominaisuus ja valitse sitten oikeanpuoleisesta ruudusta **Ota käyttöön nyt**.  
-1. Mene kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**.
-1. Suorita **1070 Kanavan määritys**- ja **1170 Myyntipisteen tehtävien tallennustoiminto** -työt synkronoidaksesi käyttöönotetut ominaisuudet myymälöihin.
-1. Kun muutokset on lähetetty myymälöihin, myyntipistepäätteet on suljettava ja avattava uudelleen, jotta uutta tapahtumatunnuksen muotoa voi käyttää. 
-
-> [!NOTE]
-> Kun uuden tapahtumatunnuksen muoto-ominaisuus on käytössä, et voi poistaa toimintoa käytöstä. Jos se on poistettava käytöstä, ota yhteyttä Commerce-tukeen.
-
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
+[Kanava-asetusten edellytykset](channels-prerequisites.md)
 
 [Verkkokanavan määrittäminen](channel-setup-online.md)
 
 [Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

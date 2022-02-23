@@ -2,9 +2,11 @@
 title: Liiketoiminta-asiakirjan mallin rakenteen päivittäminen
 description: Tässä aiheessa kerrotaan, kuinka liiketoiminta-asiakirjan malli voidaan päivittää käyttämällä Liiketoiminta-asiakirjan hallintaominaisuutta.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2f57e3f3a84a6e767755c69074bc194e90793e6edd79d0e07ae7449d45ec7539
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775283"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728086"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen 
 
@@ -58,7 +60,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 
     Uusi malli avataan muokkaamista varten mallieditori-sivun upotetussa Excel Online -ohjausobjektissa.
 
-[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen liiketoiminta-asiakirjan mallin muokkaamiseen.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen liiketoiminta-asiakirjan mallin muokkaamiseen](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Muokattavan mallin nykyisen rakenteen tarkasteleminen
 
@@ -68,7 +70,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 4. Laajenna **Mallin rakenne** -ruudussa **Raportti \> Lasku \> rptHeader \> rptHeaderPart1**.
 5. Huomaa, että Finances mallirakenteessa **rptHeaderCompLogo** -nimike esitetään **Report \> Invoice \> rptHeader \> rptHeaderPart1** -nimikkeen alielementtinä.
 
-[![Liiketoiminta-asiakirjojen hallinnan työtilan käyttäminen muokattavan mallin nykyisen rakenteen tarkasteluun.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Liiketoiminta-asiakirjojen hallinnan työtilan käyttäminen muokattavan mallin nykyisen rakenteen tarkasteluun](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen poistamalla kuva
 
@@ -85,7 +87,7 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 4. Laajenna **Mallin rakenne** -ruudussa **Raportti \> Lasku \> rptHeader \> rptHeaderPart1**.
 5. Huomaa, että **rptHeaderCompLogo**-nimike ei enää sisälly Financen mallirakenteeseen.
 
-[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan poistamiseen liiketoiminta-asiakirjan mallista.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan poistamiseen liiketoiminta-asiakirjan mallista](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen lisäämällä kuva
 
@@ -97,13 +99,10 @@ Tee seuraavat toimet [Liiketoiminta-asiakirjan hallinnan yleiskatsaus](er-busine
 6. Laajenna **Mallin rakenne** -ruudussa **Raportti \> Lasku \> rptHeader \> rptHeaderPart1**.
 7. Huomaa, että uusi kuva sisältyy nyt nimikkeenä Financen mallirakenteeseen.
 
-[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan lisäämiseen liiketoiminta-asiakirjan malliin.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Liiketoiminta-asiakirjan hallinnan työtilan käyttäminen kuvan lisäämiseen liiketoiminta-asiakirjan malliin](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Liittyvät linkit
 
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
 [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

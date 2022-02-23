@@ -2,26 +2,28 @@
 title: Kustannushintojen hallinnan aloitussivu
 description: Kustannushintojen hallinnan avulla voit käsitellä raaka-aineiden, puolivalmiiden tuotteiden, valmiiden tuotteiden ja keskeneräisten resurssien arvostusta ja kirjanpitoa.
 author: AndersGirke
+manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83881e6b3bb588dad61fd14aa4db28aa76305925aab3ee08e2ebe7e001f2aff2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc146f8a3707e830ff574964c5a8865271e69b50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739104"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967680"
 ---
 # <a name="cost-management-home-page"></a>Kustannushintojen hallinnan aloitussivu
 
@@ -43,7 +45,7 @@ Voit käyttää varastokirjanpitoa ja valmistuksen kirjanpitoa **Kustannuslasken
 
 Valmistuksen kirjanpidossa voit käsitellä [työtilausten kustannuslaskentaa](production-order-cost-analysis.md) tuotanto- ja erätilauksissa sekä [jälkikustannuslaskentaan](backflush-costing.md) Lean-valmistuksessa.
 
-[Kustannustenhallinnan Power BI -sisältö](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) tarjoaa johdolle näkymän varastoon ja keskeneräisten töiden (KET) varastoon sekä niiden läpi kulkeviin kustannuksiin luokittain pitkällä aikavälillä. Näitä tietoja voidaan käyttää myös raportin yksityiskohtaisena täydennyksenä.
+[Kustannustenhallinnan Power BI -sisältö](../../dev-itpro/analytics/cost-management-content-pack.md) tarjoaa johdolle näkymän varastoon ja keskeneräisten töiden (KET) varastoon sekä niiden läpi kulkeviin kustannuksiin luokittain pitkällä aikavälillä. Näitä tietoja voidaan käyttää myös raportin yksityiskohtaisena täydennyksenä.
 
 ### <a name="additional-resources"></a>Lisäresurssit
 
@@ -57,10 +59,8 @@ Valmistuksen kirjanpidossa voit käsitellä [työtilausten kustannuslaskentaa](p
 
 #### <a name="blogs"></a>Blogit
 
-Kustannushintojen hallintaa koskevia mielipiteitä, uutisia ja muita tietoja on [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogissa](/archive/blogs/axmfg/) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/dynamicsaxscm). Vaikka monet kirjoitukset koskevat kustannushintojen hallinnan edellistä versiota, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia myös nykyisessä versiossa.
+Kustannushintojen hallintaa koskevia mielipiteitä, uutisia ja muita tietoja on [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/axmfg) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/dynamicsaxscm). Vaikka monet kirjoitukset koskevat kustannushintojen hallinnan edellistä versiota, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia myös nykyisessä versiossa.
 
 #### <a name="task-guides"></a>Tehtäväoppaat
 
 Lisäohjeita on saatavilla tehtävän ohjauksina. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

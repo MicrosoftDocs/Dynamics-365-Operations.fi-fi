@@ -2,22 +2,25 @@
 title: Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan
 description: Tässä ohjeaiheessa kerrotaan, kuinka automaattiset veloitukset otetaan käyttöön ja määritetään Microsoft Dynamics 365 Commerce -kanavalla.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d905819d1e0c8223c74509bfb357b3aaa51d20305a2857061eadb0b0ff8f6b9b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411949"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan
 
@@ -66,7 +69,7 @@ Voit määrittää organisaation hierarkian käyttötarkoituksen oletushierarkia
 1. Valitse toimintoruudussa **Suorita nyt**.
 1. Suorita **1070** (**Kanavan määritys**)- ja **1110** (**Yleinen määritys**) -työt toistamalla edelliset kaksi vaihetta.
 
-![Vähittäismyynnin automaattisen latauksen organisaatiohierarkian tarkoituksen määrittäminen.](media/Auto-charges-org-hierarchy-purpose.png)
+![Vähittäismyynnin automaattisen latauksen organisaatiohierarkian tarkoituksen määrittäminen](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Määritä automaattiset veloitukset kanavan mukaan
 
@@ -74,7 +77,7 @@ Kun olet ottanut käyttöön **Suodata automaattiset kulut kanavan mukaan** -omi
 
 Jos haluat määritellä automaattiset veloitukset kanavassa, noudata seuraavia vaiheita.
 
-1. Valitse **Myyntireskontra \> Kulujen määritys \> Automaattiset kulut**.
+1. Valitse  **Myyntireskontra \> Kulujen määritys \> Automaattiset kulut**.
 1. Valitse vasemman ruudun **Taso**-kentästä liiketoiminnan tarpeista riippuen joko **Otsikko** tai **Rivi**.
 1. Valitse kanavan koodi **Vähittäismyyntikanavan koodi** -kentässä (esimerkiksi **Taulu** tai **Ryhmä**). Jos oletusasetus on **Kaikki**, veloitussääntöjä käytetään kaikissa kanavissa.
 
@@ -86,7 +89,7 @@ Jos haluat määritellä automaattiset veloitukset kanavassa, noudata seuraavia 
 1. Valitse toimintoruudussa **Suorita nyt**.
 1. Suorita **1070** (**Kanavan määritys**)- ja **1110** (**Yleinen määritys**) -työt toistamalla edelliset kaksi vaihetta.
     
-![Kanavan mukaan määritetyt automaattiset veloitukset.](media/Auto-charges-line-charge-by-channel.png)
+![Kanavan mukaan määritetyt automaattiset veloitukset](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
@@ -94,7 +97,7 @@ Seuraavassa esimerkissä kuvataan vaiheet, jotka tarvitaan tuotteen määrittäm
 
 Organisaatio määrittää kulujen koodin, joka on nimeltään **KIERRÄTÄ**, kuten seuraavasta kuvasta näkyy.
 
-![Kulujen KIERRÄTÄ-koodi.](media/Auto-charges-charge-code.png)
+![KIERRÄTÄ kulujen koodi](media/Auto-charges-charge-code.png)
 
 Automaattinen veloitus luodaan rivitasolla. Sillä on seuraavat määritykset:
 
@@ -112,19 +115,16 @@ Järjestelmä luo automaattisen kulujen rivin. Sillä on seuraavat määritykset
 - **Luokkaa**-kentän tilaksi määritetään **Korjattu**.
 - **Veloitukset**-kentän tilaksi on määritetään **$6,25**.
 
-![Rivitason automaattisen kulun määritys ja automaattisten kulujen rivi.](media/Auto-charges-recyclingfee-line-fee.png)
+![Rivitason automaattisen latauksen määritys ja automaattisten kulujen rivi](media/Auto-charges-recyclingfee-line-fee.png)
 
 Myyntitilaus luodaan POS-sovelluksessa **San Francisco**-myymäläkanavalla. **Veloitukset**-rivillä näkyy kierrätysmaksu **$6,25**.
 
 Valitsemalla **Tapahtumavaihtoehdot \> Veloitukset \> Hallitse veloituksia** POS-sovelluksessa, voit tarkastella kierrätysmaksun kulukoodia ja kuvausta.
 
-![Kierrätysmaksu POS-sovelluksessa.](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Kierrätysmaksu POS-sovelluksessa](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Omnikanavan automaattiset etukäteisveloitukset](omni-auto-charges.md)
 
 [Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille](pro-rate-charges-matching-lines.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

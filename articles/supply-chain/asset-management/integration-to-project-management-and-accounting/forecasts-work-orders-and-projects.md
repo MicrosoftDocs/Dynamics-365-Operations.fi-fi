@@ -1,10 +1,12 @@
 ---
 title: Ennusteet, työtilaukset ja projektit
 description: Tässä ohjeaiheessa selitetään ennusteiden ja työtilausten integrointi resurssien hallinnan Projektinhallinta ja kirjanpito -moduulin kanssa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjCostInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b53dcf4e8796f808283b7bd5ea92b869ee0e59aac5359d74bcdc5de37ea7352
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f062b5463b54e9bcf32ed6f17263811c4bb24138
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770333"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021018"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Ennusteet, työtilaukset ja projektit
 
@@ -58,13 +60,13 @@ Joitakin näistä tiedoista ei ehkä löydy työtilauksesta. Näin ollen työtil
 
 Esimerkiksi seuraavassa kuvassa **Truck Engine** -käyttöomaisuustyypin määritystavan vuoksi jokainen työtilaustyö, joka luodaan **Truck Engine** -käyttöomaisuustyypillä, on projektitunnuksen 000186 aliprojekti.
 
-![Kuva 1.](media/01-integration-to-pma.png)
+![Kuva 1](media/01-integration-to-pma.png)
 
 Työtilaustyön projektitunnuksen ja siihen liittyvän tehtävän numeron tarkoitus on jäljittää työtilaustyöhön liittyvät kustannukset ja sille valittu käyttöomaisuuserä **Projektinhallinta ja kirjanpito** -moduulissa. (Voit tarkastella projektin tunnusta ja tehtävän numeroa valitsemalla **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** ja valitsemalla sitten työtilauksen. **Rivin tiedot**-pikavälilehdessä **Projektitunnus**-kentässä näkyy projektin tunnus, ja **Tehtävän numero** -kentässä näkyy tehtävä numero.) Lisätietoja käyttöomaisuuden hallinnan kustannusten hallinnasta on kohdassa [Kustannusten ja päivämäärien hallinta](../controlling-and-reporting/cost-and-date-control.md).
 
 Seuraavassaolevassa kuvassa näkyy graafinen yleiskatsaus työtilausprojekteista ja niihin liittyvistä projektitehtävistä.
 
-![Kuva 2.](media/02-integration-to-pma.png)
+![Kuva 2](media/02-integration-to-pma.png)
 
 Kun työtilaukseen luodaan uusi työtilaustyö, työtilausprojekti luodaan automaattisesti työlle. Työtilaus työhön liittyvän käyttöomaisuuserän taloushallinnon dimensiot siirretään automaattisesti työtilausprojektiin.
 
@@ -86,18 +88,15 @@ Voit auttaa varmistamaan työtilausten elinkaaritilojen ja niihin liittyvien pro
 
 Alla olevissa kuvissa näkyvät työtilauksen projektiryhmien, liittyvien projektityyppien, projektin vaiheiden ja työtilausten elinkaaritilojen väliset kytkennät.
 
-![Kuva 3.](media/03-integration-to-pma.png)
+![Kuva 3](media/03-integration-to-pma.png)
 
-![Kuva 4.](media/04-integration-to-pma.png)
+![Kuva 4](media/04-integration-to-pma.png)
 
-![Kuva 5.](media/05-integration-to-pma.png)
+![Kuva 5](media/05-integration-to-pma.png)
 
 Lisätietoja työtilausprojektien määrittämisestä on kohdassa [Työtilausprojektin asetukset](../setup-for-work-orders/work-order-project-setup.md). Lisätietoja työtilausten elinkaaritilojen luomisesta on kohdassa [Työtilauksen elinkaaren tilat](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Seuraavassa kuvassa on graafinen yleiskatsaus eri projekteista, jotka on luotu **Resurssien hallinta** -moduulissa, jotta integrointi **Projektinhallinta ja kirjanpito** -moduuliin voidaan ottaa käyttöön. Siinä näkyvät myös työprosessit, joihin projektit liittyvät.
 
-![Kuva 6.](media/06-integration-to-pma.png)
+![Kuva 6](media/06-integration-to-pma.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

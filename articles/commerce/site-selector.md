@@ -2,12 +2,15 @@
 title: Sivuston valitsinmoduuli
 description: Tässä ohjeaiheessa käsitellään sivuston valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
+manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: a5f6f6e3ff459447aa4b3c0058b5526c9e8d1038a5d2629eefbed197012aebf0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4e5f715efcac7f883df99508d282db904be0d80
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772225"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665220"
 ---
-# <a name="site-selector-module"></a>Toimipaikan valitsinmoduuli
+# <a name="site-selector-module"></a>Sivuston valitsinmoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään sivuston valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+
+## <a name="overview"></a>Yleiskuvaus
 
 Jos yrityksellä on useita sivustoja eri markkinoilla, alueilla ja kielialueilla, sivuston käyttäjät tarvitsevat kätevän tavan vaihdella sivustoja ja valitse ensisijaisen ostossivuston. Tätä skenaariota varten käyttäjät voivat selata useita sivustoja sivuston valitsinmoduulin ansiosta.
 
@@ -37,7 +42,7 @@ Sivuston valitsinmoduuli on määritettävä käyttämällä sivustoluetteloa (m
 
 Seuraavassa kuvassa on esimerkki sivuston sivun otsikossa olevasta sivuston valitsinmoduulista.
 
-![Esimerkki sivuston valitsinmoduulista sivuston sivun otsikossa.](./media/ecommerce-sitepicker.PNG)
+![Esimerkki sivuston valitsinmoduulista sivustonsivun otsikossa](./media/ecommerce-sitepicker.PNG)
 
 ## <a name="site-selector-module-properties"></a>Sivuston valitsinmoduulin ominaisuudet
 
@@ -59,6 +64,3 @@ Sivuston valitsinmoduuli voidaan lisätä [otsikkomoduuliin](author-header-modul
 [Navigointipolkumoduuli](add-breadcrumb.md)
 
 [Siirtymisvalikkomoduulit](nav-menu-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

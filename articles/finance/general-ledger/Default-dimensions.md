@@ -2,25 +2,28 @@
 title: Taloushallinnon dimensiot ja kirjaaminen
 description: Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä ohjeaiheessa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9e7416c1ed69fa9783694e2adee7ada4e25e14054daeb1761428855690eb522f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e65d371486d53d0fe4f039da68fbb4dcc35074d1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778963"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442731"
 ---
 # <a name="financial-dimensions-and-posting"></a>Taloushallinnon dimensiot ja kirjaaminen 
 
@@ -71,29 +74,29 @@ Usein kysytään, missä järjestyksessä eri komponentit suoritetaan. Dimensioi
 
 Seuraavassa kuvassa on kiinteä oletusdimensio, joka on määritetty päätilillä 401100.
 
-[![Taloushallinnon oletusdimensiot.](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Taloushallinnon oletusdimensiot](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 Tässä yksinkertaisessa esimerkissä lisätään kirjauskansio, jossa Osasto-dimensio on määritetty käyttämään oletusarvoa **023** (Toiminnot). Kirjapitotili annetaan ja kirjataan. Seuraavassa kuvassa on oletusarvoinen taloushallinnon dimension kirjanpidon otsikossa.
 
-[![Yleiset kirjauskansiot.](./media/general-journal.png)](./media/general-journal.png)
+[![Yleiset kirjauskansiot](./media/general-journal.png)](./media/general-journal.png)
 
 Kirjauskansion otsikon oletusdimensio aiheuttaa sen, että osastoa 023 käytetään oletusarvoisesti myyntitilirivillä. Seuraavassa kuvassa on kirjauskansiorivi, jossa on käytetty otsikon oletusdimension arvoa **023**.
 
-[![Kirjaustosite.](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Kirjaustosite](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Riviä kirjatessa käytetään kuitenkin kiinteää dimensiota ja rivi kirjataan osastolle 022. Seuraavassa kuvassa on kirjattu tosite, jossa kiinteää dimensiota käytetään myyntitilille.
 
-[![Kiinteään dimensioon liittyvät tositetapahtumat.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Tositetapahtumat](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Esimerkki 2
 
 Tässä esimerkissä käytetään samoja asetuksia kuin ensimmäisessä esimerkissä. Nyt kuitenkin lisätään toinen komponentti ja käytetään Osasto-dimensiota täsmäyttävänä dimensiona. Seuraavassa kuvassa **Osasto** on määritetty USMF-kirjanpidon täsmäyttäväksi taloushallinnon dimensioksi.
 
-[![Kuva, jossa osasto näkyy täsmäyttävänä taloushallinnon dimensiona.](./media/ledger.png)](./media/ledger.png)
+[![Kirjanpito](./media/ledger.png)](./media/ledger.png)
 
 Kun käytetään samoja kirjauskansion otsikon asetuksia ja sama tapahtuma kirjataan, käytetään ensin kiinteää dimensiota. Tämän jälkeen käytetään täsmäytyslogiikkaa varmistamaan, että jokaisella osastolla on täsmätty merkintä. Seuraavassa kuvassa on täsmäytysmerkinnän sisältävät tositetapahtumat, kun kiinteä dimensiota on käytetty.
 
-[![Tositetapahtumat täsmäyttävän kirjauksen jälkeen.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Tositetapahtumat](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Esimerkki 3
 
@@ -101,11 +104,11 @@ Tässä esimerkissä lisätään lisäsääntö. Lisäsääntö määrittää, e
 
 Tämä esimerkki on tärkeä, siinä on mukana järjestys. Tilirakenne määritetään päätilin antamisen jälkeen. Jos viittaat tilirakenteen määritykseen, järjestelmä voi päätellä, että päätili, liiketoimintayksikkö, osasto ja kustannuspaikka tarvitaan. Tässä vaiheessa lisäsääntö ei ole käynnistynyt, koska kiinteitä dimensioita ei käytetä, ennen kuin oletusdimensioita on käytetty kirjauskansiotositteeseen kirjauksen aikana. Asiakas-segmentti ei näy seuraavassa kuvassa, koska lisäsäännön ehdot eivät täyttyneet.
 
-[![Kirjanpitotili.](./media/drop-down.png)](./media/drop-down.png)
+[![Kirjanpitotili](./media/drop-down.png)](./media/drop-down.png)
 
 Kirjaus ei onnistu, koska kiinteää dimensiota käytettiin prosessin lopussa. Dimension oikeellisuustarkistus määrittää, että Asiakas-segmenttiä tarvitaan, jos päätili on 401100 ja osasto 022. Kirjausta ei voi tehdä oikeellisuustarkistusvirheen vuoksi. Seuraavassa kuvassa on sanoma, joka avautuu, dimension oikeellisuustarkistus määrittää, että Asiakas on pakollinen segmentti.
 
-[![Sanoman tiedot.](./media/message.png)](./media/message.png)
+[![Sanoman tiedot](./media/message.png)](./media/message.png)
 
 Tässä esimerkissä oletusarvo on korvattava siten, että lisäsääntö käynnistyy ja voit antaa Asiakas-segmentin. Tätä ratkaisua ei kuitenkaan voi aina käyttää, ja osa käyttäjistä ei ole edes tietoinen kirjaussäännöistä. Tämän vuoksi on tärkeää, että tiedät tilikarttaa määritettäessä, missä järjestyksessä oletusdimensioita käytetään.
 
@@ -119,11 +122,8 @@ Osa seuraavista resursseita viittaa ohjelmiston aiempiin versioihin. Suuri osa s
 
 [Tilikartan suunnittelu](plan-chart-of-accounts.md) 
 
-[Tilikartan suunnitteleminen AX 2012 -blogissa](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – tämä linkki avaa 7-osaisen sarjan 1. osan.
+[Tilikartan suunnitteleminen AX 2012 -blogissa](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – tämä linkki avaa 7-osaisen sarjan 1. osan.
 
-[Dimension oletusarvot kirjanpidollisissa jaoissa](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
+[Dimension oletusarvot kirjanpidollisissa jaoissa](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Dimension oletusarvot dimensiokehyksessä](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Dimension oletusarvot dimensiokehyksessä](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)

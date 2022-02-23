@@ -2,26 +2,27 @@
 title: Laadunhallinta varastoprosesseja varten
 description: Tämä ohjeaihe sisältää tietoja varastoprosessiominaisuuksien laadunhallinnasta. Tämä ominaisuus laajentaa laadunhallinnan ominaisuuksia ja antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallinnan lisähallintaa.
 author: Henrikan
-ms.date: 03/23/2021
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: d81441fcc8cb86927923e76bd1a4d16a141ddc75
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571878"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427349"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Laadunhallinta varastoprosesseja varten
-
-[!include [banner](../includes/banner.md)]
 
 _Varastoprosessien laadunhallinnan ominaisuudet_ -ominaisuus antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallinnan lisähallintaa. Varastotyön voi luoda automaattisesti, jotta varasto voidaan siirtää laadunvalvontasijaintiin, joka perustuu prosenttiosuuteen tai kiinteään määrään, tai joka perustuu jokaiseen *n*:teen-rekisterikilpeen. Kun laatutilaus on suoritettu, työt voidaan luoda automaattisesti, jotta varasto siirtyy prosessin seuraavaan sijaintiin laatutulosten mukaan.
 
@@ -45,7 +46,7 @@ _Varastoprosessien laadunhallinta_ -toiminto luo automaattisesti työn osana vas
 
 Kun _varastoprosessien laadunhallinta_ on otettu käyttöön, se muuttaa tärkeimpien varastonhallinta- ja laadunhallintayksiköiden asetuksia. Seuraavassa kuvassa on yleiskatsaus yksiköistä, jotka mahdollistavat laatutilausten varastoinnin prosesseja varten. Sulkeissa oleva teksti tarkoittaa ehdotettuja toimenpiteitä, kun laadunhallinta on otettu käyttöön ennen kuin _varastonhallintaprosessien laadunhallinta_ -toiminto on käytössä.
 
-![Laadunhallintayksiköt.](media/quality-management-entity-diagram.png "Laadunhallintayksiköt")
+![Laadunhallintayksiköt](media/quality-management-entity-diagram.png "Laadunhallintayksiköt")
 
 ## <a name="enablers-the-quality-item-sampling-and-quality-order-work-order-types"></a>Käyttöönotto: laatunimikkeiden otanta- ja laatutilaustyötilaustyypit
 
@@ -60,7 +61,7 @@ _Laatunimikkeiden otanta_- ja _laatutilausten_ työtilaustyypit kulutetaan sijai
 
 Ennen kuin varastotyö voidaan luoda automaattisesti, jotta varasto voidaan siirtää laadunhallintaan, järjestelmä on määritettävä noudattamalla näitä ohjeita.
 
-1. Luo erilliset työluokat _laatunimikkeiden otanta_- ja _laatutilauksen_ työtilaustyypeille. Näin varmistat, että asianmukaiset työt voidaan luoda automaattisesti kahden työtilaustyypin perusteella ja että tämä työ voidaan sitten suorittaa käyttämällä varastonhallinnnan mobiilisovellusta.
+1. Luo erilliset työluokat _laatunimikkeiden otanta_- ja _laatutilauksen_ työtilaustyypeille. Näin varmistat, että asianmukaiset työt voidaan luoda automaattisesti kahden työtilaustyypin perusteella ja että tämä työ voidaan sitten suorittaa käyttämällä varastosovellusta.
 1. Määritä työmalli kullekin työtilauksen tyypille:
 
     - Määritä työmalli, joka käyttää _laatunimikkeen otanta_ -työtilaustyyppiä, kun haluat siirtää rekisteröidyn varaston automaattisesti laadunvalvontasijaintiin.
@@ -164,7 +165,7 @@ _Varastoprosessien laadunhallinta_ -ominaisuus sisältää myös *Täysi rekiste
 
 **Per n:s rekisterikilpi** -kentän arvo määrittää, kuinka usein laatutilaukset luodaan suhteessa rekisteröitävien nimikkeiden määrään. Esimerkiksi arvo *3* lähettää jokaisen kolmannen nimikkeen laadunhallintaan aloittaen ensimmäisestä nimikkeestä. Arvon on oltava suurempi kuin 0 (nolla).
 
-Kun työntekijät vastaanottavat nimikkeitä varastonhallinnnan mobiilisovelluksen avulla, järjestelmä tarkistaa, onko kullekin saapuvalle nimikkeelle määritetty laatuliitos. Jos laatuliitos on määritetty, järjestelmä käyttää kyseiselle laatuliitokselle määritetyn nimikkeen otantatietuetta määrittääkseen, miten se luo laatutilauksia, laatunimikkeiden otantatyötä ja ostotilaustyötä.
+Kun työntekijät vastaanottavat nimikkeitä varastosovelluksen avulla, järjestelmä tarkistaa, onko kullekin saapuvalle nimikkeelle määritetty laatuliitos. Jos laatuliitos on määritetty, järjestelmä käyttää kyseiselle laatuliitokselle määritetyn nimikkeen otantatietuetta määrittääkseen, miten se luo laatutilauksia, laatunimikkeiden otantatyötä ja ostotilaustyötä.
 
 > [!NOTE]
 > Kun vastaanoton rekisteröiminen tehdään WWW-asiakasohjelmassa (käyttämällä pientä rekisteröitymissivua tai nimikkeen saapumisen kirjauskansiota ostotilausriveille), laatunimikkeen otanta- tai ostotilaustyötä ei luoda asetuksista riippumatta. Laatuliitoksesta vastaavien nimikkeiden osalta viitatun nimikkeen otantaa käytetään vain laatutilausten luonnin ohjaamiseen.
@@ -179,14 +180,14 @@ Seuraavien esimerkkien **Viitetyypin** arvo on _Osto_- ja **Tapahtumatyypin** ar
 
 | Otanta-alue | Määrän määritys | Päivitettyä määrää kohden | Varastodimension mukaan | Katkomäärä nimikkeittäin | Per n:s rekisterikilpi | Tulos |
 |---|---|---|---|---|---|---|
-| Tilaus | Koko rekisterikilpi | Kyllä _(lukittu/ei muokattavissa)_ | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä _(lukittu/ei muokattavissa)_</p> | Ei | 3 | <p>**Tilausrivin määrä: 100 EA**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP1<p>Laatunimikkeen otantatyötä 20 EA:lle</p><p>Laatutilaus 1 20 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP2<p>Ostotilaustyö 20 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP3<p>Ostotilaustyö 20 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP4<p>Laatunimikkeen otantatyötä 20 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP5<p>Ostotilaustyö 20 EA:lle (hyllytys)</p></li></ol> |
-| Tilaus | Kiinteä määrä = 1 | Kyllä | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä</p> | Ei | Ei käytettävissä | <p>**Tilausrivin määrä: 100**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP1<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP2<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP3<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP4<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 20 EA, LP5<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li></ol> |
-| Tilaus | Prosentti = 10 | Ei | <p>Sijainti: Ei</p><p>Rekisterikilpi: Ei</p> | Ei | Ei käytettävissä | <p>**Tilausrivin määrä: 100 EA**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP1<p>Laatunimikkeen otantatyötä 10 EA:lle</p><p>Laatutilaus 1 10 EA:lle</p><p>Ostotilaustyö 40 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP2<p>Ostotilaustyö 50 EA:lle (hyllytys)</p></li></ol> |
-| Lastaa | Prosentti = 5 | Kyllä _(lukittu/ei muokattavissa)_ | <p>Sijainti: Ei</p><p>Rekisterikilpi: Ei</p> | Ei | Ei käytettävissä | <p>**Tilausrivin määrä: 500 EA**</p><p>**Kaksi kuormitusta: ensimmäinen kuorma 200 EA, toinen kuorma 300 EA**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa ensimmäiselle kuormitukselle 100 EA<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 95 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa ensimmäiselle kuormitukselle 100 EA<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 95 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa toiselle kuormitukselle 300 EA<p>Laatunimikkeen otantatyötä 15 EA:lle</p><p>Laatutilaus 1 15 EA:lle</p><p>Ostotilaustyö 285 EA:lle (hyllytys)</p></li></ol> |
-| Järjestys | Prosentti = 10 | Kyllä | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä</p> | Ei | Ei käytettävissä | <p>**Tilausrivin määrä: 100**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP1<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP2<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45:lle (hyllytys)</p></li></ol> |
-| Kuorma | Koko rekisterikilpi | Kyllä _(lukittu/ei muokattavissa)_ | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä _(lukittu/ei muokattavissa)_</p> | Ei | 3 | <p>**Kaksi nimikettä:**</p><ul><li>**Nimikkeen A tilausrivien määrä: 120 EA (4 kuormalavaa)**</li><li>**Nimikkeen B tilausrivien määrä: 90 EA (3 kuormalavaa)**</li></ul><p>**Yksi kuormitus, kaksi kuormaviivaa ja tilausrivi**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP1<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP2<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP3<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP4<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle B, 30 EA, LP5<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle B, 30 EA, LP6<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP7<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li></ol> |
-| Kuorma | Koko rekisterikilpi | Kyllä _(lukittu/ei muokattavissa)_ | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä _(lukittu/ei muokattavissa)_</p> | Kyllä | 3 | <p>**Kaksi nimikettä:**</p><ul><li>**Nimikkeen A tilausrivien määrä: 120 EA (4 kuormalavaa)**</li><li>**Nimikkeen B tilausrivien määrä: 90 EA (3 kuormalavaa)**</li></ul><p>**Yksi kuormitus, kaksi kuormaviivaa ja tilausrivi**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP1<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP2<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP3<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP4<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle B, 30 EA, LP5<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle B, 30 EA, LP6<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP7<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li></ol> |
-| Kuorma | Prosentti = 10 | Kyllä _(lukittu/ei muokattavissa)_ | <p>Sijainti: Ei</p><p>Rekisterikilpi: Ei</p> | Ei | Ei käytettävissä | <p>**Tilausrivin määrä: 100 EA**</p><p>**Kuormituksia ei ole luotu. Tilauksen laajuutta käytetään.**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP1<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP2<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li></ol> |
+| Tilaus | Koko rekisterikilpi | Kyllä _(lukittu/ei muokattavissa)_ | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä _(lukittu/ei muokattavissa)_</p> | Nro | 3 | <p>**Tilausrivin määrä: 100 EA**</p><ol><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP1:lle<p>Laatunimikkeen otantatyötä 20 EA:lle</p><p>Laatutilaus 1 20 EA:lle</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP2:lle<p>Ostotilaustyö 20 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP3:lle<p>Ostotilaustyö 20 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP4:lle<p>Laatunimikkeen otantatyötä 20 EA:lle</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP5:lle<p>Ostotilaustyö 20 EA:lle (hyllytys)</p></li></ol> |
+| Tilaus | Kiinteä määrä = 1 | Kyllä | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä</p> | Nro | Ei käytettävissä | <p>**Tilausrivin määrä: 100**</p><ol><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP1:lle<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP2:lle<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP3:lle<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP4:lle<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 20 EA, LP5:lle<p>Laatunimikkeen otantatyötä 1 EA:lle</p><p>Laatutilaus 1 1 EA:lle</p><p>Ostotilaustyö 19 EA:lle (hyllytys)</p></li></ol> |
+| Tilaus | Prosentti = 10 | Nro | <p>Sijainti: Ei</p><p>Rekisterikilpi: Ei</p> | Nro | Ei käytettävissä | <p>**Tilausrivin määrä: 100 EA**</p><ol><li>Rekisteröintikuitti varastosovelluksessa 50 EA, LP1:lle<p>Laatunimikkeen otantatyötä 10 EA:lle</p><p>Laatutilaus 1 10 EA:lle</p><p>Ostotilaustyö 40 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 50 EA, LP2:lle<p>Ostotilaustyö 50 EA:lle (hyllytys)</p></li></ol> |
+| Kuorma | Prosentti = 5 | Kyllä _(lukittu/ei muokattavissa)_ | <p>Sijainti: Ei</p><p>Rekisterikilpi: Ei</p> | Nro | Ei käytettävissä | <p>**Tilausrivin määrä: 500 EA**</p><p>**Kaksi kuormitusta: ensimmäinen kuorma 200 EA, toinen kuorma 300 EA**</p><ol><li>Rekisteröintikuitti varastosovelluksessa ensimmäiselle kuormitukselle 100 EA:lle<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 95 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa ensimmäiselle kuormitukselle 100 EA:lle<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 95 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa toiselle kuormitukselle 300 EA:lle<p>Laatunimikkeen otantatyötä 15 EA:lle</p><p>Laatutilaus 1 15 EA:lle</p><p>Ostotilaustyö 285 EA:lle (hyllytys)</p></li></ol> |
+| Tilaus | Prosentti = 10 | Nro | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä</p> | Nro | Ei käytettävissä | <p>**Tilausrivin määrä: 100**</p><ol><li>Rekisteröintikuitti varastosovelluksessa 50 EA, LP1:lle<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 50 EA, LP2:lle<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45:lle (hyllytys)</p></li></ol> |
+| Kuorma | Koko rekisterikilpi | Kyllä _(lukittu/ei muokattavissa)_ | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä _(lukittu/ei muokattavissa)_</p> | Nro | 3 | <p>**Kaksi nimikettä:**</p><ul><li>**Nimikkeen A tilausrivien määrä: 120 EA (4 kuormalavaa)**</li><li>**Nimikkeen B tilausrivien määrä: 90 EA (3 kuormalavaa)**</li></ul><p>**Yksi kuormitus, kaksi kuormaviivaa ja tilausrivi**</p><ol><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP1:lle<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP2:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP3:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP4:lle<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike B, 30 EA, LP5:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike B, 30 EA, LP6:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP7:lle<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li></ol> |
+| Kuorma | Koko rekisterikilpi | Kyllä _(lukittu/ei muokattavissa)_ | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä _(lukittu/ei muokattavissa)_</p> | Kyllä | 3 | <p>**Kaksi nimikettä:**</p><ul><li>**Nimikkeen A tilausrivien määrä: 120 EA (4 kuormalavaa)**</li><li>**Nimikkeen B tilausrivien määrä: 90 EA (3 kuormalavaa)**</li></ul><p>**Yksi kuormitus, kaksi kuormaviivaa ja tilausrivi**</p><ol><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP1:lle<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP2:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP3:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP4:lle<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike B, 30 EA, LP5:lle<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike B, 30 EA, LP6:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa nimike A, 30 EA, LP7:lle<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li></ol> |
+| Kuorma | Prosentti = 10 | Kyllä _(lukittu/ei muokattavissa)_ | <p>Sijainti: Ei</p><p>Rekisterikilpi: Ei</p> | Nro | Ei käytettävissä | <p>**Tilausrivin määrä: 100 EA**</p><p>**Kuormituksia ei ole luotu. Tilauksen laajuutta käytetään.**</p><ol><li>Rekisteröintikuitti varastosovelluksessa 50 EA, LP1:lle<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastosovelluksessa 50 EA, LP2:lle<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li></ol> |
 
 Kun työntekijä vahvistaa jonkin edellisessä taulussa näytetyistä laatutilauksista, järjestelmä luo automaattisesti laatutilaustyön, jonka avulla varasto siirretään laadunhallintasijainnista sijaintiin, joka on määritetty _laatutilauksen_ työtilaustyypin sijaintidirektiivissä. Voit määrittää tähän tarkoitukseen minkä tahansa sijaintipaikan, kuten palautuksen tai varastopaikan, laatutilauksen testituloksen mukaan. Esimerkki tästä asennuksesta on tämän ohjeaiheen lopussa olevassa [esimerkkiskenaariossa](#example-scenario).
 
@@ -238,7 +239,7 @@ Seuraavassa esimerkissä **Viitetyypin** arvo on _Osto_.
     - **Testiryhmä:** *Kartio*
     - **Nimikeotanta:** *10 %*
 
-Toimittajalle 104 luodaan nyt ostotilaus, jonka määrä on 10 A0001-nimikettä. Tämän jälkeen ostotilausrivi, jonka määrä on 10, rekisteröidään yhteen rekisterikilpeen käyttämällä varastonhallinnnan mobiilisovellusta. Tulos näyttää tältä:
+Toimittajalle 104 luodaan nyt ostotilaus, jonka määrä on 10 A0001-nimikettä. Tämän jälkeen ostotilausrivi, jonka määrä on 10, rekisteröidään yhteen rekisterikilpeen käyttämällä varastosovellusta. Tulos näyttää tältä:
 
 - *Kehys*-testiryhmän ensimmäisestä laatuliitoksesta on yksi laatutilaus. Määrä on 5. Toisesta laatuliitoksesta ei ole laatutilausta, koska ensimmäisen laatuliitoksen kriteerit ovat tarkempia suhteessa *Kehys*-testiryhmään.
 - *Impedanssi*-testiryhmän kolmannesta laatuliitoksesta on yksi laatutilaus. Määrä on 10. Neljännestä laatuliitoksesta ei ole laatutilausta, koska ensimmäisen laatuliitoksen kriteerit ovat tarkempia suhteessa *Impedanssi*-testiryhmään.
@@ -456,7 +457,7 @@ Olet nyt määrittänyt laatuliitoksen, joka käynnistää laatutilauksen luomis
     - **Varasto**: *51*
 
 1. Kirjoita ostotilauksen numero muistiin, jotta voit käyttää sitä myöhemmin.
-1. Siirry mobiililaitteeseen tai emulaattorille, joka käyttää varastonhallinnnan mobiilisovellusta, ja kirjaudu varastoon 51 käyttämällä lukua *51* käyttäjätunnuksena ja lukua *1* salasanana.
+1. Siirry mobiililaitteeseen tai emulaattorille, joka käyttää varastosovellusta, ja kirjaudu varastoon 51 käyttämällä lukua *51* käyttäjätunnuksena ja lukua *1* salasanana.
 1. Siirry kohtaan **Saapuva \> Oston vastaanotto** ja syötä seuraavat arvot:
 
     - **PONum:** Kirjoita juuri luomasi ostotilauksen numero
@@ -464,7 +465,7 @@ Olet nyt määrittänyt laatuliitoksen, joka käynnistää laatutilauksen luomis
     - **Yksikkö:** *ea*
 
 1. Jatka vastaanottamista linjaa vastaan *5 ea* kerrallaan, kunnes rivi on täysin vastaanotettu. (Yhteensä neljä rekisterikilpeä luodaan.)
-1. Kirjaudu ulos varastonhallinnan mobiilisovelluksesta.
+1. Kirjaudu ulos varastosovelluksesta.
 1. Siirry WWW-asiakasohjelmassa kohtaan **Hankinta \> Ostotilaukset \> Kaikki ostotilaukset**.
 1. Etsi ja avaa ostotilaus.
 1. Valitse **Ostotilausrivit**-osassa nimiketunnuksen *M9201* rivi ja valitse sitten **Ostotilausrivit \> Työtiedot**.
@@ -474,7 +475,7 @@ Olet nyt määrittänyt laatuliitoksen, joka käynnistää laatutilauksen luomis
 
 Voit nyt siirtää rekisterikilvet niiden nimetyille paikoille. Ensimmäinen ja neljäs rekisterikilpi menee laadunvalvontapaikkaan, kun taas toinen ja kolmas rekisterikilpi siirtyy suoraan varastoon.
 
-1. Siirry mobiililaitteeseen tai emulaattorille, joka käyttää varastonhallinnnan mobiilisovellusta, ja kirjaudu varastoon 51 käyttämällä lukua *51* käyttäjätunnuksena ja lukua *1* salasanana.
+1. Siirry mobiililaitteeseen tai emulaattorille, joka käyttää varastosovellusta, ja kirjaudu varastoon 51 käyttämällä lukua *51* käyttäjätunnuksena ja lukua *1* salasanana.
 1. Siirry kohtaan **Saapuva \> Oston hyllytys** ja siirrä kukin rekisterikilpi edellisestä menettelystä, kunnes olet sulkenut kaikki työt.
 
 #### <a name="summary-process-quality-management-work"></a>Yhteenveto: Prosessin laadunhallintatyö
@@ -616,14 +617,8 @@ Olet määrittänyt varaston 51 työ- ja sijaintitiedot sen varmistamiseksi, ett
 
 1. Siirry kohtaan **Varastonhallinta \> Kaikki työt**.
 1. Valitse juuri luotu työ ja huomaa, että on luotu toinen laatutilauksen työotsikko, jossa hyllytyksen sijainti on *Bulk-001*.
-1. Siirry mobiililaitteeseen tai emulaattorille, joka käyttää varastonhallinnnan mobiilisovellusta, ja kirjaudu varastoon 51 käyttämällä lukua *51* käyttäjätunnuksena ja lukua *1* salasanana.
+1. Siirry mobiililaitteeseen tai emulaattorille, joka käyttää varastosovellusta, ja kirjaudu varastoon 51 käyttämällä lukua *51* käyttäjätunnuksena ja lukua *1* salasanana.
 1. Siirry kohtaan **Laatu \> Hyllytys QMS:stä** ja käsittele molempiin töihin liittyvät molemmat rekisterikilvet siten, että kaikki työt suljetaan.
 
 > [!NOTE]
 > Harkitse laatumerkinnän lisäämistä mobiililaitteen valikkokohteeseen, jossa tehtäväkoodi on *Näytä avoin työluettelo*. Katso esimerkiksi matkaviestimen valikkovaihtoehto, jonka nimi on demotietojen **Työluettelo**. Lisää ensin *Laatutilauksen* työluokka käyttäjän ohjattuun valikkokohteeseen, koska työluokka on pakollinen, jotta työ voidaan näyttää työluettelossa. Lisää sitten *Laatutilauksen* työluokka **Työluettelo**-valikkonimikkeeseen. Käyttäjät, joilla on työluettelon käyttöoikeus, voivat tällöin poimia ja käsitellä työn, joka luodaan automaattisesti laatutilauksen vahvistuksen avulla.
-
-## <a name="additional-resources"></a>Lisäresurssit
-
-- [Laadun ja määrityksistä poikkeamisen hallinnan yleiskatsaus](quality-management-processes.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Lisäkuormanluonti aallon aikana
 description: Tässä aiheessa on tietoa aallon lisäkuormanluonnista, joka liittää lähetyksiä automaattisesti aiemmin luotuihin aaltoihin aallon suorituksen aikana. Tämän ansiosta voit luoda järkeviä trukkien kaltaisia kuormia ilman, että käytät kuormasuunnittelun työtilaa.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574734"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654195"
 ---
 # <a name="advanced-load-building-during-wave"></a>Lisäkuormanluonti aallon aikana
 
@@ -247,6 +250,3 @@ Tässä tilanteessa näytetään, miten tässä aiheessa aiemmin kuvaillut asetu
 1. Valitse juuri luomasi myyntitilaus ja lisää uusi rivi valitsemalla **Myyntitilausrivit**-pikavälilehdessä kohta **Lisää rivi**.
 1. Aseta uuden rivin **Nimiketunnus**-kentän arvoksi *M9200* ja **Määrä**-kentän arvoksi *1*.
 1. Varaa rivi toistamalla sama riveillä 6–9 ja vapauta se varastoon. Kuten aiemminkin, järjestelmä luo **uuden** lähetyksen lisäämällesi riville. Koska nimike on kuitenkin peräisin **CarAudio**-nimikeryhmästä, se **ei läpäise rajoitteita, jotka asetit kuorman yhdistelmäryhmälle**. Siksi se **lisätään uuteen kuormaan**. Jos et olisi määrittänyt kuorman yhdistelmäryhmää kuorman luontimallissa, tämä lähetys oltaisiin lisätty ensimmäiseen kuormaan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

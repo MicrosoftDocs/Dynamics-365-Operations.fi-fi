@@ -2,23 +2,27 @@
 title: Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus
 description: Tässä ohjeaiheessa on luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus Dynamics 365 Commerce -sovelluksessa.
 author: ashishmsft
+manager: annbe
 ms.date: 06/30/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982431"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411937"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus
 
@@ -30,7 +34,7 @@ Tässä ohjeaiheessa on luokan oletussaapumis- ja oletushakutulossivun yleiskats
 
 Luokan oletussaapumissivu on sivu, jolle sivustojen käyttäjät yleensä siirretään, kun he valitsevat siirtymishierarkiassa luokan. Luokka-sivulla voit selata ja myös lajitella ja tarkentaa luokiteltuja tuotteita.
 
-![Luokan oletussaapumissivu.](./media/SimpleCategoryLandingDressCategory.png)
+![Luokan oletussaapumissivu](./media/SimpleCategoryLandingDressCategory.png)
 
 Sivun yläosassa on ylätunniste, jossa näkyvät kaikki tuoteluokat ja muut sivut, jotka myynninedistämispäällikkö on luokitellut. Määritys tehdään kanavan siirtymishierarkian määrityksen osana. Sivun alaosassa on alatunniste, joka sisältää pikalinkkejä erilaisiin ostajaa mahdollisesti kiinnostaviin aiheisiin.
 
@@ -54,7 +58,7 @@ Seuraavat komponentit ovat olennaisia luokassa:
 
 Jos haluat, että luokan saapumissivun tietyllä luokalla on paljon räätälöityä kokemusta, voit täydentää kyseisen luokan saapumissivua. Voit esimerkiksi lisätä markkinointivideon ja joitakin luokan tarinoita, joiden avulla saat ostajan huomion. Lisätietoja on kohdassa [Luokan saapumissivun täydentäminen](enrich-category-page.md).
 
-![Täydennetty luokan saapumissivu.](./media/CategoryLandingPages.png)
+![Täydennetty luokan saapumissivu](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Automaattisten ehdotusten ja hakutulosten sivut
 
@@ -68,11 +72,11 @@ Seuraavassa on joitakin ehdotuksia, jotka saattavat tulla näkyviin:
 - **Tuotteet** sisältävät suorat linkit tuotetietosivulle.
 - **Luokkahakualueen ehdotukset** tuovat näyttöön eri luokkia. Niiden avulla käyttäjät voivat hakea tietyn luokan avainsanoja.
 
-![Mukaansatempaava automaattinen ehdotustoiminto.](./media/ImmersiveAutoSuggestUX.png)
+![Mukaansatempaava automaattinen ehdotustoiminto](./media/ImmersiveAutoSuggestUX.png)
 
 Kun käyttäjät valitsevat jonkin avainsanan tai luokkahakualueen ehdotukset tai kun hakutermillä ei saada ehdotuksia, käyttäjät siirretään hakutulossivulle. Käyttäjät voivat tämän jälkeen selata, lajitella ja tarkentaa hakutulosluetteloa löytääksesi haluamasi nimikkeen.
 
-![Haun saapumissivu.](./media/SearchLanding.png)
+![Aloitussivu](./media/SearchLanding.png)
 
 Seuraavat osat ovat olennaisia hakutulossivulla:
 
@@ -93,7 +97,7 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
 
 >[!NOTE]
 >Nämä pilvipohjaiset hakutoiminnot ovat saatavilla versiosta 10.0.8 alkaen. Varmista, että valikossa **Kaupan parametrit > Määrityksen parametrit** on merkintä ProductSearch.UseAzureSearch set to 'true'. 
-![Määrityksen parametrit pilvipohjaiselle haulle.](./media/CloudPoweredSearchConfigurationParameters.png)
+![Määrityksen parametrit pilvipohjaiselle haulle](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -107,6 +111,3 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
 
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

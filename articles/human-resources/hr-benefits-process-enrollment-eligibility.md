@@ -1,35 +1,33 @@
 ---
-title: Rekisteröitymiskelpoisuuksien käsittely
-description: Tässä aiheessa käsitellään rekisteröitymiskelpoisuusprosessin suorittamista.
-author: twheeloc
-ms.date: 08/23/2021
+title: Rekisteröintikelpoisuuden käsittely
+description: Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoritetaan.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8997cf24bf24097e46a05acffef8b3839056c57
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067626"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418281"
 ---
-# <a name="process-enrollment-eligibility"></a>Rekisteröitymiskelpoisuuksien käsittely
+# <a name="process-enrollment-eligibility"></a>Rekisteröintikelpoisuuden käsittely
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Tässä aiheessa käsitellään rekisteröitymiskelpoisuusprosessin suorittamista.
+Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoritetaan.
 
 1. Valitse **Etujen hallinta** -työtilassa **Käsittely**-kohdasta **Rekisteröintikelpoisuuden käsittely**.
 
@@ -56,11 +54,11 @@ Tässä aiheessa käsitellään rekisteröitymiskelpoisuusprosessin suorittamist
 
 ## <a name="view-process-results"></a>Näytä prosessitulokset
 
-Tässä aiheessa käsitellään kelpoisuusprosessin tulosten näyttämistä.
+Tässä artikkelissa kerrotaan, miten kelpoisuusprosessitulokset näytetään.
 
 1.  Valitse **Etujen hallinta** -työtilassa **Käsittely**-kohdasta **Prosessitulokset**.
 
-2.  **Prosessitulokset**-sivulla määritetään seuraavat kentät:
+2.  **Prosessitulokset**-lomakkeessa määritetään seuraavat kentät:
 
    | Kenttä | kuvaus |
    | --- | --- |
@@ -74,6 +72,3 @@ Tässä aiheessa käsitellään kelpoisuusprosessin tulosten näyttämistä.
    | **Tuloksen tila** | Tämä on kelvollinen tai kelpaamaton. Tulostila ei ole käytettävissä, jos työntekijä ei täytä kelpoisuussäännön ehtoja, jos työntekijästä puuttuu pakollisia tietoja, kuten maksutiheys tai kiinteämääräinen kompensaatio, tai jos etuussuunnitelmasta puuttuu tietoja, jotka estävät työntekijöitä ilmoittautumasta. |
    | **Tulossanoma** | Ilmaisee, miksi työntekijä ei ole oikeutettu etuusjärjestelyyn tai jos oikeutussääntö on kulunut. |
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

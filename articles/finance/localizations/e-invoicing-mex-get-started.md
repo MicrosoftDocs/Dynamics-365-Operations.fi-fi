@@ -1,47 +1,42 @@
 ---
-title: Meksikon sähköisen laskutuksen käytön aloittaminen
-description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen käytön.
+title: Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen
+description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen lisäosan käytön Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
-ms.date: 12/01/2020
+manager: AnnBe
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 76c9f44dcc68b23058319cd317ba8426709fdca7
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6d15a79a359b3c708b2b33893d700377a57c3eb7
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986355"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512231"
 ---
-# <a name="get-started-with-electronic-invoicing-for-mexico"></a>Meksikon sähköisen laskutuksen käytön aloittaminen
+# <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Meksikon sähköisen laskutuksen lisäosan käytön aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Meksikon sähköinen laskutus ei välttämättä tällä hetkellä tue kaikkia toimintoja, jotka ovat käytettävissä Comprobante Fiscal Digital por Internet (CFDI) -asiakirjassa tai siihen liittyvässä integroinnissa Microsoft Dynamics 365 Financeen tai Dynamics 365 Supply Chain Managementiin.
+> Meksikon sähköisen laskutuksen lisäosa ei välttämättä tällä hetkellä tue kaikkia toimintoja, jotka ovat käytettävissä Comprobante Fiscal Digital por Internet (CFDI) -asiakirjassa tai siihen liittyvässä integroinnissa Microsoft Dynamics 365 Financeen tai Dynamics 365 Supply Chain Managementiin.
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen käytön. Se opastaa Regulatory Configuration Servicesin (RCS) ja Financen maakohtaisissa määritysvaiheissa. Saat myös ohjeita siihen, mitä sinun on tehtävä Financessa lähettääksesi CFDI-laskuja palvelulla, ja sinulle selitetään, miten käsittelyn tulokset ja CFDI-laskujen tila arvioidaan.
+Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen lisäosan käytön. Se opastaa Regulatory Configuration Servicesin (RCS) ja Financen maakohtaisissa määritysvaiheissa. Saat myös ohjeita siihen, mitä sinun on tehtävä Financessa lähettääksesi CFDI-laskuja palvelulla, ja sinulle selitetään, miten käsittelyn tulokset ja CFDI-laskujen tila arvioidaan.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin suoritat tämän aiheen vaiheet, sinun on suoritettava aiheiden [Sähköisen laskutuspalvelun hallinnan käytön aloittaminen](e-invoicing-get-started-service-administration.md) ja [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
-
-## <a name="set-up-the-cadena-xslt"></a>Cadena XSLT:n määrittäminen
-
-Jos haluat lisätä Cadena XSLT -skeeman CFDI-käsittelyn globalisointiominaisuuteen, noudata seuraavia ohjeita.
-
-1. Lataa skeema [SAT-verkkosivulta](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
-2. Tiivistä skeema ZIP-tiedostoksi.
-3. Tallenna xslt-tiedosto Azure-tallennustilille, joka on määritetty palveluympäristössä uutta konttia varten.
+Ennen kuin suoritat tämän aiheen vaiheet, sinun on suoritettava aiheen [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
 
 ## <a name="rcs-setup"></a>RCS-asetukset
 
@@ -53,7 +48,7 @@ RCS:n määrityksen aikana suoritat seuraavat tehtävät:
 4. Julkaise CFDI-laskujen sähköisen laskutuksen toiminto.
 
 > [!NOTE]
-> Sähköisen laskutuksen toiminto on sen resurssin yleinen nimi, joka määritetään ja julkaistaan käytettäväksi sähköisen laskutuksen palvelimella. Tässä tapauksessa CFDI-laskut (MX) ovat määritettävä sähköisen laskutuksen toiminto.
+> Sähköisen laskutuksen toiminto on sen resurssin yleinen nimi, joka määritetään ja julkaistaan käytettäväksi sähköisen laskutuksen lisäosan palvelimella. Tässä tapauksessa CFDI-laskut (MX) ovat määritettävä sähköisen laskutuksen toiminto.
 
 ## <a name="import-the-e-invoicing-feature"></a>Sähköisen laskutuksen toiminnon tuominen
 
@@ -64,7 +59,7 @@ RCS:n määrityksen aikana suoritat seuraavat tehtävät:
     > [!NOTE]
     > Jos toiminto ei näy luettelossa, valitse **Synkronoi** ja toista sitten vaihe 3.
 
-![CFDI-laskujen (MX) tuominen.](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
+![CFDI-laskujen (MX) tuominen](media/e-Invoicing-services-get-started-MEX-Select-Import-CFDI-feature.png)
 
 Kun tuot **CFDI-laskut (MX)** -toiminnon yleisestä säilöstä, kaikki toiminnon asetukset, kuten määritykset ja toimet, tuodaan myös.
 
@@ -74,13 +69,13 @@ Voit luoda uuden version, jos esimerkiksi URL-osoitteita on päivitettävä. Lis
 
 - Valitse **Sähköisen laskutuksen toiminnot** -sivun **Versiot**-välilehdellä **Uusi**.
 
-![Uuden sähköisen laskutuksen toiminnon version lisääminen.](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
+![Uuden sähköisen laskutuksen toiminnon version lisääminen](media/e-Invoicing-services-get-started-MEX-Select-New-e-Invoicing-feature.png)
 
 ### <a name="update-the-configuration-version"></a>Määritysversion päivittäminen
 
 1. Voit hallita määritysversioita (ER-tiedostomuodon määrityksiä) valitsemalla **Sähköisen laskutuksen toiminnot** -sivun **Määritykset**-välilehdessä **Lisää** tai **Poista**.
 
-    ![Sähköisen laskutuksen toimintojen määritysten hallinta.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
+    ![Sähköisen laskutuksen toimintojen määritysten hallinta](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Configurations.png)
 
     Kun luot uuden version, kaikki määritykset periytyvät edellisestä julkaistusta versiosta. CFDI-laskujen käsittelyä varten tarvitaan seuraavat määritykset:
 
@@ -92,17 +87,17 @@ Voit luoda uuden version, jos esimerkiksi URL-osoitteita on päivitettävä. Lis
 
 2. Valitse luettelosta määritysversio ja valitse sitten **Muokkaa** tai **Näytä** avataksesi **Muodon suunnittelija** -sivun, jolla voit muokata tai tarkastella määritystä.
 
-    ![Muodon suunnittelija -sivun avaaminen.](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
+    ![Muodon suunnittelija -sivun avaaminen](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Käytä **Muodon suunnittelija** -sivua muokataksesi ja tarkastellaksesi ER-muodon tiedostomäärityksiä. Lisätietoja on kohdassa [Sähköisten asiakirjojen määritysten luominen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
+3. Käytä **Muodon suunnittelija** -sivua muokataksesi ja tarkastellaksesi ER-muodon tiedostomäärityksiä. Lisätietoja on kohdassa [Sähköisten asiakirjojen määritysten luominen](../../dev-itpro/analytics/electronic-reporting-configuration.md)
 
-    ![Muodon suunnittelutoiminto -sivu.](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
+    ![Muodon suunnittelutoiminto -sivu](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Sähköisen laskutuksen toiminnon määritysten hallinta
 
 - Voit hallita sähköisen laskutuksen toiminnon määrityksiä valitsemalla **Sähköisen laskutuksen toiminnot** -sivun **Määritykset**-välilehdessä **Lisää**, **Poista** tai **Muokkaa**.
 
-![Sähköisen laskutuksen toiminnon määritysten hallinta.](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
+![Sähköisen laskutuksen toiminnon määritysten hallinta](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
 Jos haluat lähettää CFDI-laskuja hyväksyttäväksi (luoda XML-tiedoston, lähettää XML-tiedoston ja käsitellä vastauksen), tarvitaan **Myyntilasku**-toimintomääritys.
 
@@ -113,15 +108,15 @@ CFDI-laskun peruutuksen lähettämiseen vaaditaan toimintomääritykset **Peruut
 1. Valitse **Sähköisen laskutuksen toiminnot** -sivun **Määritykset**-välilehden **Toiminnon määritys** -sarakkeessa **Myyntilasku**.
 2. Määritä toimet, soveltuvuussäännöt ja muuttujat valitsemalla **Muokkaa**.
 
-    ![Sähköisen laskutuksen toiminnon määritysten muokkaaminen.](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
+    ![Sähköisen laskutuksen toiminnon määritysten muokkaaminen](media/e-Invoicing-services-get-started-MEX-Edit-e-Invoicing-feature-setup.png)
 
 3. Voit hallita toimiluetteloa valitsemalla **Toimintoversion määritys** -sivulla **Toimet**-välilehti. Toimet määrittävät luettelon toiminnoista, jotka on suoritettava peräkkäisessä järjestyksessä, jotta toiminto suoritetaan kokonaisuudessaan.
 
-    ![Toimet-välilehti.](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
+    ![Toimet-välilehti](media/e-Invoicing-services-get-started-MEX-Select-Actions.png)
 
     | Toimenpiteen tunnus | Toimenpide                   | Toiminnon nimi                                  | Toiminnon kuvaus                                          |
     |-----------|--------------------------|----------------------------------------------|-------------------------------------------------------------|
-    | 1         | Muunna tiedosto       | Luo sähköinen CFDI-lasku ilman digitaalista allekirjoitusta | Luo sähköinen CFDI-lasku.                                |
+    | 1         | Muunna asiakirja       | Luo sähköinen CFDI-lasku ilman digitaalista allekirjoitusta | Luo sähköinen CFDI-lasku.                                |
     | 2         | Allekirjoita tiedosto            | Digitaalinen allekirjoitus                                 | Allekirjoita sähköinen lasku lähetystä varten digitaalisesti.                |
     | 3         | Kutsu Meksikon PAC-palvelua | Lähetä sähköinen CFDI-lasku                        | Windows Communication Foundation (WCF) -asiakas lähettää sähköisen CFDI-laskun. |
     | 4         | Käsittele vastaus         | Verkkopalvelun vastauksen analysoiminen                 | Analysoi verkkopalvelun vastaus ja palauta virheloki. |
@@ -134,17 +129,6 @@ CFDI-laskun peruutuksen lähettämiseen vaaditaan toimintomääritykset **Peruut
 > [!NOTE]
 > Käytä samoja vaiheita toimintovaiheiden **Peruuta** ja **Peruutuspyyntö** **Kutsu Meksikon PAC-palvelua**-toiminnon URL-osoitteen päivittämiseen.
 
-### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>Cadena XLST -skeeman polun määrittäminen
-
-1. Voit hallita muuttujia valitsemalla **Toimintoversion määritys** -sivun **Muuttujat**-välilehdessä muuttujan nimen **DigitalSignatureXSLT**.
-2. Kirjoita **Arvot**-kenttään: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
-   
-    missä: <RelativePath> = kansio\\kansio\\tiedostonimi, jossa on kaksi kenoviivaa ContainerName-nimen on osoitettava palvelussa käytettävää säilöä.
-   
-    Muuttujan esimerkki:
-    
-    {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
-
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>Luonnosversion määrittäminen sähköisen laskutuksen ympäristölle
 
 1. Valitse **Sähköisen laskutuksen toiminnot** -sivun **Ympäristöt**-välilehdellä **Ota käyttöön**.
@@ -152,7 +136,7 @@ CFDI-laskun peruutuksen lähettämiseen vaaditaan toimintomääritykset **Peruut
 3. Valitse **Voimaantulo**-kentässä päivämäärä, jona uusi ympäristö on tarkoitus ottaa käyttöön.
 3. Valitse **Ota käyttöön**.
 
-![Sähköisen laskutuksen ympäristön käyttöönotto.](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
+![Sähköisen laskutuksen ympäristön käyttöönotto](media/e-Invoicing-services-get-started-MEX-Enable-e-Invoicing-Environment.png)
 
 ## <a name="change-the-version-status-to-completed"></a>Version tilan muuttaminen valmiiksi
 
@@ -168,11 +152,11 @@ CFDI-laskun peruutuksen lähettämiseen vaaditaan toimintomääritykset **Peruut
 1. Valitse **Sähköisen laskutuksen toiminnot** -sivulla **Versiot**-välilehti hallitaksesi **CFDI-laskut (MX)** -toiminnon tilaa.
 2. Muuta toiminnon tilaa valitsemalla **Muuta tilaa**.
 
-![Sähköisen laskutuksen toiminnon tilan muuttaminen.](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
+![Sähköisen laskutuksen toiminnon tilan muuttaminen](media/e-Invoicing-services-get-started-MEX-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-electronic-invoicing--integration-in-finance"></a>Sähköisen laskutuksen integroinnin määritys Financessa
+## <a name="set-up-electronic-invoicing-add-on-integration-in-finance"></a>Sähköisen laskutuksen lisäosan integroinnin määritys Financessa
 
-Sähköinen laskutus määritetään Financessa suorittamalla seuraavat tehtävät:
+Sähköisen laskutuksen lisäosa määritetään Financessa suorittamalla seuraavat tehtävät:
 
 1. Tuo ER-tietomalli, ER-tietomallin yhdistämismääritys ja CFDI-laskuja varten vaadittavat muodot.
 2. Määritä CFDI-laskujen päivityksen vastaustyypit. Näitä vastaustyyppejä käytetään vastaukseen hyväksytyn varmenteentarjoajan (PAC) palvelimelta.
@@ -180,7 +164,7 @@ Sähköinen laskutus määritetään Financessa suorittamalla seuraavat tehtäv�
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Tuo ER-tietomalli, ER-tietomallin yhdistämismääritys ja CFDI-laskujen kontekstimääritykset
 
 1. Kirjaudu Financeen.
-2. Valitse **Sähköisen raportointi** -työtilan **Määrityslähteet** -osassa **Microsoft**-ruutu. Varmista, että tämän määrityspalvelun arvoksi on määritetty **Aktiivinen**. Tietoja palvelun arvon **Aktiivinen**-muotoon määrittämisestä: [Luo määrityspalveluja ja merkitse ne aktiiviseksi](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Valitse **Sähköisen raportointi** -työtilan **Määrityslähteet** -osassa **Microsoft**-ruutu. Varmista, että tämän määrityspalvelun arvoksi on määritetty **Aktiivinen**. Tietoja palvelun arvon **Aktiivinen**-muotoon määrittämisestä: [Luo määrityspalveluja ja merkitse ne aktiiviseksi](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Valitse **Säilöt**.
 4. Valitse **Yleinen resurssi \> Avaa**.
 5. Tuo **Laskumalli**, **Laskumallin yhdistämismääritys**, **CFDI-laskun muoto (MX)**, **CFDI-laskun peruutuspyynnön muoto (MX)** sekä **CFDI-laskun peruutusmuoto (MX)**.
@@ -190,7 +174,7 @@ Sähköinen laskutus määritetään Financessa suorittamalla seuraavat tehtäv�
 1. Siirry kohtaan **Organisaation hallinta \> Määritys \> Sähköisten asiakirjojen parametrit**.
 2. Valitse **Toiminnot**-välilehdellä **Ota käyttöön** -valintaruutu toimintoviitteiden **MX-00010** ja **MX-00016** riveillä.
 
-![CFDI-laskujen käsittelytoimintojen käyttöönotto.](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
+![CFDI-laskujen käsittelytoimintojen käyttöönotto](media/e-Invoicing-services-get-started-MEX-Enable-CFDI-feature.png)
 
 ### <a name="import-er-configurations-and-set-up-the-response-types-for-updating-cfdi-invoices"></a>ER-määritysten tuominen ja CFDI-laskujen päivittämisen vastaustyyppien määrittäminen
 
@@ -211,7 +195,7 @@ Sähköinen laskutus määritetään Financessa suorittamalla seuraavat tehtäv�
     - Syötä kohtaan **Asiakkaan laskukirjauskansio** **Asiakkaan laskukonteksti**.
     - Syötä kohtaan **Projektilasku** **Projektilaskun konteksti**.
 
-4. Valitsemalla **Vastaustyypit** määrittää vastaustyypit, jotka voidaan palauttaa sähköisestä laskutuksesta ja lisätä asiakkaan laskukirjauskansioon tai projektilaskuun.
+4. Valitsemalla **Vastaustyypit** määrittää vastaustyypit, jotka voidaan palauttaa sähköisen laskutuksen lisäosasta ja lisätä asiakkaan laskukirjauskansioon tai projektilaskuun.
 5. Valitse **Uusi** ja sitten **Vastaustyyppi** -kentässä **Vastaus**.
 6. Valitse **Lähetystila**-kentässä **Odottaa**.
 7. Valitse **Mallin yhdistämismääritys** -kentässä **Vastaussanoman tuontimuoto – mallin yhdistämismääritys vastaussanomasta**.
@@ -223,7 +207,7 @@ Sähköinen laskutus määritetään Financessa suorittamalla seuraavat tehtäv�
 
 ## <a name="process-electronic-invoices-in-finance"></a>Sähköisten laskujen käsittely Financessa 
 
-Kun käsittelet CFDI-laskuja Financessa sähköisen laskutuksen kautta, voit suorittaa seuraavia tehtäviä:
+Kun käsittelet CFDI-laskuja Financessa sähköisen laskutuksen lisäosan kautta, voit suorittaa seuraavia tehtäviä:
 
 - CFDI-laskujen lähettäminen.
 - Lähetyksen suorituslokien tarkastelu.
@@ -231,19 +215,19 @@ Kun käsittelet CFDI-laskuja Financessa sähköisen laskutuksen kautta, voit suo
 
 ### <a name="submit-cfdi-invoices"></a>CFDI-laskujen lähettäminen
 
-Kun olet ottanut käyttöön **Määritettävä sähköisen laskutuksen integrointi** -toiminnon **Vie/tuo sähköinen lasku** -prosessia (**Myyntireskontra \> Laskut \> Sähköiset laskut**) CFDI-laskujen lähettämiseen ei voida enää käyttää. Se korvataan uudella prosessilla, jonka nimi on **Lähetä sähköiset asiakirjat**.
+Kun olet ottanut käyttöön **Määritettävä sähköisen laskutuksen lisäosan integrointi** -toiminnon **Vie/tuo sähköinen lasku** -prosessia (**Myyntireskontra \> Laskut \> Sähköiset laskut**) CFDI-laskujen lähettämiseen ei voida enää käyttää. Se korvataan uudella prosessilla, jonka nimi on **Lähetä sähköiset asiakirjat**.
 
 > [!NOTE]
-> Ennen kuin käytät uutta **Lähetä sähköisiä asiakirjoja** -prosessia, varmista, että Meksikon sähköisten laskujen edellyttämät määritykset on tehty. Lisätietoja [CFDI-asettelun versio 3.3](./latam-mex-cfdi-3-3.md).
+> Ennen kuin käytät uutta **Lähetä sähköisiä asiakirjoja** -prosessia, varmista, että Meksikon sähköisten laskujen edellyttämät määritykset on tehty. Lisätietoja [CFDI-asettelun versio 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
 
 1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Lähetä sähköisiä asiakirjoja**.
 2. Kun mikä tahansa asiakirja lähetetään ensimmäistä kertaa, määritä **Lähetä asiakirjat uudelleen** -asetukseksi aina **Ei**. Jos sinun on lähetettävä asiakirja uudelleen palvelun kautta, määritä asetukseksi **Kyllä**.
 3. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodata** avataksesi **Kysely**-valintaruudun, jossa voit muodostaa kyselyn lähetettävien asiakirjojen valitsemista varten.
 
-![CFDI-asiakirjan lähettäminen.](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
+![CFDI-asiakirjan lähettäminen](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
-> Kun yrität lähettää asiakirjan palvelun kautta ensimmäisen kerran, järjestelmä pyytää vahvistamaan yhteyden sähköiseen laskutukseen. Valitse **Yhdistä sähköisten asiakirjojen lähetyspalveluun napsauttamalla tätä**.
+> Kun yrität lähettää asiakirjan palvelun kautta ensimmäisen kerran, järjestelmä pyytää vahvistamaan yhteyden sähköisen laskutuksen lisäosaan. Valitse **Yhdistä sähköisten asiakirjojen lähetyspalveluun napsauttamalla tätä**.
 
 ### <a name="view-submission-logs"></a>Lähetyslokien tarkasteleminen
 
@@ -251,41 +235,41 @@ Voit tarkastella kaikkien lähetettyjen asiakirjojen tai vain yhden lähetetyn a
 
 #### <a name="view-all-submission-logs"></a>Kaikkien lähetyslokien tarkastelu
 
-Kun olet ottanut **Määritettävä sähköisen laskutuksen integrointi** -toiminnon käyttöön, käytettävissä on uusi sivu, jolla voi seurata asiakirjan lähetysprosessia. Voit käyttää tätä sivua kaikkien lähetettyjen asiakirjojen lähetyslokien tarkasteluun.
+Kun olet ottanut **Määritettävä sähköisen laskutuksen lisäosan integrointi** -toiminnon käyttöön, käytettävissä on uusi sivu, jolla voi seurata asiakirjan lähetysprosessia. Voit käyttää tätä sivua kaikkien lähetettyjen asiakirjojen lähetyslokien tarkasteluun.
 
 1. Siirry kohtaan **Organisaation hallinta \> Säännölliset \> Sähköiset asiakirjat \> Sähköisen asiakirjan lähetysloki**.
 2. Valitse **Asiakirjatyyppi**-kentässä **Asiakkaan laskukirjauskansio** suodattaaksesi vaadittavat sähköiset asiakirjat.
 
-    ![Asiakirjatyypin valinta lähetyslokien tarkastelua varten.](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
+    ![Asiakirjatyypin valinta lähetyslokien tarkastelua varten](media/e-Invoicing-services-get-started-MEX-Select-document-type-for-viewing-submission-log.png)
 
 3. Valitse toimintoruudussa **Kyselyt \> Lähetystiedot** tarkastellaksesi lähetyksen toteutuslokien tietoja.
 
-    ![Lähetyslokitietojen tarkastelu.](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
+    ![Lähetyslokitietojen tarkastelu](media/e-Invoicing-services-get-started-MEX-View-submission-log-details.png)
 
 Lähetyslokien tiedot jakautuvat kolmeen pikavälilehteen:
 
 - **Käsittelytoimet** – Tässä pikavälilehdessä näkyy RCS:ssä määritetyssä toimintoversiossa määritettyjen toimien suoritusloki. **Tila**-sarakkeessa näkyy, suoritettiinko toimi onnistuneesti.
 - **Toimitiedostot** – Tässä pikavälilehdessä näkyvät välitiedostot, jotka luotiin toimien suorittamisen aikana. Voit ladata tiedoston ja tarkastella sitä valitsemalla **Näytä**.
-- **Käsittelytoimen loki** – Tässä pikavälilehdessä näkyvät sähköisen laskutuksen ja kohteena olevan verkkopalvelun välisen tiedonsiirron tulokset. Siinä näkyy myös, mitä verkkopalvelun käsittely palautti. **Virhekoodi**-sarakkeessa näkyy palautuskoodi, jonka hyväksynnän verkkopalvelu palautti.
+- **Käsittelytoimen loki** – Tässä pikavälilehdessä näkyvät sähköisen laskutuksen lisäosan ja kohteena olevan verkkopalvelun välisen tiedonsiirron tulokset. Siinä näkyy myös, mitä verkkopalvelun käsittely palautti. **Virhekoodi**-sarakkeessa näkyy palautuskoodi, jonka hyväksynnän verkkopalvelu palautti.
 
 Kun lähetetty CFDI-lasku on hyväksytty, sen tilaksi päivitetään **Hyväksytty**.
 
 #### <a name="view-submission-logs-from-cfdi-invoices"></a>CFDI-laskujen lähetyslokien tarkastelu
 
-Kun otat **Määritettävä sähköisen laskutuksen integrointi** -toiminnon käyttöön, voit myös tarkastella CFDI-laskujen lähetyslokeja.
+Kun otat **Määritettävä sähköisen laskutuksen lisäosan integrointi** -toiminnon käyttöön, voit myös tarkastella CFDI-laskujen lähetyslokeja.
 
 1. Siirry kohtaan **Myyntireskontra \> Kyselyt ja raportit \> CFDI (sähköiset laskut)**.
-2. Valitse CFDI-lasku, joka on lähetetty sen jälkeen, kun **Määritettävä sähköisen laskutuksen integrointi** on otettu käyttöön.
+2. Valitse CFDI-lasku, joka on lähetetty sen jälkeen, kun **Määritettävä sähköisen laskutuksen lisäosan integrointi** on otettu käyttöön.
 3. Valitse toimintoruudun **Historia**-välilehdessä **Sähköisen asiakirjan loki**.
 
-![CFDI-laskujen lähetyslokien tarkastelu.](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
+![CFDI-laskujen lähetyslokien tarkastelu](media/e-Invoicing-services-get-started-MEX-View-submission-log-from-CFDI-invoice.png)
 
 > [!NOTE]
-> **Historia**-painike on käytettävissä sellaisten CFDI-laskujen osalta, jotka on lähetetty, ennen kuin **Määritettävä sähköisen laskutuksen integrointi** -toiminto otettiin käyttöön. **Historia**-painike ei ole käytettävissä sellaisten CFDI-laskujen osalta, jotka on lähetetty sen jälkeen, kun **Määritettävä sähköisen laskutuksen integrointi** -toiminto otettiin käyttöön.
+> **Historia**-painike on käytettävissä sellaisten CFDI-laskujen osalta, jotka on lähetetty, ennen kuin **Määritettävä sähköisen laskutuksen lisäosan integrointi** -toiminto otettiin käyttöön. **Historia**-painike ei ole käytettävissä sellaisten CFDI-laskujen osalta, jotka on lähetetty sen jälkeen, kun **Määritettävä sähköisen laskutuksen lisäosan integrointi** -toiminto otettiin käyttöön.
 
 ### <a name="submit-cancellation-of-cfdi-invoices"></a>CFDI-laskujen peruutuksen lähettäminen
 
-Kun olet ottanut **Määritettävä sähköisen laskutuksen integrointi** -toiminnon käyttöön, vanhaa CFDI-laskujen peruutusprosessia ei voi enää käyttää. Se korvataan uudella peruutusprosessilla, joka on upotettu **Sähköisen asiakirjan lähetysloki** -sivulle.
+Kun olet ottanut **Määritettävä sähköisen laskutuksen lisäosan integrointi** -toiminnon käyttöön, vanhaa CFDI-laskujen peruutusprosessia ei voi enää käyttää. Se korvataan uudella peruutusprosessilla, joka on upotettu **Sähköisen asiakirjan lähetysloki** -sivulle.
 
 1. Siirry kohtaan **Myyntireskontra \> Kyselyt ja raportit \> CFDI (sähköiset laskut)**.
 2. Jos CFDI-laskun tila on **Hyväksytty**, valitse **Funktiot \> Peruuta CFDI**.
@@ -301,20 +285,17 @@ Kun olet ottanut **Määritettävä sähköisen laskutuksen integrointi** -toimi
 
     **Liittyvät lähetykset** -sivulla näkyvät kaikki liittyvät lähetykset ja niiden lähetystila tietyn CFDI-laskun osalta. Seuraavassa kuvassa ensimmäinen rivi edustaa lähetystä, joka pyysi CFDI-laskun hyväksymistä. Toinen rivi vastaa edustaa lähetystä, joka peruutti CFDI-laskun.
 
-    ![Peruutusten lähetyslokien tarkastelu.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
+    ![Peruutusten lähetyslokien tarkastelu](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log.png)
 
 4. Valitse toimintoruudussa **Kyselyt \> Lähetystiedot** tarkastellaksesi lähetyksen toteutuslokien tietoja.
 
-    ![Peruutusten lähetyslokitietojen tarkastelu.](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
+    ![Peruutusten lähetyslokitietojen tarkastelu](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
-**CFDI – Meksikon sähköinen lasku (MX)** -ominaisuuden käyttöönotto saattaa edellyttää rajoitettujen tietojen, joihin kuuluu organisaation verorekisteritunnus, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten siinä esimääritetyssä muodossa, jota integrointi valtion verkkopalveluun edellyttää. Järjestelmänvalvoja voi ottaa toiminnon **CFDI – Meksikon sähköinen lasku (MX)** -toiminnon käyttöön ja poistaa sen käytöstä siirtymällä kohtaan **Organisaation hallinta \> Määritykset \> Sähköisten asiakirjojen parametrit**. Valitse **Ominaisuudet**-välilehdestä ne rivit, jotka sisältävät **CFDI – Meksikon sähköinen lasku (MX)** -ominaisuuden, ja tee sitten haluamasi valinta. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
+Toimintojen MX-00010 ja MX-00016 (CFDI-lasku ja CFDI-peruutus) käyttöönotto saattaa edellyttää rajoitettujen tietojen, organisaation verorekisteritunnus mukaan luettuna, lähettämistä. Ne välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten siinä esimääritetyssä muodossa, jota integrointi valtion verkkopalveluun edellyttää. Järjestelmänvalvoja voi ottaa toiminnot MX-00010 ja MX-00016 (CFDI-lasku ja CFDI-peruutus) käyttöön ja poistaa ne käytöstä siirtymällä kohtaan **Organisaation hallinta \> Määritykset \> Sähköisten asiakirjojen parametrit**. Valitse **Toiminnot**-välilehti, valitse toiminnot MX-00010 ja MX-00016 sisältävät rivit ja tee sitten haluamasi valinta. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen laskutuksen yleiskatsaus](e-invoicing-service-overview.md)
-- [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md)
-- [Sähköisen laskutuksen määrittäminen](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Sähköisen laskutuksen lisäosan käytön aloittaminen](e-invoicing-get-started.md)
+- [Sähköisen laskutuksen lisäosan määrittäminen](e-invoicing-setup.md)

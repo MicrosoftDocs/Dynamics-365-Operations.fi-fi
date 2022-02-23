@@ -1,10 +1,12 @@
 ---
 title: ER-konfiguraatioiden suunnitteleminen tietojen tuomiseksi ulkoisista tiedostoista CSV-muotoon
-description: Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin määrityksiä, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Finance and Operations -sovellukseen.
+description: Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin (ER) konfiguraatioita, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa Finance and Operations -sovellukseen.
 author: NickSelin
+manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f0cf8c7260c85d405a5dfdcd50323ffee4d4528b982997a802b859ab8327b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b542b6250bcc72334659e050f7ab6d5bd87d3508
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747268"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682042"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>ER-konfiguraatioiden suunnitteleminen tietojen tuomiseksi ulkoisista tiedostoista CSV-muotoon
 
@@ -122,6 +124,3 @@ Testausta varten voit suorittaa muodon yhdistämismäärityksen käyttämällä 
     * Tarkista XML-muotoiset tiedot. Nämä tiedot on tuotu valitusta tiedostosta ja siirretty tietomalliin. Huomaa, että kaikki 7 tuodun CSV-tiedoston riviä on käsitelty. Sisältyvien kenttien otsikoista 1 ohitettiin, 4 tapahtumaa jäsennettiin oikein ja 2 tapahtumaa todettiin virheellisiksi.
 3. Sulje sivu.
 4. Sulje sivu.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

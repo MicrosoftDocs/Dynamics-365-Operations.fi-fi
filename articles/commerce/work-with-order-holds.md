@@ -1,14 +1,17 @@
 ---
 title: Puhelinkeskuksen tilauspitojen määrittäminen ja käyttäminen
-description: Tässä ohjeaiheessa käsitellään tilausten pitojen käyttämistä Dynamics 365 Commercen avulla.
+description: Tässä ohjeaiheessa käsitellään tilausten pitojen käyttämistä Dynamics 365 Commercein avulla.
 author: josaw1
+manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -16,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762593"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411987"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Puhelinkeskustilauksen pidon määrittäminen ja käyttäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään puhelinkeskuksen tilauksissa käytettäviä Dynamics 365 Commercen tilauksen pitotoimintoja.
+Tässä ohjeaiheessa käsitellään puhelinkeskuksen tilauksissa käytettäviä Dynamics 365 Commercein tilauksen pitotoimintoja.
 
 ## <a name="configuring-call-center-order-holds"></a>Puhelinkeskuksen tilauspitojen määrittäminen
 
@@ -53,7 +56,7 @@ Kun pidon tiedot on annettu ja tallennettu, käyttäjä voi sulkea **Tilausten p
 
 Jos **Ota käyttöön tilausten viimeistely** -merkintä on otettu puhelinkeskuskanavassa käyttöön, maksua ei sovelleta pitoon asetettuun tilaukseen. Jos myyntitilausta ei sen sijaan ole asetettu pitoon, käyttäjät eivät voi poistua myyntitilauksen käsittelysivulta, ennen kuin maksua on käytetty. Maksu tietenkin edellytetään ennen tilauksen vapauttamista.
 
-Puhelinkeskuksen työntekijät voivat asettaa manuaalisesti pitoon myös sellaiset tilaukset, jotka vaikuttavat jostain syytä epäilyttäviltä. Tilaukset voidaan asettaa pitoon myös automaattisesti, jos ne vastaavat aktiivisia petosehtoja ja -sääntöjä. Lisätietoja tästä tilausten pitotyypistä on kohdassa [Petoshälytysten määrittäminen](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Puhelinkeskuksen työntekijät voivat asettaa manuaalisesti pitoon myös sellaiset tilaukset, jotka vaikuttavat jostain syytä epäilyttäviltä. Tilaukset voidaan asettaa pitoon myös automaattisesti, jos ne vastaavat aktiivisia petosehtoja ja -sääntöjä. Lisätietoja tästä tilausten pitotyypistä on kohdassa [Petoshälytysten määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Pitoon asetettujen tilausten näyttäminen ja hallinta
 
@@ -100,6 +103,3 @@ Jos käyttäjät haluavat poistaa pidon mutta tehdä tilaukseen muutoksia ennen 
 ## <a name="reporting-options"></a>Raportointivaihtoehdot
 
 Valitse **Retail ja Commerce** \> **Kyselyt ja raportit** \> **Puhelinkeskuksen raportit** \> **Tilausten pitoraportti**, jos haluat suorittaa tilauspitoja koskevan raportin päivämääräalueen, pitokoodin tai muiden liittyvien ehtojen perusteella.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,5 +113,3 @@ Ladattavan .zip-tiedoston sisältö:
 ## <a name="see-also"></a>Lisätietoja
 
 [Dynamics 365 Talent: Attract- ja Dynamics 365 Talent: Onboard -sovellusten poistaminen käytöstä](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

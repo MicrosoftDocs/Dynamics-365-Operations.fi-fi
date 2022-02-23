@@ -2,9 +2,11 @@
 title: Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköisiä tiliotteita ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä aiheessa käsitellään täsmäytysprosessia.
 author: saraschi2
+manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
@@ -15,20 +17,21 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92c04a47b134584280736f4d3d2fa401d2a2a9b7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714445"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969425"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
 [!include [banner](../includes/banner.md)]
 
-Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Dynamics 365 Financessa. Tässä aiheessa käsitellään täsmäytysprosessia.  
+Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Dynamics 365 Financeissa. Tässä aiheessa käsitellään täsmäytysprosessia.  
 
-## <a name="import-an-electronic-bank-statement"></a>Tuo sähköinen tiliote
+<a name="import-an-electronic-bank-statement"></a>Tuo sähköinen tiliote
+-----------------------------------
 
 Voit tuoda tiliotteet **Tiliotteet**-sivun **Tuo tiliote** -toiminnolla. Tiliotteessa pankkitili tunnistetaan tiliotteessa pankkitilin tiedoissa määritetyillä arvoilla. Näitä arvoja ovat pankin nimi, tilinumero, reititysnumero, SWIFT (Society for Worldwide Interbank Financial Telecommunication) -koodi ja kansainvälinen tilinumero (IBAN). 
 
@@ -92,6 +95,3 @@ Täsmäytyksen laskentataulukossa **uusiksi** merkityt tiliotteen tapahtumat kir
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

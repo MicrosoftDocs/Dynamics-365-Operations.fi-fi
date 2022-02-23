@@ -1,26 +1,29 @@
 ---
 title: Vähittäismyynnin kuponkien määrittäminen
-description: Tässä ohjeaiheessa on yleiskatsaus kupongeista ja niiden määrittämisestä Dynamics 365 Commercessa.
-author: josaw1
-ms.date: 10/05/2021
+description: Tässä ohjeaiheessa on yleiskatsaus kupongeista ja niiden määrittämisestä.
+author: scott-tucker
+manager: AnnBe
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603120"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411900"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Vähittäismyynnin kuponkien määrittäminen
 
@@ -38,10 +41,6 @@ Alennus ja kuponki luodaan kuponkia varten erikseen. Sitten linkität ne valitse
 
 > [!NOTE]
 > Kun kuponki on linkitetty alennukseen, monet Commercen alennussivun kentät muuttuvat Vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.
-> 
-> Kun käytät kuponkeja puhelinkeskuskanavassa, sinun on valittava **Laske uudelleen** -painike **(Myy-välilehti > Laske > Uudelleenlaskenta)**, jotta kupongin alennus voidaan ottaa käyttöön. Tämä lisävaihe poistetaan tulevassa versiossa.
-
-Jos haluat käyttää kuponkia myyntitapahtumaan myyntipisteessä (POS), voit käyttää **kupongin koodia** tai **kupongin viivakoodia**. Jos haluat käyttää **kupongin koodia**, **Lisää kupongin koodi** -toiminto on määritettävä myyntipisteen **Tapahtuma** [-näyttöasettelussa](pos-screen-layouts.md). Valitse **Lisää kupongin koodi** ja kirjoita kuponkikoodi. Vaihtoehtoisesti voit käyttää **kupongin viivakoodia** skannaamalla viivakoodin tai kirjoittamalla viivakoodin **Tapahtuma**-näytöllä numeronäppäimistön avulla.
 
 ### <a name="limited-use-coupons"></a>Kupongit, joiden käyttö on rajoitettua
 
@@ -83,6 +82,3 @@ Kuponkitoiminto koostuu useista erillisistä ominaisuuksista. Commerce Headquart
 - **HQ päivitetään osittain, mutta Commerce Scale Unitia ja POS:stä ei päivitetä.** HQ-päivityksessä kuponki- ja alennussivut päivitetään samoin kuin kaupan hinnoitteluohjelma. Jos vain toinen kahdesta komponentista päivitetään, osa Commercen sivuista ei vastaa hinnan laskentatietoja. Niinpä alennuksia laskettaessa voi esiintyä odottamattomia laskettuja alennuksia tai virheitä.
 - **HQ päivitetään, mutta Commerce Scale Unitia ja POS:stä ei päivitetä (N-1).** Koska kaikkia myymälöitä ei voi päivittää samalla kertaa, HQ kannattaa päivittää ennen myymälöiden päivitystä. N-1-skenaariossa kuponkeihin liittyvä uusi toiminto ei ole vielä päivittämättömien myymälöiden käytössä. Kuponkitoiminnossa otetaan esimerkiksi käyttöön poissulkemisrivit. Jos poissulkemisrivejä käytetään alennuksessa, aiempaa versiota käyttävät myymälät eivät voi käyttää niitä.
 - **HQ:ta ei päivitetä, mutta Commerce Scale Unit ja POS päivitetään (N-1).** Koska Commerce Scale Unitin päivitetty hinnoitteluohjelma voi käsitellä vanhoja alennuskoodeja hinnan laskennan aikana, päivityksellä ei pitäisi olla toiminnallisia vaikutuksia tässä skenaariossa.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

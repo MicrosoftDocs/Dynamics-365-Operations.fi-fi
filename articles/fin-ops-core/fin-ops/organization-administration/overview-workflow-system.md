@@ -2,33 +2,30 @@
 title: Työnkulkujärjestelmän yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään työnkulkujärjestelmää.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "56381"
-- intro-internal
+ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067930"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796993"
 ---
 # <a name="workflow-system-overview"></a>Työnkulkujärjestelmän yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa käsitellään työnkulkujärjestelmää.
 
@@ -44,7 +41,7 @@ Työnkulku on järjestelmä, joka suoritetaan Application Object Server (AOS) -p
 
 Työnkulku vastaa liiketoimintaprosessia. Se määrittää, kuinka asiakirja kulkee tai siirtyy järjestelmässä kuvaamalla kenen on suoritettava tehtävä loppuun, tehtävä päätös tai hyväksyttävä asiakirja. Seuraavassa kuvassa on esimerkkityönkulku kuluraporteille.
 
-![Työnkulku, jonka elementtejä on delegoitu käyttäjille.](./media/workflow_user.gif)
+![Työnkulku, jonka elementtejä on delegoitu käyttäjille](./media/workflow_user.gif)
 
 Tässä työnkulkuesimerkissä Sam lähettää kuluraportin, jonka summa on 7 000 USD. Ivanin on tarkistettava Samin hänelle lähettämät kuitit. Sen jälkeen Frankin ja Suen on hyväksyttävä kuluraportti. Oletetaan, että Sam lähettää kuluraportin, jonka summa on 11 000 Yhdysvaltain dollaria (USD). Tässä tapauksessa Ivanin on tarkistettava kuitit ja Frankin, Suen ja Annin hyväksyttävä kuluraportti.
 
@@ -74,6 +71,3 @@ Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin
 + [Määritä rinnakkaiset haarat työnkulussa](configure-parallel-branch-workflow.md)
 + [Rivinimikkeen työnkulkujen määrittäminen](configure-line-item-workflow.md)
 + [Työnkulun usein kysytyt kysymykset](workflow-FAQ.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

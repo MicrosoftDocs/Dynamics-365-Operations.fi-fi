@@ -2,24 +2,27 @@
 title: Automaattisten toimittajan laskutusprosessien yleiskuvaus
 description: Tässä ohjeaiheessa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja.
 author: abruer
-ms.date: 02/12/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 11/06/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4fef5011ead69028a7f667835fd5e5ba2401408d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985653"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665319"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automaattisten toimittajan laskutusprosessien yleiskuvaus
 
@@ -33,7 +36,6 @@ Tietyt ostoreskontran toimittajan laskutusprosessit voidaan automatisoida. Näit
 
 Automatisoiduilla prosesseilla voidaan suorittaa seuraavia tehtäviä:
 
-- Ennakkomaksujen kohdistaminen automaattisesti toimittajan laskuihin
 - Tuotujen laskujen lähettäminen automaattisesti työnkulkujärjestelmään.
 - Tuotteen vastaanottojen täsmäyttäminen odottaviin toimittajan laskuriveihin.
 - Kirjauksen simuloiminen ennen toimittajan laskun kirjaamista.
@@ -41,46 +43,29 @@ Automatisoiduilla prosesseilla voidaan suorittaa seuraavia tehtäviä:
 - Toimittajan laskun käsittelyn automatisoinnin tulosten näyttäminen ja analysoiminen.
 - Jatka useiden laskujen automaattista käsittelyä.
 
-## <a name="submit-imported-vendor-invoices-to-the-workflow-system"></a>Tuotujen toimittajalaskujen lähettäminen työnkulkujärjestelmään
+## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a>Toimittajan laskun automatisointi – tuotujen toimittajan laskujen lähettäminen työnkulkujärjestelmään.
 
 Ilman käyttäjän toimia tehtävän ostoreskontraprosessin osana on mahdollista määrittää, että järjestelmä lähettää tuodun laskun automaattisesti työnkulkujärjestelmään. Prosessi suoritetaan taustalla määritetyin toistovälein (joko kerran tunnissa tai kerran päivässä). Mahdollisuus lähettää tuodut laskut automaattisesti työnkulkujärjestelmään edellyttää, että prosessi alkaa tuodulla laskulla. Työnkulkumääritykseen on sisällytettävä automaattinen kirjaustehtävä, sillä näin voidaan varmistaa, että lasku voidaan käsitellä alusta loppuun ilman manuaalisia toimia.
 
-
-Ostotilauksiin liittyvät laskut sekä ei-ostotilauksellisen hankintaluokan ja varastossa olemattomia rivejä sisältävät laskut voidaan lähettää automaattisesti työnkulkujärjestelmään. Manuaalisesti syötetyt ja **Toimittajayhteistyön laskutus** -työtilassa luodut laskut on lähetettävä manuaalisesti työnkulkujärjestelmään. Tuoduille laskuille on suoritettava manuaalisesti ennakkomaksujen sovelluskäsittely. Voit kohdistaa ennakkomaksut manuaalisesti ennen tuodun laskun kirjaamista tai sen jälkeen. Voit kohdistaa ennakkomaksuja kirjaamattomiin vakiolaskuihin manuaalisesti **Toimittajan laskut** -sivulla. Kirjauksen jälkeen selvitetty ennakkomaksu on käytettävissä manuaalisesti muiden tämän toimittajan laskujen kohdistamiseen **Toimittajat**-sivulla (**Ostoreskontra \> Yhteiset \> Toimittajat \> Kaikki toimittajat \> Lasku-väliehti \> Kohdista**).
+'Ostotilauksiin liittyvät laskut sekä ei-ostotilauksellisen hankitaluokan ja varastossa olemattomia rivejä sisältävät laskut voidaan lähettää automaattisesti työnkulkujärjestelmään. Manuaalisesti syötetyt ja **Toimittajayhteistyön laskutus** -työtilassa luodut laskut on lähetettävä manuaalisesti työnkulkujärjestelmään.
 
 Automatisointitoiminto on joustava kehys, jossa voi määrittää yrityskohtaisia sääntöjä tuotujen toimittajan laskujen lähettämiseen työnkulkujärjestelmään ja kirjatun tuotteen vastaanottorivien täsmäyttämiseen odottaviin toimittajan laskuriveihin.
 
-## <a name="match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Tuotteen vastaanottojen täsmäyttäminen laskuriveille, joilla on kolmisuuntainen vastaavuuskäytäntö
+## <a name="vendor-invoice-automation--match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Toimittajan laskun automatisointi – tuotteen vastaanottojen täsmäyttäminen laskuriveille, joilla on kolmisuuntainen vastaavuuskäytäntö
 
 Järjestelmä voi automaattisesti täsmäyttää kirjatut tuotteen vastaanotot laskuriveillä, joille on määritetty kolmisuuntainen vastaavuuskäytäntö. Prosessia suoritetaan siihen saakka, että täsmäytetty tuotteen vastaanottomäärä on sama kuin laskun määrä. Tämän prosessin osana määritetään, kuinka monta kertaa järjestelmä enintään yrittää täsmäyttää tuotteen vastaanotot laskuriviin, ennen kuin se päättää prosessin epäonnistuneena. Prosessi suoritetaan taustalla joko kerran tunnissa tai kerran päivässä. Automatisoitu täsmäytysprosessi voidaan suorittaa osana laskujen työnkulkujärjestelmään lähettämisprosessia. Vaihtoehtoisesti se voidaan suorittaa erillisenä prosessina.
 
-## <a name="pre-validate-vendor-invoice-posting"></a>Toimittajan laskun kirjaamisen ennakkotarkistus
+## <a name="vendor-invoice-automation--pre-validate-vendor-invoice-posting"></a>Toimittajan laskun automatisointi – toimittajan laskun kirjauksen esivahvistus
 
 Kirjauksen simulointi suorittaa toimittajan laskujen kirjausprosessin aikana tehtävät vahvistusvaiheet, mutta mitään tilejä ei päivitetä. Prosessi suoritetaan valitsemalla joko yksi lasku tai useita laskuja **Odottavat toimittajan laskut** -sivulla.
 
-## <a name="enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Parannettu toimittajan laskujen työnkulun ja automaation historiatietojen katselukokemus
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Toimittajan laskun automatisointi – parannettu toimittajan laskujen työnkulun ja automaatiohistoriatietojen katselukokemus
 
 Käytettävissä on helppolukuinen toimittajan laskun työnkulkuhistorianäkymä. Toimittajan laskun työnkulkuhistoriaan voidaan siirtyä suoraan toimittajan laskusta. Näiden tietojen saamiseen tarvitaan siis vähemmän napsautuksia. Jos organisaatiosi on mahdollistanut tuotujen toimittajan laskujen automaattisen lähettämisen työnkulkuun, tuotujen laskujen automaatiohistoria on käytettävissä. Automaatiohistorian avulla voit tunnistaa nykyisen prosessivaiheen sekä vaiheet, jotka on jo suoritettu. Kun vaihe epäonnistuu, järjestelmä antaa yksityiskohtaisia tietoja virheen syystä.
 
-## <a name="analytics-and-metrics"></a>Analytiikka ja mittarit
+## <a name="vendor-invoice-automation--analytics-and-metrics"></a>Toimittajan laskun automatisointi – analytiikka ja mittarit
 
 **Toimittajan laskutapahtuma** -työtilassa voi keskittyä toimittajan laskuihin, joita ei voitu käsitellä automatisoidussa prosessissa. Työtilan ruuduissa on tietoja toimittajan laskuista, joiden lähettäminen työnkulkujärjestelmään, tuominen tai täsmäyttäminen tuotteen vastaanottoihin ei onnistunut. Ostoreskontran esimiehet puolestaan saavat Microsoft Power BI -mittareiden avulla merkityksellistä tietoa toimittajan laskun automatisoinnin tehokkuudesta.
 
-
-## <a name="resume-automation-processing-for-multiple-invoices"></a>Jatka useiden laskujen automaattista käsittelyä
-
-Kun tuodun laskun lähettäminen ei onnistu työnkulkuun automatisoidun prosessin avulla, järjestelmä poistaa sen automaattisesta käsittelystä. Ostoreskontran käsittelijä voi tarkastella ja muokata laskua, ennen kuin automaattinen prosessi lähettää sen uudelleen työnkulkuun. Vian syy voidaan ratkaista saman korjauksen avulla useita laskuja varten. Voit käynnistää automaattisen prosessin uudelleen **Jatka automaattista laskujen käsittelyä** -sivulla. 
-
-## <a name="tracking-the-invoice-received-date-value"></a>Laskun vastaanottopäivämäärän arvon seuraaminen
-
-**Laskun vastaanottopäivämäärä** -arvo ilmaisee päivämäärän, jolloin yritys vastaanotti laskun toimittajalta. Sen avulla voidaan seurata laskun etenemistä automaatioprosessien läpi. Tämä arvo voidaan sisällyttää toimittajan laskun tuotuihin tietoihin. Voit määrittää päivämäärän manuaalisesti luoduille laskuille. Jos arvoa ei ole määritetty, oletusarvon mukaan käytetään kuluvaa päivää.
-
-
-## <a name="tracking-the-imported-invoice-amount-and-imported-sales-tax-amount-values"></a>Tuodun laskun summan ja tuodun arvonlisäveron summan arvojen seuranta
-
-Toimittajan laskujen tuontitiedostossa voi määrittää **tuodun laskun summan** ja **tuodun arvonlisäveron summan** arvot. Tavallisesti arvot ovat peräisin laskusta, jonka ulkopuolinen palveluntarjoaja on skannannut ja sisällyttänyt tuontitiedostoon. Kun laskua käsitellään ostoreskontrassa, järjestelmä laskee arvot laskutietojen perusteella. Laskun voi kirjata vain, jos tuodut arvot vastaavat laskettuja arvoja. Täsmäytysarvojen avulla varmistetaan, että lasku vastaa tarkasti toimittajalle maksettavaa summaa. Jos organisaatio sallii tuotujen laskujen lähettämisen työnkulkujärjestelmään automaattisesti, voit halutessasi edellyttää, että tuodut summat vastaavat laskettuja kokonaissummia, ennen kuin lasku voidaan lähettää työnkulkujärjestelmään.
-
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Toimittajan laskun automaatio - useiden laskujen automaattisen käsittelyn jatkaminen
 Kun tuodun laskun lähettäminen ei onnistu työnkulkuun automatisoidun prosessin kautta, järjestelmä poistaa sen automaattisesta käsittelystä. Ostoreskontran käsittelijä voi tarkastella ja muokata laskua, ennen kuin automaattinen prosessi lähettää sen uudelleen työnkulkuun. Vian syy voidaan ratkaista saman korjauksen avulla useita laskuja varten. Voit käynnistää automaattisen prosessin uudelleen **Jatka automaattista laskujen käsittelyä** -sivulla. 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

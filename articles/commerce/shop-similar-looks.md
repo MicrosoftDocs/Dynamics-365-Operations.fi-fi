@@ -2,13 +2,16 @@
 title: "\"Osta samankaltaisia tyylejä\" -suositusten käyttöönotto"
 description: Tässä ohjeaiheessa kuvataan, kuinka voit ottaa käyttöön "Osta samankaltaisia tyylejä" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
 author: bebeale
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721997"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412044"
 ---
-# <a name="enable-shop-similar-looks-recommendations"></a>Vastaavien tuotteiden ostosuositusten ottaminen käyttöön
+# <a name="enable-shop-similar-looks-recommendations"></a>"Osta samankaltaisia tyylejä" -suositusten käyttöönotto
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, kuinka voit ottaa käyttöön "Osta samankaltaisia tyylejä" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
+
+## <a name="overview"></a>Yhteenveto
 
 Dynamics 365 Commercen "Osta samankaltaisia tyylejä" -suositusominaisuus, joka käyttää tekoälyä ja koneoppimista (AI-ML) antaakseen suosituksia visuaalisesti vastaavista tuotteista asiakkaille. Tekemällä "Osta samankaltaisia tyylejä" -suosituksia kaikille Commercen kanaville vähittäiskauppiaat voivat lisätä asiakastyytyväisyyttä auttamalla asiakkaita löytämään haluamansa helposti.
 
@@ -68,7 +73,7 @@ Jos haluat ottaa käyttöön "Osta samankaltaisia tyylejä" -suositukset-toiminn
 
 Seuraavassa kuvassa näkyy **Osta samankaltaisia tyylejä** -ominaisuus, joka sijaitsee Commerce Headquarters -sovelluksen **toimintojen hallinta** -sivulla.
 
-![Commerce headquartersin Ominaisuuksien hallinta -sivun Osta samankaltaisia tyylejä -ominaisuus.](./media/enableshopsimilarlooks.png)
+![Commerce headquartersin toimintojen hallinta -sivun Osta samankaltaisia tyylejä -ominaisuus](./media/enableshopsimilarlooks.png)
 
 Kun edeltävät tehtävät on suoritettu, POS-päätteisiin päivittyy automaattisesti asiayhteyteen liittyvä **Osta samankaltaisia tuotteita** - paneeli. Kun valitset **Näytä lisää**, POS-päätteen käyttäjät voidaan viedä erityiseen "Osta samankaltaisia tyylejä" -sivulle, jota voidaan suodattaa edelleen.
 
@@ -88,7 +93,7 @@ Noudata seuraavia ohjeita **Osta samankaltaisia tyylejä** -painikkeen lisäämi
 
 Seuraavassa kuvassa on **Ota käyttöön Osta samankaltaisia tyylejä -linkki** -valintaruutu ja **Osta samankaltaisia lookkeja** -painike esimerkiksi PDP:n sivustomuodostimessa.
 
-![Ota käyttöön Osta samankaltaisia tyylejä -linkin valintaruutu ja Osta samanlaisia tyylejä -painike tuotetietosivulla sivuston luontiohjelmassa.](./media/SSLecomtooling.png)
+![Ota käyttöön Osta samankaltaisia tyylejä -linkki -valintaruutu ja Osta samanlaisia lookkeja -painike PDP:n sivustomuodostimessa](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -111,6 +116,3 @@ Seuraavassa kuvassa on **Ota käyttöön Osta samankaltaisia tyylejä -linkki** 
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

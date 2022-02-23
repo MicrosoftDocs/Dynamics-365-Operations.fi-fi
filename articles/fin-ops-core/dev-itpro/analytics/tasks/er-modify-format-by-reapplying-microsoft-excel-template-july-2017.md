@@ -2,9 +2,11 @@
 title: Muokkaa muotoja ottamalla Excel-mallit uudelleen käyttöön
 description: Tämän menettelyn vaiheiden suorittaminen edellyttää, että ER Määrityksen suunnittelu OPENXML-muotoisten raporttien luomiseksi -menettelyn vaiheet on suoritettu ensin.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e66a2e24d3b1e77d5c790d2f3b7cfdce98fc4cca6e3734ad8b87ac7714192853
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749653"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684232"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Muokkaa muotoja ottamalla Excel-mallit uudelleen käyttöön
 
@@ -81,6 +83,3 @@ Menettelyssä kerrotaan, miten sähköisen raportoinnin (ER) muodon määrityksi
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Käytä ER-muodon muokattua luonnosversiota maksukirjauskansion käsittelyssä
 
 Tarkista luotu laskentataulukko ja maksurivien uudet maksupäivämäärien tiedot.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

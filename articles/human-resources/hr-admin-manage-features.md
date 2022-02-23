@@ -1,39 +1,37 @@
 ---
-title: Ominaisuuksien hallinta Human Resourcesissa
-description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
-author: twheeloc
-ms.date: 08/19/2021
+title: Hallitse ominaisuuksia
+description: Tutustu uusien ominaisuuksien käyttöönottoon ja käytöstä poistamiseen Dynamics 365 Human Resourcesissa.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069704"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418367"
 ---
-# <a name="manage-features-in-human-resources"></a>Ominaisuuksien hallinta Human Resourcesissa
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="manage-features"></a>Hallitse ominaisuuksia
 
 Julkaisemme jatkuvasti uusia ominaisuuksia Microsoft Dynamics 365 Human Resourcesissa ja haluamme tarjota ne asiakkaillemme mahdollisimman pian. Tarjoamme esikatseluominaisuuksia, jotka ovat lähes valmiita yleiseen käyttöön ja ne ovat läpäisseet laajan testauksen. Haluamme saada vielä viimeisen asiakaspalautekierroksen, ennen kuin hyväksymme ominaisuudet yleisesti saataville.
 
-Katso lisätietoja uusista ominaisuuksista Human Resourcesissa kohdista [Uutta Human Resourcesissa](hr-admin-whats-new.md) ja [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](/dynamics365/release-plans/?panel=products1#pivot=products).
+Katso lisätietoja uusista ominaisuuksista Human Resourcesissa kohdista [Uutta Human Resourcesissa](hr-admin-whats-new.md) ja [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
 
-**Toimintojen hallinta** -työtilassa on luettelo kussakin julkaisussa toimitetuista toiminnoista. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+**Toimintojen hallinta** -työtilassa on luettelo kussakin julkaisussa toimitetuista toiminnoista. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Kaikki uudet toiminnot pysyvät esiversiossa ainakin 30 päivää ja yleensä 30–60 päivää. Tärkeimmät toiminnot ovat yleensä saatavana kunkin vuoden lokakuussa ja huhtikuussa esiversiojakson jälkeen. Voit ottaa uudet ominaisuudet käyttöön heti, kun näet ne **Toimintojen hallinta** -työtilassa. Jotkin toiminnot on ehkä otettu käyttöön oletusarvoisesti.
 
@@ -72,7 +70,7 @@ Etujen hallinta **Edut** -työtilan toimintoja. Kun otat etujen hallinnan esikat
 - **Etuuskelpoisuuden käytännöt**
 - **Kelpoisuustapahtumat**
 
-Voit tarkastella näiden sivujen tietoja vain luku -tilassa. Jos haluat muokata tietoja, sinun on ensin poistettava käytöstä etujenhallinta (sovellettavissa vain **Eristys**-ympäristöissä).
+Voit tarkastella näiden lomakkeiden tietoja vain luku -tilassa. Jos haluat muokata tietoja, sinun on ensin poistettava käytöstä etujenhallinta (sovellettavissa vain **Eristys**-ympäristöissä).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Loman ja poissaolon ottaminen käyttöön tai poistaminen käytöstä
 
@@ -95,6 +93,4 @@ Haluamme kuulla kokemuksistasi esikatseluominaisuuksien parissa. Kannustamme sin
 ## <a name="see-also"></a>Lisätietoja
 
 - [Uutta henkilöstöhallinnossa](hr-admin-whats-new.md)
-- [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](/dynamics365/release-plans/?panel=products1#pivot=products)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Dynamics 365:n ja Power Platformin julkaisusuunnitelma](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)

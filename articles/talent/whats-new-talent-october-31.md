@@ -97,6 +97,3 @@ Data Management Framework (DMF) -yksikkö HcmPersonalContactPersonEntity on päi
 ## <a name="known-issue"></a>Tunnettu ongelma
 - **Ongelma**: kun työntekijään lisätään uusi liite, **Uusi**- ja **Muokkaa**-painikkeet näkyvät harmaina. 
 - **Ongelman kiertäminen:** Varmista ennen liitesivun avaamista, että **Työntekijä**-sivun tietoruudut on suljettu. Jos tietoruudut ovat suljettuja **Työntekijä**-sivua ladattaessa, liitepainikkeet otetaan käyttöön. (Tämä ongelma korjataan seuraavassa ympäristöpäivityksessä.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

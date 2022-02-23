@@ -2,25 +2,28 @@
 title: Varastosijainnin tila
 description: Tässä aiheessa on yleiskatsaus fyysisen varaston sijainnin tila -ominaisuudesta.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Supply Chain Management
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 1b5e1eb651d882e7fbf38f2f2cf8804c28f2154fcb299dbc5caabbecdfab560b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31216c24f54f22ec928eb143d4a913aabcd50cf8
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733273"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427454"
 ---
 # <a name="warehouse-location-status"></a>Varastosijainnin tila
 
@@ -51,7 +54,7 @@ Ennen kuin voit käyttää *Varaston sijainnin tila* -toimintoa, sen pitää oll
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-example-scenario"></a>Esimerkkiskenaarion mukaisten mallitietojen valmisteleminen
 
-Ennen kuin aloitat skenaarion käsittelyn, sinun on aktivoitava mallitiedot ja määritettävä ominaisuus tässä osassa kuvatulla tavalla. Esimerkkiskenaarion suorittaminen edellyttää, että käytössä on joko varastonhallinnan mobiilisovellus tai selainpohjainen emulaattori. Tässä annetut vaiheet käyttävät varastonhallinnan mobiilisovellusta. Selainpohjaisen emulaattorin vaiheet ovat samankaltaisia.
+Ennen kuin aloitat skenaarion käsittelyn, sinun on aktivoitava mallitiedot ja määritettävä ominaisuus tässä osassa kuvatulla tavalla. Esimerkkiskenaarion suorittaminen edellyttää, että käytössä on joko varastosovellus tai selainpohjainen emulaattori. Tässä annetut vaiheet käyttävät varastosovellusta. Selainpohjaisen emulaattorin vaiheet ovat samankaltaisia.
 
 #### <a name="use-the-usmf-legal-entity"></a>Käytä USFM-yritystä
 
@@ -166,6 +169,3 @@ Esimerkkiskenaario edellyttää kahden sijaintiprofiilin valmistelemista.
 
 > [!NOTE]
 > Sijaintikentät päivitetään vain varastotapahtumien mukaan. Jos varasto siirretään kirjauskansion tai muiden kuin WHS-prosessien avulla, kenttiä ei päivitetä.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

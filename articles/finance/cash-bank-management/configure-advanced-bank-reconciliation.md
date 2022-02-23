@@ -1,32 +1,35 @@
 ---
 title: Pankkitilin täsmäytyksen lisätoimintojen määritysprosessi
-description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.
+description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financeissa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 98303
 ms.assetid: ae071f04-f038-4b17-812d-0a241ed15521
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42c86a120403d8d87d62c76d56993decca7f6cdafaeb67c7afec29da0bf8f18f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7103cb93ad0d9ea0f1b92e317bee7454eb08d1f2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757166"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442909"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Pankkitilin täsmäytyksen lisätoimintojen määritysprosessi
 
 [!include [banner](../includes/banner.md)]
 
-Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.  
+Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financeissa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.  
 
 Ennen kehittyneen pankin täsmäytystoiminnon käyttöä on määritettävä monta asiaa. Lisätietoja tiliotteen tuonnin määrittämisestä on kohdassa [Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen](set-up-advanced-bank-reconciliation-import-process.md).  Täsmäytysprosessin määrittämisen vaatimukset on kuvattu alla.
 
@@ -58,6 +61,3 @@ Asetus **Täsmäytä tuonnin jälkeen** tarkistaa automaattisesti pankin tiliott
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

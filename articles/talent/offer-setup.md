@@ -209,6 +209,3 @@ Tarjouksen luontiprosessissa on useita osia, joita Attractin järjestelmänvalvo
 
 
 Lisätietoja tarjouksen luontiprosessista on kohdassa [Tarjousten luominen, hyväksyminen ja allekirjoittaminen](./creating-offers.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

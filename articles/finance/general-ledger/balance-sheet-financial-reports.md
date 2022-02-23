@@ -2,25 +2,28 @@
 title: Taseen talousraportit
 description: Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin.
 author: jcart1106
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0fae7ccb216ced0cbcbdb69980b3bae754a4980ecaf9314893368ae89459fa0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e96552447182f3692a19d4cfd962afbcb28e5508
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734511"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442838"
 ---
 # <a name="balance-sheet-financial-reports"></a>Taseen talousraportit
 
@@ -28,7 +31,8 @@ ms.locfileid: "6734511"
 
 Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin. 
 
-## <a name="default-balance-sheet-reports"></a>Oletustaseraportit
+<a name="default-balance-sheet-reports"></a>Oletustaseraportit
+-----------------------------
 
 Oletustaseraportteja on kaksi. Osat on pinottu yhteen raporttiin. Osat ovat rinnakkain raportissa.
 
@@ -67,7 +71,8 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 
 
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
 [Taloushallinnon raportoinnin yleiskatsaus](financial-reporting-getting-started.md)
 
@@ -77,6 +82,3 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,35 +1,33 @@
 ---
 title: Kiinteiden kompensaatiosuunnitelmien luominen
-description: Tässä aiheessa esitellään komponentit, jotka on määritettävä ennen kiinteän kompensaatiosuunnitelman luomista ja työntekijöiden määrittämistä.
-author: twheeloc
-ms.date: 08/25/2021
+description: Kiinteä kompensaatio viittaa työntekijän normaaliin bruttopalkkaan. Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen kiinteän kompensaatiosuunnitelman luomista ja työntekijöiden määrittämistä.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 46dbc167a76782cfa8a72da8ce8bed2ce29e4dc6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 06f4a335adfc1e6f438589613efec02f92bfd756
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070322"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418344"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Kiinteiden kompensaatiosuunnitelmien luominen
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Kiinteä kompensaatio viittaa työntekijän normaaliin bruttopalkkaan. Tässä aiheessa esitellään komponentit, jotka on määritettävä ennen kiinteän kompensaatiosuunnitelman luomista ja työntekijöiden määrittämistä.
+Kiinteä kompensaatio viittaa työntekijän normaaliin bruttopalkkaan. Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen kiinteän kompensaatiosuunnitelman luomista ja työntekijöiden määrittämistä.
 
 Kiinteät kompensaatiomäärät voidaan laskea työntekijöille, perustuen esimerkiksi suorituskykyyn, alueeseen ja budjetin korotuksiin. Dynamics 365 Human Resources tukee tyyppeinä vaihetta, luokkaa ja kompensaatioluokkaa.
 
@@ -63,9 +61,9 @@ Voit suunnitella kiinteän kompensaatiosuunnitelman yhdistääksesi kaikki kompo
 
 Kun olet määrittänyt perustiedot kiinteään kompensaatiosuunnitelmaan, voit määrittää suunnitelman kompensaatiorakenteen. Valitse **Määritä kompensaatio**. Valintaikkunan liukusäädin avautuu, joka antaa kolme vaihtoehtoa:
 
--   **Luo uusi kompensaatioruudukko** valitsemalla viitepistemääritys ja antamalla ruudukolle nimen.
--   **Luo uusi kompensaatioruudukko** kopioimalla olemassa oleva ruudukko, jota voit käyttää pohjana.
--   **Käytä jo olemassa olevaa komensaatioruudukkoa**, joka on jo määritetty. Kaikki kompensaatiosuunnitelmat, jotka käyttävät samaa ruudukkoa. saavat päivityksiä, jos ruudukkoa muutetaan.
+-   Luo uusi kompensaatioruudukko valitsemalla viitepistemääritys ja antamalla ruudukolle nimen.
+-   Luo uusi kompensaatioruudukko kopioimalla olemassa oleva ruudukko, jota voit käyttää pohjana.
+-   Käytä jo olemassa olevaa komensaatioruudukkoa, joka on jo määritetty. Kaikki kompensaatiosuunnitelmat, jotka käyttävät samaa ruudukkoa. saavat päivityksiä, jos ruudukkoa muutetaan.
 
 Kun olet valinnut vaihtoehdon **Kompensaatiorakenne** -sivu avautuu ja voit tehdä muutoksia uuteen kompensaatioruudukkoon tai jo olemassa olevaan kompensaatioruudukkoon.
 
@@ -76,7 +74,7 @@ Työntekijöiden rekisteröiminen kiinteään kompensaatiosuunnitelmaan on ensim
 
 **Huomaa:** Oikeutussääntöjä käytetään määrittelemään kelopisuus sekä kiinteisiin että muuttuviin kompensaatiosuunnitelmiin. 
 
-Oikeutussääntö arvioi tiettyjen toimikenttien arvot kuten **työ**, **virka** ja **työntekijätietueet** määrittääkseen, onko työntekijä kompensaatiosuunnitelmaan oikeutettu.
+Oikeutussääntö arvioi tiettyjen toimikenttien arvot kuten työ, virka ja työntekijätietueet, määrittääkseen onko työntekijä kompensaatiosuunnitelmaan oikeutettu.
 
 -   **Työ**-sivulla oikeutussäännössä otetaan huomioon seuraavat kentät:
     -   **Työ**-kenttä
@@ -96,10 +94,7 @@ Esimerkiksi, kun työntekijälle on määritetty kiinteä kompensaatio, vain toi
 
 Voit nyt määrittää työntekijän kiinteään kompensaatiosuunnitelmaan. Avaa **Työntekijät**-sivu ja valitse työntekijä, joka määritetään kompensaatiosuunnitelmaan. Valitse toimintoruudussa **Kompensaatio** &gt; **Kiinteä suunnitelma**. Voit nyt luoda uuden kiinteän kompensaatiotoiminnon kyseiselle työntekijälle. 
 
-**Huomautus:** **Kompensaatiosuunnitelma**-kentässä näkyvät vain ne suunnitelmat, joihin työntekijä on oikeutettu, niiden oikeutussääntöjen mukaisesti, jotka on määritetty jokaiselle suunnitelmalle. Jos oikeutussääntöä ei ole määritetty suunnitelmalle, kukaan työntekijä ei ole oikeutettu suunnitelmaan. 
+**Huomautus:** Kompensaatiosuunnitelma-kentässä näkyvät vain ne suunnitelmat, joihin työntekijä on oikeutettu, niiden oikeutussääntöjen mukaisesti, jotka on määritetty jokaiselle suunnitelmalle. Jos oikeutussääntöä ei ole määritetty suunnitelmalle, kukaan työntekijä ei ole oikeutettu suunnitelmaan. 
 
 Järjestelmä tarkistaa, että se kompensaatiosumma, joka on eritelty luokan tai tyypin kompensaatiosuunnitelmassa, on vähimmäis- ja enimmäisviitepisteiden väilllä, työntekijän työn annetulla kompensaatiotasolla. Jos korvaussumma on sallitun alueen ulkopuolella, varoitus tai virhesanoma tulee näkyviin, joka on määritetty kiinteän kompensaatiosuunnitelman toleranssitason mukaisesti.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

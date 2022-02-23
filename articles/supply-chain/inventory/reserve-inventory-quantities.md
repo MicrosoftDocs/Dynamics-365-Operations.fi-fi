@@ -1,26 +1,29 @@
 ---
 title: Varastomäärien varaaminen
 description: Tässä aiheessa kuvataan varastomäärien varaamisen eri vaihtoehtoja.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cf6f14e30f84f48428b351287eb1c65915a14c1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ea7311ce34fec476ad9953e954a07a86acd13afc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571134"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427345"
 ---
 # <a name="reserve-inventory-quantities"></a>Varastomäärien varaaminen
 
@@ -46,7 +49,7 @@ Varastovarauskäytännöt on määritetty **Nimikemalliryhmät**-sivulla **Varas
 
 **Varastokäytännöt**-osa sisältää seuraavat varauskäytännöt.
 
-| &nbsp;                  | &nbsp;                                                                                                                                     |
+|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Varauskäytäntö**  | **Kuvaus**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Päivämäärän mukaan ohjattu FIFO    | Jos valitset **Päivämäärän mukaan ohjattu FIFO** -vaihtoehdon, varastovaraukset tehdään lajittelupäivän mukaan FIFO (first in, first out) -periaatteella. Erät voidaan varata myös FIFO-periaatteella aikaisimman vastaanottopäivän perusteella.                                                                                                                                                                                                                                                                       |
@@ -80,6 +83,3 @@ Varauksiin liittyy kaksi vaihtoehtoa **Varasto ja varastonhallinnan parametrit**
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Varastovarauskäytännöt Tuotantoparametrit -sivulla
 
 **Varaus**-kentän arvo **Yleistä**-välilehdessä **Tuotantoparametrit** sivulla määrittää tuotantoprosessin oletuskohdan, jossa varasto pitää varata. Esimerkiksi varasto voidaan varata, kun työ on ajoitettu tai kun työ alkaa.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

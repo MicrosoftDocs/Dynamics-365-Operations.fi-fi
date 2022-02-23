@@ -2,9 +2,11 @@
 title: Kulujen hallinnan Power BI -sisältö
 description: Tässä ohjeaiheessa käsitellään Power BI -sisältöpaketin kulujen hallinnan sisältöä.
 author: panolte
+manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
@@ -14,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769895"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016449"
 ---
 # <a name="expense-management-power-bi-content"></a>Kulujen hallinnan Power BI -sisältö
 
@@ -41,7 +43,7 @@ Versiosta 8.1 alkaen kulujen hallinnan kanssa on käytettävissä kaksi Power BI
 Kaikkien summat näytetään yrityksen valuuttana. Kaikkien yritysten tiedot näytetään, mutta voit tarvittaessa lisätä yrityssuodattimen. 
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
-Expense Admin Dashboard.pbix- ja Expense Personal Dashboard.pbix-tiedostot (Power BI -sisältö) sijaistee Microsoft Dynamics Lifecycle Servicesin (LCS) jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Expense Admin Dashboard.pbix- ja Expense Personal Dashboard.pbix-tiedostot (Power BI -sisältö) sijaistee Microsoft Dynamics Lifecycle Servicesin (LCS) jaettujen resurssien kirjastosta. Lisätietoja sisällön lataamisesta ja sen käyttöönottamisesta organisaatiossa on kohdassa [Microsoftin ja kumppaneiden Power BI -sisältö LCS-sovelluksessa](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 Sisältö on käytettävissä kulujenhallinnan työtilassa upotetun Power BI -sisältönä. Kulun omistaja voi käyttää henkilökohtaisia kuluja itse, kun taas ostoreskontran käyttäjät ja esimiehet voivat käyttää kaikkien käyttäjien kulutietojen hallintasisältöä.
 
 ## <a name="refreshing-the-power-bi-content"></a>Power BI -sisällön päivittäminen
@@ -91,6 +93,3 @@ Sisältö sisältää joukon raporttisivuja. Jokainen sivu koostuu joukosta mitt
 | Työntekijätilastot | Kuluraportit kustannustyypin mukaan            |
 |                     | Henkilökohtaiset kulut                       |
 |                     | Kuluraportit tilastoryhmän mukaan     |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

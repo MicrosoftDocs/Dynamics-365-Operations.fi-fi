@@ -1,28 +1,29 @@
 ---
 title: SEPA-tilisiirron yleiskatsaus
 description: Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut. SEPA-tilisiirto on tietyntyyppinen toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama euromääräinen maksu. Aiheessa selitetään myös tilisiirron maksutiedoston määrittäminen ja siirtäminen.
-author: sunfzam
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "11124"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc37dde8829abdd26a224adbd788538834f4d320
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984024"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442718"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA-tilisiirron yleiskatsaus
 
@@ -32,7 +33,7 @@ Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisäl
 
 ## <a name="what-is-a-credit-transfer-message"></a>Mikä on tilisiirron sanoma?
 Tilisiirron sanoma on pyyntö, jonka aloittava osapuoli (oma yrityksesi) lähettää siirtääkseen varoja omalta tililtään velkojan tilille. Tilisiirron sanomille on useita maa/aluekohtaisia ja pankkikohtaisia toteutuksia. Jotkin niistä käytetään yhden maan/alueen sisällä, ja joistakin on muodostumassa standardeja. Yksi vakiintunut yleinen standardi on ISO 20022 ja sen aloitussanomat, kuten Tilisiirto. Seuraavassa kuvassa esitetään valittujen tilisiirron sanomien suhteet ja kattavuus. 
-![Tilisiirto.](./media/credit-transfer.jpg) Tilisiirron sanomat 
+![Tilisiirto](./media/credit-transfer.jpg) Tilisiirron sanomat 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Mitä SEPA- ja ISO 20022 -maksut ovat?
 Euroopan komissio loi yhtenäinen euromaksualueen (SEPA:n) ja sen perusteella kaikkia sähköisiä maksuja pidetään kotimaan maksuina riippumatta siitä, missä maassa tai millä alueella henkilö, yritys tai organisaatio ja pankki sijaitsevat. Kansallisten ja kansainvälisten maksujen välillä ei ole eroja. SEPA koostuu 28 Euroopan unionin (EU) jäsenvaltiosta sekä Islannista, Liechtensteinista, Norjasta, Sveitsistä, Monacossa ja San Marinosta. SEPA auttaa muodostamaan yksittäisen markkinan maksutapahtumille Euroopan talousalueella (ETA). SEPA:n odotetaan lopulta vähentävän sitä maksumuotojen määrää, joiden kanssa pankkien, liikeyritysten ja yksityishenkilöiden on toimittava. Euroopan komissio määritti SEPA-maksujen oikeudellisen perustan maksupalveludirektiivin avulla. Euroopan maksuneuvosto (EPC) tukee SEPA-aluetta seuraavilla toimilla:
@@ -56,7 +57,7 @@ SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsof
 Tarkista Microsoft Dynamics Lifecycle Services (LCS) -palvelun jaetusta omaisuuskirjastosta luettelo uusimmista käytettävissä olevista tiedostoista, joiden tyyppi on **GER-konfigurointi**. Seuraavassa osassa, "Mitä asetuksia on määritettävä?", on linkki ohjeaiheeseen, jossa kerrotaan, miten luot LCS-säilön, josta voit tarkastaa käytettävissä olevat konfiguraatiotiedostot ja tuoda haluamasi tiedostot.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mitä asetuksia on määritettävä?
--   Ennen tilisiirtotiedostojen luontia vähintään yksi aktiivinen tilisiirtomääritys on tuotava sähköisen raportoinnin määrityksiin. Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+-   Ennen tilisiirtotiedostojen luontia vähintään yksi aktiivinen tilisiirtomääritys on tuotava sähköisen raportoinnin määrityksiin. Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Valitse ensin **Yleinen sähköinen raportointi** -valintaruutu ja sitten ISO-tilisiirtomuoto (esim. **ISO 20022 Tilisiirto (AT)**) vientimuodon määritykseksi, kun määrität ostoreskontran maksutavan.
 -   Myös yrityksen ja pankkitilin tiedot on määritettävä.
 -   Tilisiirtomaksujen luomiseen tarvitaan pankkitilin numero, IBAN-koodi ja toisinaan SWIFT-koodi (BIC) tai muu tunnus. Tämän vuoksi on ne on määritettävä toimittajan pankkitilille sekä ja siirtoa pyytävän organisaation pankkitilille.
@@ -125,6 +126,3 @@ Maksuja muodostettaessa muodostetaan maksutiedosto, ja sinua pyydetään tallent
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Vähittäismyynnin laskelmat
 description: Tässä ohjeaiheessa kerrotaan, miten laskelmat luodaan ja kirjataan.
 author: ashishmsft
+manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -16,22 +19,22 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 64b6fbda9f0396eb4ee6e2e248941f1429d4485278180d5c70dac6dd837a4537
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738693"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412090"
 ---
 # <a name="retail-statements"></a>Vähittäismyyntilaskelmat
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Commercessa laskelman kirjausprosessia käytetään seuraamaan pilvimyyntipisteen tai Modern POS:n (MPOS) tapahtumia. Laskelman kirjausprosessi hakee myyntipistetapahtumajoukon Headquarters (HQ) -asiakasohjelmaan jakeluaikataulun avulla. **Kaupan parametrit**- ja **Myymälät**-sivuilla määritetyillä parametreilla valitaan yksittäisiin laskelmiin haettavat tapahtumat.
+Dynamics 365 Commerceissa laskelman kirjausprosessia käytetään seuraamaan pilvimyyntipisteen tai Modern POS:n (MPOS) tapahtumia. Laskelman kirjausprosessi hakee myyntipistetapahtumajoukon Headquarters (HQ) -asiakasohjelmaan jakeluaikataulun avulla. **Kaupan parametrit**- ja **Myymälät**-sivuilla määritetyillä parametreilla valitaan yksittäisiin laskelmiin haettavat tapahtumat.
 
 Seuraavassa kuvassa on laskelman kirjausprosessi. Tässä prosessissa myyntipisteeseen tallennetut tapahtumat lähetetään asiakkaalle Commerce-ajastuksen avulla. Kun asiakas on vastaanottanut tapahtumat, voit luoda, laskea ja kirjata myymälän tapahtumaotteen.
 
-[![Laskelman kirjausprosessi.](./media/retail-statements.png)](./media/retail-statements.png)
+[![Laskelman kirjausprosessi](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>Laskelmien luominen ja kirjaaminen
 
@@ -85,6 +88,3 @@ Kun kirjaat laskelman, myyntitilaukset ja laskut luodaan laskelman myyntiin.
 - Myynti, johon asiakas on lisätty tapahtumaan POS:ssa luo erillisiä myyntitilauksia ja laskuja, yksi kutakin asiakaskohtaisesti.
 
 Maksukirjauskansioita luodaan automaattisesti lausunnon maksuille, ja varasto päivitetään myyntipistemyymälälle.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

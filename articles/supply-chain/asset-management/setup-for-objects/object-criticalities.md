@@ -1,10 +1,12 @@
 ---
 title: Resurssin kriittisyystyypit
 description: Aiheessa selitetään resurssin kriittisyystyypit resurssien hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776917"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021701"
 ---
 # <a name="asset-criticality-types"></a>Resurssin kriittisyystyypit
 
@@ -40,7 +42,7 @@ Voit määrittää kriittisyyden määrittämällä ensin kriittisyystyypit, joi
 4. Kirjoita **Nimi**-kenttään kriittisyystyypin nimi.
 5. Syötä **Kerroin**-kenttään kerroin. Tätä kerrointa käytetään työtilausten ajoittamisen laskennassa, kun määritetään käytettävä kriittisyystietue. (Tietuetta, jonka kerroin on korkein, käytetään aina.) Tämä asetus on merkityksellinen, jos, kuten seuraavasta kuvasta näkyy, luodaan kriittisyysrivejä, joilla on sama kriittisyysarvo.
 
-    ![Kriittisyystyypit-sivu.](media/23-setup-for-objects.png)
+    ![Kriittisyyden tyyppisivu](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Määritetä resurssin kriittisyydet.
 
@@ -59,6 +61,3 @@ Voit määrittää kriittisyyden määrittämällä ensin kriittisyystyypit, joi
 - Työtilauksen kriittisyys lasketaan uudelleen aina, kun työtilausivi lisätään työtilaukseen tai poistetaan siitä.
 - Jos työtilaus sisältää useita työtilaustöitä, suurin kriittisyys, joka määräytyy **Kriittisyystyypit**-sivun **kerroin**-kentän mukaan, on aina käytössä työtilauksessa.
 - Yleensä resurssin kriittisyys voi muuttua kauden aikana. Kriittisyyteen voidaan vaikuttaa ostamalla uusia laitteita, kunnostustöitä, ja niin edelleen. Harkitse resurssien kriittisyyden uudelleenarviointia säännöllisin väliajoin (esimerkiksi kerran vuodessa tai joka toinen vuosi) varmistaaksesi, että kriittisyysmääritykset vastaavat nykyisiä tuotannon asetuksia.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

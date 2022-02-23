@@ -2,23 +2,26 @@
 title: Tuo remburssi
 description: Tässä menettelyssä käsitellään tuontiremburssiprosessi.
 author: kweekley
+manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c6119a8b52eece5935bf05d0f2300feeb8d4e90b08f26e949870f491bc9254e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f9c73ec1347e72f8cd4ae8eec580bb8fe3df8ed
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743118"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442837"
 ---
 # <a name="import-letter-of-credit"></a>Tuo remburssi
 
@@ -128,8 +131,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 12. Sulje sivu.
 13. Sulje sivu.
 
-## <a name="verify-import-letter-of-credit-status-and-printing"></a>Tarkista Tuo remburssitapahtuma -tila ja tulostus
-
+## <a name="verify-import-letter-of-credit-status"></a>Tarkista Tuo remburssitapahtuma -tila
 1. Valitse Maksuliikenteen hallinta > Luottokirjeet > Tuontiremburssi ja tuontiperintä.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
 3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
@@ -183,6 +185,3 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
     * Tarkista, että raportin tapahtumissa on mainittu pankkitositteen numero, tositteen limiitti, käytetty summa ja limiittisaldo.  
 8. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

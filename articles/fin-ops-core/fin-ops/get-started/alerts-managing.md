@@ -1,23 +1,25 @@
 ---
 title: Hälytysten eräkäsittely
 description: Tässä ohjeaiheessa on tietoja hälytysten eräkäsittelystä.
-author: RichdiMSFT
-ms.date: 08/24/2021
+author: tjvass
+manager: AnnBe
+ms.date: 09/10/2010
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 0ec2a9bd925ccd7dc7c6a8251629bf565ece2268
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: d57586cb18c581e4a462d93a64a88310e251a7af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416426"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798583"
 ---
 # <a name="batch-processing-of-alerts"></a>Hälytysten eräkäsittely
 
@@ -80,6 +82,3 @@ Jos määrität eräkäsittelyn ikkunan, hälytys lähetetään hälytyssäänn�
 
 1. Siirry kohtaan **Järjestelmän hallinta** &gt; **Kausittaiset tehtävät** &gt; **Hälytykset** &gt; **Eräpäivän hälytykset**.
 2. Syötä **Eräpäivän hälytykset** -valintaikkunaan soveltuvat tiedot.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

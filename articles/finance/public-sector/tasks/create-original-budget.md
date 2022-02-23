@@ -1,25 +1,28 @@
 ---
 title: Alkuperäisen budjetin luominen ja alustavien budjettimerkintöjen palauttaminen julkiselle sektorille
-description: Tässä ohjeaiheessa on tietoja siitä, miten alkuperäinen budjettimerkintä luodaan ja palautetaan käyttäen budjettimallia ja dimensioarvoja, joissa on alustavat budjettisummat.
+description: Kun luot alkuperäisen budjettitapahtuman ja käytät budjettimallia ja dimension arvoja, jotka sisältävät alustavat budjettisummat, alustavat budjettisummat voidaan palauttaa.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0120e4aa895d70da418c643a81bd0046a96c031de0ca660e31bb3e0d8f8c2df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32d89216d49a743729de8910f738276cbddcd8bb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744247"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442861"
 ---
 # <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a>Alkuperäisen budjetin luominen ja alustavien budjettimerkintöjen palauttaminen julkiselle sektorille
 
@@ -48,6 +51,3 @@ Kun luot alkuperäisen budjettitapahtuman ja käytät budjettimallia ja dimensio
     * Jos haluat tehdä valinnaisia valintoja, napsauta sivun yläosassa avauskuvaketta.  
 18. Valitse Päivitä.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

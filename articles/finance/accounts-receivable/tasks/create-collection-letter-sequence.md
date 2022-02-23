@@ -1,40 +1,43 @@
 ---
 title: Maksukehotusjärjestyksen määrittäminen
-description: Tällä menettelyllä luodaan maksukehotusjärjestys.
-author: JodiChristiansen
-ms.date: 12/07/2021
+description: Tämän tehtävän ohjauksen avulla luodaan maksukehotussarja.
+author: mikefalkner
+manager: AnnBe
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 5d8aa4963026ad55ed3dfccb28b6cc68a872f326
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921196"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442663"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Maksukehotusjärjestyksen määrittäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tällä menettelyllä luodaan maksukehotusjärjestys. Tässä tehtävässä käytetään esittely-yritystä USMF.
+Tämän tehtävän ohjauksen avulla luodaan maksukehotussarja. Tässä tehtävässä käytetään esittely-yritystä USMF.
 
 1. Valitse siirtymisruudussa **Moduulit > Luotonvalvonta > Asetukset > Määritä maksukehotusjärjestys**.
 2. Valitse **Uusi**.
 3. Syötä **Maksukehotusjärjestys**-kenttään sarjaa kuvaavan järjestyksen tunnus. Sitä käytetään kirjausprofiilin määrittämisessä.
 4. Kirjoita **Kuvaus**-kenttään arvo.  Maksuehdot ovat valinnaisia. Jos syötät tähän arvon, maksukehotuksen perintälaskussa käytetään näitä maksuehtoja asiakkaan tietoihin tallennettujen maksuehtojen sijaan.  
 5. Valitse **Maksukehotuskoodi**-kenttään ensimmäisenä lähetettävän maksukehotuksen koodi. Ensimmäinen maksukehotus luodaan laskun eräpäivän, tämän rivin Päivät-kenttään syöttämäsi lisäajan ja muiden tälle riville syöttämiesi tietojen perusteella.  
-6. Kirjoita **Kuvaus**-kenttään arvo. 
-7. Maksun oletusvaluutta on yrityksen valuutta. Tämä valuuttakoodi voi olla eri kuin laskun valuutta.   
-8. Lisää järjestyksessä seuraavana lähetettävä maksukehotus valitsemalla **Lisää**. Usein ensimmäinen maksukehotus toimii vain varoituksena. Voit lisätä lisämaksuja tarvittaessa.  
-9. Valitse **Maksukehotuskoodi**-kentässä järjestyksessä seuraavana lähetettävä maksukehotus.
+6. Kirjoita **Kuvaus**-kenttään arvo. Lisämaksun valuutan oletusarvo on asiakkaan valuutta. Tämä valuuttakoodi voi olla eri kuin laskun valuutta.  
+7. Lisää järjestyksessä seuraavana lähetettävä maksukehotus valitsemalla **Lisää**. Usein ensimmäinen maksukehotus toimii vain varoituksena. Voit lisätä lisämaksuja tarvittaessa.  
+8. Valitse Maksukehotuskoodi-kentässä järjestyksessä seuraavana lähetettävä maksukehotus.
+9. Kirjoita **Kuvaus**-kenttään arvo.
 10. Valitse **Päätili**-kentässä lisämaksuissa käytettävä tuottotili.
 11. Syötä lisämaksu, joka veloitetaan tämän maksukehotuksen kirjaamisen yhteydessä.
 12. Avaa haku valitsemalla **Nimikkeen arvonlisäveroryhmä** -kentässä avattavan valikon painike. Valitse nimikkeen arvonlisäveroryhmä, jos lisämaksulle on laskettava arvonlisävero.  
@@ -56,6 +59,3 @@ Tällä menettelyllä luodaan maksukehotusjärjestys. Tässä tehtävässä käy
 26. Laajenna **Huomautukset**-pikavälilehti.
 27. Kirjoita valitun maksukehotuskoodin maksukehotuksessa näkyvä teksti. Huomautusruudun yläpuolella olevan Käännökset-valikon avulla voit kääntää tämän tekstin useille eri kielille.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

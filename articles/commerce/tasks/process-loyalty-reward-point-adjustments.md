@@ -2,24 +2,27 @@
 title: Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
 description: Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsiä ja miten kanta-asiakkaan palkkiopisteitä säädetään.
 author: scott-tucker
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07008234255102e6094e362edcadb116158e9ee770d782fbb654bfc1ce000285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bdbd9fa60fe4d000359e4695a9fb034fae3ca1b0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757342"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412007"
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a>Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
 
@@ -47,6 +50,3 @@ Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsi�
 15. Valitse Korttitapahtumat.
 16. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

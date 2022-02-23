@@ -2,30 +2,35 @@
 title: Määritä luokitukset ja arvostelut
 description: Tässä ohjeaiheessa kerrotaan, miten sähköisen kaupankäynnin sivusto määritetään niin, että se näyttää asiakasluokituksia ja -arvostelut Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968099"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411873"
 ---
 # <a name="configure-ratings-and-reviews"></a>Määritä luokitukset ja arvostelut
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten sähköisen kaupankäynnin sivusto määritetään niin, että se näyttää asiakasluokituksia ja -arvostelut Microsoft Dynamics 365 Commerce -sovelluksessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Sähköisen kaupankäynnin sivustojen luokitukset ja arvostelut auttavat asiakkaita saamaan tietoja tuotteista ennen ostopäätöksen tekemistä. NIiden avulla saadaan selville, mitä muut asiakkaat ajattelevat kyseisistä tuotteista. Sähköisen kaupankäynnin sivustoissa luokitukset ja arvostelut ovat myös keino, jolla kerätään asiakaspalautetta tuotteista. 
 
@@ -44,7 +49,7 @@ Voit määrittää sivuston näyttämään luokitukset ja arvostelut seuraavasti
 
 Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.
 
-![Sivuston määrittäminen niin, että se näyttää luokitukset ja arvostelut.](media/rnr-eCommerce-site-appsettings.png)
+![Sivuston määrittäminen niin, että se näyttää luokitukset ja arvostelut](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Tuoteluokituksen linkittäminen PDP:n Arvostelut-osaan
 
@@ -58,7 +63,7 @@ Voit linkittää tuoteluokituksen PDP:n osan **Arvostelut**-osaan seuraavasti.
 
 Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.
 
-![Tuoteluokituksen linkittäminen PDP-sivun Arvostelut-osaan.](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Tuoteluokituksen linkittäminen PDP:n Arvostelut-osaan](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Tietosuoja- ja käytäntösivun linkin määrittäminen
 
@@ -73,7 +78,7 @@ Voit määrittää tietosuoja- ja käytäntösivun linkin seuraavasti.
 
 Seuraava kuva osoittaa, miltä tämä määritys näyttää Dynamics 365 Commerce -sovelluksessa.
 
-![Tietosuoja- ja käytäntösivun linkin määrittäminen.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Tietosuoja- ja käytäntösivun linkin määrittäminen](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla
 
@@ -87,17 +92,6 @@ Lisätietoja luokitus- ja arvostelumoduulien määrittämisestä tuotetietojen s
 
 [Hallitse luokituksia ja arvosteluja](manage-reviews.md)
 
+[Luokitus- ja arvostelumoduulien määrittäminen tuotetietojen sivuilla](ratings-reviews-modules.md)
+
 [Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa](sync-product-ratings.md)
-
-[Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
-
-[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
-
-[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
-
-[Luokitusten ja arvostelujen usein kysytyt kysymykset](ratings-reviews-faq.md)
-
-[Luokitusten ja arvosteluiden moduulit](ratings-reviews-modules.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

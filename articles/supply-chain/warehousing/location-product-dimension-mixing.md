@@ -2,23 +2,26 @@
 title: Tuotedimensioiden yhdistäminen sijainnissa
 description: Tässä ohjeaiheessa on tietoja tuotteiden useiden eri mittojen yhtäaikaisesta käytöstä samassa toimipaikassa. Tämä toimipaikkaprofiilin toiminto auttaa parantamaan toimipaikan varastonhallintaa, kun tuotteesta on varastossa useita variantteja tai tuotteiden ominaisuudet vaihtelevat, kuten muotiteollisuudessa. Sen avulla voit määrittää, voidaanko toimipaikkaprofiilissa sekoittaa tuotteita kokoonpanon, värin, tyylin ja värin mukaan vai voidaanko samassa toimipaikassa varastoida vain yhtä tietyn ominaisuuden tai ominaisuusyhdistelmän tuotetta.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 20085c51230d3ceca46c5119fecbc3cf3291ecd4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578557"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427396"
 ---
 # <a name="location-product-dimension-mixing"></a>Tuotedimensioiden yhdistäminen sijainnissa
 
@@ -204,9 +207,9 @@ Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, 
 
 1. Valitse **Tallenna**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Ostotilausrivien vastaanottaminen varastonhallinnan mobiilisovelluksessa
+### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Ostotilausrivien vastaanottaminen varasto-sovelluksessa
 
-1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä, joka on otettu käyttöön varastolle *24*.
+1. Kirjaudu varastosovellukseen käyttäjänä, joka on otettu käyttöön varastossa *24*.
 1. Valitse **Saapuvat**-valikko.
 1. Valitse **Ostotilausrivien vastaanotto**.
 1. Valitse **PUNUM**-kenttä ja syötä ostotilauksen numero.
@@ -236,5 +239,3 @@ Luot ostotilauksen, jossa on kolme riviä: kaksi riviä samalle tuotenumerolle, 
 
 > [!TIP]
 > Voit toistaa tämän skenaarion, mutta tällä kertaa määritä **Koko**-kentän arvoksi  - *Ei* **Salli tuotedimensioiden yhdistäminen**-pikavälilehden kohdassa *BULKKI* **Sijaintiprofiilit**, jolloin mitään tuotedimensioita ei voi varastoida samaan sijaintiin. Tällöin kun vastaanotat ostotilauksen, jokainen tuotevariantti sijoitetaan uuteen sijaintiin.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

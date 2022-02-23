@@ -1,23 +1,26 @@
 ---
 title: Luotonhallinnan määritys
 description: Tässä ohjeaiheessa kuvataan luottohallinnan edellyttämät määritykset.
-author: JodiChristiansen
+author: mikefalkner
+manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b9e756b678786d2c5a8c5bb9e890ce988090c09
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753662"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442640"
 ---
 # <a name="credit-management-setup"></a>Luotonhallinnan määritys 
 
@@ -150,6 +153,3 @@ Seuraavien vaiheiden avulla voit lisätä valittujen kriteerien perusteella luot
 2. Valitse vertailuoperaattori, joka määrittää, miten pisteytysryhmän tiedot arvioidaan.
 3. Määritä arvo, jota verrataan pisteytysryhmälle määritettyyn arvoon.
 4. Määritä luottoraja, joka määritetään, jos asiakastiedot vastaavat pisteytysryhmälle määritettyä arvoa. Voit esimerkiksi luoda automaattisen luottorajan **Alahainen pistemäärä** -ryhmälle. Jos toiminta-aika on yksi pisteytysryhmistä, voit määrittää yhden rivin, joka määrittää luottorajaksi 100 000, jos asiakas on toiminut viisi vuotta ja toisen rivin, joka määrittää luottorajaksi 200 000, jos asiakas on toiminut 10 vuoden ajan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

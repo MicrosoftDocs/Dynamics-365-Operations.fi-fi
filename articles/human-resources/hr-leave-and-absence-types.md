@@ -1,33 +1,31 @@
 ---
 title: Määritä loman ja poissaolon tyypit
 description: Määritä Dynamics 365 Human Resourcesissa lomatyypit, joita työntekijät voivat valita.
-author: twheeloc
-ms.date: 09/09/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76b8661c4c6d8fe6cf0568be966f1652b95b5442
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6e6ca7d04b86232ba48474fcbe288a18995661ae
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067324"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418301"
 ---
 # <a name="configure-leave-and-absence-types"></a>Määritä loman ja poissaolon tyypit
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolotyypit, joita työntekijät voivat ilmoittaa. Voit räätälöidä lomatyyppejä organisaatiosi tarpeiden mukaan. Esimerkkejä lomatyypeistä:
 
@@ -68,53 +66,19 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 
 1. Määritä lomatyypin pyöristysasetukset. Vaihtoehtoja ovat **Ei mitään**, **Ylös**, **Alas** ja **Lähin**. Voit myös määrittää lomatyypin pyöristystarkkuuden.
 
-2. Määritä lomatyypin **Lomakorjaukset**. Kun valitset tämän vaihtoehdon, työpäivään kuuluvien lomien määrää käytetään sen määrittämiseen, miten lomatyypille voidaan jaksottaa aikaa. Jos esimerkiksi joulupäivä osuu maanantaihin, henkilöstöhallinto vähentää yhden päivän lomatyypistä jaksotusten käsittelyn yhteydessä.
+2. Määritä lomatyypin **Lomakorjaukset**. Kun valitset tämän vaihtoehdon, henkilöstöhallinto käyttää työpäivään kuuluvien lomien määrää määrittääkseen, miten lomatyypille voidaan jaksottaa aikaa. Jos esimerkiksi joulupäivä osuu maanantaihin, henkilöstöhallinto vähentää yhden päivän lomatyypistä jaksotusten käsittelyn yhteydessä.
 
-   Voit määrittää lomat työaikakalenteriin. Lisätietoja on ohjeaiheessa [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md).
+   Voit määrittää lomat työaikakalenteriin. Lisätietoja on ohjeaiheessa [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
    
  3. Määritä vapaan tyypiksi **Siirretty lomatyyppi**. Kun valitset tämän vaihtoehdon, kaikki siirrettävät saldot siirretään määritettyyn lomatyyppiin. Siirretyn lomatyypin on sisällyttävä myös loma- ja poissaolosuunnitelmaan. 
  
-4. Määritä lomatyypin **vanhenemissäännöt**. Kun määrität tämän asetuksen, voit valita päivien tai kuukausien yksikön ja määrittää vanhenemisajan. Vanhenemisajan voimaantulopäivämäärää käytetään määrittämään, milloin loman vanhenemisen käsittelevä erätyö käynnistetään tai milloin sääntö tulee voimaan. Vanhentuminen tapahtuu aina jaksotuskauden aloituspäivänä. Jos jaksotuskauden alkamispäivämäärä on esimerkiksi 3.8.2021 ja vanhentumissäännöksi on määritetty 6 kuukautta, sääntö käsitellään jaksotuskauden alkamispäivämäärän erääntymisen vastakirjauksen perusteella, joten se suoritetaan 3.2.2022. Kaikki voimassaolon päättymishetkellä jäljellä olevat saldot vähennetään lomatyypistä, ja ne näkyvät lomasaldoissa.
+ 4. Määritä lomatyypin **vanhenemissäännöt**. Kun määrität tämän asetuksen, voit valita päivien tai kuukausien yksikön ja määrittää vanhenemisajan. Voit myös määrittää vanhentumissäännön voimaantulopäivämäärän. Kaikki voimassaolon päättymishetkellä jäljellä olevat saldot vähennetään lomatyypistä, ja ne näkyvät lomasaldoissa. 
  
-## <a name="configure-the-required-attachment-per-leave-type"></a>Määritä tarvittava liite lomatyyppiä kohden
-
-> [!NOTE]
-> Jos haluat käyttää **Liite pakollinen** -kenttää, sinun on ensin otettava **Määritä lomapyyntöjen pakollinen liite** -ominaisuus käyttöön ominaisuuksien hallinnassa. Lisätietoja ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
-
-1. Valitse **Loma ja poissaolo** -sivun **Linkit**-välilehden **Asetukset**-kohdassa **Loma- ja poissaolotyypit**.
-
-2. Valitse loma- ja poissaolotyyppi luettelosta. Määritä tämän jälkeen **Yleiset**-osassa **Liite pakollinen** -kenttää käyttämällä, onko liite ladattava, kun työntekijä lähettää uuden lomapyynnön valittua lomatyyppiä käyttäen. 
-
-Työntekijöiden on ladattava liite, kun he lähettävät uuden lomapyynnön, jonka lomatyypissä **Liite pakollinen** -kenttä on käytössä. Lomapyynnön hyväksyjät voivat käyttää määritettyjen työnimikkeiden **Liitteet**-vaihtoehtoa tarkastellakseen liitettä, joka on ladattu lomapyynnön osana. Jos lomapyyntöä käytetään Human Resources -sovelluksesta Microsoft Teamsissä, **Näyttötiedot**-valintaa lomapyynnössä voidaan käyttää sen tietojen ja mahdollisten liitteiden tarkasteluun.
-
-## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Määritä lomayksiköt (päivät/tunnit) lomatyypin mukaan
-
-> [!NOTE]
-> Jos haluat käyttää lomayksiköitä lomatyyppiä kohden -toimintoa, sinun on ensin otettava käyttöön **Määritä lomayksiköt lomatyyppiä kohden** -ominaisuus ominaisuuksien hallinnassa. Lisätietoja ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
-
-> [!IMPORTANT]
-> Oletusarvon mukaan yrityksen lomatyypit käyttävät lomayksiköitä yritystason lomaparametrien konfiguraatiosta.
-> 
-> Loma- ja poissaolotyypin lomayksikköä voi muokata vain, jos lomatyypille ei ole lomatapahtumia.
-> 
-> Kun toiminto on otettu käyttöön, sitä ei voi poistaa käytöstä.
-
-1. Valitse **Loma ja poissaolo** -sivun **Linkit**-välilehden **Asetukset**-kohdassa **Loma- ja poissaolotyypit**.
-
-2. Valitse loma- ja poissaolotyyppi luettelosta. Valitse sitten **Yleiset**-osan **Yksikkö**-kentästä lomayksikkö. Voit valita **Tunnit** tai **Päivät**.
-
-3. Valinnainen: Jos valitsit **Tunnit** **Yksikkö**-kentässä , voit määrittää **Ota käyttöön puolipäivämääritys** -kentän avulla, voivatko työntekijät valita ensimmäisen puolipäiväisen vai toisen puolipäiväisen vapaapäivän, jos he pyytävät puolen päivän lomaa.
-
-Työntekijät, jotka lähettävät uuden lomapyynnön, voivat muodostaa lomapyyntönsä valitsemalla eri lomatyyppejä. Kaikilla yksittäisen lomapyynnön osana valituilla lomatyypeillä on kuitenkin oltava sama lomayksikkö. Työntekijät voivat tarkastella kunkin lomatyypin lomayksikköä **Pyydä vapaa-aikaa** -lomakkeessa.
-
+ 
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
 - [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
 - [Loman keskeyttäminen](hr-leave-and-absence-suspend-leave.md)
-- [Loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulkujen luominen](hr-leave-and-absence-buy-sell-workflow.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

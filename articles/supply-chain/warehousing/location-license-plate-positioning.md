@@ -2,23 +2,26 @@
 title: Toimipaikan rekisterikilpien paikannus
 description: Toimipaikan rekisterikilpien paikannuksen avulla voit nähdä, missä rekisterikilpi sijaitsee monilavaisessa kokoonpanossa, kuten paikoissa, joissa käytetään syviä lavahyllyjä.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c19f8dcdb7d84b752e0eec56afdb1a1865cfe00b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567604"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427395"
 ---
 # <a name="location-license-plate-positioning"></a>Toimipaikan rekisterikilpien paikannus
 
@@ -88,7 +91,7 @@ Toiminto on otettava käyttöön kaikkien niiden toimipaikkojen sijaintiprofiile
 1. Kun **Rekisterikilpi** on valittuna, valitse **Lisää taulun liitos**.
 1. Valitse näyttöön tulevan taululuettelon **Suhde**-sarakkeesta **Toimipaikan rekisterikilpien paikannus (Rekisterikilpi)**. Lisää sitten kohta **Toimipaikan rekisterikilpien paikannus** taulukon **Varaston dimensiot** liitokseen valitsemalla **Valitse**.
 
-    ![Taulun liitokset.](media/LpTableJoin.png "Taulun liitokset")
+    ![Taulun liitokset](media/LpTableJoin.png "Taulun liitokset")
 
 1. Vahvista päivitetyt liitetyt taulut valitsemalla **OK** ja sulje kyselyeditori.
 1. Avaa kyselyeditori uudelleen valitsemalla **Sijaintidirektiivin toiminnot** -pikavälilehdessä **Muokkaa kyselyä**.
@@ -100,7 +103,7 @@ Toiminto on otettava käyttöön kaikkien niiden toimipaikkojen sijaintiprofiile
     - **Kenttä:** *LP-sijainti*
     - **Ehdot:** *1*
 
-    ![Uusi alue.](media/LpPositionCriteria.png "Uusi alue")
+    ![Uusi alue](media/LpPositionCriteria.png "Uusi alue")
 
 1. Vahvista muutokset valitsemalla **OK** ja sulje kyselyeditori.
 
@@ -275,9 +278,6 @@ Kun *Toimipaikan rekisterikilven paikannus* -toiminto on määritetty ja varasto
 1. Valitse **Skannaa työn tunnus/rekisterikilven tunnus** sivulla **Tunnus**-kenttä ja kirjoita siihen työn tunnus myyntiriviltä.
 1. Huomaa, että keräystyö ohjaa sinut keräämään nimikkeen *A0002* toimipaikasta *01A01R1S2B*. Tämä ohje tulee näyttöön, koska nimike *A0002* on kirjattu rekisterikilpeen, joka on tämän toimipaikan sijainnissa *1*.
 
-    ![Sijainti 1 toimipaikassa.](media/LocationLicensePlatePositioning.png "Sijainti 1 toimipaikassa")
+    ![Sijainti 1 toimipaikassa](media/LocationLicensePlatePositioning.png "Sijainti 1 toimipaikassa")
 
 1. Kirjoita toimipaikalle luomasi rekisterikilven tunnus ja kerää myyntitilaus noudattamalla kehotteita.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

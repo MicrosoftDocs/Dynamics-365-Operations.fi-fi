@@ -1,27 +1,30 @@
 ---
 title: Tilauksen oletusasetukset dimensioille ja tuotevarianteille
 description: Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä.
-author: johanhoffmann
+author: t-benebo
+manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778104"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427366"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimensioiden ja tuotevarianttien oletustilausasetukset
 
@@ -115,7 +118,7 @@ Voit määrittää tilausasetusten säännöt, joita käytetään aktiiviseen tu
 
 Tarkastellaan seuraavaa esimerkkituotetta:
 
-| Nimike                                                | Arvo                                   |
+|                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
 | **Tuotteen nimi**                                    | Valosähköanturi                    |
 | **Nimiketunnus**                                     | XW56                                    |
@@ -188,7 +191,7 @@ Tiukka vahvistus koskee **Vakiotilausmäärä**-arvoja, jotka on määritetty **
 
 ### <a name="enable-the-strict-validation-option"></a>Tiukan vahvistusasetuksen käyttöönotto
 
-Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla toiminnon tilan sekä ottaa sen käyttöön tai poistaa sen käytöstä tarvittaessa. Toiminto näkyy seuraavasti:
+Ennen kuin käytät tiukkaa vahvistusasetusta, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) sivua ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön tarvittaessa. Toiminto näkyy seuraavasti:
 
 - **Moduuli** - *Tuotetietojen hallinta*
 - **Ominaisuuden nimi** - *Oletustilausmäärien tiukka vahvistus*
@@ -201,6 +204,3 @@ Voit määrittää vahvistusasetuksen seuraavasti:
 1. Määritä **Yleistä**-välilehdessä **Oletustilausmäärien vahvistus** jollekin seuraavista arvoista:
     - **Tiukka** - Valitse tämä asetus, jos haluat varmistaa, että kaikki **vakiotilausmäärän** arvot ovat **Monikerta**-arvon monikertoja kussakin pikavälilehdessä (**Ostotilaus**, **Varasto** ja **Myyntitilaus**).
     - **Vakio** - Valitse tämä asetus, jos haluat käyttää vakiovahvistusta (joka toimii samalla tavalla, jos tämä ominaisuus ei ole käytössä).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

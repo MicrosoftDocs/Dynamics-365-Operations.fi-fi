@@ -1,40 +1,39 @@
 ---
-title: Hallinnan yleiskatsaus
-description: Tässä aiheessa on luettelo Dynamics 365 Human Resourcesin määrittämisessä, hallinnassa ja vianmäärityksessä käytettävistä ohjeaiheista ja muista resursseista.
-author: twheeloc
-ms.date: 08/11/2021
-ms.topic: overview
+title: Yleiskatsaus
+description: Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynamics 365 Human Resourcesia ja tehdä sille vianmäärityksiä.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a403390132443f29f12e11914b7a0f08faffa973
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068406"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527858"
 ---
-# <a name="administration-overview"></a>Hallinnan yleiskatsaus
+# <a name="overview"></a>Yleiskatsaus
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Tässä aiheessa on luettelo Dynamics 365 Human Resourcesin määrittämisessä, hallinnassa ja vianmäärityksessä käytettävistä ohjeaiheista ja muista resursseista.
+Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynamics 365 Human Resourcesia ja tehdä sille vianmäärityksiä.
 
 - [Järjestelmävaatimukset](hr-admin-system-requirements.md)
 
-- Määritä ja hallitse esiintymiä
+- Voit määrittää ja hallita esiintymiä
   - [Human Resourcesin valmisteleminen](hr-admin-setup-provision.md)
   - [Kopioi esiintymä](hr-admin-setup-copy-instance.md)
   - [Poista esiintymä](hr-admin-setup-remove-instance.md)
@@ -42,15 +41,15 @@ Tässä aiheessa on luettelo Dynamics 365 Human Resourcesin määrittämisessä,
 
 - Määritä tietojen integraatio
   - [Tietojen integrointiteknologian valitseminen](hr-admin-integration-choose-technology.md)
-  - [Dataverse -integroinnin määritys](hr-admin-integration-common-data-service.md)
-  - [Integroinnin määrittäminen Financen kanssa](hr-admin-integration-finance.md)
-  - [Integroinnin määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
+  - [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
+  - [Integraation määrittäminen Financen kanssa](hr-admin-integration-finance.md)
+  - [Integraation määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
   - [Toistuvan tietojen viennin sovelluksen luominen](hr-admin-integration-recurring-data-export.md)
   - Office-integraatio
-    - [Office-integraation opasohjelma](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Yksikkötietojen päivittäminen Excelissä](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Avaa Excelissä -kokemusten luominen](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Office-integraation vianmääritys](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office-integraation opasohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Yksikkötietojen päivittäminen Excelissä](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Avaa Excelissä -kokemusten luominen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integraation vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 
@@ -85,7 +84,7 @@ Tässä aiheessa on luettelo Dynamics 365 Human Resourcesin määrittämisessä,
   - [Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Human Resourcesin vianmääritys
-  - [Tuen saaminen](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+  - [Tuen saaminen](hr-admin-troubleshooting-support.md)
   - [Optimoi suorituskyky automaattisilla tyhjennystehtävillä](hr-admin-troubleshooting-batch-history.md)
   - [Analytiikkaraportteja ei päivitetä](hr-admin-troubleshooting-analytic-reports.md)
   - [Power Apps -hallintakeskuksessa ei voi luoda ympäristöä](hr-admin-troubleshooting-power-apps.md)
@@ -96,21 +95,10 @@ Tässä aiheessa on luettelo Dynamics 365 Human Resourcesin määrittämisessä,
   - [Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources ei näy Dynamics 365 -sovelluksissa](hr-admin-troubleshooting-not-in-apps.md)
   - [Raportointivaihtoehdot](hr-admin-troubleshooting-reporting.md)
-  - [Integraatioiden usein kysytyt kysymykset](hr-admin-troubleshooting-integration.md)
-
-## <a name="additional-resources"></a>Lisäresurssit
-
-### <a name="elearning-courses"></a>eLearning-kurssit
-Online-kursseista ja -koulutuksesta saat tietoa [Dynamics 365 Human Resourcesin Microsoft Learn -sivulta](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
-
-### <a name="videos"></a>Videot
-
-Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
+  - [Integroinnin usein kysytyt kysymykset](hr-admin-troubleshooting-integration.md)
 
 ## <a name="see-also"></a>Lisätietoja
 
 - [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
 - [Kehittäjän opas](hr-developer-overview.md)
 - [Käyttöopas](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

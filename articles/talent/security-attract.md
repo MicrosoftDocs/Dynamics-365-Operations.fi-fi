@@ -157,6 +157,3 @@ Ehdokkaat ovat kykypooliin lisättyjä henkilöitä, joita ei ole liitetty työh
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profiili – ehdokkaan tiedot | Luonti, luku, päivitys ja poisto | Luonti, luku, päivitys ja poisto | Ei pääsyä   |
 | Tiedostot                   | Luonti, luku, päivitys ja poisto | Luonti, luku, päivitys ja poisto | Ei pääsyä   |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

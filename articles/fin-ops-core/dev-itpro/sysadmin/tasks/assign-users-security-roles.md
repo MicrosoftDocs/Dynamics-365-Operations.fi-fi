@@ -2,9 +2,11 @@
 title: Käyttäjien liittäminen käyttöoikeusrooleihin
 description: Finance and Operations -sovellusten käyttämistä varten käyttäjille on määritettävä käyttöoikeusrooleja.
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d65c4dafda63b7a54dd343652b0f4b498e064f4aee0fba43c34d40d73ac5062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748333"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679861"
 ---
 # <a name="assign-users-to-security-roles"></a>Käyttäjien liittäminen käyttöoikeusrooleihin
 
@@ -55,6 +57,3 @@ Järjestelmänvalvojan on myös poistettava käyttöoikeusrooleihin manuaalisest
 2. Valitse puussa rooli ja **Roolille määritetyt käyttäjät** -valikossa **Määritä tai sulje pois käyttäjiä manuaalisesti**.
 4. Käyttäjät, joille ei ole määritetty roolia **Määritä käyttäjiä rooliin tai sulje käyttäjät pois roolista** -kohdassa määritetään **Roolienmääritystilassa** asetuksella **Ei mitään**. Valitse vähintään yksi käyttäjä, jolle rooli liitetään.
 5. Valitse **toimintoruudussa** **Määritä rooliin**. **Määritystila** päivitetään **Manuaaliseksi**, ja käyttäjät voivat nyt määrittää uuden roolin.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

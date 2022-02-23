@@ -2,9 +2,11 @@
 title: Tuo konfiguraatioita luodaksesi sovellustietoja sisältäviä asiakirjoja
 description: ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen tämän menettelyn vaiheiden suorittamista.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f919d953c3aa0c8d16366167a12e52d35f32cdf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727482"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684616"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Tuo konfiguraatioita luodaksesi sovellustietoja sisältäviä asiakirjoja
 
@@ -73,6 +75,3 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
     * Tarkista Intrastat-raportin luonnissa käytettävän muodon rakenne. Ota huomioon, että se on määritetty luomaan XML-tiedosto niin, että tiedot täytetään lähtevän asiakirjan juurinimikkeeseen perustuvasta tietomallista. Tarkista, että luodun tiedoston nimi on määritetty käyttäjän valintanäytössä (tässä käytetään fn-tietolähdettä).   
 30. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

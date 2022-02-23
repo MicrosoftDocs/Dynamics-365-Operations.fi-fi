@@ -2,9 +2,11 @@
 title: Kirjaa kirjatut kirjauskansioviennit
 description: Tässä menettelyssä käsitellään kirjattujen kirjauskansiovientien kirjaaminen.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 519431684cd26d566ae4c9dd75010d5c98881b602681211908c0c70215448fea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad18063e0a66a4aac0ebef7f0ce45c73137abcc7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738452"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968526"
 ---
 # <a name="journalize-posted-journal-entries"></a>Kirjaa kirjatut kirjauskansioviennit
 
@@ -37,6 +39,3 @@ Tässä menettelyssä käsitellään kirjattujen kirjauskansiovientien kirjaamin
 9. Sulje suodatussivu valitsemalla **OK**.
 10. Aloita kirjausprosessi valitsemalla **OK**. Raportti luodaan, kun prosessi on valmis.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,25 +2,34 @@
 title: Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 description: Tässä ohjeaiheessa käsitellään kaksoiskirjoituksen valuutan osalta tukemien desimaalien määrän muuttamista.
 author: RamaKrishnamoorthy
-ms.date: 12/08/2021
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061833"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744372"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Valuutta-arvoissa tuettujen desimaalien määrän voi kasvattaa enintään kymmeneen. Oletusraja on neljä desimaalia. Desimaalien määrää lisäämällä voi estää tietojen menettämisen, kun tietojen synkronointiin käytetään kaksoiskirjoitusta. Desimaalien määrän lisääminen on muutos, joka on hyväksyttävä. Muutoksen tekemiseen tarvitaan Microsoftin apua.
 
@@ -29,7 +38,7 @@ Desimaalien määrään muuttamisessa on kaksi vaihetta:
 1. Siirtoa pyydetään Microsoftilta.
 2. Desimaalien määrää muutetaan Dataversessa.
 
-Taloushallinnon ja toimintojen sovelluksen ja Dataversen on tuettava samaa valuutta-arvojen desimaalimäärää. Muussa tapauksessa tietoja menetetään, kun tietoja synkronoidaan sovellusten välillä. Vaikka siirtoprosessi määrittää uudelleen tavan, jolla valuutta- ja vaihtokurssiarvot tallennetaan, itse tiedot eivät muutu. Kun siirto on valmis, desimaalien määrää voi lisätä valuuttakoodeissa ja hinnoittelussa, minkä lisäksi käyttäjien antamien ja tarkastelemien tietojen desimaalitarkkuus voi parantua.
+Finance and Operations -sovelluksen ja Dataversen on tuettava samaa valuutta-arvojen desimaalimäärää. Muussa tapauksessa tietoja menetetään, kun tietoja synkronoidaan sovellusten välillä. Vaikka siirtoprosessi määrittää uudelleen tavan, jolla valuutta- ja vaihtokurssiarvot tallennetaan, itse tiedot eivät muutu. Kun siirto on valmis, desimaalien määrää voi lisätä valuuttakoodeissa ja hinnoittelussa, minkä lisäksi käyttäjien antamien ja tarkastelemien tietojen desimaalitarkkuus voi parantua.
 
 Siirto on valinnainen toiminto. Jos desimaalien lisäämisestä saattaa olla hyötyä, siirtoa kannattaa harkita. Organisaatioiden, jotka eivät tarvitse yli neljän desimaalin arvoja, ei tarvitse siirtyä.
 
@@ -37,7 +46,7 @@ Siirto on valinnainen toiminto. Jos desimaalien lisäämisestä saattaa olla hy�
 
 Dataversen nykyisten valuuttasarakkeiden tallennustila hyväksyy enintään neljä desimaalia. Tämän vuoksi valuutta-arvot kopioidaan siirtoprosessin aikana tietokannan uusiin, sisäisiin sarakkeisiin. Tämä prosessi jatkuu siihen saakka, että kaikki tiedot on siirretty. Vaikka siirron päätyttyä uudet tallennustilatyypit korvaavat sisäisesti vanhat tallennustilat, tietoarvot eivät ole muuttuneet. Valuuttasarakkeet voivat tämän jälkeen tukea enintään 10 desimaalia. Dataversen käyttöä voi jatkaa siirtoprosessin aikana ilman keskeytyksiä.
 
-Valuuttakursseja muokataan samanaikaisesti siten, että ne tukevat enintään 12 desimaalia nykyisen 10 desimaalin rajan sijaan. Tämä muutos on välttämätön, jotta desimaalien määrä on sama taloushallinnon ja toimintojen sovelluksessa ja Dataversessa.
+Valuuttakursseja muokataan samanaikaisesti siten, että ne tukevat enintään 12 desimaalia nykyisen 10 desimaalin rajan sijaan. Tämä muutos on välttämätön, jotta desimaalien määrä on sama Finance and Operations -sovelluksessa ja Dataversessa.
 
 Siirto ei muuta tietoja millään tavalla. Kun valuutta- ja vaihtokurssisarakkeet on muunnettu, järjestelmänvalvojat voivat määrittää järjestelmän käyttämään valuuttasarakkeissa 10 desimaalia. Se tehdään määrittämällä kunkin tapahtuman valuutan ja hinnoittelun desimaalien määrä.
 
@@ -75,28 +84,14 @@ Rajoituksia:
 
 Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset**-välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -sarakkeessa, kuten seuraavassa kuvassa.
 
-![Valuutan järjestelmäasetukset.](media/currency-system-settings.png)
+![Valuutan järjestelmäasetukset](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Liiketoiminta-asiakirjat: valuutat
 
 Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tarkkuudesta, sitä on muutettava. Valitse ensin **Asetukset \> Liiketoiminnan hallinta** ja sitten **Valuutat** ja muutettava valuutta. Määritä sitten **Valuutan tarkkuus** -sarakkeeseen sopiva desimaalien määrä, mistä on esimerkki seuraavassa kuvassa.
 
-![Tietyn alueen valuutta-asetukset.](media/specific-currency.png)
+![Tietyn alueen valuutta-asetukset](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>Taulut: Valuutta-sarake
+### <a name="tables-currency-column"></a>taulut: Valuutta-sarake
 
 Tiettyihin valuuttasarakkeisiin määritettävien desimaalien määrä on rajoitettu neljään.
-
-### <a name="default-currency-decimal-precision"></a>Valuutan oletusdesimaalitarkkuus
-Seuraavassa taulussa on lisätietoja oletusvaluutan desimaalitarkkuusmallista siirtoa ja muita skenaarioita varten. 
-
-| Luontipäivä  | Valuutan desimaalikenttä    | Aiemmin luotu organisaatio (valuuttakenttää ei siirretä) | Aiemmin luotu organisaatio (valuuttakenttää siirretään) | Uusi organisaatio luotu koontiversion 9.2.21062.00134 jälkeen |
-|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
-| Ennen koontiversiota 9.2.21111.00146 luotu valuuttakenttä  |     |  |       |
-|    | Käyttöliittymässä näkyvä enimmäistarkkuus   | 4 numeroa    | 10 numeroa    | Ei saatavilla    |
-| | Tietokannan ja tietokantakyselyn tulosten käyttöliittymän enimmäistarkkuus         | 4 numeroa   | 10 numeroa   | Ei saatavilla    |
-| Koontiversion 9.2.21111.00146 jälkeen luotu valuuttakenttä |    |  |     |   |
-|   | Käyttöliittymässä näkyvä enimmäisdesimaalitarkkuus     | 4 numeroa   | 10 numeroa   | 10 numeroa     |
-|          | Tietokannan ja tietokantakyselyn tulosten käyttöliittymän enimmäisdesimaalitarkkuus | 10 numeroa. Kuitenkin vain neljä on merkittäviä, kun kaikki on nollia neljän desimaalin ulkopuolella. Tämä helpottaa ja nopeuttaa organisaation siirtoa tarpeen mukaan. | 10 numeroa      | 10 numeroa     |
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset
 description: Tässä aiheessa käsitellään tuotannonohjauksen kuormitusten käyttöä pilvi- ja reunapalvelujen scale unitien kanssa.
 author: cabeln
+manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,25 +18,22 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068841"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967758"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-> [!IMPORTANT]
-> Valmistuksen suorittamisen kuormitus on tällä hetkellä käytettävissä vain esiversiona.
->
+> [!WARNING]
 > Joitakin liiketoimintatoimintoja ei tueta kokonaisuudessaan julkisessa esiversiossa, kun kuormituksen scale uniteja käytetään.
->
-> Et voi suorittaa valmistuksen suorituksen työkuorman esiversiota Scale Unitille, jos varaston suorituksen työkuorma on myös asennettu.
 
-Tuotannon suorittamisessa asteikkoyksiköt toimittavat seuraavat toiminnot:
+Tuotannonohjauksessa pilvi- ja reunapalvelujen scale uniteissa on seuraavat ominaisuudet myös silloin, kun reunapalvelujen yksiköt eivät ole yhteydessä keskukseen:
 
 - Koneenkäyttäjät ja työnjohtajat voivat käyttää operatiivista tuotantosuunnitelmaa.
 - Koneenkäyttäjät voivat pitää suunnitelman ajan tasalla suorittamalla erillisen valmistuksen ja prosessivalmistuksen töitä.
@@ -47,7 +46,7 @@ Tässä aiheessa käsitellään tuotannonohjauksen kuormitusten käyttöä pilvi
 
 Valmistuksen elinkaari jaetaan seuraavan kuvan osoittamalla tavalla kolmeen osaan: *suunnittelu*, *toteutus* ja *viimeistely*.
 
-[![Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö](media/mes-phases.png "Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö.")](media/mes-phases-large.png)
+[![Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö](media/mes-phases.png "Valmistuksen toteutusvaiheet, kun käytössä on yksi ympäristö")](media/mes-phases-large.png)
 
 _Suunnittelu_-vaihe sisältää tuotannon määrittelyn, suunnittelun, tilauksen luonnin ja aikatauluttamisen sekä vapautuksen. Vapautusvaihe ilmaisee siirtymisen _Suunnittelu_-vaiheesta _Toteutus_-vaiheeseen. Kun tuotantotilaus vapautetaan, tuotantotilauksen työt tulevat näkyviin tuotannossa ja ovat valmiita toteuttamiseen.
 
@@ -57,7 +56,7 @@ Kun tuotantotyö merkitään valmiiksi, se siirtyy _Suorita_-vaiheesta _Viimeist
 
 Kuten seuraavassa kuvassa osoitetaan, scale uniteja käytettäessä _Toteutus_-vaihe jaetaan erilliseksi kuormitukseksi.
 
-[![Valmistuksen toteutusvaiheet scale uniteja käytettäessä](media/mes-phases-workloads.png "Valmistuksen toteutusvaiheet, kun scale unitit ovat käytössä.")](media/mes-phases-workloads-large.png)
+[![Valmistuksen toteutusvaiheet scale uniteja käytettäessä](media/mes-phases-workloads.png "Valmistuksen toteutusvaiheet scale uniteja käytettäessä")](media/mes-phases-workloads-large.png)
 
 Malli siirtyy nyt yhden esiintymän asennuksesta keskukseen ja scale uniteihin perustuvaan mallin. _Suunnittelu_- ja _Viimeistely_-vaiheet suoritetaan taustatoimintoina keskuksessa ja tuotannonohjauksen kuormitus suoritetaan scale uniteina. Tietoja siirretään asynkronisesti keskuksen ja scale unitien välillä.
 
@@ -74,7 +73,6 @@ Seuraavat tuotannonohjauksen tehtävät voidaan tällä hetkellä suorittaa kuor
 - Ilmoita hävikki
 - Epäsuora tehtävä
 - Tauko
-- Ilmoita valmiiksi ja hyllytettäväksi (vaatii, että suoritat myös Scale Unitin varaston suorituksen kuormituksen, katso myös kohta [Ilmoita valmiiksi ja hyllytettäväksi Scale Unitille](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Tuotannonohjauksen kuormitusten käyttäminen keskuksessa
 
@@ -90,7 +88,7 @@ Vaikka työ suoritetaan yleensä automaattisesti, se voidaan suorittaa manuaalis
 
 Rekisteröinnin käsittelylokia voi tarkastella kirjautumalla keskukseen ja valitsemalla **Tuotannonhallinta \> Kausittaiset tehtävät \> Taustatoimintojen kuormituksen hallinta \> Lähdetietojen rekisteröinnin käsittelyloki**. **Lähdetietojen rekisteröinnin käsittelyloki** -sivulla on luettelo käsitellyistä lähdetietojen rekisteröinneistä ja kunkin rekisteröinnin tila.
 
-![Lähdetietojen rekisteröinnin käsittelyloki -sivu.](media/mes-processing-log.png "Lähdetietojen rekisteröinnin käsittelyloki -sivu")
+![Lähdetietojen rekisteröinnin käsittelyloki -sivu](media/mes-processing-log.png "Lähdetietojen rekisteröinnin käsittelyloki -sivu")
 
 Luettelossa olevaa rekisteröintiä voi käsitellä valitsemalla ensin se ja sitten jompikumpi seuraavista painikkeista toimintoruudussa:
 
@@ -111,43 +109,3 @@ Scale unitissa käsiteltyjen valmistustöiden historiaa voi tarkastella kirjautu
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Tuotannon keskuksesta scale unitiin viestikäsittely -työ
 
 _Tuotannon keskuksesta scale unitiin viestikäsittely_ -työ käsittelee tiedot keskuksesta scale unitiin. Tämä työ käynnistyy automaattisesti, kun tuotannonohjauksen kuormitus otetaan käyttöön. Se voidaan kuitenkin suorittaa myös manuaalisesti koska tahansa valitsemalla **Tuotannonhallinta \> Kausittaiset tehtävät \> Taustatoimintojen kuormituksen hallinta \> Tuotannon keskuksesta scale unitiin viestikäsittely**.
-
-<a name="RAF"></a>
-
-## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Ilmoita valmiiksi ja hyllytettäväksi Scale Unitille
-
-<!-- KFM: 
-This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
-
-### Enable and use report as finished and putaway on a scale unit -->
-
-Nykyisessä versiossa [varaston suorittamisen kuormitus](cloud-edge-workload-warehousing.md) tukee ilmoittamista valmiiksi ja hyllytettäviksi (valmiit tuotteet, rinnakkaistuotteet ja sivutuotteet) (ei valmistuksen suorituksen kuormitus). Jos siis haluat käyttää tätä toimintoa Scale Unitin yhteydessä, toimi seuraavasti:
-
-- Asenna Scale Unitiin sekä varaston suorituksen kuormitus että valmistuksen suorittamisen kuormitus.
-- Warehouse Management -mobiilisovelluksen avulla voit ilmoittaa töitä valmiiksi ja hyllytettäväksi. Tuotannon käyttöliittymä ei tällä hetkellä tue näitä prosesseja.
-
-<!-- KFM: API details needed
-
-### Customize report as finished and putaway functionality
-
- -->
-
-## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aloitustoiminnon käyttöönotto ja käyttö vaakayksikössä
-
-Nykyisessä versiossa [varaston suorittamisen kuormitus](cloud-edge-workload-warehousing.md) tukee aloitustoimintoa tuotanto- ja erätilauksille (ei valmistuksen suorituksen kuormitus). Jos siis haluat käyttää tätä toimintoa Scale Unitin yhteydessä, toimi seuraavasti:
-
-- Asenna Scale Unitiin sekä varaston suorituksen kuormitus että valmistuksen suorittamisen kuormitus.
-- Ota käyttöön *Käynnistä tuotantotilaus varaston hallinnan kuormituksessa nykyisen pilven ja reunan skaalausyksiköitä varten* -toiminto [ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- Aloita tuotanto- tai erätilaus Warehouse Management -mobiilisovelluksen avulla.
-
-## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Materiaalikulutuksen käyttöönotto ja käyttö vaakayksikössä
-
-Nykyisessä versiossa Warehouse Management -mobiilisovelluksen materiaalinkulutuksen rekisteröimistä tukee [varaston suorittamisen kuormitus](cloud-edge-workload-warehousing.md) (ei valmistuksen suorittamisen kuormitus). Jos siis haluat käyttää tätä toimintoa Scale Unitin yhteydessä, toimi seuraavasti:
-
-- Asenna Scale Unitiin sekä varaston suorituksen kuormitus että valmistuksen suorittamisen kuormitus.
-- Ota käyttöön *Rekisteröi materiaalikulutus skaalausyksikön mobiilisovelluksessa* -toiminto [ominaisuudenhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- Rekisteröi materiaalinkulutus Warehouse Management -mobiilisovelluksen avulla.
-
-[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

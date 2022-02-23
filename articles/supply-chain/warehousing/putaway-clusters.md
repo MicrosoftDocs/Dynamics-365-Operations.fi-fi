@@ -2,22 +2,25 @@
 title: Hyllytysklusterit
 description: Hyllytysklusterit ovat tapa, jolla voi kerätä samanaikaisesti useita rekisterikilpiä viedä sitten hyllytettäviksi eri sijainteihin. Ne voivat olla erittäin käteviä vähittäismyynnissä, jossa rekisterikilvet eivät yleensä ole täysiä kuormalavoja.
 author: Mirzaab
+manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c3496d43fa3791f765abfb1eb25c45f1f21b972f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573006"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512327"
 ---
 # <a name="putaway-clusters"></a>Hyllytysklusterit
 
@@ -228,7 +231,7 @@ Tämä skenaario simuloi hyllytysklusterin käsittelyä.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Varaston vastaanotto ja lajittelu klusteriin
 
-1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä, joka on määritetty varastoon *61*.
+1. Kirjaudu varastosovellukseen käyttäjänä, joka on määritetty varastoon *61*.
 1. Valitse päävalikossa **Saapuva**.
 1. Valitse **Saapuva**-valikossa **Vastaanotto ja klusterilajittelu**.
 1. Anna **Ostotilausnro**-kentässä ostotilauksen numero.
@@ -270,7 +273,7 @@ Klusteri on suljettava, ennen kuin klusterin nimikkeet voidaan hyllyttää.
 
 #### <a name="put-the-cluster-away"></a>Klusterin hyllyttäminen
 
-1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä, joka on määritetty varastoon *61*.
+1. Kirjaudu varastosovellukseen käyttäjänä, joka on määritetty varastoon *61*.
 1. Valitse päävalikossa **Saapuva**.
 1. Valitse **Saapuva**-valikossa **Klusterihyllytys**.
 1. Valitse **Klusterin tunnus** ja anna aiemmin annettu suljetun klusterin tunnus.
@@ -284,7 +287,7 @@ Klusteri on suljettava, ennen kuin klusterin nimikkeet voidaan hyllyttää.
 
     Voit ohittaa tai hyväksyä tämän vaihtoehdon vakioasetuksilla.
 
-    ![Klusterihyllytys: Aseta-sivu.](media/Cluster_putaway-Put.png "Klusterihyllytys: Aseta-sivu")
+    ![Klusterihyllytys: Aseta-sivu](media/Cluster_putaway-Put.png "Klusterihyllytys: Aseta-sivu")
 
 1. Vahvista klusterin hyllytys valitsemalla **OK**.
 
@@ -293,6 +296,3 @@ Klusteri on suljettava, ennen kuin klusterin nimikkeet voidaan hyllyttää.
 ## <a name="notes-and-tips"></a>Huomautuksia ja vihjeitä
 
 Jos klusterin tunnuksesta tulee upotetun kuormalavan päärekisterikilpi, asetussijainti annetaan automaattisesti, kun klusterin tunnus skannataan. Muita rekisterikilpiä ei tarvitse skannata, vaikka rekisterikilven luonti olisi määritetty manuaaliseksi.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

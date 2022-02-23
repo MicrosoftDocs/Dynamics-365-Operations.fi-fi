@@ -1,26 +1,29 @@
 ---
 title: Kirjanpidolliset jaot
 description: Tässä aiheessa on tietoja kirjanpidollisista jaoista ja niiden käsittelyvaihtoehdoista.
-author: sunfzam
+author: ShylaThompson
+manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f81444e0865715925dad2483e8c789221bccb2b
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595311"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442924"
 ---
 # <a name="accounting-distributions"></a>Kirjanpidolliset jaot
 
@@ -54,6 +57,3 @@ Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirj
 Versioon 10.0.13 on lisätty toiminto, joka vahvistaa kirjanpidon jakotaulukon sen varmistamiseksi, että uudet kentät on määritetty oikein. Tämän toiminnon nimi on **Ota lisävahvistus asiakirjojen tiedoille käyttöön käyttämällä lähdeasiakirjan kirjanpitokehystä**. Jos haluat käyttää ominaisuutta, sinun on otettava se käyttöön **Toiminnonhallinta**-työtilan avulla. Jos haluat ottaa toiminnon käyttöön, etsi sen nimeä **Toiminnonhallinta**-sivun **Haku**-kentässä ja valitse sitten **Ota käyttöön nyt**.
 
 Lisätietoja on kohdassa [Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

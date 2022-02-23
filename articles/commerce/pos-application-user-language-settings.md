@@ -2,13 +2,16 @@
 title: Myyntipistesovellus (POS) ja käyttäjän kielialueasetukset
 description: Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Modern POS:ssa (MPOS) ja Cloud POS:ssa.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 099d16f63e03ecbc8bf911fe4385b35fac7c67f763c17379cdc6b6229abdea16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 49bfcaa4c05ea8e6cc6bf0a8f855f2474cea35bc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774530"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412083"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Myyntipistesovellus (POS) ja käyttäjän kielialueasetukset
 
@@ -55,13 +58,10 @@ Myyntipisteen käyttäjän kieliasetukset määrittävät sovelluksen käyttöli
 
 ### <a name="configuring-the-users-language-setting"></a>Käyttäjän kieliasetusten määrittäminen
 
-Myyntipisteen kieliasetukset määritetään kohdassa **Työntekijä**-sivun **Kaikki työntekijät** -kohdassa valitsemalla **Vähittäismyynti ja kauppa &gt; Kieli**. Sitä ei määritetä profiilin päävälilehdellä. Myyntipiste ei käytä tätä asetusta. Jos käyttäjän kieltä ei määritetä tai jos se on määritetty kielelle, jolla ei ole saatavilla käännöksiä, myyntipiste palaa myymälän kieleen.
+Myyntipisteen kieliasetukset määritetään kohdassa **Työntekijä**-sivun **Kaikki työntekijät** -kohdassa valitsemalla **Retail ja Commerce &gt; Kieli**. Sitä ei määritetä profiilin päävälilehdellä. Myyntipiste ei käytä tätä asetusta. Jos käyttäjän kieltä ei määritetä tai jos se on määritetty kielelle, jolla ei ole saatavilla käännöksiä, myyntipiste palaa myymälän kieleen.
 
-| &nbsp;      | Käyttöliittymän kieli                   | Tietojen kieli (tuotteet, kuittimuodot, rivinäyttö, jne.) |
+|             | Käyttöliittymän kieli                   | Tietojen kieli (tuotteet, kuittimuodot, rivinäyttö, jne.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Yritys** | Oletusarvo                    | Oletusarvo                                                       |
 | **Myymälä**   | Ohittaa yrityksen          | Ohittaa yrityksen                                             |
 | **Käyttäjä**    | Ohittaa myymälän tai yrityksen | En koskaan                                                         |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

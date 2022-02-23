@@ -1,10 +1,12 @@
 ---
 title: Muotoilun lisäasetukset taloushallinnon raporteissa
-description: Tässä aiheessa käsitellään muotoilun lisätoimintoja, kuten suodattimia, rajoituksia, ei-tulostettavia rivejä ja ehdollisia lausekkeita laskutoimituksissa.
-author: panolte
+description: Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa.
+author: ryansandness
+manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e15869fdd598aeec7ef616f6d54593c7551cb906ab53763a64f4202473bcd926
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760123"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683160"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Muotoilun lisäasetukset taloushallinnon raporteissa
 
@@ -281,10 +283,10 @@ Jos haluat rajoittaa laskutoimituksen puun yksittäiseen raportointiyksikköön 
 > [!NOTE]
 > Jotta voisit käyttää tätä toimintoa, rivimääritykseen on liitettävä raportointipuu.
 
-Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus kirjataan rivimäärityksen **Liittyvät kaavat/rivit/yksiköt** -soluun sekä taloushallinnon tietotyypin rajoitukseen. Laskennassa on käytettävä ehdollista laskelmaa, joka alkaa **IF \@Unit** -rakenteella. Esimerkki: IF @Unit(SALES) THEN @100 ELSE 0 Tähän laskutoimitukseen sisältyy raportin jokaisen sarakkeen rivin 100 arvo, mutta rajoitettuna ainoastaan SALES-yksikköön. Jos järjestelmässä on useita SALES-yksiköitä, määrä näytetään kaikissa yksiköissä. Lisäksi rivi 100 voi olla taloushallinnon tietorivi, ja se voidaan määrittää piilotetuksi. Tässä tapauksessa summan näyttäminen estetään kaikissa puun yksiköissä. Voit myös rajoittaa summan yhteen raportin sarakkeeseen, kuten sarake H, käyttämällä sarakerajoitusta tulostamaan arvon ainoastaan kyseiseen raportin sarakkeeseen. Voit sisällyttää **OR**-yhdistelmiä **IF**-lausekkeisiin. Tässä on esimerkki: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. Voit määrittää yksikön laskentatyypin rajoituksessa jollain seuraavista tavoista:
+Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus kirjataan rivimäärityksen **Liittyvät kaavat/rivit/yksiköt** -soluun sekä taloushallinnon tietotyypin rajoitukseen. Laskennassa on käytettävä ehdollista laskelmaa, joka alkaa **IF @Unit** -rakenteella. Esimerkki: IF @Unit(SALES) THEN @100 ELSE 0 Tähän laskutoimitukseen sisältyy raportin jokaisen sarakkeen rivin 100 arvo, mutta rajoitettuna ainoastaan SALES-yksikköön. Jos järjestelmässä on useita SALES-yksiköitä, määrä näytetään kaikissa yksiköissä. Lisäksi rivi 100 voi olla taloushallinnon tietorivi, ja se voidaan määrittää piilotetuksi. Tässä tapauksessa summan näyttäminen estetään kaikissa puun yksiköissä. Voit myös rajoittaa summan yhteen raportin sarakkeeseen, kuten sarake H, käyttämällä sarakerajoitusta tulostamaan arvon ainoastaan kyseiseen raportin sarakkeeseen. Voit sisällyttää **OR**-yhdistelmiä **IF**-lausekkeisiin. Esimerkki: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Voit määrittää yksikön laskentatyypin rajoituksessa seuraavilla tavoilla:
 
-- Kirjoita yksikön nimen kohdalle kelpaava yksikkö. Esimerkiksi **IF \@Unit(SALES)** mahdollistaa laskutoimitukset mille tahansa yksikölle, jonka nimi on SALES siitä huolimatta, onko raportointipuussa useita SALES-yksiköitä.
-- Kirjoita yrityksen ja yksikön nimi rajoittaaksesi laskutoimitus tietyn yrityksen tiettyihin yksikköihin. Kirjoita esimerkiksi **IF @Unit (ACME:SALES)** rajoittaaksesi laskutoimituksen ACME-yrityksen SALES-yksikköihin.
+- Kirjoita yksikön nimen kohdalle kelpaava yksikkö. Esimerkiksi **IF @Unit(SALES)** mahdollistaa laskutoimitukset mille tahansa yksikölle, jonka nimi on SALES siitä huolimatta, onko raportointipuussa useita SALES-yksiköitä.
+- Kirjoita yrityksen ja yksikön nimi rajoittaaksesi laskutoimitus tietyn yrityksen tiettyihin yksikköihin. Kirjoita esimerkiksi **IF @Unit(ACME:SALES**) rajoittaaksesi laskutoimituksen ACME-yrityksen SALES-yksikköihin.
 - Kirjoita koko hierarkiakoodi raportointipuusta rajoittaaksesi laskutoimituksen tiettyyn yksikköön. Kirjoita esimerkiksi **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
@@ -294,7 +296,7 @@ Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus 
 
 1. Valitse raporttien suunnitteluohjelmassa **Rivimääritykset** ja avaa sitten muokattava rivimääritys.
 2. Kaksoisnapsauta **Muotoilukoodi** -solua ja valitse sitten **CAL**.
-3. Napsauta **Liittyvät kaavat/rivit/yksiköt** -solua ja kirjoita kenttään ehdollinen laskelma, joka alkaa **IF \@Unit** -rakenteella.
+3. Napsauta **Liittyvät kaavat/rivit/yksiköt** -solua ja kirjoita kenttään ehdollinen laskelma, joka alkaa **IF @Unit** -rakenteella.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE (jos/sitten/muuten)-lausekkeet sarakemäärityksessä
 
@@ -308,5 +310,3 @@ Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus 
 Voit suunnitella raportteja käyttämällä dimensioarvoja, jotka sisältävät et-merkin (&).
 
 Voit määrittää minkä tahansa **linkin taloushallinnon dimensio** -kenttään arvon, kuten **'P & L'**. Myös puolilainausmerkit (' ') dimension arvon molemmilla puolilla tarkoittavat, että käytät literaaliarvoa, kuten esimerkiksi (&) et-merkkiä.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

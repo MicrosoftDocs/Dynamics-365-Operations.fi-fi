@@ -1,24 +1,26 @@
 ---
 title: Toimittajan ostohyvitykset
 description: Tämä ohjeaihe sisältää yhteenvedon yleisimmistä tehtävistä, joita suoritetaan toimittajan ostohyvitysten yhteydessä. Toimittajan ostohyvitysten avulla yritykset voivat hallita toimittajan ostohyvitysohjelmiaan paremmin automatisoimalla tehtäviä, joilla hallitaan, seurataan ja haetaan ansaittuja ostohyvityksiä.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566860"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966652"
 ---
 # <a name="vendor-rebates"></a>Toimittajan ostohyvitykset
 
@@ -53,7 +55,7 @@ Toimittajan ostohyvityssopimus on sopimustietue, joka määrittää toimittajan 
 
 Avaa **Toimittajan ostohyvityssopimukset** -sivu ja valitse **Hankinta** &gt; **Toimittajan ostohyvitykset** &gt; **Ostohyvityssopimukset**.
 
-![Ostosopimus.](media/purchase-agreement.PNG)
+![Ostosopimus](media/purchase-agreement.PNG)
 
 **Toimittajan ostohyvityssopimukset** -sivulla voit tarkastella tietoja toimittajasopimuksessa sovituista ehdoista.
 
@@ -129,7 +131,7 @@ Kun saatavat on hyväksytty, ne voidaan käsitellä ostoreskontrassa (A/P). Hyvi
 
     Vaatimuksen summalle kirjataan Ostohyvityksen jaksotuskirjauskansio. Kirjaus veloittaa kertyneiden toimittajan ostohyvitysten saatavatililtä odotetun toimittajan maksun ja siirtää kertyneiden toimittajan ostohyvityssaatavien välitilille odotetun voiton.
 
-    ![Sanoma.](media/message.png)
+    ![Viesti](media/message.png)
 
 5. Valitse ostohyvitysluettelossa rivi ja valitse sitten toimintoruudussa **Ostohyvitystapahtumat**, jos haluat tarkastella ja siirtyä tämän ostohyvityksen kertymäkirjauksen kirjauskansion eränumeroon.
 
@@ -164,6 +166,3 @@ Toimittajan ostohyvitysten käsittelyyn käytettävä prosessi sisältää useit
 - Tarkkojen ostohyvitysvaatimusten muodostaminen
 - Odotettujen saatavien kerryttäminen ja väliaikainen kirjaaminen kirjanpitoon
 - Toimittajasaldon ja tuloslaskelman päivittäminen erääntyvällä korvauksella
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

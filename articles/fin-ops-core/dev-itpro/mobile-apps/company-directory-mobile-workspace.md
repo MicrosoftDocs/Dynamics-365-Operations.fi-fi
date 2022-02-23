@@ -2,9 +2,11 @@
 title: Yrityksen hakemiston mobiilityötila
 description: Tässä ohjeaiheessa on tietoja yrityshakemiston mobiilityötilasta, jossa käyttäjät voivat tarkastella organisaation muita työntekijöitä ja ottaa heihin yhteyttä.
 author: jcart1106
+manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2152d89e7d60a74e8d7561ea888e60cff42dd1ffd0ec697fac371aad9b85383c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720645"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683428"
 ---
 # <a name="company-directory-mobile-workspace"></a>Yrityksen hakemiston mobiilityötila
 
@@ -77,7 +79,7 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
 4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
-[![Päivittäminen vetämällä.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Yrityksen hakemiston tarkastelu mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Yrityksen hakemisto** -työtila. Näkyvissä on työntekijäluettelo.
@@ -87,6 +89,3 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 1.  Valitse mobiilisovelluksessa **Yrityksen hakemisto** -työtila.
 2.  Aloita haku kirjoittamalla **Haku**-kenttään työntekijän etunimi, sukunimi, nimike tai osasto.
 3.  Valitse työntekijä. **Työntekijän profiili** -sivu avautuu. Tällä sivulla on näkyvissä muun muassa työntekijän etunimi, sukunimi, nimike ja osasto.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

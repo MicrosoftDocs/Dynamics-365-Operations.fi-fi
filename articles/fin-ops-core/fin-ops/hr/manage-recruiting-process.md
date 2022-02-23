@@ -1,10 +1,12 @@
 ---
 title: Työhönottoprosessien hallinta
-description: Tässä ohjeaiheessa kuvataan käsite, jonka avulla rekrytoijat voivat seurata rekrytointiprosessin vaiheita.
+description: Tässä artikkelissa esitellään konsepti, jonka avulla työhönottajat voivat seurata työhönottoprosessin vaiheita, mukaan lukien avoimia toimien ilmoittaminen ja hakijoiden työhönotto, hakijoiden ja hakemusten tietojen seuranta, hakijoiden haastattelu ja yhden tai useamman ehdokkaan valinta organisaatiossasi avoinna oleviin toimiin.
 author: andreabichsel
-ms.date: 01/10/2022
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
@@ -15,18 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 71e30a30aee5edcea2e24b326b0f263612b6b897
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075472"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798040"
 ---
 # <a name="manage-recruiting-processes"></a>Työhönottoprosessien hallinta
 
-> [!IMPORTANT]
-> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä Finance-infrastruktuurin Human Resources -asiakkaiden käytettävissä.  
-
+[!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa esitellään konsepti, jonka avulla työhönottajat voivat seurata työhönottoprosessin vaiheita, mukaan lukien avoimia toimien ilmoittaminen ja hakijoiden työhönotto, hakijoiden ja hakemusten tietojen seuranta, hakijoiden haastattelu ja yhden tai useamman ehdokkaan valinta organisaatiossasi avoinna oleviin toimiin.
 
@@ -44,7 +44,7 @@ Työhönottoprojektien avulla työhönottajat voivat seurata yhden tai useamman 
 - Hakemuksen viimeinen jättöpäivä
 - Arvioitu alkamispäivämäärä
 
-Työhönottoprojekti sisältää **työpaikkailmoitus**-arvon, jota käytetään **työntekijän itsepalvelu** -sivulla avoimen työpaikan ilmoituksena. Avaus voidaan näyttää työntekijöille vain, jos rekrytointiprojektilla on **Työpaikkailmoitus**-arvo, **Näytä työntekijän itsepalvelussa** -kentän arvo on **Kyllä**, **Hakemuksen määräaika** -kenttä on asetettu tulevaan päivämäärään, ja rekrytointiprojektin **Projektin tila** -arvo on **Aloitettu**. Seuraavassa taulukossa luetellaan mahdolliset työhönottoprojektin tilat ja niiden kuvaukset.
+Työhönottoprojekti sisältää **työpaikkailmoituksen**, jota käytetään **työntekijän itsepalveluosiossa** avoimen työpaikan ilmoituksena. Näyttääksesi avoimen toimen työntekijöille, työhönottoprojektilla on oltava **työpaikkailmoitus**, sen **Näytä työntekijän itsepalvelussa** -kentän valinta on oltava Kyllä, **hakemuksen viimeisen jättöpäivän** tulee olla tulevaisuudessa, ja työhönottoprojektin **tilana** on oltava Aloitettu. Seuraavassa taulukossa luetellaan mahdolliset työhönottoprojektin tilat ja niiden kuvaukset.
 
 | Tila    | Merkitsee, että...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Työhönottajat voivat myös tallentaa ulkoisissa työpaikkailmoituskanavissa k�
 
 ## <a name="applicants"></a>Hakijat
 
-Hakija on henkilö, joka hakee töihin yritykseesi. Hakijat jaetaan organisaation kaikkien tahojen kesken. Siksi sinulla on suuri osaaja-pooli, jonka avulla voit hakea osaajaa. Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, osaamisalueita ja erityisjärjestelyjä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan. Voit käyttää **Hakija**-sivua päivittääksesi seuraavat tiedot hakijoista yleiseen osoitekirjaan:
+Hakija on henkilö, joka hakee töihin yritykseesi. Hakijat jaetaan kaikkien organisaatiosi yritysten kesken, joten käytettävissä oleva osaajajoukko on suuri. Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, osaamisalueita ja erityisjärjestelyjä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan. Voit käyttää **Hakija**-sivua päivittääksesi seuraavat tiedot hakijoista yleiseen osoitekirjaan:
 
 - Osoitetiedot
 - Yhteystiedot
@@ -86,7 +86,7 @@ Hakemuksen tila ilmaisee, missä vaiheessa työhönottoprosessia hakemus on. Seu
 
 ### <a name="correspondence-actions"></a>Vastaustoimenpiteet
 
-Hakemuksen vastaustoimenpide määrittää asiakirjan tai sähköpostiviestin mallin, jota käytetään viestinnässä hakemuksen lähettäneen henkilön kanssa. Liittämällä **hakemuksen kirjanmerkkejä** vastaustoimenpiteisiin, voit käyttää **Hakemus**-, **Hakija**-, **Haastattelu**- ja **Työhönottoprojekti**-sivujen arvoja viestinnässä hakijoiden kanssa. Luomalla **hakemussähköpostimalleja** kirjeenvaihtotoimintoja varten voit lähettää nopeasti sähköposteja hakijoille, joiden hakemuksissa on tietty tilan ja kirjeenvaihdon yhdistelmä. Voit esimerkiksi lähettää vahvistussähköpostin kaikille hakemuksille, joiden **tila** on **Vastaanotettu** ja **vastaustoimenpide** on **Vastaanotettu**. Viestien lähettämisen jälkeen voit päivittää hakemusten tilan automaattisesti.
+**Hakemuksen** vastaustoimenpide määrittää asiakirjan tai sähköpostiviestin mallin, jota käytetään viestinnässä hakemuksen lähettäneen henkilön kanssa. Voit liittää **hakemuksen kirjanmerkkejä** vastaustoimenpiteisiin käyttääksesi Hakemus-, Hakija-, Haastattelu- ja Työhönottoprojekti-sivujen arvoja viestinnässä hakijoiden kanssa. Vastaustoimenpiteille voi luoda **sähköpostimalleja**, joiden avulla hakijoille, joiden hakemuksella on tietyn tilan ja vastaustoimenpiteen yhdistelmä, voi lähettää nopeasti sähköpostiviestejä. Voit esimerkiksi lähettää vahvistussähköpostin kaikille hakemuksille, joiden **tila** on Vastaanotettu ja **vastaustoimenpide** on Vastaanotettu. Viestien lähettämisen jälkeen voit päivittää hakemusten tilan automaattisesti.
 
 ## <a name="application-routing"></a>Hakemusten reititys
 
@@ -103,5 +103,3 @@ Jos useiden työntekijöiden täytyy tarkistaa hakemus, voit hallita tätä pros
 ## <a name="hiring-applicants"></a>Hakijoiden ottaminen palvelukseen
 
 Käytä **Hakemukset**-sivua ottaaksesi hakija palvelukseen. Kun hakija palkataan, hakemustietueen tilaksi merkitään **Palkattu** ja hakijan yleisessä osoitekirjassa olevat tiedot liitetään uuteen työntekijätietueeseen. Yleiseen osoitekirjan tietoihin tehdyt muutokset uuden työntekijätietueen kautta näkyvät myös hakijatietueessa. Tämä voi vähentää tietokirjausten määrää, jos uusi työntekijäsi hakee koskaan yrityksen sisällä uutta työtä. Vanhan työntekijän palkkaamisen uuteen toimeen voit tehdä napsauttamalla **Hakemuksen tila** -valikosta **Muuta toimea**, joka aloittaa siirtoprosessin.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,30 +2,35 @@
 title: Tehtävien hallinnan yleiskatsaus
 description: Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 Commercen päälliköiden ja työntekijöiden tehtävienhallinnasta.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7cdcc0ba6a9f5a3d9dd4ea781adc9e81c45e3d02
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3891d846f51b5335809876a6557dfb5a031272c8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985390"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412035"
 ---
 # <a name="task-management-overview"></a>Tehtävien hallinnan yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 Commercen päälliköiden ja työntekijöiden tehtävienhallinnasta.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Vähittäismyyntiympäristössä on aina vaikeaa varmistaa, että oikea henkilö suorittaa tehtävät oikeaan aikaan. Vähittäiskauppiaiden on pystyttävä ilmoittamaan työntekijöille tulevista tehtävistä ja tarjoamaan asiaan liittyvää liiketoimintakontekstia, jotta tehtävät voidaan suorittaa oikein ja ajallaan.
 
@@ -37,7 +42,7 @@ Myymäläpäälliköt voivat tehtävienhallinnan avulla määrittää tehtäviä
 
 Seuraavassa kuvassa näkyy tehtävienhallinnan käsitteellinen arkkitehtuuri Commercessa.
 
-![Tehtävienhallinnan käsitteellinen arkkitehtuuri.](media/Tasks-management-conceptual-architecture.png)
+![Tehtävienhallinnan käsitteellinen arkkitehtuuri](media/Tasks-management-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -48,6 +53,3 @@ Seuraavassa kuvassa näkyy tehtävienhallinnan käsitteellinen arkkitehtuuri Com
 [Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille](task-mgmt-assign-lists.md)
 
 [Tehtävien hallinta myyntipisteessä](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

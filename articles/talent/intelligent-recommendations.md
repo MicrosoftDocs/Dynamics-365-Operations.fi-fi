@@ -56,6 +56,3 @@ Suositukset näkyvät kortteina **Prospektit**-välilehdessä kaikissa töissä,
 > Jos olet juuri aloittanut Attractin käytön, sinun on odotettava kunnes on vähintään 10 hakijaa, joilla on koko profiilit tai ansioluettelot, ennen kuin voit käyttää tätä ominaisuutta.
 
 Mahdollisten ennakkokäsitysten välttämiseksi suosituksisssa Attract tutkii hakijaprofiileista vain osaamisalueet, pätevyydet ja muut avainsanat, jotka vastaavat työnkuvausta. Lisäksi Attract poistaa hakijan profiileista henkilötiedot ennen arviointia.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

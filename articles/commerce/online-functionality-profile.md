@@ -2,9 +2,11 @@
 title: Verkkotoimintoprofiilin luominen
 description: Tässä ohjeaiheessa käsitellään verkkotoimintoprofiilin luontia Microsoft Dynamics 365 Commercessa.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,18 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d6dcbb5b9ea01035396e90a6809cb1568c3a4fc86def41cf36732588b5046da7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b0afeabfecb60672156692f3cd809445624020c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716191"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969973"
 ---
-# <a name="create-an-online-functionality-profile"></a>Luo online-toimintoprofiili
+# <a name="create-an-online-functionality-profile"></a>Verkkotoimintoprofiilin luominen
+
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 Commercen online-toimintoprofiilin määrittämiseen.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Online-toimintojen profiilissa on erilaisia online-kanavien asetuksia. Kunkin online-kanavan on määritettävä online-toimintoprofiili.
 
@@ -42,9 +47,9 @@ Seuraavassa kuvataan, miten online-toimintoprofiili luodaan Commerce Headquarter
 
 Seuraavassa kuvassa on esimerkki verkkotoimintoprofiilista.
   
-![Verkon toimintoprofiiliesimerkki.](media/online-functionality-profile.png)
+![Verkon toimintoprofiiliesimerkki](media/online-functionality-profile.png)
 
-## <a name="functions"></a>Funktiot
+## <a name="functions"></a>Toiminnot
 
 - **Koostetuotteet**: Kun tämä toiminto on käytössä, ostoskärry voi päivittää määrän, kun sama nimike lisätään useita kertoja.
 - **Salli uloskuittaus ilman maksuja**: Kun tämä toiminto on käytössä, se käsittelee skenaarion, kun ostoskärryyn lisätyistä nimikkeistä veloitetaan hinta 0,00 $.
@@ -61,6 +66,3 @@ Seuraavassa kuvassa on esimerkki verkkotoimintoprofiilista.
 [Vähittäismyyntikanavan määrittäminen](channel-setup-retail.md)
 
 [Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

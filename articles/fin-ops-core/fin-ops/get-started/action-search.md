@@ -2,9 +2,11 @@
 title: Toimintohaku
 description: Tässä artikkelissa käsitellään toimintohakutoimintoa. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla.
 author: jasongre
+manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6277c37ac43b8cc05c8b53da5ca0a1909f58c4f9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070031"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798644"
 ---
 # <a name="action-search"></a>Toimintohaku
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä artikkelissa käsitellään toimintohakutoimintoa. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla.
 
@@ -34,7 +33,7 @@ Tässä artikkelissa käsitellään toimintohakutoimintoa. Toimintohaku auttaa s
 
 Sivuilla näytetään ensisijaisesti toimintoruutujen komennot sekä vakiotoimintoruudussa, joka näkyy sivun yläreunassa, että työkaluriveillä, jotka näkyvät sivun eri osissa. Aiemmissa versioissa Päävihjeet-toiminnon avulla pystyit nopeasti käyttämään mitä tahansa toimintoruudun painiketta painamalla Alt-näppäintä ja sitten sarjan kirjaimia.
 
-[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 Toimintohakutoiminto korvaa päävihjeet, jotka eivät ole enää käytettävissä. Tämän uuden ominaisuuden avulla voit nopeasti etsiä ja suorittaa painikkeen mistä tahansa näkyvillä olevasta toimintoruudusta.
 
@@ -48,7 +47,7 @@ Suorita seuraavat vaiheet, kun haluat käyttää toimintohaku-ominaisuutta:
 
 Kun painike on suoritettu, huomio palautuu viimeiseen toimeesi sivulla niin, että voit jatkaa työskentelyä.
 
-[![action-search-field.](./media/action-search-field.png)](./media/action-search-field.png)
+[![action-search-field](./media/action-search-field.png)](./media/action-search-field.png)
 
 Voit myös aloittaa toiminnon painamalla näppäinyhdistelmää Ctrl+/ tai Alt+Q. Paina pikanäppäintä uudelleen palataksesi edelliseen toimeesi sivulla.
 
@@ -64,11 +63,11 @@ Usein on tiedettävä sekä painikkeen sijainti että konteksti, jotta ymmärtä
 
 Kirjoitit esimerkiksi **yht** **toimintohaku**-kenttään ja tarkastelet nyt tulosluetteloa. Ensimmäinen tulosluettelon painike **Summat** näkyy korostettuna. Näet myös painikkeen, jonka polku on **Sales**&gt;**Näytä**. Polun **Myyntitilaus**-osa vastaa toimintoruudun **Myyntitilaus**-välilehteä, ja polun **Näytä**-osa vastaa kyseisen välilehden **Näytä**-ryhmää. Vastaavasti painikkeen **Kokonaisalennus**-polku (**Myy** &gt; **Laske**) ilmoittaa, että tämä painike sijaitsee **Laske**-ryhmässä toimintoruudun **Myy**-välilehdessä. Tämän vuoksi näiden tietojen avulla voit ymmärtää täsmälleen mikä painike suoritetaan toimintohaun toimesta (jos valitset kyseisen painikkeen tulosten luettelossa).
 
-[![action-search-field-with-data.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta toimintoruudusta sivun yläreunassa. Toimintohaku kuitenkin näyttää tulokset myös näkyvillä olevista työkaluriveistä, jotka ovat muualla sivulla. Haettavana on esimerkiksi **Käytettävissä oleva varasto** -painike, joka on **Myyntitilausrivit**-pikavälilehdessä. Tässä tapauksessa tulosten luettelossa painikkeen polku (**Myyntitilausrivit** &gt; **Varasto** &gt; **Näytä**) ilmoittaa, että tämä painike on **Näytä**-otsikossa **Varasto**-valikkopainikkeessa **Myyntitilausrivit**-pikavälilehdessä.
 
-[![on-hand-inventory.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > Jotkin painikkeet eivät näy toimintohaussa. Näitä ovat valintaikkunan ja alilomakkeiden painikkeet. 
@@ -76,6 +75,3 @@ Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta to
 ## <a name="action-search-vs-navigation-search"></a>Toimintohaku vs. siirtymishaku
 
 Toimintohaun tarkoituksena on etsiä ja suorittaa toimintoja sivulla, mutta sivujen etsimiseen ja niissä siirtymisessä on myös erillinen hakumekanismi. Lisätietoja tästä ominaisuudesta löydät artikkelista. [Siirtymishaku](navigation-search.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

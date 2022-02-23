@@ -2,35 +2,37 @@
 title: Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
 description: Tuotannon käyttöliittymä määritetään jokaiselle tuotannon laitteelle. Yritykset yleensä määrittävät jokaisen laitteen eri tavalla sen perusteella, mikä on laitteen tarkoitus. Yrityksellä voi esimerkiksi olla yksi laite vastaanotossa, jossa työntekijät kuittaavat itsensä sisään ja ulos, ja toinen tuotantotiloissa, joissa työntekijät hallitsevat töitään.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752829"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966273"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tuotannon käyttöliittymä määritetään jokaiselle tuotannon laitteelle. Yritykset yleensä määrittävät jokaisen laitteen eri tavalla sen perusteella, mikä on laitteen tarkoitus. Yrityksellä voi esimerkiksi olla yksi laite vastaanotossa, jossa työntekijät kuittaavat itsensä sisään ja ulos, ja toinen tuotantotiloissa, joissa työntekijät hallitsevat töitään.
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Tietyn laitteen määritysten ja suodattimen määrittäminen
 
-Laitteen määritykset ja työsuodattimet määritetään kirjautumalla **Tuotantoliittymä**-sivulle sillä tilillä, jonka käyttöoikeusrooli sisältää *Ylläpidä ajan valvontaa* -tehtävän. (Heti käytettävistä käyttöoikeusrooleista vain *tuotannon työnjohtajalla* on tämä tehtävä.) Toimi sitten seuraavasti:
+Laitteen määritykset ja työsuodattimet määritetään kirjautumalla **Tuotantoliittymä**-sivulle sillä tilillä, jonka käyttöoikeusrooli sisältää *Ajanseurannan työnjohto* -tehtävän. (Heti käytettävistä käyttöoikeusrooleista vain *tuotannon työnjohtajalla* on tämä tehtävä.) Toimi sitten seuraavasti:
 
-1. Siirry määritettävään laitteeseen ja kirjaudu Microsoft Dynamics 365 Supply Chain Managementiin tuotannon työnjohtajana. (Käytä tiliä, jossa on *Ylläpidä ajan valvontaa* -tehtävä.)
+1. Siirry määritettävään laitteeseen ja kirjaudu Microsoft Dynamics 365 Supply Chain Managementiin tuotannon työnjohtajana. (Käytä tiliä, jossa on *Ajanseurannan työjohto* -tehtävä.)
 1. Varmista, että määritys on käytettävissä siinä laitteessa, jota ollaan määrittämässä. Jos määritystä ei vielä ole, käytettävissä on oletusmääritys. Lisätietoja laitteen määrityksen määrittämisestä on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).
 1. Valitse **Tuotannonhallinta \> Tuotannonohjaus \> Tuotantoliittymä**.
 
@@ -70,13 +72,10 @@ Tuotannon käyttöliittymä suoritetaan usein laitteessa, jota käytetään vain
 
 Seuraavan kuvan yläosassa näkyy käyttöliittymän oletusulkoasu. Alaosassa näkyy, miltä käyttöliittymä näyttää koko näytön tilassa, kun siirtymisruutu on piilotettu.
 
-![Tavallisen ja koko näytön käyttöliittymän vertailu.](media/pfei-full-screen.png "Tavallisen ja koko näytön käyttöliittymän vertailu")
+![Tavallisen ja koko näytön käyttöliittymän vertailu](media/pfei-full-screen.png "Tavallisen ja koko näytön käyttöliittymän vertailu")
 
 ## <a name="extend-the-session-past-12-hours"></a>Istunnon pidentäminen yli 12 tuntia kestäväksi
 
 Tuotannon käyttöliittymä kirjautuu automaattisesti ulos, jos kukaan ei käytä sitä 12 tuntiin. Supply Chain Managementin käyttäjän on sitten kirjauduttava uudelleen sisään. Aikakatkaisurajan voi kuitenkin pidentää enintään 90 päivään.
 
 Aikakatkaisurajaa voi pidentää kirjautumalla Supply Chain Managementiin ja valitsemalla **Järjestelmän hallinta \> Käyttäjät \> Istunnon laajennukset**. Määritä Supply Chain Managementin käyttäjätili, jota käytetään laitteeseen kirjautumiseen, ja kuinka monta tuntia istunto pysyy aktiivisena.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

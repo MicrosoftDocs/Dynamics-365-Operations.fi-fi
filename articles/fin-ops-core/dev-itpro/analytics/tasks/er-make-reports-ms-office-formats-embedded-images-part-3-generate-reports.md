@@ -1,10 +1,12 @@
 ---
 title: Upotettuja kuvia sisältävien Office-muotoisten raporttien luominen
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määritysten suunnittelua luomaan upotettuja kuvia sisältäviä Excel- ja Word-muotoisia sähköisiä asiakirjoja.
+description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita luomaan sähköisiä, upotettuja kuvia sisältäviä asiakirjoja MS Office -muodoissa (Excel ja Word).
 author: NickSelin
+manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ec9f3013c1e365a3ca1a4c6cabe71a22e3e8b730eac38155ef023fe68107524
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735523"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684376"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Upotettuja kuvia sisältävien Office-muotoisten raporttien luominen
 
@@ -117,6 +119,3 @@ Tässä esimerkissä luodaan ER-konfiguraatioita malliyritykselle Litware, Inc. 
 23. Valitse OK.
     * Tarkista luotu tuotos. Tuloste on luotu Word -asiakirjana, joka sisältää yrityksen logoa esittävät upotetut kuvat, valtuutetun henkilön allekirjoituksen ja vesileiman valitun tekstin.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

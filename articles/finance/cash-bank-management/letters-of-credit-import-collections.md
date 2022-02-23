@@ -2,25 +2,28 @@
 title: Luottokirjeet ja tuontiperittävät
 description: Tässä artikkelissa on yleisiä tietoja remburssista ja tuontiperittävistä. Molempia pankkitositteita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47309612ea7cbd0bb1047bec9c18f976e7063ce95f1708f27beae540cc3194ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c31b8af25ea231f23ac5f4968760257b3f5894f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751323"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442784"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Luottokirjeet ja tuontiperittävät
 
@@ -28,7 +31,8 @@ ms.locfileid: "6751323"
 
 Tässä artikkelissa on yleisiä tietoja remburssista ja tuontiperittävistä. Molempia pankkitositteita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä.
 
-## <a name="letters-of-credit"></a>Luottokirjeet
+<a name="letters-of-credit"></a>Luottokirjeet
+-----------------
 
 Rembursseja käytetään kansainvälisissä liiketoimissa varmistamaan, että maksut suoritetaan. Remburssi on pankin antama sopimus, jossa pankki suostuu varmistamaan maksun ostajan puolesta, jos ostajan ja myyjän väliset ehdot täyttyvät. Remburssi tunnetaan myös luottokirjeenä.
 
@@ -50,6 +54,3 @@ Tuontiperittävän avulla on mahdollista varmistaa, että myyjä saa maksun, kun
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

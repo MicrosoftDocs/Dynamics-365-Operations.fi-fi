@@ -1,30 +1,31 @@
 ---
-title: Työntekijän etusuunnitelmien luominen
-description: Tässä aiheessa käsitellään työntekijän etuussuunnitelmien luontia, valitsemista ja vahvistamista Microsoft Dynamics 365 Human Resourcesissa.
-author: twheeloc
-ms.date: 08/23/2021
+title: Työntekijöiden etuussuunnitelmien luominen
+description: Voit luoda työntekijöiden etuussuunnitelmia Microsoft Dynamics 365 Human Resourcesissa valitaksesi etuussuunnitelmia työntekijöille ja vahvistaaksesi etuussuunnitelmavalintoja.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417401"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418279"
 ---
-# <a name="create-worker-benefit-plans"></a>Työntekijän etusuunnitelmien luominen
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="create-worker-benefit-plans"></a>Työntekijöiden etuussuunnitelmien luominen
 
 Voit luoda työntekijöiden etuussuunnitelmia Microsoft Dynamics 365 Human Resourcesissa valitaksesi etuussuunnitelmia työntekijöille ja vahvistaaksesi etuussuunnitelmavalintoja. Yleensä työntekijät valitsevat etuussuunnitelmat itse työntekijän itsepalvelun avulla, minkä jälkeen etujen järjestelmänvalvoja vahvistaa valinnat. 
 
@@ -48,6 +49,3 @@ Voit luoda työntekijöiden etuussuunnitelmia Microsoft Dynamics 365 Human Resou
    | Suunnitelmat | Suunnitelmat-pikavälilehti sisältää ne suunnitelmat, jotka täyttävät määrittämäsi suodatusperusteet. Henkilöstöhallinnon työntekijöiden määrittämät asiaan liittyvät määritysvalinnat ja työntekijöiden valitsemat rekisteröintivaihtoehdot sisällytetään jokaiselle riville. Kelvollinen-kenttä ilmaisee, onko suunnitelman valinnan kanssa vahvistusristiriitaa. |
 
 4. Valitse **Tallenna**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

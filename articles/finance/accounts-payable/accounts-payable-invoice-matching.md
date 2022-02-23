@@ -1,28 +1,29 @@
 ---
 title: Ostoreskontran laskujen täsmäytys – yleiskatsaus
 description: Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot.
-author: sunfzam
+author: abruer
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "27361"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 27361
 ms.assetid: 9f3dace7-05d8-4974-8f85-aca2e224876c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a8e283038a0cc1c9834a827c453f2951e9e87bcf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984074"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442856"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Ostoreskontran laskujen täsmäytys – yleiskatsaus
 
@@ -48,7 +49,7 @@ Voit käyttää seuraavia ostoreskontran laskujen täsmäytystyyppejä:
 
 Kaksi- ja kolmisuuntainen täsmäytys täsmäävät aina hintatiedot yksikköhinnalla. Voit myös määrittää nämä vastaavuuskäytännöt täsmäämään hintatiedot yhteishinnalla.
 -   Nettoyksikköhinnan täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettoyksikköhintaa ostotilauksen vastaavaan nettoyksikköhintaan. Nettoyksikköhinta määritetään seuraavalla kaavalla: rivin nettosumma jaettuna rivin määrällä
--   Kokonaishintojen täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettosummaa (kokonaishintaa) ostotilauksen vastaavaan nettosummaan. Nettosumma määritetään seuraavalla kaavalla: *(yksikköhinta \* rivimäärä) + rivin kulut vähennettynä rivialennuksilla* Kun kokonaishintoja täsmäytetään prosenttiosuuden mukaan, järjestelmä vertaa arvoja tapahtumavaluutan avulla. Kun kokonaishintoja täsmäytetään summan mukaan, järjestelmä vertaa arvoja kirjanpitovaluutan avulla. Kun laskutat ostotilausriviä osittain, hinnan ja kokonaissumman täsmäytyksen oikeellisuustarkistus tapahtuu rivin viimeisessä laskussa. 
+-   Kokonaishintojen täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettosummaa (kokonaishintaa) ostotilauksen vastaavaan nettosummaan. Nettosumma määritetään seuraavalla kaavalla: *(yksikköhinta \* rivimäärä) + rivin kulut vähennettynä rivialennuksilla* Kun kokonaishintoja täsmäytetään prosenttiosuuden mukaan, järjestelmä vertaa arvoja tapahtumavaluutan avulla. Kun kokonaishintoja täsmäytetään summan mukaan, järjestelmä vertaa arvoja kirjanpitovaluutan avulla.
 
 Yleensä laskun täsmäytyslaskelmat suoritetaan automaattisesti, kun muokkaat toimittajan laskuja Toimittajan lasku -sivulla. Laskujen täsmäytys voidaan suorittaa myös tarvittaessa. Yrityksen tarvittaessa tehtävää laskun täsmäytystä ohjataan Laskun oikeellisuustarkistus -välilehden Ostoreskontran parametrit -sivun Päivitetäänkö laskun otsikon tila automaattisesti -kohdasta. Laskun täsmäytys voidaan suorittaa myös laskun tarkistusprosessin osana. Voit tarkastella laskun täsmäytyksen tuloksia Toimittajan lasku -sivulla ja liittyvillä laskun täsmäytyksen sivuilla.
 
@@ -193,6 +194,3 @@ Lisätietoja on kohdissa [Kolmisuuntaiset vastaavuuskäytännöt](three-way-matc
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

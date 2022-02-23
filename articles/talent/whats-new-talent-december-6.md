@@ -143,6 +143,3 @@ Päivitettyjen yhdistämismääritysten pitäisi olla seuraavanlaiset.
 
 ![Sukupuoli-kentän muutos](./media/WorkerTransform.png)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

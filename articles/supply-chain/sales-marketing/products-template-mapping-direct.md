@@ -1,36 +1,39 @@
 ---
 title: Supply Chain Managementin tuotteiden synkronointi suoraan Salesin tuotteisiin
 description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Salesiin.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: dd84f96a5597c480648ae30b6d0274e15d750ff6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062460"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527311"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Supply Chain Managementin tuotteiden synkronointi suoraan Salesin tuotteisiin
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Tutustu [Microsoft Dataverse for Appsin tietojen integrointiin](/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
+> Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
 Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan suoraan Dynamics 365 Supply Chain Managementista Dynamics 365 Salesiin.
 
@@ -38,7 +41,7 @@ Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteit
 
 Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supply Chain Managementin and Salesin esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Supply Chain Managementin ja Salesin välillä. Seuraava kuva näyttää, miten tiedot synkronoidaan Supply Chain Managementin ja Salesin välillä.
 
-[![Prospektista käteiseksi -ratkaisun tiedonkulku.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 
@@ -77,7 +80,7 @@ Ulkoisesti ylläpidetyt tuotteet lisätään automaattisesti ensimmäiseen samaa
 
 > [!NOTE]
 > - Tuotteen synkronointi ei onnistu, jos hinnastossa ei ole vastaavaa valuuttaa.
-> - Voit määrittää integroinnissa käytettävän hinnaston yhdistämällä pricelevelid.name [oletus hinnasto (nimi)] tietojen integrointiprojektiin. Syötteen on oltava pienillä kirjaimilla. Esimerkiksi oletusarvoinen myynnin Vakio-niminen hinnasto voisi olla kohdekenttä: pricelevelid.name [Oletusarvoinen hinnasto (Nimi)] ja karttatyyppi: [ { ”transformType”: ”Default", "defaultValue": "standard} ].
+> - Voit määrittää integroinnissa käytettävän hinnaston, kun pricelevelid.name [Oletushinnasto (nimi)] yhdistetään tietojen integrointiprojektiin. Syötteen on oltava pienillä kirjaimilla. Esimerkiksi myynnin Vakio-niminen oletushinnasto voisi olla kohdekenttä: pricelevelid.name [Oletushinnasto (Nimi)] ja karttatyyppi: [ { "transformType": "Default", "defaultValue": "standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
@@ -104,7 +107,7 @@ Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 > [!NOTE]
 > Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Supply Chain Managementiin.
 
-![Mallin yhdistäminen tietojen integrointiohjelmassa.](./media/products-direct-template-mapping-data-integrator-1.png)
+![Mallin yhdistäminen tietojen integrointiohjelmassa](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## <a name="related-topics"></a>Liittyvät aiheet
@@ -121,6 +124,3 @@ Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

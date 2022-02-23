@@ -91,6 +91,3 @@ Internet-sisältö (iframe) -tehtävän avulla voi upottaa työhönottoprosessii
 
 > [!NOTE]
 > Internet-sisältö-tehtävää voi käyttää vain kattavan työhönottolaajennuksen kanssa.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Koontilaskelmien mallin yhdistämismäärityksen konfiguraatioiden käyttäminen tietokantatasolla
-description: Tässä aiheessa käsitellään uuden sähköisen raportoinnin mallin yhdistämismäärityksen suunnittelua ja sisäänrakennettujen ER-toimintojen käyttämistä laskelmien tehokkaassa koostamisessa.
+description: Tämä menettely sisältää tietoja siitä, miten voit suunnitella uuden sähköisen raportoinnin (ER) mallin yhdistämismäärityksen konfiguraation ja käyttää sisäänrakennettuja ER-toimintoja laskelmien tehokkaassa koostamisessa.
 author: NickSelin
+manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9f4ca926414e36e04e6e908a55eebeca8c24a696da4bca0c1c3a6f836373627d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f1c4ddf0fac5ba962c3dab545bfa7e0df4afa948
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745861"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684112"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Koontilaskelmien mallin yhdistämismäärityksen konfiguraatioiden käyttäminen tietokantatasolla
 
@@ -114,6 +116,3 @@ Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänva
 68. Valitse Tallenna.
     * Huomaa, että Suoritus-kenttä osoittaa tämän ryhmittelyn tapahtuvan suorituksen aikana muistissa, vaikka koonteja ei ole määritetty ja valittu Taulukkotietueet-tyyppinen tietolähde viittaa samaan Intrastat-taulukkoon. Tämä johtuu siitä, että tietolähde sisältää joitakin laskettuja kenttiä, joita ei voi vielä kääntää SQL-tietokannan tasolle.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

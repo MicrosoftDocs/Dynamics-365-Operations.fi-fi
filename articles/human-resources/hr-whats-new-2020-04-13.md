@@ -1,32 +1,33 @@
 ---
 title: Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 13, 2020)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 13. huhtikuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: andreabichsel
-ms.date: 04/13/2020
+author: Darinkramer
+manager: AnnBe
+ms.date: 4/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b5af74329fa741a443932a1007a6c2ef6abd3445
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a7ea8348cfe1c66d6d0cfa39b46c8e69111fe185
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062208"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528518"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 13, 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.3136. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
 
@@ -42,9 +43,9 @@ Tämän muutoksen yhteydessä **Pyöristystarkkuus**-kenttä on nyt käytettävi
 
 Voit nyt muokata rekisteröinnin päättymispäivämäärää saamatta virhettä Kentän jaksotuspäivämäärän peruste on täytettävä.
 
-## <a name="employment-entity-doesnt-sync-to-dataverse-430834"></a>Työyksikkö ei synkronoi kohteeseen Dataverse (430834)
+## <a name="employment-entity-doesnt-sync-to-common-data-service-430834"></a>Työyksikkö ei synkronoi kohteeseen Common Data Service (430834)
 
-Tämä muutos korjaa ongelman, jossa työsuhteen tiedot eivät synkronoidu Dataverseen taloushallinnon dimensioiden lisäämisen jälkeen. 
+Tämä muutos korjaa ongelman, jossa työsuhteen tiedot eivät synkronoidu Common Data Serviceen taloushallinnon dimensioiden lisäämisen jälkeen. 
 
 ## <a name="remove-multi-parenting-for-work-calendar-time-interval-entity-431775"></a>Työkalenterin aikavälin yksikön usean ylätason poistaminen (431775)
 
@@ -93,8 +94,6 @@ Jos SharePoint-ohjelmassa tallennettujen asiakirjojen esikatselu ei toimi, kokei
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,32 +1,35 @@
 ---
 title: Poistojen laskennan pyöristyssumma
-description: Tässä aiheessa käsitellään Kirja-asetussivuilta löytyvää Poiston pyöristys -kenttää.
-author: moaamer
+description: Tässä artikkelissa käsitellään Kirja-asetussivuilta löytyvää Poiston pyöristys -kenttää.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable, AssetDepBookTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13931
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3df48fc7bb092b0257c4652a8c67d1d740dbcfe
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 40fd019b1b5900fbd15866d9d3c32ed6d88147b4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674330"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442825"
 ---
 # <a name="round-off-amount-for-depreciation-calculations"></a>Poistojen laskennan pyöristyssumma
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään **Kirja-asetus**-sivuilta löytyvää **Poiston pyöristys** -kenttää.
+Tässä artikkelissa käsitellään Kirja-asetussivuilta löytyvää Poiston pyöristys -kenttää.
 
 Poiston pyöristyssummat määritetään erikseen jokaiselle kirjalle. Poiston pyöristyssummia käytetään käyttöomaisuuserän poistoprofiilissa, joka sisältää tulevat poistot ja käyttöomaisuuserän arvon, ja lisäksi myös poistoehdotuksissa. Kirjan pienin kirjalle sallittu poisto. 
 
@@ -47,6 +50,3 @@ Poistoksi on laskettu ilman pyöristyksiä 2 444,44. Kuten seuraavasta taulukost
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

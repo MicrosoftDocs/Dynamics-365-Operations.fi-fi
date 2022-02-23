@@ -2,23 +2,26 @@
 title: Tuottokirjauksen määritys
 description: Tässä aiheessa kuvataan tuottokirjauksen määritysasetukset ja niiden vaikutukset.
 author: kweekley
-ms.date: 11/24/2021
+manager: aolson
+ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867217"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458917"
 ---
 # <a name="revenue-recognition-setup"></a>Tuottokirjauksen määritys
 [!include [banner](../includes/banner.md)]
@@ -26,11 +29,9 @@ ms.locfileid: "7867217"
 Uusi **Tuottokirjauksen** moduuli on lisätty, Se sisältää valikkovaihtoehtoja kaikille tarvittaville määrityksille. Tässä aiheessa kuvataan määritysasetukset ja niiden vaikutukset.
 
 > [!NOTE]
-> Tuoton kirjaustoiminto on nyt oletusarvoisesti käytössä käyttöön ominaisuuksien hallinnan kautta. Jos organisaatiosi ei käytä tätä toimintoa, voit poistaa sen käytöstä **Omaisuuksien hallinta** -työtilassa.
->
-> Tuottokirjausten käyttämistä, myyntirakennetoiminnot mukaan lukien, ei tueta Commerce-kanavissa (verkkokauppa, myyntipiste ja puhelinkeskus). Tuottokirjaukseen määritettyjä nimikkeitä ei tulisi lisätä Commerce-kanavissa luotuihin tilauksiin tai tapahtumiin.
+> Tuoton kirjaustoimintoa ei voi ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
 
-**Tuottokirjaus**-moduulissa on seuraavat määritysvaihtoehdot:
+**Tuottokirjauksen** moduulilla on seuraavat määritysvaihtoehdot:
 
 - Tuottokirjauskansiot
 - Tuottokirjauksen parametrit
@@ -40,16 +41,12 @@ Uusi **Tuottokirjauksen** moduuli on lisätty, Se sisältää valikkovaihtoehtoj
     - Nimikeryhmät ja vapautetut tuotteet
     - Tuottoaikataulun määritys
     - Tuottohinnan määritys
-    - Varaston määritys
 
-        - Tuottoaikataulun määritys
-        - Tuottohinnan määritys
+        - Kirjausprofiilit
+        - Niput
 
-    - Kirjausprofiilit
-    - Niput
-
-        - Nippukomponentit
-        - Nippunimike
+    - Nippukomponentit
+    - Nippunimike
 
 - Projektimääritykset
 
@@ -61,11 +58,11 @@ Ensimmäinen skenaario toteutuu sopimusvelvoitteiden täyttämisen jälkeen, kun
 
 Toinen skenaario toteutuu, kun kirjauskansio luodaan uudelleenkohdistuksen jälkeen. Uudelleenkohdistus tapahtuu, kun myyntitilausrivi lisätään aiemmin laskutettuun myyntitilaukseen tai kun luodaan uusi myyntitilaus, joka sisältää alkuperäiseen sopimukseen kuuluvan rivin. Jos lasku on kirjattu ennen uuden myyntitilausrivin lisäämistä, kirjatulle myyntilaskulle on luotava korjaava kirjanpitomerkintä.
 
-Kirjauskansio määritetään **Kirjauskansioiden nimet** -sivulla (**Tuottokirjaus \> Määritys \> Kirjauskansioiden nimet**). Kirjauskansion tyypiksi on määritettävä **Tuottokirjaus**. 
+Kirjauskansio määritetään **Kirjauskansioiden nimet** -sivulla (**Tuottokirjaus \> Määritys \> Kirjauskansioiden nimi**). Kirjauskansion tyypiksi on asetettava **Tuottokirjaus**. Tuottokirjauskansiossa voidaan valita kirjanpitotaso, jolle se kirjataan.
 
 ## <a name="parameters-for-revenue-recognition"></a>Tuottokirjauksen parametrit
 
-Tuottokirjauksen asetukset määritetään **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Määritys \> Kirjanpitoparametrit**). Seuraavat asetukset ovat käytettävissä:
+Tuottokirjauksen asetukset määritetään **Kirjanpitoparametrit** -sivun **Tuottokirjaus** välilehdellä (**Tuottokirjaus \> Määritys \> Kirjanpitoparametrit**). Seuraavat asetukset ovat käytettävissä:
 
 - **Tuottokirjauskansion nimi** – Valitse kirjauskansio, joka luotiin tuottokirjausta varten. Kirjauskansio vaaditaan, kun tuotto kirjataan tuottoaikataulusta tai kun suoritetaan uudelleenkohdistus myyntitilauksessa, joka on jo laskutettu.
 - **Ota alennuksen kohdistus -menetelmä käyttöön** – Määritä tämä asetus arvoon **Kyllä**, jotta tuottohinta määritetään kohdistamalla käyvä markkina-arvo, joka määritetään kunkin vapautetun tuotteen tuottohinnassa. Tämä kohdistus sisältää nimikkeiden mahdollisten rivialennusten kohdistuksen. Jos asetuksen arvoksi määritetään **EI**, järjestelmä käyttää mediaanihintaa, joka on määritetty kunkin vapautetun tuotteen tuottohinnassa. Jos tämän asetuksen arvoksi asetetaan **Ei**, mutta vapautetuille tuotteille ei ole määritetty mediaanihintaa, tuottohintaa ei kohdisteta.
@@ -76,7 +73,7 @@ Tuottokirjauksen asetukset määritetään **Kirjanpitoparametrit**-sivun **Tuot
     - Kun tämän asetuksen arvona on **Ei**, korjaavan tapahtuman kirjaaminen rajoitetaan kirjanpitoon. Kun tämän asetuksen arvona on **Ei**, myyntireskontrassa ei luoda lisäasiakirjoja sisäisen kirjanpidon korjausta varten. Kun lasku maksetaan, tilitysprosessissa käytetään vanhaa kirjanpitomerkintää mahdollisten käteisalennusten, toteutuneen voiton tai toteutuneen tappion kirjaukseen.
     - Kun tämän asetuksen arvo on **Kyllä**, myyntireskontrassa luodaan automaattisesti takaisinkirjausasiakirja ja uusi lasku korjaavaa tapahtumaa varten. Koska tämä korjaus on sisäisen kirjanpidon korjaus, uusia asiankirjoja ei lähetetä tai ilmoiteta asiakkaalle. Takaisinkirjausasiakirja tilitetään alkuperäiselle laskulle ja asiakas maksaa uuden korjatun laskun. Huomaa, että kaikki kolme asiakirjaa näkyvät raporteissa, kuten asiakkaan tiliotteessa.
 
-[![Määritystiedot.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Määritystiedot](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Tuottoaikataulut
 
@@ -86,7 +83,7 @@ Jos tuotto kirjataan välitavoitteiden mukaan, suosittelemme tuottokirjausaikata
 
 Tuottoaikataulut luodaan **Tuottoaikataulut** -sivulla (**Tuottokirjaus \> Määritys \> Tuottoaikataulut**).
 
-[![Tuottoaikataulut.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Tuottoaikataulut](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Syötä kuvaavia arvoja kenttiin **Tuottoaikataulu** ja **Kuvaus**. Seuraavia lisäasetuksia käytetään tuottoaikataulun luomiseen, kun lasku kirjataan.
 
@@ -95,27 +92,20 @@ Syötä kuvaavia arvoja kenttiin **Tuottoaikataulu** ja **Kuvaus**. Seuraavia li
 - **Automaattiset sopimusehdot** – Tämä valintaruutu valitaan, jos sopimuksen alkamis- ja päättymispäivät on tarkoitus asettaa automaattisesti. Nämä päivämäärät asetetaan automaattisesti vain tuottotyypin **Sopimuksenjälkeinen tuki** vapautetuille tuotteille. Sopimuksen alkamispäiväksi asetetaan automaattisesti myyntitilausrivin pyydetty lähetyspäivämäärä ja sopimuksen päättymispäivä asetetaan automaattisesti lisäämällä tuottoaikataulun määrityksessä annettujen kuukausien tai esiintymien määrä alkamispäivämäärään. Myyntitilauksen tuote voi olla esimerkiksi vuoden takuu. Tuottoaikataulun oletusarvo on **12M** (12 kuukautta) ja **Automaattiset sopimusehdot** -valintaruutu on valittuna tälle tuottoaikataululle. Jos myyntitilauksen pyydetty lähetyspäivämäärä on 16.12.2019, sopimuksen oletusarvoinen alkamispäivä on 16.12.2019 ja oletusarvoinen päättymispäivä on 15.12.2020.
 - **Kirjausperusteet** – Kirjausperuste määrittää, miten tuottohinta kohdistetaan esiintymiin.
 
-    - **Kuukausittain päivien mukaan** – Summa kohdistetaan kunkin kalenterikuukauden todellisten päivien perusteella.
+    - **Kuukausittain päivämäärien mukaan** – Summa kohdistetaan kunkin kuukauden todellisten päivien perusteella.
     - **Kuukausittain** – Summa jaetaan tasan esiintymissä määritetyn kuukausimäärän kesken.
     - **Esiintymät** – Summa jaetaan tasan esiintymien kesken, mutta se voi sisältää lisäajan, jos **Todellinen alkamispäivä** valitaan kirjausmenetelmäksi.
-    - **Tilikausi päivien mukaan** – Summa kohdistetaan kunkin tilikauden todellisten päivien perusteella. 
 
-    **Kuukausittain päivien mukaan**- ja **Tilikausi päivien mukaan** -kohdat ovat samat, kun tilikaudet noudattavat kalenterikuukausia. Ainoa poikkeus on, jos kirjausmenetelmäksi määritetään **Kuukauden/kauden loppu** ja **Sopimuksen alkamispäivä**- ja **Päättymispäivä**-kentät jätetään tyhjiksi myyntitilausrivillä.
-
-- **Kirjausmenetelmä** – Kirjausmenetelmällä määritetään päivämäärät, jotka asetetaan laskun tuottoaikataululle.
+- **Kirjausmenetelmä** – Kirjausmenetelmällä määritetään oletuspäivämäärät, jotka asetetaan laskun tuottoaikataululle.
 
     - **Todellinen alkamispäivä** – Aikataulu luodaan käyttämällä joko sopimuksen alkamispäivää (sopimuksenjälkeisen tuen \[PCS\] nimikkeille) tai laskun päiväystä (oleellisille ja muille kuin oleellisille nimikkeille).
-    - **Kuun/kauden 1. päivä** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden tai tilikauden ensimmäiselle päivälle.
-    - **Jako keskellä kuukautta** – Ensimmäisen aikataulurivin päivämäärä määräytyy laskun päiväyksen mukaan. Jos lasku kirjataan kuun 1.–15. päivän välisenä aikana, tuottoaikataulu luodaan käyttämällä kuukauden ensimmäistä päivää. Jos lasku kirjataan kuun 15. päivän jälkeen, tuottoaikataulu luodaan käyttämällä seuraavan kuukauden ensimmäistä päivää.
+    - **Kuun 1. päivä** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden ensimmäiselle päivälle.
+    - **Jako keskellä kuukautta** – Ensimmäisen aikataulurivin päivämäärä määräytyy laskun päiväyksen mukaan. Jos lasku kirjataan kuun 1.–15. päivän välisenä aikana, tuottoaikataulu luodaan käyttämällä kuukauden ensimmäistä päivää. Jos lasku kuun 15. päivän jälkeen, tuottoaikataulu luodaan käyttämällä seuraavan kuukauden ensimmäistä päivää.
+    - **Seuraavan kuun 1. päivä** – Aikataulun päivämääränä on seuraavan kuukauden ensimmäinen päivä.
 
-        **Jako keskellä kuukautta** -kohtaa ei voi valita, jos kirjausperusteeksi on määritetty **Tilikausi päivien mukaan**.
+Valitse **Tuottoaikataulun tiedot** -painike tarkastellaksesi yleisiä kausia ja prosenttiosuuksia, jotka kirjataan kunkin kauden aikana. Oletusarvoisesti **Kirjausprosentti** -arvo jaetaan tasan kausimäärän kesken. Jos kirjausperusteen arvoksi on asetettu joko **Kuukausittain** tai **Esiintymät**, kirjausprosenttia voidaan muuttaa. Kun muutat kirjausprosenttia, saat varoitusviestin siitä, että kokonaismäärä ei ole 100 prosenttia. Jos saat viestin, voit jatkaa rivien muokkaamista. Kokonaismäärän on kuitenkin oltava 100 prosenttia ennen sivun sulkemista.
 
-    - **Seuraavan kuun/kauden 1. päivä** – Päivämäärä, jona aikataulu alkaa, on seuraavan kuukauden tai tilikauden ensimmäinen päivä.
-    - **Kuukauden/kauden loppu** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden tai tilikauden viimeiselle päivälle. 
-
-Valitse **Tuottoaikataulun tiedot** -painike tarkastellaksesi yleisiä kausia ja prosenttiosuuksia, jotka kirjataan kunkin kauden aikana. Oletusarvoisesti **Kirjausprosentti**-arvo jaetaan tasan kausimäärän kesken. Jos kirjausperusteen arvoksi on asetettu **Kuukausittain**, kirjausprosenttia voidaan muuttaa. Kun muutat kirjausprosenttia, saat varoitusviestin siitä, että kokonaismäärä ei ole 100 prosenttia. Jos saat viestin, voit jatkaa rivien muokkaamista. Kokonaismäärän on kuitenkin oltava 100 prosenttia ennen sivun sulkemista.
-
-[![Tuottoaikataulun tiedot.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
+[![Tuottoaikataulun tiedot](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Varaston määritys
 
@@ -150,7 +140,7 @@ Nimikeryhmiä ja vapautettuja tuotteita voidaan määrittää käyttäen joko me
 
 Kun vapautetun tuotteen asetukset on määritetty, tuottohinta on määritettävä manuaalisesti antamalla käyvä hinta tai mediaanihinta (jos käytetään mediaanihintamenetelmää) **Tuottohinnat**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston määritys \> Vapautetut tuotteet** ja valitse sitten **Tuottohinnat** **Tuottokirjaus** -ryhmän **Myy**-välilehden toimintoruudussa).
 
-[![Tuottohinnat.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Tuottohinnat](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Tällä sivulla manuaalisesti määritettyä tuottohintaa käytetään tuottohintakohdistuksen määrittämiseen kussakin myyntitilauksessa määritettyjen ehtojen perusteella. Kukin ehto yhdistetään myyntitilaukseen sen tuottohinnan määrittämiseksi, jota käytetään kohdistusprosessissa.
 
@@ -190,9 +180,9 @@ Nippunimikettä määritettäessä on määritettävä kaksi **Vapautetut tuotte
 - Nimike on määritettävä tuoterakenteen nimikkeeksi **Tuotantotyyppi**-kentän **Kehittäjä**-pikavälilehdessä.
 - **Nippu**-kentän **Yleistä**-pikavälilehdessä nimike on merkittävä nippunimikkeeksi.
 
-Sen jälkeen komponentit on kohdistettava nipun/tuoterakenteen päänimikkeelle **Tuoterakenteen versiot**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet** ja valitse sitten **Tuoterakenteen versiot** **Tuoterakenne**-ryhmän **Kehittäjä**-välilehden toimintoruudussa). Lisätietoja esitetään tuoterakenteiden määritysasiakirjoissa.
+Sen jälkeen komponentit on kohdistettava nipun/tuoterakenteen päänimikkeelle **Tuoterakenteen versiot**-sivulla (siirry kohtaan **Tuottokirjaus \> Määritys \> Varaston ja tuotteen määritys \> Vapautetut tuotteet** ja valitse sitten **Tuoterakenteen versiot** **Tuoterakenne**-ryhmän **Kehittäjä**-välilehden toimintoruudussa). Lisätietoja esitetään tuoterakenteen nimikkeiden määritysasiakirjoissa.
 
-[![Vapautetut tuotteet, tuoterakenteen aikataulut.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Vapautetut tuotteet, tuoterakenteen aikataulut](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Jos nipun päänimikkeet ja nipun komponentit on asetettu kohdistukselle, nipun tuottohinta jaetaan komponenteille niiden tuottoprosenttiosuuksien perusteella.
 
@@ -202,6 +192,3 @@ Tuottokirjausta voidaan käyttää myös myyntitilauksissa, jotka luodaan aika- 
 
 - **siirretty laskutettu tuotto** (kohdassa **Tuottotilit**) – Lisää siirrettyyn tuottoon (tuoton sijaan) kirjattavan tuottohinnan päätili. Tuottohinta siirretään, jos myyntitilausrivillä on tuottoaikataulu.
 - **Siirretyt kustannukset** (kohdassa **Kustannustilit**) – Anna myytyjen tuotteiden sen kustannussumman päätili, joka kirjataan myytyjen tuotteiden siirrettyihin kustannuksiin, jos myös tuottoa siirretään.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

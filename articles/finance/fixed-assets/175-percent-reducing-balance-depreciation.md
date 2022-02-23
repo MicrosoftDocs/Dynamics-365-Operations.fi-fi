@@ -1,26 +1,29 @@
 ---
 title: 175 prosentin jäännöspoisto
 description: Tässä ohjeaiheessa on yleiskuvaus 175 prosentin jäännösarvon poistomenetelmästä.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99bd47192d389c373b29a98f5344e1e0c1ab04e6
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 3a21c315aa9a7193c20e4184da20d4d6d38386c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883260"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442806"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175 prosentin jäännöspoisto
 
@@ -64,9 +67,9 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Esimerkki 175 prosentin jäännöspoistosta
 
-| Kenttä                          | Arvo  |
+|                                |        |
 |--------------------------------|--------|
-| Hankintakustannukset               | 11,000 |
+| Hankintakustannukset               | 11 000 |
 | Jäännösarvo                  | 1 000  |
 | Poistokanta              | 10 000 |
 | Käyttöikä vuosina             | 5      |
@@ -76,15 +79,12 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 
 | Kausi | Vuotuisen poistomäärän laskeminen | Kirjanpitoarvo                  | Nettokirjanpitoarvo vuoden lopussa: |
 |--------|-----------------------------------------------|-----------------------------|---------------------------------------|
-| Vuosi 1 | (11 000 – 1 000) × 35 % = 3 500                | 11 000 – 3 500 = 7 500      | 11 000 – 1 000 – 3 500 = 6 500        |
-| Vuosi 2 | 6 500 × 35 % = 2 275                           | 7 500 – 2 275 = 5 225       | 6 500 – 2 275 = 4 225                 |
-| Vuosi 3 | 4 225 × 35 % = 1 478,75                        | 5 225 – 1 478,75 = 3 746,25 | 4 225 – 1 478,75 = 2 746,25           |
+| Vuosi 1 | (11 000 – 1 000) × 35 % = 3 500                | 11 000 – 3 500 = 7 500      | 11 000 – 1 000 – 3 500 = 6 500        |
+| Vuosi 2 | 6 500 × 35 % = 2 275                           | 7 500 – 2 275 = 5 225       | 6 500 – 2 275 = 4 225                 |
+| Vuosi 3 | 4 225 × 35 % = 1 478,75                        | 5 225 – 1 478,75 = 3 746,25 | 4 225 – 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
 > Jos 175 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

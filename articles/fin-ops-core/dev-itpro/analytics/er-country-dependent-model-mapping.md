@@ -2,9 +2,11 @@
 title: Maakontekstin mukaan määräytyvien ER-mallimääritysten määrittäminen
 description: Tässä ohjeaiheessa käsitellään ER-mallimääritysten määrittämistä siten, että ne määräytyvät sen yrityksen maa- tai aluekontekstista, jonka määrittää niiden käytön.
 author: NickSelin
+manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605368"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680872"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Maakontekstin mukaan määräytyvien ER-mallimääritysten määrittäminen
 
@@ -48,7 +50,7 @@ Joissakin tämän ohjeaiheen vaiheissa on suoritettava ER-muoto. Joissakin tapau
 
 Suunnittele tarvittavat ER-osat tämän ohjeaiheen [Liitteen 1](#appendix1) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)** -mallin yhdistämismääritys, joka sisältää **Aloituskohta 1** -määritelmän mallimäärityksen.
 
-![ER-konfiguraatiot -sivu, Muoto määrityskonfiguraation oppimiseksi.](./media/RCS-Context-specific-mapping-Tree.PNG)
+![Sähköisen raportoinnin konfiguroinnit -sivu](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>Määritetyn muodon suorittaminen
 
@@ -61,7 +63,7 @@ Huomaa, että selain ehdottaa suoritetun ER-muodon muodostaman tekstitiedoston l
 
 Suunnittele tarvittavat ER-osat tämän ohjeaiheen [Liitteen 2](#appendix2) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)**- ja **Yhdistämismääritys (yleinen), mukautettu** -mallin yhdistämismääritykset, joista kumpikin sisältää **Aloituskohta 1** -määritelmän mallimäärityksen.
 
-![ER-konfiguroinnit -sivu, yleisen mukautetun konfiguraation määritys.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![Sähköisen raportoinnin konfiguroinnit -sivu](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>Määritetyn muodon suorittaminen
 
@@ -71,7 +73,7 @@ Suunnittele tarvittavat ER-osat tämän ohjeaiheen [Liitteen 2](#appendix2) ohje
 
 Huomaa, että valitun ER-muodon suorittaminen epäonnistuu. Virhesanoman mukaan **Yhdistämismääritysten oppimismalli**-mallilla sekä **Yhdistämismääritys (yleinen)**- ja **Yhdistämismääritys (yleinen), mukautettu** -mallimäärityksen määritysten **Aloituskohta 1** -määritelmällä on vähintään kaksi mallimääritystä. Sanoma suosittelee lisäksi, että jonkin kyseisen määrityksen valitsemista oletusmääritykseksi.
 
-![ER-konfiguroinnit -sivu ja virhesanoma.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![Sähköisen raportoinnin konfiguroinnit -sivu](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Oletusyhdistämismäärityksen määrittäminen
 
@@ -82,7 +84,7 @@ Määritä **Yhdistämismääritys (yleinen), mukautettu** -mallin yhdistämism�
 3.  Määritä **Mallin yhdistämisasetuksen** oletusarvoksi **Kyllä**.
 4.  Valitse **Tallenna**.
 
-![ER-konfiguraatiosivu, Mallimäärityksen oletus -liukusäätimen arvoksi on asetettu Kyllä.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![Sähköisen raportoinnin konfiguroinnit -sivu](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Määritetyn muodon suorittaminen
 
@@ -101,7 +103,7 @@ Suunnittele tarvittavat ER-osat tämän ohjeaiheen [Liitteen 3](#appendix3) ohje
 
 Huomaa, että **Yhdistämismääritys (FR)** -mallin yhdistämismäärityksen versio 1 on määritetty siten, että se koskee vain niissä Finance-yrityksissä suoritettavia **Yhdistämismääritysten oppimismalli** -mallin ER-muotoja, joissa on ranskalainen maa- tai aluekonteksti.
 
-![ER-konfiguroinnit -sivu, Mallimäärityksen (FR) konfiguraatio.](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![Sähköisen raportoinnin konfiguroinnit -sivu](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>Määritetyn muodon suorittaminen
 
@@ -121,7 +123,7 @@ Määritä **Yhdistämismääritys (FR)** -mallin yhdistämismääritys seuraavi
 3.  Määritä **Mallin yhdistämisasetuksen** oletusarvoksi **Kyllä**.
 4.  Valitse **Tallenna**.
 
-![ER-konfiguraatiosivu, Mallimäärityksen (FR) konfiguraatio, Mallimäärityksen oletus -liukusäätimen arvoksi on asetettu Kyllä.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![Sähköisen raportoinnin konfiguroinnit -sivu](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Määritetyn muodon suorittaminen
 
@@ -195,7 +197,7 @@ Taulukossa plusmerkki (+) ilmaisee mallin yhdistämismäärityksen sen Microsoft
 1.  Valitse siirtymisruudussa **Moduulit \> Organisaation hallinto \> Sähköinen raportointi \> Määritysten virheenkorjauslokit**.
 2.  Valitse **Lataa tämä sivu uudelleen** -painike.
 
-![ER-suorituslokisivu.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![ER-suorituslokisivu](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Huomaa, että uusi tietue on lisätty suoritetun ER-muodon ER-virheenmäärityslokiin. Koska tämän tietueen **Taso**-kentän arvoksi on määritetty **Tiedot**, tietue on tarkoitettu tiedoksi. Koska Muotokomponentti-kentän asetukseksi on määritetty **Yhdistämismääritys**, tietueessa on tietoja mallin määrityksestä, jota käytettiin **Yhdistämismääritysten oppimismuoto** -ER-muodon suorituksen aikana. (Tämä asetus on valittu **Konfiguraation nimi** -kentässä). **Muodostettu teksti** -kentän sisältö ilmaisee, että raportti on suoritettu käytättämällä **Yhdistämismääritys (FR)** -määrityksessä olevaa **Yhdistämismääritys (FR)** -yhdistämisosaa.
 
@@ -236,7 +238,7 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi. 
 14. Kirjoita avattavan luettelon **Nimi**-kenttään **Toimintojen kuvaus**.
 15. Valitse **Lisää**.
 
-    ![ER-tietomallin suunnittelutoiminnon sivu.](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![ER-tietomallin suunnittelutoiminnon sivu](./media/RCS-Context-specific-mapping-Model.PNG)
 
 16. Valitse **Tallenna**.
 17. Sulje sivu.
@@ -276,7 +278,7 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi. 
 5.  Valitse **Tallenna**.
 6.  Sulje **Reseptien suunnittelu** -sivu.
 
-    ![ER-mallimäärityksen suunnittelusivu, aloituspisteen 1 määritys.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.  Valitse **Tallenna**.
 8.  Sulje **Mallimäärityksen sunnittelun** sivu.
@@ -289,12 +291,12 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi. 
 15. Valitse **Tallenna**.
 16. Sulje **Reseptien suunnittelu** -sivu.
 
-    ![ER-mallimäärityksen suunnittelusivu, aloituspisteen 2 määritys.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17. Valitse **Tallenna**.
 18. Sulje **Mallimäärityksen sunnittelun** sivu.
 
-    ![ER-mallimäärityksen suunnittelusivu, jossa aloituspisteiden määritykset.](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![ER-mallin yhdistämismääritykset -sivu](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Sulje **Mallimääritykset**-sivu.
 
@@ -335,7 +337,7 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi. 
 2.  Valitse **Toimintojen kuvaus** -kenttä.
 3.  Valitse **Sido**.
 
-    ![ER-muodon suunnittelutoiminnon sivu.](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![ER-muodon suunnittelutoiminnon sivu](./media/RCS-Context-specific-mapping-Format.PNG)
 
 4.  Valitse **Tallenna**.
 5.  Sulje sivu.
@@ -369,7 +371,7 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi.
 6.  Valitse **Tallenna**.
 7.  Sulje sivu.
 
-    ![ER-mallimäärityksen suunnittelusivu, yleisen toiminnon 1 mukautettu kaava.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.  Valitse **Tallenna**.
 9.  Sulje sivu.
@@ -380,12 +382,12 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi.
 14. Valitse **Tallenna**.
 15. Sulje sivu.
 
-    ![ER-mallimäärityksen suunnittelusivu, yleisen toiminnon 2 mukautettu kaava.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16. Valitse **Tallenna**.
 17. Sulje sivu.
 
-    ![ER-mallista tietolähteeseen -määrityssivu Määritys (yleinen) – kopioi määritys.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![ER-mallin yhdistämismääritykset -sivu](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Sulje sivu.
 
@@ -432,7 +434,7 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi.
 7.  Valitse **Tallenna**.
 8.  Sulje sivu.
 
-    ![ER-mallimäärityksen suunnittelusivu, FR-toiminnon 1 kaava.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.  Valitse **Tallenna**.
 10. Sulje sivu.
@@ -444,12 +446,12 @@ Huomaa, että tämän ER-määrityksen luonnosversio 1 on valmis muokattavaksi.
 16. Valitse **Tallenna**.
 17. Sulje sivu.
 
-    ![ER-mallimäärityksen suunnittelusivu, FR-toiminnon 2 kaava.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![ER-mallimäärityksen suunnittelun sivu](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18. Valitse **Tallenna**.
 19. Sulje sivu.
 
-    ![ER-mallista tietolähteeseen -määrityssivu.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![ER-mallin yhdistämismääritykset -sivu](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Sulje sivu.
 
@@ -494,6 +496,3 @@ Varmista, että jaettua mallin yhdistämismääritystä ei merkitä mallin oletu
 - Vähintään yhdellä ER-mallin yhdistämismäärityksen version tila on joko **Valmis** tai **Jaettu**. Siinä tapauksessa ER-muodon suorittamiseen käytetään versiota, jonka versionumero on korkein.
 - ER-mallin yhdistämismäärityksen **Suorita luonnos** -asetus on otettu käyttöön. Siinä tapauksessa ER-muodon suorittamiseen käytetään versiota, jonka tila on **Luonnos**.
 > **Suorita luonnos** -asetus on valittavissa kunkin ER-mallin yhdistämismäärityksen **Konfiguraatiot**-sivulla, kun **Suorita asetus** -ER-käyttäjäparametri on otettu käyttöön.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

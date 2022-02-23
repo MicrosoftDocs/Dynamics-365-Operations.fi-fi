@@ -2,26 +2,29 @@
 title: Valinnaisten toimintojen määrittäminen Dynamics 365 Commerce -arviointiympäristöä varten
 description: Tässä ohjeaiheessa kerrotaan, miten valinnaiset toiminnot määritetään Microsoft Dynamics 365 Commercen arviointiympäristössä.
 author: psimolin
+manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728288"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411866"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Valinnaisten toimintojen määrittäminen Dynamics 365 Commerce -arviointiympäristöä varten
 
 [!include [banner](includes/banner.md)]
 
@@ -133,7 +136,7 @@ Seuraavat tunnukset koskevat yleistä myyntitilausta.
 
 | Tunnuksen nimi | Tunnus |
 |-------------------|-------|
-| Tilauksen numero      | %salesid% |
+| Tilausnumero      | %salesid% |
 | Asiakkaan nimi   | %customername% |
 | Toimitusosoite  | %deliveryaddress% |
 | Laskutusosoite   | %customeraddress% |
@@ -157,7 +160,7 @@ Seuraavat tunnukset korvataan arvoilla jokaisessa tuotteessa tilauksessa.
 | Tuotteen nimi           | %lineproductname% |
 | kuvaus            | %lineproductdescription% |
 | Määrä               | %linequantity% |
-| Rivin yksikköhinta        | %lineprice% (tarkista) |
+| Rivin yksikköhinta        | %lineprice% (verify) |
 | rivinimikkeen kokonaissumma        | %linenetamount% |
 | rivin alennus          | %linediscount% |
 | Lähetyspäivä              | %lineshipdate% |
@@ -177,13 +180,10 @@ Seuraavat tunnukset korvataan arvoilla jokaisessa tuotteessa tilauksessa.
 
 [Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce -sivusto](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

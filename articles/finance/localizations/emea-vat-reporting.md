@@ -2,24 +2,27 @@
 title: ALV-raportointi Euroopassa
 description: Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b028c5a185b4e7626dd9258630cc469c4439fc37d1c9d1cd7d42007b0ec85736
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 65ea2f40171a470cab0550aecff07567be4aaa78
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741486"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407880"
 ---
 # <a name="vat-reporting-for-europe"></a>ALV-raportointi Euroopassa
 
@@ -45,7 +48,7 @@ ALV-ilmoitus perustuu verotapahtumien summiin. ALV-ilmoituksen luomisprosessi ku
 
 Jokaiselle arvonlisäveroilmoituksen koodille olisi määritettävä tietty raporttiasettelu. Samaan aikaan arvonlisäverokoodit on linkitetty tiettyyn arvonlisäveroviranomaiseen arvonlisäveron tilityskausien kautta. Jokaiselle arvonlisäveroviranomaiselle olisi määritettävä raporttiasettelu. Näin ollen ainoastaan raportointikoodeja, joilla on sama raporttiasettelu, joka on määritetty ALV-viranomaiselle arvonlisäverokoodin arvonlisäveron tilityskausissa, voidaan valita arvonlisäverokoodin raportin määrityksessä. Arvonlisäverotapahtuma, joka luodaan kirjatessa tilauksen tai päiväkirjan, sisältää arvonlisäverokoodin, arvonlisäveron lähteen, arvonlisäveron suunnan ja tapahtumasummat (veron peruste ja verosumma kirjanpitovaluuttana, ALV-valuutta ja tapahtumavaluutta). Perustuen verotapahtuman määritteiden yhdistelmään, tapahtumasummat koostavat kokonaissummat arvonlisäverokoodeille määritetyille arvonlisäveroilmoituksen koodeille. Seuraavassa on kuvattu tietojen suhdetta.
 
-![kaavio.](./media/diagram4.jpg)
+![Kaavio](./media/diagram4.jpg)
 
 ## <a name="vat-statement-setup"></a>ALV-ilmoituksen asetukset
 Voit luoda ALV-ilmoituksen määrittämällä seuraavat.
@@ -248,9 +251,9 @@ d<li>Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</stron
 
 Voit käyttää sähköistä raportointia (ER) määrittääksesi ilmoituksia ja raportteja sekä viedäksesi tietoja eri sähköisissä muodoissa muuttamatta X++ -koodia. Lisätietoja:
 
--   [Sähköisen raportoinnin yleiskatsaus](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
--   [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Lokalisoinnin vaatimukset – GER-konfiguraation luominen](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
+-   [Sähköisen raportoinnin yleiskatsaus](../../dev-itpro/analytics/general-electronic-reporting.md)
+-   [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Lokalisoinnin vaatimukset – GER-konfiguraation luominen](../../dev-itpro/analytics/electronic-reporting-configuration.md)
 
 ## <a name="countryspecific-resources-for-vat-statements"></a>ALV-ilmoitusten maakohtaiset resurssit
 Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimukset. On olemassa ennalta määritetyt mallit ja muodot ALV-ilmoituksille seuraavassa taulukossa luetelluissa maissa.
@@ -274,6 +277,3 @@ Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimuk
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

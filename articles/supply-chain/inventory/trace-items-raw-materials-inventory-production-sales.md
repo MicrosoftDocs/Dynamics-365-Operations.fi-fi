@@ -1,10 +1,12 @@
 ---
 title: Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä
 description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää nimikkeen seurannan avulla nimikkeiden ja raaka-aineiden aiemman, nykyisen ja tulevan käyttöpaikan tuotanto- ja myyntiprosesseissa.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f59a3eca20634d03520ad88f71a3096309e23e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9293578144c51baef34204a2b592d517baa3b0dd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571806"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967177"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä
 
@@ -137,6 +139,3 @@ Voit luoda **Lähetetty asiakkaille** -raportin, jossa määritetään lähetett
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Voinko jäljittää oheistuotteita ja sivutuotteita?
 Voit seurata rinnakkaistuotteita, mutta et voi seurata sivutuotteita, koska niihin ei ole tavallisesti liitetty seurantadimensioita. Kun seuraat nimikettä, seurantatietoihin sisältyvät kaikki liittyvät oheistuotteet. Solmun, joka sisältää rinnakkaistuotteen lisätiedoissa on sana "rinnakkaistuote". Voit tarkastella tietoja oheistuotteesta myös valitsemalla seurantatietojen solmun ja napsauttamalla sitten **Tuotanto**-pikavälilehteä.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

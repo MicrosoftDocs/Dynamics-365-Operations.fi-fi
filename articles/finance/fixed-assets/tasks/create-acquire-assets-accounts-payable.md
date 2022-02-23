@@ -1,30 +1,33 @@
 ---
 title: Käyttöomaisuuserien luominen ja hankkiminen ostoreskontrasta
-description: Tässä menettelyssä käsitellään käyttöomaisuuden luontia ja hankintaa ostoprosessin avulla.
+description: Tässä tehtävän ohjauksessa esitellään käyttöomaisuuden luominen ja hankinta ostoprosessissa.
 author: saraschi2
+manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 7cb9a37c65fb8eab4db6084b91a71c13a45ba42c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394655"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442800"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Käyttöomaisuuserien luominen ja hankkiminen ostoreskontrasta
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä menettelyssä käsitellään käyttöomaisuuden luontia ja hankintaa ostoprosessin avulla.  Siinä tarvitaan kirjanpitäjää ja ostoreskontran käsittelijää sekä esittely-yritystä USMF.
+Tässä tehtävän ohjauksessa esitellään käyttöomaisuuden luominen ja hankinta ostoprosessissa.  Siinä tarvitaan kirjanpitäjää ja ostoreskontran käsittelijää sekä esittely-yritystä USMF.
 
 
 ## <a name="set-fixed-assets-parameters"></a>Käyttöomaisuusparametrien määrittäminen
@@ -53,6 +56,3 @@ Tässä menettelyssä käsitellään käyttöomaisuuden luontia ja hankintaa ost
 17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 18. Valitse **Kirjaa**. Käyttöomaisuus luodaan ja hankitaan, kun lasku on kirjattu.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

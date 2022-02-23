@@ -69,6 +69,3 @@ Voit määrittää myös ehdokaskokemukseen liittyviä asetuksia. Yksi asetuksis
 Voit määrittää myös tarjouksen vanhentumispäivän ja pakottaa sen ottamisen käyttöön. Jos valitset **Vaadi vanhentumispäivä kaikille tarjouksille** -asetukseksi **Kyllä**, tarjoukset vanhentuvat, kun määrittämäsi määrä tunteja tai päiviä on kulunut.
 
 Lisätietoja tarjoustenhallinnasta on kohdassa [Tarjoustenhallinnan määrittäminen](./offer-setup.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

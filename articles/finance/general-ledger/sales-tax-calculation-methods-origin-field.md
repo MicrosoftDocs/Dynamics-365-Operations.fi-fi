@@ -2,25 +2,28 @@
 title: Arvonlisäveron laskentatavat Alkuperä-kentässä
 description: Tässä artikkelissa käsitellään arvonlisäveron koodisivun Peruste-kentän vaihtoehtoja sekä sitä, miten arvonlisävero lasketaan valitun vaihtoehdon perusteella arvonlisäverokoodille.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ac37858c68996c6c8140303327003d93bd357b512f9c634650b7e9df1284496
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0eb3671051d9a3be9430050e2a0ad4227b17677e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769743"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442777"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Arvonlisäveron laskentatavat Alkuperä-kentässä
 
@@ -52,7 +55,8 @@ Jos nettosumma on 10,00, niin MAKSU 1 on 1,00 (10,00 x 10 %) ja MAKSU 2 = 2,00 (
 | Tapahtumassa voi käyttää vain yhtä verokoodia, jossa Alkuperä = Prosenttia bruttosummasta. Jos tapahtumalle määritetään useita tällaisia verokoodeja, näyttöön tulee virhesanoma, jonka mukaan arvonlisäveroa ei voi laskea. |
 
 
-## <a name="percentage-of-sales-tax"></a>Arvonlisäveroprosentti
+<a name="percentage-of-sales-tax"></a>Arvonlisäveroprosentti
+-----------------------
 
 Kun valitset Alkuperä-kentästä Arvonlisäveroprosentti-vaihtoehdon, arvonlisävero lasketaan prosenttina Arvonlisäveron arvonlisävero -kentässä valitusta arvonlisäverosta. Arvonlisäveron arvonlisävero -kentästä valittu arvonlisävero lasketaan ensin. Toinen arvonlisävero lasketaan sitten ensimmäisen arvonlisäverosumman perusteella.
 ### <a name="example"></a>Esimerkki
@@ -118,7 +122,8 @@ Asiakirjan/kirjauskansion asetukseksi on määritetty Summat sisältävät arvon
 
 
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
 [Arvonlisäveroprosentit Alv-rajan peruste- ja Laskentatapa-kenttien perusteella](marginal-base-field.md)
 
@@ -126,6 +131,3 @@ Asiakirjan/kirjauskansion asetukseksi on määritetty Summat sisältävät arvon
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

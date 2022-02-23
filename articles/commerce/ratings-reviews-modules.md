@@ -2,30 +2,35 @@
 title: Luokitusten ja arvosteluiden moduulit
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Commercen tuotetietojen sivuilla käytettäviä luokitus- ja arviointimoduuleja.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 66ee2d4185cad45b70b19fb474c64ae77a2868e835b20d5275e21610c0150370
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85fb1272103eed7d6e44635b7c20438471d96b34
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761559"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412072"
 ---
 # <a name="ratings-and-reviews-modules"></a>Luokitusten ja arvosteluiden moduulit
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Commercen tuotetietojen sivuilla (PDP) käytettäviä luokitus- ja arviointimoduuleja.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Sähköisen kaupankäynnin sivustojen luokitukset ja arvostelut auttavat asiakkaita saamaan tietoja tuotteista ennen ostopäätöksen tekemistä. Niiden avulla voi myös kerätä asiakkaiden tuotteita koskevaa palautetta. 
 
@@ -42,23 +47,19 @@ Kolme moduulia näyttävät luokitukset ja arvostelut PDP-sivujen yhteenvedoissa
  
 Seuraavassa kuvassa näytetään, miltä luokitusten ja arvosteluiden moduulit näyttävät PDP-sivulla.
 
-![Luokitusten ja arvosteluiden moduulit PDP-sivulla.](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![Luokitusten ja arvosteluiden moduulit PDP-sivulla](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
 > Lisätietoja PDP-mallien ja -asettelujen optimoimisesta niin, että voit jakaa luokitusten ja arvosteluiden moduulien määritykset useiden PDP-sivujen kanssa sähköisen kaupankäynnin sivustossa, on kohdassa [Mallien ja asettelujen yleiskatsaus](templates-layouts-overview.md).
 
 Seuraavassa kuvassa on tietoja siitä, miten **Lisää moduuli** -valintaikkuna esittää luokitusten ja arvosteluiden moduulit Dynamics 365 Commerce -sovelluksessa.
-![Lisää moduuli -valintaikkuna.](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+![Lisää moduuli -valintaikkuna](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### <a name="write-review-module"></a>Kirjoita arvostelu -moduuli
 
 Kirjoita arvostelu -moduuli sisältää **Kirjoita arvostelu** -painikkeen, jonka avulla käyttäjät voivat kirjautua sisään, määrittää luokituksen ja kirjoittaa tuotetta koskevan arvostelun. Tämän moduulin avulla käyttäjät voivat myös muokata aiemmin lähettämiään luokituksia ja arvosteluita. Tämä moduuli näkyy yleensä luokitusten histogrammi -ja tuotearvosteluluettelomoduulien yläpuolella PDP-sivulla.
 Seuraavassa kuvassa on **Kirjoita arvostelu** -valintaikkuna, joka näkyy, kun asiakas valitsee **Kirjoita arvostelu** -kohdan. Asiakas voi tämän valintaikkunan avulla lähettää luokituksen ja arvostelun.
-
-![Kirjoita arvostelu -valintaikkuna.](media/rnr-eCommerce-write-review-module.png)
-
-Seuraavassa taulukossa on Kirjoita arvostelu -moduulin ominaisuus, joka on määritettävä muokkaustyökalussa.
-
+![Kirjoita arvostelu -valintaikkuna](media/rnr-eCommerce-write-review-module.png) Seuraavassa taulussa ovat kirjoita arvostelu -ominaisuus, joka on määritettävä luontityökalussa.
 | Ominaisuuden nimi | Arvo        | Ominaisuuden kuvaus                 |
 |---------------|--------------|--------------------------------------|
 | Nimi          | Kirjoita arvostelu | Kirjoita arvostelu -moduulin nimi. |
@@ -67,7 +68,7 @@ Seuraavassa taulukossa on Kirjoita arvostelu -moduulin ominaisuus, joka on mää
 
 Luokitusten histogrammin moduulissa on luokitusten histogrammi. Tämä moduuli tulee yleensä näkyviin Kirjoita arvostelu -moduulin ja tuotearvosteluluettelomoduulin väliin PDP-sivulla.
 Luokitusten histogrammin moduulia ei tarvitse määrittää. Moduuli on ainoastaan lisättävä PDP-malliin. Seuraavissa kuvissa näkyy, miltä PDP-malli näyttää Dynamics 365 Commerce -sovelluksessa, kun luokitusten ja arvostelujen moduulit on määritetty näytettäväksi PDP-sivuilla.
-![PDP-malli, kun luokitukset ja arvostelut on määritetty näytettäväksi PDP-sivuilla.](media/rnr-eCommerce-pdp-reviews-modules.png)
+![PDP-malli, kun luokitukset ja arvostelut on määritetty näytettäväksi PDP-sivuilla](media/rnr-eCommerce-pdp-reviews-modules.png)
 
 ### <a name="product-reviews-list-module"></a>Tuotearvosteluluettelomoduuli
 
@@ -82,7 +83,7 @@ Seuraavassa taulukossa on tuotearvosteluluettelomoduulin ominaisuudet, jotka on 
 
 Tuotearvosteluluettelomoduuli sisältää paikan, jossa voit lisätä luokitusten histogrammin moduulin. Seuraavassa kuvassa näkyy, miten voit lisätä luokitusten histogrammin moduulin tuotearvosteluluettelomoduuliin Dynamics 365 Commerce -sovelluksessa.
 
-![Luokitusten histogrammin moduulin lisääminen tuotearvosteluluettelomoduuliin.](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+![Luokitusten histogrammin moduulin lisääminen tuotearvosteluluettelomoduuliin](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -99,6 +100,3 @@ Tuotearvosteluluettelomoduuli sisältää paikan, jossa voit lisätä luokituste
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

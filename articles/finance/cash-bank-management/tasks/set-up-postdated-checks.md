@@ -2,23 +2,26 @@
 title: Määritä jälkeen päin päivitetyt sekit
 description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää, kirjataanko kirjauskansiomerkinnät jälkikirjatuille sekeille ja mitä kirjauskansioita käytetään merkintöjen ja toimittajamaksujen selvittämiseen.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fc1798836d9b905d991adb4c87d55ddce41d260bdbfdad6bf0c4b4feb846ee57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 22e67aa051b5ea8267df7efac40e007d0f11a83d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743070"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442834"
 ---
 # <a name="set-up-postdated-checks"></a>Määritä jälkeen päin päivitetyt sekit
 
@@ -53,12 +56,4 @@ Tämä menettelyn rooli on Rahastonhoitaja. Näissä toimintaohjeissa käytetä�
     * Valitse laskun summan vähennyksessä käytettävä pankkitili.  
 18. Valitse Tallenna.
 19. Sulje sivu.
-> [!NOTE]
-> Ennen kuin voit kirjata myöhemmäksi päivätyn sekin pankkitilille, kun istunnon päivämäärä on suurempi tai yhtä suuri kuin erääntymispäivä, ota käyttöön ominaisuus **Maksukirjauskansion erääntymispäivän vahvistus myöhemmäksi päivätyillä sekeillä pankkitilille**. Tämän ominaisuuden avulla voit kirjata toimittajien tai asiakkaiden maksukirjauskansioita, joilla on myöhemmäksi päivättyjä sekkejä, kun istunnon päivämäärä on suurempi tai yhtä suuri kuin erääntymispäivä.
-> 
-> Kun määrität kohtaa **Maksutapa** (**Ostoreskontra > Maksun asetukset > Maksutavat**), älä täytä **Välitili**-kohtaa. Tällöin vastatiliksi määritetään pankkitili, joka on määritetty **Maksutapa**-kohdassa.
->  
-> Kun toiminto on käytössä ja istunnon päivämäärä on erääntymispäivää pienempi, maksukirjauskansiota kirjattaessa näyttöön tulee seuraava virhesanoma: "Erääntymispäivämäärän on oltava yhtä suuri tai pienempi kuin istunnon päivämäärä, jos vastatilityyppinä on Pankki". Jos toiminto ei ole käytössä, voit kirjata maksukirjauskansion, jossa on myöhemmäksi päivätty sekki, kun istunnon päivämäärä on pienempi kuin erääntymispäivä.
-> Ominaisuus on saatavilla versiossa 10.0.21 ja sitä uudemmissa versioissa.    
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,24 +2,27 @@
 title: Aseta oletusarvoiset kuvaukset automaattiselle tiliöinnille
 description: Tämä ohjeaihe kuvaa, kuinka voit määrittää oletustekstin, jota käytetään kuvaamaan niitä kirjanpitomerkintöjä, jotka kirjataan kirjanpitoon automaattisesti. Voit määrittää kuvaavan oletustekstin käyttämällä vapaamuotoista tekstiä tai valitsemalla kiinteitä muuttujia.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 89ea19753abdc4e5d4219a123a832bb3606515a43b439d5f94a9619857b6c7d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722692"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442600"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Aseta oletusarvoiset kuvaukset automaattiselle tiliöinnille
 
@@ -84,6 +87,3 @@ Kun olet suorittanut aiemmin tässä ohjeaiheessa kuvatun kohdan [Oletuskuvauste
 2. Valitse **Viitetaulukko**-kentästä tietokantataulukko, josta parametritietoja lisätään kuvaukseen.
 3. Valitse **Viitekenttä**-kentästä kenttä, josta parametritietoja lisätään kuvaukseen.
 4. Voit lisätä muita parametrejä tekemällä kohtien 1–3 toimet uudelleen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

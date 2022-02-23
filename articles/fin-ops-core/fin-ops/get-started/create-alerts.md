@@ -1,24 +1,26 @@
 ---
 title: Hälytyssääntöjen luominen
-description: Tässä ohjeaiheessa on tietoja hälytyksistä ja siitä, miten hälytyssääntö luodaan.
-author: RichdiMSFT
+description: Tässä ohjeaiheessa on tietoja hälytyksistä. Siinä myös selitetään, miten luodaan sellainen hälytyssääntö, joka ilmoittaa tapahtumista, kuten saapuvasta päivämäärästä tai tapahtuvasta muutoksesta.
+author: tjvass
+manager: AnnBe
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 597785e65f127794ca84fe3053a664f717b056bd7374e0396732d4bcf59a743c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736195"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798424"
 ---
 # <a name="create-alert-rules"></a>Hälytyssääntöjen luominen
 
@@ -100,8 +102,3 @@ Hälytyksiä ei voi luoda joillekin lomakkeiden toissijaisille tietolähteille. 
     ```
 2. Luo hälytys SysTableBrowser-lomakkeesta.
 
-### <a name="change-based-alerts-do-not-work-for-batch-status-changes"></a>Muutoksiin perustuvat hälytykset eivät toimi, jos erän tila muuttuu
-Muutokseen perustuvat hälytykset eivät toimi erän tilan muutuessa, koska se on pois käytöstä suorituskykysyistä. Sen sijaan on määritettävä **Erähälytykset**-toiminto. Lisätietoja on kohdassa [Hälytysten määrittäminen eräkäsittelyn parannettuihin lomakkeisiin](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

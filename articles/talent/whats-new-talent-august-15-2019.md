@@ -61,6 +61,3 @@ Lisätietoja Ympäristön päivitys 29 -päivityksestä Finance and Operationsil
 Työntekijätietueiden muutokset tulevat harvoin voimaan heti. Tiedot on päivitettävä työntekijän aloituspäivästä lähtien, ja tämä päivämäärä on usein tulevaisuudessa. Myös menneisyydessä olevat tiedot päivitettävä. Tässä yksinkertaistetussa siirtymismallissa voi päivittää tulevia ja menneitä päivämääriä ilman useisiin lomakkeisiin siirtymistä tai päivämääräkontekstin vaihtamista. Tämä muutos myös korottaa ja näyttää dynaamisesti tärkeitä tietoja työntekijätietueen ylemmällä ilmoitusalueella.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

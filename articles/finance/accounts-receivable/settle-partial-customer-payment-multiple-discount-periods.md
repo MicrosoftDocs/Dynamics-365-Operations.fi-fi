@@ -2,25 +2,28 @@
 title: Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen
 description: Tässä artikkelissa kerrotaan, miten osittaiset asiakkaan maksut tilitetään, kun alennuskausia on useita.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14471
 ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d0d517524add5e18b1f0795b2ee2fd7f5b7686b26919a7e8f2e20ac1d243fe9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f4d5178aeb3294fd3b40815bb294a7f2ff08b71
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442665"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen
 
@@ -31,7 +34,7 @@ Tässä artikkelissa kerrotaan, miten osittaiset asiakkaan maksut tilitetään, 
 Fabrikam tarjoaa asiakkaalle 4031 kaksi käteisalennuskautta. Asiakas saa 2 prosentin käteisalennuksen, jos lasku maksetaan viiden päivän kuluessa, ja 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 
 ## <a name="invoice"></a>Lasku
-Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4031, jonka arvo on 1.000,00. Kun Erik tarkastaa tämän laskun käteisalennukset, Erik näkee, että asiakas 4031 saa 20,00 arvoisen alennuksen, jos lasku maksetaan viimeistään 30. päivänä kesäkuuta. Jos lasku maksetaan viimeistään 9. päivänä heinäkuuta, asiakas saa 10,00 arvoisen alennuksen.
+Erik syöttää ja kirjaa 25. kesäkuuta laskun asiakkaalle 4031, jonka arvo on 1.000,00. Kun hän tarkastaa tämän laskun käteisalennukset, Erik näkee, että asiakas 4031 saa 20,00 arvoisen alennuksen, jos lasku maksetaan viimeistään 30. päivänä kesäkuuta. Jos lasku maksetaan viimeistään 9. päivänä heinäkuuta, asiakas saa 10,00 arvoisen alennuksen.
 
 | Käteisalennuksen päivämäärä | Käteisalennussumma | Summa tapahtuman valuuttana |
 |--------------------|----------------------|--------------------------------|
@@ -54,7 +57,7 @@ Asiakas 4031 suorittaa 28. kesäkuuta 294,00 arvoisen osamaksun. Koska 28. kesä
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi **294,00**, **Käteisalennussumma** -kentän arvot vaihtelevat. Käteisalennuksena käytetään kuitenkin arvoa 6,00 maksun kirjaamisen yhteydessä, koska tilitys muuttaa **Täsmäytettävä summa** -arvon automaattisesti.
 
-| &nbsp;                       | &nbsp;    |
+|                              |           |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 30.6.2015 |
 | Käteisalennussumma         | 20,00     |
@@ -73,7 +76,7 @@ Asiakas maksaa laskun loppusumman 8. heinäkuuta. Koska maksu suoritetaan toisel
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
 
-| &nbsp;                       | &nbsp;    |
+|                              |           |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 30,00     |
@@ -95,6 +98,3 @@ Laskun saldo on nyt 0,00. Arnie tarkastelee tietoja **Asiakastapahtumat**-sivull
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

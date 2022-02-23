@@ -1,106 +1,73 @@
 ---
 title: Luo ennalta määritetyt tuotevariantit
 description: Tässä menettelyssä selvitetään tuotevariantien luonti päätuotteelle käyttämällä tuotedimensioiden yhdistelmiä.
-author: t-benebo
-ms.date: 04/22/2021
+author: ShylaThompson
+manager: tfehr
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a90e0eb469b823368c1140421fc9c92ccfe69a3b7bac73f762170c0da43e3eee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d07a090dbd41eb17e8d604887435bbb8b07e8d9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747886"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966927"
 ---
-# <a name="predefined-product-variants"></a>Ennalta määritellyt tuotevariantit
+# <a name="create-predefined-product-variants"></a>Luo ennalta määritetyt tuotevariantit
 
 [!include [banner](../../includes/banner.md)]
 
-## <a name="example-scenario-create-predefined-product-variants"></a>Esimerkkiskenaario: Luo ennalta määriteltyjä tuotevariantteja
+Tässä menettelyssä selvitetään tuotevariantien luonti päätuotteelle käyttämällä tuotedimensioiden yhdistelmiä. Tämän menettelyn luomiseen on käytetty USMF-demoyritystä.
 
-Tässä esimerkkiskenaariossa näytetään tuotevariantien luonti päätuotteelle käyttämällä tuotedimensioiden yhdistelmiä.
 
-### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
+## <a name="create-a-product-master"></a>Luo päätuote
+1. Siirry kohtaan Tuotetietojen hallinta > Tuotteet > Päätuotteet.
+2. Valitse Uusi.
+3. Kirjoita arvo Tuotenumero-kenttään.
+    * Tuotetunnuksen antaminen manuaalisesti on pakollista vain, jos tuotetunnuskenttään ei ole määritetty numerosarjaa. Toisin sanoen, tämän vaiheen voi ohittaa, jos kentälle on määritetty numerosarja.  
+4. Kirjoita arvo Tuotteen nimi -kenttään.
+5. Syötä tai valitse arvo Tuotedimension ryhmä -kentässä.
+    * Valitse tuotedimensioryhmäksi SizeCol (koko ja väri).  
+6. Valitse OK.
 
-Tämän skenaarion noudattaminen tässä ehdotettuja arvoja käyttämällä edellyttää, että demotiedot on asennettu ja että *USMF*-yritys on valittu.
+## <a name="add-product-dimensions"></a>Lisää tuotedimensiot
+1. Valitse Tuotedimensiot.
+    * Tässä esimerkissä havainnollistetaan, kuinka tuotedimensiot voi antaa käsin. Voit myös valita koko-, väri- tai tyyliryhmän, joka sisältää haluamasi tuotedimension arvot.  
+2. Valitse Uusi.
+3. Merkitse valittu rivi luettelossa.
+4. Syötä tai valitse arvo Koko-kenttään.
+5. Kirjoita arvo Nimi-kenttään.
+6. Valitse Uusi.
+7. Merkitse valittu rivi luettelossa.
+8. Syötä tai valitse arvo Koko-kenttään.
+9. Kirjoita arvo Nimi-kenttään.
+10. Valitse Värit-välilehti.
+11. Valitse Uusi.
+12. Merkitse valittu rivi luettelossa.
+13. Syötä tai valitse Väri-kentän arvo.
+14. Kirjoita arvo Nimi-kenttään.
+15. Valitse Uusi.
+16. Merkitse valittu rivi luettelossa.
+17. Syötä tai valitse Väri-kentän arvo.
+18. Kirjoita arvo Nimi-kenttään.
+19. Valitse Tallenna.
+20. Sulje sivu.
 
-### <a name="step-1-create-a-product-master"></a>Vaihe 1: Luo päätuote
+## <a name="generate-product-variants"></a>Luo tuotevariantit
+1. Valitse Tuotevariantin koot.
+2. Valitse Muuttujaehdotukset.
+3. Valitse Valitse kaikki.
+    * Tässä esimerkissä kaikki mahdolliset muuttujat on valittu. Jos ainoastaan saatavilla olevien tuotedimensioyhdistelmien alijoukkoa käytetään varianttien luomiseen, voit valita yksittäisiä merkintöjä.  
+4. Valitse Luo.
+    * Voit luoda kuvaukset kaikille varianteille tuotedimensioarvojen yhdistelmien perusteella. Kuvaukset ovat valinnaisia.  
+5. Valitse Tallenna.
 
-Päätuotteen luominen:
-
-1. Siirry kohtaan **Tuotetietojen hallinta > Tuotteet > Päätuotteet**.
-1. Valitse **Uusi**.
-1. Jos **Tuotenumero**-kentässä ei vielä ole numeroa näkyvissä, kirjoita arvo. Tämä vaaditaan vain, jos kentälle ei ole määritetty numerosarjaa.
-1. Syötä **Tuotenimi** -kenttään nimi.
-1. Valitse **Tuotedimensioryhmä**-kentästä tuotedimensioryhmä *SizeCol* (koko ja väri).
-1. Luo ja avaa uusi päätuote valitsemalla **OK**.
-
-### <a name="step-2-add-product-dimensions"></a>Vaihe 2: Lisää tuotedimensiot
-
-Tässä esimerkissä havainnollistetaan, kuinka tuotedimensiot voi antaa käsin. Voit myös valita koko-, väri- tai tyyliryhmän, joka sisältää haluamasi tuotedimension arvot.
-
-Tuotedimensioiden lisääminen:
-
-1. Kun uusi päätuote on vielä avoinna, valitse **Tuotedimensiot** toimintoruudusta.
-1. Avaa **Koko**-välilehti ja lisää ruudukkoon rivi valitsemalla työkaluriviltä **Uusi**. Tee uudelle riville seuraavat asetukset:
-    - **Koko:** Valitse koon arvo.
-    - **Nimi:** Syötä koolle nimi.
-1. Valitse työkaluriviltä **Uusi** ja lisää toinen koko ruudukkoon, jossa on uusi **Koko** ja **Nimi**.
-1. Avaa **Värit**-välilehti ja lisää ruudukkoon rivi valitsemalla työkaluriviltä **Uusi**. Tee uudelle riville seuraavat asetukset:
-    - **Väri:** Valitse väriarvo.
-    - **Nimi:** Syötä värille nimi.
-1. Valitse työkaluriviltä **Uusi** ja lisää toinen väri ruudukkoon, jossa on uusi **Väri** ja **Nimi**.
-1. Valitse **Tallenna**.
-1. Voit palata uuteen päätuotteeseen sulkemalla sivun.
-
-### <a name="step-3-generate-product-variants"></a>Vaihe 3: Luo tuotevariantit
-
-> [!NOTE]
-> Tässä osassa kuvataan, miten tuotevariantteja luodaan, kun *Muuttujaehdotukset-sivun parannukset* -toiminto ei ole käytössä. Seuraavassa osassa on tietoja siitä, miten tuotevariantteja luodaan, kun tämä ominaisuus on käytettävissä.
-
-Tuotevarianttien luonti:
-
-1. Kun uusi päätuote on vielä avoinna, valitse **Tuotevariantit** toimintoruudusta.
-1. Valitse toimintoruudussa **Muuttujaehdotukset**.
-1. Järjestelmä luo luettelon, joka sisältää kaikki mahdolliset tuotteeseen määritetyt koko- ja väriyhdistelmät. Valitse työkalurivillä **Valitse kaikki**.
-    - Tässä esimerkissä valitse kaikki mahdolliset muuttujat. Jos haluat käyttää vain mahdollisen tuotedimensioyhdistelmän alijoukkoa, valitse vain tarvittavat valintaruudut.  
-1. Valitse **Luo**.
-1. Valitse **Tallenna**.
-
-## <a name="improved-variant-suggestions"></a>Parannetut muuttujaehdotukset
-
-*Muuttujaehdotukset-sivun parannukset* -ominaisuus parantaa **Muuttujaehdotukset**-sivua niiden yritysten suorituskykyyn ja käytettävyyteen liittyvien ongelmien käsittelemiseksi, joilla on suuri määrä tuotedimensioyhdistelmiä. Paranneltu prosessi, jossa valitaan tuotedimensioarvot, joiden perusteella muuttujaehdotuksia luodaan, nopeuttaa ja helpottaa asianmukaisten tuotevarianttien tunnistamista ja vapauttamista.
-
-Tämä ominaisuus lisää seuraavat parannukset:
-
-- **Varianttiehdotusten lykätty luominen::** **Varianttiehdotukset**-sivun ensimmäisellä avauskerralla ei enää näytetä ehdotuksia. Sen sijaan sinun on nimenomaisesti valittava haluamasi arvot ja luotava yhdistelmät valitsemalla **Ehdota**-painike. Näin prosessi on näkyvämpi ja vuorovaikutteisempi.
-- **Dimension arvojen valitseminen:** Kun dimension arvoja on useita, käyttäjä haluaa yleensä luoda varianttiehdotuksia, jotka sisältävät vain joitakin arvoja (kuten uuden väri- tai tyylijoukon esittely). Tämän parannetun suunnittelun avulla käyttäjä voi valita ne dimension arvot, joille tuotevarianttiehdotukset halutaan luoda. Tämä kasvattaa suuresti ehdotettujen varianttien relevanssia ja parantaa sekä järjestelmän suorituskykyä että käyttäjän tuottavuutta.
-
-### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a>Muuttujaehdotus-sivun parannustoiminnon ottaminen käyttöön
-
-Ennen kuin voit käyttää *Muuttujaehdotukset-sivun parannukset* -toimintoa, sen pitää olla otettu käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Tuotetietojen hallinta*
-- **Ominaisuuden nimi:** *Muuttujaehdotukset-sivun parannukset*
-
-### <a name="work-with-the-improved-variant-suggestions"></a>Paranneltujen muuttujaehdotusten käyttäminen
-
-Tuotevarianttiehdotusten luominen, kun *Muuttujaehdotukset-sivun parannukset* -toiminto on käytössä:
-
-1. Avaa tai luo päätuote ja lisää tarvittavat tuotedimensiot siihen edellisessä osassa kuvatulla tavalla.
-1. Kun päätuote on avoinna, valitse **Tuotevariantit** toimintoruudusta.
-1. Valitse toimintoruudussa **Muuttujaehdotukset**.
-1. Valitse kullekin dimensiolle arvot, joita haluat käyttää.
-1. Valitse yläreunan työkaluriviltä **Ehdota**.
-1. Järjestelmä luo luettelon, joka sisältää kaikki mahdolliset valitut koko- ja väriyhdistelmät. Valitse **Ehdotetut muuttujat** -pikavälilehdessä kunkin käytettävän tuotedimensioyhdistelmän valintaruutu tai valitse **Valitse kaikki** työkalurivillä valitaksesi ne kaikki.  
-1. Valitse **Luo** lisätäksesi muuttujat nykyiseen päätuotteeseen.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

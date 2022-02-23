@@ -2,9 +2,11 @@
 title: Työn jako
 description: Tässä aiheessa on tietoja työn jakotoiminnosta. Tällä toiminnolla voidaan jakaa suuret työtilaukset useiksi pieniksi työtilauksiksi, jotka voidaan sitten määrittää useille varastotyöntekijöille. Tällä tavoin useat varastotyöntekijät voivat keräillä samaa työtä samanaikaisesti.
 author: mirzaab
+manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -12,17 +14,15 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 8a530f3887c3c66295177d480a8c486dd0984153
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778254"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965524"
 ---
 # <a name="work-split"></a>Työn jako
-
-[!include [banner](../includes/banner.md)]
 
 Työnjakotoiminnolla voidaan jakaa suuret työtunnukset (eli useita rivejä sisältävät työtilaukset) useiksi pieniksi työtunnuksiksi, jotka voidaan sitten määrittää useille varastotyöntekijöille. Tällä tavoin useat varastotyöntekijät voivat keräillä samaa työn luontinumeroa samanaikaisesti.
 
@@ -33,7 +33,7 @@ Työnjakotoiminnolla voidaan jakaa suuret työtunnukset (eli useita rivejä sis�
 
 Ennen kuin työn jakotoimintoa voidaan käyttää, se ja sen edellytyksenä oleva toiminto on otettava käyttöön. Järjestelmänvalvojat voivat tarkistaa [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksissa toimintojen tilan ja ottaa ne tarvittaessa käyttöön.
 
-Jos edellytyksenä oleva *Organisaation laajuinen työn esto* -toiminto ei ole vielä käytössä, se on otettava käyttöön. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä. Ominaisuus on kuitenkin edelleen mainittu [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) seuraavasti:
+Jos edellytyksenä oleva *Organisaation laajuinen työn esto* -toiminto ei ole vielä käytössä, se on otettava käyttöön. **Ominaisuuksien hallinta** -työtilassa tämä ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Varastonhallinta*
 - **Toiminnon nimi:** *Organisaation laajuinen työn esto*
@@ -53,7 +53,7 @@ Ota seuraavaksi *Työn jako* -toiminto, joka ilmaistaan seuraavasti:
 - **Jaa työ** – jaa nykyinen työtunnus useiksi pieniksi työtunnuksiksi, joita eri työntekijät voivat käsitellä.
 - **Peruuta työn jakoistunto** – peruuta työn jakoistunto ja anna mahdollisuus työn käsittelyyn.
 
-![Jaa työ- ja Peruuta työn jakoistunto -painikkeet.](media/Work_split_buttons.png "Jaa työ- ja Peruuta työn jakoistunto -painikkeet")
+![Jaa työ- ja Peruuta työn jakoistunto -painikkeet](media/Work_split_buttons.png "Jaa työ- ja Peruuta työn jakoistunto -painikkeet")
 
 > [!IMPORTANT]
 > **Jaa työ** -painike ei ole käytettävissä, jos jokin seuraavista ehdoista toteutuu.
@@ -69,7 +69,7 @@ Ota seuraavaksi *Työn jako* -toiminto, joka ilmaistaan seuraavasti:
 >
 > - Toinen käyttäjä jakaa parhaillaan työtä. Jos yrität avata sellaisen työn jakosivun, jota toinen käyttäjä jo jakaa, seuraava virhesanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan. Yritä uudelleen muutaman minuutin kuluttua. Jos näet tämän sanoman uudelleen, ota yhteys työnjohtajaan.
 
-Uusi työn estosyy, *Jaa työ*, ilmaisee, kun työtunnusta ollaan jakamassa. Se näkyy sekä **Jaa työt** -sivulla että varastonhallinnan mobiilisovelluksessa, jos käyttäjä yrittää suorittaa työn. Jos eston syitä käytetään, työtunnuksen **Estetty aalto** -kentän arvoksi vaihtuu **Estetty**.
+Uusi työn estosyy, *Jaa työ*, ilmaisee, kun työtunnusta ollaan jakamassa. Se näkyy sekä **Jaa työt** -sivulla että varastosovelluksessa, jos käyttäjä yrittää suorittaa työn. Jos eston syitä käytetään, työtunnuksen **Estetty aalto** -kentän arvoksi vaihtuu **Estetty**.
 
 ## <a name="initiate-a-work-split"></a>Työn jaon aloittaminen
 
@@ -96,7 +96,7 @@ Työ jaetaan seuraavasti:
 
     Nykyisen työn **Työn eston syy** -kentän asetukseksi määritetään *Jaa työ* ja työ estetään.
 
-    ![Eston syy.](media/Blocking_reason.png "Eston syy")
+    ![Eston syy](media/Blocking_reason.png "Eston syy")
 
 1. Valitse nykyisestä työtunnuksesta poistettavat rivit ja lisää uusi työtunnus. Seuraavat tapahtumat:
 
@@ -147,13 +147,10 @@ Työn jakamisen lopettaminen edellyttää, että *Jaa työ* eston syynä on pois
 
 Kun *Jaa työ* on poistettu eston syynä, työ voidaan suorittaa mobiililaitteessa, mikäli **Estetty**-tilan asetuksena on työtunnuksessa *Ei*.
 
-## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Käyttäjien esto varastonhallinnan mobiilisovelluksessa
+## <a name="user-blocking-on-the-warehouse-app"></a>Käyttäjän estäminen varastosovelluksessa
 
-Jos yrität suorittaa keräilytyön varastonhallinnan mobiilisovelluksessa sellaisen tunnuksen osalta, jota jaetaan, seuraava virhesanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan. Jos tämä sanoma avautuu, valitse **Peruuta**. Voit sitten jatkaa muiden töiden käsittelyä.
+Jos yrität suorittaa keräilytyön varastosovelluksessa sellaisen tunnuksen osalta, jota jaetaan, seuraava virhesanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan. Jos tämä sanoma avautuu, valitse **Peruuta**. Voit sitten jatkaa muiden töiden käsittelyä.
 
 ## <a name="other-blocked-operations"></a>Muut estetyt toiminnot
 
 Kaikki sellaiset jaettavaan työhön liittyvät toiminnot, jotka muokkaavat työrivejä, työn varastotapahtumia tai täydennyslinkkejä, epäonnistuvat ja seuraava sanoma avautuu: Työtä, jonka tunnus on \#\#\#\#, jaetaan parhaillaan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Osallistu käyttääksesi luokituksia ja arvosteluja
 description: Tässä ohjeaiheessa kerrotaan, miten voit käyttää luokituksia ja arvosteluja Microsoft Dynamics 365 Commerce -sivustossa.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fd6715539693389f25800a40c0beffcdc1b0de72
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968000"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411979"
 ---
-# <a name="opt-in-to-use-ratings-and-reviews"></a>Luokitusten ja arvostelujen käytön hyväksyminen
+# <a name="opt-in-to-use-ratings-and-reviews"></a>Osallistu käyttääksesi luokituksia ja arvosteluja
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten voit käyttää luokituksia ja arvosteluja Microsoft Dynamics 365 Commerce -sivustossa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Luokitukset ja arvostelut -ratkaisu on monikanavaratkaisu, jonka voit ottaa käyttöön Dynamics 365 Commerce -sovelluksessa käyttämällä Microsoft Dynamics Lifecycle Services (LCS) -palvelua. LCS on hallintaportaali, jonka avulla jälleenmyyjät voivat hallita ympäristöjä aina valmistelusta käytöstäpoistoon asti.
 
@@ -41,7 +46,7 @@ Voit ottaa luokitukset ja arvostelut käyttöön sivustossa seuraavasti.
 1. Määritä **Ota luokitukset ja arvostelut -palvelu käyttöön** -asetuksen arvoksi **Kyllä**.
 1. Syötä **Luokitusten ja arvostelujen valvojan AAD-käyttöoikeusryhmä (käyttöoikeusryhmän objektin tunnus)** -kenttään sen Microsoft Azure Active Directory (Azure AD) -käyttöoikeusryhmän tunnus, joka sisältää luokitusten ja arvosteluiden valvojat.
 
-    ![Luokitusten ja arvostelujen käytön hyväksyminen.](media/LCS_RnR_Preference.png)
+    ![Osallistu käyttääksesi luokituksia ja arvosteluja](media/LCS_RnR_Preference.png)
 
 1. Suorita sähköisen kaupankäynnin alustusprosessi loppuun.
 
@@ -56,15 +61,6 @@ Voit ottaa luokitukset ja arvostelut käyttöön sivustossa seuraavasti.
 
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 
-[Tuoteluokitusten synkronoiminen Dynamics 365 Commercessa](sync-product-ratings.md)
-
-[Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
-
-[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
-
-[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
-
-[Luokitusten ja arvostelujen usein kysytyt kysymykset](ratings-reviews-faq.md)
+[Tuoteluokitusten synkronoiminen Dynamics 365 Commerceissa](sync-product-ratings.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,29 +2,34 @@
 title: Tehtävienhallinnan määrittäminen
 description: Tässä ohjeaiheessa kerrotaan, miten tehtävienhallintatoiminnot määritetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730800"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412036"
 ---
-# <a name="configure-task-management"></a>Tehtävien hallinnan määrittäminen
+# <a name="configure-task-management"></a>Tehtävienhallinnan määrittäminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten tehtävienhallintatoiminnot määritetään Microsoft Dynamics 365 Commerce -sovelluksessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Ennen kuin Dynamics 365 Commercen päälliköt ja työntekijät voivat käyttää tehtävienhallintatoimintoja Commercessa, tehtävienhallinta on määritettävä. Määritysvaiheet sisältävät käyttöoikeuksien myöntämisen päälliköille ja työntekijöille, käyttöoikeuksien jakelun myyntipisteen asiakassovelluksille, myyntipisteen ilmoitusten määrittämisen ja myyntipistesovelluksen aloitussivun **Tehtävät**-ruudun määrittämisen.
 
@@ -44,7 +49,7 @@ Voit määrittää myymäläpäälliköiden tehtävienhallinnan käyttöoikeudet
 
 Seuraavassa kuvassa näkyy, miten myymäläpäälliköiden tehtävienhallinnan käyttöoikeudet määritetään.
 
-![Myymäläpäälliköiden tehtävienhallinnan käyttöoikeuksien määrittäminen.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Myymäläpäälliköiden tehtävienhallinnan käyttöoikeuksien määrittäminen](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Työntekijöiden käyttöoikeuksien määrittäminen
 
@@ -78,7 +83,7 @@ Voit määrittää myyntipisteen ilmoitukset tehtäville seuraavasti.
 
 Seuraavassa kuvassa on **Tehtävienhallinta**-toiminto **Myyntipistetoiminnot**-sivulla.
 
-![Tehtävienhallintatoiminto Myyntipistetoiminnot-sivulla.](media/HQ-POS-Tasks-Notifications.png)
+![Tehtävienhallintatoiminto Myyntipistetoiminnot-sivulla](media/HQ-POS-Tasks-Notifications.png)
 
 Lisärtietoja myyntipisteen ilmoitusten määrittämisestä on kohdassa [Tilausilmoitusten näyttäminen myyntipisteessä](notifications-pos.md).
 
@@ -95,7 +100,7 @@ Määritä **Tehtävät**-ruutu myyntipistesovelluksen aloitussivulla seuraavast
 
 Seuraavassa kuvassa on esimerkki **Tehtävät**-ruudusta myyntipisteen aloitussivulla.
 
-![Myyntipisteen aloitussivun Tehtävät-ruutu.](media/POS-home-screen-tasks-button-image.png)
+![Myyntipisteen aloitussivun Tehtävät-ruutu](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -106,6 +111,3 @@ Seuraavassa kuvassa on esimerkki **Tehtävät**-ruudusta myyntipisteen aloitussi
 [Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille](task-mgmt-assign-lists.md)
 
 [Tehtävien hallinta myyntipisteessä](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

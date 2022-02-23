@@ -66,6 +66,3 @@ Loman ja poissaolojen hallinta sisältää seuraavat ominaisuudet:
 - **Lähetä poissaolopyynnöt.**
 
     Työntekijät voivat poissaolopyyntöjen käytettävissä olevien tuntien perusteella. Pyynnöt voivat olla yksinkertaisia yhden päivän pyyntöjä tai useasta päivästä koostuvia pyyntöjä, joihin voi sisältyä useita loma- ja poissaolotyyppejä. Jos työnkulkua ei ole otettu käyttöön, pyynnöt hyväksytään automaattisesti. Jos työnkulku on otettu käyttöön, hyväksyminen voi olla työnkulun määrityksen mukaan automaattinen tai se voi edellyttää kuittausta.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Sivujen näyttäminen rinnakkain Avaa uudessa ikkunassa -toiminnon avulla
 description: Tässä artikkelissa kerrotaan, miten sivut voidaan näyttää rinnakkain.
 author: aneesmsft
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068056"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798400"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Sivujen näyttäminen rinnakkain Avaa uudessa ikkunassa -toiminnon avulla
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä artikkelissa käsitellään sivujen näyttämistä rinnakkain.
 
@@ -49,6 +48,3 @@ Määritä selaimen ponnahdusikkunoiden estotoiminto sallimaan ponnahdusikkunat 
 **Avaa uudessa ikkunassa** -toiminto on käytettävissä vain, kun ikkunassa on avoinna useita sivuja. Ponnahdusikkuna suljetaan automaattisesti, kun sivuja ei ole enää avoinna (eli sitten, kun ikkunan viimeinen sivu suljetaan). Järjestelmä sulkee sivut myös silloin, kun siirryt sovelluksen toiselle alueelle. Niinpä jos ponnahdusikkunoita on avoinna silloin, kun siirryt sovelluksen toiselle alueelle, ponnahdusikkunat sulkeutuvat automaattisesti, koska järjestelmä sulki ikkunoissa olevat sivut.
 
 Ponnahdusikkunoiden yläpalkeissa on tietoja yrityksestä, jolle sivu on avattu. Tiedot ovat vain luku -muodossa. Ponnahdusikkunat ovat riippuvaisia myös selainikkunasta. Jos pääikkuna suljetaan tai päivitetään, kaikki avoimet ponnahdusikkunat siirtyvät vain luku -tilaan. Jos näin tapahtuu, voit yhä tarkastella ikkunoiden tietoja, mutta et voi käsitellä niitä.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

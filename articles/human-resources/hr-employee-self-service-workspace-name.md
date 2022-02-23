@@ -1,33 +1,31 @@
 ---
 title: Työntekijän itsepalvelutyöntilan nimen muuttaminen
 description: Tässä ohjeaiheessa käsitellään työntekijän itsepalvelutyötilan näyttönimen muuttamisesta Dynamics 365 Human Resourcesissa.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 31e8c3e572e0f95f4331fbd858150897c9ed0105
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2ce008c44ba84c919f4538be4d8e4ff95be018e7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070724"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418399"
 ---
-# <a name="change-employee-self-service-workspace-name"></a>Työntekijän itsepalvelutyötilan nimen muuttaminen
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="change-employee-self-service-workspace-name"></a>Työntekijän itsepalvelutyöntilan nimen muuttaminen
 
 Jos organisaatiossa on vapaaehtoisia tai muita ei-työntekijöitä, haluat ehkä muuttaa **Työntekijän itsepalvelu** -työtilan nimen. Työtilan nimen voi muuttaa muotoon **Itsepalvelu**.
 
@@ -40,13 +38,10 @@ Jos organisaatiossa on vapaaehtoisia tai muita ei-työntekijöitä, haluat ehkä
 
 3. Valitse **Näyttönimi**-kohdassa **Itsepalvelu**.
 
-   ![Työntekijän itsepalvelutyöntilan nimen muuttaminen itsepalveluksi.](./media/hr-employee-self-service-workspace-name.png)
+   ![Työntekijän itsepalvelutyöntilan nimen muuttaminen itsepalveluksi](./media/hr-employee-self-service-workspace-name.png)
 
 4. Valitse **Tallenna**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

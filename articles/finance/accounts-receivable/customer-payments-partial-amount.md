@@ -2,25 +2,28 @@
 title: Asiakkaan maksut osasummalla
 description: Joskus asiakkaiden maksama summa on pienempi kuin laskun summa. Tässä artikkelissa on kuvaus erilaisista toimintavaihtoehdoista tällaisessa tilanteessa. Käytettävissä olevat vaihtoehdot määräytyvät liiketoiminnan vaatimusten ja konfiguraation mukaan.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b4a930f7bb070d3105eff3978774bfd8a3ffbfd2b8eb77097028411da619c64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a74803d3adf71ef1495ec5b42753d0988cea4133
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769032"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442632"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Asiakkaan maksut osasummalla
 
@@ -28,7 +31,8 @@ ms.locfileid: "6769032"
 
 Joskus asiakkaiden maksama summa on pienempi kuin laskun summa. Tässä artikkelissa on kuvaus erilaisista toimintavaihtoehdoista tällaisessa tilanteessa. Käytettävissä olevat vaihtoehdot määräytyvät liiketoiminnan vaatimusten ja konfiguraation mukaan.
 
-## <a name="partial-payment-with-no-discount"></a>Osamaksu ilman alennusta
+<a name="partial-payment-with-no-discount"></a>Osamaksu ilman alennusta
+--------------------------------
 
 Asiakkaat voivat suorittaa osamaksun, koska heillä ei ole tarpeeksi käteisvaroja maksaakseen laskun kokonaisuudessaan, tai koska jostakin laskunimikkeestä on erimielisyyttä. Tässä tilanteessa laskun voi osatäsmäyttää maksuun. Lasku jää avoimeksi ja sillä näkyy saldo.
 
@@ -56,6 +60,3 @@ Asiakkaat voivat suorittaa osittaisen maksun, jossa jäljellä oleva summaa ei m
 
 
 Lisätietoja on kohdassa [Asiakkaan maksujen tallettaminen](tasks/deposit-customer-payments.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

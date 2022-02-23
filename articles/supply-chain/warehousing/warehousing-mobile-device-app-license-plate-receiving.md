@@ -1,30 +1,33 @@
 ---
-title: Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksella
-description: Tässä ohjeaiheessa selitetään, kuinka varastonhallinnan mobiilisovellus määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+title: Rekisterikilven vastaanotto varastosovelluksen avulla
+description: Tässä ohjeaiheessa selitetään, kuinka varastosovellus määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 author: perlynne
+manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777599"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427456"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksella
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>Rekisterikilven vastaanotto varastosovelluksen avulla
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, kuinka varastonhallinnan mobiilisovellus määritetään niin ,että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+Tässä ohjeaiheessa selitetään, kuinka varastosovellus määritetään niin, että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 
 Tämän toiminnon avulla voit nopeasti kirjata saapuvaa varastoa koskevan vastaanoton, joka liittyy ennakkoilmoitukseen (ASN). Järjestelmä luo automaattisesti ASN-arvon, kun siirtotilauksen lähetys suoritetaan varastoinnin hallintaprosessien avulla. Ostotilausprosessin aikana ASN voidaan tallentaa manuaalisesti, tai se voidaan tuoda automaattisesti käyttämällä saapuvan ASN-tietoyksikkö prosessia.
 
@@ -70,14 +73,14 @@ Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otett
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Vastaanottavan yhteenvetosivun näyttäminen tai ohittaminen
 
-Voit käyttää *ohjausobjektia, näytetäänkö vastaanottavan yhteenvetosivun mobiililaitteissa* -ominaisuutta, jotta saat lisätietoja fyysisen varastonhallinnan mobiilisovelluksen työnkulusta osana rekisterikilven vastaanottoprosessia.
+Voit käyttää *ohjausobjektia, näytetäänkö vastaanottavan yhteenvetosivun mobiililaitteissa* -ominaisuutta, jotta saat lisätietoja fyysisen varastoinnin sovelluskulusta osana rekisterikilven vastaanottoprosessia.
 
 Kun tämä toiminto on otettu käyttöön, mobiililaitteiden valikkokohteet, jotka koskevat rekisteritietoja tai rekisterikilven vastaanottoa ja hyllytystä, sisältävät **näytön vastaanottamisen yhteenvetosivu** -asetuksen. Tällä asetuksella on seuraavat vaihtoehdot:
 
 - **Näytä yksityiskohtainen yhteenveto** – Rekisterikilven vastaanottamisen aikana työntekijät näkevät ylimääräisen sivun, jossa näkyvät kaikki ASN-tiedot.
 - **Ohita yhteenveto** – Työntekijät eivät näe kaikkia ASN-tietoja. Varastotyöntekijät eivät voi määrittää käsittelykoodia tai lisätä poikkeuksia vastaanottoprosessin aikana.
 
-Jotta tämä toiminto olisi käytettävissä järjestelmässä, *Määritä, näytetäänkö vastaanoton yhteenvetosivu mobiililaitteissa* -toiminto on otettava käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+Jotta tämä toiminto olisi käytettävissä järjestelmässäsi, sinun on otettava käyttöön *ohjausobjekti, joka näyttää vastaanottajan yhteenvetosivun ominaisuuksien hallinnan mobiililaitteissa* -toiminto [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Estä siirtotilauksen lähettämien rekisterikilpien käyttö muissa varastoissa kuin kohdevarastossa
 
@@ -102,6 +105,3 @@ Lisätietoja mobiililaitteiden valikkokohteista on kohdassa [Mobiililaitteiden m
 Lisätietoja *Ilmoita valmiiksi* -tuotantoskenaariosta on kohdassa [fyysisen varastoinnin työkäytäntöjen yleiskuvaus](warehouse-work-policies.md).
 
 Lisätietoja saapuvien kuormien hallinnasta on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](inbound-load-handling.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

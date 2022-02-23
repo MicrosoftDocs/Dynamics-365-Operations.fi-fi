@@ -2,8 +2,11 @@
 title: SPLITLIST ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) SPLITLIST-funktiota käytetään.
 author: NickSelin
-ms.date: 03/15/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef0b548173a01cc5a15fcfb743dfb29397c1349b3c2926fa6401399459d07026
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0f527dcf313a6a5e3b6601cac9a0f6495f66833
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776119"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680335"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST ER-funktio
 
@@ -27,16 +30,10 @@ ms.locfileid: "6776119"
 
 `SPLITLIST`-funktio jakaa määritetyn luettelon aliluetteloiksi (tai eriksi), joissa on tietty määrä tietueita. Sitten se palauttaa tuloksen uutena *Tietueluettelon* arvona, joka koostuu eristä.
 
-## <a name="syntax-1"></a>Syntaksi 1
+## <a name="syntax"></a>Syntaksi
 
 ```vb
 SPLITLIST (list, number)
-```
-
-## <a name="syntax-2"></a>Syntaksi 2
-
-```vb
-SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumentit
@@ -48,10 +45,6 @@ SPLITLIST (list, number, on-demand reading flag)
 `number`: *Kokonaisluku*
 
 Tietueiden enimmäismäärä erää kohti.
-
-`on-demand reading flag`: *Totuusarvo*
-
-*Totuusarvo* joka määrittää, luodaanko aliluetteloiden elementtejä tarpeen mukaan.
 
 ## <a name="return-values"></a>Palautusarvot
 
@@ -71,8 +64,6 @@ Palautettu eräluettelo, joka sisältää seuraavat elementit:
 
     Palautetun luettelon nykyisen erän numero.
 
-Kun tarvittaessa lukemisen merkinnän arvoksi määritetään **Tosi**, järjestelmä luo pyydettäessä aliluetteloita, jotka mahdollistavat muistin kulutuksen vähentämisen, mutta jotka voivat aiheuttaa suorituskyvyn heikentymisen, jos elementtejä ei käytetä peräkkäin.
-
 ## <a name="example"></a>Esimerkki
 
 Seuraavassa kuvassa **Rivit**-tietolähde luodaan tietueluettelo, jossa on kolme tietuetta. Tämä luettelo on jaettu eriin, joista kussakin on enintään kaksi tietuetta.
@@ -90,6 +81,3 @@ Seuraavassa kuvassa on tulos, kun suunniteltu muoto suoritetaan.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Kustannushallinnan Power BI -sisältöpaketti
 description: Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752637"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683892"
 ---
 # <a name="cost-management-power-bi-content"></a>Kustannushallinnan Power BI -sisältöpaketti
 
@@ -30,6 +32,11 @@ ms.locfileid: "7752637"
 ## <a name="overview"></a>Yleiskuvaus
 
 **Kustannushintojen hallinnan** Microsoft Power BI -sisältö on tarkoitettu varaston kirjanpitäjille tai organisaation henkilöille, jotka ovat vastuussa tai kiinnostuneita varaston tilasta tai keskeneräisistä töistä tai jotka ovat vastuussa tai kiinnostuneita standardikustannusvarianssien analysoinnista.
+
+> [!NOTE]
+> Tässä ohjeaiheessa käsitelty **kustannushintojen hallinnan** Power BI -sisältö koskee versiota Dynamics 365 Finance and Operations 8.0.
+> 
+> AppSource-sivustoon julkaistu **kustannushintojen hallinnan** Power BI -sisältöpaketti on vanhentunut. Lisätietoja tästä vanhentumisesta on kohdassa [Finance and Operationsin poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tämä Power BI -sisältö antaa luokitellun muodon, joka auttaa seuraamaan varastojen toimintaa ja visualisoimaan niiden kautta kulkevat kustannusvirrat. Saat johdon tarvitsemia tietoja esimerkiksi kiertonopeudesta, ajasta päivinä, jonka varasto on käytettävissä, tarkkuudesta ja ABC-luokittelusta valitsemallasi koostetasolla (yritys, nimike, nimikeryhmä tai toimipaikka). Näitä tietoja voidaan käyttää myös raportin eriteltynä täydennyksenä.
 
@@ -200,6 +207,3 @@ Seuraavia avaindimensioita käytetään suodattimina koostemittojen osittamisess
 | Oikeushenkilöt                                          | Yritysten nimet                              |
 | Kirjanpidon kalenterit                                        | Kirjanpidon vuosikalenteri, vuosi, vuosineljännes, kausi, kuukausi   |
 | Sivusto                                                    | Tunnus, nimi, osoite, osavaltio, maa               |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

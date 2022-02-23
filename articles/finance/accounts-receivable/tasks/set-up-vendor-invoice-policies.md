@@ -2,23 +2,26 @@
 title: Määritä toimittajan laskutuskäytännöt
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 339f52727b6f5a680f711cf4e6e0b8b0bc290853316fc2f2ff63164c8292d2d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 58518f5291b70c63506c20717034daff0268901b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728838"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442787"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Määritä toimittajan laskutuskäytännöt
 
@@ -56,7 +59,7 @@ Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutusk�
 2. Valitse **Uusi**.
 3. Kirjoita arvot **Nimi**- ja **Kuvaus**-kenttiin.
 4. Laajenna tai tiivistä **Käytännön organisaatiot** -osa.
-5. Valitse puussa **Contoso Entertainment System USA**.
+5. Valitse puussa solmu **Contoso Entertainment System USA**.
 6. Valitse **Lisää**.
 7. Laajenna tai tiivistä **Käytäntösäännöt**-osa.
 8. Valitse **Luo käytäntösääntö**.
@@ -70,6 +73,3 @@ Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutusk�
 16. Valitse **OK**.
 17. Palaa kotisivulle sulkemalla sivut.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

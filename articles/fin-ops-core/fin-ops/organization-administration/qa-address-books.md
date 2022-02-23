@@ -2,9 +2,11 @@
 title: Osoitekirjat – usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on vastauksia osoitekirjoihin liittyviin usein kysyttyihin kysymyksiin.
 author: msftbrking
-ms.date: 02/03/2021
+manager: AnnBe
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463616"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796895"
 ---
 # <a name="address-books-faq"></a>Osoitekirjat – usein kysytyt kysymykset
 
@@ -65,13 +67,3 @@ Voit määrittää osapuolitietueet joko yleisessä osoitekirjassa tai soveltuva
 ## <a name="can-i-translate-address-information-for-party-records"></a>Voiko osapuolitietueiden osoitetiedot kääntää?
 
 Voit määrittää osoitetietojen käännökset, jotta tiedot näkyvät käyttäjän kielellä (järjestelmän kieli) ohjelmassasi, mutta toisella kielellä asiakirjoissa, kuten myyntitilauksissa. Voit antaa maiden tai alueiden nimien, osoitekohteiden ja nimijaksojen käännökset. Jos järjestelmän kieli on esimerkiksi tanska, voit luoda myyntitilauksen ranskalaiselle asiakkaalle. Tässä tapauksessa voit tarkastella ongelmassa tanskankielistä asiakastietuetta, mutta osoitetiedot näkyvät tulostetussa myyntitilauksessa ranskaksi. Anna käännöksiä määritettäessä käännös luettelon jokaiselle nimikkeelle. Nimikkeet, joille ei annetta käännöstä, näkyvät järjestelmän kielellä. Jos järjestelmän kieli on esimerkiksi tanska, voit lähettää asiakirjan espanjalaiselle asiakkaalle. Jos et ole antanut osoitetietojen espanjankielisiä (ESP) käännöksiä, kyseiset tiedot näkyvät tanskaksi sekä ohjelmassa että tulostetussa asiakirjassa.
-
-## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Kun olen tuonut osoitteita, miksi en voi muokata tietueita?
-
-Kun tuot osoitteita, käytettävissä on **IsLocationOwner**-niminen kenttä. Tämä kenttä ilmaisee, omistaako sijaintiin (osoite) liittyvä osapuoli osoitteen. Jos osapuoli on osoitteen omistaja, osoitetta voidaan muokata, kun sitä osapuolta käytetään yleisessä osoitekirjassa tai päätietuesivulla (kuten asiakas, toimittaja tai työntekijä). Jos osapuoli ei ole osoitteen omistaja, tietuetta ei voi muokata. 
-
-Kun tuot osoitteita, **IsLocationOwner**-kentän arvoksi on määritettävä **Kyllä**, jos haluat, että osoitetta voi muokata liittyvän osapuolen avulla. Jos tämä kenttä on tuotu oikein, sijainnin omistaja voidaan päivittää yleisessä osoitekirjassa.
-
-Lisätietoja tuodun osoitteen sijainnin omistajan muuttamisesta: [Sijaintien omistajien hallinta](./global-address-book-location-owner.md).
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,55 +1,50 @@
 ---
 title: Joukkotyöhönottoprojektin luominen
 description: Tässä menettelyssä esitellään joukkotyöhönottoprojektin määritysprosessi.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4f119805af275b5bcddd910325179c02ed44758e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8ddcfd531e7b5c76ac4b15cee54880f6868a73f1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065111"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418265"
 ---
 # <a name="create-a-mass-hire-project"></a>Joukkotyöhönottoprojektin luominen
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Tässä menettelyssä esitellään joukkotyöhönottoprojektin määritysprosessi. Rekrytoija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla. Aloita tämä menettely siirtymällä kohtaan Henkilöstöhallinto > Työhönotto > Joukkotyöhönottoprojektit. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
-
-
-Tässä menettelyssä esitellään joukkotyöhönottoprojektin määritysprosessi. Rekrytoija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla. Aloita tämä menettely valitsemalla **Henkilöstöhallinto** > **Työhönotto** > **Joukkotyöhönottoprojektit**. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
-
-1. Valitse **Uusi**.
-2. Anna arvo **Joukkotyöhönottoprojekti**-kenttään.
-3. Kirjoita **Kuvaus**-kenttään arvo.
-4. Anna **Projektin alku** -kenttään päivämäärä.
-5. Anna **Projektin loppu** -kenttään päivämäärä.
-6. Valitse **Avaa projekti**.
-7. Valitse **Kyllä**.
-8. Valitse **Luo toimia**.
-9. Anna **Määrä**-kenttään luotavien toimien määrä.
-    * Aloituspäivämäärästä tulee uusien työntekijöiden **työhönottopäivämäärä**.  
-    * Päätymispäivämäärästä tulee uusien työntekijöiden **työsuhteen loppumispäivämäärä**.  
-    * Määritä, ovatko uudet työntekijät **työntekijöitä** vai **alihankkijoita**.  
-10. Valitse avattavan valikon painike ja valitse **Työ**-kentässä työ, jolle toimet luodaan.
+1. Valitse Uusi.
+2. Syötä arvo Joukkotyöhönottoprojekti-kenttään.
+3. Kirjoita arvo Kuvaus-kenttään.
+4. Syötä Projektin alku -kenttään päivämäärä.
+5. Syötä Projektin loppu -kenttään päivämäärä.
+6. Valitse Avaa projekti.
+7. Valitse Kyllä.
+8. Valitse Luo toimia.
+9. Syötä Määrä-kenttään luotavien toimien määrä.
+    * Aloituspäivämäärästä tulee uusien työntekijöiden työhönottopäivämäärä.  
+    * Päätymispäivämäärästä tulee uusien työntekijöiden työsuhteen loppumispäivämäärä.  
+    * Määritä, ovatko uudet työntekijät työntekijöitä vai alihankkijoita.  
+10. Valitse avattavan valikon painike ja valitse Työ-kentässä työ, jolle toimet luodaan.
 11. Etsi haluamasi tietue luettelosta ja valitse se.
 12. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
     * Kokopäiväisten työntekijöiden oletusarvo saadaan valitusta työstä. Arvoa voi muuttaa tarvittaessa.  
     * Vaihtoehtoisesti voit valita uusille toimille osaston.  
-13. Valitse **OK**.
+13. Valitse OK.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

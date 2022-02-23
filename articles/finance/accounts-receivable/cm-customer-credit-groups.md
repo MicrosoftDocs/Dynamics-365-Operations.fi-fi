@@ -1,23 +1,26 @@
 ---
 title: Asiakasluottoryhmät
 description: Tässä ohjeaiheessa on tietoja asiakasluottoryhmistä
-author: JodiChristiansen
+author: mikefalkner
+manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8a007dcaaa9e10ab36dd3a7d0f80dd49b8e4d63
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 1ddf41d88d085b102a7d69eeeff0ec463d8b4137
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753847"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442733"
 ---
 # <a name="customer-credit-groups"></a>Asiakasluottoryhmät
 
@@ -36,6 +39,3 @@ Voit määrittää asiakasluottoryhmiä **Asiakasluottoryhmät**-sivulla (**Luot
 Kun asiakasluottoryhmä on määritetty, voit lisätä siihen asiakkaita määrittämällä niiden yrityksen ja asiakkaan tilitunnuksen. Kun lisäät uuden asiakkaan asiakasluottoryhmään, järjestelmä hakee saman asiakkaan tiliä kaikista yrityksistä ja pyytää sinua lisäämään sen asiakasluottoryhmään.
 
 Voit tarkastella **Erääntyneet saldot** -valikossa kaikkien asiakasluottoryhmän laskutusasiakkaiden erääntymissaldon tietoja. **Erääntymissaldo**-sivulla on laskutusasiakastilien erääntyneiden saldojen yhteenveto.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

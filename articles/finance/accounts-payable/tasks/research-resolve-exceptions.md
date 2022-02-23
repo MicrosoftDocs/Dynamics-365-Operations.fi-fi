@@ -2,23 +2,26 @@
 title: Poikkeusten tutkiminen ja selvittäminen
 description: Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan Toimittajan lasku -sivun avulla ja kun Toimittajan laskukäytäntöjen rikkeet -sivu avataan.
 author: abruer
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d35504ab2fe6b8143d040bda505a904ab179b6137472073d788515f392faaef9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 995d68f6224b6dfbb1928c907ad991b86fc47668
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722884"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442712"
 ---
 # <a name="research-or-resolve-exceptions"></a>Poikkeusten tutkiminen ja selvittäminen
 
@@ -62,7 +65,7 @@ Tässä tallenteessa käytetään esittely-yritystä USMF. Nämä vaiheet suorit
 3. Kirjoita arvo Nimi-kenttään.
 4. Kirjoita arvo Kuvaus-kenttään.
 5. Laajenna tai tiivistä Käytännön organisaatiot -osa.
-6. Valitse puussa Contoso Entertainment System USA.
+6. Valitse puussa solmu Contoso Entertainment System USA.
 7. ValitseLisää.
 8. Laajenna tai tiivistä Käytäntösäännöt-osa.
 9. Valitse Luo käytäntösääntö.
@@ -83,6 +86,3 @@ Tässä tallenteessa käytetään esittely-yritystä USMF. Nämä vaiheet suorit
 24. Sulje sivu.
 25. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

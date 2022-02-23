@@ -2,22 +2,25 @@
 title: Kustannusten koontikäytännön luominen
 description: Tässä menettelyssä näytetään, miten kustannusten koontikäytäntö ja käytännön säännöt luodaan.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd7a390ced7b7b4997d9c86b9218f1fa83ee14729e450e1ae1cb53dbbd605edb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b6d32cc2c1844c6c334dd00b249c736e153f13d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755663"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442906"
 ---
 # <a name="create-a-cost-rollup-policy"></a>Kustannusten koontikäytännön luominen
 
@@ -65,6 +68,3 @@ Tässä menettelyssä näytetään, miten kustannusten koontikäytäntö ja käy
     * Jatka, kunnes kaikkien kustannuspaikkojen ja niiden vastaavien toissijaisten kustannustasojen vastaavuus on määritetty.  
 16. Valitse Tallenna.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

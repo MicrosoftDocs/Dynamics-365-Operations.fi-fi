@@ -2,23 +2,26 @@
 title: Täydennys yli sijainnin kapasiteetin
 description: Tässä ohjeaiheessa on tietoja Täydennys sijainnin kapasiteetilla -ominaisuudesta. Tämä ominaisuus ottaa käyttöön kaiken täydennystyön, joka vaaditaan luontipäivänä. Se myös hallitsee täydennystyön käytettävyyttä ja varmistaa näin, että varasto ei koskaan lopu keräilysijainnista eikä kapasiteettia ylitetä.
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778204"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427463"
 ---
 # <a name="replenishment-over-location-capacity"></a>Täydennys yli sijainnin kapasiteetin
 
@@ -32,7 +35,7 @@ Tämän ominaisuuden avulla on mahdollista luoda enemmän täydennystöitä kuin
 
 Voit käyttää tätä ominaisuutta ottamalla seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (seuraavassa järjestyksessä):
 
-1. Organisaation laajuinen työn esto (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
+1. Organisaation laajuinen työn esto
 1. Täydennys yli sijainnin kapasiteetin
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Määritä ominaisuus tälle esimerkkiskenaariolle
@@ -239,7 +242,7 @@ Käytettävissä olevista määristä riippuen luodut työmäärät voivat olla 
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Käytettävissä olevan varaston rekisterikilven tunnus
 
-Myöhemmin tässä skenaariossa käytetään varastonhallinnan mobiilisovellusta (tai emulaattoria), jossa sinun on tunnistettava rekisterikilpi keräilyn ja täydennyksen skenaarioiden viimeistelemistä varten.
+Myöhemmin tässä skenaariossa käytetään varastosovellusta (tai emulaattoria), jossa sinun on tunnistettava rekisterikilpi keräilyn ja täydennyksen skenaarioiden viimeistelemistä varten.
 
 Voit etsiä myöhemmin tarvittavat rekisterikilven tunnukset alla olevien vaiheiden avulla.
 
@@ -264,7 +267,7 @@ Suorita varastosijainnin täydennys kahdelle ensimmäiselle työtunnukselle. Kol
 
 #### <a name="replenishment"></a>Täydennys
 
-1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
+1. Kirjaudu varastosovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
 1. Siirry kohtaan **Varasto \> Täydennys**.
 
     Sinua pyydetään suorittamaan ensimmäinen täydennystyö. Näkyvissä ovat nimiketunnus, määrä ja keräilysijainti.
@@ -294,7 +297,7 @@ Tämä täydennystyö pysyy estettynä niin kauan, kunnes sijainnista kerätää
 
 Ennen kuin jäljellä oleva täydennystyötehtävä voidaan viimeistellä, keräilysijainnin varaston tason on oltava niin alhainen, että jäljellä oleva täydennystyö voidaan vapauttaa. Toisin sanoen käytettävissä olevan varaston kokonaismäärä sijainnissa ja täydennysmäärä eivät saa ylittää **ylivuotomäärän** arvoa. Kun tämä summa on pienempi kuin ylivuotomäärä, jäljelle jäävä täydennystyö vapautetaan.
 
-1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
+1. Kirjaudu varastosovellukseen käyttäjänä varastossa *61*. (Anna käyttäjätunnukseksi *61* ja salasanaksi *1*.)
 1. Siirry kohtaan **Lähtevät \> Myynnin keräily**.
 1. Anna myyntitilauksen 1 ensimmäinen työtunnus.
 
@@ -405,6 +408,3 @@ Seuraavaksi voit kerätä myyntitilauksen 2. Se vapautettiin, kun myyntitilaukse
 - Voit ohittaa halutessasi täydennystyön saatavuuden manuaalisesti jokaisen työotsikon kohdalla **Työn tiedot** -sivulla.
 - Kun järjestelmä määrittää täydennystyön saatavuuden, se ottaa huomioon varaston, joka on jo sijainnissa ennen töiden valmistumista.
 - Jokainen myyntitilaustyö on linkitetty tiettyyn täydennystyöhön. Vastaavaa myyntityön saatavuuden toimintoa ei ole.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

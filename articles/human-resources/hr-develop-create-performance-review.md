@@ -1,31 +1,29 @@
 ---
 title: Työsuorituksen arviointien luominen
 description: Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066947"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418321"
 ---
 # <a name="create-performance-reviews"></a>Työsuorituksen arviointien luominen
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus. Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja.
@@ -68,18 +66,15 @@ Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvio
 30. Valitse **Luokitukset**-välilehti.  
 
     - Työntekijät ja esimiehet voivat tehdä luokituksen nopeasti **Luokituksen lisätiedot** -pikavälilehdellä. Jos painotukset ovat käytössä, pisteiden painotettu arvo lasketaan automaattisesti.  
-    - Ota tämän osan tarkastelua varten työntekijäluokitusten näyttämisen parametriasetukset käyttöön **Henkilöstöhallinnon jaetut parametrit** -sivulla.  
+    - Jotta voit tarkastella tätä osaa, ota käyttöön työntekijän luokitukset näyttävä parametriasetus.  
 
-31. Valitse **Kuittaukset**-välilehti. Jos arvioinnissa käytetään työnkulkua, hyväksynnät näkyvät vasta, kun työnkulku on valmis. Jos työnkulku ei ole käytössä, sekä työntekijä että esimies näytetään tässä. **Hyväksyntä**-kohdan **Pakollinen**-valintaruutu on valittuna arviointityypin perusteella.  
+31. Valitse **Kuittaukset**-välilehti. Jos arvioinnissa käytetään työnkulkua, hyväksynnät näkyvät vasta, kun työnkulku on valmis. Jos työnkulku ei ole käytössä, sekä työntekijä että esimies näytetään tässä. Pakollinen-valintaruutu on valittuna arviointityypin perusteella.  
 32. Valitse **Yleinen**-välilehti.
 
     - Suorituskaudelle luodaan oletuksena aloitus- ja päättymispäivämäärät. Päivämäärät ovat muokattavissa.  
-    - Tiloilla hallitaan arvioinnin käyttöoikeutta. **Ei alkanut** -tila sallii kaikkien käyttäjien muokata arviointia. **Käsittelyssä**-tilassa olevaa arviointia voi tarkastella ja muokata vain työntekijä. **Valmis tarkistettavaksi** -tilassa olevaa arviointia voi tarkastella ja muokata vain esimies. **Lopullinen arvostelu** -tila sallii sekä työntekijän että esihenkilön tarkastella ja muokata arvostelua, jos **Salli lopullisen arvostelun muokkaukset** -asetus on valittuna arvostelutyypissä. Tilat **Valmis** ja **Peruutettu** asettavat arvioinnin vain luku -tilaan. Jos tarkistus on **Hylätty** ja lähetetään takaisin työntekijälle, sekä työntekijä että esimies voivat tehdä tarvittavat muokkaukset, jotta työntekijä voi lähettää sen uudelleen.
+    - Tiloilla hallitaan arvioinnin käyttöoikeutta. **Ei alkanut** -tila sallii kaikkien käyttäjien muokata arviointia. **Käsittelyssä**-tilassa olevaa arviointia voi tarkastella ja muokata vain työntekijä. **Valmis tarkistettavaksi** -tilassa olevaa arviointia voi tarkastella ja muokata vain esimies. **Lopullinen arviointi** -tila mahdollistaa sekä työntekijälle että esimiehelle arvioinnin tarkastelun. Muokkaaminen on mahdollista, jos se on otettu käyttöön arviointityypissä. Tilat **Valmis** ja **Peruutettu** asettavat arvioinnin vain luku -tilaan. Jos tarkistus on **Hylätty** ja lähetetään takaisin työntekijälle, sekä työntekijä että esimies voivat tehdä tarvittavat muokkaukset, jotta työntekijä voi lähettää sen uudelleen.
 
 33. Kirjoita arvo kenttään **Yhteenveto**.
 34. Valitse **Arviointi**-välilehti. Arvioinnin tilan vaihtuessa työntekijä ja esimies voivat lisätä kommentteja kullekin tavoitteelle tai osaamisalueelle.  
 35. Valitse **Kuittaukset**-välilehti. Työntekijä ja esimies voivat kuitata arvioinnin. Kun kaikki tarvittavat hyväksynnät on tehty, tilaksi muutetaan **Valmis**, eikä muutoksia voi enää tehdä.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

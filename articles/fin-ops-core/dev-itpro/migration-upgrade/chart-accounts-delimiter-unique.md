@@ -2,9 +2,11 @@
 title: Tilikartan erottimen muuttaminen yksilöiväksi
 description: Tässä ohjeaiheessa selitetään, minkä vuoksi tilikartan ja dimension arvoilla ei voi olla sama erotin. Erotinarvot on muutettava päivityksen jälkeen.
 author: panolte
-ms.date: 09/17/2021
+manager: AnnBe
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,18 +16,23 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: a19dc8926df0efeac242e2e42ac37fdad91df9f8
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 72965e9c6182bdac123feb1bc5cc4b82d91cd588
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500500"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020101"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Tilikartan erottimen muuttaminen yksilöiväksi
 
 [!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics AX 2012:ssä tilikartan ja dimension arvoissa olisi mahdollista käyttää samaa erotinta. Tilikartan ja dimension arvoilla ei voi olla Finance and Operationsin nykyisissä versioissa samaa erotinta. Jos samaa erotinta käytetään kahdesti, voit muuttaa sen päivityksen jälkeen. 
+
+Tämä toiminto ei ole saatavana seuraavissa versioissa:
+- Finance and Operations versio 8.0
+- Finance and Operationsin versio 7.1, KB 4094701 Taloushallinnon dimensioita ei voi kirjata, kun dimension arvot sisältävät tilikartan erottimen
+- Finance and Operations versio 7.2, KB 4092967 Aliprojekti ei voi valita dimensiona, kun aliprojektin muoto sisältää dimension erottimen
 
 ## <a name="update-delimiter"></a>Erottimen päivitys
 Jos tilikartan kanssa on ristiriita, tilikartan erotin ja projektin tai aliprojektin tunnuksen muoto voidaan muuttaa. Muita dimension erottimia ei voi muuttaa. 
@@ -34,6 +41,3 @@ Jos tilikartan kanssa on ristiriita, tilikartan erotin ja projektin tai aliproje
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Erottimen päivitystarpeen määrittäminen ympäristössä 
 Jos päivitetyn ympäristön erottimissa on ristiriita, arvojen kirjaamisessa voi esiintyä epävakautta segmentoidussa kirjauksen hallinnassa tai dimensiomerkinnän ohjauksessa. Tämä tarkoittaa sitä, sinun on aina käytettävä hakuja tai lisätietoikkunaa, kun kirjaat tili- ja dimensioyhdistelmiä.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

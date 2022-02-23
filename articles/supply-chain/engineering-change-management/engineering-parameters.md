@@ -2,22 +2,25 @@
 title: Suunnittelun muutosten hallinnan parametrit
 description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementn suunnittelun muutostenhallintatoimintojen määrittämistä.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581005"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4427526"
 ---
 # <a name="engineering-change-management-parameters"></a>Suunnittelun muutosten hallinnan parametrit
 
@@ -54,6 +57,3 @@ Seuraavassa taulukossa käsitellään kenttiä, jotka ovat käytettävissä **Su
 | Vakavuussääntö | Valitse, miten suunnittelun muutostilauksen vakavuusaste luodaan. Valitse *Manuaalinen*, jos käyttäjän odotetaan antavan arvon **Vakavuusaste**-kenttään. Valitse *Laske*, jos järjestelmä laskee **Vakavuusaste**-kentän arvon, kun suunnittelun muutostilauksen toimintoruudussa valitaan **Laske vakavuusaste**. Siinä tapauksessa järjestelmä käyttää **Vakavuussääntöjoukko**-sivulla määritettyjä vakavuussääntöjä. Valitse *Laske automaattisesti*, jos **Vakavuusaste**-kentän arvo lasketaan ja täytetään automaattisesti vakavuussääntöjoukkojen mukaisesti. |
 | Julkaise uudelleen tuotteet, joihin vaikutus kohdistuu | Tätä kenttää käytetään, kun tuotteita vapautetaan uudelleen suunnittelun muutostilausta käyttämällä. Voit valita, ehdotetaanko **Vapautukset**-valintaikkunassa kaikkia tuotteita vai vain tuotteita, joihin vaikutus kohdistuu. |
 | Julkaistavat tuoterakennetasot | Vapautettavan tuoterakennetason syvyys. Jos tuoterakenteessa on enemmän tasoja (eli jos se on syvempi) kuin tässä määritetty arvo, tasot vapautetaan vain määritettyyn arvoon saakka. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

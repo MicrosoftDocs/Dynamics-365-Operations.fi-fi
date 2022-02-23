@@ -1,141 +1,109 @@
 ---
 title: Ominaisuuksien hallinnan yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
-author: Peakerbl
-ms.date: 01/10/2022
-ms.topic: overview
+author: ChrisGarty
+manager: AnnBe
+ms.date: 10/05/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068006"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798349"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
 [!include [banner](../../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
-
-Ominaisuudet lisätään ja päivitetään jokaisessa versiossa. Ominaisuuksien hallintakokemus tarjoaa työtilan, jossa voit tarkastella kussakin julkaisussa toimitettujen ominaisuuksien luetteloa. Työtilassa voi sitten tarkastelle ominaisuuden ohjeita sekä ottaa ominaisuuksia käyttöön tai poistaa niitä käytöstä.
+Ominaisuudet lisätään ja päivitetään jokaisessa versiossa. Ominaisuuksien hallintakokemus tarjoaa työtilan, jossa voit tarkastella kussakin julkaisussa toimitettujen ominaisuuksien luetteloa. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota.
 
 ## <a name="the-feature-management-workspace"></a>Ominaisuushallinnan työtila
 
-Voit avata **Ominaisuuksien hallinnan** työtilan valitsemalla koontinäytön hallintapaneelista haluamasi ruudun. Näkyviin tulee sivu, joka sisältää kaikkien ominaisuuksien hallinnan tukemien versioiden ominaisuusluettelon. 
+Voit avata **Ominaisuuksien hallinnan** työtilan valitsemalla koontinäytön hallintapaneelista haluamasi ruudun. Näkyviin tulee sivu, joka sisältää kaikkien ominaisuuksien hallinnan tukemien versioiden ominaisuusluettelon. Ajan mittaan Microsoft parantaa ominaisuuksien hallintakokemusta, jotta se sisältää lisää toimintoja, jotka helpottavat toimintojen hallintaa.
 
 Ominaisuusluettelossa on seuraavat tiedot:
 
 - **Toiminnon nimi** – lisätyn ominaisuuden kuvaus.
-- **Tila** – Symboli ilmaisee, onko ominaisuus otettu käyttöön (valintamerkki), poistettu käytöstä (tyhjä), aikataulutettu käyttöönotettavaksi (kello) tai onko se pakollinen (lukko), onko siinä tehtävä jotakin ennen käyttöönottoa (varoitussymboli) tai eikä sitä voi ottaa käyttöön (X). Tässä näkyvää asetusta käytetään kaikilla yrityksillä. Huomaa, että vaikka ominaisuus olisi otettu käyttöön, se on edelleen tietoturvan hallinnassa. Tämän vuoksi ne käyttäjät voivat käyttää ominaisuutta, joiden käyttöoikeusrooli sallii ominaisuuden käytön. Se on myös vain niiden yritysten käytettävissä, joihin käyttäjällä on käyttöoikeus.
+- **Käytössä**-tila – Symboli ilmaisee, onko ominaisuus otettu käyttöön (valintamerkki), ei ole otettu käyttöön (tyhjä), on ajoitettu käyttöön (kello), on pakollisesti päällä (lukko), vaatii huomiota ennen kuin otat sen käyttöön (varoitus), tai ei voi ottaa käyttöön (X). Tässä näkyvää asetusta käytetään kaikilla yrityksillä. Huomaa, että vaikka ominaisuus olisi otettu käyttöön, se on edelleen tietoturvan hallinnassa. Tämän vuoksi ominaisuus on vain niiden käyttäjien käytettävissä, joilla on käyttöoikeus rooliinsa. Se on myös vain niiden yritysten käytettävissä, joihin käyttäjällä on käyttöoikeus.
 - **Ota käyttöön päivämäärä** – Päivämäärä, jolloin toiminto on otettu käyttöön tai on ajoitettu käyttöön.
 - **Ominaisuus lisätty** – toiminto lisättiin ympäristöön. Tämä päivämäärä syötetään automaattisesti, kun päivität ympäristöäsi kuukausittaisten julkaisujaksojen aikana.
-- **Ominaisuuden tila** – Ominaisuuden elinkaaren nykyinen tila: **esiversio**, **julkaistu** (näkyy tyhjänä), **käytössä oletusarvoisesti** ja **pakollinen**. Tiloja käsitellään enemmän jäljempänä tässä aiheessa. 
 - **Moduuli** – moduuli, johon uusi ominaisuus vaikuttaa.
-
-> [!NOTE]
-> **Ominaisuuden tila** -sarake on ollut käytössä versiosta 10.0.21 alkaen.
 
 Kun valitset toiminnon, lisätiedot näkyvät toimintoluettelon oikealla puolella olevassa tietoruudussa. Ruudun yläosassa näkyy toiminnon nimi, ominaisuuden lisäämisen päiväys, moduuli, johon ominaisuus vaikuttaa, ja **Lisä tietoja** -linkki. Valitse tämä linkki, jos haluat tarkastella toiminnon dokumentaatiota. Jos dokumentaatio ei ole käytettävissä, sinut viedään väliaikaiselle sivulle. Tieto ruudussa on myös **Kommentit**-kenttä, johon voit lisätä omia kommentteja ominaisuudesta.
 
 **Ominaisuuksien hallinta** -työtilassa on myös useita välilehtiä, joissa kussakin on luettelo ominaisuuksista.
 
 - **Uusi** - Tämä välilehti näyttää kaikki ominaisuudet, jotka on lisätty viimeisimmän kuukausittaisen päivityksen jälkeen. Jos olet ohittanut kaikki kuukausittaiset päivitykset, välilehdessä näkyvät kaikki uudet ominaisuudet, jotka on lisätty viimeisimmän päivityksen jälkeen. Uusimmat ominaisuudet näkyvät luettelon yläosassa. Uusien ominaisuuksien kokonaismäärä näkyy myös sivun yläosassa olevassa ruudussa.
-- **Ei käytössä** – Tässä välilehdessä näkyvät kaikki ominaisuudet, joita ei ole otettu käyttöön. Uusimmat ominaisuudet näkyvät luettelon yläosassa. Lisäksi sivun yläosassa on ruutu, jossa näkyy tällä hetkellä käytöstäpoistettujen uusien ominaisuuksien kokonaismäärä.
-- **Ajoitettu** – Tämä välilehti näyttää kaikki ominaisuudet, jotka on suunniteltu otettavaksi käyttöön tulevaisuudessa. Luettelon yläosaan tulee näkyviin ominaisuudet, joiden ajoituspäivämäärä on varhaisin. Sivun yläosassa olevassa ruudussa on lisäksi aikataulutettujen ominaisuuksien kokonaismäärä.
+- **Ei käytössä** – Tässä välilehdessä näkyvät kaikki ominaisuudet, joita ei ole otettu käyttöön. Uusimmat ominaisuudet näkyvät luettelon yläosassa. Sivun yläosassa olevassa ruudussa näkyy myös niiden uusien ominaisuuksien kokonaismäärä, joita ei ole otettu käyttöön.
+- **Ajoitettu** – Tämä välilehti näyttää kaikki ominaisuudet, jotka on suunniteltu otettavaksi käyttöön tulevaisuudessa. Luettelon yläosaan tulee näkyviin ominaisuudet, joiden ajoituspäivämäärä on varhaisin. Uusien ominaisuuksien aikataulujen kokonaismäärä näkyy myös sivun yläosassa olevassa ruudussa.
 - **Kaikki** – Tässä välilehdessä näkyvät kaikki ominaisuudet. Uusimmat ominaisuudet näkyvät luettelon yläosassa.
 
-## <a name="feature-states"></a>Ominaisuuden tilat
-Ominaisuudet voivat siirtyä tilasta alkaen siitä, kun ne otetaan ensimmäisen kerran käyttöön ominaisuuksien hallinnassa, ja päättyen siihen, että ominaisuus muuttuu tuotteessa pakolliseksi. Tässä osassa käsitellään ominaisuuden hyväksyttyjä tiloja.
+## <a name="turn-on-a-feature"></a>Toiminnon ottaminen käyttöön
 
-### <a name="preview-features-optional"></a>Esiversio-ominaisuudet (valinnainen)
+Jos ominaisuus ei ole käytössä, tietoruudussa näkyy **Ota käyttöön nyt** -painike. Tämän painikkeen avulla voit ottaa toiminnon käyttöön.
 
-Tuotetiimit voivat päättää aloittaa uuden ominaisuuden käytön esiversio-ominaisuutena. Esiversio-ominaisuuksia ei oteta oletusarvoisesti käyttöön, ja ne ovat valinnaisia. Ominaisuudet omistava tuotetiimi voi päivittää ominaisuudet julkaistaviksi sen jälkeen, kun onnistunut esiversiojakso on päättynyt.
+- Valitse ominaisuus, jonka haluat ottaa käyttöön, ja valitse sitten tietoruudusta **Ota käyttöön nyt**. Toiminto on käytössä.
 
-> [!NOTE]
-> Esiversio-ominaisuuksia koskevat erityiset esiversion [käyttöehdot](https://go.microsoft.com/fwlink/?linkid=2105274). 
+Joitakin toimintoja ei voi poistaa käytöstä sen jälkeen, kun ne on otettu käyttöön. Jos toimintoa, jota yrität ottaa käyttöön, ei voi poistaa käytöstä, näyttöön tulee varoitus. Tässä vaiheessa voit peruuttaa toiminnon valitsemalla **Peruuta** ja jättää toiminnon pois käytöstä. Jos kuitenkin valitset **Ota käyttöön** -toiminnon ja otat sen käyttöön, et voi poistaa sitä käytöstä myöhemmin.
 
-### <a name="released-features-optional"></a>Julkaistut ominaisuudet (valinnainen)
-
-Näiden ominaisuuksien **Ominaisuuden tila** -sarake on tyhjä. Ominaisuuksia, jotka lisätään alun perin julkaistuina, ei oteta oletusarvoisesti käyttöön, ja niiden käyttöönottaminen on valinnaista. Esiversiosta päivitettyjen ominaisuuksien käyttöönottotila pysyy ennallaan.
-
-### <a name="on-by-default-features-optional"></a>Oletusarvoisesti käyttöönotetut ominaisuudet (valinnainen)
-
-Vaikka **oletusarvoisesti käyttöönotetuiksi** päivitetyt ominaisuudet otetaan oletusarvoisesti käyttöön, ne voidaan poistaa käytöstä. Kun ominaisuudet, jotka voidaan poistaa käytöstä, ovat olleet **Julkaistu**-tilassa vähintään kuusi kuukautta, niiden odotetaan siirtyvän tähän tilaa seuraavassa pääversion julkaisussa. Oletuksena on, että **Oletusarvoisesti käyttöönotettu**-tilaan siirtyvistä ominaisuuksista ilmoitetaan julkaisun aiheessa [Uudet ominaisuudet](../whats-new-changed.md). Ominaisuuden omistava tuotetiimi käynnistää päivityksen.
-
-> [!NOTE]
-> Koska nämä ominaisuudet otetaan automaattisesti käyttöön, on tärkeää selvittää, onko organisaatio valmis ottamaan nämä ominaisuudet käyttöön vai tarvitaanko vielä lisäaikaa. Jos lisäaikaa tarvitaan, nämä ominaisuudet on ehkä poistettava tilapäisesti käytöstä. Kannattaa muistaa, että ominaisuuden siirtyminen **Oletusarvoisesti käyttöönotettu** -tilaan tapahtuu yleensä pääversion julkaisussa, ennen kuin ominaisuudesta on tarkoitus tulla **pakollinen**. Sen jälkeen ominaisuutta ei voi enää poistaa käytöstä. 
-
-### <a name="mandatory"></a>Pakollinen
-
-**Pakollinen** on ominaisuuksien odotettu viimeinen tila. Se ilmaisee, että ominaisuudet on otettu käyttöön ja ettei niitä voi poistaa käytöstä muutoin kuin ottamalla yhteyttä Microsoftiin. Valinnaisten ominaisuuksien odotetaan muuttuvan pakollisiksi kahden pääversion julkaisun jälkeen. Tärkeät ominaisuudet voidaan poikkeuksellisesti ottaa käyttöön pakollisina.
-
-## <a name="example-of-expected-feature-lifecycles"></a>Esimerkki ominaisuuksien odotettavissa olevista elinkaarista
-
-Ominaisuuksien, jotka voidaan poistaa käytöstä ja jotka lisättiin julkaistuina ja valinnaisina tai huhtikuun julkaisun osana, voidaan odottaa siirtyvän **oletusarvoisesti käyttöönotetuiksi** seuraavaan lokakuun julkaisuun mennessä. Niiden odotetaan sitten muuttuvan **pakollisiksi** seuraavan vuoden huhtikuussa.
-
-Ominaisuutta, jota ei voi poistaa käytöstä ja joka lisättiin aiemmin julkaistuna ja valinnaisena tai huhtikuun julkaisun osana, voidaan odottaa siirtyvän **pakolliseksi** seuraavan vuoden huhtikuussa.
-
-## <a name="enable-a-feature"></a>Ota ominaisuus käyttöön
-
-Jos ominaisuutta ei ole otettu käyttöön, tietoruudussa näkyy **Ota käyttöön nyt** -painike. Tämän painikkeen avulla voit ottaa toiminnon käyttöön.
-
-Joitakin toimintoja ei voi poistaa käytöstä sen jälkeen, kun ne on otettu käyttöön. Jos ominaisuutta, jota yritetään ottaa käyttöön, voi ottaa käyttöön, näyttöön tulee varoitus. Tässä vaiheessa ominaisuus voidaan peruuttaa valitsemalla **Peruuta** ja jättämällä ominaisuus pois käytöstä. Jos ominaisuus kuitenkin otetaan käyttöön valitsemalla **Ota käyttöön**, sitä ei voi poistaa käytöstä myöhemmin.
-
-Joissakin ominaisuuksissa näytetään lisätietoja sisältävä sanoma ennen käyttöönottoa. Nämä ominaisuudet on merkitty keltaisella varoitussymbolilla. Nämä lisätiedot on luettava huolellisesti ja varmistettava, että tiedetään, mitä tapahtuu, kun ominaisuus otetaan käyttöön. Ominaisuus voidaan kuitenkin ottaa käyttöön valitsemalla **Ota käyttöön**.
+Jotkin ominaisuudet näyttävät sanoman, jossa on lisätietoja, ennen kuin otat ne käyttöön. Nämä ominaisuudet on merkitty keltaisella varoitussymbolilla. Lue lisätiedot huolellisesti, jotta ymmärrät paremmin, mitä tapahtuu, kun ominaisuus on käytössä. Voit kuitenkin ottaa ominaisuuden käyttöön valitsemalla **Ota käyttöön**.
 
 Jotkin ominaisuudet näyttävät sanoman, että toimintoa ei voi ottaa käyttöön, ennen kuin toimia on suoritettu. Nämä ominaisuudet on merkitty punaisella X-symbolilla. Sinun on toteutettava kuvauksessa kuvatut toimet, ennen kuin ominaisuus otetaan käyttöön. Jos et esimerkiksi pysty käyttämään ominaisuutta, ennen kuin konfigurointiavain on poistettu käytöstä, sinun on ensin poistettava määritysavain käytöstä ja palattava sitten ominaisuuksien hallintaan, jotta ominaisuus otetaan käyttöön.
 
-Kun ominaisuus on otettu käyttöön, tietoruutuun **Lisätietoja**-linkin alapuolelle avautuu sanoma. Tämä sanoma joko ilmaisee, että ominaisuus on otettu käyttöön, tai päivämäärän, jolloin ominaisuus on aikataulutettu käyttöönotettavaksi. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
+Kun ominaisuus on otettu käyttöön, **Lisätietoja**-linkin alla tietoruudussa näkyy viesti. Tämä sanoma joko ilmaisee, että toiminto on otettu käyttöön, tai päivämäärän, jolloin toiminto otetaan tulevaisuudessa käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
 
-Ominaisuudet, jotka on ajoitettu otettavaksi käyttöön tulevaisuudessa, näkyvät **Ajastettu**-välilehdessä. Eräkäsittely ottaa ne käyttöön määritettynä päivänä keskiyöllä järjestelmän päivämäärän ilmaiseman aikavyöhykkeen mukaan.
+Toiminnot, jotka on ajoitettu käyttöön tulevaisuudessa, näkyvät **Ajoitetut**-välilehdessä. Eräkäsittely ottaa ne käyttöön määritettynä päivänä keskiyöllä järjestelmän päivämäärän ilmaiseman aikavyöhykkeen mukaan.
 
 ## <a name="reschedule-a-feature"></a>Toiminnon ajoittaminen uudelleen
 
-Jos ominaisuus on suunniteltu otettavaksi käyttöön tulevaisuudessa, tietoruudussa näkyy **Aikataulu**-painike. Tämän painikkeen avulla voit muuttaa **Ota käyttöön päiväys** -arvon eri päiväksi.
+Jos ominaisuus on suunniteltu otettavaksi käyttöön tulevaisuudessa, tietoruudussa näkyy **Ajoita**-painike. Tämän painikkeen avulla voit muuttaa **Ota käyttöön päiväys** -arvon eri päiväksi.
 
 1. Valitse ajoitettu ominaisuus uudelleenajoitettavaksi ja valitse sitten tietoruudusta **Ajoita**.
-2. Määritä näyttöön avautuvassa valintaikkunassa **Käyttöönottopäivämäärä**-kentässä uusi päivämäärä, jolloin ominaisuus on otettava käyttöön.
+2. Määritä näyttöön tulevassa valintaikkunassa **Ota käyttöön päivämäärä** -kentässä uusi päivämäärä, jolloin toiminto otetaan käyttöön.
 3. Valitse **Ota käyttöön** ajoittaaksesi toiminnon uudelleen tai **Poista käytöstä** peruuttaaksesi ajoituksen.
 
-## <a name="disable-a-feature"></a>Poista ominaisuus käytöstä
+## <a name="turn-off-a-feature"></a>Toiminnon ottaminen pois käytöstä
 
-Jos ominaisuus on otettu käyttöön, tietoruudussa on **Poista käytöstä** -painike. Tämän painikkeen avulla voit poistaa toiminnon käytöstä. **Poista käytöstä** -painike ei ole käytettävissä, jos ominaisuutta ei voi poistaa käytöstä. 
+Jos ominaisuus on jo käytössä, tietoruudussa näkyy **Poista käytöstä** -painike. Tämän painikkeen avulla voit ottaa toiminnon pois käytöstä. **Poista käytöstä** -painike ei ole käytettävissä, jos ominaisuutta ei voi poistaa käytöstä sen jälkeen, kun se on otettu käyttöön.
 
-Kun ominaisuus on poistettu käytöstä, tietoruutuun **Lisätietoja**-linkin alapuolelle avautuu sanoma. Tämä sanoma ilmoittaa, ettei ominaisuutta ole otettu käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta. Ominaisuudet, joita ei ole vielä otettu käyttöön, näkyvät **Ei käytössä** -välilehdessä.
+- Valitse käytöstä poistettava ominaisuus ja valitse sitten tietoruudusta **Poista käytöstä**. Toiminto on poistettu käytöstä ja **Ota käyttöön päivämäärä** -kenttä on tyhjennetty.
 
-## <a name="features-that-must-be-enabled"></a>Ominaisuudet, jotka on otettava käyttöön
+Kun ominaisuus on poistettu käytöstä, **Lisätietoja**-linkin alla tietoruudussa näkyy viesti. Tässä sanomassa todetaan, että ominaisuutta ei ole vielä otettu käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta. Ominaisuudet, joita ei ole otettu käyttöön näkyvät **Ei käytössä** -välilehdessä.
 
-Joskus toimitettava ominaisuus on niin tärkeä, että se on otettava käyttöön automaattisesti päivityksen yhteydessä. Nämä ominaisuudet otetaan käyttöön automaattisesti **Käyttöönottopäivämäärä**-kentässä määritettynä päivänä. Näitä ominaisuuksia koskien tietoruudussa näkyy **Lisätietoja**-linkin alla viesti. Tämä sanoma ilmaisee joko sen, että ominaisuus joko on otettu käyttöön, tai sen tulevan päivämäärän, jolloin ominaisuus otetaan käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
+## <a name="features-that-must-be-turned-on"></a>Ominaisuudet, jotka on otettava käyttöön
+
+Joskus toimitetaan tärkeä toiminto, joka on otettava käyttöön automaattisesti päivityksen yhteydessä. Nämä toiminnot otetaan käyttöön automaattisesti **Ota käyttöön päivämäärä** -kentässä määritettynä päivänä. Näitä ominaisuuksia koskien tietoruudussa näkyy **Lisätietoja**-linkin alla viesti. Tämä sanoma joko ilmaisee, että ominaisuus on otettu käyttöön tai ilmaisee päivämäärän, jolloin ominaisuus otetaan käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
 
 ## <a name="enable-all-features"></a>Ota käyttöön kaikki ominaisuudet
 
-Voit ottaa käyttöön kaikki ominaisuudet valitsemalla **Ota kaikki käyttöön** -painikkeen. 
+Oletusarvon mukaan kaikki ympäristöön lisätyt ominaisuudet poistetaan käytöstä. Voit ottaa käyttöön kaikki ominaisuudet valitsemalla **Ota kaikki käyttöön** -painikkeen. 
 
-Kun **Ota kaikki käyttöön** valitaan, näyttöön tulee vaihtoehto, jossa on annettava seuraavat tiedot:
-
+Kun valitset **Ota kaikki käyttöön**, näyttöön tulee vaihtoehto, jossa on annettava seuraavat tiedot:
 - Luettelo kaikista ominaisuuksista, jotka edellyttävät vahvistusta, ennen kuin ne voidaan ottaa käyttöön. Jos haluat ottaa käyttöön luettelon ominaisuudet, valitse **Kyllä** **Ota käyttöön vahvistusta edellyttävät ominaisuudet** -painikkeessa.
 - Näytetään luettelo kaikista ominaisuuksista, joita ei voi ottaa käyttöön. Nämä ominaisuudet eivät ole käytössä.
 
 Kaikki toiminnot, jotka voidaan ottaa käyttöön, otetaan käyttöön. Jos ominaisuus on jo ajoitettu käyttöön tulevaisuudessa, aikataulu ei muutu. 
 
-## <a name="enable-all-features-automatically"></a>Kaikkien ominaisuuksien automaattinen käyttöönotto
+## <a name="turn-on-all-features-automatically"></a>Kaikkien toimintojen automaattinen käyttöönotto
 
-Jos kaikki uudet ominaisuudet halutaan kuitenkin ottaa automaattisesti käyttöön, uusien ominaisuuksien lisäämiseen liittyviä tietoja voidaan muuttaa käyttämällä työtilan otsikon alla olevaa avattavaa luetteloa.
+Oletusarvon mukaan kaikki ympäristöön lisätyt ominaisuudet poistetaan käytöstä, elleivät ne ole pakollisia toimintoja. Jos kuitenkin haluat ottaa kaikki uudet ominaisuudet automaattisesti käyttöön, voit muuttaa uusien ominaisuuksien lisäämisen tietoja käyttämällä työtilan otsikon alla olevaa avattavaa luetteloa.
 
-- Valitsemalla **Ota uudet ominaisuudet automaattisesti käyttöön** voidaan ottaa automaattisesti käyttöön kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
-- Valitse **Älä ota uusia ominaisuuksia automaattisesti käyttöön**, jos kaikkien soveltuvien uusien ominaisuuksien pitäisi olla oletusarvoisesti käytöstäpoistettuja, kun ne lisätään omaan ympäristöön.
+- Valitsemalla `Enable new features automatically` voidaan ottaa kaikki uudet toiminnot automaattisesti käyttöön, kun ne lisätään omaan ympäristöön.
+- Valitsemalla `Do not enable new features automatically` poistamaan kaikki uudet toiminnot oletusarvoisesti käytöstä, kun ne lisätään omaan ympäristöön.
+
 
 Kun otat kaikki ominaisuudet käyttöön automaattisesti, se ottaa käyttöön kaikki ominaisuudet, jotka olisivat käytössä, kun napsautat **Ota kaikki käyttöön**-painiketta. Se ei ota käyttöön vahvistusta edellyttäviä ominaisuuksia tai ominaisuuksia, joita ei voi ottaa käyttöön, ennen kuin toimia on suoritettu.
 
@@ -161,16 +129,20 @@ Jos poistat määritysavaimen käytöstä, ominaisuutta ei poisteta ominaisuuslu
 
 Seuraavissa esimerkeissä kuvataan, mitä tapahtuu, kun tietojen tuomiseen käytetään **Ominaisuuksien hallinta** -yksikköä.
 
-- Jos **Käytössä**-kentän arvoksi vaihdetaan **Kyllä**, ominaisuus on otettu käyttöön ja **Käyttöönottopäivämäärä**-kentän arvoksi määritetään kuluva päivämäärä.
-- Jos **Käytössä**-kentän arvoksi vaihdetaan **Ei** tai **EnableDate**-kenttä jätetään tyhjäksi, ominaisuus on poistettu käytöstä ja **Käyttöönottopäivämäärä**-kenttä on tyhjä. Käytöstä ei voi poistaa pakollista ominaisuutta eikä ominaisuutta, jota ei voi poistaa käytöstä käyttöönoton jälkeen.
+- Jos **Käytössä**-kentän arvoksi vaihdetaan **Kyllä**, toiminto on käytössä ja **Ota käyttöön päivämäärä** -kentän arvoksi määritetään kuluva päivämäärä.
+- Jos **Käytössä**-kentän arvoksi vaihdetaan **Ei** tai jätetään **EnableDate**-kenttä tyhjäksi, ominaisuus on poissa käytöstä ja **Ota käyttöön päivämäärä** -kenttä tyhjä. Et voi poistaa pakollista ominaisuutta tai ominaisuutta, jota ei voi poistaa käytöstä sen jälkeen, kun se on otettu käyttöön.
 - Jos muutat **EnableDate**-kentän arvon tulevaksi päiväksi, toiminto ajoitetaan kyseisenä päivänä.
 - Jos **Käytössä**-kentän arvoksi vaihdetaan **Kyllä**, ja **EnableDate**-kentän arvoksi määritetään tuleva päivämäärä, ominaisuus ajastetaan tuolle päivämäärälle. 
 - Jos **Käytössä**-kentän arvoksi vaihdetaan **Ei**, mutta samalla **EnableDate**-kentän arvo muutetaan tulevaksi päivämääräksi, ominaisuus ajastetaan tuolle päivämäärälle.
-- Jos ominaisuus on otettu käyttöön ja lisätään **EnableDate**-kenttä, jonka arvoksi on määritetty tuleva päivämäärä, ominaisuus pysyy käyttöönotettuna. Ominaisuuden voi aikatauluttaa uudelleen muuttamalla **Käytössä** -kentän arvoksi **Ei**.
+- Jos toiminto on käytössä ja lisäät **EnableDate**-kentän, joka on määritetty tulevaan päivään, toiminto pysyy käytössä. Jos haluat ajoittaa toiminnon uudelleen, sinun on muutettava **Käytössä** -kentän arvoksi **Ei**.
 
 ## <a name="feature-management-and-flighting"></a>Ominaisuuksien hallinta ja väliversiotestaus
 
 Ominaisuuksien hallinnan avulla voit hallita kuhunkin julkaisuun toimitettuja ominaisuuksia. Väliversiotestaus-toiminnon avulla Microsoft Teamsit voivat vapauttaa toimintoja rajoitetulle määrälle asiakkaita, jotta näitä ominaisuuksia voidaan testata ja vahvistaa ilman, että se vaikuttaa kaikkiin asiakkaisiin. Ominaisuuksien hallinta ei hallitse minkään ominaisuuden väliversiotestaus-ominaisuutta.
+
+## <a name="new-features-are-optional-for-12-months"></a>Uudet ominaisuudet ovat valinnaisia 12 kuukauden ajan
+
+Jos uusi ei-kriittinen ominaisuus asennetaan, se on valinnainen 12 kuukauden ajan. Tämän ansiosta sinä ja organisaatiosi voitte suunnitella etukäteen, milloin ominaisuus kannattaa ottaa käyttöön, ja testata sitä päivittäisissä toiminnoissanne. Lisätietoa on kohdassa [Yhden version palvelupäivitysten usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>ISV-ominaisuuksien tai mukautettujen ominaisuuksien ottaminen käyttöön ominaisuuksien hallinnan avulla
 
@@ -179,24 +151,25 @@ Ominaisuuksien hallinta ei ole tällä hetkellä käytettävissä itsenäisten o
 ## <a name="frequently-asked-questions-faq"></a>Usein kysytyt kysymykset
 
 ### <a name="when-are-features-added-removed-or-changed"></a>Milloin toimintoja lisätään, poistetaan tai muutetaan? 
-Ominaisuudet omistavat tuotetiimit voivat lisätä, poistaa ja muuttaa ominaisuuksia koodia muuttamalla. Ympäristöt on päivitettävä näitä muutoksia varten.
+Toimintoja lisätään, poistetaan ja muutetaan koodia muuttamalla. Ympäristöt on päivitettävä näitä muutoksia varten.
 
 ### <a name="does-a-feature-become-mandatory-automatically"></a>Tuleeko toiminnosta pakollinen automaattisesti? 
-Ei. Ominaisuudesta ei tule automaattisesti pakollista. Ominaisuuden omistavan tuotetiiminen on tehtävä koodimuutos.
+Ei. Toiminnosta ei tule pakollinen automaattisesti. Tuoteryhmien on tehtävä koodimuutos.
+
+### <a name="when-do-features-become-mandatory"></a>Milloin toiminnot tulevat pakollisiksi? 
+Käytäntönä on, että kaikki uudet toiminnot on ensin hyväksyttävä 12 kuukauden ajan eikä muutosten hallinta ole välttämätöntä ennen toiminnon käyttöönottamista. Tuoteryhmät voivat valita, tuleeko toiminnosta pakollinen tämän jakson päätyttyä. 
 
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Miksi käytössä ei ole erityistä pakollista käyttöönottopäivää? 
 Päivitysjulkaisujen ajoitus vaihtelee, ympäristöpäivityksen ajoitus vaihtelee ja asiakkaat voivat halutessaan ohittaa joitakin päivityksiä. Tämän vuoksi tietyt päivämäärät ovat vaikeasti määritettävissä. 
 
-### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Missä on pakollisten toimintojen ohjeistus? 
-Tämä ohjeistus saadaan kultakin Dynamics 365 -sovellusryhmältä. Nämä toiminnot mainitaan usein [asiakasohjelman ominaisuuksien päivityksissä](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) tai [poistetuissa tai vanhentuneissa ominaisuuksissa](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Missä on pakolliseksi muuttuvien toimintojen ohjeistus? 
+Tämä ohjeistus saadaan sovellusryhmiltä. Usein niistä on maininta [poistetuissa tai vanhentuneissa toiminnoissa](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Onko tuotteessa käytössä sisäinen ilmoitus tai signaali, että toiminnon käyttöönotto tulee olemaan pakollista? 
 Tällä hetkellä ei ole olemassa toiminnon pakollisuuteen liittyvää ilmoitusmekanismia.
 
 ### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Otetaanko toimintoja koskaan käyttöön niin, että asiakas ei tiedä siitä? 
-Kyllä. Ominaisuudet voidaan ottaa seuraavissa tilanteissa käyttöön ilman, että asiakas olisi siitä tietoinen:
-- Ominaisuus siirretään **Oletusarvoisesti käyttöönotettu** -tilaan. Ominaisuus voidaan vielä poistaa käytöstä tässä tilassa. 
-- Ominaisuus päivitetään **pakolliseksi**. Tätä muutos tehdään vain pääversion julkaisun yhteydessä. Tärkeitä ominaisuudet voidaan poikkeuksellisesti siirtää **Pakollinen**-tilaan missä tahansa päivityksessä.
+Kyllä. Jos toiminnoilla ei ole vaikutusta toimintaan, ne voidaan ottaa oletusarvoisesti käyttöön.
 
 ### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Mitä toiminnon väliversiotestaus tarkoittaa ja miten se liittyy toiminnon hallintaan? 
 Toiminnon väliversiotestaukset on reaaliaikaisia Microsoftin hallitsemia päälle/pois-kytkimiä. Ne ovat erillään asiakkaan toimintojen hallinnan avulla tapahtuvasta hallinnasta. 
@@ -230,6 +203,3 @@ IFeatureLifecycle on Microsoftin sisäinen mekanismi, joka ilmaisee ominaisuuden
 - `PublicPreview` – näytetään oletusarvoisesti, mutta mukana on varoitus siitä, ominaisuus on esiversio.
 - `Released` – kokonaan vapautettu.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

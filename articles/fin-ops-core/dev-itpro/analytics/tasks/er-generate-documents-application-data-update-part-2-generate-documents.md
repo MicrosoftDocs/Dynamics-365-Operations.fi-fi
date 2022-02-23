@@ -1,10 +1,12 @@
 ---
 title: Suunnittele konfiguraatioita luodaksesi sovellustietoja sisältäviä asiakirjoja
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määritysten suunnittelua sähköisen asiakirjan luontia varten. (Osa 1 – Konfiguraatioiden tuonti).
+description: Voit suorittaa tämän menettelyn vaiheet sen jälkeen, kun ER Asiakirjojen luominen sovellustietojen päivityksen kanssa (Osa 1 – konfiguraatioiden tuominen) -menettely on suoritettu.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f335721ee97919af20e73fc9da6c9bf07dcae50aca8f8904d144d75c2f4d7b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726258"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684592"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Suunnittele konfiguraatioita luodaksesi sovellustietoja sisältäviä asiakirjoja
 
@@ -56,6 +58,3 @@ Ennen kuin aloitat, muuta DEMF-yrityksen maakonteksti DEU (Saksa) -arvosta BEL (
 10. Sulje sivu.
 11. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

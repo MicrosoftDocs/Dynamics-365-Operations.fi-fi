@@ -71,6 +71,3 @@ Finance and Operationsin Platform update 24 -päivityksen jälkeen käyttäjät 
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Työntekijätietojen kaksoiskappaleiden tarkistus: Käyttöliittymän muutokset
 Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila näyttää löytyneiden kopioiden määrän. Voit valita uuden sivun sisältävän linkin arvioidaksesi, käytetäänkö tunnistettua vastausta. Tietojen syöttämisen keskeyttämisen välttämiseksi kaksoiskappale ei avaudu automaattisesti.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: Ostotilauksen luominen myyntitilauksesta
 description: Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilaus luodaan.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ca91f17c13e210a4df6c22e0ed12370179bb866
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572469"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427472"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Ostotilauksen luominen myyntitilauksesta
 
@@ -66,6 +69,3 @@ Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilau
     - **Viite-erä** varmistaa, että oston kustannukset veloitetaan siihen liitetyssä myyntitilauksessa.  
     - Voit siirtyä alkuperäiseen myyntitilaukseen avaamalla linkin **Viitenumero**-kentässä.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

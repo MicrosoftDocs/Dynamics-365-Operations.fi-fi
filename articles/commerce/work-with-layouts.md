@@ -2,30 +2,36 @@
 title: Esimääritettyjen asettelujen käyttö
 description: Tässä ohjeaiheessa käsitellään esimääritettyjen asettelujen käsittelemistä Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090842"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411989"
 ---
 # <a name="work-with-preset-layouts"></a>Esimääritettyjen asettelujen käyttö
+
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään esimääritettyjen asettelujen käsittelemistä Microsoft Dynamics 365 Commercessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Ennen kuin suoritat tämän ohjeaiheen toiminnot, muista tutustua kohtaan [Esimääritetyt ja mukautetut asettelut](templates-layouts-overview.md#preset-and-custom-layouts). Yleinen yleiskuvaus on kohdassa [Mallien ja asettelujen yleiskatsaus](templates-layouts-overview.md).
 
@@ -91,30 +97,15 @@ Voit esikatsella muutoksia avaamalla olemassa olevan esimääritettyä asettelua
 
 Kun olet esikatsellut esimääritettyyn asetteluun tehdyt muutokset, julkaise asettelu live-sivustossa jonkin seuraavan vaiheen avulla.
 
-1. Siirry **Asettelut**-kohtaan, valitse asettelu ja valitse sitten **Julkaise**.
-1. Valitse asettelun nimi avataksesi asettelueditorin ja valitse sitten **Julkaise**.
-1. Julkaise sivu, joka viittaa julkaisemattomaan asetteluun. Asettelu julkaistaan automaattisesti.
+* Siirry **Asettelut**-kohtaan, valitse asettelu ja valitse sitten **Julkaise**.
+* Valitse asettelun nimi avataksesi asettelueditorin ja valitse sitten **Julkaise**.
+* Julkaise sivu, joka viittaa julkaisemattomaan asetteluun. Asettelu julkaistaan automaattisesti.
 
 > [!WARNING]
 > Useat sivut voivat viitata esimääritettyihin asetteluihin. Kun julkaiset esimääritetyn asettelun, ota huomioon, että saatat vaikuttaa useiden sivujen asetteluun.
-
-## <a name="rename-a-preset-layout"></a>Esimääritetyn asettelun uudelleennimeäminen
-
-Voit nimetä esimääritetyn asettelun uudelleen sivuston muodostimessa seuraavasti.
-
-1. Valitse vasemmassa siirtymisruudussa **Asettelut**.
-1. Valitse sen asettelun asettelun nimi, jonka haluat nimetä uudelleen.
-1. Aloita asettelun muokkaaminen valitsemalla **Muokkaa**.
-1. Valitse asettelun nimen vieressä oleva kynäsymboli asettelun ominaisuusruudusta.
-1. Muokkaa asettelun nimeä tarpeen mukaan.
-1. Vahvista nimenmuutos valitsemalla valintamerkki.
-1. Valitse **Viimeistele muokkaus**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
 
 [Mallien käyttö](work-with-templates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

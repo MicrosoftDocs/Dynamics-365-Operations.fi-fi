@@ -97,6 +97,3 @@ Finance and Operationsin Platform update 25:n avulla käyttäjät voivat luoda h
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Työntekijöiden kaksoiskontrollit: Käyttöliittymän muutokset
 Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila näyttää löytyneiden kopioiden määrän. Voit valita uuden sivun sisältävän linkin arvioidaksesi, käytetäänkö tunnistettua vastausta. Tietojen syöttämisen keskeyttämisen välttämiseksi kaksoiskappale ei avaudu automaattisesti.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

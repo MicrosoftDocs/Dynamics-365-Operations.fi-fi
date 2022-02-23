@@ -2,24 +2,27 @@
 title: B2C-vuokraajan määrittäminen Commercessa
 description: Tässä ohjeaiheessa kerrotaan, miten Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään Dynamics 365 Commercen käyttäjän sivuston todennusta varten.
 author: BrianShook
-ms.date: 02/04/2022
+manager: annbe
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092456"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517377"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -27,93 +30,60 @@ ms.locfileid: "8092456"
 
 Tässä ohjeaiheessa kerrotaan, miten Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään Dynamics 365 Commercen käyttäjän sivuston todennusta varten.
 
+## <a name="overview"></a>Yleiskuvaus
+
 Dynamics 365 Commerce käyttää Azure AD B2C -ratkaisua käyttäjän tunnistetietojen ja todennuksen työnkulkujen tukemisessa. Käyttäjä voi rekisteröityä, kirjautua sisään ja nollata salasanan näiden työnkulkujen avulla. Azure AD B2C tallentaa luottamukselliset käyttäjän todennustiedot, kuten käyttäjätunnuksen ja salasanan. B2C-vuokraajan käyttäjätietueeseen tallennetaan B2C:n paikallisen tilin tietue tai B2C:n yhteisöpalvelun tunnuksen tarjoajan tietue. Nämä B2C-tietueet linkitetään takaisin asiakastietueeseen Commerce-ympäristössä.
 
-> [!WARNING] 
-> Azure AD B2C poistaa vanhat käyttäjätyönkulut käytöstä 1.8.2021 mennessä. Näin ollen on hyvä suunnitella käyttäjätyönkulkujen siirtämistä uuteen suositeltuun versioon. Uudessa versiossa on ominaisuuksien pariteetti ja uusia ominaisuuksia. Commerce-version 10.0.15 tai sitä uudemman version moduulikirjastoa tulee käyttää suositeltujen B2C-käyttäjätyönkulkujen kanssa. Lisätietoja on kohdassa [Työnkulut Azure Active Directory B2C:ssä](/azure/active-directory-b2c/user-flow-overview).
- 
- > [!NOTE]
- > Commerce-arviointiympäristöt tulevat esiladatun Azure AD B2C -vuokraajan kanssa esittelytarkoituksiin. Arviointiympäristöissä ei tarvitse ladata omaa Azure AD B2C -vuokraajaa alla olevia vaiheita käyttäen.
-
-> [!TIP]
-> Sivuston käyttäjiä voi suojata entisestään ja parantaa Azure AD:n B2C-vuokraajien suojausta Azure AD:n tunnistetietojen suojauksella ja ehdollisella käyttöoikeudella. Lisätietoja Azure AD:n B2C Premium P1- ja Premium P2 -vuokraajien käytettävissä olevien ominaisuuksien tarkastelemisesta on kohdassa [Azure AD B2C:n tunnistetietojen suojauksella ja ehdollisella käyttöoikeudella](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
-
-## <a name="dynamics-environment-prerequisites"></a>Dynamics-ympäristön edellytykset
-
-Varmista ennen aloittamista, että Dynamics 365 Commerce -ympäristösi ja sähköisen kaupankäynnin kanavasi on määritetty asianmukaisesti täyttämällä seuraavat edellytykset.
-
-- Määritä myyntipistetoimintojen **AllowAnonymousAccess**-arvoksi 1 Commerce-pääkonttorissa:
-    1. Siirry kohtaan **Myyntipistetoiminnot**.
-    1. Napsauta **Mukauta**-kohtaa toimintoruudukossa hiiren kakkospainikkeella ja valitse se.
-    1. Valitse **Lisää kenttä**.
-    1. Lisää käytettävissä olevien sarakkeiden luettelosta **AllowAnonymousAccess**-sarake valitsemalla se.
-    1. Valitse **Päivitä**.
-    1. Muuta **612**-asiakkaanlisäystoiminnon osalta **AllowAnonymousAccess**-arvoksi 1.
-    1. Suorita **1090 (rekisterit)** -työ.
-- Määritä numerosarjan asiakastilin **Manuaalinen**-määritteen arvoksi **Ei** Commerce-pääkonttorissa:
-    1. Valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Myyntireskontran parametrit**.
-    1. Valitse **Numerosarjat**.
-    1. Kaksoisnapsauta **Numerosarjan koodi** -arvoa **Asiakastili**-rivillä.
-    1. Määritä numerosarjan **Yleistä**-pikavälilehden **Manuaalinen**-arvoksi **Ei**.
-
-Kun Dynamics 365 Commerce -ympäristö on otettu käyttöön, on myös suositeltavaa [alustaa alkutiedot](enable-configure-retail-functionality.md) ympäristössä.
-
-## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Olemassa olevan Azure AD B2C -vuokraajan luominen tai linkittäminen Azure-portaalissa
-
-Tässä osassa käsitellään Azure AD B2C-vuokraajan luomista tai linkittämistä Commerce-sivustossa käytettäväksi. Lisätietoja: [Opas: Luo Azure Active Directory B2C -vuokraaja](/azure/active-directory-b2c/tutorial-create-tenant).
+## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Olemassa olevan AAD B2C -vuokraajan luominen tai linkittäminen Azure-portaalissa
 
 1. Kirjaudu [Azure-portaalin osoitteessa](https://portal.azure.com/).
 1. Valitse Azure-portaalin valikossa **Luo resurssi**. Varmista,. että käytät tilausta ja hakemistoa, joka yhdistetään Commerce-ympäristöön.
 
-    ![Resurssin luominen Azure-portaalissa.](./media/B2CImage_1.png)
+    ![Resurssin luominen Azure-portaaliin](./media/B2CImage_1.png)
 
 1. Siirry kohtaan **Tunnistetiedot \> Azure Active Directory B2C**.
 1. Käytä **Uuden B2C-vuokraajan luominen tai linkittäminen olemassa olevaan vuokraajaan** -sivulla seuraavista vaihtoehdoista sitä, joka sopii yrityksen tarpeisiin parhaiten:
 
-    - **Luo uusi Azure AD B2C -vuokraaja**: Käytä tätä vaihtoehtoa, jos haluat luoda uuden Azure AD B2C -vuokraajan.
+    - **Luo uusi Azure AD B2C -vuokraaja**: Käytä tätä vaihtoehtoa, jos haluat luoda uuden AAD B2C -vuokraajan.
         1. Valitse **Luo uusi Azure AD B2C -vuokraaja**.
         1. Määritä **Organisaation nimi** -kohdassa organisaation nimi.
         1. Anna **Alkuperäinen toimialueen nimi** -kohdassa alkuperäinen toimialueen nimi.
         1. Valitse **Maa tai alue** -kohdassa maa tai alue.
         1. Valitse **Luo**, jos haluat luoda vuokraajan.
 
-     ![Uuden Azure AD -vuokraajan luominen.](./media/B2CImage_2.png)
+     ![Uuden Azure AD -vuokraajan luominen](./media/B2CImage_2.png)
 
      - **Linkitä olemassa oleva Azure AD B2C -vuokraaja omaan Azure-tilaukseen**: Käytä tätä vaihtoehtoa, jos sinulla on jo Azure AD B2C -vuokraaja, johon haluat linkittää.
         1. Valitse **Linkitä olemassa oleva Azure AD B2C -vuokraaja Azure-tilaukseen**.
         1. Valitse **Azure AD B2C -vuokraaja** -kohdassa soveltuva B2C-vuokraaja. Jos valintaikkunaan tulee Kelvollisia B2C-vuokraajia ei löytynyt -sanoma, sinulla ei ole olemassa olevaa B2C-vuokraajaa, vaan se on luotava.
         1. Valitse **Resurssiryhmä**-kohdassa **Luo uusi**. Anna **nimi** resurssiryhmälle, joka sisältää vuokraajan ja valitse **Resurssiryhmän sijainti**. Valitse lopuksi **Luo**.
 
-    ![Linkitä olemassa oleva Azure AD B2C -vuokraaja Azure-tilaukseen.](./media/B2CImage_3.png)
+    ![Linkitä olemassa oleva Azure AD B2C -vuokraaja Azure-tilaukseen](./media/B2CImage_3.png)
 
 1. Kun uusi Azure AD B2C -hakemisto on luotu (tämä voi kestää jonkin aikaa), koontinäyttöön tulee näkyviin uuden hakemiston linkki. Tämä linkki ohjaa sinut Tervetuloa Azure Active Directory B2C -ratkaisun käyttäjäksi -sivulle.
 
-    ![Linkki uuteen Azure AD -hakemistoon.](./media/B2CImage_4.png)
+    ![Linkki uuteen AAD-hakemistoon](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Jos sinulla on useita Azure-tilin tilauksia tai jos olet määrittänyt B2C-vuokraajan ilman aktiivisen tilauksen linkkiä, **Vianmääritys**-banneri ohjaa sinut kohtaan, jossa voit linkittää vuokraajan ja tilauksen. Valitse vianmäärityksen sanoma ja ratkaise tilaukseen liittyvä ongelma ohjeiden avulla.
 
 Seuraavassa kuvassa on esimerkki Azure AD B2C:n **Vianmääritys**-bannerista.
 
-![Varoitus siitä, että hakemistolla ei ole aktiivista tilausta.](./media/B2CImage_5.png)
+![Varoitus siitä, että hakemistolla ei ole aktiivista tilausta](./media/B2CImage_5.png)
 
 ## <a name="create-the-b2c-application"></a>B2C-sovelluksen luominen
 
-Kun B2C-vuokraaja on luotu, voit luoda B2C-sovelluksen uudessa Azure AD B2C -vuokraajassa ja käyttää Commercea.
+Kun B2C-vuokraaja on luotu, voit luoda B2C-sovelluksen vuokraajassa ja käyttää Commerce-toimintoja.
 
 Luo B2C-sovellus seuraavasti.
 
-1. Valitse Azure-portaalissa **Sovellusten rekisteröinnit** ja sitten **Uusi rekisteröinti**.
-1. Anna tälle Azure AD B2C -sovellukselle nimi **Nimi**-kentässä.
-1. Valitse **Tuetut tilityypit** -kohdasta **Tilit mistä tahansa tunnistetietojen tarjoajasta tai organisaatiohakemistosta (käyttäjien tunnistamiseksi käyttäjätyönkulkujen avulla)**.
-1. Syötä **Uudelleenohjauksen URI** -kenttään erilliset vastaus-URL-osoitteet **Internet**-tyyppisinä. Katso lisätietoja vastauksen URL-osoitteista ja niiden muotoilusta allal olevasta [Vastauksen URL-osoitteet](#reply-urls) -kohdasta. Sinun on syötettävä uudelleenohjauksen URI tai vastauksen URL-osoite, jotta Azure AD B2C -järjestelmän uudelleenohjaus takaisin sivustoon voidaan ottaa käyttöön, kun käyttäjä tekee todennuksen. Vastauksen URL-osoite voidaan lisätä rekisteröintiprosessin aikana, tai sen voi lisätä myöhemmin valitsemalla B2C-sovelluksen **Yhteenveto**-osan **Yhteenveto**-valikosta **Lisää uudelleenohjauksen URI** -linkin.
-1. Jos sinulla on **käyttöoikeudet**, valitse **Myönnä järjestelmänvalvojan hyväksyntä OpenId- ja offline_access-käyttöoikeuksille**.
-1. Valitse **Rekisteröi**.
-1. Valitse juuri luotu sovellus ja siirry **Todennus**-valikkoon. 
-1. Jos vastauksen URL-osoite on syötetty, ota se käyttöön sovelluksessa valitsemalla **Implisiittinen myöntäminen ja hybridityönkulut** -kohdassa sekä **Käyttöoikeustunnukset** että **Tunnuksen tunnisteet** ja valitse sitten **Tallenna**. Jos vastauksen URL-osoitetta ei ole syötetty rekisteröinnin aikana, voit lisätä sen myös tälle sivulle valitsemalla **Lisää ympäristö**, valitsemalla **Verkko** ja syöttämällä sitten sovelluksen uudelleenohjauksen URI-osoitteen. Tämän jälkeen voit **Implisiittinen myöntäminen ja hybridityönkulut** -kohdassa valita sekä **Käyttöoikeustunnukset** että **Tunnuksen tunnisteet** -vaihtoehdot.
-1. Siirry Azure-portaalin **Yhteenveto**-valikkoon ja kopioi **Sovelluksen (asiakasohjelman) tunnus**. Huomaa, että tämä tunnus tarvitaan myöhemmissä määritysvaiheissa (viitataan myöhemmin nimellä **Asiakasohjelman GUID**).
-
-Lisätietoja sovelluksen rekisteröinneistä Azure AD B2C:ssä on kohdassa [Azure Active Directory B2C:n uusi sovelluksen rekisteröintikokemus](/azure/active-directory-b2c/app-registrations-training-guide)
+1. Valitse Azure-portaalissa **Sovellukset(Vanha)** ja valitse sitten **Lisää**.
+1. Anna **Nimi**-kohtaan halutun AAD B2C -sovelluksen nimi.
+1. Valitse **Verkkosovellus / verkon ohjelmointirajapinta** -kohdassa **Sisällytä verkkosovellus / verkon ohjelmointirajapinta** -kohdan arvoksi **Kyllä**.
+1. Valitse **Salli implisiittinen työnkulku** -kohdan arvoksi **Kyllä** (oletusarvo).
+1. Anna **Vastauksen URL-osoite** -kohtaan määritetyt vastauksen URL-osoitteet. Katso lisätietoja vastauksen URL-osoitteista ja niiden muotoilusta [Vastauksen URL-osoitteet](#reply-urls) -kohdasta.
+1. Valitse **Sisällytä alkuperäinen asiakasohjelma** -kohdassa **Ei** (oletusarvo).
+1. Valitse **Luo**.
 
 ### <a name="reply-urls"></a>Vastauksen URL-osoitteet
 
@@ -133,9 +103,9 @@ Azure AD B2C sisältää seuraavat kolme käyttäjän perustyönkulkutyyppiä:
 - Profiilin muokkaaminen
 - Salasanan palauttaminen
 
-Voit halutessasi käyttää Azure AD:n käyttäjän oletustyönkulkua. Se näyttää Azure AD B2C:n isännöimän sivun. Vaihtoehtoisesti voit luoda HTML-sivun, jonka avulla hallitaan näiden käyttäjän työnkulkukokemusten ulkoasua. 
+Voit halutessasi käyttää Azure AD:n käyttäjän oletustyönkulkua. Se näyttää AAD B2C:n isännöimän sivun. Vaihtoehtoisesti voit luoda HTML-sivun, jonka avulla hallitaan näiden käyttäjän työnkulkukokemusten ulkoasua. 
 
-Jos haluat mukauttaa Dynamics 365 Commercella luotuja käyttäjän käytäntöjen sivuja, katso [Käyttäjän sisäänkirjausten mukautettujen sivujen määrittäminen](custom-pages-user-logins.md). Lisätietoja on kohdassa [Azure Active Directory B2C:n käyttäjäkokemusten käyttöliittymän mukauttaminen](/azure/active-directory-b2c/tutorial-customize-ui).
+Jos haluat mukauttaa Dynamics 365 Commercen käyttäjän käytäntöjen sivuja, katso [Käyttäjän sisäänkirjausten mukautettujen sivujen määrittäminen](custom-pages-user-logins.md). Lisätietoja on kohdassa [Azure Active Directory B2C:n käyttäjäkokemusten käyttöliittymän mukauttaminen](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulkukäytännön luominen
 
@@ -143,11 +113,11 @@ Voit luoda rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulkukäyt
 
 1. Valitse Azure-portaalin vasemmanpuoleisessa siirtymisruudussa **Käyttäjän työnkulut (käytännöt)**.
 1. Valitse **Azure AD B2C – käyttäjän työnkulut (käytännöt)** -sivulla **Uusi käyttäjän työnkulku**.
-1. Valitse **Rekisteröinti ja sisäänkirjaus** -käytäntö ja sitten **Suositellut**-versio.
+1. Valitse **Suositellut**-välilehdessä **Rekisteröidy ja kirjaudu sisään**.
 1. Anna käytännön nimi **Nimi**-kohdassa. Tämä nimi näkyy myöhemmin portaalin määrittämän etuliitteen kanssa (esimerkiksi B2C_1_).
-1. Valitse **Tunnistetietojen tarjoajat** -kohdan **Paikalliset tilit** -osasta **Sähköpostirekisteröityminen**. Sähköpostitodennusta käytetään yleisimpiä Commerce-skenaarioita varten. Jos käytät myös henkilöllisyyden palveluntarjoajan todennusta, voit valita ne myös tässä.
+1. Valitse **Tunnistetietojen tarjoajat** -kohdassa soveltuva valintaruutu.
 1. Valitse **Usean tekijän todennus** yritykselle soveltuva vaihtoehto. 
-1. Valitse **Käyttäjän määritteet ja vaatimukset** -kohdassa vaihtoehdot määritteiden tai palautusvaatimusten keräämistä varten. Valitse **Näytä lisää...**, jotta saat koko luettelon määritteistä ja claim-vaihtoehdoista. Commerce edellyttää seuraavien oletusasetusten käyttämistä:
+1. Valitse **Käyttäjän määritteet ja vaatimukset** -kohdassa vaihtoehdot määritteiden tai palautusvaatimusten keräämistä varten. Commerce edellyttää seuraavien oletusasetusten käyttämistä:
 
     | **Keräilymäärite** | **Palautusvaatimus** |
     | ---------------------- | ----------------- |
@@ -161,8 +131,11 @@ Voit luoda rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulkukäyt
 
 Seuraavassa kuvassa on esimerkki Azure AD B2C:n rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulusta.
 
-![Rekisteröinti ja sisäänkirjaus -käytännön asetukset.](./media/B2CImage_11.png)
+![Rekisteröinti ja sisäänkirjaus -käytännön asetukset](./media/B2CImage_11.png)
 
+Seuraavassa kuvassa on **Suorita käyttäjän työnkulku** -vaihtoehto Azure AD B2C:n rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulussa.
+
+![Käyttäjän työnkulku -vaihtoehdon suorittaminen käytännön työnkulussa](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Profiilin muokkaamisen käyttäjän työnkulkukäytännön luominen
 
@@ -170,24 +143,20 @@ Voit luoda profiilin muokkaamisen käyttäjän työnkulkukäytännön seuraavast
 
 1. Valitse Azure-portaalin vasemmanpuoleisessa siirtymisruudussa **Käyttäjän työnkulut (käytännöt)**.
 1. Valitse **Azure AD B2C – käyttäjän työnkulut (käytännöt)** -sivulla **Uusi käyttäjän työnkulku**.
-1. Valitse **Profiilin muokkaus** ja valitse sitten **Suositeltu**-versio.
+1. Valitse **Suositellut**-välilehdessä **Profiilin muokkaaminen**.
 1. Anna **Nimi**-kohtaan profiilin muokkaamisen käyttäjän työnkulku. Tämä nimi näkyy myöhemmin portaalin määrittämän etuliitteen kanssa (esimerkiksi B2C_1_).
-1. Valitse **Tunnistetietojen tarjoajat** -kohdan **Paikalliset tilit** -osasta **Sähköpostikirjautuminen**.
+1. Valitse **Tunnistetietojen tarjoajat** -kohdassa **Paikallisen tilin sisäänkirjaus**.
 1. Valitse **Käyttäjän määritteet** -kohdassa seuraavat valintaruudut:
-    
-    | **Keräilymäärite** | **Palautusvaatimus** |
-    | ---------------------- | ----------------- |
-    |                        | Sähköpostiosoitteet   |
-    | Etunimi             | Etunimi        |
-    |                        | Tunnistetietojen toimittaja |
-    | Sukunimi                | Sukunimi           |
-    |                        | Käyttäjän objektin tunnus  |
-    
+    - **Sähköpostiosoitteet** (vain **Palautusvaatimus**)
+    - **Etunimi** (**Keräilymäärite** ja **Palautusvaatimus**)
+    - **Tunnistetietojen tarjoaja** (vain **Palautusvaatimus**)
+    - **Sukunimi** (**Keräilymäärite** ja **Palautusvaatimus**)
+    - **Käyttäjän objektin tunnus** (vain **Palautusvaatimus**)
 1. Valitse **Luo**.
 
 Seuraavassa kuvassa on esimerkki Azure AD B2C:n profiilin muokkauksen käyttäjän työnkulusta.
 
-![Azure AD B2C -profiilin muokkaamisen käyttäjän työnkulun esimerkki](./media/B2CImage_12.png)
+![Profiilin muokkaamisen käyttäjän työnkulun luominen](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Salasanan palauttamisen käyttäjän työnkulkukäytännön luominen
 
@@ -195,7 +164,7 @@ Voit luoda salasanan palauttamisen käyttäjän työnkulkukäytännön seuraavas
 
 1. Valitse Azure-portaalin vasemmanpuoleisessa siirtymisruudussa **Käyttäjän työnkulut (käytännöt)**.
 1. Valitse **Azure AD B2C – käyttäjän työnkulut (käytännöt)** -sivulla **Uusi käyttäjän työnkulku**.
-1. Valitse **Salasanan nollaus** ja valitse sitten **Suositeltu**-versio.
+1. Valitse **Suositellut**-välilehdessä **Salasanan palauttaminen**.
 1. Anna **Nimi**-kohtaan salasanan palauttamisen käyttäjän työnkulun nimi.
 1. Valitse **Tunnistetietojen tarjoajat** -kohdassa **Nollaa salasana sähköpostiosoitteen avulla**.
 1. Valitse **Luo**.
@@ -223,15 +192,15 @@ Jos yhteisöpalveluiden tunnustietojen tarjoajan todentaminen lisätään ja kä
 
 Ennen kuin lisäät yhteisöpalvelujen tunnistetietojen tarjoajan todennusta varten, siirry tunnistetietojen tarjoajan portaaliin ja määritä tunnistetietojen tarjoajan sovellus Azure AD B2C -dokumentaatiossa määritetyllä tavalla. Alla on luettelo dokumentaation linkeistä.
 
-- [Amazon](/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-- [Azure AD (yksi vuokraaja)](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-- [Microsoft-tili](/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-- [Facebook](/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-- [GitHub](/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-- [Google](/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-- [LinkedIn](/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-- [OpenID Connect](/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-- [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+- [Amazon](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (yksi vuokraaja)](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft-tili](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### <a name="add-and-set-up-a-social-identity-provider"></a>Yhteisöpalvelujen tunnistetietojen tarjoajan lisääminen ja määrittäminen
 
@@ -251,18 +220,15 @@ Voit lisätä ja määrittää yhteisöpalveluiden tunnistetietojen tarjoajan se
 
 Seuraavassa kuvassa on esimerkki **Lisää tunnistetietojen tarjoaja**- ja **Määritä yhteisöpalvelujen tunnistetietojen tarjoaja** -näytöistä Azure AD B2C:ssä.
 
-![Yhteisöpalvelujen tunnistetietojen tarjoajan lisääminen sovellukseen.](./media/B2CImage_14.png)
+![Yhteisöpalvelujen tunnistetietojen tarjoajan lisääminen sovellukseen](./media/B2CImage_14.png)
 
 Seuraavassa kuvassa on esimerkki siitä, miten tunnistetietojen tarjoajat valitaan Azure AD B2C:n **Tunnistetietojen tarjoaja** -sivulla.
 
-![Valitse käytäntöä varten kaikki yhteisöpalvelujen tunnistetietojen tarjoajat, jotka otetaan käyttöön.](./media/B2CImage_16.png)
+![Valitse käytäntöä varten kaikki yhteisöpalvelujen tunnistetietojen tarjoajat, jotka otetaan käyttöön](./media/B2CImage_16.png)
 
 Seuraavassa kuvassa on esimerkki oletussisäänkirjausnäytöstä, jossa näkyy yhteisöpalveluiden tunnistetietojen tarjoajan sisäänkirjauspainike.
 
-> [!NOTE]
-> Jos käytät Commercessa luotuja mukautettuja sivuja käyttäjätyönkulkuihin, yhteisöpalveluiden tunnistetietojen toimittajien painikkeet on lisättävä käyttäen Commerce-moduulikirjaston laajennusominaisuuksia. Kun määrität sovelluksille tietyn yhteisöpalvelun tunnistetietojen tarjoajan, joissakin tapauksissa URL- tai konfiguraatiomerkkijonoissa voi kirjainkoolla olla merkitystä. Lisätietoja saat hteisöpalvelujen tunnistetietojen tarjoajalta.
- 
-![Esimerkki oletussisäänkirjausnäytöstä, jossa näkyy yhteisöpalveluiden tunnistetietojen tarjoajan sisäänkirjauspainike.](./media/B2CImage_17.png)
+![Esimerkki oletussisäänkirjausnäytöstä, jossa näkyy yhteisöpalveluiden tunnistetietojen tarjoajan sisäänkirjauspainike](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Commerce-pääkonttorin päivittäminen uusilla Azure AD B2C -tiedoilla
 
@@ -287,19 +253,12 @@ Voit päivittää pääkonttorin uusilla Azure AD B2C -tiedoilla seuraavasti.
 ### <a name="obtain-issuer-url"></a>Myöntäjän URL-osoitteen hankkiminen
 
 Voit hankkia tunnistetietojen tarjoajan URL-osoitteen seuraavasti.
-1. Siirry Azure-portaalin Azure AD B2C -sivulla **Rekisteröityminen ja sisäänkirjaus** -käyttäjävirtaan.
-1. Valitse vasemman siirtymisvalikon **Sivun asettelut**, valitse **Asettelun nimi** -kohdasta **Yhdistetty rekisteröitymis- ja sisäänkirjaussivu** ja valitse sitten **Suorita käyttäjävirta**.
-1. Varmista, että sovellus on määritetty edellä luotuun haluttuun Azure AD B2C-sovellukseen, ja valitse sitten linkki **Suorita käyttäjävirta** -otsikosta, joka sisältää ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``.
-1. Selaimen välilehdessä näkyy metatietosivu. Kopioi tunnistetietojen tarjoajan myöntäjän URL-osoite (arvo kohdassa **"issuer"**).
-   - Esimerkki: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
- 
-**TAI**: Voit muodostaa saman metatietojen URL-osoitteen manuaalisesti seuraavasti.
 
 1. Luo metatietojen URL-osoite seuraavassa muodossa käyttämällä B2C-vuokraajaa ja käytäntöä seuraavasti: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - Esimerkki: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
 1. Kirjoita metatietojen osoitteen URL-osoite selaimen osoitepalkkiin.
 1. Kopioi metatiedoissa tunnistetietojen tarjoajan myöntäjän URL-osoite (**myöntäjän** arvo).
-    - Esimerkki: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+    - Esimerkki: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
 ## <a name="configure-your-b2c-tenant-in-commerce-site-builder"></a>B2C-vuokraajan määrittäminen Commerce-sivuston luontiohjelmassa
 
@@ -309,25 +268,29 @@ Kun Azure AD B2C -vuokraajan määrittäminen on tehty, B2C-vuokraaja on määri
 
 Voit kerätä tarvittavat sovellustiedot seuraavasti.
 
-1. Siirry Azure-portaalissa kohtaan **Aloitus \> Azure AD B2C - sovellusrekisteröinnit**.
-1. Valitse sovellus ja valitse sitten vasemmanpuoleisesta navigointiruudusta **Yleiskatsaus**, jos haluat hakea sovelluksen tiedot.
-1. Kerää **Sovelluksen (asiakasohjelman) tunnus** -viitteestä B2C-sovelluksen tunnus, jonka B2C-vuokraaja loi. Tämä syötetään myöhemmin **Asiakasohjelman GUID** -arvona sivuston luontiohjelmaan.
-1. Valitse **Uudelleenohjaa URI-osoitteet** ja kerää sivustolle näytetty vastauksen URL-osoite (määrityksen yhteydessä kirjoitettu vastauksen URL-osoite).
-1. Siirry kohtaan **Aloitus \> Azure AD B2C – käyttäjän työnkulut** ja kerää sitten kunkin käyttäjän työnkulkukäytännön koko nimet.
+1. Siirry Azure-portaalissa kohtaan **Aloitus \> Azure AD B2C - sovellukset**.
+1. Valitse sovellus ja valitse sitten vasemmanpuoleisesta navigointiruudusta **Ominaisuudet**, jos haluat hakea sovelluksen tiedot.
+1. Kerää **Sovelluksen tunnus** -ruudusta B2C-sovelluksen tunnus, jonka B2C-vuokraaja loi. Tämä syötetään myöhemmin **Asiakasohjelman GUID** -arvona sivuston luontiohjelmaan.
+1. Kerää **Vastauksen URL-osoite** -kohdasta vastauksen URL-osoite.
+1. Siirry kohtaan **Aloitus \> Azure AD B2C – käyttäjän työnkulut (käytännöt)** ja kerää sitten kunkin käyttäjän työnkulkukäytännön nimet.
 
-Seuraavassa kuvassa on esimerkki **Azure AD B2C - sovellusrekisteröinnit** -yleiskuvaussivusta.
+Seuraavassa kuvassa on esimerkki **Azure AD B2C - sovellukset** -sivusta.
 
-![Azure AD B2C - sovellusrekisteröinnit -yhteenvetosivu, jossa sovelluksen (asiakkaan) tunnus on korostettuna](./media/ClientGUID_Application_AzurePortal.png)
+![Siirtyminen vuokraajan B2C-sovellukseen](./media/B2CImage_19.png)
+
+Seuraavassa kuvassa on esimerkki sovelluksen **Ominaisuudet** -sivusta Azure AD B2C -ratkaisussa. 
+
+![Sovelluksen tunnuksen kopioiminen B2C-sovelluksen ominaisuuksista](./media/B2CImage_21.png)
 
 Seuraavassa kuvassa on esimerkki käyttäjän työnkulkukäytännöistä **Azure AD B2C – käyttäjän työnkulut (käytännöt)** -sivulla.
 
-![Kaikkien B2C-käytännön työnkulun nimien kerääminen.](./media/B2CImage_22.png)
+![Kaikkien B2C-käytännön työnkulun nimien kerääminen](./media/B2CImage_22.png)
 
-### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Azure AD B2C -vuokraajan sovelluksen tietojen syöttäminen Commerceen
+### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>AAD B2C -vuokraajan sovelluksen tietojen syöttäminen Commerceen
 
 Anna Azure AD B2C -vuokraajan tiedot Commercen sivuston luontiohjelmaan ennen B2C-vuokraajan liittämistä sivustoihin.
 
-Voit lisätä Azure AD B2C -vuokraajan sovelluksen tiedot Commerceen seuraavasti.
+Voit lisätä AAD B2C -vuokraajan sovelluksen tiedot Commerceen seuraavasti.
 
 1. Kirjaudu sisään järjestelmänvalvojana Commerce-sivuston luontiohjelmaan ympäristössä.
 1. Laajenna se valitsemalla vasemmasta siirtymisruudusta **Vuokraajan asetukset**.
@@ -368,11 +331,11 @@ Voit liittää B2C-sovelluksen sivustoon ja kanavaan seuraavasti.
 
 Jos harkitset asiakastietojen siirtämistä aiemmasta tunnistetietojen tarjoajan ympäristöstä, tarkista asiakkaan siirron tarpeet Dynamics 365 Commerce -ryhmän kanssa.
 
-Lisätietoja asiakkaan siirron Azure AD B2C -dokumentaatiosta on kohdassa [Käyttäjien siirtäminen Azure Active Directory B2C -sovellukseen](/azure/active-directory-b2c/active-directory-b2c-user-migration).
+Lisätietoja asiakkaan siirron Azure AD B2C -dokumentaatiosta on kohdassa [Käyttäjien siirtäminen Azure Active Directory B2C -sovellukseen](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### <a name="custom-policies"></a>Mukautetut käytännöt
 
-Lisätietoja Azure AD B2C -sovelluksen yhteydenottojen ja käytännön työnkulkujen mukauttamisesta erilaisiksi kuin B2C-standardikäytännöt on kohdassa [Azure Active Directory B2C -sovelluksen mukautetut käytännöt](/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+Lisätietoja Azure AD B2C -sovelluksen yhteydenottojen ja käytännön työnkulkujen mukauttamisesta erilaisiksi kuin B2C-standardikäytännöt on kohdassa [Azure Active Directory B2C -sovelluksen mukautetut käytännöt](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Toissijainen järjestelmänvalvoja
 
@@ -390,15 +353,12 @@ Valinnainen toissijainen järjestelmänvalvojatili voidaan lisätä B2C-vuokraaj
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
-[URL-uudelleenohjausten joukkolataus palveluun](upload-bulk-redirects.md)
+[Lataa URL-uudelleenohjaukset joukkotoimintona](upload-bulk-redirects.md)Liitä Dynamics 365 Commerce -sivusto online-kanavaan
 
 [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
 
-[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
+[Useiden kuluttajakaupan vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

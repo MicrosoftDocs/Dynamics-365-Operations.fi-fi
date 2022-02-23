@@ -2,9 +2,11 @@
 title: Datasta riippumaton testaus Regression Suite Automation Toolilla
 description: Tämä ohjeaihe sisältää suosituksia datasta riippumattomaan testaukseen Regression Suite Automation Toolilla.
 author: kfend
+manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763407"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798198"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Datasta riippumaton testaus Regression Suite Automation Toolilla
 
@@ -30,7 +32,7 @@ Vaikka ERP-sovelluksen toiminnan vahvistaminen ei voi olla täysin datasta riipp
 - ATL-sovelluskehys
 - Regression Suite Automation Tool (RSAT)
 
-[![Testiluokituksen pyramidi.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Testiluokituksen pyramidi](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Yleiskuvaus
 -   **SysTest-sovelluskehitys** – SysTest-sovelluskehys on luotettava vaihtoehto yksikkötestien kirjoittamiseen. Koska yksikkötestit testaavat tavallisesti metodia tai funktiota, niiden tulisi olla aina datasta riippumattomia ja riippuvaisia vain tiedoista, jotka annetaan osana testiä.
@@ -42,11 +44,8 @@ Vaikka ERP-sovelluksen toiminnan vahvistaminen ei voi olla täysin datasta riipp
     - o Syötä yksilölliset tiedot, kuten laskujen numerot, käyttämällä numerosarjaa tai Microsoft Excel -funktioita, kuten =TEKSTI(NYT(),"yyyymmddhhmm"). Tämä funktio tarjoaa yksilöllisen numeron joka minuutti, mikä sallii sinun seurata, milloin toiminto tapahtui. Tätä voidaan käyttää muuttujille, kuten tuotteiden vastaanottojen ja toimittajien laskujen numeroille. Nämä testit toimivat edelleen samassa tietokannassa uudelleen ja uudelleen ilman, että niitä tarvitsee palauttaa.
     - Määritä ympäristön **muokkaustilaksi** aina **Luku** tai **Muokkaus** ensimmäisessä testissä, koska oletusasetus on **Automaattinen**. **Automaattinen**-asetukset käyttävät aina edellistä asetusta, ja ne voivat aiheuttaa epäluotettavia testejä. 
  
-    [![Asetukset-sivu, Suorituskyky-välilehti.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Asetukset-sivu, Suorituskyky-välilehti](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Vahvista vasta, kun olet suodattanut valinnan tiettyyn tapahtumaan yleisen vahvistuksen sijaan. Jos haluat esimerkiksi käyttää tietueiden määrää, suodata tapahtuman numeron tai päivämäärän perusteella siten, että mitään muita tapahtumia ei käytetä vahvistuksessa. 
     - Jos olet tarkistamassa asiakkaan saldoa tai budjettia, tallenna arvo ensin ja lisää sitten tapahtuma-arvosi vahvistaaksesi odotetun tuloksen sen sijaan, että vahvistaisit kiinteän odotetun arvon. 
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

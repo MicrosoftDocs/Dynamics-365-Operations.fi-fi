@@ -1,13 +1,16 @@
 ---
 title: Pyydä poissaoloaikaa
 description: Pyydä poissaoloaikaa Dynamics 365 Human Resourcesissa.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7ca3fd03cda720187cb9c21b7f3ef3545c8901e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066772"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418398"
 ---
 # <a name="request-time-off"></a>Pyydä poissaoloaikaa
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Voit lähettää aikaa koskevia pyyntöjä, tarkastella lomaa ja jättää saldoja ja tarkastella lomapyyntöjen tilaa kohdassa Dynamics 365 Human Resources.
 
@@ -45,11 +43,9 @@ Voit lähettää aikaa koskevia pyyntöjä, tarkastella lomaa ja jättää saldo
 
 6. Valitse **Lähetä**, kun olet valmis lähettämään pyyntösi. Muussa tapauksessa valitse **Tallenna vedos**.
 
-Työntekijät, jotka lähettävät uuden lomapyynnön, voivat muodostaa lomapyyntönsä valitsemalla eri lomatyyppejä. Kaikilla yksittäisen lomapyynnön osana valituilla lomatyypeillä on kuitenkin oltava sama lomayksikkö. Työntekijät voivat tarkastella kunkin lomatyypin lomayksikköä **Pyydä vapaata** -sivulla.
-
 ## <a name="add-an-attachment-to-an-existing-request"></a>Lisää liite aiemmin luotuun pyyntöön
 
-Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös tarkastella kaikkia tiettyyn päivään liittyviä pyyntöjä.
+Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös tarkastella kaikkia tiettyyn päivään liittyviä pyyntöjä. 
 
 ## <a name="view-leave-balances"></a>Näytä poissaolosaldot
 
@@ -61,23 +57,8 @@ Kun päivität aiemmin luotua lomapyyntöä, voit lisätä liitteen. Voit myös 
 
 1. Valitse **työntekijän itsepalvelu** -työtilassa **Lisää** (…) **Vapaasaldot**-ruudusta.
 
-2. Voit tarkastella hyväksyttyjä lomapyyntöjä valitsemalla **Hyväksytty poissaolo**. Voit tarkastella odottavia poissaolopyyntöjä valitsemalla **Poissaolopyynnöt**.
-
-## <a name="cancel-time-off-requests"></a>Poissaolopyyntöjen peruuttaminen
-
-1. Valitse **työntekijän itsepalvelu** -työtilassa **Näytä poissaoloaika** **Vapaasaldot**-ruudusta.
-
-2. Valitse **Poissaolo**-sivulla yksi tai usea peruutettavaa poissaolopyyntö.
-
-3. Valitse **Peruuta**-painike.
-
-4. Kirjoita kommentti **Peruutuksen tiedot** -ruutuun ja valitse **Lähetä**.
-
-   ![Peruuta lomapyyntö.](media/hr-leave-and-absence-cancel.png)
+2. Voit tarkastella hyväksyttyjä lomapyyntöjä valitsemalla **Hyväksytty loma-aika**. Voit tarkastella odottavia lomapyyntöjä valitsemalla **Loma-aika pyynnöt**.
 
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

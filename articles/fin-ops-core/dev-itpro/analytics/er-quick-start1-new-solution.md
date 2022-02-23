@@ -2,27 +2,27 @@
 title: Suunnittele uusi ER-ratkaisu mukautetun raportin tulostamiseen
 description: Tässä ohjeaiheessa kerrotaan miten ER-ratkaisu mukautetun raportin tulostamiseen suunnitellaan.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: af610ae86e751ec4425f4c555cdf59c042fabcdb46e6a3a018b0d94a8926d92e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770065"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680239"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Suunnittele uusi ER-ratkaisu mukautetun raportin tulostamiseen
 
@@ -121,19 +121,19 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvoja-, sähköisen ra
 
 - [Lisäresurssit](#References)
 
-Tässä esimerkissä luodaan uusi ER-ratkaisu [kyselylomake](../../../human-resources/hr-learning-questionnaires.md)-moduulia varten. Uuden ER-ratkaisun avulla voit suunnitella raportin käyttämällä Microsoft Excel -laskentataulukkoa mallina. Tämän jälkeen voit luoda **kyselylomake**-raportin Excel- tai PDF-muodossa sen lisäksi, että luot aiemmin luodun SQL Server Reporting Services (SSRS) -raportin. Voit myös muokata uutta raporttia myöhemmin pyydettäessä. Koodausta ei tarvita.
+Tässä esimerkissä luodaan uusi ER-ratkaisu [kyselylomake](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires)-moduulia varten. Uuden ER-ratkaisun avulla voit suunnitella raportin käyttämällä Microsoft Excel -laskentataulukkoa mallina. Tämän jälkeen voit luoda **kyselylomake**-raportin Excel- tai PDF-muodossa sen lisäksi, että luot aiemmin luodun SQL Server Reporting Services (SSRS) -raportin. Voit myös muokata uutta raporttia myöhemmin pyydettäessä. Koodausta ei tarvita.
 
 1. Voit suorittaa aiemmin luodun raportin siirtymällä kohtaan **kyselylomake** \> **suunnittelu** \> **kyselylomakkeiden raportti**.
 
-    ![Valitaan Kyselylomake-valikkokohta Kysely-moduulista nykyisen SSRS-raportin suorittamiseksi.](./media/er-quick-start1-application-menu-origin.png)
+    ![Valitaan Kyselylomake-valikkokohta Kysely-moduulista nykyisen SSRS-raportin suorittamiseksi](./media/er-quick-start1-application-menu-origin.png)
 
 2. Määritä valintaehdot **kyselylomakkeiden raportti** -valintaikkunassa. Käytä suodatinta niin, että raportti sisältää vain **SBCCrsExam**-kyselyn.
 
-    ![Kyselylomakkeiden raportti -valintaikkunan valintaehtojen määrittäminen.](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![Kyselylomakkeiden raportti -valintaikkunan valintaehtojen määrittäminen](./media/er-quick-start1-ssrs-report-dialog.png)
 
 Seuraavassa kuvassa näkyy SSRS-raportin luotu versio **SBCCrsExam**-kyselystä.
 
-![Luotu SSRS-raportti.](./media/er-quick-start1-ssrs-report.png)
+![Luotu SSRS-raportti](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>Määritä ER-kehys
 
@@ -187,7 +187,7 @@ Kun [tuot uuden tietomallin määritys](#ImportDataModel) -osan vaiheet, voit tu
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Uuden tietomallimäärityksen tuominen
 
-1. Lataa [kyselylomakkeet model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeet model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**.
 4. Valitse toimintoruudussa **Vaihda** \> **Lataa XML-tiedostosta**.
@@ -273,7 +273,7 @@ Jos haluat jatkaa, ohita seuraavat vaiheet, [Luo uusi tietomallin konfiguraatio]
 
     Seuraavassa kuvassa näkyy **tietomallin suunnittelu** -sivulla valmiiksi muokattava tietomalli.
 
-    ![Konfiguroitu tietomalli ER-tietomallin suunnittelussa.](./media/er-quick-start1-model2.png)
+    ![Konfiguroitu tietomalli ER-tietomallin suunnittelussa](./media/er-quick-start1-model2.png)
 
 7. Tallenna muutokset.
 8. Sulje **Tietomallin suunnittelu** -sivu.
@@ -287,7 +287,7 @@ Jos haluat jatkaa, ohita seuraavat vaiheet, [Luo uusi tietomallin konfiguraatio]
 
 Tämän konfiguraation version 1 tila muutetaan **luonnoksesta** **valmiiksi**. Versiota 1 ei voi enää muuttaa. Tämä versio sisältää konfiguroidun tietomallin, ja sitä voidaan käyttää muiden ER-konfiguraatioiden pohjana. Tämän konfiguraation versio 2 luodaan, ja sen tila on **luonnos**. Voit muokata tätä versiota, jos haluat muuttaa **kyselylomakkeen** tietomallia.
 
-![Konfiguraatiosivun muokattavan konfiguraation versiot.](./media/er-quick-start1-model-configuration.png)
+![Konfiguraatiosivun muokattavan ER-konfiguraation versiot](./media/er-quick-start1-model-configuration.png)
 
 Lisätietoja ER-kokoonpanojen versiotiedoista on kohdassa [sähköisen raportoinnin (ER) yleiskuvaus](general-electronic-reporting.md#component-versioning).
 
@@ -302,7 +302,7 @@ Kun teet loppuun [tuot uuden mallin yhdistämismääritys](#ImportModelMapping) 
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Uuden mallin yhdistämismäärityksen tuominen
 
-1. Lataa [kyselylomakkeet mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeet mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**.
 4. Valitse toimintoruudussa **Vaihda** \> **Lataa XML-tiedostosta**.
@@ -368,7 +368,7 @@ Sinun on konfiguroitava tietolähteet, jotta voit käyttää kyselylomakkeen tie
     2. Valitse **Lisää**.
     3. Kirjoita valintaikkunan **Nimi**-kenttään **\$ResultGroup**.
     4. Valitse **Muokkaa kaavaa**.
-    5. Syötä [ER-kaavaeditorin](general-electronic-reporting-formula-designer.md) **Kaava**-kenttään **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)**, jos haluat käyttää KMCollection- ja KMQuestionResultGroup-taulujen välistä yksi-moneen-[yhteyttä](er-formula-language.md#Paths).
+    5. Syötä [ER-kaavaeditorin](general-electronic-reporting-formula-designer.md) **Kaava**-kenttään **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)**, jos haluat käyttää KMCollection- ja KMQuestionResultGroup-taulujen välistä yksi-moneen-[yhteyttä](er-formula-language.md#paths).
     6. Valitse **Tallenna** ja sulje kaavaeditori.
     7. Lisää uusi laskettu kenttä valitsemalla **OK**.
 
@@ -441,7 +441,7 @@ Voit lisätä ER-otsikoita ja määrittää jotkin tietolähteet palauttamaan ar
 5. Sulkee **tekstin kääntäjä** -valintaikkunan.
 6. Valitse **Peruuta**.
 
-![Muokattavien mallimääritysten ER-otsikoiden lisääminen.](./media/er-quick-start1-adding-labels.png)
+![Muokattavien mallimääritysten ER-otsikoiden lisääminen](./media/er-quick-start1-adding-labels.png)
 
 Olet kirjoittanut vain oletuskielelle määritetyt ER-etiketit. Lisätietoja siitä, miten ER-etiketit voidaan kääntää muille kielille, on ohjeaiheessa [Monikielisten raporttien suunnitteleminen](er-design-multilingual-reports.md).
 
@@ -475,7 +475,7 @@ Koska luettelointiarvojen ja tekstiarvojen vertailun tulokset on muunnettava use
     8. Valitse **Tallenna** ja sulje kaavaeditori.
     9. Lisää uusi tietolähde valitsemalla **OK**.
 
-![Konfiguroitu mallin määritys ER-tietomallin määrityksen suunnittelussa.](./media/er-quick-start1-added-data-sources.png)
+![Konfiguroitu mallin määritys ER-tietomallin määrityksen suunnittelussa](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Tietolähteen sitominen tietomallikenttiin
 
@@ -526,7 +526,7 @@ Sinun on sidottava määritetyt tietolähteet tietomallin kenttiin, jotta voit m
 
     Seuraavassa kuvassa näkyy **mallikartoituksen suunnittelu** -sivulla määritetyn mallikartoituksen lopullinen tila.
 
-    ![Täysin konfiguroitu mallin määritys ER-tietomallin määrityksen suunnittelussa.](./media/er-quick-start1-mapping2.png)
+    ![Täysin konfiguroitu mallin määritys ER-tietomallin määrityksen suunnittelussa](./media/er-quick-start1-mapping2.png)
 
 7. Tallenna muutokset.
 8. Sulje **Mallimäärityksen sunnittelun** sivu.
@@ -540,7 +540,7 @@ Sinun on sidottava määritetyt tietolähteet tietomallin kenttiin, jotta voit m
 
 Tämän konfiguraation version 1.1 tila muutetaan **luonnoksesta** **valmiiksi**. Versiota 1.1 ei voi enää muuttaa. Tämä versio sisältää konfiguroidun mallin määrityksen, ja sitä voidaan käyttää muiden ER-konfiguraatioiden pohjana. Tämän konfiguraation versio 1.2 luodaan, ja sen tila on **luonnos**. Voit muokata tätä versiota, jos haluat muuttaa **kyselylomakkeen määrityksen** määritystä.
 
-![Konfiguraatiosivun muokattavan ER-konfiguraation versiot.](./media/er-quick-start1-mapping-configuration.png)
+![Konfiguraatiosivun muokattavan ER-konfiguraation versiot](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > Määritetty mallimääritys on **kyselylomakkeen** liiketoimialuetta edustavan abstraktin tietomallin Finance-kohtainen toteutus.
@@ -549,22 +549,22 @@ Tämän konfiguraation version 1.1 tila muutetaan **luonnoksesta** **valmiiksi**
 
 ER-kehys käyttää ennalta määritettyjä malleja luodakseen tiedostoja Microsoft Office -muodoissa (Excel-työkirjoissa tai Word-asiakirjoissa). Kun tarvittava raportti luodaan, malliin täytetään tarvittavat tiedot määritetyn tietovuomäärityksen mukaan. Siksi sinun on ensin suunniteltava malli mukautettua raporttia varten. Tämä malli on suunniteltava Excel-työkirjana, jonka rakenne edustaa mukautetun raportin asettelua. Sinun on annettava jokaiselle Excel-kohteelle nimi, jonka aiot täyttää vaaditulla tiedoilla.
 
-1. Lataa [kyselylomakkeiden raporttimalli.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeiden raporttimalli.xslx](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Avaa tiedosto Excelissä ja tarkista työkirjan rakenne.
 
 Kuten seuraavasta kuvasta näkyy, ladattu malli on suunniteltu tulostamaan kyselylomakkeita, joissa esitetään kyselyn kysymykset sekä asianmukaiset vastaukset.
 
-![Excel-malli määritettyjen kyselylomakkeiden tulostamista varten.](./media/er-quick-start1-template-layout.png)
+![Excel-malli määritettyjen kyselylomakkeiden tulostamista varten](./media/er-quick-start1-template-layout.png)
 
 Tähän malliin on lisätty Excel-nimiä kyselylomakkeen tietojen täyttämistä varten. Nimien hallinnan avulla voit tarkistaa Excelin nimet.
 
-![Nimen hallinnan käyttäminen Excelin nimien tarkistamiseen annetussa Excel-mallissa.](./media/er-quick-start1-template-names.png)
+![Nimen hallinnan käyttäminen Excelin nimien tarkistamiseen annetussa Excel-mallissa](./media/er-quick-start1-template-names.png)
 
 Raportin otsikot on lisätty englannin kielellä vakiotekstinä. Voit korvata raportin otsikot uusilla Excelin nimillä, jotka täyttävät otsikot ja kielikohtaiset tekstit, käyttämällä ER-muodon [otsikoita](#AddMmLabels), kuten teit kielikohtaisten lausekkeiden osalta määritetyssä mallin yhdistämismäärityksessä. Tässä tapauksessa ER-etiketit on lisättävä muokattavaan ER-muotoon.
 
 Kuten seuraavasta kuvasta näkyy, mukautetun raportin otsikko on määritetty, jotta Excel voi tehdä sivutustyön.
 
-![Mukautetun raportin ylätunniste annetussa Excel-mallissa.](./media/er-quick-start1-template-header.png)
+![Mukautetun raportin ylätunniste annetussa Excel-mallissa](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Muodon suunnittelu
 
@@ -574,7 +574,7 @@ Kun [tuot suunnitellun mallinmääritys](#FormatImport) -osan vaiheet, voit tuod
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Tuo suunniteltu muotokonfiguraatio
 
-1. Lataa [kyselylomakkeiden muoto.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
+1. Lataa [kyselylomakkeiden muoto.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) -tiedosto ja tallenna se paikalliseen tietokoneeseen.
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**.
 4. Valitse toimintoruudussa **Vaihda** \> **Lataa XML-tiedostosta**.
@@ -614,11 +614,11 @@ Jos haluat jatkaa, ohita seuraavat vaiheet, [Luo uusi muotokonfiguraatio](#Forma
     2. Etsi ja valitse paikallisesti tallennettu **Kyselylomakkeen raporttimalli.xslx** -tiedosto ja valitse sitten **Avaa**.
     3. Tuo malli valitsemalla **OK**.
 
-    ![Raporttimallin tuominen.](./media/er-quick-start1-template-import.png)
+    ![Raporttimallin tuominen](./media/er-quick-start1-template-import.png)
 
 **Excel\\Tiedosto**-muotoelementti lisätään automaattisesti muokattavaan muotoon juurielementtinä. Lisäksi **Excel\\Alue**-muotoelementti tai **Excel\\Solu**-muotoelementti lisätään automaattisesti jokaista tunnistettua Excel-mallin nimeä varten. **Excel\\Otsikko**-muoto, joka sisältää sisäkkäisen **Merkkijono**- elementin, lisätään automaattisesti tuodun mallin otsikkoasetusten mukaiseksi.
 
-![Muotorakenne, joka sisältää automaattisesti lisätyt elementit ER-toiminnon suunnittelussa.](./media/er-quick-start1-template-import2.png)
+![Muotorakenne, joka sisältää automaattisesti lisätyt elementit ER-toiminnon suunnittelussa](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Muodon konfigurointi
 
@@ -629,12 +629,12 @@ Jos haluat jatkaa, ohita seuraavat vaiheet, [Luo uusi muotokonfiguraatio](#Forma
 
     Lisätietoja ER-prosessin kieli- ja kulttuurikonteksteista on ohjeaiheessa [Monikielisten raporttien suunnitteleminen](er-design-multilingual-reports.md).
 
-    ![Suunnitellun raportin kieli- ja kulttuuriasetusten määrittäminen ER-toiminnon suunnittelussa.](./media/er-quick-start1-template-format-structure1.png)
+    ![Suunnitellun raportin kieli- ja kulttuuriasetusten määrittäminen ER-toiminnon suunnittelussa](./media/er-quick-start1-template-format-structure1.png)
 
 5. Laajenna pääsolmu muotopuussa ja valitse sitten **ResultsGroup**.
 6. Valitse **Muoto**-välilehden **Replikointisuunta** -kentästä **Ei replikaatiota**, koska yksittäiselle kyselylomakkeelle ei odoteta olevan useita tulosryhmiä.
 
-    ![Aluemuotoelementtien replikointisuunnan määrittäminen ER-toiminnon suunnittelussa.](./media/er-quick-start1-template-format-structure2.png)
+    ![Aluemuotoelementtien replikointisuunnan määrittäminen ER-toiminnon suunnittelussa](./media/er-quick-start1-template-format-structure2.png)
 
 7. Valitse **Tallenna**.
 
@@ -654,7 +654,7 @@ Sinun on määritettävä tietosidontamuoto elementille, jota käytetään luodu
 
 5. Sulje kaavaeditori.
 
-    ![Sidonnan määrittäminen täyttämään luodun raportin otsikko.](./media/er-quick-start1-add-report-title-label.png)
+    ![Sidonnan määrittäminen täyttämään luodun raportin otsikko](./media/er-quick-start1-add-report-title-label.png)
 
 Tämän tekniikan avulla voit tehdä kaikki muut nykyisen mallin kielikohtaiset otsikot. Lisätietoja yhden ER-kokoonpanon lisättyjen otsikoiden kääntämisestä kaikille tuetuille kielille on ohjeaiheessa [monikielisten raporttien suunnitteleminen](er-design-multilingual-reports.md).
 
@@ -664,7 +664,7 @@ Tämän tekniikan avulla voit tehdä kaikki muut nykyisen mallin kielikohtaiset 
 2. Valitse **Muokkaa**.
 3. Tarkista **tietolähteen ominaisuudet** -valintaikkunan tiedot. Tämä tietolähde edustaa **kyselylomakemallin** ER-määrityksissä sijaitsevan **kyselylomakkeen** tietomallikomponentin versiota 1.
 
-![ER-toimintojen suunnitteluohjelman mallitietolähteen tiedot.](./media/er-quick-start1-model-data-source.png)
+![ER-toimintojen suunnitteluohjelman mallitietolähteen tiedot](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Muotoelementtien sidonta tietolähdekenttiin
 
@@ -680,11 +680,11 @@ Jos haluat määrittää, miten malli täytetään suorituksen aikana, sinun on 
 
     **Kyselylomakkeen** alueen muotoelementti määritetään pystysuunnassa replikoitavaksi. Kun **tietueluettelo**-tyypin tietolähteeseen on sidottu Excel-mallin asianmukainen **kyselylomake**-alue, se toistetaan sidotun tietolähteen jokaisen tietueen osalta.
  
-    ![Kyselylomakkeen aluemuodon elementin sitominen asianmukaisiin tietueluettelon tietolähteisiin ER-toiminnon suunnittelussa.](./media/er-quick-start1-bindings1.png)
+    ![Kyselylomakkeen aluemuodon elementin sitominen asianmukaisiin tietueluettelon tietolähteisiin ER-toiminnon suunnittelussa](./media/er-quick-start1-bindings1.png)
 
     Koska Excel-mallin **kyselylomakkeen** alue on määritetty rivien 5-14 välillä, nämä rivit toistetaan aina raportoitua kyselylomaketta käyttäen.
 
-    ![Excel-mallin rivit, jotka toistetaan muodostettuun raporttiin tietueluettelon tietolähteiden jokaisesta tietueesta.](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Excel-mallin rivit, jotka toistetaan muodostettuun raporttiin tietueluettelon tietolähteiden jokaisesta tietueesta](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. Määritä muiden muotoelementtien samanlaiset sidonnat seuraavassa taulukossa kuvatulla tavalla.
 
@@ -720,7 +720,7 @@ Jos haluat määrittää, miten malli täytetään suorituksen aikana, sinun on 
 
 Seuraavassa kuvassa näkyy **muodon suunnittelu** -sivulla määritetyn tietojen sidonnan lopullinen tila.
 
-![Konfiguroitu tietojen sidonnan ER-toiminnon suunnittelussa.](./media/er-quick-start1-bindings2.png)
+![Konfiguroitu tietojen sidonnan ER-toiminnon suunnittelussa](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > Koko kokoelma määritettyjä tietolähteitä ja sidoksia edustaa määritetyssä muodossa olevaa muotomäärityskomponenttia. Tätä muotomääritystä kutsutaan, kun raportin luonnin konfiguroitu muoto suoritetaan.
@@ -740,9 +740,9 @@ Voit nyt suorittaa suunnitellun muodon testausta varten **kokoonpanot**-sivulta.
 
 [Oletusarvon](electronic-reporting-destinations.md#default-behavior) mukaan luotu raportti toimitetaan Excel-tiedostona, jonka voit ladata. Seuraavissa kuvissa näkyy kaksi sivua luotua raporttia Excel-muodossa.
 
-![Esimerkki luodusta raportista Excel-muodossa, sivu 1.](./media/er-quick-start1-report1a.png)
+![Esimerkki luodusta raportista Excel-muodossa, sivu 1](./media/er-quick-start1-report1a.png)
 
-![Esimerkki luodusta raportista Excel-muodossa, sivu 2.](./media/er-quick-start1-report1b.png)
+![Esimerkki luodusta raportista Excel-muodossa, sivu 2](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Suunnitellun muodon säätäminen
 
@@ -763,7 +763,7 @@ Kysymyksiä ei ole tilattu oikein luotavalla raportilla. Voit muuttaa järjestys
 1. Valitse **Muodon suunnittelu** -sivulla **Raportti**-juurinimike.
 2. Laajenna **Määritys**-välilehden muotopuussa **Raportti\\kyselylomake\\kysymys**.
 
-    ![Aluetyypin kysymysmuotoelementti ER-operaation suunnittelijassa.](./media/er-quick-start1-bindings3.png)
+    ![Aluetyypin kysymysmuotoelementti ER-operaation suunnittelijassa](./media/er-quick-start1-bindings3.png)
 
 3. Valitse **Yhdistämismääritys**-välilehdestä **model.Questionnaire**.
 4. Valitse **Lisää** \> **Funktiot\\laskettu kenttä** ja kirjoita sitten **nimi**-kenttään **OrderedQuestions**.
@@ -776,7 +776,7 @@ Kysymyksiä ei ole tilattu oikein luotavalla raportilla. Voit muuttaa järjestys
 11. Valitse **sido** ja vahvista sitten, että käytössä oleva **model.Questionnaire.Questions**-polku korvataan uudella **model.Questionnaire.OrderedQuestions**-polulla kaikissa sisäkkäisten elementtien sidonnoissa.
 12. Valitse **Tallenna**.
 
-![Kysymysmuotoelementin sitominen määritettyyn OrderedQuestions-tietolähteeseen ER-toiminnon suunnittelussa.](./media/er-quick-start1-bindings4.png)
+![Kysymysmuotoelementin sitominen määritettyyn OrderedQuestions-tietolähteeseen ER-toiminnon suunnittelussa](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Muokatun muodon suorittaminen ER-muodosta
 
@@ -790,7 +790,7 @@ Voit nyt suorittaa muokatun muodon testaustarkoituksessa ER-kehyksestä.
 
 Seuraavassa kuvassa näkyy Excel-muodossa luotu raportti, jossa kysymykset on järjestetty oikein.
 
-![Luotu raportti Excel-muodossa, jossa on oikein tilatut kysymykset.](./media/er-quick-start1-report2.png)
+![Luotu raportti Excel-muodossa, jossa on oikein tilatut kysymykset](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Suunnittele muoto loppuun
 
@@ -801,7 +801,7 @@ Seuraavassa kuvassa näkyy Excel-muodossa luotu raportti, jossa kysymykset on j�
 
 Tämän konfiguraation version 1.1 tila muutetaan **luonnoksesta** **valmiiksi**. Versiota 1.1 ei voi enää muuttaa. Tämä versio sisältää määritetyn muodon, ja sitä voidaan käyttää mukautetun raportin tulostamiseen. Tämän konfiguraation versio 1.2 luodaan, ja sen tila on **luonnos**. Voit muokata tätä versiota, jos haluat muuttaa **kyselylomake**-raporttisi muotoa.
 
-![Konfiguraatiosivun muokattava ER-konfiguraatio.](./media/er-quick-start1-format-configuration.png)
+![Konfiguraatiosivun muokattavan ER-konfiguraation versiot](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Konfiguroitu muoto on **kyselylomake**-raportin rakenne, eikä se sisällä mitään suhteita rahoitukseen määritettyihin esineisiin.
@@ -1051,7 +1051,7 @@ Luo projekti, jotta uusi valikkovaihtoehto on käyttäjien käytettävissä.
 
 1. Siirry kohtaan **kyselylomake** \> **Suunnittelu** \> **Kyselylomakeraportti (palvelun tarjoaa ER)**.
 
-    ![Valitaan Kyselylomakeraportti (palvelun tarjoaa ER) -valikkokohta Kysely-moduulista määritetyn ER-muodon suorittamiseksi.](./media/er-quick-start1-application-menu-modified.png)
+    ![Valitaan Kyselylomakeraportti (palvelun tarjoaa ER) -valikkokohta Kysely-moduulista määritetyn ER-muodon suorittamiseksi](./media/er-quick-start1-application-menu-modified.png)
 
 2. Valitse valintaikkunan **muodon määritys** -kentästä **kyselylomakkeiden raportti**.
 3. Valitse **OK**.
@@ -1059,7 +1059,7 @@ Luo projekti, jotta uusi valikkovaihtoehto on käyttäjien käytettävissä.
 5. Vahvista suodatusvaihtoehto valitsemalla **OK**.
 6. Suorita raportti valitsemalla **OK**.
 
-    ![Sähköinen raportti -dialogi-ikkunan valintaehtojen määrittäminen.](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Sähköinen raportti -dialogi-ikkunan valintaehtojen määrittäminen](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Tarkista aikaansaatu raportti.
 
@@ -1084,7 +1084,7 @@ Voit muokata konfiguroitavaa ER-ratkaisua siten, että se käyttää kehittämä
 
 Lisätty tietolähde antaa tietoja suoritettavan ER-muodon yhdistämismäärityksen tietuetunnuksesta.
 
-![Lisätty tietolähde ER-mallin määrityssuunnittelijaan.](./media/er-quick-start1-mapping3.png)
+![Lisätty tietolähde ER-mallin määrityssuunnittelijaan](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Tietolähteen lisääminen ER-muotomääritystietueen käyttämiseen
 
@@ -1119,7 +1119,7 @@ Jatka valitun mallimäärityksen muokkaamista niin, että käytössä olevan ER-
 
 Koska olet käyttänyt **FormatName**-kenttää, konfiguroitu mallikartoitus paljastaa nyt sellaisen ER-muodon nimen, joka kutsuu tätä mallimääritystä suorituksen aikana.
 
-![Tietomallikentän sitominen ER-mallikartoituksen suunnittelutoimintoon lisätyn tietolähteen tapaan.](./media/er-quick-start1-mapping4.png)
+![Tietomallikentän sitominen ER-mallikartoituksen suunnittelutoimintoon lisätyn tietolähteen tapaan](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>Mallin määrityksen rakenteen täydentäminen
 
@@ -1156,7 +1156,7 @@ Voit muokata konfiguroitavan ER-muotoa niin, että sen nimi näkyy sen raportin 
 
 Konfiguroitumuoto on muokattu siten, että sen nimi lisätään luodun raportin alatunnisteeseen käyttämällä **Alatunniste\\Merkkijono**-elementtiä.
 
-![Alatunnisteen muotoiluelementin lisääminen määritettyyn muotoon ER-toiminnon suunnittelussa.](./media/er-quick-start1-template-format-structure3.png)
+![Alatunnisteen muotoiluelementin lisääminen määritettyyn muotoon ER-toiminnon suunnittelussa](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>Suunnittele muoto loppuun
 
@@ -1178,7 +1178,7 @@ Tämän konfiguraation version 1.2 tila muutetaan **luonnoksesta** **valmiiksi**
 
 Huomaa, että luodun raportin alatunniste sisältää sen luonnissa käytetyn ER-muodon nimen.
 
-![Luotu raportti Excel-muodossa.](./media/er-quick-start1-report4.png)
+![Luotu raportti Excel-muodossa](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Muodon suorittaminen ER-muodosta
 
@@ -1199,7 +1199,7 @@ Huomaa, että luodun raportin alatunniste ei sisällä sen luonnissa käytetyn E
 3. Määritä **Tiedoston kohde** -pikavälilehdessä sen **raportti**-muotokomponentin **näyttö-** [kohde](er-destination-type-screen.md), joka on [lisätty](#AddFormatRootElement) määritetyn **kyselylomakeraportin** ER-muodon juurielementiksi.
 4. Määritä **PDF-muuntoasetukset**-pikavälilehdessä kohde, joka muuntaa raportin [PDF-muotoon](electronic-reporting-destinations.md#OutputConversionToPDF), joka käyttää **vaakasuuntaista** sivun suuntaa.
 
-![Mukautetun näyttökohteen määrittäminen ER-muodossa sähköisen raportoinnin kohdesivulla.](./media/er-quick-start1-destination.png)
+![Mukautetun näyttökohteen määrittäminen ER-muodossa sähköisen raportoinnin kohdesivulla](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Voit esikatsella sitä PDF-tiedostona suorittamalla sovelluksen muodon
 
@@ -1211,12 +1211,12 @@ Huomaa, että luodun raportin alatunniste ei sisällä sen luonnissa käytetyn E
 
     Huomaa, että **Kohteet**-pikavälilehden **tuloste**-kentän arvoksi on määritetty **Näyttö**. Jos haluat muuttaa konfiguroituja kohteita, valitse **Muuta**.
 
-    ![ER-raportin suorituksenaikainen valintaikkuna, jossa voit muuttaa konfiguroidun kohteen.](./media/er-quick-start1-run-settings.png)
+    ![ER-raportin suorituksenaikainen valintaikkuna, jossa voit muuttaa konfiguroidun kohteen](./media/er-quick-start1-run-settings.png)
 
 6. Suorita raportti valitsemalla **OK**.
 7. Tarkista luotu raportti PDF-muodossa.
 
-    ![Luodun raportin esikatselu näytöllä PDF-muodossa.](./media/er-quick-start1-preview-PDF.png)
+    ![Luodun raportin esikatselu näytöllä PDF-muodossa](./media/er-quick-start1-preview-PDF.png)
 
 ## <a name="additional-resources"></a><a name="References"></a>Lisäresurssit
 
@@ -1233,6 +1233,3 @@ Huomaa, että luodun raportin alatunniste ei sisällä sen luonnissa käytetyn E
 - [IF-funktio](er-functions-logical-if.md)
 - [ORDERBY-funktio](er-functions-list-orderby.md)
 - [SESSIONNOW-funktio](er-functions-datetime-sessionnow.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

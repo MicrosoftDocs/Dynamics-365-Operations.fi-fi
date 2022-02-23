@@ -2,8 +2,11 @@
 title: GETENUMVALUEBYNAME ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) GETENUMVALUEBYNAME-funktiota käytetään.
 author: NickSelin
+manager: kfend
 ms.date: 09/23/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03759852e5ceb13b79b0df4592bdcef76eb0a82865725c00df40b9cc5f786240
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29d7ec6498090ea47259303237c5a64a26e4926b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774434"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685928"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER-funktio
 
@@ -61,7 +64,7 @@ Poikkeusta ei heitetä, jos *Enum*-arvoa ei löydy *merkkijono*-arvona määrite
 
 Seuraavassa kuvassa on tietomallin **ReportDirection**-luettelointi. Huomaa, että luettelointiarvoille on määritetty otsikot.
 
-![Tieto mallin luetteloinnissa käytettävissä olevat arvot.](./media/ER-data-model-enumeration-values.PNG)
+![Tieto mallin luetteloinnissa käytettävissä olevat arvot](./media/ER-data-model-enumeration-values.PNG)
 
 Seuraavassa kuvassa on nämä tiedot:
 
@@ -69,7 +72,7 @@ Seuraavassa kuvassa on nämä tiedot:
 - `$IsArrivals`-lauseke on suunniteltu käyttämään mallin luettelointiin perustuvaa **$Direction**-tietolähdettä tämän toiminnon parametrina.
 - Tämän vertailulausekkeen arvo on **TOSI**.
 
-![Esimerkki tietomallin luetteloinnista.](./media/ER-data-model-enumeration-usage.PNG)
+![Esimerkki tietomallin luetteloinnista](./media/ER-data-model-enumeration-usage.PNG)
 
 ## <a name="example-2"></a>Esimerkki 2
 
@@ -77,14 +80,14 @@ Funktioiden `GETENUMVALUEBYNAME` ja [`LISTOFFIELDS`](er-functions-list-listoffie
 
 Seuraavassa kuvassa **TransType**-tietolähde lisätään mallin yhdistämismääritykseen. Tämä tietolähde viittaa **LedgerTransType**-sovellusluettelointiin.
 
-![Mallin yhdistämismäärityksen tietolähde, joka viittaa sovellusluettelointiin.](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![Mallin yhdistämismäärityksen tietolähde, joka viittaa sovellusluettelointiin](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 Seuraavassa kuvassa on **TransTypeList**-tietolähde, joka määritetään mallin yhdistämismäärityksessä. Tämä tietolähde määritetään **TransType**-sovellusluetteloinnin perusteella. `LISTOFFIELDS`-funktion avulla palautetaan kaikki luettelointiarvot kenttiä sisältävien tietueiden luettelona. Näin jokaisen luettelointiarvon tiedot tulevat näkyviin.
 
 > [!NOTE]
 > **EnumValue**-kenttä määritetään **TransTypeList**-tietolähdettä varten käyttämällä lauseketta `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`. Tämä kenttä palauttaa luettelointiarvon jokaiselle tämän luettelon tietueelle.
 
-![Valitun luetteloinnin kaikki luettelointiarvot tietueluettelona palauttavan mallin yhdistämismäärityksen tietolähde.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![Valitun luetteloinnin kaikki luettelointiarvot tietueluettelona palauttavan mallin yhdistämismäärityksen tietolähde](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 Seuraavassa kuvassa on **VendTrans**-tietolähde, joka määritetään mallin yhdistämismäärityksessä. Tämä tietolähde palauttaa toimittajan tapahtumatietueita **VendTrans**-sovellustaulukosta. Kunkin tapahtuman kirjanpitotyyppi määräytyy **TransType**-kentän arvon mukaan.
 
@@ -93,11 +96,11 @@ Seuraavassa kuvassa on **VendTrans**-tietolähde, joka määritetään mallin yh
 >
 > **TransTypeTitle**-kenttä on sidottu sellaisen tietomallin **LedgerType**-kenttään, joka mahdollistaa näiden tietojen käytön kaikissa ER-muodoissa, joissa tätä tietomallia käytetään tietolähteenä.
 
-![Toimittajatapahtumia palauttavan mallin yhdistämismäärityksen tietolähde.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![Toimittajatapahtumia palauttavan mallin yhdistämismäärityksen tietolähde](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 Seuraavassa kuvassa näkyy, miten voit käyttää [tietolähteen virheenkorjausta](er-debug-data-sources.md) määritetyn mallin yhdistämismäärityksen testaamiseen.
 
-![Määritetyn mallin yhdistämismärityksen testaaminen tietolähteen virheenkorjauksen avulla.](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![Määritetyn mallin yhdistämismärityksen testaaminen tietolähteen virheenkorjauksen avulla](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 Tietomallin **LedgerType** näyttää tapahtumatyyppien otsikkoja odotetulla tavalla.
 
@@ -114,6 +117,3 @@ Jos aiot käyttää tätä menetelmää suureen määrään tapahtumatietoja, si
 [FIRSTORNULL ER-funktio](er-functions-list-firstornull.md)
 
 [WHERE ER-funktio](er-functions-list-where.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,29 @@
 ---
 title: Käyttöomaisuuden integrointi
 description: Käyttöomaisuus voidaan integroida kirjanpitoon, varastonhallintaan, myyntireskontraan ja ostoreskontraan. Käyttöomaisuuden voi integroida myös ostotilauksiin.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e53d171ba0b9be7bbfffa25c27bd21fe036acee
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 1fb1348a3a3c47e5fd7df46d9ce4af3725d8896b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674772"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442752"
 ---
 # <a name="fixed-assets-integration"></a>Käyttöomaisuuden integrointi
 
@@ -28,7 +31,8 @@ ms.locfileid: "7674772"
 
 Käyttöomaisuus voidaan integroida kirjanpitoon, varastonhallintaan, myyntireskontraan ja ostoreskontraan. Käyttöomaisuuden voi integroida myös ostotilauksiin.
 
-## <a name="general-ledger"></a>Kirjanpito
+<a name="general-ledger"></a>Kirjanpito
+--------------
 
 Kirjanpidossa käyttöomaisuus esitetään yleensä arvon yhteenvetona useilla pääkirjanpitotileillä, joita tarvitaan tilinpäätöksissä. **Käyttöomaisuus**-sivulla voit kuitenkin luoda useita käyttöomaisuustietueita. Näihin tietueisiin voi sisältyä tietoja, kuten hankintahinta, poisto ja arvostus. Aina kun kirjaat käyttöomaisuustapahtuman, asianmukaiset päätilit päivitetään. Käyttöomaisuuden päätileillä näkyy aina käyttöomaisuuden päivitetty arvo.
 
@@ -91,6 +95,3 @@ Lisätietoja on ohjeaiheessa [Hankkia omaisuuseriä hankintojen kautta](acquire-
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

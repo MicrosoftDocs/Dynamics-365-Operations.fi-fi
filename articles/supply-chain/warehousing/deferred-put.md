@@ -1,24 +1,27 @@
 ---
 title: Varastotyön lykätty käsittely
 description: Tässä ohjeaiheessa käsitellään toimintoja, joiden avulla varastotyön lykätty käsittely on mahdollista Dynamics 365 Supply Chain Managementissa.
-author: Mirzaab
+author: josaw1
+manager: tfehr
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577861"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427411"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Varastotyön lykätty käsittely
 
@@ -28,7 +31,7 @@ Tässä ohjeaiheessa kuvataan toimintoja, joiden avulla varastotyön lykätty k�
 
 Lykätyn käsittely toiminnon avulla varastotyöntekijät jatkavat työskentelyä, kun hyllytystoimintoa käsitellään taustalla. Lykätty käsittely on kätevää, kun useita työrivejä on käsiteltävä ja työntekijä voi antaa työn käsittelyn toimia asynkronisesti. Se on hyödyllinen myös silloin, kun palvelimella voi olla ad-hoc-tai suunnittelemattomia lisäyksiä käsittelyaikaan, ja lisääntynyt käsittelyaika saattaa vaikuttaa käyttäjän tuottavuuteen.
 
-Taustakäsittely saavutetaan käyttämällä SysOperation-kehystä. Lisätietoja saat ohjeaiheesta [SysOperation-kehyksen yleiskatsaus](/dynamicsax-2012/developer/sysoperation-framework-overview).
+Taustakäsittely saavutetaan käyttämällä SysOperation-kehystä. Lisätietoja saat ohjeaiheesta [SysOperation-kehyksen yleiskatsaus](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Työn käsittelykäytäntöjen konfiguroiminen
 
@@ -107,9 +110,3 @@ On olemassa useita skenaarioita, joissa lykättyä hyllytystä ei käytetä, vai
 ## <a name="deleting-completed-tasks"></a>Poista suoritetut tehtävät
 
 Voit poistaa lykätyt hyllytyksen käsittelytehtävät, jotka on suoritettu, valitsemalla ne ja poistamalla ne sivulta.
-
-## <a name="additional-resources"></a>Lisäresurssit
-
-- [Manuaalisen varastosiirtotoiminnon lykätty käsittely](deferred-processing-manual-inventory-movement.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

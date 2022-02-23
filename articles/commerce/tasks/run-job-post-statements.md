@@ -2,24 +2,27 @@
 title: Määritä ja suorita työ laskelmien kirjaamiseksi
 description: Tässä menettelyssä kerrotaan, miten toistuva erätyö määritetään ja suoritetaan, kun valitulle myymälälle tai myymäläryhmälle kirjataan laskelmia.
 author: josaw1
+manager: AnnBe
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dfff9e4520659ac1a9d0f85dd0e091f9fa5e2528ff092b650296a47aef9ca7b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f89203850b302b769b22920fa5c42d2b0b877684
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765853"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412003"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Määritä ja suorita työ laskelmien kirjaamiseksi
 
@@ -31,9 +34,9 @@ Tässä menettelyssä kerrotaan, miten toistuva erätyö määritetään ja suor
 2. Napsauta Laskelmien kirjaaminen eräajona.
     * Valitse organisaatiohierarkia ja sitten organisaatiosolmujen puu. Valitse yksittäinen myymälä tai solmu. Valitse solmu, jos haluat luoda myymäläryhmän erätyön.  
     * Lisää valinta nuolen avulla.  
-3. Valitse Suorita taustalla -välilehti. ![Suorita taustalla.](../dev-itpro/media/runbackground.png "Suorita taustalla") 
+3. Valitse Suorita taustalla -välilehti. ![Suorita taustalla](../dev-itpro/media/runbackground.png "Suorita taustalla") 
 4. Valitse Eräkäsittely-valintaruutu tai poista sen valinta.
-![Eräkäsittely.](../dev-itpro/media/batchprocessing.png "Eräkäsittely & toistuvuus") 
+![Eräkäsittely](../dev-itpro/media/batchprocessing.png "Eräkäsittely & toistuvuus") 
 5. Valitse Toistuminen.
 6. Syötä päivämäärä Aloituspäivä-kenttään.
 7. Syötä Aloitusaika-kenttään aika.
@@ -41,6 +44,3 @@ Tässä menettelyssä kerrotaan, miten toistuva erätyö määritetään ja suor
 8. Valitse OK.
 9. Valitse OK.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

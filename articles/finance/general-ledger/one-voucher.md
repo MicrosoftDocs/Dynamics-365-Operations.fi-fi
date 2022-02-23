@@ -2,30 +2,32 @@
 title: Yksi tosite
 description: Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjauskansio tai toimittajan maksukirjauskansio) yksi tosite sallii useiden alareskontratapahtumien antamisen yhden tositteen kontekstissa.
 author: kweekley
+manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344055"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442824"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Mikä on yhden tositteen toiminto?
@@ -34,45 +36,44 @@ Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjaus
 
 - Määritä kirjauskansion nimi (**Kirjanpito** \> **Kirjauskansion asetukset** \> **Kirjauskansioiden nimet**) siten, että **Uusi tosite** -kentän valintana on **Vain yksi tositenumero**. Jokainen kirjauskansioon lisätty rivi sisällytetään nyt samaan tositteeseen. Tämän vuoksi tosite voidaan kirjata usean rivin tositteena, saman rivin tilinä/vastatilinä tai niiden yhdistelmänä.
 
-    [![Yksi rivi.](./media/same-line.png)](./media/same-line.png)
+    [![Yksi rivi](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Yhden tositteen määritelmä **ei** koske tapauksia, joissa kirjauskansion nimet on määritetty **vain yhdeksi tositenumeroksi** mutta käyttäjä kirjaa sitten tositteen, joka sisältää vain kirjanpitotilityyppejä. Tässä ohjeaiheessa yksi tosite tarkoittaa, että yhdessä tositteessa on enemmän kuin yksi toimittaja, asiakas, pankki, käyttöomaisuuserä tai projekti.
 
 - Syötä usean rivin tosite, jossa ei ole vastatiliä.
 
-    [![Useita rivejä sisältävä tosite.](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Useita rivejä sisältävä tosite](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Syötä tosite, jossa sekä tili että vastatili sisältävät alareskontran tilityypin, kuten **toimittaja**/**toimittaja**, **asiakas**/**asiakas**, **toimittaja**/**asiakas** tai **pankki**/**pankki**.
 
-    [![Alareskontran tosite.](./media/subledger.png)](./media/subledger.png)
+    [![Alareskontran tosite](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Yhden tositteen toiminnallisuuden ongelmat
 
-Yhden tositteen toiminto aiheuttaa ongelmia esimerkiksi tilityksen, arvonlisäveron laskennan, tapahtuman peruutuksen, alareskontran kirjanpitoon tehtävän täsmäytyksen ja raportoinnin aikana. (Lisätietoja tilityksen aikana mahdollisesti tapahtuvista varasto-otoista on esimerkiksi kohdassa [Yksi tosite useille asiakas- tai toimittajatietueille](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).) Jotta työ ja raportointi sujuu oikein, näille prosesseille ja raporteille on annettava tapahtuman tiedot. Vaikka jotkin skenaariot voivat yhä toimia oikein, useiden tapahtumien syöttäminen yhteen tositteeseen aiheuttaa usein ongelmia organisaation asetusten vuoksi.
+Yhden tositteen toiminto aiheuttaa ongelmia esimerkiksi tilityksen, arvonlisäveron laskennan, tapahtuman peruutuksen, alareskontran kirjanpitoon tehtävän täsmäytyksen ja raportoinnin aikana. (Lisätietoja tilityksen aikana mahdollisesti tapahtuvista varasto-otoista on esimerkiksi kohdassa [Yksi tosite useille asiakas- tai toimittajatietueille](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) Jotta työ ja raportointi sujuu oikein, näille prosesseille ja raporteille on annettava tapahtuman tiedot. Vaikka jotkin skenaariot voivat yhä toimia oikein, useiden tapahtumien syöttäminen yhteen tositteeseen aiheuttaa usein ongelmia organisaation asetusten vuoksi.
 
 Voit esimerkiksi kirjata seuraavan useita rivejä sisältävän tositteen.
 
-[![Esimerkki monirivitositteesta.](./media/example.png)](./media/example.png)
+[![Esimerkki](./media/example.png)](./media/example.png)
 
 Voit sitten luoda **Toimittajakohtaiset kulut** -raportin **Taloushallinnon tiedot** -työtilassa. Tässä raportissa kulutilin saldot ryhmitetään toimittajaryhmän ja sitten toimittajan mukaan. Raporttia luotaessa järjestelmä ei voi määrittää, mitkä toimittajaryhmät tai toimittajat aiheuttivat kulun 250,00. Koska tapahtuman tiedot puuttuvat, järjestelmä olettaa, että koko kulu 250,00 on tositteen ensimmäisen toimittajan aiheuttama. Tämän vuoksi Päätilin 600120 saldoon sisältyvä kulu 250,00 näytetään kyseisen toimittajaryhmän tai toimittajan kohdalla. On kuitenkin todennäköistä, että tositteen ensimmäinen toimittaja ei ole oikea toimittaja. Tämän vuoksi raportti on todennäköisesti virheellinen.
 
-[![Toimittajakohtaiset kulut -raportti.](./media/expenses.png)](./media/expenses.png)
+[![Kulut](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Yksi tosite jatkossa
 
-Yksi tosite -toimintoa käytettäessä mahdollisesti ilmenevien ongelmien vuoksi tämä toiminto lopulta poistetaan. Toimintoa ei kuitenkaan poisteta käytöstä kerralla, koska jotkin toiminnalliset aukot saattavat olla riippuvaisia tästä toiminnosta. Sen sijaan käytetään seuraavaa aikataulua:
+Aiemmin mainituista ongelmista johtuen yhden tositteen toiminnallisuus on vanhentunut. Toimintoa ei poisteta käytöstä kerralla, koska jotkin toiminnalliset aukot saattavat olla riippuvaisia tästä toiminnosta. Sen sijaan käytetään seuraavaa aikataulua:
 
-- **Kevään 2018 versio** – Tämä toiminto poistettiin käytöstä **Kirjanpitoparametrit**-sivun **Yleiset**-välilehden **Salli useita tapahtumia yhdessä tositteessa** -parametrilla. Voit ottaa toiminnon uudelleen käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa käsitellyn toiminnallisen aukon.
+- **Kevään 2018 versio** – Oletusarvoisesti toiminto poistetaan käytöstä **Kirjanpitoparametrit**-sivun **Yleiset**-välilehden **Salli useita tapahtumia yhdessä tositteessa** -parametrilla. Voit ottaa toiminnon käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa käsitellyn toiminnallisen aukon.
 
-    - Jos liiketoimintaskenaariosi ei vaadi Yksi tosite -toimintoa, on suositeltavaa, että jätät toiminnon pois käytöstä. Jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu, Microsoft ei korjaa myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä.
-    - On suositeltavaa lopettaa yhden tositteen käyttö integrointien yhteydessä, ellei jokin dokumentoiduista toiminnallisista aukoista edellytä toiminnon käyttöä.
+    - Jos asiakkailla on liiketoimintaskenaario, jossa ei tarvita yhden tositteen toiminnallisuutta, toimintoa ei kannata ottaa käyttöön. Microsoft ei korjaa myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä, jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu.
+    - Lopeta yhden tositteen käyttö integrointien yhteydessä, elleivät toiminnalliset aukot edellytä toiminnon käyttöä.
 
-- **Myöhemmät julkaisut** – Monet liiketoiminnan tarpeista voidaan toteuttaa vain käyttämällä yhtä tositetta. Microsoftin on varmistettava, että kaikki tunnistettuihin liiketoimintavaatimuksiin voidaan vastata järjestelmässä, kun toiminto vanhentuu. Siksi toiminta-aukkojen täyttämiseksi on ehkä lisättävä uusia toimintoja. Microsoft ei voi määrittää tiettyä ratkaisua, koska kukin toimintoaukko on erilainen, ja se on arvioitava liiketoimintavaatimusten perusteella. Joitakin toimintoaukkoja todennäköisesti korvataan ominaisuuksilla, jotka auttavat täyttämään tietyt liiketoimintavaatimukset. Muita aukkoja voidaan kuitenkin täyttää sallimalla kirjauskansion kirjaaminen samalla tavoin kuin silloin, kun käytetään yhtä tositetta, mutta järjestelmä voi tarvittaessa jäljittää yksityiskohtaisempia tietoja.
+- **Myöhemmät versiot** – Kaikki toiminnalliset aukot täytetään. **Kun toiminnalliset aukot on täytetty ja uudet ominaisuudet on toimitettu, kestää ainakin vuoden, ennen kuin yhden tositteen toiminto poistetaan pysyvästi käytöstä**, sillä asiakkailla ja riippumattomilla ohjelmistotoimittajilla on oltava riittävästi aikaa reagoida uuteen toimintoon. Heidän on ehkä esimerkiksi päivitettävä liiketoimintaprosessit, yksiköt ja integroinnit.
 
-Kun kaikki toiminta-aukot on täytetty, Microsoft ilmoittaa, että toiminto vanhentuu. Vanhentuminen tulee kuitenkin voimaan aikaisintaan vuoden kuluttua ilmoituksesta. Vaikka Microsoft ei voikaan antaa täsmällistä arviota Yksi tosite -toiminnon vanhentumisesta, kestää todennäköisesti vähintään kaksi vuotta ennen vanhentumista. Microsoftin käytäntö on jättää vähintään 12 kuukautta vanhentuneesta toiminnosta ilmoittamisen ja todellisen poiston väliin, jotta asiakkaat ja riippumattomat ohjelmistotoimittajat voivat reagoida muutokseen. Organisaatioiden on ehkä esimerkiksi päivitettävä liiketoimintaprosessit, yksiköt ja integroinnit.
-
-Yksi tosite- toiminnon vanhentuminen on tärkeä muutos, josta tiedotetaan paljon. Osana tätä viestintää Microsoft päivittää tämän aiheen, julkaisee blogiviestin Microsoft Dynamics 365 Finance -blogissa, päivittää "Poistetut tai vanhentuneet ominaisuudet" -aiheen, ilmoittaa muutoksesta asianmukaisissa Microsoftin tapahtumissa ja niin edelleen.
+> [!IMPORTANT]
+> Huomaa, että **Vain yksi tositenumero** -asetusta **ei** ole poistettu kirjauskansion nimen asetuksista. Tätä asetusta tuetaan edelleen, kun tosite sisältää vain kirjanpitotilityyppejä. Asiakkaiden on oltava huolellinen tätä asetusta käytettäessä, sillä tositetta ei kirjata, jos he käyttävät **Vain yksi tositenumero** -asetusta mutta kirjaavat useamman kuin yhden asiakkaan, toimittajan, pankin, käyttöomaisuuserän tai projektin. Asiakkaat voivat edelleen kirjata alareskontran tilityyppejä, kuten maksun yhdellä tositteella, joka sisältää **Toimittaja**/**pankki**-tilityyppejä.
 
 ## <a name="why-use-one-voucher"></a>Yhden tositteen käytön syitä
 
@@ -82,8 +83,8 @@ Asiakaspalautteen perusteella Microsoft on kääntänyt seuraavat skenaariot, jo
 
 Seuraavat skenaariot voidaan toteuttaa vain käyttämällä yhden tositteen toiminnolla. Jos organisaatiossa on jokin näistä skenaariosta, tositteessa on otettava käyttöön useiden tapahtumien kirjaaminen muuttamalla **Salli useita tapahtumia yhdessä tositteessa** -parametrin asetusta **Kirjanpitoparametrit**-sivulla. Nämä toiminnalliset aukot täytetään muilla toiminnoilla myöhemmissä versioissa.
 
-> [!NOTE]
-> [Kussakin seuraavassa skenaariossa **Salli useita tapahtumia yhdessä tositteessa** -kentän asetuksiksi on valittava Kyllä **Kirjanpidon parametrit** -sivun **Yleiset**-pikavälilehdessä.]
+> [!Note]
+> [Kunkin seuraavan skenaarion **Salli useita tapahtumia yhdessä tositteessa** -kentän arvoksi on määritettävä Kyllä **Yleistietoja**-pikavälilehdessä **Kirjanpidon parametrit** -sivulla.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Kirjaa yhteenvetolomakkeen toimittaja- tai asiakasmaksut pankkitilille
 
@@ -116,7 +117,15 @@ Tässä skenaariossa yhden tositteen asiakkaat ovat samoja, koska tapahtuma simu
 Jos hyvityksen kausittainen tehtävä suoritetaan myyntireskontramoduulista, se luo saldon siirtotapahtuman asiakkaalta toimittajalle. Tässä skenaariossa hyvitys asiakkaalle on tehtävä yhden tositteen toiminnolla.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Käyttöomaisuuden ylläpito: Poiston kertymä, käyttöomaisuuden jako, poiston laskeminen luovutuksen yhteydessä
-Versiosta 10.0.21 alkaen poiston kertymän, käyttöomaisuuden jaon ja poiston laskemisen käyttöomaisuustapahtumat luovutuksen yhteydessä luodaan käyttämällä eri tositenumeroita.
+Myös seuraavat käyttöomaisuustapahtumat luovat useita tapahtumia yhteen tositteeseen:
+
+- Käyttöomaisuudelle tehdään lisähankinta ja kertynyt poisto lasketaan.
+- Käyttöomaisuus jaetaan.
+- Parametri, jota käytetään luovutuksen poistossa, on käytössä. Käyttöomaisuus poistetaan.
+- Käyttöomaisuuden käyttöottopäivämäärä on ennen hankintapäivämäärää. Tämän vuoksi kirjataan poisto-oikaisu.
+
+> [!Note]
+> Varmista tapahtumia kirjattaessa, että tapahtumat kohdistetaan samaan käyttöomaisuuteen. Tositetta ei kirjata, jos siinä enemmän kuin yksi käyttöomaisuus, vaikka **Uusi tosite** -kentän asetuksena on Vain yksi tositenumero **Kirjauskansioiden nimet** -sivulla kirjanpidossa. Jos tositteessa on useampi kuin yksi käyttöomaisuus, sanoma **Tositetta kohden voi olla vain yksi käyttöomaisuustapahtuma** avautuu etkä voi kirjata tositetta.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Vekselit ja velkakirjat
 Vekselit ja velkakirjat edellyttävät yhden tositteen käyttöä, koska tapahtumat siirtävät asiakkaan tai toimittajan saldon yhdeltä myyntireskontran/ostoreskontran kirjanpitotililtä toiselle maksun tilan perusteella.
@@ -177,6 +186,3 @@ Jos myynti- tai ostoreskontran kirjanpitotiliin on tehtävä korjaus, oikaisu on
 ### <a name="the-system-allows-it"></a>Mahdollista järjestelmässä"
 
 Organisaatiot käyttävät usein yhden tositteen toiminnallisuutta vain, koska järjestelmä mahdollistaa sen käytön, vaikka toiminnallisuuden vaikutuksia ei tunneta.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja.
-author: jiwo
-ms.date: 10/07/2021
-ms.topic: overview
+author: aprilolson
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a77fe5e1970c617203706d9d629ac65e3a47909b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982402"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442886"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -66,13 +69,13 @@ Konsolidointi verkossa tukee esimerkiksi seuraavia konsolidointiskenaarioita:
 ## <a name="legal-entity-setup"></a>Yrityksen määritys
 Yritys on määritettävä ennen konsolidoinnin käsittelyä. Voit suorittaa konsolidoinnin niin monta kertaa kuin on tarpeellista ja kaikki tiedot muunnetaan lähdeyrityksen kirjanpitovaluutasta konsolidointiyritykselle määritettyyn valuuttaan. Niinpä jos seuraavassa organisaatiorakenteessa kaikkien pohjoisamerikkalaisten yritysten valuutta on ensin muutettava Yhdysvaltain dollareiksi (USD) ja sitten euroiksi (EUR), mikä on emoyrityksen valuutta, tarvitset ainakin kaksi konsolidointiyritystä.
 
-![Organisaatiorakenne.](./media/organizational-structure.png "Organisaatiorakenne")
+![Organisaatiorakenne](./media/organizational-structure.png "Organisaatiorakenne")
 
 Edellisessä organisaatiorakenteessa tarvitset yrityksen Pohjois-Amerikan konsolidointia varten, koska konsolidoinnit konsolidoivat aina lähdeyrityksen kirjanpitovaluutasta konsolidointiyrityksen valuutaksi. Jos esimerkissä kaikki yritykset sisällytetään yhteen konsolidointiin, meksikolainen tytäryhtiö muunnetaan Meksikon pesoista (MXN) euroiksi (EUR) eikä pesoista dollareiksi (USD) ja sitten euroiksi.
 
 Kun luot yrityksen, voit määrittää, käytetäänkö yritystä sekä konsolidointi- että eliminointiprosessiin tai vain toiseen prosessiin. Seuraavassa kuvassa yritystä käytetään kumpaankin prosessiin. Huomaa, ettet voi kirjata päivittäisiin kirjauskansioihin konsolidointiryrityksessä mutta voit kirjata ne eliminointiyrityksessä. Tämän vuoksi erillinen eliminointiyritys voi olla hyvä vaihtoehto.
 
-![Sekä konsolidointiin että eliminointiin käytetty yritys.](./media/sep-elimination-company.png "Sekä konsolidointiin että eliminointiin käytetty yritys")
+![Sekä konsolidointiin että eliminointiin käytetty yritys](./media/sep-elimination-company.png "Sekä konsolidointiin että eliminointiin käytetty yritys")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Päätilit ja konsolidointitiliryhmät
 Sinun on valittava, miten tilikartat konsolidoidaan. Sinulla on konsolidointiprosessin aikana kolme vaihtoehtoa päätilien konsolidointiin.
@@ -81,11 +84,11 @@ Ensimmäinen vaihtoehto lähdeyritysten päätilien käyttäminen. Siinä tapauk
 
 Toinen vaihtoehto on oletusarvoisen konsolidointilin määrittäminen **Päätilit**-sivulla. Tili yhdistetään sitten konsolidointitiliin. Tämä vaihtoehto voi olla hyödyllinen, jos tilikarttoja on useita tai yhdistäminen on tehtävä pääkonttorin määrittämään tilikarttaan.
 
-![Päätilit-sivulla määritetty konsolidointitili.](./media/main-accounts.png "Päätilit-sivulla määritetty konsolidointitili")
+![Päätilit-sivulla määritetty konsolidointitili](./media/main-accounts.png "Päätilit-sivulla määritetty konsolidointitili")
 
 Kolmas vaihtoehto on konsolidointitiliryhmien käyttäminen. Voit määrittää tarvittavan määrän konsolidointitiliryhmiä. Voit sitten yhdistää **Lisäkonsolidointitilit**-sivulla tilikartan päätilin ryhmän tarvitsemaan tiliin.
 
-![Yhdistäminen Lisäkonsolidointitilit-sivulla.](./media/additional-consolidation-accounts.png "Yhdistäminen Lisäkonsolidointitilit-sivulla")
+![Yhdistäminen Lisäkonsolidointitilit-sivulla](./media/additional-consolidation-accounts.png "Yhdistäminen Lisäkonsolidointitilit-sivulla")
 
 ## <a name="consolidating-online"></a>Konsolidointi verkossa
 Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Verkossa tapahtuva taloushallinnon konsolidointi](./consolidate-online.md).
@@ -97,7 +100,7 @@ Konsolidoinnin tarkasteluvaihtoehtoja on useita:
 - Tarkastele **Pääkirja**-luettelosivua konsolidointiyrityksessä.
 - Tarkastele **Konsolidoinnit**-sivun konsolidointiluettelossa saldoja, jotka on luotu päivämäärän mukaan kunkin lähdeyrityksen jokaiselle kaudelle.
 
-    ![Konsolidointitapahtumat Konsolidoinnit-sivulla.](./media/managing-consolidation-transactions.png "Konsolidointitapahtumat Konsolidoinnit-sivulla")
+    ![Konsolidointitapahtumat Konsolidoinnit-sivulla](./media/managing-consolidation-transactions.png "Konsolidointitapahtumat Konsolidoinnit-sivulla")
 
 Voit suorittaa konsolidoinnin uudelleen käsittelemällä sen. Vaihtoehtoisesti voit valita ensin **Poista tapahtumat** **Konsolidoinnit**-sivulla.
 Jos konsolidointitilin saldot eivät ole oikein, nämä saldot voidaan korjata käyttämällä **Lopetuskauden oikaisut** -sivua.
@@ -118,15 +121,15 @@ Eliminointiasetukset ovat **Konsolidoinnit**-moduulin **Asetukset**-alueelta. Ku
 
 Voit määrittää tarpeiden mukaisen päivämäärän, jolloin eliminointisääntö otetaan käyttöön, ja päivämäärän, jolloin se vanhenee. Jos haluat, että eliminointisääntö käytettävissä eliminoinnin ehdotusprosessissa, valitse **Aktiivinen**-asetukseksi **Kyllä**. Valitse kirjauskansion nimeksi **Eliminointi**-tyyppi.
 
-![Eliminointisäännön perusominaisuudet.](./media/ledger-elimination-rule-journal.png "Eliminointisäännön perusominaisuudet")
+![Eliminointisäännön perusominaisuudet](./media/ledger-elimination-rule-journal.png "Eliminointisäännön perusominaisuudet")
 
 Kun olet määritellyt perusominaisuudet, määritä todelliset käsittelysäännöt valitsemalla **Rivit**. Eliminointivaihtoehtoja on kaksi: voit eliminoida nettomuutossumman tai määrittää kiinteän summan.
 
-Valitse lähdetilit. Voit käyttää tähteä (\*) yleismerkkinä. Esimerkiksi **1\**valitse kaikki _* 1**-alkuiset tilit kohdistuksen tietolähteenä.
+Valitse lähdetilit. Voit käyttää tähteä (\*) yleismerkkinä. Esimerkiksi **1\*** valitse kaikki **1**-alkuiset tilit kohdistuksen tietolähteenä.
 
 Kun olet valinnut lähdetilin, käytä **Tilin määrittely** -kenttää määrittämään käytettävä tili kohdeyrityksestä. Valitse **Lähde**, jos haluat käyttää samaa, lähdetilissä määritettyä päätiliä. Jos valitset **Käyttäjän määrittämä**, sinun on määritettävä kohdetili.
 
-![Kirjanpidon eliminointisääntörivi -sivu.](./media/ledger-elimination-rule-line.png "Kirjanpidon eliminointisääntörivi -sivu")
+![Kirjanpidon eliminointisääntörivi -sivu](./media/ledger-elimination-rule-line.png "Kirjanpidon eliminointisääntörivi -sivu")
 
 **Dimension määrittely** -kenttä toimii samalla tavoin kuin **Tilin määrittely** -kenttä. Valitse **Lähde**, jos haluat käyttää samoja dimensioita kohde- ja lähdeyrityksessä. Jos valitset **Käyttäjän määrittämä**, sinun on määritettävä kohdeyrityksen dimensiot valitsemalla **Kohdedimensiot**. Valitse sitten lähdedimensiot ja taloushallinnon dimensiot sekä eliminoinnin lähteenä käytettävät arvot.
 
@@ -165,8 +168,7 @@ Asiakkaat, jotka käyttävät taloushallinnon raportointia taloushallinnon konso
 - **Sujuva valuutan muunto** – Kun Financessa on tehty muutamia asetuksia, voit muuntaa taloushallinnon raportoinnin raportin yhdeksi määritetyistä raportointivaluutoista. Voit lisäksi määrittää rajoittamattoman määrän raportointivaluuttoja.
 - **Eliminointien kirjaaminen lähteessä** – Voit luoda ja tulostaa eliminointiraportin eliminointitapahtumien tarkistamista varten. Voit sitten kirjat uudet eliminoinnit tavallisina konsernin sisäisinä tapahtumina. Voit käyttää eliminointiyritystä missä tahansa tapahtumassa, jota et halua yrityksiin.
 
-## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Financial Reportingin tuetut konsolidointiskenaariot
-
+## <a name="supported-consolidation-scenarios"></a>Tuetut konsolidointiskenaariot
 Taloushallinnan raportointi tukee esimerkiksi seuraavia konsolidointiskenaarioita:
 
 - Yksi- ja monitasoiset yritysten väliset konsolidoinnit
@@ -180,18 +182,3 @@ Taloushallinnan raportointi tukee esimerkiksi seuraavia konsolidointiskenaarioit
 
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).
-
-## <a name="performance-enhancement-for-large-consolidations"></a>Suurten konsolidointien suorituskyvyn parannus
-
-Ympäristöissä, joissa on useita kirjanpitotapahtumia, voidaan suorittaa hitaammin kuin on optimaalista. Voit korjata tämän ongelman asettamalla rinnakkaiskäsittelyn erille, jotka käyttävät käyttäjän määrittämiä päivämääriä. Varmista, että ratkaisu toimii suunnitellulla tavalla, lisäämällä konsolidointiin laajennuspiste päivämäärävälien säilön palauttamiseksi. Peruskäyttöönoton pitäisi sisältää yhden päivämäärävälin konsolidoinnin aloitus- ja päättymispäiville. Perustoteutuksen päivämäärävälit tarkistetaan, jotta varmistetaan, ettei niissä ole aukkoja tai päällekkäisyyksiä. Päivämäärävälien avulla luodaan rinnakkaisia eränippuja kullekin yritykselle.
-
-Voit mukauttaa päivämäärävälien määrää organisaation vaatimusten mukaisesti. Päivämäärävälien määrää mukauttamalla voit helpottaa testausta ja pienentää vaikutusta aiemmin luotuun koodiin, koska kohdistuslogiikkaa ei ole. Ainoat pakolliset uudet testit vahvistavat eränippujen luomisen, päivämäärävälit ja testin päivämäärävälien osajoukon sen varmistamiseksi, että eriä voi yhdistää lopulliseen erätehtävään. 
-
-Tämä ominaisuus parantaa kirjanpidon konsolidointiprosessia, kun prosessi suoritetaan erätyönä. Parannus parantaa kirjanpidon konsolidointiprosessin suorituskykyä jakamalla konsolidoinnin useisiin tehtäviin, jotka voidaan käsitellä rinnakkain. Konsolidoinnin suorituksen oletusmenetelmässä jokainen tehtävä käsittelee kahdeksan päivän mittaisen kauden kirjanpitoaktiviteetteja. On kuitenkin lisätty laajennuspiste, jonka avulla voit mukauttaa luotujen tehtävien määrää.
-
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
-
-- **Moduuli:** Kirjanpito
-- **Ominaisuuden nimi:** Suurten konsolidointien suorituskyvyn parannus
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

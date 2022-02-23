@@ -2,9 +2,11 @@
 title: Määritä työtiloja ja suodata niitä
 description: Tämä artikkeli sisältää työtilojen määrittämisen ja suodattamisen yleiskuvauksen.
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace, HcmBenefitWorkspace, BudgetPlanningWorkspace, BusinessProcessGenericWorkspace, RetailCatalogManagementWorkspace, RetailCategoryAndProductWorkspace, RetailChannelManagementWorkspace, HcmCompensationWorkspace, CAMCostAccountingLedgerAdminWorkspace, CostAdminWorkspace, CostAnalysisWorkspace, CAMCostControlWorkspace, CustomerCollectionManagerWorkspace, CustomerInvoiceWorkspace, CustPaymentWorkspace, DataManagementWorkspace, DataValidationWorkspace, ERWorkspace, LedgerPeriodCloseProjectWorkspace, AssetWorkspace, GeneralJournalEntryWorkspace, VendVendorPortalInvoiceWorkspace, BudgetTrackingWorkspace, ReqCreatePlanWorkspace, BusinessProcessGenericOwnerWorkspace, SelfHealingWorkspace, WHSOutboundWorkMonitoringWorkspace, WHSWavePlanningWorkspace, PayrollWorkspace, HcmWorkforceWorkspace, RetailDiscountPricingWorkspace, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, EcoResProductVariantMaintainWorkspace, JmgShopSupervisorWorkspace, ProjProjectManagementWorkspace, VendVendorPortalWorkspace, PurchOrderMaintainWorkspace, PurchOrderProcessReceiptsWorkspace, HcmRecruitmentWorkspace, EcoResProductMaintainWorkspace, FMClerkWorkspace, OpResLifecycleManagementWorkspace, RetailITWorkspace, RetailChannelOperationsWorkspace, RetailStoreManagementWorkspace, SalesOrderProcessingWorkspace, SalesReturnWorkspace, SystemAdministrationWorkspaceForm, VendVendorRequestForQuotationsWorkspace, VendVendorProfileManagementWorkspace, VendInvoiceWorkspace, VendPaymentWorkspace
 audience: Application User
@@ -15,19 +17,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96b61457f222836d50a75ed15305c3c1267600c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 10f7e790fdab3866958af1fa131d25735f69a58c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068731"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798447"
 ---
 # <a name="configure-and-filter-workspaces"></a>Määritä työtiloja ja suodata niitä
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tämä artikkeli sisältää työtilojen määrittämisen ja suodattamisen yleiskuvauksen.
 
@@ -35,11 +34,11 @@ Tämä artikkeli sisältää työtilojen määrittämisen ja suodattamisen yleis
 
 Voit muuttaa joidenkin työtilojen ulkoasua ja toimintaa päivittämällä koko työtilaa koskevat asetukset. Kun työtilaa voi määrittää, toimintoruudussa on painike, jonka avulla määrityksiä voi muuttaa. Esimerkiksi seuraavassa kuvassa painikkeen nimeksi on annettu **Määritä oma työtila**.
 
-[![configure-and-filter-workspaces.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 Kun napsautat painiketta, voit muokata avautuvassa valintaikkunassa työtilan ennalta määritettyjä asetuksia. Valintaikkunassa olevat erikoisasetukset vaihtelevat työtilan mukaan. Ne riippuvat työtilan erityisistä ohjausobjekteista ja liiketoimintatiedoista.
 
-[![configure-my-workspace.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Työtilan suodattaminen
 
@@ -49,11 +48,11 @@ Useiden työtilojen sisältöä voi suodattaa. Käytettävissä olevien ohjausob
 
 Voit suodattaa koko työtilan työtilakohtaisen suodattimen avulla. Työtilakohtainen suodatin löytyy työtilan vasemmasta yläkulmasta. Kun avattavasta luettelosta valitaan arvo, työtilan sisältö suodatetaan valinnan mukaan.
 
-[![workspace-filter.](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 Kun avaat suodattimen, esiin tulee useita vaihtoehtoja.
 
-[![workspace-filter-expanded.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Valitse asetus, jonka perusteella työtila suodatetaan.
 
@@ -61,9 +60,6 @@ Valitse asetus, jonka perusteella työtila suodatetaan.
 
 Jos työtilan yksittäisillä osilla on suodattimia, voit suodattaa kunkin osan erikseen. Seuraavassa kuvassa suodatin (kenttä, jossa lukee Suodatin) on esimerkki vapaatekstikentän suodattimesta.
 
-[![workspace-section-filters.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Suodata osan sisältö valitsemalla tai antamalla arvo samalla tavalla kuin työtilakohtaisessa suodattimessa.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

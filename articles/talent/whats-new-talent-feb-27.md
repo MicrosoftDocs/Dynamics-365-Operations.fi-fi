@@ -141,6 +141,3 @@ Voit päivittää aiemmin luodun mallin seuraavasti.
     9. Valitse **Määritystehtävä**-sivulla uusi sarake lähteeksi, jolla luodaan toinen HIERARCHYTYPENAME-määritys.
 
         [![Kartoitus](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Sijoita budjetoinnin vianmääritys
 description: Tässä artikkelissa on vastauksia kysymyksiin, joita sinulla saattaa olla, kun määrität toimen budjetointia. Se vastaa usein kysyttyyn kysymykseen, kuinka budjetin kustannustasoja, kompensaatioryhmiä ja kompensaatioruudukoita luodaan.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492a0798d1934b0fe1adf4f0546013f394beab06948f02f92358bae408e7748f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8211c5bd4514bffbd001f9930859f777dac7f0e1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726059"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017614"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Sijoita budjetoinnin vianmääritys
 
@@ -28,7 +30,8 @@ ms.locfileid: "6726059"
 
 Tässä artikkelissa on vastauksia kysymyksiin, joita sinulla saattaa olla, kun määrität toimen budjetointia. Se vastaa usein kysyttyyn kysymykseen, kuinka budjetin kustannustasoja, kompensaatioryhmiä ja kompensaatioruudukoita luodaan. 
 
-## <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Miksi ennusteen toimen sivua ei löydy henkilöstöhallinnosta?
+<a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Miksi ennusteen toimen sivua ei löydy henkilöstöhallinnosta?
+---------------------------------------------------------------
 
 Ennusteen toimet on siirretty budjetointiin.
 
@@ -60,6 +63,3 @@ Ennusteen toimen kustannustasorivin päivämäärien tulee olla seuraavien aluei
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

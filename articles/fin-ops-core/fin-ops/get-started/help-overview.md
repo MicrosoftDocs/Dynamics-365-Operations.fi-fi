@@ -1,50 +1,47 @@
 ---
-title: Ohjejärjestelmä (sisältää videon)
-description: Tämä ohjeaihe sisältää taloushallinnon ja toimintojen sovellusten ohjejärjestelmän yleiskatsauksen.
+title: Ohjejärjestelmä
+description: Tämä ohjeaihe sisältää Finance and Operations -sovellusten ohjejärjestelmän yleiskatsauksen.
 author: edupont04
-ms.date: 07/20/2021
-ms.topic: overview
+manager: AnnBe
+ms.date: 05/11/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.custom:
-- "16381"
-- intro-internal
+ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070498"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695136"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 Seuraavien sovellusten käyttäjät voivat käyttää tilannekohtaista ohjetta ja muuta samaan ohjejärjestelmään perustuvaa sisältöä:
 
-- Dynamics 365 Commerce
+- Microsoft Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
 
 Tuotekohtaista ohjetta käytetään kaikissa näissä sovelluksissa **Ohje**-ruudussa.
 
-![Ohje-ruutu.](./media/help-pane-ops-help.png)
+![Ohje-ruutu](./media/help-pane-ops-help.png)
 
 ## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
 
-Docs.microsoft.com -sivusto ([docs.microsoft.com/dynamics365/](/dynamics365/)) on edellä mainittujen sovellusten tuoteohjeistuksen oletuslähde. Sivustossa on seuraavat toiminnot:
+Docs.microsoft.com -sivusto ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) on edellä mainittujen sovellusten tuoteohjeistuksen oletuslähde. Sivustossa on seuraavat toiminnot:
 
 - **Uusin sisältö** – Microsoft voi luoda, toimittaa ja päivittää tuoteohjeistusta nopeasti ja joustavasti sivustossa. Niinpä käytössä onkin aina uusimmat tekniset tiedot.
 - **Asiantuntijoiden kirjoittama sisältö** – Sekä Microsoftin omat että ulkopuoliset yhteisön jäsenet voivat tuottaa sisältöä sivustoon.
@@ -53,20 +50,9 @@ Docs.microsoft.com-sivuston sisältöä voi etsiä millä tahansa hakukoneella. 
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
 
-Jos haluat tilata kaikkien docs.microsoft.com-sisältöön taloushallinnon ja toimintojen sovelluksissa tehtyjen päivitysten RSS-syötteen, käytä seuraavaa linkkiä:
+Saat kaikki docs.microsoft.com-sivuston sisällön päivitykset tilaamalla RSS (Really Simple Syndication) -syötteen. Tee tilaus avaamalla seuraava linkki:
 
-[RSS-syöte](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
-
-> [!NOTE]
-> RSS-syöte palauttaa luettelon 100 viimeksi päivitetystä aiheesta. Luetteloa ei ole järjestetty päivämäärän mukaan.  
-
-Voit vaihtoehtoisesti tilata RSS-syötteen sovelluksella:
-
-- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
-- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
-- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
-- [Toimitusketju](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
-- [Kyky](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
+[RSS-syöte](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="leave-us-feedback"></a>Jätä meille palautetta
 
@@ -76,7 +62,7 @@ Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 
 2. Kirjoita kommentit ja valitse sitten **Lähetä palautetta**.
 
-    ![Julkaise kommentti.](./media/feedback.png)
+    ![Julkaise kommentti](./media/feedback.png)
 
 > [!NOTE]
 > Jos haluat lähettää palautetta dokumentaatiosta, käytä kirjautumiseen GitHub-tiliä. Lisätietoja on kohdassa [GitHub-profiilin määritys ja hallinta](https://help.github.com/github/setting-up-and-managing-your-github-profile).
@@ -89,7 +75,7 @@ Voit osallistua dokumentaation tekemiseen ja muokkaukseen. Aloita valitsemalla a
 
 [Miten osallistua Microsoft Dynamics 365 -doumentaation tekemiseen](https://youtu.be/m5djioozRbg) -video (näytetty yllä) sisältyy Microsoft Dynamics 365:n YouTube-kanavaan.
 
-Lisätietoja on [Docs-sisällöntuottajan oppaassa](/contribute). Tämän oppaan julkaisija on docs.microsoft.com-sivuston luonut tiimi.
+Lisätietoja on [Docs-sisällöntuottajan oppaassa](https://docs.microsoft.com/contribute). Tämän oppaan julkaisija on docs.microsoft.com-sivuston luonut tiimi.
 
 > [!NOTE]
 > Tällä hetkellä hyväksymme sisältöä vain englanninkieliseen sisältöön.
@@ -100,11 +86,11 @@ Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti te
 
 Microsoft julkaisi tuoteversioiden tehtäväopaskirjastoa joulukuun 2017 Dynamics 365 for Finance and Operations -versioon saakka. Tämän ohjeaiheen kohdassa [Tehtäväoppaiden käyttö ohjeruudusta](#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
 
-![Tehtäväoppaan lukunäkymä.](./media/task-guide-ops.png)
+![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
 Aloita opastettu vuorovaikutteinen toiminta valitsemalla **Käynnistä tehtävän ohjaus** **Ohje**-ruudun alareunassa. Musta osoitin osoittaa, mihin siirrytään ensimmäiseksi. Noudata käyttöliittymän ohjeita ja anna tiedot ohjeiden mukaisesti.
 
-![Tehtäväoppaan vaiheen ohje.](./media/task-guide-step-1-ops.png)
+![Tehtäväoppaan vaiheen ohje](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
 > Tehtäväoppaan toiston aikana annettavat tiedot ovat todellisia. Jos olet tuotantoympäristössä, tiedot annetaan käytössä olevassa yrityksessä.
@@ -117,7 +103,7 @@ Joissakin kentissä on kuvauksia, joiden avulla käyttäjät pystyvät jatkamaan
 
 Ohjesisältö avautuu valitsemalla ensin **Ohje**-painike (**?**) ja sitten **Ohje**. Vaihtoehtoinen tapa avata ohje on näppäinyhdistelmä **Ctrl+Vaihto+?**. Kumpikin menetelmä avaa **Ohje**-ruudun. **Ohje**-ruudussa voi avata käsitteellisiä aiheita tai tehtäväoppaita, jotka liittyvät käytössä olevaan tuotteen alueeseen.
 
-![Ohje-ruutu.](./media/help-pane-ops-help.png)
+![Ohje-ruutu](./media/help-pane-ops-help.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Ohjeaiheiden käyttö ohjeruudusta
 
@@ -134,13 +120,13 @@ Tehtäväoppaita ei voi käyttää **Ohje**-ruudussa, ennen kuin järjestelmänv
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
-![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)
+![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
 On the **System parameters** page, follow these steps:
 
 1. **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the parameters form.
 
-    ![Connect to LCS.](./media/connect-to-lcs-crop-1024x365.png)
+    ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
@@ -148,7 +134,7 @@ On the **System parameters** page, follow these steps:
 
 Kun järjestelmänvalvoja on suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtäväoppaat**-välilehden, jossa näkyy on avointa sivua käsittelevät tehtäväoppaat. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla. Kun valitse tehtäväoppaan **Ohje**-ruudussa, vaiheittaiset ohjeet tulevat näkyviin **Ohje**-ruutuun ja voit toistaa tehtävän ohjauksen.
 
-![Tehtäväoppaan lukunäkymä.](./media/task-guide-ops.png)
+![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Missä Microsoft-kirjastojen käännetyt tehtäväoppaat sijaitsevat?
 
@@ -171,14 +157,10 @@ Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti 
 | Sivusto | kuvaus |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Tämä sivusto ylläpitää kaikkea Dynamics 365:n tuoteohjeistusta tai sisältää linkit ohjeistukseen. |
-| [Microsoft Learn](/learn/) | Sivusto on Microsoftin maksuton eLearning-sivusto. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Sivusto on Microsoftin maksuton eLearning-sivusto. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Sivuston on pilvipohjainen yhteistyötila, jota asiakkaat ja heidän kumppaninsa voivat käyttää projektien hallintaan ennen myyntiä sekä täytäntöönpanon ja toiminnan aikana. Siitä on apua käyttöönoton kaikissa vaiheissa. |
 | [Tuen blogi](https://aka.ms/AXSupportBlog) | Sivustossa on tukiryhmän julkaisemia vinkkejä. |
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Sivuston ylläpitää aiempien versioiden sisältöä. |
 | [Dynamics-yhteisö](https://community.dynamics.com/) | Sivusto ylläpitää blogeja, keskustelupalstoja ja videoita. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Sivusto sisältää arviointi- ja myyntitietoja. |
-
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Sivusto ylläpitää koulutusresursseja ja ladattavia raportteja. Lisäksi se on palvelupakettien omistajien ensisijainen tukisivusto. Joidenkin sivuston resurssien käyttö saattaa edellyttää palvelupakettia. |

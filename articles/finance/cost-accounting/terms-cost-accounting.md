@@ -2,13 +2,16 @@
 title: Kustannuslaskennan sanasto
 description: Tässä aiheessa määritetään kustannuslaskennassa käytettyjä keskeisiä termejä.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774374"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442899"
 ---
 # <a name="cost-accounting-terminology"></a>Kustannuslaskennan sanasto
 
@@ -124,11 +127,11 @@ Kustannuslaskenta tukee tietojen integrointia lähdejärjestelmistä tietoyhdist
 
 Useimmat lähdejärjestelmät voivat välittää tietoa, joka vastaa vähintään yhtä kustannuslaskennan tietolähdettä. Lähdejärjestelmien tiedot voidaan kohdistaa kustannuslaskennan tietolähteisiin määrittämällä tietopalvelu. Seuraavassa taulukossa luetellaan yhdistin- ja tietolähdekohtaisesti saatavilla olevat tietopalvelut.
 
-|  **Tietolähteet** |  **Tuodut tapahtumat -tietopalvelu** | **Dynamics 365 Financen tietoyhdistin**  | **Dynamics AX -tietoyhdistin**  |
+|  **Tietolähteet** |  **Tuodut tapahtumat -tietopalvelu** | **Dynamics 365 Financein tietoyhdistin**  | **Dynamics AX -tietoyhdistin**  |
 |---|---|---|---|
 | Kustannustason dimension jäsenet  |  Kyllä | Kyllä  | Kyllä  |
 |  Kustannusobjektin dimension jäsenet |  Kyllä | Kyllä  | Kyllä  |
-|  Tilastodimension jäsenet | Kyllä  | Ei  | Ei  |
+|  Tilastodimension jäsenet | Kyllä  | En  | En  |
 |  Kirjanpito | Kyllä  | Kyllä  | Kyllä  |
 |  Budjettiviennit  | Kyllä  | Kyllä  | Kyllä  |
 |  Tilastomittaukset | Kyllä  | Kyllä  | Kyllä  |
@@ -202,6 +205,3 @@ Laskelmat näkyvät esimiehille, jotka ovat vastuussa kustannusten hallinnasta. 
 Versioita käytetään eri tulosten simulointiin, tarkasteluun ja vertailuun. Oletusarvoisesti kaikkia toteutuneita kustannuksia tarkastellaan yhdessä perusversiossa, josta käytetään nimitystä *toteutunut*. Budjeteista ja laskelmista voit käsitellä niin monta versiota kuin tarvitset. Voit esimerkiksi tuoda budjetin tiedot alkuperäiseen versioon ja korjata budjettia uudessa versiossa. Voit luoda laskelmista useita versioita. Näihin eri versioihin voit luoda laskelmia käyttämällä erilaisia laskentasääntöjä, jota käytetään kustannusten kohdistamiseen.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

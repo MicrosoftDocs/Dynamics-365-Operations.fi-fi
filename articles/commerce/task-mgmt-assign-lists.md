@@ -2,29 +2,34 @@
 title: Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille
 description: Tässä ohjeaiheessa kerrotaan, miten tehtäväluettelot määritetään myymälöille tai työntekijöille Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730824"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412037"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten tehtäväluettelot määritetään myymälöille tai työntekijöille Microsoft Dynamics 365 Commerce -sovelluksessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Dynamics 365 Commerce -sovelluksen tehtävienhallinnan avulla voit määrittää tehtäväluettelon useille myymälöille tai työntekijöille tai myymälöiden ja työntekijöiden yhdistelmille. Esimerkiksi 20 myymälän aluepäällikkö voi haluta määrittää kaikille 20 myymälälle **Loma-ajan valmistelu** -tehtäväluettelon.
 
@@ -45,7 +50,7 @@ Voit aloittaa tehtäväluettelon määrittämisen seuraavasti.
 
 Seuraavassa kuvassa on esimerkki siitä, miten myymälät etsitään ja valitaan **Käynnistä prosessi** -valintaikkunassa.
 
-![Myymälöiden etsiminen ja valitseminen Käynnistä prosessi -valintaikkunassa.](media/HQ-Assign-Tasks-Lists.png)
+![Myymälöiden etsiminen ja valitseminen Käynnistä prosessi -valintaikkunassa](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>Tehtäväluetteloiden määrittäminen toistuviksi
 
@@ -62,7 +67,7 @@ Vähittäiskauppiailla on joskus toistuvia tehtäviä, kuten torstain sulkemisen
 
 Seuraavassa kuvassa on esimerkki siitä, miten taajuuden ehdot annetaan **Määritä toistuminen** -valintaikkunassa.
 
-![Taajuuden ehtojen antaminen Määritä toistuvuus -valintaikkunassa.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Taajuuden ehtojen antaminen Määritä toistuvuus -valintaikkunassa](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>Tehtäväluettelon tilan seuraaminen
 
@@ -87,6 +92,3 @@ Voit seurata kaikkien sinulle määritettyjen tehtävien tehtäväluettelon tila
 [Tehtäväluetteloiden luominen ja tehtävien lisääminen](task-mgmt-create-lists.md)
 
 [Tehtävien hallinta myyntipisteessä](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

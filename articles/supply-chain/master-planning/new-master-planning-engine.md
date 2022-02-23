@@ -2,13 +2,16 @@
 title: Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
 description: Tässä aiheessa on tietoja uudesta pääsuunnittelumoduulista eli suunnittelun optimoinnista ja siirtymisestä siihen nykyisestä moduulista.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728576"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645993"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
 
@@ -63,12 +66,8 @@ Tällä hetkellä suunnittelun optimointiin siirtymisen poikkeuksilla on merkity
 
 Kun tarvittavat toiminnot ovat käytettävissä, Microsoft antaa lisäaikaa poikkeuksen päättymiseen saakka. Ympäristön järjestelmänvalvojalla ilmoitetaan, kun tarvittavat toiminnot ovat käytettävissä ja lisäaika on alkanut.
 
-Seuraavassa vuokaaviossa on yhteenveto tämän ohjeaiheen tiedoista, jotta voit nopeasti selvittää, haluatko pyytää poikkeusta. Jos haluat pyytää poikkeusta, täytä ja lähetä [Suunnittelun optimointi -siirto ja poikkeuslomake](https://go.microsoft.com/fwlink/?linkid=2144962).
-
-![Poikkeuskaavio.](media/exception-diagram.png "Poikkeuskaavio")
-
 > [!NOTE]
-> Voit pyytää poikkeusta vain vuokraajille, jotka sisältävät tai sisällyttävät tuotantoympäristön– ei vain vuokralaisia, joilla on vain eri ympäristöjä. Jos suunnittelun optimoinnin poikkeusvirhe on poistettava käytöstä IaaS (infrastruktuuri palveluna) -eristysympäristössä, suorita [eristysympäristöissä](#faq-sandbox) oleva SQL-kysely.
+> Voit pyytää poikkeusta vain tuotantoympäristöjen, ei eristysympäristöjen osalta. Jos suunnittelun optimoinnin poikkeusvirhe on poistettava käytöstä IaaS (infrastruktuuri palveluna) -eristysympäristössä, suorita [eristysympäristöissä](#faq-sandbox) oleva SQL-kysely.
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 
@@ -117,6 +116,3 @@ Käytössä on versio 10.0.16 tai sitä uudempi versio ja seuraava virhesanoma a
 > Aloita täyttämällä seuraava kyselylomake ja pyydä tarvittaessa poikkeus suunnittelun optimointiin siirtymisessä.
 
 **Vastaus:** Ei, pääsuunnittelua ei ole estetty. Pääsuunnitteluajo onnistui ja tuloksia voi käyttää tavalliseen tapaan. Tämän virhesanoman avautuminen voidaan kuitenkin estää tulevissa pääsuunnitteluajoissa joko siirtymällä heti suunnittelun optimointiin tai pyytämällä poikkeusta käyttämällä virhesanomassa olevaa linkkiä.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

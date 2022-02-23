@@ -1,10 +1,12 @@
 ---
 title: Ylläpitokierrokset
 description: Tässä ohjeaiheessa kerrotaan ylläpitokierroksista resurssien hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740716"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018543"
 ---
 # <a name="maintenance-rounds"></a>Ylläpitokierrokset
 
@@ -80,7 +82,7 @@ ms.locfileid: "6740716"
 
 Alla oleva kuva osoittaa esimerkin huoltokierroksesta, joka sisältää kolme käyttöomaisuuserää.
 
-![Kuva 1.](media/13-preventive-maintenance.png)
+![Kuva 1](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Ajoita ylläpitokierroksia
@@ -106,14 +108,11 @@ Kun olet määrittänyt kunnossapitokierroksen, voit ajoittaa kaikki huoltokierr
 
 Alla olevat kaksi kuvitusta näyttävät työn aikataulutuksen **Ajoita ylläpitokierroksia** -valintaikkunassa ja huoltoaikataulu rivit, jotka on luotu **Kaikki ylläpitoaikataulut** -kohdassa kyseisen ajoitustyön perusteella.
 
-![Kuva 2.](media/14-preventive-maintenance.png)
+![Kuva 2](media/14-preventive-maintenance.png)
 
-![Kuva 3.](media/15-preventive-maintenance.png)
+![Kuva 3](media/15-preventive-maintenance.png)
 
 - Kun työtilaukset luodaan manuaalisesti toimittajan takuun kattamille resursseille, näyttöön tulee valintaikkuna, jonka avulla käyttäjä saa tietää takuun. Työtilauksen luonti voidaan sitten peruuttaa. Takuusuhdetta koskeva tarkistus jätetään pois automaattisesti luoduissa työtilauksissa.  
 - Voit määrittää eräajon **Suorita taustalla** -pikavälilehdessä, jolloin kierrokset ajoitetaan säännöllisin väliajoin.  
 - Jos kierros sisältyy useisiin työtilauspooleihin (lisätietoja on kohdassa [Työtilauspoolit](../work-orders/work-order-pools.md)), kullekin poolille näytetään yksi tietue kohdassa **Avaa ylläpitoaikataulupoolit**. Tämä tehdään työtilauspoolien suodatusasetusten optimoimiseksi.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

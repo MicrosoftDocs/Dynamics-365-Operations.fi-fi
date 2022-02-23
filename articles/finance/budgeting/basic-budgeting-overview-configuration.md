@@ -1,36 +1,38 @@
 ---
 title: Budjetoinnin yhteenveto
 description: Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 Financen Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
-author: panolte
-ms.date: 04/29/2021
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 01/11/2018
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "60113"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: panolte
+ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e881a878265062dc5ce8cec68a45237711f385d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986507"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442780"
 ---
-# <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus 
+# <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
 Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 Financen Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 
-## <a name="overview"></a>Yleiskuvaus
+<a name="overview"></a>Yleiskuvaus
+--------
 
 Yrityksen hyväksyttyä budjettia ylläpidetään tiedostossa, joka tunnetaan nimellä *budjettitapahtuma*. Budjetin rekisterin merkintäasiakirjan rivejä kutsutaan *budjettitilin* tapahtumiksi, ja ne sisältävät taloushallinnon dimensiotiedot, päivämäärät ja summat hyväksytystä budjetista. Budjettirekisterin tapahtuma-asiakirja integroidaan taloushallinnon perusraportteihin ja kyselysivuihin, joissa kirjanpidon summia verrataan budjettisummiin. 
 
@@ -38,7 +40,7 @@ Budjettitapahtumia voi luoda monella eri tavalla:
 
 -   Syötä tiedoston tiedot manuaalisesti **Budjettitapahtumat**-sivulla.
 -   Käytä Microsoft Excel -mallia, jonka voit avata napsauttamalla **Avaa Excelissä** -painiketta **Budjettitapahtumat**-sivulla.
--   Tuo budjettitapahtumat Tietojen hallinnan **Budjettitiliviennit** -tietoyksikön kautta. Tämän menetelmän käyttämistä ja **Joukkoon perustuva käsittely** -parametrin käyttöönottamista kannattaa harkita, kun useita budjettitilivientejä on tuotava järjestelmään.
+-   Tuo budjettitapahtumat Tietojen hallinnan **Budjettitiliviennit** -tietoyksikön kautta. Sinun tulisi harkita tämän menetelmän käyttämistä ja **Joukkoon perustuva** -**käsittelyn** parametrin käyttöön ottamista, kun joudut tuomaan useita budjettitilin merkintöjä järjestelmään.
 -   Jos yritys käyttää Budjettisuunnittelu-toimintoa budjettitietojen valmisteluun, voit käyttää **Luo budjettitapahtuma** -kausittaista prosessia.
 
 Budjettirekisterin tapahtumaa pidetään valmiina kun budjettisaldot on päivitetty. Valitse **Budjettirekisterimerkinnät** -sivulla **Päivitä budjettisaldot** valitulle budjettirekisterin tapahtumalle tai useille tapahtumille. Kun olet päivittänyt budjettisaldot, budjettitapahtuman tila muuttuu arvoksi **Valmis**. Valmista budjettitapahtumaa ei voida avata uudelleen muokkausta varten. Näin ollen, jos budjettitietoja täytyy korjata, sinun on luotava uusi budjettitapahtuma sen sijaan, että korjaisit valmiin budjettitapahtuman tietoja.
@@ -86,6 +88,3 @@ Budjettisuunnittelutoimintoa käyttävä yritys voi luoda ja käyttää *budjett
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

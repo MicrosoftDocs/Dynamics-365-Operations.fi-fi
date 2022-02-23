@@ -2,23 +2,26 @@
 title: Kirjauskansioviennin luonti mallin avulla
 description: Kirjatut kirjauskansion tositteet voidaan tallentaa tositemalleina. Ne voidaan kohdistaa uuteen kirjauskansion tositteeseen.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c015bbba6784f511ac51802ea005d2114e703861370e33350cff62b6005d630c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 360df29e6349fd4d42d6d14af646e929b73943bd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442843"
 ---
 # <a name="create-a-journal-entry-using-template"></a>Kirjauskansioviennin luonti mallin avulla
 
@@ -60,6 +63,3 @@ Kirjatut kirjauskansion tositteet voidaan tallentaa tositemalleina. Ne voidaan k
 29. Syötä **Summa**-kenttään tositteeseen kohdistettava summa. **Summa**-kenttä näytetään vain, jos tositemallin tyyppi on Prosentti.  
 30. Valitse **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,19 +2,28 @@
 title: Kaksoiskirjoituksen määrittämisen ohjeet
 description: Tässä ohjeaiheessa kuvataan skenaariot, joita tuetaan kaksoiskirjoituksen asetuksia varten.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061601"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744850"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Kaksoiskirjoituksen määrittämisen ohjeet
 
@@ -22,11 +31,11 @@ ms.locfileid: "8061601"
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+Voit määrittää kaksoiskirjoitusyhteyden Finance and Operations -ympäristön ja Dataverse -ympäristön välille.
 
-Voit määrittää kaksoiskirjoitusyhteyden taloushallinnon ja toimintojen ympäristön ja Dataverse-ympäristön välille.
-
-+ **Taloushallinnon ja toimintojen ympäristö** muodostaa **taloushallinnon ja toimintojen sovellusten** (kuten Microsoft Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin, Dynamics 365 Commercen ja Dynamics 365 Human Resourcesin) taustaympäristön.
++ **Finance and Operations -ympäristö** tarjoaa **Finance and Operations -sovelluksille** (esimerkiksi Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce ja Dynamics 365 Human Resources) taustaympäristön.
 + **Dataverse-ympäristö** on **asiakkaiden aktivointisovellusten** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing ja Dynamics 365 Project Service Automation) pohjaympäristö.
 
 > [!IMPORTANT]
@@ -34,92 +43,92 @@ Voit määrittää kaksoiskirjoitusyhteyden taloushallinnon ja toimintojen ympä
 
 Asennusmekanismi vaihtelee tilauksen ja ympäristön mukaan:
 
-+ Muutamissa taloushallinnon ja toimintojen sovellusten ilmentymissä kaksoiskirjoitusyhteyden asetus alkaa Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa. Jos sinulla on Microsoft Power Platformin käyttöoikeus, saat uuden Dataverse -ympäristön, jos vuokraajalla ei ole sellaista.
-+ Muutamissa aiemmin luoduissa taloushallinnon ja toimintojen sovellusten ilmentymissä kaksoiskirjoitusyhteyden asetus alkaa taloushallinnon ja toimintojen ympäristössä.
++ Muutamissa Finance and Operations -sovellusten ilmentymissä kaksoiskirjoitusyhteyden asetus alkaa Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa. Jos sinulla on Microsoft Power Platformin käyttöoikeus, saat uuden Dataverse -ympäristön, jos vuokraajalla ei ole sellaista.
++ Finance and Operations -sovellusten olemassa olevissa ilmentymissä kaksoiskirjoitusyhteyden asetus alkaa Finance and Operations -ympäristössä.
 
-Ennen kaksoiskirjoituksen aloittamista entiteetissä voidaan tehdä ensimmäinen synkronointi, joka käsittelee taloushallinnon ja toimintojen sovellusten ja asiakkaan osallistamissovellusten kummankin puolen aiemmin luodut tiedot. Voit ohittaa ensimmäisen synkronoinnin, jos tietoja ei tarvitse synkronoida ympäristöjen välillä.
+Ennen kaksoiskirjoituksen aloittamista entiteetissä voidaan tehdä ensimmäinen synkronointi, joka käsittelee Finance and Operations -sovellusten ja asiakkaan osallistamissovellusten kummankin puolen aiemmin luodut tiedot. Voit ohittaa ensimmäisen synkronoinnin, jos tietoja ei tarvitse synkronoida ympäristöjen välillä.
 
 Ensimmäisessä synkronoinnissa aiemmin luodut tiedot voivaan kopioida sovelluksesta toiseen kaksisuuntaisesti. Määritysskenaarioita on useita, ja ne määräytyvät käytössä jo olevien ympäristöjen ja niissä olevien tietotyyppien perusteella.
 
 Seuraavia asetusskenaarioita tuetaan:
 
-+ [Uusi taloushallinnon ja toimintojen sovelluksen esiintymä ja uusi asiakkaan osallistamissovelluksen esiintymä](#new-new)
-+ [Uusi taloushallinnon ja toimintojen sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä](#new-existing)
-+ [Uusi taloushallinnon ja toimintojen sovelluksen esiintymä, jossa on tietoja, ja uusi asiakkaan osallistamissovelluksen esiintymä](#new-data-new)
-+ [Uusi taloushallinnon ja toimintojen sovelluksen esiintymä, jossa on tietoja, ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä](#new-data-existing)
-+ [Aiemmin luotu taloushallinnon ja toimintojen sovelluksen esiintymä ja uusi asiakkaan osallistamissovelluksen esiintymä](#existing-new)
-+ [Aiemmin luotu taloushallinnon ja toimintojen sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä](#existing-existing)
++ [Uusi Finance and Operations -sovelluksen esiintymä ja uusi asiakkaan osallistamisovelluksen esiintymä](#new-new)
++ [Uusi Finance and Operations -sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamisovelluksen esiintymä](#new-existing)
++ [Uusi Finance and Operations -sovelluksen esiintymä, jolla on tietoja, ja uusi asiakkaan osallistamissovelluksen esiintymä](#new-data-new)
++ [Uusi Finance and Operations -sovelluksen esiintymä, jossa on tietoja, ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä](#new-data-existing)
++ [Aiemmin luotu Finance and Operations -sovelluksen esiintymä ja uusi asiakkaan osallistamisovelluksen esiintymä](#existing-new)
++ [Aiemmin luotu Finance and Operations -sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamisovelluksen esiintymä](#existing-existing)
 
-## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>Uusi taloushallinnon ja toimintojen sovelluksen esiintymä ja uusi asiakkaan osallistamissovelluksen esiintymä
+## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>Uusi Finance and Operations -sovelluksen esiintymä ja uusi asiakkaan osallistamisovelluksen esiintymä
 
-Jos haluat määrittää kaksoiskirjoitusyhteyden taloushallinnon ja toimintojen sovelluksen uuden esiintymä (jossa ei ole tietoja) ja asiakkaan osallistamissovelluksen esiintymän välille, noudata kohdan [Kaksoiskirjoituksen määritys Lifecycle Services -sovelluksesta](lcs-setup.md) ohjeita. Kun yhteyden määritys on valmis, seuraavat toiminnot tapahtuvat automaattisesti:
+Jos haluat määrittää kaksoiskirjoitusyhteyden Finance and Operations -sovelluksen uuden esiintymä (jossa ei ole tietoja) ja asiakkaan osallistamissovelluksen esiintymän välille, noudata kohdan [Kaksoiskirjoituksen määritys Lifecycle Services -sovelluksesta](lcs-setup.md) ohjeita. Kun yhteyden määritys on valmis, seuraavat toiminnot tapahtuvat automaattisesti:
 
-- Uusi, tyhjä taloushallinnon ja toimintojen ympäristö valmistellaan.
+- Uusi, tyhjä Finance and Operations -ympäristö valmistellaan.
 - Valmistellaan uusi, tyhjä asiakkaan osallistamissovelluksen esiintymä, johon on asennettu ensisijainen CRM-ratkaisu.
 - Kaksoiskirjoitusyhteys muodostetaan DAT-yritystiedoille.
 - Taulukartat otetaan käyttöön reaaliaikaista synkronointia varten.
 
 Molemmat ympäristöt ovat nyt valmiita reaaliaikaisten tietojen synkronointiin.
 
-## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>Uusi taloushallinnon ja toimintojen sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä
+## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>Uusi Finance and Operations -sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamisovelluksen esiintymä
 
-Jos haluat määrittää kaksoiskirjoitusyhteyden taloushallinnon ja toimintojen sovelluksen uuden esiintymän (jossa ei ole tietoja) ja aiemmin luodun asiakkaan osallistamissovelluksen esiintymän välille, noudata kohdan [Kaksoiskirjoituksen määritys Lifecycle Services -sovelluksesta](lcs-setup.md) ohjeita. Kun yhteyden määritys on valmis, seuraavat toiminnot tapahtuvat automaattisesti:
+Jos haluat määrittää kaksoiskirjoitusyhteyden Finance and Operations -sovelluksen uuden esiintymän (jossa ei ole tietoja) ja asiakkaan osallistamissovelluksen aiemmin luodun esiintymän välille, noudata kohdan [Kaksoiskirjoituksen määritys Lifecycle Services -sovelluksesta](lcs-setup.md) ohjeita. Kun yhteyden määritys on valmis, seuraavat toiminnot tapahtuvat automaattisesti:
 
-- Uusi, tyhjä taloushallinnon ja toimintojen ympäristö valmistellaan.
+- Uusi, tyhjä Finance and Operations -ympäristö valmistellaan.
 - Kaksoiskirjoitusyhteys muodostetaan DAT-yritystiedoille.
 - Taulukartat otetaan käyttöön reaaliaikaista synkronointia varten.
 
 Molemmat ympäristöt ovat nyt valmiita reaaliaikaisten tietojen synkronointiin.
 
-Voit synkronoida olemassa olevat Dataverse-tiedot taloushallinnon ja toimintojen sovellukseen seuraavasti.
+Voit synkronoida olemassa olevat Dataverse -tiedot Finance and Operations -sovellukseen seuraavasti.
 
-1. Luo uusi yritys taloushallinnon ja toimintojen sovelluksessa.
+1. Luo Finance and Operations -sovellukseen uusi yritys.
 2. Lisää yritys kaksoiskirjoitusyhteyden asetuksiin.
 3. [Käynnistä](bootstrap-company-data.md) Dataverse -tiedot käyttämällä kolmen kirjaimen ISO (International Organization for Standardization) -yrityskoodia.
 4. Suorita **Alkuperäinen synkronointi** -toiminto tauluille, joiden tiedot haluat synkronoida.
 
 Esimerkkejä linkeistä ja vaihtoehtoinen lähestymistapa on jäljempänä tässä aiheessa olevassa [Esimerkissä](#example).
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Uusi taloushallinnon ja toimintojen sovelluksen esiintymä, jossa on tietoja, ja uusi asiakkaan osallistamissovelluksen esiintymä
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Uusi Finance and Operations -sovelluksen esiintymä, jossa on tietoja, ja uusi asiakkaan osallistamissovelluksen esiintymä
 
-Jos haluat määrittää kaksoiskirjoitusyhteyden taloushallinnon ja toimintojen sovelluksen uuden esiintymän (jossa on tietoja) ja asiakkaan osallistamissovelluksen uuden esiintymän välille, seuraa ohjeita, jotka ovat tämän ohjeaiheen osassa [Uusi taloushallinnon ja toimintojen sovelluksen esiintymä ja uusi asiakkaan osallistamissovelluksen esiintymä](#new-new). Kun yhteyden määritys on valmis, voit synkronoida tiedot asiakkaan osallistamissovelluksen kanssa noudattamalla seuraavia ohjeita.
+Jos haluat määrittää kaksoiskirjoitusyhteyden Finance and Operations -sovelluksen uuden esiintymän ja asiakkaan osallistamissovelluksen uuden esiintymän välille, seuraa ohjeita, jotka tämän ohjeaiheen osassa [Uusi Finance and Operations -sovelluksen esiintymä ja uusi asiakkaan osallistamissovelluksen esiintymä](#new-new). Kun yhteyden määritys on valmis, voit synkronoida tiedot asiakkaan osallistamissovelluksen kanssa noudattamalla seuraavia ohjeita.
 
-1. Avaa taloushallinnon ja toimintojen sovellus LCS-sivulla, kirjaudu sisään ja siirry kohtaan **Tiedonhallinta \> Kaksoiskirjoitus**.
+1. Avaa Finance and Operations -sovellus LCS-sivulla, kirjaudu sisään ja siirry kohtaan **Tiedonhallinta \> Kaksoiskirjoitus**.
 2. Suorita **Alkuperäinen synkronointi** -toiminto tauluille, joiden tiedot haluat synkronoida.
 
 Esimerkkejä linkeistä ja vaihtoehtoinen lähestymistapa on osassa [Esimerkki](#example).
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Uusi taloushallinnon ja toimintojen sovelluksen esiintymä, jossa on tietoja, ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Uusi Finance and Operations -sovelluksen esiintymä, jossa on tietoja, ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä
 
-Jos haluat määrittää kaksoiskirjoitusyhteyden taloushallinnon ja toimintojen sovelluksen uudenesiintymän (jossa on tietoja) ja asiakkaan osallistamissovelluksen aiemmin luodun esiintymän välille, seuraa ohjeita, jotka ovat tämän ohjeaiheen osassa [Uusi taloushallinnon ja toimintojen sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä](#new-existing). Kun yhteyden määritys on valmis, voit synkronoida tiedot asiakkaan osallistamissovelluksen kanssa noudattamalla seuraavia ohjeita.
+Jos haluat määrittää kaksoiskirjoitusyhteyden Finance and Operations -sovelluksen uuden esiintymän ja asiakkaan aiemmin luodun osallistamissovelluksen esiintymän välille, noudata ohjeita, jotka ovat tämän ohjeaiheen osassa [Uusi Finance and Operations -sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä](#new-existing). Kun yhteyden määritys on valmis, voit synkronoida tiedot asiakkaan osallistamissovelluksen kanssa noudattamalla seuraavia ohjeita.
 
-1. Avaa taloushallinnon ja toimintojen sovellus LCS-sivulla, kirjaudu sisään ja siirry kohtaan **Tiedonhallinta \> Kaksoiskirjoitus**.
+1. Avaa Finance and Operations -sovellus LCS-sivulla, kirjaudu sisään ja siirry kohtaan **Tiedonhallinta \> Kaksoiskirjoitus**.
 2. Suorita **Alkuperäinen synkronointi** -toiminto tauluille, joiden tiedot haluat synkronoida.
 
-Voit synkronoida olemassa olevat Dataverse-tiedot taloushallinnon ja toimintojen sovellukseen seuraavasti.
+Voit synkronoida olemassa olevat Dataverse -tiedot Finance and Operations -sovellukseen seuraavasti.
 
-1. Luo uusi yritys taloushallinnon ja toimintojen sovelluksessa.
+1. Luo Finance and Operations -sovellukseen uusi yritys.
 2. Lisää yritys kaksoiskirjoitusyhteyden asetuksiin.
 3. [Käynnistä](bootstrap-company-data.md) Dataverse -tiedot käyttämällä kolmen kirjaimen ISO (International Organization for Standardization) -yrityskoodia.
 4. Suorita **Alkuperäinen synkronointi** -toiminto tauluille, joiden tiedot haluat synkronoida.
 
 Esimerkkejä linkeistä ja vaihtoehtoinen lähestymistapa on osassa [Esimerkki](#example).
 
-## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>Aiemmin luotu taloushallinnon ja toimintojen sovelluksen esiintymä ja uusi asiakkaan osallistamissovelluksen esiintymä
+## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>Aiemmin luotu Finance and Operations -sovelluksen esiintymä ja uusi asiakkaan osallistamisovelluksen esiintymä
 
-Kaksoiskirjoitusyhteyden määrittäminen aiemmin luodun sovelluksen aiemmin luodun esiintymän ja asiakkaan osallistamissovelluksen uuden esiintymän välille taloushallinnon ja toimintojen ympäristössä.
+Kaksoiskirjoitusyhteyden määrittäminen Finance and Operations -sovelluksen aiemmin luodun esiintymän ja asiakkaan osallistamissovelluksen uuden esiintymän välille Finance and Operation -ympäristössä.
 
-1. [Määritä yhteys taloushallinnon ja toimintojen sovelluksesta ](enable-dual-write.md).
+1. [Yhteyden määrittäminen Finance and Operations -sovelluksessa](enable-dual-write.md).
 2. Suorita **Alkuperäinen synkronointi** -toiminto tauluille, joiden tiedot haluat synkronoida.
 
 Esimerkkejä linkeistä ja vaihtoehtoinen lähestymistapa on osassa [Esimerkki](#example).
 
-## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>Aiemmin luotu taloushallinnon ja toimintojen sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamissovelluksen esiintymä
+## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>Aiemmin luotu Finance and Operations -sovelluksen esiintymä ja aiemmin luotu asiakkaan osallistamisovelluksen esiintymä
 
-Kaksoiskirjoitusyhteyden määrittäminen aiemmin luodun sovelluksen aiemmin luodun esiintymän ja asiakkaan osallistamissovelluksen aiemmin luodun esiintymän välille taloushallinnon ja toimintojen ympäristössä.
+Kaksoiskirjoitusyhteyden määrittäminen Finance and Operations -sovelluksen aiemmin luodun esiintymän ja asiakkaan osallistamissovelluksen aiemmin luodun esiintymän välille Finance and Operation -ympäristössä.
 
-1. [Määritä yhteys taloushallinnon ja toimintojen sovelluksesta ](enable-dual-write.md).
-2. Jos haluat synkronoida olemassa olevat Dataverse-tiedot taloushallinnon ja toimintojen sovellukseen, [käynnistä](bootstrap-company-data.md) Dataverse-tiedot käyttämällä kolmen kirjaimen ISO-yrityskoodia.
+1. [Yhteyden määrittäminen Finance and Operations -sovelluksessa](enable-dual-write.md).
+2. Jos haluat synkronoida olemassa olevat Dataverse -tiedot Finance and Operations -sovellukseen, [käynnistä](bootstrap-company-data.md) Dataverse -tiedot käyttämällä kolmen kirjaimen ISO-yrityskoodia.
 3. Suorita **Alkuperäinen synkronointi** -toiminto tauluille, joiden tiedot haluat synkronoida.
 
 Esimerkkejä linkeistä ja vaihtoehtoinen lähestymistapa on osassa [Esimerkki](#example).
@@ -129,6 +138,3 @@ Esimerkkejä linkeistä ja vaihtoehtoinen lähestymistapa on osassa [Esimerkki](
 Esimerkkiin voi tutustua kohdassa [Asiakkaiden V3 ottaminen käyttöön – yhteyshenkilöiden taulun yhdistämismääritys](enable-entity-map.md#enable-table-map)
 
 Lisätietoja vaihtoehtoisesta tavasta, joka perustuu kunkin entiteetin tietomääriin, kun niissä on suoritettava ensimmäinen synkronointi, on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

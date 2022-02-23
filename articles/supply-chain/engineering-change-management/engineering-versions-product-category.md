@@ -2,23 +2,26 @@
 title: Suunnitteluversiot ja suunnittelun tuoteluokat
 description: Tässä aiheessa käsitellään suunnitteluversiota koskevia tietoja. Suunnitteluversioilla voidaan varmistaa, että tuotteen eri tilat ja sen tiedot pysyvät ajan tasalla ja selkeinä ja että ne voidaan visualisoida järjestelmässä.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572886"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4427520"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Suunnitteluversiot ja suunnittelun tuoteluokat
 
@@ -48,8 +51,7 @@ Suunnittelutuotteita käytettäessä kullakin tuotteella on ainakin yksi suunnit
 - Tuotteen luonut ja sen omistava suunnitteluyritys (lisätietoja on kohdassa [Suunnitteluyritykset ja tietojen omistussäännöt](engineering-org-data-ownership-rules.md))
 - Liittyvät suunnitteluasiakirjat, kuten kokoonpano-opas, käyttöohjeet, kuvat ja linkit
 - Suunnittelumääritteet (lisätietoja on kohdassa [Suunnittelumääritteet ja suunnittelumääritteiden haku](engineering-attributes-and-search.md).)
-- Tekninen suunnittelutuotteiden tuoterakenne
-- Prosessivalmistuksen tuotteiden mallit
+- Suunnittelun tuoterakenteet
 - Suunnittelureitit
 
 *Suunnittelun muutostilauksella* voidaan päivittää nämä tiedot aiemmin luodussa versiossa tai luoda uusi versio. (Lisätietoja kohdassa [Suunnittelutuotteiden muutostenhallinta](engineering-change-management.md).) Jos luot tuotteen uuden version, järjestelmä kopioi kaikki suunnitteluun liittyvät tiedot uuteen versioon. Tietoja voi sitten muokata kyseisessä uudessa versiossa. Tällä tavoin voidaan seurata tiettyjä kunkin peräkkäisen version tietoja voidaan seurata. Voit vertailla peräkkäisten suunnitteluversioiden eroja suunnittelun muutostilauksen avulla, sillä se sisältää kaikki muutokset ilmaisevat muutostyypit.
@@ -111,11 +113,9 @@ Määritä seuraavat kentät suunnittelun tuoteluokan **Tiedot**-pikavalikossa.
 | Kenttä | kuvaus |
 |---|---|
 | Tuotetyyppi | Valitse, koskeeko luokka tuotteita vai palveluita. |
-| Tuotantolaji | Tämä kenttä on näkyvissä vain, kun olet ottanut [kaavan muutoksen hallinnan](manage-formula-changes.md) käyttöön järjestelmässä. Valitse tuotannon tyyppi, jota tämä tekninen tuoteluokka koskee:<ul><li>**Suunnittelunimike** – Tämän suunnitteluluokan avulla voit tehdä kaavan muutoksen hallinnan suunnittelunimikkeille. Suunnittelunimikkeissä käytetään kaavoja. Ne muistuttavat kaavanimikkeitä, mutta niitä käytetään vain oheistuotteiden ja sivutuotteiden, ei valmiiden tuotteiden tuottamiseen. Kaavaa käytetään prosessivalmistuksen aikana.</li><li>**Tuoterakenne** – Tämän suunnitteluluokan avulla voit hallita suunnittelutuotteita, jotka eivät käytä kaavoja ja jotka tavallisesti (mutta eivät välttämättä) sisältävät tuoterakenteita.</li><li>**Kaava** – Tämän suunnitteluluokan avulla voit tehdä kaavan muutoksen hallinnan valmiille tuotteille. Näillä nimikkeillä on kaava, mutta ei tuoterakennetta. Kaavaa käytetään prosessivalmistuksen aikana.</li></ul> |
-| Todellinen paino | Tämä vaihtoehto on näkyvissä vain, kun olet ottanut [kaavan muutoksen hallinnan](manage-formula-changes.md) käyttöön järjestelmässä. Se on käytettävissä vain, kun **tuotantotyyppi**-kentän arvoksi on määritetty *Suunnittelunimike* tai *Kaava*. Valitse tämä vaihtoehto *Kyllä*, jos käytät tätä suunnitteluluokkaa nimikkeiden hallintaan, jotka edellyttävät todellisen painon tukea. |
-| Versioiden seuranta tapahtumissa | Valitse, leimataanko tuotteen versio kaikkiin tapahtumiin (logistinen vaikutus). Jos versiota esimerkiksi seurataan tapahtumissa, kussakin myyntitilauksessa näkyy, mikä tuotteen versio myyntiin kyseisessä myyntitilauksessa. Jos tapahtumia ei seurata tapahtumissa, myyntitilauksissa ei näy, mikä versio myytiin. Niissä näkyy sen sijaan aina uusin versio.<ul><li>Jos kyseisenä asetuksena on *Kyllä*, tuotteelle luodaan päätuote ja tuotteen kukin versio on variantti, joka käyttää *version* tuotedimensiota. **Tuotteen alatyyppi** -kentän asetuksena on automaattisesti *Päätuote* ja **Tuotedimensioryhmä**-kentässä on valittava tuotedimensioryhmä, jossa *version dimensio* on aktiivinen. Vain ne tuotedimensioryhmät, jossa *versio* on aktiivinen dimensio, näytetään. Voit luoda uusia tuotedimensioryhmiä valitsemalla **Muokkaa**-painikkeen (kynäsymboli).</li><li>Jos tähän asetukseen on määritetty *Ei*, *version* tuotedimensiota ei käytetä. Voit sitten valita, luodaanko muita dimensioita käyttävä tuote tai päätuote.</li></ul><p>Tätä asetusta käytetään usein tuotteissa, joissa versioiden kustannusten välillä on ero, tai tuotteissa, joissa käytetään erilaisia ehtoja suhteessa asiakkaaseen. Tämän vuoksi on tärkeää ilmaista, mitä versiota käytetään kussakin tapahtumassa.</p> |
+| Versioiden seuranta tapahtumissa | Valitse, leimataanko tuotteen versio kaikkiin tapahtumiin (logistinen vaikutus). Jos versiota esimerkiksi seurataan tapahtumissa, kussakin myyntitilauksessa näkyy, mikä tuotteen versio myyntiin kyseisessä myyntitilauksessa. Jos tapahtumia ei seurata tapahtumissa, myyntitilauksissa ei näy, mikä versio myytiin. Niissä näkyy sen sijaan aina uusin versio.<ul><li>Jos kyseisenä asetuksena on *Kyllä*, tuotteelle luodaan päätuote ja tuotteen kukin versio on variantti, joka käyttää *version* tuotedimensiota. **Tuotteen alatyyppi** -kentän asetuksena on automaattisesti *Päätuote* ja valittavassa tuotedimensioryhmässä on oltava aktiivinen *version* dimensio. Vain ne tuotedimensioryhmät, jossa *versio* on aktiivinen dimensio, näytetään. Voit luoda uusia tuotedimensioryhmiä valitsemalla **Muokkaa**-painikkeen (kynäsymboli).</li><li>Jos tähän asetukseen on määritetty *Ei*, *version* tuotedimensiota ei käytetä. Voit sitten valita, luodaanko muita dimensioita käyttävä tuote tai päätuote.</li></ul><p>Tätä asetusta käytetään usein tuotteissa, joissa versioiden kustannusten välillä on ero, tai tuotteissa, joissa käytetään erilaisia ehtoja suhteessa asiakkaaseen. Tämän vuoksi on tärkeää ilmaista, mitä versiota käytetään kussakin tapahtumassa.</p> |
 | Tuotteen alatyyppi | Valitse, sisältääkö luokka tuotteita vai päätuotteita. Päätuotteissa käytetään tuotedimensioita.
-| Tuotedimensioryhmä | **Version seuranta tapahtumissa** -asetuksella voidaan valita tuotteen dimensioryhmä. Jos version seuranta tapahtumissa on määritetty, tuotedimensioryhmät, joissa käytetään *version* dimensioita, näytetään. Muussa tapauksessa vain ne tuotedimensioryhmät, joissa *versio* ei ole aktiivinen dimensio, näytetään. |
+| Tuotedimensioryhmä | **Version seuranta tapahtumissa** -asetuksella voidaan valita tuotteen alatyyppi. Jos version seuranta tapahtumissa on määritetty, tuotedimensioryhmät, joissa käytetään *version* dimensioita, näytetään. Muussa tapauksessa vain ne tuotedimensioryhmät, joissa *versio* ei ole aktiivinen dimensio, näytetään. |
 | Tuotteen elinkaaren tila luotaessa | Määritä oletusarvoinen tuotteen elinkaaren tila, joka suunnitelmatuotteella on, kun se luodaan ensimmäisen kerran. Lisätietoja on kohdassa [Tuotteen elinkaaren tilat ja tapahtumat](product-lifecycle-state-transactions.md). |
 | Versionumerosääntö | Valitse luokkaa koskeva versionumerosääntö:<ul><li>**Manuaalinen** – valitse kunkin uuden version versionumero.</li><li>**Automaattinen** – Järjestelmä määrittää versionumeron määritetyn muodon perusteella. Käytä muodon määrittämisestä numeromerkkiä (\#) ilmaisemaan numeron ja muut merkit, jotka ilmaisevat vakioarvon. Jos muodosti määritetään esimerkiksi *V-\#\#*, ensimmäinen versio on V-01, toinen versio on V-02 ja niin edelleen.</li><li>**Luettelo** – järjestelmä hakee seuraavan numeron määritettyjen mukautettujen arvojen esimääritetystä luettelosta.</li></ul> |
 | Pakota voimassaolo | Valitse, onko suunnitteluversioiden voimassaolopäivämäärien oltava peräkkäisiä tai voiko niiden välillä olla aukkoja ja päällekkäisyyksiä. Tämä asetus vaikuttaa tapaan, jolla kunkin sellaisen suunnitteluversion **Voimassaolo alkaa**- ja **Voimassaolo päättyy** -kenttää käytetään, jota luokka koskee.<ul><li>Jos tämän asetuksen arvo on *Kyllä*, **Voimassaolo alkaa** -arvo on määritettävä kullekin versiolle eikä versioiden välillä saa olla päällekkäisyyksiä tai aukkoja. Kun suunnitteluversion päivämääräalue yhdistetään suoraan edelliseen ja seuraavaan suunnitteluversioon, jos sellaiset ovat olemassa. Tässä skenaariossa käytetään aina uusinta versiota eikä vanhoja versioita enää käytetä.</li><li>Jos tämän vaihtoehdon asetuksena on **Ei**, suunnitteluversioiden voimassaolon alkamispäivämääräkentillä ei ole rajoituksia ja sekä päällekkäisyydet ja aukot sallitaan. Tässä skenaariossa useita versioita voi olla aktiivisena samanaikaisesti ja mitä tahansa aktiivista versiota voi käyttää.</li></ul><p>Tämä vaihtoehto vaikuttaa myös tuoterakenteisiin ja reitteihin, jotka on yhdistetty tuoteversioon. Lisätietoja on jäljempänä tämän aiheen kohdassa [Tuoterakenteiden ja reittien yhdistäminen suunnitteluversioihin](#boms-routes).</p> |
@@ -142,10 +142,7 @@ Määritä seuraavat kentät jokaiselle ruudukkoon lisättävälle riville.
 
 ### <a name="readiness-policy-fasttab"></a>Valmiuskäytäntö-pikavälilehti
 
-Valitse **Tuotteen valmiuskäytäntö** -kentän avulla valmiuskäytäntö, jota tulisi soveltaa tämän suunnitteluluokan perusteella luotuihin tuotteisiin. Lisätietoja on kohdassa [Tuotteen valmius](product-readiness.md).
-
-> [!NOTE]
-> **Tuotteen valmiuskäytäntö** -kenttä toimii hieman eri tavalla, jos olet ottanut järjestelmän *Tuotteen valmiustarkistus* -ominaisuuden käyttöön. (Tämän toiminnon avulla voit ottaa käyttöön valmiuskäytännöt vakiomuotoisiin \[ei-suunnittelu\]-tuotteisiin). Lisätietoja on kohdassa [Vakio- ja suunnittelutuotteiden valmiuskäytäntöjen määrittäminen](product-readiness.md#assign-policy).
+**Tuotteen valmiuskäytäntö** -kentässä valitaan tähän luokkaan kuuluvien tuotteiden valmiuskäytäntö. Lisätietoja on kohdassa [Tuotteen valmius](product-readiness.md).
 
 ### <a name="release-policy-fasttab"></a>Vapautuskäytäntö-pikavälilehti
 
@@ -165,6 +162,3 @@ Suunnittelun tuoterakenteet ja reitit luodaan suunnitteluversiosta, jossa niitä
 Tuotteissa, joissa käytetään *version* tuotedimensiota (yhdessä tapahtumien logistisen vaikutuksen kanssa), versio lisätään myös tuoterakenteisiin ja reitteihin. Tämä toiminta auttaa erottamaan peräkkäisten versioiden tuoterakenteet ja reitit **Pakotettu voimassaolo** -asetuksesta riippumatta.
 
 Tuotteissa, joissa ei käytetä *version* tuotedimensiota (ilman tapahtumien logistista vaikutusta), versiota ei lisätä tuoterakenteisiin tai reitteihin. Niinpä peräkkäisten tuoterakenteiden ja reittien välillä ei ole eroa. Tässä tapauksessa **Pakotettu voimassaolo** -asetukseksi kannattaa määrittää *Kyllä*. Tällä tavoin voit estää päällekkäiset suunnitteluversiot ja voit myös aktivoida uuden version tuoterakenteen ja reitin ilman, että edellisen version tuoterakenteen ja reitin aktivointi olisi ensin poistettava. Jos **Pakotettu voimassaolo** -asetuksena on *Kyllä*, siinä tapauksessa vanhojen versioiden tuoterakenteiden ja reittien aktivointi on poistettava manuaalisesti ennen uusimman version aktivointia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

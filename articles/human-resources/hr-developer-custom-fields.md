@@ -2,12 +2,15 @@
 title: Mukautetut kentät
 description: Voit lisätä mukautettuja kenttiä Dynamics 365 Human Resourcesin sivuille.
 author: andreabichsel
+manager: AnnBe
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,32 +18,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91e905f530b88bb568290550be4cc677633189b1
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 583e29d9b0bae34ffc2f519bb775b9e099682fe0
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069551"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529551"
 ---
 # <a name="custom-fields"></a>Mukautetut kentät
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
+Voit lisätä mukautettuja kenttiä Dynamics 365 Human Resourcesin sivuille. Lisätietoja mukautettujen kenttien luonnista on kohdassa [Mukautettujen kenttien luonti ja käyttö](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Useimmat Common Data Service -yksiköt tukevat mukautettuja kenttiä. Täydellinen Common Data Service -entiteettien luettelo on kohdassa [Common Data Service -entiteetit](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
-
-
-Voit lisätä mukautettuja kenttiä Dynamics 365 Human Resourcesin sivuille. Lisätietoja mukautettujen kenttien luonnista on kohdassa [Mukautettujen kenttien luonti ja käyttö](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
-
-Useimmat Dataverse-taulukot tukevat mukautettuja kenttiä. Täydellinen Dataverse-taulukoiden luettelo on kohdassa [Dataverse-taulukot](./hr-developer-entities.md). 
-
-Varmista, että otat käyttöön luomasi mukautetut kentät, jotta voit käyttää niitä Dataversessä. Lisätietoja on kohdassa [Mukautettujen kenttien paljastaminen tietoyksiköihin](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+Varmista, että otat käyttöön luomasi mukautetut kentät, jotta voit käyttää niitä Common Data Servicessä. Lisätietoja on kohdassa [Mukautettujen kenttien paljastaminen tietoyksiköihin](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Dataverse-taulut](./hr-developer-entities.md)</br>
-[Mukautettujen kenttien luominen ja käsitteleminen](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
-[Mukautettujen kenttien tuominen tietoyksiköiden nähtäville](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Common Data Service -yksiköt](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Mukautettujen kenttien luominen ja käsitteleminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Mukautettujen kenttien tuominen tietoyksiköiden nähtäville](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)

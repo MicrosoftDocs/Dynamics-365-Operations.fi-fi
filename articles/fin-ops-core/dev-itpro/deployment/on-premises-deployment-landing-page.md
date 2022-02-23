@@ -2,26 +2,26 @@
 title: Paikallisen käyttöönoton aloitussivu – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön.
 author: sericks007
-ms.date: 07/01/2021
+manager: AnnBe
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "55651"
-- intro-internal
+ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54d236b7bca3e4529d5fff3ef71a2679b785a1a5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712565"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679341"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
@@ -33,21 +33,18 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Paikallinen käyttöönotto – yleiskatsaus](on-premises-overview.md)
 - [Paikallisten käyttöönottojen suunnittelu ja valmistelu](plan-onprem-deployment.md)
 - [Paikallisten käyttöönottojen järjestelmävaatimukset](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Microsoft Dynamics 365 Finance + Operations (on-premises) tuettu ohjelmisto](onprem-compatibility.md)
 - [Laitteiston kokovaatimukset paikallisissa ympäristöissä](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Osta Finance and Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Pilvipalvelun ja paikallisten ominaisuuksien vertailu](../../fin-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Perehdytys
 - [Paikallisten Lifecycle Services (LCS) -projektien määrittäminen](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)](setup-deploy-on-premises-pu41.md)
-- [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update ‑päivitykset 12–40)](setup-deploy-on-premises-pu12.md)
+- [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 12 ja uudemmat)](setup-deploy-on-premises-pu12.md)
 - [Verkkotulostimien asentaminen paikallisiin ympäristöihin](../analytics/install-network-printer-onprem.md)
 - [SQL Server Reporting Servicesin määrittäminen paikallisissa käyttöönotoissa](../analytics/configure-ssrs-on-premises.md)
-- [Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä](develop-deploy-custom-models-on-premises.md)
+- [Mukautettujen mallien kehittäminen ja käyttöönottaminen paikallisissa ympäristöissä](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Paikallinen käyttöönoton käyttäminen
-- [SQL Server Reporting Services (SSRS) -solmujen korkean käytettävyyden konfigurointi](onprem-SSRSHA.md)
 - [Asiakirjanhallinnan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md)
 - [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Asiakirjan luonti, julkaiseminen ja tulostaminen paikallisissa ympäristöissä](../analytics/printing-capabilities-on-premises.md)
@@ -59,10 +56,10 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Saman AD FS -esiintymän käyttäminen useissa ympäristöissä](onprem-reuseadfs.md)
 
 ## <a name="commerce"></a>Kaupankäynti
-- [Commerce-ominaisuudet, jotka ovat käytettävissä paikallisissa käyttöönotoissa](../../../commerce/retail-onprem.md)
+- [Commerce-ominaisuudet, jotka ovat käytettävissä paikallisissa käyttöönotoissa](../../../retail/retail-onprem.md)
 - [Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä](deploy-retail-onprem.md)
-- [Modern POS:n (MPOS) määrittäminen, asettaminen ja aktivoiminen](../../../commerce/retail-modern-pos-device-activation.md)
-- [Commerce Scale Unitin määrittäminen ja asentaminen](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Modern POS:n (MPOS) määrittäminen, asettaminen ja aktivoiminen](../../../retail/retail-modern-pos-device-activation.md)
+- [Commerce Scale Unitin määrittäminen ja asentaminen](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Päivitä
 - [Paikallisten ympäristöjen paikallinen päivitysprosessi](../migration-upgrade/on-prem-upgrade.md)
@@ -75,6 +72,3 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Finance and Operationsin poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md)
 - [Ohjelmiston elinkaarikäytäntö ja paikalliset versiot](../migration-upgrade/on-prem-version-update-policy.md)
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

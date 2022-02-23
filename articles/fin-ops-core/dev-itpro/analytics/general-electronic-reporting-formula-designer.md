@@ -2,9 +2,11 @@
 title: Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 description: Tässä ohjeaiheessa on tietoja siitä, miten käyttää kaavasuunnittelijaa sähköisessä raportoinnissa (ER).
 author: NickSelin
+manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eec63fb1782c5afed0320eb841b6bfc92af31a691731ef6bac5d00ed442c0dcd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d96fe041fd0ffb292909c1e724068efebe0184b9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777401"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682646"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
@@ -58,11 +60,11 @@ ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muunt
 
 Seuraavassa kuvassa esitellään tämäntyyppisen lausekkeen rakenne. Tässä esimerkissä lauseke pyöristää **Intrastat.AmountMST**-kentän arvon Intrastat-taulussa kahteen desimaaliin ja palauttaa sitten pyöristetyn arvon.
 
-[![Tietoja sitova lauseke.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Tietoja sitova lauseke](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 Seuraavassa kuvassa esitellään, miten tämän tyyppistä lauseketta voidaan käyttää. Tässä esimerkissä suunnitellun lausekkeen tulos täytetään **Veroraportointimalli**-tietomallin **Transaction.InvoicedAmount**-komponentilla.
 
-[![Tietojen sitovaa lauseketta käytetään.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Tietojen sitovaa lauseketta käytetään](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 Suorituksen aikana suunniteltu kaava, `ROUND (Intrastat.AmountMST, 2)` pyöristää kunkin Intrasat-taulun tietueen **AmountMST**-kentän arvon kahteen desimaaliin. Sen jälkeen pyöristetty arvo annetaan **Veroilmoitus**-tietomallin **Transaction.InvoicedAmount**-komponentissa.
 
@@ -72,17 +74,17 @@ ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muoto
 
 Seuraavassa kuvassa esitellään tämäntyyppisen muotoilun rakenne. Tässä esimerkissä **TrimmedString**-muunnos lyhentää *Merkkijono*-tyyppiset tiedot ja poistamalla ylimääräiset välilyönnit alusta ja lopusta. Se palauttaa sitten lyhennetyn merkkijonon arvon.
 
-[![Muunnos.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Muunnos](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 Seuraavassa kuvassa esitellään, miten tämäntyyppistä muunnosta voidaan käyttää. Tässä esimerkissä useat muotokomponentit lähettävä tekstin tuloksena suorituksen aikana muodostettavaan sähköiseen asiakirjaan. Kaikki nämä muotokomponentit viittaavat **TrimmedString**-muunnokseen nimellä.
 
-[![Käytettävä muunnos.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Käytettävä muunnos](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 Kun muodon komponentit, kuten edellisen kuvan **partyName**-komponentti viittaavat **TrimmedString**-muunnokseen, muunnos lähettää tekstin tuotoksena muodostettava sähköiseen asiakirjaan. Tämä teksti ei sisällä edeltäviä eikä lopussa olevia välilyöntejä.
 
 Jos sinulla on muotoiluja, joita tulee kohdistaa yksitellen, voit käyttää muotoilua tietyn muotokomponentin sidonnan yksittäisenä lausekkeena. Seuraavassa kuvassa esitellään tämäntyyppinen lauseke. Tässä esimerkissä **partyType**-muotokomponentti on sidottu tietolähteeseen sen lausekkeen kautta, joka muuntaa saapuvat tiedot tietolähteen **Model.Company.RegistrationType**-kentästä isoilla kirjaimilla kirjoitetuksi tekstiksi. Lauseke lähettää sitten tekstin tuloksena sähköiseen asiakirjaan.
 
-[![Muotoilun käyttö yksittäisessä asiakirjassa.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Muotoilun käyttö yksittäisessä asiakirjassa](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>Prosessinkulun hallinta
 
@@ -98,7 +100,7 @@ Jokainen prosessinkulun hallinnan sääntö suunnitellaan yksittäiseksi tarkist
 - Jos tapahtumaluettelo on tyhjä, tarkistus pysäyttää suoritusprosessin ja palauttaa **EPÄTOSI**-arvon.
 - Tarkistus palauttaa virhesanoman otsikolla SYS70894 käyttäjän ensisijaisella kielellä.
 
-[![Valintasäännöt.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Valintasäännöt](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 ER-kaavan luontitoimintoa voidaan käyttää myös sähköisen asiakirjan luonnin tiedostonimen muodostamisessa ja tiedoston luontiprosessin hallinnassa. Seuraavassa kuvassa esitellään tämäntyyppisen prosessikulun hallinnan rakenne. Tässä on kyseisen esimerkin konfiguraation selitys:
 
@@ -107,7 +109,7 @@ ER-kaavan luontitoimintoa voidaan käyttää myös sähköisen asiakirjan luonni
 - Lauseke palauttaa sähköisen asiakirjan luomiselle tiedostonimen liittämällä tiedostonimen ja tiedostonimen tunnisteen. Toisen erän ja seuraavien erien tiedostonimi sisältää erän tunnuksen loppuliitteenä.
 - Lauseke ottaa käyttöön (palauttamalla **TOSI**-arvon) vähintään yhden tietueen sisältävien erien tiedoston luontiprosessin.
 
-[![Prosessinkulun hallinta.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Prosessinkulun hallinta](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>Asiakirjan sisältöohjausobjekti
 
@@ -121,18 +123,18 @@ Seuraavassa kuvassa esitellään tämäntyyppisiä lausekkeita. (Esimerkkinä k�
 - **PaymentNotes**-komponenttia käytetään maksuhuomautusten tekstin luomiseen.
 - **DelimitedSequence**-komponentti luo pilkuilla erotetut laskunumerot, joita käytetään nykyisen luottosiirron tilittämiseen.
 
-[![PaymentNotes ja DelimitedSequence -osat.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![PaymentNotes ja DelimitedSequence -osat](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > **PaymentNotes**- ja **DelimitedSequence** -komponentit merkitään kysymysmerkillä. Kysymysmerkki osoittaa, että komponentin käyttö on ehdollinen. Tässä tapauksessa komponenttien käyttö perustuu seuraaviin kriteereihin:
 >
 > - `@.PaymentsNotes <> ""`-lauseke, joka on määritetty **PaymentsNotes**-komponentille mahdollistaa (palauttamalla **TOSI**) **Ustrd**-XML-elementin täyttämisen maksuhuomautusten tekstillä, jos nykyisen luottosiirron teksti ei ole tyhjä.
 >
->    [![PaymentNotes-komponentin lauseke.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![PaymentNotes-komponentin lauseke](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - **DelimitedSequence**-komponentille määritetty `@.PaymentsNotes = ""`-lauseke mahdollistaa (palauttamalla **TOSI**) **Ustrd**-XML-elementin täyttämisen pilkulla erotetuilla laskunumeroilla, joita käytetään nykyisen luottosiirron tilittämiseen, jos maksuhuomautusten teksti tälle luottosiirrolle on tyhjä.
 >
->    [![DelimitedSequence-komponentin lauseke.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![DelimitedSequence-komponentin lauseke](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > Tämän asetuksen perusteella kullekin velallisen maksulle luotu **Ustrd**-XML-elementti sisältää joko maksuhuomautusten tekstin tai, kun teksti on tyhjä, tämän maksun tilittämiseen käytetyt pilkulla erotetut laskunumerot.
 
@@ -140,7 +142,7 @@ Seuraavassa kuvassa esitellään tämäntyyppisiä lausekkeita. (Esimerkkinä k�
 
 Valitse **Kaavansuunnittelija**-sivulla **Testaa** vahvistaaksesi, miten määritetty kaava toimii.
 
-[![Testin valitseminen kaavan tarkistamiseksi.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Testin valitseminen kaavan tarkistamiseksi](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 Kun kaavan argumenttien arvot ovat pakollisia, voit avata **Testaa lauseke** -valintaikkunan **Kaavan suunnittelu** -sivulta. Useimmissa tapauksissa nämä argumentit on määritettävä manuaalisesti, koska määritettyjä sidoksia ei suoriteta suunnittelun aikana. **Kaavansuunnittelija**- sivun **Testi tulos**-välilehdellä näkyy määritetyn kaavan suorituksen tulos.
 
@@ -148,20 +150,17 @@ Seuraava esimerkki osoittaa, miten voit testata ulkomaankaupan toimialueelle mä
 
 Kun testaat tätä kaavaa, voit käyttää **Testaa lauseke** -valintaikkunaa määrittämään Intrastat-kauppatavarakoodin arvon testausta varten.
 
-[![Intrastat-kauppatavarakoodin määrittäminen testausta varten.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![Intrastat-kauppatavarakoodin määrittäminen testausta varten](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 Kun olet määrittänyt Intrastat-kauppatavarakoodin ja valinnut **OK**, **Kaavan suunnittelija** -sivun **testitulos** -välilehdessä näkyy määritetyn kaavan suorituksen tulos. Tämän jälkeen voit arvioida, onko tulos hyväksyttävä. Jos tulosta ei hyväksytä, voit päivittää kaavan ja testata sen uudelleen.
 
-[![Testin tulos.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Testin tulos](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Joitakin kaavoja ei voi testata suunnittelun aikana. Kaava voi esimerkiksi palauttaa sellaisen tietotyypin tuloksen, jota ei voi näyttää **Testitulos**-välilehdellä. Tässä tapauksessa näyttöön tulee virhesanoma, joka toteaa, että kaavaa ei voi testata.
 
-[![Virhesanoma.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Virhesanoma](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

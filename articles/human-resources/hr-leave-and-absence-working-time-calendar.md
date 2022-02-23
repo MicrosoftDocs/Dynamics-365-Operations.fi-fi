@@ -1,33 +1,31 @@
 ---
 title: Työaikakalenterin luominen
 description: Määritä työaikakalenteri, vapaapäivät ja muut kuin työajat Dynamics 365 Human Resources -järjestelmässä.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 54aa85acb43c1e9a474bea9996c72c7e7017c245
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2bedbe65f146c4159c2a809de8f683815fd4a01f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068916"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418308"
 ---
 # <a name="create-a-working-time-calendar"></a>Työaikakalenterin luominen
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resourcesin työaikakalenterissa näkyvät työntekijöiden työpäivät ja -tunnit organisaatiossa. Kun työntekijä lähettää lomapyynnön, hänen ei tarvitse huolehtia juhlapäivistä ja sulkemisista.
 
@@ -67,7 +65,7 @@ Voit lisätä tai muuttaa lomia ja sulkemisia erillään työaikakalenterista.
 
 Voit lisätä tai muuttaa muita kuin työaikoja erillään työaikakalenterista.
 
-1. Valitse **Organisaation hallinto** -sivulla **MUU KUIN TYÖAIKA**.
+1. Valitse **Organisaation hallinto** -sivulta **Muu kuin työaika**.
 
 2. Valitse **Uusi** ja kirjoita vapaa-ajan nimi ja aika-alue.
 
@@ -77,6 +75,3 @@ Jos olet ottanut loma- ja poissaolopäivän korjausten esikatselutoiminnon käyt
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Määritä loman ja poissaolon tyypit](hr-leave-and-absence-types.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

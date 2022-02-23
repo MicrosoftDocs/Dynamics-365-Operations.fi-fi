@@ -1,32 +1,34 @@
 ---
 title: Maailmanlaajuisen käytön resurssit
 description: Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista ja tuotteista.
-author: kfend
-ms.date: 02/19/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747512"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685050"
 ---
 # <a name="globalization-resources"></a>Maailmanlaajuisen käytön resurssit
 
 ## <a name="local-and-regional-deployments"></a>Paikalliset ja alueelliset käyttöönotot
-Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yrityksellesi tärkeitä tietoja:
+Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yritykselle tärkeitä tietoja:
 
-[Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa](../deployment/china-local-deployment.md)
+[21Vianet vastaa Finance and Operations -sovelluksista Kiinassa](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
@@ -53,6 +55,7 @@ Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista omi
 
 #### <a name="regulatory-updates"></a>Pakolliset päivitykset
 -   [Pakolliset päivitykset](../../../finance/localizations/regulatory-updates.md)
+-   [Lokalisointiportaali](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (päivitetään joka viikko)
 -   [Lifecycle Servicesin (LCS) ongelmahaku](../lifecycle-services/issue-search-lcs.md) (päivitetään päivittäin)
 
 #### <a name="communication-and-alerts"></a>Viestintä ja hälytykset
@@ -60,7 +63,7 @@ Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista omi
 -   [Hälytyksien lähettäminen maa- tai aluekohtaisista säädöstenmukaisista ominaisuuksista](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365:n julkaisusuunnitelmat
-[Dynamics 365:n julkaisusuunnitelmissa](/business-applications-release-notes/) kuvataan Dynamics 365 -yrityssovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
+[Dynamics 365:n julkaisusuunnitelmissa](https://docs.microsoft.com/business-applications-release-notes/) kuvataan Dynamics 365 -yrityssovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations -sovellusten uudet ominaisuudet
 [Finance and Operationsin uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on luettelo ominaisuuksista, jotka sisältyvät tiettyihin Finance and Operations -sovellusten versioihin.
@@ -130,6 +133,3 @@ Lisätietoja on [ohjejärjestelmässä](../../fin-ops/get-started/help-overview.
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

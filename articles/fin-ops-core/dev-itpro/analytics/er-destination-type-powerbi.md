@@ -2,9 +2,11 @@
 title: Power BI -tyyppinen ER-kohde
 description: Tämä ohjeaihe sisältää tietoja Power BI -tyyppisen ER-kohteen määrittämisestä lähteville asiakirjoille.
 author: NickSelin
+manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-ms.openlocfilehash: 499447b05ef6360cde95049e592d7c9ffe2da1c4ff26937482033b9f705c3acd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3355c3bced950f65964b124fee553d8c5b53c6b0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777425"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679579"
 ---
 # <a name="power-bi-destination"></a>Power BI -kohde
 
@@ -30,12 +32,9 @@ Voit määrittää Microsoft Power BI -kohteen kullekin lähteviä asiakirjoja l
 
 Kun määrität **Käytössä**-kentän arvoksi **Kyllä**, voit käyttää omaa sähköisen raportoinnin ER-konfiguraatiota tietojen siirron järjestämiseen omasta Dynamics 365 Finance -esiintymästä Microsoft Power BI -palveluihin. Siirretyt tiedostot tallennetaan Microsoft SharePoint Server -esiintymään, joka on konfiguroitu tähän tarkoitukseen. Lisätietoja on kohdassa [Sähköisen raportoinnin määrittäminen noutamaan tietoja Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
-[![Kohdeasetusten sivu.](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
+[![Kohdeasetusten sivu](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

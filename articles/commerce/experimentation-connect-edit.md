@@ -2,12 +2,15 @@
 title: Kokeen yhdistäminen ja variaatioiden muokkaaminen
 description: Tässä ohjeaiheessa käsitellään kolmannen osapuolen palvelussa olevan kokeen yhdistämistä Dynamics 365 Commerceen ja kokeen variaatioiden muokkaamista.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: d3b1a099e29073e82e2118f9e43441a9068a4d10f0ea9f79123b97d2b7d5c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773030"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4412111"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Kokeen yhdistäminen ja variaatioiden muokkaaminen
 
@@ -28,7 +31,7 @@ Tässä ohjeaiheessa käsitellään kokeen yhdistämistä Commercessa ja muutost
 
 Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä ohjeaiheissa.
 
-[ ![Kokeilun käyttäjän siirtymä – yhdistäminen ja muokkaaminen.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Kokeilun käyttäjän siirtymä – yhdistäminen ja muokkaaminen](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Sen jälkeen kun [koe on määritetty](experimentation-setup.md) kolmannen osapuolen palvelussa, koe yhdistetään Dynamics 365 Commercessa, jossa muokataan kokeen variaatioita.
 
@@ -92,6 +95,3 @@ Jos kokeen laajuudeksi määritettiin **kokonaan** ohjatussa **Yhdistä koe** -t
 
 ## <a name="next-step"></a>Seuraava vaihe
 [Kokeen esikatseleminen ja julkaiseminen](experimentation-preview-publish.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

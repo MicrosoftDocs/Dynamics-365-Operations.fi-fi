@@ -1,8 +1,6 @@
-- name: Dynamics 365 Talentin käytöstä poistaminen
-  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
+- name: Dynamics 365 for Talent
+  href: talent-welcome.md
   items:
-    - name: Dynamics 365 Talent -aloitussivu
-      href: ./index.md
     - name: Aloittaminen
       items:
         - name: Talentin käytön aloittaminen
@@ -153,7 +151,7 @@
         - name: Tietojen vieminen Attractista ja Onboardista
           href: attract-onboard-export-data.md
         - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
-          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Talent-tuen hankkiminen
           href: talent-support.md
     - name: Henkilöstön palkkaaminen organisaatioon Attractin avulla

@@ -70,6 +70,3 @@ Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuor
 #### <a name="platform-update-29-for-finance-and-operations"></a>Ympäristön päivitys 29 Finance and Operationsille
 
 Lisätietoja Ympäristön päivitys 29 -päivityksestä Finance and Operationsille on kohdassa [Dynamics 365 Finance and Operationsin ympäristön päivitys 29 -esiversion toiminnot (lokakuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

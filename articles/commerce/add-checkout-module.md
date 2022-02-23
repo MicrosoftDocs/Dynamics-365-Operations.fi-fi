@@ -2,24 +2,27 @@
 title: Kassamoduuli
 description: Tässä ohjeaiheessa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
 author: anupamar-ms
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715503"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4412129"
 ---
 # <a name="checkout-module"></a>Kassamoduuli
 
@@ -27,13 +30,15 @@ ms.locfileid: "6715503"
 
 Tässä ohjeaiheessa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
 
+## <a name="overview"></a>Yleiskatsaus
+
 Kassamoduuli on erityinen säilö, joka isännöi kaikkia sellaisia moduuleja, jotka tarvitaan tilauksen luomista varten. Se sisältää vaiheittaisen työnkulun, jota käyttämällä asiakas syöttää kaikki tarvittavat tiedot ostoa varten. Se taltioi toimitusosoitteen, toimitustavan ja laskutustiedot. Siinä on myös tilauksen yhteenveto ja muita asiakkaan tilaukseen liittyviä tietoja.
 
 Kassamoduuli hahmontaa tiedot ostoskorin tunnuksen mukaan. Tämä ostoskorin tunnus tallennetaan selaimen evästeeksi. Ostoskorin tunnus on pakollinen, jotta kassamoduulin tiedot kuten tilauksen nimikkeet, kokonaissumma ja alennukset, voidaan hahmontaa. 
 
 Seuraavassa kuvassa on esimerkki Fabrikam-kassamoduulista maksusivulla.
 
-![Esimerkki kassamoduulista.](./media/Checkout.PNG)
+![Esimerkki kassamoduulista](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Kassamoduulin ominaisuudet
 
@@ -52,13 +57,13 @@ Kassamoduuli näyttää tilauksen yhteenvedon ja tilauksen tekemiseen tarvittava
 
     Seuraavassa kuvassa on esimerkki toimitusosoitemoduulista maksusivulla.
 
-    ![Esimerkki toimitusosoitemoduulista.](./media/ecommerce-shippingaddress.PNG)
+    ![Esimerkki toimitusosoitemoduulista](./media/ecommerce-shippingaddress.PNG)
 
 - **Toimitusvaihtoehdot** – Tämän moduulin avulla asiakas voi valita tilauksen toimituksen tilan. Lisätietoja tästä moduulista on kohdassa [Toimitusvaihtoehdot -moduuli](delivery-options-module.md).
 
     Seuraavassa kuvassa on esimerkki toimitusvaihtoehdot-moduulista maksusivulla.
  
-    ![Esimerkki toimitusvaihtoehdot-moduulista.](./media/ecommerce-deliveryoptions.PNG)
+    ![Esimerkki toimitusvaihtoehdot-moduulista](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kassa-osan säilö** – Tämä moduuli on säilö, jonka sisään asetetaan useita moduuleja. Ne luovat osan kassatyönkulun sisälle. Tähän säilöön voi asettaa esimerkiksi kaikki maksuun liittyvät moduulit, jolloin ne näkyvät yhtenä osana. Tämä moduuli vaikuttaa vain työnkulun asetteluun.
 
@@ -70,7 +75,7 @@ Kassamoduuli näyttää tilauksen yhteenvedon ja tilauksen tekemiseen tarvittava
 
     Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla.
 
-    ![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla.](./media/ecommerce-payments.PNG)
+    ![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, maksumoduuleista maksusivulla](./media/ecommerce-payments.PNG)
 
 - **Yhteystiedot** – Tämän moduulin avulla asiakas voi lisätä tai muuttaa tilauksen yhteystietoja (sähköpostiosoitetta).
 
@@ -80,7 +85,7 @@ Kassamoduuli näyttää tilauksen yhteenvedon ja tilauksen tekemiseen tarvittava
 
     Seuraavassa kuvassa on esimerkki käyttöehdoista maksusivulla.
 
-    ![Esimerkki käyttöehdoista kassalla.](./media/ecommerce-checkout-terms.PNG)
+    ![Esimerkki käyttöehdoista kassalla](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 
@@ -122,6 +127,3 @@ Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisu
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 
 [Lahjakorttimoduuli](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

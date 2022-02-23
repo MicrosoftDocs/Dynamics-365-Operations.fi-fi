@@ -153,6 +153,3 @@ Hakijalle tehty tarjous voidaan peruuttaa koska tahansa erilaisista syistä.
 ## <a name="closing-an-offer"></a>Tarjouksen sulkeminen 
 
 Kun tarjous on hyväksytty, hylätty tai peruutettu eikä lisätoimintoja tarvita, voit sulkea tarjouksen, jolloin kyseiseen tarjouspakettiin ei voi tehdä enää muutoksia.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

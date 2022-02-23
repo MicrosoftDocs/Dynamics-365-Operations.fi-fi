@@ -2,23 +2,26 @@
 title: Varastotyönkulkujen numerosarjojen määrittäminen
 description: Tässä ohjeaiheessa käsitellään yleisesti toimintoja, joilla luodaan rekisterikilpien tunnusten, aallon etiketin tunnusten, kontin tunnusten ja rahtikirjojen tunnusten numerosarjalaajennukset.
 author: GarmMSFT
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e9ba06908b9e82763557e98715e495cfaf649753
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574710"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4427515"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Varastotyönkulkujen numerosarjojen määrittäminen
 
@@ -89,6 +92,3 @@ Numerosaroja voi luoda ja muokata seuraavasti:
     | Tarkistusnumero | Tämä segmenttityyppi lisää tarkistusnumeron, joka on modulo 10 -lasku. (Tämä toiminta vastaa rekisterikilpitunnusten nykyistä logiikkaa.) Tässä segmenttityypissä **Arvo**-asetuksena on aina sirkumfleksi (*^*) ja **Pituus**-kentän asetuksena on aina *1*. |
 
 1. Voit tarkastella lopullisen numeromuodon esimerkki, tarkasta **Muoto**-kenttä **Segmentit**-pikavälilehden alaosassa.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,31 +2,34 @@
 title: Työkäytännöt
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää työkäytännöt.
 author: perlynne
+manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571158"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427484"
 ---
 # <a name="work-policies"></a>Työkäytännöt
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten järjestelmä ja varastonhallinnan mobiilisovellus määritetään niin, että ne tukevat työkäytäntöjä. Tämän toiminnon avulla voit rekisteröidä varaston nopeasti ilman hyllytystyön luomista silloin, kun vastaanotat osto- ja siirtotilauksia ja kun viimeistelet valmistusprosesseja. Tämä ohjeaihe sisältää yleistietoja. Saat yksityiskohtaisia tietoja rekisterikilven vastaanotosta kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
+Tässä ohjeaiheessa kerrotaan, miten järjestelmä ja varastosovellus määritetään niin, että ne tukevat työkäytäntöjä. Tämän toiminnon avulla voit rekisteröidä varaston nopeasti ilman hyllytystyön luomista silloin, kun vastaanotat osto- ja siirtotilauksia ja kun viimeistelet valmistusprosesseja. Tämä ohjeaihe sisältää yleistietoja. Saat yksityiskohtaisia tietoja rekisterikilven vastaanotosta kohdassa [Rekisterikilven vastaanotto varastosovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
 
-Työkäytäntö määrittää, luodaanko varastotyö valmistetun nimikkeen valmiiksi raportoinnin yhteydessä vai silloin, kun tavarat vastaanotetaan käyttämällä varastonhallinnan mobiilisovellusta. Voit määrittää kunkin työkäytännön määrittämällä sen ehdot: työtilaustyypit ja -prosessit, varaston sijainnin ja (vaihtoehtoisesti) tuotteet. Esimerkiksi ostotilaus tuotteelle *A0001* on vastaanotettava sijainnissa *RECV* varastossa *24*. Myöhemmin tuotetta kulutetaan toisessa prosessissa sijainnissa *RECV*. Tässä tapauksessa määrität työkäytännön, joka estää hyllytystyön luomisen, kun työntekijä raportoi tuotteen *A0001* vastaanotetuksi sijainnissa *RECV*.
+Työkäytäntö määrittää, luodaanko varastotyö valmistetun nimikkeen valmiiksi raportoinnin yhteydessä vai silloin, kun tavarat vastaanotetaan käyttämällä varastosovellusta. Voit määrittää kunkin työkäytännön määrittämällä sen ehdot: työtilaustyypit ja -prosessit, varaston sijainnin ja (vaihtoehtoisesti) tuotteet. Esimerkiksi ostotilaus tuotteelle *A0001* on vastaanotettava sijainnissa *RECV* varastossa *24*. Myöhemmin tuotetta kulutetaan toisessa prosessissa sijainnissa *RECV*. Tässä tapauksessa määrität työkäytännön, joka estää hyllytystyön luomisen, kun työntekijä raportoi tuotteen *A0001* vastaanotetuksi sijainnissa *RECV*.
 
 > [!NOTE]
 > - Jotta työkäytäntö olisi aktiivinen, määritä sille ensin vähintään yksi sijainti **Varastosijainnit**-pikavälilehdessä **Työkäytännöt**-sivulla. 
@@ -200,7 +203,7 @@ Ostotilaus on nyt vastaanotettu, mutta siihen ei ole liitetty työtä. Käytett�
 
 Seuraavassa esimerkissä on kaksi tuotantotilausta, jotka ovat *PRD-001* ja *PRD-002*. Tuotantotilaus *PRD-001* sisältää *Kokoonpano*-työvaiheen, jolla tuote *SC1* raportoidaan valmiiksi sijainnissa *001*. Tuotantotilaus *PRD-002* sisältää *Maalaus*-työvaiheen ja käyttää tuotetta *SC1* sijainnista *001*. Tuotantotilaus *PRD-002* käyttää myös raaka-ainetta *RM1* sijainnissa *001*. Raaka-ainetta *RM1* varastoidaan varastosijaintiin *BULK-001*, josta raaka-ainekeräilyn varastotyö kerää sen sijaintiin *001*. Keräilytyö luodaan, kun tuotanto *PRD-002* vapautetaan.
 
-[![Varaston työkäytännöt.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Varaston työkäytännöt](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Kun suunnittelet tämän skenaarion mukaista varastotyön konfigurointia, ota huomioon seuraavat seikat:
 
@@ -295,9 +298,6 @@ Kun tuotantotilaus on ilmoitettu valmistuneeksi, hyllytystyötä ei luoda. Täm�
 
 Lisätietoja mobiililaitteiden valikkokohteista on kohdassa [Mobiililaitteiden määrittäminen varastotyötä varten](configure-mobile-devices-warehouse.md).
 
-Lisätietoja rekisterikilven vastaanotosta ja työkäytännöistä on kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
+Lisätietoja rekisterikilven vastaanotosta ja työkäytännöistä on kohdassa [Rekisterikilven vastaanotto varastosovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Lisätietoja saapuvien kuormien hallinnasta on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](inbound-load-handling.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

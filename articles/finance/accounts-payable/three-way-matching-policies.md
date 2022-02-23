@@ -2,25 +2,28 @@
 title: Kolmisuuntaiset vastaavuuskäytännöt
 description: Tässä ohjeaiheessa on esimerkkejä kolmisuuntaisesta vastaavuudesta.
 author: abruer
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d33a8cb001f1cd2f79c2a174710af90af423b9b3abc66eb80aa4811953ea4a14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722836"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442714"
 ---
 # <a name="three-way-matching-policies"></a>Kolmisuuntaiset vastaavuuskäytännöt
 
@@ -28,7 +31,8 @@ ms.locfileid: "6722836"
 
 Tässä ohjeaiheessa on esimerkkejä kolmisuuntaisesta vastaavuudesta.
 
-## <a name="example-three-way-matching-for-items"></a>Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
+<a name="example-three-way-matching-for-items"></a>Esimerkki: Kolmisuuntainen vastaavuus nimikkeille
+-------------------------------------
 
 **Yhteenveto:** Ken on vastuuhenkilö Fabrikam-nimisen yrityksen pääkonttorissa. Hän päättää, että kaikki toimittajan laskut, jotka perustuvat ostotilauksiin on yhdistettävä ostotilausriveihin (kaksisuuntainen vastaavuus). Käyttöomaisuuserinä käytettävien nimikkeiden ostolaskujen tulisi vastata sekä ostotilausrivejä että tuotteen vastaanottorivejä (kolmisuuntainen vastaavuus).
 
@@ -36,9 +40,9 @@ Fabrikam toimii useiden yritysten ja työntekijöiden kanssa maailmanlaajuisesti
 
 Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraavissa rooleissa toimivia henkilöitä saavuttamaan nämä tavoitteet:
 
--   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Ken voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
+-   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Hän voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
 -   Paula ja April ovat laskentapäälliköitä Fabrikamin Yhdysvaltain haaran ostoreskontraosastolla. He voivat valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilaukseen sekä sen ollessa aiheellista, tuotteiden ja palveluiden vastaanottoon.
--   Tony on Fabrikamin Yhdysvaltain haaran tuotantopäällikkö. Tony ja muu tuotantohenkilöstö voi varmistaa, että nimikkeet vastaanotetaan siten, miten ne on tilattu toimittajilta ja että ne ovat seurattavissa niin, että henkilökunnalla on työnsä suorittamiseen vaadittavat resurssit.
+-   Tony on Fabrikamin Yhdysvaltain haaran tuotantopäällikkö. Hän ja muu tuotantohenkilöstö voi varmistaa, että nimikkeet vastaanotetaan siten, miten ne on tilattu toimittajilta ja että ne ovat seurattavissa niin, että henkilökunnalla on työnsä suorittamiseen vaadittavat resurssit.
 
 ### <a name="prerequisites"></a>Edellytykset
 
@@ -50,13 +54,13 @@ Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraaviss
 
     | Nimiketunnus                 | Määrä | Yksikköhinta | Nettosumma | Kulujen koodi        | Kulujen arvo |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – CNC Milicron-kone | 5        | 8 000,00   | 40 000,00  | Toimitus ja käsittely | 3,000.00      |
+    | 1500 – CNC Milicron-kone | 5        | 8 000,00   | 40 000,00  | Toimitus ja käsittely | 3 000,00      |
 
--   Arnie, Contoson myyntireskontrakäsittelijä, tarkistaa viikon toimitukset. Hän lähetystapahtumat, jotka laskutetaan Fabrikamilta CNC Milicron-koneiden toimituksesta. Hän lisää lähetys- ja käsittelykulut laskulle. Fabrikam ottaa toimituskulut osaksi käyttöomaisuuden kustannusta.
+-   Arnie, Contoson myyntireskontrakäsittelijä tarkistaa viikon toimitukset. Hän lähetystapahtumat, jotka laskutetaan Fabrikamilta CNC Milicron-koneiden toimituksesta. Hän lisää lähetys- ja käsittelykulut laskulle. Fabrikam ottaa toimituskulut osaksi käyttöomaisuuden kustannusta.
 
 ### <a name="scenario"></a>Skenaario
 
-1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä, vastaanottaa Contoson konetoimituksen kokonaismäärän. Sammy syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
+1.  Sammy, Fabrikamin vastaanotto-osaston työntekijä vastaanottaa Contoson konetoimituksen kokonaismäärän. Hän syöttää määräksi 5 tuotteen vastaanotossa. Koska ostotilaus on vastaanotettu kokonaisuudessaan, sen tilaksi muuttuu Vastaanotettu.
 2.  Fabrikamin ostoreskontravastaava April kirjaa ja vahvistaa Contoson lähettämän laskun. Hän vahvistaa seuraavat tiedot:
     -   Nimikkeille, joiden vaatimuksena on kolmisuuntainen vastaavuus, laskurivin määrä vastaa vastaanotettua määrää. Vastaanotettu määrä näkyy laskuun kohdistetussa tuotteen vastaanotossa.
     -   Nimikkeiden, joiden vaatimuksena on kaksi- tai kolmisuuntainen vastaavuus, laskurivin hinnat ovat Microsoft Dynamics 365 Financessa asetettujen toleranssien rajoissa. Tähän kuuluvat seuraavat hinnantäsmäytykset:
@@ -86,7 +90,7 @@ Yhteenveto: Ken on vastuuhenkilö Fabrikam-nimisen yrityksen pääkonttorissa. H
 Volyymi ja summat ovat pieniä, ja tiettyjen malesialaistoimittajien lähetyksissä on ollut ongelmia. Tämän vuoksi Cassie määrittää tiettyjen, Malesiasta hankittavien nimike- ja toimittajayhdistelmien hallinnan tasoksi kolmisuuntaisen vastaavuuden. 
 
 Tässä esimerkissä tarjotut laskun täsmäytyskäytännöt auttavat seuraavissa rooleissa toimivia henkilöitä saavuttamaan nämä tavoitteet:
--   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Ken voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
+-   Ken on Fabrikam-nimisen yrityksen vastuuhenkilö. Hän voi auttaa organisaationsa henkilöstöä tunnistamaan ja oikaisemaan toimittajien nimikkeiden, eli tavaroiden ja palveluiden tilauksiin, vastaanottoihin ja maksuihin liittyviä ongelmia.
 -   Cassie on Fabrikamin Malesian-konttorin kirjanpitäjä. Hän voi valvoa yrityksen käytäntöjä ja varmistaa, että laskut maksetaan vasta, kun ne on täsmäytetty ostotilauksen riveihin sekä tuotteiden vastaanottoihin, jotka vastaavat tuotteita ja palveluita. Hän voi myös nostaa hallinnan tason kolmisuuntaiseksi vastaavuudeksi haluamilleen nimikkeille hallitakseen toiminnan kustannuksia.
 
 ### <a name="prerequisites"></a>Edellytykset
@@ -141,6 +145,3 @@ Lisätietoja on kohdassa [Ostoreskontran laskujen täsmäytyksen yleiskatsaus](a
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

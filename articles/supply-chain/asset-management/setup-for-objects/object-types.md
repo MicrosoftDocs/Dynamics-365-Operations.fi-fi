@@ -1,10 +1,12 @@
 ---
 title: Resurssityypit
 description: Tässä ohjeaiheessa kerrotaan, kuinka resurssityypit luodaan resurssien hallinnassa. Siinä kuvataan myös resurssityyppeihin liittyvät elementit.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730367"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017414"
 ---
 # <a name="asset-types"></a>Resurssityypit
 
@@ -45,9 +47,9 @@ Ensin määritetään tarvittavat resurssityypit. Seuraavaksi luodaan resurssima
 7. Valitse **Tallenna**.
 8. Valitse **Ylläpitotyön tyypit**-pikavälilehdessä ylläpitotyötyypit, jotka liittyvät resurssityyppiin:
 
-    - Jos haluat valita työtyypin, valitse se **Jäljellä olevat ylläpitotyötyypit** -kentästä ja valitse sitten oikealle osoittava nuolipainike ![Oikealle osoittava nuolipainike.](media/29-setup-for-objects.png) siirtääksesi sen **Valitut työtyypit** -osioon.
-    - Jos haluat valita kaikki käytettävissä olevat ylläpitotyötyypit, valitse ![Siirrä kaikki -nuolipainike](media/30-setup-for-objects.png) -painike. Kaikki ylläpitotyötyypit siirretään **Jäljellä olevat ylläpitotyötyypit** -kentästä **Valitut ylläpitotyötyypit** -kenttään.
-    - Jos peruuttaa ylläpitotyötyypin valinnan, valitse se **Valitut ylläpitotyötyypit** -kentästä ja valitse sitten vasemmalle osoittava nuolipainike ![Vasemmalle osoittava nuolipainike.](media/31-setup-for-objects.png) siirtääksesi sen **Jäljellä olevat ylläpitotyötyypit** -kenttään.
+    - Jos haluat valita ylläpitotyötyypin , valitse se **Jäljellä olevat ylläpitotyötyypit** -kentässä ja valitse sitten oikea nuolipainike ![Oikealle osoittava nuolipainike](media/29-setup-for-objects.png) siirtääksesi sen **Valitut ylläpitotyötyypit** -osioon.
+    - Jos haluat valita kaikki käytettävissä olevat ylläpitotyötyypit, valitse ![Siirrä kaikki -nuolipainike](media/30-setup-for-objects.png). Kaikki ylläpitotyötyypit siirretään **Jäljellä olevat ylläpitotyötyypit** -kentästä **Valitut ylläpitotyötyypit** -kenttään.
+    - Jos peruuttaa ylläpitotyötyypin valinnan, valitse se **Valitut ylläpitotyötyypit** -kentässä ja valitse sitten vasen nuolipainike ![Vasemmalle osoittava nuolipainike](media/31-setup-for-objects.png) siirtääksesi sen **Jäljellä olevat ylläpitotyötyypit** -osioon.
 
 9. Voit myös valita laskurit, jotka liittyvät kyseiseen resurssityyppiin. Tee valinnat **Laskurit**-pikavälilehdessä käyttämällä menetelmiä, jotka on kuvattu ylläpitotyötyypeille vaiheessa 8. Lisätietoja laskureiden määrityksestä esitetään kohdassa [Laskurit](counters.md).
 10. Voit myös valita määritetyypit, jotka liittyvät kyseiseen resurssityyppiin. Tee valinnat **Määritetyypit** -pikavälilehdessä käyttämällä menetelmiä, jotka on kuvattu ylläpitotyötyypeille vaiheessa 8. Luo sitten haluamasi määritetyyppien järjestys valitsemalla määriteyyppi **Valitut määritetyypit** -kentässä ja siirrä sitä ylä- ja alanuolen avulla. Määritetyyppien järjestys näkyy resursseille, jotka käyttävät tätä resurssilajia. Lisä tietoja resurssimääritteistä on kohdassa [Ylläpidon määritetyypit](../setup-for-functional-locations/specification-types.md).
@@ -94,6 +96,3 @@ Kuten kohdassa "Luo resurssityypin asetusrivit" on kuvattu, varaosat määritet�
 
 Jos haluat nähdä, käytetäänkö valitun rivin varaosaa jossakin muualla resurssien hallinnassa (esimerkiksi suhteessa resursseihin ja työtilauksiin), valitse varaosarivi ja valitse sitten **Nimike, missä käytetty** avataksesi **Nimike, missä käytetty** -sivun. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -149,6 +149,3 @@ Jos yhteen työpaikkaan liittyy useita hyviä hakijoita, joita ei valita mutta j
 1. Valitse hakemussivulla **Lisää kykypooliin**. Näkyviin tulee luettelo kykypooleista, joiden käyttöoikeus sinulla on.
 
 1. Valitse tai hae kykypooli ja lisää sitten hakija kyseiseen pooliin valitsemalla **Lisää**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

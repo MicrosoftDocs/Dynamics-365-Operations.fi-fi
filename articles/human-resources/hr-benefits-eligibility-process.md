@@ -1,59 +1,56 @@
 ---
 title: Etukelpoisuusprosessi
 description: Tässä menettelyssä kerrotaan, miten edun kelpoisuuskäsittely toimii.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 16a866cb35aacb3b6bece0d6adde6bb5978bd4fc
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d23dcf4a16979b14ddf58b54e812f21e6698dfc7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066015"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418247"
 ---
 # <a name="benefit-eligibility-process"></a>Etukelpoisuusprosessi
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Tässä menettelyssä kerrotaan, miten edun kelpoisuuskäsittely toimii. Voit käsittely on valmis, voit tarkastella tuloksia. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
-1. Valitse **Henkilöstöhallinto \> Edut \> Edut**.
+1. Siirry kohtaan Henkilöstöhallinto > Edut > Edut.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Valitse luettelossa valitulla rivillä oleva linkki.
-4. Valitse **Muokkaa**.
-5. Valitse **Oikeutus**-kentässä **Sääntöön perustuva**.
-6. Valitse **Sääntötyyppi**-kentässä edussa käytettävä käytäntösääntö.
-7. Valitse toimintoruudussa **Etu**.
-8. Valitse **Luo kelpoisuustapahtuma**.
-9. Anna avattavan luettelon **Tapahtuma**-kentässä arvo.
-10. Anna arvo **Kuvaus**-kentässä.
-11. Valitse **Tapahtumatyyppi**-kentässä **Avaa rekisteröinti**.
-12. Anna **Kattavuuden alkamispäivämäärä** -kenttään päivämäärä ja kellonaika.
-13. Anna **Rekisteröitymisaika**-kentässä päivämäärä ja kellonaika.
-14. Anna **Rekisteröitymispäivät**-kenttään numero.
-15. Valitse **Luo tapahtuma**.
-16. Valitse **Työntekijät**-pikavälilehdessä **Lisää**.
-17. Valitse **Tarkastele tyypin mukaan** -kentässä **Työntekijät**.
-18. Valitse **Tarkastele yrityksen mukaan** -kentässä **Valittu yritys**.
+3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
+4. Valitse Muokkaa.
+5. Valitse Oikeutus-kentässä Sääntöön perustuva.
+6. Valitse Sääntötyyppi-kentässä edussa käytettävä käytäntösääntö.
+7. Valitse toimintoruudussa Etu.
+8. Avaa valintaikkuna valitsemalla Luo kelpoisuustapahtuma.
+9. Kirjoita Tapahtuma-kenttään arvo.
+10. Kirjoita Kuvaus-kenttään arvo.
+11. Valitse Tapahtumatyyppi-kentässä Avaa rekisteröinti.
+12. Lisää Kattavuuden alkamispäivämäärä -kenttään päivämäärä ja kellonaika.
+13. Anna Rekisteröitymisaika-kentässä päivämäärä ja kellonaika.
+14. Lisää Rekisteröitymispäivät-kenttään numero.
+15. Valitse Luo tapahtuma.
+16. Valitse Työntekijät-pikavälilehdessä Lisää.
+17. Valitse Tarkastele tyypin mukaan -kentässä Työntekijät.
+18. Valitse Tarkastele oikeushenkilön mukaan -kentässä Valittu yritys.
 19. Merkitse kaikki rivit tai poista kaikkien rivien merkinnät luettelossa.
-20. Valitse **OK**.
-21. Valitse **Prosessi**.
-22. Valitse **OK**.
+20. Valitse OK.
+21. Valitse Prosessi.
+22. Valitse OK.
 23. Päivitä sivu.
-24. Valitse **Näytä tulokset**.
-25. Avaa **Tila**-sarakkeen suodatin.
-26. Käytä sarakkeen lajittelujärjestyksenä A–Ö.
+24. Valitse Näytä tulokset.
+25. Avaa Tila-sarakkeen suodatin.
+26. Lajittele A–Z
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

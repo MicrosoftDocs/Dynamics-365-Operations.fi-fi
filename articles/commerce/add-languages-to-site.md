@@ -2,30 +2,36 @@
 title: Kielten lisääminen sivustoon
 description: Tässä ohjeaiheessa kerrotaan, kuinka lisäkielten tuki lisätään Microsoft Dynamics 365 Commerce -sivustoon.
 author: bicyclingfool
+manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964551"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411910"
 ---
 # <a name="add-languages-to-your-site"></a>Kielten lisääminen sivustoon
+
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka lisäkielten tuki lisätään Microsoft Dynamics 365 Commerce -sivustoon.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Voit lokalisoida sivuston millä tahansa kielellä, jota Commerce tukee. (Tuettujen kielten luettelo tulee näkyviin myöhemmin tässä ohjeaiheessa.) Jos haluat lisätä kielen sivustoon, kieli on ensin lisättävä sivustoon sidottuun verkkokauppaan.
 
@@ -165,9 +171,8 @@ Lisäämäsi kieli on nyt käytettävissä. Voit määrittää sivuston käyttä
 
 [Favicon-kuvakkeen lisääminen](add-favicon.md)
 
+[Tervetuloviestin lisääminen](add-welcome-message.md)
+
 [Copyright-ilmoituksen lisääminen](add-copyright-notice.md)
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

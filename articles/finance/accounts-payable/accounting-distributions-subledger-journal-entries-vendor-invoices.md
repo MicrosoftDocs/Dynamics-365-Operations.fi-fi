@@ -1,34 +1,38 @@
 ---
-title: Toimittajan laskujen kirjanpidolliset jaot ja kirjauskansioviennit
+title: Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
 description: Kirjanpidon jakoja käytetään määrittämään, miten summa käsitellään, esimerkiksi miten kulu, vara, vero tai maksu käsitellään toimittajan laskussa. Jokaisella määrällä, joka on huomioitava toimittajan laskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako.
-author: sunfzam
+author: abruer
+manager: AnnBe
 ms.date: 08/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7296b1e00bfd49bceb40a0e8b859d46c6517450a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: f8e38e6a571bb7f08b32548bcb4af823807a4340
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594688"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442913"
 ---
-# <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Toimittajan laskujen kirjanpidolliset jaot ja kirjauskansioviennit
+# <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Toimittajan laskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät
 
 [!include [banner](../includes/banner.md)]
 
 Kirjanpidon jakoja käytetään määrittämään, miten summa käsitellään, esimerkiksi miten kulu, vara, vero tai maksu käsitellään toimittajan laskussa. Jokaisella määrällä, joka on huomioitava toimittajan laskun kirjauksen yhteydessä, on yksi tai useampi kirjanpidollinen jako. 
 
-## <a name="accounting-distributions"></a>Kirjanpidolliset jaot 
+<a name="accounting-distributions"></a>Kirjanpidolliset jaot 
+-------------------------
 
 Seuraavilla Toimittajan lasku -sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin ostotilauksen summalle.
 -   **Jakosummat** – Tarkastele muokkaa yksittäisen rivin ja sen alatason rivien kirjanpidollisia jakoja, kuten veroja tai maksuja. Voit tarkastella ja muokata alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.
@@ -226,7 +230,8 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 </table>
 
 
-## <a name="distributing-taxes"></a>Verojen jakaminen
+<a name="distributing-taxes"></a>Verojen jakaminen
+------------------
 
 verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista Toimittajan lasku -sivun tehtävistä:
 -   Näytä laskun summa.
@@ -245,6 +250,3 @@ Jos alareskontran kirjaus on virheellinen esikatsellessa, et voi muokata sitä e
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

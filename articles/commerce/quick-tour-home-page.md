@@ -2,24 +2,27 @@
 title: Aloitussivun yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984491"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412078"
 ---
 # <a name="home-page-overview"></a>Aloitussivun yleiskatsaus
 
@@ -27,11 +30,13 @@ ms.locfileid: "7984491"
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
 
+## <a name="overview"></a>Yleiskatsaus
+
 Aloitussivu on oletussivu, jolle ostajat tulevat sähköisen kaupankäynnin sivustoon siirtyessään. Yleensä tällä sivulla on tuotteiden ja kampanjoiden esittelyjä. Tämä tehdään markkinointimoduulien yhdistelmällä. Aloitussivun tulisi olla monipuolinen ja sisältää kuvia ja tekstiä, jotta ostajien mielenkiinto säilyy.
 
 Seuraavassa kuvassa on esimerkki aloitussivusta, joka on luotu verkon moduulikirjaston ja Fabrikam-teeman avulla.
 
-![Esimerkki aloitussivusta.](./media/Homepage2.PNG)
+![Esimerkki aloitussivusta](./media/Homepage2.PNG)
 
 Aloitussivun yläosassa on ylätunniste, joka sisältää kaikki tuoteluokat ja muut sivut, joita jälleenmyyjä haluaa asiakkaiden selaavan. Aloitussivun alaosassa on alatunniste, joka sisältää pikalinkkejä erilaisiin asiakasta mahdollisesti kiinnostaviin aiheisiin.
 
@@ -41,13 +46,13 @@ Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tieto
 
     Seuraavassa kuvassa on esimerkki aloitussivusta, jossa pääosan ensimmäinen nimike on hero-sisältölohkon asettelumoduuli, jonka nimi on Uusi tuote.
 
-    ![Esimerkki hero-moduulista.](./media/Hero.PNG)
+    ![Esimerkki hero-moduulista](./media/Hero.PNG)
 
 - **Ominaisuus** – Ominaisuussisältölohkon asettelumoduulia käytetään tuotteiden tai kampanjoiden markkinoinnissa kuvien ja tekstin yhdistelmän avulla. Ominaisuussisältöjä voidaan käyttää itsenäisesti tai niitä voidaan isännöidä karusellimoduulissa.
 
     Seuraava kuva näyttää esimerkin sisältölohkon moduulin sijoittelusta kotisivulle.
 
-    ![Esimerkkejä ominaisuusmoduuleista.](./media/Feature.PNG)
+    ![Esimerkkejä ominaisuusmoduuleista](./media/Feature.PNG)
 
 - **Laatta** – Sisältölohkon asettelumoduulin laattojen asettelua käytetään useiden tuotteiden tai tuoteluokkien esittelyyn käyttämällä monisarakkeisessa asettelussa olevien kuvien ja tekstien yhdistelmää. Aiemmin tässä ohjeaiheessa olleen aloitussivun kuvassa käytettiin laattojen asettelua kolmisarakkeisen asettelun **Kauppa - naiset**-, **Kauppa - miehet**- ja **Kauppa - lisävarusteet** -nimikkeissä.
 - **Videotoistin** – Videotoistinmoduulin avulla voidaan esitellä videosisältöä aloitussivulla. Aiemmin tässä ohjeaiheessa olleen aloitussivun kuva sisältää videotoistinmoduulin.
@@ -56,7 +61,7 @@ Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tieto
 
     Seuraavassa kuvassa on esimerkki aloitussivun tuotesuositusten moduuleista.
 
-    ![Esimerkkejä tuotesuositusten moduuleista.](./media/Recommendations.PNG)
+    ![Esimerkkejä tuotesuositusten moduuleista](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Kaikkia tässä olevia moduuleja voi käyttää millä tahansa sivuston sivulla. Niiden sijoittelu aloitussivulla on tärkeää, koska se on sivuston sivu, jolle asiakas siirtyy ensimmäisenä.
@@ -68,6 +73,3 @@ Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tieto
 [Ostoskorin ja maksusivun yleiskatsaus](quick-tour-cart-checkout.md)
 
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

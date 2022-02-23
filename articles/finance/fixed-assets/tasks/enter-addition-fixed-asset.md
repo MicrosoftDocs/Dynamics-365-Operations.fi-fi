@@ -2,23 +2,26 @@
 title: Käyttöomaisuuden lisäyksen määrittäminen
 description: Tässä menettelyssä kerrotaan, miten aiemmin määritettyyn käyttöomaisuuserään lisätään lisäys.
 author: saraschi2
+manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetAddition
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 966fd191ad876aae86ff2511d6981b0437679becbe4984b087c1975dece351b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc1e13863ae13daaa641f52f7a55e01fc1353dc1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442782"
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>Käyttöomaisuuden lisäyksen määrittäminen
 
@@ -43,6 +46,3 @@ Menettelyssä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytiet
     * Määritä **Pidentää käyttöikää** -kohdan arvoksi **Kyllä**, jos lisäys pidentää resurssin käyttöikää.  
     * Tämä kenttä on vain tiedoksi. Voit lisätä käyttöikää muokkaamalla käyttöomaisuuserän arvomallien ja/tai poistokirjojen käyttöikää.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

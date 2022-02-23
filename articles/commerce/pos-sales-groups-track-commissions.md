@@ -2,12 +2,15 @@
 title: Provisioiden seuranta myyntipisteessä (POS) myyntiryhmien avulla
 description: Vähittäismyynnin yleinen käytäntö on myynnin seuranta, jonka tekee asiakkaan kanssa työskennellyt päällikkö – avun tarjoaminen, lisämyynti ja tapahtumien käsittely.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770906"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411856"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Provisioiden seuranta myyntipisteessä (POS) myyntiryhmien avulla
 
@@ -69,7 +72,7 @@ Myymälälle on useita toimintoprofiilien asetuksia, jotka määrittävät myynt
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Myyntiedustajan tietojen näyttäminen myyntipisteen tapahtumanäytössä
 
-Myyntipisteen tapahtumanäytön asettelu ja sisältö ovat määritettävissä käyttämällä näyttöasettelun suunnittelutoimintoa ja myymälöihin, kassakoneisiin tai työntekijöille määritettyjen näyttöasettelujen avulla. **Myyntiedustaja**-kenttä voidaan lisätä Kuitti-ruudun Rivit-välilehteen.  Tämä näyttää määritetyn myyntiryhmän tunnuksen tapahtumanäytön kullekin riville.
+Myyntipisteen tapahtumanäytön asettelu ja sisältö ovat määritettävissä käyttämällä näyttöasettelun suunnittelutoimintoa ja myymälöihin, kassakoneisiin tai työntekijöille määritettyjen näyttöasettelujen avulla.**Myyntiedustaja**-kenttä voidaan lisätä Kuitti-ruudun Rivit-välilehteen. Tämä näyttää määritetyn myyntiryhmän tunnuksen tapahtumanäytön kullekin riville.
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Myyntiedustajatoimintojen lisääminen myyntipisteen painikeruudukoihin
 
@@ -77,14 +80,11 @@ Myyntipisteessä käyttäjät voivat määrittää painikeruudukoita, jotka on s
 
 | Toiminto                                 | kuvaus |
 |-------------------------------------------|-------------|
-| Aseta myyntiedustaja riville          | Tämä myyntipistetoiminto näyttää luettelon myymälän kelvollisista myyntiryhmistä (tunnus: nimi). Myyntiryhmän valitseminen tästä listasta asettaa arvon nykyiselle tapahtumariville. |
+| Aseta myyntiedustaja riville          | Tämä myyntipistetoiminto näyttää luettelon myymälän kelvollisista myyntiryhmistä (tunnus: nimi). Myyntiryhmän valitseminen tästä listasta asettaa arvon nykyiselle tapahtumariville. |
 | Poista myyntiedustaja riviltä        | Tämä myyntipistetoiminto poistaa nykyisen myyntiryhmän arvon nykyisestä tapahtumarivistä. |
-| Määritä tapahtuman myyntiedustaja   | Tämä myyntipistetoiminto näyttää luettelon myymälän kelvollisista myyntiryhmistä (tunnus: nimi). Myyntiryhmän valitseminen tästä listasta asettaa oletusarvon nykyiselle tapahtumalle. Kaikki olemassa olevat rivit sekä kaikki myöhemmin lisätyt rivit, joihin ei ole määritetty myyntiryhmää, määritetään. |
+| Määritä tapahtuman myyntiedustaja   | Tämä myyntipistetoiminto näyttää luettelon myymälän kelvollisista myyntiryhmistä (tunnus: nimi). Myyntiryhmän valitseminen tästä listasta asettaa oletusarvon nykyiselle tapahtumalle. Kaikki olemassa olevat rivit sekä kaikki myöhemmin lisätyt rivit, joihin ei ole määritetty myyntiryhmää, määritetään. |
 | Poista tapahtuman myyntiedustaja | Tämä myyntipistetoiminto poistaa nykyisen myyntiryhmän oletusarvon nykyisestä tapahtumasta. Se ei vaikuta tapahtumassa olemassa oleviin riveihin. |
 
 ## <a name="calculating-commissions"></a>Provisiolaskelmat
 
-Provisio lasketaan työntekijöille määritetyissä myynnin ryhmissä laskelman kirjaamisen tai myyntitilauksen kirjaamisen yhteydessä. Provision määrä määräytyy työntekijän provisio-osuuden mukaan, kuten myyntiryhmässä ja tapahtuman asiakkaan ja/tai tuotteiden liittyvissä provision laskenta-asetuksissa on määritetty.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Provisio lasketaan työntekijöille määritetyissä myynnin ryhmissä laskelman kirjaamisen tai myyntitilauksen kirjaamisen yhteydessä. Provision määrä määräytyy työntekijän provisio-osuuden mukaan, kuten myyntiryhmässä ja tapahtuman asiakkaan ja/tai tuotteiden liittyvissä provision laskenta-asetuksissa on määritetty.

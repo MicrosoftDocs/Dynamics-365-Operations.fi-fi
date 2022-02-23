@@ -2,30 +2,35 @@
 title: Tyylien esimääritysten käyttäminen
 description: Tässä ohjeaiheessa käsitellään sivuston tyylin esiasetuksia Microsoft Dynamics 365 Commercen sivustotyökalussa.
 author: phinneyridge
+manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 250f2386cefee8bef45df66c4eef31b4e7fc2686
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412039"
 ---
 # <a name="work-with-style-presets"></a>Tyylien esimääritysten käyttäminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään sivuston tyylin esiasetuksia Microsoft Dynamics 365 Commercen sivustotyökalussa.
+
+## <a name="overview"></a>Yleiskuvaus
 
 Tyylin esimääritys on tallennettu joukko kaikkia sivuston teemaan tallennettuja tyyliarvoja. Sen avulla voidaan välittömästi muuttaa sivuston ulkoasua sivustonmuodostustyökalun avulla. Tyylien esimääritykset antavat Commercen sivustonmuodostustyökalun kirjoittajien muuttaa, esikatsella ja aktivoida tyyliarvoja koko sivustollaan ilman CSS-tyylisivuja (CSS) tai teemojen käyttöönottoa. Kirjasintyylit, painiketyylit ja sivuston värit ovat tyypillisiä esimerkkejä tyylimuuttujista, joita voidaan hallita tyylien esimääritysten avulla.
 
@@ -116,11 +121,10 @@ Esimääritysten tyyliarvot ovat aktiivisia julkisessa sivustossa.
 
 [Favicon-kuvakkeen lisääminen](add-favicon.md)
 
+[Tervetuloviestin lisääminen](add-welcome-message.md)
+
 [Copyright-ilmoituksen lisääminen](add-copyright-notice.md)
 
 [Kielten lisääminen sivustoon](add-languages-to-site.md)
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

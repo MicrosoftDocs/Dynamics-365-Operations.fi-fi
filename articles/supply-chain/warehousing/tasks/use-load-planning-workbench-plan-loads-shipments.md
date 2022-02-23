@@ -1,25 +1,28 @@
 ---
 title: Kuormien ja lähetysten suunnittelu kuormasuunnittelun työtilassa
 description: Tässä aiheessa kerrotaan, miten myyntitilaukselle luodaan kuorma kuormasuunnittelun työtilan avulla.
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d641ece709d36d8f3ee29cde47918154835a5bb9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c37a98a3728cb1233a6e1207975a6b8f23f8120d
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572934"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427453"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Kuormien ja lähetysten suunnittelu kuormasuunnittelun työtilassa
 
@@ -58,6 +61,3 @@ Tässä aiheessa kerrotaan, miten myyntitilaukselle luodaan kuorma kuormasuunnit
 5. Valitse **Määritä**.
 6. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

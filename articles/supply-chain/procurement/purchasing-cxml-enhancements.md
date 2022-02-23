@@ -1,24 +1,27 @@
 ---
 title: Ostojen cXML-parannukset
 description: Ostojen cXML-parannusten ominaisuus perustuu aiemmin luotuun ulkoiseen PunchOut-luettelotoimintoon, jota käytetään ostoehdotuksissa.
-author: Henrikan
+author: dasani-madipalli
+manager: tfehr
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-08-03
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
-ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900702"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427504"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Ostojen cXML-parannukset
 
@@ -28,7 +31,7 @@ _Ostojen cXML-parannusten_ ominaisuus perustuu [aiemmin luotuun ulkoiseen luette
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Ostojen cXML-parannusten toiminnon käyttöönotto
 
-Voit ottaa toiminnon käyttöön avaamalla **[Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -sivun ja etsimällä toiminnon, jonka nimi on *Ostojen cXML-parannukset*. Valitse toiminto ja ota se käyttöön valitsemalla **Ota käyttöön nyt**. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+Voit ottaa toiminnon käyttöön avaamalla **[Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** -sivun ja etsimällä toiminnon, jonka nimi on *Ostojen cXML-parannukset*. Valitse toiminto ja ota se käyttöön valitsemalla **Ota käyttöön nyt**.
 
 Kun olet ottanut toiminnon käyttöön, sinun kannattaa määrittää asetukset kolmella seuraavalla alueella:
 
@@ -38,7 +41,7 @@ Kun olet ottanut toiminnon käyttöön, sinun kannattaa määrittää asetukset 
 
 Seuraavassa kuvassa on yhteenveto tästä määrityksestä.
 
-![cXML-toimintojen määritysalueet.](media/cxml-settings-areas.png "cXML-toimintojen määritysalueet")
+![cXML-toimintojen määritysalueet](media/cxml-settings-areas.png "cXML-toimintojen määritysalueet")
 
 Lisäksi on määritettävä [Ostotilauspyynnön erätyö](#po-batch). Tätä erätyötä käytetään vahvistettujen ostotilausten lähettämiseen.
 
@@ -46,7 +49,7 @@ Lisäksi on määritettävä [Ostotilauspyynnön erätyö](#po-batch). Tätä er
 
 **cXML-parametrit**-sivulla voit määrittää joitakin yleisiä asetuksia, joita sovelletaan ostotilausten lähettämisen toimintoon.
 
-![cXML-parametrien sivu.](media/cxml-parameters.png "cXML-parametrien sivu")
+![cXML-parametrien sivu](media/cxml-parameters.png "cXML-parametrien sivu")
 
 Siirry kohtaan **Ostot ja hankinnat \> Määritys \> cXML-hallinta \> cXML-parametrit** ja määritä seuraavat parametrit:
 
@@ -67,7 +70,7 @@ Aina kun vahvistat ostotilauksen, jossa **Lähetä ostotilaus cXML:llä** -valin
 - Jos haluat määrittää toimittajan siten, että se käyttää automaattisesti cXML:ää kaikissa uusissa ostotilauksissa, jotka luodaan ostoehdotuksesta, siirry kohtaan **Ostot ja hankinnat \>Toimittaja \> Kaikki toimittajat** ja avaa toimittajan tietosivu valitsemalla tai luomalla toimittaja. Määritä sitten **Ostotilausten oletusarvot** -pikavälilehdellä asetuksen **Lähetä ostotilaus cXML:llä** arvoksi _Kyllä_. Jos cXML:ää käytetään automaattisesti myös uusissa ostotilauksissa, joita **ei** luoda ehdotuksesta, sinun on myös määritettävä liittyvän ulkoisen luettelon **ENABLEMANUALPO**-tilausominaisuuden arvoksi _Tosi_, kuten myöhemmin tämän aiheen osassa [Määritä tilauksen ominaisuudet](#set-order-properties) kuvataan.
 - Yksittäisten ostotilausten tietosivuja voit avata valitsemalla tai luomalla ostotilauksen kohdassa **Ostot ja hankinnat \> Ostotilaukset \> Kaikki ostotilaukset**. Siirry **Otsikko**-näkymään ja määritä sitten **Määritys**-pikavälilehdessä asetus **Lähetä ostotilaus cXML:llä** tarpeen mukaan.
 
-![Toimittajien ostotilausten oletusasetukset.](media/cxml-order-defaults.png "Toimittajien ostotilausten oletusasetukset")
+![Toimittajien ostotilausten oletusasetukset](media/cxml-order-defaults.png "Toimittajien ostotilausten oletusasetukset")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Ulkoisen luettelon määrittäminen käyttämään cXML:ää
 
@@ -76,7 +79,7 @@ Voit määrittää PunchOut-toiminnon ja ostotilausten lähetystoiminnon kunkin 
 > [!NOTE]
 > Kun vahvistat ostotilauksen, joka voidaan lähettää cXML:llä, järjestelmä hakee ostotilaukseen liittyvän toimittajan ja hakee sitten ensimmäisen aktiivisen ulkoisen luettelon, joka on määritetty kyseiselle toimittajalle. Tämän jälkeen järjestelmä käyttää kyseisen ulkoisen luettelon asetuksia ostotilauksen lähettämiseen. Jos useita ulkoisia luetteloita on määritetty, järjestelmä käyttää vain ensimmäistä löytämäänsä ulkoista luetteloa ostotilauksen toimittajan perusteella. Siksi on suositeltavaa luoda kullekin toimittajalle vain yksi ulkoinen luettelo.
 
-![Ulkoisen luettelon asetukset.](media/cxml-supplier-catalog.png "Ulkoisen luettelon asetukset")
+![Ulkoisen luettelon asetukset](media/cxml-supplier-catalog.png "Ulkoisen luettelon asetukset")
 
 ### <a name="set-the-punchout-protocol-type"></a>PunchOut-toiminnon protokollatyypin määrittäminen
 
@@ -141,13 +144,13 @@ Kun olet määrittänyt kaikki ominaisuudet ja ulkoisen luettelon muut asetukset
 
 Kuten [Tilausten ominaisuuksien määrittäminen](#set-order-properties) -osassa mainitaan, voit määrittää ominaisuuden **POCOMMENTS** ja/tai ominaisuuden **VENDCOMMENTS** arvoksi _TOSI_ ulkoisen luettelon määrityksissä, jos haluat, että toimitettu cXML sisältää tekstiä siihen liittyvästä ostotilauksesta ja/tai toimittajatietueista. Tässä osassa on lis tietoja siitä, miten järjestelmä valitsee ja käsittelee nämä liitteet, jos niitä käytetään.
 
-Voit määrittää kaikki järjestelmän etsimät muistiinpanotyypit kohdassa **Ostot ja hankinnat \> Määritys \> Lomakkeet \> Lomakkeen määritys**. Määritä sitten **Ostotilaus** välilehdessä **Sisällytä tämäntyyppiset asiakirjat** kentän arvoksi niiden muistiinpanojen tyypit, joita haluat voida sisällyttää. Vain tekstihuomautukset sisällytetään, ei asiakirjaliitteitä.
+Voit määrittää kaikki järjestemlän etsimät muistiinpanotyypit kohdassa **Ostot ja hankinnat \> Määritys \> Lomakkeet \> Lomakkeen määritys**. Määritä sitten **Ostotilaus** välilehdessä **Sisällytä tämäntyyppiset asiakirjat** kentän arvoksi niiden muistiinpanojen tyypit, joita haluat voida sisällyttää. Vain tekstihuomautukset sisällytetään, ei asiakirjaliitteitä.
 
-![Lomakkeen määrityssivu.](media/cxml-form-setup.png "Lomakkeen määrityssivu")
+![Lomakkeen määrityssivu](media/cxml-form-setup.png "Lomakkeen määrityssivu")
 
 Ostotilaukset lisätään ostotilaukseen, vain, jos niiden **Tyyppi**-kentän arvona on se arvo, jonka valitset **Sisällytä tämäntyyppiset asiakirjat** -kentässä, ja niiden **Rajoitus**-kentän arvona on _Ulkoinen_. Voit luoda, tarkastella tai muokata ostotilauksen liitteitä siirtymällä kohtaan **Ostot ja hankinnat \> Kaikki ostotilaukset**, valitsemalla tai luomalla ostotilauksen ja sitten valitsemalla **Liitteet**-painikkeen (paperiliitinsymboli) oikeassa yläkulmassa.
 
-![Liitetty muistiinpano, joka on määritetty toimittajalle lähetettäväksi.](media/cxml-note-to-vendor.png "Liitetty muistiinpano, joka on määritetty toimittajalle lähetettäväksi")
+![Liitetty muistiinpano, joka on määritetty toimittajalle lähetettäväksi](media/cxml-note-to-vendor.png "Liitetty muistiinpano, joka on määritetty toimittajalle lähetettäväksi")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>Ulkoisen luettelon PunchOut-toiminnon cXML-ostoskorisanomalokin tarkastelu
 
@@ -155,7 +158,7 @@ Kun **PunchOut-protokollatyyppi**-kenttä määritetään ulkoisen luettelon osa
 
 Jos haluat avata ulkoisen luettelon lokin, valitse haluamasi luettelo ja valitse sitten toimintoruudussa **cXML-ostoskorin sanomaloki**. **cXML-ostoskorin sanomaloki** -sivulla näkyy luettelo palautetusta ostoskoreista, näihin ostoskoreihin liittyvän XML-tiedoston sekä rivit, jotka on luotu asiaan liittyvässä ostoehdotuksessa.
 
-![cXML-ostoskorin sanomalokisivu.](media/cxml-cart-message-log.png "cXML-ostoskorin sanomalokisivu")
+![cXML-ostoskorin sanomalokisivu](media/cxml-cart-message-log.png "cXML-ostoskorin sanomalokisivu")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>Ulkoisen luettelon PunchOut-tominnon ulkoisten elementtien määrittäminen
 
@@ -178,21 +181,21 @@ Voit lisätä ulkoisia elementtejä ulkoiseen luetteloon seuraavasti.
         - **Lastname** – Käytä ulkoista luetteloa käyttävälle käyttäjälle määritetyn yhteyshenkilön sukunimeä.
         - **Puhelinnumero** – Käytä ulkoista luetteloa käyttävälle käyttäjälle määritetyn yhteyshenkilön ensisijaista puhelinnumeroa.
 
-![Ulkoisten elementtien asetukset.](media/cxml-extrinsics.png "Ulkoisten elementtien asetukset")
+![Ulkoisten elementtien asetukset](media/cxml-extrinsics.png "Ulkoisten elementtien asetukset")
 
 Käyttäjä tai järjestelmänvalvoja ei näe ulkoisia elementtejä, koska niitä ei lisätä, ennen kuin käyttäjä suorittaa PunchOut-toiminnon. Ne lisätään automaattisesti cXML-määritysmyyntösanoman elementtien **BuyerCookie** ja **BrowserFromPost** väliin. Siksi niitä ei tarvitse määrittää manuaalisesti XML-tidostossa, kun määrität ulkoista luetteloa.
 
-![Ulkoiset elementit lisätään XML-tiedostoon.](media/cxml-extrinsics-xml.png "Ulkoiset elementit lisätään XML-tiedostoon")
+![Ulkoiset elementit lisätään XML-tiedostoon](media/cxml-extrinsics-xml.png "Ulkoiset elementit lisätään XML-tiedostoon")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Ostotilauksen luonti ja käsittely
 
 Kun luot toimittajalle ostotilauksen, siinä käytetään kyseisen toimittajan **Lähetä ostotilaus cXML:llä** -asetuksen määritystä. Asetus on kuitenkin edelleen kätettävissä ostotilauksen **Otsikko**-näkymän **Määritys**-pikavälilehdessä, joten voit muuttaa sitä myöhemmin tarpeen mukaan.
 
-![Ostotilaus määritetään käyttämään cXML:ää.](media/cxml-purchase-order.png "Ostotilaus määritetään käyttämään cXML:ää")
+![Ostotilaus määritetään käyttämään cXML:ää](media/cxml-purchase-order.png "Ostotilaus määritetään käyttämään cXML:ää")
 
 Kun luot ostotilauksen ostoehdotuksesta, joka on peräisin PunchOut-työnkulusta, kaikki pakolliset rivitiedot täytetään. Tämän jälkeen voit lisätä ostotilausrivejä manuaalisesti tai kopioida niitä muista ostotilauksista. Muista määrittää kaikki pakolliset kentät. Näihin pakollisiin kenttiin kuuluu ulkoinen viitenumero, joka on cXML-sanomassa käytettävä toimittajanumero.
 
-![Esimerkki ulkoisesta viitenumerosta.](media/cxml-line-details.png "Esimerkki ulkoisesta viitenumerosta")
+![Esimerkki ulkoisesta viitenumerosta](media/cxml-line-details.png "Esimerkki ulkoisesta viitenumerosta")
 
 Kun olet täyttänyt kaikki ostotilauksen tiedot, muista vahvistaa se. Sanomaa ei lähetetä, ellei ostotilausta ole vahvistettu. Valitse toimintoruudussa **Osto**-välilehdellä **Toiminnot**-ryhmässä **Vahvista** vahvistaaksesi ostotilauksen. 
 
@@ -200,17 +203,17 @@ Kun ostotilaus on vahvistettu, voit tarkastella vahvistuksen tilaa **Ostotilausv
 
 Kullakin ostotilauksella voi olla useita vahvistuksia. Kukin vahvistus merkititään lisänumerolla. Seuraavassa kuvassa ostotilaus on *00000275* ja vahvistus *00000275-1*. Tämä numerointi vastaa Supply Chain Managementin vakiotoimintoa, jossa ostotilauksen muutokset ja siten toimittajalle lähetettävän cXML-sanoman tyyppi tunnistetaan vahvistuksen perusteella. Kuten kuvassa näkyy, **Ostotilausvahvistukset**-sivu sisältää myös kentät **Tilauksen lähetystila** ja **Tilauspyynnön toimittajan tila**. Lisätietoja tällä sivulla mahdollisesti näkyvistä eri tila-arvoista esitetään myöhemmin tämän aiheen osassa [Ostotilauspyynöjen seuranta](#monitor-po-requests).
 
-![Ostotilausvahvistusten sivu.](media/cxml-po-confirmations.png "Ostotilausvahvistusten sivu")
+![Ostotilausvahvistusten sivu](media/cxml-po-confirmations.png "Ostotilausvahvistusten sivu")
 
 Jos haluat tarkastella lisätietoja asaikirjasta, valitse ruudukon yläpuolelta **Ostotilauspyyntö**.
 
 **Ostotilauspyyntö**-sivulla on kaksi ruudukkoa. Sivun yläosassa olevalla ruudukolla on yksi tietue kutakin lähetettäväksi merkittyä ostotilausta varten. Sivun alaosan **Ostotilauspyyntöjen historia** -välilehden ruudukossa voi olla useita tietueita valitulle ostotilaukselle, jotta kunkin vahvistuksen tila ilmaistaisiin. Seuraavassa kuvassa näkyy ostotilaus 00000275 yläruudukossa ja tiedosto 00000275-1 **Ostotilauspyyntöjen historia** -välilehden ruudukossa.
 
-![Ostotilauspyyntöjen sivu.](media/cxml-po-request.png "Ostotilauspyyntöjen sivu")
+![Ostotilauspyyntöjen sivu](media/cxml-po-request.png "Ostotilauspyyntöjen sivu")
 
 Jos erätyö on määritetty ja sitä suoritetaan, asiakirja lähetetään. Voit tarkastella tilan muutosta, kun asiakirja on lähetetty. Seuraavassa kuvassa **Tilauksen lähetysarvo**-kentän arvona on _Lähetetty_. **Tilauspyynnön toimittajan tila** -kentän arvona on _Kuitattu_, millä ilmaistaan, että toimittaja on saanut asiakirjan ja on pystynt lukemaan sen ja tallentamaan sen järjestelmään. **Ostotilauspyyntöjen historia** -välilehdessä näkyy aika, jona asiakirja lähetettiin. Lisätietoja tällä sivulla mahdollisesti näkyvistä eri tila-arvoista esitetään osassa [Ostotilauspyynöjen seuranta](#monitor-po-requests).
 
-![Tilasanomat ostotilauspyyntöjen sivulla.](media/cxml-po-request-2.png "Tilasanomat ostotilauspyyntöjen sivulla")
+![Tilasanomat ostotilauspyyntöjen sivulla](media/cxml-po-request-2.png "Tilasanomat ostotilauspyyntöjen sivulla")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Ostotilauspynnön erätyön ajoittaminen
 
@@ -226,7 +229,7 @@ Prosessi etsii osto tilauspyyntöasiakirjoja, joiden tila on *Odottaa*. Jos sinu
 
 Kun cXML:llä lähetettävissä olevat tilaukset vahvistetaan, ne siirtyvät _Odottaa_-tilaan. Kuten esitimme [Ostotilauksen luominen ja käsitteleminen](#create-po) -osassa, voit tarkastella ostotilauksen tilaa **Ostotilauspyyntö**-sivulla. Kullakin ostotilauspyynnöllä voi olla yksi useista tiloista sen parametreista ja tiedoista riippuen. Tässä osassa kuvataan eri tila tyyppejä ja arvoja, joita niillä voi olla. Näiden tietojen avulla voit hallita ongelmia ja ymmärtää ostotilausten tilan.
 
-![Ostotilauksen tila ostotilauspyyntöjen sivulla.](media/cxml-monitor-po-request.png "Ostotilauksen tila ostotilauspyyntöjen sivulla")
+![Ostotilauksen tila ostotilauspyyntöjen sivulla](media/cxml-monitor-po-request.png "Ostotilauksen tila ostotilauspyyntöjen sivulla")
 
 **Ostotilauspyyntö**-sivun yläosan ruudukossa voivat näkytä seuraavat tila-arvot:
 
@@ -262,18 +265,15 @@ Kun cXML:llä lähetettävissä olevat tilaukset vahvistetaan, ne siirtyvät _Od
 
 Voit tarkastella ostopyyntösanoman XML-tiedostao valitsemalla **Pyydä XML-teksti** -välilehti **Ostotilauspyyntö**-sivun alaosasta. Tämän välilehden tiedoista voi olla hyötyä testauksen tai virheiden tarkistamisen yhteydessä. Jos haluat helpottaa tietojen lukemista, voit tarkastella sitä muotoiltuna sanomana. Kopioi välilehden sisältö tekstitiedostoon ja avaa se sitten XML-editorissa.
 
-![Pyydä XML-teksti -välilehti.](media/cxml-request-xml-text.png "XML-tekstin pyytämisen välilehti")
+![XML-tekstin pyytämisen välilehti](media/cxml-request-xml-text.png "XML-tekstin pyytämisen välilehti")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Toimittajan vastauksen tietojen tarkastelu
 
 Voit tarkastella toimittajan kuittauksen tai virhevastauksen valitsemalla **Vastaus-XML** -välilehden **Ostotilauspyyntö**-sivun alaosasta.
 
-![Vastaus-XML-välilehti.](media/cxml-response-xml.png "Vastau-XML-välilehti")
+![Vastau-XML-välilehti](media/cxml-response-xml.png "Vastau-XML-välilehti")
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköiseen hankintaan siirtymisessä käytettyjen ulkoisten luetteloiden määrittäminen](set-up-external-catalog-for-punchout.md)
 - [Siirtyminen sähköiseen hankintaan ulkoisten luetteloiden avulla](use-external-catalogs-for-punchout.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

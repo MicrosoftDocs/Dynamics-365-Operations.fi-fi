@@ -1,10 +1,12 @@
 ---
 title: Ylläpitoaikataulu
 description: Tässä ohjeaiheessa kerrotaan ylläpitoaikataulusta resurssien hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectCalendarCreateWO, EntAssetObjectCalendarListPagePoolsOpen, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePreviewPart, EntAssetObjectCalendarEdit, EntAssetObjectCalendarAdjust, EntAssetObjectCalendarDiscard, EntAssetObjectCalendarInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 40df8e6cba824f90e13b46cc258c76bef993a3e2dd9c35566d8c6a622ce4eb09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d235a3797b1acee9c92c3d81e8b4a20e1f7c5c75
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738316"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017949"
 ---
 # <a name="maintenance-schedule"></a>Ylläpitoaikataulu
 
@@ -63,8 +65,5 @@ Ylläpitoaikataulun avaaminen:
 
 Alla olevassa kuvassa näkyy **Kaikki ylläpitoaikataulut** -luettelosivu.
 
-![Kuva 1.](media/16-preventive-maintenance.png)
+![Kuva 1](media/16-preventive-maintenance.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

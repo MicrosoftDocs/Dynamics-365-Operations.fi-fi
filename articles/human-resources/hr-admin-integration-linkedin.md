@@ -2,12 +2,15 @@
 title: LinkedIn Talent Hub -integrointi
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin ja LinkedIn Talent Hubin integroinnin määrittämistä.
 author: jaredha
+manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fb75c391809f1ce5c7d48728a735f347ef1784ed
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441262"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527882"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>LinkedIn Talent Hub -integrointi
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](includes/preview-feature.md)]
 
-> [!IMPORTANT]
-> Tässä aiheessa kuvattu Dynamics 365 Human Resourcesin ja LinkedIn Talent Hubin integraatio poistetaan käytöstä 31. joulukuuta 2021. Integrointipalvelu ei ole enää käytettävissä tämän päivämäärän jälkeen. Organisaatiot, jotka eivät vielä käytä integrointipalvelua, eivät voi ottaa palvelua käyttöön ennen sen käytöstä poistamista.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) on ATS (hakijoiden seurantajärjestelmä) -ympäristö. Sen avulla voit hakea, hallita ja palkata työntekijöitä samassa paikassa. Kun Microsoft Dynamics 365 Human Resources integroidaan LinkedIn Talent Hubiin, Human Resourcesissa on helppo luoda työntekijätietueita toimeen palkatuille hakijoille.
 
@@ -47,7 +49,7 @@ Järjestelmänvalvojan on tehtävä määritykset, joita tarvitaan LinkedIn Tale
 
 5. Valitse **Dynamics 365 Human Resources** -sivulla ympäristö, johon LinkedIn Talent Hub linkitetään, ja valitse sitten **Linkitä**.
 
-    ![LinkedIn Talent Hubin käyttöönotto.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hubin käyttöönotto](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Linkityksen voi tehdä vain sellaisiin ympäristöihin, joissa linkittäjän käyttäjätilillä on järjestelmänvalvojan oikeudet sekä Human Resources -ympäristössä että liitetyissä Power Apps -ympäristössä. Jos Human Resourcesin linkkisivulla ei ole yhtään ympäristöä, varmista, että vuokraajan Human Resources -ympäristöillä on käyttöoikeus ja että linkkisivulle kirjautumiseen käytetyllä käyttäjällään sekä Human Resources- että Power Apps -ympäristön järjestelmänvalvojan oikeudet.
@@ -90,7 +92,7 @@ LinkedIn Talent Hub -sovittimeen on luotava sovelluskäyttäjä, jotta sovittime
 
 6. Voit vaihtaa luettelon yläpuolella olevassa avattavassa valikossa **Aktivoidut käyttäjät** -oletusnäkymän **Sovelluskäyttäjät**-näkymään.
 
-    ![Sovelluskäyttäjät-näkymä.](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Sovelluskäyttäjät-näkymä](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Valitse työkalurivillä **Uusi**.
 
@@ -100,7 +102,7 @@ LinkedIn Talent Hub -sovittimeen on luotava sovelluskäyttäjä, jotta sovittime
     2. Määritä **Käyttäjänimi**-kentän arvoksi **Dynamics365 HR LinkedIn HRIS -integraatio**.
     3. Määritä **Sovellustunnus**-kentän arvoksi **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
     4. Anna **Etunimi**-, **Sukunimi**- ja **Ensisijainen sähköposti** -kenttiin jokin arvo.
-    5. Valitse työkalurivillä **Tallenna \& sulje**.
+    5. Valitse työkalurivillä **Tallenna ja sulje**.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Käyttöoikeusroolin määrittäminen uudelle käyttäjälle
 
@@ -125,14 +127,14 @@ Kun uusi sovelluskäyttäjä on tallennettu ja suljettu edellisessä osassa, ole
     - **Nimi**: anna aiemmin luodun Power Appsin käyttöoikeusroolin nimi, kuten **LinkedIn Talent Hub HRIS integraatio**.
     - **Käyttäjätunnus**: valitse käyttäjä, jolla on tietojen kirjoitusoikeudet henkilöstöhallinnossa.
 
-### <a name="create-the-table-in-dataverse"></a>Taulun luominen Dataversessa
+### <a name="create-the-entity-in-common-data-service"></a>Yksikön luominen Common Data Servicessa
 
 > [!IMPORTANT]
-> LinkedIn Talent Hub -integraatio määräytyy Human Resourcesille Dataverse-virtuaalitaulukoiden mukaan. Määritysten tätä vaihetta varten on määritettävä virtuaalitaulukoita. Lisätietoja virtuaalitaulukoiden määrittämisestä on kohdassa [Dataversen virtuaalitaulukoiden määrittäminen](./hr-admin-integration-common-data-service-virtual-entities.md).
+> LinkedIn Talent Hub -integraatio määräytyy Human Resourcesin Common Data Servicessa virtuaaliyksiköiden mukaan. Määritysten tätä vaihetta varten on määritettävä virtuaaliyksiköitä. Lisätietoja virtuaaliyksiköiden määrittämisestä on kohdassa [Common Data Servicen virtuaaliyksiköiden määrittäminen](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-1. Avaa Human Resourcesissa **Dataverse-integraatio** -sivu.
+1. Avaa Human Resourcesissa **Common Data Service (CDS) -integraatio** -sivu.
 
-2. Valitse **Virtuaalitaulukot**-välilehti.
+2. Valitse **Virtuaaliyksiköt**-välilehti.
 
 3. Etsi **LinkedInin viety ehdokas** suodattamalla yksikköluetteloa yksikön otsikon perusteella.
 
@@ -162,7 +164,7 @@ Kun hakija on siirtynyt työhönottoprosessin läpi ja hänet on palkattu, hakij
     - Anna **Sijainti**-kentässä sijainti, joka on työntekijän ensisijainen työpaikka.
     - Anna tai tarkista työntekijän sähköpostiosoite.
 
-![Vie HRIS-järjestelmään -ruutu LinkedIn Talent Hubissa.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Vie HRIS-järjestelmään -ruutu LinkedIn Talent Hubissa](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Käyttöönoton päättäminen Human Resourcesissa
 
@@ -186,8 +188,5 @@ Seuraava tiedot tuodaan, ja ne sisältyvät työntekijätietueeseen:
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Määritä Dataverse -virtuaalitaulukot](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Mikä on Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Common Data Service -virtuaaliyksiköiden määrittäminen](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Mikä on Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)

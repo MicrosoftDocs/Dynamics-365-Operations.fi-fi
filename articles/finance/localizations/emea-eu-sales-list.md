@@ -2,24 +2,27 @@
 title: EU:n arvonlisäveron yhteenvetoilmoitus
 description: Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33a17461038d3e81d3f3a827e52c9cfd781a5874d45c262ee9006564fb3d489d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780341"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407883"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-myyntiluettelon raportointi
 
@@ -27,7 +30,8 @@ ms.locfileid: "6780341"
 
 Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 
-## <a name="eu-sales-list-reporting"></a>EU:n arvonlisäveron yhteenvetoilmoitus
+<a name="eu-sales-list-reporting"></a>EU:n arvonlisäveron yhteenvetoilmoitus
+-----------------------
 
 Toimittajan, joka toimittaa EU:n sisällä tavaroita tai palveluita Euroopan Unionin (EU) sisällä sijaitseville yrityksille, on tehtävä ilmoitus EU-myynnistä (EU myyntiluettelo, ESL). Yleensä ESL on toimitettava veroviranomaisille viimeistään ESL:n kattaman ajanjakson päättymisen jälkeisen kuukauden viimeisenä päivänä. Toimittajan on ilmoitettava ESL:llä arvonlisäverotunnistenumeronsa ja sen on myös ilmoitettava asiakkaittain seuraavat tiedot:
 
@@ -156,6 +160,3 @@ Saatettuasi tietyn kauden raportointiprosessin päätökseen (esimerkiksi, kun v
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

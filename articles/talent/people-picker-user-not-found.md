@@ -60,6 +60,3 @@ Katso, mikä on käyttäjän **UserType**-ominaisuus. Jos **UserType** on tyhjä
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
 ```
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

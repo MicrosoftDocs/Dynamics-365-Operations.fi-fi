@@ -1,34 +1,32 @@
 ---
 title: Human Resources ei näy Microsoft Dynamics 365 -sovelluksissa
-description: Tässä aiheessa käsitellään, miten toimitaan, jos Microsoft Dynamics 365 Human Resources ei ole Microsoft Dynamics 365 -sovellusten luettelossa.
-author: twheeloc
-ms.date: 08/19/2021
+description: Tässä artikkelissa kerrotaan, mitä on tehtävä, jos asiakas ei näe Microsoft Dynamics 365 Human Resources -sovellusta muiden Microsoft Dynamics 365 -sovellusten joukossa.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4bdbe6c4065a8266fd30a3b093743ded91524f6a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069677"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418306"
 ---
-# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources -sovellus ei näy Microsoft Dynamics 365 -sovelluksissa
+# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources ei näy Microsoft Dynamics 365 -sovelluksissa
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-**Ongelma**
+**Lähetä**
 
 Asiakas ei näe Dynamics 365 Human Resourcesia Microsoft Dynamics 365 -sovellusten joukossa.
 
@@ -42,11 +40,11 @@ Käyttäjä on lisättävä ympäristön tekijän rooliin Microsoft Power Appsin
 
 3. Valitse **Ympäristöroolit**-välilehden **Suojaus**-välilehdessä **Ympäristön tekijä**.
 
-    ![Ympäristöroolit-välilehti.](media/environment-roles.png)
+    ![Ympäristöroolit-välilehti](media/environment-roles.png)
 
 4. Lisää käyttäjä tai organisaatio **Käyttäjät**-välilehdessä.
 
-    ![Käyttäjät-välilehti.](media/environment-maker.png)
+    ![Käyttäjät-välilehti](media/environment-maker.png)
 
 5. Valitse **Tallenna**.
 
@@ -54,9 +52,6 @@ Käyttäjä on lisättävä ympäristön tekijän rooliin Microsoft Power Appsin
 
 7. Päivitä käyttäjän sovellukset valitsemalla **Synkronoi**.
 
-    ![Synkronointipainike.](media/get-more.png)
+    ![Synkronointipainike](media/get-more.png)
 
     Kun synkronointi on valmis, Human Resources näkyy aloitussivulla.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Sisältölohkomoduuli
 description: Tässä ohjeaiheessa on tietoja sisältölohkomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,21 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726436"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411909"
 ---
 # <a name="content-block-module"></a>Sisältölohkomoduuli
+
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja sisältölohkomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Sisältölohkomoduulia käytetään tuotteiden tai kampanjoiden markkinoinnissa yhdistämällä kuvia ja tekstiä. Jälleenmyyjä voi lisätä sisältölohkomoduulin esimerkiksi sähköisen kaupankäynnin sivuston aloitussivulle mainostamaan uutta tuotetta ja houkuttelemaan asiakkaita.
 
@@ -46,15 +52,15 @@ Teema voi lisäksi tuoda esille kunkin asettelun erilaisia ominaisuuksia. Teeman
 
 Seuraavassa kuvassa on esimerkki hero-asettelua käyttävästä sisältölohkomoduulista.
 
-![Esimerkki hero-moduulista.](./media/Hero.PNG)
+![Esimerkki hero-moduulista](./media/Hero.PNG)
 
 Seuraavassa kuvassa on esimerkki ominaisuusasettelua käyttävästä sisältölohkomoduulista.
 
-![Esimerkkejä ominaisuusmoduuleista.](./media/Feature.PNG)
+![Esimerkkejä ominaisuusmoduuleista](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Sisältölohkomoduulin ominaisuudet
 
-| Ominaisuuden nimi  | Arvot | kuvaus |
+| Ominaisuuden nimi  | Arvot | Kuvaus |
 |----------------|--------|-------------|
 | Kuva          | Kuvatiedosto | Kuvan avulla voidaan esitellä tuotetta tai kampanjaa. Kuvan voi ladata kuvavalikoimaan. Myös olemassa olevaa kuvaa voi käyttää. |
 | Otsikko        | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Jokaisella hero-moduulilla voi olla otsikko. Oletusarvoisesti otsikossa käytetään **H2**-otsikkotunnusta. Tunnuksen voi kuitenkin muuttaa, jotta helppokäyttötoimintojen vaatimukset täyttyvät. |
@@ -101,6 +107,3 @@ Voit lisätä hero-moduulin uudelle sivulle ja määrittää pakolliset ominaisu
 [Tekstilohkomoduuli](add-content-rich-block.md)
 
 [Videotoistinmoduuli](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

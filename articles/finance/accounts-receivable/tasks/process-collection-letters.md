@@ -2,23 +2,26 @@
 title: Käsittele maksukehotuksia
 description: Tässä aiheessa käsitellään, miten maksukehotuksia luodaan, tulostetaan ja kirjataan.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 9355409076886b70ad224c82561cf0cf81066e9b97e1a22ad59ce04be2c90158
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762112"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442704"
 ---
 # <a name="process-collection-letters"></a>Käsittele maksukehotuksia
 
@@ -85,6 +88,3 @@ Ohita maksut ja hyvityslaskut maksukehotuksen koodia laskettaessa seuraavasti.
 
 1. Valitse ensin **Siirtymisruutu > Moduulit > Luotonvalvonta > Asetukset > Myyntireskontran parametrit** ja sitten **Perintä**-välilehti. 
 2. Vaihda **Älä huomioi maksuja tai hyvityslaskuja maksukehotuksen koodin laskemisessa** -arvoksi **Kyllä**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

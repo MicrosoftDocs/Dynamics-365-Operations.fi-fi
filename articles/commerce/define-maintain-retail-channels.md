@@ -1,14 +1,17 @@
 ---
 title: Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
-description: Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Dynamics 365 Commercessa myymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen myymälän määrittämistä ja sen jälkeen.
+description: Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Dynamics 365 Commerceissa myymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen myymälän määrittämistä ja sen jälkeen.
 author: mugunthanm
+manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -16,18 +19,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ef06d79e1fa4d024dc1de0125cc72bdba5671aad384c7988dc63d407323b7abc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760199"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411888"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
 
 [!include [banner](includes/banner.md)]
 
-Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Dynamics 365 Commercessa myymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen myymälän määrittämistä ja sen jälkeen.
+Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Dynamics 365 Commerceissa myymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen myymälän määrittämistä ja sen jälkeen.
 
 Commerce tukee useita kanavia, kuten verkkokauppoja, verkkokauppoja, puhelinkeskuksia ja perinteisiä myymälöitä. Perinteistä myymälöitä kutsutaan myymäläksi. Jokaisella myymälällä voi olla omat maksuvälineet, hintaryhmät, kassakoneet, tulo- ja kulutilit sekä oma henkilökunta. Myymälälle on määritettävä kaikki edellä luetellut elementit, ennen kuin se voidaan luoda. Kun olet luonut myymälän, voit määrittää myymälän tuotteet. Voit myös liittää työntekijät, kassapäätteet ja asiakkaat myymälään. Lopuksi lisäät uuden myymälän organisaatiohierarkiaan.
 
@@ -86,6 +89,3 @@ Commerce käyttää organisaatiohierarkioita määrittämään vähittäismyynni
 > [!NOTE]
 > Jos haluat käyttää Commercen myyntitoimintoa, **usean toimitusasiakkaan** konfigurointiavain on otettava käyttöön. Tämä konfigurointiavain löytyy **Kaupan määritysavaimet** -osiosta kohdasta **Järjestelmänhallinta**\> **Asetukset** \> **Käyttöoikeuden määritys**. Tämä vaaditaan, koska myyntitilauksen rivitasolla määritettyjen toimitusosoitteiden perusteella suoritetaan erilaisia tarkistuksia.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

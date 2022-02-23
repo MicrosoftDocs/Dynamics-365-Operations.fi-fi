@@ -1,31 +1,33 @@
 ---
 title: Budjettisuunnittelun päivitys
-description: Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.
-author: panolte
+description: Microsoft Dynamics AX 2012:n ja Dynamics 365 Financein budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.
+author: ryansandness
+manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
-ms.author: panolte
+ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769188"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680995"
 ---
 # <a name="upgrade-budget-planning"></a>Budjettisuunnittelun päivitys
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics AX 2012:n ja Dynamics 365 Financen budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.  
+Microsoft Dynamics AX 2012:n ja Dynamics 365 Financein budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.  
 
 Financen budjettisuunnittelu sisältää useita parannuksia, jotka eivät olleet saatavilla Dynamics AX 2012:ssa. Tässä ohjeaiheessa kerrotaan muutokset, jotka päivittävän asiakkaan on tehtävä. Siinä osoitetaan myös uudet ominaisuuksia, jotka tulisi ottaa huomioon päivitysprosessin aikana. Koska muutokset ovat kattavia, olemassa olevia budjettisuunnitelmia ei voi avata ennen kuin tässä ohjeaiheessa kuvatut muutokset on tehty. Raporttien tulisi toimia, eivätkä ne vaadi lisämuutoksia.
 
@@ -160,6 +162,3 @@ Järjestelmään on lisätty useita tietoyksiköitä, jotka mahdollistavat budje
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

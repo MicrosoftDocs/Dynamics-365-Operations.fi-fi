@@ -52,6 +52,3 @@ Irtisanomisen syy -oletuskoodiin on tehty muutos, kun sitä käytetään työtek
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Työn kompensaatiotasojen uuden yksikön luonti
 Luotiin uusi Data Management Framework (DMF). Yksikkö mahdollistaa kunkin järjestelmässä määritetyn työn kompensaatiotasojen, markkina-arvojen ja kyselytietojen luonnin ja päivittämisen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

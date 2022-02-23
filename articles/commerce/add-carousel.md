@@ -2,12 +2,15 @@
 title: Karusellimoduuli
 description: Tässä ohjeaiheessa on tietoja karusellimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cfbe254d225366f89779ffeef410bb0b1a29056e51a4719106e9bc495b898161
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721052"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411898"
 ---
 # <a name="carousel-module"></a>Karusellimoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja karusellimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Karusellimoduulia käytetään useiden kampanjanimikkeiden (mukaan lukien kuvat) sijoittamisessa kiertävään karusellibanneriin, jota asiakkaat voivat selata. Esimerkiksi jälleenmyyjä voi käyttää aloitussivulla karusellimoduulia useiden uusien tuotteiden tai kampanjoiden esittelyyn.
 
@@ -40,7 +45,7 @@ Voit lisätä sisältölohkomoduuleja karusellimoduulin sisälle. Karusellimoduu
 
 Seuraavassa kuvassa näkyy esimerkki karusellimoduulista, jota käytetään kotisivulla. Tämä karusellimoduuli sisältää useita sisältölohkon kohteita.
 
-![Esimerkki karusellimoduulista.](./media/Hero.PNG)
+![Esimerkki karusellimoduulista](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Karusellimoduulin ominaisuudet
 
@@ -81,6 +86,3 @@ Voit lisätä karusellimoduulin uudelle sivulle ja määrittää pakolliset omin
 [Sisältölohkomoduuli](add-hero-module.md)
 
 [Videotoistinmoduuli](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

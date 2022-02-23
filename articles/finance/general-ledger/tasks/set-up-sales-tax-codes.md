@@ -1,24 +1,27 @@
 ---
 title: Määritä arvonlisäverokoodit
-description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää arvonlisäverokoodit Dynamics 365 Financessa.
+description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää arvonlisäverokoodit Dynamics 365 Financeissa.
 author: twheeloc
-ms.date: 09/27/2021
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 3dad006b486f7cd6714c713a3bd83a95fdf0d2b5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562099"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442675"
 ---
 # <a name="set-up-sales-tax-codes"></a>Määritä arvonlisäverokoodit
 
@@ -38,19 +41,8 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 8. Valitse käyttöliittymän yläosan **toimintoruudussa** **Arvonlisäverokoodi**.
 9. Valitse **Arvot**.
 10. Kirjoita tämän verokoodin arvo **Arvo**-sarakkeeseen.
-
-    Jos **Yksikkökohtainen summa** -kohta on valittu, arvolisävero laskentaan kertomalla **Laskenta**-pikavälilehden **Alkuperä**-kentän arvo tapahtuman määrällä.  Jos verokoodi ei ole yksikköperusteinen vero, arvo ilmaistaan prosenttiosuutena, joka kohdistetaan tämän verokoodin alkuperään arvonlisäverosumman laskemiseksi.     
-
+    - Jos Summa Alkuperäinen-kentän Yksikkökohtainen summa -kohta on valittu, **Laskenta**-pikavälilehdessä arvo kerrotaan tapahtuman määrällä, kun arvonlisäverosumma lasketaan.  Jos verokoodi ei ole yksikköperusteinen vero, arvo esitetään prosenttiosuutena, joka kohdistetaan tämän verokoodin alkuperään arvonlisäverosumman laskemiseksi.     
 11. Valitse **Tallenna**.
 12. Sulje sivu.
 13. Valitse **Tallenna**.
 
-Jos Microsoft Dynamics 365 Financen versiosta 10.0.22 alkaen käytössä on [Veropalvelu](../../localizations/global-tax-calcuation-service-overview.md) ja [**Tue useita ALV-rekisteröintinumeroita**](../../localizations/emea-multiple-vat-registration-numbers.md) -ominaisuus on otettu käyttöön **Ominaisuuksien hallinta** -työtilassa, verokoodin tyyppi voidaan määrittää **Veron tyyppi** -kentässä. Käytettävissä ovat seuraavat arvot:
-
-- Normaali arvonlisäverotus
-- Alennettu arvonlisäverotus
-- ALV 0 %
-- Valmiste
-- Muu
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

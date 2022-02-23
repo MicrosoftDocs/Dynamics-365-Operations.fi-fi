@@ -2,9 +2,11 @@
 title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
-ms.date: 01/28/2022
+manager: AnnBe
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
@@ -15,20 +17,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 734f6499753d74b0bac8b2df1381ece4a7824142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075419"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797487"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta. Ohjeaihe sisältää seuraavat aiheet: 
 
@@ -89,7 +87,7 @@ Tietyt tavallisimmat ja tärkeimmät sivulle tehtävät muutokset ovat käytett�
 
 Lisäksi mukauttamisen yleisimmät tyypit saa käyttöön napsauttamalla elementtiä hiiren kakkospainikkeella ja valitsemalla **Mukauta**. (Huomaa, että kaikkia sivun elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, elementin *ominaisuusikkuna* tulee näkyviin.
 
-![Elementin ominaisuuksien mukauttaminen.](./media/cli-element-property-window.png)
+![Elementin ominaisuuksien mukauttaminen](./media/cli-element-property-window.png)
 
 Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 
@@ -102,7 +100,7 @@ Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 
 Ominaisuusikkunassa voi olla elementin mukaan myös muita mukauttamisominaisuuksia. Ruudun ominaisuusikkunassa voi esimerkiksi olla mahdollista viedä kyseisen ruutu ylös koontinäyttöön, kun taas oletuskoontinäytön elementtien ominaisuusikkunoissa voi luoda uuden mukautetun työtilan.
 
-### <a name="personalization-toolbar"></a>Mukauttamisen työkalurivi
+### <a name="the-personalization-toolbar"></a>Mukauttamisen työkalurivi
 
 Jos haluat tehdä useita muutoksia sivulle tai muutoksia, jotka eivät ole käytettävissä muiden mekanismien kautta (jos esimerkiksi haluat muuttaa elementtien järjestystä), voit käyttää **Mukauttaminen**-työkaluriviä. Voit avata **Mukauttaminen**-työkalurivin seuraavilla tavoilla:
 
@@ -111,7 +109,7 @@ Jos haluat tehdä useita muutoksia sivulle tai muutoksia, jotka eivät ole käyt
 - Valitse **Mukauta tätä sivua** minkä tahansa sivun toimintoikkunan **Asetukset**-välilehden **Mukauttaminen**-ryhmässä.
 - Valitse **Asetukset**-painike siirtymispalkissa ja valitse sitten **Mukauta**.
 
-[![Mukauttamisen työkalurivi.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Mukauttamisen työkalurivi](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Siirtyminen sivulla
 
@@ -123,10 +121,7 @@ Kun **Mukautus**-työkalurivi on auki, taustalla oleva sivu on vain luku -muodos
 
 - Valitse elementin ominaisuuksia ja muuta niitä **Valitse**-työkalulla. Voit käyttää tätä työkalua valitsemalla työkalurivin **Valitse**-painikkeen ja valitsemalla sitten haluamasi elementin. Elementin ominaisuusikkuna avautuu. Voit muuttaa elementin kaikkia ominaisuuksia. Voit toistaa prosessin muille kyseisen sivun mukautettaville elementeille. Ota huomioon, että kaikki mukautusominaisuudet eivät välttämättä ole käytettävissä kaikissa tilanteissa. Et esimerkiksi voi lukita pakollista kenttää.
 - Voit piilottaa elementin sivulla **Piilota**-työkalulla. Voit käyttää tätä työkalua valitsemalla työkalurivin **Piilota**-painikkeen ja valitsemalla piilotettavan elementin. Kun käytät **Piilota**-työkalua, kaikki tällä hetkellä piilotettuna olevat elementit tulevat näkyviin varjostetussa säilössä. Voit tehdä elementistä näkyvän valitsemalla sen. Valitsemalla toisen mukautustyökalun tai sulkemalla mukautuksen työkalurivin näet, miltä sivu näyttää, kun elementit piilotetaan.
-- Voit lisätä sivullesi kenttiä **Lisää kentät** -työkalun avulla. Tällä työkalulla voidaan lisätä vain sivumääritykseen sisältyviä kenttiä. Lisätietoja nykyisen sivumääritelmän ulkopuolisten uusien kenttien luomisesta on kohdassa [Mukautettujen kenttien luominen ja käyttäminen](user-defined-fields.md). Sinun on valittava työkalurivin **Lisää kentät** -painikkeen valitsemisen jälkeen ensin ruudukko tai osa, johon haluat lisätä kentän. Valintaikkunassa näkyy luettelo valittuun ruudukkoon tai osaan liittyvistä kentistä. Valitse valintaikkunassa ainakin yksi kenttä, joka lisätään joko **Suositellut kentät**- tai **Kaikki kentät** -luetteloon. Valitse kenttien valitseminen jälkeen **Päivitä**. Voit poistaa aiemmin lisätyn kentän toistamalla edellä mainitut vaiheet mutta poistamalla valintaikkunassa kentän valinnan.
-
-    **Suositellut kentät** -luettelossa näkyvät kentät, jotka organisaation muut käyttäjät ovat aiemmin lisänneet. Tämä kenttäluettelo päivitetään **Suosituksen erätyö** -kohdan toistovälin perusteella. Kokemus on vastaavanlainen kuin lisättäessä uusia suodatinkenttiä sivun Suodatin-ruudussa.
-
+- Voit lisätä sivullesi kenttiä **Lisää kentät** -työkalun avulla. Tällä työkalulla voidaan lisätä vain kenttiä, jotka sisältyvät sivumääritykseen. Lisätietoja nykyisen sivumääritelmän ulkopuolisten uusien kenttien luomisesta on kohdassa [Mukautettujen kenttien luominen ja käyttäminen](user-defined-fields.md). Sinun on valittava työkalurivin **Lisää kentät** -painikkeen valitsemisen jälkeen ensin ruudukko tai osa, johon haluat lisätä kentän. Valintaikkunassa näkyy luettelo valittuun ruudukkoon tai osaan liittyvistä kentistä. Valitse valintaluettelossa ensin vähintään yksi lisättävä kenttä ja sitten **Päivitä**. Voit poistaa aiemmin lisätyn kentän toistamalla edellä mainitut vaiheet mutta poistamalla valintaikkunassa kentän valinnan.
 - Voit siirtää elementin **Siirrä**-työkalulla toiseen sijaintiin nykyisen elementtiryhmän sisällä. Ota huomioon, ettet voi siirtää elementtiä sen pääryhmän ulkopuolelle. Voit käyttää tätä työkalua valitsemalla työkalurivin **Siirrä**-painikkeen ja valitsemalla siirrettävän elementin. Kun valitset elementin, sovellus määrittää sijainnit, joihin elementti voidaan siirtää. Näitä sijainteja kutsutaan *pudotusalueiksi*. Kun vedät elementtiä valitussa ryhmässa, värillinen lihavoitu viiva osoittaa pudotusalueen, johon elementti voidaan pudottaa.
 - Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset työkalurivin **Ohita**-painikkeen, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit lisätä kenttiä sarkainjärjestykseen ja poistaa niitä vuorovaikutteisesti.
 - Voit lisätä kentän pikavälilehtien yhteenveto-osaan käyttämällä **Näytä otsikossa**-työkalua. Kun valitset työkalurivin **Näytä otsikossa**-painikkeen, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa kenttiä niistä valitsemalla kenttiä.
@@ -154,14 +149,11 @@ Joillakin luetteloja sisältävillä sivuilla on käytettävissä **Lisää työ
 > [!NOTE]
 > Jos [Tallennetut näkymät](saved-views.md) -toiminto on käytössä, työtilaan siirrettävä sisältö on linkitetty suoraan näkymään. Näkymän kyselyä käytetään tietojen noutamiseen työtilassa ja vastaavaa työtilan ruutu tai linkki avaa kyseisen näkymän sivun, jolloin näkymän kyselyä ja mukautuksia sovelletaan siihen. Jos näkymä päivitetään, vastaavat työtilan elementit mukautetaan uuteen näkymän määritykseen.
 
-[![Lisää työtilaan.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Lisää työtilaan](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Voit lisätä luettelon työtilaan lajittelemalla tai suodattamalla luettelon ensin sivulla niin, että tiedot näkyvät siinä muodossa kuin haluat niiden näkyvän työtilassa. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Luettelo**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit valita työtilan luettelossa näytettävät sarakkeet. Voit myös määrittää työtilan luettelossa käytettävän otsikon.
 - Voit lisätä ruudun työtilaan suodattamalla ensin sivun luettelon niin, että se näyttää vain tiedot, joista tehdään yhteenveto tai joita haluat käyttää nopeasti. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Ruutu**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää työtilan ruudussa käytettävän otsikon. Voit myös määrittää, näytetäänkö määrä ruudussa. Kun ruutu on lisätty työtilaan voit valita, että se avaa kulloisenkin sivun työtilasta. Sen jälkeen voit tarkastella ruutuun liittyvää suodatettua luetteloa.
-- Voit lisätä linkin työtilaan suodattamalla ensin sivun luettelon näyttämään vain ne tiedot, joista olet kiinnostunut. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Linkki**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää linkin yhteydessä käytettävän otsikon. Voit myös halutessasi määrittää sen osan otsikon, johon linkki voidaan sijoittaa. Jos osaa ei ole, uusi osa luodaan.
-
-> [!NOTE]
-> Versiosta 10.0.25 lähtien luettelon, ruudun tai linkin määrityksen jälkeen on ehkä valittava työtilanäkymät, johon haluat lisätä elementin , jos **(Esiversio) Tallennettujen näkymien tuki työtiloille** -toiminto on otettu käyttöön. Käytettävissä olevat työtilanäkymät näkyvät kunkin **Konfiguroi**-valintaikkunan **Työtilan vaihtoehdot** -osassa. 
+- Voit lisätä linkin työtilaan suodattamalla ensin sivun luettelon näyttämään vain ne tiedot, joista olet kiinnostunut. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Linkki**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää linkin yhteydessä käytettävän otsikon. Voit myös määrittää otsikon uudelle, tämän linkin sisältävälle osalle otsikon (valinnainen).
 
 Kun olet lisännyt luettelon, ruudun tai linkin työtilaan, voit avata kyseisen työtilan ja muuttaa sen elementtien järjestystä tarpeen mukaan.
 
@@ -179,97 +171,11 @@ Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat sovelluksen. S
 Yksi ainutlaatuinen mukautusominaisuus, joka on käytettävissä koontinäytössä, on mahdollisuus lisätä ruutuja. 
 
 - Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää työtila**. Uusi työtilan ruutu luodaan koontinäytön alareunaan. Voit nimetä tämän uuden työtilan ruudun haluamallasi tavalla. Voit myös lisätä luetteloita, ruutuja ja linkkejä työtilaa aiemmin tämän ohjeaiheen kohdassa [Ruutujen, luetteloiden ja linkkien lisääminen työtilaan](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) kuvatulla tavalla.
-- Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää sovellus**. Määritä valintaikkunassa, haluatko lisätä ruudun uuteen työtilaan tai ruutuun, jolla on sisältöä Power Appsista tai verkkosivulta. Määritä sitten valitsemasi vaihtoehto ohjeiden mukaan. Uusi ruutu luodaan koontinäytön alareunaan. Lisätietoja näiden upotettujen sovellusten lisäämisestä, muokkaamisesta, poistamisesta ja jakamisesta on kohdissa [Pohjaan perustuvien sovellusten upottaminen Power Appsista](embed-power-apps.md) ja [Kolmannen osapuolen sovellusten upottaminen](embed-website.md).
+- Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää sovellus**. Määritä valintaikkunassa, haluatko lisätä ruudun uuteen työtilaan tai ruutuun, jolla on sisältöä Power Appsista tai verkkosivulta. Määritä sitten valitsemasi vaihtoehto ohjeiden mukaan. Uusi ruutu luodaan koontinäytön alareunaan. 
 
 ## <a name="sharing-personalizations"></a>Mukauttamisen jakaminen
 
-Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa muutamalla tavalla. Seuraavassa luettelossa menetelmät järjestetään suositeltavimmista vähiten suositeltavimpiin.
-
-1. Julkaise näkymiä käyttäjille.
-2. Kopioi näkymiä tai mukautuksia käyttäjille.
-3. Vie ja tuo näkymiä tai mukautuksia.
-
-### <a name="publish-views-to-users"></a>Julkaise näkymiä käyttäjille
-
-Jos [Tallennetut näkymät](saved-views.md) -toiminto on käytössä ja jos sivu tukee näkymiä, paras tapa jakaa mukautuksia muiden käyttäjien kanssa on julkaista näkymä käyttäjille, joilla on vähintään yksi käyttöoikeusrooli. Lisätietoja on kohdassa [Julkaisunäkymät](saved-views.md#publishing-views).
-
-### <a name="copy-views-or-personalizations-to-users"></a>Kopioi näkymiä tai mukautuksia käyttäjille
-
-Jos [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä tai jos sivu ei tue näkymiä, suositeltu tapa jakaa mukautuksia on kopioida ne käyttäjien välillä. Tämä menetelmä on vain käyttöoikeuden omaavien käyttäjien (esimerkiksi järjestelmänvalvojien) käytettävissä. Järjestelmänvalvojat voivat kuitenkin etsiä tietyn käyttäjän mukautuksen järjestelmästä (mukaan lukien käyttäjän oman näkymän, jos tallennetut näkymät ovat käytössä) ja kopioida konfiguraation muille käyttäjille.
-
-Jos tallennetut näkymät ovat käytössä, kopioi mukautukset noudattamalla näitä ohjeita.
-
-1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
-2. Kopioi henkilökohtaiset näkymät noudattamalla seuraavia vaiheita:
-
-    1. Valitse **Henkilökohtaiset näkymät**.
-    2. Valitse luettelosta haluamasi näkymät.
-    3. Valitse **Kopioi käyttäjille**.
-    4. Valitse käyttäjät, joille näkymät jaetaan.
-
-    Seuraavien vaiheiden avulla voit kopioida mukautuksia sivuille, jotka eivät tue näkymiä:
-
-    1. Valitse **Käyttäjäasetukset**.
-    2. Valitse käyttäjä, jolla on jaettava mukautus.
-    3. Valitse **Hallitse kaikkia mukautuksia**.
-    4. Valitse luettelosta haluamasi mukautukset.
-    5. Valitse **Kopioi käyttäjille**.
-    6. Valitse käyttäjät, joille mukautukset jaetaan.
-
-Jos tallennetut näkymät eivät ole käytössä, kopioi mukautus noudattamalla näitä ohjeita.
-
-1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
-2. Valitse **Käytä**.
-3. Valitse käyttäjät, joille mukautus jaetaan.
-4. Valitse **Valitse aiemmin luotu mukautus**.
-5. Etsi ja valitse haluamasi (yksittäinen) mukautus.
-6. Valitse **OK**.
-
-### <a name="export-and-import-views-or-personalizations"></a>Vie ja tuo näkymiä tai mukautuksia
-
-Mukautuksia voidaan jakaa myös viennin ja tuonnin kautta. Yksittäiset käyttäjät tai järjestelmänvalvoja, joka toimii heidän puolestaan, voivat viedä mukautuksen tai näkymiä tämän menetelmän avulla ja antaa viedyn tiedoston sitten toisille käyttäjille tuontia varten. Vaihtoehtoisesti käyttäjät voivat antaa viedyt mukautukset käyttäjälle, jolla on järjestelmänvalvojan käyttöoikeudet. Tällöin käyttäjä voi käyttää mukautustiedostoa samalla kertaa useille käyttäjille **Mukauttaminen**-hallintasivulla.
-
-> [!IMPORTANT]
-> Koska mukautukset säilyvät päivityksestä toiseen, kaikkien mukautusten uudelleentuonti palvelupäivityksen jälkeen tai joskus muulloin on tarpeetonta eikä sitä missään nimessä suositella.
-
-#### <a name="export"></a>Vie
-
-Yleensä voit viedä oman näkymäsi tai mukautuksesi avaamalla haluamasi sivun, avaamalla **Mukauttaminen**-työkalurivin ja valitsemalla sitten **Vie**. Lisätietoja työkalurivistä on tämän aiheen aiemmassa kohdassa [Mukauttamisen työkalurivi](#personalization-toolbar). Jos [tallennetut näkymät](saved-views.md) ovat käytettävissä, voit tarkastella luetteloa kaikista järjestelmän mukautuksista valitsemalla **Asetukset \> Käyttäjän asetukset \> Mukauttaminen**. Sieltä voit valita vietävien näkymien tai mukautusten tiedot ja valita sitten **Vie**.
-
-Järjestelmänvalvojat voivat lisäksi viedä muiden käyttäjien mukautuksia noudattamalla seuraavia vaiheita.
-
-1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
-2. Valitse haluttu käyttäjä **Käyttäjät**-välilehdessä.
-3. Etsi ja valitse haluamasi näkymä tai mukautus.
-4. Valitse **Vie**.
-
-#### <a name="import"></a>Tuo
-
-Voit tuoda näkymän tai mukautuksen avaamalla **Mukauttaminen**-työkalurivin ja valitsemalla **Tuo**. Lisäksi järjestelmänvalvojat voivat tuoda tiedoston ja antaa sen välittömästi vähintään yhdelle käyttäjälle.
-
-Jos tallennetut näkymät ovat käytössä, noudata näitä ohjeita.
-
-1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
-2. Valitse toimintoruudussa **Tuo näkymiä \> Käyttäjän näkymät**.
-3. Valitse tuontitila:
-
-    - **Valitse tietyt käyttäjät** – Anna näkymä tai mukauttaminen valituille käyttäjille.
-    - **Tuo sellaisenaan** - Tuo näkymä tai mukautus samalle käyttäjälle, joka on vienyt sen.
-
-4. Valitse **Selaa** ja etsi ja valitse tuotava mukautus.
-5. Valitse **Seuraava**.
-6. Jos valitsit vaiheessa 3 **Valitse tietyt käyttäjät**, valitse käyttäjät, joille mukautus tuodaan.
-7. Valitse **Tuo**.
-8. Ratkaise ristiriitoja tarpeen mukaan.
-
-Jos tallennetut näkymät eivät ole käytössä, noudata näitä ohjeita.
-
-1. Valitse **Järjestelmänvalvonta \> Asetukset \> Mukauttaminen**.
-2. Valitse **Käytä**.
-3. Valitse käyttäjät, joille mukautus jaetaan.
-4. Valitse **Tuo mukautuksia tiedostosta**.
-5. Valitse **Selaa** ja etsi ja valitse tuotava mukautus.
-6. Valitse **OK**.
+Kun olet mukauttanut sivun, voit jakaa mukautukset muiden käyttäjien kanssa viemällä mukautetun sivun. Tämän jälkeen voit pyytää muita käyttäjiä tuomaan mukautustiedoston. Vaihtoehtoisesti voit antaa mukautuksesi käyttäjälle, jolla on järjestelmänvalvojan oikeudet. Käyttäjä voi sitten ottaa mukautustiedoston käyttöön useille käyttäjille samalla kertaa käyttämällä **Mukautus**-hallintasivua.
 
 ## <a name="administration-of-personalizations"></a>Mukautusten hallinta
 
@@ -289,6 +195,3 @@ Niillä asiakkaila, jotka eivät ole vielä ottaneet käyttöön [Tallennetut n�
 Kun mukautat varastodimension asetuksia sivulla, pidä mielessä **Näytä dimensio** -asetuksen avulla luodut asetukset. Voit esimerkiksi piilottaa eränumeron varastodimension sarakkeen mukautuksen avulla. Sarake kuitenkin näkyy, kun sivu avataan seuraavan kerran. Tämä on mahdollista, koska **dimension näyttöasetukset** määrittävät varastodimension näytettävät sarakkeet. **Dimension näyttöasetuksia** käytetään kaikilla sivulla, ja ne korvaavat kaikki yksittäisten sivujen mukautetut varastodimension kenttien asetukset.
 
 Jos et siis halua edellisessä esimerkissä, että varastodimension eränumero näkyy sivulla, kyseisen dimension valinta on poistettava kyseisen sivun taulukon **Näytä dimensiot** -vaihtoehdon osana.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,34 +1,37 @@
 ---
 title: Kanavan määrittäminen kanavan siirtymishierarkian käyttämistä varten
-description: Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoft Dynamics 365 Commercessa.
+description: Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoftin Dynamics 365 Commercessa.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3cf29bd423a2475b77e9076024b4da6864a31065da81de49f1b9a0f639243f1d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b5041d35d310125c314ab2cb77d3cc40cdb7113
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411875"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Kanavan määrittäminen kanavan siirtymishierarkian käyttämistä varten
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoft Dynamics 365 Commercessa.
+Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoftin Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskuvaus
+## <a name="overview"></a>Yleiskatsaus
 
 Kanavien siirtymishierarkiat järjestävät tuotteet luokkiin, jotta tuotteita voi selata verkkokauppasivustolla tai myyntipisteissä. Vähittäismyynti- ja verkkokanavat on määritettävä kanavan siirtymishierarkioilla.
 
@@ -45,7 +48,7 @@ Voit määrittää kanavan kanavan siirtymishierarkian käyttöä varten noudatt
 
 Seuraavassa kuvassa esitetään, miten kanava määritetään kanavan siirtymishierarkian käyttöä varten.
 
-![Kanavan esimerkkimääritys.](media/configure-channel-hierarchy-1.png)
+![Kanavan esimerkkimääritys](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Määritä määritteen metatiedot
 
@@ -61,7 +64,7 @@ Määritä määritteen metatiedot seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa näkyy esimerkkijoukko kanavan tuotemääritteitä, jotka on määritetty kanavan luokkasolmussa.
 
-![Kanavamääritteet kanavaluokkasolmussa.](media/configure-channel-hierarchy-2.png)
+![Kanavamääritteet kanavaluokkasolmussa](media/configure-channel-hierarchy-2.png)
 
 ## <a name="publish-changes"></a>Julkaise muutokset
 
@@ -74,13 +77,10 @@ Julkaise muutokset seuraavien ohjeiden avulla.
 
 Seuraavassa kuvassa näkyy, miten kanavapäivitykset julkaistaan.
 
-![Julkaise kanavan päivitykset.](media/configure-channel-hierarchy-3.png)
+![Julkaise kanavan päivitykset](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Vähittäismyyntikanavan siirtymishierarkian luominen](create-channel-hierarchy.md)
+[Luo kanavan siirtymishierarkia](create-channel-hierarchy.md)
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

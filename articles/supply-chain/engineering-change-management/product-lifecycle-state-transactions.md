@@ -2,23 +2,26 @@
 title: Tuotteen elinkaaren tilat ja tapahtumat
 description: Tässä aiheessa käsitellään niiden tapahtumien hallintaa, jotka ovat sallittuja kussakin elinkaaren tilassa suunnittelutuotteen elinkaaren eri vaiheissa.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 12f95feda887b5f1284624e5f072b498a78d00e1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574638"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4427525"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Tuotteen elinkaaren tilat ja tapahtumat
 
@@ -73,25 +76,3 @@ Seuraavat kentät ovat käytettävissä kussakin **Käyttöönotetut liiketoimin
 | Käytäntö | Valitsemalla jonkin seuraavista arvoista voit määrittää, onko nykyinen prosessi sallittu tuotteissa, joilla on tämä elinkaaren tila, ja miten se sallitaan:<ul><li>**Käytössä** – liiketoimintaprosessi sallitaan.</li><li>**Estetty** – Prosessia ei sallita. Jos käyttäjä yrittää käyttää prosessia tuotteessa, jolla on tämä elinkaaren tila, järjestelmä estää yrityksen ja näyttää virheen. Voit esimerkiksi estää elinkaaren lopussa olevan tuotteen ostamisen.</li><li>**Käytössä mutta varoitus** – Vaikka prosessi sallitaan, siitä varoitetaan. Tuotantotilaukseen voidaan esimerkiksi asettaa prototyyppituote, jonka tuotekehitysosasto on luonut. Muiden osastojen on kuitenkin tiedettävä, että tuotetta ei ole tarkoitus vielä valmistaa.</li></ul> |
 
 Jos muita elinkaaren tilasääntöjä lisätään mukautuksina, voit tarkastella kyseisiä sääntöjä käyttöliittymässä valitsemalla yläruudussa **Päivitä prosessit**. **Päivitä prosessit** -painike on vain järjestelmänvalvojien käytettävissä.
-
-## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Vapautettujen tuotteiden ja varianttien elinkaaren tilat
-
-Jos tuotteella on variantteja (päätuotteita ja variantteja), päätuotteella on elinkaaren tila ja kullakin variantilla voi olla myös eri elinkaaren tila.
-
-Jos joko variantti tai tuote on estetty tietyissä prosesseissa, myös prosessin käyttö estetään. Järjestelmä tarkistaa, onko prosessi estetty, seuraavasti:
-
-- Suunnitteluohjatut tuotteet:
-  - Jos nykyinen suunnitteluversio on estetty, estä prosessi.
-  - Jos nykyinen variantti on estetty, estä prosessi.
-  - Jos vapautettu tuote on estetty, estä prosessi.
-- Vakiotuotteita varten:
-  - Jos nykyinen variantti on estetty, estä prosessi.
-  - Jos vapautettu tuote on estetty, estä prosessi.
-
-Oletetaan esimerkiksi, että haluat myydä vain yhden variantin (punainen) tietystä tuotteesta (t-paita) ja estät kaikkien muiden varianttien myynnin tällä hetkellä. Voit toteuttaa tämän seuraavilla asetuksilla:
-
-- Määritä tuotteelle elinkaaren tila, joka sallii prosessin. Voit esimerkiksi määrittää t-paita-tuotteelle elinkaaren tilaksi *Myytävä*, jolloin *Myyntitilaus*-liiketoimintaprosessi on mahdollinen.
-- Määritä myytävälle variantille elinkaaren tila, joka sallii prosessin. Voit esimerkiksi määrittää myös punaiselle variantille elinkaaren tilaksi *Myytävä*.
-- Kaikille muille varianteille määritetään toinen elinkaaren tila, jossa prosessi on estetty. Määritä esimerkiksi valkoiselle variantille (ja kaikille muille varianteille) elinkaaren tilaksi *Ei myytävä*, joka estää *Myyntitilaus*-liiketoimintaprosessin.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

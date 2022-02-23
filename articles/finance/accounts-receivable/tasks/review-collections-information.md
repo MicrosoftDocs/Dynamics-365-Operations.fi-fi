@@ -2,23 +2,26 @@
 title: Perimistietojen tarkistaminen
 description: Tässä aiheessa käsitellään perintätietojen tarkastelemista sekä erilaisia asetusvaihtoehtoja ja perintätapahtumia.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 59fcaef39460761dbe68273aecb5cbff8850ef031d43393277a17d07dd92db3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778383"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442789"
 ---
 # <a name="review-collections-information"></a>Perimistietojen tarkistaminen
 
@@ -140,6 +143,3 @@ Tässä aiheessa käsitellään perintätietojen tarkastelemista sekä erilaisia
 5. Valitse **Näytä luettelo**.
 - Valitse asiakas tai hyväksy oletusarvo. Oletusarvoisesti tämä asiakastili on valittu luettelosivulta tai lomakkeesta, josta avasit tämän lomakkeen. Jos avasit lomakkeen luettelosivulta, luettelon asiakkaat ovat asiakkaille, jotka on sisällytetty luettelosivulla käytettävään perintäpooliin.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

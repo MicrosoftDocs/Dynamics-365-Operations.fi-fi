@@ -1,28 +1,29 @@
 ---
 title: Ostoreskontran aloitussivu
 description: Tässä aiheessa on yleiskuvaus ostoreskontrasta.
-author: sunfzam
+author: ShylaThompson
+manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21901"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 6a6f53007f8bd04724c43c518c5a9b10856b68d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595284"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458933"
 ---
 # <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
 
@@ -30,11 +31,11 @@ ms.locfileid: "7595284"
 
 Tässä aiheessa on yleiskuvaus ostoreskontrasta. 
 
-Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla. Voit automatisoida tarkistusprosessin laskujen täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla niin, että tietyt ehdot täyttävät laskut hyväksytään automaattisesti. Jäljelle jäävät laskut merkitään valtuutetun käyttäjän tarkistettaviksi.
+Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla. Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla. Tämän jälkeen tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.
 
 **Liiketoimintaprosessit**
 
-[![Liiketoimintaprosessikaavio.](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Liiketoimintaprosessikaavio](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## <a name="set-up-accounts-payable"></a>Ostoreskontran asetukset
 
@@ -122,7 +123,7 @@ Seuraavissa ohjeaiheissa on tietoa tilityksistä. Tilitys tarkoittaa maksujen ti
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](/dynamics365/release-plans/), kun haluat nähdä uudet suunnitteilla olevat toiminnot. 
+Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot. 
 
 #### <a name="blogs"></a>Blogit
 
@@ -144,6 +145,3 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

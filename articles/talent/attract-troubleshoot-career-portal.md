@@ -72,5 +72,3 @@ Määritä Talentin käyttäjärooli Talentin suhderyhmälle.
 
    1. Kirjaudu uraportaaliin uudesta selainikkunasta.
    2. Hae työtä uraportaalista. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

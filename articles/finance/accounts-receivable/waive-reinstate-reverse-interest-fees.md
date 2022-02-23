@@ -2,25 +2,28 @@
 title: Luovu, palauta tai peruuta korot
 description: Tässä artikkelissa kerrotaan, miten korot ja maksut peruutetaan ja palautetaan sekä käytetään käänteistä veloitusta.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustInterestJourList
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 59461
 ms.assetid: 25ec29f3-e3ea-4abb-bf6b-f6240873b315
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb022179a1eb919eaf3d2ea74927ab4d61bd6fffb81348e352af7cf78d4b178c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b5c92d6f3bb0bdc3fbadc9708350b5107e6cf37
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754287"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442786"
 ---
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Luovu, palauta tai peruuta korot
 
@@ -92,6 +95,3 @@ Voit peruuttaa korkotapahtumat käyttämällä **Historia**-painiketta **Asiakas
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

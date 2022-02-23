@@ -1,10 +1,12 @@
 ---
 title: Ylläpitotyöntekijät ja -työntekijäryhmät
 description: Tässä ohjeaiheessa kerrotaan, kuinka ylläpitopitotyöntekijät ja -työntekijäryhmät määritetään resurssien hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750121"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017389"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Ylläpitotyöntekijät ja -työntekijäryhmät
 
@@ -61,6 +63,3 @@ Voit myös luoda kunnossapitotyöntekijäryhmiä ja liittää niitä kunnosapito
 6. Jos resurssiryhmä liittyy valittuun kunnossapitotyöntekijäryhmään, valitse **Kopioi resurssiryhmästä**. Valitse **Ryhmä**-kentässä resurssiryhmä, josta kalenteriasetukset kopioidaan. Valitse sitten **Työntekijäryhmä**-kentästä työntekijäryhmä, johon resurssiryhmän kalenteriasetukset kopioidaan. Tämä vaihe on merkityksellinen vain, jos haluat, että kunnossapitotyöntekijät voivat käyttää resurssiin (kuormituspaikkaan) liittyvää kalenteria työtilauksen ajoittamisen aikana.
 
     **Tiedot**-pikavälilehden kentissä näkyy niiden kunnossapitotyöntekijöiden määrä, jotka on määritetty valitulle kunnossapitotyöntekijäryhmälle.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

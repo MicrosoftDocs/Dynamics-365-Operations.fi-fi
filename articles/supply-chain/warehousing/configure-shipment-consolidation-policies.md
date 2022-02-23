@@ -2,23 +2,26 @@
 title: Lähetyksen konsolidointikäytäntöjen määrittäminen
 description: Tässä ohjeaiheessa käsitellään lähetyksen oletusarvoisten ja mukautettujen konsolidointikäytäntöjen määrittämistä.
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f2705300925ae475f00861327b9cea9a97416011
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578677"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427417"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Lähetyksen konsolidointikäytäntöjen määrittäminen
 
@@ -179,7 +182,7 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Etsi kyselyeditorin valintaikkunan ruudukon **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Asiakastili*, ja määritä kyseisen rivin **Ehdot**-kentän aseetukseksi *US-001*.
 1. Lisää seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Lisää**:
@@ -214,7 +217,7 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Määritä **Avoimien lähetysten konsolidointi** -asetukseksi *Kyllä*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Laajenna ja valitse kyselyeditorin valintaruudun **Liitokset**-välilehdessä **Taulut \> Kuorman tiedot**.
 1. Valitse **Lisää taulun liitos**.
@@ -251,9 +254,9 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Määritä **Avoimien lähetysten konsolidointi** -asetukseksi *Kyllä*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena on *Asiakkaan tilaus*.
-1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
 1. Valitse **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Etsi kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Asiakastili*, ja määritä kyseisen rivin **Ehdot**-kentän asetukseksi *US-001*.
 1. Sulje valintaikkuna valitsemalla **OK**.
@@ -283,7 +286,7 @@ Luo tälle liiketoimintatapaukselle lähetyksen konsolidointikäytäntö seuraav
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -luettelossa rivi, jossa **Kentän nimi** -kentän asetuksena *Toimitustapa*.
-1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Lisää kyselyeditoriin valintaikkunassa seuraavat asetukset sisältävä rivi ruudukkoon valitsemalla **Alue**-välilehdessä **Lisää**:
 
@@ -317,7 +320,7 @@ Yleensä tämä liiketoimintatapaus otetaan huomioon käyttämällä [skenaarios
 1. Jätä **Avoimien lähetysten konsolidointi** -asetukseksi *Ei*.
 1. Valitse toimintoruudussa **Tallenna**.
 1. Valitse **Konsolidointikentät**-pikavälilehden **Jäljellä olevat kentät** -kentässä rivi, jossa **Kentän nimi** -kentän asetuksena on *Toimitustapa*.
-1. Valitse **Lisää**-painike ![Oikea nuoli.](media/forward-button.png) siirtääksesi kentän **Valitut kentät** -luetteloon.
+1. Siirrä kenttä **Valitut kentät** -luetteloon valitsemalla **Lisää**-painike ![oikea nuoli](media/forward-button.png).
 1. Valitse toimintoruudussa **Muokkaa kyselyä**.
 1. Etsi kyselyeditorin valintaikkunan **Alue**-välilehdessä rivi, jossa **Kenttä**-kentän asetuksena on *Varasto*, ja määritä kyseisen rivin **Ehdot**-kentän asetukseksi *61, 63*.
 1. Sulje valintaikkuna valitsemalla **OK**.
@@ -351,6 +354,3 @@ Seuraavat skenaariot näyttävät, miten tämän ohjeaiheen mukaisesti luotuja l
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Lähetyksen konsolidoinnin käytännöt](about-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

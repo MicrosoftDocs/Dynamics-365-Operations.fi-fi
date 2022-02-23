@@ -2,23 +2,26 @@
 title: Klusterisijainti täynnä
 description: Tässä ohjeaiheessa on tietoja Klusterisijainti täynnä -ominaisuudesta. Tämä ominaisuus on vaihtoehto tiukalle työkatkosääntöjen valvonnalle, kun käytössä on klusterikeräily. Tämä johtuu siitä, että ominaisuus mahdollistaa konttien ja kassien tilavuusrajoitteiden aiempaa suuremman virhemarginaalin.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574254"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427433"
 ---
 # <a name="cluster-position-full"></a>Klusterisijainti täynnä
 
@@ -211,7 +214,7 @@ Luotuna on nyt kaksi työtunnusta. Molemmilla tunnuksilla on kaksi keräilyrivi�
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Mobiililaitteen työnkulun suoritus – Tuotteen työn vahvistuksen määritys
 
-1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastossa *61*.
+1. Kirjaudu varastosovellukseen käyttäjänä varastossa *61*.
 1. Siirry kohtaan **Lähtevät \> Klusterikeräilyn luominen**.
 
     Näkyviin tulee **TEHTÄVÄ: Liitä työ klusteriin** -sivu.
@@ -273,6 +276,3 @@ Tässä skenaariossa klusterikeräily on valmis, ja käyttäjä ohjataan hyllytt
     Näyttöön tulee Klusteri on valmis -sanoma.
 
 Voit nyt käyttää valikon **Myynnin keräily** -vaihtoehtoa jäljellä olevan määrän keräilemiseksi. Voit sitten käyttää valikon **Myynnin kuormaus** -vaihtoehtoa ja siirtää nimikkeet väliaikaisesta sijainnista lastauslaituriin.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

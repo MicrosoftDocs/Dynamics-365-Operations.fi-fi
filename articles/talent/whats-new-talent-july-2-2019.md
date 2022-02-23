@@ -55,6 +55,3 @@ Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauk
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
 Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Core HR:n ohjelmakorjauksia.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

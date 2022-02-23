@@ -1,39 +1,37 @@
 ---
-title: Integroinnin määrittäminen Financen kanssa
-description: Tässä aiheessa käsitellään Dynamics 365 Human Resourcesin ja Dynamics 365 Financen integrointia.
-author: twheeloc
-ms.date: 08/19/2021
+title: Financeen integroinnin määritys
+description: Tässä artikkelissa esitellään toiminto, joka on käytettävissä Dynamics 365 Human Resourcesista ja Dynamics 365 Financesta integrointia varten.
+author: andreabichsel
+manager: AnnBe
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065013"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527909"
 ---
-# <a name="configure-integration-with-finance"></a>Integroinnin määrittäminen Financen kanssa
+# <a name="configure-integration-with-finance"></a>Integraation määrittäminen Financen kanssa
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Integroidaksesi Dynamics 365 Human Resources -järjestelmän Dynamics 365 Financeen, voit käyttää henkilöresursseja rahoitusmalliin [Tietojen integrointiohjelmassa](https://docs.microsoft.com/powerapps/administrator/data-integrator). Henkilöstöresurssit rahoitusmalliin mahdollistavat töiden, asemien ja työntekijöiden tiedonkulun. Malli sallii tietojen kulun henkilöstöresursseista rahoitukseen, mutta se ei salli tietojen juoksuttamista henkilöstöresursseihin.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Integroidaksesi Dynamics 365 Human Resources -järjestelmän Dynamics 365 Financeen, voit käyttää henkilöresursseja rahoitusmalliin [Tietojen integrointiohjelmassa](/powerapps/administrator/data-integrator). Henkilöstöresurssit rahoitusmalliin mahdollistavat töiden, asemien ja työntekijöiden tiedonkulun. Malli sallii tietojen kulun henkilöstöresursseista rahoitukseen, mutta se ei salli tietojen juoksuttamista henkilöstöresursseihin.
-
-![Human Resourcesista Financeen -integrointivirta.](./media/hr-admin-integration-finance-flow.png)
+![Human Resourcesista Financeen -integrointivirta](./media/hr-admin-integration-finance-flow.png)
 
 Henkilöstöresursseista talouteen -ratkaisu tarjoaa seuraavanlaisia tietojen synkronointiratkaisuja:
 
@@ -46,7 +44,7 @@ Henkilöstöresursseista talouteen -ratkaisu tarjoaa seuraavanlaisia tietojen sy
 
 Integrointiratkaisu edellyttää seuraavia Human Resourcesin ja Financen versioita: 
 
-- Dynamics 365 Human Resources, Dataverse
+- Dynamics 365 Human Resources, Common Data Service
 - Dynamics 365 Financen versio 7.2 tai uudempi
 
 ## <a name="template-and-tasks"></a>Malli ja tehtävät
@@ -57,7 +55,7 @@ Jos haluat käyttää henkilöstöresursseja talousmalliin.
 
 2. Valitse **Projektit** ja valitse sitten **Uusi projekti** oikeasta yläkulmasta. Luo uusi projekti jokaiselle yritykselle, jonka haluat integroida talouteen.
 
-3. Valitse **Henkilöstöhallinnon resurssit (Henkilöstöhallinto Dataversestä talouteen)**, jos haluat synkronoida henkilöresursseista rahoitettavat tiedot.
+3. Valitse **Henkilöstöhallinnon resurssit (Henkilöstöhallinto Common Data Servicestä talouteen)**, jos haluat synkronoida henkilöresursseista rahoitettavat tiedot.
 
 Malli käyttää seuraavia taustatehtäviä tietueiden synkronointiin henkilöstöhallinnosta talouteen:
 
@@ -83,14 +81,14 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="job-functions-to-compensation-job-function"></a>Työtehtävät kompensaatiotyötehtäviin
 
-| Dataverse-taulu (lähde) | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde) | Talousyksikkö (kohde) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Function Name)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### <a name="departments-to-operating-unit"></a>Osastot toimintayksiköihin
 
-| Dataverse-taulu (lähde)           | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)           | Talousyksikkö (kohde) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -99,7 +97,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="job-types-to-compensation-job-type"></a>Työtyypit kompensaatiotyötyyppiin
 
-| Dataverse-taulu (lähde)   | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)   | Talousyksikkö (kohde) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
@@ -107,7 +105,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="jobs-to-jobs"></a>Työt töihin
 
-| Dataverse-taulu (lähde)                           | Talousyksikkö (kohde)           |
+| Common Data Service -entiteetti (lähde)                           | Talousyksikkö (kohde)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -117,7 +115,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="jobs-to-job-detail"></a>Työt työtietoihin
 
-| Dataverse-taulu (lähde)                             | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -128,7 +126,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="position-types-to-position-type"></a>Toimityypit toimityyppiin
 
-| Dataverse-taulu (lähde)       | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)       | Talousyksikkö (kohde) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -136,13 +134,13 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="job-positions-to-base-position"></a>Toimet perustoimeen
 
-| Dataverse-taulu (lähde)           | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)           | Talousyksikkö (kohde) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Toimet toimitietoihin
 
-| Dataverse-taulu (lähde)              | Talousyksikkö (kohde)       |
+| Common Data Service -entiteetti (lähde)              | Talousyksikkö (kohde)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Job (Name))                                        | JOBID (JOBID)                                    |
@@ -156,7 +154,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="job-positions-to-position-durations"></a>Toimet toimien kestoihin
 
-| Dataverse-taulu (lähde)             | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)             | Talousyksikkö (kohde) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
 | Calculated   Activation (Calculated Activation) | VALIDFROM (VALIDFROM)                        |
@@ -164,7 +162,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="job-positions-to-position-hierarchies"></a>Toimet toimihierarkioihin
 
-| Dataverse-taulu (lähde)        | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)        | Talousyksikkö (kohde) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -174,7 +172,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 
 ### <a name="workers-to-worker"></a>Työntekijät työntekijään
-| Dataverse-taulu (lähde)           | Talousyksikkö (kohde)       |
+| Common Data Service -entiteetti (lähde)           | Talousyksikkö (kohde)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -193,7 +191,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="employments-to-employment"></a>Työsuhteet työsuhteeseen
 
-| Dataverse-taulu (lähde)                             | Talousyksikkö (kohde) |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -203,7 +201,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="employments-to-employment-detail"></a>Työsuhteet työsuhdetietoihin
 
-| Dataverse-taulu (lähde)                             | Talousyksikkö (kohde)   |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -221,7 +219,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Toimen työntekijämääritys toimen työntekijämäärityksiin
 
-| Dataverse-taulu (lähde)                             | Talousyksikkö (kohde)   |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
@@ -230,7 +228,7 @@ Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin so
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Työntekijän osoite työntekijän postiosoitteeseen V2
 
-| Dataverse-taulu (lähde)                             | Talousyksikkö (kohde)   |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -250,12 +248,10 @@ Tietojen integrointi henkilöstöhallinnosta talouteen yrittää yhdistää tiet
 
 Tämä voi tapahtua kohteessa **Työntekijä**, jossa vastaavuuden perusteena on **henkilöstönumero** ja **Toimet**. Töissä ei käytetä samoja numerosarjoja. Tuloksena tästä, jos sama työtunnus havaitaan sekä henkilöstöhallinnossa että taloudessa, henkilöstöhallinnon tiedot korvaavat Dynamics 365 Financen tiedot. 
 
-Päällekkäisiin tunnuksiin liittyvien ongelmien ehkäisemiseksi voit joko lisätä etuliitteen [numerosarjaan](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) tai määrittää numerosarjan alkamaan sellaisesta numerosta, joka ylittää toisen järjestelmän numeroalueen. 
+Päällekkäisiin tunnuksiin liittyvien ongelmien ehkäisemiseksi voit joko lisätä etuliitteen [numerosarjaan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) tai määrittää numerosarjan alkamaan sellaisesta numerosta, joka ylittää toisen järjestelmän numeroalueen. 
 
 Työntekijän osoitteessa käytettävä sijaintitunnus ei ole osa numerosarjaa. Kun työntekijän osoitetta integroidaan Human Resourcesista Financeen, saatetaan luoda osoitetietueen kaksoiskappale, jos työntekijän osoite on jo olemassa Financessa. 
 
 Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integrointiohjelman yhteydessä. 
 
-![Mallin yhdistäminen.](./media/IntegrationMapping.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Mallin yhdistämismääritys](./media/IntegrationMapping.png)

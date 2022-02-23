@@ -2,9 +2,11 @@
 title: Määritä käteisvarojen arvot myyntipisteeseen
 description: Seteleiden ja kolikoiden arvot voidaan määrittää taustajärjestelmässä kassojen, myyjien ja esimiesten käyttöön myymälän myyntipisteissä.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743455"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961556"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Määritä käteisvarojen arvot myyntipisteeseen
 
@@ -33,7 +35,7 @@ Seteleiden ja kolikoiden arvot voidaan määrittää taustajärjestelmässä kas
 
 Myymäläkohtaiset arvot määritetään **Asetukset** \> **Myymäläominaisuuden kassatilitysasetus** -sivulla.
 
-![Kassatilitysasetus.](./media/image1-denomination.png)
+![Kassatilitysasetus](./media/image1-denomination.png)
 
 Arvon määrittäminen:
 
@@ -41,7 +43,7 @@ Arvon määrittäminen:
 1. Määritä tyyppi (kolikko tai seteli).
 1. Määritä summa (arvo).
 
-![Kassatilityksen arvot -sivu.](./media/image2-denomination.png)
+![Kassatilityksen arvot -sivu](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Toimintoprofiilin määrittäminen
 
@@ -49,6 +51,3 @@ Kun myyntipisteessä maksetaan käteisellä, käyttäjä voi antaa asiakkaan mak
 
 - **Suurempi tai yhtä suuri summa erääntyy** – Myyntipiste näyttää oletusarvoisesti vain arvot, jotka ovat suurempia kuin erääntyvä summa, mikä mahdollistaa yhden kosketuksen maksuvälinetapahtuman. Jos erääntyvä summa on esimerkiksi 7,50 $, myyntipiste näyttää seuraavat arvot: 10 $, 20 $, 50 $ ja 100 $. Jonkin edellä mainitun summan koskettaminen käsittelee automaattisesti kyseisen summan myynnin. 1 ja 5 dollarin arvoja ei näytetä, koska nämä summat ovat pienempiä kuin erääntyvä summa.
 - **Kaikki arvot** – Kun tämä asetus valitaan, kaikki setelin arvot näytetään aina myyntipisteessä erääntyvästä summasta riippumatta. Käyttäjä voikin määrittää erääntyvän summan käyttämällä seteliyhdistelmiä. Jos erääntyvä summa on esimerkiksi 25,00 $, käyttäjä voi viimeistellä myynnin valitsemalla 20 $ ja 5 $.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

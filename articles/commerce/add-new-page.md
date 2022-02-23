@@ -2,30 +2,36 @@
 title: Uuden sivuston sivun lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten uusi sivu lisätään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: psimolin
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090716"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411917"
 ---
 # <a name="add-a-new-site-page"></a>Uuden sivuston sivun lisääminen
+
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten uusi sivu lisätään Microsoft Dynamics 365 Commerce -sovelluksessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Kun olet luonut sivustoon malleja ja osia, seuraava vaihe on luoda sivuja, jotka käyttävät malleja ja osia. Valitse ensin malli tai asettelu, sivun nimi ja sivun URL-osoite.
 
@@ -33,11 +39,11 @@ Kun olet luonut sivustoon malleja ja osia, seuraava vaihe on luoda sivuja, jotka
 
 Voit käyttää uudella sivulla mallia tai asettelua. Lisätietoja on kohdassa [Mallien ja asettelujen yleiskatsaus](templates-layouts-overview.md).
 
-## <a name="specify-the-page-name"></a>Määritä sivun nimi
+## <a name="page-name"></a>Sivun nimi
 
-Sivun nimen on oltava yksilöllinen sivustossa ja sen on oltava kuvaava, jotta voit löytää sen helposti ja muut tietävät, mitä varten sivu on tarkoitettu. Voit nimetä sivun myöhemmin uudelleen muokkaamalla sivua ja valitsemalla sitten kynäsymbolin ominaisuusruudussa sivun nimen vierestä.
+Sivun nimen on oltava yksilöllinen. Sen on oltava kuvaava, jotta voit löytää sen helposti ja muut tietävät, mitä varten sivu on tarkoitettu. Valitse sivun nimi huolellisesti, koska sitä ei voi muuttaa myöhemmin.
 
-## <a name="specify-the-page-url"></a>Määritä sivun URL-osoite
+## <a name="page-url"></a>Sivun URL
 
 Voit määrittää uuden sivun URL-osoitteen. Kun luot sivun, voit kirjoittaa merkkijonon, jota käytetään täydellisen URL-osoitteen määrittämiseen. Tämä merkkijono on suhteellinen URL-osoite tai URL-osoitteen kuvaava osa. Koko URL-osoite muodostetaan URL-osoitteen kuvaavan osan perusteella. Uusi sivu liitetään siihen. Voit muuttaa URL-osoitteen kuvaavaa osaa myöhemmin ennen sivun julkaisemista. Lisätietoja on kohdassa [Sivun URL-osoitteen luominen](create-page-URL.md).
 
@@ -85,8 +91,3 @@ Voit lisätä sivustoon uuden sivuston sivun seuraavasti.
 [Luokan saapumissivun täydentäminen](enrich-category-page.md)
 
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
-
-[Dynaamisten verkkokauppasivujen luominen URL-parametrien perusteella](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

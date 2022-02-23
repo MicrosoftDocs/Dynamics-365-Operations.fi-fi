@@ -80,6 +80,3 @@ Jos työpaikkojen julkaisemisessa LinkedIniin on ongelmia, katso kohta [LinkedIn
 [Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla](./attract-linkedin-recruiter.md)
 
 [LinkedIn-integraation vianmääritys](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

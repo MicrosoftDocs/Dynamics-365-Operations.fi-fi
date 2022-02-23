@@ -2,25 +2,28 @@
 title: Korkoryhmän korkoprosenttien määrittäminen
 description: Korkokoodit sisältävät asetukset, joilla määritetään, milloin korkoa veloitetaan ja miten se lasketaan erääntyneillä tileillä.
 author: ShivamPandey-msft
-ms.date: 02/17/2021
+manager: AnnBe
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Interest
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 59402
 ms.assetid: 3b945333-1eaf-4658-ab5a-1a7791a7eb40
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09808433140f71bf2d7bfaaca87b6c27adb56d86c4c14ad44b37592d416fa2b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3ca43503ecbe8e814958576e46ced10bfe9ad49
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716714"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442668"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Korkoryhmän korkoprosenttien määrittäminen
 
@@ -44,19 +47,10 @@ Voit määrittää korkotasot, jotka laskevat määritetyn prosenttiosuuden.
 
 - Korkosumman koskee kaikkia valuuttoja.
 - Korkosumman rajojen antaminen on valinnaista.
-- **Prosentti** valitaan **Korkokoodien määrittäminen** -sivun **Käytä korkolaskennan perusteena** -kentässä.
+- <strong>Prosentti</strong> valitaan** <strong>Korkokoodien määrittäminen</strong> -sivun <strong>**Käytä korkolaskennan perusteena</strong> -kentässä.
 
 Jos esimerkiksi haluat määrittää korkokoodin, joka määrää 5 prosentin koron jokaista kahta kuukautta kohti, jonka laskun maksaminen ylittää tapahtuman eräpäivän, anna arvo 2 **Koronlaskentaväli**-kenttään ja valitse **Kuukausi**.
 
-> [!NOTE] 
-> Uusi korkolaskun laskennassa käytettävä algoritmi lisätään käyttämällä ominaisuuksien hallintaa. Jos haluat käyttää tätä algoritmia, ota käyttöön ominaisuus **(GBL) Salli päiväkohtaisen koron laskenta jakamalla vuositaisen prosentin luvulla 365**. Lisätietoja uuden ominaisuuden käyttöönotosta on kohdassa [ominaisuuksien hallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-> 
-> Korkolaskun summan laskentakaava on: 
->  
-> Korkolaskun summa = Velkasumma * Vuosittainen korkoprosentti / 365 * myöhässä olevien päivien määrä
->  
-> Ominaisuus on saatavilla versiossa 10.0.18 ja sitä uudemmissa versioissa.    
- 
 ## <a name="interest-rates-based-on-amounts"></a>Summin perustuvat korkotasot
 Voit määrittää korkotasot, jotka laskevat määritetyn summan valuuttaa kohden.
 - Korkosumma on määritettävä jokaiselle korkokoodin valuutalle.
@@ -90,6 +84,7 @@ Määrität alueen tiedot seuraavasti.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Esimerkki 2: Korko alueen mukaan = päivät
+--------------------------------------------------
 
 Määrität korkokoodin, joka arvioi koron kerran jokaista 15 päivää kohden, jonka laskun maksu on myöhässä tapahtuman eräpäivästä. Haluat laskennan perustuvan summan korkoarvoon askeleittaisten päivävälien mukaan. Koron arvo on 10,00 kutakin 15 päivää kohden 60 ensimmäisen päivän ajan, 15,00 kutakin 15 päivää kohden päivien 61–90 ajan ja 20,00 kutakin 15 päivää kohden päivän 91 ja sen jälkeisten päivien ajan. Määrität korkokoodin kenttien arvot seuraavasti.
 
@@ -110,6 +105,7 @@ Määrität alueen tiedot seuraavasti.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Esimerkki 3: Korko alueen mukaan = kuukaudet
+----------------------------------------------------
 
 Määrität korkokoodin, joka arvioi koron kerran jokaista kuukautta kohden, jonka laskun maksu on myöhässä tapahtuman eräpäivästä. Haluat laskennan perustuvan prosentuaaliseen korkoarvoon askeleittaisten kuukausivälien mukaan. Koron arvo on 1,5 prosenttia kuukaudessa eräpäivän jälkeisen kolmen ensimmäisen kuukauden ajan, 2,0 prosenttia kuukaudessa toisen kolmen kuukauden jakson ajan ja 2,5 prosenttia kuukaudessa kuuden ensimmäisen kuukauden jälkeen. Määrität korkokoodin kenttien arvot seuraavasti.
 
@@ -135,6 +131,3 @@ Voit tarkastella eri versioita valitsemalla **Alkupäivämäärä**-valikkovaiht
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

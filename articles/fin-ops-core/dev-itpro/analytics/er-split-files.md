@@ -2,9 +2,11 @@
 title: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
 description: Tässä aiheessa on tietoja siitä, miten voit jakaa luodut tiedostot koon ja sisältönimikemäärän mukaan.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 05/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3735bcb06eff966fc364a891b38d44e34e845e35f59314822d13eba40d51d5f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d60266aba42f502e7707bdace921cfee4526b6ae
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769969"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682868"
 ---
 # <a name="split-generated-xml-files-based-on-file-size-and-content-quantity"></a>Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
 
@@ -38,13 +40,10 @@ Jos olet määrittänyt tiedostokohteita FILE-muotoelementille, joka on määrit
 
 Lisätietoja tästä toiminnosta saat toistamalla tehtäväoppaan **ER – XML-tiedostojen jakaminen tiedoston koon tai sisältökohteiden määrän perusteella**, joka on osa **7.5.4.3 Hanki/Kehitä IT-palvelu/ratkaisukomponentit (10677)** -liiketoimintaprosessia, jonka voi ladata [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=874684). Tässä tehtäväoppaassa näet, miten voit määrittää ER-muodon jakamaan luotavat tiedostot rajoitusten koon ja sisällön nimikemäärän perusteella. Lataa seuraavat tiedostot suorittaaksesi tehtäväoppaan:
 
-- [ER-mallin määritys - XmlFilesSplittingModel.xml](https://download.microsoft.com/download/e/a/f/eaffe96a-22ec-4a32-898a-f4328c91c387/XmlFilesSplittingModel.xml)
-- [ER-muodon määritys - XmlFilesSplittingFormat.xml](https://download.microsoft.com/download/e/9/c/e9c5849b-8254-4cdf-bb00-4c2ebc72ddec/XmlFilesSplittingFormat.xml)
+- [ER-mallin määritys - XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [ER-muodon määritys - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,6 +41,3 @@ Tähän versioon sisältyy muita korjauksia.
 ## <a name="known-issue"></a>Tunnettu ongelma
 
 **Ongelma:** Lisättäessä uuden liitteen työntekijään, **Uusi**- ja **Muokkaa**-painikkeet näkyvät harmaina. **Ratkaisuehdotus:** Varmista ennen liitesivun avaamista, että olet sulkenut **Työntekijä**-sivulla olevat tietoruudut. Jos tietoruudut ovat suljettuja **Työntekijä**-sivua ladattaessa, liitepainikkeet otetaan käyttöön. (Tämä ongelma korjataan seuraavassa ympäristöpäivityksessä.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

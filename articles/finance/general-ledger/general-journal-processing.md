@@ -1,26 +1,29 @@
 ---
 title: Yleisen kirjauskansion käsittely
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Financen ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.
-author: kweekley
+author: ShylaThompson
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726774"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442882"
 ---
 # <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
 
@@ -42,14 +45,14 @@ Kirjauskansioiden nimet on yksi tärkeimmistä määritettävistä alueista. On 
 
 Kirjauskansion nimeä voidaan käyttää vain oikaisuihin. Tässä tapauksessa voit määrittää, että vain **Kirjanpito**-tilityyppi on kelvollinen kaikissa yhtiöissä. 
 
-[![Kirjauskansion hallinnan tilityypit.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Kirjauskansion hallinnan tilityypit](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Kirjauskansion nimeä voidaan käyttää vain määrätylle segmentille tai päätilien alueelle. 
 
-[![Kirjauskansion hallintasegmentti.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Kirjauskansion hallintasegmentti](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Vaihtoehto **Automaattinen peruutus** on saatavilla yleisissä kirjauskansioissa. Sinulla voi esimerkiksi alla näkyvän esimerkin mukaisesti olla jaksotusoikaisu, jossa itse tiedostoa ei ole vielä käsitelty.
-[![Kirjauskansion takaisinkirjaukset.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Kirjauskansion takaisinkirjaukset](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Microsoft Excelin lisäosa kirjauskansiovientejä varten tarjoaa lisäautomaatiota ja tekee tietojen syötöstä helpompaa. Toiminto **Avaa rivit Excelissä** on saatavilla **Yleinen kirjauskansio-** ja **Kirjaustosite** -sivuilla. 
 
@@ -102,6 +105,3 @@ Mahdollisuus palauttaa kirjauskansio työn kulussa, jonka tila on "peruuttamaton
 
 ## <a name="delete-journal-lines"></a>Poista kirjauskansion rivit
 Mahdollisuus poistaa kaikki kirjauskansion rivit nopeasti on otettu käyttöön kirjauskansion kohdassa **Toiminnot** > **Poista kirjauskansion rivit**. Voit ottaa tämän toiminnon käyttöön valitsemalla **Ominaisuuksien hallinta** -sivulla **Poista kirjauskansion suorituskyvyn optimoinnit**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

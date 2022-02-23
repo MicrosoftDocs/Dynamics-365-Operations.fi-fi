@@ -1,26 +1,29 @@
 ---
 title: Varastotyön mobiililaitteiden määrittäminen
 description: Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902176"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427438"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
@@ -41,7 +44,6 @@ Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, määritä asetuksen 
 > Valikkovaihtoehdolle on käytettävissä lisäkenttiä sille valitun tilan mukaan ja sen mukaan, käytetäänkö valikkovaihtoehtoa suorittamaan olemassa oleva työ. Lisätietoja lisäkenttien valinnasta on jäljempänä tässä ohjeaiheessa kohdassa Lisävalikkovaihtoehdot.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
-
 Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, voit luoda valikkovaihtoehdon suorittamaan yleisen tehtävän tai kyselyn, joka ei luo työtä. Tällaisia tehtäviä ovat esimerkiksi rekisterikilpien uudelleentulostus tai toimipaikan nimikkeiden sijaintia koskeva kysely. Seuraavassa taulukossa näkyvät valittavina olevat vaihtoehdot.
 
 | Vaihtoehto | Kuvaus |
@@ -63,11 +65,12 @@ Jos valikkovaihtoehdon **Tila** kentän arvoksi määritetään **Epäsuora**, v
 | Tyhjennä numerosarjojen välimuisti | Poista numerosarjan numerot numerosarjan välimuistista. Järjestelmänvalvoja suorittaa tavallisesti tämän toiminnon välimuistiin liittyvien ongelmien ratkaisemiseksi, kun käyttö tapahtuu mobiililaitteelta. |
 | Muuta eräkäsittelyä | Anna työntekijän määrittää erän käsittelykoodi nimikkeelle ja erälle. Tämä vaihtoehto päivittää eräkohtaisen käsittelykoodin. |
 | Näytä avoin työluettelo | Näyttää käyttäjäkohtaisen saatavilla olevien töiden luettelon. Käyttäjä voi valita suoritettavan työn, joka kohdistetaan hänelle. Luettelo on tarkoitettu katseltavaksi tablettilaitteissa, joiden näytön koko on 7 tuumaa tai enemmän. Kun valitset tämän vaihtoehdon, **Muokkaa kyselyä**- ja **Kenttäluettelo**-valikkovaihtoehdot ovat käytettävissä. **Muokkaa kyselyä** -sivulla voit määrittää ehtoja luettelossa näkyville töille. **Kenttäluettelo**-sivulla voit valita työluettelossa näkyvät kentät. Voit esimerkiksi rajoittaa näkyvissä olevien kenttien määrää, jotta käyttäjän on helpompi valita oikea työnimike. Voit myös valita **Yleiset**-välilehdessä **Tietueita sivulla** -kentässä, miten monta työtietuetta kullakin sivulla näytetään. Jos **Salli käyttäjien suodattaa työtä tapahtumatyypeittäin** -vaihtoehto on valittuna, työluettelossa on **Työn suodatus** -ohjausobjekti, jolla käyttäjä voi suodattaa luettelon tapahtumatyypin mukaan. Käyttäjä näkee työluettelossa vain työt, joiden käyttöoikeus hänellä on. Varmista, että käyttäjillä on oikeudet yhteen tai useampaan käyttäjäohjattuun valikkovaihtoehtoon, jotka tukevat tiettyä työluokkatyyppiä, jota heidän tulisi pystyä käyttämään. Käyttöoikeudet tarkistetaan myös, kun käyttäjä yrittää suorittaa työn luettelosta.|
-| Luo siirtotilaus rekisterikilvistä | Varastotyöntekijät voivat luoda ja käsitellä siirtotilauksia suoraan varastonhallinnan mobiilisovelluksessa. Varastotyöntekijät aloittavat valitsemalla kohdevaraston, jonka jälkeen he voivat lukea vähintään yhden rekisterikilven sovelluksella. Kun varastotyöntekijä valitsee **Suorita tilaus**, erätyö luo tarvittavan siirtotilauksen ja tarvittavat tilausrivit kyseisille rekisterikilville rekisteröidyn käytettävissä olevan varaston perusteella. Lisätietoja on kohdassa [Siirtotilausten luonnin ottaminen käyttöön varastosovelluksessa](create-transfer-order-from-warehouse-app.md)
+| Luo siirtotilaus rekisterikilvistä | Varastotyöntekijät voivat luoda ja käsitellä tällä ominaisuudessa siirtotilauksia suoraan varastosovelluksessa. Varastotyöntekijät aloittavat valitsemalla kohdevaraston, jonka jälkeen he voivat lukea vähintään yhden rekisterikilven sovelluksella. Kun varastotyöntekijä valitsee **Suorita tilaus**, erätyö luo tarvittavan siirtotilauksen ja tarvittavat tilausrivit kyseisille rekisterikilville rekisteröidyn käytettävissä olevan varaston perusteella. Lisätietoja on kohdassa [Siirtotilausten luonnin ottaminen käyttöön varastosovelluksessa](create-transfer-order-from-warehouse-app.md)
+
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Valikkovaihtoehtojen määrittäminen työn luomiseksi toiselle työntekijälle tai prosessille
-
 Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, kun alustava toiminto on suoritettu mobiililaitteella. Jos esimerkiksi yksi työntekijä käyttää mobiililaitetta nimikkeen vastaanottamiseen, hyllytystyö luodaan toiselle työntekijälle. Määritä työn luova valikkovaihtoehto valitsemalla **Mobiililaitteen valikkovaihtoehdot** -sivulla **Tila**-kentässä **Työ**. Seuraavassa taulukossa **Työn luontiprosessi** -kentän vaihtoehdot on järjestetty tilaustyypin mukaan.
+
 
 <table>
 <tbody>
@@ -407,7 +410,6 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Edellytä, että työntekijät vahvistavat tuotteen, sijainnin tai määrän nimikkeitä keräillessään.
-
 Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijä käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Supply Chain Managementin automaattisesti vahvistaa työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
 
 Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuksia voi käyttää.
@@ -427,13 +429,13 @@ Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuks
 > [!NOTE]
 > Voit vaatia edellyttää vahvistusta ainoastaan työtyypeille keräily ja määritys.
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
-- [Määritä mobiililaitteen valikkokohde työn valmistumista varten ostotilaus-tyypissä](tasks/set-up-mobile-device-menu.md)
-- [Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-- [Varaston tilat](../inventory/inventory-statuses.md)
+[Määritä mobiililaitteen valikkokohde työn valmistumista varten ostotilaus-tyypissä](tasks/set-up-mobile-device-menu.md)
+
+[Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+
+[Varaston tilat](../inventory/inventory-statuses.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

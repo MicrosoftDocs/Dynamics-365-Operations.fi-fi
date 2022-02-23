@@ -1,10 +1,12 @@
 ---
 title: Sovellusluokkamenetelmän kutsulausekkeiden suunnittelu (ER)
-description: Tässä aiheessa käsitellään aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin määrityksissä kutsumalla sovellusluokkien pakollisia menetelmiä.
+description: Tässä oppaassa on tietoja aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin (ER) konfiguraatioissa kutsumalla sovellusluokkien pakollisia menetelmiä ER-lausekkeissa.
 author: NickSelin
-ms.date: 11/02/2021
+manager: AnnBe
+ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,180 +14,146 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751703"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682018"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Sovellusluokkamenetelmän kutsulausekkeiden suunnittelu (ER)
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa käsitellään aiemmin luodun sovelluslogiikan uudelleenkäyttöä [sähköisen raportoinnin (ER)](../general-electronic-reporting.md) määrityksissä kutsumalla sovellusluokkien pakollisia menetelmiä ER-lausekkeissa. Luokkien kutsuargumenttien arvot voidaan määrittää dynaamisesti suorituksen aikana. Arvot voivat esimerkiksi perustua jäsennettävän asiakirjan tietoihin, mikä varmistaa arvojen oikeellisuuden.
+Tässä oppaassa on tietoja aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin (ER) konfiguraatioissa kutsumalla sovellusluokkien pakollisia menetelmiä ER-lausekkeissa. Luokkien kutsumisen argumenttien arvot voidaan määrittää dynaamisesti suorituksen aikana esimerkiksi jäsennysasiakirjan perusteella. Näin varmistetaan tietojen oikeellisuus. Tässä oppaassa luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware Inc. Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. 
 
-Esimerkiksi tässä aiheessa suunnitellaan prosessi, joka jäsentää saapuvat tiliotteet sovellustietojen päivitystä varten. Saapuvat tiliotteet vastaanotetaan tekstitiedostoina (.txt), jotka sisältävät IBAN-koodit (kansainvälisen tilinumeron). IBAN-koodit on tarkistettava tiliotteiden tuontiprosessin osana. Tähän tarkistukseen käytetään sisältyvää logiikkaa.
+Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla. Sinun on myös ladattava ja tallennettava paikallisesti seuraava tiedosto: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
-## <a name="prerequisites"></a>Edellytykset
+ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista.
 
-Tämän aiheen menettelyt on tarkoitettu käyttäjille, joille on määritetty **järjestelmänvalvojan** tai **sähköisen raportoinnin kehittäjän** rooli.
-
-Menettelyt voidaan suorittaa minkä tahansa tietojoukon avulla.
-
-Niiden suorittamista varten ladattava ja tallennettava seuraava tiedosto: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
-
-Tässä aiheessa luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Tämän vuoksi ennen tämän aiheen menettelyjen suorittamista on toimittava seuraavasti:
-
-1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Tarkista **Lokalisoinnin konfiguraatiot** -sivulla, että malliyrityksen **Litware, Inc.** konfiguraation lähde on käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita ensin vaiheet kohdassa [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](er-configuration-provider-mark-it-active-2016-11.md).
+1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
+    * Tarkista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.   
+    * Prosessi suunnitellaan saapuvien tiliotteiden jäsennysprosessia sovellustietojen päivitys varten. Saat saapuvat tiliotteet TXT-tiedostoina, joissa on IBAN-koodeja. IBAN-koodit on tarkistettava tiliotteiden osana tuontiprosessia. Tähän tarkistukseen käytetään sisältyvää logiikkaa.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Uuden ER-mallimäärityksen tuominen
-
-1. Valitse **Lokalisoinnin konfiguraatiot** -sivun **Konfiguroinnin lähteet** -osassa konfiguroinnin lähteen, **Microsoft**, ruutu.
-2. Valitse **Säilöt**.
-3. Valitse **Lokalisointisäilöt** -sivulla **Näytä suodattimet**.
-4. Valitse yleisen säilön tietue lisäämällä **Nimi**-suodatinkenttä.
-5. Anna **Nimi**-kentässä arvo **Yleinen**. Valitse sitten **sisältää** suodatinoperaattori.
-6. Valitse **Käytä**.
-7. Tarkastele valitun säilön ER-määrityksiä valitsemalla **[Avaa](../er-download-configurations-global-repo.md#open-configurations-repository)**.
-8. Valitse **Konfiguraatiosäilö** -sivun määrityspuussa **Maksumalli**.
-9. Jos **Tuo**-painike on käytettävissä **Versiot**-pikavälilehdessä, valitse se ja valitse sitten **Kyllä**.
-
-    Jos **Tuo**-painike ei ole käytettävissä, **Maksumalli**-ER-määrityksen valittu versio on jo tuotu.
-
-10. Sulje **Konfiguraatiosäilö**-sivu ja sulje sitten **Lokalisointisäilöt**-sivu.
+1. Etsi haluamasi tietue luettelosta ja valitse se.
+    * Valitse Microsoft-toimittaja-ruutu.  
+2. Valitse Säilöt.
+3. Valitse Näytä suodattimet.
+4. Lisää suodattimen kenttä Tyyppinimi. Anna Nimi-kentässä resurssit-arvo. Valitse ensin sisältää-suodatinoperaattori ja sitten Käytä.
+5. Valitse Avaa.
+6. Valitse puussa solmu Maksumalli.
+    * Jos Versiot-pikavälilehden Tuo-painike ei ole käytössä, olet jo tuonut version 1, joka on eräs ER-konfiguraation maksumalleista. Voit ohittaa tämän alitehtävän seuraavat vaiheet.   
+7. Valitse Tuo.
+8. Valitse Kyllä.
+9. Sulje sivu.
+10. Sulje sivu.
 
 ## <a name="add-a-new-er-format-configuration"></a>Uuden ER-muotokonfiguraation lisääminen
+1. Valitse Raportointikonfiguraatiot.
+    * Lisää uusi ER-muoto, jotta voit jäsentää saapuvat tiliotteet TXT-muodossa.  
+2. Valitse puussa solmu Maksumalli.
+3. Avaa valintaikkunan valikko valitsemalla Luo konfigurointi.
+4. Syötä Uusi-kenttään Muoto perustuu tietomalliin PaymentModel.
+5. Kirjoita Nimi-kenttään Tiliotteen tuontimuoto (esimerkki).
+    * Tiliotteen tuonnin muoto (esimerkki)  
+6. Valitse Tukee tietojen tuontia -kentässä Kyllä.
+7. Valitse Luo konfiguraatio.
 
-Lisää uusi ER-muoto, jotta voit jäsentää saapuvat tiliotteet TXT-muodossa.
+## <a name="design-the-er-format-configuration---format"></a>ER-muotokonfiguraation suunnitteleminen - muoto
+1. Valitse Suunnittelutoiminto.
+    * Suunniteltu muoto vastaa ulkoisen tiedoston odotettua rakennetta TXT-muodossa.  
+2. Avaa valintaikkunan valikko valitsemalla Lisää juuri.
+3. Valitse puussa "Text\Sequence".
+4. Kirjoita Nimi-kenttään "Juuri".
+    * Juuri  
+5. Valitse Erikoismerkit-kentässä "Uusi rivi - Windows (CR-LF)".
+    * Vaihtoehto Uusi rivi - Windows (CR LF) on valittu Erikoismerkit-kentässä. Tämän asetuksen perusteella jokaista jäsennystiedoston riviä pidetään erillisenä tietueena.  
+6. Valitse OK.
+7. Avaa valintaikkuna valitsemalla Lisää.
+8. Valitse puussa "Text\Sequence".
+9. Kirjoita Nimi-kenttään Rivit.
+    * Rivit  
+10. Valitse Monimuotoisuus-kentässä Yksi tai useita.
+    * Vaihtoehto Yksi tai useita on valittu Monimuotoisuus-kentässä. Tämän asetuksen perusteella jäsennystiedostossa odotetaan olevan vähintään yksi rivi.  
+11. Valitse OK.
+12. Valitse puussa Root\Rows.
+13. Valitse Lisää järjestys.
+14. Kirjoita Nimi-kenttään Kentät.
+    * Kentät  
+15. Valitse Monimuotoisuus-kentässä Tasan yksi.
+16. Valitse OK.
+17. Valitse puussa Root\Rows\Fields.
+18. Avaa valintaikkuna valitsemalla Lisää.
+19. Valitse puussa solmu Text\String.
+20. Syötä Nimi-kenttään IBAN.
+    * IBAN-tilinumero  
+21. Valitse OK.
+    * Jäsennystiedoston jokainen rivi sisältää vain yhden IBAN-koodin.  
+22. Valitse Tallenna.
 
-1. Valitse **Lokalisointimääritykset**-sivulla **Raportointimääritykset**-ruutu.
-2. Valitse **Konfiguraatiot**-sivun konfiguraatiopuu vasemmasta ruudusta ja valitse **Maksumalli**.
-3. Valitse **Luo konfiguraatio**. 
-4. Toimi avattavassa valintaikkunassa seuraavasti:
-
-    1. Anna **Uusi**-kentässä **Muoto perustuu tietomalliin PaymentModel**.
-    2. Anna **Nimi**-kenttään **Tiliotteen tuontimuoto (esimerkki)**.
-    3. Valitse **Tukee tietojen tuontia** -kentässä **Kyllä**.
-    4. Lopeta konfiguraation luonti valitsemalla **Luo konfiguraatio**.
-
-## <a name="design-the-er-format-configuration--format"></a>ER-muodon konfiguroinnin suunnitteleminen - muoto
-
-Suunniteltu ER-muoto, joka vastaa ulkoisen tiedoston odotettua rakennetta TXT-muodossa.
-
-1. Valitse lisätyssä **Tiliotteen tuonnin muoto (esimerkki)**- muodon konfiguraatiossa **Suunnittelutoiminto**.
-2. Valitse **Muodon suunnittelija** -sivun vasemman ruudun muodon rakennepuussa **Lisää juuri**.
-3. Toimi seuraavasti avautuvassa valintaikkunassa:
-
-    1. Lisää **Jakso**-muotokomponentti valitsemalla puussa **Teksti\\Jakso**.
-    2. Anna **Nimi**-kenttään **Juuri**.
-    3. Valitse **Erikoismerkit**-kentässä **Uusi rivi - Windows (CR LF)**. Tämän asetuksen perusteella jokaista jäsennystiedoston riviä pidetään erillisenä tietueena.
-    4. Valitse **OK**.
-
-4. Valitse **Lisää**.
-5. Toimi seuraavasti avautuvassa valintaikkunassa:
-
-    1. Valitse puussa **Teksti\\Jakso**.
-    2. Anna **Nimi**-kenttään **Rivit**.
-    3. Valitse **Monimuotoisuus**-kentässä **Yksi tai useita**. Tämän asetuksen perusteella jäsennystiedostossa odotetaan olevan vähintään yksi rivi.
-    4. Valitse **OK**.
-
-6. Valitse puussa **Juuri\\Rivit** ja valitse sitten **Lisää jakso**.
-7. Toimi seuraavasti avautuvassa valintaikkunassa:
-
-    1. Anna **Nimi**-kenttään **Kentät**.
-    2. Valitse **Monimuotoisuus**-kentässä **Tasan yksi**.
-    3. Valitse **OK**.
-
-8. Valitse puussa **Juuri\\Rivit\\Kentät** ja valitse sitten **Lisää**.
-9. Toimi seuraavasti avautuvassa valintaikkunassa:
-
-    1. Valitse puussa **Teksti\\Merkkijono**.
-    2. Anna **Nimi**-kenttään **IBAN**.
-    3.. Valitse **OK**.
-
-10. Valitse **Tallenna**.
-
-Konfiguraatio on nyt määritetty siten, että jäsennystiedoston kullakin rivillä on vain IBAN-koodi.
-
-![Tiliotteen tuonnin muoto (esimerkki) -muodon konfiguraatio Muodon suunnitteluja -sivulla](../media/design-expressions-app-class-er-01.png)
-
-## <a name="design-the-er-format-configuration--mapping-to-a-data-model"></a>ER-muodon konfiguraation suunnitteleminen - yhdistämismääritys tietomalliin
-
-Tietomallin täyttäminen suunnittelemalla ER-muodon yhdistämismääritys, joka käyttää jäsennystiedoston tietoja.
-
-1. Valitse **Muodon suunnittelija** -sivun toimintoruudussa **Yhdistä muoto malliin**.
-2. Valitse **Yhdistäminen mallista tietolähteeseen** -sivun toimintoruudussa **Uusi**.
-3. Valitse **Määritys**-kentässä **BankToCustomerDebitCreditNotificationInitiation**.
-4. Anna **Nimi**-kentässä **Yhdistäminen tietomalliin**.
-5. Valitse **Tallenna**.
-6. Valitse **Suunnittelu**.
-7. Valitse **Mallin määrityksen suunnittelu** -sivun **Tietolähdetyypit**-puussa **Dynamics 365 for Operations\\Luokka**.
-8. Valitse **Tietolähteet**-osassa **Lisää juuri**. Näin lisätään tietolähde, joka kutsuu IBAN-koodien vahvistuksen aiemmin luodun sovelluslogiikan.
-9. Toimi seuraavasti avautuvassa valintaikkunassa:
-
-    1. Anna **Nimi**-kentässä **Check\_codes**.
-    2. Anna tai valitse **Luokka**-kentässä **ISO7064**.
-    3. Valitse **OK**.
-
-10. Toimi seuraavasti **Tietolähdetyypit**-puussa:
-
-    1. Laajenna **format**-tietolähde.
-    2. Laajenna **format\\Root: Sequence(Root)**.
-    3. Laajenna **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)**.
-    4. Laajenna **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)\\Fields: Sequence 1..1 (Fields)**.
-
-11. Toimi seuraavasti **Tietomalli**-puussa:
-
-    1. Laajenna tietomallin **Maksut**-kenttä.
-    2. Laajenna **Maksut\\Creditor Account(CreditorAccount)**.
-    3. Laajenna **Maksut\\Creditor Account(CreditorAccount)\\Identification**.
-    4. Laajenna **Maksut\\Creditor Account(CreditorAccount)\\Identification\\IBAN**.
-
-12. Konfiguroidun muodon komponentit sidotaan tietomallin kenttiin seuraavasti:
-
-    1. Valitse **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)**.
-    2. Valitse **Maksut**.
-    3. Valitse **Sido**. Tämän asetuksen perusteella jokaista jäsennystiedoston riviä pidetään yksittäisenä maksuna.
-    4. Valitse **format\\Root: Sequence(Root)\\Rows: Sequence 1..\* (Rows)\\Fields: Sequence 1..1 (Fields)\\IBAN: String(IBAN)**.
-    5. Valitse **Maksut\\Creditor Account(CreditorAccount)\\Identification\\IBAN**.
-    6. Valitse **Sido**. Tietomallin **IBAN**-kenttään täytetään tämän asetuksen perusteella jäsennystiedoston arvo.
-
-    ![Muotokomponenttien sitominen tietomallin kenttiin Mallin yhdistämisen suunnittelu -sivulla](../media/design-expressions-app-class-er-02.png)
-
-13. **Vahvistukset**-välilehdessä lisätään seuraavasti [vahvistussääntö](../general-electronic-reporting-formula-designer.md#Validation) näyttämään virhesanoma niille jäsennystiedoston riveille, joissa on virheellinen IBAN-koodi:
-
-    1. Valitse ensin **Uusi** ja sitten **Muokkaa ehtoa**.
-    2. Laajenna **Kaavojen suunnittelutoiminto** -sivun **Tietolähde**-puussa **ISO7064**-sovellusluokkaa vastaava **Check\_codes**-tietolähde. Tällä tavoin voidaan tarkastella kyseisen luokan käytettävissä olevia menetelmiä.
-    3. Valitse **Check\_codes\\verifyMOD1271\_36**.
-    4. Valitse **Lisää tietolähde**.
-    5. Anna **Kaava**-kentässä seuraava [lauseke](../general-electronic-reporting-formula-designer.md#Binding): **Check\_codes.verifyMOD1271\_36(format.Root.Rows.Fields.IBAN)**.
-    6. Valitse **Tallenna** ja sulje sitten sivu.
-    7. Valitse **Muokkaa sanomaa**.
-    8. Anna **Kaavan suunnitteluohjelma** -sivun **Kaava**-kentässä **CONCATENATE("Löytyi virheellinen IBAN-koodi:&nbsp;", format.Root.Rows.Fields.IBAN)**.
-    9. Valitse **Tallenna** ja sulje sitten sivu.
-
-    Näiden asetusten perusteella tarkistusehto palauttaa arvon *[FALSE](../er-formula-supported-data-types-primitive.md#boolean)* kullekin virheelliselle IBAN-koodin. Ehto kutsuu **ISO7064**-sovellusluokan aiemmin luotua **verifyMOD1271\_36**-menetelmä Huomaa, että IBAN-koodin arvo määritetään dynaamisesti suorituksen aikana, koska kutsumenetelmän argumentti perustuu jäsennettävän tekstitiedoston sisältöön.
-
-    ![Tarkistussääntö Mallin yhdistämisen suunnittelu -sivulla](../media/design-expressions-app-class-er-03.png)
-
-14. Valitse **Tallenna**.
-15. Sulje ensin **Mallin yhdistämisen suunnittelu** -sivu ja sitten **Yhdistäminen mallista tietolähteeseen** -sivu.
+## <a name="design-the-er-format-configuration--mapping-to-data-model"></a>ER-muotokonfiguraation suunnitteleminen - yhdistämismääritys tietomalliin
+1. Valitse Yhdistä muoto malliin.
+2. Valitse Uusi.
+3. Kirjoita Määritys-kenttään BankToCustomerDebitCreditNotificationInitiation.
+    * BankToCustomerDebitCreditNotificationInitiation  
+4. ResolveChanges, määritelmä.
+5. Kirjoita Nimi-kenttään Yhdistämismääritys tietomalliin.
+    * Yhdistämismääritys tietomalliin  
+6. Valitse Tallenna.
+7. Valitse Suunnittelutoiminto.
+8. Valitse puussa Dynamics 365 for Operations\Class.
+9. Valitse Lisää juuri.
+    * Lisää uusi tietolähde, joka kutsuu aiemmin luotua sovelluslogiikkaa IBAN-koodien tarkistusta varten.  
+10. Kirjoita Nimi-kenttään tarkista koodit.
+    * tarkista koodit  
+11. Kirjoita Luokka-kenttään ISO7064.
+    * ISO7064  
+12. Valitse OK.
+13. Laajenna puussa format.
+14. Laajenna puussa format\Root: Sequence(Root).
+15. Valitse puussa format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows).
+16. Valitse Sido.
+17. Laajenna puussa format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows).
+18. Laajenna puussa format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields).
+19. Valitse puussa format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN).
+20. Laajenna puussa 'Payments = format.Root.Rows'.
+21. Laajenna puussa Payments = format.Root.Rows\Creditor Account(CreditorAccount).
+22. Laajenna puussa Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification.
+23. Valitse puussa Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification\IBAN.
+24. Valitse Sido.
+25. Valitse Vahvistukset-välilehti.
+26. Valitse Uusi.
+    * Lisää uusi tarkistussääntö, joka näyttää virheen jokaisella virheellisen IBAN-koodin sisältävällä jäsennystiedoston rivillä.  
+27. Valitse Muokkaa ehtoa.
+28. Laajenna puussa 'check_codes'.
+29. Valitse puussa check_codes\verifyMOD1271_36.
+30. Valitse Lisää tietolähde.
+31. Syötä Kaava-kenttään 'check_codes.verifyMOD1271_36('.
+    * check_codes.verifyMOD1271_36(  
+32. Laajenna puussa format.
+33. Laajenna puussa format\Root: Sequence(Root).
+34. Laajenna puussa format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows).
+35. Laajenna puussa format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields).
+36. Valitse puussa format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN).
+37. Valitse Lisää tietolähde.
+38. Syötä Kaava-kenttään 'check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)'.
+    * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
+39. Valitse Tallenna.
+40. Sulje sivu.
+    * Tarkistusehto on määritetty palauttamaan FALSE jokaisen virheellisen IBAN-koodin kohdalla. Se kutsuu sovellusluokan ISO7064 olemassa olevaa menetelmää verifyMOD1271_36. Huomaa, että IBAN-koodin arvo määritetään dynaamisesti suorituksen aikana, koska kutsumenetelmän argumentti perustuu jäsennettävän TXT-tiedoston sisältöön.   
+41. Valitse Muokkaa sanomaa.
+42. Syötä Kaava-kenttään 'CONCATENATE("Löytyi virheellinen IBAN-kood: ", format.Root.Rows.Fields.IBAN)'.
+    * CONCATENATE("Löytyi virheellinen IBAN-koodi: ", format.Root.Rows.Fields.IBAN)  
+43. Valitse Tallenna.
+44. Sulje sivu.
+45. Valitse Tallenna.
+46. Sulje sivu.
 
 ## <a name="run-the-format-mapping"></a>Muodon yhdistämismäärityksen suorittaminen
+Testausta varten voit suorittaa muodon yhdistämismäärityksen käyttämällä aiemmin ladattua SampleIncomingMessage.txt-tiedostoa. Luodut tiedot sisältävät tietoja, jotka tuodaan valitusta TXT-tiedostosta ja joilla täytetään mukautetun tietomallin tiedot varsinaisen tuonnin yhteydessä.   
+1. Valitse Suorita.
+    * Valitse Selaa ja siirry aiemmin ladattuun SampleIncomingMessage.txt-tiedostoon.  
+2. Valitse OK.
+    * Tarkista XML-muotoiset tiedot. Nämä tiedot on tuotu valitusta tiedostosta ja siirretty tietomalliin. Huomaa, että vain 3 tuodun TXT-tiedoston riviä on käsitelty. Rivillä 4 oleva IBAN-koodi, joka ei ole sallittu, on ohitettu. Infolokissa on virhesanoma.  
 
-Testausta varten muodon yhdistämismääritys voidaan suorittaa käyttämällä aiemmin ladattua SampleIncomingMessage.txt-tiedostoa. Luotu tulos sisältää tietoja, jotka tuodaan valitusta tekstitiedostosta ja jotka siirretään mukautettuun tietomalliin varsinaisen tuonnin yhteydessä.
-
-1. Valitse **Yhdistäminen mallista tietolähteeseen** -sivulla **Suorita**.
-2. Valitse **Sähköisen raportin parametrit** -sivulla **Selaa**, selaa ladattuun **SampleIncomingMessage.txt**-tiedostoon ja valitse tiedosto.
-3. Valitse **OK**.
-4. Huomaa, että **Yhdistäminen mallista tietolähteeseen** -sivulla on virheellistä IBAN-koodia koskeva virhesanoma.
-
-    ![Muodon yhdistämismäärityksen suorittamisen tulos Yhdistäminen mallista tietolähteeseen -sivulla](../media/design-expressions-app-class-er-04.png)
-
-5. Tarkista XML-muotoiset tiedot. Nämä tiedot on tuotu valitusta tiedostosta ja siirretty tietomalliin. Huomaa, että vain kolme tuodun tekstitiedoston riviä käsiteltiin ilman virheitä. Rivillä 4 oleva IBAN-koodi ei kelpaa, ja se ohitettiin.
-
-    ![XML-tulos](../media/design-expressions-app-class-er-05.png)
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

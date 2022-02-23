@@ -2,23 +2,26 @@
 title: EUR-00002 EU Intrastat -ilmoituksen luominen
 description: Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.
 author: Anasyash
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57d7fcfeed3b630b2fa1f8ada4e116c230ba5bf0d8a94deeb5f59b6514d8a3c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760608"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4407892"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR-00002 EU Intrastat -ilmoituksen luominen
 
@@ -55,7 +58,7 @@ Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.
     * Anna pyöristystarkkuus, esimerkiksi 0,01.  
 7. Syötä Summan desimaalien määrä -kenttään haluamasi luku.
     * Kirjoita esimerkiksi 2.  
-8. Valitse vaihtoehto Pyöristys alle 1 kg -kentässä.
+8. Valitse vaihtoehto Pyöristys, alle 1 kg -kentässä.
     * Valitse esimerkiksi "Pyöristys, enintään 1 kg".  
 9. Syötä Pyöristyssääntö-kenttään numero.
     * Kirjoita esimerkiksi 1 kokonaisluvun pyöristyksen painotukseksi.  
@@ -111,6 +114,3 @@ Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.
     * Valitse esimerkiksi Lähtevät.  
 27. Valitse OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

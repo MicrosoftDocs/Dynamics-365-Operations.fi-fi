@@ -1,34 +1,35 @@
 ---
 title: Kaupan aloitussivu
-description: Dynamics 365 Commercen aloitussivu.
+description: Dynamics 365 Commercein aloitussivu.
 author: bebeale
+manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: ''
-ms.custom:
-- "260624"
-- intro-internal
+ms.custom: 260624
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2fc5746d3a05eb85afbcb73079146fee899cebc7
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595357"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4412119"
 ---
 # <a name="commerce-home-page"></a>Kaupan aloitussivu
 
 [!include [banner](includes/banner.md)]
+
 
 Dynamics 365 Commerce – perustuu hyväksi todettuihin Dynamics 365 Retail -ominaisuuksiin – tarjoaa kattavan omnikanavaratkaisun, jossa yhdistyvät taustajärjestelmän, myymälän ja digitaaliset kokemukset. Dynamics 365 Commercen avulla voi luoda tuotemerkkiuskollisuutta mukautettujen asiakaskontaktien avulla, lisätä tuottoa ja parantaa työntekijäuskollisuutta, optimoida toimintoja ja pienentää kustannuksia sekä tehostaa toimitusketjua sekä lopulta saavuttaa parempia liiketoimintatuloksia.
 
@@ -40,23 +41,18 @@ Tässä versiossa otetaan käyttöön digitaalisen käyttökokemuksen luominen s
 
 - **Joustava ja älykäs monikanavakokemus:** Yhdistä fyysinen ja digitaalinen kaupankäynti tarjoamalla yhdenmukaisia kokemuksia asiakkaille pilvihaussa ja etsinnässä, tuotearvioinneissa, toivomuslistoissa, varastossa, lahjakorteissa ja kanta-asiakasohjelmissa. Asiakkaat voivat ostaa milloin, millä tavalla tahansa ja missä vai haluavat käyttämällä mitä tahansa laitetta. Samalla he voivat maksaa uusilla tavoilla ja valita tuotteille haluamansa keräily- ja toimitustavan.
 
-- **Virtaviivaista toimintoja tekoälyn avulla pilvessä:** Tehosta monikanavan kaupankäyntikokemuksia ja integroituja taustatoimintoja kokonaisvaltaisella ja kontekstikohtaisella pilvitoimintojen älykkyydellä. Käytä kehittynyttä kaupankäyntiä, varastonhallintaa, jaettua tilaustenhallintaa ja hinnoittelua ja markkinointia innovaatioissa. Näin pysyt kilpailun kärjessä. Saat tietoja visualisoimalla ja analysoimalla laaja-alaisia ja yhdenmukaisia tietoja kaikilta liiketoiminnan osa-alueilta. Käytä tekoälypohjaisia teknologioita ja tarjoa käytettäviä sivustoja, suojaa liiketoimintaa maksupetoksilta ja valvo tehokkaasti käyttäjien luomaa sisältöä, kuten luokituksia ja arvosteluita.
+- **Virtaviivaista toimintoja tekoälyn avulla pilvessä:** Tehosta monikanavan kaupankäyntikokemuksia ja integroituja taustatoimintoja kokonaisvaltaisella ja kontekstikohtaisella pilvitoimintojen älykkyydellä. Käytä kehittynyttä kaupankäyntiä, varastonhallintaa, jaettua tilaustenhallintaa ja hinnoittelua ja markkinointia innovaatioissa. Näin pysyt kilpailun kärjessä. Saat tietoja visualisoimalla ja analysoimalla laaja-alaisia ja yhdenmukaisia tietoja kaikilta liiketoiminnan osa-alueilta. Käytä tekoälypohjaisia teknologioita ja tarjoa käytettäviä sivustoja, suojaa liiketoimintaa maksupetoksilta ja valvo tehokkaasti käyttäjien luomaa sisältöä, kuten luokituksia ja arvosteluita. 
 
 ## <a name="core-concepts-and-tasks"></a>Keskeiset käsitteet ja tehtävät
 
 Saat lisätietoja valitsemalla ominaisuusalueen.
-
 - [Commercen esikatseluympäristön määrittäminen](provisioning-guide.md)
-- [Kaupan arkkitehtuuri](./commerce-architecture.md)
+- [Kaupan arkkitehtuuri](retail-components.md)
 - [Kanaviesi määrittäminen](channels-overview.md)
-- [Tuotteittesi ja palvelujesi kauppa](set-up-retail-products.md)
+- [Tuotteiden ja palveluiden myynninedistäminen](set-up-retail-products.md)
 - [Tilausten hallinta](Order-fulfillment-overview.md)
-- [Hallitse asiakkaitasi](set-up-customer-loyalty-program.md)
+- [Asiakkaiden hallinta](set-up-customer-loyalty-program.md)
 - [Myyntitietojesi hallinta](retail-statements.md)
 - [Verkkokauppasivustosi hallinta](online-store-overview.md)
-- [Fraud Protection](dev-itpro/DFP.md)
-- [Commercen kehittäminen ja laajennettavuus](dev-itpro/dev-retail-home-page.md)
-
-## <a name="elearning-courses"></a>eLearning-kurssit
-
-Online-kursseista ja -koulutuksesta saat tietoa [Dynamics 365 Commercein Microsoft Learn -sivulta](/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).
+- [Petosten torjunta](dev-itpro/DFP.md)
+- [Kaupan kehittäminen ja laajennettavuus](dev-itpro/dev-retail-home-page.md)

@@ -1,34 +1,37 @@
 ---
 title: Arvonlisäveromaksut ja pyöristyssäännöt
-description: Tässä aiheessa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
-author: kailiang
-ms.date: 10/29/2021
+description: Tässä artikkelissa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: kailiang
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a75d41195875c5ed48cbe8ce5f5e448f173e718
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726797"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4442938"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Arvonlisäveromaksut ja pyöristyssäännöt
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
+Tässä artikkelissa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
 
-Arvonlisäverot täytyy ilmoittaa ja maksaa säännöllisesti. Tämä toiminto voidaan suorittaa suorittamalla arvonlisäveron tilitys- ja kirjausprosessi **Arvonlisävero**-sivulla. Kauden arvonlisävero tilitetään arvonlisäverotilejä vastaan, ja alv-saldo kirjataan arvonlisäveron maksutilille. Arvonlisäveron maksutilille kirjattu alv-saldo voidaan pyöristää veroviranomaisten ohjeiden mukaan määrittämällä **Arvonlisävero**-sivulla pyöristyssääntö. 
+Arvonlisäverot täytyy ilmoittaa ja maksaa säännöllisesti. Tämä voidaan tehdä suorittamalla arvonlisäveron tilitys- ja kirjausprosessi Arvonlisävero-sivulla. Kauden arvonlisävero tilitetään arvonlisäverotilejä vastaan, ja alv-saldo kirjataan arvonlisäveron maksutilille. Arvonlisäveron maksutilille kirjattu alv-saldo voidaan pyöristää veroviranomaisten ohjeiden mukaan määrittämällä Arvonlisävero-sivulla pyöristyssääntö. 
 
 Pyöristysero kirjataan arvonlisäveron pyöristystilille, joka valitaan kirjanpidossa Automaattisten tapahtumien tilit -kentästä.
 
@@ -63,11 +66,11 @@ Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään 
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normaali pyöristys ja pyöristyksen tarkkuus on 0,01
 
-```<table>
+<table>
   <tr>
-    <td>Rounding
+    <td>Pyöristys
     </td>
-    <td>Calculation process
+    <td>Laskentaprosessi
     </td>
   </tr>
     <tr>
@@ -116,7 +119,6 @@ Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään 
     </td>
   </tr>
 </table>
-```
 
 > [!NOTE]                                                                                  
 > Jos valitset Oma etu, pyöristys tehdään aina yrityksen eduksi. 
@@ -126,9 +128,6 @@ Lisätietoja on seuraavissa aiheissa:
 - [Arvonlisäveromaksun luominen](tasks/create-sales-tax-payment.md)
 - [Luo arvonlisäverotapahtumia asiakirjoihin](tasks/create-sales-tax-transactions-documents.md)
 - [Näytä kirjatut arvonlisäverotapahtumat](tasks/view-posted-sales-tax-transactions.md)
-- [pyöristysfunktio](/previous-versions/dynamics/ax-2012/reference/aa850656(v=ax.60))
+- [pyöristysfunktio](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

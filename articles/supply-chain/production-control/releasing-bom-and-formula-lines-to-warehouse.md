@@ -2,24 +2,27 @@
 title: Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
 description: Tässä ohjeaiheessa käsitellään tuoterakennerivien ja reseptirivien raaka-aineiden varastoon vapauttamisprosessia.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731220"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4427418"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
 
@@ -61,7 +64,7 @@ Voit määrittää **Tuoterakenteen ja reseptirivien automaattinen vapautus** -e
 
 Seuraavan kuvan tuotantotilauksessa on kaksi työtä, 10 ja 20, jotka kattavat tuotantotilauksen kokoonpanon ja pakkauksen. Kumpikin työ on määritetty kuluttamaan tietty määrä materiaalia. Tässä kuvassa vapautuksen aikarajan ilmaiseva aikajanan alla oleva vihreä nuoli on sama **(LessThanDate())**-ehdoissa määritetty päivien määrä. Esimerkiksi **(LessThanDate(2))** ilmaisee, että työn on haettava vapauttamattomia määriä vain kahden päivän aikarajan ajalta.
 
-![Esimerkki kaksi erätyötä sisältävästä tuotantotilauksesta.](media/bach-job-setup.PNG)
+![Esimerkki kaksi erätyötä sisältävästä tuotantotilauksesta](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Materiaalin vapauttaminen työvaiheen numeron mukaan tai suhteessa valmiiden tavaroiden määrään
 
@@ -78,7 +81,7 @@ Voit hallita työvaiheita, joihin materiaali on vapautettava, **Vapauta varastoo
 
 Seuraavan kuvan tuotantotilauksessa on kaksi työvaihetta, 10 ja 20. Jos rajoitat tässä esimerkissä vapautuksen työvaiheeseen 10, vain materiaali M9203 vapautetaan.
 
-![Esimerkki materiaalin vapauttamisesta työnumeron mukaan.](media/two-operations.PNG)
+![Esimerkki materiaalin vapauttamisesta työnumeron mukaan](media/two-operations.PNG)
 
 Jos haluat nähdä, miten voit vapauttaa materiaalia suhteessa valmiiden tuotteiden määrään, katso tämä lyhyt YouTube-video koskien [tuotantotilauksen vapautusprosessin parannuksia](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 
@@ -95,6 +98,3 @@ Voit vapauttaa raaka-aineen osittaista valmiiden tavaroiden määrää varten ta
     Käytettävissä olevat yksiköt määritetään valmiin tuotteen yksikön sarjaryhmässä.
 
     Esimerkki: valmiin tavaran yksikön muunto kilogrammojen (kg) ja kuormalavojen (KL) välillä on 1 KL = 100 kg. Jos haluat luoda tuotantotilauksen 10 000 kg:lle valmista tavaraa, voit vapauttaa raaka-aineet sille kuormalavamäärälle, jonka aiot tuottaa. Valitse ensin yksiköksi **KL** ja sitten vastaava luku **Määrä**-kentässä.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

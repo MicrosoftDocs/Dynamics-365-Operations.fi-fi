@@ -2,25 +2,28 @@
 title: Kohdistusehdot
 description: Tässä ohjeaiheessa on tietoja päätilin kohdistusehtojen käyttämisestä.
 author: rachel-profitt
+manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, AllocationTerms
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 17361
 ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 957baba1364fbbd4a51c6f51b0fad5bf8db46680fa97b9d3d0474dc015064609
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 637e12f0deaa53811093a8745bc74dbc19e34f6b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776525"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442682"
 ---
 # <a name="allocation-terms"></a>Kohdistusehdot
 
@@ -67,6 +70,3 @@ Tässä esimerkissä luodaan uusi kohdistusehto käyttökulujen päätilille. Ku
 > Voit vaihtoehtoisesti käyttää **Kopioi**-painiketta, jos haluat monistaa valitun kohdistuksen.
 
 Kun kohdistusehto luodaan päätilille, järjestelmä kirjaa automaattisesti uuden tositteen, kun kirjataan kohdistusehtojen lähdetalousdimensioita vastaava tosite.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

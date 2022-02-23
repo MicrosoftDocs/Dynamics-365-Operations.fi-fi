@@ -1,26 +1,29 @@
 ---
 title: Myyntilaskun luominen
-description: Myyntitilauksen myyntilasku on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle.
+description: '**Myyntitilauksen myyntilasku** on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle.'
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+manager: AnnBe
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 0f5b9866fc7afba205b84b372c6a204ec4c8f64d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087420"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442638"
 ---
 # <a name="create-a-customer-invoice"></a>Myyntilaskun luominen
 
@@ -42,23 +45,6 @@ Lisätietoja on kohdassa
 
 
 **Proformalasku** on lasku, joka laaditaan todellisten laskusummien ennusteena ennen laskun kirjaamista. Proformalaskun voi tulostaa joko myyntilauksen myyntilaskulle tai vapaatekstilaskulle.
-
-## <a name="using-sales-order-customer-invoice-data-entities"></a>Myyntitilauksen myyntilaskun tietoyksiköiden käyttäminen
-Tietoyksiköiden avulla voit tuoda ja viedä myyntitilauksen myyntilaskun tietoja. Myyntilaskun otsikon ja myyntilaskurivien tietoihin on eri yksiköt.
-
-Seuraavat entiteetit ovat käytettävissä myyntilaskun otsikon tietojen osalta:
-
-- **Myyntilaskukirjauskansion otsikon** yksikkö (SalesInvoiceJournalHeaderEntity)
-- **Myyntilaskun otsikot V2** -yksikkö (SalesInvoiceHeaderV2Entity)
-
-On suositeltavaa käyttää **myyntilaskukirjauskansion otsikon** yksikköä, koska se tarjoaa enemmän suorituskykyä myynnin otsikon tuonnissa ja viennissä. Tämä yksikkö ei sisällä **arvonlisäveron summan** (INVOICEHEADERTAXAMOUNT) saraketta, joka edustaa myyntilaskun otsikon arvonlisäveroarvoa. Jos liiketoimintaskenaario edellyttää tätä tietoa, tuo ja vie myyntilaskun otsikon tiedot **Myyntilaskun otsikot V2** -yksikön avulla.
-
-Seuraavat entiteetit ovat käytettävissä myyntilaskun rivien tietojen osalta:
-
-- **Myyntilaskurivien** yksikkö (BusinessDocumentSalesInvoiceLineItemEntity)
-- **Myyntilaskurivit V3** -yksikkö (SalesInvoiceLineV3Entity)
-
-Kun määrität viennissä käytettävää riviyksikköä, harkitse, käytetäänkö täyttä työntöä vai vähittäistä työntöä. Ota huomioon myös tietojen kokoonpano. **Myyntilaskurivit V3** -yksikkö tukee monimutkaisempia skenaarioita (esimerkiksi varastokenttiin määritystä). Se tukee myös täyden työnnön vientiskenaariota. Vähittäistä työntöä varten on suositeltavaa käyttää **Myyntilaskurivit**-yksikköä. Tämä yksikkö sisältää paljon yksinkertaisemman tietojen kokoonpanon kuin **Myyntilaskurivit V3** -yksikkö, ja sitä suositellaan erityisesti silloin, kun varastokentän integrointia ei tarvita. Erojen vuoksi, jotka liittyvät riviyksiköiden välisten vastaavuuksien tukeen, **Myyntilaskurivit**-yksikön suorituskyky on yleensä nopeampi kuin **Myyntilaskurivit V3** -yksiköllä.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Kirjaa ja tulosta yksittäisiä myyntilaskuja, jotka perustuvat myyntitilauksiin
 Voit tämän prosessin avulla myyntitilaukseen perustuvan laskun. Tämä voi olla kätevää, jos päätät laskuttaa asiakasta ennen tavaroiden tai palvelujen toimittamista. 
@@ -181,6 +167,3 @@ Seuraavat kentät muuttaa kirjausprosessin toimintaa.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

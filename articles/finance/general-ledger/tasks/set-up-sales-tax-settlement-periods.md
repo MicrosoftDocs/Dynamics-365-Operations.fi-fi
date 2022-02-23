@@ -1,24 +1,27 @@
 ---
 title: Määritä arvonlisäveron tilityskaudet
-description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää arvonlisäveron täsmäytyskaudet Dynamics 365 Financessa.
+description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää arvonlisäveron täsmäytyskaudet Dynamics 365 Financeissa.
 author: twheeloc
+manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5068c121e921c1586dc6ae003c0021bf41d2254
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732954"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442774"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Määritä arvonlisäveron tilityskaudet
 
@@ -37,7 +40,9 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 7. Valitse **Maksuehdot**-kentässä avattavasta valikosta haluamasi tietue. Liittyvä arvonlisäveroviranomainen voidaan määrittää toimittajaksi. Arvonlisäveron tilitys luo avoimen toimittajan laskun. Maksuehdot määrittävät avoimen toimittajan laskun eräpäivän.  
 8. Valitse tilityskauden välien tyyppi.
 9. Syötä kausivälien yksiköiden määrä kautta kohti. Esimerkiksi neljännesvuosi sisältää 3 kuukautta.
-10. Valitse **Käytä arvonlisäveron tilitykseen eräprosessia** -valintaruutu tai poista sen valinta. Tilityskauden tilitysprosessi voidaan käsitellä taustalla erätyönä. Tätä suositellaan, jos kausiväli sisältää paljon verotapahtumia.
+10. Valitse **Käytä arvonlisäveron tilitykseen eräprosessia** -valintaruutu tai poista sen valinta. Tilityskauden tilitysprosessi voidaan käsitellä taustalla erätyönä. Tätä suositellaan, jos kausiväli sisältää paljon verotapahtumia.  
+    > [!NOTE]
+    > Tällä hetkellä tätä ei tueta Espanjassa, Japanissa tai Alankomaissa.
 11. Valitse **Estä verotapahtumien vastakirjauksien luonti** -valintaruutu tai poista sen valinta. Järjestelmä luo oletusarvoisesti verotapahtumien vastakirjauksia selvitysprosessin aikana, mikä voi heikentää suorituskykyä, jos kausiväliin sisältyy suuri määrä verotapahtumia. Estä verotapahtumien vastakirjauksien luonti valitsemalla tämä valintaruutu.
 12. Laajenna **Kausivälit**-välilehti.
 13. Valitse **Lisää**.
@@ -46,6 +51,3 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 16. Valitse **Uusi kausiväli**. Kun ensimmäinen kausiväli on syötetty, uudet kaudet voidaan luoda automaattisesti. Voit siirtyä takaisin ja lisätä tarvittaessa uusia kausivälejä.  
 17. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

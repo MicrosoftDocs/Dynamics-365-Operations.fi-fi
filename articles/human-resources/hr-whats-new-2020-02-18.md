@@ -1,38 +1,39 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (18. helmikuuta 2020)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 18. helmikuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9cce93aab902a8ca269cf22e1999716fe49f3ed8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063001"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526975"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (18. helmikuuta 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.2903. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
 
 ## <a name="platform-update-32"></a>Ympäristön update 32 -päivitys 
 
-Platform Update 32 on nyt saatavana. Lisätietoja on kohdassa [Taloushallinnon ja toimintojen sovellusten Platform update 32:n uudet ja muuttuneet ominaisuudet (helmikuu 2020).](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md)
+Platform Update 32 on nyt saatavana. Lisätietoja on kohdassa [Finance and Operations -sovellusten Platform update 32:n uudet ja muuttuneet ominaisuudet (helmikuu 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>Hakuarvot muistetaan, kun muutat näkymäasetuksia tehostetussa työntekijälomakkeessa (383833)
 
@@ -42,17 +43,17 @@ Uusi **työntekijälomake** muistaa nyt hakuarvot, kun muutat näkymän asetuksi
 
 Pysyvät ja muuttuvat kompensaation hallinnan ruudut näyttävät nyt oikeat tiedot uudessa **työntekijälomakkeessa**. Koskee vain tehostettua työntekijälomakkeen esikatselutoimintoa. Voit ottaa tämän esikatselutoiminnon käyttöön **ominaisuuksien hallinnassa**. Lisätietoja on ohjeaiheessa [Toimintojen hallinta](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Joidenkin lomapyyntötietueiden tyhjä Tila-kenttä Dataversessä (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Joidenkin lomapyyntötietueiden tyhjä Tila-kenttä Common Data Servicessä (414915)
 
-Tämä muutos korjaa ongelman Dataversessä, kun lomapyynnön **Tila**-kentän arvoksi on määritetty **Tarkistus**. Dataverse ilmaisee nyt tilan.
+Tämä muutos korjaa ongelman Common Data Servicessä, kun lomapyynnön **Tila**-kentän arvoksi on määritetty **Tarkistus**. Common Data Service ilmaisee nyt tilan.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>Osaamisalueaukkoanalyysi on mahdollinen vain määritetylle työlle (411390)
 
 Voit tehdä osaamisalueaukkoanalyysin mille tahansa Human Resources -sovelluksen määritetylle työlle.
 
-## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>Järjestelmän valuuttaa ei synkronoida Dataversestä Human Resources -sovellukseen uusissa ympäristöissä (418011)
+## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>Järjestelmän valuuttaa ei synkronoida Common Data Servicestä Human Resources -sovellukseen uusissa ympäristöissä (418011)
 
-Dataversen järjestelmän valuutan voi nyt synkronoida Human Resources -sovellukseen.
+Common Data Servicen järjestelmän valuutan voi nyt synkronoida Human Resources -sovellukseen.
 
 ## <a name="in-preview"></a>Esiversiossa
 
@@ -62,9 +63,9 @@ Dataversen järjestelmän valuutan voi nyt synkronoida Human Resources -sovelluk
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-### <a name="updated-dataverse-solution"></a>Päivitetty Dataverse -ratkaisu
+### <a name="updated-common-data-service-solution"></a>Päivitetty Common Data Service -ratkaisu
 
-Uusi Dataverse -ratkaisu tulee pian saataville seuraavin muutoksin:
+Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
 
 | Kuvaus | Muutos |
 | ----------------------------------------- | --- |
@@ -75,13 +76,11 @@ Uusi Dataverse -ratkaisu tulee pian saataville seuraavin muutoksin:
 | Uudet muuttuvat kompensaatioasetusten entiteetit | **Muuttuvan kompensaatiosuunnitelman tyyppi**</br>**Muuttuva kompensaatiosuunnitelma**</br>**Hyvityssäännöt**</br>**Muuttuvan kompensaatiosuunnitelman taso** |
 | Uusi **Työntekijäkalenterin työ**-yksikkö | **Työkalenteriyksikkö** lisätty |
 | Uusi **Palkanlaskennan toimen tiedot** -yksikkö | **Palkanlaskennan toimen tiedot** lisätty |
-| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Dataverse -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
+| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Common Data Service -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
 
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

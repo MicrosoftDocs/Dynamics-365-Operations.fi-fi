@@ -2,25 +2,28 @@
 title: Tilin konfiguroiminen
 description: Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä aiheessa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä.
 author: kweekley
+manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 323a1e6d426208a880a72dd89f7be04bacbf13a8e6c5d8ab7599217cfc18f2c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 094b8876b3b10b6dcbc0ce399a1a9915271459ed
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720571"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442908"
 ---
 # <a name="configure-settlement"></a>Tilin konfiguroiminen
 
@@ -64,6 +67,3 @@ Kirjanpidon lisätapahtumien välttämiseksi kirjattaessa debet ja kredit samall
 
 -   Organisaatiot käyttävät usein kiinteitä dimensioita, jotta voidaan täyttää nollilla taloushallinnon dimensio, joka ei ole pakollinen. Tämä on yleistä tasetileissä, kuten myyntireskontrassa/ostoreskontrassa. Tilirakenteita voidaan käyttää seuranna poistamiseen taloushallinnon dimensioista, jotka on yleensä täytetty nollilla.  Voit poistaa kirjanpitodimension tasetileiltä, jotta ei tarvitse käyttää kiinteitä dimensioita.
 -   Jos organisaatiosi vaatii kiinteitä dimensioita myyntireskontran/ostoreskontran päätilille, etsi tapa liittää kiinteä dimensio oletusarvoisesti maksuun, jotta kiinteä dimensioarvo tallennetaan maksun toimittajatapahtumaan. Tällöin järjestelmä luo myyntireskontran/ostoreskontran päätilin sisältämään kiinteät dimensioarvot. Kiinteä dimensioarvo voidaan määrittää oletusarvona joko toimittajille tai maksukirjauskansion kirjauskansionimelle.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

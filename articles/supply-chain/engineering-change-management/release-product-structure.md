@@ -2,9 +2,11 @@
 title: Tuoterakenteiden vapauttaminen
 description: Tässä aiheessa käsitellään täydellisten tuoterakenteiden vapauttamista tuotteiden ja niiden suunnitteluversioiden vapauttamisen ohella. Tällä tavoin voidaan varmistaa, että suunnitteluun liittyviä tuotetietoja voidaan käyttää uudelleen eri yrityksissä.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567484"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967228"
 ---
 # <a name="release-product-structures"></a>Tuoterakenteiden vapauttaminen
 
@@ -75,6 +77,8 @@ Esimerkki tuotteen hyväksymisestä on kohdassa [Tuotteen tarkistaminen ja hyvä
 
 Kaikki operatiiviset yritykset eivät tarvitse samoja tuotetietoja. Yleisesti ottaen suunnittelutuotteita valmistavat operatiiviset yritykset tarvitsevat tuoterakenteen, kun taas suunnittelutuotteita ainoastaan myyvät operatiiviset yritykset eivät tarvitse tuoterakennetta. Voit muodostaa vapautuskäytäntöjen avulla parametreja, joita käytetään tuotteiden vapauttamisessa.
 
+Suunnittelutuotteiden vapautuskäytäntö määritetään suunnittelun tuoteluokassa, ja kenttä on pakollinen. Vakiotuotteiden osalta käytäntö määritetään jaettuun tuotteeseen, ja kenttä on valinnainen.
+
 Lisätietoja suunnittelun tuoteluokista on kohdassa [Suunnitteluversiot ja suunnittelun tuoteluokat](engineering-versions-product-category.md).
 
 Asetuksia voi muokata vapautusprosessin aikana.
@@ -103,7 +107,6 @@ Määritä seuraavat kentät tuotteen vapautuskäytännön **Yleiset**-pikaväli
 | Kenttä | kuvaus |
 |---|---|
 | Tuotetyyppi | Valitse, käytetäänkö käytäntöä *Nimike*- vai *Palvelu*-tyypin tuotteissa. Tätä asetusta ei voi muuttaa tietueen tallentamisen jälkeen. |
-| Tuotantolaji | Tämä kenttä on näkyvissä vain, kun olet ottanut [kaavan muutoksen hallinnan](manage-formula-changes.md) käyttöön järjestelmässä. Valitse tuotannon tyyppi, jota tämä julkaisukäytäntö koskee:<ul><li>**Oheistuote** – Käytä tätä julkaisukäytäntöä, kun haluat hallita oheistuotteita. Oheistuotteita tuotetaan prosessivalmistuksen aikana, eikä niitä versioida eivätkä ne ole suunnittelutuotteita. Oheistuotteiden vapautuskäytännöt voivat varmistaa, että tärkeät asetukset, kuten **varastodimensioryhmä** ja **seurantadimensioryhmä**, määritetään käyttämällä vapautettua tuotemallia ennen niiden vapautusta yritykselle.</li><li>**Sivutuote** – Käytä tätä julkaisukäytäntöä, kun haluat hallita sivutuotteita. Sivutuotteita tuotetaan prosessivalmistuksen aikana, eikä niitä versioida eivätkä ne ole suunnittelutuotteita. Sivutuotteiden vapautuskäytännöt voivat varmistaa, että tärkeät asetukset, kuten **varastodimensioryhmä** ja **seurantadimensioryhmä**, määritetään käyttämällä vapautettua tuotemallia ennen niiden vapautusta yritykselle.</li><li>**Ei mitään** – Käytä tätä käytäntöä, kun haluat hallita vakiotuotteita, joita ei ole versioitu, tai suunnittelutuotteita, oheistuotteita tai sivutuotteita.</li><li>**Suunnittelunimike** – Tämän vapautuskäytännön avulla voit hallita prosessivalmistuksen avulla tuotettavat nimikkeet. Suunnittelunimikkeissä käytetään kaavoja. Ne muistuttavat kaavanimikkeitä, mutta niitä käytetään vain oheistuotteiden ja sivutuotteiden, ei valmiiden tuotteiden tuottamiseen.</li><li>**Tuoterakenne** – Tämän julkaisukäytännön avulla voit hallita suunnittelutuotteita, jotka eivät käytä kaavoja ja jotka tavallisesti (mutta eivät välttämättä) sisältävät tuoterakenteita.</li><li>**Kaava** – Tämän vapautuskäytännön avulla voit hallita prosessivalmistuksen avulla tuotettuja valmiita nimikkeitä. Näillä nimikkeillä on kaava, mutta ei tuoterakennetta.</li></ul> |
 | Käytä malleja | Määritä jollakin seuraavalla asetuksella, käytetäänkö tuotevapautusmalleja ja miten niitä käytetään, kun käytäntö on käytössä:<ul><li>**Aina** – Mallivapautustuote, jota on aina käytettävä vapautuksessa. Jos valitset tämän asetuksen, määritä **Kaikki tuotteet** -pikavälilehdessä malli, jota käytetään kussakin yrityksessä, johon vapautus tehdään. Jos kullekin **Kaikki tuotteet** -pikavälilehden luettelossa olevalle yritykselle ei määritetä mallia, käytäntöä tallennettaessa saadaan virhe.</li><li>**Valinnainen** – Jos mallivapautustuote määritetään **Kaikki tuotteet** -pikavälilehden luettelossa olevalle yritykselle, kyseistä mallia käytetään, kun vapautus tehdään kyseiseen yritykseen. Muussa tapauksessa mallia ei käytetä. Jos valitse tämän asetuksen, voit tallentaa käytännön ilman, että mallit määritetään kaikille yrityksille. (Varoitusta ei näytetä.)</li><li>**Ei koskaan** – Mallivapautustuotetta ei käytetä missään yrityksessä, johon vapautus tehdään, vaikka malli olisi määritetty **Kaikki tuotteet** -pikavälilehden luettelossa oleville yrityksille. Mallisarakkeet eivät ole käytettävissä.</li></ul> |
 | Aktiiviset | Tämän asetuksen avulla voi ylläpitää vapautuskäytäntöjä. Valitse *Kyllä* kaikille niille vapautuskäytännöille, joita käytät. Valitse *Ei* ilmaisemaan, että vapautuskäytäntö on passiivinen, kun sitä ei käytetä. Huomaa, että suunnittelun tuoteluokalle määritettyä vapautuskäytäntöä ei voi merkitä passiiviseksi ja että vain passiivisia vapautuskäytäntöjä voidaan poistaa. |
 
@@ -156,6 +159,3 @@ Tämä toiminta on käytössä vain, kun tuote valitaan suoraan vapautukseen. Mu
 Tuote X on esimerkiksi määritetty *Design-kaiuttimet*-tuotteen omistajaryhmään. Tuote X on myös tuotteen Y tuoterakenteen osa, ja tuote Y on määritetty *Design-kaiuttimet*-tuotteen omistajaryhmään. Jos *Design-kaiuttimet*-tuotteen omistajaryhmä vapauttaa tuotteen Y ja sen tuoterakenteen, tuote X vapautetaan yhdessä tuotteen Y kanssa.
 
 Lisätietoja on kohdassa [Tuotteen omistajat](product-owner.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

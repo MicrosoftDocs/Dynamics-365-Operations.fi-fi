@@ -2,27 +2,27 @@
 title: Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
 description: Tässä aiheessa kerrotaan, miten Microsoftin tarjoaman sähköisen raportoinnin (ER) muotoa voidaan säätää siten, että se luo mukautetun sähköisen asiakirjan.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 20e7a32ac5f6ab21f89ed3c11c64458286864c9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605227"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680167"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
 
@@ -144,7 +144,7 @@ Jos haluat lisätä ER-vakiokonfiguraatiot nykyiseen Microsoft Dynamics 365 Fina
 5. Valitse **Versiot**-pikavälilehdestä valitun ER-muodon konfiguraation versio **1.1**.
 6. Lataa valittu versio yleisestä säilöpalvelusta nykyiseen Finance-esiintymään valitsemalla **Tuo**.
 
-![Konfiguraatiosäilön sivu.](./media/er-quick-start2-import-solution1.png)
+![Konfiguraatiosäilön sivu](./media/er-quick-start2-import-solution1.png)
 
 > [!TIP]
 > Jos sinulla on ongelmia [yleiseen säilöön](er-download-configurations-global-repo.md) pääsyssä, voit [ladata konfiguraatiot](download-electronic-reporting-configuration-lcs.md) sen sijaan Microsoft Dynamics Lifecycle Services (LCS) -palvelusta.
@@ -160,7 +160,7 @@ Jos haluat lisätä ER-vakiokonfiguraatiot nykyiseen Microsoft Dynamics 365 Fina
     - **Maksumallin määritys 1611** – tämä konfiguraatio sisältää [mallin määrityksen](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-osan, joka kuvaa, miten tietomalli täytetään hakemuksen tiedoilla suorituspalvelussa.
     - **BACS (Iso-Britannia)** – tämä konfiguraatio sisältää [muodon](general-electronic-reporting.md#FormatComponentOutbound) ja muodon määrityksen ER-osat. Muoto-osa määrittää raportin asettelun. Muodon määritysosa sisältää mallin tietolähteen ja määrittää, miten raportin asettelu täytetään käyttämällä tätä tietolähdettä suorituspalvelussa.
 
-![Konfiguroinnit-sivu, jolla on käytettävissä olevat ER-konfiguraatiot puumuodossa.](./media/er-quick-start2-imported-solution1.png)
+![Konfiguroinnit-sivu](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Valmistele toimittajamaksu käsittelyä varten
 
@@ -179,7 +179,7 @@ Sinun on lisättävä pankkitiedot toimittajatilille, johon viitataan myöhemmin
     5. Kirjoita **IBAN**-kenttään **GB33BUKB20201555555555**.
     6. Pidä **Pankkikoodi**-kentän oletusarvo, <a id="DefineRoutingNumber"></a>**123456**.
 
-    ![Toimittajan pankkitilit -sivu.](./media/er-quick-start2-bank-account.png)
+    ![Toimittajan pankkitilit -sivu](./media/er-quick-start2-bank-account.png)
 
 4. Valitse **Tallenna**.
 5. Sulje sivu.
@@ -187,14 +187,14 @@ Sinun on lisättävä pankkitiedot toimittajatilille, johon viitataan myöhemmin
 7. Valitse toimittajan tietosivulla **Muokkaa**, jotta voit muokata sivua tarvittaessa.
 8. Valitse **Maksu**-pikavälilehden **Pankkitili**-kentässä **GBP OPER**.
 
-    ![Toimittajan tiedot -sivu.](./media/er-quick-start2-bank-account-reference.png)
+    ![Toimittajan tiedot -sivu](./media/er-quick-start2-bank-account-reference.png)
 
 9. Valitse **Tallenna**.
 10. Sulje sivu.
 
 ### <a name="enter-a-vendor-payment"></a><a id="EnterVendorPayment"></a>Lisää toimittajamaksu
 
-Sinun on lisättävä uusi toimittajamaksu käyttämällä [maksuehdotusta](../../../finance/accounts-payable/create-vendor-payments-payment-proposal.md).
+Sinun on lisättävä uusi toimittajamaksu käyttämällä [maksuehdotusta](https://docs.microsoft.com/dynamics365/finance/accounts-payable/create-vendor-payments-payment-proposal).
 
 1. Valitse **Ostoreskontra** \> **Maksut** \> **Toimittajan maksukirjauskansio**.
 2. Valitse **Toimittajan maksukirjauskansio**-sivulla **Uusi**.
@@ -204,11 +204,11 @@ Sinun on lisättävä uusi toimittajamaksu käyttämällä [maksuehdotusta](../.
 6. Määritä **Toimittajan maksuehdotus** -valintaikkunassa ehdot tietueiden suodattamiseen vain **GB_SI_000001** -toimittajatililtä ja valitse sitten **OK**.
 7. Valitse **00000007_Inv**-laskun rivi ja valitse sitten **Luo maksu**.
 
-    ![Toimittajamaksun ehdotus -valintaikkuna.](./media/er-quick-start2-payment-proposal.png)
+    ![Toimittajamaksun ehdotus -valintaikkuna](./media/er-quick-start2-payment-proposal.png)
 
 8. Varmista, että lisättävä maksu määritetään käyttämään **sähköistä** maksutapaa.
 
-    ![Toimittajan maksut -sivu.](./media/er-quick-start2-payment-line.png)
+    ![Toimittajan maksut -sivu](./media/er-quick-start2-payment-line.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-standard-er-format"></a><a id="ProcessVendorPayment1"></a>Käsittele toimittajamaksu käyttämällä ER-vakiomuotoa
 
@@ -222,7 +222,7 @@ Sinun on määritettävä sähköinen maksutapa, jolloin se käyttää tuotua ER
 4. Määritä **Tiedostomuoto**-pikavälilehdessä **Yleinen sähköinen vientimuoto** -asetukseksi **Kyllä**.
 5. Valitse **Vientimuodon konfigurointi** -kentässä **BACS (Iso-Britannia)** -muotoinen konfiguraatio.
 
-    ![Maksutavat – toimittajat -sivulla voit määrittää sähköisen maksutavan, jolla toimittajamaksut käsitellään vakiomuodossa.](./media/er-quick-start2-method-of-payment1.png)
+    ![Maksutapa - Toimittajat -sivu](./media/er-quick-start2-method-of-payment1.png)
 
 6. Valitse **Tallenna**.
 
@@ -239,7 +239,7 @@ Sinun on määritettävä sähköinen maksutapa, jolloin se käyttää tuotua ER
 5. Valitse **OK**.
 6. Määritä **Sähköisen raportin parametrit** -valintaikkunassa **Tulosta valvontaraportti** -asetukseksi **Kyllä** ja valitse sitten **OK**.
 
-    ![Sähköisen raportin parametrit -valintasivu.](./media/er-quick-start2-payment-dialog1.png)
+    ![Sähköisen raportin parametrit -valintasivu](./media/er-quick-start2-payment-dialog1.png)
 
     > [!NOTE]
     > Maksutiedoston lisäksi voit nyt luoda valvontaraportin.
@@ -251,7 +251,7 @@ Sinun on määritettävä sähköinen maksutapa, jolloin se käyttää tuotua ER
 
         Huomaa, että annetun ER-muodon [rakenteen](#PositionRoutingNumber) mukaisesti luodun tiedoston maksurivi alkaa pankkikoodilla, joka [määritettiin](#DefineRoutingNumber) määritetylle pankkitilille.
 
-        ![Maksutiedosto TXT-muodossa.](./media/er-quick-start2-payment-file1.png)
+        ![Maksutiedosto TXT-muodossa](./media/er-quick-start2-payment-file1.png)
 
 ## <a name="customize-the-standard-er-format"></a><a id="CustomizeProvidedFormat"></a>Mukauta ER-vakiomuotoa
 
@@ -267,13 +267,13 @@ Tässä tapauksessa Litware, Inc. -yhtiön edustajana sinun on luotava uusi ER-m
 4. Valitse **Uusi**-kenttäryhmässä **Johda nimestä: BACS (Iso-Britannia), Microsoft** -vaihtoehto.
 5. Kirjoita **Nimi**-kenttään **BACS (Iso-Britannia, mukautettu)**.
 
-    ![Avattava Luo konfigurointi -luettelo -valintaruutu.](./media/er-quick-start2-add-derived-format.png)
+    ![Avattava Luo konfigurointi -luettelo -valintaruutu](./media/er-quick-start2-add-derived-format.png)
 
 6. Valitse **Luo konfiguraatio**.
 
 **BACS (Iso-Britannia, mukautettu)** -ER-muotokonfiguraation versio 1.1.1 luodaan. Tämän version [tila](general-electronic-reporting.md#component-versioning) on **Luonnos**, ja sitä voidaan muokata. Mukautetun ER-muodon nykyinen sisältö vastaa Microsoftin toimittaman muodon sisältöä.
 
-![Konfiguraatiosivu, jossa BACS (Yhdistynyt kuningaskunta, mukautettu) -ER-muotokonfiguraation versio 1.1.1.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfiguroinnit-sivu](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Muokkaa mukautettua muotoa
 
@@ -293,7 +293,7 @@ Sinun on määritettävä mukautettu muoto, jotta se täyttää pankkikohtaiset 
 
 7. Valitse **tapahtuma**-elementti.
 
-    ![Tapahtumaelementti ER-toimintojen suunnitteluohjelmassa.](./media/er-quick-start2-derived-format0.png)
+    ![Tapahtumaelementti ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-derived-format0.png)
 
     > [!NOTE]
     > Toimitettu raportti on määritetty siten, että <a id="PositionRoutingNumber"></a>jokainen maksurivi alkaa pankkikoodilla. **vendBankRouteNum**-muotoelementtiä käytetään tähän tarkoitukseen. 
@@ -311,13 +311,13 @@ Sinun on määritettävä mukautettu muoto, jotta se täyttää pankkikohtaiset 
 9. Valitse muotorakennepuussa **vendBankSWIFT**.
 10. Siirrä valittu muotoelementti yhden tason verran ylöspäin valitsemalla **Siirrä ylös**. Toista tätä vaihetta, kunnes **vendBankSWIFT**-elementti on <a id="PositionSWIFTCode"></a>ensimmäinen elementti pää **tapahtuma** elementin alla.
 
-    ![VendBankSWIFT ensimmäisenä elementtinä tapahtuman alla ER-toimintojen suunnitteluohjelmassa.](./media/er-quick-start2-derived-format1.png)
+    ![VendBankSWIFT ensimmäisenä elementtinä tapahtuman alla ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-derived-format1.png)
 
 11. Kun **vendBankSWIFT** on edelleen valittuna muotorakennepuussa, valitse **Kartoitus**-välilehti ja laajenna sitten **malli**-tietolähdettä.
 12. Laajenna **model.Payment** \> **model.Payment.CreditorAgent** ja valitse **model.Payment.CreditorAgent.BICFI**-tietolähdekenttä. Tämä tietolähdekenttä näyttää sen toimittajapankin SWIFT-koodin, jolle on määritetty edustajan rooli käsitellyssä toimittajamaksussa.
 13. Valitse **Sido**. **vendBankSWIFT**-muotoelementti on nyt sidottu **model.Payment.CreditorAgent.BICFI**-tietolähdekenttään, jotta SWIFT-koodit syötetään luotuihin maksutiedostoihin.
 
-    ![vendBankSWIFT-muotoelementti sidottuna model.Payment.CreditorAgent.BICFI-tietolähdekenttään ER-toimintojen suunnitteluohjelmassa.](./media/er-quick-start2-derived-format2.png)
+    ![vendBankSWIFT-muotoelementti sidottuna model.Payment.CreditorAgent.BICFI-tietolähdekenttään ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-derived-format2.png)
 
 14. Valitse **Tallenna**.
 15. Sulje suunnitteluohjelmasivu.
@@ -335,7 +335,7 @@ Käyttääksesi ER-muodon luonnosversiota sinun on merkittävä ER-muoto selkeä
 5. Valitse vasemman ruudun konfiguraatiopuussa **BACS (Iso-Britannia, mukautettu)**.
 6. Määritä **Suorita luonnos** -vaihtoehdoksi **Kyllä**.
 
-    ![Suorita luonnos -vaihtoehto Konfiguroinnit-sivulla.](./media/er-quick-start2-derived-format-configuration2.png)
+    ![Suorita luonnos -vaihtoehto Konfiguroinnit-sivulla](./media/er-quick-start2-derived-format-configuration2.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-custom-er-format"></a><a id="ProcessVendorPayment2"></a>Käsittele toimittajamaksu käyttämällä mukautettua ER-muotoa
 
@@ -349,7 +349,7 @@ Sinun on määritettävä sähköinen maksutapa siten, että mukautettua ER-muot
 4. Määritä **Tiedostomuoto**-pikavälilehdessä **Yleinen sähköinen vientimuoto** -asetukseksi **Kyllä**.
 5. Valitse **Vientimuodon konfigurointi** -kentässä **BACS (Iso-Britannia, mukautettu)** -muotoinen konfiguraatio.
 
-    ![Maksutavat – toimittajat -sivulla voit määrittää sähköisen maksutavan, jolla toimittajamaksut käsitellään mukautetussa muodossa.](./media/er-quick-start2-method-of-payment2.png)
+    ![Maksutapa - Toimittajat -sivu](./media/er-quick-start2-method-of-payment2.png)
 
 6. Valitse **Tallenna**.
 
@@ -378,7 +378,7 @@ Sinun on määritettävä sähköinen maksutapa siten, että mukautettua ER-muot
 
         Huomaa, että mukautetun ER-muotosi rakenteen mukaisesti luodun tiedoston maksurivi [alkaa](#PositionSWIFTCode) nyt SWIFT-koodilla, joka [syötettiin](#DefineSWIFTCode) sen toimittajan pankkitilille, jonka maksu on käsitelty.
 
-        ![Toimittajamaksun käsittelemiseen käytettävä maksutiedosto TXT-muodossa.](./media/er-quick-start2-payment-file2.png)
+        ![Maksutiedosto TXT-muodossa](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Tuo ER-muodon vakiokonfiguraatioiden uudet versiot
 
@@ -395,7 +395,7 @@ Jos haluat lisätä ER-konfiguraatioiden uusia versioita nykyiseen Finance-esiin
 5. Valitse **Versiot**-pikavälilehdestä valitun ER-muodon konfiguraation versio **3.3**.
 6. Lataa valittu versio yleisestä säilöpalvelusta nykyiseen Finance-esiintymään valitsemalla **Tuo**.
 
-![Konfigurointitietovarastosivu, Versiot-pikavälilehti, Tuo-painike.](./media/er-quick-start2-import-solution2.png)
+![Konfiguraatiosäilön sivu](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Jos sinulla on ongelmia [yleiseen säilöön](er-download-configurations-global-repo.md) pääsyssä, voit [ladata konfiguraatiot](download-electronic-reporting-configuration-lcs.md) sen sijaan LCS-palvelusta.
@@ -410,7 +410,7 @@ Jos haluat lisätä ER-konfiguraatioiden uusia versioita nykyiseen Finance-esiin
 6. Laajenna **Muodon suunnittelija** -sivulla **BACSReportsFolder**-muotoelementti.
 7.  Huomaa, että versio 3.3 sisältää **PaymentAdviceReport**-muotoelementin, jota käytetään maksuehdotusraportin luomiseen, kun toimittajamaksua käsitellään.
 
-    ![PaymentAdviceReport-muotoelementti ER-toimintojen suunnitteluohjelmassa.](./media/er-quick-start2-imported-solution2.png)
+    ![PaymentAdviceReport-muotoelementti ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-imported-solution2.png)
 
 8. Sulje suunnitteluohjelmasivu.
 
@@ -436,14 +436,14 @@ Jos haluat alkaa käyttää **BACS (Iso-Britannia)** -muodon version 3.3 uutta t
 3. Valitse **Versiot**-pikavälilehdessä versio **1.1.2** ja valitse sitten **Pohjusta**.
 4. Valitse **Pohjusta**-valintaikkunan **Kohdeversio**-kentässä peruskonfiguraation versio **3.3** käyttääksesi sitä uutena perusteena ja käyttääksesi sitä konfiguraation päivittämiseen.
 
-    ![Pohjusta-valintaikkuna.](./media/er-quick-start2-rebase1.png)
+    ![Pohjusta-valintaikkuna](./media/er-quick-start2-rebase1.png)
 
 5. Valitse **OK**.
 6. Huomaa, että luonnosversion numero on muuttunut numerosta **1.1.2** numeroksi **3.3.2** heijastamaan perusversion muutosta.
 
     Kun mukautettu versio ja uusi perusversio yhdistetään, saatetaan havaita joitakin konflikteja, jotka johtuvat muodon muutoksista, joita ei voida yhdistää automaattisesti.
 
-    ![Uudelleenpohjustettu konfiguraatio, jossa on konflikteja, Konfiguraatiot-sivulla.](./media/er-quick-start2-rebase2.png)
+    ![Uudelleenpohjustettu konfiguraatio, jossa on konflikteja, Konfiguraatiot-sivulla](./media/er-quick-start2-rebase2.png)
 
     Jos konflikteja havaitaan, ne on ratkaistava manuaalisesti muodon suunnitteluohjelmassa.
 
@@ -451,13 +451,13 @@ Jos haluat alkaa käyttää **BACS (Iso-Britannia)** -muodon version 3.3 uutta t
 8. Valitse **Suunnittelu**.
 9. Valitse **Muodon suunnittelija** -sivun **Tiedot**-pikavälilehdessä uudelleenpohjustettu konfliktitietue ja valitse sitten **Kohdista perusarvo**.
 
-    ![Uudelleenpohjustettu konfliktitietue ER-toimintojen suunnitteluohjelmassa.](./media/er-quick-start2-rebase3.png)
+    ![Uudelleenpohjustettu konfliktitietue ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-rebase3.png)
 
 10. Valitse **Tallenna**.
 
     Uudelleenpohjustetun konfliktitietueen ei pitäisi enää näkyä **Tiedot**-pikavälilehdessä.
 
-    ![Konflikti ratkaistu ER-toimintojen suunnitteluohjelmassa.](./media/er-quick-start2-rebase4.png)
+    ![Konflikti ratkaistu ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-rebase4.png)
 
     > [!NOTE]
     > Ratkaisit konfliktin vahvistamalla, että perusmallin versiota 3 pitää käyttää tässä ER-muodossa.
@@ -465,7 +465,7 @@ Jos haluat alkaa käyttää **BACS (Iso-Britannia)** -muodon version 3.3 uutta t
 11. Laajenna **BACSReportsFolder** \> **-tiedosto** \> **tapahtumat** \> **tapahtuma**.
 12. Huomaa **Kartoitus**-välilehdessä, että mukautetun ER-muotosi versio 3.3.2 sisältää sekä mukautetun (**vendBankSWIFT**-muotoelementti ja sen sidonta) että uuden Microsoftin tarjoaman ER-muodon version 3.3 toiminnon (**PaymentAdviceReport**-muotoelementti yhdessä sen sisäkkäisten elementtien ja määritettyjen sidontojen kanssa). Vain muutamalla hiiren napsautuksella olet ottanut uuden perusversion muokkaukset käyttöön yhdistämällä ne mukautuksesi kanssa.
 
-    ![Yhdistetty muoto ER-toimintojen suunnitteluohjelmassa.](./media/er-quick-start2-rebase5.png)
+    ![Yhdistetty muoto ER-toimintojen suunnitteluohjelmassa](./media/er-quick-start2-rebase5.png)
 
 13. Sulje suunnitteluohjelmasivu.
 
@@ -490,7 +490,7 @@ Jos haluat alkaa käyttää **BACS (Iso-Britannia)** -muodon version 3.3 uutta t
     - Määritä **Tulosta valvontaraportti** -asetukseksi **Kyllä**.
     - Määritä **Tulosta maksuilmoitus** -asetukseksi **Kyllä**.
 
-    ![Sähköisen raportin parametrit -valintaikkuna.](./media/er-quick-start2-payment-dialog2.png)
+    ![Sähköisen raportin parametrit -valintaikkuna](./media/er-quick-start2-payment-dialog2.png)
 
     > [!NOTE]
     > Maksutiedoston lisäksi voit nyt luoda sekä valvontaraportin että maksuehdotusraportin.
@@ -501,19 +501,16 @@ Jos haluat alkaa käyttää **BACS (Iso-Britannia)** -muodon version 3.3 uutta t
     - Valvontaraportti Excel-muodossa
     - Maksuehdotusraportti Excel-muodossa
 
-        ![Maksuehdotusraportti Excel-muodossa.](./media/er-quick-start2-payment-advice-report.png)
+        ![Maksuehdotusraportti Excel-muodossa](./media/er-quick-start2-payment-advice-report.png)
 
     - Maksutiedosto TXT-muodossa
 
         Huomaa, että luodun tiedoston maksurivi alkaa SWIFT-koodilla, joka syötettiin sen toimittajan pankkitilille, jonka maksu on käsitelty.
 
-        ![Toimittajamaksun käsittelemiseen käytettävä maksutiedosto TXT-muodossa, joka käyttää pohjustettua ER-muotoa.](./media/er-quick-start2-payment-file3.png)
+        ![Maksutiedosto TXT-muodossa](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [ER-konfiguraatioiden lataaminen Lifecycle Services -palvelusta](download-electronic-reporting-configuration-lcs.md)
 - [Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta](er-download-configurations-global-repo.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

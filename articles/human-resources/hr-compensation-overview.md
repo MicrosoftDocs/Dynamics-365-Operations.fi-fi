@@ -1,34 +1,33 @@
 ---
 title: Kompensaatiosuunnitelmat
-description: Tässä aiheessa kuvataan, miten kompensaationhallintaa käytetään ja kompensaatiosuunnitelmien hallintaan ja käsittelyyn.
-author: twheeloc
-ms.date: 08/25/2021
-ms.topic: overview
+description: Kompensaatio- ja etuuspäälliköt voiva käyttää kompensaation hallintaa organisaation työntekijöiden kiinteiden ja muuttuvien kompensaatiosuunnitelmien ylläpitämisessä ja käsittelemisessä.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
+ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066897"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418286"
 ---
 # <a name="compensation-plans"></a>Kompensaatiosuunnitelmat
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Kompensaatio- ja etuuspäälliköt voivat käyttää **kompensaationhallintaa** organisaation työntekijöiden kiinteiden ja muuttuvien kompensaatiosuunnitelmien ylläpitämisessä ja käsittelemisessä.
+Kompensaatio- ja etuuspäälliköt voiva käyttää kompensaation hallintaa organisaation työntekijöiden kiinteiden ja muuttuvien kompensaatiosuunnitelmien ylläpitämisessä ja käsittelemisessä.
 
 ### <a name="introduction"></a>Johdanto
 
@@ -45,7 +44,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 <thead>
 <tr class="header">
 <th>Komponentti</th>
-<th>Lisätietoja</th>
+<th>Lisätietoja…</th>
 </tr>
 </thead>
 <tbody>
@@ -91,7 +90,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 </tr>
 <tr class="even">
 <td>Tarkistuspiste</td>
-<td>Tarkistuspiste määrittää, mikä on ihanteellisen palkkio kompensaatiotason kaikille työntekijöille. Palkkaluokkasuunnitelmien rakenteissa tarkistuspisteet ovat yleensä palkka-alueen keskikohdassa. Kompensaatioluokkarakenteissa tarkistuspisteitä käytetään harvoin. Voit määrittää kiinteän kompensaatiosuunnitelman tarkistuspisteen **Kiinteät kompensaatiosuunnitelmat** -sivulla.</td>
+<td>Tarkistuspiste määrittää, mikä on ihanteellisen palkkio kompensaatiotason kaikille työntekijöille. Palkkaluokkasuunnitelmien rakenteissa tarkistuspisteet ovat yleensä palkka-alueen keskikohdassa. Kompensaatioluokkarakenteissa tarkistuspisteitä käytetään harvoin. Voit määrittää kiinteän kompensaatiosuunnitelman tarkistuspisteen Kiinteät kompensaatiosuunnitelmat -lomakkeessa.</td>
 </tr>
 <tr class="odd">
 <td>Työtehtävät</td>
@@ -123,7 +122,8 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 ## <a name="process-events"></a>Prosessitapahtumat
 Prosessitapahtuma laskee tietyn kauden kompensaatiotiedot kaikille työntekijöille, jotka on rekisteröity vähintään yhteen kiinteään tai muuttuvaan kompensaatiosuunnitelmaan. Voit suorittaa prosessitapahtuman toistuvasti laskettujen kompensaatiotulosten testaamiseksi tai päivittämiseksi.
 
-## <a name="compensation-events"></a>Kompensaatiotapahtumat
+<a name="compensation-events"></a>Kompensaatiotapahtumat
+-------------------
 
 Aina kun prosessitapahtuma suoritetaan, kompensaatiotapahtuma luodaan.  Kompensaatiotapahtumat sisältävät kunkin työntekijän kyseiseen prosessitapahtumaan sisältyvän kompensaatioprosessin tulokset.  Kun laskelmat ovat oikein, voit ladata kompensaatiotapahtuman päivittääksesi kompensaatiotietueet työntekijöille, joihin prosessitapahtuma vaikuttaa.
 
@@ -132,6 +132,3 @@ Voit suositella prosessitapahtuman suorittamisen jälkeen muutoksia työntekijä
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

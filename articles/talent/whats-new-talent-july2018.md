@@ -57,6 +57,3 @@ Otsikot on laajennettu tässä päivityksessä. Tämä kenttä on nyt 65 merkki�
 ## <a name="benefit-enrollment-status-report"></a>Edun rekisteröimisen tilaraportti
 
 Sisäänrakennettu raportointi etätyön avoimesta ilmoittautumisesta auttaa sinua ymmärtämään helposti, missä työntekijäsi ovat avoimessa ilmoittautumisprosessissa. Saat tietää montako työntekijää on käynyt läpi koko prosessin, moniko suorittaa sitä tällä hetkellä ja moniko ei ole aloittanut. Lisäksi voit tarkastella nopeasti ongelmia, joita esiintyy työntekijöiden ilmoittautumisen yhteydessä ja kaikki työntekijöiden lähettämät kirjaukset. Siksi voit helposti tarkistaa ja valvoa työntekijöiden lähetyksiä.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

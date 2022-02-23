@@ -1,30 +1,31 @@
 ---
 title: Tulevien elämäntapahtumien määrittäminen
-description: Tässä aiheessa käsitellään tulevien elämäntapahtumien ajoittamista Dynamics 365 Human Resourcesissa.
-author: twheeloc
-ms.date: 08/23/2021
+description: Voit ajoittaa tulevia elämäntapahtumia Dynamics 365 Human Resourcesissa.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitFutureLifeEvents, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aa772f5c58e199e8786185c783db7016c8aebafd
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: 78c65faa4ae0f428184700a912998e9dded026c5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417579"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418283"
 ---
 # <a name="configure-future-life-events"></a>Tulevien elämäntapahtumien määrittäminen
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Voit ajoittaa tulevia elämäntapahtumia Dynamics 365 Human Resourcesissa.
 
@@ -45,6 +46,3 @@ Voit ajoittaa tulevia elämäntapahtumia Dynamics 365 Human Resourcesissa.
    | Linja | Tulevan elämäntapahtuman rivinumero. |
 
 4. Valitse **Tallenna**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

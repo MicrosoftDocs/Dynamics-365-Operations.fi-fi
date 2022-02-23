@@ -1,32 +1,35 @@
 ---
 title: Jäännöspoisto 200 prosenttia
-description: Tässä ohjeaiheessa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
-author: moaamer
+description: Tässä artikkelissa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
+author: saraschi2
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52a199489ffe42bc7b2d21e85b18dcd0bf35c165
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 0474a8cecccaf1e23874458c27e0bea991140b6c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883490"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442815"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>Jäännöspoisto 200 prosenttia
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
+Tässä artikkelissa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 200 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 40 (200 % ÷ 5). 
 
@@ -66,7 +69,7 @@ Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valitt
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Esimerkki 200 prosentin jäännöspoistosta
 
-| &nbsp;                         | &nbsp; |
+|                                |        |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |
 | Jäännösarvo                  | 1 000 |
@@ -78,15 +81,12 @@ Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valitt
 
 | Kausi | Vuotuisen poistomäärän laskeminen | Kirjanpitoarvo             | Nettokirjanpitoarvo vuoden lopussa: |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Vuosi 1 | (11 000 – 1 000) × 40 % = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
-| Vuosi 2 | 6 000 × 40 % = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
-| Vuosi 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
+| Vuosi 1 | (11 000 – 1 000) × 40 % = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
+| Vuosi 2 | 6 000 × 40 % = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
+| Vuosi 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
 > Jos 200 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

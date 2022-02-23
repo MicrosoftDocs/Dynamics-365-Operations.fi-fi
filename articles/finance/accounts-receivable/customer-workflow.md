@@ -1,24 +1,27 @@
 ---
 title: Asiakkaan työnkulku
 description: Tässä ohjeaiheessa on tietoja asiakkaan työnkulusta. Muutat tietyt kentät asiakkaalle ja lähetät muutokset sen jälkeen hyväksyttäviksi työnkulkua käyttämällä ennen kuin ne lisätään asiakkaan nimiin.
-author: abruer
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753823"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4458958"
 ---
 # <a name="customer-workflow"></a>Asiakkaan työnkulku
 
@@ -58,6 +61,3 @@ Kun sinulla on vähintään yksi ehdotettu muutos, kaksi uutta valikkoa tulee n�
     Sivun tilaksi muutetaan **Hyväksymistä odottavia muutoksia**.
 
 Työnkulku noudattaa sovelluksen vakiotyönkulkuprosessia. Hyväksyjä ohjataan **Asiakas**-sivulle. Muutokset voidaan tarkistaa **Ehdotetut muutokset** -sivulla ja valita sitten **Työnkulku \> Hyväksy** hyväksyäkseen työnkulun. Kun kaikki hyväksynnät on käyty läpi, kentät päivitetään ehdottamillasi arvoilla.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

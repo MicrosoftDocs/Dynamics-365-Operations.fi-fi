@@ -2,9 +2,11 @@
 title: Paranna sähköisen raportoinnin ratkaisujen suorituskykyä lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
 description: Tässä ohjeaiheessa kerrotaan, miten sähköisen raportoinnin ratkaisujen suorituskykyä voi parantaa lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 940b696a06fb46bcd0557f059327cd4340448137
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753667"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681277"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Paranna sähköisen raportoinnin ratkaisujen suorituskykyä lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
 
@@ -56,7 +58,7 @@ Ensimmäinen vaihe on sähköisen raportoinnin näyteratkaisun tuominen toimitta
     2. Valitse soveltuva sähköisen raportoinnin konfiguraation tiedosto XML-muodossa valitsemalla **Selaa**.
     3. Valitse **OK**.
 
-![Konfiguraatiot-sivun tuodut konfiguraatiot.](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Konfiguraatiot-sivun tuodut konfiguraatiot](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Sähköisen raportoinnin näyteratkaisun tarkistaminen
 
@@ -76,7 +78,7 @@ Ensimmäinen vaihe on sähköisen raportoinnin näyteratkaisun tuominen toimitta
 
     Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen ja Financessa suoritettujen sähköisen raportoinnin muotojen perustietomallia. Tämän vuoksi **Trans**-tietolähteen sisältö näkyy sähköisen raportoinnin muodoissa, esimerkiksi abstrakteina **mallitietolähteinä**.
 
-    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Trans-tietolähde.](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Trans-tietolähde](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Sulje **Mallimäärityksen sunnittelun** sivu.
 5. Sulje **Malli tietolähteen yhdistämismääritystä varten** -sivu.
@@ -90,7 +92,7 @@ Ensimmäinen vaihe on sähköisen raportoinnin näyteratkaisun tuominen toimitta
 
     Tämä sähköisen raportoinnin muoto on suunniteltu toimittajatapahtumien raportin luomiseksi XML-muodossa.
 
-    ![Muodon tietolähteet ja määritetyt muotoelementtien sidokset Muodon suunnittelutoiminto -sivulla.](media/er-calculated-field-ds-performance-format.png)
+    ![Muootile tietolähteet ja määritetyt muotoiluelementtien sidokset Muodon suunnittelutoiminto -sivulla](media/er-calculated-field-ds-performance-format.png)
 
 5. Sulje **Muodon suunnittelija** -sivu.
 
@@ -103,7 +105,7 @@ Ajatellaan, että olet suunnitellut sähköisen raportoinnin ratkaisun ensimmäi
 1. Valitse **DEMF**-yritys.
 2. Seuraa [ER-suorituskykyjäljityksen ottaminen käyttöön](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) -kohdan ohjeita ja luo suorituskykyjäljitys sähköisen raportoinnin muotoilun suorituksen aikana.
 
-    ![Käyttäjän parametrit -valintaikkuna.](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Käyttäjän parametrit -valintaikkuna](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Suorita ER-muoto
 
@@ -124,7 +126,7 @@ Joidenkin nykyisen mallin yhdistämismääritysten tietolähdenimikkeiden käyte
 - Tietolähteen avulla tietoja haettaessa käytetty todellinen aika
 - Sama aika ilmaistaan prosentteina kokonaisajasta, joka käytettiin koko mallin määrityksen suorittamiseen.
 
-![Mallin yhdistämismäärityksen suunnittelu -sivun suoritusajan tiedot.](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Mallin yhdistämismäärityksen suunnittelu -sivun suoritusajan tiedot](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 **Suorituskyvyn tilastotiedot** -ruudukossa on tieto, että **Trans**-tietolähde kutsuu VendTrans-taulua kerran. Arvo **\[265\]\[Q:265\]** **Trans**-tietolähteessä osoittaa, että 265 toimittajatapahtumaa on noudettu sovelluksen taulusta ja palautettu tietomallille.
 
@@ -137,7 +139,7 @@ Joidenkin nykyisen mallin yhdistämismääritysten tietolähdenimikkeiden käyte
 
 - Toimittajan taulua kutsutaan jokaista iteroitua toimittajatapahtumaa kohden, vaikka noudetut tapahtumat on kirjattu vain viidelle toimittajalle. 530 kutsusta 525 on kaksoiskappaleita. Seuraavassa kuvassa näkyy sanoma, joka ilmaisee, että kutsut ovat päällekkäisiä kutsuja (tietokantapyyntöjä).
 
-![Virheilmoitus tietokantapyyntöjen kaksoiskappaleista mallin yhdistämismäärityksen suunnittelusivulla.](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Virheilmoitus tietokantapyyntöjen kaksoiskappaleista mallin yhdistämismäärityksen suunnittelusivulla](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Ota huomioon, että yli 80 prosenttia (noin kuusi sekuntia) mallin yhdistämismäärityksen kokonaissuoritusajasta on kulunut VendTable-sovellustaulun arvojen hakemiseen. Tämä prosenttiosuus on liian suuri viiden toimittajan kahdelle määritteelle verrattuna VendTrans-sovellustaulun tietojen määrään.
 
@@ -172,7 +174,7 @@ Näiden ohjeiden avulla voit käyttää **Laskettu kenttä** -tyyppistä tietol�
     3. Anna valintaikkunan **Nimi**-kenttään **Box**-arvo.
     3. Valitse **OK**.
 
-    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Box-tietolähde.](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Box-tietolähde](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Lisää **Laskettu kenttä** -tyyppinen parametrisoitu tietolähde seuraavasti:
 
@@ -208,7 +210,7 @@ Näiden ohjeiden avulla voit käyttää **Laskettu kenttä** -tyyppistä tietol�
 
 9. Valitse **Tallenna**.
 
-    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Vend-tietolähde.](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Mallin yhdistämismäärityksen suunnitteluohjelman sivun Vend-tietolähde](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Sulje **Mallimäärityksen sunnittelun** sivu.
 11. Sulje **Mallimääritykset**-sivu.
@@ -232,11 +234,11 @@ Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aihe
 
 Huomaa, että mallimääritykseen tehdyt oikaisut ovat poistaneet tietokannasta päällekkäisiä kyselyitä. Tämän mallimäärityksen tietokantataulukoihin ja tietolähteisiin tehtyjen kutsujen määrä on myös vähennetty.
 
-![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 1 jäljitystiedot.](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 1 jäljitystiedot](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Suorituksen kokonaisaikaa on vähennetty noin 20 kertaa (noin 8 sekunnista noin 400 millisekuntiin). Näin ollen koko sähköisen raportoinnin ratkaisun suorituskykyä on parannettu.
 
-![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 2 jäljitystiedot.](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Mallin yhdistämismäärityksen suunnitteluohjelman sivun 2 jäljitystiedot](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Liite 1: Microsoftin sähköisen raportoinnin näyteratkaisun komponenttien lataaminen
 
@@ -244,9 +246,9 @@ Seuraavat tiedostot täytyy ladata ja tallentaa paikallisesti.
 
 | Tiedosto                                        | Sisältö |
 |---------------------------------------------|---------|
-| Suorituskyvyn parannuksen malli.versio.1     | [Esimerkin ER-tietomallin konfigurointi](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
-| Suorituskyvyn parannuksen yhdistämismääritys.versio.1.1 | [Esimerkin ER-mallikartoituksen konfigurointi](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
-| Suorituskyvyn parannuksen muoto.versio.1.1  | [Esimerkin ER-format-konfigurointi](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
+| Suorituskyvyn parannuksen malli.versio.1     | [Esimerkin ER-tietomallin konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Suorituskyvyn parannuksen yhdistämismääritys.versio.1.1 | [Esimerkin ER-mallikartoituksen konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Suorituskyvyn parannuksen muoto.versio.1.1  | [Esimerkin ER-format-konfigurointi](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ## <a name="appendix-2-configure-the-er-framework"></a><a name="appendix2"></a>Liite 2: Sähköisen raportoinnin kehyksen määrittäminen
 
@@ -298,6 +300,3 @@ Lisätietoja ER-konfiguraation lähteistä on kohdassa [Konfiguraation lähteide
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi](trace-execution-er-troubleshoot-perf.md)
 - [Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki](er-calculated-field-type.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

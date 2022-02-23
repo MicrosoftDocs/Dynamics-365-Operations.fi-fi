@@ -151,6 +151,3 @@ Päivitettyjen yhdistämismääritysten pitäisi olla seuraavissa kuvissa olevie
 ![Työntekijät työntekijään -tehtävä](./media/WorkerMapping.png)
 
 ![Sukupuoli-kentän muutos](./media/WorkerTransform.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

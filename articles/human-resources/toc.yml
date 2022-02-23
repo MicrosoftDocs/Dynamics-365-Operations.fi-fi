@@ -1,501 +1,482 @@
 - name: Dynamics 365 Human Resources
+  href: hr-welcome.md
   items:
-    - name: Dynamics 365 Human Resources
+    - name: Uudet ominaisuudet
       items:
-        - name: Dynamics 365 Human Resources -aloitussivu
-          href: index.md
-        - name: Infrastruktuuriversio 10.0.25
-          href: hr-infrastructure.md
-        - name: Dynamics 365 Human Resourcesin yhdistetyn infrastruktuurin uudet ja muuttuneet ominaisuudet
-          href: ./get-started/hr-whats-new-changed-10-0-25.md
-        - name: Aloittaminen
+        - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
+          href: hr-admin-whats-new.md
+        - name: 2. joulukuuta 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. lokakuuta 2020
+          href: hr-whats-new-2020-10-22.md
+        - name: 6. lokakuuta 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26. syyskuuta 2020
+          href: hr-whats-new-2020-09-26.md
+        - name: 16. syyskuuta 2020
+          href: hr-whats-new-2020-09-16.md
+        - name: 3. syyskuuta 2020
+          href: hr-whats-new-2020-09-03.md
+        - name: 20. elokuuta 2020
+          href: hr-whats-new-2020-08-20.md
+        - name: 6. elokuuta 2020
+          href: hr-whats-new-2020-08-06.md
+        - name: 23. heinäkuuta 2020
+          href: hr-whats-new-2020-07-23.md
+        - name: 8. heinäkuuta 2020
+          href: hr-whats-new-2020-07-08.md
+        - name: 25. kesäkuuta 2020
+          href: hr-whats-new-2020-06-23.md
+        - name: 11. kesäkuuta 2020
+          href: hr-whats-new-2020-06-11.md
+        - name: 28. toukokuuta 2020
+          href: hr-whats-new-2020-05-28.md
+        - name: 14. toukokuuta 2020
+          href: hr-whats-new-2020-05-14.md
+        - name: 1. toukokuuta 2020
+          href: hr-whats-new-2020-05-01.md
+        - name: Uudet ominaisuudet -arkisto 2020
           items:
-            - name: Uudet ominaisuudet
-              href: hr-admin-whats-new.md
-            - name: Vuoden 2021 uusien ja muuttuneiden ominaisuuksien arkisto
-              items:
-                - name: 29. marraskuuta 2021
-                  href: hr-whats-new-2021-11-29.md
-                - name: 5. lokakuuta 2021
-                  href: hr-whats-new-2021-10-04.md
-                - name: 20. syyskuuta 2021
-                  href: hr-whats-new-2021-09-20.md
-                - name: 6. syyskuuta 2021
-                  href: hr-whats-new-2021-09-06.md
-                - name: 23. elokuuta 2021
-                  href: hr-whats-new-2021-08-23.md
-                - name: 9. elokuuta 2021
-                  href: hr-whats-new-2021-08-09.md
-                - name: 26. heinäkuuta 2021
-                  href: hr-whats-new-2021-07-26.md
-                - name: 12. heinäkuuta 2021
-                  href: hr-whats-new-2021-07-12.md
-                - name: 22. kesäkuuta 2021
-                  href: hr-whats-new-2021-06-22.md
-                - name: 20. toukokuuta 2021
-                  href: hr-whats-new-2021-05-20.md
-                - name: 3. toukokuuta 2021
-                  href: hr-whats-new-2021-05-03.md
-                - name: 19. huhtikuuta 2021
-                  href: hr-whats-new-2021-04-19.md
-                - name: 5. huhtikuuta 2021
-                  href: hr-whats-new-2021-04-05.md
-                - name: 22. maaliskuuta 2021
-                  href: hr-whats-new-2021-03-22.md
-                - name: 8. maaliskuuta 2021
-                  href: hr-whats-new-2021-03-08.md
-                - name: 22. helmikuuta 2021
-                  href: hr-whats-new-2021-02-22.md
-                - name: 28. tammikuuta 2021
-                  href: hr-whats-new-2021-01-28.md
-                - name: 21. tammikuuta 2021
-                  href: hr-whats-new-2021-01-21.md
-            - name: Uudet ominaisuudet -arkisto 2020
-              items:
-                - name: 2. joulukuuta 2020
-                  href: hr-whats-new-2020-12-02.md
-                - name: 22. lokakuuta 2020
-                  href: hr-whats-new-2020-10-22.md
-                - name: 6. lokakuuta 2020
-                  href: hr-whats-new-2020-10-06.md
-                - name: 26. syyskuuta 2020
-                  href: hr-whats-new-2020-09-26.md
-                - name: 16. syyskuuta 2020
-                  href: hr-whats-new-2020-09-16.md
-                - name: 3. syyskuuta 2020
-                  href: hr-whats-new-2020-09-03.md
-                - name: 20. elokuuta 2020
-                  href: hr-whats-new-2020-08-20.md
-                - name: 6. elokuuta 2020
-                  href: hr-whats-new-2020-08-06.md
-                - name: 23. heinäkuuta 2020
-                  href: hr-whats-new-2020-07-23.md
-                - name: 8. heinäkuuta 2020
-                  href: hr-whats-new-2020-07-08.md
-                - name: 25. kesäkuuta 2020
-                  href: hr-whats-new-2020-06-23.md
-                - name: 11. kesäkuuta 2020
-                  href: hr-whats-new-2020-06-11.md
-                - name: 28. toukokuuta 2020
-                  href: hr-whats-new-2020-05-28.md
-                - name: 14. toukokuuta 2020
-                  href: hr-whats-new-2020-05-14.md
-                - name: 1. toukokuuta 2020
-                  href: hr-whats-new-2020-05-01.md
-                - name: 13. huhtikuuta 2020
-                  href: hr-whats-new-2020-04-13.md
-                - name: 3. huhtikuuta 2020
-                  href: hr-whats-new-2020-04-03.md
-                - name: 24. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-24.md
-                - name: 19. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-19.md
-                - name: 10. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-10.md
-                - name: 3. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-03.md
-                - name: 25. helmikuuta 2020
-                  href: hr-whats-new-2020-02-25.md
-                - name: 18. helmikuuta 2020
-                  href: hr-whats-new-2020-02-18.md
-                - name: 12. helmikuuta 2020
-                  href: hr-whats-new-2020-02-12.md
-                - name: 7. helmikuuta 2020
-                  href: hr-whats-new-2020-02-07.md
-                - name: 3. helmikuuta 2020
-                  href: hr-whats-new-2020-02-03.md
-            - name: Yleiskatsaus
-              href: hr-admin-overview.md
-            - name: Järjestelmävaatimukset
-              href: hr-admin-system-requirements.md
-            - name: Määritä ja hallitse esiintymiä
-              items:
-                - name: Valmistele Human Resources
-                  href: hr-admin-setup-provision.md
-                - name: Kopioi esiintymä
-                  href: hr-admin-setup-copy-instance.md
-                - name: Poista esiintymä
-                  href: hr-admin-setup-remove-instance.md
-                - name: Päivitysprosessi
-                  href: hr-admin-setup-update-process.md
-            - name: Määritä tietojen integrointi
-              items:
-                - name: Valitse tietojen integrointiteknologia
-                  href: hr-admin-integration-choose-technology.md
-                - name: Rajoittamisen usein kysytyt kysymykset
-                  href: hr-admin-integration-throttling-faq.md
-                - name: Määritä Dataverse-integrointi
-                  href: hr-admin-integration-common-data-service.md
-                - name: Dataverse-taulut
-                  href: hr-developer-entities.md
-                - name: Määritä Dataverse-virtuaalitaulukot
-                  href: hr-admin-integration-common-data-service-virtual-entities.md
-                - name: Human Resources -virtuaalitaulukoiden usein kysytyt kysymykset
-                  href: hr-admin-virtual-entity-faq.md
-                - name: Integroinnin määrittäminen Financen kanssa
-                  href: hr-admin-integration-finance.md
-                - name: Integroinnin määrittäminen Dayforcen kanssa
-                  href: hr-admin-integration-dayforce.md
-                - name: Toistuvan tietojen viennin sovelluksen luominen
-                  href: hr-admin-integration-recurring-data-export.md
-                - name: LinkedIn Talent Hub -integrointi
-                  href: hr-admin-integration-linkedin.md
-                - name: Office-integraatio
-                  items:
-                    - name: Office-integraation opasohjelma
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Yksikkötietojen päivittäminen Excelissä
-                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Avaa Excelissä -kokemusten usein kysytyt kysymykset
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Office-integraation vianmääritys
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: Tiedonhallinnan määrittäminen
-                  items:
-                    - name: Tietojen hallintakehyksen yleiskatsaus
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Tietoyksiköt
-                      items:
-                        - name: Tietoyksiköiden yleiskatsaus
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Konfigurointitietoprojektit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
-                      items:
-                        - name: Konfigurointitietojen kopiointi – yleiskatsaus
-                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Konfigurointitietopaketit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Konfigurointitietomallit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Muutosten seuranta yksikköön
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Tietojen etsiminen vakiotietoyksiköistä
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Useita laskentataulukoita sisältävät tietomallit
-                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Muutosten seurannan ottaminen käyttöön yksiköille
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Konfigurointiavaimet ja tietoyksiköt
-                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Konfigurointitietopaketit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Tietojen tuonti- ja vientityöt
-                      items:
-                        - name: Tietojen tuonti- ja vientityöt – yleiskatsaus
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
-                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Tietoyksiköiden kehittäminen
-                      items:
-                        - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
-                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Uusien tietoyksiköiden luominen
-                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Tietoyksiköiden ominaisuudet
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Laskettavien sarakkeiden ja virtuaalikenttien luominen
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Yritystenvälinen toiminta
-                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Maa-/aluekoodien käsitteleminen
-                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Periytyvyysmallit
-                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Ohjatun tietoyksikkötoiminnon säännöt
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Metatietojen ominaisuudet
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: 'Tarkistukset, oletukset ja yhdistämättömät kentät'
-                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Suojaus ja tietoyksiköt
-                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Kolmannen osapuolen palvelun testausapuohjelmien käyttäminen
-                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                        - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
-                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Tuo oma tietokantasi
-                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: BYOD-erätöiden optimointi
-                      href: hr-admin-integration-byod-batch-jobs.md
-                    - name: Yksikkösäilön automaattinen päivitys
-                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Tietotehtävän automaatio
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Tietojen tarkistuksen tarkistusluettelon työtila
-                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Tietojenhallintavirheiden kuvaukset
-                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                    - name: Ominaisuuksien hallinta
-                      href: hr-admin-manage-features.md
-                    - name: Tietokannan lokikirjauksen määrittäminen ja hallinta
-                      href: hr-admin-database-logging.md
-            - name: Käyttöliittymään tutustuminen
-              items:
-                - name: Käyttöliittymäelementit
-                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
-                - name: Helppokäyttötoiminnot
-                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
-                - name: Ominaisuuksien hallinnan yleiskatsaus
-                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Asiakasohjelmasta usein kysytyt kysymykset
-                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
-                - name: Toimintohaku
-                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
-                - name: Suodatuksen ja kyselysyntaksin lisäasetukset
-                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
-                - name: Työtilojen määrittäminen ja suodattaminen
-                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
-                - name: Sivujen näyttäminen rinnakkain Avaa uudessa ikkunassa -toiminnon avulla
-                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
-                - name: Pikanäppäimet
-                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
-                - name: Yritysten mainospalkkien tai logokuvien muuttaminen
-                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json
-                - name: Siirtymishaku
-                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json
-                - name: Käyttäjäkokemuksen mukauttaminen
-                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
-                - name: Tallennetut näkymät
-                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
-                - name: Mukautettujen kenttien luominen ja käsitteleminen
-                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-                - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
-                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
-                - name: Tietojen etsiminen hakujen avulla
-                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
-                - name: Istunnon päivämäärän muuttaminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
-                - name: Käyttäjän ensisijaisen aikavyöhykkeen asettaminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
-                - name: Tietoja Lifecycle Services -palveluista
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
-                - name: Julkistamisen valmistelu
-                  href: hr-admin-go-live-prepare.md
-                - name: Julkistamisen usein kysytyt kysymykset
-                  href: hr-admin-go-live-faq.md
-                - name: Human Resources -infrastruktuurin yhdistämisen usein kysytyt kysymykset
-                  href: hr-infrastructure-merge-faq.md
-                - name: Dokumentaatioresurssit
-                  items:
-                    - name: Ohjejärjestelmä
-                      href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Yhdistäminen ohjejärjestelmään
-                      href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Mukautetun ohjeen yleiskatsaus
-                      href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Kenttäkuvausten näyttäminen ja vienti
-                      href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Tehtävien tallennustoiminto
-                      href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla
-                      href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
-                - name: Human Resourcesin vianmääritys
-                  items:
-                    - name: Hanki tukea
-                      href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Suorituskyvyn optimointi erätöiden määrityksellä työajan jälkeen
-                      href: hr-admin-troubleshooting-batch-jobs.md
-                    - name: Suorituskyvyn optimointi automaattisilla tyhjennystehtävillä
-                      href: hr-admin-troubleshooting-batch-history.md
-                    - name: Jumittuneiden erätöiden nollaaminen
-                      href: hr-admin-troubleshooting-batch-execution.md
-                    - name: Dataverse-synkronoinnin nollaaminen
-                      href: hr-admin-troubleshooting-dataverse-sync.md
-                    - name: Analytiikkaraportteja ei päivitetä
-                      href: hr-admin-troubleshooting-analytic-reports.md
-                    - name: Power Apps ‑hallintakeskuksessa ei voi luoda ympäristöä
-                      href: hr-admin-troubleshooting-power-apps.md
-                    - name: Asiakasohjelma katkaisee yhteyden
-                      href: hr-admin-troubleshooting-disconnect.md
-                    - name: Vältä katkaistua tekstiä toimihierarkiassa
-                      href: hr-admin-troubleshooting-truncate.md
-                    - name: Kompensaatioprosessin suorittaminen
-                      href: hr-admin-troubleshooting-compensation.md
-                    - name: 'Tehtäväoppaan tallentaminen LCS:ään'
-                      href: hr-admin-troubleshooting-task-guide.md
-                    - name: Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan
-                      href: hr-admin-troubleshooting-private-addresses.md
-                    - name: Human Resources ei näy Dynamics 365 -sovelluksissa
-                      href: hr-admin-troubleshooting-not-in-apps.md
-                    - name: Raportointivaihtoehdot
-                      href: hr-admin-troubleshooting-reporting.md
-                    - name: Integraatioiden usein kysytyt kysymykset
-                      href: hr-admin-troubleshooting-integration.md
-            - name: Human Resources -asetukset
-              items:
-                - name: Human Resources -parametrien määrittäminen
-                  href: hr-setup-parameters.md
-                - name: Jaettujen Human resources -parametrien määrittäminen
-                  href: hr-setup-shared-parameters.md
-                - name: Määritä henkilöstöhallinnon työnkulut
-                  href: hr-workflow-manage-employee-information.md
-                - name: Ymmärrä päivämäärä- ja kellonaikakenttiä
-                  href: hr-setup-date-time-fields.md
-            - name: Määritä organisaation asetukset
-              items:
-                - name: Organisaation hallinnon aloitussivu
-                  href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
-                - name: Numerosarjat
-                  items:
-                    - name: Numerosarjojen yleiskatsaus
-                      href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Yksittäisten numerosarjojen määrittäminen
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Numerosarjojen määrittäminen ohjatulla toiminnolla
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
-                - name: Organisaatiot ja organisaatiohierarkiat
-                  items:
-                    - name: Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
-                      href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Organisaatiohierarkian suunnitteleminen
-                      href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Organisaation hierarkian luominen
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Yritysten luominen
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Toimintayksiköiden luominen
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
-                - name: Yleinen osoitekirja
-                  items:
-                    - name: Yleisen osoitekirjan yleiskatsaus
-                      href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Yleisen osoitekirjan ja muiden osoitekirjojen suunnitteleminen
-                      href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Yleisen osoitekirjan määrittäminen
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Osoitemääritys
-                      href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Osoitekirjat – usein kysytyt kysymykset
-                      href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Osoitekirjojen määrittäminen
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Sijainnin omistajien hallinta
-                      href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
-                - name: Työnkulkujärjestelmä
-                  items:
-                    - name: Työnkulkujärjestelmän yleiskatsaus
-                      href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulkujärjestelmän arkkitehtuuri
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulun elementit
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulkutehtävät
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulkujen luominen
-                      items:
-                        - name: Työnkulkujen luonnin yleiskatsaus
-                          href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Työnkulkuominaisuuksien määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Manuaalisten tehtävien määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Automaattisten tehtävien määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Hyväksyntäprosessien määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Hyväksyntävaiheiden määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Manuaalisten päätösten määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Ehdollisten päätösten määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Rinnakkaisten tehtävien määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Rinnakkaishaarojen määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Rivinimikkeen työnkulkujen määrittäminen
-                          href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulkusanoman käsittelyn erätyön määrittäminen kriittiseksi
-                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulun työnimikkeiden delegointi
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulkuhistorian tarkasteleminen
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Järjestelmän määrittäminen lähettämään työnkulkuun liittyvät sähköpostiviestit käyttäjille
-                      href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Työnkulkutyypit
-                      items:
-                        - name: Työnkulkutyypin luominen
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Työnkulkutyypin tarkistuslista
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Työnkulkuluokan luominen
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Kyselyn luominen työnkulkutyypille
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Luo uusi työnkulkutyyppi
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Työnkulkuasiakirja luokan luominen
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
-                        - name: SubmitToWorkflow-luokan luominen
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Työntekijäasiakirjaluokan kytkeminen työnkulkutyyppiin
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Työnkulkutyyppien raportti
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-                        - name: Työnkulun usein kysytyt kysymykset
-                          href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
-                - name: Hälytykset
-                  items:
-                    - name: Hälytysten yleiskuvaus
-                      href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Hälytyssääntöjen luominen
-                      href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Hälytysten eräkäsittely
-                      href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Asiakasohjelman hälytysilmoitukset sähköpostitse
-                      href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-                - name: Palvelupyyntöjen hallinta
-                  items:
-                    - name: Palvelupyynnön hallinnan yleiskatsaus
-                      href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
-                    - name: 'Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien suunnitteleminen'
-                      href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
-                - name: Tietuemallit
-                  items:
-                    - name: Tietuemallien yleiskatsaus
-                      href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Tietuemallin luominen
-                      href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Uuden tietueen luonti tietuemallin avulla
-                      href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
-                - name: Asiakirjanhallinnan määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
-                - name: Sähköpostiviestin määrittäminen ja lähettäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
-                - name: Päivämäärä- ja aikatiedot sekä aikavyöhykkeet
-                  href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
-        - name: Työntekijän itsepalvelu
+            - name: 13. huhtikuuta 2020
+              href: hr-whats-new-2020-04-13.md
+            - name: 3. huhtikuuta 2020
+              href: hr-whats-new-2020-04-03.md
+            - name: 24. maaliskuuta 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19. maaliskuuta 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10. maaliskuuta 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3. maaliskuuta 2020
+              href: hr-whats-new-2020-03-03.md
+            - name: 25. helmikuuta 2020
+              href: hr-whats-new-2020-02-25.md
+            - name: 18. helmikuuta 2020
+              href: hr-whats-new-2020-02-18.md
+            - name: 12. helmikuuta 2020
+              href: hr-whats-new-2020-02-12.md
+            - name: 7. helmikuuta 2020
+              href: hr-whats-new-2020-02-07.md
+            - name: 3. helmikuuta 2020
+              href: hr-whats-new-2020-02-03.md
+    - name: Järjestelmänvalvojan opas
+      items:
+        - name: Yleiskatsaus
+          href: hr-admin-overview.md
+        - name: Järjestelmävaatimukset
+          href: hr-admin-system-requirements.md
+        - name: Määritä ja hallitse esiintymiä
           items:
-            - name: Työntekijän ja esimiehen itsepalvelun yleiskatsaus
-              href: hr-employee-manager-self-service-overview.md
-            - name: Mukautettujen linkkien luominen esimiehen itsepalvelussa
-              href: hr-employee-manager-self-service-custom-links.md
-            - name: Työntekijän itsepalvelutyötilan nimen muuttaminen
-              href: hr-employee-self-service-workspace-name.md
-            - name: Henkilökohtaisten tietojen muokkaaminen
-              href: hr-employee-manager-self-service-edit-personal-information.md
-            - name: Henkilökohtaisten tietojen muokkaamisen rajoittaminen
-              href: hr-employee-self-service-restrict-editing.md
-        - name: Henkilöstön hallinta
+            - name: Valmistele Human Resources
+              href: hr-admin-setup-provision.md
+            - name: Kopioi esiintymä
+              href: hr-admin-setup-copy-instance.md
+            - name: Poista esiintymä
+              href: hr-admin-setup-remove-instance.md
+            - name: Päivitysprosessi
+              href: hr-admin-setup-update-process.md
+        - name: Määritä tietojen integraatio
+          items:
+            - name: Valitse tietojen integraatioteknologia
+              href: hr-admin-integration-choose-technology.md
+            - name: Määritä Common Data Service -integraatio
+              href: hr-admin-integration-common-data-service.md
+            - name: Common Data Service -yksiköt
+              href: hr-developer-entities.md
+            - name: Määritä Common Data Service -virtuaaliyksiköt
+              href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Integraation määrittäminen Financen kanssa
+              href: hr-admin-integration-finance.md
+            - name: Integraation määrittäminen Dayforcen kanssa
+              href: hr-admin-integration-dayforce.md
+            - name: Toistuvan tietojen viennin sovelluksen luominen
+              href: hr-admin-integration-recurring-data-export.md
+            - name: LinkedIn Talent Hub -integrointi
+              href: hr-admin-integration-linkedin.md
+            - name: Office-integraatio
+              items:
+                - name: Office-integraation opasohjelma
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
+                - name: Yksikkötietojen päivittäminen Excelissä
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
+                - name: Avaa Excelissä -kokemusten luominen
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
+                - name: Office-integraation vianmääritys
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Tiedonhallinnan määrittäminen
+          items:
+            - name: Tietojen hallintakehyksen yleiskatsaus
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietoyksiköt
+              items:
+                - name: Tietoyksiköiden yleiskatsaus
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietoprojektit
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
+                  items:
+                    - name: Konfigurointitietojen kopiointi – yleiskatsaus
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurointitietopaketit
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietomallit
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Muutosten seuranta yksikköön
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tietojen etsiminen vakiotietoyksiköistä
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Useita laskentataulukoita sisältävät tietomallit
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Muutosten seurannan ottaminen käyttöön yksiköille
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointiavaimet ja tietoyksiköt
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurointitietopaketit
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietojen tuonti- ja vientityöt
+              items:
+                - name: Tietojen tuonti- ja vientityöt – yleiskatsaus
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietoyksiköiden kehittäminen
+              items:
+                - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Uusien tietoyksiköiden luominen
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tietoyksiköiden ominaisuudet
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Laskettavien sarakkeiden ja virtuaalikenttien luominen
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Yritystenvälinen toiminta
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Maa-/aluekoodien käsitteleminen
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Periytyvyysmallit
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ohjatun tietoyksikkötoiminnon säännöt
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Metatietojen ominaisuudet
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Tarkistukset, oletukset ja yhdistämättömät kentät'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Suojaus ja tietoyksiköt
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kolmannen osapuolen palvelun testausapuohjelmien käyttäminen
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tuo oma tietokantasi
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: BYOD-erätöiden optimointi
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Yksikkösäilön automaattinen päivitys
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietotehtävän automaatio
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietojen tarkistuksen tarkistusluettelon työtila
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietojenhallintavirheiden kuvaukset
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
+        - name: Ominaisuuksien hallinta
+          href: hr-admin-manage-features.md
+        - name: Tietokannan lokikirjauksen määrittäminen ja hallinta
+          href: hr-admin-database-logging.md
+        - name: Käyttöliittymään tutustuminen
+          items:
+            - name: Käyttöliittymäelementit
+              href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Helppokäyttötoiminnot
+              href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ominaisuuksien hallinnan yleiskatsaus
+              href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Asiakasohjelmasta usein kysytyt kysymykset
+              href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
+            - name: Toimintohaku
+              href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Suodatuksen ja kyselysyntaksin lisäasetukset
+              href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
+            - name: Työtilojen määrittäminen ja suodattaminen
+              href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
+            - name: Sivujen näyttäminen rinnakkain Avaa uudessa ikkunassa -toiminnon avulla
+              href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
+            - name: Pikanäppäimet
+              href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
+            - name: Yritysten mainospalkkien tai logokuvien muuttaminen
+              href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json
+            - name: Siirtymishaku
+              href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Käyttäjäkokemuksen mukauttaminen
+              href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tallennetut näkymät
+              href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
+            - name: Mukautettujen kenttien luominen ja käsitteleminen
+              href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
+            - name: Pohjaan perustuvien sovellusten upottaminen Power Appsista
+              href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietojen etsiminen hakujen avulla
+              href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
+            - name: Istunnon päivämäärän muuttaminen
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
+            - name: Käyttäjän ensisijaisen aikavyöhykkeen asettaminen
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietoja Lifecycle Services -palveluista
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Teamsin Human Resources -sovellus
+          href: hr-admin-teams-leave-app.md
+        - name: Julkistamisen valmistelu
+          href: hr-admin-go-live-prepare.md
+        - name: Julkistamisen usein kysytyt kysymykset
+          href: hr-admin-go-live-faq.md
+        - name: Dokumentaatioresurssit
+          items:
+            - name: Ohjejärjestelmä
+              href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Yhdistäminen ohjejärjestelmään
+              href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
+            - name: Mukautetun ohjeen yleiskatsaus
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Kenttäkuvausten näyttäminen ja vienti
+              href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tehtävien tallennustoiminto
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
+            - name: Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resourcesin vianmääritys
+          items:
+            - name: Hanki tukea
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimoi suorituskyky erätöiden määrityksellä työajan jälkeen
+              href: hr-admin-troubleshooting-batch-jobs.md
+            - name: Optimoi suorituskyky automaattisilla tyhjennystehtävillä
+              href: hr-admin-troubleshooting-batch-history.md
+            - name: Analytiikkaraportteja ei päivitetä
+              href: hr-admin-troubleshooting-analytic-reports.md
+            - name: Power Apps -hallintakeskuksessa ei voi luoda ympäristöä
+              href: hr-admin-troubleshooting-power-apps.md
+            - name: Asiakasohjelma katkaisee yhteyden
+              href: hr-admin-troubleshooting-disconnect.md
+            - name: Vältä katkaistua tekstiä toimihierarkiassa
+              href: hr-admin-troubleshooting-truncate.md
+            - name: Kompensaatioprosessin suorittaminen
+              href: hr-admin-troubleshooting-compensation.md
+            - name: 'Tehtäväoppaan tallentaminen LCS:ään'
+              href: hr-admin-troubleshooting-task-guide.md
+            - name: Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan
+              href: hr-admin-troubleshooting-private-addresses.md
+            - name: Human Resources ei näy Dynamics 365 -sovelluksissa
+              href: hr-admin-troubleshooting-not-in-apps.md
+            - name: Raportointivaihtoehdot
+              href: hr-admin-troubleshooting-reporting.md
+            - name: Integraatioiden usein kysytyt kysymykset
+              href: hr-admin-troubleshooting-integration.md
+    - name: Kehittäjäopas
+      items:
+        - name: Yleiskatsaus
+          href: hr-developer-overview.md
+        - name: Laajentaminen Power Appsin ja Power Automaten avulla
+          href: hr-developer-power-apps.md
+        - name: Common Data Service -yksiköt
+          href: hr-developer-entities.md
+        - name: Mukautetut kentät
+          href: hr-developer-custom-fields.md
+        - name: Määritä tietojen integraatio
+          items:
+            - name: Valitse tietojen integraatioteknologia
+              href: hr-admin-integration-choose-technology.md
+            - name: Määritä Common Data Service -integraatio
+              href: hr-admin-integration-common-data-service.md
+            - name: Integraation määrittäminen Financen kanssa
+              href: hr-admin-integration-finance.md
+            - name: Integraation määrittäminen Dayforcen kanssa
+              href: hr-admin-integration-dayforce.md
+            - name: Toistuvan tietojen viennin sovelluksen luominen
+              href: hr-admin-integration-recurring-data-export.md
+            - name: Office-integraatio
+              items:
+                - name: Office-integraation opasohjelma
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Yksikkötietojen päivittäminen Excelissä
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Avaa Excelissä -kokemusten luominen
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Office-integraation vianmääritys
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Yksikön ohjelmointirajapinnan viite
+          items:
+            - name: Todennus
+              href: hr-developer-api-authentication.md
+            - name: Yksiköt
+              items:
+                - name: MyLeaveRequests
+                  items:
+                    - name: MyLeaveRequests – yleiskatsaus
+                      href: hr-developer-api-myleaverequests-overview.md
+                    - name: Lähetä lomapyyntö työnkulkuun
+                      href: hr-developer-api-myleaverequests-submit.md
+    - name: Käyttöopas
+      items:
+        - name: Yleiskatsaus
+          href: hr-hrpro-overview.md
+        - name: Human Resources -asetukset
+          items:
+            - name: Määritä Human Resourcesin parametrit
+              href: hr-setup-parameters.md
+            - name: Määritä Human Resourcesin jaetut parametrit
+              href: hr-setup-shared-parameters.md
+            - name: Ymmärrä päivämäärä- ja kellonaikakenttiä
+              href: hr-setup-date-time-fields.md
+        - name: Määritä organisaation asetukset
+          items:
+            - name: Organisaation hallinnon aloitussivu
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
+            - name: Numerosarjat
+              items:
+                - name: Numerosarjojen yleiskatsaus
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Yksittäisten numerosarjojen määrittäminen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
+                - name: Numerosarjojen määrittäminen ohjatulla toiminnolla
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
+            - name: Organisaatiot ja organisaatiohierarkiat
+              items:
+                - name: Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
+                - name: Organisaatiohierarkian suunnitteleminen
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Organisaation hierarkian luominen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Yritysten luominen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
+                - name: Toimintayksiköiden luominen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
+            - name: Yleinen osoitekirja
+              items:
+                - name: Yleisen osoitekirjan yleiskatsaus
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Yleisen osoitekirjan ja muiden osoitekirjojen suunnitteleminen
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Yleisen osoitekirjan määrittäminen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Osoitekirjat – usein kysytyt kysymykset
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Osoitekirjojen määrittäminen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+            - name: Työnkulkujärjestelmä
+              items:
+                - name: Työnkulkujärjestelmän yleiskatsaus
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulkujärjestelmän arkkitehtuuri
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulun elementit
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulkutehtävät
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulkujen luominen
+                  items:
+                    - name: Työnkulkujen luonnin yleiskatsaus
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Työnkulkuominaisuuksien määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Manuaalisten tehtävien määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Automaattisten tehtävien määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Hyväksyntäprosessien määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Hyväksyntävaiheiden määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Manuaalisten päätösten määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Ehdollisten päätösten määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Rinnakkaisten tehtävien määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Rinnakkaishaarojen määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Rivinimikkeen työnkulkujen määrittäminen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulkusanoman käsittelyn erätyön määrittäminen kriittiseksi
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulun työnimikkeiden delegointi
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulkuhistorian tarkasteleminen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+                - name: Järjestelmän määrittäminen lähettämään työnkulkuun liittyvät sähköpostiviestit käyttäjille
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulkutyypit
+                  items:
+                    - name: Työnkulkutyypin luominen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Työnkulkutyypin tarkistuslista
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Työnkulkuluokan luominen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Kyselyn luominen työnkulkutyypille
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Luo uusi työnkulkutyyppi
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Työnkulkuasiakirja luokan luominen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: SubmitToWorkflow-luokan luominen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Työntekijäasiakirjaluokan kytkeminen työnkulkutyyppiin
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulkutyyppien raportti
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Työnkulun usein kysytyt kysymykset
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
+            - name: Hälytykset
+              items:
+                - name: Hälytysten yleiskuvaus
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Hälytyssääntöjen luominen
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
+                - name: Hälytysten eräkäsittely
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
+                - name: Asiakasohjelman hälytysilmoitukset sähköpostitse
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
+            - name: Sähköiset allekirjoitukset
+              items:
+                - name: Sähköisten allekirjoitusten yleiskatsaus
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sähköisten allekirjoitusten määrittäminen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
+            - name: Palvelupyyntöjen hallinta
+              items:
+                - name: Palvelupyynnön hallinnan yleiskatsaus
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien suunnitteleminen'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Tietuemallit
+              items:
+                - name: Tietuemallien yleiskatsaus
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tietuemallin luominen
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
+                - name: Uuden tietueen luonti tietuemallin avulla
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
+            - name: Asiakirjanhallinnan määrittäminen
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Sähköpostiviestin määrittäminen ja lähettäminen
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
+            - name: Päivämäärä- ja aikatiedot sekä aikavyöhykkeet
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
+        - name: Henkilökunnan hallinta
           items:
             - name: Työvoimasi organisointi
               href: hr-personnel-departments-jobs-positions.md
-            - name: Henkilöstön hallinnan työtila
-              href: hr-personnel-personnel-management-workspace.md
             - name: Työn komponenttien määrittäminen
               href: hr-personnel-jobs.md
             - name: Osastojen määrittäminen
               href: hr-personnel-define-departments.md
-            - name: Osaston lisääminen hierarkiaan
+            - name: Lisää osasto hierarkiaan
               href: hr-personnel-add-department-hierarchy.md
             - name: Töiden määrittäminen
               href: hr-personnel-define-jobs.md
-            - name: Toimet
-              href: hr-personnel-positions.md
             - name: Työaikakalenterin luominen
               href: hr-personnel-create-working-time-calendar.md
             - name: Ehdokkaiden työhönotto
@@ -508,22 +489,16 @@
               href: hr-personnel-view-address-changes.md
             - name: Muokkaa toimen raportointisuhteita
               href: hr-personnel-modify-reporting-relationships-position.md
-            - name: Yksinkertaistettu työntekijän lisääminen
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
             - name: Työntekijän tietojen syöttäminen
               href: hr-personnel-enter-worker-information.md
-            - name: 'Työntekijät, joilla ei työsuhdetta'
-              href: hr-personnel-workers-without-employment.md
-            - name: Työntekijöiden lainauskohteet
+            - name: Työntekijöiden lainakohteet
               href: hr-personnel-loan-item-worker.md
-            - name: Lainauskohteiden luominen
+            - name: Lainakohteiden luominen
               href: hr-personnel-create-loan-items.md
             - name: Lainauskohteiden hallinta
               href: hr-personnel-loan-items.md
             - name: Seuraajasuunnitelman kehittäminen
               href: hr-personnel-develop-succession-plan.md
-            - name: Projektin työaikaraporttien syöttäminen
-              href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md?toc=/dynamics365/human-resources/toc.json
             - name: Joukkotyöhönottoprojektit
               href: hr-personnel-mass-hire-projects.md
             - name: Joukkotyöhönottoprojektin luominen
@@ -534,29 +509,107 @@
               href: hr-personnel-set-up-injury-illness-information.md
             - name: Työntekijän vamma- ja sairaustietojen ylläpito
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Ehdokkaiden työhönotto
+        - name: Kompensaatiosuunnitelmien määrittäminen
+          items:
+            - name: Kompensaatiosuunnitelmien yleiskuvaus
+              href: hr-compensation-overview.md
+            - name: Kompensaatioruudukoiden määrittäminen
+              href: hr-compensation-grids.md
+            - name: Kompensaatiorakenteen ja -suunnitelman kehittäminen
+              href: hr-compensation-structure.md
+            - name: Kiinteiden kompensaatiosuunnitelmien luominen
+              href: hr-compensation-fixed-plans.md
+            - name: Muuttuvien kompensaatiosuunnitelmien luominen
+              href: hr-compensation-variable-plans.md
+            - name: Työntekijöiden rekisteröiminen kiinteän kompensaation suunnitelmaan
+              href: hr-compensation-enroll-employees-fixed.md
+            - name: Työntekijöiden rekisteröiminen muuttuvan kompensaation suunnitelmaan
+              href: hr-compensation-enroll-employees-variable.md
+            - name: Kompensaatioprosessin määrittäminen ja tulosten laskeminen
+              href: hr-compensation-define-process.md
+            - name: Kompensaatiosuunnitelmien käsittely
+              href: hr-compensation-process.md
+        - name: Etujen hallinta
+          items:
+            - name: Etujen hallinta
               items:
-                - name: Työhönottoprosessien hallinta
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Joukkotyöhönottoprojektit
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Joukkotyöhönottoprojektien luominen
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Hakijan ja hakemustietojen manuaalinen syöttäminen
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Työehdotusten kehittäminen ja avaaminen
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Toimien määritys
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Ehdokkaiden työhönotto rekrytoinnin kautta
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Nykyisten työntekijöiden työhönotto rekrytoinnin kautta
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Ehdokkaiden valintatyökalujen määrittäminen ja käyttöönotto
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-        - name: Tehtävienhallinta
-          href: hr-task-mgmt.md
-        - name: Loma ja poissaolo
+                - name: Etujen hallinnan yleiskatsaus
+                  href: hr-benefits-management-overview.md
+                - name: Etujen hallinnan määrittäminen
+                  items:
+                    - name: Etujen hallinnan parametrien määrittäminen yritystä kohti
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Etujen hallinnan ja työntekijän itsepalvelun parametrien määrittäminen kaikille yrityksille
+                      href: hr-benefits-setup-parameters.md
+                    - name: Oikeutussääntöjen ja -asetusten määrittäminen
+                      href: hr-benefits-setup-eligibility-rules.md
+                    - name: Henkilökohtaisten yhteyshenkilöiden oikeutusasetusten määrittäminen
+                      href: hr-benefits-setup-contact-eligibility-options.md
+                    - name: Kattavuusasetusten luominen
+                      href: hr-benefits-setup-coverage-options.md
+                    - name: Maksutiheyksien määrittäminen
+                      href: hr-benefits-setup-payment-frequencies.md
+                    - name: Elämäntapahtumatyyppien määrittäminen
+                      href: hr-benefits-setup-life-event-types.md
+                    - name: Suunnitelmantyyppien luominen
+                      href: hr-benefits-setup-plan-types.md
+                    - name: Määritä syykoodit
+                      href: hr-benefits-setup-reason-codes.md
+                    - name: Määritä tasokoodit
+                      href: hr-benefits-setup-tier-codes.md
+                    - name: Hintojen määrittäminen
+                      href: hr-benefits-setup-rates.md
+                    - name: Vähennysten määrittäminen
+                      href: hr-benefits-setup-deductions.md
+                    - name: Odotuspäivien määrittäminen
+                      href: hr-benefits-setup-waiting-days.md
+                    - name: Odotuskausien määrittäminen
+                      href: hr-benefits-setup-waiting-periods.md
+                    - name: Pyöristyssääntöjen määrittäminen
+                      href: hr-benefits-setup-rounding-rules.md
+                    - name: Työsuhdeluokkien luominen
+                      href: hr-benefits-setup-employment-categories.md
+                    - name: Työsuhdetyyppien luominen
+                      href: hr-benefits-setup-employment-types.md
+                    - name: Työntekijän itsepalvelun määrittäminen
+                      href: hr-benefits-setup-employee-self-service.md
+                - name: Etuussuunnitelmien luominen
+                  items:
+                    - name: Etusuunnitelmien määrittäminen
+                      href: hr-benefits-plans-setup.md
+                    - name: Liukumahyvitysohjelmien määrittäminen
+                      href: hr-benefits-plans-flex-credit-programs.md
+                - name: Etusuunnitelmien käsittely
+                  items:
+                    - name: Rekisteröitymiskelpoisuuksien käsittely
+                      href: hr-benefits-process-enrollment-eligibility.md
+                    - name: Elämäntapahtumien käsittely
+                      href: hr-benefits-process-life-events.md
+                    - name: Elämäntapahtumien muutosten käsittely
+                      href: hr-benefits-process-life-event-changes.md
+                    - name: Elämäntapahtumien oikeutusten käsittely
+                      href: hr-benefits-process-life-event-eligibility.md
+                    - name: Hintamuutosten käsittely
+                      href: hr-benefits-process-rate-changes.md
+            - name: Etuohjelman määrittäminen ja hallinta
+              href: hr-benefits-manage-program.md
+            - name: Etukelpoisuuden käytännöt
+              href: hr-benefits-eligibility-policies.md
+            - name: Etuuskelpoisuusprosessi
+              href: hr-benefits-eligibility-process.md
+            - name: Etuuskelpoisuussääntöjen ja -käytäntöjen määrittäminen
+              href: hr-benefits-define-eligibility-rules.md
+            - name: Työsuhde-etuohjelman toteuttaminen
+              href: hr-benefits-deliver-employee-benefits-program.md
+            - name: Uusien etujen luominen
+              href: hr-benefits-create.md
+            - name: Rekisteröi työntekijät etuihin
+              href: hr-benefits-enroll-workers.md
+            - name: Etuuksien päättymispäivien hallinta
+              href: hr-benefits-expiration-dates.md
+            - name: ACA-raporttien luominen
+              href: hr-benefits-aca-reports.md
+        - name: Virkavapaan ja poissaolojen hallinta
           items:
             - name: Yleiskatsaus
               href: hr-leave-and-absence-overview.md
@@ -588,145 +641,27 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Ryhmä- ja yrityskalenterien tarkasteleminen
               href: hr-employee-self-service-calendar.md
-            - name: Poissaolopäällikön roolin määrittäminen
-              href: hr-configure-absence-manager.md
-            - name: Loman rahaksi tai lomapalkan vapaaksi vaihtamisen käytäntöjen hallinta
+            - name: Käytäntöjen hallinta loman vaihtamisessa rahaksi ja lomapalkan vaihtamisessa vapaaksi
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Loman rahaksi tai lomapalkan vapaaksi vaihtamisen työnkulkujen luominen
               href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Loman rahaksi tai lomapalkan vapaaksi vaihtaminen
               href: hr-employee-self-service-buy-sell-leave.md
-        - name: Edut
-          items:
-            - name: Etuohjelman määrittäminen ja hallinta
-              href: hr-benefits-manage-program.md
-            - name: Etukelpoisuuden käytännöt
-              href: hr-benefits-eligibility-policies.md
-            - name: Etuuskelpoisuusprosessi
-              href: hr-benefits-eligibility-process.md
-            - name: Etuuskelpoisuussääntöjen ja -käytäntöjen määrittäminen
-              href: hr-benefits-define-eligibility-rules.md
-            - name: Työsuhde-etuohjelman toteuttaminen
-              href: hr-benefits-deliver-employee-benefits-program.md
-            - name: Uusien etujen luominen
-              href: hr-benefits-create.md
-            - name: Rekisteröi työntekijät etuihin
-              href: hr-benefits-enroll-workers.md
-            - name: Etuuksien päättymispäivien hallinta
-              href: hr-benefits-expiration-dates.md
-            - name: ACA-raporttien luominen
-              href: hr-benefits-aca-reports.md
-        - name: Etujen hallinta
-          items:
-            - name: Etujen hallinnan yleiskatsaus
-              href: hr-benefits-management-overview.md
-            - name: Etujen hallinnan työtila
-              href: hr-benefits-management-workspace.md
-            - name: Etujen hallinnan määrittäminen
-              items:
-                - name: Etujen hallinnan parametrien määrittäminen yritystä kohti
-                  href: hr-benefits-setup-parameters-per-company.md
-                - name: Etujen hallinnan ja työntekijän itsepalvelun parametrien määrittäminen kaikille yrityksille
-                  href: hr-benefits-setup-parameters.md
-                - name: Oikeutussääntöjen ja -asetusten määrittäminen
-                  href: hr-benefits-setup-eligibility-rules.md
-                - name: Henkilökohtaisten yhteyshenkilöiden oikeutusasetusten määrittäminen
-                  href: hr-benefits-setup-contact-eligibility-options.md
-                - name: Kattavuusasetusten luominen
-                  href: hr-benefits-setup-coverage-options.md
-                - name: Maksutiheyksien määrittäminen
-                  href: hr-benefits-setup-payment-frequencies.md
-                - name: Elämäntapahtumatyyppien määrittäminen
-                  href: hr-benefits-setup-life-event-types.md
-                - name: Suunnitelman tyypin yleiskatsaus
-                  href: hr-benefits-setup-plan-types.md
-                - name: Syykoodien määrittäminen
-                  href: hr-benefits-setup-reason-codes.md
-                - name: Tasokoodien määrittäminen
-                  href: hr-benefits-setup-tier-codes.md
-                - name: Hintojen määrittäminen
-                  href: hr-benefits-setup-rates.md
-                - name: Vähennysten määrittäminen
-                  href: hr-benefits-setup-deductions.md
-                - name: Odotuspäivien määrittäminen
-                  href: hr-benefits-setup-waiting-days.md
-                - name: Odotuskausien määrittäminen
-                  href: hr-benefits-setup-waiting-periods.md
-                - name: Pyöristyssääntöjen määrittäminen
-                  href: hr-benefits-setup-rounding-rules.md
-                - name: Työsuhdeluokkien luominen
-                  href: hr-benefits-setup-employment-categories.md
-                - name: Työsuhdetyyppien luominen
-                  href: hr-benefits-setup-employment-types.md
-                - name: Työntekijän itsepalvelun määrittäminen
-                  href: hr-benefits-setup-employee-self-service.md
-                - name: Etuussuunnitelmien luominen
-                  items:
-                    - name: Etusuunnitelmien määrittäminen
-                      href: hr-benefits-plans-setup.md
-                    - name: Liukumahyvitysohjelmien määrittäminen
-                      href: hr-benefits-plans-flex-credit-programs.md
-                - name: Etusuunnitelmien käsittely
-                  items:
-                    - name: Rekisteröitymiskelpoisuuksien käsittely
-                      href: hr-benefits-process-enrollment-eligibility.md
-                    - name: Elämäntapahtumien käsittely
-                      href: hr-benefits-process-life-events.md
-                    - name: Elämäntapahtumien muutosten käsittely
-                      href: hr-benefits-process-life-event-changes.md
-                    - name: Elämäntapahtumien oikeutusten käsittely
-                      href: hr-benefits-process-life-event-eligibility.md
-                    - name: Hintamuutosten käsittely
-                      href: hr-benefits-process-rate-changes.md
-                - name: Työntekijäetujen valinta
-                  href: employee-select-benefits-ess.md
-                - name: ACA-raportointi
-                  href: hr-benefits-management-aca-reports.md
-                - name: Etulauseke
-                  href: hr-benefits-statement.md
-        - name: Kompensaation hallinta
-          items:
-            - name: Kompensaatiosuunnitelmien yleiskuvaus
-              href: hr-compensation-overview.md
-            - name: Kompensaatioruudukoiden määrittäminen
-              href: hr-compensation-grids.md
-            - name: Kompensaatiorakenteen ja -suunnitelman kehittäminen
-              href: hr-compensation-structure.md
-            - name: Kiinteiden kompensaatiosuunnitelmien luominen
-              href: hr-compensation-fixed-plans.md
-            - name: Muuttuvien kompensaatiosuunnitelmien luominen
-              href: hr-compensation-variable-plans.md
-            - name: Työntekijöiden rekisteröiminen kiinteän kompensaation suunnitelmaan
-              href: hr-compensation-enroll-employees-fixed.md
-            - name: Työntekijöiden rekisteröiminen muuttuvan kompensaation suunnitelmaan
-              href: hr-compensation-enroll-employees-variable.md
-            - name: Kompensaatioprosessin määrittäminen ja tulosten laskeminen
-              href: hr-compensation-define-process.md
-            - name: Kompensaatiosuunnitelmien käsittely
-              href: hr-compensation-process.md
-            - name: Työntekijän merkitseminen maksuvalmiiksi
-              href: hr-compensation-payroll.md
-        - name: Työntekijän kehitys
+        - name: Lomapyyntöjen hallinta Teamsissa
+          href: hr-teams-leave-app.md
+        - name: Työntekijöiden kehittäminen
           items:
             - name: Suorituksen hallinnan yleiskatsaus
               href: hr-develop-performance-management-overview.md
-            - name: Osaamisalueet
-              items:
-                - name: Osaamisalueiden määrittäminen
-                  href: hr-develop-skills.md
-                - name: Osaamisalueiden syöttäminen
-                  href: hr-develop-enter-skills.md
-                - name: Osaamisalueiden yhdistämismääritykset
-                  href: hr-develop-map-skills.md
-                - name: Työntekijöiden osaamisalueiden kohdentaminen
-                  href: hr-develop-skills.md
-            - name: Lisääminen suorituskyvyn kirjauskansioon
+            - name: Työntekijöiden osaamisalueiden kohdentaminen
+              href: hr-develop-skills.md
+            - name: Lisää suorituskyvyn kirjauskansioon
               href: hr-develop-add-performance-journal.md
             - name: Tavoitteen luominen
               href: hr-develop-create-goal.md
             - name: Suorituskykyarvion luominen
               href: hr-develop-create-performance-review.md
-        - name: Oppiminen
+        - name: Luo kursseja
           items:
             - name: Koulutuskurssien määrittäminen
               href: hr-learning-courses.md
@@ -748,283 +683,13 @@
               href: hr-learning-create-closed-ended-question.md
             - name: Riippuvaisen kysymyksen luominen
               href: hr-learning-depending-question.md
-        - name: Työnkulun järjestelmän käyttäminen
+        - name: Työntekijän ja esimiehen itsepalvelun määrittäminen
           items:
-            - name: Työnkulkujärjestelmän yleiskatsaus
-              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulkujärjestelmän arkkitehtuuri
-              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulun elementit
-              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulkutehtävät
-              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulkujen luominen
-              items:
-                - name: Työnkulkujen luonnin yleiskatsaus
-                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Työnkulkuominaisuuksien määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
-                - name: Manuaalisten tehtävien määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Automaattisten tehtävien määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Hyväksyntäprosessien määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Hyväksyntävaiheiden määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Menojen tarkistajien määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
-                - name: Manuaalisten päätösten määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Ehdollisten päätösten määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Rinnakkaisten tehtävien määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Rinnakkaishaarojen määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Rivinimikkeen työnkulkujen määrittäminen
-                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulkusanoman käsittelyn erätyön määrittäminen kriittiseksi
-              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulun työnimikkeiden delegointi
-              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulkuhistorian tarkasteleminen
-              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-            - name: Järjestelmän määrittäminen lähettämään työnkulkuun liittyvät sähköpostiviestit käyttäjille
-              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulkutyypit
-              items:
-                - name: Työnkulkutyypin luominen
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
-                - name: Työnkulkutyypin tarkistuslista
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
-                - name: Työnkulkuluokan luominen
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
-                - name: Kyselyn luominen työnkulkutyypille
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
-                - name: Luo uusi työnkulkutyyppi
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
-                - name: Työnkulkuasiakirja luokan luominen
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
-                - name: SubmitToWorkflow-luokan luominen
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                - name: Työntekijäasiakirjaluokan kytkeminen työnkulkutyyppiin
-                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulkutyyppien raportti
-              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-            - name: Työnkulun usein kysytyt kysymykset
-              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
-        - name: Työturvallisuus ja vaatimustenmukaisuus (Yhdysvallat)
-          items:
-            - name: I-9-lomakkeen vahvistus
-              href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-            - name: Työoikeuden vahvistaminen I-9-lomakkeella
-              href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-            - name: I-9-lomakkeen asiakirjatyyppien määrittäminen
-              href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-            - name: Americans with Disabilities Act -vammaislainsäädännön noudattaminen
-              href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-            - name: Työntekijän apuvälineiden hallinta
-              href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: Human Resourcesin kehitys
-      items:
-        - name: Yleiskatsaus
-          href: hr-developer-overview.md
-        - name: Laajentaminen Power Appsin ja Power Automaten avulla
-          href: hr-developer-power-apps.md
-        - name: Dataverse-taulut
-          href: hr-developer-entities.md
-        - name: Mukautetut kentät
-          href: hr-developer-custom-fields.md
-        - name: Määritä tietojen integrointi
-          items:
-            - name: Valitse tietojen integrointiteknologia
-              href: hr-admin-integration-choose-technology.md
-            - name: Määritä Dataverse-integrointi
-              href: hr-admin-integration-common-data-service.md
-            - name: Määritä Dataverse-virtuaalitaulukot
-              href: hr-admin-integration-common-data-service-virtual-entities.md
-            - name: Integroinnin määrittäminen Financen kanssa
-              href: hr-admin-integration-finance.md
-            - name: Integroinnin määrittäminen Dayforcen kanssa
-              href: hr-admin-integration-dayforce.md
-            - name: Toistuvan tietojen viennin sovelluksen luominen
-              href: hr-admin-integration-recurring-data-export.md
-            - name: Office-integraatio
-              items:
-                - name: Office-integraation opasohjelma
-                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
-                - name: Yksikkötietojen päivittäminen Excelissä
-                  href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
-                - name: Avaa Excelissä -kokemusten luominen
-                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
-                - name: Office-integraation vianmääritys
-                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
-        - name: Vianmäärityksen kehitys Dataversen virtuaalitaulukoiden avulla
-          items:
-            - name: Optimoi Dataversen virtuaalitaulukoiden kyselyt
-              href: hr-developer-optimize-virtual-table-queries.md
-            - name: Human Resources -virtuaalitaulukoiden usein kysytyt kysymykset
-              href: hr-admin-virtual-entity-faq.md
-        - name: Yksikön ohjelmointirajapinnan viite
-          items:
-            - name: Todennus
-              href: hr-developer-api-authentication.md
-            - name: Yksiköt
-              items:
-                - name: MyLeaveRequests
-                  items:
-                    - name: MyLeaveRequests – yleiskatsaus
-                      href: hr-developer-api-myleaverequests-overview.md
-                    - name: Lomapyynnön lähettäminen työnkulkuun
-                      href: hr-developer-api-myleaverequests-submit.md
-        - name: ATS-integroinnin ohjelmointirajapinta
-          items:
-            - name: Johdanto
-              href: hr-admin-integration-ats-api-introduction.md
-            - name: Palvelimelta palvelimelle -todennus ATS-integrointeja varten
-              href: hr-admin-integration-ats-api-s2s-auth.md
-            - name: Työhönottopyyntö ja siihen liittyvät yksiköt
-              items:
-                - name: Työhönottopyyntö
-                  href: hr-admin-integration-ats-api-recruiting-request.md
-                - name: Työhönottopyynnön koulutus
-                  href: hr-admin-integration-ats-api-recruiting-request-education.md
-                - name: Työhönottopyynnön sijainti
-                  href: hr-admin-integration-ats-api-recruiting-request-location.md
-                - name: Työhönottopyynnön toimi
-                  href: hr-admin-integration-ats-api-recruiting-request-position.md
-                - name: Työhönottopyynnön taito
-                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
-                - name: Esimerkkikysely työhönottopyyntöä varten
-                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
-            - name: Työhönottopyynnön asetusjoukot
-              items:
-                - name: Työn vapautustila
-                  href: hr-admin-integration-ats-api-job-exempt-status.md
-                - name: Työhönottopyynnön toimen tila
-                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
-                - name: Työhönottopyynnön tila
-                  href: hr-admin-integration-ats-api-recruiting-request-status.md
-                - name: Säännösten mukainen työluokka
-                  href: hr-admin-integration-ats-api-regulatory-job-category.md
-            - name: Palkattava hakija ja liittyvät yksiköt
-              items:
-                - name: Palkattava hakija
-                  href: hr-admin-integration-ats-api-candidate-to-hire.md
-                - name: Todistuksen tyyppi
-                  href: hr-admin-integration-ats-api-certificate-type.md
-                - name: Osapuolen yhteyshenkilö
-                  href: hr-admin-integration-ats-api-party-contact.md
-                - name: Henkilö
-                  href: hr-admin-integration-ats-api-person.md
-                - name: Henkilön osoite
-                  href: hr-admin-integration-ats-api-person-address.md
-                - name: Henkilön todistus
-                  href: hr-admin-integration-ats-api-person-certificate.md
-                - name: Henkilön koulutus
-                  href: hr-admin-integration-ats-api-person-education.md
-                - name: Henkilön henkilötunnus
-                  href: hr-admin-integration-ats-api-person-identification-number.md
-                - name: Henkilön ammattikokemus
-                  href: hr-admin-integration-ats-api-person-professional-experience.md
-                - name: Henkilön seulonta
-                  href: hr-admin-integration-ats-api-person-screening.md
-                - name: Henkilön taito
-                  href: hr-admin-integration-ats-api-person-skill.md
-                - name: Luokitustaso
-                  href: hr-admin-integration-ats-api-rating-level.md
-                - name: Seulontatyypit
-                  href: hr-admin-integration-ats-api-screening-types.md
-                - name: Esimerkkikysely palkattavaa hakijaa varten
-                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
-            - name: Hakijan asetusjoukot
-              items:
-                - name: Hakijatoimintojen integroinnin tulos
-                  href: hr-admin-integration-ats-api-applicant-integration-result.md
-                - name: Tyhjä Kyllä Ei
-                  href: hr-admin-integration-ats-api-blank-yes-no.md
-                - name: Valmistumisen tila
-                  href: hr-admin-integration-ats-api-completion-status.md
-                - name: Yhteyshenkilötyyppi
-                  href: hr-admin-integration-ats-api-contact-type.md
-                - name: Koulutuksen hyvitysperuste
-                  href: hr-admin-integration-ats-api-education-credit-basis.md
-                - name: Sukupuoli
-                  href: hr-admin-integration-ats-api-gender.md
-                - name: Siviilisääty
-                  href: hr-admin-integration-ats-api-marital-status.md
-                - name: Vuoden kuukaudet
-                  href: hr-admin-integration-ats-api-months-of-year.md
-                - name: Ei Kyllä
-                  href: hr-admin-integration-ats-api-no-yes.md
-                - name: Kausiyksikkö
-                  href: hr-admin-integration-ats-api-period-unit.md
-                - name: Seulontatiheys
-                  href: hr-admin-integration-ats-api-screening-frequency.md
-                - name: Seulontatiheyden luontilomake
-                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
-                - name: Taitotason tyyppi
-                  href: hr-admin-integration-ats-api-skill-level-type.md
-        - name: Palkanlaskennan integroinnin ohjelmointirajapinta
-          items:
-            - name: Johdanto
-              href: hr-admin-integration-payroll-api-introduction.md
-            - name: Palkanlaskennan yksiköiden luominen ja tarkistaminen
-              href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: Palkanlaskennan integroinnin parametrit
-              href: hr-admin-integration-payroll-api-parameters.md
-            - name: Palkanlaskennan yksiköt
-              items:
-                - name: Palkanlaskennan työntekijä
-                  href: hr-admin-integration-payroll-api-payroll-employee.md
-                - name: Palkanlaskennan työntekijän osoite
-                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
-                - name: Palkanlaskennan kiinteän kompensaation suunnitelma
-                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-                - name: Palkanlaskennan muuttuvan kompensaation suunnitelma
-                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
-                - name: Palkanlaskennan toimi
-                  href: hr-admin-integration-payroll-api-payroll-position.md
-                - name: Palkanlaskennan työ
-                  href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Lomiin ja poissaoloihin liittyvät yksiköt
-              items:
-                - name: Lomasaldo
-                  href: hr-admin-integration-payroll-api-leave-balance.md
-                - name: Lomatyyppi
-                  href: hr-admin-integration-payroll-api-leave-type.md
-                - name: Lomapyyntö
-                  href: hr-admin-integration-payroll-api-leave-request.md
-            - name: Etuihin liittyvät entiteetit
-              items:
-                - name: Palkanlaskennan työntekijän etusuunnitelma
-                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
-            - name: Muut entiteetit
-              items:
-                - name: Henkilön nimen historia
-                  href: hr-admin-integration-payroll-api-person-name-history.md
-                - name: Vaihtokurssi
-                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
-            - name: Asetusjoukot
-              items:
-                - name: Sukupuoli
-                  href: hr-admin-integration-payroll-api-gender.md
-                - name: Ei Kyllä
-                  href: hr-admin-integration-payroll-api-no-yes.md
-                - name: Palkkion tyyppi
-                  href: hr-admin-integration-payroll-api-award-type.md
-                - name: Käsittelyn tyyppi
-                  href: hr-admin-integration-payroll-api-process-type.md
-                - name: Etusuunnitelman tyypin kattavuus
-                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
-                - name: Edun työntekijäsuunnitelman tila
-                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
-    - name: Talous- ja toimintasovellusten kehittäminen ja hallinnointi
-      href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Finance
-      href: ../finance/index.md
-    - name: Dynamics 365 Supply Chain Management
-      href: ../supply-chain/index.md
-    - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
+            - name: Työntekijän ja esimiehen itsepalvelun yleiskatsaus
+              href: hr-employee-manager-self-service-overview.md
+            - name: Mukautettujen linkkien luominen esimiehen itsepalvelussa
+              href: hr-employee-manager-self-service-custom-links.md
+            - name: Työntekijän itsepalvelutyötilan nimen muuttaminen
+              href: hr-employee-self-service-workspace-name.md
+            - name: Muokkaa henkilökohtaisia tietoja
+              href: hr-employee-manager-self-service-edit-personal-information.md

@@ -1,36 +1,39 @@
 ---
 title: Luo myyntitilauksen laskut
-description: Tässä aiheessa käsitellään myyntitilauksen laskuttamista sekä laskujen yhdistämistä ja eräkäsittelyä.
+description: Tässä tehtävän ohjauksessa kuvataan myyntitilauksen laskuttaminen sekä laskujen yhdistäminen ja eräkäsittely.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: c504ef36f61613c7aa7db5a1e5ddba6e69cd7285
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394607"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442897"
 ---
 # <a name="create-sales-order-invoices"></a>Luo myyntitilauksen laskut
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa käsitellään myyntitilauksen laskuttamista sekä laskujen yhdistämistä ja eräkäsittelyä. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
+Tässä tehtävän ohjauksessa kuvataan myyntitilauksen laskuttaminen sekä laskujen yhdistäminen ja eräkäsittely. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Laskun luominen myyntitilauksesta
 1. Valitse **Siirtymisruutu > Moduulit > Myyntireskontra > Tilaukset > Myyntitilaukset, jotka on lähetetty mutta joita ei ole laskutettu.**
 2. Valitse myyntitilaus luettelosta. 
-3. Valitse **toimintoruudussa** **Lasku > Luo > Lasku**. Ota huomioon, että tälle myyntitilaukselle on liitetty useita pakkausluetteloita. Näkyvissä on vain sana *useita* pakkausluetteloiden numeroiden sijaan.  
+3. Valitse **toimintoruudussa** **Lasku > Luo > Lasku**. Ota huomioon, että tälle myyntitilaukselle on liitetty useita pakkausluetteloita. Näkyvissä on vain sana <multiple> pakkausluetteloiden numeroiden sijaan.  
 4. Laajenna **Parametrit**-osa.
     - Kirjauksen arvoksi on annettava Kyllä, jotta lasku kirjataan. Voit myös ottaa kirjauksen pois päältä ja vain tulostaa laskun. Saat kuitenkin saman tuloksen, kun luot proformalaskun laskun sijaan.  
     - Tätä vaihtoehtoa käytetään komentojonotöissä. Kysely suoritetaan, kun komentojonotyö suoritetaan.
@@ -65,6 +68,3 @@ Tässä aiheessa käsitellään myyntitilauksen laskuttamista sekä laskujen yhd
 10. Valitse **Peruuta**.
 11. Valitse **Kyllä**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

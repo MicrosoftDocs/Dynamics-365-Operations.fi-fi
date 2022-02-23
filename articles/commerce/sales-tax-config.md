@@ -2,12 +2,15 @@
 title: Arvonlisäveron laskeminen online-tilauksille
 description: Tässä ohjeaiheessa on yhteenveto eri online-tilaustyyppien arvonlisäveroryhmän valinnasta Dynamics 365 Commercessa.
 author: gvrmohanreddy
-ms.date: 04/02/2021
+manager: AnnBe
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,73 +18,68 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 5801bbfb5b5850cb4c9ae06140bff5adca9b368febdc06d69c538fc49f9ee40a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 40c20bf13779f73289e43df21b763e1b864686a7
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772958"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4530194"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Arvonlisäveron laskeminen online-tilauksille
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Tämä ohjeaihe sisältää yhteenvedon arvonlisäveroryhmän valinnasta eri online-tilaustyypeille joko kohteeseen perustuvien tai asiakastiliin perustuvien veroasetusten avulla. 
+Tässä ohjeaiheessa on yhteenveto eri online-tilaustyyppien arvonlisäveroryhmän valinnasta. 
 
-Haluat ehkä sähköisen kaupankäynnin kanavasi tukevan online-tilausten vaihtoehtoja, kuten toimittamista tai noutoa. Arvonlisäveron sovellettavuus perustuu online-asiakkaiden valitsemaan vaihtoehtoon. 
+Sähköisen kaupankäynnin kanava voi tarvita tuen online-tilausten vaihtoehdoille, kuten toimittamiselle tai noudolle. Arvonlisäveron sovellettavuus perustuu online-käyttäjien valitsemaan vaihtoehtoon. Kun sivuston asiakas haluaa ostaa nimikkeen verkosta ja saada sen toimitetuksi osoitteeseen, arvonlisävero määräytyy asiakkaan toimitusosoitteen veroryhmän asetuksen mukaan. Kun asiakas päättää noutaa ostetun nimikkeen myymälästä, arvonlisävero määräytyy noutomyymälän veroryhmän asetuksen mukaan. 
 
-## <a name="destination-based-taxes-for-online-orders"></a>Online-tilausten kohteeseen perustuvat verot
+## <a name="orders-shipped-to-a-customer-address"></a>Asiakkaan osoitteeseen toimitetut tilaukset 
 
-Yleensä asiakkaan osoitteisiin toimitettavien online-tilausten verot määräytyvät määränpään mukaan. Jokaisella arvonlisäveroryhmällä on vähittäismyynnin määränpäähän perustuva verokonfiguraatio, jossa yrityksesi voi määrittää määränpään tiedot, kuten maan/alueen, osavaltion, läänin ja kaupungin hierarkkisessa muodossa.
+Yleensä asiakkaan osoitteisiin toimitettavien online-tilausten verot määräytyvät määränpään mukaan. Jokaisella arvonlisäveroryhmällä on vähittäismyynnin määränpäähän perustuva verokonfiguraatio, jossa yrityksesi voi määrittää määränpään tiedot, kuten läänin/alueen, osavaltion, läänin ja kaupungin hierarkkisessa muodossa. Kun online-tilaus tehdään, Commercen veromoduuli käyttää jokaisen tilauksen rivinimikkeen toimitusosoitetta ja etsii arvonlisäveroryhmät, joilla on vastaavat kohteeseen perustuvat verokriteerit. Esimerkiksi online-tilauksessa, jonka rivinimikkeen toimitusosoite on San Francisco, Kalifornia, veromoduuli etsii arvonlisävero ryhmän ja arvonlisäverokoodin Kaliforniasta ja laskee sitten kunkin rivinimikkeen veron sen mukaisesti.  
 
-### <a name="orders-delivered-to-customer-address"></a>Asiakkaan osoitteeseen toimitetut tilaukset
+## <a name="customer-based-tax-groups"></a>Asiakaspohjaiset veroryhmät
 
-Kun online-tilaus tehdään, Commercen veromoduuli käyttää jokaisen tilauksen rivinimikkeen toimitusosoitetta ja etsii arvonlisäveroryhmät, joilla on vastaavat kohteeseen perustuvat verokriteerit. Esimerkiksi online-tilauksessa, jonka rivinimikkeen toimitusosoite on San Francisco, Kalifornia, veromoduuli etsii arvonlisävero ryhmän ja arvonlisäverokoodin Kaliforniasta ja laskee sitten kunkin rivinimikkeen veron sen mukaisesti.
+Commerce-pääkonttorisovelluksessa on kaksi paikkaa, joissa asiakkaan veroryhmät on konfiguroitu:
 
-### <a name="order-pick-up-in-store"></a>Tilauksen nouto myymälästä
+- **Asiakkaan profiili**
+- **Asiakkaan toimitusosoite**
 
-Jos tilausrivit on määritetty noudettaviksi myymälästä tai tien vierestä, valitun noutomyymälän veroryhmä otetaan käyttöön. Lisätietoja tietyn myymälän myyntiveron määrittämisestä on kohdassa [Muiden veroasetusten määrittäminen myymälöille](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>Jos asiakkaan profiilissa on määritetty veroryhmä
 
-## <a name="customer-account-based-taxes-for-online-orders"></a>Online-tilausten asiakastiliin perustuvat verot
+Asiakkaan profiilitietueeseen pääkonttorisovelluksessa voi olla määritetty arvonlisäveroryhmä, mutta online-tilauksissa veromoduuli ei käytä asiakkaan profiiliin konfiguroituja arvonlisäveroryhmiä. 
 
-Voi olla liiketoimintaskenaario, jossa haluat konfiguroida arvonlisäveroryhmän tietylle asiakastilille Commerce Headquarters -sovelluksessa. Pääkonttorissa on kaksi toimipaikkaa, joissa arvonlisävero voidaan konfiguroida asiakastilille. Näiden tietojen avaaminen tapahtuu asiakastietosivulla, jossa mennään ensin kohtaan **vähittäismyynti- ja kauppa \> Asiakkaat \> Kaikki asiakkaat** ja sitten valitaan asiakas.
+### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>Jos asiakkaan toimitusosoitteessa on määritetty veroryhmä
 
-Kaksi paikkaa, joissa arvonlisävero konfiguroidaan asiakastilille ovat:
+Jos asiakkaan toimitusosoitteen tietueessa on määritetty veroryhmä ja online-tilaus (tai rivinimike) toimitetaan asiakkaan toimitusosoitteeseen, veromoduuli käyttää asiakkaan osoitetietueeseen konfiguroituja veroryhmiä verolaskelmissa.
 
-- **Myyntiveroryhmä** asiakkaan tietosivun **Lasku ja toimitus** -pikavälilehdellä. 
-- **Myyntivero** **hallitse osoitteita** -sivun **Yleinen**-pikavälilehdellä. Voit avata osoitteen asiakkaan tietosivulta valitsemalla tietyn osoitteen **Osoitteet**-pikavälilehdistä ja valitsemalla sitten **Lisäasetukset**.
+#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>Veroryhmän määrittäminen asiakkaan toimitusosoitteen tietueessa
 
-> [!TIP]
-> Jos haluat käyttää online-asiakastilauksissa vain kohteeseen perustuvia veroja ja välttää asiakastiliin perustuvia veroja, varmista, että **Arvonlisäveroryhmä**-kenttä on tyhjä asiakkaan tietosivun **Lasku ja toimitus** -pikavälilehdessä. Varmista, että uudet asiakkaat, jotka rekisteröityvät online-kanavaa käyttäen, eivät peri arvonlisäveroryhmän asetuksia oletusasiakas- tai asiakasryhmän asetuksista, varmistamalla, että **arvonlisäveroryhmän** kenttä on myös tyhjä verkkokanavan oletusasiakasasetuksissa ja asiakasryhmän asetuksissa (**Vähittäismyynti ja kauppa \> asiakkaat \> asiakasryhmät**).
+Voit määrittää asiakkaan toimitusosoitetietueen veroryhmän Commerce-pääkonttorisovelluksessa seuraavasti:
 
-## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>Kohteeseen perustuvan veron tai asiakastiliin perustuvan veron sovellevuuden määrittäminen 
+1. Siirry kohtaan **Kaikki asiakkaat** ja valitse haluamasi asiakas. 
+1. Valitse **Osoitteet**-pikavälilehdessä haluamasi osoite ja valitse sitten **Lisää vaihtoehtoja \> Lisäasetukset**. 
+1. Määritä arvonlisäveron arvo **Osoitteiden hallinta**-sivun **Yleiset**-välilehdessä.
 
-Seuraavassa taulukossa on tietoja siitä, käytetäänkö online-tilauksissa kohteeseen perustuvia veroja vai asiakastiliin perustuvia veroja. 
+> [!NOTE]
+> Veroryhmä määritetään tilausrivin toimitusosoitteen avulla, ja kohteeseen perustuvat verot määritetään itse veroryhmässä. Lisätietoja on kohdassa [Määränpäähän perustuvien verojen määrittäminen online-myymälöille](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
-| Asiakastyyppi | Toimitusosoite                   | Asiakas > Lasku ja toimitus > myyntiveroryhmä? | Osoite pääkonttorin asiakastilillä? | Asiakkaan osoite > lisäasetukset > Yleiset > myyntiveroryhmä?                                              | Arvonlisäveroryhmä otettu käyttöön      |
-|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
-| Vierailija         | Manhattan, NY                      | Ei (tyhjä)                                                | Ei (tyhjä)                              | Ei (tyhjä)                                                                                                   | NY (Kohteeseen perustuvat verot) |
-| Kirjautunut     | Austin, TX                          | Ei (tyhjä)                                             | Kyllä                               | None<br/><br/>Uusi osoite, joka on lisätty online-kanavan kautta.                                                            | TX (Kohteeseen perustuvat verot) |
-| Kirjautunut     | San Francisco, CA (Nouto myymälästä) | Kyllä (NY)                                            | Ei käytettävissä                              | Ei käytettävissä                                                                                                    | CA (Kohteeseen perustuvat verot) |
-| Kirjautunut     | Houston, TX                         | Kyllä (NY)                                            | Kyllä                               | Kyllä (NY)<br/><br/>Uusi osoite, joka on lisätty online-kanavan kautta ja arvonlisäveroryhmä periytyy asiakastililtä. | NY (asiakastiliin perustuvat verot)  |
-| Kirjautunut     | Austin, TX                          | Kyllä (NY)                                            | Kyllä                               | Kyllä (NY)<br/><br/>Uusi osoite, joka on lisätty online-kanavan kautta ja arvonlisäveroryhmä periytyy asiakastililtä. | NY (asiakastiliin perustuvat verot)  |
-| Kirjautunut     | Sarasota, FL                       | Kyllä (NY)                                            | Kyllä                               | Kyllä (WA)<br/><br/>Määritä manuaalisesti WA-arvoksi.                                                                          | WA (asiakastiliin perustuvat verot)  |
-| Kirjautunut     | Sarasota, FL                       | Ei (tyhjä)                                                | Kyllä                               | Kyllä (WA)<br/><br/>Määritä manuaalisesti WA-arvoksi.                                                                          | WA (asiakastiliin perustuvat verot)  |
+## <a name="order-pickup-in-store"></a>Tilauksen nouto myymälästä
+
+Jos tilausrivit on määritetty noudettaviksi myymälästä tai tien vierestä, valitun noutomyymälän veroryhmä otetaan käyttöön. Lisätietoja tietyn myymälän veroryhmän konfiguroinnista on kohdassa [Muiden veroasetusten määrittäminen myymälöille](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+
+> [!NOTE]
+> Kun tilausrivi noudetaan myymälästä, veromoduuli ohittaa asiakkaan osoitteen veroasetukset (jos se on määritetty) ja noutomyymälän verokonfiguraatio otetaan käyttöön. 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Aseta verot onlinekauppoja varten määränpään perusteella](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
+[Arvonlisäveron yleiskatsaus](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
 
-[Arvonlisäveron yleiskatsaus](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Arvonlisäveron laskentatavat Alkuperä-kentässä](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
 
-[Arvonlisäveron laskentatavat Alkuperä-kentässä](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Arvonlisäveron määrittäminen ja ohitukset](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
 
-[Arvonlisäveron määrittäminen ja ohitukset](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
-
-[Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+[Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
 
 [Verovapauden laskenta](tax-exempt-price-inclusive.md) 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

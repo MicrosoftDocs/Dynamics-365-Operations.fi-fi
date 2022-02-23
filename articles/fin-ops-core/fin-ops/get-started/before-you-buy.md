@@ -2,9 +2,11 @@
 title: Ennen ostamista
 description: Vaiheittaiset ohjeet, joita käytetään harkittaessa Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin tai Dynamics 365 Commercen ostoa.
 author: ShellyBakke
-ms.date: 11/30/2021
+manager: AnnBe
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874581"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798546"
 ---
 # <a name="before-you-buy"></a>Ennen ostamista
 
@@ -42,7 +44,7 @@ Seuraavat seikat on otettava huomioon, kun valitset paikallisen käyttöönottov
 - [Paikallisten käyttöönottojen järjestelmävaatimukset](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> Paikallisia käyttöönottoja ei tueta missään julkisessa pilvi-infrastruktuurissa, ei myöskään Microsoft Azuressa. Niiden suoritusta kuitenkin tuetaan [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/)- ja [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) -sovelluksissa.
+> Paikallisia käyttöönottoja ei tueta missään julkisessa pilvi-infrastruktuurissa, ei myöskään Microsoft Azuressa.
 
 Lisätietoja on kohdassa [Käytön asetukset](../../dev-itpro/deployment/choose-deployment-type.md)
 
@@ -86,11 +88,8 @@ Lisäresursseja:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Neljäs vaihe: Lisätietoja FastTrackista ja käyttöönoton suunnitteleminen
 
-Microsoft FastTrack for Dynamics 365 on asiakaspalvelu, joka auttaa asiakkaita siirtymään Dynamics 365:n käyttäjiksi sujuvasti ja luottavaisesti, jotta saat liiketoiminnasta arvoa nopeammin. FastTrack-ohjelmaan osallistujat saavat ohjeita parhaista käytännöistä ja onnistuneiden käyttöönottojen suunnittelemisesta. Saat myös tietää, miten uusia käyttäjiä voidaan ottaa käyttöön ja toimintoja laajentaa – omaan tahtiisi. Saat käyttöösi myös Microsoftin tekniset resurssit, jotka ovat sitoutuneet siihen, että Dynamics 365:n käyttökokemus on onnistunut. Lisätietoja on kohdassa [Microsoft FastTrack](/dynamics365/fasttrack/).
+Microsoft FastTrack for Dynamics 365 on asiakaspalvelu, joka auttaa asiakkaita siirtymään Dynamics 365:n käyttäjiksi sujuvasti ja luottavaisesti, jotta saat liiketoiminnasta arvoa nopeammin. FastTrack-ohjelmaan osallistujat saavat ohjeita parhaista käytännöistä ja onnistuneiden käyttöönottojen suunnittelemisesta. Saat myös tietää, miten uusia käyttäjiä voidaan ottaa käyttöön ja toimintoja laajentaa – omaan tahtiisi. Saat käyttöösi myös Microsoftin tekniset resurssit, jotka ovat sitoutuneet siihen, että Dynamics 365:n käyttökokemus on onnistunut. Lisätietoja on kohdassa [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Päivitys Dynamics AX 2012:sta tai siirtyminen AX 2009:stä
 
 Jos olet asiakas, joka päivittää Microsoft Dynamics AX 2012:sta tai siirtyy Microsoft Dynamics AX 2009:stä, sinulla on ehkä oikeus pidempään kokeilujaksoon. Pyydä lisätietoja lähettämällä viesti osoitteeseen <daxcf@microsoft.com>.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

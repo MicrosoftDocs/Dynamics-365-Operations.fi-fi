@@ -2,12 +2,15 @@
 title: Laskun maksutapojen määrittäminen
 description: Tässä aiheessa kuvataan, miten voit konfiguroida Dynamics 365 Commercein tukemaan erilaisia laskun maksamiseen liittyviä tilanteita.
 author: josaw1
+manager: AnnBe
 ms.date: 11/14/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9dc4ff9241cec4033b65f15449c233bdb43233c0dce1ab04a2cd66baf5272a6b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fe8fde32549568812a724311781d3515ef7036c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772982"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4458947"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>Laskun maksutapojen määrittäminen
 
@@ -33,7 +36,7 @@ Dynamics 365 Commercein Maksa lasku -toiminnallisuutta on laajennettu tukemaan s
 
 Näiden ominaisuuksien käyttöönottamiseksi myymälöiden toimintoprofiili on määritettävä alla kuvatulla tavalla.
 
-1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit** ja valitse profiili, joka on linkitetty myymälöihin, joita haluat muutoksen koskevan.
+1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit** ja valitse profiili, joka on linkitetty myymälöihin, joita haluat muutoksen koskevan.
 2. Määritä **Toiminnot**-välilehdessä seuraavat parametrit tarpeen mukaan.
 
     - **Myyntitilauslasku** – Valitse **Kyllä**, jotta käyttäjät voivat maksaa yhden tai useamman myyntitilaukseen perustuvan laskun yhdessä myyntipistetapahtumassa.
@@ -43,6 +46,3 @@ Näiden ominaisuuksien käyttöönottamiseksi myymälöiden toimintoprofiili on 
 
 > [!NOTE]
 > Osittaisten summien maksua tai selvitystä ei vielä tueta.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

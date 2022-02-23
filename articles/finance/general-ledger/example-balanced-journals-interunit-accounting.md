@@ -1,10 +1,12 @@
 ---
 title: Tasapainotetut kirjauskansiot yksiköiden väliselle kirjanpidolle
 description: Tässä artikkelissa esitellään, kuinka kirjauskansio täsmäytetään automaattisesti, kun täsmäyttävä taloushallinnon dimensio on valittu Kirjanpito-sivulla.
-author: kweekley
+author: ShylaThompson
+manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 15791
 ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f6ffccb2ee504f182250dbf6d316823efafddf5
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: f189d1ed5b0917c9975587accc2275556ceb8143
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726891"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968751"
 ---
 # <a name="balanced-journals-for-interunit-accounting"></a>Tasapainotetut kirjauskansiot yksiköiden väliselle kirjanpidolle
 
@@ -30,7 +32,7 @@ Tässä artikkelissa esitellään, kuinka kirjauskansio täsmäytetään automaa
 
 Jos kirjanpitomerkinnät eivät täsmää taloushallinnon dimension arvojen tasolla, kirjauskansion tasapainottamiseksi luodaan automaattisesti lisäkirjanpitomerkintöjä. Nämä kirjanpitomerkinnät käyttävät **Automaattisten tapahtumien tilit** -sivulla olevia **Yksiköiden välinen – debet**- ja **Yksiköiden välinen – kredit** -kirjaustyyppejä päätilin määrittämiseen. Esimerkki: Liiketoimintayksikkö, joka on kirjanpitotilin toinen segmentti, valitaan täsmäyttäväksi taloushallinnon dimensioksi, ja seuraavat kirjanpitomerkinnät on tarkoitus luoda.
 
-| &nbsp;               | &nbsp;    |
+|                      |           |
 |----------------------|-----------|
 | 6100 – MSP – OU\_256 | 100,00 DR |
 | 6100 – NY – OU\_249  | 100,00 DR |
@@ -43,7 +45,7 @@ Tässä tapauksessa määritetään seuraavat saldot:
 
 Tällöin seuraavat kirjanpitomerkinnät luodaan automaattisesti, jotta kirjauskansio täsmää taloushallinnon dimensioiden arvojen tasolla.
 
-| &nbsp;                            | &nbsp;    |
+|                                   |           |
 |-----------------------------------|-----------|
 | (Yksiköiden välinen – debet) – MSP – OU\_256 | 100,00 DR |
 | (Yksiköiden välinen – kredit) – NY – OU\_249 | 100,00 CR |
@@ -52,6 +54,3 @@ Tällöin seuraavat kirjanpitomerkinnät luodaan automaattisesti, jotta kirjausk
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

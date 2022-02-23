@@ -2,13 +2,16 @@
 title: Puhelinkeskuksen petosilmoitusten määrittäminen ja niiden käyttäminen
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää säännöt, jotka hälyttävät asiakaspalvelun edustajalle, kun tilausten käsittelyn aikana havaitaan mahdollisia vilpillisiä tietoja. Voit määrittää tietyt koodit, joilla epäilyttävät tilaukset asetetaan automaattisesti tai manuaalisesti pitoon.
 author: josaw1
+manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 79103
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763665"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412050"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Puhelinkeskuksen petosilmoitusten määrittäminen ja niiden käyttäminen
 
@@ -34,13 +37,13 @@ Tässä ohjeaiheessa kerrotaan, miten ehdot ja säännöt määritetään siten,
 
 ## <a name="turning-on-the-fraud-check-feature"></a>Petostarkistustoiminnon ottaminen käyttöön
 
-Petostarkistustoimintoa varten kanavan **Ota käyttöön tilausten viimeistely** -asetukseksi on valittava **Kyllä**, kun puhelinkeskuskanava on [määritetty](/dynamics365/unified-operations/retail/set-up-order-processing-options). Kun tilausten viimeistely on otettu käyttöön, puhelinkeskuksen käyttäjien valittava **Viimeistele** kaikkien luotujen myyntitilausten myyntitilaussivulla. Viimeistele-toiminto avaa **Myyntitilauksen yhteenveto** -sivun. Kun käyttäjät ovat antaneet pakolliset maksutiedot **Myyntitilauksen yhteenveto** -sivulla, he viimeistelevät tilauksen valitsemalla **Lähetä**. Tilauksen lähettäminen käynnistää petostarkistustoiminnon ja järjestelmässä mahdollisesti aktiivisina olevien sääntöjen mukaiset oikeellisuustarkistukset tehdään.
+Petostarkistustoimintoa varten kanavan **Ota käyttöön tilausten viimeistely** -asetukseksi on valittava **Kyllä**, kun puhelinkeskuskanava on [määritetty](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). Kun tilausten viimeistely on otettu käyttöön, puhelinkeskuksen käyttäjien valittava **Viimeistele** kaikkien luotujen myyntitilausten myyntitilaussivulla. Viimeistele-toiminto avaa **Myyntitilauksen yhteenveto** -sivun. Kun käyttäjät ovat antaneet pakolliset maksutiedot **Myyntitilauksen yhteenveto** -sivulla, he viimeistelevät tilauksen valitsemalla **Lähetä**. Tilauksen lähettäminen käynnistää petostarkistustoiminnon ja järjestelmässä mahdollisesti aktiivisina olevien sääntöjen mukaiset oikeellisuustarkistukset tehdään.
 
-Valitsemalla **Lähetä** puhelinkeskuksen käyttäjät voivat asettaa myyntitilaukset pitoon petostarkistusta varten myös manuaalisesti. Myyntitilaus asetetaan manuaalisesti pitoon valitsemalla **Myyntitilauksen yhteenveto** -sivulla **Pito** \> **Manuaalinen petospito**. Sinua pyydetään sitten lisäämään kommentti, joka selittää, miksi tilaus asetettiin pitoon. Kommentti näkyy [tilausten pidon](/dynamics365/unified-operations/retail/work-with-order-holds) työtilassa. Se selventää pidossa olevia tilauksia arvioivalle käyttäjälle, miksi pito asetettiin ja voidaanko tilaus vapauttaa.
+Valitsemalla **Lähetä** puhelinkeskuksen käyttäjät voivat asettaa myyntitilaukset pitoon petostarkistusta varten myös manuaalisesti. Myyntitilaus asetetaan manuaalisesti pitoon valitsemalla **Myyntitilauksen yhteenveto** -sivulla **Pito** \> **Manuaalinen petospito**. Sinua pyydetään sitten lisäämään kommentti, joka selittää, miksi tilaus asetettiin pitoon. Kommentti näkyy [tilausten pidon](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) työtilassa. Se selventää pidossa olevia tilauksia arvioivalle käyttäjälle, miksi pito asetettiin ja voidaanko tilaus vapauttaa.
 
 Kanavan **Ota käyttöön tilausten viimeistely** -asetuksen määrityksen lisäksi petostarkistustoiminto on määritettävä myös puhelinkeskuksen parametreissa. Valitse **Retail ja Commerce** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen parametrit**. Valitse **Puhelinkeskuksen parametrit** -sivun **Pidot**-välilehdessä **Petostarkistus**-asetukseksi **Kyllä**.
 
-Määritä **Pidot**-välilehdessä myös [pitokoodit](/dynamics365/unified-operations/retail/work-with-order-holds), joita käyttämällä tilaus voidaan asettaa manuaalisesti tai automaattisesti pitoon petostarkistusta varten. Määritä pitokoodit **Manuaalinen petospitokoodi**- ja **Petospitokoodi**-kentissä. Voi olla kätevää luoda kaksi yksilöivää pitokoodia, jotta pidon työtilassa työskentelevät käyttäjät voivat helposti suodattaa ja erottaa automaattisesti pidot manuaalisista pidoista.
+Määritä **Pidot**-välilehdessä myös [pitokoodit](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), joita käyttämällä tilaus voidaan asettaa manuaalisesti tai automaattisesti pitoon petostarkistusta varten. Määritä pitokoodit **Manuaalinen petospitokoodi**- ja **Petospitokoodi**-kentissä. Voi olla kätevää luoda kaksi yksilöivää pitokoodia, jotta pidon työtilassa työskentelevät käyttäjät voivat helposti suodattaa ja erottaa automaattisesti pidot manuaalisista pidoista.
 
 Jotta petostarkistustoiminto toimisi tehokkaasti, myös **Vähimmäispisteytys**-kenttä on määritettävä. Jokaisella järjestelmässä määritetyllä ehdolla ja säännöllä on pistemäärä. Kun myyntitilauksesta tarkistetaan petosvastaavuuksia ja mahdollisia vastaavuuksia löytyy, pistemäärät lasketaan yhteen. Tällä tavoin saadaan tilauksen petoksen kokonaispistemäärän. Jos tilauksen petoksen kokonaispistemäärä on suurempi kuin **Vähimmäispisteytys**-kentän arvo, tilaus asetetaan automaattisesti pitoon. Voit halutessasi käyttää muita **Pidot**-välilehden pisteytykseen liittyviä kenttiä ja määrittää niiden avulla sähköpostin, postinumeron ja laajennetun postinumeron pisteytyksen. Jos et määritä minkään tällaisen staattisen petosehdon pisteytystä, kun määrität niitä **Staattiset petostiedot** -sivulla, järjestelmä pisteyttää ne käyttämällä **Puhelinkeskuksen parametrit** -sivun **Pidot**-välilehdellä määritettyjä oletuspistemääriä.
 
@@ -65,7 +68,4 @@ Tilaus on tallennettu, mutta siihen on määritetty **Älä käsittele** -merkin
 
 Voit tarkastella ja hallinta petostarkistusta varten pitoon asetettuja tilauksia valitsemalla **Retail ja Commerce** \> **Asiakkaat** \> **Tilausten pidot**. Valitse **Tilausten pidot** -sivulla luettelosta merkintä ja valitse sitten **Tilaus pidossa**. Näet nyt lisätietoja, kuten tietoja pidon syystä. **Petoksen tiedot** -pikavälilehdessä on tietoja järjestelmän petosehdoista, joille tilauksesta löytyi vastine, ja käytetty pisteytys. Jos tilaus on asetettu manuaaliseen pitoon, voit tarkastella tilauksen pitoon asettaneen käyttäjän antamia tietoja. Nämä tiedot ovat **Huomautukset**-pikavälilehden **Petoksen huomautukset** -osassa.
 
-Lisätietoja tilauksen pitojen käyttämisestä on kohdassa [Tilauksen pidot](/dynamics365/unified-operations/retail/work-with-order-holds).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Lisätietoja tilauksen pitojen käyttämisestä on kohdassa [Tilauksen pidot](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).

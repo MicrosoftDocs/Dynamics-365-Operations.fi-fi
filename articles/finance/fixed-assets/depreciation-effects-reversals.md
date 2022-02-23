@@ -1,26 +1,29 @@
 ---
 title: Poistojen vaikutukset ja peruutukset
 description: Tässä artikkelissa kuvataan käyttöomaisuustapahtuman peruuttamisen mahdolliset vaikutukset.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTrans
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9a8e5b1b7d468dbc37b295087815937fb49ad44f
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: dd4c4a9e7e89b34b1311b38310877b45e4d95b22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674547"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442654"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Poistojen vaikutukset ja peruutukset
 
@@ -30,7 +33,7 @@ Tässä artikkelissa kuvataan käyttöomaisuustapahtuman peruuttamisen mahdollis
 
 Voit palauttaa käyttöomaisuustapahtumia sekä kyseiseen käyttöomaisuuserään liittyviä tapahtumia. Voit myös peruuttaa palautetun tapahtuman. 
 
-Voit peruuttaa tai palauttaa tapahtuman, joka ei ollut viimeisin omaisuuden kirjaan kirjattu tapahtuma. Määritä ensin, onko poistotapahtumia kirjattu peruutettavan tapahtuman jälkeen. Tämä vaihe on tarpeen, koska poistoa ei lasketa uudelleen, kun palautat tapahtuman. Niinpä poisto jää usein liian suureksi tai liian pieneksi peruutuksen jälkeen, kuten esimerkeissä osoitetaan. 
+Voit peruuttaa tai palauttaa tapahtuman, joka ei ollut viimeisin omaisuuden kirjaan kirjattu tapahtuma. Määritä ensin, onko poistotapahtumia kirjattu peruutettavan tapahtuman jälkeen. Tämä johtuu siitä, että poistoa ei lasketa uudelleen, kun palautat tapahtuman. Niinpä poisto jää usein liian suureksi tai liian pieneksi peruutuksen jälkeen, kuten esimerkeissä osoitetaan. 
 
 Voit varmistaa, että poiston määrä säilyy oikeana tapahtumaa palautettaessa, kun et jatka palautustoimintoa, jos näyttöön tulee sanoma, jonka mukaan poistoa ei lasketa uudelleen. Palauta sen sijaan ensin poistotapahtuma, joka on kirjattu palautettavan tapahtuman jälkeen, ja jatka sitten tapahtuman palautusta. Tällöin järjestelmä ei varoita poiston uudelleenlaskennasta ja voit jatkaa palautusta. 
 
@@ -86,12 +89,10 @@ Poisto raportoidaan 16,95 yksikköä liian pieneksi (983,62 - 966,67).
 
 
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
 [Käyttöomaisuuden poisto](fixed-asset-depreciation.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,30 +2,35 @@
 title: Tapoja lisästä sisältöä
 description: Tässä ohjeaiheessa käsitellään yleisesti sisällönhallinnan aloittamista käyttämällä Microsoft Dynamics 365 Commercen sivustonmuodostimen verkonmuokkaustyökaluja sekä annetaan joitakin asiaan liittyviä linkkejä.
 author: phinneyridge
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8a2dbb7bc7659e2e23b0ba6e2b5645dbe508ef9c9bda10df3bad8d04a6cfb32
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 802a41b8c55e65eee58d26137c2f160b69847010
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727675"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411918"
 ---
 # <a name="ways-to-add-content"></a>Tapoja lisästä sisältöä
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään yleisesti sisällönhallintaa käyttämällä Microsoft Dynamics 365 Commercen sivustonmuodostimen verkonmuokkaustyökaluja sekä annetaan linkkejä asiaan liittyvään ohjeistukseen.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Sivuston ulkoasua, ulkoasua ja sisältöä voi muuttaa monella tavalla. Tarvittavan mukautustason mukaan monien näiden muutosten toteuttaminen on mahdollista myös muille kuin kehittäjälle käyttämällä sivustonmuodostinta, joka on Dynamics 365 Commerceen sisältävä verkonmuokkaustyökalupaketti. Sivustonmuodostimessa voi muodostaa malleja, valita teemoja sekä valita ja määrittää moduuleja koodia kirjoittamatta. Sen sijaan kehitystaitoja vaaditaan uuden teeman tai moduulin luomisessa, koska sähköisen kaupankäynnin SDK:n ja Microsoft Dynamics Lifecycle Services (LCS) -palvelun kehitystyönkulkua on käytettävä.
 
@@ -52,6 +57,3 @@ Aloita valitsemalla jokin seuraavista ohjeaiheista.
 [Asiakirjan tilat ja elinkaari](document-states-overview.md)
 
 [Kanavienvälisen jakamisen käyttöönottaminen ja käyttäminen](cross-channel-sharing.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

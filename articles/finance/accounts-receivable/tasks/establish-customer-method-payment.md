@@ -2,23 +2,26 @@
 title: Määritä asiakkaan maksutapa
 description: Tässä ohjeaiheessa käsitellään, kuinka maksutapa luodaan asiakasmaksuille.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0dd9fb37c733730360c78b702c62adadfdc6bd476ba4c436da08c86a9ad7ff55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b9960c3fdf0d65be19e28dbb41913a310ae7530
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762136"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442761"
 ---
 # <a name="establish-customer-method-of-payment"></a>Määritä asiakkaan maksutapa
 
@@ -43,6 +46,3 @@ Tässä ohjeaiheessa käsitellään, kuinka maksutapa luodaan asiakasmaksuille. 
 15. Määritä **Maksun määritteet** -välilehden avulla, mitä maksumääritteitä haluat käyttää tässä maksutavassa.
 16. Valitse **Tallenna**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

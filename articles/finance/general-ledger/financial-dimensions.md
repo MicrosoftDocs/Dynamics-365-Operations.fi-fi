@@ -2,24 +2,27 @@
 title: Taloushallinnon dimensiot
 description: Tässä ohjeaiheessa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä.
 author: aprilolson
+manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
 ems.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 25871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d5de5b58f0d498c4766659671d43fdb216cd6a870345509505b5a6bc19bdd4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0715d3e4e4cb167c55d9c7d98cdf599187bf3b43
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754191"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442884"
 ---
 # <a name="financial-dimensions"></a>Taloushallinnon dimensiot
 
@@ -31,7 +34,7 @@ Luo **Taloushallinnon dimensiot** -sivun avulla tilikartan tilisegmentteinä kä
 
 Kun taloushallinnon dimensiot on luotu, voit liittää jokaiselle taloushallinnon dimensiolle lisää ominaisuuksia **Taloushallinnon dimension arvot** -sivulla.
 
-Voit käyttää taloushallinnon dimensiota yritysten esittämiseen. Sinun ei tarvitse luoda yrityksiä Dynamics 365 Financessa. Taloushallinnon dimensioita ei kuitenkaan ole suunniteltu käsittelemään yritysten operatiivisia tai liiketoiminnan tarpeita. Financen yksiköiden välisen kirjanpidon toiminnallisuus on suunniteltu käsittelemään vain jokaisen tapahtuman luomat kirjanpitomerkinnät.
+Voit käyttää taloushallinnon dimensiota yritysten esittämiseen. Sinun ei tarvitse luoda yrityksiä Dynamics 365 Financeissa. Taloushallinnon dimensioita ei kuitenkaan ole suunniteltu käsittelemään yritysten operatiivisia tai liiketoiminnan tarpeita. Financen yksiköiden välisen kirjanpidon toiminnallisuus on suunniteltu käsittelemään vain jokaisen tapahtuman luomat kirjanpitomerkinnät.
 
 Ennen kuin määrität taloushallinnon dimensiot yrityksiksi, arvioi liiketoimintaprosessisi seuraavilla alueilla ja selvitä, voiko tätä asetusta käyttää organisaatiossasi:
 
@@ -137,6 +140,3 @@ Lisätietoja on seuraavissa aiheissa:
 
 - [Määritä taloushallinnon dimensiot](tasks/define-financial-dimensions.md)
 - [Ylläpidä taloushallinnon dimension oletusmalleja](tasks/maintain-financial-dimension-default-templates.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

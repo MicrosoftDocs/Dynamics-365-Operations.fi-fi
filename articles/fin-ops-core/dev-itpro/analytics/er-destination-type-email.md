@@ -1,10 +1,12 @@
 ---
 title: Sähköpostin ER-kohteen tyyppi
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla määritetään sähköpostikohde.
+description: Tässä aiheessa kerrotaan, miten kullekin lähteviä asiakirjoja luomaan määritetylle sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-komponentille määritetään sähköpostikohde.
 author: NickSelin
-ms.date: 08/03/2021
+manager: AnnBe
+ms.date: 12/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595200"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690123"
 ---
 # <a name="email-er-destination-type"></a>Sähköpostin ER-kohteen tyyppi
 
@@ -42,59 +44,28 @@ Voit myös [ryhmitellä](#grouping) useita **Kansion**- tai **Tiedosto**-kompone
 
 Useita komponenttiryhmiä voidaan määrittää yksittäiselle ER-muodon määritykselle. Tällä tavoin voit määrittää sähköpostikohteen jokaiselle komponenttiryhmälle ja sähköpostikohteen jokaiselle komponentille.
 
-## <a name="enable-an-email-destination"></a>Sähköpostikohteen ottaminen käyttöön
-
-Yksi tulostiedosto tai useita tulostiedostoja voidaan lähettää sähköpostitse seuraavien ohjeiden mukaan.
-
-1. Valitse ruudukossa osa tai osaryhmä **Sähköisen raportoinnin kohde** -sivun **Tiedostokohde**-pikavälilehdessä.
-2. Valitse **Asetukset** ja määritä sitten **Kohdeasetukset**-valintaikkunan **Sähköposti**-välilehdessä **Käytössä**-asetukseksi **Kyllä**.
-
-[![Sähköpostikohteen Käytössä-asetuksen arvon määrittäminen arvoksi Kyllä.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
-
 ## <a name="configure-an-email-destination"></a>Sähköpostikohteen määrittäminen
 
-### <a name="email-content"></a>Sähköpostiviestin sisältö
+Jos haluat lähettää tulostetiedoston tai useita tulostetiedostoja sähköpostitse, valitse **Sähköisen raportoinnin kohde** -sivun **Tiedostokohde**-pikavälilehdessä komponentti tai komponenttien ryhmä ruudukosta ja valitse sitten **Asetukset**. Aseta ilmestyvän **Kohdeasetukset**-dialogi-ikkunan **Sähköposti**-välilehdessä **Käytössä**-asetukseksi **Kyllä**. Voit tämän jälkeen määrittää sähköpostin vastaanottajat sekä muokata sähköpostin aihetta ja tekstiä. Voit joko määrittää vakiotekstin sähköpostiviestin aiheelle ja tekstille tai käyttää ER-[kaavoja](er-formula-language.md) luodaksesi sähköpostitekstejä dynaamisesti.
 
-Sähköpostiviestin aihetta ja tekstiä on helppo muokata.
+Voit määrittää sähköisen raportoinnin sähköpostiosoitteet kahdella tavalla. Määritys voidaan suorittaa loppuun samalla tavalla kuin Tulostuksenhallinta-ominaisuus suorittaa sen loppuun, tai voit ratkaista sähköpostiosoitteen käyttämällä suoraa viitettä ER-määritykseen kaavan kautta.
 
-Kirjoita **Aihe**-kenttään sähköpostin aiheen teksti, joka näkyy suorituksen aikana luodun sähköisen viestin aihekentässä. Kirjoita **Teksti**-kenttään sähköpostin varsinainen teksti, joka näkyy suorituksen aikana luodun sähköisen viestin tekstikentässä. Sähköpostiviestin aiheen ja tekstinosan vakioteksti voidaan määrittää tai sähköpostitekstejä voidaan luoda dynaamisesti suorituksen aikana ER-[kaavojen](er-formula-language.md) avulla. Määritetyn kaavan on palautettava [Merkkijono](er-formula-supported-data-types-primitive.md#string)-tyyppinen arvo.
-
-Sähköpostin tekstiosassa käytetään TEXT- tai HTML-muotoa sähköpostiohjelman mukaan. Voit käyttää mitä tahansa asettelua, tyyliä ja brändäystä, joiden käytön HTML ja CSS-tyylisivut sallivat.
-
-> [!NOTE]
-> Sähköpostiohjelmissa on asettelu- ja tyylirajoituksia, jotka voivat edellyttää viestin tekstissä käytettävän HTML-koodin ja CSS-tyylisivujen muokkaamista. Tämän vuoksi kannattaa tutustua sellaisen HTML-koodin luomisen parhaisiin käytäntöihin, joita suositut sähköpostiohjelmat tukevat.
->
-> Toteuta rivinvaihto käyttämällä tekstiosan muotoilun mukaista koodausta. Lisätietoja on [Merkkijono](er-formula-supported-data-types-primitive.md#string)-tietotyypin määritelmässä.
-
-### <a name="email-addresses"></a>Sähköpostiosoitteet
-
-Sähköpostin lähettäjä ja sähköpostin vastaanottajat voidaan määrittää. Sähköposti lähetetään oletusarvoisesti nykyisen käyttäjän puolesta. Joku muu sähköpostin lähettäjä voidaan määrittää määrittämällä **Lähettäjä**-kenttä.
-
-> [!NOTE]
-> Kun sähköpostikohde määritetään, vain käyttäjät, joilla on `ERFormatDestinationSenderEmailConfigure`-suojausoikeus **ER-muodon kohteiden lähettäjän sähköpostiosoitteen määrittäminen**, näkevät **Lähettäjä**-kentän.
->
-> Kun sähköpostiosoite voidaan muokata [suorituspalvelussa](electronic-reporting-destinations.md#security-considerations), vain käyttäjät, joilla on `ERFormatDestinationSenderEmailMaintain`-suojausoikeus **ER-muodon kohteen lähettäjän sähköpostiosoitteen ylläpito**, näkevät **Lähettäjä**-kentän.
->
-> Kun **Lähettäjä**-kenttä määritetään käyttämään muuta kuin nykyisen käyttäjän sähköpostiosoitetta, joko **Lähetä käyttäjänä**- tai **Lähetä puolesta** -oikeus on oltava oikein [määritettynä](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) ennakolta. Muussa tapauksessa suorituksen aikana annetaan virhe, jonka mukaan sähköpostia ei voida lähettää käyttäjänä \<from email account\> tililtä \<current user account\>, minkä vuoksi Lähetä käyttäjänä -oikeudet on tarkistettava tilillä \<from email account\>.
-
-**Lähettäjä**-kenttä voidaan määrittää palauttamaan useampi kuin yksi sähköpostiosoite. Siinä tapauksessa luettelon ensimmäistä osoitetta käytetään sähköpostin lähettäjän osoitteena.
-
-Sähköpostin vastaanottajat määritetään määrittämällä **Vastaanottaja**- ja **Kopio** (valinnainen) -kentät.
-
-Voit määrittää sähköisen raportoinnin sähköpostiosoitteet kahdella tavalla. Määritys voidaan suorittaa loppuun samalla tavalla kuin tulostuksenhallinnassa tai sähköpostiosoite voidaan ratkaista käyttämällä suoraa viitettä ER-määritykseen kaavan kautta.
+[![Sähköpostikohteen Käytössä-asetuksen arvon määrittäminen arvoksi Kyllä](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
 ## <a name="email-address-types"></a>Sähköpostiosoitteen tyyppi
 
-Jos **Kohdeasetukset**-valintaikkunan **Lähettäjä**-, **Vastaanottaja**- tai **Kopio**-kentän vieressä valitaan **Muokkaa**, soveltuva **Sähköpostin lähettäjä**-, **Sähköpostin vastaanottoja**- tai **Sähköpostin kopio** -valintaikkuna avautuu. Sähköpostin lähettäjä ja sähköpostin vastaanottajat voidaan sitten määrittää. Valitse **Lisää** ja valitse sitten, minkä tyyppistä sähköpostiosoitetta käytetään. Tällä hetkellä tuetaan kahta tyyppiä: **Tulostuksenhallintasähköposti** ja **Määrityssähköposti**.
+Jos valitset **Muokkaa** **Vastaanottaja**- tai **Kopio**-kentän vieressä **Kohdeasetukset**-dialogi-ikkunassa, **Sähköposti vastaanottajalle**  -dialogi-ikkuna näytetään. Valitse **Lisää** ja valitse sitten, minkä tyyppistä sähköpostiosoitetta käytetään. Tällä hetkellä tuetaan kahta tyyppiä: **Tulostuksenhallintasähköposti** ja **Määrityssähköposti**.
 
-[![Sähköpostiosoitteen tyypin valitseminen.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Sähköpostiosoitteen tyypin valitseminen](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Tulostuksenhallinnan sähköposti
 
-Jos sähköpostiosoitteen tyypiksi valitaan **Tulostuksenhallintasähköposti**, kiinteät sähköpostiosoitteet voidaan antaa **Sähköpostin lähettäjä**-, **Sähköpostin vastaanottaja**- ja **Sähköpostin kopio** -valintaikkunassa määrittämällä seuraavat kentät:
+Jos valitse sähköpostiosoitteen tyypiksi **Tulostuksenhallintasähköposti**, voit syöttää kiinteitä sähköpostiosoitteita **Sähköposti vastaanottajalle** -dialogi-ikkunaan määrittämällä seuraavat kentät:
 
 - Valitse **Sähköpostin lähde**-kentässä **Ei mikään**.
 - Syötä **Lisäsähköpostiosoitteet eroteltuina merkillä ";"** -kenttään kiinteät sähköpostiosoitteet.
+
+![Kiinteän sähköpostiosoitteen määritys](./media/er_destinations-emailfixedaddress.png)
 
 Vaihtoehtoisesti voit hankkia sähköpostiosoitteita sen osapuolen yhteystiedoista, jolle luot lähtevän asiakirjan. Jos haluat käyttää muita kuin kiinteitä sähköpostiosoitteita, valitse **Sähköpostin lähde** -kentässä tiedoston kohteen [rooli](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles). Seuraavia rooleja tuetaan:
 
@@ -107,7 +78,6 @@ Vaihtoehtoisesti voit hankkia sähköpostiosoitteita sen osapuolen yhteystiedois
 - Hakija
 - Mahdollinen toimittaja
 - Ei-sallittu toimittaja
-- Oikeushenkilö
 
 Jos esimerkiksi haluat määrittää sähköpostikohteen toimittajamaksun käsittelyssä käytettävää ER-muotoa varten, valitse **Toimittaja**-rooli.
 
@@ -118,9 +88,11 @@ Kun olet valinnut haluamasi roolin, valitse **Sido**-painike (ketjusymboli) **S�
 
 Syötä **Kaavasuunnittelija**-sivun **Kaava**-kenttään asiakirjakohtainen viite tuettuun rooliin. Sen sijaan, että kirjoittaisit viitteen **Tietolähde**-ruutuun, hae ja valitse tietolähdesolmu, joka edustaa määritetyn roolin tiliä, ja valitse **Lisää tietolähde** kaavan päivittämiseksi. Jos esimerkiksi halutaan määrittää sähköpostikohde määritykselle **ISO 20022 Credit Transfer**, jota käytetään toimittajamaksujen käsittelyyn, toimittajatiliä edustava solmu on `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![Sähköpostilähdetilin määritys.](./media/er_destinations-emaildefineaddresssource.gif)
+![Sähköpostilähdetilin määritys](./media/er_destinations-emaildefineaddresssource.gif)
 
 Jos määritetyn roolin tilinumerot ovat yksilöllisiä koko Microsoft Dynamics 365 Finance -esiintymässä, **Sähköpostilähteen yritys** -kenttä dialogi-ikuunassa **Sähköposti vastaanottajalle** voi jäädä tyhjäksi.
+
+![Tyhjä sähköpostin lähdekentän yritys](./media/er_destinations-emaildefineaddresssourceformula.png)
 
 Voit myös joutua tilanteeseen, jossa [Yleisen osoitekirjan](../../fin-ops/organization-administration/overview-global-address-book.md) eri osapuolet on rekisteröity eri yrityksiin ([oikeushenkilöihin](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) siten, että ne kaikki käyttävät samaa tilinumeroa määritetyn roolin täyttämiseen. Tässä tapauksessa määritetyn roolin tilinumerot eivät ole yksilöiviä koko Finance-esiintymässä. Tämän vuoksi et voi eksplisiittisesti valita osapuolta vain tilinumeron perusteella. On myös määritettävä yritys, jolle osapuoli on rekisteröity määritetyn roolin täyttämiseksi. Valitse **Sido** -painike (ketjusymboli) **Sähköpostin yritys** -kentän vierestä **Sähköposti vastaanottajalle** -dialogi-ikkunassa avataksesi [Kaavasuunnittelija](general-electronic-reporting-formula-designer.md)-sivun. Voit sitten käyttää tätä sivua määrittääksesi kaavan, joka palauttaa suorituksen aikana sen yrityksen koodin, josta halutun lähteen on löydyttävä.
 
@@ -138,11 +110,13 @@ Suorituksen aika käytettävien sähköpostiosoitteiden tyyppi voidaan määritt
 > [!NOTE]
 > Jos tarkoitukset on valittu **Tarkoitus**-kentässä ja **Ensisijainen yhteyshenkilö** -asetukseksi on samanaikaisesti määritetty **Kyllä**, kaikkia vähintään yhden määritetyn ehdon täyttäviä sähköpostiviestejä käytetään suorituksen aikana.
 
+![Sähköpostin lähteen määritetilin määritys](./media/er_destinations-emaildefineaddresssourceattributes.png)
+
 ### <a name="configuration-email"></a>Määrityssähköposti
 
-Valitse sähköpostiosoitteen tyypiksi **Määrityssähköposti**, jos käytössä olevissa määrityksissä on tietolähteissä oleva solmu, joka palauttaa joko yhden sähköpostiosoitteen tai useita sähköpostisosoitteita, jotka erotetaan toisistaan puolipisteillä (;). Voit käyttää kaavasuunnittelijassa [tietolähteitä](general-electronic-reporting.md#FormatComponentOutbound) ja [funktioita](er-formula-language.md#Functions) saadaksesi oikein muotoillun sähköpostiosoitteen tai sähköpostiosoitteita, jotka on eroteltu puolipisteillä. Jos esimerkiksi käytät määritystä **ISO 20022 Credit Transfer**, toimittajan ensisijaista sähköpostiosoitetta toimittajan yhteystiedossa edustava solmu, johon saatekirje tulisi lähettää, on `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Valitse sähköpostiosoitteen tyypiksi **Määrityssähköposti**, jos käytössä olevissa määrityksissä on tietolähteissä oleva solmu, joka palauttaa joko yhden sähköpostiosoitteen tai useita sähköpostisosoitteita, jotka erotetaan toisistaan puolipisteillä (;). Voit käyttää kaavasuunnittelijassa [tietolähteitä](general-electronic-reporting.md#FormatComponentOutbound) ja [funktioita](er-formula-language.md#functions) saadaksesi oikein muotoillun sähköpostiosoitteen tai sähköpostiosoitteita, jotka on eroteltu puolipisteillä. Jos esimerkiksi käytät määritystä **ISO 20022 Credit Transfer**, toimittajan ensisijaista sähköpostiosoitetta toimittajan yhteystiedossa edustava solmu, johon saatekirje tulisi lähettää, on `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![Sähköpostiosoitteen lähteen määritys.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Sähköpostiosoitteen lähteen määritys](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Ryhmämuodon osat
 
@@ -160,17 +134,14 @@ Voit purkaa muotokomponenttien ryhmittelyn valitsemalla **Tiedostokohde**-pikav�
 
 Seuraavassa kuvassa näkyy sellaisen ER-muodon rakenne, joka on määritetty tuottamaan zip-muotoinen lähtevä tiedosto, joka sisältää maksukehoitushuomautuksen ja asianmukaiset asiakaslaskut PDF-muodossa.
 
-[![Lähteviö asiakirjoja luovan ER-muodon rakenne.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Lähteviö asiakirjoja luovan ER-muodon rakenne](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 Seuraavassa kuvassa näkyy tässä aiheessa kuvailtu prosessi yksittäisten komponenttien ryhmittelystä ja **Sähköposti**-kohteen ottamisesta käyttöön uudelle ryhmälle maksukehoitushuomautuksen lähettämiseksi liittyvien asiakaslaskujen kanssa sähköpostin liitteinä.
 
-[![Yksittäisten komponenttien ryhmittely ja Sähköpostikohteen ottaminen käyttöön.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Yksittäisten komponenttien ryhmittely ja Sähköpostikohteen ottaminen käyttöön](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 - [Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

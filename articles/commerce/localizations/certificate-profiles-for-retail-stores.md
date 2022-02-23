@@ -2,9 +2,11 @@
 title: Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
 description: Tässä ohjeaiheessa on yleiskatsaus varmenteiden käytöstä vähittäismyymälöissä.
 author: josaw
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719927"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018865"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
 
@@ -79,7 +81,7 @@ Voit määrittää seuraavat kentät, kun lisäät uuden rivin **Varmenneprofiil
 - **Key Vault -varmenne** – Tämä kenttä on pakollinen, jos **Sijainnin tyyppi** -kentän arvo on **Key Vault**. Sen avulla määritetään Key Vault -varmenteen salainen koodi.
 
     > [!NOTE]
-    > Varmista ennen Key Vault -varmenteen käyttöä varmenneprofiileissa, että varmenne on ladattu avainsäilötallennukseen ja nouda ohjeita kohdassa [Azure Key Vault -asiakasohjelman määrittäminen](../../finance/localizations/setting-up-azure-key-vault-client.md).
+    > Varmista ennen Key Vault -varmenteen käyttöä varmenneprofiileissa, että varmenne on ladattu avainsäilötallennukseen ja nouda ohjeita kohdassa [Azure Key Vault -asiakasohjelman määrittäminen](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
 - **Myymälän nimi** – Tämä kenttä on valinnainen ja käytettävissä vain, jos **Sijainnin tyyppi** -kentän arvo on **Paikallinen varmenne**. Määritä sen avulla oletusmyymälän nimi, jolla haetaan paikallisia varmenteita.
 - **Myymälän sijainti** – Tämä kenttä on valinnainen ja käytettävissä vain, jos **Sijainnin tyyppi** -kentän arvo on **Paikallinen varmenne**. Määritä sen avulla oletusmyymälän sijainti, jolla haetaan paikallisia varmenteita.
@@ -119,6 +121,3 @@ Jos varmenteen uusi versio on otettu käyttöön, mutta sitä ei voi päivittä�
 
 > [!NOTE]
 > Varmenteen uusi versio kutsutaan Commerce Runtimessa ensimmäisenä. Jos varmennetta ei ole vielä päivitetty jossain myymälässä tai päätteessä, edellinen versio kutsutaan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

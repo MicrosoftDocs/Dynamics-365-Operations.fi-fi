@@ -1,10 +1,12 @@
 ---
 title: Resurssinäkymä
 description: Tässä aiheessa kuvataan resurssien hallinnan resurssinäkymää
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectTree, EntAssetFunctionalLocationTree
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4265928fc5cb899a77eee6e5b9ff0a928efbe99c99ec7fe31eecffcb0f98f752
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0256cc86dc306c8addb37d2c8f335470b19177a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765535"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019401"
 ---
 # <a name="asset-view"></a>Resurssinäkymä
 
@@ -45,6 +47,3 @@ Toiminnallisen siajinnin tunnus / Toiminnallisen siajinnin tunnus (jos on enemm�
 Jos olet valinnut resurssin puunäkymässä, voit valita **aktiiviset pyynnöt** tai **aktiiviset työtilaukset**, jos haluat tarkastella resurssiin liittyviä ylläpito- tai työtilauksia. Voit myös valita **avaa** \> **Toiminnallinen sijainti**, **Resurssit** tai **Resurssien tuoterakenne** avataksesi liittyvät näkymän.
 
 **Resurssien toiminnalliset sijainnit** -vaihtoehto, jonka voit valita **Näytä**-kentässä, on käytettävissä myös missä tahansa resurssihaussa, jossa voit valita resurssin. Puunäkymä näkyy **Resurssinäkymä**-välilehdessä, esimerkiksi silloin, kun [luot resurssin](../objects/create-an-object.md), luot ylläpitopyynnön tai luot työtilauksen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,38 +1,45 @@
 ---
 title: Käyttöomaisuuserien määrittäminen
 description: Tässä ohjeaiheessa on käyttöomaisuusmoduulin asetusten yleiskatsaus.
-author: moaamer
-ms.date: 06/08/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 572d104bbc7024da1ea4b219fd3f544f36a88ccddcf1aa5d18065e2e08b93bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754215"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442921"
 ---
 # <a name="set-up-fixed-assets"></a>Käyttöomaisuuserien määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on **Käyttöomaisuus**-moduulin asetusten yleiskatsaus. 
+Tässä ohjeaiheessa on **Käyttöomaisuus**-moduulin asetusten yleiskatsaus.
 
-Parametrit hallitsevat käyttöomaisuuden yleisiä toimintoja. Käyttöomaisuusryhmien avulla ryhmitellään käyttöomaisuus ja määritetään kunkin ryhmään liitetyn käyttöomaisuuden oletusmääritteet. Kirjat liitetään käyttöomaisuusryhmiin. Kirjat seuraavat käyttöomaisuuden kirjanpidollista arvoa tiettynä ajanjaksona poistoprofiilissa määritetyn poiston konfiguroinnin avulla.
+## <a name="overview"></a>Yleiskuvaus
+
+Parametrit hallitsevat käyttöomaisuuden yleisiä toimintoja.
+
+Käyttöomaisuusryhmien avulla ryhmitellään käyttöomaisuus ja määritetään kunkin ryhmään liitetyn käyttöomaisuuden oletusmääritteet. Kirjat liitetään käyttöomaisuusryhmiin. Kirjat seuraavat käyttöomaisuuden kirjanpidollista arvoa tiettynä ajanjaksona poistoprofiilissa määritetyn poiston konfiguroinnin avulla.
 
 Käyttöomaisuus liitetään ryhmään luomisen yhteydessä. Käyttöomaisuusryhmiin määritetyt kirjat liitetään tämän jälkeen oletusarvoisesti käyttöomaisuuteen. Kirjat, jotka konfiguroidaan kirjaamaan kirjanpitoon, liitetään kirjausprofiiliin. Kirjanpitotilit määritetään kullekin kirjausprofiilin kirjalle ja niitä käytetään, kun käyttöomaisuustapahtumia kirjataan.
 
-![Käyttöomaisuuskomponentit.](./media/FAComponents_Updated.png)
+![Käyttöomaisuuskomponentit](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Poistoprofiilit
 
@@ -45,8 +52,6 @@ Kun olet määrittänyt poistoprofiilit, sinun on luotava käyttöomaisuuden ede
 Ensisijainen poistoprofiili liitetään jokaiseen kirjaan. Kirjoilla on myös vaihtoehtoinen poistoprofiili tai lisäpoistoprofiili, jos tämä profiilityyppi on käytettävissä. Jotta käyttöomaisuuskirja sisällytetään automaattisesti poiston suoritukseen, on otettava käyttöön **Laske poisto** -vaihtoehto. Jos tätä vaihtoehtoa ei ole otettu käyttöön käyttöomaisuuserälle, poistoehdotus ohittaa käyttöomaisuuden.
 
 Voit määrittää myös johdettuja kirjoja. Määritetyt johdetut tapahtumat kirjataan ensisijaisen tapahtuman täydellisenä kopiona johdettuihin kirjoihin. Tämän vuoksi johdetut tapahtumat yleensä määritetään hankinnoille ja luovutuksille eikä poistotapahtumille. Lisätietoja on kohdassa [Arvomallien määrittäminen](tasks/set-up-value-models.md).
-
-**Käyttöomaisuusparametrit**-sivulla voit asetuksen avulla ottaa lukitustoiminnon käyttöön tai poistaa sen käytöstä. Voit ottaa tämän toiminnon käyttöön **Toimintojen hallinta** -työtilassa.
 
 ## <a name="fixed-asset-posting-profiles"></a>Käyttöomaisuuserän kirjausprofiili
 
@@ -72,8 +77,6 @@ Viimeinen vaihe on käyttöomaisuusparametrien päivittäminen.
 
 Tärkeä vaihtoehto on **Luo poisto-oikaisusummat automaattisesti käytöstä poistamisten kanssa**. Jos määrität tämän asetuksen arvoksi **Kyllä**, toiminto oikaisee käyttöomaisuuserän poiston automaattisesti käyttöomaisuuden poiston aikaisten poistoasetusten perusteella. Myös käteisalennukset voidaan vähentää hankintasummasta käyttöomaisuuserien hankinnan yhteydessä toimittajan laskun avulla.
 
-**Lukitse käyttöomaisuuskirjat poistokirjauskansiossa** -parametrin avulla voit lukita käyttöomaisuuskirjat poistokirjauskansiossa. Kun poistotapahtumia kirjataan, järjestelmä tarkistaa, että samaa käyttöomaisuuskirjaa ei ole lisätty useampaan kuin yhteen poistokirjauskansioon. Jos se on lisätty useampaan, käyttöomaisuuskirja lukitaan ja kirjaaminen pysähtyy. Jos käyttöomaisuuskirjan tunnus on lukitussa kirjauskansiossa, sen lukitus poistetaan automaattisesti, kun alkuperäisen kirjauskansion kirjaaminen on valmis. Voit poistaa kirjauskansion lukituksen myös manuaalisesti. 
-
 **Ostotilaukset**-pikavälilehdessä voidaan määrittää, miten käyttöomaisuuserät luodaan ostoprosessin osana. Ensimmäinen vaihtoehto on **Salli käyttöomaisuuden hankinta ostosta**. Jos määrität tämän asetuksen arvoksi **Kyllä** hankinta kirjataan käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Jos määrität tämän asetuksen arvoksi **ei**, käyttöomaisuus voidaan silti asettaa ostotilaukseen ja laskuun, mutta hankintaa ei kirjata. Se tehdään erillisessä vaiheessa käyttöomaisuuden kirjauskansiosta. **Luo käyttöomaisuus tuotteen vastaanoton tai laskun kirjaamisen aikana** -vaihtoehdolla voi luoda uusia varoja kirjauksen aikana. Tämän vuoksi varoja ei tarvitse määrittää käyttöomaisuudeksi ennen tapahtumaa. Viimeinen vaihtoehto **Tarkista käyttöomaisuuden luonti rivimäärityksen aikana** -asetus on käytettävissä vain ostoehdotuksissa.
 
 Syykoodit voidaan konfiguroida niin, että ne ovat pakollisia käyttöomaisuuden muutoksissa tai tietyissä käyttöomaisuustapahtumissa.
@@ -81,6 +84,3 @@ Syykoodit voidaan konfiguroida niin, että ne ovat pakollisia käyttöomaisuuden
 **Numerosarjat**-välilehdessä määritetään lopuksi käyttöomaisuuden numerosarjat. Jos **käyttöomaisuusryhmän** numerosarja on määritetty, se voi ohittaa **käyttöomaisuuden** numerosarjan.
 
 Lisätietoja on kohdassa [Käyttöomaisuuden luominen](tasks/create-fixed-asset.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

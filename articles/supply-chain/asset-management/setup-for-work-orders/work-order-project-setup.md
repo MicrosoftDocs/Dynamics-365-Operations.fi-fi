@@ -1,10 +1,12 @@
 ---
 title: Työtilauksen projektiasetukset
 description: Tässä ohjeaiheessa selitetään työtilausten projektin määritys käyttöomaisuuden hallinnassa.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754080"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021551"
 ---
 # <a name="work-order-project-setup"></a>Työtilauksen projektiasetukset
 
@@ -69,7 +71,7 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 
     Oletusarvon mukaan aloituspäivämäärä on päivämäärä, jolloin työtilausprojekti lisätään sivulle. Sen hallinnassa on **Voimassa alkaen** -kenttä, joka on oletusarvoisesti piilotettu. Jos haluat näyttää **Voimassa alkaen** -kentän, valitse **Näytä** \> **Kaikki**. Tämän jälkeen voit käyttää **Voimassa alkaen** -kenttää yhdessä **Päättymispäivämäärä**-kentän kanssa määrittämään rajoitetun voimassaoloajan työtilausprojektille.
 
-    ![Työtilausten projektinmäärityssivu.](media/17-setup-for-work-orders.png)
+    ![Työtilausten projektinmäärityssivu](media/17-setup-for-work-orders.png)
 
 6. Valitse **Projektiryhmä**-välilehdellä **Lisää**.
 7. Valitse **Työtilaustyyppi**-kentässä työtilauksen tyyppi.
@@ -77,12 +79,9 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 9. Valitse **Projektiryhmä**-kentästä projektiryhmä, joka liittyy työtilaustyyppiin. Esimerkiksi **Ennalta ehkäisevä ylläpito** -niminen työtilaustyyppi voi liittyä projektiryhmään, jonka nimi **Enn. ylläp.** tai **Sisäinen.** Vaihtoehtoisesti **Investointi**-työtilaustyyppi, jota käytetään investointeihin ja käyttöomaisuuteen liittyviin työtilauksiin, voidaan liittää projektiryhmään, jonak nimi on **Investoi** tai **Investointi**.
 10. Valitse **Tallenna**.
 
-![Työtilausten projektinmäärityssivu, työtilauksen lisääminen.](media/18-setup-for-work-orders.png)
+![Työtilausten projektinmäärityssivu, Työtilauksen lisääminen](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Aina, kun työtilausrivi luodaan, käyttöomaisuuden hallinta etsii projektiryhmää, joka liittyy työtilaustyön projektiin. Haku perustuu tässä ohjeaiheessa kuvattuihin asetuksiin. Jokaisella projektiryhmällä on siihen liittyvä projektityyppi. Projektiryhmät, joissa on **Aika ja materiaali**- tai **Kiinteähintainen** projektityyppi, ovat kelvollisia vain asiakastiliin liittyvissä resursseissa.
 >
 > Kun järjestelmä valitsee käytettävissä olevan työtilausprojektin tai projektiryhmän pääprojekteille ja projektiryhmille, valinta perustuu edellä kuvatun menetelmän avulla luomiisi tietueisiin. Käyttöomaisuuden hallinta käy läpi työtilausprojektiin liittyvät tietueet ja tarkistaa mahdolliset vastineet. Se tarkistaa aina kaikkein erikoisimman yhdistelmän ensin. Toisin sanoen resurssien hallinta tarkistaa työtilauksen pääprojektille ensin mahdollisen **Resurssi**-kentän vastaavuuden. Jos vastaavuutta ei löydy, se tarkistaa **Resurssityyppi**-kentän vastaavuuden. Jos vastaavuutta ei löydy, se tarkistaa **Toiminnallinen sijainti** -kentän vastaavuuden ja niin edelleen. Kuten näet **Työtilausprojektin asetukset** -sivun asettelussa, tämä tarkoittaa sitä, että jos haluat löytää erityisen yhdistelmän, resurssien hallinta tarkistaa kunkin tietueen oikealta vasemmalle, jotta se vastaa toisiaan. Jos vastinetta ei löydy, käytetään oletustietuetta, jossa valitaan vain projektitunnus. Liittyvän projektiryhmän hakuprosessi on samankaltainen. Käyttöomaisuuden hallinta tarkistaa ensin **Resurssi**-kentän mahdollisen vastaavuuden, sitten **Resurssityyppi** -kentän ja sitten **Työtilauksen tyyppi** -kentän vastaavuuden. Jos vastinetta ei löydy, käytetään oletustietuetta, jossa valitaan vain projektiryhmä.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

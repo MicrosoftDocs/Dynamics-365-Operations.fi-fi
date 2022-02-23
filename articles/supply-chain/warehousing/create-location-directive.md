@@ -2,9 +2,11 @@
 title: Sijaintidirektiivien käyttäminen
 description: Tässä aiheessa käsitellään sijaintidirektiivien käyttämistä. Sijaintidirektiivit ovat käyttäjän määrittämiä sääntöjä, jotka auttavat tunnistamaan keräily- ja poispanosijainnit varaston siirrossa.
 author: Mirzaab
+manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e3139f62ca73f461ff4a4b5114f5e7ba181d3b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575240"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963307"
 ---
 # <a name="work-with-location-directives"></a>Sijaintidirektiivien käyttäminen
 
@@ -44,14 +46,14 @@ Ennen kuin voit luoda sijaintidirektiivin, sinun on varmistettava, että edellyt
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Varastot**.
 1. Luo varasto.
 1. Valitse **Varasto**-pikavälilehdellä **Käytä varastonhallintaprosesseja** -vaihtoehdon arvoksi *Kyllä*.
-1. Luo toimipaikat, toimipaikkojen tyypit, toimipaikkojen profiilit ja toimipaikkojen muodot. Lisätietoja on kohdassa [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](./tasks/configure-locations-wms-enabled-warehouse.md).
-1. Luo toimipaikkoja, alueita ja vyöhykeryhmiä. Lisätietoja on kohdassa [Varaston määrittäminen](../../commerce/channels-setup-warehouse.md) ja [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Luo toimipaikat, toimipaikkojen tyypit, toimipaikkojen profiilit ja toimipaikkojen muodot. Lisätietoja on kohdassa [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Luo toimipaikkoja, alueita ja vyöhykeryhmiä. Lisätietoja on kohdassa [Varaston määrittäminen](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) ja [Sijaintien määrittäminen VHJ-yhteensopivassa varastossa](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 
 ## <a name="work-order-types-for-location-directives"></a>Sijaintidirektiivien työtilaustyypit
 
 Monet sijaintidirektiiveille määritettävät kentät ovat samoja kaikissa työtilaustyypeissä. Muut kentät ovat kuitenkin työtilaustyyppikohtaisia.
 
-![Sijaintidirektiivien työtilaustyypit.](media/Location_Directives_Work_Order_Types.png "Sijaintidirektiivien työtilaustyypit")
+![Sijaintidirektiivien työtilaustyypit](media/Location_Directives_Work_Order_Types.png "Sijaintidirektiivien työtilaustyypit")
 
 > [!NOTE]
 > Kaksi työtilaustyyppiä, *Peruutettu työ* ja *Inventointi*, ovat vain järjestelmän käytössä. Sijaintidirektiivejä ei voi luoda näille työtilaustyypeille.
@@ -143,14 +145,14 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
 - **Direktiivikoodi** – Valitse liitettävän työmallin tai täydennysmallin direktiivikoodi. Voit luoda **Direktiivikoodi**-sivulla uusia koodeja, joilla työmallit tai täydennysmallit voidaan yhdistää sijaintidirektiiveihin. Direktiivikoodeja voidaan käyttää myös linkin luomiseen työmallin rivin ja sijaintidirektiivin välille (kuten lastausovi tai väliaikainen sijainti).
 
     > [!TIP]
-    > Jos direktiivikoodi on määritetty, järjestelmä ei etsi sijaintidirektiivejä järjestysnumeron perustella, kun työ on luotava. Sen sijaan haku tehdään direktiivikoodin perusteella. Tällä tavoin voit tarkentaa tietyssä työmallin vaiheessa käytettävää sijaintidirektiiviä. Kyse voi olla esimerkiksi materiaalien valmisteluvaihe.
+    > Jos direktiivikoodi on määritetty, järjestelmä ei etsi sijaintidirektiivejä järjestysnumeron perustella, kun työ on luotava. Sen sijaan haku tehdään direktiivikoodin perusteella. Tällä tavoin voit tarkentaa tietyssä työmallin vaiheessa käytettävää sijaintimallia. Kyse voi olla esimerkiksi materiaalien valmisteluvaihe.
 
 - **Useita varastointiyksiköitä** – Valitse tässä asetukseksi *Kyllä*, jos haluat, että sijainnissa voi käyttää useita varastointiyksiköitä. Useita varastointiyksiköitä voidaan ottaa käyttöön esimerkiksi lastausovisijainnissa. Jos otat useat varastointiyksiköt käyttöön, hyllytyssijainti määritetään odotetusti työssä. Hyllytyssijainti voi kuitenkin käsitellä vain moninimikkeisen hyllytyksen (jos työ sisältää useita varastointiyksiköitä, joita on kerättävä ja hyllytettävä). Se ei voi käsitellä yhden varastointiyksikön hyllytystä. Jos asetuksena on *Ei*, hyllytyssijainti määritetään vain, jos hyllytyksessä on vain yhdenlaista varastointiyksikköä.
 
     > [!IMPORTANT]
     > Sekä moninimikkeisen hyllytyksen että yhden varastointiyksikön hyllytyksen käyttöönottaminen edellyttää kahden sellaisen rivin määrittämistä, jolla on sama rakenne ja samat määritykset. Toisen rivin **Useita varastointiyksiköitä** -asetukseksi on valittava *Kyllä* ja toisen *Ei*. Tämän vuoksi hyllytystoimintoja on oltava kaksi samanlaista sijaintidirektiiviä, vaikka työn tunnuksessa ei tehdä erottaa yhtä varastointiyksikköä ja useita varastointiyksiköitä. Jos molempia sijaintidirektiivejä ei määritetä, käytetystä sijaintidirektiivistä tulee usein esille odottamattomia liiketoimintaprosessisijainteja. Sijaintidirektiiveillä, joiden **työtyyppi** on *keräily*, on oltava samanlaisen määritys, jos käsiteltävissä tilauksissa on useita varastointiyksiköitä.
 
-    Käytä **Useita varastointiyksiköitä** -vaihtoehtoa työriveillä, joilla käsitellään useita nimiketunnuksia. (Nimiketunnus on tyhjä työn tiedoissa, ja sen arvona näytetään **Useita** varastonhallinnan mobiilisovelluksen käsittelysivuilla.)
+    Käytä **Useita varastointiyksiköitä** -vaihtoehtoa työriveillä, joilla käsitellään useita nimiketunnuksia. (Nimiketunnus on tyhjä työn tiedoissa, ja sen arvona näytetään **Useita** varastosovelluksen käsittelysivuilla.)
 
     Tyypillisessä skenaariossa työmalli määritetään siten, että siinä on useita keräily/hyllytys-pareja Tässä tapauksessa kannattaa ehkä hakea tietty valmistelusijainti käytettäväksi riveillä, joiden **Työntyyppi** on *Hyllytys*.
 
@@ -169,7 +171,7 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
     > [!NOTE]
     > Tämä kenttä on käytettävissä vain valituissa työtilaustyypeissä, joissa sallitaan täydennys. Täydellinen on kohdassa [Työtilaustyyppikohtaiset kentät](#fields-specific-types).
 
-- **Käsittelykoodi** – Tätä kenttää käytetään sijaintidirektiiveissä, joiden työtilaustyyppi on *Ostotilaukset*, *Valmiiden tuotteiden hyllytys* tai *Palautustilaukset* ja työtilaus on *Hyllytys*. Ohjaa sen avulla työnkulku käyttämään tiettyä sijaintidirektiiviä työntekijän varastonhallinnan mobiilisovelluksessa valitseman käsittelykoodin mukaan. Voit esimerkiksi ohjata palautetut tuotteet tarkastussijaintiin, ennen kuin palautetaan varastoon. Käsittelykoodi voidaan linkittää varaston tilaan. Tällä tavoin sitä voidaan käyttää muuttamaan varaston tila vastaanottoprosessin osana. Esimerkiksi käsittelykoodi *Laadunvalvonta* määrittä varastoon *Laadunvalvonta*-tilaan. Voit sitten käyttää erillistä sijaintidirektiiviä siirtämän kyseisen varaston karanteenisijaintiin.
+- **Käsittelykoodi** – Tätä kenttää käytetään sijaintidirektiiveissä, joiden työtilaustyyppi on *Ostotilaukset*, *Valmiiden tuotteiden hyllytys* tai *Palautustilaukset* ja työtilaus on *Hyllytys*. Ohjaa sen avulla työnkulku käyttämään tiettyä sijaintidirektiiviä työntekijän varastosovelluksessa valitseman käsittelykoodin mukaan. Voit esimerkiksi ohjata palautetut tuotteet tarkastussijaintiin, ennen kuin palautetaan varastoon. Käsittelykoodi voidaan linkittää varaston tilaan. Tällä tavoin sitä voidaan käyttää muuttamaan varaston tila vastaanottoprosessin osana. Esimerkiksi käsittelykoodi *Laadunvalvonta* määrittä varastoon *Laadunvalvonta*-tilaan. Voit sitten käyttää erillistä sijaintidirektiiviä siirtämän kyseisen varaston karanteenisijaintiin.
 
     > [!NOTE]
     > Tämä kenttä on käytettävissä vain valituissa työtilaustyypeissä, joissa sallitaan täydennys. Täydellinen on kohdassa [Työtilaustyyppikohtaiset kentät](#fields-specific-types).
@@ -237,7 +239,7 @@ Voit määrittää useita sijaintidirektiivin toimintoja kullekin riville. Jäll
     - **Pyöristä kokonaiseen rekisterikilpeen ja FEFO-erään** – Tämä strategia yhdistää *FEFO-erävarauksen*- ja *Pyöristä kokonaiseen rekisterikilpeen* -strategioiden elementtejä. Se on käytettävissä vain eränimikkeissä ja sijaintidirektiiveissä, joiden työtyyppi on *Keräily*. *FEFO-erävaraus*-strategian käyttäminen edellyttää eränimikkeiden käyttöä rivillä. *Pyöristä kokonaiseen rekisterikilpeen* -strategiaa voidaan käyttää vain täydennykseen. Jos tämä strategia on määritetty yhdessä sijainnin varastointirajan kanssa, se voi aiheuttaa valitun hyllytystyösijainnin ylitäyttymisen ja varastointirajojen ohittamisen.
     - **Pyöristä kokonaiseen rekisterikilpeen** – Tällä strategialla pyöristetään varastomäärä vastaamaan rekisterimerkinnän määrää, joka on määritetty kerättäville nimikkeille. Tätä strategiaa voi käyttää vain *Keräily*-tyypin täydennyksen sijaintidirektiiveihin. Jos tämä strategia on määritetty yhdessä sijainnin varastointirajan kanssa, se voi aiheuttaa valitun hyllytystyösijainnin ylitäyttymisen ja varastointirajojen ohittamisen.
     - **Rekisterikilpiopastus** – Käytä tätä strategiaa, kun vapautat tilauksen varastoon keräily- ja hyllytystyön luontia varten. Tätä menetelmää voi käyttää useissa rekisterikilvissä. Strategia yrittää varata ja luoda keräilytöitä sijainneissa, joissa on pyydettyjä siirtotilausriveihin liitettyjä rekisterikilpiä. Jos näitä toimintoja ei kuitenkaan voi suorittaa loppuun mutta keräilytyö halutaan silti luoda, käytä jotain muuta sijaintidirektiivitoimintojen strategiaa. Liiketoiminnan tarpeiden mukaan on mahdollista, että varastohaku halutaan tehdä varaston toisella alueella.
-    - **Tyhjä sijainti ilman saapuvia töitä** – Käytä tätä strategiaa tyhjien sijaintien etsimiseen. Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa, eikä odotettuja saapuvia töitä. Voit käyttää tätä strategiaa vain sijaintidirektiiveille, joiden työtyyppi on *Hyllytys*.
+    - **Tyhjä sijainti ilman saapuvia töitä** – Käytä tätä strategiaa tyhjien sijaintien etsimiseen. Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa, eikä odotettuja saapuvia töitä. Tätä strategiaa voi käyttää vain sijaintidirektiiveissä, joiden työtyyppi on *Keräily*.
     - **Sijainnin FIFO-erääntyminen** – Käytä FIFO-strategiaa sekä eräseurattujen nimikkeiden että ei-eräseurattujen nimikkeiden lähettämiseen sen päivämäärän perusteella, jolloin varastoa saapui fyysiseen varastoon. Tätä ominaisuus voi kätevä etenkin ei-eräseuratun varaston osalta, jos vanhentumispäivä ei ole käytettävissä lajittelua varten. FIFO-strategia etsii vanhimman erääntymispäivämäärän sisältävän sijainnin ja kohdistaa sitten keräilyn kyseisen päivämäärän perusteella.
     - **Sijainnin LIFO-erääntyminen** – Käytä LIFO-strategiaa sekä eräseurattujen nimikkeiden että ei-eräseurattujen nimikkeiden lähettämiseen sen päivämäärän perusteella, jolloin varastoa saapui fyysiseen varastoon. Tätä ominaisuus voi kätevä etenkin ei-eräseuratun varaston osalta, jos vanhentumispäivä ei ole käytettävissä lajittelua varten. LIFO-strategia etsii uusimman erääntymispäivämäärän sisältävän sijainnin ja kohdistaa sitten keräilyn kyseisen päivämäärän perusteella.
 
@@ -249,12 +251,9 @@ Tätä skenaariota varten sinun on määritettävä kaksi sijaintidirektiivitoim
 
 ## <a name="next-step"></a>Seuraava vaihe
 
-Kun olet luonut sijaintidirektiivit, voit liittää kunkin direktiivikoodin työmallin koodiin työn luomista varten. Lisätietoja on kohdassa [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](./control-warehouse-location-directives.md).
+Kun olet luonut sijaintidirektiivit, voit liittää kunkin direktiivikoodin työmallin koodiin työn luomista varten. Lisätietoja on kohdassa [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - Video: [Perusteellinen varastonhallinnan määrityksen tarkastelu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Ohjeaihe: [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](control-warehouse-location-directives.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

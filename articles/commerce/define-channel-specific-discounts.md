@@ -2,13 +2,16 @@
 title: Kanavakohtaisten alennusten määrittäminen
 description: Vähittäismyyjät määrittävät usein erilaisia alennuksia eri kanaville. Tässä aiheessa tarkastellaan käsitteitä, joita tarvitaan tietyn kanavan alennuksen luomisessa.
 author: scott-tucker
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 14b6f8f4a7d344111718fad94418bc3dbb5c9b1e113c0fd613350c49a2511d4f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 539a6f2df46450c5e0fd18ba69501432d6f3fbdd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759308"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411981"
 ---
 # <a name="define-channel-specific-discounts"></a>Kanavakohtaisten alennusten määrittäminen
 
@@ -37,7 +40,7 @@ Commerce määrittää kanavakohtaiset alennukset hintaryhmien avulla. Hintaryhm
 
 ## <a name="price-groups"></a>Hintaryhmät
 
-[![Hintaryhmät.](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Hintaryhmät](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Edellä olevassa kaaviossa on kuva tapahtumassa mahdollisesti olevien yksikköjen suhteesta (kanava, luettelo, liitos, asiakas, kanta-asiakaskortti) ja erilaisista määritettävistä alennustyypeistä. Kaikki tapahtumat tapahtuvat kanavassa, joten kanava on varmasti mukana tapahtumassa. Muut yksiköt ovat valinnaisia. Jokaisella päätietosivulla on linkki liittyvään hintaryhmäsivuun, jossa voit tarkastella hintaryhmiä ja lisätä niitä tarvittaessa. Hintaryhmän avulla neljä eri tyyppistä yksikköä liitetään alennuksiin, hinnanoikaisuihin ja kauppasopimuksiin. On suositeltavaa, että suunnittelet hintaryhmille nimeämisstrategian, jotta ne pysyvät järjestyksessä. Tyypit voi erottaa toisistaan käyttämällä etu- tai jälkiliitteenä kirjainta tai numeroa. Esimerkiksi 1-xxxxx voi viitata kanavan hintaryhmään ja 2-xxxxx luettelon hintaryhmään. Kullakin kaupankäynnin myyntiyksiköllä, joihin voidaan liittää alennuksia, on neljä kyselysivua.
 
@@ -59,6 +62,3 @@ Seuraavassa esimerkissä käsitellään tehtäviä, jotka liittyvät kanava-alen
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Hinnanoikaisut ja alennukset](price-adjustments-discounts.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

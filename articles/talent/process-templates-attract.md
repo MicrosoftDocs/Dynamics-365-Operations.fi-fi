@@ -71,6 +71,3 @@ Luo työhönoton prosessimalli noudattamalla seuraavia ohjeita:
     - Poista tehtävä laajentamalla se ja valitsemalla sitten roskakorikuvake tehtävän ylätunnisteessa.
 
 8. Valitse **Tallenna**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

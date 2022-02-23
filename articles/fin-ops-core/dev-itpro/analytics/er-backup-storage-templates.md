@@ -2,9 +2,11 @@
 title: ER-mallien varmuuskopion tallennustila
 description: Tässä ohjeaiheessa käsitellään tapaa, jolla malleja voi palauttaa sähköisen raportoinnin (ER) varmuuskopion tallennustilan avulla.
 author: NickSelin
+manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767874"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681397"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-mallien varmuuskopion tallennustila
 
@@ -65,19 +67,19 @@ Määritä **Suorita rikkoutuneiden mallien palautusmenettely automaattisesi er�
 > [!NOTE]
 > Tämä parametri määritetään sovelluksen käyttäjänä ja se on koskee sitä yritystä, johon on kirjauduttu.
 
-![Sähköisen raportoinnin konfiguroinnit -sivu.](./media/GER-BackupTemplates-1.png)
+![Sähköisen raportoinnin konfiguroinnit -sivu](./media/GER-BackupTemplates-1.png)
 
 Seuraavassa kuvassa on esimerkki sanomasta, joka avautuu, kun **Suorita rikkoutuneiden mallien palautusmenettely automaattisesi eränä** -parametrin arvoksi on määritetty **Käytössä**.
 
-![Toimittajan maksukirjauskansio -sivu.](./media/GER-BackupTemplates-2.png)
+![Toimittajan maksukirjauskansio -sivu](./media/GER-BackupTemplates-2.png)
 
 Seuraavassa kuvassa on **Erätyö**-sivun **Palauta rikkoutuneet mallit sisäisestä tietokannan varmuuskopiosta** -eräprosessi.
 
-![Erätyö-sivu.](./media/GER-BackupTemplates-3.png)
+![Erätyö-sivu](./media/GER-BackupTemplates-3.png)
 
 Suoritetun **Palauta rikkoutuneet mallit sisäisestä tietokannan varmuuskopiosta** -eräprosessin suoritusloki sisältää tietoja malleista, jotka on palautettu varmuuskopion tallennussijainnista ensisijaiseen tallennussijaintiin.
 
-![Erätyöhistoria-sivu.](./media/GER-BackupTemplates-4.png)
+![Erätyöhistoria-sivu](./media/GER-BackupTemplates-4.png)
 
 ER-muodon määrityksessä olevien mallien automaattisen varmuuskopioiden luontiprosessi on oletusarvoisesti otettu käyttöön. Voit lopettaa mallin varmuuskopioinnin määrittämällä **Sähköisen raportoinnin parametrit** -sivun **Liitteet**-välilehdessä **Lopeta mallien varmuuskopiointi** -asetukseksi **Kyllä**. Voit avata sivun **Sähköinen raportointi** -työtilassa.
 
@@ -85,7 +87,7 @@ Jos määrität **Lopeta mallien varmuuskopiointi** -asetukseksi **Kyllä** etk�
 
 Jos päivität ympäristön Finance and Operationsin versioon 10.0.5 (lokakuu 2019) ja haluat siirtyä uuteen suoritettavia ER-muodon määrityksiä sisältävään ympäristöön, valitse **Täytä varmuuskopioinnin tallennustila** **Sähköisen raportoinnin parametrit** -sivulla ennen kuin siirto tehdään. Tämä painike aloittaa prosessin, jolla kaikki käytettävissä olevat mallit varmuuskopioidaan, jotta ne voidaan tallentaa mallien ER-varmuuskopioinnin tallennussijaintiin.
 
-![Sähköisen raportoinnin parametrit -sivu.](./media/GER-BackupTemplates-5.png)
+![Sähköisen raportoinnin parametrit -sivu](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuaalinen palautus
 
@@ -100,6 +102,3 @@ Finance and Operationsin versiossa 10.0.5 ER-mallien varmuuskopioinnin tallennus
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
 [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

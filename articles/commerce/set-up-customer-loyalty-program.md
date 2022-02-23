@@ -1,35 +1,36 @@
 ---
 title: Kanta-asiakkuuden yleiskatsaus
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercen kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercein kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
 author: scott-tucker
+manager: AnnBe
 ms.date: 07/21/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.custom:
-- "16201"
-- intro-internal
+ms.search.scope: Core, Operations, Retail
+ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 119046ee2b783e6a4b868fff2b1d7a1b59966e7b
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985159"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4412096"
 ---
 # <a name="loyalty-overview"></a>Kanta-asiakkuuden yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
-Kanta-asiakasohjelmat voivat lisätä asiakasuskollisuutta palkitsemalla asiakkaita, kun ovat tekemisissä jälleenmyyjän brändin kanssa. Voit määrittää Dynamics 365 Commercessa yksinkertaisia tai monimutkaisia kanta-asiakassovelluksia yritysten välille missä tahansa kaupan kanavassa. Tässä ohjeaiheessa käsitellään Commercen kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
+Kanta-asiakasohjelmat voivat lisätä asiakasuskollisuutta palkitsemalla asiakkaita, kun ovat tekemisissä jälleenmyyjän brändin kanssa. Voit määrittää Dynamics 365 Commerceissa yksinkertaisia tai monimutkaisia kanta-asiakassovelluksia yritysten välille missä tahansa kaupan kanavassa. Tässä ohjeaiheessa käsitellään Commercen kanta-asiakastoimintoja ja niitä vastaavia asetusohjeita, jotta jälleenmyyjä pääsee aloittamaan kanta-asiakasohjelmansa.
 
 Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja.
 
@@ -43,7 +44,7 @@ Voit määrittää kanta-asiakasohjelman käyttämällä seuraavia vaihtoehtoja.
 
 Sinun on määritettävä useita komponentteja, jotta voit ottaa käyttöön kanta-asiakkuusominaisuuden Commercessa. Seuraavassa kaaviossa on kuvattu kanta-asiakkuuskomponentit ja kuinka ne liittyvät toisiinsa.
 
-![Kanta-asiakkuuden määrittämisprosessin kulku.](./media/loyaltyprocess.gif "Kanta-asiakkuuskomponentit ja niiden väliset suhteet")
+![Loyalty setup process flow](./media/loyaltyprocess.gif "Kanta-asiakkuuskomponentit ja niiden väliset suhteet")
 
 ## <a name="loyalty-components"></a>Kanta-asiakkuuskomponentit
 
@@ -82,15 +83,15 @@ Seuraavassa taulukossa on kuvaus prosesseista, jotka on suoritettava, jotta kant
     > [!NOTE]
     > Kanta-asiakkuusmallin ansaitsemissäännöt ovat lisäsääntöjä. Jos esimerkiksi luot säännön, jolla kultatason jäsenelle annetaan 10 pistettä jokaista dollaria kohden, sekä säännön, jolla veteraaniliitoksen asiakkaalle annetaan 5 pistettä jokaista dollaria kohden, kultatason veteraani ansaitsisi tässä tapauksessa 15 pistettä jokaisesta dollarista, sillä tällainen asiakas hyväksytään kummallekin riville. Jos veteraaniasiakas ei kuitenkaan ole kultatason jäsen, hän ansaitsee 5 pistettä jokaista dollaria kohden. Voit toteuttaa muutokset kanavissa suorittamalla työt **Käsittele kanta-asiakkuusmallit** ja **1050** (kanta-asiakastiedot).
     
-    ![Jäsenyyteen perustuva ansaitseminen.](./media/Affiliation-based-earning.png "Jäsenyyteen perustuvat tulot")
+    ![Jäsenyyteen perustuva ansaitseminen](./media/Affiliation-based-earning.png "Jäsenyyteen perustuvat tulot")
 
 - Jälleenmyyjillä on usein erikoishinnat sellaisille asiakasryhmille, joiden yhteydessä he eivät halua käyttää kanta-asiakasohjelmia. Tällaisia ovat esimerkiksi tukkukauppiaat ja työntekijät, joille käytetään erikoishintoja mutta jotka eivät saa kanta-asiakaspisteitä. Yleensä liitosten avulla erikoishinnoittelu voidaan kohdistaa kyseisille asiakasryhmille. Jos jälleenmyyjä haluaa estää tietyn asiakasryhmän asiakkaita ansaitsemasta kanta-asiakaspisteitä, hän voi määrittää yhden liitoksen tai useita liitoksia kanta-asiakasmallin **Pois suljetut liitokset** -osassa. Tällä tavoin pois suljettuun liitokseen kuuluvat asiakkaat ovat nykyisiä kanta-asiakasohjelman jäseniä, mutta he eivät ansaitse kanta-asiakaspisteitä ostoksistaan. Voit toteuttaa muutokset kanavissa suorittamalla työt **Käsittele kanta-asiakkuusmallit** ja **1050** (kanta-asiakastiedot).
 
-    ![Pois suljetut liitokset.](./media/Excluded-affiliations.png "Liitosten sulkeminen kanta-asiakaspisteiden ansaitseminen ulkopuolelle")
+    ![Pois suljetut liitokset](./media/Excluded-affiliations.png "Liitosten sulkeminen kanta-asiakaspisteiden ansaitseminen ulkopuolelle")
     
 - Myyntipisteen avulla vähittäismyyjät voivat käyttää joustavasti joko fyysisiä kanta-asiakaskortteja tai luoda yksilöivän kanta-asiakaskortin numeron automaattisesti. Jos haluat ottaa käyttöön kanta-asiakaskorttien automaattisen luonnin myymälässä, ota **Luo kanta-asiakaskortin numero** käyttöön myymälään liitetyssä toimintoprofiilissa. Jälleenmyyjät voivat myöntää kanta-asiakaskortteja asiakkaille verkkokanavissa IssueLoyaltyCard-ohjelmointirajapinnan avulla. Jälleenmyyjät voivat joko antaa kanta-asiakaskortin numeron tähän ohjelmointirajapintaan ja kanta-asiakas muodostetaan sitten sen perusteella tai sitten järjestelmä käyttää Commercessa määritettyä kanta-asiakaskortin numerosarjaa. Jos numerosarjaa ei ole kuitenkaan ole eikä jälleenmyyjä anna kanta-asiakaskortin numero ohjelmointirajapintaa kutsuttaessa, seurauksena on virheilmoitus.
 
-    ![Luo kanta-asiakaskortti.](./media/Generate-loyalty-card.png "Luo kanta-asiakaskortin numero automaattisesti")
+    ![Luo kanta-asiakaskortti](./media/Generate-loyalty-card.png "Luo kanta-asiakaskortin numero automaattisesti")
 
 - Ansaitut ja lunastetut kanta-asiakaspisteet voidaan nyt tallentaa jokaiselle tapahtumalle ja myyntitilaukselle myyntiriveillä, joten sama summa voidaan hyvittää tai poistaa täyden tai osittaisen palautuksen yhteydessä. Koska pisteet ovat nähtävillä myyntirivitasolla, puhelinkeskuksen käyttäjät voivat vastata asiakkaiden kunkin rivin ansaittuja tai lunastettuja pisteitä koskeviin kysymyksiin. Ennen tätä muutosta palkkiopisteet laskettiin aina uudelleen palautusten aikana, jolloin tulokseksi saatu summa ei ollut sama kuin alkuperäinen summa, jos ansaitsemis- tai lunastussääntöjä oli muutettu. Puhelinkeskuksen käyttäjät eivät myöskään nähneet piste-erittelyä. Pisteitä voidaan tarkastella kunkin kanta-asiakaskortin **Korttitapahtumat**-lomakkeessa. Ota tämä ominaisuus käyttöön ottamalla määritys käyttöön valitsemalla **Kirjaa kanta-asiakaspisteet myyntiriviä kohti** **Commercen yhteiset parametrit** \> **Yleiset**-välilehdessä.
 
@@ -101,33 +102,33 @@ Seuraavassa taulukossa on kuvaus prosesseista, jotka on suoritettava, jotta kant
 
 Jälleenmyyjät voit määrittää myös kanta-asiakaskorttikohtaisen kanta-asiakaspisteiden enimmäismäärän. Tämän kentän avulla voidaan vähentää kanta-asiakkuuspetosten vaikutusta. Kun kanta-asiakaspisteitä on enimmäismäärä, käyttäjä ei voi ansaita lisää pisteitä. Jälleenmyyjä voi päättää estää kyseisten korttien käytön siihen saakka, että mahdollinen petos on tutkittu. Jos jälleenmyyjä tulee siihen tulokseen, että kyse on petoksesta, jälleenmyyjä voi estää asiakkaan kanta-asiakaskortin ja merkitä asiakkaan estetyksi. Se tehdään määrittämällä **Estä asiakasta liittymästä kanta-asiakasohjelmaan** -ominaisuudeksi **Kyllä** **Commerce**-pikavälilehden **Kaikki asiakkaat** -kohdassa. Estetyille asiakkaille ei voi myöntää kanta-asiakaskorttia missään kanavassa.
 
-   ![Ansaintajakso ja maksimipalkkiopisteet.](./media/Vesting-and-maximum-reward-points.png "Määritä ansaintajakso ja maksimipalkkiopisteet")
+   ![Ansaintajakso ja maksimipalkkiopisteet](./media/Vesting-and-maximum-reward-points.png "Määritä ansaintajakso ja maksimipalkkiopisteet")
 
 - Liitokset mahdollistavat erikoishinnoittelun ja alennukset, mutta käytössä voi olla myös sellaisia liitoksia, joita jälleenmyyjät eivät halua asiakkaiden näkevän. Esimerkiksi Paljon kuluttava asiakas -niminen liitos ei välttämällä miellytä kaikki asiakkaita. Lisäksi on joitakin liitoksia, joita ei pitäisi hallita myymälässä. Tällaisia ovat esimerkiksi työntekijäliitokset, sillä kassojen ei haluat määrittävän, kuka on työntekijä ja kenelle voi antaa työntekijäalennuksia. Jälleenmyyjät voivat valita liitokset, jotka on piilotettava kanavissa. Liitoksia, joissa on merkintä **Piilota kanaviin**, ei voi tarkastella, lisätä eikä poistaa myyntipisteessä. Liitokseen liitettyjä hintoja ja alennuksia käytetään silti tuotteissa.
 
-    ![Piilota liitoksia.](./media/Hide-affiliations.png "Piilota liitokset kanaviin")
+    ![Piilota liitoksia](./media/Hide-affiliations.png "Piilota liitokset kanaviin")
     
 - Puhelinkeskuksen käyttäjien on nyt helpompi etsiä asiakkaita kanta-asiakaskortin tietojen avulla sekä siirtyä asiakkaan kanta-asiakaskorttiin ja kanta-asiakaskortin tapahtumasivulle **Asiakaspalvelu**-sivulta.
 
-    ![Asiakaspalvelu.](./media/Customer-service.png "Asiakkaan kanta-asiakastietojen etsiminen")
+    ![Asiakaspalvelu](./media/Customer-service.png "Asiakkaan kanta-asiakastietojen etsiminen")
     
 - Jos kanta-asiakaskortti on vaarantunut, sen korvaava kortti on luotava ja kortin pisteet siirrettävä uudelle kortille. Korvaavan kortin työnkulkua on yksinkertaistettu tässä versiossa. Lisäksi asiakkaat voivat lahjoittaa osan kanta-asiakaspisteistä tai kaikki pisteet ystäville ja perheenjäsenille. Kun pisteitä siirretään, kummallekin kanta-asiakaskortille luodaan pisteiden oikaisukirjaukset. Korvaava kortti ja saldon siirtotoiminto ovat käytettävissä **Kanta-asiakaskortit**-sivulta.
 
-    ![Korvaus- ja siirtopisteet.](./media/Replace-and-transfer-points.png "Kanta-asiakaskortin tai siirtosaldon korvaaminen")
+    ![Korvaus- ja siirtopisteet](./media/Replace-and-transfer-points.png "Kanta-asiakaskortin tai siirtosaldon korvaaminen")
     
 - Jälleenmyyjät haluavat ehkä hyödyntää tiettyä tehokasta kanavaa asiakkaiden rekisteröinnissä kanta-asiakasohjelmaan. Kanta-asiakaskorttien rekisteröintilähteen voi nyt tallentaa, joten jälleenmyyjät voivat luoda raportteja näiden tietojen perusteella. Rekisteröintilähde tallennetaan automaattisesti kaikille MPOS/CPOS- tai sähköisten kaupankäyntikanavien kautta myönnetyille kanta-asiakaskorteille. Jos kanta-asiakaskortti on myönnetty taustasovelluksesta, puhelinkeskuksen käyttäjä voi valita soveltuvan kanavan.
 - Aiemmissa versioissa jälleenmyyjät voivat käyttää MPOS/CPOS:aa asiakkaiden kanta-asiakaspisteiden lunastamiseen myymälässä. Koska näissä versioissa kanta-asiakassaldo näytettiin kanta-asiakaspisteinä, kassa ei voinut tarkastella summaa valuutta-arvona, jota olisi voitu käyttää nykyisessä tapahtumassa. Kassan oli muunnettava pisteet valuutaksi, ennen kuin hän pystyi maksamaan kanta-asiakaspisteet. Sen jälkeen kun nykyisessä versiossa rivit on lisätty tapahtumaan, kassa näkee summan, jonka kanta-asiakaspisteet kattavat nykyisessä tapahtumassa. Niinpä tapahtumaan voi käyttää kaikki kanta-asiakaspisteet tai osan niistä. Lisäksi kassa näkee 30 päivän kuluessa vanhenevat pisteet, mikä mahdollistaa lisä- tai ristiinmyynnin, sillä asiakasta voidaan kannustaa käyttämään vanhenevat pisteet kyseissä tapahtumassa.
 
-    ![Pisteet, jotka kanta-asiakassaldo kattaa.](./media/Points-covered-by-loyalty-balance.png "Näytä kanta-asiakassaldon kattamat pisteet")
+    ![Pisteet, jotka kanta-asiakassaldo kattaa](./media/Points-covered-by-loyalty-balance.png "Näytä kanta-asiakassaldon kattamat pisteet")
 
-    ![Vanhentuvat pisteet.](./media/Expiring-points.png "Näytä vanhentuvat pisteet")
+    ![Vanhentuvat pisteet](./media/Expiring-points.png "Näytä vanhentuvat pisteet")
 
 - Versiossa 8.1.3 on otettu käyttöön kanta-asiakaskortilla maksaminen puhelinkeskuskanavassa. Voit ottaa tämän asetuksen käyttöön luomalla kanta-asiakkuuden maksuvälinetyypin ja liittämällä sen puhelinkeskukseen. 
 
     > [!NOTE]
     > Koska kanta-asiakasmaksut määritetään korttimaksuina, sinun on valittava kortti **Korttiasetukset**-sivulta. 
 
-    ![Kanta-asiakaskortin määritys.](./media/LoyaltyCardSetup.png "Kanta-asiakaskortin määritys")
+    ![Kanta-asiakaskortin määritys](./media/LoyaltyCardSetup.png "Kanta-asiakaskortin määritys")
 
     Kun tämä on määritetty, asiakkaat voivat lunastaa kanta-asiakkuuspisteitä puhelinkeskuksessa. Käyttökokemusta parannetaan myös näyttämällä kanta-asiakkuuspisteiden kattaman määrän, joten puhelinkeskuskäyttäjien ei tarvitse siirtyä toiseen näyttöön tarkistamaan kanta-asiakkuussaldoa.
 
@@ -144,12 +145,9 @@ Jälleenmyyjät voit määrittää myös kanta-asiakaskorttikohtaisen kanta-asia
     > Järjestelmä pakottaa käyttäjät tällä hetkellä määrittämään muiden tehtävätyyppien numerosarjan, mutta se ei ole enää pakollinen vaihe tulevissa julkaisuissa. Voit määrittää numerosarjan valitsemalla **Commercen yhteiset parametrit** \> **Numerosarjat** ja valitsemalla sitten **Kanta-asiakkuuden muun tehtävätyypin tunnus** -kohdan numerosarjan.
 
 - Hyvän asiakaspalvelun tarjoamisen ja asiakkaiden kyselyjen tehokkaan ratkaisemisen kannalta on tärkeää, että kassoilla on asiakkaan täydellisen profiilin käyttöoikeus. Version 10.0 myötä kassat näkevät myyntipisteessä kanta-asiakkuuden historiatiedot liitetyn kanta-asiakasohjelman ja tason tietojen lisäksi.
-- Maksuton tai alennettu toimitus on yksi tärkeimmistä tekijöistä, joilla asiakkaat motivoidaan tekemään verkko-ostoksia. Jotta jälleenmyyjät voisivat määrittää toimituskampanjat, versiossa 10.0 otetaan käyttöön uudenlainen toimituksen rajaan liittyvä kampanja, jossa jälleenmyyjä määrittää raja-arvot, jonka ylitettyään asiakkaat saavat alennetun tai maksuttoman toimituksen. Esimerkiksi 35 dollaria käyttämällä saa maksuttoman kahden päivän toimituksen tai kaikki kanta-asiakkaat saavat maksuttoman kahden päivän toimituksen. Tämä ominaisuus käytätä uutta edistynyttä automaattisten kulujen ominaisuutta. Lisätietoja [edistyneestä automaattisista kuluista](/dynamics365/unified-operations/retail/omni-auto-charges). Nämä edistyneet automaattiset kulut on otettava käyttöön, jotta lähetyskampanja toimisi. Ne voidaan ottaa käyttöön **Commercen parametrit** -sivun **Mukautetut tilaukset** -välilehdessä tai ottamalla käyttöön Käytä edistyneitä automaattisia kuluja -määrityksen. Koska vähittäismyyjä voi lisäksi määrittää monenlaisia veloituksia, kuten käsittely- tai asennusmaksuja, vähittäismyyjän on määritettävä, mikä veloitus on toimituskulu. Toimitusalennuksia käytetään vain tilausten toimituskuluihin. Määritä kulu toimituskuluksi siirtymällä **Maksukoodit**-lomakkeen valitsemalla ensin **Retail ja Commerce** \> **Retail ja Commerce IT** \> **Kanavan asetukset** \> **Kulut** ja sitten toivottujen kulujen Toimituskulut-valintaruudun. Siirry nyt **Toimitusraja-alennus** -lomakkeeseen ja määritä alennus.
+- Maksuton tai alennettu toimitus on yksi tärkeimmistä tekijöistä, joilla asiakkaat motivoidaan tekemään verkko-ostoksia. Jotta jälleenmyyjät voisivat määrittää toimituskampanjat, versiossa 10.0 otetaan käyttöön uudenlainen toimituksen rajaan liittyvä kampanja, jossa jälleenmyyjä määrittää raja-arvot, jonka ylitettyään asiakkaat saavat alennetun tai maksuttoman toimituksen. Esimerkiksi 35 dollaria käyttämällä saa maksuttoman kahden päivän toimituksen tai kaikki kanta-asiakkaat saavat maksuttoman kahden päivän toimituksen. Tämä ominaisuus käytätä uutta edistynyttä automaattisten kulujen ominaisuutta. Lisätietoja [edistyneestä automaattisista kuluista](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Nämä edistyneet automaattiset kulut on otettava käyttöön, jotta lähetyskampanja toimisi. Ne voidaan ottaa käyttöön **Commercen parametrit** -sivun **Mukautetut tilaukset** -välilehdessä tai ottamalla käyttöön Käytä edistyneitä automaattisia kuluja -määrityksen. Koska vähittäismyyjä voi lisäksi määrittää monenlaisia veloituksia, kuten käsittely- tai asennusmaksuja, vähittäismyyjän on määritettävä, mikä veloitus on toimituskulu. Toimitusalennuksia käytetään vain tilausten toimituskuluihin. Määritä kulu toimituskuluksi siirtymällä **Maksukoodit**-lomakkeen valitsemalla ensin **Retail ja Commerce** \> **Retail ja Commerce IT** \> **Kanavan asetukset** \> **Kulut** ja sitten toivottujen kulujen Toimituskulut-valintaruudun. Siirry nyt **Toimitusraja-alennus** -lomakkeeseen ja määritä alennus.
 
     Tuotealennusten tavoin tämä alennus hyväksyy kaikki aiemmat vakioalennustoiminnot, kuten sen, että vähittäismyyjä voi rajoittaa näitä alennuksia kupongeilla siten, että asiakkaat saavat nämä alennukset vain kuponkia käyttämällä. Lisäksi nämä alennukset määrittää kyseisten alennusten kelpoisuuden hyödyntämällä hintaryhmätoimintoa. Vähittäismyyjä voi esimerkiksi valita näiden kampanjoiden suorittamisen vain verkkokanavissa ja/tai tiettyjen asiakasryhmien, kuten kanta-asiakkaiden, kanavissa. Kun tilausrivit, joilla on määritetty toimitustapa, vastaavat määrittyjä rajaa, toimitusalennusta käytetään ja toimitusmaksua pienennetään määritetyn alennuksen perusteella. 
 
     > [!NOTE]
     > Kausialennuksista, kuten määräalennuksesta, yksinkertaisesta alennuksesta, yhdistelmäalennuksesta ja raja-alennuksesta, poiketen toimitusalennus ei luo alennusrivejä vaan muokkaa toimitusmaksua suoraan ja liittää alennuksen nimen kulun kuvaukseen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

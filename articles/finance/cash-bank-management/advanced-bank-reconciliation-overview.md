@@ -2,27 +2,28 @@
 title: Pankkitilin täsmäytyksen lisätoimintojen yhteenveto
 description: Tässä artikkelissa kuvataan pankkitilin täsmäytysprosessin lisätoimintojen työnkulku. Pankkitilin täsmäytyksen lisätoimintojen avulla voit tuoda tiliotteet, jotka voidaan täsmäyttää automaattisesti pankkitapahtumista.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "22104"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 22104
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ebddf6c77df227f896e6f275f741ea69fb68474
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b26b6e1e50e5a9b53ca6b5315de760f5bcec4769
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983589"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442864"
 ---
 # <a name="advanced-bank-reconciliation-overview"></a>Pankkitilin täsmäytyksen lisätoimintojen yhteenveto
 
@@ -50,6 +51,3 @@ Pankkitilin täsmäytyksen lisätoimintojen avulla tuodaan tiliotteita. Tuotu ti
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

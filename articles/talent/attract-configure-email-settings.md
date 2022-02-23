@@ -89,6 +89,3 @@ Voit ladata yrityksen logon kuvan ja muita tietoja sähköpostien brändin mukai
     ![Yrityksen tietosuojakäytännön ja käyttöehtojen linkin lisääminen sähköpostin alatunnisteeseen](./media/attract-admin-email-footer.png)
 
 4. Tallenna sähköpostimallin asetukset valitsemalla **Tallenna**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

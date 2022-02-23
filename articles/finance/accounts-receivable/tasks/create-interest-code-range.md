@@ -2,23 +2,26 @@
 title: Luo korkoryhmäalue
 description: Korkoryhmät voidaan määrittää laskemaan eri korkosummat arvoalueiden perusteella.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Interest, CustInterestRange
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b20870ade99dd48e72c8aa63f563bc51dc93bd9601d309c474af93cee6eddedb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0c5b20ff6fff2bc62daca68c46e949a38df8d92
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771845"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442661"
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Luo korkoryhmäalue
 
@@ -48,6 +51,3 @@ Korkoryhmät voidaan määrittää laskemaan eri korkosummat arvoalueiden perust
 21. Anna kuukausikorkoprosentti, jolla lasketaan korko kuukaudesta 7 alkaen. Tässä esimerkissä se on 2,5.
 22. Lopeta asetusten määritys valitsemalla Sulje.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

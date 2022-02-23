@@ -1,13 +1,16 @@
 ---
-title: Synkronoi tuoteluokitukset Dynamics 365 Commercessa
+title: Synkronoi tuoteluokitukset Dynamics 365 Commerceissa
 description: Tässä ohjeaiheessa kerrotaan, miten tuoteluokitukset synkronoidaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967947"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412038"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronoi tuoteluokitukset Dynamics 365 Commerceissa
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten tuoteluokitukset synkronoidaan Microsoft Dynamics 365 Commerce -sovelluksessa.
+
+## <a name="overview"></a>Yleiskatsaus
 
 Jotta monikanavien, kuten myyntipisteen ja puhelinkeskusten, tuoteluokituksia voidaan käyttää, luokitusten ja arvostelujen palvelun tuotteiden luokitukset on tuotava Commerce-sovelluksen kanavatietokantaan. Kun tuoteluokitukset ovat käytettävissä monikanavissa, ne auttavat asiakkaita epäsuorasti myyjien kanssa tehtävässä vuorovaikutuksessa.
 
@@ -57,7 +62,7 @@ Seuraavalla tavalla voit tarkistaa, että **RetailProductRating**-alityö on ole
 
 Seuraavassa kuvassa on esimerkki Commerce-sovelluksen alityön tiedoista.
 
-![RetailProductRating-alityön tiedot.](media/rnr-hq-ratings-sub-job.png)
+![RetailProductRating-alityön tiedot](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Jos et löydä **RetailProductRating**-alityötä, **Synkronoi tuoteluokitukset** -työ on jo ehkä suoritettu ja **1040 CDX**-työ on jo ehkä suoritettu ennen Commerce-ajastuksen alustusta. Tässä tapauksessa suorita **Tietojen täydellinen synkronointi** -työ seuraavasti.
@@ -81,7 +86,7 @@ Voit tuoda tuoteluokitukset Commerce-sovelluksiin luokitusten ja arvostelujen pa
 
 Seuraavassa kuvassa on esimerkki Commerce-sovelluksen erätyön määrityksestä.
 
-![Synkronoi tuoteluokitukset -erätyön määritys.](media/rnr-hq-batchjob-recurrence.png)
+![Synkronoi tuoteluokitukset -erätyön määritys](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Varmista, että tuoteluokituksen synkronoinnin erätyö onnistui
 
@@ -93,7 +98,7 @@ Seuraavalla tavalla voit varmistaa, että **Synkronoi tuoteluokitukset** -eräty
 
 Seuraavassa kuvassa on esimerkki erätyön tiedoista Commerce-sovelluksessa, kun erätyö on ajoitettu suoritettavaksi kahden tunnin välein.
 
-![Synkronoi tuoteluokitus -erätyön tiedot.](media/rnr-hq-batchjob-status-checking.png)
+![Synkronoi tuoteluokitus -erätyön tiedot](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Määritä tuoteluokitukset käytettäviksi myyntipisteessä
 
@@ -111,35 +116,22 @@ Voit ottaa tuoteluokitukset käyttöön myyntipisteessä seuraavasti.
 
 Seuraavassa kuvassa on esimerkki Commerce-parametrien määrityksestä, joita käytetään myyntipisteen tuotteiden luokitusten käyttöönotossa.
 
-![Myyntipisteen tuoteluokitusten Commerce-parametrien määritys.](media/rnr-hq-enable-ratings-in-pos.png)
+![Myyntipisteen tuoteluokitusten Commerce-parametrien määritys](media/rnr-hq-enable-ratings-in-pos.png)
 
 Seuraavassa kuvassa on esimerkki myyntipisteen tuoteluokituksista.
 
-![Myyntipisteen tuoteluokitukset.](media/rnr-pos-catalog-ratings.png)
+![Myyntipisteen tuoteluokitukset](media/rnr-pos-catalog-ratings.png)
 
 Seuraavassa kuvassa on esimerkki puhelinkeskuskanavien tuoteluokituksista.
 
-![Puhelinkeskuskanavan tuoteluokitukset.](media/rnr-call-center-ratings.png)
+![Puhelinkeskuskanavan tuoteluokitukset](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luokitukset ja arvostelut – yleiskatsaus](ratings-reviews-overview.md)
 
-[Luokitusten ja arvostelujen käytön hyväksyminen](opt-in-ratings-reviews.md)
+[Osallistu käyttääksesi luokituksia ja arvosteluja](opt-in-ratings-reviews.md)
 
 [Hallitse luokituksia ja arvosteluja](manage-reviews.md)
 
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
-
-[Synkronoi tuoteluokitukset](sync-product-ratings.md)
-
-[Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
-
-[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
-
-[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
-
-[Luokitusten ja arvostelujen usein kysytyt kysymykset](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

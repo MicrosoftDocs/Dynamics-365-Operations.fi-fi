@@ -1,28 +1,31 @@
 ---
-title: Käyttöomaisuuserän hankintakirjaustilit
+title: Käyttöomaisuuden hankintojen kirjaustilit
 description: Tässä artikkelissa kuvataan, kuinka määritetään kirjanpitotilejä käyttöomaisuuden hankkimista varten.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7718ab6ad40dd135a79d2d07def19465aef68b33
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 8fea6b1cd79b5536341a7cb50e5592ea38a7392d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675021"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4442705"
 ---
-# <a name="fixed-asset-acquisition-posting-accounts"></a>Käyttöomaisuuserän hankintakirjaustilit
+# <a name="fixed-asset-acquisition-posting-accounts"></a>Käyttöomaisuuden hankintojen kirjaustilit
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,6 +45,3 @@ Lisätietoja on ohjeaiheessa [Hankkia omaisuuseriä hankintojen kautta](acquire-
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

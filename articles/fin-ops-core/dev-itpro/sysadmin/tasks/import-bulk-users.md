@@ -2,9 +2,11 @@
 title: Tuo käyttäjiä Azure Active Directorysta
 description: Näiden ohjeiden avulla järjestelmänvalvoja voi tuoda manuaalisesti valitut käyttäjät tai suuren määrän käyttäjiä Azure Active Directorysta.
 author: peakerbl
+manager: AnnBe
 ms.date: 07/07/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce8c98add0c6d5fb07b3ba5338037d9a12b1d8e50a2d2039b0231d3d305c9ebe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56b6666310309817ff30ccb3902721880b829ee0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748285"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679811"
 ---
 # <a name="import-users-from-azure-active-directory"></a>Tuo käyttäjiä Azure Active Directorysta
 
@@ -44,11 +46,11 @@ Huomaa, että käyttäjiä ei voi valita Erätuonti-vaihtoehtoa käytettäessä.
 2. Valitse **Järjestelmänhallinta > Käyttäjät > Käyttäjä**.
 3. Valitse **Erätuonti**.
 4. Laajenna **Suorita taustalla** -osa.
-4. Valitse **Eräkäsittely**-kentässä **Kyllä**.
+4. Valitse **Kyllä** **Eräkäsittely**-kentässä.
 6. Syötä tai valitse arvo **Eräryhmä**-kentässä. Tämä on valinnainen vaihe.  
 7. Valitse **Kyllä** **Yksityinen**-kentässä. Tämä on valinnainen vaihe.  
-8. Valitse **Kyllä** **Kriittinen työ** -kentässä. Tämä on valinnainen vaihe.  
-9. Valitse vaihtoehto **Valvontaluokka**-kentässä.
+8. Valitse **Kyllä** **Kriittinen työ** -kentässä. bTämä on valinnainen vaihe.  
+9. Valitse vaihtoehto **Valvontaluokka-kentässä.
 10. Valitse **OK**.
 
 Kun tuonti on päättynyt, käyttäjien roolien määrittäminen on pakollista.
@@ -56,6 +58,3 @@ Kun tuonti on päättynyt, käyttäjien roolien määrittäminen on pakollista.
 ## <a name="run-in-a-sandbox-environment"></a>Eristysympäristön suorittaminen
 1. Valitse **Erätuonti**.
 2. Valitse **OK**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

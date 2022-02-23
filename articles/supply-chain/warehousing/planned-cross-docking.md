@@ -2,9 +2,11 @@
 title: Suunniteltu cross-docking
 description: Tässä ohjeaiheessa kuvataan suunniteltua cross-dockingia, jossa tilauksen edellyttämä varastomäärä ohjataan suoraan vastaanotosta tai luomisesta oikealle lähtevien laiturille tai valmistelualueelle. Saapuvan lähdekoodin koko jäljellä oleva varasto ohjataan oikeaan varastosijaintiin tavallisen hyllytysprosessin kautta.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573030"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970303"
 ---
 # <a name="planned-cross-docking"></a>Suunniteltu cross-docking
 
@@ -28,23 +30,21 @@ Tässä aiheessa kuvataan suunnitellun cross-dockingin lisäasetukset. Cross-doc
 
 Cross-dockingin avulla työntekijät ohittavat saapuvan hyllytyksen ja lähtevien nimikkeiden varaston, joka on jo merkitty lähtevälle tilaukselle. Näin ollen varastojen kosketuskertojen määrää vähennetään mahdollisuuksien mukaan. Lisäksi, koska vuorovaikutus järjestelmän kanssa on vähäisempää, fyysisen varastoinnin työn aika- ja tilasäästöt lisääntyvät.
 
-Ennen kuin suoritat cross-dockingin, sinun on konfiguroitava uusi cross-docking-malli, jossa on määritetty toimituslähde ja muut cross-docking-vaatimukset. Kun lähtevä tilaus luodaan, rivi täytyy merkitä saman nimikkeen sisältävään saapuvaan tilaukseen. Voit valita cross docking -mallista direktiivinkoodikentän samalla tavalla kuin täydennys- ja ostotilauksia määritetään.
+Ennen kuin cross-docking voidaan suorittaa, käyttäjän on konfiguroitava uusi cross-docking-malli, jossa on määritetty toimituslähde ja muut cross-docking-vaatimukset. Kun lähtevä tilaus luodaan, rivi täytyy merkitä saman nimikkeen sisältävään saapuvaan tilaukseen.
 
 Saapuvien tilausten vastaanoton yhteydessä cross-docking-asennus määrittää automaattisesti, että cross-docking on tarpeen, ja luo varasto- ja kuormitustyön tarvittavalle määrälle sijaintidirektiivin asetusten mukaisesti.
 
 > [!NOTE]
-> Varastotapahtumat *eivät* ole rekisteröimättömiä, kun crossing-dock-työ peruutetaan, vaikka tämän ominaisuuden asetus olisi käytössä varastonhallinnan parametreissa.
+> Varastotapahtumat **eivät** ole rekisteröimättömiä, kun crossing-dock-työ peruutetaan, vaikka tämän ominaisuuden asetus olisi käytössä varastonhallinnan parametreissa.
 
-## <a name="turn-on-the-planned-cross-docking-features"></a>Suunnitellun cross-docking-toimintojen ottaminen käyttöön
+## <a name="turn-on-the-planned-cross-docking-feature"></a>Suunnitellun cross-docking-toiminnon ottaminen käyttöön
 
-Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota seuraavat ominaisuudet käyttöön seuraavassa järjestyksessä:
+Ennen kuin voit käyttää laajennettua suunniteltua cross-dockingia, sinun on otettava järjestelmäsi toiminto käyttöön. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
 
-1. *Suunniteltu cross-docking*
-1. *Cross docking -mallit ja sijaintidirektiivit*
-    > [!NOTE]
-    > Tämän ominaisuuden avulla **direktiivin koodi** kenttä voidaan määrittää cross docking -mallissa samalla tavalla kuin täydennysmallien määrittäminen. Tämän ominaisuuden ottaminen käyttöön estää sinua lisäämästä lopullisen *hyllytys* rivin cross-docking-työmalliriveille direktiivinkoodia. Näin varmistetaan, että työn luonnin aikana voidaan määrittää lopullinen sijainti, ennen kuin otetaan huomioon työmallit.
+- **Moduuli:** *Varastonhallinta*
+- **Toiminnon nimi:** *Suunniteltu cross-docking*
 
-## <a name="setup"></a>Luo perustiedot
+## <a name="setup"></a>Määritys
 
 ### <a name="regenerate-load-posting-methods"></a>Lataa kirjausmenetelmät uudelleen
 
@@ -90,10 +90,6 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
 
         Tämä vaihtoehto määrittää, tuleeko toimitus vahvistaa uudelleen vastaanoton aikana. Jos tämän asetuksen arvoksi on määritetty *Kyllä*, sekä enimmäisaikaikkuna että vanhenemispäivien alue tarkistetaan.
 
-    - **Direktiivikoodi:** Jätä tämä kenttä tyhjäksi
-
-        Tämä vaihtoehto on käytössä *cross docking -malleilla ja sijaintidirektiivi* -toiminnolla. Järjestelmän käyttää sijaintidirektiivejä parhaan paikan määrittämiseen cross-docking varaston siirtämiselle. Voit määrittää sen määrittämällä jokaiselle asiaankuuluvalle cross-docking-mallille direktiivikoodin. Jos direktiivikoodi on määritetty, järjestelmä etsii sijaintidirektiivit direktiivikoodin perusteella, kun työ luodaan. Näin voit rajata tietyssä cross docking -mallissa käytettävät sijaintiohjeet.
-
     - **Vahvista aikaikkuna:** *Kyllä*
 
         Tämä vaihtoehto määrittää, arvioidaanko enimmäisaikaikkuna, kun toimituslähde valitaan. Jos tämän asetuksen arvoksi on määritetty *Kyllä*, järjestelmän enimmäis- ja vähimmäisaikakenttiin liittyvät kentät ovat käytettävissä.
@@ -116,9 +112,6 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
 
     - **Järjestysnumero:** *1*
     - **Toimituslähde:** *Ostotilaus*
-
-> [!NOTE]
-> Voit määrittää kyselyn ohjaamaan, milloin määritettyä cross-docking-mallia käytetään. Cross docking-mallien kyselyssä on vain *InventTable* (nimikettä) -taulukko ja sen sisäliitos *WHSInventTable* (WHS-nimikkeet) -taulukko. Jos haluat lisätä kyselyyn muita tauluja, voit liittää ne käyttämällä vain *olemassa olevat liitoksia* tai *ei olemassa olevia liitoksia*. Kun suodatat yhdistetyt taulut, päätaulun tietue haetaan kutakin yhdistetyn taulun täsmäytystietuetta varten. Jos liitostyyppi *liitos on olemassa*, haku päättyy sen jälkeen, kun ensimmäinen vastaavuus on löydetty. Jos esimerkiksi liität myyntitilausrivitaulun nimiketauluun, järjestelmä tarkistaa ja palauttaa nimikkeet, joiden osalta vähintään yhdellä myyntitilausrivillä on määritetty ehto. Tiedot haetaan päätaulukosta (nimikkeet), ei alitaulukosta (myyntitilausrivi). Näin ollen ruudusta ei voi tehdä suodatusta lähdeasiakirjojen, kuten myyntitilausrivien tai asiakkaiden, mukaan.
 
 ### <a name="create-a-work-class"></a>Työluokan luominen
 
@@ -154,9 +147,6 @@ Suunniteltu cross-docking toteutetaan kuormituksenkirjausmenetelmänä. Kun olet
     - **Työluokan tunnus:** *CrossDock*
 
 1. Valitse **Tallenna** ja vahvista, että *51 Cross Dock* -mallille on valittu **Kelvollinen**-valintaruutu .
-1. Valinnainen: Valitse **Muokkaa kyselyä**, jos haluat määrittää ehdot, milloin ja missä työmallia käytetään.
-
-    Voit määrittää kyselyn ohjaamaan, milloin tiettyä työmallia käytetään. Voit esimerkiksi määrittää, että mallia voi käyttää vain tietyssä sijainnissa. Jos haluat käyttää cross docking -työmallia tietyssä sijainnissa, **Aloitussijainti**-kentän, ei **Sijainti**-kentän, suodattaminen on suodatettava, koska saapuvien prosessien (osto, cross docking ja täydennys) luonti alkaa hyllytysriviltä. Kun työ luodaan, sijaintia koskeva asetus määrittää **Sijainti**-kentän arvoksi aseta sijainti. Poimintapaikka tallennetaan kuitenkin **Aloitussijainti**-kenttään.
 
 > [!NOTE]
 > *Poiminta*- ja *Hhyllytys*-työtyyppien työluokkien tunnusten on oltava samat.
@@ -324,7 +314,4 @@ Tällä hetkellä molemmilla työtunnuksilla on sama kohderekisterikilpi. Jotta 
 
 Seuraavassa kuvassa näkyy, miten tehty cross-docking-työ saattaa näkyä Microsoft Dynamics 365 Supply Chain Managementissa.
 
-![Cross-docking-työ päättynyt.](media/PlannedCrossDockingWork.png "Cross-docking-työ päättynyt")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![Cross-docking-työ päättynyt](media/PlannedCrossDockingWork.png "Cross-docking-työ päättynyt")

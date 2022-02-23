@@ -2,23 +2,26 @@
 title: Suunnittelun muutostenhallinnan yhteisten arvojen luominen
 description: Tässä aiheessa käsitellään suunnittelun muutostenhallinnan eri osissa parametreina käytettävien yhteisten arvojen luontia.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductParameters, EngChgEcmSeverityTable, EngChgEcmSeverityRuleSet, EngChgEcmSeverityLookup,EngChgEcmSeverityChart,EngChgEcmRequestSeverityChart,EngChgEcmPriorityTable, EngChgEcmPriorityLookup, EngChgEcmPriorityChart, EngChgEcmMaterialDisposition, EngChgEcmEH
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c2ff21490dc71859d75923dd757e264096d4fcba
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 86de050ef4110e3485a77099440f3402e46cc498
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565924"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4427527"
 ---
 # <a name="establish-common-values-for-engineering-change-management"></a>Suunnittelun muutostenhallinnan yhteisten arvojen luominen
 
@@ -88,6 +91,3 @@ Määritä seuraava kenttä kullekin sääntöjoukolle:
 - **Vakavuusaste** – Valitse vakavuusaste, jolle säännöt luodaan. Tasot luodaan ja nimetään **Suunnittelun muutosten vakavuusasteet** -sivulla. (Lisätietoja on edellisessä osassa.)
 
 Lisää tai poista valittuna olevan vakavuusasteen sääntöjä **Säännöt**-pikavälilehden painikkeilla. Kullakin säännöllä on **Sääntö**- ja **Nimi**-kenttä. Järjestelmä luo nämä säännöt, ja ne ilmaisevat muutostyypit, joita tuotteella voi olla. Nimi ilmaisee muutoksen tyypin.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

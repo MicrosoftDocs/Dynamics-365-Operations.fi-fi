@@ -2,24 +2,27 @@
 title: Ostoskorikuvakemoduuli
 description: Tässä ohjeaiheessa käsitellään ostoskorimoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 08/02/2021
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ebc5cfa490a4c8538fd081aced0844ed01d63a26
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735675"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4412130"
 ---
 # <a name="cart-icon-module"></a>Ostoskorikuvakemoduuli
 
@@ -27,34 +30,20 @@ ms.locfileid: "6735675"
 
 Tässä ohjeaiheessa käsitellään ostoskorimoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
+## <a name="overview"></a>Yleiskuvaus
+
 Ostoskorikuvakemoduuli edustaa koria sivun otsikkomoduulissa ja ilmaisee, kuinka monta nimikettä ostoskorissa on. Ostoskorikuvakemoduuli näyttää myös ostoskorin yhteenvedon (tunnetaan myös nimellä miniostoskori), kun hiiri viedään ostoskorikuvakkeen yli. Pienoiskori antaa käyttäjälle yhteenvedon ostoskorin nimikkeistä ilman, että sinun tarvitsee siirtyä ostoskorisivulle. Lisäksi se mahdollistaa myös käyttäjän siirtymisen suoraan kassasivulle, jos hän on tyytyväinen yhteenvetoon. Tämä vähentää sivusiirtymien määrää ja nopeuttaa uloskuittausta. 
+
+> [!NOTE]
+> Kortin kuvakemoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.11.
 
 Seuraavassa kuvassa näkyy esimerkki ostoskorin kuvakemoduulista, jossa näkyy pienoiskärry Fabrikam-otsikossa.
 
-![Esimerkki ostoskorikuvakemoduulista.](./media/ecommerce-Minicart.PNG)
+![Esimerkki ostoskärrykuvakemoduulista](./media/ecommerce-Minicart.PNG)
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
-- **Näytä pienoiskori** – Jos ominaisuuden arvoksi määritetään **Tosi**, ostoskorin yhteenvedon (pienoiskorin) näytetään, kun käyttäjä siirtää kohdistimen ostoskorikuvakkeen päälle. Tätä toimintoa tuetaan vain työpöydän näkymäporteissa.
-- **Salli anonyymi siirtyminen kassalle** – Jos ominaisuuden arvoksi on määritetty **Tosi**, pienoiskori sallii käyttäjien, jotka eivät ole kirjautuneet sisään, siirtyä kassalle vieraana. Ominaisuus on saatavana Commercen versiossa 10.0.21 Commercen moduulikirjastopaketin osana.
-- **Nimikkeiden järjestys** – Tämä ominaisuus määrittää järjestyksen, jossa nimikkeet näkyvät pienoiskorissa. Kun **Uudet nimikkeet lisätään luetteloon ensimmäiseksi** -vaihtoehto valitaan, uudet ostokoriin lisättävät nimikkeet näkyvät ensimmäisenä pienoiskorin nimikeluettelossa. Kun **Uudet nimikkeet lisätään luetteloon viimeiseksi** -oletusvaihtoehto valitaan, uudet ostokoriin lisättävät nimikkeet näkyvät viimeisenä pienoiskorin nimikeluettelossa. Ominaisuus on saatavana Commercen versiosta 10.0.21 alkaen Commercen moduulikirjastopaketin osana.
-
-> [!IMPORTANT]
-> **Salli anonyymi siirtyminen kassalle**- ja **Nimikkeiden järjestys** -ominaisuudet ovat saatavana Commercen versiosta 10.0.21 alkaen. Niitä varten on asennettava Commercen moduulikirjastopaketin versio 9.31.
-
-## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Moduulin ominaisuudet ja paikat Adventure Works -teemassa
-
-Adventure Works -teeman ostoskorikuvakemoduuli sisältää kaksi ylimääräistä paikkaa pienoiskoria varten. Nämä paikat ovat moduulimääritelmän laajennuksia.
-
-- **Tyhjän ostosokorin kampanjat** – Tähän paikkaan voi lisätä sisältölohkomoduulin. Kun ostoskori on tyhjä, määritetty sisältölohkomoduuli näytetään. Sisältölohkomoduulia voidaan käyttää kampanjoille, markkinointisisällölle ja luokkasivujen linkeille, jotta asiakkaat voivat jatkaa ostosten tekemistä.
-- **Kampanjasisältö** – Tätä paikkaa voidaan käyttää kampanjoiden esittelemiseen, esimerkiksi "Ilmainen toimitus yli 100 euron toimituksiin". Kampanjasisällön paikassa voidaan käyttää sisältölohko-, tekstilohko- ja kuvaluettelomoduuleja.
-
-Seuraavassa kuvassa on esimerkki Adventure Works -teeman ostoskorikuvakemoduulista, joka näyttää kampanjasisältöä pienoiskorissa.
-
-![Esimerkki ostoskorikuvakemoduulista Adventure Works -teemassa](./media/AW_minicart.PNG)
-
-> [!IMPORTANT]
-> Adventure Works -teeman paikat ovat käytettävissä Dynamics 365 Commerce -version 10.0.20 julkaisusta eteenpäin.
+- **Näytä pienoiskori** – Jos valinta on tosi, tämä ominaisuus mahdollistaa ostoskorin yhteenvedon (pienoiskorin) näyttämisen, kun hiiri viedään ostoskorin kuvakkeen yli. Tätä toimintoa tuetaan vain työpöydän näkymäporteissa.
 
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Ostoskorikuvakkeen lisääminen sivulle
 
@@ -77,6 +66,3 @@ Jos haluat lisätä ostoskorikuvakkeen moduulin, katso kohta [Otsikkomoduuli](au
 [Tilauksen tiedot -moduuli](order-confirmation-module.md)
 
 [Lahjakorttimoduuli](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

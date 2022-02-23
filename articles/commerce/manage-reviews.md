@@ -2,12 +2,15 @@
 title: Hallitse luokituksia ja arvosteluja
 description: Tässä ohjeaiheessa käsitellään luokitusten ja arvostelujen hallintaa Microsoft Dynamics 365 Commerce -sivustonmuodostimessa.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968224"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4411993"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hallitse luokituksia ja arvosteluja
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään luokitusten ja arvostelujen hallintaa Microsoft Dynamics 365 Commerce -sivustonmuodostimessa.
+
+## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce käyttää Microsoft Azure Cognitive Service -palvelua arvostelun tekstin automaattisessa valvonnassa havaitsemalla sopimattomat sanat. Valvojat voivat toteuttaa myös seuraavat manuaaliset tehtävät Dynamics 365 Commerce -sivustonmuodostimessa.
 
@@ -43,7 +48,7 @@ Commerce-sivustonmuodostimessa voi lukea arvostelun seuraavasti.
 
 Lisäsuodattimien avulla voit rajoittaa arvosteluita kauden, arvioinnin, kanavan tai vaikutuksen tila (poistettu, vastattu tai raportoitu).
 
-![Valvonnan aloitussivu.](media/rnr-moderation-home.png) 
+![Valvonnan aloitussivu](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Arvosteluun vastaaminen 
 
@@ -57,7 +62,7 @@ Commerce-sivustonmuodostimessa voi vastata arvostelun seuraavasti.
 1. Kirjoita vastauksen teksti ja nimi, jonka haluat näkyvän vastaajan kohdalla. Vastaajan oletusnimi on **valvoja**.
 1. Kun olet valmis, valitse **Kirjaa vastaus**.
 
-![Arvosteluun vastaaminen.](media/rnr-moderation-response.png) 
+![Arvosteluun vastaaminen](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Arvostelun poistaminen 
 
@@ -80,7 +85,7 @@ Commerce-sivustonmuodostimessa voi etsiä asiakkaan tietoja ja poistaa niitä se
 1. Jos asiakkaalla on arvosteluaktiviteetteja (esimerkiksi arvostelun lähetyksiä, äänestyksiä toisen asiakkaan arvosteluista tai kommentteja toisen asiakkaan arvostelusta), näkyvissä on tuloksia. Jokaisen nimikkeen kohdalla on **Poista**-painike.
 1. Valitse jokaisen poistettavan nimikkeen kohdalla **Poista**. Kun sinulta kysytään vahvistusta, valitse **Kyllä**. 
     
-![Asiakkaan tietojen poistaminen.](media/rnr-moderation-delete-reviews.png) 
+![Asiakkaan tietojen poistaminen](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Tietojen poistaminen kokonaan järjestelmästä voi kestää jopa seitsemän päivää. Valvojien tulee ilmoittaa asiakkaille tästä viivästyksestä.
@@ -104,37 +109,26 @@ Commerce-sivustonmuodostimessa voi tarkastella luokitus- ja arvostelutrendejä s
 1. Siirry kohtaan **Aloitus \> Arvostelut \> Raportointi**.
 1. Lataa malli valitsemalla **PowerBI-malli**.
 
-    ![Power BI -mallin lataaminen.](media/rnr-moderation-reports.png) 
+    ![Power BI -mallin lataaminen](media/rnr-moderation-reports.png) 
 
 1. Avaa ladattu malli käyttämällä Power BI -sovellusta. Sulje näyttöön avautuva **Verkkosisällön käyttöoikeus** -valintaikkuna ja sulje sitten näyttöön tuleva Päivitys-virhesanoma.
 1. Siirry kohtaan **Aloitus**, valitse **Muokkaa kyselyitä** ja valitse sitten **Tietolähteen asetukset**.
 1. Valitse **Tietolähteen asetukset** -valintaikkunassa **Muuta lähdettä**.
 1. Syötä **URL-osoite**-kenttään edellisessä proseduurissa ladattujen arvostelujen tietojen polku (esimerkiksi **c:\\reviews\\ReviewsData.csv**).
 
-    ![URL-osoite-kenttä CSV-valintaikkunassa.](media/rnr-powerbi-datasource-settings.png) 
+    ![URL-osoite-kenttä CSV-valintaikkunassa](media/rnr-powerbi-datasource-settings.png) 
 
 1. Valitse **OK** ja valitse sitten **Käytä muutoksia**. Muutokset otetaan käyttöön tietolähteessä muutaman minuutin kuluessa.
 1. Valitse **Trendien taulukko**, jos haluat tarkastella luokitusten ja arvostelujen trendejä.
 
-    ![Luokitusten ja arvostelujen trendit.](media/rnr-powerbi-dashboard-template.png) 
+    ![Luokitusten ja arvostelujen trendit](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luokitukset ja arvostelut – yleiskatsaus](ratings-reviews-overview.md)
 
-[Luokitusten ja arvostelujen käytön hyväksyminen](opt-in-ratings-reviews.md)
+[Osallistu käyttääksesi luokituksia ja arvosteluja](opt-in-ratings-reviews.md)
 
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 
 [Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa](sync-product-ratings.md)
-
-[Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
-
-[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
-
-[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
-
-[Luokitusten ja arvostelujen usein kysytyt kysymykset](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
