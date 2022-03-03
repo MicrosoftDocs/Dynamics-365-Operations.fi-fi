@@ -2,26 +2,23 @@
 title: Laaduntarkistus
 description: Tässä ohjeaiheessa on tietoja laaduntarkistusominaisuudesta. Tämän ominaisuuden avulla varaston työntekijät voivat tehdä nopeita laaduntarkistuksia samalla, kun nimikkeitä vastaanotetaan laiturialueelle.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 0848eeb2ad073915ad90d2fd2a4a91f0f420c0ab
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427471"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103285"
 ---
 # <a name="quality-check"></a>Laaduntarkistus
 
@@ -42,12 +39,9 @@ Jos tämä ominaisuus on käytössä, saapumis- ja laaduntarkistus tapahtuvat se
 
 Tämä prosessi voidaan määrittää myös siten, että kaikki skannatut rekisterikilvet ohjataan välittömästi laaduntarkistussijaintiin.
 
-## <a name="turn-on-the-quality-check-feature"></a>Laaduntarkistusominaisuuden ottaminen käyttöön
+## <a name="turn-the-quality-check-feature-on-or-off"></a>Laaduntarkistusominaisuuden ottaminen käyttöön tai käytöstä poistaminen
 
-Ennen kuin käytät *laaduntarkistusominaisuutta*, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Ominaisuuden nimi:** *Laaduntarkistus*
+Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Laaduntarkistus* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Laaduntarkistus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Määritä ominaisuus tälle esimerkkiskenaariolle
 
@@ -302,7 +296,7 @@ Kun ostotilaus on luotu, se voidaan vastaanottaa käyttämällä **Ostotilausriv
 
 #### <a name="receive-pallet-1"></a>Vastaanota kuormalava 1
 
-1. Kirjaudu varastosovellukseen käyttäjänä varastossa *51*. (Anna käyttäjätunnukseksi *51* ja salasanaksi *1*.)
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastolle *51*. (Anna käyttäjätunnukseksi *51* ja salasanaksi *1*.)
 1. Siirry kohtaan **Saapuvat \> Ostotilausrivin vastaanotto**.
 1. Syötä **PONUM**-kenttään ostotilauksen numero.
 1. Vahvista ostotilausnumero.
@@ -313,7 +307,7 @@ Kun ostotilaus on luotu, se voidaan vastaanottaa käyttämällä **Ostotilausriv
 
     Näkyviin tulevalla **Laaduntarkistus**-sivulla ei ole syöttökenttiä. Se sisältää vain vahvistuksen (valintamerkin) painikkeen sivun alaosassa ja valikkopainikkeen (**≡**) sivun yläosassa. (Valikkopainiketta kutsutaan joskus neljän viivan painikkeeksi tai hampurilaispainikkeeksi.) Laaduntarkistusprosessin nopeuttamiseksi käyttäjä voi vahvistaa **Laaduntarkistus**-sivun kuormalavan läpäistyä laaduntarkistuksen.
 
-    ![Laaduntarkistus-sivu](media/quality-check.png "Laaduntarkistus-sivu")
+    ![Laaduntarkistus-sivu.](media/quality-check.png "Laaduntarkistus-sivu")
 
 1. Valitse vahvistuspainike, jos haluat hyväksyä rivin 1 kuormalavan 1 laaduntarkistuksen.
 
@@ -397,3 +391,6 @@ Tässä skenaariossa kuormalava 3 hyväksytään.
 1. Valitse valikkopainike (**≡**) sivun yläosassa ja valitse sitten valikosta **Peruuta**, jos haluat palata valikkoon.
 
 Voit nyt sulkea mobiilisovelluksen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

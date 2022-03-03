@@ -1,29 +1,26 @@
 ---
 title: Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
 description: Tässä aiheessa selitetään, miten arvonlisäverot lasketaan erityyppisille tileille (toimittaja, asiakas, kirjanpito ja projekti) yleisen kirjauskansioiden riveille.
-author: EricWang
-manager: Ann Beebe
-ms.date: 08/14/2019
+author: EricWangChen
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 51d43c8e6d16201e1f8c392c13ead20287782dcc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442622"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311951"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
 [!include [banner](../includes/banner.md)]
@@ -58,7 +55,7 @@ Muussa tapauksessa arvonlisäveron suunta on Saatava arvonlisävero.
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
-![Verojen mahdolliset suunnat projektitileille](media/Sales-Tax-Direction-Vendor.jpg)
+![Verojen mahdolliset suunnat projektitileille.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Tilin tyyppi on Toimittaja
 
@@ -76,23 +73,13 @@ Muussa tapauksessa arvonlisäveron suunta on Saatava arvonlisävero.
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
-![Verojen mahdolliset suunnat toimittajatileille](media/Sales-Tax-Direction-Vendor.jpg)
+![Verojen mahdolliset suunnat toimittajatileille.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Tilin tyyppi on Asiakas
 
-Jos tositteessa on kirjauskansiorivi, jossa tilin tyyppinä on **Asiakas**, kaikki tositteen kirjauskansiorivit käyttävät samaa veron suuntaa. Seuraavissa kohdissa näytetään mahdolliset verojen suunnat asiakastileille.
+Jos tositteessa on kirjauskansiorivi, jossa tilin tyyppinä on **Asiakas**, kaikki tositteen kirjauskansiorivit käyttävät samaa veron suuntaa. 
 
-•   Jos arvonlisäverokoodi on verovapaus, arvonlisäveron suunta on Verovapaa osto.
-
-•   Jos arvonlisäverokoodi on EU:n sisäinen ALV, arvonlisäveron suunta on Saatava arvonlisävero.
-
-•   Jos arvonlisävero on käänteinen veloitus, arvonlisäveron suunta on Saatava arvonlisävero.
-
-Muussa tapauksessa arvonlisäveron suunta on Maksettava arvonlisävero.
-
-Seuraava kaavio kuvaa säännön graafisesti.
-
-![Verojen mahdolliset suunnat asiakastileille](media/Sales-Tax-Direction-Customer.jpg)
+Jos arvonlisäverokoodi on verovapaus, arvonlisäveron suunta on Verovapaa myynti. Muussa tapauksessa arvonlisäveron suunta on Maksettava arvonlisävero.
 
 ### <a name="account-type-is-ledger"></a>Tilin tyyppi on Kirjanpito
 
@@ -106,7 +93,7 @@ Muussa tapauksessa, jos kirjauskansion summa on debet (positiivinen), arvonlisä
 
 Seuraava kaavio kuvaa säännön graafisesti.
 
-![Verojen mahdolliset suunnat kirjanpitotileille](media/Sales-Tax-Direction-Ledger.jpg)
+![Verojen mahdolliset suunnat kirjanpitotileille.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Korvaa arvonlisäveron suunta
 
@@ -118,9 +105,9 @@ Siirry kohtaan **Kirjanpito \> Tilikartta \> Tilit \> Päätilit** ja valitse **
 
 Tässä osiossa kuvataan, miten arvonlisäveron summan etumerkki lasketaan.
 
-![Arvonlisäverotapahtumat-sivu](media/sales-tax-amount-sign.jpg)
+![Arvonlisäverotapahtumat-sivu.](media/sales-tax-amount-sign.jpg)
 
-Seuraavassa taulukossa esitetään yleinen sääntö, joka määrittää arvonlisäveron summien etumerkin väliaikaisessa arvonlisäveron taulussa.
+Seuraavassa taulukossa esitetään yleinen sääntö, joka määrittää arvonlisäveron suunnan ja summien etumerkin väliaikaisessa arvonlisäveron taulussa.
 
 | Kirjauskansiorivin summa | Arvonlisäveron suunta  | Arvonlisäveron summan etumerkki |
 |---------------------|----------------------|-----------------------|
@@ -129,7 +116,7 @@ Seuraavassa taulukossa esitetään yleinen sääntö, joka määrittää arvonli
 | Negatiivinen            | Saatava arvonlisävero | Negatiivinen              |
 | Negatiivinen            | Maksettava arvonlisävero    | Positiivinen              |
 
-Tositteilla, joilla on vain **Projekti**- tai **Kirjanpito**-rivejä, on erityissääntö, kun **Kirjanpito**-riville on valittu arvonlisäveroryhmä tai nimikkeen arvonlisäveroryhmä. Tätä sääntöä ohjaa yleisten kirjauskansioiden Ota käyttöön itsenäinen arvonlisäveron laskeminen -toiminto. Kun tämä toiminto ei ole käytössä, **Kirjanpito**-rivin veron summa käyttää **Projekti**-rivin debet/kredit-suuntaa. Kun tämä toiminto on käytössä, **Kirjanpito**-rivin veron summa käyttää sen omaa debet/kredit-suuntaa. Seuraava taulukko esittää säännön molemmille skenaariolle. 
+Tositteilla, joilla on vain **Projekti**- tai **Kirjanpito**-rivejä, on erityissääntö, kun **Kirjanpito**-riville on valittu arvonlisäveroryhmä tai nimikkeen arvonlisäveroryhmä. Tätä sääntöä ohjaa yleisten kirjauskansioiden **Ota käyttöön itsenäinen arvonlisäveron laskeminen** -toiminto. Kun tämä toiminto ei ole käytössä, **Kirjanpito**-rivin veron summa käyttää **Projekti**-rivin debet/kredit-suuntaa. Kun tämä toiminto on käytössä, **Kirjanpito**-rivin veron summa käyttää sen omaa debet/kredit-suuntaa. Seuraava taulukko esittää säännön molemmille skenaariolle. 
 
 **Sääntö, kun toiminto on käytössä**
 
@@ -157,3 +144,6 @@ Seuraavassa taulukossa kuvataan yleinen sääntö.
 | Saatava arvonlisävero | Negatiivinen              | Saatava vero -tili | Negatiivinen (kredit)  |
 | Maksettava arvonlisävero    | Positiivinen              | Maksettava vero -tili    | Negatiivinen (kredit)  |
 | Maksettava arvonlisävero    | Negatiivinen              | Maksettava vero -tili    | Positiivinen (debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Klusterisijainti täynnä
 description: Tässä ohjeaiheessa on tietoja Klusterisijainti täynnä -ominaisuudesta. Tämä ominaisuus on vaihtoehto tiukalle työkatkosääntöjen valvonnalle, kun käytössä on klusterikeräily. Tämä johtuu siitä, että ominaisuus mahdollistaa konttien ja kassien tilavuusrajoitteiden aiempaa suuremman virhemarginaalin.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427433"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102824"
 ---
 # <a name="cluster-position-full"></a>Klusterisijainti täynnä
 
@@ -31,14 +28,11 @@ ms.locfileid: "4427433"
 
 Tämä ominaisuus sisältää mahdollisuuden käyttää **Täysi**-painiketta klusterin yhdessä työyksikössä. Vanhemmissa versioissa tämä vaihtoehto oli käytettävissä vain tavallisissa tilauskeräilyssä, ei klusterikeräilyssä. Tämä ominaisuus eroaa kuitenkin normaalista **Täysi**-painikkeesta siten, että se peruuttaa jäljellä olevan työn. Se ei ehdota käyttäjälle toisen lokeron lisäämistä samaan klusteriin eikä luo automaattisesti uutta työtä.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Klusterisijainti täynnä -ominaisuuden ottaminen käyttöön
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Klusterisijainti täynnä -ominaisuuden ottaminen käyttöön tai poistaminen käytöstä
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Klusterisijainti täynnä* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Klusterisijainti täynnä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-- **Moduuli:** *Varastonhallinta*
-- **Ominaisuuden nimi:** *Klusterisijainti täynnä*
-
-## <a name="setup"></a>Luo perustiedot
+## <a name="setup"></a>Asetukset
 
 Tässä osassa on ohjeita *Klusterisijainti täynnä* -ominaisuuden määrittämiseksi ja käyttämiseksi sekä ominaisuuden esimerkki.
 
@@ -214,7 +208,7 @@ Luotuna on nyt kaksi työtunnusta. Molemmilla tunnuksilla on kaksi keräilyrivi�
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Mobiililaitteen työnkulun suoritus – Tuotteen työn vahvistuksen määritys
 
-1. Kirjaudu varastosovellukseen käyttäjänä varastossa *61*.
+1. Kirjaudu varastonhallinnan mobiilisovellukseen käyttäjänä varastossa *61*.
 1. Siirry kohtaan **Lähtevät \> Klusterikeräilyn luominen**.
 
     Näkyviin tulee **TEHTÄVÄ: Liitä työ klusteriin** -sivu.
@@ -276,3 +270,6 @@ Tässä skenaariossa klusterikeräily on valmis, ja käyttäjä ohjataan hyllytt
     Näyttöön tulee Klusteri on valmis -sanoma.
 
 Voit nyt käyttää valikon **Myynnin keräily** -vaihtoehtoa jäljellä olevan määrän keräilemiseksi. Voit sitten käyttää valikon **Myynnin kuormaus** -vaihtoehtoa ja siirtää nimikkeet väliaikaisesta sijainnista lastauslaituriin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

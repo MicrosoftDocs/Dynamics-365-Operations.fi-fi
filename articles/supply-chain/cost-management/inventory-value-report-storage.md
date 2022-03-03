@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7978c7b326ef1b62f76711ac187c28539eb1f449
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798318"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103937"
 ---
 # <a name="inventory-value-reports"></a>Varastoarvon raportit
 
@@ -53,12 +53,9 @@ Raportin tulokset tallennetaan **Varastoarvon** tietoyksikköön. Näin voit suo
 > [!NOTE]
 > **Varasto arvon raportin tallennustila** -raportti ei sisällä raporttiasettelussa määritettyjä välisummia. Se ei myöskään sisällä kirjanpidon saldoja, vaikka kyseiset saldot olisi määritetty raportin asettelussa. Täsmäytys kirjanpitoon on tehtävä käyttämällä pääkirjasaldoja. **Raportin arvo** -vakioraportti sisältää kuitenkin nämä välisummat ja saldot.
 
-## <a name="turn-on-the-inventory-value-report-storage-feature"></a>Varaston arvon raportin tallennusominaisuuden ottaminen käyttöön
+## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>Varaston arvon raportin tallennusominaisuuden ottaminen käyttöön tai pois käytöstä
 
-**Varaston arvo** -vakioraportti otetaan käyttöön oletusarvoisesti. Jos kuitenkin edistyneempi **Varaston arvon raportin tallennustila** -raportti halutaan luoda, toiminto on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Kustannustenhallinta*
-- **Toiminnon nimi:** *Varaston arvon raportin tallennustila*
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Varastoarvoraporttien säiliö* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>Varaston arvon raporttimääritysten määrittäminen
 

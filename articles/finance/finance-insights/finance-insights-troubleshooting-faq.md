@@ -2,7 +2,7 @@
 title: Finance Insightsin määritysongelmien vianmääritys
 description: Tässä on aiheessa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064863"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109857"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insightsin määritysongelmien vianmääritys
 
@@ -111,6 +111,14 @@ Lisätietoja **Ajoissa**-, **Myöhässä**- ja **Erittäin myöhässä** -luokki
 
 ### <a name="resolution"></a>Ratkaisu
 
-**Kassavirtaennuste**-mallin koulutus vaatii tietoja, jotka kattavat yli vuoden ja sisältää yli 100 tapahtumaa. Näiden tapahtumien täytyy vaikuttaa kassavirtaennusteen määritykseen sisältyviin rahatileihin.
+**Kassavirtaennuste**-mallin koulutus vaatii tietoja, jotka kattavat yli vuoden ja sisältävät vähintään 100 tapahtumaa. On suositeltavaa, että käytettävissä on vähintään kahden vuoden edestä tietoja ja yli 1 000 tapahtumaa.
 
-**Asiakkaan maksuennusteiden** luominen edellyttää vähintään 100 asiakkaan lasku- ja maksutapahtumaa viimeisen 6-9 kuukauden aikana.  
+**Asiakkaan maksuennusteet**-toiminto edellyttää yli 100 tapahtumaa 6–9 edellisen kuukauden ajalta. Tapahtumia voivat olla esimerkiksi vapaatekstilaskut, myyntitilauksia ja asiakasmaksut. Tietojen on oltava jaettuna **Määritys**-sivulla määritettyjen asetusten **Ajoissa**, **Myöhässä** ja **Paljon myöhässä** kesken.    
+
+**Budjettiehdotus**-toiminto edellyttää vähintään kolmen vuoden budjetti- tai toteutuneita tietoja. Tämän ratkaisun ennusteissa käytetään 3–10 vuoden edestä tietoja. Tulokset ovat parempia, jos tietoja on yli kolmen vuoden ajalta. Tiedot itse toimivat parhaiten, kun arvoissa on vaihtelua. Jos tiedot sisältävät vain vakiomallisia tietoja, kuten vuokrakuluja, opetus voi epäonnistua, koska vaihtelun puute ei edellytä, että tekoäly ennustaisi määriä.
+
+## <a name="symptom-error-message-states-that-the-table-with-name-msdyn_paypredpredictionresultentities-does-not-exist-the-remote-server-returned-an-error-404-not-found"></a>Oire: Virhesanoma "Taulukkoa nimellä msdyn_paypredpredictionresultentities ei ole olemassa. Etäpalvelin palautti virheen: (404) Ei löydetty..."
+
+### <a name="resolution"></a>Ratkaisu
+
+Ympäristö on saavuttanut Data Lake -palvelujen taulukoiden enimmäismäärän rajan. Lisätietoja: **Ota käyttöön lähes reaaliaikaiset tietomuutokset** -osa aiheessa [Azure Data Lakeen viemisen yleiskuvaus](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

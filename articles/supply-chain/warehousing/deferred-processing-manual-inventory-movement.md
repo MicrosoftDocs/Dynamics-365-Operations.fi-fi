@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f5c9ba7079895feeb0c171f2021479587aa13cc9
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 21dd01448fcf6c2b3ca90a5476fad061bb0f55e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777663"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102736"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Manuaalisen varastosiirron lykätty käsittely
 
@@ -32,10 +32,10 @@ Taustakäsittely saadaan aikaan käyttämällä [Käsittele varastosovelluksen t
 
 Jos haluat käyttää tätä toimintoa, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Ne on otettava käyttöön tässä järjestyksessä:
 
-1. Organisaation laajuinen työn esto (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
-1. Käsittele varastosovelluksen tapahtumat
-1. Lykätyt hyllytystoiminnot
-1. Manuaalisen varastosiirtotoiminnon lykätty käsittely
+1. *Organisaation laajuinen työn esto*<br>(Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
+1. *Käsittele varastosovelluksen tapahtumat*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+1. *Lykätyt hyllytystoiminnot*
+1. *Manuaalisen varastosiirtotoiminnon lykätty käsittely*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
 
 ## <a name="configure-the-work-processing-policies"></a>Työn käsittelykäytäntöjen konfiguroiminen
 

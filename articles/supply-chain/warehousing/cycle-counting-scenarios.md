@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09ca57d6a3654e56e12240af73d6793002eb1794e4b41d25e182b9b1d3b66df5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff67198980765f288b5394d91927ae1826266841
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746792"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103335"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Inventoinnin esimerkkiskenaariot
 
@@ -32,10 +32,7 @@ Tämän ohjeen kussakin skenaariossa viitataan arvoihin ja tietueisiin, jotka si
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen tuen käyttöönotto
 
-Ennen kuin voit käyttää uutta Warehouse Management -mobiilisovellusta, sinun on lisättävä sen tuki järjestelmään. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Uuden varastointisovelluksen käyttäjäasetukset, kuvakkeet ja vaiheiden otsikot*
+Warehouse Management -mobiilisovelluksen käyttöä varten järjestelmässäsi on oltava käytössä *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toiminto. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="prepare-demo-data-for-the-scenarios"></a><a name= "prepare-demo-data"></a>Skenaarioiden esittelytietojen valmisteleminen
 

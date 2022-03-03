@@ -1,8 +1,8 @@
 ---
 title: Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille
-description: Tässä aiheessa kuvataan, kuinka asiakastilin maksutapa konfiguroidaan yritysten välisissä (B2B) verkkokauppasivustoissa.
+description: Tässä aiheessa kuvataan asiakkaan maksutavan määrittäminen Microsoft Dynamics 365 Commercessä. Siinä kuvataan myös, miten luottorajat vaikuttavat tilimaksujen taltiointiin yritystenvälisillä (B2B) verkkokauppasivustoilla.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,26 +14,29 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 628f3b3b2d86154190dfdcc82b8b391c2facce103f607519514c65b5fba26653
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738050"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323352"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka asiakastilin maksutapa konfiguroidaan yritysten välisissä (B2B) verkkokauppasivustoissa.
+Tässä aiheessa kuvataan asiakkaan maksutavan määrittäminen Microsoft Dynamics 365 Commercessä. Siinä kuvataan myös, miten luottorajat vaikuttavat tilimaksujen taltiointiin yritystenvälisillä (B2B) verkkokauppasivustoilla.
 
-Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja verkkokauppakanavissaan myymistään tuotteista ja palveluista. Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä Microsoft Dynamics 365 Commercessa, kun järjestelmä määritetään. Asiakastilin (tai tilillä olevan) maksutavan on oltava tuettuna B2B-verkkokauppasivustoissa. 
+Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja verkkokauppakanavissaan myymistään tuotteista ja palveluista. Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä Dynamics 365 Commercessa, kun järjestelmä määritetään. Asiakastilin (tai tilillä olevan) maksutavan on oltava tuettuna B2B-verkkokauppasivustoissa. 
 
 ## <a name="prerequisites"></a>Edellytykset
 
 1. Lisää asiakastilin maksutapa Commerce headquarters -sovelluksessa.
 2. Liitä asiakastilin maksutapa sähköistä kaupankäyntikanavaa varten.
-3. Varmista, että **Salli ennakkomaksu** on käytössä asiakkaalle Commerce headquarters -sovelluksessa kohdassa **Retail ja Commerce \> Asiakkaat \> Kaikki asiakkaat \> Maksujen oletusasetukset**. Varmista myös, että **Luottoraja**-parametrit on määritetty oikein asiakkaalle Commerce headquarters -sovelluksen kohdassa **Retail ja Commerce \> Asiakkaat \> Kaikki asiakkaat \> Luotonvalvonta**. 
+3. Varmista, että **Salli ennakkomaksu** -ominaisuus on käytössä asiakkaalle Commerce headquarters -sovelluksessa kohdassa **Retail ja Commerce \> Asiakkaat \> Kaikki asiakkaat \> Maksujen oletusasetukset**.
+
+    > [!NOTE]
+    > Jos kaikkien asiakkaiden sallitaan käyttää tilimaksumenetelmää, **Salli ennakkomaksu** -ominaisuuden arvoksi **Kyllä** B2B-sivustoon liittyvän kanavan oletusasiakkaalle. 
 
 ## <a name="enable-the-customer-account-payment-method-in-commerce-site-builder"></a>Asiakastilin maksutavan ottaminen käyttöön Commercen sivustonmuodostimessa 
 
@@ -63,13 +66,44 @@ Voit vahvistaa, että asiakastilin maksutapa on otettu käyttöön ja julkaistu,
 1. Lisää tuote ostoskoriin.
 1. Siirry kassasivulle. Tässä pitäisi näkyä uusi **Asiakastili**-maksutapaa.
 
+## <a name="work-with-credit-limits"></a>Luottorajojen käyttö
+
+Kun asiakastilimaksujen ominaisuudet on otettu käyttöön B2B-sivustolla, organisaatiot haluavat yleensä näyttää tietoja luotto- ja luottorajasaldoista tilausten taltiointiprosessin aikana. Asiakkaan luottoraja määritetään Commerce headquarters -sovelluksen asiakastietueen **Luotonvalvonta** pikavälilehden **Luottoraja**-ominaisuudessa. B2B-skenaarioissa asiakkaan tekemä tilaus pitäisi usein laskuttaa sen organisaation tililtä, johon asiakas kuuluu. Siksi asiakastietueen **Lasku ja toimitus** -pikavälilehden **Laskutustili**-ominaisuudeksi on määritettävä organisaation asiakastilin tunnus. Kun asiakas sitten tekee tilauksen B2B-sivustolla, tilaus laskutetaan organisaatiolta. B2B-sivusto käyttää myös organisaation luottorajaa asiakastietueessa määritetyn luottorajan sijaan.
+
+B2B-sivustolla näkyvä luottorajalaskelma ja -saldo määrittyvät Commerce Headquarters -sovelluksen **Luottorajatyyppi**-ominaisuuden arvosta. Tämän ominaisuuden sijainti vaihtelee sen mukaan, onko hyvitysten **Luotonhallinta**-toiminto käytössä **Ominaisuuksien hallinta** -työtilassa:
+
+- Jos **Luotonhallinta**-toiminto on käytössä, kyseinen ominaisuus sijaitsee **Luottorajat**-pikavälilehden kohdassa **Luotonvalvonta \> Määritys \> Luotonvalvonnan parametrit \> Luotto**. 
+- Jos **Luotonhallinta**-toiminto ei ole käytössä, ominaisuus sijaitsee **Luottokelpoisuusluokitus**-pikavälilehden kohdassa **Myyntireskontra \> Määritys \> Myyntireskontran parametrit \> Luottokelpoisuusluokitus**.
+
+**Luottorajan tyyppi** -ominaisuuden tukemat arvot ovat **Ei mitään**, **Saldo**, **Saldo + pakkausluettelo tai tuotetosite** ja **Saldo + kaikki**. Lisätietoja näistä arvoista: [Luottorajan tyypin arvot](/dynamics365/supply-chain/sales-marketing/credit-limits-customers).
+
+> [!NOTE]
+> On suositeltavaa määrittää **Luottorajan tyyppi** -ominaisuuden arvoksi **Balance + pakkausluettelo tai tuotetosite**, jotta avoimet myyntitilaukset eivät vaikuta saldon laskentaan. Tällöin asiakkaiden ei tarvitse pelätä, että heidän mahdolliset tuleva tilauksensa vaikuttaisivat heidän kulloiseenkin saldoonsa.
+
+Toinen ominaisuus, joka vaikuttaa tilille tilaamiseen on **Pakollinen luottoraja** -ominaisuus, joka sijaitsee asiakastietueen **Luotonvalvonta**-pikavälilehdessä. Määrittämällä tämän ominaisuuden arvoksi **Kyllä** tietyille asiakkaille, voit pakottaa järjestelmän tarkastamaan heidän luottorajansa, vaikka **Luottorajan tyyppi** -ominaisuuden arvoksi olisi määritetty **Ei mitään** sen määrittämiseksi, että luottorajaa ei pitäisi tarkastaa minkään asiakkaan osalta.
+
+Tällä hetkellä B2B-sivuilla, joilla **Pakollinen luottoraja** -ominaisuus on käytössä, on lisätoimintoja. Jos ominaisuus otetaan käyttöön asiakastietueessa ja asiakas tilaa tilauksen, B2B-sivusto estää häntä käyttämästä tilimaksumenetelmää jäljellä olevan luoton saldon ylittäviin maksuihin. Jos esimerkiksi asiakkaan jäljellä olevan luoton saldo on 1 000 dollaria, mutta tilauksen arvo on 1 200 dollaria, asiakas voi maksaa vain 1 000 dollaria tilimaksumenetelmän avulla. Hänen on käytettävä erotuksen maksamiseen muuta maksumenetelmää. Jos **Pakollinen luottoraja** -ominaisuus on poistettu käytöstä asiakastietueessa, asiakas voi maksaa minkä tahansa summan tilimaksumenetelmällä. Vaikka asiakas voikin tehdä tilauksia, järjestelmä ei salli näiden tilausten täyttämistä, jos ne ylittävät luottorajan. Jos sinun on tarkastettava kaikkien niiden asiakkaiden osalta, joille tilimaksut ovat sallittuja, suosituksena on **Luottorajan tyyppi** -ominaisuuden arvon määrittäminen muotoon **Saldo + pakkausluettelo tai tuoteluettelo** ja **Pakollinen luottoraja** -ominaisuus muotoon **Ei**.
+
+**Luotonvalvonta**-moduulissa on uusia luotonhallintaominaisuuksia. Voit ottaa nämä ominaisuudet käyttöön ottamalla **Luotonhallinta**-toiminnon käyttöön **Toimintojen hallinta** -työtilassa. Yksi uusista ominaisuuksista mahdollistaa myyntitilausten asettamisen pitoon estosääntöjen perusteella. Luottopäällikkö-henkilötyyppi voi tämän jälkeen vapauttaa tai hylätä tilaukset lisäanalyysin perusteella. Ominaisuutta myyntitilausten pitoon asettamista varten ei kuitenkaan voi soveltaa Commerce-tilauksiin, koska myyntitilauksiin liittyy usein ennakkomaksuja ja **Luotonhallinta**-toiminto ei tue ennakkomaksuskenaarioita täysin. 
+
+Jos asiakkaan saldo ylittää luottorajan tilauksen täyttämisen aikana, myyntitilauksia ei aseteta pitoon riippumatta siitä, onko **Luotonhallinta**-toiminto käytössä. Sen sijaan Commerce luo joko varoitussanoman tai virhesanoman sen mukaan, mikä **Sanoma luottorajan ylittyessä** -kentän arvona on **Luottorajat**-pikavälilehdessä.
+
+Commercen myyntitilausten pitoon asettamisen estävä **Sulje pois luotonhallinnasta** -omaisuus sijaitsee myyntitilauksen otsikossa (**Retail ja Commerce \> Asiakkaat \> Kaikki myyntitilaukset**). Jos tämän ominaisuuden arvona on **Kyllä** (oletusarvo) Commercen myyntitilausten osalta, tilaukset suljetaan pois luotonhallinnan pitotyönkulusta. Ota huomioon, että määritettyä luottorajaa sovelletaan tilauksen täyttämisessä, vaikka ominaisuuden nimi on **Sulje pois luotonhallinnasta**. Tilaukset eivät vain mene pitoon.
+
+Ominaisuus Commercen myyntitilausten pitoon estosääntöjen perusteella asettamisen ominaisuus on suunnitteilla tulevia Commerce-versioita varten. Jos sinun on pakotettava Commercen myyntitilaukset kulkemaan uusien luotonhallinnan kulkujen läpi ennen kuin sitä tuetaan, voit mukauttaa Visual Studio -ratkaisusi seuraavia XML-tiedostoja. Muuta tiedostoissa logiikkaa siten, että **CredManExcludeSalesOrder**-merkinnän arvo on **Ei**. Tällä tavoin **Sulje pois luotonhallinnasta** -ominaisuuden oletusarvona Commercen myyntitilausten osalta on **Ei**.
+
+- RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
+- RetailCallCenterOrderExtensions_CredMan_Extension.xml
+
+Ota huomioon, että jos **CredManExcludeSalesOrder**-merkinnän arvoksi on määritetty **Ei** ja B2B-asiakas voi ostaa kaupoista käyttämällä myyntipistesovellusta, itsepalvelutukkutapahtumien kirjaaminen saattaa epäonnistua. Tilanne voi olla esimerkiksi, että käteismakutyypille on olemassa estosääntö ja B2B-asiakas on ostanut tavaroita kaupasta käteisellä. Tällöin tuloksena olevaa myyntitilausta ei laskuteta onnistuneesti, koska se asetetaan pitoon. Näin ollen kirjaus epäonnistuu. Tämän vuoksi on suositeltavaa tehdä kokonaisvaltaista testausta tämän mukautuksen käyttöönoton jälkeen.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[B2B-verkkokauppasivuston määrittäminen](set-up-b2b-site.md)
+[Yritystenvälisen yhteistyön sähköisen kaupankäynnin sivuston määrittäminen](set-up-b2b-site.md)
 
-[Organisaation mallinnushierarkioiden luominen B2B-organisaatioille](org-model.md)
+[B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla](partners-customer-hierarchies.md)
 
-[Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa](manage-b2b-users.md)
+[Liikekumppanikäyttäjien hallinta yritystenvälisen yhteistyön sähköisen kaupankäynnin sivustoissa](manage-b2b-users.md)
 
 [Tuotemäärän rajojen asettaminen B2B-verkkokauppasivustoille](quantity-limits.md)
 

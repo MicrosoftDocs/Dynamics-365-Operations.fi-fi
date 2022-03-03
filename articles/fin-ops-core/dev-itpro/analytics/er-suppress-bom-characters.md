@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e5f9379877e77f2824cd2dec9a1e68390b4eee8ba502e4011f0a8838b1974e3d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769945"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323737"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Tavujärjestysmerkkejä luoduissa tiedostoissa estävien ER-määritysten suunnitteleminen
 
 [!include [banner](../includes/banner.md)]
 
-[Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisu](er-quick-start1-new-solution.md) voidaan suunnitella luomaan lähteviä asiakirjoja. Teksti- tai XML-tiedostojen kaltaisten asiakirjojen luominen edellyttää, että ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-[muoto](general-electronic-reporting.md#FormatComponentOutbound)-osan Luotujen tiedostojen merkkijoukon ilmaisevan [merkkikoodaus](/windows/win32/intl/character-sets) edellyttää, että ER-muoto sisältää **Yleinen\\Tiedosto**-muotoelementin. ER-muoto-osan määritetään avaamalla ER-määrityksen [luonnos](general-electronic-reporting.md#component-versioning) ER-muodon suunnittelutoiminnossa ja lisäämällä **Yleinen\\Tiedosto**-elementti. **Koodaus**-kenttään määritetään niiden lähtevien tiedostojen koodaus, jotka luodaan suorituksen aikana tätä osaa käyttämällä.
+[Sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisu](er-quick-start1-new-solution.md) voidaan suunnitella luomaan lähteviä asiakirjoja. Teksti- tai XML-tiedostojen kaltaisten asiakirjojen luominen edellyttää, että ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-muoto-osan. Luotujen tiedostojen merkkijoukon ilmaisevan [merkkikoodaus](/windows/win32/intl/character-sets) edellyttää, että ER-muoto sisältää **Yleinen\\Tiedosto**-muotoelementin. ER-muoto-osan määritetään avaamalla ER-määrityksen [luonnos](general-electronic-reporting.md#component-versioning) ER-muodon suunnittelutoiminnossa ja lisäämällä **Yleinen\\Tiedosto**-elementti. **Koodaus**-kenttään määritetään niiden lähtevien tiedostojen koodaus, jotka luodaan suorituksen aikana tätä osaa käyttämällä.
 
 > [!NOTE]
 > Jos muodon sisältämän koodauksen nimi on virheellinen, seurauksena on virhe, kun muutokset tallennetaan muotoasetuksiin.

@@ -1,12 +1,10 @@
 ---
 title: Resurssienhallinnan parametrit
 description: Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työtilausten ajoitukseen liittyvät yleiset parametrit.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020650"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105486"
 ---
 # <a name="asset-management-parameters"></a>Resurssienhallinnan parametrit
 
@@ -51,7 +49,7 @@ Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työt
 - **Työtilauksen oletustyyppi** määrittää vakioasetukset työtilausta luotaessa.  
 - **Ennaltaehkäisevän työtilauksen tyyppi** määrittää työtilaustyypin, jota käytetään luotaessa työtilauksia ylläpitosuunnitelmista. Jos tämä kenttä jätetään tyhjäksi, työtilauksen tyypiksi käytetään **Työtilauksen oletustyyppi** -kenttän arvoa.  
 - **Liittyvän työtilauksen peite** -kenttään määritetään työtilausten enimmäismäärä, joka voidaan liittää työtilaukseen. Esimerkki: ## sallii enintään 99 liittyvää työtilausta. Jos määrität peitettä tässä kuvatulla tavalla, siihen liittyvät työtilaukset numeroidaan [työtilauksen tunnus työtilaukselle, johon työtilaus liittyy]-01, -02, -03 ja niin edelleen. Jos tähän kenttään ei määritetä peitettä, liittyvä työtilaus saa seuraavan peräkkäisen työtilauksen tunnuksen.  
-- Valitse **Kyllä** **Kopioi viat** -kohdassa, jos haluat kopioida työtilauksiin rekisteröidyt viat automaattisesti liittyviin ylläpitopyyntöihin. 
+- Valitse **Kyllä** **Kopioi viat** -kohdassa, jos haluat kopioida ylläpitopyyntöihin rekisteröidyt viat automaattisesti liittyviin työtilauksiin. 
 - **Taso**-kentässä määritetään toiminnallinen sijaintitaso, joka lisätään työtilaukseen automaattisesti, jos kaikki liittyvät työtilaustyöt viittaavat samaan toiminnalliseen sijaintiin. Jos työtilauksen työt eivät kaikki liity määritettyyn tasoon samassa toiminnallisessa sijainnissa, työtilauksen **Toiminnallinen sijainti** -kenttä jätetään tyhjäksi. Jos lisäät tähän kenttään esimerkiksi numeron 1, käytetään toiminnallisen sijainnin rakenteen ylintä tasoa. Jos lisäät tähän kenttään numeron "0", et ole määrittänyt tiettyä toiminnallista sijaintitasoa, vain, että työtilauksen kaikkien työtilaustöiden on oltava yhteydessä samaan toiminnalliseen sijaintiin, jolle kyseinen toiminnallinen sijainti lisätään työtilaukseen.  
 - Työtilauksen kulutuksen kirjaamisen yhteydessä käytettävät kirjauskansiot voidaan valita **Yleiset**-pikavälilehden **Tunti**-, **Nimike**- ja **Kulu**-kentissä.  
 - Valitse **Tuotteen kielen lähde** -kentässä, mitä kieltä käytetään resurssien hallinnan raporttien tuotenimissä. Voit valita yrityksen tilille määritetyn kielen tai tällä hetkellä kirjautuneena olevalle käyttäjälle määritetyn kielen.  
@@ -101,8 +99,11 @@ Seuraavassa luettelomerkkiluettelossa olevat kentät liittyvät laskettuihin luo
 
 ## <a name="the-document-types-tab"></a>Asiakirjatyypit-välilehti
 
-Valitse tiedostotyypit, joita voidaan käyttää työtilausraporttiin liittyvien liitteiden tulostamiseen. Tämä tehdään valitsemalla tiedostotyyppi **Saatavilla**-osassa ja valitsemalla sitten ![eteenpäin osoittava nuoli](media/15-setup-for-objects.png). Jos haluat poistaa valitun tiedostotyypin, valitse tiedostotyyppi **Valittu**-osassa ja valitse sitten ![takaisin osoittava nuoli](media/16-setup-for-objects.png).
+Valitse tiedostotyypit, joita voidaan käyttää työtilausraporttiin liittyvien liitteiden tulostamiseen. Tämä tehdään valitsemalla tiedostotyyppi **Saatavilla**-osassa ja valitsemalla sitten ![eteenpäin osoittava nuoli.](media/15-setup-for-objects.png). Jos haluat poistaa valitun tiedostotyypin, valitse tiedostotyyppi **Valittu**-osassa ja valitse sitten ![takaisin osoittava nuoli](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Numerojärjestykset-välilehti
 
 Valitse tässä osassa tarvittavat numerosarjat. Resursseille on kaksi numerosarjaa: yksi manuaalisesti luoduille resursseille ja toinen odottavien resurssien kautta luoduille resursseille.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

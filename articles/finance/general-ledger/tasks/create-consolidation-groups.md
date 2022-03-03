@@ -2,26 +2,23 @@
 title: Luo konsolidaatioryhmät ja lisäkonsolidaatiotilit
 description: Tässä menettelyssä käsitellään konsolidointitiliryhmän luontia ja tilien lisäämistä ryhmään.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 826a65af563207fbfbc7391b176aa0e65b3363f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eaf48306607b27c70359e0d0faee4c92f4b82cac
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442844"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182601"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Luo konsolidaatioryhmät ja lisäkonsolidaatiotilit
 
@@ -31,19 +28,21 @@ Tässä menettelyssä käsitellään konsolidointitiliryhmän luontia ja tilien 
 
 
 ## <a name="create-a-consolidation-account-group"></a>Konsolidointitiliryhmän luominen
-1. Valitse Kirjanpito > Tilikartta > Tilit > Konsolidointitiliryhmät.
-2. Valitse Uusi.
-3. Anna Konsolidointitiliryhmä-kentässä konsolidointitiliryhmän yksilöllinen tunnus.
-4. Kirjoita arvo Nimi-kenttään.
+1. Valitse **Kirjanpito > Tilikartta > Tilit > Konsolidointitiliryhmät**.
+2. Valitse **Uusi**.
+3. Anna **Konsolidointitiliryhmä**-kentässä konsolidointitiliryhmän yksilöllinen tunnus.
+4. Kirjoita arvo **Nimi**-kenttään.
 
 ## <a name="add-accounts-to-consolidation-account-group"></a>Lisää tilejä konsolidointitiliryhmään
-1. Sulje sivu.
-2. Valitse Kirjanpito > Tilikartta > Tilit > Lisäkonsolidointitilit.
-3. Valitse Uusi.
-4. Avaa haku napsauttamalla Päätili-kentässä avattavan valikon painiketta.
-5. Valitse luettelosta yhdistettävä päätili.
-6. Avaa haku napsauttamalla Konsolidointitiliryhmä-kentässä avattavan valikon painiketta.
-7. Valitse luettelossa konsolidointitiliryhmä.
-8. Kirjoita Konsolidointitili-kenttään arvo.
-9. Kirjoita Konsolidointitilin nimi -kenttään arvo.
+1. Valitse Kirjanpito > Tilikartta > Tilit > Lisäkonsolidointitilit.
+2. Valitse Uusi.
+3. Avaa haku napsauttamalla Päätili-kentässä avattavan valikon painiketta.
+4. Valitse luettelosta yhdistettävä päätili.
+5. Avaa haku napsauttamalla Konsolidointitiliryhmä-kentässä avattavan valikon painiketta.
+6. Valitse luettelossa konsolidointitiliryhmä.
+7. Kirjoita Konsolidointitili-kenttään arvo.
+8. Kirjoita Konsolidointitilin nimi -kenttään arvo.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

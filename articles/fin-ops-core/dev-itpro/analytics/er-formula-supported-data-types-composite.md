@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b97b2f7091883e445b2e8474ca140217bda004b0c4d8988411b9ed4209e254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758261"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323662"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Sähköisen raportoinnin kaavan tukemat yhdistelmätietotyypit
 
@@ -27,7 +27,7 @@ Tässä ohjeaiheessa on tietoja [sähköisen raportoinnin (ER)](general-electron
 
 *Luokka*-tietotyyppi viittaa julkiseen sovellusluokkaan. ER:ssä sitä edustaa [*tietue*](#record), joka sisältää erillisen kentän jokaista viitatun luokan julkista menetelmää varten. Kun metodin kutsu määritetään parametrin avulla, myös metodin kutsumiseen määritetyssä ER-lausekkeessa on määritettävä asianmukaista tyyppiä olevat pakolliset argumentit.
 
-ER-[määrityksen](general-electronic-reporting.md#data-model-and-model-mapping-components) ja -[muodon](general-electronic-reporting.md#FormatComponentOutbound) komponentteihin voidaan lisätä **Luokka**-tietolähde, joka näytetään tietolähteenä ja palauttaa *luokka*-tyypin arvon. Tämä tietolähde paljastaa luokan julkiset menetelmät, joita voi kutsua ajon aikana.
+ER-määrityksen ja -muodon komponentteihin voidaan lisätä **Luokka**-tietolähde, joka näytetään tietolähteenä ja palauttaa *luokka*-tyypin arvon. Tämä tietolähde paljastaa luokan julkiset menetelmät, joita voi kutsua ajon aikana.
 
 > [!NOTE]
 > Vain arvon palauttavia menetelmiä voidaan kutsua ER-lausekkeista.

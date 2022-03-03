@@ -2,26 +2,23 @@
 title: Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen
 description: Tässä ohjeaiheessa on tietoja ostoreskontran laskujen täsmäytyksen vahvistamisen määrittämisestä.
 author: abruer
-manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442710"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182552"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen
 
@@ -57,7 +54,7 @@ Täsmäyksen vahvistamistyyppejä on neljä.
 12. Anna **Ostohinnan kokonaistoleranssi** -kentän summa kirjanpitovaluuttana. Tämä kenttä on käytettävissä, jos **Täsmäytä kokonaishinnat** -arvoksi on määritetty **Summa** tai **Prosentti ja summa**.
 13. Valitse **Näytä kokonaishinnan täsmäytyskuvake** -kentässä milloin kuvake näkyy, jos ristiriita laskua kohdistettaessa ylittää nettoyksikköhinnan toleranssin. Kuvake voidaan näyttää, kun positiivinen ristiriita ylittää toleranssin, tai kun joko positiivinen tai negatiivinen ristiriita ylittää toleranssin.
 Toleranssi on esimerkiksi 5 prosenttia ja ostotilauksen rivin kokonaishinta on 10,00. Tämän vuoksi hintavastaavuuden kuvake näytetään, jos laskurivin kokonaishinta ylittää 10,50. Jos valitset **Onko suurempi tai pienempi kuin toleranssi**, kuvake näkyy myös, jos laskurivin kokonaishinta on pienempi kuin 9,50.
-13. Määritä Kulujen täsmäytys.
+13. Määritä **Kulujen täsmäytys**.
 14. Vertaa todellisia veloituksia odotettuihin kuluihin ostotilauksen tietoihin perustuen valitsemalla **Täsmäytä kulut** -valintaruutu.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Yksikköhintatoleranssin prosenttiosuuksien määrittäminen
@@ -78,7 +75,7 @@ Oletusarvon mukaan negatiiviset hintaerot sallitaan. Et voi määrittää negati
 
 ## <a name="set-up-matching-policy-override"></a>Vastaavuuskäytännön ohituksen määrittäminen
 
-Määritä Ostotilaus-lomakkeen Täsmäytyskäytäntö-kentän oletuskirjaus valitsemalla **Ostoreskontra > Asetukset > Laskun täsmäytyksen asetukset > Täsmäytyskäytäntö**. Tämä on valinnainen asetus. Voit määrittää tässä lomakkeessa nimikkeiden, toimittajien tai nimike- ja toimittajayhdistelmien kaksi- tai kolmesuuntaisen täsmäytyksen. Voit määrittää näillä kirjauksilla täsmäytyskäytännöt, jotka ovat yksityiskohtaisemmat kuin **Ostoreskontran parametrit** -sivulla määritetty yrityksen täsmäytyskäytäntö. Yrityksen oletusarvoista rivitäsmäytyskäytäntöä käytetään kaikissa nimikkeissä ja toimittajissa lukuun ottamatta niitä, jolle määritettiin tällä sivulla erilainen rivin täsmäytyskäytäntö.
+Määritä **Ostotilaus**-sivun **Täsmäytyskäytäntö**-kentän oletuskirjaus valitsemalla **Ostoreskontra > Asetukset > Laskun täsmäytyksen asetukset > Täsmäytyskäytäntö**. Tämä on valinnainen asetus. Voit määrittää tällä sivulla nimikkeiden, toimittajien tai nimike- ja toimittajayhdistelmien kaksi- tai kolmesuuntaisen täsmäytyksen. Voit määrittää näillä kirjauksilla täsmäytyskäytännöt, jotka ovat yksityiskohtaisemmat kuin **Ostoreskontran parametrit** -sivulla määritetty yrityksen täsmäytyskäytäntö. Yrityksen oletusarvoista rivitäsmäytyskäytäntöä käytetään kaikissa nimikkeissä ja toimittajissa lukuun ottamatta niitä, jolle määritettiin tällä sivulla erilainen rivin täsmäytyskäytäntö.
 
 Valitse tällä sivulla **Vastaavuuskäytännön taso**. Valitse vastaavuuskäytäntöhierarkiassa taso, jolle rivien vastaavuuskäytäntö on tarkoitettu.
 
@@ -98,3 +95,6 @@ Määritä laskujen kokonaissummien täsmäytyksen toimittajakohtaiset toleranss
 
 1. Voit määrittää yksittäisten toimittajien oletustoleranssin ohittavat toleranssit valitsemalla **Toimittajatili**.
 2. Kirjoita tälle toimittajalle hyväksymäsi vaihteluprosentti.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

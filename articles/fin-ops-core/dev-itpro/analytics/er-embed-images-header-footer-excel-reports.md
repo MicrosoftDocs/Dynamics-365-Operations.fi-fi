@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 20bcf26e1510634c5ee7043576a480ce15889923
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344117"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323772"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>ER-muodon suunnittelu Excel-muotoisen raportin luomiseksi ja kuvien upottamiseksi sivun ylä- ja alatunnisteisiin
 
@@ -153,9 +153,9 @@ Jos haluat lisätä ER-vakiokonfiguraatiot nykyiseen Dynamics 365 Finance -esiin
 3. Laajenna **Konfiguraatiot**-sivun määrityspuun vasemmassa ruudussa **Laskumalli**.
 4. Valitun **Vapaatekstilasku (Excel)** -ER-muodon lisäksi myös muut tarvittavat ER-konfiguraatiot tuotiin. Varmista, että konfiguraatiopuussa ovat saatavilla seuraavat ER-konfiguraatiot:
 
-    - **Laskumalli** – Tämä konfiguraatio sisältää [tietomallin](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-osan, joka esittää laskutuksen liiketoimintatoimialueen tietorakenteen.
-    - **Laskumallin määritys** – Tämä konfiguraatio sisältää [mallin määrityksen](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-osan, joka kuvaa, miten tietomalli täytetään hakemuksen tiedoilla suorituspalvelussa.
-    - **Vapaatekstilasku (Excel)** – Tämä konfiguraatio sisältää [muodon](general-electronic-reporting.md#FormatComponentOutbound) ja muodon yhdistämismäärityksen ER-osat. Muotokomponentti määrittää raportin asettelun Excel-muodossa olevan mallin perusteella. Muodon määritysosa sisältää mallin tietolähteen ja määrittää, miten raportin asettelu täytetään käyttämällä tätä tietolähdettä suorituspalvelussa.
+    - **Laskumalli** – Tämä konfiguraatio sisältää tietomallin ER-osan, joka esittää laskutuksen liiketoimintatoimialueen tietorakenteen.
+    - **Laskumallin määritys** – Tämä konfiguraatio sisältää mallin määrityksen ER-osan, joka kuvaa, miten tietomalli täytetään hakemuksen tiedoilla suorituspalvelussa.
+    - **Vapaatekstilasku (Excel)** – Tämä konfiguraatio sisältää muodon ja muodon yhdistämismäärityksen ER-osat. Muotokomponentti määrittää raportin asettelun Excel-muodossa olevan mallin perusteella. Muodon määritysosa sisältää mallin tietolähteen ja määrittää, miten raportin asettelu täytetään käyttämällä tätä tietolähdettä suorituspalvelussa.
 
 ![Tuodut ER-määritykset määrityssivulla.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f0fba0a9234e5b7cb055f7b97578bff72f1d06ac
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571974"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103610"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön
 
@@ -27,12 +27,9 @@ Tässä ohjeaiheessa kerrotaan, miten voit ottaa muutostenhallinta käyttöön a
 
 Kun otat muutostenhallinnan käyttöön aiemmin luodulle tuotteelle, voit luoda tuotteesta eri versioita ja seurata siihen tehtyjä muutoksia sen koko elinkaaren ajalta. Näin voit seurata näitä muutoksia käyttämällä muutostilauksia. Sinun täytyy muuntaa tuotteet *suunnittelunimikkeiksi* (joita kutsutaan myös suunnittelutuotteiksi) ottaaksesi muutostenhallinnan niille käyttöön. Suunnittelutuotteet ovat tuotteita, jotka on versioitu ja joita hallitaan muutostenhallinnan avulla. Ohjattu toiminto opastaa sinua muuntoprosessissa.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Toiminnon ottaminen käyttöön järjestelmässä
+## <a name="turn-this-feature-on-or-off"></a>Toiminnon ottaminen käyttöön tai pois käytöstä
 
-Sinun täytyy suorittaa seuraavat toimet käyttääksesi tätä ominaisuutta:
-
-1. Ota käyttöön Suunnittelun muutostenhallinta -ominaisuus ja sen konfigurointiavain, niin kuin aiheessa[Suunnittelun muutostenhallinnan yleiskatsaus](product-engineering-overview.md) on kuvattu.
-1. Ota käyttöön *Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön* -ominaisuus toiminnon hallinnasta. Lisätietoja on kohdassa [Toiminnon hallinnan yleiskatsaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Tässä aiheessa kuvattu toiminto edellyttää, että toiminnot *Suunnittelun muutosten hallinta* ja *Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön* ovat käytössä järjestelmässä. Tietoja näiden toimintojen ottamisesta käyttöön tai pois käytöstä: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Rajoitukset
 

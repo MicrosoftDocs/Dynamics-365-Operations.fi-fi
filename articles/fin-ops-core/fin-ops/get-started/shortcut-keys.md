@@ -1,12 +1,10 @@
 ---
 title: Pikanäppäimet
-description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet Finance and Operations -sovelluksia.
+description: Tässä aiheessa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet taloushallinnon ja toimintojen sovelluksia.
 author: jasongre
-manager: AnnBe
-ms.date: 10/05/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798223"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119549"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
 [!include [banner](../includes/banner.md)]
 
-Seuraavat pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti Finance and Operations -sovelluksissa.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti taloushallinnon ja toimintojen sovelluksissa. 
 
 > [!NOTE]
 > Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
@@ -36,11 +37,11 @@ Osa tämän sivun pikanäppäimistä on *peräkkäin painettavia näppäimiä* e
 
 ## <a name="finding-a-shortcut"></a>Pikanäppäimen löytäminen
 
-Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytettävissä olevat pikanäppäimet suoraan käyttöliittymästä. Napsauta ohjausobjektia hiiren kakkospainikkeella ja valitse **Näytä pikanäppäimet**. Näyttöön tulee valintaikkuna, jossa näkyvät pikanäppäimet, joita voit käyttää sivun eri osissa.
+Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan käyttöliittymästä. Napsauta ohjausobjektia hiiren kakkospainikkeella ja valitse **Näytä pikanäppäimet**. Näyttöön tulee valintaikkuna, jossa näkyvät pikanäppäimet, joita voit käyttää sivun eri osissa. Vaihtoehtoisesti voit avata tämän valintaikkunan painamalla Alt+Shift+K (ja tarkastella kaikki sivun kulloinkin käytettävissä olevat pikanäppäimet painamalla uudelleen Alt+Shift+K).    
 
 ## <a name="action-shortcuts"></a>Toimintojen pikanäppäimet
 
-| Toiminto                                      | Näppäinyhdistelmä                            |
+| Toiminto                                      | Paina                             |
 |-------------------------------------------------|----------------------------------|
 | Avaa toiminnon haku                              | Ctrl+' tai Alt+Q                  |
 | Siirry vakiotoimintoruutuun                | ALT + M,A tai Ctrl + F6               |
@@ -129,8 +130,10 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="grid-shortcuts"></a>Ruudukon pikanäppäimet
 
-| Toiminto                                                                                                             | Näppäinyhdistelmä                           |
+| Toiminto                                                                                                             | Paina                            |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Vieritys pystysuunnassa                                                                                                     | Vierityspainike                     |
+| Vieritys vaakasuunnassa                                                                                                   | Vaihto + vierityspainike             |
 | Siirry seuraavaan/edelliseen sarakkeeseen                                                                                       | Sarkain / Vaihto+Sarkain                 |
 | Siirry seuraavalle/edelliselle riville                                                                                          | Ylänuoli/alanuoli           |
 | Siirry seuraavalle/edelliselle riville valitsematta<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote> | Ctrl+Ylänuoli / Ctrl+Alanuoli |
@@ -142,22 +145,24 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Siirry ensimmäiseen tietueeseen                                                                                               | Ctrl+Home                       |
 | Siirry viimeiseen tietueeseen                                                                                                | Ctrl+End                        |
 | Valitse kaikki rivit tai poista ne                                                                                               | Ctrl+Vaihto+M                    |
-| Siirry ensimmäiselle merkitylle riville                                                                                           | Alt+Shift+M, F                    |
-| Siirry seuraavalle merkitylle riville                                                                                            | Alt+Shift+M, L                    |
-| Siirry edelliselle merkitylle riville                                                                                        | Alt+Shift+M, P                    |
-| Siirry viimeiselle merkitylle riville                                                                                           | Alt+Shift+M, N                    |
+| Siirry ensimmäiselle merkitylle riville                                                                                           | Alt+Shift+M, F                  |
+| Siirry seuraavalle merkitylle riville                                                                                            | Alt+Shift+M, L                  |
+| Siirry edelliselle merkitylle riville                                                                                        | Alt+Shift+M, P                  |
+| Siirry viimeiselle merkitylle riville                                                                                           | Alt+Shift+M, N                  |
 | Suorita ruudukon oletustoiminto<blockquote>[!NOTE] Tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.</blockquote> | Enter                           |
 | Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
 | Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |
+| Siirrä nykyinen sarake seuraavaan/edelliseen asemaan (kohdistus otsikkorivillä)                                   | Ctrl+Vaihto+Oikea nuoli / Ctrl+Vaihto+Vasen nuoli |
 | Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)                                              | Enter                           |
+| Muuta nykyisen sarakkeen kokoa, jotta sisältö mahtuu siihen (kohdistus otsikkorivillä)                                           | A (tai sarakkeen kokokahvan kaksoisnapsautus) |
 
 ## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
 
-| Toiminto                                                                   | Näppäinyhdistelmä                         |
+| Toiminto                                                                   | Paina                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Avaa hyperlinkki                                                           | Ctrl+Enter                    |
-| Lisää istuntopäivämäärä päivämääräkenttään                                       | T                         |
-| Lisää nykyinen päivämäärä päivämääräkenttään                                       | T                         |
+| Lisää istuntopäivämäärä päivämääräkenttään                                       | T                             |
+| Lisää nykyinen päivämäärä päivämääräkenttään                                       | T                             |
 | Avaa haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                         | Alt+Alanuoli                |
 | Sulje haku, yhdistelmäruutu, päivämäärävalitsin, avattava valintaikkuna                        | Esc                           |
 | Siirrä kohdistus hakuun (kun haku on avoinna)                   | Alt+Alanuoli                |
@@ -204,8 +209,8 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Käytä siirtotyökalua (mukauttamistilassa)                                                                       | M                                   |
 | Valitse nykyinen ohjausobjekti siirrettäväksi (kun siirtotyökalu on käytössä eikä siirrettävää objektia ole valittu)  | Väli tai Enter                      |
 | Poista ohjausobjektin siirtäminen (kun siirtotyökalu on käytössä)                                                                   | Esc                                 |
-| Siirry seuraavaan paikkaan valitussa ohjausobjektissa (kun siirtotyökalu on käytössä)                                          | Sarkain tai Oikea nuoli tai Alanuoli    |
-| Siirry edelliseen paikkaan valitussa ohjausobjektissa (kun siirtotyökalu on käytössä)                                      | Vaihto + Sarkain tai Vasen nuoli tai Ylänuoli |
+| Siirrä valittu ohjausobjekti seuraavaan paikkaan (kun siirtotyökalu on käytössä)                                              | Sarkain tai Oikea nuoli tai Alanuoli    |
+| Siirrä valittu ohjausobjekti edelliseen paikkaan (kun siirtotyökalu on käytössä)                                          | Vaihto + Sarkain tai Vasen nuoli tai Ylänuoli |
 | Käytä piilotustyökalua (mukauttamistilassa)                                                                       | H                                   |
 | Vaihda nykyisen objektin näkyvyys (piilotustyökalu)                                     | Väli tai Enter                      |
 | Käytä ohitustyökalua (mukauttamistilassa)                                                                       | K                                   |
@@ -251,7 +256,14 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Laajenna tai tiivistä animoitu ponnahduskehote (tehtäväopasta toistettaessa)              | Alt+R,C                    |
 | Näytä enemmän tai vähemmän tietoja animoidussa ponnahduskehotteessa (tehtäväopasta toistettaessa) | Alt+R,M                    |
 
+## <a name="focus-management"></a>Kohdistuksenhallinta 
+Kohdistuksenhallinta kuvaa, miten käyttäjän kohdistusta käsitellään sovelluksessa. Talous- ja toimintosovelluksissa on erityisiä kohdistustoimintatapoja, joiden on tarkoitus optimoida käyttäjän tuottavuus erityisesti tietoja syötettäessä. Kohdistustoimintatavat ovat seuraavat:  
+
+-  Kun sivu ladataan, kohdistus on sivun ensimmäisessä muokattavissa syötteenohjausobjektissa, joka voi vastaanottaa käyttäjäsyötteen välittömästi. Jos sivulla ei ole muokattavia syötteenohjausobjektia, ensimmäisen kohdistuksen varavaihtoehto on sivun ensimmäinen syötteenohjausobjekti ja toinen on sivun ensimmäinen ohjausobjekti, johon voi kohdistaa.   
+-  Tyypillisesti, kun painike valitaan, toiminto käsitellään ja kohdistus voi palata sivulle. Kun tämä tapahtuu, kohdistus palaa yleensä valittuun painikeohjausobjektiin. Tämä pätee talous- ja toimintosovelluksiin **lukuun ottamatta** tilanteita, joissa painike sijaitsee toimintoruudussa tai työkalupalkissa. Näissä tapauksissa kohdistus palaa toiminnon valmistumisen jälkeen edelliseen toimintoruudun (tai työkalupalkin) *ulkopuoliseen* ohjausobjektiin, jossa kohdistus oli ennen painikkeen valitsemista.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Puuttuvien tilien analyysin pikanäppäimet](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

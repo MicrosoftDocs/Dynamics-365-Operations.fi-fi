@@ -1,26 +1,23 @@
 ---
 title: Luotonhallinnan määritys
 description: Tässä ohjeaiheessa kuvataan luottohallinnan edellyttämät määritykset.
-author: mikefalkner
-manager: AnnBe
-ms.date: 09/04/2019
+author: JodiChristiansen
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442640"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182425"
 ---
 # <a name="credit-management-setup"></a>Luotonhallinnan määritys 
 
@@ -42,7 +39,7 @@ Voit asettaa myyntitilauksen pitoon, jos sen maksuehdot eivät vastaa asiakkaan 
 
 Jos maksuehtojen järjestysnumerot ovat käytössä ja jos tilauksen maksuehdot ovat järjestyksessä asiakkaan oletusmaksuehtoja korkeammalla, myyntitilaukset siirretään pitoon.
 
-Määrittääksesi maksuehtojen sijoituksen, valitse **Luotonhallinta ja perintä \> Asetukset \> Luotonhallinnan asetukset \>Maksuehtojen sijoitus**  
+Määrittääksesi maksuehtojen sijoituksen, valitse **Luotonhallinta ja perintä \> Asetukset \> Luotonhallinnan asetukset \>Maksuehtojen sijoitus**.  
 
 ### <a name="ranking-settlement-discounts"></a>Tilitysalennusten järjestäminen
 
@@ -89,7 +86,7 @@ Voit luoda tilitiloja **Tilitilat**-sivulla (**Luotto ja perintä \> Määritys>
 
 ## <a name="scoring-groups"></a>Pisteytysryhmät
 
-Voit määrittää pisteytysryhmiä määrittämään riskitekijöitä sekä kriteerejä, joiden perusteella niitä mitataan. Kun asiakasta koskevia tietoja käytetään pisteytysryhmässä, kullekin riskitekijälle lasketaan pistemäärä, jonka perusteella asiakas asetetaan riskiryhmään. Riskiryhmää voidaan käyttää luottokelpoisuuden tunnistamiseen ja automaattisten luottorajojen laskemiseen.
+Voit määrittää **Pisteytysryhmiä** määrittämään riskitekijöitä sekä kriteerejä, joiden perusteella niitä mitataan. Kun asiakasta koskevia tietoja käytetään pisteytysryhmässä, kullekin riskitekijälle lasketaan pistemäärä, jonka perusteella asiakas asetetaan riskiryhmään. Riskiryhmää voidaan käyttää luottokelpoisuuden tunnistamiseen ja automaattisten luottorajojen laskemiseen.
 
 Vuot luoda pisteytysryhmiä **Pisteytysryhmät**-sivulla (**Luotto ja perintä \> Määritys \> Luotonhallinnan määritys \> Riski \> Pisteytysryhmät**).
 
@@ -153,3 +150,6 @@ Seuraavien vaiheiden avulla voit lisätä valittujen kriteerien perusteella luot
 2. Valitse vertailuoperaattori, joka määrittää, miten pisteytysryhmän tiedot arvioidaan.
 3. Määritä arvo, jota verrataan pisteytysryhmälle määritettyyn arvoon.
 4. Määritä luottoraja, joka määritetään, jos asiakastiedot vastaavat pisteytysryhmälle määritettyä arvoa. Voit esimerkiksi luoda automaattisen luottorajan **Alahainen pistemäärä** -ryhmälle. Jos toiminta-aika on yksi pisteytysryhmistä, voit määrittää yhden rivin, joka määrittää luottorajaksi 100 000, jos asiakas on toiminut viisi vuotta ja toisen rivin, joka määrittää luottorajaksi 200 000, jos asiakas on toiminut 10 vuoden ajan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

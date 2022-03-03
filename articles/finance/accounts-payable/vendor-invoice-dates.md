@@ -2,25 +2,25 @@
 title: Toimittajan laskujen päivämäärät
 description: Tässä aiheessa kuvataan toimittajan laskuissa näkyvät päivämäärät. Lisäksi selitetään, miten järjestelmä määritetään niin, että se muuttaa kirjauspäivää automaattisesti.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647886"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105460"
 ---
 # <a name="vendor-invoice-dates"></a>Toimittajan laskujen päivämäärät
 
@@ -50,6 +50,9 @@ Näiden vaiheiden avulla voit sallia järjestelmän oikaista toimittajien laskuj
     - **Vaihda kirjauspäivä aina järjestelmän päivämääräksi** – Järjestelmä muuttaa kirjauspäivän automaattisesti järjestelmän päivämääräksi kirjauksen yhteydessä.
     - **Muuta kirjauspäivä järjestelmän päivämääräksi, kun kirjauspäiväjakso suljetaan tai asetetaan pitoon** – Järjestelmä vaihtaa kirjauspäivän järjestelmän kirjauspäiväksi kirjauksen yhteydessä, mutta vain, jos kirjauspäivän vastaavan jakson tila on **Suljettu** tai **Pidossa**.
     - **Muuta kirjauspäivä uuden jakson ensimmäiseksi päivämääräksi, kun kirjauspäiväjakso suljetaan tai asetetaan pitoon** – Järjestelmä vaihtaa kirjauspäivän uuden avoimen jakson ensimmäiseksi päiväksi kirjauksen yhteydessä, mutta vain, jos kirjauspäivän vastaavan jakson tila on **Suljettu** tai **Pidossa**.
+
+> [!NOTE]
+> Jos automaattisesti oikaistu kirjauspäivämäärä kuuluu uuteen tilikauteen, laskun kirjauspäivämäärää ei päivitetä. Käyttäjä saa virhesanoman "Tilikausi on vaihtunut. Tarkista kirjauspäivämäärä ja lisää se uudelleen." Laskun kirjauspäivämäärä on päivitettävä uuteen tilikauden päivämäärään kirjausta varten.
 
 ## <a name="impact-of-posting-date-changes"></a>Kirjauspäivän muutosten vaikutukset
 

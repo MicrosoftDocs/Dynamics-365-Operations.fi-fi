@@ -1,26 +1,23 @@
 ---
 title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista pakollisista päivityksistä.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 11/13/2020
+author: VStamberg
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: roschlom
+ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 46e9b3c3d47207715d0eee689913073d363f3af3
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 663b7d3162af6d385bc9c445b1e98cf5f74a1471
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517497"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105561"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -28,7 +25,7 @@ ms.locfileid: "4517497"
 
 Tässä ohjeaiheessa on luettelo pakollisista päivityksistä, jotka on suunniteltu ja julkaistu Dynamics 365 Financen tukemissa lokalisaatioissa. Toimitusajankohdat voivat muuttua ja ennakoidut toiminnot voivat olla erilaisia tai niitä ei ehkä julkaista. Lisätietoja on kohdassa [Microsoftin käytäntö](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Pakolliset päivitykset ovat toimintoja, jotka tukevat uudet tai muuttuneet maakohtaiset lainsäädännöt. Lisätietoja muista suunnitelluista tai julkaistuista maakohtaisista ominaisuuksista on [Dynamics 365:n ja Power Platformin julkaisusuunnitelmissa](https://docs.microsoft.com/business-applications-release-notes/index).
+Pakolliset päivitykset ovat toimintoja, jotka tukevat uudet tai muuttuneet maakohtaiset lainsäädännöt. Lisätietoja muista suunnitelluista tai julkaistuista maakohtaisista ominaisuuksista on [Dynamics 365:n ja Power Platformin julkaisusuunnitelmissa](/business-applications-release-notes/index).
 
 Microsoft pyrkii toteuttamaan uudet lainsäädännölliset vaatimukset mahdollisimman aikaisin. Toimituspäivämäärä riippuu lain ilmoituspäivästä, vaatimuksien saatavuudesta paikallisilta viranomaisilta, oikeellisuustarkistustyöklaujen saatavuudeta sekä muutoksen koosta ja monimutkaisuudesta.
 
@@ -41,49 +38,44 @@ Pakolliset päivitykset, jotka julkaistaan osana kuukausittaista päivitystä, o
 Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.   
 
 |Maa tai alue|Vapautuspäivä|Julkaisuversio|Pakollinen päivitys|
-|--------------------|---------------|-------|-------|
-|      Itävalta         |   2020. syyskuuta      | 10.0.15      |   ALV-ilmoituksen muoto U30 on päivitetty vuoden 2020 raportointia varten   |
-|      Bahrain         |   2020. kesäkuuta      | 10.0.13      |   Laskun kirjoittamisen takaraja (GCC)   |
-|      Bahrain         |   2020. syyskuuta      | 10.0.13      |   Bahrainin projektilasku   |
-|      Bahrain         |   2020. kesäkuuta      | 10.0.13      |   Bahrainin ALV-ilmoitus - ota käyttöön tapahtuman kuvaus   |   
-|      Brasilia         |   Elokuu 2020      | 10.0.14, 10.0.13      |   ADRCST-ilmoituksen PR   |
-|      Brasilia         |   Toukokuun 2020.      | 10.0.13      |   SPED ECF -asettelu 6   |
-|      Brasilia         |   Heinäkuu 2020      | 10.0.13      |   SPED-verotus – tietue C176 – RS-tila   |
-|      Brasilia         |   2020. lokakuuta      | 10.0.16, 10.0.15HF, 10.0.14HF, 10.0.13HF      |   NF-e NT2019.001 v1.51 - Tarkistussääntöjen käyttöönotto etukoodin yhteydessä Distrito Federalin mukaan   |
-|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   SPED-verotus - asettelu 015   |
-|      Brasilia         |   marraskuu 2020      | 10.0.15HF      |   SPED-verotus, ICMS/IPI-tietue, C176-päivitys RS-tilalle   |
-|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   DRCST-ilmoituksen SC - SEF 262/2020   |
-|      Brasilia         |   2020. lokakuuta      | 10.0.16      |   SPED-verotus, ICMS/IPI-tietue, C176   |
-|      Tšekin tasavalta      |   Heinäkuu 2020      | 10.0.13      |   ALV-valvontailmoituksen muutokset XML-rakenteessa (laskulistaus)   |
-|      Tšekin tasavalta         |   Heinäkuu 2020      | 10.0.13      |   ALV-ilmoitus XML-muodossa, ALV-ilmoituksen esikatselu Excelissä ja ALV-valvontailmoituksen XML-muodot veroilmoitusmalliin perustuvana   |
-|      Eurooppa        |   Elokuu 2020       | 10.0.14      |   Siirrä kumppanin ALV-tunnus Intrastatiin  |
-|      Suomi         |   Heinäkuu 2020       | 10.0.13      |   Suomen sähköisten laskujen tuki  |
-|      Intia         |   Heinäkuu 2020      | 10.0.13      |   Myytyjen tuotteiden TCS osaa kohti 206C (1H) - raja kertyneiden tapahtumien PAN-kohtainen raja.  |
-|      Intia         |   Elokuu 2020, kesäkuu 2020      | 10.0.13      |   Hyvitys-/veloituslasku vientilaskulle  |
-|      Intia         |   Elokuu 2020      | 10.0.13      |   Sähköinen lasku, GST-vero  |
-|      Intia         |   Heinäkuu 2020      | 10.0.13      |   Uusi GSTR (ANX-1 ja ANX-2), offline-työkalu (beetaversio)  |
-|      Intia         |   2020. lokakuuta      | 10.0.14HF, 10.0.13HF      |   Intian varaston siirtotilauksen GST:n sähköinen lasku|
-|      Intia         |   2020. lokakuuta      | 10.0.14HF, 10.0.13HF      |   Intian GST:n sähköinen lasku ja useita GSTIN-rekisteröintejä|
-|      Intia         |   2020. syyskuuta      | 10.0.13HF      |   Ennakonpidätyksen määrä 3/5 desimaalina|
-|      Intia         |   2020. syyskuuta      | 10.0.14HF      |   Numerosarjaryhmä GSTNSG, tapahtumatyyppi GST-lasku määritetään verotietojen 0073 GST-viitenumerojärjestysryhmälle|
-|      Italia         |   Heinäkuu 2020      | 10.0.13      |   Muutokset Italian sähköisten laskujen, FatturaPA, muodossa |
-|      Malesia         |   Heinäkuu 2020      | 10.0.13      |   SST-raportti |
-|      Meksiko         |   2020. syyskuuta      | 10.0.13HF      |   CFDI URL -rakenne, joka perustuu Anexo 20 -asiakirjaan |
-|      Alankomaat         |   2020. lokakuuta      | 10.0.16     |   Intrastat-muoto päivitetään alkaen 2021 |
-|      Norja         |   Elokuu 2020      | 10.0.14     |   SAF-T - Tosite-arvon mukasen ryhmittelytason tapahtumat on raportoitava Tapahtuma-elementtitasolla Kirjauskansio-tason sijaan |
-|      Puola          |   2020. syyskuuta     | 10.0.14     |   Puola: JPK-V7M (VDEK), Excel-muoto - korvaa SSRS-raportin  |
-|      Puola          |   Heinäkuu 2020     | 10.0.15, 10.0.14HF, 10.0.13     |   Vapaaehtoisen jaetun maksun parannukset |
-|      Puola          |   2020. lokakuuta     | 10.0.13HF     |   Pakollisen jaetun maksun parannukset |
-|      Puola          |   marraskuu 2020     | 10.0.16, 10.0.15, 10.0.14, 10.0.13     |   JPK-V7M (VDEK) - Myyntiasiakirjan tyyppi FP ja RO vähittäismyyntitapahtumia varten |
-|      Puola          |   2020. syyskuuta     | 10.0.15     |   Puola: JPK-V7M (VDEK) - poista lukitus mahdollisuudesta suorittaa raportin luominen osien mukaan |
-|      Puola          |   2020. lokakuuta     | 10.0.16     |   JPK-V7M (VDEK) -raportti - Vapaaehtoinen jaettu maksu -parametrin käyttö |
-|      Venäjä          |   Elokuu 2020     | 10.0.14    |   Kirjanpidon raportoinnin muoto muuttuu vuodesta 2020 alkaen  |
-|      Venäjä          |   Heinäkuu 2020     | 10.0.13    |   Poistojen laskenta hankintakustannuksen perusteella ja merkittävät korjaukset käytettäessä poistobonusta verokirjanpidossa  |
-|      Venäjä          |   marraskuu 2020     | 10.0.16    |   ALV-ilmoituksen muoto päivitetään versioon 5.07 alkaen vuoden 2020 neljännen neljännesvuoden raportoinnista|
+|--------------------|---------------|-------|-------| 
+|      Itävalta         |   Elokuu 2021      | 10.0.22      |   ALV-ilmoitus XML-muodossa ja esikatselu Excelissä   |
+|      Itävalta         |   Syyskuu 2021      | 10.0.22HF      |   Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä   |
+|      Belgia        |   2021. lokakuuta      | 10.0.22HF     |   Intrastat-tapahtumakoodit muuttuvat kaksinumeroisiksi vuodesta 2022 alkaen  |
+|      Brasilia         |   Elokuu 2021      | 10.0.22      |   NF-e NT2020.006 – Digitaalisen alustan välittäjän tunnus (asettelu- ja vahvistussääntöjen päivitykset)   |
+|      Brasilia         |   2021. joulukuuta         | 10.0.22, 10.0.23, 10.0.24         |    SPED-verotuksen asettelu 2022  |
+|      Tšekin tasavalta         |   2021. lokakuuta         | 10.0.23HF         |     Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä  |
+|      Tanska         |   2021. joulukuuta         | 10.0.22HF         |    Intrastat-muoto päivitetään alkaen 2022  |
+|      Viro         |   2021. joulukuuta      | 10.0.22HF      |   Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä  |
+|      Suomi         |   marraskuu 2021         | 10.0.22HF         |    Intrastat-muoto päivitetään alkaen vuodesta 2022.  |
+|      Saksa        |   Elokuu 2021       | 10.0.22HF      |   Intrastat-muoto INSTAT XML päivitetään vuodesta 2022 alkaen. Intrastat-muoto TXT ei ole enää käytettävissä 1.7.2021 alkaen  |
+|      Saksa        |   2021. lokakuuta       | 10.0.23      |   ALV-ilmoitus XML-muodossa ja esikatselu Excelissä (uusi rakenne, jossa verokoodivaluutassa olevat summat voidaan suorittaa valmista käänteisen verovelvollisuuden toimintoa käyttäen muissa kuin DE:n yrityksissä, ja usean yrityksen verotapahtumat voidaan kerätä yhteen)  |
+|      Italia         |   marraskuu 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Sähköinen laskutus rajat ylittäviä tapahtumia varten  |
+|      Meksiko         |   marraskuu 2021      | 10.0.22      |   Carta de Porte -täydennys CFDI-asiakirjoissa   |
+|      Meksiko         |   2021. joulukuuta      | 10.0.24      |   Carta de Porte -täydennyksen versio 2.0  |
+|      Alankomaat        |   2021. lokakuuta      | 10.0.22HF      |   Kaksinumeroiset tapahtumakoodit Intrastat-tiedostomuodossa vuodesta 2022 alkaen  |
+|      Uusi-Seelanti         |   Elokuu 2021      | 10.0.22    |   GST-ilmoituslomake GST101A  |
+|      Norja        |   marraskuu 2021      | 10.0.24      |   ALV-ilmoitusmuoto vuodelle 2022 ja suora lähetys – Dynamics 365 Finance |
+|      Oman         |   Elokuu 2021      | 10.0.22      |   ALV-ilmoitus – versio 1 |
+|      Puola          |   2021. lokakuuta     | 10.0.23, 10.0.24     |   JPK_V7M – uusi rakenneversio tammikuusta 2022 alkaen |
+|      Puola          |   marraskuu 2021     | 10.0.24HF     |   Vuosiraportti kaupallisten tapahtumien maksupäivistä |
+|      Puola          |   2021. lokakuuta     | 10.0.24     |   EU-myyntilistan sähköinen muoto (VAT-UE) |
+|      Venäjä          |   2021. lokakuuta     | 10.0.22HF, 10.0.23, 10.0.24    |   Muutoksia myynteihin, ostokirjapitoon ja laskunkirjauskansioihin|
+|      Venäjä          |   2021. lokakuuta     | 10.0.24HF    |   Muutoksia liitteitä sisältävien ALV-ilmoitusten muotoihin|
+|      Venäjä          |   marraskuu 2021     | 10.0.24    |   Liittovaltion kirjanpidon standardit 6/2020 (käyttöomaisuus)|
+|      Saudi-Arabia          |   marraskuu 2021     | 10.0.22HF, 10.0.23    |   Sähköisten laskujen luominen Saudi-Arabiassa – vaihe 1|
+|      Saudi-Arabia          |   marraskuu 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Retail – sähköinen laskutus Saudi-Arabiassa – vaihe 1|
+|      Espanja          |   2021. lokakuuta     | 10.0.23    |    ALV-ilmoituksen malli 303 txt-muodossa ja esikatselu Excelissä|
+|      Espanja          |   Syyskuu 2021     | 10.0.22    |    Intrastat-muoto päivitetään vuoden 2022 ilmoituksia varten – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä|
+|      Ruotsi          |   2021. lokakuuta     | 10.0.22HF    |    Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä. Käyttöön tulevat kaksinumeroiset tapahtumakoodit.|
+|      Yhdistynyt kuningaskunta          |   Elokuu 2021     | 10.0.22    |    UK – MTD-petostentorjunta 2021)|
 
 
 
 ## <a name="additional-resources"></a>Lisäresurssit
-- Etsi kaikki suunnitellut ja julkaistut pakolliset päivitykset [Lifecycle Service – ongelmahaussa](https://lcs.dynamics.com/Logon/Index) (pakollinen kirjautuminen).
+- Lisätietoja kaikista suunnitelluista ja vapautettavasta maakohtaisista säännösten päivityksistä on kohdassa [Maakohtaisten säännösten päivitysten etsiminen](search-for-regulatory-updates.md). (Kirjautuminen on pakollista.)
 - Lisätietoja tuetuista lokalisaatiosta on [kansainvälisessä tuotesaatavuusoppaassa](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

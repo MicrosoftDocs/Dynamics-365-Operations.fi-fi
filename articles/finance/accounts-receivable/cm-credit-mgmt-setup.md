@@ -1,26 +1,23 @@
 ---
 title: Luotonhallinnan parametrien määrittäminen
 description: Tässä ohjeaiheessa käsitellään asetuksia, joilla luotonhallinta voidaan määrittää vastaamaan yrityksen tarpeita.
-author: mikefalkner
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442734"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323407"
 ---
 # <a name="credit-management-parameters-setup"></a>Luotonhallinnan parametrien määrittäminen
 
@@ -34,7 +31,7 @@ Luotonhallintaa ohjaavia parametreja voi muuttaa **Luotto**-osan neljässä pika
 
 ### <a name="credit-holds"></a>Luoton pidot
 
-- Jos **Salli myyntitilausten arvon muokkaus sen jälkeen, kun tilaus on vapautettu pidosta** -asetuksena on **Ei**, kirjaussäännöt on tarkistettava uudelleen, jos myyntitilauksen arvo (laajennettu hinta) on noussut sen jälkeen, kun myyntitilaus vapautettiin pitoluettelosta. .
+- Jos **Salli myyntitilausten arvon muokkaus sen jälkeen, kun tilaus on vapautettu pidosta** -asetuksena on **Ei**, kirjaussäännöt on tarkistettava uudelleen, jos myyntitilauksen arvo (laajennettu hinta) on noussut sen jälkeen, kun myyntitilaus vapautettiin pitoluettelosta.
 - Valitse **Peruutettujen tilausten syyt** -kentässä vapautuksen syy, jotka käytetään oletusarvoisesti, kun luotonhallinnan pidossa ollut myyntitilaus peruutettiin.
 - Jos **Tarkista asiakkaan luottoryhmän luottoraja** -asetuksena on **Kyllä**, asiakkaan luottoryhmän luottoraja tarkistetaan, kun myyntitilauksen asiakas kuuluu asiakkaan luottoryhmään. Ryhmän luottoraja tarkistetaan, minkä jälkeen tarkistetaan asiakkaan luottoraja, jos ryhmän luottoraja on riittävä.
 - Jos **Tarkista luottoraja, kun maksuehtoja suurennetaan** -asetuksena on **Kyllä**, maksuehtojen sijoitus tarkistetaan ja sen perusteella määritetään, onko asiakkaan oletusmaksuehdoissa eroja. Jos uusien maksuehtojen sijoitus on korkeampi kuin alkuperäisten maksuehtojen sijoitus, tilaus asetetaan luotonvalvonnan pitoon.
@@ -53,7 +50,8 @@ Voit myös määrittää kuinka monta ylimääräistä päivää odotetaan, enne
 
 Jos odotettavia ylimääräisiä päiviä ei määritetä, luottosäännöt tarkistetaan jokaisessa kirjausvaiheessa, joka määritetty suorittamaan luotonhallintasäännöt. Jos vapautat myyntitilauksen kirjaamatta ja suoritat saman tilauksen käsittelyvaiheen uudelleen, luottosäännöt tarkistetaan uudelleen. Tilaus voidaan esimerkiksi asettaan pitoon vahvistuksen jälkeen, ja se vapautetaan joko tekemällä kirjaus tai kirjaamatta: Tässä tapauksessa tilaus asetetaan uudelleen pitoon, jos vahvistat sen uudelleen. Tilauksessa kannattaa käyttää ylimääräisiä odottavia päiviä, jos tilauksen on siirryttävä seuraavaan käsittelyvaiheeseen ilman, että asetetaan uudelleen pitoon.
 
-Odottavia ylimääräisiä päiviä ei voi määrittää joihinkin kirjauksen tarkistuspisteisiin muttei toisiin. Kaikki kirjauksen tarkistuspisteet on määritettävä siten, että niissä joko on ylimääräisiä odottavia päiviä tai niitä ei ole.
+> [!Note]
+> Jos yhdelle kirjauksen tarkistuspisteelle on määritetty ylimääräisiä päiviä, kaikilla kirjattavaksi merkityissä tarkistuspisteillä on oltava ylimääräisiä päiviä.
 
 - Valitsemalla **Kirjaus**-valintaruudun voit suorittaa luotonhallintasäännöt, kun rivillä näkyvä kirjauksen tarkistuspiste suoritetaan. Jos valintaruutua ei valita, säännöt tarkistetaan vain kerran koko kirjausprosessin aikana.
 - Jos valitset **Kirjaus**-valintaruudun, voit määrittää, kuinka monta ylimääräistä päivää odotetaan, ennen kuin estosäännöt tarkistetaan uudelleen. Ylimääräisiä odottavia päiviä ei voi lisätä, jos **Kirjaus**-valintaruudun valinta on poistettu.
@@ -75,7 +73,14 @@ Odottavia ylimääräisiä päiviä ei voi määrittää joihinkin kirjauksen ta
 
 - Asiakkaan luottoraja näytetään luotonhallinnassa asiakkaan valuuttana. Luottorajan vaihtokurssin tyyppi on määritettävä asiakkaan valuuttana. Valitse **Luottorajan vaihtokurssin tyyppi** -kentässä vaihtokurssin tyyppi, jota käytetään muuntamaan ensisijainen luottoraja asiakkaan luottorajaksi.
 - Kun **Salli luottorajojen manuaalinen muokkaus** -asetuksena on **Ei**, käyttäjät eivät voi muokata luottorajoja **Asiakkaat**-sivulla. Jos tässä asetuksessa on valittu **Ei**, asiakkaan luottorajaa voi muuttaa vain kirjaamalla luottorajan oikaisutapahtumia.
+- Määritä **Ohita varaston varaukset** -asetukseksi **Kyllä**, jos haluat ohittaa varastovaraukset, kun luotonhallinnan estosäännöt tarkistetaan. Tässä tapauksessa järjestelmä tarkistaa täydet rivimäärät ja ottaa käyttöön tarkistuspisteiden jatkoajat varastovarausmäärästä riippumatta.
+- Kun luotonhallinta on käytössä, **Sanoma luottorajan ylittyessä** -kentän asetusta käytetään vain vapaatekstilaskujen käsittelemiseen. Vaikka sanomat lisätään edelleen myyntitilauksiin, kun asiakkaat ovat ylittäneet luottorajansa, näiden sanomien näyttäminen ei estä vahvistusta, keräysluetteloiden ja pakkausluetteloiden tulostamista tai laskujen kirjaamista.
+
+    Luotonhallinta on oletusarvoisesti käytössä, mutta sen voi poistaa käytöstä. Jos se on käytössä, tunnistat luottorajan ylittäneet asiakkaat hyvityshallinnan estosääntöjen ja tarkistuspisteiden avulla. Jos se ei ole käytössä, myyntitilauksiin lisätyt sanomat, jotka perustuvat **Sanoma luottorajakentän ylittyessä** -kentän asetukseen, voivat auttaa tunnistamaan, milloin asiakkaat ovat ylittäneet luottorajansa.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Numerosarjat ja jaetut numerosarjaparametrit
 
 Luottorajaoikaisujen käsittelemiseen tarvitaan kirjauskansion tunnus. Kirjauskansion tunnukseen käytettävä luottorajan oikaisun numero on lisättävä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

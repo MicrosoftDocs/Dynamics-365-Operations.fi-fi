@@ -2,24 +2,22 @@
 title: Lähtevän kuormituksen visualisointi
 description: Tässä aiheessa on tietoja lähtevän kuormituksen visualisoinnista. Varastopäälliköt ja työnjohtajat voivat luoda tällä toiminnolla mukautettuja kuormituskaavioita, joilla voidaan seurata nykyisen työn edistymistä ja jäljellä olevia summia. Varastopäälliköt voivat luoda useita näkymiä ja määrittää tarvittavan automaattisen päivityksen.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965549"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102885"
 ---
 # <a name="outbound-workload-visualization"></a>Lähtevän kuormituksen visualisointi
 
@@ -29,12 +27,9 @@ ms.locfileid: "4965549"
 
 Tämän toiminnon avulla voidaan seurata keräilytyön etenemistä. Tämä toiminto integroidaan työntekijöiden hallintaan, ja jos työntekijöiden hallinta on määritetty, lähtevän kuormituksen visualisoinnit voivat näyttää sen tuntimäärän laskelman, joka on jäljellä näytetystä keräilytyöstä (suodatettu).
 
-## <a name="turn-on-the-outbound-workload-visualization-feature"></a>Lähtevän kuormituksen visualisointitoiminnon ottaminen käyttöön
+## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Lähtevän kuormituksen visualisointitoiminnon ottaminen käyttöön tai pois käytöstä
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat tarkistaa toiminnon tilan ja ottaa sen käyttöön [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetusten avulla. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Lähtevän kuormituksen visualisointi*
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Lähtevän kuormituksen visualisointi* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Lähtevän kuormituksen visualisoinnin määrittäminen
 
@@ -62,7 +57,7 @@ Lähtevän kuormituksen visualisointi määritetään seuraavasti:
     - **Sisällytettävät päivä** – anna niiden päivien määrä menneisyydessä, joille kaavio luodaan.
     - **Työtilauksen tyyppi** – valitse suodatusperusteena käytettävät työtilauksen tyypit.
 
-    ![Määritä suodattimet -sivu](media/work-viz-filters-1.png "Määritä suodattimet -sivu")
+    ![Määritä suodattimet -sivu.](media/work-viz-filters-1.png "Määritä suodattimet -sivu")
 
 1. Palaa **Lähtevän kuormituksen visualisoinnit** -sivulle sulkemalla **Määritä suodattimet** -sivu.
 
@@ -72,11 +67,11 @@ Lähtevän kuormituksen visualisointi määritetään seuraavasti:
     - **Päivitetty viimeksi** – tässä kentässä päivämäärä ja aika, jolloin kaavion tiedot viimeksi päivitettiin.
     - **Arvioitu tai toteutunut aika** – Jos järjestelmään on määritetty työn standardit, määritä asetukseksi *Kyllä*, jolloin kertyneet keräilyaika-arviot näytetään kaavion kunkin sarakkeen yläosassa. Jos työn standardeja ei käytetä, tämä vaihtoehto ei ole käytettävissä.
 
-    ![Esimerkkivisualisointi](media/work-viz-chart.png "Esimerkkivisualisointi")
+    ![Esimerkkivisualisointi.](media/work-viz-chart.png "Esimerkkivisualisointi")
 
 1. Näytä liitetyn työrivin tiedot valitsemalla jokin kaavion palkki.
 
-    ![Työrivin tiedot](media/work-viz-work-details.png "Työrivin tiedot")
+    ![Työrivin tiedot.](media/work-viz-work-details.png "Työrivin tiedot")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Esimerkki: vyöhykkeiden lähtevän kuormituksen visualisointi
 
@@ -94,6 +89,9 @@ Tässä esimerkissä määritetään visualisointi näyttämään kunkin vyöhyk
 
 Seuraavassa kuvassa on esimerkki tuloksena saatavasta kaaviosta.
 
-![Vyöhykkeen ja työn tilan vertailun visualisointi](media/work-viz-chart.png "Vyöhykkeen ja työn tilan vertailun visualisointi")
+![Vyöhykkeen ja työn tilan vertailun visualisointi.](media/work-viz-chart.png "Vyöhykkeen ja työn tilan vertailun visualisointi")
 
 Kaaviossa on kaksi vyöhykettä, **TUOTANTO** ja **MÄÄRÄ**, sekä **Tyhjä**-niminen vyöhyke. **Tyhjä**-vyöhyke ilmaisee kaikki työrivit, jotka eivät ole vyöhykkeiden jäseniä. Kaavio näyttää aina kaikki ei-liittyvät suodatut tiedot **tyhjänä**, sillä näin saadaan mahdollisimman suuri näkyvyys. **TUOTANTO**-vyöhykkeen osalta kaavio näyttää kolme suljettua riviä ja neljä avointa riviä. **MÄÄRÄ**-vyöhykkeen osalta kaavio näyttää neljä suljettua riviä, yhden avoimen rivin ja 24 peruutettua riviä. Kaaviossa on vielä kahdeksan suljettua riviä, jotka eivät kuulu mihinkään vyöhykkeeseen ja jotka ovat siksi **Tyhjä**-vyöhykkeessä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

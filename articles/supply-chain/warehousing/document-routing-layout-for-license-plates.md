@@ -2,30 +2,28 @@
 title: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
 description: Tässä aiheessa kuvataan, miten tarrojen arvot tulostetaan muotoilumenetelmien avulla.
 author: perlynne
-manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427410"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103887"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Rekisterikilven otsikoiden asiakirjareitityksen asettelu
 
 [!include [banner](../includes/banner.md)]
+
 
 Tiedoston reititysasettelu määrittää rekisterikilpietikettien asettelun ja niihin tulostettavat tiedot. Voit määrittää tulostuksen käynnistyspisteet, kun määrität matkaviestimen valikkokohteita ja työmalleja.
 
@@ -53,6 +51,10 @@ Jos haluat nähdä tulostettavat arvot, siirry kohtaan **Varaston hallinta \> Ky
 
 Useiden laajalti käytettävissä olevien etikettityökalujen avulla voit muotoilla etiketin asettelun tekstin. Monet näistä työkaluista tukevat `$FieldName$`-muotoa. Lisäksi Microsoft Dynamics 365 Supply Chain Management käyttää erityismuotoilulogiikkaa osana tiedoston reitityksen asettelun kenttien yhdistämismääritystä.
 
+## <a name="turn-on-this-feature-for-your-system"></a>Tämän ominaisuuden ottaminen käyttöön järjestelmällesi
+
+Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Rekisterikilpien etikettien parannetut asettelut* -ominaisuus käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
+
 ## <a name="custom-number-formats"></a>Mukautetut lukumuodot
 
 Voit mukauttaa numeeristen kenttien arvojen muotoilua käyttämällä koodeja, joiden muoto on seuraava.
@@ -71,7 +73,7 @@ Seuraavissa esimerkeissä näytetään, miten työmäärä- (**Määrä**)-kentt
 - Jos haluat näyttää aina neljä numeroa (käyttämällä paikkamerkkeinä nollia), käytä `$Qty:0000$`-toimintoa. Jos määrä on esimerkiksi 10, otsikossa näkyy teksti "0010".
 - Jos haluat näyttää aina kaksi desimaalia, käytä `$Qty:0.00$`-kenttää. Jos määrä on esimerkiksi 10, otsikossa näkyy teksti "10.00".
 
-Täydellinen luettelo käytettävissä olevista numeromuotomerkkijonoista on kohdassa [Mukautetut numeeriset muotomerkkijonot](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+Täydellinen luettelo käytettävissä olevista numeromuotomerkkijonoista on kohdassa [Mukautetut numeeriset muotomerkkijonot](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Mukautetut merkkijonomuodot
 
@@ -93,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 Tässä esimerkissä päivämäärä, joka on 30. huhtikuuta 2020, näkyy muodossa "30-04-2020".
 
-Täydellinen luettelo käytettävissä olevista päivä-/aikamuodoista on kohdassa [Mukautetut päivä-/aikamuotomerkkijonot](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Täydellinen luettelo käytettävissä olevista päivä-/aikamuodoista on kohdassa [Mukautetut päivä-/aikamuotomerkkijonot](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Rivien tulostaminen monirivistä tiedoista
 
@@ -136,3 +138,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Lisätietoja tarrojen tulostamisesta
 
 Lisätietoja etikettien määrittämisestä ja tulostamisesta on kohdassa [Rekisterikilven tarratulostuksen ottaminen käyttöön](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

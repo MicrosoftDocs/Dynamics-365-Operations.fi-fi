@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: cbaeb120032bf2239fd9a5bce39fd7936229b308
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777812"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102935"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Siirtotilausten luominen varastosovelluksesta
 
@@ -26,19 +26,14 @@ ms.locfileid: "7777812"
 
 Varastotyöntekijät voivat luoda ja käsitellä tällä ominaisuudella siirtotilauksia suoraan varastonhallinnan mobiilisovelluksessa. Työntekijä aloittaa valitsemalla kohdevaraston. Tämän jälkeen lisäävät rekisterikilvet siirtotilaukseen lukemalla vähintään yhden rekisterikilven. Kun varastotyöntekijä valitsee **Suorita tilaus**, erätyö luo tarvittavan siirtotilauksen ja tarvittavat tilausrivit kyseisille rekisterikilville rekisteröidyn käytettävissä olevan varaston perusteella.
 
-## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Siirtotilausten luonnin ottaminen käyttöön varastosovellustoiminnossa
+## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Toiminnon ottaminen käyttöön tai pois käytöstä
 
 Ennen kuin tätä toimintoa voidaan käyttää, se on otettava edellytyksineen käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) sivua ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön tarvittaessa.
 
-1. Ota ensimmäiseksi käyttöön [Käsittele varastosovelluksen tapahtumat](warehouse-app-events.md) -toiminto, joka näkyy [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) seuraavasti:
-    - **Moduuli** - Varastonhallinta
-    - **Toiminnon nimi** – Käsittele varastosovelluksen tapahtumia
-1. Ota seuraavaksi käyttöön *Luo siirtotilauksia varastosovelluksessa* -ominaisuus, joka näkyy seuraavasti:
-    - **Moduuli** - Varastonhallinta
-    - **Ominaisuuden nimi** – Luo ja käsittele siirtotilauksia varastosovelluksessa
-1. Jos lähtevien lähetysten käsittely halutaan automatisoida, myös [Vahvista lähtevät lähetykset erätöissä](confirm-outbound-shipments-from-batch-jobs.md) -ominaisuus on otettava käyttöön. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla toiminnon tilan sekä ottaa sen käyttöön tai poistaa sen käytöstä tarvittaessa. Toiminto näkyy seuraavasti:
-    - **Moduuli** - Varastonhallinta
-    - **Ominaisuuden nimi** – Vahvista lähtevät lähetykset erätöissä
+1. Ota seuraavat kaksi toimintoa (järjestyksessä) käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa. Supply Chain Managementin versiosta 10.0.25 alkaen nämä molemmat toiminnot ovat oletusarvoisesti käytössä.
+    1. *Käsittele varastosovelluksen tapahtumat*
+    1. *Luo ja käsittele siirtotilauksia varastosovelluksesta*
+1. Jos lähtevien lähetysten käsittely halutaan automatisoida, myös [Vahvista lähtevät lähetykset erätöissä](confirm-outbound-shipments-from-batch-jobs.md) -ominaisuus on otettava käyttöön.
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Mobiililaitteen valikkokohteen määrittäminen luomaan siirtotilauksia
 

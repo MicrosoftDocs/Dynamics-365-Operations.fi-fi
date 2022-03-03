@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920720"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102710"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -35,17 +35,15 @@ Tässä aiheessa kuvataan kutakin menetelmää yksityiskohtaisesti.
 
 Useimmat suunnitellut tilaustoiminnot ovat käytettävissä kaikissa Microsoft Dynamics 365 Supply Chain Managementin vakioasennuksissa, joissa käytetään suunnittelun optimointia. Joitakin tässä ohjeaiheessa kuvatuista ominaisuuksista on kuitenkin otettava käyttöön ominaisuuksien hallinnassa, ennen kuin niitä voi käyttää.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Suunniteltujen tilausten rinnakkaisen vahvistuksen ottaminen käyttöön
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Suunniteltujen tilausten rinnakkaisen vahvistuksen ottaminen käyttöön tai käytöstä poistaminen
 
-Rinnakkainen vahvistus nopeuttaa vahvistusprosessia rinnakkaistamalla sen useissa säikeissä. Tämä menetelmä voi olla hyödyllinen, kun useita suunniteltuja tilauksia vahvistetaan.
-
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunniteltujen tilausten rinnakkainen vahvistus* -ominaisuuden käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+Rinnakkainen vahvistus nopeuttaa vahvistusprosessia rinnakkaistamalla sen useissa säikeissä. Tämä menetelmä voi olla hyödyllinen, kun useita suunniteltuja tilauksia vahvistetaan. Tämän toiminnon käyttö edellyttää, että järjestelmässä on käytössä *Suunniteltujen tilausten rinnakkainen vahvistaminen* -toiminto. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, voit ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla [Toimintojen hallinnasta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) toimintoa *Suunniteltujen tilausten rinnakkainen vahvistaminen*.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Ota suunniteltujen tilausten vahvistaminen käyttöön suodatuksen avulla
 
 Suunniteltujen tilausten vahvistaminen suodatuksella mahdollistaa loogisten ehtojen määrittämisen sen valitsemiseksi, mitkä suunnitellut tilaukset haluat vahvistaa. Voit myös esikatsella valittuja suunniteltuja tilauksia, suorittaa prosessin taustalla ja/tai ajoittaa sen erätyönä.
 
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunniteltujen tilausten vahvistaminen suodatuksen avulla* -ominaisuuden käyttöön.
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Suunnitellun tilauksen vahvistaminen suodatuksen kanssa* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Ota käyttöön automaattinen vahvistus suunnittelun optimoinnille
 

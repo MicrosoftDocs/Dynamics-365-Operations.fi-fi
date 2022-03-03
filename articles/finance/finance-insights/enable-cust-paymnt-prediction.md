@@ -1,64 +1,55 @@
 ---
-title: Asiakkaan maksuennusteiden käyttöönotto (esiversio)
+title: Asiakkaan maksuennusteiden ottaminen käyttöön
 description: Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan käyttöön ja määritetään Finance Insightsissa.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e10aa9342ec9f089ef8ecec5e1221a31c580fc87
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: b83d1230c94462ca722ad7ceb7b2185afd636aae
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644990"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109601"
 ---
-# <a name="enable-customer-payment-predictions-preview"></a>Asiakkaan maksuennusteiden käyttöönotto (esiversio)
+# <a name="enable-customer-payment-predictions"></a>Asiakkaan maksuennusteiden ottaminen käyttöön
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan käyttöön ja määritetään Finance Insightsissa. Toiminto otetaan käyttöön **Toimintojen hallinta** -työtilassa ja määritysasetukset syötetään **Financial Insights -parametrit** -sivulla. Tämä ohjeaihe sisältää tietoja, joiden avulla voit käyttää toimintoa tehokkaasti.
+Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan käyttöön ja määritetään Finance Insightsissa. Toiminto otetaan käyttöön **Ominaisuuksien hallinta** -työtilassa ja määritysasetukset annetaan **Finance Insights -määritykset** -sivulla. Tämä ohjeaihe sisältää tietoja, joiden avulla voit käyttää toimintoa tehokkaasti.
 
 > [!NOTE]
 > Ennen kuin suoritat seuraavat vaiheet, varmista, että olet suorittanut ennalta suoritettavat vaiheet [Määritykset Finance Insightsia varten](configure-for-fin-insites.md) -ohjeaiheesta.
 
-1. Muodosta yhteys ympäristön Azure SQL:n ensisijaiseen esiintymään Microsoft Dynamics Lifecycle Services (LCS) -ratkaisun ympäristösivun tietojen avulla. Suorita seuraava Transact-SQL (T-SQL) -komento, jos haluat ottaa käyttöön eristysympäristön väliversiotestaukset. (Sinun on ehkä otettava käyttöön IP-osoitteen käyttö LCS:ssä ennen etäyhteyden muodostamista Application Object Serveriin \[AOS\].)
+1. Asiakkaan maksuennusteet -toiminnon ottaminen käyttöön:
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, PARTITION) VALUES ('PayPredEnableFeature', 1, 5637144576)`
+    1. Avaa **Ominaisuuksien hallinta** -työtila.
+    2. Valitse **Tarkista päivitysten saatavuus**.
+    3. Käytä **Kaikki**-välilehdessä hakusanaa **Asiakkaan maksuennusteet**. Jos toimintoa ei löydy, käytä hakusanaa **(Esiversio) Asiakkaan maksuennusteet**. 
+    4. Ota toiminto käyttöön.
 
-    > [!NOTE]
-    > Jos Microsoft Dynamics 365 Finance -käyttöönotto on Service Fabric -käyttöönotto, voit ohittaa tämän vaiheen. Finance Insightsin ryhmä on todennäköisesti jo ottanyt sen käyttöön. Jos et näe ominaisuutta **Toimintojen hallinta** -työtilassa tai jos sen käyttöönotossa on ongelmia, ota yhteyttä käyttämällä osoitetta <fiap@microsoft.com>.
+    Asiakkaan maksuennusteet -toiminto on nyt käytössä ja valmis määritettäväksi.
 
-2. Ota käyttöön Asiakasmaksun tiedot -toiminto:
+2. Määritä Asiakasmaksun tiedot -toiminto:
 
-    1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
-    2. Etsi toiminto, jonka nimi on **Asiakasmaksujen tiedot (esiversio)**.
-    3. Valitse **Ota käyttöön nyt**.
+    1. Valitse **Luotonvalvonta \> Asetukset \> Finance Insights \> Asiakkaan maksuennusteet**.
+    2. Valitse **Finance Insights -määritykset** -sivun **Asiakkaan maksuennusteet** -välilehdessä **Ennustemallissa käytettyjen tietokenttien tarkasteleminen** -linkki ja avaa **Ennustemallin tietokentät** -sivu. Siellä voit tarkastella oletusluetteloa kentistä, joita käytetään asiakkaan maksuennusteiden tekoälyennustemallissa.
 
-    Asiakasmaksujen tiedot -toiminto on nyt käytössä ja valmis määritettäväksi.
-
-3. Määritä Asiakasmaksun tiedot -toiminto:
-
-    1. Siirry kohtaan **Luotonvalvonta \> Asetukset \> Finance Insights \> Finance Insights -parametrit**.
-
-        [![Financial Insights -parametrit -sivu ennen toiminnon määrittämistä](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
-
-    2. Valitse **Financial Insights -parametrit** -sivun **Asiakasmaksun tiedot** -välilehdessä **Ennustemallissa käytettyjen tietokenttien tarkasteleminen** -linkki ja avaa **Ennustemallin tietokentät** -sivu. Siellä voit tarkastella oletusluetteloa kentistä, joita käytetään asiakkaan maksuennusteiden tekoälyennustemallissa.
-
-        Jos haluat käyttää kenttien oletusluetteloa ja luoda ennustemallin, sulje **Ennustemallin tietokentät** -sivu ja määritä sitten **Financial Insights -parametrit** -sivu ja **Ota toiminto käyttöön** -vaihtoehdon arvoksi **Kyllä**.
+        Jos haluat käyttää kenttien oletusluetteloa ja luoda ennustemallin, sulje **Ennustemallin tietokentät** -sivu ja määritä sitten **Finance Insights -määritykset** -sivu ja **Ota toiminto käyttöön** -vaihtoehdon arvoksi **Kyllä**.
+        
+   > [!NOTE]
+   > **Asiakkaan maksuennusteet**-toiminto edellyttää yli 100 tapahtumaa 6–9 edellisen kuukauden ajalta. Tapahtumia voivat olla esimerkiksi vapaatekstilaskut, myyntitilauksia ja asiakasmaksut. Tietojen on oltava jaettuna asetusten **Ajoissa**, **Myöhässä** ja **Paljon myöhässä** kesken.    
+     
 
     3. Määrtä erittäin paljon myöhässä -tapahtumakausi, jotta voit määrittää, mitä **Erittäin paljon myöhässä** -ennustesäilö tarkoittaa yrityksessä.
 
@@ -71,23 +62,13 @@ Tässä ohjeaiheessa kerrotaan, miten Asiakkaan maksuennusteet -toiminto otetaan
         > [!NOTE]
         > Jos muutat Erittäin paljon myöhässä -tapahtumakautta ja valitset **Muuta myöhäistä rajaa** -arvoa asiakasmaksujen tekoälyennustemallin luomisen jälkeen, olemassa oleva ennustemalli poistetaan ja uusi luodaan. Uusi ennustemalli siirtää tapahtumat Erittäin paljon myöhässä -kauteen määritettyjen asetusten perusteella.
 
-    4. Kun Erittäin paljon myöhässä -tapahtumakausi on määritetty, valitse **Luo ennustemalli** ja luo ennustemalli. **Ennustemalli**-osassa **Financial Insights -parametrit** -sivulla näkyy ennustemallin tila.
+    4. Kun Erittäin paljon myöhässä -tapahtumakausi on määritetty, valitse **Luo ennustemalli** ja luo ennustemalli. **Finance Insights -määritykset** -sivun **Ennustemalli**-osassa näkyy ennustemallin tila.
 
         > [!NOTE]
         > Kun ennustemallia luodaan, voit käynnistää prosessin uudelleen valitsemalla **Nollaa mallin luominen**.
 
     Toiminto on nyt määritetty ja valmis käytettäväksi.
 
-Kun toiminto on otettu käyttöön ja määritetty ja ennustemalli luotu ja toiminnassa, **Ennustemalli**-osa **Financial Insights -parametrit** -sivulla näyttää mallin tarkkuuden seuraavan kuvan mukaisesti.
+Kun toiminto on otettu käyttöön ja määritetty sekä ennustemalli luotu ja toiminnassa, **Finance Insights -parametrit** -sivun **Ennustemalli**-osa näyttää mallin tarkkuuden seuraavan kuvan mukaisesti.
 
-[![Financial Insights -parametrit -sivun ennustemallin tarkkuus](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
-
-## <a name="release-details"></a>Julkaisun tiedot
-
-Finance Insightsin julkinen esiversio on saatavilla koekäyttöönotoissa Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
-
-Julkisen esiversion ominaisuudet voidaan ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei voi siirtää tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
-
-## <a name="privacy-notice"></a>Tietosuojatiedot
-
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Toimittajan laskun kirjaaminen ja täsmäyttäminen vastaanotettuihin määriin
 description: Kun vastaanotat toimittajalta ostotilaukseen perustuvan laskun toimitetuista tavaroista tai palveluista, liiketoimintaprosessit voivat edellyttää, että tavarat tai palvelut on vastaanotettu ennen laskun hyväkymistä maksettavaksi.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa79ab46e9fdc6f8a2b4524d372949314ac2d200
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a3f1463821a43af0d8d5f15225944b080414e4c
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442713"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109915"
 ---
 # <a name="record-vendor-invoice-and-match-against-received-quantity"></a>Toimittajan laskun kirjaaminen ja täsmäyttäminen vastaanotettuihin määriin
 
@@ -29,39 +26,42 @@ ms.locfileid: "4442713"
 
 Kun vastaanotat toimittajalta ostotilaukseen perustuvan laskun toimitetuista tavaroista tai palveluista, liiketoimintaprosessit voivat edellyttää, että tavarat tai palvelut on vastaanotettu ennen laskun hyväkymistä maksettavaksi. Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna. 
 
-Varmista Ostoreskontran parametrit -sivulla, että Ota käyttöön laskujen täsmäytyksen vahvistus -asetus on valittu, Kirjaa lasku, jossa on ristiriitoja -kentän arvoksi on määritetty Edellytä hyväksyntä ja Rivien vastaavuuskäytäntö -kentän arvoksi on määritetty Kolmisuuntainen vastaavuus.
+Varmista **Ostoreskontran parametrit** -sivulla, että **Ota käyttöön laskujen täsmäytyksen vahvistus** -asetus on valittu, **Kirjaa lasku, jossa on ristiriitoja** -kentän arvoksi on määritetty **Edellytä hyväksyntä** ja **Rivien vastaavuuskäytäntö** -kentän arvoksi on määritetty **Kolmisuuntainen vastaavuus**.
 
 Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli.
 
 
 ## <a name="create-a-purchase-order"></a>Luo ostotilaus
 1. Siirry Kaikki ostotilaukset -kohtaan.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Toimittajan tili -kentässä avattavan valikon painike.
-4. Kirjoita arvo Toimittajan tili -kenttään.
-5. Valitse OK.
-6. Valitse Lisää rivi.
-7. Kirjoita arvo Nimiketunnus-kenttään.
-8. Valitse toimintoruudussa Osta.
-9. Valitse Vahvista.
+2. Valitse **Uusi**.
+3. Avaa haku valitsemalla **Toimittajan tili** -kentässä avattavan valikon painike.
+4. Kirjoita arvo **Toimittajan tili** -kenttään.
+5. Valitse **OK**.
+6. Valitse **Lisää rivi**.
+7. Kirjoita arvo **Nimiketunnus**-kenttään.
+8. Valitse toimintoruudussa **Osto**.
+9. Valitse **Vahvista**.
 
 ## <a name="post-a-product-receipt"></a>Tuotteen vastaanoton kirjaaminen
-1. Valitse toimintoruudussa Vastaanota.
-2. Valitse Tuotteen vastaanotto.
+1. Valitse toimintoruudussa **Vastaanota**.
+2. Valitse **Tuotteen vastaanotto**.
 3. Merkitse valittu rivi luettelossa.
-4. Kirjoita arvo Tuotteen vastaanotto -kenttään.
-5. Valitse OK.
+4. Kirjoita arvo **Tuotteen vastaanotto** -kenttään.
+5. Valitse **OK**.
 
 ## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>Toimittajan laskun tallentaminen ja täsmäyttäminen tuotteen vastaanoton kanssa
-1. Valitse toimintoruudussa Lasku.
-2. Valitse Lasku.
-3. Kirjoita arvo Numero-kenttään.
-4. Valitse Oletusarvo kohteesta: Tilattu määrä, kun haluat avata valintaikkunan.
-5. Valitse vaihtoehto Rivien oletusmäärä -kentässä.
-6. Valitse OK.
-7. Valitse Kyllä.
-8. Valitse Täsmäytä tuotteiden vastaanotot.
-9. Valitse OK.
-10. Valitse toimintoruudussa Tarkista.
-11. Valitse Täsmäytyksen tiedot.
+1. Valitse toimintoruudussa **Lasku**.
+2. Valitse **Lasku**.
+3. Kirjoita arvo **Numero**-kenttään.
+4. Avaa valintaikkuna valitsemalla **Oletusarvo kohteesta: Tilattu määrä**.
+5. Valitse vaihtoehto **Rivien oletusmäärä** -kentässä.
+6. Napsauta **OK**.
+7. Valitse **Kyllä**.
+8. Valitse **Täsmäytä tuotteiden vastaanotot**.
+9. Napsauta **OK**.
+10. Valitse toimintoruudussa **Tarkista**.
+11. Valitse **Täsmäytyksen tiedot**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069376"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103410"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
@@ -39,12 +39,9 @@ Varastonhallinnan mobiilisovellus on saatavana sekä Windows- että Google Andro
 - Windows 10 (universaali Windows-ympäristö \[UWP\]) lokakuun 2018 päivitys 1809 (koontiversio 10.0.17763) tai uudempi
 - Android 4.4 tai uudempi
 
-## <a name="turn-on-the-feature"></a>Toiminnon ottaminen käyttöön
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Warehouse Management -mobiilisovelluksen toimintojen ottaminen käyttöön tai pois käytöstä Supply Chain Managementissa
 
-Sovellusta ei voi käyttää, ennen kuin vastaava toiminto on otettu käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Uuden varastointisovelluksen käyttäjäasetukset, kuvakkeet ja vaiheiden otsikot*
+Warehouse Management -mobiilisovelluksen käyttöä varten järjestelmässäsi on oltava käytössä *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toiminto. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen hakeminen
 

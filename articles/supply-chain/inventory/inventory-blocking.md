@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b6169362c9e8cb3a9ace2f300dd9d80aa9cd085
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 606bc23f552b57d0f4e3fdad28d1144cdf43e5d5
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568876"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103535"
 ---
 # <a name="inventory-blocking"></a>Varastoesto
 
@@ -96,13 +96,11 @@ Kun **Varaa tilatut nimikkeet** poistetaan käytöstä, odotettuja vastaanottoja
 
 Huomaa ero tapahtuman tilassa ja dimensioissa kahden tapauksen välillä. Tästä syystä on suositeltavaa ottaa käyttöön **Varaa tilatut nimikkeet** -vaihtoehto.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
+### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Poista odotetut vastaanotot käytöstä laatutilauksissa, jotka ottavat näytteitä estetystä varastosta -toiminto
 
-### Disable expected receipts from quality orders that sample blocked inventory feature
+Järjestelmässä on odotetut vastaanotot laatutilauksilta poistava toiminto varastotapahtumien helpottamiseksi sellaisissa tapauksissa, että laatutilaukset ottavat näytteitä varastoista, jotka on estetty varaston tilan perusteella. Koska estetty varastotila estää odotetun vastaanoton välittömästi, tämä muutos ei vaikuta käytettävissä olevaan varastoon.
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
-
--->
+Oletusarvon mukaan tämä asetus on pois käytöstä. Järjestelmänvalvojat voivat poistaa sen käytöstä hakemalla *Poista odotetut vastaanotot käytöstä laatutilauksissa, jotka ottavat näytteitä estetystä varastosta* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

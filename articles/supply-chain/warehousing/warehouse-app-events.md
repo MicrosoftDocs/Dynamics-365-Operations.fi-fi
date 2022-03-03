@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1e648b5db9405e749fbd24502f65f344d0549b0f13b48e98c38d1476866db01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729983"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103260"
 ---
 # <a name="warehouse-app-event-processing"></a>Varastosovelluksen tapahtumakäsittely
 
@@ -26,12 +26,9 @@ ms.locfileid: "6729983"
 
 Supply Chain Managementissa suoritettavat erätyöt voivat käyttää tapahtumien käsittelyjonon varastonhallinnan mobiilisovelluksen määrittämiä tietoja, jotta ilmoitettuihin tapahtumiin voidaan reagoida tarvittaessa. Tämä toiminto lisää liittyvät tapahtumat jonoon vastauksena sovellusta käyttävien työtekijöiden tekemiin tietyn tyyppisiin toimintoihin. Esimerkiksi käytettäessä *Luo ja käsittele siirtotilauksia varastosovelluksessa* -toimintoa siirtotilauksen otsikko ja rivit luodaan ja päivitetään taustalla, kun järjestelmä suorittaa **Käsittele varastosovelluksen tapahtumia** -erätyön.
 
-## <a name="enable-the-process-warehouse-app-events-feature"></a>Käsittele varastosovelluksen tapahtumia -toiminnon ottaminen käyttöön
+## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Käsittele varastosovelluksen tapahtumat -toiminnon ottaminen käyttöön tai pois käytöstä
 
-Ennen kuin käytät tätä toimintoa, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) sivua ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön tarvittaessa. Käsittele varastosovelluksen tapahtumia -toiminnossa on seuraavat osat:
-
-- **Moduuli** - Varastonhallinta
-- **Toiminnon nimi** – Käsittele varastosovelluksen tapahtumia
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Käsittele varastosovelluksen tapahtumat* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Erätyön määrittäminen käsittelemään varastosovelluksen tapahtumia
 

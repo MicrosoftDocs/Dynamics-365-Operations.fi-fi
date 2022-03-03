@@ -2,7 +2,7 @@
 title: Tehtävien hallinnan synkronointi Microsoft Teamsin ja Dynamics 365 Commerce -myyntipisteen välillä
 description: Tässä aiheessa kuvataan, kuinka tehtävänhallinta synkronoidaan Microsoft Teamsin ja Dynamics 365 Commerce -myyntipisteen välillä.
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f9abebbf8d6c5dd6695b9697361e1a9a9e6005dc3ded16c4211c9c5c9e34a0b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c07ca28b45335de5e327305b7426d1b6de8ce5c7
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730872"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323494"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Tehtävien hallinnan synkronointi Microsoft Teamsin ja Dynamics 365 Commerce -myyntipisteen välillä
 
@@ -54,6 +54,9 @@ Lisätietoja on kohdassa [Organisaation töiden luonti ja seuranta tehtäväluet
 ## <a name="link-pos-and-teams-for-task-management"></a>Myyntipisteen ja Teamsin linkitäminen tehtävien hallintaa varten
 
 Noudattamalla seuraavia ohjeita voit linkittää myyntipisteen ja Microsoft Teamsin tehtävien hallitsemiseksi Commerce headquartersissa.
+
+> [!NOTE]
+> Ennen kuin yrität integroida tehtävänhallinnan Microsoft Teamsiin, varmista, että [Dynamics 365 Commerce- ja Microsoft Teams -integrointi](enable-teams-integration.md) on käytössä. 
 
 1. Siirry kohtaan **Retail ja Commerce \> Tehtävien hallinta \> Tehtävien integrointi Microsoft Teamsin kanssa**.
 1. Valitse toimintoruudussa **Muokkaa**.

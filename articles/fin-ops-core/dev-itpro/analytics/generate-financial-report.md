@@ -2,7 +2,7 @@
 title: Luo raportit
 description: Tässä aiheessa on tietoja talousraporttien luonnista.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 101cf2b29bb6f91cec5a3dac0be30b53388905c96ecf481f5b7b3e90cda3f804
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740260"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119500"
 ---
 # <a name="generate-financial-reports"></a>Luo raportit
 
@@ -28,9 +28,22 @@ ms.locfileid: "6740260"
 
 Tässä aiheessa on tietoja talousraporttien luonnista.
 
-Luo raportti avaamalla raportin määritys ja valitsemalla sitten **Luo**-painike työkalurivillä. Näytölle avautuu **Raporttijonon tila** -sivu, joka näyttää raporttisi paikan jonossa. Luotu raportti avautuu oletuksena Web Viewerissä.
+Luo raportti avaamalla raportin määritys ja valitsemalla sitten työkalurivillä **Luo**. Näytölle avautuu **Raporttijonon tila** -sivu, joka näyttää raporttisi paikan jonossa.
 
-Seuraavat raporttien luontivaihtoehdot ovat saatavilla:
+Raportin luonnin edetessä seuraavat raportin jonon tilanilmaisimet voivat näkyä **Raportin jonotila** -sivulla.
+
+| Tila          | Alue | Kuvaus|
+|-----------------|--------|--------------------|
+| Asetetaan jonoon        | Väliaikainen |Raportin määritys tarkistetaan, ennen kuin raportti asetetaan luontijonoon.                    |
+| Jonossa          | Väliaikainen | Raportti siirtyy raportinluontijonoon ja odottaa käsittelyä.                      |
+| Käsitellään      | Väliaikainen | Tämä tila seuraa yleensä **Jonossa**-tilaa ja muuttuu yleensä tilaksi **Lopullinen**, kun käsittely on valmis.       |
+| Jälkikäsitellään | Väliaikainen | Tämä tila seuraa **Käsittelyssä**-tilaa ja ilmaisee, että raportin kaikki tiedot on kerätty, mutta johdannaistoimintoja, kuten laskentaa ja koontia, suoritetaan.            |
+| Peruutetaan      | Väliaikainen | Raportointi perutaan käyttäjän pyynnöstä. Tämä tila on tulos käyttäjän pyytämästä tilassa **Jonossa** tai **Käsittelyssä** olevan raportin perumisesta. Järjestelmä yrittää siirtää raportin **Peruttu**-tilaan, ellei järjestelmä ole käsitellyt sitä liian pitkälle, jolloin sen on valittava muut tila. |
+| Peruutettu        | Lopullinen | Raportin käsittely on päättynyt, mutta sitä ei ole suoritettu loppuun käyttäjän pyytämän keskeytyksen vuoksi.            |
+| Päätetty       | Lopullinen | Raportti on valmis käytettäväksi.                      |
+| Epäonnistui          | Lopullinen | Raportin käsittely päättyi mutta epäonnistui, mikä tarkoittaa, ettei raporttia pidä käyttää. |
+
+Luotu raportti avautuu oletuksena Web Viewerissä. Seuraavat raporttien luontivaihtoehdot ovat saatavilla:
 
 - Määritä aikataulu raportin tai raporttiryhmän automaattista luontia varten
 - Tarkista, ettei raportista puutu tilejä tai tietoja ja vahvista raportin virheettömyys

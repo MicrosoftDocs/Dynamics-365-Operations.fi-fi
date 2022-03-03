@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1438ed6bcec485ff9665ffd9659c938f5cac478
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778128"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103160"
 ---
 # <a name="monitor-a-master-planning-run"></a>Pääsuunnitteluajon valvonta
 
@@ -28,12 +28,11 @@ ms.locfileid: "7778128"
 
 **Näytä pääsuunnittelun edistyminen** -sivulla pääsuunnitteluajoen historiatietoja Gantt-kaaviona. Tämän toiminnon avulla voi selvittää, kuinka kauan aikaa pääsuunnittelun eri vaiheisiin kului. Nykyisessä aktiivisessa suunnittelutyössä **Näytä pääsuunnittelun edistyminen** -sivun avulla voi seurata edistymistä ja näyttää arvioidun jäljellä olevan ajan.
 
-### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Pääsuunnittelun etenemisen visualisointitoiminnon ottaminen käyttöön ja käyttäminen
+### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>Pääsuunnittelun etenemisen visualisointitoiminnon ottaminen käyttöön tai pois käytöstä
 
-Voit käyttää tätä toimintoa seuraavasti:
+Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Aallon erätyön tiedot* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-1. Valitse **Toimintojen hallinta** -työtilan **Uusi**-lehden luettelossa **Pääsuunnittelun etenemisen visualisointi**. Jos toiminto ei ole **Uusi**-välilehdessä, tarkista myös **Ei käytössä**- ja **Kaikki**-välilehdet.
-1. Valitse **Ota käyttöön nyt**. Vaihtoehtoisesti voi valita **Aikataulu** ja valita sitten ajan, jolloin haluat ottaa toiminnon käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+### <a name="use-the-master-plan-progress-visualization-feature"></a>Pääsuunnittelun etenemisen visualisointitoiminnon käyttö
 
 **Näytä pääsuunnittelun edistyminen** -sivulla voi olla näkyvissä sekä historiallisia että aktiivisia suunnittelutöitä. 
 

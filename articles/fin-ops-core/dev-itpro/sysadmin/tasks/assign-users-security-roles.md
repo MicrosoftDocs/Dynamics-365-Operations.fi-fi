@@ -1,12 +1,10 @@
 ---
 title: Käyttäjien liittäminen käyttöoikeusrooleihin
-description: Finance and Operations -sovellusten käyttämistä varten käyttäjille on määritettävä käyttöoikeusrooleja.
+description: Finance and Operations -sovellusten käyttö edellyttää, että käyttäjille on määritetty käyttöoikeusroolit.
 author: Peakerbl
-manager: AnnBe
-ms.date: 05/06/2020
+ms.date: 02/09/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 36874b996cc5708f6fd7fbc45251f3066b5b1c97
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679861"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105535"
 ---
-# <a name="assign-users-to-security-roles"></a>Käyttäjien liittäminen käyttöoikeusrooleihin
+# <a name="manage-users-and-security-roles"></a>Käyttäjien ja käyttöoikeusroolien hallinta
 
 [!include [banner](../../includes/banner.md)]
 
-Muiden kuin yhteisten toimintojen käyttöä varten Finance and Operations -sovelluksissa käyttäjät on määritettävä käyttöoikeusrooleihin. Voit määrittää käyttäjille roolit automaattisesti sääntöjen ja liiketoimintatietojen perusteella, sulkea käyttäjät pois automaattisesta roolimäärityksestä tai lisätä käyttäjiä rooleihin manuaalisesti.
+Muiden kuin yhteisten toimintojen käyttöä varten talous- ja toimintosovelluksissa käyttäjät on määritettävä käyttöoikeusrooleihin. Voit määrittää käyttäjille roolit automaattisesti sääntöjen ja liiketoimintatietojen perusteella, sulkea käyttäjät pois automaattisesta roolimäärityksestä tai lisätä käyttäjiä rooleihin manuaalisesti.
 
 ## <a name="automatically-assign-users-to-roles"></a>Liitä käyttäjät rooleihin automaattisesti
 Tässä menettelyssä kerrotaan, kuinka järjestelmänvalvojat voivat automaattisesti määrittää rooleja käyttäjille liiketoimintatietojen perusteella. 
@@ -42,6 +40,8 @@ Tässä menettelyssä kerrotaan, kuinka järjestelmänvalvojat voivat automaatti
 10. Vahvista, että roolien määrityskysely oli oikein, tarkistamalla eri käyttäjille määritetyt roolit. Säädä ja suorita tarvittaessa uudelleen.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Sulje käyttäjät pois automaattisesta roolin määrityksestä
+Tässä menettelyssä selitetään, miten käyttäjiä suljetaan pois automaattisesta roolien määrittämisestä.
+
 1. Sulje sivu.
 2. Valitse **Siirtymisruutu > Moduulit > Järjestelmänhallinta > Suojaus > Määritä käyttäjät rooleihin**.
 3. Valitse puusta Taloushallintopäällikkö. Valitse rooli. Valitse tässä esimerkissä Taloushallintopäällikkö.  
@@ -57,3 +57,19 @@ Järjestelmänvalvojan on myös poistettava käyttöoikeusrooleihin manuaalisest
 2. Valitse puussa rooli ja **Roolille määritetyt käyttäjät** -valikossa **Määritä tai sulje pois käyttäjiä manuaalisesti**.
 4. Käyttäjät, joille ei ole määritetty roolia **Määritä käyttäjiä rooliin tai sulje käyttäjät pois roolista** -kohdassa määritetään **Roolienmääritystilassa** asetuksella **Ei mitään**. Valitse vähintään yksi käyttäjä, jolle rooli liitetään.
 5. Valitse **toimintoruudussa** **Määritä rooliin**. **Määritystila** päivitetään **Manuaaliseksi**, ja käyttäjät voivat nyt määrittää uuden roolin.
+
+## <a name="manually-remove-users-from-roles"></a>Käyttäjien manuaalinen poistaminen rooleista
+Järjestelmänvalvojan on myös poistettava käyttöoikeusrooleihin manuaalisesti määritetyt käyttäjät manuaalisesti. Näitä käyttäjiä ei poisteta rooleista automaattisen roolienmäärityssääntöjen perusteella.
+
+1. Valitse **Siirtymisruutu > Moduulit > Järjestelmänhallinta > Suojaus > Määritä käyttäjät rooleihin**.
+2. Jos haluat poistaa yhden käyttäjän, toimi seuraavasti:
+   1. Valitse puussa rooli. 
+   2. Valitse **Roolille määritetyt käyttäjät** -alueella poistettava käyttäjä.
+   3. Valitse **Poista**, niin käyttäjä poistetaan roolista.
+3. Jos haluat poistaa useita käyttäjiä, toimi seuraavasti:
+   1. Valitse puussa rooli. 
+   2. Valitse **Roolille määritetyt käyttäjät** -alueella **Määritä tai sulje pois käyttäjiä manuaalisesti**.
+   3. Käyttäjät, joille ei ole määritetty roolia **Määritä käyttäjiä rooliin tai sulje käyttäjät pois roolista** -sivulla, **Roolienmääritystila**-sarakkeen arvona on **Ei mitään**. Valitse käyttäjät, jotka pitäisi sulkea pois roolista.
+   4. Valitse **toimintoruudussa** **Sulje pois roolista**. **Määritystila** on nyt päivitetty **Manuaaliseksi** ja käyttäjät on nyt suljettu pois roolista.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

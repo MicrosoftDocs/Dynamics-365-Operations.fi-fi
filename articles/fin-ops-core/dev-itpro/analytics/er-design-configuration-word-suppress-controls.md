@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: cfabd6f544dca6f48448da4ef9ff8383c6583f8488a718a7c971ff7b39c1f2cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737972"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323922"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Piilota Word-sisällön ohjausobjektit luoduissa raporteissa
 
 [!include [banner](../includes/banner.md)]
 
-Jos haluat luoda raportteja Microsoft Word -asiakirjoina, suunnittele raporttien malli Word-tiedostona. Tämän mallin on sisällettävä Word-sisällön ohjausobjektit suorituksen aikana täytettävinä tietojen paikkamerkkeinä. Luotua Word-asiakirjaa voi käyttää mallina [määrittämällä](er-design-configuration-word.md) uuden [sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisun](er-quick-start1-new-solution.md). Ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-[muodon](general-electronic-reporting.md#FormatComponentOutbound) osan. Tämä ER-muoto on määritettävä käyttämään suunniteltua mallia raportin luontiin.
+Jos haluat luoda raportteja Microsoft Word -asiakirjoina, suunnittele raporttien malli Word-tiedostona. Tämän mallin on sisällettävä Word-sisällön ohjausobjektit suorituksen aikana täytettävinä tietojen paikkamerkkeinä. Luotua Word-asiakirjaa voi käyttää mallina [määrittämällä](er-design-configuration-word.md) uuden [sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisun](er-quick-start1-new-solution.md). Ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-muodon osan. Tämä ER-muoto on määritettävä käyttämään suunniteltua mallia raportin luontiin.
 
 Dynamics 365 Financen versiossa 10.0.6 ja sitä myöhemmissä versioissa ER-muotoisia kaavoja voi konfiguroida piilottamaan luotujen tiedostojen Word-sisällön ohjausobjektit.
 

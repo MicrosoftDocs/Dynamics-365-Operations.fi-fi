@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901869"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103710"
 ---
 # <a name="mobile-device-user-settings"></a>Mobiililaitteen käyttäjäasetukset
 
@@ -39,12 +39,9 @@ Tämän toiminnon avulla työntekijät voivat aloittaa uuden laitteen käytön n
 > [!IMPORTANT]
 > *Mobiililaitteen käyttäjäasetukset* -toiminto on käytössä vain uudessa varastonhallinnan mobiilisovelluksessa. Se ei toimi vanhan varastosovelluksen yhteydessä.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Mobiililaitteen käyttäjäasetustoiminnon käyttöönotto
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Mobiililaitteen käyttäjäasetustoiminnon käyttöönotto tai käytöstä poisto
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Uuden varastointisovelluksen käyttäjäasetukset, kuvakkeet ja vaiheiden otsikot*
+Tässä aiheessa kuvatun toiminnon käyttöä varten järjestelmässäsi on oltava käytössä *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toiminto. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="create-and-manage-user-settings"></a>Käyttäjäasetusten luonti ja hallinta
 

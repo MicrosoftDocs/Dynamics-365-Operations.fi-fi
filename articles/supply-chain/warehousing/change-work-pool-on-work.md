@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 066655b58d4676bafb6e8ed8d80a95636c047444
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566020"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102860"
 ---
 # <a name="change-work-pool-on-work"></a>Vaihda työpoolia työssä
 
@@ -28,12 +28,9 @@ Voit järjestää työn ryhmiin työpoolien avulla. Voit esimerkiksi luoda työp
 
 *Vaihda työpoolia työssä* -toiminto lisää **Vaihda työpoolia** painikkeen työnimikkeiden toimintoruutuun. Varastopäälliköiden onkin helppo vaihtaa aiemmin luodun työn työpoolia. Päälliköt voivat reagoida nopeasti tällä toiminnolla varaston tuotannossa tapahtuviin muutoksiin. Se myös parantaa heidän mahdollisuuksia sopeutua muuttuviin tilanteisiin ja tarpeeseen siirtää työ toiseen työpooliin.
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>Vaihda työpoolia työssä -toiminnon ottaminen käyttöön
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>Vaihda työpoolia työssä -toiminnon ottaminen käyttöön tai pois käytöstä
 
-Varmista ennen toiminnon määrittämistä tai käyttämistä, että se on saatavana järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Vaihda työpoolia työssä*
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Vaihda työpoolia työssä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Vaihda työpoolia työssä -toiminnon määrittäminen
 
