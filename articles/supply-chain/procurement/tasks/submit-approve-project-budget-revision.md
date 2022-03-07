@@ -1,27 +1,25 @@
 ---
 title: Lähetä ja hyväksy projektibudjetin versio
 description: Tässä menettelyssä on tietoja projektibudjetin muuttamisesta.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, ProjBudgetRevision, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de6faf9442834d5fcf75e5d6219387648edb6840
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2934e0a46fd3f0c89f8e1240f5722e9409ca2796
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018775"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811131"
 ---
 # <a name="submit-and-approve-project-budget-revision"></a>Lähetä ja hyväksy projektibudjetin versio
 
@@ -45,3 +43,6 @@ Tässä tehtävässä käytetään SSI-tietojoukkoa.
 12. Kirjoita Kommentti-kenttään arvo.
 13. Valitse Lähetä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

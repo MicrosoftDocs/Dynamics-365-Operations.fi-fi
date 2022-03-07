@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102786"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831382"
 ---
 # <a name="location-license-plate-positioning"></a>Toimipaikan rekisterikilpien paikannus
 
@@ -30,9 +30,12 @@ Toiminto lisää järjestysnumeron kuhunkin varastointipaikkaan sijoitettavaan r
 
 Tässä aiheessa esitellään esimerkkitilanne tämän toiminnon määrittämisestä ja käytöstä.
 
-## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Ota Toimipaikan rekisterikilpien paikannustoiminto käyttöön tai pois käytöstä
+## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Ota Toimipaikan rekisterikilpien paikannustoiminto käyttöön
 
-Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Toimipaikan rekisterikilpien paikannus* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Toimipaikan rekisterikilpien paikannus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Ennen kuin voit käyttää rekisterikilpien paikannusta, toiminnon pitää olla otettu käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+
+- **Moduuli:** *Varastonhallinta*
+- **Toiminnon nimi:** *Toimipaikan rekisterikilpien paikannus*
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
@@ -85,7 +88,7 @@ Toiminto on otettava käyttöön kaikkien niiden toimipaikkojen sijaintiprofiile
 1. Kun **Rekisterikilpi** on valittuna, valitse **Lisää taulun liitos**.
 1. Valitse näyttöön tulevan taululuettelon **Suhde**-sarakkeesta **Toimipaikan rekisterikilpien paikannus (Rekisterikilpi)**. Lisää sitten kohta **Toimipaikan rekisterikilpien paikannus** taulukon **Varaston dimensiot** liitokseen valitsemalla **Valitse**.
 
-    ![Taulun liitokset.](media/LpTableJoin.png "Taulun liitokset")
+    ![Taulun liitokset](media/LpTableJoin.png "Taulun liitokset")
 
 1. Vahvista päivitetyt liitetyt taulut valitsemalla **OK** ja sulje kyselyeditori.
 1. Avaa kyselyeditori uudelleen valitsemalla **Sijaintidirektiivin toiminnot** -pikavälilehdessä **Muokkaa kyselyä**.
@@ -97,7 +100,7 @@ Toiminto on otettava käyttöön kaikkien niiden toimipaikkojen sijaintiprofiile
     - **Kenttä:** *LP-sijainti*
     - **Ehdot:** *1*
 
-    ![Uusi alue.](media/LpPositionCriteria.png "Uusi alue")
+    ![Uusi alue](media/LpPositionCriteria.png "Uusi alue")
 
 1. Vahvista muutokset valitsemalla **OK** ja sulje kyselyeditori.
 
@@ -272,7 +275,7 @@ Kun *Toimipaikan rekisterikilven paikannus* -toiminto on määritetty ja varasto
 1. Valitse **Skannaa työn tunnus/rekisterikilven tunnus** sivulla **Tunnus**-kenttä ja kirjoita siihen työn tunnus myyntiriviltä.
 1. Huomaa, että keräystyö ohjaa sinut keräämään nimikkeen *A0002* toimipaikasta *01A01R1S2B*. Tämä ohje tulee näyttöön, koska nimike *A0002* on kirjattu rekisterikilpeen, joka on tämän toimipaikan sijainnissa *1*.
 
-    ![Sijainti 1 toimipaikassa.](media/LocationLicensePlatePositioning.png "Sijainti 1 toimipaikassa")
+    ![Sijainti 1 toimipaikassa](media/LocationLicensePlatePositioning.png "Sijainti 1 toimipaikassa")
 
 1. Kirjoita toimipaikalle luomasi rekisterikilven tunnus ja kerää myyntitilaus noudattamalla kehotteita.
 

@@ -1,31 +1,30 @@
 ---
 title: Odotuskausien määrittäminen
 description: Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat tavoitteen, jota käytetään etuussuunnitelmissa.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1937ab54eb7898afe0fed6659c3ae676626e8ad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 537ca48e819f047f2095bd5d9337ac7d80e49c5f
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418340"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431062"
 ---
 # <a name="configure-waiting-periods"></a>Odotuskausien määrittäminen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat tavoitteen, jota käytetään etuussuunnitelmissa. Esimerkiksi kolme kuukautta työhönottopäivästä, kunkin kuukauden ensimmäinen kuukausi tai kuusi kuukautta.   
 
@@ -39,9 +38,12 @@ Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat ta
    | --- | --- |
    | **Odotuskoodi** | Odotuskauden yksilöivä tunniste. |
    | **Kuvaus** | Odotuskauden kuvaus. |
-   | **Odotusmenetelmä** | Valitse haluamasi odotusmenetelmä arvojen pudotusvalikosta. Vaihtoehdot ovat netto, kuluva kuukausi, kuluva vuosineljännes, kuluva vuosi ja kuluva viikko. |
+   | **Odotusmenetelmä** | Valitse haluamasi odotusmenetelmä arvojen pudotusvalikosta. Vaihtoehdot ovat **Netto**, **Kuluva kuukausi**, **Kuluva vuosineljännes**, **Kuluva vuosi** ja **Kuluva viikko**. |
    | **Kuukautta** | Anna odotusmenetelmään odotuspäivän laskemiseksi lisättävä kuukausien määrä. |
    | **Päivät** | Anna odotusmenetelmään odotuspäivän laskemiseksi lisättävä päivien määrä. |
    | **Odotuspäivä** | Valitse odotuspäivän laskemisessa käytettävä odotuspäivä. |
 
 4. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

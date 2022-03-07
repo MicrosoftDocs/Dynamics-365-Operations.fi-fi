@@ -2,28 +2,25 @@
 title: Vuokrauksen hyväksyntätyönkulkujen käyttäminen
 description: Tässä ohjeaiheessa kerrotaan, miten työnkulkuja käytetään resurssin vuokrausten hyväksymisessä ja miten työnkulkujen tilaa ja historiaa seurataan.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 33faf7aa6bc9e5df4b8b0f004692b2c1803c6994264c7b9a8e3eb404387f6800
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442983"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726083"
 ---
 # <a name="use-lease-approval-workflows"></a>Vuokrauksen hyväksyntätyönkulkujen käyttäminen
 
@@ -45,3 +42,6 @@ Ennen kuin käytät tätä menetelmää, varmista, että ainakin vuokrasopimukse
 
 8. Jos haluat pysäyttää työnkulun, valitse **Työnkulun historia** -sivulla **Saanti**. Syötä näkyviin tulevassa valintaikkunassa kommentti ja valitse sitten **OK**.
 9. Jos haluat poistaa työnkulun aktivoinnin tai aktivoida aiemmin luodun työnkulun, siirry kohtaan **Resurssin vuokraus \> Asetukset \> Vuokrauksen työnkulku**. Valitse sitten **Vuokrauksen työnkulku** -sivulla **Työnkulku \> Versiot**. Jos haluat poistaa nykyisen työnkulun aktivoinnin, valitse aktiivinen vuokrasopimus vuokrasopimusversion valintaikkunassa ja valitse sitten **Poista aktivointi**. Jos haluat määrittää aiemmin luodun työnkulun aktiiviseksi, valitse työnkulku ja valitse sitten **Määritä aktiiviseksi**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

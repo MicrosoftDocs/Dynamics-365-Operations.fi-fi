@@ -1,7 +1,7 @@
 ---
 title: Tilaustenkäsittelyn määräajat
 description: Tässä artikkelissa on tietoja tilaustenkäsittelyn määräajoista. Tilaustenkäsittelyn määräaika on aika, joka määrittää, käsitelläänkö asiakastilausta siten kuin se olisi vastaanotettu samana päivänä tai seuraavana päivänä.
-author: Henrikan
+author: omulvad
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71748cb05346f7a31f51baebb86b9accc11c8478
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7d64729d6da5c57267d6d62274cce496888548d7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580525"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189989"
 ---
 # <a name="order-entry-deadlines"></a>Tilaustenkäsittelyn määräajat
 

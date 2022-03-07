@@ -2,43 +2,48 @@
 title: Varastotilausten pilvi- ja reunapalvelujen scale unitit
 description: Tässä aiheessa käsitellään varastotilausominaisuutta, jota käytetään varaston scale unitin työkuorman osana.
 author: perlynne
-ms.date: 04/22/2021
+ms.date: 01/14/2021
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.region: Global
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: SCM
 ms.author: perlynne
-ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.search.validFrom: 2021-01-14
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471689"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836683"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Varastotilausten pilvi- ja reunapalvelujen scale unitit
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Kaikkia liiketoimintatoimintoja ei tueta kokonaisuudessaan julkisessa esiversiossa, kun scale unitin kuormituksia käytetään. Jos scale unitit ovat käytössä, on varmistettava, että vain niitä prosesseja käytetään, joiden tuesta nimenomaisesti ilmoitetaan tässä aiheessa.
 
 ## <a name="what-are-warehouse-orders"></a>Mitä varastotilaukset ovat?
 
-*Varastotilaukset* ovat tilaustyyppi, jota käytetään tukemaan keskusta ja scale unitia hyödyntäviä varaston käyttöönottoja. Niiden avulla voidaan vastaanottaa ja lähettää varastoa, kun varastotyökuorma suoritetaan scale unitissa.
+*Varastotilaukset* ovat tilaustyyppi, joka luotiin tukemaan keskusta ja scale unitia hyödyntäviä varaston käyttöönottoja. Niiden avulla voidaan vastaanottaa varastoa, kun varastotyökuorma suoritetaan scale unitissa. Niitä käytetään tällä hetkellä vain ostotilausten yhteydessä.
 
-Varastotilauksia käytetään sekä saapuvien että lähtevien varastonhallintakäsittelyjen osana. Ne luodaan osana *Varastoon vapautus* -prosessia, joka käynnistetään keskuksessa.
-Saapuvan käsittelyn osalta Warehouse Mobile Appia käytetään fyysisen käytettävissä olevan varaston rekisteröintiin saapuvien tilausten käsittelyssä. Tämä on käytettävissä osto- ja tuotantotilauksissa, joissa eritellään scale unit -varasto ja nimikkeet, joiden osalta voi käyttää varastonhallintaprosesseja.
-Lähteviä varastotilauksia käytetään osana lähetyksen aaltoprosessia siirto- ja ostotilausten osalta.
+Varastotilauksia käytetään varastonhallintaprosessien osana esimerkiksi silloin, kun varastonhallinnan mobiilisovelluksella kirjataan fyysinen käytettävissä oleva varasto saapuvan ostotilauksen käsittelyn aikana. Varastotilaukset luodaan *Vapauta varastoon* -prosessin osana. Tätä prosessia voi käyttää ostotilauksissa, jotka määrittävät scale unit -varaston, ja nimikkeissä, joissa varastonhallintaprosessien käyttö on otettu käyttöön.
 
 > [!IMPORTANT]
 > Varastotilaukset ovat käytettävissä vain käyttöönotoissa, joissa käytetään [varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale uniteja](cloud-edge-workload-warehousing.md).
 
-## <a name="create-an-inbound-warehouse-order"></a>Saapuvan varastotilauksen luominen
+## <a name="create-a-warehouse-order"></a>Varastotilauksen luominen
 
-Voit luoda saapuvan varastotilauksen ostotilausprosessia varten noudattamalla seuraavia ohjeita.
+Varastotilaus luodaan seuraavasti:
 
 1. Kirjaudu Microsoftin Dynamics 365 Supply Chain Managementn esiintymään, joka suoritetaan keskuksessa. (*Vapauta varastoon* -prosessi on käynnistettävä keskukseen kirjautuneena.)
 1. Siirry kohtaan **Hankinta ja alihankinta \> Ostotilaukset \> Kaikki ostotilaukset**.
@@ -67,8 +72,6 @@ Varastotilausrivit peruutetaan seuraavasti:
 
 - Valitse **Varastonhallinta \> Kyselyt ja raportit \> Varastotilausrivit** ja etsi rivit suodattimen avulla.
 - Valitse **Hankinta \> Ostotilaukset \> Kaikki ostotilaukset** ja avaa kyseinen ostotilaus. Valitse **Ostotilausrivit**-osassa vähintään yksi rivi ja valitse sitten työkalurivillä **Varasto \> Varaston vastaanottoviennit**.
-
-[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

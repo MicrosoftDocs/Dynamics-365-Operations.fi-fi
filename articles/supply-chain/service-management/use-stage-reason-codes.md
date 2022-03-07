@@ -2,11 +2,9 @@
 title: Käytä jaksosyykoodeja
 description: Käytä syykoodia osoittamaan, miksi huoltotasosopimus on peruutettu tai miksi huoltotasosopimuksessa asetettu huoltosopimuksen aikaraja on ylitetty.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAParameters
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4acba8f723ceb3d629671833db59c97a900c9f01
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c2e823a2e015c4bf22da8eff94e2bc85c813c03b5bb744aa4ce52c95dcaff898
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753839"
 ---
 # <a name="use-stage-reason-codes"></a>Käytä jaksosyykoodeja 
 
@@ -72,3 +70,6 @@ Jos olet määrittänyt syykoodin pakolliseksi, syykoodi on annettava seuraaviss
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

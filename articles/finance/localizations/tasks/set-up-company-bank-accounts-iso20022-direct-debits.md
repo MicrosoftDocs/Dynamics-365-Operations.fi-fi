@@ -2,26 +2,23 @@
 title: Määritä yrityksen pankkitilit ISO20022-suoraveloituksia varten
 description: Tässä tehtävässä kerrotaan, miten asiakkaan maksutiedostojen luomisessa vaadittavat yrityskohtaisen pankkitilin tiedot määritetään.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 652d8aa8f78d9a12ee390d23904f2c94d9bcf684
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 319bf71982987296a8270f596f8d2bb518dd1790
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442690"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819453"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-direct-debits"></a>Määritä yrityksen pankkitilit ISO20022-suoraveloituksia varten
 
@@ -60,3 +57,6 @@ Tämä on toinen viidestä tehtävästä, joilla esitellään asiakasmaksujen pr
     * Esimerkki: valitse pankkitili "DEMF OPER".  
 6. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

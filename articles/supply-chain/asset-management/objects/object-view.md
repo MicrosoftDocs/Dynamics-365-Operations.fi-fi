@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0256cc86dc306c8addb37d2c8f335470b19177a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2a770831c564d44de534642cc462b27b0818e9a2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019401"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253107"
 ---
 # <a name="asset-view"></a>Resurssinäkymä
 
@@ -47,3 +47,6 @@ Toiminnallisen siajinnin tunnus / Toiminnallisen siajinnin tunnus (jos on enemm�
 Jos olet valinnut resurssin puunäkymässä, voit valita **aktiiviset pyynnöt** tai **aktiiviset työtilaukset**, jos haluat tarkastella resurssiin liittyviä ylläpito- tai työtilauksia. Voit myös valita **avaa** \> **Toiminnallinen sijainti**, **Resurssit** tai **Resurssien tuoterakenne** avataksesi liittyvät näkymän.
 
 **Resurssien toiminnalliset sijainnit** -vaihtoehto, jonka voit valita **Näytä**-kentässä, on käytettävissä myös missä tahansa resurssihaussa, jossa voit valita resurssin. Puunäkymä näkyy **Resurssinäkymä**-välilehdessä, esimerkiksi silloin, kun [luot resurssin](../objects/create-an-object.md), luot ylläpitopyynnön tai luot työtilauksen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

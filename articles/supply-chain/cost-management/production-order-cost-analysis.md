@@ -2,11 +2,9 @@
 title: Tuotantotilauksen kustannusanalyysi
 description: Tässä artikkelissa tietoja kustannusanalyysista, jonka voi tehdä valmiille ja nykyisille tuotantotilauksille. Voit analysoida arvioidut kustannukset ja toteutuneet kustannukset käyttämällä Hinnan laskenta -sivua tai Ennakko- ja jälkilaskelmat -raporttia. Voit tarkastella komponenttinimikkeen, reititystyövaiheen ja epäsuoran kustannuksen tietoja arvioiduista ja todellisista kustannuksista (sekä määristä).
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1b0690a683cdefaeb5e441d3e2ea467a680a8fc1dd0905b6a94fd72bcbf36e1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967280"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734256"
 ---
 # <a name="production-order-cost-analysis"></a>Tuotantotilauksen kustannusanalyysi
 
@@ -43,7 +41,7 @@ Variansseissa näkyy tuotantonimikkeen ilmoitettujen tuotantotehtävien ja vakio
 
 Seuraavassa kaaviossa esitellään neljä varianssia, joissa näkyy tuotantotilauksen toteutuneiden kustannusten ja laskettujen kustannusten ero nimikkeen kustannustietueessa, kun tuotantotilaus on päätetty. 
 
-![Valmiin tuotantotilauksen erot selittävä varianssi](./media/control.jpg) 
+![Valmiin tuotantotilauksen erot selittävä varianssi.](./media/control.jpg) 
 
 Voit analysoida tuotannon variansseja **Varianssit**-sivulla tai **Tuotannon varianssi** -raportissa. Näyttöasetusten avulla voit tarkastella eriteltyjä varianssitietoja nimikkeen ja operatiivisen resurssin tai kustannusryhmän mukaan. Varastoparametrien kustannuserittelymenettely määrittää, seurataanko variansseja kustannusryhmän mukaan. Voit myös tarkastella varianssien yhteenvetoja **Yksittäinen**-, **Monitasoinen**- ja **Yhteensä** -näyttöasetusten avulla. Varianssin eritellyt tiedot auttavat ymmärtämään kunkin varianssin alkuperän. Jos haluat ennakoida varianssit ennen tuotantotilauksen päättämistä, analysoi **Ennakko- ja jälkilaskelmat** -raportin eritellyt tiedot.
 
@@ -57,10 +55,12 @@ Erillisissä raporteissa on tietoja kustakin tapahtumatyypistä. Näiden raportt
 -   **Keskeneräiset valmiit nimikkeet**− Raportissa ilmoitetaan nykyiset tuotantotilaukset sekä valmiiksi ilmoitetut tapahtumat määritetystä tapahtumapäivämäärästä alkaen.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Tuotannon varianssien yhteiset lähteet](common-sources-of-production-variances.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

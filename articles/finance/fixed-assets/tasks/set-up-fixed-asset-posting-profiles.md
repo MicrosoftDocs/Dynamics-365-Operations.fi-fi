@@ -2,26 +2,23 @@
 title: Käyttöomaisuuden kirjausprofiilien määrittäminen
 description: Tässä tehtävän ohjauksessa määritetään käyttöomaisuuden kirjausarvot.
 author: saraschi2
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f02aa936b7d485dd8c76225b5c4de02a238f9352
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442832"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813552"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Käyttöomaisuuden kirjausprofiilien määrittäminen
 
@@ -123,3 +120,6 @@ Tässä tehtävän ohjauksessa määritetään käyttöomaisuuden kirjausarvot. 
 88. Määritä **Päätili**-kenttään haluamasi arvot.
 89. Määritä **Vastatili**-kenttään haluamasi arvot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

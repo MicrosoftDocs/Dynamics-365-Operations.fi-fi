@@ -2,28 +2,25 @@
 title: Kerroinpoisto
 description: Tämä artikkeli sisältää kerroinpoistomenetelmän yleiskatsauksen.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13831
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5c36441e926cd5a82c802a350adf6b2ed6d6387
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fdb35f7b0efaf2f1a5f63eb0dbdf14363f63a389c5449b7fe145a46fd5c14cc2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746461"
 ---
 # <a name="factor-depreciation"></a>Kerroinpoisto
 
@@ -79,3 +76,6 @@ Hankintahinta on 100 000, kerroin on 20, käyttöikä on 10 vuotta ja poisto alk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

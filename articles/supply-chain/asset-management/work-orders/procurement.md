@@ -1,12 +1,10 @@
 ---
 title: Hankinta
 description: Tässä ohjeaiheessa kerrotaan hankinnasta resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f3e01dd85cbe8e2b2c9095431f3e0aead817a5a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020201"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352759"
 ---
 # <a name="procurement"></a>Hankinta
 
@@ -38,7 +36,7 @@ Resurssienhallinnassa voit saada yleiskatsauksen työtilauksiin liittyvistä ost
 
 Seuraavassa kuvassa on esimerkki **Työtilauksen ostoehdotus** -luettelosivusta.
 
-![Kuva 1](media/08-work-orders.png)
+![Kuva 1.](media/08-work-orders.png)
 
 
 **Työtilauksen osto** -luettelosivulla (**Resurssien hallinta** > **Yhteiset** > **Hankinta** > **Työtilauksen osto**), näkyy luettelo työtilauksiin liittyvistä ostotilauksista. Kun valitset työtilaustehtävän tällä sivulla, voit käyttää **Näytä**-ryhmän painikkeita toimintoruudun **Työtilauksen osto** -välilehdessä suorittaaksesi erilaisia toimintoja:
@@ -49,7 +47,7 @@ Seuraavassa kuvassa on esimerkki **Työtilauksen ostoehdotus** -luettelosivusta.
 
 Seuraavassa kuvassa on esimerkki **Työtilauksen osto** -luettelosivusta.
 
-![Kuva 2](media/09-work-orders.png)
+![Kuva 2.](media/09-work-orders.png)
 
 
 Sekä luettelosivulla **Työtilauksen osto** että luettelosivulla **Työtilauksen ostoehdotus** kunkin rivin oikealla puolella näkyy symboli, joka liittyy toimituspäivämäärän seurantaan. Jos symboli on huutomerkki punaisessa ympyrässä, siihen liittyvän ostotilauksen tai ostoehdotuksen toimitus voi viivästyä.
@@ -95,7 +93,10 @@ Voit tarkastella ostotilausriviin liittyvää tehtävänumeroa tai syöttää se
 
 Alla olevassa kuvassa näkyy esimerkki **Ostotilaus**-sivusta, jossa **Tehtävänumero** on korostettuna.
 
-![Kuva 3](media/10-work-orders.png)
+![Kuva 3.](media/10-work-orders.png)
 
 Samoin voit tarkastella työtilauksen ostoehdotusriviin liittyvää tehtävänumeroa tai syöttää sen valitsemalla **Työtilauksen ostoehdotus** -luettelosivulla ostoehdotuksen tietueen ja sitten **Ostoehdotus**-sarakkeessa ostoehdotuksen linkin. **Tehtävänumero**-kenttä löytyy **Rivitiedot**-pikavälilehden **Projekti**-välilehdeltä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

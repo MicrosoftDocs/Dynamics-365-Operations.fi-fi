@@ -2,28 +2,25 @@
 title: Luottokorttien määritys, varmennus ja sieppaaminen
 description: Tässä artikkelissa on yhteenveto luottokortin varmennuksesta Microsoft Dynamics 365 Financessa. Artikkeli sisältää tietoja maksupalvelun määrittämisestä, luottokortin lisäämisestä myyntitilaukseen ja varmennuksen mitätöinnistä.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 3041
 ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0de35934e8bdb160f68f68dab118997d0141bf29
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 932949f31cbc4e4e8c07a2e489b8a0848843c54ad8d27d5d77f2b7031c68c30a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769128"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Luottokorttien määritys, varmennus ja sieppaaminen
 
@@ -31,8 +28,7 @@ ms.locfileid: "4442634"
 
 Tässä artikkelissa on yhteenveto luottokortin varmennuksesta Microsoft Dynamics 365 Financessa. Artikkeli sisältää tietoja maksupalvelun määrittämisestä, luottokortin lisäämisestä myyntitilaukseen ja varmennuksen mitätöinnistä.
 
-<a name="setting-up-the-credit-card-payment-service"></a>Luottokorttien maksupalvelun määrittäminen
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>Luottokorttien maksupalvelun määrittäminen
 
 Jos haluat käyttää luottokortteja, sinun on määritettävä ja aktivoitava maksupalvelu Maksupalvelut-sivulla. Maksupalvelu toimii välittäjänä yrityksesi ja asiakkaan korttimaksut käsittelevän pankin välillä. Sinun on käytettävä luottokorttimaksun tarjoajaa, joka on saatavilla Maksuyhdistin-kentässä ja määrittää tili kyseiselle palveluntarjoajalle. Sinun on sitten määritettävä muut asetukset Maksupalvelut-sivulla, määritettävä luottokorttityypit American Express, Discover, MasterCard ja Visa -korteille Luottokorttityypit-sivulla ja aktivoitava palveluntarjoaja oletuspalveluntarjoajaksi. Sinun on myös noudatettava seuraavia vaiheita:
 -   Määritä luottokortin varmennuksessa käytettävät parametrit Myyntireskontran parametrit -sivulla.
@@ -42,13 +38,11 @@ Jos haluat käyttää luottokortteja, sinun on määritettävä ja aktivoitava m
 ## <a name="adding-a-new-credit-card"></a>Uuden luottokortin lisääminen
 Voit luoda uudet luottokorttitietueet Asiakkaat-sivulla kohdasta Asiakas > Määritä > Luottokortti. Voit myös luoda luottokorttitietueita kirjatessasi myyntitilauksia Myyntitilaus-sivulla kohdasta Hallinta > Asiakas > Luottokortti > Rekisteröi.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Luottokortin lisääminen myyntitilaukseen
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Luottokortin lisääminen myyntitilaukseen
 
 Voit lisätä luottokortin myyntitilaukseen valitsemalla luottokortin Myyntitilaus-sivun Hinnat ja alennukset -pikavälilehden luottokorttihausta. Varmennusprosessin voit aloittaa valitsemalla toimintoruudun Hallinta-välilehdestä kohdan Luottokortti ja Varmenna.
 
-<a name="authorizing-a-credit-card"></a>Luottokortin varmennus
--------------------------
+## <a name="authorizing-a-credit-card"></a>Luottokortin varmennus
 
 Kun luottokortti varmennetaan, kortin numero ja kortin haltijan henkilöllisyys varmennetaan ja käytettävissä oleva luottosaldo tarkistetaan. Voit myös tarkistaa kortin tarkistusnumeron ja kortinhaltijan osoitteen. Laskun summa vähennetään tämän jälkeen asiakkaan käytettävissä olevasta luottosaldosta. Maksupalvelu lähettää tiedon luottokortin hyväksymisestä tai hylkäämisestä. Kun myyntitilaus laskutetaan, laskun summa veloitetaan (siepataan) luottokortilta.
 
@@ -80,3 +74,6 @@ Luottokortin varmennuksen voit mitätöidä vaihtamalla maksutavan sellaiseksi, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

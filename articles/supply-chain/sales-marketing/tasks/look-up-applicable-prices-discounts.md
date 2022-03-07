@@ -1,23 +1,26 @@
 ---
 title: Etsi sovellettavat hinnat ja alennukset
 description: Menettelyssä selvitetään, miten voidaan etsiä tietyllä asiakkaalla voimassaoleva tuotehinta ja/tai -alennus myyntitilausta luomatta.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c80ae00e1bcbc4498ec4705195c3208170cee1b1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2cfdbda55c2f83ee2b470cab8a5e4f9ce728b852
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578917"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426874"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Etsi sovellettavat hinnat ja alennukset
 
@@ -57,6 +60,3 @@ Varmista, Asiakastili-kentässä on asiakasnumero US-001
     * Tuotteella T0012 on kaksi rivialennussopimusta, joista toinen antaa 5 prosentin alennuksen, kun tilausmäärä on 1–10 ja toinen 7 prosentin alennuksen, kun määrä on yli 10. Huomaa, että alennuksia käytetään tuoteryhmissä, tässä esimerkissä ryhmäkoodi 01, johon tuote T0012 kuuluu.  
 4. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

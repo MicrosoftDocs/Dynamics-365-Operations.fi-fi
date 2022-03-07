@@ -1,26 +1,24 @@
 ---
 title: Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia
 description: Tässä aiheessa kuvataan tarjouspyynnön vastauksien kirjoittaminen, tarjousten pisteytys ja vertailu, sekä sopimuksen antaminen yhdelle toimittajista.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016675"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920578"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia
 
@@ -34,7 +32,7 @@ Voit syöttää tarjouksen joko myyjänä tai hankinta-asiantuntijana. Lisätiet
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Kirjoita vastaus toimittajana
 
-1. Valitse koontinäytössä **Toimittajan tarjoukset**.
+1. Valitse **Toimittajayhteistyö \> Työtilat \> Toimittajan tarjoukset**.
 2. Etsi **Uudet tarjouskutsut** -luettelosta juuri lähetetty tarjouspyyntö. Valitsemalla tarjouspyynnön voit tarkistaa, mitä pyydettiin.
 3. Valitse **tarjouspyynnön liitteet** tarkastellaksesi mitä tahansa lisättyjä liitteitä.
 4. Valitse **Tarjous** tehdäksesi kentistä muokattavia. Huomaa, että **Tarjouksen edistyminen** -kentän arvoksi on asetettu **Toimittaja päivittää**.
@@ -106,3 +104,6 @@ Voit syöttää tarjouksen joko myyjänä tai hankinta-asiantuntijana. Lisätiet
 ## <a name="view-the-purchase-order-that-is-generated"></a>Näytä luotava ostotilaus
 
 Valitse toimintoruudun **Yleiset**-välilehdessä **Ostotilaus**. Näkyvä sivu näyttää ostotilauksen, joka luotiin, kun hyväksyit tarjouksen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

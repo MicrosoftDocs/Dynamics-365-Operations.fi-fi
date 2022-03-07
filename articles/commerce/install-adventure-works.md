@@ -2,7 +2,7 @@
 title: Adventure Works -teeman asentaminen
 description: Tässä aiheessa kuvataan, kuinka Adventure Works -teema asennetaan Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 12/10/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 9c94dd8ead32f58a25a396376840101d9c2c9b08
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913699"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655845"
 ---
 # <a name="install-the-adventure-works-theme"></a>Adventure Works -teeman asentaminen
 
@@ -32,7 +32,7 @@ Tässä aiheessa kuvataan, kuinka Adventure Works -teema asennetaan Microsoft Dy
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen Adventure Works -teeman asennusta sinulla on oltava Dynamics 365 Commerce -ympäristö  (Commerce version 10.0.20 tai myöhempi), joka sisältää Retail Cloud Scale Unitin (RCSU), Commerce online software development kit (SDK) -ohjelman ja Commerce-moduulikirjaston. Lisätietoja Commerce SDK -ohjelman ja moduulikirjaston asentamisesta on kohdassa [Määritä kehitysympäristö](e-commerce-extensibility/setup-dev-environment.md). 
+Ennen Adventure Works -teeman asennusta sinulla on oltava Dynamics 365 Commerce -ympäristö  (Commerce version 10.0.20 tai myöhempi), joka sisältää Retail Cloud Scale Unitin (RCSU), Commerce online software development kit (SDK) -ohjelman ja Commerce-moduulikirjaston. Lisätietoja Commerce SDK -ohjelman ja moduulikirjaston asentamisesta on kohdassa [SDK:n ja moduulikirjaston päivitykset](e-commerce-extensibility/sdk-updates.md). 
 
 ## <a name="installation-steps"></a>Asennusvaiheet
 
@@ -48,19 +48,11 @@ Adventure Works -teemapaketti on käytettävissä **dynamics365-commerce** -syö
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`  
     
-Jos haluat asentaa paketin paikallisessa ympäristössä, suorita `yarn add THEME_PACKAGE@VERSION`-komento komentokehotteesta, jossa **THEME_PACKAGE** on teemapakkaus (@msdyn365-commerce-theme/adventureworks-theme-kit) ja **VERSION** on käytettävä moduulikirjaston versionumero. On tärkeää, että moduulikirjaston ja teemapaketin versiot vastaavat toisiaan. Voit etsiä oikean käytettävän moduulikirjaston versionumeron avaamalla package.json-tiedoston ja etsimällä **aloituspaketin** arvon **riippuvuudet**-osasta. Seuraavassa esimerkissä package.json-tiedostossa käytetään moduulikirjaston versiota 9.32, joka sisältää Dynamics 365 Commerce version 10.0.22 julkaisun.  
+Voit asentaa paketin paikalliseen ympäristöön komentokehotteesta suoritettavalla seuraavalla komennolla. Tämä komento päivittää package.json-tiedoston automaattisesti niin, että se sisältää riippuvuuden.
 
-```json
-"dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.32",
-}
-```
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
 
-Seuraavassa esimerkissä kerrotaan, miten Adventure Works -aiheen versio 9.32 lisättiin `yarn add`-komennolla. Komento päivittää package.json-tiedoston automaattisesti niin, että se sisältää riippuvuuden.
-
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
-
-Lue lisätietoja moduulikirjaston version päivittämisestä kohdasta [SDK:n ja moduuliskirjaston päivitykset](e-commerce-extensibility/sdk-updates.md). 
+**Package.json**-tiedostossa on päivitettävä teeman versio tiettyyn versioon.
 
 > [!IMPORTANT]
 > - Moduulikirjaston version tulisi olla sama kuin teeman version, jotta kaikki toiminnot toimivat odotetulla tavalla. 

@@ -1,27 +1,31 @@
 ---
 title: Tuotteiden, tilausten, lähetysten ja kuormien vaaralliset aineet
 description: Tässä ohjeaiheessa käsitellään vapautettujen tuotteiden vaarallisten aineiden ominaisuuksien määrittämistä, vaarallisten nimikkeiden varastointirajoitusten asettamista ja vaarallisten aineiden sisällyttämistä myyntitilaukseen, lähetykseen tai kuormaan.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570702"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427270"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Tuotteiden, tilausten, lähetysten ja kuormien vaaralliset aineet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa käsitellään vapautettujen tuotteiden vaarallisten aineiden ominaisuuksien määrittämistä, vaarallisten nimikkeiden varastointirajoitusten asettamista ja vaarallisten aineiden sisällyttämistä myyntitilaukseen, lähetykseen tai kuormaan.
 
@@ -217,6 +221,3 @@ Yhteensopivuus tarkistetaan seuraavasti:
 1. Valitse toimintoruudun **Kuormat**-välilehden **Toiminnot**-ryhmässä **Yhteensopivuustarkistus**.
 
 Saat ilmoituksen tarkistuksen tuloksista.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

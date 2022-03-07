@@ -2,39 +2,38 @@
 title: Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 description: Tässä aiheessa käsitellään tehtävien tallennustoimintoa ja tehtäväoppaita, tallenteiden luontia ja Microsoftin tehtäväoppaiden mukauttamista ja niiden sisällyttämistä omaan ohjeeseen.
 author: josaw1
+manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 5b0a31b709c964bbb896079f2db5aeee3c1f22f2
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070523"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563127"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväoppaat ovat, miten tehtävätallenteita luodaan, ja miten Microsoftin tehtäväoppaita voi mukauttaa ja sisällyttää omiin ohjeisiisi.
 
 > [!IMPORTANT]
 > Vaikka voit tallentaa omia Dynamics 365 Human Resources -tehtäväoppaita, et voi tallentaa niitä tällä hetkellä BPM- eli liiketoimintaprosessin mallintajakirjastoon tai avata niitä Ohje-ruudusta. Voit tallentaa ne paikallisesti tai verkkosijaintiin sekä avata ja toistaa ne tehtävien tallennustoiminnolla. 
 
-## <a name="learn-about-task-recorder"></a>Lisätietoja tehtävän tallennustoiminnosta
+<a name="learn-about-task-recorder"></a>Lisätietoja tehtävän tallennustoiminnosta
+-------------------------
 
 Tehtävän tallennustoiminto on työkalu, jolla voi tallentaa tuotteen käyttöliittymässä suoritetut toiminnot. Kun käytät tehtävän tallennustoimintoa, kaikki palvelimen avulla käyttöliittymässä suoritettavat tehtävät, kuten arvojen lisääminen, asetusten muuttaminen ja tietojen poistaminen, tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan *tehtävätallenteeksi*. Tehtävätallenteita voidaan käyttää esimerkiksi seuraavilla tavoilla:
 
@@ -65,21 +64,21 @@ Pidä seuraavat tiedot mielessäsi, kun olet luomassa uutta tehtävätallennetta
 
 Tämä on muokkausruutu, joka näkyy, kun lisäät huomautuksen tallenteen luomisen yhteydessä. Syötä otsikkohuomautus **Otsikko**-ruutuun. 
 
-[![Muokkausruutu ja otsikkohuomautus.](./media/screen1.png)](./media/screen1.png) 
+[![Muokkausruutu ja otsikkohuomautus](./media/screen1.png)](./media/screen1.png) 
 
 Otsikkohuomautus näyttää tältä tehtäväoppaan kuplassa. 
 
-[![Otsikkohuomautuksen ulkoasu tehtäväoppaassa.](./media/screen2.png)](./media/screen2.png)
+[![Otsikkohuomautuksen ulkoasu tehtäväoppaassa](./media/screen2.png)](./media/screen2.png)
 
 -   **Ilmoitukset:** Ilmoitusten huomautus tulee näkyviin tehtävän tallennustoiminnon automaattisesti luoman vaihetekstin jälkeen. Se näkyy tehtävän ohjauksessa vain, jos käyttäjä valitsee tehtävän ohjauksen kuplassa **Näytä lisää** -linkin. Voit käyttää tämän tyyppistä huomautusta kuvatessasi mitä tahansa tahansa käyttäjän vaiheen suorittamisessa tarvitsemia tietoja.
 
 Tämä on muokkausruutu, joka näkyy, kun lisäät huomautuksen tallenteen luomisen yhteydessä. Syötä ilmoitusten huomautus **Ilmoitukset**-ruutuun. 
 
-[![Muokkausruutu ja huomautus ilmoitusruudussa.](./media/screen3.png)](./media/screen3.png) 
+[![Muokkausruutu ja huomautus ilmoitusruudussa](./media/screen3.png)](./media/screen3.png) 
 
 Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 
-[![Ilmoitushuomautuksen ulkoasu tehtäväoppaassa.](./media/screen4.png)](./media/screen4.png)
+[![Ilmoitushuomautuksen ulkoasu tehtäväoppaassa](./media/screen4.png)](./media/screen4.png)
 
 -   **Tiedot-vaihe**: Nämä huomautukset luodaan napsauttamalla ohjausobjektia tai jotain lomakkeen kohtaa hiiren kakkospainikkeella &lt; **Tehtävän tallennustoiminto** &lt; **Lisää tiedot -vaihe**. Tiedot-vaiheet näkyvät numeroituina vaiheina paikassa, johon ne lisätään, vaikka toimintoa ei olisi tallennettu käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Kun Tiedot-vaihe on liitetty ohjausobjektiin, tehtävän ohjauksen kupla tulee osoittaa ohjausobjektiin tehtäväoppaan toiston aikana. Ohjeruudussa näkyy Tiedot-vaiheen huomautus numeroituna vaiheena. Huomautus sisältää syöttämäsi tekstin. Käytä Tiedot-vaiheita käyttäjän valmisteluun seuraavia vaiheita varten, sovelluksen ulkopuolella tehtäviä vaiheita varten tai muihin tallenteisiin viittaamisessa (vaikka huomautuksiin ei voikaan luoda hyperlinkkejä).
 
@@ -113,7 +112,8 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 
 
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
 [Ohjejärjestelmä](../../fin-ops/get-started/help-overview.md)
 

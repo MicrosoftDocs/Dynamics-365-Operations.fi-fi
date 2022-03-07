@@ -1,12 +1,10 @@
 ---
 title: Määritä puhelinkeskuksen toimitustavat ja kulut
-description: Tässä aiheessa kuvataan, miten puhelinkeskuksen toimitustavat ja kulut määritetään Dynamics 365 Commerceissa.
+description: Tässä aiheessa kuvataan, miten puhelinkeskuksen toimitustavat ja kulut määritetään Dynamics 365 Commercessa.
 author: josaw1
-manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -16,18 +14,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963107"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748568"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Määritä puhelinkeskuksen toimitustavat ja kulut
 
 [!INCLUDE [banner](includes/banner.md)]
 
-Kun myyntitilaus on luotu Dynamics 365 Commerceissa ja jos henkilö, joka syötti myyntitilauksen, on linkitetty puhelinkeskuskanavaan, liiketoimintalogiikkaa ja sääntöjä käytetään vahvistamaan tilauksen toimituksen (toimitustapa) ja laskemaan tilauksen kulut.
+Kun myyntitilaus on luotu Dynamics 365 Commercessa ja jos henkilö, joka syötti myyntitilauksen, on linkitetty puhelinkeskuskanavaan, liiketoimintalogiikkaa ja sääntöjä käytetään vahvistamaan tilauksen toimituksen (toimitustapa) ja laskemaan tilauksen kulut.
 
 Kun luot myyntitilauksen, voit valita toimitustavan myyntitilauksen otsikossa ja myyntitilausriveillä. Oletuksena otsikossa valittua toimitustapaa käytetään kaikilla myyntitilausriveillä. Voit kuitenkin ohittaa yksittäisillä myyntiriveillä toimituksen oletustilan tarpeen mukaan. Voit myös määrittää toimitustilan asiakastietueessa. Kun asiakkaalle luodaan tilauksia, tätä toimitustapaa käytetään oletuksena myyntitilauksen otsikossa.
 
@@ -67,11 +65,11 @@ Kulut voidaan määrittää niin, että niitä käytetään tietylle toimitustav
 
 Yritykset määrittävät usein kulut eri tasoille. Tällöin summa, jonka asiakkaat maksavat toimitusta varten, perustuu tilauksen arvoon. Voit määrittää kulutasot kirjoittamalla arvot **Summasta**- ja **Summaan**-kenttiin sen lisäksi, että määrität itse kulun **Kulujen arvo** -kenttään. Esimerkiksi tilauksille, joiden arvo on pienempi kuin 50 dollaria, kauppa veloittaa 5,95 dollaria maakuljetustoimituksesta. Tilauksista, joiden arvo on vähintään 50 dollaria mutta pienempi kuin 100 dollaria, myyjä veloittaa 7,95 dollaria. Lopuksi, tilauksista, joiden arvo on vähintään 100 dollaria, myyjä tarjoaa ilmaisen toimituksen. Seuraavassa kuvassa on tällaisten kulujen määritys.
 
-![Esimerkki: kiinteät kulut tasoittain](media/fixedtieredcharges.png)
+![Esimerkki: kiinteät kulut tasoittain.](media/fixedtieredcharges.png)
 
 Voit käyttää luokkien yhdistelmiä kuluille liiketoiminnan tarpeiden mukaan. Esimerkiksi kaikille tilauksille, joiden arvo on pienempi kuin 100 dollaria, veloitetaan kiinteä 9,95 dollaria toimituksesta. Tällöin tilauksille, joiden arvo vähintään 100 dollaria, toimituksen kuluiksi lasketaan 5 prosenttia tilauksen arvosta. Seuraavassa kuvassa on tällaisten kulujen määritys.
 
-![Esimerkki: kulutasojen yhdistelmä](media/mixedtieredcharges.png)
+![Esimerkki: kulutasojen yhdistelmä.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Käytä toimitustapoja puhelinpalvelukeskuksen tilausta syötettäessä
 
@@ -94,3 +92,6 @@ Halutessasi voit linkittää kaikkiin toimitustapoihin nopeutuskoodin. Tätä ko
 Esimerkiksi tilauksille, jotka toimitetaan seuraavana päivänä lentorahtina, keräys on tehtävä varastossa kello 23 päivittäin. Tässä tapauksessa nopeutuskoodi voidaan luoda ja koodi voidaan linkittää kaikkiin seuraavan päivän toimitustapoihin, jotka on määritetty järjestelmässä. Kun varasto luo keräilyaallon, soveltuvaa nopeutuskoodia **Nopeuta**-kentässä voidaan käyttää suodattimena siten, että keräily suoritetaan vain tilauksille, joilla on toimitustapa, joka on linkitetty tähän koodiin.
 
 Lisäksi, kun luodaan puhelinkekuksen tilaus, kun nopeutuskoodia voidaan manuaalisesti käyttää joko myyntitilauksen otsikkoon tai yksittäiseen myyntitilausriviin. Edelleen tätä koodia voidaan käyttää lajitteluun ja raportointiin. Joskus tilausta on käsiteltävä huolellisesti asiakaspalvelun ongelman vuoksi. Tässä tapauksessa tietty nopeutusvoidaan ottaa käyttöön tilauksen otsikossa tai riveillä, jotta tilaus voidaan tunnistaa ja priorisoida tilauslupausta toteutettaessa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

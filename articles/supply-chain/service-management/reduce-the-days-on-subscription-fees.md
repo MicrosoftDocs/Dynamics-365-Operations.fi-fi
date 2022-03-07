@@ -1,10 +1,12 @@
 ---
 title: Ylläpitosopimusmaksujen päivien vähentäminen
 description: Jos haluat vähentää aiemmin luodun ylläpitosopimusmaksun päivien määrää, voit luoda uuden tapahtuman, jossa poistat ylläpitosopimusmaksuvälin tarpeettoman ajanjakson.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df1a27576b93c4ace4a5f17271595d259e96a51a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ae2486d08e89c06d76ab9945ccce25c5e97f1500
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573222"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010559"
 ---
 # <a name="reduce-the-days-on-subscription-fees"></a>Ylläpitosopimusmaksujen päivien vähentäminen 
 
@@ -52,6 +54,3 @@ Jos vähennyskauden **Aloituspäivämäärä**-arvo on 21.1. (31 miinus 10), voi
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

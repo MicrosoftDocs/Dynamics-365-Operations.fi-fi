@@ -1,31 +1,33 @@
 ---
 title: Joukkotyöhönottoprojektit
-description: Henkilöstöhallinnon asiantuntija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin joukkotyöhönottoprojektien avulla.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: Tässä aiheessa käsitellään joukkotyöhönottoprojekteja, joiden avulla henkilöstöhallinnon asiantuntija voi luoda useita toimia ja palkata useita työntekijöitä näihin toimiin.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f33fb96e9a2331499a594689a758694c2291368
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcfc973dc9acea624336f059d68562fa5eb41353
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418346"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070198"
 ---
 # <a name="mass-hire-projects"></a>Joukkotyöhönottoprojektit
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -44,9 +46,9 @@ Jos otat työhön samalla kertaa useita työntekijöitä esimerkiksi sesonkitarp
 
 Kesällä palkataan yleensä 15-20 osa-aikaista opiskelijaa yrityksen kesäharjoittelupaikkoihin. Tänä vuonna haluat palkata viisi kirjanpitäjää, viisi tilauskäsittelijää ja viisi kassanhoitajaa. Sen sijaan että loisit jokaisen toimi- ja työntekijätietueen erikseen, voit luoda yhden joukkotyöhönottoprojektin nimellä SummerInterns. Projektin aloitus- ja päättymispäivämäärät vastaavat joukkotyöhönottoprojektille luomiesi toimien aloitus- ja päättymispäivämääriä.
 
-Valitse **Joukkotyöhönottoprojektit**-sivulla SummerInterns-projekti ja valitse sitten **Avaa projekti**. Valitse avoimet joukkotyöhönottoprojektissa **Luo toimia** ja kirjoita kirjanpitäjätoimen tiedot. Voit määrittää, että viisi kirjanpitäjän toimea on luotava samoilla tiedoilla, ja napsauttaa sitten OK. Toista nämä vaiheet tilauskäsittelijän ja kassanhoitajan toimille.
+Valitse **Joukkotyöhönottoprojektit**-sivulla **SummerInterns**-projekti ja valitse sitten **Avaa projekti**. Valitse avoimessa joukkotyöhönottoprojektissa **Luo toimia** ja kirjoita kirjanpitäjätoimen tiedot. Voit määrittää, että viisi kirjanpitäjän toimea on luotava samoilla tiedoilla. Valitse sitten **OK**. Toista nämä vaiheet tilauskäsittelijän ja kassanhoitajan toimille.
 
-Valittuasi kesäharjoittelijoiksi palkattavat opiskelijat, voit antaa opiskelijoiden tiedot niiden toimien **Toimen tiedot** -kohtaan, johon olet kunkin opiskelijan valinnut. Kun olet syöttänyt kaikkien toimien tiedot, valitse toimi Joukkotyöhönottoprojektit-sivulta ja napsauta sitten **Ota palvelukseen**. Jokaiselle toimelle luodaan toimitietue ja jokaiselle työhön ottamallesi henkilölle luodaan työntekijätietue, joka liitetään asiaankuuluvaan toimeen.
+Valittuasi kesäharjoittelijoiksi palkattavat opiskelijat, voit antaa opiskelijoiden tiedot niiden toimien toimen tietoihin, joihin kukin opiskelija on valittu. Kun olet antanut kaikkien toimien tiedot, valitse toimi **Joukkotyöhönottoprojektit**-sivulla ja valitse sitten **Ota palvelukseen**. Jokaiselle toimelle luodaan toimitietue ja jokaiselle työhön ottamallesi henkilölle luodaan työntekijätietue, joka liitetään asiaankuuluvaan toimeen.
 
 ## <a name="mass-hire-project-statuses"></a>Joukkotyöhönottoprojektin tilat
 
@@ -56,7 +58,7 @@ Joukkotyöhönottoprojektin tila voi olla jokin seuraavista.
 - Avoin
 - Suljettu
 
-Napsauta **Joukkotyöhönottoprojekti**-sivulla **Avaa projekti** tai **Sulje projekti** muuttaaksesi joukkotyöhönottoprojektin tilaa. Seuraavassa taulukossa on kuvattu, mitä voit tehdä projektille sen tilan mukaan.
+Muuta joukkotyöhönottoprojektin tila valitsemalla **Joukkotyöhönottoprojekti**-sivulla **Avaa projekti** tai **Sulje projekti**. Seuraavassa taulukossa on kuvattu, mitä voit tehdä projektille sen tilan mukaan.
 
 <table>
 <thead>
@@ -76,9 +78,12 @@ Napsauta **Joukkotyöhönottoprojekti**-sivulla **Avaa projekti** tai **Sulje pr
 </tr>
 <tr>
 <td>Suljettu</td>
-<td>Et voi lisätä toimia projektiin. Lisätäksesi toimia joukkotyöhönottoprojektiin, avaa projekti uudelleen. Tämä on valmiiden projektien tila.
-<blockquote>[!NOTE] Ennen joukkotyöhönottoprojektin sulkemista kaikkien projektin toimien tilan on oltava joko Luotu tai Suljettu.</blockquote>
+<td><p>Et voi lisätä toimia projektiin. Lisätäksesi toimia joukkotyöhönottoprojektiin, avaa projekti uudelleen. Tämä on valmiiden projektien tila.</p>
+<p><strong>Huomautus:</strong> ennen joukkotyöhönottoprojektin sulkemista kaikkien projektin toimien tilan on oltava joko <b>Luotu</b> tai <b>Suljettu</b>.</p>
 </td>
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

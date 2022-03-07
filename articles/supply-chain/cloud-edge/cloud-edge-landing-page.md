@@ -1,240 +1,190 @@
 ---
-title: Asteikon yksiköt jaetussa hybriditopologiassa
+title: Valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Unitit
 description: Tässä aiheessa on lisätietoja valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Uniteista.
 author: cabeln
-ms.date: 04/22/2021
+manager: ''
+ms.date: 10/06/2020
 ms.topic: article
-ms.search.form: ScaleUnitWorkloadsWorkspace
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.region: Global
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.search.validFrom: 2020-09-23
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 28301cdfb86d00ea6f04e996fe7fb1485e83b2d4
+ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119184"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104961"
 ---
-# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Asteikon yksiköt jaetussa hybriditopologiassa
+# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Unitit
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-> [!IMPORTANT]
-> Microsoft Dynamics 365 Supply Chain Managementin skaalausyksikköominaisuudet ovat käytettävissäsi palvelun käyttöä säätelevillä ehdoilla. Lisätietoja on kohdassa [Microsoft Dynamicsin oikeudelliset tiedot](https://go.microsoft.com/fwlink/?LinkID=290927).
->
-> Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjältä pyydetään vahvistus, että hän ymmärtää, että joitakin pilvi- ja reunapalvelujen scale unitien määrityksiin ja käsittelyyn liittyviä tietoja voidaan tallentaa Yhdysvalloissa sijaitsevaan palvelinkeskukseen. Lisätietoja pilvipalvelun ja reunan skaalausyksiköiden tietojenkäsittelystä on [tietojenkäsittely skaalausyksiköiden hallinnan aikana](#data-processing-management) -osassa myöhemmin tässä aiheessa.
-
-## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Jaetun hybriditopologian ydinarvoehdotus
-
-Valmistuksessa ja jakelussa toimivien yritysten on voitava suorittaa keskeisiä liiketoimintaprosesseja ympärivuorokautisesti, ilman keskeytyksiä ja skaalautuvasti. Jaetun hybriditopologian avulla yritykset voivat suorittaa toiminnan kannalta välttämättömiä valmistus- ja varastoprosesseja ilman keskeytyksiä myös satunnaisten verkkoyhteyksiin tai viiveisiin liittyvien ongelmien yhteydessä.
-
-Jaetussa hybriditopologiassa otetaan käyttöön *scale unitit*, jotka mahdollistavat tuotannon ja varaston toteutustyökuormien jakamisen eri ympäristöihin. Tämä toiminto voi auttaa parantamaan suorituskykyä, estämään palvelukatkoja ja maksimoimaan toiminta-ajan. Skaalausyksiköt tarjotaan Supply Chain Managementin ylläpitosopimukseen seuraavien apuohjelmien kautta:
+Pilvi- ja reunapalvelujen Scale Uniteilla voidaan jakaa tuotannon ja varaston ohjauksen kuormitukset eri ympäristöihin. Tämä toiminto voi auttaa parantamaan suorituskykyä, estämään palvelukatkoja ja maksimoimaan toiminta-ajan. Sen käyttö on mahdollista seuraavien apuohjelmien avulla:
 
 - Dynamics 365 Supply Chain Managementin pilvipalvelujen Scale Unit -apuohjelma
 - Dynamics 365 Supply Chain Managementin reunapalvelujen Scale Unit -apuohjelma
 
-Kuormituksen ominaisuuksia vapautetaan jatkuvasti lisäparannusten avulla.
+Valmistuksessa ja jakelussa toimivien yritysten on voitava suorittaa keskeisiä liiketoimintaprosesseja ympärivuorokautisesti, ilman keskeytyksiä ja skaalautuvasti. Pilvi- ja reunapalvelujen Scale Unitien avulla yritykset voivat suorittaa toiminnan kannalta välttämättömiä valmistus- ja varastoprosesseja ilman keskeytyksiä myös satunnaisten verkkoyhteyksiin tai viiveisiin liittyvien ongelmien yhteydessä.
+
+## <a name="public-preview-information"></a>Julkisen esiversion tiedot
+
+Esiversiossa on yksi ympäristö, joka toimii pilvipohjaisena Dynamics 365 Supply Chain Management -ympäristön keskuksena, ja yksi ympäristö, joka toimii pilvipalvelujen Scale Unitina.
+
+<!-- You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.-->
+
+### <a name="preview-availability"></a>Esiversion saatavuus
+
+Pilvi- ja reunapalvelujen Scale Unitien esiversio on Supply Chain Managementin nykyisten asiakkaiden saatavana lokakuussa 2020.
+
+Lokakuun esiversion 10.0.15 tai Platform update 39:n käyttöönotto [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) -ympäristössä edellyttää, että käyttäjä on Supply Chain Managementin PEAP-ohjelman jäsen. PEAP-ohjelmaan voi liittyä, jos käyttäjä on jo laajan [Dynamics Insider Program](https://experience.dynamics.com/insider) -ohjelman jäsen. Valitse siinä tapauksessa Finance & Operations: Preview early access program (PEAP) -niminen ohjelma.
+
+> [!IMPORTANT]
+> Supply Chain Managementin Scale Unit -toiminnon käyttäminen edellyttää [Finance and Operationsin pilvi- ja reunapalvelun esiversio käyttöehtojen](https://Aka.ms/SCMCnETerms) hyväksymistä.
+
+### <a name="data-processing-for-the-preview"></a>Tietojen käsittely esiversiossa
+
+Julkisen version aikana joitakin hallintapalveluja isännöidään vain Yhdysvalloissa. Kun ominaisuus on yleisesti saatavana, nämä hallintapalvelut ovat kuitenkin saatavana kaikilla Supply Chain Managementin tukemilla maantieteellisillä alueilla. Tämä vaikuttaa kaikkiin Scale Unitin hallinnan käyttämien hallintatietojen siirtoon ja tallennukseen. Näitä tietoja ovat esimerkiksi seuraavat:
+
+- Vuokraajan nimet ja tunnukset
+- LCS-projektin tunnukset
+- Kirjautumiseen käytetyt järjestelmänvalvojan sähköpostiviestit
+- Keskuksen ja Scale Unitien ympäristötunnukset
+- Kuormitusmääritykset
+- Kartta-analyysisivulla näkyvät kerätyt mittarit (kuten viive ja siirtomäärä)
+
+Yhdysvaltalaisiin palvelukeskuksiin siirretyt tiedot ja niissä tallennetut tiedot poistetaan, kun esiversioympäristöt sammutetaan.
+
+### <a name="sign-up-for-the-preview"></a>Esiversion rekisteröiminen
+
+Supply Chain Managementin pilvi- ja reunapalvelujen esiversioon rekisteröitymistä varten organisaatiolla on jo oltava julkaistu Supply Chain Management -pilviympäristö.
+
+Scale Unit -ominaisuudet ovat tällä hetkellä julkisia esiversioita. Rekisteröitymiseen on käytettävä tietyn vuokraajan käyttäjätiliä. Käyttäjän on myös oltava kyseisessä vuokraajassa olevan aktiivisen Dynamics 365 LCS -projektin LCS:n projektin omistaja tai ympäristön järjestelmänvalvoja.
+
+Esiversioon rekisteröidyttäessä valitaan vuokraaja ja noudatetaan rekisteröitymisen vaiheita. Heti kun Microsoft voi varata esiversiokapasiteettia, käyttäjälle lähetetään sähköpostiviesti, joka sisältää kahden ympäristön (keskus ja Scale Unit) valmistelutiedot ja kampanjakoodit soveltuvaa LCS-projektia varten. Kaksi ympäristö voidaan ottaa tämän jälkeen käyttöön tason 2 eristysympäristöinä. Kyseiset ympäristöt ovat voimassa 60 päivää kampanjakoodien luontipäivästä alkaen. Kahta ympäristöä ei pitäisi käyttää, ennen kuin seuraavassa kappaleessa oleva vaihe on suoritettu.
+
+Kun olet vahvistanut Microsoftille, että kaksi ympäristöä on otettu käyttöön kampanjakoodien avulla, toinen ympäristöstä määritetään toimimaan keskuksena ja toinen Scale Unitina. Scale Unitit voidaan sitten määrittää ja ottaa käyttöön valituissa varastonhallinnan ja valmistuksen työkuormissa [Scale Unitin hallintaportaalin](https://aka.ms/SCMSUM) avulla.
+
+Esiversioympäristöt poistetaan automaattisesti 60 päivän kuluttua. Ne voidaan kuitenkin poistaa myös aiemmin, jos vaikuttaa siltä, ettei niitä käytetä. Kun esiversioympäristöt on poistettu, käyttäjä voi rekisteröityä jonottamaan uuden esiversion käyttöönottoa.
+
+Esiversioon voidaan rekisteröityä [Scale Unitin hallintaportaalissa](https://aka.ms/SCMSUM).
+
+### <a name="limitations-that-apply-during-the-preview-period"></a>Esiversiojakson aikana käytössä olevat rajoitukset
+
+> [!IMPORTANT]
+> Tämän ominaisuuden esiversio-ohjelman ensimmäisessä vaiheessa Microsoft tukee vain keskuksia, joissa on pilvipalvelujen Scale Uniteja. Se ei siis tue keskuksia, joissa on reunapalvelujen Scale Uniteja. Reunapalvelun Scale Unitit asennetaan paikallisesti, ja niiden odotetaan oleva saatavana ohjelman tulevassa vaiheessa.
+
+Koska pilvi- ja reunapalvelujen Scale Unitit ovat esiversion ominaisuus, niihin liittyvien palvelujen saatavuus on rajoitettu tiettyihin maihin ja tietyille alueille. Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjä vahvistaa ymmärtävänsä, että joitakin pilvi- ja reunapalvelujen scale unitien määrityksiin ja käsittelyyn liittyviä tietoja voidaan tallentaa Yhdysvalloissa sijaitsevaan palvelinkeskukseen. Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjä myös hyväksyy [Finance and Operationsin pilvi- ja reunapalvelujen esiversion käyttöehdot](https://Aka.ms/SCMCnETerms). Lisätietoja pilvi- ja reunapalvelujen scale uniteista on [dokumentaatiossa](https://aka.ms/scmcne).
+
+Tietosuojasi on tärkeää Microsoftille. Lisätietoja on [tietosuojatiedoissa](https://aka.ms/privacy).
+
+> [!IMPORTANT]
+> Joitakin liiketoimintatoimintoja ei tueta kokonaisuudessaan julkisessa esiversiossa, kun kuormituksia käytetään scale uniteissa. Lisätietoja toiminnallisista kuormituksista on jäljempänä tässä aiheessa.
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Scale unitit ja erilliset kuormitukset
 
-Scale unitit laajentavat Supply Chain Management -keskusympäristöä lisäämällä erillisestä käsittelykapasiteettia. Scale unitit voidaan suorittaa pilvessä. Vaihtoehtoisesti ne voidaan suorittaa reunapalveluna, paikallisena omissa tiloissa.
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 ja scale unitit":::
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 ja scale unitit.":::
+Scale unitit laajentavat Supply Chain Management -keskusympäristöä lisäämällä erillisestä käsittelykapasiteettia. Scale unitit voidaan suorittaa pilvessä. Vaihtoehtoisesti ne voidaan suorittaa paikallisena reunapalveluna omissa tiloissa. Scale unitien yhteys keskusympäristöön voidaan katkaista tilapäisesti. Kun scale unitit on yhdistetty, ne vastaanottavat kaiken tiedot, jota tarvitaan määritettyjen kuormitusten erilliseen käsittelyyn.
 
-Skaalausyksiköt tarjoavat määritetyn kuormituksen sietokykyä, luotettavuutta ja skaalaamista. Edge scale unitit voidaan väliaikaisesti irrottaa pilvikeskuksen ympäristöstä, ja työntekijät jatkavat työskentelyä reunalla määritetyissä kuormituksissa.
+:::image type="content" source="media/cloud_edge-previewoptions.png" alt-text="Scale unit -vaihtoehdot julkisessa esiversiossa":::
 
-*Kuormitus* määritetään liiketoimintatoimintojen joukkona, joka voidaan jättää huomioimatta ja delegoida scale unitiin. Vaikka varastonhallinnan kuormitus on vapautettu, valmistuksen suorittamisen kuormitus on vielä esikatselussa.
+Julkisessa esiversiossa keskusympäristöön voidaan määrittää pilvipalvelun scale unitin valitut kuormitukset Scale Unit -hallintaportaalissa. Jos esiversioon osallistuvalla on paikallisen ympäristön paikallisten liiketoimintatietojen käyttöoikeus, paikallisten liiketoimintatietojen ympäristö voidaan määrittää myös reunapalvelujen scale unitina.
 
-Voit määrittää keskittimesi ympäristön ja cloud scale unitit valituille kuormituksille käyttämällä [Scale Unit -hallintaportaalia](https://sum.dynamics.com). Voit myös määrittää useita kuormituksia scale unitia kohti. Lisätietoja nykyisen version cloud scale unitien edellytyksistä ja rajoituksista on jäljempänä [cloud scale unitien edellytykset ja rajoitukset](#cloud-scale-unit-prerequisites) -osassa myöhemmin tässä ohjeaiheessaa.
+Kuormitus määritetään liiketoimintatoimintojen joukkona, joka voidaan jättää huomioimatta ja delegoida scale unitiin. Esiversiossa on tällä hetkellä kahdenlaisia kuormituksia:
 
-### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen varastonhallinnan kuormituksen ominaisuudet
+- Tuotannonohjaus
+- Varastonhallinta  
 
-Varastonhallinnan kuormituksen avulla varastotyövaiheet voidaan skaalata ja suorittaa joustavassa ympäristössä käyttämällä yksittäisiä ylläpitoikkunoita. Varastonhallinnan kuormitus tukee useimpia yrityksen varastohallinnan prosesseja. Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](cloud-edge-workload-warehousing.md).
+Kuhunkin scale unitiin voidaan määrittää yksi kuormitus kutakin tyyppiä. 
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen tuotannonohjauksen kuormituksen ominaisuudet
 
-Valmistuksen kuormitukseen sisältyy seuraavat ominaisuudet:
+Tuotannonohjauksessa pilvi- ja reunapalvelujen scale uniteissa on seuraavat ominaisuudet myös silloin, kun reunapalvelujen yksiköt eivät ole yhteydessä pilvipalveluun:
 
 - Koneenkäyttäjät ja työnjohtajat voivat käyttää operatiivista tuotantosuunnitelmaa.
 - Koneenkäyttäjät voivat pitää suunnitelman ajan tasalla suorittamalla erillisen valmistuksen ja prosessivalmistuksen töitä.
 - Tuotannoin työnjohtaja voi muokata operatiivista suunnitelmaa.
 - Työntekijät voivat käyttää reunapalvelujen työajanseurantaa kellokorttina ja varmistaa näin oikean palkanlaskennan.
 
-Lisätietoja on kohdassa [Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset](cloud-edge-workload-manufacturing.md).
+Lisätietoja on kohdassa [Tuotannon scale unitin kuormitustiedot](cloud-edge-workload-manufacturing.md).
 
-## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Huomioon otettavia seikkoja ennen jakelun hybriditopologian käyttöönottoa Supply Chain Managementissa
+### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen varastonhallinnan kuormituksen ominaisuudet
 
-Ottamalla jaetut hybriditopologiat käyttöön siirrät Supply Chain Managementin pilviympäristön niin, että se toimii keskuksena. Voit myös liittää muita ympäristöjä, jotka on määritetty skaalausyksiköiksi pilvipalvelussa tai reunalla.
+Varastonhallinnan pilvi- ja reunapalvelujen scale uniteissa on seuraavat ominaisuudet myös silloin, kun reunapalvelujen yksiköt eivät ole yhteydessä pilvipalveluun:
 
-### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a>Cloud scale unitien edellytykset ja rajoitukset
+- Valittujen aaltomenetelmien käsittely on otettu käyttöön myyntitilauksissa ja kysynnän täydennyksessä.
+- Varastotyöntekijät voivat suorittaa myynnin ja kysynnän täydennyksen varastotyön käyttämällä varastosovellusta.
+- Varastotyöntekijät voivat tehdä varastosovelluksella kyselyjä käytettävissä olevasta varastosta.
+- Varastotyöntekijät voivat luoda ja suorittaa varastosiirtoja varastosovelluksella.
+- Varastotyöntekijät voivat rekisteröidä ostotilauksia ja tehdä hyllytyksiä varastosovelluksella.
 
-Skaalausyksiköiden nykyisessä versiossa jotkin toiminnot eivät ole vielä käytettävissä, mutta ne voidaan lisätä asteittain.
+Lisätietoja on kohdassa [Varaston scale unitin kuormitustiedot](cloud-edge-workload-warehousing.md).
 
-#### <a name="you-must-be-a-licensed-customer-of-supply-chain-management"></a>Sinun on oltava Supply Chain Managementin lisensoitu asiakas
+## <a name="onboard-scale-units-for-your-supply-chain-management-environment"></a>Supply Chain Management -ympäristön scale unitien käyttöönottaminen
 
-Jotta voit olla mukana jaetussa topologiassa, sinulla on oltava Supply Chain Managementin lisenssi. Aiemmin luodusta pilviympäristöstä tulee hybriditopologiassasi keskus. Voit ilmoittaa sekä eristysympäristöt että tuotantoympäristöt keskittimen ympäristöiksi ja voit lisätä yksiköitä saamiesi apuohjelmien mukaan.
+### <a name="deploy-the-preview-for-cloud-and-edge-scale-units"></a>Pilvi- ja reunapalvelujen scale unitien ottaminen käyttöön
 
-#### <a name="your-existing-project-must-be-administered-via-the-global-commercial-version-of-lcs"></a>Aiemmin luotua projektia täytyy käyttää LCS:n yleisen kaupallisen version kautta
+Seuraavassa kuvassa on pilvipalvelujen scale unitien esiversion rekisteröitymisen ja valmistelun työnkulku.
 
-Aiemmin luodun Microsoft Dynamics Lifecyle Services (LCS) -projektin on täytettävä seuraavat versiovaatimukset:
+:::image type="content" source="media/cloud_edge-previewsignup.png" alt-text="Esiversion rekisteröitymisvaiheet":::
 
-- Projektia täytyy käyttää LCS:n yleisen kaupallisen version kautta osoitteessa [lcs.dynamics.com](https://lcs.dynamics.com).
-- LCS:n paikallisia versioita (kuten [eu.lcs.dynamics.com](https://eu.lcs.dynamics.com) ja [fr.lcs.dynamics.com](https://fr.lcs.dynamics.com)) ei tueta.
-- LCS:n viranomaispilvipalveluversioita ei tueta.
-- LCS:n Mooncake-versiota ei tueta.
+### <a name="select-your-lcs-project-tenant-and-the-detailed-preview-process"></a>LCS-projektin vuokraajan valitseminen ja yksityiskohtainen esiversioprosessi
 
-#### <a name="your-current-production-environment-must-be-of-the-self-service-type-in-lcs"></a>Nykyisen tuotantoympäristön tyypin on oltava itsepalvelutyyppi LCS:ssä
+Julkisessa esiversiossa [Scale Unit -hallintaportaalissa](https://aka.ms/SCMSUM) on luettelo vuokraajista, joiden osa tili on ja joissa käyttäjä on LCS-projektin omistaja tai ympäristön järjestelmänvalvoja.
 
-Nykyisen tuotantoympäristön on oltava merkitty **itsepalvelu**-tyyppiin LCS:ssä. Tämä tyyppi ilmaisee, että LCS-projektin vuokraaja on jo muunnettu niin, että se tukee Azure Service Fabric -isännöintimallia.
-
-> [!IMPORTANT]
-> Ympäristötyyppejä, jotka suorittavat infrastruktuurin palveluna (IaaS) ei tueta. Nämä ympäristöt on tyypillisesti merkitty **Microsoftin hallitsemiksi** tyypeiksi LCS:ssä. Jos käytössä on tämän tyyppisiä ympäristöjä, ota yhteys Microsoftin yhteyshenkilöön ja ota huomioon siirron aikajana **itsepalvelu**-tyypiksi.
-
-Microsoft on siirtämässä kaikki Supply Chain Managementin pilviympäristöt IaaS-mallista topologiaan, joka sijaitsee Service Fabricissa. Tämä siirto helpottaa skaalattavuutta ja helpottaa huoltohallintaa. Tämän vuoksi käyttöönotto- ja ylläpitotoiminnot ovat nopeampia. Samoin palvelukomponentteja siirretään mikropalveluiden käsitteeseen, ja palvelun isännöintimalli [siirtyy](/virtualization/windowscontainers/about/containers-vs-vm) näennäiskonemallista (VM) kevyeen säilöjä käyttävään arkkitehtuurimalliin.
-
-Lopulta sama Service Fabriciin perustuva säilöjen käyttöön perustuva palveluinstanssi tehostaa sekä pilvipalvelu- että reunaesiintymiä riippumatta siitä, onko esiintymä pilvipalvelussa vai skaalausyksikössä vai reunalla.
-
-Ennen kuin voit siirtyä hybriditopologiaan, joka tukee skaalausyksiköitä, projektin vuokraajan on siirryttävä Service Fabric –isännöityyn malliin. Lisäksi on muunnettava kaikki ympäristöt, jotka toimivat keskittimenä.
-
-> [!TIP]
-> Jos haluat tehdä kyselyn LCS-projektin vuokraajasta, etsi ympäristösi tyyppi [LCS:stä](https://lcs.dynamics.com/) tai ota yhteys yhteistyökumppaniisi tai Microsoftin yhteyshenkilöön.
-
-#### <a name="local-business-data-on-premises-environments-arent-supported-as-hubs-for-scale-units"></a>Paikallisia liiketoimintatieto (paikalliset) -ympäristöjä ei tueta skaalausyksiköiden keskittiminä
-
-Paikalliset ympäristöt eivät voi toimia skaalausyksiköiden keskittiminä. Keskitinympäristöt ovat aina pilvipalveluja.
-
-#### <a name="scale-unit-management-capabilities-are-limited"></a>Skaalausyksikköjen hallintaominaisuudet ovat rajallisia
-
-Hallintaominaisuudet, jotka voivat auttaa kuormitusten siirtoja, ovat rajoitettuja. Joitakin hallintatoimintoja ei tueta itsepalveluna, ja sinun on ehkä pyydettävä tukea yhteistyökumppanisi tai Microsoftin yhteyshenkilön kautta. Esimerkkejä tällaisista ovat esimerkiksi skaalausyksiköiden väliset siirrot ja tilapäiset ad-hoc-siirrot hätätilanteissa.
-
-#### <a name="metrics-and-measurements-arent-yet-available"></a>Mittarit ja mittaukset eivät ole vielä käytettävissä
-
-Mittareita ja mittauksia, jotka auttavat valitsemaan skaalausyksiköiden parhaan sovelluksen, ei ole vielä käytettävissä. Valitse tehokkain sovellus yhdessä Microsoftin yhteyshenkilön tai käyttöönottokumppanin kanssa.
-
-### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Tietojenkäsittely skaalausyksiköiden hallinnan aikana
-
-Kun otat Dynamics 365 -ympäristösi käyttöön jaetussa, hybriditopologiassa pilvipalveluissa ja reunan skaalausyksiköissä, joitakin hallintapalveluja ylläpidetään vain Yhdysvalloissa, kuten LCS:ssä. Tämä toiminta vaikuttaa joihinkin [Scale Unit Manager -portaalissa](https://sum.dynamics.com) käytettämiin hallinta- ja konfigurointitietojen siirtoon ja varastointiin. Seuraavassa on muutamia esimerkkejä:
-
-- Vuokraajan nimet ja tunnukset
-- LCS-projektin tunnukset
-- Järjestelmänvalvojan ja projektin omistajan sähköpostiosoitteet, joita käytetään kirjautumisen yhteydessä
-- Keskuksen ja Scale Unitien ympäristötunnukset
-- Kuormituskonfiguraatiot sekä niiden nimet ja fyysiset osoitteet, jotta topologiasi voidaan näyttää maantieteellisessä kartassa
-- Kerätyt mittarit (kuten viive ja siirtomäärä), jotka näkyvät kartta-analyysisivulla ja auttavat valitsemaan mahdollisimman suotuisan käyttötavan skaalausyksiköille
-
-Yhdysvalloissa datakeskuksiin siirrettävät ja tallennetut tiedot poistetaan Microsoftin tietojen säilytyskäytäntöjen mukaisesti. Tietosuojasi on tärkeää Microsoftille. Lisätietoja on [tietosuojatiedoissa](https://go.microsoft.com/fwlink/?LinkId=521839).
-
-## <a name="onboarding-in-two-stages"></a>Mukana on kaksi vaihetta
-
-Jakeluun jaetussa hybriditopologiassa on kaksi vaihetta. Ensimmäisen vaiheen aikana mukautukset on vahvistettava, jotta ne toimivat jaetussa topologiassa, jossa on skaalausyksiköitä. Sen vuoksi eristys- ja tuotantoympäristöt siirretään vain toisen vaiheen aikana.
-
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Vaihe 1: Mukautusten arvioiminen yhden ruudun kehitysympäristöissä
-
-Ennen kuin aloitat eristys- tai tuotantoympäristön tuomisen, suosittelemme, että tutustut skaalausyksiköihin kehitysasetuksissa, kuten yhden laatikon ympäristössä (eli tier-1-ympäristössä), jotta voit vahvistaa prosessit, mukautukset ja ratkaisut. Tässä vaiheessa tietoja ja mukautuksia käytetään yksiruutuissa ympäristöissä. Yksi ympäristö ottaakeskittimen roolin ja toinen ottaa roolin skaalausyksikönä. Nämä asetukset ovat paras tapa tunnistaa ja korjata ongelmia. Myös viimeisintä ennakkokäyttökoontiversiota (PEAP) voi käyttää tämän vaiheen suorittamiseen.
-
-Vaiheessa 1 on käytettävä [skaalausyksikön käyttöönottotyökaluja yhden ruudun kehitysympäristöissä](https://github.com/microsoft/SCMScaleUnitDevTools). Näiden työkalujen avulla voit konfiguroida skaalausyksiköt yhdessä tai kahdessa erillisessä yksiruutuisessa ympäristössä. Työkalut toimitetaan binaarijulkaisuna ja lähdekoodina GitHubissa. Tutki projektia, joka sisältää [vaiheittaiset käyttöoppaat](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide), jotka kuvaavat työkalujen käyttöä.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Vaihe 2: Apuohjelmien hankkiminen ja käyttöönotto eristys- ja tuotantoympäristöissäsi
-
-Jos haluat siirtyä jostakin eristys- tai tuotantoympäristöstäsi uuteen topologiaan, sinun on hankittava lisäosat yhdelle tai useammalle cloud scale unitille (ja tulevaisuudessa edge scale unitille). Apuohjelmat myöntävät [LCS:ssä](https://lcs.dynamics.com/) vastaavat projekti- ja ympäristöpaikat, jotta skaalausyksikön ympäristöjä voidaan käyttää.
-
-> [!NOTE]
-> Skaalausyksikköjen apuohjelmia ei liitetä rajoitettuun käyttäjämäärään, vaan kuka tahansa olemassa olevan ylläpitosopimuksen käyttäjä voi käyttää niitä roolien perusteella, jotka järjestelmänvalvoja määrittää.
-
-Skaalausyksiköitä on saatavilla useassa varastointiyksikössä (SKUs) ja hinnoitteluvaihtoehdoissa. Näin ollen voit valita vaihtoehdon, joka vastaa parhaiten suunniteltujen kuukausittaisten tapahtumien volyymia ja suorituskykyvaatimuksia.
-
-Lähtötason SKU on *Perustaso* ja sitä suorituskykyisempää SKU:ta kutsutaan *vakiotasoksi*. Jokaiselle SKU:lle on esiladattu tietty määrä kuukausitapahtumia. Voit kuitenkin suurentaa kuukausittaista tapahtumabudjettia lisäämällä kullekin SKU:lle ylitysapuohjelmia.
-
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Cloud Scale Unitin apuohjelmat.":::
-
-> [!TIP]
-> Tunnista tarpeisiisi parhaiten sopiva koko toimimalla kumppanisi ja Microsoftin kanssa ymmärtääksesi tarvitsemasi kuukausittainen tapahtumakoko.
-
-Kunkin skaalausyksikön lisäosan osto ei vain anna sinulle tapahtumien kuukausittaista määrää, vaan myös oikeuttaa tiettyyn määrään ympäristöpaikkoja LCS:ssä. Sinulla on oikeus jokaista Cloud Scale Unit -apuohjelmaa kohti uuteen tuotantopaikkaan ja uuteen eristysympäristöpaikkaan. Mukana on myös uusi LCS-projekti, joka sisältää nämä lisäprojektit. Paikkojen käyttöoikeudet on sidottu siten, että paikkoja on käytettävä skaalausyksikköinä, joissa on pilvikeskitin.
-
-Ylitysten apuohjelmat eivät anna oikeutta uusiin ympäristöpaikkoihin.
-
-Jos haluat hankkia lisää eristysympäristöjä, voit ostaa tavallisia eristysympäristöpaikkoja. Microsoft voi tämän jälkeen auttaa sinua mahdollistamaan näiden eristysympäristön skaalausyksiköiden käyttöönoton hybriditopologiassa.
-
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Ota käyttöön jaettu hybriditopologia Supply Chain Managementille
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>LCS-projektin vuokraajan valitseminen ja yksityiskohtainen käyttöönottoprosessi
-
-Kun olet suunnitellut valmiiksi miten olet mukana Supply Chain Managementin jaetussa hybriditopologiassa, voit aloittaa käyttöönottoprosessin [Scale Unit Manager -portaalin](https://aka.ms/SCMSUM) avulla. Valitse portaalissa **Dynamics 365 -vuokralaiset** -välilehti. Välilehdellä on luettelo vuokraajista, joiden osa tili on ja joissa käyttäjä on LCS-projektin omistaja tai ympäristön järjestelmänvalvoja.
-
-Jos toivottu vuokraaja ei ole luettelossa, siirry [LCS:hen](https://lcs.dynamics.com/v2) ja varmista, että olet joko kyseisen vuokraajan LCS-projektin ympäristön järjestelmänvalvoja tai projektin omistaja. Rekisteröityminen sallitaan vain valitun vuokraajan Azure Active Directory (Azure AD) -tileille.
+Jos toivottu vuokraaja ei ole tässä luettelossa, siirry [LCS:hen](https://lcs.dynamics.com/v2) ja varmista, että olet joko kyseisen vuokraajan LCS-projektin ympäristön järjestelmänvalvoja tai projektin omistaja. Huomaa, että rekisteröityminen sallitaan vain valitun vuokraajan Azure Active Directory (Azure AD) -tileille.
 
 > [!NOTE]
 > Kun muutokset on tehty LCS:ssä, muutoksen päivittyminen vuokraajaluetteloon voi kestää 30 minuuttia.
 
-Käyttöönoton tila näkyy kunkin luettelossa olevan vuokraajan kohdalla.
+Rekisteröitymisen tila näkyy kunkin luettelossa olevan vuokraajan kohdalla.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Vuokraajien luettelo Dynamics 365 -vuokraajat -välilehdessä.":::
+:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Vuokraajan rekisteröitymisasetus":::
 
-Valitse **Napsauta tästä aloittaaksesi** pyytääksesi käyttöönoton LCS-vuokraajalle. Käyttöehdot on hyväksyttävä. Lisäksi on annetta yrityksen sähköpostiosoite, johon Microsoft voi lähettää käyttöönottoprosessiin liittyviä viestejä.
+Voit osallistua esiversioon rekisteröimällä LCS-vuokraajan valitsemalla **Rekisteröidy napsauttamalla tätä** -linkin. Käyttöehdot on hyväksyttävä. Lisäksi on annetta yrityksen sähköpostiosoite, johon Microsoft voi lähettää esiversioon rekisteröitymisprosessiin liittyviä viestejä.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Vuokraajan rekisteröitymisen lähettäminen.":::
+:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Vuokraajan rekisteröitymisen lähettäminen":::
 
-Microsoft tarkistaa pyynnön ja ilmoittaa seuraavista vaiheista lähettämällä sähköpostia rekisteröitymislomakkeessa annettuun osoitteeseen. Microsoft tekee tiivistä yhteistyötä, jotta skaalausyksiköt voidaan ottaa käyttöön hybriditopologiassa liiketoimintaskenaariossa.
+Microsoft tarkistaa pyynnön ja ilmoittaa seuraavista vaiheista lähettämällä sähköpostia rekisteröitymislomakkeessa annettuun osoitteeseen.
 
-Kun käyttöönottosi on valmis, voit konfiguroida skaalausyksiköt ja kuormituksen portin avulla.
+Sen jälkeen kun sinut on hyväksytty esiversio-ohjelmaan, saat kaksi kampanjakoodia LCS-projektia varten. Voit nyt ottaa kaksi ympäristöä käyttöön LCS:ssä näiden kampanjakoodien avulla. Ympäristöissä on oltava käytössä vähintään PEAP 10.0.15. Kun olet käyttänyt kampanjakoodit, ilmoita siitä Microsoftille (ohjeiden mukaisesti), jotta esiversiotoiminnot voidaan ottaa niissä käyttöön. Microsoft ilmoittaa, kun tämä määritysvaihe on valmis.
 
-### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Scale unitien ja kuormitusten hallinta Scale Unit -hallintaportaalissa
+Voit nyt aloittaa scale unitien ja kuormitusten määrittäminen esiversioympäristössä.
+
+> [!IMPORTANT]
+> Pilvipalvelujen scale unit -määritysten [kaikki tarvittavat vaiheet voidaan tehdä Scale Unit -hallintaportaalissa](#scale-unit-manager-portal).
+<!-- 
+> If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
+
+### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Pilvipalvelun scale unitien ja kuormitusten hallinta Scale Unit -hallintaportaalissa
 
 Siirry [Scale Unit -hallintaportaaliin](https://aka.ms/SCMSUM) ja käytä kirjautumiseen vuokraajan tiliä. Voit lisätä keskusympäristön **Määritä scale unitit** -sivulla, jos se ei ole vielä luettelossa. Voit sitten valita keskuksen, johon haluat määrittää scale unitit ja kuormitukset.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit -hallintaportaali, Määritä scale unitit -sivu":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unitin ja kuormituksen hallintakokemus":::
 
-Jos haluat lisätä vähintään yhden tilauksessa olevan skaalausyksikön, valitse **Lisää skaalausyksiköitä**.
+Jos haluat lisätä vähintään yhden topologiassa olevan scale unit, valitse **Lisää scale uniteja**. Esiversiossa pitäisi näkyä se pilvipalvelun scale unit, joka otettiin käyttöön toisella esiversio-ohjelman osana vastaanotetulla kampanjakoodilla.
 
-Lisää varastonhallinnan kuormitus yhteen scale unitiin valitsemalla **Määritetyt kuormitukset** -välilehdessä **Luo kuormitus** -painike. Kunkin kuormituksen osalta on määritettävä kuormituksen omistamien prosessien konteksti. Varastonhallinnan kuormituksissa konteksti on tietyn toimipaikan ja yrityksen tietty varasto.
+<!--  [!IMPORTANT]
+> In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Määritä kuormitukset -ikkuna":::
+Lisää varastonhallinnan tai tuotannonohjauksen kuormitus yhteen scale unitiin valitsemalla **Määritetyt kuormitukset** -välilehdessä **Luo kuormitus** -painike. Kunkin kuormituksen osalta on määritettävä kuormituksen omistamien prosessien konteksti. Varastonhallinnan kuormituksissa konteksti on tietyn toimipaikan ja yrityksen tietty varasto. Tuotannonohjauksen kuormituksissa konteksti on yrityksen tietty toimipaikka.
 
-#### <a name="manage-workloads"></a><a name="manage-workloads"></a>Kuormitusten hallinta
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Kuormituksen luominen":::
 
-Kun vähintään kuormitus on otettu käyttöön, alusta ja hallitse **Kuormitusten hallinta** -asetuksen avulla prosesseja, kuten seuraavassa taulukossa mainittuja prosesseja.
+> [!IMPORTANT]
+> Esiversion Scale Unit -hallintaportaalissa ei voi poistaa kuormituksia scale uniteista eikä poistaa scale unitin määritystä keskukseen sen jälkeen, kun määritys on tehty. Jos määritys on poistettava, ota yhteys esiversio-ohjelman hallinnan yhteyshenkilöön.
 
-| Käsittele | Kuvaus |
-|---|---|
-| Scale unit -viestinnän keskeyttäminen | Keskuksen ja scale unitin välisten pipeline-sanomien keskeyttäminen. Tämä prosessi pysäyttää viestinnän ja tyhjentää keskuksen ja scale unitien välisen tietoputken. Tämä prosessi on suoritettava ennen Supply Chain Management -huoltotoiminnon suorittamista joko keskuksessa tai scale unitissa, mutta sitä voi käyttää myös muissa tilanteissa. |
-| Scale unit -viestinnän jatkaminen | Keskuksen ja scale unitin välisten pipeline-sanomien jatkaminen. Tätä prosessia voi käyttää esimeriksi sen jälkeen, kun Supply Chain Management -huoltotoiminto on suoritettu joko keskuksessa tai scale unitissa. |
-| Päivityksen kuormitukset | Uuden toiminnon keskuksen ja scale unitin kuormitusten synkronointi. Tätä prosessia on ehkä käytettävä, kun huolto on aiheuttanut tiedonsiirtokyselyjen muuttumisen ja/tai lisännyt uusia taulukoita tai kenttiä kuormitukseen. |
-| Kuormituksen siirtäminen scale unitiin | Keskuksessa tällä hetkellä suoritettavan kuormituksen scale unitiin siirtämisen aikatauluttaminen. Kun tämä prosessi suoritetaan, tietojen synkronointi tapahtuu sujuvasti. Lisäksi keskus ja scale unit määritetään vaihtamaan kuormituksen omistus. |
-| Scale unitin siirtäminen keskukseen | Scale unitissa tällä hetkellä suoritettavan kuormituksen keskukseen siirtämisen aikatauluttaminen. Kun tämä prosessi suoritetaan, tietojen synkronointi tapahtuu sujuvasti. Lisäksi keskus ja scale unit määritetään vaihtamaan kuormituksen omistus.
-| Siirtäminen hätätilanteessa keskukseen | <p>Aiemmin luodun kuormituksen siirtäminen välittömästi keskukseen. *Tämä prosessi vaihtaa vain keskuksessa tällä hetkellä käytettävissä olevien tietojen omistuksen.*</p><p><strong>Varoitus:</strong> Tämä prosessi voi aiheuttaa synkronoimattomien tietojen menetyksen ja liiketoimintaprosessien käsittelyn epäonnistumisen. Tämän vuoksi prosessia pitäisi käyttää vain hätätilanteissa, joissa liiketoimintaprosessit on käsiteltävä keskuksessa sen vuoksi, että scale unitissa on käyttökatkos, jota ei voi korjata kohtuullisessa ajassa.</p> |
-| Jaetun topologian käytön lopettaminen | Scale unitin käyttöönoton poistaminen ja suorittaminen vain keskuksessa ilman kuormituksen käsittelyä. |
+<!-- ### Create an edge scale unit using your custom on-premises hardware appliance
 
-:::image type="content" source="media/sum-manage-workloads.png" alt-text="Scale unitin ja kuormituksen hallintakokemus.":::
-
-> [!TIP]
-> Ajan mittaan skaalausyksikköjen hallintakokemukseen lisätään lisäparannuksia, jotka helpottavat elinkaarenhallinnan toimintoja. Nykyisen julkaisun erityisominaisuudet on dokumentoitu mukana olevassa käyttökirjassa, joka on niiden asiakkaiden käytettävissä, jotka ovat mukana jaetussa hybriditopologiassa Supply Chain Managementia varten. <!-- KFM: Add a link to the handbook when it is published -->
-
-## <a name="feature-management-considerations-for-workloads"></a>Toimintojen hallinnan osalta työkuormissa huomioon otettavat asiat
-
-Tässä osassa selitetään tärkeitä näkökohtia, jotka kannattaa ottaa huomioon, kun asennetaan työkuormia, lisätään toimintoja tai poistetaan toimintoja jaetussa hybriditopologiassa. Monet tekijät voivat vaikuttaa siihen, onko sinun suoritettava [työkuorman päivitys](#manage-workloads) muutosten tekemisen jälkeen. Sinun on kuitenkin yleensä tehtävä niin, kun päivität tiedonsiirtokyselyjä tai lisäät sellaisia ja/tai kun lisäät uusia taulukkoja tai kenttiä aiemmin asennettuun työkuormaan.
-
-### <a name="mandatory-features-for-installing-a-workload"></a>Työkuorman asennuksen pakolliset toiminnot
-
-Kun asennat työkuorman, asennusprosessi luo työkuormamäärityksen, joka sisältää tietoja kahden käyttöönoton välillä tietoja synkronoitaessa käytetyistä tietotaulukosta. Työkuormamäärityksen määritelmän luonti suoritetaan automaattisesti kulloinkin [Toimintojen hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) käytössä olevien toimintojen perusteella. Seuraava taulukko sisältää toiminnot, joiden on oltava käytössä varasto- tai valmistustyökuorman suorittamiseen vaadittavien työkuormamääritelmien luomista varten.
-
-| Pakollinen toiminto | Kuormitus |
-|---|---|
-| Automaattinen GUID-tunnusten määrittäminen WHS-käyttäjän luonnissa | Varasto |
-| Organisaation laajuinen työn esto | Varasto |
-| Lähetysaallon etikettien tiedot | Varasto |
-| Varastosovelluksen työluetteloiden yksikkötuki | Varasto |
-| Tuotannon suoritus | Valmistus |
-
-Kun otat kuormituksen käyttöön [skaalausyksikön käyttöönottotyökaluilla yhden ruudun kehitysympäristöissä](https://github.com/microsoft/SCMScaleUnitDevTools) tai [Scale Unitien hallintaportaalilla](https://sum.dynamics.com), kaikki pakolliset toiminnot ovat automaattisesti käytössä. Jos kuitenkin suoritat manuaalisen testikäyttöönoton, josta puuttuu vähintään yksi pakollinen toiminto, työkuorman asennus epäonnistuu ja saat puuttuvat toiminnot sisältävän sanoman. Tällöin sinun on otettava kyseiset toiminnot käyttöön manuaalisesti ja käynnistettävä työkuorman asennus uudelleen.
-
-### <a name="enabling-or-disabling-features-that-have-data-synchronization-dependencies"></a>Sellaisten toimintojen käyttöönotto tai käytöstä poisto, joilla on tiedonsynkronointiriippuvaisuuksia
-
-Keskuksen ja sen Scale Unitien välillä synkronoitavien tietojen valitsemiseen vaikuttavat toiminnot vaikuttavat myös siihen, miten työkuorman määritelmä luodaan. Siksi on tärkeää ottaa nämä toiminnot käyttöön ennen työkuorman asentamista. Jos otat tällaisen toiminnon käyttöön suorittaessasi työkuormaa, sinun on luotava työkuorman määritelmä uudelleen suorittamalla [työkuorman päivitys](#manage-workloads) toiminnon käyttöön ottamisen jälkeen. Myös jos otat pois käytöstä toiminnon, jolla on tietojensynkronointiriippuvuuksia, kun suoritat työkuormaa, sinun on suoritettava [työkuorman päivitys](#manage-workloads) poistaaksesi asianosaiset tiedonsynkronointitiedot työkuorman määritelmästä.
-
-[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->

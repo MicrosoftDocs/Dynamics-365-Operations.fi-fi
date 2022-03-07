@@ -2,35 +2,30 @@
 title: Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä
 description: Tässä ohjeaiheessa kerrotaan, milloin ja miten usean kanavan Microsoft Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään käyttäjän todennusta varten määritetyssä Dynamics 365 Commerce -ympäristössä.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: da27e3ed0a0e50126590609d09575befe17a7aa2
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736401"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, milloin ja miten usean Microsoft Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään kanavaa kohti käyttäjän todennusta varten määritetyssä Dynamics 365 Commerce -ympäristössä.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce käyttää Azure AD B2C:n pilven tunnistetietopalvelua käyttäjän todennustietojen tukemisessa ja todennuksen työnkuluissa. Käyttäjät voivat rekisteröityä, kirjautua sisään ja palauttaa salasanan todennuksen työnkulkujen avulla. Azure AD B2C tallentaa käyttäjän luottamukselliset todennustiedot, kuten käyttäjätunnuksen ja salasanan. Käyttäjätietue on yksilöllinen jokaiselle B2C-vuokraajalle. Se käyttää joko käyttäjänimeä (sähköpostiosoitetta) tai yhteisöpalvelujen tunnistetietoja.
 
@@ -54,13 +49,9 @@ Usein, kun kanavaa tai sivustoa käsitellään erillisenä yrityksenä, paras va
 
 Seuraavassa kuvassa näkyy useita B2C-vuokraajia Commerce-ympäristössä.
 
-![Useita B2C-vuokraajia Commerce-ympäristössä](media/MultiB2C_In_Environment.png)
+![Useita B2C-vuokraajia Commerce-ympäristössä.](media/MultiB2C_In_Environment.png)
 
 Jos päätät, että yrityksesi edellyttää erillisiä B2C-vuokraajia kanavaa kohden samassa Commerce-ympäristössä, voit pyytää tätä toimintoa suorittamalla seuraavissa osissa olevat toimenpiteet.
-
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>Pyydä, että ympäristössä otetaan käyttöön B2C kanavaa kohti
-
-Jos tällä hetkellä haluat, että samassa Commerce-ympäristössä on käytettävissä erilliset B2C-vuokraajat kanavaa kohti, lähetä pyyntö Dynamics 365 Commerce -sovellukseen. Lisätietoja on kohdassa [Lifecycle Services (LCS) -tuen hankkiminen](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md). Voit myös pyytää lisätietoja Commerce-ratkaisujen yhteyshenkilöltä.
 
 ## <a name="configure-b2c-tenants-in-your-environment"></a>B2C-vuokraajan määrittäminen ympäristössä
 
@@ -82,11 +73,11 @@ Voit lisätä Azure AD B2C -vuokraajan ympäristöön seuraavasti.
     - **Asiakasohjelman GUID**: Syötä Azure AD B2C -vuokraajan tunnus niin kuin se näkyy Azure-portaalissa (ei sovelluksen tunnus B2C-vuokraajalle).
     - **Profiilin muokkauskäytännön tunnus**: Anna käytännön tunnus (käytännön nimi Azure-portaalissa).
 
-1. Kun olet syöttänyt nämä tiedot, tallenna muutokset valitsemalla **OK**.
+1. Kun olet syöttänyt nämä tiedot, tallenna muutokset valitsemalla **OK**. Uusi Azure AD B2C -vuokraaja näkyy nyt luettelossa **Hallitse B2C-sovelluksia** -kohdassa.
 
 > [!NOTE]
 > Jätä kentät, kuten **Laajuus**, **Ei-interaktiivisen käytännön tunnus**, **Ei-interaktiivisen asiakasohjelman tunnus**, **Sisäänkirjauksen mukautettu toimialue** ja **Rekisteröitymisen käytännön tunnus** tyhjiksi, jos Dynamics 365 Commerce -ryhmä ei ohjeista määrittämään niitä.
-Uusi Azure AD B2C -vuokraaja näkyy nyt luettelossa **Hallitse B2C-sovelluksia** -kohdassa.
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Azure AD B2C -vuokraajan hallinta tai poistaminen
 
@@ -100,6 +91,7 @@ Uusi Azure AD B2C -vuokraaja näkyy nyt luettelossa **Hallitse B2C-sovelluksia**
 > Kun B2C-vuokraaja määritetään reaaliaikaista/julkaistua sivustoa varten, käyttäjien on ehkä rekisteröidyttävä vuokraajan tilien avulla. Jos poistat määritetyn vuokraajan **Vuokraajan asetukset \> B2C-vuokraaja** -valikosta, poistat kyseisen B2C-vuokraajan liitoksen sivustoista, jotka on liitetty vuokraajan kanaviin. Tässä tapauksessa käyttäjät eivät ehkä enää voi kirjautua tileille. Ole sen vuoksi hyvin varovainen, kun poistat määritetyn vuokraajan.
 >
 > Kun määritetty vuokralainen poistetaan, B2C-vuokraajaa ja tietueita ylläpidetään yhä, mutta kyseisen vuokraajan Commerce-järjestelmämääritystä muutetaan tai se poistetaan. Käyttäjät, jotka yrittävät rekisteröityä tai kirjautua sivustoon, luovat uuden asiakastietueen oletusarvoisessa tai juuri liitetyssä B2C-vuokraajassa, joka on määritetty sivuston kanavalle.
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Kanavan määrittäminen B2C-vuokraajan avulla
 
 1. Kirjaudu sisään Commerce-sivuston luontiohjelmaan ympäristössä järjestelmänvalvojana. Voit määrittää Azure AD B2C -vuokraajat, jos olet Commerce-ympäristön järjestelmänvalvoja.
@@ -131,3 +123,6 @@ Uusi Azure AD B2C -vuokraaja näkyy nyt luettelossa **Hallitse B2C-sovelluksia**
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

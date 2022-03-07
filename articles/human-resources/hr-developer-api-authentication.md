@@ -2,15 +2,12 @@
 title: Todennus
 description: Tässä artikkelissa on yleistietoja käyttöoikeuksien todennuksesta Microsoft Dynamics 365 Human Resourcesin datasovelluksen ohjelmointirajapinnasta.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3396f0ae6d089f43c39f318dc9d92a88a7db3d7c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418260"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070865"
 ---
 # <a name="authentication"></a>Todennus
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tässä artikkelissa on yleistietoja käyttöoikeuksien todennuksesta Microsoft Dynamics 365 Human Resourcesin datasovelluksen ohjelmointirajapinnasta.
 
@@ -82,13 +84,13 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Jos kyseessä on Internet-sovellus, anna sovelluksen perusosoite. Tämä `http://localhost:31544` voi olla esimerkiksi paikallisessa tietokoneessa käytettävän Internet-sovelluksen URL-osoite. Tämän jälkeen käyttäjät kirjautuvat WWW-asiakasohjelmaan tämän URL-osoitteen avulla.
         - Jos kyseessä on yleinen asiakassovellus, anna URI-tunnus, jota Azure AD käyttää palauttamaan tunnuksen vastauksia. Kirjoita sovellukseen liittyviä arvoja, kuten `myapp://auth`.
 
-        Lisätietoja Internet-sovelluksista ja alkuperäisistä sovelluksista on [Microsoftin käyttäjätietoympäristössä (aiemmin Azure Active Directory sovelluskehittäjille)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        Lisätietoja Internet-sovelluksista ja alkuperäisistä sovelluksista on [Microsoftin käyttäjätietoympäristössä (aiemmin Azure Active Directory sovelluskehittäjille)](/azure/active-directory/develop/#quickstarts).
 
 5. Valitse **API-käyttöoikeudet**-kohdasta **Lisää käyttöoikeus**. Valitse sitten **API-liittymät, joita oma organisaationi käyttää** -välilehti, etsi **Dynamics 365 Human Resources** ja lisää **käyttäjä\_tekeytyminen**-oikeus sovellukseen. Henkilöstöhallinnon sovellustunnus on f9be0c49-aa22-4ec6-911a-c5da515226ff. Tämän tunnuksen avulla voit varmistaa, että olet valinnut oikean sovelluksen.
 
 6. Valitse **Rekisteröi**.
 
-   [![Uuden sovelluksen rekisteröiminen Azure-portaaliin](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Uuden sovelluksen rekisteröiminen Azure-portaaliin.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Azure AD määrittää sovellukseesi yksilöllisen sovellustunnuksen (asiakastunnus) ja vie sinut sovelluksesi **yhteenveto**-sivulle. Jos haluat lisätä sovellukseesi muita ominaisuuksia, voit valita muita asetuksia, kuten brändäyksen sekä sertifikaattien ja salaisuuksien asetukset.
 
@@ -185,3 +187,6 @@ namespace TalentODataPoC
 ```
 
 Kun olet hakenut käyttötunnussanoman, ohitat valtuutustietojen otsikossa olevan tunnuksen ja jokaisen pyynnön, jonka lähetät tietojen ohjelmointirajapintaliittymään edellä kuvatulla tavalla.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

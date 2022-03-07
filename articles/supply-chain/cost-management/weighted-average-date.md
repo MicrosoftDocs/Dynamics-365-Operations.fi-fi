@@ -2,11 +2,9 @@
 title: Painotetun keskiarvon päivämäärä
 description: Painotetun keskiarvon päivämäärä on painotetun keskiarvon periaatteeseen perustuva varastomalli, jossa varasto-otot arvotetaan varastoon vastaanotettujen nimikkeiden keskiarvon mukaan kunakin erillisenä päivänä varaston sulkemiskauden aikana.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963735"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572022"
 ---
 # <a name="weighted-average-date"></a>Painotetun keskiarvon päivämäärä
 
@@ -41,7 +39,7 @@ Painotettu keskiarvo = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1
 
 Varaston sulkemisen aikana laskenta suoritetaan päivittäin seuraavan kuvan esittämällä tavalla. 
 
-![Painotetun keskiarvon päivämäärän päivittäislaskentamalli](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Painotetun keskiarvon päivämäärän päivittäislaskentamalli.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Varasto-otoista lähtevät varastotapahtumat, mukaan lukien myyntitilaukset, varastokirjauskansiot, ostohyvityslaskut ja tuotantotilaukset, tapahtuvat kirjauspäivämääränä ja arvioidun kustannushinnan mukaisina. Tähän arvioituun kustannushintaan viitataan myös termillä kustannushinnan käyttökeskiarvo. Varaston sulkupäivämääränä järjestelmä analysoi edellisten kausien, edellisten päivien ja kuluvan päivän varastotapahtumat. Tämän analyysin avulla määritetään, kumpaa seuraavista sulkemisperiaatteista käytetään:
 
@@ -74,7 +72,7 @@ Seuraavassa on kuvattu näitä tapahtumia:
 -   2b. Varaston taloudellinen varastostaotto päivitetty määrälle 2 yksikkökustannuksen ollessa 10,00 USD.
 -   3. Varaston sulkeminen toteutettiin käyttämällä suoran selvityksen menetelmää varaston taloudellisen vastaanoton ja varaston taloudellisen varastostaoton väliseen selvitykseen.
 
-![Painotetun keskiarvon päivämäärän suora selvitys ilman Sisällytä fyysinen arvo -asetusta](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Painotetun keskiarvon päivämäärän suora selvitys ilman Sisällytä fyysinen arvo -asetusta.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Kuvan selitys:**
 
@@ -128,7 +126,7 @@ Järjestelmä luo ja kirjaa yhteenvetovarastosiirron tapahtuman. Lisäksi järje
 
 Seuraava kaavio kuvaa painotetun keskiarvon varastomallin ja yhteenvetotäsmäytyksen vaikutusta tähän tapahtumien sarjaan, kun **Sisällytä fyysinen arvo** -vaihtoehtoa ei käytetä. 
 
-![Painotetun keskiarvon päivämäärän yhteenvetoselvitys ilman Sisällytä fyysinen arvo -asetusta](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Painotetun keskiarvon päivämäärän yhteenvetoselvitys ilman Sisällytä fyysinen arvo -asetusta.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Kuvan selitys:**
 
@@ -177,7 +175,7 @@ Voit merkitä varastostaottotapahtuman vastaanottoon kirjauksen jälkeen. Voit t
 
 Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kaaviossa havainnollistetaan painotetun keskiarvon päivämäärän varastomallin ja merkinnän käyttämisen vaikutus tähän tapahtumien sarjaan.
 
-![Painotetun keskiarvon päivämäärä käyttäen merkintää](./media/weightedaveragedatewithmarking.gif) 
+![Painotetun keskiarvon päivämäärä käyttäen merkintää.](./media/weightedaveragedatewithmarking.gif) 
 
 **Kuvan selitys:**
 
@@ -195,3 +193,6 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

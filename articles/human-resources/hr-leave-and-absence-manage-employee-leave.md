@@ -2,15 +2,12 @@
 title: Työntekijän loman hallinta
 description: Hallinnoi työntekijän lomia Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-manager: tfehr
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: 6a0f3aaa35abc0b1818ebcedded3fb9d18d1ecf7f3a26a9aa75477b53d2eacdc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4418416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772685"
 ---
 # <a name="manage-employee-leave"></a>Työntekijän loman hallinta
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Voit hallita työntekijän lomaa lomatyypin mukaan. Tämä koskee vanhentuvia lomailmoituksia ja lomatyypin saldojen säätämistä. 
 
@@ -45,14 +44,16 @@ Voit hallita työntekijän lomaa lomatyypin mukaan. Tämä koskee vanhentuvia lo
 
 Voit sisällyttää syykoodin ja kommentin, kun säädät työntekijän lomasaldoa. 
 
->[!IMPORTANT]
->Lomasaldojen lisätietojen tarkasteleminen esikatselussa. Se on otettava käyttöön **eristysympäristössä**. Lisätietoja esiversio-ominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br>
->Kun mikä tahansa lomasaldo valitaan osoittamalla, näkyvissä ovat nyt seuraavat tiedot:<br>
->- **Saatavilla**: Yhteensä tänä vuonna - Otto tänä vuonna
->- **Yhteensä tänä vuonna**: Kaikki tämän vuoden kertymät, oikaisut ja siirtokirjaukset
->- **Otetut tänä vuonna**: Hyväksytyt poissaolot yhteensä
+Kun siirrät hiiren minkä tahansa lomasaldon päälle, seuraavat tiedot näytetään:
+
+- **Saatavilla** – **Tämän vuoden kokonaisarvo** vähennettynä **Käytetty tänä vuonna** -arvolla.
+- **Tämän vuoden kokonaisarvo** – Kaikki tämän vuoden kertymät, oikaisut ja siirtokirjaukset.
+- **Käytetty tänä vuonna** – Hyväksytyt poissaolot yhteensä
 
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

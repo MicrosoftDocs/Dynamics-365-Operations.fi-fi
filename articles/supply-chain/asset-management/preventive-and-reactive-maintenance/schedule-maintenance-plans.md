@@ -1,12 +1,10 @@
 ---
 title: Ajoita ylläpitosuunnitelmat
 description: Tässä ohjeaiheessa kerrotaan ylläpitosuunnitelmien ajoittamisesta resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c215417eacb8a0e1ec0a8324fe35fc053089afb
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bd5192f727c83c017148405fb1b3ee587c118542450d46b5822d86cd1676d8fd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731316"
 ---
 # <a name="schedule-maintenance-plans"></a>Ajoita ylläpitosuunnitelmat
 
@@ -54,14 +52,14 @@ Ennaltaehkäisevän kunnossapidon ajoituksessa luodaan käyttöomaisuuksien kale
 
 5. Aloita käyttöomaisuuksien ylläpitoaikataulumerkintöjen luominen valitsemalla **OK**. Luodut merkinnät näkyvät **Kaikki ylläpitoaikataulut** -luettelosivulla. Seuraavassa kuvassa on esimerkki **Ajoita ylläpitosuunnitelmat** -valintaikkunasta.
 
-![Kuva 1](media/09-preventive-maintenance.png)
+![Kuva 1.](media/09-preventive-maintenance.png)
 
 - **Ajoita ylläpitosuunnitelmat** -valintaikkunassa voit määrittää erätyöt **Suorita taustalla** -pikavälilehdessä, jolloin kalenterimerkinnät luodaan automaattisesti säännöllisin väliajoin.  
 - Kun ajoitat ennaltaehkäisevän huollon, ylläpitoaikataulurivejä, joiden alkamispäivämäärä ja -aika ovat aikaisempia kuin järjestelmän päivämäärä ja kellonaika, ei luoda.  
 
 Alla olevassa kuvassa on graafinen esimerkki aikapohjaisesta ylläpitosuunnitelman laskennasta.  
 
-![Kuva 2](media/10-preventive-maintenance.jpg)
+![Kuva 2.](media/10-preventive-maintenance.jpg)
 
 Laskuripohjaisiin ylläpitosuunnitelmiin liittyen: Alla olevissa kuvissa näytetään kaksi eri laskurin rekisteröinnin jaksoa. Ne perustuvat ylläpitosuunnitelmaan, joka on määritetty käyttöomaisuuserälle "V0001", ja odottaa, että käyttöomaisuuserää (autoa) ajetaan noin 2 000 km joka kuukausi.
 
@@ -71,7 +69,10 @@ Seuraavassa kuvassa 2 000 km tai enemmän kirjataan kuukausittain. Tämän vuoks
 
 Tässä kuvatut esimerkit osoittavat, että kaikki käyttöomaisuuserään tehdyt laskurikirjaukset näyttävät trendin, joka kuvaa käyttöomaisuuserän kulumista. Tätä trendiä käytetään laskuperusteena ylläpitosuunnitelman ajoituksen aikana.
 
-![Kuva 3](media/11-preventive-maintenance.png)
+![Kuva 3.](media/11-preventive-maintenance.png)
 
-![Kuva 4](media/12-preventive-maintenance.png)
+![Kuva 4.](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

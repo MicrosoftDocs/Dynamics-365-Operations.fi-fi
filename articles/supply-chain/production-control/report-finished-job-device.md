@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 19c4e3c6ad682f3814d334f88c0653c4e7a51d23
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102807"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569284"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ilmoita valmiiksi työkorttilaitteesta
 
@@ -218,9 +218,9 @@ Lisävarastoprosessit voivat käyttää käyttöoikeuskilpi-dimensiota tähän t
 
 Tässä osassa kuvattujen toimintojen käyttäminen edellyttää, että otat seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla (tässä järjestyksessä):
 
-1. *Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen*<br>(Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on pakollinen.)
-1. *Ota käyttöön rekisterikilven numeron automaattinen luonti, kun työkorttilaitteessa raportoidaan valmiiksi*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on pakollinen.)
-1. *Tulosta etiketti työkorttilaitteesta*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on pakollinen.)
+1. Rekisterikilpi valmiiksi raportointia varten on lisätty työkorttilaitteeseen
+1. Ota käyttöön rekisterikilven numeron automaattinen luonti, kun työkorttilaitteessa raportoidaan valmiiksi
+1. Tulosta etiketti työkorttilaitteesta
 
 ### <a name="set-up-reporting-as-finished-to-a-license-plate"></a>Aseta raportointi valmistuneeksi rekisterikilpeen
 

@@ -2,11 +2,9 @@
 title: LIFO-päivämäärä, fyysinen arvo ja merkintä
 description: LIFO-päivämäärä on varastomalli, joka perustuu LIFO-periaatteeseen. Varasto-otot täsmäytetään viimeisiä varastovastaanottoja vasten varastotapahtuman päivämäärän perusteella. Jos LIFO-päivämäärä on määritetty eikä ennen ottoa ei ole vastaanottoa, otto täsmäytetään oton päivämäärän jälkeen tapahtuneiden vastaanottojen mukaan. Jos samana päivänä on useita ottoja, ne täsmäytetään järjestyksessä viimeinen otto, viimeinen vastaanotto.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967630"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821534"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-päivämäärä, fyysinen arvo ja merkintä
 
@@ -156,3 +154,6 @@ Seuraavassa on kuvattu LIFO-varastomallin vaikutusta, kun käytetään varastost
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

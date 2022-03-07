@@ -1,12 +1,10 @@
 ---
 title: ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3 – muodon luominen)
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin muodon määrittämisestä käyttämään tiedostonhallinnan tiedostoja ER-tuotoksissa. (Osa 3)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0cb052e2895cd0eb7f5c3bea9f33d988ef54dfb11e2e31c4212706b7fdaada79
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766382"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3 – muodon luominen)
 
@@ -119,3 +117,6 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 23. Valitse Tallenna.
 24. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

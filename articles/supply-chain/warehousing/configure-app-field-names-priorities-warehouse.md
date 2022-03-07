@@ -1,12 +1,10 @@
 ---
-title: Varastosovelluksen kenttien nimien määrittäminen
-description: Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa.
-author: MarkusFogelberg
-manager: tfehr
+title: Varastonhallinnan mobiilisovelluksen kenttien konfigurointi
+description: Tässä ohjeaiheessa kerrotaan, miten varastonhallinnan mobiilisovelluksessa näytettävien kenttien nimet ja prioriteetit määritetään.
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
@@ -15,24 +13,24 @@ ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ac31b3d2b3b1d9ca51919fe75e06f0de1cda0c63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963432"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902293"
 ---
-# <a name="configure-app-field-names-in-the-warehouse-app"></a>Varastosovelluksen kenttien nimien määrittäminen
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen kenttien konfigurointi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa. 
+Tässä ohjeaiheessa kerrotaan, miten varastonhallinnan mobiilisovelluksessa näytettävien kenttien nimet ja prioriteetit määritetään.
 
 > [!NOTE]
-> Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Varastointi on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä. Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää. Tässä ohjeaiheessa kerrotaan, miten nämä varastosovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään varastointisovelluksessa. Lisätietoja yhteyden määrittämisestä varastosovellukseen on oppaassa [Varastosovelluksen asennuksen ja määrityksen yleiskatsaus](install-configure-warehousing-app.md).
+> Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Varastonhallinnan mobiilisovellus on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä. Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää. Tässä ohjeaiheessa kerrotaan, miten nämä varastonhallinnan mobiilisovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään varastointisovelluksessa.
 
 ## <a name="configure-warehouse-app-field-names"></a>Warehousing-sovelluksen kenttien nimien määrittäminen
 
@@ -52,7 +50,7 @@ Jos käytät varastointisovellusta mobiililaitteessa, voit määrittää **Varas
 <tbody>
 <tr class="odd">
 <td>Ensisijainen syöttömenetelmä</td>
-<td>Tämä vaihtoehto määrittää, näytetäänkö skannauskenttä vai manuaalinen syöttökenttä valitulle kentän nimelle. Tämä on tarpeen sen erottamiseksi, jos viivakoodeja käytetään tälle kentälle. <strong>Huomautus:</strong> Niille kenttien nimille, joiden ensisijainen syöttötila on <strong>Skannaus</strong>, voit syöttää tiedot manuaalisesti jos viivakoodi on vioittunut tai lukukelvoton.</td>
+<td>Tämä vaihtoehto määrittää, näytetäänkö skannauskenttä vai manuaalinen syöttökenttä valitulle kentän nimelle. Kenttien erottaminen sen perusteella, käytetäänkö viivakoodeja kentässä, on hyödyllistä. <strong>Huomautus:</strong> Niille kenttien nimille, joiden ensisijainen syöttötila on <strong>Skannaus</strong>, voidaan antaa tiedot manuaalisesti jos viivakoodi on vioittunut tai lukukelvoton.</td>
 </tr>
 <tr class="even">
 <td>Syötetyyppi</td>
@@ -139,7 +137,9 @@ Yllä olevassa taulukossa määritettyjen varastosovelluksen kenttäprioriteetti
 
 Jäljellä olevat metatiedot, esimerkiksi sijainti, ei näy tehtäväsivulla, mutta kylläkin tietosivulla. Lisätietoja ja esimerkkejä käyttöliittymästä saat blogikirjoituksesta [Finance and Operationsin varastointisovelluksen julkaisu](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
-[Varastosovelluksen asentamisen ja määrittämisen yleiskatsaus](install-configure-warehousing-app.md)
+[Varastonhallinnan mobiilisovelluksen asentaminen ja yhteyden muodostaminen](../warehousing/install-configure-warehouse-management-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

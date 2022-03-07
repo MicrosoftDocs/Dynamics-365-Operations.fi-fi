@@ -2,26 +2,23 @@
 title: Käyttöomaisuuserien luominen ja hankkiminen ostoreskontrasta
 description: Tässä tehtävän ohjauksessa esitellään käyttöomaisuuden luominen ja hankinta ostoprosessissa.
 author: saraschi2
-manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cb9a37c65fb8eab4db6084b91a71c13a45ba42c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e3342c5e667ad3c8f3638afdcd9f3c15a815777
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442800"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823953"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Käyttöomaisuuserien luominen ja hankkiminen ostoreskontrasta
 
@@ -56,3 +53,6 @@ Tässä tehtävän ohjauksessa esitellään käyttöomaisuuden luominen ja hanki
 17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 18. Valitse **Kirjaa**. Käyttöomaisuus luodaan ja hankitaan, kun lasku on kirjattu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset
 description: Tässä aiheessa on vastauksia Microsoft Dynamics 365 Commercen arviointiympäristön usein kysyttyihin kysymyksiin.
 author: v-chgri
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e42618a522f5ad551f608605300c30b5ffb8e299
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411869"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795928"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset
 
@@ -71,3 +68,6 @@ Aikarajan pidennys on poikkeus, jota harkitaan tapauskohtaisesti. Ota tässä ta
 [BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä](cpe-bopis.md)
 
 [Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

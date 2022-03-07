@@ -2,11 +2,9 @@
 title: Laajennettujen takuiden luominen ja määrittäminen
 description: Tässä ohjeaiheessa on tietoja laajennetuista takuista sekä niiden luomisesta ja määrittämisestä Microsoft Dynamics 365 Commercessa.
 author: sijoshi
-manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745377"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Laajennettujen takuiden luominen ja määrittäminen
 
@@ -83,7 +81,7 @@ Takuunimike luodaan Commercessa seuraavasti:
 
     Esimerkiksi kahden vuoden takuussa **Ajan yksikkö** -kentän arvoksi määritetään **Vuotta** ja **Kesto**-kentän arvoksi **2**. Vaihtoehtoisesti **Ajan yksikkö** -kentän arvoksi voi määrittää **Kuukautta** ja **Kesto**-kentän arvoksi **24**, kuten seuraavassa kuvassa.
 
-    ![Takuunimikkeen Tuotteen tiedot -sivu](./media/ew-time-properties.png)
+    ![Takuunimikkeen Tuotteen tiedot -sivu.](./media/ew-time-properties.png)
 
 1. Tallenna takuunimike valitsemalla **Tallenna**.
 1. Vapauta takuutuote yritykseen, jotta sitä voidaan myydä. Lisätietoja on kohdassa [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md).
@@ -96,7 +94,7 @@ Takuunimike luodaan Commercessa seuraavasti:
 
     Seuraavassa kuvassa on esimerkiksi **Perushinta-alue**-kenttä, jossa on valittu **Perushinta** ja jossa **Alaraja** -kentän arvona 500 $ ja **Yläraja**-kentän arvona 1 000 $.
     
-    ![Takuunimikkeen Vapautetun tuotteen tiedot -sivu](./media/ew-release-product-details.png)
+    ![Takuunimikkeen Vapautetun tuotteen tiedot -sivu.](./media/ew-release-product-details.png)
 
 1. Lisää takuunimike sen kanavan valikoimaan, jossa sitä myydään. Lisätietoja on kohdassa [Valikoimien määrittäminen](set-up-assortments.md).
 
@@ -163,11 +161,11 @@ Myyjät voivat käyttää kahta myyntipistetoimintoa takuunimikkeiden myyntiin a
 
 Seuraavassa kuvassa on esimerkki kassapäätesivusta, jossa on kehote lisätä takuunimike nykyiseen takuunalaisen nimikkeen ostoon.
 
-![Esimerkki kehotteesta lisätä takuunimike nykyiseen ostoon](./media/ew-sell-warranty.png)
+![Esimerkki kehotteesta lisätä takuunimike nykyiseen ostoon.](./media/ew-sell-warranty.png)
 
 Seuraavassa kuvassa on esimerkki toiminnosta, jolla lisätään takuunimike aiemmin myytyyn takuunalaiseen nimikkeeseen.
 
-![Esimerkki toiminnosta, jolla lisätään takuunimike aiemmin myytyyn takuunalaiseen nimikkeeseen](./media/ew-add-warranty-existing.png)
+![Esimerkki toiminnosta, jolla lisätään takuunimike aiemmin myytyyn takuunalaiseen nimikkeeseen.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Käsittele takuutapahtumat
 
@@ -238,3 +236,6 @@ Takuu on palvelu, joka koskee tiettyä yksilöityä tuotetta. Dynamics 365:n tuo
 [Valikoimien määrittäminen](set-up-assortments.md)
 
 [Numerosarjojen yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

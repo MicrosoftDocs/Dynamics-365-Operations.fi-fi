@@ -1,26 +1,23 @@
 ---
 title: Toimintojen hallinta
-description: Tässä ohjeaiheessa selitetään Dynamics 365 Commercein valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja.
+description: Tässä ohjeaiheessa selitetään Dynamics 365 Commercen valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja.
 author: jblucher
-manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411897"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717768"
 ---
 # <a name="assortment-management"></a>Valikoiman hallinta
 
@@ -28,7 +25,7 @@ ms.locfileid: "4411897"
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Dynamics 365 Commerceissa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.
+Dynamics 365 Commercessa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.
 
 Commercessa valikoimaan yhdistetään vähintään yksi kanava (tai kanavaryhmä organisaatiohierarkioita käytettäessä) vähintään yhteen tuotteeseen (tai tuoteryhmiään luokkahierarkioita käytettäessä).
 
@@ -38,27 +35,27 @@ Kanavan kokonaistuoteyhdistelmä määritetään kanavaan määritettyjen julkai
 
 Seuraavassa esimerkissä kullekin myymälälle on määritetty yksilöllinen valikoima. Tässä tapauksessa vain tuote 1 on saatavana myymälässä 1 ja vain tuote 2 on saatavana myymälässä 2.
 
-![Kukin tuote on saatavana yhdessä myymälässä](./media/Managing-assortments-figure1.png)
+![Kukin tuote on saatavana yhdessä myymälässä.](./media/Managing-assortments-figure1.png)
 
 Jos haluat, että tuote 2 on saatavan myymälässä 1, voit lisätä tuotteen valikoimaan 1.
 
-![Tuote 2 lisätty valikoimaan 1](./media/Managing-assortments-figure2.png)
+![Tuote 2 lisätty valikoimaan 1.](./media/Managing-assortments-figure2.png)
 
 Vaihtoehtoisesti voit lisätä myymälän 1 valikoimaan 2.
 
-![Myymälä 1 lisätty valikoimaan 2](./media/Managing-assortments-figure3.png)
+![Myymälä 1 lisätty valikoimaan 2.](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisaatiohierarkiat
 
 Tilanteissa, joissa useat kanavat jakavat samat tuotevalikoimat, valikoimat voidaan määrittää käyttämällä Commercen valikoiman organisaatiohierarkiaa. Kun tämän hierarkian solmuja lisätään, kaikki kyseisen solmun ja sen alisolmujen kanavat lisätään.
 
-![Organisaatiohierarkia](./media/Managing-assortments-figure4.png)
+![Organisaatiohierarkia.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Tuoteluokat
 
 Tuotepuolella voi vastaavasti sisällyttää tuoteryhmiä tuoteluokkahierarkioiden avulla. Voit määrittää valikoimia sisällyttämällä vähintään yhden luokkahierarkian solmuja. Siinä tapauksessa valikoima sisältää kaikki kyseisen luokkasolmun ja sen alisolmujen tuotteet.
 
-![Tuoteluokat](./media/Managing-assortments-figure5.png)
+![Tuoteluokat.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Poissuljetut tuotteet tai luokat
 
@@ -67,7 +64,7 @@ Valikoimiin sisällytettävien tuotteiden ja luokkien lisäksi voit määrittä�
 > [!NOTE]
 > Jos tuote on vähintään yhdessä valikoimassa sekä sisällytetty että poissuljettu, tuotetta pidetään aina poissuljettuna.
 
-![Pois suljettu tuote](./media/Managing-assortments-figure6.png)
+![Poissuljettu tuote.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Yleiset ja vapautetut tuotteet
 
@@ -107,3 +104,6 @@ Seuraavat käyttöönottovaatimukset kannattaa ottaa huomioon, kun suunnittelet 
 - **Valikoimien ulkopuolinen myynti ja palautukset** – Tämä toiminto auttaa jälleenmyyjiä hallitsemaan valikoimiaan tehokkaasti, sillä he voivat rajoittaa saatavana olevien tuotteiden määrän tuotteisiin, jotka sisältyvät myymälän ydintuoteyhdistelmään. Tämä toiminto auttaa jälleenmyyjiä käsittelemään myös tilanteita, joissa tuote jätettiin vahingossa pois valikoimasta tai joissa tuote palautettiin valikoiman voimassaoloajankohdan ulkopuolella.
 
 Jos tuotetiedot eivät ole kanavatietokannassa, myyntipiste soittaa reaaliaikaisesti pääkonttoriin ja noutaa tarvittavat tiedot, jotta tuote voidaan myydä, palauttaa tai siirtää asiakastilaukseen. Tällä tavoin noudetut tuotetiedot ovat käytettävissä vain kyseisen tapahtuman aikana. Tuotetta ei lisätä valikoiman määritykseen. Niinpä jatkossa tehdään tarpeen mukaan reaaliaikaisia soittoja.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

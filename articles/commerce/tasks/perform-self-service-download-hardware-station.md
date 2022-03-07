@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4ad389a18d2b6d79ef9fb25da810323927e5f04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 26e425973653240870a53c469385543549feb347
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412008"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223130"
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a>Lataa laiteasemaan itsepalvelutoiminnon avulla
 
@@ -37,3 +36,6 @@ Tässä menettelyssä kerrotaan, miten ennalta määritetty laiteasema ladataan.
 5. Etsi haluamasi tietue luettelosta ja valitse se.
 6. Valitse Lataa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,26 @@
 title: Liukuva keskiarvo, varalla oleva kustannusjärjestys
 description: Tässä ohjeaiheessa on tietoja varakustannusjaksoista keskimääräisten muuttuvien laskelmien tekemiseksi Microsoft Dynamics 365 Supply Chain Managementissa.
 author: AndersGirke
-manager: tfehr
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 541b7ecca5c1c36999f573d6d0f2dc0c9e901631
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: d91b3b4b8d49e59aa03d62f4dd101b5a1ec18c41
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967580"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568204"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Liukuva keskiarvo, varalla oleva kustannusjärjestys
+
+[!include [banner](../includes/banner.md)]
 
 Yksi tapa, jolla voit laskea varastosi kustannuksen, on _liukuva keskiarvo_. Kuhunkin varastonimikkeeseen voidaan liittää enintään kolme kustannusarvoa:
 
@@ -44,4 +44,7 @@ Voit valita liukuvan keskiarvolaskennan varauksen kustannusjärjestyksen noudatt
     - **Aktiivinen kustannus – viimeisin varasto-otto**
     - **Aktiivinen kustannus – nimike hinta** – Organisaatioissa saattaa ilmetä suorituskykyongelmia, jos ne käyttävät liiketoimintaprosesseja, joissa varasto säännöllisesti muuttuu negatiiviseksi ja samaan aikaan transaktion määrä on suuri. Tämän asetuksen avulla voit lieventää suorituskykyongelmia.
 
-![Varastokirjanpitoparametrit](media/inventory-accounting-parameters.png "Varastokirjanpitoparametrit")
+![Varastokirjanpitoparametrit.](media/inventory-accounting-parameters.png "Varastokirjanpitoparametrit")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

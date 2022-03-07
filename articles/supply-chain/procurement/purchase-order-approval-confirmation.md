@@ -1,12 +1,10 @@
 ---
 title: Ostotilausten hyväksyminen ja vahvistaminen
 description: Tässä ohjeaiheessa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eafce0be07ae21e5bc2db2cf5bb694a9d71a6269
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7ae625950e62b2bf5ec092ccda414ee306c62d79
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018442"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570534"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
 
@@ -85,8 +83,7 @@ Jos haluat peruuttaa ostotilausrivin koko määrän, sinun on peruutettava rivin
 
 Jos ostotilaus on muutostenhallinnan piirissä, mikä tahansa muutos, kuten tilauksen tai jäljellä olevan toimituksen peruutus, on ilmoitettava työnkulkujärjestelmälle ja hyväksyttävä, ennen kuin prosessi voidaan suorittaa loppuun ja varastotapahtumien tilaksi päivittää peruutettu.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
@@ -98,3 +95,6 @@ Jos ostotilaus on muutostenhallinnan piirissä, mikä tahansa muutos, kuten tila
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

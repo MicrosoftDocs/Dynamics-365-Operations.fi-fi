@@ -2,16 +2,13 @@
 title: Ajoitusmoduulin suorituskyvyn parantaminen
 description: Tässä ohjeaiheessa on tietoja ajoitusmoduulista ja sen suorituskyvyn parantamisesta.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: d1378ae652ea70cba941316f4667052dcb05f717
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427386"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812904"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Ajoitusmoduulin suorituskyvyn parantaminen
 
@@ -329,3 +326,6 @@ Ajoitusmoduulin suorituskyky voidaan optimoida käyttämällä **Ajoitusparametr
 
 > [!NOTE]
 > Aikakatkaisuille määritettyjä arvoja voidaan käyttää sekä vapautettujen tuotantotilausten aikatauluttamiseen että suunniteltujen tilausten aikatauluttamiseen tarvesuunnittelun osana. Jos asetuksella on erittäin suuri arvo, tarvesuunnittelun suoritusaika voi tämän vuoksi pidentyä merkittävästi, kun suoritetaan suunnitelma, jossa on monia suunniteltuja tuotantotilauksia:
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

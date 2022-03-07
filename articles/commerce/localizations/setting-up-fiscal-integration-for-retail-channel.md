@@ -2,11 +2,9 @@
 title: Kaupan kirjanpidon integroinnin määrittäminen
 description: Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen.
 author: josaw
-manager: annbe
-ms.date: 02/01/2019
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,28 +14,26 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 38ad2cc3dc7e511ac6e2ac9484d10ebd2d1d425d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017890"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343310"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Kaupan kirjanpidon integroinnin määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Johdanto
-
 Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen. Lisätietoja kirjanpidon integroinnista on kohdassa [Commerce-kanavan kirjanpidon integroinnin yleiskatsaus](fiscal-integration-for-retail-channel.md).
 
 Kirjanpidon integroinnin määritysprosessi sisältää seuraavat tehtävät:
 
-1. Määritä ne kirjanpidon yhdistimet, jotka edustavat kirjanpidon rekisteröinnissä käytettäviä kirjanpidon laitteita tai palveluja, kuten kuittitulostimia.
-2. Määritä tiedostopalvelut, jotka muodostavat kirjanpidon yhdistimien kirjanpidon laitteissa tai palveluissa rekisteröitävät kirjanpitoasiakirjat.
-3. Määritä kirjanpidon rekisteröintiprosessi, joka määrittää kirjanpidon rekisteröintivaiheiden järjestyksen sekä kussakin vaiheessa käytettävät kirjanpidon yhdistimet ja kirjanpitoasiakirjojen toimittajat.
-4. Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintaprofiileihin.
-5. Määritä yhdistimen tekniset profiilit laiteprofiileihin.
+- Määritä ne kirjanpidon yhdistimet, jotka edustavat kirjanpidon rekisteröinnissä käytettäviä kirjanpidon laitteita tai palveluja, kuten kuittitulostimia.
+- Määritä tiedostopalvelut, jotka muodostavat kirjanpidon yhdistimien kirjanpidon laitteissa tai palveluissa rekisteröitävät kirjanpitoasiakirjat.
+- Määritä kirjanpidon rekisteröintiprosessi, joka määrittää kirjanpidon rekisteröintivaiheiden järjestyksen sekä kussakin vaiheessa käytettävät kirjanpidon yhdistimet ja kirjanpitoasiakirjojen toimittajat.
+- Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintaprofiileihin.
+- Määritä yhdistimen tekniset profiilit laiteprofiileihin.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Kirjanpidon rekisteröintiprosessin määrittäminen
 
@@ -51,44 +47,44 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
         - Kirjanpidon yhdistinryhmän numero
         - Rekisteröintiprosessin numero
 
-    2. Määritä kirjanpidon toimintaprofiilinumeron numerosarja **Commercen parametrit** -sivulla.
+    1. Määritä kirjanpidon toimintaprofiilinumeron numerosarja **Commercen parametrit** -sivulla.
 
     > [!NOTE]
     > Numerosarjat ovat valinnaisia. Kaikki kirjanpidon integrointiyksiköt voidaan luoda joko numerosarjoista tai manuaalisesti.
 
-2. Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritykset.
+1. Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritykset.
 
     Kirjanpitoasiakirjan toimittaja vastaa niiden kirjanpitoasiakirjojen luomisesta, jotka vastaavat myyntipisteessä rekisteröityjä transaktioita ja -tapahtumia. Rekisteröinnissä käytetään samaa muotoa, jota käytetään myös kirjanpidon laitetta tai palvelua käytettäessä. Kirjanpitoasiakirjan toimittaja voi esimerkiksi luoda verokuitin XML-muodossa.
 
     Kirjanpidon yhdistin vastaa kirjanpidon laitteen tai palvelun kanssa tapahtuvasta tietoliikenteestä. Kirjanpidon yhdistin voi esimerkiksi lähettää kirjanpitoasiakirjan toimittajan XML-muodossa luoman verokuitin kuittitulostimeen. Lisätietoja kirjanpidon integroinnin osista on kohdassa [Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-    1. Lataa **Kirjanpidon yhdistimet** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistimet**) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää kirjanpidon integroinnissa.
+    1. Lataa **Kirjanpidon yhdistimet** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistimet**) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää kirjanpidon integroinnissa.
 
         > [!TIP]
         > Valitsemalla **Näytä** voit tarkastella kaikkia nykyisiin kirjanpidon yhdistimeen liittyviä toimintaprofiileja ja teknisiä profiileja.
 
-    2. Lataa **Kirjanpitoasiakirjan toimittajat** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpitoasiakirjan toimittajat**) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää.
+    1. Lataa **Kirjanpitoasiakirjan toimittajat** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpitoasiakirjan toimittajat**) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää.
 
         > [!TIP]
         > Valitsemalla **Näytä** voit tarkastella kaikkia nykyiseen kirjanpitoasiakirjan toimittajaan liittyviä toimintaprofiileja.
 
-    Esimerkkejä kirjanpidon yhdistimien ja kirjanpitoasiakirjojen toimittajien määrityksistä on kohdassa [Retail SDK:n kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).
+    Esimerkkejä kirjanpidon yhdistimien ja kirjanpitoasiakirjojen toimittajien määrityksistä on kohdassa [Commerce SDK:n kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
 
     > [!NOTE]
     > Tietojen yhdistämisen katsotaan olevan osa kirjainpitoasiakirjan toimittajaa. Jos haluat määrittää samalle yhdistimelle erilaisia tietojen yhdistämisiä (kuten osavaltiokohtaisia säädöksiä), sinun on luotava erillisiä kirjainpitoasiakirjan toimittajia.
 
-3. Luo yhdistimen toiminnalliset ja tekniset profiilit.
+1. Luo yhdistimen toiminnalliset ja tekniset profiilit.
 
-    1. Luo **Yhdistimen toiminnalliset profiilit** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Yhdistimen toiminnalliset profiilit**) yhdistimen toiminnallinen profiili jokaiselle kirjanpidon yhdistimen ja siihen liittyvän kirjanpitoasiakirjan toimittajan yhdistelmälle.
+    1. Luo **Yhdistimen toiminnalliset profiilit** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Yhdistimen toiminnalliset profiilit**) yhdistimen toiminnallinen profiili jokaiselle kirjanpidon yhdistimen ja siihen liittyvän kirjanpitoasiakirjan toimittajan yhdistelmälle.
 
         1. Valitse yhdistimen nimi.
-        2. Valitse asiakirjan toimittaja.
+        1. Valitse asiakirjan toimittaja.
 
         Voit muuttaa tietojen yhdistämisparametreja yhdistimen toiminnallisessa profiilissa. Voit palauttaa kirjanpitoasiakirjan toimittajan määrityksessä määritetyt oletusparametrit valitsemalla **Päivitys**.
 
         **Esimerkkejä**
 
-        |   | Muoto | Esimerkki |
+        | Parametri  | Muoto | Esimerkki |
         |---|--------|---------|
         | **ALV-prosenttiasetukset** | arvo: VATrate | 1 : 2000, 2 : 1800 |
         | **ALV-koodien yhdistäminen** | VATcode : arvo | vat20 : 1, vat18 : 2 |
@@ -97,39 +93,39 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
         > [!NOTE]
         > Yhdistimen toiminnalliset profiilit ovat yrityskohtaisia. Jos aiot käyttää samaa kirjanpidon yhdistimen ja kirjanpitoasiakirjan toimittajan yhdistelmää eri yrityksissä, kullekin yritykselle on luotava yhdistimen toiminnallinen profiili.
 
-    2. Luo kunkin kirjanpidon yhdistimen toiminnallinen profiili **Yhdistimen tekniset profiilit** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \>Yhdistimen tekniset profiilit**).
+    1. Luo kunkin kirjanpidon yhdistimen toiminnallinen profiili **Yhdistimen tekniset profiilit** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \>Yhdistimen tekniset profiilit**).
 
         1. Valitse yhdistimen nimi.
-        2. Valitse yhdistimen tyyppi. Valitse laiteasemaan liitetyissä laitteissa **Paikallinen**.
+        1. Valitse yhdistimen tyyppi. Valitse laiteasemaan liitetyissä laitteissa **Paikallinen**.
 
             > [!NOTE]
             > Vain paikallisia yhdistimiä tuetaan.
 
         Yhdistimen teknisen profiilin **Laite**- ja **Asetukset**-välilehtien parametreja voi muuttaa. Voit palauttaa kirjanpidon yhdistimen määrityksessä määritetyt oletusparametrit valitsemalla **Päivitys**. Kun XML-määrityksen uutta versiota ladataan, saat ilmoituksen, jonka mukaan nykyistä kirjanpidon yhdistintä tai kirjanpitoasiakirjan toimittaja on jo käytössä. Tämä menettely ei ohita yhdistimen toiminnallisiin tai teknisiin profiileihin aiemmin tehtyjä manuaalisia muutoksia. Voit käyttää uuden määrityksen oletusparametrijoukkoa valitsemalla **Päivitä** **Yhdistimen toiminnalliset profiilit**- tai **Yhdistimen tekniset profiilit** -sivulla.
 
-4. Luo kirjanpidon yhdistinryhmiä.
+1. Luo kirjanpidon yhdistinryhmiä.
 
     Kirjanpidon yhdistinryhmä yhdistää ne kirjanpidon yhdistimien toiminnalliset profiilit, jotka suorittavat samoja toimintoja ja joita käytetään samassa kirjanpidon rekisteröintiprosessin vaiheessa. Jos esimerkiksi myymälässä käytetään useita kuittitulostinmalleja, kyseisten kuittitulostimien kirjanpidon yhdistimet voidaan yhdistää kirjanpidon yhdistinryhmäksi.
 
-    1. Luo uusi kirjanpidon yhdistinryhmä **Kirjanpidon yhdistinryhmä** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmä**).
-    2. Lisää toiminnalliset profiilit yhdistinryhmään. Valitse ensin **Toiminnalliset profiilit** -sivulla **Lisää** ja valitse sitten profiilin numero. Kullakin yhdistinryhmän kirjanpidon yhdistimellä voi olla vain yksi toiminnallinen profiili.
-    3. Voit keskeyttää toiminnallisen profiilin käytön valitsemalla **Poista käytöstä** -asetukseksi **Kyllä**. Muutos koskee vain nykyistä yhdistinryhmää. Voit jatkaa saman toiminnallisen profiilin käyttöä muissa yhdistinryhmissä.
+    1. Luo uusi kirjanpidon yhdistinryhmä **Kirjanpidon yhdistinryhmä** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmä**).
+    1. Lisää toiminnalliset profiilit yhdistinryhmään. Valitse ensin **Toiminnalliset profiilit** -sivulla **Lisää** ja valitse sitten profiilin numero. Kullakin yhdistinryhmän kirjanpidon yhdistimellä voi olla vain yksi toiminnallinen profiili.
+    1. Voit keskeyttää toiminnallisen profiilin käytön valitsemalla **Poista käytöstä** -asetukseksi **Kyllä**. Muutos koskee vain nykyistä yhdistinryhmää. Voit jatkaa saman toiminnallisen profiilin käyttöä muissa yhdistinryhmissä.
 
-5. Luo kirjanpidon rekisteröintiprosessi.
+1. Luo kirjanpidon rekisteröintiprosessi.
 
     Rekisteröintivaiheiden järjestys ja kussakin vaiheessa käytetty yhdistinryhmä määrittävät kirjanpidon rekisteröintiprosessin.
 
-    1. Luo uusi tietue kirjanpidon rekisteröinnin kullekin yksilölliselle prosessille **Kirjanpidon rekisteröintiprosessi** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessi**).
-    2. Lisää rekisteröintivaiheet prosessiin:
+    1. Luo uusi tietue kirjanpidon rekisteröinnin kullekin yksilölliselle prosessille **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessi**).
+    1. Lisää rekisteröintivaiheet prosessiin:
 
         1. Valitse **Lisää**.
-        2. Valitse kirjanpidon yhdistimen tyyppi.
-        3. Valitse sopiva kirjanpidon yhdistinryhmä **Ryhmän numero** -kentässä.
+        1. Valitse kirjanpidon yhdistimen tyyppi.
+        1. Valitse sopiva kirjanpidon yhdistinryhmä **Ryhmän numero** -kentässä.
 
-6. Määritä kirjanpidon rekisteröintiprosessiyksiköt myyntipisteen profiileihin.
+1. Määritä kirjanpidon rekisteröintiprosessiyksiköt myyntipisteen profiileihin.
 
-    1. Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintoprofiiliin **Myyntipisteen toimintoprofiilit** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**). Valitse ensin **Muokkaa** ja sitten prosessi **Kirjanpidon rekisteröintiprosessi** -välilehden **Prosessin numero** -kentässä.
-    2. Määritä yhdistimen tekniset profiilit laiteprofiiliin **POS-laiteprofiili** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Laite profiilit**). Valitse **Muokkaa**, lisää rivit **Kirjanpidon oheislaitteet** -välilehdessä ja valitse sitten yhdistimen tekninen profiili **Profiilin numero** -kentässä.
+    1. Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintoprofiiliin **Myyntipisteen toimintoprofiilit** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**). Valitse ensin **Muokkaa** ja sitten prosessi **Kirjanpidon rekisteröintiprosessi** -välilehden **Prosessin numero** -kentässä.
+    1. Määritä yhdistimen tekniset profiilit laiteprofiiliin **POS-laiteprofiili** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Laite profiilit**). Valitse **Muokkaa**, lisää rivit **Kirjanpidon oheislaitteet** -välilehdessä ja valitse sitten yhdistimen tekninen profiili **Profiilin numero** -kentässä.
 
     > [!NOTE]
     > Voit lisätä useita teknisiä profiileja samaan laiteprofiiliin. Laiteprofiilia tai myyntipisteen toimintoprofiilia voi kuitenkin käyttää vain kerran samassa kirjanpidon yhdistinryhmässä.
@@ -141,7 +137,7 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
     - Kirjanpitoasiakirjan toimittaja käyttää kirjanpitoasiakirjan toimittajan määrityksen tietojen yhdistämisasetuksia transaktio- tai tapahtumatietojen, kuten verojen ja maksujen, muuntamiseen kirjanpitoasiakirjaa luotaessa.
     - Kun kirjanpitoasiakirjan toimittaja luo kirjanpitoasiakirjan, kirjanpidon yhdistin voi joko lähettää sen sellaisenaan kirjanpidon laitteeseen tai muuntaa sen sarjaksi laitteen ohjelmointirajapinnan komentoja. Valittu vaihtoehto perustuu siihen, miten tietoliikennettä käsitellään.
 
-7. Vahvista kirjanpidon rekisteröintiprosessi **Kirjanpidon rekisteröintiprosessi** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessit**) valitsemalla **Vahvista**.
+1. Vahvista kirjanpidon rekisteröintiprosessi **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessit**) valitsemalla **Vahvista**.
 
     Tämän tyyppinen vahvistus kannattaa tehdä seuraavissa tapauksissa:
 
@@ -149,20 +145,20 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
     - Aiemmin luodussa kirjanpidon rekisteröintiprosessissa tehtyjen muutosten jälkeen, kun kyseiset muutokset voivat aiheuttaa toisen kirjanpidon yhdistimen valinnan suorituksen aikana. (Näin voi tapahtua esimerkiksi silloin, kun kirjanpidon rekisteröintiprosessivaiheen yhdistinryhmä vaihdetaan, yhdistimen toiminnallinen profiili otetaan käyttöön yhdistinryhmässä tai yhdistimen uusi toiminnallinen profiili lisätään yhdistinryhmään.)
     - Yhdistimen teknisten profiilien laiteprofiileihin määrittämisessä tehtyjen muutosten jälkeen.
 
-8. Siirrä tiedot kanavatietokantaan suorittamalla **Jakeluaikataulu** -sivulla **1070**- ja **1090**-työt.
+1. Siirrä tiedot kanavatietokantaan suorittamalla **Jakeluaikataulu** -sivulla **1070**- ja **1090**-työt.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Alennusten kirjanpitotekstien määrittäminen
 
-Alennusta käytettäessä verokuittiin on joissakin tapauksissa tulostettava erityinen teksti. Voit määrittää alennusten kirjanpitotekstit **Kirjanpidon yhdistinryhmä** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmä**).
+Alennusta käytettäessä verokuittiin on joissakin tapauksissa tulostettava erityinen teksti. Voit määrittää alennusten kirjanpitotekstit **Kirjanpidon yhdistinryhmä** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmä**).
 
 - Jos kyse on manuaalisesti myyntipisteessä lisättävistä alennuksista, tietokoodin tai tietokoodiryhmän kirjanpitoteksti on määritettävä. Tämä tietokoodi määritetään myyntipisteen toimintaprofiilissa **Tuotealennus**-tietokoodina.
 
     1. Valitse **Kirjanpidon yhdistinryhmä** -sivulla **Verokuitin teksti**.
-    2. Valitse **Tietokoodit**-välilehdessä ensin **Lisää** ja sitten tietokoodi tai tietokoodiryhmä.
-    3. Valitse **Tietokoodin numero** -kohdassa arvo.
-    4. Valitse **Alikoodin numero** -kentässä arvo, jos valittu tietokoodi edellyttää alikoodia.
-    5. Määritä **Verokuitin teksti** -kentässä verokuittiin tulostettava kirjanpitoteksti.
-    6. Valitse **Tulosta käyttäjän syöte verokuittiin** -asetukseksi **Kyllä**, jolloin verokuitin teksti korvataan käyttäjän myyntipisteessä manuaalisesti antamilla tiedoilla. Tämä asetus koskee vain tietokoodeja, joiden syötetyyppi on **Teksti**.
+    1. Valitse **Tietokoodit**-välilehdessä ensin **Lisää** ja sitten tietokoodi tai tietokoodiryhmä.
+    1. Valitse arvo **Tietokoodin numero** -kentässä.
+    1. Valitse **Alikoodin numero** -kentässä arvo, jos valittu tietokoodi edellyttää alikoodia.
+    1. Määritä **Verokuitin teksti** -kentässä verokuittiin tulostettava kirjanpitoteksti.
+    1. Valitse **Tulosta käyttäjän syöte verokuittiin** -asetukseksi **Kyllä**, jolloin verokuitin teksti korvataan käyttäjän myyntipisteessä manuaalisesti antamilla tiedoilla. Tämä asetus koskee vain tietokoodeja, joiden syötetyyppi on **Teksti**.
 
     > [!NOTE]
     > Voit määrittää kirjanpitotekstin useisiin tietokoodeihin sellaisia skenaarioita varten, joissa käytetään tietokoodiryhmiä. linkitettyjä tietokoodeja ja käynnistettyjä tietokoodeja. Näissä skenaarioissa verokuitissa on kirjanpitotekstiä kaikista siihen tapahtumariviin linkitetyistä tietokoodeista, jossa alennusta käytettiin.
@@ -170,8 +166,8 @@ Alennusta käytettäessä verokuittiin on joissakin tapauksissa tulostettava eri
 - Kanavakohtaisissa alennuksissa alennustunnukselle on määritettävä kirjanpitoteksti.
 
     1. Valitse **Kirjanpidon yhdistinryhmä** -sivulla **Verokuitin teksti**.
-    2. Valitse **Alennukset**-välilehdessä ensin **Lisää** ja sitten alennustunnus.
-    3. Määritä **Verokuitin teksti** -kentässä verokuittiin tulostettava kirjanpitoteksti.
+    1. Valitse **Alennukset**-välilehdessä ensin **Lisää** ja sitten alennustunnus.
+    1. Määritä **Verokuitin teksti** -kentässä verokuittiin tulostettava kirjanpitoteksti.
 
     > [!NOTE]
     > Jos samalle tapahtumariville käytetään useita alennuksia, verokuitissa on kirjanpitotekstiä kaikista kyseiseen tapahtumariviin linkitetyistä alennuksista.
@@ -180,7 +176,7 @@ Alennusta käytettäessä verokuittiin on joissakin tapauksissa tulostettava eri
 
 Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset määritetään kirjanpidon rekisteröintiprosessissa. Lisätietoja virheen käsittelystä kirjanpidon integroinnissa on kohdassa [Virheen käsittely](fiscal-integration-for-retail-channel.md#error-handling).
 
-1. Voit määrittää seuraavat parametrit kirjanpidon rekisteröinnin kullekin vaiheelle **Kirjanpidon rekisteröintiprosessi** -sivulla (**Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessi**):
+1. Voit määrittää seuraavat parametrit kirjanpidon rekisteröinnin kullekin vaiheelle **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessi**):
 
     - **Salli ohitus** – tämä parametri ottaa **Ohita**-asetuksen käyttöön virheen käsittelyn valintaikkunassa.
     - **Salli rekisteröidyksi merkitseminen** – tämä parametri ottaa **Merkitse rekisteröidyksi** -asetuksen käyttöön virheen käsittelyn valintaikkunassa.
@@ -189,8 +185,8 @@ Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset m
     > [!NOTE]
     > Jos **Jatka virheen ilmetessä** -parametri on käytössä, **Salli Ohita**- ja **Salli Merkitse rekisteröidyksi** -parametrit ovat automaattisesti poissa käytöstä.
 
-2. Virheen käsittelyn valintaikkunan **Ohita**- ja **Merkitse rekisteröidyksi** -asetukset edellyttävät **Salli rekisteröinnin ohitus tai rekisteröidyksi merkitseminen** -käyttöoikeuden. Ota tämän vuoksi **Salli ohita rekisteröinti tai rekisteröidyksi merkitseminen** -käyttöoikeus käyttöön **Käyttöoikeusryhmät** -sivulla (**Retail ja Commerce \> Työntekijät \> Käyttöoikeusryhmät**).
-3. Käyttäjät voivat antaa **Ohita**- ja **Merkitse rekisteröidyksi** -asetuksilla lisätietoja siitä, milloin kirjanpidon rekisteröinti epäonnistuu. Voit ottaa tämän toiminnon käyttöön määrittämällä **Ohita**- ja **Merkitse rekisteröidyksi** -tietokoodit kirjanpidon yhdistinryhmässä. Käyttäjien antamat tiedot tallennetaan sitten kirjanpitotapahtumaan linkitettyjä tietokooditapahtumana. Lisätietoja tietokoodeista on kohdassa [Tietokoodit ja tietokoodiryhmät](../info-codes-retail.md).
+1. Virheen käsittelyn valintaikkunan **Ohita**- ja **Merkitse rekisteröidyksi** -asetukset edellyttävät **Salli rekisteröinnin ohitus tai rekisteröidyksi merkitseminen** -käyttöoikeuden. Ota tämän vuoksi **Salli ohita rekisteröinti tai rekisteröidyksi merkitseminen** -käyttöoikeus käyttöön **Käyttöoikeusryhmät** -sivulla (**Vähittäismyynti ja kauppa \> Työntekijät \> Käyttöoikeusryhmät**).
+1. Käyttäjät voivat antaa **Ohita**- ja **Merkitse rekisteröidyksi** -asetuksilla lisätietoja siitä, milloin kirjanpidon rekisteröinti epäonnistuu. Voit ottaa tämän toiminnon käyttöön määrittämällä **Ohita**- ja **Merkitse rekisteröidyksi** -tietokoodit kirjanpidon yhdistinryhmässä. Käyttäjien antamat tiedot tallennetaan sitten kirjanpitotapahtumaan linkitettyjä tietokooditapahtumana. Lisätietoja tietokoodeista on kohdassa [Tietokoodit ja tietokoodiryhmät](../info-codes-retail.md).
 
     > [!NOTE]
     > **Tuotteen** käynnistintoimintoa ei tueta tietokoodeissa, joita käytetään **Ohita**- ja **Merkitse rekisteröidyksi** -asetuksina kirjanpidon yhdistinryhmissä.
@@ -203,7 +199,7 @@ Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset m
     > - **Kirjanpitoasiakirja** – pakollinen asiakirja, jonka rekisteröitymisen on onnistuttava (esimerkiksi verokuitti).
     > - **Muu kuin kirjanpitoasiakirja** – transaktion tai tapahtuman täydentävä asiakirja (esimerkiksi lahjakortti).
 
-4. Jos operaattorin on voitava jatkaa nykyisen toiminnan käsittelyä (esimerkiksi tapahtuman luominen tai viimeistely) kuntotarkastuksen virheen jälkeen, sen on otettava käyttöön **Salli kuntotarkistuksen virheen ohitus** -käyttöoikeudet **Käyttöoikeusryhmät** -sivulla (**Retail ja Commerce \> työntekijät \> käyttöoikeusryhmät**). Saat lisätietoja kuntotarkastusmenettelystä kohdasta [Tilikausirekisteröinnin kuntotarkastus](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+1. Jos operaattorin on voitava jatkaa nykyisen toiminnan käsittelyä (esimerkiksi tapahtuman luominen tai viimeistely) kuntotarkastuksen virheen jälkeen, sen on otettava käyttöön **Salli kuntotarkistuksen virheen ohitus** -käyttöoikeudet **Käyttöoikeusryhmät** -sivulla (**Vähittäismyynti ja kauppa \> työntekijät \> käyttöoikeusryhmät**). Saat lisätietoja kuntotarkastusmenettelystä kohdasta [Tilikausirekisteröinnin kuntotarkastus](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Kirjanpidon X/Z-raporttien määrittäminen myyntipisteessä
 
@@ -212,9 +208,9 @@ Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että my
 - Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
 
     1. Valitse päivitettävä asettelu. 
-    2. Lisää uusi painike, määritä **Tulosta kuitti X** -painikeominaisuus.
-    3. Lisää uusi painike ja määritä **Tulosta kuitti Z** -painikeominaisuus.
-    4. Siirrä muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
+    1. Lisää uusi painike, määritä **Tulosta kuitti X** -painikeominaisuus.
+    1. Lisää uusi painike ja määritä **Tulosta kuitti Z** -painikeominaisuus.
+    1. Siirrä muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
 
 ## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö
 
@@ -223,5 +219,8 @@ Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käyt
 - Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
 
     1. Valitse päivitettävä asettelu.
-    2. Lisää uusi painike, määritä **Viimeistele tilikausirekisteröintiprosessi** -painikeominaisuus.
-    3. Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
+    1. Lisää uusi painike, määritä **Viimeistele tilikausirekisteröintiprosessi** -painikeominaisuus.
+    1. Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

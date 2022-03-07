@@ -2,28 +2,25 @@
 title: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
 description: 'Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa.'
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 49f724eb31904c7fd745864c9d71f401a4d539e29b5ff01814334adf6f0ebc37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4442935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771653"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Kirjanpidon ulkomaanvaluutan uudelleenarvostus
 
@@ -84,7 +81,7 @@ Päätili uudelleenarvostetaan 31.1.  Toteutumaton voitto/tappio lasketaan seura
 
 | Nykyinen saldo tapahtuman valuuttana | Nykyinen saldo kirjanpitovaluuttana | Vaihtokurssi uudelleenarvostuksessa | Uusi summa kirjanpitovaluuttana | Toteutumaton voitto/tappio    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 tappio (833,33-1000) |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 tappio (833,33-1000) |
 
 Seuraava kirjanpitomerkintä luodaan.
 
@@ -113,3 +110,6 @@ Ulkomaanvaluutan uudelleenarvostuksen tuloksia ei tarvitse palauttaa päivämä�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

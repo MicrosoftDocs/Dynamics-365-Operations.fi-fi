@@ -1,7 +1,7 @@
 ---
 title: Lähetyksen automaattinen vapautus cross-dockingia varten
 description: Tässä aiheessa kuvataan cross-docking-strategia, jolla voit automaattisesti vapauttaa kysyntätilauksen varastoon, kun kysyntämäärän toimittava tuotantotilaus ilmoitetaan suoritetuksi. Tällöin määrä siirretään suoraan tuotossijainnista lähtevien sijaintiin.
-author: Mirzaab
+author: omulvad
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577933"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831431"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Lähetyksen automaattinen vapautus cross-dockingia varten
 

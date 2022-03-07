@@ -2,26 +2,23 @@
 title: Määritä asiakkaan maksulisät
 description: Luo asiakkaan toimitusmaksut.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6475671002379d84519df05a0198a17ac000677
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7daf2f5b976dbc300458b5cb3efd0c0420c4f5c8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442760"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822320"
 ---
 # <a name="establish-customer-payment-fees"></a>Määritä asiakkaan maksulisät
 
@@ -51,3 +48,6 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 18. Valitse **Lisämaksun valuutta** -kentässä lisämaksun valuutta. Tämä on valuutta, jossa lisämaksu luodaan.  
 19. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

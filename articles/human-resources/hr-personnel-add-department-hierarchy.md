@@ -2,30 +2,30 @@
 title: Osastojen luominen ja sisällyttäminen osastohierarkiaan
 description: Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-aluetta. Osasto on vastuussa määrätystä organisaation alueesta, kuten myynnistä, kirjanpidosta tai henkilöstöhallinnosta. Voit käyttää osastoja toiminnallisia alueita koskevaan raportointiin. Osastot voivat olla tulosvastuullisia.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c43b45c7919be4673224b0f83606c390d0bb6265
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418261"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891075"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Osastojen luominen ja sisällyttäminen osastohierarkiaan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-aluetta. Osasto on vastuussa määrätystä organisaation alueesta, kuten myynnistä, kirjanpidosta tai henkilöstöhallinnosta. Voit käyttää osastoja toiminnallisia alueita koskevaan raportointiin. Osastot voivat olla tulosvastuullisia.
 
@@ -53,4 +53,7 @@ Voit lisätä osaston osastohierarkiaan seuraavasti:
 6.  Kun olet valmis, valitse **Julkaise** hierarkian suunnittelutoiminnossa. Voit syöttää voimassaolopäivämäärän, joka ilmaisee, milloin hierarkia tulisi julkaista. Jos esimerkiksi haluat lisätä uuden osaston seuraavan vuoden alusta, aseta voimaantulopäiväksi 1.1. seuraavana kalenterivuonna. Hierarkian muutokset tulevat voimaan tuona päivänä.
 
 ## <a name="steps-for-creating-a-department"></a>Osaston luontiohjeet
-Uuden osaston luomisen vaiheittaiset ohjeet löytyvät [Uusien osastojen määrittäminen](../fin-and-ops/hr/tasks/define-new-departments.md) -artikkelissa. 
+Uuden osaston luomisen vaiheittaiset ohjeet löytyvät [Uusien osastojen määrittäminen](./hr-personnel-define-departments.md) -artikkelissa. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

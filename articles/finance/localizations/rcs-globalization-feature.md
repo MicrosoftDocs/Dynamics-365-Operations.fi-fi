@@ -2,28 +2,25 @@
 title: Regulatory Configuration Services (RCS) – globalisointiominaisuudet
 description: Tässä ohjeaiheessa käsitellään Microsoft Regulatory Configuration Servicesin (RCS) ja yleisen säilön käyttöä globalisointitoiminnon luontiin ja käyttöön.
 author: JaneA07
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: ae46dab5250fbe8096f43e420cb7ef33a5862af0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442677"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760628"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – globalisointiominaisuudet
 
@@ -56,7 +53,7 @@ Noudata seuraavia ohjeita Finance and Operations -sovellusesiintymässä.
 1. Valitse RCS-esiintymässä **Ominaisuuksien hallinta** -ruutu.
 2. **Valitse ominaisuuksien hallinta** -työtilassa luettelosta **globalisaation ominaisuudet** ja valitse sitten **Ota käyttöön nyt**.
 
-    ![Globalisaatio-ominaisuudet ominaisuuksien hallinnassa](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+    ![Globalisaatio-ominaisuudet ominaisuuksien hallinnassa.](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 ## <a name="globalization-features"></a>Globalisaatio-ominaisuudet
 
@@ -70,11 +67,11 @@ Jos haluat käyttää globalisointiominaisuutta, sinun on ensin tuotava se yleis
 1. Varmista, että **globalisointitoiminnot** -toiminto on otettu käyttöön ominaisuuksien hallinnassa aiemmin tässä ohjeaiheessa kuvatulla tavalla.
 2. Avaa uusi **globalisointitoiminnot** -työtila ja valitse sitten **Ominaisuudet**-kohdan **sähköinen laskutus** -ruutu.
 
-    ![Yleiset ominaisuudet -työtila](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+    ![Yleiset ominaisuudet -työtila.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
     **Sähköisen laskutuksen ominaisuudet** -sivu avautuu.
 
-    ![Sähköisen laskutuksen ominaisuudet -sivu](./media/RCS_GlobalF_3%20Feature%20form.JPG)
+    ![Sähköisen laskutuksen ominaisuudet -sivu.](./media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## <a name="add-a-derived-globalization-feature"></a>Johdetun globalisaatiotoiminnon lisääminen
 
@@ -82,27 +79,27 @@ Voit lisätä uuden globalisaatiotoiminnon määrittämällä sen aiemmin julkai
 
 1. Valitse **Tuo** avataksesi **Tuo toiminto yleisestä tietovarastosta**-sivun.
 
-    ![Tuo toiminto yleiseltä tietovarastosivulta](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
+    ![Tuo toiminto yleisestä tietovarastosta -sivu.](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
 2. Saat uusimmat ominaisuudet valitsemalla **Synkronoi**.
 
     Synkronoidussa luettelossa on toimintoja, jotka ovat käytettävissä joko sen vuoksi, että Microsoft on julkaissut ne tai että toinen konfiguraatiotoimittaja on jakanut ne.
 
-    ![Synkronoitu ominaisuuksien luettelo](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
+    ![Synkronoitu ominaisuuksien luettelo.](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
 
 3. Valitse tuotavat ominaisuudet luettelosta ja valitse sitten **Tuo**. Näyttöön tulee sanoma, kun valittujen toimintojen tuominen onnistui.
 
-    ![Sanoma onnistuneesta tuonnista](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
+    ![Sanoma onnistuneesta tuonnista.](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
 
 4. Valitse **Lisää** ja valitse sitten avattavasta valintaikkunasta **Aiemmin luodun version perusteella** -vaihtoehto.
 5. Kirjoita ominaisuuden nimi ja kuvaus.
 6. Valitse käytettävissä olevien ominaisuuksien luettelosta ominaisuuden perusversio ja valitse sitten **Luo ominaisuus**.
 
-    ![Johdetun ominaisuuden lisääminen](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
+    ![Johdetun ominaisuuden lisääminen.](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
 
     Lisäämäsi ominaisuus luodaan, ja sen tila on **Luonnos**.
 
-    ![Johdettu toiminto, jonka tila on luonnos](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
+    ![Johdettu toiminto, jonka tila on luonnos.](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
 
 7. Tarkista ominaisuuksien osista, tarvitaanko päivityksiä:
 
@@ -123,7 +120,7 @@ Voit lisätä uuden globalisaatiotoiminnon luomalla sen alusta alkaen.
 2. Kirjoita ominaisuuden nimi ja kuvaus.
 3. Valitse **Luo ominaisuus**.
 
-    ![Uuden ominaisuuden lisääminen](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
+    ![Uuden ominaisuuden lisääminen.](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
 
 4. Valitse **Versiot**-välilehdestä **Voimaantulo**-päivämäärä ja suorita sitten toiminto valitsemalla **Muuta tilaa**. Valmiit toiminnot ovat käytettävissä tietyssä ympäristössä, jotta niitä voidaan käyttää globalisointipalveluissa tai ne voidaan julkaista yleiseen tietovarastoon.
 
@@ -179,7 +176,7 @@ Ominaisuuksien asennuksissa ovat käytettävissä seuraavat toiminnot:
     - Soveltuvuussäännöt
     - Muuttujat
 
-![Ominaisuusversion asetussivu](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
+![Ominaisuusversion asetussivu.](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
 
 ### <a name="environments"></a>Ympäristöt
 
@@ -204,7 +201,7 @@ Ominaisuus jaetaan valitun organisaation kanssa, ja se on kyseisen organisaation
 
 Voit määrittää uudelleen johdetun globalisaatiotoiminnon uuteen tai päivitettyyn perustoiminnon versioon. Näin perusversiossa tapahtuneet muutokset voidaan päivittää automaattisesti. Alkuperäinen konfigurointipalvelu luo päivitetyn perusominaisuuden version, jonka jälkeen se julkaistaan tai jaetaan.
 
-![Päivitetty perustoiminnon versio](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
+![Päivitetty perustoiminnon versio.](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
 
 Jos esimerkiksi haluat määrittää uudelleen luomasi ominaisuuden johdetun version, saat ensin toiminnon uusimman version tuomalla sen yleisestä tietovarastosta.
 
@@ -212,23 +209,23 @@ Jos esimerkiksi haluat määrittää uudelleen luomasi ominaisuuden johdetun ver
 2. Saat uusimmat ominaisuudet valitsemalla **Synkronoi**.
 3. Valitse ominaisuusluettelosta tuotavat ominaisuudet ja valitse sitten **Tuo**.
 
-    ![Toiminnon uusimman version tuominen](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
+    ![Toiminnon uusimman version tuominen.](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
 
 4. Valitse ominaisuuksien luettelosta uudelleenperustoiminto.
 5. Luo luonnosversio valitsemalla **Versio**-välilehdestä **Uusi**.
 
-    ![Uusi luonnosversio on laadittu](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
+    ![Uusi luonnosversio on laadittu.](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
 
 6. Valitse **Pohjusta**.
 7. Valitse **Pohjusta**-valintaikkunassa sen toiminnon uusin versio, johon haluat pohjustaa uudelleen.
 
-    ![Pohjusta-valintaikkuna](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
+    ![Pohjusta-valintaikkuna.](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
 
 8. Valitse **OK**.
 9. Tarkista ominaisuuden komponentit ja tee tarvittavat muutokset.
 10. Viimeistele pohjustettu toiminto valitsemalla **Muuta tilaa**. Kun pohjustus on saatu valmiiksi, voit suorittaa lisätoimenpiteitä. Voit esimerkiksi julkaista ominaisuuden ja määrittää sen käytettäviksi globalisointipalveluissa.
 
-    ![Toiminnon tila päivitetty valmiiksi](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
+    ![Toiminnon tila päivitetty valmiiksi.](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
 
 ## <a name="configure-environments-for-globalization-features"></a><a name="configureenvironment"></a>Ympäristöjen määrittäminen globalisaation ominaisuuksille
 
@@ -236,13 +233,13 @@ Globalisointipalveluiden käyttäjät voivat hallita ympäristöä niin, että n
 
 1. Valitse **globalisointitoiminnot**-työtila ja **Ympäristöt**-kohdan **sähköinen laskutus** -ruutu.
 
-    ![Globalisointiominaisuudet -työtila](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
+    ![Globalisointiominaisuudet-työtila.](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
 
 2. Valitse **Avainsäilöparametrit** ja luo Azure avainsäilön salaisuus valitsemalla **Uusi**.
 3. Kirjoita avainsäilön nimi ja kuvaus ja kirjoita sitten **Avainsäilön URI** -kenttään URL-osoite, joka yksilöi avainsäilöresurssin Azure-tietokannassa.
 4. Lisää sertifikaatti valitsemalla **sertifikaatit**-pikavälilehdessä **Lisää** ja kirjoita kunkin sertifikaatin nimi ja kuvaus.
 
-    ![Sertifikaatti lisätty](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
+    ![Sertifikaatti lisätty.](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
 
 5. Luo uusi ympäristö valitsemalla **Uusi**.
 6. Kirjoita nimi, kuvaus ja jaetun käyttöoikeuden allekirjoituksen tunnussanoma, jota tallennus edellyttää.
@@ -251,4 +248,7 @@ Globalisointipalveluiden käyttäjät voivat hallita ympäristöä niin, että n
 9. Voit lisätä muita käyttäjiä tekemällä kohtien 7 ja 8 toimet uudelleen.
 10. Julkaise ympäristö valitsemalla **Julkaise**.
 
-    ![Julkaistu ympäristö](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+    ![Julkaistu ympäristö.](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

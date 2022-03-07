@@ -1,39 +1,38 @@
 ---
 title: Ostotilausten saapuvien kuormien varastokäsittely
 description: Tässä aiheessa kuvataan ostotilausten saapuvien kuormien fyysisen varastoinnin käsittelyprosessi.
-author: omulvad
-manager: tfehr
+author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427399"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778056"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Ostotilausten saapuvien kuormien varastokäsittely
 
+[!include [banner](../includes/banner.md)]
+
 Tässä aiheessa kuvataan ostotilausten saapuvien kuormien fyysisen varastoinnin käsittelyprosessi.
 
-Jokaisessa saapuvassa kuormassa järjestelmässä on jo oltava liittyvä myyntitilaus, ja se voi sisältää myös liittyvän kuormamäärityksen ja/tai kuljetussuunnitelman. Lisätietoja saapuvien kuormien luomisesta ja hallinnasta on kohdassa [Liiketoimintaprosessi: saapuvien kuormien kuljetusten suunnitteleminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Jokaisessa saapuvassa kuormassa järjestelmässä on jo oltava liittyvä myyntitilaus, ja se voi sisältää myös liittyvän kuormamäärityksen ja/tai kuljetussuunnitelman. Lisätietoja saapuvien kuormien luomisesta ja hallinnasta on kohdassa [Liiketoimintaprosessi: saapuvien kuormien kuljetusten suunnitteleminen](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Yleiskatsaus: miten saapuvat kuormat luodaan, kirjataan ja vastaanotetaan
 
 Seuraavassa kuvassa näkyy tyypillinen kulku, jolla käsitellään saapuvia kuormia, joilla on ostotilausmääriä, kun ne saapuvat varastoosi.
 
-![Saapuvan kuorman käsittelyprosessi](media/inbound-process.png "Saapuvan kuorman käsittelyprosessi")
+![Saapuvan kuorman käsittelyprosessi.](media/inbound-process.png "Saapuvan kuorman käsittelyprosessi")
 
 1. **Toimittaja vahvistaa ostotilauksen.**
 
@@ -41,11 +40,11 @@ Seuraavassa kuvassa näkyy tyypillinen kulku, jolla käsitellään saapuvia kuor
 
 1. **Saapuvan kuorman tietue luodaan, jotta saapuminen ja sen sisältö voidaan suunnitella.**
 
-    Saapuva kuormatietue edustaa yhden tai usean ostotilauksen toimittajan toimitusta. Kuorman odotetaan saapuvan varastoon yhtenä fyysisenä kuljetusyksikkönä (kuten rekkakuorma). Saapuvan kuorman tietuetta käytetään suunnittelutarkoituksiin, ja sen avulla logistiikkakoordinaattori voi seurata kuorman edistymistä toimittajalta. Sitä käytetään myös tilausrivimäärien rekisteröimiseen ja edistymisen hallintaan varaston työvaiheiden, kuten saapumisen ja hyllytyksen, kautta. Kuormat voidaan luoda joko automaattisesti tai manuaalisesti, ja ne voivat perustua joko ostotilaukseen tai toimittajan lähetysilmoitus (ASN) -lähetykseen. Lisätietoja on kohdassa [Saapuvan kuorman luominen tai muokkaaminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Saapuva kuormatietue edustaa yhden tai usean ostotilauksen toimittajan toimitusta. Kuorman odotetaan saapuvan varastoon yhtenä fyysisenä kuljetusyksikkönä (kuten rekkakuorma). Saapuvan kuorman tietuetta käytetään suunnittelutarkoituksiin, ja sen avulla logistiikkakoordinaattori voi seurata kuorman edistymistä toimittajalta. Sitä käytetään myös tilausrivimäärien rekisteröimiseen ja edistymisen hallintaan varaston työvaiheiden, kuten saapumisen ja hyllytyksen, kautta. Kuormat voidaan luoda joko automaattisesti tai manuaalisesti, ja ne voivat perustua joko ostotilaukseen tai toimittajan lähetysilmoitus (ASN) -lähetykseen. Lisätietoja on kohdassa [Saapuvan kuorman luominen tai muokkaaminen](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Toimittaja vahvistaa kuorman lähetyksen.**
 
-    Kun toimittaja lähettää kuorman, vastaanottavan varaston logistiikkakoordinaattori vahvistaa kuorman lähetyksen. Jos vastaanottava yritys käyttää **Kuljetuksen hallinta** -moduulia, saapuvien lähetysten vahvistus käynnistää muita saapuvaan kuormaan liittyviä kuormanhallintaprosesseja. Lisätietoja on kohdassa [Kuorman lähetyksen vahvistaminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Kun toimittaja lähettää kuorman, vastaanottavan varaston logistiikkakoordinaattori vahvistaa kuorman lähetyksen. Jos vastaanottava yritys käyttää **Kuljetuksen hallinta** -moduulia, saapuvien lähetysten vahvistus käynnistää muita saapuvaan kuormaan liittyviä kuormanhallintaprosesseja. Lisätietoja on kohdassa [Kuorman lähetyksen vahvistaminen](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Kuorma saapuu varastoon ja työntekijät rekisteröivät määriä.**
 
@@ -67,7 +66,7 @@ Kun saapuva kuorma saapuu varastoon ensimmäisen kerran, varastotyöntekijöiden
 
 - **Mobiililaitteen valikko, joka on määritetty tukemaan kuorman vastaanottoa**
 
-    Mobiililaitteiden [varastointisovellus](install-configure-warehousing-app.md) tukee seuraavia työn luomisprosesseja:
+    Mobiililaitteiden [varastonhallinnan mobiilisovellus](../warehousing/install-configure-warehouse-management-app.md) tukee seuraavia työn luomisprosesseja:
 
     - Kuorman nimikkeen vastaanotto
     - Kuorman nimikkeen vastaanotto ja poispano
@@ -206,7 +205,7 @@ Seuraavassa taulukossa on yhteenveto **Salli usean tuotteen vastaanottaminen kuo
 | Usean tuotteen vastaanoton salliminen kuormaa kohden | Kuorman määrä | Kuorman tila | Seteli |
 |---|---|---|---|
 | Kun tämä kenttä ei ole käytettävissä (vanhemmat versiot kuin 10.0.10) | <p>Kuorman määrä määritetään siten, että se on sama kuin rekisteröity määrä.</p><p>Jos kuorman määräksi on päivitetty 0 (nolla), mikä tarkoittaa, että rekisteröintiä ei ole tehty, kuormarivi poistetaan.</p><p>Jos kuormassa ei ole kuormalinjoja, kuorma poistetaan.</p> | _Vastaanotettu_ | Jos tilausrivin rekisteröidylle määrälle on useita kuormia, vain sen kuorman tila, josta vastaanotto kirjattiin, on päivitetty _vastaanotetuksi_. |
-| Nro | <p>Kuorman määrä määritetään siten, että se on sama kuin kuorman tunnukseen liittyvä rekisteröity määrä.</p><p>Jos varastotapahtumalle ei ole rekisteröity kuormatunnusta, käyttäytyminen vastaa versioita ennen versiota 10.0.10.</p> | _Vastaanotettu_ | |
+| Ei | <p>Kuorman määrä määritetään siten, että se on sama kuin kuorman tunnukseen liittyvä rekisteröity määrä.</p><p>Jos varastotapahtumalle ei ole rekisteröity kuormatunnusta, käyttäytyminen vastaa versioita ennen versiota 10.0.10.</p> | _Vastaanotettu_ | |
 | Kyllä | Ei päivityksiä | _Vastaanotettu_, jos rekisteröity kokonaiskuormamäärä on yhtä suuri tai suurempi kuin kuormamäärä | |
 | Kyllä | Ei päivityksiä | _Lähetetty_ tai _työn alla_, jos rekisteröity kokonaiskuormamäärä on vähemmän kuin kuormamäärä | |
 
@@ -268,7 +267,7 @@ Nämä skenaariot edellyttävät _Useita tuotteen vastaanoton kirjauksia kuormaa
 
 1. Avaa **Ominaisuuksien hallinta** -työtila. (Lisätietoja tämän työtilan määrittämisestä ja käyttämisestä on kohdassa [Ominaisuuksien hallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Ota käyttöön _Liitä ostotilauksen varastotapahtumat kuormaan_ -ominaisuudella, joka on lueteltu seuraavalla tavalla:
+1. Varmista, että _Ostotilauksen varastotapahtumien liittäminen kuormaan_ -ominaisuus on otettu käyttöön. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä. Ominaisuus on kuitenkin edelleen mainittu [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) seuraavasti:
 
     - **Moduuli:** _Varastonhallinta_
     - **Ominaisuuden nimi:** _Ostotilauksen varastotapahtumien yhdistäminen kuormalla_
@@ -286,7 +285,7 @@ Näiden skenaarioiden käyttäminen määritettyjen mallitietojen ja -arvojen av
 
 Ennen kuin varaston vastaanottohenkilöt voivat käyttää mobiililaitetta, joka rekisteröi kuormaan linkitetyn saapuvan varaston, sinun on luotava tähän tarkoitukseen mobiililaitteen valikkovaihtoehto.
 
-Tässä osassa luodaan mobiililaitteen valikkovaihtoehto ja lisätään se aiemmin luotuun valikkoon. Varastotyöntekijä voi sitten valita valikkovaihtoehdon varastointisovelluksesta.
+Tässä osassa luodaan mobiililaitteen valikkovaihtoehto ja lisätään se aiemmin luotuun valikkoon. Varastotyöntekijä voi sitten valita valikkovaihtoehdon varastonhallinnan mobiilisovelluksesta.
 
 1. Siirry kohtaan **Varaston hallinta \>Asetukset \>Mobiililaite \> Mobiililaitteiden valikkokohteet** ja varmista, että mobiililaitteesi valikossa on valikkovaihtoehto, jolla on seuraavat asetukset:
 
@@ -296,7 +295,7 @@ Tässä osassa luodaan mobiililaitteen valikkovaihtoehto ja lisätään se aiemm
 
     Voit jättää kaikki muut asetukset oletusarvoihinsa.
 
-    ![Mobiililaitteen valikkovaihtoehtoasetukset](media/inbound-mobile-menu-items.png "Mobiililaitteen valikkovaihtoehtoasetukset")
+    ![Mobiililaitteen valikkovaihtoehtoasetukset.](media/inbound-mobile-menu-items.png "Mobiililaitteen valikkovaihtoehtoasetukset")
 
     Lisätietoja mobiililaitteiden valikkokohteiden määrittämisestä on kohdassa [Mobiililaitteiden määrittäminen varastotyötä varten](configure-mobile-devices-warehouse.md).
 
@@ -331,7 +330,7 @@ Tässä menettelyssä luodaan manuaalisesti ostotilaus ja siihen liittyvä kuorm
     - **Kuorma**-pikavälilehden **Kuorman tila** -kentän arvoksi tulee _Avoin_.
     - **Kuormarivit**-osassa on yksi rivi, jolla **Määrä** -kentän arvoksi on asetettu _10_ ja **Työn luontimäärä** -kentän arvoksi on määritetty _0_ (nolla).
 
-    ![Kuorman tiedot](media/inbound-load-details.png "Kuorman tiedot")
+    ![Kuorman tiedot.](media/inbound-load-details.png "Kuorman tiedot")
 
 1. Valitse toimintoruudun **Lähetä ja vastaanota** -välilehdellä **Vahvista \> Saapuva lähetys**. Huomaa, että **Kuorman tilaksi** on vaihdettu _Toimitettu_.
 1. Merkitse **Kuorman tunnuksen** arvo muistiin, jotta voit käyttää sitä seuraavassa menettelyssä.
@@ -478,3 +477,6 @@ Tässä skenaariossa vastaanottava virkailija rekisteröi määrän, joka on suu
     - **Määrä** – Syötä _7_, joka on jäljellä oleva määrä, jonka toimittaja on valtuutettu toimittamaan osana ostotilauksen kokonaismäärää 12 (jossa 10 on alkuperäisen tilauksen määrä ja 2 on 20 prosentin sallittu ylitoimitusmäärä). Muista, että viisi kpl:tta on jo rekisteröity ensimmäistä kuormaa vasten.
 
 Toinen kuorma on nyt päivitetty määrällä 7 ja se voi olla tuotteen vastaanotto-päivitetty tämän määrän perusteella.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

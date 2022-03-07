@@ -2,27 +2,24 @@
 title: Noudon tiedot -moduuli
 description: Tässä ohjeaiheessa käsitellään noutotietojen moduulia ja sen lisäämistä kassasivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 61b97d72b6a397737c10476cd6c02764e60f10b1
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665345"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353801"
 ---
 # <a name="pickup-information-module"></a>Noudon tiedot -moduuli
 
@@ -43,7 +40,7 @@ Jos useista myymälöistä noutoa varten on valittu useita nimikkeitä, noudon t
 
 Seuraavassa kuvassa on esimerkki aikavälin valinnasta kassasivun noutotietomoduulin kautta.
 
-![Esimerkki noutotietomoduulista kassasivulla](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Esimerkki noutotietomoduulista kassasivulla.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
@@ -59,7 +56,7 @@ Lisätietoja noutotietomoduulin lisäämisestä kassasivulle ja tarvittavien omi
 
 Seuraavassa kuvassa on esimerkki sähköisen kaupankäynnin kassasivusta, joka sisältää aikavälit noudettaville rivinimikkeille.
 
-![Esimerkki sähköisen kaupankäynnin kassasivusta, joka sisältää aikavälit noudettaville rivinimikkeille](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Esimerkki sähköisen kaupankäynnin kassasivusta, joka sisältää aikavälit noudettaville rivinimikkeille.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -70,3 +67,6 @@ Seuraavassa kuvassa on esimerkki sähköisen kaupankäynnin kassasivusta, joka s
 [Tilauksen vahvistusmoduuli](order-confirmation-module.md)
 
 [Tilauksen tiedot -moduuli](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

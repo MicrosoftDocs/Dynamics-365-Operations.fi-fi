@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 185fb9a33cb4cc655dfdf640b4c239d617426c64
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: f001734baf9aee59f0a61d21ca5a99af0c55b56f
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323898"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413592"
 ---
 # <a name="use-data-collection-data-sources-in-electronic-reporting-formats"></a>DATA COLLECTION -tietolähteiden käyttäminen sähköisissä raportointimuodoissa
 
 [!include [banner](../includes/banner.md)]
 
-[Sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehyksen toimintojen suunnitteluohjelmaa voidaan käyttää määrittämään sen ER-ratkaisun muoto-osassa, jolla luodaan erimuotoisia lähteviä asiakirjoja. Määritetyn muoto-osan hierarkiarakenne koostuu erilaisista muotoelementtityypeistä. Näitä muotoelementtejä käytetään luotujen asiakirjojen suorituksenaikaiseen täyttämiseen tarvittavilla tiedoilla. Kun ER-muoto suoritetaan, muotoelementit suoritetaan oletusarvoisesti samassa järjestyksessä, jossa ne ovat muotohierarkiassa: yksi kerrallaan, ylhäältä alas.
+[Sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehyksen toimintojen suunnitteluohjelmaa voidaan käyttää määrittämään sen ER-ratkaisun [muoto](general-electronic-reporting.md#FormatComponentOutbound)-osassa, jolla luodaan erimuotoisia lähteviä asiakirjoja. Määritetyn muoto-osan hierarkiarakenne koostuu erilaisista muotoelementtityypeistä. Näitä muotoelementtejä käytetään luotujen asiakirjojen suorituksenaikaiseen täyttämiseen tarvittavilla tiedoilla. Kun ER-muoto suoritetaan, muotoelementit suoritetaan oletusarvoisesti samassa järjestyksessä, jossa ne ovat muotohierarkiassa: yksi kerrallaan, ylhäältä alas.
 
-Kun ER suorittaa sidonnan sisältävän muotoelementin, kyseisen sidonnan kaava suoritetaan ja muotoelementti lisää arvon luotuun asiakirjaan. Sidonta voi välittää esimerkiksi tietomallin kentän arvon muotoelementtiin. DATA COLLECTION -tietolähde voidaan määrittää keräämään tietomallikenttien arvot suorituksen aikana, tuottamaan arvojen summat ja täyttämään kerätyt arvot luotuun asiakirjaan. Tämän menetelmän käyttäminen edellyttää alkuperäisen sidonnan muuttamista siten, että määritetty DATA COLLECTION -tietolähde välittää tietomallikentän arvon muotoelementtiin. Kun arvot siirretään DATA COLLECTION -tietolähteen kautta, tarvittavat tiedot voidaan kerätä tulevaa käyttöä varten.
+Kun ER suorittaa sidonnan sisältävän muotoelementin, kyseisen sidonnan kaava suoritetaan ja muotoelementti lisää arvon luotuun asiakirjaan. Sidonta voi välittää esimerkiksi [tietomallin](general-electronic-reporting.md#data-model-and-model-mapping-components) kentän arvon muotoelementtiin. DATA COLLECTION -tietolähde voidaan määrittää keräämään tietomallikenttien arvot suorituksen aikana, tuottamaan arvojen summat ja täyttämään kerätyt arvot luotuun asiakirjaan. Tämän menetelmän käyttäminen edellyttää alkuperäisen sidonnan muuttamista siten, että määritetty DATA COLLECTION -tietolähde välittää tietomallikentän arvon muotoelementtiin. Kun arvot siirretään DATA COLLECTION -tietolähteen kautta, tarvittavat tiedot voidaan kerätä tulevaa käyttöä varten.
 
 DATA COLLECTION -tietolähdettä määritettäessä määritetään arvotyyppi, jotta hallitaan tietolähteessä. Tällä hetkellä arvojen keräämistä varten tuetaan seuraavia [tietotyyppejä](er-formula-supported-data-types-primitive.md):
 

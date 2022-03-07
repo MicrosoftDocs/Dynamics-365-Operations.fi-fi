@@ -2,26 +2,23 @@
 title: Toimittajan työnkulku
 description: Muokkaa toimittajatietojen ja hyväksy ne työnkulun avulla.
 author: mikefalkner
-manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 00cdc657fa075e84e62682e33ed3c1bace3f4ad0
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 8f4fc24153842b2a108b13835e56e70177d7b53842cb15ea17f172da21ddc10d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4442995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777165"
 ---
 # <a name="vendor-workflow"></a>Toimittajan työnkulku
 
@@ -61,3 +58,6 @@ Kun sinulla on vähintään yksi ehdotettu muutos, kaksi uutta välilehteä tuke
     Sivun tilaksi muutetaan **Hyväksymistä odottavat muutokset**.
 
 Työnkulku noudattaa vakiotyönkulkua. Hyväksyjä ohjataan **Toimittaja**-sivulle. Muutokset voidaan tarkistaa **Ehdotetut muutokset** -sivulla. Sitten valitaan **Työnkulku \> Hyväksy**, jolloin työnkulku hyväksytään. Kun kaikki hyväksynnät on käyty läpi, kentät päivitetään ehdottamillasi arvoilla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

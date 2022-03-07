@@ -11,23 +11,23 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: f5eac47448835dae5837b31c59a72833652f63bf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442967"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249650"
 ---
 # <a name="set-up-lease-books"></a>Vuokrasopimuskirjojen määrittäminen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Vuokrasopimuskirjat sisältävät kirjanpitokäytännöt, joiden mukaan vuokrasopimus otetaan huomioon järjestelmässä. Kassaperusteisen kirjanpidon lisäksi resurssin vuokraus tukee seuraavia standardeja:
 
@@ -53,3 +53,7 @@ Luo vuokrasopimuskirja noudattamalla seuraavia ohjeita.
     | Lyhytaikainen kynnysarvo                     | Määritä lyhytaikaisten vuokraasopimusten kynnysarvona käytettävä kuukausien määrä. Jos vuokra-aika on pienempi tai yhtä suuri kuin tähän syöttämäsi kuukausien määrä, järjestelmä luokittelee vuokrasopimuksen lyhytaikaiseksi vuokrasopimukseksi ja käyttää toteutumattoman vuokran käsittelyä. |
     | Arvoltaan vähäinen kynnysarvo                      | Anna summa, jota käytetään arvoltaan vähäisen vuokrasopimuksen kynnysarvona. Jos resurssin käypä arvo on pienempi tai yhtä suuri kuin tähän syöttämäsi arvo, järjestelmä luokittelee vuokrasopimuksen arvoltaan vähäiseksi vuokrasopimukseksi ja käyttää toteutumattoman vuokran käsittelyä. |
     | Maksu toimittajalle                            | Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat sallia maksujen kirjaamisen laskuna jokaiselle vuokrasopimukselle määritetylle toimittajan tilille. Kun maksu kirjataan, toimittajan tiliä hyvitetään. Jos tämän asetuksen arvoksi on määritetty **Ei**, hyvitetään sen sijaan **Vuokra**-kirjaustyypille **Vuokrasopimuksen kirjausparametrit** -sivulla määritettyä tiliä. |
+    | Leasing-käytäntö                       | Valitse vuokran aloituspäivämäärän käytäntö:<ul><li><b>Ei mitään</b> – Käytä vuokran alkamispäivämäärää aloituspäivänä.</li><li><b>Täysi kuukausi</b> – Käytä aloituspäivänä sen kuukauden ensimmäistä päivää, johon vuokran alkaminen sijoittuu.</li></ul><p>Jos valitset <b>Ei mitään</b> -vaihtoehdon, riskinä on, että velan kuoletuksen ja käyttöomaisuuden poiston suunnitelmat kerryttävät ja kirjaavat kuluja keskellä kuukautta kuukauden lopun sijaan. Kun valitset <b>Täysi kuukausi</b>, varmistat, että järjestelmä ottaa vuokran huomioon kuukauden ensimmäisenä päivänä ja että koko kuukauden kulut jaksotetaan ja kirjataan kuukauden viimeisenä päivänä.</p><p><strong>Huomautus:</strong> Vuokramenetelmien ominaisuus voidaan ottaa käyttöön ominaisuuksien hallinnan avulla. Etsi ja valitse <b>Ominaisuuksien hallinta</b> -työtilassa toiminto, jonka nimi on <b>Käyttöomaisuuden vuokrauksen vuokramenetelmät</b> ja valitse sitten <b>Ota käyttöön nyt</b>.</p> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

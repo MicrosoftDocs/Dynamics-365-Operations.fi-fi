@@ -1,12 +1,10 @@
 ---
 title: Toiminnalliset sijainnit ja resurssit
 description: Tässä ohjeaiheessa kerrotaan toiminnallisista sijainneista ja resursseista resurssien hallinnassa. Resurssien hallinta on kehittynyt moduuli resurssien ja kunnossapitotöiden hallintaan Dynamics 365 Supply Chain Managementissa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f93a68f19b0b952eb2964b404bb957865c625cd
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e0bf90d99a8bd093817f9e804e8075e779428f1fadb3128c5a455ca839dece55
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750145"
 ---
 # <a name="functional-locations-and-assets"></a>Toiminnalliset sijainnit ja resurssit
 
@@ -36,13 +34,13 @@ Tässä ohjeaiheessa kerrotaan toiminnallisista sijainneista ja resursseista res
 
 Resurssien hallinta on integroitu saumattomasti useisiin moduuleihin muiden Finance and Operations -sovellusten kanssa. Seuraavassa kuvassa näkyvät liittymät muiden moduulien kanssa.
 
-![Kaavio, jossa näkyvät resurssienhallinnan rajapinnat muihin moduuleihin](media/01-overview-image.png)
+![Kaavio, jossa näkyvät resurssienhallinnan rajapinnat muihin moduuleihin.](media/01-overview-image.png)
 
 Resurssien hallinnan avulla voit tehokkaasti hallita ja suorittaa kaikkia tehtäviä, jotka liittyvät yrityksen monentyyppisten laitteiden hallintaan ja huoltoon. Näihin laitteisiin kuuluvat koneet, tuotantolaitteet ja ajoneuvot. Resurssien hallinta tukee myös ratkaisuja monilla eri aloilla.
 
 Seuraavassa kuvassa on yleiskuvaus päätoiminnoista, jotka kuuluvat resurssien hallintaan.
 
-![Kaavio, jossa näkyy resurssienhallinnan päätoiminto](media/02-overview-image.png)
+![Kaavio, jossa näkyy resurssienhallinnan päätoiminto.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Toiminnalliset sijainnit ja resurssit
 
@@ -52,8 +50,11 @@ Resurssien kustannukset noudattavat aina resurssin sijaintia. Toisin sanoen, jos
 
 Toiminnallisten sijaintien hierarkian koontitapa riippuu yrityksesi vaatimuksista, jotka koskevat sisäisten laitteiden ylläpitoa tai asiakaslaitteiden huoltoa. Seuraavassa kuvassa on esimerkki toiminnallisista sijainneista, jotka perustuvat maantieteellisiin sijainteihin.
 
-![Kaavio, jossa näkyy toiminnallisia sijainteja maantieteellisten sijaintien perusteella](media/03-overview-image.png)
+![Kaavio, jossa näkyy toiminnallisia sijainteja maantieteellisten sijaintien perusteella.](media/03-overview-image.png)
 
 Seuraavassa kuvassa on esimerkki toiminnallisista sijainneista, jotka perustuvat asiakkaisiin.
 
-![Kaavio, jossa näkyy toiminnallisia sijainteja asiakkaiden perusteella](media/04-overview-image.png)
+![Kaavio, jossa näkyy toiminnallisia sijainteja asiakkaiden perusteella.](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

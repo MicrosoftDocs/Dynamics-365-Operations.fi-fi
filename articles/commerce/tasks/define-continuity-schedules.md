@@ -2,27 +2,24 @@
 title: Määritä jatkuvuuden aikataulut
 description: Tässä ohjeaiheessa neuvotaan jatkuvuusohjelman määrittäminen (toiselta nimeltään toistuvat tilaukset).
 author: josaw1
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRContinuitySchedule, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 06fd1e23ad84fdc5e94e309717d5a96fbff45035
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8414377ddec0e001f003f842866725eb58bd75a3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412016"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791604"
 ---
 # <a name="define-continuity-schedules"></a>Määritä jatkuvuuden aikataulut
 
@@ -64,3 +61,6 @@ Tässä ohjeaiheessa neuvotaan jatkuvuusohjelman määrittäminen (toiselta nime
     * Kun tämä nimike myydään puhelinkeskuksessa, valitun jatkuvuusohjelman liiketoimintalogiikkaa sovelletaan nimikkeeseen.  
 7. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

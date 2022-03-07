@@ -1,12 +1,11 @@
 ---
 title: Sovellusluokkamenetelmän kutsulausekkeiden suunnittelu (ER)
-description: Tässä oppaassa on tietoja aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin (ER) konfiguraatioissa kutsumalla sovellusluokkien pakollisia menetelmiä ER-lausekkeissa.
+description: Tässä aiheessa käsitellään aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin määrityksissä kutsumalla sovellusluokkien pakollisia menetelmiä.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 11b4d185703731d8491ad10bdeedea40ce811f5d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682018"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564091"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Sovellusluokkamenetelmän kutsulausekkeiden suunnittelu (ER)
 
@@ -157,3 +156,6 @@ Testausta varten voit suorittaa muodon yhdistämismäärityksen käyttämällä 
 2. Valitse OK.
     * Tarkista XML-muotoiset tiedot. Nämä tiedot on tuotu valitusta tiedostosta ja siirretty tietomalliin. Huomaa, että vain 3 tuodun TXT-tiedoston riviä on käsitelty. Rivillä 4 oleva IBAN-koodi, joka ei ole sallittu, on ohitettu. Infolokissa on virhesanoma.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

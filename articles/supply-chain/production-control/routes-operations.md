@@ -1,13 +1,13 @@
 ---
 title: Reititykset ja työvaiheet
 description: Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista.
-author: johanhoffmann
+author: sorenva
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
-ms.author: johanho
+ms.author: sorenand
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 268124
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891950"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819277"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -29,7 +29,8 @@ ms.locfileid: "7891950"
 
 Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reititys määrittää tuotteen tai tuotevariantin tuotantoprosessin. Siinä kuvaillaan tuotantoprosessin jokainen vaihe (työvaihe) ja vaiheiden suoritusjärjestys. Reitityksessä määritetään myös jokaisen vaiheen pakolliset operatiiviset resurssit, vaadittu asetus- ja ajoaika sekä kustannusten laskemistapa.
 
-## <a name="overview"></a>Yleiskuvaus
+<a name="overview"></a>Yleiskuvaus
+--------
 
 Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Supply Chain Managementin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
 
@@ -45,7 +46,7 @@ Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työv
 
 Yksinkertaiset reititykset ovat peräkkäisiä. Reitityksellä on vain yksi aloituspiste.  
 
-[![Yksinkertainen reititys.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Yksinkertainen reititys](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset reititykset, Supply Chain Management luo automaattisesti työvaihenumerot (10, 20, 30 jne.) reitityksen määrittämisen yhteydessä.
 
@@ -53,7 +54,7 @@ Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset rei
 
 Jos tuotannonohjauksen parametreissa otetaan käyttöön monimutkaisempia reittiverkostoja, voit määrittää useita aloituspisteitä ja rinnakkain suoritettavia työvaiheita sisältävät reititykset.  
 
-[![Reittiverkosto.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Reittiverkosto](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Jokaisella työvaiheella voi olla vain yksi seuraava työvaihe. Koko reitityksen on loputtava yhteen työvaiheeseen.
@@ -64,7 +65,7 @@ Jos tuotannonohjauksen parametreissa otetaan käyttöön monimutkaisempia reitti
 
 Joskus työvaiheen suorittaminen vaatii useita erilaisia ominaisuuksia omaavien operatiivisten resurssien yhdistelmän. Esimerkiksi kokoonpanotyövaihe saattaa vaatia koneen, työkalun ja yhden työvaihetta valvovan työntekijän joka toiselle koneelle. Tämä esimerkki voidaan mallintaa käyttämällä rinnakkaisia työvaiheita, joissa yksi työvaihe on määritetty ensisijaiseksi työvaiheeksi ja muut toissijaisiksi.  
 
-[![Reititys, jolla on ensisijainen työvaihe ja toissijaisia työvaiheita.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Reititys, jolla on ensisijainen työvaihe ja toissijaisia työvaiheita](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Yleensä ensisijainen työvaihe edustaa pullonkaularesurssi. Se määrittää toissijaisten työvaiheiden ajoajan. Jos kapasiteetti kuitenkin on rajallinen, sekä ensisijaiselle työvaiheelle että toissijaisille työvaiheille ajoitettujen resurssien on oltava käytettävissä ja niillä on oltava vapaata kapasiteettia samanaikaisesti.  
 
@@ -78,7 +79,7 @@ Reititys on hyväksyttävä, ennen kuin sitä voidaan käyttää suunnittelu- ja
 
 Kukin reititys voidaan hyväksyä erikseen tai jättää hyväksymättä. Huomaa kuitenkin, että jos reititys on hyväksymistä odottava, myös kaikki siihen liittyvät reititysversiot ovat silloin hyväksymättömiä. Tuotannonohjauksen parametreissa määritetään, voivatko reititykset olla hyväksymättömiä ja voiko hyväksyttyjä reitityksiä muuttaa.  
 
-Jos ylläpidät lokia, johon tallennetaan kunkin reitityksen hyväksyjä, voit vaatia reitityksen hyväksynnästä sähköiset allekirjoitukset. Käyttäjien on tällöin vahvistettava henkilöllisyytensä [sähköisen allekirjoituksen](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) avulla.
+Jos ylläpidät lokia, johon tallennetaan kunkin reitityksen hyväksyjä, voit vaatia reitityksen hyväksynnästä sähköiset allekirjoitukset. Käyttäjien on tällöin vahvistettava henkilöllisyytensä [sähköisen allekirjoituksen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) avulla.
 
 ## <a name="operations"></a>Operations
 Työvaihe on tuotantoprosessin vaihe. Jokaisella työvaiheella on tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa esitellään tyypilliset esimerkit konepajan työvaiheista.
@@ -184,7 +185,7 @@ Voit määrittää reititysversion aktivoinnin yhteydessä oletusreititysversiok
 
 ### <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
 
-Jos ylläpidät lokia, johon tallennetaan kunkin reititysversion hyväksyjä ja aktivoija, voit vaatia näistä tehtävistä sähköiset allekirjoitukset. Käyttäjien, jotka hyväksyvät ja aktivoivat reititysversioita, on vahvistettava henkilöllisyys [sähköisen allekirjoituksen](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) avulla.
+Jos ylläpidät lokia, johon tallennetaan kunkin reititysversion hyväksyjä ja aktivoija, voit vaatia näistä tehtävistä sähköiset allekirjoitukset. Käyttäjien, jotka hyväksyvät ja aktivoivat reititysversioita, on vahvistettava henkilöllisyys [sähköisen allekirjoituksen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) avulla.
 
 ### <a name="product-change-that-uses-case-management"></a>Tuotemuutos, joka käyttää tapaustenhallintaa
 
@@ -223,7 +224,7 @@ Tällöin **Työvaihesuhteet**-sivusta tulee ensisijainen kohde, kun ylläpidät
 Jos et määritä operatiivista resurssia tai resurssiryhmää osaksi työvaiheen resurssivaatimuksia, käytettävissä olevat resurssit saattavat toimia eri nopeuksilla. Tämän vuoksi työvaiheen käsittelyyn kuluva aika saattaa vaihdella. Voit ratkaista tämän ongelman määrittämällä työvaihesuhteen **Kaava**-kenttään prosessiajan laskentatavan. Valittavissa ovat seuraavat vaihtoehdot:
 
 - **Vakio** – (oletusvalinta) Laskelmassa käytetään vain työvaihesuhteen kenttiä. Määritetty ajoaika kerrotaan tilausmäärällä.
-- **Kapasiteetti** – Laskenta sisältää operatiivisen resurssin **Kapasiteetti**-kentän. Aika siis riippuu resurssista. Operatiiviselle resurssille määritetty arvo on kapasiteetti tuntia kohti. **Käsittelyaika** lasketaan **kapasiteetilla** jaetulla **tilausmäärällä**. Kapasiteetin arvo ei ole tietty mittayksikkö eikä sitä sen vuoksi muunneta **Kapasiteettiyksikkö**-kentän perusteella, joka on vain kuvaava kenttä, jota ei käytetä laskelmissa.
+- **Kapasiteetti** – Laskenta sisältää operatiivisen resurssin **Kapasiteetti**-kentän. Aika siis riippuu resurssista. Operatiiviselle resurssille määritetty arvo on kapasiteetti tuntia kohti. **Käsittelyaika** lasketaan **kapasiteetilla** jaetulla **tilausmäärällä**.
 - **Erä** – Erän kapasiteetti lasketaan työvaihesuhteen tietojen avulla. Erien määrä ja prosessiaika voidaan laskea tilausmäärän perusteella.
 - **Resurssierä** – Tämä vaihtoehto on periaatteessa sama kuin **Erä**-vaihtoehto. Laskenta sisältää kuitenkin operatiivisen resurssin **Eräkapasiteetti**-kentän. Aika siis riippuu resurssista.
 
@@ -252,7 +253,7 @@ Tästä syystä kun limityksen aktivointi on valittuna, muut asetukset (töiden 
 
 - [Resurssin ominaisuudet](resource-capabilities.md)
 
-- [Sähköisten allekirjoitusten yleiskatsaus](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
+- [Sähköisten allekirjoitusten yleiskatsaus](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

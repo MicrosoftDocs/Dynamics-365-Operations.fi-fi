@@ -2,36 +2,30 @@
 title: Tuotekokoelmamoduulit
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotekokoelmamoduulien yleiskatsaus.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 222bb25b6851fe60f3d872e5d7431094ac916dd4
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411842"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791003"
 ---
 # <a name="product-collection-modules"></a>Tuotekokoelmamoduulit
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotekokoelmamoduulien yleiskatsaus.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Tuotteiden etsintätyökalu on ensisijainen työkalu, jonka avulla jälleenmyyjät voivat seurata asiakkaita sähköisen kaupankäynnin sivustossa. Tuotekokoelmamoduulien avulla jälleenmyyjät voivat luoda houkuttelevia ostoskokemuksia tarjoamalla intuitiivisen visuaalisen käyttöliittymän, jonka avulla voi nopeasti luoda tuotekokoelmia.
 
@@ -39,7 +33,7 @@ Tuotekokoelmamoduulit edustavat verkkosivuston fyysisiä tuotteita ja palveluita
 
 Tuotekokoelmien lähteet voivat olla seuraavien neljän tyyppisiä luetteloita:
 
-- Toimitukselliset luettelot tuotteista, jotka on määritetty Dynamics 365 Commerceissa manuaalisesti tuotteen tai tuoteluetteloiden liittyviksi tuotteiksi.
+- Toimitukselliset luettelot tuotteista, jotka on määritetty Dynamics 365 Commercessa manuaalisesti tuotteen tai tuoteluetteloiden liittyviksi tuotteiksi.
 - Algoritmiset luettelot, kuten uusien, myydyimpien tai suosittujen tuotteiden luettelot
 - Suositusluettelot, jotka perustuvat koneoppimiseen
 - Mukautusluettelot, jotka tukevat asiakkaan yksilöllisiä tuloksia. Asiakkaiden on kirjauduttava sähköiseen Commerce-sivustoon nähdäkseen henkilökohtaiset tulokset. Vieraskäyttäjät eivät näe yksilöllisiä tuloksia. Asiakkaat voivat poistaa personoinnin käytöstä [tilinhallinta-sivulla](account-management.md).
@@ -67,6 +61,10 @@ Seuraavassa taulukossa on tuotekokoelmamoduulien eri tyypit Dynamics 365 Commerc
 | Ostetaan usein yhdessä | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan liittyviä nimikkeitä, jotka ostetaan usein yhdessä tietyn tuotteen kanssa. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
 | Ihmiset pitävät myös seuraavista           | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan nimikkeitä, jotka liittyvät tiettyyn tuotteeseen. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
 | Valinnat sinulle              | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista kirjautuneen käyttäjän ostomallien analysoimiseen ja antaa mukautettuja suosituksia, jotka perustuvat näihin ostotottumuksiin. Vieraskäyttäjän luettelo on kutistettu. |
+
+## <a name="supported-modules"></a>Tuetut moduulit 
+
+Tuotekokoelmamoduuli tukee [pikanäkymämoduulia](quick-view-module.md), jonka avulla käyttäjät voivat tarkastella tuotetietoja ja lisätä nimikkeitä ostoskoriin tuotekokoelmasivulta.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Tuotekokoelmamoduulin lisääminen luokkasivulle
 
@@ -109,3 +107,8 @@ Seuraavassa taulukossa on luettelotyypit, jotka ovat valittavissa **Valitse tuot
 [Ostoruutumoduuli](add-buy-box.md)
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
+
+[Pikanäkymämoduuli](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

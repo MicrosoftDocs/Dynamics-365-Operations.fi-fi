@@ -2,11 +2,9 @@
 title: Sähköisessä raportissa luotavien isokokoisten asiakirjojen pakkaaminen
 description: Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin (ER) muodon luomia isokokoisia asiakirjoja pakataan.
 author: NickSelin
-manager: kfend
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718596"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Sähköisessä raportissa luotavien isokokoisten asiakirjojen pakkaaminen 
 
 [!include [banner](../includes/banner.md)]
 
-Voit määrittää tapahtumatietoja lähtevän asiakirjan luomista varten noutavan ratkaisun käyttämällä [Sähköisen raportoinnin (ER) kehystä](general-electronic-reporting.md). Tämä luotu tiedosto voi olla melko suuri. Kun tällainen asiakirja luodaan, [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) -muistia käytetään sen säilyttämiseen. Jossakin vaiheessa tiedosto on ladattava Microsoft Dynamics 365 Finance -sovelluksesta. Tällä hetkellä sähköisessä raportoinnissa luotavan yksittäisen asiakirjan koko on rajoitettu 2 gigatavuun (Gt). Lisäksi Finance [rajoittaa](https://fix.lcs.dynamics.com/Issue/Details?bugId=489291) tällä hetkellä ladatun tiedoston koon 1 gigatavuun. Siksi sinun on konfiguroitava ER-ratkaisu, joka pienentää todennäköisyyttä, että nämä rajoitukset ylittyvät ja poikkeukset **Tietovirta oli liian pitkä** tai **Yli- tai alivuoto aritmeettisessa toiminnassa**.
+Voit määrittää tapahtumatietoja lähtevän asiakirjan luomista varten noutavan ratkaisun käyttämällä [Sähköisen raportoinnin (ER) kehystä](general-electronic-reporting.md). Tämä luotu tiedosto voi olla melko suuri. Kun tällainen asiakirja luodaan, [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) -muistia käytetään sen säilyttämiseen. Jossakin vaiheessa tiedosto on ladattava Microsoft Dynamics 365 Finance -sovelluksesta. Tällä hetkellä sähköisessä raportoinnissa luotavan yksittäisen asiakirjan koko on rajoitettu 2 gigatavuun (Gt). Lisäksi Finance [rajoittaa](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) tällä hetkellä ladatun tiedoston koon 1 gigatavuun. Siksi sinun on konfiguroitava ER-ratkaisu, joka pienentää todennäköisyyttä, että nämä rajoitukset ylittyvät ja poikkeukset **Tietovirta oli liian pitkä** tai **Yli- tai alivuoto aritmeettisessa toiminnassa**.
 
 Kun määrität ratkaisun, voit muokata ER-muotoa toimintojen suunnitteluohjelmassa lisäämällä **Kansio**-tyypin pääelementin sen jonkin sisäkkäisen elementin luoman sisällön pakkaamiseksi. Pakkauksessa sovelletaan just in time -periaatetta, jotta muistin käyttöä voidaan vähentää ja ladattavan tiedoston kokoa pienentää.
 
@@ -57,7 +55,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen menettelyt loppuun, seuraavien vaih
 1. [Tuodun muodon suorittaminen](er-defer-xml-element.md#run-the-imported-format)
 2. Huomaa, että luodun asiakirjan koko XML-muodossa on 3 kilotavua (kt).
 
-    ![Pakkaamattoman lähtevän asiakirjan esikatselu](./media/er-compress-outbound-files1.png)
+    ![Pakkaamattoman lähtevän asiakirjan esikatselu.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Muodon muokkaaminen luodun tulosteen pakkaamiseksi
 
@@ -82,7 +80,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen menettelyt loppuun, seuraavien vaih
     > [!NOTE] 
     > Tämän zip-tiedoston sisältämän XML-tiedoston pakkaussuhde on 87 prosenttia. Pakkaussuhde määräytyy pakattavien tietojen mukaan.
 
-    ![Pakatun lähtevän asiakirjan esikatselu](./media/er-compress-outbound-files2.png)
+    ![Pakatun lähtevän asiakirjan esikatselu.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Jos ER-[kohde](electronic-reporting-destinations.md) on määritetty tulosteen luovan muotoelementin (tässä esimerkissä **Raportti**-elementin) osalta, tulosteen pakkaus ohitetaan.
@@ -94,3 +92,6 @@ Ennen kuin voit suorittaa tämän ohjeaiheen menettelyt loppuun, seuraavien vaih
 [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportoinnin muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

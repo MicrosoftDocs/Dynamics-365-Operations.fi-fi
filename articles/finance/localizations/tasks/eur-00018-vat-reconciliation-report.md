@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MainAccountLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 496c4841d36174be3e65b0a4fc9a3a331662637f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6bb674d9605959692ec5ca2dc7ebd54a6ea93cc6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407886"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227888"
 ---
 # <a name="eur-00018-vat-reconciliation-report"></a>EUR-00018 ALV-täsmäytysraportti
 
@@ -41,3 +40,6 @@ Näiden ohjeiden avulla voit luoda islantilaisille ja norjalaisille yrityksille 
 6. Valitse Näytä tiedot -kentässä Kyllä.
 7. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

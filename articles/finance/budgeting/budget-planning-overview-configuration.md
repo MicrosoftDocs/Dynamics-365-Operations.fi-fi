@@ -2,27 +2,27 @@
 title: Budjettisuunnittelun yleiskatsaus
 description: Tässä ohjeaiheessa kuvataan budjettisuunnittelua. Se sisältää tietoja, jotka voivat auttaa budjettisuunnittelun ja budjettisuunnitteluprosessien määrittämisessä.
 author: panolte
-manager: AnnBe
 ms.date: 01/11/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 17251
+ms.custom:
+- "17251"
+- intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019225"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982062"
 ---
 # <a name="budget-planning-overview"></a>Budjettisuunnittelun yleiskatsaus
 
@@ -42,7 +42,7 @@ Organisaatio voi määrittää budjetin suunnittelun ja määrittää sitten bud
 - **Budjettisuunnittelun vaiheet** – Budjettisuunnittelun vaiheet määrittävät budjettisuunnitelman alusta sen lopulliseen hyväksyntään asti noudatettavat vaiheet. Budjetin suunnitteluvaiheet on järjestetty budjetin suunnittelun työnkuluiksi.
 - **Budjettisuunnittelun työnkulut** – Budjettisuunnittelun työnkulut sisältävät ja määrittävät budjettisuunnittelun vaiheet. Budjettisuunnittelun työnkulut on liitetty budjetoinnin työnkulkuihin. Budjetoinnin työnkulut ovat automaattisia ja manuaalisia prosesseja, jotka siirtävät budjettisuunnitelmia budjetin suunnitteluprosessin vaiheiden läpi.
 
-[![Budjettisuunnittelun käsitteistö](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Budjettisuunnittelun käsitteistö.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Tyypilliset tehtävät
 
@@ -67,17 +67,17 @@ Mallin luominen on valinnainen vaihe, mutta sen suorittaminen on suositeltavaa. 
 
 Seuraavassa kuvassa esitetään yleinen esimerkki, jossa budjettisuunnittelun työnkulut luodaan organisaation eri tasoille. Jokaisessa työnkulussa määritetään vaiheet, ja jokaiselle vaiheelle liitetään tietyt skenaariot budjettitietojen tallentamista varten. Tiedot siirretään yhdestä vaiheesta toiseen valmiiden tehtävien avulla. Esimerkiksi summat voidaan kohdistaa tai yhdistää erilaisille tileille, erilaisiin hyväksyntöihin tai muihin tarkistuksiin. Tässä kuvassa kursiivi teksti osoittaa skenaarion, jota ei voi muokata vaiheen aikana. Se voi osoittaa myös aiemmat tiedot tai aiemmassa vaiheessa hyväksytyt tiedot, joita ei muuttaa.
 
-[![Budjettisuunnittelun yleinen malli](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Budjettisuunnittelun yleinen malli.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 Seuraavassa kuvassa yrityksen pääkonttori arvioi alkuperäisen budjetin perussummat ja jakaa summan myyntiosastojen välille. Myyntiosastot tekevät tämän jälkeen arvioinnit ja lähettävät ennusteen takaisin pääkonttorille, jossa budjettipäällikkö yhdistää ennusteet ja oikaisee lopullisen ennusteen. Lopuksi budjettipäällikkö lähettää oikaistut budjettisummat talousjohtajalle tarkistusta, lopullisia oikaisuja ja hyväksyntää varten.
 
-[![Budjettisuunnittelumallin esimerkki](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Budjettisuunnittelumallin esimerkki.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Budjettisuunnittelun organisaatiohierarkia
 
 Voit määrittää organisaatiohierarkian kunkin budjettisuunnitteluprosessin budjettisuunnittelun hierarkiaksi **Organisaatiohierarkia**-sivulla. Budjettisuunnittelun hierarkian ei tarvitse vastata muihin tarkoituksiin käytettävää vakio-organisaatiohierarkiaa. Koska tätä hierarkiaa käytetään tietojen yhdistämisessä ja jakelussa, sen rakenne kannattaa muokata erilaiseksi. Esimerkkimallissa myyntiorganisaatiot ovat budjetin ja talousosastot sisältävän pääkonttorin tason alla. Rakenne on luultavasti erilainen kuin myyntiosaston toimintojen hallinnassa käytettävä rakenne. Kuhunkin budjettisuunnitteluprosessiin voidaan määrittää vain yksi organisaatiohierarkia.
 
-Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Lisätietoja on kohdassa [Organisaatiot ja organisaatiohierarkiat](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Käyttäjän suojaus
 
@@ -95,7 +95,7 @@ Budjettisuunnittelun työnkulku kannattaa luoda jokaiselle budjetointihierarkian
 
 Budjettisuunnittelun budjetoinnin työnkulku luodaan **Budjetoinnin työnkulut** -sivulla. Prosessi muistuttaa muiden työnkulkujen luontia. Seuraavassa kuvassa on esimerkki pääkonttorin työnkulusta.
 
-[![Budjettisuunnittelun budjetoinnin työnkulku](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Budjettisuunnittelun budjetoinnin työnkulku.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Työnkulku sisältää seuraavat elementit:
 
@@ -143,11 +143,11 @@ Määrittäessäsi vaiheen kohdistuksen liität budjetti suunnitelman työnkulun
 
 Aiemmin tässä ohjeaiheessa esitetyssä esimerkkimallissa suoritetaan kohdistus, jossa siirretään summat pääkonttorin perusvaiheen budjettisuunnitelmasta ja -skenaarioista myyntiosaston arviointivaiheen toiseen budjettisuunnitelmaan ja -skenaarioihin. Seuraavassa kuvassa näytetään esimerkkimallin kyseinen osa.
 
-[![Vaiheen kohdistus](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Vaiheen kohdistus.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Lisäksi esimerkkimallissa yhdistely tehdään myyntiosaston lähetettyjen vaiheen budjettisuunnitelmista ja -skenaarioista pääkonttorin koontivaiheen päätason suunnitelmaan. Seuraavassa kuvassa näytetään esimerkkimallin kyseinen osa.
 
-[![Koostaminen](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Koostaminen.](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Prioriteetit
 
@@ -165,7 +165,7 @@ Budjettisummien sarakkeiden lisäksi voit määrittää projektin, ehdotetun pro
 
 Esimerkkimallissa voidaan luoda sarakkeet Edellisen vuoden myynti-, Sopimukset- ja Ennuste-skenaarioille. (Seuraava kuva sisältää malliin liittyvän osan). Tämän jälkeen voit eritellä yhden skenaarion tai useita skenaarioita erillisiksi sarakkeiksi kullekin tilikauden vuosineljännekselle niin, että myyntiosaston esimies voi syöttää kunkin kauden ennustesummat tarkasti.
 
-[![Sarakkeet](./media/columns.png)](./media/columns.png)
+[![Kuva mallin osista sarakkeiden lisäämistä varten.](./media/columns.png)](./media/columns.png)
 
 Voit myös määrittää, ovatko asetteluelementit (sarakkeet) muokattavissa ja asettelulle luotujen laskentataulukkomallien käytettävissä. Esimerkkimallin arviointivaiheessa käytetyssä asettelussa Ennuste-sarakkeet ovat muokattavissa, mutta Edellisen vuoden myynti- ja Sopimukset-sarakkeet vain luku -tilassa.
 
@@ -203,4 +203,7 @@ Viimeinen vaihe on budjettisuunnitteluprosessin aktivoiminen **Toiminnot**-valik
 
 Toinen **Toiminnot**-valikon hyödyllinen komento on **Näytä budjettiprosessin tila**. Tämä komento näyttää graafisesti prosessin budjettisuunnitelmat ja niihin liittyvät tiedot, kuten suunnitelmien työnkulun tilan, yhteenvedot summan ja yksikön mukaan sekä budjettisuunnitelmiin siirtymisen yhdellä napsautuksella.
 
-[![Budjetin suunnitteluprosessin tila](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Budjetin suunnitteluprosessin tila.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

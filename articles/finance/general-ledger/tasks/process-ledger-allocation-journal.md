@@ -2,11 +2,9 @@
 title: Käsittele kirjanpidon kohdistuskirjauskansio
 description: Tässä ohjeaiheessa kerrotaan, miten kohdistuspyyntö käsitellään Dynamics 365 Finance -ohjelmassa.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a7e8c3ef6fa85daec2a191b433b1ec4ece441ee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7d37b1a9869cc130786d0e8fde68184e04c881bad1f64c86943174213025db82
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765665"
 ---
 # <a name="process-ledger-allocation-journal"></a>Käsittele kirjanpidon kohdistuskirjauskansio
 
@@ -43,3 +41,6 @@ Tässä ohjeaiheessa kerrotaan, miten kohdistuspyyntö käsitellään. Voit luod
 9. Valitse **Kirjaa**.
 10. Valitse **Kirjaa**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

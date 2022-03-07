@@ -2,35 +2,30 @@
 title: Ostoskorin ja maksusivun yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412077"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982965"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Ostoskorin ja maksusivun yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Sähköisen kaupankäynnin sivuston ostoskorisivulla näkyvät kaikki nimikkeet, jotka asiakas on lisännyt koriin. Ostoskorisivu luodaan ostoskorimoduulin avulla. Ostoskorimoduuli on säilö, joka isännöi kaikkia niitä moduuleja, joita tarvitaan näytettäessä ostoskorin nimikkeet. Ostoskorimoduuli voi käyttää myös muita moduuleja tilauksen yhteenvedon ja mahdollisten asiakastilausta koskevien tarjouskoodien näyttämisessä.
 
@@ -42,7 +37,7 @@ Ostoskorisivu toimii ostoskassina. Se sisältää kaikki ostoskoriin lisätyt ni
 
 Seuraavassa kuvassa on esimerkki ostoskorisivusta, joka on luotu verkon moduulikirjaston ja Fabrikam-teeman avulla.
 
-![Esimerkki ostoskorisivusta](./media/cart2.PNG)
+![Esimerkki ostoskorisivusta.](./media/cart2.PNG)
 
 Ostoskorisivun päätekstiosassa näkyvät kaikki nimikkeet, jotka asiakas on lisännyt koriin. Kaikki käytettävissä olevat alennukset ovat esillä. Nämä alennukset sisältävät monimutkaisia alennuksia. Esimerkkejä ovat Osta 3 nimikettä ja saat 10 % alennusta tai Osta pullo ja reppu ja saat 10 % alennusta. Tilauksen yhteenvedon moduulissa on esimerkiksi alennusten, toimituksen ja verojen jälkeen maksettavaksi jäävä summa. Tarjouskoodimoduulin avulla asiakas voi käyttää tarjouskoodeja tai poistaa niitä.
 
@@ -58,7 +53,7 @@ Kassasivulla asiakkaat syöttävät tilauksen tekemisessä vaadittavat tiedot.
 
 Seuraavassa kuvassa on esimerkki kassasivusta, joka on luotu moduulikirjaston avulla.
 
-![Esimerkki kassasivusta](./media/Checkout.PNG)
+![Esimerkki kassasivusta.](./media/Checkout.PNG)
 
 Kassasivun päätekstiosa kerää tilauksen tiedot. Näitä tietoja ovat toimitusosoite, toimitusvaihtoehdot ja maksutiedot. Kassalle siirtyminen on vaiheittainen työnkulku, koska tiedot on syötettävä tietyssä järjestyksessä. Esimerkiksi toimitusosoite on syötettävä ennen toimituskustannusten laskemista ja maksun hyväksymistä.
 
@@ -88,7 +83,7 @@ Asiakas voi suorittaa kassaprosessin valmiiksi vierailijana tai kirjautuneena k�
 
 ### <a name="order-summary"></a>Tilauksen yhteenveto
 
-Kassaprosessi näyttää ostoskorin rivinimikkeiden yhteenvedon. Asiakas voi tarkistaa tilauksen ennen sen tekemistä. Rivinimikkeitä ei voi muokata kassatyönkulun aikana. Näkyvissä on kuitenkin linkki ostoskoriin siltä varalta, että asiakas haluaa siirtyä takaisin ja muokata rivinimikkeitä.
+Kassaprosessi näyttää ostoskorin rivinimikkeiden yhteenvedon. Asiakas voi tarkistaa tilauksen ennen tilauksen tekemistä. Rivinimikkeitä ei voi muokata kassatyönkulun aikana. Näkyvissä on kuitenkin linkki ostoskoriin siltä varalta, että asiakas haluaa siirtyä takaisin ja muokata rivinimikkeitä.
 
 Kun asiakas antaa toimitus- ja laskutustiedot, tilauksen yhteenvetoon päivittyy summa kanta-asiakkuuspisteiden, lahjakorttien ja muiden maksutapojen huomioimisen jälkeen.
 
@@ -107,3 +102,6 @@ Lisätietoja kassasivun muokkaamisesta on kohdassa [Kassamoduulin lisääminen s
 [Tuotetietosivujen yleiskatsaus](quick-tour-pdp.md)
 
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

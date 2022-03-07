@@ -1,7 +1,7 @@
 ---
 title: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
 description: Tässä aiheessa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallinnan lisäprosessit.
-author: Mirzaab
+author: ShylaThompson
 ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565252"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830831"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
 
@@ -53,14 +53,14 @@ Seuraavassa skenaariossa näytetään, miten varastonhallintaa käyttävä nimik
 1. Määritä **Tilinumero**-arvoksi *1001*.
 1. Määritä **Numero** tätä harjoitusta varten tunnistamasi ostotilauksen numeroon.
 
-    ![Nimikkeen saapumisen kirjauskansio.](../media/item-arrival-journal-header.png "Nimikkeen saapumisen kirjauskansio")
+    ![Nimikkeen saapumisen kirjauskansio](../media/item-arrival-journal-header.png "Nimikkeen saapumisen kirjauskansio")
 
 1. Luo kirjauskansion otsikko valitsemalla **OK**.
 1. Valitse **Kirjauskansion rivit**  -osasta **Lisää rivi** ja kirjoita seuraavat tiedot:
     - **Nimikenumero** – määritä arvoksi *M9200*. **Toimipaikka**, **Varasto** ja **Määrä** asetetaan 10 kuormalavan (1 000 kpl) varastotapahtumatietojen perusteella.
     - **Sijainti** – Määritä arvoksi *001*. Tämä tietty sijainti ei seuraa rekisterikilpiä.
 
-    ![Nimikkeen saapumisen kirjauskansion rivi.](../media/item-arrival-journal-line.png "Nimikkeen saapumisen kirjauskansion rivi")
+    ![Nimikkeen saapumisen kirjauskansion rivi](../media/item-arrival-journal-line.png "Nimikkeen saapumisen kirjauskansion rivi")
 
     > [!NOTE]
     > **Päivämäärä**-kenttä määrittää päivämäärän, jolloin tämän nimikkeen käytettävissä oleva määrä rekisteröidään varastoon.  

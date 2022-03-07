@@ -1,9 +1,9 @@
 ---
 title: Tuotemääritys – yleiskatsaus
 description: Tarve määrittää tuotteita vastaamaan erityisvaatimuksiin on muuttumassa säännöksi poikkeuksen sijaan sekä yritys- että kuluttajasuhteissa.
-author: t-benebo
+author: cvocph
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62411bff436d34e3d311b078b1bf8f886e5902d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e973b05b6e501288b4a0cee1fdc068aca78227425ae70c5d37cdfcd24f8cf5db
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983364"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773246"
 ---
 # <a name="product-configuration-overview"></a>Tuotemääritys – yleiskatsaus
 

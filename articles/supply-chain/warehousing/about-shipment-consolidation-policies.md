@@ -2,28 +2,27 @@
 title: Lähetyksen konsolidoinnin käytännöt
 description: Tässä ohjeaiheessa on lähetyksen konsolidointikäytäntöjen joustavan määrityksen mahdollistavan toiminnon yleiskatsaus.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f895b13b2e11d4cb341f80b3cfeb40ed998ccfc4
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.openlocfilehash: 11ee4beefed02425d4650de3e896e608d3d00ef5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654217"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577957"
 ---
 # <a name="shipment-consolidation-policies"></a>Lähetyksen konsolidoinnin käytännöt
+
+[!include [banner](../includes/banner.md)]
 
 Lähetyksen konsolidointikäytäntöjä käyttävän lähetyksen konsolidointiprosessin avulla voidaan tehdä automaattinen lähetyksen konsolidointi automaattisen ja manuaaliseen varastoon vapautuksen aikana. Ennen tätä toimintoa käytössä ollut automatisoitu konsolidointi käyttöönotettiin kiinteäsit koodatuissa kentissä, ja se perustui varastolle määritettyyn **Konsolidoi lähetys varastoon vapautettaessa** -kenttään.
 
@@ -135,3 +134,6 @@ Seuraavassa taulukossa on yhteenveto siitä, miten lähetyksen konsolidointi toi
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Lähetyksen konsolidointikäytäntöjen määrittäminen](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

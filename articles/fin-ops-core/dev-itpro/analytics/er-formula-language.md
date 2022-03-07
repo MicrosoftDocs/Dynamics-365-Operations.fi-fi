@@ -3,19 +3,24 @@ title: Sähköisen raportoinnin kaavakieli
 description: Tässä ohjeaiheessa on tietoja siitä, miten käyttää kaavakieltä sähköisessä raportoinnissa (ER).
 author: NickSelin
 ms.date: 05/04/2020
+ms.topic: article
+ms.prod: ''
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ef0b9e411fabca1427b985eb51640bfd2a0d59318a456cb5b1ecdea1445fab5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750621"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223983"
 ---
 # <a name="electronic-reporting-formula-language"></a>Sähköisen raportoinnin kaavakieli
 
@@ -112,15 +117,15 @@ Kun lauseke viittaa rakenteelliseen tietolähteeseen, polun määritettä voidaa
 
 Jos rakenteisen tietolähteen polku alkaa at-merkillä (@), se on suhteellinen polku. At-merkki näytetään käytettävän hierarkkisen puurakenteen absoluuttisen polun jäljellä olevan osan sijasta. Seuraavassa kuvassa on esimerkki. Tässä absoluuttinen polku `Ledger.'accountingCurrency()'` ilmaisee, että kirjanpitovaluutan arvo **kirjanpidon** tietolähteestä syötetään **AccountingCurrency**-kenttään tietomallissa.
 
-![Esimerkki absoluuttisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla.](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Esimerkki absoluuttisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Seuraavassa kuvassa oleva esimerkki osoittaa, miten suhteellinen polku on käytössä. Suhteellinen polku `@.AccountNum` ilmaisee, että **AccountNum**-kentän **Intrastat**-tietolähteen (joka näkyy tietomallin hierarkkisen puun **AccountNum**-kentän yläpuolella) käytetään syöttämään asiakkaan tai toimittajan tilinumero tietomallin **AccountNum**-kenttään.
 
-![Esimerkki relatiivisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla.](./media/ER-FormulaLanguage-RelativePath1.png)
+![Esimerkki relatiivisesta polusta ER-mallin yhdistämismääritysten suunnittelusivulla](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Jäljellä oleva osa absoluuttisesta polusta näkyy myös [ER kaavaeditorissa](general-electronic-reporting-formula-designer.md).
 
-![ER-kaavan suunnittelijasivun absoluuttisen polun jäljellä oleva osa.](./media/ER-FormulaLanguage-RelativePath2.png)
+![ER-kaavan suunnittelijasivun absoluuttisen polun jäljellä oleva osa](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Lue lisätietoja kohdasta [Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa](relative-path-data-bindings-er-models-format.md).
 

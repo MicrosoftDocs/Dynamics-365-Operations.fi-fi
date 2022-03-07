@@ -2,28 +2,25 @@
 title: Myyntilaskun luominen
 description: '**Myyntitilauksen myyntilasku** on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle.'
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f5b9866fc7afba205b84b372c6a204ec4c8f64d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 369f0737ee4026c32ffbae6b11b5815c5548d83d564aebf2eae4b1c246e73508
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723868"
 ---
 # <a name="create-a-customer-invoice"></a>Myyntilaskun luominen
 
@@ -167,3 +164,6 @@ Seuraavat kentät muuttaa kirjausprosessin toimintaa.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

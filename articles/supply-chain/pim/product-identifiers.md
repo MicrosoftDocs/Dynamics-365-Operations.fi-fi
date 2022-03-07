@@ -1,34 +1,31 @@
 ---
 title: Tuotetunnukset
 description: Tässä ohjeaiheessa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529183"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063338"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,9 +39,9 @@ Dynamics 365 Supply Chain Managementissa tuotteen ensisijainen tunniste on tuote
 
 Tuotenumeroa ei usein ole luotu alun perin Dynamics 365 Supply Chain Management -sovelluksessa. Sen sijaan se liitetään tuotteen elinkaaren hallinta (PLM)- tai tuotteen tiedonhallinta (PDM) -järjestelmään. Tässä tapauksessa tietoyksiköitä käytetään tuotteiden ja tuotevarianttien tuonnissa. Supply Chain Management käyttää sitten numeroita kaikissa toiminnoissa.
 
-Kiinnitä erityistä huomiota tuotenumeroihin Supply Chain Managementin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Hyvässä tuotetunnuksessa on enintään 15 merkkiä. Merkkejä tulisi olla alle 10 ja luokittelevia merkkejä enintään viisi. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
+Kiinnitä erityistä huomiota tuotenumeroihin Supply Chain Managementin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Tuotetunnuksen pitäisi yleensä olla enintään 20 merkkiä, mutta yleensä on suositeltavaa käyttää alle 10:tä merkkiä ja enintään 5:tä luokittelumerkkiä. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
 
-Kun käytät Common Data Servicea, Supply Chain Managementissa oleva tuotenumero on tuotenumero myös Common Data Servicessa. Tuotevariantit synkronoidaan Common Data Servicen kanssa erillisinä tuotteina.
+Kun käytät Microsoft Dataversea, Supply Chain Managementissa oleva tuotenumero on tuotenumero myös Microsoft Dataversessa. Tuotevariantit synkronoidaan Dataverseen erillisinä tuotteina.
 
 ## <a name="item-number-and-product-dimensions"></a>Nimikenumero ja tuotedimensiot
 
@@ -75,7 +72,7 @@ Hakunimi voi sisältää myös asiakkaan tai toimittajan tuotetunnuksen tai jonk
 
 Voit ylläpitää vapautettujen tuotteiden niitä nimikenumeroita, nimikkeiden nimiä ja nimikkeiden kuvauksia, joita asiakas tai toimittaja käyttää. Viitteet näkyvät ulkoisissa asiakirjoissa, kuten myynti- ja ostotilauksissa sekä pakkausluetteloissa ja laskuissa. Nykyisessä Supply Chain Management -versiossa ulkoiset viitteet eivät näy ydintoimintojen sivuilla. Ainoa poikkeus on toimittajan nimiketunnus. Tämä numero näkyy **Tuotetiedot**-valintaikkunassa, jos vapautetulle tuotteelle on määritetty oletustoimittaja.
 
-Voit ylläpitää ulkoisia tuotetunnisteita vapautetun tuotteen, vapautetun tuotevariantin, asiakkaan tai asiakas sekä sekä toimittajan tai toimittajaryhmän perusteella.
+Voit ylläpitää ulkoisia tuotetunnisteita vapautetun tuotteen, vapautetun tuotevariantin, asiakkaan, asiakasryhmän, toimittajan tai toimittajaryhmän perusteella.
 
 Seuraa **Vapautetut tuotteet** -sivulla jotakin näistä vaiheista.
 
@@ -90,7 +87,7 @@ Voit liittää **Ulkoiset nimikekuvaukset** -sivulla asiakkaan tai toimittajan n
 | kuvaus | Nimi, jonka asiakas liittää nimikkeeseen | Nimi, jonka toimittaja liittää nimikkeeseen |
 | Ulkoinen nimiketeksti | Asiakkaan nimikkeen kuvaus | Toimittajan nimikkeen kuvaus |
 
-Jos useat asiakkaat tai toimittajat käyttävät samoja nimikenumeroita (kuten ostoyhdistyksessä tai kaupparyhmä voidaan tehdä), voit luoda asiakas- tai toimittajaryhmiä, jotka yksinkertaistavat ulkoisten tuotetietojen ylläpitämistä.
+Jos useat asiakkaat tai toimittajat käyttävät samoja nimikenumeroita (kuten ostoyhdistyksessä tai kaupparyhmässä voidaan tehdä), voit luoda asiakas- tai toimittajaryhmiä, jotka yksinkertaistavat ulkoisten tuotetietojen ylläpitämistä.
 
 - Siirry kohtaan **Myynti** &gt; **Asetukset** &gt; **Nimikkeet** &gt; **Ulkoinen nimikekuvaus**, kun haluat luoda ja ylläpitää asiakasryhmiä ja liittyviä nimikenumeroita. Voit liittää asiakkaita ryhmään valitsemalla **Myyntireskontra** &gt; **Asiakkaat** &gt; **Kaikki asiakkaat** ja määrittämällä sitten **Oletusmyyntitilaukset**-pikavälilehdessä arvon **Nimike - asiakasryhmä** -kentässä.
 - Siirry kohtaan **Hankinta** &gt; **Asetukset** &gt; **Ulkoisten nimikekuvausten ryhmä** ja luo toimittajaryhmien liittyvät nimikenumerot ja ylläpidä niitä. Voit liittää toimittajia ryhmään valitsemalla **Ostoreskontra** &gt; **Toimittajat** &gt; **Kaikki toimittajat** ja määrittämällä sitten **Oletusostotilaukset**-pikavälilehdessä arvon **Nimike - toimittajaryhmä** -kentässä.
@@ -109,7 +106,7 @@ Voit ylläpitää viivakoodeja valitsemalla **Vapautetut tuotteet** -sivun **Var
 
 Sähköisessä kaupankäynnissä on tärkeää, että kaikki osapuolet puhuvat samaa kieltä ja viittaavat tuotteisiin samoilla tunnuksilla. Tämän vuoksi joillakin toimialoilla on käytössä [GTIN](https://www.gs1.org/id-keys/gtin), mikä on yleinen GS1:n edistämä nimiketunnusjärjestelmä.
 
-Suosittelemme säilyttämään GTIN:n viivakoodina. Voit kuitenkin ylläpitää sitä myös **Nimike - GTIN** -sivulla. Voit avata tämän sivun valitsemalla **Vapautetut tuotteet** -sivun **Varastonhallinta**-välilehden **Varasto**-ryhmässä **GTIN-koodit**. Huomaa, että GTIN-koodia ei ylläpidetä yleisenä numerona. Sen sijaan sitä ylläpitää yritys.
+Suosittelemme säilyttämään GTIN:n viivakoodina. Voit kuitenkin ylläpitää sitä myös **Nimike - GTIN** -sivulla. Voit avata tämän sivun valitsemalla **Vapautetut tuotteet** -sivun **Varastonhallinta**-välilehden **Varasto**-ryhmässä **GTIN-koodit**. GTIN-koodia ei ylläpidetä yleisenä numerona. Sen sijaan sitä ylläpitää yritys.
 
 Supply Chain Managementissa määrität varastotoimintojen pakkausvariantit määrittämällä tietyn mittayksikön. Esimerkiksi nimike voidaan tallentaa kappaleina, kuuden kappaleen nippuina, 18 kappaleen lokeroissa tai kokonaisina kuormalavoina. Jokaiselle pakkausvariantille määritetään mittayksikkö. Koska GTIN liittyy yleensä tuotteen pakkausyksikköön, **Nimike - GTIN** -sivulla voi ylläpitää tuotteen ja mittayksikön useita GTIN-koodeja. Voit kuitenkin käyttää samaa GTIN-koodia vain kerran yrityksen eri nimikkeissä tai tuotevarianteissa.
 
@@ -127,12 +124,12 @@ Ulkoisten koodien avulla tehtävään tuotehakuun ei ole valitettavasti mitään
 |-------------|--------------------|--------------------|----------|
 | Tuotteet V2 | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero voidaan luoda automaattisesti tuonnin yhteydessä tuotenumeron yksiköstä ja numerosarjasta riippuen. |
 | Tuotevariantit | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero voidaan luoda automaattisesti tuonnin yhteydessä tuotenimikkeistömallista riippuen. Voit kuitenkin tuoda minkä tahansa tuotenumeron. Tuotenumeron ei tarvitse noudattaa tuotenimikkeistömallin rakennetta. |
-| Tuotekäännökset | Tuotteen nimi, tuotteen kuvaus | Tuotteen nimi, tuotteen kuvaus | Tämä yksikkö korvaa minkä tahansa kielen. Huomaa, että kun yrityksen ensisijaisen kielen kuvaus on korvattu, tuotteen nimi ja kuvaus muuttuvat. |
+| Tuotekäännökset | Tuotteen nimi, tuotteen kuvaus | Tuotteen nimi, tuotteen kuvaus | Tämä yksikkö korvaa minkä tahansa kielen. Kun yrityksen ensisijaisen kielen kuvaus on korvattu, tuotteen nimi ja kuvaus muuttuvat. |
 | Vapautetun tuotteen luominen V2 | Nimikenumero, tuotenumero, nimikkeen haun nimi| Nimikenumero, tuotenumero, nimikkeen haun nimi, tuotteen haun nimi, tuotteen nimi | Tämä yksikkö voi olla haastava, kun numerosarjoja käytetään luotaessa uusia vapautettuja tuotteita. Sekä **nimikenumeron** että **tuotenumeron** numerosarjalla on vaikutusta. **Nimikenumeron** numerosarja on yrityskohtainen, kun taas **tuotenumeron** numerosarja on yleinen. Tämän vuoksi **Nimiketunnus**-numerosarjan käyttöä ei suositella otettaessa käyttöön uusia tuotteita. Kun yksikköä käytetään aiemmin luodun tuotteen julkaisussa, yksikölle on tietysti annettava tuotenumero. Lisätietoja on tämän ohjeaiheen Tuotteiden ja nimikkeiden numerosarjat -osassa. |
 | Vapautetut tuotevariantit | Nimikenumero, tuotedimensiot, tuotenumero | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus, tuotteen dimensiot | Tätä yksikköä voi käyttää **Tuotevariantit**-yksikön tapaan, kun uusia tuotteita luodaan joko tuotenimikkeistömallin seuraamista tai variantin omien tuotenumeroiden käyttämistä varten. |
 | Asiakkaiden ulkoinen nimikekuvauus | Asiakkaan nimikenumero, asiakkaan nimikkeen nimi, asiakkaan kuvaus, asiakastili | Asiakkaan nimikenumero, asiakkaan nimikkeen nimi, asiakkaan kuvaus, asiakastili | Asiakkaista koostuva ryhmä (esimerkiksi ostajayhdistys) voidaan koota yhdeksi ryhmäksi **Ulkoisen nimikekuvauksen asiakasryhmät** -yksikön avulla. |
 | Toimittajien ulkoinen nimikekuvaus | Toimittajan nimikkeen tunnus, toimittajan nimikkeen nimi, toimittajan kuvaus, toimittajatili | Toimittajan nimikkeen tunnus, toimittajan nimikkeen nimi, toimittajan kuvaus, toimittajatili | Toimittajista koostuva ryhmä (esimerkiksi myyntiyhdistys toimialan organisaatio) tai voidaan koota yhdeksi ryhmäksi **Ulkoisen nimikekuvauksen toimittajaryhmät** -yksikön avulla. |
-| Nimikkeen viivakoodi | Viivakoodi | Viivakoodi | Huomaa, että tuonnin aikana on käytettävä kohdejärjestelmässä määritettyä viivakoodiasetusta. Tuodut viivakoodiviitteet tarkistetaan viivakoodiasetusten perusteella ja hylätään, jos viivakoodit eivät vastaa viivakoodiasetuksissa määritettyjä vaatimuksia. |
+| Nimikkeen viivakoodi | Viivakoodi | Viivakoodi | Tuonnin aikana on käytettävä kohdejärjestelmässä määritettyä viivakoodiasetusta. Tuodut viivakoodiviitteet tarkistetaan viivakoodiasetusten perusteella ja hylätään, jos viivakoodit eivät vastaa asetuksissa määritettyjä vaatimuksia. |
 | Vapautettujen tuotteiden ulkoiset koodit | Ulkoinen koodi | Ulkoinen koodi, ulkoisten koodien luokat, nimikenumero | Ulkoiset koodit yrityksen mukaan. Tuonnissa on viitattava määritettyyn koodin luokkaan. Tuo koodiluokat **Vapautettujen tuotteiden ulkoiset koodiluokat** -yksikön avulla. |
 | Vapautettujen tuotevarianttien ulkoiset koodit | Ulkoinen koodi | Ulkoinen koodi, ulkoisten koodien luokat, nimikenumero, tuotedimensiot | Ulkoiset koodit yrityksen mukaan. Tuonnissa on viitattava määritettyyn koodin luokkaan. Tuo koodiluokat **Vapautettujen tuotteiden ulkoiset koodiluokat** -yksikön avulla. Tämä yksikkö viittaa tuotevariantteihin tuotetunnuksen ja tuotedimension mukaan. |
 | Vapautettujen tuotevarianttien ulkoiset koodit tuotenumeron tunnisteen mukaan | Ulkoinen koodi | Ulkoinen koodi, ulkoisten koodien luokat, tuotenumero | Ulkoiset koodit yrityksen mukaan. Tuonnissa on viitattava määritettyyn koodin luokkaan. Tuo koodiluokat **Vapautettujen tuotteiden ulkoiset koodiluokat** -yksikön avulla. Tämä yksikkö viittaa tuotevariantteihin variantin tuotetunnuksen mukaan. (Seuraavasta pääjulkaisusta) |
@@ -161,13 +158,13 @@ Seuraavassa taulukossa on yhteenveto tuonnin ja manuaalisen luonnin tulokset, ku
 | Tuotenumeron numerosarja | Nimikenumeron numerosarja | Nimikenumeron yhdistämismääritys | Tuotenumeron yhdistämismääritys | Yksikön tuonnin tulos | Manuaalisen luonnin tulos | Johtopäätökset |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
 | Manuaalinen = ei | Manuaalinen = ei | Ei vastaavuusmäärityksiä | Ei vastaavuusmäärityksiä | Tuotenumerot käyttävät **tuotenumeron** numerosarjaa. Nimikenumerot käyttävät **nimikenumeron** numerosarjaa. | Tuotenumerot käyttävät **tuotenumeron** numerosarjaa. Nimikenumerot käyttävät **nimikenumeron** numerosarjaa. | Tämän konfiguroinnin yhteydessä tuotenumerot noudattavat tuotenumerosarjaa, ja nimiketunnukset noudattavat nimiketunnusjärjestystä. Tämä määritys ei kuitenkaan toimi, jos tuotavia kohteita on useita (rivejä). |
-| Manuaalinen = ei | Manuaalinen = kyllä | Luo automaattisesti | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **nimikenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumerot seuraavat tuotenumeron numerosarjaa. Tämä on suositeltu tapa tuoda bulkkituotteet vapautetun Product Creation v2 -tietoyksikön avulla. |
-| Manuaalinen = ei | Manuaalinen = kyllä | Ei vastaavuusmäärityksiä | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumerot käyttävät tuotenumeron numerosarjaa. Tämä määritys ei kuitenkaan toimi, jos tuotavia kohteita on useita (rivejä). |
+| Manuaalinen = ei | Manuaalinen = kyllä | Luo automaattisesti | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **nimikenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumerot seuraavat tuotenumeron numerosarjaa. Tämä on suositeltu tapa tuoda bulkkituotteet vapautetun Product Creation v2 -tietoyksikön avulla.<br><br>Voit käyttää tätä menetelmää vain, kun nimikkeitä tuodaan joukoittain (useita rivejä) ja kun et ole luomassa nimikkeitä käyttöliittymän kautta. Jos tuotteita on sekä tuotava joukkoina että luotava käyttöliittymän avulla, käytä sen sijaan tämän taulukon seuraavan rivin menettelyä. Jos haluat vaihtaa joukkotuonnista tuotteiden manuaaliseen tuomiseen ja luomiseen käyttöliittymän avulla, sinun on manuaalisesti muokattava nimikenumeron numerosarjan **Seuraava numero** vastaamaan tuotenumeron numerosarjan **Seuraavaa numeroa**. Sitten voit vaihtaa menetelmää tämän taulukon seuraavalla rivillä. |
+| Manuaalinen = ei | Manuaalinen = kyllä | Ei vastaavuusmäärityksiä | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumerot käyttävät tuotenumeron numerosarjaa. Tämä määritys ei kuitenkaan toimi, jos tuotavia kohteita on useita (rivejä).<br><br>tätä menetelmää on käytettävä, jos sinun on sekä tuotava tuotteita entiteettejä käyttäen (vain yksi rivi voidaan tuoda kerrallaan) että luotava tuotteita käyttöliittymän avulla. |
 | Manuaalinen = kyllä | Ei käytettävissä | Ei käytettävissä | Luo automaattisesti | Näyttöön tulee virhesanoma, jonka mukaan numerosarjaa ei löydetä. | **Nimikenumeron** numerosarjan mukaan | Tätä asetusta ei tueta tuonnin yhteydessä. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Tuoteyksikön tunniste (vie kaikki tuotetunnisteet)
 
-Tuoteyksikön tunnistemalli luotiin, jotta CDS:n versio 1.0 voidaan valmistella kaikilla tuotteeseen viittaavilla tunnisteilla. Tehtävää on yksinkertaistettu keräämällä kaikki tunnisteet yhteen yleiseen tunnistetauluun, jolloin ne voidaan vietä yhtenä mallina. Huomaa, että tämä CDS-versio ei käytä tuotetunnusten mallia. **Tuoteyksikön Common Data Service -tunnisteyksikkö** -yksiköllä ja tällä prosessilla onkin vain vähän käytännön merkitystä ja se tulee todennäköisesti muuttumaan myöhemmin.
+Tuoteyksikön tunnistemalli luotiin, jotta Dataversen versio 1.0 voidaan valmistella kaikilla tuotteeseen viittaavilla tunnisteilla. Tehtävää on yksinkertaistettu keräämällä kaikki tunnisteet yhteen yleiseen tunnistetauluun, jolloin ne voidaan vietä yhtenä mallina. Huomaa, että tämä Dataversen versio ei käytä tuotetunnusten mallia. **Tuoteyksikön Common Data Service -tunnisteyksikkö** -yksiköllä ja tällä prosessilla onkin vain vähän käytännön merkitystä ja se tulee todennäköisesti muuttumaan myöhemmin.
 
 Tuotetunnistetaulukko on yleinen taulukko, jonka tiedot täytetään kaikista pääyrityksen viitetaulukoista toistuvana erätyönä. Valitse yleisten päätietojen vaikutusalueen määritelmäksi yritys ja tuoteluokkahierarkia. Yleisen tuotetunnuksen taulun luonti on rajoitettu tuotteisiin, jotka on vapautettu valitulle yritykselle ja tuotteisiin, jotka ovat **Common data service** -roolin tuotehierarkian jäseniä tuoteluokkahierarkiassa.
 
@@ -175,11 +172,11 @@ Tämä prosessi olettaa, että tuotteen päätietoja ylläpidetään ensisijaise
 
 Määritä ympäristö näiden ohjeiden avulla.
 
-1. Valitse CDS:n luokkahierarkia. Jos **Luokkahierarkian rooliliitokset** -sivulla ei ole liitetty hierarkiaa **Common data service** -rooliin, sinun on luotava uusi liitos. Valitse **Common data service** -rooli ja liitä sitten CDS-palveluun synkronoitavaa tuotevalikoimaa edustava luokkahierarkia.
+1. Valitse Dataversen luokkahierarkia. Jos **Luokkahierarkian rooliliitokset** -sivulla ei ole liitetty hierarkiaa **Common data service** -rooliin, sinun on luotava uusi liitos. Valitse **Common data service** -rooli ja liitä sitten Dataverseen synkronoitavaa tuotevalikoimaa edustava luokkahierarkia.
 2. Valitse yleisen tuotteen päätietojen yritys. Valitse **Tuotetietojen hallintaparametrit** -sivun **Tuotemääritteet**-välilehdessä pääyritys, jossa tuotetta ja nimiketunnuksia pääasiassa ylläpidetään.
 3. Määritä vietävät tunnisteen koodityypit ja koodit. Siirry kohtaan **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Tuotteen tunnistekoodit**. Voit muodostaa tunnistekoodityyppejä valitsemalla **Luo koodit**. Valitun yrityksen tunnisteen jokaiselle tyypille luodaan merkintä, jonka tyyppi on Koodi.
 
-    Huomaa, että jokaiselle viivakoodiasetukselle luodaan koodin tyyppi. Jokaiselle ulkoisen koodin luokalle luodaan koodityyppi.
+    Jokaiselle viivakoodiasetukselle luodaan koodin tyyppi. Jokaiselle ulkoisen koodin luokalle luodaan koodityyppi.
 
     Voit nyt ylläpitää koodityyppiluetteloa. Voit muuttaa koodia, nimeä tai kuvausta. Voit myös poistaa koodityyppejä. Poistettuja koodityyppejä ei käytetä yleisen tuoteyksikön tunnisteiden taulukoiden täyttämisessä.
 
@@ -190,3 +187,6 @@ Voit nyt käyttää **Tuoteyksikön Common Data Service -tunnisteen yksikkö**-,
 ## <a name="related-topic"></a>Liittyvä aihe
 
 [Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Pääsuunnittelu – toimipaikan kattavuus, varasto ei pakollinen
 description: Tässä aiheessa kuvataan, miten suunnitellaan nimike, jolle on suunniteltu toimipaikan dimensio kattavuutta varten.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe5cb5f9d21afcd12f3041bb9acc89fff360c95e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b306fec702f608d00c3459cecd957eb251361c0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970453"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187575"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Pääsuunnittelu – toimipaikan kattavuus, varasto ei pakollinen
 
@@ -47,8 +45,7 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Pääsuunnittelu ja multisite-toiminnot – yleiskatsaus](master-plan-multisite-functionality.md)
 
@@ -62,3 +59,6 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

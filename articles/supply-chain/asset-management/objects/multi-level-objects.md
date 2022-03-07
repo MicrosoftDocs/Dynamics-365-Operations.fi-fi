@@ -1,12 +1,10 @@
 ---
 title: Monitasoiset resurssit
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit luoda ja poistaa monitasoisia resursseja.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd4da57c3849095909226db53c23b3c25301acdc
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6c656ee9422bbcbb095305fad835fc18eceaeb89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021319"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839676"
 ---
 # <a name="multi-level-assets"></a>Monitasoiset resurssit
 
@@ -61,3 +59,6 @@ Jos resurssiin liittyy alaresursseja, voit poistaa sen vain, jos mihinkään res
 
 > [!NOTE]
 > Jos et voi poistaa resurssia tämän menettelyn avulla, toinen tapa käsitellä poistoa on määrittää resurssin elinkaaren tila tätä tarkoitusta varten. Voit esimerkiksi määrittää elinkaareen **Hävikki**- tai **Poistettu**-tilan **Resurssien elinkaaritilat** -sivulla.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

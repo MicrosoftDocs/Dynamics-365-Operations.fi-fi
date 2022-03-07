@@ -1,31 +1,28 @@
 ---
-title: Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
+title: Useita alennuskausia kattavien laskujen tilittäminen yhdellä maksulla
 description: Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, miten käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 6c86423c9e3453d8be11e6bdbc3484647e26e9eeec59c9a2e888cc5a2b2b5592
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4442993"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769056"
 ---
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
+# <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Useita alennuskausia kattavien laskujen tilittäminen yhdellä maksulla
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +66,7 @@ Jos Erik luo maksukirjauskansion, jotta laskut voidaan tilittää kokonaan 1. he
 | Valitut ja korostetut | Normaali            | FTI-10042 | 4032    | 25.6.2015 | 25.7.2015 | 10042   | 1 000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Osittainen tilitys 29. kesäkuuta
-Asiakas 4032 voi maksaa laskun osissa, esimerkiksi puolet kustakin laskusta. Erik luo maksun asiakkaalle 4032 ja avaa sitten **Selvitä tapahtumat** -sivun. Erik merkitsee **Selvitä tapahtumat** -sivulla tilitettäviksi kaikki kolme laskuriviä. Hän syöttää kullekin riville tilitettävän summan asiakkaan antamien ohjeiden mukaan. Kun Erik valitse jonkin rivin, hän näkee rivin alennussumman ja käytettävän käteisalennuksen summan. Koska asiakas maksaa puolet laskusta, Erik näkee, että **Käteisalennussumma**-kentässä laskun FTI 10042 arvo on **20,00**, mutta **Käytetty käteisalennus** -kentän arvo on **10,00**. Maksettava summa on 1 485,00.
+Asiakas 4032 voi maksaa laskun osissa, esimerkiksi puolet kustakin laskusta. Erik luo maksun asiakkaalle 4032 ja avaa sitten **Selvitä tapahtumat** -sivun. Erik merkitsee **Selvitä tapahtumat** -sivulla tilitettäviksi kaikki kolme laskuriviä. Erik syöttää kullekin riville tilitettävän summan asiakkaan antamien ohjeiden mukaan. Kun Erik valitse jonkin rivin, hän näkee rivin alennussumman ja käytettävän käteisalennuksen summan. Koska asiakas maksaa puolet laskusta, Erik näkee, että **Käteisalennussumma**-kentässä laskun FTI 10042 arvo on **20,00**, mutta **Käytetty käteisalennus** -kentän arvo on **10,00**. Maksettava summa on 1 485,00.
 
 | Merkitse                     | Käytä käteisalennusta | Tosite   | Tili | Päivämäärä      | Eräpäivä  | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Valuutta | Täsmäytettävä summa |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -77,7 +74,7 @@ Asiakas 4032 voi maksaa laskun osissa, esimerkiksi puolet kustakin laskusta. Eri
 | Valittu                 | Normaali            | FTI-10041 | 4032    | 25.6.2015 | 25.7.2015 | 10041   | 1 000,00                             |                                       | USD      | 495,00           |
 | Valitut ja korostetut | Normaali            | FTI-10042 | 4032    | 25.6.2015 | 25.7.2015 | 10042   | 1 000,00                             |                                       | USD      | 490,00           |
 
-Arnie voi myös syöttää manuaalisesti maksusumman 1 485,00 ennen kuin hän avaa **Selvitä tapahtumat** -sivun. Jos Arnie manuaalisesti syöttää maksusumman ja merkitsee siten kaikki kolme tapahtumaa, mutta hän ei muuta **Täsmäytettävä summa** -kentän arvoa kunkin tapahtuman osalta, hän saa seuraavan sanoman, kun hän sulkee sivun:
+Arnie voi myös syöttää manuaalisesti maksusumman 1 485,00 ennen kuin hän avaa **Selvitä tapahtumat** -sivun. Jos Arnie manuaalisesti syöttää maksusumman ja merkitsee siten kaikki kolme tapahtumaa, mutta hän ei muuta **Täsmäytettävä summa** -kentän arvoa kunkin tapahtuman osalta, hän saa seuraavan sanoman, kun sivu sulkeutuu:
 
 > Merkittyjen tapahtumien kokonaissumma poikkeaa kirjauskansion summasta. Muutetaanko kirjauskansion summa?
 
@@ -101,3 +98,6 @@ Arnie tarkastelee tietoja **Asiakastapahtumat**-sivulla.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

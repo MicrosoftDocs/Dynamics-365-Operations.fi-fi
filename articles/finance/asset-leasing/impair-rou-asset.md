@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 3b648075a681fb01720149aac4f479dccf963489
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442979"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5229523"
 ---
 # <a name="impair-right-of-use-assets"></a>Käyttöoikeusomaisuuserän arvon alentaminen
 
@@ -102,3 +101,6 @@ Seuraavissa taulukoissa ovat arvot, jotka on määritetty **Yleistiedot**- ja **
 7. Voit tarkastella arvonalennuksen nettovaikutusta siirtymällä velka- ja resurssitapahtumien taulukoihin. Huomaa, että arvonalennuksen kulu on vähentänyt käyttöoikeusomaisuuserää, mutta vuokrasopimusvelan kirjanpitosumma ei ole muuttunut.
 
 Arvonalennuksella on toinen vaikutus, joka tulee ottaa huomioon. Koska käyttöoikeusomaisuuserän summa on nyt pienempi kuin vuokrasopimusvelka, summa on vähennettävä eri tavalla kuin ennen. Resurssi on nyt vähennetty tasapoistomenetelmällä kaikista vuokrasopimuksen jäljellä olevista 84 kuukaudesta tapahtumapäivämäärästä alkaen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

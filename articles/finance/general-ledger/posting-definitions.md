@@ -2,28 +2,25 @@
 title: Kirjausmääritykset
 description: Tässä artikkelissa on tietoja määritysten kirjaamisesta ja niiden määrittämisestä ja linkittämisestä. Voit käyttää tuetuissa kirjaustyypeissä ja asiakirjoissa kirjausmäärityksiä kirjausprofiilien sijaan, kun haluat luokitella kirjanpitoyksiköiden päätilit ja taloushallinnon dimensiot.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, LedgerParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15741
 ms.assetid: 1495e7e0-2e39-464c-8da9-f55b1ca1c6bb
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22a7b0acae02738e4f14905edb13fac1da0d0213
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22a261c1ac139d5caa51e05ff90675eca89e40fd804ff7e87a7c69a18c1f3e4e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442792"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753501"
 ---
 # <a name="posting-definitions"></a>Kirjausmääritykset
 
@@ -62,3 +59,6 @@ Seuraavat rajoitukset ovat voimassa, kun luot kirjausmääritysten linkkejä:
 Lisätietoja on kohdassa [Määritysesimerkkien kirjaaminen](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,31 +1,33 @@
 ---
 title: Maksutiheyksien määrittäminen
 description: Microsoft Dynamics 365 Human Resources käyttää maksun toistuvuuksia vuosittaisen etuuspalkan laskemiseen, määrittää etuuspalkan summan, jonka työntekijä maksaa kullekin maksukaudelle, ja määrittää, kuinka usein toimittajille maksetaan.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a5d562b64a161891bf34b0dfa94fbf68325e21b5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee21f24b2da8501888ac3c0a8b9a35c24785aa4f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418353"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069577"
 ---
 # <a name="set-up-payment-frequencies"></a>Maksutiheyksien määrittäminen
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources käyttää maksun toistuvuuksia vuosittaisen etuuspalkan laskemiseen, määrittää etuuspalkan summan, jonka työntekijä maksaa kullekin maksukaudelle, ja määrittää, kuinka usein toimittajille maksetaan.
 
@@ -56,3 +58,6 @@ Muuntokertoimet-kentät määrittävät muuntokertoimen maksutaajuuksista vakiom
    | **Tunnittainen muuntokerroin** | Toimitustiheyden vuosittainen muuntokerroin. Esimerkiksi kuukausittaisen maksutiheyden vuosittainen muuntokerroin on seuraava: </br></br>(12 kuukausimaksua/2080 tuntia) = 0,005769
 
 4. Valitse **Tallenna**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

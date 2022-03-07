@@ -2,42 +2,36 @@
 title: Luokan saapumissivun täydentäminen
 description: Tässä ohjeaiheessa kerrotaan luokkasivujen täydentämisestä Dynamics 365 Commerce -sovelluksessa.
 author: v-chgri
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771004"
 ---
 # <a name="enrich-a-category-landing-page"></a>Luokan saapumissivun täydentäminen
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan luokkasivujen täydentämisestä Dynamics 365 Commerce -sovelluksessa.
 
-## <a name="overview"></a>Yleiskatsaus
-
 Commerce tarjoaa oletusluokan saapumissivun, jota käytetään, kun luokkatiedot näytetään. Oletusluokkasivulla on pakollisia elementtejä, kuten tarkentimia, luokiteltua tuotesijoittelua, lajitteluvaihtoehtoja, valinnan yhteenveto ja sivutuksen ohjausobjekteja. 
 
 Oletusluokkasivun sijaan voidaan käyttää luokan täydennettyä saapumissivua. Siinä on enemmän sisältöä ja erityisiä elementtejä. Tyypilliseen täydennykseen voi kuulua luokkakohtaisen markkinointisisällön lisääminen luokkasivulle. Tämä sisältö voi sisältää eri luokkien tuotesijoittelua ristiinmyyntitarkoituksia, toimituksellisia luetteloita, kuvia, videoita ja muuta tekstiä varten. Voit muokata oletusluokkasivua tai määrittää tietylle luokalle toisen luokkasivun.
 
-![Täydennetty luokan saapumissivu](./media/CategoryLandingPages.png)
+![Täydennetty luokan saapumissivu.](./media/CategoryLandingPages.png)
 
 Kaupan luontityökalun **Tuoteet**-sivulla on luokkaluettelo kanavista, jotka on määritetty sivustoon. Jos luokkasivulle on valittu **Täydennetty**-tila, luokkasivua on täydennetty. Muussa tapauksessa luokassa käytetään oletusluokkasivua ja -sisältöä. Voit esikatsella sekä täydennettyjä että muita kuin täydennettyjä luokkasivuja luokassa valitsemalla luokan nimen.
 
@@ -65,3 +59,8 @@ Voit täydentää luokkasivua seuraavasti:
 [Tuotesivun täydentäminen](enrich-product-page.md)
 
 [Sivun sisällön helppokäyttöisyyden tarkistaminen](verify-accessibility.md)
+
+[Dynaamisten verkkokauppasivujen luominen URL-parametrien perusteella](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

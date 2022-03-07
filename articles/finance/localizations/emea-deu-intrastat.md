@@ -1,26 +1,24 @@
 ---
 title: Saksan Intrastat
 description: Tässä ohjeaiheessa on tietoja Saksan Intrastat-ilmoituksesta.
-author: anasyash
-ms.date: 09/09/2021
+author: andosip
+ms.date: 08/2/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e1dbf0997417f9f1ad313e6a7b3c2c9cfae41efc6b1cfda60a5500ae0af94709
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759840"
 ---
 # <a name="german-intrastat"></a>Saksan Intrastat
 
-[!include [banner](../includes/banner.md)]
-
-**Intrastat**-sivun avulla voit luoda ja raportoida tietoja Euroopan unionin maiden/alueiden välisestä kaupasta. Saksan Intrastat-ilmoituksessa on raportoinnissa käytettäviä tietoja tavaroiden kaupasta. Raportin muotoilussa käytetään Saksan viranomaisten ohjeita, jotka esitetään [6.2 Tiedostomäärittelyt INSTAT/XML-muodossa](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html) -sivulla.
+**Intrastat**-sivun avulla voit luoda ja raportoida tietoja Euroopan unionin maiden/alueiden välisestä kaupasta. Saksan Intrastat-ilmoituksessa on raportoinnissa käytettäviä tietoja tavaroiden kaupasta.
 
 Seuraavassa taulukossa näkyvät Saksan Intrastat-ilmoitukseen sisältyvät kentät.
 
@@ -73,16 +71,15 @@ Seuraavassa taulukossa näkyvät Saksan Intrastat-ilmoitukseen sisältyvät kent
     3. Valitse **Raporttimuodon määritys** -kentässä **Intrastat-raportti**.
     4. Valitse **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kentästä **Intrastat**.
     5. Valitse **Tapahtumakoodi**-kentässä ominaisuussiirtojen tapahtumakoodi. Tätä koodia käytetään tapahtumissa, jotka tuottavat toteutuneita tai suunniteltuja ominaisuussiirtoja (taloudellista tai muuta) kompensaatiota vastaan. Koodia käytetään myös korjauksiin.
-    6. Valitse **Hyvityslasku**-kentässä tapahtumakoodi tavaroiden palautusta varten.
-    7. Valitse **Työntekijä**-kentässä yhteyshenkilö Intrastat-raporttia varten. Vaihtoehtoisesti voit syöttää tai valita arvoja **Yhteyshenkilö**-välilehden kentissä **Nimi**, **Puhelinnumero**, **Faksi**, **Sähköposti** ja **Internet-osoite**. Nämä kentät sisältyvät raporttiin.
-    8. Valitse **Viranomainen**-kentässä viranomaiseksi Intrastat.
-    9. Valitse **Vero** > **Välilliset verot** > **Arvonlisävero** > **Alv-viranomaiset** ja anna seuraavat edellisessä vaiheessa valittua Intrastat-viranomaista koskevat tiedot:
+    6. Valitse **Hyvityslasku**-kentässä tapahtumakoodi tavaroiden palautusta varten. Tätä koodia käytetään tavaroiden palauttamiseen sen jälkeen, kun alkuperäinen tapahtuma on kirjattu tapahtumakoodiin.
+    7. Valitse **Viranomainen**-kentässä viranomaiseksi Intrastat.
+    8. Valitse **Vero** > **Välilliset verot** > **Arvonlisävero** > **Alv-viranomaiset** ja anna seuraavat edellisessä vaiheessa valittua Intrastat-viranomaista koskevat tiedot:
 
        - Viranomaisen tunnus
        - Osoite
        - Yhteystiedot
 
-    10. Ilmoita **Maan tai alueen ominaisuudet** -välilehden **Maa tai alue** -kentässä kaikki maat tai alueet, joiden kanssa yritys käy kauppaa. Valitse kunkin tai alueen **Maa-/aluetyyppi**-kentässä **EU**, minkä jälkeen maa tai alue näkyy Intrastat-raportissa.
+    9. Ilmoita **Maan tai alueen ominaisuudet** -välilehden **Maa tai alue** -kentässä kaikki maat tai alueet, joiden kanssa yritys käy kauppaa. Valitse kunkin tai alueen **Maa-/aluetyyppi**-kentässä **EU**, minkä jälkeen maa tai alue näkyy Intrastat-raportissa.
 
 4. Määritä aluekoodit.
 

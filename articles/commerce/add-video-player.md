@@ -2,36 +2,30 @@
 title: Videotoistinmoduuli
 description: Tässä ohjeaiheessa on tietoja videotoistinmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731716"
 ---
 # <a name="video-player-module"></a>Videotoistinmoduuli
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja videotoistinmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Videotoistinmoduulia käytetään tukemaan videotoistoa. Se voidaan lisätä mille tahansa sivulle, kunhan videosisältö on ladattu ja käytettävissä sisällönhallintajärjestelmässä (CMS). Videotoistinmoduuli tukee .mp4-mediatyypin.
 
@@ -49,12 +43,16 @@ Videosoitinmoduuli tukee myös toissijaisia ääniraitoja. Kun video ladataan CM
 
 Seuraavassa kuvassa on esimerkki videotoistinmoduulista kotisivulla.
 
-![Esimerkki videotoistinmoduulista](./media/ecommerce-videoplayer.PNG)
+![Esimerkki videotoistinmoduulista.](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Videotoistinmoduulin ominaisuudet
 
 | Ominaisuuden nimi         | Arvo                               | kuvaus |
 |-----------------------|-------------------------------------|-------------|
+| Otsikko               | Otsikkoteksti ja -tunnus (**H1**, **H2**, **H3**, **H4**, **H5** tai **H6**) | Otsikolle käytetään oletusarvoisesti **H2**-otsikkotunnistetta, mutta tunnistetta voi kuitenkin muuttaa tarvittaessa helppokäyttötoimintojen vaatimusten noudattamiseksi. |
+| Muotoiltu teksti             | Kappaleen teksti | Moduuli tukee kappaleen tekstiä RTF-muodossa. Joitakin RTF-ominaisuuksia tuetaan, kuten hyperlinkit, lihavointi, alleviivaus ja kursiivi. Moduulissa käytössä oleva sivun teema voi ohittaa jotkin näistä ominaisuuksista. |
+| Linkitä                  | Linkin teksti, URL-osoite, ARIA (Accessible Rich Internet Applications) -otsikko ja **Avaa linkki uudessa välilehdessä** -valitsin | Moduuli tukee yhtä tai useampaa toimintokutsulinkkiä. Jos linkki on lisätty, linkin teksti, URL-osoite ja ARIA-otsikko ovat pakollisia. ARIA-otsikkojen on oltava kuvailevia, jotta ne vastaavat helppokäyttötoimintojen vaatimuksia. Linkit voidaan määrittää niin, että ne avautuvat uuteen välilehteen. |
+| Alateksti              | Otsikko, teksti tai linkit | Videotoistinmoduulille voidaan lisätä lisätietoja, kuten kirjoittajan tai suunnittelijan nimi, tai linkkejä henkilökohtaisiin blogeihin. |
 | Automaattinen toisto             | **Tosi** vai **Epätosi**               | Kun arvoksi on määritetty **Tosi**, videota toistetaan automaattisesti. |
 | Vaimenna                  | **Tosi** vai **Epätosi**               | Kun arvoksi on määritetty **Tosi**, ääni on vaimennettu. Tämän toistimen oletusarvo on **Epätosi**. Chrome-selaimessa automaattisen toiston videot vaimennetaan oletusarvoisesti. Ääni toistetaan vain, jos käyttäjä toistaa videon manuaalisesti. |
 | Silmukka                  | **Tosi** vai **Epätosi**               | Kun arvoksi on määritetty **Tosi**, video toistetaan silmukassa. |
@@ -64,6 +62,9 @@ Seuraavassa kuvassa on esimerkki videotoistinmoduulista kotisivulla.
 | Videosoittimen säätimet | **Tosi** vai **Epätosi**               | Kun arvoksi on määritetty **Tosi**, kaikki videotoistimen ohjausobjektit näkyvät. Näitä ohjausobjekteja ovat toisto- ja pysäytyspainikkeet, tilanneilmaisin ja tekstitysvaihtoehdot. |
 | Piilota julistekuva     | **Tosi** vai **Epätosi**               | Videossa voi olla julistekehys. Kun tämän ominaisuuden arvoksi määritetään **Tosi**, julistekehys piilotetaan. |
 | Peitteen taso            | Numero väliltä **0**–**100** | Muoto, jota käytetään videon muotoiluun. |
+
+> [!IMPORTANT]
+> **Otsikko**-, **Muotoiltu teksti**-, **Linkki**- ja **Alateksti**-ominaisuudet ovat käytettävissä Dynamics 365 Commerce -version 10.0.20 julkaisusta eteenpäin.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Videotoistinmoduulin lisääminen sivulle
 
@@ -106,3 +107,6 @@ Voit lisätä videotoistinmoduulin uudelle sivulle ja määrittää pakolliset o
 [Tekstilohkomoduuli](add-content-rich-block.md)
 
 [Sisältölohkomoduuli](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

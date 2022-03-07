@@ -2,11 +2,9 @@
 title: Kustannusmerkinnät
 description: Tässä artikkelissa on tietoja kustannusmerkinnöistä ja siitä, milloin niitä luodaan. Kustannusmerkintä on tietue, joka rekisteröi tietyn tapahtuman määrän ja kustannukset.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ff771cf44595420ca721605daabaa6b071a4ff
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7b258e111139f52f5ccf3ea3f385a1367576eacd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967801"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188533"
 ---
 # <a name="cost-entries"></a>Kustannusmerkinnät
 
@@ -64,10 +62,12 @@ Uuden **Kustannustapahtuma**-sivun avulla voit tarkastella ja hallita määrien 
 > [!NOTE]
 > Huomautus: Kustannustapahtumat käytettävissä vain [kustannusobjekteja](cost-object.md) tai vapautettuja tuotteita varten.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Kustannusobjektit](cost-object.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

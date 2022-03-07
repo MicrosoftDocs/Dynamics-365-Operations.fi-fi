@@ -2,11 +2,9 @@
 title: Yhdistetyn rekisterikilven vastaanotto
 description: Tässä ohjeaiheessa kerrotaan, miten yhdistetyn rekisterikilven vastaanotolla rekisteröidään ja luodaan työ useille nimikkeille mobiililaitteessa.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSLicensePlate
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c4dcafa5d997bce21d37d02f87fbf604568c24e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b17b3a4d704c5bfd051426e708d39022e59cc67a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965632"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810459"
 ---
 # <a name="mixed-license-plate-receiving"></a>Yhdistetyn rekisterikilven vastaanotto
 
@@ -48,3 +46,6 @@ Sinun on luotava uusi valikkovaihtoehto, jossa tilaksi on määritetty työ, jok
 - Yhdistetyn rekisterikilven vastaanotto ja poispano
 
 Lähdeasiakirjarivien tunnistamisvaihtoehdot ovat ostotilausnimike, ostotilausrivi, palautustilaus, siirtotilausnimike ja siirtotilausrivi. Nämä vaihtoehdot voivat muuttaa yhden rekisterikilven vastaanottotilauksen. Viimeinen vaihtoehto on kuormanimikkeen mukaan. Voit lisätä rekisterikilpeen useita nimikkeitä mutta vaihtelu useiden kuormien välillä ei ole mahdollista.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Logon lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten logo lisätään sivustollesi Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f15680deb0eab763ba68f2897139c915d1f8a6a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411919"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964576"
 ---
 # <a name="add-a-logo"></a>Logon lisääminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten logo lisätään sivustollesi Microsoft Dynamics 365 Commerce -sovelluksessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Kun rakennat sivustoasi, yksi ensimmäisistä asioista, jonka luultavasti teet, on lisätä yrityksesi tai brändin logo sivuston otsikkoon. Dynamics 365 Commerce -online-moduulikirjasto tarjoaa moduulin, joka tekee tästä tehtävästä helppoa.
 
@@ -66,11 +61,12 @@ Kun olet julkaissut päivitetyn otsikon osan, kaikki ylätunnisteosan sisältäv
 
 [Favicon-kuvakkeen lisääminen](add-favicon.md)
 
-[Tervetuloviestin lisääminen](add-welcome-message.md)
-
 [Copyright-ilmoituksen lisääminen](add-copyright-notice.md)
 
 [Kielten lisääminen sivustoon](add-languages-to-site.md)
 
 [Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

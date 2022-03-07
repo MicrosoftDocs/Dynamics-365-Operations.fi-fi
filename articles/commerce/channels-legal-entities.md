@@ -1,37 +1,31 @@
 ---
-title: Yritysten luominen
+title: Luo oikeushenkilöt
 description: Tässä ohjeaiheessa käsitellään yritysten luontia Microsoft Dynamics 365 Commercessa, sillä yritykset on luotava ja määritettävä ennen kanavien luontia.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 28cbcc42505f1dc90c420adc812735841541c8e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740428"
 ---
-# <a name="create-legal-entities"></a>Yritysten luominen
-
+# <a name="create-legal-entities"></a>Luo oikeushenkilöt
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään yritysten luontia Microsoft Dynamics 365 Commercessa, sillä yritykset on luotava ja määritettävä ennen kanavien luontia.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Yritys on organisaatio, jolla on rekisteröity tai lain vaatima rakenne. Yritys voi solmia oikeudellisia sopimuksia ja yritykseltä edellytetään suorituskykyä kuvaavien lausuntojen valmistelemista.
 
@@ -50,7 +44,7 @@ Luo uusi yritys Dynamics 365 Commercessa seuraavien ohjeiden mukaisesti.
 1. Syötä tai valitse arvo **Maa/alue**-kentässä.
 1. Valitse **OK**. 
 
-   ![Yrityksen luominen](media/legal-entities.png)
+   ![Yrityksen luominen.](media/legal-entities.png)
 
 1. Anna **Yleiset**-osassa seuraavat yleistiedot yrityksestä: 
    1. Kirjoita hakunimi, jos hakunimi on pakollinen. Hakunimi on vaihtoehtoinen nimi, jota voidaan käyttää tämän yrityksen etsimiseen. 
@@ -73,7 +67,7 @@ Luo uusi yritys Dynamics 365 Commercessa seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa näkyy esimerkkiyrityksen tiedot.
 
-![Yrityksen yleinen osa](media/legal-entities-general.png)
+![Yrityksen yleinen osa.](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -86,3 +80,6 @@ Seuraavassa kuvassa näkyy esimerkkiyrityksen tiedot.
 [Kanavien yleiskatsaus](channels-overview.md)
 
 [Kanava-asetusten edellytykset](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

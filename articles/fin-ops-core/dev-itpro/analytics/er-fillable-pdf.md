@@ -2,9 +2,11 @@
 title: Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 description: Tässä ohjeaiheessa on tietoja sähköisen raportointimuodon suunnittelemiseen PDF-mallin täyttämistä varten.
 author: NickSelin
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758285"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688122"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 
@@ -45,15 +47,15 @@ Ennen aloittamista sinulla on oltava jokin seuraavista käyttötyypeistä sen mu
 
 Sinun on myös toteutettava menettely [Konfiguraatiopalvelujen luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Lataa lopuksi seuraavat tiedostot.
+Lopuksi sinun on ladattava seuraavat tiedostot seuraavasta [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111) -osoitteesta.
 
 | Sisällön kuvaus                       | Tiedostonimi                                     |
 |-------------------------------------------|-----------------------------------------------|
-| Raportin ensimmäisen sivun malli | [IntrastatReportTemplate1.pdf](https://download.microsoft.com/download/0/8/3/0832c82b-4448-4562-afbf-01e0efc8d999/IntrastatReportTemplate1.pdf)                  |
-| Raportin seuraavien sivujen malli    | [IntrastatReportTemplate2.pdf](https://download.microsoft.com/download/c/7/a/c7a8a806-2192-4034-9052-e8b84b527d5e/IntrastatReportTemplate2.pdf)                  |
-| Sähköisen raportoinnin esimerkkimuoto - PDF                          | [Intrastat report (PDF).version.1.1.xml](https://download.microsoft.com/download/a/8/7/a87aea3e-3f60-404c-8899-c471d20e7ea9/IntrastatreportPDFversion1.1.xml)        |
-| Sähköisen raportoinnin esimerkkimuoto - Excel                          | [Intrastat (import from Excel).version.1.1.xml](https://download.microsoft.com/download/a/2/c/a2c0c145-d989-4e55-9d47-9647c02e4ee4/IntrastatimportfromExcelversion1.1.xml) |
-| Tietojoukon malli                            | [Intrastat sample data.xlsx](https://download.microsoft.com/download/9/f/1/9f1c5b96-3800-475f-8cf6-1ddd42873758/Intrastatsampledata.xlsx)                    |
+| Raportin ensimmäisen sivun malli | [IntrastatReportTemplate1.pdf](https://mbs.microsoft.com/Files/public/CS)                  |
+| Raportin seuraavien sivujen malli    | [IntrastatReportTemplate2.pdf](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatReportTemplate2.pdf)                  |
+| Sähköisen raportoinnin esimerkkimuoto - PDF                          | [Intrastat report (PDF).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatreportPDFversion11.xml)        |
+| Sähköisen raportoinnin esimerkkimuoto - Excel                          | [Intrastat (import from Excel).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatimportfromExcelversion11.xml) |
+| Tietojoukon malli                            | [Intrastat sample data.xlsx](https://mbs.microsoft.com/Files/public/CS/AX/Intrastatsampledata.xlsx)                    |
 
 ## <a name="design-the-format-configuration"></a>Suunnittele muotokonfiguraatio
 
@@ -115,11 +117,11 @@ Avaa lataamasi PDF-mallit missä tahansa PDF-katseluohjelmassa. Huomaa, että jo
 
 Seuraavassa kuvassa näkyy raportin ensimmäisen sivun PDF-malli.
 
-![Malli 1.](media/rcs-ger-filloutpdf-template1.png)
+![Malli 1](media/rcs-ger-filloutpdf-template1.png)
 
 Seuraavassa kuvassa näkyy raportin seuraavien sivujen PDF-malli.
 
-![Malli 2.](media/rcs-ger-filloutpdf-template2.png)
+![Malli 2](media/rcs-ger-filloutpdf-template2.png)
 
 1. Valitse **Määritys**-sivulla **Suunnittelija**.
 2. Valitse **Lisää pääkansio**.
@@ -146,7 +148,7 @@ Seuraavassa kuvassa näkyy raportin seuraavien sivujen PDF-malli.
 
 12. Valitse **OK**.
 
-    ![Tuo PDF-valintaikkunasta.](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Tuo PDF-valintaikkunasta](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. Laajenna puussa kohde **Tuotos**.
 
@@ -176,7 +178,7 @@ Seuraavassa kuvassa näkyy raportin seuraavien sivujen PDF-malli.
 
     Huomaa, että tuotu PDF-tiedosto on liitetty muokattuun sähköisen raportoinnin muotoon.
 
-    ![PDF-liitteen esikatselu.](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![PDF-liitteen esikatselu](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Jatka tämän muodon suunnittelua tuomalla toinen PDF-malli, lisäämällä tarvittavat sidokset tietolähteisiin ja niin edelleen.
 20. Valitse **Tallenna**.
@@ -215,7 +217,7 @@ Seuraavaksi tuot aiemmin lataamasi sähköisen raportoinnin esimerkkimuodon **In
 1. Valitse **Muodon suunnittelu** -sivulla **Yhdistämismääritys**-välilehti.
 2. Laajenna puussa **Sivutus \> Sivut**.
 
-    ![Kaavan suunnittelusivu, jossa mallipuuta laajennetaan.](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Kaavan suunnittelusivu, jossa mallipuuta laajennetaan](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Ota seuraavat seikat huomioon:
 
@@ -238,7 +240,7 @@ Seuraavaksi tuot aiemmin lataamasi sähköisen raportoinnin esimerkkimuodon **In
 
     Huomaa, että tämän muotoelementin **Nimi**-määrite on määritetty **Correction 1**-määritteeksi. Huomaa myös, että **Nimi**-elementin nimilauseke määritetään mallilla **Paging.FldName("Correction"\@. Number)**.
 
-![Muotoilun suunnittelu, jossa yhdistämismääritys on valittuna.](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Muotoilun suunnittelu, jossa yhdistämismääritys on valittuna](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Huomaa, että **Kentän** muotoiluelementin avulla täytetään täytettävän PDF-tiedoston yksittäisen kenttä, joka määritetään pää-**PDF-tiedosto**-muodon elementin malliksi. **PDF-tiedosto**-muotoelementin tai sen sisäkkäisten elementtien sidonta, jos siinä on sisäkkäisiä elementtejä, määrittää vastaaviin PDF-kenttiin kirjoitetun arvon. **Kentän** muotoiluelementin eri ominaisuuksien avulla voit määrittää, mikä PDF-kenttä täytetään yksittäisen muotoelementin avulla:
 
@@ -275,7 +277,7 @@ Seuraavaksi lataat **Intrastatin (tuonti Excelistä)** sähköisen raportoinnin 
 
     Kun **Mallin yhdistämismäärityksen** oletusarvoksi on määritetty **Kyllä**, tuotu **Intrastat (tuotu Excelistä)**-sähköisen raportoinnin muoto määritetään oletustietolähteeksi **Intrastat-raportin (PDF)** konfiguroinnin muodolle. Kun **Intrastat-raportti (PDF)**-muoto määritetään, **Intrastat (tuonti Excelistä)**-muodossa jäsennetty Excel-työkirjan sisältö simuloi ulkomaankaupan tapahtumia, jotka on raportoitu. Seuraavassa kuvassa on Excel-työkirjan esimerkki.
 
-    ![Mallitietoja sisältävä Excel-työkirja.](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Mallitietoja sisältävä Excel-työkirja](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Suorita muotokonfiguraatio
 
@@ -289,16 +291,13 @@ Seuraavaksi lataat **Intrastatin (tuonti Excelistä)** sähköisen raportoinnin 
 
 Seuraavassa kuvassa näkyy esimerkki luotavan raportin ensimmäisestä sivusta.
 
-![Luodun raportin ensimmäinen sivu.](media/rcs-ger-filloutpdf-generatedreport.png)
+![Luodun raportin ensimmäinen sivu](media/rcs-ger-filloutpdf-generatedreport.png)
 
 Seuraavassa kuvassa näkyy esimerkki luotavan raportin toisesta sivusta.
 
-![Luodun raportin toinen sivu.](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Luodun raportin toinen sivu](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa](tasks/er-design-configuration-word-2016-11.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

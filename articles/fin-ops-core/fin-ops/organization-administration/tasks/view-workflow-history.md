@@ -2,11 +2,9 @@
 title: Työnkulkuhistorian tarkasteleminen
 description: Tässä aiheessa kuvataan vaiheet, joiden avulla voit tarkastella työnkulkujärjestelmään käsiteltäväksi ja hyväksyttäväksi lähetetyn asiakirjan tilaa.
 author: jasongre
-manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowStatus
 audience: Application User
@@ -15,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 325478ed89b9c650899001dd08d1c98550fce520
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0ca9a8bff246cc878a0703947a7f8c1c4fc01963
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798977"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069956"
 ---
 # <a name="view-workflow-history"></a>Työnkulkuhistorian tarkasteleminen
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Tässä aiheessa kuvataan vaiheet, joiden avulla voit tarkastella työnkulkujärjestelmään käsiteltäväksi ja hyväksyttäväksi lähetetyn asiakirjan tilaa. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
@@ -46,3 +47,6 @@ Tässä aiheessa kuvataan vaiheet, joiden avulla voit tarkastella työnkulkujär
     - **Määritä uudelleen** -painike avaa valintaikkunan, jossa voit määrittää työnimikkeen uudelleen toiselle käyttäjälle.  
     - Varmista, että **Seurantatiedot**-osa on laajennettu. Voit tarkastella tässä osassa valitun asiakirjan työnkulkuhistoriaa.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

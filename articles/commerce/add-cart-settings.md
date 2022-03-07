@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6299a1c815978ab9f748b6110980e673e1fbae927ed08a5e2e080f89ef063115
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 55b81e7c644f884b052853206f312ac796031600
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712811"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479447"
 ---
 # <a name="apply-add-product-to-cart-settings"></a>Lisää tuote ostoskoriin -asetusten käyttäminen
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kuvataan **Lisää tuote ostoskoriin** -asetukset ja miten käyttää niitä Microsoft Dynamics 365 Commercessa.
 

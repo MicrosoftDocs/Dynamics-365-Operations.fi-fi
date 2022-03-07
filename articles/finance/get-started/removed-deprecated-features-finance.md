@@ -2,25 +2,22 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Financesta.
 author: roschlom
-manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689491"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890950"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -34,13 +31,109 @@ Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Financen version 10.0.24 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Ruotsin arvonlisäveroraportti (suunnittelu raportointikoodien perusteella)
+
+[Ruotsin arvonlisäveroraportti](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Ruotsin ALV-ilmoituksella](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Ruotsin arvonlisäveroraporttia ei enää tueta joulukuun 1. päivän 2022 jälkeen (Ruotsin raportin asettelu). Uudet **ALV-ilmoitus XML (SE**) ja **ALV-ilmoitus Excel (SE)** Sähköiset raportointimuodot (ER) otetaan käyttöön mallin **Veroilmoitus** mallissa. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Itävallan ALV-ilmoitus (suunnittelu raportointikoodien perusteella)
+
+[ALV-ilmoituksen erittely, Itävalta](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Itävallan ALV-ilmoituksella](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä, ettei **ALV-ilmoitusta (AT)** sähköisessä raportoinnissa (ER) **ALV-ilmoitusmallin (AT)** alla enää tueta. Uudet **ALV-ilmoitus XML (AT)** ja **ALV-ilmoitus Excel (AT)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>Saksan ELSTER-ilmoitus (suunnittelu raportointikoodien perusteella)
+
+[ALV-ilmoitus](../localizations/emea-de-vat-declaration.md)</br>
+[Sähköisen veroilmoituksen määrittäminen, Saksa](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[ALV-ilmoituksen antaminen sähköisesti (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Saksan ALV-ilmoituksella](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä, ettei **Elster (DE)**- ja **Elster-malli (DE)**- sähköisen raportoinnin (ER) -muotoja enää tueta. Uudet **ALV-ilmoitus XML (DE)** ja **ALV-ilmoitus Excel (DE)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Alankomaiden OB-ilmoitus (suunnittelu raportointikoodien perusteella)
+
+[OB-ilmoitus](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Alankomaiden ALV-ilmoituksella](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme 1.12.2022 mennessä lopettavamme **OB-ilmoituksen (NL)** ja **OB-ilmoitusmallin** sähköisen raportoinnin (ER) tukemisen. Uudet **ALV-ilmoitus XML (NL)** ja **ALV-ilmoitus Excel (NL)** otetaan käyttöön mallin **Veroilmoitus**-mallissa. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Financen version 10.0.20 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>"RTIR Query Invoice Data Request (HU)" Sähköisen raportoinnin (ER) muodon konfigurointi
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Ei sisälly sähköisten viestien käsittelyyn sähköisten viestien välitysjärjestelmän kanssa |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Huhtikuun 15.4.2022 mennessä suunnitelma ei enää tue MUODON RTIR Query Invoice Data Request (HU) -muotoa. |
+
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>"Ranskan FEC-auditointitiedosto" Sähköisen raportoinnin (ER) muoto Ranskalle "Saksan tarkistustiedostotuloste" -muodon alaisena
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella "FEC-auditointitiedosto (FR)" -muodolla |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: 1.5.2022 mennessä ei enää tueta kohdetta "Ranskan FEC-auditointitiedosto" Sähköisen raportoinnin (ER) muoto Ranskalle "Saksan tarkistustiedostotuloste" -muodon alaisena. Tietojen vientimalli -kohdassa käytetään sen sijaan uutta FEC-auditointitiedostomuotoa (FR). |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Financen version 10.0.17 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-tietovarasto sähköisen raportoinnin konfiguraatioiden tallennusvaihtoehtona
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan Regulatory Configuration Service (RCS) -yleistietovarastolla. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Finance-, Supply Chain Management- ja Project Operations -tuotteet|
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme että Microsoft Dynamics Lifecycle Services (LCS) -tietovarastoa ei enää tueta 1.4.2022 alkaen sähköisen raportoinnin (ER) konfiguraatioiden tallennussäilönä. Uudet Microsoftin ER-konfiguraatiot julkaistaan yksinomaan yleisestä tietovarastosta ladattavaksi. Yleinen tietovarasto on käytettävissä Dynamics 365 -tuotteiden ja RCS:n kautta. Lisätietoja on kohdassa [ER-konfiguraatioiden tuominen RCS:stä](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) ja [Regulatory Configuration Service – Lifecycle Services -tallennustilan vanhentuminen](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Financen version 10.0.16 poistetut tai vanhentuneet ominaisuudet
 
+### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Sähköisen raportoinnin "ALV-ilmoitus (CZ)"- ja "Ohjausilmoituksen vienti (CZ)"-muodot – Tšekin tasavalta
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uusilla muodoilla |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: 22.1.2022 alkaen suunnittelemme, että enää ei tueta sähköisen raportoinnin "ALV-ilmoitus (CZ)"- ja "Ohjausilmoituksen vienti (CZ)"-muotoja. Uudet ALV-ilmoitus, XML (CZ)-, ALV-ilmoitus, Excel (CZ)-, ALV-ohjausilmoitus, XML (CZ) -muodot tulevat käyttöön veroilmoitusmallissa. |
+
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>Belgian kirjanpidon tapahtumien vientimuoto (BE), sähköisen raportoinnin muoto ja vastaava kirjanpidon tapahtumien vienti -malli
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Korvattu uudella sähköisen raportoinnin muodolla SAF-T (Standard Audit File) -mallissa.  |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
@@ -50,7 +143,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>Yhdistyneen kuningaskunnan ALV 100 -raoprtti on SSRS-muodossa
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Korvattu uudella sähköisen raportoinnin muodolla - ALV-ilmoituksen Excel (UK) -muoto Veroilmoitusmalli-kohdassa.  |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
@@ -62,7 +155,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11:n Dynamics 365 -tuki on vanhentunut
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Joulukuusta 2020 alkaen kaikkien Dynamics 365 -tuotteiden Microsoft Internet Explorer 11 -tuki vanhenee eikä Internet Explorer 11:tä tueta elokuun 2021 jälkeen.<br><br>Tämä vaikuttaa sellaisiin Dynamics 365 -tuotteita käyttäviin asiakkaisiin, jotka on suunniteltu käytettäviksi Internet Explorer 11 -liittymässä. Elokuun 2021 jälkeen Internet Explorer 11:tä ei tueta kyseisissä Dynamics 365 -tuotteissa. |
 | **Onko toinen ominaisuus korvannut?**   | Asiakkaiden kannattaa siirtyä Microsoft Edgeen.|
@@ -72,21 +165,21 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Financen version 10.0.12 poistetut tai vanhentuneet ominaisuudet
 
-### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Puolan SSRS-raportit, maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri - toimintojen viite PL-00014
+### <a name="not-deprecated-polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Ei vanhentunut: Puolan SSRS-raportit, maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri - toimintojen viite PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Ei lakisääteistä edellytystä.  |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä (Excel-muoto vakiomuotoista tarkistustiedostoa varten ALV-ilmoituksessa - JPK_VDEK) |
-| **Tuotealueet, joihin vaikutetaan**         | Sovellus |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: 1.7.2021 jälkeen emme enää tue SSRS-raportteja: **Maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri – toimintojen viite PL-00014**. Excel-muodon esimerkki vakiomuotoista tarkistustiedostoa varten ALV-ilmoituksessa (JPK_VDEK) otetaan sen sijaan käyttöön. |
+| **Tila**                         | Ei vanhentunut: 27.4.2021 alkaen tuemme SSRS-raportteja: **Maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri – toimintojen viite PL-00014**. Excel-muodon esimerkki vakiomuotoista tarkistustiedostoa varten ALV-ilmoituksessa (JPK_VDEK) on myös otettu käyttöön. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Financen version 10.0.11 poistetut tai vanhentuneet ominaisuudet
 
 ### <a name="norwegian-standard-main-accounts"></a>Norjan vakiopäätilit
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Uudelleensuunnittelu  |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä (sovelluskohtaiset parametrit korvattu ER-muodolla) |
@@ -97,7 +190,8 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Financen version 10.0.7 poistetut tai vanhentuneet ominaisuudet
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Työnkulun pyynnön muutoksen valintaikkuna ei enää sisällä käyttäjän valinnan avattavaa luetteloa
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Siirrytty ominaisuuteen, jossa on tiliryhmävalinta.  |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä |
@@ -107,3 +201,6 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poistettujen tai vanhentuneiden toimintojen aiemmat ilmoitukset
 Lisätietoja poistetuista tai vanhentuneista toiminnoista aiemmissa versioissa on kohdassa [Poistetut tai vanhentuneet toiminnot edellisissä versioissa](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

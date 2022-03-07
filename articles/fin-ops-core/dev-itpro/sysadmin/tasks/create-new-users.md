@@ -2,11 +2,9 @@
 title: Uusien käyttäjien luominen
 description: Käyttäjät ovat organisaation sisäisiä käyttäjiä tai ulkoisia asiakkaita ja toimittajia, jotka tarvitsevat järjestelmän käyttöoikeuden töidensä tekemiseen.
 author: peakerbl
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
-ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
+ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "4878654"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595383"
 ---
 # <a name="create-new-users"></a>Uusien käyttäjien luominen
 
@@ -31,10 +29,10 @@ Ennen kuin Finance and Operations -sovellukset ovat käytettävissä, käyttäj�
 Lisätietoja Finance and Operations -sovellusten käyttöoikeuksien ostamisesta ja myöntämisestä on [Microsoft Dynamics 365:n käyttöoikeusoppaassa](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Käyttöoikeuden määrittäminen käyttäjälle
-Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) [Microsoft 365 -hallintakeskuksessa](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) [Microsoft 365 -hallintakeskuksessa](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Ulkoisen käyttäjän lisääminen Azure AD:ssa ja käyttöoikeuden määrittäminen 
-Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta heille voidaan määrittää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Finance and Operations -sovellusten edellytyksenä on, että vieraskäyttäjän yritys käyttää Azure AD:ta. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta heille voidaan määrittää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Finance and Operations -sovellusten edellytyksenä on, että vieraskäyttäjän yritys käyttää Azure AD:ta. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Uusien käyttäjien tuominen Azure AD:sta 
 1. Valitse **Järjestelmän hallinta** \> **Käyttäjät** \> **Käyttäjät**.
@@ -59,7 +57,7 @@ Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Dire
 7. Valitse **Yritys**-kentässä käyttäjän oletusaloitusyritys. 
 8. Valitse **Tallenna**.
 
-Käyttäjätietopalvelun ja telemetriatunnuksen arvot päivitetään [Microsoft graph](https://docs.microsoft.com/graph/overview) -kutsun perusteella, kun käyttäjätietue tallennetaan. Telemetriatunnus perustuu käyttäjän objektitunnukseen tai suojaustunnukseen (SID) Azure AD:ssa.
+Käyttäjätietopalvelun ja telemetriatunnuksen arvot päivitetään [Microsoft graph](/graph/overview) -kutsun perusteella, kun käyttäjätietue tallennetaan. Telemetriatunnus perustuu käyttäjän objektitunnukseen tai suojaustunnukseen (SID) Azure AD:ssa.
 
 > [!NOTE]
 > Soveltuvat rooli ja organisaatiot on määritettävä sen jälkeen, kun käyttäjä on lisätty. Lisätietoja on kohdassa [Käyttäjien määrittäminen käyttöoikeusrooleille](assign-users-security-roles.md). Ehdollisesti voidaan myös edellyttää, että käyttäjään liitetään **Henkilö** ja että **Käyttäjän asetukset**, kuten kieli, päivitetään.
@@ -81,3 +79,6 @@ Käyttäjätunnuksen vaihtaminen edellyttää, että avain nimetään uudelleen 
 Lisätietoja yritystenvälisten käyttäjien käyttöönottovaihtoehdoista on kohdassa [Yritystenvälisten käyttäjien vieminen Azure AD:hen](../implement-b2b.md).
 
 Lisätietoja esimääritetyistä järjestelmätileistä on kohdassa [Esimääritetyt järjestelmätilit](../pre-configured-system-accounts.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

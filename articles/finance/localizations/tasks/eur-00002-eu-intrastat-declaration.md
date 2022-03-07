@@ -2,26 +2,23 @@
 title: EUR-00002 EU Intrastat -ilmoituksen luominen
 description: Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.
 author: Anasyash
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 24caceffd8c0bf29a3f9cc45b7bd1977e119359d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407892"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822602"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR-00002 EU Intrastat -ilmoituksen luominen
 
@@ -58,7 +55,7 @@ Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.
     * Anna pyöristystarkkuus, esimerkiksi 0,01.  
 7. Syötä Summan desimaalien määrä -kenttään haluamasi luku.
     * Kirjoita esimerkiksi 2.  
-8. Valitse vaihtoehto Pyöristys, alle 1 kg -kentässä.
+8. Valitse vaihtoehto Pyöristys alle 1 kg -kentässä.
     * Valitse esimerkiksi "Pyöristys, enintään 1 kg".  
 9. Syötä Pyöristyssääntö-kenttään numero.
     * Kirjoita esimerkiksi 1 kokonaisluvun pyöristyksen painotukseksi.  
@@ -114,3 +111,6 @@ Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.
     * Valitse esimerkiksi Lähtevät.  
 27. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

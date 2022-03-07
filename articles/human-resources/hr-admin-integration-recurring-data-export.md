@@ -2,11 +2,9 @@
 title: Toistuvien tietovientien sovelluksen luomisen
 description: Tässä artikkelissa esitellään, miten luodaan Microsoft Azure -logiikkasovellus, joka vie tietoja Microsoft Dynamics 365 Human Resourcesista toistuvalla aikataululla.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b117f408b8ac8baabf7e8af3b383526f404441a4
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418368"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889857"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Toistuvien tietovientien sovelluksen luomisen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tässä artikkelissa esitellään, miten luodaan Microsoft Azure -logiikkasovellus, joka vie tietoja Microsoft Dynamics 365 Human Resourcesista toistuvalla aikataululla. Opas hyödyntää Human Resourcesin DMF-paketin REST-sovellusohjelmointirajapintaa (API) tietojen viemiseen. Kun tiedot on viety, logiikkasovellus tallentaa viedyn tietopaketin Microsoft OneDrive for Business -kansioon.
 
@@ -43,12 +43,12 @@ Tässä oppaassa käytetään seuraavia teknologioita:
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)** – Vietävien työntekijöiden päätietolähde.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – Teknologia, joka vastaa toistuvan viennin järjestelyistä ja ajoituksesta.
 
-    - **[Yhdistimet](https://docs.microsoft.com/azure/connectors/apis-list)** – Teknologia, jota käytetään logiikkasovelluksen yhdistämiseen tarvittaviin päätepisteisiin.
+    - **[Yhdistimet](/azure/connectors/apis-list)** – Teknologia, jota käytetään logiikkasovelluksen yhdistämiseen tarvittaviin päätepisteisiin.
 
-        - [HTTP ja Azure AD](https://docs.microsoft.com/connectors/webcontents/) -yhdistin
-        - [OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) -yhdistin
+        - [HTTP ja Azure AD](/connectors/webcontents/) -yhdistin
+        - [OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) -yhdistin
 
-- **[DMF-paketin REST API](../dev-itpro/data-entities/data-management-api.md)** – Teknologia, jota käytetään viennin käynnistämiseen ja sen edistymisen seurantaan.
+- **[DMF-paketin REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – Teknologia, jota käytetään viennin käynnistämiseen ja sen edistymisen seurantaan.
 - **[OneDrive for Business](https://onedrive.live.com/about/business/)** – Vietävien työntekijöiden kohde.
 
 ## <a name="prerequisites"></a>Edellytykset
@@ -84,11 +84,11 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
     ![Logiikkasovelluksen luontisivu](media/integration-logic-app-creation-1.png)
 
 2. Aloita Logic Apps Designer tyhjällä logiikkasovelluksella.
-3. Lisää [Toistuvan aikataulun käynnistin](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) suorittamaan sovellus 24 tunnin välein (tai valitsemasi aikataulun mukaan).
+3. Lisää [Toistuvan aikataulun käynnistin](/azure/connectors/connectors-native-recurrence) suorittamaan sovellus 24 tunnin välein (tai valitsemasi aikataulun mukaan).
 
     ![Toistuvuuden valintaikkuna](media/integration-logic-app-recurrence-step.png)
 
-4. Kutsu [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API aikatauluttamaan tietopakettisi vienti.
+4. Kutsu [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API aikatauluttamaan tietopakettisi vienti.
 
     1. Käytä HTTP ja Azure AD -yhdistimen **Aktivoi HTTP-pyyntö** -toimintoa.
 
@@ -122,13 +122,13 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
     > [!TIP]
     > Sinun saattaa kannattaa nimetä kukin vaihe uudelleen, jotta se on merkityksellisempi kuin oletusnimi **Aktivoi HTTP-pyyntö**. Voit esimerkiksi nimetä tämän vaiheen uudelleen muotoon **ExportToPackage**.
 
-5. [Alusta muuttuja](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) tallentaaksesi **ExportToPackage**-pyynnön suoritustilan.
+5. [Alusta muuttuja](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) tallentaaksesi **ExportToPackage**-pyynnön suoritustilan.
 
     ![Alusta muuttujatoiminto](media/integration-logic-app-initialize-variable-step.png)
 
 6. Odota, kunnes tietojen viennin suoritustila on **Onnistui**.
 
-    1. Lisää [Kunnes-silmukka](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop), joka toistuu, kunnes **ExecutionStatus**-muuttujan arvo on **Onnistui**.
+    1. Lisää [Kunnes-silmukka](/azure/logic-apps/logic-apps-control-flow-loops#until-loop), joka toistuu, kunnes **ExecutionStatus**-muuttujan arvo on **Onnistui**.
     2. Lisää **Viive**-toiminto, joka odottaa viisi sekuntia, ennen kuin se kysyy viennin kulloistakin suoritustilaa.
 
         ![Kunnes-silmukan kontti](media/integration-logic-app-until-loop-step.png)
@@ -136,9 +136,9 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
         > [!NOTE]
         > Määritä raja-arvoksi **15**, jos haluat odottaa enintään 75 sekuntia (15 toistoa × 5 sekuntia) viennin valmistumiseen. Jos vientisi vaatii enemmän aikaa, säädä raja-arvoa sen mukaan.        
 
-    3. Lisää **Aktivoi HTTP-pyyntö** -toiminto kutsumaan DMF REST API [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) ja asettamaan **ExecutionStatus**-muuttujan arvoksi **GetExecutionSummaryStatus**-vastauksen tulos.
+    3. Lisää **Aktivoi HTTP-pyyntö** -toiminto kutsumaan DMF REST API [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) ja asettamaan **ExecutionStatus**-muuttujan arvoksi **GetExecutionSummaryStatus**-vastauksen tulos.
 
-        > Tässä esimerkissä ei suoriteta virheiden tarkistusta. Ohjelmointirajapinta **GetExecutionSummaryStatus** voi palauttaa epäonnistuneita päätetiloja (eli muita tiloja kuin **Onnistui**). Lisätietoja on kohdassa [API-dokumentaatio](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
+        > Tässä esimerkissä ei suoriteta virheiden tarkistusta. Ohjelmointirajapinta **GetExecutionSummaryStatus** voi palauttaa epäonnistuneita päätetiloja (eli muita tiloja kuin **Onnistui**). Lisätietoja on kohdassa [API-dokumentaatio](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Menetelmä:** KIRJAA
         - **Pyynnön URL-osoite:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -156,7 +156,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
 
 7. Hae viedyn paketin URL-latausosoite.
 
-    - Lisää **Aktivoi HTTP-pyyntö** -toiminto kutsuaksesi DMF REST-API:n [getexportdpackageurl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST-API-liittymään.
+    - Lisää **Aktivoi HTTP-pyyntö** -toiminto kutsuaksesi DMF REST-API:n [getexportdpackageurl](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST-API-liittymään.
 
         - **Menetelmä:** KIRJAA
         - **Pyynnön URL-osoite:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -166,7 +166,7 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
 
 8. Lataa viety paketti.
 
-    - Lisää HTTP:n **HAE** -pyyntö (sisäinen [HTTP-yhdistintoiminto](https://docs.microsoft.com/azure/connectors/connectors-native-http)), joka lataa paketin edellisessä vaiheessa palautetusta URL-osoitteesta.
+    - Lisää HTTP:n **HAE** -pyyntö (sisäinen [HTTP-yhdistintoiminto](/azure/connectors/connectors-native-http)), joka lataa paketin edellisessä vaiheessa palautetusta URL-osoitteesta.
 
         - **Menetelmä:** HAE
         - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
@@ -179,9 +179,9 @@ Tämän harjoituksen keskeisin osa on logiikkasovellus.
         > [!NOTE]
         > Tämä pyyntö ei edellytä lisätodennusta, **getexportdpackageurl**-API:n palauttama URL-osoite sisältää jaetun käytön allekirjoitustunnuksen, joka myöntää käyttöoikeuden ladattuun tiedostoon.
 
-9. Tallenna ladattu paketti käyttäen[OneDrive for Business](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) -yhdistintä.
+9. Tallenna ladattu paketti käyttäen[OneDrive for Business](/azure/connectors/connectors-create-api-onedriveforbusiness) -yhdistintä.
 
-    - Lisää OneDrive for Business [Luo tiedosto](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file) -toiminto.
+    - Lisää OneDrive for Business [Luo tiedosto](/connectors/onedriveforbusinessconnector/#create-file) -toiminto.
     - Muodosta yhteys OneDrive for Business -tiliisi tarpeen mukaan.
 
         - **Kansiopolku:** Valitsemasi kansio
@@ -205,3 +205,6 @@ Seuraavassa kuvassa näytetään, miltä Logic Apps Designer näyttää, kun kai
 Tässä oppaassa tutustuit logiikkasovelluksen käyttöön tietojen viemiseen Human Resourcesista ja vietyjen tietojen tallentamiseen OneDrive for Business -kansioon. Voit muokata tämän oppaan vaiheita yrityksesi tarpeiden mukaan.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

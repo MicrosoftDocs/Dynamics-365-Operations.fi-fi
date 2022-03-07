@@ -1,7 +1,7 @@
 ---
 title: Määritä tuotantovirran versiolle viimeinen myyntipäivä
 description: Tuotantovirran version voimassaolon ja käsittelyn voi päättää tiettynä päivänä asettamalla versiolle vanhentumispäivän. Sama pätee aktiivisen version korvaamiseen uudella versiolla.
-author: johanhoffmann
+author: cvocph
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f6ee9177664767c31eaa3e9b65d7559a1a9662f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f6dfb830b3180ecf4cc2bf6ccc4112581bee0da8cbe793bf53e61fd2828f51fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574422"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754605"
 ---
 # <a name="define-an-expiry-date-for-a-production-flow-version"></a>Määritä tuotantovirran versiolle viimeinen myyntipäivä
 

@@ -2,11 +2,9 @@
 title: Järjestelmäohjattu työjärjestys
 description: Tässä ohjeaiheessa on tietoja järjestelmän ohjaamien töiden jaksotuksesta. Tämän toiminnon avulla voit lajitella ja suodattaa ne työtilaukset, jotka järjestelmä esittää käyttäjille suorittamista varten. Se on hyödyllinen tilanteissa, joissa fyysisen varastoinnin poimintaprosessin ajo edellyttää lisäehtoja.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e349df6b7e2a627562c65b961385625b0ad95b5423fa25b9139af3a8a227321b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733321"
 ---
 # <a name="system-directed-work-sequencing"></a>Järjestelmäohjattu työjärjestys
 
@@ -304,3 +302,6 @@ Järjestelmän ohjaamat työsarjakyselyt ovat *sisältyviä*. On tärkeää, ett
 Tämän skenaarion esimerkissä myös kysely kaappasi työtunnuksen *4*. Kun se luotiin, lisättiin kaksi riviä: yksi 25 kpl:tta ja toinen 10 kpl:tta varten. Työ on vielä esitetty käyttäjälle, koska vähintään yhden työrivin määrä on pienempi kuin 20 kpl:tta.
 
 Skenaarion mukaan voit estää tämän ongelman käyttämällä työtaukoja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

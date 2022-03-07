@@ -1,17 +1,14 @@
 ---
 title: Alkutietojen alustaminen uusissa Commerce-ympäristöissä
-description: Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Dynamics 365 Commercein alustusprosessia.
+description: Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Dynamics 365 Commercen alustusprosessia.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 49621
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: global
@@ -19,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24d4d49c51738203bb89a9844d57f644b8afd4b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9f534410b21fd97554f4e038bb14eebd5f887130
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411881"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792580"
 ---
 # <a name="initialize-seed-data-in-new-commerce-environments"></a>Alkutietojen alustaminen uusissa Commerce-ympäristöissä
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Dynamics 365 Commercein alustusprosessia.
+Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Dynamics 365 Commercen alustusprosessia.
 
 Kun Commerce-ratkaisu on otettu käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) kautta, sinun on alustettava Commerce-määritys luodaksesi peruskonfiguraation tiedot.
 
@@ -69,3 +66,6 @@ Kun alustus on valmis, sinun määritettävä kaupan lisätiedot. Seuraavassa on
 - Commerce-kanavat
 - Kassakoneet ja laitteet
 - Valikoimat
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,33 +2,28 @@
 title: Varastopuskureiden ja varastotasojen konfiguroiminen
 description: Tässä ohjeaiheessa selitetään, miten määritetään varastopuskureita ja varastotasoja, jotka määrittävät varaston käytettävyysviestit Microsoft Dynamics 365 Commerce -sivustoissa.
 author: boycezhu
-manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727530"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Varastopuskureiden ja varastotasojen konfiguroiminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa selitetään, miten määritetään varastopuskureita ja varastotasoja, jotka määrittävät varaston käytettävyyttä koskevat viestit Microsoft Dynamics 365 Commerce -sivustoissa.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce -pääkonttori sisältää varastotiedot ja erilaisia kanavia, kuten myyntipisteen (POS) sovellukset, sähköisen kaupankäynnin julkisivut ja muut mukautetut integroidut sovellukset, jotka vetävät ja työntävät varastoa ympäri asynkronisesti. Näin ollen käytettävissä olevat varastoarvot, jotka saadaan Commerce Headquarters -sovelluksen myyntipistekäyttöliittymän (POS) ja sähköisen kaupan varaston käytettävyyden API-liittymien kautta, eivät aina ole 100-prosenttisen oikeita reaaliaikaisesti.
 
@@ -41,7 +36,7 @@ Varastopuskureiden ja varastotasojen ominaisuutta hallitaan toimintojen hallinna
 1. Valitse **Järjestelmänvalvoja** \> **Työtilat** \> **Ominaisuuksien hallinta**.
 1. Etsi **Ota käyttöön varastopuskurit ja varastotasot** -ominaisuus, valitse sen rivi ja valitse sitten **Ota käyttöön nyt**.
 
-Kun ominaisuus on otettu käyttöön, voit etsiä varastotasoja kohteen **Retail and Commerce \> Varastonhallinta** avulla.
+Kun ominaisuus on otettu käyttöön, voit etsiä varastotasoja kohteen **Retail ja Commerce \> Varastonhallinta** avulla.
 
 ## <a name="create-and-configure-an-inventory-level-profile"></a>Varastotaso profiilin luominen ja konfiguroiminen
 
@@ -55,7 +50,7 @@ Kun ominaisuus on otettu käyttöön, voit etsiä varastotasoja kohteen **Retail
 
 Luo varastotason profiili noudattamalla seuraavia ohjeita.
 
-1. Siirry **Retail and Commerce** \> **Varaston hallinta** \> **Varastotasot**.
+1. Siirry **Retail ja Commerce** \> **Varaston hallinta** \> **Varastotasot**.
 1. Valitse toimintoruudussa **Uusi** ja syötä sitten arvot **Profiilin tunnus**- ja **Kuvaus**-kenttiin.
 1. Valitse **Alueet**-pikavälilehdessä **Lisää**, jos haluat lisätä uuden tason, ja kirjoita sitten arvot **Aloitusmäärä** -, **Loppumäärä**-, **Koodi**- ja **Etiketti**-sarakkeisiin kyseiselle tasolle. Toista tämä vaihe lisätäksesi tasoja. Voit tarvittaessa muokata tietoruudukon arvoja tai voit poistaa tason valitsemalla **Poista**.
 1. Valitse toimintoruudussa **Tallenna**.
@@ -85,7 +80,7 @@ Toimintoruudun **Päivitä tuotteet** -painikkeen avulla voit levittää luokkat
 
 Määritä varastotason profiili vapautetulle tuotteelle noudattamalla seuraavia ohjeita.
 
-1. Siirry kohtaan **Retail and Commerce** \> **Tuotteet ja luokat** \> **Vapautetut tuotteet luokittain**.
+1. Siirry kohtaan **Retail ja Commerce** \> **Tuotteet ja luokat** \> **Vapautetut tuotteet luokittain**.
 1. Valitse tuote ja avaa sitten sen tuotetiedot-sivu.
 1. Valitse **Myy**-pikavälilehdellä **Commerce-varasto**-osan **Varastotason profiili** -kentästä jokin esimääritetyistä varastotasoprofiileista.
 
@@ -114,7 +109,7 @@ Toimintoruudun **Päivitä tuotteet** -painikkeen avulla voit levittää luokkat
 
 Määritä varastopuskuri vapautetuille tuotteille noudattamalla seuraavia ohjeita.
 
-1. Siirry kohtaan **Retail and Commerce** \> **Tuotteet ja luokat** \> **Vapautetut tuotteet luokittain**.
+1. Siirry kohtaan **Retail ja Commerce** \> **Tuotteet ja luokat** \> **Vapautetut tuotteet luokittain**.
 1. Valitse tuote ja avaa sitten sen tuotetiedot-sivu.
 1. Määritä positiivinen arvo **Myy**-pikavälilehdellä **Commerce-varasto**-osan **Varastopuskuri**-kenttään.
 
@@ -138,7 +133,7 @@ Varastopuskureiden ja varastotasojen käyttöönotto mahdollistaa sen, että nä
 
 Voit määrittää tuotteen saatavuuden API-liittymissä noudattamalla seuraavia ohjeita.
 
-1. Siirry kohtaan **Retail and commerce** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**.
+1. Siirry kohtaan **Retail ja Commerce** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**.
 1. Valitse arvo **Myymälän varasto** -osan **Varasto**-välilehden **Tuotesaatavuus-API-verkkokauppa**-kentässä.
 1. Ota asetukset käyttöön kanavissa suorittamalla **1110** (**Yleinen konfigurointi**) -jakelun ajoitustehtävä.
 
@@ -149,3 +144,6 @@ Voit määrittää tuotteen saatavuuden API-liittymissä noudattamalla seuraavia
 [Varastoasetusten käyttäminen](inventory-settings.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

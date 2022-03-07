@@ -1,76 +1,103 @@
 ---
-title: Azure Active Directory -todennuksen käyttöönotto myyntipisteen sisäänkirjauksessa
-description: Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 Commercen myyntipisteen sisäänkirjauskokemus määritetään käyttämään Azure Active Directory -todennusta.
+title: Azure Active Directory -todennuksen määrittäminen myyntipistekirjautumisessa
+description: Tässä aiheessa kerrotaan, miten Azure Active Directory määritetään todennusmenetelmäksi Microsoft Dynamics 365 Commerce -myyntipisteessä.
 author: boycezhu
-manager: annbe
-ms.date: 07/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 6946cb5f8bc8aa451f72d1eebcd324f408ad5f7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411893"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402148"
 ---
-# <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory -todennuksen käyttöönotto myyntipisteen sisäänkirjauksessa
+# <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory -todennuksen määrittäminen myyntipistekirjautumisessa
+
 [!include [banner](includes/banner.md)]
 
+Tässä aiheessa kerrotaan, miten Azure Active Directory (Azure AD) määritetään todennusmenetelmäksi Microsoft Dynamics 365 Commerce -myyntipisteessä.
 
-Useat Microsoft Dynamics 365 Commercea käyttävät asiakkaat käyttävät myös muita Microsoftin pilvipalveluita. He voivat hallita näiden palveluiden käyttäjän tunnistetietoja Azure Active Directoryn (Azure AD) avulla. Näissä tapauksissa asiakkaat saattavat haluta käyttää samaa Azure AD -tiliä kaikissa sovelluksissa. Tässä ohjeaiheessa kerrotaan, miten Commercen myyntipisteen sisäänkirjauskokemus määritetään käyttämään Azure AD -todennusta.
+Vähittäismyyjät, jotka käyttävät Dynamics 365 Commercea yhdessä muiden Microsoftin pilvipalveluiden kanssa, kuten Microsoft Azure, Microsoft 365 ja Microsoft Teams, yleensä haluavat käyttää Azure AD:tä keskitettyä hallintaa varten suojattuun ja sujuvaan kirjautumiseen sovelluksissa. Jotta Azure AD -todennusta voi käyttää Commercen myyntipisteelle, todennusmenetelmäksi on ensin määritettävä Azure AD Commerce-pääkonttorisovelluksessa.
 
-## <a name="configure-azure-ad-authentication"></a>Azure AD -todennuksen määrittäminen
+## <a name="configure-pos-authentication-method"></a>Myyntipisteen todennusmenetelmän määrittäminen
 
-Jos haluat määrittää Azure AD:n todennusmenetelmäksi myymälän myyntipisteen sisäänkirjauksessa, määritä myymälän toimintoprofiilin asetukset ja ota ne sitten käyttöön myyntipisteen asiakassovelluksissa.
+Voit määrittää myyntipisteen todennusmenetelmän Commerce-pääkonttorisovelluksessaa seuraavasti.
+    
+1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit** ja valitse muutettava toimintoprofiili.
+1. **Myyntipisteen henkilöstön sisäänkirjaus** -osasta **Toiminnot**-pikavälilehdellä haluamasi todennusmenetelmä avattavasta **Sisäänkirjauksen todennusmenetelmä** -luettelosta.
 
-Määritä uusi toimintoprofiili seuraavasti.
+    **Sisäänkirjauksen todennusmenetelmässä** on kolme vaihtoehtoa:
+    
+    - **Henkilöstön tunnus ja salasana** - Tämä oletusasetus edellyttää, että myyntipisteen käyttäjät syöttävät henkilöstötunnuksen ja salasanan kirjautuakseen sisään myyntipisteeseen ja käyttääkseen esimiehen ohitustoimintoa.
+    - **Azure AD ilman kertakirjausta** - Tämä asetus edellyttää, että myyntipisteen käyttäjät kirjautuvat sisään myyntipisteeseen ja käyttävät esimiehen ohitustoimintoa Azure AD -tunnistetiedoilla. Kun myyntipisteen asiakasohjelma päivitetään tai avataan uudelleen, myyntipisteen käyttäjän on annettava Azure AD -tunnistetiedot kirjautumista varten uudelleen.
+    - **Azure AD kertakirjauksella** - Kun tämä vaihtoehto on valittuna, myyntipisteen käyttäjät voivat kirjautua pilvimyyntipisteeseen (CPOS) aktiivisia Azure AD -tunnistetietoja, joita muut verkkosovellukset käyttävät samassa selaimessa, tai kirjautua Modern POS -myyntipisteeseen (MPOS) käyttäen Windowsiin kirjautuneena Azure AD -tunnistetietoja. Molemmat menetelmät sallivat kirjautumisen tarvitsematta syöttää Azure AD -tunnistetietoja myyntipisteen kirjautumisnäytössä. Myyntipisteen esimiehen ohitustoimintojen käyttäminen edellyttää kuitenkin kirjautumista Azure AD -tunnistetiedoilla.
 
-1. Siirry kohtaan **Retail ja Commerce** \> **Kanavan asetukset** \> **POS-asetukset** \> **POS-profiilit** \> **Toimintoprofiilit**.
-1. Valitse muutettava toimintoprofiili.
-1. Muuta **Toiminnot**-pikavälilehden **Myyntipisteen henkilöstön sisäänkirjaus** -osassa **Sisäänkirjauksen todennusmenetelmä** -kentän arvo **Henkilöstön tunnus ja salasana** -arvosta **Azure Active Directory** -arvoksi.
-
-Oletusarvoisesti kaikki toimintoprofiilit käyttävät myyntipisteen todennusmenetelmänä **Henkilöstön tunnus ja salasana** -arvoa. Tämän vuoksi sinun on muutettava **Sisäänkirjauksen todennusmenetelmä** -kentän arvoa, jos haluat käyttää Azure AD:ta. Tämä muutos vaikuttaa jokaiseen valittuun toimintoprofiiliin linkitettyyn vähittäismyymälään.
-
-Voit ottaa asetukset käyttöön myyntipisteen asiakassovelluksissa seuraavasti.
-
-1. Mene kohtaan **Retail ja Commerce** \> **Retail ja Commerce IT** \> **Jakeluaikataulu**.
-1. Suorita **1070** (**Kanavan määritys**) -jakeluaikataulu.
+1. Siirry kohtaan **Retail ja Commerce > Retail ja Commerce IT > Jakeluaikataulu** ja synkronoi viimeisimmät toimintoprofiilin asetukset myyntipisteen asiakkaille suorittamalla **1070 (kanavan konfiguraatio)** -työ.
 
 > [!NOTE]
-> Azure AD -todennus vaatii Internet-yhteyden. Todennus ei toimi, jos myyntipiste on offline-tilassa.
-> 
-> **Esimiehen ohitus** -toiminto ei tällä hetkellä tue Azure AD:tä todennusmenetelmänä. Operaattoritunnus ja salasana ovat pakollisia, vaikka Azure AD olisi määritetty myyntipistekirjautumisen todennusmenetelmäksi.
+> - **Azure AD ilman kertakirjausta** -todennusmenetelmä korvaa **Azure Active Directory** vaihtoehdon Commerce-versiossa 10.0.18 ja sitä aiemmissa versioissa.
+> - Azure AD -todennus edellyttää aktiivista Internet-yhteyttä, eikä se toimi, kun myynti on offline-tilassa.
 
-## <a name="associate-an-azure-ad-account-with-a-worker"></a>Azure AD -tilin liittäminen työntekijään
+## <a name="associate-azure-ad-accounts-with-pos-users"></a>Azure AD -tilien liittäminen myyntipisteen käyttäjiin
 
-Ennen kuin myymälän työntekijä voi käyttää Azure AD -tiliä myyntipistesovellukseen kirjautumisessa, Azure AD -tili on liitettävä kyseiselle työntekijälle.
+Jos haluat käyttää Azure AD:tä myyntipisteen todennusmenetelmämä, sinun on liitettävä Azure AD -tilit Commerce-pääkonttorisovelluksen myyntipistekäyttäjiin. 
 
-Voit liittää Azure AD -tilin työntekijälle seuraavasti.
-
-1. Siirry kohtaan **Vähittäismyynti ja kauppa** \> **Työntekijät** \> **Työntekijät**.
-1. Avaa työntekijän tietosivu.
-1. Valitse toimintoruudun **Kauppa**-välilehden **Ulkoinen tunnus** -ryhmässä **Liitä aiemmin luotu tunnus**.
+Voit liittää Azure AD -tilejä Commerce-pääkonttorisovelluksen myyntipistekäyttäjiin noudattamalla seuraavia ohjeita.
+    
+1. Valitse **Retail ja Commerce > Työntekijät > Työntekijät** ja avaa työntekijätietue.
+1. Valitse toimintoruudussa **Kauppa**-välilehti ja sitten **Ulkoinen tunnus** -kohdassa **Liitä aiemmin luotu tunnus**. 
 1. Valitse **Käytä aiemmin määritettyä ulkoista tunnusta** -valintaikkunassa **Hae sähköpostiosoitteen avulla**, anna Azure AD -sähköpostiosoite ja valitse **Hae**.
 1. Valitse palautettu Azure AD -tili ja valitse sitten **OK**.
 
-Työntekijän tietosivun **Alias**, **Täydellinen käyttäjätunnus**- ja **Ulkoinen alitunnus** -kentät **Kauppa**-välilehdessä täytetään.
+Yllä olevien määritysvaiheiden jälkeen työntekijän tietosivun **Alias**, **Täydellinen käyttäjätunnus**- ja **Ulkoinen alitunnus** -kentät **Kauppa**-välilehdessä täytetään.
+
+Suorita **1060 (Henkilökunta)** -työ kohdassa **Retail ja Commerce > Retail ja Commerce IT > Jakeluaikataulu** synkronoidaksesi viimeisimmät myyntipisteen käyttäjän ja Azure AD -tilin tiedot kanavaan.
 
 > [!NOTE]
-> Kun työntekijän tietue on päivitetty esimerkiksi uuden Azure AD -tilin liittämisen, salasanan muuttamisen tai työntekijän osoitekirjan päivittämisen vuoksi, on suositeltavaa suorittaa **1060** (**Henkilöstö**) -jakeluaikataulu ja synkronoida uusimmat henkilöstötiedot kanavaan. Näin myyntipistesovellus voi hakea oikeat tiedot käyttäjän valtuutusta ja valtuutuksen tarkistusta varten.
+> Parhaan käytännön mukaisesti on suositeltavaa, että kun työntekijätiedot, kuten salasana, myyntipisteen käyttöoikeus, liittyvä Azure AD -tili tai työntekijän osoitekirja, on päivitetty Commerce-pääkonttorisovelluksessa, on suositeltavaa suorittaa **1060 (Henkilökunta)** -työ viimeisimpien työntekijätietojen synkronoimiseksi kanavaan. Näin myyntipisteen asiakasohjelma voi hakea oikeat tiedot käyttäjän valtuutusta ja valtuutuksen tarkistusta varten.
+
+## <a name="pos-lock-register-and-sign-out-with-azure-ad-authentication"></a>Myyntipisteen lukitusrekisteri ja uloskirjautuminen Azure AD -todennuksen avulla
+
+Kun myynti on määritetty käyttämään Azure AD -todennusmenetelmää, tapahtuu seuraavaa:
+
+- **Lukitusrekisteri**-toiminto ei ole käytettävissä myyntipistesovelluksessa. 
+- **Automaattinen lukitus** -toiminto toimii samoin kuin **Automaattinen uloskirjaus** -toiminto.
+- Jos myyntipisteen käyttäjä valitsee **Kirjaudu ulos**, käyttäjää pyydetään kirjautumaan sisään Azure AD -tunnistetiedoilla kun myyntipiste käynnistetään seuraavan kerran riippumatta siitä, onko kertakirjautuminen käytössä.
+
+## <a name="manager-override-functionality-with-azure-ad-authentication"></a>Ohitustoimintojen hallinta Azure AD -todennuksella
+
+Kun myyntipiste on määritetty käyttämään Azure AD -todennusta, esimiehen ohitustoiminto avaa valintaikkunan, jossa pyydetään esimiehen käyttäjän Azure AD -käyttöoikeudet. Kun esimiehen kirjautuminen on hyväksytty, esimiehen Azure AD -tunnistetiedot poistetaan ja edellisen käyttäjän Azure AD -tunnistetietoja käytetään myöhemmissä myyntipistetoiminnoissa.
+
+> [!NOTE]
+> - Commerce-versioissa 10.0.18 ja sitä aiemmissa versioissa esimiehen ohitustoiminto ei tue Azure AD:tä. Henkilöstötunnus ja salasana ovat pakollisia, vaikka myyntipiste olisi määritetty käyttämään Azure AD -todennusmenetelmää.
+> - Kun käytät CPOS:ää Safari-selaimessa Apple iOS -laitteella, sinun on ensin poistettava **Estä ponnahdusikkunat** käytöstä Safari-asetuksissa, jotta esimiehen ohitustoiminto voi käyttää Azure AD -todennusta. 
+
+## <a name="security-best-practices-for-azure-ad-based-pos-authentication-on-shared-devices"></a>Suojauksen parhaat käytännöt Azure AD -pohjaiselle myyntipisteen todentamiselle jaetuissa laitteissa
+
+Useat vähittäismyyjät ovat määrittäneet vähittäismyyntiympäristönsä niin, että useiden käyttäjien on tarpeen käyttää myyntipistesovellusta jaetusta fyysisestä laitteesta. Samalla kun kertakirjaus tarjoaa kätevän ja sujuvan todennusmenetelmän, se voi myös luoda aukon suojauksessa, koska nykyinen myyntipisteen käyttäjä ei välttämättä huomaa, että toisen käyttäjän tunnistetietoja käytetään tapahtumien tai toimintojen suorittamiseen myyntipisteessä. Ennen kuin määrität myyntipisteen käyttämään Azure AD -todennusmenetelmää, on suositeltavaa tarkistaa suojauskäytäntösi ja jaetun laitteen kirjautumisasetukset ja päättää, mikä vaihtoehto sopii parhaiten.
+
+- Jos vähittäismyyntiympäristö käyttää fyysistä kirjautumista varten jaettua tiliä (esimerkiksi paikallista tiliä), on suositeltavaa käyttää **Azure AD ilman kertakirjausta** -vaihtoehtoa. Näin varmistetaan, että kukin myyntipisteen käyttäjä antaa Azure AD -tunnistetietonsa kirjautuessaan myyntipisteeseen.
+- Jos vähittäismyyntiympäristö edellyttää, että työntekijät kirjautuvat sisään myyntipisteeseen omalla Azure AD -tilillään ja käytössä on fyysinen laite, on suositeltavaa käyttää **Azure AD kertakirjautuksella** -vaihtoehtoa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen](extended-logon.md)
+[Työntekijän konfiguroiminen](tasks/worker.md)
 
 [Vähittäismyynnin toimintoprofiilin luominen](retail-functionality-profile.md)
 
-[Työntekijän konfiguroiminen](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+[Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen](extended-logon.md)
+
+[Suojauksen parhaat käytännöt pilvimyyntipisteelle jaetuissa ympäristöissä](dev-itpro/secure-retail-cloud-pos.md)
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

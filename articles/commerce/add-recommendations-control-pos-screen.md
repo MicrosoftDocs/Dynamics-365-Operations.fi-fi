@@ -1,17 +1,14 @@
 ---
 title: Suositusten lisääminen tapahtumanäyttöön
-description: Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercein näytön asettelun suunnittelutoimintoa.
+description: Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercen näytön asettelun suunnittelutoimintoa.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,19 +16,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af2450b27106325a86f6db68f9791637694cda63
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af76169455cef16467b1faa9eda92a969aa923e85750cf245b0a6bd071a092e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731004"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Suositusten lisääminen tapahtumanäyttöön
 
 [!include [banner](includes/banner.md)]
 
 
-Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercein näytön asettelun suunnittelutoimintoa. Lisätietoja tuotesuositusominaisuuksista on [POS-dokumentaation tuotesuosituksissa](product.md).
+Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercen näytön asettelun suunnittelutoimintoa. Lisätietoja tuotesuositusominaisuuksista on [POS-dokumentaation tuotesuosituksissa](product.md).
 
 
 Voit näyttää tuotesuosituksia myyntipisteen laitteessa, kun käytät Commercea. Voit näyttää tuotteen suosituksi lisäämällä ohjausobjektin tapahtumanäytölle näytön asettelun suunnittelutoiminnon avulla. 
@@ -46,7 +43,7 @@ Voit näyttää tuotesuosituksia myyntipisteen laitteessa, kun käytät Commerce
 6. Kun kirjaudut, tulee sivu, joka on samanlainen kuin alla oleva. Asettelu on erilainen riippuen oman myymälän tekemistä mukautuksista.
 
 
-    [![Asettelun suunnittelutoiminto](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Asettelun suunnittelutoiminto.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Näyttöasetuksen valitseminen
 
@@ -61,11 +58,11 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 1. Pienennä tapahtumarivien erittelyalueen korkeutta niin, että se on samalla korkeudella kuin vasemmalla puolella oleva asiakaspaneeli.
 
 
-    [![Tapahtumarivien erittelyalueen korkeutta vähennetty](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Tapahtumarivien erittelyalueen korkeutta vähennetty.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. Vasemmanpuoleisesta valikosta vedä ja pudota suosituksien ohjausobjekti Tapahtumarivin tiedot -alueen ja painikeruudukon väliin näytön alareunassa keskellä. Muuta ohjausobjektin kokoa, jotta se mahtuu kyseiseen tilaan.
 
-    [![Suositusten ohjaus lisätty asetteluun](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Suositusten ohjaus lisätty asetteluun.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Valitse **X**, jotta tallennat ja poistut asettelun suunnittelutoiminnosta.
@@ -80,13 +77,13 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 
 2. Valitse **Mukauta**.
 
-    [![Mukautus - Välilehden ohjausvalintaikkuna](./media/pic-5.png)](./media/pic-5.png)
+    [![Mukautus - Välilehden ohjausvalintaikkuna.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Valitse **Uusi välilehti**.
 4. Etsi juuri lisäämäsi uusi välilehti. Näyttöä on ehkä vieritettävä alaspäin.
 5. Valitse avattavassa **Sisältö**-valikossa **Suositellut tuotteet**.
 
-    [![Suositeltujen tuotteiden valinta Sisältö-valikossa](./media/pic-6.png)](./media/pic-6.png)
+    [![Suositeltujen tuotteiden valinta Sisältö-valikossa.](./media/pic-6.png)](./media/pic-6.png)
 
 6. Kirjoita **Otsikko**-kenttään suositusten välilehden nimi. Kirjoita esimerkiksi Suositellut tuotteet.
 7. Valitse **Kuva**-kentässä välilehdessä näytettävä kuva.
@@ -119,3 +116,6 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

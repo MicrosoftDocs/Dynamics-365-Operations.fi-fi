@@ -1,29 +1,30 @@
 ---
 title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
-author: Sunil-Garg
-manager: AnnBe
-ms.date: 11/02/2020
-ms.topic: article
+author: peakerbl
+ms.date: 10/21/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684057"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071082"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä **Tietojen hallinta** -työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
 
@@ -70,6 +71,9 @@ Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot mä�
 | XML                    | \-–                                      | XML-elementin XML-määrite |
 | Erotin, kiinteä leveys | Pilkku, puolipiste, sarkain, pystyviiva, kaksoispiste | \-–                     |
 
+> [!NOTE]
+> On tärkeää valita oikea arvo asetuksille **Rivin erotin**, **Sarakkeen erotin** ja **Tekstimäärite**, jos **Tiedostomuoto**-asetuksen arvona on **Erotettu**. Varmista, että tiedot eivät sisällä erottimena tai määritteenä käytettyä merkkiä, koska tämä voi johtaa virheisiin tuonnissa ja viennissä.
+
 ### <a name="sequence-the-entities"></a>Aseta yksiköt sarjaan
 Yksiköt voi järjestää tietomallissa tai tuonti- ja vientitöissä. Kun suoritat työn, joka sisältää useamman tietoyksikön, varmista, että yksiköt on järjestetty oikein. Yksiköt järjestetään ensisijaisesti siten, että voit käsitellä kaikki yksiköiden väliset toiminnalliset riippuvuudet. Jos yksiköillä ei ole toiminnallisia riippuvuuksia, ne voidaan ajoittaa tuotavaksi tai vietäväksi rinnakkain.
 
@@ -108,7 +112,7 @@ Järjestelmässä on kaksi määritysnäkymää: **Yhdistämismääritysten visu
 
 Voit luoda yhdistämismäärityksen sivulla valitsemalla **Luo lähteen yhdistämismääritys**. Luotu määritys toimii kuin automaattinen määritys. Tämän vuoksi yhdistämättömät kentät on yhdistettävä manuaalisesti.
 
-![Tietotyypin yhdistämismääritys](./media/dixf-map.png)
+![Tietotyypin yhdistämismääritys.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Tarkista tuonti- tai vientityön turvallisuus
 Voit rajoittaa **Tietojenhallinta**-työtilan käyttöoikeutta, jotta muut kuin järjestelmänvalvojat voivat käyttää vain tiettyjä töitä. Käyttöoikeus tietotyöhön tarkoittaa täyttä käyttöoikeutta kyseisen työn suoritushistoriaan sekä väliaikaisiin tauluihin. Sinun on siis varmistettava, että käyttöoikeudet on asetettu asianmukaisesti, kun luot tietotyön.
@@ -134,7 +138,7 @@ Voit suorittaa työn kerran valitsemalla **Tuo**- tai **Vie**-painikkeen, kun ol
 ## <a name="validate-that-the-job-ran-as-expected"></a>Vahvista, että työ suoritettiin odotetulla tavalla
 Työhistoria on käytettävissä tuonti- ja vientitöiden ongelmanratkaisuun ja tutkintaan. Historian työt on järjestetty aikajaksoille.
 
-![Työhistorian jaksot](./media/dixf-job-history.md.png)
+![Työhistorian jaksot.](./media/dixf-job-history.md.png)
 
 Kukin ajettu työ sisältää seuraavat tiedot:
 
@@ -163,19 +167,7 @@ Voit nopeuttaa tietojen tuontia, jolloin tiedoston tuonnin rinnakkaiskäsittely 
     - Kirjoita **Tuonnin kynnystietueiden määrä** -kenttään tuonnin kynnystietueiden määrä. Tämä määrittää, mitä tietuemäärää säie käsittelee. Jos tiedostossa on 10 000 tietuetta, tietueiden määrä on 2 500 ja tehtävän määrä 4 merkitsee, että kukin säie käsittelee 2 500 tietuetta.
     - Syötä **Tuontitehtävien määrä** -kenttään tuontitehtävien määrä. Tämä ei saa ylittää eräkäsittelyn enimmäiseräsäikeitä **Järjestelmänhallinnan \>Palvelinmäärityksissä**.
 
-## <a name="clean-up-the-staging-tables"></a>Tyhjennä väliaikaiset taulut
-Platform update 29 -versiosta alkaen tämä toiminto on vanhentunut. Tämä korvataan uudella versiolla, joka on kuvattu alla olevassa työhistorian puhdistustoiminnoissa.
-
-Väliaikaiset taulut voi tyhjentää **Tietojenhallinta**-työtilan **Tyhjennä väliaikaiset taulut** -ominaisuuden avulla. Voit valita kustakin väliaikaisesta taulusta poistettavat tietueet seuraavilla asetuksilla:
-
-- **Yksikkö** – jos tarjottuna on vain yksikkö, kaikki kyseisen yksikön väliaikaisen taulun tietueet poistetaan. Valitsemalla tämän voit tyhjentää kaikki yksikön tietoprojektien ja -töiden tiedot.
-- **Työn tunnus** – jos vain työn tunnus on annettu, kaikki valitun työn yksiköiden tietueet poistetaan asianmukaisista väliaikaisista tauluista.
-- **Tietoprojektit** – jos valittuna on vain tietoprojekti, kaikki valitun projektin kaikkien töiden yksiköihin kuuluvat kaikki tietueet poistetaan.
-
-Poistettavaa tietojoukkoa voi myös rajoittaa yhdistämällä asetuksia.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Työhistorian tyhjennus (saatavilla Platform update 29 -versiossa tai uudemmissa)
-
+## <a name="job-history-clean-up"></a>Työhistorian siivous 
 Tietojen hallinnan työhistorian puhdistustoimintoa on käytettävä suoritushistorian ajoittaista uudelleenpuhdistusta varten. Tämä toiminto korvaa aiemman väliaikaisen taulukon puhdistustoiminnon, joka on nyt vanhentunut. Puhdistusprosessi puhdistaa seuraavat taulukot.
 
 -   Kaikki väliaikaiset taulukot
@@ -211,16 +203,10 @@ Kun ajoitat puhdistusprosessia, seuraavat parametrit on määritettävä, jotta 
 > [!NOTE]
 > Jos väliaikaisen tallennuksen tauluja ei ole puhdistettu kokonaan, varmista, että puhdistustyö ajoitetaan suoritettavaksi toistuvana. Kuten edellä on kerrottu, kunkin puhdistuksen suorituksen yhteydessä työ puhdistaa niin monta suorituksen tunnusta kuin mahdollista annetun ajan puitteissa. Jotta puhdistusta voidaan jatkaa jäljellä olevissa väliaikaisen tallennuksen tietueissa, työ on ajoitettava suoritettavaksi säännöllisesti.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Työhistorian tyhjennys ja arkistointi (käytössä esiversiona alustapäivityksessä 39 tai versiossa 10.0.15)
+## <a name="job-history-clean-up-and-archival"></a>Työhistorian puhdistus ja arkistointi 
 Työhistorian tyhjennys ja arkistointi -toiminnallisuus korvaa aiemmat siivoustoiminnon versiot. Tämä osio kertoo näistä uusista ominaisuuksista.
 
-Yksi puhdistustoiminnon tärkeimmistä muutoksista on järjestelmän erätyön käyttö historiatietojen poistamiseen. Järjestelmän erätyön käyttö sallii Finance and Operations -sovellusten ajoittaa siivouserätyön automaattisesti ja suorittaa sen, kun järjestelmä on valmis. Erätyötä ei enää tarvitse ajoittaa manuaalisesti. Tässä oletussuoritustilassa erätyö suoritetaan tunnin välein alkaen kello 12 puolilta öin, ja se säilyttää viimeisimmän 7 päivän suoritushistorian. Tyhjennetty historia arkistoidaan tulevaa noutamista varten.
-
-> [!NOTE]
-> Koska tämä toiminto on esikatselussa, järjestelmän erätyö ei poista suoritushistoriaa, ennen kuin se on otettu käyttöön työn DMFEnableExecutionHistoryCleanupSystemJob kautta. Kun ominaisuus on yleisesti saatavilla tulevassa versiossa, tätä ei vaadita, ja järjestelmän erätyö alkaa tyhjentää ja arkistoida sen jälkeen, kun järjestelmä on valmis perustuen määritettyyn aikatauluun edellä kuvatulla tavalla. 
-
-> [!NOTE]
-> Tulevassa versiossa puhdistus toimintojen aiemmat versiot poistetaan Finance and Operations -sovelluksista.
+Yksi puhdistustoiminnon tärkeimmistä muutoksista on järjestelmän erätyön käyttö historiatietojen poistamiseen. Järjestelmän erätyön käyttö sallii taloushallinnon ja toimintojen sovellusten ajoittaa siivouserätyön automaattisesti ja suorittaa sen, kun järjestelmä on valmis. Erätyötä ei enää tarvitse ajoittaa manuaalisesti. Tässä oletussuoritustilassa erätyö suoritetaan tunnin välein alkaen puolilta öin, ja se säilyttää viimeisimmän 7 päivän suoritushistorian. Tyhjennetty historia arkistoidaan tulevaa noutamista varten. Alkaen versiosta 10.0.20 tämä ominaisuus on aina käytössä.
 
 Toinen puhdistusprosessin muutos on tyhjennetyn suoritushistorian arkistointi. Puhdistustyö arkistoi poistetut tietueet blob-tallennustilaan, jota DIXF käyttää säännölliseen kanssakäymiseen. Arkistoitu tiedosto on DIXF-pakettimuodossa, ja se on käytettävissä 7 päivän ajan blob-objektissa, jolloin se voidaan ladata. Oletusarvon mukainen arkistoidun tiedoston 7 päivän säilytysaika voidaan muuttaa enintään 90 päiväksi parametreissä.
 
@@ -243,3 +229,6 @@ Voit ladata arkistoidun suoritushistorian siirtymällä tietojen hallinnan työt
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

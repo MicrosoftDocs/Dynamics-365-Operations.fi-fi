@@ -2,27 +2,24 @@
 title: Yksi tosite useille asiakkaan tai toimittajan tietueille
 description: Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 Financen tulevista versioista, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cbc638b684ad6eb59b852e599cf36cbd0b66faf
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 0e9c321315f91de6cf0f2029c26bd4f398a73830
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4442932"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193998"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
 
@@ -211,8 +208,6 @@ Käteisalennukseen liittyvän tositteen taloushallinnon dimensioita käytetään
 | ARP-00001   | 403300-002-023- | Asiakkaan käteisalennus | 2,00      |            |
 | ARP-00001   | 130100-002-     | Asiakkaan saldo       |           | 2,00       |
 
-### 
-
 ## <a name="one-voucher-with-a-netting-for-multiple-customers-and-vendors"></a>Yksi tosite ja nettoutus useille asiakkaille ja toimittajielle
 Nettoutus voi olla hyödyllinen, kun organisaatio ostaa tai myy samalle yritykselle. Sen sijaan, että toimittajan laskuja maksetaan ja odotetaan myyntilaskujen maksua, toimittajan laskut ja myyntilaskut nettoutetaan. Nettoutustapahtuma täsmäytetään avoimia saldoja vastaan. 
 
@@ -233,3 +228,6 @@ Ei-toivottujen ongelmien välttämiseksi tämän tapahtuman tulevissa kirjauksis
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

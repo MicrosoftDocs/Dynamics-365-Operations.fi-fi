@@ -2,16 +2,13 @@
 title: Yleiskustannuslaskenta
 description: Tässä aiheessa kuvataan tyypillinen yleiskustannusten laskenta- ja kohdistusprosessi.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 923e6e38a664e17ec3349d839c4b77ec903c5dc2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442879"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187994"
 ---
 # <a name="overhead-calculation"></a>Yleiskustannuslaskenta
 
@@ -32,8 +29,7 @@ ms.locfileid: "4442879"
 
 Tässä aiheessa kuvataan tyypillinen yleiskustannusten laskenta- ja kohdistusprosessi.
 
-<a name="term-definition"></a>Sanaston määritelmä
----------------
+## <a name="term-definition"></a>Sanaston määritelmä
 
 Yleiskustannukset ovat yrityksen toiminnasta syntyviä kustannuksia, joita ei voi suoraan liittää mihinkään tiettyyn liiketoiminnan tehtävään, tuotteeseen tai palveluun. Yleiskustannukset ovat tärkeä tuki voittoa tuottavien tehtävien luonnissa. Seuraavassa on joitakin esimerkkejä yleiskustannuksista:
 
@@ -1415,3 +1411,6 @@ Kirjanpidossa kirjataan tyhjään kustannuspaikkatunnukseen sähkökustannus arv
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

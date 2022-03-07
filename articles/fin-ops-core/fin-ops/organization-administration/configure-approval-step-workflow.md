@@ -2,11 +2,9 @@
 title: Hyväksyntävaiheiden lisääminen työnkulkuun
 description: Tässä ohjeaiheessa kerrotaan, miten hyväksyntävaiheen ominaisuudet määritetään.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797093"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070774"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Hyväksyntävaiheiden lisääminen työnkulkuun
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten hyväksyntävaiheen ominaisuudet määritetään.
 
@@ -158,7 +159,7 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille hyväksy
 
     - **Yksi hyväksyjä** – Asiakirjan toimenpiteen valitsee ensimmäinen hyväksyntäpyyntöön vastaava henkilö. Esimerkiksi Sam on lähettänyt 15 000 dollarin kuluraportin. Kuluraportti on liitetty Suelle, Joelle ja Billille. Jos Sue on ensimmäinen asiakirjaan reagoiva henkilö, hänen valintansa on se, jota asiakirjaan sovelletaan. Jos Sue hylkää asiakirjan, se hylätään ja lähetetään takaisin Samille. Jos Sue hyväksyy asiakirjan, se lähetetään Annille hyväksyttäväksi.
 
-        ![Työnkulku, jolla on hyväksyntäprosessi](./media/workflow_multipleusersinstep.gif)
+        ![Työnkulku, jolla on hyväksyntäprosessi.](./media/workflow_multipleusersinstep.gif)
 
     - **Suurin osa hyväksyjistä** – Asiakirjan toimenpide määräytyy sen mukaan, miten suurin osa hyväksyjistä vastaa hyväksyntäpyyntöön. Esimerkiksi Sam on lähettänyt 15 000 dollarin kuluraportin. Kuluraportti on liitetty Suelle, Joelle ja Billille. Jos Sue ja Jo ovat ensimmäiset vastauksen antaneet hyväksyjät, asiakirjan toimenpide määräytyy sen mukaan, miten he vastaavat pyyntöön.
 
@@ -276,3 +277,6 @@ Jos käyttäjä reagoi asiakirjaan aikarajan puitteissa, asiakirja on erääntyn
 
 5. Toista vaiheet 3 ja 4 jokaiselle käyttäjälle, joka lisätään eskalointipolkuun. Käyttäjien järjestystä voi muuttaa.
 6. Jos eskalointipolun käyttäjät eivät vastaa asiakirjaan ajoissa, järjestelmä suorittaa asiakirjan toimenpiteen automaattisesti. Voit määrittää järjestelmän suorittaman toimenpiteen valitsemalla **Toimenpide**-rivin ja sitten valitsemalla **Lopetustoiminto**-välilehdellä toimenpiteen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

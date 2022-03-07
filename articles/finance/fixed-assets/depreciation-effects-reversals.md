@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd4c4a9e7e89b34b1311b38310877b45e4d95b22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4952f94d635a9c9cdc7892e6cc142cfe4d526e44
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442654"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241207"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Poistojen vaikutukset ja peruutukset
 
@@ -96,3 +95,6 @@ Poisto raportoidaan 16,95 yksikköä liian pieneksi (983,62 - 966,67).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

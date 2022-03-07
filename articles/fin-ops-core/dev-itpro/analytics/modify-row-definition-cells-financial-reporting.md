@@ -2,11 +2,9 @@
 title: Rivin määrityksen solujen muokkaaminen
 description: Tässä ohjeaiheessa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3bf1c8081eea86fd14600174d843447b727d0226
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685856"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347945"
 ---
 # <a name="modify-row-definition-cells"></a>Rivin määrityksen solujen muokkaaminen
 
@@ -176,7 +174,7 @@ Rivin määrityksen **Muotoilukoodi**-sarakkeessa muotoilukoodit **DES**-, **LFT
 
 Seuraavassa esimerkissä käyttäjä haluaa estää raportin **Käteinen yhteensä** -rivin otsikon ja alleviivausten tulostamisen, koska kummallakaan käteistilillä ei ole ollut toimintaa. Tämän vuoksi käyttäjä syöttää rivin 220 (joka on muotoilurivi, kuten muotoilukoodi **---** osoittaa) **Liittyvät kaavat/rivit/yksiköt** -soluun **250**, joka on sen summarivin koodi, jonka hän haluaa piilottaa.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Sarakelaskelman perusrivin valitseminen
 Suhteellisessa raportoinnissa rivin määritykseen liitetään yksi perusrivi tai useita perusrivejä **CBR** (vaihda perusrivi) -muotoilukoodin avulla. Tämän jälkeen perusriviin viitataan sarakkeen määrityksen laskelmassa. Seuraavassa on joitakin tavallisia esimerkkejä CBR-laskelmista:
@@ -401,7 +399,7 @@ Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja t
 2. Kaksoisnapsauta **Linkki taloushallinnon dimensioihin** -sarakkeen solua.
 3. Kaksoisnapsauta **Dimensiot**-valintaikkunassa dimension nimen alapuolella olevaa solua.
 4. Valitse dimension valintaikkunassa **Yksittäinen tai alue**.
-5. Syötä **Alku**-kenttään aloitusdimensio tai napauta ![Browse](media/browse.gif "Selaa") etsiäksesi käytettävissä olevia dimensioita. Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
+5. Syötä **Alku**-kenttään aloitusdimensio tai napsauta ![Selaa.](media/browse.gif "Selaa") hakeaksesi käytettävissä olevia dimensioita. Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
 6. Sulje dimension valintaikkuna valitsemalla **OK**. **Dimensiont**-valintaikkunassa näkyy päivitetty dimensio tai alue.
 7. Sulje **Dimensiot**-valintaikkuna valitsemalla **OK**.
 
@@ -478,7 +476,7 @@ Seuraavassa taulukossa esitellään **Dimensiot**-valintaikkunan kentät.
 
 | Nimike                | Kuvaus |
 |---------------------|-------------|
-| Yksittäinen tai alue | Syötä tilin nimi kenttään **Alku** tai napauta **Selaa**-painiketta ![Selaa](media/browse.gif "Selaa") etsiäksesi tilin selaamalla. Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä. |
+| Yksittäinen tai alue | Syötä tilin nimi **Alku**-kenttään tai napsauta **Selaa**-painiketta ![Selaa.](media/browse.gif "Selaa") hakeaksesi tilin selaamalla. Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä. |
 | Dimensioarvoyhdistelmä | Syötä **Nimi**-kenttään dimensioarvoyhdistelmän nimi. Voit luoda, muokata, kopioida tai poistaa yhdistelmän valitsemalla **Dimensioarvoyhdistelmien hallinta**. Rivin määrityksen tämän dimensioarvoyhdistelmän **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava. |
 | Summatilit   | Syötä **Nimi**-kenttään summatilien dimensio tai etsi se kentässä. Raportin määrityksen summatilin **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava. |
 
@@ -529,3 +527,6 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportointi](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

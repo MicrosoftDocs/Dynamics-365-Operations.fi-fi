@@ -1,12 +1,10 @@
 ---
 title: Luo ostotilauksiin perustuvia resursseja
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit luoda luettelon resursseista, joita voidaan käyttää perustana luotaessa resursseja resurssien hallinnan kunnossapitotöille.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectItem, EntAssetPendingAssets
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83419fa5c6b6aee0b321c526565c3518deaf4bd0
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 51896f512a00bd41617fd02c2cd364c4e00eb774
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016981"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811155"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Luo ostotilauksiin perustuvia resursseja
 
@@ -69,3 +67,6 @@ Voit tarkistaa odottavat resurssit suorittamalla **Odottavien resurssien määr�
 3. Voit määrittää tämän työn suoritettavaksi erätyönä, esimerkiksi kerran päivässä.
 
 **Varoitus:** jos tietoja muutetaan ostotilauksessa *sen jälkeen*, resurssi on luotu nimikkeeseen perustuen, kyseiset muutokset eivät vaikuta resurssiin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

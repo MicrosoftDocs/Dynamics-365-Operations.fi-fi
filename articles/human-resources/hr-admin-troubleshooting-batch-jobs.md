@@ -2,29 +2,28 @@
 title: Optimoi suorituskyky aikatauluttamalla erätyöt sulkemisajan jälkeen
 description: Tässä ohjeaiheessa selitetään, miten voit ratkaista Microsoftin Dynamics 365 Human Resourcesin suorituskykyongelmia aikatauluttamalla pitkään jatkuvia erätöitä sulkemisajan jälkeen.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 452a87cf5ba6c1ac73636584d75b2ec2ac555e02
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 13482ab7b9ee6303138a7a5e82dce78138e0b8ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527762"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357310"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>Optimoi suorituskyky aikatauluttamalla erätyöt sulkemisajan jälkeen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -52,11 +51,11 @@ Seuraavat erätyöt tulisi suorittaa yöaikaan tai sulkemisajan jälkeen. Muista
 
 3. Valitse **Suorita taustalla** ja sitten **Toistuminen**.
 
-   ![Määritä toistuminen](media/talent-batch-history-cleanup-recurrence.png)
+   ![Määritä toistuminen.](media/talent-batch-history-cleanup-recurrence.png)
 
 4. Valitse **Määritä toistuvuus** -osiosta **Aloituspäivä** ja **Aloitusaika** tapahtumaan ruuhka-aikojen ulkopuolella tai viikonloppuna. Valitse **Ei päättymispäivää**. 
 
-   ![Määritä toistuvuuden alkamispäivä ja -aika](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Määritä toistuvuuden alkamispäivä ja -aika.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. Valitse **OK**.
 
@@ -65,3 +64,6 @@ Seuraavat erätyöt tulisi suorittaa yöaikaan tai sulkemisajan jälkeen. Muista
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Optimoi suorituskyky automaattisilla tyhjennystehtävillä](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

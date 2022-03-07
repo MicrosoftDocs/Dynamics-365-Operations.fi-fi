@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce -arviointiympäristön valmisteleminen
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit valmistella Microsoft Dynamics 365 Commercen arviointiympäristön.
 author: psimolin
-manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 19cedf01d1b916de785454d55448f41d1f5db1df
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969898"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792288"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön valmisteleminen
 
@@ -34,8 +32,6 @@ Ennen kuin aloitat, suosittelemme, että tarkistat tämän aiheen nopeasti, jott
 
 > [!NOTE]
 > Commercen arviointiympäristöt eivät ole yleisesti saatavana, ja ne myönnetään kumppaneille ja asiakkaille pyyntökohtaisesti. Pyydä lisätietoja Microsoft-kumppanilta.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Commercen arviointiympäristön onnistunut valmistelu edellyttää sellaisen projektin luontia, jossa on tietty tuotteen nimi ja tyyppi. Ympäristöllä ja Commerce Scale Unit (CSU) -ratkaisulla on myös joitakin tiettyjä parametreja, joita on käytettävä, jos oletat valmistelevasi sähköisen kaupankäynnin myöhemmin. Tämän ohjeaiheen ohjeissa kuvataan kaikki vaiheet, joita tarvitaan valmisteluun, ja parametrit, joita on käytettävä.
 
@@ -191,3 +187,6 @@ Tietoja Commercen arviointiympäristön valmistelu- ja määritysprosessin jatka
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce -sivusto](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

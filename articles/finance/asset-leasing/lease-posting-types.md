@@ -2,28 +2,25 @@
 title: Vuokrauksen kirjaustyypit
 description: Tässä ohjeaiheessa kuvataan kirjaustyypit, joita käytetään resurssien vuokratapahtumissa.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeasePostingAccounts
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ceb4fbeb4dbf2f535e05a9d46c84169435d2803b
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 721463000c05eb1774335ccce1af39468c2aed9f179e5e88d8725f4d265d6870
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718244"
 ---
 # <a name="lease-posting-types"></a>Vuokrauksen kirjaustyypit
 
@@ -92,15 +89,6 @@ Tili on liitetty käyttöoikeusomaisuuserän vastatilille. Tätä tiliä hyvitet
 **Veloitus:** Poistokulu XXX<br>
 **Hyvitys:** Kumulatiivinen poisto XXX
 
-## <a name="retained-earnings"></a>Jakamaton voitto
-
-Kertyneisiin tuottoihin liittyvä tili. Tätä tiliä veloitetaan tai hyvitetään siirtymäoikaisun kirjauskansioviennissä käyttämällä kokonaan takautuvaa menetelmää tai päivittävää kumulatiivista vaihtoehto A -menetelmää. Alkuperäisen käyttöoikeusomaisuuserän ja vuokrasopimusvelan välinen ero kirjataan kertyneisiin tuottoihin. Harvoissa tapauksissa myös vuokrasopimuksen muokkaus vaikuttaa kertyneisiin tuottoihin, jos vuokrasopimuksen luokittelu muutetaan rahoitusleasingsopimuksesta käyttöleasingsopimukseksi ja käyttöoikeusomaisuuserä korotetaan tai alennetaan niin, että se vastaa vuokrasopimusvelkaa.
-
-**Esimerkki kirjauskansiovienneistä:** Siirtymän oikaisu (kokonaan takautuva menetelmä tai päivittävä kumulatiivinen vaihtoehto A -menetelmä)<br>
-**Veloitus:** Vuokrasopimusvelka XXX<br>
-**Hyvitys:** Vuokrasopimuksen resurssi XXX<br>
-**Hyvitys:** Kertynyt tuotto XXX
-
 ## <a name="variable-payment"></a>Muuttuva maksu
 
 Tämä tili liittyy muuttuviin vuoksiin, jotka indeksin uudelleenarviointi luo ASC 842-, ASC 840- ja IAS 17 -vuokrasopimusten avulla. Vuokra-aikataulussa muuttuvat maksut sisältyvät **Muuttuva maksu** -sarakkeeseen. Tätä tiliä veloitetaan, kun lasku luodaan muuttuvan maksun sisältävälle maksuaikatauluriville.
@@ -154,3 +142,6 @@ Kullekin kulutyypille valittua tiliä veloitetaan, kun luodaan maksu, jonka tyyp
 
 > [!NOTE]
 > Vastatili valitaan toimeenpanokustannuksen maksuaikataulun rivien vuokratasolla. Tämä vastatili voidaan liittää toimittajaan tai kirjanpitotiliin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

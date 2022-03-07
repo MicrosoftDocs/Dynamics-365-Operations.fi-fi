@@ -2,11 +2,8 @@
 title: DATETIMEVALUE ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) DATETIMEVALUE-funktiota käytetään.
 author: NickSelin
-manager: kfend
-ms.date: 12/03/2019
-ms.topic: article
+ms.date: 09/08/2021
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30879796b483752a578e516d8afd75f5a690cabc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7a9da0b9461926b1033d6a97b37d4b43a86d8dad
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684903"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485519"
 ---
 # <a name="datetimevalue-er-function"></a>DATETIMEVALUE ER-funktio
 
 [!include [banner](../includes/banner.md)]
 
-`DATETIMEVALUE`-funktio palauttaa *DateTime*-arvon, joka muunnetaan tietystä tekstiarvosta tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä [kulttuurissa](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) päivämäärä-/aika-arvoksi. Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).
+`DATETIMEVALUE` -funktio palauttaa *[Päivämäärä/aika](er-formula-supported-data-types-primitive.md#datetime)* -arvon, joka muunnetaan tietystä tekstiarvosta tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä [kulttuurissa](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) päivämäärä-/aika-arvoksi. Lisätietoja tuetuista muodoista on kohdassa [vakio](/dotnet/standard/base-types/standard-date-and-time-format-strings) ja [mukautettu](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Syntaksi 1
 
@@ -44,21 +41,21 @@ DATETIMEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argumentit
 
-`text`: *Merkkijono*
+`text`: *[Merkkijono](er-formula-supported-data-types-primitive.md#string)*
 
 Teksti, joka vastaa muokattavaa arvoa.
 
 `format`: *Merkkijono*
 
-Annetun tekstin muoto.
+Annetun tekstin muoto. Lisätietoja tuetuista muodoista on kohdassa [vakio](/dotnet/standard/base-types/standard-date-and-time-format-strings) ja [mukautettu](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *Merkkijono*
 
-Tietyn tekstin muotoilussa käytettävä kulttuuri.
+Tietyn tekstin muotoilussa käytettävä kulttuuri. Lisätietoja tuetuista kulttuureista on kohdassa [kulttuuri](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Palautusarvot
 
-*DateTime*
+*Päivämäärä ja aika*
 
 Tulokseksi saatava päivämäärä-/aika-arvo.
 
@@ -79,3 +76,6 @@ Kuitenkin `DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Päivämäärä- ja aikatoiminnot](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

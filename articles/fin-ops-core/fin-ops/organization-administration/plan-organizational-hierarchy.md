@@ -2,11 +2,9 @@
 title: Organisaatiohierarkian suunnitteleminen
 description: Ennen kuin määrität organisaation ja organisaatiohierarkiat, varmista, että suunnittelet miten liiketoimintasi mallinnetaan.
 author: sericks007
-manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771869"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Organisaatiohierarkian suunnitteleminen
 
@@ -166,7 +164,7 @@ Toimintayksiköt käyttävät pääyrityksen maakontekstia. Samassa yrityksessä
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jos organisaatio perustuu yrityksenä
 
-Tuettujen maiden tai alueiden kohdalla voidaan luoda useimmat lakisääteiset raportit. Lisätietoja kullekin maalle/alueella saatavilla olevista raporteista on [Microsoft Dynamics Localization Portalissa](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (CustomerSource-kirjautuminen on pakollista.)
+Tuettujen maiden tai alueiden kohdalla voidaan luoda useimmat lakisääteiset raportit. 
 
 > [!NOTE]
 > Kirjanpidon kirjanpitotason avulla voit tehdä oikaisevat kirjaukset emoyhtiölle, joka käyttää eri kirjanpidon vakiota kuin tytäryhtiö. Esimerkiksi yrityksessä, joka käyttää yleisesti Isossa-Britanniassa (UK GAAP) hyväksyttyjä kirjanpitokäytäntöjä, voit tehdä oikaisevat kirjaukset kirjanpitotasolla. Nämä tapahtumat voidaan konsolidoida emoyhtiöksi, joka käyttää Yhdysvalloissa yleisesti hyväksyttyjä kirjanpitoperiaatteita (GAAP). Oikaisumerkinnät eivät vaikuta UK GAAP -raportointiin.
@@ -241,3 +239,6 @@ Ota huomioon seuraavat suositeltavat menetelmät organisaatiohierarkian käyttö
 - Ennen kuin mallinnat tärkeimpiä uudelleenjärjestelyn tilanteita, käytä hierarkian voimassaolopäivämääriä vaikutusanalyysiin ja oikeellisuustarkistukseen.
 - Käytä luonnostilaa hierarkian muuttamiseen ennen, kuin julkaiset uuden version tuotantoympäristössä.
 - Rajoita niiden käyttäjien määrää, joilla on oikeudet lisätä organisaatioita hierarkiaan tai poistaa niitä tuotantoympäristössä. Pienempi numero laskee kalliiden virheiden mahdollisuutta ja tarvetta korjata virheitä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

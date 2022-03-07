@@ -2,26 +2,23 @@
 title: Verkossa tapahtuma taloushallinnon konsolidointi
 description: Tässä ohjeaiheessa käsitellään verkossa tapahtuvia taloushallinnon konsolidointeja kirjanpidossa.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a946a8325afebf76639991c60135d7425f5f211
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442763"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826759"
 ---
 # <a name="online-financial-consolidations"></a>Verkossa tapahtuma taloushallinnon konsolidointi
 
@@ -96,3 +93,6 @@ Lisätietoja eliminoinnista on kohdassa [Eliminointisäännöt](./elimination-ru
 Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
 
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

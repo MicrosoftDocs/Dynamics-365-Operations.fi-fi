@@ -2,15 +2,12 @@
 title: Käyttöönoton usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä Dynamics 365 Human Resourcesin toteutusprojektin käyttöönotosta
 author: rachel-profitt
-manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: 550e094fd34bfbdc66665be2ceed306de722c0d9
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668942"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055337"
 ---
 # <a name="go-live-faq"></a>Käyttöönoton usein kysytyt kysymykset 
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -48,7 +47,7 @@ Edellytysluettelo on kohdassa [Käyttöönoton valmistelu](hr-admin-go-live-pr
 
 ## <a name="what-is-a-go-live-assessment"></a>Mitä käyttöönottoarviointi tarkoittaa?  
 
-Käyttöönottoarviointi sisältyy [Microsoft FastTrack -ohjelmaan](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). Arvioinnin aikana ratkaisuarkkitehti arvioi, onko toteutusprojekti niin valmis, että valmistelusiirto ja käyttöönotto onnistuvat. Tämä arvio on tehtävä jokaisessa toteutusprojektissa, ja tuotantoympäristön käyttöönottoa voi pyytää vasta sen jälkeen. 
+Käyttöönottoarviointi sisältyy [Microsoft FastTrack -ohjelmaan](/dynamics365/fasttrack/). Arvioinnin aikana ratkaisuarkkitehti arvioi, onko toteutusprojekti niin valmis, että valmistelusiirto ja käyttöönotto onnistuvat. Tämä arvio on tehtävä jokaisessa toteutusprojektissa, ja tuotantoympäristön käyttöönottoa voi pyytää vasta sen jälkeen. 
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>Eristysympäristöt otetaan käyttöön Keski-Yhdysvaltojen palvelinkeskuksessa. Tuotantoympäristöt halutaan sen sijaan ottaa käyttöön Länsi-Yhdysvaltojen palvelinkeskuksessa. Onko Länsi-Yhdysvaltojen palvelinkeskuksen valinta tuotantomäärityksessä mahdollista? 
 
@@ -56,7 +55,7 @@ LCS ei estä toisen palvelinkeskuksen valintaa, kun Human Resources -ympäristö
 
 Jos tuotantoympäristön halutaan olevan Länsi-Yhdysvaltojen palvelinkeskuksessa, eristysympäristöt on otettava ensin siirrettävä Länsi-Yhdysvaltojen palvelinkeskukseen, ja ne on testattava ja kuitattava siellä. 
 
-Lisätietoja oikean palvelinkeskuksen valitsemisesta on kohdassa [Verkon vaatimukset](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements). 
+Lisätietoja oikean palvelinkeskuksen valitsemisesta on kohdassa [Verkon vaatimukset](../fin-ops-core/fin-ops/get-started/system-requirements.md#network-requirements). 
 
 ## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>Minkälainen käyttöoikeustaso on Human Resources -ympäristöjen Azure-resursseissa?  
 
@@ -64,9 +63,9 @@ Human Resources -ympäristöjen käyttöoikeudet ovat rajoitetut. Virtuaalikonee
 
 Vaikka Azure-resursseja tai Dynamics 365 Human Resources -ympäristöä ei voi käyttää suoraan, tietoja voi käyttää lisäominaisuuksilla.
 
-- Azure SQL -tietokanta voidaan ottaa käyttöön omassa Azure-vuokraajassa ja tiedot voidaan synkronoida BYOD (Bring Your Own Database) -ominaisuudella. Lisätietoja on kohdassa [Oman tietokannan tuonti (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
+- Azure SQL -tietokanta voidaan ottaa käyttöön omassa Azure-vuokraajassa ja tiedot voidaan synkronoida BYOD (Bring Your Own Database) -ominaisuudella. Lisätietoja on kohdassa [Oman tietokannan tuonti (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md).
 
-- Valittuja yksiköitä voi synkronoida Common Data Service -tietokantaan Common Data Service -integraation avulla. Lisätietoja on kohdassa [Common Data Service -yksiköt](hr-developer-entities.md). 
+- Valittuja yksiköitä voi synkronoida Dataverse -tietokantaan Dataverse -integraation avulla. Lisätietoja: [Dataverse-taulut](hr-developer-entities.md). 
 
 ## <a name="how-often-is-my-production-database-backed-up"></a>Kuinka usein tuotantotietokanta varmuuskopioidaan? 
 
@@ -80,11 +79,11 @@ Tietokannat suojataan automaattisilla varmuuskopioilla, jotka tehdään seuraava
 
 Microsoft säilyttää riittävät varmuuskopiot, jotta tiettyyn ajankohtaan palauttaminen onnistuu 14 päivän ajalta. 
 
-Lisätietoja on kohdassa  [Tietoja SQL-tietokannan automaattisista varmuuskopioinneista](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
+Lisätietoja on kohdassa  [Tietoja SQL-tietokannan automaattisista varmuuskopioinneista](/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 
 ## <a name="can-i-request-a-copy-of-the-backup-of-my-production-database"></a>Voiko tuotantotietokannan varmuuskopion kopiota pyytää? 
 
-Nro Sen sijaan voidaan lähettää tietokannan päivityspalvelupyyntö tuotantoympäristön kopioinnista eristysympäristöön. Azure SQL -tietokanta voidaan ottaa käyttöön omassa Azure-vuokraajassa ja tiedot voidaan synkronoida BYOD-ominaisuudella tuotantoympäristöstä. Lisätietoja on kohdassa [Oman tietokannan tuonti (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database). 
+Nro Sen sijaan voidaan lähettää tietokannan päivityspalvelupyyntö tuotantoympäristön kopioinnista eristysympäristöön. Azure SQL -tietokanta voidaan ottaa käyttöön omassa Azure-vuokraajassa ja tiedot voidaan synkronoida BYOD-ominaisuudella tuotantoympäristöstä. Lisätietoja on kohdassa [Oman tietokannan tuonti (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md). 
 
 ## <a name="how-do-i-move-my-sandbox-environment-to-production-for-go-live"></a>Miten eristysympäristön siirretään tuotantoympäristöön käyttöönottoa varten? 
 
@@ -94,8 +93,11 @@ Projektin aikana kannattaa ylläpitää selkeää luetteloa eristysympäristöss
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>Miten toimitaan, jos tuotantoympäristö ei ole käytettävissä? 
 
-Lisätietoja tuotannon käyttökatkoksen ilmoittamisprosessista on kohdassa [Tuotantokatkoksesta ilmoittaminen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage). 
+Lisätietoja tuotannon käyttökatkoksen ilmoittamisprosessista on kohdassa [Tuotantokatkoksesta ilmoittaminen](../fin-ops-core/dev-itpro/lifecycle-services/report-production-outage.md). 
 
  ## <a name="see-also"></a>Lisätietoja
 
  [Käyttöönoton valmistelu](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

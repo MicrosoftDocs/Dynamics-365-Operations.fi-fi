@@ -1,28 +1,25 @@
 ---
 title: Mittayksiköiden tuotevarianttikohtaiset muunnokset
 description: Tässä ohjeaiheessa käsitellään tuotevarianttien mittayksiköiden muunnosten määrittämistä. Siinä on myös määritysesimerkki.
-author: johanhoffmann
-manager: tfehr
+author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427361"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579565"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mittayksiköiden tuotevarianttikohtaiset muunnokset
 
@@ -59,7 +56,7 @@ Päätuote määritetään tukemaan varianttikohtaista yksikkömuunnosta seuraav
     - **Tuote** – Jos valitset tämän arvon, voit määrittää päätuotteen yksikkömuunnoksen. Tätä yksikkömuunnosta käytetään kaikkien niiden tuotevarianttien varalla olevan muunnoksena, jos mitään yksikkömuunnosta ei ole määritetty.
     - **Tuotevariantti** – Jos valitset tämän arvon, voit määrittää tietyn tuotevariantin yksikkömuunnoksen. Valitse variantti **Tuotevariantti**-kentän avulla.
 
-    ![![Uuden yksikkömuunnoksen lisääminen](media/uom-new-conversion.png "Uuden yksikkömuunnoksen lisääminen")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Uuden yksikkömuunnoksen lisääminen.](media/uom-new-conversion.png "Uuden yksikkömuunnoksen lisääminen")
 
 1. Käytä muita käytettävissä olevia kenttiä yksikkömuunnoksen määrittämiseen.
 1. Tallenna uusi yksikkömuunnos valitsemalla **OK**.
@@ -106,4 +103,7 @@ Yksikkömuunnokset viedään Exceliin valitsemalla **Yksikkömuunnokset**-sivun 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Mittayksikön hallinta](tasks/manage-unit-measure.md)
+[Mittayksiköiden hallinta](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

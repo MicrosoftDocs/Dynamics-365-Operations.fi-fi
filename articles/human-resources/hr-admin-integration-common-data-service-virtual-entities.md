@@ -1,9 +1,9 @@
 ---
-title: Common Data Service -virtuaaliyksiköiden määrittäminen
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin virtuaaliyksiköiden määrittämistä. Virtuaaliyksiköiden luominen ja aiemmin luotujen päivittäminen sekä luotujen ja käytettävissä olevien yksiköiden analysoiminen.
+title: Määritä Dataverse -virtuaalitaulukot
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin virtuaalitaulukoiden määrittämistä. Virtuaalitaulukoiden luominen ja aiemmin luotujen päivittäminen sekä luotujen ja käytettävissä olevien taulukoiden analysoiminen.
 author: andreabichsel
 manager: tfehr
-ms.date: 11/02/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,49 +18,56 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: d8780be777c9a204fcb95950f5679a5711aee298
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645598"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465819"
 ---
-# <a name="configure-common-data-service-virtual-entities"></a>Common Data Service -virtuaaliyksiköiden määrittäminen
+# <a name="configure-dataverse-virtual-tables"></a>Määritä Dataverse -virtuaalitaulukot
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Human Resources on Common Data Servicen virtuaalinen tietolähde. Se sisältää Common Data Servicen ja Microsoft Power Platformin täydet CRUD (luonti, luku, päivitys ja poisto) -toiminnot. Virtuaaliyksiköiden tietoja ei tallenneta Common Data Serviceen vaan sovelluksen tietokantaan. 
+Dynamics 365 Human Resources on Microsoft Dataversen virtuaalinen tietolähde. Se sisältää Dataversen ja Microsoft Power Platformin täydet CRUD (luonti, luku, päivitys ja poisto) -toiminnot. Virtuaalitaulukoiden tietoja ei tallenneta Dataverseen vaan sovelluksen tietokantaan.
 
-Jos haluat ottaa Common Data Servicen Human Resources -yksiköiden CRUD-toiminnot käyttää, yksiköiden on oltava käytettävissä virtuaaliyksikköinä Common Data Servicessa. Voit suorittaa tällä tavoin Common Data Servicen ja Microsoft Power Platformin CRUD-toimintoja Human Resourcesin tiedoissa. Toiminnot tukevat myös Human Resourcesin liiketoimintalogiikan tarkistuksia, joilla varmistetaan tietojen eheys kirjoitettaessa tietoja yksiköihin.
-
-## <a name="available-virtual-entities-for-human-resources"></a>Human Resourcesin käytettävissä olevat virtuaaliyksiköt
-
-Kaikki Human Resourcesin OData (Open Data Protocol) -yksiköt ovat käytettävissä virtuaaliyksikköinä Common Data Servicessa. Ne ovat käytettävissä myös Power Platformissa. Voit nyt muodostaa sovelluksia ja kokemuksia käyttämällä tietoja suoraan Human Resourcesissa CRUD-ominaisuuksien avulla ilman, että tiedot kopioitava ja synkronoitava Common Data Serviceen. Voit muodostaa Power Apps -portaalien avulla ulkoisia sivustoja, joiden avulla voidaan toteuttaa liiketoimintaprosessien yhteistyöskenaarioita Human Resourcesissa.
-
-Voit tarkastella ympäristössä käyttöönotettujen virtuaaliyksiköiden luetteloa ja aloittaa [Power Appsin](https://make.powerapps.com) yksiköiden käyttämisen **Dynamics 365 HR -virtuaaliyksiköiden** ratkaisussa.
-
-![Dynamics 365 HR -virtuaaliyksiköt Power Appsissa](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
-
-## <a name="virtual-entities-versus-natural-entities"></a>Virtuaaliyksiköiden ja tavallisten yksiköiden vertailu
-
-Human Resourcesin virtuaaliyksiköt eivät ole samoja kuin Human Resourcesin luodut Common Data Servicen yksiköt. Human Resourcesin tavalliset yksiköt luodaan erikseen ja niitä ylläpidetään HCM Common -ratkaisussa Common Data Servicessa. Tavallisissa yksiköissä tiedot tallennetaan Common Data Servicessa, ja ne on synkronoitava Human Resourcesin sovellustietokannassa.
+Jos haluat ottaa Dataversen Human Resources -yksiköiden CRUD-toiminnot käyttää, yksiköiden on oltava käytettävissä virtuaalitaulukkoina Dataversessa. Voit suorittaa tällä tavoin Dataversen ja Microsoft Power Platformin CRUD-toimintoja Human Resourcesin tiedoissa. Toiminnot tukevat myös Human Resourcesin liiketoimintalogiikan tarkistuksia, joilla varmistetaan tietojen eheys kirjoitettaessa tietoja yksiköihin.
 
 > [!NOTE]
-> Tavallisten Human Resourcesin Common Data Service -yksiköiden luettelo on kohdassa [Common Data Service -yksiköt](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Human Resources -yksiköt vastaavat Dataverse-tauluja. Lisätietoja Dataversesta (aiemmin Common Data Service) ja terminologiapäivityksistä on kohdassa [Mikä on Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+
+## <a name="available-virtual-tables-for-human-resources"></a>Human Resourcesin käytettävissä olevat virtuaalitaulukot
+
+Kaikki Human Resourcesin OData (Open Data Protocol) -yksiköt ovat käytettävissä virtuaalitaulukkoina Dataversessa. Ne ovat käytettävissä myös Power Platformissa. Voit nyt muodostaa sovelluksia ja kokemuksia käyttämällä tietoja suoraan Human Resourcesissa CRUD-ominaisuuksien avulla ilman, että tiedot kopioitava ja synkronoitava Dataverseen. Voit muodostaa Power Apps -portaalien avulla ulkoisia sivustoja, joiden avulla voidaan toteuttaa liiketoimintaprosessien yhteistyöskenaarioita Human Resourcesissa.
+
+Voit tarkastella ympäristössä käyttöönotettujen virtuaalitaulukoiden luetteloa ja aloittaa [Power Appsin](https://make.powerapps.com) taulukoiden käyttämisen **Dynamics 365 HR -virtuaalitaulukoiden** ratkaisussa.
+
+![Dynamics 365 HR -virtuaalitaulukot Power Appsissa](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+
+## <a name="virtual-tables-versus-native-tables"></a>Virtuaalitaulut ja alkuperäiset taulut
+
+Human Resourcesin virtuaalitaulukot eivät ole samoja kuin Human Resourcesille luodut alkuperäiset Dataversen taulukot. 
+
+Human Resourcesin alkuperäiset taulukot luodaan erikseen ja niitä ylläpidetään HCM Common -ratkaisussa Dataversessa. Aluperäisissä taulukoissa tiedot tallennetaan Dataversessa, ja ne on synkronoitava Human Resourcesin sovellustietokannassa.
+
+> [!NOTE]
+> Alkuperäisten Human Resourcesin Dataverse -taulukoiden luettelo on kohdassa [Dataverse-taulukot](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
 
 ## <a name="setup"></a>Luo perustiedot
 
-Ota virtuaaliyksiköt käyttöön ympäristössä tekemällä seuraavat määritykset.
+Ota virtuaalitaulukot käyttöön ympäristössä tekemällä seuraavat määritykset.
 
-### <a name="enable-virtual-entities-in-human-resources"></a>Human Resourcesin virtuaaliyksiköiden käyttöönotto
+### <a name="enable-virtual-tables-in-human-resources"></a>Human Resourcesin virtuaalitaulukoiden käyttöönotto
 
-Ensin on otettava käyttöön virtuaaliyksiköt **Ominaisuuksien hallinta** -työtilassa.
+Ensin on otettava käyttöön virtuaalitaulukot **Ominaisuuksien hallinta** -työtilassa.
 
 1. Valitse Human Resourcesissa **Järjestelmän hallinta**.
 
 2. Valitse **Ominaisuuksien hallinta** -ruutu.
 
-3. Valitse **HR/CDS:n virtuaaliyksikön tuki** ja valitse sitten **Ota käyttöön**.
+3. Valitse **Dataversen virtuaalitaulukon tuki HR:lle** ja valitse sitten **Ota käyttöön**.
 
 Lisätietoja ominaisuuksien ottamisesta käyttöön ja poistamisesta käytöstä on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
 
@@ -74,13 +81,13 @@ Human Resources -esiintymä on rekisteröitävä Azure-portaalissa, jotta Micros
 
 3. Valitse **Uusi rekisteröinti**.
 
-4. Kirjoita **Nimi**-kenttään sovellusta kuvaava nimi. Esimerkki: **Dynamics 365 Human Resourcesin virtuaaliyksiköt**.
+4. Kirjoita **Nimi**-kenttään sovellusta kuvaava nimi. Esimerkki: **Dynamics 365 Human Resourcesin virtuaalitaulukot**.
 
 5. Anna **Uudelleenohjauksen URI** -kenttään Human Resources -esiintymän nimitilan URL-osoite.
 
 6. Valitse **Rekisteröi**.
 
-7. Kun rekisteröinti valmistuu, Azure-portaali näyttää sovelluksen rekisteröinnin **Yleiskatsaus**-ruudussa, joka sisältää myös sen **sovelluksen (asiakasohjelman) tunnuksen**. Kirjoita muistiin tämä **sovelluksen (asiakasohjelman) tunnus**. Nämä tiedot annetaan, kun [määrität virtuaaliyksikön tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. Kun rekisteröinti valmistuu, Azure-portaali näyttää sovelluksen rekisteröinnin **Yleiskatsaus**-ruudussa, joka sisältää myös sen **sovelluksen (asiakasohjelman) tunnuksen**. Kirjoita muistiin tämä **sovelluksen (asiakasohjelman) tunnus**. Nämä tiedot annetaan, kun [määrität virtuaalitaulukon tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
 8. Valitse vasemmassa siirtymisruudussa **Varmenteet ja salaiset koodit**.
 
@@ -88,14 +95,14 @@ Human Resources -esiintymä on rekisteröitävä Azure-portaalissa, jotta Micros
 
 10. Anna kuvaus, valitse kesto ja valitse **Lisää**.
 
-11. Kirjaa salaisen koodin arvo muistiin. Nämä tiedot annetaan, kun [määrität virtuaaliyksikön tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+11. Kirjaa salaisen koodin arvo muistiin. Nämä tiedot annetaan, kun [määrität virtuaalitaulukon tietolähteen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Muista kirjoittaa salaisen koodin arvo muistiin tässä vaiheessa. Salaista koodi ei näytetä sen jälkeen, kun poistut sivulta.
 
-### <a name="install-the-dynamics-365-hr-virtual-entity-app"></a>Dynamics 365 HR Virtual Entity -sovelluksen asentaminen
+### <a name="install-the-dynamics-365-hr-virtual-table-app"></a>Dynamics 365 HR Virtual Table -sovelluksen asentaminen
 
-Asenna Dynamics 365 HR Virtual Entity -sovellus Power Apps -ympäristöön ottamaan virtuaaliyksikön ratkaisupaketti käyttöön Common Data Servicessa.
+Asenna Dynamics 365 HR Virtual Table -sovellus Power Apps -ympäristöön ottamaan virtuaalitaulukon ratkaisupaketti käyttöön Dataversessa.
 
 1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
 
@@ -105,7 +112,7 @@ Asenna Dynamics 365 HR Virtual Entity -sovellus Power Apps -ympäristöön ottam
 
 4. Valitse **Asenna sovellus** -toiminto.
 
-5. Valitse ensin **Dynamics 365 HR Virtual Entity** ja valitse **Seuraava**.
+5. Valitse ensin **Dynamics 365 HR Virtual Table** ja valitse **Seuraava**.
 
 6. Tutustu palvelun käyttöehtoihin ja merkitse ne hyväksytyiksi.
 
@@ -113,11 +120,11 @@ Asenna Dynamics 365 HR Virtual Entity -sovellus Power Apps -ympäristöön ottam
 
 Asennus kestää muutaman minuutin. Kun asennus valmistuu, jatka seuraaviin vaiheisiin.
 
-![Dynamics 365 HR Virtual Entity -sovelluksen asentaminen Power Platform -hallintakeskuksessa](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Dynamics 365 HR Virtual Table -sovelluksen asentaminen Power Platform -hallintakeskuksessa](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
-### <a name="configure-the-virtual-entity-data-source"></a>Virtuaaliyksikön tietolähteen määrittäminen 
+### <a name="configure-the-virtual-table-data-source"></a>Virtuaalitaulukon tietolähteen määrittäminen 
 
-Seuraavaksi määritetään virtuaaliyksikön tietolähde Power Apps -ympäristössä. 
+Seuraavaksi määritetään virtuaalitaulukon tietolähde Power Apps -ympäristössä. 
 
 1. Avaa [Power Platform -hallintakeskus](https://admin.powerplatform.microsoft.com).
 
@@ -161,7 +168,7 @@ Seuraavaksi määritetään virtuaaliyksikön tietolähde Power Apps -ympärist�
 Myönnä kahden Azure AD -sovelluksen oikeudet Human Resourcesissa:
 
 - Vuokraajalle Microsoft Azure -portaalissa luotu sovellus
-- Power Apps -ympäristössä asennettu Dynamics 365 HR Virtual Entity -sovellus 
+- Power Apps -ympäristössä asennettu Dynamics 365 HR Virtual Table -sovellus 
 
 1. Avaa Human Resourcesissa **Azure Active Directory -sovellukset** -sivu.
 
@@ -174,45 +181,48 @@ Myönnä kahden Azure AD -sovelluksen oikeudet Human Resourcesissa:
 3. Luo toinen sovellustietue valitsemalla **Uusi**.
 
     - **Asiakastunnus**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Nimi**: Dynamics 365 HR Virtual Entity
+    - **Nimi**: Dynamics 365 HR Virtual Table
     - Valitse **Käyttäjätunnus**-kentässä sellaisen käyttäjän käyttäjätunnus, jolla on Human Resources- ja Power Apps -ympäristön järjestelmänvalvojan käyttöoikeudet.
 
-## <a name="generate-virtual-entities"></a>Virtuaaliyksiköiden luominen
+## <a name="generate-virtual-tables"></a>Virtuaalitaulukoiden luominen
 
-Voit valita asennuksen valmistumisen jälkeen virtuaaliyksiköt, jotka haluat luoda ja ottaa käyttöön Common Data Service -esiintymässä.
+Voit valita asennuksen valmistumisen jälkeen virtuaalitaulukot, jotka haluat luoda ja ottaa käyttöön Dataverse -esiintymässä.
 
-1. Avaa Human Resourcesissa **Common Data Service (CDS) -integraatio** -sivu.
+1. Avaa Human Resourcesissa **Dataverse-integraatio** -sivu.
 
-2. Valitse **Virtuaaliyksiköt**-välilehti.
+2. Valitse **Virtuaalitaulukot**-välilehti.
 
 > [!NOTE]
-> **Ota virtuaaliyksikkö käyttöön** -tilanvaihtopainike on automaattisesti **Kyllä**-asennossa, kun kaikki tarvittavat määritykset on tehty. Jos tilanvaihtopainike on **Ei**-asennossa, tarkista tämä asiakirjan edellisten osien vaiheet ja varmista, että kaikki edellytettävät asetukset on määritetty.
+> **Ota virtuaalitaulukot käyttöön** -tilanvaihtopainike on automaattisesti **Kyllä**-asennossa, kun kaikki tarvittavat määritykset on tehty. Jos tilanvaihtopainike on **Ei**-asennossa, tarkista tämä asiakirjan edellisten osien vaiheet ja varmista, että kaikki edellytettävät asetukset on määritetty.
 
-3. Valitse Common Data Servicessa luotavat yksiköt.
+3. Valitse Dataversessa luotava taulukko tai luotavat taulukot.
 
 4. Valitse **Luo/päivitä**.
 
-![Common Data Service -integraatio](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse -integraatio](./media/hr-admin-integration-common-data-service-integration.jpg)
 
-## <a name="check-entity-generation-status"></a>Yksikön luontitilan tarkistaminen
+## <a name="check-table-generation-status"></a>Taulukon luontitilan tarkistaminen
 
-Virtuaaliyksiköt luodaan Common Data Servicessa asynkronisena taustaprosessina. Prosessin päivitykset näkyvät toimintokeskuksessa. Prosessin tiedot, kuten virhelokit, näkyvät **Prosessin automatisoinnit** -sivulla.
+Virtuaalitaulukot luodaan Dataversessa asynkronisena taustaprosessina. Prosessin päivitykset näkyvät toimintokeskuksessa. Prosessin tiedot, kuten virhelokit, näkyvät **Prosessin automatisoinnit** -sivulla.
 
 1. Avaa Human Resourcesissa **Prosessin automatisoinnit** -sivu.
 
 2. Valitse **Taustaprosessit**-välilehti.
 
-3. Valitse **Virtuaaliyksikön kyselyn asynkroninen toiminnon taustaprosessi**.
+3. Valitse **Virtuaalitaulukon kyselyn asynkroninen toiminnon taustaprosessi**.
 
 4. Valitse **Näytä viimeisimmät tulokset**.
 
-Esiin tulevassa ruudussa näkyy prosessin viimeksi suoritetut tulokset. Voit tarkastella prosessin lokia, mukaan lukien mahdollisia Common Data Servicen palauttamia virheitä.
+Esiin tulevassa ruudussa näkyy prosessin viimeksi suoritetut tulokset. Voit tarkastella prosessin lokia, mukaan lukien mahdollisia Dataversen palauttamia virheitä.
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Mikä on Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Yksikön yleiskatsaus](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Yksikkösuhteiden yleiskatsaus](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Ulkoisten tietolähteiden tietoja sisältävien virtuaaliyksiköiden luominen ja muokkaaminen](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Mikä on Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Taulut Dataversessa](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
+[Taulukkosuhteiden yleiskatsaus](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
+[Ulkoisten tietolähteiden tietoja sisältävien virtuaalitaulukoiden luominen ja muokkaaminen](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Mitä Power Apps -portaalit ovat?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Yleiskatsaus sovellusten luonnista Power Appsissa](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

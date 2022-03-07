@@ -1,27 +1,25 @@
 ---
 title: Määritä projektin resurssitiedot
 description: Tämä menettely osoittaa, miten projektiresurssi määritetään.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ResResourcesListPage, ResAddResourceForm, ProjCostPriceHour, ProjSalesPriceHour
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0906b7c92f8288adf834ccd33f0ca0df40cd4f44
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1a91b3c40e798cc0dce3001eb0500aca1b4448a0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017264"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837678"
 ---
 # <a name="set-up-project-resource-information"></a>Määritä projektin resurssitiedot
 
@@ -51,3 +49,6 @@ Tämä menettely osoittaa, miten projektiresurssi määritetään. Tässä teht�
 20. Valitse Tallenna.
 21. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

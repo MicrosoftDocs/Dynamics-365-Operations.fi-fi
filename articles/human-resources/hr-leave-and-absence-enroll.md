@@ -2,7 +2,7 @@
 title: Työntekijöiden liittäminen lomasuunnitelmaan
 description: Määritä työntekijät ja alihankkijat jättämään suunnitelmat Dynamics 365 Human Resources -järjestelmään.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3407acc164aab1bd1afb2429fc5a221edd0a2493
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0447096548a4cb6caacf146f9c9a8e968c989acf
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418382"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468104"
 ---
 # <a name="assign-workers-to-a-leave-plan"></a>Työntekijöiden liittäminen lomasuunnitelmaan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kun olet luonut loma- ja poissaolosuunnitelman Dynamics 365 Human Resourcesissa, määritä se työntekijöille.
 
@@ -60,3 +62,5 @@ Kun olet luonut loma- ja poissaolosuunnitelman Dynamics 365 Human Resourcesissa,
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
 - [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

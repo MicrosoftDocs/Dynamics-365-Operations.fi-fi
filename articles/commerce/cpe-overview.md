@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc6bffba6ee402c6b48d6a3c8f8356eb32b5423b
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411865"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478017"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce -arviointiympäristön yleiskatsaus
 
@@ -32,8 +31,6 @@ Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 Commerce -arviointiy
 
 > [!NOTE]
 > Commercen arviointiympäristöt eivät ole yleisesti saatavana, ja ne myönnetään kumppaneille ja asiakkaille pyyntökohtaisesti. Pyydä lisätietoja Microsoft-kumppanilta.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Commercen arviointiympäristö on kokonaisvaltainen valinnainen Dynamics 365 Commercen ympäristö, jonka avulla kumppanit ja potentiaaliset asiakkaat voivat kokeilla Commerce-tuotetta.
 
@@ -64,3 +61,6 @@ Lisätietoja Commercen arviointiympäristön valmistelusta on kohdassa [Commerce
 [Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset](cpe-optional-features.md)
 
 [Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

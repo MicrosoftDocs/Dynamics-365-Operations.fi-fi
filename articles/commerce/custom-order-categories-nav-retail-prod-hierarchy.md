@@ -1,34 +1,31 @@
 ---
 title: Kaupankäynnin entiteettien lajittelujärjestyksen muuttaminen
-description: Tässä ohjeaiheessa selitetään käsitteitä, jotka liittyvät useiden kaupankäyntiin liittyvien entiteettien näyttöjärjestyksen valvontaan Dynamics 365 Commerceissa.
+description: Tässä ohjeaiheessa selitetään käsitteitä, jotka liittyvät useiden kaupankäyntiin liittyvien entiteettien näyttöjärjestyksen valvontaan Dynamics 365 Commercessa.
 author: josaw1
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 audience: Application User, Merchandising manager, Catalog manager
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b983cb5c63db171c76d34375a93a2b9086185d3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411978"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779539"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Kaupankäynnin entiteettien lajittelujärjestyksen muuttaminen
 
 
-[!include [banner](includes/banner.md)]
+[!Include [banner](includes/banner.md)]
 
 Vähittäiskauppiaat pitävät tuotteen etsintätyökalua ensisijaisena työkaluna asiakkaan vuorovaikutuksessa kaikkien kanavien kautta. Eri toiminnot voivat auttaa asiakkaita löytämään tuotteita helposti. He voivat esimerkiksi selata luokkia, hakua ja suodatusta.
 
@@ -54,9 +51,9 @@ Ennen kuin voit tehdä nämä toimet, demotiedot on asennettava ympäristöösi.
 
 Kanavan siirtymishierarkian näyttöjärjestys näkyy kaupankäynnin tuotehierarkian ja vapautettujen tuotteiden luokan pääkonttorissa.
 
-![Tuotehierarkian mukautettu lajittelu negatiivisin arvoin](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Tuotehierarkian mukautettu lajittelu negatiivisin arvoin.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Vapautetut tuotteet luokittain tuotehierarkian mukaan mukautetusti lajiteltuna](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Vapautetut tuotteet luokittain tuotehierarkian mukaan mukautetusti lajiteltuna.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Kanavan siirtymishierarkian luokkien näyttöjärjestyksen määrittäminen
 
@@ -80,11 +77,14 @@ Ennen kuin voit tehdä nämä toimet, demotiedot on asennettava ympäristöösi.
 
 Kanavan siirtymishierarkian näyttöjärjestys näkyy pääkonttorissa, tuoteluettelossa ja kanavissa.
 
-![Kanavan siirtymishierarkia mukautetusti lajiteltuna](./media/ChannelNavCustomSorted.png)
+![Kanavan siirtymishierarkia mukautetusti lajiteltuna.](./media/ChannelNavCustomSorted.png)
 
-![Luettelon siirtymishierarkia mukautetusti lajiteltuna kanavan siirtymishierarkian mukaan](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Luettelon siirtymishierarkia mukautetusti lajiteltuna kanavan siirtymishierarkian mukaan.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![Myyntipisteet, jossa on mukautettuja lajiteltuja luokkia](./media/POSChannelCategoriesCustomSorted.png)
+![Myyntipisteet, jossa on mukautettuja lajiteltuja luokkia.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Mukautettu lajittelujärjestys on oletusarvoisesti poissa käytöstä. Lisätietoja tämän toiminnon ja muiden toimintojen ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Mukautettu lajittelujärjestys on oletusarvoisesti poissa käytöstä. Lisätietoja tämän toiminnon ja muiden toimintojen ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

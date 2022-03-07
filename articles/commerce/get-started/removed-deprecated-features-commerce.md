@@ -3,24 +3,23 @@ title: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Commercesta.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 37b541ff5037a38b60dbfd6a6c071f55afcc1304
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: dd982ae60da1c2958d6d759bb5dd256a71fabf6c
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689525"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154198"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -34,7 +33,22 @@ Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Commercen version 10.0.17 poistetut tai vanhentuneet ominaisuudet
+
+> [!Important]
+> Versio 10.0.17 on saatavana esiversion julkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [One Version -palvelupäivitysten usein kysytyt kysymykset](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="full-dataset-generation-interval-is-deprecated"></a>Täyden tietojoukon luonnin aikaväli on vanhentunut
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tästä versiosta lähtien Dynamics 365 headquarters -sovelluksen **Kaupankäynnin ajoitustyökalun parametrit** -lomakkeessa **Täyden tietojoukon luonnin aikaväli päivinä** poistetaan. Tästä versiosta alkaen kenttä poistetaan visuaalisesti, jotta arvoa ei voi muokata. Tämä pysyy arvona **0**. |
+| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Commerce |
+| **Käytön asetukset**              | Kaikki|
+| **Tila**                         | Vanhentunut. Älä käytä tätä kenttää tai muuta sen arvoa.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10015-release"></a>Commercen version 10.0.15 poistetut tai vanhentuneet ominaisuudet
 

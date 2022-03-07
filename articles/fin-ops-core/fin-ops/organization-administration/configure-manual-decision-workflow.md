@@ -2,11 +2,9 @@
 title: Manuaalisten päätösten konfiguroiminen työnkulkuun
 description: Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d351facbce02355ddb4bdf91d43d9df561e4f3b5
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d54c010c8fe0d8ca6cc8129948392fb56ef85283
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798849"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065652"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Manuaalisten päätösten konfiguroiminen työnkulkuun
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.
 
@@ -350,3 +351,6 @@ Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa.
     - **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä päätös on tehtävä. Voit esimerkiksi määrittää, että päätös on tehtävä joulukuun kolmannen viikon perjantaihin mennessä.
 
 4. Jos aikaraja ylittyy, järjestelmä tekee päätöksen automaattisesti. Valitse **Toiminto**-luettelosta vaihtoehto, jonka haluat järjestelmän valitsevan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

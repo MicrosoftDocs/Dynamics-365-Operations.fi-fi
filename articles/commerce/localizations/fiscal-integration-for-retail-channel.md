@@ -1,41 +1,41 @@
 ---
 title: Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
-description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercein kirjanpidoin integrointitoiminnoista.
-author: josaw
+description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
+author: EvgenyPopovMBS
 manager: annbe
-ms.date: 02/01/2019
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343284"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Johdanto
+Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista. 
 
-Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercein kirjanpidoin integrointitoiminnoista. Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa myynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
+Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa myynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
 
 - Myynnin rekisteröinti kirjanpidon laitteessa, joka on liitetty myyntipisteeseen (POS), kuten kuittitulostimeen, ja verokuitin tulostaminen asiakkaalle.
 - Retail POS:ssä suoritettuun myyntiin ja palautuksiin liittyvien tietojen lähettäminen turvallisesti ulkoiseen, veroviranomaisen ylläpitämään verkkopalveluun.
 - Myynnin tapahtumatietojen muuttamattomuuden takaaminen digitaalisella allekirjoituksella.
 
-Kirjanpidon integrointitoiminto on kehikko, joka muodostaa yhteisen ratkaisun Retail POS:n sekä kirjanpidoin laitteiden ja palvelujen kehittämiselle ja mukauttamiselle edelleen. Toiminto sisältää myös kirjanpidon integrointimalleja, jotka tukevat tiettyjen maiden tai alueiden perusskenaariota ja joita voi käyttää tiettyjen kirjanpidon laitteiden tai palvelujen kanssa. Kirjanpidon integrointimalli koostuu useista Commerce-osien laajennuksista, ja se sisältyy SDK:hon. Lisätietoja kirjanpidon integroinnin esimerkeistä on kohdassa [Kirjanpidon integroinnin esimerkit – Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Lisätietoja Retail SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Kirjanpidon integrointitoiminto on kehikko, joka muodostaa yhteisen ratkaisun Retail POS:n sekä kirjanpidoin laitteiden ja palvelujen kehittämiselle ja mukauttamiselle edelleen. Toiminto sisältää myös kirjanpidon integrointimalleja, jotka tukevat tiettyjen maiden tai alueiden perusskenaariota ja joita voi käyttää tiettyjen kirjanpidon laitteiden tai palvelujen kanssa. Kirjanpidon integrointimalli koostuu useista Commerce-osien laajennuksista, ja se sisältyy SDK:hon. Lisätietoja kirjanpidon integroinnin esimerkeistä on kohdassa [Kirjanpidon integroinnin esimerkit – Commerce SDK](#fiscal-integration-samples-in-the-commerce-sdk). Lisätietoja Commerce SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Jos haluat tukea skenaarioita, joita kirjanpidon integrointimalli ei tue, integroida Retail POS:n muiden kirjanpidon laitteiden ja palvelujen kanssa tai ottaa huomioon muiden maiden tai alueiden vaatimukset, sinun on joko laajennettava nykyistä kirjanpidon integrointimallia tai luotava uusi malli käyttämällä nykyistä mallia esimerkkinä.
 
@@ -56,15 +56,15 @@ Tietyn kassakoneen kirjanpidon rekisteröintiprosessi määritetään myyntipist
 Seuraavassa esimerkissä on tyypillinen kirjanpidon laitteen kirjanpidon rekisteröinnin työnkulku. Työnkulku alkaa myyntipisteen tapahtumalla (kuten myyntitapahtuman päättämisellä), ja siinä toteutetaan seuraavat vaiheet mainitussa järjestyksessä:
 
 1. Myyntipiste pyytää kirjanpitoasiakirjan CRT:stä.
-2. CRT selvittää, edellyttääkö nykyinen tapahtuma kirjanpidon rekisteröintiä.
-3. CRT tunnistaa kirjanpidon rekisteröintiprosessin asetusten perusteella kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen ja vastaavan kirjanpitoasiakirjan toimittajan.
-4. CRT suorittaa kirjanpitoasiakirjan toimittajan, joka luo transaktiota tai tapahtuvaa edustavan kirjanpitoasiakirjan (kuten XML-asiakirjan).
-5. Myyntipiste lähettää CRT:n valmisteleman kirjanpitoasiakirjan Hardware station -laajennukseen.
-6. Hardware station suorittaa kirjanpidon yhdistimen, joka käsittelee kirjanpitoasiakirjan ja välittää sen kirjanpidon laitteeseen tai palveluun.
-7. Myyntipiste analysoi kirjanpidon laitteen ja palvelun vastauksen ja määrittää sen perusteella, onnistuiko kirjanpidon rekisteröinti.
-8. CRT tallentaa vastauksen kanavatietokantaan.
+1. CRT selvittää, edellyttääkö nykyinen tapahtuma kirjanpidon rekisteröintiä.
+1. CRT tunnistaa kirjanpidon rekisteröintiprosessin asetusten perusteella kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen ja vastaavan kirjanpitoasiakirjan toimittajan.
+1. CRT suorittaa kirjanpitoasiakirjan toimittajan, joka luo transaktiota tai tapahtuvaa edustavan kirjanpitoasiakirjan (kuten XML-asiakirjan).
+1. Myyntipiste lähettää CRT:n valmisteleman kirjanpitoasiakirjan Hardware station -laajennukseen.
+1. Hardware station suorittaa kirjanpidon yhdistimen, joka käsittelee kirjanpitoasiakirjan ja välittää sen kirjanpidon laitteeseen tai palveluun.
+1. Myyntipiste analysoi kirjanpidon laitteen ja palvelun vastauksen ja määrittää sen perusteella, onnistuiko kirjanpidon rekisteröinti.
+1. CRT tallentaa vastauksen kanavatietokantaan.
 
-![Ratkaisumalli](media/emea-fiscal-integration-solution.png "Ratkaisumalli")
+![Ratkaisumalli.](media/emea-fiscal-integration-solution.png "Ratkaisumalli")
 
 ## <a name="error-handling"></a>Virheen käsittely
 
@@ -118,6 +118,8 @@ Kirjanpitotapahtumaan tallennetaan seuraavat tiedot:
 - Kirjanpidon rekisteröinnin tila: **Valmis**, jos rekisteröinti onnistui, **Ohitettu**, jos käyttäjä valitsi epäonnistuneessa rekisteröinnissä **Ohita**-asetuksen, tai **Merkitty rekisteröidyksi**, jos käyttäjä valitse **Merkitse rekisteröidyksi** -asetuksen.
 - Valittuun kirjanpitotapahtumaan liittyvät tietokooditapahtumat. Voit tarkastella tietokooditapahtumia valitsemalla **Tilikauden tapahtumat** -pikavälilehdessä ensin kirjanpitotapahtuman, jonka tila on **Ohitettu** tai **Merkitty rekisteröidyksi**, ja sitten **Tietokooditapahtumat**.
 
+Valitsemalla **Laajennetut tiedot** voidaan tarkastella joitakin kirjanpitotapahtuman ominaisuuksia. Tarkasteltava ominaisuusluettelo koskee kirjanpitotapahtuman luoneen kirjanpidon rekisteröintitoimintoja. Esimerkiksi Ranskan digitaalisen allekirjoitustoiminnon digitaalista allekirjoitusta, järjestysnumeroa, varmenteen pikkukuvaa, hajautusalgoritmin tunnusta ja muita kirjanpitotapahtuman ominaisuuksia voidaan tarkastella.
+
 ## <a name="fiscal-texts-for-discounts"></a>Alennusten kirjanpitotekstit
 
 Joissakin maissa tai joillakin alueilla on verokuitteihin tulostettavia lisätekstejä koskevia erityisvaatimuksia, kuten käytössä on erilaisia alennuksia. Kirjanpidon integrointitoiminnolla voi määrittää alennusta koskevan erityistekstin, joka tulostetaan verokuitin alennusrivin jälkeen. Jos kyse on manuaalisesti tehtävistä alennuksista, voit määrittää tietokoodin kirjanpitotekstin myyntipisteen toimintaprofiilissa **Tuotealennus**-tietokoodina. Lisätietoja alennusten kirjanpitotekstin määrittämisestä on kohdassa [Alennusten kirjanpitotekstien määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -129,23 +131,29 @@ Kirjanpidon integrointitoiminto tukee tiettyä integroidun kirjanpidon laitetta 
 - Uudet painikkeet, joilla kyseiset toiminnot suoritetaan, on lisättävä myyntipisteen näyttöasetteluun. Lisätietoja on kohdassa [Kirjanpidon X/Z-raporttien määrittäminen myyntipisteessä](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - Kirjanpidon integrointimallissa nämä toiminnot on täsmäytettävä kirjanpidon laitteen vastaaviin toimintoihin.
 
-## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Retail SDK:n kirjanpidon integrointimallit
+## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Commerce SDK:n kirjanpidon integrointimallit
 
-Seuraavat kirjanpidon integrointimallit ovat käytettävissä Retail SDK:ssa:
+Seuraavat kirjanpidon integrointimallit ovat käytettävissä Commerce SDK:ssa:
 
-- [Näyte verotusta varten olevan tulostimen integroinnista Italiassa](emea-ita-fpi-sample.md)
-- [Näyte verotusta varten olevan tulostimen integroinnista Puolassa](emea-pol-fpi-sample.md)
-- [Itävallan tilikausirekisteröintipalvelun integroinnin malli](emea-aut-fi-sample.md)
-- [Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli](emea-cze-fi-sample.md)
+- [Näyte verotusta varten olevan tulostimen integroinnista Italiassa](./emea-ita-fpi-sample.md)
+- [Näyte verotusta varten olevan tulostimen integroinnista Puolassa](./emea-pol-fpi-sample.md)
+- [Itävallan tilikausirekisteröintipalvelun integroinnin malli](./emea-aut-fi-sample.md)
+- [Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli](./emea-cze-fi-sample.md)
 - [Tarkistusyksikön integrointimalli – Ruotsi](./emea-swe-fi-sample.md)
 - [Saksan tilikausirekisteröintipalvelun integroinnin malli](./emea-deu-fi-sample.md)
 
-Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Retail SDK:ssa, mutta se ei tällä hetkellä käytä kirjanpidon integrointikehikkoa. Tämä toiminto on tarkoitus siirtää kirjanpidon integrointikehikkoon myöhemmissä päivityksissä.
+Seuraava kirjanpidon integrointitoiminto otetaan käyttöön myös käyttämällä kirjanpidon integrointikehystä, mutta se on saatavana käyttövalmiina eikä se sisälly Commerce SDK:hon:
 
+- [Brasilian tilikausirekisteröinti](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
+- [Digitaalinen allekirjoitus Ranskassa](./emea-fra-cash-registers.md)
 
-- [Digitaalinen allekirjoitus Ranskassa](emea-fra-cash-registers.md)
-- [Digitaalinen allekirjoitus Norjassa](emea-nor-cash-registers.md)
+Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Commerce SDK:ssa, mutta se ei tällä hetkellä käytä kirjanpidon integrointikehikkoa. Tämä toiminto on tarkoitus siirtää kirjanpidon integrointikehikkoon myöhemmissä päivityksissä.
 
-Seuraava vanha kirjanpidon integrointitoiminto, joka on käytettävissä Retail SDK -versiossa, ei käytä kirjanpidon integrointikehystä, ja se poistetaan käytöstä myöhemmissä päivityksissä:
+- [Digitaalinen allekirjoitus Norjassa](./emea-nor-cash-registers.md)
+
+Seuraava vanha kirjanpidon integrointitoiminto, joka on käytettävissä Commerce SDK:ssa, ei käytä kirjanpidon integrointikehystä, ja se poistetaan käytöstä myöhemmissä päivityksissä:
 
 - [Tarkistusyksikön integrointimalli – Ruotsi (vanha)](./retail-sdk-control-unit-sample.md)
+- [Digitaalinen allekirjoitus Ranskassa (vanha)](./emea-fra-deployment.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,29 +1,28 @@
 ---
 title: Arvonlisäveron yleiskatsaus
 description: Tämä ohjeaihe sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä.
-author: ShylaThompson
-manager: AnnBe
+author: kailiang
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
-ms.custom: 13111
+ms.custom:
+- "13111"
+- intro-internal
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2aa1f3f261459bca9321e0f71ac328ac0734b96f
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442821"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726832"
 ---
 # <a name="sales-tax-overview"></a>Arvonlisäveron yleiskatsaus
 
@@ -31,14 +30,13 @@ ms.locfileid: "4442821"
 
 Tämä ohjeaihe sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä.
 
-<a name="overview"></a>Yleiskuvaus
---------
+## <a name="overview"></a>Yleiskuvaus
 
 Arvonlisäveroympäristö tukee monenlaisia välillisiä veroja, kuten arvonlisäveroja (ALV), GST-veroa, yksikköperusteisia maksuja ja ennakonpidätystä. Nämä verot lasketaan ja dokumentoidaan osto- ja myyntitapahtumien aikana. Ne on myös ilmoitettava ja maksettava veroviranomaisille säännöllisesti. 
 
 Yksiköt, joista veroasetukset kostuvat, ja niiden väliset suhteet näkyvät seuraavassa kaaviossa.
 
-[![Kaavio, jossa on veroasetusyksikköjen yleiskatsaus](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Kaavio, jossa on veroasetusyksikköjen yleiskatsaus.](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 Jokaiselle yrityksen kirjaamalle arvonlisäverolle on määritettävä arvolisäverokoodi. Arvonlisäverokoodi sisältää veroprosentin ja arvonlisäveron laskusäännöt. 
 
@@ -97,3 +95,6 @@ Jos kuitenkin käytät suoritusperusteista arvonlisäveroa, täsmäytät veron v
 Jos käytät maksutapana myöhemmäksi päivättyä sekkiä maksun luomisen yhteydessä, pankkitiliä ei tarkisteta. Joissakin maissa ALV:stä tulee "toteutunutta" velkaa, kun maksu hyväksytään pankissa eli kun myöhemmäksi päivätty sekki tilitetään. Voit ottaa sen käyttöön valitsemalla **Toteuta ehdollinen vero, kun myöhemmäksi päivättyjä sekkejä luodaan** kohdassa **Maksuliikenteen hallinta > Asetukset > Maksuliikenteen tiedot > Myöhemmäksi päivätyt sekit**.
 
 Lisätietoja on ohjeaiheessa [Ennakonpidätyksen määrittäminen](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

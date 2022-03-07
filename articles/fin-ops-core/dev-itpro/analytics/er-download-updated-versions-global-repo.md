@@ -2,11 +2,9 @@
 title: Tuo päivitetyt versiot sähköisen raportoinnin konfiguraatioista
 description: Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin (ER) konfiguraatioiden päivitetyt versiot tuodaan Configuration Service -palvelun yleisestä säilöstä.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 897663998c6c95ff6d7172de2abc4d4dd6ec5f12
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734885"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Tuo päivitetyt versiot sähköisen raportoinnin konfiguraatioista
 
@@ -30,7 +28,7 @@ ms.locfileid: "4679507"
 
 Sähköisen raportoinnin (ER) [säilöjä](general-electronic-reporting.md#Repository) käytetään [sähköisen raportoinnin konfiguraatioiden](general-electronic-reporting.md#Configuration) jakamiseen. Voit [tuoda](download-electronic-reporting-configuration-lcs.md) sähköisen raportoinnin konfiguraatioita eri säilöistä omaan Microsoft Dynamics 365 Finance -esiintymääsi. Kun tuot sähköisen raportoinnin konfiguraatioita, [konfiguraation lähteet](general-electronic-reporting.md#Provider) voivat julkaista uusia [versioita](general-electronic-reporting.md#component-versioning) säilöistä, jotta ne voidaan jakaa.
 
-Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioiden päivitetyt versiot tuodaan Configuration Service -palvelun yleisestä säilöstä. Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioiden päivitetyt versiot tuodaan Configuration Service -palvelun yleisestä säilöstä. Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Tarkasta saatavilla olevat päivitetyt versiot
 
@@ -43,11 +41,11 @@ Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioi
 2. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 3. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit**-osassa **Tuo konfiguraatioversioiden päivitykset**-ruutu.
 
-    ![Lokalisoinnin konfiguraatiot -sivu](./media/er-download-updated-versions-global-repo1.png)
+    ![Lokalisoinnin konfiguraatiot -sivu.](./media/er-download-updated-versions-global-repo1.png)
 
 4. Valitse **Tuo sähköisen raportoinnin konfiguraatioversioiden päivitykset** -valintaikkunan **Suoritustila** -kentässä **Näytä vain saatavilla olevat päivitykset**. Valitse sitten **OK**. 
 
-    ![Suoritustila-kentän asetus on Näytä vain saatavilla olevat päivitykset](./media/er-download-updated-versions-global-repo2.png)
+    ![Suoritustila-kentän asetus on Näytä vain saatavilla olevat päivitykset.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Tarkista saamasi sanomat. Nämä sanomat antavat seuraavia tietoja sähköisen raportoinnin konfiguraatioista nykyisessä Finance-esiintymässä ja vertaa niitä yleisen säilön sisältöön:
 
@@ -74,14 +72,14 @@ Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioi
 4. Valitse **Tuo sähköisen raportoinnin konfiguraatioversioiden päivitykset** -valintaikkunan **Suoritustila**-kentässä **Tuo viimeisimmät päivitykset** tuodaksesi sähköisen raportoinnin konfiguraatioiden viimeisimmät versiot yleisestä säilöstä nykyiseen Finance-esiintymään.
 5. Voit ajastaa erätyön tuonnille **Suorita taustalla** -pikavälilehdessä määrittämällä **Eräkäsittely**-asetukseksi **Kyllä**. Jos haluat toistaa tuonnin säännöllisesti, määritä tarvittava toistuminen.
 
-    ![Suoritustila-kentän asetukseksi on määritetty Tuo viimeisimmät päivitykset](./media/er-download-updated-versions-global-repo5.png)
+    ![Suoritustila-kentän asetukseksi on määritetty Tuo viimeisimmät päivitykset.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Valitse **OK**.
 7. Jos haluat tietää, mitä konfiguraatioversioita on tuotu, noudata jotakin näistä ohjeista:
 
     - Jos suoritat tuonnin interaktiivisesti erätyön käyttämisen sijaan, tarkista saamasi sanomat.
 
-        ![Interaktiivisen tuonnin suorittamisen aikana saadut sanomat](./media/er-download-updated-versions-global-repo6.png)
+        ![Interaktiivisen tuonnin suorittamisen aikana saadut sanomat.](./media/er-download-updated-versions-global-repo6.png)
 
     - Jos suoritat tuonnin erätilassa, noudata näitä ohjeita:
 
@@ -89,7 +87,7 @@ Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioi
         2. Etsi ja valitse **Tuo sähköisen raportoinnin konfiguraatioversioiden päivitykset** -työ ja valitse sitten toimintoruudun **Erätyö**-välilehdessä **Erätyöhistoria** nähdäksesi työhistorian.
         3. Valitse **Erätyöhistoria**-sivulla **Loki**. Valitse sitten saamassasi sanomassa **Sanoman tiedot** -linkki nähdäksesi työn lokin.
 
-        ![Työloki](./media/er-download-updated-versions-global-repo7.png)
+        ![Työloki.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Emme suosittele ajoittamaan toistuvaa erätyötä tuomaan sähköisen raportoinnin konfiguraatioiden päivitettyjä versioita suoraan yleisestä säilöstä tuotantoympäristöön, sillä tuodut versiot tulevat välittömästi saataville. Käytä sen sijaan tätä lähestymistapaa ottaaksesi sähköisen raportoinnin konfiguraatioiden versiot käyttöön eristysympäristössä. Tällöin ne voidaan arvioida eristysympäristössä ennen niiden käyttöönottoa tuotantoympäristössä.
@@ -98,3 +96,6 @@ Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioi
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

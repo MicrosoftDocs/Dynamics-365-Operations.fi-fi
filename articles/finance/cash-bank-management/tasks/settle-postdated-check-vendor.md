@@ -2,26 +2,23 @@
 title: Tilitä toimittajalle jälkeen päin päivitetty lasku
 description: Tilitä toimittajalle myönnetty myöhemmäksi päivätty sekki, kun pankki on selvittänyt erääntyneen ja pankin selvittämän sekkitapahtuman.
 author: kweekley
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPostDatedChecks, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee66bdb93d1252486efc7be25adeb6ee7cc6ce05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6b7755c3c3d092692dde6582a8d4ba74f00b10a95ba82a2782e3dad34d28e7b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728052"
 ---
 # <a name="settle-a-postdated-check-for-a-vendor"></a>Tilitä toimittajalle jälkeen päin päivitetty lasku
 
@@ -52,3 +49,6 @@ Tämä menettelyn rooli on Rahastonhoitaja. Näissä toimintaohjeissa käytetä�
 10. Valitse Tosite.
 11. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Laskujen ja avaintietojen tarkistaminen ostoreskontrassa
 description: Tässä aiheessa näytetään, miten ostoreskontran laskut ja keskeiset tiedot voidaan tarkistaa.
 author: saraschi2
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ac1e9d8c5255b8347c9563ce9ea846933c0c9dd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442652"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815233"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Laskujen ja avaintietojen tarkistaminen ostoreskontrassa
 
@@ -62,3 +59,6 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Nämä vaiheet s
 9. Valitse toimintoruudussa **Tarkista**.
 10. Valitse **Täsmäytyksen tiedot**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Yleisen osoitekirjan määrittäminen
 description: Voit määrittää tällä menettelyllä yleisen osoitekirjan oletusarvot ja suojauskäytännöt.
 author: msftbrking
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dcee425fc1225dcfcf8ba4282f4176acfeaa268
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 6df76e19a6be5865cf875c742163f05273a16f0c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796799"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747462"
 ---
 # <a name="configure-the-global-address-book"></a>Yleisen osoitekirjan määrittäminen
 
@@ -45,3 +43,6 @@ Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tehtäv�
 13. Etsi haluamasi tietue luettelosta ja valitse se. Voit lisätä useita rooleja **Valitut roolit** -ruutuun painamalla Vaihto-näppäintä ja lisäämällä sitten valitut roolit nuolta napsauttamalla.  
 14. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

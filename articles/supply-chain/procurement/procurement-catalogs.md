@@ -1,28 +1,28 @@
 ---
 title: Hankintaluettelojen yleiskatsaus
 description: Tässä artikkelissa kuvataan, kuinka ostajat voivat määrittää ja ylläpitää tuotteiden hankintaluetteloita. Hankintaluettelot määrittävät nimikkeet ja palvelut, joita yrityksen työntekijät voivat tilata sisäiseen käyttöön.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe55adfc834b6170ca4c2a242d6bff5264ac8a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: efe0541859822b4c6404f2833ae38e07b79dd634
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019776"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984292"
 ---
 # <a name="procurement-catalogs-overview"></a>Hankintaluettelojen yleiskatsaus
 
@@ -68,10 +68,12 @@ Päivitykset julkaistaan automaattisesti tai manuaalisesti riippuen asetuksesta,
 -   **Molemmat** – jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **staattinen**, se on päivitettävä manuaalisesti luokkien päivityksen yhteydessä. Jos luettelo sisältää tuoteluokkia, joiden oletuspäivitystyyppi on **Dynaaminen**, se päivitetään automaattisesti, kun tiedot muuttuvat.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Määritä hankintaluokkahierarkia](tasks/set-up-procurement-category-hierarchy.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

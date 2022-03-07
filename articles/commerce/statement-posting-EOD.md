@@ -2,26 +2,23 @@
 title: Laskelman kirjaamisen toiminnallisuuden parannukset
 description: Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772201"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
@@ -174,3 +171,6 @@ Laskelman kirjaamistoimintoon on tehty muita taustajärjestelmän parannuksia, j
 
     - Siirry kohtaan **Vähittäismyynti ja kauppa** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**. Valitse sitten **Kirjaus**-välilehdellä **Varastopäivitys**-pikavälilehden **Erittelytaso**-kentässä **Yhteenveto**.
     - Siirry kohtaan **Vähittäismyynti ja kauppa** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**. Aseta sitten **Kirjaus**-välilehden **Koostaminen**-pikavälilehdessä **Tositetapahtumat**-asetukseksi **Kyllä**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

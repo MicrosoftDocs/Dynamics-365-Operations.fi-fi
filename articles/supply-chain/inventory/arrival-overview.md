@@ -1,7 +1,7 @@
 ---
 title: Saapumisten yhteenveto
 description: Tässä aiheessa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yleiskuva -sivu on osa tätä ominaisuutta ja se tarjoaa yhteenvedon kaikista saapuvista nimikkeistä, joita odotetaan.
-author: yufeihuang
+author: perlynne
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
@@ -9,21 +9,19 @@ ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "274363"
-- intro-internal
+ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 734fbdd6f62c192580029a24844fff78fda8b919
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567436"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809587"
 ---
 # <a name="arrival-overview"></a>Saapumisten yhteenveto
 
@@ -36,7 +34,7 @@ Tässä aiheessa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yle
 ## <a name="business-scenario"></a>Yrityksen skenaario
 Seuraavana on esimerkki saapuvien prosessista.
 
-[![Yrityksen skenaario.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![Yrityksen skenaario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sammy, vastaanottoassistentti, haluaa tietää, mitä odotetaan saapuvan tänä päivänä. Hän näkee **Saapumisen yleiskuva** -sivulla tiedot nykyisistä tehtävistä ja karkean arvion määristä, tilavuudesta, painosta, tilaustyypeistä ja niin edelleen. Toimitus saapuu myöhemmin saapuvien laiturille ja Sammy vastaanottaa toimitusluettelon. Sammy voi suorittaa **Saapumisen yleiskuva** -sivulla seuraavat tehtävät:
 
@@ -68,7 +66,7 @@ Jotta saapumisen kirjauskansiot luotaisiin automaattisesti **Saapumisen yleiskuv
 
 -   Kirjauskansion nimi on määritettävä, jotta kansion voi luoda.
 
-[![Kirjauskansion nimen määrittäminen.](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![Kirjauskansion nimen määrittäminen](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   Jos määrität arvon **Varasto**- ja **Sijainti**-kenttiin, arvoja käytetään kirjauskansion riveillä. Jos et määritä arvoja, järjestelmä käyttää varastotapahtumille määritetyn dimension arvoja.
 

@@ -2,35 +2,30 @@
 title: Mediavalikoimamoduuli
 description: Tässä ohjeaiheessa on tietoja mediavalikoimamoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412067"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733194"
 ---
 # <a name="media-gallery-module"></a>Mediavalikoimamoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja mediavalikoimamoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Mediavalikoimamoduuleissa on yksi kuva tai useita kuvia valikoimanäkymässä. Mediavalikoimamoduulit tukevat pikkukuvia. Ne voivat olla vaakasuuntaisesti (rivinä kuvan alla) tai pystysuuntaisesti (pystyrivinä kuvan vieressä). Mediavalikoimamoduulit sisältävät myös ominaisuuksia, joiden avulla kuvia voi zoomata (suurentaa) tai tarkastella koko näytön tilassa. Kuvan on oltava käytettävissä Commercen sivustonmuodostimen mediakirjastossa, jotta se voidaan hahmontaa mediavalikoimamoduuliin. Tällä hetkellä mediavalikoimamoduulit tukevat vain kuvia.
 
@@ -46,7 +41,7 @@ Tässä on joitakin mediavalikoimamoduulien käyttöesimerkkejä:
 
 Seuraavassa esimerkissä PDP:n ostoruutu isännöi tuotekuvia mediavalikoimamoduulin avulla.
 
-![Esimerkki ostoruudusta tuotetietosivulla, joka isännöi tuotekuvia mediavalikoimamoduulin avulla](./media/ecommerce-pdp-buybox.PNG)
+![Esimerkki ostoruudusta tuotetietosivulla, joka isännöi tuotekuvia mediavalikoimamoduulin avulla.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Mediavalikoiman ominaisuudet
 
@@ -54,19 +49,25 @@ Seuraavassa esimerkissä PDP:n ostoruutu isännöi tuotekuvia mediavalikoimamodu
 |---------------|--------|-------------|
 | Kuvan lähde | **Sivun konteksti** tai **Tuotetunnus** | Oletusarvo on **Sivun konteksti**. Jos **Sivun konteksti** on valittuna, moduuli olettaa, että sivu antaa tuotetunnuksen tiedot. Jos **Tuotetunnus** on valittuna, kuvan tuotetunnus on annettava **Tuotetunnus**-ominaisuuden arvona. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.12. |
 | Tuotetunnus | Tuotetunnus | Tämä ominaisuus on käytettävissä vain, jos **Kuvan lähde** -ominaisuuden arvo on **Tuotetunnus**. |
-| Kuvan zoomaus | **Sisäinen** tai **Säilö** | Tämän ominaisuuden avulla käyttäjä voi zoomata kuvia mediavalikoimamoduulissa. Kuvaa voi zoomata sisäisesti tai erillisessä säilössä kuvan vieressä. Tämä ominaisuus on käytettävissä versiossa 10.0.12 |
-| Zoomausasteikko | Desimaalinumero | Tämä ominaisuus määrittää kuvien zoomauksen skaalauskertoimen. Jos arvoksi on määritetty esimerkiksi **2,5**, kuvat suurennetaan 2,5 kertaisiksi.|
-| Koko näyttö | **Tosi** vai **Epätosi** | Tämä ominaisuus määrittää, voidaanko kuvia tarkastella koko näytön tilassa. Koko näytön tilassa kuvia voidaan myös suurentaa entisestään, jos zoomausominaisuus on käytössä. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.13. |
+| Kuvan zoomaus | **Sisäinen** tai **Säilö** | Tämän ominaisuuden avulla käyttäjä voi zoomata kuvia mediavalikoimamoduulissa. Kuvaa voi zoomata sisäisesti tai erillisessä säilössä kuvan vieressä. Tämä ominaisuus on käytettävissä versiossa 10.0.12. |
+| Zoomauskerroin | Desimaalinumero | Tämä ominaisuus määrittää kuvien zoomauksen skaalauskertoimen. Jos arvoksi on määritetty esimerkiksi **2,5**, kuvat suurennetaan 2,5 kertaisiksi. |
+| Koko näyttö | **Tosi** vai **Epätosi** | Tämä ominaisuus määrittää, voidaanko kuvia tarkastella koko näytön tilassa. Koko näytön tilassa kuvia voidaan myös suurentaa entisestään, jos zoomausominaisuus on käytössä. Tämä ominaisuus on käytettävissä Commerce-version 10.0.13 julkaisussa. |
+| Zoomatun kuvan laatu | Luku väliltä 1–100, joka edustaa prosenttilukua ja joka valitaan käyttämällä ohjauspalkkia. | Tässä ominaisuudessa määritetään kuvalaatu zoomatuille kuville. Sen arvoksi voidaan määrittää 100 prosenttia. Näin voidaan varmistaa, että zoomattu kuva käyttää aina suurinta mahdollista tarkkuutta. Tämä ominaisuus ei koske PNG-tiedostoja, koska ne käyttävät häviötöntä muotoa. Tämä ominaisuus on käytettävissä Commerce-version 10.0.19 julkaisussa. |
 | Kuvat | Kuvat, jotka on valittu sivustonmuodostimen mediakirjastosta | Kuvia voidaan hahmontaa tuotteesta. Niitä voidaan kuratoida myös mediavalikoimamoduulista. Nämä kuvat lisätään käytettävissä oleviin tuotekuviin. Tämä ominaisuus on käytettävissä Commercen versiossa 10.0.12. |
 | Pikkukuvan suunta | **Pysty** tai **vaaka** | Tämä ominaisuus määrittää, näytetäänkö pikkukuvat pysty- vai vaakanauhassa. |
+| Muuttujan päätuotekuvien piilottaminen | **Tosi** vai **Epätosi** | Jos ominaisuuden arvoksi määritetään **Tosi**, kun muuttuja valitaan, päätuotteen kuvat piilotetaan, ellei muuttujalla ole kuvia. Tämä ominaisuus ei vaikuta tuotteisiin, joissa ei ole muuttujia. |
+| Median päivittäminen dimension valinnassa | **Tosi** vai **Epätosi** | Jos tämän ominaisuuden arvoksi on määritetty **Tosi**, mediakirjaston kuvat päivitetään, kun jokin dimensio (kuten väri, tyyli tai koko) valitaan ja jos kuva on saatavana. Tämä ominaisuus yksinkertaistaa selauskokemusta, koska jokaista tuotevarianttidimensiota ei tarvitse valita vastaavaa päivitettävää kuvaa varten. Tämä ominaisuus on käytettävissä **Lisäasetukset**-välilehdessä. |
+
+> [!IMPORTANT]
+> **Päivitä media dimensiota valittaessa** -ominaisuus on saatavana Commercen versiossa 10.0.21. Se edellyttää Commercen moduulikirjastopaketin 9.31 asentamista.
 
 Seuraavassa kuvassa on esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä.
 
-![Esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä](./media/ecommerce-media-zoom.png)
+![Esimerkki mediavalikoimamoduulista, jossa koko näytön ja zoomauksen asetukset ovat käytettävissä.](./media/ecommerce-media-zoom.png)
 
 Seuraavassa kuvassa on esimerkki mediavalikoimamoduulista, jossa on kuratoituja kuvia (eli määritettyjä kuvia, jotka eivät riipu tuotetunnuksesta tai sivun kontekstista).
 
-![Esimerkki mediavalikoimamoduulista, jossa on kuratoituja kuvia](./media/ecommerce-media-curated.PNG)
+![Esimerkki mediavalikoimamoduulista, jossa on kuratoituja kuvia.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
 
@@ -104,3 +105,6 @@ Voit lisätä mediavalikoimamoduulin markkinointisivulle seuraavasti.
 [Konttimoduuli](add-container-module.md)
 
 [Kuvien lataaminen palveluun](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

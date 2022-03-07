@@ -2,11 +2,9 @@
 title: LISTJOIN ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) LISTJOIN-funktiota käytetään.
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28f03e5e6af0f252a994f2e54b57a5ef654f4e67
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5fe49184ee4023e8b4f54dd7f5107be8c711d4b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682240"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353727"
 ---
 # <a name="listjoin-er-function"></a>LISTJOIN ER-funktio
 
@@ -33,7 +31,7 @@ ms.locfileid: "4682240"
 ## <a name="syntax"></a>Syntaksi
 
 ```vb
-LIST (list 1 [, list 2, …, list N])
+LISTJOIN (list 1 [, list 2, …, list N])
 ```
 
 ## <a name="arguments"></a>Argumentit
@@ -68,18 +66,21 @@ Syötä sitten `Container`-tyypin **Tietue 2**:n tietolähde. Tämä tietolähde
 - **Summa**: Tässä kentässä on lauseke, joka palauttaa `Real`-tyypin arvon.
 - **IsValid**: Tässä kentässä on lauseke, joka palauttaa `Boolean`-tyypin arvon.
 
-![ER-mallimäärityksen suunnittelun sivu](./media/er-functions-list-listjoin-image1.gif)
+![ER-mallimäärityksen suunnittelun sivu.](./media/er-functions-list-listjoin-image1.gif)
 
 Tässä tapauksessa lauseke `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` palauttaa uuden luettelon, joka sisältää kaksi tietuetta.
 
-![Sähköisen raportoinnin mallivastaavuusmäärityksen suunnittelun sivu ja kaksi tietuetta](./media/er-functions-list-listjoin-image2.gif)
+![Sähköisen raportoinnin mallivastaavuusmäärityksen suunnittelun sivu ja kaksi tietuetta.](./media/er-functions-list-listjoin-image2.gif)
 
 Tämän luettelon rakenne koostuu `Real`-tyypistä, joka on yksittäisessä **Summa**-kentässä, koska tämä kenttä on ainoa kenttä, joka esitetään kutsutun funktion jokaisessa argumentissa.
 
-![Sähköisen raportoinnin malliyhdistämismäärityksen suunnittelun sivun summakenttä](./media/er-functions-list-listjoin-image3.gif)
+![Sähköisen raportoinnin malliyhdistämismäärityksen suunnittelun sivun summakenttä.](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
 
 [Suoritettavan ER-muodon tietolähteiden vianmääritys tiedonkulun ja muunnoksen analysointia varten](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

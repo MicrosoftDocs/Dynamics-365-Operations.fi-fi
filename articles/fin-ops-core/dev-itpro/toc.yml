@@ -1,10 +1,10 @@
-- name: Finance and Operations -sovellusten kehittäminen ja hallinta
+- name: Finance and Operations -sovellusten kehitys ja hallinnointi
   items:
-    - name: Finance and Operations -sovellusten kehittäminen ja hallinta
+    - name: Finance and Operations -sovellusten kehitys ja hallinnointi
       items:
-        - name: Finance and Operations -sovellusten dokumentaatio
+        - name: Finance and Operations -sovellusdokumentaatio
           href: ../fin-ops/index.md
-        - name: Finance and Operations -sovellusten kehittäminen ja hallinta
+        - name: Finance and Operations -sovellusten kehitys ja hallinnointi
           href: index.md
         - name: Uudet ja muuttuneet ominaisuudet
           items:
@@ -12,14 +12,14 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Platform update -päivitysten uudet ja muuttuneet ominaisuudet
               items:
-                - name: Platform update -päivitysten kotisivun uudet ja muuttuneet ominaisuudet
+                - name: Ympäristön päivitysten aloitussivun uudet ja muuttuneet ominaisuudet
                   href: get-started/whats-new-home-page.md
-                - name: Ympäristön päivitykset versioon 10.0.25 (huhtikuu 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Platform update -päivitykset versioon 10.0.24 (helmikuu 2022)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Platform update -päivitykset versioon 10.0.23 (tammikuu 2022)
+                - name: Platform update -päivitykset versioon 10.0.23
                   href: get-started/whats-new-platform-updates-10-0-23.md
+                - name: Ympäristön päivitykset versioon 10.0.22 (marraskuu 2021)
+                  href: get-started/whats-new-platform-updates-10-0-22.md
+                - name: Ympäristön päivitykset versioon 10.0.21 (lokakuu 2021)
+                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -68,13 +68,13 @@
                   href: data-entities/odata.md
                 - name: Mukautettu palvelukehitys
                   href: data-entities/custom-services.md
-                - name: Toistuvat integroinnit
+                - name: Toistuvat integraatiot
                   href: data-entities/recurring-integrations.md
                 - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations Connector
+            - name: Finance and Operations -yhdistin
               href: data-entities/fin-ops-connector.md
-            - name: Integroinnin kehitys
+            - name: Integraation kehitys
               items:
                 - name: Tietojen integraatio tietoyksikköjen avulla
                   items:
@@ -98,7 +98,7 @@
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
+                        - name: Tuotteiden synkronointi suoraan Finance and Operationsista Salesin tuotteisiin
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
                         - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
@@ -120,17 +120,17 @@
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
                         - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Finance and Operationsin varastotasotietojen synkronointi Field Serviceen
+                        - name: Finance and Operations varastotasotietojen synkronointi Field Serviceen
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
                         - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
                         - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Finance and Operationsin fyysisten varastojen synkronointi Field Serviceen
+                        - name: Finance and Operationsin varastojen synkronointi Field Serviceen
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Finance and Operationsin työtilausten ja projektin synkronointi Field Serviceen
+                        - name: Field Servicen työtilausten ja projektin synkronointi Finance and Operationsiin
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Project Service Automation -integroinnin määrittäminen
+                    - name: Project Service Automation -Integroinnin määrittäminen
                       items:
                         - name: Project Service Automationin yleiskatsaus
                           href: /dynamics365/project-operations/prod-pma/PSA-integration
@@ -190,7 +190,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Tositteiden tuonti kirjauskansioyksikön avulla
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Finance and Operations -sovellusten tietojen siirron optimointi
+                - name: Tietojen siirron optimointi Finance and Operations ‑sovelluksille
                   href: sysadmin/optimize-data-migration.md
             - name: Tietoyksiköiden kehittäminen
               items:
@@ -232,9 +232,9 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Vieminen Azure Data Lake – yleiskatsaus
-              href: data-entities/Azure-Data-Lake-GA-version-overview.md
-            - name: Vieminen Azure Data Lake -apuohjelman asentaminen
+            - name: Azure Data Lake -yleiskuvaus
+              href: data-entities/azure-data-lake-overview.md
+            - name: Azure Data Lake -viennin määritys
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations -sovellukset Azure Data Lakessa
               href: data-entities/finance-data-azure-data-lake.md
@@ -360,11 +360,11 @@
                       href: deployment/on-premises-overview.md
                     - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
                       href: deployment/plan-onprem-deployment.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) -ratkaisun tukemat ohjelmistot
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) tuettu ohjelmisto
                       href: deployment/onprem-compatibility.md
                     - name: Laitteiston kokovaatimukset
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Todennus Dynamics 365 Finance + Operations (on-premises) -ratkaisussa
+                    - name: Dynamics 365 Finance + Operations (on-premises) – todennus
                       href: deployment/authentication-onprem.md
                 - name: Paikallisten ympäristöjen asennus ja käyttöönotto
                   items:
@@ -406,8 +406,6 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Saman AD FS -esiintymän käyttäminen uudelleen useissa ympäristöissä
                       href: deployment/onprem-reuseadfs.md
-                    - name: SQL Server -esiintymän päivittäminen Microsoft Dynamics 365 Finance + Operations (on-premises) -ympäristöissä
-                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Paikallinen edustaja
                   items:
                     - name: AD FS Microsoft 365 -yhteensopivuus
@@ -432,8 +430,6 @@
                   href: deployment/install-deployable-package.md
                 - name: Paketin asennuksen poistaminen
                   href: deployment/uninstall-deployable-package.md
-                - name: Mukautettujen X++-komentosarjojen suorittaminen ja käyttökatkoja
-                  href: deployment/run-custom-scripts.md
                 - name: Paketin käyttöönotto-ongelmien vianmääritys
                   href: deployment/deployable-package-troubleshooting.md
             - name: Mukautetun ohjeen käyttöönotto
@@ -462,16 +458,6 @@
                   href: help/language-locale.md
                 - name: 'Ohjeen laajentaminen, mukauttaminen ja käyttäminen yhdessä'
                   href: help/contributor-guide.md
-            - name: Käyttöönotossa huomioitavaa
-              items:
-                - name: Maakohtaisia ja paikallista pilvipalvelukäyttöönottoja Dynamics 365 Financelle ja Dynamics 365 Supply Chain Managementille
-                  href: deployment/deployment-options-geo.md
-                - name: Finance ja Supply Chain Management Yhdysvaltain Government Community Cloudissa (GCC)
-                  href: deployment/us-gcc-deployment.md
-                - name: 21Vianetin ylläpitämät Finance- ja Supply Chain Management -sovellukset Kiinassa
-                  href: deployment/china-local-deployment.md
-                - name: Finance and Operations -sovellukset Ranskassa
-                  href: deployment/france-local-deployment.md
         - name: Kehittäminen ja mukauttaminen
           items:
             - name: Kehittäminen ja mukauttaminen – aloitussivu
@@ -480,7 +466,7 @@
               href: dev-tools/application-stack-server-architecture.md
             - name: Kokeiluversioiden hankkiminen
               href: dev-tools/get-evaluation-copy.md
-            - name: Esiversiotilauksiin rekisteröityminen
+            - name: Kokeiluversioiden tilaaminen
               href: dev-tools/sign-up-preview-subscription.md
             - name: Kehitysympäristöjen käyttöönotto ja käyttö
               items:
@@ -514,8 +500,6 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Lifecycle Services (LCS) -yhteyden luominen Azure Pipelinesiin
                   href: dev-tools/pipeline-lcs-connection.md
-                - name: 'LCS-yhteyden todennustehtävien päivittäminen MSAL:ään Azure Pipelinesissa'
-                  href: dev-tools/pipeline-lcs-connection-update.md
                 - name: Isännöidyn Azure Pipelinen päivittäminen uusia NuGet-paketteja varten
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Vanhan pipelinen päivittäminen Azure Pipelines -ratkaisussa
@@ -858,8 +842,6 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-suodatus luokka- ja metodiattribuutteja käyttäen
                   href: perf-test/systest-filtering.md
-                - name: SysTestRow-määrite useiden arvojen testaamista varten
-                  href: perf-test/systest-row.md
                 - name: Hyväksyntätestikirjasto
                   items:
                     - name: Hyväksyntätestikirjaston resurssit
@@ -1018,11 +1000,9 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Käännösmuistitiedostot
                   href: lifecycle-services/use-translation-service-tm.md
-                - name: Azure DevOps -laajennus (julkinen esiversio)
-                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform -integrointi
           items:
-            - name: Yleiskatsaus
+            - name: Microsoft Power Platform- ja Finance and Operations -integrointi
               href: power-platform/overview.md
             - name: Power Platform -integraation ottaminen käyttöön
               href: power-platform/enable-power-platform-integration.md
@@ -1048,9 +1028,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisille Finance and Operations -sovelluksille
+                    - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
                       items:
-                        - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisille Finance and Operations -sovelluksille
+                        - name: Kaksoiskirjoituksen ottaminen käyttöön nykyisissä Finance and Operations -sovelluksissa
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Järjestelmävaatimukset ja edellytykset
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1058,8 +1038,6 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Kaksoiskirjoituksen entiteettien yhdistämismäärityksen ottaminen käyttöön
                           href: data-entities/dual-write/enable-entity-map.md
-                    - name: Erillinen kaksoiskirjoitussovelluksen hallintapaketti
-                      href: data-entities/dual-write/separated-solutions.md
                     - name: Valuuttatietotyyppien siirto kaksoiskirjoitusta varten
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Myyntitilauksen tilakenttien määrityksen ottaminen käyttöön
@@ -1140,8 +1118,6 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
                       href: data-entities/dual-write/upgrade-party-gab.md
-                    - name: Osapuolen tietojen tarkasteleminen
-                      href: data-entities/dual-write/view-party.md
                     - name: Huomautusten integrointi
                       href: data-entities/dual-write/notes-integration.md
                     - name: Määritysviite
@@ -1170,7 +1146,7 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Finance and Operations -sovellusten päivityksiin liittyvien ongelmien vianmääritys
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Kaksoiskirjoitusmääritysten tarkistus Finance and Operations -sovelluksissa sekä Dataversessä
+                        - name: Kaksoiskirjoitusmääritysten tarkistus Finance and Operations -sovelluksissa ja Dataversessä
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Taulumäärityksen kuntotarkistusta koskevat virhekoodit
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1184,7 +1160,7 @@
                   href: power-platform/entity-modeling.md
                 - name: Sovellusten elinkaaren hallinta
                   href: power-platform/application-lifecycle-management.md
-                - name: Dataverse-virtuaaliyksiköiden määritys
+                - name: Määritä Dataverse-virtuaaliyksiköt
                   href: power-platform/admin-reference.md
                 - name: Dataverse-virtuaaliyksiköiden ottaminen käyttöön
                   href: power-platform/enable-virtual-entities.md
@@ -1196,13 +1172,11 @@
               items:
                 - name: Liiketoimintatapahtumien yleiskatsaus
                   href: business-events/home-page.md
-                - name: Liiketoimintatapahtumien päätepisteiden hallinta
-                  href: business-events/managing-business-event-endpoints.md
-                - name: Sovellusliiketoiminnan tapahtumat
+                - name: Sovellusliiketoimintatapahtumat
                   href: business-events/app-business-events.md
                 - name: Työnkulun liiketoimintatapahtumat
                   href: business-events/business-events-workflow.md
-                - name: Eräliiketoiminnan tapahtumat
+                - name: Liiketoimintatapahtumien eräkäsittely
                   href: business-events/system-business-events.md
                 - name: Hälytykset liiketoimintatapahtumina
                   href: business-events/alerts-business-events.md
@@ -1220,25 +1194,21 @@
                   items:
                     - name: Liiketoimintatapahtumat ja Power Automate
                       href: business-events/how-to/how-to-flow.md
-                    - name: Liiketoimintatapahtumat ja Azure-tapahtumaverkko
+                    - name: Liiketoimintatapahtumat ja Azuren tapahtumaruudukko
                       href: business-events/how-to/how-to-eventgrid.md
-                    - name: Liiketoimintatapahtumat ja Azuren palveluväylä
+                    - name: Liiketoimintatapahtumat ja Azure-palveluväylä
                       href: business-events/how-to/how-to-servicebus.md
-                    - name: Liiketoimintatapahtumat ja Azuren palveluväyläjono
-                      href: business-events/how-to/how-to-servicebus-queue.md
                     - name: Liiketoimintatapahtumat ja työnkulun hyväksynnät
                       href: business-events/how-to/how-to-workflow.md
                     - name: Liiketoimintatapahtumat ja Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
-                    - name: Liiketoimintatapahtumat ja Azuren tapahtumakeskukset
+                    - name: Liiketoimintatapahtumat ja Azuren tapahtumatoiminnot
                       href: business-events/how-to/event-hub.md
-                    - name: Tapahtumien tilaaminen Dataversessä
-                      href: business-events/how-to/how-to-dataverse-events.md
-                    - name: Liiketoimintatapahtumat tilikauden lopussa
+                    - name: Tilikauden sulkemisen liiketoimintatapahtumat
                       href: business-events/how-to/period-close.md
             - name: Apuohjelmat
               items:
-                - name: Apuohjelmien yleiskuvaus
+                - name: Apuohjelmien yleiskatsaus
                   href: power-platform/add-ins-overview.md
             - name: Käytännöt ja tietoliikenne
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
@@ -1466,15 +1436,15 @@
               href: process-automation/log-results.md
             - name: Käyttöliittymän mukauttaminen
               href: process-automation/ui-customization.md
-        - name: Regression suite automation tool
+        - name: Regression Suite Automation Tool
           items:
-            - name: Regression suite automation tool – yleiskatsaus
+            - name: Regression Suite Automation Tool – yleiskatsaus
               href: perf-test/rsat/rsat-overview.md
             - name: Asennus ja määrittäminen
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Regression suite automation toolin käyttäminen
+            - name: Regression Suite Automation Toolin käyttäminen
               href: perf-test/rsat/rsat-run.md
-            - name: Regression suite automation toolin testitapausten ylläpitäminen
+            - name: Regression Suite Automation Toolin testitapausten ylläpitäminen
               href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Odotettujen arvojen tarkistaminen
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1484,7 +1454,7 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Parametritiedostojen päivittäminen
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Regression suite automation tool -opas
+            - name: Regression Suite Automation Tool -opas
               href: perf-test/rsat/rsat-tutorial.md
             - name: Muiden kuin järjestelmänvalvojakäyttäjien konfigurointi
               href: perf-test/rsat/rsat-configure-nonadmin.md
@@ -1492,8 +1462,6 @@
               href: perf-test/rsat/rsat-best-practices.md
             - name: Tietoriippumaaton testaaminen Regression Suite Automation Toolilla
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Regression Suite Automation Tool (RSAT) ‑työkalun suorittaminen rinnakkaissuorittamisella
-              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Vianmääritys
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Ratkaisujen vapauttaminen Lifecycle Services -portaalin avulla
@@ -1532,11 +1500,11 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Tuki
           items:
-            - name: Finance and Operations- ja Lifecycle Services -tuki
+            - name: Tuen hankkiminen Finance and Operationsille ja Lifecycle Servicesille
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 -tuen yleiskatsaus
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Tuki 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
+            - name: Tuen hankkiminen Kiinassa 21Vianetin ylläpitämälle Finance and Operations
               href: lifecycle-services/21vianet-support.md
             - name: Finance and Operations -sovellusten teknisen tuen määrittäminen
               href: lifecycle-services/support-experience.md
@@ -1610,12 +1578,10 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Erätöiden luominen
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Eräuudelleenyritysten ottaminen käyttöön
+                - name: Automaattisten uudelleenyritysten ottaminen käyttöön erätöissä
                   href: sysadmin/retryable-batch.md
-                - name: Erätyön kopioiminen
+                - name: Erätyön kopiointi
                   href: sysadmin/copy-batch-job.md
-                - name: Prioriteettipohjainen erän ajoitus
-                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktiiviset eräkaudet
                   href: sysadmin/activeperiod.md
                 - name: Aktiivisten eräkausien kesäajan tuki
@@ -1654,7 +1620,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Päivitä AX 2012 -versiosta
               items:
-                - name: 'AX 2012:n päivittäminen Finance and Operationsiin'
+                - name: Päivitä AX 2012 -versiosta Finance and Operationsiin
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: AX 2012 -versiopäivitys – suunnitteleminen päivityksen analysointityökalun avulla
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1666,6 +1632,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 -päivitys – päivitystä edeltävä tarkistusluettelo tietojen päivitystä varten
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: 'Päivitys AX 2012:sta - SQL-tapahtuman replikointi'
+                  href: database/replication-setup.md
                 - name: 'Päivitys AX 2012:sta – tietojen päivitys itsepalveluympäristöissä'
                   href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012 -päivitys – paikalliset ympäristöt
@@ -1682,11 +1650,13 @@
                   href: migration-upgrade/2012-upgrade-cutover.md
                 - name: Päivitys versiosta AX 2012 - Tietojen päivityksen usein kysytyt kysymykset
                   href: migration-upgrade/upgrade-faq.md
-                - name: 'Muutokset, jotka vaikuttavat AX 2012 alkaen päivitykseen'
+                - name: 'Muutokset, jotka vaikuttavat päivitykseen versiosta AX 2012'
                   items:
-                    - name: Tee tilikartan erottimesta yksilöllinen
+                    - name: Tilikartan erottimen muuttaminen yksilöiväksi
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: Projektin resurssien aikataulutuksen tietomalli
+                    - name: Yhden tositteen kirjauskansioiden ja valuutan uudelleenarvostusten päivittäminen
+                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
+                    - name: Projektiresurssin ajoituksen tietomalli
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: Työnkulun alijärjestelmän muutokset
                       href: migration-upgrade/workflow-subsystem.md
@@ -1698,11 +1668,11 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Tietojen siirtäminen AX 2009 -järjestelmästä
               items:
-                - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
+                - name: Tietojen siirtäminen AX 2009 -järjestelmästä Finance and Operationsiin
                   href: migration-upgrade/data-migration-tool.md
-                - name: "AX 2009 -siirto\_- tietojen siirtotyökalun asennus"
+                - name: "AX 2009 -siirto\_– tietojen siirtotyökalun asennus"
                   href: migration-upgrade/install-dmt.md
-                - name: "AX 2009 -siirto\_- määritysten luominen"
+                - name: "AX 2009 -siirto\_– yhdistämismääritysten luominen"
                   href: migration-upgrade/generate-maps.md
                 - name: "AX 2009 -siirto\_- mallien luominen"
                   href: migration-upgrade/create-package-templates-dmt.md

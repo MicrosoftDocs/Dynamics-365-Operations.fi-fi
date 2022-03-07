@@ -2,28 +2,25 @@
 title: Puolivuotiskauden poistomenetelmä -metodologia
 description: Tässä ohjeaiheessa kuvataan menetelmä, jota käyttöomaisuus käyttää poiston laskennassa puolivuotisen sopimuksen avulla. Se laskee kuuden kuukauden poiston käyttöomaisuuserän ensimmäisen ja viimeisen vuoden huollon aikana.
 author: moaamer
-manager: Ann Beebe
 ms.date: 08/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 55fb03cf08d8ec042aa8fb37fd1fb858d98279b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e71beb316494d05a3d8ce6066f2a4c72e32a2ad3d75a4ba3560cb0aebfe4cc8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442630"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746437"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Puolivuotiskauden poistomenetelmä -metodologia
 
@@ -39,6 +36,9 @@ Ensimmäinen huoltovuosi päättyy joulu kuussa 2020, mikä tarkoittaa, että k�
 > Vuosittainen poisto 50 000/5 = 10 000 kuukauden poisto 10 000/12 = 833,33 <br>
 > Ensimmäisen vuoden poisto 10 000/2 = 5 000 ja sitä seuraava kuukausittainen poisto 5 000/9 = 555,56
 
-   [![Puolen vuoden poistomenetelmän poistoaikataulu](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Puolen vuoden poistomenetelmän poistoaikataulu.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Puolivuotisen sopimuksen lisäämät laajennetut poistokaudet lisäävät poistojen täsmällisempää jakautumista. Kuuden kuukauden menetelmä edustaa poistokuluja tasaisemmin. Se on hyödyllinen tuloslaskelman raportoinnissa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

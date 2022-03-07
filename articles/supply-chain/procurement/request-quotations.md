@@ -1,12 +1,10 @@
 ---
 title: Tarjouspyynnöt – yleiskatsaus
 description: Tässä aiheessa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3ff153d9c16b219158c12f4bb49eb0a0c5d401ac
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016928"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102899"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Tarjouspyynnöt – yleiskatsaus
 
@@ -45,7 +43,7 @@ Voit luoda tarjouspyyntötapauksen suunnitelluista tilauksista, ostoehdotuksesta
 
 Kun olet valmistellut tarjouspyyntötapauksen ja lisännyt toimittajat, valitse tarjouspyyntötapauksessa **Lähetä** (**Lähetä ja julkaise** julkisella sektorilla). Tarjouspyynnön kirjauskansio luodaan jokaiselle toimittajalle, jolle lähetät tarjouspyynnön. Voit määrittää Lähetä-toiminnon tulostusasetukset joko tulostamaan raportin jokaisesta toimittajasta arkistoon vai lähettämään raportin kunkin toimittajan sähköpostiosoitteeseen. Voit lisäksi luoda kunkin toimittajan tarjouspyynnön kirjauskansiossa raportin, jonka voit lähettää toimittajalle tai lähettää sen myöhemmin uudelleen. Voit myös määrittää Lähetä-toiminnon luomaan vastauslomakkeen, jonka toimittaja voi täyttää.
 
-Tässä aiheessa käsitellään tarjouspyyntöjen käsittelyprosessi silloin, kun toimittajayhteistyö ei ole käytössä. Jos järjestelmä on määritetty toimittajayhteistyötä varten, toimittajat voivat antaa tarjouksia suoraan Supply Chain Managementissa. Lisätietoja on kohdassa [Toimittajayhteistyö asiakkaisen kanssa](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) ja [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
+Tässä aiheessa käsitellään tarjouspyyntöjen käsittelyprosessi silloin, kun toimittajayhteistyö ei ole käytössä. Jos järjestelmä on määritetty toimittajayhteistyötä varten, toimittajat voivat antaa tarjouksia suoraan Supply Chain Managementissa. Lisätietoja on kohdassa [Toimittajayhteistyö asiakkaisen kanssa](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) ja [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
 
 Jos tarjouspyyntöä on muutettava lähettämisen jälkeen, voit lähettää tarjouspyynnön uudelleen toimittajille, kun olet käyttänyt kahta muutostoimintoa: luontia ja viimeistelyä.
 
@@ -80,23 +78,23 @@ Valitse **Hankintaparametrit**-sivulla toimittajille lähetettävän sähköpost
 - %Tarjouksen palautuksen syy%
 - %Muutoksen syy%
 - %Muutoksen valmistelija%
-- %Yritys%
+- %Company%
 - %Tarjouspyyntötapauksen nimi%
 - %Ajon vanhenemispäivä%
-- %Päivämäärä%
+- %Date%
 
-%Tarjouksen palautuksen syy%- ja %Muutoksen syy% -tunnisteet korvataan tekstillä, jonka hankinta-asiantuntija voi täyttää viimeistellessään muutoksia ohjatussa **Muutos**-toiminnossa. %Muutoksen valmistelija%- ja %Yritys%-tunnisteet korvataan automaattisesti tarjouspyynnön tiedoilla. %Päivämäärä%-tunniste korvataan nykyisellä päivämäärällä.
+%Tarjouksen palautuksen syy%- ja %Muutoksen syy% -tunnisteet korvataan tekstillä, jonka hankinta-asiantuntija voi täyttää viimeistellessään muutoksia ohjatussa **Muutos**-toiminnossa. %Muutoksen valmistelija%- ja %Company%-tunnisteet korvataan automaattisesti tarjouspyynnön tiedoilla. %Date%-tunniste korvataan nykyisellä päivämäärällä.
 
 Jos haluat peruuttaa tarjouspyynnön lähettämisen jälkeen, se voidaan tehdä tarjouspyyntötapauksessa. Peruutusta varten tarvitaan sähköpostimalli lähettämään peruutusilmoitus toimittajan yhteyshenkilöille. Malli on oltava valittuna **Hankintaparametrit**-sivulla. Luotava malli voi sisältää seuraavat korvattavat tunnisteet:
 
 - %Peruutuksen syy%
 - %Tarjouspyyntötapaus%
 - %Tarjouspyynnön peruuttaja%
-- %Yritys%
+- %Company%
 - %Tarjouspyyntötapauksen nimi%
-- %Päivämäärä%
+- %Date%
 
-%Peruutuksen syy% -tunniste korvataan tekstillä, jonka hankinta-asiantuntija voi antaa ohjatussa **Peruutus**-toiminnossa. %Päivämäärä%-tunniste korvataan nykyisellä päivämäärällä.
+%Peruutuksen syy% -tunniste korvataan tekstillä, jonka hankinta-asiantuntija voi antaa ohjatussa **Peruutus**-toiminnossa. %Date%-tunniste korvataan nykyisellä päivämäärällä.
 
 Jos haluat osoittaa tarjouksessa tarjouksen hylkäämisen tai hyväksymisen syyn syykoodeilla, määritä syykoodit **Toimittajan syyt** -sivulla.
 
@@ -167,7 +165,7 @@ Jos määrität muutosprosessin rajoittavammaksi, aloita muutos valitsemalla tar
 
 Jos määrität joustavan muutosprosessin, sinun ei tarvitse valita **Luo** ennen jo lähetetyn tarjouspyyntötapauksen kenttien muokkaamista. Muutoshuomautus on kuitenkin lisättävä tarjouspyyntöön manuaalisesti ja tapaus on lähetettävä uudelleen. Huomaa, että tätä menettelyä voi käyttää vain, jos yhtäkään vastausta (tarjousta) ei ole muokattu. Jos olet kirjannut vastauksen ja sen tila on **Vastaanotettu**, **Lähetä**-painike ei ole käytettävissä. Siinä tapauksessa sinun on valittava ensin **Luo** ja sitten **Viimeistele** samoin kuin rajoittavassa prosessissa. Vastaus palautetaan sitten vastaamaan tarjouspyyntötapauksen muutoksia.
 
-Jos toimittajat kirjaavat tarjoukset toimittajayhteistyöliittymässä, sinun on ilmoitettava tarjouspyyntötapauksen muutokset käyttämällä muutosprosessia. Tämä prosessi auttaa estämään tilanteen, jossa toimittajat tekevät tarjouksen vanhentuneesta tarjouspyynnöstä, kun heidän tarjouksensa on kesken. Lisätietoja siitä toimittajayhteistyöstä on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Jos toimittajat kirjaavat tarjoukset toimittajayhteistyöliittymässä, sinun on ilmoitettava tarjouspyyntötapauksen muutokset käyttämällä muutosprosessia. Tämä prosessi auttaa estämään tilanteen, jossa toimittajat tekevät tarjouksen vanhentuneesta tarjouspyynnöstä, kun heidän tarjouksensa on kesken. Lisätietoja siitä toimittajayhteistyöstä on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Jos haluat kutsua tarjouksia muilta toimittajilta eikä tarjouspyyntötapaukseen ole tehty muutoksia, voit käyttää **Lähetä**-painiketta. Lisäämäsi toimittajat näkyvät **Lähetä**-sivulla, ja he vastaanottavat sähköpostikutsun.
 
@@ -246,3 +244,6 @@ Seuraavassa esimerkissä on sellaisen tarjouspyyntötapauksen ylin ja alin tila,
 | Hyväksy yksi tarjouksista. (tai vähintään yksi rivi) |                          Vastaanotettu                           |                           Hyv.                           |                    Vastaanotettu                    |                    Hyv.                     |                   Vastaanotettu                   |                   Hyv.                    |
 |           Hylkää kaikki muut tarjoukset.           |                          Hylätty                           |                           Hyv.                           |                    Hylätty                    |                    Hyv.                     |                   Hylätty                   |                   Hyväksytty                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

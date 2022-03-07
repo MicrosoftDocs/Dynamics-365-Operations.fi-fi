@@ -2,27 +2,24 @@
 title: Ylätunnistemoduuli
 description: Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4412106"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712787"
 ---
 # <a name="header-module"></a>Ylätunnistemoduuli
 
@@ -30,15 +27,13 @@ ms.locfileid: "4412106"
 
 Tässä ohjeaiheessa käsitellään ylätunnistemoduuleja ja sivun ylätunnisteiden luontia Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskuvaus
-
 Dynamics 365 Commercen sivun otsikko on määritetty sivun osaksi, joka sisältää otsikon, kampanjabannerin ja evästeiden hyväksyntämoduulit. 
 
 Ylätunnistemoduuli sisältää sivuston logon, linkit siirtymishierarkiaan, linkit muille sivuston sivuille, ostoskorim kuvakkeen moduulin, toivelistasymbolin, kirjautumisvaihtoehdot ja hakupalkin. Ylätunnistemoduuli optimoidaan automaattisesti sitä laitetta varten, jolla sivustoa tarkastellaan (eli pöytätietokonetta tai mobiililaitetta varten). Esimerkiksi mobiililaitteessa siirtymispalkki tiivistetään **Valikko**-painikkeeksi (jossa on useita *viivoja*).
 
 Seuraavassa kuvassa on esimerkki otsikkomoduulista kotisivulla.
 
-![Esimerkki otsikkomoduulista](./media/ecommerce-header.png)
+![Esimerkki otsikkomoduulista.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Ylätunnistemoduulin ominaisuudet
 
@@ -63,9 +58,16 @@ Seuraavia moduuleja voi käyttää ylätunnistemoduulissa:
 - **Myymälän valitsin** – Myymälän valitsinmoduuli voidaan sisällyttää otsikon myymälän valitsinpaikkaan. Sen avulla käyttäjät voivat selata ja etsiä lähellä olevia myymälöitä. Käyttäjät voivat määrittää myös ensisijaisen myymälän. Kyseinen myymälä näytetään sitten otsikossa. Jos myymälän valitsinmoduuli sisältyy otsikkomoduuliin, sen **Tila**-ominaisuudeksi on määritettävä **Etsi myymälät**. Lisätietoja on kohdassa [Myymälän valitsinmoduuli](store-selector.md).
 
 > [!NOTE]
-> - Otsikkomoduulien kortin kuvakemoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.11.
-> - Otsikkomoduulien toimipaikan valitsinmoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.14.
-> - Otsikkomoduulien myymälän valitsinmoduulin tuki on saatavana Dynamics 365 Commercen versiossa 10.0.15.
+> - Ostoskorikuvakemoduulin käyttämistä otsikkomoduuleissa tuetaan Dynamics 365 Commerce -version 10.0.11 julkaisusta eteenpäin.
+> - Sivuston valitsinmoduulin käyttämistä otsikkomoduuleissa tuetaan Dynamics 365 Commerce -version 10.0.14 julkaisusta eteenpäin.
+> - Myymälän valitsinmoduulin käyttämistä otsikkomoduuleissa tuetaan Dynamics 365 Commerce -version 10.0.15 julkaisusta eteenpäin.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Otsikkomoduuli Adventure Works -teemassa
+
+Otsikkomoduuli tukee **Mobiililogo**-ominaisuutta Adventure Works -teemassa. Tämä ominaisuus sallii logon määrittämisen mobiililaitteiden näyttöjä varten. **Mobiililogo**-ominaisuus on käytettävissä moduulimääritelmän laajennuksena.
+
+> [!IMPORTANT]
+> Adventure Works -teema on käytettävissä Dynamics 365 Commerce -versiosta 10.0.20 eteenpäin.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Sivun otsikko-osan luominen
 
@@ -119,3 +121,6 @@ Voit varmistaa, että ylätunniste näkyy jokaisella sivulla, noudattamalla näi
 [Toimipaikan valitsinmoduuli](site-selector.md)
 
 [Myymälän valitsinmoduuli](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

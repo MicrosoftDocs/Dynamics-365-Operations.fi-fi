@@ -2,28 +2,25 @@
 title: SEPA-suoraveloitusyhteenveto
 description: Yhtenäinen euromaksualue (SEPA) on Euroopan komission määrittämä, ja se määrää, että kaikki sähköiset maksut ovat kotimaisia, riippumatta henkilön, yrityksen tai organisaation ja pankin maasta tai alueesta. Kansallisten ja kansainvälisten maksujen välillä ei ole eroja. SEPA koostuu 28 Euroopan unionin (EU) jäsenvaltiosta sekä Islannista, Liechtensteinista, Norjasta, Sveitsistä, Monacosta ja San Marinosta. SEPA auttaa muodostamaan yksittäisen markkinan maksutapahtumille Euroopan talousalueella (ETA). SEPA:n odotetaan lopulta vähentävän sitä maksumuotojen määrää, joiden kanssa pankkien, liikeyritysten ja yksityishenkilöiden on toimittava.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 11144
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcb7585d344988e00093231f785c1a746226e4e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b1ec24c84d2b1a3dc88bf96ae6f52441b58a694
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442670"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188683"
 ---
 # <a name="sepa-direct-debit-overview"></a>SEPA-suoraveloitusyhteenveto
 
@@ -31,8 +28,7 @@ ms.locfileid: "4442670"
 
 Yhtenäinen euromaksualue (SEPA) on Euroopan komission määrittämä, ja se määrää, että kaikki sähköiset maksut ovat kotimaisia, riippumatta henkilön, yrityksen tai organisaation ja pankin maasta tai alueesta. Kansallisten ja kansainvälisten maksujen välillä ei ole eroja. SEPA koostuu 28 Euroopan unionin (EU) jäsenvaltiosta sekä Islannista, Liechtensteinista, Norjasta, Sveitsistä, Monacosta ja San Marinosta. SEPA auttaa muodostamaan yksittäisen markkinan maksutapahtumille Euroopan talousalueella (ETA). SEPA:n odotetaan lopulta vähentävän sitä maksumuotojen määrää, joiden kanssa pankkien, liikeyritysten ja yksityishenkilöiden on toimittava.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Mikä on SEPA-suoraveloitusten tavoite?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Mikä on SEPA-suoraveloitusten tavoite?
 
 SEPA-suoraveloituksen avulla velkoja voi kerätä varansa asiakkaan pankkitililtä, edellyttäen, että asiakas on antanut velkojalle siihen kirjallisen toimivallan. Asiakas allekirjoittaa valtakirjan, joka antaa luotonantajalle valtuuden kerätä maksun ja neuvoo asiakkaan pankkia maksamaan maksukehotuksen. 
 
@@ -84,3 +80,6 @@ Asiakkailla on tiettyjä oikeuksia palautuksiin molemmissa SEPA-suoraveloitusmal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

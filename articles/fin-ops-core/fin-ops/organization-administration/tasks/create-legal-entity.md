@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 981f73752a39c765a4e872164a8d6ee19f2941fc
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796751"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560624"
 ---
 # <a name="create-a-legal-entity"></a>Luo uusi yritys
 
@@ -45,3 +44,6 @@ Yritys on organisaatio, joka tunnistetaan oikeudellisen vallan rekisteröinnin k
 15. Laajenna **Verorekisteröinti**-osa. Kirjoita **Verorekisteröinti**-osaan rekisterinumerot, joita käytetään raportoitaessa veroviranomaisille.
 16. Laajenna **Vero 1099** -osa. Kirjoita **Vero 1099** -osaan yrityksen 1099-tiedot.  
 17. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

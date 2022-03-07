@@ -1,31 +1,30 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (11. kesäkuuta 2020)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 11. kesäkuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-06-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0720b2024a865fcd42cd80fd905586d626388f8f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7e8f2b158f3d3274fee87f94c69c599380f2e2c06cf0bd2284f963d46d81c02
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774918"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-11-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (11. kesäkuuta 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.3316. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
 
@@ -49,7 +48,7 @@ Tietokantakirjaustoiminnon avulla voit määrittää, mitä taulukoita ja kentti
 
 ## <a name="human-resources-application-in-teams"></a>Teamsin Human Resources -sovellus
 
-Työntekijät voivat tarkastella ja pyytää lomaa työstä Microsoft Teamsissä. Ne voivat olla vuorovaikutuksessa botin kanssa luodakseen lomapyyntöjä. Lisätietoja on kohdassa [Human Resources -sovellus Teamsissa](https://go.microsoft.com/fwlink/?linkid=2127841). 
+Työntekijät voivat tarkastella ja pyytää lomaa työstä Microsoft Teamsissä. Ne voivat olla vuorovaikutuksessa botin kanssa luodakseen lomapyyntöjä. Lisätietoja on kohdassa [Human Resources -sovellus Teamsissa](./hr-admin-teams-leave-app.md). 
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Tietojen hallintakehys (DMF) -yksiköt etuuksien hallintaa varten
  
@@ -99,6 +98,8 @@ Human Resourcesin parametreissa on uusi vaihtoehto, jolla voi päivittää Työn
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

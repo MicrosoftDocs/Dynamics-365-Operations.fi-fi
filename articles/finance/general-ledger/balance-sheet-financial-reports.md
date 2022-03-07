@@ -2,28 +2,25 @@
 title: Taseen talousraportit
 description: Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin.
 author: jcart1106
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96552447182f3692a19d4cfd962afbcb28e5508
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d916b6593b641ec1c8365475103b1520e07e3768
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442838"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821934"
 ---
 # <a name="balance-sheet-financial-reports"></a>Taseen talousraportit
 
@@ -82,3 +79,6 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

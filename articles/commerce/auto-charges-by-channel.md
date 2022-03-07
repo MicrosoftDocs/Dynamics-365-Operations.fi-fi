@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d37b2b785dd29850dcd02d0905e5872445384990
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411949"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993725"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan
 
@@ -77,7 +76,7 @@ Kun olet ottanut käyttöön **Suodata automaattiset kulut kanavan mukaan** -omi
 
 Jos haluat määritellä automaattiset veloitukset kanavassa, noudata seuraavia vaiheita.
 
-1. Valitse  **Myyntireskontra \> Kulujen määritys \> Automaattiset kulut**.
+1. Valitse **Myyntireskontra \> Kulujen määritys \> Automaattiset kulut**.
 1. Valitse vasemman ruudun **Taso**-kentästä liiketoiminnan tarpeista riippuen joko **Otsikko** tai **Rivi**.
 1. Valitse kanavan koodi **Vähittäismyyntikanavan koodi** -kentässä (esimerkiksi **Taulu** tai **Ryhmä**). Jos oletusasetus on **Kaikki**, veloitussääntöjä käytetään kaikissa kanavissa.
 

@@ -2,27 +2,24 @@
 title: Puhelinkeskuskanavan määrittäminen
 description: Tässä ohjeaiheessa käsitellään uuden puhelinkeskuskanavan luontia Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4412123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744531"
 ---
 # <a name="set-up-a-call-center-channel"></a>Puhelinkeskuskanavan määrittäminen
 
@@ -34,7 +31,7 @@ Tässä ohjeaiheessa käsitellään uuden puhelinkeskuskanavan luontia Microsoft
 ## <a name="overview"></a>Yleiskuvaus
 
 
-Dynamics 365 Commerceissa puhelinpalvelukeskus on Commerce-tyyppinen kanava, joka voidaan määrittää sovelluksessa. Kun puhelinkeskusentiteeteille määritetään kanava, järjestelmä voi sitoa tietyt tiedot ja tilausten käsittelyn oletukset myyntitilauksiin. Yritys voi määrittää useita puhelinkeskuskanavia Commercessa. On kuitenkin tärkeää huomata, että yksittäinen käyttäjä voidaan linkittää vain yhteen puhelinkeskuskanavaan. 
+Dynamics 365 Commercessa puhelinpalvelukeskus on Commerce-tyyppinen kanava, joka voidaan määrittää sovelluksessa. Kun puhelinkeskusentiteeteille määritetään kanava, järjestelmä voi sitoa tietyt tiedot ja tilausten käsittelyn oletukset myyntitilauksiin. Yritys voi määrittää useita puhelinkeskuskanavia Commercessa. On kuitenkin tärkeää huomata, että yksittäinen käyttäjä voidaan linkittää vain yhteen puhelinkeskuskanavaan. 
 
 Varmista ennen uuden puhelinkeskuskanavan luomista, että olet tehnyt valmiiksi [kanavan määrityksen edellytykset](channels-prerequisites.md).
 
@@ -57,11 +54,11 @@ Voit luoda ja määrittää uuden puhelinkeskuskanavan seuraavasti.
 
 Seuraavassa kuvassa näytetään, miten uusi puhelinkeskuskanava luodaan.
 
-![Uusi puhelinkeskuskanava](media/channel-setup-callcenter-1.png)
+![Uusi puhelinkeskuskanava.](media/channel-setup-callcenter-1.png)
 
 Seuraavassa kuvassa on esimerkki puhelinkeskuskanavasta.
 
-![Esimerkki puhelinkeskuskanavasta](media/channel-setup-callcenter-2.png)
+![Esimerkki puhelinkeskuskanavasta.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Lisäkanavan määrittäminen
 
@@ -69,7 +66,7 @@ Puhelinkeskuskanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen
 
 Seuraavassa kuvassa on **Asetukset**-välilehden **Toimitustavat**- ja **Maksutavat**-asetusvaihtoehdot.
 
-![Puhelinkeskuskanavan lisämääritykset](media/channel-setup-callcenter-3.png)
+![Puhelinkeskuskanavan lisämääritykset.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Maksutapojen määrittäminen
 
@@ -84,7 +81,7 @@ Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille 
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
-![Esimerkki maksutavasta](media/channel-setup-callcenter-payments.png)
+![Esimerkki maksutavoista.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
@@ -100,7 +97,7 @@ Voit muuttaa toimitustapaa tai lisätä sen ja liittää puhelinkeskuskanavaan s
 
 Seuraavassa kuvassa on esimerkki toimitustavasta.
 
-![Määritä toimitustavat](media/channel-setup-retail-7.png)
+![Määritä toimitustavat.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Kanavan käyttäjien määrittäminen
 
@@ -136,3 +133,6 @@ Voit määrittää hintaryhmän seuraavasti.
 [Petoshälytysten määrittäminen ja käyttäminen](set-up-fraud-alerts.md)
 
 [Jatkuvuusohjelmien määrittäminen puhelinkeskuksille](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

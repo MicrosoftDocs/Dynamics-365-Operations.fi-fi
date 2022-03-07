@@ -1,30 +1,32 @@
 ---
 title: Asiakasohjelma katkaisee yhteyden
-description: Tässä artikkelissa kerrotaan, miten toimitaan, jos asiakkaan yhteys ympäristöön katkeaa tuntemattomasta syystä.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Tässä aiheessa käsitellään toimintaa, jos asiakkaan yhteys ympäristöön katkeaa.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: b15c5db19f1b07e3d469986ac700138ecb1d1525
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4418413"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071132"
 ---
 # <a name="client-disconnects"></a>Asiakasohjelma katkaisee yhteyden
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Ympäristön tiedot** 
 
@@ -52,3 +54,6 @@ Microsoft Dynamics 365 Human Resources katkaisee käyttäjien yhteyden, kun sama
 Varmista, että kussakin selaintyypissä on aina avoinna vain yksi ympäristö. Käyttäjät voivat avata useita saman ympäristön istuntoja (eli useita välilehtiä samassa selaimessa).
 
 Jos käyttäjät haluavat siirtyä kahden ympäristön välillä samanaikaisesti, heidän on avattavat ympäristöt eri selaintyypissä. (Esimerkki: käyttäjä A voi tarkastella ympäristöä 1 Chromessa ja ympäristöä 2 Microsoft Edgessä.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

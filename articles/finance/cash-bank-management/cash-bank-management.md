@@ -2,28 +2,25 @@
 title: Maksuliikenteen kotisivu
 description: Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja kyseisiin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon.
 author: panolte
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 237a2a594abba7d74e7c1aba33a6f4e72b1e2e69
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458950"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830517"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Maksuliikenteen kotisivu
 
@@ -100,3 +97,6 @@ Finance-tehtäväoppaat sisältävät lisäohjeita. Voit avata tehtäväoppaan n
 #### <a name="videos"></a>Videot
 
 Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1c17a00a9c62627e37533b43c38d94d57b00d1eb6c6b55de197dcd6d00d02db6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712192"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023223"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Määritä TDS-viranomaisen maksujen toimitusmaksut
 
@@ -31,7 +31,7 @@ Tässä ohjeaiheessa on tietoja siitä, miten määritetään Vero vähennettyn�
 
 1. Siirry kohtaan **Ostoreskontra \> Maksun asetukset \> Toimitusmaksu**.
 
-    [![Toimitusmaksu-sivu.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Toimitusmaksu-sivu](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Luo toimitusmaksu valitsemalla **Uusi** ja kirjoita tarvittavat tiedot.
 3. Valitse toimitusmaksun tyyppi **Maksun tyyppi** -kentästä:
@@ -46,7 +46,7 @@ Tässä ohjeaiheessa on tietoja siitä, miten määritetään Vero vähennettyn�
 5. Lisää muut pakolliset tiedot.
 6. Avaa **Toimitusmaksujen asetukset** -sivu valitsemalla **Toimitusmaksujen asetukset** toimintoruudussa. Sivulla voit määrittää toimitusmaksut erilaisille pankkien, maksutapojen, maksuerittelyjen, valuuttojen ja päivämäärävälien yhdistelmille.
 
-    [![Toimitusmaksujen asetukset -sivu.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Toimitusmaksujen asetukset -sivu](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. Määritä **Yhteenveto**-välilehden **Ryhmittelyt**-kentässä pankit, joille olet määrittänyt toimitusmaksun:
 
@@ -64,7 +64,7 @@ Tässä ohjeaiheessa on tietoja siitä, miten määritetään Vero vähennettyn�
 15. Valitse **Maksun valuutta** -kentässä maksun valuuttakoodi.
 16. Valitse **Yleinen**-välilehti, jos haluat tarkastella tai muokata valitun pankkitilin tietoja.
 
-    [![Yleinen-välilehti.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Yleinen-välilehti](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. Kirjoita **Vähintään**-kenttään tapahtuman vähimmäissumma, joka aktivoi maksun.
 17. Kirjoita **Enintään**-kenttään tapahtuman enimmäissumma, joka aktivoi maksun.
@@ -74,7 +74,7 @@ Tässä ohjeaiheessa on tietoja siitä, miten määritetään Vero vähennettyn�
 21. Valitse **Nimikkeen arvonlisäveroryhmä**-kentässä nimikkeen arvonlisäveroryhmä, jonka avulla maksun summan nimikkeen arvonlisävero lasketaan.
 22. Valitse **Väli**-välilehti. 
 
-    [![Väli-välilehti.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Väli-välilehti](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. Kirjoita maksun kirjauspäivämäärän (alennuksen päivämäärän) ja velkakirjan eräpäivän välinen aika päivinä **Päivää**-kenttään.
 24. Valitse **Prosentti/summa**-kentässä, onko määritys prosentti vai määritetty summa.

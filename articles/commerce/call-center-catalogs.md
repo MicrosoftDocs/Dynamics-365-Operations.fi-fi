@@ -1,17 +1,14 @@
 ---
 title: Puhelinkeskuksen luettelot
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercein luetteloiden puhelinkeskusta koskevia toimintoja.
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercen luetteloiden puhelinkeskusta koskevia toimintoja.
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -19,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4412118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742509"
 ---
 # <a name="call-center-catalogs"></a>Puhelinpalvelukeskuksen luettelot
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa käsitellään Dynamics 365 Commercein puhelinkeskusta koskevat, luettelotoimintoihin linkittyvät toiminnot.
+Tässä artikkelissa käsitellään Dynamics 365 Commercen puhelinkeskusta koskevat, luettelotoimintoihn linkittyvät toiminnot.
 
 Commercen luettelo-ominaisuuksia voidaan käyttää useita tarkoituksia varten. Alunperin luettelo-ominaisuudet luotiin tukemaan sähköisen kaupankäynnin kolmannen osapuolen integrointeja. Luettelon asetukset sallivat yritysten luoda tuotteiden ja määritteiden ryhmittelyjä, jotka voitiin julkaista ulkoisesti sähköisen kaupankäynnin kolmannen osapuolen ratkaisun käyttöön.
 
@@ -42,7 +39,7 @@ Suoraan asiakkaille -markkinointiyritykset ovat hyvin keskittyneitä seuraamaan 
 
 Määritä luettelo valitsemalla **Retail ja Commerce** \> **Luettelot ja valikoimat** \> **Kaikki luettelot**.
 
-Kun uusi luettelo luodaan, luettelo on linkitettävä vähintään yhteen kanavaan. Tämä tehdään **Commerce-kanavat**-pikavälilehdessä **Luettelon asetukset** -lomakkeessa. Valitse **Lisää** ja valitse vähintään yksi kanava. Vain sellaisia nimikkeitä voi käyttää luetteloa luodessa, jotka on linkitetty valitun kanavan [valikoimiin](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments).
+Kun uusi luettelo luodaan, luettelo on linkitettävä vähintään yhteen kanavaan. Tämä tehdään **Commerce-kanavat**-pikavälilehdessä **Luettelon asetukset** -lomakkeessa. Valitse **Lisää** ja valitse vähintään yksi kanava. Vain sellaisia nimikkeitä voi käyttää luetteloa luodessa, jotka on linkitetty valitun kanavan [valikoimiin](/dynamics365/unified-operations/retail/assortments).
 
 Lisää luetteloon tuotteita. Ensin on valittava siirtymishierarkia. Siirtymishierarkia tukee luettelon luokitusrakennetta. Valitse yksi kanaviin linkitetty siirtymishierarkia, joka on valittu **Commerce-kanavat**-pikavälilehdessä **Luettelo**-sivulla. Jos siirtymiskanavaa ei ole linkitetty kanavaan aiemmin, valitse **Retail ja Commerce** \> **Kanavan asetukset** \> **Kanavaluokat ja tuotemääritteet** ja linkitä oletussiirtymishierarkia kuhunkin kanavaan.
 
@@ -101,3 +98,6 @@ Kun luettelot määritetään ja julkaistaan Commercessa, **Lähetä luettelo** 
 ## <a name="additional-notes"></a>Lisähuomautukset
 
 Tällä hetkellä, kun lähdekoodin tunnusta käytetään puhelinkeskuksen myyntitilaukseen, sitä käytetään luettelokohtaisten hintojen, alennusten, komentosarjojen ja ylös- ja ristiinmyynnin edistämiseen. Järjestelmä ei kiellä tai estä tilaamasta myyntitilauksella tuotetta, joka ei ole luettelossa. Jos on tilattu luetteloon kuulumaton nimike, järjestelmä käyttää ensin **Hintaryhmä**-määritystä, joka määritetään puhelinkeskuksen kanavassa (**Retail ja Commerce** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelinkeskukset**) nimikkeen hinnalle tai tarjouksille. Jos tiettyä kanavan hintaa ei löydy, käytetään nimikkeen perusmyyntihintaa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustBillOfExchangeJour
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 269964
 ms.assetid: f2077165-da90-4359-ab12-e05717728dc7
 ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f5f62d33f6ffedb3fcefcdd9a83b922c1588df0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6910a019a2314655c60a0bfdaad7d4df384225b4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442671"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228146"
 ---
 # <a name="set-up-bills-of-exchange"></a>Tuoterakenteen määrittäminen
 
@@ -86,3 +85,6 @@ Voit määrittää **Asiakkaat**-sivun **Oletusmaksut**-välilehdessä vekselien
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

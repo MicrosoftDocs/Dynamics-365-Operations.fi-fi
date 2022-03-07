@@ -1,33 +1,30 @@
 ---
 title: Määritä taloushallinnon dimensiot
-description: Tässä tehtäväopastuksessa selvitetään yksikön tukeman taloushallinnon dimension ja mukautetun taloushallinnon dimension lisääminen.
+description: Tämä menettely osoittaa, miten yksikön tukema taloushallinnon dimensio ja mukautettu taloushallinnon dimensio lisätään.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionDetails,  DimensionAttributeTableExtensionActivate, DimensionValueDetails
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6fbe739eec0cfa1e7b0276872640bd4f82be3ef7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed6dad64032c03e638c2090471af825dd18560a1
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442599"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394459"
 ---
 # <a name="define-financial-dimensions"></a>Määritä taloushallinnon dimensiot
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä tehtäväopastuksessa selvitetään yksikön tukeman taloushallinnon dimension ja mukautetun taloushallinnon dimension lisääminen.  Opastuksessa käytetään USMF-demoyritystä.
+Tämä menettely osoittaa, miten yksikön tukema taloushallinnon dimensio ja mukautettu taloushallinnon dimensio lisätään.  Opastuksessa käytetään USMF-demoyritystä.
 
 
 ## <a name="create-an-entity-backed-financial-dimension"></a>Luo yksikön tukema taloushallinnon dimensio
@@ -55,3 +52,6 @@ Tässä tehtäväopastuksessa selvitetään yksikön tukeman taloushallinnon dim
 9. Kirjoita **Dimensioarvo**-kenttään taloushallinnon dimension arvoa kuvaava nimi.
 10. Kirjoita **Kuvaus**-kenttään taloushallinnon dimension arvon kuvaus.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

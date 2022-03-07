@@ -1,12 +1,10 @@
 ---
 title: Suodatuksen ja kyselysyntaksin lisäasetukset
-description: Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan vastaavuusoperaattoria Suodatinruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
+description: Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot Lisäsuodatus/-lajittelu-valintaikkunalle vastaavuusoperaattorille Suodatin-ruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysQueryForm
 audience: Application User
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 650f1c209b1797973634c788645a4659bff28f13
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798667"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070006"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Suodatuksen ja kyselysyntaksin lisäasetukset
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan **vastaavuusoperaattoria** Suodatinruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
 
@@ -121,7 +122,7 @@ Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot, jotka ovat käytet
 <td>Kaksi peräkkäistä lainausmerkkiä<strong>("</strong>") etsii rivejä, joilla ei ole arvoa nykyiselle sarakkeelle.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations -kysely</span>) (Finance and Operations -kysely sulkeissa)</td>
+<td>(<span class="code">Finance and Operations -kysely</span>) (Finance and Operations -kysely sulkeiden sisällä)</td>
 <td>Vastaa määritettyä kyselyä.</td>
 <td>Kirjoita kysely SQL-lausekkeena sulkuihin käyttämällä Finance and Operations -kyselykieltä.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
@@ -242,3 +243,6 @@ Lisätietoja <strong>SysQueryRangeUtil</strong>-päivämäärämetodeista ja use
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,18 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7312ab2491814e7cd266e39820f0e87e79dd84e4
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 954a3bcdf6ad163afd2596227ce2c8548fe37027
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103560"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678492"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Yleisen varastokirjanpidon aloitussivu
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Viranomaiset painostavat kansainvälisiä organisaatioita yhä enemmän noudattamaan paikallisia ja maailmanlaajuisia kirjanpitostandardeja. Varaston uudelleenarvostus on tärkeä rooli yhteensopivuuden varmistamisessa. Microsoft Dynamics 365 Supply Chain Managementin yleinen varastokirjanpitolisäosa tarjoaa kattavan ratkaisun, jonka avulla organisaatiot (erityisesti kansainväliset organisaatiot) voivat käyttää useita kustannuslaskennan kirjanpitoja varastokirjanpitoon. Siksi organisaatiot voivat noudattaa useita kirjanpidon standardeja ja sisäisen hallinnan kirjanpitoa samanaikaisesti.
 
@@ -47,6 +46,7 @@ Yleinen varastokirjanpito on tällä hetkellä saatavilla seuraavilla Azuren maa
 - Iso-Britannia
 - Australia
 - Kanada
+- Etelä-Amerikka
 
 Jos yrität asentaa apuohjelman toiselta maantieteelliseltä alueelta, Microsoft Dynamics Lifecycle Services (LCS) näyttää sanoman, jonka mukaan maantieteellistä aluettasi ei tueta. Yleinen varastokirjanpito ei tue Supply Chain Managementin paikallista käyttöä.
 

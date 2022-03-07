@@ -2,26 +2,23 @@
 title: Tilikauden sulkeminen
 description: Tässä toimintaohjeessa selvitetään tilinkauden lopetusprosessi, joka siirtää saldot uuteen tilikauteen.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 593ab5b45cc0c2e1a8b876aa89de014fd9df1a13
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e1ade9af06848b125fb6253ea1182f6098588150
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442848"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902504"
 ---
 # <a name="close-the-fiscal-year"></a>Tilikauden sulkeminen
 
@@ -39,7 +36,7 @@ Tässä toimintaohjeessa selvitetään tilinkauden lopetusprosessi, joka siirtä
 
 4. Valitse Kyllä- tai Ei-arvo asetukselle **Luo päätöstapahtumat siirron yhteydessä**.
 
-    Jos arvoksi asetetaan Kyllä, luodaan kaksi tapahtumaa. Yksi tosite luodaan lopetettavaan tilivuoteen, jotta tuloskirjanpitotilit ovat tasassa, ja toinen tosite luodaan seuraavaan tilivuoteen alkusaldoille. Jos arvo on Ei, yksi tosite luodaan uuden tilikauden alkusaldoille.  
+    Jos arvoksi asetetaan Kyllä, luodaan kaksi tapahtumaa. Yksi tosite luodaan lopetettavaan tilivuoteen, jotta kaikki kirjanpitotilit ovat tasassa, ja toinen tosite luodaan seuraavaan tilivuoteen alkusaldoille. Jos arvo on Ei, yksi tosite luodaan uuden tilikauden alkusaldoille.  
 
 5. Valitse Kyllä- tai Ei-arvo asetukselle **Muuta tilivuoden tilaksi pysyvästi suljettu**.
 
@@ -83,3 +80,6 @@ Tässä toimintaohjeessa selvitetään tilinkauden lopetusprosessi, joka siirtä
 23. Tilikauden lopetus ajetaan oletusarvoisesti eräajona. On suositeltavinta ajaa pitkään kestävät prosessit eräajona. Tämä on yleensä pitkäkestoinen prosessi, minkä vuoksi oletusasetus on eräajon käyttäminen.  
 24. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Kanavan lisääminen organisaatiohierarkiaan
 description: Tässä ohjeaiheessa käsitellään kanavan lisäämistä organisaatiohierarkiaan Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 701c90e8e28b4419422cddde698e9c9862a588a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64d9c649212eca4dc703e5b80fdf2c3c6a57a61745fc440b0650d7796a4d06e3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411934"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720980"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Kanavan lisääminen organisaatiohierarkiaan
 
@@ -31,7 +28,7 @@ ms.locfileid: "4411934"
 
 Tässä ohjeaiheessa käsitellään kanavan lisäämistä organisaatiohierarkiaan Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Kanavat on liitettävä vähintään yhteen organisaatiohierarkiaan. Ennen kanavien luontia on varmistettava, että organisaatiohierarkiat on määritetty.  
 
@@ -47,7 +44,7 @@ Valitse hierarkia seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa on valitun hierarkian organisaatiohierarkian tiedot.
 
-![Valitun hierarkian organisaatiohierarkian tiedot](media/channel-add-to-org-hierarchy-1.png)
+![Valitun hierarkian organisaatiohierarkian tiedot.](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>Kanavan lisääminen hierarkiasolmuun
 
@@ -61,17 +58,17 @@ Voit lisätä kanavan hierarkiasolmuun seuraavasti.
 
 Seuraava kuva osoittaa, miten hierarkiasolmuun lisättävä kanava valitaan.
 
-![Hierarkiasolmuun lisättävän kanavan valitseminen](media/channel-add-to-org-hierarchy-2.png)
+![Hierarkiasolmuun lisättävän kanavan valitseminen.](media/channel-add-to-org-hierarchy-2.png)
 
 Seuraavassa kuvassa on hierarkia, johon on lisätty useita kanavia.
 
-![Hierarkia, johon on lisätty erilaisia kanavia](media/channel-add-to-org-hierarchy-3.png)
+![Hierarkia, johon on lisätty erilaisia kanavia.](media/channel-add-to-org-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanava-asetusten edellytykset](channels-prerequisites.md)
+[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
 
 [Organisaatiot ja organisaatiohierarkiat – yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
@@ -82,3 +79,6 @@ Seuraavassa kuvassa on hierarkia, johon on lisätty useita kanavia.
 [Vähittäismyyntikanavan määrittäminen](channel-setup-retail.md)
     
 [Verkkokanavan määrittäminen](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

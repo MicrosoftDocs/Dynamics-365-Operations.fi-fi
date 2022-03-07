@@ -1,7 +1,7 @@
 ---
 title: Tilauksen oletusasetukset dimensioille ja tuotevarianteille
 description: Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä.
-author: johanhoffmann
+author: t-benebo
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4e389a6af02b8ee30bc491606f72a2e8e250ef00
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102760"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193303"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimensioiden ja tuotevarianttien oletustilausasetukset
 
@@ -186,9 +186,12 @@ Voit valita, kuinka tiukka järjestelmä on vahvistettaessa tuotteen **Oletustil
 
 Tiukka vahvistus koskee **Vakiotilausmäärä**-arvoja, jotka on määritetty **Ostotilaus**-, **Varasto**- ja **Myyntitilaus**-pikavälilehdissä **Oletustilausasetukset**-sivulla. Jokaisella pikavälilehdellä on oma **Monikerta**-asetus, jota käytetään tarkistettaessa kyseisen pikavälilehden **Vakiotilausmäärä**-arvoa.
 
-### <a name="turn-the-strict-validation-option-on-or-off"></a>Tiukan vahvistusasetuksen käyttöönotto tai käytöstä poisto
+### <a name="enable-the-strict-validation-option"></a>Tiukan vahvistusasetuksen käyttöönotto
 
-Tarkan vahvistuksen käyttöä varten toiminnon *Oletustilausmäärien tarkka vahvistus* on oltava käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, voit ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla [Toimintojen hallinnasta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) toimintoa *Oletustilausmäärien tarkka vahvistus*.
+Ennen kuin käytät tiukkaa vahvistusasetusta, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) sivua ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön tarvittaessa. Toiminto näkyy seuraavasti:
+
+- **Moduuli** - *Tuotetietojen hallinta*
+- **Ominaisuuden nimi** - *Oletustilausmäärien tiukka vahvistus*
 
 ### <a name="set-the-validation-option"></a>Vahvistusasetuksen määrittäminen
 

@@ -1,12 +1,10 @@
 ---
 title: Viivakoodin muotojen määrittäminen
 description: Tässä aiheessa kuvataan, miten määrität viivakoodin muodon merkit, viivakoodin muodot, ja miten viivakoodin muodot liitetään viivakoodeihin.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
@@ -15,15 +13,15 @@ ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5432741e7cdc21054d02bd24591deb307d096229
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ddba3ef6c6a1fb1f71198291d5eccd44be737336
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969798"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779819"
 ---
 # <a name="set-up-bar-code-masks"></a>Viivakoodin muotojen määrittäminen
 
@@ -82,3 +80,6 @@ Viivakoodien muodot on määritettävä viivakoodeille ennen, kuin niitä voi k�
 5. Valitse **Tallenna**.
 
 Viivakoodin muotoa voi nyt käyttää viivakoodien luomiseen tuotteille. Yllä olevat vaiheet ovat esimerkkejä siitä, kuinka tuotteille voi luoda viivakoodin muotoja, mutta ne kuvaavat myös, viivakoodin muotoja voi luoda mille tahansa muulle viivakoodin tyypille, joka on tuettu. Viivakoodin muodot, tyypit ja pituudet tulisi mukauttaa omaa käyttötarkoitusta ja -ympäristöäsi varten.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

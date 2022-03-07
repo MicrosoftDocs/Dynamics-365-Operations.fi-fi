@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 25c80ce27498131c6eb92174ab14a592bfa9915a
-ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
+ms.openlocfilehash: dd498489e18eaba81720757faa14c0bf7b7d67f1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672182"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263395"
 ---
 # <a name="intercompany-planning"></a>Konsernin sisäinen suunnittelu
 
@@ -88,3 +87,6 @@ Tässä esimerkissä suunniteltu ostotilaus luodaan USMF-yrityksessä kattamaan 
 Seuraavassa kuvassa näkyy, miltä tämä esimerkki näyttäisi suunnittelun tuotantotilauksen **Monitasoinen tarvekohdistus** -sivulla.
 
 ![Kolme konsernin sisäistä yritystä sisältävä esimerkki](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

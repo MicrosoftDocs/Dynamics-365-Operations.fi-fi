@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Managementin version 10.0.13 uudet tai muuttuneet ominaisuudet (lokakuu 2020)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.13 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 9c5358cbc13c10983cfcbdde95fd573f652cc683
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 238dc7191b5d6cb044b2825e511bdc869d82ca20c03cfbc6129c22a010da3496
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766119"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Dynamics 365 Supply Chain Managementin version 10.0.13 uudet tai muuttuneet ominaisuudet (lokakuu 2020)
 
@@ -35,23 +33,23 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin 
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
-- [Sanaston muuttaminen termistä "varaston sulkemisen peruuttaminen" termiin "varaston sulkemisen palauttaminen"](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - Lisätietoja on kohdassa [Varaston sulkeminen](../cost-management/inventory-close.md).
+- [Sanaston muuttaminen termistä "varaston sulkemisen peruuttaminen" termiin "varaston sulkemisen palauttaminen"](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - Lisätietoja on kohdassa [Varaston sulkeminen](../cost-management/inventory-close.md).
 
-- [Vahvista lähtevät lähetykset erätöistä](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Lisätietoja on kohdassa [Lähtevien lähetysten vahvistaminen erätöistä](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
+- [Vahvista lähtevät lähetykset erätöistä](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Lisätietoja on kohdassa [Lähtevien lähetysten vahvistaminen erätöistä](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Useiden ostotyönimikkeiden delegoiminen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Lisätietoja on kohdassa [Työnkulun työnimikkeiden delegoiminen](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
+- [Useiden ostotyönimikkeiden delegoiminen](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Lisätietoja on kohdassa [Työnkulun työnimikkeiden delegoiminen](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Erä- ja sarjanumeroiden antaminen, kun valmistuminen ilmoitetaan työkorttilaitteesta](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Lisätietoja on kohdassa [Ilmoita valmiiksi työkorttilaitteesta](../production-control/report-finished-job-device.md).
+- [Erä- ja sarjanumeroiden antaminen, kun valmistuminen ilmoitetaan työkorttilaitteesta](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Lisätietoja on kohdassa [Ilmoita valmiiksi työkorttilaitteesta](../production-control/report-finished-job-device.md).
 
-- [Tuoteversion seurannan ja parannetun laajennettavuuden uudet varastodimensiot](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Lisätietoja on kohdassa [Tuotedimensiot](../pim/product-dimensions.md).
+- [Tuoteversion seurannan ja parannetun laajennettavuuden uudet varastodimensiot](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Lisätietoja on kohdassa [Tuotedimensiot](../pim/product-dimensions.md).
 
-- [Rekisterikilpiin perustuva tilaussidonnainen varaus](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Lisätietoja on kohdassa [Joustavan rekisterikilven varaus](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+- [Rekisterikilpiin perustuva tilaussidonnainen varaus](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Lisätietoja on kohdassa [Joustavan rekisterikilven varaus](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
-- [Työn keräilyrivin yhteenveto](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+- [Työn keräilyrivin yhteenveto](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [Saapuvan työn työkäytäntöjen parannukset](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Lisätietoja on kohdassa [Varaston käytännöt](../warehousing/warehouse-work-policies.md).
+- [Saapuvan työn työkäytäntöjen parannukset](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Lisätietoja on kohdassa [Varaston käytännöt](../warehousing/warehouse-work-policies.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -67,7 +65,7 @@ Saat lisätietoja version 10.0.13 virheenkorjauksista päivityksissä kirjautuma
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](/dynamics365-release-plan/2020wave2/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
@@ -79,3 +77,6 @@ Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 2 suunnitelma](https:/
 Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

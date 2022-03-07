@@ -1,33 +1,29 @@
 ---
 title: Myymälöiden tilauksen täyttämisen määrittäminen
 description: Tässä aiheessa käsitellään myymälän tilauksen täyttämisen määrittämistä.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965309"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779593"
 ---
-# <a name="set-up-order-fulfillment-for-stores"></a>Myymälöiden tilauksen täyttämisen määrittäminen
+# <a name="set-up-order-fulfillment-for-stores"></a>Tilauksen täyttämisen määrittäminen myymälöille
 
 [!include [banner](includes/banner.md)]
-
-## <a name="overview"></a>Yleiskuvaus
 
 Monet jälleenmyyjät haluaisivat optimoida tilausten täyttämisen antamalla myymälöille mahdolliseen täyttää tilauksia. Tilauksen täyttäminen myymälätasolla voi helpottaa yksittäisten myymälöiden liian suuria varastoja. Se voi olla tarpeellista myös logistiikan vuoksi tilanteissa, joissa myymälässä on ylimääräistä tilaa tai joissa se sijaitsee toimituksen kannalta lähempänä asiakasta. Näitä tarpeita varten myyntipisteissä voi käytätä yhdistettyä tilausten täyttämistoimintoa.
 
@@ -37,9 +33,9 @@ Myyntipisteen tilauksen täyttämistoiminto on yhtenäinen myyntipisteen työalu
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Tilauksen täyttämistoiminnon määrittäminen
 
-Tilauksen täyttämisen, [toimintotunnus 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), avulla voidaan käyttää myymälän tilauksen täyttämisen työaluetta myyntipisteessä.
+Tilauksen täyttämisen, [toimintotunnus 928](pos-operations.md), avulla voidaan käyttää myymälän tilauksen täyttämisen työaluetta myyntipisteessä.
 
-Määritä parametri, jolla tilauksen täyttäminen aktivoidaan myyntipisteessä, kohdan [Toiminnon lisääminen painikeruudukkoon](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) ohjeiden mukaisesti. Kun tilauksen täyttämistoiminnot on määritetty **Kaikki tilaukset** on oletusarvoisesti valittuna. Kun määritys on tehty tällä parametrilla, toiminto lisää luetteloon kaikki valitun myymälän täytettävät tilausrivit. Valittavana on myös **Lähetettävät tilaukset**, joka voidaan määrittää painikkeeseen ja jota käytetään, kun käyttäjä haluaa nähdä vain myymälästä lähetettävät tilaukset. Lisäksi valittavana on **Noudettavat tilaukset**. Kun aktivointi tehdään myyntipisteessä, tässä luettelossa näkyy myymälästä noudettavat tilaukset. Koska eri painikkeille voidaan määrittää eri parametri, käyttäjä voi tarkastella tilauksen täyttämistä eri tavoin.
+Määritä parametri, jolla tilauksen täyttäminen aktivoidaan myyntipisteessä, kohdan [Toiminnon lisääminen painikeruudukkoon](pos-screen-layouts.md) ohjeiden mukaisesti. Kun tilauksen täyttämistoiminnot on määritetty **Kaikki tilaukset** on oletusarvoisesti valittuna. Kun määritys on tehty tällä parametrilla, toiminto lisää luetteloon kaikki valitun myymälän täytettävät tilausrivit. Valittavana on myös **Lähetettävät tilaukset**, joka voidaan määrittää painikkeeseen ja jota käytetään, kun käyttäjä haluaa nähdä vain myymälästä lähetettävät tilaukset. Lisäksi valittavana on **Noudettavat tilaukset**. Kun aktivointi tehdään myyntipisteessä, tässä luettelossa näkyy myymälästä noudettavat tilaukset. Koska eri painikkeille voidaan määrittää eri parametri, käyttäjä voi tarkastella tilauksen täyttämistä eri tavoin.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Tilauksen täyttämisen ottaminen käyttöön myyntipisteessä käyttäjien osalta
 
@@ -53,7 +49,7 @@ Myymälään määritetyt tilausrivit on oletusarvoisesti merkitty **hyväksytyi
 
 Myymälästä noudettavat tilausrivit merkitään **odottaviksi** eikä niitä hyväksytä.
 
-Voit ottaa tilausrivien manuaalisen hyväksymisen käyttöön valitsemalla **Retail ja Commerce** \> **Kanavat** \> **Myymälät** \> **Kaikki myymälät**. Valitse myymälä. Voit tarkastella myymälän tietoja napsauttamalla myymälätunnusta. Valitse **Muokkaa**. Etsi **Yleiset**-pikavälilehdessä **Tilauksen täyttäminen** -alaotsikko ja vaihda **Manuaalinen hyväksyminen** -asetukseksi **Kyllä** **Ei**-vaihtoehdon sijaan.
+Voit ottaa tilausrivien manuaalisen hyväksymisen käyttöön valitsemalla **Vähittäismyynti ja kauppa** \> **Kanavat** \> **Myymälät** \> **Kaikki myymälät**. Valitse myymälä. Voit tarkastella myymälän tietoja napsauttamalla myymälätunnusta. Valitse **Muokkaa**. Etsi **Yleiset**-pikavälilehdessä **Tilauksen täyttäminen** -alaotsikko ja vaihda **Manuaalinen hyväksyminen** -asetukseksi **Kyllä** **Ei**-vaihtoehdon sijaan.
 
 ### <a name="enable-reject-order-line-capability"></a>Tilausrivin hylkäysominaisuuden ottaminen käyttöön
 
@@ -64,7 +60,7 @@ Tilausrivit voidaan myös hylätä myyntipisteestä. Tilausrivi hylkääminen ta
 
 ### <a name="synchronize-changes-to-the-channel-database"></a>Muutosten synkronoiminen kanavatietokantaan
 
-Kun toiminto on määritetty painikeruudukkoon, soveltuvat käyttöoikeudet on myönnetty ja kanava on määritetty, kanava on synkronoitava kanavatietokantaan. Tehdäksesi näin, mene kohtaan **Retail ja Commerce** \> **Retail ja Commerce IT** \> **Jakeluaikataulu**. Synkronoi painikeruudukko muutokset valitsemalla 1090, kassakoneet ja valitse sitten **Suorita nyt**. Synkronoi seuraavaksi käyttöoikeuksien muutokset valitsemalla ensin 1060, henkilökunta ja sitten **Suorita nyt**. Synkronoi sitten kanava muutokset valitsemalla ensin 1070, Kanavan konfigurointi ja sitten **Suorita nyt**. Synkronoi lopuksi juuri luotu hylkäyssyyn tietokoodi valitsemalla 1110, yleinen konfiguraatio ja sitten **Suorita nyt**.
+Kun toiminto on määritetty painikeruudukkoon, soveltuvat käyttöoikeudet on myönnetty ja kanava on määritetty, kanava on synkronoitava kanavatietokantaan. Tehdäksesi näin, mene kohtaan **Vähittäismyynti ja kauppa** \> **Vähittäismyynti ja kauppa IT** \> **Jakeluaikataulu**. Synkronoi painikeruudukko muutokset valitsemalla 1090, kassakoneet ja valitse sitten **Suorita nyt**. Synkronoi seuraavaksi käyttöoikeuksien muutokset valitsemalla ensin 1060, henkilökunta ja sitten **Suorita nyt**. Synkronoi sitten kanava muutokset valitsemalla ensin 1070, Kanavan konfigurointi ja sitten **Suorita nyt**. Synkronoi lopuksi juuri luotu hylkäyssyyn tietokoodi valitsemalla 1110, yleinen konfiguraatio ja sitten **Suorita nyt**.
 
 ## <a name="use-order-fulfillment-at-the-point-of-sale"></a>Tilauksen täyttämisen käyttäminen myyntipisteessä
 
@@ -108,9 +104,9 @@ Kaikkien tilausten tila on oletusarvoisesti **Hyväksytty**. Tilauksen tilaa voi
 
 - **Muokkaa** – Jos tilauksen tila on odottaa, sitä voidaan muokata myyntipisteessä. Osittain kerättyjä, pakattuja tai laskutettuja tilauksia ei voi muokata tilauksen täyttämisnäkymästä.
 - **Hyväksy** – jos **Manuaalinen hyväksyminen** määritetään kanavatasolla, rivit on hyväksyttävä, ennen kuin ne voivat siirtyä tilauksen täyttämisprosessissa.
-- **Keräilyt** – Keräilyasetus tukee useita toimintoja. Ensiksikin **Keräys** päivittää tilausrivin tilan, jotta kukaan muu ei yritä kerätä myymälässä samaa riviä. Seuraavaksi **Tulosta keräysluettelo** tulostaa valittujen rivien keräysluettelon ja päivittää myös niiden tilaksi **Keräys**. Keräysluettelomuotoja hallitaan kuittimuotojen osana. Lisätietoja kuittimuotojen määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Lopuksi **Merkitty kerätyksi** ilmaisee, että rivi on kerätty. **Merkitty kerätyksi** käynnistää vastaavat varastotapahtumat taustajärjestelmässä. Keräystoimintoja voi suorittaa samanaikaisesti useissa tilauksissa ja useilla riveillä toimitustavasta riippumatta.
+- **Keräilyt** – Keräilyasetus tukee useita toimintoja. Ensiksikin **Keräys** päivittää tilausrivin tilan, jotta kukaan muu ei yritä kerätä myymälässä samaa riviä. Seuraavaksi **Tulosta keräysluettelo** tulostaa valittujen rivien keräysluettelon ja päivittää myös niiden tilaksi **Keräys**. Keräysluettelomuotoja hallitaan kuittimuotojen osana. Lisätietoja kuittimuotojen määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](receipt-templates-printing.md). Lopuksi **Merkitty kerätyksi** ilmaisee, että rivi on kerätty. **Merkitty kerätyksi** käynnistää vastaavat varastotapahtumat taustajärjestelmässä. Keräystoimintoja voi suorittaa samanaikaisesti useissa tilauksissa ja useilla riveillä toimitustavasta riippumatta.
 - **Hylkää** – Rivit tai osittaiset rivit voidaan hylätä. Niinpä ne voidaan määrittää taustajärjestelmästä uudelleen toiseen myymälään tai varastoon. Rivit voidaan hylätä vain, jos niitä ei ole vielä kerätty tai pakattu. Jos kerätty tai pakattu rivi halutaan hylätä, kyseisen rivin keräys tai pakkaus on kumottava taustajärjestelmässä.
-- **Pakkaa** – Pakkausasetus tukee kahta toimintoa: **Tulosta pakkausluettelo** tulostaa valittujen rivien pakkausluettelon ja **Merkitse pakatuksi** merkitsee rivit pakatuiksi ja toimitetuiksi taustajärjestelmässä. Samanaikaisesti voidaan pakata vain saman tilauksen rivejä, joilla on sama toimitustapa. Pakkausluettelomuotoja hallitaan kuittimuotojen osana. Lisätietoja kuittimuotojen määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+- **Pakkaa** – Pakkausasetus tukee kahta toimintoa: **Tulosta pakkausluettelo** tulostaa valittujen rivien pakkausluettelon ja **Merkitse pakatuksi** merkitsee rivit pakatuiksi ja toimitetuiksi taustajärjestelmässä. Samanaikaisesti voidaan pakata vain saman tilauksen rivejä, joilla on sama toimitustapa. Pakkausluettelomuotoja hallitaan kuittimuotojen osana. Lisätietoja kuittimuotojen määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](receipt-templates-printing.md).
 - **Lähetä** – Lähetystoiminto merkitsee valitut rivit **toimitetuiksi** taustajärjestelmässä. Kun rivi on kokonaan lähetetty, se ei enää näy tilauksen täyttämisnäkymässä.
 - **Nouto** – Noutotoiminto lisää rivit tapahtumanäkymään noudettaviksi. Jos tilauksessa on muita rivejä, joita ei olla nyt noutamassa, ne lisätään tapahtumanäkymään siten, että niiden määrä on nolla. Kun rivi on kokonaan noudettu, se ei enää näy tilauksen täyttämisnäkymässä.
 
@@ -130,3 +126,6 @@ Tilauksen täyttäminen myyntipisteessä sisältää suodatuksen, jonka avulla k
 - Luontipäivämäärä
 - Toimituspäivä
 - Vastaanottopäivä
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

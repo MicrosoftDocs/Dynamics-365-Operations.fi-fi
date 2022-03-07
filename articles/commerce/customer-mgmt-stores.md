@@ -1,10 +1,11 @@
 ---
 title: Myymälöiden asiakashallinta
 description: Tässä ohjeaiheessa on tietoja siitä, miten vähittäismyyjät voivat ottaa käyttöön asiakashallintatoimintoja myyntipisteessä Microsoft Dynamics 365 Commercessa.
-author: gvrmohanreddy
-ms.date: 12/10/2021
+author: josaw1
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailOperations
 audience: Application User, IT Pro
@@ -14,12 +15,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 29e45419f712e25092b473e34144ac1146e4ed9b
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 46a18d36a389e8a52253c2c3a153e0eae95c0e57
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913623"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799418"
 ---
 # <a name="customer-management-in-stores"></a>Myymälöiden asiakashallinta
 
@@ -35,20 +36,37 @@ Myyjät voivat myös siepata toissijaisia sähköpostiosoitteita ja puhelinnumer
 
 ## <a name="default-customer-properties"></a>Asiakkaan oletusominaisuudet
 
-Vähittäismyyjät voivat käyttää Commerce headquartersin **Kaikki myymälät** -sivua (**Retail ja Commerce \> Kanavat \> Myymälät**), kun halutaan liittää oletusasiakas kuhunkin myymälään. Commerce kopioi sitten oletusasiakkaalle määritetyt ominaisuudet kaikkiin uusiin asiakastietueisiin, jotka luodaan. Esimerkiksi **Luo asiakas** -valintaikkunassa näkyvät myymälään liitetyltä oletusasiakkaalta periytyvät ominaisuudet. Ominaisuuksia ovat **asiakastyyppi**, **asiakasryhmä**, **kuittiasetus**, **kuittisähköposti** **valuutta** ja **kieli**. Myös mahdolliset **liitokset** (asiakkaiden ryhmittelyt) periytyvät myös oletusasiakkaalta. **Taloushallinnon dimensiot** periytyvät kuitenkin oletusasiakkaaseen liittyvältä asiakasryhmältä, ei itse oletusasiakkaalta.
-
-> [!NOTE]
-> **Kuittisähköposti**-arvo kopioidaan oletusasiakkaalta vain, jos juuri luoduille asiakkaille ei ole määritetty kuitin sähköpostitunnusta. Jos kuittien sähköpostitunnus on oletusasiakkaalla, kaikki sähköisen kaupan sivustosta luodut asiakkaat saavat saman kuitin sähköpostitunnuksen kuin käyttöliittymää ei ole, joka siepaisi asiakkaan sähköpostitunnuksen. On suositeltavaa jättää **kuittisähköposti**-kenttä tyhjäksi myymälän oletusasiakkaalle ja käyttää sitä vain, jos käytössä on liiketoimintaprosessi, joka riippuu kuitin sähköpostiosoitteesta. 
+Vähittäismyyjät voivat käyttää Commerce headquartersin **Kaikki myymälät** -sivua (**Retail ja Commerce \> Kanavat \> Myymälät**), kun halutaan liittää oletusasiakas kuhunkin myymälään. Commerce kopioi sitten oletusasiakkaalle määritetyt ominaisuudet kaikkiin uusiin asiakastietueisiin, jotka luodaan. Esimerkiksi **Luo asiakas** -valintaikkunassa näkyvät myymälään liitetyltä oletusasiakkaalta periytyvät ominaisuudet. Ominaisuuksia ovat asiakastyyppi, asiakasryhmä, kuittiasetukset, valuutta ja kieli. Myös mahdolliset liitokset (asiakkaiden ryhmittelyt) periytyvät myös oletusasiakkaalta. Taloushallinnon dimensiot periytyvät kuitenkin oletusasiakkaaseen liittyvältä asiakasryhmältä, ei itse oletusasiakkaalta.
 
 Myyjät voivat siepata useita asiakkaan osoitteita. Asiakkaan nimi ja puhelinnumero periytyvät kuhunkin osoitteeseen liittyvästä yhteyshenkilöstä. Asiakastietueen **Osoitteet**-pikavälilehdessä on **Tarkoitus**-kenttä, jota myyjät voivat muokata. Jos asiakastyyppi on **Henkilö**, oletusarvo on **Koti**. Jos asiakastyyppi on **Organisaatio**, oletusarvo on **Yritys**. Muita tämän kentän tukemia arvoja ovat **Koti**, **Toimisto**  ja **Postilokero**. Osoitteen **Maa**-kentän arvo periytyy Commerce headquartersissa **Toimintayksikkö**-sivulla (**Organisaation hallinto \> Organisaatiot \> Toimintayksiköt**) määritetystä ensisijaisista osoitteesta.
 
+## <a name="sync-customers-and-async-customers"></a>Synkroniset asiakkaat ja asynkroniset asiakkaat
 
+Commercessa asiakkaan luomisessa on kaksi eri tilaa: Synkroninen ja Asynkroninen. Oletusarvon mukaan asiakkaat luodaan synkronisesti. Toisin sanoen ne luodaan Commerce headquarters -sovelluksessa reaaliaikaisesti. Synkroninen asiakkaan luontitila on hyödyllinen, koska uusia asiakkaita voidaan hakea välittömästi eri kanavien kautta. Sillä on kuitenkin myös haittapuolensa. Koska se luo [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) -kutsuja Commerce headquarters -sovelluksessa, suorituskykyyn voi vaikuttaa, jos tehdään samanaikaisia asiakkaan luontikutsuja.
+
+Jos **Luo asiakas asynkronisessa tilassa** -asetus on **Kyllä** myymälän toimintoprofiilissa (**Retail ja Commerce \> Kanavan asetukset \> Verkkokaupan määritys \> Toimintoprofiilit**), Real-time Service -kutsuja ei käytetä asiakastietueiden luomiseen kanavatietokannassa. Asynroninen asiakkaan luontitila ei vaikuta Commerce headquarters -ohjelman suorituskykyyn. Jokaiselle uudelle asynkroniselle asiakastietueelle liitetään väliaikainen, yleinen yksilöivä tunnus (GUID), jota käytetään asiakastilin tunnuksena. GUID ei näy myyntipisteen käyttäjille. Sen sijaan käyttäjät näkevät **Odottaa synkronointia** asiakastilin tunnuksena. Vaikka tämä konfiguraatio pakottaa asynkroniseen asiakkaiden luontiin, asiakastietueiden muokkaaminen tapahtuu aina synkronisesti.
+
+### <a name="convert-async-customers-to-sync-customers"></a>Asynkronisten asiakkaiden muuntaminen asynkronisiksi asiakkaiksi
+
+Jos haluat muuntaa asynkroniset asiakkaat synkronoiduksi asiakkaiksi, sinun on ensin suoritettava P-työ, jotta asynkroniset asiakkaat voidaan lähettää Commerce headquarters -ohjelmaan. Suorita sitten **Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työ asiakastilien tunnusten luontia varten. Synkronoi lopuksi uudet asiakastilitunnukset kanaviin suorittamalla **1010**-työ.
+
+### <a name="async-customer-limitations"></a>Asynkronisen asiakkaan rajoitukset
+
+Asynkronisen asiakkaan toiminnallisuuteen liittyy tällä hetkellä seuraavat rajoitukset:
+
+- Asynkronisen asiakkaan tietueita ei voi muokata, ellei asiakasta ole luotu Commerce headquarters -sovelluksessa ja uutta asiakastilin tunnusta ole synkronoitu takaisin kanavaan.
+- Liitoksia ei voi liittää asynkronisiin asiakkaisiin. Siksi uudet asynkroniset asiakkaat eivät peri liitoksia oletusasiakkaalta.
+- Kanta-asiakaskortteja ei voi myöntää asynkronisille asiakkaille, ellei uutta asiakastilitunnusta ole synkronoitu takaisin kanavaan.
+- Toissijaisia sähköpostiosoitteita ja puhelinnumeroita ei voi siepata asynkronisille asiakkaille.
+
+### <a name="customer-creation-in-pos-offline-mode"></a>Asiakkaan luonti myyntipisteen offline-tilassa
+
+Jos myyntipiste siirtyy offline-tilaan, kun asynkronisen asiakkaan luontitila on käytössä, uudet asiakastietueet luodaan asynkronisesti. Jos myyntipiste siirtyy offline-tilaan, kun asynkronisen asiakkaan luontitila on poistettu käytöstä, järjestelmä siirtyy automaattisesti asynkroniseen asiakkaan luontitilaan. Toisin sanoen asiakstietueet voidaan luoda asynkronisesest, vaikka asynkroninen asiakkaan luontitila ei ole käytössä. Siksi Commerce headquartersin järjestelmänvalvojien on luotava ja ajoitettava toistuva erätyö P-työlle, **Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työlle ja **1010**-työlle, jotta kaikki asynkroniset asiakkaat muunnetaan Commerce headquartersissa synkronoiduiksi asiakkaiksi.
+
+> [!NOTE]
+> Jos **Suodata jaetut asiakastietotalut** -asetus on **Kyllä** **Commerce-kanavan rakenne** -sivulla (**Retail ja Commerce \> Headquartersin asetuukset \> Commerce-ajastus \> Kanavan tietokantaryhmä**), asiakastietueita ei luoda myyntipisteen offline-tilassa. Lisätietoja on kohdassa [Offline-tietojen poissulkeminen](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## <a name="additional-resources"></a>Lisäresurssit
-
-[Asynkroninen asiakkaan luontitila](async-customer-mode.md)
-
-[Asynkronisten asiakkaiden muuntaminen synkronisiksi asiakkaiksi](convert-async-to-sync.md)
 
 [Asiakkaan määritteet](dev-itpro/customer-attributes.md)
 

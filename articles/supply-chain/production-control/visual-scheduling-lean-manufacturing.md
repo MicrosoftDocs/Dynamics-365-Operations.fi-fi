@@ -2,13 +2,16 @@
 title: Lean-valmistuksen visuaalinen ajoitus
 description: Tässä ohjeaiheessa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764809"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426828"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Lean-valmistuksen visuaalinen ajoitus
 
@@ -47,7 +50,7 @@ Voit aikatauluttaa ainoastaan **Prosessi**-tyyppisiä töitä. Kanban-työ ja se
 ## <a name="kanban-schedule-board"></a>Kanban-aikataulu
 **Kanban-aikataulu** -sivulla on seitsemän pääelementtiä, jotka esitetään oheisessa kuvassa. 
 
-![Kanban-aikataulu.](./media/kanban-schedule-board-1024x554.png)
+![Kanban-aikataulu](./media/kanban-schedule-board-1024x554.png)
 1.  Toimintoruutu
 2.  Kenttien suodatus
 3.  Suunnittelemattomat työt -painike
@@ -71,7 +74,7 @@ Voit parantaa Kanban-aikataulun yhteenvetoa väreillä, jotka erottavat kanban-t
 ## <a name="plan-unplanned-jobs"></a>Suunnittele suunnittelemattomat työt
 Voit aikatauluttaa suunnittelemattomat kanban-työt **Suunnittele suunnittelemattomat työt** -valintaikkunassa. Avaa valintaikkuna valitsemalla **suunnittelemattomat työt** -painike, joka näyttää suunnittelemattomien töiden määrän. Vaihtoehtoisesti napsauta **Suunnittele suunnittelemattomat työt** **Taulu** välilehdellä toimintoruudussa. Valintaikkunassa näkyy työsolun suunnittelemattomien kanban-töiden luettelo. Voit suodattaa kaikki ruudukon kentät **Suodatin**-kentän avulla. Voit esimerkiksi suodattaa tietyn tuotteen kanban-työt. Kun olet suodattanut ajoitettavien töiden luettelon, valitse ne luettelosta ja valitse sitten **OK**. Jos haluat käyttää töiden ajoittamiseen automaattista suunnittelua, määritä **Automaattinen suunnittelu** -asetukseksi **Kyllä**. Tässä tapauksessa työt ajoitetaan tietylle kaudelle eräpäivän mukaan. Voit myös ajoittaa töitä kausittain. Valitse kausi **Kausi**-kentästä. Seuraavassa kuvassa on esimerkki **SSuunnittele suunnittelemattomat työt** -valintaikkunasta. 
 
-![Suunnittele suunnittelemattomat työt -valintaikkuna.](./media/plan-unplanned-jobs-1024x564.png)
+![Suunnittele suunnittelemattomat työt -valintaikkuna](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Saman kauden kanban-töiden järjestäminen
 Voit muuttaa kauden valittujen projektien numerosarjan. Tämä ominaisuus on hyödyllinen, jos haluat priorisoida joitakin töitä kauden aikana. Vaihtoehtoisesti voit halutessasi järjestää työt saman työmääritteen perusteella optimoidaksesi työn suorituksen. Voit muuttaa järjestystä vetämällä ja pudottamalla tai käyttämällä **Taaksepäin**- ja **Eteenpäin** -valikkovaihtoehtoja **Taulu**-välilehdessä toimintoruudussa.
@@ -87,10 +90,8 @@ Voit avata Kanban-aikataulun valikkokohdasta seuraavilla sivuilla:
 -   **Tuotantovirran visualisointi** -sivu
 
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
 [Lean-valmistuksen kanban-työn ajoitus](lean-manufacturing-kanban-job-scheduling.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

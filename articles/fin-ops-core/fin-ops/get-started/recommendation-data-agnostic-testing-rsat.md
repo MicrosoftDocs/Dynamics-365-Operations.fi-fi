@@ -2,11 +2,9 @@
 title: Datasta riippumaton testaus Regression Suite Automation Toolilla
 description: Tämä ohjeaihe sisältää suosituksia datasta riippumattomaan testaukseen Regression Suite Automation Toolilla.
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798198"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744660"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Datasta riippumaton testaus Regression Suite Automation Toolilla
 
@@ -49,3 +47,6 @@ Vaikka ERP-sovelluksen toiminnan vahvistaminen ei voi olla täysin datasta riipp
     - Vahvista vasta, kun olet suodattanut valinnan tiettyyn tapahtumaan yleisen vahvistuksen sijaan. Jos haluat esimerkiksi käyttää tietueiden määrää, suodata tapahtuman numeron tai päivämäärän perusteella siten, että mitään muita tapahtumia ei käytetä vahvistuksessa. 
     - Jos olet tarkistamassa asiakkaan saldoa tai budjettia, tallenna arvo ensin ja lisää sitten tapahtuma-arvosi vahvistaaksesi odotetun tuloksen sen sijaan, että vahvistaisit kiinteän odotetun arvon. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

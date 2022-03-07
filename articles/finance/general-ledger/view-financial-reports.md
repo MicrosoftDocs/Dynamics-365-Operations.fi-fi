@@ -2,28 +2,25 @@
 title: Raporttien tarkasteleminen
 description: Tässä ohjeaiheessa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 Financessa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 author: kweekley
-manager: AnnBe
 ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c368259af9454af94da217585b2a1d01ea75d834
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442770"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897281"
 ---
 # <a name="view-financial-reports"></a>Raporttien tarkasteleminen
 
@@ -82,8 +79,11 @@ Lähettääksesi talousraportin. toimintoruudussa, klikkaa **lähetä**. Raportt
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Talousraportointi](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Talousraportointi](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

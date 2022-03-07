@@ -2,11 +2,9 @@
 title: Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 description: Tässä ohjeaiheessa käsitellään kaksoiskirjoituksen valuutan osalta tukemien desimaalien määrän muuttamista.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 073f89b5ae44e20d1d2e854341afaa176f9b6280
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744372"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350932"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 
@@ -84,14 +82,17 @@ Rajoituksia:
 
 Kun siirto on valmis, järjestelmänvalvojat voivat määrittää valuutan tarkkuuden. Valitse ensin **Asetukset \> Hallinta** ja sitten **Järjestelmäasetukset**. Muuta sitten **Yleiset**-välilehden arvo **Määritä desimaalien määrä, jota käytetään hinnoittelussa koko järjestelmässä** -sarakkeessa, kuten seuraavassa kuvassa.
 
-![Valuutan järjestelmäasetukset](media/currency-system-settings.png)
+![Valuutan järjestelmäasetukset.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Liiketoiminta-asiakirjat: valuutat
 
 Jos tietyn valuutan tarkkuuden on erottava hinnoittelussa käytetyn valuutan tarkkuudesta, sitä on muutettava. Valitse ensin **Asetukset \> Liiketoiminnan hallinta** ja sitten **Valuutat** ja muutettava valuutta. Määritä sitten **Valuutan tarkkuus** -sarakkeeseen sopiva desimaalien määrä, mistä on esimerkki seuraavassa kuvassa.
 
-![Tietyn alueen valuutta-asetukset](media/specific-currency.png)
+![Tietyn alueen valuutta-asetukset.](media/specific-currency.png)
 
 ### <a name="tables-currency-column"></a>taulut: Valuutta-sarake
 
 Tiettyihin valuuttasarakkeisiin määritettävien desimaalien määrä on rajoitettu neljään.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

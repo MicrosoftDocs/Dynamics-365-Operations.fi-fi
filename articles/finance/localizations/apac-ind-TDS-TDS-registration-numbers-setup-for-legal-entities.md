@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f74c8813fb4aa8e159cfadfd171741487e2910d96a92540d4023d60e69c5c8c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3550b2b7b305702ffc337ba0a9bb79f60a9de120
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750313"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023205"
 ---
 # <a name="set-up-tds-registration-numbers-for-legal-entities"></a>TDS-rekisteröintinumeroiden lisääminen yrityksille
 
@@ -31,7 +31,7 @@ Tässä aiheessa kuvataan, miten Vero vähennettynä lähteissä (TDS) -rekister
 
 1. Valitse **Organisaation hallinto \> Organisaatiot \> Yritykset**.
 
-    [![Yritykset-sivu.](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
+    [![Yritykset-sivu](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
 
 2. Syötä **Verotiedot**-pikavälilehden **Pysyvä tilinumero** -kenttään yrityksen pysyvä tilinumero (PAN).
 3. Kirjoita **Ympyrän numero** -kenttään TDS-viranomaisen ympyrän numero.
@@ -41,11 +41,11 @@ Tässä aiheessa kuvataan, miten Vero vähennettynä lähteissä (TDS) -rekister
 7. Valitse toimintoruudussa **Rekisteröintitunnukset** avataksesi **Hallitse osoitteita** -sivu.
 8. Valitse **Verotiedot**-pikavälilehdellä **Lisää** tai **Muokkaa** avataksesi **Verotietojen hallinta** -sivun, jossa voit ylläpitää verorekisteröintimerkintää.
 
-    [![Osoitteiden hallinta -sivu.](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
+    [![Osoitteiden hallinta -sivu](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
 
 9. Kirjoita **Ennakonpidätys**-välilehden **Verotilin numero (TAN)** -kenttään rekisteröintinumero. Tässä numerossa on oltava neljä aakkosmerkkiä, sitten viisi numeromerkkiä ja yksi aakkosmerkki. Tässä on esimerkki: **AXDF87645F**.
 10. Kirjoita **Nimi tai kuvaus** -kenttään nimikkeen arvonlisävero rekisteröintinumeron kuvaus.
 
-    [![Verotietojen hallinta -sivu.](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
+    [![Verotietojen hallinta -sivu](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
 
 11. Sulje sivu.

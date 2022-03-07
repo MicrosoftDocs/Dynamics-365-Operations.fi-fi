@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: 5d3e8038c4651bb75b3d36ed0d398be0d032b591dedda757d2fc3a6399e512c6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773054"
 ---
 # <a name="wave-creation-and-processing"></a>Aaltojen luominen ja käsittely
 
@@ -190,9 +190,9 @@ Tarvittaessa voit peruuttaa aallon, joka on käsitelty. Voit peruuttaa aallon ja
 
 **Aallon eräajon tiedot** -sivulla voit tarkastella erätöitä ja mihin tahansa aaltoon liittyviä tehtäviä. Tästä on hyötyä erityisesti epäonnistuneen aallon vianmäärityksessä. Jos tätä toimintoa ei ole, vain järjestelmänvalvojilla on yleensä erätyön tietojen käyttöoikeus. **Aallon eräajon tiedot** -sivu voidaan antaa muiden kuin järjestelmänvalvojien käyttöön, ja siinä voi tarkastella vain luku -tilassa erätöitä ja niihin liittyviä tehtäviä.
 
-### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Ota Aallon eräajon tiedot -sivu käyttöön tai pois käytöstä
+### <a name="enable-the-wave-batch-job-details-page"></a>Ota Aallon eräajon tiedot -sivu käyttöön.
 
-Supply Chain Managementin versiosta 10.0.25 alkaen **Aallon erätyön tiedot** -sivu on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Aallon erätyön tiedot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos järjestelmääsi ei vielä sisälly **Aallon eräajon tiedot** -sivua, siirry [ominaisuuksien hallintaan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Aallon eräajon tiedot* -toiminto käyttöön.
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Käytä Aallon eräajon tiedot -sivua
 

@@ -2,11 +2,9 @@
 title: Tuontitöiden päivämäärän ja ajan synkronoiminen
 description: Kun töitä tuodessa käytetään UTC-aikavyöhykkeitä aikavyöhykkeiden muunnot eivät aiheuta ongelmia.
 author: Sunil-Garg
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae04b09a68e64d6d70c0329e689ab08c3903fca0
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 32090af050fdb97e7b581cefcfc9155357327441
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350988"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>Tuontitöiden päivämäärän ja ajan synkronoiminen
 
@@ -35,8 +33,11 @@ Tämän kaksoismuunnon vuoksi päivämäärät muuttavat sovellusten välillä. 
 
 3. Valitse **Lähteen päivämäärämuoto** kohdassa **CSV-Unicode**.
 
-   [![Lähteen päivämäärämuodon muuttaminen UTC-muotoon](./media/data-source-date-format.png)](./media/data-source-date-format.png)
+   [![Lähteen päivämäärämuodon muuttaminen UTC-muotoon.](./media/data-source-date-format.png)](./media/data-source-date-format.png)
 
 4. Muuta **Aikavyöhyke**-asetukseksi **Koordinoitu yleisaika** ja muuta **Kieli**-asetukseksi **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

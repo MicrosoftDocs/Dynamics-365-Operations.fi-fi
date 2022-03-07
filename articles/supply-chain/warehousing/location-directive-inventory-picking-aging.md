@@ -2,26 +2,23 @@
 title: Sijaintidirektiivin varastonkeräilyn erääntyminen
 description: Tässä ohjeaiheessa käsitellään FIFO- ja LIFO-sijaintidirektiivistrategioita keräilyn aikana.
 author: mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 83f73052d1d9d8a29a80ce3cf1035a259cd92c17
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427394"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578581"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Sijaintidirektiivin varastonkeräilyn erääntyminen
 
@@ -140,3 +137,6 @@ LIFO-strategia etsii uusimman erääntymispäivämäärän sisältävän sijainn
 1. Huomaa, että rivillä, jonka **Työtyyppi**-arvo on *Keräily*, **Sijainti**-arvo on *KR-001*. Tässä sijainnissa on rekisterikilpi, jossa on uusin erääntymispäivä (LIFO).
 
 Näissä skenaarioissa on näytetty, miten sijainnin erääntymisstrategia ohjaa työn varastosijaintiin, jossa on joko vanhin tai uusin varasto valitun strategian mukaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,36 +2,30 @@
 title: Esimääritettyjen asettelujen käyttö
 description: Tässä ohjeaiheessa käsitellään esimääritettyjen asettelujen käsittelemistä Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f6effd4dda669041a269d568bd39beda607a2bcc05c65e40bb76c6f1d02cd5e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775309"
 ---
 # <a name="work-with-preset-layouts"></a>Esimääritettyjen asettelujen käyttö
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään esimääritettyjen asettelujen käsittelemistä Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Ennen kuin suoritat tämän ohjeaiheen toiminnot, muista tutustua kohtaan [Esimääritetyt ja mukautetut asettelut](templates-layouts-overview.md#preset-and-custom-layouts). Yleinen yleiskuvaus on kohdassa [Mallien ja asettelujen yleiskatsaus](templates-layouts-overview.md).
 
@@ -109,3 +103,6 @@ Kun olet esikatsellut esimääritettyyn asetteluun tehdyt muutokset, julkaise as
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
 
 [Mallien käyttö](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

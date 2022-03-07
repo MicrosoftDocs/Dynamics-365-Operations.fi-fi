@@ -2,26 +2,24 @@
 title: Mobiilisovelluksen aloitussivu
 description: Tässä ohjeaiheessa käsitellään Finance and Operations (Dynamics 365) -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729705"
 ---
 # <a name="mobile-app-home-page"></a>Mobiilisovelluksen aloitussivu
 
@@ -29,8 +27,7 @@ ms.locfileid: "4683455"
 
 Tässä ohjeaiheessa käsitellään **Finance and Operations (Dynamics 365)** -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 
-<a name="overview"></a>Yleiskuvaus
---------
+## <a name="overview"></a>Yleiskuvaus
 
 Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää mobiililaitteilla. Kun IT-järjestelmänvalvoja ottaa mobiilityötilat käyttöön organisaatiossa, käyttäjät voivat kirjautua sisään sovellukseen ja aloittaa liiketoimintaprosessien käyttämisen heti mobiililaitteillaan. Mobiilisovellukseen sisältyvät seuraavat, tuottavuutta parantavat ominaisuudet:
 
@@ -42,7 +39,7 @@ Mobiilisovelluksen avulla organisaatiosi liiketoimintaprosesseja voi käyttää 
 ## <a name="elements-of-the-mobile-app"></a>Mobiilisovelluksen osat
 Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, työtilat, sivut ja toiminnot. 
 
-[![Mobiilisovelluksen siirtymiskonseptit](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Mobiilisovelluksen siirtymiskonseptit.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. **Koontinäyttö** aukea, kun sovellus käynnistetään.
 2. Koontinäytössä on luettelo julkaistuista **työtiloista**.
@@ -56,7 +53,7 @@ Mobiilisovelluksen käyttö koostuu neljästä, perusosasta: koontinäyttö, ty�
 ## <a name="implementation-process"></a>Käyttöönottoprosessi
 Seuraavassa kuvassa on esitys Microsoftin toimittamien mobiilityötilojen ja mukautettujen mobiilityötilojen käyttöönottamisesta. 
 
-[![Mobiilisovellusten käyttöönottoprosessi](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Mobiilisovellusten käyttöönottoprosessi.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käyttöön sekä Microsoftin tarjoamia mobiilityötiloja että mukautettuja mobiilityötiloja. Ensimmäisen sarakkeen numerot vastaavat edellisessä kuvassa esitettyjä vaiheita.
 
@@ -93,8 +90,8 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Käytettävissä olevan varaston mobiilityötila</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Myyntitilausten mobiilityötilat</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Toimittajayhteistyön mobiilityötila</a></li>
-<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Projektin aikamerkintöjen mobiilityötila</a></li>
-<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Kulujen hallinnan mobiilityötila</a></li>
+<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Projektin aikamerkintöjen mobiilityötila</a></li>
+<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Kulujen hallinnan mobiilityötila</a></li>
 
 </ul></td>
 </tr>
@@ -151,3 +148,6 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 
 ## <a name="troubleshooting"></a>Vianmääritys
 [Mobiiliympäristön resurssit](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

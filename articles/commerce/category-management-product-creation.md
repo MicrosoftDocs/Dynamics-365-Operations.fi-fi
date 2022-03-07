@@ -2,16 +2,13 @@
 title: Tuoteluokkien ja tuotteiden hallinta
 description: Tässä ohjeaiheessa kerrotaan, miten myynninedistämispäälliköt voivat hallita tuotehierarkian ja vapautetun tuotteen tietojen välisiä suhteita Commercen tuoteluokkien avulla.
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: ''
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -19,18 +16,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d47a866703b830e84e3f2e37a02d9d58f73987b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 101e03c053203fc92648b7024998202d782f46fb07a5b6d5647b8e2a6514ea17
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411938"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743981"
 ---
 # <a name="manage-product-categories-and-products"></a>Tuoteluokkien ja tuotteiden hallinta
 
 [!include [banner](./includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan parannetusta tavasta hallita Dynamics 365 Commercein tuoteluokkia ja tuotteita. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka tuotehierarkia ja vapautetut tuotetiedot jakavat.
+Tässä ohjeaiheessa kerrotaan parannetusta tavasta hallita Dynamics 365 Commercen tuoteluokkia ja tuotteita. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka tuotehierarkia ja vapautetut tuotetiedot jakavat.
 
 Saat lisätietoja tuoteluokkien hallinnasta valitsemalla **Luokka- ja tuotehallinta** -työtilassa **Commercen tuotehierarkia** -ruudun.
 
@@ -38,17 +35,17 @@ Kiinnitä huomiota avautuvan **Commercen tuotehierarkia** -sivun parannuksiin. A
 
 Parannetussa tuoteluokkarakenteessa tuotteen ominaisuudet erotetaan loogisesti sen perusteella, miten niitä voi käyttää ryhmässä, jotta ne vastaavat vapautettujen tuotetietojen lomakerakennetta.
 
-![Kenttien ryhmittely ominaisuuksien käyttöalueen perusteella](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+![Kenttien ryhmittely ominaisuuksien käyttöalueen perusteella.](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
 Yrityskohtaisten ominaisuuksien hallinnan voi vaihtaa yleisestä yrityskohtaiseksi.
 
 Voit hallita ominaisuuksia kaikissa yrityksissä valitsemalla **Näytä kaikissa yrityksissä** (tai **Muokkaa kaikissa yrityksissä**).
 
-![Näyttäminen tai muokkaaminen kaikissa yrityksissä](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+![Näyttäminen tai muokkaaminen kaikissa yrityksissä.](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
 Voit hallita tietyn yrityksen ominaisuuksia valitsemalla **Näytä tietyssä yrityksessä** (tai **Muokkaa tietyssä yrityksessä**).
 
-![Näyttäminen tai muokkaaminen tietyssä yrityksessä](media/ToggleToEditForAllLegalEntities.PNG)
+![Näyttäminen tai muokkaaminen tietyssä yrityksessä.](media/ToggleToEditForAllLegalEntities.PNG)
 
 Parannetussa tuoteluokkarakenteessa myynninedistämispäällikkö voi nyt myös määrittää oletusarvot lisätuoteominaisuusjoukolle yksittäisellä luokkatasolla. Kun tuotteet sitten luodaan, ne perivät tuoteominaisuuksiensa oletusarvot sen perusteella, mikä on kyseisten ominaisuuksien liitos yksittäiseen tuotehierarkialuokkaan. Näitä perittyjä tuoteominaisuuksia voidaan myös muokata kunkin tuotteen kohdalla siten, että ne vastaavat yksittäisiä liiketoimintatarpeita.
 
@@ -57,3 +54,6 @@ Parannetussa tuoteluokkarakenteessa myynninedistämispäällikkö voi nyt myös 
 Voit käyttää uutta tuoteominaisuuksien parannettua rakennetta, kun valitset, mitkä päivitetyt tuoteominaisuudet on siirrettävä liitettyihin tuotteisiin. Valitse **Commercen tuotehierarkia** -sivun toimintoruudussa **Luokka** ja avaa sitten **Päivitä tuotteet** -valintaikkuna valitsemalla **Päivitä tuotteet**.
 
 ![Päivitä tuotteet -valintaikkuna.](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

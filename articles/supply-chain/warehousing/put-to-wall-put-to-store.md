@@ -2,26 +2,23 @@
 title: Asettaminen seinälle – asettaminen myymälään
 description: Tässä ohjeaiheessa käsitellään Asettaminen seinälle – asettaminen myymälään -toimintoa. Tällä toiminnolla voi käsitellä skenaarioita, joissa tuote on konsolidoitava esipakkauksen valmistelualueelle määritettävien ehtojen perusteella. Se auttaa lyhentämään keräilyaikaa, koska keräyksen voi tehdä sen avulla yhden kohderekisterikilven mukaan ja koska siinä voi käyttää enemmän asetuspaikkoja kuin klusterikeräilyssä.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427408"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574134"
 ---
 # <a name="put-to-wall---put-to-store"></a>Asettaminen seinälle – asettaminen myymälään
 
@@ -525,7 +522,7 @@ Nyt kun varasto on asetettu lajittelusijaintiin, se on lajiteltava oikeaan lajit
 
 Jos lajittelupaikat on suljettava manuaalisesti lähtevien lajittelumallin **Sulje lajittelupaikka automaattisesti** -asetuksena on oltava *Ei* ja sulkeminen on tehtävä, ennen kuin varastoa voidaan siirtää lastausovialueelle. Paikat voidaan sulkea eri tavoin:
 
-- Varastosovelluksessa:
+- Varastonhallinnan mobiilisovelluksen kautta:
 
     - Käyttäjä voi lukea jonkin jo paikassa olevan nimikkeet ja sulkea sitten paikan valitsemalla **Sulje**.
     - Jos käyttäjä lukee kontin, joka on jo lajiteltu kontti, näyttöön tulee virhesanoma. Käyttäjä voi kuitenkin jatkaa paikan sulkemista.
@@ -541,3 +538,6 @@ Jos lajittelupaikat on suljettava manuaalisesti lähtevien lajittelumallin **Sul
 
 > [!IMPORTANT]
 > Kun varastosiirtotyö on luotu lajittelusijainnista, työtä ei saa peruuttaa. Muussa tapauksessa paikka ja kontit poistetaan järjestelmästä eikä niiden käsittely ole enää mahdollista. Myös varasto poistetaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

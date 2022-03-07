@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4442992"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226434"
 ---
 # <a name="cost-control-workspace"></a>Kustannusseurannan työtila 
 
@@ -158,3 +157,6 @@ Lisäresurssit
 [Kustannusobjektin vastuuhenkilöiden käyttöoikeuksien määrittäminen](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

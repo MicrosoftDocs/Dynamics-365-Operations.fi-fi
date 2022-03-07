@@ -2,70 +2,70 @@
 title: Etuuskelpoisuussääntöjen ja -käytäntöjen määrittäminen
 description: Tässä artikkelissa kerrotaan, miten edun oikeutussäännöt ja -käytännöt luodaan. Tämän jälkeen näytetään, miten säännöt liitetään etuihin.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: f46437fef342ab1a4e368063d8b74205ca8e8c05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 57bcce908dec0b202880d865bbb6014ae13e385642dc2785b16c33abc4ab53bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752054"
 ---
 # <a name="define-benefit-eligibility-rules-and-policies"></a>Etuuskelpoisuussääntöjen ja -käytäntöjen määrittäminen
 
-Tässä artikkelissa kerrotaan, miten edun oikeutussäännöt ja -käytännöt luodaan. Tämän jälkeen näytetään, miten säännöt liitetään etuihin.  
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tämän tallenteen luomisessa käytetty demotietojen yritys on USMF.
-
+Tässä aiheessa kerrotaan, miten edun oikeutussäännöt ja -käytännöt luodaan. Tämän jälkeen näytetään, miten säännöt liitetään etuihin.  
 
 ## <a name="create-benefit-eligibility-policy-rule-type"></a>Etukelpoisuuden käytäntösääntötyypin luominen
-1. Valitse Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytäntösääntötyypit.
-2. Valitse Uusi.
-3. Kirjoita arvo Säännön nimi-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Avaa haku valitsemalla Kyselyn nimi -kentässä avattavan valikon painike.
-6. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-7. Valitse Tallenna.
+
+1. Valitse **Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytäntösääntötyypit**.
+2. Valitse **Uusi**.
+3. Anna **Säännön nimi** -kenttään arvo.
+4. Anna arvo **Kuvaus**-kentässä.
+5. Avaa haku valitsemalla **Kyselyn nimi** -kentässä avattavan valikon painike.
+6. Valitse luettelossa valitulla rivillä oleva linkki.
+7. Valitse **Tallenna**.
 8. Sulje sivu.
 
 ## <a name="benefit-eligibility-policy"></a>Etukelpoisuuden käytäntö
-1. Valitse Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytännöt.
+
+1. Valitse **Henkilöstöhallinto > Edut > Oikeutus > Etukelpoisuuden käytännöt**.
 2. Valitse aiemmin luotu etukäytäntö.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Ota käyttöön Käytäntöorganisaatiot-osien laajennus.  Tässä voit lisätä organisaatiot, jotka haluat lisätä käytäntöön, tai poistaa niitä.
-5. Laajenna tai tiivistä Käytäntösäännöt-osa.
+3. Valitse luettelossa valitulla rivillä oleva linkki.
+4. Ota käyttöön **Käytäntöorganisaatiot**-osien laajennus. Voit lisätä organisaatiot, jotka haluat lisätä käytäntöön, tai poistaa niitä.
+5. Laajenna tai tiivistä **Käytäntösäännöt**-osa.
 6. Valitse luettelosta aiemmin luotu käytäntösääntö.
-7. Valitse Luo käytäntösääntö.
-8. Syötä Voimaantulopäivä-kenttään päivämäärä, jolloin haluat ottaa käytännön käyttöön.
+7. Valitse **Luo käytäntösääntö**.
+8. Syötä **Voimaantulopäivä**-kenttään päivämäärä, jolloin haluat ottaa käytännön käyttöön.
     * Kun voimaantulo- ja päättymispäivät määritetään, voit muuttaa käytäntösääntöjä jatkossa. Näin käytäntöön ei tarvitse palata silloin, kun haluat ottaa muutokset käyttöön.  
-9. 
-    * Jos esimerkiksi haluat kohdistaa säännön vain myyntipäällikköihin, voit luoda seuraavan Where-lauseen: kun toimen kuvaus on yhtä suuri kuin myyntipäällikkö.  Where-lauseita voi yhdistää säännössä And- ja Or-operaattorin avulla.  
-10. Valitse OK.
+9. Lisää tarvittaessa where-lauseke **Lisää ehto** -kenttään.
+    * Jos esimerkiksi haluat kohdistaa säännön vain myyntipäällikköihin, voit luoda seuraavan where-lauseen: kun toimen kuvaus on yhtä suuri kuin myyntipäällikkö. Useita where-lauseita voi lisätä säännössä kerralla.  
+10. Valitse **OK**.
 11. Sulje sivu.
-12. Sulje sivu.
 
 ## <a name="assign-rule-to-benefit"></a>Säännön liittäminen etuun
-1. Siirry kohtaan Henkilöstöhallinto > Edut > Edut.
+
+1. Siirry kohtaan **Henkilöstöhallinto > Edut > Edut**.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Laajenna tai tiivistä Oikeutussäännöt-osa.
-5. Valitse Muokkaa.
-6. Valitse Oikeutus-kentässä luettelosta Sääntöön perustuva -kohta.
-7. Avaa haku valitsemalla Sääntötyyppi-kentässä avattavan valikon painike.
-8. Etsi ja valitse luettelosta aiemmin luotu sääntö.
-9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Valitse Tallenna.
+3. Valitse luettelossa valitulla rivillä oleva linkki.
+4. Laajenna tai tiivistä **Oikeutussäännöt**-osa.
+5. Valitse **Muokkaa**.
+6. Valitse **Oikeutus**-kentässä sääntö.
+7. Valitse **Sääntötyyppi**-kentässä aiemmin luotu sääntö.
+9. Valitse luettelossa valitulla rivillä oleva linkki.
+10. Valitse **Tallenna**.
 11. Sulje lomake.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

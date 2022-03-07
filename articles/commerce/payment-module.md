@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 27b73f7a05605e4e3ee8f8b72400172b7a8bfc33
-ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
+ms.openlocfilehash: d9c0956e30d413f5ae695cf75b06fb58711b2944
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4581909"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222487"
 ---
 # <a name="payment-module"></a>Maksumoduuli
 
@@ -118,3 +117,6 @@ Jos sekä Adyen- että PayPal-maksuyhdistimiä tarvitaan, lisää molemmat moduu
 [Dynamics 365 -maksuyhdistin PayPalia varten](paypal.md)
 
 [Asiakkaan vahva todennus Adyen-yhdistimellä](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

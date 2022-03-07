@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6d3a4ae8efd438e01c263af1c0a1746d9484e491
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 442a5f5b321833c170cfecc4069e62a1254605cd
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103095"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270477"
 ---
 # <a name="predefined-product-variants"></a>Ennalta määritellyt tuotevariantit
 
@@ -84,9 +84,12 @@ Tämä ominaisuus lisää seuraavat parannukset:
 - **Varianttiehdotusten lykätty luominen::** **Varianttiehdotukset**-sivun ensimmäisellä avauskerralla ei enää näytetä ehdotuksia. Sen sijaan sinun on nimenomaisesti valittava haluamasi arvot ja luotava yhdistelmät valitsemalla **Ehdota**-painike. Näin prosessi on näkyvämpi ja vuorovaikutteisempi.
 - **Dimension arvojen valitseminen:** Kun dimension arvoja on useita, käyttäjä haluaa yleensä luoda varianttiehdotuksia, jotka sisältävät vain joitakin arvoja (kuten uuden väri- tai tyylijoukon esittely). Tämän parannetun suunnittelun avulla käyttäjä voi valita ne dimension arvot, joille tuotevarianttiehdotukset halutaan luoda. Tämä kasvattaa suuresti ehdotettujen varianttien relevanssia ja parantaa sekä järjestelmän suorituskykyä että käyttäjän tuottavuutta.
 
-### <a name="turn-the-variant-suggestions-page-improvements-feature-on-or-off"></a>Muuttujaehdotus-sivun parannustoiminnon ottaminen käyttöön tai pois käytöstä
+### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a>Muuttujaehdotus-sivun parannustoiminnon ottaminen käyttöön
 
-Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Muuttujaehdotukset-sivun parannukset* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Ennen kuin voit käyttää *Muuttujaehdotukset-sivun parannukset* -toimintoa, sen pitää olla otettu käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+
+- **Moduuli:** *Tuotetietojen hallinta*
+- **Ominaisuuden nimi:** *Muuttujaehdotukset-sivun parannukset*
 
 ### <a name="work-with-the-improved-variant-suggestions"></a>Paranneltujen muuttujaehdotusten käyttäminen
 

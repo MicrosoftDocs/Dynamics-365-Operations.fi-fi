@@ -2,28 +2,25 @@
 title: Johdetut kirjat
 description: Tässä artikkelissa on yleiskuvaus johdetun kirjan toiminnoista.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c31116ba234bd1fce445ac382fe8f8aea263a66
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e3bb4d5ac566ef361ff0b7e34823e11eeb6c979d058130c50a4618997fd50a3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442875"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712434"
 ---
 # <a name="derived-books"></a>Johdetut kirjat
 
@@ -48,3 +45,6 @@ Lisätietoja on kohdassa [Kirjaaminen johdetuissa kirjoissa](post-derived-value-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

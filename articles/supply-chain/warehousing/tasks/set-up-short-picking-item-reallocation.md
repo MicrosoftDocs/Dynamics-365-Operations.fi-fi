@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3ecd05add44bacae517109f8bab2cb43376fe07c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427428"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216808"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
 
@@ -64,3 +63,6 @@ Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 6. Valitse luettelosta **Käyttäjätunnus**. Esimerkki: 24.
 7. Laajenna **Työ**-pikavälilehti.
 8. Valitse **Salli manuaalinen nimikkeen uudelleenkohdistus** -kentässä **Kyllä**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

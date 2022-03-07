@@ -2,27 +2,24 @@
 title: Määritä lisämääritykset
 description: Tässä menettelyssä kerrotaan, miten lisämaksun määritys määritetään.
 author: ShylaThompson
-manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSAccessorialAssignment
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d7f48da374a0434130f2cf95bf77a126635cd63
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 8719ad35ced03cd5e52140303d4bc6b76c9f2d42ae0fc93b613343634506a8ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771152"
 ---
 # <a name="set-up-accessorial-assignments"></a>Määritä lisämääritykset
 
@@ -50,3 +47,6 @@ Tässä menettelyssä kerrotaan, miten lisämaksun määritys määritetään. K
 14. Syötä Lisämaksu-kenttään numero.
 15. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

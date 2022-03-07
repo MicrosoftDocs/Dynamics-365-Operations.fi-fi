@@ -2,9 +2,11 @@
 title: Maksut selvitetään automaattisesti, ennen kuin tilaukset laskutetaan tai lähetetään
 description: Tämä ohjeaihe antaa vianmääritysohjeet, jotka voivat auttaa, kun maksu selvitetään Adyen-portaalissa heti tilauksen tekemisen jälkeen, vaikka myyntitilausta ei ole laskutettu eikä lähetetty.
 author: Reza-Assadi
+manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: cc5167be43cccfd024ffdc65eb5f4dcac7e187288522d95be2385f8e7fdf106e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 788854a3119eb9ffaf839beb93a5bc15cdcd6387
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718644"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585303"
 ---
 # <a name="payments-are-automatically-settled-before-orders-are-invoiced-or-shipped"></a>Maksut selvitetään automaattisesti, ennen kuin tilaukset laskutetaan tai lähetetään
 
@@ -43,12 +45,12 @@ Voit konfiguroida sähköisen kaupankäynnin maksujen manuaalisen sieppauksen Ad
 1. Valitse yläreunan siirtymispalkissa **Tili** ja valitse sitten **Asetukset**.
 1. Valitse **Siepausviive**-kentästä **manuaalinen**.
 
-    ![Sieppausviive-asetus Adyen-portaalissa.](media/adyen-capture-delay.jpg)
+    ![Siepausviive-asetus Adyen-portaalissa](media/adyen-capture-delay.jpg)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Adyen-maksun sieppaus](https://docs.adyen.com/point-of-sale/capturing-payments)
 
-[Dynamics 365 Payment Connector Adyenia varten](../dev-itpro/adyen-connector.md)
+[Dynamics 365 -maksuyhdistin Adyenia varten](../dev-itpro/adyen-connector.md)
 
 [Dynamics 365:n Adyen-maksuyhdistimen määritys](https://docs.adyen.com/plugins/microsoft-dynamics)

@@ -2,35 +2,30 @@
 title: Tehtäväluetteloiden luominen ja tehtävien lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten tehtäväluettelot luodaan ja miten niihin lisätään tehtäviä Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 1cab31784db9f3242dce20e98762088436a5a8f8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756522"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Tehtäväluetteloiden luominen ja tehtävien lisääminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten tehtäväluettelot luodaan ja miten niihin lisätään tehtäviä Microsoft Dynamics 365 Commerce -sovelluksessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 *Tehtävä* määrittää tietyn työn tai toiminnon, joka on suoritettava tiettynä eräpäivänä tai ennen sitä. Dynamics 365 Commerce -sovelluksessa tehtävä voi sisältää eriteltyjä ohjeita ja tietoja yhteyshenkilöstä. Se voi sisältää myös linkkejä taustatoimintoihin, myyntipistetoimintoihin tai sivuston sivuihin. Tämä auttaa parantamaan tuottavuutta ja määrittämään kontekstin, jonka avulla tehtävän omistaja voi suorittaa tehtävän tehokkaasti.
 
@@ -75,7 +70,7 @@ Voit lisätä linkkejä tehtävää luodessasi seuraavasti.
 
 Seuraavassa kuvassa on tehtävän linkkien valikoima **Muokkaa tehtävää** -valintaikkunassa.
 
-![Tehtävän linkkien valitseminen Muokkaa tehtävää -valintaikkunassa](media/HQ-POS-Tasks-Linking.png)
+![Tehtävän linkkien valitseminen Muokkaa tehtävää -valintaikkunassa.](media/HQ-POS-Tasks-Linking.png)
 
 ### <a name="configure-a-pos-operation-so-that-it-can-be-linked-to-a-task"></a>Myyntipistetoiminnon määrittäminen niin, että se voidaan linkittää tehtävään
 
@@ -93,3 +88,6 @@ Jos haluat määrittää myyntipistetoiminnon niin, että se voidaan linkittää
 [Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille](task-mgmt-assign-lists.md)
 
 [Tehtävien hallinta myyntipisteessä](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

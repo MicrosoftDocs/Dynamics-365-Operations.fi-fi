@@ -2,11 +2,9 @@
 title: Varianttiryhmän luonti
 description: Tässä aiheessa kuvataan, miten tuotteelle luodaan koko-, tyyli- tai värivarianttiryhmiä Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailSizeGroupTable, ConfigGroupIdLookup, RetailStyleGroupTable
 audience: Application User
@@ -17,21 +15,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e19d9a2549fa9957126592f3db7e468147997261
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749928"
 ---
-# <a name="create-a-variant-group"></a>Varianttiryhmän luonti
+# <a name="create-a-variant-group"></a>Varianttiryhmän luominen
 
 
 [!include [banner](includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten tuotteelle luodaan koko-, tyyli- tai värivarianttiryhmiä Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce tukee tuotteelle useita variantteja. Varianttiryhmien määrittäminen eri tuoteluokille on paras ratkaisu. Esimerkiksi t-paidoille voidaan luoda kokoryhmä, joka sisältää koot XS, S, M, L ja XL, tai väriryhmä, joka sisältää kaikki tuotteen saatavilla olevat värivaihtoehdot. Varianttiryhmät kannattaa lisätä ennen tuotteiden lisäämistä.
 
@@ -63,7 +61,7 @@ Voit lisätä määritteitä kokoryhmään seuraavasti.
 
 Seuraavassa kuvassa on esimerkki rentojen paitakokojen kokoryhmästä.
 
-![Kokoryhmän luominen](media/create-variant-group.png)
+![Kokoryhmän luominen.](media/create-variant-group.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -72,3 +70,6 @@ Seuraavassa kuvassa on esimerkki rentojen paitakokojen kokoryhmästä.
 [Vähittäismyyntituotteiden määrittäminen](set-up-retail-products.md)
 
 [Tuotedimensiot](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Oheislaitteet
 description: Tässä aiheessa esitellään Commercen oheislaitteisiin liittyvät käsitteet.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412091"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857270"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
@@ -145,6 +142,9 @@ Universaali Windows-ympäristö (UWP) liittyy oheislaitteissa käyttövalmiiden 
 ### <a name="keyboard-wedge"></a>Näppäimistön kortinlukija
 
 Näppäimistön kortinlukulaitteet lähettävät tiedot tietokoneelle niin kuin ne olisi kirjoitettu näppäimistön avulla. Tämän vuoksi myyntipisteen aktiivinen kenttä vastaanottaa skannerilla luetut tai lukupään avulla luetut tiedot. Joissakin tapauksissa tämä toiminto voi aiheuttaa väärien tietojen lukemisen kenttään. Esimerkiksi viivakoodi voidaan lukea kenttään, joka on tarkoitettu luottokorttitiedoille. Useissa tapauksissa myyntipiste sisältää logiikan, joka määrittää luetut tiedot viivakoodin tai kortin lukemiseksi. Tämän vuoksi tietojen käsittely tapahtuu oikein. Jos laitteet on kuitenkin määritetty OPOS-laitteiksi näppäimistön kortinlukijalaitteiden sijaan, laitteiden tietojen käyttämiseen liittyy enemmän ohjausta. Tämä johtuu siitä, että laitteesta, josta tiedot ovat peräisin, tiedetään enemmän. Esimerkiksi viivakoodin lukulaitteen tiedot tunnistetaan automaattisesti viivakoodiksi ja tietokannan liittyvä tietue löytyy helpommin ja nopeammin kuin silloin, kun käytössä esimerkiksi näppäimistön kortinlukijalaitteissa käytettävä yleinen merkkijonohaku.
+
+> [!NOTE]
+> Kun kassapäätteessä käytetään näppäimistön wedge-skanneria, ne on ohjelmoitu lähettämään kuljetuspalautus tai **anna** tapahtuma viimeisen skannatun merkin jälkeen. Jos tätä määritystä ei tehdä, näppäimistön wedge-skannerit eivät toimi oikein. Laitteen valmistajan toimittamassa dokumentaatiossa on tietoja kuljetuspalautustapahtuman lisäämisistä.  
 
 ### <a name="native-printer"></a>Alkuperäinen tulostin
 
@@ -763,7 +763,6 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 | Epson        | TM-T88V  | OPOS      |                           |
 | Epson        | TM-T88   | Mukautettu    | Yhdistetty verkon välityksellä     |
 | Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä     |
-| Star         | TSP100   | OPOS      | Vaatii TSP650II-ohjaimet |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### <a name="payment-terminal"></a>Maksupääte
@@ -837,3 +836,6 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 [Commercen oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

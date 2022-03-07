@@ -3,25 +3,26 @@ title: Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 description: Tässä ohjeaiheessa keskitytään aiheisiin, joissa käsitellään Dynamics 365 Supply Chain Managementin kunkin version uusia ja muutettuja toimintoja.
 author: kamaybac
 manager: tfehr
-ms.date: 12/08/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3350afc5f9537a0bd97b9c5257a66039b9dcb55c
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.openlocfilehash: 77649e310be218fdea8578e974885101c5587722
+ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014555"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4700978"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet
 
@@ -33,7 +34,6 @@ Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Dynamics 3
 
 | Versio | Koontikäännös | Automaattisten päivitysten saatavuus | Lisätietoja |
 |---|---|---|---|
-| 10.0.16 | 10.0.689 | Helmikuun 2021. | [Dynamics 365 Supply Chain Managementin version 10.0.16 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-16.md) |
 | 10.0.15 | 10.0.644 | 2021. tammikuuta | [Dynamics 365 Supply Chain Managementin version 10.0.15 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-15.md) |
 | 10.0.14 | 10.0.605 | marraskuu 2020 | [Dynamics 365 Supply Chain Managementin version 10.0.14 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-14.md) |
 | 10.0.13 | 10.0.569 | 2020. lokakuuta | [Dynamics 365 Supply Chain Managementin version 10.0.13 uudet ja muuttuneet ominaisuudet](whats-new-scm-10-0-13.md) |

@@ -1,33 +1,30 @@
 ---
 title: Luo päätili
-description: Tässä tehtäväopastuksessa käsitellään päätilin lisäämistä aiemmin luotuun tilikarttaan.
+description: Tässä menettelyssä käsitellään päätilin lisäämistä aiemmin luotuun tilikarttaan.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MainAccount, CompanyInfoList
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a116164a31337013d34f963b549c394aade2de1c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cbc93e2d2aec1ffcfa755c46553022931bc24c5b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442672"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394632"
 ---
 # <a name="create-a-main-account"></a>Luo päätili
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä tehtäväopastuksessa käsitellään päätilin lisäämistä aiemmin luotuun tilikarttaan. Tässä tallenteessa käytetään esittely-yritystä USMF.  
+Tässä menettelyssä käsitellään päätilin lisäämistä aiemmin luotuun tilikarttaan. Tässä tallenteessa käytetään esittely-yritystä USMF.  
 
 1. Valitse **Siirtymisruutu > Moduulit > Kirjanpito > Tilikartta > Tilit > Päätilit**.
 2. Valitse **Uusi**.
@@ -52,3 +49,6 @@ Tässä tehtäväopastuksessa käsitellään päätilin lisäämistä aiemmin lu
 21. Valitse **Valuutan muuntotyyppi** -kentässä menetelmä, jolla tilin vaihtokurssit lasketaan.
 22. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

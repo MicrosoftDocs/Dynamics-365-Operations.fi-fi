@@ -2,11 +2,9 @@
 title: Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta
 description: Tässä ohjeaiheessa selitetään, miten sähköisiä raportointikokoonpanoja ladataan Configuration Service -palvelun yleisestä tietovarastosta.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679555"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605328"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](general-electronic-reporting.md#Configuration) ladataan palvelun yleisestä tietovarastosta. Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](general-electronic-reporting.md#Configuration) ladataan palvelun yleisestä tietovarastosta. Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Konfiguraatiosäilön avaaminen
 
@@ -42,7 +40,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 3. Valitse **Konfiguraation lähteet** -osassa **Microsoft**-ruutu.
 3. Valitse **Microsoft**-ruudusta **Säilöt**.
 
-    ![Sähköisen raportoinnin työtila](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Sähköisen raportoinnin työtila.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. Valitse **Konfiguraatiosäilöt**-sivun ruudukossa oleva säilö, jonka tyyppi on **Yleinen**. Jos säilöä ei ole ruudukossa, noudata seuraavia ohjeita:
 
@@ -54,7 +52,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 
 5. Valitsemalla **Avaa** voit tarkastella valitun säilön ER-konfiguraatioita.
 
-    ![Konfiguraatiosäilöjen sivu](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfiguraatiosäilöjen sivu.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Tuo yksi määritys
 
@@ -65,7 +63,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
     > [!NOTE]
     > **Tuo**-painike ei ole käytettävissä ER-määritysversioille, jotka on jo ladattu nykyiseen Finance-esiintymään.
 
-    ![Konfiguraatiosäilön sivu](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfiguraatiotietovarastosivu, Konfiguroinnit-pikavälilehti.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Tuo suodatetut määritykset
 
@@ -79,7 +77,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 4. Lataa suodatetut konfiguraatiot yleisestä tietovarastosta nykyiseen esiintymään valitsemalla **Konfiguraatiot**-pikavälilehdessä **Tuo**.
 5. Voit tyhjentää määritetyt valintaehdot valitsemalla **Konfiguraatiot**-pikavälilehdessä **Nollaa suodatin**.
 
-    ![Konfiguraatiosäilön sivu](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurointitietovarastosivu, Versiot-pikavälilehti, Tuo-painike.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > ER-asetusten mukaan määritykset tarkistetaan tuonnin jälkeen. Voit saada ilmoituksia havaituista epäyhtenäisyysongelmista. Ennen kuin voit käyttää tuotua konfiguraatioversiota, kyseiset ongelmat on ratkaistava. Lisätietoja saat tähän aiheeseen liittyvistä resursseista.
@@ -90,3 +88,6 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,37 +1,31 @@
 ---
 title: Oletusasiakkaan luominen
-description: Tässä aiheessa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Dynamics 365 Commercessa luodaan kanavaa.
+description: Tässä aiheessa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Microsoft Dynamics 365 Commercessa luodaan kanavaa.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720956"
 ---
 # <a name="create-a-default-customer"></a>Oletusasiakkaan luominen
 
-
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Dynamics 365 Commercessa luodaan kanavaa.
-
-## <a name="overview"></a>Yleiskatsaus
+Tässä aiheessa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Microsoft Dynamics 365 Commercessa luodaan kanavaa.
 
 Kun luot kanavaa, sinun on määritettävä oletusasiakas. Oletusasiakas on helppo luoda, kun asiakasryhmä ja asiakasosoitekirja on luotu ensin.
 
@@ -53,7 +47,7 @@ Luo asiakasryhmä noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa näkyy useista määritettyjä asiakasryhmiä.
 
-![Asiakasryhmät](media/customer-groups.png)
+![Asiakasryhmät.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Luo uusi asiakkaan osoitekirja
 
@@ -69,7 +63,7 @@ Luo osoitekirja noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa näkyy esimerkki osoitekirjasta.
 
-![Osoitekirja](media/address-book.png)
+![Osoitekirja.](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Oletusasiakkaan luominen
 
@@ -92,11 +86,11 @@ Luo oletusasiakas noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa näkyy esimerkki asiakkaan luomisesta.
 
-![Oletusasiakkaan luominen](media/default-customer-creation.png)
+![Oletusasiakkaan luominen.](media/default-customer-creation.png)
 
 Seuraavassa kuvassa näkyy oletusarvoinen asiakasmääritys.
 
-![Esimerkkiasiakkaan määritys](media/default-customer-configuration1.png)
+![Esimerkkiasiakkaan määritys.](media/default-customer-configuration1.png)
 
 Useimmat asiakastietonäytön oletusarvot voidaan säilyttää, mutta kaksi arvoa on muutettava.
 
@@ -106,10 +100,13 @@ Useimmat asiakastietonäytön oletusarvot voidaan säilyttää, mutta kaksi arvo
 
 Seuraavassa kuvassa näkyy esimerkki asiakasmäärityksestä.
 
-![Esimerkkiasiakkaan määritys](media/default-customer-configuration2.png)
+![Esimerkkiasiakkaan määritys.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanava-asetusten edellytykset](channels-prerequisites.md)
+[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

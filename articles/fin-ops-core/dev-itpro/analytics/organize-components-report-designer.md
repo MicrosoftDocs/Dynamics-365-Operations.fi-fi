@@ -1,12 +1,10 @@
 ---
-title: Järjestä Report Designerin raporttiosat
-description: Kun olet suunnitellut rakennusosat ja luonut raportit, kyseiset objektit kannattaa järjestää niin, että käyttäjien on helppo löytää ne. Tässä artikkelissa käsitellään aiemmin luotujen Report Designerin raporttien, rakennusosien ja objektien järjestämistä.
+title: Raporttien suunnitteluohjelman raporttikomponenttien järjestäminen
+description: Tässä aiheessa käsitellään aiemmin luotujen raporttien suunnitteluohjelman raporttien, rakennusosien ja objektien järjestämistä.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6b30e7e480edb50bb9509e270806224755f98e38111cda0c1cae86a0f56eb193
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685808"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763521"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Järjestä Report Designerin raporttiosat
 
@@ -49,7 +47,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 ### <a name="create-a-report-group"></a>Raporttiryhmän luonti
 
 1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
-2. Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit vaihtoehtoisesti napsauttaa työkalurivillä **Raporttiryhmä**-painiketta ![Raporttiryhmä](media/report-group.gif "Raporttiryhmä").
+2. Avaa uusi raporttiryhmä katseluohjelman ikkunassa valitsemalla **Tiedosto**-valikossa **Uusi** &gt; **Raporttiryhmän määritys**. Voit myös napsauttaa **Raporttiryhmä**-painiketta ![Raporttiryhmä.](media/report-group.gif "Raporttiryhmä"). työkaluriviltä.
 3. Valitse **Raporttiryhmä**-välilehti. Ohittaaksesi yksittäisiä raportin määrityksiä koskevat tiedot tätä raporttia luotaessa, valitse **Ohita yritys-, tiedot- ja päivä-määritykset yksittäisissä raporttimäärityksissä** -valintaruutu. Yrityksen nimi, tietojen taso, alustava asetus ja päivämäärätiedot täytetään automaattisesti, mutta voit tehdä päivityksiä.
 4. Jos haluat luoda useita raportointivaluutan näyttäviä raportteja, valitse **Sisällytä kaikki raportointivaluutat** -valintaruutu. Voit sitten käyttää useita näkymiä valitsemalla **Valuutta**-painikkeen verkkokatseluohjelmassa, kun katsot raporttia.
 5. Valitse raporttiryhmään sisällytettävät raportit valitsemalla **Ryhmän raportit** -kentässä **Lisää**. Jos haluat valita useita raportteja **Lisää**-valintaikkunassa, pidä Ctrl-näppäintä painettuna valitessasi raportteja. Kun olet valinnut raportit, valitse **OK**.
@@ -60,7 +58,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
 2. Kaksoisnapsauta muokattavaa raporttiryhmää.
 3. Tee tarvittavat muutokset **Raporttiryhmä**-välilehdessä.
-4. Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikossa **Tallenna**. Vaihtoehtoisesti voi napsauttaa työkalurivillä **Tallenna**-painiketta ![Tallenna](media/save.gif "Tallenna").
+4. Tallenna muokattu raporttiryhmä valitsemalla **Tiedosto**-valikosta **Tallenna**. Voit myös napsauttaa **Tallenna**-painiketta ![Tallenna](media/save.gif "Tallenna") työkaluriviltä.
 
 > [HUOMAUTUS] Jos olet ajoittanut raporttien luonnin tapahtumaan tietyin väliajoin, voit ohittaa nämä asetukset ja luoda raportin heti.
 
@@ -68,7 +66,7 @@ Voit ryhmitellä raporttimäärityksiä luodaksesi useita raportteja samanaikais
 
 1. Valitse Report Designerin siirtymisruudussa **Raporttiryhmät**.
 2. Avaa luotava raporttiryhmä.
-3. Luo raportteja napsauttamalla **Luo raportti** -painiketta ![Luo raportti](media/generate-report.gif "Luo raportti").
+3. Napsauta **Luo raportti** -painiketta ![Luo raportti.](media/generate-report.gif "Luo raportti") luodaksesi raportteja.
 
 ### <a name="delete-a-report-group"></a>Raporttiryhmän poistaminen
 
@@ -148,3 +146,6 @@ Vain oletusarvoiset perusjaksoasetukset tallennetaan raportin määrityksiin.</t
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportointi](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

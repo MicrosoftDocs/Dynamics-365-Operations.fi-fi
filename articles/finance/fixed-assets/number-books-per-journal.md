@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: 7f266e458802e65f0955ae8f8933f9bee2eca972
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650658"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256712"
 ---
 # <a name="number-of-books-per-journal"></a>Kirjojen määrä kirjauskansiota kohti
 
@@ -46,4 +45,10 @@ Eräkäsittelytyö sulkee pois suljetut kirjat. Esimerkiksi poistojen eräajossa
 
 Kirjojen määrää rajoitetaan, jos samassa kirjauskansiossa ei ole päällekkäisiä käyttöomaisuuerien tunnuksia. Jos käyttöomaisuuserän tunnus on kuitenkin sama kuin kirjan tunnus, kirjauskansion kirjojen määrä voidaan ylittää, jotta käyttöomaisuustunnus säilyy samassa kirjauskansiossa.
 
-Jos esimerkiksi käyttöomaisuustunnuksia on 5 001, kuhunkin käyttöomaisuustunnukseen liitetään kolme kirjaa ja kukin käyttöomaisuuskirja kirjataan samalle kirjaustasolle. Poisto suoritetaan kolmen peräkkäisen kuukauden ajan ilman yhteenvetoa. Poistokirjauskansio luodaan erätyönä, ja järjestelmä luo seitsemän kirjauskansiota, joissa on 667 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Tuloksena on 2 001 kirjaa. Tämän vuoksi kolmen kuukauden aikana on 6 003 kirjauskansioriviä ylläpitävät samoja käyttöomaisuustunnuksia samassa kirjauskansiossa. Järjestelmä luo myös yhden kirjauskansion, jossa on 332 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Kolmessa kuukaudessa saadaan 2 988 riviä.
+Jos esimerkiksi käyttöomaisuustunnuksia on 5 001, kuhunkin käyttöomaisuustunnukseen liitetään kolme kirjaa ja kukin käyttöomaisuuskirja kirjataan samalle kirjaustasolle. Poisto suoritetaan kolmen peräkkäisen kuukauden ajan ilman yhteenvetoa.  Poistokirjauskansio luodaan erätyönä, ja järjestelmä luo seitsemän kirjauskansiota, joissa on 667 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Tuloksena on 2 001 kirjaa. Tämän vuoksi kolmen kuukauden aikana on 6 003 kirjauskansioriviä ylläpitävät samoja käyttöomaisuustunnuksia samassa kirjauskansiossa. Järjestelmä luo myös yhden kirjauskansion, jossa on 332 käyttöomaisuustunnusta ja kolme kirjaa kutakin käyttöomaisuustunnusta kohden. Kolmessa kuukaudessa saadaan 2 988 riviä.
+
+> [!Note] 
+> Jos **Tee yhteenveto poistoista** -parametri on käytössä poistoehdotusta luotaessa, **Kirjojen määrä kirjauskansiota kohti – poistoehtotus** -kentän arvolla ei ole vaikutusta. Tässä tapauksessa kirjauskansiokohtainen kirjamäärä on 6 000 eli sisäinen määritetty raja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

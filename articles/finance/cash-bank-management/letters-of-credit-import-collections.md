@@ -2,28 +2,25 @@
 title: Luottokirjeet ja tuontiperittävät
 description: Tässä artikkelissa on yleisiä tietoja remburssista ja tuontiperittävistä. Molempia pankkitositteita käytetään usein valtioiden rajojen yli tapahtuvassa tavaroiden ostossa ja myynnissä.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c31b8af25ea231f23ac5f4968760257b3f5894f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c59a4f098ac19223c5b2fb6808d18d8fea4f4290
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442784"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815929"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Luottokirjeet ja tuontiperittävät
 
@@ -54,3 +51,6 @@ Tuontiperittävän avulla on mahdollista varmistaa, että myyjä saa maksun, kun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

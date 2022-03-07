@@ -2,35 +2,30 @@
 title: Dynamics 365 Commerce -arviointiympäristön määritykset
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen arviointiympäristön, kun se on valmisteltu.
 author: psimolin
-manager: annbe
-ms.date: 07/16/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411864"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913724"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön määritykset
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen arviointiympäristön, kun se on valmisteltu.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Suorita tämän ohjeaiheen toimet vasta, kun Commercen arviointiympäristö on valmisteltu. Lisätietoja Commercen arviointiympäristön valmistelusta on kohdasta [Commercen arviointiympäristön valmisteleminen](provisioning-guide.md).
 
@@ -44,6 +39,7 @@ Kun Commercen arviointiympäristö on valmisteltu kokonaisuudessaan, valmistelun
 1. Valitse ympäristö luettelosta.
 1. Valitse oikealla ympäristön tiedoista **Kirjaudu ympäristöön**. Siirryt Commercen pääkonttorisovellukseen.
 1. Varmista, että valittuna on **USRT**-yritys oikealla yläkulmassa.
+2. Siirry kohtaan **Commerce-parametrit > Määritysparametrit** ja varmista, että **ProductSearch.UseAzureSearch**-merkinnän arvo on **tosi**. Jos tämä merkintä puuttuu, voit lisätä tämän merkinnän ja suorittaa **kanavatietokanta > täysi synkronointi** eCommerce-sivustoon liittyvälle Commerce Scale Unitille.
 
 Varmista Commercen pääkonttorissa tehtävien valmistelun jälkeisten toimintojen aikana, että **USRT**-yritys on koko ajan valittuna.
 
@@ -111,6 +107,12 @@ Voit ottaa käyttöön työt Commercessa seuraavien vaiheiden avulla.
     1. Valitse toimintoruudussa **Erätyö**-välilehdellä **Muuta tila**.
     1. Valitse ensin **Peruuttaminen** ja sitten **OK**.
 
+1. Jos työn tila on **Pidätetty**, seuraa näitä vaiheita:
+
+    1. Valitse tietue.
+    1. Valitse toimintoruudussa **Erätyö**-välilehdellä **Muuta tila**.
+    1. Valitse **Odottaa** ja valitse sitten **OK**.
+
 Vaihtoehtoisesti voit määrittää toistuvuusvälin yhteen (1) minuuttiin seuraavissa töissä:
 
 * Vähittäismyyntitilauksen sähköposti-ilmoitustyön käsittely
@@ -133,7 +135,7 @@ Suorita täydellinen tietojen synkronointi Commercessa, toimi seuraavasti Commer
 Voit käyttää seuraavia luottokortin testitietoja sivuston testitapahtumien suorittamisessa:
 
 - **Kortin numero:** 4111-1111-1111-1111
-- **Vanhentumispäivä:** 10/20
+- **Vanhentumispäivä:** 10/30
 - **Kortin tarkistusnumero (CVV) -koodi:** 737
 
 > [!IMPORTANT]
@@ -144,6 +146,9 @@ Voit käyttää seuraavia luottokortin testitietoja sivuston testitapahtumien su
 Kun valmistelu- ja määritysvaiheet on suoritettu, voit aloittaa arviointiympäristön käytön. Siirry sisällönluontikokemukseen Commercen sivustonmuodostimen URL-osoitteen avulla. Siirry vähittäismyynnin asiakassivustokokemukseen Commercen sivuston URL-osoitteen avulla.
 
 Lisätietoja Commercen arviointiympäristön valinnaisten ominaisuuksien määrittämisestä on kohdassa [Commercen arviointiympäristön valinnaisten ominaisuuksien määrittäminen](cpe-optional-features.md).
+
+> [!NOTE]
+> Commerce-arviointiympäristöihin ladattu valmiiksi Azure Active Directory (Azure AD) kuluttajakauppavuokraaja esittelyä varten. Arviointiympäristöissä ei tarvitse määrittää omaa Azure AD -kuluttajakauppavuokraajaa. Jos arviointiympäristö kuitenkin määritetään käyttämään omaa Azure AD -kuluttajakauppavuokraajaa, ``https://login.commerce.dynamics.com/_msdyn365/authresp`` on muistettava lisätä Azure AD -kuluttajakauppasovellukseen URL-vastausosoitteena Azure-portaalin kautta.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -157,10 +162,15 @@ Lisätietoja Commercen arviointiympäristön valinnaisten ominaisuuksien määri
 
 [Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce -sivusto](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Kuluttajakaupan vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

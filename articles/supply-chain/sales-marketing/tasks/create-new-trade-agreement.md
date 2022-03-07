@@ -1,24 +1,27 @@
 ---
 title: Luo uusi kauppasopimus
 description: Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidään tuotteen tietyn asiakkaan kanssa sovittu uusi hinta.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16a39d95605900be0fa1e339b8cd0755ba85189
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573414"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426878"
 ---
 # <a name="create-a-new-trade-agreement"></a>Luo uusi kauppasopimus
 
@@ -26,8 +29,8 @@ ms.locfileid: "7573414"
 
 Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidään tuotteen tietyn asiakkaan kanssa sovittu uusi hinta. Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää omia tietojasi. Jos käytät omia tietojasi, varmista ennen tämän ohjeen käyttöä, että kauppasopimuksen kirjauskansion nimi on kohteeseen, jossa Oletussuhde-arvoksi on valittu Hinta (myynti).
 
-## <a name="create-and-post-a-new-trade-agreement-journal"></a>Luo ja kirjaa uusi kauppasopimuksen kirjauskansi
 
+## <a name="create-and-post-a-new-trade-agreement-journal"></a>Luo ja kirjaa uusi kauppasopimuksen kirjauskansi
 1. Valitse **Siirtymisruutu > Moduulit >Myynti ja markkinointi > Hinnat ja alennukset > Kauppasopimuksen kirjauskansiot**.
 2. Valitse **Uusi**.
 3. Avaa haku valitsemalla **Nimi**-kentässä avattavan valikon painike.
@@ -58,27 +61,15 @@ Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidä�
 20. Valitse **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Näytä tuotteen kauppasopimukset
-
 1. Valitse **Siirtymisruutu > Moduulit > Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet**.
 2. Etsi ja valitse luettelosta tuote, jonka hinnan päivitit.
 3. Valitse **toimintoruudussa** **Myynti**.
 4. Valitse **Näytä kauppasopimukset**.
     
-    Tarkastele juuri luodun hinnan kauppasopimuksen tietoja.
+    Tarkastele juuri luodun hinnan kauppasopimuksen tietoja.    
 
 5. Sulje sivu.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-
-### <a name="whitepaper"></a>Tekninen raportti
-
-Lisätietoja saa lataamalla seuraava tekninen raportti (joka on kirjoitettu tukemaan AX2012-versiota, mutta koskee myös Dynamics 365 Supply Chain Managementia)
-
-- [Kauppasopimukset](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
-
 ### <a name="community-blogs"></a>Yhteisöblogit
-
 - [Dynamics 365 for Finance and Operationsin myyntihinnat](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

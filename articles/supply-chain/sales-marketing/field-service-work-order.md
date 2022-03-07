@@ -1,40 +1,37 @@
 ---
 title: Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin
 description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Field Servicen työtilaukset synkronoidaan Supply Chain Managementin myyntitilauksiin.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528920"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061306"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Field Servicen työtilaukset synkronoidaan Dynamics 365 Supply Chain Managementin myyntitilauksiin.
 
-[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
@@ -62,13 +59,13 @@ Seuraavat synkronointitehtävät tarvitaan, ennen kuin myyntitilausten otsikot j
 
 | **Field Service** | **Toimitusketjun hallinta** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS-myyntitilauksien otsikot |
-| msdyn_workorderservices | CDS-myyntitilausrivit   |
-| msdyn_workorderproducts | CDS-myyntitilausrivit   |
+| msdyn_workorders        | Dataversen myyntitilauksen otsikot |
+| msdyn_workorderservices | Dataversen myyntitilausrivit   |
+| msdyn_workorderproducts | Dataversen myyntitilausrivit   |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Työtilaukset luodaan Field Servicessä. Jos työtilaukset sisältävät vain ulkoisesti ylläpidettäviä tuotteita ja jos **Työtilauksen tila** -arvo on jokin muu kuin **Avoin - ajoittamaton** ja **Suljettu - peruutettu**, työtilaukset voidaan synkronoida Supply Chain Managementiin Common Data Service -tietojen integrointiprojektin kautta. Työtilausten päivitykset synkronoidaan myyntitilauksina Supply Chain Managementissa. Nämä päivitykset sisältävät tietoja alkuperän tyypistä ja tilasta.
+Työtilaukset luodaan Field Servicessä. Jos työtilaukset sisältävät vain ulkoisesti ylläpidettäviä tuotteita ja jos **Työtilauksen tila** -arvo on jokin muu kuin **Avoin - ajoittamaton** ja **Suljettu - peruutettu**, työtilaukset voidaan synkronoida Supply Chain Managementiin Microsoft Dataverse -tietojen integrointiprojektin kautta. Työtilausten päivitykset synkronoidaan myyntitilauksina Supply Chain Managementissa. Nämä päivitykset sisältävät tietoja alkuperän tyypistä ja tilasta.
 
 ## <a name="estimated-versus-used"></a>Ennakkolasketun ja käytetyn vertailu
 
@@ -91,21 +88,21 @@ Seuraavassa taulukossa on yhteenveto erilaisten tuoterivien yhdistelmistä.
 | Järjestelmän tila <br>(Field Service) | Rivin tila <br>(Field Service) | Kohdistettu <br>(Field Service) |Synkronoitu arvo <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Avoin - ajoitettu   | Ennakkolaskettu   | Kyllä       | Ennakkolaskettu                       |
-| Avoin - ajoitettu   | Ennakkolaskettu   | En        | Käytetty                            |
+| Avoin - ajoitettu   | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Avoin - ajoitettu   | Käytetty        | Kyllä       | Käytetty                            |
-| Avoin - ajoitettu   | Käytetty        | En        | Käytetty                            |
+| Avoin - ajoitettu   | Käytetty        | Ei        | Käytetty                            |
 | Avoin - käsittelyssä | Ennakkolaskettu   | Kyllä       | Ennakkolaskettu                       |
-| Avoin - käsittelyssä | Ennakkolaskettu   | En        | Käytetty                            |
+| Avoin - käsittelyssä | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Avoin - käsittelyssä | Käytetty        | Kyllä       | Käytetty                            |
-| Avoin - käsittelyssä | Käytetty        | En        | Käytetty                            |
+| Avoin - käsittelyssä | Käytetty        | Ei        | Käytetty                            |
 | Avoin - valmis   | Ennakkolaskettu   | Kyllä       | Ennakkolaskettu                       |
-| Avoin - valmis   | Ennakkolaskettu   | En        | Käytetty                            |
+| Avoin - valmis   | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Avoin - valmis   | Käytetty        | Kyllä       | Käytetty                            |
-| Avoin - valmis   | Käytetty        | En        | Käytetty                            |
+| Avoin - valmis   | Käytetty        | Ei        | Käytetty                            |
 | Suljettu - kirjattu    | Ennakkolaskettu   | Kyllä       | Käytetty                            |
-| Suljettu - kirjattu    | Ennakkolaskettu   | En        | Käytetty                            |
+| Suljettu - kirjattu    | Ennakkolaskettu   | Ei        | Käytetty                            |
 | Suljettu - kirjattu    | Käytetty        | Kyllä       | Käytetty                            |
-| Suljettu - kirjattu    | Käytetty        | En        | Käytetty                            |
+| Suljettu - kirjattu    | Käytetty        | Ei        | Käytetty                            |
 
 Seuraavassa taulukossa on yhteenveto erilaisten huoltorivien yhdistelmistä.
 
@@ -248,28 +245,31 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 Suodata: (msdyn_systemstatus ne 690970005) ja (msdyn_systemstatus ne 690970000) ja (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineEstimate
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja (msdyn_linestatus eq 690970000) ja (msdynce_headersystemstatus ne 690970004)
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineUsed
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004))
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineEstimate
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja (msdyn_linestatus eq 690970000) ja (msdynce_headersystemstatus ne 690970004) ja (msdyn_allocated eq true)
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Työtilauksista myyntitilauksiksi (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineUsed
 
 Suodata: (msdynce_headersystemstatus ne 690970005) ja (msdynce_headersystemstatus ne 690970000) ja (msdynce_orderhasexternalmaintainedproductsonly eq true) ja ((msdyn_linestatus eq 690970001) tai (msdynce_headersystemstatus eq 690970004) tai (msdyn_allocated ne true))
 
-[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Työtilauksista myyntilaukseen integroitavien tietojen mallin yhdistämismääritys (Field Servicesta Supply Chain Managementiin): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,29 +2,27 @@
 title: Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
 description: Tuotannon käyttöliittymä määritetään jokaiselle tuotannon laitteelle. Yritykset yleensä määrittävät jokaisen laitteen eri tavalla sen perusteella, mikä on laitteen tarkoitus. Yrityksellä voi esimerkiksi olla yksi laite vastaanotossa, jossa työntekijät kuittaavat itsensä sisään ja ulos, ja toinen tuotantotiloissa, joissa työntekijät hallitsevat töitään.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 34e29a43cebeec16357aecb036c534da35820d90ae602d67419a9606afc542ee
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735965"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tuotannon käyttöliittymä määritetään jokaiselle tuotannon laitteelle. Yritykset yleensä määrittävät jokaisen laitteen eri tavalla sen perusteella, mikä on laitteen tarkoitus. Yrityksellä voi esimerkiksi olla yksi laite vastaanotossa, jossa työntekijät kuittaavat itsensä sisään ja ulos, ja toinen tuotantotiloissa, joissa työntekijät hallitsevat töitään.
 
@@ -72,10 +70,13 @@ Tuotannon käyttöliittymä suoritetaan usein laitteessa, jota käytetään vain
 
 Seuraavan kuvan yläosassa näkyy käyttöliittymän oletusulkoasu. Alaosassa näkyy, miltä käyttöliittymä näyttää koko näytön tilassa, kun siirtymisruutu on piilotettu.
 
-![Tavallisen ja koko näytön käyttöliittymän vertailu](media/pfei-full-screen.png "Tavallisen ja koko näytön käyttöliittymän vertailu")
+![Tavallisen ja koko näytön käyttöliittymän vertailu.](media/pfei-full-screen.png "Tavallisen ja koko näytön käyttöliittymän vertailu")
 
 ## <a name="extend-the-session-past-12-hours"></a>Istunnon pidentäminen yli 12 tuntia kestäväksi
 
 Tuotannon käyttöliittymä kirjautuu automaattisesti ulos, jos kukaan ei käytä sitä 12 tuntiin. Supply Chain Managementin käyttäjän on sitten kirjauduttava uudelleen sisään. Aikakatkaisurajan voi kuitenkin pidentää enintään 90 päivään.
 
 Aikakatkaisurajaa voi pidentää kirjautumalla Supply Chain Managementiin ja valitsemalla **Järjestelmän hallinta \> Käyttäjät \> Istunnon laajennukset**. Määritä Supply Chain Managementin käyttäjätili, jota käytetään laitteeseen kirjautumiseen, ja kuinka monta tuntia istunto pysyy aktiivisena.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

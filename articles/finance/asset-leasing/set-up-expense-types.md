@@ -2,13 +2,11 @@
 title: Kulutyyppien määrittäminen
 description: Tässä ohjeaiheessa kerrotaan, kuinka kulutyypit määritetään resurssien vuokrauksessa.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseExpenseTypeTable
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3ab31b16c6ae07466d7655832701e71092064fe1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a1d6667a7c6fe1cd44196f2e753ca72b2ca97649
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969500"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880981"
 ---
 # <a name="set-up-expense-types"></a>Kulutyyppien määrittäminen
 
@@ -58,3 +56,6 @@ Seuraavaksi sinun tulee liittää tilit kulutyyppeihin. Näitä tilejä veloitet
 7. Valitse asianmukaisten kenttien rahoitusleasingsopimuksen päätili ja käyttöleasingsopimuksen päätili.
 
 Kun olet tehnyt nämä vaiheet, voit lisätä kuluja valitun vuokrasopimuksen **Toimeenpanokustannusten maksuaikataulu** -riveillä **Vuokrauksen tiedot** -sivulla. Vaihtoehtoisesti voit lisätä kuluja, kun luot uuden vuokrasopimuksen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

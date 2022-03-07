@@ -1,23 +1,25 @@
 ---
 title: Linkitettyjen tuotteiden määrittäminen
 description: Tässä menettelyssä kerrotaan, miten linkitetyt tuotteen määritetään.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ac45df682da7903517659994db8f51f2ab83453
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8fa38ed951db0b28387c61e23a19381c1c7895d8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568468"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986976"
 ---
 # <a name="configure-linked-products"></a>Linkitettyjen tuotteiden määrittäminen
 
@@ -37,6 +39,3 @@ Tässä menettelyssä kerrotaan, miten linkitetyt tuotteen määritetään. Täs
 10. Kirjoita numero Määrä-kenttään.
 11. Valitse Tallenna.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

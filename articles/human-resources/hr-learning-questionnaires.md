@@ -1,33 +1,35 @@
 ---
 title: Kyselylomakkeet
-description: Tässä artikkelissa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c96be3a46de6ed841331f36114132ca59c236ba2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad5f3572e7b4b0594ffce6abaddceac955d1c678
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418388"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069501"
 ---
 # <a name="questionnaires"></a>Kyselylomakkeet
 
-Tässä artikkelissa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
 
 Voit mukauttaa kyselyä tarpeitasi vastaavaksi Microsoft Dynamics 365 Financen eri toimintojen avulla. Kyselylomakkeen avulla voit esimerkiksi
 
@@ -39,8 +41,11 @@ Voit mukauttaa kyselyä tarpeitasi vastaavaksi Microsoft Dynamics 365 Financen e
 
 Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihin. Saat lisätietoja napsauttamalla linkkejä.
 
-| Aihe| kuvaus|
+| Aihe| Kuvaus|
 |------|------------|
-| [Lomakkeen suunnitteleminen](hr-learning-design-questionnaires.md) | Tämä artikkeli sisältää tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
-| [Kyselylomakkeiden jakelu ja aikataulutus](hr-learning-distribute-questionnaires.md) | Tässä artikkelissa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä. |
-| [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](hr-learning-evaluate-questionnaire-results.md) | Tässä artikkelissa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan. |
+| [Lomakkeen suunnitteleminen](hr-learning-design-questionnaires.md) | Tässä aiheessa on tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
+| [Kyselylomakkeiden jakelu ja aikataulutus](hr-learning-distribute-questionnaires.md) | Tässä aiheessa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä. |
+| [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](hr-learning-evaluate-questionnaire-results.md) | Tässä aiheessa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

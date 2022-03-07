@@ -2,11 +2,9 @@
 title: Seuraa luotuja raporttituloksia ja vertaa niitä perusarvoihin
 description: Tässä ohjeaiheessa on tietoja tavasta, jolla voit verrata tuloksia luoduista sähköisen raportoinnin (ER) raporteista perusriviraportin arvoihin.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: d89922bd10b6db17d3fee22409137d6ec966858b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a8609cb026e7738eab96980bc9fe4a53340272eb
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682820"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743578"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Seuraa luotuja raporttituloksia ja vertaa niitä perusarvoihin
 
@@ -243,3 +241,6 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

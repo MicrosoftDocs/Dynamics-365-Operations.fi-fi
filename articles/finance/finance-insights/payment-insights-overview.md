@@ -2,28 +2,27 @@
 title: Asiakkaan maksuennusteet (esiversio)
 description: Tässä ohjeaiheessa kerrotaan maksuennusteiden ominaisuudesta. Sen avulla saat lisätietoja asiakkaan tyypillisistä maksutavoista. Tämän toiminnon avulla voit myös määrittää olosuhteet, joiden vuoksi perintäprosessit ehkä aloitetaan normaalia aikaisemmin.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b321fdc185e175d9fe2673c9f1e16486efd8e798
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 64b03faa76e16a4e587f26ec2fb9bf1e34d226df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645670"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355649"
 ---
 # <a name="customer-payment-predictions-preview"></a>Asiakkaan maksuennusteet (esiversio)
 
@@ -56,11 +55,11 @@ Toiminto määrittää jokaiselle avoimelle laskulle kolme maksutodennäköisyyt
 
 Toiminto sisältää myös odotettujen maksujen koostetun näkymän.
 
-[![Maksuennusteiden koostenäkymä](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Maksuennusteiden koostenäkymä.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Kullekin laskulle määritetään todennäköisyys ajoissa maksamisesta. Laskut, joiden ajoissa maksamisen todennäköisyys on alle 50 prosenttia, merkitään punaisella ympyrällä. Se osoittaa, että ne ehkä tarvitsevat perintäasiamiehen huomiota.
 
-[![Maksun todennäköisyyksien luettelo](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Maksun todennäköisyyksien luettelo.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Asiakkaan maksuennusteiden toiminto sisältää myös tilannekohtaista tietoa, joka selittää ennustusta. Nämä tiedot sisältävät ennusteeseen vaikuttaneet tärkeimmät tekijät, asiakkaan liikesuhteen nykyisen tilan ja tietoja asiakkaan aiemmasta maksutoiminnasta.
 
@@ -74,8 +73,6 @@ Aiemmin on yleensä ollut vaikeaa kehittää ja käyttää tekoälyratkaisuja. T
 
 Finance Insightsin julkinen esiversio on saatavilla käyttöönotoissa kokeilua varten Yhdysvalloissa, Euroopassa ja Yhdistyneessä kuningaskunnassa. Microsoft lisää tukea jatkuvasti myös muilla alueilla.
 
-Julkisen esiversion ominaisuudet tulee ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei ehkä siirretä tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
+Julkisen esiversion ominaisuudet tulee ottaa käyttöön vain Taso 2 -eristysympäristöissä. Eristysympäristössä luotuja määrityksiä ja tekoälymalleja ei ehkä siirretä tuotantoympäristöön. Lisätietoja on kohdassa [Microsoft Dynamics 365 -esiversioiden lisäkäyttöehdot](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
-## <a name="privacy-notice"></a>Tietosuojatiedot
-
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

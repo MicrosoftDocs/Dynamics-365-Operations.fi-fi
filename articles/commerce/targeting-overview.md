@@ -2,8 +2,8 @@
 title: Laite- ja markkinakohtainen sekä maantieteelliseen sijaintiin perustuva markkinointi
 description: Tässä aiheessa käsitellään kohderyhmien ja kohteiden luontia, muokkausta ja hallintaa Microsoft Dynamics 365 Commercen sivuston luontityökalussa laite- ja markkinointitietoja sekä maantieteellistä sijaintia koskevia tietoja hyödyntämällä.
 author: sushma-rao
-ms.date: 02/03/2022
-ms.topic: overview
+ms.date: 07/30/2021
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 3ecc04c97b42b17f257aa40f665136c70de398748b9bda0da860c7000c062807
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730848"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Laite- ja markkinakohtainen sekä maantieteelliseen sijaintiin perustuva markkinointi
 
@@ -96,18 +96,6 @@ Käyttäjäryhmää muokataan valitsemalla sen hyperlinkki **Käyttäjäryhmät*
 
 > [!NOTE]
 > Käyttäjäryhmät ovat sivustotason käsite Commercen sivuston luontityökalussa. Sama käyttäjäryhmä voidaan jakaa useissa kohteissa.
-
-### <a name="rename-an-audience-in-site-builder"></a>Käyttäjäryhmän uudelleen nimeäminen sivuston luontityökalussa
-
-Käyttäjäryhmä nimetään uudelleen Commercen sivuston luontityökalussa seuraavasti.
-
-1. Valitse vasemmassa siirtymisruudussa **Käyttäjäryhmät**.
-1. Valitse sen käyttäjäryhmäsegmentin nimi, jonka haluat nimetä uudelleen.
-1. Aloita käyttäjäryhmän muokkaaminen valitsemalla **Muokkaa**.
-1. Valitse käyttäjäryhmän nimen vieressä oleva kynäsymboli käyttäjäryhmän ominaisuusruudusta.
-1. Muokkaa käyttäjäryhmän nimeä tarpeen mukaan.
-1. Vahvista nimenmuutos valitsemalla valintamerkki.
-1. Valitse **Viimeistele muokkaus**.
 
 ## <a name="targets"></a>Kohteet
 

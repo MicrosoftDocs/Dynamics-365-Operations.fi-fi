@@ -1,27 +1,30 @@
 ---
-title: Toimittajan laskun automaation työtila
+title: Toimittajan laskun syötön työtila
 description: Tässä ohjeaiheessa käsitellään toimittajan laskuihin liittyvän työtilan määrittämistä ja Microsoft Power BI:n kautta käytettävien tietojen näyttämistä.
 author: abruer
-ms.date: 02/14/2022
+manager: AnnBe
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182576"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4442928"
 ---
-# <a name="vendor-invoice-automation-workspace"></a>Toimittajan laskun automaation työtila
+# <a name="vendor-invoice-entry-workspace"></a>Toimittajan laskun syötön työtila
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +33,11 @@ Tässä ohjeaiheessa käsitellään toimittajan laskuihin liittyvän työtilan m
 
 ## <a name="overview"></a>Yleiskuvaus
 
-**Toimittajan laskun automaatio** -työtilassa näkyy toimittajan laskujen käsittelyyn liittyviä tietoja. Siinä on **Oma työ** -näkymä ja **Analytiikka – kaikki yritykset** -sivu. **Oma työ** -näkymä näyttää yhteenvetoruudut, toimittajatapahtumaruudukot ja liittyvän toimittajan tiedot. **Analytiikka – kaikki yritykset** -sivu näyttää Power BI:n ominaisuuksien avulla toimittajan laskuihin liittyviä visualisointeja.
+**Toimittajan laskun syöttö** -työtilassa näkyy toimittajan laskujen käsittelyyn liittyviä tietoja. Siinä on **Oma työ** -näkymä ja **Analytiikka – kaikki yritykset** -sivu. **Oma työ** -näkymä näyttää yhteenvetoruudut, toimittajatapahtumaruudukot ja liittyvän toimittajan tiedot. **Analytiikka – kaikki yritykset** -sivu näyttää Power BI:n ominaisuuksien avulla toimittajan laskuihin liittyviä visualisointeja.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Työtilan määrittäminen näyttämään Power BI -sisältöä
 
-Nämä määritykset on tehtävä, ennen kuin tietoja voidaan näyttää Power BI -visualisointeina **Toimittajan laskun automaatio** -työtilassa.
+Nämä määritykset on tehtävä, ennen kuin tietoja voidaan näyttää Power BI -visualisointeina **Toimittajan laskun syöttö** -työtilassa.
 
 1. Etsi **Toimittajan laskun automatisointi** -ominaisuus suodattamalla luettelo **Ominaisuuksien hallinta** -työtilassa.
 3. Valitse **Ota käyttöön nyt**.
@@ -54,20 +57,20 @@ Työtilassa olevien tietojen tarkastelemiseen tarvitaan ostoreskontrapäällikö
 
 ### <a name="company-selection"></a>Yrityksen valinta
 
-Kun **Toimittajan laskun automaatio** -toiminto on otettu käyttöön, **Yritys**-kenttä näkyy työtilan yläosassa. **Yritys**-kentässä oleva valinta vaikuttaa kaikkiin työtilassa näkyviin tietoihin. Oletusarvoisesti näkyvissä on sen yrityksen tiedot, johon olet kirjautunut. Jos valitset **Yritys**-kentässä jonkin muun yrityksen, kyseisen yrityksen tiedot näytetään työtilassa. Voit sitten valita työtilassa ruudun ja siirtyä siihen liittyvälle sivulle valitussa yrityksessä.
+Kun **Automatisoi toimittajan laskut** -toiminto on otettu käyttöön, **Yritys**-kenttä näkyy työtilan yläosassa. **Yritys**-kentässä oleva valinta vaikuttaa kaikkiin työtilassa näkyviin tietoihin. Oletusarvoisesti näkyvissä on sen yrityksen tiedot, johon olet kirjautunut. Jos valitset **Yritys**-kentässä jonkin muun yrityksen, kyseisen yrityksen tiedot näytetään työtilassa. Voit sitten valita työtilassa ruudun ja siirtyä siihen liittyvälle sivulle valitussa yrityksessä.
 
 ### <a name="summary-tiles"></a>Yhteenvetoruudut
 
 **Oma työ** -näkymän **Odottavien laskujen yhteenveto** -osassa on yhteenveto toimittajan laskujen tilasta. Voit tarkastella kirjauskansioita, joita ei ole vielä kirjattu, ja laskuja, jotka ovat pidossa. Lisäksi näkymässä on neljä toimittajan laskujen automatisointitoimintoon liitettyä ruutua.
 
-- **Tarvitaan manuaalinen vastaanoton täsmäytys**
-- **Täsmäytyksen vahvistus ei onnistunut**
-- **Laskuja ei lähetetty työnkulkuun**
-- **Laskuja ei tuotu**
+- Tarvitaan manuaalinen vastaanoton täsmäytys
+- Täsmäytyksen vahvistus ei onnistunut
+- Laskuja ei lähetetty työnkulkuun
+- Laskuja ei tuotu
 
-(Nämä ruudut ovat näkyvissä, jos toimittajan laskujen automatisointitoiminto on otettu käyttöön **ominaisuuksien hallinnassa**.)
+(Nämä ruudut ovat näkyvissä, jos toimittajan laskujen automatisointitoiminto on otettu käyttöön ominaisuuksien hallinnassa.)
 
-**Palauta toimittajan laskut** -ruudun käyttö edellyttää, että toiminto on otettu käyttöön **ostoreskontran parametreissa**. Valitse ensin **Ostoreskontra \> Ostoreskontran parametrit** ja määritä sitten **Lasku**-välilehden **Salli toimittajan laskun palautu** -asetukseksi **Kyllä**.
+**Palauta toimittajan laskut** -ruudun käyttö edellyttää, että toiminto on otettu käyttöön ostoreskontran parametreissa. Valitse ensin **Ostoreskontra \> Ostoreskontran parametrit** ja määritä sitten **Lasku**-välilehden **Salli toimittajan laskun palautu** -asetukseksi **Kyllä**.
 
 Kun toiminto on otettu käyttöön, työtilan **Kirjauskansiot**-osassa on lisäksi kolme yhteen ryhmiteltyä ruutua. Näiden ruutujen nimet ovat **Kirjauskansiot**, **Kirjauskansiota – minulle määritetyt** ja **Laskupooli**. 
 
@@ -114,6 +117,3 @@ Seuraavassa taulukossa on näkyvissä kullakin raporttisivulla käytettävissä 
 | Laskut, joiden tuonti epäonnistui | <ul><li>Laskut, joiden tuonti epäonnistui</li><li>Laskut, joiden tuonti epäonnistui yrityksen mukaan</li></ul> |
 | Automaatiovirheen syyt | <ul><li>Epäonnistuneet laskut</li><li>Epäonnistuneet laskut yrityksen mukaan</li><li>Epäonnistuneet laskut toimittajaryhmän mukaan</li></ul> |
 | Työnkulun tila                | <ul><li>Työnkulussa olevat laskut</li><li>Toimittajan laskun työnkulkuesiintymät</li><li>Hyväksyjäkohtaiset tehtävät</li><li>Toimittajan laskun työnkulku yrityskohtaisesti</li><li>Työnkulun keskimääräinen pituus (päiviä) / hyväksyjä</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

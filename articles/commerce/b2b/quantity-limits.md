@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2c8adaad2afee3b735c69a501d7949a807f4e770
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 4c83b96673fa717b034207a41c921a1b197e17ef3588e77b2304ec9e27fa93a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738768"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Tuotemäärän rajojen asettaminen B2B-verkkokauppasivustoille
 
@@ -75,9 +75,9 @@ Ota B2B-tilauksen määrärajatoiminto käyttöön Commercen sivustonmuodostimes
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Yritystenvälisen yhteistyön sähköisen kaupankäynnin sivuston määrittäminen](set-up-b2b-site.md)
+[B2B-verkkokauppasivuston määrittäminen](set-up-b2b-site.md)
 
-[B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla](partners-customer-hierarchies.md)
+[Organisaation mallinnushierarkioiden luominen B2B-organisaatioille](org-model.md)
 
 [Liikekumppanikäyttäjien hallinta yritystenvälisen yhteistyön sähköisen kaupankäynnin sivustoissa](manage-b2b-users.md)
 

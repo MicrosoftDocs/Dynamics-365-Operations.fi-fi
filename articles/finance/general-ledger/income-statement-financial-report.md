@@ -2,28 +2,25 @@
 title: Tuloslaskelman talousraportti
 description: Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin.
 author: jcart1106
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12294
 ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 429283865c66ca5f03608e4a02c3aba5bb5ea7e3
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 118c7207f6efc252c0265d6c8f7b949c0e178203bf8523585aa2bfc53a69a6a2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645574"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746389"
 ---
 # <a name="income-statement-financial-report"></a>Tuloslaskelman talousraportti
 
@@ -31,8 +28,7 @@ ms.locfileid: "4645574"
 
 Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin. 
 
-<a name="default-income-statement-report"></a>Tuloslaskelman oletusraportti
--------------------------------
+## <a name="default-income-statement-report"></a>Tuloslaskelman oletusraportti
 
 | Oletusraportti             | Toiminnot                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -60,8 +56,7 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportoinnin yleiskatsaus](financial-reporting-getting-started.md)
 
@@ -71,3 +66,6 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

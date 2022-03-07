@@ -1,12 +1,10 @@
 ---
 title: Resurssimääritteiden yleiskuvaus
 description: Tässä aiheessa on yleiskatsaus resurssien hallinnan resurssimääritteisiin.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectAttributeOverview
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a092fac4f1b8648c2c93791f1c5efb90708c44e2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: db3dc6c89b5c12a4144a6c080540bfcb6d6bdaa2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020176"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821678"
 ---
 # <a name="asset-attribute-overview"></a>Resurssimääritteiden yleiskuvaus
 
@@ -39,3 +37,6 @@ Tässä aiheessa on yleiskatsaus resurssien hallinnan resurssimääritteisiin. R
 3. Valitse **OK**. Luettelossa näkyvät kaikki resurssit, jotka käyttävät valittua resurssityyppiä. Jokaiselle resurssille kaikki liittyvät resurssimääritteen tyypit näkyvät samalla rivillä.
 
 **Resurssimäärite** -sivulla näkyy erillinen rivi jokaista määritetyyppiä varten, jota käytetään resurssissä. Voit avat tämän sivun valitsemalla **Resurssien hallinta** \> **Kyselyt** \> **Resurssit** \> **Resurssimäärite**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,39 +1,38 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (23. heinäkuuta 2020)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 23. heinäkuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1dd8ab95d37c2fbc5d7453fadeae043677c30160
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528446"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063719"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (23. heinäkuuta 2020)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3416. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
 
 ## <a name="deleting-financial-dimensions-on-a-position-doesnt-work-as-expected-445476"></a>Talousdimensioiden poistaminen sijainnista ei toimi odotetulla tavalla (445476)
 
-Dimensioiden poistaminen sijainnista poistaa nyt samat sijainnit myös Common Data Service -sovelluksesta.
+Dimensioiden poistaminen sijainnista poistaa nyt samat sijainnit myös Dataverse -sovelluksesta.
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>Sijainnit, jotka eivät ole hierarkiassa, näyttävät passiiviset sijainnit (397257)
 
@@ -55,7 +54,7 @@ Nyt voit tehdä kentistä pakollisia käyttämällä henkilöstöhallinnon mukau
 
 ## <a name="human-resources-application-in-teams"></a>Teamsin Human Resources -sovellus
 
-Työntekijät voivat tarkastella ja pyytää lomaa työstä Microsoft Teamsissä. Ne voivat olla vuorovaikutuksessa botin kanssa luodakseen lomapyyntöjä. Lisätietoja on kohdassa [Human Resources -sovellus Teamsissa](https://go.microsoft.com/fwlink/?linkid=2127841). 
+Työntekijät voivat tarkastella ja pyytää lomaa työstä Microsoft Teamsissä. Ne voivat olla vuorovaikutuksessa botin kanssa luodakseen lomapyyntöjä. Lisätietoja on kohdassa [Human Resources -sovellus Teamsissa](./hr-admin-teams-leave-app.md). 
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Tietojen hallintakehys (DMF) -yksiköt etuuksien hallintaa varten
  
@@ -94,9 +93,9 @@ DMF-yksikkö on nyt käytettävissä suoriteperusteisia keskeytyksiä varten.
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Common Data Serviceen sisältyvät tarkistusluettelokohdat
+## <a name="checklist-entities-included-in-dataverse"></a>Dataverseen sisältyvät tarkistusluettelokohdat
 
-Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Common Data Servicessä.
+Käyttöönotto-, käytöstäpoisto-, siirto- ja liiketoimintaprosessien tarkistusluettelokohdat ovat pian saatavilla Dataversessä.
 
 ## <a name="platform-changes"></a>Alustan muutokset
 
@@ -105,6 +104,9 @@ Platform Update 10.0.12 (36)
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

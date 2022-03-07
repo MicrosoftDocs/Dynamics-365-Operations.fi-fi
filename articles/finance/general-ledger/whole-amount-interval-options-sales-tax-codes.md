@@ -1,37 +1,34 @@
 ---
-title: Alv-koodien koko summa- ja väli-laskentavaihtoehdot
-description: Tässä artikkelissa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
-author: ShylaThompson
-manager: AnnBe
+title: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
+description: Tässä aiheessa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b3e18eac934eb109e8f3f509b2bd78f76dd5f74d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442772"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726820"
 ---
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alv-koodien koko summa- ja väli-laskentavaihtoehdot
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan arvonlisäverokoodien Laskentatapa-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
+Tässä aiheessa kuvataan arvonlisäverokoodien **Laskentatapa**-kentän asetuksia ja sitä, miten arvonlisävero lasketaan välejä ja koko summia varten.
 
-Voit määrittää, että alv-koodi lasketaan koko summan tai välisumman perusteella. Valitse Arvonlisäverokoodit-sivulla alv-koodin laskentatapa Laskenta-pikavälilehden Laskentatapa-kentässä.
+Voit määrittää, että alv-koodi lasketaan koko summan tai välisumman perusteella. Valitse **Arvonlisäverokoodit**-sivulla alv-koodin laskentatapa **Laskenta**-pikavälilehden **Laskentatapa**-kentässä.
 - Koko summa – veroprosentti kohdistetaan koko verotettavaan summaan.
 - Väli – Verotettava summa on jaettu osiin, joista jokainen kuuluu tietyn alv-prosentin alueeseen. Määritetylle välille osuvan summan vero lasketaan kyseistä väliä koskevan prosentin mukaan. Arvonlisävero on kullekin summavälille laskettavien verosummien yhteissumma.
   > [!NOTE]                                                                                                                              
@@ -47,9 +44,8 @@ Jos summa on edellisen välin enimmäisraja ja seuraavan välin vähimmäisraja,
 ## <a name="example-whole-amount-method-of-calculation"></a>Esimerkki: Koko summa -laskutapa
 Arvonlisäveron koodi -sivulla arvonlisäveroprosentit määritetään seuraavin välein:
 
-|                   |                   |              |
+| Vähimmäisraja     | Enimmäisraja     | Veroprosentti     |
 |-------------------|-------------------|--------------|
-| **Vähimmäisraja** | **Enimmäisraja** | **Veroprosentti** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -66,9 +62,8 @@ Arvonlisävero lasketaan koko verotettavasta summasta
 ## <a name="example-interval-method-of-calculation"></a> Esimerkki: Väli-laskentatapa
 Arvonlisäveroprosentit määritetään Arvot-sivulla seuraavin välein:
 
-|                   |                   |              |
+| Vähimmäisraja     | Enimmäisraja     | Veroprosentti     |
 |-------------------|-------------------|--------------|
-| **Vähimmäisraja** | **Enimmäisraja** | **Veroprosentti** |
 | 0,00              | 50,00             | 30 %          |
 | 50,00             | 100,00            | 20 %          |
 | 100,00            | 0,00              | 10 %          |
@@ -90,3 +85,6 @@ Lisätietoja on kohdassa [Alv-rajan perusteeseen ja Laskentatapoihin perustuva a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

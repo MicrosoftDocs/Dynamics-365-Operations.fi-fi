@@ -1,7 +1,7 @@
 ---
 title: Myyntitilausten synkronointi suoraan Salesin ja Supply Chain Managementin välillä
 description: Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin suoraan Dynamics 365 Salesin ja Dynamics 365 Supply Chain Managementin välillä.
-author: Henrikan
+author: ChristianRytt
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
@@ -13,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 63363678cb34af97781830d36d94fac1a7415394
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061515"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360871"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Myyntitilausten synkronointi suoraan Salesin ja Supply Chain Managementin välillä
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin suoraan Dynamics 365 Salesin ja Dynamics 365 Supply Chain Managementin välillä.
 
@@ -189,19 +189,19 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Myyntitilaukset (Supply Chain Managementista Salesiin) - suora: OrderHeader
 
-[![Myyntitilausten tietojen integroinnin mallin yhdistämismääritys (Supply Chain Managementista Salesiin) – suora: OrderHeader](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Myyntitilaukset (Supply Chain Managementista Salesiin) - suora: OrderLine
 
-[![Myyntitilausten tietojen integroinnin mallin yhdistämismääritys (Supply Chain Managementista Salesiin) – suora: OrderLine](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Myyntitilaukset (Salesista Supply Chain Managementiin) - suora: OrderHeader
 
-[![Myyntitilausten tietojen integroinnin mallin yhdistämismääritys (Salesista Supply Chain Managementiin) – suora: OrderHeader](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Myyntitilaukset (Salesista Supply Chain Managementiin) - suora: OrderLine
 
-[![Myyntitilausten tietojen integroinnin mallin yhdistämismääritys (Salesista Supply Chain Managementiin) – suora: OrderLine](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Mallin yhdistäminen tietojen integroinnin yhteydessä.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Liittyvät aiheet
 

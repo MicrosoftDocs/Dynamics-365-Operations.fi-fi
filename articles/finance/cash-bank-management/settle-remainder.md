@@ -1,24 +1,24 @@
 ---
 title: Selvitä jäljellä olevan summa
 description: Voit selvittää jäljellä olevan summan tilitystehtävästä kohdistamalla summan kirjanpitotilille.
-author: twheeloc
-ms.date: 02/16/2022
+author: mikefalkner
+ms.date: 10/16/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 881b46774d3ca6a9b91d4dc06babb30c8677183a
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 1eb82c1f5982b30052acb2cb7659f6c07f2a4da54b68f602a2afb4e499fbcc73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182401"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719785"
 ---
 # <a name="settle-remainder"></a>Selvitä jäljellä olevan summa
 
@@ -27,7 +27,7 @@ ms.locfileid: "8182401"
 Voit selvittää jäljellä olevan summan tilitystehtävästä kohdistamalla summan kirjanpitotilille tai toiselle asiakkaalle. Voit selvittää jäljellä olevan summan, kun selvität kirjauskansioon kirjattuja summia tai kun selvität vain avoimia tapahtumia.
 
 ## <a name="setting-up-defaults"></a>Oletusasetusten määrittäminen 
-Ennen **Selvitä jäljellä olevan summa** -ominaisuuden käyttöä **Selvitä jäljellä oleva summa** -ominaisuus on otettava käyttöön ja oletusasetukset määritettävä.
+Ennen Selvitä jäljellä olevan summa -ominaisuuden käyttöä ominaisuus on otettava käyttöön ja oletusasetukset määritettävä
 
 1)  Valitse **Myyntireskontra > Parametrit > Täsmäytykset** tai **Ostoreskontra > Parametrit > Täsmäytykset**.
 2)  Valitse ensin **Tilitys**-välilehti ja sitten **Ota jäljellä olevan summan selvitys käyttöön**.

@@ -2,11 +2,9 @@
 title: MID ER -funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) MID-funktiota käytetään.
 author: NickSelin
-manager: kfend
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d8a7d2e9beb0fc8724d26de0acaf1d61e3834c6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9a9ff3f1055f6757d6d4073dbb816773d8bfc8ba
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680287"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746264"
 ---
 # <a name="mid-er-function"></a>MID ER -funktio
 
@@ -69,3 +67,6 @@ Jos `starting position` -argumentin arvo ylittää määritetyn merkkijonon pitu
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

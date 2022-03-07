@@ -2,28 +2,25 @@
 title: Resurssin vuokrauksen raportit
 description: Tässä ohjeaiheessa luetellaan ja kuvataan lyhyesti resurssin vuokrauksen käytettävissä olevat raportit.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bab2b0b2b021266e50d6f4a1fad1cc4a1c1ae56e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 7044378a66ed9ff952f4579d375d59576fe09294fc158c000ab28a93f4173421
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739404"
 ---
 # <a name="asset-leasing-reports"></a>Resurssin vuokrauksen raportit
 
@@ -165,3 +162,6 @@ Painotetun keskimääräisen diskonttauskoron raportti täyttää Yhdysvaltojen 
 |     Valuutta                          |     Käytetyn tapahtumavaluutan lyhenne. Kaikki raportit muuntavat tapahtumavaluutan raportointivaluutaksi.  |
 |     Vuokria jäljellä          |     Maksamattomien vuokrien kokonaissumma, joka on jäljellä maksuaikataulusta **alkupäivämäärästä** lähtien.            |
 |     Painotettuja maksuja jäljellä       |     Jäljellä olevat vuokramaksut kerrottuna käytetyllä diskonttauskorolla.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

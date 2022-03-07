@@ -2,15 +2,12 @@
 title: Kampanjabannerimoduuli
 description: Tässä ohjeaiheessa käsitellään kampanjabannerimoduuleja ja niiden lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f781ed22852cb2108850e7dc6762aa6a9ba0db97574cb0dcc7959f8926e47a08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718777"
 ---
-# <a name="promo-banner-module"></a>Kampanjabannerimoduuli
+# <a name="promo-banner-module"></a>Promopalkkimoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään kampanjabannerimoduuleja ja niiden lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Kampanjabannerimoduuleja käytetään sivun sisäisten tietosanomien näyttämisessä. Niiden avulla voidaan näyttää koko sivustoa koskevia kampanjoita, jotka näkyvät kaikilla sähköisen kaupankäynnin sivuston sivuilla. 
 
@@ -51,7 +46,7 @@ Alennusmyynnit ennen koulujen alkamista. Osta nyt.
 
 Seuraavassa kuvassa on esimerkki kampanjabannerista.
 
-![Esimerkki kampanjabannerimoduulista](./media/ecommerce-Promobanner.PNG)
+![Esimerkki kampanjabannerimoduulista.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Kampanjabannerimoduulin ominaisuudet
 
@@ -64,6 +59,10 @@ Seuraavassa kuvassa on esimerkki kampanjabannerista.
 | Näytä karusellin valitsin     | **Tosi** vai **Epätosi**              | Arvo, joka ilmaisee, näytetäänkö karusellin valitsimet, jotta asiakkaan voivat kierrättää useita bannerikohteita manuaalisesti. |
 | Tekstin tasaus            | **Oikealla**, **vasemmalla** tai **keskellä** | Tekstin kohdistus kampanjabannerimoduulissa. |
 | Linkitä                      | URL-osoite                              | Vapaavalintaisen linkin URL-osoite. |
+|Tekstin tasaus             | **Oikealla**, **vasemmalla** tai **keskellä** | Tämä ominaisuus on käytettävissä teemalaajennuksena Adventure Works -teemassa. Sen avulla käyttäjä voi määrittää kampanjabannerin tekstin tasauksen. |
+
+> [!IMPORTANT]
+> Adventure Works -teema on käytettävissä Dynamics 365 Commerce -versiosta 10.0.20 eteenpäin.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Kampanjabannerimoduulin lisääminen sivulle 
 
@@ -84,7 +83,6 @@ Voit lisätä kampanjabannerimoduulin sivulle ja määrittää pakolliset ominai
 > [!NOTE]
 > Kampanjabanneria käytetään yleensä sivun ylätunniste- ja alaotsikkopaikassa.
 
-
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
@@ -96,3 +94,6 @@ Voit lisätä kampanjabannerimoduulin sivulle ja määrittää pakolliset ominai
 [Sisältölohkomoduuli](add-hero-module.md)
 
 [Videotoistinmoduuli](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

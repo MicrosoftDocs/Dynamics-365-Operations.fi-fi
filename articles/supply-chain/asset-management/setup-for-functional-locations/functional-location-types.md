@@ -1,12 +1,10 @@
 ---
 title: Toiminnallisen sijainnin tyypit
 description: Tässä ohjeaiheessa kerrotaan toiminnallisten sijaintien tyyppien luonnista resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c64a0c07bf692385370e4bd2a99f51b211cd397
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018700"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6739152"
 ---
 # <a name="functional-location-types"></a>Toiminnallisen sijainnin tyypit
 
@@ -66,3 +64,6 @@ Nyt luodaan oletusarvoinen toiminnallinen sijaintityyppi, jota käytetään vain
 
 >[!NOTE] 
 >**Yleiset**-pikavälilehdessä voit saada yleiskatsauksen resurssityyppien määrästä, ylläpitosuunnitelmista, resurssimääritteiden vaatimuksista, sallituista tyypeistä, määritteistä ja toiminnallisista sijainneista, jotka on määritetty toiminnallisen sijainnin tyypissä. **Toiminnalliset sijainnit** -kentässä näkyy niiden toiminnallisten sijaintien määrä, jotka käyttävät tätä toimintosijaintityyppiä. **Kopioi**-painikkeen avulla voit kopioida asetukset toiminnallisen sijainnin tyypistä valittuun toiminnallisen sijainnin tyyppiin.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

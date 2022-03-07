@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9dd04072b4845fe5df2a918b64ba1835ea584dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b9a6db9942e9d9b63d89c56ec4a03612917772c1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442827"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240831"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Käyttöomaisuusryhmien jälleenhankintahintojen ja vakuutusarvojen uudelleenlaskenta
 
@@ -78,3 +77,6 @@ Seuraavana päivänä esimies ilmoittaa, että tietokoneiden pienennyksen oli ta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

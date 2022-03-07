@@ -2,16 +2,13 @@
 title: Käyttöoikeudet kustannusobjektin vastuuhenkilölle
 description: Tässä ohjeaiheessa on tietoja kustannusobjektin vastuuhenkilöiden käyttöoikeuksista.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fd1ed875e5c6e3f8ada3b13ea8cc05f98526691d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c30a7c2765647aad17a475ba8705b8e688d166593adf242fcd15d90e49334189
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733026"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Käyttöoikeudet kustannusobjektin vastuuhenkilölle
 
@@ -65,9 +62,8 @@ Seuraavassa on esimerkki dimensiohierarkiasta.
 
 Voit lisätä kuhunkin solmuun käyttäjätunnuksia hierarkian suunnittelutoiminnon **Käyttäjät**-pikavälilehdessä.
 
-|                                   | Käyttäjät            | Dimension jäsenalueet   |                         |
+|             Solmukohdat                 | Käyttäjät            | Lähtödimension jäsen     |   Kohdedimension jäsen   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Solmukohdat**                         | **Käyttäjätunnus**      | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Organisaatio                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Hallinto                 | Huhtikuu            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | Alicia           | CC002                     | CC003                   |
@@ -95,14 +91,17 @@ Käyttöoikeusluettelohierarkian asetuksilla hallitaan seuraavilla alueilla näk
 - Microsoft Power BI:
 
     - Power BI -visualisoinneissa näytettävät tiedot
-    - Tietojen Power BI -visualisoinnit, jotka on upotettu Dynamics 365 Financein asiakasohjelmassa
+    - Tietojen Power BI -visualisoinnit, jotka on upotettu Dynamics 365 Financen asiakasohjelmassa
 
 > [!IMPORTANT]
-> - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Tässä ohjeaiheessa käsitellään edellytykset, joita ilman **kustannusseurannan** työtilaa ei voi käyttää.
 
 Lisäresurssit
 
 - [Kustannusseurannan työtila](cost-control-workspace.md)
 - [Dimensiohierarkia](dimension-hierarchy.md)
-- [Kustannuslaskennan sisältöpaketin määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [Kustannuslaskennan sisältöpaketin määrittäminen](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

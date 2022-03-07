@@ -2,28 +2,25 @@
 title: Vuokrasopimuksen käyttäjäroolien liittäminen
 description: Tässä ohjeaiheessa kuvataan suojausroolit, joita käytetään resurssien vuokrauksessa. Aiheessa selitetään myös, miten käyttäjät liitetään näihin rooleihin.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b31d0880d4f2cd2b8ad2dffcfe279421f935ed35
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 7a3443cf9fa5b14ac0b3c4560ed45874939aa50cd665f4db46290f5af04bf6ce
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442977"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771749"
 ---
 # <a name="assign-lease-user-roles"></a>Vuokrasopimuksen käyttäjäroolien liittäminen
 
@@ -44,3 +41,6 @@ Noudattamalla näitä ohjeita voit määrittää käyttäjät resurssin vuokrauk
 1. Siirry kohtaan **Järjestelmänhallinta \> Suojaus \> Liitä käyttäjät rooleihin**.
 2. Valitse **Vuokrasopimuksen ylläpitäminen**-, **Vuokravirkailija**- tai **Vuokrasopimuksen tarkasteleminen** -rooli ja valitse sitten **Manualainen liittäminen / sulje pois käyttäjiä**.
 3. Valitse rooliin liitettävä käyttäjä ja valitse sitten **Liitä rooliin**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

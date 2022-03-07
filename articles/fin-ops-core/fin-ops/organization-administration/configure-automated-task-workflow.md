@@ -2,11 +2,9 @@
 title: Automaattisten tehtävien määrittäminen työnkulkuun
 description: Tässä ohjeaiheessa kerrotaan, miten automaattisen tehtävän ominaisuudet määritetään.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 003a5d2332aaf12ee7e9352ecb61ef190c04a41f
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 0cc7097d956b0fabdc8cf16cfb99b065e3e03f21e9cfd56c4b4b91930dbef2b7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764380"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>Automaattisten tehtävien määrittäminen työnkulkuun
 
@@ -110,3 +108,6 @@ Voit lähettää käyttäjille ilmoituksia, kun automaattinen tehtävä on suori
     </table>
 
 8. Toista vaiheet 3-7 kullekin tapahtumalle, jonka valitsit vaiheessa 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

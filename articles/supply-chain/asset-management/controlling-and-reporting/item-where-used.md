@@ -1,12 +1,10 @@
 ---
 title: Nimike, missä käytetty
 description: Tässä ohjeaiheessa selitetään, miten voit saada yleiskuvan siitä, missä nimikettä käytetään resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetItemWhereUsed, EntAssetItemWhereUsedCalculate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: db0932c5a52030c1a7f0411163aee120e2173ca0
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 34b0c972ce007a40c7033bcce6000c5c08e28e2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021136"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346247"
 ---
 # <a name="item-where-used"></a>Nimike, missä käytetty
 
@@ -68,5 +66,8 @@ Voit tehdä tietyn nimikkeen laskennan saadaksesi yhteenvedon siitä, missä nim
 
 Alla olevassa näyttökuvassa on esimerkki nimikkeestä, jossa on laskettu Nimike, missä käytetty -lasku nimiketunnukselle "1000".
 
-![Esimerkki nimikkeen käyttöpaikan laskennasta](media/12-controlling-and-reporting.png)
+![Esimerkki Nimike, missä käytetty -laskennasta.](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

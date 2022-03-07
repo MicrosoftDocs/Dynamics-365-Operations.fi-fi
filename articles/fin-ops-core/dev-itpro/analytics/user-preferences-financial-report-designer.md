@@ -1,10 +1,12 @@
 ---
-title: Raporttien suunnitteluohjelman käyttäjäasetukset
-description: Tässä aiheessa käsitellään sellaisten käyttäjän asetusten määrittämistä, joilla mukautetaan käyttäjän toimia talousraportin suunnittelutoiminnossa ja hallitaan ensimmäistä kirjautumiskokemusta.
+title: Talousraportin suunnittelutoiminnon käyttäjän asetukset
+description: Tässä artikkelissa käsitellään sellaisten käyttäjän asetusten määrittämistä, joilla mukautetaan käyttäjän toimia talousraportin suunnittelutoiminnossa ja hallitaan ensimmäistä kirjautumiskokemusta. Voit myös hallita, miten yksittäisen raportit, raporttikirjasto ja oletusarvoiset tiedostosijainnit näytetään.
 author: aprilolson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,14 +17,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1f4c9bdde367044cfbf736c1aecbe0387031309318a7bf929f1b9ba2fd9368be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a7d7124da3d0e9596f364c17065c95610384a8ca
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724366"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687374"
 ---
-# <a name="user-preferences-in-financial-report-designer"></a>Raporttien suunnitteluohjelman käyttäjäasetukset
+# <a name="user-preferences-in-financial-report-designer"></a>Talousraportin suunnittelutoiminnon käyttäjän asetukset
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,6 +72,3 @@ Tässä artikkelissa käsitellään sellaisten käyttäjän asetusten määritt�
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

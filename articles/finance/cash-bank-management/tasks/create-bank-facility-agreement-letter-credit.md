@@ -1,33 +1,30 @@
 ---
 title: Luo pankin limiittisopimus remburssia varten
-description: Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin käsittelemistä varten.
-author: ShylaThompson
-manager: AnnBe
+description: Tämä tehtävä antaa ohjeet pankin limiittisopimuksen luomiseen remburssin käsittelemistä varten.
+author: panolte
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocumentFacilityAgreementExtension, DefaultDashboard
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb624700e0b052de977fabecf9670b3515d32ab7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 607d9688aebb6288735cc04f6b4d8e7b8f7362b9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442755"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595010"
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Luo pankin limiittisopimus remburssia varten
 
 [!include [banner](../../includes/banner.md)]
 
-Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin käsittelemistä varten. Määritä pankin limiitit ja kirjausprofiilit ennen tätä tehtävää.  Tässä tehtävässä käytetään esittely-yritystä USMF.  
+Tämä tehtävä antaa ohjeet pankin limiittisopimuksen luomiseen remburssin käsittelemistä varten. Määritä pankin limiitit ja kirjausprofiilit ennen tätä tehtävää.  Tässä tehtävässä käytetään esittely-yritystä USMF.  
 
 
 ## <a name="create-bank-facility-agreement"></a>Pankin limiittisopimuksen luominen
@@ -51,3 +48,6 @@ Tämä tehtävä näyttää, miten pankin limiittisopimus luodaan remburssin kä
 18. Valitse Laajenna.
 19. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

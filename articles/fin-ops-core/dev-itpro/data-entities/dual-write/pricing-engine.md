@@ -2,19 +2,27 @@
 title: Synkronointi tarvittaessa Supply Chain Managementin hinnoittelumoduulin kanssa
 description: Tässä ohjeaiheessa kuvataan, kuinka hinnoittelumoduulia käytetään Microsoft Dynamics 365 Supply Chain Managementissa Dynamics 365 Salesista.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 03/10/2019
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 134bfc2ec0e69938c945e384a98676d3708c8e17
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2020-03-10
+ms.openlocfilehash: e2067e83d3f0c98e986873b8eaf1b817de912c0f
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783304"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570137"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synkronointi tarvittaessa Supply Chain Managementin hinnoittelumoduulin kanssa
 
@@ -41,7 +49,7 @@ Microsoft Dynamics 365 Supply Chain Management sisältää hinnoittelumoduulin, 
     + Vero yhteensä
     + Loppusumma
     
-5. Sen varmistamiseksi, että järjestelmä ottaa huomioon kauppasopimukset hinnan laskennassa:
+5. Sen varmistamiseksi, että järjestelmä ottaa huomioon kauppa- ja myyntisopimukset hinnan laskennassa:
     1. Siirry Supply Chain Management -ympäristöön.
     2. Siirry kohtaan **Myyntireskontra \> Asetukset \> Myyntireskontran parametrit**.
     3. Valitse sivunavigointipalkista **Hinnat**-välilehti.
@@ -51,7 +59,7 @@ Microsoft Dynamics 365 Supply Chain Management sisältää hinnoittelumoduulin, 
 
 Kun valitset **Hintatilauksen** Salesissa, **Yhteensä**-toiminto **Myyntitilaus \>Näkymä** -välilehden Supply Chain Managementissa on nimeltään liittyvä myyntitilaus. Myynnin tilauksen kokonaissumman arvoja käytetään Supply Chain Managementin vastaavien sarakkeiden täyttämiseen.
 
-Kun myyntitilauksen kokonaissumma lasketaan Supply Chain Managementissa, laskelma laskee asiakkaan ja myyntitilauksessa lueteltujen tuotteiden olemassa olevat kauppasopimukset. Näitä tietoja käytetään summien laskemiseen. Kun **Hintatilaus** valitaan, Sales vastaa automaattisesti kaikkia Supply Chain Managementin asetuksia.
+Kun myyntitilauksen kokonaissumma lasketaan Supply Chain Managementissa, laskelma laskee asiakkaan ja myyntitilauksessa lueteltujen tuotteiden olemassa olevat kauppasopimukset ja myyntisopimukset. Näitä tietoja käytetään summien laskemiseen. Kun **Hintatilaus** valitaan, Sales vastaa automaattisesti kaikkia Supply Chain Managementin asetuksia.
 
 ## <a name="limitations"></a>Rajoitukset
 
@@ -60,7 +68,6 @@ Kun Salesin sarakkeet on täytetty, seuraavat rajoitukset ovat voimassa:
 + Supply Chain Managementin kuluja ja kulujen kohdistuksia ei replikoida Salesiin.
 + Hinnoittelu ei ota huomioon erikoisvähittäismyyntihinnoittelua, joka on määritetty **Vähittäismyyntikanava**-sarakkeessa myyntitilausrivisivulla Supply Chain Managementissa.
 + Supply Chain Managementin **Myynninedistämispalkkioiden hallinta** -osassa määritettyjä alennuksia ei oteta huomioon.
-+ Hinnoittelu ei ota huomioon myyntisopimuksia.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)
-description: Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation, joka sisältää sähköisen asiakirjojen OPENXML-muodon luontimallin.
+description: Tässä aiheessa käsitellään sellaisen uuden sähköisen raportoinnin määrityksen luontia, joka sisältää OPENXML-muotoisen sähköisten asiakirjojen luontimallin.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681898"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753025"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)
 
@@ -30,7 +28,7 @@ Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raporto
 
 Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. Nämä vaiheet voidaan suorittaa GBSI-yrityksessä.
 
-Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista. Sinulla on myös oltava Excel-tiedosto, joka tuodaan mallia luotaessa. Tätä tiedostoa voi käyttää kohdasta [Maksuilmoituksen malli](https://go.microsoft.com/fwlink/?linkid=862266).
+Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista. Sinulla on myös oltava Excel-tiedosto, joka tuodaan mallia luotaessa. Tätä tiedostoa voi käyttää kohdasta [Maksuilmoituksen malli](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Lataa maksujen tietomallin konfiguraatio
@@ -150,3 +148,6 @@ Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn v
 17. Anna **Pankkitili**-kentän arvoksi `GBSI OPER`.
 18. Valitse ensin **OK** ja sitten uudelleen **OK**. Tarkista luotu taulukko, mukaan lukien maksutietorivit sekä jokaisen tässä maksusanomassa käytetyn valuuttakoodin kokonaissummat.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

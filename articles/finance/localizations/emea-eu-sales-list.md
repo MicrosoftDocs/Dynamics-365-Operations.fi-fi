@@ -2,9 +2,11 @@
 title: EU:n arvonlisäveron yhteenvetoilmoitus
 description: Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c1e9a566b7dc4dc2ed1970294a22e72b0bd21a7c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323473"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003006"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-myyntiluettelon raportointi
 
@@ -27,7 +29,8 @@ ms.locfileid: "8323473"
 
 Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 
-## <a name="eu-sales-list-reporting"></a>EU:n arvonlisäveron yhteenvetoilmoitus
+<a name="eu-sales-list-reporting"></a>EU:n arvonlisäveron yhteenvetoilmoitus
+-----------------------
 
 Toimittajan, joka toimittaa EU:n sisällä tavaroita tai palveluita Euroopan Unionin (EU) sisällä sijaitseville yrityksille, on tehtävä ilmoitus EU-myynnistä (EU myyntiluettelo, ESL). Yleensä ESL on toimitettava veroviranomaisille viimeistään ESL:n kattaman ajanjakson päättymisen jälkeisen kuukauden viimeisenä päivänä. Toimittajan on ilmoitettava ESL:llä arvonlisäverotunnistenumeronsa ja sen on myös ilmoitettava asiakkaittain seuraavat tiedot:
 
@@ -68,19 +71,13 @@ Seuraavassa taulukossa esitellään edellytykset, joiden on täytyttävä ennen 
 <td>Määritä verovapautuksen tunnistenumeron parametrit <strong>Maan/alueen parametrit</strong> -sivulla (valitse <strong>Vero</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Maan/alueen parametrit</strong>). Luo sivulla tietue kullekin maalle/alueelle, missä sinulla on vastapuolia ja määritä seuraavat tiedot:
 <ul>
 <li><strong>Maa/alue</strong> – Valitse maa/alue, johon verovapautuksen tunnistenumero liitetään.</li>
-<li><strong>Arvonlisävero</strong> – Syötä valitun maan/alueen verovapautuksen tunnistenumero (ts. ALV-rekisterinumero tai verovapautuksen tunnistenumeron etuliite).</li>
+<li><strong>Arvonlisävero</strong> – Syötä valitun maan/alueen verovapautuksen tunnistenumero (ts. verovapautuksen tunnistenumeron etuliite).</li>
 <li><strong>Tarkista verovapautuksen tunnistenumero</strong> – Valitse tämä valintaruutu tarkistaaksesi valitun maan/alueen verovapautuksen tunnistenumero.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Määritys:</strong> ALV-rekisterinumerot</td>
-<td>Luo vastapuolillesi ALV-rekisterinumeroita <strong>Kaikki asiakkaat</strong> -sivulla (siirry kohtaan <strong>Myynti ja markkinointi</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki asiakkaat</strong>, valitse asiakastietue ja valitse sitten <strong>Asiakkaat</strong> &gt; <strong>Rekisteröintitunnukset</strong>) tai <strong>Toimittajat</strong>-sivulla (Siirry kohtaan <strong>Hankinta</strong> &gt; <strong>Toimittajat</strong> &gt; <strong>Toimittajat</strong>, valitse toimittajatietue ja valitse sitten <strong>Toimittajat</strong> &gt; <strong>Rekisteröintitunnukset</strong>). Luo tietue <strong>Yleistä</strong>-välilehden <strong>Rekisteröintitunnus</strong>-pikavälilehdessä ja määritä seuraavat tiedot:
-<ul>
-<li><strong>Rekisteröinnin tyyppi</strong> – Valitse vastapuolen maalle tai alueelle määritetty <strong>ALV-tunnus</strong>-rekisteröintiluokalle määritetty rekisteröintityyppi.</li>
-<li><strong>Rekisteröintinumero</strong> – Anna vastapuolen ALV-rekisteröintinumero.</li>
-<li><strong>Voimantulo</strong> – Valitse ALV-rekisterinumeron käyttöjakson alkamispäivä.</li>
-</ul>  
-Vaihtoehtoisesti voit luoda vastapuolillesi ALV-rekisterinumeron <strong>Verovapausnumerot</strong> -sivulla (siirry kohtaan <strong>Vero</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Verovapausnumerot</strong>). Luo sivulle kutakin verovapausnumeroa kohti tietue ja määritä seuraavat tiedot:
+<td><strong>Asetus: </strong>Verovapausnumerot</td>
+<td>Luo verovapausnumerot vastapuolillesi <strong>Verovapausnumerot</strong> -sivulla (valitse <strong>Vero</strong> &gt; <strong>Asetukset</strong> &gt; <strong>Arvonlisävero</strong> &gt; <strong>Verovapausnumerot</strong>). Luo sivulle kutakin verovapausnumeroa kohti tietue ja määritä seuraavat tiedot:
 <ul>
 <li><strong>Maa/alue </strong>– Valitse vastapuolesi verorekisteröintimaa/alue.</li>
 <li><strong>Verovapausnumero</strong> – Syöt vastapuolesi verovapausnumero.</li>
@@ -89,7 +86,7 @@ Vaihtoehtoisesti voit luoda vastapuolillesi ALV-rekisterinumeron <strong>Verovap
 </tr>
 <tr class="even">
 <td><strong>Asetus: </strong>Vastapuolen verorekisteröinti</td>
-<td>Määritä vastapuoltesi verorekisteröintitiedot joko <strong>Kaikki asiakkaat</strong> -sivulla (valitse <strong>Myynti ja markkinointi</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki asiakkaat</strong>, valitse asiakkaan tietue ja napsauta sitten <strong>Asetukset</strong> &gt; <strong>Vaihda näyttö</strong> &gt; <strong>Tietonäkymä</strong>), tai valitse tietue <strong>Toimittajat</strong> -sivulla (valitse <strong>Hankinta</strong> &gt; <strong>Toimittajat</strong> &gt; <strong>Toimittajat</strong>, valitse toimittajan tietue ja napsauta sitten <strong>Asetukset</strong> &gt; <strong>Vaihda näyttö</strong> &gt; <strong>Tietonäkymä</strong>). Valitse ALV-rekisterinumero pikavälilehden <strong>Lasku ja toimitus</strong> kentässä <strong>ALV-rekisterinumero</strong>.</td>
+<td>Määritä vastapuoltesi verorekisteröintitiedot joko <strong>Kaikki asiakkaat</strong> -sivulla (valitse <strong>Myynti ja markkinointi</strong> &gt; <strong>Asiakkaat</strong> &gt; <strong>Kaikki asiakkaat</strong>, valitse asiakkaan tietue ja napsauta sitten <strong>Asetukset</strong> &gt; <strong>Vaihda näyttö</strong> &gt; <strong>Tietonäkymä</strong>), tai valitse tietue <strong>Toimittajat</strong> -sivulla (valitse <strong>Hankinta</strong> &gt; <strong>Toimittajat</strong> &gt; <strong>Toimittajat</strong>, valitse toimittajan tietue ja napsauta sitten <strong>Asetukset</strong> &gt; <strong>Vaihda näyttö</strong> &gt; <strong>Tietonäkymä</strong>). Valitse verovapausnumero pikavälilehden <strong>Lasku ja toimitus</strong> kentässä <strong>Verovapausnumero</strong>.</td>
 </tr>
 <tr class="odd">
 <td><strong>Asetus: </strong>Arvonlisävero</td>
@@ -162,6 +159,3 @@ Saatettuasi tietyn kauden raportointiprosessin päätökseen (esimerkiksi, kun v
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

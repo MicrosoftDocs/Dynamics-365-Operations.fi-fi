@@ -2,26 +2,23 @@
 title: Määritä arvonlisäveroilmoituksen koodit
 description: Arvonlisäveron raportointikoodit viittaavat arvonlisäveroraportin kenttänumeroon.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxReportCollection
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 362d30e56fe35b85d50bfa2df57364733b366fef
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 1e040bac6ef9e950e8d7f97e3c136636acf1fe43
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646178"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813528"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Määritä arvonlisäveroilmoituksen koodit
 
@@ -39,3 +36,6 @@ Tässä tallenteessa käytetään esittely-yritystä DEMF.
 6. Syötä **Lyhyt kuvaus** -kenttään kuvaus sisäistä käyttöä varten.
 7. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

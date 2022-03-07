@@ -2,26 +2,23 @@
 title: Nimikkeen konsolidointi – sijainnin käyttöaste
 description: Tässä aiheessa käsitellään toimintoja, joiden avulla varastopäälliköiden on helppo tarkastella ja suodattaa varaston sijaintien tilavuusperusteista käyttöastetta. Päälliköt voivat valita sijainteja ja luoda varaston siirtotyön suoraan Nimikkeen konsolidointi -sivulla nimikkeiden konsolidointi varten, mikä parantaa varastotilan käyttöä.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427398"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578605"
 ---
 # <a name="item-consolidation---location-utilization"></a>Nimikkeen konsolidointi – sijainnin käyttöaste
 
@@ -150,7 +147,7 @@ Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimi
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
-Seuraavassa skenaariossa käytetään varastosovellusta mobiililaitteessa tekemään varaston *oikaisu sisään* varaston kahdessa sijainnissa.
+Seuraavassa skenaariossa käytetään varastonhallinnan mobiilisovellusta tekemään varaston *oikaisu sisään* varaston kahdessa sijainnissa.
 
 ### <a name="add-inventory-to-locations"></a>Varaston lisääminen sijainteihin
 
@@ -208,3 +205,6 @@ Seuraavassa skenaariossa käytetään varastosovellusta mobiililaitteessa tekem�
 
     > [!NOTE]
    > Järjestelmä luo kullekin suoritettavalle siirrolle yhden työtunnuksen. Jos määrität jo varastoa sisältävän sijainnin, vain yksi työtunnus luodaan. Jos määritä uuden sijainnin, työtunnuksia luodaan kaksi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

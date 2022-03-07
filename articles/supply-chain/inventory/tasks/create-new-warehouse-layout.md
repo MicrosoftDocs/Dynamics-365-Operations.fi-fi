@@ -2,27 +2,24 @@
 title: Luo uusi varastoasettelu
 description: Tässä ohjeaiheessa kuvataan, kuinka voit varastosijainteihin liittyvät tiedot.
 author: perlynne
-manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 09666e95cc90913f1bf8555b9ff2c48aa55369ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3a329df85c339c90e4bdc620c8a63837ebc19a7c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427338"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833974"
 ---
 # <a name="create-a-new-warehouse-layout"></a>Luo uusi varastoasettelu
 
@@ -63,3 +60,6 @@ Tässä ohjeaiheessa kuvataan, kuinka voit varastosijainteihin liittyvät tiedot
 7. Sulje sivu.
 8. Päivitä sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

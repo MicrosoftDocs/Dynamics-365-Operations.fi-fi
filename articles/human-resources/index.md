@@ -2,7 +2,7 @@
 title: Human Resources -aloitussivu
 description: Dynamics 365 Human Resources tarjoaa työntekijöiden näkemyksiä, joiden avulla voit luoda tietoihin perustuvia työntekijäkokemuksia useilla eri alueilla.
 author: twheeloc
-ms.date: 08/03/2021
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,37 +17,76 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8674c228a1e624a79ae210dc6ad5c0f80741570f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 11c4bfa41dda8e143e1e14061f1d6657e3ed30cc
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075043"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441236"
 ---
 # <a name="human-resources-home-page"></a>Human Resources -aloitussivu
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+Dynamics 365 Human Resources tarjoaa työntekijöiden näkemyksiä, joiden avulla voit luoda tietoihin perustuvia työntekijäkokemuksia useilla eri alueilla.
 
-Tämä ohjeaihe sisältää luettelon Dynamics 365 Human Resourcesin ohjeaiheista ja muista resursseista. 
-
-Saat lisätietoja valitsemalla ominaisuusalueen.
-
-- [Työntekijän itsepalvelu](hr-employee-manager-self-service-overview.md)
-- [Henkilöstön hallinta](hr-personnel-departments-jobs-positions.md)
-- [Tehtävienhallinta](hr-task-mgmt.md)
-- [Loma ja poissaolo](hr-leave-and-absence-overview.md)
-- [Edut](hr-benefits-manage-program.md)
-- [Etujen hallinta](hr-benefits-management-overview.md)
-- [Kompensaation hallinta](hr-compensation-overview.md)
-- [Työntekijän kehitys](hr-develop-performance-management-overview.md)
-- [Oppiminen](hr-learning-courses.md)
-- [Työnkulkujärjestelmä]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- Kompensaatio
+- Edut
+- Loma ja poissaolo
+- Yhteensopivuus
+- Palkanlaskennan integrointi
+- Suorituskyvyn palaute
+- Koulutus ja sertifiointi
+- Itsepalveluohjelmat
 
 Henkilöstöhallinto yhdistää henkilö- ja toimintotietoja, joiden avulla voit optimoida työvoimakustannuksia ja huolehtia työntekijöistä.
 
-## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+## <a name="whats-new"></a>Uutta
 
-Lisätietoja Dynamics 365 Financesta on [Financen aloitussivulla](../finance/index.md).
+[Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
+
+## <a name="administrator-guide"></a>Järjestelmänvalvojan opas
+
+- [Yleiskuvaus](hr-admin-overview.md)</br>
+- [Järjestelmävaatimukset](hr-admin-system-requirements.md)</br>
+- [Määritä ja hallitse esiintymiä](hr-admin-setup-provision.md)</br>
+- [Määritä tietojen integrointi](hr-admin-integration-choose-technology.md)</br>
+- [Tiedonhallinnan määrittäminen](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Ominaisuuksien hallinta](hr-admin-manage-features.md)</br>
+- [Käyttöliittymään tutustuminen](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Teamsin Human Resources -sovellus](hr-admin-teams-leave-app.md)</br>
+- [Julkistamisen valmistelu](hr-admin-go-live-prepare.md)</br>
+- [Julkistamisen usein kysytyt kysymykset](hr-admin-go-live-faq.md)</br>
+- [Dokumentaatioresurssit](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Human Resourcesin vianmääritys](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+
+## <a name="developer-guide"></a>Kehittäjän opas
+
+- [Yleiskuvaus](hr-developer-overview.md)</br>
+- [Laajentaminen Power Appsin ja Power Automaten avulla](hr-developer-power-apps.md)</br>
+- [Henkilöstöhallinnon ilmentymät Dataversessä](hr-developer-entities.md)</br>
+- [Mukautetut kentät](hr-developer-custom-fields.md)</br>
+- [Dataverse-taulut](hr-developer-entities.md)</br>
+- [Määritä tietojen integrointi](hr-admin-integration-choose-technology.md)</br>
+- [Vianmäärityksen kehitys Dataversen virtuaalitaulukoiden avulla](hr-developer-optimize-virtual-table-queries.md)</br>
+- [Yksikön ohjelmointirajapinnan viite](hr-developer-api-authentication.md)</br>
+- [ATS-integroinnin ohjelmointirajapinta](hr-admin-integration-ats-api-introduction.md)</br>
+- [Palkanlaskennan integroinnin ohjelmointirajapinta](hr-admin-integration-payroll-api-introduction.md)
+
+## <a name="user-guide"></a>Käyttöopas
+
+- [Yleiskuvaus](hr-hrpro-overview.md)</br>
+- [Käyttöliittymään tutustuminen](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Human Resources -asetukset](hr-setup-parameters.md)</br>
+- [Organisaation asetusten määrittäminen](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Henkilöstön hallinta](hr-personnel-departments-jobs-positions.md)</br>
+- [Kompensaatiosuunnitelmien määrittäminen](hr-compensation-overview.md)</br>
+- [Etujen hallinta](hr-benefits-management-overview.md)</br>
+- [Virkavapaan ja poissaolojen hallinta](hr-leave-and-absence-overview.md)</br>
+- [Lomapyyntöjen hallinta Teamsissa](hr-teams-leave-app.md)</br>
+- [Työntekijöiden kehittäminen](hr-develop-performance-management-overview.md)</br>
+- [Luo kursseja](hr-learning-courses.md)</br>
+- [Työntekijän ja esimiehen itsepalvelun määrittäminen](hr-employee-manager-self-service-overview.md)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

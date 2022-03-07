@@ -2,26 +2,23 @@
 title: Konsolidoitujen raporttien laatiminen
 description: Tässä ohjeaiheessa käsitellään erilaisia skenaariota, joissa konsolidoituja raportteja voidaan laatia.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 10f8754c4156893034117a4d449d464754eacafb0c0f6725c36709632af730ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727356"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 
@@ -37,23 +34,23 @@ Yksinkertaisin raportteja hyödyntävä konsolidointimenetelmä on koota raportt
 3. Luo raporttipuu, joka sisältää raporttisolmun kullekin konsolidointiraportissa käytetylle yritykselle.
 
 > [!TIP]
-> Lisätietoja rivin ja sarakkeen määritysten sekä raporttipuiden luomisesta ja hallinnasta on kohdassa [Raportin komponentit](../../dev-itpro/analytics/financial-report-components.md).
+> Lisätietoja rivin ja sarakkeen määritysten sekä raporttipuiden luomisesta ja hallinnasta on kohdassa [Raportin komponentit](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 Seuraava kuva näyttää, miten raporttien raporttipuun määrityksellä voi tunnistaa kunkin konsolidoitavan yrityksen.
 
-![Raportointipuun määritys](./media/reporting-tree-definition.png "Raportointipuun määritys")
+![Raportointipuun määritys.](./media/reporting-tree-definition.png "Raportointipuun määritys")
 
 Seuraavan kuvan konsolidoitu raportti näyttää, miten kutakin yritystä voi tarkastella erikseen, kun raporttipuuta ja raportin määritystä käytetään yhdessä. Konsolidoidut summat näytetään yhteenvetotasolla.
 
-![Konsolidoidun summan yhteenvetotaso](./media/consolidate-amount-summary-level.png "Konsolidoidun summan yhteenvetotaso")
+![Konsolidoidun summan yhteenvetotaso.](./media/consolidate-amount-summary-level.png "Konsolidoidun summan yhteenvetotaso")
 
 Voit luoda myös monitasoisen raporttipuun, joka sisältää tarvittavan määrän tasoja. Seuraavassa kuvassa on monitasoinen raporttipuun määritys, jossa koonti tapahtuu koko maailman alueiden mukaan.
 
-![Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla")
+![Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla.](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla")
 
 Seuraavassa kuvassa on monitasoinen raporttipuun määritys, jossa koonti tapahtuu toiminnon mukaan.
 
-![Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla")
+![Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla.](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla")
 
 ### <a name="viewing-companies-side-by-side"></a>Yritysten tarkastelu rinnakkain
 Monet asiakkaat käyttävät mielellään raportteja, joissa yritykset näkyvät rinnakkain ja joissa konsolidoitu kokonaissumma näkyy sarakkeessa. Tämä muoto on helppo toteuttaa raporttipuun luonnin jälkeen. Yleistasolla konsolidoitujen raporttien yritysten näyttäminen rinnakkain sisältää seuraavat vaiheet.
@@ -64,19 +61,19 @@ Monet asiakkaat käyttävät mielellään raportteja, joissa yritykset näkyvät
 
 Seuraavassa kuvassa on sarakkeen määritys rinnakkaismuodossa.
 
-![Sarakkeen määritys rinnakkaismuodossa](./media/column-definition-side-by-side-format.png "Sarakkeen määritys rinnakkaismuodossa")
+![Sarakkeen määritys rinnakkaismuodossa.](./media/column-definition-side-by-side-format.png "Sarakkeen määritys rinnakkaismuodossa")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Yrityksistä luotuja organisaatiorakenteita käyttävät konsolidoinnit
 Dimensioita tai yrityksiä sisältävät organisaatiohierarkiat luovat dynaamisesti taloushallinnon raportoinnin raporttipuun määritykset. Konsolidointeja voi yksinkertaistaa kätevästi lisäämällä organisaatiohierarkian taloushallinnon raportoinnin raporttiin. Taloushallinnon raportointi valitsee raportin päivämäärän perusteella organisaatiohierarkian voimaantulopäivänä tai sitä ennen, kuten seuraavassa kuvassa.
 
-![Raporttipuun määrityksen luonti dynaamisesti](./media/dynamically-create-reporting-tree-definitions.png "Raporttipuun määrityksen luonti dynaamisesti")
+![Raporttipuun määrityksen luonti dynaamisesti.](./media/dynamically-create-reporting-tree-definitions.png "Raporttipuun määrityksen luonti dynaamisesti")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Eliminointeja sisältävät konsolidoinnit
 Eliminointitapahtumat ovat yleinen osa konsolidointiprosessia. Tässä esimerkissä viisi tiliä eliminoidaan konsolidoinnin aikana: 142600, 211400, 401420, 401180 ja 510820. Yritykset voivat määrittää konsernin sisäiset tilit eri tavalla. Joillakin yrityksillä tilin viimeinen numero on esimerkiksi 9, jos tiliä käytetään konsernin sisäisissä tapahtumissa. Jos tiedät konsernin sisäiset tilit, voit menetelmästä riippumatta näyttää eliminoinnit konsolidoiduissa raporteissa.
 
-Seuraavassa kuvassa on konsolidoidun tuloslaskelman sarakemääritys. Kolme konsernin sisäistä tulostiliä on määritetty kullekin tilille dimensiosuodattimen avulla. Sarake D sisältää vain yrityksen USMF eliminointitilit ja sarake E vain yrityksen DEMF eliminoinnit. Sekä sarake D että sarake E on määritetty siten, että niitä **ei** tulosteta raporttiin.
+Seuraavassa kuvassa on konsolidoidun tuloslaskelman sarakemääritys. Kolme konsernin sisäistä tulostiliä on määritetty kullekin tilille dimensiosuodattimen avulla. Sarakkeissa F, G ja H ovat eliminointitilit vain USMF-, USRT- ja DEMF-yrityksille. Nämä sarakkeet on määritetty siten, että niitä **ei** tulosteta raporttiin.
 
-![Konsolidoidun tuloslaskelman sarakemääritys](./media/column-definition-consolidated-income-statement.png "Konsolidoidun tuloslaskelman sarakemääritys")
+![Konsolidoidun tuloslaskelman sarakemääritys.](./media/column-definition-consolidated-income-statement.png "Konsolidoidun tuloslaskelman sarakemääritys")
 
 Kun raportti laaditaan, eliminointisummat lasketaan sarakkeissa F, G ja H, ja yhteenlaskettu summa on sarakkeessa I. Konsolidoidut summat ovat sarakkeessa J. Nämä konsolidoidut summat eivät sisällä yritysten USMF, USRT ja DEMF eliminointeja.
 
@@ -85,7 +82,7 @@ Kun raportti laaditaan, eliminointisummat lasketaan sarakkeissa F, G ja H, ja yh
 
 Seuraavassa kuvassa on konsolidoitu raportti.
 
-![Konsolidoitu raportin tuloslaskelma](./media/consolidated-report-income-statement.png "Konsolidoitu raportin tuloslaskelma")
+![Konsolidoitu raportin tuloslaskelma.](./media/consolidated-report-income-statement.png "Konsolidoitu raportin tuloslaskelma")
 
 Riippumatta siitä käytätkö tilejä, dimensioita tai molempia, eliminointimerkinnät voidaan suodattaa taloushallinnon raportoinnissa pois dimension suodatustoiminnoilla.
 
@@ -98,20 +95,20 @@ Anna raporttipuun määrityksessä omistusosuus **Koontiprosentti**-sarakkeessa 
 > [!NOTE]
 > Voit käyttää tätä omistusosuutta missä tahansa raporttiyksikössä myös muualla kuin yritystasolla. 
 
-![Raporttipuun määrityksen prosenttiosuuden käyttäminen](./media/Using-reporting-tree-definition-percentage.png "Raporttipuun määrityksen prosenttiosuuden käyttäminen")
+![Raporttipuun määrityksen prosenttiosuuden käyttäminen.](./media/Using-reporting-tree-definition-percentage.png "Raporttipuun määrityksen prosenttiosuuden käyttäminen")
 
 Kun raportti laaditaan, Contoso Germany -raportti näyttää 100 prosenttia myyntisummasta. 80 prosenttia tästä summasta kohdistetaan ja kootaan myynnin konsolidoidulle tasolle.
 
 Jos yrityksen omistusosuus on alle 1 prosenttia, voit valita **Salli alle 1 prosentin koonti** -valintaruudun **Raporttiasetukset**-sivun **Lisäasetukset**-välilehdessä, kuten seuraavassa kuvassa. Siinä tapauksessa raporttipuun **Koontiprosentti**-sarakkeen arvoja käsitellään siten kuin ne olisivat alle 1 prosenttia. Jos esimerkiksi annat arvon **,8**, konsolidoidulle tasolle kootaan 0,8 eikä 80 prosenttia. Saat saman tuloksen myös jättävät **Salli alle 1 prosentin koonti** -valintaruudun valitsematta ja antamalla arvon **,008** **Koontiprosentti**-sarakkeessa.
 
-![Raportointiasetusten vaihtoehdot](./media/reporting-setting-options.png "Raportointiasetusten vaihtoehdot")
+![Raportointiasetusten vaihtoehdot.](./media/reporting-setting-options.png "Raportointiasetusten vaihtoehdot")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä
 Toinen vaihtoehto vähemmistöosuuden näyttämiseen on tytäryhtiön 100 prosenttia raportin jokaisella rivillä mutta vähentää vähemmistöosuus nettotuotosta.
 
 Kuten seuraavassa kuvassa näytetään, vähemmistöosuuden voi laskea raporteissa käyttämällä rivimäärityksen **IF THEN ELSE** -lauseketta ja sarakerajoitusta.
 
-![Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä](./media/Showing-ownership-separate-row-consolidated-report.png "Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä")
+![Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä.](./media/Showing-ownership-separate-row-consolidated-report.png "Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä")
 
 ## <a name="multiple-charts-of-accounts-across-legal-entities"></a>Useita yritysten välisiä tilikarttoja
 Vaikka eri yrityksillä on usein erilaiset tilikartat, niille kuitenkin halutaan muodostaa konsolidoituja raportteja. Tässä tapauksessa tiedot voidaan konsolidoida taloushallinnon raportoinnin avulla, jonka jälkeen voit laatia konsolidoituja raportteja. Yleistasolla erilaisia tilikarttoja käyttävien yritysten konsolidointi sisältää seuraavat vaiheet.
@@ -125,11 +122,11 @@ Kun yksittäisen yrityksen tilikartan rivimäärityksessä kullekin riville void
 > [!TIP]
 > Lisätietoja **Linkki taloushallinnon dimensioihin** -solusta on kohdassa Taloushallinnon dimensiot -solulinkin määrittäminen.
 
-![Tilien ensimmäisen taloushallinnon dimensiolinkin määrittäminen](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Tilien ensimmäisen taloushallinnon dimensiolinkin määrittäminen")
+![Tilien ensimmäisen taloushallinnon dimensiolinkin määrittäminen.](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Tilien ensimmäisen taloushallinnon dimensiolinkin määrittäminen")
 
 Voit määrittää raporttipuun avulla, mitä rivimäärityksen linkkiä taloushallinnon dimensioihin käytetään kunkin yrityksen yhteydessä. Valitse rivimääritys sarakkeessa E ja valitse sitten sopiva rivilinkki sarakkeessa F, kuten seuraavassa kuvassa.
 
-![Käytetty rivimäärityksen taloushallinnon dimensioiden linkki](./media/link-financial-dimensions-row-definition-used.png "Käytetty rivimäärityksen taloushallinnon dimensioiden linkki")
+![Käytetty rivimäärityksen taloushallinnon dimensioiden linkki.](./media/link-financial-dimensions-row-definition-used.png "Käytetty rivimäärityksen taloushallinnon dimensioiden linkki")
 
 > [!TIP]
 > Kun luot linkkejä taloushallinnon dimensioihin, käytä kuvauksia, sillä niiden avulla tunnistetaan yritykset, joita kunkin yrityksen kanssa käytetään. Tämä helpottaa oikean yrityksen valitsemista rapottipuuta luotaessa. Sarakemäärityksen **Raporttiyksikkö**-kentän avulla voit rajoittaa kunkin sarakkeen johonkin raporttipuun yksikköön, joten voit tarkastella tietoja rinnakkain. Jos et liitä sarakkeeseen tiettyä yritystä, kaikkien yritysten konsolidoidut tiedot näytetään.
@@ -149,16 +146,16 @@ Kun suunnittelet sarakemääritystä useille yrityksille, joiden tilikaudet ovat
 
 Seuraavassa kuvassa USMF-yritys on määritetty raportin määrityksen **Yrityksen nimi** -kentässä. Tämän vuoksi USMF-yrityksen kirjanpidon vuosikalenteria käytetään kirjanpidon vuosikalenteriperustana. Kun tässä esimerkissä raportti laaditaan 30.6.2018, USMF-yritys käyttää BASE-kautta, joka on määritetty raportin määrityksessä kaudeksi 12. INMF-yritys käyttää kautta BASE–6, joka on kausi 6. Kummassakin sarakkeessa on kesäkuun 2018 tiedot.
 
-![Raportin peruskausi](./media/report-base-period.png "Raportin peruskausi")
+![Raportin peruskausi.](./media/report-base-period.png "Raportin peruskausi")
 
 Seuraavassa kuvassa on raportin määrityksen asetukset, joilla voit valita, käytetäänkö konsolidoinnissa kauden numeroa vai kauden päättymispäivää.
 
-![Raportin määrityksen jaksonumeroon asetukset](./media/options-report-definition-period-number.png "Raportin määrityksen jaksonumeroon asetukset")
+![Raportin määrityksen jaksonumeroon asetukset.](./media/options-report-definition-period-number.png "Raportin määrityksen jaksonumeroon asetukset")
 
 ## <a name="business-unit-consolidations"></a>Liiketoimintayksikön konsolidoinnit
 Tässä ohjeaiheessa on keskitetty raporttipuun määritysten ja organisaatiohierarkioiden käyttöön konsolidoinnissa taloushallinnon raportoinnissa. Voit luoda raporttipuun myös liiketoimintayksikön konsolidointiraportteja, kuten raportteja maailmanlaajuisesti myynnistä tai toiminnoista. Nämä raportit ovat yleinen vaatimus. Voit luoda ne valitsemalla kullekin konsolidoitavalle yksikölle yrityksen ja dimension. Esimerkiksi seuraavassa kuvassa liiketoimintayksikön koonti suoritetaan toistamalla jokainen yritys **Yritys**-sarakkeessa (sarake A) ja määrittämällä yrityskohtainen osaston dimensioarvojen ryhmä **Dimensiot**-sarakkeessa (sarake D).
 
-![Liiketoimintayksikön konsolidointiraportit](./media/business-unit-consolidation-reports.png "Liiketoimintayksikön konsolidointiraportit")
+![Liiketoimintayksikön konsolidointiraportit.](./media/business-unit-consolidation-reports.png "Liiketoimintayksikön konsolidointiraportit")
 
 ## <a name="consolidations-that-involve-multiple-reporting-currencies"></a>Useita raportointivaluuttoja sisältäviä konsolidointeja
 Taloushallinnon raportointia voi käyttää entistä joustavammin toteutuneiden, budjetoitujen, budjetin hallinnan ja budjetin suunnittelutietojen tarkasteluun useissa valuutoissa. Koska keskeiset asetustiedot tuodaan mukana, taloushallinnon raportoinnissa ei tarvitse tehdä lisämäärityksiä raporttien katsomista varten valuutasta, ajankohdasta ja käyttäjästä riippumatta.
@@ -171,7 +168,7 @@ Päätilin **Taloushallinnon raportointi** -pikavälilehden **Talousraportoinnin
 - Valitse **Talousraportoinnin vaihtokurssin tyyppi** -kentässä vaihtokurssin tyyppi, joka sisältää tilillä käytettävät valuutat ja vaihtokurssit. Tätä valuutta- ja vaihtokurssitaulukkoa käytetään toteutuneisiin tietoihin taloushallinnon raportoinnissa.
 - Valitse **Valuutan muuntotyyppi** -kentässä menetelmä, jolla tilin vaihtokurssit lasketaan. Tätä valuuttamenetelmää käytetään taloushallinnon raportoinnissa sekä toteutuneissa että budjetin tiedoissa.
 
-![Talousraportoinnin päätilit](./media/Financial-reporting-main-accounts.png "Talousraportoinnin päätilit")
+![Talousraportoinnin päätilit.](./media/Financial-reporting-main-accounts.png "Talousraportoinnin päätilit")
 
 Budjetin, budjetin hallinnan ja budjetin suunnittelun tietojen vaihtokurssin tyyppi on määritetty **Kirjanpito**-sivulla. Tästä taulukosta noudetaan vaihtokurssit ja käytettävälle tilille määritetty valuutan muuntotyyppi.
 
@@ -202,15 +199,15 @@ Valuutan muunnon oikaisu (CTA) on tasetilien laskennassa käytettyjen kurssien j
 
 - Käytä rivimäärityksen **Pyöristysoikaisut**-sivua, kuten seuraavassa kuvassa.
 
-    ![Valuutan muunnon oikaisun pyöristysoikaisut](./media/Currency-translation-adjustment-rounding-adjustments.png "Valuutan muunnon oikaisun pyöristysoikaisut")
+    ![Valuutan muunnon oikaisun pyöristysoikaisut.](./media/Currency-translation-adjustment-rounding-adjustments.png "Valuutan muunnon oikaisun pyöristysoikaisut")
 
     Kun määrität rivin, joka näyttää pyöritysoikaisun (valuutan muunnon oikaisu), kokonaiskäyttöomaisuuden rivin, kokonaisvelan ja -pääoman rivin sekä raja-arvon, jonka hyväksyt, taloushallinnon raportointi laskee eron ja siirtää sen halutulle riville. **Pyöristysoikaisu**-rivi luodaan ja se näytetään porautumisen yhteydessä seuraavassa kuvassa esitetyllä tavalla.
 
-    ![Pyöristysoikaisuun porautuminen](./media/rounding-adjustment-drill-down.png "Pyöristysoikaisuun porautuminen")
+    ![Pyöristysoikaisuun porautuminen.](./media/rounding-adjustment-drill-down.png "Pyöristysoikaisuun porautuminen")
 
 - Kaikkien tilien pitäisi olla valittavissa varoitus kuluihin. Kuten seuraavassa kuvassa näyttään, ero on sama summa kuin pyöristysoikaisussa (valuutan muunnon oikaisu). Voitkin käyttää sitä kokonaissumman tarkistuksena ja varmistamassa, että pyöristysoikaisusivu ei sisällytä mitään puuttuvia tilin saldoja.
 
-    ![Pyöristysoikaisun muodon tarkistus](./media/rounding-adjustment-form-check.png "Pyöristysoikaisun muodon tarkistus")
+    ![Pyöristysoikaisun muodon tarkistus.](./media/rounding-adjustment-form-check.png "Pyöristysoikaisun muodon tarkistus")
 
 ### <a name="balance-calculation-approach"></a>Saldo laskentamenetelmä
 Jos valuuttoja käytettäessä saataisiin oikein muunnetut summat, taloushallinnon raportointi käyttää seuraavia saldojen laskentamenetelmiä:
@@ -224,3 +221,6 @@ Jos valuuttoja käytettäessä saataisiin oikein muunnetut summat, taloushallinn
 Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
 
 Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Verkossa tapahtuva taloushallinnon konsolidointi](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

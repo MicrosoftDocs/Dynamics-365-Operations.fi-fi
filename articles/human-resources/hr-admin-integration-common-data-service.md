@@ -1,120 +1,133 @@
 ---
-title: Määritä Common Data Service -integraatio
-description: Voit ottaa integroinnin Common Data Servicen ja Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida yksikön uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
-author: andreabichsel
-manager: AnnBe
-ms.date: 07/27/2020
+title: Määritä Dataverse-integrointi
+description: Tässä aiheessa käsitellään Microsoft Dataversen ja Dynamics 365 Human Resourcesin integrointia.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: c4e68142045b72b139bdda8be707a73e21e568fd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527918"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065448"
 ---
-# <a name="configure-common-data-service-integration"></a>Määritä Common Data Service -integraatio
+# <a name="configure-dataverse-integration"></a>Määritä Dataverse-integrointi
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Voit ottaa integroinnin Common Data Servicen ja Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida yksikön uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
-Kun poistat integroinnin käytöstä, käyttäjät voivat tehdä muutoksia Human Resourcesissa tai Common Data Servicessä, mutta näitä muutoksia ei synkronoida näiden kahden ympäristön välillä.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Oletusarvoisesti Human Resourcesin ja Common Data Servicen tietojen integrointi on poistettu käytöstä.
+Voit ottaa integroinnin Microsoft Dataversen ja Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida taulukon uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
+
+> [!NOTE]
+> Lisätietoja Dataversesta (aiemmin Common Data Service) ja terminologiapäivityksistä on kohdassa [Mikä on Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+
+Kun poistat integroinnin käytöstä, käyttäjät voivat tehdä muutoksia Human Resourcesissa tai Dataversessä, mutta näitä muutoksia ei synkronoida näiden kahden ympäristön välillä.
+
+Oletusarvoisesti Human Resourcesin ja Dataversen tietojen integrointi on poistettu käytöstä.
 
 Integrointi voi kannattaa poistaa käytöstä seuraavissa tilanteissa:
 
 - Olet täyttämässä dataa tietojen hallintakehyksen kautta ja sinun on tuotava tiedot useita kertoja, jotta saat ne oikeaan tilaan.
 
-- Tietoihin liittyy ongelmia joko Human Resourcesissa tai Common Data Servicessä. Jos poistat integroinnin käytöstä, voit poistaa tietueen yhdestä ympäristöstä poistamatta sitä toisessa ympäristössä. Kun otat integroinnin takaisin käyttöön, sen ympäristön tietue, josta sitä ei poistettu, synkronoidaan siihen ympäristöön, josta se poistettiin. Synkronointi alkaa seuraavan kerran, kun **Common Data Servicen integroinnin toteutumattoman pyynnön synkronointi** -erätyö suoritetaan.
+- Tietoihin liittyy ongelmia joko Human Resourcesissa tai Dataversessä. Jos poistat integroinnin käytöstä, voit poistaa tietueen yhdestä ympäristöstä poistamatta sitä toisessa ympäristössä. Kun otat integroinnin takaisin käyttöön, sen ympäristön tietue, josta sitä ei poistettu, synkronoidaan siihen ympäristöön, josta se poistettiin. Synkronointi alkaa seuraavan kerran, kun **Dataversen integroinnin toteutumattoman pyynnön synkronointi** -erätyö suoritetaan.
 
 > [!WARNING]
 > Kun poistat tietojen integroinnin käytöstä, varmista, ettet muokkaa samaa tietuetta molemmissa ympäristöissä. Kun otat integroinnin takaisin käyttöön, viimeksi muokattu tietue synkronoidaan. Näin ollen, jos et tehnyt samoja muutoksia tietueeseen molemmissa ympäristöissä, tietoja voidaan menettää.
 
-## <a name="access-the-common-data-service-integration-page"></a>Common Data Servicen integrointisivun käyttö
+## <a name="access-the-dataverse-integration-page"></a>Dataversen integrointisivun käyttö
 
-1. Valitse siinä Human Resources -esiintymässä, jossa haluat tarkastella tai määrittää Common Data Servicen kanssa integroinnin asetuksia, **Järjestelmän hallinta** -ruutu.
+1. Valitse siinä Human Resources -esiintymässä, jossa haluat tarkastella tai määrittää Dataversen kanssa integroinnin asetuksia, **Järjestelmän hallinta** -ruutu.
 
-    [![Järjestelmän hallinta -ruutu](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Järjestelmän hallinta -ruutu.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Valitse **Linkit**-välilehti.
 
-    [![Linkit-välilehti](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Linkit-välilehti.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
-3. Valitse **Integroinnit**-kohdassa **Common Data Servicen määritys**.
+3. Valitse **Integroinnit**-kohdassa **Dataversen määritys**.
 
-    [![Common Data Servicen määrityslinkki](./media/hr-select-common-data-service-configuration.png)](./media/hr-select-common-data-service-configuration.png)
+    [![Dataversen määrityslinkki.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
-## <a name="turn-data-integration-between-human-resources-and-common-data-service-on-or-off"></a>Human Resourcesin ja Common Data Servicen tietojen integroinnin käyttöönotto ja käytöstä poistaminen
+## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Human Resourcesin ja Dataversen tietojen integroinnin käyttöönotto ja käytöstä poistaminen
 
-- Ota integrointi käyttöön asettamalla **Ota integrointi Common Data Serviceeen** -asetuksen arvoksi **Kyllä**.
+- Ota integrointi käyttöön asettamalla **Ota Dataverse -integrointi käyttöön** -asetuksen arvoksi **Kyllä** **Microsoft Dataverse -integrointi** -sivulla.
 
     > [!NOTE]
-    > Kun otat integroinnin käyttöön, tiedot synkronoidaan seuraavan kerran, kun **Common Data Servicen integroinnin toteutumattoman pyynnön synkronointi** -erätyö suoritetaan seuraavan kerran. Kaikkien tietojen pitäisi olla käytettävissä, kun erätyö on valmis.
+    > Kun otat integroinnin käyttöön, tiedot synkronoidaan seuraavan kerran, kun **Dataversen integroinnin toteutumattoman pyynnön synkronointi** -erätyö suoritetaan seuraavan kerran. Kaikkien tietojen pitäisi olla käytettävissä, kun erätyö on valmis.
 
 - Voit poistaa integroinnin käytöstä määrittämällä asetukseksi **Ei**.
 
-[![Common Data Service -integroinnin käyttöönotto tai käytöstä poisto](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+[![Dataverse-integroinnin käyttöönotto tai käytöstä poisto.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
-> On suositeltavaa, että Common Data Service -integrointi poistetaan käytöstä, kun tiedonsiirtotehtäviä suoritetaan. Suurten tietomäärien lataaminen voi vaikuttaa suorituskykyyn paljon. Esimerkiksi 2 000 työntekijän tietojen lataaminen voi kestää useita tunteja, jos integrointi on käytössä. Jos se ei ole käytössä, aikaa voi kulua alle tunti. Tässä esimerkissä annetut numerot ovat vain esittelytarkoituksia varten. Tietojen tuomiseen kuluvat tarkka aikamäärä voi vaihdella paljon. Se riippuu useista tekijöistä.
+> On suositeltavaa, että Dataverse -integrointi poistetaan käytöstä, kun tiedonsiirtotehtäviä suoritetaan. Suurten tietomäärien lataaminen voi vaikuttaa suorituskykyyn paljon. Esimerkiksi 2 000 työntekijän tietojen lataaminen voi kestää useita tunteja, jos integrointi on käytössä. Jos se ei ole käytössä, aikaa voi kulua alle tunti. Tässä esimerkissä annetut numerot ovat vain esittelytarkoituksia varten. Tietojen tuomiseen kuluvat tarkka aikamäärä voi vaihdella paljon. Se riippuu useista tekijöistä.
 
 ## <a name="view-data-integration-details"></a>Integrointitietojen tarkastelu
 
-**Common Data Service** -integroinnin -sivun **Ylläpito**-pikavälilehdessä voit nähdä, miten tietueet linkittyvät yhteen Human Resourcesin ja Common Data Servicen välillä.
+**Microsoft Dataverse** -integroinnin -sivun **Ylläpito**-pikavälilehdessä voit nähdä, miten rivit linkittyvät yhteen Human Resourcesin ja Dataversen välillä.
 
-- Jos haluat tarkastella yksikön tietueita, valitse yksikkö **CDS-yksikön nimi** -kentässä. Ruudukossa näkyvät kaikki valittuun yksikköön linkitetyt tietueet.
-
-[![Yksikön tietueen tarkasteleminen](./media/hr-common-data-service-configuration-view-entity.png)](./media/hr-common-data-service-configuration-view-entity.png)
+- Voit tarkastella taulun rivejä valitsemalla taulun **Dataverse-taulu** -kentästä. Ruudukossa näkyvät kaikki valittuun taulukkoon linkitetyt rivit.
 
 > [!NOTE]
-> Kaikkia Common Data Service -yksikköjä ei tällä hetkellä ole luettelossa. Ruudukossa näkyvät vain ne yksiköt, jotka tukevat mukautettujen kenttien käyttöä. Uusia yksikköjä tulee saataville jatkuvien Human Resources -julkaisujen myötä.
+> Kaikkia Dataverse-taulukoita ei tällä hetkellä ole luettelossa. Ruudukossa näkyvät vain ne taulukot, jotka tukevat mukautettujen kenttien käyttöä. Uusia taulukoita tulee saataville jatkuvien Human Resources -julkaisujen myötä.
 
 Ruudukko sisältää seuraavat kentät:
 
-- **CDS-yksikön nimi** – Yksikön nimi Common Data Servicessä.
-- **CDS-yksikköviite** – Tunnus, jota Common Data Service käyttää yksikön tunnistamiseen. Tämä arvo vastaa Human Resourcesin **RecId**-arvoa. Löydät tunnuksen, kun avaat Common Data Service -yksikön Microsoft Excelissä.
-- **Human Resources -yksikön nimi** – Yksikkö, joka viimeksi synkronoi tietoja Common Data Serviceen. Yksiköllä voi olla joko Common Data Service -etuliite tai muu etuliite.
+- **Dataverse-taulukko** – Dataverse-taulukon nimi.
+- **Dataverse-taulukkoviite** – Tunnus, jota Dataverse käyttää tietueen tunnistamiseen. Tämä arvo vastaa Human Resourcesin **RecId**-arvoa. Löydät tunnuksen, kun avaat Dataverse-taulukon Microsoft Excelissä.
+- **Human Resources -yksikön nimi** – Human Resources -yksikkö, joka viimeksi synkronoi tietoja Dataverseen. Yksiköllä voi olla joko Dataverse -etuliite tai muu etuliite.
 - **Human Resources -viite** – **RecId**-arvo, joka tietueelle on määritetty Human Resourcesissa.
-- **Poistettiin CDS:stä** – Arvo, joka ilmaisee, onko tietue poistettu Common Data Servicestä.
+- **Poistettu Dataversestä** – Arvo, joka ilmaisee, onko rivi poistettu Dataversestä.
 
-## <a name="remove-the-association-of-a-record-in-human-resources-from-common-data-service"></a>Poista Human Resourcesissa olevan tietueen liitos Common Data Servicestä
+> [!NOTE]
+> Human Resources -tietueet vastaavat rivejä Dataversessä.
 
-Jos kohtaat ongelmia Human Resourcesin ja Common Data Servicen välisen tietojen synkronoinnin aikana, voit ehkä ratkaista ne tyhjentämällä seurannan ja sallimalla seurantataulukon uudelleensynkronoinnin. Jos poistat liitoksen ja muutat tai poistat tietueen Common Data Servicessä, muutoksia ei synkronoida Human Resourcesiin. Jos teet muutoksia Human Resourcesissa, uusi seurantatietue luodaan ja päivitetään Common Data Servicessä.
+## <a name="remove-the-association-of-a-human-resources-record-from-a-dataverse-row"></a>Poista Human Resources -tietueen liitos Dataverse-rivistä
 
-- Jos haluat poistaa tietueen liitoksen Human Resourcesin ja Common Data Servicen väliltä, valitse yksikkö **CDS-yksikön nimi** -kentästä ja valitse sitten **Tyhjennä seurantatiedot**.
+Jos kohtaat ongelmia Human Resourcesin ja Dataversen välisen tietojen synkronoinnin aikana, voit ehkä ratkaista ne tyhjentämällä seurannan ja sallimalla seurantataulukon uudelleensynkronoinnin. Jos poistat liitoksen ja muutat tai poistat rivin Dataversessä, muutoksia ei synkronoida Human Resourcesiin. Jos teet muutoksia Human Resourcesissa, uusi seurantatietue luodaan ja rivi päivitetään Dataversessä.
 
-[![Seurantatietojen tyhjennys](./media/hr-common-data-service-configuration-clear-tracking.png)](./media/hr-common-data-service-configuration-clear-tracking.png)
+- Jos haluat poistaa liitoksen Human Resources -tietueen ja Dataverse-rivin väliltä, valitse taulukko **Dataverse-taulukko** -kentästä ja valitse sitten **Tyhjennä seurantatiedot**.
 
-Katso seuraava menettely, jos haluat suorittaa yksikölle täydellisen synkronoinnin seurannan tyhjentämisen jälkeen.
+[![Seurantatietojen tyhjennys.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
-## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synkronoi yksikkö Human Resourcesin ja Common Data Servicen välillä
+Katso seuraava menettely, jos haluat suorittaa taulukolle täydellisen synkronoinnin seurannan tyhjentämisen jälkeen.
+
+## <a name="sync-a-table-between-human-resources-and-dataverse"></a>Synkronoi taulukko Human Resourcesin ja Dataversen välillä
 
 Käytä tätä menetelmää seuraavissa tilanteissa:
 
-- Common Data Servicen muutokset näkyvät liian hitaasti henkilöstöhallinnossa.
+- Dataversen muutokset näkyvät liian hitaasti henkilöstöhallinnossa.
 
 - Seurantataulukko on päivitettävä seurannan poistamisen jälkeen.
 
-Voit suorittaa täyden synkronoinnin yksikölle henkilöstöhallinnon ja Common Data Servicen välillä:
+Voit suorittaa täyden synkronoinnin taulukolle Human Resourcesin ja Dataversen välillä:
 
-1. Valitse yksikkö **CDS-yksikkönimi** -kentässä.
+1. Valitse taulukko **Dataverse-taulukko** -kentästä.
 
 2. Valitse **Synkronoi nyt**.
 
-[![Täyden synkronoinnin suoritus](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
+[![Täyden synkronoinnin suoritus.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+
+## <a name="see-also"></a>Lisätietoja
+
+[Dataverse-taulut](hr-developer-entities.md)<br>
+[Määritä Dataverse -virtuaalitaulukot](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Human Resources -virtuaalitaulukoiden usein kysytyt kysymykset](hr-admin-virtual-entity-faq.md)<br>
+[Mikä on Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologiapäivitykset](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

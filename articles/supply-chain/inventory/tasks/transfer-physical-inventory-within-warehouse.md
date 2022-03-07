@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 540ba2266ea74c36babce57670f84159c89018f1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b745308aca2503b31d7d24d7cac693bb803fc6ab
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427326"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244252"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Fyysisen varaston siirtäminen varastossa
 
@@ -59,3 +58,6 @@ Tässä menettelyssä käsitellään varastosiirtokirjauskansion luominen ja kir
 1. Valitse **Varasto**.
 2. Valitse **Tapahtumat**. Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Toimittajalaskun arvonlisäveron laskeminen ja täsmäytys
-description: Tässä ohjeaiheessa kerrotaan, miten toimittajan laskun arvonlisäveroa oikaistaan Dynamics 365 Financeissa.
+description: Tässä ohjeaiheessa kerrotaan, miten toimittajan laskun arvonlisäveroa oikaistaan Dynamics 365 Financessa.
 author: twheeloc
 manager: AnnBe
 ms.date: 07/31/2019
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 03313d875d23489b3293376dd94f808c73a4bd15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f4d01fe7587e01c04af28be934a235d955455216
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442596"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204734"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Toimittajalaskun arvonlisäveron laskeminen ja täsmäytys
 
@@ -44,3 +43,6 @@ Tässä ohjeaiheessa käsitellään toimittajan laskun arvonlisäveron oikaisemi
 13. Valitse **OK**.
 14. Valitse **Tallenna**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
