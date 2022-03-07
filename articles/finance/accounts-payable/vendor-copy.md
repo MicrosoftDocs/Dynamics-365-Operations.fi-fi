@@ -2,26 +2,23 @@
 title: Kopioi toimittajat käyttämällä jaettuja numerosarjoja
 description: Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla toimittaja kopioidaan toiseen yritykseen pitäen toimittajatunnus ennallaan.
 author: mikefalkner
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 33338c331a53586b325def398267ab10db23f78a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3a70b268e7fd02a12c85082c651edb6fa0ac3072
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458919"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814269"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopioi toimittajat käyttämällä jaettuja numerosarjoja
 
@@ -65,3 +62,6 @@ Toimittajat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaik
 
 1. Näkyviin tulee **Kopioi toimittaja** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida toimittajan nykyiseen yritykseen valitsemalla **Kyllä**.
 2. Valitse **Valitse**. Uusi toimittaja luodaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

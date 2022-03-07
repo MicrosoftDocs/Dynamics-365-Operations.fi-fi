@@ -2,11 +2,9 @@
 title: Asiakasnoudon ajankohtien luominen ja päivittäminen
 description: Tässä aiheessa kuvataan, miten asiakasnoudon aikavälit luodaan, määritetään ja päivitetään Commerce Headquarters -sovelluksessa.
 author: anupamar-ms
-manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
-ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
+ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "4828208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713418"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Asiakasnoudon ajankohtien luominen ja päivittäminen
 
@@ -36,7 +34,7 @@ Aikaväliominaisuuden avulla jälleenmyyjät voivat määrittää aikavälin nim
 
 Seuraavassa kuvassa näkyy esimerkki aikavälin valinnasta sähköisen kaupankäynnin kassalla.
 
-![Esimerkki aikavälin valinnasta sähköisen kaupankäynnin kassalla](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Esimerkki aikavälin valinnasta sähköisen kaupankäynnin kassalla.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Aikavälin ominaisuudet
 
@@ -62,7 +60,7 @@ Aikaväli määritetään seuraavien ominaisuuksien avulla:
 - **Aktiiviset päivät** – Määritä viikonpäivät, jolloin noutoaikavälit ovat aktiivisia. Tämän ominaisuuden avulla vähittäiskauppias voi määrittää päivät, jolloin se haluaa tukea noutotilauksia.
 - **Vähittäismyyntikanavat** – Määritä vähittäismyyntikanavat. Jokainen aikaväli voidaan liittää yhteen tai useampaan vähittäiskauppaan. Kunkin myymälän aukioloaikojen mukaan voidaan luoda yksi tai useita aikavälimerkintöjä, jotka liittyvät kanavaan. 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Kanavaa kohden voidaan määrittää vain yksi aikavälimalli. Näitä kanavia ovat esimerkiksi kivijalkamyymälät, puhelineskukset, mobiililaitteet ja verkkokauppapaikat.
 
@@ -87,14 +85,14 @@ Voit määrittää aikaväliominaisuuden Commerce Headquarters -sovelluksessa se
     > [!NOTE]
     > Voit luoda useita malleja, mutta vain yksi malli voidaan liittää yksittäiseen kanavaan tai myymälään.
 
-    ![Tilauksen nouto – aika-asetukset -valintaikkuna](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Tilauksen nouto – aika-asetukset -valintaikkuna.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Kun olet valmis, valitse **OK**.
 1. Jos päivän aikavälit vaihtelevat, varmista, että päivämäärät ja ajat eivät mene päällekkäin, luomalla lisä merkintöjä **Tilauksen nouto – aika-asetukset** -pikavälilehdessä.
 1. Valitse **Vähittäismyyntikanavat**-pikavälilehdessä **Lisää**, jos haluat liittää aikavälimallin myymälöihin tai kanaviin, joissa sitä käytetään.
 1. Valitse **Valitse organisaatiosolmut** -valintaikkunassa nuolinäppäimillä valiten (tai tyhjentämällä valinnan) ne myymälät, alueet ja organisaatiot, joihin malli liitetään.
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Kun olet valmis, valitse **OK**.
 1. Synkronoi tiedot kanaviin suorittamalla **Jakeluaikataulu** -sivulla **1070**- ja **1135**-työt.
@@ -105,7 +103,7 @@ Kun myyntipisteessä on noutoa varten määritetty tilaus tai tilausrivi, kassan
 
 Seuraavassa kuvassa näkyy esimerkki aikavälin valinnasta myyntipistetilauksessa.
 
-![Esimerkki myyntipistetilauksen aikavälin valinnasta](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Esimerkki myyntipistetilauksen aikavälin valinnasta.](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Aikavälin valinta sähköisen kaupankäynnin tilauksissa
 
@@ -116,14 +114,17 @@ Lisätietoja siitä, miten aikavälin valinta on käytettävissä sähköisen ka
 
 Seuraavassa kuvassa on esimerkki sähköisen kaupankäynnin tilauksesta, jossa noutoaikaväli on valittu.
 
-![Esimerkki sähköisen kaupankäynnin tilauksesta, jossa noutoaikaväli on valittu](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Esimerkki sähköisen kaupankäynnin tilauksesta, jossa noutoaikaväli on valittu.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Aikavälin valinta puhelinkeskuksen tilauksissa
 
 Soittokeskuksen asiakaspalvelijat voivat valita soittokeskussovelluksessa noutomyymälän tai -sijainnin sekä päivämäärän ja ajanjakson, kuten seuraavassa kuvassa on korostettu.
 
-![Esimerkki puhelinkeskuksen tilauksesta, jossa noutoaikaväli on valittu](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Esimerkki puhelinkeskuksen tilauksesta, jossa noutoaikaväli on valittu.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Noudon tiedot -moduuli](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: ER Yhdistä tietomalli valittuihin tietolähteisiin
-description: Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi yhdistää sähköisen raportoinnin (ER) tietomallin valittuihin Microsoft Dynamics 365 Financen tietolähteisiin.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) tietomallin yhdistämistä valittuihin Microsoft Dynamics 365 Finance -tietolähteisiin.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2d09370b0e08897799d40c41c20c21b58e885dc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 60c20f6616d406bdd1ccdf42ac62eb4c1c5d27040f32469fa6dd370c41830450
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775973"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER Yhdistä tietomalli valittuihin tietolähteisiin
 
@@ -146,3 +144,6 @@ Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänva
 5. Valitse nykyisen konfiguraation valmis versio.
     * Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

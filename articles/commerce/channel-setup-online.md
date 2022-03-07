@@ -1,37 +1,31 @@
 ---
-title: Verkkokanavan määrittäminen
+title: Online-kanavan määrittäminen
 description: Tässä ohjeaiheessa käsitellään uuden verkkokanavan luontia Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-manager: annbe
-ms.date: 07/02/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: f32872fcc27e2e74300c4f18dfa08d666e4ad8a8
+ms.sourcegitcommit: fefe93f3f44d8aa0b7e6d54cc4a3e5eca6e64feb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4412122"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092109"
 ---
-# <a name="set-up-an-online-channel"></a>Verkkokanavan määrittäminen
-
+# <a name="set-up-an-online-channel"></a>Online-kanavan määrittäminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään uuden verkkokanavan luontia Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Dynamics 365 Commerce tukee useita vähittäismyynnin kanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Verkkokaupassa asiakkaat voivat ostaa tuotteita sekä verkkokaupasta että vähittäismyymälästä.
 
@@ -58,11 +52,15 @@ Voit luoda ja määrittää uuden verkkokanavan seuraavasti.
 
 Seuraavassa kuvassa näytetään, miten uusi verkkokanava luodaan.
 
-![Uusi verkkokanava](media/channel-setup-online-1.png)
+![Uusi verkkokanava.](media/channel-setup-online-1.png)
 
 Seuraavassa kuvassa on esimerkki verkkokanavasta.
 
-![Esimerkki verkkokanavasta](media/channel-setup-online-2.png)
+![Esimerkki verkkokanavasta.](media/channel-setup-online-2.png)
+
+## <a name="assign-the-channel-to-a-commerce-scale-unit"></a>Kanavan liittäminen Commerce Scale Unit -yksikköön
+
+Uusi kanava täytyy määrittää Commerce Scale Unit -yksikköön. Lisätietoja: [Commerce Scale Unitin käytön konfiguroiminen kanaviin](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
 
 ## <a name="set-up-languages"></a>Kielien määrittäminen
 
@@ -70,7 +68,7 @@ Jos sähköinen kaupankäyntisivusto tukee useita kieliä, laajenna **Kielet**-o
 
 ## <a name="set-up-payment-account"></a>Maksutilin määrittäminen
 
-Voit lisätä **Maksutili**-osassa kolmannen osapuolen maksupalvelun. Lisätietoja Adyen-maksuyhdistimen määrittämisestä on kohdassa [Dynamics 365:n Adyen-maksuyhdistin](../retail/dev-itpro/adyen-connector.md).
+Voit lisätä **Maksutili**-osassa kolmannen osapuolen maksupalvelun. Lisätietoja Adyen-maksuyhdistimen määrittämisestä on kohdassa [Dynamics 365:n Adyen-maksuyhdistin](./dev-itpro/adyen-connector.md).
 
 ## <a name="additional-channel-setup"></a>Lisäkanavan määrittäminen
 
@@ -78,7 +76,7 @@ Verkkokanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen, toimi
 
 Seuraavassa kuvassa on **Asetukset**-välilehden **Toimitustavat**-, **Maksutavat**- ja **Täytäntöönpanoryhmän määritys** -asetusvaihtoehdot.
 
-![Verkkokanavan lisämääritykset](media/channel-setup-online-3.png)
+![Verkkokanavan lisämääritykset.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Maksutapojen määrittäminen
 
@@ -93,7 +91,7 @@ Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille 
 
 Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
 
-![Esimerkki maksutavasta](media/channel-setup-retail-5.png)
+![Esimerkki maksutavoista.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
 
@@ -107,7 +105,7 @@ Voit muuttaa toimitustapaa tai lisätä sen seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa on esimerkki toimitustavasta.
 
-![Määritä toimitustavat](media/channel-setup-retail-7.png)
+![Määritä toimitustavat.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Täytäntöönpanoryhmän määrityksen määrittäminen
 
@@ -121,16 +119,19 @@ Voit määrittää täytäntöönpanoryhmän määrityksen noudattamalla seuraav
 
 Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määrittämisestä.
 
-![Täytäntöönpanoryhmän määrityksen määrittäminen](media/channel-setup-retail-9.png)
+![Täytäntöönpanoryhmän määrityksen määrittäminen.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
-[Kanava-asetusten edellytykset](channels-prerequisites.md)
+[Kanavan määrittämisen edellytykset](channels-prerequisites.md)
 
 [Vähittäismyyntikanavan määrittäminen](channel-setup-retail.md)
 
 [Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
 
-[Dynamics 365 -maksuyhdistin Adyenia varten](../retail/dev-itpro/adyen-connector.md)
+[Dynamics 365 -maksuyhdistin Adyenia varten](./dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

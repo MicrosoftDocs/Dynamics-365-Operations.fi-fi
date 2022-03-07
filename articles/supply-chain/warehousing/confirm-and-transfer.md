@@ -2,9 +2,11 @@
 title: Vahvista ja siirrä
 description: Tässä aiheessa kerrotaan vahvistus- ja siirtotoiminnosta, joiden avulla käyttäjien on mahdollista lähettää kuormia varastosta ennen kuin kaikki kuormiin liittyvät työt on hoidettu.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: d4e7476e6c1b0ac404caf32f198a4a62e1dd1200
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103586"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251790"
 ---
 # <a name="confirm-and-transfer"></a>Vahvista ja siirrä
 
@@ -45,17 +47,20 @@ Voit jakaa vain ne kuormat, jotka täyttävät kaikki seuraavat ehdot:
 
 - Yhdellä tai useammalla kuormarivillä on keräiltyjä tuotteita.
 - Kuorman tila on pienempi kuin kuorman todellinen määrä.
-- Kuormarivin tietoja ei ole. (Nämä tiedot luodaan rekisterikilven konsolidoinnin avulla väliaikaisessa sijainnissa, ja Vahvistus ja siirto -toiminto ei tue rekisterikilven konsolidointia.)
-- Pakkaussijainnissa ei ole pakkaamista odottavaa varastoa. (*Vahvista ja siirrä* -ominaisuus ei tue varastoa, joka on kerätty pakkausasemalle mutta jota ei ole pakattu ellei pakattuja kontteja ole sijoitettu väliaikaisiin sijainteihin ja ellei niille ole luotu lataustyötä.)
+- Kuormarivin tietoja ei ole. (Nämä tiedot luodaan rekisterikilven konsolidoinnin avulla väliaikaisessa sijainnissa, ja *Vahvistus ja siirto* -toiminto ei tue rekisterikilven konsolidointia.)
+- Pakkaussijainnissa ei ole pakkaamista odottavaa varastoa. (*Vahvistus ja siirto* -toiminto ei tue varastoa, joka on keräilty pakkausasemalle mutta ei vielä pakattu.)
 
 > [!NOTE]
 > Tämä toiminto eroaa kuljetuskuormatoiminnosta, jota käytetään sellaisissa varastoissa, joissa kuormia ei koskaan voida suunnitella ja luoda ennen keräilyä, vaan joissa vapaa kuljetustila kuormataan, kun keräily on saatu valmiiksi.
 >
 > Käytä *Vahvistus ja siirto* -toimintoa tilanteissa, joissa kuormat ovat tavallisesti suunniteltuja ja etukäteen luotuja, mutta joiden kanssa joskus käy niin, että kuorma ei mahdu käytettävissä olevaan kuljetukseen (esim. trukkiin).
 
-## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Vahvista ja siirrä -toiminnon käyttöönotto tai käytöstä poisto
+## <a name="turn-on-confirm-and-transfer"></a>Vahvistuksen ja siirron käyttöönotto
 
-Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Vahvista ja siirrä* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Vahvista ja siirrä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Ennen kuin voit käyttää *Vahvistus ja siirto* -toimintoa, sen pitää olla otettu käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+
+- **Moduuli:** *Varastonhallinta*
+- **Toiminnon nimi:** *Vahvistus ja siirto*
 
 ## <a name="set-up-confirm-and-transfer"></a>Vahvistuksen ja siirron määrittäminen
 

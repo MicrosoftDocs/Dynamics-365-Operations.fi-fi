@@ -2,25 +2,27 @@
 title: Sähköisen laskutuksen palvelun hallinnan aloittaminen
 description: Tässä aiheessa selitetään, miten sähköisen laskutuksen käyttö voidaan aloittaa.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d039dd7f7384cd4af8705d767afe2cddfb166e93
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8adbe577e5111a6a4afdba6aed32855b2e30b39b
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984825"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335687"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Sähköisen laskutuksen palvelun hallinnan aloittaminen
 
@@ -31,7 +33,7 @@ ms.locfileid: "7984825"
 Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten on toteuduttava:
 
 - Sinulla on oltava Microsoft Dynamics Lifecycle Services (LCS) -tili.
-- Käytössäsi on oltava LCS-projekti, joka sisältää Microsoft Dynamics 365 Financen tai Dynamics 365 Supply Chain Managementin version 10.0.17 tai sitä myöhemmän version. Lisäksi nämä sovellukset on otettava käyttöön jossakin seuraavista Azure-alueista:
+- Käytössäsi on oltava LCS-projekti, joka sisältää Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin version 10.0.17 tai sitä myöhemmän version. Lisäksi nämä sovellukset on otettava käyttöön jossakin seuraavista Azure-alueista:
 
     - Yhdysvallat
     - Eurooppa
@@ -45,20 +47,20 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Microservices-lisäosan asentaminen Lifecycle Servicesissa
 
 1. Kirjaudu sisään LCS-tiliiso ja LCS-koontinäytössä valitse LCS-projekti.
-2. Valitse projektissa **Ympäristö**-koontinäytössä valitse käyttöön otettu ympäristö. Valitun ympäristön on oltava käynnissä.
+2. Valitse projektissa ympäristön koontinäytössä valitse LCS-käyttöönottoprojekti. Valittavan projektin on oltava käynnissä.
 3. Valitse **Power Platform -integrointi** -välilehden **Ympäristön lisäosat** -kenttäryhmässä **Asenna uusi lisäosa**.
 4. Valitse **Sähköinen laskutus**.
 5. Kirjoita **AAD-sovellustunnus**-kenttään **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Tämä on kiinteä arvo.
-6. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi vuokraajan tunnus. Määrittämäsi Azure Active Directory (Azure AD) -vuokraajan on oltava sama kuin RCS:ää varten käytetyn vuokraajan.
+6. Syötä **AAD-vuokraajatunnus**-kenttään Azure-tilaustilisi vuokraajan tunnus.
 7. Lue ehdot ja valitse valintaruutu.
-8. Valitse **Asenna**. Asennus voi kestää useita minuutteja.
+8. Valitse **Asenna**.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Määritä RCS-integroinnin parametrit sähköisen laskutuksen avulla
 
 1. Kirjaudu RCS-tilille.
-2. Valitse **Globalisaatiotoiminnot**-työtilan **Liittyvät asetukset** -osassa **Sähköisen raportoinnin parametrit**.
-3. Kirjoita **Sähköinen laskutus** -välilehdessä **Palvelun päätepisteen URI** -kenttään asianmukainen Azure-alueen palvelun päätepiste, joka näkyy seuraavassa taulukossa.
+2. Valitse **Sähköisen raportointi** -työtilan **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.
+3. Kirjoita **Sähköisen laskutuksen palvelu** -välilehdessä **Palvelun päätepisteen URI** -kenttään asianmukainen Azure-alueen palvelun päätepiste, joka näkyy seuraavassa taulukossa.
 
     | Konesalin Azure-alue | Palvelun päätepisteen URI-osoite                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -75,7 +77,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
 1. Kirjaudu RCS-tilille.
 2. Valitse **Globalisaatio-ominaisuudet**-työtilan **Ympäristö**-osassa **Sähköinen laskutus** -ruutu.
-3. Valitse **Ympäristöasetukset**-sivun toimintoruudusta **Palveluympäristöt** ja valitse sitten **Key Vault -parametrit**.
+3. Valitse **Ympäristöasetukset**-sivun toimintoruudusta **Palveluympäristö** ja valitse sitten **Key Vault -parametrit**.
 4. Valitse **Uusi**, jos haluat luoda avainsäilön viitteen.
 5. Syötä **Nimi**-kenttään avainsäilön viitteen nimi. Syötä **Kuvaus**-kenttään kuvaus.
 6. Liitä **Key Vault – URI** -kenttään Azure Key Vaultin avainsäilön salainen koodi. Lisätietoja: [Azure-tallennustilin ja -avainsäilön luominen](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -111,14 +113,12 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 8. Kirjoita **Käyttäjätunnus**-kenttään käyttäjän alias. Kirjoita **Sähköpostiosoite**-kenttään käyttäjän sähköpostiosoite.
 9. Valitse **Tallenna**.
 10. Jos maa-/aluekohtaiset laskut edellyttävät tiettyjen varmenteiden soveltamista digitaaliseen allekirjoitukseen, valitse toimintoruudusta **Key Vaultin parametrit** sitten **Varmenneketju** ja suorita seuraavat vaiheet:
-
     1. Valitse **Uusi**, jos haluat luoda varmenneketjun.
     2. Syötä **Nimi**-kenttään varmenneketjun nimi. Syötä **Kuvaus**-kenttään kuvaus.
     3. Lisää ketjuun varmenne valitsemalla **Varmenteet**-osasta **Lisää**.
     4. Voit muuttaa todistuksen sijaintia ketjussa **Ylös**- tai **Alas**-painikkeella.
     5. Valitse **Tallenna** ja sulje sitten sivu.
     6. Sulje sivu.
-
 11. Julkaise ympäristö pilveen valitsemalla **Palveluympäristö**-sivun toimintoruudussa **Julkaise**. **Tila**-kentän arvoksi tulee **Julkaisu**.
 
 ## <a name="create-a-connected-application"></a>Luo yhdistetty sovellus
@@ -133,7 +133,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 
 ## <a name="link-connected-applications-to-environments"></a>Liitettyjen sovellusten linkittäminen ympäristöihin
 
-1. Valitse **Ympäristöasetus**-sivulla **Uusi**, jos haluat määrittää liitetyn sovelluksen ympäristöön.
+1. Valitse **Ympäristöasetukset**-sivulla **Uusi**, jos haluat määrittää liitetyn sovelluksen ympäristöön.
 2. Valitse **Yhdistetty sovellus** -kentässä yhdistetty sovellus.
 3. Valitse **Palveluympäristö**-kentässä palveluympäristö.
 4. Valitse **Tallenna** ja sulje sitten sivu.
@@ -149,7 +149,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 ### <a name="set-up-the-service-endpoint-url"></a>Palvelun päätepisteen URL-osoitteen määritys
 
 1. Siirry kohtaan **Organisaation hallinta \> Määritys \> Sähköisten asiakirjojen parametrit**.
-2. Kirjoita **Sähköinen laskutus** -välilehdessä **Päätepisteen URL** -kenttään asianmukainen Azure-alueen palvelun päätepiste, joka näkyy seuraavassa taulukossa.
+2. Kirjoita **Lähetyspalvelu** -välilehdessä **Palvelun päätepisteen URL** -kenttään asianmukainen Azure-alueen palvelun päätepiste, joka näkyy seuraavassa taulukossa.
 
     | Konesalin Azure-alue | Palvelun päätepisteen URI-osoite                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -161,8 +161,9 @@ Ennen kuin voit suorittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten o
 3. Syötä **Ympäristö**-kenttään sähköisessä laskutuksessa julkaistun palveluympäristön nimi.
 4. Valitse **Tallenna** ja sulje sitten sivu.
 
-### <a name="enable-flighting-keys-for-finance-or-supply-chain-management-version-10017"></a>Väliversioavainten käyttöönotto Financelle tai Supply Chain Managementin versiolle 10.0.17
+### <a name="enable-flighting-keys"></a>Väliversioavainten ottaminen käyttöön
 
+Ota käyttöön väliversioavaimet Microsoft Dynamics 365 Financelle tai Microsoft Dynamics 365 Supply Chain Management -versiolle 10.0.17 tai vanhemmalle versiolle. 
 1. Suorita seuraava SQL-komento:
 
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)

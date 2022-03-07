@@ -1,142 +1,141 @@
 ---
 title: Asiakkaan kirjausprofiilit
-description: Asiakkaan kirjausprofiilit ohjaavat asiakastapahtumien kirjausta kirjanpitoon.
-author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 08/22/2017
+description: Tässä aiheessa kuvataan asiakkaan kirjausprofiileita, joiden avulla määritetään asiakastapahtumien kirjaus kirjanpitoon.
+author: JodiChristiansen
+ms.date: 12/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPosting, CustVendExternalItem
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff786d6e872e48f9605f9a472b7bffd409c5b3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 91432a401a8f8a499e9f5e2bbe7157408faac822
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442631"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952568"
 ---
 # <a name="customer-posting-profiles"></a>Asiakkaan kirjausprofiilit
 
 [!include [banner](../includes/banner.md)]
 
-Asiakkaan kirjausprofiilit ohjaavat asiakastapahtumien kirjausta kirjanpitoon.
+Tässä aiheessa kuvataan asiakkaan kirjausprofiileita, joiden avulla määritetään asiakastapahtumien kirjaus kirjanpitoon.
 
-<a name="customer-posting-profiles"></a>Asiakkaan kirjausprofiilit
--------------------------
+## <a name="customer-posting-profiles"></a>Asiakkaan kirjausprofiilit
 
-Voit määrittää asiakkaan kirjausprofiilin avulla kirjanpitotilejä ja asiakirja-asetuksia kaikille asiakkaille, asiakasryhmällä tai yhdelle asiakkaalle. Näitä asetuksia käytetään, kun luot myyntitilauksia, vapaatekstilaskuja, käteismaksuja, maksukehotuksia ja korkolaskuja. Voit valita joissakin tapahtumissa eri kirjausprofiilin, joka ohittaa tällä sivulla tapahtumille määritetyn kirjausprofiilin. 
+Voit määrittää asiakkaan kirjausprofiilin avulla kirjanpitotilejä ja asiakirja-asetuksia kaikille asiakkaille, asiakasryhmällä tai yhdelle asiakkaalle. Näitä asetuksia käytetään, kun luot myyntitilauslaskuja, vapaatekstilaskuja, projektilaskuja, maksukirjauskansioita, maksukehotuksia ja korkolaskuja. 
 
-Oletuskirjausprofiili määritetään Myyntireskontran parametrit -sivun Kirjanpito ja arvonlisävero -pikavälilehdessä. Oletuskirjausprofiili sisällytetään sitten automaattisesti uusien asiakirjojen otsikkoon, jossa voit vaihtaa tarvittaessa toisen kirjausprofiilin.
+Oletuskirjausprofiili määritetään **Myyntireskontran parametrit** -sivun **Kirjanpito ja arvonlisävero** -välilehdessä. Se sisällytetään tällöin automaattisesti uusien tiedostojen otsikkoon. Voit muuttaa sitä siinä, jos eri kirjausprofiilia edellytetään. 
 
-Voit liittää tapahtuman kirjaustyyppejä sisältäviä kirjausprofiileja myös Tapahtuman kirjausmääritykset -sivulla. Kirjausmäärityksillä määritetään asiakastapahtumien kirjaus kirjanpitoon kirjausprofiilien sijasta.
+Jos organisaatiot hyväksyvät asiakkaiden ennakkomaksuja, ne konfiguroivat usein ennakkomaksuille toisen kirjausprofiilin ja linkittävät sen parametreissa ennakkomaksujen oletuskirjausprofiilina. Lisätietoja on kohdassa [Asiakkaan ennakkomaksut](customer-prepayments.md).
+
+Voit liittää tapahtuman kirjaustyyppejä sisältäviä kirjausprofiileja myös **Tapahtuman kirjausmääritykset** -sivulla. Kirjausmäärityksillä määritetään asiakastapahtumien kirjaus kirjanpitoon kirjausprofiilien sijasta. Lisätietoja: [Kirjausmääritykset](../general-ledger/posting-definitions.md).
 
 ## <a name="creating-a-posting-profile"></a>Kirjausprofiilin luonti
 Määritä valittua kirjausprofiilia käyttävät tapahtumien kirjaukset, joita käytetään kirjanpitotileillä. Valitse valitulle kirjausprofiilille tilikoodi ja mahdollinen tili- tai ryhmänumero. Kirjauksen aikana jokaiselle tapahtumalle sopivin kirjausprofiilin etsitään hakemalla sopivin tilikoodi-, tilinumero- tai ryhmä- ja numeroyhdistelmää seuraavassa järjestyksessä:
 
-| **Tilikoodi**-kentän arvo | **Tilin/ryhmän numero** -kentän arvo            | Haun prioriteetti |
-|------------------------------|-------------------------------------------------|-----------------|
-| **Taulu**                    | Määrätty asiakastili                       | 1               |
-| **Ryhmä**                    | Asiakkaalle määritetty asiakasryhmä | 2               |
-| **Kaikki**                      | Tyhjä                                           | 3               |
+| Tilikoodi-kentän arvo | Tilin/ryhmän numero -kentän arvo                | Haun prioriteetti |
+|--------------------------|-------------------------------------------------|-----------------|
+| Taulukko                    | Määrätty asiakastili                       | 1               |
+| Ryhmä                    | Asiakkaalle määritetty asiakasryhmä | 2               |
+| Kaikki                      | Tyhjä                                           | 3               |
 
-Jos haluat määrittää kaikille asiakastapahtumille saman kirjausprofiilin, määritä vain yksi kirjausprofiili Tilikoodi-kentässä arvolla Kaikki. Määritä kirjausprofiili määrittämällä seuraavat arvot:
+Jos haluat määrittää kaikille asiakastapahtumille saman kirjausprofiilin, määritä vain yksi kirjausprofiili, jossa **Tilikoodi**-kentässä on arvo **Kaikki**. Määritä kirjausprofiili määrittämällä seuraavat arvot.
 
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Kenttä</th>
 <th>Kuvaus</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><strong>Kirjausprofiili</strong></td>
+<tr>
+<td>Kirjausprofiili</td>
 <td>Anna kirjausprofiilin koodi. Voit esimerkiksi luoda kaksi kirjausprofiilia, jotta asiakassaldot saadaan yhdelle tilille kansallisena valuuttana ja toiselle ulkomaan valuuttana. Ensimmäisen tilin nimi voi olla vaikkapa Kansallinen ja toisen Ulkomainen.</td>
 </tr>
-<tr class="even">
-<td><strong>Kuvaus</strong></td>
+<tr>
+<td>Kuvaus</td>
 <td>Anna kirjausprofiilin kuvaus. Tätä käytetään vain helpottamaan kirjausprofiilin tunnistamista, kun sivua tarkastellaan.</td>
 </tr>
-<tr class="odd">
-<td><strong>Tilikoodi</strong></td>
+<tr>
+<td>Tilikoodi</td>
 <td>Määritä, koskeeko kirjausprofiili yhtä asiakasta, asiakasryhmää vai kaikki asiakkaita:
 <ul>
-<li><strong>Taulu</strong> – Kirjausprofiili koskee yksittäistä asiakasta. Valitse asiakastili Tilin/ryhmän numero -kentässä.</li>
-<li><strong>Ryhmä</strong> – Kirjausprofiili koskee asiakasryhmää. Valitse asiakasryhmä Tilin/ryhmän numero -kentässä.</li>
-<li><strong>Kaikki</strong> – Kirjausprofiili koskee kaikkia asiakkaita. Jätä Tilin/ryhmän numero -kenttä tyhjäksi.</li>
-</ul></td>
+<li><b>Taulu</b> – Kirjausprofiili koskee yksittäistä asiakasta. Valitse asiakastili <b>Tilin/ryhmän numero</b> -kentässä.</li>
+<li><b>Ryhmä</b> – Kirjausprofiili koskee asiakasryhmää. Valitse asiakasryhmä <b>Tilin/ryhmän numero</b> -kentässä.</li>
+<li><b>Kaikki</b> – Kirjausprofiili koskee kaikkia asiakkaita. Jätä <b>Tilin/ryhmän numero</b> -kenttä tyhjäksi.</li>
+</ul>
+</td>
 </tr>
-<tr class="even">
-<td><strong>Tilin/ryhmän numero</strong></td>
-<td>Jos Taulu on valittu Tilikoodi-kentässä, valitse kirjausprofiiliin liitetyn asiakkaan tilinumero. Jos Ryhmä on valittu, valitse asiakasryhmä. Jos Kaikki on valittu, jätä tämä kenttä tyhjäksi.</td>
+<tr>
+<td>Tilin/ryhmän numero</td>
+<td>Jos <b>Taulu</b> on valittu <b>Tilikoodi</b>-kentässä, valitse kirjausprofiiliin liitetyn asiakkaan tilinumero. Jos <b>Ryhmä</b> on valittu, valitse asiakasryhmä. Jos <b>Kaikki</b> on valittu, jätä tämä kenttä tyhjäksi.</td>
 </tr>
-<tr class="odd">
-<td><strong>Reskontratili</strong></td>
-<td>Valitse kirjanpitotili, jota käytetään asiakkaan yhteenvetotilinä kirjausprofiiliin liitetyillä asiakkailla.</td>
+<tr>
+<td>Reskontratili</td>
+<td>Valitse päätili, jota käytetään myyntireskontran kauppatilinä kirjausprofiiliin liitetyillä asiakkailla. Tämä tili on <b>Asiakkaan saldo</b> -kirjaustyypin tili.</td>
 </tr>
-<tr class="even">
-<td><strong>Selvitystili</strong></td>
-<td>Valitse kassavirtaennusteissa käytettävä maksuvalmiustili. Tämä kentässä näkyy vain, jos kassavirtaennusteet ovat käytössä.</td>
+<tr>
+<td>Maksujen rahatili</td>
+<td>Valitse kassavirtaennusteissa käytettävä maksuvalmiustili. Tämä kenttä näkyy vain, jos kassavirtaennusteet ovat käytössä.</td>
 </tr>
-<tr class="odd">
-<td><strong>Arvonlisäveron ennakkomaksut</strong></td>
-<td>Valitse arvonlisäveron tili etuajassa saatuja maksuja varten.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Seteli" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Huomautus</strong></th>
+<tr>
+<td>Arvonlisäveron ennakkomaksut</td>
+<td><p>Valitse arvonlisäveron tili etuajassa saatuja maksuja varten.</p>
+<p><strong>Huomautus:</strong> Määritä <b>Myyntireskontran parametrit</b> -sivulla kirjausprofiili, jota käytetään, kun maksu on merkitty ennakkomaksuksi.</p>
+</td>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Määritä Myyntireskontran parametrit -sivulla kirjausprofiili, jota käytetään, kun maksu on merkitty ennakkomaksuksi.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
-</tr>
-<tr class="even">
-<td><strong>Alennustili</strong></td>
+<tr>
+<td>Alennustili</td>
 <td>Valitse alennusvelkojen kirjanpitotili</td>
 </tr>
-<tr class="odd">
-<td><strong>Maksukehotukset</strong></td>
+<tr>
+<td>Maksukehotukset</td>
 <td>Valitse maksukehotussarjan tunnus, jota käytetään asiakkaille, joille kirjausprofiili on määritetty.</td>
 </tr>
-<tr class="even">
-<td><strong>Korkoryhmä</strong></td>
+<tr>
+<td>Korkoryhmä</td>
 <td>Valitse korkokoodi, jolla lasketaan korko asiakkaille, joille kirjausprofiili on määritetty.</td>
 </tr>
 </tbody>
 </table>
 
-### 
+## <a name="posting-examples"></a>Kirjausesimerkkejä
 
-### <a name="table-restrictions"></a>**Taulurajoitukset**
+Seuraavassa taulukossa on esimerkkejä oletuskirjaustyypeistä sekä esimerkkejä päätileistä ja kuvauksista. **Debet/kredit**-sarake osoittaa, onko tapahtuma tavallisesti debet vai kredit tai joissakin tapauksissa voi kirjata jommankumman. **Selvitystili**-sarake ilmaisee, että kirjaustyyppi on selvitystili. Tämä tarkoittaa, että tälle tilille kirjattu summa palautetaan automaattisesti, kun myöhempi tapahtuma kirjataan. 
+
+| Kirjaustyyppi | Päätiliesimerkki. | Päätilin nimen esimerkki | Tilityyppi | Veloitus/hyvitys | Selvitystili | Kuvaus |
+|--------------|----------------------|---------------------------|--------------|--------------|------------------|-------------|
+| Asiakkaan saldo | 130100 | Myyntireskontran kauppa | Resurssi | Molemmat | Ei | Määritä **Yhteenvetotili**-kenttään tili.|
+| Ei mikään | 110110 | Pankkitili | Resurssi | Molemmat | Ei | Määritä **Rahatili maksuja varten** -kentässä päätili. Tätä tiliä ei käytetä kirjaamiseen. Sitä käytetään vain kassavirtaennusteissa. |
+| Arvonlisäveron ennakkomaksut | 202900 | Arvonlisäveron selvitys | Velat | Molemmat | Kyllä | Valitse arvonlisäveron tili etuajassa saatuja maksuja varten. |
+| Alennustili | 250600 | Lykätyt tuotot ja alennukset | Velat | Molemmat | Kyllä | Valitse alennusvelkojen kirjanpitotili.|     
+
+### <a name="table-restrictions"></a>Taulurajoitukset
 
 Määritä tapahtumille, joilla on valittu kirjausprofiili, tilitetäänkö tapahtumat automaattisesti, lasketaanko korko ja annetaanko maksukehotukset. Voit myös valita tili, jota käytetään, kun valittuun kirjausprofiiliin liittyvät tapahtumat suljetaan.
 
 Määritä kirjausprofiili määrittämällä seuraavat arvot:
 
-| Kenttä                 | Kuvaus                                                                                                                                                                                                                                        |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Tilitys**        | Ota tämän kirjausprofiilin sisältävien tapahtuvien automaattinen tilitys käyttöön valitsemalla tämä asetus. Jos tämä asetus poistetaan käytöstä, tapahtumat on tilitettävä manuaalisesti Tilitä avoimet tapahtumat- tai Lisää asiakkaan maksuja -sivulla. |
-| **Kiinnostuksen kohteet**          | Valitse tämä asetus, jos korko on laskettava tätä profiilia käyttävien asiakastilien jäljellä oleville saldoille. Jos tämän asetuksen valinta poistetaan, korkoa ei lasketa näille asiakkaille.                                           |
-| **Maksukehotus** | Valitse tämä asetus, jos maksukehotuksen on luotava tätä profiilia käyttäville asiakastileille. Jos tämän asetuksen valinta poistetaan, maksukehotuksia ei luoda näille asiakkaille.                                                 |
-| **Sulje**             | Valitse toinen kirjausprofiili, jota siirrytään käyttämään, kun tämän kirjausprofiilin tapahtumia suljetaan. Tapahtuma katsotaan suljetuksi, kun se on selvitetty kokonaan.                                                                           |
+| Kenttä                 | Kuvaus                                           |
+|-----------------------|-------------------------------------------------------|
+| Tilitys        | Ota tämän kirjausprofiilin sisältävien tapahtuvien automaattinen tilitys käyttöön valitsemalla tämä asetus. Jos tämä asetus poistetaan käytöstä, tapahtumat on tilitettävä manuaalisesti **Tilitä avoimet tapahtumat**- tai **Lisää asiakkaan maksuja** -sivulla. |
+| Kiinnostuksen kohteet          | Valitse tämä asetus, jos korko on laskettava tätä profiilia käyttävien asiakastilien jäljellä oleville saldoille. Jos tämän asetuksen valinta poistetaan, korkoa ei lasketa näille asiakkaille.                                           |
+| Maksukehotus | Valitse tämä asetus, jos maksukehotuksen on luotava tätä profiilia käyttäville asiakastileille. Jos tämän asetuksen valinta poistetaan, maksukehotuksia ei luoda näille asiakkaille.                                                 |
+| Sulje             | Valitse toinen kirjausprofiili, jota siirrytään käyttämään, kun tämän kirjausprofiilin tapahtumia suljetaan. Tapahtuma katsotaan suljetuksi, kun se on selvitetty kokonaan.             |
 
 
 
 Lisätietoja on ohjeaiheessa [Asiakkaan maksujen yleiskatsaus](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

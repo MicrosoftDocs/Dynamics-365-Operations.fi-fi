@@ -1,29 +1,26 @@
 ---
-title: Aallon etikettitulostuksen määrittäminen ja käyttäminen
+title: Aallon etiketin tulostus
 description: Tässä ohjeaiheessa käsitellään aallon etikettitulostusta ja sen määrittämistä.
-author: GarmMSFT
-manager: PJacobse
+author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
-ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4427514"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344171"
 ---
-# <a name="set-up-and-use-wave-label-printing"></a>Aallon etikettitulostuksen määrittäminen ja käyttäminen
+# <a name="wave-label-printing"></a>Aallon etiketin tulostus
 
 [!include [banner](../includes/banner.md)]
 
@@ -932,3 +929,10 @@ Voit tarkastella aallon etikettejä ja tulostaa niitä uudelleen seuraavilta siv
 - Aallon etikettihistoria
 
 Useimmilla näistä sivuista sopiva toiminto löytyy valitsemalla **Aallon etiketit** toimintoruudun **Lähetykset**-välilehden **Liittyvät tiedot** -ryhmässä.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Aallon etikettien tulostaminen uudelleen ja mitätöinti](reprint-and-void-wave-labels.md)
+- [Aallon etikettien tulostamisen ajoittaminen aallon aikana](configure-task-based-wave-label-printing.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

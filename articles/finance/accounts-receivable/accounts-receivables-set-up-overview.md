@@ -2,28 +2,27 @@
 title: Myyntireskontran ja luotonvalvonnan määrittäminen
 description: Määritä myyntireskontra ja luotonvalvonta, kun haluat seurata laskuja ja asiakkailta saapuvia maksuja.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsAgent, CustCollectionsPool, CustGroup, CustParameters, CustPaymMode, CustPosting, CustVendReportInterval, Interest, PaymTerm, Reasons
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 24631
+ms.custom:
+- "24631"
+- intro-internal
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ec8ee7f8ba7493e5334c1a4106351c3661aa00a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a7ea7569f017ef03f68d5f2ad689e7b3013fb49
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442742"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6340226"
 ---
 # <a name="configure-accounts-receivable-and-credit-and-collections"></a>Myyntireskontran ja luotonvalvonnan määrittäminen
 
@@ -110,3 +109,6 @@ Lisätietoja on kohdassa [Luotto ja perintä myyntireskontrassa](collections-cre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

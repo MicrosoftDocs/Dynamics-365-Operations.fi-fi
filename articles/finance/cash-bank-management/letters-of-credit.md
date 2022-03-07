@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 18271
 ms.assetid: aa594beb-bdb2-4117-91c2-d097d9401b0f
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a9be6ad2ff90dffdf8548d7594f922a7cf9b404
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e733238943b723d17a4588252aa85ef4123c9796
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442783"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253912"
 ---
 # <a name="letters-of-credit"></a>Luottokirjeet
 
@@ -53,3 +52,6 @@ Lisätietoja on seuraavissa aiheissa:
 [Luo pankin limiittisopimus remburssia varten](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

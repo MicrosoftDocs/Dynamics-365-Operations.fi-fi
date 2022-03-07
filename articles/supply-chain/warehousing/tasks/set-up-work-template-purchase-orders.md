@@ -1,25 +1,27 @@
 ---
 title: Määritä työmalli ostotilauksia varten
 description: Tässä aiheessa käsitellään vastaanotettujen nimikkeiden poispanossa käytettävän yksinkertaisen työmallin määrittämistä.
-author: Mirzaab
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkTemplateTable, SysQueryForm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32dbdd8243c6b37cfe0c42d2e7b06adfa32a947a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e9acf6db9138a009527c6662f1cbb7e5fedc8778
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572286"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976860"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Määritä työmalli ostotilauksia varten
 
@@ -58,6 +60,3 @@ Tässä aiheessa käsitellään vastaanotettujen nimikkeiden poispanossa käytet
 6. Kirjoita **Työluokan tunnus** -kenttään arvo. Keräily- ja määritysohjeet kuuluvat yhteen. Jokaisella keräily/määritys-joukolla on oltava sama työluokka. Käytä samaa, keräilyohjeessa ilmoitettua työluokkaa.  
 7. Valitse **Tallenna**. Huomaa, että **Voimassaoleva**-valinta on nyt valittuna.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

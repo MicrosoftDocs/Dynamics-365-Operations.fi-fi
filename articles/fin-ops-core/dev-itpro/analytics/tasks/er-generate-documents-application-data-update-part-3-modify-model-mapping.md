@@ -1,12 +1,10 @@
 ---
 title: Muokkaa malleja ja yhdistämismäärityksiä luodaksesi sovellustietoja sisältäviä asiakirjoja
-description: Voit suorittaa tämän menettelyn vaiheet sen jälkeen, kun ER Asiakirjojen luominen sovellustietojen päivityksen kanssa (Osa 2 – asiakirjojen luominen) -menettely on suoritettu.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määritysten suunnittelua sähköisen asiakirjan luontia ja sovellustietojen päivitystä varten. (Osa 2 – Asiakirjojen luonti).
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3401ec98ac1b61572d07fbb30d4465de78473fca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78b1771d0e01702162192ff20c03facbba4f3513
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684568"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751603"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Muokkaa malleja ja yhdistämismäärityksiä luodaksesi sovellustietoja sisältäviä asiakirjoja
 
@@ -168,3 +166,6 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 66. Sulje sivu.
 67. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

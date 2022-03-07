@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b27b4d87add38fac29c9eba4ace08af91f9faca1
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 09b6b69d72d0a5f429dbd8cba6faefd4b1a057e4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020151"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264871"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Luo tavaralähetyksen täydennystilaus
 
@@ -61,3 +61,6 @@ Tässä aiheessa kuvataan, miten luot tavaralähetyksen täydennystilauksen, jos
 3. Valitse **Yleiskatsaus**. Toimitusvarastoon vastaanotetut nimikkeet, jotka omistaa toimittaja ovat käytettävissä. Tavaralähetyksen täydennystilauksella jäljellä oleva määrä näytetään **Tilattu yhteensä** -kentässä.  
 4. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

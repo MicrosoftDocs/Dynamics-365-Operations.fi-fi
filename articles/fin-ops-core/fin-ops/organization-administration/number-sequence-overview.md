@@ -1,28 +1,28 @@
 ---
 title: Numerosarjojen yleiskatsaus
 description: Numerosarjoilla luodaan luettavia, yksilöllisiä tunnisteita niitä edellyttäville päätietojen tietueille ja tapahtumatietueille.
-author: MargoC
-manager: AnnBe
+author: SunilGarg
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 15461
+ms.custom:
+- "15461"
+- intro-internal
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
-ms.author: margoc
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41a3beca0fb373ba985a2d01dd15cdc5a60e2919
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 1d65eb3824cfa158e6b382ee7bae2c86aab9396b
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797067"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778326"
 ---
 # <a name="number-sequences-overview"></a>Numerosarjojen yleiskatsaus
 
@@ -115,3 +115,6 @@ Elleivät säännökset vaadi jatkuvien numerosarjojen käyttöä, suosittelemme
 Järjestelmä ei voi kierrättää numeroita automaattisesti jatkuvia numerosarjoja varten sähkökatkoksen, sovellusvirheen tai muun odottamattoman vian takia. Voit suorittaa vapautusprosessi manuaalisesti tai automaattisesti palauttaaksesi menetetyt numerot.
 
 Mieti palvelimen käyttö puhdistusprosessin suunnittelussa. On suositeltavaa suorittaa vapautus erätyönä hiljaisena aikana.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

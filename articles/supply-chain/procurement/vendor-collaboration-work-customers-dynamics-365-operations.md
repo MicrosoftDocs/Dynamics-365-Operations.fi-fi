@@ -2,40 +2,36 @@
 title: Toimittajayhteistyö asiakkaiden kanssa
 description: Tässä aiheessa kuvataan, miten voit käyttää ostotilauksia ja valvoa tavaralähetysvarastoa toimittajayhteistyön avulla.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
-ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654337"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022971"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Toimittajayhteistyö asiakkaiden kanssa
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan, miten voit käyttää toimittajayhteistyötä työskennelläksesi asiakkaiden kanssa Microsoft Dynamics 365 Supply Chain Managementissa. Toimittajat voivat suorittaa liiketoimintaprosessien sarjan seuraavista työtiloista:
 
 - **Ostotilauksen vahvistus** – ostotilausten seuranta ja niihin vastaaminen.
 - **Toimittajan tarjoukset** – tarjouspyyntöjen tarkastelu ja niihin vastaaminen tekemällä tarjouksia.
 - **Toimittajatiedot** – toimittajan päätietojen tarkastelu ja päivittäminen.
-- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Toimittajat voivat seurata myös tavaralähetysvaraston tietoja.
 
@@ -82,7 +78,7 @@ Jos käytät tavaralähetysvarastoa, voit tarkastella tietoja toimittajayhteisty
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Tarjouspyyntöjen käsittely Toimittajan tarjoukset -työtilassa
 
-Voit tarkastella **Toimittajan tarjoukset** -työtilassa tarjouspyyntöjä, joihin yrityksesi on kutsuttu vastaamaan. Voit myös vastata tarjouspyyntöön. 
+Voit tarkastella **Toimittajan tarjoukset** -työtilassa tarjouspyyntöjä, joihin yrityksesi on kutsuttu vastaamaan. Voit myös vastata tarjouspyyntöön.
 
 Työtilassa on myös kaikki hävityt ja voitetut tarjouspyynnöt. Jos järjestelmä on lisäksi määritetty julkisen sektorin käyttöön, työtilassa on julkisesti käytettävissä olevat tarjouspyynnöt.
 
@@ -104,16 +100,24 @@ Julkisella sektorilla työskentelevät henkilöt näkevät julkisiksi tehdyt avo
 
 - Kun valitset **Avaa julkaistut tarjouspyynnöt** -linkin, näet luettelon julkisesti käytettävissä olevista avoimista tarjouspyynnöistä. Avoimella tarjouspyynnöllä tarkoitetaan tarjouspyyntöä, joka ei ole vielä vanhentunut. Vanhentumispäivä ja -aika näkyvät tarjouspyynnön otsikossa.
 
-    Jos sinut on kutsutte tekemään tarjous, sama tarjouspyyntö on myös **Uudet tarjouskutsut** -sivulla. Haluat ehkä joskus tehdä tarjouksen avoimelle tarjouspyynnölle, vaikka sinua ei ole kutsuttu tekemään tarjousta. Siinä tapauksessa voit ehkä kutsua itse itsesi, jos toimittaja on ottanut itsekutsumisen käyttöön tarjouspyyntötapauksessa.
+    Jos sinut on kutsutte tekemään tarjous, sama tarjouspyyntö on myös **Uudet tarjouskutsut** -sivulla. Haluat ehkä joskus tehdä tarjouksen avoimelle tarjouspyynnölle, vaikka sinua ei ole kutsuttu tekemään tarjousta. Siinä tapauksessa voit ehkä kutsua itse itsesi, jos toimittaja on ottanut itsekutsumisen käyttöön tarjouspyyntötapauksessa. 
 
-    Paranna **Avaa julkaistut tarjouspyynnöt** -linkin helppokäyttöisyyttä ottamalla käyttöön **Näytä Avaa julkaistut tarjouspyynnöt -linkki ruutuna** -ominaisuus. Tämä ominaisuus muuntaa linkin ruuduksi ja siirtää sen näkyvälle paikalle, jolloin se on helppo löytää.
+    **Uudet tarjouspyynnöt** -sivu voi antaa suodattimen, jonka avulla voit tarkastella avoimia tarjouspyyntöjä ja tunnistaa ne, jotka sisältävät hyväksyttyjä hankintaluokkia vastaavat rivit. Jotta tämä suodatin olisi käytettävissä, sinun on otettava käyttöön *Salli toimittajien hakea tarjouspyyntöjä hankintaluokan mukaan* -toiminto järjestelmässä. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen tämän toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Työtilassa ominaisuus näkyy seuraavalla tavalla:
+
+    - **Moduuli:** *Ostoreskontra*
+    - **Toiminnon nimi:** *Salli toimittajien hakea tarjouspyyntöjä hankintaluokan mukaan* <!-- KFM: I don't see this here, is this right? -->
+
+    Voit parantaa **Avaa julkaistut tarjouspyynnöt** -linkin helppokäyttöisyyttä ottamalla käyttöön *Näytä Avaa julkaistut tarjouspyynnöt -linkki ruutuna* -ominaisuus. Tämä ominaisuus muuntaa linkin ruuduksi ja siirtää sen näkyvälle paikalle, jolloin se on helppo löytää. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen tämän toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. (Supply Chain Management -versiosta 10.0.21 alkaen toiminto on oletusarvoisesti käytössä.) Ominaisuus on lueteltu seuraavalla tavalla:
+
+    - **Moduuli:** *Hankinnan tehtävät*
+    - **Ominaisuuden nimi:** *Näytä Avaa julkaistut tarjouspyynnöt -linkki ruutuna*
 
 - Kun valitset **Suljetut julkaistut tarjouspyynnöt** -linkin, näet luettelon julkisesti käytettävissä olevista suljetuista tarjouspyynnöistä. Suljetulla tarjouspyynnöllä tarkoitetaan vanhentunutta tarjouspyyntöä. Vanhentumispäivä ja -aika näkyvät tarjouspyynnön otsikossa.
 
     Suljettu tarjouspyyntö näyttää kaikki toimittajien tarjoukset rivitasolle saakka. Sitä mukaan kun tarjouksia myönnetään tai hylätään, kyseinen tieto näkyy suljetussa tarjouspyynnössä. Myös tarjoukseen sisältyneet liitteet ovat käytettävissä.
 
 > [!NOTE]
-> Huomautus: tämä toiminto on käytettävissä vain, jos julkisen sektorin määritykset on otettu käyttöön.
+> Tämä toiminto on käytettävissä vain, jos julkisen sektorin määritykset on otettu käyttöön.
 
 ### <a name="bidding"></a>Tarjoukset
 
@@ -147,3 +151,6 @@ Käytettävissä on seuraavat tiedot: toimittajan nimi, osoitteet, yhteystiedot,
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

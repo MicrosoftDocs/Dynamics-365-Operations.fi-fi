@@ -1,29 +1,26 @@
 ---
 title: Pääkirjan talousraportit
 description: Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan.
-author: jcart1106
-manager: AnnBe
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12314
 ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b48510febf5a5f9f4a01728b242d9750b3c62c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bb4977acde8b7a0b2cd6b44c518654fe4a6283b28dfd41216a0173c3aa8b61f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758048"
 ---
 # <a name="trial-balance-financial-reports"></a>Pääkirjan talousraportit
 
@@ -31,8 +28,7 @@ ms.locfileid: "4442618"
 
 Tässä artikkelissa kuvataan pääkirjojen oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin sekä niiden muokkaaminen liiketoimintasi tarpeiden mukaan. 
 
-<a name="default-trial-balance-reports"></a>Pääkirjan oletusraportit
------------------------------
+## <a name="default-trial-balance-reports"></a>Pääkirjan oletusraportit
 
 Talousraportointi sisältää kolme pääkirjaraporttia.
 
@@ -50,6 +46,9 @@ Pääkirjan talousraporteissa käytetään seuraavia rakenneosia.
 | Yksityiskohtainen pääkirja – oletus               | Pääkirja - oletusarvo | Yksityiskohtainen pääkirja – oletus               |
 | Pääkirjan yhteenveto – oletus                | Pääkirja - oletusarvo | Pääkirjan yhteenveto - oletusarvo                |
 | Pääkirjan yhteenveto vuosittain – oletus | Pääkirja - oletusarvo | Pääkirjan yhteenveto vuosittain - oletusarvo |
+
+> [!NOTE] 
+> Kun suoritetaan talousraportoinnin **Pääkirjasaldo**-raportti, valitse valintaruutuja, jotka koskevat **Näytä rivit, joilla ei ole summia**, ja **näytä raportit, joilla ei ole aktiivisia rivejä** **Asetukset**-välilehdessä.
 
 ### <a name="row-definition"></a>Rivimääritys
 
@@ -97,10 +96,7 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
     -   **FD** – vain edellisen vuoden debet-tiedot sisältävät taloushallinnon tiedot
     -   **FD** – vain edellisen vuoden kredit-tiedot sisältävät taloushallinnon tiedot
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Taloushallinnon raportoinnin yleiskatsaus](financial-reporting-getting-started.md)
 
@@ -110,3 +106,6 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

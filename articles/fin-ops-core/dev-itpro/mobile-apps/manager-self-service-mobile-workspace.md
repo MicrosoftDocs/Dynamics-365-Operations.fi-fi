@@ -1,12 +1,10 @@
 ---
 title: Oman ryhmän mobiilityötila
-description: Tässä ohjeaiheessa on tietoja oman ryhmän mobiilityötilasta, jossa esimiehet voit tarkastella suoria alaisiaan ja laajennettua henkilökuntaa. Käyttäjät voivat myös lähettää kehuja raportointiketjuunsa kuuluville henkilöille.
+description: Tässä ohjeaiheessa on tietoja oman ryhmän mobiilityötilasta, jossa esimiehet voit tarkastella suoria alaisiaan ja laajennettua henkilökuntaa.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767109"
 ---
 # <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
@@ -80,7 +78,7 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
 4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
-[![Nouda päivitettäväksi](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Päivittäminen vetämällä.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Ryhmän jäsenten tarkastelu oman ryhmän mobiilityötilassa
 1.  Valitse mobiilisovelluksessa **Oma ryhmä** -työtila. Luettelo ryhmän jäsenistä avautuu. Luettelossa on myös kunkin ryhmän jäsenen nimike sekä tämän mahdolliset suorat alaiset.
@@ -97,3 +95,6 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 1.  Valitse **Lähetä kehu**. 
 1. Kirjoita kehu, jonka haluat lähettää. 
 1. Valitse **Valmis**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

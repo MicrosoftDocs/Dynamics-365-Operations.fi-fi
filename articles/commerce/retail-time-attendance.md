@@ -1,17 +1,14 @@
 ---
 title: Ajan ja läsnäolon hallinta Retailissa
-description: Tässä aiheessa on kuvaus Dynamics 365 Commercein ajan ja työajan hallinnassa tuettavista skenaarioista.
+description: Tässä aiheessa on kuvaus Dynamics 365 Commercen ajan ja työajan hallinnassa tuettavista skenaarioista.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -19,18 +16,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a34c9f265a3adbbe938d90f2aa7f5d02b7201c05
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412089"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344979"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Ajan ja läsnäolon hallinta Retailissa
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on kuvaus Dynamics 365 Commercein ajan ja työajan hallinnassa tuettavista skenaarioista.
+Tässä aiheessa on kuvaus Dynamics 365 Commercen ajan ja työajan hallinnassa tuettavista skenaarioista.
 
 ## <a name="manage-worker-setup-and-scheduling"></a>Työntekijän asetusten ja ajoituksen hallinta
 
@@ -41,9 +38,9 @@ Tässä aiheessa on kuvaus Dynamics 365 Commercein ajan ja työajan hallinnassa 
 
 ### <a name="plan-worker-schedules"></a>Suunnittele työntekijöiden aikatauluja
 
-- Liitä profiileita työn suunnittelutoiminnon avulla. Lisätietoja on kohdassa [Profiilien käyttäminen työn suunnittelun avulla](https://technet.microsoft.com/library/aa551234.aspx).
+- Liitä profiileita työn suunnittelutoiminnon avulla. Lisätietoja on kohdassa [Profiilien käyttäminen työn suunnittelun avulla](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-Lisätietoja määritysvaiheista on kohdassa [Työajan seurannan määrittäminen](https://technet.microsoft.com/library/aa496971.aspx).
+Lisätietoja määritysvaiheista on kohdassa [Työajan seurannan määrittäminen](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### <a name="commerce-specific-configuration"></a>Commerce-kohtainen konfiguraatio
 
@@ -100,7 +97,7 @@ Lisätietoja määritysvaiheista on kohdassa [Työajan seurannan määrittämine
         </tbody>
         </table>
 
-        [![Aikatilat](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Aikatilat.](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - Tarkastele vahvistussanomaa ja vahvista, että nykyinen merkinnän aika on oikea.
 - Lokikirja:
@@ -138,4 +135,7 @@ Commerce-käyttäjä noudattaa työnkulkua aikakirjausten laskemiseen, hyväksym
 - Joukkopoistuminen
 - Poissaolon kirjaaminen
 
-Lisätietoja työajan seurannan rekisteröintien käsittelystä on kohdassa [Työajan seurannan rekisteröintien käsittely](https://technet.microsoft.com/library/aa573180.aspx).
+Lisätietoja työajan seurannan rekisteröintien käsittelystä on kohdassa [Työajan seurannan rekisteröintien käsittely](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

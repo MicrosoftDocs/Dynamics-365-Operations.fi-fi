@@ -2,9 +2,11 @@
 title: Yksi tosite – usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä yhden tositteen toiminnosta. Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjauskansio tai toimittajan maksukirjauskansio) yksi tosite sallii useiden alareskontratapahtumien antamisen yhden tositteen kontekstissa.
 author: kweekley
+manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 04e1f53802a69aa9de84826bfad05db7b29739a26441b1222cabc224d2873177
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 916f0172a2d7f9fad9dcd70b31f8ecf65e47b2c8
+ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715043"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5107746"
 ---
 # <a name="one-voucher-faq"></a>Yksi tosite – usein kysytyt kysymykset
 
@@ -49,6 +51,3 @@ Kuten jokaisen uuden ominaisuuden osalta, asiakkaiden on seurattava julkaisusuun
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Kun vanhentumispäivämäärä tunnistetaan, missä siitä ilmoitetaan?
 
 Yksi tosite- toiminnon vanhentuminen on tärkeä muutos, josta tiedotetaan paljon. Siitä viestitään tuotedokumentaation, blogijulkaisujen ja soveltuvien Microsoftin tapahtumien kautta – reilusti ennen vanhentumisen päivämäärää.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

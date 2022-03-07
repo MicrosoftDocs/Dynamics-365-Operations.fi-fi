@@ -2,15 +2,12 @@
 title: Karttamoduuli
 description: Tässä ohjeaiheessa on tietoja karttamoduuleista ja niiden määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747390"
 ---
 # <a name="map-module"></a>Karttamoduuli
 
@@ -32,9 +29,7 @@ ms.locfileid: "4665417"
 
 Tässä ohjeaiheessa on tietoja karttamoduuleista ja niiden määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 
-## <a name="overview"></a>Yleiskuvaus
-
-Karttamoduuli, jossa näkyvät myymälöiden sijainnit [Bing Maps V8 -verkko-ohjausobjektin](https://docs.microsoft.com/bingmaps/v8-web-control/) avulla hahmonnetussa interaktiivisessa kartassa. Bing Maps -ohjelmointirajapinnan avain on pakollinen, ja se on lisättävä Commercen pääkonttorisovelluksen jaettuihin parametreihin. Karttamoduulit tarjoavat erilaisia näkymiä, kuten maantie-, ilma- ja katunäkymät. Niiden avulla käyttäjät voivat tarkastella karttasijainteja. Ne mahdollistavat myös vuorovaikutuksen, kuten zoomauksen ja käyttäjän sijainnin käyttämisen.
+Karttamoduuli, jossa näkyvät myymälöiden sijainnit [Bing Maps V8 -verkko-ohjausobjektin](/bingmaps/v8-web-control/) avulla hahmonnetussa interaktiivisessa kartassa. Bing Maps -ohjelmointirajapinnan avain on pakollinen, ja se on lisättävä Commercen pääkonttorisovelluksen jaettuihin parametreihin. Karttamoduulit tarjoavat erilaisia näkymiä, kuten maantie-, ilma- ja katunäkymät. Niiden avulla käyttäjät voivat tarkastella karttasijainteja. Ne mahdollistavat myös vuorovaikutuksen, kuten zoomauksen ja käyttäjän sijainnin käyttämisen.
 
 Karttamoduuli toimii yhdessä myymälän valitsinmoduulin kanssa ja määrittää kartalla muodostettujen myymälöiden maantieteelliset sijainnit. Myymälän valitsin ja karttamoduulit ovat vuorovaikutuksessa, kun käyttäjä valitsee myymälän jollakin sivustosivulla olevista moduuleista. Karttamoduuleja voidaan laajentaa muihin skenaarioihin myymälän valitsinmoduulien vuorovaikutuksen lisäksi. Moduulin mukautus on kuitenkin pakollinen.
 
@@ -43,7 +38,7 @@ Karttamoduuli toimii yhdessä myymälän valitsinmoduulin kanssa ja määrittä�
 
 Seuraavassa kuvassa näkyy esimerkki karttsmoduulista, jota käytetään myymälän sijaintien sivulla.
 
-![Esimerkki myymälän valitsinmoduulista](./media/ecommerce-Storelocator.PNG)
+![Esimerkki myymälän valitsinmoduulista.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 
@@ -81,4 +76,7 @@ Lisätietoja karttamoduulin määrittämisestä sivulla on kohdassa [Myymälän 
 
 [Bing Maps -karttapalvelun hallinta organisaatiossa](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8 -verkko-ohjausobjekti](https://docs.microsoft.com/bingmaps/v8-web-control/)
+[Bing Maps V8 -verkko-ohjausobjekti](/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

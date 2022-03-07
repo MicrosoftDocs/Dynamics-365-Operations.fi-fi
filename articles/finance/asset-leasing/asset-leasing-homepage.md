@@ -2,28 +2,27 @@
 title: Resurssin vuokrauksen aloitussivu
 description: Tässä ohjeaiheessa on yleiskatsaus resurssin vuokrauksen dokumentaatiosta ja linkit tiettyihin ohjeaiheisiin.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd32ad1b745d1bfda25abf57330fb1385014e4fc
-ms.sourcegitcommit: f0f5545a8ff99583e0131f435d91c64bb68a1c38
+ms.openlocfilehash: d187f094a7d13e26a6121a2115c146c1372dba46bcafd423a3683d73a1e779f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4442985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775215"
 ---
 # <a name="asset-leasing-home-page"></a>Resurssin vuokrauksen aloitussivu
 
@@ -31,7 +30,9 @@ ms.locfileid: "4442985"
 
 Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen ohjeaiheet ja linkit tiettyihin ohjeaiheisiin. 
 
-Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Dynamics 365 Financessa. Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842). Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen.  
+Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Dynamics 365 Financessa. Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842). Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen.
+
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Etsi ja valitse **Ominaisuuksien hallinta** -työtilassa toiminto, jonka nimi on **Käyttöomaisuuden vuokraus** ja napsauta sitten **Ota käyttöön nyt** -painiketta.
 
 ## <a name="asset-leasing-topics"></a>Resurssin vuokrauksen ohjeaiheet
 Seuraava ohjeaihe auttaa resurssin vuokrauksen määrittämisessä ja käyttämisessä. 
@@ -85,7 +86,7 @@ Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen käytettävissä olevat rap
 
 ### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
+Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](/dynamics365/release-plans/), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
 
 ### <a name="blogs"></a>Blogit
 
@@ -96,3 +97,6 @@ Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com
 ### <a name="videos"></a>Videot
 
 Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

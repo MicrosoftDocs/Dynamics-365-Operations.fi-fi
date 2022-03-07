@@ -2,27 +2,24 @@
 title: IoT-analytiikkaskenaarion määrittäminen
 description: Tässä ohjeaiheessa kerrotaan, miten IoT-analytiikan skenaarioita voidaan määrittää Microsoft Dynamics 365 Supply Chain Managementissa.
 author: robinarh
-manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d1deaa2130b63272da39a42315c6a1bc4b7ccb8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 36be4a85dbbd28839afd45b6ed167b4c8181ae72
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427323"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909498"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>IoT-analytiikkaskenaarion määrittäminen
 
@@ -45,7 +42,7 @@ Tässä ohjeaiheessa määritetään **Laiteseisokki**-skenaario siten, että Su
 Skenaario määritetään seuraavasti.
 
 1. Kirjaudu Supply Chain Managementiin.
-2. Ota IoT-analytiikkatoiminnon merkintä käyttöön. Lisätietoja on kohdassa [Toiminnon hallinnan yleiskatsaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+2. Ota IoT-analytiikkatoiminnon merkintä käyttöön. Lisätietoja on kohdassa [Toiminnon hallinnan yleiskatsaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 3. Määritä mittarit. Lisätietoja on kohdassa [Mittarien määrittäminen](iot-metrics-setup.md#configure-metrics).
 4. Siirry kohtaan **Tuotannonhallinta \> Määritys \> IoT-analytiikka \> Skenaarionhallinta**.
 6. Valitse **Laiteseisokki**-ruudussa **Määritä** avataksesi ohjatun määritystoiminnon.
@@ -143,3 +140,6 @@ Skenaario poistetaan käytöstä seuraavasti.
 2. Valitse skenaarion ruudussa **Määritä**.
 3. Siirry ohjatun toiminnon viimeiselle sivulle valitsemalla **Seuraava**.
 4. Poista skenaario käytöstä määrittämällä asetus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

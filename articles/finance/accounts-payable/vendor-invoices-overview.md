@@ -1,9 +1,9 @@
 ---
 title: Toimittajan laskujen yleiskatsaus
-description: Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
+description: Tässä aiheessa on yleistietoja toimittajan laskuista.
 author: abruer
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
-ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
+ms.openlocfilehash: 1799fb18a1dd4b7c532259ab198e1ba30a89c09d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4701673"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264128"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
@@ -33,9 +32,9 @@ Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat 
 
 ## <a name="vendor-invoices"></a>Toimittajan laskut
 
-Ostotilauksesta peräisin oleva toimittajan lasku on lasku, joka luodaan, kun tuotteet tai palvelut on vastaanotettu toimittajalle tehdyn ostotilauksen mukaisesti. Toimittajan lasku sisältää otsikon ja yhden tai useamman rivin nimikkeille tai palveluille. Toimittajan lasku päättää ketjun, joka kulkee ostotilauksesta tuotteen vastaanoton kautta toimittajan laskuun.
+Ostotilauksesta peräisin oleva toimittajan lasku luodaan, kun tuotteet tai palvelut on vastaanotettu toimittajalle tehdyn ostotilauksen mukaisesti. Toimittajan lasku sisältää otsikon ja yhden tai useamman rivin nimikkeille tai palveluille. Toimittajan lasku päättää ketjun, joka kulkee ostotilauksesta tuotteen vastaanoton kautta toimittajan laskuun.
 
-Vaikka toimittajan laskuista liittyy ostotilauksiin, toimittajan laskussa voi olla rivejä, jotka eivät vastaa ostotilauksen rivejä. Voit myös luoda toimittajan laskuja, joita ei ole liitetty mihinkään ostotilaukseen. Nämä toimittajan laskut voivat koskea juoksevia palveluja, kuten sähkölasku, eikä niistä tarvitse olla viittausta ostotilaukseen, kun lisäät ne.
+Vaikka toimittajan laskut liittyvät ostotilauksiin, toimittajan laskussa voi olla rivejä, jotka eivät vastaa ostotilauksen rivejä. Voit myös luoda toimittajan laskuja, joita ei ole liitetty mihinkään ostotilaukseen. Nämä toimittajan laskut voivat edustaa jatkuvia palveluita, kuten sähkölaskua. Kun lisäät jatkuvan palvelun, sinun ei tarvitse viitata ostotilaukseen.
 
 Toimittajan laskun voi kirjata monella tavalla:
 
@@ -48,12 +47,12 @@ Seuraavissa osissa on lisätietoja tavoista, joilla voit luoda **Avoimet toimitt
 
 ## <a name="understanding-invoice-line-quantities"></a>Laskurivin määrien merkitys
 
-Kun avaat toimittajan laskun liittyvästä ostotilauksesta, laskurivit luodaan ostotilauksesta. Määrät haetaan oletusarvoisesti tuotteen vastaanottomäärästä. Voit kuitenkin mitä tahansa seuraavista oletustoiminnoista:
+Kun avaat toimittajan laskun liittyvästä ostotilauksesta, järjestelmä luo laskurivit ostotilauksesta. Järjestelmä noutaa määrät oletusarvoisesti tuotteen vastaanotosta. Voit kuitenkin mitä tahansa seuraavista oletustoiminnoista:
 
-- **Vastaanottomäärä nyt** – Käytä tätä vaihtoehtoa osatoimituksissa. **Määrä**-kentän oletusarvo haetaan ostotilauksen **Ota vastaan nyt** -kentässä määritetystä määrästä.
-- **Tilattu määrä** – Käytä täydellisissä toimituksissa tätä vaihtoehtoa. **Määrä**-kentän oletusarvo haetaan ostotilauksen **Tilattu**-kentässä määritetystä määrästä.
+- **Vastaanottomäärä nyt** – Käytä tätä vaihtoehtoa osatoimituksissa. Järjestelmä määrittää oletusarvon **Määrä**-kentässä ostotilauksen **Ota vastaan nyt** -kentässä määritetystä määrästä.
+- **Tilattu määrä** – Käytä täydellisissä toimituksissa tätä vaihtoehtoa. Järjestelmä määrittää oletusarvon **Määrä**-kentässä ostotilauksen **Tilattu** -kentässä määritetystä määrästä.
 - **Rekisteröity määrä** – Käytä tätä vaihtoehtoa, jos nimike on rekisteröitävä **Ota vastaan nyt**-sivun määritysten mukaisesti. **Määrä**-kentän oletusarvo on fyysinen päivitetty määrä, joka on rekisteröity.
-- **Tuotteen vastaanottomäärä** – Käytä tätä vaihtoehtoa, jos tilaukseen on jo vastaanotettu tuotteen vastaanotto. **Määrä**-kentän oletusarvo haetaan käytettävissä olevien tuotteen vastaanottojen kokonaismäärästä.
+- **Tuotteen vastaanottomäärä** – Käytä tätä vaihtoehtoa, jos tilaukseen on jo vastaanotettu tuotteen vastaanotto. Järjestelmä ottaa oletusarvon **Määrä**-kentästä käytettävissä olevien tuotteen vastaanottojen kokonaismäärästä.
 - **Rekisteröity määrä ja rekisteröidyt palvelut** – Käytä tätä vaihtoehtoa, jos määrä on rekisteröity varastoitavien nimikkeiden tai ei-varastoitavien nimikkeiden saapumisen kirjauskansioihin. Tämä vaihtoehto sisältää myös palveluja, riippumatta siitä, onko niitä rekisteröity.
 
 Jos yritys käyttää laskujen täsmäytystä, voit tarkastella määrän täsmäytyksen tuloksia **Tuotteen vastaanoton määrän vastaavuus** -sarakkeessa. Voit tarkastella määrän täsmäytyksen tuloksia myös käyttämällä toimintoruudun **Tarkista**-välilehden **Täsmäytyksen tiedot** -painiketta.
@@ -70,7 +69,7 @@ Organisaatiosi saattaa hallita toimittajan laskujen tarkistusprosessia työnkulk
 
 Seuraavilla tavoilla voi estää laskua lähtemästä työnkulkuun.
 
-- **Laskun kokonaissumma ja rekisteröity kokonaissumma eivät ole samat.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan kokonaissummat eivät ole samat. Tämän jälkeen saldot voidaan korjata ennen laskun lähettämistä työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskun kokonaissumma ja rekisteröidyn laskun kokonaissumma eivät ole samat** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön. 
+- **Laskun kokonaissumma ja rekisteröity kokonaissumma eivät ole samat.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan yhteissummat eivät ole yhtä suuret. Hälytyksen kautta voit korjata saldot, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskun kokonaissumma ja rekisteröidyn laskun kokonaissumma eivät ole samat** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön. 
 
 - **Lasku sisältää kohdistamattomia kuluja.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan laskulla on kohdistamattomia kuluja. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos toimittajan laskussa on kohdistamattomia kuluja** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
 
@@ -81,6 +80,8 @@ Seuraavilla tavoilla voi estää laskua lähtemästä työnkulkuun.
 Voit syöttää ja tallentaa toimittajalaskujen tietoja, ja voit täsmäyttää laskurivit tuotteen vastaanottoriveihin. Voit täsmäyttää riville myös osan määristä.
 
 Voit luoda toimittajan laskun, joka perustuu tuotteen vastaanoton rivinimikkeisiin, jotka on tähän päivään mennessä vastaanotettu, vaikka kaikkia tietyn ostotilauksen nimikkeitä ei olisikaan vielä vastaanotettu. Voit esimerkiksi käyttää tätä vaihtoehtoa, jos toimittaja lähettää kuukaudessa yhden laskun, joka sisältää kaikki sen kuukauden aikana lähettämät toimitukset. Jokainen tuotteen vastaanotto edustaa ostotilauksen nimikkeiden osatoimitusta tai täydellistä toimitusta.
+
+Kun lasku on työnkulussa, hyväksyjä voi päivittää laskujen määrät niin, että ne vastaavat **Kohdistettava tuotteen vastaanoton määrä** -kentän arvoa. Voit tehdä tämän valitsemalla **Päivitä laskun määrät vastaamaan tuotteiden vastaanottomääriä työnkulussa** -toiminnon **Ominaisuuden hallinta** -työtilassa ja valitsemalla **Ota käyttöön**. Jos työnkulkuprosessin hyväksyjä on poistanut kaikki vastaavuudet laskuriviltä kaikista tuotevastaanottoista, laskurivi poistetaan. Kun tämä toiminto ei ole käytössä, työnkulun laskujen määriä ei päivitetä.
 
 Kun kirjaat laskun, jokaisen nimikkeen **Laskuttamatta**-määrä päivitetään valittujen tuotteen vastaanottojen kokonaismäärän mukaiseksi. Jos ostotilauksen kaikkien nimikkeiden **Laskuttamatta**-määrä ja **Jäljellä oleva määrä** on 0 (nolla), ostotilauksen tilaksi muutetaan **Laskutettu**. Jos **Laskuttamatta**-määrä ei ole 0, ostotilauksen tilaa ei muuteta ja siihen voi lisätä laskuja.
 
@@ -128,3 +129,6 @@ Voit tarkastella laskujen kokonaismäärää **Odottavat toimittajan laskut** -s
 - [Laskun keskeiset tiedot ostoreskontraan hyväksymiskirjauskansion avulla](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Laskun keskeiset tiedot ostoreskontrajärjestelmään laskupoolin avulla](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Toimittajan laskun tallentaminen laskukirjauskansioon](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

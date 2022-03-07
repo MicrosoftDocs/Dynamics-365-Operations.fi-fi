@@ -2,11 +2,9 @@
 title: Valmistettujen nimikkeiden standardikustannusten ylläpitämisen valmistelutoimet
 description: Tässä ohjeaiheessa käsitellään valmistettujen nimikkeiden ylläpitokustannusten valmisteluvaiheita.
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
@@ -18,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b35e424c582c173e3fa1f4d0a335106e413b6660
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6944782ac236a3f414b1cadfb12b0f0d8c1115b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967405"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821510"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Valmistettujen nimikkeiden standardikustannusten ylläpitämisen valmistelutoimet
 
@@ -72,3 +70,6 @@ Jos haluat käyttää reititystietoja kustannuslaskelmissa, valmisteluun tarvita
 
 [Tuotettavissa tai hankittavissa olevien tuotteiden määrittäminen](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

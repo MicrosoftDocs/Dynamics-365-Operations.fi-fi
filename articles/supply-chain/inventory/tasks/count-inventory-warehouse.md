@@ -1,28 +1,25 @@
 ---
 title: Varaston kokonaismäärän laskeminen
 description: Tässä aiheessa kuvataan varaston inventointikirjauskansion luonti- ja kirjausprosessi, jolla voidaan inventoida tietty nimike varastosijainnissa.
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34013783bab79d80f1dac9a7806042608635e617
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4b7dd3788d3cbf80bfba373f5b6ce9d2e0ca0c07
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427340"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578412"
 ---
 # <a name="count-inventory-in-a-warehouse"></a>Varaston kokonaismäärän laskeminen
 
@@ -56,3 +53,6 @@ Tässä aiheessa kuvataan varaston inventointikirjauskansion luonti- ja kirjausp
 1. Valitse **Varasto**.
 2. Valitse **Tapahtumat**. Tässä näkyvät kaikki liittyvät tapahtumat, jotka luodaan, kun varaston inventointikirjauskansioon kirjataan.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

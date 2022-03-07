@@ -2,7 +2,7 @@
 title: Työvoiman järjestäminen osastojen, töiden ja toimien avulla
 description: Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä artikkelissa kuvataan elementtien käsitteellisiä tietoja.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,23 @@ ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 826de9e1e5d70ba1ec088b44254c871726b5c38e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb0c50d9030be75947c65e921b3c6d3ba729a0d2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418311"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464473"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Työvoiman järjestäminen osastojen, töiden ja toimien avulla
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä artikkelissa kuvataan elementtien käsitteellisiä tietoja. 
 
@@ -165,3 +167,6 @@ Voit muokata edellä olevassa taulukossa mainittuja toimen tai työn tietoja ja 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

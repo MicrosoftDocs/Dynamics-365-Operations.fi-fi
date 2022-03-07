@@ -1,6 +1,6 @@
 ---
 title: Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi
-description: Tämän ohjeaiheen vaiheissa selitetään, miten käyttäjä voi luoda uuden sähköisen raportoinnin (ER) konfiguraation. Tämä konfiguraatio sisältää sovelluksen metatiedot ER-mallin yhdistämismääritysten suunnittelemiseen Regulatory Configuration Servicessä (RCS).
+description: Tässä aiheessa käsitellään sovelluksen metatiedot sisältävän uuden raportointimäärityksen luontia.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/28/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbc1ca45a39f2a5c3309276f9e2f5d2b7d2ba5f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d5f55d089a88642cb2bda70274472ad0f0e45cd7
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684088"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094237"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi
 [!include [banner](../../includes/banner.md)]

@@ -1,26 +1,24 @@
 ---
 title: Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet
 description: Tässä oppaassa esitellään pyyntötyypin luominen ja sen liittäminen pisteytysmenetelmään.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40625152a579bb269411d026d77d449902c8d4bc
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6d1c24213b03ef234607517bd4767b4054a9c18ed3fefdd639c0024a6d7a08c5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758469"
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>Luo tarjouspyyntöjen pyyntötyypit ja pisteytysperusteet
 
@@ -51,3 +49,6 @@ Tässä oppaassa esitellään pyyntötyypin luominen ja sen liittäminen pisteyt
 8. Valitse OK.
 9. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

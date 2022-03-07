@@ -1,12 +1,10 @@
 ---
 title: Tietojen etsiminen hakujen avulla
-description: Monessa kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti.
+description: Tässä ohjeaiheessa tutustutaan hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d75e66e8fb9f1a227c9dd15f92ca5db433c0db4a
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798140"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069295"
 ---
 # <a name="find-information-by-using-lookups"></a>Tietojen etsiminen hakujen avulla
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Monessa kentässä on hakuja, jotka auttavat sinua löytämään oikean tai halutun arvo. Hakuihin on lisätty useita parannuksia, jotka helpottavat näiden ohjausobjektien käyttöä ja parantavat käyttäjien tuottavuutta. Tässä ohjeaiheessa tutustutaan uusiin hakuominaisuuksiin ja annetaan joitain vinkkejä, joiden avulla käytät järjestelmän hakuja optimaalisesti.
 
@@ -46,15 +47,15 @@ Otetaan esimerkiksi hakukenttä **Kaupunki**.
 
 Kun kohdistus on **Kaupunki**-kentässä, voit aloittaa haluamasi kaupungin etsinnän kirjoittamalla muutaman kirjaimen, kuten "col". Kun lopetat kirjoittamisen, haku avautuu automaattisesti ja se suodatetaan näyttämään kaupungit, jotka alkavat kirjaimilla "col".
 
-[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![typeaheadLookupExample.](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 Tässä vaiheessa kohdistin on edelleen hakukentässä. Jos jatkat kirjoittamista, niin, että arvo on "colum", haun sisältö mukautuu automaattisesti vastaamaan hakuobjektin uusinta arvoa.
 
-![updateFilterLookupExample](./media/updatefilterlookupexample.png)
+![updateFilterLookupExample.](./media/updatefilterlookupexample.png)
 
 Vaikka kohdistus on yhä hakuobjektissa, voit käyttää lisäksi **Ylä-** ja **Alanuoli**-näppäimiä korostaaksesi rivin, jonka haluat valita. Painamalla **Enter**-näppäintä korostettu rivi valitaan hausta ja ohjausobjektin arvo päivittyy.
 
-![changingSelectionLookup](./media/changingselectionlookup.png)
+![changingSelectionLookup.](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Muiden kuin tunnisteiden kirjoittaminen
 
@@ -64,22 +65,25 @@ Esimerkkinä voimme käyttää **Asiakkaan tili** -kenttää, kun luot myyntitil
 
 Jos käyttäjä syöttää **tilitunnuksen** hakuobjektiin, valikko aukeaa automaattisesti edellisessä osassa kuvatun mukaisesti, ja käyttäjä näkee alla olevan kuvan mukaisen haun.
 
-[![Kontekstihaku, kun asiakkaan tilitunnus on syötetty](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Kontekstihaku, kun asiakkaan tilitunnus on syötetty.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 Käyttäjät voivat nyt myös aloittaa **tilin nimen** kirjoittamisen. Jos tämä havaitaan, käyttäjä näkee seuraavanlaisen haun. Huomaa, kuinka **Nimi**-sarake siirretään haun ensimmäiseen sarakkeeseen ja kuinka haku järjestetään ja suodatetaan **Nimi**-sarakkeen perusteella.
 
-[![Kontekstihaku, kun asiakkaan tilin nimi on syötetty](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Kontekstihaku, kun asiakkaan tilin nimi on syötetty.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Ruudukon sarakeotsikoiden käyttäminen edistyneempään suodattamiseen ja lajitteluun
 
 Edellisissä osiossa käsitellyt haun parannukset helpottavat käyttäjän mahdollisuuksia siirtyä haun rivien välillä "alkaa"-tyyppisen **tunnus**- tai **nimi**-kenttähaun perusteella. On kuitenkin tilanteita, joissa oikean rivin löytäminen vaatii edistyneempiä suodattimia tai lajittelua. Näissä tilanteissa käyttäjän on käytettävä haun sisäisiä ruudukon sarakeotsikoiden suodatus- ja lajitteluasetuksia. Otetaan esimerkiksi työntekijä, joka on syöttämässä myyntitilausriviä, johon on haettava oikea "kaapeli" tuotteeksi. Kirjoittamalla "kaapeli" **Nimiketunnus**-objektiin ei auta, sillä järjestelmässä ei ole "kaapeli"-alkuisia tuotenimiä.
 
-![emptyitemlookup](./media/emptyitemlookup.png)
+![emptyitemlookup.](./media/emptyitemlookup.png)
 
 Sen sijaan käyttäjän on tyhjennettävä hakuobjektin arvo ja avattava haun valikko, jota hänen on suodatettava ruudukon sarakeotsikon avulla, alla olevan kuvan mukaisesti. Hiiren (tai kosketusnäytön) käyttäjä voi yksinkertaisesti napsauttaa (tai koskettaa) mitä tahansa sarakkeen otsikkoa avatakseen kyseisen sarakkeen suodatus- ja lajitteluvaihtoehdot. Näppäimistön käyttäjän on yksinkertaisesti painettava **Alt**+**Ala** **nuoli**-näppäintä toisen kerran, joka siirtää kohdistuksen avattavaan valikkoon, jonka jälkeen käyttäjä siirtyä oikeaan sarakkeeseen sarkaimella ja painaa sitten **Ctrl**+**G** -pikanäppäintä avatakseen ruudukon sarakeotsikon valikon.
 
-[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![gridfilteritemlookup.](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 Kun suodatin on otettu käyttöön (ks. alla oleva kuva), käyttäjä voi paikantaa rivin tavalliseen tapaan.
 
-![filtereditemlookup](./media/filtereditemlookup.png)
+![filtereditemlookup.](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

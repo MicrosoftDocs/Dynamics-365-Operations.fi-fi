@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81e5611cd1491ee0c119f049e992afb4b6299991
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d466b05b4677223000e5dfd383ea89f9328619ef
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019476"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263779"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Aktiivisten työtilausten kunnossapitotöiden yleiskatsaus
 
@@ -42,3 +42,6 @@ Seuraavassa kuvassa on esimerkki **Aktiiviset työtilauksen ylläpitotyöt** -lu
 
 Lyhyt kuvaus **Aktiiviset työtilausten ylläpitotyöt** -luettelosivun painikkeista on kohdassa [Työtilausten esittely](../work-orders/introduction-to-work-orders.md), jossa kuvataan samanlaiset painikkeet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

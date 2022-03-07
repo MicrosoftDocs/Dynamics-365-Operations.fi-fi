@@ -1,26 +1,24 @@
 ---
 title: Määritä käyttöoikeudet tuotteiden tilaamiseen jonkun muun puolesta
 description: Tässä aiheessa kuvataan, miten myönnät työntekijöille oikeuden valmistella ostoehdotuksia muiden työntekijöiden puolesta.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a29b7ebece8009f29f4313b380889635a87473b5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017289"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577117"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Määritä käyttöoikeudet tuotteiden tilaamiseen jonkun muun puolesta
 
@@ -44,3 +42,6 @@ Tässä aiheessa kuvataan, miten myönnät työntekijöille oikeuden valmistella
 2. Etsi pyynnön lähettäjäksi lisäämäsi työntekijä pikasuodattimen avulla.
 3. Valitse pyynnön lähettäjä. Valmistelijaluettelossa ovat käyttäjät, joilla on oikeus tilata nimikkeitä vasemmassa ruudussa valitun pyynnön lähettäjän puolesta.  Voit lisätä muita valmistelijoita tässä. Näkymän avulla voit myös antaa pyynnön lähettäjälle oikeuden luoda ostoehdotuksia yrityksissä toimintayksiköissä, jotka eivät ole tämän ensisijainen yritys tai toimintayksikkö.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

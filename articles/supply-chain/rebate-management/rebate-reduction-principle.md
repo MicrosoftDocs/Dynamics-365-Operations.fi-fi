@@ -5,6 +5,7 @@ author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMRebateCategory
 audience: Application User
@@ -13,13 +14,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e6b178704fde18036d526e7a645cb9b4f8bd66c7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: 5a8bbfaff05b665cb85e9166cfc76363c4aedb64
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579061"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919840"
 ---
 # <a name="rebate-reduction-principles"></a>Ostohyvityksen vähentämisperiaatteet
 
@@ -45,13 +46,13 @@ Voit käyttää ostohyvitysten vähennysperiaatteita kohdassa **Ostohyvitysten h
 
 Seuraavassa taulukossa on tyypillisiä esimerkkejä ostohyvityksen vähennysperiaatteen asetuksista. **Kuvaus**-kentän arvo kuvaa ostohyvitysvähennysperiaatteen tarkoitusta kullekin ostohyvityksen vähennysperiaatteelle.
 
-| Ostohyvityksen vähentämisperiaate | kuvaus | Vähennyksen kohdistaminen | Vähennysperuste | Poissulkeminen vähennyksestä |
+| ostohyvityksen vähentämisperiaate | kuvaus | Vähennyksen kohdistaminen | Vähennysperuste | Poissulkeminen vähennyksestä |
 |---|---|---|---|---|
-| Lykätty | Vähennä ostohyvitystä | Kyllä | Molemmat | Ei |
+| Lykätty | Vähennä ostohyvitystä | Kyllä | Molemmat | Nro |
 | Exclreb | Poissulje ostohyvitys | Kyllä | Hyvitys   | Kyllä |
 | Usea | Useita ostohyvityksiä | Kyllä | Molemmat | Kyllä |
-| None | Vain varaus ja ostohyvitys | Ei | Molemmat | Kyllä |
-| Varaa | Vain varaus | Kyllä | Varaa | Ei |
+| None | Vain varaus ja ostohyvitys | Nro | Molemmat | Kyllä |
+| Varaa | Vain varaus | Kyllä | Varaa | Nro |
 | Hyvitys   | Vain ostohyvitys | Kyllä | Hyvitys   | Kyllä |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Esimerkkejä ostohyvitysvähennysperiaatteen laskelmista

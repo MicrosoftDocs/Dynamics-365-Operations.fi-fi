@@ -1,12 +1,10 @@
 ---
 title: Ostoehdotusten yleiskatsaus
 description: Tässä aiheessa kuvataan ostoehdotusten työnkulkua ja eri tiloja.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e067c9df91894c5d2ce05a6afb92d1fadc954531
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020076"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188194"
 ---
 # <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
 
@@ -192,8 +190,7 @@ Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 5.  Luo ostotilaukset konsolidoiduille ehdotusriveille tai konsolidointiehdotuksen ostoehdotusriveille.
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Luo kulutusehdotus](tasks/create-requisition-consumption.md)
 
@@ -201,3 +198,6 @@ Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

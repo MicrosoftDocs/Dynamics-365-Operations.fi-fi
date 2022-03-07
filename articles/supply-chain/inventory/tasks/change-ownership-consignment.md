@@ -2,27 +2,24 @@
 title: Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella
 description: Tässä menettelyssä, miten muutat tavaralähetysvaraston omistajuuden toimittajalta yrityksellesi, kun varastolle on kysyntää tuotannossa.
 author: perlynne
-manager: tfehr
 ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c50affa05b8df53d31660854f4d1ead6aeff820
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6385fba0b6288416a85f1b7de73d3bb4972a852a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427343"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834118"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella
 
@@ -55,3 +52,6 @@ Tässä menettelyssä, miten muutat tavaralähetysvaraston omistajuuden toimitta
 2. Valitse OK.
 3. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

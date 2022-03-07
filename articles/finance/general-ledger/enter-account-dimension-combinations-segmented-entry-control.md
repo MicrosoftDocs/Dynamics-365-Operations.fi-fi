@@ -2,11 +2,9 @@
 title: Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)
 description: Tässä artikkelissa kerrotaan, miten tili- ja dimensioyhdistelmiä tai kirjanpitotilejä kirjataan. Kirjauskokokemusta sanotaan usein segmentoidun kirjauksen hallinnaksi.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1e35f5fb4400f849e9a139e1a96b18e8b9df384
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 21a67e4760e870b4d0a576523cbece0db5fa1923
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968776"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837983"
 ---
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)
 
@@ -113,3 +111,6 @@ Seuraavassa taulukossa kuvataan pikanäppäimiä, joita voidaan käyttää, kun 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

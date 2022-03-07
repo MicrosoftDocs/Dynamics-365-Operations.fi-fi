@@ -2,11 +2,9 @@
 title: Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (6. lokakuuta 2020)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 6. lokakuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: jcart1106
-manager: tfehr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,14 +15,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 036b43d8730b52bddc93c0fc3b47d9d62649e898
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
+ms.openlocfilehash: 132d91c2a17fa5116d7aa6650e4ee807a03030bb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152170"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802284"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (6. lokakuuta 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -92,3 +92,6 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2020 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

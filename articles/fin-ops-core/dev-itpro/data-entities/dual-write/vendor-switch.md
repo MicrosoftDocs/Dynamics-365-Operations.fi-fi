@@ -1,35 +1,26 @@
 ---
 title: Toimittajan mallien välillä siirtyminen
-description: Tässä aiheessa käsitellään kuinka vaihtaa toimittajan tietojen integrointia Finance and Operations -sovellusten ja Dataversen välillä.
+description: Tässä aiheessa käsitellään kuinka vaihtaa toimittajan tietojen integrointia taloushallinnon ja toimintojen sovellusten ja Dataversen välillä.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: d2c22123d5f05945b34eb107c5b912852aec387a
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 80de21b5e46e4f274626fa311f16e81312a2f5ab
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744462"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062747"
 ---
 # <a name="switch-between-vendor-designs"></a>Toimittajan mallien välillä siirtyminen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 
@@ -50,14 +41,14 @@ Noudata näitä vaiheita, kun haluat luoda uusia työnkulkuprosesseja työnkulun
 
 1. Luo uusi työnkulkuprosessi **Toimittaja**-taululle ja valitse **Luo toimittajia Tilit-taulussa** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Tilli**-taulun toimittajan luontiskenaarion.
 
-    ![Toimittajien luonti Tilit-taulun työnkulkuprosessissa](media/create_process.png)
+    ![Toimittajien luonti Tilit-taulun työnkulkuprosessissa.](media/create_process.png)
 
 2. Luo uusi työnkulkuprosessi **Toimittaja**-taululle ja valitse **Päivitä toimittajia Tilit-taulussa** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Tili**-taulun toimittajan päivitysskenaarion.
 3. Luo uusi työnkulkuprosessi **Tili**-taululle ja valitse **Luo toimittajia Toimittajat-taulussa** -työnkulun prosessimalli.
 4. Luo uusi työnkulkuprosessi **Tili**-taululle ja valitse **Päivitä toimittajia Toimittajat-taulussa** -työnkulun prosessimalli.
 5. Voit määrittää työnkulut vaatimuksistasi riippuen joko reaaliaikaisiksi työnkuluiksi tai taustatyönkuluiksi. Jos haluat määrittää työnkulun taustatyönkuluksi, valitse **Muunna taustatyönkuluksi**.
 
-    ![Muunna taustatyönkuluksi -painike](media/background_workflow.png)
+    ![Muunna taustatyönkuluksi -painike.](media/background_workflow.png)
 
 6. Aktivoi **Tili**- ja **Toimittaja**-tauluissa luodut työnkulut, jotta voit alkaa käyttää **Tili**-taulua **Organisaatio**-tyyppisten toimittajien tietojen tallentamiseen.
 
@@ -78,3 +69,6 @@ Noudata näitä vaiheita, kun haluat luoda uusia työnkulkuprosesseja työnkulun
 4. Luo uusi työnkulkuprosessi **Yhteyshenkilö**-taululle ja valitse **Päivitä henkilötyyppisiä toimittajia Toimittajat-taulussa** -työnkulun prosessimalli.
 5. Voit määrittää työnkulut vaatimuksistasi riippuen joko reaaliaikaisiksi työnkuluiksi tai taustatyönkuluiksi. Jos haluat määrittää työnkulun taustatyönkuluksi, valitse **Muunna taustatyönkuluksi**.
 6. Aktivoi **Yhteyshenkilö**- ja **Toimittaja**-tauluissa luodut työnkulut, jotta voit alkaa käyttää **Yhteyshenkilö**-taulua **Henkilö**-tyyppisten toimittajien tietojen tallentamiseen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

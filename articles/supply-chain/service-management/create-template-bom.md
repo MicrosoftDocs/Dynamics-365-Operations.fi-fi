@@ -1,26 +1,29 @@
 ---
 title: Mallituoterakenteen luominen
 description: Mallituoterakenteen voi luoda monella eri tavalla.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c10bf5e758a1752e1c50c602db85e0c53ee3e662
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2e06283f3b95c5ff6b4376bba63cf5a42d5feeb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571494"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427194"
 ---
 # <a name="create-a-template-bom"></a>Mallituoterakenteen luominen   
 
@@ -31,9 +34,9 @@ Mallituoterakenteen voi luoda millä tahansa seuraavista menetelmistä. Kaikissa
 
 ## <a name="create-a-template-bom-manually"></a>Mallituoterakenteen luominen manuaalisesti
 
-1.  Avaa **Huoltohallinta** \> **Asetukset** \> **Huoltokohteet** \> **Mallituoterakenteet**.
+1.  Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltokohteet** \> **Mallituoterakenteet**.
 
-2.  Valitse **Uusi** avataksesi **Luo mallituoterakenne** -lomakkeen.
+2.  Avaa **Luo mallituoterakenne** -lomake painamalla CTRL + N -näppäinyhdistelmää.
 
 3.  Valitse **Kopioi tuoterakenteen rivit viitteestä** -kohdassa **Manuaalinen**-vaihtoehto.
 
@@ -43,7 +46,7 @@ Mallituoterakenteen voi luoda millä tahansa seuraavista menetelmistä. Kaikissa
 
 6.  Kirjoita **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kenttiin päivämääräväli, jolloin mallituoterakenne on aktiivinen.
 
-7.  Valitse **OK**.
+7.  Napsauta **OK**.
 
 Järjestelmä luo uuden tyhjän mallituoterakenteen.
 
@@ -51,7 +54,7 @@ Järjestelmä luo uuden tyhjän mallituoterakenteen.
 
 1.  Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltokohteet** \> **Mallituoterakenteet**.
 
-2.  Valitse **Uusi** avataksesi **Luo mallituoterakenne** -lomakkeen.
+2.  Avaa **Luo mallituoterakenne** -lomake painamalla CTRL + N -näppäinyhdistelmää.
 
 3.  Valitse **Kopioi tuoterakenteen rivit viitteestä** -kohdassa **Mallituoterakenne**-vaihtoehto.
 
@@ -61,7 +64,7 @@ Järjestelmä luo uuden tyhjän mallituoterakenteen.
 
 6.  Kirjoita **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kenttiin päivämääräväli, jolloin mallituoterakenne on aktiivinen.
 
-7.  Valitse **OK**.
+7.  Napsauta **OK**.
 
 Järjestelmä luo uuden mallituoterakenteen käyttämällä rivejä, jotka vastaavat alkuperäistä mallituoterakennetta.
 
@@ -69,7 +72,7 @@ Järjestelmä luo uuden mallituoterakenteen käyttämällä rivejä, jotka vasta
 
 1.  Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltokohteet** \> **Mallituoterakenteet**.
 
-2.  Valitse **Uusi** avataksesi **Luo mallituoterakenne** -lomakkeen.
+2.  Avaa **Luo mallituoterakenne** -lomake painamalla CTRL + N -näppäinyhdistelmää.
 
 3.  Valitse **Kopioi tuoterakenteen rivit viitteestä** -kohdassa **Tuoterakenne**.
 
@@ -79,7 +82,7 @@ Järjestelmä luo uuden mallituoterakenteen käyttämällä rivejä, jotka vasta
 
 6.  Kirjoita **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kenttiin päivämääräväli, jolloin mallituoterakenne on aktiivinen.
 
-7.  Valitse **OK**.
+7.  Napsauta **OK**.
 
 Uusi mallituoterakenne luodaan käyttämällä rivejä, jotka vastaavat **Tuoterakenteet**-kohdassa mainitun tuoterakenteen rivejä.
 
@@ -87,7 +90,7 @@ Uusi mallituoterakenne luodaan käyttämällä rivejä, jotka vastaavat **Tuoter
 
 1.  Valitse **Huoltohallinta** \> **Asetukset** \> **Huoltokohteet** \> **Mallituoterakenteet**.
 
-2.  Valitse **Uusi** avataksesi **Luo mallituoterakenne** -lomakkeen.
+2.  Avaa **Luo mallituoterakenne** -lomake painamalla CTRL + N -näppäinyhdistelmää.
 
 3.  Valitse **Kopioi tuoterakenteen rivit viitteestä** -kohdassa **Tuotanto**.
 
@@ -97,7 +100,7 @@ Uusi mallituoterakenne luodaan käyttämällä rivejä, jotka vastaavat **Tuoter
 
 6.  Kirjoita **Aloituspäivämäärä**- ja **Lopetuspäivämäärä**-kenttiin päivämääräväli, jolloin mallituoterakenne on aktiivinen.
 
-7.  Valitse **OK**.
+7.  Napsauta **OK**.
 
 Uusi mallituoterakenne luodaan käyttämällä rivejä, jotka vastaavat **Tuoterakenne**-kohdassa mainitun tuoterakenteen rivejä.
 
@@ -108,6 +111,3 @@ Uusi mallituoterakenne luodaan käyttämällä rivejä, jotka vastaavat **Tuoter
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

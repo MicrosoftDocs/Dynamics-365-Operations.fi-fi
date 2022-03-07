@@ -2,11 +2,9 @@
 title: Uusien kenttien lisääminen liiketoiminta-asiakirjamalliin Microsoft Excelissä
 description: Tässä ohjeaiheessa on tietoja uusien kenttien lisäämisestä liiketoiminta-asiakirjamalliin Microsoft Exceliin liiketoiminta-asiakirjojen hallintatoiminnolla.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fcfbcb021b192cef75d59b0db1796e994f3dc27d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767239"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Uusien kenttien lisääminen liiketoiminta-asiakirjamalliin Microsoft Excelissä
 
@@ -52,14 +50,14 @@ Ratkaisun **Vapaatekstilasku** -ER-muotomäärityksessä on Excel-muotoinen liik
 
 Lisätietoja ER-määritysten tuonnista on kohdassa [ER-konfiguraation elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Jaettu LCS-ominaisuuskirjasto -sivu](./media/BDM-AddFldExcel-LCS.png)
+![Jaettu LCS-ominaisuuskirjasto -sivu.](./media/BDM-AddFldExcel-LCS.png)
 
 ### <a name="edit-the-er-solution-template"></a>ER-ratkaisumallin muokkaaminen
 
 1.  Kirjaudu käyttäjänä, jolla on **liiketoiminta-asiakirjojen hallinnan** työtilan käyttöoikeus.
 2.  Avaa **liiketoiminta-asiakirjojen hallinnan** työtila.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtila](./media/BDM-AddFldExcel-Workspace.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtila.](./media/BDM-AddFldExcel-Workspace.png)
 
 3.  Valitse ruudukossa **Vapaatekstilasku (Excel)** -malli.
 4.  Luo valittuun malliin perustuva uusi malli valitsemalla oikeassa ruudussa **Uusi malli**.
@@ -68,20 +66,20 @@ Lisätietoja ER-määritysten tuonnista on kohdassa [ER-konfiguraation elinkaare
 
 BDM-mallieditorin sivu avautuu. Voit muokata valittua mallia verkossa upotetun ohjausobjektin avulla käyttämällä Microsoft 365:ttä.
 
-![BDM-mallieditorin sivu](./media/BDM-AddFldExcel-EditableTemplate.png)
+![BDM-mallieditorin sivu.](./media/BDM-AddFldExcel-EditableTemplate.png)
 
 ### <a name="add-the-label-for-a-new-field-to-the-template"></a>Uuden kentän otsikon lisääminen malliin
 
 1.  Valitse BDM-mallieditorisivun Excel-valintanauhan **Näytä**-välilehdessä muokattavan Excel-mallin **Otsikko- ja Ruudukko-** valintaruudut.
 
-    ![Otsikot- ja Ruudukko-valintaruudut valittuina](./media/BDM-AddFldExcel-EditableTemplate2.png)
+    ![Otsikot- ja Ruudukko-valintaruudut valittuina.](./media/BDM-AddFldExcel-EditableTemplate2.png)
 
 2.  Valitse solut **E8:F8**.
 3.  Valitse Excel-valintanauhan **Aloitus**-välilehdessä **Yhdistä ja keskitä**. Valitut yhdistetään nyt uuteen yhdistettyyn **E8:F8**-soluun.
 4.  Kirjoita yhdistettyyn **E8:F8**-soluun **URL**.
 5.  Valitse ensin yhdistetty solu **E7:F7**, sitten **Muotoilusivellin** ja lopuksi valittu yhdistetty solu **E8:F8**. Tämän muotoilu on nyt sama yhdistetyssä solussa **E7:F7**.
 
-    ![Malliin lisätty uuden kentän otsikko](./media/BDM-AddFldExcel-EditableTemplate3.png)
+    ![Malliin lisätty uuden kentän otsikko.](./media/BDM-AddFldExcel-EditableTemplate3.png)
 
 ### <a name="format-the-template-to-reserve-space-for-a-new-field"></a>Tilan varaaminen uudelle kentälle mallia muotoilemalla
 
@@ -89,13 +87,13 @@ BDM-mallieditorin sivu avautuu. Voit muokata valittua mallia verkossa upotetun o
 2.  Valitse Excel-valintanauhan **Aloitus**-välilehdessä **Yhdistä ja keskitä**. Valitut yhdistetään nyt uuteen yhdistettyyn **G8:H8**-soluun.
 3.  Valitse ensin yhdistetty solu **G7:H7**, sitten **Muotoilusivellin** ja lopuksi valittu yhdistetty solu **G8:H8**. Tämän muotoilu on nyt sama yhdistetyssä solussa **G7:H7**.
 
-    ![Uudelle kentälle varattu tila](./media/BDM-AddFldExcel-EditableTemplate4.png)
+    ![Uudelle kentälle varattu tila.](./media/BDM-AddFldExcel-EditableTemplate4.png)
 
 4.  Valitse **Nimi**-kentässä **CompanyInfo**.
 
     Nykyisen Excel-mallin **CompanyInfo**-alue sisältää kaikki kentät, joilla täytetään muodostetun raportin otsikkoon nykyisen yrityksen tiedot myyvänä osapuolena.
 
-    ![CompanyInfo-alue valittu](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
+    ![CompanyInfo-alue valittu.](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
 
 ### <a name="add-a-new-field-to-the-template"></a>Uuden kentän lisääminen malliin
 
@@ -105,7 +103,7 @@ BDM-mallieditorin sivu avautuu. Voit muokata valittua mallia verkossa upotetun o
     > [!NOTE]
     > Uutena kenttänä käytettävää mallin osaa on muokattava. Tämä muokkaus tehtiin jo muotoilemalla yhdistetty solu **G8:H8**.
 
-    ![Uuden kentän lisääminen malliin](./media/BDM-AddFldExcel-AddCell.png)
+    ![Uuden kentän lisääminen malliin.](./media/BDM-AddFldExcel-AddCell.png)
 
 3.  Lisää uusi kenttä soluna malliin valitsemalla **Excel\Solu**.
 
@@ -120,7 +118,7 @@ BDM-mallieditorin sivu avautuu. Voit muokata valittua mallia verkossa upotetun o
 
 6.  Valitse **Mallin rakenne** -ruudussa kolmen pisteen painike (...) ja valitse sitten **Näytä sidonnat**.
 
-    ![Näytä sidonnat valittu](./media/BDM-AddFldExcel-ShowBindings.png)
+    ![Näytä sidonnat valittuna.](./media/BDM-AddFldExcel-ShowBindings.png)
 
     **Mallin rakenne** -ruudussa näkyy nyt pohjana olevassa ER-muodossa käytettävissä olevat tietolähteet.
 
@@ -128,21 +126,21 @@ BDM-mallieditorin sivu avautuu. Voit muokata valittua mallia verkossa upotetun o
 8.  Laajenna **Mallin rakenne** -ruudun **Tietolähteet**-osassa **Malli \> InvoiceBase \> CompanyInfo**.
 9.  Valitse **CompanyInfo**-kohdassa **WebsiteURI**.
 
-    ![WebsiteURI valittuna](./media/BDM-AddFldExcel-BindURL.png)
+    ![WebsiteURI-nimike valittuna.](./media/BDM-AddFldExcel-BindURL.png)
 
 10. Valitse **Sido**.
 11. Valitse **Mallin rakenne** -ruudussa **Tallenna** ja sulje sitten BDM-mallieditorin sivu.
 
 Päivitetty malli näkyy **Liiketoiminta-asiakirjojen hallinnan** työtilan oikeanpuolisen ruudun **Malli**-välilehdessä. Huomaa, että ruudukossa muokatun mallin **Tila**-kentän arvo on nyt **Luonnos** eikä **Tarkistusversio**-kenttä ole enää tyhjä. Nämä muutoksen ilmaisevat, että mallin muokkausprosessi on aloitettu.
 
-![Muokattu malli liiketoiminta-asiakirjojen hallinnan työtilassa](./media/BDM-AddFldExcel-Workspace2.png)
+![Muokattu malli liiketoiminta-asiakirjojen hallinnan työtilassa.](./media/BDM-AddFldExcel-Workspace2.png)
 
 ## <a name="review-company-settings"></a>Yrityksen asetusten tarkistaminen
 
 1.  Valitse **Organisaation hallinto \> Organisaatiot \> Yritykset**.
 2.  Tarkista, että yrityksen URL-osoite on annettu **Yhteystiedot**-pikavälilehdessä.
 
-![Yritykset-sivulla annettu yrityksen URL-osoite](./media/BDM-AddFldExcel-CompanyInfo.png)
+![Yritykset-sivulla annettu yrityksen URL-osoite.](./media/BDM-AddFldExcel-CompanyInfo.png)
 
 ## <a name="generate-business-documents-to-test-the-updated-template"></a>Päivitetyn mallin testaaminen luomalla liiketoiminta-asiakirjoja
 
@@ -150,15 +148,15 @@ Päivitetty malli näkyy **Liiketoiminta-asiakirjojen hallinnan** työtilan oike
 2.  Valitse ensin lasku **FTI-00000002** ja sitten **Tulostuksenhallinta**.
 3.  Laajenna vasemmassa ruudussa **Moduuli - Myyntireskontra \> Asiakirjat \> Vapaatekstilasku**.
 4.  Määritä käsiteltävien laskujen vaikutusalue valitsemalla **Vapaatekstilasku**-kohdassa **Alkuperäinen tiedosto** -taso.
-5.  Valitse oikeassa ruudussa ensin **Raportin muoto** -kenttä ja sitten määritetyn asiakirjatason **Vapaatekstilasku (Excel) Contoso** -malli.
+5.  Valitse oikeasta ruudusta ensin **Raportin muoto** -kenttä ja sitten määritetyn asiakirjatason **Vapaatekstilasku (Excel) Contoso** -malli.
 
-    ![Vapaatekstilasku (Excel) Contoso -malli valittuna](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Vapaatekstilasku (Excel) Contoso -malli valittuna.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Sulje nykyinen sivu painamalla **Esc**-näppäintä.
 7.  Valitse **Tulosta \> Valitut**.
 8.  Lataa muodostettu asiakirja ja avaa se Excelissä.
 
-    ![Excelin vapaatekstilasku](./media/BDM-AddFldExcel-PreviewReport.png)
+    ![Excelin vapaatekstilasku.](./media/BDM-AddFldExcel-PreviewReport.png)
 
 Muokatun mallin avulla luodaan valitulle nimikkeelle vapaatekstilaskun raportti. Jos haluat analysoida, miten malliin tekemäsi muutokset vaikuttavat tähän raporttiin, suorita raportti yhdessä sovellusistunnossa heti sen jälkeen, kun olet muuttanut mallia toisessa sovellusistunnossa.
 
@@ -169,3 +167,6 @@ Muokatun mallin avulla luodaan valitulle nimikkeelle vapaatekstilaskun raportti.
 [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md)
 
 [Suunnittele kokoonpano, jolla raportit voi luoda OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

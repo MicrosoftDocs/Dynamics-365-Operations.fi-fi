@@ -1,12 +1,11 @@
 ---
 title: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
-description: Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations -sovelluksesta ja tuotteen aiemmista versioista.
+description: Tässä aiheessa käsitellään toimintoja, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations ista ja aiemmista versioista.
 author: sericks007
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: db276c693a729b919bc609bb4b94843bb11a8fe3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679953"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559327"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -39,7 +38,7 @@ Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhe
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 ja Platform update 31
 
@@ -970,7 +969,7 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Dyn
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toinen ominaisuus on korvannut tämän toiminnon. |
-| **Onko toinen ominaisuus korvannut?**   | Common data service                                      |
+| **Onko toinen ominaisuus korvannut?**   | Dataverse                                      |
 | **Tuotealueet, joihin vaikutetaan**         | Dynamics-yhdistin                         |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                           |
 
@@ -1373,3 +1372,6 @@ Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
 |     <strong>Tuotealueet, joihin vaikutetaan</strong>     |                                              Kirjanpito                                              |
 |             <strong>Tila</strong>             |                                      Poistettu versiosta Dynamics AX 2012 alkaen                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Kustannuslaskennan kirjanpidon tietolähteen hallinta
 description: Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88f5170610ea9b5634c4bf5da7079cacccdafe04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: da4d351f4bce6494a107a55895866e4d3d43953f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442902"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841066"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Kustannuslaskennan kirjanpidon tietolähteen hallinta
 
@@ -48,3 +45,6 @@ Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskenn
 14. Valitse Kirjanpitotaso-kentässä Nykyinen.
 15. Valitse OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

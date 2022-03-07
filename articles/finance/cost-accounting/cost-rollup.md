@@ -2,16 +2,13 @@
 title: Kustannusten koontikäytäntö ja yleiskustannuslaskenta
 description: Tässä ohjeaiheessa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4442933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779953"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
@@ -47,7 +44,7 @@ Nämä vaikutukset voi välttää määrittämällä kustannusten kohdistuksen k
 
 Kuvittele, että organisaation rakenteessa on neljä kustannuspaikkaa.
 
-![Organisaatiorakenteen esimerkki](./media/dimension-hierarchy-org.png)
+![Organisaatiorakenteen esimerkki.](./media/dimension-hierarchy-org.png)
 
 **Kustannusobjektin dimensio**
 
@@ -72,7 +69,7 @@ Organisaation raportointivaatimukset täyttävä dimension hierarkia voidaan mä
 
 | Dimensiohierarkian nimi | Dimensio    | Dimensiohierarkiatyypin nimi      | Käyttöoikeusluettelohierarkia |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisaatio             | Kustannuspaikat | Dimension luokitteluhierarkia | Nro                    |
+| Organisaatio             | Kustannuspaikat | Dimension luokitteluhierarkia | Ei                    |
 
 **Dimensiohierarkia**
 
@@ -152,8 +149,7 @@ Kustannusten kohdistussäännöt voidaan määrittää seuraavasti.
 | CC001                                | Yhteensä         | **Henkilöstöpalvelut**        |
 | CC002                                | Yhteensä         | **Taloushallinnon palvelut** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Kustannuspaikkojen välinen kustannusvirta 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Kustannuspaikkojen välinen kustannusvirta 
 
 Jos haluat tietää minkälainen on organisaation kustannuspaikkojen välinen kustannusvirta, voit luoda kullekin kustannuspaikalle **Toissijainen**-tyypin kustannustasoja. Näitä kustannustasoja voi sitten käyttää siirtämään saldoja kustannuspaikkojen välillä yleiskustannuslaskennan aikana.
 
@@ -301,3 +297,6 @@ Selkeä **kohdistusten kohdistuksen** ja **kustannuksen koontikäytäntöjen** v
 -  [Kustannustason dimensiot](cost-elements.md)
 -  [Dimensiohierarkia](dimension-hierarchy.md)
 -  [Yleiskustannuslaskenta](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074991"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7548234"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Konsernin sisäisen myyntitilauksen luominen ja laskuttaminen ulkoiselle asiakkaalle
 
@@ -75,18 +75,5 @@ Suorita nämä vaiheet yrityksessä B. Tämä toimenpide vastaa kuvan kenttää 
 1. Valitse ensin myyntitilaus ja sitten **OK**.
 
 Konsernin sisäisen myyntitilauksen asiakkaan lasku kirjataan automaattisesti yrityksessä B. Tämän jälkeen yrityksessä A luodaan ja kirjataan konsernin sisäinen ostolasku. Jos alkuperäinen myyntitilaus määritetään suoratoimitukseksi, myyntilasku luodaan alkuperäiselle myyntitilaukselle yrityksessä A.
-
-> [!NOTE]
-> Aiemmin konsernin sisäisen myynnin skenaariossa, jos toimittajan laskun työnkulku konfiguroitiin konsernin sisäisessä ostoyhtiössä, konsernin sisäisen myyntitilauksen laskutus ei onnistunut. Siksi toimittajan laskutyönkulku piti ottaa pois käytöstä konsernin sisäisessä ostoyrityksessä. 
-> 
-> Tämä rajoitus on korjattu viimeisimmässä versiossa 10.0.25. Konsernin sisäiset myyntitilaukset voidaan nyt laskuttaa, kun toimittajan laskun työnkulku on konfiguroitu konsernin sisäisessä ostoyhtiössä.
-> 
-> Ominaisuus otetaan käyttöön seuraavasti.
->
-> 1. Valitse konsernin sisäisen myynnin yritys.  
-> 2. Siirry kohtaan **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat**.
-> 3. Valitse konsernin sisäisen ostoyrityksen asiakas.
-> 4. Siirry kohtaan **Yleiset \> Määritys \> Konsernin sisäinen**.
-> 5. Valitse **Ostotilauskäytännöt**-välilehdestä **Ohita toimittajan laskun työnkulku konsernin sisäisissä ostolaskuissa** -parametri.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

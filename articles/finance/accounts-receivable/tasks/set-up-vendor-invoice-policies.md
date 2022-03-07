@@ -2,33 +2,33 @@
 title: Määritä toimittajan laskutuskäytännöt
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt.
 author: ShivamPandey-msft
-ms.date: 02/11/2022
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: c088f6e3fea7c218cfd2108d0f279bccf1292772
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109753"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816193"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Määritä toimittajan laskutuskäytännöt
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt. Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan **Toimittajan lasku** -sivun avulla ja kun toimittajan laskun **Käytäntörikkomukset**-sivu avataan. Voit myös määrittää toimittajan laskun työnkulun, kun haluat suorittaa toimittajan laskukäytännöt aina, kun lasku lähetetään työnkulkuun. 
+Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt. Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan Toimittajan lasku -sivun avulla ja kun Toimittajan laskukäytäntöjen rikkeet -sivu avataan. Voit myös määrittää toimittajan laskun työnkulun, kun haluat suorittaa toimittajan laskukäytännöt aina, kun lasku lähetetään työnkulkuun. 
 
 - Toimittajan laskukäytännöt eivät koske laskurekisteriin tai laskukirjauskansioon luotuja laskuja.  
-- Laskun täsmäytyksen vahvistuksessa ei käytetä toimittajan laskukäytäntöjä, vaan **Ostoreskontran parametrit** -määritettyjä käytäntöjä.  
-- Tässä tallenteessa käytetään esittely-yritystä USMF. Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli. Varmista ennen aloittamista, että **laskun täsmäytyksen** konfigurointiavain on valittuna.
+- Laskun täsmäytyksen vahvistuksessa ei käytetä toimittajan laskukäytäntöjä, vaan Ostoreskontran parametrit -määritettyjä käytäntöjä.  
+- Tässä tallenteessa käytetään esittely-yritystä USMF. Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli. Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Toimittajan laskujen käytäntöjen luomisen valmisteleminen

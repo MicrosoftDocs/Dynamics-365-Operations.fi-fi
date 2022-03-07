@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 825aa327cc1530675fad57be6fc1b4313f0cf998
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068967"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483779"
 ---
 # <a name="ready-to-pay"></a>Valmis maksettavaksi
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Jos haluat merkitä työntekijän maksuvalmiiksi, sinun on ensin otettava käyttöön **Palkanlaskennan integrointitoiminto (esiversio)** ominaisuuksien hallinnassa. Lisätietoja esiversiotoimintojen käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).
@@ -73,9 +72,10 @@ Jos jokin näistä vahvistuksista epäonnistuu, et voi merkitä työntekijää m
 
 Jos **Maksuvalmis** -kentän arvo on **Ei**, tämä on merkki siitä, että sinun on tehtävä toimenpide varmistaaksesi, että työntekijäprofiili on valmis. Tämä ei estä tietojen näkymistä missään tietoentiteetissä. 
 
-## <a name="process-automation"></a>Prosessien automatisointi
+## <a name="known-issues"></a>Tunnetut ongelmat
 
-Kaikkien työntekijöiden tarkistus voidaan automatisoida [prossien automaation](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation) avulla. Valitse **Kompensaation hallinta** -työtilassa **Linkit** \> **Parametrit** \> **Prosessien automatisoinnit**.
+- **Virtaviivaistettu työntekijän syöttö** -ominaisuus on poistettava käytöstä ominaisuuksien hallinnassa. Kompensaation hallinnan työtilan ruudut eivät toimi oikein, jos käytät tätä ominaisuutta.
+- **Työntekijä**-sivulla **Palkanlaskenta-välilehti**, **Maksuvalmis**-ryhmä on käytettävissä missä tahansa käyttäjäroolissa. 
 
 ## <a name="see-also"></a>Lisätietoja
 

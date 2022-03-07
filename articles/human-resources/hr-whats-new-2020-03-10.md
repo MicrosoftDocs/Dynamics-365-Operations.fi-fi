@@ -1,33 +1,32 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (10. maaliskuuta 2020)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 10. maaliskuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 944481727f3222a10f128ac3078c117f5ae7d193
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: c6e4d93f89721bd722de523fbba7adfd2ee3f786
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526909"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061148"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (10. maaliskuuta 2020)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.2985. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
 
@@ -45,7 +44,7 @@ Työntekijöiden tehtävien ylläpidon lomakkeessa ovat kaikki työntekijän teh
 
 Esimerkki: Benjamin Martin on etujen järjestelmänvalvoja. Työntekijän perehdytyksen aikana tehtävät luodaan Benjaminille, joka tarkistaa uuden työntekijän etuvalinnat. Benjaminilla on aiemmin tehtyjä tehtäviä sekä tulevia tehtäviä, jotka on vielä tekemättä. Benjamin päättää poistua yrityksestä, joten hänen tehtävänsä on joko delegoitava uudelleen tai poistettava. Tehtävien ylläpitolomake (**Työntekijä**-lomakkeen toimintoruudussa) antaa mahdollisuuden delegoida kaikki Benjaminin tehtävät uudelleen toiselle työntekijälle tai poistaa ne.  
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service -ratkaisu on nyt käytettävissä seuraavin muutoksin:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse -ratkaisu on nyt käytettävissä seuraavin muutoksin:
 
 | kuvaus | Vaihda |
 | --- | --- |
@@ -57,18 +56,18 @@ Esimerkki: Benjamin Martin on etujen järjestelmänvalvoja. Työntekijän perehd
 | Uudet muuttuvat kompensaatioasetusten entiteetit | <ul><li>**Muuttuvan kompensaatiosuunnitelman tyyppi**</li><li>**Muuttuva kompensaatiosuunnitelma**</li><li>**Hyvityssäännöt**</li><li>**Muuttuvan kompensaatiosuunnitelman taso**</li></ul> |
 | Uusi **Työntekijäkalenterin työ**-yksikkö | <ul><li>**Työkalenteriyksikkö** lisätty</li></ul> |
 | Uusi **Palkanlaskennan toimen tiedot** -yksikkö | <ul><li>**Palkanlaskennan toimen tiedot** lisätty</li></ul> |
-| Uusi **Otsikko**-yksikkö | <ul><li>**Otsikko** lisätty</li></ul> Uusi **Otsikko**-entiteetti sisältyy Common Data Serviceen, mutta siihen ei viitata **Työtehtävä**- tai **Työ**-yksiköissä tällä hetkellä. |
+| Uusi **Otsikko**-yksikkö | <ul><li>**Otsikko** lisätty</li></ul> Uusi **Otsikko**-entiteetti sisältyy Dataverseen, mutta siihen ei viitata **Työtehtävä**- tai **Työ**-yksiköissä tällä hetkellä. |
 
 > [!NOTE]
-> Taloushallinnon dimensiot sekä toimissa että työsuhteessa mahdollistavat yksisuuntaisen integroinnin päivityksille Human Resourcesista Common Data Serviceen. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Common Data Service -sovelluksesta Human Resources -sovellukseen.
+> Taloushallinnon dimensiot sekä toimissa että työsuhteessa mahdollistavat yksisuuntaisen integroinnin päivityksille Human Resourcesista Dataverseen. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Dataverse -sovelluksesta Human Resources -sovellukseen.
 
-Seuraavien viikkojen aikana nämä yksikön muutokset ovat käytettävissä kaikissa ympäristöissä. Voit asentaa Human Resources -sovelluksen uusimman Common Data Service -ratkaisun manuaalisesti seuraavasti:
+Seuraavien viikkojen aikana nämä yksikön muutokset ovat käytettävissä kaikissa ympäristöissä. Voit asentaa Human Resources -sovelluksen uusimman Dataverse -ratkaisun manuaalisesti seuraavasti:
 
 1.  Siirry [Power Platform-hallintakeskukseen](https://admin.powerplatform.microsoft.com).
 
 2.  Valitse **Ympäristö**.
 
-3.  Etsi ympäristö, jonka haluat päivittää. Ympäristön on vastattava Human Resources -sovelluksen **ympäristön nimeä** **Common Data Service -tiedot** -osan **Tietoja**-lomakkeessa.
+3.  Etsi ympäristö, jonka haluat päivittää. Ympäristön on vastattava Human Resources -sovelluksen **ympäristön nimeä** **Dataverse -tiedot** -osan **Tietoja**-lomakkeessa.
 
 4.  Valitse ympäristö, jos haluat tarkastella ympäristön tietoja.
 
@@ -103,6 +102,8 @@ Seuraavat esikatseluominaisuudet ovat käytettävissä 3. helmikuuta 2020:
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

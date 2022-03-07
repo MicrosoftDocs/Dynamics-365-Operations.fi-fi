@@ -2,28 +2,27 @@
 title: Luo suljettu kysymys
 description: Monivalintakysymysten avulla voit antaa vastaajille vastauksia, joista he voivat valita.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2eb53290d39fef0bf439a199dfd774138823ec2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b4daa277ba1b71238314de975c1e8a54f9ece408d6fc2a314828bc0592129af2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731958"
 ---
 # <a name="create-a-closed-ended-question"></a>Luo suljettu kysymys
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -68,3 +67,6 @@ Monivalintakysymysten avulla voit antaa vastaajille vastauksia, joista he voivat
 5. Anna tai valitse arvo Vastausryhmä-kenttään.
 6. Kirjoita arvo Teksti-kenttään.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

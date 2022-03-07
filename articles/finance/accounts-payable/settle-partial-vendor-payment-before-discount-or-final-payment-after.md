@@ -1,31 +1,28 @@
 ---
-title: Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen
+title: Osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen
 description: Tässä artikkelissa käydään läpi skenaario, jossa suoritetaan useita osittaisia maksuja, joista osa on käteisalennuskaudella ja osa käteisalennuskauden ulkopuolella.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 731d0a1ad0af47d98455ba2e609a48e092a67d3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 693339929bbdbc960afc2a5e63b3a3864bfd3ca19cd2dbc992de776836b17e50
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442614"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737134"
 ---
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun lopullinen maksu suoritetaan alennuspäivämäärän jälkeen
+# <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,12 +44,12 @@ April syöttää ja kirjaa 25. kesäkuuta laskun toimittajalle 3057, jonka arvo 
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
 | Valittu | Normaali            | Lku-10020 | 3057    | 25.6.2015 | 25.7.2015 | 10020   | -1 000,00                      | USD      | -297,00          |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
-| Käteisalennussumma         | –10,00    |
+| Käteisalennussumma         | -10,00    |
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | -3,00     |
@@ -74,7 +71,7 @@ April maksaa loput laskusta 15.7, joka on alennuskauden jälkeen. Alennussummaa 
 
 Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa. April näkee, että hän on jo käyttänyt 3,00:n alennuksen.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 0,00      |
@@ -100,10 +97,10 @@ Jos toimittaja sallii alennuksen käyttämisen, vaikka April on maksamassa lasku
 
 Alennustiedot näkyvät **Selvitä tapahtumat** -sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
-| Käteisalennussumma         | 7:00      |
+| Käteisalennussumma         | 7.00      |
 | Käytä käteisalennusta            | Aina    |
 | Käytetty käteisalennus          | -3,00     |
 | Käytettävä käteisalennussumma | -7,00     |
@@ -122,3 +119,6 @@ April kirjaa sitten maksun. Kun hän avaa **Toimittajatapahtumat**-sivun, hän n
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

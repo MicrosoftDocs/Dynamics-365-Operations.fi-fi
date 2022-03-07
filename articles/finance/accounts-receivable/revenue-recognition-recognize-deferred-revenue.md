@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5adcb666f35426f2fed545813d81ddb9b1034f1d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458932"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238229"
 ---
 # <a name="recognize-deferred-revenue"></a>Siirretyn tuoton kirjaus
 
@@ -39,7 +38,7 @@ Tuottokirjausaikataulun tietoja voidaan tarkastella kahdella tavalla.
 - Voit avata tuottokirjausaikataulun suoraan laskutetusta myyntitilauksesta. Tällöin tuottoaikataulun tiedot suodatetaan näyttämään vain valitun myyntitilauksen tiedot. Tämä on hyödyllistä myyntitilauksen aikataulutietojen tarkistamisessa.
 - Tuottokirjausaikataulu voidaan avata **Tuottokirjaus \> Kausittaiset tehtävät** -sivulta. Tätä toimintatapaa käytetään usein, kun tuotto kirjataan kauden lopussa. Kun sivu avataan ensimmäistä kertaa, tietoja ei ole näkyvissä. Ruudukon yläpuolella olevilla suodattimilla voidaan määrittää perusteet näytettäville aikataulutiedoille. Laskutuspäivämääriä voidaan suodattaa määrittämällä päivämääräväli, myyntitilaus, asiakas, projektitunnus tai tila.
 
-[![Tuottoaikataulujen sivu](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![Kuva Tuottoaikataulut-sivusta](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 **Taloushallinnon dimensio** -pikavälilehti ruudukon alla avaa myyntitilausrivin taloushallinnon dimensiot. Nämä dimensiot otettiin huomioon kirjauksessa siirrettyyn tuottoon. Ne otetaan huomioon myös tuoton kirjauksessa. Käytettävät dimensioarvot määräytyvät tuotolle määritetyn tilirakenteen ja siirretyn tuoton päätilien mukaan.
 
@@ -109,3 +108,6 @@ Sopimuksen muutoksilla on seuraavat vaikutukset tuottoaikataulutietoihin:
 - Jos tuotteelle on kirjattu tuottoa, tuottoa on kirjattu väärin, koska kirjaus on perustunut virheelliseen tuottoaikatauluun. Nämä rivit on takaisinkirjattava ja kirjattava uudelleen uuden aikataulun perusteella. Tässä skenaariossa luodaan uusia tuottoaikataulurivejä, joilla on negatiivinen summa alkuperäisenä kirjauspäivänä. Sitten luodaan uusia rivejä, joilla summat kirjataan uuden tuottoaikataulun perusteella. 8.8.2019 esimerkiksi kirjattiin 10,53 dollarin tuotto. 8. syyskuuta 2019 taas kirjattiin 13,16 dollarin tuotto. Siten samoina päivinä luodaan kaksi uutta riviä. Yhden rivin arvo on -10,53 dollaria ja toisen -13,16 dollaria. Sitten luodaan 24 uutta riviä, joille siirretyn tuoton kokonaismäärä eli 160,61 dollaria kohdistetaan. Takaisinkirjausrivit voidaan kirjata suorittamalla **Luo kirjauskansio** -prosessi.
 
 [![Tuottokirjausaikataulu](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

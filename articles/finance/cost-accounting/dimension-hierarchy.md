@@ -2,16 +2,13 @@
 title: Dimensiohierarkia
 description: Tässä ohjeaiheessa on tietoja dimensiohierarkioista. Dimensiohierarkian avulla voi määrittää kustannuslaskennan raportoinnin rakenteen, kustannuskäytännöt ja suojausasetukset.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766970"
 ---
 # <a name="dimension-hierarchy"></a>Dimensiohierarkia
 
@@ -42,7 +39,7 @@ Dimensiohierarkioita käytetään useissa tilanteissa kustannuslaskennassa. Voit
 
 Esimerkki dimensiohierarkiasta.
 
-![Esimerkki dimensiohierarkiasta](./media/dimension-hierarchy.png)
+![Esimerkki dimensiohierarkiasta.](./media/dimension-hierarchy.png)
 
 Dimensiohierarkia voidaan luoda seuraaville dimensiotyypeille:
 
@@ -83,7 +80,7 @@ Dimensiohierarkia luodaan puurakenteena, jossa on solmu- ja lehtisolmusuhteita
 
 Pienyrityksessä on seuraava organisaatiorakenne, jossa ovat taloushallinto ja henkilöstöhallinto ovat hallinnon alaisia osastoja, kun taas kokoonpano ja pakkaus ovat tuotannon alaisia osastoja.
 
-![Organisaatiorakenteen esimerkki](./media/dimension-hierarchy-org.png)
+![Organisaatiorakenteen esimerkki.](./media/dimension-hierarchy-org.png)
 
 Kustannusobjektidimensio vastaa organisaation kaikkia kustannuspaikkoja.
 
@@ -121,16 +118,17 @@ Organisaation raportointivaatimukset täyttävä dimension hierarkia voidaan mä
 
 | Dimensiohierarkian nimi | Dimensio    | Dimensiohierarkiatyypin nimi      | Käyttöoikeusluettelohierarkia |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisaatio             | Kustannuspaikat | Dimension luokitteluhierarkia | Nro                    |
+| Organisaatio             | Kustannuspaikat | Dimension luokitteluhierarkia | Ei                    |
 
 Raportoinnin dimensiohierarkia voidaan määrittää tässä kuvatulla tavalla.
 
-|                   | Dimension jäsenalueet   |                         |
+**Dimension jäsenalueet**
+
+|   Solmukohdat           |   Lähtödimension jäsen   |   Kohdedimension jäsen   |
 |-------------------|---------------------------|-------------------------|
-| **Solmukohdat**         | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Organisaatio      |                           |                         |
 | &nbsp;&nbsp;Hallinto         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Henkilöstöhallinto        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Tuotanto    |                           |                         |
@@ -147,12 +145,13 @@ Käytäntövaatimukset täyttävä dimension hierarkia voidaan määrittää tä
 
 Käytännön dimensiohierarkia voidaan määrittää tässä kuvatulla tavalla.
 
-|                   | Dimension jäsenalueet   |                         |
+**Dimension jäsenalueet**
+
+|   Solmukohdat           |   Lähtödimension jäsen   |   Kohdedimension jäsen   |
 |-------------------|---------------------------|-------------------------|
-| **Solmukohdat**         | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Kustannustoiminta     |                           |                         |
 | &nbsp;&nbsp;Kiinteä kustannus    | 10 001                     | 10011                   |
-|&nbsp;&nbsp;Muuttuva kulu | 40001                     | 40010                   |
+| &nbsp;&nbsp;Muuttuva kulu | 40001                     | 40010                   |
 
 > [!NOTE]
 > Solmulla voi olla **Dimension jäsenalueet** -kohdassa 1:_n_ dimension jäsenaluetta. Voit lisätä ne dimension jäsentunnukset, jotka eivät ole vielä dimension jäseniä. Tämä menetelmä mahdollistaa hierarkian käytön myös tulevaisuudessa.  
@@ -298,9 +297,10 @@ Periaatteessa kaikki esimiehet voivat käyttää erittäin arkaluonteisia liiket
 
 Hierarkian suunnittelutoiminnossa on uusi **Käyttäjät**-pikavälilehti. Voit lisätä välilehdessä yhden käyttäjätunnukset tai useita tunnuksia jokaiseen hierarkian solmuun.
 
-|                 | Käyttäjät            | Dimension jäsenalueet   |                         |
+**Käyttäjät ja dimension jäsenalueet**
+
+|   Solmukohdat         |   Käyttäjätunnus        |   Lähtödimension jäsen   |   Kohdedimension jäsen   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Solmukohdat**       | **Käyttäjätunnus**      | **Lähtödimension jäsen** | **Kohdedimension jäsen** |
 | Organisaatio    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Hallinto         | Huhtikuu            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Myyntitiedot   | Alicia           | CC002                     | CC003                   |
@@ -328,8 +328,11 @@ Käyttöoikeusluettelon hierarkian asetuksilla hallitaan seuraavilla alueilla n�
 - Power BI:
 
     - Power BI -visualisoinneissa näytettävät tiedot
-    - Tietojen Power BI -visualisoinnit, jotka on upotettu Dynamics 365 Financein asiakasohjelmassa
+    - Tietojen Power BI -visualisoinnit, jotka on upotettu Dynamics 365 Financen asiakasohjelmassa
 
 > [!NOTE] 
-> - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Käyttöoikeusluettelon hierarkia ei suojaa Exceliin vietyjä tietoja. Niinpä vain niiden kustannuslaskijoiden ja esimiesten, joilla on tietojen täydet katseluoikeudet, pitäisi käyttää raportointityökalua.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

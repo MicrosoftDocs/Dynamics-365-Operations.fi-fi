@@ -2,11 +2,9 @@
 title: Tilausten lähettäminen suoratoimituksina
 description: Tässä aiheessa käsitellään, miten myyntitilaukselle luodaan suoratoimitus.
 author: omulvad
-manager: tfehr
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5488ac6d29a99bcaa5ea29ea6da131858070011c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966102"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824795"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Tilausten lähettäminen suoratoimituksina
 
@@ -81,3 +79,6 @@ Tässä aiheessa käsitellään, miten myyntitilaukselle luodaan suoratoimitus. 
     - Suoratoimitus-sivu toimii työtilana, jossa ostoedustaja saa yhteenvedon kaikista suoratoimitettavista myyntitilausriveistä, joten he voivat luoda vastaavat ostotilaukset. Lisäksi he tarkastella Vahvistus- ja Toimitus-välilehdissä avoimia suoratoimitustilauksia ja vahvistettuja tilauksia.  
     - Luotu suoratoimitustilaus siirretään automaattisesti Vahvistus-välilehteen. Voit halutessasi vahvistaa tilauksen suoraan tällä sivulla. Kun osto on vahvistettu, se siirretään automaattisesti Toimitus-välilehteen, josta voit rekisteröidä sen vastaanoton.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

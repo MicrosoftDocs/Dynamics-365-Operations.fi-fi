@@ -2,28 +2,25 @@
 title: Määritä tilirakenteet
 description: Tässä aiheessa on tietoja tilirakenteista ja taloushallinnon dimensioista.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c278cefd47b14c44c1949505404d08628cb7f52f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc9219009991cce3f4df9c6f7e04903f5625dd80
+ms.sourcegitcommit: b2fe67e2fe6a99a35decb04c8d62efd1e94fe1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442839"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945538"
 ---
 # <a name="configure-account-structures"></a>Määritä tilirakenteet
 
@@ -49,9 +46,9 @@ Kuvataksemme tilirakenteen määrittämisen parhaita käytäntöjä, oletetaan, 
 
 **Voitt- ja tappiotilirakenne**
 
-|Päätili          | Liiketoimintayksikkö    |Osasto          | Kustannuspaikka    |
-|----------------------|-----------|----------------------|-----------|
-|400000..999999 | *;” “|*;” “|*;” “|*;” “|
+|Päätili          | Liiketoimintayksikkö    |Osasto          | Kustannuspaikka    | &nbsp; |
+|----------------------|------------------|--------------------|-----------|---|
+|400000..999999 | \*;” “| \*;” “| \*;” “| \*;” “|
 
 **Lisäsääntö asiakkaan lisäämiseksi**
 
@@ -68,7 +65,7 @@ Tässä yksinkertaistetussa esimerkissä kaikki arvot ja tyhjät sallitaan - sik
 
 **Sallitun arvon tiedot** -osa ohjaa, kun luot ehtoja käyttäen **operaattoreita**, kuten alkaa merkillä, on välillä, sisältää ja monia muita.
 
-[![Salli arvot](./media/account.png)](./media/account.png) 
+[![Salli arvot.](./media/account.png)](./media/account.png) 
 
 Sallitut arvot tulevat oletusarvon mukaan kirjauskansioon tai kirjanpidollisen jaon aloitussivulle, jos muita mahdollisia arvoja ei ole valittavissa tilirakenteen asetusten mukaan.
 
@@ -107,3 +104,6 @@ Määrittäessäsi tilirakenteita on suositeltavia parhaita käytäntöjä. Kuit
 Kun olet tyytyväinen uusiin asetuksiin tai tilirakenteen muutokseen, se on aktivoitava. Jos tilirakenne on määritty kirjanpitoon, tämä aktivointi voi kestää pitkään, koska järjestelmän kaikki kirjaamattomat tapahtumat on synkronoitava uuteen rakenteeseen. Tilirakenteen muutokset eivät vaikuta kirjattuihin tapahtumiin.
 
 Lisätietoja on kohdassa [Tilikartan suunnittelu](plan-chart-of-accounts.md), [Taloushallinnon dimensiot](financial-dimensions.md) ja [Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

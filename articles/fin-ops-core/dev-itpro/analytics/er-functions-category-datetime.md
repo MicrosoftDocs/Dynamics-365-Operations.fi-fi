@@ -2,8 +2,11 @@
 title: Luettelo ER-funktioista päivämäärä- ja aikaluokassa
 description: Tässä ohjeaiheessa on tietoja sähköisen raportoinnin (ER) tukemista päivämäärä- ja aikafunktioista.
 author: NickSelin
-ms.date: 09/09/2021
+manager: kfend
+ms.date: 12/05/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 2745298ae1f6787c3de5a4aaf6a2a6350f5f3e85
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890774"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686216"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Luettelo ER-funktioista päivämäärä- ja aikaluokassa
 
@@ -31,14 +34,13 @@ Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan
 
 | Toiminto | Kuvaus |
 |----------|-------------|
-| [AddDays](er-functions-datetime-adddays.md) | Tämä funktio palauttaa *[DateTime](er-formula-supported-data-types-primitive.md#datetime)*-arvon, joka on määritetty päivien määrä ennen määritettyä alkamispäivää tai sen jälkeen. |
-| [ChangeTimeZone](er-functions-datetime-changetimezone.md) | Tämä funktio palauttaa *DateTime*-arvon , joka muunnetaan tietystä päivämäärä/aika-arvosta yhdellä aikavyöhykkeellä päivämäärä- ja aika-arvoksi toisella aikavyöhykkeellä. |
-| [DateFormat](er-functions-datetime-dateformat.md) | Tämä funktio palauttaa *[Merkkijono](er-formula-supported-data-types-primitive.md#string)*-arvon, joka esittää tietyn päivämääräarvon tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa. |
+| [AddDays](er-functions-datetime-adddays.md) | Tämä funktio palauttaa *DateTime*-arvon, joka on määritetty päivien määrä ennen määritettyä alkamispäivää tai sen jälkeen. |
+| [DateFormat](er-functions-datetime-dateformat.md) | Tämä funktio palauttaa *Merkkijonoarvon*, joka esittää tietyn päivämääräarvon tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa. |
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Tämä funktio palauttaa *Merkkijonoarvon*, joka esittää tietyn päivämäärä-/aika-arvon tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Tämä funktio palauttaa *DateTime-arvon*, joka muunnetaan tietystä tekstiarvosta tekstinä määritetyssä muodossa ja valinnaisesti määritetyssä kulttuurissa päivämäärä-/aika-arvoksi. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Tämä funktio palauttaa *DateTime-arvon* , joka muunnetaan tietyn päivämäärän arvosta päivämäärä- ja aika-arvoksi koordinoidussa yleisajassa (Greenwichin aika \[GMT\]). |
-| [DateValue](er-functions-datetime-datevalue.md) | Tämä funktio palauttaa *[Date](er-formula-supported-data-types-primitive.md#date)*-arvon, joka muunnetaan annetusta tekstiarvosta määrätyssä muodossa ja valinnaisesti määritellyssä kulttuurissa päivämääräarvoksi. |
-| [DayOfYear](er-functions-datetime-dayofyear.md) | Tämä toiminto palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrää kuvaavan arvon *[kokonaislukuna](er-formula-supported-data-types-primitive.md#integer)*. |
+| [DateValue](er-functions-datetime-datevalue.md) | Tämä funktio palauttaa *Date-arvon*, joka muunnetaan annetusta tekstiarvosta määrätyssä muodossa ja valinnaisesti määritellyssä kulttuurissa päivämääräarvoksi. |
+| [DayOfYear](er-functions-datetime-dayofyear.md) | Tämä toiminto palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrää kuvaavan arvon *kokonaislukuna*. |
 | [Päivää](er-functions-datetime-days.md) | Tämä toiminto palauttaa ensimmäisen määritetyn päivämäärän ja toisen määritetyn päivämäärän välisten päivien määrää kuvaavan arvon *kokonaislukuna*. |
 | [Now](er-functions-datetime-now.md) | Tämä funktio palauttaa *DateTime*-arvon, joka edustaa nykyistä sovelluspalvelimen päivämäärää ja aikaa. |
 | [NullDate](er-functions-datetime-nulldate.md) | Tämä funktio palauttaa *päivämäärän* arvon, joka vastaa **Null** -arvoa (1. tammikuuta 1900). |
@@ -46,7 +48,6 @@ Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan
 | [SessionNow](er-functions-datetime-sessionnow.md) | Tämä funktio palauttaa *DateTime*-arvon, joka edustaa nykyistä sovellusistunnon päivämäärää ja aikaa. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | Tämä funktio palauttaa *Date*-arvon, joka edustaa nykyistä sovellusistunnon päivämäärää. |
 | [Tänään](er-functions-datetime-today.md) | Tämä funktio palauttaa *Date*-arvon, joka edustaa nykyistä sovelluspalvelimen päivämäärää. |
-| [WeekNum](er-functions-datetime-weeknum.md) | Tämä funktio palauttaa *Kokonaisluku*-arvon, joka edustaa tiettyä viikkoa vuodessa. |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -55,6 +56,3 @@ Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan
 [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
 
 [Sähköisen raportoinnin kaavakieli](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

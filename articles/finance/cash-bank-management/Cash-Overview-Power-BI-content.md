@@ -2,26 +2,23 @@
 title: Käteisvarojen yleiskatsauksen Power BI -sisältö
 description: Tässä ohjeaiheessa käsitellään käteisvarojen yhteenvetoa ja Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 author: saraschi2
-manager: AnnBe
 ms.date: 07/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f7e0c792df8519f3bcb2ade2e29cc4c5c8e4730
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442807"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986405"
 ---
 # <a name="cash-overview-power-bi-content"></a>Käteisvarojen yleiskatsauksen Power BI -sisältö
 
@@ -41,7 +38,7 @@ Seuraava asetus on tehtävä, jotta tiedot voidaan näyttää Power BI -visualis
 2. Tarkista aktiiviselle ajanjaksolle määritetty kirjanpidon kalenteripäivämäärät valitsemalla **Kirjanpito > Kalenterit > Kirjanpidon kalenterit**.
 3. Määritä **Kirjanpitovaluutta** ja **Vaihtokurssin tyyppi** valitsemalla **Kirjanpito > Asetukset > Kirjanpito**.
 4. Määritä vaihtokurssit tapahtuma- ja kirjanpitovaluuttojen, kirjanpito- ja järjestelmävaluutan sekä kirjanpito- ja pankkivaluuttojen välillä. Tee se valitsemalla **Kirjanpito > Valuutat > Valuutan vaihtokurssit**.
-5. Määritä ja suorita kassavirtaennusteet. Lisätietoja kassavirtaennusteiden määrittämisestä on kohdassa [Kassavirtaennusteet](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+5. Määritä ja suorita kassavirtaennusteet. Lisätietoja kassavirtaennusteiden määrittämisestä on kohdassa [Kassavirtaennusteet](./cash-flow-forecasting.md). 
 6. Päivitä **LedgerCovLiquidityMeasurement**-koostemitta valitsemalla **Järjestelmän hallinta > Asetukset > Yksikkösäilö**.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
@@ -79,3 +76,6 @@ Seuraavassa taulukossa on esitetty yksiköt, joihin **käteisvarojen yhteenvedon
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Yhteenveto saapuvasta ja lähtevästä kassavirrasta sekä saldo kunkin yrityksen kirjanpitovaluuttana |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Yhteenveto saapuvasta ja lähtevästä kassavirrasta sekä saldo kaikkien yritysten järjestelmän valuuttana |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Yhteenveto tapahtuman nettosummasta ja valuuttojen saldosta tapahtuman valuuttana |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

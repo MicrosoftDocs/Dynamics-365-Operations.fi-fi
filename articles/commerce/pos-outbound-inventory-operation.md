@@ -2,16 +2,13 @@
 title: Myyntipisteen lähtevä varastotoiminto
 description: Tässä ohjeaiheessa kuvataan myyntipisteen lähtevä varastotoiminto.
 author: hhaines
-manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411857"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581134"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -74,7 +71,7 @@ Luotuja erätöitä käytetään epäonnistuneiden tai aikakatkaistujen asiakirj
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Edellytys: Lähtevän toiminnon lisääminen myyntipisteen näyttöasetteluun
 
-Ennen kuin organisaatio voi käyttää lähtevää toimintoa, se on määritettävä **lähtevän toiminnon** myyntipistetoiminnossa vähintään yhdessä [myyntipisteen näyttöasettelussa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Ennen kuin otat uuden toiminnon käyttöön tuotantoympäristössä, varmista, että se on testattu kunnolla ja käyttäjät on koulutettu käyttämään sitä.
+Ennen kuin organisaatio voi käyttää lähtevää toimintoa, se on määritettävä **lähtevän toiminnon** myyntipistetoiminnossa vähintään yhdessä [myyntipisteen näyttöasettelussa](/dynamics365/unified-operations/retail/pos-screen-layouts). Ennen kuin otat uuden toiminnon käyttöön tuotantoympäristössä, varmista, että se on testattu kunnolla ja käyttäjät on koulutettu käyttämään sitä.
 
 ## <a name="overview"></a>Yleiskatsaus
 
@@ -119,7 +116,7 @@ Jokainen viivakoodin skannaus päivittää määrän **Lähetys nyt** -kentäss�
 
 ### <a name="over-delivery-shipping-validations"></a>Ylitoimituksen lähetyksen tarkistukset
 
-Tarkistukset tapahtuvat asiakirjarivien vastaanottoprosessin aikana. Ne sisältävät ylitoimituksen tarkistukset. Jos käyttäjä yrittää vastaanottaa enemmän varastoa kuin ostotilauksen mukaan on tilattu, mutta ylitoimitusta ei ole määritetty tai vastaanotettu määrä ylittää ostotilausrivillä määritetyn ylitoimitustoleranssin, käyttäjä vastaanottaa virheen, koska ylimääräistä määrää ei voi vastaanottaa.
+Tarkistukset tapahtuvat asiakirjarivien täyttämisprosessin aikana. Ne sisältävät ylitoimituksen tarkistukset. Jos käyttäjä yrittää lähettää enemmän varastoa kuin siirtotilauksen mukaan on tilattu, mutta ylitoimitusta ei ole määritetty tai lähetetty määrä ylittää siirtotilausrivillä määritetyn ylitoimitustoleranssin, käyttäjä vastaanottaa virheen, koska ylimääräistä määrää ei voi lähettää.
 
 ### <a name="underdelivery-close-lines"></a>Alitoimituksen sulkemisrivit
 
@@ -193,3 +190,6 @@ Kokonaan lähetetyt siirtotilaukset siirretään **Valmis**-välilehteen **Läht
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Myyntipisteen saapuva varastotoiminto](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

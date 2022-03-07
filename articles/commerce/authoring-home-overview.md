@@ -2,27 +2,24 @@
 title: Muokkaussivun yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen muokkaussivun yleiskatsaus.
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c837b018bddfeb28311c630a7558c09274ced2c1cfce7405587bd1be78d72a96
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411950"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719959"
 ---
 # <a name="authoring-page-overview"></a>Muokkaussivun yleiskatsaus
 
@@ -30,8 +27,6 @@ ms.locfileid: "4411950"
  [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen muokkaussivun yleiskatsaus.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Sivustoja voi luoda erilaisten liiketoimintatarpeiden tukemiseksi. Ne voivat edustaa koko yritystä, tarjota yhden liiketoimintakanavan tai kohdentua tietylle kohdeyleisölle tai sen osalle. Esimerkiksi vaatteiden valmistajalla voi olla sivusto, jolla esitellään kaikki valmistajan omistamat tuotemerkit. Samalla vaatteiden valmistajalla voi olla erillinen sivusto jokaiselle tuotemerkille sekä sivustojoukko, jossa esitellään luksusmuotia, ulkoiluvaatteita ja lastenvaatteita.
 
@@ -45,7 +40,7 @@ Tällä hetkellä muokkaussivu sisältää seuraavat osat.
 
 Seuraavassa kuvassa näkyy muokkaussivu.
 
-![Dynamics 365 Commercen muokkaussivu](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commercen muokkaussivu.](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Työkalun valitseminen aloituspainikkeen avulla
 
@@ -122,3 +117,6 @@ Kun muokkaustyökalu on ladattu, voit palata muokkaussivulle valitsemalla **Aloi
 [Sivuston hakukoneoptimointia (SEO) koskevia tietoja](search-engine-optimization-considerations.md)
 
 [Sisällön suojauskäytännön (CSP) hallinta](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

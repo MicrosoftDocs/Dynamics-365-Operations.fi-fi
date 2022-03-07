@@ -1,77 +1,97 @@
 ---
 title: Tapahtuman selvitykset
 description: Tässä ohjeaiheessa käsitellään tapaa, jolla Tapahtuman selvitykset -sivun avulla selvitetään kirjanpitotapahtumia ja tehdään käänteisiä tilityksiä.
-author: mikefalkner
-manager: aolson
-ms.date: 09/28/2018
+author: kweekley
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kweekley
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: d41a69bed3d1340736cc7df35aa3ded032d4d79d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e98b012210338e7f18cb874eefbc8a023aa4428b
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442681"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075321"
 ---
-# <a name="ledger-settlements"></a>Tapahtuman selvitykset
+# <a name="ledger-settlements"></a>Kirjanpidon selvitykset
 
 [!include [banner](../includes/banner.md)]
 
-Tapahtuman selvitysten avulla täsmäyttää debet- ja kredit-tapahtumat kirjanpidossa ja merkitä ne selvitetyiksi. Tällä tavoin voit varmistaa, että liittyvät tapahtumat on selvitetty. Voit tehdä tarvittaessa myös käänteisiä tilityksiä.
+Kirjanpidon tilitys on prosessi, jossa kirjanpidon debet- ja kredittapahtumat täsmäytetään. Debet- ja kreditsummien tilitystä käytetään kirjanpitotilin saldon täsmäytykseen saldon muodostavien yksityiskohtaisten tapahtumien kanssa.
 
-## <a name="enable-advanced-ledger-settlements"></a>Tapahtuman selvitysten lisäasetusten ottaminen käyttöön
+Selvitetyt tapahtumat voidaan jättää pois kyselyistä ja raporteista. Näin on helpompi analysoida avoimia kirjanpitotapahtumia, jotka muodostavat kirjanpitotilin saldon.
 
-Tapahtuman selvitysten lisäasetussivulla on lisää tapahtumien suodatus- ja valintatoimintoja. Ota tapahtuman selvitysten lisäasetussivu käyttöön seuraavien ohjeiden mukaisesti.
+> [!IMPORTANT] 
+> Myyntireskontran ja ostoreskontran moduuleissa on myös laskujen ja maksujen täsmäytys. Kun selvitys tapahtuu myyntireskontran ja ostoreskontran alareskontrassa, vastaavia kirjanpitokirjauksia ei täsmäytetä automaattisesti.
 
-1. Valitse **Kirjanpito** \> **Kirjanpidon asetukset** \> **Kirjanpitoparametrit**. 
-2. Ota tapahtuman selvityksen lisäasetustoiminto käyttöön valitsemalla **Tapahtuman selvitykset** -välilehdessä **Tapahtuman selvityksen lisäasetukset** -asetukseksi **Kyllä**. **Tapahtuman selvityksen lisäasetukset** -sivua käytetään, kun valitset **Tapahtuman selvitykset** **Kausittaiset tehtävät** -kohdassa. 
-3. Jokaiselle tilikartalle on annettava tililuettelo, jota käytetään tapahtuman selvityksissä. Tämän luettelon avulla voi suodattaa **Tapahtuman selvitykset** -sivulla näkyvää tapahtumaluetteloa. Valitse ensin **Tilikartta**-luettelossa tilikartta ja lisää sitten uudet tilit luetteloon valitsemalla **Uusi**.
+## <a name="ledger-settlement-features"></a>Tapahtuman selvityksen ominaisuudet
+Microsoft Dynamics 365 Finance -versiossa 10.0.21 **Ota käyttöön kirjanpidon lisäselvitysvaihtoehto** on poistettu **Kirjanpitoparametrit**-sivulta. Kirjanpidon lisäselvitys on nyt aina käytössä.
+Finance-versiossa 10.0.25 on otettu käyttöön **Tietoja kirjanpidon selvityksestä ja tilinpäätöksestä** -ominaisuus. Tämä ominaisuus muuttaa kirjanpidon tilityksen ja kirjanpidon tilinpäätöksen perustoimintoja. Ennen kuin otat tämän ominaisuuden käyttöön **Ominaisuuden hallinta** -työtilassa, katso [Tietoja kirjanpidon selvityksestä ja tilinpäätöksestä](awareness-between-ledger-settlement-year-end-close.md).
 
-## <a name="settle-transactions-by-using-the-advanced-ledger-settlements-page"></a>Tapahtumien selvittäminen tapahtuman selvitysten lisäasetussivulla
+## <a name="set-up-ledger-settlement"></a>Määritä kirjanpidon tilitys
+Päätilit, joista haluat tehdä tapahtumien selvityksen, on valittava. Nämä päätilit voidaan valita kahdella tavalla.
 
+1. Valitse **Kirjanpito** > **Kirjanpidon asetukset** > **Kirjanpitoparametrit**.
+2. Valitse **Kirjanpidon tilit** -välilehdessä tilikartat, joista haluat valita päätilit.
+3. Valitse päätilit täsmäytystä varten. Koska tilikartat ovat yleisiä, kaikilla valitun tilikartan yrityksillä on samat päätilit valittuna tapahtumien selvitystä varten.
+
+  -tai-
+
+1. Valitse **Kirjanpito** > **Kausittaiset tehtävät** > **Tapahtuman selvitykset**.
+2. Valitse **Kirjanpidon tilitystilit**.
+3. Valitse valintaikkunassa tilikartat ja päätilit, joille tilitys tehdään. Tämä valintaikkuna on pikavalinta. Kaikki tähän lisätyt päätilit näkyvät myös **Kirjanpidon parametrit** -sivulla.
+
+Samoja perusmenettelyjä voidaan käyttää päätilien poistamiseen kirjanpidon tilityksestä milloin tahansa. Päätilin poistaminen ei vaikuta aiempiin kirjanpitotilityksiin. Päätili ja tapahtumat eivät kuitenkaan enää näy **Kirjanpidon tilitys** -sivulla.
+
+## <a name="settle-transactions"></a><a name="settle-transactions"></a>Selvitä tapahtumat
 Voit selvittää kirjanpitotapahtumia seuraavien ohjeiden avulla.
 
-1. Valitse **Kirjanpito** \> **Kausittaiset tehtävät** \> **Tapahtuman selvitykset**.
+1. Valitse **Kirjanpito** > **Kausittaiset tehtävät** > **Tapahtuman selvitykset**.
 2. Määritä sivun yläosassa olevat suodattimet:
 
-    - Valitse päivämääräalue tai täytä päivämääräalue automaattisesti valitsemalla **Päivämäärävälin koodi**.
-    - Muuta kirjanpitotasoa tarpeen mukaan.
-    - Jos haluat näyttää kirjanpitotiliin ja dimensiot erikseen, valitse taloushallinnon dimensioyhdistelmä
+    - Valitse päivämääräväli. Valitse vaihtoehtoisesti päivämääräaluekoodi täyttääksesi automaattisesti päivämäärävälin. Kirjanpidon tilitys ei ole suositeltavaa, jos tapahtuma ylittää tilikaudet.
+    - Muuta kirjanpitotasoa tarpeen mukaan. Et voi selvittää tapahtumia, jotka ovat eri kirjaustasoilla.
+    - Jos haluat näyttää päätiliin ja dimensiot erikseen, valitse taloushallinnon dimensioyhdistelmä
 
-3. Valitse **Näytä tapahtumat**, jos haluat näyttää kaikki määritettyjä suodattimia vastaavat tapahtumat ja tililuettelon, jonka määritit, kun määritit tilikarttaluettelon edellisessä osassa. Jos muutat suodattimia tai dimensioyhdistelmiä, sinun on valittava uudelleen **Näytä tapahtumat**.
-4. Valitse vähintään yksi rivi, jonka selvittämistä harkitset. Sivun yläosassa olevan **Valittu summa** -kentän arvo suurenee tai pienenee valittujen rivien kokonaissumman mukaan.
+3. Valitse **Näytä tapahtumat**, jos haluat näyttää kaikki määritettyjä suodattimia vastaavat tapahtumat ja tililuettelon, jonka määritit, kun määritit tilikarttaluettelon edellisessä osassa.
+
+    - Jos muutat suodattimia tai dimensioyhdistelmiä, sinun on valittava uudelleen **Näytä tapahtumat**.
+    - Voit suodattaa tapahtumat yksittäiselle päätilille käyttämällä **Kirjanpitotili**-kentän suodatinta. Ei ole suositeltavaa, että eri päätileille kirjattavat tapahtumat tilitetään.
+
+4. Valitse rivit tilitykseen. Sivun yläosassa olevan **Valittu summa** -kentän arvo suurenee tai pienenee valittujen rivien kokonaissumman mukaan.
 5. Kun olet valinnut tapahtumat, valitse **Merkitse valitut**. Kunkin valitun tapahtuman **Merkitty**-sarakkeeseen tulee valintamerkki. Lisäksi ruudukon yläpuolella olevan **Merkitty summa** -kentän arvo suurenee tai pienenee merkittyjen rivien kokonaissumman mukaan.
-6. Kun **Merkitty summa** -arvo on **0** (nolla), valitse **Suorita merkityt tapahtumat**. Merkittyjen tapahtumien tilaksi päivitetään **Selvitetty**.
+6. Kun **Merkitty summa** -kentän arvo on **0** (nolla), valitse **Selvitä merkityt tapahtumat**. Merkittyjen tapahtumien tilaksi päivitetään **Selvitetty**.
+
+    > [!IMPORTANT]
+    > Kaikki aktiiviselle yritykselle selvitettäviksi merkityt tapahtumat selvitetään, vaikka ne eivät näkyisi kirjanpidon tilityssivulla suodattimen vuoksi.
 
 ## <a name="make-transactions-easier-to-find"></a>Tapahtumien löytämisen helpottaminen
-
 **Tapahtuman selvitykset** -sivulla on toimintoja, jotka helpottavat selvitettävän tapahtuman näkemistä.
 
-- **Poista valinta** -painike poistaa valintamerkin kaikkien valittujen rivien **Merkitty**-kentästä.
-- **Merkitty**-suodattimella voi suodataa tapahtumia sen perusteella, onko tapahtumien **Merkitty**-kenttä valittu vai valinta tyhjennetty.
-- **Tila**-suodattimella voi suodattaa tapahtumia sen perusteella, onko tapahtuman tila **Selvitetty** vai **Selvittämätön**.
-- **Järjestä absoluuttisen summan mukaan** -painikkeella summat voi lajitella absoluuttisen arvon mukaan, joten voit ryhmittää yhteen debetit ja kreditit, joilla on sama summa.
+- **Merkitty**-suodattimella voi suodataa tapahtumia sen perusteella, onko tapahtumien **Merkitty**-valintaruutu valittu.
+- Käytä **Tila**-suodatinta, kun haluat suodattaa tapahtumia niiden tilan mukaan.
+- Lajittele summat absoluuttisen summan mukaan valitsemalla **Lajittelu absoluuttisen arvon mukaan**. Näin voit ryhmitellä debet- ja kredit-merkinnät, joissa on sama summa.
 
 ## <a name="reverse-a-settlement"></a>Käänteinen tilitys
-
 Voit tehdä tarvittaessa käänteisen tilityksen.
 
-1. Tuo etsimäsi tapahtumat näkyviin suorittamalla kohdan Tapahtumien selvittäminen tapahtuman selvitysten lisäasetussivulla vaiheet 1–3.
+1. Voit tarkastella haluamiasi tapahtumia noudattamalla [Tilitä tapahtumat](#settle-transactions) -osan vaiheita 1–3.
 2. Valitse **Tila**-suodattimessa **Selvitetty**.
-3. Valitse vähintään yksi rivi, jonka käänteistä tilitystä harkitset. Sivun yläosassa olevan **Valittu summa** -kentän arvo suurenee tai pienenee valittujen rivien kokonaissumman mukaan.
-4. Kun olet valinnut tapahtumat, valitse **Merkitse valitut**. Kunkin valitun tapahtuman **Merkitty**-sarakkeeseen tulee valintamerkki. Lisäksi sivun yläosassa olevan **Merkitty summa** -kentän arvo suurenee tai pienenee merkittyjen rivien kokonaissumman mukaan.
-5. Kun **Merkitty summa** -arvo on **0** (nolla), valitse **Peru merkityt tapahtumat**. Merkittyjen tapahtumien tilaksi päivitetään **Selvittämätön**.
+3. Valitse peruutettavat rivit.
+4. Valitse **Peruuta merkityt tapahtumat**. Kaikkien niiden tapahtumien tilaksi päivitetään **Ei selvitetty**, joiden tilityksen tunnus on sama.
 
-## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Tapahtumaluetteloon sisältyvän tililuettelon päivittäminen
+    > [!IMPORTANT]
+    > Kaikki tapahtumat, joilla on sama tilitystunnus, palautetaan, vaikka niitä ei olisi merkitty. Esimerkiksi neljä riviä on merkitty ja selvitetty. Kaikilla neljällä rivillä on sama tilitystunnus. Jos merkitset jo jonkin näistä neljästä rivistä ja valitset sitten **Palauta merkityt tapahtumat**, kaikki neljä riviä palautetaan.
 
-Valitse **Tapahtumien selvityksen tilit**. Voit muokata avautuvassa valintaikkunassa tapahtumaluetteloon sisältyviä tilejä. Lisää uudet tilit luetteloon valitsemalla **Uusi**. Tämän luettelon avulla voi suodattaa **Tapahtuman selvitykset** -sivulla näkyvää tapahtumaluetteloa.
+
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

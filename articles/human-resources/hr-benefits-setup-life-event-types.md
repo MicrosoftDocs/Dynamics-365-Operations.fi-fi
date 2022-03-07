@@ -1,38 +1,35 @@
 ---
 title: Elämäntapahtumatyyppien määrittäminen
-description: Microsoft Dynamics 365 Human Resources käyttää elinkaaritapahtumatyyppejä sellaisten tapahtumien määrittämiseen, joissa työntekijän etujen rekisteröiminen päivitetään.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+description: Microsoft Dynamics 365 Human Resources käyttää elinkaaritapahtumatyyppejä määrittämään työntekijän etujen rekisteröimisen päivittämistapahtumat.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aab35d40af43caff7010998ddce51350584228a1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418314"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071490"
 ---
 # <a name="configure-life-event-types"></a>Elämäntapahtumatyyppien määrittäminen
 
-Microsoft Dynamics 365 Human Resources käyttää elinkaaritapahtumatyyppejä sellaisten tapahtumien määrittämiseen, joissa työntekijän etujen rekisteröiminen päivitetään. Esimerkiksi avioliiton solmiminen tai lapsen saaminen. Kukin elinkaaritapahtumatyypin tunnus voidaan liittää vain yhteen elinkaaritapahtumatyyppiin. Jos esimerkiksi luot elinkaaritapahtuman tunnuksen nimeltä "osoitteenmuutos", joka liittyy elinkaaritapahtumatyyppiin työntekijän osoitteenmuutos, et voi luoda toista tunnusta, jonka nimi on työntekijän osoitteenmuutos ja liittää sitä elinkaaritapahtumatyyppiin työntekijän osoitteenmuutos. 
 
-Kun olet luonut elinkaaritapahtumatyypit, sinun on liitettävä ne suunnitelmatyyppeihin. Lisätietoja on kohdassa [Suunnitelmatyyppien luominen](hr-benefits-setup-plan-types.md).
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
-   > [!NOTE]
-   > Kun olet luonut elinkaaritapahtuman, sinun on liitettävä se suunnitelmatyyppiin. Lisätietoja on kohdassa [Suunnitelmatyyppien luominen](hr-benefits-setup-life-event-types.md).
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources käyttää **elinkaaritapahtumatyyppejä** sellaisten tapahtumien määrittämiseen, joissa työntekijän etujen rekisteröiminen päivitetään. Esimerkiksi avioliiton solmiminen tai lapsen saaminen. Kukin elinkaaritapahtumatyypin tunnus voidaan liittää vain yhteen elinkaaritapahtumatyyppiin. Jos esimerkiksi luot **elinkaaritapahtuman tunnuksen** nimeltä **osoitteenmuutos**, joka liittyy elinkaaritapahtumatyyppiin **työntekijän osoitteenmuutos**, et voi luoda toista tunnusta, jonka nimi on **työntekijän osoitteenmuutos** ja liittää sitä elinkaaritapahtumatyyppiin **työntekijän osoitteenmuutos**. Jos elinkaaritapahtumatyyppiä ei ole liitetty suunnitelmatyyppiin, elinkaaritapahtumatyyppi ei käynnistä elinkaaritapahtumaa. Lisätietoja on kohdassa [Suunnitelmatyyppien luominen](hr-benefits-setup-plan-types.md).
 
 ## <a name="create-a-life-event-type"></a>Elinkaaritapahtumatyypin luominen
 
@@ -52,7 +49,7 @@ Kun olet luonut elinkaaritapahtumatyypit, sinun on liitettävä ne suunnitelmaty
 
 ## <a name="view-attached-plans"></a>Tarkastele liitettyjä suunnitelmia
 
-Voit tarkastella valittuun elinkaaritapahtumatyyppiin liitettyjen suunnitelmien luetteloa. Elinkaaritapahtumat liitetään suunnitelmatyyppiin, ja suunnitelmatyypit liitetään suunnitelmaan. 
+Voit tarkastella valittuun **elinkaaritapahtumatyyppiin** liitettyjen suunnitelmien luetteloa. Elinkaaritapahtumat liitetään suunnitelmatyyppiin, ja suunnitelmatyypit liitetään suunnitelmaan.
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Elinkaaritapahtumatyypit**.
 
@@ -66,25 +63,29 @@ Voit valita seuraavista elinkaaritapahtumista, kun luot elinkaaritapahtumatyypin
 
 | Elinkaaritapahtuma | Toimipaikka | Käynnistin |
 | --- | --- | --- |
-| **Siviilisäädyn muutos** | Työntekijä > profiili > henkilökohtaiset tiedot > siviilisääty| Siviilisäädyn muutos |
-| **Työllisyystilanteen muutos** | <ul><li>Työntekijä > Työsuhde</li><li>Työsuhdehistoriasivu</li></ul> | Työsuhteen tilan muutos |
-| **Työntekijän osoitteen muutos** | <ul><li>Työntekijä > Profiili > Osoitteet </li><li>Työntekijä > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Osoite</li></ul> Lisätty, muokattu tai poistettu osoite |
-| **Huollettavan muutos** | <ul><li>Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Lisää tai poista riippuvainen</li><li>Työntekijän itsepalvelu</li></ul> | Lisätty tai poistettu riippuvainen. Henkilökohtaisen yhteyshenkilön suhteen on oltava lapsi, puoliso, avopuoliso tai entinen puoliso. **Voimassaolon alkamispäivämäärän** päivittäminen käynnistää elinkaaritapahtuman. Jos et päivitä tätä päivämäärää, mitään elinkaaritapahtumaa ei laukaista. |
-| **Syntymä tai adoptio (huollettava)** | <ul><li>Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot</li><li>Työntekijän itsepalvelu</li></ul> | **Adoptiopäivämäärä**-kenttä täytetään. Lapsen syntymäaika on pakollinen. |
+| **Siviilisäädyn muutos** | **Työntekijä > profiili > henkilökohtaiset tiedot > siviilisääty**| Siviilisäädyn muutos |
+| **Työllisyystilanteen muutos** |**Työntekijä > Työsuhde > Työsuhdehistoriasivu** | Jos työntekijällä on aiemmin luodut työsuhdetiedot, uusien työsuhdetietojen luominen eri työsuhteen tilalla käynnistää elinkaaritapahtuman.  Myös aiemmin luotujen työsuhdetietojen päivittäminen eri työsuhteen tilalla käynnistää elinkaaritapahtuman.  |
+| **Työntekijän osoitteen muutos** |**Työntekijä > Profiili > Osoitteet**</li><li>**Työntekijä > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Osoite**</li></ul> | Osoitteen muutos. Osoitteen on oltava **ensisijainen**, jotta se käynnistää elinkaaritapahtuman. |
+| **Huollettavan muutos** |<br><ul><li>**Työntekijä > Profiili > Henkilökohtaiset yhteystiedot > Henkilökohtaiset yhteyshenkilöt**/li><li>**Työntekijän itsepalvelu**</li></ul> | Lisää henkilökohtainen yhteyshenkilö määrittäen hänet riippuvaisena ja määrittäen **Voimassaolo alkaa** -arvon. Päivitä henkilökohtaisen yhteyshenkilön riippuvaiset **Voimassaolo alkaa** -tiedot. Henkilökohtaisen yhteyshenkilön suhteen on oltava lapsi, puoliso, avopuoliso tai entinen puoliso.  |
+| **Syntymä tai adoptio (huollettava)** |<br><ul><li>**Työntekijä > Profiili > Henkilökohtaiset yhteystiedot > Henkilökohtaiset yhteyshenkilöt**</li><li>**Työntekijän itsepalvelu > Muokkaa henkilökohtaisia tietoja > Henkilökohtaiset yhteyshenkilöt**</li></ul>| **Syntymäpäivämäärä** tai **Adoptiopäivämäärä** lisätään tai päivitetään. Lapsen **Syntymäpäivämäärä** on pakollinen. |
 | **Kattavuuden menetys (puoliso/asuinkumppani)** | Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Kattavuuden menetys | Henkilökohtaista kontaktia varten valitun **Kattavuuden menetys** sekä **Voimaantulopäivämäärä** |
-| Asuinkumppanin työsuhteen muutos | Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Toimessa. | <ul><li>Huollettavan tietue luotu ja **Henkilökohtainen yhteyshenkilö** -ruutu = Kyllä</li><li>**Henkilökohtainen yhteyshenkilö** -ruutu muutettu (Kyllä tai Ei)</li></ul> |
-| **Virkavapaa (puoliso/asuinkumppani)** | Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Virkavapaa | <ul><li>Huollettavien tiedot -tietue on luotu ja **EhrLOAEffectiveDate** täytetty</li><li>**personPrivateDetails.EhrIsLOA** on muutettu (Kyllä tai Ei)</li><li>**personPrivateDetails.EhrLOAEffectiveDate** on muutettu</li></ul> |
-| **Muutos kattavuudessa (toimi)** | <ul><li>Työntekijä > Toimimääritys > Työntekijöiden toimimääritykset</li><li>Toimet > Toimet</li></ul> | <ul><li>Muuta työntekijän toimen määritystietueissa olevaa paikkaa</li><li>Työntekijän toimen määrityksen muutos</li></ul> |
-| **Medicare (työntekijä/huollettava)** | Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Medicaren voimaantulopäivä | Ei käynnisty automaattisesti, kun henkilökohtainen yhteyshenkilö syöttää voimaantulopäivän. |
-| **Tuomioistuimen määräämä tuki** | Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettava > Tuomioistuimen määräämä tuki (QMSCO/QDRO) ja voimaantulopäivät | Ei aiheuta automaattisia päivityksiä. Se ei vaikuta tukikelpoisuuteen. Se tallentaa elinkaaritapahtuman. |
-| **Kuollut** | Työntekijä > profiili > henkilökohtaiset tiedot > Kuolinpäivämäärä | Kuolinpäivämäärä syötetään |
-| **Todiste vakuutuksesta** | <ul><li>Työntekijä > Työntekijä > Versiot > Työhistoria > Päivämäärän hallinta > Etutiedot</li><li> Työntekijä > Työsuhde > Etuustiedot > Vahvistuspäivämäärä</li></ul> | <ul><li>Työntekijä syöttää vahvistuspäivämäärän</li><li>Työntekijä määrittää EvidenceOfInsurability-kentän arvoksi **Kyllä**</li></ul> |
-| **Edunsaaja** | Työntekijä > Profiili > Henkilökohtaiset yhteystiedot > Henkilökohtaiset yhteyshenkilöt | Henkilökohtainen yhteyshenkilö lisätään ja **Edunsaaja**-ruutu sekä **Voimaantulopäivämäärä** täytetään. Henkilökohtaisen yhteyshenkilön tyypin on oltava **Lapsi**, **Puoliso**, **DomesticPartner**, **Sisarus**, **FamilyContact**, **OtherContact**, **Vanhempi**, **BeneficiaryEstate**, **BeneficiaryOrg** tai **BeneficiaryTrust**. |
-| **Työntekijä - Medicare** | Työntekijä > Työntekijä > Versiot > Työhistoria > Päivämäärän hallinta > Etutiedot | <ul><li>**EhrMedicareEligibilityDate** on muutettu</li><li>**MedicareEligibile**:n arvoksi on asetettu **Kyllä**</li></ul> |
-| **Syntymäpäivä** | Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Syntymäpäivä | Syntymäaika lisätään tai päivitetään (ei elinkaaritapahtuman muutoksen käsittelyn jälkeen). Esimerkki: Jos lapsen **Henkilökohtaisen yhteyshenkilön kelpoisuusvaihtoehdot** -kohtaan on asetettu ikä: 26, kohdassa Määritys > Etuudet > Henkilökohtaisten yhteystietojen kelpoisuusasetukset ja jos HR-henkilöstö suorittaa elinkaaritapahtuman muutoksen käsittelyn joka päivä sen jälkeen, kun huollettava täyttää 26, näyttöön tulee sanoma, jossa kerrotaan, että huollettava ei ole enää oikeutettu kattavuuteen. |
-| **Työntekijän kelpoisuusmuutos (ei koske vain Yhdysvaltoja)** | <ul><li>Työntekijä > Työsuhde</li><li>Työntekijä > Työntekijä > Versiot > Työhistoria</li></ul> | <ul><li>Työntekijän tyyppi, työsuhdeluokka tai viisi käyttäjän määriteltävissä olevaa kelpoisuuskenttää muuttuvat</li><li>**HcmEmploymentDetail.EhrEmploymentType** -muutokset ( käsitellään vain *muuttuneiden* työtietojen tietueissa, joita ei käsitellä *Uusissa* työtietueissa, kuten uudelleentyöhönotto ja irtisanominen)</li></ul> |
-| **Uusi etukelpoisuuden ohitus (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Edut > Oikeutussäännön ohitus | Elinkaaritapahtuman käsittelyn käyttäminen | EhrBenefitEligibilityRuleOverride.ValidFrom |
-| **Etukelpoisuussäännön ohituksen muutos (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Edut > Oikeutussäännön ohitus | Elinkaaritapahtuman käsittelyn käyttäminen (nappaa vain muutokset **ValidFrom**- ja **ValidTo** -kentille kelpoisuussäännön ohitustilassa) |
-| **Etukelpoisuuden ohituksen päättyminen (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Edut > Oikeutussäännön ohitus | Elinkaaritapahtuman muutoksen käsittelyn käyttäminen. Jos esimerkiksi muokkaat suunnitelman oikeutussääntöä, jonka mukaan vanhentumispäivä on tänään klo 5:00 PM, milloin tahansa sen jälkeen, kun 5:00 PM tai seuraavat päivät on kulunut, ja suoritat sitten elinkaaritapahtuman muutoksen käsittelyn, näyttöön tulee sanoma, jonka mukaan oikeutussäännön ohitus on vanhentunut. |
-| **Uusi etuussuunnitelma (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Uusi | <ul><li>Kelpoisuusvaihtoehdot lisätään nykyiseen suunnitelmaan</li><li>Uusi suunnitelma, johon on liitetty kelpoisuusehtoja, lisätään</li></ul></br></br>Henkilöstöhallinnon henkilökunnan tulisi suorittaa tässä tapauksessa elinkaaritapahtuman kelpoisuuden käsittely. |
-| **Etukelpoisuussäännön muutos (ei koske vain Yhdysvaltoja)** | Henkilöstöhallinnon kehittyneet > Edut > Säännöt/vaihtoehdot > Kelpoisuussäännöt | Elinkaaritapahtuman kelpoisuuskäsittelyn käyttäminen. Lokiin kirjataan , kun **EhrBenefitEligibilityRule**-tietueissa on muutettu seuraavat arvot: **UseEmplCategory**, **UseEmplStatus** tai **UseEmplType**. Päivittää vain ne elinkaaritapahtuman tapahtumat, jotka ovat jo muuttuneessa säännössä tai kelpoisuusehdoissa. |
+| Asuinkumppanin työsuhteen muutos | **Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Toimessa** | Henkilökohtaisen yhteyshenkilön luominen ja **Toimessa**-asetuksen määrittäminen arvoon **Kyllä**. Henkilökohtaisen yhteyshenkilön päivittäminen ja **Toimessa**-arvon muuttaminen.  |
+| **Virkavapaa (puoliso/asuinkumppani)** | **Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Virkavapaa** | Luotu henkilökohtainen yhteyshenkilö **Virkavapaan voimaantulopäivä** on määritetty. Henkilökohtaisen yhteyshenkilön **Virkavapaa** on päivitetty. Henkilökohtaisen yhteyshenkilön **Virkavapaan voimaantulopäivä** on päivitetty.  |
+| **Muutos kattavuudessa (toimi)** |<br><ul><li>**Työntekijä > Toimimääritys > Työntekijöiden toimimääritykset**</li><li>**Toimet > Toimet**</li></ul>| Muuta työntekijän toimen määritystietueissa olevaa paikkaa. Työntekijän toimen määrityksen muutos. |
+| **Muutos kattavuudessa (palkka)** |<br><ul><li>**Työntekijä > Kompensaatio > Kiinteä suunnitelma**</li><li>**Työntekijä > Henkilökohtaiset tiedot > Etuuksien vuosipalkka**</li></ul>| Jos **Etujen hallinta > Human Resourcesin jaetut parametrit > Edut > Etuuksien vuosipalkka** ei ole käytössä, **Työntekijä > Kompensaatio > Kiinteä suunnitelma** päivittäminen luo elinkaaritapahtuman. Jos **Etujen hallinta > Human Resourcesin jaetut parametrit > Edut > Etuuksien vuosipalkka** on käytössä, **Työntekijä > Henkilökohtaiset tiedot > Etuuksien vuosipalkka** päivittäminen luo elinkaaritapahtuman. |
+| **Medicare (työntekijä/huollettava)** | **Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettavan tiedot > Medicaren voimaantulopäivä** | Henkilökohtaisen yhteyshenkilön **Medicaren voimaantulopäivän** lisääminen tai päivittäminen luo tämän elinkaaritapahtuman. |
+| **Tuomioistuimen määräämä tuki** | **Työntekijä > Profiili > Henkilökohtaiset tiedot > Henkilökohtaiset yhteystiedot > Huollettava > Tuomioistuimen määräämä tuki** (QMSCO/QDRO) ja voimaantulopäivät | Henkilökohtaisen yhteyshenkilön luomisen yhteydessä luodaan elinkaaritapahtuma, jos **Tuomioistuimen määräämä tuki** -kohdan arvona on **Kyllä**. **Tuomioistuimen määräämä tuki**- tai **Tuomioistuimen määräämä vanhentumispäivä** -kohtien päivittäminen käynnistää myös elinkaaritapahtuman. |
+| **Kuollut** | **Työntekijä > profiili > henkilökohtaiset tiedot > Kuolinpäivämäärä** | **Kuolinpäivämäärä** annetaan tai päivitetään. |
+| **Todiste vakuutuksesta** | **Työntekijä > Työntekijä > Versiot > Työhistoria > Päivämäärän hallinta > Etutiedot** | **Todiste vakuutuskelpoisuudesta** -kohdan arvoksi asetetaan **Kyllä**. **Todiste vakuutuskelpoisuudesta -tarkistuspäivämäärä** määritetään. |
+| **Edunsaaja** | **Työntekijä > Profiili > Henkilökohtaiset yhteystiedot > Henkilökohtaiset yhteyshenkilöt** | Henkilökohtainen yhteyshenkilö lisätään ja **Edunsaaja**- ja **Voimaantulopäivämäärä**-kentät täytetään. Henkilökohtaisen yhteyshenkilön tyypin on oltava **Lapsi**, **Puoliso**, **DomesticPartner**, **Sisarus**, **FamilyContact**, **OtherContact** tai **Vanhempi**. |
+| **Työntekijä - Medicare** | **Työntekijä > Työntekijä > Versiot > Työhistoria > Päivämäärän hallinta > Etutiedot** | **Medicare-kelpoisuus**-kohdan arvona on **Kyllä**. **Medicare-kelpoisuuden päivämäärää** on muutettu. |
+| **Syntymäpäivä** | **Etujen hallinta > Elinkaaritapahtuman muutoksen käsittely** | Nämä elinkaaritapahtumat luodaan **Elinkaaritapahtuman muutoksen käsittelystä**. Prosessi analysoi valitun kauden ja yrityksen sekä etsii niihin liittyviä työntekijöitä. Se laskee edellisen syntymäpäivän ja luo syntymäpäivän elinkaaritapahtuman, jos sitä ei ole jo luotu. |
+| **Työntekijän kelpoisuusmuutos (ei koske vain Yhdysvaltoja)** |<br><ul><li>**Työntekijä > Työsuhde**</li><li>**Työntekijä > Työntekijä > Versiot > Työhistoria**</li></ul>| Luo elinkaaritapahtuman, kun:<br><ul><li>Luodaan uusi työsuhde ja myös edellinen työsuhde on olemassa ja työntekijätyyppi muuttuu.</li><li>Luodaan uudet työsuhdetiedot ja myös edelliset työsuhdetiedot ovat olemassa ja työsuhdetyyppi tai työsuhdeluokka muuttuu.</li><li>Työsuhdetietueen päivitys ja eri työntekijätyyppi on määritetty.</li><li>Työsuhdetietueen päivitys ja eri työsuhdetyyppi tai -luokka on määritetty.</li></ul> |
+| **Uusi etukelpoisuuden ohitus (ei koske vain Yhdysvaltoja)** | **Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Edut > Oikeutussäännön ohitus** | Elinkaaritapahtuman käsittelyn käyttäminen<br>Uuden etusuunnitelman kelpoisuuden ohituksen luominen työntekijälle aiheuttaa tämän elinkaaritapahtuman.<br>BenefitEligibilityRuleOverride.ValidFrom. |
+| **Etukelpoisuussäännön ohituksen muutos (ei koske vain Yhdysvaltoja)** | **Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Edut > Oikeutussäännön ohitus** | **Voimassaolo alkaa**- tai **Voimassaolo päättyy** -arvojen päivittäminen etusuunnitelman kelpoisuuden ohituksessa käynnistää elinkaaritapahtuman. |
+| **Etukelpoisuuden ohituksen päättyminen (ei koske vain Yhdysvaltoja)** | Etujen hallinta > Elinkaaritapahtuman muutoksen käsittely  | Nämä elinkaaritapahtumat luodaan **Elinkaaritapahtuman muutoksen käsittelystä**. Prosessi analysoi valitun kauden ja yrityksen sekä etsii niihin liittyviä etusuunnitelman kelpoisuuden ohituksia. Se luo elinkaaritapahtumia, jos ohitukset ovat vanhentuneet. |
+| **Uusi etuussuunnitelma (ei koske vain Yhdysvaltoja)** | **Henkilöstöhallinnon kehittyneet > Edut > Suunnitelmat > Uusi** | Kelpoisuusvaihtoehdot lisätään nykyiseen suunnitelmaan. Uusi suunnitelma, johon on liitetty kelpoisuusehtoja, lisätään.</br></br>Henkilöstöhallinnon henkilökunnan tulisi suorittaa tässä tapauksessa elinkaaritapahtuman kelpoisuuden käsittely. |
+| **Etukelpoisuussäännön muutos (ei koske vain Yhdysvaltoja)** | **Etujen hallinta > Kelpoisuussäännöt** | Elinkaaritapahtuman kelpoisuuskäsittelyn käyttäminen. Lokiin kirjataan , kun **BenefitEligibilityRule**-tietueissa on muutettu seuraavat arvot: **UseEmplCategory**, **UseEmplStatus** tai **UseEmplType**. Päivittää vain ne elinkaaritapahtuman tapahtumat, jotka ovat jo muuttuneessa säännössä tai kelpoisuusehdoissa. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

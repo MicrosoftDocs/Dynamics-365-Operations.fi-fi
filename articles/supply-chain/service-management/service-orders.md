@@ -1,10 +1,12 @@
 ---
 title: Huoltotilaukset
-description: Tässä aiheessa on yhteenveto huoltotilausten käyttämisestä.
-author: kamaybac
+description: Huoltotilaus edustaa huoltoteknikon käyntiä asiakkaan toimipaikassa määritettynä päivänä.
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -15,16 +17,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 74e9825dbd4ebe05b2efb590f491b3b54e68ec5a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566116"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010469"
 ---
-# <a name="service-orders"></a>Huoltotilaukset
+# <a name="service-orders"></a>Huoltotilaukset   
 
 [!include [banner](../includes/banner.md)]
+
 
 Huoltotilaus edustaa huoltoteknikon käyntiä asiakkaan toimipaikassa määritettynä päivänä. Kukin huoltotilaus koostuu yhdestä tai useasta huoltotilausrivistä. Huoltotilausrivit edustavat huoltoteknikon käyttämiä työtunteja sekä niihin liittyviä nimikkeitä, kuluja ja maksuja.
 
@@ -38,19 +41,19 @@ Huoltotilauksia voi luoda myös erikseen liittämättä niitä huoltosopimukseen
 
 
 > [!NOTE]
-> Jos halutaan luoda huoltotilauksia, joita ei ole liitetty huoltosopimukseen, **Salli ilman huoltosopimusta** -valintaruutu on valittava **Huollon hallinnan parametrit** -sivulla.
+> <P>Luodaksesi huoltotilauksia, joita ei ole liitetty huoltosopimukseen, sinun on valittava <STRONG>Salli ilman huoltosopimusta</STRONG> -valintaruuti <STRONG>Huoltohallinnan parametrit</STRONG> -lomakkeessa.</P>
 
-### <a name="scenario"></a>Skenaario
+**Skenaario**
 
 Seuraavassa kuvataan toinen tilanne, jossa kannattaa luoda huoltotilaus, jota ei ole liitetty huoltosopimukseen.
 
-Yrityksen lähettäjä saa puhelun, jossa kerrotaan hissin tarvitsevan välitöntä huoltoa. Huoltosopimuksen ja projektin laatimiseen ei ole aikaa. Tällöin lähettäjä luo huoltotilauksen suoraan **Huoltotilaukset**-sivulla, liittää huoltotilauksen aiemmin luotuun projektiin ja luo huoltotilausrivit. Lähettäjä luo myös tehtävän tai kohteen suhteen aiemmin luotuun huoltotilaukseen ja kirjaa näin työt, jotka eivät liity huoltosopimukseen. Lisätietoja on kohdissa [Huoltotilausten luominen manuaalisesti](create-service-orders-manually.md) ja [Huoltotehtävän suhteiden luominen](create-service-task-relations.md).
+Yrityksen lähettäjä saa puhelun, jossa kerrotaan hissin tarvitsevan välitöntä huoltoa. Huoltosopimuksen ja projektin laatimiseen ei ole aikaa. Tällöin lähettäjä luo huoltotilauksen suoraan **Huoltotilaukset**-lomakkeessa, liittää huoltotilauksen olemassa olevaan projektiin ja luo huoltotilausrivit. Lähettäjä luo myös tehtävän tai kohteen suhteen aiemmin luotuun huoltotilaukseen ja kirjaa näin työt, jotka eivät liity huoltosopimukseen. Lisätietoja on kohdissa [Huoltotilausten luominen manuaalisesti](create-service-orders-manually.md) ja [Huoltotehtävän suhteiden luominen](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Huoltotilauksen tilanteen seuraaminen
 
 Huoltotilauksille voi määrittää vaihejärjestelmän ja syykoodit, joilla voidaan seurata huoltotilausten etenemistä yrityksen eri työryhmissä ja työprosesseissa. Voit määrittää kullekin vaiheelle sallitut toiminnot. Lisätietoja on kohdassa [Syykoodien luominen](create-reason-codes.md).
 
-### <a name="example"></a>Esimerkki
+**Esimerkki**
 
 Lähettäjä hyväksyy huoltotilauksen. Lähettäjä päivittää huoltotilauksen vaiheen ja määrittää syykoodin, joka ilmaisee, että huoltotilaus on vapautettu huoltoteknikolle. Teknikko siirtyy asiakkaan toimipisteeseen ja suorittaa huollon.
 
@@ -58,7 +61,7 @@ Lähettäjä hyväksyy huoltotilauksen. Lähettäjä päivittää huoltotilaukse
 
 Voit määrittää varastonimikkeet, joita tarvitaan huoltotilauksissa. Huoltotilaus on kuitenkin liitettävä projektiin. Palvelutilausten nimikevaatimukset käsitellään projektin kautta. 
 
-### <a name="example"></a>Esimerkki
+**Esimerkki**
 
 Lähettäjä käsittelee huoltosopimuksesta luodut huoltotilaukset. Ensimmäisestä huoltotilauksesta lähettäjä havaitsee, että huoltoteknikko tarvitsee tärkeän varaosan, jota ei ole käytettävissä olevassa varastossa. Tällöin lähettäjä luo varaosan nimiketarpeen suoraan huoltotilauksesta.
 
@@ -72,7 +75,7 @@ Yksi tammikuussa luoduista huoltotilauksista on tarpeeton, sillä työ on peruut
 
 ## <a name="post-from-projects"></a>Kirjaaminen projekteista
 
-Lähettäjä haluaa kirjata kaikki tiettyyn projektiin liittyvät huoltotilaukset kunkin viikon lopussa. Siksi lähettäjä etsii projektin **Projektit**-sivulla ja kirjaa valmistuneet huoltotilaukset. Lisätietoja on kohdassa [Huoltotilausten kirjaaminen (luokkalomake)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+Lähettäjä haluaa kirjata kaikki tiettyyn projektiin liittyvät huoltotilaukset kunkin viikon lopussa. Siksi lähettäjä etsii projektin **Projektit**-lomakkeesta ja kirjaa huoltotilaukset, jotka on suoritettu. Lisätietoja on kohdassa [Huoltotilausten kirjaaminen (luokkalomake)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Poista huoltotilaukset
 
@@ -85,6 +88,3 @@ Vuoden toisen puolikkaan aikana asiakas päättää, että huoltokäyntejä on l
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

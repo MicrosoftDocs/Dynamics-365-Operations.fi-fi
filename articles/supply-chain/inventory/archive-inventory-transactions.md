@@ -1,24 +1,25 @@
 ---
 title: Varastotapahtumien arkistointi
 description: Tässä aiheessa kuvataan, miten voit arkistoida varastotapahtumien tietoja järjestelmän suorituskyvyn parantamiseksi.
-author: yufeihuang
+author: sherry-zheng
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTransArchiveProcessForm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99a7b61d9bd5e1e2bd8d2c7df34882646bb51270
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: 0526eb42a886817d50e1ecfd252a6e971875ba92
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567460"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956055"
 ---
 # <a name="archive-inventory-transactions"></a>Varastotapahtumien arkistointi
 
@@ -64,7 +65,7 @@ Arkistoi varastotapahtumia noudattamalla seuraavia ohjeita.
 
     **Varastotapahtumien arkisto** -sivu avautuu ja näyttää arkistoitujen prosessitietueiden luettelon.
 
-    ![Varastotapahtumien arkisto -sivu.](media/archive-inventory-empty.png "Varastotapahtumien arkisto -sivu")
+    ![Varastotapahtumien arkisto -sivu](media/archive-inventory-empty.png "Varastotapahtumien arkisto -sivu")
 
 1. Valitse toimintoruudusta **Varastotapahtumien arkisto** luodaksesi varastotapahtumien arkiston.
 1. Määritä **Varastotapahtumien arkisto** -valintaikkunan **Parametrit**-pikavälilehdessä seuraavat kentät:
@@ -72,7 +73,7 @@ Arkistoi varastotapahtumia noudattamalla seuraavia ohjeita.
     - **Suljetun kirjanpitokauden alkamispäivä** – Valitse aikaisin tapahtumapäivä, joka sisällytetään arkistoon.
     - **Suljetun kirjanpitokauden päättymispäivä** – Valitse myöhäisin tapahtumapäivä, joka sisällytetään arkistoon.
 
-    ![Varastotapahtumien arkisto -valintaikkuna.](media/archive-inventory-dates.png "Varastotapahtumien arkisto -valintaikkuna")
+    ![Varastotapahtumien arkisto -valintaikkuna](media/archive-inventory-dates.png "Varastotapahtumien arkisto -valintaikkuna")
 
     > [!NOTE]
     > Voit valita vain kausia, jotka täyttävät [edellytykset](#prerequisites).
@@ -87,7 +88,7 @@ Arkistoi varastotapahtumia noudattamalla seuraavia ohjeita.
 
 **Varastotapahtumien arkisto** -sivu näyttää koko arkistointihistoriasi. Ruudukon jokaisella rivillä näytetään tietoja, kuten arkiston luontipäivä, arkiston luonut käyttäjä ja arkiston tila.
 
-![Arkistointihistoria Varastotapahtumien arkisto -sivulla.](media/archive-inventory-full.png "Arkistointihistoria Varastotapahtumien arkisto -sivulla")
+![Arkistointihistoria Varastotapahtumien arkisto -sivulla](media/archive-inventory-full.png "Arkistointihistoria Varastotapahtumien arkisto -sivulla")
 
 Valitse sivun ylälaidan avattavasta luettelosta jokin seuraavista arvoista suodattaaksesi ruudukossa näytettäviä arkistoja:
 
@@ -109,7 +110,7 @@ Ruudukon yllä oleva työkalurivi sisältää seuraavat painikkeet, joita voit k
 
 - **Arkistoidut tapahtumat** – Katso valitun arkiston kaikki tiedot. **Arkistoidut tapahtumat** -sivu näyttää arkiston kaikki tapahtumat.
 
-    ![Arkistoidut tapahtumat -sivu.](media/archive-inventory-transactions.png "Arkistoidut tapahtumat -sivu")
+    ![Arkistoidut tapahtumat -sivu](media/archive-inventory-transactions.png "Arkistoidut tapahtumat -sivu")
 
     Jos haluat lisätietoja tietystä **Arkistoidut tapahtumat** -sivulla olevasta tapahtumasta, valitse se ruudukosta ja valitse sitten toimintoruudusta **Arkistoidun tapahtuman tiedot**. **Arkistoidun tapahtumat tiedot** -sivulla näytetään esimerkiksi kirjanpidon kirjaus, asiaan liittyvät alareskontran viitteet ja taloushallinnon dimensiot.
 

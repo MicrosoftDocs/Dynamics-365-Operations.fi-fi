@@ -2,32 +2,31 @@
 title: Käyttöoikeusomaisuuserän poiston tallentaminen (esiversio)
 description: Tässä ohjeaiheessa kerrotaan, miten kirjauskansiovienti luodaan kuoletukselle, joka on pakollinen organisaation taseen vuokraussopimuksille.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseAssetSchedule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0dd8308acb875affc96ca6d9ed856d74d4b2eb37
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442961"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947312"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Käyttöoikeusomaisuuserän poiston tallentaminen (esiversio)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Jos vuokrasopimukset ovat organisaation taseessa, käyttöoikeusomaisuuserä kuoletetaan kuukausittain. Tässäohje aiheessa kerrotaan, miten kuoletuksen kirjauskansiovienti luodaan. Kuoletus veloittaa kulukirjauskansiotiliä ja hyvittää kumuloitua poistokirjauskansiotiliä kirjausprofiilin ja vuokrasopimustyypin määrityksen mukaan. Nämä viennit voidaan luoda jokaiselle vuokrasopimukselle tai ne voidaan luoda useille vuokrasopimuksille eräkirjauskansiotoiminnon avulla.
 
@@ -36,9 +35,12 @@ Jos vuokrasopimukset ovat organisaation taseessa, käyttöoikeusomaisuuserä kuo
 1. Valitse vuokrasopimus **Vuokrasopimusyhteenveto**-sivulla. Valitse sitten **Kirjat \> Käyttöomaisuuden poistoaikataulu**, jos haluat avata **Käyttöomaisuuden poistoaikataulu** -sivun.
 
     Käyttöoikeusomaisuuserän poistokulukirjauskansiovienti perustuu **Poistokulu**-sarakkeeseen. Myöhemmin tässä ohjeaiheessa on esimerkki kirjanpitostandardin yhdenmukaisuusohjeesta [Käyttöoikeusomaisuuserän kuoletuskulun laskeminen rahoitusleasingsopimuksille](#calculation-of-rou-asset-amortization-expense-for-finance-leases).
-
+    
 2. Valitse poistokausi ja valitse sitten **Luo kirjauskansio**. Näyttöön tulee sanoma, joka ilmaisee, että poiston tallentamisessa käytettävä kirjauskansio on jo luotu.
 3. Valitse **Kirjauskansiot \> Resurssin leasingkirjauskansiot**, jos haluat avata **Resurssin leasingkirjauskansio**-sivun, jossa voit tarkastella luotua poistokulukirjauskansiovientiä.
+
+   Järjestelmä lukitsee tietyt taloushallinnon kentät ja estää niiden muokkaamisen. Tällä tavoin estetään tapahtumien ja aikataulujen väliset varianssit. Lukittuja ovat esimerkiksi seuraavat kentät: **Tili**, **Summat**, **Taloushallinnon dimensiot**, **Valuutta** ja **Tapahtumatyyppi**. Lisäksi kirjauskansiovientirivejä ei voi lisätä tai poistaa missään resurssin vuokrauskirjauskansion vienneissä, sillä se voi aiheuttaa aikataulujen ja tapahtumien välisiä variansseja.
+
 4. Valitse kirjauskansiovienti ja valitse sitten **Kirjaa**, jos haluat tallentaa poistoviennin kirjanpitoon.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Käyttöoikeusomaisuuserän kuoletuskulun laskeminen käyttöleasingsopimuksille
@@ -69,6 +71,8 @@ Kuten aiemmin mainittiin, tasapoistovuokrakulu lasketaan kokonaissummana jaettun
 > [!NOTE]
 > ASC 842:n mukaan käyttöoikeusomaisuuserän poisto käyttöleasingsopimuksessa luokitellaan vuokrakuluksi tuloslaskelmassa. Käyttöoikeusomaisuuden vuokra kuvaa viennin käyttöoikeusomaisuuserän poistona. Veloitusvienti on kuitenkin määritettävä käyttöleasingsopimuksen kulutilille ja hyvitysvienti suoraan käyttöleasingsopimuksen käyttöoikeusomaisuuserälle. Vuokrasopimuksen parametreissa voidaan kuitenkin määrittää, että hyvitysviennit on tehtävä kumuloituun poistotiliin käyttöleasingin käyttöoikeusomaisuuserille.
 
+Jos vuokra luokitellaan käyttövuokraksi, kuukausittainen poisto arvonalennuksen jälkeen lasketaan tasapoistomenetelmällä.
+
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>Käyttöoikeusomaisuuserän kuoletuskulun laskeminen rahoitusleasingsopimuksille
 
 Taloushallinnon luokituksen omaaville vuokrasopimuksille järjestemä laskee käyttöoikeusomaisuuserän kuoletuksen tasaisesti. Siksi poistokulut ovat samat jokaiselle kuukaudelle.
@@ -86,3 +90,6 @@ IFRS 16:n ja ASC 842:n mukaan käyttöoikeusomaisuus kuoletetaan joko vuokra-aja
 | 1                                    | 22 889,87 ÷ 24 = 953,74                 |
 | 2                                    | 22 889,87 ÷ 24 = 953,74                 |
 | 3                                    | 22 889,87 ÷ 24 = 953,74                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

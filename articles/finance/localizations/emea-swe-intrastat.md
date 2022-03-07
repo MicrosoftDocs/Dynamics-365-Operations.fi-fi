@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486943"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417079"
 ---
 # <a name="swedish-intrastat"></a>Ruotsin Intrastat
 
@@ -48,7 +48,7 @@ Lisätietoja on kohdassa [ER-määritysten lataaminen määrityspalvelun yleises
 3. Valitse **Raporttimuodon määritys** -kentässä **Intrastat-raportti**.
 4. Valitse **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kentästä **Intrastat**.
 5. Valitse **Tapahtumakoodi**-kentässä ominaisuussiirtojen tapahtumakoodi. Tätä koodia käytetään tapahtumissa, jotka tuottavat toteutuneita tai suunniteltuja ominaisuussiirtoja (taloudellista tai muuta) kompensaatiota vastaan. Koodia käytetään myös korjauksiin. Ruotsin yrityksissä käytetään yksinumeroisia tapahtumakoodeja.
-6. Valitse **Hyvityslasku**-kentässä tapahtumakoodi tavaroiden palautusta varten.
+6. Valitse **Hyvityslasku**-kentässä tapahtumakoodi tavaroiden palautusta varten. Tätä koodia käytetään tavaroiden palauttamiseen sen jälkeen, kun alkuperäinen tapahtuma on kirjattu tapahtumakoodiin. Ruotsin yrityksissä käytetään yksinumeroisia tapahtumakoodeja.
 7. Ilmoita **Maan tai alueen ominaisuudet** -välilehden **Maa tai alue** -kentässä kaikki maat tai alueet, joiden kanssa yritys käy kauppaa. Valitse kullekin EU:n jäsenvaltion kohdalla **Maa-/aluetyyppi**-kentässä **EU**, minkä jälkeen maa näkyy Intrastat-raportissa.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Intrastat-ilmoituksen tuoteparametrien määrittäminen

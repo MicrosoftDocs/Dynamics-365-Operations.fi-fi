@@ -2,36 +2,29 @@
 title: Pilvipohjaisen haun yleiskatsaus
 description: Tässä ohjeaiheessa on yleiskatsaus pilvipohjaisesta hausta Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: ashishmsft
-manager: annbe
 ms.date: 06/29/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411848"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983666"
 ---
 # <a name="cloud-powered-search-overview"></a>Pilvipohjaisen haun yleiskatsaus
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on yleiskatsaus pilvipohjaisesta hausta Microsoft Dynamics 365 Commerce -sovelluksessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Tuotteiden löydettävyyden avulla varmistetaan, että asiakkaat löytävät tuotteita nopeasti ja helposti selaamalla luokkia sekä tekemällä hakuja ja suodattamalla luokkia. Vähittäiskauppiaat pitävät tuotteen etsintätyökalua ensisijaisena työkaluna asiakkaan vuorovaikutuksessa kaikkien kanavien kautta.
 
@@ -47,7 +40,7 @@ Hakurelevanssi ja suorituskyky ovat tärkeitä tekijöitä monikanavakokemuksess
 
 Seuraavassa kuvassa on esimerkki tyypillisestä selaus- ja hakutoiminnosta.
 
-![Aloitussivun haku](./media/SearchLanding.png)
+![Aloitussivun haku.](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Kohdistetun siirtymisen ja valinnan yhteenveto 
 
@@ -57,7 +50,7 @@ Kohdistetun siirtymisen avulla voi määrittää erilaisia tarkenteita eri termi
 
 Seuraavassa kuvassa on esimerkki kohdistetun siirtymisen käytöstä haussa.
 
-![Valinnan yhteenveto](./media/ChoiceSummary.png)
+![Valinnan yhteenveto.](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Mukaansatempaava automaattinen ehdotustoiminto
 
@@ -67,7 +60,7 @@ Dynamics 365 Commerce tukee myös eri luokkiin kuuluvien avainsanavastaavuuksien
 
 Seuraavassa kuvassa näkyy esimerkki, jossa käytetään mukaansatempaavaa automaattista ehdotustoimintoa.
 
-![Mukaansatempaava automaattinen ehdotustoiminto](./media/ImmersiveAutoSuggestUX.png)
+![Mukaansatempaava automaattinen ehdotustoiminto.](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Lajittele
 
@@ -75,10 +68,13 @@ Dynamics 365 Commercen parannellun lajittelun avulla asiakkaat voivat lajitella,
 
 >[!NOTE]
 >Nämä pilvipohjaiset hakutoiminnot ovat saatavilla versiosta 10.0.8 alkaen. Varmista, että valikossa **Kaupan parametrit > Määrityksen parametrit** on merkintä ProductSearch.UseAzureSearch set to 'true'. 
-![Määrityksen parametrit pilvipohjaiselle haulle](./media/CloudPoweredSearchConfigurationParameters.png)
+![Määrityksen parametrit pilvipohjaiselle haulle.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus](category-search-page-overview.md)
+[Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus](category-search-page-overview.md)
 
 [SEO-metatietojen hallinta](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

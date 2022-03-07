@@ -2,9 +2,11 @@
 title: Microsoft Teamsin valmistelu Dynamics 365 Commercesta
 description: Tässä aiheessa kuvataan, miten Microsoft Teams voidaan valmistella käyttäen organisaatiotietoja Dynamics 365 Commercesta.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -13,16 +15,17 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 715b18acb10edebafe60805393cbc16c5be513ef3605cf7a575ff98362443bb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96382c072e03506294d72899072a358091bda8ab
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766430"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842659"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Microsoft Teamsin valmistelu Dynamics 365 Commercesta
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan, miten Microsoft Teams voidaan valmistella käyttäen organisaatiotietoja Dynamics 365 Commercesta.
 
@@ -49,7 +52,7 @@ Voit valmistella Teamsin Commerce headquarters -sovelluksessa seuraamalla alla o
 > [!TIP]
 > Jos mikään aluepäälliköistä, myymäläpäälliköistä ja myymälätyöntekijöistä ei ole liitetty Teams-lisenssiin, näkyviin saattaa tulla seuraava virhesanoma: "Käyttäjän SKU-luokkien noutaminen ei onnistunut." Voit korjata ongelman valitsemalla toimintoruudusta **Synkronoi ryhmät ja jäsenet**.
 
-<!-- ![Dynamics 365 Commerce - Teams integration configuration.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
+<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## <a name="validate-teams-provisioning-in-the-teams-admin-center"></a>Teamsin valmistelun vahvistaminen Teams-hallintakeskuksessa
 
@@ -63,7 +66,7 @@ Suorita seuraavat vaiheet, kun haluat vahvistaa Microsoft Teamsin valmistelun Mi
 
 Seuraavassa kuvassa on esimerkki Teams-hallintakeskuksen **Ryhmien hallinta** -sivusta.
 
-![Esimerkki Ryhmien hallinta -sivusta Teams-hallintakeskuksessa.](media/Teams-FLW-Admin-Teams.png)
+![Esimerkki Ryhmien hallinta -sivusta Teams-hallintakeskuksessa](media/Teams-FLW-Admin-Teams.png)
 
 ## <a name="upload-a-commerce-organizational-hierarchy-to-teams"></a>Lataa Commercen organisaatiohierarkia Teamsiin
     
@@ -73,9 +76,9 @@ Jos haluat ladata Commerce-organisaatiohierarkian Teamsiin, toimi seuraavasti.
     
 1. Siirry Commerce headquartersissa kohtaan **Retail ja Commerce \> Kanavan asetukset \> Microsoft Teams -integroinnin määritys**.
 1. Valitse **Lataa kohdehierarkia** ja lataa sitten organisaatiohierarkian pilkuilla erotettu CSV-tiedosto valitsemalla **Vähittäismyymälät alueen mukaan**.
-1. Asenna Microsoft Teams PowerShell -moduuli noudattamalla ohjeita kohdassa [Asenna Microsoft Teams PowerShell](/microsoftteams/teams-powershell-install).
+1. Asenna Microsoft Teams PowerShell -moduuli noudattamalla ohjeita kohdassa [Asenna Microsoft Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
 1. Kun järjestelmä antaa kehotteen Teams PowerShell -ikkunassa, kirjaudu sisään vuokraajan järjestelmänvalvojan Azure AD-tilin avulla.
-1. Lataa kohdehierarkian CSV-tiedosto palvelimeen noudattamalla ohjeita kohdassa [Ryhmän kohdehierarkian määrittäminen](/microsoftteams/set-up-your-team-hierarchy).
+1. Lataa kohdehierarkian CSV-tiedosto palvelimeen noudattamalla ohjeita kohdassa [Ryhmän kohdehierarkian määrittäminen](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy).
 
 ## <a name="verify-that-the-organizational-hierarchy-was-uploaded-to-teams"></a>Tarkista, että organisaatiohierarkia on ladattu Teamsiin
 
@@ -86,7 +89,7 @@ Tarkista seuraavien vaiheiden avulla, että organisaatiohierarkia on ladattu Mic
 1. Luo **Julkaisut luettelot** -välilehdessä uusi luettelo, jolla on tyhjä tehtävä.
 1. Valitse **Julkaise**. Organisaatiohierarkian pitäisi näkyä **Valitse kenelle julkaistaan** -valintaikkunassa seuraavan kuvan esimerkin mukaisesti.
 
-![Esimerkki organisaatiohierarkiasta Valitse kenelle julkaistaan -valintaikkunassa.](media/Microsoft-teams-verify-org-hierarchy.png)
+![Esimerkki organisaatiohierarkiasta Valitse kenelle julkaistaan -valintaikkunassa](media/Microsoft-teams-verify-org-hierarchy.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

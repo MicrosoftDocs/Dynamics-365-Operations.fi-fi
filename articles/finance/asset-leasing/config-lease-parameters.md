@@ -2,28 +2,25 @@
 title: Vuokrasopimuksen parametrien määrittäminen (esiversio)
 description: Tässä ohjeaiheessa kuvataan resurssin vuokrauksen asetukset. Niitä ovat esimerkiksi suojauksen tiedot ja kirjanpidon asetukset.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TaxTable
+ms.search.form: AssetLeasePostingAccounts
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f71006570cd8f2bdc0385388eae0800cd29d3ec8
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 77caf751f9baf4abef534bac97e226484df7acf7
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4442970"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881273"
 ---
 # <a name="configure-lease-parameters"></a>Vuokrasopimuksen parametrien määrittäminen
 
@@ -46,3 +43,6 @@ Useat määritysasetukset vaikuttavat siihen, miten resurssin vuokraus toimii. N
 
     > [!NOTE]
     > On suositeltavaa säilyttää tämän asetuksen arvona **Ei**. Tämän asetuksen määritystä käytetään tarkistuksessa ja ohjausobjektissa, jotta suljettua kirjan versiota ei poisteta vahingossa. Jos säilytät asetuksen arvona **Ei**, voit säilyttää nettokirjanpitoarvon ja tulevien poistojen laskelmat ajantasalla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

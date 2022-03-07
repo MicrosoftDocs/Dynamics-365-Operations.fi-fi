@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5ae29fe5ac49d92c261c59d115664b50e87880a0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ae459ddaf947db6c3de2602a706390edab49efa1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965099"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250855"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Kokeen tilan tarkistaminen
 Kokeen määrittäminen ja suorittaminen Dynamics 365 Commercessa on monivaiheinen prosessi. Lisätietoja kokeilun elinkaaresta on kohdassa [Kokeilut Dynamics 365 Commercessa](experimentation-overview.md).
@@ -44,3 +44,6 @@ Vastaavasti **kolmannen osapuolen tilasarakkeessa** seuraavat arvot ilmaisevat, 
 Molemmat tilajoukot ja niiden keskinäinen suhde näkyy seuraavassa kaaviossa.
 
 [ ![Kokeilun tilat](./media/experimentation_statuses.svg)](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

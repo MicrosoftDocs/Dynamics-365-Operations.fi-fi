@@ -2,16 +2,13 @@
 title: Saman erän varaaminen myyntitilausta varten
 description: Tässä artikkelissa kerrotaan, miten tuote määritetään, kun varastovaraus sallitaan yhden varastoerän mukaan.
 author: omulvad
-manager: tfehr
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e0937be76aa687ed986ff83e67f2db3e2dadd0f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427486"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807653"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Saman erän varaaminen myyntitilausta varten
 
@@ -44,4 +41,7 @@ Kun varaat myyntitilausrivin tuotteelle varaston, jolla on määritetty saman er
 - Erä on vanhentunut vanhentumispäivän ja mahdollisten käytettävissä olevien asiakkaan myyntipäivien perusteella. Nimikkeen varausta voidaan silti harkita, jos kyseessä on päivämäärän mukaan ohjatun FEFO-nimikkeen nimikemalliryhmä ja parasta ennen -päivä on valittu keräysehdoksi.
 - Erällä ei ole jäljellä riittävästi varastointiaikaa vanhentumispäivän ja parasta ennen -päivän sekä mahdollisten asiakkaan myyntipäivien perusteella.
 
-Jos nimike liittyy varastodimensioryhmään, jossa on otettu käyttöön **Käytä varastonhallintaprosesseja**, voit varata tiettyjä eränumeroita käyttämällä varaushierarkiaa, jossa on sijaintidimension yläpuolella määritetty eränumeron varastodimensio. Myynti- ja siirtotilausrivien **Erän varaus** -sivulla voit myös valita ja varata useita rivejä käytettävissä olevien eränumeroiden perusteella. Katso lisätietoja siitä, mitä tehdä, jos käytät varaushierarkiaa, jolla on varastopaikan alapuolella eränumerodimensio kohdasta [Joustava varastotason dimension varauskäytäntö](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+Jos nimike liittyy varastodimensioryhmään, jossa on otettu käyttöön **Käytä varastonhallintaprosesseja**, voit varata tiettyjä eränumeroita käyttämällä varaushierarkiaa, jossa on sijaintidimension yläpuolella määritetty eränumeron varastodimensio. Tämäntyyppistä varaushierarkiaa kutsutaan myös *erä-yllä\[sijainti\]* -varaushierarkiaksi Myynti- ja siirtotilausrivien **Erän varaus** -sivulla voit myös valita ja varata useita rivejä käytettävissä olevien eränumeroiden perusteella. Katso lisätietoja siitä, mitä tehdä, jos käytät varaushierarkiaa, jolla on varastopaikan alapuolella eränumerodimensio (*erä-alla\[sijainti\]*) kohdasta [Joustava varastotason dimension varauskäytäntö](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

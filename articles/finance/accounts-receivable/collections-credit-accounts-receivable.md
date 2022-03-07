@@ -2,28 +2,25 @@
 title: Perinnät myyntireskontrassa
 description: Myyntireskontran perimistietoja hallitaan keskitetysti yhdessä näkymässä Microsoft Dynamics 365 Financen Perintä-sivulla. Luotonvalvonnan esimiehet voit hallita perintää tästä keskusnäkymästä. Perimisasiamiehet voivat aloittaa perintäprosessin ennalta määritettyjen ehtojen mukaan muodostettavasta asiakasluettelosta tai Asiakkaat-sivulta.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b143ebead89804af57e7d2dbfa6f7d366c1ae664573776d78bff44763ddeb819
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723916"
 ---
 # <a name="collections-in-accounts-receivable"></a>Perinnät myyntireskontrassa
 
@@ -102,8 +99,7 @@ Poiskirjaustapahtuma luodaan tapahtuman valuutalla.
 
 Lisätietoja on ohjeaiheessa [Poiskirjauksen kirjauskansion luominen asiakkaalle](tasks/create-write-off-journal-customer.md).
 
-<a name="process-not-sufficient-funds-nsf-payments"></a>Ei katetta -maksujen (NFS) käsittely 
---------------------------------------------
+## <a name="process-not-sufficient-funds-nsf-payments"></a>Ei katetta -maksujen (NFS) käsittely 
 
 Voit käsitellä NSF-maksuja napsauttamalla Perintä-sivulla NSF-maksu -kohtaa. Maksu peruutetaan, kun napsautat tätä painiketta. Jos NSF-maksu koskee asiakkaan kuluja, veloitustapahtuma luodaan maksujen kirjauskansioon. Maksusumma perustuu automaattisten veloitusten asetuksiin. Automaattiset veloitukset, joita sovelletaan NSF-maksuihin määritetään kuluryhmässä, joka on valittu Pankkitilit-sivulla pankkitilille, jota asia koskee.
 
@@ -111,3 +107,6 @@ Voit käsitellä NSF-maksuja napsauttamalla Perintä-sivulla NSF-maksu -kohtaa. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

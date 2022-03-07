@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 360df29e6349fd4d42d6d14af646e929b73943bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3843c165b3fc3030a937ec47a1439b1c1b36206d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442843"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216495"
 ---
 # <a name="create-a-journal-entry-using-template"></a>Kirjauskansioviennin luonti mallin avulla
 
@@ -63,3 +62,6 @@ Kirjatut kirjauskansion tositteet voidaan tallentaa tositemalleina. Ne voidaan k
 29. Syötä **Summa**-kenttään tositteeseen kohdistettava summa. **Summa**-kenttä näytetään vain, jos tositemallin tyyppi on Prosentti.  
 30. Valitse **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

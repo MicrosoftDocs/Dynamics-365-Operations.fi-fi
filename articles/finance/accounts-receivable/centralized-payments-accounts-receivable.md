@@ -2,28 +2,25 @@
 title: Myyntireskontran keskitetyt maksut
 description: Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d5dfa3965cc22c0c3bcf31ae076afb586e12d158ef66464ce933b509aaf9a521
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724156"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Myyntireskontran keskitetyt maksut
 
@@ -296,3 +293,6 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 | Myyntireskontra (Fabrikam West)    |              | 75,00         |
 | Maksaja Fabrikam East (Fabrikam West) | 25,00        |               |
 | Myyntireskontra (Fabrikam West)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

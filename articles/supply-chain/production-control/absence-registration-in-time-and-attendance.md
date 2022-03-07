@@ -11,17 +11,18 @@ ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 16b338010662f8c2115fcc38f6830b58c49259e2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426812"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Työajan seurannan poissaolojen rekisteröinti
 

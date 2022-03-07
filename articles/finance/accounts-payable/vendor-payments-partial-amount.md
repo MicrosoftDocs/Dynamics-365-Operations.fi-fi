@@ -2,28 +2,25 @@
 title: Toimittajan maksut osasummalla
 description: Joskus toimittajalle saatetaan luoda maksu, jonka summa on laskun summaa pienempi. Tässä artikkelissa on kuvaus erilaisista toimintavaihtoehdoista tällaisessa tilanteessa.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14321
 ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89e025977a0dcd40e35f17448a7b0ebde08cb6c8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dd7b7092e0d0baf48a805bbb0cefb0eb77e49946c6dbc44c9f954781ca1259e0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442603"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777237"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Toimittajan maksut osasummalle
 
@@ -31,8 +28,7 @@ ms.locfileid: "4442603"
 
 Joskus toimittajalle saatetaan luoda maksu, jonka summa on laskun summaa pienempi. Tässä artikkelissa on kuvaus erilaisista toimintavaihtoehdoista tällaisessa tilanteessa. Käytettävissä olevat vaihtoehdot määräytyvät liiketoiminnan vaatimusten ja konfiguraation mukaan. 
 
-<a name="cash-discount-amounts"></a>Käteisalennussummat
----------------------
+## <a name="cash-discount-amounts"></a>Käteisalennussummat
 
 Toimittaja voi tarjota yrityksellesi käteisalennuksen, jos maksat laskun ennen eräpäivää. Voit syöttää esimerkiksi laskun summaksi 100,00, jolle määritetään 2 prosentin käteisalennus, jos lasku maksetaan 10 päivän kuluessa. Maksuehto on 30 päivää. Jos maksuehdotuksessa käytetään käteisalennusta ehtona laskun valinnalle, ja jos ehdotus ajetaan käteisalennuspäivämääränä tai sitä ennen, lasku valitaan maksettavaksi ja maksu luodaan arvolle 98,00. Käteisalennusta voi myös käyttää yksittäiselle, manuaalisesti luodulle maksulle.
 
@@ -54,3 +50,6 @@ Voit suorittaa osamaksun, jonka jälkeen tilitettäväksi voi jäädä hyvin pie
 
 
 Lisätietoja on ohjeaiheessa [Toimittajan maksujen yleiskatsaus](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

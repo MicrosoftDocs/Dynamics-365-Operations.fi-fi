@@ -10,27 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f9e8df576efd1e58fde235828823f31e87ed58bf
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: d0e5fa731d4b808cda9863074d17d1917410f399
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4412137"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213671"
 ---
-# <a name="delivery-options-module"></a>Toimitusvaihtoehdot -moduuli
+# <a name="delivery-options-module"></a>Toimitusvaihtoehtomoduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja toimitusvaihtoehtomoduuleista ja niiden määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
-
-## <a name="overview"></a>Yhteenveto
 
 Toimitusasetukset-moduulien avulla asiakkaat valitsevat toimitustavan, kuten lähetys tai nouto verkossa tehdylle tilaukselleen. Toimitusosoite on pakollinen, jotta lähetystapa voidaan määrittää. Jos toimitusosoite muuttuu, toimitusvaihtoehdot on noudettava uudelleen. Jos tilauksessa on vain myymälästä noudettavia nimikkeitä, tämä moduuli piilotetaan automaattisesti.
 
@@ -83,3 +80,6 @@ Toimitusvaihtoehdot-moduuli voidaan lisätä vain kassalle-moduuliin. Lisätieto
 [Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille](pro-rate-charges-matching-lines.md)
 
 [Määritä toimitustavat](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

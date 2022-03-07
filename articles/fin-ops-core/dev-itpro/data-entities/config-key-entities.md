@@ -1,31 +1,32 @@
 ---
 title: Konfigurointiavaimet ja tietoyksiköt
 description: Tässä ohjeaiheessa käsitellään konfigurointiavainten ja tietoyksiköiden välistä suhdetta.
-author: Sunil-Garg
-manager: AnnBe
+author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.custom: 25341
 ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: e6145a2f6925932361851735df55374dda8ca03d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e9cc92563c426136b2543511ad943fd64b335b70
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679377"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065736"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurointiavaimet ja tietoyksiköt
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ennen tietojen tuontia tai vientiä tietoyksiköiden avulla kannattaa ensin selvittää, miten konfigurointiavaimet vaikuttavat tietoyksiköihin, joita aiot käyttää.
 
@@ -54,24 +55,24 @@ Seuraavassa taulussa on yhteenveto tavoista, joilla objektin taustalla olevien e
 ### <a name="entity-list-refresh"></a>Yksikköluettelon päivitys
 Kun yksikköluettelo päivitetään, tietojen hallintakehys muodostaa konfigurointiavaimen metatiedot suorituksenaikaista käyttöä varten. Nämä metatiedot muodostetaan edellä kuvan logiikan mukaisesti. Kannattaa ehdottomasti odottaa yksikköluettelon päivittymistä ennen tietojen hallintakehysten töiden ja yksiköiden käyttämistä. Jos et odota, konfigurointiavaimen metatiedot eivät ehkä ole ajan tasalla, mikä voi aiheuttaa odottamattomia tuloksia. Kun yksikköluetteloa päivitetään, yksikköluettelosivulla on seuraava sanoma.
 
-![Yksikköluettelon päivitys](./media/Entity_refresh_list.png)
+![Yksikköluettelon päivitys.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Tietoyksikköluettelon sivu
 Yksiköiden konfigurointiavainasetukset näkyvät Tietojenhallinnan työtilan tietoyksikköluettelon sivulla. Voit aloittaa tältä sivulta sen selvittämisen, miten konfigurointiavaimet vaikuttavat tietoyksikköön.
 
 Nämä tiedot voidaan näyttää yksikön päivityksen aikana muodostettujen metatietojen avulla. Konfigurointiavaimen sarakkeessa on tietoyksikköön liitetyn konfigurointiavaimen nimi. Jos sarake on tyhjä, tietoyksikköön ei ole liitetty konfigurointiavainta. Konfigurointiavaimen tilasarakkeessa näytetään konfigurointiavaimen tila. Jos siinä on valintamerkki, avain on otettu käyttöön Jos se on tyhjä, avain on joko poistettu käytetty tai yhtään avainta ei ole liitetty.
 
-![Yksikköluettelon sivu](./media/Data_entity_list_page.png)
+![Yksikköluettelon sivu.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Kohdekentät
 Seuraavaksi poraudutaan tietoyksikköön tarkastelemaan, miten konfigurointiavaimet vaikuttavat tauluihin ja kenttiin. Tietoyksikön kohdekenttälomake sisältää konfigurointiavaimen ja tietoyksikön liittyviin tauluihin ja kenttiin liittyvät avaimen tilatiedot. Jos itse tietoyksikön konfigurointiavain on poistettu käytöstä, avautuva varoitussanoma ilmoittaa, että tämän yksikön kohdekenttälomakkeen taulut ja kentät eivät lainkaan käytettävissä riippumatta siitä, mikä niiden konfigurointiavaimen tila on.
 
-![Kohdekentät](./media/Target_fields_1.png)
+![Kohdekentät.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Aliyksiköt 
 Tietyissä yksiköissä on muita yksikköjä tietolähteinä tai ne ovat yhdistelmätietoyksiköitä: näiden yksiköiden konfigurointiavaimen tiedot näytetään aliyksiköiden lomakkeessa. Käytä tätä lomaketta samoin kuin edellä kuvattua yksikköluettelosivua. Aliyksikön kohdekenttälomake toimii myös edellä kuvatulla tavalla.
 
-![Kohdekentät](./media/Target_fields_2.png)
+![Kohdekentät.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Tietoyksiköiden käyttäminen
 Kun tiedät, miten konfigurointiavaimet mahdollisesti vaikuttavat tietoyksiköihin, joita haluat käyttää, voit nyt siirtyä käyttämään tietoyksiköitä lisäämällä tietoprojekteihin. 
@@ -93,4 +94,7 @@ Suoritustenaikaiset oikeellisuustarkistukset suoritetaan seuraavissa käyttötil
 ### <a name="managing-configuration-key-changes"></a>Konfigurointiavainten muutosten hallinta
 Aina kun päivität konfigurointiavaimet yksikkö-, taulu- tai kenttätasolla, tietojen hallintakehyksen yksikköluettelo on päivitettävä. Tämä prosessi varmistaa, että kehys poimii kaikki uusimmat konfigurointiavainasetukset. Seuraava sanoma näkyy yksikköluettelosivulla siihen saakka, että yksikköluettelo päivitetään. Päivitetyt konfigurointiavainmuutokset tulevat voimaan heti, kun yksikköluettelo on päivitetty. Aiemmin luodut tietoprojektit ja työt kannattaa tarkistaa ja varmistaa, että ne toimivat odotetusti sen jälkeen, kun konfigurointiavainmuutokset on otettu käyttöön.
 
-![Kohdekentät](./media/Target_fields_3.png)
+![Kohdekentät.](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

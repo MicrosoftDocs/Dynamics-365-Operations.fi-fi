@@ -7,23 +7,21 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27c6c62f3ac312ee502df969f25f1b16761cba03
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: bee0522ea244cab2f5d6864b2a763df6e314e02d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067801"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805151"
 ---
 # <a name="screening-frequency-generate-from"></a>Seulonnan tiheys luo kohteesta
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

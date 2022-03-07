@@ -1,12 +1,10 @@
 ---
 title: Tulostimen ER-kohteen tyyppi
-description: Tässä ohjeaiheessa selitetään, miten kullekin lähteviä asiakirjoja joko PDF-muodossa tai Microsoft Office -muodossa (Excel/Word) luomaan määritetty sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-komponentin tulostinkohde määritetään.
+description: Tässä aiheessa käsitellään tulostinkohteen määrittämistä sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla.
 author: NickSelin
-manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 83081f8c17a903cd447a34596df2e61ebda0cafc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679603"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753429"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Tulostinkohde
 
@@ -49,8 +47,6 @@ Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoftin Dynamics 36
 
 ### <a name="limitations"></a>Rajoitukset
 
-Tämä ominaisuus on esikatseluominaisuus, ja siihen sovelletaan ehdoissa [Microsoft Dynamics 365 -esikatselujen lisäkäyttöehdot](https://go.microsoft.com/fwlink/?linkid=2105274) esitettyjä käyttöehtoja.
-
 **Tulostin**-kohdetta käytetään vain pilvikäyttöönotoissa.
 
 ### <a name="use-the-printer-destination"></a>Käytä tulostinkohdetta
@@ -70,3 +66,6 @@ Jos haluat käyttää tiettyä [sivun suuntaa](electronic-reporting-destinations
 
 - [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

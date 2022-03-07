@@ -1,33 +1,32 @@
 ---
 title: Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 3, 2020)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 3. huhtikuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8f5d7ab996e0d27f763cd4c3c51e9a2c923d909b
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0f5f52b2e6bf646f6dd53acfd2928682e84e78fb
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526783"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063565"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-3-2020"></a>Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 3, 2020)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.3111. Joissakin otsikoissa suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
 
@@ -64,7 +63,7 @@ Seuraavat yksiköt ovat nyt käytettävissä. Jos nämä yksiköt eivät näy yk
  - Loma- ja poissaolosuunnitelman taso V2
  - Loma- ja poissaolosuunnitelma V2
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service -ratkaisu on nyt käytettävissä seuraavin muutoksin:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse -ratkaisu on nyt käytettävissä seuraavin muutoksin:
 
 | kuvaus | Vaihda |
 | --- | --- |
@@ -76,18 +75,18 @@ Seuraavat yksiköt ovat nyt käytettävissä. Jos nämä yksiköt eivät näy yk
 | Uudet muuttuvat kompensaatioasetusten entiteetit | <ul><li>**Muuttuvan kompensaatiosuunnitelman tyyppi**</li><li>**Muuttuva kompensaatiosuunnitelma**</li><li>**Hyvityssäännöt**</li><li>**Muuttuvan kompensaatiosuunnitelman taso**</li></ul> |
 | Uusi **Työntekijäkalenterin työ**-yksikkö | <ul><li>**Työkalenteriyksikkö** lisätty</li></ul> |
 | Uusi **Palkanlaskennan toimen tiedot** -yksikkö | <ul><li>**Palkanlaskennan toimen tiedot** lisätty</li></ul> |
-| Uusi **Otsikko**-yksikkö | <ul><li>**Otsikko** lisätty</li></ul>Uusi **Otsikko**-entiteetti sisältyy Common Data Serviceen, mutta siihen ei viitata **Työtehtävä**- tai **Työ**-yksiköissä tällä hetkellä. |
+| Uusi **Otsikko**-yksikkö | <ul><li>**Otsikko** lisätty</li></ul>Uusi **Otsikko**-entiteetti sisältyy Dataverseen, mutta siihen ei viitata **Työtehtävä**- tai **Työ**-yksiköissä tällä hetkellä. |
 
 > [!NOTE]
-> Taloushallinnon dimensiot sekä toimissa että työsuhteessa mahdollistavat yksisuuntaisen integroinnin päivityksille Human Resourcesista Common Data Serviceen. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Common Data Service -sovelluksesta Human Resources -sovellukseen.
+> Taloushallinnon dimensiot sekä toimissa että työsuhteessa mahdollistavat yksisuuntaisen integroinnin päivityksille Human Resourcesista Dataverseen. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Dataverse -sovelluksesta Human Resources -sovellukseen.
 
-Seuraavien viikkojen aikana nämä yksikön muutokset ovat käytettävissä kaikissa ympäristöissä. Voit asentaa Human Resources -sovelluksen uusimman Common Data Service -ratkaisun manuaalisesti seuraavasti:
+Seuraavien viikkojen aikana nämä yksikön muutokset ovat käytettävissä kaikissa ympäristöissä. Voit asentaa Human Resources -sovelluksen uusimman Dataverse -ratkaisun manuaalisesti seuraavasti:
 
 1.  Siirry [Power Platform-hallintakeskukseen](https://admin.powerplatform.microsoft.com).
 
 2.  Valitse **Ympäristö**.
 
-3.  Etsi ympäristö, jonka haluat päivittää. Ympäristön on vastattava Human Resources -sovelluksen **ympäristön nimeä** **Common Data Service -tiedot** -osan **Tietoja**-lomakkeessa.
+3.  Etsi ympäristö, jonka haluat päivittää. Ympäristön on vastattava Human Resources -sovelluksen **ympäristön nimeä** **Dataverse -tiedot** -osan **Tietoja**-lomakkeessa.
 
 4.  Valitse ympäristö, jos haluat tarkastella ympäristön tietoja.
 
@@ -134,6 +133,8 @@ Jos SharePoint-ohjelmassa tallennettujen asiakirjojen esikatselu ei toimi, kokei
 ## <a name="see-also"></a>Lisätietoja
 
 [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
-[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Päivitysprosessi](hr-admin-setup-update-process.md)</br>
 [Hallitse ominaisuuksia](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

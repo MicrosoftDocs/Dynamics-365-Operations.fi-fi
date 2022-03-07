@@ -1,16 +1,13 @@
 ---
-title: Vähittäismyyntitapahtumien syötteisiin perustuvien tilausten vähittäinen luominen
+title: Vähittäismyyntitapahtumien vähittäisiin syötteisiin perustuvien tilausten luominen
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commerce -sovelluksen tapahtumien syötteisiin perustuvien tilausten vähittäisestä luomisesta.
-author: josaw1
-manager: AnnBe
-ms.date: 09/04/2020
+author: analpert
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,40 +15,53 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 67b66cd4bf2a77f3ab7f33f691156e38cc13770a
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458945"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964626"
 ---
-# <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Vähittäismyyntitapahtumien syötteisiin perustuvien tilausten vähittäinen luominen
+# <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Vähittäismyyntitapahtumien vähittäisiin syötteisiin perustuvien tilausten luominen
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Retail -sovelluksen versiossa 10.0.4 ja vanhemmissa versioissa laskelman kirjaaminen on päivän lopussa suoritettava toiminto, eli kaikki tapahtumat kirjataan päivän lopussa. Suuret tapahtumat on siis käsiteltävä rajoitetun ajan puitteissa. Joskus tämä aiheuttaa virheitä latauksessa, lukituksissa ja laskelmien kirjaamisessa. Jälleenmyyjät eivät myöskään pysty kirjaamaan tuottoa ja maksuja kirjanpitoon päivän aikana.
+Microsoft Dynamics 365 Commercen versiossa 10.0.5 ja uudemmissa versioissa suositellaan siirtämään kaikkien laskelmien kirjausprosessit vähittäisiin syötteisiin perustuviksi laskelmien kirjausprosesseiksi. Vähittäisten syötteiden toimintoon liittyy merkittäviä suorituskyvyn ja liiketoiminnan etuja. Myyntitapahtumia käsitellään koko päivän ajan. Maksuvälineiden ja kassanhallinnan tapahtumat käsitellään tapahtumaraportissa päivän lopuksi. Vähittäisten syötteiden toiminto mahdollistaa myyntitilausten, laskujen ja maksujen jatkuvan käsittelyn. Tämän vuoksi varasto, tuotto ja maksut päivitetään ja kirjataan lähes reaaliaikaisesti.
 
-Retail-sovelluksen versiossa 10.0.5 olevan syötteisiin perustuvien tilausten vähittäisen luomisen avulla tapahtumat käsitellään päivän aikana. Vain maksuvälineiden taloushallinnon täsmäytyksen tapahtumat ja muut käteisvarojen hallintatapahtumat käsitellään päivän lopussa. Tämä toiminto jakaa myyntitilausten, laskujen ja maksujen luomisen päivän ajalle. Tämä mahdollistaa paremman suorituskyvyn ja tuoton ja maksujen kirjaamisen lähes reaaliaikaisesti. 
+## <a name="use-trickle-feed-based-posting"></a>Vähittäisiin syötteisiin perustuvien kirjausten käyttäminen
 
+> [!IMPORTANT]
+> Ennen kuin otat käyttöön vähittäisiin syötteisiin perustuvan kirjauksen, varmista, että laskemattomia ja kirjaamattomia laskelmia ei ole. Kirjaa kaikki laskelmat, ennen kuin otat toiminnon käyttöön. Voit tarkistaa avoimet laskelmat **Myymälän myyntitiedot** -työtilassa.
 
-## <a name="how-to-use-trickle-feed-based-posting"></a>Syötteisiin perustuvien vähittäin suoritettavien kirjausten käyttäminen
-  
-1. Jos haluat ottaa käyttöön vähittäiseen syöttöön perustuvan vähittäismyyntitapahtumien kirjaamisen, ota käyttöön **Vähittäismyyntilaskelmat – vähittäinen syöttö** -ominaisuus käyttämällä ominaisuuksien hallintaa.
+Jos haluat ottaa käyttöön vähittäiseen syöttöön perustuvan vähittäismyyntitapahtumien kirjaamisen, ota käyttöön **Vähittäismyyntilaskelmat - vähittäinen syöte** -toiminto **Ominaisuuksien hallinta** -työtilassa. Laskelmat jaetaan kahteen tyyppiin: tapahtumaraportit ja tilipäätökset.
 
-    > [!IMPORTANT]
-    > Varmista ennen ominaisuuden käyttöönottoa, ettei kirjausta odottavia laskelmia ei ole.
+### <a name="transactional-statements"></a>Tapahtumaraportit
 
-2. Nykyinen laskelma-asiakirja jaetaan kahdeksi asiakirjatyypiksi: tapahtumaraportti ja raportti.
+Tapahtumaraporttien käsittely tulee suorittaa usein päivän aikana. Asiakirjat luodaan, kun tapahtumat ladataan Commerce-pääkonttorisovellukseen. Tapahtumat ladataan myymälöistä Commerce-pääkonttorisovellukseen, kun **noutotyö** suoritetaan. Suorita myös **Tarkista myymälän tapahtumat** -työ, jos haluat tarkistaa tapahtumat, jotka tapahtumaraportti valitsee.
 
-      - Tapahtumaraportti sisältää kaikki kirjaamattomat ja tarkistetut tapahtumat. Se luo myyntitilaukset, myyntilaskut, maksu- ja alennuskirjauskansiot sekä tulo- ja kulutapahtumat määritettyinä ajankohtina. Määritä tämä prosessi suoritettavaksi usein. Tällöin asiakirjat luodaan, kun tapahtumat ladataan Headquarters-sovellukseen P-työn kautta. Koska tapahtumaraportti luo jo myyntitilaukset ja myyntilaskut, **Kirjaa varasto** -erätyötä ei tarvitse määrittää välttämättä. Voit kuitenkin käyttää sitä, jos haluat varmistaa tiettyjen liiketoimintavaatimusten täyttymisen.  
-      
-     - Raportti on määritetty niin, että se luodaan päivän lopuksi. Se tukee vain **Vuoro**-sulkemistapaa. Laskelmaan kuuluu ainoastaan taloushallinnon täsmäytys ja se luo vain eri maksuvälineiden lasketun summan ja tapahtumasumman erotussummien kirjauskansiot sekä muut käteisvarojen hallintatapahtumien kirjauskansiot.   
+Ajoita seuraavat usein suoritettavat työt:
 
-3. Voit laskea tapahtumaraportin valitsemalla **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Laske tapahtumaraportit eräajona**. Voit kirjata tapahtumaraportit eräajona valitsemalla **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Kirjaa tapahtumaraportit eräajona**.
+- Jos haluat laskea tapahtumaraportin, suorita **Laske tapahtumaraportit eräajona** -työ (**Retail ja Commerce \> Retailin ja Commercen IT \> Myyntipistekirjaus \> Laske tapahtumaraportit eräajona**). Tämä työ valitsee kaikki kirjaamattomat ja tarkistetut tapahtumat ja lisää ne uuteen tapahtumaraporttiin.
+- Jos haluat kirjata tapahtumaraportit eräajona, suorita **Kirjaa tapahtumaraportit eräajona** -työ (**Retail ja Commerce \> Retailin ja Commercen IT \> Myyntipistekirjaus \> Kirjaa tapahtumaraportit eräajona**). Tämä työ suorittaa kirjausprosessin ja luo myyntitilaukset, myyntilaskut, maksukirjauskansiot, alennuskirjauskansiot sekä tulo- ja kulutapahtumat kirjatuista laskelmista, joissa ei ole virheitä. 
 
-4. Voit laskea raportin valitsemalla **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Laske raportit eräajona**. Voit kirjata raportit eräajona valitsemalla **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Kirjaa raportit eräajona**.
+### <a name="financial-statements"></a>Tilinpäätökset
 
-> [!NOTE]
-> Valikon vaihtoehdot **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Laske laskelmat eräajona** ja **Retail ja Commerce > Retailin ja Commercen IT > Myyntipistekirjaus > Kirjaa laskelmat eräajona** eivät ole enää tässä toiminnossa.
+Tilinpäätösten käsittelyprosessi on tarkoitettu suoritettavaksi päivän lopussa. Tämäntyyppinen tilinpäätösten käsittely tukee vain **Vuoro**-sulkemistapaa. Se valitsee vain suljetut vuorot. Tilinpäätökset koskevat vain taloushallinnon täsmäytystä. Tämä luo kirjauskansiot vain maksuvälineiden lasketun summan ja tapahtuman summan välisille eroaville summille ja muun kassanhallinnan tapahtumille.
 
-Tapahtumaraportti- ja Raportti-tyypit on kuitenkin mahdollista luoda manuaalisesti. Siirry kohtaan **Retail ja Commerce > Kanavat > Myymälät** ja valitse **Laskelmat**. Valitse **Uusi** ja valitse sitten luotavan laskelman tyyppi. **Laskelmat**-sivun kentät ja sivun **Laskelmaryhmä**-kohdan toiminnot näyttävät tarvittavat tiedot ja toiminnot valitun laskelmatyypin mukaan.
+Tilinpäätökset mahdollistavat myös seuraavien tapahtumien tarkastelun: kassan laskemistapahtumat maksuvälineittäin, maksutapahtumat, pankkiin toimitetut maksuvälinetapahtumat ja kassakaapin maksuvälinetapahtumat. Maksuvälineen tietosivu näkyy vain silloin, kun tilinpäätös on valittuna.
+
+![Kuvassa näkyy kirjattujen laskelmien lomakkeen maksuvälineen tietosivu vain silloin, kun tilinpäätös on valittuna.](./media/Trickle-feed-posted-statements-transaction-view.png)
+
+Ajoita seuraavien tilinpäätöstöiden aloitus- ja päättymisajat päivän odotetun päättymisen perusteella seuraavasti:
+
+- Jos haluat laskea tilinpäätöksen, suorita **Laske tilinpäätökset eräajona** -työ (**Retail ja Commerce \> Retailin ja Commercen IT \> Myyntipistekirjaus \> Laske tilinpäätökset eräajona**). Tämä työ kerää kaikki kirjaamattomat kirjanpitotapahtumat ja lisää ne uuteen tilinpäätökseen.
+- Jos haluat kirjata tilinpäätökset eräajona, suorita **Kirjaa tilinpäätökset eräajona** -työ (**Retail ja Commerce \> Retailin ja Commercen IT \> Myyntipistekirjaus \> Kirjaa tilinpäätökset eräajona**).
+
+### <a name="manually-create-statements"></a>Laskelmien luominen manuaalisesti
+
+Tapahtumaraportin ja tilinpäätöksen tyypit voidaan luoda myös manuaalisesti. 
+
+1. Siirry kohtaan **Retail ja Commerce \> Kanavat \> Myymälät** ja valitse **Laskelmat**. 
+2. Valitse **Uusi** ja valitse sitten luotavan laskelman tyyppi. **Laskelmat**-sivun kentissä on valittuun laskelmatyyppiin liittyviä tietoja. **Laskelmaryhmä**-kohdassa näkyvät liittyvät toiminnot.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

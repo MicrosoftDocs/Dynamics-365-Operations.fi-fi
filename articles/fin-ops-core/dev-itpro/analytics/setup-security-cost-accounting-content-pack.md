@@ -1,12 +1,10 @@
 ---
 title: Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen
-description: Tässä ohjeaiheessa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan. Tämä toiminto takaa, että käyttäjät näkevät vain Power BI -tietoja, joihin heillä on käyttöoikeus.
+description: Tässä ohjeaiheessa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751488"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen
 
@@ -44,11 +42,11 @@ Power BI -sisällön omistajan on tehtävä seuraavat toimet täyttääkseen kä
 3. Paikanna **kustannuslaskennan analyysin** Power BI -sisällön tietojoukko.
 4. Avaa Suojaus-välilehti.
 
-    ![Suojaus-välilehden avaaminen](./media/CA-picture-1.png)
+    ![Suojaus-välilehden avaaminen.](./media/CA-picture-1.png)
 
 5. **Kustannusobjektin vastuuhenkilö** -rooli on jo luotu. Lisätä muut kustannuslaskennan käyttöoikeustason organisaatiohierarkian jäsenet.
 
-    ![Jäsenten lisääminen](./media/CA-picture-2.png)
+    ![Jäsenten lisääminen.](./media/CA-picture-2.png)
 
 Käyttäjät, joille lisätään **Kustannusobjektin vastuuhenkilö** -rooli näkevät vain ne tiedot, joihin heillä on käyttöoikeus sen mukaan, miten kustannuslaskennan käyttöoikeustason organisaatiohierarkia on määritetty.
 
@@ -63,3 +61,6 @@ Oletetaan, että organisaatiosi haluaa rajoittaa tietojen käyttöä. Jos jostai
 
 ## <a name="additional-resources"></a>Lisäresurssit
 Lisätietoja Power BI:n rivitason suojauksesta on kohdassa [Mallin tietoturvan hallinta Power BI:ssä](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

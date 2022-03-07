@@ -1,12 +1,10 @@
 ---
-title: Finance and Operations -sovellusten ohjekokemuksen määrittäminen
-description: Tässä ohjeaiheessa käsitellään joidenkin Microsoft Dynamics 365 -sovellusten ohjejärjestelmän osista. Siinä käsitellään myös kyseisten sovellusten yhdistämistä ja annetaan yhteenveto mukautetun ohjeen luontiprosessista.
+title: Taloushallinnon ja toimintojen sovellusten ohjekokemuksen konfiguroiminen
+description: Tässä ohjeaiheessa käsitellään joidenkin Microsoft Dynamics 365 -sovellusten ohjejärjestelmän osista.
 author: margoc
-manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -17,31 +15,34 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798277"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071005"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten ohjekokemuksen määrittäminen
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ohjekokemuksen konfiguroiminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on Finance and Operations -sovellusten, kuten Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce ja Dynamics 365 Human Resources, ohjejärjestelmän osien yleiskatsaus. Ohjeaiheessa käsitellään myös kyseisten osien yhdistämistä ja annetaan yhteenveto mukautetun ohjeen luontiprosessista.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Tässä ohjeaiheessa on taloushallinnon ja toimintojen sovellusten, kuten Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce ja Dynamics 365 Human Resources, ohjejärjestelmän osien yleiskatsaus. Ohjeaiheessa käsitellään myös kyseisten osien yhdistämistä ja annetaan yhteenveto mukautetun ohjeen luontiprosessista.
 
 ## <a name="help-architecture"></a>Ohjearkkitehtuuri
 
-Finance and Operations -sovellukset sisältävä käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [https://docs.microsoft.com/dynamics365](/dynamics365/)-sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
+Taloushallinnon ja toimintojen sovellukset sisältävä käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [Microsoft Dynamics 365 -ohjeet](/dynamics365/) -sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
 
-[![Ohjearkkitehtuuri](./media/help-architecture.png)](./media/help-architecture.png)
+[![Ohjearkkitehtuuri.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Tuotteen ohjejärjestelmä hakee artikkeleita docs.microsoft.comista ja muista yhdistetyistä sivustoista. Se hakee myös liiketoimintaprosessien mallintajaan Microsoft Dynamics Lifecycle Servicesissä (LCS) tallennetuista tehtäväoppaista.
 
 ## <a name="adding-task-guides"></a>Tehtäväoppaiden lisääminen
 
 > [!NOTE]
-> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Human Resourcesissa tai Commercessa. <!--We are currently working to enable this functionality in a future release.--> Perustoimintoja koskevat Human Resourcesin aloituskokemuksen tehtäväoppaat ovat kuitenkin edelleen käytettävissä. Sekä Human Resourcesin että Commercen menettelyohjeet ovat käytettävissä [https://docs.microsoft.com/dynamics365](/dynamics365/)-sivustossa.
+> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Human Resourcesissa tai Commercessa. <!--We are currently working to enable this functionality in a future release.--> Perustoimintoja koskevat Human Resourcesin aloituskokemuksen tehtäväoppaat ovat kuitenkin edelleen käytettävissä. Sekä Human Resourcesin että Commercen menettelyohjeet ovat käytettävissä [Microsoft Dynamics 365 -ohjeet](/dynamics365/) -sivustossa.
 
 Järjestelmänvalvojat voivat määrittää **Järjestelmän parametrit** -sivulla käyttöönottoon soveltuvien tehtäväopaskirjastojen käyttöoikeudet.
 
@@ -49,20 +50,20 @@ Järjestelmänvalvojat voivat määrittää **Järjestelmän parametrit** -sivul
 > - Ohjeen määrittämistä varten kirjauduttava tilille sinä vuokraajana, jossa sovellus on otettu käyttöön.
 > - LCS-kirjastoon ei voi muodostaa yhteyttä sovelluksen siitä esiintymästä, jota käytetään paikallisella virtuaalikiintolevyllä (VHD).
 
-[![Järjestelmäparametrit-lomake ja ohjeen asetukset](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Järjestelmäparametrit-lomake ja ohjeen asetukset.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Ratkaisun tehtäväoppaiden määrittämisohjeet ovat **Järjestelmän parametrit** -sivulla.
 
 > [!IMPORTANT]
 > Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja hae **Järjestelmäparametrit**-sivu valitsemalla **OK**.
 >
-> [![Muodosta yhteys LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Muodosta yhteys LCS:ään")](./media/connect-to-lcs-crop.png)
+> [![Muodosta yhteys LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Yhteyden muodostaminen LCS:ään")](./media/connect-to-lcs-crop.png)
 
 1. Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 2. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
 3. Määritä BPM-kirjastojen näyttöjärjestys. Näyttöjärjestys määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
 
-Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtäväoppaat**-välilehden, jossa on näkyvissä avointa Finance and Operations -sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
+Kun olet suorittanut nämä vaiheet, voit avata **ohjeruudun** ja valita **Tehtäväoppaat**-välilehden, jolla on näkyvissä on avointa taloushallinnon ja toimintojen sovelluksen sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
 
 ### <a name="showing-translated-task-guides"></a>Käännettyjen tehtäväoppaiden näyttäminen
 
@@ -86,7 +87,7 @@ Kumppanit voivat puolestaan siirtää kirjaston yrityskirjastoon ja sisällyttä
 
 ### <a name="connect-a-custom-help-site"></a>Yhdistäminen mukautettuun ohjesivustoon
 
-Finance and Operations -sovelluksia käytetään vain harvoin sellaisenaan. Ratkaisu sen mukautetaan ja laajennetaan organisaation tarpeita vastaavaksi. Myös ohjekokemusta voi mukauttaa ja laajentaa. Mukautetun ohjeen voi esimerkiksi lisätä tuotteen **Ohje**-ruutuun.
+Taloushallinnon ja toimintojen sovelluksia käytetään vain harvoin sellaisenaan. Ratkaisu sen mukautetaan ja laajennetaan organisaation tarpeita vastaavaksi. Myös ohjekokemusta voi mukauttaa ja laajentaa. Mukautetun ohjeen voi esimerkiksi lisätä tuotteen **Ohje**-ruutuun.
 
 Microsoftilla on työkalut, joilla mukautetun ohjeen voi ottaa käyttöön **Ohje**-ruudussa ja yhdistää siihen. Lisätietoja **Ohje**-ruutuun yhdistetyn mukautetun ohjeratkaisun määrittämisestä on kohdassa [Mukautetun ohjeen yleiskatsaus](../../dev-itpro/help/custom-help-overview.md).
 
@@ -99,3 +100,6 @@ Jos haluat tehdä Microsoftin kanssa yhteistyötä ohjeen mukauttamistyökalujen
 [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md)  
 [Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Mukautetun ohjeen GitHub-säilö](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

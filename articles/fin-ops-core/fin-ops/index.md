@@ -1,29 +1,27 @@
 ---
-title: Finance and Operations -sovellusdokumentaatio
-description: Dokumentaatio Finance and Operations -sovelluksille.
-author: robinarh
-manager: AnnBe
-ms.date: 07/25/2019
+title: Finance and Operations -sovellusten dokumentaatio
+description: Finance and Operations -sovellusten dokumentaatio.
+author: tonyafehr
+ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
-ms.reviewer: rhaertle
-ms.custom: 62303
+ms.reviewer: tfehr
+ms.custom: intro-internal
 ms.search.region: Global
-ms.author: margoc
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694382"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075394"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Finance and Operations -sovellusdokumentaatio
+# <a name="finance-and-operations-application-documentation"></a>Finance and Operations -sovellusten dokumentaatio
 
 [!include [banner](includes/banner.md)]
 
@@ -42,11 +40,11 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 <td>
 <h3><a href="get-started/before-you-buy.md">Ennen ostamista</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Kokeiluversion tilaaminen</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Käyttöönottovaihtoehdon valinta</a></p>
- <p><a href="get-started/purchase-on-premises.md">Osta Finance and Operations (on-premises)</a></p>
+ <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Käyttöönottovaihtoehdon valitseminen</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Osta talous- ja toimintasovellus (paikallinen)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Toteutuksen elinkaari</a></h3>
-<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Projektin käyttöönotto</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Valmistellaan käyttöönottoa</a></p>
 
@@ -67,7 +65,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integroinnit</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Liiketoimintatapahtumat</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Tietoyksiköt</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Microsoft Power Automate -integraatio</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integrointi Microsoft Power Automate'n avulla</a></p>
 
 <h3><a href="../../finance/index.md">Taloushallinto</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Ostoreskontra</a></p>
@@ -78,21 +76,23 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Kustannuslaskenta</a></p>
 <p><a href="../../finance/fixed-assets/fixed-assets.md">Käyttöomaisuuserät</a></p>
 <p><a href="../../finance/general-ledger/general-ledger.md">Kirjanpito</a></p>
-<p><a href="../../finance/project-management/overview-project-management-accounting.md">Projektinhallinta</a></p>
+<p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Projektinhallinta</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Julkinen sektori</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Aluekohtaiset pakolliset ominaisuudet</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Henkilöstöhallinto</a></h3>
+<p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Työntekijän itsepalvelu</a></p>
+<p><a href="../../human-resources/hr-personnel-departments-jobs-positions.md">Henkilöstön hallinta</a></p>
+<p><a href="../../human-resources/hr-leave-and-absence-overview.md">Loma ja poissaolo</a></p>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Edut</a></p>
-<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Työntekijän kehitys ja koulutus</a></p>
-<p><a href="../../human-resources/hr-learning-questionnaires.md">Kyselylomakkeet</a></p>
-<p><a href="hr/manage-recruiting-process.md">Työhönotto</a></p>
-<p><a href="hr/localizations/noam-usa-payroll.md">Yhdysvaltojen palkanlaskenta</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Työntekijän kehitys</a></p>
+<p><a href="../../human-resources/hr-learning-courses.md">Oppiminen</a></p>
+ <p><a href="hr/localizations/noam-usa-payroll.md">Yhdysvaltojen palkanlaskenta</a></p>
 
 </td>
 <td>
 <h3><a href="../../supply-chain/index.md">Toimitusketjun hallinta</a></h3>
-<p><a href="../../supply-chain/cost-management/costing-sheets.md">Kustannushintojen hallinta</a></p>
+<p><a href="../../supply-chain/cost-management/costing-sheets.md">Kustannusten hallinta</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Varastonhallinta</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Pääsuunnittelu</a></p>
 <p><a href="../../supply-chain/procurement/procurement-sourcing-overview.md">Hankinta</a></p>
@@ -128,16 +128,11 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 </td>
 <td>
 <h3>Liittyvät tuotteet</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
-<p><a href="../../retail/call-center-functionality.md">Puhelinkeskus</p>
-<p><a href="../../retail/define-maintain-retail-channels.md">Kanavan määrittäminen ja hallinta</p>
-<p><a href="../../retail/retail-peripherals-overview.md">MPOS ja Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commercen kehittäminen ja hallinta</p>
-
-<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
-<p><a href="../../human-resources/hr-admin-overview.md">Järjestelmänvalvojan opas</a></p>
-<p><a href="../../human-resources/hr-developer-overview.md">Kehittäjäopas</a></p>
-<p><a href="../../human-resources/hr-hrpro-overview.md">Käyttöopas</a></p>
+<h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
+<p><a href="../../commerce/call-center-functionality.md">Puhelinkeskus</p>
+<p><a href="../../commerce/define-maintain-retail-channels.md">Kanavan määrittäminen ja hallinta</p>
+<p><a href="../../commerce/retail-peripherals-overview.md">MPOS ja Cloud POS</p>
+<p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Commercen kehittäminen ja hallinta</p>
 
 
 </td>
@@ -145,3 +140,6 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

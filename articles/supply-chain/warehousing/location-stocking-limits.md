@@ -2,26 +2,23 @@
 title: Sijainnin varastointirajoitukset
 description: Tässä aiheessa käsitellään sijainnin varastointirajoituksia.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
-ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
+ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "4607276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714159"
 ---
 # <a name="location-stocking-limits"></a>Sijainnin varastointirajoitukset
 
@@ -84,7 +81,7 @@ Tässä esimerkissä suoritetaan ostotilauksen vastaanoton työnkulku kahdelle r
 
 Ensimmäinen vastaanotettu määrä on *4*, yksikkö *KL* ja koko *S*. Tarkista luodun työn sijainnin asetusrivi. Seuraava vastaanotettu määrä on *4*, yksikkö *KL* ja koko *L*. Tarkista luodun työn sijainnin asetusrivi.
 
-1. Kirjaudu varastosovelluksessa sisään käyttämällä lukua *24* käyttäjätunnuksena ja lukua *1* salasanana.
+1. Kirjaudu varastonhallinnan mobiilisovelluksessa sisään käyttämällä lukua *24* käyttäjätunnuksena ja lukua *1* salasanana.
 1. Valitse **Saapuva** \> **Oston vastaanotto**.
 1. Vastaanotto: *4* *KL*, nimiketunnus *D0013*, koko *S*.
 1. Tarkista luotu hyllytystyö. Tuloksen pitäisi olla seuraava:
@@ -104,3 +101,6 @@ Tämän selittäminen edellyttää, että tiedät sijainnin varastointirajoitust
 
 > [!NOTE]
 > Sijoituksen varastointirajoitusten ei voi hallita esimerkiksi sellaisten nimikkeiden täydennystä, joilla on eri määriä samassa sijainnissa. Siinä tapauksessa on käytettävä *täydennysmallia*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

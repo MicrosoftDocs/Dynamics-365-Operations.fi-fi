@@ -2,11 +2,9 @@
 title: Kuratoitujen suositusten manuaalinen luominen
 description: Tässä ohje aiheessa kerrotaan, miten jälleenmyyjät voivat luoda ja hallita tuoteluetteloita Microsoft Dynamics 365 Commerce -sovelluksen asiakkaita varten.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9ce8887f3cd7da0e250d3b0ffe96b222953de44
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 00f7d076d745cb750dbfdd3a95130196edd888bc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965350"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795759"
 ---
 # <a name="manually-create-curated-recommendations"></a>Kuratoitujen suositusten manuaalinen luominen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohje aiheessa kerrotaan, miten jälleenmyyjät voivat luoda ja hallita tuotesuositusluetteloita Microsoft Dynamics 365 Commerce -sovelluksen asiakkaita varten.
+Tässä ohje aiheessa kerrotaan, miten jälleenmyyjät voivat luoda ja hallita tuotesuosituksia Microsoft Dynamics 365 Commerce -sovelluksen asiakkaita varten.
 
 Kuratoidut luettelot ovat yksittäisen sellaisen sisällön kokoelmia, jonka ihmiset ovat luoneet ja jota he kuratoivat.  
 
@@ -74,3 +72,6 @@ Voit luoda uuden kuratoidun tuotesuositusluettelon seuraavasti.
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

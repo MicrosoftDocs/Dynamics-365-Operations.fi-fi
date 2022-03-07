@@ -1,42 +1,33 @@
 ---
-title: Finance and Operations -sovellusten kaksoiskirjoitusmoduulin ongelmien vianmääritys
-description: Tässä ohjeaiheessa on vianmääritys tietoja, joiden avulla voit korjata Finance and Operations -sovellusten kaksoiskirjoitusmoduulin ongelmia.
+title: Taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusongelmien vianmääritys
+description: Tässä ohjeaiheessa on vianmääritys tietoja, joiden avulla voit korjata taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusmoduulin ongelmia.
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683620"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061805"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Finance and Operations -sovellusten kaksoiskirjoitusmoduulin ongelmien vianmääritys
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusongelmien vianmääritys
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista Finance and Operations -sovellusten ja Dataversen välillä. Erityisesti se tarjoaa vianmääritystietoja, joiden avulla voit korjata Finance and Operations -sovellusten **kaksoiskirjoitusmoduulin** ongelmia.
+
+Tässä ohjeaiheessa on vianetsintätietoja kaksoiskirjoituksen integroinnista taloushallinnon ja toimintojen sovellusten ja Dataversen välillä. Erityisesti se tarjoaa vianmääritystietoja, joiden avulla voit korjata taloushallinnon ja toimintojen sovellusten **Kaksoiskirjoitus**-moduulin ongelmia.
 
 > [!IMPORTANT]
 > Jotkin tämän ohjeaiheen osoitteet saattavat edellyttää joko järjestelmänvalvojan roolia tai Microsoftin Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tunnistetietoja.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Kaksoiskirjoitusmoduulia ei voi ladata Finance and Operations -sovellukseen
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Kaksoiskirjoitusmoduulia ei voi ladata taloushallinnon ja toimintojen sovellukseen
 
 Jos **Kaksoiskirjoitus**-sivua ei voi avata valitsemalla **Tietojen hallinta** -työtilassa **Kaksoiskirjoitus**-ruutu, tietojen integrointipalvelu ei todennäköisesti ole toiminnassa. Luo tukipyyntö, joka pyytää tietojen integrointipalvelun uudelleenkäynnistystä.
 
@@ -44,10 +35,9 @@ Jos **Kaksoiskirjoitus**-sivua ei voi avata valitsemalla **Tietojen hallinta** -
 
 **Tarvittavat tunnistetiedot ongelman korjaamiseksi:** Sama käyttäjä, joka määrittää kaksoiskirjoituksen.
 
-Näyttöön saattaa tulla seuraava virhesanoma, kun yrität määrittää uuden entiteetin kaksoiskirjoittamista varten. Ainoa käyttäjä, joka voi luoda yhdistämismäärityksen, on käyttäjä, joka määrittää kaksoiskirjoituksen yhteyden.
+Seuraava virhesanoma voi avautua, kun yrität määrittää uuden taulukon kaksoiskirjoittamista varten. Ainoa käyttäjä, joka voi luoda yhdistämismäärityksen, on käyttäjä, joka määrittää kaksoiskirjoituksen yhteyden.
 
-*Vastauksen tilakoodi ei tarkoita onnistumista: 401 (Luvaton)*
-
+*Vastauksen tilakoodi ei tarkoita onnistumista: 401 (Luvaton).*
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Virhe avattaessa kaksoiskirjoituskäyttöliittymää
 
@@ -59,13 +49,17 @@ Jos haluat korjata ongelman, kirjaudu sisään käyttämällä InPrivate-ikkunaa
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Virhe yhdistettäessä ympäristöä kaksoiskirjoittamista tai uuden taulun yhdistämismääritystä varten
 
-**Ongelman korjaava rooli:** Järjestelmän ylläpitäjä sekä Finance and Operations -sovelluksissa ja Dataversessä.
+**Ongelman korjaamisen edellyttämä rooli:** Järjestelmänvalvoja sekä taloushallinnon ja toimintojen sovelluksessa että Dataversessä.
 
 Saatat kohdata seuraavan virheen linkittäessäsi tai luodessasi karttoja:
 
-*Vastauksen tilakoodi ei ilmaise onnistumista: 403 (tokenexchange).<br> Istunnon tunnus: \<your session id\><br> Päätehtävän tunnus: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
-Tämä virhe voi ilmetä, jos sinulla ei ole riittäviä oikeuksia yhdistää kaksoiskirjoitukseen tai luoda karttoja. Tämä virhe voi ilmetä myös, jos Dataverse -ympäristö nollautuu ilman kaksoiskirjoituksen linkityksen poistamista. Kuka tahansa käyttäjä, jolla on järjestelmänvalvojan rooli sekä Finance and Operations-sovelluksissa että Dataversessä voi linkittää ympäristöt. Vain kaksoiskirjoitusyhteyden asetusten luonut käyttäjä voi lisätä uusia taulujen yhdistämismäärityksiä. Asennuksen jälkeen kuka tahansa järjestelmänvalvoja, jolla on järjestelmänvalvojan rooli, voi valvoa tilaa ja muokata yhdistämismäärityksiä.
+Tämä virhe voi ilmetä, jos sinulla ei ole riittäviä oikeuksia yhdistää kaksoiskirjoitukseen tai luoda karttoja. Tämä virhe voi ilmetä myös, jos Dataverse -ympäristö nollautuu ilman kaksoiskirjoituksen linkityksen poistamista. Kuka tahansa käyttäjä, jolla on järjestelmänvalvojan rooli sekä taloushallinnon ja toimintojen sovelluksissa että Dataversessä voi linkittää ympäristöt. Vain kaksoiskirjoitusyhteyden asetusten luonut käyttäjä voi lisätä uusia taulujen yhdistämismäärityksiä. Asennuksen jälkeen kuka tahansa järjestelmänvalvoja, jolla on järjestelmänvalvojan rooli, voi valvoa tilaa ja muokata yhdistämismäärityksiä.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Virhe yritettäessä pysäyttää taulun yhdistämismääritystä
 
@@ -77,13 +71,29 @@ Tämä virhe ilmenee, kun linkitetty Dataverse -ympäristö ei ole käytettävis
 
 Voit korjata ongelman luomalla pyynnön tietojen integrointitiimille. Liitä verkon jäljitys, jotta tietojen integrointiryhmä voi merkitä karttojen tilaksi **Ei käynnissä** taustalla.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Virhe yritettäessä käynnistää taulun yhdistämismääritystä
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Virheitä yritettäessä käynnistää taulun yhdistämismääritystä
 
-Näyttöön voi tulla seuraavankaltainen virhesanoma, kun yrität määrittää yhdistämismäärityksen tilaksi **Käytössä**:
+### <a name="unable-to-complete-initial-data-sync"></a>Tietojen ensimmäistä synkronointia ei voi suorittaa loppuun
+
+Näyttöön saattaa tulla seuraavankaltainen virhe, kun tietojen ensimmäinen synkronointi yritetään suorittaa:
 
 *Tietojen alkuperäistä synkronointia ei voi suorittaa loppuun. Virhe: kaksoiskirjoitusvirhe - laajennuksen rekisteröiminen epäonnistui: kaksoiskirjoitushaun metatietoja ei voi muodostaa. Virheen objektin viitettä ei ole määritetty objektin esiintymälle.*
 
-Tämän virheen korjaus määräytyy virheen syyn mukaan:
+Tämä virhe voidaan saada, kun yhdistämismäärityksen kyseiseksi tilaksi yritetään määrittää **Käytössä**. Korjaus määräytyy virheen syyn mukaan:
 
 + Jos yhdistämismääritykset ovat riippuvaisia määrityksistä, varmista, että otat käyttöön tämän taulun yhdistämismäärityksen sidonnaiset määritykset.
-+ Yhdistämismäärityksestä saattaa puuttua lähde- tai kohdekentät. Jos Finance and Operations -sovelluksen kenttä puuttuu, noudata [Puuttuvien yksikkökenttien ongelma yhdistämismäärityksissä](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps) -kohdan ohjeita. Jos kenttä Dataversessä puuttuu, valitse yhdistämismäärityksessä **Päivitä taulut** -painike, jotta kentät täytetään automaattisesti takaisin yhdistämismääritykseen.
++ Yhdistämismäärityksestä saattaa puuttua lähde- tai kohdesarakkeet. Jos taloushallinnon ja toimintojen sovelluksen sarake puuttuu, noudata [Puuttuvien taulukkosarakkeiden ongelma yhdistämismäärityksissä](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) -kohdan ohjeita. Jos Dataversen sarake puuttuu, valitse yhdistämismäärityksessä **Päivitä taulut** -painike, jotta sarakkeet täytetään automaattisesti takaisin yhdistämismääritykseen.
+
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Versioristiriitavirhe ja kaksoiskirjoitusratkaisujen päivittäminen
+
+Seuraavat virheet voidaan saada, kun taulukon yhdistämismääritykset yritetään suorittaa:
+
++ *Asiakasryhmät (msdyn_customergroups): kaksoiskirjoitusvirhe – Dynamics 365 for Sales -ratkaisulla Dynamics365Company on versioristiriita. Versio: 2.0.2.10 Tarvittava versio: 2.0.133*
++ *Dynamics 365 for Sales -ratkaisussa Dynamics365FinanceExtended on versioristiriita. Versio: 1.0.0.0 Tarvittava versio: 2.0.227*
++ *Dynamics 365 for Sales -ratkaisussa Dynamics365FinanceAndOperationsCommon on versioristiriita. Versio: 1.0.0.0 Tarvittava versio: 2.0.133*
++ *Dynamics 365 for Sales -ratkaisussa CurrencyExchangeRates on versioristiriita. Versio: 1.0.0.0 Tarvittava versio: 2.0.133*
++ *Dynamics 365 for Sales -ratkaisussa Dynamics365SupplyChainExtended on versioristiriita. Versio: 1.0.0.0 Tarvittava versio: 2.0.227*
+
+Ongelmat korjataan päivittämällä kaksoiskirjoitusratkaisut Dataversessa. Päivitys on muistettava tehdä uusimpaan tarvittavaa ratkaisuversiota vastaavaan ratkaisuun.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

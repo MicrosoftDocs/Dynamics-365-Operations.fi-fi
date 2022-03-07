@@ -1,12 +1,10 @@
 ---
 title: Tuoterakenteet ja kaavat
 description: Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace, ProdBOM, ProdJournalTransBOM, ProdBOMCurrent, PmfBOMDesignerEditCoBy, ProdJournalPickingListLineSummary, ProdBOMOverview, PmfCoReqPlanning, EcoResProductProdTypeFormulaNoActiveFormulaFormPart, EcoResItemsMissingActiveRouteVersionFormPart, EcoResItemsProdTypeBOMExpiringBOMFormPart, BOMDesignerBOMVersion, BOMExpandPurch, BOMChangeLine, BOMExpandSales, EcoResItemsProdTypeBOMExpiringRouteFormPart, EngChgEcmBomDesigner, EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmBOMCopyDialog, EngChgEcmBomDesignerEditBom, BOMDesignerFilterDialog, BOMDesignerFilterDialog, BOMPartOf, BOMSetupReportFinish, EcoResItemsMissingActiveBOMVersionFormPart, BOMIdLookup, EcoResProductProdTypeFormulaNoActiveRouteFormPart, BOMExpandPurchRFQ, EngChgCaseRouteTablePart
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01491f15405e28e63e4b83f9a9c7af90c2e4a1b5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966477"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578005"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Tuoterakenteet ja kaavat
 
@@ -31,8 +29,7 @@ ms.locfileid: "4966477"
 
 Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää. Tuoterakenteet ja kaavat määrittävät tietyn tuotteen tarvittavat materiaalit tai ainesosat. Kaavoissa on myös oheis- ja sivutuotteita, jotka vastaanotetaan tietyn tuotannon yhteydessä. 
 
-<a name="bills-of-materials"></a>Tuoterakenteet
-------------------
+## <a name="bills-of-materials"></a>Tuoterakenteet
 
 Tuoterakenne (BOM) määrittää komponentit, joita tarvitaan, jotta tuote voidaan valmistaa. Komponentit voivat olla raaka-aineita, puolivalmiita tuotteita tai ainesosia. Joissakin tapauksissa palveluihin voidaan viitata tuoterakenteessa. Kuitenkin tuoterakenteet kuvailevat tyypillisesti tarvittavia *materiaaliresursseja*.  
 
@@ -117,3 +114,6 @@ Valitse **Toimittaja**-rivityyppi, jos tuotantoprosessi käyttää alihankkijaa 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

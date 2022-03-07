@@ -1,10 +1,12 @@
 ---
 title: Ostosopimukset
 description: Tässä artikkelissa on tietoja ostosopimuksista. Ostosopimus on sopimus, joka velvoittaa organisaation ostamaan tietyn määrän tai tietyllä summalla, käyttämällä useita ostotilauksia jonkin ajanjakson aikana. Vastineeksi tästä sitoumuksesta, ostaja saa erityiset hinnat ja alennukset.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e9d97461efb39154e1e9b63c20669985aad349d0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103735"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5247763"
 ---
 # <a name="purchase-agreements"></a>Ostosopimukset
 
@@ -41,7 +43,10 @@ Voit estää ostosopimuksen käytön ja vahvistamisen merkitsemällä sopimuksen
 Voit määrittää ensisijaisen vastuullisen työntekijän ja toissijaisen vastuullisen työntekijän ostosopimuksen luokittelussa. Nämä arvot periytyvät tuloksena olevasta ostosopimuksesta. Sinun ei tarvitse lisätä vastuullisia työntekijöitä ostosopimukseen, ja niitä voidaan muokata suoraan tapauskohtaisesti ostosopimuksen perusteella. Et voi määrittää toissijaista vastuutyöntekijää ilman ensisijaista vastuullista työntekijää, vaikka sinulla ei ole toissijaista vastuutyöntekijää. Et voi määrittää samaa työntekijää sekä ensisijaiseksi että toissijaiseksi vastuulliseksi työntekijäksi.
 
 > [!IMPORTANT]
-> Jotta voit käyttää vastuullinen osapuoli -toimintoa, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Ostosopimuksen vastuullinen osapuoli* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+> Ennen kuin käytät vastuullinen osapuoli -toimintoa, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+> 
+> - **Moduuli:** *Hankinnan tehtävät*
+> - **Ominaisuuden nimi:** *Ostosopimuksen vastuullinen osapuoli*
 
 ## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen rivi ostosopimuksessa velvoittaa ostamaan jotakin. Voit täyttää sitoumuksen käyttämällä useiden ostotilausten rivejä. On neljänlaisia sitoumuksia:
@@ -99,10 +104,12 @@ Jos luot konsernin sisäisen ostosopimuksen, joka käyttää konsernin sisäist�
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Ostosopimusten taloudelliset dimensiot
 Voit kopioida taloudelliset dimensiot asiakirjojen ylätunnisteisiin tai ostosopimusten yksittäisille riveille. Jos muutat sopimuksen otsikon tai sopimusrivin dimensioita, muutos ei vaikuta vapautettuihin tilauksiin mutta sitä käytetään uusissa tilauksissa.
 
-## <a name="additional-resources"></a>Lisäresurssit
+<a name="additional-resources"></a>Lisäresurssit
+--------
 
-- [Ostosopimuksen luominen](tasks/create-purchase-agreement.md)
-- [Ostosopimuksen käyttö ostotilausta luotaessa](tasks/create-purchase-release-order-purchase-agreement.md)
+[Luo ostosopimus](tasks/create-purchase-agreement.md)
+
+[Vapautustilauksen luominen ostosopimuksesta](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

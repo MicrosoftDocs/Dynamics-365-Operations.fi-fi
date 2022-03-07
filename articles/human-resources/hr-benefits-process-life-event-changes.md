@@ -2,15 +2,12 @@
 title: Elämäntapahtumien muutosten käsittely
 description: Käsittele elämäntapahtumien muutokset Microsoft Dynamics 365 Human Resourcesissa.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39d1e94347809a1756fc4f66e5edc345c70eaf39
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1bfbd7347581e57edcab39a675b17ef66e262582
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418278"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059013"
 ---
 # <a name="process-life-event-changes"></a>Elämäntapahtumien muutosten käsittely
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Käsittele elämäntapahtumien muutokset Microsoft Dynamics 365 Human Resourcesissa kahden elämäntapahtumamuutoksen osalta:
 
@@ -52,3 +51,6 @@ Käsittele elämäntapahtumien muutokset Microsoft Dynamics 365 Human Resourcesi
    4. Valitse **OK**. Prosessi suoritetaan määrittämilläsi parametreilla.
 
 4. Valitse **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

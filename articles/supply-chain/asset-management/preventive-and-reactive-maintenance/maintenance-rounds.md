@@ -1,12 +1,10 @@
 ---
 title: Ylläpitokierrokset
 description: Tässä ohjeaiheessa kerrotaan ylläpitokierroksista resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 62f812c7c7fa06deb5f41508044b029e6c5ca4a0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018543"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825731"
 ---
 # <a name="maintenance-rounds"></a>Ylläpitokierrokset
 
@@ -116,3 +114,6 @@ Alla olevat kaksi kuvitusta näyttävät työn aikataulutuksen **Ajoita ylläpit
 - Voit määrittää eräajon **Suorita taustalla** -pikavälilehdessä, jolloin kierrokset ajoitetaan säännöllisin väliajoin.  
 - Jos kierros sisältyy useisiin työtilauspooleihin (lisätietoja on kohdassa [Työtilauspoolit](../work-orders/work-order-pools.md)), kullekin poolille näytetään yksi tietue kohdassa **Avaa ylläpitoaikataulupoolit**. Tämä tehdään työtilauspoolien suodatusasetusten optimoimiseksi.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

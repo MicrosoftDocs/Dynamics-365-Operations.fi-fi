@@ -1,31 +1,30 @@
 ---
-title: Etujen hallinnan parametrien määrittäminen yrityskohtaisesti
-description: Määritä etujen hallinnan parametrit yrityskohtaisesti Microsoft Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-manager: tfehr
-ms.date: 12/07/2020
+title: Etujen hallinnan parametrien määrittäminen yritystä kohti
+description: Tässä aiheessa käsitellään yrityskohtaisten etujen hallinnan parametrien määrittämistä Microsoft Dynamics 365 Human Resourcesissa.
+author: twheeloc
+ms.date: 8/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2943d0095e4c9421725b90e579b7cbb841038ab7
-ms.sourcegitcommit: fd097f6f76f0d8428038fa3655b3188bf093b517
+ms.openlocfilehash: 2d0bc8d511126901be09028dc3c10636f2902e79
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692742"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423281"
 ---
 # <a name="configure-benefits-management-parameters-per-company"></a>Etujen hallinnan parametrien määrittäminen yrityskohtaisesti
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Jokaiselle etuja tarjoavalle yritykselle on määritettävä asetukset etujen vahvistussähköposteja varten.
 
@@ -37,8 +36,10 @@ Jokaiselle etuja tarjoavalle yritykselle on määritettävä asetukset etujen va
 
    | Kenttä | kuvaus |
    | --- | --- |
-   | **Lähetä vahvistussähköposti** | Kun tämä toiminto on käytössä, vahvistussähköposti lähetetään työntekijöille näiden poistuessa etuihin rekisteröitymisen kokemuksesta työntekijän itsepalvelussa. |
+   | **Lähetä vahvistussähköposti** | Kun tämä toiminto on käytössä, vahvistussähköposti lähetetään työntekijöille näiden poistuessa etuihin rekisteröitymisen kokemuksesta **työntekijän itsepalvelussa**. |
    | **Vahvistussähköpostin malli** | Valitse organisaation sähköpostiviestimalli, jota käytetään rekisteröitymisvahvistuksen lähettämisessä. Jos et valitse mallia, lähetetään seuraavat yleiset sähköpostiviestit:<br><br>%EmployeeFirstName%,<br><br>Onnittelut! Etuihin rekisteröityminen onnistui.<br><br>Kiitos,<br><Yrityksen/organisaation nimi> - edut. |
    | **Lähettäjän oletussähköpostiosoite** | Sähköpostiosoite, jota käytetään vahvistussähköpostiviestin lähettämisessä. |
 
 3. Valitse **Tallenna**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

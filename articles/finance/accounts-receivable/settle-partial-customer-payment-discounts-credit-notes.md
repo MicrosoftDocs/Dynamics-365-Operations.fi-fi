@@ -2,28 +2,25 @@
 title: Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen
 description: Tässä artikkelissa käydään läpi skenaario, jossa käteisalennus tehdään hyvityslaskussa, kun myös alkuperäisellä laskulla on käteisalennus.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14564
 ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 6476fed0ac10888c51266128f950fc0e1418b13c743894ab0992d051e733c4e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4442939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740143"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen
 
@@ -42,7 +39,7 @@ Asiakkaalla 4035 on lasku, jonka arvo on 1 000,00, ja hyvityslasku, jonka arvo o
 | CCRN-10050 | Hyvityslasku      | 28.6.2015 | KR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Hyvityslaskun tilittäminen laskun kanssa
-Arnie avaa **Asiakastapahtumat**-sivulla **Selvitä tapahtumat** -sivun. Hän voi tilittää laskun ja hyvityslaskun **Selvitä tapahtumat** -sivulla. Hän tarkistaa tilityksen yhteydessä käteisalennuksen päivämäärät ja summat. Hän merkitsee asiakirjat ja tilittää sitten tapahtumat napsauttamalla **Kirjaa**. Hyvityslaskuun sisältyy alennus -1,00, koska Fabrikam myöntää alennuksia hyvityslaskuista.
+Arnie avaa **Asiakastapahtumat**-sivulla **Selvitä tapahtumat** -sivun. Arnie voi tilittää laskun ja hyvityslaskun **Selvitä tapahtumat** -sivulla. Arnie tarkistaa tilityksen yhteydessä käteisalennuksen päivämäärät ja summat. Arnie merkitsee asiakirjat ja tilittää sitten tapahtumat napsauttamalla **Kirjaa**. Hyvityslaskuun sisältyy alennus -1,00, koska Fabrikam myöntää alennuksia hyvityslaskuista.
 
 | Merkitse     | Käytä käteisalennusta | Tosite    | Tili | Päivämäärä      | Eräpäivä  | Lasku  | Summa tapahtuman valuuttana | Valuutta | Täsmäytettävä summa |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
@@ -61,3 +58,6 @@ Tilitys on 100,00, ja siihen sisältyy maksusuoritus 99,00 ja alennus 1,00.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

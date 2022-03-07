@@ -2,29 +2,22 @@
 title: Kustannuslaskentalomakkeet
 description: Kustannuslaskentalomakkeen määrittämiseen liittyy kaksi tavoitetta. Ensimmäinen tavoite on valmistettua tuotetta tai tuotantotilausta koskevien myytyjen tuotteiden kustannustietojen esitysmuodon määrittäminen. Tätä esitysmuotoa kutsutaan kustannuslaskentalomakkeeksi. Toinen tavoite on epäsuorien kustannusten laskemisen perustan määrittäminen. Kustannuslaskennan määritys perustuu kustannusryhmän toimintoon, jota käytetään tietojen esittämisessä ja epäsuorien kustannusten laskentakaavoissa. Tässä artikkelissa kuvataan kustannuslaskentalomakkeen määrityksen kaksi tavoitetta.
 author: AndersGirke
-manager: tfehr
-ms.date: 06/20/2017
+ms.date: 11/18/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53201
-ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f83c18bb8700e274bcf8cb369a7436a17450bf7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 64b8a9b8b29193f25e706e52424de2af3454aec8
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427359"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825355"
 ---
 # <a name="costing-sheets"></a>Kustannuslaskentalomakkeet
 
@@ -32,9 +25,18 @@ ms.locfileid: "4427359"
 
 Kustannuslaskentalomakkeen määrittämiseen liittyy kaksi tavoitetta. Ensimmäinen tavoite on valmistettua tuotetta tai tuotantotilausta koskevien myytyjen tuotteiden kustannustietojen esitysmuodon määrittäminen. Tätä esitysmuotoa kutsutaan kustannuslaskentalomakkeeksi. Toinen tavoite on epäsuorien kustannusten laskemisen perustan määrittäminen. Kustannuslaskennan määritys perustuu kustannusryhmän toimintoon, jota käytetään tietojen esittämisessä ja epäsuorien kustannusten laskentakaavoissa. Tässä artikkelissa kuvataan kustannuslaskentalomakkeen määrityksen kaksi tavoitetta. 
 
+Seuraavassa taulukossa luetellaan käyttövalmiit suojausroolit, jotka voivat käyttää kustannuslaskentalomakkeita, mukaan lukien kullekin roolille oletusasetuksissa myönnetty käyttöoikeustaso.
+
+| Rooli | Käyttöoikeudet
+|---|---|
+| Laskentapäällikkö | Muokkaa |
+| Varastokirjanpitäjän apulainen | Näytä. |
+| Varastokirjanpitäjä | Näytä. |
+
 Kustannuslaskentalomake on tietyn muotoinen esitys valmistettua nimikettä tai tuotantotilausta koskevien myytyjen tuotteiden kustannustiedoista. Määrittäessäsi kustannuslaskentalomaketta määrität tietojen muodon ja välillisten kustannusten laskentaperusteen. Kustannuslaskennan määritys perustuu kustannusryhmätoimintoihin, joita käytetään tietojen esittämisessä ja välillisten kustannusten laskentakaavoissa. Seuraavassa on tietoja kustannuslaskentalomakkeen kahdesta tavoitteesta:
--   **Kustannuslaskentatietueen muoto määritetään.** Kustannuslaskentalomakkeen käyttäjän määrittämä muoto määrittää niiden kustannusten kustannussegmentoinnin, jotka sisältävät valmistettujen nimikkeiden myytyjen tuotteiden kustannukset. Esimerkiksi nimikkeen myytyjen tuotteiden kustannuksia koskevat tiedot voidaan jakaa kustannusryhmien perusteella materiaaliin, työhön ja yleiskustannuksiin. Nämä kustannusryhmät on määritetty nimikkeisiin, reititystoimintojen kustannusluokkiin sekä epäsuorien kustannusten laskukaavoihin. Kustannuslaskentalomakkeen muoto edellyttää tavallisesti välisummien käyttämistä, kun kustannusryhmiä on määritetty useita. Esimerkiksi useita materiaaleihin liittyviä kustannusryhmiä voidaan yhdistää. Kustannuslaskentalomakkeen muodon määritelmä on valinnainen, mutta kustannuslaskentalomakkeen muoto täytyy määrittää, jos epäsuoria kustannuksia lasketaan.
--   **Epäsuorien kustannusten laskentaperusta määritetään.** Välilliset kustannukset kuvastavat valmistetun nimikkeen tuotantoon liittyviä valmistuksen yleiskustannuksia. Välillisten kustannusten laskentakaavan voi esittää lisämaksuna tai hintana. Lisämaksu tarkoittaa arvon prosenttiosuutta ja hinta puolestaan reitityksen työvaiheen tuntikohtaista summaa. Kustannusryhmä määrittää laskentakaavan perustan, joka voi olla esimerkiksi työkustannusryhmää koskeva 100 prosentin lisämaksu tai koneen kustannusryhmää koskeva 50,00 USD:n tuntihinta. Jos haluat määrittää laskentakaavan ja siihen liittyvän kustannusryhmäperustan, kustannuslaskentalomake edellyttää, että määrität yleiskustannuksia kuvaavan kustannusryhmän ja valitset lisämaksu- tai hintamallin.
+
+- **Kustannuslaskentatietueen muoto määritetään.** Kustannuslaskentalomakkeen käyttäjän määrittämä muoto määrittää niiden kustannusten kustannussegmentoinnin, jotka sisältävät valmistettujen nimikkeiden myytyjen tuotteiden kustannukset. Esimerkiksi nimikkeen myytyjen tuotteiden kustannuksia koskevat tiedot voidaan jakaa kustannusryhmien perusteella materiaaliin, työhön ja yleiskustannuksiin. Nämä kustannusryhmät on määritetty nimikkeisiin, reititystoimintojen kustannusluokkiin sekä epäsuorien kustannusten laskukaavoihin. Kustannuslaskentalomakkeen muoto edellyttää tavallisesti välisummien käyttämistä, kun kustannusryhmiä on määritetty useita. Esimerkiksi useita materiaaleihin liittyviä kustannusryhmiä voidaan yhdistää. Kustannuslaskentalomakkeen muodon määritelmä on valinnainen, mutta kustannuslaskentalomakkeen muoto täytyy määrittää, jos epäsuoria kustannuksia lasketaan.
+- **Epäsuorien kustannusten laskentaperusta määritetään.** Välilliset kustannukset kuvastavat valmistetun nimikkeen tuotantoon liittyviä valmistuksen yleiskustannuksia. Välillisten kustannusten laskentakaavan voi esittää lisämaksuna tai hintana. Lisämaksu tarkoittaa arvon prosenttiosuutta ja hinta puolestaan reitityksen työvaiheen tuntikohtaista summaa. Kustannusryhmä määrittää laskentakaavan perustan, joka voi olla esimerkiksi työkustannusryhmää koskeva 100 prosentin lisämaksu tai koneen kustannusryhmää koskeva 50,00 USD:n tuntihinta. Jos haluat määrittää laskentakaavan ja siihen liittyvän kustannusryhmäperustan, kustannuslaskentalomake edellyttää, että määrität yleiskustannuksia kuvaavan kustannusryhmän ja valitset lisämaksu- tai hintamallin.
 
 Jokainen laskukaava täytyy lisätä kustannustietueena. Kustannustietue koostuu määritetystä kustannuslaskelmaversiosta, lisämaksuprosentista tai hinnasta, kustannusryhmän perustasta, tilasta ja voimaantulopäivästä. Kun kustannustietue lisätään, sen tila on aluksi **Odottaa** ja siinä on voimaantulopäivämäärä. Kun kustannustietue aktivoidaan, tila päivitetään niin, että tietue on nykyinen aktiivinen tietue ja voimaantulopäivämäärä päivittyy aktivointipäiväksi. Kustannustietueessa voidaan määrittää myös toimipaikka toimipaikkakohtaista laskentakaavaa varten. Voit myös jättää **Toimipaikka**-kentän tyhjäksi, jos haluat, että laskentakaavaa käytetään koko yrityksessä. Kustannustietue voi myös koostua määritetystä nimikkeestä tai nimikeryhmästä, kun laskentakaava on merkitty nimikekohtaiseksi. 
 
@@ -46,7 +48,4 @@ Kun olet määrittänyt kustannuslaskentalomakkeen muodon ja välillisten kustan
 
 Kustannuslaskentalomake näkyy **Laske nimikekustannus** -sivun osana. Kustannuslaskentalomake voidaan näyttää valmistetun nimikkeen laskettujen kustannusten tietueelle **Nimikkeen hinta** -sivulla tai tilauskohtaiselle laskentatietueelle **Tuoterakenteen laskemisen tulokset** -sivulla. Se voidaan näyttää myös tuotantotilauksen **Hinnan laskenta** -sivun osana.
 
-
-
-
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

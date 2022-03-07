@@ -2,16 +2,13 @@
 title: Ota tuotesuositukset käyttöön
 description: Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesuosituksia voidaan tehdä Microsoft Dynamics 365 Commerce -asiakkaiden käyttöä varten.
 author: bebeale
-manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 59d6b298896c92cbc0f6bbae17096ee1f027b922
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411854"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799152"
 ---
 # <a name="enable-product-recommendations"></a>Ota tuotesuositukset käyttöön
 
@@ -114,3 +111,6 @@ Lisätietoja mukautetuista suosituksista on kohdassa [Mukautettujen suositusten 
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

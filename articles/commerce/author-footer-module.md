@@ -2,35 +2,30 @@
 title: Alatunnistemoduuli
 description: Tässä ohjeaiheessa on tietoja alatunnistemoduuleista ja niiden muokkaamisesta Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 42a71ea9498461febca80952acc3158517918332
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6e7b0ad4fe0723575a0ec55a9b02d110568db58
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411951"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797230"
 ---
 # <a name="footer-module"></a>Alatunnistemoduuli  
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja alatunnistemoduuleista ja niiden luomisesta Microsoft Dynamics 365 Commerce -sovellukseen.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Alatunnistemoduuli on erillinen säilö, jota käytetään sivun alatunnisteessa näkyvien moduulien isännöintiin. Se voi esimerkiksi sisältää linkkejä eri sivuston sivuille. Sivu voi olla esimerkiksi **Ota yhteyttä** tai **Myymälän käytännöt**.
 
@@ -87,3 +82,6 @@ Kun lisäät sivumalleihin osan, voit varmistaa, että alatunniste hahmonnetaan 
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

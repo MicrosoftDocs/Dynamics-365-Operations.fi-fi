@@ -1,12 +1,10 @@
 ---
 title: ER Käytä vaakasuunnassa laajennettavia alueita sarakkeiden dynaamiseen lisäämiseen Excel-raportteihin (Osa 1 – Muodon suunnittelu)
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi määrittää sähköisen raportoinnin (ER) muodon luomaan raportteja OPENXML-työkirjamuodossa (Excel), joissa pakolliset sarakkeet voi lyödä dynaamisesti vaakasuunnassa laajenevilla alueilla.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muodon määrittämistä luomaan raportteja OPENXML-laskentataulukkomuotoisina Excel-tiedostoina. (Osa 1)
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e36a2238ab4c67a2384d6da2a1e2c767414c21a1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: af3d7bdf6bf0de371fa0896bf5f668c98498640d
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684496"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944602"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Käytä vaakasuunnassa laajennettavia alueita sarakkeiden dynaamiseen lisäämiseen Excel-raportteihin (Osa 1 – Muodon suunnittelu)
 
@@ -36,7 +34,7 @@ ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 1: Tietomallin suu
 
 ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 2: Mallin yhdistäminen).
 
-Sinun on myös ladattava ja tallennettava mallin paikallinen kopio malliraportin kanssa kohdasta [Mallin taloushallinnon dimensioiden verkkopalveluraportti](https://go.microsoft.com/fwlink/?linkid=862266).
+Sinun on myös ladattava ja tallennettava mallin paikallinen kopio malliraportin kanssa kohdasta [Mallin taloushallinnon dimensioiden verkkopalveluraportti](https://download.microsoft.com/download/3/1/3/313e2090-bc0a-421f-bf96-c58da9bc0dea/SampleFinDimWsReport.xlsx).
 
 Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.
 
@@ -148,3 +146,6 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 49. Valitse Tallenna.
 50. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

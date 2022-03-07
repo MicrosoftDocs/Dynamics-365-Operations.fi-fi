@@ -2,28 +2,25 @@
 title: Ylisuurten maksujen käteisalennukset
 description: Tämän artikkelin skenaariossa kerrotaan, miten maksua käsitellään, kun asiakkaalle annetaan käteisalennus, mutta tämä maksaa liikaa.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14171
 ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: be501c049ae7b884e317cbf3bd1918fec3fb421d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442912"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830486"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Ylisuurten maksujen käteisalennukset
 
@@ -139,3 +136,6 @@ Käteisalennuksen määrä vähennetään arvosta 10,50 arvoon 10,00. Maksua ja 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Kaavat ja kaavaversiot
 description: Tässä aiheessa on tietoja resepteistä ja reseptiversioista. Resepti määrittää prosessituotannon prosessiin kuuluvat materiaalit, valmistusaineet ja tulokset. Reseptejä käytetään tuotteiden suunnitteluun ja valmistamiseen prosessituotannossa.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7111811d14aaf0f6c8b814877897884e4cd76f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e5ff5916366f968cbf8dc9a5614466ef89faa92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570270"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007152"
 ---
 # <a name="formulas-and-formula-versions"></a>Kaavat ja kaavaversiot
 
@@ -68,6 +70,3 @@ Skaalattava ominaisuus on käytettävissä vain, jos kaikki reseptin nimikekompo
 
 ## <a name="use-step-consumption"></a>Vaihekulutuksen käyttö
 Vaihekulutus poistaa tarpeen syöttää ainesosan määrä **Reseptirivi**-välilehdellä. Sen sijaan vaihekulutus määritetään siten, että sillä on **Sarjasta**-arvo ja **Määrä**-arvo. Erätilauksen määrän perusteella valitaan sen sarjakohtaisen vaihekulutuksen tiedot, joka vastaa kyseistä määrää. Vaihekulutuksen käyttö on hyödyllistä, kun kulutus ei ole eräkoon kannalta lineaarista, sillä se nostaa vaatimusta vain, kun tietty määräraja ylittyy. Toiminnon voi ottaa käyttöön uudessa reseptissä vaihtamalla **Kulutuksen laskenta** -ryhmässä reseptin ainesosa-asetuksen arvosta **Vakio** arvoon **Vaihe**. Voit määrittää tämän kulutusmenetelmään **Reseptirivi**-sivun **Asetukset**-välilehdellä.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

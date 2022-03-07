@@ -1,30 +1,27 @@
 ---
 title: Yhdistä oheislaitteet myyntipisteeseen (POS)
 description: Tässä aiheessa käsitellään oheislaitteiden liittämistä Retail POS:hon.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411890"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779515"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Yhdistä oheislaitteet myyntipisteeseen (POS)
 
@@ -81,7 +78,7 @@ Siinä missä kanavatasolla määritetty laiteasema sisältää esiintymäkohtai
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS, johon on liitetty oheislaitteita
 
-[![Perinteinen kiinteä myyntipiste](./media/traditional-300x279.png)](./media/traditional.png)
+[![Perinteinen kiinteä myyntipiste.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Jos haluat liittää MPOS:n myyntipisteen oheislaitteisiin perinteistä kiinteää myyntipistettä käytettäessä, siirry ensin kassakoneeseen ja määritä sille laiteprofiili. Pääset myyntipisteen kassakoneisiin valitsemalla **Vähittäismyynti ja kauppa** &gt; **Kanavan määritys** &gt; **Myyntipisteen määritykset** &gt; **Kassakoneet**. 
 
@@ -100,7 +97,7 @@ Valitse lopuksi MPOS:ssä **Valitse laiteasema** -toiminnolla **localhost**-lait
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS tai Cloud POS ja erillinen laiteasema
 
-[![Jaetut oheislaitteet](./media/shared-300x254.png)](./media/shared.png)
+[![Jaetut oheislaitteet.](./media/shared-300x254.png)](./media/shared.png)
 
 Tässä skenaariossa MPOS- ja Cloud POS -asiakasohjelmat jakavat laiteaseman. Tämä skenaario edellyttää laiteaseman luontia määrittämään ladattavan paketti, portti ja laiteaseman käyttämä laiteprofiili. Pääset laiteaseman profiiliin valitsemalla **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen määritys** &gt; **Myyntipisteprofiilit** &gt; **Laiteaseman profiilit**. 
 
@@ -205,3 +202,6 @@ Muita aktivointiin liittyviä tietoja ovat laitteen aktivointitilan vaihtanut ty
 ### <a name="client-data-synchronization"></a>Asiakasohjelman tietojen synkronointi
 
 Kaikki POS-asiakasohjelmaan tehdyt muutokset laitteen aktivointitilan muutoksia lukuun ottamatta on synkronoitava kanavatietokantaan, ennen kuin ne otetaan käyttöön. Voit synkronoida muutokset kanavatietokantaan valitsemalla **Vähittäismyynti ja kauppa** &gt; **Vähittäismyynnin ja kaupan IT** &gt; **Jakeluaikataulu** ja suorittamalla sitten tarvittavan jakeluaikataulun. Jos kyse on asiakasohjelman muutoksista, suorita **Kassakoneet**- ja **Kanavan määritys** -jakeluaikataulut.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

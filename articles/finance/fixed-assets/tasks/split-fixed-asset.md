@@ -1,33 +1,30 @@
 ---
 title: Käyttöomaisuuserän jakaminen
 description: Tässä aiheessa kerrotaan miten jaetaan yhden käyttöomaisuuskirjan prosenttiosuus uuteen käyttöomaisuuskirjaan.
-author: saraschi2
-manager: AnnBe
+author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
-ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
+ms.openlocfilehash: a2fbca50342196dd9f5acb53027fb9c0052a81de
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4514323"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883540"
 ---
 # <a name="split-a-fixed-asset"></a>Käyttöomaisuuserän jakaminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kerrotaan miten jaetaan yhden käyttöomaisuuskirjan prosenttiosuus uuteen käyttöomaisuuskirjaan. Käytössä ovat kirjanpitäjän rooli ja USMF:n esittelytiedot.
+Tässä aiheessa kerrotaan miten jaetaan yhden käyttöomaisuuskirjan prosenttiosuus uuteen käyttöomaisuuskirjaan. 
 
 ## <a name="create-a-new-fixed-asset"></a>Luo uusi käyttöomaisuuserä
 
@@ -63,3 +60,6 @@ Ennen kokonaan poistetun käyttöomaisuuden jakamista käyttöomaisuuskirjan til
     - Uudelle käyttöomaisuuserälle luodaan hankintatapahtuma samalle summalle.
 
 4. Valitse **Kirjaa**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Vastaanottonumeroiden palauttaminen
 description: Tässä ohjeaiheessa kuvataan, miten voit nollata eri toimenpiteille käytettävät vastaanottonumerot haluamanasi päivämääränä (esimerkiksi tilivuosi tai kalenterivuosi).
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 855c39f15db6de8fac1f0cd4667eec485c70542b9aebde0d7085e2703f4609bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733866"
 ---
 # <a name="reset-receipt-numbers"></a>Kuittinumeroiden nollaaminen 
 
@@ -58,7 +55,7 @@ Nollaus otetaan käyttöön seuraavasti.
 1. Valitse **Nollaa vastaanottotyyppi** -kentässä **Vain kerran** tai **Vuosittain**.
 1. Valitse **OK**.
 
-![Vastaanoton palautuspäivämäärän valitseminen](media/Enable_receipt_reset.png "Vastaanoton palautuspäivämäärän valitseminen")
+![Vastaanoton palautuspäivämäärän valitseminen.](media/Enable_receipt_reset.png "Vastaanoton palautuspäivämäärän valitseminen")
 
 Kun olet valinnut päivän, se näkyy **Seuraava kuitin numeron nollauspäivämäärä** -sarakkeessa. Palautuspäivämäärää voi soveltaa kaikkiin vastaanottotapahtumatyyppeihin. Tämän vuoksi vastaanoton numerosarja palautetaan kaikille kuittityypeille.
 
@@ -68,3 +65,6 @@ Kun nollauspäivämäärä saapuu, kunkin tyypin ensimmäisen tapahtuman vastaan
 
 > [!NOTE]
 > Valitun palautuspäivämäärän ja kuitin muodon mukaan voi olla päällekkäisiä vastaanottonumeroita. Vaikka myyntipisteen (POS) järjestelmä voi käsitellä näitä tilanteita, se kasvattaa palautusten käsittelyyn tarvittavaa aikaa, koska myyntiedustajan on valittava kuittien kaksoiskappaleet. Muita tietojen tyhjennykseen liittyviä komplikaatioita voi ilmetä, jos päällekkäiset kuitit eivät ole suunniteltu seuraus. Tämän vuoksi on suositeltavaa käyttää dynaamisia päivämäärämerkkejä (esimerkiksi **ppp**, **KK**, **PP** ja **VV**), jotta voit estää kaksoisarvojen vastaanoton numeroiden nollautumisen jälkeen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Työtilausten ylläpidon käyttökatko
 description: Tässä aiheessa on tietoja ylläpidon käyttökatkojen rekisteröinneistä työtilauksessa valitulle resurssille.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020908"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753369"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Työtilausten ylläpidon käyttökatko
 
@@ -47,7 +45,7 @@ Voit luoda ylläpidon käyttökatkojen rekisteröintejä työtilauksessa valitul
 
 Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon syykoodit** -sivusta.
 
-![Kuva 1](media/15-work-orders.png)
+![Kuva 1.](media/15-work-orders.png)
 
 Kun olet luonut ylläpidon käyttökatkon syykoodit, joita haluat käyttää, voit luoda työtilauksille ja käyttöomaisuudelle ylläpidon käyttökatkorekisteröintejä.
 
@@ -73,18 +71,21 @@ Kun olet luonut ylläpidon käyttökatkon syykoodit, joita haluat käyttää, vo
 
 Alla olevassa kuvassa näkyy esimerkki ylläpidon käyttökatkon rekisteröinnistä.
 
-![Kuva 2](media/16-work-orders.png)
+![Kuva 2.](media/16-work-orders.png)
 
 Ylläpidon käyttökatkojen rekisteröintien laskennassa käytettävä kalenteri määräytyy resurssi- ja parametriasetusten valinnan mukaan. Jos resurssi on valittuna resurssille **Kaikki resurssit** -sivun **Käyttöomaisuus**-pikavälilehden **Resurssi**-kentässä, käytetään liittyvän resurssiryhmän kalenteria, joka näkyy seuraavassa kuvassa.
 
-![Kuva 3](media/17-work-orders.png)
+![Kuva 3.](media/17-work-orders.png)
 
 Jos käyttöomaisuudelle ei ole valittu resurssia, käytetään **Resurssienhallinnan parametrit** -sivulla valittua vakiokalenteria seuraavassa kuvassa esitetyllä tavalla.
 
-![Kuva 4](media/18-work-orders.png)
+![Kuva 4.](media/18-work-orders.png)
 
 Näet yhteenvedon kaikista ylläpidon käyttökatkojen rekisteröinneistä valitsemalla **Resurssienhallinta** > **Kyselyt** > **Ylläpidon käyttökatko**.
 
 >[!NOTE]
 >Kaikki **Resurssien hallinta** -moduulissa käytettävät kalenterit määritetään kohdassa **Organisaation hallinto** > **Asetukset** > **Kalenterit** > **Kalenterit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

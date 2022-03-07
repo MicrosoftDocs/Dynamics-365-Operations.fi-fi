@@ -2,26 +2,23 @@
 title: Määritä kustannusseurantayksiköt
 description: Tässä menettelyssä kerrotaan, miten kustannuslaskennan kirjanpidon kustannusseurantayksiköt määritetään.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlUnit
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 698989d55994660fa7566cf473cf3fa1ae1d9a83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4ac1f8c6dc5fcacb603aae53190418a10efb0651a3f52608cc58eb3866a8fcb5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743816"
 ---
 # <a name="define-cost-control-units"></a>Määritä kustannusseurantayksiköt
 
@@ -41,3 +38,6 @@ Tässä menettelyssä kerrotaan, miten kustannuslaskennan kirjanpidon kustannuss
 10. Syötä tai valitse arvo Dimensio-kenttään.
 11. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

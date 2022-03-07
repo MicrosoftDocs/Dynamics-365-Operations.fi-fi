@@ -1,33 +1,34 @@
 ---
-title: Yleiskuvaus
+title: Kehityksen yleiskatsaus
 description: Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät -viittaukset. Se sisältää myös tietoja integroinnista muihin sovelluksiin.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 010920cc84897dc5d2cfc008aa04544db6b08a73
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 78fc1afc596ca5a847d15a0da2db841aa303bad7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528314"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066797"
 ---
-# <a name="overview"></a>Yleiskuvaus
+# <a name="development-overview"></a>Kehityksen yleiskatsaus
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät -viittaukset. Se sisältää myös tietoja integroinnista muihin sovelluksiin.
 
@@ -35,21 +36,21 @@ Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät
 
 - [Laajentaminen Power Appsin ja Power Automaten avulla](hr-developer-power-apps.md)
 
-- [Henkilöstöhallinnon ilmentymät Common Data Servicessä](hr-developer-entities.md)
+- [Henkilöstöhallinnon ilmentymät Dataversessä](hr-developer-entities.md)
 
 - [Mukautetut kentät](hr-developer-custom-fields.md)
 
 - Määritä dataintegrointi
   - [Tietojen integrointiteknologian valitseminen](hr-admin-integration-choose-technology.md)
-  - [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
-  - [Integraation määrittäminen Financen kanssa](hr-admin-integration-finance.md)
-  - [Integraation määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
+  - [Dataverse -integroinnin määritys](hr-admin-integration-common-data-service.md)
+  - [Integroinnin määrittäminen Financen kanssa](hr-admin-integration-finance.md)
+  - [Integroinnin määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
   - [Toistuvan tietojen viennin sovelluksen luominen](hr-admin-integration-recurring-data-export.md)
   - Office-integraatio
-    - [Office-integraation opasohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Yksikkötietojen päivittäminen Excelissä](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Avaa Excelissä -kokemusten luominen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Office-integraation vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integraation opasohjelma](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Yksikkötietojen päivittäminen Excelissä](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Avaa Excelissä -kokemusten luominen](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office-integraation vianmääritys](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - Yksikön ohjelmointirajapinnan viite
   - [Todennus](hr-developer-api-authentication.md)
@@ -62,3 +63,6 @@ Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät
 - [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
 - [Järjestelmänvalvojan opas](hr-admin-overview.md)
 - [Käyttöopas](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

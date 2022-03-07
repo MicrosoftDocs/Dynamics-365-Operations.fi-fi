@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b6d32cc2c1844c6c334dd00b249c736e153f13d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6505d658103a4c34dfe7c7eb86ad4ea41515ccfb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442906"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5261281"
 ---
 # <a name="create-a-cost-rollup-policy"></a>Kustannusten koontikäytännön luominen
 
@@ -68,3 +67,6 @@ Tässä menettelyssä näytetään, miten kustannusten koontikäytäntö ja käy
     * Jatka, kunnes kaikkien kustannuspaikkojen ja niiden vastaavien toissijaisten kustannustasojen vastaavuus on määritetty.  
 16. Valitse Tallenna.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,39 +1,37 @@
 ---
 title: Toimittajan maksun yleiskatsaus
-description: Tässä tehtävän ohjauksessa kerrotaan toimittajan maksujen luomisessa käytettävistä eri tavoista. Niitä ovat esimerkiksi maksuehdotuksen käyttäminen ja kertaluontoisen maksun syöttäminen.
+description: Tässä menettelyssä käsitellään erilaisia tapoja, joita käytetään toimittajan maksujen luomisessa. Niitä ovat esimerkiksi maksuehdotuksen käyttäminen ja kertaluontoisen maksun syöttäminen.
 author: kweekley
-manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19cea683058f7fb757ac3a99541959ba06df1963
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442804"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394435"
 ---
 # <a name="vendor-payment-overview"></a>Toimittajan maksun yleiskatsaus
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä tehtävän ohjauksessa kerrotaan toimittajan maksujen luomisessa käytettävistä eri tavoista. Niitä ovat esimerkiksi maksuehdotuksen käyttäminen ja kertaluontoisen maksun syöttäminen. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
+Tässä menettelyssä käsitellään erilaisia tapoja, joita käytetään toimittajan maksujen luomisessa. Niitä ovat esimerkiksi maksuehdotuksen käyttäminen ja kertaluontoisen maksun syöttäminen. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Ostoreskontra > Maksut > Maksukirjauskansio**.
 2. Valitse **Uusi**.
 3. Valitse maksukirjauskansio, jonne toimittajan maksut tallennetaan. 
 4. Valitse kirjauskansio tai syötä se manuaalisesti.
 5. Valitse **Rivit**.
-6. Valitse **Toimintoruutu**-osiosta **Maksuehdotus**.
+6. Valitse **toimintoruudussa** **Maksuehdotus**.
 7. Valitse **Luo maksuehdotus**. Maksuehdotus on kysely, jota käytetään maksun laskujen valitsemisessa. Voit muokata maksettavien laskujen luetteloa ennen toimittajan maksujen luomista.
 8. Valitse laskut maksua varten eräpäivän, käteisalennuksen tai molempien avulla. 
 9. Syötä päivämäärä eräpäivän tai käteisalennuksen vertailua varten. 
@@ -63,3 +61,6 @@ Tässä tehtävän ohjauksessa kerrotaan toimittajan maksujen luomisessa käytet
 33. Luo maksut valitsemalla **OK**.
 34. Valitse **Kirjaa**, jos kaikki maksut on hyväksytty ja luotu. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

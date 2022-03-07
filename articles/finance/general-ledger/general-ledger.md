@@ -2,28 +2,27 @@
 title: Kirjanpidon ja talousraportoinnin yleiskatsaus
 description: Kirjanpidon avulla voit määrittää ja hallinnoida yrityksen kirjanpitotietueita.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 65431
+ms.custom:
+- "65431"
+- intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ade10020e4bab02490c9104c37fe1f234d634e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b143807b6076d2b798de26d2ebd2cf7a40a8fdf89fdc8387acfbb79cecb44e3b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715115"
 ---
 # <a name="general-ledger-home-page"></a>Kirjanpidon kotisivu
 
@@ -40,7 +39,7 @@ Voit kohdistaa tai jakaa rahasummia yhdelle tai usealle tilille tai tilin ja dim
 - [Kirjanpitotilin saldot](general-ledger-account-balances.md)
 - [Taloushallinnon dimensiot](financial-dimensions.md)
 
-[![Liiketoimintaprosessi](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Liiketoimintaprosessi.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>Arvonlisävero
 Jokainen yritys kerää ja maksaa veroja eri veroviranomaisille. Säännöt ja prosentit vaihtelevat maan tai alueen, osavaltion, kunnan tai kaupungin mukaan.
@@ -55,7 +54,7 @@ Lisäksi säännöt on päivitettävä säännöllisesti, kun veroviranomaisten 
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
+Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](/dynamics365/release-plans/), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
 
 #### <a name="financial-reporting"></a>Taloushallinnan raportointi
 Lisätietoja taloudellisista raporteista on kohdassa [Financial reportingin yhteenveto](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) -aiheessa.
@@ -74,3 +73,6 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 
 - [Tärkeitä tietoja Dynamics 365 for Finance and Operationsin kirjanpidosta](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

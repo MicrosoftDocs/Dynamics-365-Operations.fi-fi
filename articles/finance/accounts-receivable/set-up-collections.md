@@ -2,28 +2,25 @@
 title: Aseta keräilyt
 description: Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f8e066b1df3eb3a26d488e1c014f4ae3f31395a
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: f2e06da265271e2148804c51abc7cd9ffc29a3e20e73dda3a1a23966f0e6586e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4442989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769815"
 ---
 # <a name="set-up-collections"></a>Aseta keräilyt
 
@@ -43,8 +40,7 @@ Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään. Sinun o
 
 Näitä kohtia käsitellään tarkemmin koko tämän aiheen loppuosassa. 
 
-<a name="set-up-aging-period-definitions"></a>Määritä erääntymiskausimääritykset
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Määritä erääntymiskausimääritykset
 
 Määritä erääntymiskausimääritys. Erääntymiskausimääritys määrittää sarakkeet, jotka näkyvät **Erääntyneet saldot**-, **Perintätehtävät**- ja **Perintätapaukset**-luettelosivuilla. Se määrittää myös kaudet, jotka näkyvät **Perintä**-sivulla. Jos asiakaspooli on määritetty, käytetään poolin erääntymiskausimääritystä. Jos poolia ei ole määritetty, käytetään oletuserääntymiskausimääritystä, joka on määritetty **Myyntireskontran parametrit** -sivulla. Jos oletuserääntymiskauden määritystä ei ole määritetty, käytetään **Erääntymiskausien määritykset** -sivun ensimmäistä erääntymiskausimääritystä.
 
@@ -115,3 +111,6 @@ Lisätietoja on seuraavissa aiheissa:
 
  - [Perimistietojen tarkistaminen](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

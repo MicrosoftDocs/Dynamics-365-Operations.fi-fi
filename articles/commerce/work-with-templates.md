@@ -2,36 +2,30 @@
 title: Mallien käyttö
 description: Tässä ohjeaiheessa käsitellään mallien käsittelemistä Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411984"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090791"
 ---
 # <a name="work-with-templates"></a>Mallien käyttö
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään mallien käsittelemistä Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Mallit määrittävät tietoja verkosta tietoja lataavien tekijöiden käytettävissä olevat asetusjoukot, kuten ohjeaiheessa [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md) kerrotaan. Mallit ovat hyödyllisiä yrityksen verkkoluontiryhmälle useiden syiden vuoksi. Hyvin suunnitellut mallit voivat auttaa seuraavien tavoitteiden saavuttamisessa:
 
@@ -55,7 +49,7 @@ Mallit määrittävät tietoja verkosta tietoja lataavien tekijöiden käytettä
 
 Malleja muokataan mallieditorin avulla.
 
-Voit avata mallieditorin suorittamalla jommankumman seuraavista vaiheista:
+Voit avata mallieditorin Commerce-sivustotyökalussa seuraavasti:
 
 - Valitse sivuston siirtymisruudussa **Mallit** ja valitse sitten muokattava malli.
 - Valitse olemassa olevan sivueditorissa vasemmalla olevan jäsennyspuun ylin solmu. Valitse sitten oikealla olevassa ominaisuusruudussa **Muokkaa mallia**.
@@ -72,7 +66,7 @@ Vasemmalla olevassa jäsennyspuussa on moduuliasetukset ja -rakenteet, jotka ova
 
 ## <a name="create-a-new-template"></a>Luo uusi malli
 
-Voit luoda uuden mallin seuraavien vaiheiden avulla.
+Uusi malli luodaan sivustonmuodostimessa seuraavasti.
 
 1. Valitse sivuston siirtymisruudussa **Mallit** ja avaa malli tarkistusnäkymässä.
 1. Valitse **Uusi malli**.
@@ -91,7 +85,7 @@ Malli on nyt teknisesti kelvollinen. Sen voi nyt tallentaa, kuitata sisään ja 
 
 ## <a name="add-a-header-and-a-footer"></a>Ylä- ja alatunnisteen lisääminen
 
-Jos sivustossa on jo ylätunnisteen osa, lisää malliin ylä- ja alatunniste seuraavien vaiheiden avulla.
+Jos sivustossa on jo ylätunnisteen osa, lisää malliin ylä- ja alatunniste seuraavien vaiheiden avulla sivustonmuodostimessa.
 
 1. Laajenna jäsennyspuussa **Tekstiosa**-kohta ja sen alitason sivun moduuli.
 1. Valitse **Ylätunniste**-paikka.
@@ -104,7 +98,7 @@ Jos sivustossa ei vielä ole ylätunnisteen osaa, katso lisätietoja sen luomise
 
 ## <a name="change-the-template-theme"></a>Malliteeman vaihtaminen
 
-Voit määrittää kaikkien mallia käyttävien sivujen oletusteeman seuraavasti.
+Voit määrittää kaikkien mallia käyttävien sivujen oletusteeman seuraavasti sivustonmuodostimessa.
 
 1. Laajenna vasemmanpuoleisen jäsennyspuun **Tekstiosa**-paikka.
 1. Valitse **Tekstiosa**-paikassa sivun säilömoduuli (esimerkiksi **Oletussivu**).
@@ -116,7 +110,7 @@ Oletusarvoisesti kaikki uudet sivut käyttävät nyt valittua teemaa. Jos haluat
 
 Voit lisätä malliin JavaScriptiä sisältäviä HTML:n **&lt;komentosarja&gt;**-elementtejä. Näin voit määrittää sivujen HTML Head ja tekstiosan alku- ja loppuosille komentosarjojen oletustoimintoja.
 
-Voit lisätä malliin komentosarjan seuraavasti:
+Voit lisätä komentosarjan sivustonmuodostimessa malliin noudattamalla seuraavia ohjeita.
 
 1. Valitse vasemmalla olevasta jäsennyspuusta paikka, johon haluat lisätä **&lt;komentosarja&gt;**-elementin (esimerkiksi HTML Head tai tekstiosan alku tai loppu).
 1. Valitse paikan kolmen pisteen painike ja valitse sitten **Lisää moduuli**.
@@ -129,7 +123,7 @@ Voit lisätä malliin komentosarjan seuraavasti:
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Mallin tallentaminen kirjaaminen sisään, esikatseleminen ja julkaiseminen
 
-Voit tallentaa mallin ja kirjata sen sisään seuraavasti.
+Voit tallentaa mallin ja kirjata sen sisään seuraavasti sivustonmuodostimessa.
 
 1. Valitse **Tallenna** mallieditorin yläosassa. Tallennetut muutokset eivät vaikuta verkosta tietoja lataaviin sivuihin, ennen kuin ne on kuitattu sisään.
 1. Valitse **Viimeistele muokkaus**. Tekemäsi muutokset ovat nyt verkosta tietoja lataavien työnkulkujen löydettävissä.
@@ -145,8 +139,23 @@ Kun olet esikatsellut malliin tehdyt muutokset, julkaise malli live-sivustossa j
 > [!WARNING]
 > Kun malli tai jokin muu sisällön hallintajärjestelmän (CMS) kohde julkaistaan, se on löydettävissä Internetistä. Älä julkaise asiakirjoja tai resursseja, jos ne eivät ole valmiita julkiseen käyttöön. Asiakirjaversiot, jotka on tallennettu ja kuitattu sisään, mutta joita ei ole julkaistu, ovat vain todennettujen järjestelmäkäyttäjien löydettävissä.
 
+## <a name="rename-a-template"></a>Mallin uudelleennimeäminen
+
+Olemassa olevan malli nimetään uudelleen sivustonmuodostimessa seuraavasti.
+
+1. Valitse vasemmassa siirtymisruudussa **Mallit**.
+1. Valitse sen mallin nimi, jonka haluat nimetä uudelleen.
+1. Aloita mallin muokkaaminen valitsemalla **Muokkaa**. Huomaa, että mallia ei voi muokata, jos joku muu on jo muokkaamassa mallia.
+1. Valitse mallin nimen vieressä oleva kynäsymboli mallin ominaisuusruudusta.
+1. Muokkaa mallin nimeä tarpeen mukaan.
+1. Vahvista nimenmuutos valitsemalla valintamerkki.
+1. Valitse **Viimeistele muokkaus**.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
 
 [Esimääritettyjen asettelujen käyttö](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

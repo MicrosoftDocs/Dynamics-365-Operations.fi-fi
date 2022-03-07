@@ -2,11 +2,9 @@
 title: Tilinarkastuskäytännön säännöt
 description: Voit käyttää tarkistuskäytäntöjä kuluraporttien, toimittajan laskujen ja ostotilausten arvioimiseen, jotta voit varmistua luomiesi käytäntösääntöjen noudattamisesta. Kaikki tarkastuskäytäntöön liittyvät säännöt suoritetaan erätilassa määrittämäsi aikataulun mukaisesti.  Jokainen käytäntösääntö on käytäntösäännön tyypin esiintymä. Jokaisella käytäntösääntötyypillä voi olla kerrallaan aktiivisena vain yksi käytäntösääntö.
 author: panolte
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bbf93f5b8b2f8d95102a52178b096d7e334894483c0ac0bacc62653aea845022
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744303"
 ---
 # <a name="audit-policy-rules"></a>Tilinarkastuskäytännön säännöt
 
@@ -30,8 +28,7 @@ ms.locfileid: "5021238"
 
 Voit käyttää tarkistuskäytäntöjä kuluraporttien, toimittajan laskujen ja ostotilausten arvioimiseen, jotta voit varmistua luomiesi käytäntösääntöjen noudattamisesta. Kaikki tarkastuskäytäntöön liittyvät säännöt suoritetaan erätilassa määrittämäsi aikataulun mukaisesti.  Jokainen käytäntösääntö on käytäntösäännön tyypin esiintymä. Jokaisella käytäntösääntötyypillä voi olla kerrallaan aktiivisena vain yksi käytäntösääntö. 
 
-<a name="queries-and-query-types"></a>Kyselyt ja Kyselytyypit
------------------------
+## <a name="queries-and-query-types"></a>Kyselyt ja Kyselytyypit
 
 Kun luot tarkistuskäytännön sääntö, sinun on valittava käytäntösääntötyyppi. Käytäntösäännön tyyppi määrittää sovellusobjektipuu (AOT) -kyselyn, jota käytetään aloituskohtana käytäntösäännön luomisessa. Se määrittää myös käytäntösäännölle käytettävän kyselyn tyypin. Kysely määrittää lähdeasiakirjan, jolle käytäntösääntötyyppi tulkitaan. Se määrittää myös lähdeasiakirjan kentät, joiden avulla tunnistetaan sekä yritys että käytettävä päivämäärä, kun asiakirjoja valitaan auditointiin. Kyselytyyppi hallitsee kyselysivun ja tilintarkastuskäytäntö sääntöjen sivun oletuskenttiä. Seuraavassa taulukossa on kyselytyypit, joiden on oltava käytettävissä tarkistuksen käytäntösäännöille.
 
@@ -93,10 +90,12 @@ Kaikilla tietyn tarkastuskäytännön säännöillä on samat eräparametrit ja 
 
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Tarkistuskäytäntörikkomukset ja -tapaukset](audit-policy-violations-cases.md)
 [Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

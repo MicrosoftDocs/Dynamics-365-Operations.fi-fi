@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 31216c24f54f22ec928eb143d4a913aabcd50cf8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e343fbd33ca616b0e20efb1f1fd66ed4863a72dd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427454"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248616"
 ---
 # <a name="warehouse-location-status"></a>Varastosijainnin tila
 
@@ -169,3 +168,6 @@ Esimerkkiskenaario edellyttää kahden sijaintiprofiilin valmistelemista.
 
 > [!NOTE]
 > Sijaintikentät päivitetään vain varastotapahtumien mukaan. Jos varasto siirretään kirjauskansion tai muiden kuin WHS-prosessien avulla, kenttiä ei päivitetä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

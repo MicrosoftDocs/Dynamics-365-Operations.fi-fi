@@ -2,15 +2,12 @@
 title: iFrame-moduuli
 description: Tässä ohjeaiheessa käsitellään iFrame-moduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665393"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754011"
 ---
 # <a name="iframe-module"></a>iFrame-moduuli
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään iFrame-moduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskuvaus
 
 iFrame-moduuli sisältää iFrame-kehyksen (sisäinen kehys), joka isännöi sivuston ulkoista sisältöä. Sen avulla voidaan esimerkiksi isännöidä YouTube-videota tai PDF-tiedoston katseluohjelmaa millä tahansa sivuston sivulla. 
 
@@ -42,7 +37,7 @@ iFrame-moduuli edellyttää kohde-URL-osoitetta. Sen jälkeen se isännöi kohde
 
 Seuraavassa kuvassa näkyy esimerkkejä iFrame-moduuleista, jotka esittelevät sivuston sivujen ulkoisia videoita.
 
-![Esimerkki iFrame-moduuleista, jotka esittelevät ulkoisia videoita](./media/ecommerce-iframe.PNG)
+![Esimerkki iframe-moduuleista, jotka esittelevät ulkoisia videoita.](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>iFrame-moduulin ominaisuudet
 
@@ -71,9 +66,15 @@ Voit lisätä sivulle ulkoisen videon näyttävän iFrame-moduulin seuraavasti.
 1. Määritä halutessasi muut ominaisuudet, kuten **otsikko** ja **korkeus**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry sivuston markkinointisivulle. Videon tulisi olla hahmonnettu iFrame-moduuliin.
- 
+
+> [!NOTE]
+> Koska iframe-moduuli isännöi ulkoista sisältöä, sivuston tekijöiden on varmistettava, että iframe-moduulissa isännöity sisältö ei riko sisällön rajoituskäytäntöjä kyseisellä markkina-alueella. Jos iframe-moduulia käyttävällä sivulla on sisältörikkomus, sivuston tekijä voi poistaa iframe-moduulin avaamalla sivun sivustonmuodostimessa, valitsemalla **Poista moduuli** iframe-moduulipaikassa sekä tallentamalla sivun ja julkaisemalla sivun sitten uudelleen.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Moduulikirjaston yleiskatsaus](starter-kit-overview.md)
 
 [Sisällön suojauskäytännön (CSP) hallinta](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

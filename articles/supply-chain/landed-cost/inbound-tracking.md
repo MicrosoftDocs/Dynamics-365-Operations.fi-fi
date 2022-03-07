@@ -2,9 +2,11 @@
 title: Saapuvien merikuljetusten ja kuljetuskonttien matkojen seuranta
 description: Tässä aiheessa kerrotaan, miten Saapuvien jäljitys -sivun avulla voit seurata merikuljetusten ja kuljetuskonttien matkojen etenemistä.
 author: sherry-zheng
+manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMContainerActivityTable
 audience: Application User
@@ -13,17 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 67ee22af7a73c18d4f77018fedf5a89f0777774d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 678f2b6cda0592e0393bb15f372cb4be84778932
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580765"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501243"
 ---
 # <a name="track-inbound-voyages-and-shipping-container-journeys"></a>Saapuvien merikuljetusten ja kuljetuskonttien matkojen seuranta
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 **Saapuvien jäljitys** -sivun avulla voit seurata merikuljetusten ja kuljetuskonttien matkojen etenemistä. Kullakin merikuljetuksella ja matkalla on jako *tehtäviin*, ja jokaisella on sivulla oma rivi. Sivulla voit tarkastella ja määrittää arvioituja päivämääriä ja toteutuneita päivämääriä tehtävän mukaan.
 

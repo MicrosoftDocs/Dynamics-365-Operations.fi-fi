@@ -2,30 +2,31 @@
 title: Työntekijän ja esimiehen itsepalvelun yleiskatsaus
 description: Tässä artikkelissa on työntekijän ja esimiehen itsepalvelun työtilan yleiskuvaus.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
-ms.custom: 51941
+ms.search.scope: Human Resources
+ms.custom:
+- "51941"
+- intro-internal
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
-ms.sourcegitcommit: 1fdca917e01470fbd5d3051adb85fd63e8624b47
+ms.openlocfilehash: adb0fc344963b33fe1704a22a35415d9c07b9a08
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4418408"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338094"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Työntekijän ja esimiehen itsepalvelun yleiskatsaus
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tässä artikkelissa on työntekijän ja esimiehen itsepalvelun työtilan yleiskuvaus.
 
@@ -214,3 +215,5 @@ Esimiehet voivat nähdä kaikki ryhmänsä tavoitteet **Ryhmän suorituskykytavo
 **Arvostelut**-välilehdessä on yhteenveto työntekijän kussakin tilassa tekemistä tarkastelusta: **keskeneräinen**, **valmis tarkistettavaksi** ja **lopullinen tarkistus**. Voit käyttää työntekijän tarkistusta valitsemalla **Tiedot**-painikkeen ja valitsemalla sitten arvostelut. Kun tarkistus on työnkulkuprosessin sisällä, voit tarkistaa, onko tarkistus käytettävissä päivitystä varten. 
 
 Esimiehet voivat nähdä kaikki ryhmänsä arvostelut **Ryhmän suorituskykyarviot** -ruudun avulla **Oman ryhmän** **Yhteenveto**-osassa.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

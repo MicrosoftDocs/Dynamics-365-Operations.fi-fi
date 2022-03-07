@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e24bceac9457212ecaafda876d19ba62df049371
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103635"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7471833"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Muuttujan muodostaminen suunnittelutuotteita varten
 
@@ -23,9 +23,15 @@ ms.locfileid: "8103635"
 
 Tässä aiheessa kuvataan, miten muuttuja luodaan suunnittelutuotteita varten.
 
-## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Ota suunnittelutuotteiden muuttujien muodostaminen käyttöön tai pois käytöstä
+## <a name="turn-on-variant-generation-for-engineering-products"></a>Ota suunnittelutuotteiden muuttujien muodostaminen käyttöön
 
-Tässä aiheessa kuvattu toiminto edellyttää, että toiminnot *Suunnittelun muutosten hallinta* ja *Muuttujien luominen suunnittelun tuotteille* ovat käytössä järjestelmässä. Tietoja näiden toimintojen ottamisesta käyttöön tai pois käytöstä: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
+Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+
+- **Moduuli:** *Suunnittelun muutostenhallinta*
+- **Ominaisuuden nimi:** *Suunnittelutuotteiden muuttujien muodostus*
+
+> [!IMPORTANT]
+> *Suunnittelutuotteiden muuttujien muodostus* -ominaisuus tulee näkyviin järjestelmässä vasta, kun *Suunnittelun muutostenhallinta* -määritysavain on otettu käyttöön. Ohjeet: [Suunnittelun muutostenhallinnan yleiskatsaus](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Suunnittelutuotteen yhden tai useamman uuden muuttujan muodostaminen
 

@@ -2,11 +2,9 @@
 title: Mukautettujen kenttien luominen ja käsitteleminen
 description: Tässä ohjeaiheessa käsitellään sitä, miten mukautettuja kenttiä luodaan käyttöliittymässä sovelluksen muokkaamiseksi yrityksen tarpeita vastaaviksi.
 author: jasongre
-manager: AnnBe
-ms.date: 03/09/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
@@ -15,20 +13,23 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: eee5b072f999aab7d4a5e72888abad3915e03d5b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 2ab1c402d99c1d9b7d7dc06e64c93fe43c5a1e9f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798115"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071182"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Mukautettujen kenttien luominen ja käsitteleminen
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Vaikka käytettävissä on useita valmiita kenttiä monenlaisten liiketoimintaprosessien hallintaa varten, joskus yritysten on seurattava myös muita tietoja järjestelmässä. Ohjelmoijia voidaan käyttää näiden kenttien lisäämisessä laajennuksina kehittäjän työkaluihin. Mukautettujen kenttien toiminnon avulla kentät voidaan lisätä suoraan käyttöliittymästä. Näin käyttäjä voi räätälöidä sovellusta liiketoiminnan vaatimusten mukaan selaimessa.
 
-Mukautettujen kenttien lisääminen on mahdollista päivityksestä 13 eteenpäin. Vain käyttäjät, joilla on erityiset käyttöoikeudet, voivat käyttää tätä ominaisuutta.
+*Vain käyttäjät, joilla on erityiset käyttöoikeudet, voivat käyttää tätä ominaisuutta.*
 
 Tässä videossa näytetään, miten helppoa mukautetun kentän lisääminen sivulle on: [Mukautettujen kenttien lisääminen](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -48,8 +49,9 @@ Seuraavissa ohjeissa käsitellään mukautetun kentän luontiprosessi ja kyseise
     Jos **Luo uusi kenttä** -painike ei ole näkyvissä, sinulla ei ole ominaisuuden käyttöön tarvittavia käyttöoikeuksia.
 
 7. Anna seuraavat tiedot **Luo uusi kenttä** -valintaikkunassa.
-
+   
     1. Valitse tietokantataulu, johon tämä kenttä lisätään. Huomaa, että vain mukautettuja kenttiä tukevat taulut näkyvät avattavassa luettelossa. Jäljempänä on tuettujen taulujen tekniset tiedot.
+
     2. Valitse uuden kentän tietotyyppi. Valittavana on seuraavat tietotyypit: valintaruutu, päivämäärä, päivämäärä ja aika, desimaali, luku, valintaluettelo ja teksti.
 
         - Jos tietotyypiksi tekstin, voit määrittää myös kenttään annettavan tekstin enimmäispituuden.
@@ -62,11 +64,15 @@ Seuraavissa ohjeissa käsitellään mukautetun kentän luontiprosessi ja kyseise
 10. Lisää merkityt kentät valitulle lomakealueelle valitsemalla **Lisää**.
 11. **Valinnainen:** Ota **Siirrä**-tila käyttöön mukauttamisen työkalurivillä, jos haluat siirtää uudet kentät paikalleen valitulle alueelle. Kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md) on lisätietoja, miten erilaisten mukauttamistoimintojen avulla lomakkeen voi optimoida omaa käyttöä varten.
 
+> [!WARNING]
+> Sivuun lisätyn mukautetun kentän arvojen lisääminen riippuu siitä, voiko mukautettuun kenttään liittyvää taulua muokata vai vain lukea. Kun liittyvä taulu on vain luku -muotoinen, kaikki tauluun linkitetyt kentät, mukaan lukien mukautetut kentät, ovat myös vain luku -kenttiä.
+
+
 ## <a name="sharing-custom-fields-with-other-users"></a>Mukautettujen kenttien jakaminen muiden käyttäjien kanssa
 
-Kun olet luonut mukautetun kentän ja se näkyy lomakkeessa, haluat ehkä tuoda uuden kentän sisältävän päivitetyn sivunäkymän muiden järjestelmän käyttäjien saataville. Sen voi tehdä kahdella tavalla käyttämällä tuotteen mukauttamisominaisuuksia:
+Kun olet luonut mukautetun kentän ja se näkyy sivulla, haluat ehkä tuoda uuden kentän sisältävän päivitetyn sivunäkymän muiden järjestelmän käyttäjien saataville. Sen voi tehdä kahdella tavalla käyttämällä tuotteen mukauttamisominaisuuksia:
 
-- Suosituksena on pyytää järjestelmänvalvojaa toimittamaan mukautus kaikille käyttäjille tai osalle käyttäjiä. Lisätietoja on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
+- Suositeltava reitti on **julkaista [tallennettu näkymä](saved-views.md)**, jossa mukautettu kenttä lisätään sivulle sopivalle käyttäjäjoukolle. Jos tallennettujen näkymien toiminto ei ole käytössä, järjestelmänvalvoja voi käyttää mukauttamista haluamallesi käyttäjälle Mukauttaminen-lomakkeessa. Lisätietoja on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
 - Vaihtoehtoisesti voit viedä muutokset (eli *mukautukset*), lähettää ne yhdelle tai usealle käyttäjälle ja pyytää heitä jokaista tuomaan muutokset. Voit viedä ja tuoda mukautuksia mukauttamisen työkalurivin **Hallinta**-asetuksella.
 
 ## <a name="managing-custom-fields"></a>Mukautettujen kenttien hallinta
@@ -137,6 +143,10 @@ Joskus harvoin voi käydä niin, että mukautettua kenttää ei enää tarvita. 
 
 ## <a name="appendix"></a>Liite
 
+### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Miksi en voi määrittää arvoa mukautetussa kentässä? 
+
+Jos et voi kirjoittaa arvoa mukautettuun kenttään, kun sivu on muokkaustilassa, tämä voi johtua siitä, että taulu, jonne kenttä lisättiin, on tällä hetkellä vain luku -tilassa. Taulun kaikista kentistä tulee luku -kenttiä vain, jos taustataulu on määritetty tällä hetkellä sivulla vain luku -muotoiseksi.   
+
 ### <a name="who-can-create-custom-fields"></a>Kenellä on oikeus luoda mukautettuja kenttiä?
 
 Järjestelmän suojaamiseksi vain järjestelmänvalvojat voivat oletusarvoisesti luoda mukautettuja kenttiä. Organisaatio voi kuitenkin antaa tarvittaessa sopiville tehokäyttäjille mukautettujen kenttien luontioikeudet. Järjestelmänvalvojat voivat tehdä sen käyttämällä **Suorituksenaikainen mukautuksen tehokäyttäjä** -käyttöoikeusroolia. Vaikka käyttäjät, joilla ei ole tätä käyttöoikeusroolia, eivät voi luoda mukautettuja kenttiä, he voivat kuitenkin nähdä ja käyttää muiden järjestelmän käyttäjien lisäämiä mukautettuja kenttiä.
@@ -162,3 +172,6 @@ Suorituskyvyn ja teknisten syiden vuoksi vain seuraavat ehdot täyttävät taulu
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Voinko viitata mukautettuihin kenttiin kehittäjän työkaluissa?  
 
 Mukautettuja kenttiä voi hallinnoida vain käyttöliittymässä. Niihin ei voi viitata koodilla. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

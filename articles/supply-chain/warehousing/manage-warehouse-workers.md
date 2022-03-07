@@ -1,35 +1,32 @@
 ---
 title: Varastotyöntekijöiden hallinta
-description: Tässä artikkelissa kuvataan, miten voit hyödyntää varastosovellusta työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
+description: Tässä artikkelissa kuvataan, miten voit hyödyntää varastonhallinnan mobiilisovellusta työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 2a3261571f7ba43a79ee42afd8cdfe9b69cb83c01de3e4b2b89d2b0aae668ea2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4427390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757515"
 ---
 # <a name="manage-warehouse-workers"></a>Varastotyöntekijöiden hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan, miten voit hyödyntää varastosovellusta työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
+Tässä artikkelissa kuvataan, miten voit hyödyntää varastonhallinnan mobiilisovellusta työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 
 Jos käytät tätä toimintoa varastonhallinnassa, kaikkiin varastotyöntekijöiden toimintoihin viitataan *työnä*. Työ, kuten käsillä olevan varaston keräily, siirtäminen ja laskeminen tallennetaan mobiililaitteiden avulla. Ennen kuin varastotyöntekijä voi suorittaa työn, hänen on oltava liitettynä työntekijään Henkilöstöhallinnossa. Jokaiseen **Työntekijä**-tiliin voi olla liitettynä useita varastotyökäyttäjiä. Nämä työn käyttäjät voivat työskennellä eri varastoissa ja heillä voi olla eritasoinen pääsy erilaisiin mobiililaitteen valikkoihin. Voit ajatella varastotyön käyttäjiä useina valitun työntekijän kirjautumisina. Kullakin työntekijällä on oletusvarasto, ja määrätyt työnkulut näkyvät kyseiselle työn käyttäjälle saatavilla olevien valikkovaihtoehtojen kautta. 
 
@@ -57,3 +54,6 @@ Analyysi työnimikkeiden viemästä ajasta voi auttaa edistämään parannuksia 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

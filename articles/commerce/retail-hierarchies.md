@@ -2,16 +2,13 @@
 title: Commerce-hierarkiat
 description: Tässä artikkelissa käsitellään Dynamics 365 Commercen hierarkioita.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f7e4d01970f459f66934fe434ec7307104b39b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 60534536476cfbe7a4f254923785ab1eb0001a3eaf7630dec75f28f07dff30d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412064"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716164"
 ---
 # <a name="commerce-hierarchies"></a>Commerce-hierarkiat
 
@@ -45,3 +42,6 @@ Seuraavassa taulukossa on kuvattu käytettävissä olevia luokkahierarkioiden ty
 | Siirtymishierarkia   | Tämän hierarkiatyypin avulla voit ryhmitellä ja järjestää tuotteita luokiksi niin, että niitä voidaan selata verkossa tai myyntipisteessä. |
 
 Jäsentelemällä tuotteita luokkahierarkian avulla voit määrittää ja ylläpitää tuotemääritteitä ja -ominaisuuksia luokkatasolla. Nämä määritteet ja ominaisuudet sisältävät tuotedimensioiden asetukset sekä myyntipisteasetukset. Luokkiin määritettävät tuotteet perivät määrittämäsi määritteet ja ominaisuudet automaattisesti. Voit myös kopioida minkä tahansa tuotteen ominaisuusasetukset useisiin valitun luokan tuotteisiin samanaikaisesti.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

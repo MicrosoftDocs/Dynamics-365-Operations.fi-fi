@@ -2,28 +2,25 @@
 title: Jäännöspoisto jaon jälkeen
 description: Tässä ohjeaiheessa kuvataan menetelmä, jota käytetään resurssissa poiston laskemiseen sen jälkeen, kun resurssi on jaettu käyttämällä jäännöspoistomenetelmää.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 615d17c71b904d426081d4c57492ba7e95c2c749
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: 8e59ff1ef2b06a7203c1023bade7f06019479f3929dfbd582860f102c46b49f0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737698"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Jäännöspoisto jaon jälkeen
 
@@ -40,8 +37,11 @@ Esimerkiksi seuraavat ehdot ovat voimassa:
 - Ensimmäisen tilivuoden poisto on 18 000 $, kuukausittainen poisto on 150 $ ja resurssi on poistettu marraskuussa 2019, summa 738,75 $.
 - Marraskuussa 2019 80 prosenttia resurssista jaetaan toiselle käyttöomaisuuserälle.
 
-[![Jäännöspoisto jaon jälkeen](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Jäännöspoisto jaon jälkeen.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Alkuperäisen käyttöomaiosuuserän poistettava summa on 1 822,25 $. Tämä summa on sama kuin nettokirjanpitoarvo ennen jakotapahtumaa, kirjattuna (9 111,25 $) lisättynä hankinnan oikaisulla, joka luodaan jakotapahtuman kirjauksen aikana (-8 000 $) lisättynä poiston oikaisulla, joka luodaan jakotapahtuman aikana (711 $). Tämän vuoksi toisen vuoden poisto on (1 822,25 × 18 prosenttia) ÷ 12 = 27,33 $.
 
 Uuden käyttöomaisuudenkäyttöomaisuuserän poistosumma ensimmäisenä vuonna on (8 000 × 18 prosenttia) ÷ 12 = 120 $.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

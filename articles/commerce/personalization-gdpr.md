@@ -2,16 +2,13 @@
 title: Poista kohdennetut suositukset
 description: Tässä ohjeaiheessa kerrotaan, miten voit antaa asiakkaiden kieltäytyä vastaanottamasta mukautettuja Microsoft Dynamics 365 Commerce -suosituksia.
 author: bebeale
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411943"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772934"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Poista kohdennetut suositukset
+# <a name="opt-out-of-personalized-recommendations"></a>Kohdennetuista tuotesuosituksista kieltäytyminen
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten voit antaa asiakkaiden kieltäytyä vastaanottamasta mukautettuja Microsoft Dynamics 365 Commerce -suosituksia.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Tilin luonnin yhteydessä uudet asiakkaat määritetään automaattisesti vastaanottamaan mukautettuja suosituksia. Dynamics 365 Commerce tarjoaa kuitenkin useita tapoja, joilla jälleenmyyjät voivat antaa käyttäjien kieltäytyä vastaanottamasta näitä suosituksia ja rajoittaa henkilökohtaisten tietojen käsittelyä. Todennetut käyttäjät, jotka eivät halua saada mukautettuja suosituksia, eivät heti näe mukautettuja luetteloita. Lisäksi kaikki personointia varten kerätyt henkilökohtaiset tiedot poistetaan mukautetuista suositusmalleista.
 
@@ -49,11 +44,11 @@ Commerce Back Office -tilien hallinnassa jälleenmyyjät voivat jättäytyä poi
 1. Hae Back Office -kotisivulta **kaikki asiakkaat**.
 1. Hae ja valitse asiakas ja valitse sitten **Retail**-pikavälilehti.
 
-    ![Retail-pikavälilehti](./media/Disablepersonalizationpart1.png)
+    ![Retail-pikavälilehti.](./media/Disablepersonalizationpart1.png)
 
 1. Valitse **Yksityisyys**-kohdassa **Poista mukautus käytöstä** -asetukseksi **Kyllä**.
 
-    ![Tietosuoja-asetukset](./media/Disablepersonalizationpart2.png)
+    ![Tietosuoja-asetukset.](./media/Disablepersonalizationpart2.png)
 
 1. Valitse **Tallenna** ja sulje sivu.
 
@@ -104,3 +99,6 @@ Seuraavassa esimerkissä näkyy, miten jälleenmyyjä voi suorittaa tämän teht
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

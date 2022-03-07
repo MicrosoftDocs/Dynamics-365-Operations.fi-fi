@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,14 +17,14 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: fca209c9827192f50c2f1a5bd9e78146214e1e0e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594329"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222558"
 ---
-# <a name="customize-image-focal-points"></a>Kuvan keskipisteiden mukauttaminen
+# <a name="customize-image-focal-points"></a>Kuvien tarkennuspisteiden mukauttaminen
 
 [!include [banner](includes/banner.md)]
 
@@ -60,3 +59,6 @@ Voit määrittää kuvalle mukautetun keskipisteen seuraavasti.
 [Kuvien rajaaminen](dam-crop-images.md)
 
 [Staattisten tiedostojen lataaminen ja käyttäminen](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

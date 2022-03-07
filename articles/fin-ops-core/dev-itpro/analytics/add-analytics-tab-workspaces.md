@@ -1,25 +1,23 @@
 ---
 title: Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
 description: Tässä ohjeaiheessa kerrotaan, miten Power BI -raportti upotetaan työtilan Analytiikka-välilehteen.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760149"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
 
@@ -56,11 +54,11 @@ Lisää .pbix-tiedosto Visual Studio -projektin artefaktina.
 3. Valitse **Lisää uusi nimike** -valintaikkunan **Toimintojen artefaktit** -kohdassa **Resurssi**-malli.
 4. Anna nimi, jolla viitataan X++-metatietojen raporttiin ja valitse sitten **Lisää**.
 
-    ![Lisää uusi nimike -valintaikkuna](media/analytical-workspace-add.png)
+    ![Lisää uusi nimike -valintaikkuna.](media/analytical-workspace-add.png)
 
 5. Etsi analyysiraportin määritelmän sisältävä .pbix-tiedosto ja valitse sitten **Avaa**.
 
-    ![Valitse resurssitiedosto -valintaikkuna](media/analytical-workspace-select-resource.png)
+    ![Valitse resurssitiedosto -valintaikkuna.](media/analytical-workspace-select-resource.png)
 
 Nyt kun .pbix-tiedosto on lisätty Dynamics 365 -resurssina, voit upottaa raportteja työtiloihin ja lisätä suoria linkkejä valikkovaihtoehtojen avulla.
 
@@ -69,7 +67,7 @@ Tässä esimerkissä Kuljetuskaluston hallinta -mallin **Varausten hallinta** -t
 
 Seuraavassa kuvassa näytetään, miltä **FMClerkWorkspace**-lomake näyttää Microsoft Visual Studion suunnittelutoiminnossa.
 
-![FMClerkWorkspace-lomake ennen muutoksia](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-lomake ennen muutoksia.](media/analytical-workspace-definition-before.png)
 
 Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeiden mukaisesti.
 
@@ -94,7 +92,7 @@ Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeid
 
 Seuraava kuva osoittaa, miltä rakenne näyttää muutosten jälkeen.
 
-![FMClerkWorkspace muutosten jälkeen](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace muutosten jälkeen.](media/analytical-workspace-definition-after.png)
 
 Nyt kun työtilan raportin upottamiseen käytettävät lomakkeen ohjausobjektit on lisätty, pääohjausobjektin koko on määritettävä asetteluun sopivaksi. Oletusarvoisesti sekä **Suodatinruutu**-sivu että **Välilehti**-sivu näkyvät raportissa. Voit kuitenkin muuttaa näiden ohjausobjektien näkyvyyttä raportin kohdekäyttäjän mukaan.
 
@@ -144,7 +142,7 @@ Lisää näiden ohjeiden mukaisesti liiketoimintalogiikka, joka käynnistää **
 
 Olet nyt suorittanut tehtävän, jolla upotetun raportin katseluohjelman ohjausobjektin käynnistävä liiketoimintalogiikka lisätään. Seuraava kuva osoittaa, miltä työtila näyttää muutosten jälkeen.
 
-![Työtilaan upotettu raportti](media/analytical-workspace-final.png)
+![Työtilaan upotettu raportti.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Voit käyttää aiemmin luotua toimintonäkymää käyttämällä sivun otsikkoon kuuluvia työtilan välilehtiä.
@@ -175,3 +173,6 @@ public static void initializeReportControl(
 | showFilterPane   | Totuusarvo, joka ilmaisee, näytetäänkö suodatinruutu (**tosi**) vai piilotetaanko se (**epätosi**).     |
 | showNavPane      | Totuusarvo, joka ilmaisee, näytetäänkö siirtymisruutu (**tosi**) vai piilotetaanko se (**epätosi**). |
 | defaultFilters   | Power BI -raportin oletussuodattimet.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

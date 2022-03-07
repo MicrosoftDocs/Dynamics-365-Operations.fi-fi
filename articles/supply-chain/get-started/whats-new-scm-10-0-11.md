@@ -2,27 +2,24 @@
 title: Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet (kesäkuu 2020)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.11 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 52090645b0bb00399a88926c0b48a3cee8fcd114
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 76a28b9285bb8edfaaee7f9bc3cb4f03deb7a731abb55624394278d72398c748
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4427380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723524"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Dynamics 365 Supply Chain Management 10.0.11:n uudet ja muuttuneet ominaisuudet (Heinäkuu 2020)
 
@@ -36,19 +33,19 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin 
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
-- [Käytettävissä olevan varaston raporttitallennus](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+- [Käytettävissä olevan varaston raporttitallennus](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Rekisterikilven vastaanoton parannukset varastosovelluksessa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Lisätietoja on kohdassa [Rekisterikilven vastaanotto varastosovelluksen avulla](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Rekisterikilven vastaanoton parannukset varastosovelluksessa](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Lisätietoja on kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen avulla](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Rivin varauksen parannukset eränumeron varauslomaketta varten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Lisätietoja on kohdassa [Saman erän varaaminen myyntitilausta varten](../sales-marketing/reserve-same-batch-sales-order.md).
+- [Rivin varauksen parannukset eränumeron varauslomaketta varten](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Lisätietoja on kohdassa [Saman erän varaaminen myyntitilausta varten](../sales-marketing/reserve-same-batch-sales-order.md).
 
-- [Tuotantoalueen uudet tietoyksiköt](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Tuotantoalueen uudet tietoyksiköt](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Kuormamääriä vastaanotettu liikaa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Lisätietoja on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](../warehousing/inbound-load-handling.md).
+- [Kuormamääriä vastaanotettu liikaa](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Lisätietoja on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](../warehousing/inbound-load-handling.md).
 
-- [Valmiiksi ilmoittaminen eränumeroille työkorttilaitteesta](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Lisätietoja on kohdassa [Ilmoita valmiiksi työkorttilaitteesta](../production-control/report-finished-job-device.md).
+- [Valmiiksi ilmoittaminen eränumeroille työkorttilaitteesta](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Lisätietoja on kohdassa [Ilmoita valmiiksi työkorttilaitteesta](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -64,7 +61,7 @@ Saat lisätietoja version 10.0.11 virheenkorjauksista päivityksissä kirjautuma
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
@@ -76,3 +73,6 @@ Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](https:/
 Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Valikoimien määrittäminen
-description: Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commerceissa.
+description: Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commercessa.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -18,22 +16,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969823"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774482"
 ---
 # <a name="set-up-assortments"></a>Valikoimien määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commerceissa.
+Tässä artikkelissa kuvataan, mikä valikoima on, ja kerrotaan, kuinka voit määrittää valikoimia Dynamics 365 Commercessa.
 
 Valikoima on kokoelma toisiinsa liittyviä tuotteita, jotka määritetään kaupan kanavalle, kuten myymälälle tai verkkokaupalle. Voit käyttää valikoimia tunnistamaan tuotteet, jotka ovat myynnissä jokaisessa myymälässä. Valikoimaan voi sisältyä tuoteluokkia. Siispä kaikki tiettyyn luokkaan määritetyt tuotteet sisältyvät valikoimaan. Valikoimaan voi myös sisältyä tiettyjä tuotteita ja tuotevariantteja. Valikoiman määrittämällä voit määrittää tuhansia tuotteita kanaviisi yhdellä kertaa juuri sellaisena yhdistelmänä, joka liikkeissäsi tarvitaan. Voit määrittää niin monta tuotevalikoimaa kuin on tarpeen. Kukin tuote voi kuulua yhteen tai useampaa valikoimaan, ja jokaisen valikoiman voi määrittää yhteen tai useampaan kanavaan. Voit esimerkiksi määrittää yhden valikoiman, joka sisältää joukon perustuotteita. Tämä valikoima kuuluu kaikille myymälöille. Voit sitten määrittää toisen valikoiman, joka sisältää vain suuria urheiluvälineitä. Vain suuremmat myymäläsi saavat tämän valikoiman. Seuraavassa kaaviossa näkyy, kuinka tuotteet voi liittää valikoimiin, ja valikoimat voi liittää kanaviin.
 
-![Tuotevalikoimien suhteet](./media/assortments_relationship.gif)
+![Tuotevalikoimien suhteet.](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -54,3 +52,6 @@ Kun olet määrittänyt edellytykset, voit luoda valikoiman ja määrittää sen
 2. Valitse kanavat tai kanavien ylätason ryhmät, joita valikoima koskee.
 3. Lisää tuoteluokkia, yksittäisiä tuotteita tai tuotevariantteja valikoimaan. Voit sisällyttää kaikki tietyn luokan tuotteet tai ohittaa tietyt tuotteet valikoimaan kuuluvasta luokasta.
 4. Julkaise valikoima. Valikoiman ajastus suoritetaan automaattisesti, kun valikoima julkaistaan. Tämä prosessi luo tuoteluettelon. Kun tämä prosessi on valmis, tuotteet vapautuvat kanaville, joille tuotevalikoima on määritetty. Jos julkaistuun valikoimaan tai sille määritettyihin kanaviin tehdään muutoksia, valikoima on päivitettävä. Aja valikoimien ajastustyö komentojonotyönä päivittääksesi valikoiman muutosten yhteydessä.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

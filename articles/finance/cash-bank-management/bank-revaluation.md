@@ -1,27 +1,24 @@
 ---
 title: Pankin ulkomaanvaluutan uudelleenarvostus
 description: Tämä ohjeaihe sisältää yhteenvedon pankin ulkomaanvaluutan uudelleenarvostusprosessista. Se sisältää tietoja asetuksista, prosessin suorittamisesta ja laskemisesta sekä uudelleenarvostustapahtumien peruutuksesta.
-author: mikefalkner
-manager: AnnBe
+author: roschlom
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f99a5ed82fd4d74a5d20620dbe19b4f18e332432
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3df6a22e06abbfa75a12ffddac242dd34f5beba5
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442865"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754117"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Pankin ulkomaanvaluutan uudelleenarvostus
 
@@ -88,3 +85,6 @@ Ulkomaanvaluutan uudelleenarvostustapahtuma jaetaan myös eri dimensioille, jotk
 Jos uudelleenarvostustapahtuma pitää palauttaa, valitse **Ulkomaanvaluutan uudelleenarvostus** -sivun **Palautustapahtuma**. Uusi ulkomaanvaluutan uudelleenarvostuksen historiatietue luodaan ylläpitämään historian kirjausketjua ulkomaanvaluutan uudelleenarvioinnin ajankohdasta tai palautuksesta.
 
 Jos haluat peruuttaa useita uudelleenarvostuksia, peruuta ensin uusin uudelleenarvostus. Jatka sitten vanhempien uudelleenarvostusten peruutusta päivämäärän osoittamassa järjestyksessä. Tämän jälkeen voit käsitellä uudet uudelleenarvostukset peruutetuilta kausilta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

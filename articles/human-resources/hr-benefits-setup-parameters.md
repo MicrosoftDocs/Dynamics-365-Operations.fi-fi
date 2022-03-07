@@ -1,31 +1,33 @@
 ---
 title: Etujen hallinnan ja työntekijän itsepalveluparametrien määrittäminen kaikille yrityksille
 description: Etujen hallinnan ja työntekijän itsepalveluparametrien määrittäminen Microsoft Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-manager: tfehr
-ms.date: 12/07/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
-ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
+ms.openlocfilehash: 822e5b37be7b2d5712d61bf7fb00f40d1692f406
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "4962437"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066922"
 ---
 # <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Etujen hallinnan ja työntekijän itsepalveluparametrien määrittäminen kaikille yrityksille
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ennen kuin voit määrittää etusuunnitelmat Microsoft Dynamics 365 Human Resourcesissa, sinun täytyy määrittää etujen hallintaparametrit. Nämä parametrit määrittävät oletusarvot, syykoodit ja muut asetukset. 
 
@@ -54,7 +56,7 @@ Ennen kuin voit määrittää etusuunnitelmat Microsoft Dynamics 365 Human Resou
 
 3. Valitse **Tallenna**.
 
-## <a name="configure-employee-self-service-parameters"></a>Työntekijän itsepalveluparametrien määrittäminen
+## <a name="configure-employee-self-service-parameters"></a>Määritä työntekijän itsepalveluparametrit
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdassa **Henkilöstöhallinnon parametrit**.
 
@@ -62,9 +64,12 @@ Ennen kuin voit määrittää etusuunnitelmat Microsoft Dynamics 365 Human Resou
 
    | Kenttä | kuvaus |
    | --- | --- |
-   | **Edun vahvistus** | Itsepalvelu-etujen aikana käytettävä tarkistusteksti kassalla. |
+   | **Edun vahvistus** | Etuuksien itsepalvelun kassalla käytettävä tarkistusteksti. |
    | **Valitse edustajat automaattisesti** | Määrittää, valitaanko huollettavat ja edunsaajat automaattisesti suunnitelmavaihtoehtojen kelpoisuuden perusteella. |
 
 3. Valitse **Tallenna**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

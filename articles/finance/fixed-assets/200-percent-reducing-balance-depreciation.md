@@ -2,28 +2,25 @@
 title: Jäännöspoisto 200 prosenttia
 description: Tässä artikkelissa on yleiskuvaus 200 prosentin jäännösarvon poistomenetelmästä.
 author: saraschi2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0474a8cecccaf1e23874458c27e0bea991140b6c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 91876ae28d088a52b12ac58db06cb0cd84b129ad
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442815"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193513"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>Jäännöspoisto 200 prosenttia
 
@@ -69,7 +66,7 @@ Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valitt
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Esimerkki 200 prosentin jäännöspoistosta
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |
 | Jäännösarvo                  | 1 000 |
@@ -81,12 +78,15 @@ Jos poistovuodeksi valitaan **Tilivuosi**, **Kausiväli**-kentässä ovat valitt
 
 | Kausi | Vuotuisen poistomäärän laskeminen | Kirjanpitoarvo             | Nettokirjanpitoarvo vuoden lopussa: |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Vuosi 1 | (11 000 – 1 000) × 40 % = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
-| Vuosi 2 | 6 000 × 40 % = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
-| Vuosi 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
+| Vuosi 1 | (11 000 – 1 000) × 40 % = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
+| Vuosi 2 | 6 000 × 40 % = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
+| Vuosi 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
 > Jos 200 %:n jäännösarvon poistomenetelmän avulla laskettu määrä on pienempi kuin tasapoistomenetelmän avulla laskettu määrä, jäljellä olevalle käyttöiälle on yleensä olemassa tasapoistomenetelmä.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

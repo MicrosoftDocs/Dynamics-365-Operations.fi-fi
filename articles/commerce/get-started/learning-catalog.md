@@ -1,35 +1,33 @@
 ---
-title: Dynamics 365 Commercein oppimisluettelo
-description: Etsi kaikki Dynamics 365 Commercein koulutusvaihtoehdot.
+title: Dynamics 365 Commercen oppimisluettelo
+description: Etsi kaikki Dynamics 365 Commercen koulutusvaihtoehdot.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ed7ac72d47d5efd60b8a705e7ab0fa7e4edd96a4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 168927e37344a1e6f76490aff32473fd82754c59
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412062"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354638"
 ---
 # <a name="dynamics-365-commerce-learning-catalog"></a>Dynamics 365 Commercen oppimisluettelo 
 
 Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Dynamics 365 Commerce -sovellusten käyttäjänä.
 
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
     ### <a name="business-and-technical-decision-makers"></a>Liiketoiminta ja teknisten toimintojen päätöksentekijät
 
@@ -141,3 +139,6 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Dynamics 
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

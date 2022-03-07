@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 93f5c3e4951784a6c4925b8f9026816bfaf551ee
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102907"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954642"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Suunnittelutuotteiden muutostenhallinta
 
@@ -92,13 +92,9 @@ Tämä luettelo on tarkoitettu vain tiedoksi. Tämän vuoksi liittyviä tuotteit
 
 **Lähde**-pikavälilehdessä voi seurata muutospyynnön alkupistettä. Siitä on hyötyä, jos esimerkiksi haluat nähdä, onko muutospyyntö luotu myyntitilauksesta, kuka sen loi ja missä yrityksessä se luotiin.
 
-### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Muutospyynnön ja ilmoitusten lähettämisen liiketoimintavaikutuksen arvioiminen
+### <a name="evaluate-the-business-impact-of-a-change-request"></a>Muutospyynnön liiketoimintavaikutuksen arvioiminen
 
-Muutoksia tarkistettaessa voidaan etsiä riippuvaisuuksia. Tällä tavoin voidaan arvioida pyydetyn muutoksen vaikutus avoimiin tapahtumiin, kuten myyntitilauksiin, tuotantotilauksiin ja käytettävissä olevaan varastoon. Kun tarkastelet muutospyyntöjä, voit lähettää ilmoitukset ihmisille, jotka vastaavat erilaisten tilausten täyttämisestä.
-
-#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Tarkastele tapahtumia, joihin vaikutus ulottuu, estä valitut tapahtumat ja lähetä ilmoituksia
-
-Voit tarkastella tapahtumia, joihin vaikutus ulottuu, estää valitut tapahtumat ja lähettää niihin liittyviä ilmoituksia seuraavasti.
+Muutoksia tarkistettaessa voidaan etsiä riippuvaisuuksia. Tällä tavoin voidaan arvioida pyydetyn muutoksen vaikutus avoimiin tapahtumiin, kuten myyntitilauksiin, tuotantotilauksiin ja käytettävissä olevaan varastoon.
 
 1. Valitse **Suunnittelun muutostenhallinta \> Yleinen \> Suunnittelun muutostenhallinta \> Suunnittelun muutospyynnöt**.
 1. Avaa joko aiemmin luotu muutospyyntö tai luo uusi muutospyyntö valitsemalla toimintoruudussa **Uusi**.
@@ -107,36 +103,7 @@ Voit tarkastella tapahtumia, joihin vaikutus ulottuu, estää valitut tapahtumat
     - **Haku** – Tarkistaa kaikki avoimet tapahtumat ja avaa sitten **Liiketoimintavaikutus avoimiin tapahtumiin** -valintaikkunan. Valintaikkunassa on luettelo kaikista tapahtumista, joihin muutos vaikuttaa.
     - **Näytä edellinen haku** – Avaa **Liiketoimintavaikutus avoimiin tapahtumiin** -valintaikkunan, jossa luettelo edellisen haun tuloksista. (Uutta hakua ei tehdä.)
 
-1. **Liiketoiminnan vaikutus avoimiin tapahtumiin** -valintaikkuna sisältää joukon välilehtiä, joista jokaisella on luettelo tietyn tyyppisistä tapahtumista, joihin vaikutus ulottuu (**myyntitilaukset**, **ostotilaukset**, **tuotantotilaukset**, **varasto** ja niin edelleen). Kussakin välilehdessä näkyy myös numero, joka ilmaisee tyypin tapahtumien määrän, johon vaikutus ulottuu. Valitse välilehti, jos haluat tarkastella luetteloa.
-1. Jos haluat käyttää tapahtumaa luettelossa, valitse tapahtuma ja valitse sitten työkaluriviltä jokin seuraavista painikkeista:
-
-    - **Näytä tapahtuma** – Avaa valittu tapahtumatietue.
-    - **Estä tilaus** – Tämä painike on käytettävissä vain **Myyntitilaukset**-välilehdessä. Valitse tämä, jos haluat estää valitun myyntitilauksen.
-    - **Estä rivi** – Tämä painike on käytettävissä vain **Ostotilaukset**-välilehdessä. Valitse tämä, jos haluat estää valitun ostotilausrivin.
-    - **Ilmoita vastuuhenkilölle** – Tämä painike on käytettävissä vain **Myyntitilaukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen käyttäjälle, joka on määritetty vastuuhenkilöksi valitulle myyntitilaukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
-    - **Ilmoita tilaajalle** – Tämä painike on käytettävissä vain **Ostotilaukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen tilaajalle, joka on määritetty tilaajaksi valitulle ostotilaukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
-    - **Ilmoita tuotannolle** – Tämä painike on käytettävissä vain **Tuotantotilaukset**-välilehdessä. Toisin kuin myynti- ja ostotilauksissa, tuotantotilauksilla ei ole yksittäistä käyttäjää, joka on määritetty vastuulliseksi niistä alusta loppuun. Sen sijaan eri valvojat tai suunnittelijat yleensä omistavat omistajuuden tietyn sivuston tai tietyn tuotannon osan osalta (esimerkiksi tietyille resursseille tai resurssiryhmille). Kun valitset tämän painikkeen, kaikki valittuun tuotantotilaukseen liittyvästä resurssista vastuussa olevat käyttäjät saavat muutosilmoituksen. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
-    - **Ilmoita valmistelijalle** – Tämä painike on käytettävissä vain **Ostoehdotus**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen valmistelijalle, joka on määritetty valistelijaksi valitulle ostoehdotukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
-    - **Ilmoita myynnin vastuuhenkilölle** – Tämä painike on käytettävissä vain **Tarjoukset**-välilehdessä. Valitsemalla tämän painikkeen voit lähettää muutosilmoituksen käyttäjälle, joka on määritetty vastuuhenkilöksi valitulle tarjoukselle. Lisätietoja siitä, kuka voi nähdä ilmoitukset ja miten ilmoituksen näytetään, on kohdassa [Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen](#review-notifications).
-    - **Hävikki** – Tämä painike on käytettävissä vain **Varasto**-välilehdessä. Valitse tämä, kun haluat hävikkiin valitun varaston.
-    - **Näytä historia** – Avaa valittuun tapahtumaan liittyvät toimenpiteet käyttämällä **Liiketoimintavaikutukset avoimiin tapahtumiin** -valintaikkunaa. (Historiassa näkyy esimerkiksi, onko ilmoitukset lähetetty vai onko tapahtumia estetty.) 
-    - **Tarkastele kaikkia tapahtumia** – Avaa kaikkien tapahtumien koko luettelo, ei vain avoimia tapahtumia.
-
-> [!IMPORTANT]
-> **Ilmoita tuotantoon** -painike on käytettävissä vain, jos *Suunnitteluilmoitukset tuotannolle* -ominaisuus on käytössä järjestelmässä. Ohjeita tämän toiminnon ja sen edellytysten käyttöönottoon ja käytöstä poistamiseen: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
-
-#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Tapahtumien muutosilmoitusten tarkasteleminen ja käsitteleminen
-
-Voit lukea ja käsitellä muutosilmoitukset seuraavasti:
-
-- Tuotantotilauksia lukuun ottamatta toimintokeskuksessa näkyvät niiden tapahtumien ilmoitukset, joista olet vastuussa. Siirtymispalkin oikeassa sivussa oleva **Näytä viestit** -painike (kellosymboli) ilmaisee, milloin sanoma on käytettävissäsi toimintokeskuksessa. Avaa toimintokeskus ja tarkastele viestejä valitsemalla **Näytä viestit** -painike.
-- Voit tarkastella kaikkia tuotantotilauksia, joista on lähetetty tekninen suunnitteluilmoitus, kohdassa **Tuotantotilaukset \> Tuotantotilaukset \> Kaikki tuotantotilaukset**. Sitten toimintoruudun **Tuotantotilaus**-välilehden **Tuotannon muutospyyntö** -ryhmässä valitse **Tuotannon ilmoitukset** avataksesi **Tuotannon ilmoitukset** -sivun.
-- Tuotantotilauksia varten voit tarkistaa vain hallitsemaani tuotantoresursseihin liittyvät muutosilmoitukset. Valitse **tuotannonhallinnan** työtilan toimintoruudusta **Määritä työtila** ja suodata sivu siten, että siinä näkyvät tiedot vain hallitsemistasi tuotantoyksiköistä, ryhmistä ja/tai resursseista. **Yhteenveto**-osassa ruudussa, jonka nimi on **Tuotantotilaukset, joissa on muutettuja tuotteita**, näkyy suodatusasetuksiasi vastaavat ilmoitukset. Valitse tämä ruutu, kun haluat avata **Suunnitteluilmoitukset**-sivun, joka sisältää suodatuksen ehdot täyttävien tapahtumien luettelon.
-
-Kun tarkastelet tuotantotilauksen ilmoituksia **Suunnitteluilmoitukset**-sivulla, voit seurata linkkejä niihin liittyviin muutostilauksiin tai tuotantotilauksiin valitsemalla sarakearvot tai käyttämällä toimintoruudussa olevia komentoja. Kun olet lopettanut muutoksen arvioinnin, voit merkitä ilmoituksen ratkaistuksi, kun olet peruuttanut tai muokannut tuotantotilauksia tarpeen mukaan. Valitse ilmoitus ja valitse sitten toimintoruudusta **Ratkaise**. Ilmoitus poistetaan kaikkien käyttäjien näkymistä.
-
-> [!IMPORTANT]
-> Tuotantotilauksia koskevien ilmoitusten lähettäminen edellyttää, että *Suunnitteluilmoitukset tuotannolle* -ominaisuus on käytössä järjestelmässä. Ohjeita tämän toiminnon ja sen edellytysten käyttöönottoon ja käytöstä poistamiseen: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
+1. Jos löydetty muutosta edellyttävä ongelma on kriittinen, avoimet tapahtumat voidaan estää tai vastaavalle käyttäjälle voidaan ilmoittaa **Liiketoimintavaikutus avoimiin tapahtumiin** -valintaikkunan työkalurivin painikkeilla.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Muutostilauksen luominen muutospyynnöstä
 

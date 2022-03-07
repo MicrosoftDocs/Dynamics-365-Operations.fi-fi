@@ -2,28 +2,25 @@
 title: Tilannevedosten yleiskatsaus (esiversio)
 description: Tässä ohjeaiheessa kerrotaan tilannevedostoiminnosta. Sen avulla voit tallentaa kassavirtaennusteen analyysia tai kertymien kanssa vertailua varten. Kun luot kassavirtaennusteen, voit tallentaa ennusteen tilannevedokseksi. Tämän jälkeen voit muokata tilannevedosten avulla ennusteeseen sisältyviä tilejä tai verrata tilannevedoksen ennustetta todellisiin arvoihin.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f0d0bdde8b69148c72b8c645e040f0e596ecba92
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 593d6fa8efdecf1b64ef802e6861783d6f85489c
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645622"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186587"
 ---
 # <a name="snapshots-overview-preview"></a>Tilannevedosten yleiskatsaus (esiversio)
 
@@ -46,5 +43,4 @@ Jos haluat vertailla useita tilannevedoksia, valitse **Vertaa tilannevedoksia**.
 
 Jos haluat verrata todellisia taloushallinnon tuloksia ennusteeseen, joka tallennettiin tilannevedoksena, valitse **Vertaa todellisiin arvoihin**. **Vertaa tilannevedoksia** -sivulla on todellisten summien ja ennusteen vertailu. Sivun yläosassa oleva kaavio näyttää näiden kahden tilannevedoksen välisten päällekkäisten kausien saapuvien ja lähtevien kassavirtojen ja palkkitilien saldojen vertailun. Alaosassa olevassa ruudukossa näkyy kauden todellisten saldojen ja ennustetun saldon yksityiskohtainen vertailu kullekin maksuvalmiussummalle. Ruudukon **Varianssi**-sarake näyttää kauden todellisen saldon ja ennustetun saldon erot.
 
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
-title: Yleiskatsaus
+title: Hallinnan yleiskatsaus
 description: Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynamics 365 Human Resourcesia ja tehdä sille vianmäärityksiä.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 7a5f6ff75667f79894fce09b4fafeeaf31eea31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527858"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889761"
 ---
-# <a name="overview"></a>Yleiskatsaus
+# <a name="administration-overview"></a>Hallinnan yleiskatsaus
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,15 +41,15 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
 
 - Määritä tietojen integraatio
   - [Tietojen integrointiteknologian valitseminen](hr-admin-integration-choose-technology.md)
-  - [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
-  - [Integraation määrittäminen Financen kanssa](hr-admin-integration-finance.md)
-  - [Integraation määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
+  - [Dataverse -integroinnin määritys](hr-admin-integration-common-data-service.md)
+  - [Integroinnin määrittäminen Financen kanssa](hr-admin-integration-finance.md)
+  - [Integroinnin määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
   - [Toistuvan tietojen viennin sovelluksen luominen](hr-admin-integration-recurring-data-export.md)
   - Office-integraatio
-    - [Office-integraation opasohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Yksikkötietojen päivittäminen Excelissä](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Avaa Excelissä -kokemusten luominen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Office-integraation vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integraation opasohjelma](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Yksikkötietojen päivittäminen Excelissä](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Avaa Excelissä -kokemusten luominen](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office-integraation vianmääritys](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 
@@ -84,7 +84,7 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
   - [Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Human Resourcesin vianmääritys
-  - [Tuen saaminen](hr-admin-troubleshooting-support.md)
+  - [Tuen saaminen](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Optimoi suorituskyky automaattisilla tyhjennystehtävillä](hr-admin-troubleshooting-batch-history.md)
   - [Analytiikkaraportteja ei päivitetä](hr-admin-troubleshooting-analytic-reports.md)
   - [Power Apps -hallintakeskuksessa ei voi luoda ympäristöä](hr-admin-troubleshooting-power-apps.md)
@@ -102,3 +102,5 @@ Tämän järjestelmänvalvojan oppaan avulla voit määrittää ja hallita Dynam
 - [Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
 - [Kehittäjän opas](hr-developer-overview.md)
 - [Käyttöopas](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

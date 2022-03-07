@@ -1,24 +1,27 @@
 ---
 title: Määritä määrittäville tuotteille määritepohjainen hinnoittelu
 description: Tässä aiheessa kerrotaan, miten määritepohjainen hinnoittelu määritetään.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4acd7b423396124dd1059602f5aa6460ec5e259
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3a75f3afcf4761ac6a9575eae9a620a1e9f01c8e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578149"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4426922"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Määritä määrittäville tuotteille määritepohjainen hinnoittelu
 
@@ -28,18 +31,17 @@ Tässä aiheessa kerrotaan, miten määritepohjainen hinnoittelu määritetään
 
 
 ## <a name="create-a-new-price-model"></a>Luo uusi hintamalli
-
-1. Valitse **Tuotetietojen hallinta \> Tuotteet \> Tuotekonfiguraation mallit**.
-1. Valitse luettelosta **High End Speaker** -rivi, mutta älä napsauta nimen linkkiä.
-1. Valitse toimintoruudussa **Malli**.
-1. Valitse **Hintamallit**.
-1. Valitse **Uusi**.
-1. Kirjoita arvo **Hintamallin nimi** -kenttään. Käytä nimeä, jonka avulla malli on helppo tunnistaa.  
-1. Kirjoita **Kuvaus**-kenttään arvo.
-1. Valitse **Tallenna**.
+1. Valitse **Tuotevarianttimallin määritys** aloitussivulla.
+2. Valitse **Tuotekonfiguraation mallit** **Linkit**-osiossa.
+3. Valitse luettelosta **High End Speaker** -rivi, mutta älä napsauta nimen linkkiä.
+4. Valitse toimintoruudussa **Malli**.
+5. Valitse **Hintamallit**.
+6. Valitse **Uusi**.
+7. Kirjoita arvo **Hintamallin nimi** -kenttään. Käytä nimeä, jonka avulla malli on helppo tunnistaa.  
+8. Kirjoita **Kuvaus**-kenttään arvo.
+9. Valitse **Tallenna**.
 
 ## <a name="add-price-elements"></a>Lisää hintaelementit
-
 1. Valitse **Muokkaa**. Kullakin tuotemallin osalla voi olla perushintaelementti ja rajaton määrä hintalausekesääntöjä. Voit myös lisätä hinnat eri valuutoissa.  
 2. Syötä arvo **Perushintalauseke**-kenttään. Kirjoita esimerkiksi 100. Lähtöhinta-lauseke voi olla numeerinen arvo tai aritmeettinen laskutoimitus, johon liittyy vähintään yksi määrite.  
 3. Valitse **Lisää**.
@@ -50,6 +52,3 @@ Tässä aiheessa kerrotaan, miten määritepohjainen hinnoittelu määritetään
 8. Kirjoita arvo **Lauseke**-kenttään. Kirjoita esimerkiksi `50`. 
 9. Sulje sivu.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

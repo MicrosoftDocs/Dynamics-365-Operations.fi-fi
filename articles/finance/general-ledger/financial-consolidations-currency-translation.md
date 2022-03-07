@@ -2,26 +2,23 @@
 title: Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0af952c760a3a2039d3332f73544d0b7c45d7b09
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442886"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811358"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -125,7 +122,7 @@ Voit määrittää tarpeiden mukaisen päivämäärän, jolloin eliminointisää
 
 Kun olet määritellyt perusominaisuudet, määritä todelliset käsittelysäännöt valitsemalla **Rivit**. Eliminointivaihtoehtoja on kaksi: voit eliminoida nettomuutossumman tai määrittää kiinteän summan.
 
-Valitse lähdetilit. Voit käyttää tähteä (\*) yleismerkkinä. Esimerkiksi **1\*** valitse kaikki **1**-alkuiset tilit kohdistuksen tietolähteenä.
+Valitse lähdetilit. Voit käyttää tähteä (\*) yleismerkkinä. Esimerkiksi **1\**valitse kaikki _* 1**-alkuiset tilit kohdistuksen tietolähteenä.
 
 Kun olet valinnut lähdetilin, käytä **Tilin määrittely** -kenttää määrittämään käytettävä tili kohdeyrityksestä. Valitse **Lähde**, jos haluat käyttää samaa, lähdetilissä määritettyä päätiliä. Jos valitset **Käyttäjän määrittämä**, sinun on määritettävä kohdetili.
 
@@ -182,3 +179,6 @@ Taloushallinnan raportointi tukee esimerkiksi seuraavia konsolidointiskenaarioit
 
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

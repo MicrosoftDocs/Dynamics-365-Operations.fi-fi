@@ -2,14 +2,11 @@
 title: Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen
 description: Tässä artikkelissa kerrotaan, miten tehtäväoppaat tallennetaan Microsoft Dynamics Lifecycle Servicesiin (LCS) ja miten niitä toistetaan.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a18bb14ba8c3c926065c97b0ee26c38ee86ded2
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418335"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053272"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Ympäristön tiedot** 
 
@@ -34,7 +33,7 @@ Microsoft Dynamics 365 Human Resources, joka oli otettu käyttöön Microsoft Dy
 
 Asiakas haluaa tallentaa uudet tehtävätallenteet LCS-projektiin ja sitten toistaa tallennettuja tehtäväoppaita.
 
-**Tarkkuus**
+**Ratkaisu**
 
 Tallenna tehtävätallenne seuraavien ohjeiden mukaisesti LCS-palveluun.
 
@@ -63,3 +62,6 @@ Toista tehtäväopas LCS-palvelusta seuraavien ohjeiden mukaisesti.
 2. Valitse **Avaa LCS-palvelusta**.
 3. Valitse kirjasto ja BPM-solmu, jossa tallennettu tehtäväopas on.
 4. Avaa tehtäväopas.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

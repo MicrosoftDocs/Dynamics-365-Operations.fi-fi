@@ -1,24 +1,26 @@
 ---
 title: Luo vapautettu tuote yhdessä yrityksessä
 description: Tässä menettelyssä kerrotaan, miten yksittäinen vapautettu tuote luodaan yksittäisessä yrityksessä.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6755f2112596be661040f1b371cb11f1785815b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 79d5252d950cd83dfd1307ffb661948405102593
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577309"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999678"
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Luo vapautettu tuote yhdessä yrityksessä
 
@@ -100,6 +102,3 @@ Tässä menettelyssä kerrotaan, miten yksittäinen vapautettu tuote luodaan yks
 12. Etsi haluamasi tietue luettelosta ja valitse se.
 13. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

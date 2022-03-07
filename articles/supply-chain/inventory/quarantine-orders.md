@@ -2,28 +2,25 @@
 title: Karanteenitilaukset
 description: Tässä ohjeaiheessa kuvataan varaston käytön estämistä karanteenitilauksilla.
 author: perlynne
-manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25ba4aa92d968f4dfb0dc23b1ac459cda2d52b61
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a44909a7880b0cd53e39ccbadf8b79ae5c9dafc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427347"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834214"
 ---
 # <a name="quarantine-orders"></a>Karanteenitilaukset
 
@@ -67,3 +64,6 @@ Karanteenitilausprosessin aikana varastoa voidaan määrittää hävikiksi. Häv
 --------
 
 [Varastoesto](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

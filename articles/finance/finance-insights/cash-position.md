@@ -1,40 +1,36 @@
 ---
-title: Kassatilanne (esiversio)
+title: Kassatilanne
 description: Tässä ohjeaiheessa kerrotaan, miten kassavirtaennustetoiminto ennustaa organisaation kassatilenteen tiettyinä aikoina. Se kuvaa myös vaihtoehdot, joiden avulla eri kausien ennusteet voidaan näyttää.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 64b8dcd43024e5c26d33bf12c5fe198711adde56
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 7d43657573ea8092f047615fc50a1a50ab97f094
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645887"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968984"
 ---
-# <a name="cash-position-preview"></a>Kassatilanne (esiversio)
+# <a name="cash-position"></a>Kassatilanne
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Kassatilanne on kassavirran ennuste. Se perustuu kassakuittien ennusteeseen niiltä asiakkailta, jotka maksavat maksamattomia laskuja ja tilauksia ja myös ennusteen käteissuorituksiin, jotka on maksettu toimittajille ostolaskuja ja -tilauksia varten.
 
 Kun järjestelmä ennustaa asiakasmaksut, se käyttää maksuennusteita asiakkaan maksuennustetoiminnosta. Ilman maksuennusteita maksupäivämäärän laskemisessa käytetään keskimääräistä aika, joka vaaditaan myyntilaskun muuntamiseksi maksuksi kullekin asiakkaalle. Avoimissa asiakastilauksissa järjestelmä laskee laskupäivämäärän käyttämällä päivien keskimääräistä määrää tilausriveillä laskutettavaa asiakasta kohti. Tämän jälkeen se käyttää laskupäivämäärää syötteenä maksuennustetoiminnossa. Asiakkaan maksuennustetoiminto laskee maḱsupäivämäärän jokaiselle tilausriville. 
 
-<*Tarvitaanko Jarekilta ja Davelta tekstiä siitä, miten maksuennusteet muunnetaan tähän päivään*> Maksamattoman laskun maksupäivämäärä on [*arvioitu*] maksuennusteista valitsemalla päivämäärä, joka vastaa viidettäkymmenettä osaa kumulatiivisesta jakelutoiminnosta, joka saavutetaan ennustetun säilön todennäköisyyksistä.
+Maksamattoman laskun maksupäivämäärä on arvioitu maksuennusteista valitsemalla päivämäärä, joka vastaa viidettäkymmenettä osaa kumulatiivisesta jakelutoiminnosta, joka saavutetaan ennustetun säilön todennäköisyyksistä.
 
 Samankaltaista menetelmää käytetään toimittajille suoritettavien maksujen ennustamiseen. Järjestelmä laskee kullekin toimittajalle keskimääräisen ajan, joka vaaditaan toimittajan laskun muuntamiseen maksuksi. Tätä päivien määrää käytetään maksupäivämäärän laskemisessa. Järjestelmä laskee avoimille toimittajan tilauksille laskupäivämäärän ottamalla huomioon keskimääräisen päivien määrän, joka vaaditaan tilausrivien muuntamiseksi laskuksi kullekin toimittajalle. Järjestelmä laskee sitten maksupäivämäärän käyttämällä keskimääräistä aikaa, jonka avulla toimittajan lasku muunnetaan maksuksi.
 
@@ -49,5 +45,16 @@ Samankaltaista menetelmää käytetään toimittajille suoritettavien maksujen e
 
 Jos haluat tallentaa ja muokata kassatilannetta, luo tilannevedos. Lisätietoja tilannevedosten käsittelemisestä on kohdassa [Tilannevedosten yleiskatsaus](payment-snapshots.md).
 
-#### <a name="privacy-notice"></a>Tietosuojatiedot
-Esiversiot (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) niitä ei ole tarkoitettu henkilötietojen tai muiden sellaisten tietojen käsittelemiseen, joihin liittyy lainsäädännön tai määräysten vaatimustenmukaisuusvaatimuksia ja (4) niillä on rajoitettu tuki.
+## <a name="details-of-the-cash-position-capability"></a>Kassatilanneominaisuuden tiedot 
+
+Kassatilanneominaisuus sisältää seuraavat toiminnot. 
+
+- Kassatilannetoiminto näyttää kassavirran järjestelmässä aiemmin luotujen asiakirjojen sekä ulkoisista järjestelmistä tuotavien kassavirta- ja ulosvirtausrivien perusteella.
+- Kassavirtatietojen helppo integroiminen ulkoisista järjestelmistä Dynamics 365 Financeen. Kassatilanne voi käyttää myös tietojen tuonti- ja vientikehystä. Tämän kehyksen avulla on helppo integroida tiedot Excel ODatan kanssa. Voit yhdistää tietoja useista lähteistä ja luoda kattavan kassatilanneratkaisun.
+- Esittelee älykkään kassatilanteen. Kassatilanne luodaan asiakkaan maksutoiminnan perusteella. Sen avulla ennustetaan, milloin yritys voi odottaa rahojen tulevan tilille.
+- Asiakastilausten ja laskujen yhteydessä asiakkaan maksujen ennusteen tekoälytoimintojen avulla määritetään asiakkaan historiallinen maksutoiminta tilauksen tai laskun maksamisen yhteydessä.
+- Toimittajatilauksissa ja laskuissa käytetään keskimääräistä aikaa lähetyksen ja laskun välillä sekä toimittajalaskun maksamista. Näin määritetään, milloin toimittajatilaus tai lasku maksetaan, mikä tekee kassavirroista tarkempia.
+
+Tämä luo kassavirran tarkemman näkymän, joka perustuu asiakkaiden historiallisiin maksutoimintoihin. 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

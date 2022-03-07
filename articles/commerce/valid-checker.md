@@ -1,119 +1,81 @@
 ---
-title: Myymälän tapahtumien tarkistaminen laskelman laskemista varten
-description: Tässä aiheessa esitellään myymälän tapahtumien tarkistamisen toiminnot Microsoft Dynamics 365 Commercessa.
-author: analpert
-ms.date: 01/31/2022
+title: Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistus
+description: Tässä aiheessa kuvataan tapahtumien yhdenmukaisuuden tarkistuksen toiminnot ohjelmassa Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: analpert
+ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 38386087a74a0881867df89bbe26453dff740be3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087446"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350301"
 ---
-# <a name="validate-store-transactions-for-statement-calculation"></a>Myymälän tapahtumien tarkistaminen laskelman laskemista varten
+# <a name="retail-transaction-consistency-checker"></a>Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistus
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa esitellään myymälän tapahtumien tarkistamisen toiminnot Microsoft Dynamics 365 Commercessa. Tarkistusprosessi tunnistaa ja merkitsee kirjausvirheitä aiheuttavat tapahtumat, ennen kuin laskelmien kirjausprosessi valitsee ne.
+Tässä aiheessa kuvataan tapahtumien yhdenmukaisuuden tarkistuksen toiminnot ohjelmassa Microsoft Dynamics 365 Commerce. Yhdenmukaisuuden tarkistus tunnistaa ja osoittaa ei-yhdenmukaiset tapahtumat, ennen kuin laskelmien kirjaamisprosessi ottaa ne käsittelyyn.
 
-Kun yrität kirjata laskelman, tarkistusprosessi voi epäonnistua kaupankäynnin tapahtumataulujen ristiriitaisten tietojen vuoksi. Seuraavassa on muutamia esimerkkejä tekijöistä, jotka voivat aiheuttaa näitä ristiriitoja:
+Kun laskelma kirjataan, kirjaus saattaa epäonnistua kaupan transaktiotauluissa olevien ei-yhdenmukaisten tietojen johdosta. Ongelma tiedoissa saattaa johtua odottamattomista ongelmista myyntipistesovelluksessa, tai siitä, että tapahtumat on tuotu virheellisesti kolmannen osapuolen myyntipistejärjestelmistä. Nämä ristiriidat voivat näyttää esimerkiksi seuraavanlaisilta: 
 
 - Tapahtuman kokonaissumma otsikkotaulussa ei vastaa riveillä olevaa tapahtuman kokonaissummaa.
-- Otsikkotaulussa määritettyjen nimikkeiden määrä ei vastaa tapahtumataulun nimikkeiden määrää.
+- Otsikkotaulun rivimäärä ei vastaa transaktiotaulun rivimäärää.
 - Otsikkotaulussa olevat verot eivät vastaa riveillä olevaa veron määrää. 
 
-Jos laskelmien kirjausprosessi havaitsee epäyhtenäisiä tapahtumia, luodut myyntilaskut ja maksukirjauskansiot voivat aiheuttaa laskelman kirjauksen epäonnistumisen. **Tarkista myymälän tapahtumat** -prosessi estää näiden ongelmien syntymisen varmistamalla, että vain tapahtuman tarkistussääntöjen hyväksymät tapahtumat välitetään tapahtumaraportin laskentaprosessiin.
+Kun laskelmien kirjausprosessi havaitsee epäyhtenäisiä tapahtumia, luodaan yhteensopimattomia myyntilaskuja ja maksutietoja, ja koko laskelmien kirjausprosessi epäonnistuu tämän seurauksena. Laskelmien palauttaminen sellaisesta tilasta vaatii monimutkaisia tietojen korjauksia moneen transaktiotauluun. Tapahtumien yhdenmukaisuuden tarkistus estää tällaiset ongelmat.
 
-Seuraavassa kuvassa ovat toistuvat päiväprosessit tapahtumien lataamista ja tarkistamista ja tapahtumaraporttien laskemista ja kirjaamista varten sekä tilinpäätöksen laskennan ja kirjauksen päivän lopussa suoritettavat prosessit.
+Seuraavassa kaaviossa havainnollistetaan kirjausprosessi, jossa tapahtumien yhdenmukaisuuden tarkistus on käytössä.
 
-![Kuvassa ovat toistuvat päiväprosessit tapahtumien lataamista ja tarkistamista ja tapahtumaraporttien laskemista ja kirjaamista varten sekä tilinpäätöksen laskennan ja kirjauksen päivän lopussa suoritettavat prosessit](./media/valid-checker-statement-posting-flow.png)
+![Laskelman kirjausprosessi ja tapahtuman yhdenmukaisuuden tarkistus.](./media/validchecker.png "Laskelman kirjausprosessi ja vähittäismyyntitapahtuman yhdenmukaisuuden tarkistus")
 
-## <a name="store-transaction-validation-rules"></a>Myymälän tapahtuman tarkistussäännöt
+**Vahvista myymälän tapahtumat** -eräprosessi tarkistaa seuraavien seikkojen yhdenmukaisuuden kaupan transaktiotauluista.
 
-**Tarkista myymälän tapahtumat** -eräprosessi tarkistaa kaupankäynnin tapahtumataulujen yhdenmukaisuuden seuraavien tarkistussääntöjen perusteella.
+- **Asiakkaan tili** – Tarkistaa, että transaktiotauluissa oleva asiakastili on olemassa asiakkaan alkuperäisissä tiedoissa pääkonttorissa.
+- **Rivien määrä** – Tarkistaa, että rivien määrä transaktioiden otsikkotaulussa vastaa myynnin transaktiotauluissa olevien rivien määrää.
+- **Hinta sisältää veron** – Tarkistaa, että **Hinta sisältää veron** -parametri on yhdenmukainen eri tapahtumariveillä ja että myyntirivin hinta noudattaa Hinta sisältää veron- ja verovapauskonfiguraatiota.
+- **Maksun summa** – Tarkistaa, että maksut vastaavat otsikon maksuja, samalla eritellen pyöristyskonfiguraatiota kirjanpidossa.
+- **Bruttosumma** – Tarkistaa, että otsikon bruttosumma on sama kuin rivien nettosummien ja veron määrä laskettuna yhteen, samalla eritellen pyöristyskonfiguraatiota kirjanpidossa.
+- **Nettosumma** – Tarkistaa, että otsikon nettosumma on sama kuin rivien nettosummat laskettuna yhteen, samalla eritellen pyöristyskonfiguraatiota kirjanpidossa.
+- **Liika-/alimaksu** – Tarkistaa, että otsikon bruttosumman ja maksusumman välinen ero ei ylitä määritettyä ali- ja ylimaksun enimmäismäärää, samalla eritellen pyöristyskonfiguraatiota kirjanpidossa.
+- **Alennuksen summa** – Tarkistaa, että vähittäismyyntitapahtumien rivien taulukon alennuksen summan alennustaulukoiden alennuksen summa on yhdenmukainen ja että otsikon alennuksen summa on sama kuin rivien alennusten summien kokonaismäärä, samalla eritellen pyöristyskonfiguraatiota kirjanpidossa.
+- **Rivialennus** – Tarkistaa, että tapahtumarivin rivialennus on kaikkien tapahtumariviin liittyvien alennustaulukon rivien summa.
+- **Lahjakorttinimike** – Commerce ei tue lahjakorttinimikkeiden palautusta. Lahjakortin saldo voidaan kuitenkin lunastaa. Kaikki lahjakorttinimikkeet, jotka on käsitelty palautusrivinä lunastusrivin sijaan, epäonnistuvat laskelman kirjausprosessissa. Lahjakorttien tarkistusprosessin avulla voidaan varmistaa, että transaktiotaulujen kaikki palautuksen lahjakorttirivinimikkeet ovat lahjakortin lunastuksen rivejä.
+- **Negatiivinen hinta** – Tarkistaa, että negatiivisen hinnan tapahtumarivejä ei ole.
+- **Nimike ja variantti** – Tarkistaa, että tapahtumarivien nimikkeet ja variantit ovat nimikkeen ja variantin päätiedostossa.
+- **Veron summa** – Tarkistaa, että verotietueen oikeellisuustarkistus vastaa rivien verosummia.
+- **Sarjanumero** – Tarkistaa, että sarjanumero on sarjanumeroseurannassa olevien nimikkeiden tapahtumariveillä.
+- **Allekirjoita** – Tarkistaa, että määrän ja nettosumman etumerkki on sama kaikilla tapahtumariveillä.
+- **Liiketoiminnan päivämäärä** – Tarkistaa, että tapahtumien liiketoiminnan päivämäärien tilikaudet ovat avoimia.
+- **Veloitukset** – Tarkistaa, että otsikon ja rivin veloitussumma on hinnan mukainen, ottaen huomioon lukien vero- ja verovapauskonfiguraation.
+
+## <a name="set-up-the-consistency-checker"></a>Yhdenmukaisuuden tarkistuksen määrittäminen
+
+Määritä Tarkista myymälän tapahtumat -eräprosessi tapahtumaan säännöllisesti kohdassa **Retail ja Commerce \> Retailin ja Commercen IT \> Myyntipistekirjaus**. Eräprosessi voidaan aikatauluttaa myymälän organisaatiohierarkian perusteella samaan tapaan kuin "Laskelman laskeminen erässä"- ja "Laskelman kirjaaminen erässä" -prosessit on määritetty. Suosittelemme määrittelemään tämän eräprosessin käynnistymään useita kertoja päivässä ja aikatauluttamaan sen siten, että se käynnistyy jokaisen P-tehtävän suorituskerran lopuksi.
+
+## <a name="results-of-validation-process"></a>Tarkistusprosessin tulokset
+
+Eräprosessin suorittaman tarkistuksen tulokset yhdistetään asianmukaiseen tapahtumaan. **Vahvistuksen tila** -kenttä tapahtumatietueessa on joko **Onnistui** tai **Virhe**, ja edellisen tarkistusajon päivämäärä näkyy **Edellisen tarkistuksen aika** -kentässä.
+
+Katso kuvaavampi tarkistuksen epäonnistumiseen liittyvä virheteksti valitsemalla asiaankuuluva transaktiotietue ja napauttamalla **Oikeellisuustarkistusvirheet**-painiketta.
+
+Tapahtumia, jotka eivät läpäise tarkistusta, ja tapahtumia, joita ei ole vielä tarkistettu, ei tuoda laskelmiin. ”Laske laskelma” -prosessin aikana käyttäjille lähetetään ilmoitus, jos on tapahtumia, jotka olisi voitu sisällyttää laskelmaan mutta joita ei ole siihen sisällytetty.
+
+Jos löydetään tarkistusvirhe, ainoa tapa sen korjaamiseksi on ottaa yhteyttä Microsoftin tukeen. Tulevissa versioissa ohjelmaan lisätään toiminto, jonka avulla käyttäjät voivat korjata käyttöliittymän kautta ne tietueet, jotka aiheuttivat virheen. Tapahtumaloki- ja auditointiominaisuudet tulevat myös saataville muutoshistorian seurantaa varten.
 
 > [!NOTE]
-> Tarkistussäännöt lisätään myös seuraaviin versioihin.
+> Tarkistussääntöjä useamman mahdollisen tilanteen kattamiseksi lisätään tulevissa versioissa.
 
-### <a name="transaction-header-validation-rules"></a>Tapahtuman otsikon tarkistussäännöt
-
-Seuraavassa taulussa ovat tapahtuman otsikon tarkistussäännöt, joita verrataan vähittäismyyntitapahtumien otsikkoon ennen tapahtumien välittämistä laskelman kirjaukseen.
-
-| Sääntö | Kuvaus |
-|-------|-------------|
-| Liiketoimintapäivämäärä | Tämä sääntö tarkistaa, että tapahtuman liiketoimintapäivämäärä liittyy kirjanpidon avoimeen kauteen. |
-| Valuutan pyöristys | Tämä sääntö tarkistaa, että tapahtuman summat pyöristetään valuutan pyöristyssäännön mukaan. |
-| Asiakastili | Tämä sääntö tarkistaa, että tapahtumassa käytettävä asiakas on tietokannassa. |
-| Alennussumma | Tämä sääntö tarkistaa, että otsikon alennussumma on yhtä suuri kuin rivien alennussummat yhteensä. |
-| Veroasiakirjan kirjauksen tila (Brasilia) | Tämä sääntö tarkistaa, että veroasiakirjan kirjaus onnistuu. |
-| Bruttosumma | Tämä sääntö tarkistaa, että tapahtuman otsikon bruttosumma vastaa tapahtumarivien ja kulujen nettosummaa ja veroja. |
-| Netto | Tämä sääntö tarkistaa, että tapahtuman otsikon nettosumma vastaa tapahtumarivien ja kulujen nettosummaa ilman veroja. |
-| Netto + vero | Tämä sääntö tarkistaa, että tapahtuman otsikon bruttosumma vastaa tapahtumarivien ja kaikkien verojen ja kulujen nettosummaa ilman veroja. |
-| Nimikkeiden määrä | Tämä sääntö tarkistaa, että tapahtuman otsikossa määritettyjen nimikkeiden määrä vastaa tapahtumarivien määrien summaa. |
-| Maksun summa | Tämä sääntö tarkistaa, että tapahtuman otsikon maksun summa vastaa kaikkien maksutapahtumien summaa. |
-| Verovapauden laskenta | Tämä sääntö tarkistaa, että laskettu summa ja kulurivien verovapaa summa yhteensä on yhtä suuri kuin alkuperäinen laskettu summa. |
-| Vero sisältyy hinnoitteluun | Tämä sääntö tarkistaa, että **Vero sisältyy hintaan** -merkintä on yhdenmukainen tapahtuman otsikossa ja verotapahtumissa. |
-| Tapahtuma ei ole tyhjä | Tämä sääntö tarkistaa, että tapahtuma sisältää rivejä ja että vähintään yhtä riviä ei ole mitätöity. |
-| Ali-/liikamaksu | Tämä sääntö tarkistaa, että brutto- ja maksusumman välinen ero ei ole suurempi kuin ali- tai liikamaksun määrityksen enimmäismäärä. |
-
-### <a name="transaction-line-validation-rules"></a>Tapahtumarivin tarkistussäännöt
-
-Seuraavassa taulussa ovat tapahtumarivin tarkistussäännöt, joita verrataan vähittäismyyntitapahtumien rivitietoihin ennen tapahtumien välittämistä laskelman kirjaukseen.
-
-| Sääntö | Kuvaus |
-|-------|-------------|
-| Viivakoodi | Tämä sääntö tarkistaa, että kaikki tapahtumariveillä käytettävät nimikkeen viivakoodit ovat tietokannassa. |
-| Kulurivit | Tämä sääntö tarkistaa, että laskettu summa ja kulurivien verovapaa summa yhteensä on yhtä suuri kuin alkuperäinen laskettu summa. |
-| Lahjakorttien palautukset | Tämä sääntö tarkistaa, että tapahtumassa ei ole lahjakorttien palautuksia. |
-| Nimikevariantti | Tämä sääntö tarkistaa, että kaikki tapahtumariveillä käytettävät nimikkeet ja kaikki variantit ovat tietokannassa. |
-| Rivialennus | Tämä sääntö tarkistaa, että rivin alennussumma vastaa alennustapahtumien summaa. |
-| Rivin vero | Tämä sääntö tarkistaa, että rivin verosumma vastaa verotapahtumien summaa. |
-| Negatiivinen hinta | Tämä sääntö tarkistaa, että tapahtumariveillä ei ole käytetty negatiivisia hintoja. |
-| Sarjanumeroseurannassa | Tämä sääntö tarkistaa, että tapahtumarivillä on sarjanumero sarjanumeroseurannassa olevien nimikkeitä varten. |
-| Sarjanumeron dimensio | Tämä sääntö tarkistaa, että sarjanumeroa ei ole annettu, jos nimikkeen sarjanumeron dimensio ei ole käytössä. |
-| Merkkiristiriita | Tämä sääntö tarkistaa, että määrän ja nettosumman merkit ovat samat kaikilla tapahtumariveillä. |
-| Verovapaa | Tämä sääntö tarkistaa, että rivinimikkeen hinta ja verovapaa summa yhteensä on yhtä suuri kuin alkuperäinen hinta. |
-| Veroryhmän määritys | Tämä sääntö tarkistaa, että arvonlisäveroryhmän ja nimikkeen veroryhmän yhdistelmä tuottaa sallitun verojen leikkauskohdan. |
-| Mittayksikkömuunnokset | Tämä sääntö tarkistaa, että kaikkien rivien mittayksiköillä on sallittu varaston mittayksikön muunnos. |
-
-## <a name="enable-the-store-transaction-validation-process"></a>Myymälän tapahtumien tarkistusprosessin käyttöönotto
-
-Määritä **Tarkista myymälän tapahtumat** -työ Commerce-pääkonttorisovelluksen kausittaisille suorituksille (**Retail ja Commerce \> Retailin ja Commercen IT \> Myyntipistekirjaus**). Erätyö ajoitetaan myymälän organisaatiohierarkian perusteella. Tämä eräprosessi kannattaa määrittää suoritettavaksi samalla toistovälillä kuin **noutotyö** ja **Tapahtumaraportin laskenta** -erätyö.
-
-## <a name="results-of-the-validation-process"></a>Tarkistusprosessin tulokset
-
-**Tarkista myymälän tapahtumat** -eräprosessin tulosta voi tarkastella kussakin vähittäismyyntitapahtumassa. Tapahtumatietueen **Tarkistuksen tila** -kentän arvoksi on määritetty **Onnistui**, **Virhe** tai **Ei mitään**. **Edellisen tarkistuksen aika** -kentässä on edellisen tarkistusajon päivämäärä.
-
-Seuraavassa taulussa on kukin tarkistuksen tila.
-
-| Tarkistuksen tila | Kuvaus |
-|-------------------|-------------|
-| Onnistui | Kaikki käytössä olevat tarkistussäännöt hyväksyttiin. |
-| Virhe | Käyttöönotettu tarkistussääntö löysi virheen. Voit tarkastella virheen lisätietoja valitsemalla toimintoruudussa **Tarkistusvirheet**. |
-| Ei mitään | Tapahtumatyyppi ei vaadi tarkistussääntöjen kohdistamista. |
-
-![Myymälän tapahtumat -sivulla on Tarkistuksen tila -kenttä ja Tarkistusvirheet-painike.](./media/valid-checker-validation-status-errors.png)
-
-Vain tapahtumat, joiden tarkistuksen tila on **Onnistui**, noudetaan tapahtumaraportteihin. Jos haluat tarkastella tapahtumia, joiden tila on **Virhe**, tarkista **Itsepalvelun tarkistusvirheet** -ruutu **Myymälän myyntitiedot** -työtilassa.
-
-![Myymälän myyntitiedot -työtilan ruudut.](./media/valid-checker-cash-carry-validation-failures.png)
-
-Lisätietoja itsepalvelun tarkistusvirheiden korjaamisesta on kohdassa [Kassanhallinnan ja itsepalvelutukun hallintatapahtumien muokkaaminen ja tarkastaminen](edit-cash-trans.md).
-
-## <a name="additional-resources"></a>Lisäresurssit
-
-[Kassanhallinnan ja itsepalvelutukun hallintatapahtumien muokkaaminen ja tarkastaminen](edit-cash-trans.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,25 +1,28 @@
 ---
 title: Päivitä kanbanin tila
 description: Kun kanban tyhjennetään vahingossa tai vastaanotettu kanban on tyhjennettävä, kanbanin tila tulee päivittää.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Kanban, KanbanResetEmpty
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fd19febe38d5d0a201d5a50bc57ddb541e12051
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bb8559c0843d7e6e538b5b29dc394a50d05462ee
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574350"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4427240"
 ---
 # <a name="update-kanban-status"></a>Päivitä kanbanin tila
 
@@ -45,6 +48,3 @@ Kun kanban tyhjennetään vahingossa tai vastaanotettu kanban on tyhjennettävä
 2. Merkitse valittu rivi luettelossa.
     * Huomaa, että materiaalin käsittely-yksikön tila on Tyhjennetty.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

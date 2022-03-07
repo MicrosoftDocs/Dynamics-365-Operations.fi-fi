@@ -1,12 +1,11 @@
 ---
 title: ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita tuomaan tietoja Microsoft Dynamics 365 Finance -sovellukseen ulkoisesta tiedostosta.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määrityksen suunnittelua tuomaan tietoja Microsoft Dynamics 365 Finance -sovellukseen ulkoisesta tiedostosta.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1b8a94173c7c5367b79bfcb354f0397515d94445
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684279"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564287"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
 
@@ -254,3 +253,6 @@ Testaa muodon yhdistämismääritys suorittamalla se. Käytä aiemmin ladattua 1
 27. Sulje sivu.
 28. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

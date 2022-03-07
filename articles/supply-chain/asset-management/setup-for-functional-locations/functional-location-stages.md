@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5ded5fb032676a261566254427abcb642924451d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021269"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228728"
 ---
 # <a name="functional-location-lifecycle-states"></a>Toiminnallisen sijainnin elinkaaren tilat
 
@@ -62,3 +62,6 @@ Kun olet luonut toiminnallisten sijaintien edellyttämät elinkaariilat, ne void
 5. Jos haluat valita mallin kaikki käytettävissä olevat tilat, napsauta ![Valitse kaikki käytettävissä olevat vaiheet](media/03-setup-for-functional-locations.png) -painiketta. Kaikki tilat siirretään **Valitut elinkaaren tilat** -osioon.
 6. Jos haluat poistaa valitun tilan mallista, valitse tila **Valitut elinkaaren tilat** -osassaja valitse sitten ![takaisin-nuoli](media/04-setup-for-functional-locations.png) -painike.
 7. Valitse **Elinkaaren tilan päivitykset** määrittääksesi, mitkä elinkaaren tilat voivat seurata valittua tilaa.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

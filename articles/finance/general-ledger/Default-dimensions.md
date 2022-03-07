@@ -2,28 +2,25 @@
 title: Taloushallinnon dimensiot ja kirjaaminen
 description: Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä ohjeaiheessa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e65d371486d53d0fe4f039da68fbb4dcc35074d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442731"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897305"
 ---
 # <a name="financial-dimensions-and-posting"></a>Taloushallinnon dimensiot ja kirjaaminen 
 
@@ -86,17 +83,17 @@ Kirjauskansion otsikon oletusdimensio aiheuttaa sen, että osastoa 023 käytetä
 
 Riviä kirjatessa käytetään kuitenkin kiinteää dimensiota ja rivi kirjataan osastolle 022. Seuraavassa kuvassa on kirjattu tosite, jossa kiinteää dimensiota käytetään myyntitilille.
 
-[![Tositetapahtumat](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Kiinteään dimensioon liittyvät tositetapahtumat](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Esimerkki 2
 
 Tässä esimerkissä käytetään samoja asetuksia kuin ensimmäisessä esimerkissä. Nyt kuitenkin lisätään toinen komponentti ja käytetään Osasto-dimensiota täsmäyttävänä dimensiona. Seuraavassa kuvassa **Osasto** on määritetty USMF-kirjanpidon täsmäyttäväksi taloushallinnon dimensioksi.
 
-[![Kirjanpito](./media/ledger.png)](./media/ledger.png)
+[![Kuva, jossa osasto näkyy täsmäyttävänä taloushallinnon dimensiona](./media/ledger.png)](./media/ledger.png)
 
 Kun käytetään samoja kirjauskansion otsikon asetuksia ja sama tapahtuma kirjataan, käytetään ensin kiinteää dimensiota. Tämän jälkeen käytetään täsmäytyslogiikkaa varmistamaan, että jokaisella osastolla on täsmätty merkintä. Seuraavassa kuvassa on täsmäytysmerkinnän sisältävät tositetapahtumat, kun kiinteä dimensiota on käytetty.
 
-[![Tositetapahtumat](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Tositetapahtumat täsmäyttävän kirjauksen jälkeen](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Esimerkki 3
 
@@ -122,8 +119,11 @@ Osa seuraavista resursseita viittaa ohjelmiston aiempiin versioihin. Suuri osa s
 
 [Tilikartan suunnittelu](plan-chart-of-accounts.md) 
 
-[Tilikartan suunnitteleminen AX 2012 -blogissa](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – tämä linkki avaa 7-osaisen sarjan 1. osan.
+[Tilikartan suunnitteleminen AX 2012 -blogissa](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – tämä linkki avaa 7-osaisen sarjan 1. osan.
 
-[Dimension oletusarvot kirjanpidollisissa jaoissa](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimension oletusarvot kirjanpidollisissa jaoissa](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Dimension oletusarvot dimensiokehyksessä](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimension oletusarvot dimensiokehyksessä](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

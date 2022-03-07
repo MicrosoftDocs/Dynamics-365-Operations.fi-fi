@@ -2,11 +2,9 @@
 title: Kustannushinnan käyttökeskiarvo
 description: Varaston sulkemisprosessi selvittää varasto-ottotapahtumat vastaanottotapahtumiksi nimikkeen nimikemalliryhmässä valitun varastonarvostusmenetelmän perusteella. Ennen kuin varasto suljetaan, järjestelmä laskee kustannushinnan käyttökeskiarvon, jota käytetään yleensä varasto-ottotapahtumien kirjaamisessa.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 776f886fc0dfccf1b2675c9d54d44c16c6df4f09
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 75dfd2f23034bbd222e020b532027e60ef215241
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963760"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830263"
 ---
 # <a name="running-average-cost-price"></a>Kustannushinnan käyttökeskiarvo
 
@@ -75,3 +73,6 @@ Huomaa lisäksi, että fyysisten tapahtumien määrä sekä fyysisten ja rahoitu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

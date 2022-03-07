@@ -2,11 +2,9 @@
 title: RCS:n ja ER:n sovelluskohtaisten metatietojen valmisteleminen
 description: Tässä ohjeaiheessa käsitellään Regulatory Configuration Servicen (RCS) ja sähköisen raportoinnin (ER) sovelluskohtaisten metatietojen valmistelua.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9136bd3db2aee1447d6af3b3c47b908177cee966aba630490cc6e72072525d29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680191"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735595"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>RCS:n ja ER:n sovelluskohtaisten metatietojen valmisteleminen
 
@@ -280,3 +278,6 @@ Kun tämä malli on arvioitava käyttämällä toisen version sovelluksen metati
 ## <a name="additional-resources"></a>Lisäresurssit
 
 Vaihtoehtoisesti voit toistaa **RSC:ssä käytettävien sovelluksen metatietojen valmisteleminen** -tehtäväoppaan sovelluksessa sekä **Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla**- ja **Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla** -tehtäväoppaat RCS:ssä. Tehtäväoppaat voidaan ladata [Dynamics 365 for Finance and Operations 8.1:n sähköisen raportoinnin tehtäväoppaat](https://go.microsoft.com/fwlink/?linkid=2082739) -sivulla.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
