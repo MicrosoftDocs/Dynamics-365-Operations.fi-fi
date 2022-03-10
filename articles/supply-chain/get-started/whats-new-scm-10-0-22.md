@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678832"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778154"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.22 (marraskuu 2021)
 
@@ -41,7 +41,6 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät ominaisuuksien parannu
 
 | Moduuli | Ominaisuuden nimi ominaisuuksienhallinnassa | Lisätietoja |
 |---|---|---|
-| Kustannushintojen hallinta | Asiaan liittyvien tositteiden luonti vakiokustannusten pyöristysten uudelleenarvostuksille | <p>Kun tehdään varaston taloushallinnollinen kirjaus (kuten myyntitilauslasku tai varastonsiirto), tämä ominaisuus saa järjestelmän luomaan erillisen tositteen kaikille asiaan liittyville vakiokustannusten pyöristysten udelleenarvostuksille ja liittämään sen taloushallinnollisen kirjauksen tositteeseen asiaan liittyvänä tositteena.</p><p>Ilman tätä ominaisuutta, järjestelmä tallentaa vakiokustannusten pyöristysten uudelleenarvostukset samalle tositekirjaukselle. Tämä toimintatapa voi joskus aiheuttaa ristiriitaisia päivämäärätietoja, koska uudelleenarvostukset käyttävät istunnon tai järjestelmän päivämäärää, kun taas taloushallinnolliset kirjaukset käyttävät kirjauspäivämäärää.</p> |
 | Jaettu hybriditopologia | *(Ominaisuuksienhallintaa ei tarvita.)* | <p>Tämä julkaisu laajentaa varastonhallinnan työkuorman kuormansuunnittelun ominaisuuksia pilven ja reunan asteikon yksiköitä varten.</p><p>Lisätietoja on kohdassa [Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Suunnittelun muutosten hallinta | Muuttujien luominen suunnittelun tuotteille | <p>Tämän ominaisuuden avulla voit luoda suunnittelutuotteelle useita variantteja värin, koon, tyylin tai määritysdimensioiden perusteella.</p><p>Lisätietoja: [Varianttien luominen suunnittelutuotteista](../engineering-change-management/engineering-variants.md).</p> |
 | Varastonhallinta | Varaston näkyvyyden integrointi ja varauksen siirtymä | <p>Tämä ominaisuus voidaan ottaa käyttöön vasta, kun *Varastonäkyvyyden integrointi* -ominaisuus on otettu käyttöön. Se tarjoaa toiminnon, jolla varastonäkyvyydessä tehtyjä varauksia voi vastakirjata.</p><p>Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](../inventory/inventory-visibility-reservations.md).</p> |

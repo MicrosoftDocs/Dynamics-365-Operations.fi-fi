@@ -2,11 +2,9 @@
 title: Asiakkaan tilausten noutojen käsitteleminen myyntipisteessä
 description: Tässä aiheessa kerrotaan toiminnoista, jotka ovat käytettävissä myyntipistesovelluksessa tilausten noutojen käsittelyä varten.
 author: Hhainesms
-manager: annbe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 2156542ed0932fab6fb4fa4035e009ad89eeb18f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 598b155e1aa71cc7a23d1003331900604fb3de515381fd9c9987ed39bd9cbd2a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741059"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Asiakkaan tilausten noutojen käsitteleminen myyntipisteessä
 
@@ -34,7 +32,7 @@ Jos olet myymälän käyttäjä, voit suorittaa noudon joko myyntipisteen **Peru
 
 Jos valittuja tilauksia tai tilausrivejä ei ole konfiguroitu noutoon tässä myymälässä tai jos tilaus on jo kerätty kokonaan, **noutotoiminto** ei ole käytettävissä.
 
-![Noutotoiminto](media/pickupoperation.png)
+![Noutotoiminto.](media/pickupoperation.png)
 
 Microsoft Dynamics 365 Commercen versiossa 10.0.17 ja sitä myöhemmissä versioissa **Myyntipisteen noutotilausten käsittelyn parannettu käyttökokemus** -ominaisuus voidaan ottaa käyttöön Commerce headquarters -ohjelmassa toimintohallinnan avulla. Jos tämä toiminto on poissa käytöstä, käyttäjät eivät voi valita noutomääriä. Riville tilattu koko määrä on oletusarvoisesti noudettava määrä. Tämä kokemus voi olla ongelmallinen, koska käyttäjät voivat unohtaa valita joitakin nimikkeitä noutoa varten, kun he tekevät noudon tilauksen täyttämisen kautta.
 
@@ -42,13 +40,13 @@ Microsoft Dynamics 365 Commercen versiossa 10.0.17 ja sitä myöhemmissä versio
 
 Kun **Myyntipisteen noutotilausten käsittelyn parannettu käyttökokemus** -ominaisuus on otettu käyttöön ja **Nouto**-toiminto valitaan, näkyviin tulee **Nouto**-valintaikkuna. Siinä voit valita noudettavat nimikkeet ja määrät. Oletusarvon mukaan kaikki tilattu määrä, jonka varasto on kerätyssä tai pakatussa tilassa, katsotaan olevan sopiva noutoon. Oletusarvon mukaan tämä määrä määritetään noutomääräksi. Voit muuttaa syötettyä määrää, jos määrän arvo ei ole nolla eikä se ylitä valitun rivin avointa (ei-laskutettua) kokonaismäärää.
 
-![Nouto-valintaikkuna](media/pickupselect.png)
+![Nouto-valintaikkuna.](media/pickupselect.png)
 
 Kun olet valinnut noudettavat määrät ja valinnut sitten **Nouto**, esiin tulee tapahtumasivu. Jos [monikanavamaksut](omni-channel-payments.md)-ominaisuus on otettu käyttöön ja tiedostossa on ennalta hyväksyttyjä luottokorttimaksuja, maksu on kohdistettava.
 
 Tapahtumasivulla järjestelmä laskee erääntyvät summat laskemalla valittujen noutonimikkeiden erääntymissumman ja vähentämällä sitten aiemmin maksetut talletukset tai hyväksytyt luottokorttimaksut. Sinun on käsiteltävä maksu noutotapahtuman viimeistelemiseksi. Jos tapahtumasivun [näyttöasettelu](pos-screen-layouts.md) on määritetty siten, että se sisältää **Päätä tapahtuma** -työvaiheen eikä summaa eräänny, voit suorittaa tapahtuman valitsematta maksutapaa. Jos **Päätä tapahtuma** -toiminto ei ole käytettävissä, voit valita **Summat**-ruudusta **Maksettavaa 0,00 $** -linkin, jos haluat päättää tapahtuman valitsematta maksutapaa.
 
-![Asiakkaan tilauksen noutotapahtuman tapahtumasivu](media/pickupcart.png)
+![Asiakkaan tilauksen noutotapahtuman tapahtumasivu.](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Noutorivien tai -määrien muuttaminen
 
@@ -56,4 +54,7 @@ Jos noutomäärää on muutettava sen jälkeen, kun noudettavat nimikkeet on val
 
 **Myyntipisteen noutotilausten käsittelyn parannettu käyttökokemus** -ominaisuus on otettu käyttöön, organisaatiot voivat lisätä **Muuta noutorivejä** -toiminnolle painikkeen tapahtumasivun näyttöasetteluun. Kun olet luonut noutotapahtuman ostoskorin myyntipisteessä ja valinnut nimikkeet, voit valita **Muuta noutorivejä**, jos sinun on muutettava noutonimikkeitä, mutta et halua mitätöidä koko tapahtumaa. Näyttöön tulevassa **Muuta noutorivejä** -valintaikkunassa voit muuttaa noutonimikkeitä ja -määriä. Tapahtuman ostoskori päivitetään vastaamaan muutoksiasi.
 
-![Muuta noutonimikkeitä -valintaikkuna](media/pickupchange.png)
+![Muuta noutonimikkeitä -valintaikkuna.](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

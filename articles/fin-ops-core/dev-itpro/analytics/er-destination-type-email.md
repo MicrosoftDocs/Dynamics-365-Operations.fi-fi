@@ -2,7 +2,7 @@
 title: Sähköpostin ER-kohteen tyyppi
 description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla määritetään sähköpostikohde.
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769316"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324005"
 ---
 # <a name="email-er-destination-type"></a>Sähköpostin ER-kohteen tyyppi
 
@@ -53,16 +53,29 @@ Yksi tulostiedosto tai useita tulostiedostoja voidaan lähettää sähköpostits
 
 ## <a name="configure-an-email-destination"></a>Sähköpostikohteen määrittäminen
 
-Sähköpostin lähettäjä ja sen vastaanottajat voidaan määrittää. Lisäksi sähköpostin aihetta ja sähköpostin tekstiosaa voidaan muokata. Sähköpostiviestin aiheen ja tekstinosan vakioteksti voidaan määrittää tai sähköpostitekstejä voidaan luoda dynaamisesti ER-[kaavojen](er-formula-language.md) avulla.
+### <a name="email-content"></a>Sähköpostiviestin sisältö
 
-Sähköposti lähetetään oletusarvoisesti nykyisen käyttäjän puolesta. Joku muu sähköpostin lähettäjä voidaan määrittää määrittämällä **Lähettäjä**-kenttä.
+Sähköpostiviestin aihetta ja tekstiä on helppo muokata.
+
+Kirjoita **Aihe**-kenttään sähköpostin aiheen teksti, joka näkyy suorituksen aikana luodun sähköisen viestin aihekentässä. Kirjoita **Teksti**-kenttään sähköpostin varsinainen teksti, joka näkyy suorituksen aikana luodun sähköisen viestin tekstikentässä. Sähköpostiviestin aiheen ja tekstinosan vakioteksti voidaan määrittää tai sähköpostitekstejä voidaan luoda dynaamisesti suorituksen aikana ER-[kaavojen](er-formula-language.md) avulla. Määritetyn kaavan on palautettava [Merkkijono](er-formula-supported-data-types-primitive.md#string)-tyyppinen arvo.
+
+Sähköpostin tekstiosassa käytetään TEXT- tai HTML-muotoa sähköpostiohjelman mukaan. Voit käyttää mitä tahansa asettelua, tyyliä ja brändäystä, joiden käytön HTML ja CSS-tyylisivut sallivat.
+
+> [!NOTE]
+> Sähköpostiohjelmissa on asettelu- ja tyylirajoituksia, jotka voivat edellyttää viestin tekstissä käytettävän HTML-koodin ja CSS-tyylisivujen muokkaamista. Tämän vuoksi kannattaa tutustua sellaisen HTML-koodin luomisen parhaisiin käytäntöihin, joita suositut sähköpostiohjelmat tukevat.
+>
+> Toteuta rivinvaihto käyttämällä tekstiosan muotoilun mukaista koodausta. Lisätietoja on [Merkkijono](er-formula-supported-data-types-primitive.md#string)-tietotyypin määritelmässä.
+
+### <a name="email-addresses"></a>Sähköpostiosoitteet
+
+Sähköpostin lähettäjä ja sähköpostin vastaanottajat voidaan määrittää. Sähköposti lähetetään oletusarvoisesti nykyisen käyttäjän puolesta. Joku muu sähköpostin lähettäjä voidaan määrittää määrittämällä **Lähettäjä**-kenttä.
 
 > [!NOTE]
 > Kun sähköpostikohde määritetään, vain käyttäjät, joilla on `ERFormatDestinationSenderEmailConfigure`-suojausoikeus **ER-muodon kohteiden lähettäjän sähköpostiosoitteen määrittäminen**, näkevät **Lähettäjä**-kentän.
 >
 > Kun sähköpostiosoite voidaan muokata [suorituspalvelussa](electronic-reporting-destinations.md#security-considerations), vain käyttäjät, joilla on `ERFormatDestinationSenderEmailMaintain`-suojausoikeus **ER-muodon kohteen lähettäjän sähköpostiosoitteen ylläpito**, näkevät **Lähettäjä**-kentän.
 >
-> Kun **Lähettäjä**-kenttä määritetään käyttämään muuta kuin nykyisen käyttäjän sähköpostiosoitetta, joko **Lähetä käyttäjänä**- tai **Lähetä puolesta** -oikeus on oltava oikein [määritettynä](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) ennakolta. Muussa tapauksessa suorituksen aikana annetaan virhe, jonka mukaan sähköpostia ei voida lähettää käyttäjänä \<from email account\> tililtä \<current user account\>, minkä vuoksi Lähetä käyttäjänä -oikeudet on tarkistettava tilillä \<from email account\>.
+> Kun **Lähettäjä**-kenttä määritetään käyttämään muuta kuin nykyisen käyttäjän sähköpostiosoitetta, joko **Lähetä käyttäjänä**- tai **Lähetä puolesta** -oikeus on oltava oikein [määritettynä](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) ennakolta. Muussa tapauksessa suorituksen aikana annetaan virhe, jonka mukaan sähköpostia ei voida lähettää käyttäjänä \<from email account\> tililtä \<current user account\>, minkä vuoksi Lähetä käyttäjänä -oikeudet on tarkistettava tilillä \<from email account\>.
 
 **Lähettäjä**-kenttä voidaan määrittää palauttamaan useampi kuin yksi sähköpostiosoite. Siinä tapauksessa luettelon ensimmäistä osoitetta käytetään sähköpostin lähettäjän osoitteena.
 
@@ -127,7 +140,7 @@ Suorituksen aika käytettävien sähköpostiosoitteiden tyyppi voidaan määritt
 
 ### <a name="configuration-email"></a>Määrityssähköposti
 
-Valitse sähköpostiosoitteen tyypiksi **Määrityssähköposti**, jos käytössä olevissa määrityksissä on tietolähteissä oleva solmu, joka palauttaa joko yhden sähköpostiosoitteen tai useita sähköpostisosoitteita, jotka erotetaan toisistaan puolipisteillä (;). Voit käyttää kaavasuunnittelijassa [tietolähteitä](general-electronic-reporting.md#FormatComponentOutbound) ja [funktioita](er-formula-language.md#Functions) saadaksesi oikein muotoillun sähköpostiosoitteen tai sähköpostiosoitteita, jotka on eroteltu puolipisteillä. Jos esimerkiksi käytät määritystä **ISO 20022 Credit Transfer**, toimittajan ensisijaista sähköpostiosoitetta toimittajan yhteystiedossa edustava solmu, johon saatekirje tulisi lähettää, on `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Valitse sähköpostiosoitteen tyypiksi **Määrityssähköposti**, jos käytössä olevissa määrityksissä on tietolähteissä oleva solmu, joka palauttaa joko yhden sähköpostiosoitteen tai useita sähköpostisosoitteita, jotka erotetaan toisistaan puolipisteillä (;). Voit käyttää kaavasuunnittelijassa tietolähteitä ja [funktioita](er-formula-language.md#Functions) saadaksesi oikein muotoillun sähköpostiosoitteen tai sähköpostiosoitteita, jotka on eroteltu puolipisteillä. Jos esimerkiksi käytät määritystä **ISO 20022 Credit Transfer**, toimittajan ensisijaista sähköpostiosoitetta toimittajan yhteystiedossa edustava solmu, johon saatekirje tulisi lähettää, on `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Sähköpostiosoitteen lähteen määritys.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 

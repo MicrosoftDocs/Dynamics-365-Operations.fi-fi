@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360373"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102710"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -35,23 +35,21 @@ Tässä aiheessa kuvataan kutakin menetelmää yksityiskohtaisesti.
 
 Useimmat suunnitellut tilaustoiminnot ovat käytettävissä kaikissa Microsoft Dynamics 365 Supply Chain Managementin vakioasennuksissa, joissa käytetään suunnittelun optimointia. Joitakin tässä ohjeaiheessa kuvatuista ominaisuuksista on kuitenkin otettava käyttöön ominaisuuksien hallinnassa, ennen kuin niitä voi käyttää.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Suunniteltujen tilausten rinnakkaisen vahvistuksen ottaminen käyttöön
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Suunniteltujen tilausten rinnakkaisen vahvistuksen ottaminen käyttöön tai käytöstä poistaminen
 
-Rinnakkainen vahvistus nopeuttaa vahvistusprosessia rinnakkaistamalla sen useissa säikeissä. Tämä menetelmä voi olla hyödyllinen, kun useita suunniteltuja tilauksia vahvistetaan.
-
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunniteltujen tilausten rinnakkainen vahvistus* -ominaisuuden käyttöön.
+Rinnakkainen vahvistus nopeuttaa vahvistusprosessia rinnakkaistamalla sen useissa säikeissä. Tämä menetelmä voi olla hyödyllinen, kun useita suunniteltuja tilauksia vahvistetaan. Tämän toiminnon käyttö edellyttää, että järjestelmässä on käytössä *Suunniteltujen tilausten rinnakkainen vahvistaminen* -toiminto. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, voit ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla [Toimintojen hallinnasta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) toimintoa *Suunniteltujen tilausten rinnakkainen vahvistaminen*.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Ota suunniteltujen tilausten vahvistaminen käyttöön suodatuksen avulla
 
 Suunniteltujen tilausten vahvistaminen suodatuksella mahdollistaa loogisten ehtojen määrittämisen sen valitsemiseksi, mitkä suunnitellut tilaukset haluat vahvistaa. Voit myös esikatsella valittuja suunniteltuja tilauksia, suorittaa prosessin taustalla ja/tai ajoittaa sen erätyönä.
 
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunniteltujen tilausten vahvistaminen suodatuksen avulla* -ominaisuuden käyttöön.
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Suunnitellun tilauksen vahvistaminen suodatuksen kanssa* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Ota käyttöön automaattinen vahvistus suunnittelun optimoinnille
 
 Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuunnitteluprosessin osana vahvistuksen aikarajan aikana. Automaattista vahvistamista tuetaan aina suunnittelumoduulissa, joka on integroitu Supply Chain Managementiin. Kuitenkin jos sitä käytetään myös suunnittelun optimointiin, ominaisuus on otettava käyttöön.
 
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuuden käyttöön.
+Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuuden käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
 
 ## <a name="manually-firm-planned-orders"></a>Vahvista suunnitellut tilaukset manuaalisesti
 
@@ -80,6 +78,9 @@ Voit vahvistaa suunnitellut tilaukset manuaalisesti etsimällä ja valitsemalla 
     - **Ryhmittele ostosopimuksen mukaan** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat ryhmitellä suunnitellut ostotilaukset, joissa on sama toimittaja kuin aiemmin luoduilla ostosopimuksilla ja luo yksi ostotilaus ostosopimusta kohden. Tämä vaihtoehto on automaattisesti käytössä, kun **Ryhmittele toimittajan mukaan** on käytössä. Jos haluat käyttää **Ostosopimus-ryhmittelyä**, **Etsi ostosopimus** -asetus on määritettävä *Kyllä* **pääsuunnittelun parametrit** -sivulla.
     - **Ryhmittely kauden mukaan** (**Ostotilaukset**-osassa) – Valitse kausi, jonka mukaan suunnitellut ostotilaukset ryhmitellään. Jos haluat käyttää tätä asetusta, sinun täytyy valita myös **Ryhmittely toimittajan mukaan** -vaihtoehto.
     - **Ryhmittely kauden mukaan** (**Siirrot**-osassa) – Valitse kausi, jonka mukaan suunnitellut siirtotilaukset ryhmitellään. Tilaukset ryhmitellään **Varastosta**- ja **Varastoon**-arvojen mukaan.
+
+    > [!NOTE]
+    > Kukin Group by -asetus aiheuttaa sen, että järjestelmä muuntaa kunkin suunnitellun tilauksen ryhmittelyn perusteella yhden ostotilauksen riviksi.
 
     ![Parametrit-pikavälilehti Vahvistus-valintaikkunassa.](./media/manual-firming.png "Parametrit-pikavälilehti Vahvistus-valintaikkunassa")
 

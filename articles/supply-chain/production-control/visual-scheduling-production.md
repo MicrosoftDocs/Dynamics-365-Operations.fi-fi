@@ -2,11 +2,9 @@
 title: Töiden ajoittamisen Gantt-kaavio
 description: Tuotannon suunnittelijat voivat käyttää Gantt-kaavioita tuotantosuunnitelmien hallintaan ja optimointiin.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecc3a95fb422ca0ce95258b7ffe349eaba07233c
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 180fb7b31ea826c546aa8472a7ef4025a3b8865a783a5b662ed30b69f98acf92
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730199"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Töiden ajoittamisen Gantt-kaavio
 
@@ -47,10 +45,10 @@ Gantt-kaavion voit avata kahdessa näkymässä, jotka ovat **Tilausnäkymä** ja
 
 ## <a name="order-view"></a>Tilausnäkymä
 
-[![Tilausnäkymä](./media/orderview.png)](./media/orderview.png)
+[![Tilausnäkymä.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Resurssinäkymä
-[![Resurssinäkymä](./media/resview.png)](./media/resview.png)
+[![Resurssinäkymä.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Tehtävät
 Tehtävät näkyvät palkkeina ja järjestetään aika-asteikkoruudukossa ajoitetun aloitus- ja päättymisajan mukaan, jossa palkkien pituus näytetään suhteessa aikaan, joka tarvitaan tehtävän suorittamiseen. Tehtävät näkyvät aika-asteikon mukaan. Voit säätää valikon aika-asteikkoa, jossa voit valita aloitus ja päättymispäivämäärän ja ajan yksikön, esimerkiksi tunteet tai päivät. Säätämällä aika-asteikkoa voit määrittää aikavälin, jossa haluat hallita tehtäviä. 
@@ -104,25 +102,25 @@ Työtä ei voi ajoittaa Gantt-kaavion määritetyn aikavälin ulkopuolella. Jos 
 
 Tehtäväverkossa, kuten samaan tuotantotilaukseen kuuluvissa töissä, voit käyttää **Ajoita aiemmat työt** -toimintoa ajoittaessasi edelliset työt suhteessa valittuun työhön verkossa. Seuraavassa esimerkissä korostettu tehtävä on valittu työ. Kaavio näkyy ennen edellisen työn ajoitusta ja seuraavan työn ajoituksen jälkeen. 
 
-[![Ajoita aiempi työ](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Ajoita aiempi työ.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Ajoita seuraavat työt
 
 Voit ajoittaa tehtäväverkon valittua työtä seuraavat työt **Ajoita seuraavat työt** -toiminnolla. Seuraavassa esimerkissä korostettu tehtävä on valittu työ. Kaavio näkyy ennen seuraavan työn ajoitusta ja seuraavan työn ajoituksen jälkeen. 
 
-[![Ajoita seuraavat työ](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Ajoita seuraavat työ.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Ajoita työn ympärille
 
 Voit ajoittaa tehtäväverkon valittua työtä seuraavan ja edellisen työn **Ajoita työn ympärille** -toiminnolla. Seuraavassa esimerkissä korostettu tehtävä on valittu työ. Kaavio näkyy ennen työn ajoitusta ja työn ajoituksen jälkeen. 
 
-[![Ajoita työn ympärille](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Ajoita työn ympärille.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Järjestä työt
 
 Voit käyttää **Järjestä** -toimintoa ja ajoittaa saman resurssin valitut tehtävät. Nämä toiminnot voi olla samassa tehtäväverkossa mutta voivat kuulua myös eri verkkoihin. Kun käytät järjestä-toimintoa, valittujen tehtävien väliajat poistuvat. Tämän toiminnon avulla voit optimoida resurssien kapasiteetin käytön. Kaavio näkyy ennen työn ajoitusta ja työn ajoituksen jälkeen. 
 
-[![Järjestä työ](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Järjestä työ.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Tehtävien määrittäminen uudelleen resurssista toiseen
 
@@ -157,5 +155,8 @@ Gantt-kaavion voit avata seuraavilta sivuilta.
 ## <a name="additional-resources"></a>Lisäresurssit  
 [Visuaalinen ajoitus tuotanto- ja erätilausten Gantt-kaavion avulla (Video)](https://youtu.be/BtbuShkGj4I)
 
-[Tuotannon visuaalinen ajoitus (esittelykäsikirjoitus)](https://docs.microsoft.com/dynamics/s-e/)
+[Tuotannon visuaalinen ajoitus (esittelykäsikirjoitus)](/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

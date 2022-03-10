@@ -2,7 +2,7 @@
 title: Toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla
 description: Tässä aiheessa on tietoja toimittajan laskujen toimisesta sähköisen laskutuspalvelun avulla.
 author: gionoder
-ms.date: 08/03/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 434bf1f6a5a727a71592493b85ab166cbeff2f0980c2c968c99973a03f4dc660
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751249"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473373"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla
 
@@ -45,13 +45,21 @@ Määritä sähköpostitilikanava, jos luotu sähköinen laskutusominaisuus tuo 
 
 1. Valitse RCS:ssä luotu sähköinen laskutusominaisuus. Varmista, että valittavan version tila on **Luonnos**.
 2. Valitse **Asetukset**-välilehden ruudukossa ominaisuusmääritys ja valitse sitten **Muokkaa**.
-3. Valitse **Tietokanava**-välilehden **Parametrit**-kenttäryhmässä **Palvelimen osoite** ja anna sähköpostitilipalvelu.
-4. Valitse **Palvelimen portti** ja anna sähköpostitilipalvelun käyttämä portti.
-5. Valitse **Käyttäjänimen salaisuus** ja anna sen avainsäilön salaisen koodi nimi, joka sisältää sähköpostin käyttäjätilin tunnuksen.
-6. Valitse **Käyttäjän salasanan salaisuus** ja anna sen avainsäilön salaisen koodi nimi, joka sisältää sähköpostin käyttäjätilin salasanan.
-7. Valitse **Aihesuodatin**. Tarkista ja päivitä merkkijono, jonka sisältämällä sähköpostin oletusaiheella tunnistetaan tuotava toimittajan sähköinen lasku.
-8. Tarkista ja päivitä ehdot tarvittaessa **Soveltuvuussäännöt**-välilehdessä. Lisätietoja on kohdassa [Soveltuvuussäännöt](e-invoicing-configuration-rcs.md#applicability-rules).
-9. Valitse **Tallenna** ja sulje sivu.
+3. Anna kanavan nimi **Tietokanava**-välilehden **Parametrit**-kenttäryhmän **Tietokanava**-kentässä. Kanavan nimi saa olla enintään 10 merkin pituinen.
+4. Kirjoita **Palvelimen osoite** -kenttään sähköpostitilin tarjoajan nimi. Esimerkiksi palvelun **https://outlook.live.com/** palvelinosoite on **imap-mail.outlook.com**.
+5. Anna **Palvelimen portti** -kentässä sähköpostitilipalvelun käyttämä portti. Esimerkiksi palvelun **https://outlook.live.com/** palvelimen portti on **993**.
+6. Anna **Käyttäjänimen salainen koodi** -kentässä sen avainsäilön salaisen koodi nimi, joka sisältää sähköpostin käyttäjätilin tunnuksen. Salaisen koodin täytyy olla luotu Azure Key Vaultissa ja määritetty palveluympäristössäsi. 
+7. Anna **Käyttäjäsalasanan salainen koodi** -kentässä sen avainsäilön salaisen koodi nimi, joka sisältää sähköpostin käyttäjätilin salasanan.
+8. Valinnainen – Kirjoita arvot kenttiin **Lähettäjäsuodatin**, **Aihesuodatin** ja **Päivämääräsuodatin**.
+9. Kirjoita niiden postilaatikkokansioiden nimet, jossa sähköpostiviestejä tulee olemaan:
+
+    - Tuotu kohteesta: **Pääkansio**
+    - Tallennettu onnistuneen käsittelyn jälkeen: **Arkistokansio**
+    - Tallennettu onnistuneen käsittelyn jälkeen: **Virhekansio** Näitä kansioita ei tarvitse luoda postilaatikossa. Kansiot luodaan automaattisesti ensimmäisen sähköisen laskun tuonnin ja käsittelyn jälkeen. 
+   
+10. Lisää tiedostojen suodatustiedot **Liitesuodatin**-kenttäryhmään. Vain määritetyn suodattimen täyttävät liitteet käsitellään. Voit esimerkiksi tehdä määrityksen \*.xml liitteille, joiden tiedostotunniste on xml. Liitteen nimeä käytetään määrityksen aikana Dynamics 365 Financessa tai Dynamics 365 Supply Chain Managementissa. 
+11. Tarkista ja päivitä ehdot tarvittaessa **Soveltuvuussäännöt**-välilehdessä. **Kanava**-kentän on oltava sama kuin aiemmin annettu **Tietokanava**. Lisätietoja on kohdassa [Soveltuvuussäännöt](e-invoicing-configuration-rcs.md#applicability-rules).
+12. Valitse **Tallenna** ja sulje sivu.
 
 ### <a name="configure-a-microsoft-sharepoint-channel"></a>Microsoft SharePoint -kanavan määrittäminen
 
@@ -71,10 +79,10 @@ Microsoft SharePoint -kanava määritetään, jos sähköinen laskutusominaisuus
 
 Lisätietoja sähköisen laskutusominaisuuden käyttöönotosta on kohdassa [Sähköisen laskutusominaisuuden ottaminen käyttöön palveluympäristössä](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
-## <a name="set-up-vendor-invoice-import-in-finance-and-supply-chain-management"></a>Toimittajan laskun tuonnin määrittäminen Financessa ja Supply Chain Managementissa
+## <a name="set-up-vendor-invoice-import-in-finance-or-supply-chain-management"></a>Toimittajan laskun tuonnin määrittäminen Financessa tai Supply Chain Managementissa
 Erityyppisten toimittajan laskujen tuonti määritetään seuraavassa kahdessa osassa annettujen ohjeiden avulla.
 
-### <a name="import-vendor-invoices-from-email"></a>Toimittajan laskujen tuominen sähköpostista
+### <a name="import-brazilian-nf-e-from-email"></a>Brasilialaisen NF-e-lomakkeen tuonti sähköpostista
 
 1. Kirjaudu Finance- tai Supply Chain Management -ympäristöön ja varmista, että olet oikeassa yrityksessä.
 2. Siirry kohtaan **Organisaation hallinta** > **Määritys** > **Sähköisten asiakirjojen parametrit**.
@@ -98,30 +106,43 @@ Erityyppisten toimittajan laskujen tuonti määritetään seuraavassa kahdessa o
 ### <a name="import-peppol-electronic-vendor-invoices"></a>Toimittajan sähköisten laskujen PEPPOL-tuonti
 
 1. Valitse **sähköisen raportoinnin** työtilassa **Raportointimääritykset**.
-2. Valitse **Myyntilaskun kontekstimalli** ja luo johdettu määritys.
-3. Valitse **Luonnos**-versiossa **Suunnitteluohjelma**.
-4. Valitse **Tietomalli**-puussa **Myyntilasku** ja valitse sitten **Yhdistä malli tietolähteeseen**.
-5. Valitse **Määritelmät**-puussa **CustomerInvoice** ja valitse sitten **Suunnitteluohjelma**.
-6. Valitse **Tietolähteet**-puussa **Context\_Channel**. Valitse **Arvo**-kentässä **PEPPOL**. Tämä on sen kanavan nimi, joka on annettu tietokanavan määrityksessä RSC:n sähköisessä laskutusominaisuudessa. 
+2. Luo johdettu määritys valitsemalla **Asiakaslaskun kontekstimalli** ja sitten **Luo määritys** > **Johda nimestä: Asiakaslaskun kontekstimalli, Microsoft**.
+3. Valitse **Luonnos**-versiossa **Suunnitteluohjelma** ja **Tietomalli**-puussa **Yhdistä malli tietolähteeseen**.
+4. Valitse **Määritelmät**-puussa **DataChannel** ja valitse sitten **Suunnitteluohjelma**.
+5. Laajenna **Tietolähteet**-puussa kontti **$Context\_Kanava**. Valitse **Arvo**-kentässä **Muokkaa** ja anna tietokanavan nimi. Tämä on sen kanavan nimi, joka on annettu tietokanavan määrityksessä RSC:n sähköisessä laskutusominaisuudessa. 
 7. Valitse **Tallenna** ja sulje sivu.
 8. Sulje sivu.
-9. Valitse **Myyntilaskun kontekstimalli** ja valitse sitten **Versiot**-pikavälilehdessä **Muuta tila** > **Valmis**.
+9. Valitse johdettu määritys, jonka olet juuri luonut **Asiakaslaskun kontekstimalli** -arvon perusteella, ja **Versiot**-pikavälilehdessä **Muuta tilaa** > **Valmis**.
 10. Valitse **Organisaation hallinta** > **Määritys** > **Sähköisen asiakirjan parametrit** ja varmista **Ominaisuudet**-välilehdessä, että **PEPPOL – yleinen sähköinen lasku** on valittu. 
 11. Valitse **Ulkoiset kanavat** -välilehden **Kanavat**-kenttäryhmässä **Lisää**.
-12. Anna **Kanava**-kenttään **PEPPOL**. Syötä **Kuvaus**-kenttään kuvaus.
-13. Valitse yritys kentässä **Yritys**. Valitse **Asiakirjan konteksti** -kentässä **Myyntilaskun konteksti – myyntilaskun kontekstimalli**.
-14. Valitse **Tallenna** ja sulje sitten sivu.
+12. Anna **Kanava**-kentässä tietokanavan nimi ja **Kuvaus**-kentässä kuvaus.
+13. Valitse yritys kentässä **Yritys**. 
+14. Valitse **Asiakirjan konteksti**-kentässä uusi johdettu määritys kohdasta **Asiakaslaskun kontekstimalli**. Yhdistämismäärityksen kuvauksen pitäisi olla **Tietokanavakonteksti**.
+15. Valitse **Tuontilähteet**-kenttäryhmässä **Lisää**.
+16. Kirjoita **Nimi**-kenttään **Liitesuodattimen nimi** ja **Tietoyksikön nimi**-kentässä valitse **Toimittajan laskutusotsikko**.
+17. Valitse **Malliyhdistämismääritys**-kentässä **Toimittajalaskun tuonti – tuo toimittajalasku**.
+18. Valitse **Tallenna** ja sulje sitten sivu.
 
 
 ## <a name="receive-electronic-invoices"></a>Sähköisten laskujen vastaanottaminen
+
+Sähköinen laskutuspalvelu suorittaa kaksi vaihetta laskujen tietokanavista tuonnissa:
+
+1. Käyttää postilaatikkoa ja lukee sähköpostia.
+2. Käsittelee sähköpostiviestit. 
+    
+Näiden kahden vaiheen suorittamista varten asiakasohjelman pitäisi kutsua palvelua manuaalisesti kunkin vaiheen osalta. On kuitenkin suositeltavaa määrittää erä sähköisten tiedostojen vastaanottamista varten.
+
 Sähköisiä laskuja vastanotetaan seuraavasti:
 
 1. Valitse **Organisaation hallinta** > **Säännölliset** > **Sähköiset asiakirjat** > **Vastaanota sähköisiä asiakirjoja**.
 2. Valitse **OK** ja sulje sitten sivu.
 
+
 ## <a name="view-receive-logs-for-electronic-invoices"></a>Sähköisten laskujen vastaanottolokien näyttäminen
 
 Sähköisten laskujen vastaanottolokeja voi tarkastella valitsemalla **Organisaation hallinta** > **Säännölliset** > **Sähköiset asiakirjat** > **Sähköisen asiakirjan vastaanottoloki**.
+Jos et näe onnistuneesti käsiteltyjä laskuja, poista taulukkosuodatin.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

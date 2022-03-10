@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715527"
 ---
 # <a name="create-returns-in-pos"></a>Palautusten luominen myyntipisteessä
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa käsitellään palautusten käynnistämistä käteis- ja siirtotapahtumista tai asiakastilauksista Microsoft Dynamics 365 Commerce -myyntipistesovelluksessa.
 
@@ -48,7 +47,7 @@ Jos hakuehtoja vastaava tapahtuma tai tilaus löytyy, näkyviin tulee **Palautus
 
 Myyntipiste näyttää jokaisen palautuskelpoisen tuotteen tilausrivin tiedot alkuperäisestä ostomäärästä sekä aiemmin käsiteltyjen palautusten määrät. Palautusmäärän, jonka käyttäjä määrittää tilausriville, on oltava pienempi tai yhtä suuri kuin **Palautettavissa** -kentän arvo.
 
-![Palautuskelpoiset tuotteet -sivu](media/returnslist.png)
+![Palautuskelpoiset tuotteet -sivu.](media/returnslist.png)
 
 Jos käyttäjällä on fyysinen tuote palautuskäsittelyn aikana ja tuotteella on viivakoodi, käyttäjä voi rekisteröidä palautuksen skannaamalla viivakoodin. Jokainen viivakoodin skannaus lisää palautusmäärää yhdellä nimikkeellä. Jos viivakoodin etiketissä on kuitenkin upotettu määrä, tämä määrä lisätään **Palautetaan nyt** -kenttään.
 
@@ -97,6 +96,13 @@ Jos kanavan puolen tiedot eivät ole ajan tasalla jostain syystä ja offline-pal
 
 > [!NOTE]
 > Kun **Myyntipisteen yhdistetty palautuksen käsittelykokemus** -ominaisuus on käytössä, käyttöön tulevat uudet valinnaiset ominaisuudet, jotka tukevat sarjallistettujen tuotepalautusten oikeellisuustarkistusta. Lisätietoja: [Sarjanumeron avulla ohjattujen tuotteiden palautus myyntipisteessä](POS-serial-returns.md).
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille
+
+Tämä ominaisuus varmistaa, että kun tilaus palautetaan käyttäen useaa laskua, verot täsmäävät alun perin veloitetun verosumman kanssa.
+1.  Siirry **Ominaisuuksien hallinta** -työtilaan ja tee haku hakusanoilla **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille**.
+2.  Valitse **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille** ja valitse sitten **Ota käyttöön**.
+
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773292"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860505"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Yleisen varastokirjanpidon käytön aloittaminen
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Yleisen varastokirjanpidon avulla voit suorittaa useita varastokirjanpitoja määrittämissäsi yleisissä varastokirjanpitorekistereissä. Kukin yleinen varastokirjanpitotapahtuma liitetään *käytäntöön*. Yleissopimus on kokoelma seuraavantyyppisiä kirjanpitokäytäntöjä:
 
@@ -60,9 +61,9 @@ Ennen kuin voit ottaa apuohjelmatoiminnon käyttöön, sinun on integroitava Mic
 1. Valitse valintaruutu **Power platform -ympäristön asetus** -valintaikkunassa ja valitse sitten **Asetukset**. Asetusten määritys kestää yleensä 60 - 90 minuuttia.
 1. Kun Microsoft Power Platform -ympäristö on tehty valmiiksi, sivulla näkyy ympäristösi nimi. **Power Platform -Integrointi** -osassa näkyy myös lauseke "Power Platform -ympäristöasetukset on tehty". Yleinen varastokirjanpito ei edellytä kaksoiskirjoitussovellusta.
 
-Lisätietoja on ohjeaiheessa [Asennus ympäristön käyttöönoton jälkeen](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
+Lisätietoja on ohjeaiheessa [Salliminen ympäristön käyttöönoton jälkeen](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Dataversen määrittäminen
+### <a name="set-up-dataverse"></a>Määritä Dataverse
 
 Lisää yleiset varastokirjanpidon palveluperiaatteet vuokraajaasi ennen Dataversen käyttöä seuraavasti:
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 3d197046bd547757f32712a50949b41897f6fedf
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3d60265df7ff1f447e20866b8b8a447d88db8cc4b3dccedebc0f18ce8f0f70dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746317"
 ---
 # <a name="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher"></a>Vero kirjataan tositteen väärälle kirjanpitotilille
 
@@ -30,26 +30,26 @@ Kirjaamisen aikana vero saatetaan kirjata tositteen väärälle kirjanpitotilill
 
 1. Valitse **Tositetapahtumat**-sivulla tapahtuma, jota haluat käyttää, ja valitse sitten **Kirjattu arvonlisävero**.
 
-    [![Kirjattu arvonlisävero -painike Tositetapahtumat-sivulla](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![Kirjattu arvonlisävero -painike Tositetapahtumat-sivulla.](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. Tarkista arvo **Arvonlisäverokoodi**-kentässä. Tässä esimerkissä se on **VAT 19**.
 
-    [![Kirjattu arvonlisävero -sivun Arvonlisävero-kenttä](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![Kirjattu arvonlisävero -sivun Arvonlisävero-kenttä.](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## <a name="check-the-ledger-posting-group-of-the-tax-code"></a>Tarkista verokoodin kirjanpidon kirjausryhmä
 
 1. Valitse **Vero** \> **Välilliset verot** \> **Arvonlisävero** \> **Arvonlisäverokoodit**.
 2. Etsi ja valitse verokoodi sekä tarkista sitten **Kirjanpidon kirjausryhmä** -kentän arvo. Tässä esimerkissä se on **VAT**.
 
-    [![Kirjanpidon kirjausryhmä -kenttä Arvonlisäverokoodit-sivulla](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![Kirjanpidon kirjausryhmä -kenttä Arvonlisäverokoodit-sivulla.](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. **Kirjanpidon kirjausryhmä** -kentän arvo on linkki. Jos haluat tarkastella ryhmän konfiguraation tietoja, valitse linkki. Vaihtoehtoisesti voit valita ja pitää kenttää painettuna (tai napsauttaa sitä hiiren kakkospainikkeella) ja valita sitten **Näytä tiedot**.
 
-    [![Näytä tietoja -komento](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![Näytä tietoja -komento.](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. Varmista **Maksettava arvonlisävero** -kentässä, että tilinumero on oikea tapahtumalajin mukaan. Valitse sitten oikea tili, jolle kirjaat sen. Tässä esimerkissä myyntitilauksen arvonlisävero on kirjattava arvonlisäveron kulutilille 222200.
 
-    [![Maksettava arvonlisävero -kenttä Kirjanpidon kirjausryhmät -sivulla](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
+    [![Maksettava arvonlisävero -kenttä Kirjanpidon kirjausryhmät -sivulla.](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
     Seuraavassa taulukossa on tietoja kustakin **Kirjanpidon kirjausryhmät** -sivun kentästä.
 
@@ -71,11 +71,11 @@ Koodissa kirjaustili määräytyy kirjanpitodimension mukaan. Kirjanpitodimensio
 
 1. Lisää myyntitilauksen keskeytyskohta **Tax::saveAndPost()**- ja **Tax::post()** -menetelmiin. Kiinnitä huomiota **\_ledgerDimension**-arvoon.
 
-    [![Myyntitilauksen koodinäyte, jossa on keskeytyskohta](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![Myyntitilauksen koodinäyte, jossa on keskeytyskohta.](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
     Lisää ostotilauksessa keskeytyskohta **TaxPost::saveAndPost()**- ja **TaxPost::postToTaxTrans()**-menetelmiin. Kiinnitä huomiota **\_ledgerDimension**-arvoon.
 
-    [![Ostotilauksen koodinäyte, jossa on keskeytyskohta](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![Ostotilauksen koodinäyte, jossa on keskeytyskohta.](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. Suorita seuraava SQL-kysely, kun haluat etsiä tietokannan tilin näyttöarvon, joka perustuu kirjanpitodimension tallentamaan tietuetunnukseen.
 
@@ -83,7 +83,7 @@ Koodissa kirjaustili määräytyy kirjanpitodimension mukaan. Kirjanpitodimensio
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![Tietuetunnuksen näyttöarvo](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![Tietuetunnuksen näyttöarvo.](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
 3. Voit tarkistaa kutsupinon ja selvittää, mihin **_ledgerDimension** on määritetty. Yleensä arvo on peräisin kohteesta **TmpTaxWorkTrans**. Tässä tapauksessa sinun on lisättävä keskeytyskohta kohteisiin **TmpTaxWorkTrans::insert()** ja **TmpTaxWorkTrans::update()** etsiäksesi, minne arvo on määritetty.
 

@@ -2,11 +2,9 @@
 title: Ostoehdotukset
 description: Tässä aiheessa käsitellään ostoehdotusten tukemista suunnittelun optimoinnissa.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqGroup
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 20b4012e054a25d7d21c6f017d8ebcf18f6ee28d
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1d6fd4be0ee1913264c4a565234cfdf711365792
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501075"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570861"
 ---
 # <a name="purchase-requisitions"></a>Ostoehdotukset
+
+[!include [banner](../../includes/banner.md)]
 
 Pääsuunnittelu voi täydentää hyväksyttyjä ostoehdotuksia. Niinpä käyttäjien ei tarvitse käyttää työnkulkua ostoehdotuksia koskevien ostotilausten luontiin. Ostoehdotukset voidaan siis käsitellä pääsuunnittelussa. Tämän toiminnon ansiosta ostoehdotuksesta voidaan luoda ostotilaus, siirtotilaus tai tuotantotilaus sen mukaan, mikä **Suunniteltu tilaustyyppi** -arvo on määritetty liittyvälle tuotteelle.
 

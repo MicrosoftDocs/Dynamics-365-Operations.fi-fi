@@ -2,11 +2,9 @@
 title: Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi
 description: Tässä aiheessa käsitellään sovelluksen metatiedot sisältävän uuden raportointimäärityksen luontia.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5f55d089a88642cb2bda70274472ad0f0e45cd7
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 71a33a69796b31c456bfcc5abbb3b18bcb1064be65c1c58b36656a9cebfbf47d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750571"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi
 [!include [banner](../../includes/banner.md)]
@@ -80,3 +78,6 @@ Intrastat-taulukkotietueen metatiedot on lisätty.
 3.    Valitse **OK**. 
     
 Luotu ER-metatietokonfiguraatio on tallennettu XML-tiedostona, joka voidaan tuoda RCS:ään ja jota voidaan käyttää ulkomaankaupan liiketoimintatoimialueen metatietojen tietolähteenä. Näiden tietojen perusteella voidaan määrittää sovelluksen metatietojen ja ER-tietomallin välisen yhdistämismäärityksen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

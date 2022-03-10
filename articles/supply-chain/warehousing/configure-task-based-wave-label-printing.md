@@ -1,22 +1,22 @@
 ---
 title: Aallon etikettien tulostamisen ajoittaminen aallon aikana
 description: Tässä aiheessa kuvataan, miten tehtäväpohjaisen aallon etikettien tulostustoiminnon voi määrittää ja käyttää.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 652e6fb3f586fc873ffabf2c741e5c99216931461f159a42f08f9922e756280f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735893"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920146"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Aallon etikettien tulostamisen ajoittaminen aallon aikana
 
@@ -33,14 +33,14 @@ Kun käytät *Tehtäväpohjaista aallon etikettien tulostustoimintoa*, järjeste
 Jos haluat käyttää tässä ohjeaiheessa kuvattuja ominaisuuksia, niiden on oltava käytössä järjestelmässäsi. Ota [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa käyttöön ominaisuudet seuraavassa järjestyksessä:
 
 1. *Aallon etikettien tulostus* – Tämä ominaisuus on pakollinen, jotta voit aaltoprosessimenetelmässä ottaa käyttöön aallon etikettien tulostuksen.
-1. *Organisaation laajuinen töiden esto* – Tämä ominaisuus tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen.
+1. *Organisaation laajuinen töiden esto* – Tämä ominaisuus tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
 1. *Tehtäväpohjainen aallon etikettien tulostaminen* – Tätä toimintoa tarvitaan, jotta aallon etiketti voidaan jakaa erilliseen tapahtuma-alueeseen.
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>Uuden aallon vaihemenetelmän ottaminen käyttöön manuaalisesti
 
 Luo ensin uusi aallon vaihemenetelmä ja ota se käyttöön rinnakkaisessa, asynkronisessa tehtävän käsittelyssä.
 
-1. Valitse  **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
+1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aallon käsittelymenetelmät**.
 1. Valitse toimintoruudussa **Luo menetelmä uudelleen**. Huomaa, että *waveLabelPrinting* on lisätty aaltoprosessimenetelmien luetteloon, jota voit käyttää toimitusaaltomalleissasi.
 1. Valitse tietue, jossa **Menetelmän nimi** -kentän arvoksi on asetettu *waveLabelPrinting* , ja valitse sitten toimintoruudusta **Tehtävän konfiguraatio**.
 1. Lisää ruudukkoon uusi rivi valitsemalla toimintoruudussa **Uusi**. Määritä sitten uudelle rivillä seuraavat kentät:
@@ -51,7 +51,7 @@ Luo ensin uusi aallon vaihemenetelmä ja ota se käyttöön rinnakkaisessa, asyn
 
 Voit nyt päivittää aiemmin luodun aaltomallin niin, että se käyttää *Aallon etikettien tulostus* -aaltokäsittelymenetelmää. Voit myös luoda uuden aaltomallin, joka käyttää sitä.
 
-1. Valitse  **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
+1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
 1. Valitse toimintoruudussa **Muokkaa**.
 1. Valitse luetteloruudusta aaltomalli, jonka haluat päivittää. (Jos testausta varten käytetään esittelytietoja, voit valita varaston *24 - oletustoimitus*.)
 1. Valitse **Menetelmät**-pikavälilehden **Jäljellä olevat menetelmät** -sarakkeessa rivi, jossa **Nimi** -kentän asetuksena on *waveLabelPrinting*.

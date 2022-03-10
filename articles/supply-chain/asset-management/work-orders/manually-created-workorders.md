@@ -1,12 +1,10 @@
 ---
 title: Manuaalisesti luodut työtilaukset
 description: Tässä ohjeaiheessa selitetään, miten työtilaukset luodaan manuaalisesti käyttöomaisuuden hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017865"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750097"
 ---
 # <a name="manually-created-work-orders"></a>Manuaalisesti luodut työtilaukset
 
@@ -113,7 +111,7 @@ Voit luoda työtilauksen, joka liittyy olemassa olevaan työtilaukseen. Tämä o
 
 Seuraavassa kuvassa on esimerkki **Luo liittyvä työtilaus** -valintaikkunasta.
 
-![Kuva 1](media/03-work-orders.png)
+![Kuva 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >Jos olet määrittänyt liittyvän työtilauspeitteen kentässä **Resurssienhallinnan parametrit** > **Työtilaukset** > **Liittyvä työtilauspeite**, työtilaustunnukset luodaan peitemäärityksen mukaisesti. Jos liittyvää työtilauksen peitettä ei ole määritetty, seuraavaa käytettävissä olevaa työtilaustunnusta käytetään liittyvissä työtilauksissa.
@@ -139,7 +137,7 @@ Uuden työtilauksen voi luoda nopeasti aiemmin luodusta työtilauksesta. Tämä 
 
 Seuraavassa kuvassa on esimerkki **Kopioi työtilaus** -valintaikkunasta.
 
-![Kuva 2](media/04-work-orders.png)
+![Kuva 2.](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Työtilauksen luominen ylläpitopyynnön perusteella
@@ -159,9 +157,12 @@ Seuraavassa kuvassa on esimerkki **Kopioi työtilaus** -valintaikkunasta.
 
 Seuraavassa kuvassa on esimerkki **Luo työtilaus** -valintaikkunasta.
 
-![Kuva 3](media/05-work-orders.png)
+![Kuva 3.](media/05-work-orders.png)
 
 
 >[!NOTE]
 >Työtilauksia voi luoda automaattisesti myös ajoittamalla ylläpitosuunnitelman töitä tai määrittämällä resurssien [ylläpitosuunnitelmien](../preventive-and-reactive-maintenance/maintenance-plans.md) tai [ylläpitokierrosten](../preventive-and-reactive-maintenance/maintenance-rounds.md) automaattinen luonti. **Kaikki ylläpitoaikataulut**-luettelosivulla ylläpitopyynnöistä luoduilla työtilauksilla on ylläpitopyynnöissä valitut ylläpitotyötyypit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

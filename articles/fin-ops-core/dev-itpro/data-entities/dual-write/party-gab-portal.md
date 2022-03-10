@@ -5,22 +5,22 @@ author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: eee4076c5f16d9655bde3ee4943f79732598199f286d14aa542c167497d83262
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726208"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060917"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Microsoft Power Apps -portaalien käyttö osapuolen tietomallin kanssa
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-[!INCLUDE[rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Kaksoiskirjoituksen sovellusorkestrointiratkaisun versio 2.0.999.0 ja uudemmat sisältävät tietomallin muutokset Tili- ja Yhteyshenkilö-tauluihin osapuolen ja yleisessä osoitekirjassa. Muutokset mahdollistavat monta-moneen-suhteet, jotka tukevat kehittyneitä liiketoimintaskenaarioita. Näitä muutoksia eivät tue portaalin verkkoroolit, mukaan lukien asiakasportaali, jotka toimitetaan käyttövalmiina tai jotka olivat ympäristössäsi ennen kaksoiskirjoituksen asentamista. Jotta verkkoroolit toimisivat odotetulla tavalla, sinun on luotava uusia verkkorooleja uuden tietomallin avulla. 
 

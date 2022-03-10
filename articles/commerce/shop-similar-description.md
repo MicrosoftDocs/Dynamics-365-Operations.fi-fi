@@ -2,11 +2,9 @@
 title: "\"Tuotteet, joissa samankaltainen kuvaus\" -suositusten ottaminen käyttöön"
 description: Tässä ohjeaiheessa kuvataan, kuinka voit ottaa käyttöön "Tuotteet, joissa samankaltainen kuvaus" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
 author: bsokolov
-manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,14 +16,14 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b3b7abf47a3bdacaa4b91ae32b68a809a84b0b1d
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: ce7f249d496a8cf57ad60ac33506fba3cc3dcce40cd89a0cc663ead5263e441a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5098624"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755851"
 ---
-# <a name="enable-shop-similar-description-recommendations"></a>"Tuotteet, joissa samankaltainen kuvaus" -suositusten ottaminen käyttöön
+# <a name="enable-shop-similar-description-recommendations"></a>Vastaavien tuotteiden kuvaukseen perustuvien suositusten ottaminen käyttöön
 
 [!include [banner](includes/banner.md)]
 
@@ -81,7 +79,7 @@ Noudata seuraavia ohjeita **Tuotteet, joissa samankaltainen kuvaus** -painikkeen
 
 Seuraavassa kuvassa on **ota käyttöön Tuotteet, joissa samankaltainen kuvaus -linkki** -valintaruutu ja **Tuotteet, joissa samankaltainen kuvaus** -painike esimerkkituotetietosivulla sivustomuodostimessa.
 
-![Ota käyttöön Tuotteet, joissa samankaltainen kuvaus -linkki -valintaruutu ja Tuotteet, joissa samankaltainen kuvaus -painike tuotetietosivulla sivustomuodostimessa](./media/ter_site_builder_buybox_button.png)
+![Ota käyttöön Tuotteet, joissa samankaltainen kuvaus -linkin valintaruutu ja Tuotteet, joissa samankaltainen kuvaus -painike tuotetietosivulla sivuston luontiohjelmassa.](./media/ter_site_builder_buybox_button.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -98,3 +96,6 @@ Seuraavassa kuvassa on **ota käyttöön Tuotteet, joissa samankaltainen kuvaus 
 [Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

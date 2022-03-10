@@ -1,7 +1,7 @@
 ---
 title: Yksittäisten numerosarjojen määrittäminen
 description: Tässä ohjeaiheessa selitetään, miten numerosarjat määritetään yksittäin.
-author: sericks007
+author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83ebcf96aa6a5b5c757285be1c5602ac4e8f50fc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890855"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777910"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Yksittäisten numerosarjojen määrittäminen
 

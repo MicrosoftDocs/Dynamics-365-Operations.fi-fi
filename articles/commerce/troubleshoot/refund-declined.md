@@ -2,11 +2,9 @@
 title: Palautustilauksen palautus on hylätty
 description: Tämä ohjeaihe antaa vianmääritysohjeet, jotka voivat auttaa palautustilauksen palautuksen hylkäämisen yhteydessä, jos laskutuksessa käytetty luottokortti eroaa alkuperäisen maksun varmennuksessa käytetystä kortista.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e202c6b4b9e025d5af1cd5eb6235884aab6444e6
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 8880d72d702758d611755bce48a331e3f2e28ca1b7abf485e8b4f7301317c875
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738621"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Palautustilauksen palautus on hylätty
 
@@ -36,7 +34,7 @@ Hyvitys hylätään, kun palautustilauksen laskussa käytetty luottokortti eroaa
 
 Maksun varmennustiedot sisältävät seuraavan virhesanoman: "Adyen-yhdyskäytävän SendRequest() epäonnistui. Tila: 'InternalServerError'.22144; Adyen palautti tyhjän vastauksen.(22001);"
 
-![Hylätty palautustilauksen palautus -virhe](media/refund-order-decline.jpg)
+![Hylätty palautustilauksen palautus -virhe.](media/refund-order-decline.jpg)
 
 ## <a name="resolution"></a>Ratkaisu
 

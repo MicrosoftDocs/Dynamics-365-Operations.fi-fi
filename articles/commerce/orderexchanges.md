@@ -2,15 +2,12 @@
 title: Palautustilauksen vaihdon määritys ja käsittely
 description: Tässä ohjeaiheessa kerrotaan, miten vaihto palautuksen yhteydessä konfiguroidaan ohjelmassa Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a6d7688e78a375bc262b1156c5439c0fff7cd1f0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4458928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758333"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Palautustilaukseen liittyvän vaihdon määritys ja käsittely
 
@@ -35,9 +32,12 @@ Toiminto on nyt lisätty tukemaan tilanteita, joissa palautustilauksiin liittyy 
 
 ## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Commercen määrittäminen tukemaan tuotteiden vaihtoa palautustilauksissa
 
-Voit määrittää järjestelmän tukemaan vaihtoa palautustilauksissa seuraavasti.
+> [!NOTE]
+> Commercen version 10.0.20 ja sitä myöhemmässä versiossa on käytettävissä uusi ominaisuus nimeltä Yhtenäinen palautuskäsittely myyntipisteessä. Jos otat tämän ominaisuuden käyttöön, jäljempänä kuvailtavat määritysvaiheet eivät ole pakollisia. **Käsittele palautukset myyntitilauksina** -asetuksesta tulee pysyvästi konfiguroitu asetus, etkä voi muuttaa sitä.
 
-1. Valitse **Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Kaupan parametrit**. Määritä **Asiakastilaukset**-pikavälilehdessä **Käsittele palautustilauksia myyntitilauksina** -asetukseksi **Kyllä**.
+Noudattamalla näitä ohjeita voit määrittää järjestelmän tukemaan palautettujen tilausten vaihtoja (jos käytössä ei ole **myyntipisteen yhdistetyn palautuskäsittelyn käyttökokemus**).
+
+1. Valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commercen parametrit**. Määritä **Asiakastilaukset**-pikavälilehdessä **Käsittele palautustilauksia myyntitilauksina** -asetukseksi **Kyllä**.
 2. Suorita **Yleinen määritysjakelun aikataulu** -työ (**1110**).
 
 ## <a name="make-an-exchange"></a>Vaihdon tekeminen
@@ -51,3 +51,6 @@ Ostoskoriin on lisätty kolme uutta summakenttää, jotta ostoskorin eri summat 
 - **Käytetty talletus** – Tallennussumma, jota käytetään tapahtumassa, kun käyttäjä suorittaa asiakastilauksen noudon. Jos talletuksen ohitus ei ole käytössä ja määritetään 10 prosentin talletus, tähän kenttään tulee 90 prosenttia asiakastilauksen kokonaissummasta.
 - **Suoritussumma** – Niiden rivien kokonaissumma, joiden toimitustavaksi oli määritetty **Suoritus** asiakastilausta luotaessa tai muokattaessa tai asiakastilaukseen liittyvän vaihdon yhteydessä. Tämän kentän summa sisältää verot ja maksut.
 - **Palautussumma** – Niiden rivien kokonaissumma, joilla on negatiiviset määrät asiakastilauksen vaihdon aikana. Tämän kentän summa sisältää verot ja maksut.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

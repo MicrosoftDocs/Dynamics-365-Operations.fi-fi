@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: e0ba43ff1bab391d141f28289144cc552ee28609
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351815"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323949"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Viivakoodikuvien luominen viivakoodin tietolähteiden avulla
 
 [!include[banner](../includes/banner.md)]
 
-Voit suunnitella [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehikossa [ER-muoto-osia](general-electronic-reporting.md#FormatComponentOutbound), joita suorittamalla voit luoda tarpeen mukaan sähköisiä ja tulostettavia asiakirjoja. Microsoft Office -muotoisen lähtevän asiakirjan luontia varten on määritettävä raportin asettelu käyttämällä raporttimallina joko Microsoft Excel- tai Microsoft Word -tiedostoa. [ER-toimintojen suunnitteluohjelmalla](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) voi liittää Excel- tai Word-tiedoston ER-muodon mallina. Seuraavat liitetyn mallin nimetyt elementit liitetään määritetyn muoto-osan elementteihin:
+Voit suunnitella [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehikossa ER-muoto-osia, joita suorittamalla voit luoda tarpeen mukaan sähköisiä ja tulostettavia asiakirjoja. Microsoft Office -muotoisen lähtevän asiakirjan luontia varten on määritettävä raportin asettelu käyttämällä raporttimallina joko Microsoft Excel- tai Microsoft Word -tiedostoa. [ER-toimintojen suunnitteluohjelmalla](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) voi liittää Excel- tai Word-tiedoston ER-muodon mallina. Seuraavat liitetyn mallin nimetyt elementit liitetään määritetyn muoto-osan elementteihin:
 
 - Sisällön ohjausobjektit Wordissa
 - Nimetyt taulukot, alueet, solut, muodot ja kuvat Excelissä
@@ -123,7 +123,7 @@ Lataa lisäksi seuraava Excel-tiedosto, joka sisältää annetun ER-ratkaisun mu
 
 | Sisällön kuvaus | Tiedostonimi                 |
 |---------------------|---------------------------|
-| Raporttimalli     | [Check template Excel.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque%20template.xlsx) |
+| Raporttimalli     | [Check template Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivoi määrityslähde
 

@@ -2,11 +2,9 @@
 title: Toiminnot hyväksyntäprosessien työnkulussa
 description: Tässä artikkelissa kuvataan toimenpiteet, jotka kukin työnkulun hyväksyntäprosessin osallistuja voi suorittaa.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,22 +14,25 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2e546dc57692e31d4501984dafa21fbae23a48fe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694284"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070930"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Toiminnot hyväksyntäprosessien työnkulussa
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Tässä artikkelissa kuvataan toimenpiteet, jotka kukin työnkulun hyväksyntäprosessin osallistuja voi suorittaa.
 
 Työnkulkuun voi liittyä useita käyttäjäryhmiä: aloittaja, tehtävän osallistuja, päätöksentekijät ja hyväksyjät. Esimerkiksi seuraavassa kuluraportin työnkulussa Sam on aloittaja, jonon jäsenet ovat tehtävän osallistujia, John on päätöksentekijä sekä Frank, Sue sekä Ann ovat hyväksyjiä.
 
-[![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Workflow\_WithManualDecision.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 Seuraavissa kappaleissa kuvataan kunkin ryhmän mahdolliset toimenpiteet.
 
@@ -141,3 +142,6 @@ Jos hyväksyjä tekee muutospyynnön, tiedosto palautetaan sen lähettäneelle a
 Sam on esimerkiksi lähettänyt 12 000 dollarin arvoisen kuluraportin ja asiakirja on määritetty Suelle. Jos Sue pyytää muutosta, kuluraportti lähetetään takaisin Samille.
 
 Sam voi lähettää kuluraportin uudelleen. Hän voi tehdä siihen ensin pyydetyt muutokset tai lähettää kuluraportin alkuperäisen version uudelleen. Jos Sam lähettää kuluraportin uudelleen, se lähetetään Frankille hyväksyttäväksi, koska Frank on hyväksyntäprosessin ensimmäinen hyväksyjä.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

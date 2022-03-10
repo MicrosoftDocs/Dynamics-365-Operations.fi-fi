@@ -2,28 +2,28 @@
 title: Työhönottopyynnön koulutus
 description: Tässä aiheessa kuvataan työhönottopyynnön koulutuksen yksikköä Dynamics 365 Human Resourcesissa.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: efc5c4813f8abd869e8137052c4aeb356a930d0b
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 9fe1a99debac3dc784ba82b711143337d4077be0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465963"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067123"
 ---
 # <a name="recruiting-request-education"></a>Työhönottopyynnön koulutus
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

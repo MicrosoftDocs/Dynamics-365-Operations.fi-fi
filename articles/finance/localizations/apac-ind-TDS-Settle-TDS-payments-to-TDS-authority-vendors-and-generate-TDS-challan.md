@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5b77985a75d2930267cf94d6f218d53b47e6e705
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 19f41020c6e1db8b08c7f69a58d33852c730931447803e2e1e970b1c293b6acd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779395"
 ---
 # <a name="settle-tds-payments-to-tds-authority-vendors-and-generate-tds-challan"></a>TDS-maksujen tilitys TDS-viranomaistoimittajille ja TDS:n challan-tietojen luominen
 
@@ -31,7 +31,7 @@ Tässä aiheessa kerrotaan, miten TDS-maksut tilitetään TDS-viranomaistoimitta
 
 1. Valitse **Ostoreskontra \> Maksut \> Toimittajan maksukirjauskansio**.
 
-    [![Toimittajan maksukirjauskansio -sivu](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
+    [![Toimittajan maksukirjauskansio -sivu.](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
 
 2. Valitse **Toimittajan maksukirjauskansio** -sivulla **Uusi** luodaksesi kirjauskansion rivin.
 3. Valitse **Tili**-kentässä TDS-viranomaistoimittaja, jolle tilitetään TDS-maksut.

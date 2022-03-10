@@ -1,12 +1,10 @@
 ---
 title: Käytäntöpäällikön Power BI -sisältö
-description: Tässä aiheessa kuvataan, mitä kuuluu käytäntöpäällikön Power BI -sisältöön. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
-author: KimANelson
-manager: AnnBe
+description: Tässä aiheessa kuvataan, mitä kuuluu käytäntöpäällikön Power BI -sisältöön.
+author: kfend
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685702"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500218"
 ---
 # <a name="practice-manager-power-bi-content"></a>Käytäntöpäällikön Power BI -sisältö
 
@@ -117,3 +115,6 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 | Tärkeät koostemitat       | Kenttä               | kuvaus |
 |---------------------------------|---------------------|-------------|
 | Valmiin tehtävän suunniteltu kustannus | Sum(TotalCostPrice) | Kaikkien projektitapahtumatyyppien ja valmiiden tehtävien kokonaiskustannushinta-arviot. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

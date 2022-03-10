@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744660"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763407"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Datasta riippumaton testaus Regression Suite Automation Toolilla
 
@@ -30,7 +30,7 @@ Vaikka ERP-sovelluksen toiminnan vahvistaminen ei voi olla täysin datasta riipp
 - ATL-sovelluskehys
 - Regression Suite Automation Tool (RSAT)
 
-[![Testiluokituksen pyramidi](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Testiluokituksen pyramidi.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Yleiskuvaus
 -   **SysTest-sovelluskehitys** – SysTest-sovelluskehys on luotettava vaihtoehto yksikkötestien kirjoittamiseen. Koska yksikkötestit testaavat tavallisesti metodia tai funktiota, niiden tulisi olla aina datasta riippumattomia ja riippuvaisia vain tiedoista, jotka annetaan osana testiä.
@@ -42,7 +42,7 @@ Vaikka ERP-sovelluksen toiminnan vahvistaminen ei voi olla täysin datasta riipp
     - o Syötä yksilölliset tiedot, kuten laskujen numerot, käyttämällä numerosarjaa tai Microsoft Excel -funktioita, kuten =TEKSTI(NYT(),"yyyymmddhhmm"). Tämä funktio tarjoaa yksilöllisen numeron joka minuutti, mikä sallii sinun seurata, milloin toiminto tapahtui. Tätä voidaan käyttää muuttujille, kuten tuotteiden vastaanottojen ja toimittajien laskujen numeroille. Nämä testit toimivat edelleen samassa tietokannassa uudelleen ja uudelleen ilman, että niitä tarvitsee palauttaa.
     - Määritä ympäristön **muokkaustilaksi** aina **Luku** tai **Muokkaus** ensimmäisessä testissä, koska oletusasetus on **Automaattinen**. **Automaattinen**-asetukset käyttävät aina edellistä asetusta, ja ne voivat aiheuttaa epäluotettavia testejä. 
  
-    [![Asetukset-sivu, Suorituskyky-välilehti](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Asetukset-sivu, Suorituskyky-välilehti.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Vahvista vasta, kun olet suodattanut valinnan tiettyyn tapahtumaan yleisen vahvistuksen sijaan. Jos haluat esimerkiksi käyttää tietueiden määrää, suodata tapahtuman numeron tai päivämäärän perusteella siten, että mitään muita tapahtumia ei käytetä vahvistuksessa. 
     - Jos olet tarkistamassa asiakkaan saldoa tai budjettia, tallenna arvo ensin ja lisää sitten tapahtuma-arvosi vahvistaaksesi odotetun tuloksen sen sijaan, että vahvistaisit kiinteän odotetun arvon. 

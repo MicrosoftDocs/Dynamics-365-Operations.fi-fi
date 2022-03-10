@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9972c5761a8445c6802f58b0ffad6226cf8ee38c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e271ddd3331d7b5de78f00a02b60a0479879c172
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568684"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700002"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
 
@@ -29,7 +29,7 @@ Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuun
 | Laajennettavat dimensiot | Laajennettavat dimensiot ovat tyhjiä suunnitelluissa tilauksissa, vaikka **Kattavuussuunnitelma dimension mukaan** -valintaruutu olisi valittu **Varastodimensioryhmät** tai **Seurantadimensioryhmät**-sivulla. |
 | Suodatetut tuotantoajot | Lisätietoja on kohdassa [Tuotannon suunnittelu – suodattimet](production-planning.md#filters). |
 | Ennusteen suunnittelu | Ennusteen suunnittelua ei tueta. Pääsuunnittelua kannattaa käyttää, jos ennustemalli on määritetty pääsuunnitelmaan. |
-| Suunniteltujen tilausten numerosarjat | Suunniteltujen tilausten numerosarjoja ei tueta. Suunnitellut tilausnumerot luodaan palvelupuolelle. |
+| Suunniteltujen tilausten numerosarjat | Suunniteltujen tilausten numerosarjoja ei tueta. Suunnitellut tilausnumerot luodaan palvelupuolelle. Suunnitellussa tilausnumerossa näkyy tavallisesti 10 numeroa, mutta numerosarja perustuu todellisuudessa 20 merkkiin, joista suunnittelusuorituksen laskentaan kohdistetaan 10 numeroa ja suunniteltujen tilausten laskentaan 10 muuta numeroa. |
 | Suunnitelman kopiointi, suunnittelun poistaminen ja suunnitteluversion tyhjennys | <p>Seuraavat nimikkeet on poistettu käytöstä siirtymisruudun kohdassa **Pääsuunnittelu \> Pääsuunnittelu \> Suunnittelun ylläpito**:</p><ul><li>Suunnitelman kopio</li><li>Poista suunnitelma</li><li>Suunnitelmaversion siivous</li></ul> |
 | Palautustilaukset | Palautustilauksia ei ole oteta huomioon. |
 | Liittyvien ominaisuuksien aikatauluttaminen | Lisätietoja on kohdassa [Ajoittaminen rajattoman kapasiteetin avulla](infinite-capacity-planning.md#limitations). |
@@ -41,5 +41,6 @@ Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuun
 
 - [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
 - [Parametrit, joita ei käytetä suunnittelun optimoinnissa](not-used-parameters.md)
+- [Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit](date-time-used.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

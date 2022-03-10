@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891923"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952674"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrointi kolmannen osapuolen tuotannonohjausjärjestelmiin
 
@@ -37,10 +37,17 @@ Seuraavassa kuvassa on tavanomainen integroidussa ratkaisussa siirrettävä liik
 
 ## <a name="turn-on-the-mes-integration-feature"></a>MES-integrointiominaisuuden ottaminen käyttöön
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Ennen kuin voit käyttää tätä toimintoa, järjestelmänvalvojan on otettava se käyttöön järjestelmässä seuraavien ohjeiden mukaisesti.
 
-- **Moduuli:** *Tuotannonhallinta*
-- **Ominaisuuden nimi:** *Tuotannonohjausjärjestelmän integrointi*
+1. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.
+1. Varmista, että **Aika ja läsnäolo** -käyttöoikeusavain on käytössä (tarkista valintamerkki). Tämä käyttöoikeusavain on pakollinen, koska se ohjaa valmistuksen suoritusjärjestelmän toimintoja ja tietoja. Jos avain ei ole käytössä, toimi seuraavasti:
+    1. Siirrä järjestelmä ylläpitotilaan kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla.
+    1. Valitse **Käyttöoikeuksien konfigurointi** -sivulla **Aika ja läsnäolo** -valintaruutu.
+    1. Poista järjestelmän ylläpitotila käytöstä kohdassa [Ylläpitotila](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) kuvatulla tavalla
+1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
+1. Ota luetteloitu ominaisuus käyttöön seuraavalla tavalla (katso myös [Ominaisuuksien hallinnan yleiskatsaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
+    - **Moduuli:** *Tuotannonhallinta*
+    - **Ominaisuuden nimi:** *Tuotannonohjausjärjestelmän integrointi*
 
 ## <a name="processes-available-for-mes-integration"></a>MES-integroinnin käytettävissä olevat prosessit
 

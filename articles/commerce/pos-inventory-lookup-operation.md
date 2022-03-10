@@ -2,7 +2,7 @@
 title: Myyntipisteen varastohakutoiminto
 description: Tässä aiheessa kuvataan, miten myyntipisteen varastohakutoimintoa käytetään Dynamics 365 Commerce -myyntipisteessä tuotteiden käytettävissä olevan varaston saatavuuden tarkastelemiseksi myymälöissä ja varastoissa.
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025445"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343833"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Myyntipisteen varastohakutoiminto
 
@@ -38,36 +38,40 @@ Kun varastohakutoiminto aloitetaan myyntipistesovelluksesta, kassanhoitaja syöt
 
 Yksittäisen tuotteen varastohakutoiminto sisältää varastohakuluettelonäkymän, joka sisältää seuraavat sijaintiluettelon tuotetiedot:
 
-- **Varasto** - Viittaa tuotteen "käytettävissä olevaan fyysiseen" määrään.
-- **Varattu** - Tarkoittaa pääkonttorista haettua "fyysistä varattua" määrää.
-- **Tilattu** - Tarkoittaa pääkonttorista haettua "tilattu yhteensä" -määrää.
-- **Yksikkö** - Viittaa pääkonttorissa konfiguroituihin varaston mittayksikköihin.
+- **Varasto** – viittaa tuotteen käytettävissä olevaan fyysiseen määrään.
+- **Varattu** – viittaa pääkonttorista haettuun fyysiseen varattuun määrään.
+- **Tilattu** – viittaa pääkonttorista haettuun yhteensä tilattuun määrään.
+- **Yksikkö** – viittaa pääkonttorissa määritettyihin varaston mittayksikköihin.
 
 Sijaintien luettelonäkymä sisältää kaikki myymälät ja varastot, jotka on konfiguroitu täyttämisryhmiin, joihin nykyinen myymälä on linkitetty, seuraavan esimerkin kuvan mukaisesti.
 
-![Varastohakutoiminnon luettelonäkymä](media/inventory-lookup-list-view.png)
+![Varastohakutoiminnon luettelonäkymä.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Varmista, että nykyinen myymälä sisältyy asiaan liittyviin täyttämisryhmiin.
 
 Myyntipisteen sovelluspalkissa ovat käytettävissä seuraavat toiminnot:
 
-- **Lajittelu** – Tämän toimenpiteen avulla myyntipistekäyttäjä voi lajitella luettelonäkymän tiedot erilaisten ehtojen perusteella. Sijaintiin perustuva lajittelu on oletuslajitteluna. 
-  - **Geosijainti** (lähimmästä sijainnista kauimpaan sijaintiin, kun sitä verrataan nykyiseen myymälään)
-  - **Nimi** (nousevassa tai laskevassa järjestyksessä)
-  - **Myymälän numero** (nousevassa tai laskevassa järjestyksessä)
-  - **Varasto** (laskevassa järjestyksessä)
-  - **Varattu** (laskevassa järjestyksessä)
-  - **Tilattu** (laskevassa järjestyksessä)
-- **Suodata** - Tämän toimenpiteen avulla myyntipistekäyttäjä voi tarkastella tietyn sijainnin suodatettuja tietoja.
-- **Näytä myymälän käytettävyys** – Tämän toimenpiteen avulla myyntipisteen käyttäjä voi tarkastella valitun myymälän tuotteen luvattavissa olevia määriä (ATP).
-- **Näytä myymälän sijainti** – Tämä toiminto avaa erillisen sivun, joka näyttää valitun myymälän karttanäkymän, osoitteen ja aukioloajat.
-- **Nouto myymälästä** – Tämä toiminto luo asiakastilauksen tuotteelle, joka noudetaan valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
-- **Lähetä tuote** – Tämä toiminto luo asiakastilauksen tuotteelle, joka lähetetään valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
-- **Näytä kaikki variantit** - Jos tuotteella on variantteja, tämä toimenpide siirtyy luettelonäkymästä matriisinäkymään, jossa näkyvät tuotteen kaikkien varianttien varastotiedot.
-- **Lisää tapahtumaan** – Tämä toiminto lisää tuotteen ostoskoriin ja ohjaa käyttäjän tapahtumanäyttöön.
+- **Lajittelu** – Tämän toimenpiteen avulla myyntipistekäyttäjä voi lajitella luettelonäkymän tiedot erilaisten ehtojen perusteella. Sijaintiin perustuva lajittelu on oletuslajitteluna.
+
+    - **Maantieteellinen sijainti** (lähimmästä sijainnista kauimpaan sijaintiin sen perusteella, mikä on etäisyys nykyiseen myymälään)
+    - **Nimi** (nousevassa tai laskevassa järjestyksessä)
+    - **Myymälän numero** (nousevassa tai laskevassa järjestyksessä)
+    - **Varasto** (laskevassa järjestyksessä)
+    - **Varattu** (laskevassa järjestyksessä)
+    - **Tilattu** (laskevassa järjestyksessä)
+
+- **Suodata** – tämän toimenpiteen avulla myyntipistekäyttäjä voi tarkastella tietyn sijainnin suodatettuja tietoja.
+- **Näytä myymälän käytettävyys** – tämän toimenpiteen avulla myyntipisteen käyttäjä voi tarkastella valitun myymälän tuotteen luvattavissa olevia määriä (ATP).
+- **Näytä myymälän sijainti** – tämä toiminto avaa erillisen sivun, joka näyttää valitun myymälän karttanäkymän, osoitteen ja aukioloajat.
+- **Nouto myymälästä** – tämä toiminto luo asiakastilauksen tuotteelle, joka noudetaan valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
+- **Lähetä tuote** – tämä toiminto luo asiakastilauksen tuotteelle, joka lähetetään valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
+- **Näytä kaikki variantit** - jos tuotteella on variantteja, tämä toimenpide siirtyy luettelonäkymästä matriisinäkymään, jossa näkyvät tuotteen kaikkien varianttien varastotiedot.
+- **Lisää tapahtumaan** – tämä toiminto lisää tuotteen ostoskoriin ja ohjaa käyttäjän tapahtumanäyttöön.
 
 > [!NOTE]
-> Sijaintiin perustuvassa lajittelussa sijainnin ja nykyisen myymälän välinen etäisyys määräytyy Commercen pääkonttorisovelluksessa määritettyjen koordinaattien (leveys- ja pituusasteet) mukaan. Myymälän sijaintitiedot määritetään myymälään liittyvän toimintayksikön ensisijaisessa osoitteessa. Jos varasto ei ole myymälässä, sijaintitiedot määritetään varaston osoitteessa. Jos nykyisen myymälän koordinaatteja ei ole määritetty oikein, sijaintiin perustuva lajitteluvaihtoehto näyttää nykyisen myymälän luettelon yläosassa ja lajittelee sitten muut sijainnit nimen perusteella.
-
-> [!NOTE]
+> Commercen versiossa 10.0.17 käyttöönotettu sijaintiin perustuva lajittelu näyttää nykyisen myymälän ensimmäisenä. Muissa sijainneissa sijainnin ja nykyisen myymälän välinen etäisyys määräytyy Commercen pääkonttorisovelluksessa määritettyjen koordinaattien (leveys- ja pituusasteet) mukaan. Myymälän sijaintitiedot määritetään myymälään liittyvän toimintayksikön ensisijaisessa osoitteessa. Jos varasto ei ole myymälässä, sijaintitiedot määritetään varaston osoitteessa. Ennen versiota 10.0.17 luettelonäkymässä näkyy aina nykyinen myymälä ensimmäisenä ja muut sijainnit lajitellaan aakkosjärjestyksessä.
+>
 > **Näytä myymälän käytettävyys**-, **Näytä myymälän sijainti**-, **Nouto myymälästä**- ja **Lähetä tuote** -toiminnot eivät ole käytettävissä muissa kuin myymälävarastoissa.
 
 ## <a name="inventory-lookup-matrix-view-for-variants"></a>Varianttien varastohaun matriisinäkymä
@@ -76,7 +80,7 @@ Jos päätuotteessa on variantteja, varastohakutoiminto sisältää myös dimens
 
 Seuraavassa esimerkkikuvassa näkyy myyntipisteen varastohakumatriisinäkymä.
 
-![Varastohakutoiminnon matriisinäkymä](media/inventory-lookup-matrix-view.png)
+![Varastohakutoiminnon matriisinäkymä.](media/inventory-lookup-matrix-view.png)
 
 Matriisinäkymässä kukin solu edustaa yksittäistä varianttia ja näyttää oikeassa alakulmassa käytettävissä olevan varaston (käytettävissä olevan fyysisen) arvon sekä **varatun** (fyysisen varatun) arvon ja **tilatut** (tilattu yhteensä) arvot vasemmassa yläkulmassa. Seuraavassa taulukossa selitetään eri käytettävissä olevien arvojen merkitykset.
 
@@ -90,12 +94,12 @@ Dimensioarvojen näyttöjärjestys matriisinäkymässä perustuu Commerce-pääk
 
 Seuraavat toiminnot ovat käytettävissä matriisinäkymän solussa:
 
-- **Myy nyt** – Tämä toiminto lisää valitun variantin ostoskoriin ja ohjaa käyttäjän tapahtumanäyttöön.
-- **Nouto myymälästä** – Tämä toiminto luo asiakastilauksen valitulle variantille, joka noudetaan valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
-- **Lähetä tuote** – Tämä toiminto luo asiakastilauksen valitulle variantille, joka lähetetään valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
-- **Käytettävyys** – Tämä toiminto vie käyttäjän erilliselle sivulle, jossa näkyvät valitun myymälän valitun muuttujan ATP-määrät.
-- **Näytä kaikki sijainnit** – Tämä toiminto siirtyy varaston vakiomuotoiseen varaston käytettävyyden luettelonäkymään, jossa näkyvät valitun muuttujan varastotiedot.
-- **Näytä tuotetiedot** - Tämä toimenpide ohjaa käyttäjän valitun muuttujan tuotetietosivulle (PDP).
+- **Myy nyt** – tämä toiminto lisää valitun variantin ostoskoriin ja ohjaa käyttäjän tapahtumanäyttöön.
+- **Nouto myymälästä** – tämä toiminto luo asiakastilauksen valitulle variantille, joka noudetaan valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
+- **Lähetä tuote** – tämä toiminto luo asiakastilauksen valitulle variantille, joka lähetetään valitusta myymälästä, ja ohjaa käyttäjän tapahtumanäyttöön.
+- **Käytettävyys** – tämä toiminto vie käyttäjän erilliselle sivulle, jossa näkyvät valitun myymälän valitun muuttujan ATP-määrät.
+- **Näytä kaikki sijainnit** – tämä toiminto siirtyy varaston vakiomuotoiseen varaston käytettävyyden luettelonäkymään, jossa näkyvät valitun muuttujan varastotiedot.
+- **Näytä tuotetiedot** - tämä toimenpide ohjaa käyttäjän valitun muuttujan tuotetietosivulle (PDP).
 
 ## <a name="access-inventory-lookup-from-other-pages-in-pos"></a>Varastohaun käyttö myyntipisteen muilla sivuilla
 
@@ -103,7 +107,7 @@ Myyntipisteen käyttäjät voivat käyttää varastohakutoimintoa muilla myyntip
 
 Seuraavassa esimerkkikuvassa näkyy myyntipisteen varastohaun tulokset tuotetietosivulta.
 
-![Varastohaku tuotetietosivulta](media/inventory-lookup-from-product-details-page.png)
+![Varastohaku tuotetietosivulta.](media/inventory-lookup-from-product-details-page.png)
 
 Päätuotteen tuotetietosivulla voidaan käynnistää varaston hakumatriisinäkymä käyttämällä sovelluspalkin **Näytä kaikki muuttujat** -toimintoa, joka sisältää nykyisen myymälän varaston käytettävyystiedot tuotteen kaikkien muuttuja varten. Tuotetietosivu näyttää yksittäisen tuotteen käytettävissä olevan varaston (käytettävissä olevan fyysisen) arvon nykyisessä myymälässä. Lisäksi voit valita **Muiden myymälöiden varasto** -linkin ja käynnistää varastohakutoiminnon, jonka avulla voit tarkistaa tuotteen käytettävyyden muissa myymälöissä tai varastoissa.
 
@@ -121,7 +125,5 @@ Commerce-versiossa 10.0.9 ja sitä aiemmissa versioissa **käytettävissä oleva
 [Myyntipistekäyttöliittymän visuaaliset kokoonpanot](pos-screen-layouts.md)
 
 [Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

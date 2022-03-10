@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354610"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967947"
 ---
-# <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronoi tuoteluokitukset Dynamics 365 Commercessa
+# <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronoi tuoteluokitukset Dynamics 365 Commerceissa
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten tuoteluokitukset synkronoidaan Microsoft Dynamics 365 Commerce -sovelluksessa.
-
-## <a name="overview"></a>Yleiskuvaus
 
 Jotta monikanavien, kuten myyntipisteen ja puhelinkeskusten, tuoteluokituksia voidaan käyttää, luokitusten ja arvostelujen palvelun tuotteiden luokitukset on tuotava Commerce-sovelluksen kanavatietokantaan. Kun tuoteluokitukset ovat käytettävissä monikanavissa, ne auttavat asiakkaita epäsuorasti myyjien kanssa tehtävässä vuorovaikutuksessa.
 
@@ -132,6 +130,16 @@ Seuraavassa kuvassa on esimerkki puhelinkeskuskanavien tuoteluokituksista.
 [Hallitse luokituksia ja arvosteluja](manage-reviews.md)
 
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
+
+[Synkronoi tuoteluokitukset](sync-product-ratings.md)
+
+[Salli valvojan julkaista luokituksia ja arvosteluja manuaalisesti](manual-publish-rating-reviews.md)
+
+[Luokitusten ja arvostelujen tuominen ja vieminen](import-export-reviews.md)
+
+[Palvelujen välisen todennuksen määrittäminen](service-to-service-auth.md)
+
+[Luokitusten ja arvostelujen usein kysytyt kysymykset](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

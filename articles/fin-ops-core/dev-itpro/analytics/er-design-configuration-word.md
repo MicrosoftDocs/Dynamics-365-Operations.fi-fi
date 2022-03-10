@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27e9e977193f9ff5c8188b780e8de955742c4ebe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718354"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323872"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Uuden ER-määrityksen suunnitteleminen luomaan Word-muotoisia raportteja
 
@@ -28,7 +28,7 @@ Raporttien luominen Microsoft Word -asiakirjoina edellyttää, että raporteille
 
 ![Valvontaraportin esimerkkimalli Wordin työpöytäsovelluksessa.](./media/er-design-configuration-word-image1.png)
 
-Word-asiakirjaa voi käyttää Word-muotoisten raporttien mallina määrittämällä uuden [sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisun](er-quick-start1-new-solution.md). Tässä ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-[muodon](general-electronic-reporting.md#FormatComponentOutbound) osan.
+Word-asiakirjaa voi käyttää Word-muotoisten raporttien mallina määrittämällä uuden [sähköisen raportoinnin (ER)](general-electronic-reporting.md) [ratkaisun](er-quick-start1-new-solution.md). Tässä ratkaisussa on oltava ER-[määritys](general-electronic-reporting.md#Configuration), joka sisältää ER-muodon osan.
 
 > [!NOTE]
 > Kun uusi ER-muotomääritys luodaan muodostamaan Word-muotoisia raportteja, **Word** on joko valittava muodon tyypiksi avattavassa **Luo määritys** -valintaikkunassa tai **Muodon tyyppi** -kenttä on jätettävä tyhjäksi.
@@ -46,7 +46,7 @@ Sisäkkäiset **Excel\\Alue**- ja **Excel\\Solu**-elementit voidaan lisätä **E
 
 ![Sisäkkäisten elementtien lisääminen Muodon suunnittelija -sivulla.](./media/er-design-configuration-word-image4.gif)
 
-Kun ER-muodon muutokset tallennetaan suunnittelun yhteydessä, muodon hierarkkinen rakenne tallennetaan liitettyyn Word-malliin **Raportti**-nimisenä [mukautettuna XML-osana](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019). Mukautettuun malliin on siirryttävä ja se on ladattava Financesta, tallennettava paikallisesti ja avattava Wordin työpöytäsovelluksessa. Seuraavassa kuvassa paikallisesti tallennettu esimerkkimalli valvontaraportista, joka sisältää mukautetun **Raportti**-XML-osan.
+Kun ER-muodon muutokset tallennetaan suunnittelun yhteydessä, muodon hierarkkinen rakenne tallennetaan liitettyyn Word-malliin **Raportti**-nimisenä [mukautettuna XML-osana](/visualstudio/vsto/custom-xml-parts-overview). Mukautettuun malliin on siirryttävä ja se on ladattava Financesta, tallennettava paikallisesti ja avattava Wordin työpöytäsovelluksessa. Seuraavassa kuvassa paikallisesti tallennettu esimerkkimalli valvontaraportista, joka sisältää mukautetun **Raportti**-XML-osan.
 
 ![Raporttimalliesimerkin esikatselu Wordin työpöytäsovelluksessa.](./media/er-design-configuration-word-image5.gif)
 

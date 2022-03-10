@@ -2,33 +2,35 @@
 title: Toimittajan laskujen yleiskatsaus
 description: Tässä aiheessa on yleistietoja toimittajan laskuista.
 author: abruer
-manager: AnnBe
-ms.date: 12/18/2019
-ms.topic: article
+ms.date: 06/03/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 13971
+ms.custom:
+- "13971"
+- intro-internal
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1799fb18a1dd4b7c532259ab198e1ba30a89c09d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264128"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985334"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
+
+Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
 
 ## <a name="vendor-invoices"></a>Toimittajan laskut
 
@@ -70,10 +72,9 @@ Organisaatiosi saattaa hallita toimittajan laskujen tarkistusprosessia työnkulk
 Seuraavilla tavoilla voi estää laskua lähtemästä työnkulkuun.
 
 - **Laskun kokonaissumma ja rekisteröity kokonaissumma eivät ole samat.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan yhteissummat eivät ole yhtä suuret. Hälytyksen kautta voit korjata saldot, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskun kokonaissumma ja rekisteröidyn laskun kokonaissumma eivät ole samat** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön. 
-
 - **Lasku sisältää kohdistamattomia kuluja.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan laskulla on kohdistamattomia kuluja. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos toimittajan laskussa on kohdistamattomia kuluja** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
-
-- **Lasku sisältää saman laskunumeron kuin toinen kirjattu lasku.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan löytyi lasku, jolla on sama numero. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä hälytys näytetään, kun Ostoreskontra-parametrin **Tarkista käytetty laskunumero** arvoksi on määritetty **Hylkää kaksoiskappale**. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskunumero on jo olemassa kirjatussa laskussa ja järjestelmää ei ole määritetty hyväksymään laskunumeroiden kaksoiskappaleita** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.  
+- **Lasku sisältää saman laskunumeron kuin toinen kirjattu lasku.** Laskun lähettänyt henkilö saa sanoman, jossa ilmoitetaan, että lasku, jonka numero on kaksoiskappale, löydettiin. Numeron kaksoiskappaleen voi korjata, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä hälytys näytetään, kun Ostoreskontra-parametrin **Tarkista käytetty laskunumero** arvoksi on määritetty **Hylkää kaksoiskappale**. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskunumero on jo olemassa kirjatussa laskussa ja järjestelmää ei ole määritetty hyväksymään laskunumeroiden kaksoiskappaleita** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
+- **Lasku sisältää rivin, jonka laskun määrä on pienempi kuin täsmäytetty tuotteen vastaanottomäärä.** Henkilö, joka lähettää laskun tai yrittää kirjata sen, saa sanoman, jonka mukaan määrät eivät täsmää. Sanoman kautta voit korjata arvot, ennen kuin lasku lähetetään uudelleen työnkulkuun. Tämä ominaisuus on käytettävissä, jos **Estä toimittajan laskujen kirjaaminen ja lähettäminen työnkulkuun** -parametriin on otettu käyttöön **ominaisuuden hallinta** -sivulla ja **Ostoreskontran parametrit** -sivun **Estä kirjaus ja lähetys työnkulkuparametriin** -toiminto on käytössä.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Toimittajan laskujen täsmäytys tuotteen vastaanottoihin
 
@@ -118,9 +119,32 @@ Peruuttamattoman virheen vuoksi pysäytetyn työnkulun esiintymän työnkulun ti
 Voit palauttaa työnkulun tilaksi **Luonnos** käyttämällä **Työnkulkuhistoria**-sivua. Voit avata tämän sivun **Toimittajan lasku** -kohdasta tai kohdasta **Yhteiset > Kyselee** > Työnkulku. Voit nollata työn kulun tilaksi **Luonnos** valitsemalla **Peruuta**. Voit myös nollata työn kulun tilaksi Luonnos valitsemalla **Peruuta**-toiminnon **Toimittajan lasku**- tai **Odottavat toimittajan laskut** -sivulla. Kun työnkulun tila palautetaan **luonnos**-tilaan, se on muokattavissa **toimittajan lasku** -sivulla.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Odottavat toimittajan laskut -sivun laskun kokonaissumman tarkasteleminen
+
 Voit tarkastella laskujen kokonaismäärää **Odottavat toimittajan laskut** -sivulla ottamalla käyttöön **Näytä laskun loppusumma odottavien toimittajalaskujen luettelossa** -parametrin **Ostoreskontran parametrit** -sivulla. 
 
+## <a name="vendor-open-transactions-report"></a>Toimittajan avointen tapahtumien raportti
 
+**Toimittajan avoimet tapahtumat** -raportti antaa yksityiskohtaisia tietoja kunkin toimittajan avoimista tapahtumista kulloinkin määritetyn päivän tilanteen mukaan. Tätä raporttia käytetään usein tarkastusmenettelyn aikana toimittajan kirjaustapahtumien ja kirjanpidon tilitapahtumien välisen tasapainon tarkistamisessa.
+
+Raportti sisältää seuraavat tiedot kunkin tapahtuman osalta:
+
+- Laskun numero
+- Tapahtuman päivämäärä
+- Tositenumero
+- Tapahtuman summa tapahtumavaluutassa ja kirjanpitovaluutassa
+- Maksettavien saldo tapahtumavaluutassa ja kirjanpitovaluutassa
+- Saatavien saldo tapahtumavaluutassa ja kirjanpitovaluutassa
+- Välisumma kirjanpitovaluutassa
+- Maksun eräpäivä
+
+### <a name="filter-the-data-on-the-report"></a>Raportin tietojen suodattaminen
+
+Kun luot **Toimittajan avoimet tapahtumat** -raportin, seuraavat oletusparametrit ovat käytettävissä. Voit käyttää niitä suodattamaan raporttiin sisältyvät tiedot.
+
+- **Jätä tuleva tilitys pois** – Valitse tämä valintaruutu, jos haluat jättää pois tapatumat, jotka tilitetään **Avoimet tapahtumat päivänä** -kenttään syötetyn päivämäärän jälkeen.
+- **Avoimet tapahtumat päivänä** – Anna päivämäärä, jotta kyseisenä päivänä avoimina olevat tapahtumat sisällytetään. Jos et syötä päivämäärää, tämän kentän arvoksi määritetään enimmäispäivämäärä. (Enimmäispäivämäärä on viimeisin päivämäärä, jonka järjestelmä hyväksyy, eli 31.12.2154.) Oletusarvoisesti tämän kentän arvoksi määritetään siihen viimeksi syötetty päivämäärä, kun raportti suoritetaan seuraavan kerran.
+
+Voit rajoittaa raporttiin sisällytettäviä siirtotietoja edelleen **Sisällytettävä tietue** -kentän suodattimien avulla.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

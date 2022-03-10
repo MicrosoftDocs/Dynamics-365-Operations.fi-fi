@@ -1,8 +1,8 @@
 ---
-title: Ympäristön määrittäminen päätietojen hakua varten
-description: Tässä aiheessa kerrotaan, miten ympäristö määritetään käyttämään veron laskennan perustietojen hakutoimintoa.
+title: Verolaskentamäärityksen päätietojen haun ottaminen käyttöön
+description: Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista.
 author: kai-cloud
-ms.date: 04/21/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,70 +15,70 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e4aa941c57e8c31793d6db8ae87140cd1bb1a82b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021341"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867349"
 ---
-# <a name="set-up-an-environment-for-master-data-lookup"></a>Ympäristön määrittäminen päätietojen hakua varten
+# <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Verolaskentamäärityksen päätietojen haun ottaminen käyttöön 
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten ympäristö määritetään käyttämään veron laskennan perustietojen hakutoimintoa.
+Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista. Käytössä on avattava luettelo, jossa voi valita verolaskentamäärityksen arvoja esimerkiksi **Yritys**, **Toimittajan tili**-, **Nimikekoodi**- ja **Toimitusehto**-kenttiin. Nämä arvot saadaan Microsoft Dataverse -tietolähdettä käyttävästä yhdistetystä Microsoft Dynamics 365 Finance -ympäristöstä.
 
-1. Määritä power platformin integraatio Lifecycle Services (LCS) -palveluissa. Lisätietoja on kohdassa [Microsoft Power Platform -apuohjelmien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
-2. Määritä Dynamics 365 Finance ja Microsoft Dataverse. Lisätietoja on kohdassa [Ratkaisun saaminen](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) ja [todennus ja hyväksyntä](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Määritä seuraavat yksiköt. Lisätietoja on kohdassa [Virtuaaliyksiköiden käyttöönotto](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
-      - CompanyInfoEntity
-      - CurrencyEntity
-      - CustCustomerV3Entity
-      - DeliveryTermsEntity
-      - EcoResProductCategoryEntity
-      - EcoResReleasedProductV2Entity
-      - LogisticsAddressCityEntity
-      - LogisticsAddressCountryRegionTranslationEntity
-      - LogisticsAddressStateEntity
-      - PurchProcurementChargeCDSEntity
-      - SalesChargeCDSEntity
-      - TaxGroupEntity
-      - TaxItemGroupHeadingEntity
-      - VendVendorV2Entity
-4. Määritä Dynamics 365 Regulatory Configuration Service (RCS) -palvelu. 
-5. Luo Microsoftille palvelupyyntö, jonka avulla voidaan ottaa käyttöön seuraavien ominaisuuksien lento:
+> [!NOTE] 
+> Verolaskennan perustietojen hakutoiminto on valinnainen toiminto. Voit ohittaa seuraavat vaiheet, jos poistat **Veropalvelun tietolähde Dataverse-tietolähdetukiominaisuuden** käytöstä RCS (Regulatory Configuration Service) -palvelussa. Tällöin avattava luettelo ei kuitenkaan ole käytettävissä verolaskelman konfiguraatiossa.
 
-      - ERCdsFeature
-      - TaxServiceCDSFeature
+1. Määritä Microsoft Power Platformin integraatio Microsoft Dynamics Lifecycle Services (LCS) -palveluissa. Lisätietoja on kohdassa [Microsoft Power Platform -apuohjelmien yleiskatsaus](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Kun olet suorittanut tämän vaiheen, Microsoft Power Platform -ympäristön nimi näkyy **Power Platform -integrointi** -osassa.
+2. Siirry [Microsoft Power Platformin hallintakeskukseen](https://admin.powerplatform.microsoft.com/environments) ja valitse ympäristön nimi. Ympäristön URL-osoite annetaan.
+3. Määritä Dynamics 365 Finance ja Dataverse. Lisätietoja: [Virtuaaliyksikköratkaisun hankkiminen](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution) ja [todennus ja hyväksyntä](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
+4. Määritä seuraavat yksiköt. Lisätietoja: [Microsoft Dataversen virtuaaliyksikköjen käyttöönotto](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
-6. Ota **Ominaisuuksien hallinta** -työtilassa käyttöön seuraavat ominaisuudet:
+    - CompanyInfoEntity
+    - CurrencyEntity
+    - CustCustomerV3Entity
+    - DeliveryTermsEntity
+    - EcoResProductCategoryEntity
+    - EcoResReleasedProductV2Entity
+    - LogisticsAddressCityEntity
+    - LogisticsAddressCountryRegionTranslationEntity
+    - LogisticsAddressStateEntity
+    - PurchProcurementChargeCDSEntity
+    - SalesChargeCDSEntity
+    - TaxGroupEntity
+    - TaxItemGroupHeadingEntity
+    - VendVendorV2Entity
 
-      - (Esiversio) Sähköisen raportoinnin Dataverse -tietolähteet tukevat
-      - (Esiversio) Veropalvelun Dataverse-tietolähteiden tuki
-      - (Esiversio) Globalisaatio-ominaisuudet
+5. Määritä Regulatory Configuration Service (RCS). Avaa **Ominaisuuksien hallinta** -työtila ja ota käyttöön seuraavat ominaisuudet:
 
-5. Kirjaudu RCS-malliin vuokraajatiliä käyttäen.
-6. Siirry kohtaan **sähköinen raportointi** > **Liittyvät sovellukset**. 
-7. Lisää tietue valitsemalla **Uusi** ja lisää seuraavat kenttätiedot. 
+    - Sähköisen raportoinnin Dataverse-tietolähteiden tuki
+    - Veropalvelun Dataverse-tietolähteiden tuki
+    - Globalisaatio-ominaisuudet
 
-   - Anna nimi **Nimi**-kenttään.
-   - Valitse **Tyyppi**-kentässä **Dataverse**.
-   - Kirjoita **Sovellus**-kenttään Dataverse-URL-osoitteesi.
-   - Kirjoita **Vuokraaja**-kenttään vuokraajasi.
-   - Kirjoita **Mukautetun URL-osoitteen** kenttään Dataverse-URL-osoite ja liitä siihen teksti "/api/data/v9.1".
+6. Kirjaudu RCS-malliin vuokraajatiliä käyttäen.
+7. Siirry kohtaan **sähköinen raportointi** > **Liittyvät sovellukset**. 
+8. Lisää tietue valitsemalla **Uusi** ja lisää seuraavat kenttätiedot. 
 
-8. Valitse **Tarkista yhteys** ja viimeistele yhteysprosessi. 
+    - Anna nimi **Nimi**-kenttään.
+    - Valitse **Tyyppi**-kentässä **Dataverse**.
+    - Kirjoita **Sovellus**-kenttään Dataverse-URL-osoitteesi.
+    - Kirjoita **Vuokraaja**-kenttään vuokraajasi.
+    - Kirjoita **Mukautetun URL-osoitteen** kenttään Dataverse-URL-osoite ja liitä siihen teksti "/api/data/v9.1".
 
-   [![Tarkista yhteys -painike](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
+9. Valitse **Tarkista yhteys** ja viimeistele yhteysprosessi. 
 
-9. Siirry kohtaan **sähköinen raportointi** > **Verokonfiguraatiot** ja tuo verokonfiguraatiot kohteesta [Vero-konfiguraatiot](https://go.microsoft.com/fwlink/?linkid=2158352).
+    [![Tarkista yhteys -painike.](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
 
-   [![Verokonfiguraatiot-sivu, Verotietomallipuu](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
+10. Siirry kohtaan **sähköinen raportointi** > **Verokonfiguraatiot** ja tuo verokonfiguraatiot kohteesta [Vero-konfiguraatiot](https://go.microsoft.com/fwlink/?linkid=2158352).
 
-10. Siirry **verotettavaan tiedostomallin määritykseen** tai **Dataverse-mallimääritykseen**, jos käytät Microsoft-konfiguraatiota, ja valitse **Yhteydessä oleva sovellus** -kentästä tietue, jonka loit vaiheessa 7.
-11. Määritä **Mallin yhdistämisasetuksen oletusarvoksi** **Kyllä**.
+    [![Verokonfiguraatiot-sivu, Verotietomallipuu.](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
 
-   [![Mallimäärityksen sivu](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
+11. Siirry **verotettavaan tiedostomallin määritykseen** tai **Dataverse-mallimääritykseen**, jos käytät Microsoft-konfiguraatiota, ja valitse **Yhteydessä oleva sovellus** -kentästä tietue, jonka loit vaiheessa 7.
+12. Määritä **Mallin yhdistämisasetuksen oletusarvoksi** **Kyllä**.
+
+    [![Mallimäärityksen sivu.](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

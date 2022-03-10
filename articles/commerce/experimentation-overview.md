@@ -3,24 +3,23 @@ title: Kokeilut Dynamics 365 Commercessa
 description: Kokeilujen avulla voidaan luoda, muokata ja hallita sivun asettelua ja sisältökäsittelyjä sivustonmuodostimessa. Kattava kokeilutuki on otettu käyttöön sähköisissä kaupankäyntisivuissa ja sivulla olevissa kohteissa.
 author: sushma-rao
 ms.date: 10/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349325"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986538"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Kokeilut Dynamics 365 Commercessa
 Dynamics 365 Commercen kokeilujen avulla voi vahvistaa sähköisten kaupankäyntisivujen tehokkuutta koskevia hypoteeseja ja tehdä tietoihin perustuvia päätöksiä. Commerce tukee sivujen, moduulien ja osien A/B-testausta sekä antaa mahdollisuuden mitata sivustoon ehdotettujen muutosten vaikutusta.

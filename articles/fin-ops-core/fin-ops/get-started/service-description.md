@@ -2,19 +2,19 @@
 title: Finance and Operations -sovellusten palvelunkuvaus
 description: Tässä ohjeaiheessa esitetään Finance and Operations -sovellusten palvelunkuvaus.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825397"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952363"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten palvelunkuvaus
 
@@ -117,7 +117,7 @@ Finance and Operations -sovelluksia tarjotaan useilla eri Azure-alueilla ympäri
 ### <a name="countryregion-specific-considerations"></a>Maa- tai aluekohtaiset seikat
 
 - Säädellyissä teollisuus- tai kauppaorganisaatioissa toimivat asiakkaat, jotka harjoittavat liiketoimintaa sellaisten Ranskassa toimivien yritysten kanssa, joilta vaaditaan paikallista tietojen sijaintia, kannattaa tutustua aiheeseen [Finance and Operations Ranskassa](../../dev-itpro/deployment/france-local-deployment.md).
-- Asiakkaiden, jotka toimivat Kiinassa kannattaa tutustua aiheeseen [Finance and Operations 21Vianetin tarjoamana Kiinassa](../../dev-itpro/deployment/china-local-deployment.md).
+- Asiakkaiden, jotka toimivat Kiinassa kannattaa tutustua artikkeleihin [Azure Kiinassa -käsikirja](/azure/china/) ja [Finance and Operations 21Vianetin tarjoamana Kiinassa](../../dev-itpro/deployment/china-local-deployment.md).
 - Venäjällä toimivien asiakkaiden kannattaa tutustua aiheeseen [Venäjän henkilötietojen lokalisointilaki](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Yleinen tietosuoja-asetus (GDPR)
@@ -314,7 +314,7 @@ Microsoftin järjestelmäpalautuksen suunnitelmia ja menettelyjä tutkitaan jatk
 | Microsoft valmistelee Azuren yhdistettyyn palvelinkeskukseen toissijaisen ympäristön, kun ensisijainen tuotantoesiintymä otetaan käyttöön. Lisätietoja: [Liiketoiminnan jatkuvuus ja järjestelmäpalautus: Azuren yhdistetyt alueet](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft ottaa Azure SQL:n ja Azure blob-tallennustilan maantieteellisen päällekkäisyyden käyttöön, kun ensisijainen tuotantoesiintymä otetaan käyttöön. | None |
 | Microsoft ottaa automaattisen varmuuskopioinnin käyttöön Azuren SQL-tietokannoissa. | None |
-| <p>Käyttökatkoksen yhteydessä Microsoft märittää, onko asiakkaalle luotava vikasietoalue ja menetetäänkö tietoja. Tietojen menetys voi koskea enintään viittä sekuntia. Lisätietoja [Azuren SQL-tietokannan maantieteellinen palautus](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>Tietojen häviämisen tapauksessa Microsoft pyytää asiakkaan suostumusta vikasietoaluetta varten.</p> | Tietojen häviämisen tapauksessa asiakkaan voi olla tarpeen antaa kirjallinen suostumus vikasietoalueen käynnistämistä varten. |
+| <p>Käyttökatkoksen yhteydessä Microsoft märittää, onko asiakkaalle luotava vikasietoalue ja menetetäänkö tietoja. Asiakkaat voivat kokea tietojen menetystä jopa 15 minuuttia riippuen katkon luonteesta ja ajasta. | Tietojen häviämisen tapauksessa asiakkaan voi olla tarpeen antaa kirjallinen suostumus vikasietoalueen käynnistämistä varten. |
 | Kun vikasietoalue otetaan käyttöön, kulloinenkin palvelu toimii rajoitetussa tilassa. Päivitysylläpitoa ei voi käynnistää vikasietotilassa. | Asiakas ei voi pyytää pakettien käyttöönottoa tai esittää muita tavanomaisia ylläpitopyyntöjä vikasietotilassa. |
 | Kun palvelinkeskus tulee käyttöön, Microsoft palaa ensisijaisen Azure-alueen tuotantoesiintymään. Normaalit työvaiheet jatkuvat. | Asiakkaan voi olla tarpeen antaa suostumus tuotantoesiintymään palaamiseen ensisijaisella Azure-alueella. |
 
@@ -356,6 +356,7 @@ Microsoft on sitoutunut palvelun 99,9-prosenttiseen kuukausittaiseen käytettäv
 - **[Käyttöoikeusopas](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Tämän oppaan avulla voit oppia lisää Dynamics 365:n lisensoinnista.
 - **[Asiakastuki](https://dynamics.microsoft.com/support/)** – Hanki alan johtava tuki Dynamics 365 -sovelluksillesi.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Hallitse sovelluksen elinkaarta ja siirry koti ennustettavissa olevia, toistettavia ja korkealuokkaisia käyttöönottoja.
+- **[Dynamics 365 -käyttöönotto-opas](https://aka.ms/D365ImplementationGuideFlip)** - Dynamics 365 -käyttöönotto-opas dokumentoi aikatestatut Success by Design -periaatteet ja antaa ohjeita Dynamics 365 -ratkaisujen suunnitteluun, kehittämiseen, testaamiseen ja käyttöönottoon.
 
 ## <a name="definitions"></a>Määritelmät
 
@@ -428,6 +429,10 @@ Microsoftin verkkopalveluihin sovellettava palvelutasosopimus. Lisätietoja: [Pa
 ### <a name="service-update"></a>Palvelupäivitys
 
 Microsoft huoltaa Finance and Operations -ympäristöjä jatkuvasti palvelupäivitysten kautta. Asiakkaat määrittävät oman palvelupäivityskalenterinsa liiketoiminnan tarpeiden mukaan. Lisätietoja: [Yhden version palvelupäivitykset](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Kehys, joka ohjaa toteutusta järjestelmällisesti arvioinneilla kriittisissä vaiheissa, jotta voidaan varmistaa Dynamics 365 -ratkaisun optimaalinen arkkitehtuuri, suojaus, suorituskyky ja käyttäjäkokemus.
 
 ### <a name="user"></a>Käyttäjä
 

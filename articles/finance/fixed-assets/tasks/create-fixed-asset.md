@@ -2,11 +2,9 @@
 title: Luo käyttöomaisuuserä
 description: Tässä ohjeaiheessa käsitellään uuden käyttöomaisuustietueen luontia käyttöomaisuuden luettelosivulta.
 author: moaamer
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab330c604b2485687544a7d8b3eef3a652fa2069
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bf6e74253d2cf4150914fcb8bcc51aa2f32c0435c563b677def40115e0163fa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758122"
 ---
 # <a name="create-a-fixed-asset"></a>Luo käyttöomaisuuserä
 
@@ -54,3 +52,6 @@ Jos Excel-apuohjelman mallissa tai tiedonhallinnassa ei määritetty käyttöoma
 
 > [!WARNING]
 > Käyttöomaisuustietuetta ei poisteta, jos tapahtumat kirjattiin siihen liittyvään kirjaan tai jos juuri luotu käyttöomaisuuserä syötetään kirjauskansioriville, mutta sitä ei kirjata. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

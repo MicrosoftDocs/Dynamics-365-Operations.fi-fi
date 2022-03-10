@@ -2,11 +2,9 @@
 title: Valmistele yritys konsolidointiprosessia varten
 description: Konsolidoinnin aikana kerätään tapahtumia useilta yrityksen tileiltä yhteen yrityksen tilien joukkoon. Tässä ohjeaiheessa kerrotaan, miten yritys valmistellaan konsolidointia varten.
 author: jinniew
-manager: AnnBe
 ms.date: 10/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 07988e71276c6439e392bce2087f3a8923f5f40b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a1ffbf79cdccab457b1aee1bc0f1d963bca49b3e390187c6be5da475f278a3d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230199"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720499"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Valmistele yritys konsolidointiprosessia varten
 
