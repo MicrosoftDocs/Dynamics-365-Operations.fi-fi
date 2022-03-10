@@ -1,8 +1,8 @@
 ---
 title: Työntekijän itsepalvelutyöntilan nimen muuttaminen
 description: Tässä ohjeaiheessa käsitellään työntekijän itsepalvelutyötilan näyttönimen muuttamisesta Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-ms.date: 07/09/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25b5b1d94dc6379516fa74819499fe6792ff90230222a398bebfa427ad7ee25c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31e8c3e572e0f95f4331fbd858150897c9ed0105
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763007"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070724"
 ---
-# <a name="change-employee-self-service-workspace-name"></a>Työntekijän itsepalvelutyöntilan nimen muuttaminen
+# <a name="change-employee-self-service-workspace-name"></a>Työntekijän itsepalvelutyötilan nimen muuttaminen
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

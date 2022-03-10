@@ -2,11 +2,9 @@
 title: Kuormituksen mallipohjat
 description: Tässä aiheessa käsitellään kuormamallien määrittämistä ja kuormamallin liittämistä uuteen kuormaan.
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate
 audience: Application User
@@ -16,14 +14,16 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0a4070a1dd5d53bb502ba2ab0c91dbdc90ded34d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 694860d1ade74f9fd51a8ac579aa69fe7fb673a8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005049"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569910"
 ---
 # <a name="load-templates"></a>Kuormituksen mallipohjat
+
+[!include [banner](../../includes/banner.md)]
 
 Kun luot uuden kuorman, voi määrittää kuormamallin. Kuormamallissa on tietoja välineistä ja mitoista, kuten kuorman korkeudesta, leveydestä, syvyydestä ja tilavuudesta.
 
@@ -53,3 +53,6 @@ Tässä aiheessa käsitellään kuormamallien määrittämistä ja kuormamallin 
 1. Valitse toimintoruudun **Tarjonta ja kysyntä** -välilehden **Lisää**-ryhmässä kohta **Uuteen kuormaan**.
 1. Valitse **Kuormamalli**-valintaikkunan **Kuorman mallitunnus** -kentässä käytettävä malli.
 1. Käytä mallia valitsemalla **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

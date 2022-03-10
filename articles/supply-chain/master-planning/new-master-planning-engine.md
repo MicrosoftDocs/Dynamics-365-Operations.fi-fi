@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728576"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
 
@@ -65,7 +65,7 @@ Kun tarvittavat toiminnot ovat käytettävissä, Microsoft antaa lisäaikaa poik
 
 Seuraavassa vuokaaviossa on yhteenveto tämän ohjeaiheen tiedoista, jotta voit nopeasti selvittää, haluatko pyytää poikkeusta. Jos haluat pyytää poikkeusta, täytä ja lähetä [Suunnittelun optimointi -siirto ja poikkeuslomake](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-![Poikkeuskaavio](media/exception-diagram.png "Poikkeuskaavio")
+![Poikkeuskaavio.](media/exception-diagram.png "Poikkeuskaavio")
 
 > [!NOTE]
 > Voit pyytää poikkeusta vain vuokraajille, jotka sisältävät tai sisällyttävät tuotantoympäristön– ei vain vuokralaisia, joilla on vain eri ympäristöjä. Jos suunnittelun optimoinnin poikkeusvirhe on poistettava käytöstä IaaS (infrastruktuuri palveluna) -eristysympäristössä, suorita [eristysympäristöissä](#faq-sandbox) oleva SQL-kysely.

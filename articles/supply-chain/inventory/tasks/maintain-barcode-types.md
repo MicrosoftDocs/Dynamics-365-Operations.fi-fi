@@ -1,48 +1,49 @@
 ---
-title: Ylläpidä viivakoodin tyyppejä
+title: Viivakoodityyppien ylläpito
 description: Tässä menettelyssä käsitellään, miten määritetään uusi viivakoodimääritys, jota voidaan sitten käyttää keräilyluetteloraportin osana.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BarcodeSetup, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 979726a1d094146b546bbc6d31963367de2c59f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b689d1fc85d59ac87efa1903fd7122ae5ff011da
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427332"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571110"
 ---
-# <a name="maintain-barcode-types"></a>Ylläpidä viivakoodin tyyppejä
+# <a name="maintain-bar-code-types"></a>Viivakoodityyppien ylläpito
 
 [!include [banner](../../includes/banner.md)]
 
 Tässä menettelyssä käsitellään, miten määritetään uusi viivakoodimääritys, jota voidaan sitten käyttää keräilyluetteloraportin osana. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi. Jos käytössä on USMF, voit käyttää esimerkiksi esillä olevia arvoja. Yleensä varastopäällikkö tekee nämä tehtävät.
 
-1. Valitse Viivakoodit.
-2. Valitse Uusi.
-3. Kirjoita Viivakoodiasetukset-kenttään arvo.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Viivakoodityyppi-kentässä vaihtoehto.
-    * Jos käytössä on USMF, valitse Koodi 39.  
-6. Lisää Koko-kenttään numero.
-7. Lisää Enimmäispituus-kenttään numero.
-8. Valitse Tallenna.
-9. Sulje sivu.
-10. Valitse Varasto ja varastonhallinnan parametrit.
-11. Anna tai valitse Viivakoodi-kentässä arvo.
+1. Valitse **Viivakoodit**.
+1. Valitse **Uusi**.
+1. Kirjoita **Viivakoodiasetukset**-kenttään arvo.
+1. Kirjoita **Kuvaus**-kenttään arvo.
+1. Valitse **Viivakoodityyppi**-kentässä vaihtoehto.
+    * Jos käytössä on USMF, valitse Koodi 39.
+1. Määritä **Muodon tunnus** -kentässä viivakoodin muodon yksilöivä tunnus. Viivakoodin muotoja käytetään viivakoodien luomiseen ja tunnistamaan myyntipistejärjestelmään luettavat viivakoodit nopeasti. Lisätietoja: [Viivakoodin muotojen määritys](../../../commerce/set-up-bar-code-masks.md).
+1. Lisää **Koko**-kenttään numero.
+1. Anna **Enimmäispituus**-kentässä numero.
+1. Valitse **Tallenna**.
+1. Sulje sivu.
+1. Valitse **Varasto ja varastonhallinnan parametrit**.
+1. Anna tai valitse **Viivakoodiasetukset**-kentässä arvo.
     * Valitse aiemmin luodut viivakoodiasetukset. Ota kuitenkin huomioon, että viivakoodimuodon on vastattava prosessissa käytetyn tietuetyypin yksilöllistä tunnistetta. Esimerkiksi keräilyreittien viivakoodimuodon on vastattava keräilyreittiviitteen muotoa, joka on yleensä numerosarja.  
-12. Valitse Tallenna.
-13. Sulje sivu.
+1. Valitse **Tallenna**.
+1. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

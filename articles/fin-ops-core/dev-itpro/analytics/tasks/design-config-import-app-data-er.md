@@ -2,7 +2,6 @@
 title: Suunnittele konfiguraatioita jäsentääksesi saapuvia asiakirjoja
 description: Tässä menettelyssä näytetään, miten sähköisen raportoinnin (ER) konfiguraatiot suunnitellaan saapuvan sähköisen asiakirjan jäsentämistä varten.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7235d75aee3b8fdf39492cfbc1760bf6eae4b82e
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 8068850ee143540ff9f3b6222485d3ecd2a2a82020063f34cfd7b5a69826eda3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756378"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Suunnittele konfiguraatioita jäsentääksesi saapuvia asiakirjoja
 

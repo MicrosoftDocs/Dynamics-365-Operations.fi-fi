@@ -1,12 +1,10 @@
 ---
 title: Ylläpidon tarkistuslistat
 description: Tässä ohjeaiheessa kuvataan ylläpidon tarkistuslistoja resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderChecklist, EntAssetMobileWorkOrderLineChecklistDetails
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01b05b9df81d8d812d107a1c5b91ba368e9e737e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9ece9abcbaed0a1881f6b6a0d1b2357bc87ef181636a37564709f62c6aa38475
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760559"
 ---
 # <a name="maintenance-checklists"></a>Ylläpidon tarkistuslistat
 
@@ -77,7 +75,7 @@ Ylläpidon tarkistusluettelot luodaan ylläpitotyön tyypin määrityksestä ole
 
 Alla olevassa kuvassa näkyy esimerkki ylläpidon tarkistuslistasta.
 
-![Kuva 1](media/14-work-orders.png)
+![Kuva 1.](media/14-work-orders.png)
 
 
 

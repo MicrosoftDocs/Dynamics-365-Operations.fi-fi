@@ -3,25 +3,24 @@ title: Sähköisen kaupankäynnin sivuston yleiskuvaus
 description: Tässä aiheessa on yleiskatsaus verkkokauppasivustojen tuesta Microsoft Dynamics 365 Commercessa.
 author: bicyclingfool
 ms.date: 11/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022469"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984566"
 ---
 # <a name="e-commerce-site-overview"></a>Sähköisen kaupankäynnin sivuston yleiskuvaus
 
@@ -47,27 +46,27 @@ Sähköisen kaupankäynnin sivuston alustuksen aikana sinulta kysytään toimial
 
 Kun käynnistät Commerce sivuston muodostimen LCS:ista, **Sivustot**-sivu tulee näkyviin. Tämä sivu sisältää kaksi esimääritettyä sivustoja, **oletus** ja **fabrikam**, kuten seuraavassa kuvassa on esitetty.
 
-![Sivustot-sivu Commercen sivuston muodostimessa](media/e-commerce-site-01.png)
+![Sivustot-sivu Commercen-sivuston luontiohjelmassa.](media/e-commerce-site-01.png)
 
 Kun valitset jommankumman näistä sivustoista, sinua kehotetaan valitsemaan toimialueen nimi, oletusverkkokauppakanava, tuettu kieli valitulle kanavalle ja polku. Jos käytössä on vain yksi kanava, voit jättää polun tyhjäksi. Lisää verkkokauppakanavia tai kieliä voi määrittää myöhemmin Commercen sivuston muodostimessa. Jokainen lisäkanava tai -kieli edellyttää yksilöllistä polkua. Sinulla on esimerkiksi kaksi verkkokanavaa, jotka liittyvät yhteen sivustoon, ja sivuston toimilueen nimi on `www.fabrikam.com`. Tässä tapauksessa yhden kanavan polku voi olla oletusarvo, jolla ei ole polkua ( `https://www.fabrikam.com`), ja toinen kanava voidaan määrittää uudelle polulle, kuten **site2**, jolla on URL-osoite `https://www.fabrikam.com/site2`. Seuraavassa kuvassa näkyy esimerkki sivuston alustuksen valintaikkunasta Commercen sivuston muodostimessa.
 
-![Sivuston alustaminen -valintaikkuna Commercen sivuston muodostimessa](media/e-commerce-site-02.png)
+![Sivuston alustaminen -valintaikkuna Commerce-sivuston luontiohjelmassa.](media/e-commerce-site-02.png)
 
 **Sivustot**-sivulla on myös **Uusi sivusto** -painike. Valintaikkuna, joka tulee näkyviin, kun valitset tämän painikkeen, muistuttaa sivuston alustaminen -valinta ikkunaa, mutta sen avulla luodaan uusi sivusto. Uudet sivustot ovat tyhjiä. Ne eivät sisällä samoja oletusmalleja, katkelmia, sivuja ja kuvia, jotka ovat **oletus**- ja **fabrikam**-sivustojen mukana. Voit kuitenkin halutessasi avata tukipyynnön ja pyytää, että oletussisällön kopio lisätään uuteen tyhjään sivustoon. Katso lisätietoja kohdasta [Luo sähköisen kaupankäynnin sivusto](create-ecommerce-site.md).
 
 Kun uusi sivusto on alustettu, Commercen sivuston muodostimen **Aloitus**-sivu tulee näkyviin. Tämä sivu sisältää linkkejä yleisiin toimiin ja ohjesisältöön, kuten seuraavassa kuvassa on esitetty.
 
-![Commercen sivuston muodostimen Aloitus-sivun linkit](media/e-commerce-site-03.png)
+![Commerce-sivuston luontiohjelman Aloitus-sivun linkit.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Verkkokauppakanavien muokkaaminen tai verkkokauppakanavien lisääminen sähköisen kaupankäynnin sivustoon
 
 Kun olet luonut sähköisen kaupankäynnin sivuston, voit vaihtaa kanavan, johon se liittyy, noudattamalla ohjeita kohdassa [Sähköisen kaupankäynnin sivuston liittäminen online-kanavaan](associate-site-online-store.md). Seuraavan kuvan esimerkissä näkyy, miten kanavan toimintayksikön numeroa (OUN) voidaan muuttaa **Kanavat**-sivulla (**Sivuston asetukset \> Kanavat**). Kun olet tehnyt muutoksen, muista valita **Tallenna ja julkaise**. Näin varmistat, että muutos julkaistaan.
 
-![Kanavat-sivu Commercen sivuston muodostimessa](media/e-commerce-site-04.png)
+![Kanavat-sivu Commerce-sivuston luontiohjelmassa.](media/e-commerce-site-04.png)
 
 Voit lisätä uusia kanavia valitsemalla **Lisää kanava**. Jos haluat lisätä kanavalle uusia kieliä, valitse kanava ja valitse sitten **Lisää kielialue** näkyviin tulevassa Kanava-valintaikkunassa. Ennen kuin kielialaueita voi näkyä valintaikkunassa, ne pitää esimäärittää Internet-kauppakanavalle Commerce Headquarters -sovelluksessa.
 
-![Kanava-valintaikkuna Commercen sivuston muodostimessa](media/e-commerce-site-05.png)
+![Kanava-valintaikkuna Commerce-sivuston luontiohjelmassa.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Azure B2C -vuokraajan määrittäminen
 

@@ -13,15 +13,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821534"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567556"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-päivämäärä, fyysinen arvo ja merkintä
 
@@ -55,7 +55,9 @@ Tässä esimerkissä nimikemalliryhmää ei ole merkitty sisällyttämään fyys
 
 Uusi kustannushinnan käyttökeskiarvo 15,00 USD on laskettu taloudellisesti päivitettyjen tapahtumien mukaan. 
 
-Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutusta, kun **Sisällytä fyysinen arvo** -asetusta ei käytetä. ![LIFO-päivämäärä - fyysinen arvo sisällytetään](./media/lifodatewithoutincludephysicalvalue.gif) 
+Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutusta, kun **Sisällytä fyysinen arvo** -asetusta ei käytetä. 
+
+![LIFO-päivämäärä ilman Sisällytä fyysinen arvo -asetusta.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -90,7 +92,9 @@ Seuraavassa on kuvattu näitä tapahtumia:
 
 Uusi kustannushinnan käyttökeskiarvo 20,00 USD on laskettu taloudellisesti päivitettyjen tapahtumien mukaan. 
 
-Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutusta, kun **Sisällytä fyysinen arvo** -asetus on käytössä. ![LIFO-päivämäärä - fyysinen arvo sisällytetään](./media/lifodatewithincludephysicalvalue.gif) 
+Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutusta, kun **Sisällytä fyysinen arvo** -asetus on käytössä. 
+
+![LIFO-päivämäärä käyttäen Sisällytä fyysinen arvo -asetusta.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -136,7 +140,7 @@ Seuraavassa on kuvattu näitä tapahtumia:
 
 Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. 
 
-Seuraavassa on kuvattu LIFO-varastomallin vaikutusta, kun käytetään varastostaottojen ja vastaanottojen välistä merkintää. ![LIFO-päivämäärä merkinnän kanssa](./media/lifodatewithmarking.gif) 
+Seuraavassa on kuvattu LIFO-varastomallin vaikutusta, kun käytetään varastostaottojen ja vastaanottojen välistä merkintää. ![LIFO-päivämäärä merkinnän kanssa.](./media/lifodatewithmarking.gif) 
 
 **Kaavion selite**
 

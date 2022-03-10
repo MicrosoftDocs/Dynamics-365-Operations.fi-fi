@@ -2,16 +2,13 @@
 title: Alennusten näyttäminen myyntipisteessä
 description: Tässä ohjeaiheessa kerrotaan, miten myyjät saavat Microsoft Dynamics 365 Commercesta tietoja kampanjoista ja niiden käyttämisestä ristiinmyynti- ja lisämahdollisuuksista.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731664"
 ---
 # <a name="show-discounts-in-pos"></a>Alennusten näyttäminen myyntipisteessä
 
@@ -36,7 +33,7 @@ Kampanjat ovat tärkeä osa ostopäätöksiä tekevien asiakkaiden motivoinnissa
 
 Commerce sisältää toiminnon, jonka nimi on Näytä kaikki alennukset. Tämä toiminto näyttää kaikki myymälässä parhaillaan suoritettavat alennukset. Näytä kaikki alennukset -toiminto voidaan yhdistää painikkeeseen myyntipisteessä. Tämä painike voidaan lisätä **aloitussivulle** tai **Tapahtuma**-sivulle. Seuraavassa kuvassa on esimerkki avoinna olevasta **Kaikki alennukset** -sivusta.
 
-![Kaikki alennukset -sivu](./media/View_all_discounts.png "Kaikki alennukset -sivu")
+![Kaikki alennukset -sivu.](./media/View_all_discounts.png "Kaikki alennukset -sivu")
 
 Jos haluat näyttää alennukset, järjestelmä etsii kaikki alennukset, jotka vastaavat yhtä tai useampaa seuraavista ehdoista:
 
@@ -64,8 +61,11 @@ Seuraavissa kuvissa näkyy logiikka, joka määrittää, mitkä alennukset näyt
 
 Seuraavassa kuvassa on logiikka, jota käytetään alennuksen samanaikaisuuden ohjausobjektiksi on määritetty **Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken**.
 
-![Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa](./media/Model_1.png "Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa.").
+![Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa.](./media/Model_1.png "Logiikka Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken -kohdassa.").
 
 Seuraavassa kuvassa on logiikka, jota käytetään alennuksen samanaikaisuuden ohjausobjektiksi on määritetty **Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken**.
 
-![Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa](./media/Model_2.png "Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa.").
+![Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa.](./media/Model_2.png "Logiikka Vain paras hinta prioriteetissa, aina yhdistelmä prioriteettien kesken -kohdassa.").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

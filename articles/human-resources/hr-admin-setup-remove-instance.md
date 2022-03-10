@@ -1,33 +1,32 @@
 ---
 title: Poista esiintymä
-description: Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessista.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/07/2020
+description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessista.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418363"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393494"
 ---
 # <a name="remove-an-instance"></a>Poista esiintymä
 
-Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessista.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Tässä aiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessia.
 
 ## <a name="remove-a-test-drive-environment"></a>Testiympäristön poistaminen
 
@@ -42,7 +41,7 @@ Aiemmin luotu testausympäristö poistetaan. Kun se on poistettu, voit tilata uu
 
 ## <a name="remove-a-production-environment"></a>Tuotantoympäristön poistaminen
 
-Artikkelissa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. 
+Tässä aiheessa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. 
 
 Koska yksi Human Resources -ympäristö toimii yhden Power Apps-ympäristön sisällä, huomioon on otettava kaksi vaihtoehtoa. Ensimmäinen vaihtoehto poistaa koko Power Apps-ympäristön, ja toinen vaihtoehto vain Human Resources -sovelluksen. Ensimmäinen vaihtoehto on parempi, jos olet luonut Power Apps-ympäristön nimenomaan Human Resourcesin valmistelua varten ja olet vasta aloittanut käyttöönoton tai sinulla ei ole muodostettuja integraatioita. Toinen vaihtoehto on parempi, kun olet muodostanut Power Apps -ympäristön, johon täytettyjä monipuolisia tietoja hyödynnetään Power Apps- ja Power Automate -ratkaisuissa.
 
@@ -81,7 +80,10 @@ Voit palauttaa ympäristön seuraavasti:
 
 1. Seuraa ohjeita kohdassa [Power Apps -ympäristön palauttaminen](/power-platform/admin/recover-environment.md).
 
-2. Ota yhteyttä tukeen, jos haluat palauttaa Human Resources -ympäristön. Lisätietoja on kohdassa [Pyydä tukea](hr-admin-troubleshooting-support.md).
+2. Ota yhteyttä tukeen, jos haluat palauttaa Human Resources -ympäristön. Lisätietoja on kohdassa [Pyydä tukea](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Power Apps -ympäristöjä säilytetään vain seitsemän päivää poiston jälkeen. Ympäristö on palautettava seitsemän päivän kuluessa.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

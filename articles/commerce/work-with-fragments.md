@@ -2,11 +2,9 @@
 title: Katkelmien käyttäminen
 description: Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: phinneyridge
-manager: annbe
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8436fd3621e94fb761c076454423fe9842306c78
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982235"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090741"
 ---
 # <a name="work-with-fragments"></a>Katkelmien käyttäminen 
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Osat mahdollistavat koko sivustossa uudelleenkäytettävien moduulin määritysten keskitetyn muokkauskokemuksen. Esimerkiksi ylä- ja alatunnisteet sekä ilmoituspalkit määritetään usein osiksi, koska ne jaetaan useille sivuille. Voit ajatella osia pienoisverkkosivuina, jotka voidaan lisätä sivuston muihin sivuihin. Osilla on oma elinkaarensa. Toisin sanoen ne luodaan, päivitetään, niihin viitataan ja ne poistetaan yksittäisinä entiteetteinä muokkaustyökaluissa.
 
@@ -49,7 +45,7 @@ Kaikki paikat, joihin osa lisätään, ovat viittauksia luotuun, keskitettyyn he
 
 Seuraavassa kuvassa näkyy, kuinka osia voi käyttää jaettujen moduulin määritysten keskitetyssä muokkauksessa sähköisen kaupankäynnin sivustossa.
 
-![Kuvassa näkyy, kuinka osia voi käyttää jaettujen moduulin määritysten keskitetyssä muokkauksessa sähköisen kaupankäynnin sivustossa](./media/fragment-figure1.png)
+![Kuvassa näkyy, kuinka osia voidaan käyttää jaettujen moduulin määritysten keskitetyssä muokkauksessa sähköisen kaupankäynnin sivustossa.](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Osan luominen
 
@@ -66,7 +62,7 @@ Voit muuntaa aiemmin määritetyn moduulin uudelleenkäytettäväksi osaksi seur
 1. Anna **Tallenna osana** -valintaikkunassa osan nimi.
 1. Valitse **OK**, jos haluat tallentaa moduulin määrityksen osana, joka voidaan lisätä muille sivuille.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Luo uusi osa
 
@@ -77,7 +73,7 @@ Uusi osa luodaan Commercen sivustonmuodostimessa seuraavasti:
 1. Valitse fragmentin moduulityyppi.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Kun valitset yleisen säilömoduulin tyypin, osan päivittäminen ja määrittäminen sujuu joustavasti myöhemmin.
 
@@ -92,14 +88,14 @@ Osa lisätään sivulle Commercen sivustonmuodostimessa seuraavasti:
 1. Valitse vasemmassa jäsennysruudussa tai suoraan visuaalisessa sivunmuodostimessa säilö tai paikka, johon alimoduulit voidaan lisätä.
 1. Valitse kolme pistettä (**...**) säilön tai paikan nimen vieressä.  Vaihtoehtoisesti voit valita plusmerkin (**+**), jos visuaalinen sivunmuodostin on käytössä.  
 1. Valitse **Lisää osa**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Jos säilö tai paikka ei tue uusia alimoduuleja, **Lisää osa** -vaihtoehto ei ole käytettävissä.
     
 1. Hae **Lisää osa** -valintaikkunassa lisättävä osa ja valitse se. Jos käytettävissä olevia osia ei ole näkyvissä, sinun on ehkä ensin luotava osa moduulityypistä, jota valittu säilö tai paikka tukee.
 1. Valitse haluamasi fragmentti lisätäksesi sen sivullasi olevaan säilöön tai paikkaan.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Moduulit, jotka sallitaan säilössä tai paikassa, määräytyvät sivun mallin tai moduulien omien määritysten mukaan.
@@ -126,6 +122,20 @@ Osaa muokataan Commercen sivustonmuodostimessa seuraavasti:
 
 Voit muokata osaa myös valitsemalla sen sivulla, mallissa tai pääosassa ja valitsemalla sitten **Muokkaa osaa** -kohdan oikeanpuoleisessa ominaisuusruudussa.
 
+### <a name="rename-a-fragment"></a>Katkelman nimeäminen uudelleen
+
+Olemassa oleva katkelma nimetään uudelleen sivustonmuodostimessa seuraavasti.
+
+1. Valitse vasemmassa siirtymisruudussa **Katkelmat**.
+1. Valitse sen katkelman nimi, jonka haluat nimetä uudelleen.
+1. Aloita katkelman muokkaaminen valitsemalla **Muokkaa**. Huomaa, että katkelmaa ei voi muokata, jos joku muu on jo muokkaamassa katkelmaa.
+1. Valitse katkelman nimen vieressä oleva kynäsymboli katkelman ominaisuusruudusta.
+1. Muokkaa katkelman nimeä tarpeen mukaan.
+1. Vahvista nimenmuutos valitsemalla valintamerkki.
+1. Valitse **Viimeistele muokkaus**.
+
+Voit nimetä katkelman myöhemmin uudelleen muokkaamalla sivua ja valitsemalla sitten kynäsymbolin ominaisuusruudussa katkelman nimen vierestä.
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
@@ -135,3 +145,6 @@ Voit muokata osaa myös valitsemalla sen sivulla, mallissa tai pääosassa ja va
 [Esimääritettyjen asettelujen käyttö](work-with-layouts.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

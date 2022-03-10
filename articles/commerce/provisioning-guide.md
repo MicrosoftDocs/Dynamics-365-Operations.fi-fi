@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 19cedf01d1b916de785454d55448f41d1f5db1df
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777497"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön valmisteleminen
 
@@ -76,7 +76,7 @@ Noudata seuraavia vaiheita luodaksesi uuden projektin LCS:ssä.
 
 ### <a name="add-the-azure-connector"></a>Azure-yhdistimen lisääminen
 
-Lisää Azure Connector LCS-projektiin kohdassa [Azure Resource Manager (ARM) -perehdytyksen suorittaminen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding) olevien ohjeiden mukaan.
+Lisää Azure Connector LCS-projektiin kohdassa [Azure Resource Manager (ARM) -perehdytyksen suorittaminen](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md) olevien ohjeiden mukaan.
 
 ### <a name="deploy-the-environment"></a>Käyttöönottoympäristö
 
@@ -90,16 +90,16 @@ Määritä ympäristö näiden ohjeiden avulla.
 1. Valitse **Sovelluksen versio** -kentässä uusin versio. Jos sinulla on erityinen tarve valita jokin muu sovellusversio kuin uusin versio, älä valitse vanhempaa versiota kuin **10.0.14.**
 1. Käytä **Käyttöympäristön versio** -kentässä käyttöympäristö versiota, joka valitaan automaattisesti valitsemaasi sovellusversioon. 
 
-    ![Sovelluksen ja ympäristön versioiden valitseminen](./media/project1.png)
+    ![Sovelluksen ja ympäristön versioiden valitseminen.](./media/project1.png)
 
 1. Valitse **Seuraava**.
 1. Valitse **Esittely** ympäristötopologiaksi.
 
-    ![Ympäristötopologia 1 valitseminen](./media/project2.png)
+    ![Ympäristötopologia 1 valitseminen.](./media/project2.png)
 
 1. Anna ympäristön nimi **Ympäristön käyttöönotto** -sivulla. Älä muuta Lisäasetukset-kohtaa.
 
-    ![Ympäristön käyttöönotto -sivu](./media/project4.png)
+    ![Ympäristön käyttöönotto -sivu.](./media/project4.png)
 
 1. Säädä VM:n kokoa tarpeen mukaan. (Suosittelemme VM:n varastointiyksikköä \[SKU\] **D13 v2**.)
 1. Tarkista hinnoittelu- ja lisensointiehdot ja valitse sitten valintaruutu, jos hyväksyt ne.
@@ -180,9 +180,9 @@ Tietoja Commercen arviointiympäristön valmistelu- ja määritysprosessin jatka
 
 [Dynamics 365 Commerce -arviointiympäristön usein kysytyt kysymykset](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (pilvi)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (pilvi)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 

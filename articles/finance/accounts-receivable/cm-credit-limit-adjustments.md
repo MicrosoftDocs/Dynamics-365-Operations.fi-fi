@@ -1,26 +1,23 @@
 ---
 title: Luottorajan oikaisut
 description: Tässä ohjeaiheessa käsitellään luottorajan oikaisujen määrittämistä ja lisäämistä.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d55a7c5e24213f70a1b71f89691f0e5be8c36f10
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4442736"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753895"
 ---
 # <a name="credit-limit-adjustments"></a>Luottorajan oikaisut 
 
@@ -124,3 +121,6 @@ Kun olet luonut luottorajan oikaisurivit, voit kirjata merkinnät ja päivittä�
 
 > [!NOTE]
 > **Luottorajan oikaisut** -työnkulkua luotaessa työnkulku määritetään siten, että oikaisut kirjataan automaattisesti sen jälkeen, kun rivit on hyväksytty. Työnkulkuun tarvitsee sisällyttää vain **Kirjaa kirjauskansio automaattisesti** -tehtävä.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.12. (elokuu 2020)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.12 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 000b82e9317e3d0288f1020f9a245e48355b929f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 89959095eb64c66e92c9d93d0a3f4caabe7d14bf7121683a7d35d3719a3e36ad
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005299"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728600"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.12. (elokuu 2020)
 
@@ -35,25 +33,25 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin 
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
+Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
-- [Työkortin kosketusnäytön lukitseminen desinfiointia varten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - Lisätietoja on kohdassa [Työkorttien määrittäminen laitteita varten](../production-control/config-job-card-device.md).
+- [Työkortin kosketusnäytön lukitseminen desinfiointia varten](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - Lisätietoja on kohdassa [Työkorttien määrittäminen laitteita varten](../production-control/config-job-card-device.md).
 
-- [Kerää tuotevariantit ja jäljitysdimensiot varastosovelluksessa kuormitusnimikkeen vastaanoton aikana](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - Lisätietoja on kohdassa [Mobiililaitteiden määrittäminen varastotyötä varten](../warehousing/configure-mobile-devices-warehouse.md).
+- [Kerää tuotevariantit ja jäljitysdimensiot varastosovelluksessa kuormitusnimikkeen vastaanoton aikana](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - Lisätietoja on kohdassa [Mobiililaitteiden määrittäminen varastotyötä varten](../warehousing/configure-mobile-devices-warehouse.md).
 
 - Kustannuslaskentataso (uusi tuoterakennetaso)<br> - Lisätietoja on kohdassa [Kustannuslaskentataso](../cost-management/cost-calculation-level.md).
 
-- [Dynamics 365 Supply Chain Managementin asiakasportaali](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - Lisätietoja on kohdassa [Dynamics 365 Supply Chain Managementin asiakasportaalin yleiskatsaus](../sales-marketing/customer-portal-overview.md).
+- [Dynamics 365 Supply Chain Managementin asiakasportaali](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> - Lisätietoja on kohdassa [Dynamics 365 Supply Chain Managementin asiakasportaalin yleiskatsaus](../sales-marketing/customer-portal-overview.md).
 
-- [IoT intelligence -perusoivalluksia](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Lisätietoja on kohdassa [IoT Intelligence -aloitussivu](../iot/iot-intelligence-home-page.md).
+- [IoT intelligence -perusoivalluksia](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Lisätietoja on kohdassa [IoT Intelligence -aloitussivu](../iot/iot-intelligence-home-page.md).
 
-- [Rekisterikilven vastaanoton parannukset varastosovelluksessa (jatkuu)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Lisätietoja on kohdassa [Rekisterikilven vastaanotto varastosovelluksen avulla](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Rekisterikilven vastaanoton parannukset varastosovelluksessa (jatkuu)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Lisätietoja on kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen avulla](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Fyysisen varastoinnin mobiilisovelluksen laajamittainen käyttöönotto](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Lisätietoja on kohdassa [Varastosovelluksen asentamisen ja määrittämisen yleiskatsaus](../warehousing/install-configure-warehousing-app.md).
+- [Fyysisen varastoinnin mobiilisovelluksen laajamittainen käyttöönotto](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Lisätietoja on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md).
 
-- [Varastonhallinnan käytettävissä olevan varaston merkintöjen siivoustyön enimmäissuoritusaika](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Lisätietoja on kohdassa [Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö](../warehousing/onhand-cleanup.md).
+- [Varastonhallinnan käytettävissä olevan varaston merkintöjen siivoustyön enimmäissuoritusaika](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Lisätietoja on kohdassa [Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö](../warehousing/onhand-cleanup.md).
 
-- [Suunnittelun optimoinnin tukiosto kauppasopimuksille](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Lisätietoja on kohdassa [Pääsuunnittelu ja ostokauppasopimukset](../master-planning/planning-optimization/purchase-trade-agreement.md).
+- [Suunnittelun optimoinnin tukiosto kauppasopimuksille](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Lisätietoja on kohdassa [Pääsuunnittelu ja ostokauppasopimukset](../master-planning/planning-optimization/purchase-trade-agreement.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -69,7 +67,7 @@ Saat lisätietoja version 10.0.12 virheenkorjauksista päivityksissä kirjautuma
 
 Haluatko tietoja tulevien ja juuri julkaistujen yrityssovellustemme tai -ympäristöjemme ominaisuuksista?
 
-Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
+Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](/dynamics365-release-plan/2020wave1/index). Olemme koonneet kaikki tarvittavat tiedot yhteen asiakirjaan, jota voit käyttää suunnittelun apuna.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
@@ -81,3 +79,6 @@ Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](https:/
 Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,15 +12,17 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830759"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778254"
 ---
 # <a name="work-split"></a>Työn jako
+
+[!include [banner](../includes/banner.md)]
 
 Työnjakotoiminnolla voidaan jakaa suuret työtunnukset (eli useita rivejä sisältävät työtilaukset) useiksi pieniksi työtunnuksiksi, jotka voidaan sitten määrittää useille varastotyöntekijöille. Tällä tavoin useat varastotyöntekijät voivat keräillä samaa työn luontinumeroa samanaikaisesti.
 
@@ -31,7 +33,7 @@ Työnjakotoiminnolla voidaan jakaa suuret työtunnukset (eli useita rivejä sis�
 
 Ennen kuin työn jakotoimintoa voidaan käyttää, se ja sen edellytyksenä oleva toiminto on otettava käyttöön. Järjestelmänvalvojat voivat tarkistaa [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksissa toimintojen tilan ja ottaa ne tarvittaessa käyttöön.
 
-Jos edellytyksenä oleva *Organisaation laajuinen työn esto* -toiminto ei ole vielä käytössä, se on otettava käyttöön. **Ominaisuuksien hallinta** -työtilassa tämä ominaisuus on luetteloitu seuraavalla tavalla:
+Jos edellytyksenä oleva *Organisaation laajuinen työn esto* -toiminto ei ole vielä käytössä, se on otettava käyttöön. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä. Ominaisuus on kuitenkin edelleen mainittu [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) seuraavasti:
 
 - **Moduuli:** *Varastonhallinta*
 - **Toiminnon nimi:** *Organisaation laajuinen työn esto*
@@ -51,7 +53,7 @@ Ota seuraavaksi *Työn jako* -toiminto, joka ilmaistaan seuraavasti:
 - **Jaa työ** – jaa nykyinen työtunnus useiksi pieniksi työtunnuksiksi, joita eri työntekijät voivat käsitellä.
 - **Peruuta työn jakoistunto** – peruuta työn jakoistunto ja anna mahdollisuus työn käsittelyyn.
 
-![Jaa työ- ja Peruuta työn jakoistunto -painikkeet](media/Work_split_buttons.png "Jaa työ- ja Peruuta työn jakoistunto -painikkeet")
+![Jaa työ- ja Peruuta työn jakoistunto -painikkeet.](media/Work_split_buttons.png "Jaa työ- ja Peruuta työn jakoistunto -painikkeet")
 
 > [!IMPORTANT]
 > **Jaa työ** -painike ei ole käytettävissä, jos jokin seuraavista ehdoista toteutuu.
@@ -94,7 +96,7 @@ Työ jaetaan seuraavasti:
 
     Nykyisen työn **Työn eston syy** -kentän asetukseksi määritetään *Jaa työ* ja työ estetään.
 
-    ![Eston syy](media/Blocking_reason.png "Eston syy")
+    ![Eston syy.](media/Blocking_reason.png "Eston syy")
 
 1. Valitse nykyisestä työtunnuksesta poistettavat rivit ja lisää uusi työtunnus. Seuraavat tapahtumat:
 

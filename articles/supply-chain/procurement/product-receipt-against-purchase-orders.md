@@ -1,7 +1,7 @@
 ---
 title: Tuotteen vastaanotto ostotilausten perusteella
 description: Tässä ohjeaiheessa käsitellään tuotteiden vastaanotetuiksi rekisteröinnin asetuksia.
-author: kamaybac
+author: Henrikan
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca52f4127b3ec80eab3ba5c3c239c36d01178c00
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c22b4f914dc7eba34f2f9a2657d21d66f38c019
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825467"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570415"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Tuotteen vastaanotto ostotilausten perusteella
 
@@ -53,8 +53,7 @@ Kun tuotteen vastaanotto on käsitelty ostotilauksessa, ostotilauksen tilaksi va
 
 Voit käyttää tätä sivua **Vastaanotto**-toimintoryhmän **Ostotilaus**-sivulla. Kirjauskansiossa on tietoja esimerkiksi määristä, päivämääristä ja dimensioista.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
@@ -62,7 +61,7 @@ Voit käyttää tätä sivua **Vastaanotto**-toimintoryhmän **Ostotilaus**-sivu
 
 [Ostotilausten hyväksyminen ja vahvistaminen](purchase-order-approval-confirmation.md)
 
-[Toimittajan laskujen yleiskatsaus](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Toimittajan laskujen yleiskatsaus](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

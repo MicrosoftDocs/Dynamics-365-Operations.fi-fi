@@ -2,11 +2,9 @@
 title: Taloushallinnon täsmäytys vähittäismyymälöissä
 description: Tässä aiheessa kuvataan vähittäismyymälöiden taloushallinnon täsmäytystä myyntipisteille Microsoft Dynamics 365 Commercessa.
 author: anpurush
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 99c238ecfbb6cb29f4fefefdca32525b99a01dc8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2afe967248136e9b658e1ee18053a54ab3f0d325c088a5eb2e522fac335c01f0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251328"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752456"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>Taloudellinen täsmäytys vähittäismyymälöissä
 

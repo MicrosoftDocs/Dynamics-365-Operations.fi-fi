@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831287"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103485"
 ---
 # <a name="location-product-dimension-mixing"></a>Tuotedimensioiden yhdistäminen sijainnissa
 
@@ -26,14 +26,11 @@ ms.locfileid: "5831287"
 
 Tuotedimensioiden yhdistäminen sijainnissa on toimipaikkaprofiilin toiminto, joka auttaa parantamaan toimipaikan varastonhallintaa, kun tuotteesta on varastossa useita variantteja tai tuotteiden mitat vaihtelevat, kuten muotiteollisuudessa. Sen avulla voit määrittää, voidaanko toimipaikkaprofiilissa sekoittaa tuotteita kokoonpanon, värin, tyylin ja värin mukaan vai voidaanko samassa toimipaikassa varastoida vain yhtä tietyn ominaisuuden tai ominaisuusyhdistelmän tuotetta.
 
-## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>Ota Tuotedimensioiden yhdistäminen sijainnissa käyttöön
+## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Ota Tuotedimensioiden yhdistäminen sijainnissa käyttöön tai pois käytöstä
 
-Ennen kuin voit käyttää tuotedimensioiden sekoitusta, toiminnon pitää olla otettu käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Tuotedimensioiden yhdistäminen sijainnissa* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Tuotedimensioiden yhdistäminen sijainnissa* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Tuotedimensioiden yhdistäminen sijainnissa*
-
-## <a name="setup"></a>Määritys
+## <a name="setup"></a>Asetukset
 
 Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää sijainnin ominaisuudet. Tämän vuoksi kaikissa samaa sijaintiprofiilia käyttävissä sijainneissa voidaan sallia tuotedimensioiden yhdistäminen, kun se on määritetty sijaintiprofiiliin.
 

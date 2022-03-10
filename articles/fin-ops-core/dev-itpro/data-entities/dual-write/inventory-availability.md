@@ -1,29 +1,20 @@
 ---
 title: Varaston käytettävyys kaksoiskirjoituksessa
 description: Tässä ohjeaiheessa on tietoja varaston käytettävyyden tarkistamisesta kaksoiskirjoituksella.
-author: yijialuan
-manager: AnnBe
+author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: riluan
-ms.dyn365.ops.version: ''
+ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 4d1022eec633bf0a9edb4d5b26982853cec836d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4452191"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782526"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Varaston käytettävyys kaksoiskirjoituksessa
 
@@ -57,3 +48,21 @@ Valintaikkuna palauttaa ATP-tiedot Supply Chain Managementissa. Nämä tiedot si
 - Vastaanoton määrä
 - Varasto-oton määrä
 - Varastosaldo
+
+## <a name="how-it-works"></a>Näin se toimii
+
+Kun **Käytettävissä oleva varasto** -painike valitaan **Tarjoukset**-, **Tilaukset**- tai **Laskut**-sivulla, reaaliaikainen kaksoiskirjoituskutsu tehdään **Käytettävissä oleva varasto** -ohjelmistorajapinnassa. Ohjelmointirajapinta laskee annetun tuotteen käytettävissä olevan varaston. Tulos tallennetaan **InventCDSInventoryOnHandRequestEntity**- ja **InventCDSInventoryOnHandEntryEntity**-taulukoihin ja kirjoitettaan sitten kaksoiskirjoituksella Dataverseen. Tämän toiminnon käyttämistä varten on suoritettava seuraavat kaksoiskirjoituksen määritykset. Ohita ensimmäinen synkronointi määrityksiä suoritettaessa.
+
+- CDS:n käytettävissä olevan varaston viennit (msdyn_inventoryonhandentries)
+- CDS:n käytettävissä olevan varaston pyynnöt (msdyn_inventoryonhandrequests)
+
+## <a name="templates"></a>Mallit
+
+Seuraavat mallit ovat käytettävissä käytettävissä olevan varaston tietojen tuominen nähtäville
+
+Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
+---|---|---
+[CDS:n käytettävissä olevan varaston merkinnät](mapping-reference.md#145) | msdyn_inventoryonhandentries |
+[CDS:n käytettävissä olevan varaston pyynnöt](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

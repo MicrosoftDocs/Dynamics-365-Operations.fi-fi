@@ -1,29 +1,25 @@
 ---
 title: Ennalta ehkäisevä huolto – yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään käyttöomaisuuden hallinnan ennaltaehkäisevää ylläpitoa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8949f9b26917c4a93faa5aea74faa0b6735d770f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c313a7873ae63b5bb85665067160fdcd6dc15a5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427036"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985052"
 ---
 # <a name="preventive-maintenance-overview"></a>Ennalta ehkäisevä huolto – yleiskatsaus
 
@@ -37,5 +33,8 @@ Huoltosuunnitelmia käytetään yksittäisten käyttöomaisuuksien ennaltaehkäi
 
 Alla olevassa kuvassa on yleiskatsaus työnkulkuun huoltosuunnitelmien ja kunnossapitokierrosten luomisesta käyttöomaisuuksien työtilausten luontiin näiden huoltosuunnitelmien ja kunnossapitokierrosten perusteella.
 
-![Kuva 1](media/01-preventive-maintenance.png)
+![Kuva 1.](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

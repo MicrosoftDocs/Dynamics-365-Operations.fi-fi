@@ -1,7 +1,7 @@
 ---
 title: Varastokirjauskansion hyväksyntätyönkulut
 description: Tässä ohjeaiheessa käsitellään varastokirjauskansioiden hyväksyntätyönkulut määritetään ja miten niitä käytetään erityyppisten varastotilannetapahtumien kirjaamisessa. Varastokirjauskansion työnkulkujen avulla voit varmistaa, että vain hyväksytyt varastokirjauskansiot voidaan kirjata tapahtumille.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354758"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778302"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Varastokirjauskansion hyväksyntätyönkulut
 
@@ -31,7 +31,7 @@ Tässä ohjeaiheessa kerrotaan, miten varastokirjauskansion hyväksyntätyönkul
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Varastokirjauskansion hyväksyntätyönkulut -toiminnon ottaminen käyttöön
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla toiminnon tilan sekä ottaa sen käyttöön tai poistaa sen käytöstä tarvittaessa. Toiminto näkyy seuraavasti:
 
 - **Moduuli:** *Varastonhallinta*
 - **Toiminnon nimi:** *Varastokirjauskansion hyväksyntätyönkulku*

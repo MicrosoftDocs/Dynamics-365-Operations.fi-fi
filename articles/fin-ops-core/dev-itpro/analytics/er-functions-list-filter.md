@@ -2,11 +2,8 @@
 title: FILTER ER-toiminto
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) FILTER-funktiota käytetään.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
-ms.topic: article
+ms.date: 12/14/2021
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55fa3d4ad4427e2a45f7c5fce679c50a91c40b6d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679435"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922420"
 ---
 # <a name="filter-er-function"></a>FILTER ER-toiminto
 
@@ -52,11 +49,17 @@ Kelvollinen ehtolauseke, jota käytetään määritetyn luettelon tietueiden suo
 
 Tuloksena oleva tietueluettelo.
 
-## <a name="usage-notes"></a>Käyttöhuomautukset
+## <a name="usage-notes"></a><a name="usage-notes"></a>Käyttöhuomautukset
 
 Funktio eroaa [WHERE](er-functions-list-where.md)-funktiosta, koska määritettyä ehtoa käytetään tietokannan tasolla kaikkiin *Taulukkotietue*-tyypin elektronisen raportoinnin (ER) tietolähteisiin. Luettelo ja ehto voidaan määrittää tauluja ja suhteita käyttämällä.
 
 Jos jompikumpi tai molemmat tälle toiminnolle määritetyt argumentit (`list` ja `condition`) eivät salli tämän pyynnön kääntyä suoraan SQL-puheluun, suunnitteluaikaan tulee poikkeus. Tämä poikkeus ilmoittaa käyttäjälle, että joko `list` tai `condition` ei voi käyttää tietokannan kyselyä.
+
+> [!NOTE]
+> `FILTER`-toiminnon toiminta eroaa `WHERE`-funktiosta, kun valintaehdot määritetään [`VALUEIN`](er-functions-logical-valuein.md)-toiminnon avulla.
+> 
+> - Jos `VALUEIN`-toimintoa käytetään `WHERE`-toiminnon käyttöalueessa ja `VALUEIN`-funktion toinen argumentti viittaa tietolähteeseen, joka ei palauta tietueita, `VALUEIN`-funktion palauttama *[False](er-formula-supported-data-types-primitive.md#boolean)*-totuusarvo otetaan huomioon. Lauseke `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` ei siis palauta toimittajatietueita, jos **VendGroups**-tietolähde ei palauta toimittajaryhmätietueita.
+> - Jos `VALUEIN`-toimintoa käytetään `FILTER`-toiminnon käyttöalueessa ja `VALUEIN`-funktion toinen argumentti viittaa tietolähteeseen, joka ei palauta tietueita, `VALUEIN`-funktion palauttama *[False](er-formula-supported-data-types-primitive.md#boolean)*-totuusarvo ohitetaan. Lauseke `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` palauttaa siis kaikki toimittajatietueet **Vendors**-tietolähteestä, vaikka **VendGroups**-tietolähde ei palauta toimittajaryhmätietueita.
 
 ## <a name="example-1"></a>Esimerkki 1
 
@@ -73,3 +76,6 @@ Syötät *Lasketun kenttä*-tyypin **DS**-tietolähteen, ja se sisältää lause
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luettelotoiminnot](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

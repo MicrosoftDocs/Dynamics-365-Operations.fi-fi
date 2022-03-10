@@ -1,7 +1,7 @@
 ---
 title: Jäljityksen käyttö hajotuksessa
 description: Tässä artikkelissa kerrotaan, miten jäljitystä käytetään tilauksen hajotuksen tuloksen takana olevien syiden tutkimisessa.
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f2a50c5e30155c11d653601187c36cb385aa4a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c42eaf4c9218a186bca30848bc7b09c634f9a69e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839194"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567172"
 ---
 # <a name="use-tracing-for-explosion"></a>Jäljityksen käyttö hajotuksessa
 
@@ -38,8 +38,7 @@ Kun otat jäljityksen käyttöön, voit tarkastella tietoja tietyn tilauksen haj
 
 Voit tarkastella tietoja tulevasta ja valitun tilauksen toiminnoista. Jäljitystiedot ovat saatavilla **Hajotus**-sivun **Selitys**-välilehden yläruudussa. Jäljitys tapahtuu, kun tilaus hajotetaan. Aloita tilauksen jäljitys valitsemalla ensin **Päivitys** ja sitten **Ota jäljitys käyttöön** -valintaruutu. Voit hakea lokista tietoja **Etsi teksti** -kentän avulla. Hakutulokset näkyvät korostettuina puurakenteessa.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Pääsuunnitelmien yleiskatsaus](master-plans.md)
 

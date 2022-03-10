@@ -1,8 +1,8 @@
 ---
 title: Elämäntapahtumien muutosten käsittely
-description: Käsittele elämäntapahtumien muutokset Microsoft Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-ms.date: 04/06/2020
+description: Tässä aiheessa käsitellään elämäntapahtumien muutosten käsittelemistä Microsoft Dynamics 365 Human Resourcesissa.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1bfbd7347581e57edcab39a675b17ef66e262582
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cb894d9886c095d760efe66abcf773a975a99caa
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059013"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067601"
 ---
 # <a name="process-life-event-changes"></a>Elämäntapahtumien muutosten käsittely
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

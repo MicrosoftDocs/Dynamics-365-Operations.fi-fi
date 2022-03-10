@@ -2,11 +2,9 @@
 title: Maksumoduuli
 description: Tässä ohjeaiheessa on tietoja maksumoduulista ja sen määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 author: anupamar-ms
-manager: annbe
-ms.date: 11/18/2020
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d9c0956e30d413f5ae695cf75b06fb58711b2944
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222487"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952466"
 ---
 # <a name="payment-module"></a>Maksumoduuli
 
@@ -48,9 +46,9 @@ Adyen-yhdistin tukee myös asiakkaan vahvaa todennusta (SCA). Osa Euroopan union
 
 Seuraavassa kuvassa on esimerkki lahjakortista, kanta-asiakkuudesta ja Adyen-maksumoduuleista maksusivulla.
 
-![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, Adyen-maksumoduuleista maksusivulla](./media/ecommerce-payments.PNG)
+![Esimerkki lahjakortista, kanta-asiakkuuspisteistä, Adyen-maksumoduuleista maksusivulla.](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 -maksuyhdistin PayPalia varten
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector PayPalia varten
 
 Commerce-versiosta 10.0.14 alkaen maksumoduuli on integroitu myös Dynamics 365:n PayPal-maksuyhdistimen kanssa. Lisätietoja tämän maksuyhdistimen asentamisesta ja määrittämisestä on kohdassa [Dynamics 365 -maksuyhdistin Paypalille](paypal.md).
  
@@ -61,10 +59,10 @@ Kun maksumoduuli on määritetty käyttämään PayPal-maksuliitintä, kassasivu
 PayPal-maksuyhdistin ei edellytä laskutusosoitemoduulia, koska PayPal käsittelee kaikki laskutukseen liittyvät tiedot iframen sisällä. Toimitusosoite- ja toimitusvaihtoehdot -moduulit ovat kuitenkin pakollisia.
 
 Seuraavassa kuvassa on esimerkki kahdesta maksumoduulista kassasivulla, joista toinen on määritetty Adyen-maksuyhdistimellä ja toinen PayPal-maksuyhdistimellä.
-![Esimerkki Adyen- ja PayPal-maksumoduuleista maksusivulla](./media/ecommerce-paypal.png)
+![Esimerkki Adyen- ja PayPal-maksumoduuleista maksusivulla.](./media/ecommerce-paypal.png)
 
 Seuraavassa kuvassa on esimerkki PayPal-iframesta, joka on käynnistetty PayPal-painikkeen avulla. 
-![Esimerkki Paypal-iframesta kassasivulla](./media/ecommerce-paypal-iframe.png)
+![Esimerkki Paypal-iframesta kassasivulla.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Maksumoduulin ominaisuudet
 
@@ -78,7 +76,7 @@ Seuraavassa kuvassa on esimerkki PayPal-iframesta, joka on käynnistetty PayPal-
 |On ensisijainen maksu|  **Tosi** vai **Epätosi** | Jos arvo on **Tosi**, kaikki virhe sanomat luodaan kassasivun ensisijaisesta maksuliitännästä. Jos sekä Adyen- että PayPal-maksuyhdistimet on määritetty, määritä Adyen-arvoksi **Tosi**, joka lisättiin Commerce-versioon 10.0.14.|
 
 Seuraavassa kuvassa on esimerkki **Tuetut maksuvälinetyypit** -arvosta "PayPal" Commerce Headquarters -sovelluksen maksuyhdistinmäärityksissä.
-![Esimerkki tuetuista maksuvälinetyypeistä Commerce Headquarters -sovelluksessa](./media/ecommerce-paymenttendertypes.png)
+![Esimerkki tuetuista maksuvälinetyypeistä Commerce Headquarters -sovelluksessa.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Laskutusosoite
 
@@ -92,7 +90,24 @@ Kuten maksumoduulit, **Tuetut maksuvälinetyypit** -ominaisuus on lisätty Comme
 
 Maksumoduuli voidaan lisätä vain kassalle-moduuliin. Lisätietoja maksumoduulin määrittämisestä kassasivulle on kohdassa [Kassamoduuli](add-checkout-module.md).
 
-Jos sekä Adyen- että PayPal-maksuyhdistimiä tarvitaan, lisää molemmat moduulit maksuosaan. Varmista, että **Tuetut maksuvälinetyypit** -ominaisuuden arvo on määritetty PayPalille, ja jätä se tyhjäksi Adyenia varten. Määritä myös Adyenille **On ensisijainen maksu** -ominaisuus arvoon **Tosi**.
+## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Adyen- ja PayPal-maksuliittimien konfiguroiminen, kun molempia käytetään
+
+Jos sivustosi käytössä on sekä Adyen- että PayPal-maksuliittimet, lisää kullekin liittimelle maksumoduulit kassamoduuliin ja määritä sitten kunkin moduulin ominaisuudet noudattamalla seuraavia vaiheita Commerce-sivustonmuodostimessa.
+
+1. Noudata seuraavia vaiheita PayPal-maksumoduulin ominaisuusruudussa:
+
+    1. Määritä **Tuetut maksuvälinetyypit** -ominaisuuden kenttään **PayPal**.
+    1. Poista **On ensisijainen maksutapa** -ominaisuuden valintaruudun valinta.
+    1. Valitse **Käytä yhdistimen tunnusta** -ominaisuuden valintaruutu.
+
+1. Noudata seuraavia vaiheita Adyen-maksumoduulin ominaisuusruudussa:
+
+    1. Jätä **Tuetut maksuvälinetyypit** -ominaisuuden kenttä tyhjäksi.
+    1. Valitse **On ensisijainen maksutapa** -ominaisuuden valintaruutu.
+    1. Valitse **Käytä yhdistimen tunnusta** -ominaisuuden valintaruutu.
+
+> [!NOTE]
+> Kun määrität yhdessä käytettävät Adyen- ja PayPal-liittimet, **Dynamics 365 Payment Connector – Adyen** -konfiguraation on oltava ensimmäisenä online-kanavan **Maksutilit**-yhdistinkonfiguraatiossa Commerce Headquartersissa. Voit vahvistaa liittimien järjestyksen tai muuttaa sitä valitsemalla **Online-myymälät** ja sitten sivuston kanavan. Varmista sitten **Maksutilit**-pikavälilehden **Asetukset**-välilehden **Yhdistin**-kohdasta, että **Dynamics 365 Payment Connector – Adyen** -konfiguraatio on ensimmäisessä kohdassa (ylimmällä rivillä) ja että **Dynamics 365 Payment Connector – PayPal** -konfiguraatio on toisella rivillä. Lisää tai poista liittimiä tarpeen mukaan niiden järjestämistä varten.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -1,7 +1,7 @@
 ---
 title: Varaston tilat
 description: Tässä artikkelissa kuvataan, miten varaston tiloja voidaan käyttää varaston luokittelussa ja seuraamisessa.
-author: MarkusFogelberg
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58e9895afecf24a84281049c63d661e690fe2a2f7963d4711dc7cc4d5630322b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db15ad94355823c699e83c9e3f47660f813e1c9a
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735228"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103460"
 ---
 # <a name="inventory-statuses"></a>Varaston tilat
 
@@ -64,7 +64,7 @@ Varastotiloja voi muuttaa joko **Varastosaldo sijainnin mukaan** -sivulla tai k�
 - Varastotilaa voi muuttaa tilapäisprosessina valitsemalla **Varastosaldo sijainnin mukaan** -sivulla sopivat tietueet ja valitsemalla sitten **Varaston tilanmuutos** -painikkeen.
 
 > [!NOTE]
-> *Seurantadimensioilla hallittavien nimikkeiden varastotilan muutos* -ominaisuudella voi muuttaa seurantadimensioilla hallittavien nimikkeiden varastotilaa; tähän sisältyy myös mahdollisuus päivittää vain valitut tietueet. Toiminnon voi ottaa tarpeen mukaan käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Kun ominaisuus on otettu käyttöön, seuraavat ovat toimet ovat mahdollisia:
+> *Seurantadimensioilla hallittavien nimikkeiden varastotilan muutos* -ominaisuudella voi muuttaa seurantadimensioilla hallittavien nimikkeiden varastotilaa; tähän sisältyy myös mahdollisuus päivittää vain valitut tietueet. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Muuta seurantadimensioilla hallittujen nimikkeiden varastotilaa* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa. Jos ominaisuus on otettu käyttöön, seuraavat ovat toimet ovat mahdollisia:
 >
 > - **Varastosaldo sijainnin mukaan** -sivulla voi ryhmittää rivejä näkyvissä olevien dimensioiden mukaan käyttämällä **Näytä dimensiot** -painiketta ja muuttamalla valittujen rivien tilaa.
 > - **Varastosaldo sijainnin mukaan** -sivulla voi valita useita tietueita ja muuttaa ne sitten kaikki kerralla **Varastosaldo sijainnin mukaan** -painikkeella.

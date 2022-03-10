@@ -2,7 +2,6 @@
 title: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 description: Tässä aiheessa käsitellään toimintoja, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations ista ja aiemmista versioista.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
@@ -15,21 +14,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db276c693a729b919bc609bb4b94843bb11a8fe3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559327"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063234"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
-> Tätä ohjeaihetta ei enää päivitetä. Jos haluat nähdä Finance and Operations -sovelluksista poistettujen tai niiden vanhentuneiden toimintojen luettelon, hae **Poistetut ja vanhentuneet toiminnot** -sisältö, joka viittaa käyttämääsi sovellukseen.
+> Tätä ohjeaihetta ei enää päivitetä. Jos haluat nähdä taloushallinnon ja toimintojen sovelluksista poistettujen tai niiden vanhentuneiden toimintojen luettelon, hae **Poistetut ja vanhentuneet toiminnot** -sisältö, joka viittaa käyttämääsi sovellukseen.
 
 Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhentuneet Dynamics 365 for Finance and Operations -sovelluksessa ja tuotteen aiemmissa versioissa.
 
@@ -38,7 +37,7 @@ Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhe
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 ja Platform update 31
 
@@ -85,7 +84,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: **setUtcString()**-menetelmää ei ole enää tarkoitus tukea 1.10.2020 jälkeen. Kehittäjien on käytettävä sen sijaan **setUtcDateTime()**-menetelmää. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Mustan listan raportti (IT) – toimintoviite IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Estoluetteloraportti (IT) – ominaisuusviite IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -93,7 +92,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Italialainen lokalisointi |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: **Mustan listan raportti (IT) – toimintoviite IT-00001** – ei ole enää tarkoitus tukea 1.10.2020 jälkeen. |
+| **Tila**                         | Vanhentunut: Tätä raporttia ei ole enää tarkoitus tukea 1.10.2020 jälkeen. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Kotimaan veroraportti – toimintoviite IT-00003
 
@@ -105,6 +104,39 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: **Kotimaan veroraportti – toimintoviite IT-00003** – ei ole enää tarkoitus tukea 1.10.2020 jälkeen. |
 
+## <a name="october-2019-deprecation-announcement"></a>Lokakuun 2019 poistoilmoitus
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Liiketoimintaprosessien mallintajan vuokaaviot
+
+<table>
+<tbody>
+<tr>
+<td><strong>Poiston tai vanhentumisen syy</strong></td>
+<td>Olemme poistamassa vuokaavioiden komponentin liiketoimintaprosessien mallintaja (BPM)-osassa, koska vanha muotoilu aiheutti vähäisen käytön.</td>
+</tr>
+<tr>
+<td><strong>Onko toinen ominaisuus korvannut?</strong></td>
+<td>Ei</td>
+</tr>
+<tr>
+<td><strong>Alueet, joihin avain vaikuttaa</strong></td>
+<td>Liiketoimintaprosessien mallintaja</td>
+</tr>
+<tr>
+<td><strong>Tila</strong></td>
+<td>Vanhentunut: vuokakaavioiden osaa BPM:ssä odotetaan poistettavaksi vuonna 2020. Seuraavat toiminnot eivät ole käytettävissä:
+<ul>
+<li>Kaikki vuokaaviot ovat vain luku -muotoisia eikä niitä voi muokata. Myöskään vuokaaviotehtäviin liitetyt muodon ominaisuudet eivät ole käytettävissä. Nämä vuokaaviot sisältävät sekä oletusarvoiset vuokaaviot, jotka luodaan automaattisesti, että mukautettuja vuokaavioita, joita muokataan näiden oletusarvoisten vuokaavioiden perusteella.</li>
+<li>Prosessivaiheet ovat vain luku -muotoisia eikä niitä voi muokata.</li>     
+<li>Vanha sovitus/aukkoanalyysiominaisuus ei ole käytettävissä. Tämän vuoksi väliluetteloa ei luoda automaattisesti eikä se ole käytettävissä vientiä varten.
+<p><strong>Huomautus:</strong> Tämä ominaisuus on aiemmin vanhentunut ja korvattu Microsoft Azure DevOps-integraatiolla.</p>
+</li>
+<li>Vuokaavion versiohistoria ei ole käytettävissä.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 ja Platform update 29
 
@@ -148,7 +180,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ylätunnisteen tasaus muihin Dynamics- ja Office-tuotteisiin. Lisätietoja on kohdassa [Päivitetty siirtymispalkki, joka kohdistuu Office-otsikkoon.](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
+| **Poiston tai vanhentumisen syy** | Ylätunnisteen tasaus muihin Dynamics- ja Office-tuotteisiin. Lisätietoja on kohdassa [Päivitetty siirtymispalkki, joka kohdistuu Office-otsikkoon.](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
 | **Onko toinen ominaisuus korvannut?**   | Uudelleen muotoiltu navigointipalkki, jossa on hakuominaisuus, otettiin käyttöön Platform Update 24:sta alkaen. |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
@@ -162,7 +194,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ruudukoiden oletustoimintojen vanha toiminta saa aikaan tuloksia odottamattomaan sarakkeeseen, jolla on oletustoimintolinkki ruudukon sarakkeiden jälkeen. Ne on järjestetty uudelleen mukauttamisen avulla. Uusi lukitun oletustoiminnon ominaisuus korjaa tämän. Lisätietoja on kohdassa [Lukitut oletustoiminnot ruudukoissa](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Poiston tai vanhentumisen syy** | Ruudukoiden oletustoimintojen vanha toiminta saa aikaan tuloksia odottamattomaan sarakkeeseen, jolla on oletustoimintolinkki ruudukon sarakkeiden jälkeen. Ne on järjestetty uudelleen mukauttamisen avulla. Uusi lukitun oletustoiminnon ominaisuus korjaa tämän. Lisätietoja on kohdassa [Lukitut oletustoiminnot ruudukoissa](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Onko toinen ominaisuus korvannut?**   | Lukittujen oletustoimintojen ominaisuus oli ensimmäisen kerran mukana Platform update 21 -versiossa. Tämän ominaisuuden voi ottaa käyttöön **Työaseman suorituskykyasetukset** -sivulla. |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelman ruudukot |
 | **Käytön asetukset**              | Kaikki |
@@ -173,7 +205,7 @@ Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | On yksi seuraavista: -suodattimen käyttö suunniteltiin uudelleen Platform update 22 -versiota varten niin, että tämän piti olla ainoa On yksi seuraavista: -suodattimen käyttömahdollisuus. |
-| **Onko toinen ominaisuus korvannut?**   | Platform update 22 -versiosta alkaen parannettu On yksi seuraavista: -suodattimen käyttö on saatavissa **Työaseman suorituskykyasetukset** -sivulla. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Onko toinen ominaisuus korvannut?**   | Platform update 22 -versiosta alkaen parannettu On yksi seuraavista: -suodattimen käyttö on saatavissa **Työaseman suorituskykyasetukset** -sivulla. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Vuoden 2020 huhtikuusta alkaen parannettu On yksi seuraavista: -suodattimen käyttö kuuluu oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata. |
@@ -233,13 +265,13 @@ Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella 
 | **Onko toinen ominaisuus korvannut?**   | Nro |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta |
 | **Käytön asetukset**              | Kaikki  |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 10.0.0 Platform update 24 alkaen.|
+| **Tila**                         | Poistettu alkaen Finance and Operations 10.0.0 ja Platform update 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 ja Platform update 23
 
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>SQL Server Reporting Services ReportViewer -ohjausobjekti
-Asiakkaat voivat käyttää upotetun SQL Server Reporting Services (SSRS) ReportViewer -ohjausobjektin **vientitoimintoa** Finance and Operations -sovellusten asiakirjojen lataamisessa. Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.
+Asiakkaat voivat käyttää upotetun SQL Server Reporting Services (SSRS) ReportViewer -ohjausobjektin **vientitoimintoa** taloushallinnon ja toimintojen sovellusten asiakirjojen lataamisessa. Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
@@ -270,7 +302,7 @@ Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäytt�
 | **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä. |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Varoitus on nyt kääntäjän virhe Finance and Operations -sovellusalustan päivityksille versiossa 10.0.11. |
+| **Tila**                         | Vanhentunut: Varoitus on nyt kääntämisen aikainen virhe taloushallinnon ja toimintojen sovellusten alustan päivityksen versiossa 10.0.11. |
 
 #### <a name="complete-list"></a>Täydellinen luettelo
 Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa [Menetelmien ja metatietojen elementtien poisto](deprecation-deletion-apis.md).
@@ -297,7 +329,7 @@ Toiminto ilmoitusten .txt- ja .xml-tiedostomuotojen määrittämiseen.
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Rahoitusraporttien luonti Venäjää varten
 Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC-raporttimalleihin. Toiminnalliset osat: tietojen vienti XLS- ja DOC-raporttimalleihin, kyselyt, kiinteät edellytykset poistetaan. 
@@ -308,7 +340,7 @@ Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tieto
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. Tilinpäätösten määrityksen käyttöliittymää olisi käytettävä tiedonkeruusääntöjen määrittämiseen kirjanpitotilien tai verorekistereiden mukaan. Sähköisessä raportoinnissa olisi määritettävä äännöt, jotka koskevat tietojen vientiä erilaisiin tiedostotyyppeihin, kiinteitä edellytyksiä ja kyselyjen kaltaisten tietojen keruuta. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili. |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrointi ulkoisten toimittajien kanssa sähköisen raportoinnin lähettämiseksi viestintäkanavien kautta Venäjää varten
 Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetetään edelleen sähköisen raportoinnin virallisille palveluntarjoajille, sekä tilan tuonti takaisin.
@@ -319,7 +351,7 @@ Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetet
 | **Onko toinen ominaisuus korvannut?**   | Kyllä.  |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili, vero |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Voittojen verorekisterin ohjattu toiminto
@@ -328,11 +360,21 @@ Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja. Tämä ominaisuude
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminto ei ole yhteensopiva Finance and Operationsin laajennettavuusmallin kanssa. |
-| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
 | **Tuotealueet, joihin vaikutetaan**         | Vero |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 8.1 Platform update 20 alkaen. |
+| **Tila**                         | Poistettu alkaen Finance and Operations 8.1 ja Platform update 20. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Palkanlaskenta ja Henkilöstöhallinto Venäjällä
+Venäjän maakohtainen moduuli, jossa hallitaan henkilökunnan hallintatietoja, työntekijöiden aikaraporttitietoja, palkanlaskentaa ja palkkaraporttien luomista. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Palkanlaskentaa ei sisällytetä Dynamics 365:n -valikoiman yleiseen strategiseen keskiöön. Yhteistyökumppaneille ja ISV-toimittajille kannattaa antaa palkanlaskentatoimintoja, jotka ovat paikallisten säännösten ja veropäivitysten mukaisia.|
+| **Onko toinen ominaisuus korvannut?**   | Ei|
+| **Tuotealueet, joihin vaikutetaan**         | Palkanlaskennan ja Henkilöstöhallinnon hallinta Venäjällä |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on jokin version 10.0 tulevista päivityksistä. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 ja Platform update 15
 Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut. Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.
@@ -359,7 +401,7 @@ Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei 
 | **Onko toinen ominaisuus korvannut?**   | Ei mitään. Aina kun uutta sisäistä tarvitaan, uusi laajennuspyyntö on osoitettava ER-kehikkotiimille.<br><br>ER-tiimi kehittää pyydettyä toimintoa, mutta ongelman voi väliaikaisesti välttää ohjelmoimalla tarvittavan logiikan mukautetun sovellusluokan menetelmänä. Tätä menetelmää voi käyttää ER-lausekkeessa mukautettuun sovellusluokkaan viittaavan **Sovellus\luokka**-tyypin lisätyn ER-tietolähteen ominaisuutena.  |
 | **Tuotealueet, joihin vaikutetaan**         | Sähköisen raportoinnin kehikko                                                      |
 | **Käytön asetukset**              | Kaikki                                                                                      |
-| **Tila**                         | Poistettu versiosta Finance and Operations, Enterprise edition 7.3 alkaen.    |
+| **Tila**                         | Poistettu alkaen Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Erääntymisraportti varastoryhmittäin ja Erääntymisraportti varastodimensioittain
 
@@ -413,7 +455,7 @@ Nämä verot on sisällytetty Intian GST-veroon.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Poiston tai vanhentumisen syy**       | Toimintoa ei käytetty                                                  |
-| **Onko toinen ominaisuus korvannut?**            | En                                                                      |
+| **Onko toinen ominaisuus korvannut?**            | Ei                                                                      |
 | **Tuotealueet, joihin vaikutetaan**                  | Intian ennakonpidätys                                                  |
 | **Käytön asetukset**                       | Kaikki moduulit                                                                    |
 | **Tila**                                  | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.   |        
@@ -425,7 +467,7 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Poiston tai vanhentumisen syy**       | Toimintoa ei käytetty                                                  |
-| **Onko toinen ominaisuus korvannut?**            | En                                                                      |
+| **Onko toinen ominaisuus korvannut?**            | Ei                                                                      |
 | **Tuotealueet, joihin vaikutetaan**                  | Intian ennakonpidätys                                                  |
 | **Käytön asetukset**                       | Kaikki moduulit                                                                   |
 | **Tila**                                  | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.     |    
@@ -436,7 +478,7 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Poiston tai vanhentumisen syy**       | Toimintoa ei käytetty                                                  |
-| **Onko toinen ominaisuus korvannut?**            | En                                                                      |
+| **Onko toinen ominaisuus korvannut?**            | Ei                                                                      |
 | **Tuotealueet, joihin vaikutetaan**                  | Tuo ja vie                                                       |
 | **Käytön asetukset**                       | Kaikki moduulit                                                                    |
 | **Tila**                                  | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.  |    
@@ -472,12 +514,12 @@ Valuuttamuunnos kirjanpito- ja raportointivaluutoille otettiin käyttöön, kun 
 
 ### <a name="warehouse-mobile-devices-portal"></a>Varaston mobiililaiteportaali
 
-Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon. Tätä komponenttia ei enää tueta Finance and Operationsissa. Alkuperäinen, käyttäjäkokemusta parantava sovellus, on korvannut WMDP-toiminnot.
+Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon. Finance and Operations ei enää tue tätä osaa. Alkuperäinen, käyttäjäkokemusta parantava sovellus, on korvannut WMDP-toiminnot.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Sama toiminto.       |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations - varastonhallinta on korvannut tämän toiminnon. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Varastointisovelluksen asennuksen ja määrityksen yleiskatsaus](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Varastointisovelluksen asennuksen ja määrityksen yleiskatsaus](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Tuotealueet, joihin vaikutetaan**         | Varaston hallinta, kuljetusten hallinta     |
 | **Käytön asetukset**              | Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.               |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2019 4. vuosineljännes.   |
@@ -536,7 +578,7 @@ Tätä työkalua käytetään, kun Espanjan tilikartta edellyttää suuria muuto
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Rajoitettu käyttö                                                  |
-| **Onko toinen ominaisuus korvannut?**   | En                                                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                             |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito                                                 |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -580,7 +622,7 @@ EDIVAT on Belgian vanhentunut standardi sähköiselle ilmoitukselle suojatun sä
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tätä toimintoa ei enää käytetä.                           |
-| **Onko toinen ominaisuus korvannut?**   | En                                                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                             |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito                                                 |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -657,7 +699,7 @@ Tätä toimintoa käytetään Espanjan tilikartan ja kirjanpitosääntöjen muut
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Rajoitettu käyttö                                                  |
-| **Onko toinen ominaisuus korvannut?**   | En                                                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                             |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito                                                 |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -745,7 +787,7 @@ Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetä�
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö ja rajoitetut toiminnot.   |
-| **Onko toinen ominaisuus korvannut?**   | En                                              |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                              |
 | **Tuotealueet, joihin vaikutetaan**         | Inventoinnin- ja varastonhallinta                            |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen. |
 
@@ -756,7 +798,7 @@ Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityis
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Valtion määrittämää laskujen numerointia ei tarvitse enää ylläpitää. Käytettyjen laskunumeroiden raporttia ei enää vaadita. |
-| **Onko toinen ominaisuus korvannut?**   | En       |
+| **Onko toinen ominaisuus korvannut?**   | Ei       |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra    |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.  |
 
@@ -818,7 +860,7 @@ Henkilöstöhallinnon palkanlaskentatiedot
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö                                                           |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                  |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                  |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilöstöhallinto                                                     |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen |
 
@@ -828,7 +870,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Suorituksen hallinta on suunniteltu kokonaan uudelleen Finance and Operationsissa.     |
+| **Poiston tai vanhentumisen syy** | Suorituskyvyn hallinta on suunniteltu kokonaan uudelleen Finance for Operationsissa.     |
 | **Onko toinen ominaisuus korvannut?**   | Uudelleen suunnitellulla suorituskyvyn hallintatoiminnolla voidaan seurata tarkemmin tavoitteiden sisältöä ja mittauksia, joiden avulla voidaan seurata etenemistä, sekä tukidokumentaation liittämistä. Tavoitteet voidaan tallentaa malleina ja käyttää uudelleen. Tämän toiminnon avulla voit määrittää lisätavoitteita työntekijöille entistä nopeammin. |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilöstöresurssien hallinta                 |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen. |
@@ -841,7 +883,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Suorituskyvyn parannus        |
-| **Onko toinen ominaisuus korvannut?**   | En                             |
+| **Onko toinen ominaisuus korvannut?**   | Ei                             |
 | **Tuotealueet, joihin vaikutetaan**         | Ostoreskontra               |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen. |
 
@@ -874,7 +916,7 @@ Kun **Tuoterakenneversiot**-määritysavain poistettiin käytöstä, tuoterakenn
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tuoterakenneversioiden ohjaamista määritysavaimella ei voi skaalata pilviympäristöön. |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                                      |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                                      |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta, inventoinnin- ja varastonhallinta                                    |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                                                          |
 
@@ -885,7 +927,7 @@ Erityismaksutapa Brasilian yrityksille
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Brasilian Bordero-maksutavan tuki on lopetettu Brasilian lokalisointiversiosta |
-| **Onko toinen ominaisuus korvannut?**   | En   |
+| **Onko toinen ominaisuus korvannut?**   | Ei   |
 | **Tuotealueet, joihin vaikutetaan**         | Ostoreskontra   |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -907,7 +949,7 @@ Liittovaltion veroraportti ICMS-verolle
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tämä varamenetelmä ei ole enää käytettävissä kaikissa Brasilian osavaltioissa |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                          |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                          |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra                                                         |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.              |
 
@@ -958,7 +1000,7 @@ Compliance Center oli Sarbanes-Oxley-lakiin liittyvien vaatimustenmukaisuusaloit
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toimintoa ei käytetty. Microsoft SharePoint sisältää Compliance Centerin käytössä olleet ominaisuudet. |
-| **Onko toinen ominaisuus korvannut?**   | En   |
+| **Onko toinen ominaisuus korvannut?**   | Ei   |
 | **Tuotealueet, joihin vaikutetaan**         | Yhteensopivuus ja sisäinen valvonta  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.    |
 
@@ -987,7 +1029,7 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Dyn
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Pinoryhmiä käytettiin näyttämään vähintään yksi pino tietoruutualueella. Toiminto oli rajallinen ja siihen liittyi suorituskykyongelmia, koska tietueen muuttuminen päälomakkeessa loi jokaiselle pinolle yhden kyselyn pinoryhmässä. |
-| **Onko toinen ominaisuus korvannut?**   | En      |
+| **Onko toinen ominaisuus korvannut?**   | Ei      |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit    |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.  |
 
@@ -1005,7 +1047,7 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Dyn
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tanskan sekkimuodon tuki on lopetettu ja raportti on poistettu tanskalaisesta lokalisoinnista. |
-| **Onko toinen ominaisuus korvannut?**   | En    |
+| **Onko toinen ominaisuus korvannut?**   | Ei    |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit    |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.  |
 
@@ -1016,7 +1058,7 @@ Tieto-osiot erottavat Dynamics AX:n tietokannan tiedot loogisesti.
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tieto-osiot otettiin käyttöön Dynamics AX 2012 R2:ssa tietojen eristämistä varten. Yleisessä skenaariossa yrityksellä on tytäryhtiöitä mutta tytäryhtiön tiedot eivät saisi olla toisen tytäryhtiön nähtävissä, vaikka kumpikin tytäryhtiö on saman IT-osaston alaisuudessa. Ohjelmassa oli kuitenkin otettava käyttöön ylimääräisiä komentosarjoja ja hallintakustannuksia, jotta uusia osioita voitaisiin luoda, tiedot voitaisiin lisätä ja osiotiedot voitaisiin varmuuskopioida. Pilvipalvelussa, jossa meillä on käyttöympäristövuokrattuja (PaaS-palvelu) tietokantapalveluja (Microsoft Azuren SQL-tietokanta), tietokantaa on tehokkaampaa käyttää erityssäilönä kuin tehdä eristys ohjelmassa. Riippumatta siitä, tarvitaanko tietojen osiointia tytäryhtiöitä tai useita vuokraajia varten tai koon vuoksi, skenaariot voidaan mielestämme käsitellä paremmin useissa Finance and Operations -esiintymissä. |
-| **Onko toinen ominaisuus korvannut?**   | Tieto-osioita käyttävien asiakkaiden on käytettävä useita Finance and Operations -esiintymiä, jos tietokantatasojen erottaminen on tärkeää.    |
+| **Onko toinen ominaisuus korvannut?**   | Tieto-osioita käyttävien asiakkaiden on käytettävä useita Finance and Operations -esiintymiä, jos tietokantatasoiden erottaminen on tärkeää.    |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.  |
 
@@ -1027,7 +1069,7 @@ Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettuihin tiedo
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Tallennusta jaettuna tiedostoresurssina ei enää tueta, koska pilvipalveluympäristöt eivät voi viestiä paikallisten jaettujen tiedostoresurssien kanssa. Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä. Azure Blob -tallennus vastaa tietokantatallennusta, sillä asiakirjoja voi käyttää vain Finance and Operations -asiakasohjelman lomakkeiden kautta. Lisäksi tällä tavoin saadaan tallennustila, joka ei heikennä tietokannan toimintaa. Blob-tallennus on asiakirjanhallinnan oletustallennusmekanismi ja toimii välittömästi. |
+| **Poiston tai vanhentumisen syy** | Tallennusta jaettuna tiedostoresurssina ei enää tueta, koska pilvipalveluympäristöt eivät voi viestiä paikallisten jaettujen tiedostoresurssien kanssa. Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä. Azure Blob Storage vastaa tietokantatallennusta, sillä asiakirjoja voi käyttää vain Finance and Operations -asiakasohjelman lomakkeiden kautta. Lisäksi tällä tavoin saadaan tallennustila, joka ei heikennä tietokannan toimintaa. Blob-tallennus on asiakirjanhallinnan oletustallennusmekanismi ja toimii välittömästi. |
 | **Onko toinen ominaisuus korvannut?**   | Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä.   |
 | **Tuotealueet, joihin vaikutetaan**         | Kaikki moduulit  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.   |
@@ -1037,7 +1079,7 @@ Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettuihin tiedo
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminnolle ei ollut käyttöä. |
-| **Onko toinen ominaisuus korvannut?**   | En                                     |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                     |
 | **Tuotealueet, joihin vaikutetaan**         | Työajan seuranta                    |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.         |
 
@@ -1095,7 +1137,7 @@ Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulos
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö ja rajoitetut toiminnot  |
-| **Onko toinen ominaisuus korvannut?**   | En              |
+| **Onko toinen ominaisuus korvannut?**   | Ei              |
 | **Tuotealueet, joihin vaikutetaan**         | Yhteensopivuus ja sisäisen tarkistus, ostoreskontra  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen. |
 
@@ -1151,7 +1193,7 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | XML-muotoa Saksan EU:n arvonlisäveron yhteenvetoilmoitusta varten ei enää tueta. Saksan EU:n arvonlisäveron yhteenvetoilmoitus voidaan lähettää Saksan veroviranomaiselle ainoastaan ELMA5-tekstitiedostomuodossa. |
-| **Onko toinen ominaisuus korvannut?**   | En         |
+| **Onko toinen ominaisuus korvannut?**   | Ei         |
 | **Tuotealueet, joihin vaikutetaan**         | Vero        |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.   |
 
@@ -1204,7 +1246,7 @@ Tällä ominaisuudella voitiin luoda Meksikossa sähköisiä laskuja käyttämä
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Menetelmää ei enää käytetä. Veroviranomaiset lopettivat CFD-menetelmällä luotavat sähköiset laskut ja niiden tilalla käytetään CFDI (Comprobante Fiscal Digital a través de Internet) -menetelmää, jossa allekirjoitus on delegoitu kolmannen osapuolen palveluntarjoajalle (PAC). Kuukausiraportti on poistettu, ja käyttäjät voivat tehdä kyselyvaihtoehdolla kyselyjä historiallisista tapahtumista. |
-| **Onko toinen ominaisuus korvannut?**   | En    |
+| **Onko toinen ominaisuus korvannut?**   | Ei    |
 | **Tuotealueet, joihin vaikutetaan**         | Myyntireskontra, projekti   |
 | **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
 
@@ -1236,7 +1278,7 @@ Varastokirjauskansiot eivät enää tue kirjauskansion merkitsemistä yksityisek
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminnolle ei ollut käyttöä. |
-| **Onko toinen ominaisuus korvannut?**   | En                                     |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                     |
 | **Tuotealueet, joihin vaikutetaan**         | Inventoinnin- ja varastonhallinta                   |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.         |
 
@@ -1269,7 +1311,7 @@ Tällä toiminnolla voi vaihtaa yhden kolmesta vakiotuotedimension nimestä (kok
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Dynamics AX:n nykyinen versio ei tue suorituksen aikaisia otsikkomuutoksia. |
-| **Onko toinen ominaisuus korvannut?**   | En                                                                            |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                            |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta                                                |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                                                |
 
@@ -1298,7 +1340,7 @@ Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdolli
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö ja rajoitetut toiminnot |
-| **Onko toinen ominaisuus korvannut?**   | En                                           |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                           |
 | **Tuotealueet, joihin vaikutetaan**         | Yhdysvaltojen arvonlisävero                                 |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.               |
 
@@ -1309,7 +1351,7 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Dynamics AX:n käyttämässä Microsoft Azuren infrastruktuurissa on uusia korvaavia ominaisuuksia (esimerkiksi Azure-sivustot). |
-| **Onko toinen ominaisuus korvannut?**   | En   |
+| **Onko toinen ominaisuus korvannut?**   | Ei   |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilön työhönotto, palvelupyynnön hallinta, tarjouspyynnöt, toimittajan rekisteröinti, mahdollisuuksien ja kampanjoiden yhteistyötyötila  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.    |
 
@@ -1334,7 +1376,7 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 
 ### <a name="virtual-company-accounts"></a>Virtuaaliyritykset
 
-Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi. Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä. Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.
+Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi. Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](../../fin-ops/get-started/ax4-content-retired.md). Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä. Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1349,7 +1391,7 @@ Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Finance and Operations on yhteensopiva taulutietokoneiden kanssa. Tablettisovellusta ei enää tarvita.    |
+| **Poiston tai vanhentumisen syy** | Finance and Operationsia voi käyttää tableteissa. Tablettisovellusta ei enää tarvita.    |
 | **Onko toinen ominaisuus korvannut?**   | Nro          |
 | **Tuotealueet, joihin vaikutetaan**         | Kulujen hallinta   |
 | **Tila**                         | Poistettu: Tämä toiminto on käytössä vain Dynamics AX 2012 R3:ssa. |

@@ -1,8 +1,8 @@
 ---
 title: Määritä Human Resourcesin parametrit
 description: Tässä ohjeaiheessa kerrotaan, miten voit määrittää yrityskohtaisia parametreja Dynamics 365 Human Resources -sovelluksessa.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052406"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771432"
 ---
 # <a name="configure-human-resources-parameters"></a>Määritä Human Resourcesin parametrit
 
@@ -30,7 +30,7 @@ Joidenkin henkilöstöhallinnon parametrien asetukset ovat yhteisiä eri yrityks
 
 Henkilöstöhallinnon parametrien määrittämiseen käytetään kahta sivua. Käytä yhtiöiden kesken jaettujen parametrien määrittämiseen **Henkilöstöhallinnon jaetut parametrit** -sivua. Käytä yhtiökohtaisten (ts. asetukset koskevat yhtä yhtiötä) parametrien määrittämiseen **Henkilöstöparametrit**-sivua.
 
-![Valitse Henkilöstöhallintoparametrit](./media/hr-employee-self-service-human-resources-parameters.png)
+![Valitse Henkilöstöhallintoparametrit.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 **Henkilöstöparametrit**-sivulla asetukset jaetaan kuudelle välilehdelle:
 
@@ -51,20 +51,21 @@ Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja.
 
 **Yleinen**-välilehdellä määritetään poissaoloja, tapaturmia ja sairaustapauksia sekä uusia työntekijöitä koskevien tietojen ulkonäkö. Tämän välilehden asetukset määrittävät myös osan oletusarvoista, jotka tulevat näkyviin työskentelysi aikana. Tässä välilehdessä voit tehdä erityisesti seuraavat toimet:
 
-- Valitse avoimille poissaolotapahtumille käytettävä väri
-- Valitse raporteille käytettävä tyylisivu
-- Ota koulutuskurssien ja poissaolokirjauksen välinen integrointi käyttöön
+- Valitse avoimille poissaolotapahtumille käytettävä väri.
+- Valitse raporteille käytettävä tyylisivu.
+- Ota koulutuskurssien ja poissaolokirjauksen välinen integrointi käyttöön.
 - Valitse poissaolokoodi, jota käytetään tämän integroinnin hallinnassa.
 - Valitse, kuinka kauan haluat säilyttää loukkaantumis- ja sairaustapauksia.
 - Määritä oletusarvoinen tunnusnumero, joka näytetään, kun uusi työntekijä palkataan.
+- Määritä päivämäärä, jota käytetään työsuhteen keston laskennassa. 
 
-![Yleinen-välilehti](./media/hr-setup-parameters-general.png)
+![Yleinen-välilehti.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Työhönotto
 
 **Työhönotto**-välilehden asetukset määrittävät asiakirjatyypit, joita käytetään hakijoille automaattisesti lähetettävässä viestinnässä. Voit myös valita avoimille hakemuksille käytettävän työhönottoprojektin.
 
-Työhönottoprojektin vanhentumiselle määritetty ajanjakso määrittää työhönottoprojektit, jotka sisällytetään **Työhönoton hallinta** -työtilan **Vanhentuvat projektit** -ruutuun. Hakemuksen määräajan varoitukselle määritettyä ajanjaksoa käytetään näyttämään työhönottoprojektit, jotka lähestyvät hakemuksille asetettua määräaikaansa **Työhönotto**-työtilan **Hakemuksen määräaika lähestyy** -ruudussa.
+**Työhönottoprojektin vanhentuminen** -kohdassa määritetty ajanjakso määrittää ne työhönottoprojektit, jotka sisällytetään **Vanhentuvat projektit** -ruutuun **Työhönoton hallinta** -työtilassa. Hakemuksen määräaikavaroitukselle määritettyä ajanjaksoa käytetään näyttämään ne työhönottoprojektit, jotka lähestyvät hakemuksille määritettyä määräaikaa **Hakemuksen määräaika lähestyy** -ruudussa **Työhönotto**-työtilassa.
 
 Lisätietoja työhönotosta on kohdassa [Ehdokkaiden työhönotto](hr-personnel-recruit.md).
 
@@ -76,7 +77,7 @@ Voit käyttää henkilöstöhallinnon **Kompensaatio**-välilehteä rajoittaakse
 
 Lisätietoja kompensaatiosta on kohdassa [Kompensaatiosuunnitelmien yleiskuvaus](hr-compensation-overview.md).
 
-![Kompensaatiovälilehti](./media/hr-setup-parameters-compensation.png)
+![Kompensaatio-välilehti.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Numerosarjat
 
@@ -96,30 +97,30 @@ Lisätietoja on kohdassa [Numerosarjojen yleiskatsaus](../fin-ops-core/fin-ops/o
 > [!NOTE]
 > Tehtyjen työtuntien määrä ei voi ylittää 1 250 tuntia, ja työsuhteen pituus ei voi ylittää 12 kuukautta. Nämä enimmäisarvot ovat Yhdysvaltojen liittovaltion lainsäädännön mukaiset.
 
-![Numerosarjat-välilehti](./media/hr-setup-parameters-number-sequences.png)
+![Numerosarjat-välilehti.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 Voit määrittää FMLA-kelpoisuusvaatimukset ja FMLA-korvausajat FMLA-välilehdestä. Lisätietoja on kohdassa [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md).
 
-![FMLA-välilehti](./media/hr-setup-parameters-fmla.png)
+![FMLA-välilehti.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Työntekijän itsepalvelu
 
-**Työntekijän itsepalvelu** -välilehden asetukset vaikuttavat siihen, miten työntekijän itsepalvelu näytetään työntekijöille. Tästä välilehdestä voit suorittaa seuraavat toimet:
+**Työntekijän itsepalvelu** -välilehden asetukset vaikuttavat siihen, miten **työntekijän itsepalvelu** näytetään työntekijöille. Tässä välilehdessä voidaan suorittaa seuraavat tehtävät:
 
-- Anna työntekijän itsepalvelutyötilalle nimi
+- **Työntekijän itsepalvelu** -työtilan nimeäminen
 - Valitse tiedot, joita esimies voi syöttää työntekijöille
 - Lisää hyödyllisiä linkkejä työntekijöille
 - Estä työntekijöitä lisäämästä muokkaamasta yrityksen yhteystietoja. Lisätietoja on kohdassa [Henkilökohtaisten tietojen muokkaamisen rajoittaminen](hr-employee-self-service-restrict-editing.md).
 
-Lisätietoja työntekijän itsepalvelun määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
+Lisätietoja **työntekijän itsepalvelun** määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
 
-![Työntekijän itsepalvelu -välilehti](./media/hr-setup-parameters-employee-self-service.png)
+![Työntekijän itsepalvelu -välilehti.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Esimiehen itsepalvelu
 
-**Esimiehen itsepalvelu** -välilehden asetukset vaikuttavat siihen, mitä esimiehet näkevät esimiehen itsepalvelussa. Tästä välilehdestä voit määrittää seuraavat vaihtoehdot:
+**Esimiehen itsepalvelu** -välilehden asetukset vaikuttavat siihen, mitä esimiehet näkevät **esimiehen itsepalvelussa**. Tästä välilehdestä voit määrittää seuraavat vaihtoehdot:
 
 - Vanhentuvien tietueiden ajanjakso
 - Tiedot, jotka esimiehet näkevät vanhentuvissa tietueissa
@@ -127,15 +128,15 @@ Lisätietoja työntekijän itsepalvelun määrittämisestä on kohdassa [Työnte
 - Poistuvien työntekijöiden näkymät
 - Hyödyllisiä linkkejä esimiehille
 
-Lisätietoja esimiehen itsepalvelun määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
+Lisätietoja **esimiehen itsepalvelun** määrittämisestä on kohdassa [Työntekijän ja esimiehen itsepalvelun yleiskatsaus](hr-employee-manager-self-service-overview.md).
 
-![Esimiehen itsepalvelu -välilehti](./media/hr-setup-parameters-manager-self-service.png)
+![Esimiehen itsepalvelu -välilehti.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Etujen hallinta
 
-Voit määrittää etujen hallinnan sähköpostiasetukset Etujen hallinta -välilehdestä. Lisätietoja etujen hallinnan määrittämisestä ja käytöstä on kohdassa [Etujen hallinnan yleiskatsaus](hr-benefits-management-overview.md).
+Voit määrittää etujen hallinnan sähköpostiasetukset **Etujen hallinta** -välilehdestä. Lisätietoja etujen hallinnan määrittämisestä ja käytöstä on kohdassa [Etujen hallinnan yleiskatsaus](hr-benefits-management-overview.md).
 
-![Etujen hallinta -välilehti](./media/hr-setup-parameters-benefits-management.png)
+![Etujen hallinta -välilehti.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Loma ja poissaolo
 
@@ -145,7 +146,7 @@ Lisätietoja lomien ja poissaolojen määrittämisestä ja käytöstä on kohdas
 
 Voit valita organisaatiosi tukemat maksutavat **Maksutavat**-välilehdestä. Lisätietoja kompensaation määrittämisestä on kohdassa [Kompensaatiosuunnitelmien yleiskuvaus](hr-compensation-overview.md).
 
-![Maksutavat-välilehti](./media/hr-setup-parameters-payment-methods.png)
+![Maksutavat-välilehti.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

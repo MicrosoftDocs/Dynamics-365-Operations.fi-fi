@@ -2,11 +2,9 @@
 title: Maksuluetteloraportti Euroopassa
 description: Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntities, ProjFormletterParameters, CustFormletterParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 70b7b89a47b902c5c12213662d6ca2c0382e68fc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 114d872ea939999afb6d3652f8cd6db34d0d99e1c303d6770d8613647a04f0c2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712141"
 ---
 # <a name="payment-slip-report-for-europe"></a>Maksuluetteloraportti Euroopassa
 
@@ -62,3 +60,6 @@ Kun olet määrittänyt maksutositeliitteen muodon myyntilaskuille, vapaatekstil
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

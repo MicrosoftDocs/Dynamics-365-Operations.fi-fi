@@ -1,16 +1,13 @@
 ---
-title: Tilinhallinnan sivut ja moduulit
+title: Tilin hallintasivut ja -moduulit
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716247"
 ---
-# <a name="account-management-pages-and-modules"></a>Tilinhallinnan sivut ja moduulit
+# <a name="account-management-pages-and-modules"></a>Tilin hallintasivut ja -moduulit
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Tilien hallinta viittaa sivuryhmään, jota käytetään Dynamics 365 Commercen käyttäjän tileihin liittyvien tietojen hallinnassa. Tilinhallinnan sivut sisältävät tilinhallinnan saapumissivun, käyttäjäprofiilisivun, käyttäjän osoitteen sivun, tilaushistoriasivun, tilaustietojen sivun, kanta-asiakkuussivun ja toivomusluettelosivun.
 
@@ -54,9 +49,9 @@ Tilaushistoriasivulla näkyvät kaikki käyttäjän asettamat viimeaikaiset tila
 
 Tilaustietojen sivulla on eriteltyjä tietoja jokaisesta tilauksesta. Sitä voi käyttää tilaushistoriasivulta. Se käyttää tilaustietojen moduulia, jossa edellytetään myynnin tai tapahtuman tunnusta tilaustietojen noutamiseksi.
 
-### <a name="user-profile-page"></a>Käyttäjäprofiilisivu
+### <a name="my-profile-page"></a>Oma profiili -sivu
 
-Käyttäjäprofiilisivulla näkyvät käyttäjätilin tiedot, kuten käyttäjän nimi ja sähköpostiosoite. Se käyttää käyttäjäprofiilin tieto- ja muokkausmoduuleja. Vaikka sähköpostiosoitetta ei voi poistaa, sitä voi muokata. Käyttäjäprofiilisivulla näkyvät myös käyttäjäasetukset, joiden avulla käyttäjä voi halutessaan valita tiettyjä ominaisuuksia, kuten suositusluetteloiden mukauttamisen, tai poistaa ne käytöstä. 
+Oma profiili -sivulla näkyvät käyttäjän tiliprofiilin tiedot käyttämällä tiliprofiilimoduulia. Sivulla näkyy käyttäjän tiliin liitetty sähköpostiosoite sekä tilille määritetyt asetukset. Jos määrität mukautettuja asiakkaan määritteitä, nämä määritteet näkyvät myös Lisätiedot-osassa. Käyttäjät voivat muokata nimeään, asetuksiaan tai lisätietojaan (jos käytettävissä).
 
 ### <a name="user-address-page"></a>Käyttäjän osoitteen sivu
 
@@ -89,3 +84,6 @@ Kanta-asiakasohjelmaan liittymistä varten voidaan luoda markkinointisivu, jossa
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,30 +2,27 @@
 title: Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 description: Tässä ohjeaiheessa käsitellään tuotannon käyttöliittymää työntekijän näkökulmasta.
 author: johanhoffmann
-manager: tfehr
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecution
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4427383"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075016"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tuotannon käyttöliittymä on optimoitu kosketuskäyttöön. Siihen suunniteltu visuaalinen kontrasti vastaa tuotantoympäristön helppokäyttöisyysvaatimuksia. Siinä on kaikki samat toiminnalliset ominaisuudet kuin työkorttilaitteessa. Siinä voidaan kuitenkin aloittaa myös rinnakkain useita töitä työluettelosta. (Tätä ominaisuutta kutsutaan myös *töiden niputukseksi*.) Työntekijät voivat avata työluettelosta myös Microsoft Dynamics 365 Guidesissa luodun oppaan. He saavat tällä tavoin visuaalisia ohjeita HoloLensissa.
 
@@ -35,17 +32,17 @@ Ennen kuin työntekijät voivat aloittaa laitteen käytön, työnjohtajan tai te
 
 Kun laite on valmisteltu, kirjautumissivu avautuu. Tällä sivulla on tietoja paikallisen työsolun töiden tilasta. Nämä tiedot päivitetään säännöllisesti. Työntekijät kirjautuvat sivulla käyttämällä nimilappunsa tunnusta. Vaikka työntekijöillä ei tarvitse olla Supply Chain Managementin käyttäjätiliä, heillä on oltava *aikarekisteröidyn työntekijän* tili, jolla he kirjautuvat sisään.
 
-![Tuotannon käyttöliittymän kirjautumissivu](media/pfei-sign-in-page.png "Tuotannon käyttöliittymän kirjautumissivu")
+![Tuotannon käyttöliittymän kirjautumissivu.](media/pfei-sign-in-page.png "Tuotannon käyttöliittymän kirjautumissivu")
 
 Tämän ohjeaiheen muissa osissa käsitellään tapoja, joilla työntekijät käyttävät liittymää.
 
 ## <a name="all-jobs-tab"></a>Kaikki työt -välilehti
 
-**Kaikki työt** -välilehdessä on työluettelo. Tässä luettelossa on kaikki ne tuotantotyöt, joiden tila on *Ei aloitettu*, *Pysäytetty* tai *Aloitettu*.
+**Kaikki työt** -välilehdessä on työluettelo. Tässä luettelossa on kaikki ne tuotantotyöt, joiden tila on *Ei aloitettu*, *Pysäytetty* tai *Aloitettu*. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
 
-![Kaikki työt -välilehti](media/pfei-all-jobs-tab.png "Kaikki työt -välilehti")
+![Kaikki työt -välilehti.](media/pfei-all-jobs-tab.png "Kaikki työt -välilehti")
 
-Työluettelossa on seuraavat sarakkeet. (Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.)
+Työluettelossa on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.
 
 1. **Valintasarake** – Vasemmassa sarakkeessa käytetään valintamerkkejä ilmaisemaan työt, jotka työntekijä on valinnut. Työntekijät voivat valita luettelossa useita töitä samanaikaisesti. Kaikki työt voidaan valita valitsemalla valintamerkki sarakkeen otsikossa. Jos töitä valitaan yksi, kyseisen työn tiedot näytetään sivun alareunassa.
 1. **Työn tilasarake** – Tämä sarake ilmaisee symboleilla kunkin työn tilan. Jos työllä ei ole tässä sarakkeessa symbolia, sen tila on *Ei aloitettu*. Vihreä kolmio ilmaisee työn, jonka tila on *Aloitettu*. Kaksi keltaista pystysuoraa viivaa ilmaisevat työn, jonka tila on *Pysäytetty*.
@@ -60,9 +57,11 @@ Työluettelossa on seuraavat sarakkeet. (Numerot vastaavat edellisessä kuvassa 
 
 ## <a name="active-jobs-tab"></a>Aktiiviset työt -välilehti
 
-![Aktiiviset työt -välilehti](media/pfei-active-jobs-tab.png "Aktiiviset työt -välilehti")
+**Aktiiviset työt** -välilehdissä on luettelo kaikista töistä, jotka kirjautunut työntekijä on jo aloittanut. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
 
-**Aktiiviset työt** -välilehden työluettelossa on seuraavat sarakkeet:
+![Aktiiviset työt -välilehti.](media/pfei-active-jobs-tab.png "Aktiiviset työt -välilehti")
+
+Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
 - **Valintasarake** – Vasemmassa sarakkeessa käytetään valintamerkkejä ilmaisemaan työt, jotka työntekijä on valinnut. Työntekijät voivat valita luettelossa useita töitä samanaikaisesti. Kaikki työt voidaan valita valitsemalla valintamerkki sarakkeen otsikossa. Jos töitä valitaan yksi, kyseisen työn tiedot näytetään sivun alareunassa.
 - **Tilaus** – tämä sarake näyttää työn tuotantotilauksen numeron.
@@ -73,11 +72,32 @@ Työluettelossa on seuraavat sarakkeet. (Numerot vastaavat edellisessä kuvassa 
 - **Hävikki** – tämä sarake näyttää määrän, joka on työstä jo hävikkiä.
 - **Jäljellä** – tämä sarake näyttää määrän, joka työstä on vielä valmistumatta.
 
+## <a name="my-machine-tab"></a>Oma kone -välilehti
+
+**Oma kone** -välilehdessä työntekijät voivat valita resurssin, joka on liitetty koneresurssiin **Kaikki työt** -välilehdessä määritetyssä suodattimessa. Työntekijät voi sitten tarkastella valitun resurssin tilaa ja kuntoa lukemalla enintään neljän valitun laskurin arvot sekä viimeaikaisten ylläpitopyyntöjen ja rekisteröityjen seisokkien luetteloita. Työntekijät voi myös pyytää valitun resurssin ylläpitoa sekä rekisteröidä ja muokata koneen seisokkeja. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
+ 
+![Oma kone -välilehti.](media/pfei-my-machine-tab.png "Oma kone -välilehti")
+
+**Oma kone** -välilehdessä on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.
+
+1. **Koneresurssi** – Valitse seurattava koneresurssi. Aloita nimen kirjoittaminen ja tee valinta kirjoitusta vastaavien resurssien luettelosta. Vaihtoehtoisesti voit valita suurennuslasikuvakkeen ja tehdä valinnan luettelossa, jossa on kaikki työluettelon suodattimessa oleviin resursseihin liitetyt resurssit.
+
+    > [!NOTE]
+    > Supply Chain Managementin käyttäjät voivat määrittää tarpeen mukaan kullekin resurssille resurssin **Kaikki resurssit** -sivulla (**Käyttöomaisuus**-välilehden avattavassa **Resurssi**-luettelossa). Lisätietoja on kohdassa [Resurssin luominen](../asset-management/objects/create-an-object.md).
+
+1. **Asetukset** – Valitse rataskuvake ja avaa valintaikkuna, jossa voidaan valita, mitä valitun koneresurssin laskureita tarkastellaan. Näiden laskureiden arvot näytetään **Resurssien hallinta** -välilehden yläosassa. (Seuraavassa näyttökuvassa olevassa) **Asetukset**-valikossa voi ottaa käyttöön enintään neljä laskuria. Valitse kukin käyttöönotettava laskuri käyttämällä ruudun yläosassa olevaa hakukenttää. Hakukentässä on luettelo kaikista valittuun resurssiin liitetyistä laskurista. Resurssi valittiin **Resurssien hallinta** -sivun yläosassa. Määritä kukin laskuri seuraamaan joko **Koottu**-arvoa ja laskurin uusinta **Toteutunut**-arvoa. Jos määritetty laskuri esimerkiksi seuraa, kuinka monta tuntia kone on ollut käytössä, määrityksenä on oltava **Koottu**. Jos laskuri määritetään seuraamaan viimeksi päivitettyä lämpötilaa tai painetta, määrityksenä on oltava **Toteutunut**. Valitse **OK** tallentaaksesi asetukset ja sulje valintaikkuna.
+
+    ![Oma kone -välilehden asetukset.](media/pfei-my-machine-tab-settings.png "Oma kone -välilehden asetukset")
+
+1. **Yläpitopyyntö** – Tämän painikkeen valinta avaa valintaikkunan, jossa voidaan luoda ylläpitopyyntö. Pyynnölle voi antaa kuvauksen ja lisätä huomautuksen. Pyyntö tulee Supply Chain Management -käyttäjän näkyville, ja tämä käyttäjä voi sitten muuntaa ylläpitopyynnön ylläpidon työtilaukseksi.
+1. **Rekisteröi seisokki** – Tämän painikkeen valinta avaa valintaikkunan, jossa voi rekisteröidä koneen seisokin. Seisokille voidaan valita syykoodi ja antaa seisokin ajankohta ja kesto. Koneen seisokkirekisteröinnin avulla lasketaan koneresurssin tehokkuus.
+1. **Näytä tai muokkaa** – tämän painikkeen valinta avaa valintaikkunan, jossa voi muokata tai tarkastella aiemmin luotuja seisokkitietueita.
+
 ## <a name="starting-and-completing-production-jobs"></a>Tuotantotöiden aloittaminen ja valmistuminen
 
 Työntekijä aloittaa tuotantotyön valitsemalla työn **Kaikki työt** -välilehdessä ja avaamalla **Aloita työ** -valintaikkunan sitten valitsemalla **Aloita työ**.
 
-![Aloita työ -valintaikkuna](media/pfei-start-job-dialog.png "Aloita työ -valintaikkuna")
+![Aloita työ -valintaikkuna.](media/pfei-start-job-dialog.png "Aloita työ -valintaikkuna")
 
 Työntekijät vahvistavat **Aloita työ** -valintaikkunassa tuotannon määrän ja aloittavat sitten työn. Työntekijät voivat säätää määrää valitsemalla **Määrä**-kentän ja käyttämällä avautuvaa numeronäppäimistöä. Työntekijät aloittavat sitten työn tekemisen valitsemalla **Aloita**. **Aloita työ** -valintaikkuna suljetaan ja työ lisätään **Aktiiviset työt** -välilehteen.
 
@@ -87,13 +107,96 @@ Työntekijät voivat aloittaa työn riippumatta siitä, mikä sen tila on. Jos t
 
 Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida tuotetut hyväksyttävät määrät valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Raportointi on meneillään**. Tämän jälkeen työntekijä antaa **Raportointi on meneillään** -valintaikkunassa hyväksyttyjen määrän numeronäppäimistössä. Määrä on oletusarvoisesti tyhjä. Työntekijä voi määrän antamisen jälkeen päivittää työn tilaksi *Käsittelyssä*, *Pysäytetty* tai *Valmis*.
 
-![Raportointi on meneillään -valintaikkuna](media/pfei-report-progress-dialog.png "Raportointi on meneillään -valintaikkuna")
+![Raportointi on meneillään -valintaikkuna.](media/pfei-report-progress-dialog.png "Raportointi on meneillään -valintaikkuna")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Tuotemäärien raportointi sellaisten erätilausten osalta, joilla on oheis- ja sivutuotteita
+
+Työntekijät voivat käyttää tuotannon suoritusliittymää erätilausten edistymisen raportointiin. Tähän raportointiin kuuluu oheis- ja sivutuotteita koskeva raportointi.
+
+Jotkut valmistajat erityisesti prosessitoimialoilla käyttävät erätilauksia tuotantoprosessiensa hallintaan. Erätilaukset luodaan kaavojen perusteella, ja nämä kaavat voidaan määritellä siten, että niiden tuloksena on oheis- ja sivutuotteita. Kun palautetta näistä erätilauksista raportoidaan, tulosten määrä on rekisteröitävä reseptinimikkeeseen sekä oheis- ja sivutuotteisiin.
+
+Kun työntekijä saa erätilaukseen liittyvän tehtävän valmiiksi tai osittain valmiiksi, hän voi raportoida kullekin tilauksen tulokseksi määritetylle tuotteelle tuote- tai hävikkimääriä. Erätilauksen tulokseksi määritetyt tuotteet voivat olla tyyppiä *Kaava*, *Oheistuote* tai *Sivutuote*.
+
+Tuotteiden tuotemäärien raportointia varten työntekijä valitsee tehtävän **Aktiiviset tehtävät** -välilehdestä ja valitsee sitten **Raportoi edistyminen**.
+
+Sitten työntekijä voi valita **Raportoi edistyminen** -valintaruudussa raportoitavan tuotteen niiden tuotteiden joukosta, jotka on määritetty erätyön tuloksiksi. Työntekijä voi valita jonkin luettelon useista tuotteista ja valita sitten **Raportoi edistyminen**. Kunkin tuotteen osalta määrä on oletusarvoisesti tyhjä, ja työntekijä voi syöttää määrän numeronäppäimistöllä. Työntekijä voi siirtyä valittujen tuotteiden välillä painikkeiden **Edellinen** ja **Seuraava** avula. Työntekijä voi kunkin tuotteen määrän antamisen jälkeen päivittää työn tilaksi *Käsittelyssä*, *Pysäytetty* tai *Valmis*.
+
+![Oheis- ja sivutuotteiden raportointi.](media/report-co-by-products.png "Oheis- ja sivutuotteiden raportointi")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Suunnittelunimikkeiden erätilauksia koskeva raportointi
+
+Kun työntekijä saa suunnittelunimikkeen erätilauksen tehtävän valmiiksi, hän raportoi määrät vain oheis- ja sivutuotteiden osalta, koska suunnittelunimikkeet eivät sisällä *Kaava*-tyypin nimikettä.
+
+### <a name="reporting-co-product-variation"></a>Oheistuotteiden vaihtelua koskeva raportointi
+
+Jos erätilaus luodaan kaavaversiosta, jossa **Oheistuotteen variaatiot** -asetuksen arvoksi on määritetty *Kyllä*, työntekijä voi raportoida oheistuotteista, jotka eivät kuulu erätuotteiden määritelmään. Tätä toimintoa käytetään skenaarioissa, joissa tuotantoprosessissa voi esiintyä odottamaton tuotetulos.
+
+Tällöin työntekijä voi määrittää raportoitavan oheistuotteen ja määrän valitsemalla **Oheistuotteiden variaatiot** raportin edistymisen valintaikkunassa. Sitten työntekijä voi valita kaikista julkaistuista tuotteista, jotka on määritetty oheistuotteiksi.
 
 ## <a name="reporting-scrap"></a>Hävikin raportointi
 
 Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida hävikin valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Hävikin raportointi**. Tämän jälkeen työntekijä antaa **Hävikin raportointi** -valintaikkunassa hävikin määrän numeronäppäimistöllä. Työntekijä valitsee myös syyn (*Ei yhtään*, *Kone*, *Käyttäjä* tai *Materiaali*).
 
-![Hävikin raportointi -valintaikkuna](media/pfei-report-scrap-dialog.png "Hävikin raportointi -valintaikkuna")
+![Hävikin raportointi -valintaikkuna.](media/pfei-report-scrap-dialog.png "Hävikin raportointi -valintaikkuna")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Materiaalikulutuksen oikaiseminen ja materiaalivarausten tekeminen
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Työntekijät voivat säätää kunkin tuotantotyön materiaalikulutusta. Tätä toimintoa käytetään tilanteissa, joissa tuotantotyössä kulutetun materiaalien todellinen määrä on suurempi tai pienempi kuin suunniteltu määrä. Siksi varastotasot on muutettava niin, että ne ovat ajan tasalla.
+
+Työntekijät voivat myös tehdä varauksia materiaalien erä- ja sarjanumeroista. Tätä toimintoa käytetään tilanteissa, joissa työntekijän on määritettävä manuaalisesti, mitä materiaalin erä- tai sarjanumeroita kulutettiin, täyttääkseen materiaaliin liittyvät jäljitysvaatimukset.
+
+Työntekijät voivat määrittää oikaistavat määrän valitsemalla **Oikaise materiaali**. Tämä painike on käytettävissä seuraavissa sijainneissa:
+
+- **Hävikin raportointi** -valintaikkunassa
+- **Edistymisen raportointi** -valintaikkunassa
+- Oikealla työkalurivissä
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Materiaalikulutuksen oikaiseminen Hävikin raportointi- ja Raportointi on meneillään -valintaikkunoissa
+
+Kun työntekijä on syöttänyt määrän raporttiin **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa, **Materiaalin oikaiseminen** -painike on käytettävissä. Kun käyttäjä valitsee tämän painikkeen, näyttöön tulee **Materiaalin oikaiseminen** -valintaikkuna. Tässä valintaikkunassa luetellaan nimikkeet, jotka on suunniteltu kulutettavaksi, kun työn hyvä määrä tai hävikkimäärä raportoidaan.
+
+Valintaikkunan luettelossa on seuraavat tiedot:
+
+- **Tuotenumero** – Päätuote ja tuotevariantti.
+- **Tuotteen nimi** – Tuotteen nimi.
+- **Ehdotus** – Arvioitu materiaalimäärä, joka kulutetaan, kun työn määritetyn määrän edistyminen tai hävikki ilmoitetaan.
+- **Kulutus** – Todellinen materiaalimäärä, joka kulutetaan, kun työn määritetyn määrän edistyminen tai hävikki ilmoitetaan.
+- **Varattu** – Materiaalimäärä, joka on fyysisesti varattu varastossa.
+- **Yksikkö** – Tuoterakenteen (BOM) yksikkö.
+
+Valintaikkunan oikeassa reunassa näkyy seuraavat tiedot:
+
+- **Tuotenumero** – Päätuote ja tuotevariantti.
+- **Arvioitu** – Arvioitu kulutettava määrä.
+- **Aloitettu** – Tuotantotyön aloitettu määrä.
+- **Jäljelle jäävä määrä** – Arvioidusta määrästä se määrä, joka on vielä kulutettava.
+- **Vapautettu määrä** – Määrä, joka on kulutettu.
+
+Voidaan tehdä seuraavia toimenpiteitä:
+
+- Työntekijä voi määrittää materiaalin oikaistavat määrän valitsemalla **Oikaise kulutus**. Kun määrä on vahvistettu, **Kulutus**-sarakkeen määrä päivitetään oikaistulla määrällä.
+- Kun työntekijä valitsee **Materiaalin oikaiseminen**, tuotannon keräysluettelon kirjauskansio luodaan. Tämä kirjauskansio sisältää samat nimikkeet ja määrät kuin **Oikaise materiaali** -luettelo.
+- Kun työntekijä muuttaa määrää **Oikaise materiaali** -valintaikkunassa, vastaavan kirjauskansiorivin **Ehdotus**-kenttään päivitetään sama määrä. Jos työntekijä valitsee **Oikaise materiaali** -valintaikkunassa **Peruuta**, keräysluettelo poistetaan.
+- Jos työntekijä valitsee **OK**, keräysluetteloa ei poisteta. Se kirjataan, kun työ raportoidaan **Hävikin raportointi**- tai **Edistymisen raportointi**-valintaikkunassa.
+- Jos työntekijä valitsee **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa **Peruuta**, keräysluettelo poistetaan.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Materiaalin säätäminen oikealla olevan työkalurivin avulla
+
+**Materiaalin säätäminen** -painike voidaan konfiguroida niin, että se näkyy työkalurivillä oikeassa reunassa. (Lisätietoja on kohdassa [Suunnittele tuotantotilan suorituksen liittymä](production-floor-execution-tabs.md).) Työntekijä voi valita käynnissä olevaa tuotantotyötä varten **materiaalin oikaisemisen**. Tässä tapauksessa näyttöön tulee **Materiaalin oikaiseminen** -valintaikkuna, jossa työntekijä voi tehdä haluamansa muutokset. Kun valintaikkuna avataan, tuotantotilausta varten luodaan oikaistuja määriä sisältävien rivien tuotannon keräysluettelo. Jos työntekijä valitsee **Kirjaa nyt**, oikaisu vahvistetaan ja keräysluettelo kirjataan. Jos työntekijä valitsee **Peruuta**, keräysluettelo poistetaan eikä oikaisua tehdä.
+
+### <a name="reserve-materials"></a>Varaa materiaalit
+
+**Materiaalien oikaiseminen** -valintaikkunassa työntekijä voi tehdä ja oikaista materiaalivarauksia valitsemalla **Varaa materiaali**. Näyttöön tulevassa **Varaa materiaali** -valintaikkunassa näkyy nimikkeen fyysisesti saatavilla oleva varasto kutakin varasto- ja seurantadimensiota varten.
+
+Jos materiaali on otettu käyttöön lisävarastoprosesseissa, luettelossa näkyy vain tuotannon syötteen materiaalin sijainnin fyysisesti käytettävissä oleva varasto. Tuotannon syötteen sijainti määritetään resurssissa, jossa tuotantotyö suunnitellaan. Jos nimiketunnusta ohjataan erä- tai sarjanumerolla, näkyvissä on fyysisesti käytettävissä olevien erä- ja sarjanumeroiden luettelo. Jos haluat määrittää varattavan määrän, työntekijä voi valita **Varaa materiaali**. Jos haluat poistaa aiemmin luodun varauksen, työntekijä voi valita **Poista varaus**.
+
+Lisätietoja tuotannon syötesijainnin määrittämisestä on seuraavassa blogikirjoituksessa: [Tuotannon syötesijainnin määrittäminen](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Työntekijän **Varaa materiaali** -valintaikkunassa varaukset säilyvät, kun työntekijä valitsee **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa **Peruuta**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Työn valmistuminen ja uuden työn aloittaminen
 
@@ -115,7 +218,7 @@ Työntekijä valitsee kolmannen työn **Kaikki työt** -välilehdessä ja valits
 
 ## <a name="working-on-indirect-activities"></a>Epäsuorien tehtävien tekeminen
 
-Epäsuorat tehtävät ovat tehtäviä, jotka eivät liity suoraan tuotantotilaukseen. Epäsuorat tehtävät voidaan määrittää joustavasti, mistä on lisätietoja kohdassa [Työajan seurannan epäsuorien tehtävien määrittäminen](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Epäsuorat tehtävät ovat tehtäviä, jotka eivät liity suoraan tuotantotilaukseen. Epäsuorat tehtävät voidaan määrittää joustavasti, mistä on lisätietoja kohdassa [Työajan seurannan epäsuorien tehtävien määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 Shannon, joka on Contoson tuotannon työntekijä, haluaa esimerkiksi osallistua yrityksen kokoukseen, ja kokouksia pidetään epäsuorina tehtävinä. Jompikumpi seuraavista skenaarioista on käytössä:
 
@@ -124,7 +227,7 @@ Shannon, joka on Contoson tuotannon työntekijä, haluaa esimerkiksi osallistua 
 
 Kun Shannon on vahvistanut valintansa kummassakin skenaariossa, hän siirtyy joko kirjautumissivulle tai sivulle, joka odottaa hänen vahvistavan paluun epäsuorasta tehtävästä. Avautuva sivu määräytyy tuotannon käyttöliittymän määritysten mukaan. (Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>Taukojen käyttäminen
+## <a name="registering-breaks"></a>Rekisteröidyt tauot
 
 Työntekijät voivat kirjata taukoja. Tauot voidaan määrittää joustavasti, kuten on kuvattu kohdassa [Rekisteröinteihin perustuva palkka](pay-based-on-registrations.md).
 
@@ -146,3 +249,6 @@ Työntekijät voivat avata työhön liitetyn asiakirjan valitsemalla **Ohjeet**.
 1. Työntekijä opettelee tehtävän toimimalla oppaan mukaisesti.
 
 Lisätietoja HoloLens-oppaiden luonnista, määrittämisestä ja käyttämisestä on kohdassa [Yhdistetyn todellisuuden oppaiden tuottaminen tuotannon työntekijöille](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

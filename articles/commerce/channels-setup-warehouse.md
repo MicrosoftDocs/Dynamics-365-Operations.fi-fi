@@ -2,36 +2,30 @@
 title: Varaston määrittäminen
 description: Tässä ohjeaiheessa käsitellään uuden kanavan kanssa käytettävän varaston määrittämistä Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411963"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734016"
 ---
 # <a name="warehouse-set-up"></a>Varaston määrittäminen
-
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään uuden kanavan kanssa käytettävän varaston määrittämistä Microsoft Dynamics 365 Commercessa.
-
-## <a name="overview"></a>Yleiskatsaus
 
 Jokaiseen Commerce-kanavaan on liitettävä määritetty varasto. Seuraavilla menetelmillä tehdään määritykset, jotka vähintään tarvitaan Commerce-kanavan varaston määrittämiseen. Lisätietoja varaston määrittämisestä on kohdassa [Varastonhallinnan yleiskatsaus](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -51,7 +45,7 @@ Varaston toimipaikka määritetään noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa on esimerkki varaston toimipaikasta.
 
-![Esimerkki varaston toimipaikasta](media/warehouse-site.png)
+![Esimerkki varaston toimipaikasta.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Varaston määrittäminen
 
@@ -104,7 +98,7 @@ Voit määrittää varaston varastosijainnit standardivarastolle, vaurioituneell
     
 Seuraavassa kuvassa on San Franciscon varaston varastosijaintiasetukset.
 
-![Esimerkki varastosijainnin asetuksista](media/warehouse-inventory-locations.png)
+![Esimerkki varastosijainnin asetuksista.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Varaston määrityksen viimeistely
 
@@ -127,11 +121,11 @@ Viimeiste varaston määritys noudattamalla seuraavia ohjeita.
 
 Seuraavassa kuvassa on määritetyn varaston tiedot.
 
-![Esimerkki määritetystä varastosta](media/warehouse-sample.png)
+![Esimerkki määritetystä varastosta.](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Varastonhallinnan yleiskatsaus](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
+[Varastohallinnan yleiskatsaus](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Kanavien yleiskatsaus](channels-overview.md)
 
@@ -147,3 +141,6 @@ Seuraavassa kuvassa on määritetyn varaston tiedot.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

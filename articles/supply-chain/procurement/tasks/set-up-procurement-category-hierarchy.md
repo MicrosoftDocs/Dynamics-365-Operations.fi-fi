@@ -1,25 +1,23 @@
 ---
 title: Määritä hankintaluokkahierarkia
 description: Tässä menettelyssä selvitetään, miten voit luoda uusia solmuja hankintaluokkahierarkiaan ja miten hankintaprosessissa käytettävä hankintaluokka määritetään.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44fd02d37ec4e6431ca25dc980ed1d1785e45fac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a625ae5acc6d47b40a31b986da25df8f2d3fdbc8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239347"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577069"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Määritä hankintaluokkahierarkia
 

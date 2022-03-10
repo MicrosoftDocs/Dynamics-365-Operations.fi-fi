@@ -1,26 +1,28 @@
 ---
 title: Ostoehdotusten yleiskatsaus
 description: Tässä aiheessa kuvataan ostoehdotusten työnkulkua ja eri tiloja.
-author: kamaybac
+author: Henrikan
 ms.date: 11/02/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e067c9df91894c5d2ce05a6afb92d1fadc954531
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188194"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982899"
 ---
 # <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
 
@@ -47,7 +49,7 @@ Voit määrittää ostoehdotuksen työnkulkuprosessin voi kierrättämään osto
 
 Seuraava kaavio kuvaa ostoehdotukselle ja sen riveille määritettäviä tiloja kun ne kulkevat työnkulkuprosessin läpi.  
 
-[![Ostoehdotuksen otsikon ja rivien tilat](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Ostoehdotuksen otsikon ja rivien tilat.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Ostoehdotuksen otsikon ja rivien tilojen suhde
 
@@ -179,7 +181,7 @@ Voidaksesi luoda ostotilauksen ostoehdotusriveille, joille ei ole valittavissa k
 
 Kysynnän konsolidoinnin prosessi alkaa kohdasta, jossa ostoehdotus hyväksytään työnkulussa, jos budjetin hallinta on määritetty organisaatiolle ja budjettivaraukset sekä alustavat varaukset on tallennettu. Seuraavassa kaaviossa on kuvattu prosessin kulku kysynnän konsolidoinnille.  
 
-[![Kysynnän konsolidointiprosessin kulku](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Kysynnän konsolidointiprosessin kulku.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 

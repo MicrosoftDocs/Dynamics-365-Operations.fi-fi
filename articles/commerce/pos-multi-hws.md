@@ -1,12 +1,10 @@
 ---
 title: Erilliset maksupäätteet ja kehotteet tulostinta ja käteislaatikkoa varten
 description: Tässä ohjeaiheessa on tietoja siitä, miten voit määrittää erillisen maksupäätteen ja pyytää käyttäjää valitsemaan kassan ja kuittitulostimen.
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 848e83505e9e20111c2809000dcf19f352142de4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223020"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779767"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Erilliset maksupäätteet ja kehotteet tulostinta ja käteislaatikkoa varten
 
@@ -52,13 +50,13 @@ Tässä ohjeaiheessa kuvatut toiminnot ovat tuettuja modernissa POS for Windows 
 
 Tämä toiminto tukee verkkopohjaisia maksupäätteitä ja kuittitulostimia. Voit antaa kassalaatikon tuen liittämällä kassalaatikon verkkovastaanottotulostimeen d/k-portin kautta.
 
-Tämän toiminnon valmiin tuen tarjoaa [Dynamics 365 -maksuliitin Adyen-palvelua varten](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Muita maksuliittimiä saatetaan kuitenkin tukea Commerce Software Development Kitin (SDK) kautta. Tuetut kuittitulostimet ovat verkkopohjaisia kuittitulostimia Star Micronicsilta ja Epsonilta.
+Tämän toiminnon valmiin tuen tarjoaa [Dynamics 365 -maksuliitin Adyen-palvelua varten](./dev-itpro/adyen-connector.md?tabs=8-1-3). Muita maksuliittimiä saatetaan kuitenkin tukea Commerce Software Development Kitin (SDK) kautta. Tuetut kuittitulostimet ovat verkkopohjaisia kuittitulostimia Star Micronicsilta ja Epsonilta.
 
 Määrittääksesi Star Micronics -kuittitulostimet, käytä Star Micronics Printer Utilityä määrittämään laitteen niin, että sitä voidaan käyttää verkon kautta. Tämä apuohjelma sisältää myös laitteen IP-osoitteen.
 
 Voit määrittää Epson-kuittitulostimet käyttämällä Epson ePOS-Print -apuohjelmaa, joka määrittää laitteen käyttämään verkko protokollia.
 
-Lisätietoja verkon oheislaitteiden määrittämisestä on ohjeaiheessa [Verkon oheislaitteiden tuen yleiskatsaus](https://go.microsoft.com/fwlink/?linkid=2129965).
+Lisätietoja verkon oheislaitteiden määrittämisestä on ohjeaiheessa [Verkon oheislaitteiden tuen yleiskatsaus](./dev-itpro/network-peripherals.md).
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>Aseta erillinen maksupääte ja kehote tulostinta ja käteislaatikkoa varten
 
@@ -77,9 +75,9 @@ Voit määrittää rekisteriin määritetyn laitteistoprofiilin noudattamalla se
 
     | Laite | Laji | Laitteen nimi | Lisätiedot |
     |---|---|---|---|
-    | Tulostin | Varaversio | *Mikä tahansa* | Laitteistonimen kirjankoolla on merkitystä. **Kuittiprofiilin tunnuksen** tulee olla sama kuin sen **kuittiprofiilin tunnus**, joka on liitetty verkkotulostimeen, joka on määritetty laiteprofiilissa kanavatasolla määritettynä. |
-    | Kassa | Varaversio | *Mikä tahansa* | Laitteistonimen kirjankoolla on merkitystä. Valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
-    | EFT-palvelu | Adyen | Ei käytettävissä | Lisätietoja valmiin Adyen-maksuyhdistimen asentamisesta on kohdassa [Dynamics 365 -maksuyhdistin Adyenille](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Muita maksuliittimiä voidaan tukea [Commerce Software Development Kitin (SDK)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) kautta. |
+    | Tulostin | Verkko | *Mikä tahansa* | Laitteistonimen kirjankoolla on merkitystä. **Kuittiprofiilin tunnuksen** tulee olla sama kuin sen **kuittiprofiilin tunnus**, joka on liitetty verkkotulostimeen, joka on määritetty laiteprofiilissa kanavatasolla määritettynä. |
+    | Kassa | Verkko | *Mikä tahansa* | Laitteistonimen kirjankoolla on merkitystä. Valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
+    | EFT-palvelu | Adyen | Ei käytettävissä | Lisätietoja valmiin Adyen-maksuyhdistimen asentamisesta on kohdassa [Dynamics 365 -maksuyhdistin Adyenille](./dev-itpro/adyen-connector.md?tabs=8-1-3). Muita maksuliittimiä voidaan tukea [Commerce Software Development Kitin (SDK)](./dev-itpro/end-to-end-payment-extension.md) kautta. |
     | PIN-näppäimistö | Verkko | **MicrosoftAdyenDeviceV001** | Ei mitään. |
 
 5. Etsi Dynamics 365 Commerce -ohjelmassa **Rekisterit**.
@@ -87,7 +85,7 @@ Voit määrittää rekisteriin määritetyn laitteistoprofiilin noudattamalla se
 7. Määritä juuri luomasi laitteistoprofiili rekisteriin, jossa on käytettävä erityistä maksupäätettä. Tähän rekisteriin yhdistetylle laitteelle on käytettävä joko Modern POS Windowsille tai Modern POS Androidille -sovellusta.
 8. Valitse **Tallenna**.
 9. Valitse toimintoruudun **Rekisterit**-välilehdessä **Määritä IP-osoittet**.
-10. Määritä **PIN-näppäimistö**-pikavälilehdessä maksupäätteen IP-osoite. Lisätietoja maksupäätteen IP-osoitteen hankkimisesta Adyen-liittimen avulla on kohdassa [Dynamics 365 -maksuyhdistin Adyenille](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
+10. Määritä **PIN-näppäimistö**-pikavälilehdessä maksupäätteen IP-osoite. Lisätietoja maksupäätteen IP-osoitteen hankkimisesta Adyen-liittimen avulla on kohdassa [Dynamics 365 -maksuyhdistin Adyenille](./dev-itpro/adyen-connector.md?tabs=8-1-3).
 11. Valitse **Tallenna**.
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>Laiteprofiilin määrittäminen kuittitulostinta ja kassalaatikkoa varten
@@ -102,7 +100,7 @@ Voit määrittää verkon kuittitulostimen ja kassalaatikon ryhmittelemiseen kä
     | Laite | Laji | kuvaus | Lisätiedot |
     |---|---|---|---|
     | Tulostin | Verkko | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. **Kuittiprofiilin tunnuksen** tulee olla sama kuin sen **kuittiprofiilin tunnus**, joka on liitetty tulostimeen, joka on määritetty rekisteriin. |
-    | Kassa | Verkko | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
+    | Kassa | Varaversio | **Epson** tai **Star** | Laitteistonimen kirjankoolla on merkitystä. valitse **Käytä jaettua vuoroa** -asetukseksi **Kyllä**. |
 
 5. Valitse **Tallenna**.
 
@@ -150,9 +148,9 @@ Myymäläkumppaneita kehotetaan valitsemaan laiteasema vain kerran tapahtumaa ko
 
 ## <a name="related-articles"></a>Liittyvät artikkelit
 
-- [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteessa](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Dynamics 365 -maksuyhdistin Adyenia varten](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Yleistä verkon oheistuesta](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteessa](./dev-itpro/hybridapp.md)
+- [Dynamics 365 -maksuyhdistin Adyenia varten](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [Yleistä verkon oheistuesta](./dev-itpro/network-peripherals.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

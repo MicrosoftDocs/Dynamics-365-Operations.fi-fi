@@ -2,30 +2,24 @@
 title: Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 08/10/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-ms.reviewer: josaw
-ms.custom: intro-internal
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2019-1-16
-ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343284"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077189"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista. 
 
@@ -39,32 +33,61 @@ Kirjanpidon integrointitoiminto on kehikko, joka muodostaa yhteisen ratkaisun Re
 
 Jos haluat tukea skenaarioita, joita kirjanpidon integrointimalli ei tue, integroida Retail POS:n muiden kirjanpidon laitteiden ja palvelujen kanssa tai ottaa huomioon muiden maiden tai alueiden vaatimukset, sinun on joko laajennettava nykyistä kirjanpidon integrointimallia tai luotava uusi malli käyttämällä nykyistä mallia esimerkkinä.
 
-## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden kirjanpidon integrointimallit
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services"></a>Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden ja palveluiden kirjanpidon integrointimallit
 
-Retail POS:n kirjanpidon rekisteröintiprosessissa on vähintään yksi vaihe. Kukin vaihe koskee tiettyjen transaktioiden tai -tapahtumien kirjanpidon rekisteröintiä yhdessä kirjanpidon laitteessa tai palvelussa. Seuraavan ratkaisun osat koskevat kirjanpidon rekisteröintiä laiteasemaan yhdistetyssä kirjanpidon laitteessa:
+Retail POS:n kirjanpidon rekisteröintiprosessissa on vähintään yksi vaihe. Kukin vaihe koskee tiettyjen transaktioiden tai -tapahtumien kirjanpidon rekisteröintiä yhdessä kirjanpidon laitteessa tai palvelussa. Seuraavan ratkaisun osat koskevat kirjanpidon rekisteröintiä kirjanpidon laitteessa tai palvelussa:
 
-- **Commerce runtime (CRT) -laajennus** – Tämä osa sarjoittaa transaktion tai tapahtuman tiedot siinä muodossa, jota käytetään myös tiedonsiirtoon kirjanpidon laitteen kanssa, jäsentää vastaukset kirjanpidon laitteesta ja tallentaa vastaukset kanavatietokantaan. Lisäksi laajennus määrittää, mitkä transaktiot ja tapahtumat on rekisteröitävä. Tätä osa kutsutaan usein *kirjanpitoasiakirjan toimittajaksi*.
-- **Hardware station -laajennus** – Tämä osa käynnistää tiedonsiirron kirjanpidon laitteen kanssa, lähettää pyynnöt ja suorat komennot kirjanpidon laitteeseen kirjanpitoasiakirjasta haettujen transaktion tai tapahtuman tietojen perusteella sekä vastaanottaa vastaukset kirjanpidon laitteesta. Tätä osa kutsutaan usein *kirjanpidon yhdistimeksi*.
+- **Veroasiakirjan toimittaja** – Tämä osa sarjoittaa transaktion tai tapahtuman tiedot siinä muodossa, jota käytetään myös tiedonsiirtoon kirjanpidon laitteen tai palvelun kanssa, jäsentää vastaukset kirjanpidon laitteesta tai palvelusta ja tallentaa vastaukset kanavatietokantaan. Lisäksi laajennus määrittää, mitkä transaktiot ja tapahtumat on rekisteröitävä.
+- **Veroyhdistin** – Tämä osa käynnistää tiedonsiirron kirjanpidon laitteen tai palvelun kanssa, lähettää pyynnöt ja suorat komennot kirjanpidon laitteeseen tai palveluun kirjanpitoasiakirjasta haettujen transaktion tai tapahtuman tietojen perusteella sekä vastaanottaa vastaukset kirjanpidon laitteesta tai palvelusta.
 
-Kirjanpidon laitteen kirjanpidon integrointimalli sisältää kirjanpitoasiakirjan toimittajan ja kirjanpidon yhdistimen CRT- ja Hardware station -laajennukset. Lisäksi se sisältää seuraavien osien määritykset:
+Kirjanpidon integrointimalli saattaa sisältää kirjanpitoasiakirjan toimittajan ja Commerce runtime CRT-, Hardware station ja myyntipistelaajennukset. Lisäksi se sisältää seuraavien osien määritykset:
 
-- **Kirjanpitoasiakirjan toimittajan määritys** – Tämä määritys määrittää kirjanpitoasiakirjojen tulostusmenetelmän ja -muodon. Lisäksi se sisältää verojen ja maksutapojen tietojen yhdistämisen, jotta Retail POS:n tiedot ovat yhteensopivia kirjanpidon laitteen laiteohjelmassa valmiiksi määritettyjen arvojen kanssa.
-- **Kirjanpidon yhdistimen määritys** – Tämä määritys määrittää tietyn kirjanpidon laitteen fyysisen tiedonsiirron.
+- **Kirjanpitoasiakirjan toimittajan määritys** – Tämä määritys määrittää kirjanpitoasiakirjojen tulostusmenetelmän ja -muodon. Lisäksi se sisältää verojen ja maksutapojen tietojen yhdistämisen, jotta Retail POS:n tiedot ovat yhteensopivia kirjanpidon laitteen tai palvelun laiteohjelmassa valmiiksi määritettyjen arvojen kanssa.
+- **Kirjanpidon yhdistimen määritys** – Tämä määritys määrittää tietyn kirjanpidon laitteen tai palvelun fyysisen tiedonsiirron.
 
-Tietyn kassakoneen kirjanpidon rekisteröintiprosessi määritetään myyntipisteen toimintaprofiilin vastaavalla asetuksella. Lisätietoja kirjanpidon rekisteröintiprosessin määrittämisestä, kirjanpitoasiakirjan toimittajan ja kirjanpidon yhdistimen määritysten lataamisesta sekä niiden parametrien muuttamisesta on kohdassa [Kirjanpidon rekisteröintiprosessin määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Tietyn kassakoneen kirjanpidon rekisteröintiprosessi määritetään myyntipisteen toimintaprofiilin vastaavalla asetuksella. Lisätietoja kirjanpidon rekisteröintiprosessin määrittämisestä, kirjanpitoasiakirjan toimittajan ja kirjanpidon yhdistimen määritysten lataamisesta sekä niiden määritysparametrien muuttamisesta on kohdassa [Kirjanpidon rekisteröintiprosessin määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-Seuraavassa esimerkissä on tyypillinen kirjanpidon laitteen kirjanpidon rekisteröinnin työnkulku. Työnkulku alkaa myyntipisteen tapahtumalla (kuten myyntitapahtuman päättämisellä), ja siinä toteutetaan seuraavat vaiheet mainitussa järjestyksessä:
+Seuraavassa tyypillisessä verorekisteröintityönkulussa alkaa myyntipisteen tapahtumalla (esimerkiksi myyntitapahtuman viimeisteleminen) ja otetaan käyttöön ennalta määritetty vaihesarja, joka sisältää muita Commerce-komponentteja (kuten CRT ja Hardware station).
 
-1. Myyntipiste pyytää kirjanpitoasiakirjan CRT:stä.
-1. CRT selvittää, edellyttääkö nykyinen tapahtuma kirjanpidon rekisteröintiä.
-1. CRT tunnistaa kirjanpidon rekisteröintiprosessin asetusten perusteella kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen ja vastaavan kirjanpitoasiakirjan toimittajan.
-1. CRT suorittaa kirjanpitoasiakirjan toimittajan, joka luo transaktiota tai tapahtuvaa edustavan kirjanpitoasiakirjan (kuten XML-asiakirjan).
-1. Myyntipiste lähettää CRT:n valmisteleman kirjanpitoasiakirjan Hardware station -laajennukseen.
-1. Hardware station suorittaa kirjanpidon yhdistimen, joka käsittelee kirjanpitoasiakirjan ja välittää sen kirjanpidon laitteeseen tai palveluun.
-1. Myyntipiste analysoi kirjanpidon laitteen ja palvelun vastauksen ja määrittää sen perusteella, onnistuiko kirjanpidon rekisteröinti.
-1. CRT tallentaa vastauksen kanavatietokantaan.
+1. Myyntipiste pyytää veroasiakirjaa fiscal integration framework (FIF) -kehyksestä.
+1. FIF selvittää, edellyttääkö nykyinen tapahtuma kirjanpidon rekisteröintiä.
+1. FIF tunnistaa kirjanpidon rekisteröintiprosessin asetusten perusteella kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen ja vastaavan kirjanpitoasiakirjan toimittajan.
+1. FIF suorittaa kirjanpitoasiakirjan toimittajan, joka luo transaktiota tai tapahtumaa edustavan kirjanpitoasiakirjan (kuten XML-asiakirjan).
+1. FIF palauttaa luodun veroasiakirjan myyntipisteeseen.
+1. Myyntipiste pyytää, että FIF lähettää veroasiakirjan verolaitteeseen tai -palveluun.
+1. FIF station suorittaa kirjanpidon yhdistimen, joka käsittelee kirjanpitoasiakirjan ja lähettää sen kirjanpidon laitteeseen tai palveluun.
+1. FIF palauttaa verovastauksen (verolaitteen tai -palvelun vastauksen) myyntipisteeseen.
+1. Myyntipiste analysoi kirjanpidon vastauksen ja määrittää sen perusteella, onnistuiko kirjanpidon rekisteröinti. Tarvittaessa myyntipiste pyytää FIF:iä käsittelemään kaikki tapahtuneet virheet. 
+1. Myyntipiste pyytää FIF:iä käsittelemään ja tallentamaan verovastauksen.
+1. Veroasiakirjan toimittaja käsittelee verovastauksen. Veroasiakirjan tarjoaja jäsentää vastauksen ja poimii siitä laajennetut tiedot osana tätä käsittelyä.
+1. FIF tallentaa vastauksen ja laajennetut tiedot kanavatietokantaan.
+1. Tarvittaessa myyntipiste tulostaa kuitin tavallisen kuittitulostimen kautta, joka on liitetty Hardware stationiin. Kuitti voi sisältää verovastausta koskevat pakolliset tiedot.
+ 
+Seuraavissa esimerkeissä on tyypillisiä kirjanpidon laitteiden tai palveluiden kirjanpidon rekisteröinnin työnkulkuja.
+ 
+### <a name="fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station"></a>Verorekisteröinti tehdään Hardware stationiin liitetyllä laitteella.
 
-![Ratkaisumalli.](media/emea-fiscal-integration-solution.png "Ratkaisumalli")
+Tätä konfiguraatiota käytetään, kun fyysinen verolaite, kuten verotulostin, on liitetty Hardware stationiin. Sitä voidaan käyttää myös silloin, kun tietoliikenne verolaitteen tai -palvelun kanssa tapahtuu Hardware stationiin asennetulla ohjelmistolla. Tässä tapauksessa veroasiakirjan tarjoaja sijaitsee CRT:ssä ja veroliitin sijaitsee Hardware stationissa.
+
+![Verorekisteröinti tehdään Hardware stationiin liitetyllä laitteella.](media/FIF-CRT-HWS.png)
+
+### <a name="fiscal-registration-is-done-via-an-external-service"></a>Verorekisteröinti tehdään ulkoisen palvelun kautta.
+
+Tätä konfiguraatiota käytetään, kun verorekisteröinti tehdään ulkoisella palvelulla, kuten verkkopalvelulla, joka on veroviranomaisen ylläpitämä. Tässä tapauksessa sekä veroasiakirjan tarjoaja että veroyhdistin sijaitsevat CRT:ssä.
+
+![Verorekisteröinti ulkoisen palvelun kautta.](media/FIF-CRT-CRT.png)
+ 
+### <a name="fiscal-registration-is-done-internally-in-the-crt"></a>Verorekisteröinti tehdään sisäisesti CRT:ssä
+
+Tätä konfiguraatiota käytetään, kun verorekisteröintiin ei tarvita ulkoista verolaitetta tai -palvelua. Sitä käytetään esimerkiksi verorekisteröinnin yhteydessä, kun allekirjoitetaan myyntitapahtumat digitaalisesti. Tässä tapauksessa sekä veroasiakirjan tarjoaja että veroyhdistin sijaitsevat CRT:ssä.
+
+![Verorekisteröinti tehdään sisäisesti CRT:ssä.](media/FIF-CRT-CRT-SGN.png)
+
+### <a name="fiscal-registration-is-done-via-a-device-or-service-in-the-local-network"></a>Verorekisteröinti tehdään paikallisen verkon laitteen tai palvelun avulla.
+
+Tätä konfiguraatiota käytetään, kun myymälän paikalliseen verkkoon kuuluu fyysinen verolaite tai veropalvelu, ja siinä on HTTPS-sovellusohjelmaliittymä. Tässä tapauksessa veroasiakirjan tarjoaja sijaitsee CRT:ssä ja veroliitin sijaitsee myyntipisteessä.
+
+![Verorekisteröinti tehdään paikallisen verkon laitteen tai palvelun avulla.](media/FIF-CRT-POS.png)
 
 ## <a name="error-handling"></a>Virheen käsittely
 
@@ -74,19 +97,24 @@ Kirjanpidon integrointikehikossa on seuraavat asetukset, joilla voi käsitellä 
 - **Peruuta** – Käyttäjät voivat siirtää tällä asetuksella nykyisen transaktion tai tapahtuman kirjanpidon rekisteröinnin myöhemmäksi, jos se epäonnistuu. Kun rekisteröintiä on siirretty myöhemmäksi, käyttäjä voi jatkaa työskentelyä myyntipisteessä ja suorittaa loppuun toiminnot, joissa kirjanpidon rekisteröintiä ei tarvita. Kun myyntipisteessä tapahtuu kirjanpidon rekisteröintiä edellyttävä tapahtuma (avataan esimerkiksi uusi tapahtuma), virheen käsittelyn valintaikkuna avautuu automaattisesti ilmoittamaan, että edellistä tapahtumaan eri rekisteröity oikein. Valintaikkunassa on myös vaihtoehtoja virheen käsittelemiseen.
 - **Ohita** – Käyttäjä voi käyttää tätä asetusta, kun kirjanpidon rekisteröinti voidaan jättää tekemättä tietyissä tilanteissa ja tavallisia toimintoja voidaan jatkaa myyntipisteessä. Tätä asetusta voidaan käyttää esimerkiksi silloin, kun se myyntitapahtuma, jonka kirjanpidon rekisteröinti epäonnistui, voidaan rekisteröidä erityiseen painettuun kirjauskansioon.
 - **Merkitse rekisteröidyksi** – käyttäjät voivat käyttää tätä asetusta, kun tapahtuma kyllä rekisteröitiin kirjanpidon laitteeseen (esimerkiksi verokuitti tulostettiin), mutta virhe tapahtui, kun kirjanpidon vastausta tallennettiin kanavatietokantaan.
+- **Viivytä** – Operaattorit voivat käyttää tätä vaihtoehtoa, kun tapahtumaa ei rekisteröidä, koska rekisteröintipalvelu ei ole ollut käytettävissä. 
 
 > [!NOTE]
-> **Ohita**- ja **Merkitse rekisteröidyksi** -asetukset on aktivoitava kirjanpidon rekisteröintiprosessissa ennen käyttöä. Käyttäjille on myös myönnettävä vastaavat käyttöoikeudet.
+> **Ohita**-, **Merkitse rekisteröidyksi**- ja **Viivytä**-asetukset on aktivoitava kirjanpidon rekisteröintiprosessissa ennen käyttöä. Käyttäjille on myös myönnettävä vastaavat käyttöoikeudet.
 
-**Ohita**- ja **Merkitse rekisteröidyksi** -asetuksella otetaan käyttöön tietokoodit taltioimaan tiettyjä virhettä koskevia tietoja, kuten virheen syy tai oikeutus kirjanpidon rekisteröinnin ohittamiselle tai tapahtuman merkitsemiselle rekisteröidyksi. Lisätietoja virheen käsittelyparametrien määrittämisestä on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+**Ohita**-, **Merkitse rekisteröidyksi**- ja **Viivytä**-asetuksella otetaan käyttöön tietokoodit taltioimaan tiettyjä virhettä koskevia tietoja, kuten virheen syy tai oikeutus kirjanpidon rekisteröinnin ohittamiselle tai tapahtuman merkitsemiselle rekisteröidyksi. Lisätietoja virheen käsittelyparametrien määrittämisestä on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Valinnainen kirjanpidon rekisteröinti
 
 Kirjanpidon rekisteröinti voi olla pakollisista joillekin toiminnoille mutta valinnaista toisille. Tavallisen myynnin ja palautusten kirjanpidon rekisteröinti voi olla pakollista, kun taas asiakkaan talletuksiin liittyvien toimintojen kirjanpidon rekisteröinti voi olla valinnaista. Tässä tapauksessa myynnin kirjanpidon rekisteröinnin tekemättä jättäminen estää lisämyynnin, kun taas asiakkaan tallennuksen kirjanpidon rekisteröinnin tekemättä jättäminen ei estä lisämyyntiä. Pakollisten ja valinnaisten toimintojen erottamiseksi suositellaan, että ne käsitellään eri asiakirjatoimittajissa ja että kyseisille toimittajille määritetään erilliset kirjanpidon rekisteröintiprosessin vaiheet. **Jatka virheen ilmetessä** -parametri on otettava käyttöön kaikissa valinnaiseen kirjanpidon rekisteröintiin liittyvissä vaiheissa. Lisätietoja virheen käsittelyparametrien määrittämisestä on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-### <a name="manually-running-fiscal-registration"></a>Kirjanpidon rekisteröinnin suorittaminen manuaalisesti
+### <a name="manually-rerun-fiscal-registration"></a>Kirjanpidon rekisteröinnin suorittaminen uudelleen
 
 Jos transaktion tai tapahtuman kirjanpidon rekisteröinti on lykätty virheen jälkeen (esimerkiksi silloin, kun toimittaja on valinnut **Peruuta** virheen käsittely valintaruudussa), voit suorittaa kirjanpidon rekisteröinnin manuaalisesti käynnistämällä vastaavan toiminnon. Lisätietoja on kohdassa [Lykätyn kirjanpidon rekisteröinnin manuaalisen suorittamisen ottaminen käyttöön](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="postpone-option"></a>Viivytä-vaihtoehto
+
+**Viivytä**-vaihtoehdolla voit jatkaa verorekisteröintiprosessia, jos nykyinen vaihe epäonnistuu. Sitä voidaan käyttää, kun verorekisteröinnin varmistusvaihtoehto on käytössä.
 
 ### <a name="fiscal-registration-health-check"></a>Kirjanpidon rekisteröinnin kuntotarkastus
 
@@ -104,7 +132,7 @@ Jos kuntotarkastus epäonnistuu, kuntotarkastuksen valintaikkuna avautuu myyntip
 - **Peruuta** – Jos käyttäjä valitsee tämän painikkeen, myyntipiste peruuttaa viimeisimmän toiminnon. (Nimikettä ei esimerkiksi lisätä uuteen toimintoon.)
 
 > [!NOTE]
-> Kuntotarkastus suorittaan vain, jos nykyinen toiminto edellyttää kirjanpidon rekisteröintiä ja jos **Jatka virheen ilmetessä** -parametri on poistettu kirjanpidon rekisteröintiprosessin nykyisessä vaiheessa käytöstä. Lisätietoja on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+> Kuntotarkastus suoritetaan vain, jos nykyinen toiminto edellyttää kirjanpidon rekisteröintiä ja jos **Jatka virheen ilmetessä** -parametri on poistettu kirjanpidon rekisteröintiprosessin nykyisessä vaiheessa käytöstä. Lisätietoja on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Kirjanpidon vastauksen tallentaminen kirjanpitotapahtumassa
 
@@ -115,8 +143,8 @@ Kun transaktion tai tapahtuman kirjanpidon rekisteröinti onnistuu, kirjanpitota
 Kirjanpitotapahtumaan tallennetaan seuraavat tiedot:
 
 - Kirjanpidon rekisteröintiprosessin tiedot (kuten prosessi, yhdistinryhmä ja yhdistin). Siihen tallennetaan myös **Kassakoneen numero** -kentässä oleva kirjanpidon laitteen sarjanumero, jos tämä tieto sisältyy kirjanpidon vastaukseen.
-- Kirjanpidon rekisteröinnin tila: **Valmis**, jos rekisteröinti onnistui, **Ohitettu**, jos käyttäjä valitsi epäonnistuneessa rekisteröinnissä **Ohita**-asetuksen, tai **Merkitty rekisteröidyksi**, jos käyttäjä valitse **Merkitse rekisteröidyksi** -asetuksen.
-- Valittuun kirjanpitotapahtumaan liittyvät tietokooditapahtumat. Voit tarkastella tietokooditapahtumia valitsemalla **Tilikauden tapahtumat** -pikavälilehdessä ensin kirjanpitotapahtuman, jonka tila on **Ohitettu** tai **Merkitty rekisteröidyksi**, ja sitten **Tietokooditapahtumat**.
+- Kirjanpidon rekisteröinnin tila: **Valmis**, jos rekisteröinti onnistui, **Ohitettu**, jos käyttäjä valitsi epäonnistuneessa rekisteröinnissä **Ohita**-asetuksen, tai **Merkitty rekisteröidyksi**, jos käyttäjä valitse **Merkitse rekisteröidyksi** -asetuksen, tai **Viivytetty**, jos operaattori valitsi **Viivytä**-vaihtoehdon.
+- Valittuun kirjanpitotapahtumaan liittyvät tietokooditapahtumat. Voit tarkastella tietokooditapahtumia valitsemalla **Verotapahtumat** -pikavälilehdessä ensin kirjanpitotapahtuman, jonka tila on **Ohitettu**, **Merkitty rekisteröidyksi** tai **Viivytetty**, ja sitten **Tietokooditapahtumat**.
 
 Valitsemalla **Laajennetut tiedot** voidaan tarkastella joitakin kirjanpitotapahtuman ominaisuuksia. Tarkasteltava ominaisuusluettelo koskee kirjanpitotapahtuman luoneen kirjanpidon rekisteröintitoimintoja. Esimerkiksi Ranskan digitaalisen allekirjoitustoiminnon digitaalista allekirjoitusta, järjestysnumeroa, varmenteen pikkukuvaa, hajautusalgoritmin tunnusta ja muita kirjanpitotapahtuman ominaisuuksia voidaan tarkastella.
 
@@ -141,6 +169,7 @@ Seuraavat kirjanpidon integrointimallit ovat käytettävissä Commerce SDK:ssa:
 - [Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli](./emea-cze-fi-sample.md)
 - [Tarkistusyksikön integrointimalli – Ruotsi](./emea-swe-fi-sample.md)
 - [Saksan tilikausirekisteröintipalvelun integroinnin malli](./emea-deu-fi-sample.md)
+- [Näyte kuittitulostimen integroinnista Venäjällä](./rus-fpi-sample.md)
 
 Seuraava kirjanpidon integrointitoiminto otetaan käyttöön myös käyttämällä kirjanpidon integrointikehystä, mutta se on saatavana käyttövalmiina eikä se sisälly Commerce SDK:hon:
 

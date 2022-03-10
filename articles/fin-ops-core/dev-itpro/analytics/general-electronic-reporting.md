@@ -2,8 +2,8 @@
 title: Sähköisen raportoinnin (ER) yleiskatsaus
 description: Tässä aiheessa on sähköisen raportointityökalun yleiskatsaus. Siinä käsitellään keskeisiä käsitteitä, tuettuja skenaarioita ja muotoja, jotka osa ratkaisua.
 author: NickSelin
-ms.date: 09/20/2021
-ms.topic: article
+ms.date: 11/02/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERWorkspace
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 976a02f51e22c513b988e1ecfcb792d5f93a4b54
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562173"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986144"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -30,23 +30,53 @@ ms.locfileid: "7562173"
 
 Tämä aihe esittelee sähköisen raportointityökalun. Artikkelissa on tietoja keskeisistä käsitteistä ja sähköisen raportoinnin tukemista skenaarioista. Lisäksi siinä on luettelo muodoista, jotka on suunniteltu osana tätä ratkaisua ja jotka julkaistaan sen osana.
 
-ER on työkalu, jolla voit määrittää saapuvien ja lähtevien sähköisten asiakirjojen muodon eri maiden ja alueiden säädösten mukaisesti. Sähköinen raportointi mahdollistaa näiden muotojen hallinnan niiden elinkaaren aikana. Voit esimerkiksi ottaa käyttöön uusia säädöksiin perustuvia vaatimuksia ja luoda vaatimusten mukaisia liiketoiminnan asiakirjoja, jotka mahdollistavat sähköisen tiedonsiirron viranomaisten, pankkien ja muiden osapuolien välillä.
+ER on konfiguroitavissa oleva työkalu, jonka avulla voit luoda ja ylläpitää säännöstenmukaista sähköistä raportointia ja maksuja. Se perustuu seuraaviin kolmeen käsitteeseen:
+
+- Konfigurointi koodauksen asemesta:
+
+    - Konfiguroinnin voi tehdä yrityskäyttäjä, eikä se edellytä kehittäjää.
+    - Tietomalli on määritetty liiketoiminnassa.
+    - Visuaalisia editoreja käytetään kaikkien ER-konfiguraation komponenttien luomiseen.
+    - Tietojen muuntamisessa käytettävä kieli muistuttaa Microsoft Excel -kohteessa käytettävää kieltä.
+
+- Yksi konfiguraatio useita Dynamics 365 Finance -julkaisuja varten:
+
+    - Hallitse yhtä liiketoimintaehtona määritettyä toimialuekohtaista tietomallia.
+    - Sen julkaisutiedot vapautumiseen sidonnaisten tietomallien määrityksissä.
+    - Ylläpidä tietomalliin perustuvia nykyisen version useiden julkaisujen yhtä muotoa.
+
+- Helppo tai automaattinen päivitys:
+
+    - Sähköisen raportoinnin konfiguraatioiden versiointia tuetaan.
+    - Microsoft Dynamics Lifecycle Services (LCS) -käyttöomaisuuskirjastoa voidaan käyttää ER-konfiguraatioiden tietovarastona versionvaihtoa varten.
+    - Alkuperäiseen ER-konfiguraatioon perustuvat paikalliset versiot voidaan ottaa käyttöön aliversioina.
+    - ER-konfiguraatiopuu on työkalu, jonka avulla voidaan hallita versioiden riippuvuuksia.
+    - Sijaintierot eli delta-konfiguraatiot tallennetaan, jotta alkuperäisen ER-konfiguraation voi päivittää automaattisesti uuteen versioon.
+    - Lokalisointiversioiden automaattisen päivityksen yhteydessä löydetyt ristiriidat on helppo ratkaista manuaalisesti.
+
+ER:n avulla voit määrittää sähköisten muotojen rakenteita ja sitten kuvailla, kuinka rakenteet tulee täyttää datan ja algoritmien avulla. Voit käyttää reseptin kieltä, joka muistuttaa tietojen muuntamisen Excel-kieltä. Jotta tietokannan alustaminen olisi määrityksestä hallittavampaa, uudelleenkäyttökelpoista ja muodon muutoksista riippumatta, käyttöön tulee välitietomallimalli. Tämän ansiosta käyttöönottotiedot voidaan piilottaa muotomäärityksestä, ja sitä voidaan käyttää uudelleen useissa muotomäärityksissä.
+
+ER:n avulla voit määrittää sekä saapuvien että lähtevien sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisesti. Sähköinen raportointi mahdollistaa näiden muotojen hallinnan niiden elinkaaren aikana. Voit esimerkiksi ottaa käyttöön uusia säädöksiin perustuvia vaatimuksia ja luoda vaatimusten mukaisia liiketoiminnan asiakirjoja, jotka mahdollistavat sähköisen tiedonsiirron viranomaisten, pankkien ja muiden osapuolien välillä.
 
 Sähköinen raportointimoduuli on suunnattu yrityskäyttäjille eikä kehittäjille. Koska määritykset koskevat muotoja koodin sijaan, sähköisten asiakirjojen muotojen käsittely- ja muokkausprosessi on nopeaa ja helppoa.
 
-Sähköinen raportointi tukee tällä hetkellä TXT-, XML- ja Microsoft Word -tietoja sekä OPENXML-muotoisia laskentataulukkoja. Laajennettu liittymä tukee kuitenkin myös muita muotoja.
+Sähköinen raportointi tukee tällä hetkellä TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel sekä OPENXML-muotoisia laskentataulukkoja.
 
 ## <a name="capabilities"></a>Toiminnot
 
 Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 
-- Se on yksi yhteinen, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista Finance and Operationsin sähköisen raportoinnin moduulia.
+- Se on yksi yhteinen, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista sähköisen raportoinnin moduulia.
 - Se eristää raportin muodon nykyisestä käyttöönotosta. Toisin sanoen muotoa voi käyttää eri versioissa.
 - Se tukee alkuperäiseen muotoon perustuvan mukautetun muodon luontia. Sen toiminnoilla voi myös päivittää automaattisesti mukautetut muodot, kun alkuperäiseen muotoon on tehty muutoksia. Tämä onnistuu lokalisointi- ja mukautusvaatimusten avulla.
 - Siitä tulee ensisijainen vakiotyökalu lokalisointivaatimusten tukemiseen sähköisessä raportoinnissa – sekä Microsoftille että sen kumppaneille.
 - Se tukee mahdollisuutta jakaa muotoja kumppaneille ja asiakkaille Microsoft Dynamics Lifecycle Servicesissä (LCS).
 
 ## <a name="key-concepts"></a>Avainkäsitteet
+
+### <a name="main-data-flow"></a>Päätietovirta
+
+[![ER:n päätietovirta.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
 ### <a name="components"></a>Komponentit
 
@@ -59,74 +89,6 @@ ER tukee seuraavia osatyyppejä:
 
 Lisätietoja on kohdassa [Sähköisen raportoinnin osat](er-overview-components.md).
 
-#### <a name="data-model-and-model-mapping-components"></a>Tietomallin ja mallin yhdistämismäärityksen osat
-
-Tietomallikomponentti on tietorakenne abstrakti kuvaus. Sen avulla tietty liiketoiminnan toimialue voidaan selittää riittävän yksityiskohtaisesti kyseisen toimialueen raportointitarpeiden mukaisesti. Tietomalliosassa on seuraavat osat:
-
-- <a name="DataModelComponent"></a>Tietomalli joukkona toimialuekohtaisia liiketoimintayksiköitä ja rakenteeltaan hierarkkisena määrityksenä kyseisten yksiköiden välisistä suhteista.
-- <a name="ModelMappingComponent"></a>Mallin yhdistämismääritykset, jotka linkittävät valitut sovelluksen tietolähteet yksittäisiin tietomallin elementteihin ja jotka määrittävät suorituksenaikaisen tiedonkulun ja säännöt liiketoiminnan tietojen täyttämiseen tietomalliosassa.
-
-Tietomallin liiketoimintayksikkö ilmaistaan säilönä (tietue). Liiketoimintayksikön ominaisuudet esitetään tietokohteina (kentät). Kullakin tiedolla on yksilöllinen nimi, otsikko, kuvaus ja arvo. Kunkin tiedon arvo voidaan suunnitella tunnistettavaksi esimerkiksi merkkijonona, kokonaislukuna, reaalilukuna, päivämääränä, valintalistan tyyppinä tai totuusarvona. Se voi olla myös toinen tietue tai tietueluettelo.
-
-Yksittäisessä tietomallikomponentissa voi olla useita toimialuekohtaisten liiketoimintayksiköiden hierarkioita. Siinä voi olla myös suorituksenaikaista rapottikohtaista tiedonkulku tukevia yhdistämismäärityksiä. Hierarkiat erotellaan sen yksittäisen tietueen perusteella, joka on valittu mallien yhdistämisen juureksi. Esimerkiksi maksutoimialueen alueen tietomalli voi tukea seuraavia yhdistämismäärityksiä:
-
-- Yritys \> Toimittaja \> Ostoreskontratoimialueen maksutapahtumat
-- Asiakas \> Yritys \> Myyntireskontran toimialueen maksutapahtumat
-
-Huomaa, että liiketoimintayksiköt, kuten yritys ja maksutapahtumat, suunnitellaan kerran. Eri yhdistämismääritykset ja käytä niitä sitten uudelleen.
-
-Lähteviä sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä on seuraavat ominaisuudet:
-
-- Se voi käyttää eri tietotyyppejä tietomallina. Se voi käyttää esimerkiksi taulukoita, tietoyksiköitä, menetelmiä tai valintaluetteloita.
-- Se tukee käyttäjän syöttöparametreja, jotka voidaan määrittää tietomallin tietolähteiksi, kun osa tiedoista on määritettävä suorituksen aikana.
-- Se tukee tietojen muuntamista tarvittaviksi ryhmiksi. Voit myös suodattaa, lajitella ja summata tietoja sekä loogisia laskettuja kenttiä, jotka on suunniteltu Microsoft Excelin kaavoja muistuttavilla kaavoilla. Lisätietoja on ohjeaiheessa [Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)).
-
-Saapuvia sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä on seuraavat ominaisuudet:
-
-- Se voi käyttää erilaisia päivitettäviä tietoelementtejä kohteina. Näitä tietoelementtejä ovat esimerkiksi taulut, tietoyksiköt ja näkymät. Tietoja voi päivittää saapuvien sähköisten asiakirjojen tiedoilla. Yhdessä mallin yhdistämismäärityksessä voidaan käyttää useita kohteita.
-- Se tukee käyttäjän syöttöparametreja, jotka voidaan määrittää tietomallin tietolähteiksi, kun osa tiedoista on määritettävä suorituksen aikana.
-
-Tietomallikomponentti on suunniteltu käytettäväksi kullakin liiketoiminnan toimialueella yhtenäisenä tietolähteenä raportoinnissa, joka eristää raportoinnin Finance and Operationsin tietolähteiden fyysisestä toteuttamisesta. Se kuvaa toimialuekohtaisia liiketoimintakonsepteja ja toimintoja muodossa, joka tehostaa raportointimuotojen alkusuunnittelua ja sen jälkeisestä ylläpitoa.
-
-#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Lähtevien sähköisten asiakirjojen muotokomponentit
-
-Muoto-osa on raporttitulostuksen malli, joka luodaan suorituksen aikana. Malli sisältää seuraavat elementit:
-
-- Muoto, joka määrittää suorituksen aikana luodun lähtevän sähköisen asiakirjan rakenteen ja sisällön.
-- Tietolähteet käyttäjän syöttöparametrijoukkona ja valittua tiedon yhdistämismääritystä käyttävänä toimialuekohtaisena tietomallina.
-- Muodon yhdistämismääritys muodon tietolähteen sidosjoukkona. Siinä on sellaisia muodon yksittäisiä elementtejä, jotka määrittävät suorituksen aikana tiedonkulun ja tulostusmuodon luontisäännöt.
-- Muotomäärityksen vahvistaminen joukkona määritettävissä olevia sääntöjä, jotka ohjaavat raportin luomista suorituksen aikana suoritettavan raportin yhteyden mukaisesti. Sääntö voi esimerkiksi pysäyttää toimittajan maksujen tulostuksen luonnin ja aiheuttaa poikkeuksen, kun tietyt valitun toimittajan määritteet, kuten pankkitilin numero, puuttuvat.
-
-Muoto-osa tukee seuraavia toimintoja:
-
-- Raporttitulostuksen luonti yksittäisinä, erimuotoisina tiedostoina: teksti, XML, Microsoft Word -asiakirja tai laskentataulukko.
-- Useiden tiedostojen luonti erikseen sekä kyseisten tiedostojen kerääminen zip-tiedostoihin.
-
-Muotokomponentin avulla tietyt raporttitulostuksessa käytettäviä tiedostoja voidaan liittää.
-
-- OPENXML-laskentataulukkomuodossa tulostusmallina käytettävän laskentataulukon sisältävät Excel-laskentataulukot.
-- Microsoft Word-asiakirjamuodossa tulostusmallina käytettävän asiakirjan sisältävät Word-tiedostot
-- Muut tiedostot, jotka voidaan sisällyttää muodon tulostukseen etukäteen määritettyinä tiedostoina.
-
-Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
-
-[![Lähtevien muotokomponenttien tiedonkulku.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-Voit suorittaa yksittäisen sähköisen raportoinnin muotomäärityksen ja luoda lähtevän sähköisen asiakirjan tunnistamalla muotomääritysten yhdistämismääritykset.
-
-#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Saapuvien sähköisten asiakirjojen muotokomponentit
-
-Muotokomponentti on saapuvan asiakirjan malli, joka tuodaan suorituksen aikana. Malli sisältää seuraavat elementit:
-
-- Muoto, joka määrittää suorituksen aikana tuodun, tietoja sisältävän saapuvan sähköisen asiakirjan rakenteen ja sisällön. Saapuva asiakirja jäsennetään muotokomponentin avulla eri muodoissa, kuten teksti- ja XML-muodossa.
-- Muodon yhdistämismääritys, joka sitoo yksittäiset muotoelementit toimialuekohtaisen tietomallin elementteihin. Tietomallin elementit määrittävät suorituksen aikana tiedonkulun ja saapuvan asiakirjan tietojen tuontisäännöt ja tallentavat tiedot sitten tietomalliin.
-- Muotomäärityksen vahvistaminen joukkona määritettävissä olevia sääntöjä, jotka ohjaavat tietojen tuontia suorituksen aikana asiayhteyden mukaisesti. Sääntö voi esimerkiksi pysäyttää sellaisten tiliotteen tietojen tuonnin, jossa on toimittajan maksuja, ja aiheuttaa poikkeuksen, kun tietyt toimittajan määritteet, kuten toimittajan tunnuskoodi, puuttuvat.
-
-Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
-
-[![Saapuvien muotokomponenttien tiedonkulku.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-Jos haluat tuoda saapuvan sähköisen asiakirjan tietoja suorittamalla sähköisen raportoinnin muotomääritykset, sinun on tunnistettava muotomäärityksen toivotut yhdistämismääritykset sekä mallin yhdistämismääritysten integrointikohta. Voit käyttää saman mallin yhdistämismäärityksiä ja kohteita yhdessä erityyppisten saapuvien asiakirjojen erilaisten muotojen kanssa.
 
 #### <a name="component-versioning"></a>Komponenttien versionhallinta
 
@@ -164,7 +126,7 @@ Sähköiset raportointimääritykset jaetaan sovelluksen yrityksille.
 
 #### <a name="provider"></a><a name="Provider"></a>Palvelu
 
-Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Finance and Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoft**-määrityspalvelu.
+Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Finance and Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
 
 Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtäväoppaassa **ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi** (liiketoimintaprosessin **7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677)** osa).
 
@@ -181,7 +143,7 @@ Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säil
 
 **Jaettu LCS-kirjasto** -säilön kautta voi käyttää Lifecycle Servicesin (LCS) jaetun omaisuuskirjaston määritysluetteloa. Tämä ER-rekisterityyppi voidaan rekisteröidä vain Microsoft-palvelulle. Voit tuoda jaetusta LCS-kirjastosta ER-määritysten uusimmat versiot nykyiseen esiintymään.
 
-**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin, kun säilö rekisteröintiin. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen Finance and Operations -sovellukseen.
+**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin, kun säilö rekisteröintiin. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen rahoitus- ja toiminta -sovelluksen esiintymään.
 
 **Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat xml-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen esiintymään. 
 

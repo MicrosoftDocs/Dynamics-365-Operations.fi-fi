@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: fd48a04612159cbe29a2cc7cafea1c9c4c8745b4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 30baef62e03cdaa766133efc4b182c61da3dc7b67e077d80716a035f0b5e40e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795426"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765191"
 ---
 # <a name="shipping-address-module"></a>Toimitusosoitemoduuli
 
@@ -37,7 +37,7 @@ Vaikka tämä toimitusosoitemoduuli ei sisällä osoitteen vahvistusta, tämä t
 
 Seuraavassa kuvassa on esimerkki uudesta toimitusosoitemoduulista maksusivulla.
 
-![Esimerkki toimitusosoitemoduulista Kassalle-sivulla](./media/ecommerce-shippingaddress.PNG)
+![Esimerkki toimitusosoitemoduulista maksusivulla.](./media/ecommerce-shippingaddress.PNG)
 
 ## <a name="module-properties"></a>Moduulin ominaisuudet
 

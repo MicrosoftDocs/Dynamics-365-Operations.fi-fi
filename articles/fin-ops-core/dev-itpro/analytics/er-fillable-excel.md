@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488135"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952649"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
 [!include[banner](../includes/banner.md)]
 
-Voit suunnitella [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muotomäärityksen, jonka ER[-muoto-osan](general-electronic-reporting.md#FormatComponentOutbound) voi määrittää luomaan lähtevän tiedoston Microsoft Excel -muotoisena työkirjana. Tätä tarkoitusta varten on käytettävä tiettyjä ER-muoto-osia.
+Voit suunnitella [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muotomäärityksen, jonka ER-muoto-osan voi määrittää luomaan lähtevän tiedoston Microsoft Excel -muotoisena työkirjana. Tätä tarkoitusta varten on käytettävä tiettyjä ER-muoto-osia.
 
 Lisätietoja tästä toiminnosta on ohjeaiheen [Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md) ohjeissa.
 
@@ -85,6 +85,8 @@ ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Taul
 
 **Alue**-osa ilmaisee Excel-alueen, joka on oltava tämän ER-osan hallinnassa. Alueen nimi määritetään tämän osan **Excel-alue**-ominaisuudessa.
 
+### <a name="replication"></a>Replikointi
+
 **Replikointisuunta**-ominaisuus määrittää, toistetaanko alue luodussa tiedostossa ja millä tavoin se toistetaan:
 
 - Jos **Replikointisuunta**-ominaisuudeksi on määritetty **Ei replikointia**, soveltuvaa Excel-aluetta ei toisteta luodussa tiedostossa.
@@ -92,6 +94,8 @@ ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Taul
 - Jos **Replikointisuunta**-ominaisuudeksi on määritetty **Vaakasuuntainen**, soveltuvaa Excel-alue toistetaan luodussa tiedostossa. Jokainen replikoitu alue sijoitetaan Excel-mallin alkuperäisen alueen oikealle puolelle. Toistojen määrä määräytyy tähän ER-osaan sidotun **Tietueluettelo**-tyypin tietolähteen tietueiden määrän mukaan.
 
 Lisätietoja vaakasuuntaisesta replikoinnista on kohdan [Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäämiseen Excel-raportteihin](tasks/er-horizontal-1.md) ohjeissa.
+
+### <a name="nested-components"></a>Sisäkkäiset komponentit
 
 **Alue**-osassa voi olla muita sisäkkäisiä ER-osia, joiden avulla annetaan arvoja soveltuvilla Excelin nimetyillä alueilla.
 
@@ -105,11 +109,40 @@ Lisätietoja vaakasuuntaisesta replikoinnista on kohdan [Vaakasuunnassa laajenne
     > [!NOTE]
     > Tämän mallin avulla Excel-sovelluksessa voidaan ottaa käyttöön annettujen arvojen muotoilu sen paikallisen tietokoneen alueasetusten perusteella, joka avaa lähtevän tiedoston.
 
+### <a name="enabling"></a>Otetaan käyttöön
+
 ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Alue**-osan **Käytössä**-ominaisuus voidaan määrittää määrittämään, onko osa sijoitettava luotuun tiedostoon:
 
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Tosi** tai jos mitään lauseketta ei ole määritetty, sopiva alue täytetään luotuun tiedostoon.
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Epätosi** tai jos tämä alue ei vastaa kokonaisia rivejä tai sarakkeita, sopivaa aluetta ei täytetä luotuun tiedostoon.
 - Jos **Käytössä**-ominaisuuden lauseke on määritetty palauttamaan suorituksen aikana **Epätosi** tai jos tämä alue vastaa kokonaisia rivejä tai sarakkeita, luoto tiedosto sisältää kyseiset rivit ja sarakkeet piilotettuina riveinä ja sarakkeina.
+
+### <a name="resizing"></a>Koon muuttaminen
+
+Excel-malli voidaan määrittää käyttämään soluja tekstitietojen esittämiseen. Solu voidaan määrittää rivittämään solussa oleva teksti automaattisesti. Tällä tavoin voidaan varmistaa, että koko solussa oleva teksti näkyy muodostetussa asiakirjassa. Lisäksi kyseisen solun sisältävä rivi voidaan määrittää automaattisesti muuttamaan korkeutta, jos rivitetty teksti ei ole kokonaan näkyvissä. Lisätietoja on kohdan [Soluissa katkenneiden tietojen korjaaminen](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e) osassa Solussa olevan tekstin rivittäminen.
+
+> [!NOTE]
+> [Excelin tunnetun rajoituksen](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) vuoksi Excelin **Sovita**- ja **Rivitä teksti** -ominaisuuksien käyttö ei ehkä onnistu yhdistetyissä soluissa ja solut sisältävillä riveillä, vaikka solut olisi määritetty rivittämään teksti ja kyseiset solut sisältävät rivit olisi määritetty muuttamaan automaattisesti korkeus rivitetyn tekstin mukaiseksi. 
+
+Dynamics 365 Financen versiosta 10.0.23 alkaen sähköinen raportointi voidaan pakottaa laskemaan luodussa asiakirjassa kunkin sellaisen rivin korkeus, joka on määritetty sovittamaan korkeus automaattisesti sisäkkäisten solujen sisällön mukaisesti aina, kun kyseinen rivi sisältää ainakin yhden yhdistetyn solun, joka määritettiin rivittämään solussa oleva teksti. Laskettua korkeutta käytetään sitten rivin korkeuden muuttamiseen. Näin varmistetaan, että kaikki rivin solut näkyvät luodussa asiakirjassa. Tämän toiminnon käyttö aloitetaan seuraavasti, kun suoritetaan sellaisia ER-muotoja, jotka on määritetty käyttämään Excel-malleja lähtevien asiakirjojen luontiin.
+
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.
+3. Määritä **Sähköisen raportoinnin parametrit** -sivun **Suorituksen aikainen** -välilehdessä **Sovita rivin korkeus** -asetukseksi **Kyllä**.
+
+Tämä sääntö voidaan muuttaa yhden ER-muodon osalta päivittämällä kyseisen muodon luonnosversio seuraavasti:
+
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+2. Valitse **Lokalisointimääritykset**-sivun **Konfiguroinnit**-osassa **Raportointimääritykset**-ruutu.
+3. Valitse **Määritykset**-sivun määrityspuun vasemmassa ruudussa ER-määritys, joka on suunniteltu luomaan lähteviä asiakirjoja Excel-mallin avulla.
+4. Valitse **Versiot**-pikavälilehdessä konfiguraatioversio, jonka tila on **Luonnos**.
+5. Valitse toimintoruudussa **Suunnittelija**.
+6. Valitse **Muodon suunnittelija** -sivun muotopuun vasemmassa ruudussa Excel-malliin linkitetty Excel-osa.
+7. Valitse **Muoto**-välilehden **Säädä rivin korkeutta** -kentässä arvo määrittämään, pakotetaanko sähköinen raportointi suorituksen aikana muuttamaan sellaisen lähtevän asiakirjan rivien korkeus, jotka on luotu muokatun ER-muodon avulla:
+
+    - **Oletus** – käytä yleistä asetusta, joka on määritetty **Sähköisen raportoinnin parametrit** -sivun **Sovita rivin korkeus** -kentässä.
+    - **Kyllä** – ohita yleinen asetus ja muuta rivin korkeutta suorituksen aikana.
+    - **Ei** – ohita yleinen asetus mutta älä muuta rivin korkeutta suorituksen aikana.
 
 ## <a name="cell-component"></a>Solu-osa
 
@@ -297,6 +330,56 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
 6. Luo tulostettava FTI-tiedosto ja tarkista luodun tiedoston alatunniste.
 
     ![Luodun tiedoston alatunnisteen tarkasteleminen Excel-muodossa.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Esimerkki 2: Yhdistettyjen solujen EPPlus-ongelman korjaaminen
+
+Voit luoda lähtevän asiakirjan Excel-työkirjamuodossa suorittamalla ER-muodon. Kun **Ota EPPlus-kirjaston käyttö käyttöön sähköisessä raportointikehyksessä** -ominaisuus on käytössä **Ominaisuudenhallinta**-työtilassa, Excel-laskentataulukon tuotossa käytetään [EPPlus-kirjastoa](https://www.nuget.org/packages/epplus/4.5.2.1). Koska [Excelin toiminta](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) ja EPPlus-kirjaston rajoitus on tiedossa, saattaa kuitenkin ilmetä seuraava poikkeus: "Yhdistettyjä soluja ei voi poistaa tai korvata. Alue yhdistetään osittain toiseen yhdistettyyn alueeseen." Seuraavassa esimerkissä voit lukea, millaiset Excel-mallit voivat aiheuttaa tämän poikkeuksen ja ongelman korjaamisen.
+
+1. Luo Excel-työpöytäsovelluksessa uusi Excel-työkirja.
+2. Lisää laskentataulukossa **Sheet1** **ReportTitle**-nimi solulle **A2**.
+3. Yhdistä solut **A1** ja **A2**.
+
+    ![Tarkista solujen A1 ja A2 yhdistämisen tulokset Excel-työpöytäsovelluksen suunnitellussa Excel-työkirjassa.](./media/er-fillable-excel-example2-1.png)
+
+3. **Määritykset**-sivulla [Lisää uusi ER-muoto](er-fillable-excel.md#add-a-new-er-format) luodaksesi lähtevän asiakirjan Excel-työkirjamuodossa.
+4. [Tuo](er-fillable-excel.md#template-import) suunniteltu Excel-työkirja **Muotoilun suunnittelija** -sivulla lisättyyn ER-muotoon lähtevien tiedostojen uudella mallilla.
+5. Määritä **Yhdistäminen**-välilehdellä [solu](er-fillable-excel.md#cell-component)-tyypin **ReportTitle**-komponentin sidonta.
+6. Määritetyn ER-muodon suorittaminen. Huomaa, että seuraava poikkeus on näytetään: "Yhdistettyjä soluja ei voi poistaa tai korvata. Alue yhdistetään osittain toiseen yhdistettyyn alueeseen."
+
+    ![Tarkastele muotosuunnittelun suunnittelusivulla ER:n määritetyn muodon määrityksen tuloksia.](./media/er-fillable-excel-example2-2.png)
+
+Voit korjata nimikkeen jommallakummalla seuraavista tavoista:
+
+- **Helpompaa mutta ei suositeltavaa:** Poista **ominaisuuden hallinnan** työtilassa **Ota EPPlus-kirjaston käyttö käyttöön sähköisessä raportointikehyksessä** -ominaisuus. Vaikka tämä tapa olisikin helpompi, saattaa sitä käyttää myös muita ongelmia, koska joitakin ER-toimintoja tuetaan vain, kun **Ota käyttöön EPPlus-kirjaston käyttö sähköisessä raportointikehyksessä** on otettu käyttöön.
+- **Suositeltavaa:** Noudata näitä ohjeita:
+
+    1. Muokkaa Excel-työkirjaa Excel-työpöytäsovelluksessa jollakin seuraavista tavoista:
+
+        - Irrota taulukossa **Sheet1** solut **A1** ja **A2**.
+        - Muuta **ReportTitle**-nimen viitteen nimi **=Sheet1!$A$2** nimeksi **=Sheet1!$A$1**.
+
+        ![Tarkista viitteen muuttamisen tulokset Excel-työpöytäsovelluksen suunnitellussa Excel-työkirjassa.](./media/er-fillable-excel-example2-3.png)
+
+    2. [Tuo](er-fillable-excel.md#template-import) muokattu Excel-työkirja **Muotosuunnittelu**-sivulla muokattavaan ER-muotoon ja päivitä aiemmin luotu malli.
+    3. Muokatun ER-muodon suorittaminen.
+
+        ![Luodun asiakirjan tarkistaminen Excel-työpöytäsovelluksessa.](./media/er-fillable-excel-example2-4.png)
+
+## <a name="limitations"></a>Rajoitukset
+
+### <a name="known-epplus-library-limitations"></a>Tunnetut EPPlus-kirjaston rajoitukset
+
+#### <a name="external-data-sources"></a>Ulkoiset tietolähteet
+
+Jos jokin malleista sisältää PivotTable-taulukon, joka perustuu [ulkoiseen tietolähteeseen](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b) viittaavaan PowerPivot-malliin ja **Ota käyttöön EPPlus-kirjasto sähköisen raportoinnin sovelluskehyksessä** -ominaisuus on käytössä, näkyviin tulee seuraava virhesanoma, kun suoritat ER-muodon, joka käyttää tätä mallia lähtevien tiedostojen luomiseen Excel-muodossa: "Välimuistilähde ei ole laskentataulukko." Voit korjata tämän ongelman seuraavasti:
+
+- **Suositeltava:** Suunnittele uudelleen Excel-ratkaisu, jota käytät:
+
+    1. Erota osa, joka sisältää pivot-kaaviot erillisessä Excel-työkirjassa (työkirja A). 
+    2. Luo ER:n avulla toinen Excel-työkirja (työkirja B) Financesta, jossa on tarvittavat tiedot. 
+    3. Viittaa työkirjaan B työkirjassa A heti, kun työkirja B on luotu.
+
+- Poista käytöstä toiminto **Ota käyttöön EPPlus-kirjasto sähköisessä raportointikehyksessä** jos haluat käyttää muuta vaihtoehtoa EPPlus-vaihtoehdon sijaan. 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

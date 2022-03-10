@@ -1,29 +1,26 @@
 ---
 title: Resurssilaskureiden automaattinen päivitys
 description: Tässä ohjeaiheessa kuvataan resurssilaskureiden automaattista päivitystä resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fcc46fad8d57b7d4d57edfa4f2ae06de923d1c14
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9a3814a575fbe4379b59723f269d83379a253ede71962c0c82b5f4cc55d36e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426895"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738292"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Resurssilaskureiden automaattinen päivitys
 
@@ -52,7 +49,7 @@ Kuten edellä mainittiin, automaattiset laskurit voidaan päivittää tuotannon 
 
     Seuraavassa kuvassa on esimerkki **Päivitä resurssilaskurit** -valintaikkunasta.
 
-    ![Kuva 1](media/12-work-orders.png)
+    ![Kuva 1.](media/12-work-orders.png)
 
 5. Valitse **OK**. 
 
@@ -62,7 +59,7 @@ Sivulta **Resurssilaskurien kokonaissumma** voit saada yleiskuvan kaikkien resur
 
 Seuraavassa kuvassa on esimerkki **Resurssien koostettu arvo** -sivusta.
 
-![Kuva 2](media/13-work-orders.png)
+![Kuva 2.](media/13-work-orders.png)
 
 Huomaa seuraavat seikat:
 
@@ -70,3 +67,6 @@ Huomaa seuraavat seikat:
 
 - Voit määrittää toisiin laskureihin liittyviä laskureita. Tällöin liittyvät laskurit päivitetään automaattisesti samalla kun päälaskuri päivitetään. Lisätietoja resurssilaskureiden määrittämisestä esitetään kohdassa [Laskurit](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

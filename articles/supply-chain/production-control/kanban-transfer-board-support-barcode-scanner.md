@@ -1,7 +1,7 @@
 ---
-title: Kanban-siirron taulun tuki viivakoodinlukijoille
-description: Kanban-siirron taulu tukee skannerin toimia aina pienoisohjelman viivakoodiskannerista kanban-työn valitsemiseen, käynnistämiseen, päättämiseen ja tyhjentämiseen.
-author: ChristianRytt
+title: Viivakoodinlukijoiden kanban-siirtotaulun tuki
+description: Kanban-siirtotaulu tukee lukijan toimia aina pienoisohjelman viivakoodilukijasta kanban-työn valitsemiseen, käynnistämiseen, päättämiseen ja tyhjentämiseen.
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,21 +13,21 @@ ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973c9f4c6960d5e263ee06bd665c94f770696d0dd5a7cdfad8471687054d57f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736013"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566808"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-siirron taulun tuki viivakoodinlukijoille
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Viivakoodinlukijoiden kanban-siirtotaulun tuki
 
 [!include [banner](../includes/banner.md)]
 
-Kanban-siirron taulu tukee skannerin toimia aina pienoisohjelman viivakoodiskannerista kanban-työn valitsemiseen, käynnistämiseen, päättämiseen ja tyhjentämiseen.
+Kanban-siirtotaulu tukee lukijan toimia aina pienoisohjelman viivakoodilukijasta kanban-työn valitsemiseen, käynnistämiseen, päättämiseen ja tyhjentämiseen.
 
 ## <a name="registration-modes"></a>Rekisteröintitilat
 

@@ -2,79 +2,44 @@
 title: Sisäiset resurssit huoltoa varten
 description: Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 Field Service voi auttaa sekä asiakasresurssien että sisäisten resurssien huollossa.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: d4d681b2362c90b69007ea44c01c886f96cc1db1
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568075"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781413"
 ---
 # <a name="in-house-assets-for-servicing"></a>Sisäiset resurssit huoltoa varten
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 Microsoft Dynamics 365 Field Service on suunniteltu asiakasresurssien huoltoa varten. Dynamics 365 Supply Chain Managementin resurssien hallinta on suunniteltu sisäisten resurssien ylläpitoa varten. Näiden kahden sovelluksen integroinnin avulla voi käyttää Field Service -sovellusta sekä asiakasresurssien että sisäisten resurssien kanssa. Voit myös luokitella resurssit toiminnallisen sijainnin tai hierarkian perusteella sekä seurata huoltoa tarkasti.
 
-Lisätietoja on kohdassa [Dynamics 365 Field Servicen ja Supply Chain Managementin integroiminen](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
+Lisätietoja on kohdassa [Dynamics 365 Field Servicen ja Supply Chain Managementin integroiminen](/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## <a name="templates"></a>Mallit
 
 Sisäiset resurssit sisältävät perustaulukarttojen kokoelman, joita käytetään yhdessä tietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-| Finance and Operations -sovellukset | Dynamics 365:n mallipohjaiset sovellukset | kuvaus |
+| Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset | kuvaus |
 |-----------------------------|-----------------------------------|-------------|
-| Resurssien hallinnan resurssien elinkaarimallit | msdyn\_assetlifecyclemodels | |
-| Resurssien hallinnan resurssien elinkaaritilat | msdyn\_assetlifecyclestates | |
-| Resurssien hallinnan resurssit | msdyn\_customerassets | |
-| Resurssien hallinnan resurssityypit | msdyn\_customerassetcategories | |
-| Resurssien hallinnan toiminnallisen sijainnin elinkaarimallit | msdyn\_functionallocationlifecyclemodels | |
-| Resurssien hallinnan toiminnallisen sijainnin elinkaaritilat | msdyn\_functionallocationlifecyclestates | |
-| Resurssien hallinnan toiminnalliset sijainnit | msdyn\_functionallocations | |
-| Resurssien hallinnan toiminnallisen sijainnin tyypit | msdyn\_functionallocationtypes | |
-| Resurssien hallinnan valmistajat | msdyn\_manufacturers | |
-| Resurssien hallinnan mallit | msdyn\_models | |
-| Resurssien hallinnan takuu | msdyn\_warranties | |
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
-
-[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
-
-[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
-
-[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
-
-[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
-
-[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
-
-[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
-
-[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
-
-[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
-
-[!include [models](includes/AssetManagementModels-msdyn-models.md)]
-
-[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
-
+[Resurssien hallinnan resurssien elinkaarimallit](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
+[Resurssien hallinnan resurssien elinkaaritilat](mapping-reference.md#120) | msdyn_assetlifecyclestates | |
+[Resurssien hallinnan resurssityypit](mapping-reference.md#124) | msdyn_customerassetcategories | |
+[Resurssien hallinnan resurssit](mapping-reference.md#125) | msdyn_customerassets | |
+[Resurssien hallinnan toiminnallisen sijainnin elinkaarimallit](mapping-reference.md#134) | msdyn_functionallocationlifecyclemodels | |
+[Resurssien hallinnan toiminnallisen sijainnin elinkaaritilat](mapping-reference.md#135) | msdyn_functionallocationlifecyclestates | |
+[Resurssien hallinnan toiminnallisen sijainnin tyypit](mapping-reference.md#137) | msdyn_functionallocationtypes | |
+[Resurssien hallinnan toiminnalliset sijainnit](mapping-reference.md#136) | msdyn_functionallocations | |
+[Resurssien hallinnan valmistajat](mapping-reference.md#153) | msdyn_manufacturers | |
+[Resurssien hallinnan mallit](mapping-reference.md#154) | msdyn_models | |
+[Resurssien hallinnan takuu](mapping-reference.md#209) | msdyn_warranties | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

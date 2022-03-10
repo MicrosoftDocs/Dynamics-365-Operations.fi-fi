@@ -2,7 +2,7 @@
 title: Sähköpostin ilmoitusprofiilin määrittäminen
 description: Tässä ohjeaiheessa käsitellään sähköpostin ilmoitusprofiilin luontia Microsoft Dynamics 365 Commercessa.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a92c21a93766e6583882f50222837366ed4c9a24c2bbfd93933763bd4ffa46bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771028"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109628"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Sähköposti-ilmoitusprofiilin määrittäminen
 
@@ -27,7 +27,7 @@ ms.locfileid: "6771028"
 
 Tässä ohjeaiheessa käsitellään sähköpostin ilmoitusprofiilin luontia Microsoft Dynamics 365 Commercessa.
 
-Kun luot kanavia, voit määrittää sähköposti-ilmoitusprofiilin. Näin asiakkaille voidaan lähettää sähköposteja erilaisista tapahtumista, kuten tilausten luomisesta, tilausten lähetystilasta ja maksuvirheistä.
+Kun luot kanavia, voit määrittää sähköposti-ilmoitusprofiilin. Sähköposti-ilmoitusprofiili määrittää myyntitapahtuman tapahtumat (kuten tilausten luomisen, tilausten pakattujen tapahtumien ja laskutettujen tapahtumien), joista ilmoitukset lähetetään asiakkaille. 
 
 Lisätietoja sähköpostin määrittämisestä on kohdassa [Sähköpostiviestin määrittäminen ja lähettäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -43,7 +43,7 @@ Luo sähköposti-ilmoitusprofiili noudattamalla seuraavia ohjeita.
 
 ### <a name="create-an-email-template"></a>Luo sähköpostimalli
 
-Ennen sähköposti-ilmoitustyypin käyttöä on luotava organisaation sähköpostimalli Commerce Headquarters -sovelluksessa. Tässä mallissa määritetään kullakin tuettavalla kielellä sähköpostien aihe, lähettäjä, oletuskieli ja sähköpostin perusteksti.
+Ennen sähköposti-ilmoitustyypin käyttöä on luotava organisaation sähköpostimalli Commerce Headquarters -sovelluksessa jokaiselle halutulle ilmoitustyypille. Tässä mallissa määritetään kullakin tuettavalla kielellä sähköpostien aihe, lähettäjä, oletuskieli ja sähköpostin perusteksti.
 
 Voit luoda sähköpostimallin seuraavien ohjeiden avulla.
 
@@ -61,6 +61,8 @@ Seuraavassa kuvassa näkyy esimerkkejä sähköpostimallin asetuksista.
 
 ![Sähköpostimallin asetukset.](media/email-template.png)
 
+Lisätietoja sähköpostimallien luomisesta on kohdassa [Sähköpostimallien luominen tapahtumille](email-templates-transactions.md). 
+
 ### <a name="create-an-email-event"></a>Luo sähköpostitapahtuma
 
 Voit luoda sähköpostitapahtuman seuraavien ohjeiden avulla.
@@ -76,10 +78,25 @@ Seuraavassa kuvassa näkyy esimerkkejä tapahtuman ilmoitusasetuksista.
 
 ![Tapahtuman ilmoitusasetukset.](media/email-notification-profile.png)
 
+> [!NOTE]
+> Asiakkaan luoma ilmoitustyyppi edellyttää mukautusta, ennen kuin sähköposti-ilmoitus voidaan lähettää.
+
+### <a name="schedule-a-recurring-email-notification-process-job"></a>Toistuvan sähköposti-ilmoitusprosessityön ajoittaminen
+
+Sähköposti-ilmoitusten lähettämistä varten työn **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** on oltava käynnissä.
+
+Jos et ole vielä määrittänyt työtä **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** Commerce headquarters -sovelluksessa, voit määrittää sen seuraavasti.
+
+1. Siirry kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Sähköposti ja ilmoitukset \> Lähetä sähköposti-ilmoitus**.
+1. Valitse **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** -valintaikkunassa **Toistuminen**.
+1. Valitse **Määritä toistuminen** -valintaruudussa **Ei päättymispäivää**.
+1. Valitse **Toistumismalli**-kohdassa **Minuutit** ja määritä sitten **Määrä**-kentän arvoksi **1**. Näillä asetuksilla varmistetaan, että sähköposti-ilmoitukset käsitellään mahdollisimman nopeasti.
+1. Palaa **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** -valintaikkunaan valitsemalla **OK**.
+1. Viimeistele työn määritys valitsemalla **OK**.
+
 ### <a name="next-steps"></a>Seuraavat vaiheet
 
 Ennen kuin voit lähettää viestejä, sinun on määritettävä lähtevä postipalvelu ja määritettävä erätyö. Lisätietoja on kohdassa [Sähköpostin lähettäminen ja määrittäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

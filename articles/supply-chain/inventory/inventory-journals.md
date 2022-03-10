@@ -1,29 +1,26 @@
 ---
 title: Varastokirjauskansiot
 description: Tässä ohjeaiheessa käsitellään varastokirjauskansioiden käyttämistä erityyppisten varastotilannetapahtumien kirjaamisessa.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d184b34ec33184d730d5b6eed3db144f1433f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9370e495bf16ed638646843faaf0ff599fe1abc
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4426832"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573966"
 ---
 # <a name="inventory-journals"></a>Varastokirjauskansiot
 
@@ -98,7 +95,7 @@ Tietoyksiköt tukevat seuraavia integrointityyppejä:
 -    Synkroninen palvelu (OData)
 -  Asynkroninen integrointi
 
-Lisätietoja on kohdassa [Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md).
+Lisätietoja on kohdassa [Tietoyksiköt](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > OData ei ole käytössä kaikissa varastokirjauskansioissa, joten et voi käyttää Excelin tietoyhdistintä tietojen julkaisemiseen, päivittämiseen ja takaisintuontiin Supply Chain Managementiin. 
@@ -116,4 +113,7 @@ Nämä kaksi kirjauskansiota tukevat *Alusta varasto* -skenaariota vain tietojen
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md)
+[Tietoyksiköt](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,33 +1,35 @@
 ---
 title: Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen
-description: Tässä artikkelissa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: Tässä aiheessa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ceb21af75dca2756d8e07f315ddee0246554c854
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418387"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070699"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen
 
-Tässä artikkelissa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida. 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Tässä aiheessa kerrotaan, miten vastaajien täyttämien kyselylomakkeiden tuloksia voidaan tarkastella ja arvioida. 
 
 Kun vastaajat ovat täyttäneet kyselylomakkeen, voit tarkastella ja arvioida kyselylomakkeen tuloksia seuraavilla tavoilla.
 
@@ -72,3 +74,5 @@ Voit käyttää kyselylomakkeen tilastotietoja, kun haluat analysoida täytettyj
 -   Valitse tai tarkista ehdot, kun haluat analysoida tulokset vastaajan tai kyselylomakkeen ominaisuuksien perusteella. Voit analysoida esimerkiksi vastaajan sijainnin ja oikeiden vastausten välisen korrelaation valitsemalla **Postinumero**.
 
 Määrittämäsi asetukset tallennetaan ja niitä voidaan käyttää tulosten kausittaiseen uudelleenlaskemiseen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

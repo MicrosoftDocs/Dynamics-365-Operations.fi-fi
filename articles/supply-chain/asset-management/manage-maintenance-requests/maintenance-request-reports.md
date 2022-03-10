@@ -1,29 +1,26 @@
 ---
 title: Ylläpitopyyntöraportit
 description: Tässä ohjeaiheessa kerrotaan, kuinka ylläpitopyyntöraportit luodaan resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5abb62e7f92f62d4635309625d765e1c081052eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd0d50bacd43fe66628fec94aead3a2406e8d4e62c1e2e6c3d31afa9073baa6a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427131"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773606"
 ---
 # <a name="maintenance-request-reports"></a>Ylläpitopyyntöraportit
 
@@ -44,7 +41,7 @@ Resurssien hallinnassa voit luoda kaksi raporttia, jotka liittyvät ylläpitopyy
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tiedot** -raportista.
 
-![Ylläpitopyynnön tietoraportti](media/09-manage-maintenance-requests.png)
+![Ylläpitopyynnön tietoraportti.](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Ylläpitopyyntöjen luetteloraportin luominen
 
@@ -57,4 +54,7 @@ Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tiedot** -raportista.
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyyntöluettelo** -raportista kaikille aktiivisille yläpitopyynnöille.
 
-![Ylläpitopyynnön luetteloraportti](media/10-manage-maintenance-requests.png)
+![Ylläpitopyynnön luetteloraportti.](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

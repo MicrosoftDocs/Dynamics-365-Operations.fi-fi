@@ -1,12 +1,10 @@
 ---
 title: Toimitusvaihtoehdot
 description: Myyntitilausten vastaanottajat voivat löytää vaihtoehtoisia tilauksen toteutusvaihtoehtoja Toimitusvaihtoehdot-sivulta.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 829775e36a2d49ebbab5c719436cff4c92984635
-ms.sourcegitcommit: ca7fc46607ae9d07725e1486b43c66d39ec5cdb5
+ms.openlocfilehash: f58f7923d82f3aa371ba916352211195870f9a75
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035263"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572622"
 ---
 # <a name="delivery-alternatives"></a>Toimitusvaihtoehdot
 
@@ -150,3 +148,6 @@ Tässä pikavälilehdessä korostetaan valitun toimitusvaihtoehdon vaikutusta. J
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luvatut tilaukset](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

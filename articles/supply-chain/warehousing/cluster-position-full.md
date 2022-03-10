@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574254"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102824"
 ---
 # <a name="cluster-position-full"></a>Klusterisijainti täynnä
 
@@ -28,14 +28,11 @@ ms.locfileid: "7574254"
 
 Tämä ominaisuus sisältää mahdollisuuden käyttää **Täysi**-painiketta klusterin yhdessä työyksikössä. Vanhemmissa versioissa tämä vaihtoehto oli käytettävissä vain tavallisissa tilauskeräilyssä, ei klusterikeräilyssä. Tämä ominaisuus eroaa kuitenkin normaalista **Täysi**-painikkeesta siten, että se peruuttaa jäljellä olevan työn. Se ei ehdota käyttäjälle toisen lokeron lisäämistä samaan klusteriin eikä luo automaattisesti uutta työtä.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Klusterisijainti täynnä -ominaisuuden ottaminen käyttöön
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Klusterisijainti täynnä -ominaisuuden ottaminen käyttöön tai poistaminen käytöstä
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Klusterisijainti täynnä* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Klusterisijainti täynnä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-- **Moduuli:** *Varastonhallinta*
-- **Ominaisuuden nimi:** *Klusterisijainti täynnä*
-
-## <a name="setup"></a>Luo perustiedot
+## <a name="setup"></a>Asetukset
 
 Tässä osassa on ohjeita *Klusterisijainti täynnä* -ominaisuuden määrittämiseksi ja käyttämiseksi sekä ominaisuuden esimerkki.
 

@@ -1,17 +1,14 @@
 ---
 title: Maksutavat
 description: Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä, kun järjestelmä on määritetty. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi.
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2b56609de3b2620dcc605c6c6d697cb74c8ed6c1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4411982"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779567"
 ---
 # <a name="payment-methods"></a>Maksutavat
 
@@ -32,7 +29,7 @@ ms.locfileid: "4411982"
 
 Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä, kun järjestelmä on määritetty. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi.
 
-Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tuotteista ja palveluista. Käteinen on yleisin maksutapa, mutta vähittäismyyjät voivat myös vastaanottaa maksuja sekkeinä, maksukorteilla, lahjakorteilla ja niin edelleen. Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä Dynamics 365 Commerceissa, kun järjestelmä määritetään. Seuraavassa taulukossa kuvaillaan kaikki maksutavat, jotka ovat määritettävissä:
+Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tuotteista ja palveluista. Käteinen on yleisin maksutapa, mutta vähittäismyyjät voivat myös vastaanottaa maksuja sekkeinä, maksukorteilla, lahjakorteilla ja niin edelleen. Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä Dynamics 365 Commercessa, kun järjestelmä määritetään. Seuraavassa taulukossa kuvaillaan kaikki maksutavat, jotka ovat määritettävissä:
 
 - **Käteinen** – Valuutan fyysisessä muodossa oleva raha, kuten setelit ja kolikot. Tämä valuutta voi olla joko yrityksen valuutta tai myymälän paikallinen valuutta.
 - **Sekki** – Siirrettävissä oleva maksuväline, jonka mukaan tiettynä valuuttana maksetaan tietty summa määritetystä pankista. Sekki on yleensä voimassa rajattoman ajan tai kuusi kuukautta sen antopäivämäärästä, ellei toisin ole määritetty. Voimassaoloaika vaihtelee sekin maksavasta pankista riippuen. Erilaisia sekkityyppejä ovat esimerkiksi määrännäissekit, avoimet sekit, haltijasekit ja sekä sekit, joita ei voida siirtää toiselle. Voit määrittää sekit maksutavaksi kullekin myymälälle erikseen. Sekit voi hyväksyä valuuttana, joka määritetään joko yritystasolla tai myymälän tasolla. Sekit on määritettävä maksutavaksi ennen kuin myymälä voi vastaanottaa maksuja sekkeinä.
@@ -49,3 +46,11 @@ Maksutapojen määrittämistä varten on suoritettava seuraavat tehtävät:
 2. Organisaation laajuisten korttityyppien ja korttien numeroiden luominen. Jos luottokortit tai pankkikortit hyväksytään, luo ensin yksi korttimaksuvälinetyyppi ja luo sitten organisaation laajuiset korttityypit ja korttien numerot.
 3. Myymälän maksutavan määrittäminen. Liitä maksutavat kuhunkin myymälään ja määritä sitten myymäläkohtaiset asetukset kullekin myymälän maksutavalle.
 4. Aseta liikkeille korttimaksutavat. Suorita korttimaksujen määritys loppuun kaikille korttimaksutavoille, jotka hyväksyt liikkeessä.
+
+## <a name="handle-change-tendering-for-payment-methods"></a>Vaihtorahan maksuvälineen käsitteleminen maksutavoissa
+
+Jotkin maksutavat eivät tue suoraa vaihtorahan maksuvälinetapahtumaa, jos asiakkaille on maksettava vaihtorahaa myyntipistetapahtuman aikana. Vaihtorahan maksuvälineenä voi käyttää vain **Käteinen**- ja **Valuutta**-maksutapoja. 
+
+Sellaisia tilanteita varten, joissa vaihtorahan maksuvälinetapahtumaa tarvitaan tapahtuman aikana mutta maksutapa ei tue sitä, voidaan määrittää **Vaihtorahan maksuväline** -maksutapa. Käytettävä maksutapa valitaan, kun myymälän maksutapoja määritetään. Anna sen jälkeen **Vaihtoraha**-osan **Vaihtorahan maksuväline** -kentässä vaihtorahan maksuvälinemaksun vaihtoehto. Esimerkiksi **1** voidaan antaa ilmaisemaan, että käteistä voidaan käyttää vaihtorahan maksuvälinemaksun vaihtoehtona.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

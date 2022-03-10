@@ -2,11 +2,9 @@
 title: Automaattinen tilitys ja priorisointi
 description: Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 043f403c22ae3334e28dedda3b65136499822d9e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ba8a2f3b6a731e3371ca5245d5a9177b4cd0c226768c39c0cf7f6cb27526058
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724180"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automaattinen tilitys ja priorisointi
 
@@ -82,3 +80,6 @@ Jos käyttäjäkohtaista tilitysprioriteettia ei ole, tapahtumat valitaan tility
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

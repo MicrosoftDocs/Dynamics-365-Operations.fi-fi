@@ -2,11 +2,9 @@
 title: Dimensioiden luonti ja dimensiojäsenten tuonti
 description: Kustannuslaskenta on riippumaton moduuli, joka edellyttää muiden moduulien päätietoja.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 610a9302610af7a074a91dfc2a8c87725b0a1a82
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6febb8a48cf6496fb7f4c2ee9f5281d47aa1ccae1a8ecc51c908b3810302e11c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775119"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Dimensioiden luonti ja dimensiojäsenten tuonti
 
@@ -38,7 +36,7 @@ Kustannuslaskenta on riippumaton moduuli, joka edellyttää muiden moduulien tie
 
 Seuraavassa kaaviossa kuvataan kustannuslaskennassa käytettävät dimensiot.
 
-[![Kustannuslaskennan dimensiot](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![Kustannuslaskennan dimensiot.](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 Kun tiedot tuodaan kustannuslaskentaan, voit luoda sen avulla eri näkökulmia, jotka avustavat organisaation kaikkien tasojen johtajia. Seuraavissa ohjeaiheissa on tietoja dimensioiden luomisesta ja dimension jäsenten tuonnista. 
 
@@ -54,3 +52,6 @@ Kun tiedot tuodaan kustannuslaskentaan, voit luoda sen avulla eri näkökulmia, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

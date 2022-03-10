@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68e04be6d7c727adc48996e97499361006d048bc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814557"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968793"
 ---
 # <a name="production-setup-requirements"></a>Tuotantoasetusten vaatimukset
 
@@ -39,7 +39,7 @@ Seuraavat tiedot on määritettävä muissa moduuleissa, ennen kuin voit käytt�
 -   Määritä nimikeryhmät.
 -   Määritä nimikeryhmien kirjanpitotilit.
 -   Määritä varastonimikkeiden taulu inventoinnin- ja varastonhallinnassa.
--   Luo tuoterakenteet ja tuoterakenneversiot inventoinnin- ja varastonhallinnassa.
+-   Luo tuoterakenteet ja tuoterakenneversiot tuotetietojen hallinnassa.
 
 ## <a name="required-calendar-and-resource-setup"></a>Kalenterin ja resurssin pakolliset asetukset
 Avaa ennen tuotannonhallinnan käyttöä Organisaation hallinto. Luo ja määritä siellä kalenteri ja operatiiviset resurssit seuraavassa järjestyksessä:

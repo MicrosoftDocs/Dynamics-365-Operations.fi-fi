@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62f812c7c7fa06deb5f41508044b029e6c5ca4a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740716"
 ---
 # <a name="maintenance-rounds"></a>Ylläpitokierrokset
 
@@ -80,7 +80,7 @@ ms.locfileid: "5825731"
 
 Alla oleva kuva osoittaa esimerkin huoltokierroksesta, joka sisältää kolme käyttöomaisuuserää.
 
-![Kuva 1](media/13-preventive-maintenance.png)
+![Kuva 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Ajoita ylläpitokierroksia
@@ -106,9 +106,9 @@ Kun olet määrittänyt kunnossapitokierroksen, voit ajoittaa kaikki huoltokierr
 
 Alla olevat kaksi kuvitusta näyttävät työn aikataulutuksen **Ajoita ylläpitokierroksia** -valintaikkunassa ja huoltoaikataulu rivit, jotka on luotu **Kaikki ylläpitoaikataulut** -kohdassa kyseisen ajoitustyön perusteella.
 
-![Kuva 2](media/14-preventive-maintenance.png)
+![Kuva 2.](media/14-preventive-maintenance.png)
 
-![Kuva 3](media/15-preventive-maintenance.png)
+![Kuva 3.](media/15-preventive-maintenance.png)
 
 - Kun työtilaukset luodaan manuaalisesti toimittajan takuun kattamille resursseille, näyttöön tulee valintaikkuna, jonka avulla käyttäjä saa tietää takuun. Työtilauksen luonti voidaan sitten peruuttaa. Takuusuhdetta koskeva tarkistus jätetään pois automaattisesti luoduissa työtilauksissa.  
 - Voit määrittää eräajon **Suorita taustalla** -pikavälilehdessä, jolloin kierrokset ajoitetaan säännöllisin väliajoin.  

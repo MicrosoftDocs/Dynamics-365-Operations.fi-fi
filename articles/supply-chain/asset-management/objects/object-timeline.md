@@ -1,29 +1,26 @@
 ---
 title: Resurssien tapahtumahistoria
 description: Tässä ohjeaiheessa kerrotaan, miten resurssien tapahtumahistoriaa pääsee käyttämään resurssien hallinnassa.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25d53b1380887789c6c4a7a51b600dccfe4589f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 670fa5800efad99d913e96dee8c6883f150b86d2227143dbdf392c7b380e89a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4427206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750169"
 ---
 # <a name="asset-event-history"></a>Resurssien tapahtumahistoria
 
@@ -49,3 +46,6 @@ Aikajanaa päivitetään aina, kun sivu avataan. Se sisältää seuraavat tiedot
 - Työtilaukset, mukaan lukien kirjatut nimikkeet ja muistiinpanot
 - Häiriöt
 - Kunnon arvioinnit
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

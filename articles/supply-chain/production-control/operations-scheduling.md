@@ -1,12 +1,10 @@
 ---
 title: Työvaiheiden ajoitus
 description: Tämä aihe sisältää yleisiä tietoja työvaiheiden ajoittamisesta. Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dd24dc21dc3f31c14ae2978ed0f59401c51cf1b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258563"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574566"
 ---
 # <a name="operations-scheduling"></a>Työvaiheiden ajoitus
 
@@ -76,8 +74,7 @@ Kun suoritat työvaiheen ajoituksen, voit peruuttaa tiettyjä reitityksen osia. 
 ## <a name="finite-materials"></a>Rajallinen materiaali
 Jos käsittelet rajallista materiaalia, ajoitukseen vaikuttaa myös tuotantoon tarvittavien materiaalien saatavuus. Jos tuotantoon ei ole riittävästi komponentteja käytettävissä, tuotanto voi viivästyä. Ajoitus voi perustua myös materiaalien käyttöön määrittämällä tuotannolle välttämättömät materiaalit. Kun optimoit sekä resurssikapasiteetin että materiaalien saatavuuden, tuotanto lasketaan näiden rajoitusten perusteella. Tuotantotilausta ei voi ajoittaa alkamaan ennen kuin kapasiteetti ja materiaalit ovat käytettävissä samaan aikaan ja vaaditun määrän mukaisesti.
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Työvaiheen ajoitusvaihtoehdot](operation-scheduling-options.md)
 

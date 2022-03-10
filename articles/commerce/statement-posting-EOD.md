@@ -1,28 +1,25 @@
 ---
 title: Laskelman kirjaamisen toiminnallisuuden parannukset
 description: Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772201"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087600"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations7.3.2 -versiossa.
 
@@ -53,12 +50,24 @@ Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uu
 
 - **Poista pakollinen laskenta käytöstä** – kun asetukseksi on määritetty **Kyllä**, laskelma jatkuu kirjausprosessin aikana, vaikka ero lasketun summan ja transaktion summan välillä ylittää rajan, joka on määritetty myymälöiden **Laskelma**-pikavälilehdessä.
 
+> [!NOTE]
+> Commerce-versiosta 10.0.14 alkaen, kun **Vähittäismyyntilaskelmat – vähittäinen syöttö** -ominaisuus on käytössä, **Kirjaa varasto** -erätyö ei ole enää käytettävissä eikä sitä voi suorittaa.
+
 Lisäksi seuraavat parametrit on esitelty **Eräkäsittely**-pikavälilehdellä **Kirjaus**-välilehdellä **Kaupan parametrit** -sivun kirjausvälilehden eräkäsittelypikavälilehdessä: 
 
 - **Rinnakkaisen laskelman kirjauksen enimmäismäärä** – Tämä kenttä määrittää useiden laskelmien kirjaamiseen käytettävien erätehtävien määrän. 
 - **Tilausten käsittelyn enimmäissäie** – Tämä kenttä edustaa laskelman kirjauksen eräajossa käytettävien säikeiden enimmäismäärää, kun halutaan luoda ja laskuttaa yhden laskelman myyntitilauksia. Laskelman kirjaus prosessissa käytettävien säikeiden kokonaismäärä lasketaan tämän parametrin arvon mukaan kerrottuna **Rinnakkaisen laskelman kirjausten enimmäismäärä**-parametrin arvolla. Tämän parametrin arvon määrittäminen liian suureksi voi vaikuttaa kielteisesti laskelman kirjausprosessin suorituskykyyn.
 - **Koontia varten sisällytettyjen tapahtuma rivien enimmäismäärä** – Tämä kenttä määrittää, montako tapahtumariviä sisällytetään yksittäiseen yhteenlaskettavaan tapahtumaan ennen uuden luomista. Yhdistetyt tapahtumat luodaan erilaisten koostekriteerien, kuten asiakkaan, liiketoiminnan päivän tai taloushallinnon dimensioiden, perusteella. On tärkeää huomata, että yksittäisen tapahtuman rivejä ei jaeta eri yhdistettyjen tapahtumien kesken. Tämä tarkoittaa, että on mahdollista, että yhdistettyjen tapahtumien rivien määrä on hieman suurempi tai pienempi niiden tekijöiden perusteella, kuten erillisten tuotteiden määrä.
 - **Säikeiden enimmäismäärä varastotapahtumien tarkistamista varten** – Tämä kenttä määrittää tapahtumien vahvistamiseen käytettävien säikeiden määrän. Tapahtumien vahvistaminen on pakollinen vaihe, joka on suoritettava, ennen kuin tapahtumat voidaan noutaa lausekkeissa. Sinun on myös määritettävä uuden kirjausprosessin aikana **Lahjakorttituote** **Lahjakortti**-pikavälilehdessä **Kaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä on määritettävä myös silloin, kun organisaatio ei käytä lahjakortteja.
+
+Seuraavassa taulukossa luetellaan edellisten parametrien suositellut arvot. Nämä arvot on testattava ja räätälöitävä käyttöönoton konfiguraation ja käytettävissä olevan infrastruktuurin mukaan. Suositeltujen arvojen suureneminen voi vaikuttaa haitallisesti muihin eräkäsittelyihin, ja ne on tarkistettava.
+
+| Parametri | Suositeltava arvo | Yksityiskohtaiset tiedot |
+|-----------|-------------------|---------|
+| Rinnakkaisten laskelmien kirjaamisen enimmäismäärä | <p>Määritä tämän parametrin arvoksi niiden erätöiden määrä, joka on käytettävissä eräryhmälle, joka suorittaa **Laskelma**-työn.</p><p>**Yleinen sääntö:** Kertomalla Application Object Serverin (AOS) virtuaalipalvelinten määrän AOS-virtuaalipalvelimessa käytettävissä olevien erätehtävien lukumäärällä.</p> | Tätä parametria ei voi käyttää, kun **Vähittäismyyntilaskelmat – vähittäinen syöttö** -ominaisuus on käytössä. |
+| Säikeiden enimmäismäärä tilausten käsittelyssä laskelmaa kohti | Aloita testaamaan arvoilla kohdasta **4**. Yleensä arvo ei saa ylittää arvoa **8**. | Tämä parametri määrittää myyntitilausten luomiseen ja kirjaamiseen käytettyjen säikeiden määrän. Se edustaa säikeiden määrää, jonka avulla voidaan kirjata laskelmaa kohti. |
+| Suurin mahdollinen tapahtumarivien määrä sisällytetty koosteeseen | Aloita testaamaan arvoilla kohdasta **1000**. Pääkonttorin konfiguraation mukaan pienemmät luvut voivat olla tehokkaammin suorituskyvylle hyödyllisiä. | Tämä parametri määrittää kuhunkin myyntitilaukseen sisällytettävien rivien määrän laskelman kirjaamisen yhteydessä. Kun tämä numero on saavutettu, rivit jaetaan uuteen tilaukseen. Vaikka myyntirivien määrä ei ole tarkka, koska jako tapahtuu myyntitilauksen tasolla, se on lähellä määritettyä lukua. Tätä parametria käytetään, kun luodaan myyntitilauksia vähittäismyyntitapahtumille, joissa ei ole nimettyä asiakasta. |
+| Myymälän tapahtumien tarkistuksen säikeiden enimmäismäärä | Suosittelemme tämän parametrin arvoksi **4** ja korotusta vain, jos et saavuta hyväksyttävää suorituskykyä. Tämän prosessin käytössä olevien säikeiden määrä ei voi ylittää eräpalvelimen käytettävissä olevien suorittimien määrää. Jos määrität tässä liian monta säiettä, saatat vaikuttaa muihin eräkäsittelyihin. | Tämä parametri ohjaa niiden tapahtumien määrää, jotka voidaan vahvistaa tietyn myymälän osalta samanaikaisesti. |
 
 > [!NOTE]
 > Kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Commerce-parametrit**-sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.
@@ -116,9 +125,17 @@ Laskelma käy läpi eri työvaiheet (esimerkiksi Luo, Laske, Tyhjennä ja Kirjaa
 
 ### <a name="aggregated-transactions"></a>Kootut tapahtumat
 
-Kirjausprosessin aikana myyntitapahtumat kootaan konfiguraation mukaan. Nämä kootut transaktiot tallennetaan järjestelmässä ja niitä käytetään myyntitilausten luomiseen. Jokainen koottu transaktio luo vastaavan myyntitilauksen järjestelmässä. Voit tarkastella koottuja transaktioita käyttämällä **Kootut tapahtumat** -painiketta laskelman **Suorituksen tiedot** -ryhmässä.
+Kirjaamisen aikana käteis- ja siirtotapahtumat yhdistetään asiakkaan ja tuotteen mukaan. Näin ollen myyntitilausten ja luotujen rivien määrä pienenee. Kootut transaktiot tallennetaan järjestelmässä ja niitä käytetään myyntitilausten luomiseen. Jokainen koottu transaktio luo vastaavan myyntitilauksen järjestelmässä. 
 
-Kootun transaktion **Myyntitilauksen tiedot** -välilehdessä näkyvät seuraavat tiedot:
+Jos laskelmaa ei ole kirjattu kokonaan, voit tarkastella laskelman koostettuja tapahtumia. Valitse toimintoruudun **Laskelma**-välilehden **Suorituksen tiedot** -ryhmässä **Koostetut tapahtumat**.
+
+![Koostettu tapahtuma -painike laskelmalle, jota ei ole kirjattu kokonaan.](media/aggregated-transactions.png)
+
+Kirjattujen tiliotteiden osalta voit tarkastella koottuja tapahtumia **Kirjatut tiliotteet** -sivulla. Valitse toimintoruudussa **Kyselyt** ja valitse sitten **Koostetut tapahtumat**.
+
+![Kirjattujen lauseiden koostettujen tapahtumien komento.](media/aggregated-transactions-posted-statements.png)
+
+Kootun transaktion **Myyntitilauksen tiedot** -pikavälilehdessä näkyvät seuraavat tiedot:
 
 - **Tietuetunnus** – Kootun transaktion tunnus.
 - **Laskelman numero** – Laskelma, johon koottu transaktio kuuluu.
@@ -127,12 +144,28 @@ Kootun transaktion **Myyntitilauksen tiedot** -välilehdessä näkyvät seuraava
 - **Koostettujen rivien määrä** – Kootun transaktion ja myyntitilauksen rivien kokonaismäärä.
 - **Tila** – Kootun transaktion viimeisin tila.
 - **Laskun tunnus** – Myyntilaskun tunus, kun kootun transaktion myyntitilaus laskutetaan. Jos tämä kenttä on tyhjä, myyntitilauksen laskua ei ole kirjattu.
+- **Virhekoodi** – Tämä kenttä määritetään, jos koostamisen tilana on virhe.
+- **Virhesanoma** – Tämä kenttä määritetään, jos koostamisen tilana on virhe. Se sisältää tietoja siitä, mikä on aiheuttanut prosessin epäonnistumisen. Voit korjata ongelman virhekoodin tietojen avulla ja käynnistää prosessin sitten manuaalisesti uudelleen. Koostettu myynti on ehkä poistettava ja käsiteltävä uudella laskelmalla ratkaisutyypin mukaan.
 
-Kootun taphtuman **Tapahtuman tiedot** -välilehdessä näkyvät kaikki tapahtumat, jotka on tuotu koottuun tapahtumaan. Kootun tapahtuman kootuilla riveillä näkyvät kaikki tapahtumien kootut tietueet. Kootuilla riveillä näkyy myös tietoja, kuten nimike, malli, määrä, hinta, nettosumma, yksikkö ja varasto. Kukin koottu rivi vastaa yleisesti yhtä myyntitilausriviä.
+![Yhdistetyn tapahtuman myyntitilausten tiedot -pikavälilehden kentät.](media/aggregated-transactions-error-message-view.png)
 
-**Kootut tapahtumat** -sivulla voit ladata tietyn kootun tapahtuman XML:n valitsemalla **Vie myyntitilausten XML** -painikkeen. Voit korjata myyntitilauksen luomisen ja kirjaamiseen liittyviä ongelmia XML-tiedoston avulla. Lataa XML, lähetä se testiympäristöön ja tee virheenkorjaus testiympäristössä. Koottujen tapahtumien XML:n lataustoiminto ei ole käytettävissä laskelmille, jotka on kirjattu.
+Kootun taphtuman **Tapahtuman tiedot** -pikavälilehdessä näkyvät kaikki tapahtumat, jotka on tuotu koottuun tapahtumaan. Kootun tapahtuman kootuilla riveillä näkyvät kaikki tapahtumien kootut tietueet. Kootuilla riveillä näkyy myös tietoja, kuten nimike, malli, määrä, hinta, nettosumma, yksikkö ja varasto. Kukin koottu rivi vastaa yleisesti yhtä myyntitilausriviä.
 
-Kootun tapahtuman näkymä tarjoaa seuraavat edut:
+![Koostettujen tapahtumien tapahtumatiedot -pikavälilehti.](media/aggregated-transactions-sales-details.png)
+
+Joissakin tilanteissa koostettuihin tapahtumiin saattaa epäonnistua konsolidoidun myyntitilauksen kirjaaminen. Näissä tilanteissa laskelman tilaan liittyy virhekoodi. Jos haluat tarkastella vain koostettuja tapahtumia, joissa on virheitä, voit ottaa **Näytä vain epäonnistuneet** -suodattimen käyttöön yhdistettyjen tapahtumien näkymässä valitsemalla valintaruudun. Ottamalla suodattimen käyttöön voit rajoittaa tulokset yhteenlasketuille tapahtumille, joissa on virheitä, jotka edellyttävät ratkaisua. Lisätietoja näiden virheiden korjaamisesta löydät kohdasta [asynkronisten asiakastilausten tapahtumien muokkaaminen ja tarkistaminen](edit-order-trans.md).
+
+![Näytä vain epäonnistuneet -suodattimen valintaruutu koostettujen tapahtumien näkymässä.](media/aggregated-transactions-failure-view.png)
+
+**Kootut tapahtumat** -sivulla voit ladata tietyn kootun tapahtuman XML:n valitsemalla **Vie kootut tiedot**. Voit tarkastella XML-muotoa missä tahansa XML-muotoilussa, kun haluat nähdä myyntitilauksen luontiin ja kirjaamiseen liittyvät todelliset tiedot. Koottujen tapahtumien XML:n lataustoiminto ei ole käytettävissä laskelmille, jotka on kirjattu.
+
+![Vie koostetut tiedot -painike Koostetut tapahtumat -sivulla.](media/aggregated-transactions-export.png)
+
+Jos et voi korjata virhettä korjaamalla myyntitilauksen tai myyntitilausta tukevan tiedon, **Asiakkaan tilauksen poistaminen** -painike on käytettävissä. Jos haluat poistaa tilauksen, valitse epäonnistunut koostettu tapahtuma ja valitse sitten **Poista asiakastilaus**. Sekä koostettu transaktio että vastaava myyntitilaus poistetaan. Voit nyt tarkistaa tapahtumat käyttämällä muokkaus- ja kirjaustoimintoja. Vaihtoehtoisesti ne voidaan käsitellä uudelleen uudella laskelmalla. Kun kaikki viat on korjattu, voit jatkaa laskelman kirjaamista suorittamalla laskelman kirjaustoiminnon.
+
+![Poista asiakastilauspainike koostettujen tapahtumien näkymässä.](media/aggregated-transactions-delete-cust-order.png)
+
+Koottujen tapahtumien näkymä tarjoaa seuraavat edut:
 
 - Käyttäjä näkee kootut tapahtumat, jotka epäonnistuivat myyntitilauksen luonnin aikana, sekä myyntitilaukset, jotka epäonnistuivat laskutuksen aikana.
 - Käyttäjä näkee, kuinka tapahtumat kootaan.

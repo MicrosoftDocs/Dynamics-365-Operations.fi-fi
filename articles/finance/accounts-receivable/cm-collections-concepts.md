@@ -1,12 +1,10 @@
 ---
 title: Perinnän hallinnan keskeiset käsitteet
 description: Ohjeaiheessa käsitellään perinnän hallinnan keskeisiä käsitteitä.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d71d436f561f0c9b0d8caef00191d1eb9b56580
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ba64910498732855303e14d3884618597d21510d
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257678"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753943"
 ---
 # <a name="collections-management-key-concepts"></a>Perinnän hallinnan keskeiset käsitteet
 

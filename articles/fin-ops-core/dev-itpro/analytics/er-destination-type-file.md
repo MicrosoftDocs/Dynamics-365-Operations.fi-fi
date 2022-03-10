@@ -2,7 +2,6 @@
 title: Tiedostotyyppinen ER-kohde
 description: Tässä ohjeaiheessa on tietoja tiedostokohteen määrittämisestä ER-muodolle.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c597a627ab755e411469f3b3f847d43b7a875bdd
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: adb32efd3849c94294d9fe9e706f39d209116d259e0d964d1558cc0e49009a5a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760795"
 ---
 # <a name="file-destination"></a>Tiedostokohde
 
@@ -31,7 +30,7 @@ Voit määrittää tiedostokohteen kullekin lähteviä asiakirjoja luomaan mää
 
 Jos asetat **Kohdeasetukset** -sivulla **Käytössä**-kohdan arvoksi **Kyllä**, avaamis- tai tallennusikkuna avautuu, kun määritys on valmis.
 
-[![Kohdeasetusten sivu](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
+[![Kohdeasetusten sivu.](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

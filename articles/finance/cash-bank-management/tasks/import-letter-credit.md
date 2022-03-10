@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ce0a12aff70da1ec556b69198aa5210519b6af2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c6119a8b52eece5935bf05d0f2300feeb8d4e90b08f26e949870f491bc9254e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743118"
 ---
 # <a name="import-letter-of-credit"></a>Tuo remburssi
 
@@ -128,7 +128,8 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 12. Sulje sivu.
 13. Sulje sivu.
 
-## <a name="verify-import-letter-of-credit-status"></a>Tarkista Tuo remburssitapahtuma -tila
+## <a name="verify-import-letter-of-credit-status-and-printing"></a>Tarkista Tuo remburssitapahtuma -tila ja tulostus
+
 1. Valitse Maksuliikenteen hallinta > Luottokirjeet > Tuontiremburssi ja tuontiperintä.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
 3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.

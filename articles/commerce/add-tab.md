@@ -2,11 +2,9 @@
 title: Välilehtimoduuli
 description: Tässä ohjeaiheessa on tietoja välilehtimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8375c33bd6ffd3004cfc9d7b686d9a0edc77cdef
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9062e584d159e0f1986c46140d535f06f5d2817af048f30e812f9049bd52d4f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723284"
 ---
 # <a name="tab-module"></a>Välilehtimoduuli
 
@@ -36,7 +34,7 @@ Jokaisessa välilehtimoduulissa voidaan lisätä yksi tai useampia välilehtimod
 
 Seuraavassa kuvassa on esimerkki välilehtimoduulista sivuston sivulla. Tässä esimerkissä valittu **Toimitus**-välilehti on valittuna.
 
-![Esimerkki välilehtimoduulista](./media/ecommerce-tab.PNG)
+![Esimerkki välilehtimoduulista.](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Välilehtimoduulin ominaisuudet
 

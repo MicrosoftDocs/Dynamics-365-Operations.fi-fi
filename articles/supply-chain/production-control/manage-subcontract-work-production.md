@@ -1,7 +1,7 @@
 ---
 title: Tuotannon alihankintatyön hallinta
 description: Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Dynamics 365 Supply Chain Managementissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
-author: cvocph
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11728694565b10bf0336671f6c1b5f43cbcadf78
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7e80efc751ccf9243163d23ed48fd17923326f89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825816"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579376"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Tuotannon alihankintatyön hallinta
 

@@ -2,11 +2,9 @@
 title: Materiaaliottosäännöt
 description: Tässä ohjeaiheessa käsitellään neljää materiaalinottosääntöä, joita käytetään raaka-aineiden kulutuksessa.
 author: johanhoffmann
-manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4336dcf5b17da8fd89f5f8246f2956a2ba15fe87
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7f644f26098bf7ac7d13292d6fbabb09a488d61e29fcd5fbd3cf0d261f0529bc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768020"
 ---
 # <a name="flushing-principles"></a>Materiaaliottosäännöt
 
@@ -32,7 +30,7 @@ Materiaalinottosäännöt vastaavat erilaisia tuotantoprosesseissa käytettävi�
 
 Materiaalit siirretään varastosijaintiin ennen materiaalikulutusta. Prosessi on esitetty seuraavassa kuvassa.
 
-[![scenario4a](./media/scenario4a.png)](./media/scenario4a.png)
+[![scenario4a.](./media/scenario4a.png)](./media/scenario4a.png)
 
 1. Materiaalivarasto
 2. Raaka-aineiden keräily

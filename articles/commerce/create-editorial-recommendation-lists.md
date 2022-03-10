@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 00f7d076d745cb750dbfdd3a95130196edd888bc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f8142bb8a23e467ba38e3d22b070c2d275c95f506a3cc263dcd2986f60fb5860
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729887"
 ---
 # <a name="manually-create-curated-recommendations"></a>Kuratoitujen suositusten manuaalinen luominen
 
@@ -47,7 +47,7 @@ Voit luoda uuden kuratoidun tuotesuositusluettelon seuraavasti.
 
 ## <a name="example-list"></a>Esimerkkiluettelo
 
-![Esimerkki kuratoidusta luettelosta taustatoiminnossa](./media/examplecuratedrecolist.png)
+![Esimerkki kuratoidusta luettelosta taustajärjestelmässä.](./media/examplecuratedrecolist.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -2,11 +2,9 @@
 title: EUR-00018 ALV-täsmäytysraportti
 description: Näiden ohjeiden avulla voit luoda islantilaisille ja norjalaisille yrityksille tarkoitetun verojen täsmäytysraportin.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MainAccountLookup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6bb674d9605959692ec5ca2dc7ebd54a6ea93cc6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 936f769914e57129e057a2e7602fecd401245e01c354bf7185caf24349fd58a5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774198"
 ---
 # <a name="eur-00018-vat-reconciliation-report"></a>EUR-00018 ALV-täsmäytysraportti
 

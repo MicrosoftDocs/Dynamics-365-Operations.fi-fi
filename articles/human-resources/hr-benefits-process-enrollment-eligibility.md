@@ -1,35 +1,35 @@
 ---
-title: Rekisteröintikelpoisuuden käsittely
-description: Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoritetaan.
-author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+title: Rekisteröitymiskelpoisuuksien käsittely
+description: Tässä aiheessa käsitellään rekisteröitymiskelpoisuusprosessin suorittamista.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25699d643b3e74fe7118884457ab17314d1f9132
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: e8997cf24bf24097e46a05acffef8b3839056c57
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466299"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067626"
 ---
-# <a name="process-enrollment-eligibility"></a>Rekisteröintikelpoisuuden käsittely
+# <a name="process-enrollment-eligibility"></a>Rekisteröitymiskelpoisuuksien käsittely
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoritetaan.
+Tässä aiheessa käsitellään rekisteröitymiskelpoisuusprosessin suorittamista.
 
 1. Valitse **Etujen hallinta** -työtilassa **Käsittely**-kohdasta **Rekisteröintikelpoisuuden käsittely**.
 
@@ -56,11 +56,11 @@ Tässä artikkelissa kerrotaan, miten rekisteröintikelpoisuusprosessi suoriteta
 
 ## <a name="view-process-results"></a>Näytä prosessitulokset
 
-Tässä artikkelissa kerrotaan, miten kelpoisuusprosessitulokset näytetään.
+Tässä aiheessa käsitellään kelpoisuusprosessin tulosten näyttämistä.
 
 1.  Valitse **Etujen hallinta** -työtilassa **Käsittely**-kohdasta **Prosessitulokset**.
 
-2.  **Prosessitulokset**-lomakkeessa määritetään seuraavat kentät:
+2.  **Prosessitulokset**-sivulla määritetään seuraavat kentät:
 
    | Kenttä | kuvaus |
    | --- | --- |

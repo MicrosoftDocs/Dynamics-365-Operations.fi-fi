@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 34e29a43cebeec16357aecb036c534da35820d90ae602d67419a9606afc542ee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735965"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752829"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Laitteen määrittäminen käyttämään tuotannon käyttöliittymää
 
@@ -28,9 +28,9 @@ Tuotannon käyttöliittymä määritetään jokaiselle tuotannon laitteelle. Yri
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Tietyn laitteen määritysten ja suodattimen määrittäminen
 
-Laitteen määritykset ja työsuodattimet määritetään kirjautumalla **Tuotantoliittymä**-sivulle sillä tilillä, jonka käyttöoikeusrooli sisältää *Ajanseurannan työnjohto* -tehtävän. (Heti käytettävistä käyttöoikeusrooleista vain *tuotannon työnjohtajalla* on tämä tehtävä.) Toimi sitten seuraavasti:
+Laitteen määritykset ja työsuodattimet määritetään kirjautumalla **Tuotantoliittymä**-sivulle sillä tilillä, jonka käyttöoikeusrooli sisältää *Ylläpidä ajan valvontaa* -tehtävän. (Heti käytettävistä käyttöoikeusrooleista vain *tuotannon työnjohtajalla* on tämä tehtävä.) Toimi sitten seuraavasti:
 
-1. Siirry määritettävään laitteeseen ja kirjaudu Microsoft Dynamics 365 Supply Chain Managementiin tuotannon työnjohtajana. (Käytä tiliä, jossa on *Ajanseurannan työjohto* -tehtävä.)
+1. Siirry määritettävään laitteeseen ja kirjaudu Microsoft Dynamics 365 Supply Chain Managementiin tuotannon työnjohtajana. (Käytä tiliä, jossa on *Ylläpidä ajan valvontaa* -tehtävä.)
 1. Varmista, että määritys on käytettävissä siinä laitteessa, jota ollaan määrittämässä. Jos määritystä ei vielä ole, käytettävissä on oletusmääritys. Lisätietoja laitteen määrityksen määrittämisestä on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).
 1. Valitse **Tuotannonhallinta \> Tuotannonohjaus \> Tuotantoliittymä**.
 

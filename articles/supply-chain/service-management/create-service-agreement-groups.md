@@ -1,12 +1,10 @@
 ---
 title: Huoltosopimusryhmien luominen
-description: Huoltosopimusryhmistä on hyötyä lajiteltaessa ja suodatettaessa huoltosopimuksia.
-author: ShylaThompson
-manager: tfehr
+description: Tässä aiheessa käsitellään huoltosopimusryhmien luontimenettelyä.
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78554bbde60a708b11538b11925720698b1952ee
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5770bd9d958b63e4c62135f39224aee68247beff
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234942"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580429"
 ---
 # <a name="create-service-agreement-groups"></a>Huoltosopimusryhmien luominen 
 

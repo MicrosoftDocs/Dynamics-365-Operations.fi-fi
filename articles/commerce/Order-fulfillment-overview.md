@@ -1,27 +1,25 @@
 ---
 title: Myymälän tilauksen täyttäminen
 description: Tässä aiheessa on myymälän tilauksen täyttämisen yhteenveto.
-author: rubencdelgado
-manager: AnnBe
+author: BrianShook
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965399"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983339"
 ---
 # <a name="store-order-fulfillment"></a>Myymälän tilauksen täyttäminen
 
@@ -35,7 +33,7 @@ Myyntipisteen tilauksen täyttämistoiminto on yhtenäinen myyntipisteen työalu
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Myyntipisteen yhdistetyn tilauksen täyttämisen käyttö
 
-Tilauksen täyttämisen, [toimintotunnus 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), avulla voidaan käyttää myymälän tilauksen täyttämisen työaluetta myyntipisteessä.
+Tilauksen täyttämisen, [toimintotunnus 928](pos-operations.md), avulla voidaan käyttää myymälän tilauksen täyttämisen työaluetta myyntipisteessä.
 
 Tilauksen täyttämistoiminnon käyttöoikeudet eivät ole heti käytössä, mutta käyttäjät voivat tulevaisuudessa kutsua toiminnon myyntipisteestä **Salli tilauksen noutaminen** -käyttöoikeudella.
 
@@ -63,7 +61,7 @@ Jos valittuna on useita rivejä, tilauksen rivitietojen lisätietoikkuna ilmaise
 
 ## <a name="pending-order-lines"></a>Odottavat tilausrivit
 
-Yhdistetty tilauksen täyttäminen sisältää mahdollisuuden hyväksyä tilauksia manuaalisesti. Oletusarvosti myymälässä täytettävät tilaukset on jo hyväksytty. Jos liiketoimintaprosessit kuitenkin edellyttävät, että myymälätason työntekijä hyväksyy tilaukset, manuaalinen hyväksyntä voidaan ottaa käyttöön vähittäismyymälätasolla. Ota tilauksen hyväksyntä käyttöön valitsemalla **Retail ja Commerce** \> **Kanavat** \> **Myymälät** \> **Kaikki myymälät**. Avaa myymälä ja etsi sitten **Yleiset**-välilehdessä **Tilauksen täyttäminen** -alaotsikko. Tässä kohdassa on **Manuaalinen hyväksyminen** -asetus, jossa on oletusarvoisesti valittu **Ei**. Kun valitset asetukseksi **Kyllä** ja synkronoit muutokset kanavan tietokantaan, tilausrivit voidaan nyt käsitellä hyväksymisprosessin mukaisesti.
+Yhdistetty tilauksen täyttäminen sisältää mahdollisuuden hyväksyä tilauksia manuaalisesti. Oletusarvosti myymälässä täytettävät tilaukset on jo hyväksytty. Jos liiketoimintaprosessit kuitenkin edellyttävät, että myymälätason työntekijä hyväksyy tilaukset, manuaalinen hyväksyntä voidaan ottaa käyttöön vähittäismyymälätasolla. Ota tilauksen hyväksyntä käyttöön valitsemalla **Vähittäismyynti ja kauppa** \> **Kanavat** \> **Myymälät** \> **Kaikki myymälät**. Avaa myymälä ja etsi sitten **Yleiset**-välilehdessä **Tilauksen täyttäminen** -alaotsikko. Tässä kohdassa on **Manuaalinen hyväksyminen** -asetus, jossa on oletusarvoisesti valittu **Ei**. Kun valitset asetukseksi **Kyllä** ja synkronoit muutokset kanavan tietokantaan, tilausrivit voidaan nyt käsitellä hyväksymisprosessin mukaisesti.
 
 Työntekijät, joilla on **Salli tilauksen hyväksyminen** -käyttöoikeus, voivat avata tilauksen täyttämisen ja valita hyväksyttävät rivit. Kun rivit on hyväksytty, niiden tila ei ole enää **Odottaa** vaan **Hyväksytty** ja tilauksen hyväksymisprosessia voidaan jatkaa. Kun **Manuaalinen hyväksyminen** on otettu käyttöön, tilauksia ei käsitellä, ennen kuin ne on hyväksytty.
 
@@ -95,7 +93,7 @@ Kun tilaus on hyväksytty, rivit voidaan valita ja niiden tilaksi voidaan merkit
 
 Keräysluettelot voidaan tulostaa myyntipisteessä, mikä auttaa työntekijöitä keräysprosessissa. Keräystä suorittava työntekijä voi kuljettaa tulostettua keräysluetteloa mukanaan, ja hän voi merkitä keräysluettelon tuotteet manuaalisesti kerätyiksi tuotteiden keräyksen yhteydessä.
 
-Keräysluettelon muoto määritetään Commercessa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Keräysluettelon muoto määritetään Commercessa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](receipt-templates-printing.md).
 
 Jos rivejä on valittu ja kyseisten rivien keräysluettelo on tulostettu, niiden tilaksi päivitetään automaattisesti **Keräys**.
 
@@ -121,7 +119,7 @@ Tilausrivit voidaan pakata koska tahansa sen jälkeen, kun tilausrivi on hyväks
 - **Tuloksena oleva tila**: pakattu tai osittain pakattu
 - **Tuloksena oleva taustajärjestelmän tila**: toimitettu tai osittain toimitettu
 
-Tämä toiminto merkitsee rivit pakatuiksi tai osittain pakatuiksi ja tulostaa pakkausluettelon. Pakkausluettelo voidaan tulostaa ja sen avulla voidaan tarkistaa yhdessä pakatut tuotteet. Pakkausluettelon muoto määritetään Commercessa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Tämä toiminto merkitsee rivit pakatuiksi tai osittain pakatuiksi ja tulostaa pakkausluettelon. Pakkausluettelo voidaan tulostaa ja sen avulla voidaan tarkistaa yhdessä pakatut tuotteet. Pakkausluettelon muoto määritetään Commercessa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](receipt-templates-printing.md).
 
 **Toiminto: merkitse pakatuksi**
 
@@ -191,7 +189,7 @@ Käytetään edelleen samaa esimerkkiä. Jos valitaan pakatuiksi ja lähetetyiks
 
 ## <a name="line-statuses"></a>Rivin tilat
 
-Myyntipisteen tilausriveillä on useita tiloja ilmaisemaan tilausrivin tilaa. Myyntipisteen ja taustajärjestelmän tilat eivät aina vastaa toisiaan. Tilausrivin tilaa voi tarkastella myyntipisteessä tilauksen täyttämistoimintojen avulla. Taustajärjestelmässä tilausrivejä tarkastellaan tilauksen tietojen kautta. Tilauksen tietoihin pääsee valitsemalla **Retail ja Commerce** \> **Asiakkaat** \> **Kaikki asiakastilaukset**. Voit tarkastella tilauksen tietoja valitsemalla **Tilauksen tunnus**. Valitse tilauksen tiedoissa ensin **Myyntitilaus**-välilehti ja sitten **Näytä**-alakohdassa **Tilan tiedot**.
+Myyntipisteen tilausriveillä on useita tiloja ilmaisemaan tilausrivin tilaa. Myyntipisteen ja taustajärjestelmän tilat eivät aina vastaa toisiaan. Tilausrivin tilaa voi tarkastella myyntipisteessä tilauksen täyttämistoimintojen avulla. Taustajärjestelmässä tilausrivejä tarkastellaan tilauksen tietojen kautta. Tilauksen tietoihin pääsee valitsemalla **Vähittäismyynti ja kauppa** \> **Asiakkaat** \> **Kaikki asiakastilaukset**. Voit tarkastella tilauksen tietoja valitsemalla **Tilauksen tunnus**. Valitse tilauksen tiedoissa ensin **Myyntitilaus**-välilehti ja sitten **Näytä**-alakohdassa **Tilan tiedot**.
 
 - **Odottaa** – Myymälään määritettyjen tilausrivien, joita ei ole vielä hyväksytty, tila on **Odottaa**, kun niitä tarkastellaan myyntipisteessä. Myyntipisteessä hyväksyntää odottavina näkyvien rivien tila on taustajärjestelmässä **Tilausta käsitellään**.
 - **Hyväksytty** – Manuaalisesti tai automaattisesti hyväksyttyjen tilausrivien tila on **Hyväksytty**, kun niitä tarkastellaan myyntipisteessä. Rivien, joiden tila on **Hyväksytty**, tila on taustajärjestelmässä **Tilausta käsitellään**.
@@ -217,3 +215,6 @@ Tilauksen täyttäminen myyntipisteessä sisältää suodatuksen, jonka avulla k
 - Luontipäivämäärä
 - Toimituspäivä
 - Vastaanottopäivä
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

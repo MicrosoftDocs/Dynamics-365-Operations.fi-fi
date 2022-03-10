@@ -2,11 +2,9 @@
 title: Kustannusseurannan työtila
 description: Tässä ohjeaiheessa on tietoja kustannusseurannan työtilasta. Esimiehet voivat avata työtilassa keskitetysti vastuullaan olevia yhden tai kaikkien dimensioiden kustannusobjekteja tai kustannusobjektijoukkoja koskevia raportteja.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226434"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763187"
 ---
 # <a name="cost-control-workspace"></a>Kustannusseurannan työtila 
 
@@ -118,7 +116,7 @@ Kustannuslaskija päättää **Budjetoitujen kustannusten näytettävät sarakke
 
 Käyttäjien, kuten esimiesten, käytettävissä olevien raporttien luetteloa hallitaan valitsemalla **Kustannusseurannan työtilan konfiguraatiot** -sivulla **Julkaistu**-vaihtoehto.
 
-![Raportti, jonka käyttäjät näkevät Kustannusseuranta-työtilassa](./media/report-cost-control.png)
+![Raportti, jonka käyttäjät näkevät Kustannusseuranta-työtilassa.](./media/report-cost-control.png)
 
 Esimies voi valita tarkasteltavan kirjanpidon vuosikalenterin. Istunnon päivämäärä määrittää oletusarvoisen nykyisen kauden.
 
@@ -142,7 +140,7 @@ Kahdessa kaaviossa on yhteenveto toteutuneen ja budjetoidun vertailusta sekä bu
 
 Käyttäjät voivat porautua tarvittaessa merkinnän tietoihin valitsemalla **Kustannusmerkinnät**.
 
-![Kustannusmerkinnät](./media/cost-entries.png)
+![Kustannusmerkinnät.](./media/cost-entries.png)
 
 Esimerkiksi vuokra on meno, joka jaetaan kustannuspaikoille. Käyttäjän, joka haluaa tiedostaa oman kustannuspaikan vuokrakustannuksen, on porauduttava alas tarkistamaan, miten vuokra on laskettu.
 
@@ -150,7 +148,7 @@ Jos käyttäjät valitsevat **Kohdistusperuste** **Kustannusmerkinnät**-sivulla
 
 Seuraavassa esimerkissä kohdistusperusteen tyyppi on **Kaavan kohdistusperuste** ja kaava näytetään. Kaavan määrittämät kertoimet ovat luettelossa. Ruudukossa näkyy myös kustannusobjektikohteisesti tehdyt laskelmat.
 
-![Kustannusobjektikohtaiset laskelmat](./media/cost-entries-allocation-base.png)
+![Kustannusobjektikohtaiset laskelmat.](./media/cost-entries-allocation-base.png)
 
 Lisäresurssit 
 

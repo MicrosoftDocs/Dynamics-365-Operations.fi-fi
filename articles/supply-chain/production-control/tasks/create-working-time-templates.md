@@ -1,27 +1,25 @@
 ---
 title: Työaikamallien luominen
 description: Työaikamallit määrittävät koko viikon työtunnit ja niiden avulla luodaan työajat tietylle ajanjaksolle.
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkTimeTable, WorkTimeCopyDayDialog, WorkPeriodTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10e8e43900fd25f0051124d761dc7b06d4f9313a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 130a21d08e4e720f8bf803a5d4b03d315cefc26f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006813"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580669"
 ---
 # <a name="create-working-time-templates"></a>Työaikamallien luominen
 
@@ -29,52 +27,58 @@ ms.locfileid: "5006813"
 
 Työaikamallit määrittävät koko viikon työtunnit ja niiden avulla luodaan työajat tietylle ajanjaksolle. Tässä menettelyssä käsitellään, miten työaikamalli määritetään käyttämällä työaikojen aikavälien luokittelun ajoitusominaisuuksia. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
 
-1. Siirry kohtaan Kaikki työtilat > Resurssin elinkaaren hallinta.
-2. Valitse Työaikamallit.
+1. Siirry kohtaan **Työtilat > Resurssin elinkaaren hallinta**.
+1. Valitse **Työaikamallit**.
 
 ## <a name="create-working-time-template"></a>Luo työaikamalli
-1. Valitse Uusi.
-2. Kirjoita Työaikamalli-kenttään arvo.
-3. Kirjoita arvo Nimi-kenttään.
-4. Laajenna Maanantai-osa.
-5. ValitseLisää.
-6. Anna aika Alkaen-kentässä.
+
+1. Valitse **Uusi**.
+1. Kirjoita **Työaikamalli**-kenttään arvo.
+1. Kirjoita arvo **Nimi**-kenttään.
+1. Laajenna **Maanantai**-osa.
+1. Valitse **Lisää**.
+1. Anna aika **Alkaen**-kentässä.
     * Määritä aika, jolloin työ alkaa aamulla.  
-7. Anna aika Asti-kentässä.
+1. Anna aika **Asti**-kentässä.
     * Määritä työntekijöiden lounastauon aika.  
-8. ValitseLisää.
-9. Anna aika Alkaen-kentässä.
+1. Valitse **Lisää**.
+1. Anna aika **Alkaen**-kentässä.
     * Määritä aika, jolloin työ jatkuu lounaan jälkeen.  
-10. Anna aika Asti-kentässä.
+1. Anna aika **Asti**-kentässä.
     * Määritä, milloin työpäivä päättyy.  
 
 ## <a name="replicate-working-times-to-all-week-days"></a>Replikoi työajat kaikkiin viikonpäiviin
-1. Valitse Kopioi päivä.
+
+1. Valitse **Kopioi päivä**.
     * Kopioi työaikojen määritykset maanantaista tiistaille.  
-2. Valitse OK.
-3. Valitse Kopioi päivä.
+1. Valitse **OK**.
+1. Valitse **Kopioi päivä**.
     * Kopioi työaikojen määritykset maanantaista keskiviikolle.  
-4. Valitse vaihtoehto Arkipäivään-kentässä.
-5. Valitse OK.
-6. Valitse Kopioi päivä.
+1. Valitse vaihtoehto **Arkipäivään**-kentässä.
+1. Valitse **OK**.
+1. Valitse **Kopioi päivä**.
     * Kopioi työaikojen määritykset maanantaista torstaille.  
-7. Valitse vaihtoehto Arkipäivään-kentässä.
-8. Valitse OK.
-9. Valitse Kopioi päivä.
+1. Valitse vaihtoehto **Arkipäivään**-kentässä.
+1. Valitse **OK**.
+1. Valitse **Kopioi päivä**.
     * Kopioi työaikojen määritykset maanantaista perjantaille.  
-10. Valitse vaihtoehto Arkipäivään-kentässä.
-11. Valitse OK.
+1. Valitse vaihtoehto **Arkipäivään**-kentässä.
+1. Valitse **OK**.
 
 ## <a name="define-time-slots-for-special-operations"></a>Määritä erityistyövaiheiden ajankohdat
-1. Laajenna Perjantai-osa.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Anna tai valitse Ominaisuus-kentässä arvo.
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Anna tai valitse Ominaisuus-kentässä arvo.
+
+1. Laajenna **Perjantai**-osa.
+1. Etsi haluamasi tietue luettelosta ja valitse se.
+1. Anna tai valitse **Ominaisuus**-kentässä arvo.
+1. Etsi haluamasi tietue luettelosta ja valitse se.
+1. Anna tai valitse **Ominaisuus**-kentässä arvo.
 
 ## <a name="mark-weekend-days-as-closed-for-pickup"></a>Merkitse viikonlopun päivät noudolta suljetuksi
-1. Laajenna Lauantai-osa.
-2. Valitse Suljettu noudolta -kentässä Kyllä.
-3. Laajenna Sunnuntai-osa.
-4. Valitse Suljettu noudolta -kentässä Kyllä.
 
+1. Laajenna **Lauantai**-osa.
+1. Valitse **Suljettu noudolta** -kentässä *Kyllä* .
+1. Laajenna **Sunnuntai**-osa.
+1. Valitse **Suljettu noudolta** -kentässä *Kyllä* .
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,26 +1,28 @@
 ---
 title: Tarjouspyynnöt – yleiskatsaus
 description: Tässä aiheessa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta.
-author: kamaybac
+author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2154
+ms.custom:
+- "2154"
+- intro-internal
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ff153d9c16b219158c12f4bb49eb0a0c5d401ac
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102899"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983389"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Tarjouspyynnöt – yleiskatsaus
 
@@ -37,7 +39,7 @@ Tarjouspyyntöprosessi muodostuu seuraavista tehtävistä:
 
 Seuraavassa kuvassa on yhteenveto tarjouspyyntöprosessista.
 
-[![Tarjouspyyntöprosessi](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![Tarjouspyyntöprosessi.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Voit luoda tarjouspyyntötapauksen suunnitelluista tilauksista, ostoehdotuksesta tai manuaalisesta kirjauksesta. Tarjouspyyntötapaus on perusasiakirja, jonka perusteella tarjouspyyntö tehdään kullekin toimittajalle.
 

@@ -2,11 +2,9 @@
 title: Kanavan määrittäminen kanavan siirtymishierarkian käyttämistä varten
 description: Tässä aiheessa kuvataan, miten kanava määritetään kanavahierarkian käyttöä varten Microsoft Dynamics 365 Commercessa.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ceb6aa65c2ed5bc8d4224bdaf7095fba769181e8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3cf29bd423a2475b77e9076024b4da6864a31065da81de49f1b9a0f639243f1d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713989"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Kanavan määrittäminen kanavan siirtymishierarkian käyttämistä varten
 
@@ -47,7 +45,7 @@ Voit määrittää kanavan kanavan siirtymishierarkian käyttöä varten noudatt
 
 Seuraavassa kuvassa esitetään, miten kanava määritetään kanavan siirtymishierarkian käyttöä varten.
 
-![Kanavan esimerkkimääritys](media/configure-channel-hierarchy-1.png)
+![Kanavan esimerkkimääritys.](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Määritä määritteen metatiedot
 
@@ -63,7 +61,7 @@ Määritä määritteen metatiedot seuraavien ohjeiden mukaisesti.
 
 Seuraavassa kuvassa näkyy esimerkkijoukko kanavan tuotemääritteitä, jotka on määritetty kanavan luokkasolmussa.
 
-![Kanavamääritteet kanavaluokkasolmussa](media/configure-channel-hierarchy-2.png)
+![Kanavamääritteet kanavaluokkasolmussa.](media/configure-channel-hierarchy-2.png)
 
 ## <a name="publish-changes"></a>Julkaise muutokset
 
@@ -76,11 +74,11 @@ Julkaise muutokset seuraavien ohjeiden avulla.
 
 Seuraavassa kuvassa näkyy, miten kanavapäivitykset julkaistaan.
 
-![Julkaise kanavan päivitykset](media/configure-channel-hierarchy-3.png)
+![Julkaise kanavan päivitykset.](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Luo kanavan siirtymishierarkia](create-channel-hierarchy.md)
+[Vähittäismyyntikanavan siirtymishierarkian luominen](create-channel-hierarchy.md)
 
 
 

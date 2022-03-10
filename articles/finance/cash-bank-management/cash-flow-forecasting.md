@@ -1,8 +1,8 @@
 ---
 title: Kassavirtaennusteet
 description: Tässä ohjeaiheessa on kassavirran ennusteprosessin yleiskatsaus. Siinä kerrotaan myös kassavirtaennusten integroinnista muihin järjestelmän moduuleihin.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7642b26be08427ccbef3929f2a2e083ce43d4e75
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 5a46946ff2c3569dab0ce8b53b3cddcf18318cbf
+ms.sourcegitcommit: 465c84eb5cdc211692e2ae09b45d1400f9a315ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897401"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8314705"
 ---
 # <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Voit analysoida tulevaa kassavirtaa ja valuuttavaatimuksia kassavirran ennustetyökaluilla. Voit tällä tavoin arvioida yrityksen käteisvarojen tarvetta tulevaisuudessa. Sinun on tehtävä seuraavat tehtävät kassavirtaennustetta varten:
 
@@ -36,6 +37,7 @@ Kun nämä tehtävät on tehty, voit laskea ja analysoida kassavirran ja tulevie
 Kassavirtaennuste voidaan integroida kirjanpitoon, ostoreskontraan, myyntireskontraan budjetointiin ja inventoinnin- ja varastonhallintaan. Ennusteprosessi käyttää järjestelmään vietyjä tapahtumatietoja. Laskentaprosessi puolestaan ennustaa kunkin tapahtuman odotetun käteisvaikutuksen. Seuraavat tapahtumatyypit otetaan huomioon kassavirtaa laskettaessa:
 
 - **Myyntitilaukset** – toistaiseksi laskuttamattomat, fyysisiin tai taloudellisiin myynteihin johtavat myyntitilaukset.
+- **Vapaatekstilaskut** - vapaatekstilaskut, joita ei ole vielä kirjattu ja jotka johtavat myyntiin. 
 - **Ostotilaukset** – toistaiseksi laskuttamattomat, fyysisiin tai taloudellisiin ostoihin johtavat ostotilaukset.
 - **Myyntireskontra** – avoimet asiakastapahtumat (laskut, joita ei ole vielä maksettu).
 - **Ostoreskontra** – avoimet toimittajatapahtumat (laskut, joita ei ole vielä maksettu).
@@ -43,9 +45,11 @@ Kassavirtaennuste voidaan integroida kirjanpitoon, ostoreskontraan, myyntireskon
 - **Budjettirekisterimerkinnät** – kassavirtaennusteille valitut budjettirekisterimerkinnät.
 - **Kysynnän ennusteet** – kassavirtaennusteille valitut varastoennustemallin rivit.
 - **Tarjontaennusteet** – kassavirtaennusteille valitut varastoennustemallin rivit.
+- **Ulkoinen tietolähde** – Ulkoiset tiedot, jotka syötetään tai tuodaan kassavirtaennusteisiin taulukkolaskentamalleja käyttäen.
 - **Projektiennusteet** – Projektinhallinta- ja kirjanpitoennusteet ennustemallin avulla.
+- **Kassavirran arvonlisäveroviranomaisen maksut** – Arvioidut arvonlisäveroviranomaisen maksusummat ja ajoitus, joka johtaa maksuihin. Ota Kassavirran arvonlisäveroviranomaisen maksut -ominaisuus käyttöön.
 
-## <a name="configuration"></a>Määritys
+## <a name="configuration"></a>Konfigurointi
 
 Voit määrittää kassaviran ennusteprosessin **Kassavirtaennusteen määritys** -sivulla. Voit määrittää tällä sivulla seurattavat rahatilit ja kunkin alueen oletusennustetoiminnot.
 
@@ -83,16 +87,24 @@ Voit ohittaa tietyn asiakkaan kirjausprofiilien **Rahatili**-kentän oletusarvon
 
 ### <a name="budgeting"></a>Budjetointi
 
-Budjettimalleista luodut budjetit voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Budjetointi**-välilehdessä ennusteeseen sisällytettävät budjettimallit. Uudet budjettirekisterimerkinnät sisältyvät oletusarvoisesti ennusteisiin sen jälkeen, kun budjettimalli on otettu käyttöön kassavirtaennusteessa. Kassavirtaennusteen sisällyttäminen voidaan ohittaa yksittäisissä budjettirekisterimerkinnöissä.
+Budjettimalleista luodut budjetit voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Budjetointi**-välilehdessä ennusteeseen sisällytettävät budjettimallit. Uudet budjettirekisterimerkinnät sisältyvät oletusarvoisesti ennusteisiin sen jälkeen, kun budjettimalli on otettu käyttöön kassavirtaennusteessa.
+
+Budjettirekisteritapahtumat voidaan sisällyttää kassavirtaennusteeseen yksitellen mukauttamisen avulla. Kun Sisällytä kassavirtaennusteisiin -sarake lisätään **Budjettirekisteritapahtumat**-sivulle, järjestelmä korvaa **Kassavirtaennusten asetukset** -sivulla olevat asetukset siten, että yksittäinen budjettirekisteritapahtuma sisällytetään ennusteeseen.
+
 
 ### <a name="inventory-management"></a>Inventoinnin- ja varastonhallinta
 
 Varaston kysynnän ja tarjonnan ennusteet voidaan sisällyttää kassavirtaennusteisiin. Valitse **Kassavirtaennusteen määritys** -sivun **Inventoinnin- ja varastonhallinta**-välilehdessä kassavirtaennusteeseen sisällytettävät ennustemallit. Kassavirtaennusteen sisällyttäminen voidaan ohittaa yksittäisillä kysynnän ja tarjonnan ennusteriveillä.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Kassavirran ennustamisen dimensioiden määrittäminen
-**Kassavirran ennustamisen määritykset** -sivun uuden välilehden avulla voit määrittää, mitkä taloushallinnon dimensiot otetaan käyttöön suodatettaessa **Kassavirran ennustaminen** -työtilaa. Tämä välilehti näkyy vain, kun Kassavirtaennusteet-toiminto on käytössä. 
+ **Kassavirran ennustamisen määritykset** -sivun uuden välilehden avulla voit määrittää, mitkä taloushallinnon dimensiot otetaan käyttöön suodatettaessa  **Kassavirran ennustaminen** -työtilaa. Tämä välilehti näkyy vain, kun Kassavirtaennusteet-toiminto on käytössä.
 
 Valitse **Dimensiot**-välilehdessä suodatuksessa käytettävät dimensiot luettelosta ja siirrä ne oikeanpuoleiseen sarakkeeseen nuolinäppäinten avulla. Kassavirtaennustetietojen suodattamiseen voidaan valita vain kaksi dimensiota. 
+
+### <a name="setting-up-external-source"></a>Ulkoisen lähteen määrittäminen
+Ulkoisia tietoja voi syöttää tai tuoda kassavirtaennusteisiin, kun Finance Insights on määritetty. Ulkoiset lähteet on määritettävä ennen ulkoisten tietojen antamista tai tuomista. Määritä ulkoiset kassavirtaluokat **Ulkoinen lähde** -välilehdessä. Luokka voi olla **Lähtevä** tai **Saapuva**. Kirjaustyypiksi on valittava **Maksuvalmius**. Valitse **Yrityksen asetukset** -ruudukossa yritykset ja vastaavat päätilit, joita ulkoiset kassavirtaluokat koskevat.
+
+Lisätietoja: [Ulkoiset tiedot kassavirtaennusteissa](../../finance/finance-insights/external-data-in-cash-flow.md). 
 
 ### <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
 
@@ -101,6 +113,10 @@ Versiossa 10.0.17 uusi ominaisuus mahdollistaa integroinnin projektinhallintaan 
 Kun kassavirtaprojektin ennusteominaisuus on käytössä, kassavirtaennustetta voidaan tarkastella kunkin projektin osalta **Kaikki projektit** -sivulla. Valitse toimintoruudun **Suunnitelma**-välilehden **Ennuste**-ryhmässä **Kassavirtaennuste**. **Kassayhteenveto**-työtiloissa (katso myöhemmin tässä ohjeaiheessa [Raportointi](#reporting)-osa) projektin ennustetapahtumatyyppi näyttää sisäänvirtaukset (projektiennusteen tuotot) ja ulosvirtaukset (projektiennusteen kustannukset). Summat voidaan sisällyttää vain, jos **Kassayhteenveto**-työtilojen **Projektin vaihe** -kentän arvoksi on määritetty **Käsittelyssä**.
 
 Projektitapahtumat sisältyvät kassavirtaennusteeseen edelleen monin tavoin riippumatta siitä, onko **Kassavirtaprojektin ennuste** -ominaisuus käytössä. Kirjatut projektilaskut sisällytetään ennusteeseen avoimien asiakastapahtumien osana. Projektista peräisin olevat myynti- ja ostotilaukset sisällytetään ennusteeseen avoimina tilauksina sen jälkeen, kun ne on viety järjestelmään. Voit myös siirtää projektiennusteet kirjanpidon budjettimalliin. Tämä kirjanpidon budjettimalli sisällytetään sitten kassavirtaennusteeseen budjettirekisterimerkintöjen osana. Jos **Kassavirtaprojektin ennuste** -ominaisuus on käytössä, älä siirrä projektiennusteita kirjanpidon budjettimalliin, koska tämä toiminto aiheuttaa projektiennusteiden laskemisen kahteen kertaan.
+
+### <a name="sales-tax-authority-payments"></a>Arvonlisäveroviranomaisen maksut 
+
+Kassavirran arvonlisäveroviranomaisen maksujen ominaisuus ennustaa arvonlisäveromaksujen kassavirtavaikutukset. Se käyttää maksamattomia arvonlisäverotapahtumia, veron tilityskausia ja verokauden maksuehtoja kassavirtamaksujen päivämäärän ja summan ennustamiseksi. 
 
 ### <a name="calculation"></a>Laskelma
 
@@ -144,7 +160,7 @@ Nykyisen yrityksen työntilan käyttöä hallitaan **Näytä kassavirta – nyky
 
 **Kassayhteenveto – nykyinen yritys** -työtilassa kassavirtaennusteen analytiikka näkyy yrityksen määrittämänä kirjanpitovaluuttana. Analytiikassa käytettävä kirjanpitovaluutta määritetään **Kirjanpito**-sivulla. Työtilassa on nykyisen yrityksen kassavirtaennusteiden ja pankkitilin saldojen yhteenveto. Tilikartan saapuvat ja lähtevät kassavirrat on yhteenveto käteisvarojen tulevista siirroista ja saldoista kirjanpitovaluuttana. Siinä on myös tarkkoja tietoja ennakoiduista tapahtumista. Näkyvissä on myös valuuttasaldojen ennuste.
 
-Lisätietoja kassavirtaennusteiden analytiikasta on kohdassa [Käteisvarojen yleiskatsaus - Power BI -sisältö](./cash-overview-power-bi-content.md) topic.
+Lisätietoja kassavirtaennusteiden analytiikasta on kohdassa [Käteisvarojen yleiskatsauksen Power BI -sisältö](Cash-Overview-Power-BI-content.md).
 
 Voit tarkastella myös tiettyjen tilien, tilausten ja nimikkeiden kassavirtaennustetietoja seuraavilla sivuilla:
 

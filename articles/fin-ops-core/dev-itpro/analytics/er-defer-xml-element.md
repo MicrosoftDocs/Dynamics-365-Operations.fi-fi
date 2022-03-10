@@ -2,8 +2,7 @@
 title: ER-muotoisten XML-elementtien suorittamisen lykkäys
 description: Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin (ER) muotoisten XML-elementtien suorittamista lykätään.
 author: NickSelin
-manager: kfend
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f9a19f4ba6bb124de948dcd9e62b258b2178687a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562139"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323712"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER-muotoisten XML-elementtien suorittamisen lykkäys
 
@@ -29,7 +28,7 @@ ms.locfileid: "5562139"
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Voit käyttää [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehyksen toimintojen suunnitteluohjelmaa [määrittääksesi](./tasks/er-format-configuration-2016-11.md) lähtevien XML-muotoisten asiakirjojen luomiseen käytettävän ER-ratkaisun [muotokomponenttia](general-electronic-reporting.md#FormatComponentOutbound). Määritetyn muotokomponentin hierarkiarakenne koostuu erityyppisistä muotoelementeistä. Näitä muotoelementtejä käytetään luotujen asiakirjojen suorituksenaikaiseen täyttämiseen tarvittavilla tiedoilla. Kun ER-muoto suoritetaan, muotoelementit suoritetaan oletusarvoisesti samassa järjestyksessä kuin ne esitetään muotohierarkiassa: yksi kerrallaan, ylhäältä alas. Suunnittelun aikana voit kuitenkin muuttaa kaikkien määritetyn muotokomponentin XML-elementtien suoritusjärjestystä.
+Voit käyttää [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehyksen toimintojen suunnitteluohjelmaa [määrittääksesi](./tasks/er-format-configuration-2016-11.md) lähtevien XML-muotoisten asiakirjojen luomiseen käytettävän ER-ratkaisun muotokomponenttia. Määritetyn muotokomponentin hierarkiarakenne koostuu erityyppisistä muotoelementeistä. Näitä muotoelementtejä käytetään luotujen asiakirjojen suorituksenaikaiseen täyttämiseen tarvittavilla tiedoilla. Kun ER-muoto suoritetaan, muotoelementit suoritetaan oletusarvoisesti samassa järjestyksessä kuin ne esitetään muotohierarkiassa: yksi kerrallaan, ylhäältä alas. Suunnittelun aikana voit kuitenkin muuttaa kaikkien määritetyn muotokomponentin XML-elementtien suoritusjärjestystä.
 
 Ottamalla käyttöön määritetyssä muodossa olevan XML-elementin <a name="DeferredXmlElementExecution"></a>**Lykätty suorittaminen** -asetuksen voit lykätä (siirtää myöhemmäksi) kyseisen elementin suorittamista. Tällöin elementtiä ei suoriteta, ennen kuin kaikki muut sen pääelementin osat on suoritettu.
 
@@ -45,7 +44,7 @@ Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Esimerkki: ER-muotoisen XML-elementin suorituksen lykkäys
 
-Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan sähköisen raportoinnin toiminnallinen konsultin [rooli](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) voi määrittää ER-muodon, joka sisältää XML-elementin, jossa suoritusjärjestys eroaa muotohierarkian järjestyksestä.
+Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan sähköisen raportoinnin toiminnallinen konsultin [rooli](../sysadmin/tasks/assign-users-security-roles.md) voi määrittää ER-muodon, joka sisältää XML-elementin, jossa suoritusjärjestys eroaa muotohierarkian järjestyksestä.
 
 Nämä vaiheet voidaan suorittaa Microsoft Dynamics 365 Financen **USMF**-esimerkkiyrityksessä.
 
@@ -60,14 +59,14 @@ Jos et ole vielä suorittanut tätä esimerkkiä ohjeaiheessa [ER-muotoisten sar
 
 | Sisällön kuvaus            | Tiedostonimi |
 |--------------------------------|-----------|
-| ER-tietomallin konfigurointi    | [Model to learn deferred elements.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| ER-mallin yhdistämismääritys | [Mapping to learn deferred elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-tietomallin konfigurointi    | [Model to learn deferred elements.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| ER-mallin yhdistämismääritys | [Mapping to learn deferred elements.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Ennen kuin aloitat, sinun on myös ladattava ja tallennettava seuraavat esimerkkinä käytettävän ER-ratkaisun määritykset paikalliselle tietokoneellesi.
 
 | Sisällön kuvaus     | Tiedostonimi |
 |-------------------------|-----------|
-| ER-muodon konfigurointi | [Format to learn deferred XML elements.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-muodon konfigurointi | [Format to learn deferred XML elements.version.1.1.xml](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>ER-mallikonfiguraation tuonti
 
@@ -91,7 +90,7 @@ Ennen kuin aloitat, sinun on myös ladattava ja tallennettava seuraavat esimerkk
 6. Laajenna määrityspuussa **Malli lykättyjen elementtien oppimiseen**.
 7. Tarkista tuotujen ER-määritysten luettelo määrityspuussa.
 
-    ![Tuodut ER-määritykset määrityssivulla](./media/ER-DeferredXml-Configurations.png)
+    ![Tuodut ER-määritykset määrityssivulla.](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>Aktivoi määrityslähde
 
@@ -120,7 +119,7 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - *Ryhmittely* -tyypin **Ryhmitelty**-tietolähde määritetään ryhmittelemään **Suodatettu**-tietolähteen suodatettuja verotapahtumia.
     - **Ryhmitelty**-tietolähteen **TotalSum**-koostekenttä määritetään laskemaan yhteen **Suodatettu**-tietolähteen **\$TaxAmount**-kentän arvot kaikkein kyseisen tietolähteen suodatettujen verotapahtumien osalta.
 
-        ![Muokkaa GroupBy-parametreja -sivun TotalSum koostekenttä](./media/ER-DeferredXml-GroupByParameters.png)
+        ![Muokkaa GroupBy-parametreja -sivun TotalSum koostekenttä.](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Tarkista, miten määritetyt tietolähteet on sidottu tietomalliin ja miten ne näyttävät käytetyt tiedot, jotta ne ovat käytettävissä ER-muodossa:
 
@@ -128,7 +127,7 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - **Suodatettu**-tietolähteen **\$TaxAmount**-kenttä on sidottu tietomallin **Data.List.Value**-kenttään.
     - **Ryhmitelty**-tietolähteen **TotalSum**-kenttä on sidottu tietomallin **Data.Summary.Total**-kenttään.
 
-    ![Mallimäärityksen suunnittelun sivu](./media/ER-DeferredXml-ModelMapping.png)
+    ![Mallimäärityksen suunnittelun sivu.](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Sulje sivut **Mallimäärityksen suunnittelu** ja **Mallimääritykset**.
 
@@ -144,7 +143,7 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - XML-elementti **Raportti \\Sanoma\\Tietue** määritetään täyttämään lähtevä asiakirja yksittäisellä tietuesolmulla, jossa näkyvät yksittäisen verotapahtuman tiedot.
     - XML-elementti **Raportti\\Sanoma\\Yhteenveto** määritetään täyttämään lähtevä asiakirja yksittäisellä yhteenvetosolmulla, joka sisältää käsiteltyjen verotapahtumien veroarvojen summan.
 
-    ![Sanoma-XML-elementti ja sisäkkäiset XML-elementit Muodon suunnittelun sivulla](./media/ER-DeferredXml-Format.png)
+    ![Sanoma-XML-elementti ja sisäkkäiset XML-elementit Muodon suunnittelun sivulla.](./media/ER-DeferredXml-Format.png)
 
 5. Tarkista seuraavat tiedot **Määritys**-välilehdessä:
 
@@ -158,14 +157,14 @@ Tarkista sen ER-mallimäärityskomponentin asetukset, joka on määritetty käyt
     - **TotalTaxAmount**-määrite on sidottu **model.Data.Summary.Total**, jotta luodaan käsiteltyjen verotapahtumien veroarvojen summa.
     - **ExecutionDateTime**-määrite luo yhteenvetosolmun lisäämisen päivän ja ajan (millisekunteihin asti).
 
-    ![Yhdistämismääritys-välilehti Muodon suunnittelu -sivulla](./media/ER-DeferredXml-Format2.png)
+    ![Yhdistämismääritys-välilehti Muodon suunnittelu -sivulla.](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Tuodun muodon suorittaminen
 
 1. Vallitse **Muodon suunnittelu** -sivulla **Suorita**.
 2. Lataa verkkoselaimen tarjoama tiedosto ja avaa se tarkistusta varten.
 
-    ![Ladattu tiedosto](./media/ER-DeferredXml-Run.png)
+    ![Tuodun muodon ladattu tiedosto.](./media/ER-DeferredXml-Run.png)
 
 Huomaa, että yhteenvetosolmussa on käsiteltyjen tapahtumien veroarvojen summa. Koska muoto on määritetty käyttämään arvoa **model.Data.Summary.Total** sitovasti tämän summan palauttamista varten, summa lasketaan kutsumalla mallin yhdistämismäärityksen *GroupBy*-tyypin **Ryhmitelty**-tietolähteen **TotalSum**-kooste. Tämän koosteen laskemiseksi mallin yhdistämismääritys iteroi kaikki tapahtumat, jotka on valittu **Suodatettu**-tietolähteessä. Kun verrataan yhteenvetosolmun ja viimeisimmän tietuesolmun suoritusaikoja, voidaan päätellä, että summan laskeminen kesti 12 millisekuntia (ms). Vertaamalla ensimmäisen ja viimeisen tietuesolmun suoritusaikoja voidaan päätellä, että kaikkien tietuesolmujen luominen kesti 9 millisekuntia. Siten yhteisaika oli 21 ms.
 
@@ -179,25 +178,25 @@ Jos tapahtuman suuruus on huomattavasti suurempi kuin tässä esimerkissä, lask
 4. Määritä **Kerätyn tietoavaimen nimi** -lausekkeen arvoksi `WsColumn`.
 5. Määritä **Kerätyn tietoavaimen arvo** -lausekkeen arvoksi `WsRow`.
 
-    ![Tietue-XML-elementti Muodon suunnittelija -sivulla](./media/ER-DeferredXml-Format3.png)
+    ![Tietue-XML-elementti Muodon suunnittelija -sivulla.](./media/ER-DeferredXml-Format3.png)
 
 6. Valitse **Raportti\\Sanoma\\Tietue\\TaxAmount** -määrite.
 7. Määritä **Kerätyn tietoavaimen nimi** -lausekkeen arvoksi `SummingAmountKey`.
 
-    ![TaxAmount-määrite Muodon suunnittelija -sivulla](./media/ER-DeferredXml-Format4.png)
+    ![TaxAmount-määrite Muodon suunnittelija -sivulla.](./media/ER-DeferredXml-Format4.png)
 
     Voit katsoa tämän asetuksen virtuaalisen laskentataulukon täyttämiseksi, jossa solun A1 arvo lisätään jokaisen käsitellyn verotapahtuman verosumman arvoon.
 
 8. Valitse **Raportti\\Sanoma\\Tietue\\RunningTotal** -määrite ja sitten **Muokkaa kaava**.
 9. Määritä `SUMIF(SummingAmountKey, WsColumn, WsRow)` -lauseke käyttämällä sisäistä [SUMIF](er-functions-datacollection-sumif.md) ER -toimintoa ja valitsemalla **Tallenna**.
 
-    ![SUMIF-lauseke](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![SUMIF-lauseke.](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Sulje **Reseptien suunnittelu** -sivu.
 11. Valitse ensin **Tallenna** ja sitten **Suorita**.
 12. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredXml-Run1.png)
+    ![Veroarvon muodostettu luettelo ja juokseva kokonaissumma.](./media/ER-DeferredXml-Run1.png)
 
     Viimeinen tietuesolmu sisältää kaikille käsitellyille tapahtumille luotua tulosta tietolähteenä käyttäen lasketun veroarvojen juoksevan summan. Tämä tietolähde alkaa raportin alusta ja jatkuu viimeisimpään verotapahtumaan asti. Yhteenvetosolmu sisältää kaikkien sellaisten käsiteltyjen tapahtumien veroarvojen summan, jotka on laskettu mallin yhdistämismäärityksessä käyttämällä *GroupBy* -tyypin tietolähdettä. Huomaa, että nämä arvot ovat samat. Siksi voidaan käyttää tulokseen perustuvaa yhteenlaskua **GroupBy**-tyypin käytön sijaan. Vertaamalla ensimmäisen tietuesolmun ja yhteenvetosolmun suoritusaikoja voidaan päätellä, että kaikkien tietuesolmujen luominen ja laskeminen kesti 11 millisekuntia. Siten muokattu muoto on noin kaksi kertaa alkuperäistä muotoa nopeampi tietuesolmujen luomisessa ja veroarvojen summien laskemisessa.
 
@@ -206,7 +205,7 @@ Jos tapahtuman suuruus on huomattavasti suurempi kuin tässä esimerkissä, lask
 15. Valitse ensin **Tallenna** ja sitten **Suorita**.
 16. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredXml-Run2.png)
+    ![Veroarvojen muodostettu luettelo muokatun kaavan avulla.](./media/ER-DeferredXml-Run2.png)
 
     Huomaa, että veroarvojen juokseva summa viimeisessä tietuesolmussa vastaa nyt yhteenvetosolmun summaa.
 
@@ -219,7 +218,7 @@ Jos sinun on esimerkiksi esitettävä veroarvojen summa raportin otsikossa, voit
 3. Valitse ensin **Tallenna** ja sitten **Suorita**.
 4. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredXml-Run3.png)
+    ![Raportin otsikon veroarvojen ladattu tiedosto.](./media/ER-DeferredXml-Run3.png)
 
     Huomaa, että yhteenvetosolmun veroarvojen summa on nyt 0 (nolla), koska tämä summa lasketaan nyt luodun tuloksen perusteella. Kun ensimmäinen tietuesolmu luodaan, luotu tulos ei vielä sisällä tietuesolmuja, joilla on tapahtumatietoja. Voit määrittää tämän muodon lykkäämään **Raportti\\Sanoma\\Yhteenveto** -sarjaelementtiä siihen asti, että **Raportti\\Sanoma\\Tietue** -sarjaelementti on suoritettu kaikkien verotapahtumien osalta.
 
@@ -228,12 +227,12 @@ Jos sinun on esimerkiksi esitettävä veroarvojen summa raportin otsikossa, voit
 1. Valitse **Muodon suunnittelija** -sivun **Muoto**-välilehdessä XML-elementti **Raportti\\Sanoma\\Yhteenveto**.
 2. Määritä **Lykätty suorittaminen** -asetukseksi **Kyllä**.
 
-    ![Muodon suunnittelija -sivun XML-elementin lykätyn suorittamisen vaihtoehto](./media/ER-DeferredXml-Format5.png)
+    ![Muodon suunnittelija -sivun XML-elementin lykätyn suorittamisen vaihtoehto.](./media/ER-DeferredXml-Format5.png)
 
 3. Valitse ensin **Tallenna** ja sitten **Suorita**.
 4. Lataa ja tarkista verkkoselaimen tarjoama tiedosto.
 
-    ![Ladattu tiedosto](./media/ER-DeferredXml-Run4.png)
+    ![Lykätyn suorituksen ladattu tiedosto.](./media/ER-DeferredXml-Run4.png)
 
     **Raportti\\Sanoma\\Yhteenveto** -elementti suoritetaan nyt vasta, kun kaikki muut sen pääelementin **Raportti\\Sanoma** alaiset kohteet on suoritettu. Siten se suoritetaan sen jälkeen, kun **Raportti\\Sanoma\\Tietue** -sarjaelementti on suoritettu kaikkien **model.Data.List** -tietolähteen verotapahtumien osalta. Tämä ilmenee ensimmäisen ja viimeisen tietuesolmun sekä otsikko- ja yhteenvetosolmujen suoritusajoista.
 

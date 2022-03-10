@@ -2,8 +2,7 @@
 title: ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
 description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määrityksen suunnittelua tuomaan tietoja Microsoft Dynamics 365 Finance -sovellukseen ulkoisesta tiedostosta.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b8a94173c7c5367b79bfcb354f0397515d94445
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564287"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720853"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
 
 [!include [banner](../../includes/banner.md)]
 
-Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita tuomaan tietoja sovellukseen ulkoisesta tiedostosta. Tässä esimerkissä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet. Nämä vaiheet voidaan suorittaa USMF-tietojoukon avulla. Sinun on myös ladattava ja tallennettava paikallisesti seuraavat tiedostot Sähköisen raportoinnin yleiskatsaus -ohjeaiheen linkkien avulla (https://go.microsoft.com/fwlink/?linkid=852550):: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita tuomaan tietoja sovellukseen ulkoisesta tiedostosta. Tässä esimerkissä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet. Nämä vaiheet voidaan suorittaa USMF-tietojoukon avulla. Seuraavat tiedostot täytyy myös ladata ja tallentaa paikallisesti: 
+
+| Sisällön kuvaus                       | Tiedostonimi                                     |
+|-------------------------------------------|-----------------------------------------------|
+| ER-tietomallin konfigurointi – 1099 | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| ER-muodon konfigurointi – 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Saapuvan asiakirjan XML-muotoinen näytetiedosto                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Saapuvan asiakirjan tietojen hallinnan työkirjamalli                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 Sähköisen raportoinnin (ER) ansiosta yrityskäyttäjät voivat määrittää prosessin, jolla ulkoiset datatiedostot tuodaan tauluihin .XML- tai .TXT-muodossa. Ensimmäiseksi on suunniteltava tuotavia tietoja vastaava abstraktin tietomallin ja ER-tietomallin määritys. Seuraavaksi on määritettävä tuotavan tiedoston rakenne ja menetelmä, jolla tiedot siirretään tiedostosta abstraktiin tietomalliin. Kyseiselle abstraktille tietomallille on luotava suunniteltuun tietomalliin yhdistävä ER-muotomääritys. Tietomallimääritystä on sitten laajennettava yhdistämismäärityksellä, joka ilmaisee, miten tuodut tiedot säilytetään abstraktina tietomallin tietoina ja miten taulut päivitetään sen avulla.  ER-tietomallimääritykseen on liitettävä uusi malliyhdistämismääritys, joka ilmaisee, miten tietomalli sidotaan sovelluksen kohteisiin.  
 

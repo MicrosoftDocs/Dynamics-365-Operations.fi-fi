@@ -1,25 +1,23 @@
 ---
 title: Kulujen automaattinen kohdistaminen
 description: Microsoft Dynamics 365 Supply Chain Managementin kulutoiminnolla voi automaattisesti kohdistaa kuluja osto- tai myyntitilauksiin.
-author: dasani-madipalli
-manager: tfehr
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983164"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592537"
 ---
 # <a name="automatic-allocation-of-charges"></a>Kulujen automaattinen kohdistaminen
 
@@ -28,6 +26,16 @@ ms.locfileid: "4983164"
 Asiakkaan tai myytävän nimikkeen perusteella halutaan ehkä käyttää tiettyjä lisämaksuja. Microsoft Dynamics 365 Supply Chain Managementin *kulutoiminnolla* voi automaattisesti kohdistaa kuluja osto- tai myyntitilauksiin.
 
 Automaattisia kuluja käytetään automaattisesti, kun luot myynti- tai ostotilauksen. Voit määrittää automaattiset kulut tietyille toimittajille, asiakkaille, toimittajien ryhmille tai nimikkeille. Voit määrittää automaattisesti kuluja, joita käytetään kaikille toimittajille, asiakkaille tai nimikkeille.
+
+## <a name="set-up-parameters"></a>Määritä parametrit
+
+**Hankintaparametrit**-sivulla on joitakin asetuksia, jotka ovat erityisen tärkeitä, kun kulut halutaan kohdistaa automaattisesti. Viimeiste määritys noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Hankkiminen ja hankinta \> Asetukset \> Hankkiminen ja hankinta -parametrit**.
+1. Avaa **Hinnat**-välilehti.
+1. Tee **Hinnat**-pikavälilehdessä seuraavat asetukset:
+    - **Etsi otsikon automaattiset kulut** – Määrittää, mitkä ostotilauksen otsikoiden kulut on kohdistettava automaattisesti. Valitse arvoksi *Kyllä*, jos kulut halutaan kohdistaa automaattisesti.
+    - **Etsi rivin automaattiset kulut** – Määrittää, mitkä ostotilauksen rivien kulut on kohdistettava automaattisesti. Valitse arvoksi *Kyllä*, jos kulut halutaan kohdistaa automaattisesti.
 
 ## <a name="set-up-charges-codes"></a>Kulujen koodien määrittäminen
 
@@ -146,7 +154,7 @@ Kun kulujen koodit on määritetty, määritä automaattiset kulut seuraavien oh
     - **Toimipaikka** ja **Varasto** – määritä toimipaikka ja varasto, jos kulut kohdistetaan vain tiettyyn toimipaikkaan ja varastoon.
     - **Säilytä** – valitse tämä valintaruutu, jos haluat säilyttää kulutapahtumat laskutuksen valmistumisen jälkeen siten, että kulua käytetään aina, kun luot uuden laskun valitulle asiakastilille.
 
-1. **Vain myyntitilaukset:** jos haluat laskea kulut tasoittain, lisätietoja on kohdassa [Myyntitilausten tasoittaiset kulut](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
+1. **Vain myyntitilaukset:** jos haluat laskea kulut tasoittain, lisätietoja on kohdassa [Myyntitilausten tasoittaiset kulut](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Kulujen kohdistaminen otsikosta riville
 
@@ -176,3 +184,6 @@ Seuraava menettely näyttää, miten otsikkotason kulut kohdistetaan riville. En
         > Varmista **Valitse rivit, joita ei sisällytetä kohdistukseen** -ruudukkoa käytettäessä, että ruudukko on avoinna siihen saakka, että valitset **Kohdista**. Jos suljet ruudukon ennen **Kohdista**-vaihtoehdon valintaa, ruudukossa tehdyt asetukset menetetään. Siinä tapauksessa kulut kohdistetaan aiemmin määritettyjen ehtojen perusteella.
 
 1. Ota asetukset käyttöön valitsemalla **Kohdista** ja sulje kyselyn valintaikkuna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

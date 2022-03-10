@@ -1,8 +1,8 @@
 ---
 title: Rekisteröi etuja työntekijöille ja poista niitä
-description: Tässä menetelmässä käsitellään, miten yksittäiselle työtekijällä voidaan rekisteröidä vähintään yksi etu ja miten etu voidaan rekisteröidä usealle työntekijälle.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Tässä menetelmässä näytetään, miten yksittäiselle työtekijällä voidaan rekisteröidä vähintään yksi etu ja miten etu voidaan rekisteröidä usealle työntekijälle.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,23 +10,26 @@ ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, H
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: a67199663a65ea0184b4feadb4036351a81abc87
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1b99db1e480ea4a53d2bda609eb08105509d95f4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053054"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065373"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Rekisteröi etuja työntekijöille ja poista niitä
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-Tässä menetelmässä käsitellään, miten yksittäiselle työtekijällä voidaan rekisteröidä vähintään yksi etu ja miten etu voidaan rekisteröidä usealle työntekijälle. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+Tässä menetelmässä näytetään, miten yksittäiselle työtekijällä voidaan rekisteröidä vähintään yksi etu ja miten etu voidaan rekisteröidä usealle työntekijälle. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
 
 ## <a name="enroll-a-single-worker-in-benefits"></a>Rekisteröi edut yhdelle työntekijälle

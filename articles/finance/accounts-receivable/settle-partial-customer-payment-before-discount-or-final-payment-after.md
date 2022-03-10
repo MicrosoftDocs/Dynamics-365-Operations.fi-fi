@@ -2,11 +2,9 @@
 title: Osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen
 description: Tässä artikkelissa käsitellään maksujen laskuille tilittämisen vaikutusta asiakkaille. Skenaariossa keskitytään vaikutuksiin alareskontrassa (ei kirjanpidossa).
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad922bc6c9378078012b7a838909e4074b48f263
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 10ba8d59855b60b3d05b4c6b44c98905e10487ecdcf7bc459acca73c12bc72d1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740167"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen
 
@@ -48,10 +46,10 @@ Asiakas 4027 maksaa 2. heinäkuuta laskusta osamaksuerän, jonka suuruus on 297,
 
 Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa. Ellet muuta **Täsmäytettävä summa** -arvoksi 297,00, näkyviin tulevat **Käteisalennussumma**-arvot vaihtelevat. Käteisalennuksena käytetään kuitenkin arvoa 3,00 maksun kirjaamisen yhteydessä, koska tilitys muuttaa **Täsmäytettävä summa** -arvon automaattisesti.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
-| Käteisalennussumma         | 10,00     |
+| Käteisalennussumma         | 10.00     |
 | Käytä käteisalennusta            | Normaali    |
 | Käytetty käteisalennus          | 0,00      |
 | Käytettävä käteisalennussumma | 3,00      |
@@ -71,9 +69,9 @@ Asiakas 4027 maksaa loppulaskun 11. heinäkuuta, joka on alennusjakson jälkeen.
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Valittu | Normaali            | FTI-10020 | 4027    | 25.6.2015 | 25.7.2015 | 10020   | 700,00                               | USD      | 700,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
 | Käteisalennussumma         | 0,00      |
@@ -87,17 +85,17 @@ Jos Arnie muuttaa **Käytä käteisalennusta** -kentän arvoksi **Aina**, **Lask
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
 | Valittu | Aina            | FTI-10020 | 4027    | 25.6.2015 | 25.7.2015 | 10020   | 700,00                               |                                       | USD      | 693,00           |
 
-Alennustiedot näkyvät **Tilitä avoimet tapahtumat** -sivun alaosassa.
+Alennustiedot näkyvät **Tilitä avoimet tapahtumat**-sivun alaosassa.
 
-|                              |           |
+| Kenttä                        | Arvo     |
 |------------------------------|-----------|
 | Käteisalennuksen päivämäärä           | 9.7.2015 |
-| Käteisalennussumma         | 7:00      |
+| Käteisalennussumma         | 7.00      |
 | Käytä käteisalennusta            | Aina    |
 | Käytetty käteisalennus          | 3,00      |
 | Käytettävä käteisalennussumma | 7:00      |
 
-Arnie palauttaa **Käytä käteisalennusta** -kentän arvoksi **Normaali**, sillä hän ei anna asiakkaan käyttää jäljellä olevaa käteisalennusta 7,00. Tämän jälkeen Arnie kirjaa maksun. Kun Arnie avaa **Asiakastapahtumat**-sivun, hän näkee, että laskun saldo on 0,00. Hän näkee myös, että maksuja on kaksi. Toisen summa on 297,00 ja käteisalennus 3,00, ja toisen summa on 700,00.
+Arnie palauttaa **Käytä käteisalennusta** -kentän arvoksi **Normaali**, sillä hän ei anna asiakkaan käyttää jäljellä olevaa käteisalennusta 7,00. Tämän jälkeen Arnie kirjaa maksun. Kun Arnie avaa **Asiakastapahtumat**-sivun, hän näkee, että laskun saldo on 0,00. Näkyvissä on kaksi maksua. Toisen summa on 297,00 ja käteisalennus 3,00, ja toisen summa on 700,00.
 
 | Tosite    | Tapahtumatyyppi | Päivämäärä      | Lasku | Summa tapahtuman valuuttana debet | Summa tapahtuman valuuttana kredit | Saldo | Valuutta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -110,3 +108,6 @@ Arnie palauttaa **Käytä käteisalennusta** -kentän arvoksi **Normaali**, sill
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

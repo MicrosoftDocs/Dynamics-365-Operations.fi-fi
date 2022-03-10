@@ -12,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 2f4a6893d272b3d80735e307a64becddad40974a40e3f2f32797e89d2749a31d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736524"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103860"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
+
+[!include [banner](../includes/banner.md)]
 
 Käytettävissä olevan varaston laskennassa käytettävien kyselyiden suorituskyky vaikuttaa siihen, kuinka monta tietuetta taulukoissa on mukana. Yksi tapa parantaa suorituskykyä on vähentää niiden tietojen määrää, joita tietokannan on harkittava.
 
@@ -56,10 +58,7 @@ Puhdistustyö kuitenkin parantaa suorituskykyä, minkä pitäisi korvata nämä 
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Parhaan suoritusajan määrittäminen käyttöön
 
-Oletusarvoisesti **Paras suoritusaika** asetus ei ole käytettävissä. Jos haluat käyttää sitä, sinun on otettava käyttöön [ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ottaaksesi käyttöön liittyvä ominaisuus järjestelmässäsi. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Ominaisuuden nimi:** *Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyöajan maksimisuoritusaika*
+**Enimmäissuoritusaika**-asetus on käytettävissä vain, kun *Varastonhallinnan käytettävissä olevan varaston merkintöjen siivoustyön enimmäissuoritusaika* -toiminto on käytössä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Varastonhallinnan käytettävissä olevan varaston merkintöjen siivoustyön enimmäissuoritusaika* [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

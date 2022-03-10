@@ -1,31 +1,28 @@
 ---
-title: Työntekijöiden etuussuunnitelmien luominen
-description: Voit luoda työntekijöiden etuussuunnitelmia Microsoft Dynamics 365 Human Resourcesissa valitaksesi etuussuunnitelmia työntekijöille ja vahvistaaksesi etuussuunnitelmavalintoja.
-author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+title: Työntekijän etusuunnitelmien luominen
+description: Tässä aiheessa käsitellään työntekijän etuussuunnitelmien luontia, valitsemista ja vahvistamista Microsoft Dynamics 365 Human Resourcesissa.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ac357bbef4bf84b9eaf153834bc7a609240c45e
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464223"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417401"
 ---
-# <a name="create-worker-benefit-plans"></a>Työntekijöiden etuussuunnitelmien luominen
+# <a name="create-worker-benefit-plans"></a>Työntekijän etusuunnitelmien luominen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

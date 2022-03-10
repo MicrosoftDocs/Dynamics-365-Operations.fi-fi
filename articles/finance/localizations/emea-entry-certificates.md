@@ -2,27 +2,24 @@
 title: EU-saapumistodistus
 description: Tässä artikkelissa on tietoja Euroopan unionin (EU) saapumistodistuksista.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 11464
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46a4180163adea72e7d8712ed5ce6a3306e477c5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 00b9e80a931c57722a92c3432f9c1006082b1bfbdd844d72c4d5962e106925dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4407888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779790"
 ---
 # <a name="eu-entry-certificates"></a>EU-saapumistodistukset
 
@@ -126,3 +123,6 @@ Jos sinulla ei ole niiden sivujen käyttöoikeutta, joita käytetään tämän t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

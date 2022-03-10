@@ -1,71 +1,76 @@
 ---
 title: Kyselylomakkeen tulosten analysointi
 description: Kyselylomakkeen tilastotietoja voidaan käyttää keskiarvojen, kokonaissummien ja prosenttiosuuksien laskemiseen demografiatietojoukon perusteella.
-author: andreabichsel
-manager: tfehr
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMQuestionnaireStatistics, KMQuestionnaireStatisticsLine, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b49868b76dcc0a5df420e56fd1fc2477c475596
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: a1ad98638810206dad04c34a8abbc8f757058cc0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115171"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067426"
 ---
 # <a name="analyzing-questionnaire-results"></a>Kyselylomakkeen tulosten analysointi
 
 
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-Kyselylomakkeen tilastotietoja voidaan käyttää keskiarvojen, kokonaissummien ja prosenttiosuuksien laskemiseen demografiatietojoukon perusteella. Aloita tämä menettely siirtymällä kohtaan Kyselylomake > Näytä ja analysoi tulokset > Kyselylomakkeen tilastotiedot. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
+
+Kyselylomakkeen tilastotietoja voidaan käyttää keskiarvojen, kokonaissummien ja prosenttiosuuksien laskemiseen demografiatietojoukon perusteella. Aloita tämä menettely siirtymällä kohtaan **Kyselylomake** > **Näytä ja analysoi tulokset** > **Kyselylomakkeen tilastotiedot**. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
 
 ## <a name="create-a-questionnaire-statistics-record"></a>Kyselylomakkeen tilastotietotietueen luominen
-1. Siirry Kyselylomakkeen tilastotiedot -kohtaan.
-2. Valitse Uusi.
+1. Siirry **Kyselylomakkeen tilastotiedot** -kohtaan.
+2. Valitse **Uusi**.
 3. Merkitse valittu rivi luettelossa.
-4. Syötä arvo Tilastotiedot-kenttään.
-5. Kirjoita Kuvaus-kenttään arvo.
-6. Avaa haku valitsemalla Kyselylomake-kentässä avattavan valikon painike.
+4. Syötä arvo **Tilastotiedot**-kenttään.
+5. Kirjoita **Kuvaus**-kenttään arvo.
+6. Avaa haku valitsemalla **Kyselylomake**-kentässä avattavan valikon painike.
 7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-8. Valitse Yleiset-välilehti.
+8. Valitse **Yleiset**-välilehti.
     * Määritä, haluatko ottaa mukaan nimettömät tulokset vai työntekijöiden, yhteyshenkilöiden ja hakijoiden tulokset.  
-9. Valitse Työntekijä-valintaruutu tai poista valintaruudun valinta.
+9. Valitse **Työntekijä**-valintaruutu tai poista valintaruudun valinta.
     * Jos tarkastelet tuloksia virkaiän tai iän perusteella, määritä tulosten ryhmittelyssä käytettävät välit.  
     * Kun ikäväliksi syötetään 5, tulokset ryhmitellään viiden vuoden ikävälien perusteella.  
-10. Syötä numero Ikä-kenttään.
+10. Syötä numero **Ikä**-kenttään.
     * Määritä, haluatko suorittaa laskelman koko kyselylomakkeelle, jokaiselle tulosryhmälle, jokaiselle kysymykselle tai jokaiselle kysymysriville.  
     * Määritä, miten haluat ryhmitellä tulokset.  
     * Jos esimerkiksi lasket saatujen pisteiden keskiarvon kysymystä kohti, kysymykset on hyvä nähdä tulosryhmän mukaan ryhmiteltyinä.  
     * Valitse tiedot, joihin laskelma perustuu.  
     * Ajatellaan, että haluat tietää kyselylomakkeen työntekijöiltä saadun keskimääräisen prosentin verrattuna työntekijöiden saamiin keskimääräisiin pisteisiin.  
-11. Valitse Alue-välilehti.
+11. Valitse **Alue**-välilehti.
     * Alueiden avulla voit rajata tulosjoukon sisältämään vain alueen ehtoja vastaavat kohteet.  
-12. Valitse Ryhmittely-välilehti.
+12. Valitse **Ryhmittely**-välilehti.
     * Ryhmittelyiden avulla voit määrittää, miten tulokset näytetään.  
     * Voit ryhmitellä tulokset esimerkiksi ensin sukupuolen ja sitten iän perusteella.  
 13. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Siirrä ryhmittelyt Valittu puoli -kohtaan ja aseta ne haluttuun järjestykseen.  
+    * Siirrä ryhmittelyt **Valittu**-puolelle ja aseta ne haluttuun järjestykseen.  
 
 ## <a name="execute-the-statistics-calculation"></a>Tilastotietojen laskelman suorittaminen
-1. Valitse Suorita.
+1. Valitse **Suorita**.
     * Määritä, mitä laskentatoimintoa tulosten käsittelyssä käytetään.  
     * Voit laskea esimerkiksi valittujen ryhmien kyselylomakkeen keskimääräiset prosenttiosuudet tai tulosryhmien pisteiden kokonaistuloksen.  
-2. Valitse Poista edelliset haut -valintaruutu tai poista sen valinta.
-3. Valitse OK.
+2. Valitse **Poista edelliset haut** -valintaruutu tai poista sen valinta.
+3. Valitse **OK**.
 
 ## <a name="view-the-results-of-the-questionnaire-statistics-run"></a>Tarkastele kyselylomakkeen tilastotietojen saatuja tuloksia.
-1. Valitse Tulos.
-2. Valitse Tulos.
+1. Valitse **Tulos**.
+2. Valitse **Tulos**.
 3. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

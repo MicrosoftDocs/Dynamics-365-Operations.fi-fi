@@ -1,33 +1,34 @@
 ---
 title: Kompensaatiosuunnitelmat
-description: Kompensaatio- ja etuuspäälliköt voiva käyttää kompensaation hallintaa organisaation työntekijöiden kiinteiden ja muuttuvien kompensaatiosuunnitelmien ylläpitämisessä ja käsittelemisessä.
-author: andreabichsel
-ms.date: 06/20/2017
-ms.topic: article
+description: Tässä aiheessa kuvataan, miten kompensaationhallintaa käytetään ja kompensaatiosuunnitelmien hallintaan ja käsittelyyn.
+author: twheeloc
+ms.date: 08/25/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1be212cae4b0df136bb19b9521fd80aa29f7e094
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793750"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066897"
 ---
 # <a name="compensation-plans"></a>Kompensaatiosuunnitelmat
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Kompensaatio- ja etuuspäälliköt voiva käyttää kompensaation hallintaa organisaation työntekijöiden kiinteiden ja muuttuvien kompensaatiosuunnitelmien ylläpitämisessä ja käsittelemisessä.
+Kompensaatio- ja etuuspäälliköt voivat käyttää **kompensaationhallintaa** organisaation työntekijöiden kiinteiden ja muuttuvien kompensaatiosuunnitelmien ylläpitämisessä ja käsittelemisessä.
 
 ### <a name="introduction"></a>Johdanto
 
@@ -44,7 +45,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 <thead>
 <tr class="header">
 <th>Komponentti</th>
-<th>Lisätietoja…</th>
+<th>Lisätietoja</th>
 </tr>
 </thead>
 <tbody>
@@ -90,7 +91,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 </tr>
 <tr class="even">
 <td>Tarkistuspiste</td>
-<td>Tarkistuspiste määrittää, mikä on ihanteellisen palkkio kompensaatiotason kaikille työntekijöille. Palkkaluokkasuunnitelmien rakenteissa tarkistuspisteet ovat yleensä palkka-alueen keskikohdassa. Kompensaatioluokkarakenteissa tarkistuspisteitä käytetään harvoin. Voit määrittää kiinteän kompensaatiosuunnitelman tarkistuspisteen Kiinteät kompensaatiosuunnitelmat -lomakkeessa.</td>
+<td>Tarkistuspiste määrittää, mikä on ihanteellisen palkkio kompensaatiotason kaikille työntekijöille. Palkkaluokkasuunnitelmien rakenteissa tarkistuspisteet ovat yleensä palkka-alueen keskikohdassa. Kompensaatioluokkarakenteissa tarkistuspisteitä käytetään harvoin. Voit määrittää kiinteän kompensaatiosuunnitelman tarkistuspisteen **Kiinteät kompensaatiosuunnitelmat** -sivulla.</td>
 </tr>
 <tr class="odd">
 <td>Työtehtävät</td>
@@ -122,8 +123,7 @@ Seuraavassa taulukossa on luettelo kompensaatioprosessin komponenteista, jotka v
 ## <a name="process-events"></a>Prosessitapahtumat
 Prosessitapahtuma laskee tietyn kauden kompensaatiotiedot kaikille työntekijöille, jotka on rekisteröity vähintään yhteen kiinteään tai muuttuvaan kompensaatiosuunnitelmaan. Voit suorittaa prosessitapahtuman toistuvasti laskettujen kompensaatiotulosten testaamiseksi tai päivittämiseksi.
 
-<a name="compensation-events"></a>Kompensaatiotapahtumat
--------------------
+## <a name="compensation-events"></a>Kompensaatiotapahtumat
 
 Aina kun prosessitapahtuma suoritetaan, kompensaatiotapahtuma luodaan.  Kompensaatiotapahtumat sisältävät kunkin työntekijän kyseiseen prosessitapahtumaan sisältyvän kompensaatioprosessin tulokset.  Kun laskelmat ovat oikein, voit ladata kompensaatiotapahtuman päivittääksesi kompensaatiotietueet työntekijöille, joihin prosessitapahtuma vaikuttaa.
 

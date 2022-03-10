@@ -1,25 +1,23 @@
 ---
 title: Eurooppa – yleiskatsaus
 description: Tässä ohjeaiheessa on linkkejä Microsoft Dynamics 365 Financen ohjeistukseen Euroopassa.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 12/07/2020
-ms.topic: article
+author: kfend
+ms.date: 01/15/2022
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aca45011b39240da6634ce604cff49697f95a299
-ms.sourcegitcommit: 7cdec5469ff0da145ac4e01caf3287d0627ae2dc
+ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5099896"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982091"
 ---
 # <a name="europe-overview"></a>Eurooppa – yleiskatsaus
 
@@ -40,6 +38,7 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 - [EU-myyntiluettelon raportointi](emea-eu-sales-list.md)
 - [Vaihtokurssioikaisut](emea-exchange-rate-adjustments.md)
 - [Maksutapojen tiedostomuodot](emea-select-file-formats-for-the-method-of-payments.md)
+- [Financen (globalisoinnin) ohje Brexitin vaikutuksesta](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Tilipalvelun (ESR) integrointi](emea-fiscal-service-integration.md)
 - [Viron ja Liettuan käyttöomaisuuden luovutus](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Siirtoasiakirjan luominen sisäiselle varastosiirrolle](tasks/transfer-document-internal-inventory-transfer.md)
@@ -94,8 +93,13 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
   - [ALV-ilmoituksen luominen ja lähettäminen](tasks/create-submit-vat-report.md)
   - [Tilitettävien tapahtumien näyttäminen Itä-Eurooppaa varten](emea-transactions-settlement-form.md)
   - [Verotusajankohdan päivämäärä (ALV-rekisterin päivämäärä)](emea-tax-point-date.md)
+  - [Toimittajan ALV-rekisterin päivämäärä](emea-date-vendor-VAT-register.md)
+- [Taloudellinen syy -ominaisuuden laajennus](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Sähköisen raportoinnin yleiskatsaus](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palvelusta](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Sähköisen raportoinnin yleiskatsaus](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palvelusta](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

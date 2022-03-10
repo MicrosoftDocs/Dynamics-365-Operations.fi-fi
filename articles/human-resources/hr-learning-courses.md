@@ -1,36 +1,37 @@
 ---
 title: Määritä koulutuskursseja
 description: Henkilöstöhallinnon järjestelmänvalvojat ja esimiehet voivat ylläpitää tietoja työntekijöille tarjottavista kursseista kurssitoiminnoilla.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 253f0d07679b6327a0ed1e3cc20ede66249750b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418394"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066747"
 ---
 # <a name="set-up-training-courses"></a>Määritä koulutuskursseja
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Henkilöstöhallinnon järjestelmänvalvojat ja esimiehet voivat ylläpitää tietoja työntekijöille tarjottavista kursseista kurssitoiminnoilla.
 
- <a name="set-up-prerequisites"></a>Määritä edellytykset
----------------------
+##  <a name="set-up-prerequisites"></a>Määritä edellytykset
 
 Seuraavat tiedot ovat pakollisia, ja ne on määritettävä ennen kurssien luontia.
 -   **Kurssityypit**
@@ -82,7 +83,7 @@ Voit suorittaa jokaiselle kurssille seuraavat tehtävät:
 - Osallistujien vähimmäis- ja enimmäismäärien määritys
 - Kurssipaikan ja luokkahuoneen määritys
 - Hotellien suosittelu kurssin osallistujille
-- kurssikuvauksen luonti, jota voidaan mainostaa työntekijöiden itsepalvelussa
+- kurssikuvauksen luonti, jota voidaan mainostaa **työntekijöiden itsepalvelussa**
 
   >**Huomautus** Voit poistaa kurssin vain, jos kukaan ei ole rekisteröitynyt siihen. 
 
@@ -128,8 +129,7 @@ Seuraavassa taulukossa luetellaan mahdolliset kurssin tilat sekä toiminnot, jot
 ## <a name="course-participants"></a>Kurssin osallistujat
 Kurssin osallistujat ovat työntekijöitä, jotka osallistuvat koulutuskurssille tai tapahtumaan. Voit rekisteröidä osallistujia vain avoimille kursseille. Kurssille rekisteröitävien osallistujien vähimmäis- ja enimmäismäärä on määritetty **Kurssit**-sivun **Yleinen**-pikavälilehdessä.
 
-<a name="workflow"></a>Työnkulku
---------
+## <a name="workflow"></a>Työnkulku
 
 Työntekijät, jotka ilmoittautuvat kurssille **työntekijän itsepalvelun** sivulla, voivat saada ilmoittautumisen reititettyä hyväksynnän työnkulun kautta. Voit määrittää työnkulun kurssille **Kurssit**-sivun **Yleiset** -pikavälilehdessä.
 
@@ -137,3 +137,6 @@ Työntekijät, jotka ilmoittautuvat kurssille **työntekijän itsepalvelun** siv
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

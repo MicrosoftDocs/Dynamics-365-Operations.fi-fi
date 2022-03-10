@@ -1,14 +1,13 @@
 ---
 title: Tietokannan lokikirjauksen määrittäminen ja hallinta
 description: Voit seurata Dynamics 365 Human Resourcesin taulukoiden ja kenttien muutoksia tietokantakirjausten avulla.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,14 +15,17 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801332"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066437"
 ---
 # <a name="configure-and-manage-database-logging"></a>Tietokannan lokikirjauksen määrittäminen ja hallinta
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -94,14 +96,14 @@ Voit poistaa kaikki tietokantalokit tai osan niistä seuraavien vaihtoehtojen av
 Tietokantalokin tyhjentäminen määritetään seuraavasti: 
 
 1. Valitse **Järjestelmänvalvoja > Linkit > Tietokanta > Tietokantaloki**. Valitse **Tyhjennä loki**.
+2. Valitse **Suodatus** **Sisällytettävät tietueet** -osassa.
+3. Valitse poistettavien lokien valitsemismenetelmä. Valitse jompikumpi seuraavista vaihtoehdoista:
 
-2. Valitse poistettavien lokien valintamenetelmä antamalla jokin seuraavista vaihtoehdoista:
-
-   - Taulun tunnus
+   - Taulun ID-tunnus
    - Lokin tyyppi
    - Luonnin päivämäärä ja aika
 
-3. Määritä lokin tyhjentämistehtävän suorittamisen ajankohta **Tietokantalokin tyhjentäminen** -välilehdessä. Tietokantalokit ovat oletusarvoisesti käytettävissä 30 päivää.
+4. Määritä lokin tyhjentämistehtävän suorittamisen ajankohta **Tietokantalokin tyhjentäminen** -välilehdessä. Tietokantalokit ovat oletusarvoisesti käytettävissä 30 päivää.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

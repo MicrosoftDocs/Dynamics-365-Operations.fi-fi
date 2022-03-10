@@ -1,29 +1,29 @@
 ---
 title: Seuraajasuunnitelman kehittäminen
 description: Kun organisaatio kasvaa, on aloitettava seuraajien suunnittelu.
-author: andreabichsel
-manager: tfehr
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e4b33e72d1d1dd9cb78a251281abd3e125c3665
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: adcb7387b9ac21a88c1ee047d1b9573708a14abb
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466325"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068866"
 ---
 # <a name="develop-a-succession-plan"></a>Seuraajasuunnitelman kehittäminen
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -51,7 +51,7 @@ Kun organisaatio kasvaa, on aloitettava seuraajien suunnittelu. Seuraajien suunn
 20. Valitse **Tärkeys**-kentässä vaihtoehto.
 21. Valitse luettelosta rivi 4.
 22. Valitse **Valinnainen**-valintaruutu.
-23. Valitse Tärkeys-kentässä vaihtoehto.
+23. Valitse **Tärkeys**-kentässä vaihtoehto.
 24. Laajenna **Koulutus**-pikavälilehti, kun haluat tarkastella tai muokata osaamisaluekartoitukseen sisällytettäviä koulutuksen osaamisalueita.
 25. Valitse **Suorita**.
 26. Valitse **OK**.

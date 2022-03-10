@@ -1,12 +1,10 @@
 ---
 title: ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 2 – Mallin yhdistäminen).
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) tietomallin käyttämään taloushallinnon dimensioita tietolähteenä ER-raporteissa.
+description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) mallin määrittämistä käyttämään taloushallinnon dimensioita ER-raporttien tietolähteenä. (Osa 2)
 author: NickSelin
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681682"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605402"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 2 – Mallin yhdistäminen).
 
@@ -58,14 +56,14 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 21. Valitse Kysy päätiliä -kentässä Kyllä.
     * Aseta "Kysy päätiliä" -asetuksen arvoksi Kyllä, jotta käyttäjät valita päätilin osaksi dimensioluetteloa.   Jos arvo on Ei, päätiliä ei sisällytetä dimensioluetteloon ja "Päätili on pakollinen" -asetus on käytössä. Jos "Onko päätili pakollinen" -asetuksen arvoksi on määritetty Kyllä, päätili luetaan dimensioluetteloon käyttäjän valinnasta huolimatta.  
 22. Valitse OK.
-![ER-mallimäärityksen suunnittelun sivu](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Taloushallinnon dimensioiden tietolähteen ominaisuuksien liukuikkuna.](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Valitse puussa Dynamics 365 for Operations\Table records.
 24. Valitse Lisää juuri.
 25. Kirjoita Nimi-kenttään LedgerJournal.
 26. Valitse Kysy kyselyä -kentässä Kyllä.
 27. Kirjoita Taulu-kenttään LedgerJournalTable.
 28. Valitse OK.
-![ER-mallimäärityksen suunnittelun sivu](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Mallin määrityksen suunnittelu -sivu, Taulutietueiden tietolähdetyyppi.](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Yhdistä tietomallielementit lisättyihin tietolähteisiin
 1. Laajenna puussa "Journal".
@@ -96,7 +94,7 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 25. Valitse puussa LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions.
 26. Valitse puussa "Journal\Transaction\Dimensions data".
 27. Valitse Sido.
-![ER-mallimäärityksen suunnittelun sivu](../media/er-financial-dimensions-guides-model-mapping3.png)
+!Mallin määrityksen suunnittelusivu, Yhdistämismääritykset-välilehti, Tietolähteet-puu.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Valitse puussa LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit).
 29. Valitse puussa solmu "Journal\Transactions\Debit".
 30. Valitse Sido.
@@ -135,7 +133,7 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 63. Kirjoita expressionAsStringText-kenttään "Company.'find()'.'name()".
     * Company.'find()'.'name()'  
 64. Valitse Tallenna.
-![ER-mallimäärityksen suunnittelun sivu](../media/er-financial-dimensions-guides-model-mapping4.png)
+![ER-mallimäärityksen suunnittelun sivu.](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Sulje sivu.
 66. Valitse Tallenna.
 67. Sulje sivu.
@@ -146,4 +144,7 @@ Jotta voisit suorittaa nämä vaiheet, "ER Taloushallinnon dimensioiden käyttä
 3. Voit muuttaa tilaa valitsemalla Muuta.
 4. Valitse Valmis.
 5. Valitse OK.
-![ER-mallimäärityksen suunnittelun sivu](../media/er-financial-dimensions-guides-model-mapping5.png)
+![Sähköisen raportoinnin konfiguroinnit -sivu.](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

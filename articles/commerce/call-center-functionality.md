@@ -1,12 +1,10 @@
 ---
 title: Puhelukeskuksen myyntitoiminnot
-description: Tässä ohjeaiheessa on Dynamics 365 Commercein puhelinkeskuksen myyntitoimintojen yleiskatsaus.
+description: Tässä ohjeaiheessa on Dynamics 365 Commercen puhelinkeskuksen myyntitoimintojen yleiskatsaus.
 author: josaw1
-manager: AnnBe
 ms.date: 04/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d188138654ba20d8393ed4bca8124a65402daff2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e7b26ab8c6d752b994c280d2bb9cef75060905fde0becec6202d7d1ecb98f47c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991437"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714732"
 ---
 # <a name="call-center-sales-functionality"></a>Puhelupalvelukeskuksen myyntitoiminnot
 
@@ -68,3 +66,6 @@ Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät puheli
 ## <a name="configure-continuity-programs"></a>Määritä jatkuvuusohjelmat
 
 [Jatkuvuusohjelmien määrittäminen puhelinkeskuksille](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

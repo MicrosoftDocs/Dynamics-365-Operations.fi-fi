@@ -1,27 +1,25 @@
 ---
 title: Määritä resurssin ominaisuudet
 description: Resurssin ominaisuudet kertovat, mitä operatiiviset resurssit voivat tehdä.
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c78db0d849c08622d9a2dffc109b439b4c584748
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 42451da0bd465ce3a18ecf18570f3331847474c1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240362"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579109"
 ---
 # <a name="define-resource-capabilities"></a>Määritä resurssin ominaisuudet
 

@@ -1,33 +1,35 @@
 ---
 title: Luo etusuunnitelma
-description: Etuussuunnitelmine määrittäminen Dynamics 365 Human Resourcesissa.
-author: andreabichsel
-ms.date: 03/24/2021
+description: Tässä aiheessa käsitellään etuussuunnitelmien määrittämistä Dynamics 365 Human Resourcesissa.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: da11799d3340798067fc03061159896f44750c77
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7d3163bf30af9ed0eac2c753ed4aabb15d568ff4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805727"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065323"
 ---
 # <a name="create-a-benefit-plan"></a>Etuussuunnitelmien luominen
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä artikkelissa kerrotaan, miten etuussuunnitelmia määritetään Dynamics 365 Human Resourcesissa.
+Tässä aiheessa käsitellään etuussuunnitelmien määrittämistä Dynamics 365 Human Resourcesissa.
 
 1. Valitse **Etujen hallinta** -työtilassa **Suunnitelmat**-kohdasta **Etuussuunnitelmat**.
 

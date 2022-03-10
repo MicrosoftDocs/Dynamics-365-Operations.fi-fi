@@ -2,11 +2,9 @@
 title: Määritä rinnakkaiset haarat työnkulussa
 description: Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e67a2c7cde3a3b6d1dcfcc2ccdd3255d30ac40b8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e7dac62abe080ac362abc3456a7760bbd3f790fd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693327"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066490"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Määritä rinnakkaiset haarat työnkulussa
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Rinnakkaisen haaran määrittämiseksi pitää suorittaa seuraavat toiminnot työnkulun editorissa .
 
@@ -50,3 +51,6 @@ Voit suunnitella ja konfiguroida rinnakkaisen haaran elementtejä seuraavasti.
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Työnkulkujen luonnin yleiskatsaus](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

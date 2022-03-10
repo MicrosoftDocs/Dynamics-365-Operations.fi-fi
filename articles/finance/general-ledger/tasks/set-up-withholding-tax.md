@@ -2,11 +2,9 @@
 title: Määritä ennakonpidätys
 description: Tässä ohjeaiheessa kuvataan ennakonpidätyksen määrittäminen.
 author: twheeloc
-manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45ae7d6bb04dbf06b9b05d9f5610895fced650b0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2fbe2343a56210bfbed01c7d39ebb8c98829e32952fa1037a3ae0845776be064
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994437"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768264"
 ---
 # <a name="set-up-withholding-tax"></a>Määritä ennakonpidätys
 
@@ -48,3 +46,6 @@ Tässä ohjeaiheessa kuvataan ennakonpidätyksen määrittäminen. *Ennakonpidä
 18. Valitse **Tallenna**.
 19. Sulje sivu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

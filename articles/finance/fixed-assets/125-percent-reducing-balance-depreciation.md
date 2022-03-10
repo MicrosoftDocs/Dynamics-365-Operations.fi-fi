@@ -1,12 +1,10 @@
 ---
 title: Jäännöspoisto 125 prosenttia
-description: Tässä artikkelissa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.
-author: saraschi2
-manager: AnnBe
+description: Tässä ohjeaiheessa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed1a382325396b30d3921904bcc3ac70f95633b1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219888"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883515"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>Jäännöspoisto 125 prosenttia
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.
+Tässä ohjeaiheessa on yleiskuvaus 125 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 125 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Tämä prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 25 (125 % ÷ 5).
 
@@ -66,7 +64,7 @@ Jos valitset poistovuodeksi **Tilivuosi**, seuraavat vaihtoehdot ovat valittavis
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Esimerkki 125 prosentin jäännöspoistosta
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Hankintakustannukset               | 11 000 |
 | Jäännösarvo                  | 1 000  |

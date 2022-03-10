@@ -2,7 +2,6 @@
 title: Mukautetun tallennustilan sijaintien määrittäminen luoduille asiakirjoille
 description: Tässä aiheessa käsitellään sähköisten raportointimuotojen (ER) muodostamien asiakirjojen tallennussijaintien luettelon laajentamista.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 146e7fb5fefbecabc99c2978b52eb0e782da0322
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562211"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594906"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Mukautetun tallennustilan sijaintien määrittäminen luoduille asiakirjoille
 
@@ -28,7 +27,7 @@ Sähköisen raportoinnin (ER) kehyksen ohjelmointirajapinnan avulla voit laajent
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Jatkuvaa koontia tukevan topologian ottaminen käyttöön. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Sinulla on oltava tämän topologian käyttöoikeus yhdelle seuraavista rooleista:
+Jatkuvaa koontia tukevan topologian ottaminen käyttöön. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Sinulla on oltava tämän topologian käyttöoikeus yhdelle seuraavista rooleista:
 
 - Sähköisen raportoinnin kehittäjä
 - Sähköisen raportoinnin toiminnallinen konsultti
@@ -42,7 +41,7 @@ Kaikki tämän aiheen tehtävät voidaan suorittaa **USMF**-yrityksessä.
 
 Voit luoda asiakirjat, jotka aiot lisätä mukautettuun varastosijaintiin [tuomalla](er-download-configurations-global-repo.md) **Kiinteiden resurssien eteenpäin siirtyvän** ER-muotomäärityksen nykyiseen topologiaan.
 
-![Konfiguraatiosäilön sivu](./media/er-custom-storage-generated-files-import-format.png)
+![Konfiguraatiosäilön sivu.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Suorita Kiinteiden resurssien eteenpäin siirtyvä raportti
 
@@ -53,7 +52,7 @@ Voit luoda asiakirjat, jotka aiot lisätä mukautettuun varastosijaintiin [tuoma
 5. Valitse **Muodon yhdistämismääritys**-kentässä **Kiinteiden resurssien eteenpäin siirtyvä**.
 6. Valitse **OK**.
 
-![Ajonaikainen dialogiruutu Kiinteiden resurssien eteenpäin siirtyvälle raportille](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Ajonaikainen dialogiruutu Kiinteiden resurssien eteenpäin siirtyvä -raportille.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 Tarkista Microsoft Excelissä asiakirja, joka on luotu ja ladattavissa. Tämä on [oletusarvoinen toimintatapa](electronic-reporting-destinations.md#default-behavior) ER-muodolle, jolle ei ole määritetty [kohteita](electronic-reporting-destinations.md) ja jota suoritetaan vuorovaikutteisessa tilassa.
 
@@ -256,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Muokkaa aiemmin luotua `AssetRollForwardService`-luokkaa ja kirjoita koodi määrittääksesi mukautetun kohdetehtaan raportin suorittajalle. Huomaa, että kun mukautettu kohdetehdas on muodostettu, kohdekansion määrittävä sovellusvetoinen parametri välitetään. Näin kohd kansiota käytetään luotujen tiedostojen tallentamiseen.
 
     > [!NOTE] 
-    > Varmista, että määritetty kansio (**c:\\0** tässä esimerkissä) esiintyy AOS-palvelua suorittavan palvelimen paikallisessa tiedostojärjestelmässä. Muussa tapauksessa suorituksen aikana ilmenee [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1)-poikkeus.
+    > Varmista, että määritetty kansio (**c:\\0** tässä esimerkissä) esiintyy AOS-palvelua suorittavan palvelimen paikallisessa tiedostojärjestelmässä. Muussa tapauksessa suorituksen aikana ilmenee [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception)-poikkeus.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

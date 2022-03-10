@@ -1,33 +1,35 @@
 ---
 title: Työntekijän itsepalvelun määrittäminen
 description: Microsoft Dynamics 365 Human Resources -ohjelmassa voit määrittää ylimmän tason siirtymisruudut työntekijän itsepalvelussa.
-author: andreabichsel
-manager: tfehr
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32981812eac3c08e1409fe5470b550e421f5d6c9
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 83718856a864123d7941b21c078bcdb96a62cca8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112370"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067576"
 ---
 # <a name="configure-employee-self-service"></a>Työntekijän itsepalvelun määrittäminen
 
-Microsoft Dynamics 365 Human Resources -ohjelmassa voit määrittää ylimmän tason siirtymisruudut työntekijän itsepalvelussa. Etuussuunnitelmaruudut ohjaavat käyttäjät etuussuunnitelmiin, joihin he ovat oikeutettuja.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Microsoft Dynamics 365 Human Resourcesissa voidaan määrittää ylimmän tason siirtymisruudut **työntekijän itsepalvelussa**. Etuussuunnitelmaruudut ohjaavat käyttäjät etuussuunnitelmiin, joihin he ovat oikeutettuja.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Etuussuunnitelmien ruudun määrittäminen
 
@@ -39,15 +41,12 @@ Microsoft Dynamics 365 Human Resources -ohjelmassa voit määrittää ylimmän t
 
    | Kenttä | Kuvaus |
    | --- | --- |
+   | **Suunnitelman tyypin koodi** | Suunnitelmatyyppi, joka näytetään, kun tämä ruutu on valittu **Etujen itsepalvelu** -ruudusta. |
    | **Ruudun tunnus** | Ruudun yksilöivä tunniste. |
-   | **Ruudun selitteen teksti** | Teksti, joka tulee näkyviin itsepalvelun ruudussa. |
+   | **Ruudun selitteen teksti** | Teksti, joka tulee näkyviin **Etujen itsepalvelun** ruudussa. |
    | **Kuvaus** | Ruudun kuvaus. |
-   | **Internet-osoite** | Kirjoita työntekijän itsepalvelusivun URL-osoite. |
-   | **Ruudun koko** | Ruudun koko: pieni, keskikokoinen tai suuri. |
-   | **Kohde** | Määrittää, avataanko sivu uudessa ikkunassa vai nykyisessä ikkunassa. |
    | **Ruudun taustakuva** | Ruudussa käytettävän kuvan URL-osoite (valinnainen). |
-   | **Alku** | Aloituspäivämäärä ja -kellonaika, jolloin laatta on käytettävissä. |
-   | **End-näppäin** | Lopetuspäivämäärä ja -kellonaika, jolloin laatta on käytettävissä. |
+   | **Seuraa avointa ilmoittautumista** | Valitse tämä vaihtoehto, kun haluat seurata tämän suunnitelmatyypin avointa rekisteröitymisen etenemistä. Joissakin luoduissa suunnitelmissa on esimerkiksi mahdollista, että **Suunnitelman tyyppi = Muu**. Nämä suunnitelmat saattavat olla valinnaisia suunnitelma, joiden rekisteröitymisen etenemistä ei haluta seurata. Jos tätä suunnitelman tyyppiä ei valita, tämä suunnitelmatyyppi ohitetaan seurattaessa edistymistä tai rekisteröitymisen valmistumista **Avaa rekisteröinti** -välilehdessä. Tämä asetus koskee sitä suunnitelman tyyppiä, joka on valittu kaikille kausille ja kaikkiin yrityksiin. |
 
 4. Valitse **Tallenna**.
 
@@ -61,14 +60,14 @@ Microsoft Dynamics 365 Human Resources -ohjelmassa voit määrittää ylimmän t
 
    | Kenttä | Kuvaus |
    | --- | --- |
+   | **Etuhyvityksen tunnus** | Joustohyvitysohjelmasuunnitelmat, jotka näytetään, kun tämä ruutu valitaan **Etujen itsepalvelu** -ruudusta. |
    | **Ruudun tunnus** | Ruudun yksilöivä tunniste. |
-   | **Ruudun selitteen teksti** | Teksti, joka tulee näkyviin itsepalvelun ruudussa. |
+   | **Ruudun selitteen teksti** | Teksti, joka tulee näkyviin **Etujen itsepalvelun** ruudussa. |
    | **Kuvaus** | Ruudun kuvaus. |
-   | **Internet-osoite** | Kirjoita työntekijän itsepalvelusivun URL-osoite. |
-   | **Ruudun koko** | Ruudun koko: pieni, keskikokoinen tai suuri. |
-   | **Kohde** | Määrittää, avataanko sivu uudessa ikkunassa vai nykyisessä ikkunassa. |
    | **Ruudun taustakuva** | Ruudussa käytettävän kuvan URL-osoite (valinnainen). |
-   | **Alku** | Aloituspäivämäärä ja -kellonaika, jolloin laatta on käytettävissä. |
-   | **End-näppäin** | Lopetuspäivämäärä ja -kellonaika, jolloin laatta on käytettävissä. |
+   | **Seuraa avointa ilmoittautumista** | Valitse tämä vaihtoehto, kun haluat seurata tämän suunnitelmatyypin avointa rekisteröitymisen etenemistä. Joissakin luoduissa suunnitelmissa on esimerkiksi mahdollista, että **Suunnitelman tyyppi = Muu**. Nämä suunnitelmat saattavat olla valinnaisia suunnitelma, joiden rekisteröitymisen etenemistä ei haluta seurata. Jos tätä suunnitelman tyyppiä ei valita, tämä suunnitelmatyyppi ohitetaan seurattaessa edistymistä tai rekisteröitymisen valmistumista **Avaa rekisteröinti** -välilehdessä. Tämä asetus koskee sitä suunnitelman tyyppiä, joka on valittu kaikille kausille ja kaikkiin yrityksiin. |
 
 4. Valitse **Tallenna**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

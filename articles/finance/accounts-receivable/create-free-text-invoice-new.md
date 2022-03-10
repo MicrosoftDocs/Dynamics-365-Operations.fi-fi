@@ -2,11 +2,9 @@
 title: Luo tekstimuotoinen lasku
 description: Tässä ohjeaiheessa käsitellään vapaatekstilaskuja.
 author: mikefalkner
-manager: AnnBe
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763283"
 ---
 # <a name="create-a-free-text-invoice"></a>Luo tekstimuotoinen lasku
 
@@ -84,3 +82,6 @@ Kun olet kopioinut rivit, voit muokata tietoja tarpeen mukaan.
 Voit luoda vapaatekstilaskun mallin mukaan. Kun valitset **Uusi mallista** **Lasku**-välilehdessä, voit valita mallin nimen ja uuden tekstimuotoisen laskun asiakastilin. Oletusarvot, kuten maksuehdot ja maksutapa, voidaan automaattisesti täyttää asiakkaan tiedoista, tai voit käyttää arvoja, jotka on tallennettu malliin.
 
 Uusi vapaatekstilasku luodaan ja voit muokata sen arvoja tarpeen mukaan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 title: Vuokrasopimuskirjojen määrittäminen
 description: Tässä ohjeaiheessa käsitellään tietoja, joita ylläpidetään vuokrasopimuskirjoissa. Vuokrasopimuskirjat sisältävät kirjanpitokäytännöt, joiden mukaan vuokrasopimus otetaan huomioon järjestelmässä.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseBookMaster
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f5eac47448835dae5837b31c59a72833652f63bf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5894fc96e9b80be61fa57417e083780f617ee06bcdca29aceaf164308d17dcda
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728814"
 ---
 # <a name="set-up-lease-books"></a>Vuokrasopimuskirjojen määrittäminen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Vuokrasopimuskirjat sisältävät kirjanpitokäytännöt, joiden mukaan vuokrasopimus otetaan huomioon järjestelmässä. Kassaperusteisen kirjanpidon lisäksi resurssin vuokraus tukee seuraavia standardeja:
 

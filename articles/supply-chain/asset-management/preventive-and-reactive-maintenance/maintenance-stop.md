@@ -1,12 +1,10 @@
 ---
 title: Ylläpidon käyttökatkon tehtävät
 description: Tässä aiheessa on tietoja ylläpidon käyttökatkon käyttämisestä kapasiteetin yleiskuvan saamiseksi. Se tarvitaan tietyjen käyttöomaisuuksien kunnossapitotöiden suorittamiseen tiettynä ajanjaksona.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727915"
 ---
 # <a name="maintenance-downtime-activities"></a>Ylläpidon käyttökatkon tehtävät
 
@@ -42,7 +40,7 @@ Kun kunnossapitoseisokkirekisteröinnissä on valittu käyttöomaisuudet, kaikki
 
 Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin toimintoihin liittyviä tietoja valitsemalla **Resurssien hallinta** > **Yhteiset** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot**. Avaa tietonäkymä napsauttamalla **Ylläpidon käyttökatkojen toiminnot** -sarakkeen linkkiä. Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -luettelosta.
 
-![Kuva 1](media/19-preventive-maintenance.png)
+![Kuva 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Kunnossapitoseisokkien toiminnon luominen
@@ -63,7 +61,7 @@ Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin
 
 Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tietonäkymästä.
 
-![Kuva 2](media/20-preventive-maintenance.png)
+![Kuva 2.](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Valittuihin käyttökohteisiin liittyvät työtilauksen ylläpitotyöt ja ylläpitoaikataulurivit päivitetään automaattisesti, jos uusia työtilauksia tai ylläpitoaikataulurivejä luodaan huoltoseisokkien luomisen jälkeen. Jos esimerkiksi ajoitat ylläpitosuunnitelmia tai kunnossapitokierroksia liittyville käyttöomaisuuksille kaksi päivää huoltoseisokkien toiminnon luomisen jälkeen, kunnossapitoseisokkitoimintoon lisätään automaattisesti uudet ylläpitoaikataulurivit.
@@ -74,7 +72,7 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 
 10. Aloita laskenta valitsemalla **OK**. Tuntien kokonaismäärä näkyy **Kapasiteetin kuormitus** -yhteenvedossa. Valitse **Kapasiteetin kuormitus** -välilehden **Ryhmittely...**-toimintoruuturyhmissä painikkeet, joilla saadaan tarkka yleiskatsaus ennustettujen tuntien kohdistuksesta. Alla oleva kuva näyttää **Kapasiteetin kuormitus** -laskennan tulokset.
 
-![Kuva 3](media/21-preventive-maintenance.png)
+![Kuva 3.](media/21-preventive-maintenance.png)
 
 11. Kun olet saanut yleiskuvan kapasiteetin kuormituksesta ja haluat tehdä muutoksia työtilausten ylläpitotöihin tai ylläpitoaikatauluriveihin, palaa **Ylläpidon käyttökatkojen toiminnot** -tietonäkymään ja valitse oikaistavat rivit **Tuloksena olevat työtilauksen ylläpitotyöt**- ja **Ylläpitoaikataulun rivit** -pikavälilehdissä.
 
@@ -91,8 +89,11 @@ Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tie
 
 16. Aloita laskenta valitsemalla **OK**. Nimike-ennusteiden kokonaismäärä näkyy **Nimike-ennuste** -yhteenvedossa. Valitse **Nimike-ennuste** -välilehden **Ryhmittely...**-toimintoruuturyhmissä painikkeita, joilla saadaan yleiskatsaus ennustettujen nimikkeiden kohdistuksesta. Alla olevassa kuvassa on **Nimike-ennuste**-laskennan tuloksia.
 
-![Kuva 4](media/22-preventive-maintenance.png)
+![Kuva 4.](media/22-preventive-maintenance.png)
 
 - Voit kopioida käyttökohteita yhdestä huoltoseisokkitehtävästä toiseen. Valitse **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Kopioi ylläpidon käyttökatkojen toiminnot** -painike ja tee valinnat **Ylläpidon käyttökatkojen toiminnoista**- ja **Ylläpidon käyttökatkojen toimintoihin** -kentissä ja valitse **OK**.
 - Napsauta **Kaikki ylläpidon käyttökatkojen toiminnot** -kohdassa **Ylläpitoaikataulun rivit**- tai **Aktiiviset työtilaukset**-painike ja avaa liittyvät luettelot ja tarkastele valittuun kunnossapitoseisokin toimintoon liittyviä rivejä.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

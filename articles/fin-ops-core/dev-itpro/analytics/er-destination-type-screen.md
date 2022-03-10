@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 67af34d2c9c583d8c9befbd2675cee41a3db05e0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2855ac9eb0248a65973898b107d33fc86ac9c1324dafaaf1606b76d8e82f3a8f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721949"
 ---
 # <a name="screen-destination"></a>Näyttökohde
 
@@ -30,7 +30,7 @@ Voit määrittää näyttökohteen kullekin lähteviä asiakirjoja luomaan mää
 
 Jos määrität **Käytössä**-kentän arvoksi **Kyllä**, tulosteen esikatselu luodaan. Voit tarkastella joitakin tiedostotyyppejä, kuten XML, TXT tai PDF, suoraan selainikkunassa. Muiden tiedostotyyppien, kuten Microsoft Excel tai Word, osalta käytetään Microsoft Office Online -palvelua.
 
-[![Kohdeasetusten sivu](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
+[![Kohdeasetusten sivu.](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

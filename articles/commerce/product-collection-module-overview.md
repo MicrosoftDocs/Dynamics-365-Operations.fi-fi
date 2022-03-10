@@ -3,23 +3,22 @@ title: Tuotekokoelmamoduulit
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotekokoelmamoduulien yleiskatsaus.
 author: v-chgri
 ms.date: 01/28/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 222bb25b6851fe60f3d872e5d7431094ac916dd4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791003"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984541"
 ---
 # <a name="product-collection-modules"></a>Tuotekokoelmamoduulit
 
@@ -40,7 +39,7 @@ Tuotekokoelmien lähteet voivat olla seuraavien neljän tyyppisiä luetteloita:
 
 Seuraavassa kuvassa näkyvät erityyppiset tuotekokoelmat, joita käytetään sähköisen kaupankäynnin sivustossa.
 
-![Esimerkki erityyppisistä tuotekokoelmista sähköisen kaupankäynnin sivustossa](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Esimerkki erityyppisistä tuotekokoelmista sähköisen kaupankäynnin sivustossa.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Käytä aina tuotekokoelmamoduuleita samankaltaisten tuoteryhmien kanssa.

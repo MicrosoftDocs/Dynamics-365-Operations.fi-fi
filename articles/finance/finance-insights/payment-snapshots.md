@@ -1,31 +1,32 @@
 ---
-title: Tilannevedosten yleiskatsaus (esiversio)
+title: Tilannevedosten yleiskatsaus
 description: Tässä ohjeaiheessa kerrotaan tilannevedostoiminnosta. Sen avulla voit tallentaa kassavirtaennusteen analyysia tai kertymien kanssa vertailua varten. Kun luot kassavirtaennusteen, voit tallentaa ennusteen tilannevedokseksi. Tämän jälkeen voit muokata tilannevedosten avulla ennusteeseen sisältyviä tilejä tai verrata tilannevedoksen ennustetta todellisiin arvoihin.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
-ms.topic: article
+ms.date: 11/03/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 593d6fa8efdecf1b64ef802e6861783d6f85489c
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: f9b6d44b7381817a40b86c17ee4eaf3dbfc46b67
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186587"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983514"
 ---
-# <a name="snapshots-overview-preview"></a>Tilannevedosten yleiskatsaus (esiversio)
+# <a name="snapshots-overview"></a>Tilannevedosten yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Tilannevedosten avulla organisaatiot voivat muokata ja tallentaa kassatilanteen ja kassaennusteet tiettynä ajankohtana. Voit vertailla tilannevedosta todellisiin taloustietoihin, tutkia varianssia ja käyttää näitä tietoja kassavirtaennusteiden parantamisessa. Tilannevedoksia voidaan käyttää seuraavasti:
 
@@ -39,8 +40,6 @@ Voit luoda tilannevedoksen valitsemalla **Uusi tilannevedos** **Kassatilanne**- 
 
 Kassan saapuvia ja lähteviä virtoja tilannevedoksessa voi muokata milloin tahansa. Kun saapuvan tai lähtevän virran summaa muokataan, päivitetty summa jaetaan alkuperäisen saldon muodostaneille rahatileille. Kun olet muokannut tilannevedoksen, tallenna muutokset valitsemalla **Tallenna**.
 
-Jos haluat vertailla useita tilannevedoksia, valitse **Vertaa tilannevedoksia**. Voit vertailla kahta tilannevedosta kerrallaan. Valitse kaksi vertailtavaa tilannevedosta ja valitse sitten **OK**. **Vertaa tilannevedoksia** -sivulla on valittujen tilannevedosten vertailu. Sivun yläosassa oleva kaavio näyttää näiden kahden tilannevedoksen välisten päällekkäisten kausien saapuvien ja lähtevien kassavirtojen ja palkkitilien saldojen vertailun. Alaosassa olevassa ruudukossa näkyy kahden ennusteen yksityiskohtainen vertailu kullekin maksuvalmiussummalle. Ruudukon **Varianssi**-sarake näyttää kauden saldojen erot.
-
-Jos haluat verrata todellisia taloushallinnon tuloksia ennusteeseen, joka tallennettiin tilannevedoksena, valitse **Vertaa todellisiin arvoihin**. **Vertaa tilannevedoksia** -sivulla on todellisten summien ja ennusteen vertailu. Sivun yläosassa oleva kaavio näyttää näiden kahden tilannevedoksen välisten päällekkäisten kausien saapuvien ja lähtevien kassavirtojen ja palkkitilien saldojen vertailun. Alaosassa olevassa ruudukossa näkyy kauden todellisten saldojen ja ennustetun saldon yksityiskohtainen vertailu kullekin maksuvalmiussummalle. Ruudukon **Varianssi**-sarake näyttää kauden todellisen saldon ja ennustetun saldon erot.
+Jos haluat verrata todellisia taloushallinnon tuloksia ennusteeseen, joka tallennettiin tilannevedoksena, valitse **Vertaa todellisiin arvoihin**. **Vertaa toteutuneisiin** -sivulla on toteutuneiden summien ja ennusteen vertailu. Sivun yläosassa oleva kaavio näyttää näiden kahden tilannevedoksen välisten päällekkäisten kausien saapuvien ja lähtevien kassavirtojen ja palkkitilien saldojen vertailun. Alaosassa olevassa ruudukossa näkyy kauden todellisten saldojen ja ennustetun saldon yksityiskohtainen vertailu kullekin maksuvalmiussummalle. Ruudukon **Varianssi**-sarake näyttää kauden todellisen saldon ja ennustetun saldon erot.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

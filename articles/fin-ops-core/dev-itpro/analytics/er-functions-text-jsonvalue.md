@@ -2,8 +2,7 @@
 title: JSONVALUE ER -funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) JSONVALUE-funktiota käytetään.
 author: NickSelin
-ms.date: 12/11/2019
-ms.topic: article
+ms.date: 10/25/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8336e43a236e3f3b875fb3cb81bc139507673c2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ff33098e5be4dd9748d01d45b596360617305724
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746360"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700060"
 ---
 # <a name="jsonvalue-er-function"></a>JSONVALUE ER -funktio
 
@@ -42,21 +41,45 @@ JSON-tietoja sisältävän *Merkkijono*-tyypin tietolähteen kelvollinen polku.
 
 `path`: *Merkkijono*
 
-JSON-tietojen skaalariarvon tunniste.
+JSON-tietojen skaalariarvon tunniste. Erota toisiinsa liittyvien JSON-solmujen nimet vinoviivalla (/). Käytä hakasuljemerkintää (\[\]) tietyn arvon indeksin määrittämiseksi JSON-matriisissa. Huomaa, että tässä indeksissä käytetään nollaan perustuvaa numerointia.
 
 ## <a name="return-values"></a>Palautusarvot
 
-*merkkijono*
+*Merkkijono*
 
 Tulokseksi saatava tekstiarvo.
 
-## <a name="example"></a>Esimerkki
+## <a name="example-1"></a>Esimerkki 1
 
 **$JsonField**-tietolähde sisältää seuraavat tiedot JSON-muodossa: **{BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}**. Tässä tapauksessa `JSONVALUE (JsonField, "BuildNumber")`-lauseke palauttaa *merkkijonon* tietotyypin seuraavan arvon: **"7.3.1234.1"**.
+
+## <a name="example-2"></a>Esimerkki 2
+
+*Laskettu kenttä* -tyypin **JsonField**-tietolähde sisältää lausekkeen `"{""workers"": [ {""name"": ""Adam"", ""age"": 30, ""emails"": [""AdamS@Contoso.com"", ""AdamS@Hotmail.com"" ]}, { ""name"": ""John"", ""age"": 21, ""emails"": [""JohnS@Contoso.com"", ""JohnS@Aol.com""]}]}"`
+
+Tämä lauseke on määritetty palauttamaan [*Merkkijono*](er-formula-supported-data-types-primitive.md#string)-arvo, joka edustaa seuraavia tietoja JSON-muodossa.
+
+```json
+{
+    "workers": [
+        {
+            "name": "Adam",
+            "age": 30,
+            "emails": [ "AdamS@Contoso.com", "AdamS@Hotmail.com" ]
+        },
+        {
+            "name": "John",
+            "age": 21,
+            "emails": [ "JohnS@Contoso.com", "JohnS@Aol.com" ]
+        }
+    ]
+}
+```
+
+Tässä tapauksessa lauseke `JSONVALUE(json, "workers/[1]/emails/[0]")` palauttaa *Merkkijono*-tietotyypin seuraavan arvon: `JohnS@Contoso.com`.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Tekstitoiminnot](er-functions-category-text.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

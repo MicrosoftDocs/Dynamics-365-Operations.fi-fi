@@ -2,11 +2,9 @@
 title: Varastosijainnin tila
 description: Tässä aiheessa on yleiskatsaus fyysisen varaston sijainnin tila -ominaisuudesta.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: e343fbd33ca616b0e20efb1f1fd66ed4863a72dd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1b5e1eb651d882e7fbf38f2f2cf8804c28f2154fcb299dbc5caabbecdfab560b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733273"
 ---
 # <a name="warehouse-location-status"></a>Varastosijainnin tila
 
@@ -53,7 +51,7 @@ Ennen kuin voit käyttää *Varaston sijainnin tila* -toimintoa, sen pitää oll
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-example-scenario"></a>Esimerkkiskenaarion mukaisten mallitietojen valmisteleminen
 
-Ennen kuin aloitat skenaarion käsittelyn, sinun on aktivoitava mallitiedot ja määritettävä ominaisuus tässä osassa kuvatulla tavalla. Esimerkkiskenaarion suorittaminen edellyttää, että käytössä on joko varastosovellus tai selainpohjainen emulaattori. Tässä annetut vaiheet käyttävät varastosovellusta. Selainpohjaisen emulaattorin vaiheet ovat samankaltaisia.
+Ennen kuin aloitat skenaarion käsittelyn, sinun on aktivoitava mallitiedot ja määritettävä ominaisuus tässä osassa kuvatulla tavalla. Esimerkkiskenaarion suorittaminen edellyttää, että käytössä on joko varastonhallinnan mobiilisovellus tai selainpohjainen emulaattori. Tässä annetut vaiheet käyttävät varastonhallinnan mobiilisovellusta. Selainpohjaisen emulaattorin vaiheet ovat samankaltaisia.
 
 #### <a name="use-the-usmf-legal-entity"></a>Käytä USFM-yritystä
 

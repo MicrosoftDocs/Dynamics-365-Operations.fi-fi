@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 27681
+ms.custom:
+- "27681"
+- intro-internal
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20b6d586e4effbb56d476504a679c3b0b8adb3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a1c0ee254a5300cfc84eb434e4785b6eceacf0375b983b33991445443957a33
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754491"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712733"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Raportointi ja analysointi Power BI -aloitussivulla
 
@@ -37,7 +39,7 @@ Työtiloissa voidaan käyttää monipuolisesti Microsoft Power BI:n tukemia info
 
 Käyttäjät voivat käsitellä tietoja napsauttamalla tai koskettamalla sivun visuaalisia elementtejä. He pääsevät näkemään syy- ja seuraussuhteen sekä voivat tehdä yksinkertaisia entä jos -toimintoja työtilasta poistumatta. Upeiden ja vuorovaikutteisten visuaalisten elementtien ansioista käyttäjät jaksavat perehtyä tietoihin ja löytävät tällä tavoin piiloon jääviä trendejä.
 
-![Esimerkki Power BI:n käytöstä työtilassa](./media/Power-BI-in-D365-Workspace.png)
+![Esimerkki Power BI:n käytöstä työtilassa.](./media/Power-BI-in-D365-Workspace.png)
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
@@ -50,7 +52,7 @@ Lisätietoja on seuraavissa ohjeaiheissa:
 ## <a name="business-documents-and-printing"></a>Liiketoiminta-asiakirjat ja tulostaminen
 Liiketoimintatapahtumien tiedot tallennetaan ja välitetään usein raportointiratkaisujen avulla. Raportointiratkaisun onkin tämän vuoksi voitava tuottaa liiketoimintatiedot konkreettisessa muodossa käytössä olevilla laitteilla, kuten verkkotulostimilla. Liiketoiminta-asiakirjoja ovat esimerkiksi myyntilaskut ja sekit.
 
-[![Liiketoiminta-asiakirjaesimerkkejä](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![Liiketoiminta-asiakirjaesimerkkejä.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
@@ -61,18 +63,18 @@ Lisätietoja on seuraavissa ohjeaiheissa:
 ## <a name="electronic-reporting"></a>Sähköinen raportointi
 Sähköisellä raportointityökalulla (sähköisen raportoinnin työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden tai alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisiä raportointisovelluksia käytetään esimerkiksi tilintarkastuksessa, veroraportoinnissa ja sähköisessä laskutuksessa.
 
-[![Esimerkki sähköisestä raportoinnista](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![Esimerkki sähköisestä raportoinnista.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
-- [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
-- [Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [Sähköisen raportoinnin (ER) määritysten luominen](electronic-reporting-configuration.md)
+- [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+- [Sähköisen raportoinnin määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Sähköisen raportoinnin määritysten luominen](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>Taloushallinnon raportointi
 Käytettävissä on taloushallinnon vakioraportteja, joissa käytetään päätilin oletusluokkia. Voit luoda tai muokata raporttien suunnitteluohjelmalla perinteisiä raportteja, kuten tuloslaskelmia ja taseita. Voit sitten jakaa tulokset organisaation muiden jäsenten kanssa. Taloushallinnon raportteja ovat esimerkiksi taseet, kassavirta ja pääkirjan yhteenveto vuosittain.
 
-[![Esimerkki taloushallinnon raportoinnista](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![Esimerkki taloushallinnon raportoinnista.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 

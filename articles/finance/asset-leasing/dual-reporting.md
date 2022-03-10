@@ -2,13 +2,11 @@
 title: Kaksoisraportointi
 description: Tämä ohjeaihe sisältää esimerkin sekä International Financial Reporting Standard (IFRS) -raportoinnin että resurssin vuokrauksen lakisääteisen raportoinnin vaatimusten täyttämisestä.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseBookMaster
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a7d9b3ea3d4f1d48b8a7326bd5a01d3119310c62
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 406fbb53fc4cd17a7c257b5f5463227118c9051f44d81db000fbe87dca142efe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003178"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767053"
 ---
 # <a name="dual-reporting"></a>Kaksoisraportointi
 
@@ -49,7 +47,7 @@ IFRS 16 -kirja määritetään niin, että se on yhdenmukainen IFRS 16 -kirjanpi
 | Nykyinen arvo / resurssin käyvän arvon määrittäminen | 0,00           |
 | Lyhytaikainen kynnysarvo                    | 12             |
 | Arvoltaan vähäinen kynnysarvo                     | 5,000.00       |
-| Maksu toimittajalle                           | Nro             |
+| Maksu toimittajalle                           | Ei             |
 
 **Lakisääteinen kirja**
 
@@ -66,7 +64,7 @@ Lakisääteinen kirja on käteisvaroihin perustuva kirja, jonne yritys kirjaa vu
 | Nykyinen arvo / resurssin käyvän arvon määrittäminen | 0,00        |
 | Lyhytaikainen kynnysarvo                    | 0           |
 | Arvoltaan vähäinen kynnysarvo                     | 0           |
-| Maksu toimittajalle                           | Nro          |
+| Maksu toimittajalle                           | Ei          |
 
 **Lakisääteinen palautuskirja**
 
@@ -83,7 +81,7 @@ Lakisääteinen palautuskirja määritetään samalla tavalla kuin lakisäätein
 | Nykyinen arvo / resurssin käyvän arvon määrittäminen | 0,00                           |
 | Lyhytaikainen kynnysarvo                    | 0                              |
 | Arvoltaan vähäinen kynnysarvo                     | 0                              |
-| Maksu toimittajalle                           | Nro                             |
+| Maksu toimittajalle                           | Ei                             |
 
 Tässä esimerkissä on luotu vuokraus, jolla on seuraavat asetukset **Yleistä**- ja **Maksuaikataulurivit**-välilehdissä.
 
@@ -522,3 +520,6 @@ Kun kaikki nämä kirjauskansioviennit on luotu ja kirjattu, näkyvissä ovat se
 | 11         | Kertynyt poisto |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

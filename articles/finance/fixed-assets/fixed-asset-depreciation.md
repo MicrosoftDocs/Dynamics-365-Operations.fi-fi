@@ -1,12 +1,10 @@
 ---
 title: Käyttöomaisuuden poisto
 description: Tämä ohjeaihe sisältää käyttöomaisuuden poiston yleiskatsauksen.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/30/2017
+author: moaamer
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
@@ -14,23 +12,26 @@ ms.reviewer: roschlom
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87317eedad06e93625212df3cc6e017b9475c932
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240991"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890977"
 ---
 # <a name="fixed-asset-depreciation"></a>Käyttöomaisuuden poisto
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tämä ohjeaihe sisältää käyttöomaisuuden poiston yleiskatsauksen.
 
 Poisto on kausittainen tapahtuma, joka yleensä vähentää käyttöomaisuuserän tasearvoa ja kirjataan kuluksi tulostilille. Tämän vuoksi päätiliä käytetään yleensä taseen kausittaisen poiston hyvittämiseen. Vastatili on tilikartan tuloslaskelmaosaan kuuluva tili.
+
+Versiosta 10.0.24 alkaen **Kirjanpito**-sivun **Laske positiiviset poistot** -omaisuuskirjan määritysvaihtoehto mahdollistaa poistojen veloituksen käyttöomaisuudesta, joka on hankittu negatiivisella kirjanpitoarvolla (hyvitys).
 
 ## <a name="depreciation-adjustment"></a>Poistojen oikaisu
 Poiston oikaisuksi kirjataan yleensä vain aiemmin kirjatun poistotapahtuman korjaus. Siksi sekä pää- että vastatili määritetään samaan tapaan kuin poistoissa käytettävät tilit. Poistojen oikaisun summa voi olla positiivinen tai negatiivinen, mutta päätili (tasetilinä) ja vastatili (yleensä tulostilinä) toimivat samaan tapaan.

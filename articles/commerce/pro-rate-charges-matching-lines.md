@@ -2,11 +2,9 @@
 title: Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
 description: Tässä ohjeaiheessa käsitellään Commerce-kanavan tilausten automaattisten kulujen laskemisen ja kohdistamisen lisäominaisuuksia käyttämällä automaattista etukäteisveloitustoimintoa.
 author: hhaines
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a05150d8f4c4fa2d50c07c69c5574cdb602a618f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774506"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
 
@@ -32,7 +30,7 @@ ms.locfileid: "4972402"
 
 Tässä ohjeaiheessa käsitellään otsikkotason automaattisten kulujen ryhmittämistoimintoa ja niiden jakamista suhteellisti kaupan myyntiriveille. Tätä toimintoa voi käyttää tapahtumissa, josta on luotu myyntipisteessä Retail-versiolla 10.0.1 ja myynneissä, jotka on luotu puhelinkeskuksessa Retail-versiolla 10.0.2.
 
-Tämä toiminto on käytettävissä vain, jos [automaattiset etukäteisveloitukset](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) on otettu käyttöön **Commercen parametrit** -sivun asetuksella. Automaattisten kulujen laajennettua laskentamenetelmään voidaan lisäksi käyttää vain myyntitilauksissa, jotka on luotu myyntikanavissa (myyntipiste, puhelinkeskus ja Dynamicsin sähköinen kaupankäyntiympäristö).
+Tämä toiminto on käytettävissä vain, jos [automaattiset etukäteisveloitukset](/dynamics365/unified-operations/retail/omni-auto-charges) on otettu käyttöön **Commercen parametrit** -sivun asetuksella. Automaattisten kulujen laajennettua laskentamenetelmään voidaan lisäksi käyttää vain myyntitilauksissa, jotka on luotu myyntikanavissa (myyntipiste, puhelinkeskus ja Dynamicsin sähköinen kaupankäyntiympäristö).
 
 Tämän uuden toiminnon avulla organisaatiot voivat laskea ja kohdistaa otsikkotason automaattiset kulut entistä joustavammin myyntitapahtumiin.
 
@@ -40,7 +38,7 @@ Versiota 10.0.1 edeltävissä sovelluksen versioissa otsikkotason automaattiset 
 
 Esimerkki: Otsikkotason automaattiset kulut on määritetty toimitustavoille **99** ja **11**. Myyntitilaus luodaan, ja tilauksessa otsikossa toimitustavaksi on määritetty **99**. Osa myyntiriveistä on kuitenkin määritetty siten, että niiden toimitukseen käytetään toimitustapaa **11**. Tässä tapauksessa vain toimitustapaan **99** linkitetyt otsikkotason kulut otetaan huomioon ja kohdistetaan myyntitilaukseen.
 
-Commercessa otsikkotason kuluilla on lisäominaisuus, jonka avulla voi määrittää tilauksen arvoon perustuvan [maksutasomäärityksen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery). Esimerkki: Jos tilauksen arvo 50,00–200,00 $, organisaatio voi veloittaa rahtikuluina 5,00 $. Jos tilauksen arvo on kuitenkin 200,01–500,00 $, rahtikulut voivat olla 4,00 $.
+Commercessa otsikkotason kuluilla on lisäominaisuus, jonka avulla voi määrittää tilauksen arvoon perustuvan [maksutasomäärityksen](/dynamics365/unified-operations/retail/configure-call-center-delivery). Esimerkki: Jos tilauksen arvo 50,00–200,00 $, organisaatio voi veloittaa rahtikuluina 5,00 $. Jos tilauksen arvo on kuitenkin 200,01–500,00 $, rahtikulut voivat olla 4,00 $.
 
 Osa organisaatioista haluaa käyttää otsikkotason kuluista saatavat maksutasolaskennan edut. Jos skenaario kuitenkin sisältää toimitustapayhdistelmän, nämä organisaatiot haluavat myös varmistaa, että laskettavat kulut perustuvat kullakin myyntirivillä määritettyyn toimitustapaan.
 
@@ -58,9 +56,9 @@ Tämä skenaario havainnollistaa, mitä tapahtuu, kun automaattisten kulujen ase
 
 Tässä skenaariossa organisaatio on määrittänyt toimitustapasuhteiden **99** ja **11** otsikkotason kulut. Toimitustavalle **21** ei ole määritetty automaattisia kuluja.
 
-![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä](media/99_disabled.png)
+![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä.](media/99_disabled.png)
 
-![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä](media/11_disabled.png)
+![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on poistettu käytöstä.](media/11_disabled.png)
 
 Myyntitilaus luodaan puhelinkeskuksessa ja toimitustavaksi määritetään **99**. Tässä tilauksessa on viisi nimikettä. Kaksi tilausriviä on määritetty käyttämään toimitustapaa **99**, kaksi riviä toimitustapaa **11** ja yksi rivi toimitustapaa **21** (katso seuraava taulukko).
 
@@ -74,15 +72,15 @@ Myyntitilaus luodaan puhelinkeskuksessa ja toimitustavaksi määritetään **99*
 
 Tässä skenaariossa koko tilaus arvioidaan toimitustavan **99** automaattisen kulutaulukon perusteella. Kaikkien myyntirivien kokonaissumman perusteella määritetään automaattisen kulumäärityksen vastaava taso, ja tätä kulua käytetään tilauksen otsikkotasolla. Tässä esimerkiksi tilauksen kokonaissumma on 165,00 $, ja tilauksen otsikkoon on kohdistettu 15,00 $:n rahtikulu. Toimitustavalle **11** määritettyjä automaattisia kustannuksia ei koskaan tarkisteta tai käytetä.
 
-Jos asiakas palauttaa tässä skenaariossa joitakin tilauksen nimikkeitä ja jos [kulukoodi on määritetty siten, että se palautetaan](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), palautetukseen käytetään järjestelmällisesti otsikkotason kokonaiskulua, vaikka voi osa nimikkeistä palautetaan.
+Jos asiakas palauttaa tässä skenaariossa joitakin tilauksen nimikkeitä ja jos [kulukoodi on määritetty siten, että se palautetaan](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), palautetukseen käytetään järjestelmällisesti otsikkotason kokonaiskulua, vaikka voi osa nimikkeistä palautetaan.
 
 ### <a name="scenario-2"></a>Skenaario 2
 
 Tässä skenaariossa on määritetty toimitustapasuhteiden **99** ja **11** otsikkotason kulut. Näiden automaattisten kulutaulukkojen **Jaa suhteellisesti vastaaville myyntiriveille** -asetukseksi on määritetty **Kyllä**.
 
-![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön](media/99_enabled.png)
+![Toimitustavan 99 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön.](media/99_enabled.png)
 
-![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön](media/11_enabled.png)
+![Toimitustavan 11 automaattiset kulut, kun vastaavan rivin suhteellinen jako on otettu käyttöön.](media/11_enabled.png)
 
 Tässä skenaariossa käytetään samaa viisi riviä sisältävää myyntiriviä. Vaikka tilauksen otsikon toimitustavaksi määritetään **99**, myyntilauksen kunkin rivin toimitustapa määritetään seuraavaan taulukon mukaisesti.
 
@@ -132,9 +130,9 @@ Koska automaattinen kulumääritys on määritetty jaettavaksi suhteellisesti va
     - Tuotteen kokonaisarvo = 15 $
     - **Kulujen arvo = 0 $** (tälle asiakas- ja toimitustapayhdistelmälle ei ole määritetty automaattisia kuluja)
 
-    ![Toimitustavan 11 kulut menevät korostettuun tasoon](media/step2mode11.png)
+    ![Toimitustavan 11 kulut menevät korostettuun tasoon.](media/step2mode11.png)
 
-    ![Toimitustavan 99 kulut menevät korostettuun tasoon](media/step2mode99.png)
+    ![Toimitustavan 99 kulut menevät korostettuun tasoon.](media/step2mode99.png)
 
 3. Järjestelmä laskee kullakin rivillä käytettävän kulujen arvon sellaisen suhteelliseen jaon logiikan mukaan, joka ottaa huomion rivin suhteellisen arvon suhteessa ryhmän tuotteen kokonaisarvoon.
 
@@ -165,7 +163,7 @@ Koska automaattinen kulumääritys on määritetty jaettavaksi suhteellisesti va
 
 Tämän vuoksi tässä esimerkissä nimikkeelle 81334 määritetään rahtikuluksi 5,62 $. Voit tarkastella näitä kuluja myyntirivin **Kulujen ylläpito** -sivulla. Seuraava kuva osoittaa, miltä kyseinen sivu näyttää nimikkeelle 81334.
 
-![Nimikkeen 81334 myyntirivin suhteellisesti jaetut kulut](media/proratedlinecharge.png)
+![Nimikkeen 81334 myyntirivin suhteellisesti jaetut kulut.](media/proratedlinecharge.png)
 
 Kun tätä laskentamenetelmää käytetään osittaisen palautuksen skenaariossa, jossa kulukoodi on palautettavissa, vain osa kyseiselle riville kohdistetusta kulusta palautetaan nimikkeen palautuksen yhteydessä.
 
@@ -174,3 +172,6 @@ Kun tätä laskentamenetelmää käytetään osittaisen palautuksen skenaariossa
 [Omnikanavan automaattiset etukäteisveloitukset](omni-auto-charges.md)
 
 [Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

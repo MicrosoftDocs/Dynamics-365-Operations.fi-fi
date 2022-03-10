@@ -2,13 +2,11 @@
 title: Vuokrausten hallinta vuokrauksen tuonnin kehyksen kautta
 description: Tässä ohjeaiheessa kerrotaan, miten vuokrauksen tuonnin kehystä käytetään useiden vuokrausten muokkaamisessa kerralla.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseImportHeader
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7df2f55f596cab54315c2da2ec0492422514f49c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 534584a7da494b427d48b1bc97bf6554d25f4a79d9d62f59ec5f2afb65e67431
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971300"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758894"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Vuokrausten hallinta vuokrauksen tuonnin kehyksen kautta
 
@@ -55,7 +53,7 @@ Vertailutoiminnon avulla voit vertailla tuotavaa tietuetta vastaavaan järjestel
 > [!NOTE]
 > Vertailutoiminto ei toimi vuokrasopimuksissa, joiden prosessityyppi on **Lisää tietue**, koska vuokrasopimus ei sisällä vertailtavia kohteita.
 >
-> Jos haluat vertailla useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen \> Vertaa** ja valitse **Vertaa**.
+> Jos haluat vertailla useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Vertaa**.
 
 Voit tarkastella kaikkien entiteettien eroja järjestelmässä olevien tietojen ja väliaikaisten taulukoiden tietojen välillä. Valitse kunkin väliaikaisen taulukon entiteetin **Katso erot** -kohta. Näkyviin tulevassa valintaikkunassa näkyy valittu arvo ja ehdotettu väliaikainen arvo.
 
@@ -64,17 +62,17 @@ Voit myös päivittää väliaikaisen arvon muuttamalla sitä **Uusi arvo** -sar
 Voit vahvistaa vuokrasopimukset ja varmistaa, että ne tietueet voidaan tuoda järjestelmään ilman virheitä. Ennen kuin vuokrasopimustietue siirretään, järjestelmä suorittaa useita tarkistuksia. Niiden avulla varmistetaan, että tietueen tuonti onnistuu. Voit vahvistaa yksittäisen vuokrasopimuksen valitsemalla **Vahvista**.
 
 > [!NOTE]
-> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen \> Vahvista** ja valitse **Vertaa**.
+> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Vertaa**.
 
 Voit käsitellä yksittäistä vuokrasopimusta valitsemalla **Siirrä vuokrasopimustietueet** **Tuonnin otsikko** -sivulla. Kun vuokrasopimus siirretään, järjestelmä suorittaa toiminnon, joka on määritetty **Prosessityyppi**-kentässä.
 
 > [!NOTE]
-> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen \> Vahvista** ja valitse **Vertaa**.
+> Jos haluat siirtää useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Siirrä**.
 
 Kun vuokrasopimuksia verrataan, voit tarkastella kunkin tuonnin tunnukseen sisältyvän vuokrasopimuksen erot suorittamalla raportin. Jos haluat suorittaa yhden vuokrasopimuksen raportin, valitse kyseinen vuokrasopimus väliaikaisista tiedoista ja valitse sitten **Vertaile ja tarkastele raporttia \> Erojen raportti**.
 
 > [!NOTE]
-> Jos haluat vahvistaa useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Kyselyt ja raportit \> Erojen raportti** ja valitse **Vertaa**.
+> Jos haluat vertailla useita vuokrasopimuksia kerralla, siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Kausittainen** ja valitse **Vertaa**. 
 
 ## <a name="set-up-update-fields"></a>Kenttien päivittämisen määrittäminen
 
@@ -82,3 +80,6 @@ Jos käytät vuokrauksen tuonnin kehystä vuokrasopimusten päivittämisessä ja
 
 1. Siirry kohtaan **Resurssin vuokraus \> Vuokrauksen tuonnin kehys \> Asetus \> Päivitä kenttien valinta**.
 2. Valitse näkyviin tulevalla sivulla päivitettävät kentät ja siirrä ne sitten **Valitut kentät** -luetteloon vihreän nuolen avulla. Vain **Valitut kentät** -luettelossa olevat kentät voidaan päivittää käyttämällä vuokrauksen tuonnin ohjelmaa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

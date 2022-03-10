@@ -1,7 +1,7 @@
 ---
-title: Pääsuunnittelun asetusten ohjattu toiminto
-description: Tässä ohjeaiheessa käsitellään erilaisia pääsuunnittelun määrittämisessä käytettäviä tärkeitä strategioita ja parametreja.
-author: t-benebo
+title: Ohjattu pääsuunnittelun asennus (sisältää videon)
+description: Tässä aiheessa käsitellään pääsuunnittelun määrittämistä suorittamaan pääsuunnittelun ohjattu asennus.
+author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453184a3fed567b3a09e5e45e7f904bcf855dd6d
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829687"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937630"
 ---
 # <a name="master-planning-setup-wizard"></a>Pääsuunnittelun asetusten ohjattu toiminto
 
@@ -45,13 +45,13 @@ Ohjatun toiminnon ensimmäisellä sivulla kysytään yrityksesi erityisistä vaa
 
 Jos laskettujen säikeiden määrä ylittää 75 prosenttia käytettävissä olevasta säikeiden määrästä, se on rajattu 75 prosenttiin kunkin asiakkaan käytettävissä olevien säikeiden määrästä. (Kullekin asiakkaalle määritetään käytettävissä olevien säikeiden määrä.)
 
-Katso lisätietoja kohdasta [Säikeiden määrä](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+Katso lisätietoja kohdasta [Säikeiden määrä](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Myyntirakenteen koko
 
 Nipun kooksi asetetaan arvo **1**. Tämä arvo on usein paras arvo, koska se auttaa parantamaan pääsuunnittelun suorituskykyä.
 
-Lisätietoja on kohdassa [Lisätyöaseman tehtävänipun tehtävien määrä](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Lisätietoja on kohdassa [Lisätyöaseman tehtävänipun tehtävien määrä](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Vahvistavan nipun koko
 
@@ -64,7 +64,7 @@ Nipun laskenta = (suunniteltujen tilausten määrä × (vahvistuksen aikaraja ÷
 
 Välimuistin kooksi asetetaan arvo **Maksimi**. Tämä arvo on usein paras arvo, koska se auttaa parantamaan pääsuunnittelun suorituskykyä.
 
-Lisätietoja on kohdassa [Ajan kohdistaminen työnipun töihin](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Lisätietoja on kohdassa [Ajan kohdistaminen työnipun töihin](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Valmistuksen asetukset
 
@@ -88,7 +88,7 @@ Tämän sivun jäljellä olevat kysymykset ja niiden vastaukset noudattavat sama
 - **Kyllä, kuten määritetty tässä pääsuunnitelmassa** – **Ennustesuunnitelma (aikaraja )** -asetukseksi määritetään **Kyllä**. Päivien määrä, jonka syötät, käytetään ja se ohittaa arvot, jotka on määritetty kattavuusryhmissä.
 - **Kyllä, kuten määritetty kattavuusryhmässä** – **Ennustesuunnitelma (aikaraja )** -asetukseksi määritetään **Ei**.
 
-Lisätietoja kohdassa [Töiden ajoitus](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Lisätietoja kohdassa [Töiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Aikataulutusvaihtoehdot
 
@@ -99,7 +99,7 @@ Vastauksesi ensimmäiseen kysymykseen tällä sivulla ("Pitääkö ajoittaa yksi
 - **Kyllä** – työn aikataulutusta käytetään.
 - **Ei** – työvaiheiden ajoitusta käytetään.
 
-Lisätietoja: [Työvaiheiden ajoitus](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) ja [Töiden ajoitus](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Lisätietoja: [Työvaiheiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) ja [Töiden ajoitus](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Kysynnän ja tarjonnan päivitykset
 
