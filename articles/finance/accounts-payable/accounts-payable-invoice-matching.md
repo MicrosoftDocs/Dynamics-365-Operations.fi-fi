@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "27361"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7ffcd731b127b9a51551d4fe966dcfd69a34e54
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2959df58dbde71ba516c1a230e64d38b885c23f5
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984074"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358261"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Ostoreskontran laskujen täsmäytys – yleiskatsaus
 
@@ -36,24 +36,24 @@ Määrität esimerkiksi ostotilauksen, joka sisältää yhden rivinimikkeen. Riv
 
 Tuhannen pariston lasku saapuu, ja laskussa paristojen yksikköhinta on 1,10. Yrityksessäsi sallitaan viiden prosentin nettoyksikköhinnan hintatoleranssi tämän luokan nimikkeille. 1,05 olisi hyväksyttävä hinta, mutta 1,10:tä ei voi hyväksyä. Kun määrität laskun tiedot, hintojen vastaavuudessa havaitaan ristiriita ja voit tallentaa laskun odottamaan, että ristiriita ratkaistaan.
 
-Voit käyttää seuraavia ostoreskontran laskujen täsmäytystyyppejä:
+Voit käyttää seuraavia **Ostoreskontran laskujen täsmäytys** -tyyppejä:
 
--   Laskusummien täsmäytys – Täsmäytä laskun kokonaissummat ostotilauksen kokonaissummiin. Tämä laskun täsmäytystyyppi sisältää vähiten tietoja, joten voit määrittää tällä asetuksella ohjausobjektit, jotka minimoivat henkilökunnalta laskujen täsmäytystietojen tarkistamiseen kuluvan ajan.
--   Kaksisuuntainen täsmäytys – täsmäytä laskun hintatiedot ostotilauksen hintatietojen kanssa.
--   Kolmisuuntainen täsmäytys – Täsmäytä laskun hintatiedot ostotilauksen hintatietojen kanssa. Täsmäytä myös laskun määrätiedot laskuun valittujen tuotteen vastaanottojen määrätietoihin.
--   Kulujen täsmäytys – täsmäytä laskun kulutiedot (summat) ostotilauksen kulutietoihin (summiin).
+-   **Laskusummien täsmäytys** – Laskun kokonaissummat täsmäytetään ostotilauksen kokonaissummiin. Tämä laskun täsmäytystyyppi sisältää vähiten tietoja, joten voit määrittää tällä asetuksella ohjausobjektit, jotka minimoivat henkilökunnalta laskujen täsmäytystietojen tarkistamiseen kuluvan ajan.
+-   **Kaksisuuntainen täsmäytys** – täsmäytä laskun hintatiedot ostotilauksen hintatietojen kanssa.
+-   **Kolmisuuntainen täsmäytys** – Täsmäytä laskun hintatiedot ostotilauksen hintatietojen kanssa. Täsmäytä myös laskun määrätiedot laskuun valittujen tuotteen vastaanottojen määrätietoihin.
+-   **Kulujen täsmäytys** – laskun kulutiedot (summat) täsmäytetään ostotilauksen kulutietoihin (summiin).
 
 > [!NOTE]
 > Laskun muunlainen oikeellisuustarkistus voidaan suorittaa loppuun käyttämällä toimittajan laskukäytäntöjä. 
 
 Kaksi- ja kolmisuuntainen täsmäytys täsmäävät aina hintatiedot yksikköhinnalla. Voit myös määrittää nämä vastaavuuskäytännöt täsmäämään hintatiedot yhteishinnalla.
--   Nettoyksikköhinnan täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettoyksikköhintaa ostotilauksen vastaavaan nettoyksikköhintaan. Nettoyksikköhinta määritetään seuraavalla kaavalla: rivin nettosumma jaettuna rivin määrällä
--   Kokonaishintojen täsmäytys – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettosummaa (kokonaishintaa) ostotilauksen vastaavaan nettosummaan. Nettosumma määritetään seuraavalla kaavalla: *(yksikköhinta \* rivimäärä) + rivin kulut vähennettynä rivialennuksilla* Kun kokonaishintoja täsmäytetään prosenttiosuuden mukaan, järjestelmä vertaa arvoja tapahtumavaluutan avulla. Kun kokonaishintoja täsmäytetään summan mukaan, järjestelmä vertaa arvoja kirjanpitovaluutan avulla. Kun laskutat ostotilausriviä osittain, hinnan ja kokonaissumman täsmäytyksen oikeellisuustarkistus tapahtuu rivin viimeisessä laskussa. 
+-   **Nettoyksikköhinnan täsmäytys** – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettoyksikköhintaa ostotilauksen vastaavaan nettoyksikköhintaan. Nettoyksikköhinta määritetään seuraavalla kaavalla: rivin nettosumma jaettuna rivin määrällä
+-   **Kokonaishintojen täsmäytys** – Täsmäytä kaksi- tai kolmisuuntaisen täsmäytyksen hintatiedot vertaamalla laskun kunkin rivin nettosummaa (kokonaishintaa) ostotilauksen vastaavaan nettosummaan. Nettosumma määritetään seuraavalla kaavalla: *(yksikköhinta \* rivimäärä) + rivin kulut vähennettynä rivialennuksilla* Kun kokonaishintoja täsmäytetään prosenttiosuuden mukaan, järjestelmä vertaa arvoja tapahtumavaluutan avulla. Kun kokonaishintoja täsmäytetään summan mukaan, järjestelmä vertaa arvoja kirjanpitovaluutan avulla. Kun laskutat ostotilausriviä osittain, hinnan ja kokonaissumman täsmäytyksen oikeellisuustarkistus tapahtuu rivin viimeisessä laskussa. 
 
-Yleensä laskun täsmäytyslaskelmat suoritetaan automaattisesti, kun muokkaat toimittajan laskuja Toimittajan lasku -sivulla. Laskujen täsmäytys voidaan suorittaa myös tarvittaessa. Yrityksen tarvittaessa tehtävää laskun täsmäytystä ohjataan Laskun oikeellisuustarkistus -välilehden Ostoreskontran parametrit -sivun Päivitetäänkö laskun otsikon tila automaattisesti -kohdasta. Laskun täsmäytys voidaan suorittaa myös laskun tarkistusprosessin osana. Voit tarkastella laskun täsmäytyksen tuloksia Toimittajan lasku -sivulla ja liittyvillä laskun täsmäytyksen sivuilla.
+Yleensä laskun täsmäytyslaskelmat suoritetaan automaattisesti, kun muokkaat toimittajan laskuja **Toimittajan lasku** -sivulla. Laskujen täsmäytys voidaan suorittaa myös tarvittaessa. Yrityksen tarvittaessa tehtävää laskun täsmäytystä ohjataan **Laskun oikeellisuustarkistus** -välilehden **Ostoreskontran parametrit** -sivun **Päivitetäänkö laskun otsikon tila automaattisesti** -kohdasta. Laskun täsmäytys voidaan suorittaa myös laskun tarkistusprosessin osana. Voit tarkastella laskun täsmäytyksen tuloksia **Toimittajan lasku** -sivulla ja liittyvillä laskun täsmäytyksen sivuilla.
 
 ## <a name="invoice-totals-matching"></a> Laskusummien täsmäytys
-Voit käyttää laskusummien täsmäytystä varmistamaan, että laskun kokonaissummat eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssin. Kuutta kokonaissumma verrataan Laskusummien täsmäytyksen tiedot -sivulla, kuten seuraavassa taulussa. Jos laskusummien täsmäytyksen sallittu toleranssi on 20 %, kokonaisalennussumman 100 %:n varianssia pidetään täsmäytysristiriitana.
+Voit käyttää laskusummien täsmäytystä varmistamaan, että laskun kokonaissummat eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssin. Kuutta kokonaissumma verrataan **Laskusummien täsmäytyksen tiedot** -sivulla, kuten seuraavassa taulussa. Jos laskusummien täsmäytyksen sallittu toleranssi on 20 %, kokonaisalennussumman 100 %:n varianssia pidetään täsmäytysristiriitana.
 
 | Yhteensä-kenttä    | Toteutunut laskusumma | Odotettu laskusumma | Varianssiprosentti | Täsmäytyksen tila |
 |----------------|----------------------|------------------------|---------------------|--------------|
@@ -64,7 +64,7 @@ Voit käyttää laskusummien täsmäytystä varmistamaan, että laskun kokonaiss
 | Pyöristys      | 0,00                 | 0,00                   | 0 %                  | Hyväksytty       |
 | Laskun summa | 699,88               | 687,50                 | 2 %                  | Hyväksytty       |
 
-Yrityksen laskun täsmäytystä ohjataan Ostoreskontran parametrit -sivun Täsmäytä laskusummat -asetuksella. Täsmäytys suoritetaan odotetuissa laskusummissa ja toteutuneissa laskusummissa. Odotetut laskusummat lasketaan ostotilauksen hintojen, maksujen ja arvolisäverotietojen sekä laskun määrien perusteella.
+Yrityksen laskun täsmäytystä ohjataan **Ostoreskontran parametrit** -sivun **Täsmäytä laskusummat** -asetuksella. Täsmäytys suoritetaan odotetuissa laskusummissa ja toteutuneissa laskusummissa. Odotetut laskusummat lasketaan ostotilauksen hintojen, maksujen ja arvolisäverotietojen sekä laskun määrien perusteella.
 
 ## <a name="two-way-price-totals-matching"></a> Kaksisuuntainen kokonaishintojen täsmäytys
 Käytä kaksisuuntaista täsmäytystä varmistamaan, että ostotilauksen hintatietojen ja laskun välinen varianssi on hyväksyttävissä rajoissa. Voit verrata laskun kunkin rivin nettosummien ja kaikkien odottavien ja aiemmin kirjattujen laskurivien hintatietoja vastaavan ostotilausrivin nettosummaan. Tätä kutsutaan kokonaishintojen täsmäytykseksi. 
@@ -74,33 +74,33 @@ Kokonaishintojen täsmäytys voi perustua prosenttiosuuteen, summaan tai prosent
 Jos kokonaisostohinnan toleranssiprosentti on määritetty, viittä kenttää verrataan, kuten seuraavassa taulussa. Koska kokonaisostohinnan toleranssiprosenttia on 10 %, kokonaishinnan 50 %:n varianssiprosentti ilmaisee täsmäytysristiriidan.
 
 | Täsmäytyksen tila | Laskuta nettosumma | Odotettu nettosumma | Ei-vastaava kokonaisostohinta (varianssisumma) | Ei-vastaava ostohinnan kokonaisprosentti (varianssiprosentti) | Ostohinnan kokonaistoleranssiprosentti |
-|--------------|--------------------|---------------------|--------------------------------------------------|-----------------------------------------------------------------|----------------------------------------|
-| Hyväksytty       | 105,00             | 100,00              | 5,00                                             | 5 %                                                              | 10 %                                    |
-| Epäonnistui       | 150,00             | 100,00              | 50,00                                            | 50 %                                                             | 10 %                                    |
+|--------------|--------------------|---------------------|--------------------------------------------------|--------------------------------|---------------------------|
+| Hyväksytty       | 105,00             | 100,00              | 5,00                                             | 5 %                             | 10 %                 |
+| Epäonnistui       | 150,00             | 100,00              | 50,00                                            | 50 %                            | 10 %                     |
 
 Jos kokonaisostohinnan toleranssisumma on määritetty, viittä kenttää verrataan, kuten seuraavassa taulussa. Koska kokonaisostohinnan toleranssisumma on 100,00, kokonaishinnan 105,00 %:n varianssisumma ilmaisee täsmäytysristiriidan.
 
 | Täsmäytyksen tila | Laskuta nettosumma | Odotettu nettosumma | Ei-vastaava kokonaisostohinta (varianssisumma) | Ei-vastaava kokonaisostohinta kirjanpitovaluutassa (varianssisumma) | Ostohinnan kokonaistoleranssi |
-|--------------|--------------------|---------------------|--------------------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Hyväksytty       | 150,00             | 100,00              | 50,00                                            | 50,00                                                                   | 100,00                         |
-| Epäonnistui       | 205,00             | 100,00              | 105,00                                           | 105,00                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------------------------|-------------------------------|--------------------------------|
+| Hyväksytty       | 150,00             | 100,00              | 50,00                                            | 50,00                    | 100,00                         |
+| Epäonnistui       | 205,00             | 100,00              | 105,00                                           | 105,00                  | 100,00                         |
 
 Jos kokonaishintojen täsmäytys on määritetty prosenttitoleranssilla ja toleranssisummalla, jota joskus kutsutaan summaksi, jota ei saa ylittää, molemmat toleranssit otetaan huomioon arvioitaessa, onko rivillä täsmäytysristiriita. Jos prosentti tai summa ylittää toleranssin, kuten seuraavan taulun 150,00 ja 205,00 riveillä, rivillä on täsmäytysristiriita.
 
 | Täsmäytyksen tila | Laskuta nettosumma | Odotettu nettosumma | Ei-vastaava ostohinnan kokonaisprosentti (varianssiprosentti) | Ostohinnan kokonaistoleranssiprosentti | Ei-vastaava kokonaisostohinta kirjanpitovaluutassa (varianssisumma) | Ostohinnan kokonaistoleranssi |
-|--------------|--------------------|---------------------|-----------------------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Hyväksytty       | 105,00             | 100,00              | 5 %                                                              | 10 %                                    | 5,00                                                                    | 100,00                         |
-| Epäonnistui       | 150,00             | 100,00              | 50 %                                                             | 10 %                                    | 50,00                                                                   | 100,00                         |
-| Epäonnistui       | 205,00             | 100,00              | 105 %                                                            | 10 %                                    | 105,00                                                                  | 100,00                         |
+|--------------|--------------------|---------------------|-----------------------------|------------------|----------------------------------|--------------------------------|
+| Hyväksytty       | 105,00             | 100,00              | 5 %                     | 10 %                         | 5,00           | 100,00                         |
+| Epäonnistui       | 150,00             | 100,00              | 50 %                   | 10 %                     | 50,00            | 100,00                         |
+| Epäonnistui       | 205,00             | 100,00              | 105 %                 | 10 %                      | 105,00                                  | 100,00                         |
 
-Yrityksen kaksisuuntaista vastaavuutta ohjataan Ostoreskontran parametrit -sivun Rivien vastaavuuskäytäntö -kentällä. Voit valita Salli vastaavuuskäytännön ohitus -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kaksisuuntaisen täsmäytyksen Vastaavuuskäytäntö-sivulla ja tietyn ostotilauksen Ostotilaus-sivulla.
+Yrityksen kaksisuuntaista vastaavuutta ohjataan **Ostoreskontran parametrit** -sivun **Rivien vastaavuuskäytäntö** -kentällä. Voit valita **Salli vastaavuuskäytännön ohitus** -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kaksisuuntaisen täsmäytyksen **Vastaavuuskäytäntö**-sivulla ja tietyn ostotilauksen **Ostotilaus**-sivulla.
 
-Yrityksen kokonaishinnan täsmäytystä ohjataan Ostoreskontran parametrit -sivun Täsmäytä kokonaishinnat -kentästä. Samalla sivulla määritetään myös kokonaisostohinnan toleranssiprosentti ja toleranssisumma (summa, jota ei saa ylittää).
+Yrityksen kokonaishinnan täsmäytystä ohjataan **Ostoreskontran parametrit** -sivun **Täsmäytä kokonaishinnat** -kentästä. Samalla sivulla määritetään myös kokonaisostohinnan toleranssiprosentti ja toleranssisumma (summa, jota ei saa ylittää).
 
 ## <a name="two-way-net-unit-price-matching"></a> Kaksisuuntainen nettoyksikköhinnan täsmäytys
 Käytä kaksisuuntaista täsmäytystä varmistamaan, että ostotilauksen hintatietojen ja laskun välinen varianssi on hyväksyttävissä rajoissa. Voit verrata laskun kunkin nimikkeen nettoyksikköhinnan hintatietoja. Tätä kutsutaan nettoyksikköhinnan täsmäytykseksi. 
 
-Yhdeksää rivisummaa verrataan Laskusummien täsmäytyksen tiedot -sivulla, kuten seuraavassa taulussa. Jos nettoyksikköhinnan täsmäytyksen sallittu hintatoleranssi on 10 %, nettoyksikköhinnan 22,61 %:n varianssia pidetään täsmäytysristiriitana.
+Yhdeksää rivisummaa verrataan **Laskusummien täsmäytyksen tiedot** -sivulla, kuten seuraavassa taulussa. Jos nettoyksikköhinnan täsmäytyksen sallittu hintatoleranssi on 10 %, nettoyksikköhinnan 22,61 %:n varianssia pidetään täsmäytysristiriitana.
 
 | Rivi-kenttä                    | Laskun arvo | Ostotilauksen arvo | Varianssiprosentti | Täsmäytyksen tila |
 |-------------------------------|---------------|----------------------|---------------------|--------------|
@@ -114,9 +114,9 @@ Yhdeksää rivisummaa verrataan Laskusummien täsmäytyksen tiedot -sivulla, kut
 | Nettosumma                    | 271,60        | 221,52               | 22,61 %              | Epäonnistui       |
 | Nettoyksikköhinta                | 67,9000       | 55,3800              | 22,61 %              | Epäonnistui       |
 
-Yrityksen kaksisuuntaista vastaavuutta ohjataan Ostoreskontran parametrit -sivun Rivien vastaavuuskäytäntö -kentällä. Voit valita Salli vastaavuuskäytännön ohitus -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kaksisuuntaisen täsmäytyksen Vastaavuuskäytäntö-sivulla ja tietyn ostotilauksen Ostotilaus-sivulla. 
+Yrityksen kaksisuuntaista vastaavuutta ohjataan **Ostoreskontran parametrit** -sivun **Rivien vastaavuuskäytäntö** -kentällä. Voit valita **Salli vastaavuuskäytännön ohitus** -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kaksisuuntaisen täsmäytyksen **Vastaavuuskäytäntö**-sivulla ja tietyn ostotilauksen **Ostotilaus**-sivulla. 
 
-Yrityksen nettoyksikköhinnan täsmäytystä ohjataan Ostoreskontran parametrit -sivun Ota käyttöön laskujen täsmäytyksen vahvistus -kentästä. Nettoyksikköhinnan toleranssiprosentit voidaan määrittää nimikkeille, nimikeryhmille, toimittajille, toimittajaryhmille sekä nimikkeen ja toimittajan yhdistelmille tai yritykselle Hintatoleranssit-sivulla.
+Yrityksen nettoyksikköhinnan täsmäytystä ohjataan **Ostoreskontran parametrit** -sivun **Ota käyttöön laskujen täsmäytyksen vahvistus** -kentästä. Nettoyksikköhinnan toleranssiprosentit voidaan määrittää nimikkeille, nimikeryhmille, toimittajille, toimittajaryhmille sekä nimikkeen ja toimittajan yhdistelmille tai yritykselle **Hintatoleranssit**-sivulla.
 
 ## <a name="two-way-price-totals-matching-and-net-unit-price-matching"></a> Kaksisuuntainen kokonaishintojen täsmäytys ja nettoyksikköhintojen täsmäytys
 Voit käyttää kokonaishintojen ja nettoyksikköhintojen täsmäytystä yhdessä. Tässä esimerkissä oletetaan seuraavat määritykset:
@@ -162,10 +162,10 @@ Samaa rivisummaa verrataan Laskusummien täsmäytyksen tiedot -sivulla kuin kaks
 | Laskun määrä               | 4,00          |              |
 | Kohdistetut tuotteen vastaanotot yhteensä | 0,00          | Epäonnistui       |
 
-Yrityksen kolmisuuntaista vastaavuutta ohjataan Ostoreskontran parametrit -sivun Rivien vastaavuuskäytäntö -kentällä. Voit valita Salli vastaavuuskäytännön ohitus -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kolmisuuntaisen täsmäytyksen Vastaavuuskäytäntö-sivulla ja tietyn ostotilauksen Ostotilaus-sivulla.
+Yrityksen kolmisuuntaista vastaavuutta ohjataan **Ostoreskontran parametrit** -sivun **Rivien vastaavuuskäytäntö** -kentällä. Voit valita **Salli vastaavuuskäytännön ohitus** -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kolmisuuntaisen täsmäytyksen **Vastaavuuskäytäntö**-sivulla ja tietyn ostotilauksen **Ostotilaus**-sivulla.
 
 ## <a name="charges-matching"></a> Kulujen täsmäytys
-Voit käyttää kulujen täsmäytystä varmistamaan, että kulut eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssiprosentin. Kutakin laskussa ja ostotilauksessa käytettävän kulukoodin kokonaissummaa verrataan Vertaa kulujen arvoja - lasku -sivulla, kuten seuraavassa taulussa. Jos kulukoodin täsmäytyksen sallittu toleranssi on 25 %, käyttöoikeusmaksujen koodin 99 999 999 999,99 %:n varianssia pidetään täsmäytysristiriitana.
+Voit käyttää kulujen täsmäytystä varmistamaan, että kulut eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssiprosentin. Kutakin laskussa ja ostotilauksessa käytettävän kulukoodin kokonaissummaa verrataan **Vertaa kulujen arvoja - lasku:** -sivulla, kuten seuraavassa taulussa. Jos kulukoodin täsmäytyksen sallittu toleranssi on 25 %, **käyttöoikeusmaksujen** koodin 99 999 999 999,99 %:n varianssia pidetään täsmäytysristiriitana.
 
 > [!NOTE] 
 > Varianssiprosentti 99 999 999 999,99 % tarkoittaa, että ostotilaukseen perustuva odotettu summa on nolla ja että laskun toteutunut summa on nolla. 
@@ -176,10 +176,10 @@ Voit käyttää kulujen täsmäytystä varmistamaan, että kulut eivät poikkea 
 | Hyväksytty               | Rahti              | 200                           | 200                             | 0               | 0 %                  | 25 %                  |
 | Epäonnistui               | Nopeuta             | 4                             | 2                               | 2               | 100 %                | 25 %                  |
 
-Yrityksen kulujen täsmäytystä ohjataan Ostoreskontran parametrit -sivun Täsmäytä kulut -asetuksella. Voit määrittää kulujen varianssin toleranssiprosentin Kulutoleranssit-sivulla.
+Yrityksen kulujen täsmäytystä ohjataan **Ostoreskontran parametrit** -sivun **Täsmäytä kulut** -asetuksella. Voit määrittää kulujen varianssin toleranssiprosentin **Kulutoleranssit**-sivulla.
 
 > [!NOTE]
-> Kulujen täsmäytys suoritetaan vain kulujenkoodeille, joille on valittu Vertaa ostotilauksen ja laskun arvoja -asetus Kulujen koodit -sivulla.
+> Kulujen täsmäytys suoritetaan vain kulujenkoodeille, joille on valittu **Vertaa ostotilauksen ja laskun arvoja** -asetus **Kulujen koodit** -sivulla.
 
 ## <a name="related-functionality"></a> Liittyvät toiminnot
 Toimittajan laskut perustuvat usein tuotteen vastaanottoihin, jotka ilmaisevat toteutuneita lähetyksiä eivätkä ostotilauksia. Joskus laskutetut summat eivät vastaa ostotilauksen summia, ja joskus toimitetut määrät eivät vastaa laskutettuja määriä. Voit hallita näitä tietoja seuraavilla tavoilla.

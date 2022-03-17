@@ -2,7 +2,7 @@
 title: Yhdistä oheislaitteet myyntipisteeseen (POS)
 description: Tässä aiheessa käsitellään oheislaitteiden liittämistä Retail POS:hon.
 author: BrianShook
-ms.date: 06/20/2017
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779515"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370948"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Yhdistä oheislaitteet myyntipisteeseen (POS)
 
@@ -58,21 +58,15 @@ Cloud POS on selainpohjainen myyntipiste. Koska sitä käytetään selaimessa, C
 
 ### <a name="hardware-profile"></a>Laiteprofiili
 
-Siirtyminen: Valitse **Kauppa** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **POS-profiilit** &gt; **Laiteprofiilit**.
+Siirtyminen: **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Laiteprofiilit**.
 
-Laitteistoprofiili tunnistaa myyntipisteen kassakoneeseen tai laiteasemaan liitetyt laitteet. Laitteistoprofiililla määritetään myös maksun käsittelyprofiilit, joita käytetään tiedonsiirrossa maksuohjelmiston kehityspaketin (SDK) kanssa. (Maksu-SDK otetaan käyttöön laiteaseman osana.)
+Laitteistoprofiili tunnistaa myyntipisteen kassakoneeseen integroidun tai jaetun laiteaseman kautta liitetyt laitteet. Laitteistoprofiililla määritetään myös maksun käsittelyprofiilit, joita käytetään tiedonsiirrossa maksuohjelmiston kehityspaketin (SDK) kanssa. Maksu-SDK otetaan käyttöön laiteaseman osana.
 
-### <a name="hardware-station"></a>Hardware station
+### <a name="hardware-station"></a>Laiteasema
 
-Selaus: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät**. Valitse ensin myymälä ja sitten **Laiteasemat**-pikavälilehti.
+Siirtyminen: Siirry kohtaan **Retail ja Commerce \> Kanavat \> Myymälät \> Kaikki myymälät**, valitse myymälä ja sitten **Hardware stations** -välilehti.
 
 Laiteasema on liiketoimintalogiikan esiintymä, jolla POS-oheislaitteita käytetään. Laiteasema asennetaan automaattisesti yhdessä MPOS:n kanssa. Laiteasema voidaan vaihtoehtoisesti asentaa erillisenä osana, jota MPOS tai Cloud POS käyttävät verkkopalvelusta. Laiteasema on määritettävä kanavatasolla.
-
-### <a name="hardware-station-profile"></a>Laiteaseman profiili
-
-Siirtyminen: Valitse **Kauppa** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **POS-profiilit** &gt; **Laiteaseman profiilit**.
-
-Siinä missä kanavatasolla määritetty laiteasema sisältää esiintymäkohtaisia tietoja, kuten laiteaseman URL-osoitteen, laiteaseman profiili sisältää joko staattisia tietoja tai useiden laiteasemien kesken jaettuja tietoja. Staattisia tietoja ovat esimerkiksi käytettävä portti, laiteasemapaketti ja laiteaseman profiili. Staattisia tietoja ovat myös kuvaus käyttöönotettavan laiteaseman tyypistä, joka voi olla esimerkiksi **Siirry kassalle** tai **Palautukset**, sen mukaan minkälaista laitetta kukin laiteasema edellyttää.
 
 ## <a name="scenarios"></a>Skenaariot
 
@@ -84,32 +78,29 @@ Jos haluat liittää MPOS:n myyntipisteen oheislaitteisiin perinteistä kiinteä
 
 Synkronoi muutokset laiteprofiilin määrityksen jälkeen kanavatietokantaan käyttämällä **Kassakoneet**-jakeluaikataulua. Pääset jakeluaikatauluihin valitsemalla **Retail ja Commerce** &gt; **Retailin ja Commercen IT** &gt; **Jakeluaikataulu**. 
 
-Määritä kanavaan seuraavaksi paikallinen laiteasema. Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät** ja sitten myymälä. 
+Määritä kanavaan seuraavaksi erillinen laiteasema. Mene kohtaan **Retail ja Commerce \> Kanavat \> Myymälät \> Kaikki myymälät** ja valitse sitten myymälä. 
 
-Lisää sitten laiteasema valitsemalla **Laiteasemat**-pikavälilehdessä **Lisää**. Kirjoita kuvaus, anna isäntänimeksi **localhost** ja synkronoi sitten kanavan muutokset käyttämällä **Kanavan määritys** -jakeluaikataulua. Pääset jakeluaikatauluihin valitsemalla **Retail ja Commerce** &gt; **Retailin ja Commercen IT** &gt; **Jakeluaikataulu**. 
+Lisää sitten laiteasema valitsemalla **Laiteasemat**-pikavälilehdessä **Lisää**. Valitse laiteasematyypiksi **erillinen** ja kirjoita sitten kuvaus. **Laiteprofiili**-kentän voi jättää tyhjäksi, koska tässä skenaariossa käytettävä laiteprofiili tulee suoraan kassapäätteestä. Synkronoi sitten muutokset kanavaan suorittamalla **Kanavan määritys** -jakeluajoitusta. Pääset jakeluaikatauluihin valitsemalla **Retail ja Commerce \> Retailin ja Commercen IT \> Jakeluaikataulu**. 
 
-Valitse lopuksi MPOS:ssä **Valitse laiteasema** -toiminnolla **localhost**-laiteasema. Valitse laiteaseman asetukseksi **Aktiivinen**. Tässä skenaariossa käytettävä laiteprofiili on haettava myyntipisteen kassakoneesta. Laiteaseman profiilia ei tarvita tässä skenaariossa.
+Kun olet MPOS-päätteessä, valitse **Valitse laiteasema** -toiminnon avulla laiteasema, joka vastaa aiemmin kuvattua arvoa, ja määritä laiteaseman tilaksi **Aktiivinen**. 
 
 > [!NOTE]
-> Osa laiteprofiilin muutoksia, kuten kassojen muutokset, edellyttää uuden vuoron avaamista sen jälkeen, kun muutokset on synkronoitu kanavaan.
->
-> Cloud POS:n on käytettävä erillistä laiteasemaa tiedonsiirtoon oheislaitteiden kanssa.
+> - Osa laiteprofiilin muutoksia, kuten kassojen muutokset, edellyttää uuden vuoron avaamista sen jälkeen, kun muutokset on synkronoitu kanavaan.
+> - Cloud POS:n on käytettävä erillistä laiteasemaa tiedonsiirtoon oheislaitteiden kanssa.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS tai Cloud POS ja erillinen laiteasema
 
 [![Jaetut oheislaitteet.](./media/shared-300x254.png)](./media/shared.png)
 
-Tässä skenaariossa MPOS- ja Cloud POS -asiakasohjelmat jakavat laiteaseman. Tämä skenaario edellyttää laiteaseman luontia määrittämään ladattavan paketti, portti ja laiteaseman käyttämä laiteprofiili. Pääset laiteaseman profiiliin valitsemalla **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen määritys** &gt; **Myyntipisteprofiilit** &gt; **Laiteaseman profiilit**. 
+Tässä skenaariossa MPOS- ja Cloud POS -asiakasohjelmat jakavat erillisen laiteaseman. Tämä skenaario edellyttää jaetun laiteaseman luontia ja määritä ladattava paketti, portti ja laiteaseman käyttämä laiteprofiili. Voit määrittää uuden laiteaseman valitsemalla **Laiteasemat**-välilehden tietyssä kanavassa (**Retail ja Commerce \> Kanavat \> Myymälät \> Kaikki myymälät**) ja lisäämällä uuden **Jaettu**-tyypin laiteaseman. 
 
-Kun olet luonut laiteasemaprofiilin, siirry tiettyyn kanavaan (**Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät**) ja lisää uusi laiteasema. Tee tämän uuden laiteaseman yhdistämismääritys aiemmin luotuun laiteaseman profiiliin. 
+Anna seuraavaksi kuvaus, jonka avulla kassa tunnistaa laiteaseman. Anna **Isännän nimi** -kenttään isäntäkoneen URL-osoite seuraavassa muodossa: `https://<MachineName:Port>/HardwareStation`. (Vaihda **&lt;MachineName:Port&gt;** -kohtaan laiteaseman fyysisen koneen nimi.) Jos kyse on erillisestä laite-asemasta, määritä myös sähköisen rahansiirron (EFT) päätetunnus. Tämä arvo yksilöi sen sähköisen rahansiirron päätteen, joka on liitettynä laiteasemaan, kun maksuyhdistin on yhteydessä maksupalveluun. 
 
-Anna seuraavaksi kuvaus, jonka avulla kassa tunnistaa laiteaseman. Anna **Isännän nimi** -kenttään isäntäkoneen URL-osoite seuraavassa muodossa: `https://<MachineName:Port>/HardwareStation`. (Vaihda **&lt;MachineName:Port&gt;** -kohtaan laiteaseman fyysisen koneen nimi ja laiteaseman profiilissa määritetty portti.) Jos kyse on erillisestä laite-asemasta, määritä myös sähköisen rahansiirron (EFT) päätetunnus. Tämä arvo yksilöi sen sähköisen rahansiirron päätteen, joka on liitettynä laiteasemaan, kun maksuyhdistin on yhteydessä maksupalveluun. 
-
-Siirry seuraavaksi laiteaseman fyysisestä koneesta kanavaan ja valitse laiteasema. Valitse sitten **Lataa** ja asenna laiteasema. 
+Siirry seuraavaksi laiteasemaa isännöivästä koneesta kanavaan Headquartersissa ja valitse laiteasema. Valitse sitten **Lataa**, kun haluat ladata laiteaseman asennusohjelman ja asentaa laiteaseman. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md). 
 
 Valitse MPOS:ssä tai Cloud POS:ssä seuraavaksi **Valitse laiteasema** -toiminnolla aiemmin asennettu laiteasema. Muodosta suojattu suhde myyntipisteen ja laiteaseman välille valitsemalla **Muodosta laitepari**. Tämä vaihe on suoritettava kerran kullekin myyntipiste- ja laiteasemayhdistelmälle. 
 
-Kun laiteasemalle on muodostettu laitepari, laiteasema aktivoidaan samalla toiminnolla niin kauan kuin sitä käytetään. Tässä skenaariossa laiteprofiili on määritettävä laiteaseman profiilille eikä kassakoneelle. Jos laiteasemalle ei ole jostain syystä määritetty suoraan laiteprofiilia, käytetään kassakoneelle määritettyä laiteprofiilia.
+Kun laiteasemalle on muodostettu laitepari, laiteasema aktivoidaan samalla toiminnolla niin kauan kuin sitä käytetään. Tässä skenaariossa laiteprofiili on määritettävä jaetulle laiteasemalle eikä kassakoneelle. Jos laiteasemalle ei ole jostain syystä määritetty suoraan laiteprofiilia, käytetään kassakoneelle määritettyä laiteprofiilia.
 
 ## <a name="client-maintenance"></a>Asiakasohjelman ylläpito
 
@@ -162,15 +153,15 @@ Toiminnon profiili määritetään myymälätasolla. Sillä määritetään myym
 
 #### <a name="receipt-profiles"></a>Kuittiprofiilit
 
-Kuittiprofiilit määritetään tulostimeen laiteprofiilissa. Niillä määritetään tietyssä tulostimessa tulostettavat kuittityypit. Näissä profiileissa on kuittimuotojen asetukset sekä asetukset, joilla määritetään, tulostetaanko kuitti aina vai pyydetäänkö kassaa päättämään kuitin tulostamisesta. Eri tulostimet voivat myös käyttää eri kuittiprofiileja. Jos esimerkiksi tulostin 1 on kuittien vakiolämpötulostin, joten siinä käytetään pienempiä kuittimuotoja. Tulostin 2 on kuitenkin täysikokoinen kuittitulostin, jolla tulostetaan vain enemmän tilaa tarvitsevat asiakastilauksen kuitit.
+Kuittiprofiilit määritetään tulostimeen laiteprofiilissa. Niillä määritetään tietyssä tulostimessa tulostettavat kuittityypit. Näissä profiileissa on kuittimuotojen asetukset sekä asetukset, joilla määritetään, tulostetaanko kuitti aina vai pyydetäänkö kassaa päättämään kuitin tulostamisesta. Eri tulostimet voivat myös käyttää eri kuittiprofiileja. Jos esimerkiksi tulostin 1 on kuittien vakiolämpötulostin, joten siinä käytetään pienempiä kuittimuotoja. Tulostin 2 on kuitenkin täysikokoinen kuittitulostin, jolla tulostetaan vain enemmän tilaa tarvitsevat asiakastilauksen kuitit. Lisätietoja on kohdassa [Kuittiprofiilin määrittäminen](configure-emailed-receipt-formats.md#configure-a-receipt-profile).
 
 #### <a name="hardware-profiles"></a>Laiteprofiilit
 
-Laiteprofiilit on käsitelty aiemmin tässä artikkelissa asiakasohjelman asetusten osana. Laiteprofiilit määritetään suoraan myyntipisteen kassakoneeseen tai laiteaseman profiiliin. Niillä määritetään tietyn myyntipisteen kassakoneen tai laiteaseman käyttämät laitetyypit. Laiteprofiileilla määritetään myös sähköisen rahansiirron asetukset, joita käytetään tiedonsiirtoon maksu-SDK:n kanssa.
+Laiteprofiilit on käsitelty aiemmin tässä aiheessa asiakasohjelman asetusten osana. Laiteprofiilit liitetään suoraan myyntipisteen kassakoneeseen tai jaettuun laiteasemaan, ja niiden avulla määritetään laitetyypit, joita tietty POS-kassapääte tai laiteasema käyttää. Laiteprofiileilla määritetään myös sähköisen rahansiirron asetukset, joita käytetään tiedonsiirtoon maksu-SDK:n kanssa.
 
 #### <a name="visual-profiles"></a>Visuaaliset profiilit
 
-Visuaaliset profiilit määritetään kassakonetasolla. Niitä määritetään tietyn kassakoneen teema. Profiileissa on käytettävän sovellustyypin (MPOS tai Cloud POS), korostusväri ja -teeman, fonttimallin, kirjautumistaustan ja myyntipisteen taustan asetukset.
+Visuaaliset profiilit määrittävät tietyn kassakoneen teeman ja ne määritetään kassakoneen tasolla. Profiileissa on käytettävän sovellustyypin (MPOS tai Cloud POS), korostusväri ja -teeman, fonttimallin, kirjautumistaustan ja myyntipisteen taustan asetukset. Lisätietoja: [Myyntipisteen (POS) visuaalisten profiilien luominen](tasks/create-pos-visual-profile-2016-02.md). 
 
 ### <a name="custom-fields"></a>Mukautetut kentät
 
@@ -179,10 +170,6 @@ Voit luoda myyntipisteeseen lisättäväksi mukautettuja kenttiä, jotka eivät 
 ### <a name="language-text"></a>Kieliteksti
 
 Voit ohittaa myyntipisteen oletusmerkkijonot käyttämällä kielitekstimerkintöjä. Voit ohittaa myyntipisteen merkkijonon lisäämällä uuden kielitekstirivin. Määritä sitten tunnus, ohitettava oletusmerkkijono ja myyntipisteessä oletusmerkkijonon tilalla näytettävä teksti.
-
-### <a name="hardware-station-profiles"></a>Laiteaseman profiilit
-
-Laiteaseman profiileja on käsitelty aiemmin tässä artikkelissa. Niillä määritetään ei-esiintymäkohtaisia tietoja laiteasemiin.
 
 ### <a name="channel-reports-configuration"></a>Kanavaraporttien konfigurointi
 
@@ -202,6 +189,10 @@ Muita aktivointiin liittyviä tietoja ovat laitteen aktivointitilan vaihtanut ty
 ### <a name="client-data-synchronization"></a>Asiakasohjelman tietojen synkronointi
 
 Kaikki POS-asiakasohjelmaan tehdyt muutokset laitteen aktivointitilan muutoksia lukuun ottamatta on synkronoitava kanavatietokantaan, ennen kuin ne otetaan käyttöön. Voit synkronoida muutokset kanavatietokantaan valitsemalla **Vähittäismyynti ja kauppa** &gt; **Vähittäismyynnin ja kaupan IT** &gt; **Jakeluaikataulu** ja suorittamalla sitten tarvittavan jakeluaikataulun. Jos kyse on asiakasohjelman muutoksista, suorita **Kassakoneet**- ja **Kanavan määritys** -jakeluaikataulut.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 description: Tässä ohjeaiheessa on tietoja sähköisen raportointimuodon suunnittelemiseen PDF-mallin täyttämistä varten.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758285"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367853"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 
@@ -294,6 +294,20 @@ Seuraavassa kuvassa näkyy esimerkki luotavan raportin ensimmäisestä sivusta.
 Seuraavassa kuvassa näkyy esimerkki luotavan raportin toisesta sivusta.
 
 ![Luodun raportin toinen sivu.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>Rajoitukset
+
+Täytettävien kenttien nimien on oltava yksilöllisiä PDF-lomakkeessa, jota aiot käyttää raporttimallina. Jokaista tällaista kenttää varten luodaan muokattavassa ER-muodossa oma muotoelementti, jolla on vastaava nimi, kun PDF-lomake tuodaan. Jos PDF-lomakkeessa on useita kenttiä, joilla on sama nimi, luodaan yksi muotoelementti kentille, joita ei voi täyttää erikseen ajon aikana.
+
+## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>Kun muodostan raportin PDF-muodossa ajamalla ER-muodon, miksi saan seuraavat virheet:  **iref-virtoja ei voi lukea. Nykyinen PDFSharp-toteutus ei voi käsitellä tätä Acrobat 6:n PDF-ominaisuutta.** ja **PDF-tiedoston nimi on aloitettava vinoviivalla (/).**
+
+ER-kehys luo nämä PDF-raportit PDFSharp-kirjaston version 1.5 avulla. Jotkin PDF 1.5 -ominaisuudet (Adobe Reader 6.0) eivät ole vielä käytössä tässä kirjastossa. Siksi PDFSharp ei voi vielä avata joitakin tiedostoja, jotka on merkitty **PDF 1.5 -tiedostoiksi tai uudemmaksi versioksi** ja jotka voivat aiheuttaa kyseiset virheet. Ratkaise ongelma valitsemalla yksi seuraavista ratkaisuista:
+
+-   Kun käytät omaa PDF-mallia: Palauta malli aiempaan Adobe-versioon ja aloita uuden mallin käyttö ER-muodossa.
+-   Kun käytät toisen konfiguraation tarjoajan sinulle jakamaa ER-muotomallia osana ER-ratkaisua: Ota yhteyttä tämän ER-ratkaisun omistajaan ja anna ongelman kuvaus.
+-   Kun käytät PDFSharp-kirjaston aiemman version sisältävää ISV-ratkaisua: Ota yhteyttä ratkaisun omistajaan ja ehdota päivitystä uuteen PDFSharp-versioon.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

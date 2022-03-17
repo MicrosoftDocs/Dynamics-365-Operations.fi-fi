@@ -2,7 +2,7 @@
 title: Luettelo tekstiluokan ER-funktioista
 description: Tässä ohjeaiheessa on tietoja sähköisen raportoinnin (ER) tukemista tekstifunktioista.
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075497"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367764"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Luettelo tekstiluokan ER-funktioista
 
@@ -51,7 +51,7 @@ Sähköisen raportoinnin (ER) tekstifunktioiden avulla voidaan suorittaa toimint
 | [Oikealle](er-functions-text-right.md) | Tämä funktio palauttaa määritetystä luettelosta *merkkijono*-arvon, joka esittää määritetyn määrän merkkejä määritetyn merkkijonon lopusta. |
 | [Teksti](er-functions-text-text.md) | Tämä funktio palauttaa määritetyn *merkkijono*-arvon sen jälkeen, kun se on muunnettu tekstimerkkijonoksi, joka on alustettu nykyisen sovellusesiintymän palvelimen sijaintiasetusten mukaisesti. |
 | [Käännä](er-functions-text-translate.md) | Tämä funktio palauttaa *Merkkijonon* arvon, joka sisältää korvaavan määritetyn tekstin merkkeinä toisen annetun merkkijoukon merkeissä. |
-| [Trim](er-functions-text-trim.md) | Tämä funktio palauttaa määritetyn tekstimerkkijonon *Merkkijono*-arvona sen jälkeen, kun edeltävät ja lopussa olevat välilyönnit on poistettu ja sanojen välissä olevat moninkertaiset välilyönnit on poistettu. |
+| [Trim](er-functions-text-trim.md) | Tämä toiminto palauttaa määritetyn tekstimerkkijonon *merkkijonona*, kun sarkain-, rivinvaihto-, rivisyöte- ja lomakesyötemerkit on korvattu yhdellä välilyönnillä, kun alun ja lopun välilyönnit on lyhennetty ja kun sanojen välistä on poistettu useat välilyönnit. |
 | [Upper](er-functions-text-upper.md) | Tämä funktio palauttaa määritetyn tekstimerkkijonon *Merkkijono*-arvona sen jälkeen, kun se on muunnettu isoiksi kirjaimiksi. |
 
 ## <a name="additional-resources"></a>Lisäresurssit

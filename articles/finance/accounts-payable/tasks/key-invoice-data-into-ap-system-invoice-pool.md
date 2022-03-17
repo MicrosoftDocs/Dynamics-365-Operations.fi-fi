@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc8e8ec224208990563e7c0f5d354bb13bb45fbcd35821e7f980b6cfb2c5a379
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a4768ee6ddbaba8ae5bab5e2f9f7df9239efeb90
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777261"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358286"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>Laskun keskeiset tiedot ostoreskontrajärjestelmään laskupoolin avulla
 
@@ -58,7 +58,7 @@ Tässä aiheessa kuvataan, miten laskurekisteriä käytetään laskujen luomisee
 6. Valitse **Vaihda näyttö**.
 7. Valitse **Ruudukkonäkymä**.
 8. Valitse **Kirjaa**.
-9. Sulje lomake.
+9. Sulje sivu.
 10. Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Toimittajat > Toimittajat**.
 11. Valitse ostotilauksessa mainittu toimittaja. Voit valita esimerkiksi toimittajan **1001**.
 12. Valitse toimintoruudussa **Toimittaja**.

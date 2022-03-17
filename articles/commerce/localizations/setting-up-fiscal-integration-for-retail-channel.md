@@ -2,19 +2,19 @@
 title: Kaupan kirjanpidon integroinnin määrittäminen
 description: Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076960"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388387"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Kaupan kirjanpidon integroinnin määrittäminen
 
@@ -46,6 +46,7 @@ Kirjanpidon integroinnin määritysprosessi sisältää seuraavat tehtävät:
 - Määritä kirjanpidon rekisteröintiprosessi, joka määrittää kirjanpidon rekisteröintivaiheiden järjestyksen sekä kussakin vaiheessa käytettävät kirjanpidon yhdistimet ja kirjanpitoasiakirjojen toimittajat.
 - Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintaprofiileihin.
 - Määritä yhdistimen tekniset profiilit laiteprofiileihin.
+- Määritä yhdistimen tekniset profiilit myyntipisteen laiteprofiileihin tai toimintoprofiileihin.
 
 ### <a name="upload-configurations-of-fiscal-document-providers"></a>Lataa kirjanpitoasiakirjan toimittajien määritykset palvelimeen
 
@@ -161,10 +162,12 @@ Määritä kirjanpidon rekisteröintiprosessiyksiköt myyntipisteen profiileihin
 1. Siirry Commerce headquartersissa **POS-toimintoprofiili** -sivulle (**Vähittäismyynti ja kauppa \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**). 
 1. Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintoprofiiliin.
 1. Valitse ensin **Muokkaa** ja sitten prosessi **Kirjanpidon rekisteröintiprosessi** -välilehden **Prosessin numero** -kentässä.
+1. Valitse **Veropalvelut**-välilehdestä liittimen tekniset profiilit, jossa liittimen sijainti on **Kassakone**.
 1. Siirry **Myyntipisteen laitteistoprofiili** -sivulle (**Retail ja Commerce \> Kanavan asetukset \> Myyntipisteen asetukset \> Myyntipisteen profiilit \> Laiteprofiilit**).
 1. Määritä yhdistimen tekniset profiilit laiteprofiiliin. 
 1. Valitse **Muokkaa** ja lisää sitten rivi **Kirjanpidon oheislaitteet** -välilehdessä. 
 1. Valitse yhdistimen tekninen profiili **Profiilin numero** -kentässä.
+1. Valitse **Kirjanpidon oheislaitteet**-välilehdestä liittimen tekniset profiilit, jossa liittimen sijainti on **Hardware station**.
 
 > [!NOTE]
 > Voit lisätä useita teknisiä profiileja samaan laiteprofiiliin. Laiteprofiilia tai myyntipisteen toimintoprofiilia voi kuitenkin käyttää vain kerran samassa kirjanpidon yhdistinryhmässä.
@@ -175,6 +178,17 @@ Kirjanpidon rekisteröinnin työnkulun määrittää kirjanpidon rekisteröintip
 - Kirjanpitoasiakirjan toimittaja vastaa myös kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen tunnistamisesta. Se yhdistää siihen kirjanpidon yhdistinryhmään sisältyvät yhdistimen toiminnalliset profiilit, joka on määritetty kirjanpidon rekisteröintiprosessin nykyiselle vaiheelle, siihen yhdistimen tekniseen profiilin, joka on määritetty myyntipisteeseen pariliitoksen muodostaneen laiteaseman laiteprofiiliin.
 - Kirjanpitoasiakirjan toimittaja käyttää kirjanpitoasiakirjan toimittajan määrityksen tietojen yhdistämisasetuksia transaktio- tai tapahtumatietojen, kuten verojen ja maksujen, muuntamiseen kirjanpitoasiakirjaa luotaessa.
 - Kun kirjanpitoasiakirjan toimittaja luo kirjanpitoasiakirjan, kirjanpidon yhdistin voi joko lähettää sen sellaisenaan kirjanpidon laitteeseen tai muuntaa sen sarjaksi laitteen ohjelmointirajapinnan komentoja. Valittu vaihtoehto perustuu siihen, miten tietoliikennettä käsitellään.
+
+### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Kassakoneiden määrittäminen kirjanpidon rekisteröintirajoitusten mukaan
+
+Voit valita kassakoneita, joissa verorekisteröinti on kielletty esimerkiksi silloin, kun sinun on toimitettava vain muita kuin verotoimintoja, kuten tuoteluettelohaku, asiakashaku tai tapahtumien luonnoksen luominen näillä laitteilla.
+
+Kassakoneiden määrittämisen kirjanpidon rekisteröintirajoitusten mukaan voit tehdä seuraavasti.
+
+1. Siirry Commerce headquartersissa kohtaan **Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessit**.
+1. Valitse haluttu prosessi.
+1. Valitse **Myyntipisteen kassakoneet ja kirjanpitoprosessin rajoitukset** -välilehti.
+1. Lisää tarpeen mukaan kassakoneita, joissa ja kirjanpitoprosessin rajoitukset.
 
 ### <a name="validate-the-fiscal-registration-process"></a>Verorekisteröintiprosessin tarkistaminen
 

@@ -2,7 +2,7 @@
 title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075419"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384640"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -158,6 +158,7 @@ Joillakin luetteloja sisältävillä sivuilla on käytettävissä **Lisää työ
 
 - Voit lisätä luettelon työtilaan lajittelemalla tai suodattamalla luettelon ensin sivulla niin, että tiedot näkyvät siinä muodossa kuin haluat niiden näkyvän työtilassa. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Luettelo**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit valita työtilan luettelossa näytettävät sarakkeet. Voit myös määrittää työtilan luettelossa käytettävän otsikon.
 - Voit lisätä ruudun työtilaan suodattamalla ensin sivun luettelon niin, että se näyttää vain tiedot, joista tehdään yhteenveto tai joita haluat käyttää nopeasti. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Ruutu**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää työtilan ruudussa käytettävän otsikon. Voit myös määrittää, näytetäänkö määrä ruudussa. Kun ruutu on lisätty työtilaan voit valita, että se avaa kulloisenkin sivun työtilasta. Sen jälkeen voit tarkastella ruutuun liittyvää suodatettua luetteloa.
+    - Alkaen versiosta 10.0.26, jos **Salli käyttäjien valita ja muuttaa ruutukokoja** -ominaisuus on otettu käyttöön,voit valita uudelle ruudulle yhden neljästä käytettävissä olevan **ruudun koosta** **Konfiguroi ruutu** -valintaikkunassa. Tämän ominaisuuden avulla voit myös säätää ruudun kokoa sen jälkeen, kun se on luotu suoraan työtilasta.   
 - Voit lisätä linkin työtilaan suodattamalla ensin sivun luettelon näyttämään vain ne tiedot, joista olet kiinnostunut. (Jos **Tallennetut näkymät** -toiminto on käytössä, et voi jatkaa, ennen kuin olet tallentanut näkymän näillä ehdoilla.) Valitse sitten **Lisää työtilaan**. Valitse ensin työtila ja sitten **Esittely**-kentässä **Linkki**. **Konfiguroi**-asetuksen valinnan jälkeen avautuu valintaikkuna, jossa voit määrittää linkin yhteydessä käytettävän otsikon. Voit myös halutessasi määrittää sen osan otsikon, johon linkki voidaan sijoittaa. Jos osaa ei ole, uusi osa luodaan.
 
 > [!NOTE]
@@ -168,6 +169,9 @@ Kun olet lisännyt luettelon, ruudun tai linkin työtilaan, voit avata kyseisen 
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Yhteenvedon lisääminen työtilasta koontinäyttöön
 
 Joissakin työtiloissa on lukumääräruutuja (ruutuja, joissa on numeroita). On mahdollista, että haluat nähdä kyseiset ruudut myös koontinäytössä. Napsauta työtilassa hiiren kakkospainikkeella **Mukauta** ja valitse ruudun ominaisuusikkunassa **Kiinnitä koontinäyttöön**. Kun seuraavan kerran avaat ja päivität valitun koontinäytön, lukumäärä näkyy kyseisen työtilan siirtymisruudun alapuolella. Voit valita, että tämä lukumäärä, siirtyy suoraan tietoihin, joihin se viittaa.
+
+### <a name="changing-the-size-of-a-tile"></a>Ruudun koon muuttaminen
+Versiosta 10.0.26 alkaen **Salli käyttäjien valita ja muuttaa ruutukokoja** -ominaisuuden avulla käyttäjät voivat muokata muiden kuin KPI-ruutujen kokoa personoinnin avulla. Napsauta työtilassa ruutua hiiren kakkospainikkeella ja valitse sitten **Mukauta**. Valitse ruudun ominaisuusikkunassa haluamasi koko **Ruudun koko** -asetuksista. Ruudun koko muutetaan välittömästi. Jos **(Esiversio) Tallennettujen näkymien tuki työtiloille** -toiminto on käytössä , voit tallentaa tämän mukauttaminsen työtilanäkymään.  
 
 ### <a name="personalizing-your-dashboard"></a>Koontinäytön mukauttaminen
 

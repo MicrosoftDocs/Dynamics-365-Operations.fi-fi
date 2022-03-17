@@ -2,7 +2,7 @@
 title: Verolaskennan yleiskatsaus
 description: Tässä ohjeaiheessa selitetään verolaskentamahdollisuuden yleinen laajuus ja ominaisuudet.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105434"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388492"
 ---
 # <a name="tax-calculation-overview"></a>Verolaskennan yleiskatsaus
 
@@ -58,7 +58,8 @@ Verolaskenta otetaan käyttöön seuraavilla Azuren maantieteellisillä alueilla
 - Kanada
 - Eurooppa
 - Japani
-- Iso-Britannia
+- Sveitsi
+- Yhdistynyt kuningaskunta
 - Yhdysvallat
 
 > [!NOTE]
@@ -77,6 +78,7 @@ On suositeltavaa tuoda ja määrittää verolaskelman konfiguraatio versiolle, j
 | 10.0.23         | Verolaskentamääritys 40.50.221 |
 | 10.0.24         | Verolaskentamääritys 40.50.225 |
 | 10.0.25         | Verolaskentamääritys 40.50.225 |
+| 10.0.26         | Verolaskentamääritys 40.54.234 |
 
 
 ## <a name="data-flow"></a>Tietojen virtaus
@@ -136,6 +138,11 @@ Seuraavia tapahtumia tuetaan versiossa 10.0.23:
 
 - Vapaatekstilasku
 
+Seuraavia tapahtumia tuetaan versiossa 10.0.26: 
+
+- Yleiset kirjauskansiot
+- Toimittajan laskun kirjauskansio
+
 ## <a name="supported-countriesregions"></a>Tuetut maat/alueet
 
 Yritys voi ottaa verolaskennan käyttöön. 
@@ -187,6 +194,12 @@ Versiossa 10.0.23 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena 
 Versiossa 10.0.24 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
 
 - Meksiko
+
+Versiossa 10.0.26 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+
+- Kiina
+- Tšekin tasavalta
+- Espanja
 
 ## <a name="related-resources"></a>Liittyvät resurssit
 

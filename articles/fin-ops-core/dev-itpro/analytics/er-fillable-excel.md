@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952649"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388260"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -83,31 +83,48 @@ ER-toiminnon suunnitteluohjelman **Yhdistämismääritys**-välilehdessä **Taul
 
 ## <a name="range-component"></a>Alue-osa
 
-**Alue**-osa ilmaisee Excel-alueen, joka on oltava tämän ER-osan hallinnassa. Alueen nimi määritetään tämän osan **Excel-alue**-ominaisuudessa.
-
-### <a name="replication"></a>Replikointi
-
-**Replikointisuunta**-ominaisuus määrittää, toistetaanko alue luodussa tiedostossa ja millä tavoin se toistetaan:
-
-- Jos **Replikointisuunta**-ominaisuudeksi on määritetty **Ei replikointia**, soveltuvaa Excel-aluetta ei toisteta luodussa tiedostossa.
-- Jos **Replikointisuunta**-ominaisuudeksi on määritetty **Pystysuuntainen**, soveltuvaa Excel-alue toistetaan luodussa tiedostossa. Jokainen replikoitu alue sijoitetaan Excel-mallin alkuperäisen alueen alapuolelle. Toistojen määrä määräytyy tähän ER-osaan sidotun **Tietueluettelo**-tyypin tietolähteen tietueiden määrän mukaan.
-- Jos **Replikointisuunta**-ominaisuudeksi on määritetty **Vaakasuuntainen**, soveltuvaa Excel-alue toistetaan luodussa tiedostossa. Jokainen replikoitu alue sijoitetaan Excel-mallin alkuperäisen alueen oikealle puolelle. Toistojen määrä määräytyy tähän ER-osaan sidotun **Tietueluettelo**-tyypin tietolähteen tietueiden määrän mukaan.
-
-Lisätietoja vaakasuuntaisesta replikoinnista on kohdan [Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäämiseen Excel-raportteihin](tasks/er-horizontal-1.md) ohjeissa.
-
 ### <a name="nested-components"></a>Sisäkkäiset komponentit
 
-**Alue**-osassa voi olla muita sisäkkäisiä ER-osia, joiden avulla annetaan arvoja soveltuvilla Excelin nimetyillä alueilla.
+#### <a name="data-typing"></a>Tietojen tyypitys
+
+**Alue**-osassa voi olla muita sisäkkäisiä ER-osia, joiden avulla annetaan arvoja soveltuvilla alueilla.
 
 - Jos arvoja annetaan jollakin **Teksti**-ryhmän osalla, arvo annetaan Excel-alueella tekstiarvona.
 
     > [!NOTE]
     > Tämän mallin avulla voi muotoilla annettuja arvoja sovelluksen määritettyjen alueasetusten perusteella.
 
-- Jos **Excel**-ryhmän **Solu**-osaa käytetään arvojen antamiseen, arvo annetaan Excel-alueelle sen tietotyypin arvona, joka on määritetty kyseisen **Solu**-osan sidonnalla (kuten **Merkkijono**, **Reaaliluku** tai **Kokonaisluku**).
+- Jos **Excel**-ryhmän **Solu**-osaa käytetään arvojen antamiseen, arvo annetaan Excel-alueelle sen tietotyypin arvona, joka on määritetty kyseisen **Solu**-osan sidonnalla. Tietotyyppi voi olla esimerkiksi **Merkkijono**, **Reaaliluku** tai **Kokonaisluku**.
 
     > [!NOTE]
     > Tämän mallin avulla Excel-sovelluksessa voidaan ottaa käyttöön annettujen arvojen muotoilu sen paikallisen tietokoneen alueasetusten perusteella, joka avaa lähtevän tiedoston.
+
+#### <a name="row-handling"></a>Rivien käsittely
+
+**Alue**-komponentti voidaan konfiguroida pystysuunnassa replikoiduiksi, jotta Excel-laskentataulukossa luodaan useita rivejä. Rivit voi luoda ylätason **Alue**-komponentin tai sen sisäkkäisten **Alue**-komponenttien avulla.
+
+Versiossa 10.0.26 ja sitä myöhemmissä versioissa voit pakottaa luodun laskentataulukon pitämään luodut rivit samalla sivulla. Määritä ER-muotosuunnittelussa **Pidä rivit yhdessä** -asetukseksi **Kyllä** ylätason **Alue**-komponentille muokattavassa ER-muodossa. ER yrittää tällöin säilyttää kyseisen alueen luoman sisällön samalla sivulla. Jos sisällön korkeus ylittää nykyisen sivun jäljellä olevan tilan, sivunvaihto lisätään ja sisältö alkaa seuraavan uuden sivun yläosasta.
+
+> [!NOTE]
+> On suositeltavaa määrittää **Pidä rivit yhdessä** -vaihtoehto vain alueille, jotka kattavat luodun tiedoston koko leveyden.
+>
+> **Pidä rivit yhdessä** -vaihtoehto koskee vain **Excel \> Tiedosto** -komponentteja, jotka on määritetty käyttämään Excel-työkirjamallia.
+>
+> **Pidä rivit yhdessä**-asetusta voidaan käyttää vain, kun **Ota käyttöön EPPlus-kirjasto sähköisen raportoinnin sovelluskehyksessä** -ominaisuus on otettu käyttöön.
+>
+> Tätä toimintoa voidaan käyttää **Sivu**-osan **Alue**-komponentteihin. Ei kuitenkaan voida taata, että sivun [alatunnisteiden kokonaissummat](er-paginate-excel-reports.md#add-data-sources-to-calculate-page-footer-totals) lasketaan oikein [Tietojen keruu](er-data-collection-data-sources.md) -tietolähteiden avulla.
+
+Tietoja tämän asetuksen käytöstä saat noudattamalla seuraavia ohjeita: [Sähköisen raportoinnin muodon suunnitteleminen rivien pitämiseksi yhdessä samalla Excel-sivulla](er-keep-excel-rows-together.md).
+
+### <a name="replication"></a>Replikointi
+
+**Replikointisuunta**-ominaisuus määrittää, toistetaanko alue luodussa tiedostossa ja millä tavoin se toistetaan:
+
+- **Ei replikointia** – Excel-alue ei toistu luodussa tiedostossa.
+- **Pystysuuntainen** – Excel-alue toistetaan luodussa tiedostossa pystysuuntaisesti. Kukin replikoitu alue sijoitetaan Excel-mallin alkuperäisen alueen alapuolelle. Toistojen määrä määräytyy tähän ER-osaan sidotun **Tietueluettelo**-tyypin tietolähteen tietueiden määrän mukaan.
+- **Vaakasuuntainen** – Excel-alue toistetaan luodussa tiedostossa vaakasuuntaisesti. Kukin replikoitu alue sijoitetaan Excel-mallin alkuperäisen alueen oikealle puolelle. Toistojen määrä määräytyy tähän ER-osaan sidotun **Tietueluettelo**-tyypin tietolähteen tietueiden määrän mukaan.
+
+    Lisätietoja vaakasuuntaisesta replikoinnista on kohdan [Vaakasuunnassa laajennettavien alueiden käyttö sarakkeiden dynaamiseen lisäämiseen Excel-raportteihin](tasks/er-horizontal-1.md) ohjeissa.
 
 ### <a name="enabling"></a>Otetaan käyttöön
 
@@ -280,12 +297,12 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
 
 - Valitse **Automaattinen**, jos haluat laskea kaikki riippuvaiset kaavat uudelleen aina, kun luotu tiedosto liitetään uusilla alueilla, soluissa jne.
 
-    >[!NOTE]
+    > [!NOTE]
     > Tämä saattaa aiheuttaa suorituskykyongelman niille Excel-malleille, jotka sisältävät useita toisiinsa liittyviä kaavoja.
 
 - Valitse **Manuaalinen**, jos haluat välttää kaavojen uudelleenlaskennan, kun asiakirja luodaan.
 
-    >[!NOTE]
+    > [!NOTE]
     > Kaavan uudelleenlaskenta pakotetaan manuaalisesti, kun luotu asiakirja avataan esikatselua varten Excelissä.
     > Älä käytä tätä vaihtoehtoa, jos määrität ER-kohteen, joka olettaa, että luotu tiedosto on käytössä ilman sen esikatselua Excelissä (PDF-muunnos, sähköpostin lähetys jne.) koska luotu tiedosto ei ehkä sisällä kaavoja sisältävien solujen arvoja.
 

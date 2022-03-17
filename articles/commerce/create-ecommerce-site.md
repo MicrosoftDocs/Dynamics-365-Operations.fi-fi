@@ -2,7 +2,7 @@
 title: Sähköisen kaupankäynnin sivuston luominen
 description: Tämä ohjeaihe sisältää ohjeet ja tiedot, jotka tarvitaan uuden sähköisen kaupankäynnin sivun luomiseen Dynamics 365 Commerce sivustonmuodostimessa.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090766"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388208"
 ---
 # <a name="create-an-e-commerce-site"></a>Sähköisen kaupankäynnin sivuston luominen
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090766"
 Tämä ohjeaihe sisältää ohjeet ja tiedot, jotka tarvitaan uuden sähköisen kaupankäynnin sivun luomiseen Dynamics 365 Commerce sivustonmuodostimessa.
 
 Kun lisensoit Dynamics 365 Commercen ominaisuuksia, sivuston luontiohjelmalle valmistellaan aloitussivusto, jota voit käyttää oman sivustosi pohjana. Jos kuitenkin haluat tehdä kaiken alusta tai jos haluat luoda toisen sivuston, sinun on luotava uusi sivusto sivuston muokkausympäristössä. 
+
+## <a name="site-creation-prerequisites"></a>Sivuston luonnin edellytykset
+
+Sivustonmuodostajan käyttäjän on omattava Microsoft Azure Active Directory (Azure AD) -käyttäjätili, joka sisältyy Azure AD -suojausryhmään, joka on määritetty sähköisen kaupankäynnin järjestelmänvalvojille. Lisätietoja on kohdassa [Uuden sähköisen kaupankäynnin vuokraajan käyttöönottaminen](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Azure AD -vieraskäyttäjillä voi olla eri käyttöoikeudet Azure AD -vuokraajassasi. Vaikka sisältyisikin sähköisen kaupan järjestelmänvalvojille määritettyyn Azure AD -suojausryhmään, vieraskäyttäjän on ehkä muutettava Azure AD:n **Ulkoiset käyttäjät** -käyttöoikeusasetuksia, jotta verkkokauppasivusto voidaan luoda Commercessa. 
+
+Voit muokata Azure AD:n **ulkoisten käyttäjien** asetuksia noudattamalla seuraavia ohjeita.
+
+1. Siirry Azure-portaalissa Azure AD -vuokraajaan.
+1. Siirry kohtaan **Käyttäjäasetukset \> Ulkoiset käyttäjät** ja valitse **Ulkoisen yhteistyön asetusten hallinta** -linkki. Tämä avaa **Ulkoisen yhteistyön asetukset** -sivun, jossa voidaan määrittää vieraan käyttöoikeudet, vieraan kutsua koskevat asetukset ja yhteiskäytön rajoitukset. 
+1. Muuta ulkoisen yhteiskäytön asetukset yrityksen suojauskäytäntöjen mukaan. 
 
 ## <a name="set-up-your-site"></a>Sivuston määrittäminen
 

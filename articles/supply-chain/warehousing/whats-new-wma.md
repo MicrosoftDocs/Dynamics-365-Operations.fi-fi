@@ -2,7 +2,7 @@
 title: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 description: Tässä aiheessa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
 author: Mirzaab
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067248"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384365"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20170"></a>Versio 2.0.17.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Korjattu ongelma, jossa viivakoodit skannataan väärin.
+- Korjattu kameraskannerin GS1-skannausongelma.
+- Korjattu viivakoodiskannerin GS1-skannausongelma on Zebra-laitteissa.
+- Parannettiin sivupolun kyselyn kulkua, joten kortin valinta sivupolulla palaa nyt päätyönkulkuun.
+- Lisätty tuki yleisten tietojen kyselykulkuun.
+- Lisätty sanoma, joka kertoo käyttäjille muutoksista verkon yhteystilaan.
+- Yhdenmukaistettu tallennusoikeudet Android 10:n tallennuksen tietosuojakäytännön mukaisesti.
+- Sitä tarvitsevissa työnkuluissa määräkiekko sisältää nyt kohdan, jonka avulla käyttäjät voivat lähettää tyhjän numeroarvon.
+- Määräkiekon suuntaukseen liittyvät ongelmat korjattu.
+- Korjattu ongelma, jossa määräkiekko hyppää väärään arvoon.
+- Korjattu ongelma, jonka vuoksi ensisijaiseen sivuun syötetty syöte menetetään tietosivulta täytettäessä.
+- Korjattu ongelma, jossa paikkamerkin tekstiä käsitellään valintaluetteloissa alun perin valittuna arvona.
+- Vahvistusvaiheiden Lähetä-painike on nyt automaattisesti käytössä, jos arvoja on ennalta valittu.
+- Korjattu tietokortti näyttämään niin monta riviä kuin mahdollista monirivisissä tekstikentissä.
+- Lähetä- ja Lisää toimenpiteitä -painikkeiden korkeus on korjattu, joten nyt ne vievät vähemmän tilaa näytössä.
+- Lisätty puuttuvat valintaluettelon otsikot.
+- Korjattu ongelma, jossa Takaisin-painike ei toiminut.
+- Lisätty useita näppäimistön siirtymiskorjauksia ja parannuksia, joita on esimerkiksi seuraavilla sivuilla:
+  - Sisäänkirjautuminen
+  - Valitse yhteys
+  - Muokkaa yhteyttä
+- Korjattu siirtyminen näppäimistöä käytettäessä.
+- Parannettu käytettävyys, johon sisältyvät seuraavat parannukset:
+  - Korjattu värien näkyvyyttä ja kontrastia.
+  - Näppäimistön kohdistuksen menettäminen estetään, kun ponnahdussivut suljetaan.
+  - Lisätty virhesanomat puhetoimintoon.
+  - Kasvatettu paikkamerkkien arvojen kokoa vaiheen bannerissa.
+- Korjattu esimerkki mukautetusta vanhasta sivusta esittelytilassa.
 
 ## <a name="version-20150"></a>Versio 2.0.15.0
 
@@ -39,7 +72,7 @@ Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukse
 ## <a name="version-20130"></a>Versio 2.0.13.0
 
 Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
- 
+
 - Parannettu sivujen vierittämistä sujuvammalla animaatiolla.
 - Korjattu intuitiivisia vasteita pyyhkäisyliikkeisiin ja satunnaisiin näytön jumiutumiseen.
 - Paranneltu tumman tilan teksti- ja taustaväriyhdistelmiä luettavuuden parantamiseksi.

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.openlocfilehash: 30f455f37b5161878cf9c864b92966aa74da051f
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119184"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376179"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Asteikon yksiköt jaetussa hybriditopologiassa
 
@@ -40,7 +40,7 @@ Kuormituksen ominaisuuksia vapautetaan jatkuvasti lisäparannusten avulla.
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Scale unitit ja erilliset kuormitukset
 
-Scale unitit laajentavat Supply Chain Management -keskusympäristöä lisäämällä erillisestä käsittelykapasiteettia. Scale unitit voidaan suorittaa pilvessä. Vaihtoehtoisesti ne voidaan suorittaa reunapalveluna, paikallisena omissa tiloissa.
+Scale unitit laajentavat Supply Chain Management -keskusympäristöä lisäämällä erillisestä käsittelykapasiteettia. Scale unitit voidaan suorittaa pilvessä. Vaihtoehtoisesti ne voidaan suorittaa [reuna](cloud-edge-edge-scale-units-lbd.md)palveluna, paikallisena omissa tiloissa.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 ja scale unitit.":::
 
@@ -65,7 +65,7 @@ Valmistuksen kuormitukseen sisältyy seuraavat ominaisuudet:
 
 Lisätietoja on kohdassa [Pilvi- ja reunapalvelujen Scale Unitien tuotannonohjauksen kuormitukset](cloud-edge-workload-manufacturing.md).
 
-## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Huomioon otettavia seikkoja ennen jakelun hybriditopologian käyttöönottoa Supply Chain Managementissa
+## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Huomioon otettavia seikkoja ennen jaetun hybriditopologian käyttöönottoa Supply Chain Managementissa
 
 Ottamalla jaetut hybriditopologiat käyttöön siirrät Supply Chain Managementin pilviympäristön niin, että se toimii keskuksena. Voit myös liittää muita ympäristöjä, jotka on määritetty skaalausyksiköiksi pilvipalvelussa tai reunalla.
 
@@ -116,7 +116,7 @@ Mittareita ja mittauksia, jotka auttavat valitsemaan skaalausyksiköiden parhaan
 
 ### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Tietojenkäsittely skaalausyksiköiden hallinnan aikana
 
-Kun otat Dynamics 365 -ympäristösi käyttöön jaetussa, hybriditopologiassa pilvipalveluissa ja reunan skaalausyksiköissä, joitakin hallintapalveluja ylläpidetään vain Yhdysvalloissa, kuten LCS:ssä. Tämä toiminta vaikuttaa joihinkin [Scale Unit Manager -portaalissa](https://sum.dynamics.com) käytettämiin hallinta- ja konfigurointitietojen siirtoon ja varastointiin. Seuraavassa on muutamia esimerkkejä:
+Kun otat Dynamics 365 -ympäristösi käyttöön jaetussa hybriditopologiassa pilvipalveluissa ja reunan skaalausyksiköissä, joitakin hallintapalveluja ylläpidetään vain Yhdysvalloissa, kuten LCS:ssä. Tämä toiminta vaikuttaa joihinkin [Scale Unit Manager -portaalissa](https://sum.dynamics.com) käytettämiin hallinta- ja konfigurointitietojen siirtoon ja varastointiin. Seuraavassa on muutamia esimerkkejä:
 
 - Vuokraajan nimet ja tunnukset
 - LCS-projektin tunnukset
@@ -125,33 +125,27 @@ Kun otat Dynamics 365 -ympäristösi käyttöön jaetussa, hybriditopologiassa p
 - Kuormituskonfiguraatiot sekä niiden nimet ja fyysiset osoitteet, jotta topologiasi voidaan näyttää maantieteellisessä kartassa
 - Kerätyt mittarit (kuten viive ja siirtomäärä), jotka näkyvät kartta-analyysisivulla ja auttavat valitsemaan mahdollisimman suotuisan käyttötavan skaalausyksiköille
 
-Yhdysvalloissa datakeskuksiin siirrettävät ja tallennetut tiedot poistetaan Microsoftin tietojen säilytyskäytäntöjen mukaisesti. Tietosuojasi on tärkeää Microsoftille. Lisätietoja on [tietosuojatiedoissa](https://go.microsoft.com/fwlink/?LinkId=521839).
+Yhdysvalloissa datakeskuksiin siirrettävät ja tallennetut tiedot poistetaan Microsoftin tietojen säilytyskäytäntöjen mukaisesti. Tietosuojasi on tärkeää Microsoftille. Lisätietoja on [tietosuojalausekkeessa](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## <a name="onboarding-in-two-stages"></a>Mukana on kaksi vaihetta
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Ota käyttöön jaettu hybriditopologia Supply Chain Managementille
 
-Jakeluun jaetussa hybriditopologiassa on kaksi vaihetta. Ensimmäisen vaiheen aikana mukautukset on vahvistettava, jotta ne toimivat jaetussa topologiassa, jossa on skaalausyksiköitä. Sen vuoksi eristys- ja tuotantoympäristöt siirretään vain toisen vaiheen aikana.
+### <a name="try-out-the-distributed-hybrid-topology"></a>Kokeile jaettua hybriditopologiaa
 
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Vaihe 1: Mukautusten arvioiminen yhden ruudun kehitysympäristöissä
+Jaetun hybriditopologian käyttöönotossa on kaksi vaihetta. Ensimmäisen vaiheen aikana [kokeilet](cloud-edge-try-out.md) ratkaisua ja mukautukset on vahvistettava, jotta ne toimivat jaetussa topologiassa, jossa on skaalausyksiköitä. (Oikeellisuustarkistuksen voi tehdä olemassa olevien kehitysympäristöjen avulla.) Tämän jälkeen voit jatkaa toiseen vaiheeseen, jossa hankit tuotantoympäristöjä.
 
-Ennen kuin aloitat eristys- tai tuotantoympäristön tuomisen, suosittelemme, että tutustut skaalausyksiköihin kehitysasetuksissa, kuten yhden laatikon ympäristössä (eli tier-1-ympäristössä), jotta voit vahvistaa prosessit, mukautukset ja ratkaisut. Tässä vaiheessa tietoja ja mukautuksia käytetään yksiruutuissa ympäristöissä. Yksi ympäristö ottaakeskittimen roolin ja toinen ottaa roolin skaalausyksikönä. Nämä asetukset ovat paras tapa tunnistaa ja korjata ongelmia. Myös viimeisintä ennakkokäyttökoontiversiota (PEAP) voi käyttää tämän vaiheen suorittamiseen.
-
-Vaiheessa 1 on käytettävä [skaalausyksikön käyttöönottotyökaluja yhden ruudun kehitysympäristöissä](https://github.com/microsoft/SCMScaleUnitDevTools). Näiden työkalujen avulla voit konfiguroida skaalausyksiköt yhdessä tai kahdessa erillisessä yksiruutuisessa ympäristössä. Työkalut toimitetaan binaarijulkaisuna ja lähdekoodina GitHubissa. Tutki projektia, joka sisältää [vaiheittaiset käyttöoppaat](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide), jotka kuvaavat työkalujen käyttöä.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Vaihe 2: Apuohjelmien hankkiminen ja käyttöönotto eristys- ja tuotantoympäristöissäsi
-
-Jos haluat siirtyä jostakin eristys- tai tuotantoympäristöstäsi uuteen topologiaan, sinun on hankittava lisäosat yhdelle tai useammalle cloud scale unitille (ja tulevaisuudessa edge scale unitille). Apuohjelmat myöntävät [LCS:ssä](https://lcs.dynamics.com/) vastaavat projekti- ja ympäristöpaikat, jotta skaalausyksikön ympäristöjä voidaan käyttää.
-
-> [!NOTE]
-> Skaalausyksikköjen apuohjelmia ei liitetä rajoitettuun käyttäjämäärään, vaan kuka tahansa olemassa olevan ylläpitosopimuksen käyttäjä voi käyttää niitä roolien perusteella, jotka järjestelmänvalvoja määrittää.
+## <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>LCS-projektin vuokraajan valitseminen ja yksityiskohtainen käyttöönottoprosessi
 
 Skaalausyksiköitä on saatavilla useassa varastointiyksikössä (SKUs) ja hinnoitteluvaihtoehdoissa. Näin ollen voit valita vaihtoehdon, joka vastaa parhaiten suunniteltujen kuukausittaisten tapahtumien volyymia ja suorituskykyvaatimuksia.
+
+> [!TIP]
+> Tunnista tarpeisiisi parhaiten sopiva koko toimimalla toteutuskumppanisi ja Microsoftin kanssa ymmärtääksesi tarvitsemasi kuukausittainen tapahtumakoko.
 
 Lähtötason SKU on *Perustaso* ja sitä suorituskykyisempää SKU:ta kutsutaan *vakiotasoksi*. Jokaiselle SKU:lle on esiladattu tietty määrä kuukausitapahtumia. Voit kuitenkin suurentaa kuukausittaista tapahtumabudjettia lisäämällä kullekin SKU:lle ylitysapuohjelmia.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Cloud Scale Unitin apuohjelmat.":::
 
-> [!TIP]
-> Tunnista tarpeisiisi parhaiten sopiva koko toimimalla kumppanisi ja Microsoftin kanssa ymmärtääksesi tarvitsemasi kuukausittainen tapahtumakoko.
+> [!NOTE]
+> Skaalausyksikköjen lisäosia ei ole määritetty rajoitetulle määrälle käyttäjiä. Ne ovat ylläpitosopimuksen kaikkien käyttäjien käytettävissä (edellyttäen, että järjestelmänvalvoja on määrittänyt tarvittavat käyttäjäroolit heille).
 
 Kunkin skaalausyksikön lisäosan osto ei vain anna sinulle tapahtumien kuukausittaista määrää, vaan myös oikeuttaa tiettyyn määrään ympäristöpaikkoja LCS:ssä. Sinulla on oikeus jokaista Cloud Scale Unit -apuohjelmaa kohti uuteen tuotantopaikkaan ja uuteen eristysympäristöpaikkaan. Mukana on myös uusi LCS-projekti, joka sisältää nämä lisäprojektit. Paikkojen käyttöoikeudet on sidottu siten, että paikkoja on käytettävä skaalausyksikköinä, joissa on pilvikeskitin.
 
@@ -159,9 +153,6 @@ Ylitysten apuohjelmat eivät anna oikeutta uusiin ympäristöpaikkoihin.
 
 Jos haluat hankkia lisää eristysympäristöjä, voit ostaa tavallisia eristysympäristöpaikkoja. Microsoft voi tämän jälkeen auttaa sinua mahdollistamaan näiden eristysympäristön skaalausyksiköiden käyttöönoton hybriditopologiassa.
 
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Ota käyttöön jaettu hybriditopologia Supply Chain Managementille
-
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>LCS-projektin vuokraajan valitseminen ja yksityiskohtainen käyttöönottoprosessi
 
 Kun olet suunnitellut valmiiksi miten olet mukana Supply Chain Managementin jaetussa hybriditopologiassa, voit aloittaa käyttöönottoprosessin [Scale Unit Manager -portaalin](https://aka.ms/SCMSUM) avulla. Valitse portaalissa **Dynamics 365 -vuokralaiset** -välilehti. Välilehdellä on luettelo vuokraajista, joiden osa tili on ja joissa käyttäjä on LCS-projektin omistaja tai ympäristön järjestelmänvalvoja.
 

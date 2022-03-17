@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ee206ced76dbdd356c77d34a4b8f197879e9a3f0
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790863"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384769"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän suunnitteleminen
 
@@ -54,7 +54,7 @@ Uusi välilehti luodaan ja määritetään seuraavasti:
 1. Määritä seuraavat asetukset sivun otsikossa:
 
     - **Välilehden nimi** – määritä välilehden nimi.
-    - **Päänäkymä** – valitse jokin esimääritetyistä työluetteloista (*Aktiiviset työt*, *Kaikki työt* tai *Oma kone*).
+    - **Päänäkymä** – valitse jokin esimääritetyistä työluetteloista (*Aktiiviset työt*, *Kaikki työt*, *Omat työt* tai *Oma kone*).
     - **Tietonäkymä** – Valitse joko tyhjä arvo tai **Työn tiedot**. Jos valitset tyhjän arvon, välilehdessä ei ole tietonäkymää. Jos valitse **Työn tiedot**, tietonäkymässä on tarkka kuvaus päänäkymän työluettelossa valitusta työstä.
 
 1. Valitse **Ensisijainen työkalurivi** -osassa ensisijaisessa työkalurivissä käytettävissä olevat painikkeet. **Käytettävissä olevat toiminnot** -sarakkeessa on luettelo lisättävistä painikkeista. **Valitut toiminnot** -sarakkeessa on luettelo kaikista painikkeista, jotka sisältyvät nykyiseen määritykseen. Siirrä nimikkeitä tarvittaessa sarakkeesta toiseen sarakkeiden välissä olevilla painikkeilla. Määritä järjestys, jossa painikkeet näytetään käyttöliittymässä, **Valitut toiminnot** -sarakkeen vieressä olevilla ylä- ja alanuolipainikkeilla.

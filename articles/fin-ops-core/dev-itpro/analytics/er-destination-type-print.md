@@ -2,7 +2,7 @@
 title: Tulostimen ER-kohteen tyyppi
 description: Tässä aiheessa käsitellään tulostinkohteen määrittämistä sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla.
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 672b1d70607a32d30c703ce39573d7480462fec45739b6e1e49ef27166a50e2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712709"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388285"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Tulostinkohde
 
@@ -43,7 +43,24 @@ Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoftin Dynamics 36
 
 ### <a name="applicability"></a>Soveltuvuus
 
-**Tulostin**-kohde voidaan määrittää vain tiedostokomponenteille, joita käytetään tulosteen luomiseen joko tulostettavassa PDF-muodossa (PDF Mergerin tai PDF-tiedoston muotoelementit) tai Microsoft Office Excel/Word -muodossa (Excel-tiedosto). Kun tuloste luodaan PDF-muodossa, se lähetetään tulostimeen. Kun tuloste luodaan Microsoft Office -muodossa, se muunnetaan automaattisesti PDF-muotoon ja lähetetään sitten tulostimeen.
+#### <a name="pdf-printing"></a>PDF-tulostaminen
+
+Finance-versiota 10.0.18 aiemmissa versioissa **Tulostin**-kohde voidaan määrittää vain tiedostokomponenteille, joita käytetään tulosteen luomiseen joko tulostettavassa PDF-muodossa (**PDF Mergerin** tai **PDF-tiedoston** muotoelementit) tai Microsoft Office Excel- ja Word-muodossa (**Excel**-tiedosto). Kun tuloste luodaan PDF-muodossa, se lähetetään tulostimeen. Kun tuloste luodaan Office-muodossa käyttämällä **Excel-tiedosto**-muotoelementtiä, se muunnetaan automaattisesti PDF-muotoon ja lähetetään sitten tulostimeen.
+
+Versiosta 10.0.18 alkaen voit kuitenkin määrittää **Tulostin**-kohteen **Common File** -muotoelementille. Tätä muotoelementtiä käytetään yleensä joko TXT- tai XML-muotoiseen tulostukseen. Voit konfiguroida **Common file** -muotoelementin sisältävän ER-muodon juurimuotoelementiksi ja **binaarisisällön** muotoelementin sen ainoaksi sisäkkäiseksi elementiksi. Tässä tapauksessa **Common File** -muotoelementti tuottaa tuotoksen muodossa, joka määritetään **binaarisisällön** muotoelementille määritettävällä sidonnalla. Voit esimerkiksi määrittää tämän sidonnan [täyttämään](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) tämän elementin [asiakirjanhallinnan](../../fin-ops/organization-administration/configure-document-management.md) liitteen sisällöllä PDF- tai Office (Excel tai Word) -muodossa. Voit tulostaa tulosteen käyttämällä määritettyä **Tulostin**-kohdetta. 
+
+> [!NOTE]
+> Kun valitset **Common\\File**-muotoelementin **Tulostin**-kohteen konfiguroimiseksi, suunnittelun aikana ei voida taata, että valittu elementti tuottaa tuotoksen PDF-muodossa tai PDF-muotoon muunnettavassa muodossa. Näin saat seuraavan varoitussanoman: "Varmista, että valitun muotokomponentin luoma tulostus voidaan muuntaa PDF-tiedostomuotoon. Poista muussa tapauksessa Muunna PDF-tiedostoksi -vaihtoehto." Sinun on tehtävä vaiheita, jotka auttavat ehkäisemään suorituksenaikaiset ongelmat, kun suorituksen aikana tulostetaan muu kuin PDF-tiedosto tai muu kuin PDF-muotoon muunnettava tuloste. Jos haluat vastaanottaa tuotoksen Office (Excel tai Word) -muodossa, **Muunna PDF-muotoon** -vaihtoehto on valittava.
+>
+> Versiossa 10.0.26 ja sitä myöhemmissä versioissa **Muunna PDF-muotoon** -asetuksen käyttämiseksi sinun on valittava **PDF** konfiguroidun **Tulostin**-kohteen **Asiakirjan reititystyyppi** -parametria varten.
+
+#### <a name="zpl-printing"></a>ZPL-tulostaminen
+
+Versiossa 10.0.26 ja sitä myöhemmissä versioissa voit määrittää **Common\\File**-muotoelementin **Tulostin**-kohteen valitsemalla **Asiakirjan reititystyyppi** -parametriksi **ZPL**. Tässä tapauksessa **Muunna PDF-muotoon** -asetus ohitetaan suorituksen aikana ja TXT- tai XML-tuloste lähetetään suoraan valitulle tulostimelle [asiakirjan reititysagentin (DRA)](install-document-routing-agent.md) Zebra Programming Language (ZPL) -määrityksen avulla. Tämän toiminnon avulla voit tulostaa erilaisia etikettejä ER-muodolle, joka edustaa ZPL II -etikettiasettelua.
+
+[![Tiedoston reititystyyppiparametrin määrittäminen Kohdeasetukset-valintaikkunassa.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
+
+Lisätietoja tästä ominaisuudesta on kohdassa [Suunnittele uusi ER-ratkaisu ZPL-etikettien tulostamista varten](er-design-zpl-labels.md).
 
 ### <a name="limitations"></a>Rajoitukset
 

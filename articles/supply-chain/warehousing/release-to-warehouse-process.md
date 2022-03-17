@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428926"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376205"
 ---
 # <a name="release-to-warehouse"></a>Vapauta varastoon
 
@@ -125,6 +125,7 @@ Myyntitilauksia vapauttava erätyö määritetään seuraavalla tavalla.
     - **Vapautettava määrä** – Valitse, vapautetaanko varastoon koko määrä vai vain fyysisesti varattu määrä.
     - **Salli osittain vapautettujen tilausten vapautus** – Määritä, vapautetaanko osittain vapautettujen tilausten jäljellä olevat määrät varastoon.
     - **Säilytä varaukset, jos vapautus epäonnistuu** – Määritä, pysyvätkö myyntitilaukselle automaattisesti varatut määrät varattuna, jos varastoon vapauttamisen prosessi epäonnistuu.
+    - **Ryhmittele julkaisut asiakkaan mukaan** – Määritä, käsitteleekö järjestelmä vapautus varastoon -toimintoja erikseen kullekin asiakkaalle vai vapautetaanko kaikki myyntitilaukset samanaikaisesti. Kun tämä vaihtoehto on arvossa *Kyllä*, järjestelmä kerää valitun asiakkaan kaikki myyntitilausrivit, vapauttaa kyseiset tilaukset varastoon ja käsittelee sitten seuraavan asiakkaan. Kun tämän vaihtoehdon arvo on *Ei*, järjestelmä vapauttaa kaikki käytettävissä olevat myyntitilausrivit yhtenä vapautuksena varastotoimintoihin. Tämän vaihtoehdon ottaminen käyttöön voi parantaa varastoonvapautusprosessin suorituskykyä ja vikasietoisuutta. Tätä vaihtoehtoa on käytettävä kuitenkin varoen yhdessä Käsittele aalto, kun se vapautetaan varastoon -tyyppisten aaltomallien kanssa, koska yhdistelmä voi luoda useita yhden asiakkaan aaltoja, joista kukin sisältää vain tälle asiakkaalle luodun työn. Jos haluat luoda työt, joissa eri asiakkaiden lähetykset yhdistetään, poista *Ryhmittele vapautukset asiakkaan mukaan* -vaihtoehto käytöstä tai määritä aaltomallit käyttämään lykättyä käsittelyä.
     - **Lukittu tilausten käsittely** – Valitse, miten järjestelmä käsittelee myyntitilaukset, jotka ovat lukittuna, koska muu käyttäjä tai prosessi muokkaa niitä:
 
         - *Odota tilausten avaamista* – Järjestelmän on odotettava tilausten avautumista, ennen kuin se vapauttaa ne varastoon. Tällöin varastoon vapauttamisen prosessi saattaa kestää kauemmin.

@@ -1,80 +1,106 @@
 ---
-title: Egyptin sähköisen laskutuksen käytön aloittaminen
-description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Egyptin sähköisen laskutuksen käytön Financessa ja Supply Chain Managementissa.
+title: Sähköinen laskutus (Egypti)
+description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen käytön Egyptissä Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
-ms.date: 04/20/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b25a3489d009a02b45d66d4c3a0271a56a92f5ac
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985622"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371353"
 ---
-# <a name="get-started-with-electronic-invoicing-for-egypt"></a>Egyptin sähköisen laskutuksen käytön aloittaminen
+# <a name="electronic-invoicing-for-egypt"></a>Sähköinen laskutus (Egypti)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa Egyptin sähköisen laskutuksen käytön. Ohjeaihe ohjaa sinua niissä konfigurointivaiheissa, jotka ovat maa-/aluekohtaisia Regulatory Configuration Services (RCS) -palveluissa ja täydentävät seuraavassa ohjeaiheessa kuvattuja vaiheita: [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+Tässä aiheessa on tietoja, joiden avulla voit aloittaa Egyptin sähköisen laskutuksen käytön. Se opastaa Regulatory Configuration Servicesin (RCS) maa-/aluekohtaisissa määritysvaiheissa. Nämä vaiheet täydentävät [Sähköisen laskutuksen määritys](e-invoicing-set-up-overview.md) -kohdassa kuvattuja vaiheita.
 
-## <a name="country-specific-configuration-for-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Sähköisen laskutuksen maakohtainen konfigurointi Egyptin sähköinen laskutus (EG) -ominaisuudelle
+## <a name="prerequisites"></a>Edellytykset
+
+Ennen kuin voit aloittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten on toteuduttava:
+
+- Tutustu sähköiseen laskutukseen, kuten [sähköisen laskutuksen yleiskatsauksessa](e-invoicing-service-overview.md) on kuvattu.
+- Rekisteröidy RCS:ään ja määritä sähköinen laskutus. Lisätietoja on seuraavissa aiheissa:
+
+    - [Sähköisen laskutuspalvelun rekisteröityminen ja asentaminen](e-invoicing-sign-up-install.md)
+    - [Sähköisen laskutuksen Azure-resurssien määrittäminen](e-invoicing-set-up-azure-resources.md)
+    - [Microservices-lisäosan asentaminen Lifecycle Servicesissa](e-invoicing-install-add-in-microservices-lcs.md)
+    
+- Aktivoi Microsoft Dynamics 365 Finance- tai Dynamics 365 Supply Chain Management -sovelluksen ja sähköisen laskutuspalvelun välinen integrointi [Sähköisen laskutuksen integroinnin aktivointi ja määritys](e-invoicing-activate-setup-integration.md) -kohdassa kuvatulla tavalla.
+- Luo digitaalisen sertifikaatin salaisuus Azure Key Vaultissa, ja määritä se kohdassa [Asiakkaan varmenteet ja salaiset koodit](e-invoicing-customer-certificates-secrets.md) kuvatulla tavalla. Testitarkoituksia varten Egyptin veroviranomainen antaa erityisiä digitaalisia sertifikaatteja, joita on käytettävä vain testaus- ja ratkaisutarkistuksen vaiheiden aikana. Lisätietoja voit saada Egyptin verotusviranomaisen verkkosivustosta käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+
+## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Sähköisen laskutuksen maakohtainen konfigurointi Egyptin sähköinen laskutus (EG) -ominaisuudelle
 
 Osa **Egyptin sähköinen lasku (EG) – sähköinen laskutus** -ominaisuuden parametreista julkaistaan oletusarvoilla. Tarkista ja päivitä tarvittaessa arvot liiketoimintasi tarpeisiin sopivaksi, ennen kuin otat sähköisen laskutuksen käyttöön ominaisuuden palveluympäristössä.
 
-Tämä os täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfigurointi sähköisen laskutuksen ominaisuudelle** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
-
-### <a name="prerequisites"></a>Edellytykset
-
-Ennen kuin tämän osan menettelyn voi suorittaa, edellytetään seuraavaa:
-
-- Luo digitaalisen sertifikaatin salasana, joka on kuvattu ohjeaiheen **Luo digitaalisen sertifikaatin salasana** -osassa ohjeessa [Sähköisen laskutuksen hallinnan käytön aloittaminen](e-invoicing-get-started-service-administration.md). Testitarkoituksia varten Egyptin veroviranomainen antaa erityisiä digitaalisia sertifikaatteja, joita on käytettävä vain testaus- ja ratkaisutarkistuksen vaiheiden aikana. Lisätietoja voit konsultoida Egyptin verotusviranomaisen verkkosivustosta käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
-
-1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
-2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että luomasi sähköisen laskutuksen **Egyptin sähköinen lasku (EG)** -ominaisuus on valittuna.
+1. Tuo **Egyptin sähköinen lasku (EG)** -globalisointiominaisuuden viimeisin versio kohdassa [Ominaisuuksien tuonti yleisestä säilöstä](e-invoicing-import-feature-global-repository.md) kuvatulla tavalla.
+2. Luo kopio tuodusta globalisointiominaisuudesta ja valitse sen konfiguraatiopalvelu kohdassa [Globalisointitoiminnon luominen](e-invoicing-create-new-globalization-feature.md) kuvatulla tavalla.
 3. Tarkista **Versiot**-välilehdessä, että **Luonnos**-versio on valittuna.
-4. Valitse **Asetukset**-välilehden ruudukosta **Myyntilasku**-toiminnon asetukset.
-5. Valitse **Muokkaa** ja valitse **Toiminnot**-välilehden **Toiminnot**-kenttäryhmästä **Allekirjoita JSON-tiedosto Egyptin veroviranomaiselle** -toiminto.
-6. Valitse **Parametrit**-kenttäryhmästä parametri **Sertifikaatin nimi** ja valitse sähköisen laskutuksen yhteyteen luodun digitaalisen sertifikaatin nimi.
-7. Valitse **Toiminnot**-kenttäryhmästä **Integroi Egyptin ETA-palvelun kanssa**. Toista tämä vaihe kahdelle tämän toiminnon esiintymälle.
-8. Valitse **Parametrit**-kenttäryhmästä **Verkkopalvelun URL-osoite** ja **Kirjautumispalvelun URL-osoite** ja tarkista tarvittaessa URL-parametrit. Egyptin verotusviranomaisen verkkosivustosta saat testauksen ja tuotannon URL-osoitteen käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
-9. Valitse **Tallenna** ja sulje sivu.
-10. Lisätietoja sähköisen laskutuksen ominaisuuden käyttöönotosta palveluympäristössä on kohdassa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+4. Valitse **Asetukset**-välilehden ruudukosta **Myyntilasku, johdettu**-toiminnon asetukset.
+5. Valitse **Muokkaa**.
+6. Valitse **Käsittelyputki**-välilehden **Käsittelyputki**-osasta **Allekirjoita JSON-tiedosto Egyptin veroviranomaiselle** -toiminto.
+7. Valitse **Parametrit**-osassa **Varmenteen nimi** ja valitse sitten luomasi digitaalisen varmenteen nimi.
+8. Valitse **Käsittelyputki**-osasta **Integroi Egyptin ETA-palvelun kanssa**. Toista tämä vaihe kahdelle tämän toiminnon esiintymälle.
+9. Valitse **Parametrit**-osassa **Verkkopalvelun URL-osoite** ja **Kirjautumispalvelun URL-osoite**. Tarkista sitten URL-parametrit. Egyptin verotusviranomaisen verkkosivustosta saat testauksen ja tuotannon URL-osoitteen käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+10. Valitse **Tallenna** ja sulje sivu.
+11. Toista vaiheet 4–10 **Projektilasku, johdettu** -ominaisuusasetuksille.
 
-## <a name="country-specific-configuration-of-the-application-setup-for-the-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Sovellusmäärityksen sähköisen laskutuksen maakohtainen konfigurointi Egyptin sähköinen laskutus (EG) -ominaisuudelle
+## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-application-setup"></a>Sähköisen laskutuksen maakohtainen konfigurointi Egyptin sähköinen laskutus (EG) -sovellusasetukselle
 
-Suorita nämä vaiheet, ennen kuin otat sovelluksen määritykset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa.
+Finance- tai Supply Chain Management -ympäristössä on määritettävä tietyt parametrit. Nämä asetukset voi määrittää jommassakummassa seuraavista paikoista:
 
-Tämä osa täydentää **Sovellusetusten maa-/aluekohtainen konfigurointi** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+- Suoraan Finance- tai Supply Chain Management -ympäristössä. Lisätietoja: [Sähköisen laskutuksen parametrin määritys](e-invoicing-set-up-parameters.md).
+- RCS:ssä. Sähköisen laskutuksen ominaisuusasetuksissa voit määrittää kaikki parametrit ja ottaa ne sitten suoraan käyttöön Finance- tai Supply Chain Management -ympäristössä, kun otat sähköisen laskutuksen käyttöön.
 
-1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
-2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että sähköisen laskutuksen **Egyptin sähköinen lasku (EG)** -ominaisuus on valittuna.
-3. Tarkista **Versiot**-välilehdessä, että **Luonnos**-versio on valittuna.
-4. Valitse **Asetukset**-välilehden **Sovelluksen asetukset** -vaihtoehto ja valitse **Yhdistetty sovellus** -kentästä sovellus, jossa haluat ottaa käyttöön.
-5. Varmista **Taulun nimi** -kentässä, että myyntilaskukirjauskansio on valittu.
-6. Valitse **Vastaustyypit** ja valitse sitten **Uusi**.
-7. Kirjoita **Vastaustyyppi**-kenttään "Response" ja kirjoita **Kuvaus**-kenttään "Description".
-8. Valitse **Lähetystila**-kentässä **Odottaa**.
-9. Valitse **Mallin yhdistämismääritys** -kentässä **Mallin yhdistämismääritys vastaussanomasta** ja **(Esiversio) Vastaussanoman tuontimuoto** ja valitse sitten **Tallenna**.
-10. Valitse **Uusi** ja syötä sitten **Vastaustyyppi**-kenttään "ResponseData" kiinteänä arvona. Syötä **Kuvaus**-kenttään "Description".
-11. Valitse **Lähetystila**-kentässä **Odottaa**.
-12. Valitse **Tietoyksikön nimi** -kentässä **Myyntilaskun otsikot V2**.
-13. Valitse **Mallin yhdistämismääritys** -kentässä **Egypti – vastaustietojen tuonti** ja **(Esiversio) Egypti – vastaustietojen tuonti** ja valitse sitten **Tallenna**.
-14. Jos haluat ottaa sovelluksen asetukset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa, katso ohjetta [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+Molemmissa vaihtoehdoissa parametrit ovat samat. Jos määrität sähköisen laskutuksen palvelun ensimmäistä toimintoa, suosittelemme, että määrität parametrit RCS:ssä näiden vaiheiden mukaisesti ja otat ne sitten käyttöön liitetyssä sovelluksessa.
+
+> [!NOTE]
+> Jotkin sähköiset laskutustoimintoversiot saattavat sisältää ennalta määritetyn joukon Financen tai Supply Chain Managementin sovelluskohtaisia parametreja. Tässä tapauksessa on tarkistettava, että tiedot ovat oikein. Muussa tapauksessa voit määrittää parametrit manuaalisesti.
+
+1. Etsi luomasi **Egyptin sähköinen lasku (EG)** -globalisaatio-ominaisuuden kopio.
+2. Tarkista **Versiot**-välilehdessä, että **Luonnos**-versio on valittuna.
+3. Valitse **Asetukset** -välilehdessä **Sovelluksen asetukset**.
+4. Valitse **Yhdistetyt sovellukset** -kentästä sovellus, jossa haluat ottaa parametrit käyttöön.
+5. Luo tietue valitsemalla **Sähköiset tiedostotyypit** -sivulla **Lisää**.
+6. Lisää **Taulun nimi** -kenttään **CustInvoiceJour**.
+7. Lisää **Konteksti**-kenttään viite **Myyntilaskun konteksti** -määrityksen nimeen. Konfiguraatio on **Myyntilaskun kontekstimalli**.
+8. Lisää **Sähköisen asiakirjan määritys**-kenttään viite **Myyntilasku**-määrityksen nimeen. Määritys on **Laskumallin yhdistämismääritys**.
+9. Valitse **Tallenna**.
+10. Valitse **Vastaustyypit**-sivulla **Lisää**.
+11. Anna **Vastaustyyppi**-kentässä **Vastaus**.
+12. Anna **Kuvaus**-kenttään arvo **Käsittele vastaus**.
+13. Valitse **Lähetystila**-kentässä **Odottaa**.
+14. Valitse **Mallin määritys** -kentässä **Vastaussanoman tuonti**. Konfiguraatio on **Egyptin vastaussanoman tuonti (EG)**.
+15. Valitse **Tallenna**.
+16. Valitse **Lisää**.
+17. Anna **Vastaustyyppi**-kentässä **ResponseData**.
+18. Anna **Kuvaus**-kenttään arvo **Käsittele vastaustiedot**.
+19. Valitse **Lähetystila**-kentässä **Odottaa**.
+20. Valitse **Tietoyksikön nimi** -kentässä **SalesInvoiceHeaderV2Entity**.
+21. Valitse **Mallin määritys** -kentässä **Vastaustietojen tuonti**. Konfiguraatio on **Egyptin vastaustietojen tuontimuoto (EG)**.
+22. Valitse **Tallenna** ja sulje sivu.
+23. Sulje sivu.
+
+Tietoja toiminnon käyttöönottamisesta palveluympäristössä ja sovelluksen määrityksestä yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa on kohdassa [Globalisaatiotoiminnon viimeisteleminen, julkaiseminen ja käyttöönottaminen](e-invoicing-complete-publish-deploy-globalization-feature.md)
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 
-**Egyptin sähköinen lasku (EG)** -ominaisuuden käyttöönotto saattaa edellyttää rajoitettujen tietojen, joihin kuuluu organisaation verorekisteritunnus, lähettämistä. Tiedot välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten siinä esimääritetyssä muodossa, jota integrointi valtion verkkopalveluun edellyttää. Järjestelmänvalvoja voi ottaa toiminnon käyttöön ja poistaa sen käytöstä siirtymällä kohtaan **Organisaation hallinta** > **Määritykset** > **Sähköisten asiakirjojen parametrit**. Valitse **Ominaisuudet**-välilehdestä se rivi, joka sisältää **Egyptin sähköinen lasku (EG)** -ominaisuuden, ja tee sitten haluamasi valinta. Näistä ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maakohtaisten toimintodokumentaatioiden tietosuojaosista.
+**Egyptin sähköisen laskun (EG)** ottaminen käyttöön saattaa edellyttää, että rajoitetut tiedot lähetetään. Tietoihin sisältyy organisaation verorekisteröintitunnus. Tiedot välitetään kolmannen osapuolen virastoille, jotka veroviranomaiset ovat hyväksyneet sähköisten laskujen kyseiselle veroviranomaiselle lähettämistä varten siinä esimääritetyssä muodossa, jota integrointi valtion verkkopalveluun edellyttää. Järjestelmänvalvoja voi ottaa toiminnon käyttöön ja poistaa sen käytöstä siirtymällä kohtaan **Organisaation hallinta** \> **Määritykset** \> **Sähköisten asiakirjojen parametrit**. Valitse **Ominaisuudet**-välilehdestä se rivi, joka sisältää **Egyptin sähköinen lasku (EG)** -ominaisuuden, ja tee sitten haluamasi valinta. Ulkoisista järjestelmistä tähän Dynamics 365 -verkkopalveluun tuotuihin tietoihin sovelletaan [tietosuojalausuntoamme](https://go.microsoft.com/fwlink/?LinkId=512132). Katso lisätietoja maa-/aluekohtaisten toimintodokumentaatioiden tietosuojaosista.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -82,6 +108,5 @@ Tämä osa täydentää **Sovellusetusten maa-/aluekohtainen konfigurointi** -os
 - [Sähköisen laskutuksen palvelun hallinnan aloittaminen](e-invoicing-get-started-service-administration.md)
 - [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md)
 - [Asiakkaiden sähköiset laskut Egyptissä](emea-egy-e-invoices.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

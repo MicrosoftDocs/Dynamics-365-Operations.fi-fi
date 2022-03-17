@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075016"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384416"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -71,6 +71,18 @@ Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 - **Valmis** – tämä sarake näyttää määrän, joka työstä on jo valmistunut.
 - **Hävikki** – tämä sarake näyttää määrän, joka on työstä jo hävikkiä.
 - **Jäljellä** – tämä sarake näyttää määrän, joka työstä on vielä valmistumatta.
+
+## <a name="my-jobs-tab"></a>Omat työt -välilehti
+
+**Omat työt** -välilehden avulla työntekijät voivat helposti tarkastella kaikkia heille määritettyjä keskeneräisiä töitä. Tämä ominaisuus on hyödyllinen yrityksille, jotka joskus tai aina määrittävät työt tietyille työntekijöille (henkilöstöresursseille) muiden resurssityyppien (kuten koneiden) sijaan. 
+
+Ajoitusjärjestelmä määrittää kunkin tuotantotyön automaattisesti tietylle resurssitietueelle, ja kullakin resurssitietueella on tyyppi (esimerkiksi kone tai henkilö). Kun määrität työntekijän tuotantotyöntekijäksi, voit liittää työntekijätilin yksilöivään henkilöstöresurssitietueeseen. 
+
+Kaikki sisäänkirjautuneen työntekijän henkilöstötietueeseen määritetyt aloittamattomat ja keskeneräiset työt näkyvät **Omat työt** -välilehdessä, jos työntekijä on kirjautunut sisään. Siinä ei kuitenkaan ole luetteloa koneelle tai muulle resurssityypille määritetyistä töistä, vaikka sisäänkirjautunut työntekijä olisi alkanut työstää tällaisia töitä.
+
+Voit tarkastella kaikkia sisäänkirjautuneen työntekijän aloittamia töitä riippumatta siitä, mihin resurssityyppiin kukin työ on liitetty, käyttämällä **Aktiiviset työt** -välilehteä. Voit nähdä kaikki keskeneräiset työt, jotka vastaavat paikallista työn suodatuskonfiguraatiota työntekijästä tai aloitustilasta riippumatta, käyttämällä **Kaikki työt** -välilehteä.
+
+![Omat työt -välilehti.](media/pfei-my-jobs-tab.png "Omat työt -välilehti")
 
 ## <a name="my-machine-tab"></a>Oma kone -välilehti
 
@@ -133,6 +145,13 @@ Jos erätilaus luodaan kaavaversiosta, jossa **Oheistuotteen variaatiot** -asetu
 
 Tällöin työntekijä voi määrittää raportoitavan oheistuotteen ja määrän valitsemalla **Oheistuotteiden variaatiot** raportin edistymisen valintaikkunassa. Sitten työntekijä voi valita kaikista julkaistuista tuotteista, jotka on määritetty oheistuotteiksi.
 
+### <a name="reporting-catch-weight-items"></a>Todellisen painon nimikkeiden raportointi
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Työntekijät voivat käyttää tuotannon suoritusliittymää todellisen painon nimikkeille luotujen erätilausten edistymisen raportointiin. Erätilaukset luodaan kaavojen perusteella, ja nämä kaavat voidaan määritellä siten, että niissä on todellisen painon nimikkeet kaavanimikkeinä, oheistuotteina ja sivutuotteina. Kaavan voi määrittää myös, jos kaavarivit on määritetty todellisen painon ainesosille. Todellisen painon nimikkeissä käytetään kahta mittayksikköä varaston seuraamiseksi: todellisen painon määrä ja varastomäärä. Esimerkiksi elintarviketeollisuudessa laatikollinen lihaa voidaan määrittää todellisen painon nimikkeeksi, jossa todellisen painon määrää käytetään laatikoiden määrän seuraamiseen, ja varastomäärää käytetään laatikoiden painon seuraamiseen.
+
 ## <a name="reporting-scrap"></a>Hävikin raportointi
 
 Kun työntekijä tekee työn kokonaan tai osittain valmiiksi, hän voi raportoida hävikin valitsemalla työn **Aktiiviset työt** -välilehden ja valitsemalla sitten **Hävikin raportointi**. Tämän jälkeen työntekijä antaa **Hävikin raportointi** -valintaikkunassa hävikin määrän numeronäppäimistöllä. Työntekijä valitsee myös syyn (*Ei yhtään*, *Kone*, *Käyttäjä* tai *Materiaali*).
@@ -187,6 +206,13 @@ Voidaan tehdä seuraavia toimenpiteitä:
 
 **Materiaalin säätäminen** -painike voidaan konfiguroida niin, että se näkyy työkalurivillä oikeassa reunassa. (Lisätietoja on kohdassa [Suunnittele tuotantotilan suorituksen liittymä](production-floor-execution-tabs.md).) Työntekijä voi valita käynnissä olevaa tuotantotyötä varten **materiaalin oikaisemisen**. Tässä tapauksessa näyttöön tulee **Materiaalin oikaiseminen** -valintaikkuna, jossa työntekijä voi tehdä haluamansa muutokset. Kun valintaikkuna avataan, tuotantotilausta varten luodaan oikaistuja määriä sisältävien rivien tuotannon keräysluettelo. Jos työntekijä valitsee **Kirjaa nyt**, oikaisu vahvistetaan ja keräysluettelo kirjataan. Jos työntekijä valitsee **Peruuta**, keräysluettelo poistetaan eikä oikaisua tehdä.
 
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Todellisen painon nimikkeiden materiaalikulutuksen oikaiseminen
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Työntekijät voivat oikaista todellisen painon nimikkeiden materiaalikulutuksen. Tätä toimintoa käytetään tilanteissa, joissa tuotantotyössä kulutetun todellisen painon materiaalien todellinen määrä on suurempi tai pienempi kuin suunniteltu määrä. Siksi varastotasot on muutettava niin, että ne ovat ajan tasalla. Kun työntekijä oikaisee todellisen painon nimikkeen kulutuksen, hän voi muokata sekä todellisen painon määrää että varastomäärää. Jos tuotantotyö on suunniteltu esimerkiksi kuluttamaan viisi laatikkoa, joiden arvioitu paino on 2 kilogrammaa laatikolta, työntekijä voi säätää sekä kulutettavien laatikoiden määrää että laatikoiden painoa. Järjestelmä vahvistaa, että määritetty laatikoiden paino on vapautettavassa tuotteessa määritetyn vähimmäis- ja enimmäisrajan sisällä.
+
 ### <a name="reserve-materials"></a>Varaa materiaalit
 
 **Materiaalien oikaiseminen** -valintaikkunassa työntekijä voi tehdä ja oikaista materiaalivarauksia valitsemalla **Varaa materiaali**. Näyttöön tulevassa **Varaa materiaali** -valintaikkunassa näkyy nimikkeen fyysisesti saatavilla oleva varasto kutakin varasto- ja seurantadimensiota varten.
@@ -197,6 +223,8 @@ Lisätietoja tuotannon syötesijainnin määrittämisestä on seuraavassa blogik
 
 > [!NOTE]
 > Työntekijän **Varaa materiaali** -valintaikkunassa varaukset säilyvät, kun työntekijä valitsee **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa **Peruuta**.
+>
+> Todellisen painon nimikkeiden varauksia ei voi oikaista.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Työn valmistuminen ja uuden työn aloittaminen
 

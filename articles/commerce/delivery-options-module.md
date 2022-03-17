@@ -2,7 +2,7 @@
 title: Toimitusvaihtoehdot -moduuli
 description: Tässä ohjeaiheessa on tietoja toimitusvaihtoehtomoduuleista ja niiden määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 69d3da5cbee5d7b921b0b0b422d838b9821e9c877d6f1951e85aeb49474bd4bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9b9a7ad05974b98511cfc582af62c19c5fb4dbf5
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760897"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349791"
 ---
 # <a name="delivery-options-module"></a>Toimitusvaihtoehtomoduuli
 
@@ -55,6 +55,9 @@ Seuraavassa kuvassa on esimerkki toimitusvaihtoehdot-moduulista maksusivulla.
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>Lisää toimitusvaihtoehdot-moduuli kassalle-sivulle ja määritä pakolliset ominaisuudet
 
 Toimitusvaihtoehdot-moduuli voidaan lisätä vain kassalle-moduuliin. Lisätietoja toimitusasetukset-moduulin konfiguroinnista ja lisäämisestä kassalle-sivulle on kohdassa [kassalle-moduuli](add-checkout-module.md).
+
+> [!NOTE]
+> Toimitusten käsittely saattaa olla ristiriitainen tai verkkokauppakanavasi ei ehkä näytä ei-luokiteltuja otsikkotason maksuja. Ohjeita näiden ongelmien korjaamisesta on kohdassa [Ota käyttöön yhdenmukainen toimitustilan käsittely sähköisen kaupankäynnin kanavissa](consistent-delivery-mode-handling.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

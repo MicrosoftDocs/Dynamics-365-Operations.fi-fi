@@ -2,27 +2,22 @@
 title: Oheislaitteet
 description: Tässä aiheessa esitellään Commercen oheislaitteisiin liittyvät käsitteet.
 author: BrianShook
-ms.date: 02/04/2022
-ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
+ms.date: 03/01/2022
+ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.custom:
 - "268444"
 - intro-internal
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e60b369feff5bf17f58d6a3b4c9e9b290343b1ae
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092481"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370973"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
@@ -45,7 +40,7 @@ Laitteet voidaan yhdistää seuraaviin sovellustyyppeihin: Retail Modern POS, Re
 
 ### <a name="modern-pos"></a>Moderni myyntipiste
 
-Modern POS on Microsoft Windowsin POS-ohjelma. Se voidaan ottaa käyttöön Windows 10 -käyttöjärjestelmässä.
+Modern POS on Microsoft Windowsin POS-ohjelma. Se voidaan ottaa käyttöön Windows 10- ja Windows 11 -käyttöjärjestelmissä.
 
 ### <a name="cloud-pos"></a>Cloud POS
 
@@ -108,7 +103,7 @@ OPOS tukee henkilökohtaisen tunnistenumeron näppäimistöjä, mutta niiden hal
 
 ### <a name="secondary-display"></a>Toissijainen näyttö
 
-Kun toissijainen näyttö määritetään, perustiedot näytetään Windowsin numero 2 -näytössä. Toissijaisen näytön tarkoitus on tukea itsenäisten ohjelmistotoimittajien laajennuksia, koska käyttövalmista toissijaista näyttöä ei voi muokata. Se näyttää rajallisen määrän sisältöä.
+Kun toissijainen näyttö määritetään, perustiedot näytetään Windowsin numero 2 -näytössä. Oletusarvon mukaan toissijainen näyttö ei ole konfiguroitava, ja siinä näkyy rajoitettua sisältöä. Toissijaisen näytön tarkoituksena on tukea itsenäisen ohjelmistotoimittajan (ISV) laajennusta. 
 
 ### <a name="payment-device"></a>Maksulaite
 
@@ -132,7 +127,7 @@ Jotta suurinta osaa laitteista voidaan käyttää Commercen kanssa, myyntipistet
 Kuitin tulostaminen myyntipisteessä on optimoitu OPOS:ia varten. OPOS-tulostaminen on yleensä paljon nopeampaa kuin tulostaminen Windowsin kautta. Tämän vuoksi kannattaa käyttää OPOS:ia erityisesti ympäristöissä, joissa tulostetaan 40 sarakkeen kuitteja ja joiden tapahtuma-aikojen tulee olla lyhyitä. Useimmissa laitteissa käytetään OPOS-ohjausobjekteja. Jotkin OPOS-kuittitulostimet kuitenkin tukevat myös Windows-ohjaimia. Kun käytössä on Windows-ohjain, voit käyttää uusimpia fontteja ja yhtä verkkotulostinta useissa kassakoneissa. Windows-ohjainten käyttämisessä on kuitenkin huonoja puolia. Seuraavassa on joitakin esimerkkejä näistä huonoista puolista:
 
 -   Kun käytetään Windows-ohjaimia, kuvat muodostetaan ennen tulostamista. Tämän vuoksi tulostaminen on yleensä hitaampaa kuin OPOS-ohjausobjekteja käyttävissä tulostimissa.
--   Laitteet, jotka on yhdistetty tulostimen kautta (ketjutettu), eivät ehkä toimi oikein Windows-ohjainten kanssa. Esimerkiksi kassa ei ehkä avaudu tai luettelotulostin ei tulosta sanoja odotetulla tavalla.
+-   Laitteet, jotka on yhdistetty tulostimen kautta (ketjutettu), eivät ehkä toimi oikein Windows-ohjainten kanssa. Esimerkiksi kassa ei ehkä avaudu tai kuittitulostin ei toimi odotetulla tavalla.
 -   OPOS tukee myös laajempaa kuittitulostimille määritettyä muuttujajoukkoa, kuten paperin leikkaamista ja luettelon tulostamista.
 -   Windows-tulostimia ei tueta IIS-laiteasemalla. 
 
@@ -176,15 +171,15 @@ Suorita seuraavat vaiheet, kun haluat käyttää varattua laiteasemaa.
 1. Avaa Modern POS ei-kassatilassa ja ota laiteasemaominaisuudet käyttämällä **Laiteasemien hallinta** -toimintoa. Laite, jonka varattu laiteasema on oletusarvon mukaan aktiivinen. 
 1. Kirjaudu ulos Modern POS -sovelluksesta. Kirjaudu takaisin sisään ja avaa vuoro. Laiteprofiiliin määritetyt oheislaitteet ovat nyt käyttökelpoisia. 
 
-### <a name="shared"></a>Jaettu 
+### <a name="shared"></a>Jaettu
 
 Joskus kutsutaan myös IIS-laiteasemaksi. IIS tarkoittaa sitä, että POS-sovellus muodostaa yhteyden laitteistoasemaan Microsoftin Internet Information Servicesin kautta. Myyntipisteen sovellus muodostaa yhteyden IIS-laiteasemaan sen tietokoneen verkkopalveluiden avulla, johon laite on yhdistetty. Kun jaettu laiteasema on käytössä, laiteasemaan yhdistettyjä oheislaitteita voi käyttää missä tahansa sellaisessa myyntipisteen kassakoneessa, joka kuuluu samaan verkkoon kuin IIS-laiteasema. Koska vain Modern POS for Windowsille ja Androidille sisältää oheislaitteiden sisäänrakennetun tuen, kaikissa muissa Modern POS -sovelluksissa on käytettävä IIS-laiteasemaa. Näin laiteprofiilissa määritettyihin myyntipisteen oheislaitteisiin voidaan muodostaa yhteys. Tämän vuoksi kukin IIS-laiteaseman instanssi vaatii tietokoneen, jossa on käytössä verkkopalvelu ja sovellus, joka on yhteydessä laitteiden kanssa. 
 
-Jaetun laiteaseman avulla voidaan sallia useiden myyntipisteiden jakaminen oheislaitteiden kanssa tai käyttää yhdessä myyntipisteessä sidottujen tai oheislaitteiden hallinnassa. 
+Jaetun laiteaseman avulla voidaan sallia useiden myyntipisteiden jakaa oheislaitteet tai hallita sidottuja oheislaitteita yhdessä myyntipisteessä. 
 
 Kun laiteasemaa käytetään tukemaan oheislaitteiden jakamista useiden POS-asiakkaiden välillä, käytetään vain käteislaatikoita, kuittitulostimia ja maksupäätteitä. Yhteyttä ei voi muodostaa suoraan erillisiin viivakoodin lukulaitteisiin, magneettinauhan lukulaitteisiin, vaakoihin tai muihin laitteisiin. Muussa tapauksessa aiheutuu ristiriitoja, kun useiden myyntipisteiden laitteet yrittävät käyttää oheislaitteita samaan aikaan. Ristiriitoja hallitaan tuetuissa laitteissa seuraavalla tavalla:
 
--   **Kassa** – Kassa avautuu laitteelle lähetetyn tapahtuman kautta. Ainoa mahdollinen ongelma kassan kutsumisessa voi tapahtua, kun kassa on jo auki. Jos käytössä on jaettuja laiteasemia, kassan tyypiksi laiteprofiilissa on määritettävä **Jaettu**. Tämän asetuksen seurauksena myyntipiste ei tarkista, onko kassa jo auki, kun se lähettää avauskomennon.
+-   **Kassa** – Kassa avautuu laitteelle lähetetyn tapahtuman kautta. Ongelma kassan kutsumisessa voi tapahtua, kun kassa on jo auki. Jos käytössä on jaetun laiteaseman määritys, kassan tyypiksi laiteprofiilissa on määritettävä **Jaettu**. Tämän asetuksen seurauksena myyntipiste ei tarkista, onko kassa jo auki, kun se lähettää avauskomennon.
 -   **Kuittitulostin** – Jos laiteasemalle lähetetään kaksi kuittitulostuskomentoa samaan aikaan, jompikumpi komento menetetään laitteesta riippuen. Joissakin laitteissa on käytössä sisäinen muisti tai ryhmitystoiminto, jolloin tämä ongelma ei esiinny. Jos tulostuskomento ei onnistu, kassanhoitaja vastaanottaa virhesanoman. Tämän jälkeen hän voi lähettää tulostuskomennon uudelleen myyntipisteestä.
 -   **Maksupääte** – Jos kassanhoitaja yrittää käyttää tapahtumassa maksuvälinettä maksupäätteellä, joka on jo käytössä, kassanhoitaja vastaanottaa sanoman, jossa kerrotaan päätteen olevan käytössä ja kehotetaan yrittämään myöhemmin uudelleen. Kassanhoitajat yleensä näkevät, että pääte on käytössä, ja odottavat tapahtuman valmistumista ennen kuin yrittävät käyttää maksuvälinettä uudelleen.
 
@@ -205,7 +200,7 @@ Laiteasema sisältää logiikan, joka ohjaa fyysisesti liitettyjä ja verkossa k
 ## <a name="setup-and-configuration"></a>Asetukset ja määrittäminen
 ### <a name="hardware-station-installation"></a>Laiteaseman asentaminen
 
-Lisätietoja on kohdassa [Laiteaseman määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
+Lisätietoja IIS-laiteaseman asentamisesta on kohdassa [Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Moderni POS Windowsille -sovelluksen asetus ja määritys
 
@@ -431,7 +426,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille ja Androidill
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Kaikki Modern POS -asiakasohjelmat jakavat IIS-laiteaseman
+### <a name="all-modern-pos-clients-that-share-an-iis-hardware-station"></a>Kaikki Modern POS -asiakasohjelmat, jotka jakavat IIS-laiteaseman
 
 > [!NOTE]
 > Kun IIS-laiteasema on jaettu, useat laitteet voivat käyttää laiteasemaa samanaikaisesti. Tässä tilanteessa tulee käyttää vain seuraavan taulukon laitteita. Jos yrität jakaa laitteita, joita taulukosta ei löydy, kuten viivakoodin tai magneettinauhan lukulaitteita, tuloksena on virhe, kun useat laitteet yrittävät käyttää samaa oheislaitetta. Tulevissa versioissa tällaisen määrityksen tekeminen estetään eksplisiittisesti.
@@ -487,7 +482,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille ja Androidill
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Tuettujen skenaarioiden määritys
-Lisätietoja laiteprofiilien luomisesta on kohdassa [Kanava-asiakasohjelmien, kuten kassakoneiden ja laiteasemien, määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md). 
+Lisätietoja laiteprofiilien luomisesta on kohdassa [Oheislaitteiden yhdistämiseen myyntipisteeseen](define-maintain-channel-clients-registers-hw-stations.md). 
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS Windowsille ja IPC-laiteasema (sisäänrakennettu)
 
@@ -623,9 +618,8 @@ Seuraavat oheislaitteet on testattu käyttämällä Modern POS Windowsille -sove
 | Valmistaja | Malli    | Käyttöliittymä | Kommentit                |
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Epson        | TM-T88VI | OPOS      |                         |
-| Epson        | TM-T88   | Mukautettu    | Yhdistetty verkon välityksellä   |
-| HP           | F7M67AA  | OPOS      | Powered USB             |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
 | Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä   |
 | Star         | mPOP     | OPOS      | Yhdistetty Bluetoothilla |
 | Toshiba      | HSP100   | OPOS      |                         |
@@ -636,31 +630,22 @@ Seuraavat oheislaitteet on testattu käyttämällä Modern POS Windowsille -sove
 
 #### <a name="bar-code-scanner"></a>Viivakoodin lukulaite
 
-| Valmistaja  | Malli         | Käyttöliittymä | Huomautukset |
-|---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Symboli        | LS2208        | OPOS      |          |
-| HP-integroitu | E1L07AA       | OPOS      |          |
+| Valmistaja  | Malli         | Käyttöliittymä | Kommentit |
+| ------------- | ------------- | --------- | -------- |
 | Datalogic     | Magellan 8400 | OPOS      |          |
+| Honeywell     | 1900          | UWP       |          |
+| HP-integroitu | E1L07AA       | OPOS      |          |
+| Symboli        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>PIN-näppäimistö
+#### <a name="payment-terminals-and-pin-pads"></a>Maksupäätteet ja PIN-näppäimistöt
 
-| Valmistaja | Malli  | Käyttöliittymä | Huomautukset                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vaatii maksuyhdistimen mukauttamisen |
+Dynamics 365 Commerce tarjoaa käyttövalmiin ratkaisun maksupalveluiden Adyen-integrointiin. [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) -yhdistin käyttää laiteriippumatonta [Adyen-maksupäätteen ohjelmointirajapintaa](https://www.adyen.com/blog/introducing-the-terminal-api) ja se voi olla vuorovaikutuksessa kaikkien tämän ohjelmointirajapinnan tukemien maksupäätteiden kanssa. Kattava luettelo tuetuista maksupäätteistä on kohdassa [Adyen POS -päätteet](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Maksupääte
-
-| Valmistaja | Malli | Käyttöliittymä | Huomautukset                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen                                |
-| VeriFone     | MX925 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
-| VeriFone     | MX915 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
+Voit myös käyttää muita maksutoimittajia Dynamics 365 Commercen kanssa luomalla mukautetun liittimen. Mitä tahansa maksupäätettä, jota maksupalvelu tukee, voidaan käyttää Dynamics 365 Commercen kanssa. Vastaavasti Dynamics 365 Commerce mahdollistaa minkä tahansa maksulaitteen integrointimallin, jota maksupalvelu tukee, esimerkiksi paikallisen IP-osoitteen, pilvipalveluliittymän tai suoran yhteyden (esimerkiksi USB:n kautta) myyntipisteeseen. Lisätietoja: [Kattavan maksun integroinnin luominen maksupäätteelle](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassa
 
-| Valmistaja | Malli     | Käyttöliittymä | Huomautukset                |
+| Valmistaja | Malli     | Käyttöliittymä | Kommentit                |
 |--------------|-----------|-----------|-------------------------|
 | Star         | mPOP      | OPOS      | Yhdistetty Bluetoothilla |
 | APG          | Atwood    | Mukautettu    | Yhdistetty verkon välityksellä   |
@@ -670,14 +655,14 @@ Seuraavat oheislaitteet on testattu käyttämällä Modern POS Windowsille -sove
 
 #### <a name="line-display"></a>Rivinäyttö
 
-| Valmistaja  | Malli   | Käyttöliittymä | Huomautukset |
-|---------------|---------|-----------|----------|
-| HP-integroitu | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| Valmistaja | Malli    | Käyttöliittymä | Kommentit |
+| ------------ | -------- | --------- | -------- |
+| Epson        | DM-D110  | OPOS      |          |
+| HP           | T-sarja | OPOS      |          |
 
 #### <a name="signature-capture"></a>Allekirjoituksen tarkistus
 
-| Valmistaja | Malli  | Käyttöliittymä | Huomautukset |
+| Valmistaja | Malli  | Käyttöliittymä | Kommentit |
 |--------------|--------|-----------|----------|
 | Scriptel     | ST1550 | OPOS      |          |
 
@@ -701,43 +686,33 @@ Seuraavat oheislaitteet on testattu käyttämällä varattua (ei jaettua) IIS-la
 
 #### <a name="printer"></a>Tulostin
 
-| Valmistaja | Malli    | Käyttöliittymä | Kommentit              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | Mukautettu    | Yhdistetty verkon välityksellä |
-| HP           | F7M67AA  | OPOS      | Powered USB           |
-| Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
-
-
+| Valmistaja | Malli    | Käyttöliittymä | Kommentit                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
+| Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä   |
+| Star         | mPOP     | OPOS      | Yhdistetty Bluetoothilla |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="bar-code-scanner"></a>Viivakoodin lukulaite
 
-| Valmistaja  | Malli   | Käyttöliittymä | Kommentit |
-|---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Symboli        | LS2208  | OPOS      |          |
-| HP-integroitu | E1L07AA | OPOS      |          |
+| Valmistaja  | Malli         | Käyttöliittymä | Kommentit |
+| ------------- | ------------- | --------- | -------- |
+| Datalogic     | Magellan 8400 | OPOS      |          |
+| HP-integroitu | E1L07AA       | OPOS      |          |
+| Symboli        | LS2208        | OPOS      |          |
 
-#### <a name="pin-pad"></a>PIN-näppäimistö
+#### <a name="payment-terminals-and-pin-pads"></a>Maksupäätteet ja PIN-näppäimistöt
 
-| Valmistaja | Malli  | Käyttöliittymä | Huomautukset                                        |
-|--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Vaatii maksuyhdistimen mukauttamisen |
+Dynamics 365 Commerce tarjoaa käyttövalmiin ratkaisun maksupalveluiden Adyen-integrointiin. [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) -yhdistin käyttää laiteriippumatonta [Adyen-maksupäätteen ohjelmointirajapintaa](https://www.adyen.com/blog/introducing-the-terminal-api) ja se voi olla vuorovaikutuksessa kaikkien tämän ohjelmointirajapinnan tukemien maksupäätteiden kanssa. Kattava luettelo tuetuista maksupäätteistä on kohdassa [Adyen POS -päätteet](https://www.adyen.com/pos-payments/terminals).
 
-#### <a name="payment-terminal"></a>Maksupääte
-
-| Valmistaja | Malli | Käyttöliittymä | Huomautukset                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen                                |
-| VeriFone     | MX925 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
-| VeriFone     | MX915 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
+Voit myös käyttää muita maksutoimittajia Dynamics 365 Commercen kanssa luomalla mukautetun liittimen. Mitä tahansa maksupäätettä, jota maksupalvelu tukee, voidaan käyttää Dynamics 365 Commercen kanssa. Vastaavasti Dynamics 365 Commerce mahdollistaa minkä tahansa maksulaitteen integrointimallin, jota maksupalvelu tukee, esimerkiksi paikallisen IP-osoitteen, pilvipalveluliittymän tai suoran yhteyden (esimerkiksi USB:n kautta) myyntipisteeseen. Lisätietoja: [Kattavan maksun integroinnin luominen maksupäätteelle](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassa
 
-| Valmistaja | Malli     | Käyttöliittymä | Huomautukset              |
+| Valmistaja | Malli     | Käyttöliittymä | Kommentit              |
 |--------------|-----------|-----------|-----------------------|
 | APG          | Atwood    | Mukautettu    | Yhdistetty verkon välityksellä |
 | Star         | SMD2-1317 | OPOS      |                       |
@@ -780,26 +755,24 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 
 #### <a name="printer"></a>Tulostin
 
-| Valmistaja | Malli    | Käyttöliittymä | Kommentit              |
-| ------------ | -------- | --------- | --------------------- |
-| Epson        | TM-T88V  | OPOS      |                       |
-| Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88   | Mukautettu    | Yhdistetty verkon välityksellä |
-| HP           | F7M67AA  | OPOS      | Powered USB           |
-| Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä |
-| Toshiba      | HSP100   | OPOS      |                       |
-| Toshiba      | HSP150   | OPOS      |                       |
+| Valmistaja | Malli    | Käyttöliittymä | Kommentit                |
+| ------------ | -------- | --------- | ----------------------- |
+| Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88IV | OPOS      |                         |
+| HP           | H300     | OPOS      | Powered USB             |
+| Star         | mPOP     | OPOS      | Yhdistetty Bluetoothilla |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 #### <a name="payment-terminal"></a>Maksupääte
 
-| Valmistaja | Malli | Käyttöliittymä | Kommentit                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
-| VeriFone     | MX915 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
+Dynamics 365 Commerce tarjoaa käyttövalmiin ratkaisun maksupalveluiden Adyen-integrointiin. [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) -yhdistin käyttää laiteriippumatonta [Adyen-maksupäätteen ohjelmointirajapintaa](https://www.adyen.com/blog/introducing-the-terminal-api) ja se voi olla vuorovaikutuksessa kaikkien tämän ohjelmointirajapinnan tukemien maksupäätteiden kanssa. Kattava luettelo tuetuista maksupäätteistä on kohdassa [Adyen POS -päätteet](https://www.adyen.com/pos-payments/terminals).
+
+Voit myös käyttää muita maksutoimittajia Dynamics 365 Commercen kanssa luomalla mukautetun liittimen. Mitä tahansa maksupäätettä, jota maksupalvelu tukee, voidaan käyttää Dynamics 365 Commercen kanssa. Vastaavasti Dynamics 365 Commerce mahdollistaa minkä tahansa maksulaitteen integrointimallin, jota maksupalvelu tukee, esimerkiksi paikallisen IP-osoitteen, pilvipalveluliittymän tai suoran yhteyden (esimerkiksi USB:n kautta) myyntipisteeseen. Lisätietoja: [Kattavan maksun integroinnin luominen maksupäätteelle](dev-itpro/end-to-end-payment-extension.md).
 
 #### <a name="cash-drawer"></a>Kassa
 
-| Valmistaja | Malli     | Käyttöliittymä | Huomautukset              |
+| Valmistaja | Malli     | Käyttöliittymä | Kommentit              |
 |--------------|-----------|-----------|-----------------------|
 | APG          | Atwood    | Mukautettu    | Yhdistetty verkon välityksellä |
 | Star         | SMD2-1317 | OPOS      |                       |
@@ -822,7 +795,7 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 
 **Ratkaisu:** Virheen voi aiheuttaa jokin seuraavista seikoista:
 
--   Laiteasemaa ei ole asennettu oikein pääkonttorissa. Tarkista aiemmin tässä aiheessa esiteltyjen vaiheiden avulla, ovatko laiteaseman profiili ja laiteasema oikein määritetty.
+-   Laiteasemaa ei ole asennettu oikein Headquartersissa. Lisätietoja on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   Töitä ei ole suoritettu kanavan määrityksen päivittämistä varten. Tässä tapauksessa tulee suorittaa 1070-työ kanavan määritystä varten.
 
 ### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Moderni POS ei näytä uuden kassan asetuksia

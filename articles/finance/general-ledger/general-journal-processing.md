@@ -2,7 +2,7 @@
 title: Yleisen kirjauskansion käsittely
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Financen ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726774"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367877"
 ---
 # <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
 
@@ -101,7 +101,7 @@ Kirjauskansiosivulla on painike, jonka avulla voit vapauttaa kirjauskansion, jon
 Mahdollisuus palauttaa kirjauskansio työn kulussa, jonka tila on "peruuttamaton", on käytössä käyttämällä kirjauskansion ja **Työnkulkuhistoria** -sivun **Työnkulku**-painiketta. Tämän toiminnon ottaa käyttöön ominaisuus nimeltä **Kirjauskansion työnlun tilan palautus** **Ominaisuuksien hallinta** -sivulla.
 
 ## <a name="delete-journal-lines"></a>Poista kirjauskansion rivit
-Mahdollisuus poistaa kaikki kirjauskansion rivit nopeasti on otettu käyttöön kirjauskansion kohdassa **Toiminnot** > **Poista kirjauskansion rivit**. Voit ottaa tämän toiminnon käyttöön valitsemalla **Ominaisuuksien hallinta** -sivulla **Poista kirjauskansion suorituskyvyn optimoinnit**.
+Mahdollisuus poistaa kaikki kirjauskansion rivit nopeasti on otettu käyttöön kirjauskansion kohdassa **Toiminnot** > **Poista kirjauskansion rivit**. Voit ottaa tämän toiminnon käyttöön valitsemalla **Ominaisuuksien hallinta** -sivulla **Poista kirjauskansion suorituskyvyn optimoinnit**. Tämä ominaisuus vaikuttaa laajennuksiin **LedgerJournalTrans**-taulussa, ja sen **Poista**-menetelmään, sillä rivien joukko poistetaan kutsumatta jokaisen rivin **Poista**-menetelmää. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103937"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384692"
 ---
 # <a name="inventory-value-reports"></a>Varastoarvon raportit
 
@@ -102,7 +102,7 @@ Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistett
         - Vastaanotetut mutta vielä laskuttamattomat nimikkeen, kun liittyvän nimimalliryhmän **Kirjaa varastotilanne** -vaihtoehdon valinta on poistettu.
         - Vastaanotetut mutta laskuttamattomat nimikkeen, kun **Kirjaa vastaanotto kirjanpitoon** -vaihtoehdon valinta on poistettu **Tuotteen vastaanotto** -pikavälilehdessä **Ostoreskontran parametrit** -sivun **Yleiset**-välilehdessä (**Ostoreskontra \> Asetukset \> Ostoreskontran parametrit**).
 
-    - **Laske keskimääräinen yksikkökustannus** – Kun asetuksena on *Kyllä*, näytettävä sarake näyttää keskimääräisen yksikkökustannuksen. Keskimääräinen yksikkökustannus on kokonaissummalla jaettu kokonaismäärä.
+    - **Laske keskimääräinen yksikkökustannus** – Kun asetuksena on *Kyllä*, näytettävä sarake näyttää keskimääräisen yksikkökustannuksen. Keskimääräinen yksikkökustannus on kokonaismäärällä jaettu kokonaissumma.
     - **Kokonaismäärä ja -arvo** – Kun asetukseksi valitaan *Kyllä*, näytettävät sarakkeet näyttävät varastotilanteen (ja kirjanpitovaraston määrien) kokonaismäärän sekä varastotilanteen (ja kirjanpitovaraston summien) kokonaissumman. Voit määrittää tämän asetuksen arvoksi *Kyllä* vain, jos **Tee yhteenveto fyysisistä ja taloudellisista arvoista** -asetuksen arvoksi on määritetty *Ei*.
     - **Varastodimensiot** – Tässä ruudukossa valitaan kunkin raportissa näytettävän dimension **Näytä**-valintaruutu. Vain niiden dimensioiden arvot näkyvät raportissa, joissa **Kirjanpitovarasto**-asetus on otettu käyttöön. Muissa dimensioissa näkyy vain tyhjiä sarakkeita. Näytettäviksi valituissa dimensioissa voidaan lisäksi näyttää yhteissummat valitsemalla **Yhteensä**-valintaruutu.
     - **Resurssitunnus** – Kun **Näytä**-asetukseksi valitaan *Kyllä*, näytettävä sarake määrittää nimikkeen kullekin riville. Myös yhteissummat näytetään, kun **Yhteensä**-asetukseksi valitaan *Kyllä*. Kullakin rivillä olevan nimikkeen perusteella sarakkeessa näkyy jokin seuraavista tietotyypeistä:

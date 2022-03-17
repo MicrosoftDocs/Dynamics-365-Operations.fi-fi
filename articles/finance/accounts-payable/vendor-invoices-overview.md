@@ -2,13 +2,13 @@
 title: Toimittajan laskujen yleiskatsaus
 description: Tässä aiheessa on yleistietoja toimittajan laskuista.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "13971"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985334"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358414"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
@@ -51,10 +51,10 @@ Seuraavissa osissa on lisätietoja tavoista, joilla voit luoda **Avoimet toimitt
 
 Kun avaat toimittajan laskun liittyvästä ostotilauksesta, järjestelmä luo laskurivit ostotilauksesta. Järjestelmä noutaa määrät oletusarvoisesti tuotteen vastaanotosta. Voit kuitenkin mitä tahansa seuraavista oletustoiminnoista:
 
-- **Vastaanottomäärä nyt** – Käytä tätä vaihtoehtoa osatoimituksissa. Järjestelmä määrittää oletusarvon **Määrä**-kentässä ostotilauksen **Ota vastaan nyt** -kentässä määritetystä määrästä.
-- **Tilattu määrä** – Käytä täydellisissä toimituksissa tätä vaihtoehtoa. Järjestelmä määrittää oletusarvon **Määrä**-kentässä ostotilauksen **Tilattu** -kentässä määritetystä määrästä.
+- **Vastaanottomäärä nyt** – Käytä tätä vaihtoehtoa osatoimituksissa. Määritetään oletusarvo **Määrä**-kentässä ostotilauksen **Ota vastaan nyt** -kentässä määritetystä määrästä.
+- **Tilattu määrä** – Käytä täydellisissä toimituksissa tätä vaihtoehtoa. Määritetään oletusarvo **Määrä**-kentässä ostotilauksen **Tilattu** -kentässä määritetystä määrästä.
 - **Rekisteröity määrä** – Käytä tätä vaihtoehtoa, jos nimike on rekisteröitävä **Ota vastaan nyt**-sivun määritysten mukaisesti. **Määrä**-kentän oletusarvo on fyysinen päivitetty määrä, joka on rekisteröity.
-- **Tuotteen vastaanottomäärä** – Käytä tätä vaihtoehtoa, jos tilaukseen on jo vastaanotettu tuotteen vastaanotto. Järjestelmä ottaa oletusarvon **Määrä**-kentästä käytettävissä olevien tuotteen vastaanottojen kokonaismäärästä.
+- **Tuotteen vastaanottomäärä** – Käytä tätä vaihtoehtoa, jos tilaukseen on jo vastaanotettu tuotteen vastaanotto. **Määrä**-kentän oletusarvo on käytettävissä olevien tuotteen vastaanottojen kokonaismäärä.
 - **Rekisteröity määrä ja rekisteröidyt palvelut** – Käytä tätä vaihtoehtoa, jos määrä on rekisteröity varastoitavien nimikkeiden tai ei-varastoitavien nimikkeiden saapumisen kirjauskansioihin. Tämä vaihtoehto sisältää myös palveluja, riippumatta siitä, onko niitä rekisteröity.
 
 Jos yritys käyttää laskujen täsmäytystä, voit tarkastella määrän täsmäytyksen tuloksia **Tuotteen vastaanoton määrän vastaavuus** -sarakkeessa. Voit tarkastella määrän täsmäytyksen tuloksia myös käyttämällä toimintoruudun **Tarkista**-välilehden **Täsmäytyksen tiedot** -painiketta.
@@ -65,7 +65,7 @@ Voit lisätä toimittajan laskuun sellaisen rivin, jota ei ole ostotilauksessa. 
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Toimittajan laskun lähettäminen tarkistettavaksi
 
-Organisaatiosi saattaa hallita toimittajan laskujen tarkistusprosessia työnkulkujen avulla. Työnkulun tarkistusta voidaan edellyttää laskun ylätunnisteeseen, laskuriviin tai molempiin. Työnkulun ohjausobjekteja käytetään otsikkoon tai riviin sen perusteella, missä kohdistus on, kun valitset ohjausobjektin. **Kirjaa**-painikkeen sijaan näkyvissä on **Lähetä**-painike, jolla voit lähettää toimittajan laskun tarkistusprosessiin.
+Organisaatiosi saattaa hallita toimittajan laskujen tarkistusprosessia työnkulkujen avulla. Työnkulun tarkistusta voidaan edellyttää laskun ylätunnisteeseen, laskuriviin tai molempiin. Työnkulun ohjausobjekteja käytetään otsikkoon tai riviin sen perusteella, missä kohdistus on, kun valitset ohjausobjektin. **Kirjaa**-painikkeen sijaan **Lähetä**-painike lähettää toimittajan laskun tarkistusprosessiin.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Estetään laskua lähtemästä työnkulkuun 
 
@@ -102,7 +102,7 @@ Voit määrittää erään sisällytettävien laskujen määrän ja odotusajan t
 
 ## <a name="working-with-multiple-invoices"></a>Useita laskujen käsittely
 
-Voit käsitellä useita laskuja samaan aikaan ja kirjata ne kaikki samaan aikaan. Jos sinun on luotava useita laskuja, käytä **Odottavat toimittajan laskut** -sivua. Jos sinun on kirjattava ja tulostettava useita toimittaja laskuja, käytä laskujen hyväksymiskirjauskansiota. Jos käytät laskun hyväksynnän kirjauskansiota, ostotilaukselle on oltava kirjattuna ainakin yksi tuotteen vastaanotto ja että ostotilauksen laskun on oltava kirjattuna laskurekisteriin. Laskun kirjanpitotiedot ovat peräisin laskusta, joka on kirjattu rekisteriin.
+Voit käsitellä useita laskuja samaan aikaan ja kirjata ne kaikki samaan aikaan. Jos sinun on luotava useita laskuja, käytä **Odottavat toimittajan laskut** -sivua. Jos sinun on kirjattava ja tulostettava useita toimittaja laskuja, käytä **Laskujen hyväksymiskirjauskansiota**. Jos käytät **laskun hyväksynnän kirjauskansiota**, ostotilaukselle on oltava kirjattuna ainakin yksi tuotteen vastaanotto ja että ostotilauksen laskun on oltava kirjattuna laskurekisteriin. Laskun kirjanpitotiedot ovat peräisin laskusta, joka on kirjattu rekisteriin.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Palauta toimittajalaskut, joita käytetään
 

@@ -2,23 +2,24 @@
 title: Saksan tilikausirekisteröintipalvelun integroinnin malli
 description: Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
-ms.openlocfilehash: 128c94407a283bf45e5626de060cee82430f087b
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 65315a9fd6bc1af26bc225220e096aee4da09be2
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076859"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388156"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Saksan tilikausirekisteröintipalvelun integroinnin malli
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
 
@@ -396,14 +397,28 @@ Suorita nämä vaiheet, kun haluat määrittää kehitysympäristön, jonka avul
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Asenna Hardware station -laajennukset:
+1. Asenna veroliittimen laajennukset:
 
-    - Etsi **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** -kansiosta **HardwareStation.EFR.Installer**-asennusohjelma.
-    - Käynnistä laajennusten asennusohjelma komentoriviltä:
+    Voit asentaa veroliittimen laajennukset [Hardware stationissa](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) tai [POS-kassapäätteessä](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Asenna Hardware station -laajennukset:
+
+        1. Etsi **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** -kansiosta **HardwareStation.EFR.Installer**-asennusohjelma.
+        1. Käynnistä laajennuksen asennusohjelma komentoriviltä suorittamalla seuraava komento.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Asenna myyntipisteen laajennukset:
+
+        1. Avaa myyntipisteen veroliittimien esimerkkiratkaisu kohdassa **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln** ja muodosta se.
+        1. Etsi **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** -kansiosta **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer**-asennusohjelma..
+        1. Käynnistä laajennuksen asennusohjelma komentoriviltä suorittamalla seuraava komento.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Tuotantoympäristö
 
@@ -452,5 +467,28 @@ Liitin tukee seuraavia pyyntöjä:
 #### <a name="configuration"></a>Konfigurointi
 
 Veroliittimen konfiguraatiotiedosto sijaitsee kohdassa **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä. Tiedoston tarkoitus on ottaa käyttöön asetukset, joiden avulla veroyhdistin voidaan konfiguroida Commerce Headquartersista. Tiedostomuoto on verotuksen integroinnin konfiguraation vaatimusten mukainen.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Myyntipisteen veroyhdistimen laajennuksen rakenne
+
+Myyntipisteen veroyhdistimen laajennuksen tarkoituksena on kommunikoida verorekisteröintipalvelun kanssa myyntipisteestä. Se käyttää tietoliikenteeseen HTTPS-protokollaa.
+
+#### <a name="fiscal-connector-factory"></a>Veroliittimen luontitoiminto
+
+Veroliittimen luontitoiminto yhdistää liittimien nimen veroliittimien toteutukseen ja se sijaitsee **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**-tiedostossa. Yhdistimen nimen on oltava sama kuin Commerce Headquarters -sovelluksessa määritetty veroyhdistimen nimi.
+
+#### <a name="efr-fiscal-connector"></a>EFR-veroliitin
+
+EFR-veroliitin sijaitsee **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**-tiedostossa. Se toteuttaa **IFiscalConnector**-rajapinnan, joka tukee seuraavia pyyntöjä:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – Tämä pyyntö lähettää asiakirjoja kirjanpidon rekisteröintipalveluun ja palauttaa vastauksen pyyntöön.
+- **FiscalRegisterIsReadyClientRequest** – Tätä pyyntöä käytetään kirjanpidon rekisteröintipalvelun kunnon tarkastusta varten.
+- **FiscalRegisterInitializeClientRequest** – Tätä pyyntöä käytetään kirjanpidon rekisteröintipalvelun alustamiseen.
+
+#### <a name="configuration"></a>Konfiguraatio
+
+Määritystiedosto sijaitsee **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä. Tiedoston tarkoitus on ottaa käyttöön asetukset, joiden avulla veroyhdistin voidaan konfiguroida Commerce Headquartersista. Tiedostomuoto on verotuksen integroinnin konfiguraation vaatimusten mukainen. Seuraavat asetukset lisätään:
+
+- **Päätepisteen osoite** – verorekisteröintipalvelun URL-osoite.
+- **Aikakatkaisu** – Aika millisekunteina, jonka liitin odottaa verorekisteröintipalvelun vastausta.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

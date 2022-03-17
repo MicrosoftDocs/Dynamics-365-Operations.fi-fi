@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5b07c1d4c2189184b2ad29d46ec2aef0ee03c1c0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985359"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358216"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automaattinen kohdistaminen toimittajan laskuihin
 
@@ -36,12 +36,12 @@ Seuraavissa kohdissa kuvaillaan, miten ennakkomaksuja käytetään, kun noudatet
 - **Useita toimittajan laskuja ostotilausta kohden** – Ostotilauksen ennakkomaksua sovelletaan ensimmäisenä tuotuun toimittajan laskuun. Jos ennakkomaksun summa ylittää laskun summan, ennakkomaksun soveltaminen epäonnistuu, jolloin ennakkomaksu on määritettävä manuaalisesti.
 - **Useita toimittajan laskuja useille ostotilauksille** – Ostotilausten ennakkomaksuja sovelletaan ensimmäiseen merkitykselliseen toimittajan laskuun. Jos ennakkomaksun summa ylittää laskun summan, ennakkomaksun soveltaminen epäonnistuu, jolloin ennakkomaksut on määritettävä manuaalisesti. Jos ennakkomaksujen ensimmäiseen laskuun kohdistamisen jälkeen on jäljellä ennakkomaksuja, ne voidaan kohdistaa seuraaviin laskuihin.
 
-Jos järjestelmä yrittää kohdistaa ennakkomaksun, mutta ennakkomaksu epäonnistuu, toimintatapa perustuu **Estä seurannan automaattinen prosessi ennakkomaksun kohdistusvirheen sattuessa** -asetuksen määritykseen:
+Jos ennakkomaksun käyttö epäonnistuu, **Estä seurannan automaattinen prosessi ennakkomaksun kohdistusvirheen sattuessa** -asetus määrittää seuraavat vaiheet:
 
 - **Kyllä** – Virhesanoma Ennakkomaksun automattinen kohdistus: epäonnistui lisätään automaatiohistoriaan, ja lasku jää odottavien toimittajien laskujen luetteloon. Lasku pysyy estettynä, kunnes kohdistat ennakkomaksun manuaalisesti.
 
-    Manuaalista ennakkomaksujen kohdistusta varten on siirryttävä odottavaan laskuun. Määritä **Laskun tiedot** -sivulla **Sisällytä automaattiseen käsittelyyn** -asetuksen arvoksi estetyn laskun osalta **Ei**. Nyt voit kohdistaa ennakkomaksun manuaalisesti. Kun ennakkomaksu on kohdistettu, palauta **Sisällytä automaattiseen käsittelyyn** -asetuksen arvoksi **Kyllä**, jotta lasku voidaan käsitellä automaattisesti.
+Manuaalista ennakkomaksujen kohdistusta varten on siirryttävä odottavaan laskuun. Määritä **Laskun tiedot** -sivulla **Sisällytä automaattiseen käsittelyyn** -asetuksen arvoksi estetyn laskun osalta **Ei**. Nyt voit kohdistaa ennakkomaksun manuaalisesti. Kun ennakkomaksu on kohdistettu, palauta **Sisällytä automaattiseen käsittelyyn** -asetuksen arvoksi **Kyllä**, jotta lasku voidaan käsitellä automaattisesti.
 
-    Voit myös ohittaa ennakkomaksun automaattisen kohdistuksen määrittämällä **Sisällytä automaattiseen käsittelyyn** -asetuksen arvoksi **Ei** ja palauttamalla sen arvoksi **Kyllä**. Saat seuraavan sanoman: Ostotilaukselle on jo olemassa ennakkomaksu. Haluatko ohittaa sen valitussa toimittajan laskussa? Valitse **Kyllä**. Sanoma Ennakkomaksun kohdistus ohitettu manuaalisesti lisätään automaatiohistoriaan, ja toimittajan lasku ei ole estettynä, kun automaattinen käsittely suoritetaan uudelleen.
+Voit myös ohittaa ennakkomaksun automaattisen kohdistuksen määrittämällä **Sisällytä automaattiseen käsittelyyn** -asetuksen arvoksi **Ei** ja palauttamalla sen arvoksi **Kyllä**. Saat seuraavan sanoman: Ostotilaukselle on jo olemassa ennakkomaksu. Haluatko ohittaa sen valitussa toimittajan laskussa? Valitse **Kyllä**. Sanoma Ennakkomaksun kohdistus ohitettu manuaalisesti lisätään automaatiohistoriaan, ja toimittajan lasku ei ole estettynä, kun automaattinen käsittely suoritetaan uudelleen.
 
 - **Ei** – Seuranta-automaation prosessit jatkuvat. Voit silti kohdistaa ennakkomaksun tilityksen yhteydessä.

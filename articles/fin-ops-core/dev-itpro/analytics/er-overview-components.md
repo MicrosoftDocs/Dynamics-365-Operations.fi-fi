@@ -15,12 +15,12 @@ ms.topic: overview
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a24aa52c805722c20045b6227ceac0103cfbe6b
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: aca1b9bbca490a8a9551ed97d6e100c9115a0d41
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324032"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367821"
 ---
 # <a name="electronic-reporting-components"></a>Sähköisen raportoinnin osat
 
@@ -91,9 +91,23 @@ Muotokomponentin avulla tietyt raporttitulostuksessa käytettäviä tiedostoja v
 
 Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
 
-[![Saapuvien muotokomponenttien tiedonkulku.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Lähtevien muotokomponenttien tiedonkulku](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
-Jos haluat tuoda saapuvan sähköisen asiakirjan tietoja suorittamalla sähköisen raportoinnin muotomääritykset, sinun on tunnistettava muotomäärityksen toivotut yhdistämismääritykset ja mallin yhdistämismääritysten integrointikohta. Voit käyttää saman mallin yhdistämismäärityksiä ja kohteita yhdessä erityyppisten saapuvien asiakirjojen erilaisten muotojen kanssa.
+Voit suorittaa yksittäisen sähköisen raportoinnin muotomäärityksen ja luoda lähtevän sähköisen asiakirjan tunnistamalla muotomääritysten yhdistämismääritykset.
+
+#### <a name="format-components-for-incoming-electronic-documents"></a>Saapuvien sähköisten asiakirjojen muotokomponentit
+Muotokomponentti on saapuvan asiakirjan malli, joka tuodaan suorituksen aikana. Malli sisältää seuraavat elementit:
+
+- Muoto, joka määrittää suorituksen aikana tuodun, tietoja sisältävän saapuvan sähköisen asiakirjan rakenteen ja sisällön. Saapuva asiakirja jäsennetään muotokomponentin avulla eri muodoissa, kuten teksti- ja XML-muodossa.
+- Muodon yhdistämismääritys, joka sitoo yksittäiset muotoelementit toimialuekohtaisen tietomallin elementteihin. Tietomallin elementit määrittävät suorituksen aikana tiedonkulun ja saapuvan asiakirjan tietojen tuontisäännöt ja tallentavat tiedot sitten tietomalliin.
+- Muotomäärityksen vahvistaminen joukkona määritettävissä olevia sääntöjä, jotka ohjaavat tietojen tuontia suorituksen aikana asiayhteyden mukaisesti. Sääntö voi esimerkiksi pysäyttää sellaisten tiliotteen tietojen tuonnin, jossa on toimittajan maksuja, ja aiheuttaa poikkeuksen, kun tietyt toimittajan määritteet, kuten toimittajan tunnuskoodi, puuttuvat.
+
+Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
+
+[![Saapuvien muotokomponenttien tiedonkulku](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+
+Jos haluat tuoda saapuvan sähköisen asiakirjan tietoja suorittamalla sähköisen raportoinnin muotomääritykset, sinun on tunnistettava muotomäärityksen toivotut yhdistämismääritykset sekä mallin yhdistämismääritysten integrointikohta. Voit käyttää saman mallin yhdistämismäärityksiä ja kohteita yhdessä erityyppisten saapuvien asiakirjojen erilaisten muotojen kanssa.
+
 
 ## <a name="component-versioning"></a>Komponenttien versionhallinta
 

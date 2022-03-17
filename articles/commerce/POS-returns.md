@@ -2,7 +2,7 @@
 title: Palautusten luominen myyntipisteessä
 description: Tässä aiheessa käsitellään palautusten käynnistämistä käteis- ja siirtotapahtumista tai asiakastilauksista Microsoft Dynamics 365 Commerce -myyntipistesovelluksessa.
 author: hhainesms
-ms.date: 06/01/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715527"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349688"
 ---
 # <a name="create-returns-in-pos"></a>Palautusten luominen myyntipisteessä
 
@@ -96,6 +96,13 @@ Jos kanavan puolen tiedot eivät ole ajan tasalla jostain syystä ja offline-pal
 
 > [!NOTE]
 > Kun **Myyntipisteen yhdistetty palautuksen käsittelykokemus** -ominaisuus on käytössä, käyttöön tulevat uudet valinnaiset ominaisuudet, jotka tukevat sarjallistettujen tuotepalautusten oikeellisuustarkistusta. Lisätietoja: [Sarjanumeron avulla ohjattujen tuotteiden palautus myyntipisteessä](POS-serial-returns.md).
+
+## <a name="version-details"></a>Versiotiedot
+
+Seuraavassa luettelossa on eri komponenttien vähimmäisversiovaatimukset.
+- Commerce headquarters: versio 10.0.20
+- Commerce Scale Unit (CSU): versio 9.30
+- Myyntipiste (POS): versio 9.30
 
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille
 

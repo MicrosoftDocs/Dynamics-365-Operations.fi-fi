@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cbc800d7ae4d566fddb111b7ee9d67234e3cf8c
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: 4ed5664b5be11f013900d6411d4307692d5e8334
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325991"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358165"
 ---
 # <a name="configure-accounts-payable-overview"></a>Ostoreskontran määrittäminen – yleiskatsaus
 
@@ -34,7 +34,7 @@ Tässä artikkelissa käsitellään sivuja, joiden avulla määritetään perus-
 
 Ennen ostoreskontran määrittämäistä, seuraavat asetukset on määritettävä:
 
--   Kirjanpito:
+-   Kirjanpidossa:
     -   Jos aiot käyttää maksukirjauskansioita, ne on ensin määritettävä.
     -   Jos aiot suorittaa valuuttakurssioikaisuja, määritä valuuttakoodit **Valuutat**-sivulla, vaihtokurssin tyypit **Vaihtokurssin tyypit** -sivulla ja valuutan vaihtokurssit **Valuutan vaihtokurssit** -sivulla.
 -   Määritä Maksuliikenteen hallinta -kohdassa pankkitilit, joita käytetään maksutapojen yhteydessä.

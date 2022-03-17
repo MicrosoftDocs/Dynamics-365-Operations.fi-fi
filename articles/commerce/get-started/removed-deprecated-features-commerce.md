@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Commercesta.
 author: josaw
-ms.date: 09/27/2021
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559556"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384604"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -31,7 +31,7 @@ Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+> Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commercen version 10.0.21 poistetut tai vanhentuneet ominaisuudet
 
@@ -59,7 +59,7 @@ Retail SDK toimitetaan Lifecycle Servicesin (LCS) mukana. Tämä jakelutapa vanh
 | **Onko toinen ominaisuus korvannut?**   |  [Retail SDK -näytteiden ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Tuotealueet, joihin vaikutetaan**         | Retail SDK |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: versiosta 10.0.21 alkaen LCS-virtuaalikoneiden kautta toimitettu SDK poistetaan lokakuussa 2022. |
+| **Tila**                         | Vanhentunut: versiosta 10.0.21 alkaen LCS-virtuaalikoneiden kautta toimitettu SDK poistetaan huhtikuussa 2023. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Retail-käyttöottopaketti sekä yhdistetyt myyntipisteen, Hardware stationin ja Cloud Scale unitin asennusohjelmat
 
@@ -82,9 +82,9 @@ Lisätietoja:
     + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [Myyntipiste, CSU and Hardware station](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>Retail SDK:n ModernPos.Sln ja CloudPOs.sln
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln and CloudPos.sln Retail SDK:ssa
 
-Myyntipistelaajennuksen kehittäminen ModernPos.sln-, CloudPOs.sln-, POS.Extension.csproj-tiedostojen avulla ja myyntipistekansio vanhentuvat versiossa 10.0.21. Jatkossa käytetään itsenäistä myyntipisteen myyntipistelaajennusten pakkaus-SDK:ta.
+Myyntipistelaajennuksen kehittäminen ModernPos.sln-, CloudPos.sln-, POS.Extension.csproj-tiedostojen avulla ja myyntipistekansio vanhentuvat versiossa 10.0.21. Jatkossa käytetään itsenäistä myyntipisteen myyntipistelaajennusten pakkaus-SDK:ta.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +92,7 @@ Myyntipistelaajennuksen kehittäminen ModernPos.sln-, CloudPOs.sln-, POS.Extensi
 | **Onko toinen ominaisuus korvannut?**   | [Myyntipisteen itsenäinen pakkauksen SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Tuotealueet, joihin vaikutetaan**         | Dynamics 365 Commercen myyntipistelaajennus ja käyttöönotto |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: versiosta 10.0.21 alkaen yhdistettyjen myyntipistepakettien ja laajennusmallin tuki ModernPos.Sln-, CloudPOs.sln- ja POS.Extensons.csproj-tiedostojen käytölle Retail SDK:ssa poistetaan lokakuussa 2022. |
+| **Tila**                         | Vanhentunut: versiosta 10.0.21 alkaen yhdistettyjen myyntipistepakettien ja laajennusmallin tuki ModernPos.Sln-, CloudPOs.sln- ja POS.Extensons.csproj-tiedostojen käytölle Retail SDK:ssa poistetaan huhtikuussa 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Commercen version 10.0.17 poistetut tai vanhentuneet ominaisuudet
 

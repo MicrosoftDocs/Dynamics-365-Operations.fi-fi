@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062083"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358361"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisaatiohierarkia Dataversessa
 
@@ -36,11 +36,11 @@ Organisaatiohierarkian taulukoiden yhdistämismääritykset ovat käytettäviss�
 
 ## <a name="templates"></a>Mallit
 
-Tuotetiedot sisältävät kaiken tuotteeseen liittyvät tiedot ja tuotteen määrityksen, kuten tuotedimensiot tai seuranta- ja varastodimensiot. Seuraava taulukko osoittaa, miten taulukarttakokoelma luodaan synkronoimaan tuotteita ja liittyviä tietoja.
+Organisaatio on joukko ihmisiä, jotka työskentelevät yhdessä liiketoimintaprosessin suorittamiseksi tai tavoitteen saavuttamiseksi. Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita. Voit määrittää seuraavan tyyppisiä sisäisiä organisaatioita: yritysten toimintayksiköt ja ryhmiä. Kuten seuraavassa taulukossa näkyy, luodaan taulumääritysten kokoelma, jonka avulla synkronoidaan yritykset, toimintayksiköt ja niihin liittyvät hierarkiatiedot.
 
-Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset     | kuvaus
+Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset     | Kuvaus
 -----------------------|--------------------------------|---
-[Oikeushenkilöt](mapping-reference.md#102) | cdm_companies | Sisältää yrityksen (yhtiön) kaksisuuntaisen synkronoinnin.
+[Oikeushenkilöt](mapping-reference.md#102) | cdm_companies | 
 [Oikeushenkilöt](mapping-reference.md#142) | msdyn_internalorganizations |
 [Toimintayksikkö](mapping-reference.md#143) | msdyn_internalorganizations |
 [Organisaatiohierarkia – julkaistu](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Tässä mallissa on yksisuuntainen Organisaatiohierarkia julkaistu -taulukon synkronointi.

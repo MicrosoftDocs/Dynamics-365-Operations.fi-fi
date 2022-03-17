@@ -2,23 +2,24 @@
 title: Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)
 description: Tässä aiheessa on ohjeita Italian verotulostimen integroinnin esimerkin käyttöönottamiseksi Microsoft Dynamics 365 Commerce Retail -ohjelmistokehityspaketista (SDK).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c820c320410c43cafaae43c59cad04efdee24ab2
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076883"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388441"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Tässä aiheessa on ohjeita, jotka koskevat Italian verotulostimen integrointiesimerkin käyttöönottoa Microsoft Dynamics 365 Commerce Retail -ohjelmistokehityspaketista (SDK) kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja verointegroinnin esimerkistä on kohdassa [Verotulostimen integroinnin esimerkki (Italia)](emea-ita-fpi-sample.md). 
 
@@ -89,13 +90,13 @@ Luo Commerce-komponentteja sisältävät käyttöön otettavat paketit ja ota pa
 1. Noudata tässä ohjeaiheessa aiemmin [Kehitysympäristö](#development-environment)-kohdassa kuvattuja vaiheita.
 2. Tee seuraavat muutokset **RetailSdk\\Assets**-kansion paketin konfiguraatiotiedostoihin:
 
-    - Lisää **commerceruntime.ext.config**- ja **CommerceRuntime.MPOSOffline.Ext.config**-määritystiedostoihin seuraavaa rivi **composition**-osaan.
+    1. Lisää **commerceruntime.ext.config**- ja **CommerceRuntime.MPOSOffline.Ext.config**-määritystiedostoihin seuraavaa rivi **composition**-osaan.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - Lisää **HardwareStation.Extension.config** -määritystiedostossa seuraava rivi **composition**-osaan.
+    1. Lisää **HardwareStation.Extension.config** -määritystiedostossa seuraava rivi **composition**-osaan.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
@@ -103,20 +104,56 @@ Luo Commerce-komponentteja sisältävät käyttöön otettavat paketit ja ota pa
 
 3. Tee seuraavat muutokset **Customization.settings**-paketin mukautusmääritystiedostoon **BuildTools**-kansiossa:
 
-    - Lisää seuraava rivi, jos haluat sisällyttää CRT-laajennuksen käyttöön otettaviin paketteihin.
+    1. Lisää seuraava rivi, jos haluat sisällyttää CRT-laajennuksen käyttöön otettaviin paketteihin.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - Lisää seuraava rivi, jos haluat sisällyttää Hardware station -laajennuksen käyttöön otettaviin paketteihin.
+    1. Lisää seuraava rivi, jos haluat sisällyttää Hardware station -laajennuksen käyttöön otettaviin paketteihin.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Käynnistä Visual Studion MSBuild Command Prompt -työkalu ja luo käyttöön otettavat paketit suorittamalla **msbuild** Retail SDK -kansiossa.
-5. Ota paketit käyttöön LCS:n kautta tai manuaalisesti. Lisätietoja on ohjeaiheessa [Käyttöönottopakettien luominen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Tee seuraavat muutokset **Sdk.ModernPos.Shared.csproj**-tiedostoon **Packages\_SharedPackagingProjectComponents**-kansiossa sisällyttääksesi Italian resurssitiedostot käyttöönotettaviin paketteihin:
+
+    1. Lisää **Nimikeryhmä**-osa, joka sisältää haluttujen käännösten resurssitiedostoihin viittaavat solmut. Varmista, että määrität oikeat nimitilat ja esimerkkinimet. Seuraavassa esimerkissä lisätään resurssisolmuja **it**- ja **it-CH**-kielialueille.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. Lisää **Target Name="CopyPackageFiles"** -osaan yksi rivi kullekin kielialueelle seuraavan esimerkin mukaisesti.
+
+        ```xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+5. Tee seuraavat muutokset **Sdk.RetailServerSetup.proj**-tiedostoon **Packages\_SharedPackagingProjectComponents**-kansiossa sisällyttääksesi Italian resurssitiedostot käyttöönotettaviin paketteihin:
+
+    1. Lisää **Nimikeryhmä**-osa, joka sisältää haluttujen käännösten resurssitiedostoihin viittaavat solmut. Varmista, että määrität oikeat nimitilat ja esimerkkinimet. Seuraavassa esimerkissä lisätään resurssisolmuja **it**- ja **it-CH**-kielialueille.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. Lisää **Target Name="CopyPackageFiles"** -osaan yksi rivi kullekin kielialueelle seuraavan esimerkin mukaisesti.
+
+        ``` xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+6. Käynnistä Visual Studion MSBuild Command Prompt -työkalu ja luo käyttöön otettavat paketit suorittamalla **msbuild** Retail SDK -kansiossa.
+7. Ota paketit käyttöön LCS:n kautta tai manuaalisesti. Lisätietoja on ohjeaiheessa [Käyttöönottopakettien luominen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## <a name="design-of-extensions"></a>Laajennusten rakenne
 

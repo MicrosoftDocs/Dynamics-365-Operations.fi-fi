@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 0c62e11cc6d39c351321419bb862a5169b162fb7
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311976"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349714"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -159,8 +159,8 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 305 | Lunasta kanta-asiakkuuspisteet | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Kyllä |
 | 635 | Hyvitä toimitusmaksut | Peruuta tilauksen lähetyskulujen hyvitys. | Ei | Ei | Ei | Ei | Ei |
 | 644 | Poista kuponkikoodi | Käyttäjää pyydetään poistamaan kupongit valitsemalla ne tapahtumaan tällä hetkellä liitetystä kuponkiluettelosta. | Kyllä | Kyllä | Ei | Kyllä | Ei |
-| 1 057 | Tulosta Z uudelleen | Tulosta edellisen vuoron tai valitun vuoron Z-raportti. | Kyllä | Kyllä | Kyllä | Ei | Ei |
-| 1 216 | Nollaa salasana | Tämän toiminnon avulla salasanan palautuksen käyttöoikeuden omaava käyttäjä voi palauttaa toisen työntekijän salasanan tilapäisen salasanan avulla. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 1 057 | Tulosta Z uudelleen | Tulosta edellisen vuoron Z-raportti uudelleen. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 1 216 | Anna uusi salasana | Tämän toiminnon avulla salasanan palautuksen käyttöoikeuden omaava käyttäjä voi palauttaa toisen työntekijän salasanan tilapäisen salasanan avulla. | Kyllä | Kyllä | Kyllä | Ei | Ei |
 | 1219 | URL-osoitteen avaaminen myyntipisteessä | Avaa myyntipisteen järjestelmänvalvojan konfiguroitu URL-osoite. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 109 | Palauta tuote | Suorita yksittäisten tuotteiden palautus. Seuraava skannattu tuote näytetään palautettuna tuotteena, jolla on negatiivinen määrä ja hinta. | Kyllä | Kyllä | Ei | Kyllä | Ei |
 | 114 | Palautustapahtuma | Jatka edellistä tapahtumaa sen vastaanottonumeron avulla ja palauta jotkin sen tuotteista. | Kyllä | Kyllä | Kyllä | Kyllä§ | Ei |

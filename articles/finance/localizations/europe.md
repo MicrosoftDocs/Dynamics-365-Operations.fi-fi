@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982091"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367845"
 ---
 # <a name="europe-overview"></a>Eurooppa – yleiskatsaus
 
@@ -36,13 +36,13 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 - [Myyntitilausten laskutunnusten muokkaaminen Itä-Eurooppaa varten](emea-edit-invoice-id-sales-orders.md)
 - [EU-saapumistodistus](emea-entry-certificates.md)
 - [EU-myyntiluettelon raportointi](emea-eu-sales-list.md)
+  - [Esimerkki yleistä EU-myyntiluetteloa varten ](emea-eu-sales-list-example.md)
 - [Vaihtokurssioikaisut](emea-exchange-rate-adjustments.md)
 - [Maksutapojen tiedostomuodot](emea-select-file-formats-for-the-method-of-payments.md)
 - [Financen (globalisoinnin) ohje Brexitin vaikutuksesta](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Tilipalvelun (ESR) integrointi](emea-fiscal-service-integration.md)
 - [Viron ja Liettuan käyttöomaisuuden luovutus](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Siirtoasiakirjan luominen sisäiselle varastosiirrolle](tasks/transfer-document-internal-inventory-transfer.md)
-- [ EU-myyntiluettelon raportin luominen](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-tiedostot
   - [ISO20022-tiedostojen tuominen](emea-ISO20022-file-formats.md)
   - [Tuo ISO20022-suoraveloituksen konfiguraatio](tasks/import-iso20022-direct-debit-configuration.md)
@@ -77,7 +77,6 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 - [SEPA (Single Euro Payments Area) -tilisiirron yleiskatsaus](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Asiakkaan ja toimittajan kompensaation määrittäminen](emea-compensation-customer-vendor-transactions.md)
-- [EU-myyntiluettelon raportoinnin määrittäminen](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Projektilaskujen maksukuitin muodon määrittäminen](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Tulostettujen lomakkeiden allekirjoittajien määrittäminen](emea-set-up-signers-for-printing-forms.md)
 - [Storno-kirjanpito](emea-storno.md)

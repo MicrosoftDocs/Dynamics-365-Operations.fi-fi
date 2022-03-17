@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068106"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384481"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
@@ -210,9 +210,9 @@ Seuraavia varastonhallintatoimintoja ei tueta tällä hetkellä scale unitin ty�
 - Nimikkeiden käsittely, jossa vain kuljetustenhallinta on otettu käyttöön.
 - Negatiivisen käytettävissä olevan varaston käsittely.
 - Yritysten välisten tietojen jakaminen tuotteita varten. <!-- Planned -->
-- Kuormakirjoja sisältävän varastotyön käsittely.
-- Materiaalikäsittelyä tai varastoautomaatiota sisältävän varastotyön käsittely.
+- Kuormakirjoja sisältävän varastotyön käsittely (esimerkiksi pakkausluettelot pakkausasemalla).
 - Tuotteen päätietojen kuvat (esimerkiksi Warehouse Management -mobiilisovelluksessa).
+- Materiaalikäsittelyä tai varastoautomaatiota sisältävän varastotyön käsittely.
 
 > [!WARNING]
 > Jotkin varastotoiminnot eivät ole käytettävissä varastoissa, joissa varastonhallinnan työkuormia suoritetaan scale unitissa eikä sitä myöskään tueta keskuksessa tai scale unitin työkuormassa.
@@ -236,8 +236,7 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 | Aallon lähetysten ylläpito                                  | Ei  | Kyllä|
 | Varastotyön käsittely (mukaan lukien rekisterikilven tulostus)        | Ei  | Kyllä, mutta vain edellä mainittujen tuettujen ominaisuuksien osalta |
 | Klusterin keräily                                              | Ei  | Kyllä|
-| Manuaalinen pakkaamisen käsittely, mukaan lukien Pakatun kontin keräily -työn käsittely | Ei <P>Osa käsittelystä voidaan tehdä scale unitin käsittelemän ensimmäisen keräilyn käsittelyn jälkeen, mutta sitä ei suositella seuraavien estettyjen toimintojen vuoksi.</p>  | Ei |
-| Poista kontti ryhmästä                                  | Ei  | Ei |
+| Manuaalinen pakkausaseman käsittely  | Ei  | Ei |
 | Lähtevien lajittelun käsittely                                  | Ei  | Ei |
 | Lastaukseen liittyvien asiakirjojen tulostaminen                           | Kyllä | Kyllä|
 | Rahtikirjan ja ASN-ilmoituksen luonti                            | Ei  | Kyllä|
@@ -258,6 +257,7 @@ Seuraava taulukko sisältää tuetut lähtevät toiminnot ja missä näitä toim
 | Käännä lähetyksen vahvistus                                | Ei  | Kyllä|
 | Varastotilausrivien peruuttamispyyntö                      | Kyllä | Ei, mutta pyyntö hyväksytään tai hylätään. |
 | <p>Julkaise siirtotilaukset vastaanottoa varten</p><p>Tämä prosessi tapahtuu automaattisesti osana siirtotilauksen lähetysprosessia. Sen avulla voi kuitenkin ottaa käyttöön vaakayksikössä vastaanottava rekisterikilpi, jos saapuvat varastotilausrivit on peruutettu tai osana uutta työkuorman käyttöönottoprosessia.</p> | Kyllä | Ei|
+<!--| Manuaalinen pakkausaseman käsittely, mukaan lukien Pakatun kontin keräily -työ  | Ei  | Kyllä, mutta ilman TMS-lähetystä, jossa on luettelotiedostoja ja myyntipakkausluettelojen kirjaus ja ilman pakkausmerkintöjä ja tuotekuvia |-->
 
 ### <a name="inbound"></a>Saapuva
 
@@ -359,6 +359,7 @@ Seuraavia erätöitä voidaan ylläpitää manuaalisesti keskuskäyttöönotossa
     - Scale Unitin ja keskuksen välinen sanoman käsittelijä
     - Rekisteröi lähdetilauksen vastaanotot
     - Viimeistele varastotilaukset
+    - Luo puuttuvat lähtevät varastotilaukset
 
 - Seuraavia erätyötä voi hallita valitsemalla **Varastonhallinta \> Kausittaiset tehtävät \> Työkuormien hallinta**:
 

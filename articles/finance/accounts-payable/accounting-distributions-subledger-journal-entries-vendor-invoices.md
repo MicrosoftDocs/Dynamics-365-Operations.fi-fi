@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: f10ddf113f59da4800a97a48300ab1310bfb42dd
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325965"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358178"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Toimittajan laskujen kirjanpidolliset jaot ja kirjauskansioviennit
 
@@ -31,7 +31,7 @@ Kirjanpidon jakoja käytetään määrittämään, miten summa käsitellään, e
 ## <a name="accounting-distributions"></a>Kirjanpidolliset jaot 
 
 Seuraavilla Toimittajan lasku -sivun painikkeilla voit tarkastella ja mahdollisesti muokata kirjanpidollisia jakoja kullekin ostotilauksen summalle.
--   **Jakosummat** – Tarkastele muokkaa yksittäisen rivin ja sen alatason rivien kirjanpidollisia jakoja, kuten veroja tai maksuja. Voit tarkastella ja muokata alarivin kirjanpidollisia jakoja myös suoraan Arvonlisäverotapahtumat- tai Kulutapahtumat-sivulla.
+-   **Jakosummat** – Tarkastele muokkaa yksittäisen rivin ja sen alatason rivien kirjanpidollisia jakoja, kuten veroja tai maksuja. Voit tarkastella ja muokata alarivin kirjanpidollisia jakoja myös suoraan **Arvonlisäverotapahtumat**- tai **Kulutapahtumat**-sivulla.
     -   Muokkaa toimittajan laskun otsikon summia, kuten kuluja tai valuutan pyöristyssummia.
     -   Muokkaa toimittajalaskun rivisummia.
 -   **Näytä jakaumat** – Näytä asiakirjan kaikkien rivien kirjanpidolliset jaot. Et voi muokata kirjanpidollisia jakoja tästä näkymästä.
@@ -62,7 +62,7 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 <td>Varastotuote</td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville.</li>
-<li>**Päätili**-kenttä, kun **Kirjaus**-sivulla on valittu Tuotteen ostomeno.</li>
+<li><strong>Päätili</strong>-kenttä, kun <strong>Kirjaus</strong>-sivulla on valittu Tuotteen ostomeno.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
@@ -73,35 +73,35 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 <td>Hankintaluokka tai tuote, jota ei ole varastossa</td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville, jos toimittajalaskurivi viittaa ostotilausriviin.</li>
-<li>**Päätili**-kenttä, kun **Kirjaus**-sivulla on valittu Kulun ostomeno.</li>
+<li><strong>Päätili</strong>-kenttä, kun <strong>Kirjaus</strong>-sivulla on valittu Kulun ostomeno.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
 <li>Jos päätili on kohdistustili, käytä oletusarvoa kohdistustilin määrityksestä.</li>
 <li>Käytä taloushallinnon oletusdimensioarvoja toimittajan laskulla.</li>
 <li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Käyttöomaisuuserä</td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville, jos toimittajalaskurivi viittaa ostotilausriviin.</li>
-<li>Jos **Toimittajan lasku** -lomakkeessa **Tapahtumatyyppi**-kentästä on valittu **Hankinta**, **Päätili**-kenttä, kun **Käyttöomaisuuserän kirjausprofiilit** -sivulla on valittuna **Hankinta**.</li>
-<li>Jos **Tapahtumatyyppi**-kentästä on valittu **Hankintaoikaisu**, **Päätili**-kenttä, kun **Käyttöomaisuuserän kirjausprofiilit** -sivulla on valittuna **Hankintaoikaisu**.</li>
+<li>Jos <strong>Toimittajan lasku</strong> -lomakkeessa <strong>Tapahtumatyyppi</strong>-kentästä on valittu <strong>Hankinta</strong>, <strong>Päätili</strong>-kenttä, kun <strong>Käyttöomaisuuserän kirjausprofiilit</strong> -sivulla on valittuna <strong>Hankinta</strong>.</li>
+<li>Jos <strong>Tapahtumatyyppi</strong>-kentästä on valittu <strong>Hankintaoikaisu</strong>, <strong>Päätili</strong>-kenttä, kun <strong>Käyttöomaisuuserän kirjausprofiilit</strong> -sivulla on valittuna <strong>Hankintaoikaisu</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Käytä ostotilausriville tilijakoa, jos laskun rivi viittaa ostotilauksen riviin.</li>
 <li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Toimittajalaskurivillä määritetty projekti</td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>Jos **Projektiryhmät**-sivulla **Kirjaa kustannukset - Nimike** -sivulta on valittu **Saldo**, **Päätili**-kenttä, kun **Kirjanpidon asetukset** -sivulta on valittu **Kustannus**.</li>
-<li>Jos **Projektiryhmät**-sivulla **Kirjaa kustannukset - Nimike** -sivulta on valittu **Tulos**, **Päätili**-kenttä, kun **Kirjanpidon asetukset** -sivulta on valittu **Kustannukset - Nimike**.</li>
+<li>Jos <strong>Projektiryhmät</strong>-sivulla <strong>Kirjaa kustannukset - Nimike</strong> -sivulta on valittu <strong>Saldo</strong>, <strong>Päätili</strong>-kenttä, kun <strong>Kirjanpidon asetukset</strong> -sivulta on valittu <strong>Kustannus</strong>.</li>
+<li>Jos <strong>Projektiryhmät</strong>-sivulla <strong>Kirjaa kustannukset - Nimike</strong> -sivulta on valittu <strong>Tulos</strong>, <strong>Päätili</strong>-kenttä, kun <strong>Kirjanpidon asetukset</strong> -sivulta on valittu <strong>Kustannukset - Nimike</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
@@ -111,18 +111,18 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 <td>Rivialennus</td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>**Päätili**-kenttä, kun **Kirjaus**-sivulta on valittu **Alennus**.</li>
+<li><strong>Päätili</strong>-kenttä, kun <strong>Kirjaus</strong>-sivulta on valittu <strong>Alennus</strong>.</li>
 <li>Jos alennuspäätiliä ei ole määritetty kirjausprofiilissa, kirjanpidon jako kokonaishinnalle tilauksen ostorivillä.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä kirjanpidon jakoa ostotilausriville.</li>
 <li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
 <li>Käytä toimittajan laskurivin taloushallinnon dimension arvoja.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Oston kulut, jotka on syötetty ostotilausrivin **Hinta ja alennus** -välilehteen</td>
+<td>Oston kulut, jotka on syötetty ostotilausrivin <strong>Hinta ja alennus</strong> -välilehteen</td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
 <li>Ostotilausrivin laajennetun hinnan kirjanpidollinen jako.</li>
@@ -136,21 +136,21 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 <td>Rivin kulu</td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
-<li>Jos **Kulujen koodi** -lomakkeen **Veloituslaji**-kentästä on valittu **Kirjanpitotili**, **Kulujen koodi** -sivun **Debet-tili**-kenttä.</li>
-<li>Jos **Kulujen koodi** -sivun **Veloituslaji**-kentästä on valittu **Nimike**, ostotilausrivin laajennetun hinnan kirjanpidollinen jako.</li>
-<li>Jos **Kulujen koodi** -sivun **Veloituslaji**-kentästä on valittu **Asiakas/Toimittaja**, **Kulujen koodi** -sivun **Kredit-tili**-kenttä.</li>
+<li>Jos <strong>Kulujen koodi</strong> -lomakkeen <strong>Veloituslaji</strong>-kentästä on valittu <strong>Kirjanpitotili</strong>, <strong>Kulujen koodi</strong> -sivun <strong>Debet-tili</strong>-kenttä.</li>
+<li>Jos <strong>Kulujen koodi</strong> -sivun <strong>Veloituslaji</strong>-kentästä on valittu <strong>Nimike</strong>, ostotilausrivin laajennetun hinnan kirjanpidollinen jako.</li>
+<li>Jos <strong>Kulujen koodi</strong> -sivun <strong>Veloituslaji</strong>-kentästä on valittu <strong>Asiakas/Toimittaja</strong>, <strong>Kulujen koodi</strong> -sivun <strong>Kredit-tili</strong>-kenttä.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
 <li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
 <li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Vero, seuraavalla ehdolla:
 <ul>
-<li>Käytä Yhdysvaltojen verotussääntöjä -vaihtoehto valitaan **Kirjanpitoparametrit**-sivulta.</li>
+<li>Käytä <strong>Yhdysvaltojen verotussääntöjä</strong> -vaihtoehto valitaan <strong>Kirjanpitoparametrit</strong>-sivulta.</li>
 </ul></td>
 <td><ol>
 <li>Kirjanpidollinen jako ostotilausriville, jos laskurivi viittaa ostotilausriviin.</li>
@@ -165,61 +165,61 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 <tr class="odd">
 <td>Vero, seuraavilla ehdoilla:
 <ul>
-<li>Käytä Yhdysvaltojen verotussääntöjä -vaihtoehdon valinta poistetaan **Kirjanpitoparametrit**-sivulla.</li>
-<li>Arvonlisäveroryhmän **Käyttövero**-kentän valinta poistetaan **Arvonlisäveroryhmät**-sivulla.</li>
+<li><strong>Käytä Yhdysvaltojen verotussääntöjä</strong> -vaihtoehdon valinta poistetaan <strong>Kirjanpitoparametrit</strong>-sivulla.</li>
+<li>Arvonlisäveroryhmän <strong>Käyttövero</strong>-kentän valinta poistetaan <strong>Arvonlisäveroryhmät</strong>-sivulla.</li>
 </ul></td>
 <td><ol>
-<li>Jos verosumma on palautettavissa, **Kirjanpidon kirjausryhmät** -sivun **Saatava arvonlisävero** -kenttä.</li>
+<li>Jos verosumma on palautettavissa, <strong>Kirjanpidon kirjausryhmät</strong> -sivun <strong>Saatava arvonlisävero</strong> -kenttä.</li>
 <li>Jos verosummaa ei voi palauttaa, kokonaishinta tai kulun kirjanpidollinen jako.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
 <li>Käytä taloushallinnon dimensioita laajennetusta hinnasta tai kulun kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
 <li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Vero, seuraavilla ehdoilla:
 <ul>
-<li>Käytä Yhdysvaltojen verotussääntöjä -vaihtoehdon valinta poistetaan **Kirjanpitoparametrit**-sivulla.</li>
-<li>Arvonlisäveroryhmän **Käyttövero**-kenttä valitaan **Arvonlisäveroryhmät**-sivulta.</li>
+<li>Käytä Yhdysvaltojen verotussääntöjä -vaihtoehdon valinta poistetaan <strong>Kirjanpitoparametrit</strong>-sivulla.</li>
+<li>Arvonlisäveroryhmän <strong>Käyttövero</strong>-kenttä valitaan <strong>Arvonlisäveroryhmät</strong>-sivulta.</li>
 </ul></td>
 <td><ol>
-<li>Jos verosumma on palautettavissa, **Kirjanpidon kirjausryhmät** -sivun **Saatava arvonlisävero** -kenttä.</li>
-<li>Jos verosumma ei ole palautettavissa, **Kirjanpidon kirjausryhmät** -sivun **Käyttöverokulu**-kenttä.</li>
+<li>Jos verosumma on palautettavissa, <strong>Kirjanpidon kirjausryhmät</strong> -sivun <strong>Saatava arvonlisävero</strong> -kenttä.</li>
+<li>Jos verosumma ei ole palautettavissa, <strong>Kirjanpidon kirjausryhmät</strong> -sivun <strong>Käyttöverokulu</strong>-kenttä.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
 <li>Käytä taloushallinnon dimensioita laajennetusta hinnasta tai kulun kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
 <li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Otsikkomaksu</td>
 <td><ol>
-<li>Jos **Kulujen koodi** -lomakkeen **Veloituslaji**-kentästä on valittu **Kirjanpitotili**, **Kulujen koodi** -sivun **Debet-tili**-kenttä.</li>
-<li>Jos **Kulujen koodi** -sivun **Veloituslaji**-kentästä on valittu **Asiakas/Toimittaja**, **Kulujen koodi** -sivun **Kredit-tili**-kenttä.</li>
+<li>Jos <strong>Kulujen koodi</strong> -lomakkeen <strong>Veloituslaji</strong>-kentästä on valittu <strong>Kirjanpito</strong>-tili, <strong>Kulujen koodi</strong> -sivun <strong>Debet-tili</strong>-kenttä.</li>
+<li>Jos <strong>Kulujen koodi</strong> -sivun <strong>Veloituslaji</strong>-kentästä on valittu <strong>Asiakas/Toimittaja</strong>, <strong>Kulujen koodi</strong> -sivun <strong>Kredit-tili</strong>-kenttä.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
 <li>Jos päätili on kohdistustili, käytä oletusarvoa kohdistustilin määrityksestä.</li>
 <li>Käytä taloushallinnon dimension oletusmallin arvoja toimittajan laskun otsikosta.</li>
 <li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Otsikkoalennus</td>
 <td><ol>
-<li>**Toimittajan laskun alennus -kirjaustyypin** **Päätili**-kenttä **Automaattisten tapahtumien tilit** -sivulla.</li>
+<li><strong>Toimittajan laskun alennus -kirjaustyypin</strong> <strong>Päätili</strong>-kenttä <strong>Automaattisten tapahtumien tilit</strong> -sivulla.</li>
 </ol></td>
 <td><ol>
 <li>Jos laskurivi on viittaus ostotilausriviin, käytä tilin jakoa ostotilausriville.</li>
 <li>Käytä taloushallinnon dimensioita laajennetun hinnan kirjanpidollisesta jaosta toimittajan laskun riviltä.</li>
 <li>Käytä taloushallinnon dimension arvoja toimittajan laskun riviltä.</li>
-<li>Käytä taloushallinnon oletusdimensioarvoja **Tilikartta**-sivun päätililtä.</li>
+<li>Käytä taloushallinnon oletusdimensioarvoja <strong>Tilikartta</strong>-sivun päätililtä.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -228,7 +228,7 @@ Kun syötät toimittajan lasku, jokainen määrä jaetaan seuraavasti.
 
 ## <a name="distributing-taxes"></a>Verojen jakaminen
 
-verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista Toimittajan lasku -sivun tehtävistä:
+verojen kirjanpidollisia jakoja ei voi luoda ennen verojen laskentaa. Jotta voit laskea arvonlisäverot, sinun on suoritettava jokin seuraavista **Toimittajan lasku** -sivun tehtävistä:
 -   Näytä laskun summa.
 -   Näytä arvonlisävero.
 -   Näytä alareskontran kirjauskansio.
