@@ -238,10 +238,12 @@
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Vieminen Azure Data Lake -apuohjelman asentaminen
               href: data-entities/configure-export-data-lake.md
-            - name: Finance and Operations -sovellukset Azure Data Lakessa
+            - name: Talous- ja toimintosovellukset Azure Data Lakessa
               href: data-entities/finance-data-azure-data-lake.md
             - name: Yksikkösäilön määrittäminen saataville Data Lake -säilönä
               href: data-entities/entity-store-data-lake.md
+            - name: Vieminen Azure Data Lake -palvelun luomat liiketoimintatapahtumat (esiversio)
+              href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
             - name: Muutostiedot Azure Data Lakessa
               href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Tietokannan siirtotoiminnot
@@ -1068,6 +1070,8 @@
                       href: data-entities/dual-write/sales-status-map.md
                     - name: Konsernin sisäisten tilausten suodattaminen tilausten ja tilausrivien synkronoinnin välttämiseksi
                       href: data-entities/dual-write/filtering-intercompany-orders.md
+                    - name: Kaksoiskirjoitussovelluksen orkestrointiratkaisujen asennuksen poistaminen
+                      href: data-entities/dual-write/uninstall-solutions.md
                 - name: Kaksoiskirjoituksen hallinta
                   items:
                     - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen

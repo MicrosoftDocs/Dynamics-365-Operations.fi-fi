@@ -1020,9 +1020,11 @@
                   href: unit-of-measure.md
                 - name: Tuotedimensioiden näyttöasetusten käyttäminen
                   href: dimension-settings.md
+                - name: Sähköisen kaupankäynnin ylläpitotilan ottaminen käyttöön ja aktivoiminen
+                  href: enable-maintenance-mode.md
             - name: Sivuston sisällön hallinta
               items:
-                - name: Tapoja lisätä sisältöä
+                - name: Sisällön lisäystavat
                   href: add-manage-content.md
                 - name: Sivumallisanasto
                   href: page-elements-overview.md
@@ -2100,6 +2102,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Tietolähteiden vianmääritys
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Tietomallien määrittäminen
+                  items:
+                    - name: Sähköisen raportoinnin tietomallien parametrisoitujen kutsujen tukeminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
                 - name: Mallimääritysten määrittäminen
                   items:
                     - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
@@ -2760,6 +2766,8 @@
                           href: e-commerce-extensibility/clone-starter-module.md
                         - name: Moduulimäärityksen laajentaminen
                           href: e-commerce-extensibility/extend-module-definition.md
+                        - name: Moduulikirjaston staattisten merkkijonojen muuttaminen
+                          href: e-commerce-extensibility/change-module-library-strings.md
                     - name: Tietotoiminnot
                       items:
                         - name: Tietotoiminnon ohitukset
@@ -2774,6 +2782,8 @@
                           href: e-commerce-extensibility/override-theme-component.md
                         - name: Teeman laajentaminen perusteemasta
                           href: e-commerce-extensibility/extend-theme.md
+                        - name: Teemamoduulin merkkijonojen muuttaminen
+                          href: e-commerce-extensibility/change-theme-module-strings.md
                 - name: Pakkaaminen ja käyttöönotto
                   items:
                     - name: Määritysten paketointi ja käyttöönotto verkkoympäristössä
@@ -2798,6 +2808,8 @@
                           href: e-commerce-extensibility/page-caching.md
                         - name: Tietotoiminnon esiintymien välimuisti
                           href: e-commerce-extensibility/instance-cache.md
+                        - name: 'Moduulin CSS:n optimointi'
+                          href: e-commerce-extensibility/module-css-optimization.md
                     - name: Telemetria ja analytiikka
                       items:
                         - name: Telemetrian kirjaustoiminto

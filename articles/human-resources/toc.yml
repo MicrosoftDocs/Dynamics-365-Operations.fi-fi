@@ -4,106 +4,58 @@
       items:
         - name: Dynamics 365 Human Resources -aloitussivu
           href: index.md
-        - name: Infrastruktuuriversio 10.0.25
-          href: hr-infrastructure.md
-        - name: Dynamics 365 Human Resourcesin yhdistetyn infrastruktuurin uudet ja muuttuneet ominaisuudet
-          href: ./get-started/hr-whats-new-changed-10-0-25.md
+        - name: Uudet ja muuttuneet ominaisuudet
+          items:
+            - name: Talous- ja toimintosovellusten uudet ja muuttuneet ominaisuudet
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
+              items:
+                - name: Human Resources 10.0.26 (yhdistetty infrastruktuuri)
+                  href: ./get-started/hr-whats-new-changed-10-0-26.md
+                - name: Human Resources 10.0.25 (yhdistetty infrastruktuuri)
+                  href: ./get-started/hr-whats-new-changed-10-0-25.md
+                - name: Dynamics 365 Human Resourcesin (erillisen version) uudet ominaisuudet
+                  items:
+                    - name: Dynamics 365 Human Resourcesin (erillisen version) vuoden 2021 arkistojen uudet ominaisuudet
+                      href: hr-admin-whats-new.md
+                    - name: 29. marraskuuta 2021
+                      href: hr-whats-new-2021-11-29.md
+                    - name: 5. lokakuuta 2021
+                      href: hr-whats-new-2021-10-04.md
+                    - name: 20. syyskuuta 2021
+                      href: hr-whats-new-2021-09-20.md
+                    - name: 6. syyskuuta 2021
+                      href: hr-whats-new-2021-09-06.md
+                    - name: 23. elokuuta 2021
+                      href: hr-whats-new-2021-08-23.md
+                    - name: 9. elokuuta 2021
+                      href: hr-whats-new-2021-08-09.md
+                    - name: 26. heinäkuuta 2021
+                      href: hr-whats-new-2021-07-26.md
+                    - name: 12. heinäkuuta 2021
+                      href: hr-whats-new-2021-07-12.md
+                    - name: 22. kesäkuuta 2021
+                      href: hr-whats-new-2021-06-22.md
+                    - name: 20. toukokuuta 2021
+                      href: hr-whats-new-2021-05-20.md
+                    - name: 3. toukokuuta 2021
+                      href: hr-whats-new-2021-05-03.md
+                    - name: 19. huhtikuuta 2021
+                      href: hr-whats-new-2021-04-19.md
+                    - name: 5. huhtikuuta 2021
+                      href: hr-whats-new-2021-04-05.md
+                    - name: 22. maaliskuuta 2021
+                      href: hr-whats-new-2021-03-22.md
+                    - name: 8. maaliskuuta 2021
+                      href: hr-whats-new-2021-03-08.md
+                    - name: 22. helmikuuta 2021
+                      href: hr-whats-new-2021-02-22.md
+                    - name: 28. tammikuuta 2021
+                      href: hr-whats-new-2021-01-28.md
+                    - name: 21. tammikuuta 2021
+                      href: hr-whats-new-2021-01-21.md
         - name: Aloittaminen
           items:
-            - name: Uudet ominaisuudet
-              href: hr-admin-whats-new.md
-            - name: Vuoden 2021 uusien ja muuttuneiden ominaisuuksien arkisto
-              items:
-                - name: 29. marraskuuta 2021
-                  href: hr-whats-new-2021-11-29.md
-                - name: 5. lokakuuta 2021
-                  href: hr-whats-new-2021-10-04.md
-                - name: 20. syyskuuta 2021
-                  href: hr-whats-new-2021-09-20.md
-                - name: 6. syyskuuta 2021
-                  href: hr-whats-new-2021-09-06.md
-                - name: 23. elokuuta 2021
-                  href: hr-whats-new-2021-08-23.md
-                - name: 9. elokuuta 2021
-                  href: hr-whats-new-2021-08-09.md
-                - name: 26. heinäkuuta 2021
-                  href: hr-whats-new-2021-07-26.md
-                - name: 12. heinäkuuta 2021
-                  href: hr-whats-new-2021-07-12.md
-                - name: 22. kesäkuuta 2021
-                  href: hr-whats-new-2021-06-22.md
-                - name: 20. toukokuuta 2021
-                  href: hr-whats-new-2021-05-20.md
-                - name: 3. toukokuuta 2021
-                  href: hr-whats-new-2021-05-03.md
-                - name: 19. huhtikuuta 2021
-                  href: hr-whats-new-2021-04-19.md
-                - name: 5. huhtikuuta 2021
-                  href: hr-whats-new-2021-04-05.md
-                - name: 22. maaliskuuta 2021
-                  href: hr-whats-new-2021-03-22.md
-                - name: 8. maaliskuuta 2021
-                  href: hr-whats-new-2021-03-08.md
-                - name: 22. helmikuuta 2021
-                  href: hr-whats-new-2021-02-22.md
-                - name: 28. tammikuuta 2021
-                  href: hr-whats-new-2021-01-28.md
-                - name: 21. tammikuuta 2021
-                  href: hr-whats-new-2021-01-21.md
-            - name: Uudet ominaisuudet -arkisto 2020
-              items:
-                - name: 2. joulukuuta 2020
-                  href: hr-whats-new-2020-12-02.md
-                - name: 22. lokakuuta 2020
-                  href: hr-whats-new-2020-10-22.md
-                - name: 6. lokakuuta 2020
-                  href: hr-whats-new-2020-10-06.md
-                - name: 26. syyskuuta 2020
-                  href: hr-whats-new-2020-09-26.md
-                - name: 16. syyskuuta 2020
-                  href: hr-whats-new-2020-09-16.md
-                - name: 3. syyskuuta 2020
-                  href: hr-whats-new-2020-09-03.md
-                - name: 20. elokuuta 2020
-                  href: hr-whats-new-2020-08-20.md
-                - name: 6. elokuuta 2020
-                  href: hr-whats-new-2020-08-06.md
-                - name: 23. heinäkuuta 2020
-                  href: hr-whats-new-2020-07-23.md
-                - name: 8. heinäkuuta 2020
-                  href: hr-whats-new-2020-07-08.md
-                - name: 25. kesäkuuta 2020
-                  href: hr-whats-new-2020-06-23.md
-                - name: 11. kesäkuuta 2020
-                  href: hr-whats-new-2020-06-11.md
-                - name: 28. toukokuuta 2020
-                  href: hr-whats-new-2020-05-28.md
-                - name: 14. toukokuuta 2020
-                  href: hr-whats-new-2020-05-14.md
-                - name: 1. toukokuuta 2020
-                  href: hr-whats-new-2020-05-01.md
-                - name: 13. huhtikuuta 2020
-                  href: hr-whats-new-2020-04-13.md
-                - name: 3. huhtikuuta 2020
-                  href: hr-whats-new-2020-04-03.md
-                - name: 24. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-24.md
-                - name: 19. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-19.md
-                - name: 10. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-10.md
-                - name: 3. maaliskuuta 2020
-                  href: hr-whats-new-2020-03-03.md
-                - name: 25. helmikuuta 2020
-                  href: hr-whats-new-2020-02-25.md
-                - name: 18. helmikuuta 2020
-                  href: hr-whats-new-2020-02-18.md
-                - name: 12. helmikuuta 2020
-                  href: hr-whats-new-2020-02-12.md
-                - name: 7. helmikuuta 2020
-                  href: hr-whats-new-2020-02-07.md
-                - name: 3. helmikuuta 2020
-                  href: hr-whats-new-2020-02-03.md
             - name: Yleiskatsaus
               href: hr-admin-overview.md
             - name: Järjestelmävaatimukset

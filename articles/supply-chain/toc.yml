@@ -743,12 +743,36 @@
                   href: cost-management/costing-versions.md
                 - name: Kustannuslaskentalomakkeet
                   href: cost-management/costing-sheets.md
-                - name: Kustannusmuutosten simulointi suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen
+                - name: Kustannusmuutosten simulointi suunniteltujen kustannusten kustannuslaskentaversiota käyttäen
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Nimikehintojen vertailun varastoraportti
                   href: cost-management/compare-item-price.md
+            - name: Kustannuslaskentamenetelmät
+              items:
+                - name: Juokseva keskimääräinen kustannushinta
+                  href: cost-management/running-average-cost-price.md
+                - name: Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: FIFO sekä fyysinen arvo ja merkintä
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: LIFO-päivämäärä sekä fyysinen arvo ja merkintä
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO sekä fyysinen arvo ja merkintä
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Painotettu keskiarvo sekä fyysinen arvo ja merkintä
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Painotetun keskiarvon päivämäärä sekä fyysinen arvo ja merkintä
+                  href: cost-management/weighted-average-date.md
+                - name: Liukuva keskiarvo
+                  href: cost-management/moving-average.md
+                - name: 'Liukuva keskiarvo, varalla oleva kustannusjärjestys'
+                  href: cost-management/moving-average-fallback.md
             - name: Varastokirjanpito
               items:
+                - name: Fyysiset ja kirjanpidolliset päivitykset
+                  href: cost-management/physical-financial-updates.md
+                - name: Fyysisen arvon sisällyttäminen
+                  href: cost-management/include-physical-value.md
                 - name: Kustannusobjektit
                   href: cost-management/cost-object.md
                 - name: Kustannusobjektin saldon näyttäminen
@@ -761,33 +785,11 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Kustannusryhmät
                   href: cost-management/cost-groups.md
-                - name: FIFO sekä fyysinen arvo ja merkintä
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Sisällytä fyysinen arvo
-                  href: cost-management/include-physical-value.md
                 - name: Varasto-objektin arvot
                   href: cost-management/physical-quantity.md
-                - name: LIFO-päivämäärä sekä fyysinen arvo ja merkintä
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: LIFO sekä fyysinen arvo ja merkintä
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Liukuva keskiarvo
-                  href: cost-management/moving-average.md
-                - name: 'Liukuva keskiarvo, varalla oleva kustannusjärjestys'
-                  href: cost-management/moving-average-fallback.md
-                - name: Fyysiset ja kirjanpidolliset päivitykset
-                  href: cost-management/physical-financial-updates.md
-                - name: Juokseva keskimääräinen kustannushinta
-                  href: cost-management/running-average-cost-price.md
-                - name: Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Painotetun keskiarvon päivämäärä
-                  href: cost-management/weighted-average-date.md
-                - name: Painotettu keskiarvo sekä fyysinen arvo ja merkintä
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Varaston sulkeminen
                   href: cost-management/inventory-close.md
-                - name: Säädä käytettävissä olevan varaston kustannusarvoja
+                - name: Käytettävissä olevan varaston kustannusarvojen säätäminen
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Varaston arvon raportit
                   href: cost-management/inventory-value-report-storage.md
@@ -1431,6 +1433,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tietolähteiden vianmääritys
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tietomallien määrittäminen
+                  items:
+                    - name: Sähköisen raportoinnin tietomallien parametrisoitujen kutsujen tukeminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mallimääritysten määrittäminen
                   items:
                     - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
@@ -3855,6 +3861,8 @@
               items:
                 - name: Warehouse mobile app
                   items:
+                    - name: Pyyntö- ja istuntotietojen välinen odottamaton ero testauksen aikana
+                      href: troubleshooting/warehousing/request-session-data-difference.md
                     - name: 'Sertifiointipolun luottamusankkuria ei löydy, kun sovellusyhteys määritetään'
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: 'Sertifiointipolun luottamusankkuria ei löydy päivityksen ja WMS:ään siirtymisen aikana'
