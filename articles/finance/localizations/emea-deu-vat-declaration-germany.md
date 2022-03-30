@@ -2,19 +2,19 @@
 title: ALV-ilmoitus (Saksa)
 description: Tässä aiheessa kuvataan, miten ALV-ilmoitus määritetään ja luodaan Saksassa ennakkoon virallisessa XML-muodossa.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860879"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402800"
 ---
 # <a name="vat-declaration-germany"></a>ALV-ilmoitus (Saksa)
 
@@ -163,6 +163,9 @@ Avaa **Sähköisen raportoinnin** työtila ja tuo seuraavat versiot tai myöhemm
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a><a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Sovelluskohtaisten parametrien määrittäminen ALV-ilmoituskentille
 
 Kun haluat luoda ALV-ilmoituksen automaattisesti, liitä arvonlisäverokoodit sovellukseen ja hakutuloksiin ER-konfiguraatiossa.
+
+> [!NOTE]
+> Suosittelemme, että otat tätä varten käyttöön **Käytä sovelluskohtaisia parametreja sähköisen raportoinnin muotojen aiemmista versioista** -ominaisuuden **Ominaisuuksienhallinta**-työtilassa. Kun tämä ominaisuus on käytössä, ER-muodon aiemmassa versiossa konfiguroivat parametrit tulevat automaattisesti käyttöön saman muodon myöhemmässä versiossa. Jos tätä toimintoa ei ole otettu käyttöön, sovelluskohtaiset parametrit on määritettävä erikseen kullekin muotoversiolle. **Käytä sovelluskohtaisia parametreja aiemmista ER-muotojen versioista** -ominaisuus on käytettävissä **Ominaisuuksien hallinta** -työtilassa Financen versiosta 10.0.23 alkaen. Lisätietoja ER-muodon parametrien määrittämisestä kullekin yritykselle on kohdassa [ER-muodon parametrien määrittämisestä kullekin yritykselle](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 Seuraavia ohjeita noudattamalla voit määrittää, mitkä arvonlisäverokoodit luovat mitkä ALV-ilmoituksen ruudut.
 

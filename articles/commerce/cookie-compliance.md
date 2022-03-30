@@ -2,7 +2,7 @@
 title: Evästeen yhteensopivuus
 description: Tässä ohjeaiheessa käsitellään evästeiden yhteensopivuuden ja Microsoft Dynamics 365 Commercen oletuskäytäntöjen huomioitavia seikkoja.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747694"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403144"
 ---
 # <a name="cookie-compliance"></a>Evästeen yhteensopivuus
 
@@ -58,6 +58,7 @@ Seuraavassa taulukossa on viiteluettelo evästeitä, joita Dynamics 365 Commerce
 | \_msdyn365___aud_0                          | Tallentaa kohdennuksen käyttämät segmenttiarvot, ja sitä käytetään vain, jos kohdennus on määritetty sivuston käyttäjän pyytämällä sivulla tai pyytämässä katkelmassa. Eväste sijoitetaan vain silloin, kun segmentin arvo tulee kolmannen osapuolen segmentointipalvelusta.      | 7 päivää |
 | \_msdyn365___aud_1                           | Tallentaa kohdennuksen käyttämät segmenttiarvot, ja sitä käytetään vain, jos kohdennus on määritetty sivuston käyttäjän pyytämällä sivulla tai pyytämässä katkelmassa. Eväste sijoitetaan vain silloin, kun segmentin arvo tulee kolmannen osapuolen segmentointipalvelusta.      | 7 päivää |
 | \_msdyn365___aud_2                           | Tallentaa kohdennuksen käyttämät segmenttiarvot, ja sitä käytetään vain, jos kohdennus on määritetty sivuston käyttäjän pyytämällä sivulla tai pyytämässä katkelmassa. Eväste sijoitetaan vain silloin, kun segmentin arvo tulee kolmannen osapuolen segmentointipalvelusta.      | 7 päivää |
+| d365gi                                       | Tähän evästeeseen tallennetaan maantieteellisen sijainnin tiedot, kun kolmannen osapuolen maantieteellisen sijainnin palvelua käytetään.      | 1 päivä |
 
 Jos sivuston käyttäjä valitsee sivuston mahdolliset medialinkit, seuraavan taulukon evästeitä seurataan myös selaimessa.
 
@@ -65,17 +66,17 @@ Jos sivuston käyttäjä valitsee sivuston mahdolliset medialinkit, seuraavan ta
 | Toimialue                      | Eväste               | kuvaus                                                  | Lähde                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | LinkedIn-mainosten tunnusten synkronointi                                      | LinkedIn-syöte ja merkityksellisten tietojen tunniste                                |
-| .linkedin.com               | li_sugr                  | Selaimen tunnus                                           | LinkedInin merkityksellisten tietojen tunniste, jos IP-osoitetta ei ole määritetyssä maassa |
+| .linkedin.com               | li_sugr                  | Selaimen tunnus                                           | LinkedIn Insight tag, jos IP-osoitetta ei ole määritetyssä maassa |
 | .linkedin.com               | BizographicsOptOut       | Määrittää ulkopuolelle jätetyn tilan kolmannen osapuolen seurantaa varten.              | LinkedInin vierasohjausobjektit ja toimialan pois jätetyt sivut           |
 | .linkedin.com               | \_guid                    | Google Adsin selaintunniste.                            | LinkedIn-syöte                                                |
 | .linkedin.com               | li_oatml                 | Jäsenen epäsuora tunniste konversioseurannalle, uudelleen kohdentamiselle ja analyysille. | LinkedInin mainonnan ja merkityksellisten tietojen tunnisteet                                |
 | Useita ensimmäisen osapuolen toimialueita | li_fat_id                | Jäsenen epäsuora tunniste konversioseurannalle, uudelleen kohdentamiselle ja analyysille. | LinkedInin mainonnan ja merkityksellisten tietojen tunnisteet                                |
-| .adsymptotic.com            | U                        | Selaimen tunnus                                           | LinkedInin merkityksellisten tietojen tunniste, jos IP-osoitetta ei ole määritetyssä maassa |
+| .adsymptotic.com            | U                        | Selaimen tunnus                                           | LinkedIn Insight tag, jos IP-osoitetta ei ole määritetyssä maassa |
 | .linkedin.com                | bcookie                  | Selaimen tunnuksen eväste                                            | LinkedIn-pyynnöt                                         |
 | .linkedin.com                | bscookie                 | Suojattu selaineväste                                        | LinkedIn-pyynnöt                                         |
 | .linkedin.com               | kieli                     | Määrittää oletussijainnit ja -kielen.                                 | LinkedIn-pyynnöt                                         |
 | .linkedin.com                | lidc                     | Käytetään reititykseen.                                             | LinkedIn-pyynnöt                                         |
-| .linkedin.com               | aam_uuid                 | Adoben yleisönhallintaeväste                                                     | Tunnuksen synkronoinnin asetus                                              |
+| .linkedin.com               | aam_uuid                 | Adobe audience manager -eväste                                                     | Tunnuksen synkronoinnin asetus                                              |
 | .linkedin.com               | \_ga                      | Google Analyticsin eväste                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Google Analyticsin eväste                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Google Analyticsin eväste                                             | Google Analytics                                             |

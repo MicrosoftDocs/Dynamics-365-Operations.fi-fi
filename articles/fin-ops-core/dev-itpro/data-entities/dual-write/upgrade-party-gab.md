@@ -2,19 +2,19 @@
 title: Päivitä osapuolen osoitekirja ja yleinen osoitekirja
 description: Tässä ohjeaiheessa kuvataan, kuinka kaksoiskirjoitustiedot päivitetään osapuolen ja globaaliin osoitekirjamalliin.
 author: RamaKrishnamoorthy
-ms.date: 03/31/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060476"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407791"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
 
@@ -151,13 +151,19 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
 ## <a name="run-the-templates"></a>Suorita mallit
 
-1. Lopeta taloushallinnon ja toimintojen sovellusta käyttävä seuraava kaksoiskirjoituksen **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-yhdistämismääritys:
+1. Pysäytä seuraavat **Osapuoli**, **Tili**, **Yhteyshenkilö** ja **Toimittaja** kaksoiskirjoituskartat, jotka käyttävät talous- ja toimintosovelluksia:
 
+    + CDS-osapuolet (msdyn_parties) 
     + Asiakkaat V3 (accounts)
     + Asiakkaat V3 (yhteyshenkilöt)
     + CDS-kontaktit V2 (yhteyshenkilöt)
     + CDS-kontaktit V2 (yhteyshenkilöt)
     + Toimittajat V2 (msdyn_vendors)
+    + Yhteyshenkilöt V2 (msdyn_contactforparties)
+    + CDS-osapuolen postiosoitesijainnit (msdyn_partypostaladdresses)
+    + CDS-postiosoitehistoria V2 (msdyn_postaladdresses)
+    + CDS-postiosoitesijainnit (msdyn_postaladdresscollections)
+    + Osapuolen yhteyshenkilöt V3 (msdyn_partyelectronicaddresses)
 
 2. Varmista, että yhdistämismääritykset on poistettu kohteen **msdy_dualwriteruntimeconfig**-taulusta Dataversessa.
 3. Asenna [kaksoskirjoituksen osapuoli ja yleisiä osoitekirjaratkaisuja](https://aka.ms/dual-write-gab) AppSourcesta.

@@ -2,7 +2,7 @@
 title: Sähköisen kaupankäynnin sivuston luominen
 description: Tämä ohjeaihe sisältää ohjeet ja tiedot, jotka tarvitaan uuden sähköisen kaupankäynnin sivun luomiseen Dynamics 365 Commerce sivustonmuodostimessa.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388208"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402772"
 ---
 # <a name="create-an-e-commerce-site"></a>Sähköisen kaupankäynnin sivuston luominen
 
@@ -70,6 +70,14 @@ Voit nimetä sivuston uudelleen sivuston muodostimessa seuraavasti.
 1. Voit avata sivustoluettelonäkymän valitsemalla oikeasta yläkulmasta **Sivuston valitsin** ja valitsemalla sitten **Sivustojen hallinta**. 
 1. Valitse uudelleennimettävän sivuston vieressä valintaruutu ja valitse sitten komentopalkissa **Nimeä uudelleen**.
 1. Kirjoita **Uusi sivuston nimi** -valintaikkunaan sivuston uusi nimi ja valitse sitten **OK**. Sivustoluettelo päivittyy niin, että se näyttää sivuston uuden nimen.
+
+## <a name="delete-a-site"></a>Poista sivusto
+
+Voit poistaa sivuston sivuston muodostimessa seuraavasti.
+
+1. Voit avata sivustoluettelonäkymän valitsemalla oikeasta yläkulmasta **Sivuston valitsin** ja valitsemalla sitten **Sivustojen hallinta**.
+1. Valitse poistettava sivusto ja valitse sitten komentopalkissa **Poista**.
+1. Kirjoita **Poista \<site name\>** -valintaikkunaan sivuston uusi nimi ja valitse sitten **Poista**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

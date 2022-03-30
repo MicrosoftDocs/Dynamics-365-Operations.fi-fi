@@ -2,19 +2,19 @@
 title: Osapuolen ja yleinen osoitekirja
 description: Tässä aiheessa kuvataan kaksoiskirjoituksen osapuolen ja yleinen osoitekirja.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060329"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407762"
 ---
 # <a name="party-and-global-address-book"></a>Osapuolen ja yleinen osoitekirja
 
@@ -22,7 +22,7 @@ ms.locfileid: "8060329"
 
 
 
-*Osapuoli* ja *yleinen osoitekirja* ovat käsitteitä taloushallinnon ja toimintojen sovelluksissa. Osapuoli voi olla henkilö tai organisaatio. On kätevää tallentaa ja hallita osapuolen ominaisuuksia, kuten nimeä, kieltä, yhteyshenkilöitä ja osoitteita. Sitten kun ominaisuuden arvo muuttuu yhdessä paikassa, muutos heijastuu kaikkiin paikkoihin, joissa osapuoli näkyy.
+*Osapuoli* ja *yleinen osoitekirja* ovat käsitteitä talous- ja toimintosovelluksissa. Osapuoli voi olla henkilö tai organisaatio. On kätevää tallentaa ja hallita osapuolen ominaisuuksia, kuten nimeä, kieltä, yhteyshenkilöitä ja osoitteita. Sitten kun ominaisuuden arvo muuttuu yhdessä paikassa, muutos heijastuu kaikkiin paikkoihin, joissa osapuoli näkyy.
 
 ## <a name="party"></a>Osapuoli
 
@@ -46,7 +46,7 @@ Seuraavassa kuvassa näkyy osapuolen tietomalli:
 > [!TIP]
 > Kun yrität luoda uutta tilitietuetta, voit etsiä tietuetta nimen perusteella **Osapuoli**-kentän avulla. Jos tietue löytyy tällä tavalla, se on vain valittava. Järjestelmä täyttää automaattisesti kaikki tiedot osapuolen tiedoilla. Kaikkia pakollisia kenttiä ei tarvitse täyttää manuaalisesti. Tämä toiminta löytyy käyttövalmiista **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-sivuilta.
 
-Kaksoiskirjoitus ei tue kaikkia taloushallinnon ja toimintojen sovellusten osapuolen rooleja. Täydellinen luettelo osapuolen rooleista on [yleisen osoitekirjan yleiskatsauksessa](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Kaksoiskirjoitus ei tue kaikkia talous- ja toimintosovellusten osapuolen rooleja. Täydellinen luettelo osapuolen rooleista on [yleisen osoitekirjan yleiskatsauksessa](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Yleinen osoitekirja
 
@@ -75,7 +75,7 @@ Asiakasvuorovaikutussovelluksissa Yhteyshenkilö on henkilö. **Yhteyshenkilö**
 |----------|-------------|
 | Henkilö, joka on asiakas (esimerkiksi myyntikelpoinen yhteyshenkilö tai B2C-asiakas) | Merkitty yhteyshenkilötietue, jossa **Yritys**-kenttä ei ole tyhjä ja **On asiakas** -kentän arvo on **Kyllä**. |
 | Henkilö, joka on toimittaja (esimerkiksi elinkeinonharjoittaja kuten toimittaja) | Merkitty yhteyshenkilötietue, jossa **Yritys**-kenttä ei ole tyhjä ja **On toimittaja** -kentän arvo on **Kyllä**. |
-| Henkilö, joka on sekä asiakas että toimittaja | Merkitty yhteyshenkilötietue, jossa **Yritys**-kenttä ei ole tyhjä ja **On asiakas** -kentän arvo on **Kyllä** ja **On toimittaja** -kentän arvo on **Kyllä**. Henkilö voi olla sekä yhden tuotteen valmistaja että toisen tuotteen kuluttaja. Sekä taloushallinnon ja toimintojen sovellukset että kaksoiskirjoitus tukevat tätä suhdetta. |
+| Henkilö, joka on sekä asiakas että toimittaja | Merkitty yhteyshenkilötietue, jossa **Yritys**-kenttä ei ole tyhjä ja **On asiakas** -kentän arvo on **Kyllä** ja **On toimittaja** -kentän arvo on **Kyllä**. Henkilö voi olla sekä yhden tuotteen valmistaja että toisen tuotteen kuluttaja. Sekä talous- ja toimintosovellukset että kaksoiskirjoitus tukevat tätä suhdetta. |
 | Henkilö, joka on organisaation yhteyshenkilö mutta ei ole asiakas tai toimittaja | Merkitsemätön yhteyshenkilötietue, jossa **Yritys**-kenttä on tyhjä ja **On asiakas** -kentän arvo on **Ei** ja **On toimittaja** -kentän arvo on **Ei**. |
 
 ## <a name="contact-for-party-table"></a>Osapuolen yhteyshenkilö -taulukko
@@ -142,7 +142,7 @@ Voit luoda niin monta postiosoitetta kuin haluat ruudukon yläpuolella olevalla 
 Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa versioissa kaikki postiosoitteen ja sähköisenosoitteen kentät poistetaan muista välilehdistä, kuten **Yhteenveto**- ja **Tiedot**-välilehdistä. **Tiedot**-välilehdessä näkyvät yhteystiedot ovat vain luku -muotoisia kopioita ensisijaisesta sähköisestä osoitteesta, kuten ensisijainen puhelinnumero, ensisijainen sähköposti, ensisijainen faksinumero ja ensisijainen Twitter-tunnus. Liidin hyväksyntäprosessin aikana voidaan antaa sekä työnumero että matkapuhelimenumero. Työnumero katsotaan ensisijaiseksi puhelinnumeroksi, jos **IsMobile=No**, ja matkapuhelinnumero katsotaan toissijaiseksi puhelinnumeroksi, jos **IsMobile=Yes**.
 
 > [!TIP]
-> Postiosoitetta ja sähköistä osoitetta hallitaan käyttämällä **Tili**- ja **Yhteyshenkilö**-lomakkeiden **Osoitteet**- ja **Sähköiset osoitteet** -välilehtiä. Näin varmistetaan, että osoitetiedot synkronoidaan taloushallinnon ja toimintojen sovelluksiin.
+> Postiosoitetta ja sähköistä osoitetta hallitaan käyttämällä **Tili**- ja **Yhteyshenkilö**-lomakkeiden **Osoitteet**- ja **Sähköiset osoitteet** -välilehtiä. Näin varmistetaan, että osoitetiedot synkronoidaan talous- ja toimintosovelluksiin.
 
 ## <a name="setup"></a>Asetukset
 
@@ -226,11 +226,11 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 
     ![Yhteyshenkilöiden kaksoiskappaleiden sääntö.](media/duplicate-rule-2.PNG)
 
-11. Jos käytät kaksoiskirjoitusta tällä hetkellä, noudata ohjeita kohdassa [Päivitä osapuolen osoitekirja ja yleinen osoitekirja](upgrade-party-gab.md) ja päivitä tiedot.
+11. Jos käytät kaksoiskirjoitusta tällä hetkellä, noudata ohjeita kohdassa [Päivitä osapuolen osoitekirja ja yleinen osoitekirja](upgrade-party-gab.md) ja päivitä tiedot. **Älä siirry vaiheeseen 12 suorittamatta tätä vaihetta.** Jos olet uusi kaksoiskirjoituskäyttäjä, siirry vaiheeseen 12.
 
-12. Suorita kartat seuraavassa järjestyksessä. Jos näyttöön tulee virheilmoitus, jonka mukaan "Projektin vahvistus epäonnistui. Puuttuva kohdekenttä...", avaa kartta ja valitse **Päivitä taulut**. Suorita sitten kartta.
+12. Jos olet aiemmin luotu kaksoiskirjoituskäyttäjä, suorita vaihe 11 ja suorita kartat seuraavassa järjestyksessä. Jos olet uusi kaksoskirjoitusasiakas, voit jatkaa suoraan. Jos näyttöön tulee virheilmoitus, jonka mukaan "Projektin vahvistus epäonnistui. Puuttuva kohdekenttä...", avaa kartta ja valitse **Päivitä taulut** ja suorita sitten liitos.
 
-    Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellus  
+    Talous- ja toimintosovellus | Asiakkaiden aktivointisovellus  
     ----------------------------|------------------------
     [CDS-osapuolet](mapping-reference.md#220) | msdyn_parties
     [CDS-postiosoitteiden sijainnit](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 
 Taulujen yhdistämisten kokoelma toimii yhdessä osapuolen ja yleisen osoitekirjan vuorovaikutusta seuraavan taulukon mukaisesti.
 
-| Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellus | Kuvaus |
+| Talous- ja toimintosovellus | Asiakkaiden aktivointisovellus | Kuvaus |
 |----------------------------|-------------------------|-------------|
 | [Yhteyshenkilöiden arvonimet](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Asiakkaat V3](mapping-reference.md#101) | tilit |
@@ -295,10 +295,10 @@ Lisätietoja on [kaksoiskirjoituksen yhdistämismäärityksen viitteessä](mappi
 
 ## <a name="known-issues-and-limitations"></a>Tunnetut ongelmat ja rajoitukset
 
-+ Kun luot asiakkaan ja osoitteen ja tallennat sen taloushallinnon ja toimintojen sovelluksissa, osoite ei välttämättä synkronoidu **Osoite**-taulukkoon. Tämä johtuu kaksoiskirjoitusalustan järjestysongelmasta. Voit ratkaista ongelman luomalla ensin asiakkaan ja tallentamalla sen. Lisää sitten osoite.
-+ Taloushallinnon ja toimintojen sovelluksissa kun asiakastietueessa on ensisijainen osoite ja luot asiakkaalle uuden yhteyshenkilön, yhteyshenkilötietue perii ensisijaisen osoitteen liitetystä asiakastietueesta. Näin tapahtuu myös toimittajan yhteyshenkilölle. Dataverse ei tue tällä hetkellä tätä toimintatapaa. Jos kaksoiskirjoitus on käytössä, ensisijaisella osoitteella perityt asiakkaan yhteyshenkilöt taloushallinnon ja toimintojen sovelluksesta synkronoidaan Dataversen kanssa osoitteineen.
++ Kun luot asiakkaan ja osoitteen ja tallennat sen talous- ja toimintosovelluksissa, osoite ei välttämättä synkronoidu **Osoite**-taulukkoon. Tämä johtuu kaksoiskirjoitusalustan järjestysongelmasta. Voit ratkaista ongelman luomalla ensin asiakkaan ja tallentamalla sen. Lisää sitten osoite.
++ Talous- ja toimintosovelluksissa kun asiakastietueessa on ensisijainen osoite ja luot asiakkaalle uuden yhteyshenkilön, yhteyshenkilötietue perii ensisijaisen osoitteen liitetystä asiakastietueesta. Näin tapahtuu myös toimittajan yhteyshenkilölle. Dataverse ei tue tällä hetkellä tätä toimintatapaa. Jos kaksoiskirjoitus on käytössä, ensisijaisella osoitteella perityt asiakkaan yhteyshenkilöt talous- ja toimintosovelluksesta synkronoidaan Dataversen kanssa osoitteineen.
 + **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-lomakkeiden sähköisten osoitteiden välilehdessä määritetyt sähköiset osoitteet tulevat `msdyn_partyelectronicaddress`-taulukosta. Nämä tiedot eivät siirry liittyviin tapahtumiin, kuten myyntitilaukseen, tarjoukseen ja ostotilaukseen. Tämä ongelma aiotaan korjata asteittaisessa julkaisussa. Tili- ja yhteyshenkilötietueiden sähköisten osoitekenttien olemassa olevat tiedot toimivat edelleen myyntitilausten, tarjousten ja ostotilausten kaltaisissa tapahtumissa.
-+ Taloushallinnon ja toimintojen sovelluksissa voit luoda yhteyshenkilötietueen **Lisää yhteyshenkilö** -lomakkeesta. Kun yrität luoda uuden yhteyshenkilön **Näytä yhteyshenkilö** -lomakkeesta, toimenpide epäonnistuu. Tämä on tiedossa oleva ongelma.
++ Talous- ja toimintosovelluksissa voit luoda yhteyshenkilötietueen **Lisää yhteyshenkilö** -lomakkeesta. Kun yrität luoda uuden yhteyshenkilön **Näytä yhteyshenkilö** -lomakkeesta, toimenpide epäonnistuu. Tämä on tiedossa oleva ongelma.
 
     ![Tunnettu Lisää yhteyshenkilö -ongelma.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ Lisätietoja on [kaksoiskirjoituksen yhdistämismäärityksen viitteessä](mappi
 
     ![Tiedossa oleva osoiteongelma.](media/party-gab-address-issue.png)
 
-+ Et voi syöttää postiosoitetta, jonka päivämäärä on tulevaisuudessa käyttämällä taloushallinnon ja toimintojen sovellusta kaksoiskirjoituksella, koska Dataverse ei tue päivämäärän voimassaoloa. Jos kirjoitat postiosoitteen, jonka päivämäärä on tulevaisuudessa, taloushallinnon ja toimintojen sovelluksella, se synkronoi Dataversen kanssa kokonaan ja näet osoitteen käyttöliittymässä välittömästi. Tämän tietueen päivitykset johtavat virheeseen, koska sen päivämäärä on tulevaisuudessa eikä nykyinen taloushallinnon ja toimintojen sovelluksessa.
++ Et voi syöttää postiosoitetta, jonka päivämäärä on tulevaisuudessa käyttämällä talous- ja toimintosovellusta kaksoiskirjoituksella, koska Dataverse ei tue päivämäärän voimassaoloa. Jos kirjoitat postiosoitteen, jonka päivämäärä on tulevaisuudessa, talous- ja toimintosovelluksella, se synkronoi Dataversen kanssa kokonaan ja näet osoitteen käyttöliittymässä välittömästi. Tämän tietueen päivitykset johtavat virheeseen, koska sen päivämäärä on tulevaisuudessa eikä nykyinen talous- ja toimintosovelluksessa.

@@ -2,7 +2,7 @@
 title: Tuottokirjausten yleiskatsaus (sisältää videon)
 description: Tässä ohjeaiheessa on tietoja tuottokirjausominaisuudesta. Tämä ominaisuus tarjoaa joustavan kehyksen, jonka avulla voit määrittää yrityskohtaiset säännöt moniosaisten tilausten tuottohinnan ja tuottoaikataulun tunnistamista varten.
 author: kweekley
-ms.date: 11/11/2019
+ms.date: 03/15/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: aae46fa90d306355608200f96ae5cf10793c8464
+ms.sourcegitcommit: 0925b9ee0cb0df93047681a243aacc2abd404dea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982584"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "8446175"
 ---
 # <a name="revenue-recognition-overview"></a>Tuottokirjausten yleiskatsaus
 
@@ -26,10 +26,7 @@ ms.locfileid: "7982584"
 
 Useita elementtejä myyvien yritysten, kuten tuotteiden, palveluiden ja tilausten, on pystyttävä purkamaan moniosaiset tilaukset, jotta tuotto voidaan kirjata yrityskohtaisia ja toimialakohtaisia ohjeita noudattaen.
 
-> [!NOTE]
-> Tuoton kirjaustoimintoa ei voi ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
-
-> Tuottokirjausten, mukaan lukien myyntirakennetoiminnot, käyttämistä Commerce-kanavissa (verkkokauppa, myyntipiste, puhelinkeskus) ei tueta. Tuottokirjausten kanssa määritettyjä nimikkeitä ei tulisi lisätä Commerce-kanavissa luotuihin tilauksiin tai tapahtumiin.
+Tuottokirjausten, mukaan lukien myyntirakennetoiminnot, käyttämistä Commerce-kanavissa (verkkokauppa, myyntipiste, puhelinkeskus) ei tueta. Tuottokirjausten kanssa määritettyjä nimikkeitä ei tulisi lisätä Commerce-kanavissa luotuihin tilauksiin tai tapahtumiin.
 
 Yleensä tuoton kirjausprosessia voidaan käyttää seuraavien tehtävien suorittamiseen:
 

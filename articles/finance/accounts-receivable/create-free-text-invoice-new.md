@@ -1,23 +1,23 @@
 ---
 title: Luo tekstimuotoinen lasku
 description: Tässä ohjeaiheessa käsitellään vapaatekstilaskuja.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763283"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392882"
 ---
 # <a name="create-a-free-text-invoice"></a>Luo tekstimuotoinen lasku
 
@@ -68,6 +68,7 @@ Tässä ohjeaiheessa käsitellään vapaatekstilaskuja. Tässä menettelyssä k�
 
     * Voit muuttaa laskun tulostamisen aikataulua. Tulosta kukin lasku päivityksen yhteydessä valitsemalla **Nykyinen**. Tulosta vasta kaikkien laskujen päivityksen jälkeen valitsemalla **Jälkeen**.
     * Voit muuttaa tapaa, jolla asiakkaan luottoraja tarkistetaan ennen laskun kirjausta, muuttamalla **Luottorajatyyppi**-kentän arvon.
+    * Voit lopettaa vapaatekstilaskujen kirjaamisen, kun **myyntireskontran parametrit** -sivun **Päivitykset**-välilehdessä tapahtuu virhe (**Myyntireskontra > Asetukset > Myyntireskontran parametrit**). Valitse **Kyllä**, kun haluat **lopettaa vapaatekstilaskujen kirjaamisen ensimmäiseen virhe** -parametriin, kun haluat lopettaa vapaatekstilaskujen kirjauksen virheen ilmaantuessa. Jos eräkirjaus tapahtuu, kirjausprosessi pysähtyy virheeseen ja erän tilaksi asetetaan **Virhe**. Jos tätä vaihtoehtoa ei valita, kirjaus ohittaa laskun, jossa on kirjausvirhe, ja jatkaa lisälaskujen kirjaamista. Jos kirjauserässä on virhe, kirjausvirhe ei estä muiden laskujen kirjaamista. Erän tilaksi tulee **päättynyt**. Yksityiskohtainen kirjausprosessiraportti on käytettävissä erätyöhistorian tarkistamista varten.
     * Voit tulostaa laskun, jos valitset **Kyllä**.
     * Voit kirjata laskun, jos valitset **Kyllä**. Voit tulostaa laskun ilman, että se kirjataan.
 
@@ -82,6 +83,12 @@ Kun olet kopioinut rivit, voit muokata tietoja tarpeen mukaan.
 Voit luoda vapaatekstilaskun mallin mukaan. Kun valitset **Uusi mallista** **Lasku**-välilehdessä, voit valita mallin nimen ja uuden tekstimuotoisen laskun asiakastilin. Oletusarvot, kuten maksuehdot ja maksutapa, voidaan automaattisesti täyttää asiakkaan tiedoista, tai voit käyttää arvoja, jotka on tallennettu malliin.
 
 Uusi vapaatekstilasku luodaan ja voit muokata sen arvoja tarpeen mukaan.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>Työnkulun tilan palauttaminen vapaatekstilaskuille Ei perittävissä -tilasta Luonnos-tilaan
+Peruuttamattoman virheen vuoksi pysäytetyn työnkulun esiintymän työnkulun tila on **peruuttamaton**. Kun asiakkaan vapaatekstilaskun työnkulun tila on **Peruuttamaton**, voit palauttaa sen **Luonnos**-tilaan valitsemalla **Peruuta** työnkulun toiminnoista. Tämän jälkeen voit muokata asiakkaan vapaatekstilaskua. Tämä toiminto on käytettävissä, jos **Työnkulun tilan nollaaminen vapaatekstilaskuja varten laskusta, jota ei voi palauttaa luonnokseksi** -parametri **Toimintojen hallinta** -sivulla on käytössä.
+
+Voit palauttaa työnkulun tilaksi **Luonnos** käyttämällä **Työnkulkuhistoria**-sivua. Voit avata tämän sivun **Vapaatekstilasku** -kohdasta tai kohdasta **Yhteiset > Kyselyt > Työnkulku**. Voit nollata työn kulun tilaksi **Luonnos** valitsemalla **Peruuta**. Voit myös nollata työn kulun tilaksi **Luonnos** valitsemalla **Peruuta**-toiminnon **Vapaatekstilasku**- tai **Kaikki vapaatekstilaskut** -sivulla. Kun työnkulun tila palautetaan **luonnos**-tilaan, se on muokattavissa **vapaatekstilasku** -sivulla.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

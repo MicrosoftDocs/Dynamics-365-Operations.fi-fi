@@ -2,7 +2,7 @@
 title: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 description: Tässä aiheessa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384365"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418637"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20190"></a>Versio 2.0.19.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Parannettiin yleisten tietojen kyselytyönkulkua.
+- Parannettiin **työluettelo**- ja **nimikekysely**-sivujen huolto-ottoa.
+- Vähentää paristojen kulutusta
+- Poisti työkorttien kenttien määrän rajan.
+- Voit säätää työkorttien korkeutta niin, että kaikilla on sama koko kenttien lukumäärästä riippumatta.
+- Korjattiin ongelma, jossa viivakoodien välilyönnit leikattiin pois.
+- On lisätty **painiketyyli**-asetus, jonka avulla voit katsella erityyppisiä laitetyyppejä eri tyyppien painikkeiden avulla.
+- Korjattu useita ongelmia, jotka saattoivat saada sovelluksen kaatumaan.
+- Määritä kohdistus automaattisesti mukautettujen sivujen ensimmäiseen tekstiruutuun.
+- Esteettömyysparannuksia, jotka liittyvät kirkkauteen, kontrastiin, selostukseen ja puuttuviin paikkamerkkiteksteihin.
 
 ## <a name="version-20170"></a>Versio 2.0.17.0
 

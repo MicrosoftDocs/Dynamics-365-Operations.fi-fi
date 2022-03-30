@@ -2,7 +2,7 @@
 title: Taloushallinnon dimensioyhdistelmät
 description: Tässä aiheessa kuvataan taloushallinnon dimensioyhdistelmiä ja muutamia niiden käytön optimointivihjeitä.
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: epegors
 ms.search.validFrom: 2021-03-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 415a41100cc5be740f064d52598cd256c0aa2ae1d45473c8039bdc6e22381b3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9274e7f85005ab27d9f2b35fbb0be42e216941c9
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739975"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392933"
 ---
 # <a name="financial-dimension-sets"></a>Taloushallinnon dimensioyhdistelmät
 
@@ -61,6 +61,11 @@ Dimensioyhdistelmällä voi olla saldoja, jotka perustuvat sen taloushallinnon d
 ## <a name="clear-balances"></a>Tyhjennä saldot
 
 **Poista saldot** -painikkeella voit poistaa saldot ja lopettaa mahdolliset lisäpäivitykset. Dimensioyhdistelmä ei enää vaikuta kirjanpidon kirjaustapahtumiin.
+
+## <a name="delete-a-dimension-set"></a>Dimensioyhdistelmän poistaminen
+
+Älä **poista ja luo** dimensioyhdistelmiä missään muodossa, jossa voit ratkaista tietyn dimensioyhdistelmän saldotietoihin liittyvät mahdolliset ongelmat. Dimensioyhdistelmän uudelleenluominen on kallista. Jos tarvitset lisäapua ongelmiin, ota yhteyttä asiakastukeen. 
+
 
 Lisätietoja on kohdassa [Taloudelliset dimensiot](financial-dimensions.md).
 

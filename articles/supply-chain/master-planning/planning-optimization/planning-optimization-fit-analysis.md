@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344975"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408012"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -58,7 +58,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Ominaisuus | Lueteltu ongelma | Selitys | Odotettu käytettävyys |
 | --- | --- | --- | --- |
 | Toimenpiteet | Kattavuusryhmät, joissa toimenpidelaskenta on käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä toimenpiteitä ei luoda pääsuunnittelun aikana, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. Toimenpiteiden pääasiallinen tarkoitus on ehdottaa muutoksia aiemmin luotuihin tilauksiin. Arvioi, onko toimenpiteitä käytetty aktiivisesti osana liiketoimintaprosessejasi vai ovatko tilauksiin liittyvät viivetiedot riittäviä. | Huhtikuun 2022. |
-| Peruskalenterit | Kalenterit, joissa käytetään peruskalenteria: _\#_ | Tämä ominaisuus odottaa. Peruskalenteri ohitetaan sillä hetkellä, kun suunnittelun optimointi on käytössä. Arvioi, onko peruskalenteri tarpeen liiketoimintaprosessiesi kannalta vai riittääkö suora määritys kalentereissa. | Huhtikuun 2022. | 
+| Peruskalenterit | Kalenterit, joissa käytetään peruskalenteria: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä. | Maaliskuun 2022. | 
 | Erän käsittelykoodit | Ei-netottavissa olevan erän käsittelykoodin päätiedot: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä erän käsittelykoodit ohitetaan, kun suunnittelun optimointi on otettu käyttöön. | Lokakuu 2022 tai myöhemmin |
 | Saatavuus (CTP) | Tilauksen oletusasetukset, joiden toimituspäivämäärä on asetettu saatavuuteen (CTP): _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä CTP ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | 2022. lokakuuta |
 | Kopioi staattinen dynaamiseen suunnitelmaan | Staattisen kopioiminen ja dynaamiseen suunnitelmaan on käytössä pääsuunnitteluparametreissa. | Suunnittelun optimointi ei kopioi staattista suunnitelmaa dynaamiseen suunnitelmaan riippumatta tästä asetukseen. Yleensä tämä käsite ei ole yhtä merkityksellinen, koska suunnittelu optimointi tarjoaa nopeuden ja täydellisen uudistamisen. Jos käytössä on vähintään kaksi suunnitelmaa, pääsuunnittelu on käynnistettävä kunkin suunnitelman osalta. | 2022. lokakuuta |

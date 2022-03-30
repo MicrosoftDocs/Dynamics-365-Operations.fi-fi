@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 43e57b75933a67c1ee3fb0a59400b0d1bdab931cec5826346247cc361a0206df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720417"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396521"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 
@@ -31,7 +31,7 @@ Tämä ohjeaihe päivitetään, koska Dynamics 365 Supply Chain Managementissa o
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi.
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+> Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Supply Chain Managementin version 10.0.19 poistetut tai vanhentuneet ominaisuudet
@@ -78,7 +78,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Onko toinen ominaisuus korvannut?**   | Kyllä, suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen pääsuunnittelumoduulin. |
 | **Tuotealueet, joihin vaikutetaan**         | Supply Chain Management – Pääsuunnittelu |
 | **Käytön asetukset**              | Vain pilvipalvelussa. Suunnittelun optimointia ei tueta paikallisilla käyttöönotoilla. |
-| **Tila**                         | Vanhentunut. 1. huhtikuun 2022 jälkeen valmistusskenaarioita ei enää tueta Dynamics 365 Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Asiakkaiden on käytettävä valmistusskenaarioissa suunnittelun optimointia pääsuunnittelun laskelmissa. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](../master-planning/planning-optimization/planning-optimization-overview.md). Asiakkaat, joilla on käytössä paikalliset Dynamics 365 Supply Chain Management -käyttöönotot, voivat edelleen käyttää Supply Chain Managementin pääsuunnittelumoduulia valmistusskenaarioissa huhtikuun 2022 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
+| **Tila**                         | Vanhentunut. 1. huhtikuun 2022 jälkeen valmistusskenaarioita ei enää tueta Supply Chain Managementin sisäisellä pääsuunnittelumoduulilla. Tästä päivämäärästä alkaen Microsoft lopettaa kaikki sisäisen suunnittelumoduulin aktiivisten valmistusskenaarioiden kehityksen, ei julkaise uusia ominaisuuksia ja julkaisee vain kriittisiä korjaustiedostoja. Tämän päivämäärän jälkeen kaikkien valmistusskenaarioita tukea edellyttävän yrityksen on käytettävä pääsuunnittelun laskelmissaan suunnittelun optimointia. Suunnittelun optimointi tukee täysin valmistusskenaarioita lokakuuhun 2022 mennessä. Lisätietoja on kohdassa [Suunnittelun optimoinnin dokumentointi](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Yritykset, joilla on käytössä paikalliset Supply Chain Management -käyttöönotot, voivat edelleen käyttää sisäänrakennettua pääsuunnittelumoduulia valmistusskenaarioissa huhtikuun 2022 jälkeen. Muita ominaisuuksien parannuksia ei kuitenkaan ole käytettävissä. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Supply Chain Managementin version 10.0.11 poistetut tai vanhentuneet ominaisuudet
 

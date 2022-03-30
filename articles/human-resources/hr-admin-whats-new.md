@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86322fdf14bdefb5c9d4793a69e95ca913843e53
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: d8f0d91667d22ddd1dd7131ca3d03bb2fa70659c
+ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087521"
+ms.lasthandoff: 03/18/2022
+ms.locfileid: "8457448"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resourcesin uudet ja muuttuneet ominaisuudet
 
 > [!IMPORTANT]
-> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä erillistä Dynamics 365 Human Resourcesia käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat käytettävissä osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.25 jälkeen.  
+> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä erillistä Dynamics 365 Human Resourcesia käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.25 jälkeen.  
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tarjoamme kahden viikon välein uuden Microsoft Dynamics 365 Human Resources -julkaisun. Aiheissa luetellaan kunkin julkaisun muutokset.
 
 Seuraavissa artikkeleissa on lisätietoja Human Resourcesin tulevista ominaisuuksista tai päivitysprosessista: 
 

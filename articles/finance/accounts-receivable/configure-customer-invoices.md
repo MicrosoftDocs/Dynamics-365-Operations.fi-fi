@@ -2,7 +2,7 @@
 title: Myyntilaskun luominen
 description: Myyntitilauksen myyntilasku on myyntiin liittyvä lasku, jonka organisaatio antaa asiakkaalle.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087420"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392908"
 ---
 # <a name="create-a-customer-invoice"></a>Myyntilaskun luominen
 
@@ -82,6 +82,9 @@ Voit katsoa myyntitilausten tilaa **Kaikki myyntilaukset** -luettelosivulla.
 Käytä tätä prosessia, kun vähintään yksi myyntitilaus on valmis laskutettavaksi ja haluat konsolidoida ne yhteen laskuun. 
 
 Voit valita **Myyntitilaus**-luettelosivulla useita laskuja ja konsolidoida ne sitten **Luo laskuja** -vaihtoehdolla. Voit muuttaa **Laskun kirjaus** -sivulla **Yhteenvetotilaus**-asetuksen muodostamaan yhteenvedon tilausnumeron mukaan (jossa yhdelle myyntitilaukselle on useita pakkausluetteloita) tai laskutustilin mukaan (jossa yhdellä laskutustilillä on useita myyntitilauksia). Konsolidoi myyntitilaukset yhdeksi laskuksi **Järjestä**-painikkeella **Yhteenvetotilaus**-asetusten perusteella.
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Kirjaa hinnattomat myyntitilauksen rivit Tuotto-tilille
+Voit myös päivittää **kirjanpidon** **tuotto** tilin myyntitilausriveille, joissa ei ole hintaa. Voit määrittää tai tarkastella näitä tietoja **myyntireskontran parametri** -sivun **Kirjanpito ja arvonlisävero** -välilehdessä kohdassa **Kirjaa tuottotilille nollahintaisille myyntitilauslaskun riveille**. (**Myyntireskontra > Asetukset > Myyntireskontran parametrit**). Valitse **Kyllä**, jos haluat päivittää sellaisen myyntitilauslaskurivin **tuotto** tilin, jossa ei ole hintaa. Tuottotili määritetään **Varastokirjauksen** parametrisivulla **Myyntitilaus**-tilimääritysvälilehdessä. Jos tätä vaihtoehtoa ei ole valittu, **tuotto**-tilille ei kirjata rivejä, riveillä, riveillä ei ole hintatietoja.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Kirjaustoimintoa muuttavat lisäasetukset
 Seuraavat kentät muuttaa kirjausprosessin toimintaa.

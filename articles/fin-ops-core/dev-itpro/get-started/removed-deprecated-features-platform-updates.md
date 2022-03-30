@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384717"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396546"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -31,6 +31,18 @@ Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden po
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
+
+## <a name="feature-removal-effective-march-14-2022"></a>Ominaisuuden poistaminen tulee voimaan 14. maaliskuuta 2022
+
+### <a name="xslt-scripting-in-data-management"></a>XSLT-komentosarjat tiedonhallinnassa
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | XSLT-komentotiedoston tuki tietojenhallinnassa on vanhentunut, jotta talous- ja toimintosovellusten tietoturvaa ja tietosuojaa voidaan parantaa.  |
+| **Onko toinen ominaisuus korvannut?**   | Ei Asiakkaiden ja ISVs:n tulisi harkita X++-kielisten ratkaisujensa ostamista XSLT-komentotiedoston paikalla. |
+| **Tuotealueet, joihin vaikutetaan**         | Talous- ja toimintosovellukset. |
+| **Käytön asetukset**              | Kaikki. |
+| **Tila**                         | Vanhentunut - suunniteltu poistopäivä 14. maaliskuuta 2022.<br><br>Poikkeus: Asiakkaat, jotka käyttävät tällä hetkellä XLST-komentosarjoja. He voivat yhä käyttää sitä, kunnes ne päivittyvät versioon 10.0.30 tai sitä myöhemmäksi. Tätä poikkeusta lukuun ottamatta asiakkaat ovat saaneet ilmoituksen Microsoft 365 järjestelmänvalvojan keskuksessa käytettävissä olevassa sanomakeskuksessa. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Ominaisuuden poistaminen tulee voimaan lokakuussa 2021
 

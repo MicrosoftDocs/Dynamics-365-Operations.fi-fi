@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e271ddd3331d7b5de78f00a02b60a0479879c172
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 575aef709a0ac3b0cf8150f1e816dac04c069814
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700002"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396496"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
 
@@ -36,6 +36,7 @@ Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuun
 | Varmuusvaraston täyttäminen | Suunnittelun optimointi käyttää aina *Tämän päivän päivämäärä + hankinta-aika* -vaihtoehtoa **Täytä vähimmäisarvo** -kentälle **Nimikkeen kattavuus** -sivulla. Tämä helpottaa tahattoman suunnitellun tilauksen ja muiden ongelmien estämistä, sillä jos toimitusaika ei sisälly varmuusvarastoon, nykyiselle alhaiselle käytettävissä olevalle varastolle luodut suunnitellut tilaukset viivästyvät aina läpimenoajan vuoksi. |
 | Varmuusvaraston tarvekohdistus ja nettotarpeet | *Varmuusvarasto*-vaatimustyyppi ei kuulu **Nettotarpeet**-sivuun eikä se näy kyseisellä sivulla. Varmuusvarasto ei edusta kysyntää eikä siihen liity tarvepäivämäärää. Sen sijaan se asettaa rajoituksen sille, kuinka paljon varastoa on oltava aina käytettävissä. **Pienin arvo**-kenttä otetaan silti huomioon, kun suunniteltuja tilauksia lasketaan pääsuunnittelun aikana. On suositeltavaa tarkistaa **Kertynyt määrä** -sarake **Nettotarpeet**-sivulla, jotta nähdään, että tämä arvo otettiin huomioon. |
 | Kuljetuskalenteri | **Toimitustavat**-sivun **Kuljetuskalenteri**-sarakkeen arvo ohitetaan. |
+| Kattavuuden vähimmäis-/enimmäiskoodi ilman arvoja| Kun käytössä on sisäinen suunnittelumoduuli, jossa käytetään vähimmäis-/enimmäiskattavuuskoodia, jossa ei ole määritetty vähimmäis- tai enimmäisarvoja, suunnittelumoduuli käsittelee kattavuuskoodia vaatimuksena ja luo yhden tilauksen kutakin tarvetta varten. Suunnittelun optimointia käytetään, kun järjestelmä luo yhden tilauksen päivää kohden, jotta se kattaa päivän koko summan.  |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087496"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408227"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametrit, joita suunnittelun optimointi ei käytä
 
@@ -194,12 +194,6 @@ Suunnittelun optimointi ei käytä seuraavaa parametrivaihtoehtoa tai asetuksia 
   - **Toimituspäivän tarkistus** – Suunnittelun optimointi ei tue *CTP*-vaihtoehtoa, odottaa *CTP*-asetuksen tukea.
   - **Varaston läpimenoaika** – Suunnittelun optimointipalvelun 6.8.2021 julkaisua aiemmissa versioissa suunnittelun optimointi käyttää tätä parametria oikeiden tilaus- ja toimituspäivämäärien laskemiseen, mutta se ei tallenna itse laskettua läpimenoaikaa suunniteltuun tilaukseen. Myöhemmissä versioissa palvelu käyttää myös laskettua läpimenoaikaa **Läpimenoaika**-kentän ja **Työpäivät**-asetuksen määrittämiseen kulloisenkin suunnitellun tilauksen edellyttämällä tavalla.
   - **Työpäivät** – Suunnittelun optimointipalvelun 6.8.2021 julkaisua aiemmissa versioissa suunnittelun optimointi käyttää tätä parametria oikeiden tilaus- ja toimituspäivämäärien laskemiseen, mutta se ei tallenna itse laskettua läpimenoaikaa suunniteltuun tilaukseen. Myöhemmissä versioissa palvelu käyttää myös laskettua läpimenoaikaa **Läpimenoaika**-kentän ja **Työpäivät**-asetuksen määrittämiseen kulloisenkin suunnitellun tilauksen edellyttämällä tavalla.
-
-## <a name="working-time-calendars-page"></a>Työaikakalenterit-sivu
-
-Suunnittelun optimointi ei käytä seuraava parametriä **Työaikakalenterit**-sivulla:
-
-- **Peruskalenteri** – Odottaa *Peruskalenterit*-asetuksen tukea.
 
 ## <a name="batch-disposition-master-page"></a>Erän käsittelytiedot -sivu
 
