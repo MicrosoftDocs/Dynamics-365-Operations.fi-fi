@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (helmikuu)
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (tammikuu)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -414,8 +412,20 @@
               items:
                 - name: Tilauslaskutuksen yleiskuvaus
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Laskutusaikataulujen määrittäminen
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: Toistuvan sopimuksen laskutus
+                  items:
+                    - name: Laskutusaikataulujen luominen
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: Laskutusaikataulun kopioiminen
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Tavoitteisiin perustuva laskutus
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: Laskutusaikataulujen lakkauttaminen
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: Tuotto- ja kululykkäykset
+                  items: null
+                - name: Useiden elementtien tuoton kohdistus
+                  items: null
             - name: Maksut ja selvitykset
               items:
                 - name: Asiakkaan maksun yhteenveto
@@ -1443,11 +1453,11 @@
                             - name: SharePoint-kanavan konfiguroiminen
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Sähköisen laskutuksen määritys ja käyttö Financessa ja Supply Chain Managementissa
-                          items: null
-                        - name: Sähköisen laskutuksen integroinnin aktivoiminen ja määrittäminen
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: Sähköisen laskutuksen parametrien määrittäminen
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: Sähköisen laskutuksen integroinnin aktivoiminen ja määrittäminen
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: Sähköisen laskutuksen parametrien määrittäminen
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Sähköisen laskutuksen käyttö
                           items:
                             - name: Sähköisten asiakirjojen lähettäminen sähköiseen laskutukseen
@@ -1532,6 +1542,10 @@
                           items:
                             - name: ALV-ilmoitus
                               href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: Suomen raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
                         - name: Ranskan raportointi
                           items:
                             - name: ALV-ilmoitus
@@ -1546,6 +1560,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-myyntiluettelo
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Norjan raportointi
+                          items:
+                            - name: ALV-ilmoitus
+                              href: localizations/emea-nor-vat-declaration.md
                         - name: Espanjan raportointi
                           items:
                             - name: 'ALV-tietojen välitön lähetys (Suministro Inmediato de Información del IVA, SII)'
@@ -1564,10 +1582,6 @@
                           items:
                             - name: ALV-ilmoitus
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Norjan raportointi
-                          items:
-                            - name: ALV-ilmoitus
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Veron laskennan käyttöönotto siirtotilausta varten
                       items:
                         - name: Verotoimintojen tuen määrittäminen
@@ -1694,8 +1708,6 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Pakkausmateriaalimaksut
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: ALV-laskelma
-                  href: localizations/emea-aut-vat-statement-details.md
                 - name: Kansainväliset palvelut -raportti
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: Itävallan Intrastat
@@ -2020,9 +2032,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: Raporttien ja asiakirjojen summien esitysmuodon päivittäminen
                   href: localizations/emea-amount-printing-forms.md
-                - name: ALV-laskelma
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: ALV-ilmoitus (Tšekin tasavalta)
+                - name: ALV-ilmoitus
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Tšekin Intrastat
                   href: localizations/emea-cze-intrastat.md
@@ -2056,10 +2066,12 @@
                   href: localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
                 - name: Sähköisen OIOUBL-laskutuksen määrittäminen
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
-                - name: Määritä maksutositteen muoto
+                - name: Maksutositteen muodon määrittäminen
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: Tanskan Intrastat
                   href: localizations/emea-dnk-intrastat.md
+                - name: ALV-ilmoitus
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Egypti
               items:
                 - name: Egypti – yleiskatsaus
@@ -2242,6 +2254,8 @@
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
                 - name: Suomen Intrastat
                   href: localizations/emea-fin-intrastat.md
+                - name: ALV-ilmoitus
+                  href: localizations/emea-fin-vat-declaration.md
             - name: Ranska
               items:
                 - name: Ranska – yleiskatsaus
@@ -2332,12 +2346,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: ALV-ilmoitus
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: ALV-ilmoituksen antaminen sähköisesti (ELSTER)
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
-                - name: Saksalainen Intrastat
+                - name: Saksan Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: ALV-laskelma
-                  href: localizations/emea-de-vat-declaration.md
                 - name: Asiakkaiden sähköiset laskut -raportti
                   href: localizations/emea-deu-e-invoices.md
                 - name: Kirjauskansioluettelon raportti
@@ -2348,8 +2358,6 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU-myyntiluettelo
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: ALV-ilmoitus
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Unkari
               items:
                 - name: Unkari – yleiskatsaus
@@ -2562,6 +2570,8 @@
                                   href: localizations/apac-ind-GST-import-goods-gst.md
                                 - name: GST-verollisten palveluiden tuonti
                                   href: localizations/apac-ind-import-services-gst.md
+                                - name: Tuontitilausten kulujen kohdistaminen Tulliselvitys-sivulla
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
                                 - name: Nollaverokantaisten tuotteiden vienti
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                                 - name: Nollaverokantaisten palveluiden vienti
@@ -3116,17 +3126,13 @@
               items:
                 - name: Alankomaat – yleiskatsaus
                   href: localizations/netherlands.md
-                - name: ALV-ilmoitus
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: Sähköiset veroilmoitukset (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL -integrointi
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Tarkistustiedosto (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: ALV-ilmoitus (Alankomaat)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: Alankomaiden Intrastat
+                - name: Intrastat
                   href: localizations/emea-nl-intrastat.md
                 - name: EU-myyntiluettelo
                   href: localizations/emea-nl-EU-sales-list.md
@@ -3540,7 +3546,7 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Ruotsin arvonlisäveromaksun raportti
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: Ruotsin ALV-ilmoitus
+                - name: ALV-ilmoitus
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Ruotsin Intrastat
                   href: localizations/emea-swe-intrastat.md

@@ -10,18 +10,16 @@
           items:
             - name: Talous- ja toimintosovellusten uudet ja muuttuneet ominaisuudet
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Platform update -päivitysten uudet ja muuttuneet ominaisuudet
+            - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet
               items:
-                - name: Platform update -päivitysten uudet ja muuttuneet ominaisuudet -kotisivu
+                - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet -kotisivu
                   href: get-started/whats-new-home-page.md
-                - name: Platform update -päivitykset versioon 10.0.26 (toukokuu 2022)
+                - name: Käyttöympäristöpäivitykset versioon 10.0.26 (toukokuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Platform update -päivitykset versioon 10.0.25 (huhtikuu 2022)
+                - name: Käyttöympäristöpäivitykset versioon 10.0.25 (huhtikuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Platform update -päivitykset versioon 10.0.24 (helmikuu 2022)
+                - name: Käyttöympäristöpäivitykset versioon 10.0.24 (helmikuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Platform update -päivitykset versioon 10.0.23 (tammikuu 2022)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -240,6 +238,8 @@
               href: data-entities/configure-export-data-lake.md
             - name: Talous- ja toimintosovellukset Azure Data Lakessa
               href: data-entities/finance-data-azure-data-lake.md
+            - name: Azure Data Lakeen tallennetut tiedot ja metatiedot
+              href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
             - name: Yksikkösäilön määrittäminen saataville Data Lake -säilönä
               href: data-entities/entity-store-data-lake.md
             - name: Vieminen Azure Data Lake -palvelun luomat liiketoimintatapahtumat (esiversio)
@@ -374,9 +374,9 @@
                   items:
                     - name: 'Paikallisten projektien määrittäminen LCS:ssä'
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)
+                    - name: Paikallisten ympäristöjen määrittäminen ja käyttöönotto (käyttöympäristöpäivitys 41 ja uudemmat)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update ‑päivitykset 12–40)
+                    - name: Paikallisten ympäristöjen määrittäminen ja käyttöönotto (käyttöympäristöpäivitykset 12–40)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Retail-kanavan komponenttien asennusohjeet paikallisessa ympäristössä
                       href: deployment/deploy-retail-onprem.md
@@ -410,6 +410,8 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Saman AD FS -esiintymän käyttäminen uudelleen useissa ympäristöissä
                       href: deployment/onprem-reuseadfs.md
+                    - name: Windows Serverin päivittäminen Microsoft Dynamics 365 Finance + Operations (on-premises) -ympäristöissä
+                      href: deployment/onprem-upgrade-os.md
                     - name: SQL Server -esiintymän päivittäminen Microsoft Dynamics 365 Finance + Operations (on-premises) -ympäristöissä
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Paikallinen edustaja
@@ -932,6 +934,8 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: Kumppanien LCS
                   href: lifecycle-services/getting-started-lcs.md
+                - name: Tuetut selaimet
+                  href: lifecycle-services/web-browsers.md
                 - name: 'RESTful API:t'
                   items:
                     - name: Ympäristöjen aloittaminen ja lopettaminen
@@ -1490,7 +1494,9 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Parametritiedostojen päivittäminen
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Regression suite automation tool -opas
+            - name: Kokeilutila ilman Azure DevOpsia
+              href: perf-test/rsat/rsat-trial-without-devops.md
+            - name: Regression Suite Automation Tool -opetusohjelma
               href: perf-test/rsat/rsat-tutorial.md
             - name: Muiden kuin järjestelmänvalvojakäyttäjien konfigurointi
               href: perf-test/rsat/rsat-configure-nonadmin.md
@@ -1742,7 +1748,7 @@
                       href: migration-upgrade/appupdate-80-81.md
                 - name: Ohjelmiston elinkaarikäytäntö ja pilviversiot
                   href: migration-upgrade/versions-update-policy.md
-                - name: Uusimman Platform update -päivityksen käyttöönotto ympäristöissä
+                - name: Uusimman käyttöympäristöpäivityksen käyttöönotto ympäristöissä
                   href: migration-upgrade/upgrade-latest-platform-update.md
                 - name: Tietojen päivittäminen kehitys- tai esittely-ympäristössä
                   href: migration-upgrade/upgrade-data-to-latest-update.md
