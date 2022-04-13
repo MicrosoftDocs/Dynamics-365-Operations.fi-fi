@@ -1,8 +1,8 @@
 ---
-title: Jatketun sisäänkirjautumisen määrittäminen MPOS:ille ja Cloud POS:ille
-description: Tässä aiheessa käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä.
-author: boycezhu
-ms.date: 09/07/2021
+title: Laajennettujen kirjautumisten ominaisuuden lisääminen ja käyttö
+description: Tässä ohjeaiheessa kuvataan, kuinka Microsoft Dynamics 365 Commercen myyntipistesovelluksen (POS) laajennettu kirjautumisominaisuus määritetään ja käytetään.
+author: boycez
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,56 +16,52 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
+ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478668"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491436"
 ---
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen
+# <a name="set-up-and-use-the-extended-logon-capability"></a>Laajennettujen kirjautumisten ominaisuuden lisääminen ja käyttö
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä.
+Tässä ohjeaiheessa kuvataan, kuinka Microsoft Dynamics 365 Commercen myyntipistesovelluksen (POS) laajennettu kirjautumisominaisuus määritetään ja käytetään.
 
-## <a name="setting-up-extended-logon"></a>Jatketun sisäänkirjautumisen määrittäminen
+Cloud POS (CPOS) ja Modern POS (MPOS) tarjoavat laajennetun sisäänkirjautumisominaisuuden, jonka avulla vähittäismyynnin työntekijät kirjautuvat POS-sovellukseen skannaamalla viivakoodin tai kortin magneettinauhan lukulaitteen avulla.
 
-Löydät viivakoodimuotojen asetukset kohdassa **Retail ja Commerce** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipisteen profiilit** &gt; **Toimintoprofiilit**. **Toiminnot**-pikavälilehti sisältää seuraavat jatkettuun sisäänkirjautumiseen liittyvät asetukset.
+## <a name="set-up-extended-logon"></a>Jatketun sisäänkirjautumisen määrittäminen
 
-### <a name="staff-bar-code-logon"></a>Henkilökunnan viivakoodisisäänkirjautuminen
+Noudattamalla seuraavia ohjeita voit määrittää vähittäismyynnin POS-kassakomentoja varten laajennetun sisäänkirjauksen.
 
-Kun **Henkilökunnan viivakoodisisäänkirjautuminen** -asetus on käytössä, työntekijät, joiden myyntipisteen sisäänkirjautumisen tunnistetietoihin on määritetty jatkettu sisäänkirjautuminen, voivat kirjautua sisään viivakoodin avulla.
+1. Siirry Commerce headquartersissa kohtaan **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**. 
+2. Valitse vasemmanpuoleisesta siirtymisruudusta vähittäismyyntisäilöön liittyvä toimintoprofiili.
+3. Määritä **Toiminnot**-pikavälilehden **Kirjautumisen lisätodennusvaihtoehdot** -kohdassa **Kyllä**- tai **Ei**-asetus:
 
-### <a name="staff-bar-code-logon-requires-password"></a>Henkilökunnan viivakoodisisäänkirjautumisessa tarvitaan salasana
+    - **Henkilökunnan viivakoodikirjautuminen** – Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat, että työntekijät kirjautuvat myyntipisteeseen skannaamalla viivakoodin. 
+    - **Henkilökunnan viivakoodikirjautuminen vaatii salasanaa** – Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat, että työntekijät syöttävät salasanan kirjautuessaan myyntipisteeseen skannaamalla viivakoodin.
+    - **Henkilökuntakorttikirjautuminen** – Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat, että työntekijät kirjautuvat myyntipisteeseen pyyhkäisemällä korttia.
+    - **Henkilökunnan korttikirjautuminen vaatii salasanaa** – Määritä tämän asetuksen arvoksi **Kyllä**, jos haluat, että työntekijät syöttävät salasanan kirjautuessaan myyntipisteeseen pyyhkäisemällä korttia.
 
-Kun **Henkilökunnan viivakoodisisäänkirjautumisessa tarvitaan salasana** -asetus on käytössä, henkilökunnan viivakoodisisäänkirjautuminen valitsee vain työntekijän, jolle on määritetty esitetty jatkettu sisäänkirjautuminen. Työntekijöiden on silti syötettävä salasanansa, kun tämä asetus on käytössä.
+Viivakoodi tai kortti liitetään tunnistetietoihin, jotka työntekijälle voidaan määrittää. Tunnistetiedoissa on oltava vähintään kuusi merkkiä. Merkkijono, joka sisältää viisi ensimmäistä merkkiä, on oltava yksilöivä, ja sitä pidetään *tunnistetietotunnuksena*, jota käytetään työntekijän hakuun. Muita merkkejä käytetään suojauksen vahvistuksessa. Oletetaan esimerkiksi, että sinulla on kaksi korttia, joista toisen tunnistetieto on 12345DGYDEYTDW sekä toinen, jonka on tunnistetieto on 12345EWUTBDAJH. Koska näillä korteilla on sama tunnistetietotunnus 12345, niitä ei voi määrittää työntekijöille onnistuneesti.
 
-### <a name="staff-card-logon"></a>Henkilökunnan korttisisäänkirjautuminen
-
-Kun **Henkilökunnan korttisisäänkirjautuminen** -asetus on käytössä, työntekijät, joiden myyntipisteen sisäänkirjautumisen tunnistetietoihin on määritetty jatkettu sisäänkirjautuminen, voivat kirjautua sisään magneettinauhan avulla.
-
-### <a name="staff-card-logon-requires-password"></a>Henkilökunnan korttisisäänkirjautumisessa tarvitaan salasana
-
-Kun **Henkilökunnan korttisisäänkirjautumisessa tarvitaan salasana** -asetus on käytössä, henkilökunnan korttisisäänkirjautuminen valitsee vain työntekijän, jolle on määritetty esitetty jatkettu sisäänkirjautuminen. Työntekijöiden on silti syötettävä salasanansa, kun tämä asetus on käytössä.
-
-## <a name="assigning-an-extended-logon"></a>Jatketun sisäänkirjautumisen määrittäminen
+## <a name="assign-extended-logon"></a>Määritä jatkettu kirjautuminen
 
 Oletuksena vain päälliköt voivat määrittää työntekijöille jatketun sisäänkirjautumisen. Määritä laajennettu sisäänkirjautuminen, siirtymällä myyntipisteessä kohtaan **Jatkettu kirjautuminen**. Etsi sitten työntekijä syöttämällä hänen operaattorintunnus hakukenttään. Valitse työntekijä ja napsauta sitten **Määritä**. Lue tai skannaa työntekijälle määritettävä jatkettu sisäänkirjautuminen seuraavalla sivulla. Jos kortin luku tai skannaus luettiin onnistuneesti, **OK**-painike tulee näkyviin. Napsauta **OK** tallentaaksesi jatkettu sisäänkirjautuminen kyseiselle työntekijälle.
 
-## <a name="deleting-an-extended-logon"></a>Jatketun sisäänkirjautumisen poistaminen
+## <a name="delete-extended-logon"></a>Poista jatkettu sisäänkirjautuminen
 
 Poista työntekijälle määritetty jatkettu sisäänkirjautuminen etsimällä työntekijä **Jatkettu kirjautuminen** -toiminnon avulla. Valitse työntekijä ja napsauta sitten **Poista määritys**. Kaikki tälle käyttäjälle määritetyt jatketun kirjautumisen tunnistetiedot poistetaan.
 
-## <a name="extending-extended-logon"></a>Jatketun kirjautumisen laajentaminen
+## <a name="use-extended-logon"></a>Käytä jatkettua sisäänkirjautumista
 
-Laajennettu kirjautuminen sallii valmiin yksilöivän tunnuksen koostuvan vain viidestä merkittävästä merkistä. Jos esimerkiksi määrität kaksi korttia, joiden tunnukset ovat "1234567" ja "1234578", molempien tunnukseksi katsotaan "12345". Voisit luoda laajennuksen tukemaan lisää merkkejä. Yksityiskohtaiset ohjeet [Laajennetun MPOS- ja pilvimyyntipistekirjautumisen laajentaminen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+Kun laajennettu kirjautuminen on määritetty ja työntekijälle on määritetty viivakoodi tai magneettiraita, työntekijän täytyy vain pyyhkäistä tai skannata korttiaan, kun POS-kirjautumissivu on näkyvissä. Jos tarvitaan myös salasana ennen kuin kirjautuminen voi jatkua, työntekijää kehotetaan syöttämään salasanansa.
 
-Kirjautumispalvelua voidaan laajentaa niin, että ne tukevat laajennettuja kirjautumislaitteita kuten käsiskannereita. Lisätietoja on POS-laajennettavuusdokumentaatiossa.
+## <a name="extend-extended-logon"></a>Laajenna jatkettua kirjautumista
 
-## <a name="using-extended-logon"></a>Jatketun sisäänkirjautumisen käyttäminen
+Laajennetun sisäänkirjautumisominaisuuden käyttöönotto edellyttää, että tunnistetietojen vähimmäispituus on kuusi merkkiä ja että ensimmäiset viisi merkkiä (tunnistetietotunnus) ovat yksilöiviä. Se on alun perin tarkoitettu otokseksi, jonka kehittäjät voivat mukauttaa vastaamaan tietyn toteutuksen vaatimuksia. (Sitä voidaan esimerkiksi mukauttaa niin, että se tukee enemmän merkkejä tai käyttää erilaisia suojausvarmennussääntöjä.) Lisätietoja laajennuksien rakentamisesta laajennettua kirjautumista varten on kohdassa [MPOS- ja Cloud POS -laajennusten laajennetun kirjautumistoiminnon lisääminen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
-Kun jatkettu sisäänkirjautuminen on määritetty ja työntekijälle on määritetty viivakoodi tai magneettinauha, työntekijän tarvitsee vain lukea tai skannata korttinsa myyntipisteen kirjautumissivulla. Jos tarvitaan myös salasana ennen kuin kirjautuminen voi jatkua, työntekijää kehotetaan syöttämään salasanansa.
-
+Kirjautumispalvelua voidaan myös laajentaa niin, että ne tukevat laajennettuja kirjautumislaitteita kuten käsiskannereita. Lisätietoja on [POS-laajennettavuusdokumentaatiossa](dev-itpro/pos-extension/pos-extension-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

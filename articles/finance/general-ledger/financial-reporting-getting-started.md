@@ -2,25 +2,27 @@
 title: Taloushallinnon raportoinnin yleiskatsaus
 description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 Financessa ja miten käytät taloudellisen raportoinnin ominaisuuksia.
 author: aprilolson
-ms.date: 07/27/2021
+ms.date: 03/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.custom:
+- "10444"
+- intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
+ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983974"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8527310"
 ---
 # <a name="get-started-with-financial-reporting"></a>Taloushallinnon raportoinnin aloittaminen 
 
@@ -174,7 +176,7 @@ Ongelma 1: Report Designer ei käynnisty, kun valitaan **Uusi** tai **Muokkaa**.
 * Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse **Suojaus**-välilehdessä ensin Luotettavat sivuston ja sitten **Sivustot**. Anna **Lisää tämä sivusto vyöhykkeeseen** -kohdassa \*\.dynamics.com ja valitse sitten **Lisää**. 
 * Valitse Internet Explorerissa ensin **Asetukset** ja sitten **Internet-asetukset**. Valitse ensin **Suojaus**-välilehti ja sitten Luotettavat sivustot. Vaihda Vyöhykkeen suojaustaso -kohdan asetukseksi **Melko pieni**.
 * Poista ponnahdusikkunoiden esto käytöstä selaimessa.
-* Työasemien on asennettava Microsoft .NET -kehys 4.6.2 tai uudempi versio. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/download/details.aspx?id=53345).
+* Työasemien on asennettava Microsoft .NET -kehys 4.7.2 tai uudempi versio. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://dotnet.microsoft.com/download/dotnet-framework/net472).
 * Jos käytössäsi on Chrome-selain, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät Chromea incognito-tilassa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Lisätietoja Chrome ClickOnce -laajennuksesta on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Jos käytät Microsoft Edgea Chrome-selaimen kanssa, sinun ei tarvitse asentaa ClickOnce-laajennusta Edge Chromiumiin. Voit kuitenkin ottaa käyttöön ClickOnce-asetuksen, jotta voit ladata raporttien suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa.
 

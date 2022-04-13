@@ -2,52 +2,74 @@
 title: Varaston näkyvyyden apuohjelman yleiskatsaus
 description: Tässä aiheessa käsitellään varaston näkyvyyden sisältöä ja sen ominaisuuksia.
 author: yufeihuang
-ms.date: 10/26/2020
+ms.date: 03/18/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8871d10dac9103f17780989bc547b6c20ba79b76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ee6229937ea27adf231dcd1c9921878e53bd981
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985542"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524490"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Varaston näkyvyyden apuohjelman yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Varaston näkyvyyden apuohjelma (eli *varaston näkyvyyssovellus*) on itsenäinen ja erittäin skaalautuva mikropalvelu, joka antaa mahdollisuuden reaaliaikaiseen varastosaldon seurantaan. Niinpä sen avulla saadaan yleinen varastonäkymä.
+Varaston näkyvyyden apuohjelma (eli *varaston näkyvyyspalvelu*) tarjoaa itsenäisen ja erittäin skaalautuvan mikropalvelun, joka mahdollistaa reaaliaikaiset varastomuutoskirjaukset ja näkyvyyden seurannan kaikissa tietolähteissäsi ja kanavissasi. Se tarjoaa alustan, jonka avulla voit hallita yleisiä varastoja käyttämällä toimintoja, jotka sisältävät (mutta eivät rajoitu vain) seuraavan luettelon:
 
-Ulkoiset järjestelmät käyttävät palvelua RESTful API -ohjelmointirajapintojen avulla. Tällä tavoin ne voi joko tehdä kyselyjä varastosaldon tiedoissa annetuilla dimensioilla tai tehdä muutoksia varastoon erilaisissa mukautetuissa tietolähteissä.
+- Jäljitä varaston viimeisin tila (esimerkiksi käytettävissä oleva, tilattu, ostettu, kuljetettava, palautettu ja karanteenissa) kaikkien tietolähteiden, varastojen ja sijaintien välillä liittämällä Supply Chain Managementin tai kolmannen osapuolen logistiikan tietolähteet (kuten tilaustenhallintajärjestelmät, kolmannen osapuolen yritysresurssisuunnittelun \[ERP\]-järjestelmät, myyntipisteen \[POS\]-järjestelmät ja varastonhallintajärjestelmät) varaston näkyvyyspalveluun.
+- Kysele käytettävissä olevan varaston saatavuutta ja puutteita ja hae vastaukset välittömästi kutsumalla varaston näkyvyyspalvelua suoraan.
+- Vältä ylimyyminen erityisesti silloin, kun kysyntä on peräisin eri kanavien kautta, tekemällä reaaliaikaista pehmeää varausta varaston näkyvyyspalvelussa.
+- Hallitse luvattuja tilauksia ja asiakkaiden odotuksia paremmin antamalla tarkat nykyiset tai seuraavat saatavilla olevat päivämäärät, jotta monikanavainen saatavilla luvattaviksi (ATP) -ominaisuus voi laskea odotetut tilausten toteutumispäivät.
 
-Varaston näkyvyyssovelluksen on Microsoft Dataverseen perustuva mikrosovellus, joka on laajennettavissa. Sovelluksia voi muodostaa Power Appsin avulla. Lisäksi Power BI:n avulla saa mukautettuja, liiketoiminnan tarpeita vastaavia toimintoja.
+## <a name="extensibility"></a>Laajennettavuus
 
-Varaston näkyvyyssovelluksen voi integroida useisiin kolmannen osapuolen järjestelmiin määrittämällä standardoitujen varastodimensioiden määritysvaihtoehdot ja määrittämällä tapahtumatyypit. Varaston näkyvyyssovellus tukee myös mukautettua laajennettavuutta määritettävien laskennallisten määrien kautta.
+Varaston näkyvyyspalvelu on erittäin laajeneva, koska tietojen syöttöä ja tulostusta ei rajoiteta Microsoft-sovellusten käyttöön. Ulkoiset järjestelmät voivat käyttää palvelua RESTful-sovellusohjelmaliittymän (API:n) kautta. Sen lisäksi, että käytät Supply Chain Managementin tietolähteen ja -ulottuvuuksien valmiita kartoituksia, voit integroida varaston näkyvyyden useisiin kolmannen osapuolen järjestelmiin määrittämällä lisätietolähteitä, varastotilamittauksia (kutsutaan nimellä *fyysiset mitat* Varaston näkyvyys -palvelussa) ja varaston mitat määrityssovelluksen kautta. Näin voit tehdä liukumakyselyn ja muuttaa useita tietolähteitä ja ennalta määritettyjä varastodimensioita.
 
-## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Varaston näkyvyyssovelluksen ja Dynamics 365 Supply Chain Managementin integrointi
+Koska varaston näkyvyys perustuu Microsoft Dataverseen, sen tietoja voidaan käyttää Power Appsin kanssa muodostamiseen ja integroimiseen. Lisäksi Power BI:tä voidaan käyttää luomaan mukautettuja liiketoiminnan tarpeita vastaavia koontinäyttöjä.
 
-Integroitu ratkaisu noutaa tietoja Dynamics 365 Supply Chain Managementista ja seuraa jatkuvasti varaston muutoksia. Lisätietoja: [Asenna ja määritä varaston näkyvyys](inventory-visibility-setup.md) ja [Määritä varaston näkyvyys](inventory-visibility-configuration.md).
+## <a name="scalability"></a>Skaalautuvuus
 
-## <a name="get-a-global-view-of-inventory"></a>Varaston yleisen näkymän hakeminen
+Varaston näkyvyyspalvelua voidaan skaalata ylös tai alas tietojen määrästä riippuen. Skaalattavuuskokemus on yleensä puoliksi suljettu, ja sen suorittaa Microsoftin ympäristötiimi. Se perustuu tapahtumatietojen automaattiseen tunnistukseen ja arviointiin.
 
-Integroidun ratkaisun avulla voidaan määrittää omat tietolähteet ja keskittää varastotiedot. Lisätietoja: [Varaston näkyvyyden määritys](inventory-visibility-configuration.md).
+## <a name="feature-highlights"></a>Toiminnon tärkeimmät ominaisuudet
 
-Varastoa voi tarkastella kahdella tavalla:
+### <a name="get-a-global-view-of-real-time-inventory"></a>Reaaliaikaisen varaston yleisen näkymän hakeminen
 
-- Kyselyn lähettäminen tehokkaan ohjelmointirajapinnan avulla. Tämä ohjelmointirajapinta voi palauttaa lähes reaaliaikaiset varastotiedot suoraan välimuistiin tallennetusta esiintymästä. Sopimuksia ja esimerkkejä on kohdassa [Varaston näkyvyyden julkiset ohjelmointirajapinnat](inventory-visibility-api.md).
-- Varastosaldoluettelon raakatietojen tarkasteleminen. Tämä luettelo synkronoidaan säännöllisesti välimuistiin tallennetusta esiintymistä ja näkyy Dataversessa. Lisätietoja on kohdassa [Varaston näkyvyyssovellus](inventory-visibility-power-platform.md).
+Varaston näkyvyys varmistaa, että käytettävissäsi ovat kaikkien kanavien, sijaintien ja varastojen viimeisimmät varastomäärät. Sitä käytetään eniten päivittäisen toiminnan liiketoiminnan tueksi aina, kun varastotietueita on hankittava. Valmiina käytettävissä ovat fyysinen käytettävissä oleva varasto, myydyt määrät ja ostetut määrät. Voit myös määrittää muut fyysisen varaston mitat (kuten palautetut, karanteeniin kirjatut ja kirjatut tiedot) tarpeen mukaan, jotta nämä tiedot saadaan reaaliaikaisesti. Varaston näkyvyys voi tehokkaasti käsitellä miljoonia varaston muutosten kirjaamisia. Nämä tiedot voidaan koota ja kuvata uusilla huollon varastomäärillä heti, sekuntia tai minuuttia kohti sen mukaan, miten usein tiedot kirjataan. Lisätietoja on kohdassa [Varaston näkyvyyden julkiset API:t](inventory-visibility-api.md).
 
-## <a name="soft-reservations"></a>Alustavat varaukset
+### <a name="soft-reservation-to-avoid-overselling-across-all-order-channels"></a>Pehmeä varaus ylimyynnin välttämiseksi kaikissa tilauskanavissa
 
-Alustavaa varausta käytetään, kun yrityksen on varattava tietty määrä tuotteita tukemaan esimerkiksi myyntitilauksen täyttämistä siten, että ylimyynniltä vältytään. Kun myyntitilaus luodaan ja vahvistetaan Supply Chain Managementissa tai muissa tilausten hallintajärjestelmissä, tietyn määrän varauspyyntö lähetetään varaston näkyvyyssovellukseen. Varaston näkyvyyssovelluksessa voidaan varata tuotteita, joissa on dimensiotiedot, ja tiettyjä varastotapahtumatyyppejä. (Lisätietoja on kohdassa [Varaston näkyvyyssovellus](inventory-visibility-power-platform.md).) Kun määrän varaus on onnistunut, varaustunnus palautetaan. Tämän varaustunnuksen avulla voidaan muodostaa linkki takaisin Supply Chain Managementin tai muiden tilausten hallintajärjestelmien alkuperäiseen tilaukseen.
+*Pehmeän varauksen* avulla voit määrittää tai merkitä tiettyjä määriä tilauksen tai kysynnän täyttämiseksi. Pehmeä varaus ei vaikuta fyysiseen varastoon, mutta se vähentää *käytettävissä olevan varauksen* varastomäärän ja antaa päivitetyn määrän tilauksen tulevaa täyttämistä varten. Tämä ominaisuus on hyödyllinen, jos myyntipyynnöt tai -tilaukset tulevat liiketoimiisi yhdestä tai muista kanavien tai tietolähteiden lähteistä, jotka ovat ERP-järjestelmän (System of Record Enterprise Resource Planning) ulkopuolella.
 
-Toiminnot on suunniteltu siten, että varaston näkyvyyssovelluksen varaus ei muuta kokonaismäärään. Sen sijaan se vain merkitsee varatun määrän. (Tämän vuoksi tällaista varausta kutsutaan *alustavan varauksen*.) Alustava varausmäärälle voidaan tehdä vastakirjaus, kun Supply Chain Management tai kolmannen osapuolen järjestelmä käyttää tuotteet kutsumalla ohjelmointirajapinnan uudelleen. Määrä vähennetään silloin ja kokonaismäärä päivitetään varaston näkyvyyssovelluksessa. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md).
+Jos varaston näkyvyyspalvelussa ei käytä pehmeää varausta, odota, kunnes ERP-järjestelmä synkronoi tilauksen ja käsittelee sen fyysisen varastomäärän päivityksen takia. Tällä prosessilla on yleensä suuri viive. Pehmeät varaukset tulevat kuitenkin voimaan heti aina, kun myyntikanavien myyntitilauksista luodaan myyntipyyntö tai -tilaus. Siksi ne auttavat ehkäisemään ylimyynnit varmistamalla, että ylimyynnit eivät tule toistensa ylimyyntitilauksiin, kun ne saavuttavat lopulta ERP-järjestelmän. Pehmeät varaukset varmistavat myös, että voit täyttää kaikki luvatut tilaukset. Siksi ne auttavat vastaamaan asiakkaan odotuksiin ja ylläpitämään asiakkaan lojaaliutta. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md).
+
+### <a name="immediate-response-of-atp-dates-confirmation"></a>ATP-päivämäärien vahvistuksen välitön vastaus
+
+Näkyvyys lähellä tulevaan arvioituun varastoon (mukaan lukien tarjonta, kysyntä ja arvioidut käytettävissä olevan varaston tiedot) on tärkeää, koska se auttaa yritystäsi saavuttamaan seuraavat tavoitteet:
+
+- Minimoi varastotasot vähentääksesi varastonhallintakuluja.
+- Helpottaa sisäistä tilausten käsittelyä, jotta myyjät voivat laskea lähetys- ja toimituspäivät tilatuttujen tuotteiden saatavuuden mukaan.
+- Lisää läpinäkyvyys siitä, milloin asiakkaat voivat odottaa, että varastosta loppunut nimike tulee saataville, antamalla seuraavan käytettävissä olevan päivämäärän.
+
+ATP-ominaisuus on helppo ottaa käyttöön päivittäisessä tilauksen täyttämisprosessissa. Muiden varastonäkyvyyksien lisäksi ATP-ominaisuus on *yleinen ja reaaliaikainen*. Voit näin ollen määrittää useita ATP-laskentakaavoja, jos haluat, että koko varaston käytettävyyskyselyt kattavat kaikki liiketoimintasi kanavat ja tietolähteet. Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulut ja luvattavissa olevat aikataulut](inventory-visibility-available-to-promise.md).
+
+### <a name="compatibility-with-advanced-warehouse-management-items"></a>Yhteensopivuus kehittyneen varastonhallinnan nimikkeiden kanssa
+
+Microsoftin tavoitteena on integroida valmiiksi edistyneeseen varastohallintaan (WHS), jotta myös WHS-asiakkaat voivat nauttia varaston näkyvyyspalvelun eduista. Vuoden 2022 1. julkaisuaallon (julkinen esiversio maaliskuussa) varastopalvelu tukee WHS-nimikkeen käytettävissä olevan varaston kyselyitä ja ATP:tä. Pehmeää varausta ja kohdistustoimintoa tuetaan WHS:n asiakkaille seuraavassa aallossa. <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+
+## <a name="licensing"></a>Käyttöoikeudet
+
+Varaston näkyvyyspalvelu on käytettävissä seuraavissa versioissa:
+
+- **Varaston näkyvyyden lisäosa Microsoft Dynamics 365 Supply Chain Managementissa** – yrityksille, joilla on voimassa oleva Supply Chain Management -käyttöoikeus, varaston näkyvyys on käytettävissä ilman ylimääräisiä käyttöoikeuskustannuksia. Voit aloittaa sen kokeilun tänään. Lisätietoja on kohdassa [varaston näkyvyyden asennus ja määritys](inventory-visibility-setup.md).
+- **Varaston näkyvyyspalvelu komponenttina IOM:ssä** – Tämä versio on tarkoitettu joko Intelligent Order Management (IOM) -asiakkaille tai yrityksille, jotka eivät käytä Supply Chain Management -järjestelmää ERP-järjestelmänään. Lisenssi sisältyy IOM-nippuun. Lisätietoja on kohdassa [Intelligent Order Management – yleiskatsaus](/dynamics365/intelligent-order-management/overview).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

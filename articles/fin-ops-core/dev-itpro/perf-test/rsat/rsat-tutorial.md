@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e2273aefb98880a1ae746ef7ec65b4f2262f3560
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781960"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492917"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -opas
 
@@ -32,7 +32,7 @@ Tässä oppaassa käsitellään yksityiskohtaisesti Regression Suite Automation 
 
 RSAT-toiminnon avulla voit sisällyttää odotettuihin arvoihin oikeellisuustarkistusvaiheet. Lisätietoja tästä ominaisuudesta on artikkelissa [Tarkista odotetut arvot](rsat-validate-expected.md).
 
-Seuraava esimerkki osoittaa, miten tällä toiminnolla tarkistetaan, onko varastosaldo suurempi kuin 0 (nolla).
+Seuraava esimerkki osoittaa, miten tällä toiminnolla tarkistetaan, onko käytettävissä oleva varastosaldo suurempi kuin 0 (nolla).
 
 1. Luo demotietojen **USMF**-yrityksessä tehtävätallenne, jossa on seuraavat vaiheet:
 
@@ -50,7 +50,7 @@ Seuraava esimerkki osoittaa, miten tällä toiminnolla tarkistetaan, onko varast
 6. Tallenna ja sulje Excelin parametritiedosto.
 7. Tallenna Excelin parametritiedostoon tehdyt muutokset Azure DevOpsiin valitsemalla **Lataa palvelimeen**.
 
-Huomaa, että jos tietyn nimikkeen **Yhteensä käytettävissä** -kentän arvo varastossa on suurempi kuin 0 (nolla), testi hyväksytään todellisen varastosaldon arvosta riippumatta.
+Huomaa, että jos tietyn nimikkeen **Yhteensä käytettävissä** -kentän arvo varastossa on suurempi kuin 0 (nolla), testi hyväksytään todellisen käytettävissä olevan varastosaldon arvosta riippumatta.
 
 ### <a name="saved-variables-and-chaining-of-test-cases"></a>Testitapausten tallennetut muuttujat ja ketjutus
 
@@ -99,7 +99,7 @@ Kun testitapaukset suoritetaan, RSAT luo tilannevedoksia (näköistiedostoja) va
 
 1. Tuote suunnittelija luo uuden julkaistun tuotteen.
 2. Tuotantopäällikkö käynnistää tuotantotilauksen, joka nostaa varastotason kahteen kappaleeseen.
-3. Valmistus alkaa ja päättää tuotantotilauksen sekä varmistaa, että varastosaldo on kaksi kappaletta.
+3. Valmistus alkaa ja päättää tuotantotilauksen sekä varmistaa, että käytettävissä oleva varastosaldo on kaksi kappaletta.
 4. Myyntiryhmä vastaanottaa tilauksen, jossa on neljä kappaletta uutta tuotetta. Tämän vuoksi myyntiryhmä päivittää nettotarpeen dynaamisen suunnitelman kautta. Koska lisäkapasiteettia ei ole käytettävissä, tilausten oletuskäytännöksi on määritetty ostaminen valmistamisen sijaan. Tämän vuoksi luodaan suunnitellun ostotilauksen.
 5. Ostaja lisää toimittajan, vahvistaa suunnitellun ostotilauksen ja vahvistaa lopuksi ostotilauksen.
 6. Kun ostetut tavarat saapuvat myymälään, myymäläkäyttäjä hakee liittyvän ostotilauksen ja vastaanottaa tavarat. Koska tilaus on nyt valmis, tavarat voidaan kerätä ja pakata myyntitilauksen mukaisesti.
@@ -172,6 +172,7 @@ RSAT voidaan kutsua **Komentokehote**- tai **PowerShell**-ikkunasta.
         about
         cls
         download
+        downloadsuite
         edit
         generate
         generatederived
@@ -181,11 +182,13 @@ RSAT voidaan kutsua **Komentokehote**- tai **PowerShell**-ikkunasta.
         list
         listtestplans
         listtestsuite
+        listtestsuitebyid
         listtestsuitenames
         playback
         playbackbyid
         playbackmany
         playbacksuite
+        playbacksuitebyid
         quit
         upload
         uploadrecording
@@ -194,17 +197,17 @@ RSAT voidaan kutsua **Komentokehote**- tai **PowerShell**-ikkunasta.
 
 #### <a name=""></a>?
 
-Näyttää kaikkien käytettävissä olevien komentojen ja niiden parametrien ohjeen.
+Luettelee kaikki komennot tai näyttää tietyn komennon ohjeen sekä käytettävissä olevat parametrit.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
 ##### <a name="-optional-parameters"></a>?: Valinnaiset parametrit
 
-`command`: jossa ``[command]`` on yksi alla määritetyistä komennoista.
+`command`: Missä ``[command]`` on jokin edeltävän luettelon komennoista.
 
 #### <a name="about"></a>tietoja
 
-Näyttää nykyisen version.
+Näyttää asennetun RSAT-version.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
@@ -216,21 +219,57 @@ Tyhjentää näytön.
 
 #### <a name="download"></a>lataa
 
-Lataa määritetyn testitapauksen liitteet tulostushakemistoon.
-Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+Lataa liitteet (tallennus-, suoritus- ja parametritiedostot) määritetylle testitapaukselle Azure DevOpsista tuloshakemistoon. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="download-optional-switches"></a>lataa: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, latausprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
 
 ##### <a name="download-required-parameters"></a>lataaminen: pakolliset parametrit
 
 + `test_case_id`: ilmaisee testitapauksen tunnuksen.
-+ `output_dir`: Ilmaisee tulostushakemiston. Hakemisto on määritettävä.
+
+##### <a name="download-optional-parameters"></a>lataa: valinnaiset parametrit
+
++ `output_dir`: Ilmaisee tulostustyöhakemiston. Hakemisto on määritettävä. Jos parametria ei ole määritetty, käytetään asetusten työhakemistoa.
 
 ##### <a name="download-examples"></a>lataa: esimerkit
 
 `download 123 c:\temp\rsat`
 
-`download 765 c:\rsat\last`
+`download /retry=240 765`
+
+#### <a name="downloadsuite"></a>downloadsuite
+
+Lataa liitteet (tallennus-, suoritus- ja parametritiedostot) kaikille määritetyn testipaketin testitapauksille Azure DevOpsista tuloshakemistoon. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testipakettien kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoa **test_suite_name**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``downloadsuite``**``[/retry[=<seconds>]] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="downloadsuite-optional-switches"></a>downloadsuite: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, latausprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/byid`: Tämä kytkentä ilmaisee, että haluamasi testisarja tunnistetaan testin nimen asemesta sen Azure DevOps-tunnuksella.
+
+##### <a name="downloadsuite-required-parameters"></a>downloadsuite: pakolliset parametrit
+
++ `test_suite_name`: ilmaisee testiohjelmistopaketin nimen. Tämä parametri on pakollinen, jos /byid switch -arvoa **ei ole** määritetty. Tämä nimi on Azure DevOps-testipaketin nimi.
++ `test_suite_id`: ilmaisee testiohjelmistopaketin tunnusta. Tämä parametri on pakollinen, jos /byid switch -arvo **on** määritetty. Tämä tunnus on testipakettien Azure DevOps -tunnus.
+
+##### <a name="downloadsuite-optional-parameters"></a>downloadsuite: valinnaiset parametrit
+
++ `output_dir`: Ilmaisee tulostustyöhakemiston. Hakemisto on määritettävä. Jos parametria ei ole määritetty, käytetään asetusten työhakemistoa.
+
+##### <a name="downloadsuite-examples"></a>downloadsuite: esimerkit
+
+`downloadsuite NameOfTheSuite c:\temp\rsat`
+
+`downloadsuite /byid 123 c:\temp\rsat`
+
+`downloadsuite /retry=240 /byid 765`
+
+`downloadsuite /retry=240 /byid 765 c:\temp\rsat`
 
 #### <a name="edit"></a>muokkaa
 
@@ -244,7 +283,7 @@ Voit avata parametritiedoston Excel-ohjelmassa ja muokata sitä.
 
 ##### <a name="edit-examples"></a>muokkaa: esimerkit
 
-`edit c:\RSAT\TestCase_123_Base.xlsx`
+`edit c:\RSAT\123\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
@@ -252,24 +291,41 @@ Voit avata parametritiedoston Excel-ohjelmassa ja muokata sitä.
 
 Luo testisuorituksen ja parametritiedostot määritetylle testitapaukselle tulostushakemistossa. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] [test_case_id] [output_dir]``
+
+##### <a name="generate-optional-switches"></a>muodosta: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, muodostusprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/dllonly`: Luo vain testin suoritustiedostot. Älä luo uudelleen Excel-parametritiedostoa.
++ `/keepcustomexcel`: Päivitä aiemmin luotu parametritiedosto. Luo myös suoritustiedostot uudelleen.
 
 ##### <a name="generate-required-parameters"></a>luo: pakolliset parametrit
 
 + `test_case_id`: ilmaisee testitapauksen tunnuksen.
-+ `output_dir`: Ilmaisee tulostushakemiston. Hakemisto on määritettävä.
+
+##### <a name="generate-optional-parameters"></a>luo: valinnaiset parametrit
+
++ `output_dir`: Ilmaisee tulostustyöhakemiston. Hakemisto on määritettävä. Jos parametria ei ole määritetty, käytetään asetusten työhakemistoa.
 
 ##### <a name="generate-examples"></a>luo: esimerkit
 
 `generate 123 c:\temp\rsat`
 
-`generate 765 c:\rsat\last`
+`generate /retry=240 765 c:\rsat\last`
+
+`generate /retry=240 /dllonly 765`
+
+`generate /retry=240 /keepcustomexcel 765`
 
 #### <a name="generatederived"></a>generatederived
 
-Luo uuden testitapauksen, joka johdetaan annetusta testitapauksesta. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+Luo uuden johdetun testitapauksen (alitestitapauksen) toimitetusta testitapauksesta. Uusi testitapaus lisätään myös määritettyyn testisarjaan. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[/retry[=<seconds>]] [parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="generatederived-optional-switches"></a>generatederived: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, muodostusprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
 
 ##### <a name="generatederived-required-parameters"></a>generatederived: pakolliset parametrit
 
@@ -281,39 +337,63 @@ Luo uuden testitapauksen, joka johdetaan annetusta testitapauksesta. Voit käytt
 
 `generatederived 123 8901 678`
 
+`generatederived /retry 123 8901 678`
+
 #### <a name="generatetestonly"></a>generatetestonly
 
-Luo vain testisuoritustiedoston määritetylle testitapaukselle tulostushakemistossa. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+Luo vain testisuoritustiedostot määritetylle testitapaukselle. Se ei luo Excel-parametritiedostoa. Tiedostot luodaan määritettyyn tulostehakemistoon. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="generatetestonly-optional-switches"></a>generatetestonly: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, muodostusprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
 
 ##### <a name="generatetestonly-required-parameters"></a>generatetestonly: pakolliset parametrit
 
 + `test_case_id`: ilmaisee testitapauksen tunnuksen.
-+ `output_dir`: Ilmaisee tulostushakemiston. Hakemisto on määritettävä.
+
+##### <a name="generatetestonly-optional-parameters"></a>generatetestonly: valinnaiset parametrit
+
++ `output_dir`: Ilmaisee tulostustyöhakemiston. Hakemisto on määritettävä. Jos parametria ei ole määritetty, käytetään asetusten työhakemistoa.
 
 ##### <a name="generatetestonly-examples"></a>generatetestonly: esimerkit
 
 `generatetestonly 123 c:\temp\rsat`
 
-`generatetestonly 765 c:\rsat\last`
+`generatetestonly /retry=240 765`
 
 #### <a name="generatetestsuite"></a>generatetestsuite
 
-Luo määritetyn ohjelmistopaketin kaikki testitapaukset tulostushakemistoon. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testiohjelmistopakettien hakemisessa. Käytä mitä tahansa sarakkeen arvoa **test_suite_name**-parametrina.
+Luo testiautomaatiotiedostoja kaikille määritetyn testipaketin testitapauksille. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testipakettien kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoa **test_suite_name**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="generatetestsuite-optional-switches"></a>generatetestsuite: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, muodostusprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/dllonly`: Luo vain testin suoritustiedostot. Älä luo uudelleen Excel-parametritiedostoa.
++ `/keepcustomexcel`: Päivitä aiemmin luotu parametritiedosto. Luo myös suoritustiedostot uudelleen.
++ `/byid`: Tämä kytkentä ilmaisee, että haluamasi testisarja tunnistetaan testin nimen asemesta sen Azure DevOps-tunnuksella.
 
 ##### <a name="generatetestsuite-required-parameters"></a>generatetestsuite: pakolliset parametrit
 
-+ `test_suite_name`: ilmaisee testiohjelmistopaketin nimen.
-+ `output_dir`: Ilmaisee tulostushakemiston. Hakemisto on määritettävä.
++ `test_suite_name`: ilmaisee testiohjelmistopaketin nimen. Tämä parametri on pakollinen, jos /byid switch -arvoa **ei ole** määritetty. Tämä nimi on Azure DevOps-testipaketin nimi.
++ `test_suite_id`: ilmaisee testiohjelmistopaketin tunnusta. Tämä parametri on pakollinen, jos /byid switch -arvo **on** määritetty. Tämä tunnus on testipakettien Azure DevOps -tunnus.
+
+##### <a name="generatetestsuite-optional-parameters"></a>generatetestsuite: valinnaiset parametrit
+
++ `output_dir`: Ilmaisee tulostustyöhakemiston. Hakemisto on määritettävä. Jos parametria ei ole määritetty, käytetään asetusten työhakemistoa.
 
 ##### <a name="generatetestsuite-examples"></a>generatetestsuite: esimerkit
 
 `generatetestsuite Tests c:\temp\rsat`
 
-`generatetestsuite Purchase c:\rsat\last`
+`generatetestsuite /retry Purchase c:\rsat\last`
+
+`generatetestsuite /dllonly /byid 121`
+
+`generatetestsuite /keepcustomexcel /byid 121`
 
 #### <a name="help"></a>ohje
 
@@ -321,7 +401,7 @@ Sama kuin [?](#section) -komento.
 
 #### <a name="list"></a>luettelo
 
-Luettelo kaikista käytettävissä olevista testitapauksista.
+Luettelee kaikki nykyisen testisuunnitelman käytettävissä olevat testitapaukset.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
@@ -333,13 +413,13 @@ Luettelo kaikista käytettävissä olevista testisuunnitelmista.
 
 #### <a name="listtestsuite"></a>listtestsuite
 
-Luettelo määritetyn testiohjelmistopaketin testitapauksista. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testiohjelmistopakettien hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **suite_name**-parametrina.
+Luettelo määritetyn testiohjelmistopaketin testitapauksista. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testipakettien kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoa luettelosta **tsuite_name**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[test_suite_name]``
 
 ##### <a name="listtestsuite-required-parameters"></a>listtestsuite: pakolliset parametrit
 
-+ `suite_name`: toivotun ohjelmistopaketin nimi.
++ `test_suite_name`: Toivotun ohjelmistopaketin nimi.
 
 ##### <a name="listtestsuite-examples"></a>listtestsuite: esimerkit
 
@@ -347,39 +427,67 @@ Luettelo määritetyn testiohjelmistopaketin testitapauksista. Voit käyttää `
 
 `listtestsuite NameOfTheSuite`
 
+#### <a name="listtestsuitebyid"></a>listtestsuitebyid
+
+Luettelo määritetyn testiohjelmistopaketin testitapauksista.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitebyid``**``[test_suite_id]``
+
+##### <a name="listtestsuitebyid-required-parameters"></a>listtestsuitebyid: pakolliset parametrit
+
++ `test_suite_id`: Toivotun ohjelmistopaketin tunnus.
+
+##### <a name="listtestsuitebyid-examples"></a>listtestsuitebyid: esimerkit
+
+`listtestsuitebyid 12345`
+
 #### <a name="listtestsuitenames"></a>listtestsuitenames
 
-Luettelo kaikista käytettävissä olevista testiohjelmistopaketeista.
+Luettelee kaikki nykyisen testisuunnitelman käytettävissä olevat testipaketit.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
 #### <a name="playback"></a>toisto
 
-Toistaa testitapauksen Excel-tiedoston avulla.
+Toistaa testitapauksen, joka liittyy määritettyyn Excel-parametritiedostoon. Tämä komento käyttää aiemmin luotuja paikallisia automaatiotiedostoja eikä lataa tiedostoja Azure DevOpsista. Tätä komentoa ei tueta POS:n kaupallisissa testitapauksissa.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file]``
+
+##### <a name="playback-optional-switches"></a>playback: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, toistoprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/comments[="comment"]`: Anna mukautettu tietomerkkijono, joka sisällytetään Azure DevOps -testipakettisuoritusten yhteenveto- ja testitulossivujen **Huomautukset**-kenttään.
 
 ##### <a name="playback-required-parameters"></a>toisto: pakolliset parametrit
 
-+ `excel_file`: Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa.
++ `excel_parameter_file`: Excel-parametritiedoston koko polku. Tiedoston on oltava olemassa.
 
 ##### <a name="playback-examples"></a>toisto: esimerkit
 
-`playback c:\RSAT\TestCaseParameters\sample1.xlsx`
+`playback c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playback e:\temp\test.xlsx`
+`playback /retry e:\temp\test.xlsx`
+
+`playback /retry=300 e:\temp\test.xlsx`
+
+`playback /comments="Payroll solution 10.0.0" e:\temp\test.xlsx`
 
 #### <a name="playbackbyid"></a>playbackbyid
 
-Toistaa useita testitapauksia kerralla. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+Toistaa useita testitapauksia samaan aikaan. Testitapaukset tunnistetaan niiden tunnuksen mukaan. Tämä komento lataa tiedostot Azure DevOpsista. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoja **test_case_id**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[/retry[=<seconds>]] [/comments[="comment"]] [test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="playbackbyid-optional-switches"></a>playbackbyid: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, toistoprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/comments[="comment"]`: Anna mukautettu tietomerkkijono, joka sisällytetään Azure DevOps -testipakettisuoritusten yhteenveto- ja testitulossivujen **Huomautukset**-kenttään.
 
 ##### <a name="playbackbyid-required-parameters"></a>playbackbyid: pakolliset parametrit
 
-+ `test_case_id1`: aiemmin luodun testitapauksen tunnus.
-+ `test_case_id2`: aiemmin luodun testitapauksen tunnus.
-+ `test_case_idN`: aiemmin luodun testitapauksen tunnus.
++ `test_case_id1`: Aiemmin luodun testitapauksen tunnus.
++ `test_case_id2`: Aiemmin luodun testitapauksen tunnus.
++ `test_case_idN`: Aiemmin luodun testitapauksen tunnus.
 
 ##### <a name="playbackbyid-examples"></a>playbackbyid: esimerkit
 
@@ -387,75 +495,132 @@ Toistaa useita testitapauksia kerralla. Voit käyttää ``list``-komentoa kaikki
 
 `playbackbyid 2345 667 135`
 
+`playbackbyid /comments="Payroll solution 10.0.0" 2345 667 135`
+
+`playbackbyid /retry /comments="Payroll solution 10.0.0" 2345 667 135`
+
 #### <a name="playbackmany"></a>playbackmany
 
-Toistaa useita testitapauksia kerralla Excel-tiedostojen avulla.
+Toistaa monia testitapauksia samaan aikaan. Testitapaukset yksilöidään Excel-parametritiedostojen avulla. Tämä komento käyttää aiemmin luotuja paikallisia automaatiotiedostoja eikä lataa tiedostoja Azure DevOpsista.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file1] [excel_parameter_file2] ... [excel_parameter_fileN]``
+
+##### <a name="playbackmany-optional-switches"></a>playbackmany: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, toistoprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/comments[="comment"]`: Anna mukautettu tietomerkkijono, joka sisällytetään Azure DevOps -testipakettisuoritusten yhteenveto- ja testitulossivujen **Huomautukset**-kenttään.
 
 ##### <a name="playbackmany-required-parameters"></a>playbackmany: pakolliset parametrit
 
-+ `excel_file1`: Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa.
-+ `excel_file2`: Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa.
-+ `excel_fileN`: Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa.
++ `excel_parameter_file1`: Excel-parametritiedoston koko polku. Tiedoston on oltava olemassa.
++ `excel_parameter_file2`: Excel-parametritiedoston koko polku. Tiedoston on oltava olemassa.
++ `excel_parameter_fileN`: Excel-parametritiedoston koko polku. Tiedoston on oltava olemassa.
 
 ##### <a name="playbackmany-examples"></a>playbackmany: esimerkit
 
-`playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
+`playbackmany c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
+`playbackmany e:\temp\test.xlsx f:\RSAT\sample1.xlsx c:\RSAT\sample2.xlsx`
+
+`playbackmany /retry=180 /comments="Payroll solution 10.0.0" e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
 #### <a name="playbacksuite"></a>playbacksuite
 
-Toistaa kaikki testitapaukset määritetystä testiohjelmistopaketista.
-Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testiohjelmistopakettien hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **suite_name**-parametrina.
+Toistaa kaikki testitapaukset yhdestä tai useammasta määritetystä testiohjelmistopaketista. Jos /local-valitsin on määritetty, paikallisia liitteitä käytetään toistoissa. Muussa tapauksessa liitteet ladataan Azure DevOpsista. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testipakettien kehotteeseen ja käyttää mitä tahansa ensimmäisen sarakkeen arvoa **tsuite_name**-parametrina.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] ([test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN])``
+
+##### <a name="playbacksuite-optional-switches"></a>playbacksuite: valinnaiset valitsimet
+
++ `/updatedriver`: Jos tämä valitsin on määritetty, www-selaimen webtyökalu päivitetään tarvittaessa ennen www-selaimen suorittamista.
++ `/local`: Tämä kytkin osoittaa, että paikallisia liitteitä tulee käyttää toistoon sen sijaan, että tiedostot ladataan Azure DevOpsista.
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, toistoprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/comments[="comment"]`: Anna mukautettu tietomerkkijono, joka sisällytetään Azure DevOps -testipakettisuoritusten yhteenveto- ja testitulossivujen **Huomautukset**-kenttään.
++ `/byid`: Tämä kytkentä ilmaisee, että haluamasi testisarja tunnistetaan testin nimen asemesta sen Azure DevOps-tunnuksella.
 
 ##### <a name="playbacksuite-required-parameters"></a>playbacksuite: pakolliset parametrit
 
-+ `suite_name`: toivotun ohjelmistopaketin nimi.
++ `test_suite_name1`: ilmaisee testiohjelmistopaketin nimen. Tämä parametri on pakollinen, jos /byid switch -arvoa **ei ole** määritetty. Tämä nimi on Azure DevOps-testipaketin nimi.
++ `test_suite_nameN`: ilmaisee testiohjelmistopaketin nimen. Tämä parametri on pakollinen, jos /byid switch -arvoa **ei ole** määritetty. Tämä nimi on Azure DevOps-testipaketin nimi.
++ `test_suite_id1`: ilmaisee testiohjelmistopaketin tunnusta. Tämä parametri on pakollinen, jos /byid switch -arvo **on** määritetty. Tämä tunnus on testipakettien Azure DevOps -tunnus.
++ `test_suite_idN`: ilmaisee testiohjelmistopaketin tunnusta. Tämä parametri on pakollinen, jos /byid switch -arvo **on** määritetty. Tämä tunnus on testipakettien Azure DevOps -tunnus.
 
 ##### <a name="playbacksuite-examples"></a>playbacksuite: esimerkit
 
 `playbacksuite suiteName`
 
-`playbacksuite sample_suite`
+`playbacksuite suiteName suiteNameToo`
+
+`playbacksuite /updatedriver /local /retry=180 /byid 151 156`
+
+`playbacksuite /updatedriver /local /comments="Payroll solution 10.0.0" /byid 150`
+
+#### <a name="playbacksuitebyid"></a>playbacksuitebyid
+
+Suorittaa kaikki testitapaukset määritetyssä Azure DevOps -testiohjelmistopaketissa.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuitebyid``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] [test_suite_id]``
+
+##### <a name="playbacksuitebyid-optional-switches"></a>playbacksuitebyid: valinnaiset valitsimet
+
++ `/retry[=seconds]`: Jos tämä valitsin on määritetty ja muut RSAT-instanssit estävät palvelupyyntötestin, toistoprosessi odottaa määritettyä sekuntien määrää ja yrittää vielä kerran. Oletusarvo valitsimelle \[sekuntia\] on 120 sekuntia. Jos tätä kytkentää ei ole, prosessi peruutetaan heti, jos testitapaukset on estetty.
++ `/comments[="comment"]`: Anna mukautettu tietomerkkijono, joka sisällytetään Azure DevOps -testipakettisuoritusten yhteenveto- ja testitulossivujen **Huomautukset**-kenttään.
++ `/byid`: Tämä kytkentä ilmaisee, että haluamasi testisarja tunnistetaan testin nimen asemesta sen Azure DevOps-tunnuksella.
+
+##### <a name="playbacksuitebyid-required-parameters"></a>playbacksuitebyid: pakolliset parametrit
+
++ `test_suite_id`: Edustaa testipakettien tunnusta, joka on olemassa Azure DevOpsissa.
+
+##### <a name="playbacksuitebyid-examples"></a>playbacksuitebyid: esimerkit
+
+`playbacksuitebyid 2900`
+
+`playbacksuitebyid /retry 2099`
+
+`playbacksuitebyid /retry=200 2099`
+
+`playbacksuitebyid /retry=200 /comments="some comment" 2099`
 
 #### <a name="quit"></a>lopeta
 
-Sulkee sovelluksen.
+Sulkee sovelluksen. Tästä komennosta on hyötyä vain silloin, kun sovellukset ovat käynnissä vuorovaikutteisessa tilassa.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
+##### <a name="quit-examples"></a>quit: esimerkit
+
+`quit`
+
 #### <a name="upload"></a>lataa
 
-Lataa kaikki määritettyyn testiohjelmistopakettiin tai määritettyihin testitapauksiin kuuluvat tiedostot.
+Lataa palvelimeen liitetiedostot (tallennus-, suoritus- ja parametritiedostot), jotka kuuluvat määritettyyn testipaketteihin tai testitapauksiin Azure DevOpsiin.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``([test_suite_name] | [test_case_id1] .. [test_case_idN])``
 
-#### <a name="upload-required-parameters"></a>upload: pakolliset parametrit
+##### <a name="upload-required-parameters"></a>upload: pakolliset parametrit
 
-+ `suite_name`: kaikki tiettyyn testiohjelmistopakettiin kuuluvat tiedostot ladataan.
-+ `testcase_id`: kaikki tiettyihin testitapauksiin kuuluvat tiedostot ladataan.
++ `test_suite_name`: Kaikki tiettyyn testiohjelmistopakettiin kuuluvat tiedostot ladataan.
++ `test_case_id1`: Edustaa ensimmäistä latausta varten ladattavaa testipaketin tapaustunnusta. Käytä tätä parametria vain, jos testipaketin nimeä ei ole annettu.
++ `test_case_idN`: Edustaa viimeistä latausta varten ladattavaa testipaketin tapaustunnusta. Käytä tätä parametria vain, jos testipaketin nimeä ei ole annettu.
 
 ##### <a name="upload-examples"></a>upload: esimerkit
 
 `upload sample_suite`
 
-`upload 123`
+`upload 2900`
 
 `upload 123 456`
 
 #### <a name="uploadrecording"></a>uploadrecording
 
-Lataa vain määritettyihin testitapauksiin kuuluvan tallennustiedoston.
+Lataa vain yhteen tai useampaan määritettyyn testitapaukseen kuuluvan tallennustiedoston Azure DevOpsiin.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[test_case_id1] .. [test_case_idN]``
 
 ##### <a name="uploadrecording-required-parameters"></a>uploadrecording: pakolliset parametrit
 
-+ `testcase_id`: määritettyihin testitapauksiin kuuluva tallennustiedosto ladataan.
++ `test_case_id1`: Edustaa ensimmäistä testitapauksen tunnusta tallennukselle, joka tulee ladata Azure DevOpsiin.
++ `test_case_idN`: Edustaa viimeistä testitapauksen tunnusta tallennukselle, joka tulee ladata Azure DevOpsiin.
 
 ##### <a name="uploadrecording-examples"></a>uploadrecording: esimerkit
 
@@ -465,9 +630,21 @@ Lataa vain määritettyihin testitapauksiin kuuluvan tallennustiedoston.
 
 #### <a name="usage"></a>käyttö
 
-Näyttää kaksi tapaa, joilla tätä sovellusta voi kutsua: toisessa käytetään oletusasetustiedostoa ja toinen määrittää asetustiedoston.
+Tässä välilehdessä näkyvät sovelluksen kolme käyttötapaa.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
+Sovelluksen suorittaminen interaktiivisesti:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``
+
+Sovelluksen suorittaminen komennon avulla:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp ``**``[command]``**
+
+Sovelluksen suorittaminen asetustiedoston avulla:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``/settings [drive:\Path to\file.settings] [command]``**
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell -esimerkkejä
 

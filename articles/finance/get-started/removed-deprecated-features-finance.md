@@ -1,23 +1,23 @@
 ---
 title: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Financesta.
-author: roschlom
-ms.date: 12/03/2021
+author: kfend
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
+ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890950"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8466831"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -31,7 +31,21 @@ Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja Finance and Operations -sovellusten objekteista: [Teknisten tietojen raportit](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operations -sovelluksissa.
+> Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Financen version 10.0.26 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="sales-tax-report-for-finland-design-based-on-reporting-codes"></a>Suomen arvonlisäveroraportti (suunnittelu raportointikoodien perusteella)
+
+[Suomen arvonlisäveroraportti](../localizations/emea-fin-sales-tax-payment-report-finland.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Korvataan uudella ALV-ilmoituksen mallilla, [Suomen ALV-ilmoituksella](../localizations/emea-fin-vat-declaration.md) |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suomen arvonlisäveroraporttia ei enää tueta maaliskuun 1. päivän 2023 jälkeen (Suomen raportin asettelu). Uudet **ALV-ilmoitus XML (FI**) ja **ALV-ilmoitus Excel (FI)** Sähköiset raportointimuodot (ER) otetaan käyttöön mallin **Veroilmoitus** mallissa. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Financen version 10.0.24 poistetut tai vanhentuneet ominaisuudet
 

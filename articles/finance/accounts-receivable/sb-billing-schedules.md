@@ -1,5 +1,5 @@
 ---
-title: Laskutusaikataulun yleiskatsaus
+title: Laskutusaikataulujen luominen
 description: Tässä aiheessa kerrotaan, miten laskutusaikatauluja luodaan, poistetaan ja muokataan.
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e42be3f359e96f0861354ebc8e1e9c87478a5d89
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2c4e3c0edadd00fd3a3f2ae9968248a226147996
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182680"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462584"
 ---
-# <a name="billing-schedule-overview"></a>Laskutusaikataulun yleiskatsaus
+# <a name="create-billing-schedules"></a>Laskutusaikataulujen luominen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 **Laskutustaikataulu**-sivulla voit luoda, poistaa ja muokata laskutusaikatauluja. Voit myös tarkastella laskutusaikataulujen luetteloa. Kun luot laskutusaikataulun, sen oletusarvot määrittää siihen liittyvä laskutusryhmä. Lisätietoja määritetään **Toistuvan sopimuslaskutuksen parametrit** -sivulla.
 

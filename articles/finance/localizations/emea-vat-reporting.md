@@ -2,7 +2,7 @@
 title: ALV-raportointi Euroopassa
 description: Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.
 author: ShylaThompson
-ms.date: 06/20/2017
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b028c5a185b4e7626dd9258630cc469c4439fc37d1c9d1cd7d42007b0ec85736
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1f7611dcf713e80f637a4b3f5542763050ac4a6
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741486"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487750"
 ---
 # <a name="vat-reporting-for-europe"></a>ALV-raportointi Euroopassa
 
@@ -39,6 +39,25 @@ Tämä ohjeaihe sisältää yleisen lähestymistavan ALV-ilmoituksen määrittä
 -   Liettua
 -   Alankomaat
 -   Ruotsi
+
+> [!IMPORTANT]
+> Tässä aiheessa kuvatut Itävallan, Tšekin tasavallan, Saksan, Alankomaiden ja Ruotsin ominaisuudet ovat vanhentuneet. Lisätietoja on kohdassa [Poistetut ja vanhentuneet ominaisuudet](../get-started/removed-deprecated-features-finance.md).
+> Seuraavan taulukon linkkien avulla saat lisätietoja alv-ilmoitusten uudesta suunnittelusta vastaavissa maissa.
+> 
+>
+> | Maa tai alue        | Lisätiedot                                                          |
+> |----------------|---------------------------------------------------------------------------------|
+> | Itävalta        | [ALV-ilmoitus (Itävalta)](emea-aut-vat-declaration-austria.md)       |                                                                           
+> | Tšekin tasavalta | [ALV-ilmoitus (Tšekin tasavalta)](emea-cze-vat-declaration-tax-declaration-model.md) |
+> | Tanska        | [ALV-ilmoitus (Tanska)](emea-dnk-vat-declaration-denmark.md)         |
+> | Ranska         | [ALV-ilmoitus (Ranska)](emea-fra-vat-declaration-preview-france.md)       |
+> | Saksa        | [ALV-ilmoitus (Saksa)](emea-deu-vat-declaration-germany.md)           |
+> | Alankomaat    | [ALV-ilmoitus (Alankomaat)](emea-nl-vat-declaration-netherlands.md)    |
+> | Norja         | [ALV-palautus ja suora Altinnille lähetys](emea-nor-vat-return.md) |
+> | Espanja          | [ALV-ilmoitus (Espanja)](emea-esp-vat-declaration-spain.md)              |
+> | Ruotsi         | [ALV-ilmoitus (Ruotsi)](emea-swe-vat-declaration-sweden.md)          |
+> | Sveitsi    | [ALV-ilmoitus (Sveitsi)](emea-che-vat-declaration-switzerland.md) |
+> | UK             | [MTD:n integroinnin valmisteleminen ALV:tä varten](emea-gbr-mtd-vat-integration.md) |
 
 ## <a name="vat-statement-overview"></a>ALV-ilmoituksen yhteenveto
 ALV-ilmoitus perustuu verotapahtumien summiin. ALV-ilmoituksen luomisprosessi kuuluu arvonlisäveron maksamisen prosessiin, joka toteutetaan Tilitä ja kirjaa arvonlisävero -toiminnon avulla. Tämä toiminto laskee arvonlisäveron, joka erääntyy tiettynä aikana. Tilityksen laskenta sisältää kirjatun arvonlisäveron valitulta tilityskaudelta verotapahtumille. ALV-ilmoituksen tietojen laskentaprosessi perustuu arvonlisäverokoodien ja arvonlisäveroilmoituksen koodien suhteeseen, jossa ALV-raporttikoodit vastaavat ALV-ilmoitusten ruutuja (tai XML-tunnisteita). Kullekin arvonlisäverokoodille arvonlisäveron raportointikoodit pitäisi määrittää kunkin tyyppiselle tapahtumalle, kuten verolliselle myynnille, verollisille ostoille tai verolliselle tuonnille. Näiden tapahtumien tyyppi on kuvattu Arvonlisäverokoodit ALV-raportoinnissa -osassa jäljempänä tässä ohjeaiheessa.
@@ -258,10 +277,10 @@ Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimuk
 
 | Maa tai alue        | Lisätiedot                                                          |
 |----------------|---------------------------------------------------------------------------------|
-| Itävalta        |  [ALV-ilmoituksen erittely, Itävalta](emea-aut-vat-statement-details.md)         |
+| Itävalta        | [ALV-ilmoituksen erittely, Itävalta](emea-aut-vat-statement-details.md)         |
 | Belgia        |                                                                                 |
-| Tšekin tasavalta |  [Tšekin tasavallan ALV-ilmoitus](emea-cze-vat-statement-details.md)   |
-| Viro        |  [ALV-ilmoituksen erittely, Viro](emea-est-vat-statement-details.md) |
+| Tšekin tasavalta | [Tšekin tasavallan ALV-ilmoitus](emea-cze-vat-statement-details.md)   |
+| Viro        | [ALV-ilmoituksen erittely, Viro](emea-est-vat-statement-details.md) |
 | Suomi        | [Suomen arvonlisäveroraportti](emea-fin-sales-tax-payment-report-finland.md)          |
 | Saksa        | [Saksan ALV-ilmoitus](emea-de-vat-declaration.md)                       |
 | Italia          | [ALV-ilmoituksen erittely, Italia](emea-ita-vat-statements-details.md)            |

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 9430068f9c2d92c894817db04143297de6c6aa6a
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 5e8168a20a1fa4f52d28129eebb9931b31157ced
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7476190"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8488964"
 ---
 # <a name="inventory-journal-workflow-never-completes-and-the-journal-cant-be-processed"></a>Varastokirjauskansion työnkulku ei koskaan valmistu eikä kirjauskansiota voi käsitellä
 
@@ -28,6 +28,6 @@ Kun kirjauskansion hyväksyntätyönkulku lähetetään, työnkulun käsittely l
 
 On useita syitä, miksi työnkulun käsittely ei ehkä valmistu. Tarkista seuraavat:
 
-- Valitse **Varastonhallinta &gt; Asetukset &gt; Varastonhallinnan työkulut** ja tarkastele ongelmallisen työnkulun määritystä. Lisätietoja on kohdassa [Varastokirjauskansioin hyväksyntätyönkulut](/dynamics365/supply-chain/inventory/inventory-journal-workflow.md).
+- Valitse **Varastonhallinta &gt; Asetukset &gt; Varastonhallinnan työkulut** ja tarkastele ongelmallisen työnkulun määritystä. Lisätietoja on kohdassa [Varastokirjauskansioin hyväksyntätyönkulut](../../inventory/inventory-journal-workflow.md).
 - Työnkulussa voi esiintyä poikkeus tai virhe. Tarkastele ongelmallisen työnkulun työnimikehistoriaa ja katso, onko siinä työnkulun päättävää sovellusvirhettä.
 - Varastokirjauskansio voidaan päivittää tai sitä voi muokata vain, jos se on hyväksytty. Jos peruutus on aktivoitu, voit yrittää peruuttaa kirjauskansion. Työnkulun erätyön suorittamisen keskeyttämiseen voi olla useita syitä. Työnkulkukehyksen ongelma voi aiheuttaa osan näistä syistä.

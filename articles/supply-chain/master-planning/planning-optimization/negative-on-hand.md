@@ -1,7 +1,7 @@
 ---
 title: Suunnittelu negatiivisilla käytettävissä olevalla määrillä
 description: Tässä ohjeaiheessa kerrotaan, miten negatiivista käytettävissä olevaa määrää käsitellään suunnittelun optimoinnissa.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 97688e09aae9706dd85e7965aa08c7ea873a44d81391c39406e2e6367660e0d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758541"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469139"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Suunnittelu negatiivisilla käytettävissä olevalla määrillä
 
@@ -73,7 +73,7 @@ Tässä tapauksessa suunnittelumoduuli olettaa, että varaston 13 käytettäviss
 
 Tuloksena on 25 kappaleen suunniteltu tilaus. (= 25 kpl &minus; 0 kpl) ja täyttää varaston 13 käyttämällä 0 kappaletta. 25 kappaleeseen asti
 
-## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Suunnittelu, kun varaus negatiivista varastonvarausta vastaan on olemassa
+## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Suunnittelu, kun varaus negatiivista käytettävissä olevan varaston varausta vastaan on olemassa
 
 Jos varastoa oikaistaan fyysisten varausten ollessa olemassa, voi aiheuttaa tilanteen, jossa tilaus varataan fyysisesti negatiivista varastoa vastaan. Koska on olemassa fyysinen varaus, suunnittelun optimointi olettaa, että käytettävissä oleva varasto tukee sitä, vaikka käyttövaraston vastaanottoa ei olisi vielä rekisteröity järjestelmään. Näin ollen oletetaan, että täydennystä ei tarvita eikä luoda suunniteltua tilausta tilauksen määrän täydentämiseen.
 

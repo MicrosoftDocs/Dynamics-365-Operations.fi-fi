@@ -1,22 +1,22 @@
 ---
 title: Parametrit, joita suunnittelun optimointi ei käytä
 description: Tässä aiheessa on luettelo parametreistä, joita suunnittelun optimointi ei ota huomioon sen toiminnan aikana.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408227"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469111"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametrit, joita suunnittelun optimointi ei käytä
 
@@ -65,18 +65,6 @@ Suunnittelun optimointi ei käytä seuraavia parametreja tai asetuksia **Kattavu
   - **Käytä määritettyä tuoterakennetta tai kaavaversiota** – Odottaa *Kaavan versiot, joissa on oheis-/sivutuotteita* -asetuksen tukea.
   - **Käytä määritettyä reittiversiota** – Odottaa *Kysyntä tietyillä määritetyillä tuoterakenne- tai reititysvaatimuksilla* -asetuksen tukea.
 
-- **Toiminto**-pikavälilehti:
-
-  - **Toimenpidesanoma** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Toimenpidesanoman aikaraja** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Lykkäyksen aikaraja** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Aikaistamisen aikaraja** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Peruspäivämäärä** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Aikaista** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Lykkää** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Vähennä määrää** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Lisää määrää** – Odottaa *Toiminnot*-asetuksen tukea.
-  - **Johdetut toimenpiteet** – Odottaa *Toiminnot*-asetuksen tukea.
 
 - **Muu**-pikavälilehti:
 
@@ -149,7 +137,6 @@ Suunnittelun optimointi ei käytä seuraavia parametreja tai asetuksia **Pääsu
   - **Ennustesuunnitelma** – Odottaa *Ennuste*-toiminnon lisätukea.
   - **Kapasiteetti** – Odottaa *Ajoitus*-toiminnon tukea.
   - **Jatkuvuussuunnitelma** – Odottaa *Jatkuvuuden ajoitus* -asetuksen tukea.
-  - **Toimenpidesanoma** – Odottaa *Toiminnot*-asetuksen tukea.
   - **Lasketut viiveet** – Odottaa *Lasketut viiveet* -asetuksen lisätukea.
   - **Järjestys** – Odottaa *Tuotanto*-asetuksen tukea.
 

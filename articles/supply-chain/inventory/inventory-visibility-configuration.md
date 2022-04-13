@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060998"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524518"
 ---
 # <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
 
@@ -39,22 +39,25 @@ Ennen varaston näkyvyyssovelluksen käytön aloittamista on tehtävä seuraavat
 
 Varaston näkyvyyden apuohjelma on asennettava ja määritettävä ennen aloittamista kohdassa [Varaston näkyvyyden asennus ja määritys](inventory-visibility-setup.md) kuvatulla tavalla.
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Varaston näkyvyysominaisuuksien käyttöönotto Power Appsin ominaisuuksienhallinnassa
-
-Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominaisuuksia. Nämä ominaisuudet on oletusarvoisesti poistettu käytöstä. Niitä voidaan käyttää avaamalla **Määritys**-sivu Power Appsissa ja ottamalla seuraavat ominaisuudet sitten käyttöön **Ominaisuuden hallinta** -välilehdessä.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Palvelun päätepisteen etsiminen
-
-Jos oikea varaston näkyvyyspalvelun päätepiste ei ole tiedossa, avaa **Määritys**-sivu Power Appsissa ja valitse sitten **Näytä palvelun päätepiste** oikeassa yläkulmassa. Sivulla näkyy oikea palvelun päätepiste.
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Varaston näkyvyyssovelluksen määrityssivu
 
 Power Appsissa [varaston näkyvyyssovelluksen](inventory-visibility-power-platform.md) **Määritys**-sivu auttaa määrittämään käytettävissä olevan varaston ja alustavan varauksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin arvon (`fno`-tietolähde). Oletusasetukset voidaan tarkistaa. Määritystä voidaan lisäksi muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä. Tämän ohjeaiheen jäljellä olevissa osissa selitetään, miten kutakin **Määritys**-sivun osaa käytetään.
 
 Kun määritykset on tehty, muista valita sovelluksessa **Päivitä määritys**.
+
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Varaston näkyvyysominaisuuksien käyttöönotto Power Appsin ominaisuuksienhallinnassa
+
+Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominaisuuksia. Nämä ominaisuudet on oletusarvoisesti poistettu käytöstä. Niitä voidaan käyttää avaamalla **Määritys**-sivu ja ottamalla seuraavat ominaisuudet sitten vaatimustesi mukaan käyttöön **Ominaisuuden hallinta** -välilehdessä.
+
+| Ominaisuuksien hallinnan nimi | Kuvaus |
+|---|---|
+| OnHandReservation | Tämä ominaisuus auttaa sinua luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md). |
+| OnHandMostSpecificBackgroundService | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
+| OnhandChangeSchedule | Ominaisuus ottaa käyttöön käytettävissä olevan vaihtoaikataulun ja luvattavissa olevan määrän (ATP) ominaisuudet (valinnainen). Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulut ja luvattavissa olevat aikataulut](inventory-visibility-available-to-promise.md). |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Palvelun päätepisteen etsiminen
+
+Jos oikea varaston näkyvyyspalvelun päätepiste ei ole tiedossa, avaa **Määritys**-sivu Power Appsissa ja valitse sitten **Näytä palvelun päätepiste** oikeassa yläkulmassa. Sivulla näkyy oikea palvelun päätepiste.
 
 ## <a name="data-source-configuration"></a>Tietolähteen määritykset
 
@@ -178,15 +181,21 @@ Voit määrittää mukautetun laskennallisen mitan noudattamalla seuraavia ohjei
 
 1. Kirjaudu Power Apps -ympäristöön ja avaa **Varaston näkyvyys**.
 1. Avaa **Määritykset**-sivu.
-1. Lisää laskennallinen mitta valitsemalla **Laskennallinen mitta** -välilehdessä **Uusi laskennallinen mitta**. Määritä sitten kentät seuraavassa taulukossa ilmaistulla tavalla.
+1. Lisää laskennallinen mitta valitsemalla **Laskennallinen mitta** -välilehdessä **Uusi laskennallinen mitta**.
+1. Määritä uudelle lasketulle määrälle seuraavat kentät:
 
-    | Kenttä | Arvo |
-    |---|---|
-    | Uuden laskennallisen mitan nimi | Anna laskennallisen mitan nimi. |
-    | Tietolähde | Kyselyjärjestelmä on tietolähde. |
-    | Määreen tietolähde | Anna määreen tietolähde. |
-    | Määre | Anna määreen nimi. |
-    | Määreen tyyppi | Valitsee määreen tyyppi (*Lisäys* tai *Vähennys*). |
+    - **Uusi laskettu mitan nimi** – Kirjoita lasketun mitan nimi.
+    - **Tietolähde** – Valitse uuteen muuttujaan liittyvä tietolähde. Kyselyjärjestelmä on tietolähde.
+
+1. Lisää uuteen laskettuun mittariin määre valitsemalla **Lisää**.
+1. Määritä uudelle määreelle seuraavat kentät:
+
+    - **Määre** – Valitse määreen tyyppi (*Lisäys* tai *Vähennys*).
+    - **Tietolähde** – Valitse tietolähde, josta määrearvon antava mittayksikkö löytyy.
+    - **Määre** – Valitse (valitusta tietolähteestä) määreen nimi, joka sisältää muuttujan arvon.
+
+1. Toista vaiheita 5 - 6, kunnes olet lisännyt kaikki tarvittavat määreet.
+1. Valitse **Tallenna**.
 
 Kyse voi olla esimerkiksi seuraavasta kyselyn tuloksesta.
 
@@ -465,6 +474,10 @@ Tässä esimerkissä varaus voidaan tehdä seuraavissa dimensiojärjestyksissä.
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 Kelvollisen dimensiojärjestyksen on noudatettava varaushierarkiaa tarkasti dimensio kerrallaan. Esimerkiksi hierarkiajärjestys `(SiteId, LocationId, SizeId)` ei kelpaa, koska `ColorId` puuttuu.
+
+## <a name="available-to-promise-configuration-optional"></a>Luvattavissa oleva konfiguraatio (valinnainen)
+
+Voit määrittää varaston näkyvyyden sallimaan tulevien käytettävissä olevien muutosten ajoituksen ja luvattavissa olevien (ATP)määrien laskemisen. ATP on tuotteen määrä, joka on saatavilla ja joka voidaan luvata asiakkaalle seuraavalla kaudella. Tämän laskelman käyttö voi lisätä tilauksen täyttämiskykyä merkittävästi. Jotta tätä toimintoa voi käyttää, se on otettava käyttöön **ominaisuuksien hallinta** -välilehdessä ja määritettävä sen asetukset **ATP-asetus**-välilehdissä. Lisätietoja on kohdassa [Varaston näkyvyys - käytettävissä olevan varaston muutosaikataulut ja luvattavissa oleva määrä](inventory-visibility-available-to-promise.md).
 
 ## <a name="complete-and-update-the-configuration"></a>Määrityksen viimeisteleminen ja päivittäminen
 

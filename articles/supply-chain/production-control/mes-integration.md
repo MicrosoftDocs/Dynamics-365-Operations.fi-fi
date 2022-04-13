@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330698"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487578"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrointi kolmannen osapuolen tuotannonohjausjärjestelmiin
 
@@ -65,6 +65,8 @@ Mikä tahansa seuraavista prosesseista (tai kaikki prosessit) voidaan integroida
 ## <a name="monitor-incoming-messages"></a>Saapuvien sanomien seuranta
 
 Järjestelmään saapuvia sanomia voi seurata avaamalla **Tuotannonohjausjärjestelmän integrointi** -sivun. Tällä sivulla voi tarkastella ja käsitellä ongelmia sekä tehdä niiden vianmäärityksen.
+
+Kaikki tietyn tuotantotilauksen sanomat käsitellään niiden vastaanotetussa järjestyksessä. Eri tuotantotilausten sanomia ei ehkä käsitellä vastaanotetussa sarjassa, koska erätyöt käsitellään rinnakkain. Virhetilanteiden varalta erätyö yrittää käsitellä kutakin sanomaa kolme kertaa, ennen kuin sen tilaksi määritetään *Epäonnistunut*.
 
 ## <a name="call-the-api"></a>Ohjelmointirajapinnan kutsuminen
 
@@ -119,13 +121,13 @@ Seuraavassa taulukossa on kentät, joita kukin `ProdProductionOrderReportFinishe
 | `ReportedGoodQuantity` | Valinnainen | Reaaliluku|
 | `ReportedErrorCatchWeightQuantity` | Valinnainen | Reaaliluku |
 | `ReportedGoodCatchWeightQuantity` | Valinnainen | Reaaliluku |
-| `AcceptError` | Valinnainen |Boolen arvo |
+| `AcceptError` | Valinnainen | Enum (Kyllä \| Ei) |
 | `ErrorCause` | Valinnainen | Valintalista (None \| Material \| Machine \| OperatingStaff), laajennettava |
 | `ExecutedDateTime` | Valinnainen | Päivämäärä ja aika |
 | `ReportAsFinishedDate` | Valinnainen | Päivämäärä |
 | `AutomaticBOMConsumptionRule` | Valinnainen | Valintalista (FlushingPrincip \|Always \|Never) |
 | `AutomaticRouteConsumptionRule` | Valinnainen |Valintalista (RouteDependent \| Always \| Never) |
-| `RespectFlushingPrincipleDuringOverproduction` | Valinnainen | Boolen arvo |
+| `RespectFlushingPrincipleDuringOverproduction` | Valinnainen | Enum (Kyllä \| Ei) |
 | `ProductionJournalNameId` | Valinnainen | Merkkijono |
 | `PickingListProductionJournalNameId` | Valinnainen | Merkkijono|
 | `RouteCardProductionJournalNameId` | Valinnainen | Merkkijono |
@@ -133,11 +135,11 @@ Seuraavassa taulukossa on kentät, joita kukin `ProdProductionOrderReportFinishe
 | `ToOperationNumber` | Valinnainen | Kokonaisluku|
 | `InventoryLotId` | Valinnainen | Merkkijono |
 | `BaseValue` | Valinnainen | Merkkijono |
-| `EndJob` | Valinnainen | Boolen arvo |
-| `EndPickingList` | Valinnainen | Boolen arvo |
-| `EndRouteCard` | Valinnainen | Boolen arvo |
-| `PostNow` | Valinnainen | Boolen arvo |
-| `AutoUpdate` | Valinnainen | Boolen arvo |
+| `EndJob` | Valinnainen | Enum (Kyllä \| Ei) |
+| `EndPickingList` | Valinnainen | Enum (Kyllä \| Ei) |
+| `EndRouteCard` | Valinnainen | Enum (Kyllä \| Ei) |
+| `PostNow` | Valinnainen | Enum (Kyllä \| Ei) |
+| `AutoUpdate` | Valinnainen | Enum (Kyllä \| Ei) |
 | `ProductColorId` | Valinnainen | Merkkijono|
 | `ProductConfigurationId` | Valinnainen | Merkkijono |
 | `ProductSizeId` | Valinnainen | Merkkijono |
@@ -181,7 +183,7 @@ Seuraavassa taulukossa on kentät, joita kukin `ProdProductionOrderPickingList`-
 | `OperationNumber` | Valinnainen | Kokonaisluku |
 | `LineNumber` | Valinnainen | Reaaliluku |
 | `PositionNumber` | Valinnainen | Merkkijono |
-| `IsConsumptionEnded` | Valinnainen | Boolen arvo |
+| `IsConsumptionEnded` | Valinnainen | Enum (Kyllä \| Ei) |
 | `ErrorCause` | Valinnainen | Valintalista (None \| Material \| Machine \| OperatingStaff), laajennettava |
 | `InventoryLotId` | Valinnainen | Merkkijono |
 
@@ -217,9 +219,9 @@ Seuraavassa taulukossa on kentät, joita kukin `ProdProductionOrderRouteCard`-sa
 | `ConsumptionDate` | Valinnainen | Päivämäärä |
 | `TaskType` | Valinnainen | Valintalista (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Valinnainen | Valintalista (None \| Material \| Machine \| OperatingStaff), laajennettava |
-| `OperationCompleted` | Valinnainen | Boolen arvo |
-| `BOMConsumption` | Valinnainen | Boolen arvo |
-| `ReportAsFinished` | Valinnainen | Boolen arvo |
+| `OperationCompleted` | Valinnainen | Enum (Kyllä \| Ei) |
+| `BOMConsumption` | Valinnainen | Enum (Kyllä \| Ei) |
+| `ReportAsFinished` | Valinnainen | Enum (Kyllä \| Ei) |
 
 ### <a name="end-production-order-message"></a>Lopeta tuotantotilaus -sanoma
 
@@ -230,9 +232,13 @@ Seuraavassa taulukossa on kentät, joita kukin `ProdProductionOrderRouteCard`-sa
 | `ProductionOrderNumber` | Pakollinen | Merkkijono |
 | `ExecutedDateTime` | Valinnainen | Päivämäärä ja aika |
 | `EndedDate` | Valinnainen | Päivämäärä |
-| `UseTimeAndAttendanceCost` | Valinnainen | Boolen arvo |
-| `AutoReportAsFinished` | Valinnainen | Boolen arvo |
-| `AutoUpdate` | Valinnainen | Boolen arvo |
+| `UseTimeAndAttendanceCost` | Valinnainen | Enum (Kyllä \| Ei) |
+| `AutoReportAsFinished` | Valinnainen | Enum (Kyllä \| Ei) |
+| `AutoUpdate` | Valinnainen | Enum (Kyllä \| Ei) |
+
+## <a name="other-production-information"></a>Muut tuotantotiedot
+
+Sanomat tukevat toimenpiteitä tai tapahtumia, jotka tapahtuvat tuotannossa. Ne käsitellään tässä ohjeaiheessa kuvatun MES-integroinnin kehyksen avulla. Suunnittelussa oletetaan, että muut MES:n kanssa jaettavat viitetiedot (kuten tuotteeseen liittyvät tiedot tai tietyssä tuotantotilauksessa käytetty materiaaliluettelo tai reitti (jossa on erityiset asetukset ja määritysajat)) noudetaan järjestelmästä käyttämällä [tietoyksiköitä](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) tiedostonsiirron tai OData:n kautta.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Sanoman tilaa koskevan palautteen vastaanottaminen
 

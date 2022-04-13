@@ -1,22 +1,22 @@
 ---
 title: Nettotarpeet ja tarvekohdistamistiedot, joissa on suunnittelun optimointi
 description: Tässä aiheessa on tietoja lasketuista nettovaatimuksista ja tietojen tarvekohdista suunnittelun optimoinnissa.
-author: ChristianRytt
+author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
 ms.search.form: ReqTransOverview
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 5dbe4633ef061a054388e1b6aa6300e1c835c36a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: edfa6010074a4b04b3200115891723cd45871624
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569766"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468857"
 ---
 # <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Nettotarpeet ja tarvekohdistamistiedot, joissa on suunnittelun optimointi
 
@@ -96,14 +96,14 @@ Seuraavaksi avaat tuotteen *1000* **nettovaatimuksia** tarkastelemalla, miten la
 
     | Viite | Tarpeen määrä | Kumulatiivinen |
     |---|---|---|
-    | Varastosaldo | 10.00 | 10.00 |
+    | Käytettävissä oleva | 10.00 | 10.00 |
     | Suunnitellut ostotilaukset | 15.00 | 25.00 |
     | Myyntitilaus | -25,00 | (Tyhjä) |
 
     > [!NOTE]
     > **Tarvemäärä**-kentässä näkyy kokonaismäärä, joka vaatimuksessa joko vaaditaan (jos arvo on negatiivinen) tai toimitus (jos arvo on positiivinen). **Kumulatiivinen**-kenttä edustaa vastaanottojen ja varasto-ottojen kokonaismäärää, joka kertyy valitulla kaudella.
 
-1. Valitse *Varasto*-tarverivi ja tarkista sitten **Tarvekohdistus**-pikavälilehdessä tarpeet, jotka tämä toimitus kattaa. Seuraava rivi tulee näkyviin.
+1. Valitse *Käytettävissä oleva varasto* -tarverivi ja tarkista sitten **Tarvekohdistus**-pikavälilehdessä tarpeet, jotka tämä toimitus kattaa. Seuraava rivi tulee näkyviin.
 
     | Viite | Tarpeen määrä | Katettu määrä |
     |---|---|---|
@@ -127,7 +127,7 @@ Seuraavaksi avaat tuotteen *1000* **nettovaatimuksia** tarkastelemalla, miten la
 
     | Viite | Tarpeen määrä | Katettu määrä |
     |---|---|---|
-    | Varastosaldo | 10.00 | 10.00 |
+    | Käytettävissä oleva | 10.00 | 10.00 |
     | Suunnitellut ostotilaukset | 15.00 | 15.00 |
 
     ![Myyntitilauksen tarvekohdistaminen](media/pegging-planned-purchase-order.png "Myyntitilauksen tarvekohdistaminen")
@@ -135,6 +135,6 @@ Seuraavaksi avaat tuotteen *1000* **nettovaatimuksia** tarkastelemalla, miten la
 > [!NOTE]
 > Koska suunnittelun optimointi ei vielä tue joitakin ominaisuuksia, *Turvallisuusvarasto*- ja *Vanhentunut erä* vaatimukset eivät sisälly **Nettotarve**-sivulle. Lisätietoja on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md).
 >
-> Jos käytössä on sisäinen pääsuunnittelumoduuli, eräohjattuja tuotteita tuetaan. Eräohjatuissa tuotteissa vanhentunut käytettävissä oleva varasto näkyy **Nettovaatimus**-sivulla, mutta se ei ole tarvekohdissa. Vanhentuneet tämäntyyppiset varastorivit näytetään *vanhentunut erä* -vaatimusriveillä **Nettovaatimus**-sivulla.
+> Jos käytössä on sisäinen pääsuunnittelumoduuli, eräohjattuja tuotteita tuetaan. Eräohjatuissa tuotteissa vanhentunut käytettävissä oleva varasto näkyy **Nettovaatimus**-sivulla, mutta se ei ole tarvekohdissa. Vanhentuneet tämäntyyppiset käytössä olevat varastorivit näytetään *vanhentunut erä* -vaatimusriveillä **Nettovaatimus**-sivulla.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

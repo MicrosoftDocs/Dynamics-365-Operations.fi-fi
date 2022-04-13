@@ -1,5 +1,5 @@
 ---
-title: Keskeytä loma
+title: Loman keskeyttäminen
 description: Voit keskeyttää työntekijän loman Dynamics 365 Human Resourcesissa.
 author: twheeloc
 ms.date: 10/28/2021
@@ -15,17 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8b11b75e2cc53482f3fccf8fdd0aa4f1af3453d9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: be18ace185b73c9f032f9303c0bb62c6a80487c0
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069476"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509081"
 ---
-# <a name="suspend-leave"></a>Keskeytä loma
+# <a name="suspend-leave"></a>Loman keskeyttäminen
 
+>[!Important]
+>Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

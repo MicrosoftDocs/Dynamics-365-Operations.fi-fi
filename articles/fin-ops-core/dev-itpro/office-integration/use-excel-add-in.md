@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068789"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464934"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Yksikön tietojen näyttäminen ja päivittäminen Excelissä 
 
@@ -48,7 +48,7 @@ Lisätietoja Excel-apuohjelman käyttämisestä lyhyessä videossa [Excel-mallin
 2. Valitse **Avaa Excelissä** -vaihtoehto ja avaa luotu työkirja. Tämä työkirja sisältää yksikön sidostiedot, osoitin ympäristöön ja osoitin Excel-lisäosaan.
 3. Valitse Excelin **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan**.
-5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut taloushallinnon ja toimintojen sovelluksiin. Excel-apuohjelma käyttää aiempaa sisäänkirjautumista selaimesta ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. (Käyttöjärjestelmäkohtaisia lisätietoja käytetystä selaimesta on kohdassa [Office-apuohjelmien käyttämät selaimet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Kirjautumisen onnistumisen voi varmistaa tarkistamalla, mikä nimi on Excel-apuohjelman oikeassa yläkulmassa. 
+5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut taloushallinnon ja toimintojen sovelluksiin. Excel-apuohjelma käyttää aiempaa sisäänkirjautumista selaimesta ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. (Käyttöjärjestelmäkohtaisia lisätietoja käytetystä selaimesta on kohdassa [Office-apuohjelmien käyttämät selaimet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Kirjautumisen onnistumisen voi varmistaa tarkistamalla, mikä nimi on Excel-apuohjelman oikeassa yläkulmassa. 
 
 Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että työkirjassa ei ole tietoja ennen kuin Excel-lisäosa on lukenut tiedot.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: fae25eb1cb9dd4059b9d49e47cbb0060e717c9bc
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8386995"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524434"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Managementin version 10.0.26 esikatselu (toukokuu 2022)
 
@@ -35,7 +35,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän aih
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
 | Varasto ja logistiikka | [Käytettävissä olevan varaston Varaston näkyvyys -kysely tukee varastonhallinnan lisänimikkeitä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Tulossa pian | Toimintojen hallinta:<br>*Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* |
-| Varasto ja logistiikka | [Varaston näkyvyyden lisäosan luvattavissa oleva määrä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | Tulossa pian | Palvelumääritysten käyttöönottama |
+| Varasto ja logistiikka | [Varaston näkyvyyden lisäosan luvattavissa oleva määrä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Varaston näkyvyyden käytössä olevat muutosaikataulut ja luvattavissa olevat määrät](../inventory/inventory-visibility-available-to-promise.md) | Palvelumääritysten käyttöönottama |
 | Valmistus | [Todellisen painon nimikkeet tuotannon työnohjausliittymälle](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md) | Toimintojen hallinta:<br>*(Esiversio) Todellisen painon nimikkeiden raportointi tuotannon käyttöliittymästä* |
 | Valmistus | Omat työt -välilehti tuotannon käyttöliittymässä <!-- KFM: Add link to release plan when available --> | [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md) | Toimintojen hallinta:<br>*Omat työt -välilehti tuotannon käyttöliittymässä* |
 

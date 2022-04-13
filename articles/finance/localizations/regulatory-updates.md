@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 663b7d3162af6d385bc9c445b1e98cf5f74a1471
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 19aadf844f239ef06ca4d9dbe60b597228d72e52
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105561"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470090"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -39,36 +39,26 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 
 |Maa tai alue|Vapautuspäivä|Julkaisuversio|Pakollinen päivitys|
 |--------------------|---------------|-------|-------| 
-|      Itävalta         |   Elokuu 2021      | 10.0.22      |   ALV-ilmoitus XML-muodossa ja esikatselu Excelissä   |
-|      Itävalta         |   Syyskuu 2021      | 10.0.22HF      |   Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä   |
-|      Belgia        |   2021. lokakuuta      | 10.0.22HF     |   Intrastat-tapahtumakoodit muuttuvat kaksinumeroisiksi vuodesta 2022 alkaen  |
-|      Brasilia         |   Elokuu 2021      | 10.0.22      |   NF-e NT2020.006 – Digitaalisen alustan välittäjän tunnus (asettelu- ja vahvistussääntöjen päivitykset)   |
-|      Brasilia         |   2021. joulukuuta         | 10.0.22, 10.0.23, 10.0.24         |    SPED-verotuksen asettelu 2022  |
-|      Tšekin tasavalta         |   2021. lokakuuta         | 10.0.23HF         |     Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä  |
-|      Tanska         |   2021. joulukuuta         | 10.0.22HF         |    Intrastat-muoto päivitetään alkaen 2022  |
-|      Viro         |   2021. joulukuuta      | 10.0.22HF      |   Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä  |
-|      Suomi         |   marraskuu 2021         | 10.0.22HF         |    Intrastat-muoto päivitetään alkaen vuodesta 2022.  |
-|      Saksa        |   Elokuu 2021       | 10.0.22HF      |   Intrastat-muoto INSTAT XML päivitetään vuodesta 2022 alkaen. Intrastat-muoto TXT ei ole enää käytettävissä 1.7.2021 alkaen  |
-|      Saksa        |   2021. lokakuuta       | 10.0.23      |   ALV-ilmoitus XML-muodossa ja esikatselu Excelissä (uusi rakenne, jossa verokoodivaluutassa olevat summat voidaan suorittaa valmista käänteisen verovelvollisuuden toimintoa käyttäen muissa kuin DE:n yrityksissä, ja usean yrityksen verotapahtumat voidaan kerätä yhteen)  |
-|      Italia         |   marraskuu 2021         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Sähköinen laskutus rajat ylittäviä tapahtumia varten  |
-|      Meksiko         |   marraskuu 2021      | 10.0.22      |   Carta de Porte -täydennys CFDI-asiakirjoissa   |
+|      Brasilia         |   2021. joulukuuta         | 10.0.24, 10.0.25         |    SPED-verotuksen asettelu 2022  |
+|      Brasilia         |   Maaliskuun 2022.    | 10.0.24HF, 10.0.25HF         |    ICMS-DIFAL-kokoelma ei-veronmaksajille suunnatussa toiminnassa (täydennyslakinumero 190/22)  |
+|      Tanska         |   2022. tammikuuta  | 10.0.25HF         |    ALV-ilmoituksen esiversio Excelissä |
+|      Ranska   |   marraskuu 2021 | 10.0.25         |    Ranskan tietojen arkistointivienti (FEC) - "Puuttuvat numerot perusteltava" -liite |
+|      Italia         |   marraskuu 2021         | 10.0.24         |    Sähköinen laskutus rajat ylittäviä tapahtumia varten  |
+|      Italia         |   Helmikuun 2022. | 10.0.24HF, 10.0.25HF| Yksilöllinen sertifiointi – 2022 Dynamics 365 Financessa  |
+|      Liettua|   Helmikuun 2022. | 10.0.24HF, 10.0.25HF | i.SAF-muutokset alkaen 1.1.2022 Dynamics 365 Financessa  |
 |      Meksiko         |   2021. joulukuuta      | 10.0.24      |   Carta de Porte -täydennyksen versio 2.0  |
-|      Alankomaat        |   2021. lokakuuta      | 10.0.22HF      |   Kaksinumeroiset tapahtumakoodit Intrastat-tiedostomuodossa vuodesta 2022 alkaen  |
-|      Uusi-Seelanti         |   Elokuu 2021      | 10.0.22    |   GST-ilmoituslomake GST101A  |
 |      Norja        |   marraskuu 2021      | 10.0.24      |   ALV-ilmoitusmuoto vuodelle 2022 ja suora lähetys – Dynamics 365 Finance |
-|      Oman         |   Elokuu 2021      | 10.0.22      |   ALV-ilmoitus – versio 1 |
-|      Puola          |   2021. lokakuuta     | 10.0.23, 10.0.24     |   JPK_V7M – uusi rakenneversio tammikuusta 2022 alkaen |
+|      Puola          |   2021. lokakuuta     | 10.0.24     |   JPK_V7M – uusi rakenneversio tammikuusta 2022 alkaen |
 |      Puola          |   marraskuu 2021     | 10.0.24HF     |   Vuosiraportti kaupallisten tapahtumien maksupäivistä |
 |      Puola          |   2021. lokakuuta     | 10.0.24     |   EU-myyntilistan sähköinen muoto (VAT-UE) |
-|      Venäjä          |   2021. lokakuuta     | 10.0.22HF, 10.0.23, 10.0.24    |   Muutoksia myynteihin, ostokirjapitoon ja laskunkirjauskansioihin|
+|      Venäjä          |   2021. lokakuuta     | 10.0.24    |   Muutoksia myynteihin, ostokirjapitoon ja laskunkirjauskansioihin|
 |      Venäjä          |   2021. lokakuuta     | 10.0.24HF    |   Muutoksia liitteitä sisältävien ALV-ilmoitusten muotoihin|
 |      Venäjä          |   marraskuu 2021     | 10.0.24    |   Liittovaltion kirjanpidon standardit 6/2020 (käyttöomaisuus)|
-|      Saudi-Arabia          |   marraskuu 2021     | 10.0.22HF, 10.0.23    |   Sähköisten laskujen luominen Saudi-Arabiassa – vaihe 1|
-|      Saudi-Arabia          |   marraskuu 2021     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Retail – sähköinen laskutus Saudi-Arabiassa – vaihe 1|
-|      Espanja          |   2021. lokakuuta     | 10.0.23    |    ALV-ilmoituksen malli 303 txt-muodossa ja esikatselu Excelissä|
-|      Espanja          |   Syyskuu 2021     | 10.0.22    |    Intrastat-muoto päivitetään vuoden 2022 ilmoituksia varten – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä|
-|      Ruotsi          |   2021. lokakuuta     | 10.0.22HF    |    Intrastat-muoto päivitetään vuodesta 2022 alkaen – alkuperämaasta ja kumppanin ALV-tunnuksista tulee pakollisia lähetyksissä. Käyttöön tulevat kaksinumeroiset tapahtumakoodit.|
-|      Yhdistynyt kuningaskunta          |   Elokuu 2021     | 10.0.22    |    UK – MTD-petostentorjunta 2021)|
+|      Venäjä          |   2022. tammikuuta     | 10.0.24HF, 10.0.25    |   Ota käyttöön sähköisen raportoinnin (ER) kohde venäläisten kirjanpitoasiakirjojen (ensisijaiset asiakirjat ja kirjanpitoraportit) tallentamiseen|
+|      Venäjä          |   2021. joulukuuta     | 10.0.25    |   Käyttöomaisuuden integrointimoduulin (Venäjä) integrointi resurssienhallintamoduuliin|
+|      Venäjä          |   Helmikuun 2022.     | 10.0.24HF, 10.0.25    |  Uusi kuljetuslaskun muoto (Valtioneuvoston asetus N 2116 30.11.2021)|
+|      Saudi-Arabia          |   marraskuu 2021     | 10.0.24    |   Retail – sähköinen laskutus Saudi-Arabiassa – vaihe 1|
+|      Espanja      |   Maaliskuun 2022.| 10.0.24HF, 10.0.25HF | Espanja: ALV-ilmoitusmalli 303 muuttuu 1.1.2022 Dynamics 365 Financessa|
 
 
 

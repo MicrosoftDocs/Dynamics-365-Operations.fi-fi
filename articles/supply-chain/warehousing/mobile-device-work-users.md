@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902094"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462667"
 ---
 # <a name="mobile-device-user-accounts"></a>Mobiililaitteen käyttäjätilit
 
@@ -90,8 +90,8 @@ Kun työntekijä kirjautuu Warehouse Management -mobiilisovellukseen, kieli, num
 1. Valitse toimintoruudussa **Käyttäjän asetukset**.
 1. Määritä **Astukset**-välilehdessä seuraavat kentät:
 
-    - **Kieli** – Valitse käyttäjän ensisijainen kieli. Tällä kentällä hallitaan myös varastosovelluksessa näkyvää päivämäärän muotoa.
-    - **Päivämäärä-, aika- ja numeromuoto** – Valitse kieli, joka määrittää varastosovelluksessa näkyvät numeromuodot. Huomaa, että varastosovelluksessa näkyvät päivämäärä- ja aikamuodot määräytyvät itse asiassa **Kieli**-kentän eivätkä tämän kentän mukaan.
+    - **Kieli** – Valitse käyttäjän ensisijainen kieli. Tällä kentällä hallitaan myös varastosovelluksessa näkyvää numeron muotoa.
+    - **Päivämäärä-, aika- ja numeromuoto** – Valitse päivämäärä- ja aikamuoto, joita työntekijä haluaa. Varastosovellus käyttää **kieli**-kenttään valittuun kieleen liittyvää numeromuotoa tämän asetuksen asemesta.
     - **Aikavyöhyke** – Valitse aikavyöhyke, jolla työntekijä työskentelee. Tämä kenttä vaikuttaa kaikkien niiden rekisteröintien aikaleimoihin, jotka työntekijä tekee sovelluksella.
 
 > [!NOTE]

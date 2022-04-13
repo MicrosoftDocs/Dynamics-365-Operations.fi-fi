@@ -1,23 +1,23 @@
 ---
 title: Kansainvälisen tilinumero (IBAN) tarkistuksen hallinta
 description: Tässä ohjeaiheessa käsitellään kansainvälisen tilinumero (IBAN) tarkistuksen hallintaa.
-author: roschlom
+author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860816"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462761"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Kansainvälisen tilinumero (IBAN) tarkistuksen hallinta
 
@@ -25,13 +25,13 @@ ms.locfileid: "7860816"
 
 Kansainvälisen tilinumeron (IBAN) tarkistus täydentää tarkistusta, joka tehdään, kun lisäät IBAN-numeron pankkitiliin.
 
-Microsoft Dynamics 365 Financeen on tallennettu tietoja IBAN-rakenteesta. Nämä tiedot ladataan automaattisesti, kun käytät IBAN-numeroa ensimmäisen kerran pankkitileissä. Tiedot sisältävät IBAN-numeron pituuden, tilinumeron ja pankkikoodin aloituskohdat sekä tilinumeron ja pankkikoodin pituuden.
+IBAN-rakenteen tiedot tallennetaan Microsoft Dynamics 365 Financeen, ja ne ladataan automaattisesti, kun ensimmäistä kertaa käytät IBAN-pankkitilejä. Tiedot sisältävät IBAN-numeron pituuden, tilinumeron ja pankkikoodin aloituskohdat sekä tilinumeron ja pankkikoodin pituuden.
 
 ## <a name="set-up-iban-structures"></a>IBAN-rakenteiden määrittäminen
 
 1. Valitse **Maksuliikenteen hallinta \> Asetukset \> IBAN-rakenteet**.
 2. Huomaa, että kunkin maan tai alueen IBAN-rakenteet on määritetty automaattisesti.
-3. Jos haluat mukauttaa tietyn maan tai alueen rakenteita, voit muokata niitä.
+3. Valitse **Muokkaa**-painike, jos tietyn maan tai alueen rakenne on päivitettävä.
 4. Rakenteen määritykset sisältyvät jokaiseen uuteen julkaisuun. Voit ladata uusimmat määritelmät kunkin päivityksen jälkeen **Palauta rakenteet** -valikosta.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Pankkitilin IBAN-rakenteen tarkistaminen

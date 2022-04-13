@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062108"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524462"
 ---
 # <a name="inventory-visibility-public-apis"></a>Varaston näkyvyyden julkiset ohjelmointirajapinnat
 
@@ -27,8 +27,8 @@ Tässä aiheessa käsitellään varaston näkyvyyden julkisia ohjelmointirajapin
 
 Varaston näkyvyyden apuohjelman julkinen REST API sisältää useita nimenomaisia integroinnin päätepisteitä. Se tukee neljää pääasiallista vuorovaikutustyyppiä:
 
-- Varastosaldon määrän muutosten kirjaaminen apuohjelmaan ulkoisesta järjestelmästä
-- Varastosaldomäärien määrittäminen tai ohittaminen ulkoisesta järjestelmästä apuohjelmassa
+- Käytettävissä olevan varastomäärän muutosten kirjaaminen apuohjelmaan ulkoisesta järjestelmästä
+- Käytettävissä olevien varastosaldomäärien määrittäminen tai ohittaminen ulkoisesta järjestelmästä apuohjelmassa
 - Varaustapahtumien kirjaaminen apuohjelmaan ulkoisesta järjestelmästä
 - Nykyisten käytettävissä olevien määrien kysely ulkoisesta järjestelmästä
 
@@ -36,20 +36,22 @@ Seuraavassa taulukossa on tällä hetkellä käytettävissä olevat ohjelmointir
 
 | Polku | Tapa | kuvaus |
 |---|---|---|
-| /api/environment/{environmentId}/onhand | Kirjaa | [Yhden varastosaldon muutostapahtuman luominen](#create-one-onhand-change-event) |
+| /api/environment/{environmentId}/onhand | Kirjaa | [Yhden käytettävissä olevan varastosaldon muutostapahtuman luominen](#create-one-onhand-change-event) |
 | /api/environment/{environmentId}/onhand/bulk | Kirjaa | [Useiden muutostapahtumien luominen](#create-multiple-onhand-change-events) |
-| /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Kirjaa | [Varastosaldomäärien määrittäminen tai ohittaminen](#set-onhand-quantities) |
+| /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Kirjaa | [Käytettävissä olevien varastosaldomäärien määrittäminen tai ohittaminen](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Kirjaa | [Yhden varaustapahtuman luominen](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Kirjaa | [Useiden varaustapahtumien luominen](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/on-hand/changeschedule | Kirjaa | [Yhden aikataulutetun käytettävissä olevan saldon muutoksen luominen](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Kirjaa | [Useiden aikataulutettujen käytettävissä olevien varastosaldojen muutosten luominen](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Kirjaa | [Post-menetelmää käyttävä kysely](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hae | [Get-menetelmää käyttävä kysely](#query-with-get-method) |
-
-Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
 > Polun {environmentId}-osa on ympäristötunnus Microsoft Dynamics Lifecycle Servicesissä (LCS).
 > 
 > Joukkotoimintosovellusliittymä voi palauttaa kullekin pyynnölle enintään 512 tietuetta.
+
+Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services -ympäristön mukaisen päätepisteen etsiminen
 
@@ -155,9 +157,9 @@ Palvelun suojaustunnus haetaan seuraavasti:
 > [!IMPORTANT]
 > Kun *Postman*-pyyntökokoelmalla kutsutaan varaston näkyvyyden julkinen ohjelmointirajapinta, jokaiseen pyyntöön on lisättävä haltijatunnus. Haltijatunnuksen voi etsiä valitsemalla **Valtuutus**-välilehden pyynnön URL-osoitteessa, valitsemalla **Haltijatunnus**-tyypin ja kopioimalla edellisessä vaiheessa noudetun käyttöoikeustietueen. Tämä aiheen myöhemmissä osissa `$access_token` ilmaisee tunnuksen, joka noudettiin viimeisessä vaiheessa.
 
-## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Varastosaldon muutostapahtumien luominen
+## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Käytettävissä olevan varastosaldon muutostapahtumien luominen
 
-Varastosaldon muutostapahtumia luontiin on käytettävissä kaksi ohjelmointirajapintaa:
+Käytettävissä olevien varastosaldon muutostapahtumien luontiin on käytettävissä kaksi ohjelmointirajapintaa:
 
 - Yhden tietueen luonti: `/api/environment/{environmentId}/onhand`
 - Useiden tietueiden luonti: `/api/environment/{environmentId}/onhand/bulk`
@@ -169,16 +171,16 @@ Seuraavassa taulukossa on yhteenveto JSON-tekstiosan kunkin kentän merkityksest
 | `id` | Tietyn muutostapahtuman yksilöivä tunnus. Tämän tunnuksen avulla varmistetaan, että jos viestintä palveluun epäonnistuu kirjauksen aikana, samaa tapahtumaa ei lasketa järjestelmässä kahdesti, jos se lähetetään uudelleen. |
 | `organizationId` | Tapahtumaan linkitetyn organisaation tunniste. Tämä arvo yhdistetään Supply Chain Managementin organisaatioon tai tietoalueen tunnukseen. |
 | `productId` | Tuotteen tunniste. |
-| `quantities` | Määrä, jolla varastosaldoa on muutettava. Jos hyllylle lisättiin esimerkiksi 10 uutta kirjaa, tämä arvo on `quantities:{ shelf:{ received: 10 }}`. Jos hyllystä poistettiin tai myytiin kolme kirjaa, tämä arvo on `quantities:{ shelf:{ sold: 3 }}`. |
+| `quantities` | Määrä, jolla käytettävissä olevaa varastosaldoa on muutettava. Jos hyllylle lisättiin esimerkiksi 10 uutta kirjaa, tämä arvo on `quantities:{ shelf:{ received: 10 }}`. Jos hyllystä poistettiin tai myytiin kolme kirjaa, tämä arvo on `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | Muutostapahtuman kirjauksessa ja kyselyssä käytettävien dimensioiden tietolähde. Jos tietolähde määritetään, määritetyn tietolähteen mukautettuja dimensioita voidaan käyttää. Varaston näkyvyyssovellus voi käyttää dimensiomääritystä mukautettujen dimensioiden yhdistämiseen yleisiin oletusdimensioihin. Jos `dimensionDataSource`-arvoa ei ole määritetty, kyselyissä voi käyttää vain yleisiä [perusdimensioita](inventory-visibility-configuration.md#data-source-configuration-dimension). |
 | `dimensions` | Dynaaminen avain- ja arvopari. Arvot yhdistetään joihinkin Supply Chain Managementin dimensioihin. Lisäksi voidaan kuitenkin lisätä myös mukautettuja dimensioita (kuten _Lähde_) ilmaisemaan, tuleeko tapahtuma Supply Chain Managementista vai ulkoisesta järjestelmästä. |
 
 > [!NOTE]
 > `SiteId`- ja `LocationId`-parametrit muodostavat [osiomäärityksen](inventory-visibility-configuration.md#partition-configuration). Siksi ne on määritettävä dimensioissa, kun luodaan käytettävissä olevan varaston muutostapahtumia, määritetään tai ohitetaan käytettävissä olevan varaston määriä tai luodaan varaustapahtumia.
 
-### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Yhden varastosaldon muutostapahtuman luominen
+### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Yhden käytettävissä olevan varastosaldon muutostapahtuman luominen
 
-Tämä ohjelmointirajapinta luo yhden varastosaldon muutostapahtuman.
+Tämä ohjelmointirajapinta luo yhden käytettävissä olevan varastosaldon muutostapahtuman.
 
 ```txt
 Path:
@@ -251,7 +253,7 @@ Seuraavassa esimerkissä on näytteen tekstisisältö ilman `dimensionDataSource
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Useiden muutostapahtumien luominen
 
-Tällä ohjelmointirajapinnalla voidaan luoda useita tietueita samanaikaisesti. Tämän ohjelmointirajapinnan ja [yhden tapahtuman ohjelmointirajapinnan](#create-one-onhand-change-event) ainoat erot ovat `Path`- ja `Body` -arvoissa. Tässä ohjelmointirajapinnassa `Body` tuottaa tietuematriisin. Tietueiden enimmäismäärä on 512, mikä tarkoittaa, että käsillä oleva joukkotoiminto-ohjelmointirajapinta voi tukea enintään 512 muutostapahtumaa kerrallaan.
+Tällä ohjelmointirajapinnalla voidaan luoda useita tietueita samanaikaisesti. Tämän ohjelmointirajapinnan ja [yhden tapahtuman ohjelmointirajapinnan](#create-one-onhand-change-event) ainoat erot ovat `Path`- ja `Body` -arvoissa. Tässä ohjelmointirajapinnassa `Body` tuottaa tietuematriisin. Tietueiden enimmäismäärä on 512, mikä tarkoittaa, että käytettävissä oleva joukkotoiminto-ohjelmointirajapinta voi tukea enintään 512 muutostapahtumaa kerrallaan.
 
 ```txt
 Path:
@@ -317,7 +319,7 @@ Seuraavassa esimerkissä on näytteen tekstisisältö.
 ]
 ```
 
-## <a name="setoverride-on-hand-quantities"></a><a name="set-onhand-quantities"></a>Varastosaldomäärien määrittäminen tai ohittaminen
+## <a name="setoverride-on-hand-quantities"></a><a name="set-onhand-quantities"></a>Käytettävissä olevien varastosaldomäärien määrittäminen tai ohittaminen
 
 _Set on-hand_-ohjelmointirajapinta ohittaa määritetyn tuotteen nykyiset tiedot.
 
@@ -352,7 +354,7 @@ Body:
     ]
 ```
 
-Seuraavassa esimerkissä on näytteen tekstisisältö. Tämän ohjelmointirajapinnan toiminta eroaa aiemmin tässä aiheessa kohdassa [Varastosaldon muutostapahtumien luominen](#create-onhand-change-event) kuvattujen ohjelmointirajapintojen toiminnasta. Tässä näytteessä *T-paita*-tuotteen määräksi määritetään 1.
+Seuraavassa esimerkissä on näytteen tekstisisältö. Tämän ohjelmointirajapinnan toiminta eroaa aiemmin tässä aiheessa kohdassa [Käytettävissä olevan varastosaldon muutostapahtumien luominen](#create-onhand-change-event) kuvattujen ohjelmointirajapintojen toiminnasta. Tässä näytteessä *T-paita*-tuotteen määräksi määritetään 1.
 
 ```json
 [
@@ -476,9 +478,9 @@ Body:
     ]
 ```
 
-## <a name="query-on-hand"></a>Varastosaldokysely
+## <a name="query-on-hand"></a>Käytettävissä olevan varastosaldon kysely
 
-_Query on-hand_-ohjelmointirajapinnalla voit noutaa tuotteiden tämän hetkiset varastosaldotiedot. Sovellusrajapinta tukee tällä hetkellä kyselyä, jossa on enintään 100 yksittäistä nimikettä `ProductID`-arvon mukaan. Jokaisessa kyselyssä voi määrittää myös useita `SiteID`- ja `LocationID`-arvoja. Enimmäisrajaksi määritetään `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+_Query on-hand_-ohjelmointirajapinnalla voit noutaa tuotteiden tämän hetkiset käytettävissä olevat varastosaldotiedot. Sovellusrajapinta tukee tällä hetkellä kyselyä, jossa on enintään 100 yksittäistä nimikettä `ProductID`-arvon mukaan. Jokaisessa kyselyssä voi määrittää myös useita `SiteID`- ja `LocationID`-arvoja. Enimmäisrajaksi määritetään `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Post-menetelmää käyttävä kysely
 
@@ -516,6 +518,9 @@ Tämän pyynnön tekstiosassa `dimensionDataSource` on edelleen valinnainen para
 `groupByValues`-parametrin pitäisi noudattaa indeksointimääritystä. Lisätietoja on kohdassa [Tuoteindeksihierarkian määrittäminen](./inventory-visibility-configuration.md#index-configuration).
 
 Parametri `returnNegative` määrittää, sisältävätkö tulokset negatiivisia merkintöjä.
+
+> [!NOTE]
+> Jos olet ottanut käyttöön käytössä olevan muutoksen aikataulun ja ATP-ominaisuudet, kyselysi voi sisältää myös `QueryATP` Boolean-parametrin, joka määrittää, sisältävätkö kyselyn tulokset ATP-tietoja. Lisätietoja ja esimerkkejä on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulut ja luvattavissa olevat aikataulut](inventory-visibility-available-to-promise.md).
 
 Seuraavassa esimerkissä on näytteen tekstisisältö.
 
@@ -572,5 +577,9 @@ get URL -esimerkki: Tämä get-pyyntö täsmälleen sama kuin aiemmin annettu po
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## <a name="available-to-promise"></a>Luvattavissa oleva määrä (ATP)
+
+Voit määrittää varaston näkyvyyden sallimaan tulevien käytettävissä olevien muutosten ajoituksen ja ATP-määrien laskemisen. ATP on tuotteen määrä, joka on saatavilla ja joka voidaan luvata asiakkaalle seuraavalla kaudella. ATP-laskelman käyttö voi lisätä tilauksen täyttämiskykyä merkittävästi. Tietoja siitä, miten tämä ominaisuus otetaan käyttöön ja miten varaston näkyvyys otetaan käyttöön sen API-liittymän kautta ominaisuuden käytön jälkeen, on kohdassa [Varaston näkyvyyden käytettävissä olevan varaston muutosaikataulut ja luvattavissa olevat määrät](inventory-visibility-available-to-promise.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

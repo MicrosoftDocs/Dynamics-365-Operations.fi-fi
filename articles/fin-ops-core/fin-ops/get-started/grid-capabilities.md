@@ -2,7 +2,7 @@
 title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uusi ruudukkotoiminto on otettava käyttöön näiden ominaisuuksien käyttämistä varten.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 81577f54bd7fdc7d683c760dd4410f27da8ee1f0
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384426"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462789"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -151,7 +151,7 @@ Kuten Excelissä käyttäjät voivat automaattisesti pakottaa sarakkeen koon muu
 
 **Uusi ruudukon ohjausobjekti** -toiminto on käytettävissä suoraan ominaisuuksien hallinnassa missä tahansa ympäristössä. Kun ominaisuus on käytössä ominaisuuksien hallinnassa, kaikki myöhemmät käyttäjäistunnot käyttävät uutta ruudukon ohjausobjektia. 
 
-Tämä ominaisuus otetaan oletusarvoisesti käyttöön versiosta 10.0.21 lähtien ja sen on määrä tulla pakolliseksi versiossa 10.0.25. 
+Tämä ominaisuus otetaan oletusarvoisesti käyttöön versiosta 10.0.21 lähtien ja sen on määrä tulla pakolliseksi lokakuussa 2022.  
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Kehittäjä] Uuden ruudukon käyttämisen kieltäminen yksittäissivuilta 
 Jos organisaatiossa havaitaan sivu, jolla on ongelmia käyttää uutta ruudukkoa, ohjelmistorajapinnan avulla voi sallia yksittäisen lomakkeen käyttää vanhaa ruudukon ohjausobjektia samalla, kun sallitaan muun järjestelmän käyttää uutta ruudukon ohjausobjektia. Jos haluat kieltää yksittäiseltä sivulta uuden ruudukon käyttämisen, lisää seuraava kutsuviesti `super()` lomakkeen menetelmään `run()`.

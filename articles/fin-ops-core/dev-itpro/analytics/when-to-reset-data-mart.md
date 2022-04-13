@@ -2,7 +2,7 @@
 title: Tietovaraston osajoukon usein kysytyt kysymykset
 description: Tämä ohjeaihe sisältää vastauksia eräisiin usein kysyttyihin tietovaraston osajoukon kysymyksiin.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119509"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466408"
 ---
 # <a name="data-mart-resets-faq"></a>Tietovaraston osajoukon usein kysytyt kysymykset
 
@@ -47,10 +47,14 @@ Jos jokin seuraavista lausekkeista on voimassa tilanteessasi, organisaatiosi voi
 Tässä on joitain tilanteita, joissa emme suosittele tietovaraston nollaamista:
 
 - Sinulla on ongelmia tietojen integroinnin suorituskyvyn kanssa.
+- Financial Reporter -integrointi ei ole käytössä. 
+
+    - Tämä tarkoittaa, että kirjanpitotietoja ei enää synkronoida Financial Reportingin tietovarastoihin. Financial Reporter ei ehkä saa talousraportteihisi ajan tasalla olevia lukuja. Näin tapahtuu yleensä silloin, kun Financial Reporter ei ole pitkään aikaan ollut käytössä.
+    - Näyttöön tule kehote ottaa integrointi käyttöön nollaamalla tietovarasto. Jatka valitsemalla **Kyllä**. Voit myös halutessasi nollata tietovarastot myöhemmin. Kun integrointi on otettu käyttöön, kirjanpitotiedot synkronoidaan uudelleen Financial Reporteriin. 
 - Nollausmalli toistuu jonkin seuraavan syyn vuoksi:
 
     - **Raportista puuttuu tietoja tai siinä on odottamattomia tietoja** – Jos havaitset, että tietoja puuttuu, avaa Microsoftille tukipalvelupyyntö, jonka avulla voit tarkistaa raporttisi muodon ja mahdolliset tietojen synkronointiongelmat.
-    - **Juuttunut integroinnin tila**
+    - **Jumiutunut integroitu tila** - Jos huomaat integroinnin tilan jäävän jumiin käynnissä ollessa, se voi johtua suuresta tapahtumamäärästä järjestelmässä. Tämä tila selviää itsestään. Jos kuitenkin huomaat, että rekisteröintitila on jumissa yli neljä tuntia, avaa tukipalvelupyyntö Microsoftille. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Jos tietovaraston osajoukko palautetaan, menetetäänkö jo suunnitellut raportit?
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
-ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
+ms.openlocfilehash: 9d574f760960241e4d79a988b1b671f224cb345f
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8024564"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487791"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Dynamics 365 Human Resources -infrastruktuurin yhdistäminen - Julkaisun 10.0.25 päivitys
 
@@ -34,7 +34,7 @@ Yhdistämisen avulla Human Resourcesin käyttäjät voivat olla yhdenmukaisia se
     - Käytössä on yksi koodiperusta, jonka uudet Human Resourcesin toiminnot vapautetaan osana yhden version vakiopäivitysprosessia.
     - Tapa, jolla parannuksia, päivityksiä ja korjauksia sovelletaan ympäristöihin, on yhdenmukainen.
 
-- [Laajennettavuusvaihtoehtoja parannetaan.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md)
+- [Laajennettavuusvaihtoehtoja parannetaan.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options)
 
     - Voit jatkaa Microsoft Power Platform -työkalujen käyttöä tarpeen mukaan.
     - Toimintoja voi laajentaa lomakkeiden, taulujen, menetelmien ja sovellusohjelmaliittymien avulla.
@@ -42,7 +42,7 @@ Yhdistämisen avulla Human Resourcesin käyttäjät voivat olla yhdenmukaisia se
 
     Lisätietoja käytettävissä olevista laajennusvaihtoehdoista on [Dynamics 365:n laajennettavuuden yleiskatsaus](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) -kohdassa.
 
-- [Luo yksi henkilöstöresurssitoimintojoukko Dynamics 365:ssä.](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+- [Luo yksi henkilöstöresurssitoimintojoukko Dynamics 365:ssä.](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/create-one-set-human-resources-capabilities-within-dynamics-365)
 
     10.0.25-versiossa vain Human Resourcesin toiminnot on otettu käyttöön rahoitus- ja toiminta -infrastruktuurissa. Jotta asiakkaat voivat hyödyntää näitä rahoitus- ja toiminta -ympäristön toimintoja, seuraavien Human Resourcesin ominaisuuksien on oltava käytössä ominaisuuksien hallinnassa.
 

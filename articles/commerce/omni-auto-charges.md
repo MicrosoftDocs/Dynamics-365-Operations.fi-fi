@@ -2,7 +2,7 @@
 title: Omnikanavan automaattiset etukäteisveloitukset
 description: Tässä ohjeaiheessa käsitellään Commerce-kanavan tilausten lisäkulujen hallintaa edistyneiden automaattisten kuluominaisuuksien avulla.
 author: hhaines
-ms.date: 03/30/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
+ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743428"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "8489615"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanavan automaattiset etukäteisveloitukset
 
@@ -187,6 +187,9 @@ Jos ohitettujen kulujen syykoodit on taltioitu, käytettävissä on uusi raportt
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Myyntipisteen palautustapahtuman palautuskulut
 
 Jos **Käytä edistyneitä automaattisia kuluja** -parametrin asetuksena on **Kyllä**, aiempaa Commercen **Palauta toimitusmaksut** -parametria ei enää käytetä. Jos haluat ilmaista, mitkä kulut palautetaan järjestelmällisesti asiakkaalle edistyneitä automaattisia kuluja käytettäessä, varmista, että liittyvä kulukoodiksi on määritetty **Palautettava** **Kulujen koodi** -asetussivulla. Varmista, että asetukset on synkronoitu Commerce-kanavan tietokantoihin jakeluaikataulun käsittelyn avulla.
+
+> [!TIP]
+> Saadaksesi ohjeita, joiden avulla voit varmistaa, että rivin tason palautusmaksut lasketaan palautetun määrän perusteella, katso lisätietoja kohdassa [Palautuskelpoisia kuluja ei lasketa palautetun määrän perusteella](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Palautustilaustapahtuman palautuskulut
 

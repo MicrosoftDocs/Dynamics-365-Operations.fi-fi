@@ -1,7 +1,7 @@
 ---
 title: Suunnittelun optimoinnin sopivuusanalyysi
 description: Tässä ohjeaiheessa käsitellään, miten nykyisten asetusten ja tietojen yhteensopivuus suunnittelun optimointitoiminnon ominaisuuksien kanssa varmistetaan.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408012"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487639"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -84,7 +84,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla käytetään resurssin kulutusta: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä resurssien kulutusta käyttävät tuoterakenne- ja kaavarivit ohitetaan, kun suunnittelun optimointi on käytössä. Kun tätä toimintoa tuetaan, materiaalitarve määritetään tuotannon alkamispäivälle. Ennen tämän toiminnon tukemista tarpeita ei luoda sellaisille materiaaleille, jotka on merkitty resurssinkäyttömerkinnällä. | 2022. lokakuuta |
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla käytetään vaiheittaista kulutusta: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä vaiheenkulutusta ei oteta huomioon, kun tuoterakenne- ja kaavarivit ohitetaan, kun suunnittelun optimointi on käytössä. | 2022. lokakuuta |
 | Tuotantoympäristö | Tuoterakenteet, joille on määritetty vakiohävikki tai muuttuva hävikki: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä tuoterakenteissa määritetyt vakiohävikki ja muuttuva hävikki ohitetaan, kun suunnittelun optimointi on käytössä. | 2022. lokakuuta |
-| Tuotantoympäristö | Tuoterakenteet, joissa käytetään alihankintaa: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä alihankinta-asetus ohitetaan tuoterakenteissa, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. | Huhtikuun 2022. |
+| Tuotantoympäristö | Tuoterakenteet, joissa käytetään alihankintaa: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä. | Tuettu |
 | Tuotantoympäristö | Tuoterakenteet ilman sivustoa: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Tuotannon suunnittelu](production-planning.md) | Tuettu |
 | Tuotantoympäristö | Kysyntä tietyillä määritetyillä tuoterakenne- tai reititysvaatimuksilla: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä kysyntään määritetyt tuoterakenne- tai reititysvaatimukset (kuten alituoterakenne tai myyntitilauksen alireititys) ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Vakiotuoterakennetta tai -reittiä käytetään tähän asetukseen katsomatta. | 2022. lokakuuta |
 | Tuotantoympäristö | Kaavan versiot, joissa on oheis-/sivutuotteita: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä kaavaversioon liittyvät oheistuotteet ja sivutuotteet ohitetaan, kun suunnittelun optimointi on käytössä. | 2022. lokakuuta |

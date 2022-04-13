@@ -1,27 +1,26 @@
 ---
 title: Prioriteettipohjainen suunnittelu
 description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 41c4f3e9bd41735b213743bd8b4cdd8d9657a073
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777886"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468297"
 ---
 # <a name="priority-based-planning"></a>Prioriteettipohjainen suunnittelu
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta. Tämä ominaisuus lisää kysyntäperustaisen suunnittelun tuen, mikä on yksi kysyntäperustaisen tarvelaskennan (DDMRP) vaihe. Prioriteettipohjaisessa suunnittelussa suunnittelun optimointi voi luoda suunnittelun prioriteetteihin eikä tarvepäiviin perustuvia suunniteltuja tilauksia.
 
@@ -63,7 +62,7 @@ Seuraavaa kaavaa käytetään:
 
 Tässä kaavassa *Nettovirran positio* lasketaan seuraavasti:
 
-*Nettovirran positio* = *Saatavilla oleva* + *Tilauksessa* – *Hyväksytty kysyntä*
+*Nettovirran positio* = *Käytettävissä oleva* + *Tilauksessa* – *Hyväksytty kysyntä*
 
 - *Tilauksessa* on odotettu tarjonta.
 - *Hyväksytty kysyntä* ilmaisee nettotarpeet, joiden tarvepäivä on suunnittelun aikarajan sisällä.

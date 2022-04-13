@@ -1,22 +1,22 @@
 ---
 title: Täydennysmenetelmät ja määrän muokkaus
 description: Tässä ohjeaiheessa on tietoja täydennystavoista suunnittelun optimoinnissa. Osassa kerrotaan myös, miten tuotteen usean tilauksen määrä vaikuttaa tulokseen.
-author: ChristianRytt
+author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
 ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 017dabb46265769bf727056a9bf1a8c0cfdc99f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fc7eb00f62b334ba032af6fef87c243a7ba0835a
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567292"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468522"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Täydennysmenetelmät ja määrän muokkaus
 
@@ -70,7 +70,7 @@ Jos määrität tuotteelle useita määriä, *minimi-/maksimimäärä* täydenny
 
 Toisin sanoen suunnittelun optimointi täydentää varastoa määritetylle maksimitasolle, kun käytettävissä olevan varaston arvioitu taso on pienempi kuin määritetty minimitaso. Täydennysmäärän on kuitenkin oltava **Kerrannainen**-arvon kerrannainen.
 
-Jos täydennysmäärä (maksimitason ja arvioidun varastotason välinen ero) ei ole määritetyn usean määrän kerrannainen, suunnittelun optimointi käyttää ensimmäistä mahdollista arvoa, joka yhdessä arvioidun käytettävissä olevan tason kanssa alittaa maksimitason. Jos summa on pienempi kuin vähimmäistaso, suunnittelun optimointi käyttää ensimmäistä arvoa, joka yhdessä arvioidun varastoarvon kanssa on maksimitasoa suurempi.
+Jos täydennysmäärä (maksimitason ja arvioidun käytettävissä olevan varastotason välinen ero) ei ole määritetyn usean määrän kerrannainen, suunnittelun optimointi käyttää ensimmäistä mahdollista arvoa, joka yhdessä arvioidun käytettävissä olevan tason kanssa alittaa maksimitason. Jos summa on pienempi kuin vähimmäistaso, suunnittelun optimointi käyttää ensimmäistä arvoa, joka yhdessä arvioidun varastoarvon kanssa on maksimitasoa suurempi.
 
 Seuraavissa osa-alueen esimerkeissä on esimerkkejä, jotka osoittavat, miten tuotteen usean tilauksen määrä vaikuttaa *minimi-/maksimi*-kentän tulokseen. täydennysmenetelmä.
 

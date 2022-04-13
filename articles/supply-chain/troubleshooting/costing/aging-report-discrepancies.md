@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 27f01858bbd40a92daa9c6183fd41fe13410dc6c
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: cf3f27cb4bc1ba288f3229c0784edb6694ff94e6
+ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7476191"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "8488992"
 ---
 # <a name="inventory-aging-report-discrepancies"></a>Varaston erääntymisraportin ristiriidat
 
@@ -26,4 +26,4 @@ ms.locfileid: "7476191"
 
 ## <a name="resolution"></a>Ratkaisu
 
-Lisätietoja raportointilogiikasta on kohdassa [Varaston erääntymisraporttien esimerkkejä ja logiikka](/dynamics365/supply-chain/cost-management/inventory-aging-report.md).
+Lisätietoja raportointilogiikasta on kohdassa [Varaston erääntymisraporttien esimerkkejä ja logiikka](../../cost-management/inventory-aging-report.md).
