@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.25 (huhtikuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Käyttöympäristöpäivitykset versioon 10.0.24 (helmikuu 2022)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -396,6 +394,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Välityspalvelimien konfigurointi paikallisia ympäristöjä varten
                       href: deployment/onprem-reverseproxy.md
+                    - name: Verkkotulostimien asentaminen paikallisiin ympäristöihin
+                      href: analytics/install-network-printer-onprem.md
                     - name: Paikallisten ympäristöjen diagnostiikka
                       href: deployment/on-premises-diagnostics.md
                     - name: Paikallisen järjestelmäpalautuksen määritys
@@ -496,6 +496,8 @@
                   href: dev-tools/configure-developer-vm.md
                 - name: 'Sovelluskehityksen ja koonnin virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset'
                   href: sysadmin/VMs-no-admin-access.md
+                - name: Ladattavan virtuaalisen kovalevyn määrittäminen ensimmäistä käyttökertaa varten
+                  href: dev-tools/vhd-setup.md
                 - name: Paikallisten ympäristöjen nimeäminen uudelleen Azure DevOps -palvelun käyttämistä varten
                   href: migration-upgrade/vso-machine-renaming.md
                 - name: Kehityksen järjestelmävaatimukset
@@ -1028,7 +1030,9 @@
                   href: lifecycle-services/use-translation-service-tm.md
                 - name: Azure DevOps -laajennus (julkinen esiversio)
                   href: lifecycle-services/dts-devops-extension.md
-        - name: Microsoft Power Platform -integrointi
+                - name: Azure DevOps -laajennuksen opetusohjelma (julkinen esiversio)
+                  href: lifecycle-services/dts-ado-tutorial.md
+        - name: Microsoft Power Platform -integraatio
           items:
             - name: Yleiskatsaus
               href: power-platform/overview.md
@@ -1506,6 +1510,8 @@
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Regression Suite Automation Tool (RSAT) ‑työkalun suorittaminen rinnakkaissuorittamisella
               href: perf-test/rsat/rsat-parallel-execution.md
+            - name: 'RSAT:n integrointi Azure DevOps -jaksojen kanssa'
+              href: perf-test/rsat/rsat-devops-extension.md
             - name: Vianmääritys
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Ratkaisujen vapauttaminen Lifecycle Services -portaalin avulla

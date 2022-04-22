@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Finance
       items:
-        - name: Dynamics 365 Finance -aloitussivu
+        - name: Dynamics 365 Finance – aloitussivu
           href: index.md
         - name: Uudet ja muuttuneet ominaisuudet
           items:
@@ -16,8 +16,6 @@
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (huhtikuu)
                   href: get-started/whats-new-changed-10-0-25.md
-                - name: Finance 10.0.24 (helmikuu)
-                  href: get-started/whats-new-changed-10-0-24.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
@@ -418,14 +416,30 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Laskutusaikataulun kopioiminen
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Laskutusaikataulujen ominaisuudet
+                      href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Tavoitteisiin perustuva laskutus
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Tuki- ja uusimisprosessi
+                      href: accounts-receivable/sb-support-renewals.md
+                    - name: Kuluttajahintaindeksin aikataulut
+                      href: accounts-receivable/cpischedules.md
                     - name: Laskutusaikataulujen lakkauttaminen
                       href: accounts-receivable/terminate-billing-schedule.md
                 - name: Tuotto- ja kululykkäykset
-                  items: null
+                  items:
+                    - name: Tuotto- ja kululykkäysten määrittäminen
+                      href: accounts-receivable/sb-deferrals.md
+                    - name: Lykkäysaikataulut
+                      items:
+                        - name: Lykkäysaikataulujen luominen
+                          href: accounts-receivable/sb-deferrals-schedules.md
+                        - name: Lykkäyksen oletustapahtumat
+                          href: accounts-receivable/sb-deferral-transactions.md
                 - name: Useiden elementtien tuoton kohdistus
-                  items: null
+                  items:
+                    - name: Useiden elementtien tuoton kohdistuksen määrittäminen
+                      href: accounts-receivable/sb-rev-alloc-setup.md
             - name: Maksut ja selvitykset
               items:
                 - name: Asiakkaan maksun yhteenveto
@@ -922,6 +936,8 @@
               items:
                 - name: Tilikartan suunnittelu
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Paikallisen tilikartan suunnittelu
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Päätilit
                   items:
                     - name: Päätilin tyypit
@@ -2288,7 +2304,7 @@
                       href: localizations/emea-fra-fec-audit-file-structure.md
                     - name: 'Ympäristön valmisteleminen FEC:n luomista varten'
                       href: localizations/emea-fra-fec-audit-file-setup.md
-                    - name: FEC-raportin luominen Dynamics 365 Financessa
+                    - name: 'FEC:n luominen Dynamics 365 Financessa'
                       href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: Asiakkaan ja toimittajan tiliotteet
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
@@ -3092,6 +3108,8 @@
                   href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
                 - name: CFDI-versio 3.3
                   href: localizations/latam-mex-cfdi-3-3.md
+                - name: CFDI-versio 4.0
+                  href: localizations/latam-mex-cfdi-4-0.md
                 - name: Asiakkaan rekisteröintitunnukset ja muut tiedot
                   href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
                 - name: DIOT-ilmoitus
@@ -4757,7 +4775,7 @@
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Tapahtumien täsmäyttäminen käyttämällä toimintoa CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Finance and Operations -sovellusten kehittäminen ja hallinnointi
+    - name: Talous- ja toimintosovellusten kehittäminen ja hallinnointi
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
