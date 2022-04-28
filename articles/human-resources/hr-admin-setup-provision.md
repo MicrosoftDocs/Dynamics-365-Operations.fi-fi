@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c856bca32c3dee44469c098961d85b4d8cb70a6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060413"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565625"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -39,6 +39,10 @@ Seuraavien edellytysten on toteuduttava, ennen kuin tuotantoympäristön valmist
 - Yleinen järjestelmänvalvoja on kirjautunut [Microsoft Dynamics Lifecycle Servicesiin](https://lcs.dynamics.com) (LCS) ja luonut uuden Human Resources -projekti. 
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Henkilöstöhallinnon koeympäristön valmistelu
+
+>[!NOTE]
+> Human Resourcesin koeympäristöt eivät ole käytettävissä itsenäisissä sovelluksissa huhtikuussa 2022. Mahdolliset asiakkaat, jotka haluavat arvioida Human Resourcesin ominaisuuksia talous- ja toimintosovellusten avulla, voivat käyttää ilmaista 30 päivän kokeiluversiota ja esittelytietoja. Dynamics 365 Finance sisältää Human Resources -ominaisuudet, jotka tuodaan Finance-infrastruktuuriin yhdistäen itsenäisen sovelluksen. Lisätietoja kohdasta [henkilöstöhallinnon tarjousten yhdistäminen asiakkaille](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Lisätietoja Dynamics 365 Financen kokeiluversioista saat vaiheittaista [oppaasta](/fin-ops/get-started/before-you-buy). 
+
 
 Ennen ensimmäisen tuotantoympäristön tai tuotantoympäristön varausta voit varata [henkilöstöhallinnon koeympäristön](https://go.microsoft.com/fwlink/p/?LinkId=2115962) henkilöstöhallinnon toimintojen tarkistamista varten. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon järjestelmänhallintakokemuksen kautta. 
 

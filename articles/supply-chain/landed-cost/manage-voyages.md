@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 50b6f306da1d32b1fd98da68bd997de1f1c23ffb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 996a8b62b59dd27691a1eaa5ed619f94e899e8cf
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570943"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570419"
 ---
 # <a name="manage-voyages"></a>Hallitse matkoja
 
@@ -66,9 +66,9 @@ Seuraavassa taulukossa kuvataan toiminnot, jotka ovat käytettävissä toimintor
 | Kuljetuksessa | Päivitä **Matkan tila** kuljetustilaksi, joka on **[Aiheutuneen kustannuksen parametrit](landed-cost-parameters.md)** -sivulla. Tätä prosessia ei ole enempää logiikkaa. Matka voidaan päivittää kuljetustilaan myös automaattisesti [Jäljityksen hallintakeskuksen](delivery-information-setup.md) asetusten perusteella.
 | Valmis kustannuslaskentaan | Päivitä **Matkan tila** kustannuslaskentaan valmiiksi tilaksi, joka on **[Aiheutuneen kustannuksen parametrit](landed-cost-parameters.md)** -sivulla. Matkan kustannuslaskenta voidaan suorittaa, kun kaikki laskut on käsitelty (sekä varastolaskut että matkan kustannuslaskut) ja tuotteet on vastaanotettu. Jos matkaan liittyvät arvioitujen kustannusten osalta ei ole suoritettu kustannuslaskentaa, tapahtuu virhe, kun matkan kustannuslaskentaa yritetään suorittaa. |
 | Kustannuslaskenta suoritettu | Korjaa kustannuslaskennan virheet, kun kaikille ostotilauksille ja matkakustannuksille on omat laskunsa. Kun valitset tämän painikkeen, **Matkan päivitys – kustannukset laskettu** -valintaikkuna avautuu. Siinä voit valita kirjauksen oletusrahoituspäivämäärälle tai määrittää kirjauspäivämäärän ja sitten suorittaa toiminnon. Voit suorittaa toiminnon uudelleen haluamasi määrän kertoja. Voit myös käyttää **Matkan päivitys – kustannukset laskettu** -valintaruutua määrittääksesi aikataulun toiminnon säännölliselle suorittamiselle (erätyö). On suositeltavaa suorittaa toiminto säännöllisesti määrittämällä se erätyöksi. |
-| Kirjaa vastaanottoluettelo | Kirjaa vastaanottoluettelo kaikille matkan ostotilausriveille. Jos käytetään usean yrityksen matkoja, kullekin yritykselle avautuu uusi vastaanottoluettelon kirjausvalintaikkuna, joka on käsiteltävä jokaisessa yrityksen osalta. |
-| Kirjaa tuotteen vastaanotto | Kirjaa tuotteen vastaanotto kaikille matkan tilausriveille. Tuotteen vastaanottoprosessia matkaan liittyvien ostotilausrivien osalta käytetään vain, jos tuotteet **eivät** käy läpi kuljetettavien tuotteiden käsittelyä. Jos tuotteet käyvät läpi kuljetettavien tuotteiden käsittelyn, saat virheilmoituksen, kun yrität kirjata ostotilausrivin tuotteen vastaanoton. Jos käytetään usean yrityksen matkoja, kunkin yrityksen osalta avautuu uusi toimitusilmoituksen kirjaamisen valintaikkuna. |
-| Kirjaa lasku | Kirjaa lasku kaikille matkan tilausriveille. Jos matkan tuotteet käyvät läpi kuljetettavien tuotteiden käsittelyn, ostotilausrivit laskutetaan, ennen kuin vastaanottoprosessi on valmis. Kun alkuperäinen ostotilaus laskutetaan, luodaan alkuperäisiin ostotilausriveihin liittyvät kuljetettavien tuotteiden tilaukset. Tämän jälkeen varasto voi vastaanottaa tilaukset. Jos käytetään usean yrityksen lähetyksiä, kunkin yrityksen osalta avautuu uusi laskun kirjaamisen valintaikkuna. |
+| Kirjaa vastaanottoluettelo | Kirjaa vastaanottoluettelo kaikille matkan ostotilausriveille.  |
+| Kirjaa tuotteen vastaanotto | Kirjaa tuotteen vastaanotto kaikille matkan tilausriveille. Tuotteen vastaanottoprosessia matkaan liittyvien ostotilausrivien osalta käytetään vain, jos tuotteet **eivät** käy läpi kuljetettavien tuotteiden käsittelyä. Jos tuotteet käyvät läpi kuljetettavien tuotteiden käsittelyn, saat virheilmoituksen, kun yrität kirjata ostotilausrivin tuotteen vastaanoton.  |
+| Kirjaa lasku | Kirjaa lasku kaikille matkan tilausriveille. Jos matkan tuotteet käyvät läpi kuljetettavien tuotteiden käsittelyn, ostotilausrivit laskutetaan, ennen kuin vastaanottoprosessi on valmis. Kun alkuperäinen ostotilaus laskutetaan, luodaan alkuperäisiin ostotilausriveihin liittyvät kuljetettavien tuotteiden tilaukset. Tämän jälkeen varasto voi vastaanottaa tilaukset.  |
 | Lähetyksen siirtotilaus | Kirjaa siirtotilausmatka kaikille matkan kuljetustilausriveille. Kun tämä painike on valittuna, vain siirtotilauksia voidaan päivittää. |
 | Vastaanota siirtotilaus | Kirjaa siirtotilauksen vastaanotto kaikille matkan kuljetustilausriveille. |
 | Vastaanota matkalla olevat tavarat | Vastaanota kaikki tilausrivit, jotka ovat kuljetettavana matkassa. Tämä painike on yksi kolmesta vaihtoehdosta, joita voi käyttää matkan kuljetettavien tuotteiden vastaanottoon. (Kaksi muuta vaihtoehtoa ovat **Luo saapumisten kirjauskansio** -painike, joka kuvataan myöhemmin tässä taulukossa, sekä varastonhallinnan mobiilisovellus.) Tämä vaihtoehto on yksinkertaisin vaihtoehto, jossa kuljetettavana olevat tuotteet käsitellään kuljetettavien tuotteiden varastosta lopulliseen kohdevarastoon. Jos haluat hallita prosessia tarkemmin, käytä tuotteiden vastaanoton käsittelyyn saapumisten kirjauskansiota tai mobiililaitetta. |
@@ -84,7 +84,7 @@ Seuraavassa taulukossa kuvataan painikkeet, jotka ovat käytettävissä toiminto
 
 | Painike | kuvaus |
 |---|---|
-| Saapumisluettelo | Avaa tuotteiden vastaanottojen luettelo kaikkien matkan ostotilausrivien osalta. Jos käytetään useiden yritysten matkoja, uusi vastaanottoluettelo avautuu kunkin yrityksen osalta. Jos tuotteiden vastaanottoluetteloja ei ole käsitelty, tämä painike ei ole käytettävissä. |
+| Saapumisluettelo | Avaa tuotteiden vastaanottojen luettelo kaikkien matkan ostotilausrivien osalta.  Jos tuotteiden vastaanottoluetteloja ei ole käsitelty, tämä painike ei ole käytettävissä. |
 | Tuotteen vastaanotto | Avaa matkaan liitettyjen ostotilausrivien tuotteiden vastaanottotietue, jos kyseistä tietuetta käytetään. Jos tuotteiden vastaanottoja ei ole kirjattu, tämä painike ei ole käytettävissä. Tuotteen vastaanottoprosessia ei käytetä, jos käytät kuljetettavien tuotteiden käsittelyä. |
 | Nimikkeen saapuminen | Avaa nimikkeen saapumisten kirjauskansio, jos sitä käytetään. |
 | Seuranta | Avaa **Saapuvien jäljitys** -sivu, jolla voit päivittää kuljetuskontissa olevien tuotteiden ja matkan odotettua saapumispäivää sekä sen jälkeen päivittää ostotilausrivien odotettuja toimituspäivämääriä. |

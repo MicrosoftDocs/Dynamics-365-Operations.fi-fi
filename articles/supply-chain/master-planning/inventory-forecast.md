@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469391"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548164"
 ---
 # <a name="inventory-forecasts"></a>Varastoennusteet
 
@@ -39,7 +39,7 @@ Ennusterivejä voi luoda myös muilla tavoin:
 - [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md).
 - [Kysynnän ennusteiden historiatietojen tuonti](import-historical-data.md).
 - [Ennusteen luominen Microsoft Azure automaattianalyysipalveluiden avulla](demand-forecasting-setup.md).
-- [Tuo kysyntä- tai tarjontaennusterivejä käyttämällä tietohallintakehystä (ForecastDemandForecastEntryStaging- ja ForecastSupplyForecastEntryStaging-tietoentiteetit)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+- [Tuo kysyntä- tai tarjontaennusterivejä käyttämällä tietohallintakehystä (ForecastDemandForecastEntryStaging- ja ForecastSupplyForecastEntryStaging-tietoentiteetit)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 Vaiheen 1 taulukossa näkyvät eri tavat käyttää käytettyjä sivuja.
 

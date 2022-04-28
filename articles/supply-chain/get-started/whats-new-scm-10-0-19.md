@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: f0f1830c9f667d617b8aae28e61a8e541b17c77f
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920570"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570322"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Dynamics 365 Supply Chain Managementin version 10.0.19 uudet tai muuttuneet ominaisuudet (kesäkuu 2021)
 
@@ -50,7 +50,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukse
 
 | Moduuli | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
-| Myynti ja markkinointi | Myyntihistorian poistamisen suorituskyvyn parannukset | Myyntihistorian poistaminen voi kestää kauan, jos sitä ei suoriteta säännöllisesti ympäristöissä, joissa myyntipäivityksiä on paljon. Voit vähentää kestoa ja parantaa luotettavuutta ja jakaa sitten puhdistuserät, jotka suoritetaan rajoitetun keston ajan. Jos mahdollista, tietokantaominaisuudet suorituskykykertoimella voidaan vähentää lukitusta ja välttää tapahtumatauluihin liittyminen puhdistusta varten. Lisätietoja on kohdassa [Myyntihistorian tyhjennyksen suorituskyvyn parannukset](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
+| Myynti ja markkinointi | Myyntihistorian poistamisen suorituskyvyn parannukset | Myyntihistorian poistaminen voi kestää kauan, jos sitä ei suoriteta säännöllisesti ympäristöissä, joissa myyntipäivityksiä on paljon. Voit vähentää kestoa ja parantaa luotettavuutta ja jakaa sitten puhdistuserät, jotka suoritetaan rajoitetun keston ajan. Jos mahdollista, tietokantaominaisuudet suorituskykykertoimella voidaan vähentää lukitusta ja välttää tapahtumatauluihin liittyminen puhdistusta varten. Lisätietoja on kohdassa [Ajoita myyntihistorian tietojen puhdistus](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Myynti ja markkinointi | Päivitä pyydetty vastaanottopäivämäärä vahvistetulla päivämäärällä konsernin sisäisille tilauksille | Tämän ominaisuuden avulla voit ohjata, mitä tapahtuu myynti- ja ostopäivämäärän kenttien arvoille käytettäessä konsernin sisäistä suoraa toimitusta. Voit valita, päivittääkö järjestelmä pyydetyt päivämäärät vai jättääkö se ne päivittämättä. Jos ohitat päivityksen, pyydetyt päivämäärät edustavat sitä, mitä asiakas on pyytänyt. Jos otat päivityksen käyttöön, pyydetyt päivämäärät (kun käytetään toimituspäivämäärän hallintaa) edustavat vain aluksi sitä, mitä asiakas pyysi. Jos toimituspäivän ohjaus eroaa *Ei mitään* -päivästä, se ohita alun perin pyydetyn päivämäärän. Voit asettaa tämän vaihtoehdon käyttämällä **uutta päivityspyynnön vastaanottopäivää ja Vahvistettu päivämäärä** -asetusta yrityksen sisäisissä toimittajissa tai asiakasasetuksissa.<br><br>Jos toiminto ei ole käytössä, järjestelmä korvaa alkuperäisen myyntitilauksen pyydetyn vastaanottopäivämäärän toimituspäivän valvontasäännön perusteella, mutta pyydetty lähetyspäivämäärä säilyy ennallaan. |
 | Varastonhallinta   | Pyöristä määrät alaspäin lähimpään myyntiyksikköön varastoon vapautuksen yhteydessä | Tämä ominaisuus lisää vaihtoehdon, joka voi rajoittaa vapautusten tilausmääriä varastoon. Kun avain on käytössä, tilausmäärät pyöristetään alaspäin lähimpään kokonaislukuun, ja tilaukset, joissa on vähemmän kuin yhden myyntiyksikön määriä, hylätään vapautusta varten. |
 | Varastonhallinta   | Organisaation laajuinen Työn luonti -aikataulun aaltomenetelmä | Ottamalla tämän ominaisuuden käyttöön *Ajoita työn luonti* -aaltomenetelmä määritetään toimimaan rinnakkain kaikkien yritysten välillä. Tämä vaikuttaa myös useisiin lisäasetuksiin. Täydelliset tiedot ovat kohdassa [Työn luonnin aikatauluttaminen aallon aikana](../warehousing/configure-wave-schedule-work-creation.md). |
@@ -70,9 +70,9 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (kesäkuu 2021) käyttöympäristön päivitysversio 10.0.19](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (kesäkuu 2021) käyttöympäristön päivitysversio 10.0.19.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

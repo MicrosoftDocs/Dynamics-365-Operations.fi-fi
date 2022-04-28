@@ -2,7 +2,7 @@
 title: Tietoja kirjanpidon selvityksestä ja tilinpäätöksestä
 description: Tässä ohjeaiheessa on tietoja parannuksista, jotka vaikuttavat kirjanpidon selvityksiin ja kirjanpidon vuoden lopun sulkemiseen.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462349"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553329"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Tietoja kirjanpidon selvityksestä ja tilinpäätöksestä
 
@@ -48,12 +48,16 @@ Kirjanpidon tilitykseen ja vuoden lopun sulkemiseen tehtiin muutoksia uusien par
 
 Toimintojen ja tietomallin muutosten vuoksi on tärkeää ottaa huomioon seuraavat seikat, ennen kuin otat ominaisuuden käyttöön:
 
+- Koska vain selvitettyjä tapahtumia tuodaan eteenpäin alkusaldoon, tilivuoden tapahtumat on tilitetty edellisen tilikauden tapahtumien kanssa. Tapahtumat tulee kuitata kuluvan tilikauden tapahtumia vastaan. Tämä voidaan tehdä tekemällä oikaisukirjaus kuluvalle tilikaudelle. Oikaisu palauttaa yhteenvedon alkusaldoista ja vastakirjauksista yksityiskohtaisilla tapahtumilla, jotka ovat tarpeen kuluvan vuoden kirjanpitomerkintöjen selvittämiseen. 
+
+  > [!IMPORTANT]
+  > Jos näin ei tehdä, saat **väärä saldo** -virheen, kun suoritat tilivuoden vuoden lopun. Jos kirjanpitotapahtumia, joilla on sama tilivuosi, ei ole mahdollista poistaa käytöstä ja palauttaa, älä ota tätä toimintoa käyttöön, ennen kuin vuoden sulkeminen on valmis. Ota toiminto käyttöön heti vuoden lopun sulkemisen jälkeen ja ennen kuin seuraavan tilikauden uudet kirjanpitotapahtumat selvitetään. 
+  
 - Kaikista tilitykseen merkityistä tapahtumista, joita ei ole vielä selvitetty, poistetaan merkintä automaattisesti, kun ominaisuus otetaan käyttöön. Voit estää työn menettämisen selvittämällä kaikki merkityt tapahtumat, ennen kuin otat ominaisuuden käyttöön.
 - Osa organisaatioista suorittaa vuoden lopun sulkemisen useita kertoja saman tilivuoden osalta. Älä ota toimintoa käyttöön, jos vuoden sulkeminen on jo kerran suoritettu ja suoritetaan uudelleen samalle tilivuodelle. Ominaisuus on otettava käyttöön ennen ensimmäistä vuoden sulkemista tai tilivuoden viimeisen vuoden sulkemisen suorituksen jälkeen.
 
   Jos haluat ottaa toiminnon käyttöön, mutta vuoden sulkeminen on jo kerran suoritettu, vuoden sulkeminen on peruutettava, ennen kuin ominaisuus voidaan ottaa käyttöön.
 
-- Koska selvitys tilivuosien välillä ei ole enää sallittua, on suositeltavaa ottaa toiminto käyttöön ennen vuoden lopun sulkemisprosessin aloittamista. Voit varmistaa, että edelliset tilivuosien väliset tilitykset eivät vaikuta seuraavan tilikauden alkusaldoihin, kun avaussaldotapahtuma tilitetään suljettavalle tilikaudelle.
 - Koska päätilien välinen selvitys ei ole enää sallittua, oikaise tilikartta tai prosessit tarpeen mukaan ja varmista, että kirjanpidon tilitys voidaan tehdä samalla päätilillä.
 - Toimintoa ei voi ottaa käyttöön, jos käytössä on julkisen sektorin vuoden sulkemisprosessi.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524518"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547785"
 ---
 # <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
 
@@ -51,9 +51,10 @@ Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominai
 
 | Ominaisuuksien hallinnan nimi | Kuvaus |
 |---|---|
-| OnHandReservation | Tämä ominaisuus auttaa sinua luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md). |
-| OnHandMostSpecificBackgroundService | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
-| OnhandChangeSchedule | Ominaisuus ottaa käyttöön käytettävissä olevan vaihtoaikataulun ja luvattavissa olevan määrän (ATP) ominaisuudet (valinnainen). Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulut ja luvattavissa olevat aikataulut](inventory-visibility-available-to-promise.md). |
+| *OnHandReservation* | Tämä ominaisuus auttaa sinua luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md). |
+| *OnHandMostSpecificBackgroundService* | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnhandChangeSchedule* | Tämä valinnainen ominaisuus ottaa käyttöön käytettävissä olevan vaihtoaikataulun ja luvattavissa olevan määrän (ATP) ominaisuudet. Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulu ja luvattavissa ole aikataulu](inventory-visibility-available-to-promise.md). |
+| *Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys tukee nimikkeitä, jotka on otettu käyttöön varaston lisäprosesseissa (WHS-nimikkeet). Lisätietoja on kohdassa [Varaston näkyvyyden tuki WHS-nimikkeille](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Palvelun päätepisteen etsiminen
 
@@ -61,7 +62,7 @@ Jos oikea varaston näkyvyyspalvelun päätepiste ei ole tiedossa, avaa **Määr
 
 ## <a name="data-source-configuration"></a>Tietolähteen määritykset
 
-Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 Finance- ja toimintosovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
+Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 talous- ja toimintosovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
 
 > [!NOTE]
 > `fno`-tietolähde on varattu Supply Chain Managementia varten. Jos varaston näkyvyyden lisäosa on integroitu Supply Chain Management -ympäristöön, on suositeltavaa, ettei `fno`-tietolähteeseen liittyviä konfiguraatioita poisteta.

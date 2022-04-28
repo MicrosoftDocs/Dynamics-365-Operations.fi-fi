@@ -5,16 +5,16 @@ author: andosip
 ms.date: 11/09/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: kfend
 ms.search.validFrom: ''
-ms.openlocfilehash: 9564892f768adb8f48208fe10b31c7c6392a4567
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: fbacc204208e536291035c6f9bb2ef4fa4038f58
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779904"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566088"
 ---
 # <a name="polish-intrastat"></a>Puolan Intrastat
 
@@ -430,7 +430,7 @@ Seuraavien ER-määritysten uusin versio on tuotava:
     <p>Päivämäärä, jona tiedosto on luotu.</p>
     </td>
     <td>
-    <p>10.19.2021</p>
+    <p>19.10.2021</p>
     </td>
     </tr>
     <tr>
@@ -866,7 +866,7 @@ Seuraavien ER-määritysten uusin versio on tuotava:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Tietoja asiakirjasta</strong></p>
+    <p align=center><strong>Tietoja asiakirjasta</strong></p>
     </td>
     </tr>
     <tr>
@@ -1014,7 +1014,7 @@ Seuraavien ER-määritysten uusin versio on tuotava:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Tietoja yrityksestä</strong></p>
+    <p align=center><strong>Tietoja yrityksestä</strong></p>
     </td>
     </tr>
     <tr>
@@ -1085,7 +1085,7 @@ Seuraavien ER-määritysten uusin versio on tuotava:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Tietoja tavarasta</strong></p>
+    <p align=center><strong>Tietoja tavarasta</strong></p>
     </td>
     </tr>
     <tr>
@@ -1211,7 +1211,7 @@ Seuraavien ER-määritysten uusin versio on tuotava:
     </tr>
     <tr>
     <td colspan="3">
-    <p style="text-align: center;"><strong>Yhteystiedot</strong></p>
+    <p align=center><strong>Yhteystiedot</strong></p>
     </td>
     </tr>
     <tr>

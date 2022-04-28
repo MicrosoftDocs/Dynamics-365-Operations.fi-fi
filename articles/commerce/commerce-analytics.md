@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349740"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550004"
 ---
 # <a name="commerce-analytics-preview"></a>Commercen analytiikka (esiversio)
 
@@ -352,15 +352,20 @@ Tällä hetkellä tuotteita, jotka hahmonnetaan karusellimoduulissa tai mukautet
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Commercen analytiikan (esiversio) ottaminen käyttöön ja määrittäminen
 
-Jos haluat asentaa Commercen analytiikan (esiversio), sinulla on oltava käyttöoikeudet resurssien luontia varten Azure-tilauksessa. Sinulla on oltava myös käyttöoikeudet, jotta voit asentaa lisäosia LCS:ssä. 
+Jos haluat asentaa Commercen analytiikan (esiversio), sinulla on oltava käyttöoikeudet resurssien luontia varten Azure-tilauksessa. Sinulla on oltava myös käyttöoikeudet, jotta voit asentaa lisäosia LCS:ssä.
 
 Voit ottaa käyttöön ja määrittää Commercen analytiikka (esiversio) -ominaisuuden seuraavasti.
 
-1. [Data Lake -viennin lisäosan käyttöönotto ja määritys](#enableExportToDataLake).
-1. [Azure Synapse workspacen asentaminen ja konfiguroiminen](#configureAzureSynapse).
-1. [Lisää salasanat Key Vaultiin](#addSecrets).
-1. [Commercen analytiikka (esiversio) -lisäosan ottaminen käyttöön ja määrittäminen](#enableCommerceAnalyticsAddin).
-1. [Power BI -mallisovelluksen asentaminen](#powerbi).
+1. [Lähetä Commercen analytiikan (esiversio) esiversion sisäänottolomake](#joinPreview)
+2. [Data Lake -viennin lisäosan käyttöönotto ja määritys](#enableExportToDataLake).
+3. [Azure Synapse workspacen asentaminen ja konfiguroiminen](#configureAzureSynapse).
+4. [Lisää salasanat Key Vaultiin](#addSecrets).
+5. [Commercen analytiikka (esiversio) -lisäosan ottaminen käyttöön ja määrittäminen](#enableCommerceAnalyticsAddin).
+6. [Power BI -mallisovelluksen asentaminen](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Lähetä Commercen analytiikan (esiversio) esiversion sisäänottolomake
+
+Lähetä [Commercen analytiikan (esiversio) esiversion sisäänottolomake](https://forms.office.com/r/vW5VLJGXZ2). Kun pyyntösi on käsitelty, lomakkeessa antamaasi sähköpostiosoitteeseesi lähetetään vahvistussähköposti.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Data Lake -viennin lisäosan käyttöönotto ja määritys
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "7986355"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565996"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Meksikon sähköisen laskutuksen käytön aloittaminen
 
@@ -141,7 +141,7 @@ CFDI-laskun peruutuksen lähettämiseen vaaditaan toimintomääritykset **Peruut
 1. Voit hallita muuttujia valitsemalla **Toimintoversion määritys** -sivun **Muuttujat**-välilehdessä muuttujan nimen **DigitalSignatureXSLT**.
 2. Kirjoita **Arvot**-kenttään: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
    
-    missä: <RelativePath> = kansio\\kansio\\tiedostonimi, jossa on kaksi kenoviivaa ContainerName-nimen on osoitettava palvelussa käytettävää säilöä.
+    missä: \<RelativePath\> = kansio\\kansio\\tiedostonimi, jossa on kaksi kenoviivaa ContainerName-nimen on osoitettava palvelussa käytettävää säilöä.
    
     Muuttujan esimerkki:
     

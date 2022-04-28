@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920197"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570475"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Dynamics 365 Supply Chain Management 10.0.23:n uudet tai muuttuneet ominaisuudet (tammikuu 2022)
 
@@ -57,7 +57,7 @@ Jos haluat ottaa näitä ominaisuuksista käyttöön tai poistaa niitä käytös
 | Hankinta | Tyhjennä ostotilauksen päivityshistoria | Tämän ominaisuuden avulla voit puhdistaa ostotilausten päivityksiin liittyvät väliaikaiset historiatietueet. Se lisää uuden **Puhdista ostopäivityshistoria** -painikkeen **Kaikki ostotilaukset** -sivun toimintoruutuun. Tämä ominaisuus on oletusarvoisesti käytössä. |
 | Tuotannonhallinta | (Esiversio) Varastomateriaalien automaattinen keräily automaattisesti kirjattuja keräysluetteloita varten | Tämän ominaisuuden avulla voidaan tehdä keräily automaattisesti ja ratkaista varastodimensiot automaattisesti kirjattuja, jaettuja ja jälkikustannuslaskennassa olleita keräysluettelon kirjauskansioita varten. |
 | Tuotannonhallinta | Raaka-aineiden vanhenemisen tarkistaminen suunnitellun käyttöpäivän perusteella | Tämä ominaisuus muuttaa sitä, miten erien vanhanemispäivät tarkistetaan, kun raaka-aine-erä varataan käytettäväksi tuotannossa. Kun tämä ominaisuus on käytössä, erän vanhenemispäivä tarkistetaan tuotannon tuoterakennerivillä tai erätilauksen kaavarivillä esitetyn suunnitellun käyttöpäivämäärän (eli raaka-ainepäivämäärään) perusteella. Kun tämä ominaisuus ei ole käytössä, erän vanhentumispäivä tarkistetaan tuotannon tai erätilauksen suunnitellun toimituspäivän perusteella (kuten aiemmin). |
-| Myynti ja markkinointi | Myynnin päivityshistorian tyhjentäminen iän perusteella | Tällä toiminnolla voi määrittää säilytettävien tietueiden enimmäisiän, kun kausittainen **Myynnin päivityshistorian puhdistus**-tehtävä suoritetaan. Määritystä vanhemmat tietueet poistetaan. Tämä on kätevää, kun tehtävä määritetään suoritettavaksi kausittain, sillä ikä lasketaan aina suhteessa päivään, jolloin tehtävä suoritetaan. Ilman tätä toimintoa vanhimmille säilytettäville tietueille voidaan vain määrittää tietty päivämäärä. |
+| Myynti ja markkinointi | Myynnin päivityshistorian tyhjentäminen iän perusteella | Tällä toiminnolla voi määrittää säilytettävien tietueiden enimmäisiän, kun kausittainen **Myynnin päivityshistorian puhdistus**-tehtävä suoritetaan. Määritystä vanhemmat tietueet poistetaan. Tämä on kätevää, kun tehtävä määritetään suoritettavaksi kausittain, sillä ikä lasketaan aina suhteessa päivään, jolloin tehtävä suoritetaan. Ilman tätä toimintoa vanhimmille säilytettäville tietueille voidaan vain määrittää tietty päivämäärä. Lisätietoja on kohdassa [Ajoita myyntihistorian tietojen puhdistus](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Myynti ja markkinointi | Paranna 100 parasta -asiakasraportin suorituskykyä | Tämä ominaisuus parantaa **100 parasta** -asiakasraportin suorituskykyä siten, että se suoritetaan aina kaikille asiakkaille (niin kuin se on tarkoitettukin) mukautettujen kyselyjen sallimisen sijaan. Kun tämä ominaisuus on käytössä, kaikki **Sisällytettävät tietueet** -asetukset poistetaan käytöstä **100 parasta** -raporttivalintaikkunassa. |
 | Varastonhallinta   | Lähtevien tilausten varastoon vapauttamisen asteikon yksikön tuki | Kun tämä ominaisuus on otettu käyttöön, lähtevät tilaukset voidaan vapauttaa suoraan keskuksesta scale unitiin, josta tilaukset täytetään. |
 
@@ -79,9 +79,9 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (marraskuu 2021) käyttöympäristön päivitysversio 10.0.23](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 sisältää Platform updateja. Lisätietoja on kohdassa [rahoitus- ja toiminta -sovellusten (marraskuu 2021) käyttöympäristön päivitysversio 10.0.23.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

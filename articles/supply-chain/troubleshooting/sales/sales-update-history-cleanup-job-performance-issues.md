@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 371a8c7178cd7c5091d6dd9a91d0ee03b943a269
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 124fb90ecafd4f4cccbd8a8bb443694c95365732
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103185"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570307"
 ---
 # <a name="sales-update-history-cleanup-job-fails-or-has-performance-issues"></a>Myynnin päivityshistorian puhdistustyö epäonnistuu tai siinä on suorituskykyyn liittyviä ongelmia
 
@@ -30,5 +30,5 @@ Näin voi tapahtua, kun järjestelmäsi sisältää useita myyntipäivityksiä, 
 
 ## <a name="resolution"></a>Ratkaisu
 
-Uusi versio **Myynnin päivityshistorian puhdistus** -erätyöstä on käytettävissä Supply Chain Management -versiolle 10.0.19 ja sitä uudemmille versioille. Tämä ominaisuus on oletusarvoisesti pois käytöstä. Tietoja siitä, miten toiminto toimii ja miten se otetaan käyttöön ominaisuuksien hallinnassa, on kohdassa [Myyntihistorian puhdistuksen suorituskyvyn parannukset](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
+Uusi versio **Myynnin päivityshistorian puhdistus** -erätyöstä on käytettävissä Supply Chain Management -versiolle 10.0.19 ja sitä uudemmille versioille. Tämä ominaisuus on oletusarvoisesti pois käytöstä. Tietoja siitä, miten toiminto toimii ja miten se otetaan käyttöön ominaisuuksien hallinnassa, on kohdassa [Myyntihistorian tietojen puhdistuksen ajoittaminen](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
 

@@ -2,7 +2,7 @@
 title: Sivuston valitsinmoduuli
 description: Tässä ohjeaiheessa käsitellään sivuston valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 02/11/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109703"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551691"
 ---
 # <a name="site-picker-module"></a>Sivuston valitsinmoduuli
 
@@ -28,14 +28,9 @@ ms.locfileid: "8109703"
 
 Tässä ohjeaiheessa käsitellään sivuston valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
-Jos yrityksellä on useita sivustoja eri markkinoilla, alueilla ja kielialueilla, sivuston käyttäjät tarvitsevat kätevän tavan vaihdella sivustoja ja valitse ensisijaisen ostossivuston. Tätä skenaariota varten käyttäjät voivat selata useita sivustoja sivuston valitsinmoduulin ansiosta.
+Jos yrityksellä on useita sivustoja eri markkinoilla, alueilla ja kielialueilla, sivuston käyttäjät tarvitsevat kätevän tavan vaihdella sivustoja ja valitse ensisijaisen ostossivuston. Tätä skenaariota varten käyttäjät voivat selata useita sivustoja sivuston valitsinmoduulin ansiosta. Sivuston valitsinta suositellaan myös silloin, kun sähköpostiosoitteessa on otettu käyttöön [Sivuston tunnistus ja uudelleenohjaus](geo-detection-redirection.md), jotta asiakkaat voivat ohittaa [maan tai alueen valinta](country-region-picker-module.md) -moduulin avulla ilmaisemiaan toimipaikka-asetusta. 
 
-Sivuston valitsinmoduuli on määritettävä käyttämällä sivustoluetteloa (markkinat, alueet tai kielialueet), jota sivuston käyttäjät voivat selata.
-
-> [!NOTE]
-> Sivuston valitsinmoduuli on käytettävissä Dynamics 365 Commercen versiossa 10.0.14.
-
-Seuraavassa kuvassa on esimerkki sivuston sivun otsikossa olevasta sivuston valitsinmoduulista.
+Sivuston valitsinmoduuli on määritettävä käyttämällä sivustoluetteloa (markkinat, alueet tai kielialueet), jota sivuston käyttäjät voivat selata. Seuraavassa kuvassa on esimerkki sivuston sivun otsikossa olevasta sivuston valitsinmoduulista.
 
 ![Esimerkki sivuston valitsinmoduulista sivuston sivun otsikossa.](./media/ecommerce-sitepicker.PNG)
 

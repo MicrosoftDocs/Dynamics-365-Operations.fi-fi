@@ -2,7 +2,7 @@
 title: Verolaskennan aloittaminen
 description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää verolaskennan.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952518"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558310"
 ---
 # <a name="get-started-with-tax-calculation"></a>Verolaskennan aloittaminen
 
@@ -36,7 +36,7 @@ Asetukset koostuvat kolmesta päävaiheesta.
 
 ## <a name="high-level-design"></a>Korkean tason rakenne
 
-### <a name="runtime-design"></a>Suorituksenaikainen rakenne
+### <a name="runtime-design"></a><a name="runtime"></a> Suorituksenaikainen rakenne
 
 Seuraavassa kuvassa esitellään verolaskennan korkean tason suorituksenaikainen rakenne. Koska verolaskenta voidaan integroida useisiin Dynamics 365 -sovelluksiin, havainnollistuksessa käytetään esimerkkinä Finance-integrointia.
 
@@ -95,6 +95,14 @@ Ennen kuin voit suorittaa tämän ohjeaiheen loput vaiheet, seuraavien edellytys
 - Seuraavat toiminnot on otettava käyttöön käyttöönotetun RCS-ympäristön **Ominaisuuksien hallinta** -työtilassa.
 
     - Globalisaatio-ominaisuudet
+
+- Seuraavien roolien tulee olla määritettyinä käyttäjille RCS-ympäristössäsi:
+
+    - Sähköisen raportoinnin kehittäjä
+    - Globalisaatio-ominaisuuden kehittäjä
+    - Veromoduulin kehittäjä
+    - Veromoduulin toiminnallinen konsultti
+    - Veropalvelun kehittäjä
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>Määritä verolaskenta LCS:ssä
 
@@ -203,6 +211,9 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     | Myynti            | DEU       | FRA     | DEU_EU       |
     | Myynti            | BEL       | BEL     | BEL_Domestic |
     | Myynti            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Jos verotettavan asiakirjan rivien oletusarvoinen arvonlisäveroryhmä on oikein, jätä tämä matriisi tyhjäksi. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Suorituksenaikainen rakenne](#runtime).
 
 22. Valitse **Nimikkeen veroryhmän käytettävyys** -välilehdessä sarakkeet, joita tarvitaan oikean verokoodin määrittämiseen, ja valitse sitten **Lisää**. Määritä tai valitse arvot kullekin sarakkeelle. **Nimikkeen veroryhmä** -kenttä on tämän matriisin tuotos. Jos tätä välilehteä ei määritetä, tapahtumarivin nimikkeen arvonlisäveroryhmää käytetään.
 
@@ -212,6 +223,9 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     | --------- | -------------- |
     | D0001     | Täysi           |
     | D0003     | Vähennetty        |
+
+    > [!NOTE]
+    > Jos verotettavan nimikeasiakirjan rivien oletusarvoinen arvonlisäveroryhmä on oikein, jätä tämä matriisi tyhjäksi. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Suorituksenaikainen rakenne](#runtime).
 
     Lisätietoja verokoodien määrittämisestä verolaskennassa on kohdassa [Arvolisäveroryhmän ja nimikkeen arvonlisäveroryhmän määrityslogiikka](global-sales-tax-group-determination.md).
 

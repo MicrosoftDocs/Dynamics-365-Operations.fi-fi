@@ -4,7 +4,8 @@ description: Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koske
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,24 +17,24 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712565"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566036"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikallinen). Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta. Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.
+Voit ottaa käyttöön Dynamics 365 Finance + Operations (on-premises) -ratkaisun. Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta. Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.
 
 ## <a name="get-started"></a>Aloittaminen
 - [Paikallinen käyttöönotto – yleiskatsaus](on-premises-overview.md)
 - [Paikallisten käyttöönottojen suunnittelu ja valmistelu](plan-onprem-deployment.md)
 - [Paikallisten käyttöönottojen järjestelmävaatimukset](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Microsoft Dynamics 365 Finance + Operations (on-premises) tuettu ohjelmisto](onprem-compatibility.md)
+- [Microsoft Dynamics 365 Finance + Operations (on-premises) -ratkaisun tukemat ohjelmistot](onprem-compatibility.md)
 - [Laitteiston kokovaatimukset paikallisissa ympäristöissä](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Osta Finance and Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Pilvipalvelun ja paikallisten ominaisuuksien vertailu](../../fin-ops/get-started/cloud-prem-comparison.md)
@@ -52,7 +53,7 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Asiakirjan luonti, julkaiseminen ja tulostaminen paikallisissa ympäristöissä](../analytics/printing-capabilities-on-premises.md)
 - [Välityspalvelimien määrittäminen paikallisiin ympäristöihin](onprem-reverseproxy.md)
-- [Teknisen tuen määrittäminen Finance and Operations -sovelluksille](../lifecycle-services/support-experience.md)
+- [Finance and Operations -sovellusten teknisen tuen määrittäminen](../lifecycle-services/support-experience.md)
 - [Asiakasohjelman Internet-yhteys](../user-interface/client-disconnected.md)
 - [Päivitysten käyttöönotto paikallisissa ympäristöissä](apply-updates-on-premises.md)
 - [Käyttöönotto uudelleen paikallisissa ympäristöissä](redeploy-on-prem.md)

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752805"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548077"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operationsin version 1611 uudet tai muuttuneet ominaisuudet (marraskuu 2016)
 
@@ -816,7 +816,7 @@ Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovell
 | Toimittaja saa tiedon luovutetun varaston määrästä, joka siirretään asiakkaalle | Voidakseen laskuttaa asiakasta toimittaja tarvitsee tiedot raaka-aineista, jotka on ostettu luovutetusta varastosta, ja ostopäivämäärän. Toimittaja voi myös valvoa asiakkaan toimipaikalla käytettävissä olevaa varastoa toimittajayhteistyöliittymällä. |
 | Toimittajan omistaman varaston siirtäminen siirtokirjauskansion avulla | Jotta toimittajan omistamaa varastoa voidaan seurata, fyysinen sijainti järjestelmässä pitää pystyä kirjaamaan. Käyttämällä siirtokirjauskansiota voit tallentaa varaston fyysisen siirtämisen, kuten siirto varastopaikasta toiseen varastopaikkaan. |
 | Toimittajan omistaman varaston oikaisu siirtokirjauskansion avulla | On tärkeää pitää järjestelmän käytettävissä oleva varasto synkronoituna todellinen fyysisen varaston kanssa. Toimittajan omistama varasto voidaan oikaista käyttämällä inventointiprosesseja, kuten määrän muutos ja inventoinnin kirjauskansio. |
-| Lisätietoja Dynamics 365 for Operationsin tavaralähetyksen tuesta | Lisätietoja tavaralähetysprosessien tuesta on kohdassa [Tavaralähetys](../../../supply-chain/inventory/consignment.md), [Tavaralähetyksen määrittäminen](../../../supply-chain/inventory/set-up-consignment.md), [Luo tavaralähetyksen täydennystilaus (tehtäväopas)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) ja [Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella (tehtäväopas)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Lisätietoja Dynamics 365 for Operationsin tavaralähetyksen tuesta | Lisätietoja tavaralähetysprosessien tuesta on kohdassa [Tavaralähetys](../../../supply-chain/inventory/consignment.md), [Tavaralähetyksen määrittäminen](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Luo tavaralähetyksen täydennystilaus (tehtäväopas)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) ja [Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella (tehtäväopas)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Toimittajayhteistyö (aiemmin Toimittajaportaali)
 
@@ -942,7 +942,7 @@ Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovell
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Uudet ja muuttuneet ominaisuudet Finance and Operationsin aloitussivulla](whats-new-changed.md)
+[Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

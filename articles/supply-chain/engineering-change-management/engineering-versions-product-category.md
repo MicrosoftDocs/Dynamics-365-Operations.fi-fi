@@ -2,7 +2,7 @@
 title: Suunnitteluversiot ja suunnittelun tuoteluokat
 description: Tässä aiheessa käsitellään suunnitteluversiota koskevia tietoja. Suunnitteluversioilla voidaan varmistaa, että tuotteen eri tilat ja sen tiedot pysyvät ajan tasalla ja selkeinä ja että ne voidaan visualisoida järjestelmässä.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572886"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553359"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Suunnitteluversiot ja suunnittelun tuoteluokat
 
@@ -137,7 +137,7 @@ Määritä seuraavat kentät jokaiselle ruudukkoon lisättävälle riville.
 |---|---|
 | Nimi | Valitse lisättävä määrite. |
 | Arvo | Valitse määritteen oletusarvo. |
-| Pakollinen | Jos *Totuusarvo*-tyypin määritteiden asetuksena on *Kyllä*, käyttäjien on määritettävä määritteen asetukseksi *Kyllä*. Jos tämän vaihtoehdon asetuksen on *Ei*, käyttäjät voivat määrittää määritteen asetukseksi *Kyllä* tai *Ei*. Muissa tietotyypissä tämän vaihtoehdon asetus on vain tiedoksi. |
+| Pakollinen | Valitse, onko määrite pakollinen. Tämä tarkoittaa sitä, että käyttäjien on määritettävä määritteelle kelvolliset arvot, ennen kuin he voivat tallentaa tuotteen. Tämän asetuksen vaikutus määräytyy hieman valitun määritteen tietotyypin mukaan seuraavassa luettelossa määritetyn mukaisesti.<ul><li>**Totuusarvo** – Määritä tämä arvoksi *Kyllä*, jos haluat, että määritteen arvona on *Kyllä* (järjestelmä hylkää tuotteen tallentamisen, jos määritteen arvo on *Ei*). Määritä asetukseksi *Ei*, jos mikä tahansa *Kyllä*- tai *Ei*-arvo hyväksytään. (Tyypin määrite *totuusarvolla* ei voi olla tyhjää arvoa.)</li><li>**Kokonaisluku tai desimaali** – Määritä arvoksi *Kyllä,* jos käyttäjien edellytetään kirjoittavan määritteen arvoksi ei-nolla. Valitse *Ei*, jos käyttäjät saavat tallentaa nolla-arvolla.  (Näiden tyyppien määrite totuusarvolla ei voi olla tyhjä arvo.)</li><li>**Luettelo** – Luetteloiden tietotyyppi on *Teksti*, mutta sisältää myös ennalta määritetyn luettelon mahdollisista arvoista. Siksi tämän tyypin määritteitä varten ei voi syöttää tyhjää arvoa, joten tällä asetuksella ei ole vaikutusta, vaan vain tiedot.</li><li>**Kaikki muut tietotyypit** – Määritä tämä arvoksi *Kyllä,* jos haluat tehdä määritteen pakolliseksi. Valitsemalla tämän kentän arvoksi *Ei* voit sallia, että käyttäjät voivat tallentaa tuotteen ilman, että tälle määritteelle määritetään arvoa.</li></ul> |
 | Erämäärite | Valitse, levitetäänkö määrite erätoiminnolla. |
 
 ### <a name="readiness-policy-fasttab"></a>Valmiuskäytäntö-pikavälilehti

@@ -2,19 +2,19 @@
 title: Taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusongelmien vianmääritys
 description: Tässä ohjeaiheessa on vianmääritys tietoja, joiden avulla voit korjata taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusmoduulin ongelmia.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061805"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565963"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusongelmien vianmääritys
 
@@ -70,6 +70,21 @@ Näyttöön saattaa tulla seuraava virhesanoma, kun yrität pysäyttää tauluje
 Tämä virhe ilmenee, kun linkitetty Dataverse -ympäristö ei ole käytettävissä.
 
 Voit korjata ongelman luomalla pyynnön tietojen integrointitiimille. Liitä verkon jäljitys, jotta tietojen integrointiryhmä voi merkitä karttojen tilaksi **Ei käynnissä** taustalla.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Rinnakkaiskäsittelyn käyttöönotto talous- ja toimintosovelluksissa suorituskyvyn parantamiseksi
+
+Rinnakkaisen käsittelyn käyttöönotto saattaa lyhentää aikaa, joka tarvitaan tietojen tuontiin talous- ja toimintosovelluksista customer engagement -sovelluksiin ja Microsoft Dataverseen. 
+
+Tee seuraavat toimet rinnakkaiskäsittelyn käyttöönottamiseksi talous- ja toimintosovelluksissa.
+
+1. Kirjaudu talous- ja toimintosovellusympäristöön.
+2. Valitse **Tietojen hallinta > Kehyksen parametrit**.
+3. Valitse **Yksikön asetukset** ja valitse **Konfiguroi yksikön suoritusparametrit**.
+4. Lisää rinnakkaiskäsittelyn parametrit:
+    - **Tuontikynnysarvotietueiden määrä** – Niiden tietueiden määrä, jotka on täytettävä, ennen kuin rinnakkaiskäsittely on otettu käyttöön.
+    - **Tuo tehtävän määrä** – Rinnakkain suoritettavan säikeiden (tehtävien) määrä.
+5. Valitse **Tallenna**.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Virheitä yritettäessä käynnistää taulun yhdistämismääritystä
 

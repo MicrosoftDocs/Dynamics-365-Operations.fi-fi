@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a842a3ba31c0a8e0d80ad1856d9d6d861a8514ea
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 21e03660387c7e715bc0f4cb1dbcd3ec9ec6cee2
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371658"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554558"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Globalisaatio-ominaisuuden suorittaminen, julkaiseminen ja käyttöönottaminen
 
@@ -59,7 +59,7 @@ RCS:ssä käytetään **Ota käyttöön** -komentoa sähköisen laskutusominaisu
 2. Valitse sivun oikeanpuoleisesta **Versiot**-välilehdestä sähköinen laskutusominaisuusversio, jonka haluat ottaa käyttöön palveluympäristössä tai liitetyssä sovelluksessa. Valitun version tilan täytyy olla **Valmis** tai **Julkaistu**.
 3. Valitse **Ota käyttöön** ja määritä käyttöönoton kohde valitsemalla yksi tai molemmat seuraavista vaihtoehdoista:
 
-    - **Liitetty sovellus** – Sovelluksen asetusten konfiguraatio on kirjoitettu Microsoft Dynamics 365 Financen tai Dynamics 365 Supply Chain Managementin esiintymään, joka oli aiemmin liitetty siihen.
+    - **Liitetty sovellus** – Sovelluksen asetusten konfiguraatio on kirjoitettu Microsoft Dynamics 365 Financeen tai Dynamics 365 Supply Chain Managementin esiintymään, joka oli aiemmin liitetty siihen.
     - **Palveluympäristö** – Sähköisen laskutuksen ominaisuusversio otetaan käyttöön palveluympäristössä. Sähköinen laskutus on tämän jälkeen valmis vastaanottamaan ja käsittelemään sähköisiä asiakirjoja, jotka Finance tai Supply Chain Management lähettää.
 
 > [!NOTE]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983414"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570378"
 ---
 # <a name="landed-cost-module"></a>Aiheutunut kustannus -moduuli
 
@@ -39,7 +39,7 @@ Aiheutuneet kustannukset antavat tarkat ja ajantasaiset aiheutuneiden kustannust
 
 ### <a name="voyages"></a>Matkat
 
-Aiheutuneissa kustannuksissa merikuljetus on tietty liike lähtevästä sijainnista tiettyjen kohteiden kautta tietyltä ajanjaksolta määritettyyn saapuvien varastosijaintiin. Ostotilaukset ja tilausrivit voidaan lisätä joko yhteen konttiin tai useaan konttiin merikuljetuksessa, ja kustannukset kohdistetaan taksisin nimikeriville oikein. Tilaukset ja tilausrivit voidaan myös lisätä eri yrityksille yhden merimatkan kohdalla.
+Aiheutuneissa kustannuksissa merikuljetus on tietty liike lähtevästä sijainnista tiettyjen kohteiden kautta tietyltä ajanjaksolta määritettyyn saapuvien varastosijaintiin. Ostotilaukset ja tilausrivit voidaan lisätä joko yhteen konttiin tai useaan konttiin merikuljetuksessa, ja kustannukset kohdistetaan taksisin nimikeriville oikein. 
 
 ### <a name="item-ownership"></a>Nimikkeen omistus
 

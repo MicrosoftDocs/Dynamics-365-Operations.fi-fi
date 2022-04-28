@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1e06fafe8d8bbe92ddf4fcd94d7271a1fbb6362a
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413591"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603051"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>Tulostuksenhallinnan tietuekohtaisten ER-kohteiden määrittäminen
 
@@ -35,7 +35,7 @@ Menettelyt voidaan suorittaa USMF-yrityksessä. Koodausta ei tarvita.
 
 ## <a name="introduction"></a>Johdanto
 
-[Kohteet](electronic-reporting-destinations.md) voidaan määrittää kullekin ER-[muodon](general-electronic-reporting.md#FormatComponentOutbound) [määrityksen](general-electronic-reporting.md#Configuration) tiedostotulosteosan kansiolle, jolla luodaan lähtevä asiakirja. Kun tämän tyyppinen ER-muoto suoritetaan ja jos käytössä on soveltuvat käyttöoikeudet, myös määritettyjä kohdeasetuksia voidaan muuttaa suorituksen aikana.
+[Kohteet](electronic-reporting-destinations.md) voidaan määrittää kullekin ER-[muodon](general-electronic-reporting.md) [määrityksen](general-electronic-reporting.md#Configuration) tiedostotulosteosan kansiolle, jolla luodaan lähtevä asiakirja. Kun tämän tyyppinen ER-muoto suoritetaan ja jos käytössä on soveltuvat käyttöoikeudet, myös määritettyjä kohdeasetuksia voidaan muuttaa suorituksen aikana.
 
 Microsoft Dynamics 365 Financen **versiossa 10.0.17 ja sitä uudemmissa versioissa** ER-muodolle voidaan [määrittää](er-apis-app10-0-17.md) toimintokoodi määrittämään toiminto, jonka käyttäjät suorittavat suorittamalla ER-muodon. Esimerkiksi **Myyntireskontra**-moduulin tulostuksen hallinta-asetuksissa voidaan valita ER-muoto, joka luo tietyn liiketoiminta-asiakirjan, kuten vapaatekstilaskun. Lasku voidaan sitten esikatsella valitsemalla **Näytä** tai lähettää tulostimeen valitsemalla **Tulosta**. Jos toiminto siirretään suoritettavaan ER-muotoon suorituksen aikana, [eri käyttäjän toimien eri ER-kohteita voidaan määrittää](er-action-dependent-destinations.md).
 

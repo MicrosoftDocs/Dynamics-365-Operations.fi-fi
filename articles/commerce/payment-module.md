@@ -2,7 +2,7 @@
 title: Maksumoduuli
 description: Tässä ohjeaiheessa on tietoja maksumoduulista ja sen määrittämisestä Microsoft Dynamics 365 Commerce -sovellukseen.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952466"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565726"
 ---
 # <a name="payment-module"></a>Maksumoduuli
 
@@ -74,6 +74,8 @@ Seuraavassa kuvassa on esimerkki PayPal-iframesta, joka on käynnistetty PayPal-
 | Maksun tyylin ohitus | CSS-tyylisivut (CSS) -koodi | Koska maksumoduulia isännöidään iframe-ohjelmassa, muotoiluominaisuus on rajallinen. Voit saavuttaa joitakin muotoiluja käyttämällä tätä ominaisuutta. Sivuston tyylien ohittaminen edellyttää, että liität CSS-koodin tämän ominaisuuden arvoksi. Sivuston muodostimen CSS-ohitukset ja tyylit eivät koske tätä moduulia. |
 |Tuetut maksuvälinetyypit| Merkkijono| Jos useita maksuyhdistimiä on konfiguroitu, anna tuettu maksuvälinetyypin merkkijono, joka on määritetty Commerce Headquarters -sovelluksen maksuyhdistinkokoonpanossa (katso seuraava kuva). Jos tämä on tyhjä, oletusarvona on Adyen-maksuyhdistin. Lisätty Commercen versioon 10.0.14.|
 |On ensisijainen maksu|  **Tosi** vai **Epätosi** | Jos arvo on **Tosi**, kaikki virhe sanomat luodaan kassasivun ensisijaisesta maksuliitännästä. Jos sekä Adyen- että PayPal-maksuyhdistimet on määritetty, määritä Adyen-arvoksi **Tosi**, joka lisättiin Commerce-versioon 10.0.14.|
+|Käytä yhdistimen tunnusta| **Tosi** vai **Epätosi** | Käytä tätä ominaisuutta, jos sivustolle on määritetty useita maksuliittimiä. Jos **tosi**, liittimien on käytettävä maksukorrelaatiossa liittimen tunnusta.|
+|Käytä selaimen joukon kielikoodia iFramessa|  **Tosi** vai **Epätosi** | (Vain Adyen) Jos **Tosi**, Adyen iFrame muodostaa kielen sivuston käyttäjän selaimen kontekstin perusteella, eikä sivustolle konfiguroitua Commerce-kanavan kielikoodia. Lisätty Commercen versioon 10.0.27.|
 
 Seuraavassa kuvassa on esimerkki **Tuetut maksuvälinetyypit** -arvosta "PayPal" Commerce Headquarters -sovelluksen maksuyhdistinmäärityksissä.
 ![Esimerkki tuetuista maksuvälinetyypeistä Commerce Headquarters -sovelluksessa.](./media/ecommerce-paymenttendertypes.png)

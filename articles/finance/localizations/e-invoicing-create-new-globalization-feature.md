@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371694"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603022"
 ---
 # <a name="create-a-globalization-feature"></a>Globalisaatio-ominaisuuden luominen
 
@@ -47,7 +47,7 @@ Voit luoda sähköisen laskutuksen toiminnon noudattamalla seuraavia ohjeita.
 8. Etsi ja valitse **Konfiguraatiot**-ruudukossa muotokonfiguraatiot, joita käsittelyputki edellyttää (esimerkiksi sähköisten laskutiedostojen luomiseen tai ulkoisten Internet-palveluiden vastauksien käsittelyyn).
 9. Valitse **OK**. Voit nyt käyttää konfiguraatioita käsittelyputken toiminnoissa. Lisätietoja on osiossa [Määritysten avulla työskentely](e-invoicing-work-configurations.md).
 10. Voit lisätä sähköisen laskutusominaisuuden asetukset luomalla sen **Uusi ominaisuus** -sivun **Asetukset**-välilehdessä. Lisätietoja on kohdassa [Toimistoasetusten käsittely](e-invoicing-feature-setup.md).
-11. Viimeistele määritys ja ota sähköinen laskutusominaisuus käyttöön palveluympäristössä. Lisätietoja: [Globalisaatio-ominaisuuden suorittaminen, julkaiseminen ja käyttöönottaminen](e-invoicing-complete-publish-deploy-globalization-feature).
+11. Viimeistele määritys ja ota sähköinen laskutusominaisuus käyttöön palveluympäristössä. Lisätietoja: [Globalisaatio-ominaisuuden suorittaminen, julkaiseminen ja käyttöönottaminen](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>Nykyisestä laskumallista johdettujen tiedostomuotomääritysten luominen
 
@@ -91,4 +91,4 @@ Uudet tiedostomuotomääritykset on jaettava Microsoft-toimialueella, ennen kuin
     - Tarkista konfiguraatiot, jos sinun on mukautettava ER-muotoja ja niiden sidontaa ominaisuusversion muotokartoituksilla.
     - Tarkista asetukset, jos sinun on mukautettava **Toiminnot**-välilehteä, **Soveltuvuussäännöt**-välilehteä tai ominaisuusversion **Muuttujat**-välilehteä.
 
-9. Viimeistele määritys ja ota sähköinen laskutusominaisuus käyttöön palveluympäristössä. Lisätietoja: [Globalisaatio-ominaisuuden suorittaminen, julkaiseminen ja käyttöönottaminen](e-invoicing-complete-publish-deploy-globalization-feature).
+9. Viimeistele määritys ja ota sähköinen laskutusominaisuus käyttöön palveluympäristössä. Lisätietoja: [Globalisaatio-ominaisuuden suorittaminen, julkaiseminen ja käyttöönottaminen](e-invoicing-complete-publish-deploy-globalization-feature.md).
