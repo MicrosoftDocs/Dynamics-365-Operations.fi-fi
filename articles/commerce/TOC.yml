@@ -12,17 +12,15 @@
               items:
                 - name: Commercen uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.27 (heinäkuu 2022)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (toukokuu 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Commerce 10.0.25 (huhtikuu 2022)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Commerce 10.0.24 (helmikuu 2022)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Commerce 10.0.23 (tammikuu 2022)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
-                - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
+                - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Poistetut tai vanhentuneet Finance and Operations -ominaisuudet
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
@@ -280,7 +278,7 @@
                   href: set-up-activation-accounts-validate-devices-hq.md
                 - name: Myyntipistelaitteen aktivointi
                   href: dev-itpro/retail-device-activation.md
-                - name: Pilvimyyntipisteen suojaaminen jaetuissa ympäristöissä
+                - name: 'Cloud POS:in suojaaminen jaetuissa ympäristöissä'
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Retail Hardware Stationin määrittäminen ja asentaminen
                   href: retail-hardware-station-configuration-installation.md
@@ -354,8 +352,10 @@
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
                         - name: Verovapauden laskenta
                           href: tax-exempt-price-inclusive.md
-                        - name: Arvonlisäveron laskeminen online-tilauksille
+                        - name: Arvonlisäveron määrittäminen online-tilauksille
                           href: sales-tax-config.md
+                        - name: Piilota verojen keskeytystiedot tilausyhteenvedoissa
+                          href: hide-taxes-breakup.md
                     - name: Sähköposti-ilmoitusprofiilin määrittäminen
                       href: email-notification-profiles.md
                     - name: Numerosarjat
@@ -394,11 +394,11 @@
                       href: dev-itpro/store-commerce.md
                     - name: Laitehallinnan käyttöönotto-ohje
                       href: implementation-considerations-devices.md
-                    - name: 'MPOS:n tai Cloud POS:n vertailu ja valinta'
+                    - name: Valitse Store Commerce tai Cloud POS
                       href: MPOS-or-CPOS.md
-                    - name: Myyntipistetoiminnot verkossa ja paikallisesti
+                    - name: Online- ja offline-myyntipistepalvelut
                       href: pos-operations.md
-                    - name: 'Mukautetun Modern POS:n laiteaktivointi'
+                    - name: 'Mukautetun Modern POS:in laiteaktivointi'
                       href: dev-itpro/retail-POS-activation-changes.md
                     - name: Azure Active Directory -todennuksen määrittäminen myyntipistekirjautumisessa
                       href: aad-pos-logon.md
@@ -420,7 +420,7 @@
                       href: charge-send.md
                     - name: Muun kuin rahdinkuljettajan toimitustapojen piilottaminen myyntipisteen lähetyksen valintaikkunassa
                       href: hide-non-carrier-modes.md
-                    - name: 'MPOS:n ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje'
+                    - name: 'MPOS:n ja Cloud POS:in tehtävien tallennustoiminto sekä ohje'
                       href: task-recorder-retail-pos.md
                     - name: Laitteiston oheislaitteet
                       items:
@@ -470,7 +470,7 @@
                       items:
                         - name: 'MPOS:n määrittäminen, asettaminen ja aktivoiminen'
                           href: retail-modern-pos-device-activation.md
-                        - name: Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen
+                        - name: Laajennetun MPOS- ja Cloud POS -kirjautumisen määrittäminen
                           href: extended-logon.md
                         - name: Aktivointitilien hallinta ja laitteiden vahvistaminen
                           href: set-up-activation-accounts-validate-devices-hq.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Taloushallinnon dimensioiden luominen vähittäismyyntikanaville ja arvojen määrittäminen myymälöille
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Numerosarjojen määrittäminen vähittäismyynnin tiliotteille
+                  href: retail-statements-number-sequences.md
                 - name: Ota käyttöön yhdenmukainen toimitustilan käsittely sähköisen kaupankäynnin kanavissa
                   href: consistent-delivery-mode-handling.md
             - name: Online-kanavan määrittäminen
@@ -882,11 +884,13 @@
                   href: tasks/process-loyalty-reward-point-adjustments.md
         - name: Taloustietojen hallinta
           items:
-            - name: Laskelmien yleiskatsaus
+            - name: Tiliotteiden yleiskatsaus
               href: retail-statements.md
-            - name: Myymälän tapahtumien tarkistaminen laskelman laskemista varten
+            - name: Commerce-kirjausparametrit
+              href: commerce-posting-parameters.md
+            - name: Myymälän tapahtumien tarkistaminen tiliotteen laskemista varten
               href: valid-checker.md
-            - name: Vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen sääntöjen käytöstäpoisto
+            - name: Vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen sääntöjen käytöstä poistaminen
               href: disable-consistency-check-rule.md
             - name: Vähittäismyyntitapahtumien muokkaaminen ja valvominen
               items:
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Adventure Works -teeman asentaminen
                       href: install-adventure-works.md
+                - name: Commerce-lokalisointiopas
+                  href: e-commerce-localization-guide.md
             - name: Digitaalisten resurssien hallinta
               items:
                 - name: Digitaalisten resurssien hallinnan yleiskatsaus
@@ -1308,10 +1314,18 @@
               href: b2b/quick-bulk-orders.md
             - name: Yritystenvälisten sähköisten kaupankäyntisivustojen laskujen hallinta
               href: b2b/invoice-management.md
-            - name: Asiakastilin maksutavan määrittäminen yritystenvälisissä sähköisissä kaupankäyntisivustoissa
+            - name: Asiakastilin maksutavan määrittäminen yritysten välisille sähköisille kaupankäyntisivustoille
               href: b2b/payment-method.md
-            - name: Tuotemäärän rajojen asettaminen yritystenvälisissä sähköisissä kaupankäyntisivustoissa
+            - name: Tuotemäärän rajojen asettaminen yritysten välisille sähköisille kaupankäyntisivustoille
               href: b2b/quantity-limits.md
+            - name: Commerce-luettelot yritysten välisille sivustoille
+              items:
+                - name: Commerce-luetteloiden luominen yritysten välisille sivustoille
+                  href: catalogs-b2b-sites.md
+                - name: Commerce-luetteloiden laajennettavuusvaikutus yritysten välisiä mukautuksia varten
+                  href: catalogs-b2b-sites-dev.md
+                - name: Usein kysytyt kysymykset aiheesta Commerce-luettelot yritysten välille
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Seuranta ja analysointi
           items:
             - name: Myynnin ja katteen kehittymisen seuranta
@@ -2470,17 +2484,21 @@
                       href: dev-itpro/incremental-capture.md
                 - name: Lokalisointi
                   items:
-                    - name: Commerce-laajennuksen resurssien ja etikettitiedostojen mukauttaminen
+                    - name: Commerce-laajennuksen resurssien ja tunnistetiedostojen mukauttaminen
                       href: dev-itpro/extension-resource-localization.md
-            - name: Headless Commerce
+            - name: Päätelaitteeton kaupankäynti
               items:
+                - name: Yleiskatsaus
+                  items:
+                    - name: Commerce Scale Unit (CSU) Core -opas
+                      href: dev-itpro/CSU-core.md
                 - name: Ohjelmointirajapinnat ja viite
                   items:
                     - name: Commerce Scale Unitin asiakas- ja kuluttajaohjelmointirajapinnat
                       href: dev-itpro/retail-server-customer-consumer-api.md
                     - name: Retail Serverin ohjelmointirajapintojen käyttäminen ulkoisissa sovelluksissa
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: 'Retail POS:n Typescript- ja C#-välityspalvelimet'
+                    - name: 'TypeScript- ja C#-välityspalvelimet for Retail POS:ille'
                       href: dev-itpro/typescript-proxy-retail-pos.md
                     - name: Commerce Runtimen (CRT) arkkitehtuuri ja määritys
                       href: dev-itpro/commerce-runtime-overview.md
@@ -2524,11 +2542,13 @@
                       href: dev-itpro/abandoned-cart-sample-app.md
                     - name: Kanta-asiakaslaajennuksen näyte
                       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-                    - name: Pakkausluetteloiden laajennuskohdat tilauksen täyttämisen aikana
+                    - name: Pakkausluetteloiden laajennuspisteet tilauksen täyttämisen aikana
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Pakkaaminen ja käyttöönotto
                   items:
-                    - name: Cloud Scale Unitin laajennusten poistaminen
+                    - name: Cloud Scale Unit -laajennuspaketin luominen
+                      href: dev-itpro/CSU-packaging.md
+                    - name: Cloud Scale Unit -laajennusten poistaminen
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
               items:
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: 'Myyntipisteen laajennusten siirtäminen Commercen SDK:hon'
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Store Commercen laajennusten virheenkorjaus VS Coden avulla
+                      href: dev-itpro/sc-debug.md
                 - name: Ympäristön määritys
                   items:
                     - name: Paikallinen kehitysympäristö
@@ -2614,6 +2636,8 @@
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: Cloud POS -laajennuspaketin luominen
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Store Commerce -laajennusten asennusohjelman paketin luominen
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: Sähköinen kaupankäynti
               items:
                 - name: Yleiskatsaus
@@ -2808,17 +2832,21 @@
                           href: e-commerce-extensibility/page-caching.md
                         - name: Tietotoiminnon esiintymien välimuisti
                           href: e-commerce-extensibility/instance-cache.md
-                        - name: 'Moduulin CSS:n optimointi'
+                        - name: Module CSS -optimointi
                           href: e-commerce-extensibility/module-css-optimization.md
                     - name: Telemetria ja analytiikka
                       items:
                         - name: Telemetrian kirjaustoiminto
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce headquarters
               items:
+                - name: CDX-Laajennuspaketti
+                  items:
+                    - name: Asiakkaan CDX-paketin laajentaminen mukautettujen tietojen lisäämiseksi
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: Pakkaaminen ja käyttöönotto
                   items:
-                    - name: Commercen maksupaketin luominen taloushallinnon ja toimintojen käyttöönottoa varten
+                    - name: Commerce-maksupaketin luominen taloushallinnon ja toimintojen käyttöönottoa varten
                       href: dev-itpro/payment-connector-package.md
             - name: Retail SDK (vanha)
               items:

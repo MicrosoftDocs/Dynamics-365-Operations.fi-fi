@@ -14,13 +14,15 @@
               items:
                 - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet -kotisivu
                   href: get-started/whats-new-home-page.md
+                - name: Käyttöympäristöpäivitykset versioon 10.0.27 (heinäkuu 2022)
+                  href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.26 (toukokuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.25 (huhtikuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
-                - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
+                - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
                   href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
                   href: get-started/removed-deprecated-features-platform-updates.md
@@ -66,7 +68,9 @@
                   href: data-entities/odata.md
                 - name: Mukautettu palvelukehitys
                   href: data-entities/custom-services.md
-                - name: Toistuvat integroinnit
+                - name: Palvelupyynnön jäljitys
+                  href: data-entities/service-request-tracing.md
+                - name: Toistuvat integraatiot
                   href: data-entities/recurring-integrations.md
                 - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
                   href: data-entities/third-party-service-test.md
@@ -1710,10 +1714,26 @@
                       href: migration-upgrade/workflow-subsystem.md
                     - name: Koostemallien käyttö analysoinnissa kuutioiden sijaan
                       href: migration-upgrade/in-memory-real-time-aggregate-models.md
-                    - name: Päivitettyjen myyntikuutioiden siirtäminen yksikkösäilöön
+                    - name: Ohjelmistopäivitettyjen myyntikuutioiden siirtäminen entiteettisäilöön
                       href: migration-upgrade/migrate-upgraded-cube-entity-store.md
                     - name: Budjettisuunnittelun päivitys
                       href: migration-upgrade/upgrade-budget-planning.md
+                - name: Ohjelmistopäivityksen vianmääritys
+                  items:
+                    - name: Kehitysympäristöjen vianmääritys ohjelmistopäivityksen aikana
+                      href: migration-upgrade/troubleshoot-dev-env.md
+                    - name: Itsepalveluympäristöjen ohjelmistopäivitysten vianmääritys
+                      href: migration-upgrade/troubleshoot-self-service-env.md
+                    - name: PreSync- ja PostSync-ohjelmitospäivityskomentosarjojen vianmääritys
+                      href: migration-upgrade/pre-post-upgrade-scripts.md
+                - name: Ympäristötoiminnot
+                  items:
+                    - name: Siirrä asiakirjaliitetiedostot
+                      href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+                    - name: Tyhjennä lähdetiedot ohjelmistopäivitystä varten
+                      href: migration-upgrade/clean-up-source-data-upgrade.md
+                    - name: Taulujen pakkaaminen Dynamics AX 2012 -ympäristöissä
+                      href: migration-upgrade/compress-tables-ax-2012.md
             - name: Tietojen siirtäminen AX 2009 -järjestelmästä
               items:
                 - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
@@ -2000,3 +2020,5 @@
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../../human-resources/index.md

@@ -2,7 +2,7 @@
 title: Tuottokirjauksen määritys
 description: Tässä aiheessa kuvataan tuottokirjauksen määritysasetukset ja niiden vaikutukset.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867217"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656718"
 ---
 # <a name="revenue-recognition-setup"></a>Tuottokirjauksen määritys
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ Syötä kuvaavia arvoja kenttiin **Tuottoaikataulu** ja **Kuvaus**. Seuraavia li
     - **Esiintymät** – Summa jaetaan tasan esiintymien kesken, mutta se voi sisältää lisäajan, jos **Todellinen alkamispäivä** valitaan kirjausmenetelmäksi.
     - **Tilikausi päivien mukaan** – Summa kohdistetaan kunkin tilikauden todellisten päivien perusteella. 
 
-    **Kuukausittain päivien mukaan**- ja **Tilikausi päivien mukaan** -kohdat ovat samat, kun tilikaudet noudattavat kalenterikuukausia. Ainoa poikkeus on, jos kirjausmenetelmäksi määritetään **Kuukauden/kauden loppu** ja **Sopimuksen alkamispäivä**- ja **Päättymispäivä**-kentät jätetään tyhjiksi myyntitilausrivillä.
+         - **Kuukausittain päivien mukaan**- ja **Tilikausi päivien mukaan** -kohdat ovat samat, kun tilikaudet noudattavat kalenterikuukausia. Ainoa poikkeus on, jos kirjausmenetelmäksi määritetään **Kuukauden/kauden loppu** ja **Sopimuksen alkamispäivä**- ja **Päättymispäivä**-kentät jätetään tyhjiksi myyntitilausrivillä.
 
 - **Kirjausmenetelmä** – Kirjausmenetelmällä määritetään päivämäärät, jotka asetetaan laskun tuottoaikataululle.
 
@@ -108,7 +108,7 @@ Syötä kuvaavia arvoja kenttiin **Tuottoaikataulu** ja **Kuvaus**. Seuraavia li
     - **Kuun/kauden 1. päivä** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden tai tilikauden ensimmäiselle päivälle.
     - **Jako keskellä kuukautta** – Ensimmäisen aikataulurivin päivämäärä määräytyy laskun päiväyksen mukaan. Jos lasku kirjataan kuun 1.–15. päivän välisenä aikana, tuottoaikataulu luodaan käyttämällä kuukauden ensimmäistä päivää. Jos lasku kirjataan kuun 15. päivän jälkeen, tuottoaikataulu luodaan käyttämällä seuraavan kuukauden ensimmäistä päivää.
 
-        **Jako keskellä kuukautta** -kohtaa ei voi valita, jos kirjausperusteeksi on määritetty **Tilikausi päivien mukaan**.
+        - **Jako keskellä kuukautta** -kohtaa ei voi valita, jos kirjausperusteeksi on määritetty **Tilikausi päivien mukaan**.
 
     - **Seuraavan kuun/kauden 1. päivä** – Päivämäärä, jona aikataulu alkaa, on seuraavan kuukauden tai tilikauden ensimmäinen päivä.
     - **Kuukauden/kauden loppu** – Ensimmäisen aikataulurivin päivämäärä on sopimuksen alkamispäivä (tai laskun päiväys). Kaikki seuraavat aikataulurivit kuitenkin luodaan kuukauden tai tilikauden viimeiselle päivälle. 

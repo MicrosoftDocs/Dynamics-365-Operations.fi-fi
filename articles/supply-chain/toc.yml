@@ -12,17 +12,15 @@
               items:
                 - name: Supply Chain Managementin uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.27 (heinäkuu 2022)
+                  href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (toukokuu 2022)
                   href: get-started/whats-new-scm-10-0-26.md
                 - name: Supply Chain Management 10.0.25 (huhtikuu 2022)
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management 10.0.24 (helmikuu 2022)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management 10.0.23 (tammikuu 2022)
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
-                - name: Poistetut tai vanhentuneet ominaisuudet – aloitussivu
+                - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
                   href: get-started/removed-deprecated-features-scm-updates.md
@@ -292,13 +290,13 @@
                           href: ../finance/localizations/e-invoicing-work-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Ominaisuuden määrityksen käyttäminen
                           href: ../finance/localizations/e-invoicing-feature-setup.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: 'Globalisaatio-ominaisuuden suorittaminen, julkaiseminen ja käyttöönottaminen'
+                        - name: 'Globalisaatio-ominaisuuden valmiiksi saattaminen, julkaiseminen ja käyttöönottaminen'
                           href: ../finance/localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Jakaminen muiden organisaatioiden kanssa
                           href: ../finance/localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Saapuvien sähköisten tiedostojen käsitteleminen
+                        - name: Saapuvien sähköisten asiakirjojen käsitteleminen
                           items:
-                            - name: Saapuvien sähköisten tiedostojen käsitteleminen
+                            - name: Saapuvien sähköisten asiakirjojen käsitteleminen
                               href: ../finance/localizations/e-invoicing-process-incoming-electronic-documents.md?toc=/dynamics365/supply-chain/toc.json
                             - name: Sähköpostikanavan konfiguroiminen
                               href: ../finance/localizations/e-invoicing-configure-email.md?toc=/dynamics365/supply-chain/toc.json
@@ -1723,10 +1721,8 @@
               href: iot/iot-intelligence-home-page.md
             - name: Azure-resurssien määrittäminen
               href: iot/iot-azure-setup.md
-            - name: IoT-keskittimen sanomaskeeman muodot
+            - name: IoT Hubin sanomaskeeman muodot
               href: iot/iot-schema-format.md
-            - name: 'Lisäosan asentaminen LCS:ssä'
-              href: iot/iot-lcs-setup.md
             - name: Mittareiden määrittäminen
               href: iot/iot-metrics-setup.md
             - name: Skenaarion määrittäminen
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: Kuinka työntekijät käyttävät tuotannon käyttöliittymää
                   href: production-control/production-floor-execution-use.md
+                - name: Näytä lomasaldot tuotannon käyttöliittymässä
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: Tuotannon käyttöliittymän tyylittely
                   href: production-control/production-floor-execution-styles.md
                 - name: Tuotannon käyttöliittymän mukauttaminen
