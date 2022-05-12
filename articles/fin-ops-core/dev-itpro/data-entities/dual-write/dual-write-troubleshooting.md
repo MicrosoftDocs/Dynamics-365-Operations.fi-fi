@@ -2,19 +2,19 @@
 title: Yleinen vianmääritys
 description: Tässä ohjeaiheessa on yleisiä vianetsintätietoja kaksoiskirjoituksen integroinnista taloushallinnon ja toimintojen sovellusten ja Dataversen välillä.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554596"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614092"
 ---
 # <a name="general-troubleshooting"></a>Yleinen vianmääritys
 
@@ -131,6 +131,29 @@ Voit ottaa **Tieto**-lomakevaihtoehdon uudelleen käyttöön seuraavasti:
 2. Etsi **Tieto**-lomake lomakkeet-solmussa.
 3. Valitse **Tieto**-lomake ja valitse **Ota käyttöön käyttöoikeusroolit**.
 4. Muuta suojausasetukseksi **Näytä kaikille**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Miten varmistetaan, että tietojen integrointi käyttää uusinta talous- ja toimintoskeemaa
+
+Tietojen integroinnissa saattaa kohdata tieto-ongelmia, jos ajan tasalla olevaa skeemaa ei käytetä. Seuraavien vaiheiden avulla voit päivittää talous- ja toimintosovellusten entiteettiluettelon ja tietojen integroijan entiteetit.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Päivitä talous- ja toimintosovellusympäristön entiteettiluettelo
+1.  Kirjaudu talous- ja toimintosovellusympäristöön.
+2.  Valitse **Tietojen hallinta**.
+3.  Valitse Tietojen hallinta -kohdassa **Kehyksen parametrit**.
+4.  Valitse **Tietojen tuonti- ja vientiympäristön parametrit** -sivulla **Yksikön asetukset** -välilehti ja valitse sitten **Päivitä yksikköluettelo**. Päivitys saattaa kestää yli 30 minuuttia sen mukaan, kuinka monta yksikköä on mukana.
+5.  Siirry **Tietojen hallinta** -kohtaan ja tarkista odotetut entiteetit valitsemalla **Tietoyksiköt**. Jos odotetut entiteetit eivät ole luettelossa, tarkista, että entiteetit näkyvät talous- ja toimintoympäristössä, ja palauta puuttuvat entiteetit tarpeen mukaan.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Jos päivitys ei ratkaise ongelmaa, poista entiteetit ja lisää ne uudelleen.
+
+> [!NOTE]
+> Sinun on ehkä pysäytettävä kaikki käsittelyryhmät, jotka käyttävät yksiköitä aktiivisesti ennen poistoa.
+
+1.  Valitse talous- ja toimintoympäristössä **Tietojen hallinta** ja valitse sitten **Tietoyksiköt**.
+2.  Hae ongelmallisia entiteettejä ja kirjoita muistiin kohdeyksikön, valmistelutaulun, yksikön nimen ja muiden asetusten tiedot. Poista entiteetti tai entiteetit luettelosta.
+3.  Valitse **Uusi** ja lisää entiteetti tai entiteetit uudelleen vaiheen 2 tietoja käyttäen. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Entiteettien päivittäminen tietojen integroijassa
+Kirjaudu Power Platform -hallintakeskukseen ja valitse **Tietojen integrointi**. Avaa projekti, jossa ongelmat esiintyvät, ja valitse **Päivitä entiteetit**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Verkkojäljityksen ottaminen käyttöön ja tallentaminen siten, että jäljitys voidaan liittää tukipalvelupyyntöihin
 

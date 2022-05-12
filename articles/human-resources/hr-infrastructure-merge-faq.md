@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c022bb15975a1411230d28067a2225c95c0573bf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e43aaad2f5b80996eb0fc10f550f073aec67fe5d
+ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062722"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661455"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources -infrastruktuurin yhdistämisen usein kysytyt kysymykset
 
@@ -45,7 +45,7 @@ Dynamics 365 Human Resources on itsenäinen sovellus, joka käyttää eri infras
 
 ### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Organisaation käyttää henkilöstöhallintomoduulia Dynamics 365 Financessa, Supply Chain Managementissa, Commercessa tai Project Operationsissa. Mitä hyötyä näistä muutoksista on?
 
-Dynamics 365 Human Resourcesin ominaisuudet ja investoinnit ovat nyt niiden asiakkaiden käytettävissä, jotka käyttävät -järjestelmän henkilöstöhallintomoduulia Dynamics 365 Financessa. Joitakin näistä ominaisuuksista ovat loman- ja poissaolojen hallinta, etujen hallinta ja tehtävien hallinta.
+Dynamics 365 Human Resourcesin ominaisuudet ja investoinnit ovat nyt niiden asiakkaiden käytettävissä, jotka käyttävät Dynamics 365 Financen henkilöstöhallintomoduulia. Joitakin näistä ominaisuuksista ovat loman- ja poissaolojen hallinta, etujen hallinta ja tehtävien hallinta.
 
 ### <a name="will-i-lose-any-features-or-capabilities-that-i-currently-use"></a>Menetänkö tällä hetkellä käytössä olevat ominaisuudet?
 
@@ -225,12 +225,9 @@ Tämä ei vaikuta Dynamics 365 Human Resources -asiakkaisiin, jotka ovat ostanee
 
 ### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Organisaation käyttää henkilöstöhallintomoduulia Dynamics 365 Financessa, Supply Chain Managementissa, Commercessa tai Project Operationsissa. Muuttuvatko lisensointini tai kustannukseni?
 
-Dynamics 365 -sovellusten nykyiset käyttäjät ja itsenäisen Dynamics 365 Financen, Supply Chain Managementin, Commercen ja Project Operationsin käyttäjät voivat käyttää Human Resources osana kyseisiä lisenssejä helmikuuhun 2025 asti tai nykyisen käyttöoikeussopimuksen päättymiseen saakka sen mukaan, kumpi ajankohta on aikaisempi. Voit siirtyä Human Resources -lisensseihin aikaisemmin, jos se auttaa sinua saavuttamaan parempia kustannussäästöjä. Helmikuusta 2025 alkaen kaikkien nykyisten CSP- ja EA-asiakkaiden on otettava HR-moduuli käyttöön ja ostettava Human Resources -lisenssit hyödyntääkseen taloushallinnon ja toimintojen sovelluksiin tuotavat uudet ominaisuudet.
+Dynamics 365 -sovellusten nykyiset käyttäjät ja itsenäisen Dynamics 365 Financen, Supply Chain Managementin, Commercen ja Project Operationsin käyttäjät voivat käyttää Human Resourcesia osana kyseisiä lisenssejä helmikuuhun 2025 asti tai nykyisen käyttöoikeussopimuksen päättymiseen saakka sen mukaan, kumpi ajankohta on aikaisempi. Voit siirtyä Human Resources -lisensseihin aikaisemmin, jos se auttaa sinua saavuttamaan parempia kustannussäästöjä. Helmikuusta 2025 alkaen kaikkien nykyisten CSP- ja EA-asiakkaiden on otettava HR-moduuli käyttöön ja ostettava Human Resources -lisenssit hyödyntääkseen taloushallinnon ja toimintojen sovelluksiin tuotavat uudet ominaisuudet.
 
 ### <a name="my-organization-is-live-with-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-will-we-be-required-to-purchase-an-additional-environment-to-support-the-infrastructure-merge"></a>Organisaationi käyttää Dynamics 365 Financea, Supply Chain Managementia, Commercea tai Project Operationsia tuotantokäytössä. Vaaditaanko meidän ostavan lisäympäristön infrastruktuurin yhdistämisen tueksi?
 
 Infrastruktuurin muutoksen tueksi ei tarvita lisäympäristöjä.
 
-### <a name="where-should-i-go-if-i-have-additional-questions-about-product-licensing"></a>Minne minun pitäisi mennä, jos minulla on lisäkysymyksiä tuotteiden lisensoinnista?
-
-Jos sinulla on käyttöoikeuskysymyksiä, löydät lisätietoja kohteesta [Biz Apps Hub – D365-hinnoittelu ja lisensointi](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering). Jos nämä tiedot eivät auta ongelmassasi, avaa pyyntö LicenseQ:ssa.

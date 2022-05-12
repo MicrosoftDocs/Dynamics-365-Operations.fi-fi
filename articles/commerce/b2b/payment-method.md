@@ -2,7 +2,7 @@
 title: Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille
 description: Tässä aiheessa kuvataan asiakkaan maksutavan määrittäminen Microsoft Dynamics 365 Commercessä. Siinä kuvataan myös, miten luottorajat vaikuttavat tilimaksujen taltiointiin yritystenvälisillä (B2B) verkkokauppasivustoilla.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323352"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616829"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille
 
@@ -82,20 +82,20 @@ B2B-sivustolla näkyvä luottorajalaskelma ja -saldo määrittyvät Commerce Hea
 
 Toinen ominaisuus, joka vaikuttaa tilille tilaamiseen on **Pakollinen luottoraja** -ominaisuus, joka sijaitsee asiakastietueen **Luotonvalvonta**-pikavälilehdessä. Määrittämällä tämän ominaisuuden arvoksi **Kyllä** tietyille asiakkaille, voit pakottaa järjestelmän tarkastamaan heidän luottorajansa, vaikka **Luottorajan tyyppi** -ominaisuuden arvoksi olisi määritetty **Ei mitään** sen määrittämiseksi, että luottorajaa ei pitäisi tarkastaa minkään asiakkaan osalta.
 
-Tällä hetkellä B2B-sivuilla, joilla **Pakollinen luottoraja** -ominaisuus on käytössä, on lisätoimintoja. Jos ominaisuus otetaan käyttöön asiakastietueessa ja asiakas tilaa tilauksen, B2B-sivusto estää häntä käyttämästä tilimaksumenetelmää jäljellä olevan luoton saldon ylittäviin maksuihin. Jos esimerkiksi asiakkaan jäljellä olevan luoton saldo on 1 000 dollaria, mutta tilauksen arvo on 1 200 dollaria, asiakas voi maksaa vain 1 000 dollaria tilimaksumenetelmän avulla. Hänen on käytettävä erotuksen maksamiseen muuta maksumenetelmää. Jos **Pakollinen luottoraja** -ominaisuus on poistettu käytöstä asiakastietueessa, asiakas voi maksaa minkä tahansa summan tilimaksumenetelmällä. Vaikka asiakas voikin tehdä tilauksia, järjestelmä ei salli näiden tilausten täyttämistä, jos ne ylittävät luottorajan. Jos sinun on tarkastettava kaikkien niiden asiakkaiden osalta, joille tilimaksut ovat sallittuja, suosituksena on **Luottorajan tyyppi** -ominaisuuden arvon määrittäminen muotoon **Saldo + pakkausluettelo tai tuoteluettelo** ja **Pakollinen luottoraja** -ominaisuus muotoon **Ei**.
+Tällä hetkellä asiakas, joka käyttää ennakkomaksumenetelmää, ei voi maksaa enempää kuin tilauksen jäljellä oleva hyvityssaldo. Jos esimerkiksi asiakkaan jäljellä olevan luoton saldo on 1 000 dollaria, mutta tilauksen arvo on 1 200 dollaria, asiakas voi maksaa vain 1 000 dollaria ennakkomaksumenetelmän avulla. Asiakkaan on sitten käytettävä erotuksen maksamiseen muuta maksumenetelmää. Tulevassa versiossa Commerce-konfiguraatio sallii käyttäjien käyttää luottorajan yli tilauksia tehtäessä.
 
 **Luotonvalvonta**-moduulissa on uusia luotonhallintaominaisuuksia. Voit ottaa nämä ominaisuudet käyttöön ottamalla **Luotonhallinta**-toiminnon käyttöön **Toimintojen hallinta** -työtilassa. Yksi uusista ominaisuuksista mahdollistaa myyntitilausten asettamisen pitoon estosääntöjen perusteella. Luottopäällikkö-henkilötyyppi voi tämän jälkeen vapauttaa tai hylätä tilaukset lisäanalyysin perusteella. Ominaisuutta myyntitilausten pitoon asettamista varten ei kuitenkaan voi soveltaa Commerce-tilauksiin, koska myyntitilauksiin liittyy usein ennakkomaksuja ja **Luotonhallinta**-toiminto ei tue ennakkomaksuskenaarioita täysin. 
 
 Jos asiakkaan saldo ylittää luottorajan tilauksen täyttämisen aikana, myyntitilauksia ei aseteta pitoon riippumatta siitä, onko **Luotonhallinta**-toiminto käytössä. Sen sijaan Commerce luo joko varoitussanoman tai virhesanoman sen mukaan, mikä **Sanoma luottorajan ylittyessä** -kentän arvona on **Luottorajat**-pikavälilehdessä.
 
-Commercen myyntitilausten pitoon asettamisen estävä **Sulje pois luotonhallinnasta** -omaisuus sijaitsee myyntitilauksen otsikossa (**Retail ja Commerce \> Asiakkaat \> Kaikki myyntitilaukset**). Jos tämän ominaisuuden arvona on **Kyllä** (oletusarvo) Commercen myyntitilausten osalta, tilaukset suljetaan pois luotonhallinnan pitotyönkulusta. Ota huomioon, että määritettyä luottorajaa sovelletaan tilauksen täyttämisessä, vaikka ominaisuuden nimi on **Sulje pois luotonhallinnasta**. Tilaukset eivät vain mene pitoon.
+Commercen myyntitilausten pitoon asettamisen estävä **Sulje pois luotonhallinnasta** -omaisuus sijaitsee myyntitilauksen otsikossa (**Retail ja Commerce \> Asiakkaat \> Kaikki myyntitilaukset**). Jos tämän ominaisuuden arvona on **Kyllä** (oletusarvo) Commercen myyntitilausten osalta, tilaukset suljetaan pois luotonhallinnan pitotyönkulusta. Vaikka määritettyä luottorajaa sovelletaan tilauksen täyttämisessä, ominaisuuden nimi on **Sulje pois luotonhallinnasta**. Tilaukset eivät vain mene pitoon.
 
 Ominaisuus Commercen myyntitilausten pitoon estosääntöjen perusteella asettamisen ominaisuus on suunnitteilla tulevia Commerce-versioita varten. Jos sinun on pakotettava Commercen myyntitilaukset kulkemaan uusien luotonhallinnan kulkujen läpi ennen kuin sitä tuetaan, voit mukauttaa Visual Studio -ratkaisusi seuraavia XML-tiedostoja. Muuta tiedostoissa logiikkaa siten, että **CredManExcludeSalesOrder**-merkinnän arvo on **Ei**. Tällä tavoin **Sulje pois luotonhallinnasta** -ominaisuuden oletusarvona Commercen myyntitilausten osalta on **Ei**.
 
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Ota huomioon, että jos **CredManExcludeSalesOrder**-merkinnän arvoksi on määritetty **Ei** ja B2B-asiakas voi ostaa kaupoista käyttämällä myyntipistesovellusta, itsepalvelutukkutapahtumien kirjaaminen saattaa epäonnistua. Tilanne voi olla esimerkiksi, että käteismakutyypille on olemassa estosääntö ja B2B-asiakas on ostanut tavaroita kaupasta käteisellä. Tällöin tuloksena olevaa myyntitilausta ei laskuteta onnistuneesti, koska se asetetaan pitoon. Näin ollen kirjaus epäonnistuu. Tämän vuoksi on suositeltavaa tehdä kokonaisvaltaista testausta tämän mukautuksen käyttöönoton jälkeen.
+Jos **CredManExcludeSalesOrder**-merkinnän arvoksi on määritetty **Ei** ja B2B-asiakas voi ostaa kaupoista käyttämällä myyntipistesovellusta, itsepalvelutukkutapahtumien kirjaaminen saattaa epäonnistua. Tilanne voi olla esimerkiksi, että käteismakutyypille on olemassa estosääntö ja B2B-asiakas on ostanut tavaroita kaupasta käteisellä. Tällöin tuloksena olevaa myyntitilausta ei laskuteta onnistuneesti, koska se asetetaan pitoon. Näin ollen kirjaus epäonnistuu. Tämän vuoksi on suositeltavaa tehdä kokonaisvaltaista testausta tämän mukautuksen käyttöönoton jälkeen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

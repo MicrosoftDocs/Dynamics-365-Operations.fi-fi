@@ -2,7 +2,7 @@
 title: Budjetin hallinnan yleiskatsaus
 description: Tässä aiheessa esitellään budjetin hallintatoiminto ja tietoja, joiden avulla voit määrittää budjetin hallinnan organisaation taloudellisten resurssien hallinnan optimoimiseksi.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986053"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644844"
 ---
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
@@ -80,7 +80,9 @@ Seuraavaksi määritetään käyttäjäryhmät **Budjetin ylitysoikeudet** -väl
 > [!NOTE]
 > Jos tätä laskelmaa muokataan budjettijakson aikana, muutokset eivät vaikuta budjetin hallinnan tarkistuksissa hyväksyttyihin tai aiemmin kirjattuihin tai valmistuneisiin asiakirjoihin. Ominaisuuden nimeltä **Seuraa vain summia käytettävissä olevien budjettivarojen laskennassa** avulla voit muuttaa BudgetSourceTracking-taulujen seurattavia tietoja. Kun tämä toiminto on käytössä, summat tallennetaan vain, jos ne on valittu käytettävissä olevan budjettivaran laskennassa käytettäviksi. Lisätietoja on kohdassa [Saatavilla olevat budjettivarat](budget-funds-available.md).
 
-Seuraavaksi valitaan **Tiedostot ja kirjauskansiot** -välilehdessä budjetin hallinnan tarkistuksiin mukaan otettavat lähdeasiakirjat ja -kirjauskansiot ja se, tehdäänkö tarkistus rivimerkinnän tasolla vai asiakirjalle kokonaisuutena. 
+### <a name="documents-and-journals"></a>Tiedostot ja kirjauskansiot
+
+Valitaan **Tiedostot ja kirjauskansiot** -välilehdessä budjetin hallinnan tarkistuksiin mukaan otettavat lähdeasiakirjat ja -kirjauskansiot ja se, tehdäänkö tarkistus rivimerkinnän tasolla vai asiakirjalle kokonaisuutena. Lisäksi uusi **Budjetin hallinta-asiakirjan suodatuksen parannus** -toiminto, joka on käytettävissä Microsoft Dynamics 365 Finance -versiosta 10.0.27 alkaen, sisältää kyselypohjaisen suodatusvaihtoehdon jokaiselle budjetin hallintaan sisältyvälle tiedostolle. Näin ollen voit määrittää, mistä budjetin hallinta-asiakirjoista budjetti tarkistetaan. Näin toiminnon avulla voi tarkistaa vain tiedostotyypin osajoukon. Voit esimerkiksi tarkistaa vain ostotilaukset, joissa **Pooli**-kentän arvoksi on määritetty **01**. Uusi **Asiakirjat ja kirjauskansiot** -välilehteen lisätty sarake ilmaisee, onko valitulle tiedostotyypille määritetty kysely. Lisäksi tiedostoruudukon yläpuolella olevalle työkaluriville lisätyn kahden uuden painikkeen avulla voit lisätä, muokata tai poistaa suodatusta. 
 
 Sinun tulisi täsmätä valitut lähdeasiakirjat niiden saldojen valintaruutujen kanssa, jotka on valittu käytössä olevien budjettivarojen laskelmaan. Jos valittuna on esimerkiksi **Varausten budjettivaraukset**, valittava asetus on **Ostotilaukset**. Kun budjetin tarkistus suoritetaan ostorivin summille ja tileille, varaukseen määritetty budjetin hallinnan luokka on **Varaus** Kun budjetin tarkistus suoritetaan ostoehdotuksen summille ja tileille, varaukseen määritetty budjetin hallinnan luokka on **Alustava varaus** 
 

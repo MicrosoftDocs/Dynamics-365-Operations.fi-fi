@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533709"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644299"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Jaksota loma- ja poissaolosuunnitelmat
 
@@ -105,8 +105,10 @@ Poista tietyn suunnitelman ja päivämäärävälin jaksotustiedot. Jaksotuspäi
 **Lomakertymän valvonta** näyttää aina, kun suoritat tai poistat yhden tai kaikkien työntekijöiden kertymän. Myös toimenpiteen päiväys ja suorittanut henkilö näytetään.
 
 1. Valitse **Lomat ja poissaolot** -sivulla **Linkit**-välilehti.
-
 2. Valitse **Hallitse lomia** -kohdassa **Poista lomakertymien valvonta**.
+
+## <a name="leave-accrual-rounding"></a>Lomien jaksotusten pyöristys
+Kun työntekijä on rekisteröity tai rekisteröinti on poistettu, loman jaksotuksen pyöristys jaetaan suhteellisesti. Aiemmin pyöristys oli sallittu vain, kun lomasuunnitelma on määritetty suhteellisesti jaettavaksi ja työntekijä rekisteröitiin tai rekisteröinti poistettiin kesken jakson. Loman jaksotus pyöristetään nyt kauden puolivälissä tai sen alussa riippumatta rekisteröinnistä tai rekisteröinnin peruutuksesta.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Loman jaksotustapahtuman tarkistus
 

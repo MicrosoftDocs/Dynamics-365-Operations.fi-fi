@@ -2,24 +2,20 @@
 title: Palautusten luominen myyntipisteessä
 description: Tässä aiheessa käsitellään palautusten käynnistämistä käteis- ja siirtotapahtumista tai asiakastilauksista Microsoft Dynamics 365 Commerce -myyntipistesovelluksessa.
 author: hhainesms
-ms.date: 02/24/2022
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349688"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648985"
 ---
 # <a name="create-returns-in-pos"></a>Palautusten luominen myyntipisteessä
 
@@ -107,9 +103,64 @@ Seuraavassa luettelossa on eri komponenttien vähimmäisversiovaatimukset.
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille
 
 Tämä ominaisuus varmistaa, että kun tilaus palautetaan käyttäen useaa laskua, verot täsmäävät alun perin veloitetun verosumman kanssa.
-1.  Siirry **Ominaisuuksien hallinta** -työtilaan ja tee haku hakusanoilla **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille**.
-2.  Valitse **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille** ja valitse sitten **Ota käyttöön**.
 
+1. Tee **Ominaisuuksien hallinta** -työtilassa haku hakusanoilla **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille**.
+1. Valitse **Ota käyttöön oikea verojen laskeminen osittaisen määrän palautuksille** -toiminto ja valitse sitten **Ota käyttöön**.
+
+## <a name="set-up-return-locations-for-retail-stores"></a>Aseta palautussijainnit vähittäismyymälöille.
+
+Commercen avulla voit määrittää vähittäismyynnin tietokoodeihin ja myynnin sekä markkinoinnin syykoodeihin perustuvat palautussijainnit. Kun asiakas palauttaa oston, kassanhoitajat usein ilmaisevat palautuksen syyn. Voit määrittää, että palautetut tuotteet on määritettävä varaston eri palautussijainteihin riippuen siitä, kuinka kassanhoitaja valitsee myyntipisteessä tieto- ja syykoodit.
+
+Asiakas palauttaa esimerkiksi viallisen tuotteen, ja kassanhoitaja käsittelee palautustapahtuman. Kun Retail POS näyttää palautusten tietokoodin, kassa valitsee viallisten palautusten alikoodin. Palautettu tuote määritetään tällöin automaattisesti tiettyyn palautussijaintiin.
+
+Palautuksen sijainti voi olla varasto, sijainti varastossa, tai tietty jopa kuormalava riippuen varastosijainneista, jotka organisaatiosi on määrittänyt. Voit yhdistää jokaisen palautussijainnin yhteen tai useampaan vähittäiskaupan tietokoodiin sekä myynnin ja markkinoinnin syykoodiin.
+
+### <a name="prerequisites"></a>Edellytykset
+
+Ennen kuin voit määrittää palautuskohteita, sinun on määritettävä seuraavat elementit:
+
+- **Vähittäismyyntitietokoodit** – Myyntipisteen kassalla antaa ohjeita, jotka on määritetty **Retail**-moduulissa. Lisätietoja on kohdassa [Tietokoodien määrittäminen](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
+- **Myynti- ja markkinointisyykoodit** – Myyntipisteen kassalla antaa ohjeita, jotka on määritetty **Myynti ja markkinointi** -moduulissa. Lisätietoja on kohdassa [Syykoodien määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Varastosijainnit** – paikat, joissa varastoa pidetään. Lisätietoja on kohdassa [Varastosijaintien määrittäminen](/dynamicsax-2012/appuser-itpro/about-locations).
+    
+### <a name="set-up-return-locations"></a>Määritä palautussijainnit
+
+Voit määrittää palautussijainnit noudattamalla seuraavia ohjeita.
+
+1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> Varastot** ja valitse varasto.
+1. Valitse **Retail**-pikavälilehden **Oletuspalautussijainti**-kentässä varastosijainti, jota käytetään palautuksille, kun tietokoodit tai syykoodit eivät ole yhdistetty palautussijainteihin.
+1. Valitse **Palautuksen oletuskuormalava**-kentässä kuormalava, jota käytetään palautuksille, kun tietokoodit tai syykoodit eivät ole yhdistetty palautussijainteihin.
+1. Siirry kohtaan **Retail ja Commerce \> Varaston hallinta \> Palautussijainnit**.
+1. Valitse **Uusi** luodaksesi uuden palautussijaintikäytännön.
+1. Kirjoita palautussijainnin yksilöivä nimi ja kuvaus.
+
+    > [!NOTE]
+    > Nimi lisätään automaattisesti, jos palautussijainneille on määritetty numerosarja.
+
+1. Määritä **Yleiset**-pikavälilehdessä **Tulosta tarrat** -asetuksen arvoksi **Kyllä**, jos haluat tulostaa tarrat kaikkiin palautussijainteihin määritettyihin tuotteisiin.
+1. Määritä **Estä varasto** -asetukseksi **Kyllä**, jotta palautetut tuotteet siirretään oletuspalautussijaintiin pois varastosta, ja jotta niiden myynti estetään.
+1. Liitä tietyt vähittäismyyntitietokoodit ja alikoodit palautussijainteihin seuraavasti:
+
+    1. Valitse **Vähittäismyynnin tietokoodit**-pikavälilehdessä **Lisää**.
+    1. Valitse palautusten tietokoodi **Tietokoodi**-kentässä.
+    1. Valitse **Alikoodi**-kentässä alikoodi palautussyylle. **Kuvaus**-kentässä näkyy valitun alikoodin kuvaus.
+    1. **Myymälä**-kentässä valitse myymälä, jossa tietokoodia käytetään.
+    1. Määritä palautussijainti **Varasto**-, **Sijainti**- ja **Kuormalavan tunnus** -kenttien avulla. Voit esimerkiksi määrittää tietyn sijainnin myymälässä valitsemalla myymälän **Myymälä**-kentässä ja sijainnin **Sijainti**-kentässä.
+    1. Valitse **Estä varasto**-valintaruutu ottaaksesi varastosta palautettuja tuotteita ja estääksesi niiden myynnin.
+
+1. Liitä tietyt myynnin ja markkinoinnin syykoodit palautussijainteihin seuraavasti:
+
+    1. Valitse **Myynnin ja markkinoinnin syykoodit** -pikavälilehdessä **Lisää**.
+    1. Valitse syykoodi palautuksille **Syykoodi** -kentässä. **Kuvaus**-kentässä näkyy valitun syykoodin kuvaus.
+    1. **Myymälä**-kentässä valitse myymälä, jossa syykoodia käytetään.
+    1. Määritä palautussijainti **Varasto**-, **Sijainti**- ja **Kuormalavan tunnus** -kenttien avulla. Voit määrittää esimerkiksi tietyn kuormalavan varastosijainnissa valitsemalla varaston **Varasto**-kentässä, sijainnin **Sijainti**-kentässä ja kuormalavan **kuormalavan tunnus** -kentässä.
+    1. Valitse **Estä varasto**-valintaruutu ottaaksesi varastosta palautettuja tuotteita ja estääksesi niiden myynnin.
+
+    > [!NOTE]
+    > Jos nimikkeelle käytetään palautussijaintikäytäntöä, mutta kassanhoitajan valitsemien palautusten syy ei vastaa mitään koodia, joka on määritetty **vähittäismyynnin tietokoodien** tai **myynnin ja markkinoinnin syykoodien** pikavälilehdissä, nimike lähetetään **Varasto**-sivulla määritettyyn oletuspalautussijaintiin. **Palautussijainnit**-sivun **Yleiset**-pikavälilehden **Estä varasto** -valintaruudun asetus määrittää myös, onko palauttavan nimikkeen varasto estettävä.
+
+1. Valitse **Retail ja Commerce \> Commercen tuotehierarkia**.
+1. Valitse palautussijainti **Varaston hallinta - luokan ominaisuudet** -pikavälilehden **Palautussijainti**-kentässä. Koska samalle myymälälle voidaan määrittää useita palautussijaintikäytäntöjä, tässä kohdassa valittava arvo määrittää käytetyn palautussijaintikäytännön.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

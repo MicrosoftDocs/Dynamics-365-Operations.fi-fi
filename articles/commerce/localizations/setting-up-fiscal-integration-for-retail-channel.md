@@ -2,27 +2,42 @@
 title: Kaupan kirjanpidon integroinnin määrittäminen
 description: Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462154"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661746"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Kaupan kirjanpidon integroinnin määrittäminen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen. Lisätietoja kirjanpidon integroinnista on kohdassa [Commerce-kanavan kirjanpidon integroinnin yleiskatsaus](fiscal-integration-for-retail-channel.md).
 
+## <a name="enable-features-in-commerce-headquarters"></a>Ominaisuuksien ottaminen käyttöön Commerce headquarters -sovelluksessa
+
+Ota Commerce-kanavien kirjanpidon integrointitoimintoon liittyvät toiminnot käyttöön seuraavasti.
+
+1. Valitse Commerce-pääkonttorissa **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
+1. Etsi ja ota käyttöön seuraavat toiminnot:
+
+    - **Kassakoneiden suora verotuksen integrointi** – Tämä ominaisuus laajentaa verojen integroinnin kehystä lisäämällä mahdollisuuden luoda myyntipisteessä suoritettavia veroliittimiä. Tämäntyyppinen liitin kommunikoi verolaitteen tai -palvelun kanssa, joka tarjoaa HTTP-sovellusohjelmaliittymän (API) eikä vaadi myymälässä erillistä fyysistä laitetta. Tämä ominaisuus mahdollistaa esimerkiksi verojen integroinnin matkapuhelimista vaatimatta jaettua laitteistoasemaa.
+    - **Verointegraation tekniset profiili-ohitukset** – Tämän ominaisuuden avulla voidaan laajentaa verojen integroinnin asetuksia ja mahdollistaa kassapäätteiden asetussivun yhteysparametrien tarkistamisen. Kun tämä ominaisuus on käytössä, voit ohittaa teknisen profiilin parametrit.
+    - **Kassakoiden verorekisteröinnin tila** – Kun tämä ominaisuus on käytössä, voit poistaa verojen rekisteröintiprosessin käytöstä tietyistä kassakoneista. Jos kassakoneen verorekisteröinti on poistettu käytöstä, myyntitapahtumia ei voi suorittaa siinä kassapäätteessä.
+    - **Verointegraation paikallinen tallennusvarmuuskopiointi** – Tämä ominaisuus laajentaa verointegraatiokehyksen virheenkäsittelyominaisuuksia. Se myös mahdollistaa verorekisteröintitietojen automaattisen varmuuskopioinnin tietojen menettämisen yhteydessä, jotta paikallisen tallennuksen tiedot palautetaan, kun laite aktivoidaan.
+
 ## <a name="set-up-commerce-parameters"></a>Määritä Commercen parametrit
+
+Voit määrittää Commerce-parametreja noudattamalla seuraavia ohjeita.
 
 1. Valitse **Commercen yhteiset parametrit** -sivun **Yleiset**-välilehden **Ota kirjanpidon integrointi käyttöön** -asetukseksi **Kyllä**.
 1. Määritä seuraavien viitteiden numerosarjat **Numerosarjat**-välilehdessä:
@@ -33,8 +48,8 @@ Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminno
 
 1. Määritä kirjanpidon toimintaprofiilinumeron numerosarja **Commercen parametrit** -sivulla.
 
-    > [!NOTE]
-    > Numerosarjat ovat valinnaisia. Kaikki kirjanpidon integrointiyksiköt voidaan luoda joko numerosarjoista tai manuaalisesti.
+> [!NOTE]
+> Numerosarjat ovat valinnaisia. Kaikki kirjanpidon integrointiyksiköt voidaan luoda joko numerosarjoista tai manuaalisesti.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Kirjanpidon rekisteröintiprosessin määrittäminen
 
@@ -43,7 +58,7 @@ Kirjanpidon integroinnin määritysprosessi sisältää seuraavat tehtävät:
 - Määritä ne kirjanpidon yhdistimet, jotka edustavat kirjanpidon rekisteröinnissä käytettäviä kirjanpidon laitteita tai palveluja, kuten kuittitulostimia.
 - Määritä tiedostopalvelut, jotka muodostavat kirjanpidon yhdistimien kirjanpidon laitteissa tai palveluissa rekisteröitävät kirjanpitoasiakirjat.
 - Määritä kirjanpidon rekisteröintiprosessi, joka määrittää kirjanpidon rekisteröintivaiheiden järjestyksen sekä kussakin vaiheessa käytettävät kirjanpidon yhdistimet ja kirjanpitoasiakirjojen toimittajat.
-- Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintaprofiileihin.
+- Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintoprofiileihin.
 - Määritä yhdistimen tekniset profiilit laiteprofiileihin.
 - Määritä yhdistimen tekniset profiilit myyntipisteen laiteprofiileihin tai toimintoprofiileihin.
 
@@ -176,7 +191,7 @@ Kirjanpidon rekisteröinnin työnkulun määrittää kirjanpidon rekisteröintip
 - Kirjanpidon rekisteröinnin tapahtumien ja transaktioiden tilaus määritetään valmiiksi kirjanpitoasiakirjan toimittajassa.
 - Kirjanpitoasiakirjan toimittaja vastaa myös kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen tunnistamisesta. Se yhdistää siihen kirjanpidon yhdistinryhmään sisältyvät yhdistimen toiminnalliset profiilit, joka on määritetty kirjanpidon rekisteröintiprosessin nykyiselle vaiheelle, siihen yhdistimen tekniseen profiilin, joka on määritetty myyntipisteeseen pariliitoksen muodostaneen laiteaseman laiteprofiiliin.
 - Kirjanpitoasiakirjan toimittaja käyttää kirjanpitoasiakirjan toimittajan määrityksen tietojen yhdistämisasetuksia transaktio- tai tapahtumatietojen, kuten verojen ja maksujen, muuntamiseen kirjanpitoasiakirjaa luotaessa.
-- Kun kirjanpitoasiakirjan toimittaja luo kirjanpitoasiakirjan, kirjanpidon yhdistin voi joko lähettää sen sellaisenaan kirjanpidon laitteeseen tai muuntaa sen sarjaksi laitteen ohjelmointirajapinnan komentoja. Valittu vaihtoehto perustuu siihen, miten tietoliikennettä käsitellään.
+- Kun kirjanpitoasiakirjan toimittaja luo kirjanpitoasiakirjan, kirjanpidon yhdistin voi joko lähettää sen sellaisenaan kirjanpidon laitteeseen tai muuntaa sen sarjaksi laitteen API-komentoja. Valittu vaihtoehto perustuu siihen, miten tietoliikennettä käsitellään.
 
 ### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Kassakoneiden määrittäminen kirjanpidon rekisteröintirajoitusten mukaan
 
@@ -283,4 +298,21 @@ Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käyt
     1. Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
 
 
+## <a name="view-connection-parameters-and-other-information-in-pos"></a>Yhteysparametrien ja muiden tietojen tarkasteleminen myyntipisteessä
+
+Yhteysparametrien ja muiden tietojen tarkasteleminen myyntipisteessä tapahtuu seuraavasti.
+
+1. Avaa Modern POS (MPOS) tai Cloud POS (CPOS).
+1. Valitse **Asetukset**. Jos kirjanpidon integrointi on otettu käyttöön, oikealla olevassa **Verotuksen integrointi** -osassa näkyvät seuraavat tiedot:
+
+    - Verorekisteröinnin tila
+    - Viimeisimmän verotapahtuman tila
+    - Odottavien seurantatapahtumien määrä
+
+1. Voit näyttää seuraavat tiedot valitsemalla **Tiedot**:
+
+    - Rekisteröintiprosessin vaiheet
+    - Yhteysparametrit
+    - Tarkistustapahtumien tiedot
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

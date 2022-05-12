@@ -1,26 +1,26 @@
 ---
-title: Finance and Operations -sovellusten palvelunkuvaus
-description: Tässä ohjeaiheessa esitetään Finance and Operations -sovellusten palvelunkuvaus.
+title: Talous- ja toimintosovellusten palvelukuvaus
+description: Tässä ohjeaiheessa esitetään talous- ja toimintosovellusten palvelukuvaus.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952363"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656800"
 ---
-# <a name="service-description-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten palvelunkuvaus
+# <a name="service-description-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten palvelukuvaus
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations -sovellukset ovat yrityksen resurssisuunnittelun (ERP) ohjelmisto palveluna (SaaS) -tuotteita, jotka perustuvat [Microsoft Azureen](https://azure.microsoft.com/overview/what-is-azure/) ja on suunniteltu sitä varten. Finance and Operations -palvelu tarjoaa organisaatioille ERP-toimintoja, jotka tukevat niiden yksilöllisiä vaatimuksia ja auttavat niitä mukautumaan jatkuvasti muuttuviin liiketoimintaympäristöihin ilman tarvetta hallita infrastruktuuria. Finance and Operations -sovellukset voivat sisältää yhden tai useampia seuraavista ratkaisualueista:
+Talous- ja toimintosovellukset ovat yrityksen toiminnanohjauksen (ERP) ohjelmisto palveluna (SaaS) -tuotteita, jotka perustuvat [Microsoft Azureen](https://azure.microsoft.com/overview/what-is-azure/) ja on suunniteltu sitä varten. Talous- ja toimintopalvelu tarjoaa organisaatioille ERP-toimintoja, jotka tukevat niiden yksilöllisiä vaatimuksia ja auttavat niitä mukautumaan jatkuvasti muuttuviin liiketoimintaympäristöihin ilman tarvetta hallita infrastruktuuria. Talous- ja toimintosovellukset voivat sisältää yhden tai useampia seuraavista ratkaisualueista:
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
@@ -32,21 +32,21 @@ Yhdessä [yritystietojen](/power-bi/fundamentals/power-bi-service-overview), [in
 
 - Sisäinen [mukautuskokemus](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) -työkalut
-- [Visual Studio](https://visualstudio.microsoft.com) -pohjainen [Finance and Operationsin ohjelmistonkehityspaketti (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) ja [Azure DevOpsin kehitysautomaatio](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
+- [Visual Studio](https://visualstudio.microsoft.com) -pohjainen [Talous- ja toiminto-ohjelmistonkehityspaketti (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) ja [Azure DevOpsin kehitysautomaatio](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Riippumattomien ohjelmistotoimittajien (ISV) ratkaisut [AppSourcesta](https://appsource.microsoft.com/partners)
 
 Asiakkaat valitsevat ratkaisuvaihtoehtonsa vaatimustensa perusteella. Ne määrittävät, kehittävät ja testaavat ratkaisunsa yhteistyössä käyttöönottokumppaninsa kanssa käyttämällä [Microsoft Dynamics Lifecycle Servicesin (LCS)](../../dev-itpro/lifecycle-services/lcs.md) työkaluja ja parhaita käytäntöjä. Yleisiä skenaarioita on neljä:
 
-- Vakiomallisten Finance and Operations -sovellusten käyttövalmis määritys (ei laajennuksia)
-- Finance and Operations -sovellusten määritys, johon kuuluu vähintään yksi ISV-ratkaisu
-- Finance and Operations -sovellusten määritys, johon kuuluu vähintään yksi asiakaskohtainen laajennus
-- Finance and Operations -sovellusten määritys, johon kuuluu yhdistelmä asiakaskohtaisista laajennuksista ja vähintään yhdestä ISV-ratkaisusta
+- Talous- ja toimintovakiosovellusten käyttövalmis konfigurointi (ei laajennuksia)
+- Talous- ja toimintosovellusten konfigurointi, joka sisältää vähintään yhden ISV-ratkaisun
+- Talous- ja toimintosovellusten määritys, johon kuuluu vähintään yksi asiakaskohtainen laajennus
+- Talous- ja toimintosovellusten määritys, johon kuuluu yhdistelmä asiakaskohtaisista laajennuksista ja vähintään yhdestä ISV-ratkaisusta
 
 Organisaatiot voivat täsmätä liiketoiminnan kasvunsa lisäämällä käyttäjiä ja liiketoimintaprosesseja yksinkertaisen ja avoimen ylläpitosopimusmallin avulla. Lisätietoja: [Dynamics 365:n käyttöoikeusopas](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365).
 
 ## <a name="operating-model"></a>Toimintamalli
 
-Finance and Operations -sovellusten toimintamalli määrittää asiakkaalle, käyttöönottokumppanille ja Microsoftille erityisiä rooleja ja vastuita palvelun koko elinkaaren ajalle. Lisätietoja: [Pilvipalvelut ja huolto](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
+Talous- ja toimintosovellusten toimintamalli määrittää asiakkaalle, käyttöönottokumppanille ja Microsoftille erityisiä rooleja ja vastuita palvelun koko elinkaaren ajalle. Lisätietoja: [Pilvipalvelut ja huolto](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ### <a name="customer-activities"></a>Asiakkaan toimet
 
@@ -61,7 +61,7 @@ Asiakkaat työskentelevät kumppaninsa kanssa ottaakseen ratkaisunsa käyttöön
 
 ### <a name="microsoft-responsibilities"></a>Microsoftin vastuut
 
-Microsoft hallitsee Finance and Operations -palvelua ottamalla käyttöön asiakkaan eristys- ja tuotantoympäristöjä Microsoft SaaS-ylläpitosopimuksessa sekä seuraamalla niitä aktiivisesti ja huoltamalla niitä. Tähän hallintaan kuuluu palvelun suorittamiseen vaadittavan järjestelmäinfrastruktuurin kohdistaminen sekä ennakoiva palvelun kuntoa koskeva viestintä asiakkaiden kanssa. Vastuualueisiin kuuluvat:
+Microsoft hallitsee talous- ja toimintopalvelua ottamalla käyttöön asiakkaan eristys- ja tuotantoympäristöjä Microsoft SaaS-ylläpitosopimuksessa sekä seuraamalla niitä aktiivisesti ja huoltamalla niitä. Tähän hallintaan kuuluu palvelun suorittamiseen vaadittavan järjestelmäinfrastruktuurin kohdistaminen sekä ennakoiva palvelun kuntoa koskeva viestintä asiakkaiden kanssa. Vastuualueisiin kuuluvat:
 
 **Infrastruktuurinhallinta**
 - Suojaus ja eristys
@@ -79,7 +79,7 @@ Microsoft hallitsee Finance and Operations -palvelua ottamalla käyttöön asiak
 
 ## <a name="system-configuration"></a>Järjestelmän konfigurointi
 
-Finance and Operations -sovellukset skaalautuvat tapahtumakoon ja käyttäjäkuorman mukaan. Kunkin asiakastoteutuksen tuloksena on ainutkertainen ratkaisu, joka koostuu seuraavista osista:
+Talous- ja toimintosovellukset skaalautuvat tapahtumakoon ja käyttäjäkuorman mukaan. Kunkin asiakastoteutuksen tuloksena on ainutkertainen ratkaisu, joka koostuu seuraavista osista:
 
 - **Tietokokoonpano** – Yksilöllinen parametrijoukko, joka ohjaa toimintaa, organisaation rakennetta, päätietojen (kuten taloushallinto- ja varastodimensiot) rakennetta sekä tapahtumaseurannan tarkkuutta.
 - **Laajennus ja määritys** – Laajennusmekanismeja, jotka käyttävät koodilaajennuksia, ISV-ratkaisuja ja yksilöityjä määrityksiä, jotka sisältävät työnkulkuja, integrointeja ja raportinmäärityksiä.
@@ -89,11 +89,11 @@ Microsoft määrittää asiakkaan tuotantoympäristöt, jotka mitoitetaan käsit
 
 - Tuotantoympäristöjen resurssien oikea kohdistaminen asiakkaan [LCS:n tilauksen arviointityökalussa](../../dev-itpro/lifecycle-services/subscription-estimator.md) olevien asiakkaan profilointitietojen perusteella
 - Tuotantoympäristöjen palvelun käytettävyyden jatkuva seuranta
-- Finance and Operations -sovellusten järjestelmän suorituskykyongelmien analysointi ja vianmääritys
+- Talous- ja toimintosovellusten järjestelmän suorituskykyongelmien analysointi ja vianmääritys
 
 Varmistaakseen, että toteutus on määritetty korkeaa suorituskykyä varten asiakkaiden on suoritettava seuraavat tehtävät:
 
-- Tarkkojen Finance and Operations -toteutuksen käyttötietojen antaminen [LCS:n tilauksen arviointityökalussa](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- Tarkkojen talous- ja toimintototeutuksen käyttötietojen antaminen [LCS:n tilauksen arviointityökalussa](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Suorituskyvyn ja koon laajennusten kehittäminen ja testaus
 - Tietomääritysten asianmukainen testaus suorituskyvyn osalta
 - Skaalautuvuuden varmistaminen suorittamalla [suorituskykytestausta](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) ennen lopullista käyttöönottoa.
@@ -112,17 +112,17 @@ Lisätietoja: [Käyttöönotto- ja toteutusprojekti](../imp-lifecycle/onboard.md
 
 ## <a name="globalization"></a>Maailmanlaajuinen toiminta
 
-Finance and Operations -sovelluksia tarjotaan useilla eri Azure-alueilla ympäri maailmaa. Finance and Operations -sovellukset tukevat eri maita tai alueita ja äidinkieliä. Lisätietoja: [Lokalisointi- ja säädösominaisuudet](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
+Talous- ja toimintosovelluksia tarjotaan useilla eri Azure-alueilla ympäri maailmaa. Talous- ja toimintosovellukset tukevat eri maita tai alueita ja äidinkieliä. Lisätietoja: [Lokalisointi- ja säädösominaisuudet](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
 
 ### <a name="countryregion-specific-considerations"></a>Maa- tai aluekohtaiset seikat
 
-- Säädellyissä teollisuus- tai kauppaorganisaatioissa toimivat asiakkaat, jotka harjoittavat liiketoimintaa sellaisten Ranskassa toimivien yritysten kanssa, joilta vaaditaan paikallista tietojen sijaintia, kannattaa tutustua aiheeseen [Finance and Operations Ranskassa](../../dev-itpro/deployment/france-local-deployment.md).
-- Asiakkaiden, jotka toimivat Kiinassa kannattaa tutustua artikkeleihin [Azure Kiinassa -käsikirja](/azure/china/) ja [Finance and Operations 21Vianetin tarjoamana Kiinassa](../../dev-itpro/deployment/china-local-deployment.md).
+- Säädellyissä teollisuus- tai kauppaorganisaatioissa toimivat asiakkaat, jotka harjoittavat liiketoimintaa sellaisten Ranskassa toimivien yritysten kanssa, joilta vaaditaan paikallista tietojen sijaintia, kannattaa tutustua aiheeseen [Talous- ja toimintosovellukset Ranskassa](../../dev-itpro/deployment/france-local-deployment.md).
+- Asiakkaiden, jotka toimivat Kiinassa kannattaa tutustua artikkeleihin [Azure Kiinassa -käsikirja](/azure/china/) ja [Talous- ja toimintosovellukset 21Vianetin tarjoamana Kiinassa](../../dev-itpro/deployment/china-local-deployment.md).
 - Venäjällä toimivien asiakkaiden kannattaa tutustua aiheeseen [Venäjän henkilötietojen lokalisointilaki](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Yleinen tietosuoja-asetus (GDPR)
 
-Finance and Operations -sovelluksissa Microsoft toimii henkilötietojen käsittelijänä. Henkilötietojen käsittelijänä Finance and Operations tarjoaa prosesseja ja ominaisuuksia, joiden avulla asiakkaat voivat täyttää GDPR-velvollisuutensa rekisterinpitäjänä. Lisätietoja: [GDPR-yhteenveto](../../dev-itpro/gdpr/gdpr-guide.md).
+Talous- ja toimintosovellusten osalta Microsoft toimii käsittelijänä. Henkilötietojen käsittelijänä talous- ja toimintosovellukset tarjoavat prosesseja ja ominaisuuksia, joiden avulla asiakkaat voivat täyttää GDPR-velvollisuutensa rekisterinpitäjänä. Lisätietoja: [GDPR-yhteenveto](../../dev-itpro/gdpr/gdpr-guide.md).
 
 ## <a name="environment-and-data-management"></a>Ympäristön- ja tiedonhallinta
 
@@ -182,7 +182,7 @@ LCS tarjoaa [valmistelua itsepalveluna](../../dev-itpro/deployment/infrastructur
 
 ## <a name="data-backup-and-retention"></a>Tietojen varmuuskopiointi ja säilytys
 
-SaaS-tilauksen Finance and Operations -ympäristöjen tietokannat suojataan automaattisin varmuuskopioin. Tuotantoympäristöjen osalta automaattisia varmuuskopioita säilytetään 28 päivää, ellei Microsoft suorita palautusta. Eristysympäristöjen (taso 2–) osalta ne säilytetään seitsemän päivää. Tuotantoympäristön palautus voidaan suorittaa, jos tapahtuu virhe minkä tahansa suunnitellun ylläpitopäivityksen yhteydessä.
+SaaS-tilauksen Talous- ja toimintoympäristöjen tietokannat suojataan automaattisin varmuuskopioin. Tuotantoympäristöjen osalta automaattisia varmuuskopioita säilytetään 28 päivää, ellei Microsoft suorita palautusta. Eristysympäristöjen (taso 2–) osalta ne säilytetään seitsemän päivää. Tuotantoympäristön palautus voidaan suorittaa, jos tapahtuu virhe minkä tahansa suunnitellun ylläpitopäivityksen yhteydessä.
 
 Lisätietoja automaattisista varmuuskopioista: [Automaattiset varmuuskopiot – Azuren SQL-tietokanta ja SQL:n hallittu esiintymä](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -228,9 +228,9 @@ Seuraavassa taulukossa kuvataan palvelun tyypillisiä skenaarioita ja toimia. si
 
 ## <a name="service-update-strategy"></a>Palvelun päivitysstrategia
 
-Sovellukset noudattavat [ohjelmistojen elinkaarikäytännön](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations mukaisesti Microsoftin [modernia elinkaarikäytäntöä](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), joka kattaa jatkuvasti huolletut ja tuetut tuotteet. 
+Talous- ja toimintosovellukset noudattavat [ohjelmistojen elinkaarikäytännön](../../dev-itpro/migration-upgrade/versions-update-policy.md) mukaisesti Microsoftin [modernia elinkaarikäytäntöä](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), joka kattaa jatkuvasti huolletut ja tuetut tuotteet. 
 
-Microsoft julkaisee vuosittain kahdeksan Finance and Operations -sovellusten päivitystä seuraavina kuukausina:
+Microsoft julkaisee vuosittain kahdeksan talous- ja toimintosovellusten päivitystä seuraavina kuukausina:
 
 - Tammikuu
 - Helmikuu
@@ -255,7 +255,7 @@ Lisätietoja on seuraavissa aiheissa:
 
 ## <a name="security-and-administrative-access"></a>Suojaus- ja järjestelmänvalvojan käyttöoikeudet
 
-Järjestelmänvalvojan käyttöoikeuksia Finance and Operationsin tuotantoympäristöön valvotaan ja kirjataan lokiin tarkasti. Asiakastietoja käsitellään [Microsoftin online-palvelujen ehtojen](https://www.microsoft.com/licensing/terms/productoffering) mukaisesti. 
+Järjestelmänvalvojan käyttöoikeuksia talous- ja toimintotuotantoympäristöön valvotaan ja kirjataan lokiin tarkasti. Asiakastietoja käsitellään [Microsoftin online-palvelujen ehtojen](https://www.microsoft.com/licensing/terms/productoffering) mukaisesti. 
 
 ### <a name="customer-administrative-access"></a>Asiakkaan järjestelmänvalvojan käyttöoikeudet
 
@@ -264,7 +264,7 @@ Asiakkaan vuokraajajärjestelmänvalvoja voi käyttää tuotantoesiintymiä ja m
 | Ympäristön tyyppi | Tarkoitus | Asiakkaan käyttöoikeustaso |
 |---|---|---|
 | **Muu kuin tuotanto**<br>Tason 1 eristys | Muu kuin tuotantoympäristö, jonka asiakkaat ottavat käyttöön kehitystä, esittelyä tai koulutusta varten. | Tason 1 eristys (jota kutsutaan myös pilvipalveluympäristöksi) on asiakkaan hallitsema VM, joka otetaan käyttöön asiakkaan Azure-tilauksessa LCS:n kautta. Koska kyseessä on VM asiakkaan Azure-tilauksessa, asiakkaalla on täydet järjestelmänvalvojan käyttöoikeudet ympäristöön etätyöpöydän kautta. |
-| **Muu kuin tuotanto**<br>Tier 2 (tai sitä suurempi) eristys | Muu kuin tuotantoympäristö, jonka asiakkaat ottavat käyttöön käyttäjähyväksyntätestausta, integraatiotestausta, koulutusta, valmistelua tai mitä tahansa muuta tuotantoa edeltävää skenaariota varten. | Tason 2 ja sitä korkeampien tasojen eristysympäristöt otetaan käyttöön Finance and Operationsin SaaS-tilauksessa. Käyttöoikeudet Azuren SQL-tietokantoihin, jotka on yhdistetty muuhun kuin tuotantoympäristöön, myönnetään [just-in-time-käyttöoikeuksien muodossa](../../dev-itpro/database/database-just-in-time-jit-access.md). Etätyöpöydän käyttö ei ole mahdollista. |
+| **Muu kuin tuotanto**<br>Tier 2 (tai sitä suurempi) eristys | Muu kuin tuotantoympäristö, jonka asiakkaat ottavat käyttöön käyttäjähyväksyntätestausta, integraatiotestausta, koulutusta, valmistelua tai mitä tahansa muuta tuotantoa edeltävää skenaariota varten. | Tason 2 ja sitä korkeampien tasojen eristysympäristöt otetaan käyttöön talous- ja toimintosovellusten SaaS-tilauksessa. Käyttöoikeudet Azuren SQL-tietokantoihin, jotka on yhdistetty muuhun kuin tuotantoympäristöön, myönnetään [just-in-time-käyttöoikeuksien muodossa](../../dev-itpro/database/database-just-in-time-jit-access.md). Etätyöpöydän käyttö ei ole mahdollista. |
 | **Tuotantoympäristö** | Tuotantoympäristö otetaan käyttöön, kun projekti on [valmis alustavaan lopulliseen käyttöönottoon](/imp-lifecycle/environment-planning.md#production-system-readiness). | Tuotantoympäristöjä otetaan käyttöön SaaS-tilauksessa. Niitä käytetään yksinomaan selaimen, palvelun päätepisteiden tai LCS:n kautta. |
 
 ### <a name="microsoft-administrative-access"></a>Microsoftin järjestelmänvalvojan käyttöoikeudet
@@ -296,7 +296,7 @@ Lisätietoja vakavuustasoista esitetään [tässä vakavuustaulukossa](/power-pl
 
 ## <a name="business-continuity-through-high-availability-and-disaster-recovery"></a>Liiketoiminnan jatkuvuus korean käytettävyyden ja järjestelmäpalautuksen kautta 
 
-Microsoft tarjoaa liiketoiminnan jatkuvuutta ja järjestelmäpalautusta Finance and Operations -sovellusten tuotantoesiintymille, Azuren alueellisten käyttökatkojen tapauksissa. Lisätietoja [Liiketoiminnan jatkuvuus ja järjestelmäpalautus](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
+Microsoft tarjoaa liiketoiminnan jatkuvuutta ja järjestelmäpalautusta talous- ja toimintosovellusten tuotantoesiintymille, Azuren alueellisten käyttökatkojen tapauksissa. Lisätietoja, mukaan lukien palvelun palautusajan tavoite (RTO) ja palautuspisteen tavoite (RPO), on kohdassa [Liiketoiminnan jatkuvuus ja palautuminen vikatilanteista](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
 - **Korkea käytettävyys** – Korkean käytettävyyden toiminto tarjoaa tapoja sellaisten käyttökatkojen vähentämiseksi, jotka aiheutuvat yksittäisestä solmusta Azure-palvelinkeskuksessa. Kunkin palvelun pilviarkkitehtuuri käyttää Azuren käytettävyyssarjoja käsittelytasolla estääkseen yksittäisten vikakohtien tapaukset. Tietokantojen korkea käyttävyys tarjotaan [Azure SQL:n korkean käytettävyyden ominaisuuksilla](/azure/azure-sql/database/high-availability-sla).
 - **Järjestelmäpalautus** – [Azuren järjestelmäpalautusominaisuudet](/azure/best-practices-availability-paired-regions) suojaavat jokaista palvelua käyttökatkoilta, jotka vaikuttavat laajasti kokonaiseen Azure-palvelinkeskukseen. Tässä on esimerkkejä näistä ominaisuuksista:
@@ -305,28 +305,19 @@ Microsoft tarjoaa liiketoiminnan jatkuvuutta ja järjestelmäpalautusta Finance 
     - Maantieteellisesti päällekkäiset kopiot Azuren blob-tallennustilasta (joka sisältää asiakirjaliitteitä) muilla Azure-alueilla.
     - Toissijainen alue Azure SQL:n ja Azuren blob-tallennustilan replikoinneille.
 
-Ensisijaisten tietosäiliön replikointia tuetaan. Siksi kunkin palvelun komponentit, kuten Management Reporter ja yksikkösäilö, käyttävät ensisijaisesta tietokannasta muunnettuja tietoja. Nämä tiedot on luotava sen jälkeen, kun palautussivusto on määritetty ja palvelu on käynnistetty. Asiakkaan koodiartefakteja ja palautettuja tietosäiliöitä käytetään sijainnin uuteen käyttöönottoon. Uusi käyttöönotto mahdollistaa käsittelysolmujen sekä verkkopalvelujen ja muiden komponenttien tilan replikoinnin, jotta palautettuja tietosäilöjä voidaan käyttää toissijaisen sijainnin määrittämiseen. Jos järjestelmäpalautusta käytetään asiakkaan tuotantoesiintymän palauttamiseen, Microsoft ja asiakas täyttävät [tapauksenhallinnan](service-description.md#incident-management) velvollisuutensa.
+Jos järjestelmäpalautusta käytetään asiakkaan tuotantoesiintymän palauttamiseen, Microsoft ja asiakas täyttävät [tapauksenhallinnan](service-description.md#incident-management) velvollisuutensa.
 
-Microsoftin järjestelmäpalautuksen suunnitelmia ja menettelyjä tutkitaan jatkuvasti järjestelmä- ja organisaatio-ohjauksen (SOC) auditoinneilla. Nämä vaatimustenmukaisuuden auditoinnit vahvistavat Microsoftin järjestelmänpalautuksen teknistä ja menettelyllistä prosessia, johon kuuluvat Dynamics 365 Finance and Operations -sovellukset. [SOC-vaatimustenmukaisuuden](/compliance/regulatory/offering-soc-2) auditointiraportit ja muut vaatimustenmukaisuusraportit ovat saatavilla [Microsoft Trust Centerin vaatimustenmukaisuustarjonnassa](/compliance/regulatory/offering-home).
+Microsoftin järjestelmäpalautuksen suunnitelmia ja menettelyjä tutkitaan jatkuvasti järjestelmä- ja organisaatio-ohjauksen (SOC) auditoinneilla. Nämä vaatimustenmukaisuuden auditoinnit vahvistavat Microsoftin järjestelmänpalautuksen teknistä ja menettelyllistä prosessia, johon kuuluvat Dynamics 365:n talous- ja toimintosovellukset. [SOC-vaatimustenmukaisuuden](/compliance/regulatory/offering-soc-2) auditointiraportit ja muut vaatimustenmukaisuusraportit ovat saatavilla [Microsoft Trust Centerin vaatimustenmukaisuustarjonnassa](/compliance/regulatory/offering-home).
 
-| Microsoftin vastuut | Asiakkaan vastuut |
-|---|---|
-| Microsoft valmistelee Azuren yhdistettyyn palvelinkeskukseen toissijaisen ympäristön, kun ensisijainen tuotantoesiintymä otetaan käyttöön. Lisätietoja: [Liiketoiminnan jatkuvuus ja järjestelmäpalautus: Azuren yhdistetyt alueet](/azure/best-practices-availability-paired-regions). | None |
-| Microsoft ottaa Azure SQL:n ja Azure blob-tallennustilan maantieteellisen päällekkäisyyden käyttöön, kun ensisijainen tuotantoesiintymä otetaan käyttöön. | None |
-| Microsoft ottaa automaattisen varmuuskopioinnin käyttöön Azuren SQL-tietokannoissa. | None |
-| <p>Käyttökatkoksen yhteydessä Microsoft märittää, onko asiakkaalle luotava vikasietoalue ja menetetäänkö tietoja. Asiakkaat voivat kokea tietojen menetystä jopa 15 minuuttia riippuen katkon luonteesta ja ajasta. | Tietojen häviämisen tapauksessa asiakkaan voi olla tarpeen antaa kirjallinen suostumus vikasietoalueen käynnistämistä varten. |
-| Kun vikasietoalue otetaan käyttöön, kulloinenkin palvelu toimii rajoitetussa tilassa. Päivitysylläpitoa ei voi käynnistää vikasietotilassa. | Asiakas ei voi pyytää pakettien käyttöönottoa tai esittää muita tavanomaisia ylläpitopyyntöjä vikasietotilassa. |
-| Kun palvelinkeskus tulee käyttöön, Microsoft palaa ensisijaisen Azure-alueen tuotantoesiintymään. Normaalit työvaiheet jatkuvat. | Asiakkaan voi olla tarpeen antaa suostumus tuotantoesiintymään palaamiseen ensisijaisella Azure-alueella. |
+## <a name="finance-and-operations-support-offerings"></a>Talous- ja toimintotuen tarjooma
 
-## <a name="finance-and-operations-support-offerings"></a>Finance and Operationsin tukitarjonta
-
-Tekninen tuki on saatavilla markkina-alueilla, joilla tarjotaan Finance and Operations -palveluja. [Tukikokemukset](../../dev-itpro/lifecycle-services/lcs-support.md) tarjotaan LCS:ssä tai Finance and Operations -sovelluksissa. Seuraavassa on muutamia esimerkkejä:
+Tekninen tuki on saatavilla markkina-alueilla, joilla tarjotaan talous- ja toimintopalveluja. [Tukikokemukset](../../dev-itpro/lifecycle-services/lcs-support.md) tarjotaan LCS:ssä tai talous- ja toimintosovelluksissa. Seuraavassa on muutamia esimerkkejä:
 
 - [Ongelmahaku](../../dev-itpro/lifecycle-services/issue-search-lcs.md) LCS:ssä
-- [Integroitu tekninen tuki](../../dev-itpro/lifecycle-services/support-experience.md) Finance and Operations -sovelluksissa
+- [Integroitu tekninen tuki](../../dev-itpro/lifecycle-services/support-experience.md) talous- ja toimintosovelluksissa
 - [Tuen pilvipalvelu](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md) LCS:ssä
 
-Microsoft tarjoaa Finance and Operationsin asiakkaille kolme tukisopimusta: Premier, suora ammattilaistuki ja tilaukseen sisältyvä tuki. Tuen taso vaihtelee sopimuksen mukaan. Seuraavassa taulukossa esitetään kolmen sopimuksen vertailu.
+Microsoft tarjoaa talous- ja toimintoasiakkaille kolme tukisopimusta: Premier, suora ammattilaistuki ja tilaukseen sisältyvä tuki. Tuen taso vaihtelee sopimuksen mukaan. Seuraavassa taulukossa esitetään kolmen sopimuksen vertailu.
 
 | Tukitoiminto | Premier | Suora Professional-tuki | Tilaus |
 |---|---|---|---|
@@ -341,7 +332,7 @@ Lisätietoja on kohdassa [Tuen yleiskatsaus](/power-platform/admin/support-overv
 
 ### <a name="process-to-engage-support"></a>Yhteydenotto tukeen
 
-Tapauksissa, jotka liittyvät Finance and Operations -sovelluksiin, asiakkaat lähettävät Microsoftille tukipalvelupyyntöjä LCS:n kautta. CSS käsittelee tapaukset asiakkaan tukisopimuksen ja CSS:n määrittämän tapauksen vakavuuden perusteella.
+Tapauksissa, jotka liittyvät talous- ja toimintosovelluksiin, asiakkaat lähettävät Microsoftille tukipalvelupyyntöjä LCS:n kautta. CSS käsittelee tapaukset asiakkaan tukisopimuksen ja CSS:n määrittämän tapauksen vakavuuden perusteella.
 
 ### <a name="service-level-agreement"></a>Palvelutasosopimus
 
@@ -349,7 +340,7 @@ Microsoft on sitoutunut palvelun 99,9-prosenttiseen kuukausittaiseen käytettäv
 
 ## <a name="important-resources"></a>Tärkeät resurssit
 
-- **[Trust Center](https://www.microsoft.com/trust-center)** – Hanki tietoja siitä, mihin Finance and Operations -tietosi on tallennettu sekä lisätietoja yksityisyyden, vaatimustenmukaisuuden ja suojauksen menettelyistä.
+- **[Trust Center](https://www.microsoft.com/trust-center)** – Hanki tietoja siitä, mihin talous- ja toimintotietosi on tallennettu sekä lisätietoja yksityisyyden, vaatimustenmukaisuuden ja suojauksen menettelyistä.
 - **[Käyttöoikeusehdot ja -dokumentaatio](https://www.microsoftvolumelicensing.com/)** – Hanki nopea pääsy käyttöoikeuksien ehtoihin, edellytyksiin ja täydentäviin tietoihin, jotka ovat merkityksellisiä Microsoftin volyymikäyttöoikeusohjelmien kautta lisensoitujen tuotteiden ja palvelujen käytön kannalta.
 - **[Käyttöoikeusehdot](https://www.microsoft.com/licensing/product-licensing/)** – Tämän sivun resurssit määrittävät niiden ohjelmisto- ja verkkopalvelutuotteiden ehdot ja edellytykset, jotka ostat Microsoftin kaupallisten lisensointiohjelmien kautta.
 - **[Microsoftin elinkaarikäytäntö](/lifecycle/)** – Tämä sivu tarjoaa yhdenmukaisia ja ennustettavissa olevia ohjeita tuen käytettävyydestä koko tuotteen elinkaaren ajalta.
@@ -366,7 +357,7 @@ Maantieteellinen alue, jolla on yksi tai useampi Azure-palvelinkeskus. Esimerkke
 
 ### <a name="business-process-modeler-bpm"></a>[Liiketoimintaprosessien mallintaja](../../dev-itpro/lifecycle-services/bpm-overview.md)
 
-LCS:ssä oleva työkalu, joka auttaa jonkin käyttöönoton sovitus- ja aukkoanalyysin tekemisessä käyttämällä American Productivity & Quality Centerin (APQC) liiketoimintaprosessien määritelmiä, joita tuetaan Finance and Operations -sovelluksissa.
+LCS:ssä oleva työkalu, joka auttaa jonkin käyttöönoton sovitus- ja aukkoanalyysin tekemisessä käyttämällä American Productivity & Quality Centerin (APQC) liiketoimintaprosessien määritelmiä, joita tuetaan talous- ja toimintosovelluksissa.
 
 ### <a name="cloud-solution-provider"></a>Pilviratkaisun tarjoaja
 
@@ -374,7 +365,7 @@ Microsoftin pilvipalveluratkaisujen toimittajien (CSP) ohjelmaan kuuluva kumppan
 
 ### <a name="customer"></a>Asiakas
 
-Liiketoimintayksikkö, joka käyttää Finance and Operations -sovelluksia ja jota Office 365:ssa edustaa vuokraaja.
+Liiketoimintayksikkö, joka käyttää talous- ja toimintosovelluksia ja jota Office 365:ssä edustaa vuokraaja.
 
 ### <a name="development-environment"></a>Kehitysympäristö
 
@@ -386,19 +377,19 @@ Mikä tahansa jakso, jonka aikana käyttäjät eivät voi kirjautua tai käyttä
 
 ### <a name="implementation-partner"></a>Käyttöönottokumppani
 
-Kumppani, jonka asiakas valitsee Finance and Operations -ratkaisujensa mukauttamista, määrittämistä, käyttöönottoa ja hallintaa varten.
+Kumppani, jonka asiakas valitsee talous- ja toimintoratkaisujensa mukauttamista, määrittämistä, käyttöönottoa ja hallintaa varten.
 
 ### <a name="incident"></a>Tapaus
 
-Ongelma, jonka asiakkaat kohtaavat Finance and Operations -palvelun käytön aikana ja josta he lähettävät palvelupyynnön LCS:n kautta.
+Ongelma, jonka asiakkaat kohtaavat talous- ja toimintopalvelun käytön aikana ja josta he lähettävät palvelupyynnön LCS:n kautta.
 
 ### <a name="microsoft-customer-support-services-css"></a>Microsoftin asiakastuki (CSS)
 
-Microsoftin maailmanlaajuinen tukiryhmä, joka on sitoutunut tarjoamaan korkealaatuista palveluja Finance and Operations -sovelluksia varten.
+Microsoftin maailmanlaajuinen tukiryhmä, joka on sitoutunut tarjoamaan korkealaatuista palveluja talous- ja toimintosovelluksia varten.
 
 ### <a name="microsoft-dynamics-lifecycle-services-lcs"></a>Microsoft Dynamics Lifecycle Services (LCS)
 
-Finance and Operations -sovellusten koekäytöstä käyttöönottoon, tuotannonjälkeiseen hallintaan ja tukeen ulottuvan elinkaarihallinnan hallintaportaali. Lisätietoja: [Lifecycle Services -resurssit](../../dev-itpro/lifecycle-services/lcs.md).
+Talous- ja toimintosovellusten koekäytöstä käyttöönottoon, tuotannonjälkeiseen hallintaan ja tukeen ulottuvan elinkaarihallinnan hallintaportaali. Lisätietoja: [Lifecycle Services -resurssit](../../dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="non-production-instance"></a>Muu kuin tuotantoesiintymä
 
@@ -412,15 +403,15 @@ Lisätietoja tasoista 2–5: [Oikean tason 2 tai sitä korkeamman tason ympäris
 
 ### <a name="production-instance"></a>Tuotantoesiintymä
 
-Finance and Operations -ympäristö, jota asiakas käyttää "suorien" päivittäisten tapahtumiensa ja liiketoimintaprosessiensa hallintaan.
+Talous- ja toimintoympäristö, jota asiakas käyttää "suorien" päivittäisten tapahtumiensa ja liiketoimintaprosessiensa hallintaan.
 
 ### <a name="sandbox-environment"></a>Eristysympäristö
 
 Muu kuin tuotantoympäristö, jota asiakas käyttää esittelyihin, koulutuksen, käyttäjien hyväksyntätestaukseen, laajennusten vahvistamiseen ja muihin testaustehtäviin.
 
-### <a name="service"></a>Huolto
+### <a name="service"></a>Palvelu
 
-Mikä tahansa Finance and Operations -sovelluksiin sisältyvä ydinprosessi.
+Mikä tahansa talous- ja toimintosovelluksiin sisältyvä ydinprosessi.
 
 ### <a name="service-level-agreement-sla-for-microsoft-online-services"></a>Microsoftin verkkopalveluita koskeva palvelutasosopimus (SLA)
 
@@ -428,7 +419,7 @@ Microsoftin verkkopalveluihin sovellettava palvelutasosopimus. Lisätietoja: [Pa
 
 ### <a name="service-update"></a>Palvelupäivitys
 
-Microsoft huoltaa Finance and Operations -ympäristöjä jatkuvasti palvelupäivitysten kautta. Asiakkaat määrittävät oman palvelupäivityskalenterinsa liiketoiminnan tarpeiden mukaan. Lisätietoja: [Yhden version palvelupäivitykset](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+Microsoft huoltaa talous- ja toimintoympäristöjä jatkuvasti palvelupäivitysten kautta. Asiakkaat määrittävät oman palvelupäivityskalenterinsa liiketoiminnan tarpeiden mukaan. Lisätietoja: [Yhden version palvelupäivitykset](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
 
@@ -436,4 +427,4 @@ Kehys, joka ohjaa toteutusta järjestelmällisesti arvioinneilla kriittisissä v
 
 ### <a name="user"></a>Käyttäjä
 
-Yksittäinen henkilö, joka käyttää Finance and Operations -ympäristöjä ja joka liittyy asiakkaan vuokraajaan.
+Yksittäinen henkilö, joka käyttää talous- ja toimintoympäristöjä ja joka liittyy asiakkaan vuokraajaan.

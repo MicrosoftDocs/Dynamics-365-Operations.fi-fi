@@ -2,7 +2,7 @@
 title: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 description: Tässä aiheessa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487833"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644729"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20210"></a>Versio 2.0.21.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Korjattu useita kaatumisongelmia.
+- Korjattu ongelma, jonka vuoksi osaa merkeistä ei tunnistettu oletussivun skannaamisen tai kirjoittamisen aikana.
+- Korjattu ongelma, jossa askelpalauttimen kirjoittaminen oletussivulle poistaa kaksi merkkiä kerrallaan.
+- Korjattu ongelma, jossa **Työluettelo**-sivun **Lajittelu**-kenttä näyttää virheellisen arvon, joka ei vastaa korttien varsinaista lajittelujärjestystä.
+- Korjattu ongelma, jossa virheellinen asettelu näkyy sen jälkeen, kun sovellusikkunan kokoa on muutettu suoritettaessa Microsoft Windowsissa.
+- Korjattu ongelma, jossa ponnahdusluetteloon vieritys saattaa aiheuttaa sen, että osa luettelon nimikkeistä jää piiloon tai ne saattavat näkyä vääristyneinä.
+- Kirjautumissivu uudelleenmuotoiltu, jolloin se näyttää käyttäjänimi- ja salasanakentät samalla sivulla suuremmissa näytöissä.
+- Parannettiin tapaa, jolla ohjausobjektit reagoivat pikanapautuksiin.
+- Lisätty sovelluksen sisäinen virhelokinäkymä.
+- Lisättiin useita käytettävyysparannuksia (esimerkiksi paranneltu puhetoiminto, korjattu puuttuvat paikkamerkit Androidissa ja näppäimistösyötteen käyttäminen liukusäädinohjausobjekteille).
 
 ## <a name="version-20200"></a>Versio 2.0.20.0
 

@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c820c320410c43cafaae43c59cad04efdee24ab2
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 617e97272fb4bd7cea0958958ae99648bb847b56
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388441"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614066"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 Tässä aiheessa on ohjeita, jotka koskevat Italian verotulostimen integrointiesimerkin käyttöönottoa Microsoft Dynamics 365 Commerce Retail -ohjelmistokehityspaketista (SDK) kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja verointegroinnin esimerkistä on kohdassa [Verotulostimen integroinnin esimerkki (Italia)](emea-ita-fpi-sample.md). 
 

@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
-ms.openlocfilehash: 65315a9fd6bc1af26bc225220e096aee4da09be2
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 16079ba5ca830625c4f18df9fe6b5b307217183d
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388156"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614041"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Saksan tilikausirekisteröintipalvelun integroinnin malli
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
 

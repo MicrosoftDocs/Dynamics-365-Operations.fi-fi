@@ -2,7 +2,7 @@
 title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uusi ruudukkotoiminto on otettava käyttöön näiden ominaisuuksien käyttämistä varten.
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 08348185a424d20b6da1563189496b7dd51944d9
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 57133a853d1700b2d8ebb938f93af475410b82cb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602959"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644354"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -106,7 +106,7 @@ Jos haluat käyttää tätä toimintoa, napsauta hiiren kakkospainikkeella sarak
 - Tämän ryhmän tietorivien määrä
 - Kaikkien summattavaksi määritettyjen sarakkeiden välisummat
 
-Kun [Tallennetut näkymät](saved-views.md) ovat käytössä, tämä ryhmittely voidaan tallentaa mukautuksen mukaan osana nopean käytön näkymää seuraavaa sivuvierailua varten.
+Kun [Tallennetut näkymät](saved-views.md) on käytössä, voit tallentaa ryhmittelyn niiden sivujen näkymän osana, joiden avulla voit tallentaa kyselyitä näkymiin. Esimerkiksi ne, joilla on suuren näkymän valitsimet. Lisätietoa on [Näkymien välillä vaihtaminen](saved-views.md#switching-between-views) -osiossa. 
 
 ### <a name="multiple-levels-of-grouping"></a>Useita ryhmittelytasoja
 Kun olet ryhmitellyt tiedot yhden sarakkeen mukaan, voit ryhmitellä tiedot eri sarakkeen mukaan valitsemalla **Ryhmittele tämän sarakkeen mukaan** halutussa sarakkeessa. Tämä prosessi voidaan toistaa, kunnes ryhmittelyssä on viisi sisäkkäistä tasoa, mikä on suurin tuettu syvyys. Tässä vaiheessa et voi enää ryhmitellä lisäsarakkeiden mukaan.

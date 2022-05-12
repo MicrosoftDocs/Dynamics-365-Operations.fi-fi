@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
+ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469810"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648706"
 ---
 # <a name="get-started-with-planning-optimization"></a>Suunnittelun optimoinnin aloittaminen
 
@@ -40,7 +40,7 @@ Ennen suunnittelun optimoinnin ottamista käyttöön on syytä arvioida suunnitt
 
 ## <a name="availability"></a>Saatavuus
 
-Suunnittelun optimointi on tällä hetkellä käytettävissä seuraavilla Azuren maantieteellisillä alueilla: Yhdysvallat, Kanada, Eurooppa, Yhdistynyt kuningaskunta, Australia, Tyynenmeren Aasia, Japani ja Intia. Jos yrität asentaa apuohjelman toiselta maantieteelliseltä alueelta, LCS näyttää sanoman, jonka mukaan tätä maantieteellistä aluetta ei tueta. Lisätietoja Azuren maantieteellisistä alueista ja niihin liittyvistä alueista on ohjeaiheessa [Azuren maantieteelliset alueet](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Suunnittelun optimointi on tällä hetkellä käytettävissä seuraavilla Azuren maantieteellisillä alueilla: Yhdysvallat, Kanada, Brasilia, Eurooppa, Yhdistynyt kuningaskunta, Australia, Tyynenmeren Aasia, Japani ja Intia. Jos yrität asentaa apuohjelman toiselta maantieteelliseltä alueelta, LCS näyttää sanoman, jonka mukaan tätä maantieteellistä aluetta ei tueta. Lisätietoja Azuren maantieteellisistä alueista ja niihin liittyvistä alueista on ohjeaiheessa [Azuren maantieteelliset alueet](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Huomaa, että suunnittelun optimointi ei tue Dynamics 365 Supply Chain Management -järjestelmän paikallisia käyttöönottoja.
 

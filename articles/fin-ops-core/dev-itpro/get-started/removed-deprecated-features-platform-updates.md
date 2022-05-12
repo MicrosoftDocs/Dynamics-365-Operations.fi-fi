@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
 author: sericks007
-ms.date: 03/08/2022
+ms.date: 04/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396546"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644604"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -32,7 +32,19 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
 
-## <a name="feature-removal-effective-march-14-2022"></a>Ominaisuuden poistaminen tulee voimaan 14. maaliskuuta 2022
+## <a name="feature-deprecation-effective-april-2022"></a>Huhtikuussa 2022 poistettavat ominaisuudet
+
+### <a name="xml-url-resolution-in-data-management"></a>XML:n URL-selvitys tietojenhallinnassa 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Poistamme XML URL -ratkaisun tuen, koska se on määritetty mahdolliseksi tietoturvariskiksi. Tämä tarkoittaa, että XML-tiedostoihin liittyviä ulkoisia resursseja ei enää ratkaista.  |
+| **Onko toinen ominaisuus korvannut?**   | Ei |
+| **Tuotealueet, joihin vaikutetaan**         | Taloushallinnon ja toimintojen sovellukset |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut. |
+
+## <a name="feature-deprecation-effective-march-14-2022"></a>14.3.2022 poistettavat ominaisuudet
 
 ### <a name="xslt-scripting-in-data-management"></a>XSLT-komentosarjat tiedonhallinnassa
 
@@ -40,9 +52,9 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | XSLT-komentotiedoston tuki tietojenhallinnassa on vanhentunut, jotta talous- ja toimintosovellusten tietoturvaa ja tietosuojaa voidaan parantaa.  |
 | **Onko toinen ominaisuus korvannut?**   | Ei Asiakkaiden ja ISVs:n tulisi harkita X++-kielisten ratkaisujensa ostamista XSLT-komentotiedoston paikalla. |
-| **Tuotealueet, joihin vaikutetaan**         | Talous- ja toimintosovellukset. |
-| **Käytön asetukset**              | Kaikki. |
-| **Tila**                         | Vanhentunut - suunniteltu poistopäivä 14. maaliskuuta 2022.<br><br>Poikkeus: Asiakkaat, jotka käyttävät tällä hetkellä XLST-komentosarjoja. He voivat yhä käyttää sitä, kunnes ne päivittyvät versioon 10.0.30 tai sitä myöhemmäksi. Tätä poikkeusta lukuun ottamatta asiakkaat ovat saaneet ilmoituksen Microsoft 365 järjestelmänvalvojan keskuksessa käytettävissä olevassa sanomakeskuksessa. |
+| **Tuotealueet, joihin vaikutetaan**         | Taloushallinnon ja toimintojen sovellukset |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut <br><br>**Poikkeus:** Asiakkaat, jotka käyttävät tällä hetkellä XLST-komentosarjoja. He voivat yhä käyttää sitä, kunnes ne päivittyvät versioon 10.0.30 tai sitä myöhemmäksi. Aiemmissa versioissa poikkeus vanhenee 31.1.2023. Tätä poikkeusta lukuun ottamatta asiakkaat ovat saaneet ilmoituksen Microsoft 365 järjestelmänvalvojan keskuksessa käytettävissä olevassa sanomakeskuksessa. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Ominaisuuden poistaminen tulee voimaan lokakuussa 2021
 

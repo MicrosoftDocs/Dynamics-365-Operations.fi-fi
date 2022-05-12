@@ -2,7 +2,7 @@
 title: ER-muodon parametrien määrittäminen yrityskohtaisesti
 description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) muodon parametrien yrityskohtaista määrittämistä.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927451"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644496"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>ER-muodon parametrien määrittäminen yrityskohtaisesti
 
@@ -226,7 +226,7 @@ Jos määrität sovelluskohtaiset parametrit yhdelle ER-muotoa versiolle ja tuot
 Kun valitset tuotavan tiedoston, kyseisen tiedoston sovelluskohtaisten parametrien rakennetta verrataan vastaavan tuotavaksi valitun ER-muodon **Haku**-tyypin tietolähteiden rakenteeseen. Oletusarvoisesti tuonti suoritetaan vain, jos kunkin sovelluskohtaisen parametrin rakenne vastaa vastaavan tietolähteen rakennetta tuotavaksi valitussa ER-muodossa. Jos rakenteet eivät vastaa toisiaan, saat varoitussanoman, jonka mukaan tuontia ei vois suorittaa. Jos pakotat tuonnin, valitun ER-muodon aiemmin luodut sovelluskohtaiset parametrit tyhjennetään ja ne on määritettävä alusta alkaen.
 
 
-Dynamics 365 Financen versiosta 10.0.24 alkaen voit muuttaa oletustoimintatapaa ja välttää virhesanoman ottamalla käyttöön **Kohdista sähköisen raportoinnin sovelluskohtaiset parametrit tuonnin aikana** -ominaisuuden käyttöön **Ominaisuuksienhallinta**-työtilassa. Kun tämä ominaisuus on käytössä ja tuotavien sovelluskohtaisten parametrien rakenne poikkeaa vastaavien tietolähteiden rakenteesta tuotavaksi valitussa kohde-ER-muodosta, tuonti onnistuu seuraavissa tapauksissa:
+Financen versiosta 10.0.24 alkaen voit muuttaa oletustoimintatapaa ja välttää virhesanoman ottamalla käyttöön **Kohdista sähköisen raportoinnin sovelluskohtaiset parametrit tuonnin aikana** -ominaisuuden käyttöön **Ominaisuuksienhallinta**-työtilassa. Kun tämä ominaisuus on käytössä ja tuotavien sovelluskohtaisten parametrien rakenne poikkeaa vastaavien tietolähteiden rakenteesta tuotavaksi valitussa kohde-ER-muodosta, tuonti onnistuu seuraavissa tapauksissa:
 
 - Kohde-ER-muodon rakennetta on muutettu lisäämällä uusia ehtosarakkeita kaikkiin olemassa oleviin **Haku**-tyypin tietolähteisiin. Kun tuonti on suoritettu, sovelluskohtaiset parametrit päivitetään. Jokaisen lisätyn ehtosarakkeen arvot alustetaan kyseisen sarakkeen [tietotyypin](er-formula-supported-data-types-primitive.md) oletusarvolla kaikissa sovelluskohtaisten parametrien tuoduissa tietueissa.
 - Kohde-ER-muodon rakennetta on muutettu poistamalla ehtosarakkeita kaikista olemassa olevista **Haku**-tyypin tietolähteistä. Kun tuonti on suoritettu, sovelluskohtaiset parametrit päivitetään. Jokaisen poistetun ehtosarakkeen arvot on poistettu kaikista tuotujen sovelluskohtaisten parametrien tietueista.
@@ -235,9 +235,33 @@ Dynamics 365 Financen versiosta 10.0.24 alkaen voit muuttaa oletustoimintatapaa 
 
 Kun tuonti on valmis, suoritetaan edellä mainittujen muutosten lisäksi tuotujen sovelluskohtaisten parametrien tilan muuttaminen arvoon **Käynnissä**. Varoitussanoma kertoo, että automaattisesti oikaistuja sovelluskohtaisia parametreja on muutettava manuaalisesti.
 
+#### <a name="replicate-parameters"></a>Replikoi parametrit
+
+Financen versiosta 10.0.27 alkaen voit kopioida parametrit, jotka määritit yhdessä yrityksessä, muihin yrityksiin samaan aikaan.
+
+Parametreja kopioidaan seuraavalla tavalla.
+
+1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+2. Valitse **Raportointikonfiguraatiot**.
+3. Valitse määrityspuussa muoto **LE-tietojen haun oppimismuoto**.
+4. Valitse toimintoruudussa **Konfiguroinnit**-välilehden **Sovelluskohtaiset parametrit**-ryhmässä **Määritys**.
+5. Valitse ER-muodon versio **1.1.1**.
+6. Valitse toimintoruudussa **Replikoi**.
+7. Valitse **Replikoi**-valintaikkunan **Yritykset**-välilehdestä yritykset, johon haluat kopioida parametrit.
+
+    > [!NOTE]
+    > Kohdeyritysten luetteloa tarjotaan vain käyttäjille, joilla on [käyttöoikeusrooli](../sysadmin/role-based-security.md#security-roles), joka on määritetty myöntämään käyttöoikeudet kaikkiin organisaatioihin.
+
+8. Valitse **OK**.
+
+    > [!NOTE]
+    > Vahvistusvalintaikkunassa on tietoja, jos jotkin kohdeyritykset sisältävät aiemmin konfiguroituja parametreja ER-muodon valitulle versiolle. Valitse **Kyllä**, jos haluat ohittaa parametrit kopioimalla parametrit nykyisestä yrityksestä.
+
+    Sovelluskohtaisten parametrien konfiguroitu joukko kopioidaan nyt valituille yrityksille.
+
 ### <a name="reuse-existing-parameters"></a>Olemassa olevien parametrien käyttäminen uudelleen
 
-Dynamics 365 Financen versiosta 10.0.2 alkaen yhdelle ER-muodon versiolle määritettyjä sovelluskohtaisia parametreja voi käyttää uudelleen, kun suoritetaan samn muodon uudempaa versiota. Ota tätä varten käyttöön **Käytä sovelluskohtaisia parametreja sähköisen raportoinnin muotojen aiemmista versioista** -ominaisuus **Ominaisuuksienhallinta**-työtilassa. Kun tämä ominaisuus on käytössä ja suoritat yhden version ER-muodosta, joka yrittää lukea sovelluskohtaisia parametreja, ER yrittää löytää sovelluskohtaisia parametreja, jotka on määritetty käynnissä olevalle muodon versiolle. Jos sellaisia ei ole käytettävissä, sellaisia, jotka on määritetty lähimmälle aikaisemmalle muodon versiolle.
+Financen versiosta 10.0.23 alkaen yhdelle ER-muodon versiolle määritettyjä sovelluskohtaisia parametreja voi käyttää uudelleen, kun suoritetaan saman muodon uudempaa versiota. Voit käyttää olemassa olevia parametreja ottamalla käyttöön **Käytä sovelluskohtaisia parametreja sähköisen raportoinnin muotojen aiemmista versioista** -ominaisuuden **Ominaisuuksienhallinta**-työtilassa. Kun tämä ominaisuus on käytössä ja suoritat yhden version ER-muodosta, joka yrittää lukea sovelluskohtaisia parametreja, ER yrittää löytää sovelluskohtaisia parametreja, jotka on määritetty käynnissä olevalle muodon versiolle. Jos sellaisia ei ole käytettävissä, ER yrittää löytää sellaisia, jotka on määritetty lähimmälle aikaisemmalle muodon versiolle.
 
 > [!NOTE]
 > Voit käyttää sovelluskohtaisia parametreja uudelleen vain kulloiseenkin yritykseen liittyen.

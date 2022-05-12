@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 642ba812156a95e9b0be2e996d4a93096a5809a9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468325"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618257"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
 
@@ -37,6 +37,7 @@ Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuun
 | Varmuusvaraston tarvekohdistus ja nettotarpeet | *Varmuusvarasto*-vaatimustyyppi ei kuulu **Nettotarpeet**-sivuun eikä se näy kyseisellä sivulla. Varmuusvarasto ei edusta kysyntää eikä siihen liity tarvepäivämäärää. Sen sijaan se asettaa rajoituksen sille, kuinka paljon varastoa on oltava aina käytettävissä. **Pienin arvo**-kenttä otetaan silti huomioon, kun suunniteltuja tilauksia lasketaan pääsuunnittelun aikana. On suositeltavaa tarkistaa **Kertynyt määrä** -sarake **Nettotarpeet**-sivulla, jotta nähdään, että tämä arvo otettiin huomioon. |
 | Kuljetuskalenteri | **Toimitustavat**-sivun **Kuljetuskalenteri**-sarakkeen arvo ohitetaan. |
 | Kattavuuden vähimmäis-/enimmäiskoodi ilman arvoja| Kun käytössä on sisäinen suunnittelumoduuli, jossa käytetään vähimmäis-/enimmäiskattavuuskoodia, jossa ei ole määritetty vähimmäis- tai enimmäisarvoja, suunnittelumoduuli käsittelee kattavuuskoodia vaatimuksena ja luo yhden tilauksen kutakin tarvetta varten. Suunnittelun optimointia käytetään, kun järjestelmä luo yhden tilauksen päivää kohden, jotta se kattaa päivän koko summan.  |
+| Nettotarpeet ja manuaalisesti luodut suunnitellut tilaukset | Sisäänrakennetun suunnittelumoduulin avulla nimikkeelle luodut manuaalisesti luodut toimitustilaukset näkyvät automaattisesti nimikkeen nettovaatimusten joukossa. Kun esimerkiksi luot ostotilauksen myyntitilauksesta, ostotilaus näkyy **Nettotarpeet**-sivulla ilman, että aiempia toimenpiteitä tarvitaan. Tämä johtuu siitä, että sisäänrakennettu suunnittelumoduuli kirjaa varastotapahtumat `inventLogTTS`-tauluun ja näyttää muutokset dynaamisten suunnitelmien **Nettotarpeet**-sivulla. Suunnittelun optimointia käytettäessä manuaalisesti luodut tilaukset eivät kuitenkaan näy nimikkeen nettotarpeissa, ennen kuin suunnittelun optimointi suoritetaan (käyttäen suunnitelmaa, joka sisältää nimikkeen) tai ennen kuin valitset **Nettotarpeet**-sivun toimintoruudussa **Päivitä \> Pääsuunnittelu**, mikä suorittaa nimikkeen pääsuunnittelun. Lisätietoja **Nettotarpeet**-sivun käytöstä on kohdassa [Nettotarpeet ja tarvekohdistaminen suunnittelun optimointia käyttämällä](net-requirements.md). |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

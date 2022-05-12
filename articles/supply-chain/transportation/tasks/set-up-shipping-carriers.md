@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567653"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660376"
 ---
 # <a name="set-up-shipping-carriers"></a>Lähetyksen rahdinkuljettajien määrittäminen
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567653"
 
 Tässä aiheessa kuvataan, kuinka voit asettaa rahdinkuljettajan ja määrittää tiedot, kuten palvelu, lähetystila, kuljetuksen maksuväline, kuljetusrajoitukset ja lähetyshinta. Kuljetuskoordinaattori voi sitten määrittää lähtevälle tai saapuvalle kuormalle rahdinkuljettajan.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Uuden lähetyksen rahdinkuljettajan luominen
+
 1. Valitse **Siirtymisruutu > Moduulit > Kuljetustenhallinta > Asetukset > Rahdinkuljettajat > Lähetyksen rahdinkuljettajat**.
 2. Valitse toimintoruudussa **Uusi**.
 3. Syötä **Lähetyksen rahdinkuljettaja** -kenttään arvo.
@@ -36,6 +36,7 @@ Tässä aiheessa kuvataan, kuinka voit asettaa rahdinkuljettajan ja määrittä�
 5. Valitse **Tila**-kentästä vaihtoehto avattavasta valikosta.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan yleistietojen täyttäminen
+
 1. Ota käyttöön **Yleiskuvaus**-osan laajennus.
 2. Valitse **Aktivoi lähetyksen rahdinkuljettaja** -valintaruutu tai poista sen valinta.
 3. Valitse **Toimittajan tili**-kentästä vaihtoehto avattavasta valikosta. Valitse toimittajan tili, johon lähetyksen rahdinkuljettaja liitetään.  
@@ -43,13 +44,16 @@ Tässä aiheessa kuvataan, kuinka voit asettaa rahdinkuljettajan ja määrittä�
 5. Valitse **Aktivoi rahdinkuljettajan luokitus** -valintaruutu tai poista sen valinta.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan tarvitsemien palveluiden luominen
+
 1. Ota käyttöön **Palvelut**-osan laajennus.
 2. Valitse **Uusi**.
 3. Syötä **Rahdinkuljettajan palvelu** -kenttään arvo.
 4. Kirjoita arvo **Nimi**-kenttään.
-5. Valitse **Kuljetusmenetelmä**-kentästä vaihtoehto avattavasta valikosta.
+5. Valitse **Kuormamallin tunnus** -kentässä palveluun liitettävä kuormamalli. Kuormamalli määrittää koko kuorman painon ja tilavuuden enimmäismitat. Kuormamalli voi esittää esimerkiksi kontin tai kuorma-auton koon. Kuormamallin tunnukset määritetään myös kuorman luontimalleissa ja käytettäessä [kuorman luonnin työtilaa](load-building-workbench.md), jonka avulla voit käyttää kuormituksen muodostamisstrategioita kuormituksen luomiseen. Näin järjestelmä voi täsmätä jokaisen uuden kuormituksen sopivaan rahdinkuljettajapalveluun vertaamalla määritettyjä kuormamallin tunnuksia.
+6. Valitse **Kuljetusmenetelmä**-kentästä vaihtoehto avattavasta valikosta.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Rahdinkuljettajan osoitteen määrittäminen (valinnainen)
+
 1. Ota käyttöön **Osoitteet**-osan laajennus.
 2. Valitse **Uusi**.
 3. Kirjoita **Nimi tai kuvaus** -kenttään arvo.
@@ -59,6 +63,7 @@ Tässä aiheessa kuvataan, kuinka voit asettaa rahdinkuljettajan ja määrittä�
 7. Valitse **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Lähetyksen rahdinkuljettajan luokituksen profiilin määrittäminen
+
 1. Ota **Luokituksen profiilit** -osan laajennus käyttöön.
 2. Valitse **Uusi**.
 3. Syötä **Luokituksen profiili** -kenttään arvo.

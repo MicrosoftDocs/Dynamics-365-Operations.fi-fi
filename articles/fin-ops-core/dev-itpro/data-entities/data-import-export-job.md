@@ -2,7 +2,7 @@
 title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071082"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644456"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -74,8 +74,11 @@ Valitse yksikölle tuonnin tai viennin tietomuoto sitä valitessasi. Muodot mä�
 > [!NOTE]
 > On tärkeää valita oikea arvo asetuksille **Rivin erotin**, **Sarakkeen erotin** ja **Tekstimäärite**, jos **Tiedostomuoto**-asetuksen arvona on **Erotettu**. Varmista, että tiedot eivät sisällä erottimena tai määritteenä käytettyä merkkiä, koska tämä voi johtaa virheisiin tuonnissa ja viennissä.
 
+> [!NOTE]
+> Jos tiedostomuoto on XML-perustainen, varmista, että käytät vain sallittuja merkkejä. Lisätietoja kelvollista merkeistä on kohdassa [Sallitut merkit XML 1.0:ssä](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 ei salli ohjausmerkkejä lukuun ottamatta sarkaimia, rivinvaihtoja ja rivisyöttöjä. Virheellisiä merkkejä ovat esimerkiksi hakasulkeet, aaltosulkeet ja kenoviivat. 
+
 ### <a name="sequence-the-entities"></a>Aseta yksiköt sarjaan
-Yksiköt voi järjestää tietomallissa tai tuonti- ja vientitöissä. Kun suoritat työn, joka sisältää useamman tietoyksikön, varmista, että yksiköt on järjestetty oikein. Yksiköt järjestetään ensisijaisesti siten, että voit käsitellä kaikki yksiköiden väliset toiminnalliset riippuvuudet. Jos yksiköillä ei ole toiminnallisia riippuvuuksia, ne voidaan ajoittaa tuotavaksi tai vietäväksi rinnakkain.
+Yksiköt voi järjestää tietomallissa tai tuonti- ja vientitöissä. Kun suoritat työn, joka sisältää useamman tietoyksikön, varmista, että yksiköt on järjestetty oikein. Yksiköt järjestetään ensisijaisesti siten, että voit käsitellä kaikki yksiköiden väliset toiminnalliset riippuvuudet. Jos yksiköillä ei ole toiminnallisia riippuvuuksia, ne voidaan ajoittaa tuotavaksi tai vietäväksi rinnakkain. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Suoritusyksiköt, -tasot ja -sarjat
 Yksiköiden tuonti- tai vientijärjestystä valvovat ensin suoritusyksikön arvot, sitten suoritusyksikön taso ja lopulta sarja.

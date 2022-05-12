@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384744"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644341"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -111,17 +111,67 @@ Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttö
 
 - *(Esiversio) Todellisen painon nimikkeiden raportointi tuotannon käyttöliittymästä*
 
+### <a name="enable-the-my-day-dialog"></a>Päivän tehtävät -valintaikkunan ottaminen käyttöön
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+**Päivän tehtävät** -valintaikkunassa työntekijöille on yleiskuvaus päivittäisistä rekisteröinneistä ja palkallisen ajan, palkallisen ylityöajan, poissaolojen ja palkallisen poissaolon nykyisistä saldoista.
+
+Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Tuotannon käyttöliittymän Päivän tehtävät -näkymä*
+
+### <a name="enable-teams"></a>Ota ryhmät käyttöön
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Kun samaan tuotantotyöhön on liitetty useita työntekijöitä, he voivat muodostaa ryhmän. Tiimi voi nimetä yhden työntekijän vetäjäksi. Jäljellä olevista työntekijöistä tulee tämän jälkeen automaattisesti tämän vetäjän avustajia. Tuloksena olevassa ryhmässä vain vetäjän on rekisteröitävä työn tila. Aikatietueita käytetään kaikille ryhmän jäsenille.
+
+Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Tuotantoryhmät tuotannon käyttöliittymässä*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Ota käyttöön lisämääritys tuotannon käyttöliittymässä
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Tämä ominaisuus lisää seuraavien toimintojen asetukset **Määritä tuotannon suoritus** -sivulle:
+
+- Avaa **Aloita työ**-valintaikkuna automaattisesti, kun haku on valmis.
+- Avaa **Raportointi on meneillään**-valintaikkuna automaattisesti, kun haku on valmis.
+- Voit täyttää jäljellä olevan määrän valmiiksi **Raportointi on meneillään** -valintaikkunassa.
+- Ota käyttöön materiaalikulutuksen oikaisut **Raportointi on meneillään** -valintaikkunassa. (Tämä toiminto edellyttää myös *Rekisteröi materiaalin kulutus tuotannon käyttöliittymässä (muu kuin VHJ)* -toimintoa.)
+- Ota projektin tunnus käyttöön hakuperusteena.
+
+Tietoja asetusten käytöstä on jäljempänä tässä ohjeaiheessa.
+
+Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Lisämääritys tuotannon käyttöliittymässä*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Tuotannon käyttöliittymämääritysten käyttäminen
 
 Voit luoda ja ylläpitää tuotannon toteutuksen määrityksiä valitsemalla **Tuotannonhallinta \> Määritys \> Tuotannonohjaus \> Määritä tuotantoliittymä**. **Määritä tuotantoliittymä** -sivulla on luettelo aiemmin luoduista määrityksistä. Tällä sivulla voi tehdä seuraavia toimenpiteitä:
 
 - Valitse vasemmassa sarakkeessa oleva tuotantomääritykset, jos haluat tarkastella ja muokata niitä.
-- Valitse toimintoruudusta **Uusi**, kun haluat lisätä luetteloon uuden konfiguraation. Anna sitten **Määritys**-kenttään nimi, jolla uusi määritys on helppo tunnistaa. Annetun nimen oltava yksilöivä kaikkien määritysten joukossa, eikä sitä voi muokata myöhemmin.
+- Valitse toimintoruudusta **Uusi**, kun haluat lisätä luetteloon uuden konfiguraation. Anna sitten **Määritys**-kenttään nimi, jolla uusi määritys on helppo tunnistaa. Annetun nimen oltava yksilöivä kaikkien määritysten joukossa, eikä sitä voi muokata myöhemmin. Voit valinnaisesti antaa määrityksen kuvauksen **Kuvaus**-kentässä.
 
-Määritä seuraavaksi valitun määrityksen asetukset. Seuraavat kentät ovat käytettävissä:
+Määritä seuraavaksi valitun konfiguraation eri asetukset seuraavissa aliosissa kuvatulla tavalla.
 
-- **Vain sisään- ja uloskirjaus** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat luoda yksinkertaistetun liittymän, jossa on vain sisään- ja uloskirjaustoiminnot. Tällöin suurin osa sivun muista asetuksista poistuu käytöstä. Ennen tämän asetuksen käyttöönottoa on poistettava kaikki rivit **Välilehtivalinta**-pikavälilehdestä.
-- **Ota haku käyttöön** - Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat sisällyttää työluetteloon hakukentän. Työntekijät voivat etsiä tietyn työn syöttämällä työtunnuksen tai etsimällä tietyn tilauksen kaikki työt antamalla tilaustunnuksen. Työntekijät voivat syöttää tunnuksen näppäimistön avulla tai skannaamalla viivakoodia.
+### <a name="the-general-fasttab"></a>Yleiset-pikavälilehti
+
+**Yleiset** -pikavälilehdessä on seuraavat tiedot.
+
+- **Vain sisään- ja uloskirjaus** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat luoda yksinkertaistetun liittymän, jossa on vain sisään- ja uloskirjaustoiminnot. Tämä asetus poistaa suurimman osan sivun muista asetuksista käytöstä. Ennen tämän asetuksen käyttöönottoa on poistettava kaikki rivit **Välilehtivalinta**-pikavälilehdestä.
+- **Ota haku käyttöön** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat sisällyttää työluetteloon hakukentän. Työntekijät voivat etsiä tietyn työn syöttämällä työtunnuksen tai etsimällä tietyn tilauksen kaikki työt antamalla tilaustunnuksen. Työntekijät voivat syöttää tunnuksen näppäimistön avulla tai skannaamalla viivakoodia.
+- **Ota projektin tunnus käyttöön hakuperusteena** – Määritä tämän asetuksen arvoksi *Kyllä*, kun haluat, että työntekijät voivat tehdä hakuja projektin tunnuksen (työtunnuksen ja tilaustunnuksen lisäksi) perusteella tuotannon käyttöliittymän hakukentässä. Voit määrittää tämän asetuksen arvoksi *Kyllä* vain, jos **Ota haku käyttöön** -asetuksen arvoksi on myös määritetty *Kyllä*.
+- **Avaa aloitusikkuna automaattisesti** – *Kyllä*-vaihtoehtoa käytettäessä **Aloita työ** -valintaikkuna avautuu automaattisesti, kun työntekijät etsivät työtä hakurivin avulla.
+- **Avaa Raportointi on meneillään -ikkuna automaattisesti** – *Kyllä*-vaihtoehtoa käytettäessä **Raportointi on meneillään** -valintaikkuna avautuu automaattisesti, kun työntekijät etsivät työtä hakurivin avulla.
+- **Ota materiaalin oikaisu käyttöön** – Ota **Materiaalin oikaiseminen** käyttöön **Raportointi on meneillään** -valintaikkunassa valitsemalla *Kyllä*. Työntekijät voivat säätää kunkin tuotantotyön materiaalikulutusta valitsemalla tämän painikkeen.
 - **Ilmoita määrä uloskuittauksessa** – Määritä asetukseksi *Kyllä*, jos haluat, että työntekijöitä pyydetään antamaan palautetta meneillään olevista töistä, kun he kuittaavat itsensä ulos. Jos asetuksena on *Ei*, työntekijät eivät saa tätä kehotetta.
 - **Lukitse työntekijä** – Jos asetuksena on *Ei*, työntekijät kirjautuvat ulos heti, kun he tekevät rekisteröinnin (kuten uuden työn): Käyttöliittymä palaa sitten kirjautumissivulle. Kun asetuksena on *Kyllä*, työntekijät pysyvät kirjautuneena tuotannon käyttöliittymään. Työntekijä voi kuitenkin kirjautua ulos manuaalisesti, jolloin toinen työntekijä voi kirjautua sisään, jolloin tuotannon käyttöliittymää käytetään edelleen samalla järjestelmäkäyttäjätilillä. Lisätietoja tämän tyyppisistä tileistä on kohdassa [Määritetyt käyttäjät](config-job-card-device.md#assigned-users).
 - **Käytä todellista kirjaamisaikaa** – Jos asetuksen on *Kyllä*, kukin uusi kirjaus vastaa tarkkaa aikaa, jolloin työntekijä on lähettänyt rekisteröitymisen. Jos asetuksena on *Ei*, käytössä on kirjautumisaika. Yleensä tämä asetus on *Kyllä*, jos **Lukitse työntekijä**- ja/tai **Yksittäinen työntekijä** -asetuksena on *Kyllä* tilanteissa, joissa työntekijät pysyvät usein kirjautuneina pitkiä aikoja.
@@ -130,7 +180,17 @@ Määritä seuraavaksi valitun määrityksen asetukset. Seuraavat kentät ovat k
 - **Näytön lukituksen kesto** – Jos **Salli kosketusnäytön lukitus** -asetuksena on *Kyllä*, tällä asetuksella voi määrittää, kuinka monta sekuntia kosketusnäyttö on lukittu puhdistusta varten. Keston on oltava 5 – 120 sekunnin välillä.
 - **Luo rekisterikilpi** – Jos asetuksena on *Kyllä*, voit luoda uuden rekisterikilven aina, kun työntekijä ilmoittaa tuotannon käyttöliittymässä olevansa valmis. Rekisterikilpinumero muodostetaan **Varastonhallinnan parametrit** -sivulla määritetystä numerosarjasta. Kun asetus on *Ei*, työntekijöiden on määritettävä aiemmin määritetty rekisterikilpi, kun he ilmoittavat työn valmistumisesta.
 - **Tulosta etiketti** – Jos asetuksena on *Kyllä*, voit haluat tulostaa rekisterikilven otsikon, kun työntekijä ilmoittaa valmistumisesta tuotannon käyttöliittymällä. Etiketin konfiguraatio määritetään tiedoston reitityksessä, kuten on kuvattu kohteessa [Rekisterimerkintöjen asiakirjan reititysasettelu](../warehousing/document-routing-layout-for-license-plates.md).
-- **Välilehtivalinta** – Tämän osan asetuksilla valitaan, mitkä välilehdet näytetään tuotannon käyttöliittymässä, kun nykyinen määritys on aktiivinen. Voit määrittää tarvittavan määrän välilehtiä sekä lisätä ja järjestää ne sitten täällä tarpeen mukaan. Lisätietoja välilehtien suunnittelemisesta ja näiden asetusten käyttämisestä on kohdassa [Tuotannon käyttöliittymän suunnitteleminen](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>Välilehden valinta -pikavälilehti
+
+**Välilehden valinta** -pikavälilehden asetuksilla valitaan, mitkä välilehdet näytetään tuotannon käyttöliittymässä, kun nykyinen määritys on aktiivinen. Voit suunnitella niin monta välilehteä kuin on tarpeen, ja sen jälkeen voit lisätä ja järjestää niitä tarpeen mukaan käyttämällä pikavälilehtityökalurivin painikkeita. Lisätietoja välilehtien suunnittelemisesta ja näiden asetusten käyttämisestä on kohdassa [Tuotannon käyttöliittymän suunnitteleminen](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>Raportointi on meneillään -pikavälilehti
+
+**Raportointi on meneillään** -pikavälilehdessä on seuraavat tiedot:
+
+- **Ota materiaalin oikaisu käyttöön** – Sisällytä **Materiaalin oikaiseminen** **Raportointi on meneillään** -valintaikkunaan valitsemalla *Kyllä*. Työntekijät voivat säätää kunkin tuotantotyön materiaalikulutusta valitsemalla tämän painikkeen.
+- **Oletusarvoinen jäljellä oleva määrä** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat täyttää tuotantotyön odotetun jäljellä olevan määrän ennakkoon **Raportointi on meneillään** -valintaikkunassa.
 
 ## <a name="clean-up-job-configurations"></a>Työmääritysten poistaminen
 

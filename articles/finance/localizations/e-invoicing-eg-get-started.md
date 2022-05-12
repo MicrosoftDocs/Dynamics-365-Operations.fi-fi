@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371353"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661719"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Sähköinen laskutus (Egypti)
 
@@ -42,7 +42,7 @@ Ennen kuin voit aloittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten on
     - [Microservices-lisäosan asentaminen Lifecycle Servicesissa](e-invoicing-install-add-in-microservices-lcs.md)
     
 - Aktivoi Microsoft Dynamics 365 Finance- tai Dynamics 365 Supply Chain Management -sovelluksen ja sähköisen laskutuspalvelun välinen integrointi [Sähköisen laskutuksen integroinnin aktivointi ja määritys](e-invoicing-activate-setup-integration.md) -kohdassa kuvatulla tavalla.
-- Luo digitaalisen sertifikaatin salaisuus Azure Key Vaultissa, ja määritä se kohdassa [Asiakkaan varmenteet ja salaiset koodit](e-invoicing-customer-certificates-secrets.md) kuvatulla tavalla. Testitarkoituksia varten Egyptin veroviranomainen antaa erityisiä digitaalisia sertifikaatteja, joita on käytettävä vain testaus- ja ratkaisutarkistuksen vaiheiden aikana. Lisätietoja voit saada Egyptin verotusviranomaisen verkkosivustosta käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Luo digitaalisen sertifikaatin salaisuus Azure Key Vaultissa, ja määritä se kohdassa [Asiakkaan varmenteet ja salaiset koodit](e-invoicing-customer-certificates-secrets.md) kuvatulla tavalla. Testitarkoituksia varten Egyptin veroviranomainen antaa erityisiä digitaalisia sertifikaatteja, joita on käytettävä vain testaus- ja ratkaisutarkistuksen vaiheiden aikana. Lisätietoja voit saada Egyptin verotusviranomaisen verkkosivustosta käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Sähköisen laskutuksen maakohtainen konfigurointi Egyptin sähköinen laskutus (EG) -ominaisuudelle
 
@@ -56,7 +56,7 @@ Osa **Egyptin sähköinen lasku (EG) – sähköinen laskutus** -ominaisuuden pa
 6. Valitse **Käsittelyputki**-välilehden **Käsittelyputki**-osasta **Allekirjoita JSON-tiedosto Egyptin veroviranomaiselle** -toiminto.
 7. Valitse **Parametrit**-osassa **Varmenteen nimi** ja valitse sitten luomasi digitaalisen varmenteen nimi.
 8. Valitse **Käsittelyputki**-osasta **Integroi Egyptin ETA-palvelun kanssa**. Toista tämä vaihe kahdelle tämän toiminnon esiintymälle.
-9. Valitse **Parametrit**-osassa **Verkkopalvelun URL-osoite** ja **Kirjautumispalvelun URL-osoite**. Tarkista sitten URL-parametrit. Egyptin verotusviranomaisen verkkosivustosta saat testauksen ja tuotannon URL-osoitteen käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+9. Valitse **Parametrit**-osassa **Verkkopalvelun URL-osoite** ja **Kirjautumispalvelun URL-osoite**. Tarkista sitten URL-parametrit. Egyptin verotusviranomaisen verkkosivustosta saat testauksen ja tuotannon URL-osoitteen käyttäen linkkiä paketista [Egyptin e-laskutuksen SDK](https://sdk.invoicing.eta.gov.eg/faq/).
 10. Valitse **Tallenna** ja sulje sivu.
 11. Toista vaiheet 4–10 **Projektilasku, johdettu** -ominaisuusasetuksille.
 

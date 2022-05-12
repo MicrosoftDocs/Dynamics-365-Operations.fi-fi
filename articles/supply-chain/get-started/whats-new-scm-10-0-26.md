@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Supply Chain Managementin version 10.0.26 esikatselu (toukokuu 2022)
+title: Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.26. (toukokuu 2022)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.26 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
 ms.date: 03/01/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 996988b1a4d59ae9ad7b4031e492824c0a6abc95
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 0724045824f39f316c8b3dbb06a48eb6ca6dbef3
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547870"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625248"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Managementin version 10.0.26 esikatselu (toukokuu 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.26. (toukokuu 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esikatseluversion 10.0.26 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1192. Se on käytettävissä seuraavasti:
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.26 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1192. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esikatselu:** Maaliskuu 2022
 - **Julkaisun yleinen saatavuus (itsepäivitys):** Huhtikuu 2022

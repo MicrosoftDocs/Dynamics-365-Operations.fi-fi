@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749049"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629434"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Toimittajamaksujen luominen maksuehdotuksen avulla
 
@@ -48,7 +48,7 @@ Maksuehdotuskysely sisältää useita välilehtiä, joista jokaisella on eri ase
 - **Sisällytä toimittajan laskut muilta oikeushenkilöiltä** – Jos organisaatiossasi käytetään keskitettyä maksuprosessia ja maksuehdotuksen hakuehtojen tulee sisältää laskuja muista yrityksistä, aseta tämän asetuksen arvoksi **Kyllä**.
 - **Ehdota erillistä toimittajan maksua oikeushenkilökohtaisesti** – Jos tämä asetus on **Kyllä**, kunkin yrityksen kullekin toimittajalle luodaan erilliset laskut. Maksulla oleva toimittaja on kunkin yrityksen vastaanottaman laskun toimittaja. Jos asetuksen arvo on **Ei** ja samalla toimittajalla on laskuja maksettavanaan useassa yrityksessä, yksi maksu luodaan kaikkien valittujen yritysten valittujen laskujen yhteenlasketulle summalle. Maksun toimittaja on nykyisen yrityksen toimittaja. Jos nykyisessä yrityksessä ei ole toimittajatiliä, käytetään ensimmäisen maksettavan laskun toimittajatiliä.
 - **Maksun valuutta** – Tässä kentässä määritetään valuutta, jolla kaikki maksut luodaan. Jos valuuttaa ei ole määritetty, jokainen lasku maksetaan laskun valuutassa.
-- **Maksuviikonpäivä** – Anna viikonpäivä, jona maksu tulee suorittaa. Tätä kenttää käytetään vain, jos maksutapa on määritetty summaamaan maksettavat laskut tiettynä viikonpäivänä.
+- **Maksun viikonpäivä** – Määritä viikonpäivä, jolloin maksu suoritetaan. Tätä kenttää käytetään vain, jos maksutavaksi on määritetty **Viikko**. Maksun laskujen summat summataan määritettynä viikonpäivänä maksettavaksi.
 - **Vastatilin tyyppi** ja **Vastatili** – Määritä näihin kenttiin tietty tilin tyyppi (esimerkiksi **kirjanpito** tai **pankki**) ja vastatili (esimerkiksi tietty pankkitili). Laskun maksutapa määrittää vastatilin oletustyypin sekä vastatilin, mutta voit ohittaa oletusarvot näiden kenttien avulla.
 - **Maksuyhteenvedon päivämäärä** – Tätä käytetään vain, kun maksutavan **Kausi**-kentässä on valittu **Yhteensä**. Jos päivämäärä on määritetty, kaikki maksut luodaan tänä päivänä. **Aikaisin maksupäivä** -kenttä ohitetaan.
 - **Lisäsuodattimet** – **Sisällytettävät tietueet** -pikavälilehdellä voit määrittää lisää reunaehtoja. Jos haluat maksaa vain tietyn toimittajajoukon laskut, voit määrittää suodattimella toimittajien alueen. Tätä toimintoa käytetään usein myös valitsemaan laskut, joilla on tietty maksutapa. Voit esimerkiksi määrittää suodattimen, jossa **Maksutapa** = **Sekki**, ja vain laskut, joilla on kyseinen maksutapa valitaan maksuun, jos ne täyttävät myös muut kyselyssä asetetut ehdot.

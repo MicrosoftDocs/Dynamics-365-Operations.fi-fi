@@ -2,7 +2,7 @@
 title: SEO-metatietojen hallinta
 description: Tässä ohjeaiheessa kerrotaan, miten hakukoneoptimoinnin metatietoja hallitaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751564"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644756"
 ---
 # <a name="manage-seo-metadata"></a>SEO-metatietojen hallinta
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten hakukoneoptimoinnin metatietoja hallitaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 
@@ -62,17 +63,21 @@ Dynamics 365 Commercen avulla voit hallita yksittäisten sivujen hakukoneoptimoi
 ### <a name="modify-page-metadata"></a>Sivun metatietojen muokkaaminen
 
 Voit muokata sivun metatietoja seuraavasti.
-
 1. Valitse **Sivustot**-kohdassa **Fabrikam** (tai sivuston nimi).
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivut**.
 1. Valitse aloitussivu, joka avataan sivueditorissa.
 1. Valitse komentopalkissa **Muokkaa**.
-1. Laajenna oikeanpuoleisessa ominaisuusruudussa **Oletusmetatunnukset**-kohta.
-1. Jos haluat lisätä uuden metatunnuksen, valitse **Lisää** ja kirjoita sitten tunnus kenttään. Jos haluat poistaa olemassa olevan metatunnuksen, valitse sen oikealla puolella oleva roskakorisymboli.
+1. Valitse sivueditorissa sivun jäsennyksen ohjausobjektin yläosasta vasemmalla **Ääriviivatila-vaihtoehto** (ratassymboli) ja valitse sitten **Ääriviivan lisäasetukset -näkymä**.
+1. Laajenna ääriviivanäkymässä puuohjausobjekteja niin, että **HTML head** -paikan sisältö näkyy.
+1. Valitse **HTML head** -paikkaan haluamasi SEO-moduuli (esimerkiksi **Sivun yhteenveto**, **Tuotesivun yhteenveto**, **Luokkasivun yhteenveto** tai **Metatunnisteet**).
+1. Muokkaa oikealla olevassa ominaisuusruudussa valitun SEO-moduulin haluttuja SEO-tietoja (esimerkiksi **Otsikko**, **Kuvaus** tai **Kuvan jakaminen**).
 1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
-1. Syötä **Kommentit**-kenttään **Päivitetyt metatunnukset** ja valitse **OK**.
+1. Syötä **Kommentit**-kenttään **Päivitetyt SEO-tiedot** ja valitse **OK**.
 1. Esikatsele sivua valitsemalla **Esikatsele**. Kun olet valmis, palaa muokkaustyökaluun sulkemalla Esikatselu-välilehti.
 1. Valitse **Julkaise**.
+
+> [!TIP]
+> Tekijät voivat käyttää **Ääriviivatila-vaihtoehto** (ratassymboli) sivueditorin vasemman ääriviivaohjausobjektin yläosassa, kun hän vaihtaa **Perusääriviiva-näkymän** ja **Ääriviivan lisäasetukset -näkymän** välillä. **Perusääriviiva-näkymä** on oletusasetus ja suodattaa ääriviivat siten, että siinä näkyvät vain sivun **Body**-HTML -paikan moduulit. **Ääriviivan lisäasetukset -näkymä** näyttää koko sivun moduulin, mukaan lukien **HTML head**-, **body begin**- ja **body end** -paikat. Tämä näkymä on hyödyllinen, kun laatijat voivat muokata sivun tiettyjä SEO- tai komentosarjamoduuliasetuksia.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

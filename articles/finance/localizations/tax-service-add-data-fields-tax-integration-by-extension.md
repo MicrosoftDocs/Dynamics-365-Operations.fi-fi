@@ -2,7 +2,7 @@
 title: Vero-integroinnin tietokenttien lisääminen laajennusten avulla
 description: Tässä aiheessa kerrotaan, kuinka X++ -laajennuksia käytetään tietokenttien lisäämiseen verointegrointiin.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323519"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649098"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Vero-integroinnin tietokenttien lisääminen laajennuksen avulla
 
@@ -334,9 +334,10 @@ Laajenna `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject`- t
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-Tässä koodissa `_destination` on paketointiobjekti, jota käytetään POST-pyynnön luonnissa ja `_source` on `TaxIntegrationLineObject`-objekti.
+Tässä koodissa `_destination` on paketointiobjekti, jota käytetään pyynnön luonnissa ja `_source` on `TaxIntegrationLineObject`-objekti.
 
 > [!NOTE]
-> Määritä avain, jota käytetään pyyntölomakkeessa nimellä **private const str**. Merkkijonon on oltava täsmälleen sama kuin toimenpidenimi, joka lisättiin aiheessa [Tietokenttien lisääminen veromäärityksiin](tax-service-add-data-fields-tax-configurations.md).
-> Määritä kenttä menetelmässä **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** käyttämällä **SetField**-menetelmää. Toisen parametrin tietotyypin on oltava **merkkijono**. Jos tietotyyppi ei ole **merkkijono**, muuta se siihen muotoon.
-> Jos **luettelointityyppiä** X++ laajennetaan, huomaa ero sen arvon, tunnisteen ja nimen välillä.
+> Määritä kentän nimi, jota käytetään pyynnössä nimellä **private const str**. Merkkijonon on oltava täsmälleen sama kuin solmun nimi (ei selite), joka lisättiin aiheessa [Tietokenttien lisääminen veromäärityksiin](tax-service-add-data-fields-tax-configurations.md).
 > 
+> Määritä kenttä menetelmässä **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** käyttämällä **SetField**-menetelmää. Toisen parametrin tietotyypin on oltava **merkkijono**. Jos tietotyyppi ei ole **merkkijono**, muunna se merkkijonoksi.
+> Jos tietotyyppi on X++ -kielen **luettelointityyppi**, suosittelemme luettelointiarvon muuntamiseen merkkijonoksi **enum2Symbol**-menetelmää. Veromäärityksessä lisätyn luettelointiarvon on täsmättävä täysin luetteloinnin nimen kanssa. Seuraavassa on luettelo luettelointiarvon, selitteen ja nimen eroista.
+> 
+>   - Luetteloinnin nimi on symbolinen nimi koodissa. Menetelmä **enum2Symbol()** voi muuntaa luetteloinnin sen nimeksi.
 >   - Luetteloinnin arvo on kokonaisluku.
->   - Luetteloinnin tunniste voi vaihdella ensisijaisten kielten välillä. Älä muuta luettelointityyppiä merkkijonoksi käyttämällä menetelmää **enum2Str**.
->   - Luetteloinnin nimeä suositellaan, koska se on muuttumaton. Menetelmää **enum2Symbol** voidaan käyttää luetteloinnin muuttamiseen sen nimeksi. Veromäärityksessä lisätyn luettelointiarvon on täsmättävä täysin luetteloinnin nimen kanssa.
+>   - Luetteloinnin tunniste voi vaihdella ensisijaisten kielten välillä. Menetelmä **enum2Str()** voi muuntaa luetteloinnin sen selitteeksi.
 
 ## <a name="model-dependency"></a>Malliriippuvuus
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

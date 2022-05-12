@@ -2,7 +2,7 @@
 title: Tilauslaskutuksen yleiskuvaus
 description: Tässä ohjeaiheessa käsitellään tilauslaskutusta Microsoft Dynamics 365 Financessa.
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 9d46492cca3cc435048fa497f6b1f3a28b77140a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462466"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644524"
 ---
 # <a name="subscription-billing-overview"></a>Tilauslaskutuksen yleiskuvaus
 
@@ -33,6 +33,8 @@ Ratkaisussa on kolme moduulia, joita voidaan käyttää erikseen. Vaihtoehtoises
 - **Toistuva sopimuslaskutus** – Tämä moduuli mahdollistaa toistuvan laskutuksen ja hinnanhallinnan, joilla ohjataan hinnoittelu- ja laskutusparametreja, sopimusten uusimista ja konsolidoitua laskutusta.
 - **Tuottojen ja kulujen lykkäykset** – Tämä moduuli poistaa manuaalisia prosesseja ja riippuvuuksia ulkoisista järjestelmistä hallitsemalla tuottoja ja mahdollistamalla reaaliaikaisten tietojen saamisen kuukausittaisista toistuvista tuotoista.
 - **Moniosainen tuottojen kohdistus** – Tämä moduuli edistää tuottojen vaatimustenmukaisuutta käsittelemällä hinnoittelua ja tuottojen kohdistusta useiden nimikkeiden osalta.
+
+Lisätietoja tilauslaskutuksesta on [Tilauslaskutuksen Power BI -sisällössä](sub-bill-power-bi.md).
 
 Tilauslaskutus otetaan käyttöön **Toimintojen hallinnassa**. Sitä ei kuitenkaan voi käyttää yhdessä **Tuoton kirjaus** -toiminnon kanssa. Siksi kyseinen toiminto on poistettava käytöstä ennen tilauslaskutuksen käyttöönottoa.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577645"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644635"
 ---
 # <a name="costing-parameter-values-setup"></a>Kustannuslaskennan parametriarvojen määrittäminen
 
@@ -123,9 +123,9 @@ Seuraavassa taulukossa kuvataan asetukset, jotka ovat käytettävissä kullekin 
 
 ## <a name="volumetric-divisors"></a>Tilavuusjakajat
 
-Tilavuusjakajia käytetään tilavuuspainon laskemiseen. Jokainen kuljetus-/rahtiyritys määrittää omat tilavuusjakajansa. Lisäksi yrityksen jakajat vaihtelevat tavallisesti toimitustavan mukaan. Esimerkiksi lento- ja vesikuljetusten jakajat ovat usein hyvin erilaisia. Yritys voi myös tehdä säännöistään monimutkaisempia riippuen sen lähetyssijainnista.
+Tilavuusjakajia käytetään tilavuuspainon laskemiseen. Jokainen kuljetus-/rahtiyritys määrittää omat tilavuusjakajansa. Lisäksi yrityksen jakajat vaihtelevat tavallisesti toimitustavan mukaan. Esimerkiksi lento- ja vesikuljetusten jakajat ovat usein hyvin erilaisia. Yritys voi myös tehdä säännöistään monimutkaisempia riippuen sen lähetyssijainnista. Järjestelmä käyttää seuraavaa kaavaa tilavuuspainon etsimiseksi: VolumetricWeight = Volume ÷ VolumetricDivisor.
 
-Oletetaan esimerkiksi, että lentorahtina lähetetyn paketin tilavuus on 3 kuutiometriä (m³). Yritys veloittaa tilavuuspainon mukana ja sen tilavuusjakaja on 6. Tämä jakaja kerrotaan tilavuudella tilavuuspainon määrittämiseksi. Näin ollen tilavuuspaino on tässä esimerkissä 3 × 6 = 18 kilogrammaa (kg).
+Oletetaan esimerkiksi, että lentorahtina lähetetyn paketin tilavuus on 3 kuutiometriä (m³). Yritys veloittaa tilavuuspainon mukana ja sen tilavuusjakaja on 6. Tämä jakaja jaetaan tilavuudella tilavuuspainon määrittämiseksi. Näin ollen tilavuuspaino on tässä esimerkissä 3 ÷ 6 = 0,5 kilogrammaa (kg).
 
 Voit määrittää tilavuusjakajia valitsemalla **Aiheutunut kustannus \> Kustannuslaskennan asetukset \> Tilavuusjakajat**. **Tilavuusjakajat** -sivulla on ruudukko, joka luetellaan kaikki olemassa olevat tilavuusjakajat. Voit lisätä, poistaa ja muokata ruudukon rivejä käyttämällä toimintoruudun painikkeita.
 
@@ -136,4 +136,7 @@ Seuraavassa taulukossa kuvataan kentät, jotka ovat käytettävissä ruudukon ku
 | Kuljetusyritys | Valitse tilavuusjakajaan liittyvä rahdinkuljettajan toimittajatili. |
 | Kustannustyypin koodi | Valitse tilavuusjakajaan liittyvä kustannustyypin koodi. Käytä tätä kenttää lajitellaksesi kustannustyypit raportointisäiliöihin. Raportit voidaan tulostaa joko raportointiluokkien tai kustannustyypin mukaan. |
 | Lähtösatama | Valitse lähtösatama, jota tilavuusjakaja koskee. |
-| Tilavuusjakaja | Valitse riville käytettävä tilavuusjakajan arvo. Syöttämäsi arvo *kerrotaan* kunkin paketin tilavuudella paketin tilavuuspainon määrittämiseksi. |
+| Tilavuusjakaja | Valitse riville käytettävä tilavuusjakajan arvo. Tähän syöttämäsi arvo jakaa kunkin paketin tilavuuden paketin tilavuuspainon määrittämiseksi. |
+
+> [!NOTE]
+> Järjestelmä käyttää **todellisen painon** ja **tilavuuspainon** välistä enimmäisarvoa.

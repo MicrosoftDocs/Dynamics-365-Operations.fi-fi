@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: bb837a38485bad2b9b76a5e4f20d311c0281e192
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469139"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625386"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Suunnittelu negatiivisilla käytettävissä olevalla määrillä
 
@@ -75,7 +75,7 @@ Tuloksena on 25 kappaleen suunniteltu tilaus. (= 25 kpl &minus; 0 kpl) ja täytt
 
 ## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Suunnittelu, kun varaus negatiivista käytettävissä olevan varaston varausta vastaan on olemassa
 
-Jos varastoa oikaistaan fyysisten varausten ollessa olemassa, voi aiheuttaa tilanteen, jossa tilaus varataan fyysisesti negatiivista varastoa vastaan. Koska on olemassa fyysinen varaus, suunnittelun optimointi olettaa, että käytettävissä oleva varasto tukee sitä, vaikka käyttövaraston vastaanottoa ei olisi vielä rekisteröity järjestelmään. Näin ollen oletetaan, että täydennystä ei tarvita eikä luoda suunniteltua tilausta tilauksen määrän täydentämiseen.
+Jos varastoa oikaistaan fyysisten varausten ollessa olemassa, voi aiheuttaa tilanteen, jossa tilaus varataan fyysisesti negatiivista varastoa vastaan. Tällöin, koska on olemassa fyysinen varaus, on oltava toimitus, joka kattaa varatun määrän. Täydennys on siis tarpeen, joten järjestelmä luo joko suunnitellun tilauksen, joka täydentää määrää, jota nykyinen käytettävissä oleva varasto ei kata, tai järjestelmä kattaa sen nimikkeen olemassa olevalla tilauksella.
 
 Seuraava esimerkki havainnollistaa tätä skenaariota.
 
@@ -88,7 +88,7 @@ Järjestelmä konfiguroi sen seuraavasti:
 - Myyntitilaus on olemassa *10* kpl:n määrän osalta. tuotteesta *FG*.
 - Myyntitilauksen määrä varataan fyysisesti olemassa olevalle käytettävissä olevalle varastolle.
 
-Tämän jälkeen oikaiset tuotteen *FG* määrän niin, että käytettävissä oleva varasto on 0 (nolla). Koska käytettävissä olevan tuotteen varasto on nolla, myyntitilauksen määrä varataan nyt negatiivista varastoa vastaan. Jos suoritat pääsuunnittelun nyt, myyntitilauksen toimitusta varten ei luoda suunniteltua tilausta, koska suunnittelun optimointi olettaa, että tarvittava käytettävissä oleva varasto on olemassa fyysisen varauksen toimitusta varten.
+Tämän jälkeen oikaiset tuotteen *FG* määrän niin, että käytettävissä oleva varasto on 5. Koska käytettävissä oleva tuotevarasto on 5, myyntitilauksen määrä varataan nyt määrälle, joka ei ole varastossa käytettävissä (samoin kävisi, jos käytettävissä oleva varasto olisi 0, jolloin myyntitilaus varattaisiin negatiiviselle varastolle). Jos suoritat pääsuunnittelun nyt, myyntitilauksen toimitusta varten luodaan suunniteltua tilaus määrälle 5 kohteelle *FG*, koska suunnittelun optimointi aina käyttää olemassa olevaa toimitusta tai luo uuden suunnitellun tilauksen fyysisen varauksen toimitusta varten.
 
 ## <a name="related-resources"></a>Liittyvät resurssit
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: bf63069c5f18fe67c7d7f538311853d79c0f4fe8
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487639"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649154"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -57,7 +57,7 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 
 | Ominaisuus | Lueteltu ongelma | Selitys | Odotettu käytettävyys |
 | --- | --- | --- | --- |
-| Toimenpiteet | Kattavuusryhmät, joissa toimenpidelaskenta on käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä toimenpiteitä ei luoda pääsuunnittelun aikana, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. Toimenpiteiden pääasiallinen tarkoitus on ehdottaa muutoksia aiemmin luotuihin tilauksiin. Arvioi, onko toimenpiteitä käytetty aktiivisesti osana liiketoimintaprosessejasi vai ovatko tilauksiin liittyvät viivetiedot riittäviä. | Huhtikuun 2022. |
+| Toimenpiteet | Kattavuusryhmät, joissa toimenpidelaskenta on käytössä: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä toimenpiteitä ei luoda pääsuunnittelun aikana, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. Toimenpiteiden pääasiallinen tarkoitus on ehdottaa muutoksia aiemmin luotuihin tilauksiin. Arvioi, onko toimenpiteitä käytetty aktiivisesti osana liiketoimintaprosessejasi vai ovatko tilauksiin liittyvät viivetiedot riittäviä. | Tuettu |
 | Peruskalenterit | Kalenterit, joissa käytetään peruskalenteria: _\#_ | Tätä ominaisuutta tuetaan tällä hetkellä. | Maaliskuun 2022. | 
 | Erän käsittelykoodit | Ei-netottavissa olevan erän käsittelykoodin päätiedot: _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä erän käsittelykoodit ohitetaan, kun suunnittelun optimointi on otettu käyttöön. | Lokakuu 2022 tai myöhemmin |
 | Saatavuus (CTP) | Tilauksen oletusasetukset, joiden toimituspäivämäärä on asetettu saatavuuteen (CTP): _\#_ | Tämä ominaisuus odottaa. Tällä hetkellä CTP ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | 2022. lokakuuta |

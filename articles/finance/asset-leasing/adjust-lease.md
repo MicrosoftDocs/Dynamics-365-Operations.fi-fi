@@ -2,7 +2,7 @@
 title: Vuokrasopimusten muuttaminen
 description: Ohjeaiheessa kerrotaan, miten vuokrasopimusta muutetaan. Oikaisu voi olla tarpeen, jos vuokra-aikoja muutetaan, vuokrasopimusta pidennetään tai muita ehtoja muutetaan.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729651"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644552"
 ---
 # <a name="adjust-leases"></a>Vuokrasopimusten muuttaminen
 
@@ -134,5 +134,19 @@ Jos vuokrasopimusta on oikaistu, voit tarkastella sen eri versioita. Voit myös 
 2. Jos haluat tarkastella aiempia aikatauluja, avaa muokattu vuokrasopimus **Vuokrasopimusyhteenveto**-sivulla, valitse haluttu kirja ja valitse sitten toimintoruudussa **Kirjan versiohistoria**.
 3. Valitse **Kirjan versio** -sivulla versio ja aikataulu tarkastelemista varten.
 
+## <a name="adjust-a-lease-book"></a>Vuokrakirjan muokkaaminen
+
+Voit muuttaa vain vuokrakirjaa noudattamalla seuraavia vaiheita.
+
+1. Siirry kohtaan **Resurssin leasing** \> **Vuokrasopimukset** \> **Vuokrasopimusyhteenveto**.
+2. Valitse ja avaa vuokra.
+3. Valitse **Vuokrauksen tiedot** -sivulla **Kirjat**.
+4. Valitse **Kirjan tiedot** -sivun toimintoruudun **Ylläpidä** -ryhmässä **Oikaise kirja**. 
+5. Poista maksuaikataulurivit.
+6. Syötä muokkauspäivämäärä **Vuokran muokkauspvm**-kenttään. Harkitse sitten kaikkien ylimääräisien käyttöomaisuus- ja velkatietojen (alkuperäinen suorakustannus, vuokrakannuste, vuokran ennakkomaksu, kustannusten purkaminen ja jäännösarvon takuu) poistamista, jos niitä on. 
+7. Voit estää vuokraoikaisun virheelliset laskelmat lisäämällä uusia maksusuunnitelman rivejä uusille maksupäivämäärille, jotka vastaavat muokkauspäivää. 
+
+> [!NOTE] 
+> On suositeltavaa käyttää ohjattua **Vuokraoikaisu**-toimintoa vuokran oikaisemiseen. Ohjattu toiminto vähentää manuaalisten vaiheiden määrää, voit esikatsella saldoja oikaisun jälkeen ja mahdollistaa summien muutoksen ennen kirjaamista.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

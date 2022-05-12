@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324084"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661655"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Sähköisten raportointimääritysten mukauttaminen luomaan sähköinen asiakirja
 
@@ -61,7 +61,7 @@ Käyttäjän, jolla on sähköisen raportoinnin toiminnallisen konsultin tai sä
 ### <a name="configure-er-parameters"></a>Konfiguroi ER-parametrit
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.
+2. Valitse **Lokalisoinnin luonnos**-sivun **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.
 3. Määritä **Sähköisen raportoinnin parametrit** -sivun **Yleinen**-välilehdessä **Ota käyttöön suunnittelutila** -asetukseksi **Kyllä**.
 4. Valitse **Liitteet**-välilehden **Määritykset**-kentässä **Tiedosto**.
 5. Valitse **Työarkisto**-, **Väliaikainen**-, **Perusrivi**- ja **Muut**-kentissä **Tiedosto**-tyyppi.
@@ -78,13 +78,13 @@ Jokainen lisätty ER-konfiguraatio merkitään ER-konfiguraation lähteen omista
 #### <a name="review-the-list-of-er-configuration-providers"></a>Tarkista ER-konfiguraation lähteiden luettelo
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit**-osassa **Konfiguraation lähteet**-ruutu.
+2. Valitse **Lokalisoinnin luonnos**-sivun **Liittyvät linkit**-osassa **Konfiguraation lähteet**-ruutu.
 3. **Konfiguraation lähdetaulu** -sivulla jokaisen lähteen tietueella on yksilöllinen nimi ja URL-osoite. Tarkista tämän sivun sisältö. Jos **Litware, Inc.** (`https://www.litware.com`) -tietue on jo olemassa, ohita seuraava menettely, [Lisää uusi ER-konfiguraation lähde](#AddProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Lisää uusi ER-konfiguraation lähde
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit**-osassa **Konfiguraation lähteet**-ruutu.
+2. Valitse **Lokalisoinnin luonnos**-sivun **Liittyvät linkit**-osassa **Konfiguraation lähteet**-ruutu.
 3. Valitse **Konfiguraation lähteet**-sivulla **Uusi**.
 4. Kirjoita **Nimi**-kenttään **Litware, Inc.**
 5. Kirjoita **Internetosoite**-kenttään `https://www.litware.com`.
@@ -93,7 +93,7 @@ Jokainen lisätty ER-konfiguraatio merkitään ER-konfiguraation lähteen omista
 #### <a name="activate-an-er-configuration-provider"></a>Aktivoi ER-konfiguraation lähde
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Konfiguraation lähteet**-osassa **Litware, Inc.** -ruutu ja valitse sitten **Aseta aktiiviseksi**.
+2. Valitse **Lokalisoinnin luonnos**-sivun **Konfiguraation lähteet**-osassa **Litware, Inc.** -ruutu ja valitse sitten **Aseta aktiiviseksi**.
 
 Lisätietoja ER-konfiguraation lähteistä on kohdassa [Konfiguraation lähteiden luonti ja merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -102,7 +102,7 @@ Lisätietoja ER-konfiguraation lähteistä on kohdassa [Konfiguraation lähteide
 ER-vakiomääritys voidaan lisätä Finance-esiintymään tuomalla ne kyseiselle esiintymällä määritetystä ER-[säilöstä](general-electronic-reporting.md#Repository).
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Konfiguraation lähteet** -osassa **Microsoft**-ruutu ja valitse sitten **Säilöt** nähdäksesi luettelon Microsoft-toimittajan säilöistä.
+2. Valitse **Lokalisoinnin luonnos**-sivun **Konfiguraation lähteet** -osassa **Microsoft**-ruutu ja valitse sitten **Säilöt** nähdäksesi luettelon Microsoft-toimittajan säilöistä.
 3. Valitse **Konfiguraatiosäilöt**-sivun ruudukossa oleva säilö, jonka tyyppi on **Yleinen** ja valitse sitten **Avaa**. Jos sinulta pyydetään valtuutusta Regulatory Configuration Service -palveluun yhdistämiseen, noudata valtuutusohjeita.
 4. Valitse **Konfiguraatiosäilö**-sivun vasemman ruudun määrityspuussa **Peppol-myyntilasku** -muotoinen määritys.
 5. Valitse **Versiot**-pikavälilehdessä versio **11.2.2**.
@@ -116,7 +116,7 @@ ER-vakiomääritys voidaan lisätä Finance-esiintymään tuomalla ne kyseiselle
 ### <a name="review-the-imported-er-configurations"></a>Tarkista tuodut ER-konfiguraatiot
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Valitse **Lokalisointimääritykset**-sivun **Konfiguroinnit**-osassa **Raportointimääritykset**-ruutu.
+2. Valitse **Lokalisoinnin luonnos**-sivun **Konfiguroinnit**-osassa **Raportointimääritykset**-ruutu.
 3. Laajenna **Määritykset**-sivulla **Määrityksen osat** -pikavälilehti.
 4. Laajenna vasemman ruudun määrityspuussa ensin **Laskumalli** ja sitten **UBL-myyntilasku**.
 

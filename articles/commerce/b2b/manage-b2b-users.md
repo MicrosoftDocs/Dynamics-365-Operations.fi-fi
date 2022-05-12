@@ -2,7 +2,7 @@
 title: Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
 description: Tässä aiheessa kuvataan, miten liikekumppanikäyttäjiä lisätään, poistetaan ja muokataan Microsoft Dynamics 365 Commercen yritysten välisillä (B2B) verkkokauppasivustoilla ja Commerce headquarters -sovelluksessa.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323452"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616854"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323452"
 Tässä aiheessa kuvataan, miten liikekumppanikäyttäjiä lisätään, poistetaan ja muokataan Microsoft Dynamics 365 Commercen yritysten välisillä (B2B) verkkokauppasivustoilla ja Commerce headquarters -sovelluksessa.
 
 > [!NOTE]
-> Aihe [B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla](partners-customer-hierarchies.md) on edellytys tälle asiakirjalle. 
+> - Aihe [B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla](partners-customer-hierarchies.md) on edellytys tälle asiakirjalle.
+> - Varmista, että alustat Commerce Headquarters -asiakirjatyyppien yksikön avaamalla **Tiedostotyypit**-lomakkeen kohdassa **Organisaation hallinta \> Tiedostojen hallinta \> Asiakirjatyypit**.
 
 B2B-verkkokauppasivustot edellyttävät, että organisaatiot rekisteröityvät liikeyhteistyökumppaneina. Kun organisaatio on lähettänyt rekisteröintitiedot B2B-verkkokauppasivustoon, rekisteröintipyyntö käy läpi hyväksyntäprosessin. Jos organisaatio on hyväksytty onnistuneesti, se on mukana liikekumppanina.
 

@@ -2,19 +2,19 @@
 title: Laskelman kirjaamisen toiminnallisuuden parannukset
 description: Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon.
 author: analpert
-ms.date: 01/31/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: d7c7c330695cbcd18a44db5b3f4e28411d8de4f3
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462547"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649016"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
@@ -52,26 +52,7 @@ Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uu
 > [!NOTE]
 > Commerce-versiosta 10.0.14 alkaen, kun **Vähittäismyyntilaskelmat – vähittäinen syöttö** -ominaisuus on käytössä, **Kirjaa varasto** -erätyö ei ole enää käytettävissä eikä sitä voi suorittaa.
 
-Lisäksi seuraavat parametrit on esitelty **Eräkäsittely**-pikavälilehdellä **Kirjaus**-välilehdellä **Kaupan parametrit** -sivun kirjausvälilehden eräkäsittelypikavälilehdessä: 
-
-- **Rinnakkaisen laskelman kirjauksen enimmäismäärä** – Tämä kenttä määrittää useiden laskelmien kirjaamiseen käytettävien erätehtävien määrän. 
-- **Tilausten käsittelyn enimmäissäie** – Tämä kenttä edustaa laskelman kirjauksen eräajossa käytettävien säikeiden enimmäismäärää, kun halutaan luoda ja laskuttaa yhden laskelman myyntitilauksia. Laskelman kirjaus prosessissa käytettävien säikeiden kokonaismäärä lasketaan tämän parametrin arvon mukaan kerrottuna **Rinnakkaisen laskelman kirjausten enimmäismäärä**-parametrin arvolla. Tämän parametrin arvon määrittäminen liian suureksi voi vaikuttaa kielteisesti laskelman kirjausprosessin suorituskykyyn.
-- **Koontia varten sisällytettyjen tapahtuma rivien enimmäismäärä** – Tämä kenttä määrittää, montako tapahtumariviä sisällytetään yksittäiseen yhteenlaskettavaan tapahtumaan ennen uuden luomista. Yhdistetyt tapahtumat luodaan erilaisten koostekriteerien, kuten asiakkaan, liiketoiminnan päivän tai taloushallinnon dimensioiden, perusteella. On tärkeää huomata, että yksittäisen tapahtuman rivejä ei jaeta eri yhdistettyjen tapahtumien kesken. Tämä tarkoittaa, että on mahdollista, että yhdistettyjen tapahtumien rivien määrä on hieman suurempi tai pienempi niiden tekijöiden perusteella, kuten erillisten tuotteiden määrä.
-- **Säikeiden enimmäismäärä varastotapahtumien tarkistamista varten** – Tämä kenttä määrittää tapahtumien vahvistamiseen käytettävien säikeiden määrän. Tapahtumien vahvistaminen on pakollinen vaihe, joka on suoritettava, ennen kuin tapahtumat voidaan noutaa lausekkeissa. Sinun on myös määritettävä uuden kirjausprosessin aikana **Lahjakorttituote** **Lahjakortti**-pikavälilehdessä **Kaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä on määritettävä myös silloin, kun organisaatio ei käytä lahjakortteja.
-
-Seuraavassa taulukossa luetellaan edellisten parametrien suositellut arvot. Nämä arvot on testattava ja räätälöitävä käyttöönoton konfiguraation ja käytettävissä olevan infrastruktuurin mukaan. Suositeltujen arvojen suureneminen voi vaikuttaa haitallisesti muihin eräkäsittelyihin, ja ne on tarkistettava.
-
-| Parametri | Suositeltava arvo | Yksityiskohtaiset tiedot |
-|-----------|-------------------|---------|
-| Rinnakkaisten laskelmien kirjaamisen enimmäismäärä | <p>Määritä tämän parametrin arvoksi niiden erätöiden määrä, joka on käytettävissä eräryhmälle, joka suorittaa **Laskelma**-työn.</p><p>**Yleinen sääntö:** Kertomalla Application Object Serverin (AOS) virtuaalipalvelinten määrän AOS-virtuaalipalvelimessa käytettävissä olevien erätehtävien lukumäärällä.</p> | Tätä parametria ei voi käyttää, kun **Vähittäismyyntilaskelmat – vähittäinen syöttö** -ominaisuus on käytössä. |
-| Säikeiden enimmäismäärä tilausten käsittelyssä laskelmaa kohti | Aloita testaamaan arvoilla kohdasta **4**. Yleensä arvo ei saa ylittää arvoa **8**. | Tämä parametri määrittää myyntitilausten luomiseen ja kirjaamiseen käytettyjen säikeiden määrän. Se edustaa säikeiden määrää, jonka avulla voidaan kirjata laskelmaa kohti. |
-| Suurin mahdollinen tapahtumarivien määrä sisällytetty koosteeseen | Aloita testaamaan arvoilla kohdasta **1000**. Pääkonttorin konfiguraation mukaan pienemmät luvut voivat olla tehokkaammin suorituskyvylle hyödyllisiä. | Tämä parametri määrittää kuhunkin myyntitilaukseen sisällytettävien rivien määrän laskelman kirjaamisen yhteydessä. Kun tämä numero on saavutettu, rivit jaetaan uuteen tilaukseen. Vaikka myyntirivien määrä ei ole tarkka, koska jako tapahtuu myyntitilauksen tasolla, se on lähellä määritettyä lukua. Tätä parametria käytetään, kun luodaan myyntitilauksia vähittäismyyntitapahtumille, joissa ei ole nimettyä asiakasta. |
-| Myymälän tapahtumien tarkistuksen säikeiden enimmäismäärä | Suosittelemme tämän parametrin arvoksi **4** ja korotusta vain, jos et saavuta hyväksyttävää suorituskykyä. Tämän prosessin käytössä olevien säikeiden määrä ei voi ylittää eräpalvelimen käytettävissä olevien suorittimien määrää. Jos määrität tässä liian monta säiettä, saatat vaikuttaa muihin eräkäsittelyihin. | Tämä parametri ohjaa niiden tapahtumien määrää, jotka voidaan vahvistaa tietyn myymälän osalta samanaikaisesti. |
-
-> [!NOTE]
-> Kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Commerce-parametrit**-sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.
-
-## <a name="processing"></a>Käsittely
+## <a name="processing"></a>Käsittelyssä
 
 Laskelmat voidaan laskea ja kirjata eränä valikkovaihtoehtojen **Laskelmien laskenta eräajona** ja **Laskelmien kirjaaminen eräajona** avulla. Vaihtoehtoisesti laskelmat voidaan laskea manuaalisesti ja kirjata käyttämällä parannetun laskelman kirjaustoiminnon **Laskelmat**-valikkokohteella.
 

@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388260"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645132"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -141,7 +141,12 @@ Excel-malli voidaan määrittää käyttämään soluja tekstitietojen esittämi
 > [!NOTE]
 > [Excelin tunnetun rajoituksen](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) vuoksi Excelin **Sovita**- ja **Rivitä teksti** -ominaisuuksien käyttö ei ehkä onnistu yhdistetyissä soluissa ja solut sisältävillä riveillä, vaikka solut olisi määritetty rivittämään teksti ja kyseiset solut sisältävät rivit olisi määritetty muuttamaan automaattisesti korkeus rivitetyn tekstin mukaiseksi. 
 
-Dynamics 365 Financen versiosta 10.0.23 alkaen sähköinen raportointi voidaan pakottaa laskemaan luodussa asiakirjassa kunkin sellaisen rivin korkeus, joka on määritetty sovittamaan korkeus automaattisesti sisäkkäisten solujen sisällön mukaisesti aina, kun kyseinen rivi sisältää ainakin yhden yhdistetyn solun, joka määritettiin rivittämään solussa oleva teksti. Laskettua korkeutta käytetään sitten rivin korkeuden muuttamiseen. Näin varmistetaan, että kaikki rivin solut näkyvät luodussa asiakirjassa. Tämän toiminnon käyttö aloitetaan seuraavasti, kun suoritetaan sellaisia ER-muotoja, jotka on määritetty käyttämään Excel-malleja lähtevien asiakirjojen luontiin.
+Dynamics 365 Financen versiosta 10.0.23 alkaen, kun käsittelet luotua asiakirjaa, sähköinen raportointi voidaan pakottaa laskemaan kunkin sellaisen rivin korkeus, joka on määritetty sovittamaan korkeus automaattisesti sisäkkäisten solujen sisällön mukaisesti aina, kun kyseinen rivi sisältää ainakin yhden yhdistetyn solun, joka määritettiin rivittämään solussa oleva teksti. Laskettua korkeutta käytetään sitten rivin korkeuden muuttamiseen. Näin varmistetaan, että kaikki rivin solut näkyvät luodussa asiakirjassa.
+
+> [!NOTE]
+> Huomaa, että tämä toiminto ei ehkä toimi odotetulla tavalla, kun yhdistettyä solua muotoillaan mukautetulla fontilla. Koska Excel ei upota mukautettuja fontteja, se ei näytä tietoja mukautetun fontin koosta. Siksi yhdistetyn solun koko voidaan arvioida väärin.
+
+Tämän toiminnon käyttö aloitetaan seuraavasti, kun suoritetaan sellaisia ER-muotoja, jotka on määritetty käyttämään Excel-malleja lähtevien asiakirjojen luontiin.
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.

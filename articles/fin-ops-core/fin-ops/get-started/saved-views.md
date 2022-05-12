@@ -2,7 +2,7 @@
 title: Tallennetut näkymät
 description: Tässä aiheessa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065703"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644784"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -45,7 +45,7 @@ Kun näkymät on määritetty käytettäviksi ympäristössä, kaikkien näkymi�
 
 Näkymän valitsimessa on kaksi kokovaihtoehtoa: 
 
-- **Suuret näkymävalitsimet** – Sivuilla, jotka ovat näkyvästi esillä luettelossa on suurempi näkymävalitsin muutamista syistä. Mikä tärkeintä, suuremman näkymän valitsin ilmaisee sivut, joilla näkymässä voi olla käyttäjän määrittämiä suodattimia. Koska suodattimet sisältyvät näkymään, suuremman valitsimen koko on myös oikeutettu, koska näkymien nimet ovat usein paras kuvaus näytössä näytettyjen tietojen kuvauksessa, ja oletuksena on, että käyttäjät vaihtavat näkymää useammin näillä sivutyypeillä.
+- **Suuret näkymävalitsimet** – Sivuilla, jotka ovat näkyvästi esillä luettelossa on suurempi näkymävalitsin muutamista syistä. Mikä tärkeintä, suuremman näkymän valitsin ilmaisee sivut, joilla näkymässä voi olla käyttäjän määrittämiä suodattimia ja lajitteluita. Koska suodattimet ja lajittelut sisältyvät näkymään, suuremman valitsimen koko on myös oikeutettu, koska näkymien nimet ovat usein paras kuvaus näytössä näytettyjen tietojen kuvauksessa, ja oletuksena on, että käyttäjät vaihtavat näkymää useammin näillä sivutyypeillä. Ryhmitys ruudukossa voidaan myös tallentaa sivun näkymiin suuren näkymän valitsimien avulla. 
 - **Pienet näkymävalitsimet** – Kaikilla muilla koko näytön sivuilla (paitsi työtiloissa ja koontinäytöissä) on pienempi näyttövalitsin, joka näkyy sivun otsikon vieressä. Näillä sivuilla olevat näkymät sisältävät vain mukautukset, eivät käyttäjän määrittämiä suodattimia. Näillä sivuilla otsikko tai tietueen otsikko on usein tärkein tieto sivun yläosassa. Näkymävalitsimen pienempi koko kuvaa myös näiden sivujen odotettua pienempää näyttökertojen määrää. 
  
 Jos valitset näkymän nimen, näyttöön tulee valintaikkunanäkymä, jossa näkyy käytettävissä olevien näkymien luettelo.

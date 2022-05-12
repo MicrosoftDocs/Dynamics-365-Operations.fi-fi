@@ -2,7 +2,7 @@
 title: Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 description: Tässä ohjeaiheessa on tietoja sähköisen raportointimuodon suunnittelemiseen PDF-mallin täyttämistä varten.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367853"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645104"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 
@@ -252,10 +252,14 @@ Koska kumpikin ominaisuus on valinnainen **Kentän** muotoelementissä, kohde-PD
 - Jos **Nimi**-määrite on määritetty ja **Nimi**-lauseke on konfiguroitu, täytetään PDF-kenttä, jolla on sama nimi kuin arvolla, jonka kaavaelementin **Nimi**-määrite on palauttanut.
 
 > [!NOTE]
-> PDF-valintaruudun voi täyttää seuraavasti:
+> Kun PDF-mallin valintaruutu ei kuulu valintaruuturyhmään, sitä esitetään muokattavassa ER-muodossa **PDF-tiedoston** elementin alle kuuluvana **Kenttä**-elementtinä. Tämän tyypin PDF-valintaruudun voi määrittää seuraavasti:
 >
-> - Kun vastaavan **Kentän** muotoelementti on sidottu sellaisen **Totuusarvon** tietotyyppiin, jonka arvo on **Todellinen**.
-> - Kun vastaava **Kentän** muotoelementti sisältää sisäkkäisen **Merkkijono**-muotoelementin, joka on sidottu tietolähdekenttään, jonka tekstiarvo on **1**, **Tosi** tai **Kyllä**
+> - Vastaava **Kenttä**-muotoelementti on sidottu sellaisen *[Totuusarvon](er-formula-supported-data-types-primitive.md#boolean)* tietotyyppiin, jonka arvo on **Tosi**.
+> - Vastaava **Kenttä**-muotoelementti sisältää sisäkkäisen **Merkkijono**-muotoelementin, joka on sidottu tietolähdekenttään, jonka tekstiarvo on **1**, **Tosi** tai **Kyllä**.
+>
+> Malli voi sisältää valintaruuturyhmän, ja vain yksi valintaruutu voidaan valita kerralla. Valintaruudut näkyvät PDF-mallissa *VALINTARUUTU*-tyypin usean lomakkeen kenttinä. Kullakin kentällä on sama nimi, mutta vientiarvo on eri. Kun tuot mallin muokattavaan ER-muotoon, jokainen valintaruutu näkyy lomakkeen hierarkkisessa rakenteessa **Valintaruuturyhmänimikkeenä**, joka on saman **Valintaruuturyhmä**-elementin alla. **Valintaruuturyhmän** elementin nimi on sama kuin PDF-mallin valintaruutukenttien nimi. Kunkin **Valintaruuturyhmänimikkeen** elementin nimi on sama kuin PDF-mallin vastaavan valintaruutukentän vientiarvo.
+>
+> **Valintaruuturyhmänimikkeen** elementin voi liittää vain *Boolean*-tietotyypin tietolähdekenttään.
 
 ## <a name="run-the-format-configuration"></a>Suorita muotokonfiguraatio
 

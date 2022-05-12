@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384416"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644987"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -74,9 +74,9 @@ Aktiivisten töiden luettelossa on seuraavat sarakkeet:
 
 ## <a name="my-jobs-tab"></a>Omat työt -välilehti
 
-**Omat työt** -välilehden avulla työntekijät voivat helposti tarkastella kaikkia heille määritettyjä keskeneräisiä töitä. Tämä ominaisuus on hyödyllinen yrityksille, jotka joskus tai aina määrittävät työt tietyille työntekijöille (henkilöstöresursseille) muiden resurssityyppien (kuten koneiden) sijaan. 
+**Omat työt** -välilehden avulla työntekijät voivat helposti tarkastella kaikkia heille määritettyjä keskeneräisiä töitä. Tämä ominaisuus on hyödyllinen yrityksille, jotka joskus tai aina määrittävät työt tietyille työntekijöille (henkilöstöresursseille) muiden resurssityyppien (kuten koneiden) sijaan.
 
-Ajoitusjärjestelmä määrittää kunkin tuotantotyön automaattisesti tietylle resurssitietueelle, ja kullakin resurssitietueella on tyyppi (esimerkiksi kone tai henkilö). Kun määrität työntekijän tuotantotyöntekijäksi, voit liittää työntekijätilin yksilöivään henkilöstöresurssitietueeseen. 
+Ajoitusjärjestelmä määrittää kunkin tuotantotyön automaattisesti tietylle resurssitietueelle, ja kullakin resurssitietueella on tyyppi (esimerkiksi kone tai henkilö). Kun määrität työntekijän tuotantotyöntekijäksi, voit liittää työntekijätilin yksilöivään henkilöstöresurssitietueeseen.
 
 Kaikki sisäänkirjautuneen työntekijän henkilöstötietueeseen määritetyt aloittamattomat ja keskeneräiset työt näkyvät **Omat työt** -välilehdessä, jos työntekijä on kirjautunut sisään. Siinä ei kuitenkaan ole luetteloa koneelle tai muulle resurssityypille määritetyistä töistä, vaikka sisäänkirjautunut työntekijä olisi alkanut työstää tällaisia töitä.
 
@@ -87,7 +87,7 @@ Voit tarkastella kaikkia sisäänkirjautuneen työntekijän aloittamia töitä r
 ## <a name="my-machine-tab"></a>Oma kone -välilehti
 
 **Oma kone** -välilehdessä työntekijät voivat valita resurssin, joka on liitetty koneresurssiin **Kaikki työt** -välilehdessä määritetyssä suodattimessa. Työntekijät voi sitten tarkastella valitun resurssin tilaa ja kuntoa lukemalla enintään neljän valitun laskurin arvot sekä viimeaikaisten ylläpitopyyntöjen ja rekisteröityjen seisokkien luetteloita. Työntekijät voi myös pyytää valitun resurssin ylläpitoa sekä rekisteröidä ja muokata koneen seisokkeja. (Tätä välilehden nimiä voi mukauttaa, joten sillä voi olla eri nimi omassa järjestelmässä.)
- 
+
 ![Oma kone -välilehti.](media/pfei-my-machine-tab.png "Oma kone -välilehti")
 
 **Oma kone** -välilehdessä on seuraavat sarakkeet. Numerot vastaavat edellisessä kuvassa käytettyjä numeroita.
@@ -202,9 +202,9 @@ Voidaan tehdä seuraavia toimenpiteitä:
 - Jos työntekijä valitsee **OK**, keräysluetteloa ei poisteta. Se kirjataan, kun työ raportoidaan **Hävikin raportointi**- tai **Edistymisen raportointi**-valintaikkunassa.
 - Jos työntekijä valitsee **Edistymisen raportointi**- tai **Hävikin raportointi** -valintaikkunassa **Peruuta**, keräysluettelo poistetaan.
 
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Materiaalin säätäminen oikealla olevan työkalurivin avulla
+### <a name="adjust-material-from-the-primary-or-secondary-toolbar"></a>Materiaalin säätäminen ensisijaisella tai toissijaisella työkalurivillä
 
-**Materiaalin säätäminen** -painike voidaan konfiguroida niin, että se näkyy työkalurivillä oikeassa reunassa. (Lisätietoja on kohdassa [Suunnittele tuotantotilan suorituksen liittymä](production-floor-execution-tabs.md).) Työntekijä voi valita käynnissä olevaa tuotantotyötä varten **materiaalin oikaisemisen**. Tässä tapauksessa näyttöön tulee **Materiaalin oikaiseminen** -valintaikkuna, jossa työntekijä voi tehdä haluamansa muutokset. Kun valintaikkuna avataan, tuotantotilausta varten luodaan oikaistuja määriä sisältävien rivien tuotannon keräysluettelo. Jos työntekijä valitsee **Kirjaa nyt**, oikaisu vahvistetaan ja keräysluettelo kirjataan. Jos työntekijä valitsee **Peruuta**, keräysluettelo poistetaan eikä oikaisua tehdä.
+**Materiaalin säätäminen** -painike voidaan konfiguroida niin, että se näkyy ensisijaisella tai toissijaisella työkalurivillä. (Lisätietoja on kohdassa [Suunnittele tuotantotilan suorituksen liittymä](production-floor-execution-tabs.md).) Työntekijä voi valita käynnissä olevaa tuotantotyötä varten **materiaalin oikaisemisen**. Tässä tapauksessa näyttöön tulee **Materiaalin oikaiseminen** -valintaikkuna, jossa työntekijä voi tehdä haluamansa muutokset. Kun valintaikkuna avataan, tuotantotilausta varten luodaan oikaistuja määriä sisältävien rivien tuotannon keräysluettelo. Jos työntekijä valitsee **Kirjaa nyt**, oikaisu vahvistetaan ja keräysluettelo kirjataan. Jos työntekijä valitsee **Peruuta**, keräysluettelo poistetaan eikä oikaisua tehdä.
 
 ### <a name="adjust-material-consumption-for-catch-weight-items"></a>Todellisen painon nimikkeiden materiaalikulutuksen oikaiseminen
 
@@ -260,6 +260,42 @@ Kun Shannon on vahvistanut valintansa kummassakin skenaariossa, hän siirtyy jok
 Työntekijät voivat kirjata taukoja. Tauot voidaan määrittää joustavasti, kuten on kuvattu kohdassa [Rekisteröinteihin perustuva palkka](pay-based-on-registrations.md).
 
 Työntekijä kirjaa tauon valitsemalla **Tauko**-vaihtoehdon ja valitsemalla sitten tauon tyyppiä vastaavan kortin (kuten lounaan). Kun työntekijä on vahvistanut valinnan, laitteeseen avautuu joko kirjautumissivu tai sivu, joka odottaa työntekijän vahvistavan tauolta palaamisen. Avautuva sivu määräytyy tuotannon käyttöliittymän määritysten mukaan. (Lisätietoja on kohdassa [Tuotannon käyttöliittymän määrittäminen](production-floor-execution-configure.md).)
+
+## <a name="view-the-my-day-dialog"></a>Näytä Päivän tehtävät -valintaikkuna
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+**Päivän tehtävät** -valintaikkunassa on työntekijöille rekisteröintien ja saldojen yhteenveto. Valintaikkuna on jaettu seuraaviin kolmeen osaan:
+
+- Pääosa sisältää nykyisen työntekijän valittuna päivänä tekemät rekisteröinnit. Se avautuu, ja siinä näkyvät kuluvan päivän rekisteröinnit. Siinä näkyy päivämäärän valitsin, jonka avulla työntekijä voi tarkastella muita päiviä.
+- **Viimeisin laskettu päivän saldo** -osassa näkyvät työntekijän maksetun ajan, maksetun ylityöajan, poissaolon ja maksetun poissaolon saldot. Nämä arvot perustuvat rekisteröinteihin, jotka on laskettu hyväksyntäprosessin aikana.
+- **Saldot**-osassa on yleiskatsaus saldoista määritetyllä kaudella valituille rekisteröintiluokille (kuten loma, vakioaika ja ylityö). Nämä saldot perustuvat siihen, miten tilastosaldot määritetään **Aika ja läsnäolo** -moduulissa. Lisätietoja tämän määrittämisestä on kohdassa [Näytä lomasaldot tuotannon käyttöliittymässä](production-floor-execution-payroll-stats.md).
+
+Järjestelmänvalvojat voivat lisätä tämän ominaisuuden käyttöliittymäin asettamalla **Päivän tehtävät**-painikkeen kunkin asiaankuuluvan välilehden työkaluriviin, kuten on kuvattu kohdassa [Tuotannon käyttöliittymän suunnitteleminen](production-floor-execution-tabs.md).
+
+## <a name="working-in-teams"></a>Työskentely ryhmissä
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Kun samaan tuotantotyöhön on liitetty useita työntekijöitä, he voivat muodostaa ryhmän. Tiimi voi nimetä yhden työntekijän vetäjäksi. Jäljellä olevista työntekijöistä tulee tämän jälkeen automaattisesti tämän vetäjän avustajia. Tuloksena olevassa ryhmässä vain vetäjän on rekisteröitävä työn tila. Aikatietueita käytetään kaikille ryhmän jäsenille.
+
+### <a name="prerequisites"></a>Edellytykset
+
+Jotta ryhmiä voi käyttää, järjestelmänvalvojan on otettava **Avustaja**-toiminto käyttöön tuotannon käyttöliittymän **Kaikki työt** -välilehden ensisijaisessa työkalurivissä. Lisätietoja on kohdassa [Tuotannon käyttöliittymän suunnitteleminen](production-floor-execution-tabs.md).
+
+### <a name="form-a-new-team-that-has-a-pilot-and-an-assistant"></a>Uuden ryhmän muodostaminen, jossa on vetäjä ja avustaja
+
+Työntekijä voi rekisteröityä avustajaksi valitsemalla **Avustaja** **Kaikki työt** -välilehdestä. Tämän jälkeen työntekijä voi valita **Valitse avustettava työntekijä** -ikkunassa vetäjän työntekijöistä, jotka työskentelevät aktiivisesti työn parissa. Kun työntekijä on vahvistanut valintansa, hän muuttuu valitun työntekijän avustajaksi, josta tulee uuden ryhmän vetäjä.
+
+### <a name="assign-a-new-pilot-to-an-existing-team"></a>Uuden vetäjän määrittäminen olemassa olevaan ryhmään
+
+Kun ryhmä haluaa valita uuden vetäjän, nykyisen vetäjän on nimettävä toinen työntekijä ryhmän uudeksi vetäjäksi. Uuden vetäjän valitsemiseksi nykyinen vetäjä valitsee **Avustaja** **Kaikki työt** -välilehdestä. Tämän jälkeen näyttöön tulevassa **Vaihda vetäjää** -valintaikkunassa vetäjä voi valita uuden vetäjän ryhmään jo kuuluvien työntekijöiden luettelosta. Kun nykyinen vetäjä on vahvistanut valintansa, heidät poistetaan ryhmästä kokonaan. He voivat kuitenkin liittyä ryhmään uudelleen tarpeen mukaan.
+
+### <a name="assistant-clocks-out"></a>Avustaja leimaa ulos
+
+Kun avustajana työskentelevä työntekijä leimaa ulos, hän poistuu ryhmästä. Jos **Pysyvät ryhmät**- ja **Uudelleen aloitus saapumisen yhteydessä** -asetukset ovat *Kyllä*, työntekijä, joka leimaa ulos automaattisesti, tulee ryhmään uudelleen, kun hän leimaa seuraavan kerran sisään. Nämä vaihtoehdot ovat **Aika ja läsnäolo - parametrit** -sivun **Yleiset**-välilehdessä.
 
 ## <a name="opening-instructions"></a>Ohjeiden avaaminen
 
