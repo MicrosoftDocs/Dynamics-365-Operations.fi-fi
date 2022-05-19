@@ -48,12 +48,8 @@
               href: dev-tools/version-models-build.md
         - name: Tietojen integrointi
           items:
-            - name: Finance and Operations -sovellusten ja kolmannen osapuolen palveluiden integroiminen
+            - name: Talous- ja toimintosovellusten ja kolmannen osapuolen palveluiden integroiminen
               href: data-entities/integration-overview.md
-            - name: Prioriteettipohjainen rajoittaminen
-              hreF: data-entities/priority-based-throttling.md
-            - name: Prioriteettipohjaisen rajoittamisen usein kysytyt kysymykset
-              href: data-entities/throttling-faq.md
             - name: Tietojen integroinnin ohjelmointirajapinnat
               items:
                 - name: Tietojen hallintapaketin REST API -ohjelmointirajapinta
@@ -74,9 +70,21 @@
                   href: data-entities/recurring-integrations.md
                 - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
                   href: data-entities/third-party-service-test.md
+            - name: Palvelun suojauksen rajat
+              items:
+                - name: Palvelun suojauksen ohjelmointirajapinnan rajat
+                  href: data-entities/service-protection-api-limits.md
+                - name: Priorisoinnin rajoittaminen
+                  href: data-entities/priority-based-throttling.md
+                - name: Toimintojen yrittäminen uudelleen
+                  href: data-entities/service-protection-retry-operations.md
+                - name: Ohjelmointirajapinnan rajoittamisen seuranta
+                  href: data-entities/service-protection-monitoring.md
+                - name: Ohjelmointirajapinnan siirtomäärän maksimointi
+                  href: data-entities/service-protection-maximizing-api-throughput.md
             - name: Finance and Operations Connector
               href: data-entities/fin-ops-connector.md
-            - name: Integroinnin kehitys
+            - name: Integraation kehitys
               items:
                 - name: Tietojen integraatio tietoyksikköjen avulla
                   items:
@@ -398,6 +406,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Välityspalvelimien konfigurointi paikallisia ympäristöjä varten
                       href: deployment/onprem-reverseproxy.md
+                    - name: Varastointisovelluksen määrittäminen paikallisille ympäristöille
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Verkkotulostimien asentaminen paikallisiin ympäristöihin
                       href: analytics/install-network-printer-onprem.md
                     - name: Paikallisten ympäristöjen diagnostiikka
@@ -472,16 +482,14 @@
                   href: help/language-locale.md
                 - name: 'Ohjeen laajentaminen, mukauttaminen ja käyttäminen yhdessä'
                   href: help/contributor-guide.md
-            - name: Käyttöönotossa huomioitavaa
+            - name: Talous- ja toimintosovellusten aluepalvelut
               items:
-                - name: Maakohtaisia ja paikallista pilvipalvelukäyttöönottoja Dynamics 365 Financelle ja Dynamics 365 Supply Chain Managementille
+                - name: Paikalliset sijainnit
                   href: deployment/deployment-options-geo.md
-                - name: Finance ja Supply Chain Management Yhdysvaltain Government Community Cloudissa (GCC)
+                - name: Yhdysvaltain Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: 21Vianetin ylläpitämät Finance- ja Supply Chain Management -sovellukset Kiinassa
+                - name: 21Vianet ylläpitää Kiinassa
                   href: deployment/china-local-deployment.md
-                - name: Finance and Operations -sovellukset Ranskassa
-                  href: deployment/france-local-deployment.md
         - name: Kehittäminen ja mukauttaminen
           items:
             - name: Kehittäminen ja mukauttaminen – aloitussivu
@@ -559,7 +567,7 @@
                     - name: Mallien ja tietomallielementtien luominen – yleiskatsaus
                       href: dev-tools/create-data-model-elements.md
                     - name: Laajennusten nimeämisohjeet
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä
                       href: dev-tools/lock-models.md
                 - name: Mukautusten analyysiraportti

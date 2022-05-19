@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Finance + Operations (on-premises) -version ostaminen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Varastoinnin määrittäminen paikallisille ympäristöille
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentaatioresurssit
               items:
                 - name: Ohjejärjestelmä
@@ -272,6 +270,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Toimittajan kirjausprofiilit
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Luo kulukoodeja
+              href: accounts-receivable/create-charges-codes.md
             - name: Toimittajan laskujen päivämäärät
               href: accounts-payable/vendor-invoice-dates.md
             - name: Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa
@@ -292,6 +292,8 @@
               items:
                 - name: Ostoreskontran keskitetyt maksut
                   href: accounts-payable/centralized-payments-accounts-payable.md
+                - name: Välitilitapahtumamaksujen määritykset ja käsittely
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Tilityksen määrittäminen
                   href: cash-bank-management/configure-settlement.md
                 - name: Selvitä jäljellä olevan summa
@@ -354,8 +356,12 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+            - name: Myyntireskontran kirjanpito
+              href: general-ledger/accts-recvble-posting.md
             - name: Asiakkaan kirjausprofiilit
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Luo kulukoodeja
+              href: accounts-receivable/create-charges-codes.md
             - name: SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus
               href: accounts-receivable/sepa-direct-debit-overview.md
             - name: SEPA (Single Euro Payments Area) -suoraveloitusvaltakirjan asetukset
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Kohdistuspäiväskenaariot
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Tuoton jako
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Tuotto- ja kululykkäykset
                   items:
                     - name: Tuotto- ja kululykkäysten määrittäminen
@@ -452,6 +460,8 @@
               items:
                 - name: Asiakkaan maksun yhteenveto
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: Välitilitapahtumamaksujen määritykset ja käsittely
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Myyntireskontran keskitetyt maksut
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Talleta asiakkaan maksuja
@@ -750,7 +760,7 @@
               href: general-ledger/electronic-messaging-example.md
         - name: Käyttöomaisuuserät
           items:
-            - name: Käyttöomaisuuserän aloitussivu
+            - name: Käyttöomaisuuden aloitussivu
               href: fixed-assets/fixed-assets.md
             - name: Käyttöomaisuuden luominen
               href: fixed-assets/tasks/create-fixed-asset.md
@@ -1026,6 +1036,14 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Kaksoisvaluutta
                       href: general-ledger/dual-currency.md
+                - name: Kirjausprofiilit
+                  items:
+                    - name: Kirjausprofiilien yleiskuvaus
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Profiilien kirjaamisen suositellut käytännöt
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Automaattisten tapahtumien tilit
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Kohdistussäännöt
                   items:
                     - name: Kirjanpidon kohdistussäännöt

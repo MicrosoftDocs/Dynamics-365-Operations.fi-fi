@@ -1,28 +1,28 @@
 ---
 title: Myyntireskontran aloitussivu
 description: Myyntireskontran avulla voit seurata myyntilaskuja ja saapuvia maksuja.
-author: roschlom
+author: kfend
 ms.date: 08/18/2017
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "20671"
 - intro-internal
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 946a4e3cab6549af8b6c07248b6889e3b610f27f
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 412b900b5eb9a3a01feb5f4dd67529a5128e52b7
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726939"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711851"
 ---
 # <a name="accounts-receivable-home-page"></a>Myyntireskontran aloitussivu
 
@@ -83,7 +83,7 @@ Siirry [Microsoft Dynamics 365:n toteutussuunnitelmaan](/dynamics365/release-pla
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [taloushallinnon Microsoft Dynamics 365 Finance and Operations -blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) esitetään myyntireskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on myyntireskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja Dynamics 365 -sovelluksen uutuuksista ja suosituista aiheista.
 

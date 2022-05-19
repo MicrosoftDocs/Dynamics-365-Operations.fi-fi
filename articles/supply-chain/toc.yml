@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance + Operations (on-premises) -version ostaminen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Varastoinnin määrittäminen paikallisille ympäristöille
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentaatioresurssit
               items:
                 - name: Ohjejärjestelmä
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Rekisteröi nimikkeet perusvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: 'Tuo saapuvat ASN:t V2-tietoyksikön kautta'
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: 'Tuo saapuvat ASN:t V3-tietoyksikön kautta'
+                  href: warehousing/import-asn-data-entity.md
                 - name: Tuotteiden laiturointi vastaanottavasta varastosta myymälöihin
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Sijaintidirektiivin määrittäminen ostotilauksen hyllytykselle

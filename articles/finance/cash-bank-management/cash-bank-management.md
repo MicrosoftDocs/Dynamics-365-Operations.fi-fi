@@ -1,28 +1,28 @@
 ---
 title: Maksuliikenteen kotisivu
 description: Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja kyseisiin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon.
-author: roschlom
+author: kfend
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "21941"
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883691"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710722"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Maksuliikenteen kotisivu
 
@@ -89,7 +89,7 @@ Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](/dynamics365/release-pla
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on paljon ajatuksia, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja Dynamics 365 -sovelluksen uutuuksista ja suosituista aiheista.
 

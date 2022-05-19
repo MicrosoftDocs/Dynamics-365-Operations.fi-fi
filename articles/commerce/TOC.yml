@@ -600,6 +600,8 @@
                       href: wallets.md
                     - name: Parannettu maksutoiminnallisuus verkkokaupan kassalla
                       href: dev-itpro/enhanced-sca.md
+                    - name: PayPalin pikamaksujen määrittäminen
+                      href: dev-itpro/express-payments-paypal.md
                     - name: Maksujen usein kysytyt kysymykset
                       href: dev-itpro/payments-retail.md
                 - name: Sähköposti ja ilmoitukset
@@ -958,6 +960,8 @@
               href: online-store-overview.md
             - name: Sähköisen kaupankäynnin sivuston luominen
               items:
+                - name: Kanavien yhdistäminen sähköisen kaupankäynnin sivustoihin
+                  href: map-channels-sites.md
                 - name: Toimialueen nimen määrittäminen
                   href: configure-your-domain-name.md
                 - name: Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
@@ -2560,18 +2564,20 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: 'Myyntipisteen laajennusten siirtäminen Commercen SDK:hon'
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Myyntipisteen laajennuspaketin projektin luominen
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Store Commercen laajennusten virheenkorjaus VS Coden avulla
                       href: dev-itpro/sc-debug.md
+                    - name: Sinetöidyt MPOS- ja CPOS-laajennukset
+                      items:
+                        - name: .appx-tiedoston luominen Modern POS -laajennuspakettia varten
+                          href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                        - name: MPOS- (Sinetöity) ja CPOS-laajennusten virheiden korjaus
+                          href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Ympäristön määritys
                   items:
                     - name: Paikallinen kehitysympäristö
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: Myyntipisteen laajennuspaketin projektin luominen
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: .appx-tiedoston luominen Modern POS -laajennuspakettia varten
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Myyntipisteen laajennusten virheenkorjaus
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Ohjelmointirajapinnat ja viite
                   items:
                     - name: Myyntipisteen laajennuspaketin tietojen tarkasteleminen
@@ -2834,6 +2840,10 @@
                           href: e-commerce-extensibility/instance-cache.md
                         - name: Module CSS -optimointi
                           href: e-commerce-extensibility/module-css-optimization.md
+                        - name: Kuvien optimointi tuotetietosivuilla
+                          href: e-commerce-extensibility/optimize-images-pdp.md
+                        - name: Kuvien optimointi haku- ja luokkasivuilla
+                          href: e-commerce-extensibility/optimize-images-search-cat.md
                     - name: Telemetria ja analytiikka
                       items:
                         - name: Telemetrian kirjaustoiminto
