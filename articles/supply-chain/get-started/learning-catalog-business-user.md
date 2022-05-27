@@ -1,23 +1,23 @@
 ---
 title: Dynamics 365 Supply Chain Managementn käyttäjien oppimisluettelo
 description: Etsi kaikki Dynamics 365 Supply Chain Managementin käyttäjien koulutusvaihtoehdot.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe547f6e224a072301a4d846f1a2867b70c86da3
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a8324fe183efd956fa39ddd97f562e4c33630580
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402663"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673183"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Managementn käyttäjien oppimisluettelo
 
@@ -31,7 +31,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 |---------|-------------|--------|--------|
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 8 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia |
-| [Finance and Operations -sovellusten käytön aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
+| [Taloushallinnon ja toimintojen sovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten taloushallinnon ja toimintojen sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat taloushallinnon ja toimintojen sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Käyttöomaisuuden hallinnan käytön aloittaminen Dynamics 365 Supply Chain Managementissa](/learn/modules/get-started-asset-management/index) | Resurssien hallinta on moduuli resurssien ja kunnossapitotöiden hallintaan Dynamics 365 Supply Chain Managementissa. Resurssien hallinnan avulla voit hallita ja suorittaa tehokkaasti monenlaisiin laitteisiin, kuten koneisiin, tuotantolaitteisiin ja ajoneuvojoihin liittyviä tehtäviä, kuten laitteiden hallinta ja huolto. Resurssien hallinta tukee ratkaisuja monilla eri aloilla. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |
 | [Dynamics 365 Supply Chain Managementin suunnittelun muutosten hallinnan apuohjelma](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management valtuuttaa työntekijät ja organisaatiot hankkimaan yhdistetyn näkymän varastosaldoihin, fyysisiin varastoihin, valmistukseen, palveluihin ja logistiikkaan ennakoivalla analytiikalla, joka muuttaa tiedot oivalluksiksi ja tukee parempia strategisia päätöksiä. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 2 tuntia |
 | [Dynamics 365 Intelligent Order Managementn käytön aloittaminen](/learn/modules/get-started-intelligent-order-management/) | Asiakkaat voivat hallita Dynamics 365 Intelligent Order Managementin avulla tilausten orkestrointia täyttämiseen saakka. Näiden ominaisuuksien avulla organisaatiot voivat orkestroida tilauksen työnkulut eri ympäristöissä ja sovelluksissa. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 4 tuntia |
@@ -39,10 +39,10 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 ## <a name="core-platform-knowledge"></a>Ympäristöä koskevat perustiedot<a name="core-platform-knowledge"></a>
 
-| Sisältö | kuvaus | Muoto | Pituus |
+| Sisältö | Kuvaus | Muoto | Pituus |
 |---------|-------------|--------|--------|
-| [Organisaation asetusten määrittäminen Finance and Operations -sovelluksissa](/learn/paths/configure-your-organization-finance-ops/) | Finance and Operations -sovellusten kanssa toimivana toiminnallisena konsulttina sinun on ymmärrettävä, miten voit määrittää asiakkaan organisaation. Tämä oppimispolku näyttää muun muassa, miten voit määrittää yritykset, ottaa käyttöön suojausasetukset, mukauttaa käyttäjien käyttöliittymää, suunnitella ja muodostaa mobiilisovelluksia sekä toteuttaa yleisiä integrointeja. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 12 tuntia |
-| [Analysoinnin ja raportoinnin määrittäminen ja käyttäminen Finance and Operations -sovelluksissa](/learn/paths/configure-analytics-reporting-finance-operations/) | Liiketoiminnan johtajat voivat tehdä tärkeitä päätöksiä yrityksessä, jos heillä on tarkat tiedot taustalla olevasta taloudellisesta ja operatiivisesta datasta. Yrityskäyttäjä voi myös määrittää ja käyttää sähköistä raportointityökalua ilman yhtä koodia, ottaa käyttöön uusia lainsäädännöllisiä vaatimuksia ja luoda liikeasiakirjoja vaaditussa muodossa tietojen vaihtamiseksi sähköisesti viranomaisten, pankkien ja muiden osapuolten kanssa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
+| [Määritä organisaatiosi talous- ja toimintosovellukset](/learn/paths/configure-your-organization-finance-ops/) | Talous- ja toimintosovellusten kanssa toimivana toiminnallisena konsulttina sinun on ymmärrettävä, miten voit määrittää asiakkaan organisaation. Tämä oppimispolku näyttää muun muassa, miten voit määrittää yritykset, ottaa käyttöön suojausasetukset, mukauttaa käyttäjien käyttöliittymää, suunnitella ja muodostaa mobiilisovelluksia sekä toteuttaa yleisiä integrointeja. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 12 tuntia |
+| [Analysoinnin ja raportoinnin määrittäminen talous- ja toimintosovelluksissa](/learn/paths/configure-analytics-reporting-finance-operations/) | Liiketoiminnan johtajat voivat tehdä tärkeitä päätöksiä yrityksessä, jos heillä on tarkat tiedot taustalla olevasta taloudellisesta ja operatiivisesta datasta. Yrityskäyttäjä voi myös määrittää ja käyttää sähköistä raportointityökalua ilman yhtä koodia, ottaa käyttöön uusia lainsäädännöllisiä vaatimuksia ja luoda liikeasiakirjoja vaaditussa muodossa tietojen vaihtamiseksi sähköisesti viranomaisten, pankkien ja muiden osapuolten kanssa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
 
 ## <a name="supply-chain-management"></a>Toimitusketjun hallinta<a name="supply-chain-management"></a>
 

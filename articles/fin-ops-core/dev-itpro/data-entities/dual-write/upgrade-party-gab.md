@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407791"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688371"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
 
@@ -281,7 +281,7 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
     ![Osapuolen postiosoitteen ja osapuolen sähköisen osoitteen mallien suorittaminen.](media/ADF-7.png)
 
-10. Jotta taloushallinnon ja toimintojen sovellukseen voidaan päivittää nämä tiedot, sinun on muunnettava .csv-tiedostot Excel-työkirjaksi ja [tuotava se taloushallinnon ja toimintojen sovellukseen](/data-entities/data-import-export-job). Jos CSV-tuonti toimii sinulle, voit tuoda CSV-tiedostot vaihtoehtoisesti suoraan. Tämän vaiheen suoritus saattaa kestää joitakin tunteja määrän perusteella.
+10. Jotta taloushallinnon ja toimintojen sovellukseen voidaan päivittää nämä tiedot, sinun on muunnettava .csv-tiedostot Excel-työkirjaksi ja [tuotava se taloushallinnon ja toimintojen sovellukseen](../data-import-export-job.md). Jos CSV-tuonti toimii sinulle, voit tuoda CSV-tiedostot vaihtoehtoisesti suoraan. Tämän vaiheen suoritus saattaa kestää joitakin tunteja määrän perusteella.
 
     ![Onnistunut tuonti.](media/ADF-8.png)
 

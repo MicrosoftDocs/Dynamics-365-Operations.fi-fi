@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323662"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689239"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Sähköisen raportoinnin kaavan tukemat yhdistelmätietotyypit
 
@@ -81,7 +81,7 @@ Lisätietoja *tietue*-arvojen muuntamisesta on [luetteloluokan ER-toimintojen lu
 
 *Tietueluettelon* tietueita käytetään oletusarvoisesti peräkkäin. Voit käyttää tiettyä tietuetta [INDEX](er-functions-list-index.md)-toiminnolla ja määrittää *kokonaisluku*-indeksin.
 
-*Tietueluettelon* oletusarvo on **tyhjä**. [ISEMPTY](/er-functions-list-isempty.md)-toiminnolla voit arvioida, onko *tietueluettelo* tyhjä.
+*Tietueluettelon* oletusarvo on **tyhjä**. [ISEMPTY](er-functions-list-isempty.md)-toiminnolla voit arvioida, onko *tietueluettelo* tyhjä.
 
 > [!NOTE]
 > Jos *tietueluettelo* on tyhjä ja *tietueelle* yritetään saada kentän arvo ajon aikana, poikkeus voidaan heittää ajon aikana. Tietoja tämän tyypin suoritusaikapoikkeusten ehkäisemisestä on ohjeaiheessa [Tyhjien luetteloiden huomioonottaminen](er-components-inspections.md#i9).
