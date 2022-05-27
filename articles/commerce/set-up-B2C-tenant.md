@@ -2,7 +2,7 @@
 title: B2C-vuokraajan määrittäminen Commercessa
 description: Tässä ohjeaiheessa kerrotaan, miten Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään Dynamics 365 Commercen käyttäjän sivuston todennusta varten.
 author: BrianShook
-ms.date: 02/11/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109883"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8714309"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -332,9 +332,9 @@ Voit lisätä Azure AD B2C -vuokraajan sovelluksen tiedot Commerceen seuraavasti
 
 1. Kirjaudu sisään järjestelmänvalvojana Commerce-sivuston luontiohjelmaan ympäristössä.
 1. Laajenna se valitsemalla vasemmasta siirtymisruudusta **Vuokraajan asetukset**.
-1. Valitse **Vuokraajan asetukset** -kohdasta **B2C-asetukset**. 
-1. Valitse pääikkunassa **B2C-sovellukset**-kohdan vieressä oleva **Hallitse**. (Jos vuokraaja näkyy B2C-sovellukset-luettelossa, järjestelmänvalvoja on jo lisännyt sen. Tarkista, että vaiheen 6 nimikkeet vastaavat B2C-sovellusta.)
-1. Valitse **Lisää B2C-sovellus**.
+1. Valitse **Vuokraajan asetukset** -kohdasta **Sivuston todennuksen määritys**. 
+1. Valitse pääikkunassa **Sivuston todennusprofiilit** -kohdan vierestä **Hallitse**. (Jos vuokraaja näkyy sivuston todennusprofiilien luettelossa, järjestelmänvalvoja on jo lisännyt sen. Tarkista, että vaiheen 6 nimikkeet vastaavat aiottua B2C-määritystä. Uuden profiilin voi luoda myös vastaavien Azure AD B2C-vuokralaisten tai sovellusten avulla, jotta voidaan ottaa huomioon pieniä eroja, kuten erilaiset käytännön tunnukset).
+1. Valitse **Lisää sivuston todennusprofiili**.
 1. Anna seuraavat pakolliset nimikkeet näkyvissä olevassa muodossa käyttämällä B2C-vuokraajan ja sovelluksen arvoja. Kentät, jotka eivät ole pakollisia (joissa ei ole tähteä), voidaan jättää tyhjäksi.
 
     - **Sovelluksen nimi**: B2C-sovelluksen nimi, esimerkiksi FABRIKAM B2C.
@@ -347,12 +347,13 @@ Voit lisätä Azure AD B2C -vuokraajan sovelluksen tiedot Commerceen seuraavasti
 1. Valitse **OK**. B2C-sovelluksen nimi tulee nyt näkyviin luetteloon.
 1. Tallenna muutokset valitsemalla **Tallenna**.
 
+Valinnaista **Kirjaudu mukautettuun toimialueeseen** -kenttää tulee käyttää vain, jos määrität mukautetun toimialueen Azure AD B2C-vuokraajalle. Lisätietoja **Kirjaudu mukautettuun toimialueeseen** -kentästä on jäljempänä [B2C-lisätiedot](#additional-b2c-information)-kohdassa.
+
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>B2C-sovelluksen liittäminen sivustoon ja kanavaan
 
 > [!WARNING]
-> Jos sivusto on jo liitetty B2C-sovellukseen, toiseen B2C-sovellukseen vaihtaminen poistaa tähän ympäristöön jo rekisteröityneiden käyttäjien nykyiset viitteet. Jos tätä muutetaan, mitkään tällä hetkellä liitetyn B2C-sovelluksen tunnistetiedot eivät ole käyttäjien käytettävissä. 
-> 
-> Päivitä vain B2C-sovellus, jos olet määrittämässä kanavan B2C-sovellusta ensimmäistä kertaa tai jos yrität saada käyttäjät rekisteröitymään uudelleen tähän kanavaan uuden B2C-sovelluksen avulla uusilla tunnistetiedoilla. Ole varovainen, kun liität kanavia B2C-sovelluksiin. Anna sovelluksille selkeät nimet. Jos kanavaa ei ole liitetty B2C-sovellukseen alla kuvattujen vaiheiden avulla, kanavaan kirjautuvat käyttäjät siirretään B2C-sovellukseen, joka on **oletussovellus** B2C-sovellusten **Vuokraajan asetukset \> B2C-asetukset** -luettelossa.
+> - Jos sivusto on jo liitetty B2C-sovellukseen, toiseen B2C-sovellukseen vaihtaminen poistaa tähän ympäristöön jo rekisteröityneiden käyttäjien nykyiset viitteet. Jos tätä muutetaan, mitkään tällä hetkellä liitetyn B2C-sovelluksen tunnistetiedot eivät ole käyttäjien käytettävissä. 
+> - Päivitä vain B2C-sovellus, jos olet määrittämässä kanavan B2C-sovellusta ensimmäistä kertaa tai jos yrität saada käyttäjät rekisteröitymään uudelleen tähän kanavaan uuden B2C-sovelluksen avulla uusilla tunnistetiedoilla. Ole varovainen, kun liität kanavia B2C-sovelluksiin. Anna sovelluksille selkeät nimet. Jos kanavaa ei ole liitetty B2C-sovellukseen alla kuvattujen vaiheiden avulla, kanavaan kirjautuvat käyttäjät siirretään B2C-sovellukseen, joka on **oletussovellus** B2C-sovellusten **Vuokraajan asetukset \> B2C-asetukset** -luettelossa.
 
 Voit liittää B2C-sovelluksen sivustoon ja kanavaan seuraavasti.
 
@@ -378,6 +379,23 @@ Lisätietoja Azure AD B2C -sovelluksen yhteydenottojen ja käytännön työnkulk
 ### <a name="secondary-admin"></a>Toissijainen järjestelmänvalvoja
 
 Valinnainen toissijainen järjestelmänvalvojatili voidaan lisätä B2C-vuokraajan **Käyttäjä**-osaan. Tämä voi olla suora tili tai yleinen tili. Jos sinun on jaettava tili ryhmän resursseille, myös yhteinen tili voidaan luoda. Azure AD B2C -sovellukseen tallennettujen tietojen luottamuksellisuuden vuoksi yrityksen turvakäytäntöjen tulee valvoa yleistä tiliä tarkasti.
+
+### <a name="set-up-a-custom-sign-in-domain"></a>Mukautetun kirjautumistoimialueen asetukset
+
+Azure AD B2C:n avulla voit määrittää mukautetun kirjautumistoimialueen Azure AD B2C-vuokraajalle. Lisätietoja on kohdassa [Mukautettujen toimialueiden käyttöönottaminen Azure Active Directory B2C:ssä](/azure/active-directory-b2c/custom-domain). 
+
+Jos käytät mukautettua kirjautumistoimialuetta, toimialue on syötettävä Commercen sivustonmuodostimeen.
+
+Lisää mukautettu kirjautumistoimialue sivustonmuodostimeen seuraavasti.
+
+1. Valitse sivuston rakennustyökalun oikeasta yläkulmasta sivuston vaihtaja ja valitse sitten **Sivustojen hallinta**.
+1. Laajenna se valitsemalla vasemmasta siirtymisruudusta **Vuokraajan asetukset \> Sivuston todennuksen määritys**.
+1. Valitse **Sivuston todennusprofiilit** -kohdan vierestä **Hallitse**.
+1. Valitse oikealla olevasta pikaikkunavalikosta sen sivuston todennusprofiilin vieressä oleva **Muokkaa**-painike (kynäkuvake), jota varten haluat määrittää mukautetun toimialueen.
+1. Kirjoita **Muokkaa sivuston todennusprofiili** -valintaikkunan **Kirjaudu mukautettuun toimialueeseen** -kohtaan mukautettu kirjautumistoimialue (esimerkiksi login.fabrikam.com).
+
+> [!WARNING]
+> Kun päivität Azure AD B2C-vuokraajan mukautetulle toimialueelle, muutos vaikuttaa luodun tunnuksen vuokraajan myöntäjän tietoihin. Myöntäjän tiedot sisältävät mukautetun toimialueen Azure AD B2C:n toimittaman oletustoimialueen asemesta. Eri **Myöntäjä**.määritys Commerce headquartersissa (**Retail and Commerce \> Pääkonttorin asetukset \> Parametrit \> Kaupankäynnin yhteiset parametrit \> Tunnistetietojen toimittajat**) muuttaa järjestelmän vuorovaikutusta sivuston käyttäjien kanssa ja saattaa luoda uuden asiakastietueen, jos käyttäjä todentaa tietoja uutta myöntäjää vastaan. Mahdolliset mukautetut toimialuemuutokset on testattava huolellisesti ennen mukautetun toimialueen vaihtamista live Azure AD B2C-ympäristössä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

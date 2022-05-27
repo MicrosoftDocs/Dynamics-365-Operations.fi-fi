@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 98c1c56b445ae426103d19f96cbf1a77891221ef
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065038"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717136"
 ---
 # <a name="choose-a-data-integration-technology"></a>Valitse tietojen integrointiteknologia
 
@@ -31,7 +30,7 @@ ms.locfileid: "8065038"
 
 
 
-Tässä aiheessa on tietoja Dynamics 365 Human Resourcesin hallitsemien tietojen integroimiseen. Siinä kuvataan erilaisia integrointitekniikoita, joiden avulla voit päättää, mitkä tekniikat sopivat parhaiten tarpeisiisi.
+Tässä aiheessa on tietoja, jotka liittyvät Dynamics 365 Human resourcesin hallitsemien tietojen integroimiseen. Siinä kuvataan erilaisia integrointitekniikoita, joiden avulla voit päättää, mitkä tekniikat sopivat parhaiten tarpeisiisi.
 
 ## <a name="data-integration-background"></a>Tietojen integroinnin taustatietoja
 
@@ -128,7 +127,7 @@ Excel-lisäosa sopii liiketoiminnan toimialueasiantuntijoiden tietojen ad-hoc-tu
 
 [Tietojen integrointipalvelun](/powerapps/administrator/data-integrator) avulla voit integroida tietoja Dataverse -järjestelmään ja -järjestelmästä. Tietojen integrointiohjelma antaa sinun määrittää integrointiprojektit, jotka perustuvat usein ennalta määritettyihin malleihin, jotka sovelluskehittäjät ovat räätälöineet tietyille integraatioille. Voit ajoittaa integrointiprojektit suoritettavaksi automaattisesti toistuvassa aikataulussa tai suorittaa ne manuaalisesti.
 
-Tietojen integrointiprojektit soveltuvat Dataversen eräintegraatioihin. Ne ovat erinomainen vaihtoehto integraatioille Dynamics 365 -perheen sovellusten välillä. Esimerkiksi Microsoft tarjoaa tietojen integrointiohjelman mallin, jota voidaan käyttää Human Resources -tietojen integroimiseen Dynamics 365 Financeen. Lisätietoja mallista kohdassa  [Integrointi Dynamics 365 Human Resources -mallista Dynamics 365 Finance-järjestelmään](hr-admin-integration-finance.md).
+Tietojen integrointiprojektit soveltuvat Dataversen eräintegraatioihin. Ne ovat erinomainen vaihtoehto integraatioille Dynamics 365 -perheen sovellusten välillä. Esimerkiksi Microsoft tarjoaa tietojen integrointiohjelman mallin, jota voidaan käyttää Human Resources -tietojen integroimiseen Dynamics 365 Financeen. Lisätietoja mallista kohdassa [Integrointi Dynamics 365 Human Resources -mallista Dynamics 365 Financeen](hr-admin-integration-finance.md).
 
 ### <a name="power-query"></a>Power Query
 

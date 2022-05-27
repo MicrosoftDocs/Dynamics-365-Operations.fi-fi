@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771432"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689407"
 ---
 # <a name="configure-human-resources-parameters"></a>Määritä Human Resourcesin parametrit
 
@@ -71,7 +70,7 @@ Lisätietoja työhönotosta on kohdassa [Ehdokkaiden työhönotto](hr-personnel-
 
 ## <a name="compensation"></a>Kompensaatio
 
-Dynamics 365 Finance -sovelluksen **Kompensaatio**-välilehden asetukset määrittävät, onko käyttäjien vahvistettava, että he haluavat tallentaa joko kiinteän tai muuttuvan kompensaatiosuunnitelman tiedot. Jos valitset **Otetaan vahvistuksen tallennus käyttöön** -asetuksen, käyttäjiltä kysytään, haluavatko he tallentaa tietueen, kun he sulkevat kompensaatioon liittyvän sivun. Jotkin kompensaation hallinnan sivut eivät salli käyttäjien poistaa tietoja. Kun pyydät käyttäjiä vahvistamaan, että he haluavat tallentaa tiedot, saatat pystyä rajoittamaan sellaisten tietojen määrää, jotka on tallennetaan, mutta joita ei voida poistaa myöhemmin. Jos et valitse **Otetaan vahvistuksen tallennus käyttöön** -asetusta, tietueet tallennetaan välittömästi, mahdollisesti jo ennen kuin käyttäjä on valmis. Jos käytät suorituskyvyn hallintaa, **Kompensaatio**-välilehti sallii sinun myös valita suorituskykyä arvioitaessa käytettävän arviointimallin kompensaatiosuunnitelmille määritetyn mallin sijaan.
+Dynamics 365 Financen **Kompensaatio**-välilehden asetukset määrittävät, onko käyttäjien vahvistettava, että he haluavat tallentaa joko kiinteän tai muuttuvan kompensaatiosuunnitelman tiedot. Jos valitset **Otetaan vahvistuksen tallennus käyttöön** -asetuksen, käyttäjiltä kysytään, haluavatko he tallentaa tietueen, kun he sulkevat kompensaatioon liittyvän sivun. Jotkin kompensaation hallinnan sivut eivät salli käyttäjien poistaa tietoja. Kun pyydät käyttäjiä vahvistamaan, että he haluavat tallentaa tiedot, saatat pystyä rajoittamaan sellaisten tietojen määrää, jotka on tallennetaan, mutta joita ei voida poistaa myöhemmin. Jos et valitse **Otetaan vahvistuksen tallennus käyttöön** -asetusta, tietueet tallennetaan välittömästi, mahdollisesti jo ennen kuin käyttäjä on valmis. Jos käytät suorituskyvyn hallintaa, **Kompensaatio**-välilehti sallii sinun myös valita suorituskykyä arvioitaessa käytettävän arviointimallin kompensaatiosuunnitelmille määritetyn mallin sijaan.
 
 Voit käyttää henkilöstöhallinnon **Kompensaatio**-välilehteä rajoittaaksesi kompensaatiosuunnitelmien käyttöoikeuksia ja määrittääksesi oletusvaluutan.
 

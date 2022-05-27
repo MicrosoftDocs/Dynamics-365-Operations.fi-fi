@@ -1,6 +1,6 @@
 ---
 title: Resurssien hallinnan mobiilityötilan määrittäminen
-description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin ja Finance and Operations (Dynamics 365) -mobiilisovelluksen määrittämistä suorittamaan resurssien hallinnan mobiilityötila, jota työntekijät voivat käyttää resurssien hallintatehtävien suorittamiseen.
+description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin ja Finance and Operations (Dynamics 365) -mobiilisovelluksen määrittämistä suorittamaan Resurssien hallinta -mobiilityötila, jota työntekijät voivat käyttää resurssien hallintatehtävien suorittamiseen.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5d628f99d4fc6788ddb38590c65decb871d49f93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572190"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693497"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Resurssien hallinnan mobiilityötilan määrittäminen
 
@@ -58,7 +57,7 @@ Resurssien hallinnan toimintojen käyttöönottaminen Finance and Operations (Dy
     - [Google Android -laitteet](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Apple iOS -laitteet](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Avaa Finance and Operations (Dynamics 365) -sovellus. Kirjautumissivun pitäisi avautua. Anna **Kirjaudu sisään** -kentässä Supply Chain Managementin URL-osoite tai valitse viimeaikainen URL-osoite **Viimeisimmät ympäristöt** -luettelo ja valitse sitten **Yhdistä**.
+1. Avaa talous- ja toimintosovellus (Dynamics 365). Kirjautumissivun pitäisi avautua. Anna **Kirjaudu sisään** -kentässä Supply Chain Managementin URL-osoite tai valitse viimeaikainen URL-osoite **Viimeisimmät ympäristöt** -luettelo ja valitse sitten **Yhdistä**.
 
     ![Kirjautumissivu.](media/mobile-app-sign-in.png "Kirjautumissivu")
 

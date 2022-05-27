@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565276"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695560"
 ---
 # <a name="sales-returns"></a>Myyntipalautukset
 
@@ -76,7 +76,6 @@ Kun luot palautustilauksen, siihen tulee sisältyä seuraavassa taulukossa oleva
 | Palautusnumero         | Palautustilaukseen liitetty tunnus              | Palautustilauksen käsittelyn vaihtoehtoisena avaimena käytetään palautusnumeroa. Määritettävä palautusnumero perustuu **Myyntireskontran parametrit** -sivulla määritettyyn palautusnumeron sarjaan.                                                                                                                              |
 | Määräaika           | Viimeinen päivämäärä, jolloin nimike voidaan palauttaa               | Oletusarvo lasketaan kaavalla nykyinen päivämäärä + voimassaoloaika. Jos esimerkiksi palautus on kelvollinen vain 90 päivää palautustilauksen luonnin jälkeen ja kyseinen tilaus on luotu 1. toukokuuta, kentän arvo on **30-Heinä**. Voimassaoloaika määritetään **Myyntireskontran parametrit** -sivulla. |
 | Palautuksen syykoodi | Asiakkaan syy tuotteen palauttamiselle          | Syykoodi on valitaan käyttäjän määrittämästä syykoodien luettelosta. Voit päivittää tätä kenttää milloin tahansa.                                                                                                                                                                                                                                    |
-
 ### <a name="create-return-order-lines"></a>Luo palautustilauksen rivit
 
 Kun palautuksen otsikko on valmis, voit luoda palautusrivejä jollakin seuraavista tavoista:
@@ -84,7 +83,8 @@ Kun palautuksen otsikko on valmis, voit luoda palautusrivejä jollakin seuraavis
 -   Anna nimikkeen tiedot, määrä ja muut tiedot kullekin palautusriville manuaalisesti.
 -   Luo palautusrivi käyttämällä **Etsi myyntitilaus** -toimintoa. Suosittelemme, että käytät tätä toimintoa, kun luot palautustilauksen. **Etsi myyntitilaus** -toiminto määrittää viitteen palautusriviltä laskutetulle myyntitilausriville ja hakee rivin tiedot, kuten nimiketunnuksen, määrän, hinnan, alennuksen ja kustannusarvot myyntiriviltä. Viittaus takaa, että kun tuote palautetaan yritykselle, se arvostetaan samalle yksikkökustannukselle, jolla se myytiin. Viittaus myös varmistaa, että palautustilauksia ei ole luotu määrälle, joka yrittää laskulla myydyn määrän.
 
->[Huomautus!] Palautusrivejä, joilla on viittaus myyntitilaukseen, käsitellään myynnin korjauksina tai peruutuksina. Lisätietoja jäljempänä tämän aiheen osiossa “Kirjaa kirjanpitoon”.
+>[!NOTE] 
+>Palautusrivejä, joilla on viittaus myyntitilaukseen, käsitellään myynnin korjauksina tai peruutuksina. Lisätietoja jäljempänä tämän aiheen osiossa “Kirjaa kirjanpitoon”.
 
 ### <a name="charges"></a>Kulut
 
@@ -189,8 +189,10 @@ Palautusten saapuminen on integroitu yleiseen varastosaapumisten prosessiin. Saa
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Tunnista tuotteet Saapumisten yhteenvetoluettelossa
 
-**Saapumisten yhteenveto** -sivulla on lueteltu kaikki suunnitellut saapumiset. 
->[Huomautus!] Palautustilauksille saapuvat tuotteet on käsiteltävä erikseen muista saapumistapahtumista. Kun olet tunnistanut saapuvan paketin **Saapumisten yhteenveto** -sivulla (esimerkiksi RMA-saateasiakirjan avulla), napsauta toimintoruudusta **Aloita saapuminen** -painiketta luodaksesi saapumista vastaavan Saapumisen kirjauskansion.
+**Saapumisten yhteenveto** -sivulla on lueteltu kaikki suunnitellut saapumiset.
+
+>[!NOTE] 
+>Palautustilauksille saapuvat tuotteet on käsiteltävä erikseen muista saapumistapahtumista. Kun olet tunnistanut saapuvan paketin **Saapumisten yhteenveto** -sivulla (esimerkiksi RMA-saateasiakirjan avulla), napsauta toimintoruudusta **Aloita saapuminen** -painiketta luodaksesi saapumista vastaavan Saapumisen kirjauskansion.
 
 ### <a name="edit-the-arrival-journal"></a>Muokkaa saapumisen kirjauskansiota
 
@@ -232,7 +234,8 @@ Jos toimitat asiakkaalle korvaavan nimikkeen ja käytät palautustilauksessa **K
 
 Korvaava nimike toimitetaan itsenäisen myyntitilauksen, eli korvaavan myyntitilauksen avulla. Tämä myyntitilaus luodaan, kun palautustilauksen pakkausluettelo muodostetaan. Tilauksen otsikossa käytetään asiakkaan tietoja, joihin viitataan palautustilauksen otsikossa. Rivin tiedot on kerätään tiedoista, jotka on syötetty **Korvaava nimike** -sivulla. **Korvaava nimike** -sivulle on täytettävä rivit, joilla on käsittelytoimenpiteitä, jotka alkavat sanalla "korv". Korvaavan nimikkeen määrää tai tyyppiä ei kuitenkaan vahvisteta tai rajoiteta. Tämä mahdollistaa tapaukset, joissa asiakas haluaa saman nimikkeen eri kokoonpanossa tai koossa, sekä tapaukset, joissa asiakas haluaa täysin eri nimikkeen. Samanlainen nimike syötetään oletuksena **Korvaava nimike** -sivulle. Voit kuitenkin valita toisen nimikkeen, jos kyseinen toiminto on otettu käyttöön. 
 
->[Huomautus!] Voit muokata ja poistaa korvaavan myyntitilauksen, kun se on luotu.
+>[!NOTE] 
+>Voit muokata ja poistaa korvaavan myyntitilauksen, kun se on luotu.
 
 ## <a name="generate-a-packing-slip"></a>Pakkausluettelon luominen.
 Ennen kuin palautetut nimikkeet voidaan vastaanottaa varastoon, sen tilauksen pakkausluettelo, johon palautetut nimikkeet kuuluvat, on päivitettävä. Samalla tavoin kuin laskun päivitysprosessi kirjanpitotapahtumaksi pakkausluettelon päivitysprosessi on varastotietueen fyysinen päivitys. Toisin sanoen se vahvistaa muutokset varastoon. Kun kyseessä on palautus, käsittelytoimenpiteen vaiheet toteutetaan pakkausluettelon päivityksen aikana. Kun muodostat pakkausluettelon, suoritetaan seuraavat tapahtumat:
@@ -253,8 +256,10 @@ Vaikka **Palautustilaus**-sivu sisältääkin tietoja ja toimintoja, joita tarvi
 
 ### <a name="credit-correction"></a>Hyvityksen oikaisu
 
-Varmista, osana laskutusprosessia, että muut kulut ovat oikein. Jotta kirjauskansion kirjaukset tehdään korjauksina (Storno), harkitse käyttäväsi **Hyvityksen oikaisu** -asetusta **Laskun kirjaus** -sivun **Muu**-välilehdellä kun kirjaat laskun/hyvityslaskun. 
->[Huomautus!] Oletusarvon mukaan **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
+Varmista, osana laskutusprosessia, että muut kulut ovat oikein. Jotta kirjauskansion kirjaukset tehdään korjauksina (Storno), harkitse käyttäväsi **Hyvityksen oikaisu** -asetusta **Laskun kirjaus** -sivun **Muu**-välilehdellä kun kirjaat laskun/hyvityslaskun.
+
+> [!NOTE]
+> Oletusarvoisesti **Hyvityksen oikaisu** -asetus on aktiivinen, jos **Korjaus hyvityslaskulla** -asetus on otettu käyttöön **Myyntireskontran parametrit** -sivulla. Suosittelemme kuitenkin, että et kirjaa palautuksia Stornolla.
 
 ## <a name="create-intercompany-return-orders"></a>Luo konsernin sisäiset palautustilaukset
 Palautustilauksia voi suorittaa kahden organisaatiosi sisäisen yrityksen välillä. Seuraavia tilanteita tuetaan:
@@ -308,7 +313,8 @@ Palautustilauksessa ei ole viittausta myyntilaskuun. Palautettu nimike hyvitetä
 
 ![Palautustilauksessa ei ole viittausta myyntilaskuun.](./media/SalesReturn09.png)  
 
->[Huomautus!] Nimikkeen päätietuehintaa käytetään **Palautuksen kustannushinta** -parametrin oletusarvona. Oletushinta eroaa kustannushinnasta varasto-oton hetkellä. Vaikutus on siis, että on syntynyt tappio-arvo on 3. Palautustilaus ei lisäksi sisällä alennusta, joka asiakkaalle oli annettu myyntitilauksessa. Tämän vuoksi ilmenee liian suuri hyvitys.
+> [!NOTE]
+> Nimikkeen päätietuehintaa käytetään **Palautuksen kustannushinta** -parametrin oletusarvona. Oletushinta eroaa kustannushinnasta varasto-oton hetkellä. Vaikutus on siis, että on syntynyt tappio-arvo on 3. Palautustilaus ei lisäksi sisällä alennusta, joka asiakkaalle oli annettu myyntitilauksessa. Tämän vuoksi ilmenee liian suuri hyvitys.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Esimerkki 2: Hyvityksen korjaus on valittuna palautustilaukselle
 
@@ -316,7 +322,8 @@ Esimerkki 2 on muuten sama kuin esimerkki 1, mutta **Hyvityksen korjaus** -param
 
 ![Hyvityksen korjaus on valittuna palautustilaukselle.](./media/SalesReturn10.png)  
 
->[Huomautus!] Kirjanpidon kirjaukset syötetään negatiivisina oikaisuina.
+>[!NOTE] 
+>Kirjanpidon kirjaukset syötetään negatiivisina oikaisuina.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Esimerkki 3: Palautustilauksen rivi on luotu Etsi myyntitilaus -toiminnolla
 
@@ -324,7 +331,8 @@ Tässä esimerkissä palautustilauksen rivi on luotu **Etsi myyntitilaus** -toim
 
 ![Palautustilauksen rivi on luotu Etsi myyntitilaus -toiminnolla.](./media/SalesReturn11.png)  
 
->[Huomautus!] **Alennus** ja **Palautuksen kustannushinta** on määritetty oikein. Tämän vuoksi myyntilasku ilmenee käännettynä.
+> [!NOTE]
+> **Alennus** ja **Palautuksen kustannushinta** on määritetty oikein. Tämän vuoksi myyntilasku ilmenee käännettynä.
 
 
 

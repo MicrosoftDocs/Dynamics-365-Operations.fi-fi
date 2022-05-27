@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051367"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710611"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insightsin määritykset
 
@@ -30,13 +30,13 @@ ms.locfileid: "8051367"
 Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää. Tämän aiheen menettelyjen onnistuminen edellyttää, että käytössä on järjestelmänvalvojan ja järjestelmän mukauttajan käyttöoikeudet [Power Portal -hallintakeskuksessa](https://admin.powerplatform.microsoft.com/), järjestelmänvalvojan käyttöoikeus Dynamics 365 Financessa sekä ympäristöjen luontioikeudet Microsoft Dynamics Lifecycle Servicesissa (LCS).
 
 > [!NOTE]
-> Seuraavat Finance Insightsin määrittämismenettelyt koskevat Microsoft Dynamics 365 Financen versiota 10.0.21 ja sitä uudempia versioita.
+> Seuraavat Finance Insightsin määrittämismenettelyt koskevat Dynamics 365 Financen versiota 10.0.21 ja sitä uudempia versioita.
 
-## <a name="deploy-dynamics-365-finance"></a>Dynamics 365 Financen käyttöönotto
+## <a name="deploy-dynamics-365-finance"></a>Ota käyttöön Dynamics 365 Finance
 
 Määritä ympäristöt näiden ohjeiden avulla.
 
-1. Luo tai päivitä Dynamics 365 Finance -ympäristö LCS:ssä. Ympäristö edellyttää, että käytössä on sovelluksen versio 10.0.21 tai sitä uudempi versio.
+1. Luo tai päivitä Dynamics 365 Finance -ympäristö LCS-sovelluksessa. Ympäristö edellyttää, että käytössä on sovelluksen versio 10.0.21 tai sitä uudempi versio.
 
     > [!NOTE]
     > Ympäristön on oltava korkean käytettävyyden ympäristö. (Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).

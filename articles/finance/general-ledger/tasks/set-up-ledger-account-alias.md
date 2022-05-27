@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 60e1dc0e61fd11e5498966031fbe7e6e65af2c6f57a820e1c99df05c6ad7f8f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50b486cd01850049ab3d23117d994c3db1038124
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745793"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716884"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Määritä kirjanpitotilin alias
 
@@ -26,17 +26,14 @@ ms.locfileid: "6745793"
 
 Tässä menettelyssä käsitellään, miten luodaan tilin tilinumeron antamisen pikavalintana toimiva tilin alias. Menettely käyttää USMF-yrityksen demotietoja.
 
-1. Valitse Kirjanpito > Tilikartta > Tilit > Kirjanpitotilin alias.
-2. Valitse Uusi.
-3. Kirjoita Kirjanpitotilin alias -kenttään arvo.
-4. Valitse Tilirakenne-kentässä rakenne, johon tili ja dimensiot kuuluvat.
-5. Avaa haku napsauttamalla Yritys-kentässä avattavan valikon painiketta.
-6. Etsi ja valitse luettelosta yritys, jota alias koskee.
-7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-8. Määritä Kirjanpitotilin alias -kenttään tili ja dimensiot.
+1. Valitse **Kirjanpito > Tilikartta > Tilit > Kirjanpitotilin alias** ja sitten **Uusi**.
+2. Kirjoita **Kirjanpitotilin alias** -kenttään arvo.
+3. Valitse **Tilirakenne**-kentässä rakenne, johon tili ja dimensiot kuuluvat.
+4. Etsi ja valitse luettelosta **yritys**, jota alias koskee.
+5. Määritä **Kirjanpitotilin alias** -kenttään tili ja dimensiot.
     * Tilien ja dimensioiden tiedot täytetään pikavalintaa käytettäessä.  
-9. Valitse Alkuperäinen kohdistus -kentässä dimensio, joka on kohdistettuna aliasta käytettäessä.
-    * Kun olet kirjoittanut pikavalinnan ja kun tilin ja dimensioiden tiedot on täytetty, alkuperäinen kohdistuskenttä on osoittimen kohdalla ja siirtyy siihen.  
+6. Valitse **Alkuperäinen kohdistus** -kentässä dimensio, joka on kohdistettuna aliasta käytettäessä.
+    * Kun olet kirjoittanut pikavalinnan ja kun tilin ja dimensioiden tiedot on täytetty, **alkuperäinen kohdistuskenttä** on osoittimen kohdalla ja siirtyy siihen.  
 
 
 

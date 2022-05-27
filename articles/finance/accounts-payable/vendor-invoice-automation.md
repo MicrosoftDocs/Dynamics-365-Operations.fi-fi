@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722764"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716391"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Skannattujen tiedostojen laskujen automatisointi
 
@@ -58,7 +58,7 @@ Datapaketti on työyksikkö, joka on lähetettävä, jotta laskujen otsikot, las
 
 Toimittajan laskun asiakirjaliite on uusi toiminnon osana esiteltävä tietoyksikkö. Toimittajan laskun otsikkoa on muokattu siten, että se tukee liitteitä. Toimittajan laskuriviyksikköä ei ole muutettu tämän toiminnon osalta.
 
-Lisätietoja tietopaketeista on kohdassa [Tietojen hallinnan yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Lisätietoja tietopakettien luonnista tietojen hallinnan työtilassa on kohdassa [Tietopakettien käsittely ja kuluttaminen Dynamics 365 Finance and Operations -sovellusratkaisussa](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Lisätietoja tietopaketeista on kohdassa [Tietojen hallinnan yleiskatsaus](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Lisätietoja tietopakettien luonnista tietojen hallinnan työtilassa on kohdassa [Tietopakettien käsittely ja kuluttaminen Dynamics 365:n talous- ja toimintosovellusratkaisussa](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Noudata näitä vaiheita, kun haluat luoda nopeasti testitietoja, jotka sisältävät laskuja ja -liitteitä.
 
@@ -86,7 +86,7 @@ Tietopakettien kautta tuodut laskut voidaan liittää ne omistaviin yrityksiin k
 
 ## <a name="exception-processing"></a>Poikkeuksen käsittely
 
-Skenaarioissa, joissa toimittajalaskut tulevat Finance and Operationsiin integroinnin avulla, ostoreskontratiimin jäsenellä on oltava helppo tapa käsitellä poikkeuksia tai epäonnistuneita laskuja ja keino luoda odottavia laskuja epäonnistuneista laskuista. Toimittajan laskujen poikkeusten käsittely on nyt osa Finance and Operationsia.
+Skenaarioissa, joissa toimittajalaskut tulevat Finance and Operations -palveluun integroinnin kautta, ostoreskontratiimin jäsenellä on oltava helppo tapa käsitellä poikkeuksia tai epäonnistuneita laskuja ja keino luoda odottavia laskuja epäonnistuneista laskuista. Toimittajan laskujen poikkeusten käsittely on nyt osa Finance and Operations -palvelua.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Luettelosivulle tuonnissa epäonnistuneet toimittajan laskut
 

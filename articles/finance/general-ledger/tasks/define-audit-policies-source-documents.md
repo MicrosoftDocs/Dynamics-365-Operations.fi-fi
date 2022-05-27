@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0779589a3583909984e35014a2ec0e86455cd30a3833110556f095241e7172ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8698dd2c14321498d23efe1d01be274c56d5721
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722668"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713779"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille
 
@@ -39,9 +39,9 @@ Tässä aiheessa kuvataan, miten tarkistuskäytännön säännöt määritetää
 11. Valitse **Uusi**.
 12. Kirjoita arvo **Nimi**-kenttään.
 13. Laajenna **Käytäntöorganisaatiot**-osa.
-14. Valitse puussa **Contoso Entertainment System USA** ja sitten **Lisää**.
-15. Valitse puussa **Contoso Consulting USA** ja sitten **Lisää**.
-16. Valitse puussa **Contoso Retail USA** ja sitten **Lisää**.
+14. Valitse puussa solmu **Contoso Entertainment System USA** ja sitten **Lisää**.
+15. Valitse puussa solmu **Contoso Consulting USA** ja sitten **Lisää**.
+16. Valitse puussa solmu **Contoso Retail USA** ja sitten **Lisää**.
 17. Tiivistä **Käytäntöorganisaatiot**-osa.
 18. Laajenna **Käytäntösäännöt**-osa.
 19. Etsi ja valitse luettelosta aiemmin luotu käytäntösääntö.

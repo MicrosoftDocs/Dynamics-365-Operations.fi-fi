@@ -2,20 +2,20 @@
 title: Erillinen kaksoiskirjoitussovelluksen hallintapaketti
 description: Kaksoiskirjoitussovelluksen hallintapaketti ei ole enää yksittäinen paketti, mutta se on jaettu pienempiin paketteihin. Tässä aiheessa kerrotaan kunkin paketin sisältämät ratkaisut ja määritykset sekä sen riippuvuus muista paketeista.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063259"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716549"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Erillinen kaksoiskirjoitussovelluksen hallintapaketti
 
@@ -26,14 +26,14 @@ ms.locfileid: "8063259"
 Aiemmin kaksoiskirjoitussovelluksen hallintapaketti oli vain yksi paketti, joka sisälsi seuraavat ratkaisut:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations – yleinen ankkuri
+- Dynamics 365 Finance and Operations Common Anchor
 - Dynamics 365 Finance and Operations – kaksoiskirjoituksen entiteettien yhdistämismääritykset
 - Dynamics 365 resurssien hallintasovellus
 - Dynamics 365 resurssien hallinta
 - HCM, yhteinen
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations – yleinen
+- Dynamics 365 Finance and Operations Common
 - Dynamics 365 Company
 - Currency Exchange Rates
 - Field Service Common
@@ -51,7 +51,7 @@ Kaksoiskirjoituksen sovellusydinpaketin avulla käyttäjät voivat asentaa ja ko
 | Yksilöivä nimi                           | Näyttönimi                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations – yleinen |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
 | CurrencyExchangeRates                 | Currency Exchange Rates                    |
 | msdyn_DualWriteAppCoreMaps            | Kaksoiskirjoituksen sovellusytimen entiteettien yhdistämismääritykset   |
 | msdyn_DualWriteAppCoreAnchor          | Kaksoiskirjoituksen sovellusytimen ankkuri        |
@@ -191,9 +191,9 @@ Financen kaksoiskirjoituspaketti sisältää Dynamics 365 Finance -tietojen synk
 | Yksilöivä nimi                            | Näyttönimi                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended – entiteettien yhdistämismääritykset |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extendedin entiteettien yhdistämismääritykset |
 | FieldServiceCommon                     | Field Service Common                      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance Extended – ankkuri      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance extended anchor      |
 
 Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
 
@@ -300,3 +300,47 @@ Project Operations riippuu seuraavista paketeista. Nämä paketit on näin ollen
 - Toimitusketjun kaksoiskirjoituspaketti
 - Resurssien hallinnan kaksoiskirjoituspaketti
 - Human Resourcesin kaksoiskirjoituspaketti
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Kaksoiskirjoituksen osapuoli ja yleisiä osoitekirjaratkaisuja
+
+Kaksoiskirjoituksen osapuoli ja yleinen osoitekirja -paketti sisältää seuraavat ratkaisut ja kartat, joita tarvitaan osapuolen ja yleisen osoitekirjan tietojen synkronoinnissa. 
+
+| Yksilöivä nimi                       | Näyttönimi                            |
+|-----------------------------------|-----------------------------------------|
+| Osapuoli                             | Osapuoli                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB laajennettu               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB entiteettikarttojen kaksoiskirjoitus |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB ja osapuoli              |
+
+Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
+
+| Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset | 
+|-----------------------------|--------------------------|
+| CDS-osapuolet | msdyn_parties | 
+| CDS-postiosoitteiden sijainnit | msdyn_postaladdresscollections | 
+| CDS-osapuolen postiosoitteen historia V2 | msdyn_postaladdresses | 
+| CDS-osapuolen postiosoitteiden sijainnit | msdyn_partypostaladdresses | 
+| Osapuolen yhteyshenkilöt V3 | msdyn_partyelectronicaddresses | 
+| Asiakkaat V3 | tilit | 
+| Asiakkaat V3 | yhteyshenkilöt | 
+| Toimittajat V2 | msdyn_vendors | 
+| Yhteyshenkilöiden arvonimet | msdyn_salescontactpersontitles | 
+| Loppusanat | msdyn_complimentaryclosings | 
+| Tervehdykset | msdyn_salutations | 
+| Päätöksentekoroolit | msdyn_decisionmakingroles | 
+| Työsuhteen työtehtävät | msdyn_employmentjobfunctions | 
+| Kanta-asiakastasot | msdyn_loyaltylevels | 
+| Henkilökohtaisten luonteenpiirteiden tyypit | msdyn_personalcharactertypes | 
+| Yhteyshenkilöt V2 | msdyn_contactforparties | 
+| CDS-myyntitarjouksen otsikko | tarjoukset | 
+| CDS-myyntitilauksien otsikot | salesorders | 
+| Myyntilaskun otsikot V2 | laskut | 
+| CDS-osoitteen roolit | msdyn_addressroles |
+
+**Riippuvuustiedot**
+
+Kaksoiskirjoituksen osapuoli ja yleinen osoitekirja -ratkaisut määräytyvät seuraavien kolmen paketin mukaan. Nämä paketit on näin ollen asennettava ennen kaksoiskirjoituksen osapuoli ja yleinen osoitekirja -ratkaisupaketin asennusta.
+
+- Kaksoiskirjoituksen sovellusydinpaketti
+- Financen kaksoiskirjoituspaketti
+- Toimitusketjun kaksoiskirjoituspaketti

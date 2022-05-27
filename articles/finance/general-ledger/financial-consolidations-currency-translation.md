@@ -1,30 +1,30 @@
 ---
 title: Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja.
-author: jiwo
+author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: aolson
+ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a77fe5e1970c617203706d9d629ac65e3a47909b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982402"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713865"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään tapaa, jolla sekä Microsoft Dynamics 365 Finance että talousraportointi tekevät konsolidointeja. Siinä käsitellään skenaarioita, joihin sisältyy monen yrityksen raportointi, koonti, eliminointi ja vähimmäisosuus. Siinä selitään myös, miten käsitellään erikoistilanteita, kuten skenaarioita, joissa yrityksillä on erilaiset tilikaudet tai tilikartat.
+Tässä ohjeaiheessa käsitellään tapaa, jolla sekä Microsoft Dynamics 365 Financen että talousraportointi tekevät konsolidointeja. Siinä käsitellään skenaarioita, joihin sisältyy monen yrityksen raportointi, koonti, eliminointi ja vähimmäisosuus. Siinä selitään myös, miten käsitellään erikoistilanteita, kuten skenaarioita, joissa yrityksillä on erilaiset tilikaudet tai tilikartat.
 
 Tämä ohjeaihe on kirjoitettu käyttäjille ja toiminnallisille konsulteille. Siinä oletetaan, että lukijoilla on yleistason tietämys Financesta ja taloushallinnon raportoinnista. Perusasetuksia ei käsitellä.
 

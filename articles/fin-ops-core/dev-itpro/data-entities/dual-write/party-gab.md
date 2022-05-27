@@ -2,19 +2,19 @@
 title: Osapuolen ja yleinen osoitekirja
 description: Tässä aiheessa kuvataan kaksoiskirjoituksen osapuolen ja yleinen osoitekirja.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407762"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717443"
 ---
 # <a name="party-and-global-address-book"></a>Osapuolen ja yleinen osoitekirja
 
@@ -139,7 +139,7 @@ Ruudukko sisältää seuraavat sarakkeet:
 
 Voit luoda niin monta postiosoitetta kuin haluat ruudukon yläpuolella olevalla **Uusi sähköinen osoite** -painikkeella.
 
-Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa versioissa kaikki postiosoitteen ja sähköisenosoitteen kentät poistetaan muista välilehdistä, kuten **Yhteenveto**- ja **Tiedot**-välilehdistä. **Tiedot**-välilehdessä näkyvät yhteystiedot ovat vain luku -muotoisia kopioita ensisijaisesta sähköisestä osoitteesta, kuten ensisijainen puhelinnumero, ensisijainen sähköposti, ensisijainen faksinumero ja ensisijainen Twitter-tunnus. Liidin hyväksyntäprosessin aikana voidaan antaa sekä työnumero että matkapuhelimenumero. Työnumero katsotaan ensisijaiseksi puhelinnumeroksi, jos **IsMobile=No**, ja matkapuhelinnumero katsotaan toissijaiseksi puhelinnumeroksi, jos **IsMobile=Yes**.
+Liidin hyväksyntäprosessin aikana voidaan antaa sekä työnumero että matkapuhelimenumero. Työnumero katsotaan ensisijaiseksi puhelinnumeroksi, jos **IsMobile=No**, ja matkapuhelinnumero katsotaan toissijaiseksi puhelinnumeroksi, jos **IsMobile=Yes**.
 
 > [!TIP]
 > Postiosoitetta ja sähköistä osoitetta hallitaan käyttämällä **Tili**- ja **Yhteyshenkilö**-lomakkeiden **Osoitteet**- ja **Sähköiset osoitteet** -välilehtiä. Näin varmistetaan, että osoitetiedot synkronoidaan talous- ja toimintosovelluksiin.
@@ -148,7 +148,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 
 1. Avaa asiakasvuorovaikutussovelluksen ympäristö.
 
-2. Asenna uusin versio (2.2.2.60 tai uudempi): [Kaksoiskirjoituksen sovellusorkestrointiratkaisu](https://aka.ms/dual-write-app).
+2. Asenna kaikki edellytysratkaisut, jotka on kuvattu kohdassa [Erillinen kaksoiskirjoitussovelluksen hallintapaketti](separated-solutions.md).
 
 3. Asenna [Kaksoiskirjoituksen osapuoli ja yleisiä osoitekirjaratkaisuja](https://aka.ms/dual-write-gab).
 
@@ -163,10 +163,10 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 
 7. Osapuolitoimintojen seuraavat yksiköiden yhdistämismääritykset päivitetään, joten uusin versio on otettava käyttöön näissä yhdistämismäärityksissä.
 
-    Yhdistämismääritys | Päivitä tähän versioon | Muutokset
+    Yhdistä | Päivitä tähän versioon | Muutokset
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Customers V3 (accounts)` | 1.0.0.5 |Poistaa `PartyNumber`-kentän ja muut osapuoleen liittyvät kentät, kuten nimen, henkilökohtaiset tiedot, postiosoitekentät ja sähköisen osoitteen kentät.
     `Customer V3 (contacts)` | 1.0.0.5 | Poistaa `PartyNumber`-kentän ja muut osapuoleen liittyvät kentät, kuten nimen, henkilökohtaiset tiedot, postiosoitekentät ja sähköisen osoitteen kentät.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Poistaa `PartyNumber`-kentän ja muut osapuoleen liittyvät kentät, kuten nimen, henkilökohtaiset tiedot, postiosoitekentät ja sähköisen osoitteen kentät.
@@ -174,16 +174,17 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Korvasi yhteyshenkilön `ContactforParty`-viitteellä.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Korvasi yhteyshenkilön `ContactforParty`-viitteellä.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | Tämä on uusi määritys, joka on lisätty osana tätä julkaisua.
 
 8. Ennen kuin voit käyttää yllä olevia karttoja, integrointiavaimet on päivitettävä manuaalisesti seuraavien ohjeiden mukaisesti. Valitse sitten **Tallenna**.
 
@@ -251,6 +252,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
     [CDS-myyntitarjouksen otsikko](mapping-reference.md#215) | tarjoukset
     [CDS-myyntitilauksien otsikot](mapping-reference.md#217) | salesorders
     [Myyntilaskun otsikot V2](mapping-reference.md#118) | laskut
+    [CDS-osoitteen roolit](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
 > `CDS Contacts V2 (contacts)`-kartta on kartta, jonka olet keskeyttänyt vaiheessa 1. Kun yrität suorittaa muita karttoja, nämä 2 karttaa saattavat näkyä riippuvaisten luettelossa. Älä suorita näitä karttoja.
@@ -258,7 +260,7 @@ Sähköiset osoitteet ovat käytettävissä vain tässä ruudukossa. Tulevissa v
 > Jos osapuolen ja yleisen osoitekirjan ratkaisu on asennettu, sinun on poistettava käytöstä laajennus `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Jos poistat osapuolen ja yleisen osoitekirjan ratkaisun asennuksen, laajennus on otettava uudelleen käyttöön.
 >
 > `msdyn_*partynumber`-kenttää (yksirivinen tekstikenttä), joka sisältyy **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-taulukoihin, ei pitäisi käyttää jatkossa. Etiketin nimessä on etuliite **(Vanhentunut)** selkeyden vuoksi. Käytä sen sijaan **msdyn_partyid**-kenttää. Kenttä on haku **msdyn_party**-taulukkoon.
-
+>
 > Taulun nimi | Vanha kenttä | Uusi kenttä
 > --------|-------|--------
 > Tili | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ Taulujen yhdistämisten kokoelma toimii yhdessä osapuolen ja yleisen osoitekirj
 | [Myyntilaskun otsikot V2](mapping-reference.md#118) | laskut |
 | [Tervehdykset](mapping-reference.md#228) | msdyn\_salutations |
 | [Toimittajat V2](mapping-reference.md#202) | msdyn\_vendors |
+| [CDS-osoitteen roolit](mapping-reference.md#301) |msdyn\_addressroles|
 
 Lisätietoja on [kaksoiskirjoituksen yhdistämismäärityksen viitteessä](mapping-reference.md).
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>Osoiteroolit avattavana monivalintaluettelona
+Postiosoitteella tai sähköisellä osoitteella voi olla useita tarkoituksia. Esimerkiksi postiosoite voi toimia laskutusosoitteena ja toimitusosoitteena. Tällöin käyttäjä voi valita avattavasta luettelosta sekä **Lasku** että **Toimitus** seuraavan kuvan mukaisesti. 
+
+![Avattava tarkoitus-/rooliluettelo.](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>Tunnetut ongelmat ja rajoitukset
 
 + Kun luot asiakkaan ja osoitteen ja tallennat sen talous- ja toimintosovelluksissa, osoite ei välttämättä synkronoidu **Osoite**-taulukkoon. Tämä johtuu kaksoiskirjoitusalustan järjestysongelmasta. Voit ratkaista ongelman luomalla ensin asiakkaan ja tallentamalla sen. Lisää sitten osoite.
 + Talous- ja toimintosovelluksissa kun asiakastietueessa on ensisijainen osoite ja luot asiakkaalle uuden yhteyshenkilön, yhteyshenkilötietue perii ensisijaisen osoitteen liitetystä asiakastietueesta. Näin tapahtuu myös toimittajan yhteyshenkilölle. Dataverse ei tue tällä hetkellä tätä toimintatapaa. Jos kaksoiskirjoitus on käytössä, ensisijaisella osoitteella perityt asiakkaan yhteyshenkilöt talous- ja toimintosovelluksesta synkronoidaan Dataversen kanssa osoitteineen.
-+ **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-lomakkeiden sähköisten osoitteiden välilehdessä määritetyt sähköiset osoitteet tulevat `msdyn_partyelectronicaddress`-taulukosta. Nämä tiedot eivät siirry liittyviin tapahtumiin, kuten myyntitilaukseen, tarjoukseen ja ostotilaukseen. Tämä ongelma aiotaan korjata asteittaisessa julkaisussa. Tili- ja yhteyshenkilötietueiden sähköisten osoitekenttien olemassa olevat tiedot toimivat edelleen myyntitilausten, tarjousten ja ostotilausten kaltaisissa tapahtumissa.
 + Talous- ja toimintosovelluksissa voit luoda yhteyshenkilötietueen **Lisää yhteyshenkilö** -lomakkeesta. Kun yrität luoda uuden yhteyshenkilön **Näytä yhteyshenkilö** -lomakkeesta, toimenpide epäonnistuu. Tämä on tiedossa oleva ongelma.
 
     ![Tunnettu Lisää yhteyshenkilö -ongelma.](media/party-gab-contact-issue.png)
 
-+ **Alkuperäinen synkronointi** ei tue **Käytettävissä alkaen**- ja **Käytettävissä saakka** -aikakenttiä kohdassa **ContactForParty**, koska DIXF muuntaa arvon merkkijonoksi kokonaisluvun sijaan. Muunto aiheuttaa virheen `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
-+ Kun postiosoitetta käytetään useampaan kuin yhteen syyhyn, esimerkiksi yrityksen yhteysosoitteena ja laskutusosoitteena, pitäisi näkyä muodossa `Business;Invoice` seuraavan kuvan mukaisesti. Jos lisäät arvojen väliin välin, saat virheilmoituksen.
-
-    ![Tiedossa oleva osoiteongelma.](media/party-gab-address-issue.png)
-
++ **Alkuperäinen synkronointi** ei tue **Käytettävissä alkaen**- ja **Käytettävissä saakka** -aikakenttiä kohdassa **ContactForParty**, koska DIXF muuntaa arvon merkkijonoksi kokonaisluvun sijaan. Muunto aiheuttaa virheen `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32`.
 + Et voi syöttää postiosoitetta, jonka päivämäärä on tulevaisuudessa käyttämällä talous- ja toimintosovellusta kaksoiskirjoituksella, koska Dataverse ei tue päivämäärän voimassaoloa. Jos kirjoitat postiosoitteen, jonka päivämäärä on tulevaisuudessa, talous- ja toimintosovelluksella, se synkronoi Dataversen kanssa kokonaan ja näet osoitteen käyttöliittymässä välittömästi. Tämän tietueen päivitykset johtavat virheeseen, koska sen päivämäärä on tulevaisuudessa eikä nykyinen talous- ja toimintosovelluksessa.

@@ -1,24 +1,24 @@
 ---
 title: Muuta käyttöomaisuusryhmä
 description: Käyttöomaisuus tulee liittää oikeaan käyttöomaisuusryhmään.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 05/04/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetTable, AssetChangeGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 133998905dd2e7b4d5bfe39333e159757e908bc5aaea609fbf4b465a7f04c7bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe340a2c0ecf0287911b068d097ecdc1bf13ba90
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762088"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712366"
 ---
 # <a name="change-a-fixed-asset-group"></a>Muuta käyttöomaisuusryhmä
 
@@ -27,22 +27,21 @@ ms.locfileid: "6762088"
 Käyttöomaisuus tulee liittää oikeaan käyttöomaisuusryhmään. Käyttöoikeusryhmää käytetään seuraavissa tilanteissa:
 
  - Kyselyjen ja raporttien luominen
-
  - Uusien käyttöomaisuuserien määrittäminen
-
  - Kirjanpidon integrointi ja käyttöomaisuustapahtumien kirjaaminen asianmukaisille kirjanpitotileille.
 
-Opastuksessa käytetään USMF-demoyritystä.
+Seuraavia ohjeita noudattamalla voit käyttää **USMF**-esittely-yritystä.
 
-1. Siirry kohtaan Käyttöomaisuudet > Käyttöomaisuudet > Käyttöomaisuudet.
+1. Siirry kohtaan **Käyttöomaisuudet** > **Käyttöomaisuudet** > **Käyttöomaisuudet**.
 2. Valitse käyttöomaisuus, jonka käyttöomaisuusryhmän haluat vaihtaa.
-3. Valitse Käyttöomaisuusryhmän muuttaminen.
-4. Anna tai valitse arvo Uusi ryhmä -kentässä.
+3. Valitse **Käyttöomaisuusryhmän muuttaminen**.
+4. Anna tai valitse arvo **Uusi ryhmä** -kentässä.
 5. Valitse tämä vaihtoehto, jos haluat määrittää valitulle käyttöomaisuudelle käyttöomaisuusnumeron.
-    * Kenttä on käytettävissä, jos valitsit Uusi käyttöomaisuuserän numero -vaihtoehdon.   Jos käyttöomaisuudet numeroidaan automaattisesti, tässä kentässä näkyy seuraava käytettävissä oleva käyttöomaisuusnumero. Voit muuttaa numeroa.   Jos käyttöomaisuuserät numeroidaan manuaalisesti, kenttä on tyhjä ja sinun on kirjoitettava uusi käyttöomaisuuserän numero.     
-6. Valitse OK.
-7. Valitse Kyllä.
+   
+   **Käyttöomaisuuserän numero** -kenttä on käytettävissä, jos valitsit **Uusi käyttöomaisuuserän numero** -vaihtoehdon. Jos käyttöomaisuudet numeroidaan automaattisesti, tässä kentässä näkyy seuraava käytettävissä oleva käyttöomaisuusnumero. Voit muuttaa numeroa. Jos käyttöomaisuuserät numeroidaan manuaalisesti, kenttä on tyhjä ja sinun on kirjoitettava uusi käyttöomaisuuserän numero.     
 
+6. Valitse **OK**.
+7. Valitse **Kyllä**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

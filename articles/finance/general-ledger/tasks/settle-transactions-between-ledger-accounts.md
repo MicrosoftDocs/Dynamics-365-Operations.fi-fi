@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711e2f445e043dc74cba0ee11f1ab2dc22215ff30f495e06dce1f6f3ab4a0a09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a871e379826626edbad2434b11281fce5e29e14e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723796"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717303"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Tapahtumien selvitys kirjanpitotilien välillä
 
@@ -28,22 +28,22 @@ Tässä menettelyssä käsitellään, miten kirjanpitotilien väliset tapahtumie
 
 
 ## <a name="settle-transaction-between-ledger-accounts"></a>Tilitä kirjanpitotilien välinen tapahtuma
-1. Valitse Kirjanpito > Kausittaiset tehtävät > Tapahtuman selvitykset.
+1. Valitse **Kirjanpito > Kausittaiset tehtävät > Tapahtuman selvitykset**.
 2. Etsi tilitettävä tapahtuma luettelosta.
    > [!NOTE]
    > Summan saldon on oltava nolla.  
-3. Valitse Sisällytä.
-4. Valitse Hyväksy.
+3. Valitse **Sisällytä**.
+4. Valitse **Hyväksy**.
 
 ## <a name="cancel-a-ledger-settlement"></a>Tapahtuman selvityksen peruuttaminen
 
-1. Valitse Kirjanpito > Kyselyt ja raportit > Pääkirja.
-2. Avaa valintaikkuna valitsemalla Parametrit.
-3. Valitse Päivitä.
+1. Valitse **Kirjanpito > Kyselyt ja raportit > Pääkirja**.
+2. Avaa valintaikkuna valitsemalla **Parametrit**.
+3. Valitse **Päivitä**.
 4. Etsi luettelosta tili, jossa on tilitetty tapahtuma.
-5. Valitse Kaikki tapahtumat.
+5. Valitse **Kaikki tapahtumat**.
 6. Suodattimen käyttö nopeuttaa tapahtuman etsimistä luettelosta.
-7. Valitse Tapahtuman selvitykset.
+7. Valitse **Tapahtuman selvitykset**.
 8. Merkitse valittu rivi luettelossa.
 
 

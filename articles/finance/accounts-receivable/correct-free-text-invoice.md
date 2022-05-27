@@ -1,6 +1,6 @@
 ---
 title: Vapaatekstilaskun korjaus
-description: Tässä artikkelissa kerrotaan, miten kirjattu vapaatekstilasku korjataan ja luodaan uudelleen korjattuna laskuna.
+description: Tässä aiheessa kerrotaan, miten kirjattu vapaatekstilasku korjataan ja luodaan uudelleen korjattuna laskuna.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 13991
 ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf4503e3d4b200219d6b444b69c866871d21787d
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 7fb535b14f4c270f914a427d09027c37b3be7b72
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753799"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716210"
 ---
 # <a name="correct-a-free-text-invoice"></a>Vapaatekstilaskun korjaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten kirjattu vapaatekstilasku korjataan ja luodaan uudelleen korjattuna laskuna.
+Tässä aiheessa kerrotaan, miten kirjattu vapaatekstilasku korjataan ja luodaan uudelleen korjattuna laskuna.
 
 Voit korjata kirjatun vapaatekstilaskun avaamalla kirjatun vapaatekstilaskun. Valitse **Lasku**-sivulla **Peruuta** ja sitten **Korjaa lasku**. Valitse syykoodi, lisää kommentit ja valitse päivämäärä uudelle korjatulle laskulle. Voit muokata korjattua laskua ja kirjata sen. 
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919498"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722516"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tapahtuman tapahtumien sähköpostimallien luominen
 
@@ -64,8 +64,8 @@ Pakkaus valmis -ilmoitustyyppi tukee seuraavia ylimääräisiä sähköpostin pa
 | ------------------- | ------- |
 | `pickupstorename`     | Sen myymälän nimi, josta tilaus on noudettavissa. |
 | `pickupstoreaddress`  | Sen myymälän osoite, josta tilaus on noudettavissa. |
-| `pickupstorehourfrom` | Noutomyymälän avaamisaika. |
-| `pickupstorehourto`   | Noutomyymälän sulkemisaika. |
+| `pickupstoreopenfrom` | Noutomyymälän avaamisaika. |
+| `pickupstoreopento` | Noutomyymälän sulkemisaika. |
 | `pickupchannelid`     | Noutomyymälän myymälän kanavatunnus. |
 | `packingslipid`      | Noudettavan tilauksen pakkausluettelon tunnus. |
 | `confirmationid`      | Noudettavan tilauksen tilausvahvistuksen tunnus. (Tätä tunnusta kutsutaan joskus kanavaviitteen tunnukseksi.) |
@@ -102,7 +102,7 @@ Myönnä lahjakortti -ilmoitustyyppi tukee seuraavia ylimääräisiä paikkamerk
 | Paikkamerkin nimi      | Tarkoitus |
 | --------------------- | ------- |
 | `giftcardnumber`        | Lahjakortin numero, kun kyseessä on lahjakorttityypin tuotteet. |
-| `giftcardbalance`       | Lahjakortin saldo, kun kyseessä on lahjakorttityypin tuotteet. |
+| `availablebalance` | Lahjakortissa jäljellä oleva summa. |
 | `giftcardmessage`       | Lahjakortin viesti, kun kyseessä on lahjakorttityypin tuotteet. |
 | `giftcardpin`         | Lahjakortin henkilökohtainen tunnusluku (PIN), kun kyseessä on lahjakorttityypin tuotteet. (Tämä paikkamerkki koskee vain ulkoisia lahjakortteja.) |
 | `giftcardexpiration`    | Lahjakortin vanhentumispäivä, kun kyseessä on lahjakorttityypin tuotteet. (Tämä paikkamerkki koskee vain ulkoisia lahjakortteja.) |
