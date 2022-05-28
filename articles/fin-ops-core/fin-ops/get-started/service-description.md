@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656800"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740649"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten palvelukuvaus
 
@@ -265,7 +265,7 @@ Asiakkaan vuokraajajärjestelmänvalvoja voi käyttää tuotantoesiintymiä ja m
 |---|---|---|
 | **Muu kuin tuotanto**<br>Tason 1 eristys | Muu kuin tuotantoympäristö, jonka asiakkaat ottavat käyttöön kehitystä, esittelyä tai koulutusta varten. | Tason 1 eristys (jota kutsutaan myös pilvipalveluympäristöksi) on asiakkaan hallitsema VM, joka otetaan käyttöön asiakkaan Azure-tilauksessa LCS:n kautta. Koska kyseessä on VM asiakkaan Azure-tilauksessa, asiakkaalla on täydet järjestelmänvalvojan käyttöoikeudet ympäristöön etätyöpöydän kautta. |
 | **Muu kuin tuotanto**<br>Tier 2 (tai sitä suurempi) eristys | Muu kuin tuotantoympäristö, jonka asiakkaat ottavat käyttöön käyttäjähyväksyntätestausta, integraatiotestausta, koulutusta, valmistelua tai mitä tahansa muuta tuotantoa edeltävää skenaariota varten. | Tason 2 ja sitä korkeampien tasojen eristysympäristöt otetaan käyttöön talous- ja toimintosovellusten SaaS-tilauksessa. Käyttöoikeudet Azuren SQL-tietokantoihin, jotka on yhdistetty muuhun kuin tuotantoympäristöön, myönnetään [just-in-time-käyttöoikeuksien muodossa](../../dev-itpro/database/database-just-in-time-jit-access.md). Etätyöpöydän käyttö ei ole mahdollista. |
-| **Tuotantoympäristö** | Tuotantoympäristö otetaan käyttöön, kun projekti on [valmis alustavaan lopulliseen käyttöönottoon](/imp-lifecycle/environment-planning.md#production-system-readiness). | Tuotantoympäristöjä otetaan käyttöön SaaS-tilauksessa. Niitä käytetään yksinomaan selaimen, palvelun päätepisteiden tai LCS:n kautta. |
+| **Tuotantoympäristö** | Tuotantoympäristö otetaan käyttöön, kun projekti on [valmis alustavaan lopulliseen käyttöönottoon](../imp-lifecycle/environment-planning.md#production-system-readiness). | Tuotantoympäristöjä otetaan käyttöön SaaS-tilauksessa. Niitä käytetään yksinomaan selaimen, palvelun päätepisteiden tai LCS:n kautta. |
 
 ### <a name="microsoft-administrative-access"></a>Microsoftin järjestelmänvalvojan käyttöoikeudet
 
@@ -286,7 +286,7 @@ Microsoft on investoinut laajaan työkalusarjaan asiakkaiden tuotantoesiintymien
 |---|---|
 | <ul><li>Palvelun käytettävyyden seuranta.</li><li>Kriittisten komponenttien (kuten Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce ja Management Reporter) jatkuva seuranta ja hälytysten antaminen kuntomittareiden ja vahtiajastinten perusteella.</li><li>Infrastruktuuripalvelujen (kuten Azure Active Directory \[Azure AD\] ja Azure SQL) aiheuttaman suorituskyvyn heikkenemisen seuranta.</li><li>Jos Microsoft määrittää, että yksittäinen prosessi tai erätyö aiheuttaa poikkeamia, kyseinen prosessi tai työ lopetetaan asiakkaan kanssa käydyn viestinnän jälkeen.</li></ul> | <ul><li>Sellaisten sovellusten määritysten ja laajennusten muutosten seuranta, jotka voivat aiheuttaa toiminta- ja suorituskykyongelmia.</li><li>Sovellusvirheet on diagnosoitava seurantatyökaluilla. Näiden työkalujen käyttö käyttäjien ilmoittamien suorituskykypoikkeamien diagnosointiin.</li><li>Microsoftille ilmoittaminen, jos järjestelmän odotettu kuormitus ylittää ennustetun huippukäytön.</li><li>Jos kulloinenkin palvelu ei ole käytettävissä tuotantoesiintymässä, asiakas voi käyttää LCS:ää [tuotantokatkoksesta](../../dev-itpro/lifecycle-services/report-production-outage.md) ilmoittamiseen.</li></ul> |
 
-Lähettämällä tukipyyntöjä verkossa LCS:n kautta asiakkaat mahdollistavat Microsoftille nopean ja syvän teknisen asiantuntemuksen toimittamisen mahdollisimman tehokkaasti ja vaikuttavasti. Vaikka puhelinvaihtoehto on käytettävissä, sitä pitäisi käyttää vain, jos verkkovaihtoehto ei ole käytettävissä. Lisätietoja: [Puhelintukivaihtoehdot](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+Lähettämällä tukipyyntöjä verkossa LCS:n kautta asiakkaat mahdollistavat Microsoftille nopean ja syvän teknisen asiantuntemuksen toimittamisen mahdollisimman tehokkaasti ja vaikuttavasti. Vaikka puhelinvaihtoehto on käytettävissä, sitä pitäisi käyttää vain, jos verkkovaihtoehto ei ole käytettävissä. Lisätietoja: [Puhelintukivaihtoehdot](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## <a name="incident-management"></a>Tapaushallinta
 

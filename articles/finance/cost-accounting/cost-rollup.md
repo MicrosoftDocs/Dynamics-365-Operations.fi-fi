@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779953"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734426"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779953"
 Kustannuslaskennan avulla saat tietoja siitä, miten voit kustannusvirta liittyy organisaatiossa toimitettaviin tuotteisiin ja palveluihin. Kustannusten läpinäkyvyyden saavuttamiseksi kustannukset on kohdistettava kustannusobjektien välillä soveltuvan kohdistusperusteen mukaisesti. Oletusarvoisesti ensisijaisen kustannustason kustannukset kohdistetaan, mikä on toivottavaa joissakin tilanteissa. Tästä on kuitenkin joitakin seurauksia, jotka on otettava huomioon.
 
 -   Oheiskustannusobjektien ensisijaisen kustannustason saldoksi tulee nolla yleiskustannuslaskennan jälkeen.
-
 -   Yleiskustannuslaskenta voi luoda erittäin suuren määrän kustannusmerkintöjä.
-
 -   Kustannusobjektien välistä kustannusvirtaa ei voi jäljittää.
 
 Nämä vaikutukset voi välttää määrittämällä kustannusten kohdistuksen kustannuslaskennassa organisaation johdon raportointivaatimusten mukaisiksi. Tässä ohjeaiheessa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt.

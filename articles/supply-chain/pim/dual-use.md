@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570750"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736030"
 ---
 # <a name="dual-use-goods"></a>Kaksikäyttötuotteet
 
@@ -34,7 +34,7 @@ Esimerkkiskenaarioita:
 2. Tuotteen X-100 **Vapautetun tuotteen tiedot** -sivu ilmaisee, että kyse on kaksikäyttötuotteesta. Koodi, luokka, ryhmä ja hallintotapa ilmaisevat yhdessä, mihin vientivalvontaluokitukseen tuote kuuluu.
 3. **Kaksikäyttötodistukset**-sivu sisältää tuotteen X-100 todistuksen, kun se lähetetään Ranskaan. Tämä todistus vanhenee 1. tammikuuta 2020.
 4. Luot 17. kesäkuuta 2020 myyntitilauksen ranskalaiselle asiakasyritykselle, ja tilaus sisältää tuotteen X-100.
-5. Kun tallennat myyntitilauksen, järjestelmää määrittää seuraavat tiedot:
+5. Kun vahvistat myyntitilauksen, järjestelmä määrittää seuraavat tiedot:
 
     1. Sisältääkö tilaus kaksikäyttötuotteita?
     2. Jos tilaus sisältää kaksikäyttötuotteita, edellyttääkö kohdemaa kaksikäyttötodistuksia?

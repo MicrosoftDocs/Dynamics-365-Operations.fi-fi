@@ -1,6 +1,6 @@
 ---
 title: Toimittajan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää
-description: Tämä artikkeli opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta.
+description: Tämä aihe opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14431
 ms.assetid: 6b8e3420-b4c9-4e02-9588-598fe6d3df0d
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46d5025af229c9002967973a0d897708cd3d67dd7d22d887cc611c5c8213d2bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04b00c8407ea2fd7d1e4b58db47c392989a20577
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737062"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716240"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Toimittajan osamaksun ja lopullisen maksun täydellinen tilittäminen ennen alennuspäivämäärää
 
 [!include [banner](../includes/banner.md)]
 
-Tämä artikkeli opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta.
+Tämä aihe opastaa sinua skenaariossa, jossa osittaisia maksuja suoritetaan toimittajan laskulle ja käytetään käteisalennusta.
 
 Fabrikam ostaa tavaraa toimittajalta 3064. Toimittaja antaa Fabrikamille 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Laskut on maksettava 30 päivän kuluessa. Lisäksi toimittaja antaa Fabrikamille käteisalennukset osamaksuista. Tilityksen parametrit sijaitsevat **Ostoreskontran parametrit** -sivulla. April syöttää 25. kesäkuuta 1 000,00 arvoisen laskun toimittajalle 3064.
 

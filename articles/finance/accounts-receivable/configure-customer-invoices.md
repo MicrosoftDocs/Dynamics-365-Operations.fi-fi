@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392908"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756960"
 ---
 # <a name="create-a-customer-invoice"></a>Myyntilaskun luominen
 
@@ -30,7 +30,7 @@ ms.locfileid: "8392908"
 
 **Vapaatekstilasku** ei liity myyntitilaukseen. Sen tilausriveillä on antamasi kirjanpitotilit, vapaatekstikuvaukset ja myyntisumma. Tällaiseen laskuun ei voi kirjoittaa nimiketunnusta. Arvonlisäverotiedot on kirjoitettava. Myynnin päätili ilmaistaan jokaisella laskurivillä, ja voit jakaa sen useille kirjanpitotileille valitsemalla **Jaa summat** **Vapaatekstilasku**-sivulla. Myös asiakkaan saldo kirjataan vapaatekstilaskussa käytetystä kirjausprofiilista yhteenvetotilille.
 
-Lisätietoja on kohdassa 
+Lisätietoja:
 
 [Luo vapaatekstilaskut](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ Lisätietoja on kohdassa
 [Luo ja kirjaa toistuvat vapaatekstilaskut](tasks/post-recurring-free-text-invoices.md)
 
 
-**Proformalasku** on lasku, joka laaditaan todellisten laskusummien ennusteena ennen laskun kirjaamista. Proformalaskun voi tulostaa joko myyntilauksen myyntilaskulle tai vapaatekstilaskulle.
+**Proformalasku** on lasku, joka laaditaan todellisten laskusummien ennusteena ennen laskun kirjaamista. **Proformalaskun** voi tulostaa joko myyntilauksen myyntilaskulle tai vapaatekstilaskulle. 
+
+>[!NOTE]
+> Jos järjestelmä keskeyttää myynnin proformalaskuprosessin aikana, proformalasku voi jäädä orvoksi. Orvoksi jäänyt proformalasku voidaan poistaa suorittamalla kausittainen **Poista proformalaskut manuaalisesti** -työ. Valitse **Myynti ja markkinointi > Kausittaiset tehtävät > Puhdista > Poista proformalaskut manuaalisesti**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Myyntitilauksen myyntilaskun tietoyksiköiden käyttäminen
 Tietoyksiköiden avulla voit tuoda ja viedä myyntitilauksen myyntilaskun tietoja. Myyntilaskun otsikon ja myyntilaskurivien tietoihin on eri yksiköt.
@@ -82,6 +85,11 @@ Voit katsoa myyntitilausten tilaa **Kaikki myyntilaukset** -luettelosivulla.
 Käytä tätä prosessia, kun vähintään yksi myyntitilaus on valmis laskutettavaksi ja haluat konsolidoida ne yhteen laskuun. 
 
 Voit valita **Myyntitilaus**-luettelosivulla useita laskuja ja konsolidoida ne sitten **Luo laskuja** -vaihtoehdolla. Voit muuttaa **Laskun kirjaus** -sivulla **Yhteenvetotilaus**-asetuksen muodostamaan yhteenvedon tilausnumeron mukaan (jossa yhdelle myyntitilaukselle on useita pakkausluetteloita) tai laskutustilin mukaan (jossa yhdellä laskutustilillä on useita myyntitilauksia). Konsolidoi myyntitilaukset yhdeksi laskuksi **Järjestä**-painikkeella **Yhteenvetotilaus**-asetusten perusteella.
+
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Myyntitilauslaskujen jakaminen toimipaikka- ja toimitustietojen mukaan
+**Myyntireskontran parametrit** -sivun **Yhteenvedon päivitys** -välilehdessä voit konfiguroida myyntitilauksen myyntilaskujen jakamisen toimipaikan tai toimitusosoitteen mukaan. 
+ - Valitse **Jaa laskun toimipaikan perusteella** -vaihtoehto, kun haluat luoda kirjauksen yhteydessä yhden laskun toimipaikkaa kohti. 
+ - Valitse **Jaa laskun toimitustietojen perusteella** -vaihtoehto, kun haluat luoda yhden laskun yhtä myyntitilausrivin toimitusosoitetta kohden. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Kirjaa hinnattomat myyntitilauksen rivit Tuotto-tilille
 Voit myös päivittää **kirjanpidon** **tuotto** tilin myyntitilausriveille, joissa ei ole hintaa. Voit määrittää tai tarkastella näitä tietoja **myyntireskontran parametri** -sivun **Kirjanpito ja arvonlisävero** -välilehdessä kohdassa **Kirjaa tuottotilille nollahintaisille myyntitilauslaskun riveille**. (**Myyntireskontra > Asetukset > Myyntireskontran parametrit**). Valitse **Kyllä**, jos haluat päivittää sellaisen myyntitilauslaskurivin **tuotto** tilin, jossa ei ole hintaa. Tuottotili määritetään **Varastokirjauksen** parametrisivulla **Myyntitilaus**-tilimääritysvälilehdessä. Jos tätä vaihtoehtoa ei ole valittu, **tuotto**-tilille ei kirjata rivejä, riveillä, riveillä ei ole hintatietoja.

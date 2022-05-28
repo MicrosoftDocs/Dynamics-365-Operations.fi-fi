@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c60913bda66e5facdf05106f621005b06ac4cf9c2d13b9df36eef42615395fa9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 20a021ae4f713a74bdd565cc1470e5d95efc8b71
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729675"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735608"
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Luo arvonlisäverotapahtumia asiakirjoihin
 
@@ -26,36 +26,36 @@ ms.locfileid: "6729675"
 
 Asiakirjojen arvonlisävero lasketaan määrittämällä arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä asiakirjariveille. Näiden oletusarvot saadaan päätiedoista, mutta arvoja voi muuttaa manuaalisesti tarvittaessa. Laskettu arvonlisävero voidaan tarkistaa rivi- ja asiakirjatasolla. Tässä tehtävässä käytetään esittely-yritystä USMF.
 
-1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Asiakastili-kentässä avattavan valikon painike.
+1. Siirry kohtaan **Myyntireskontra > Tilaukset > Kaikki myyntitilaukset**.
+2. Valitse **Uusi**.
+3. Avaa haku valitsemalla **Asiakastili**-kentässä avattavan valikon painike.
 4. Etsi haluamasi tietue luettelosta ja valitse se.
 5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Valitse OK.
+6. Valitse **OK**.
 7. Merkitse valittu rivi luettelossa.
-8. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
+8. Avaa haku valitsemalla **Nimiketunnus**-kentässä avattavan valikon painike.
 9. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-10. Syötä Yksikköhinta-kenttään numero.
-11. Laajenna tai tiivistä Rivitiedot-osa.
-12. Valitse Asetukset-välilehti.
-13. Avaa haku valitsemalla Nimikkeen arvonlisäveroryhmä -kentässä avattavan valikon painike.
+10. Syötä **Yksikköhinta**-kenttään numero.
+11. Laajenna tai tiivistä **Rivitiedot**-osa.
+12. Valitse **Asetukset**-välilehti.
+13. Avaa haku valitsemalla **Nimikkeen arvonlisäveroryhmä** -kentässä avattavan valikon painike.
 14. Etsi haluamasi tietue luettelosta ja valitse se.
 15. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-16. Valitse Myyntitiedot.
-17. Valitse Arvonlisävero.
-18. Valitse OK.
-19. Valitse Lisää rivi.
+16. Valitse **Myyntitiedot**.
+17. Valitse **Arvonlisävero**.
+18. Valitse **OK**.
+19. Valitse **Lisää rivi**.
 20. Merkitse valittu rivi luettelossa.
-21. Avaa haku valitsemalla Nimiketunnus-kentässä avattavan valikon painike.
+21. Avaa haku valitsemalla **Nimiketunnus**-kentässä avattavan valikon painike.
 22. Etsi haluamasi tietue luettelosta ja valitse se.
 23. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-24. Syötä Yksikköhinta-kenttään numero.
-25. Avaa haku valitsemalla Nimikkeen arvonlisäveroryhmä -kentässä avattavan valikon painike.
+24. Syötä **Yksikköhinta**-kenttään numero.
+25. Avaa haku valitsemalla **Nimikkeen arvonlisäveroryhmä** -kentässä avattavan valikon painike.
 26. Etsi haluamasi tietue luettelosta ja valitse se.
 27. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-28. Valitse toimintoruudussa Myynti.
-29. Valitse Arvonlisävero.
-30. Valitse OK.
+28. Valitse toimintoruudussa **Myynti**.
+29. Valitse **Arvonlisävero**.
+30. Valitse **OK**.
 
 
 

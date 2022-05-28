@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066597"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733982"
 ---
 # <a name="recruit-job-candidates"></a>Ehdokkaiden työhönotto
 
@@ -29,7 +28,7 @@ ms.locfileid: "8066597"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources auttaa työhönottopyyntöjen hallinnassa. Sen avulla myös ehdokkaiden siirtäminen työntenkijöiksi sujuu saumattomasti. Jos organisaatiossa käytetään erillistä työhönottosovellusta, työhönottoprosessissa saatetaan suorittaa seuraavat vaiheet:
+Dynamics 365 Human Resources auttaa työhönottopyyntöjen hallinnassa. Sen avulla myös ehdokkaiden siirtäminen työntenkijöiksi sujuu saumattomasti. Jos organisaatiossa käytetään erillistä työhönottosovellusta, työhönottoprosessissa saatetaan suorittaa seuraavat vaiheet:<!--note from editor: Should this be a numbered list? These steps do seem to follow a particular order.-->
 
 - Syötä rekrytointipyyntö Human Resources -sovelluksessa.
 - Vastaanota ehdokkaiden suositukset työhönottosovelluksesta Human Resourcesiin.
@@ -42,13 +41,18 @@ Jos käytössä ei ole erillistä työhönottosovellusta, voit hallinnoida ehdok
 >
 > Voit myös etsiä työhönoton integrointisovelluksia [AppSourcesta](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-## <a name="enable-recruiting-requests"></a>Ota työhönottopyynnöt käyttöön
+## <a name="enable-recruiting-requests-on-the-merged-infrastructure"></a>Ota käyttöön työhönottopyynnöt yhdistetyssä infrastruktuurissa
 
-Jos haluat lähettää työhönottopyyntöjä Human Resourcesissa, ota ensin toiminto käyttöön kohdassa **Human Resourcesin jaetut parametrit**.
+Jos haluat lähettää työhönottopyyntöjä henkilöstöhallinnon työhönottoon, sinun on ensin otettava käyttöön **Henkilöstöhallinnon käyttäjäkokemus**- ja **Työhönottoprosessin hallinta** -ominaisuudet.
 
-1. Valitse **Henkilöstön hallinta** -työtilassa **Linkit**.
-2. Valitse **Määritys**-kohdasta **Human resourcesin jaetut parametrit**.
-3. Määritä **Työhönotto**-välilehden **Työhönotto**-kohdan **Ota työhönottopyynnöt käyttöön** -arvoksi **Kyllä**.
+Kun ominaisuudet on otettu käyttöön, valitse toiminnot seuraavasti: 
+1. Valitse **Henkilöstöhallinto** > **Asetukset** > **Henkilöstöhallintoparametrit**.
+2. Määritä  **Työhönotto** -välilehdessä **Työhönotto pois käytöstä** -kentän arvoksi **Ei**.
+3. Valitse avattavassa **Työhönottokokemus** -luettelossa **HR-työhönotto**.   
+
+> [!Note] 
+> Kun **HR-työhönotto** on valittuna, **Työhönottoprojektit** (vanha) ovat vain luku -muodossa. 
+
 
 ## <a name="add-a-recruiting-request-location"></a>Työhönottopyynnön sijainnin lisääminen
 
@@ -61,7 +65,7 @@ Voit lisätä organisaation mahdolliset useat sijainnit, jotta pyytäjät voivat
     ![Työhönottopyynnön sijainnin lisääminen.](./media/hr-recruit-0a-add-location.png)
 
 4. Syötä **Kuvaus**-kohtaan sijainnin kuvaus.
-5. Valitse **Sijainti**-kohdassa **Lisää**. Jos **Uusi osoite** -valintaikkuna avautuu, anna sijainnin osoite.
+5. Valitse **Sijainti**-kohdassa **Lisää**. Jos **Uusi osoite** -valintaikkuna avautuu, anna sijainnin osoite.<!--note from editor: Please make the address in this image less plausible. Via the fictitious guidelines on CELAweb: For street addresses, you should use sequential numbers, common street names, and incorrect zip codes (e.g., 4567 Main St Buffalo, NY 98052). (See https://microsoft.sharepoint.com/sites/CELAWeb-Copyrights-Trademarks-And-Patents/SitePages/trademarks-fictitious-names.aspx)-->
 
     ![Anna osoite.](./media/hr-recruit-0b-address.png)
 
@@ -91,7 +95,7 @@ Esimiehet voivat lähettää työhönottopyyntöjä Human Resourcesissa. Jos kä
     Muut työhönottopyynnön kentät täytetään käyttämällä annetun työn oletustietoja.
 
 8. Syötä **Ulkoinen kuvaus** -kenttään ulkoisen työn kuvaus.
-9. Valitse **Toimet**-kohdassa **Lisää** ja valitse tämän työhönottopyynnön toimi.
+9. Valitse **Toimet**-kohdassa **Lisää** ja valitse tämän työhönottopyynnön toimi.<!--note from editor: In all of these images, are they approved fictitious names, or do they come from sample data included with the app?-->
 
     ![Toimen lisääminen.](./media/hr-recruit-4-select-position.png)
 

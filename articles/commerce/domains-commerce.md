@@ -2,7 +2,7 @@
 title: Toimialueet Dynamics 365 Commercessa
 description: Tässä aiheessa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733988"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737343"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733988"
 Tässä aiheessa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 
 Toimialueet ovat verkko-osoitteita, joiden avulla siirrytään Dynamics 365 Commerce -sivustoissa selaimen avulla. Voit ohjata toimialueen hallintaa valitun toimialuenimipalvelimen (DNS) tarjoajan avulla. Toimialueisiin viitataan Dynamics 365 Commerce -sivuston luontiohjelmassa. Niiden avulla määritetään, miten sivustoa käytetään julkaisun jälkeen. Tässä aiheessa on tietoja toimialueiden käsittelemisestä ja niihin viittaamisesta Commerce-sivuston kehityksen ja käynnistyksen elinkaaren aikana.
+
+> [!NOTE]
+> Kaikille Dynamics 365 Commerce -ohjelmassa luoduille ympäristöille valmistellaan `.dynamics365commerce.ms`-toimialue 6.5.2022 alkaen aiemman mallin `.commerce.dynamics.com` tilalle. `.commerce.dynamics.com`-toimialueeseen liittyvät aiemmin luodut ympäristöt jatkavat toimimista.
 
 ## <a name="provisioning-and-supported-host-names"></a>Valmistelu ja tuetut isäntänimet
 
@@ -44,7 +47,7 @@ Voit luoda palvelupyynnön lisätoimialueiden lisäämiseksi ympäristöön, jos
 
 ## <a name="commerce-generated-urls"></a>Commercen luomat URL-osoitteet
 
-Sähköisen kaupankäynnin Dynamics 365 Commerce -ympäristön valmistelun yhteydessä Commerce luo URL-osoitteen, joka on ympäristön työosoite. Tähän URL-osoitteeseen viitataan sähköisen kaupankäynnin sivuston linkissä, joka näkyy LCS:ssä ympäristön valmistelun jälkeen. Commercen luoman URL-osoitteen muoto on `https://<e-commerce tenant name>.commerce.dynamics.com`, jossa sähköisen kaupankäynnin vuokraajan nimi on Commercen ympäristöön LCS:lle syötetty nimi.
+Sähköisen kaupankäynnin Dynamics 365 Commerce -ympäristön valmistelun yhteydessä Commerce luo URL-osoitteen, joka on ympäristön työosoite. Tähän URL-osoitteeseen viitataan sähköisen kaupankäynnin sivuston linkissä, joka näkyy LCS:ssä ympäristön valmistelun jälkeen. Commercen luoman URL-osoitteen muoto on `https://<e-commerce tenant name>.dynamics365commerce.ms`, jossa sähköisen kaupankäynnin vuokraajan nimi on Commercen ympäristöön LCS:lle syötetty nimi.
 
 Voit käyttää tuotantosivuston isäntänimiä myös eristysympäristössä. Tämä vaihtoehto on ihanteellinen, kun kopioit sivuston eristysympäristöstä tuotantoon.
 
@@ -67,11 +70,11 @@ Seuraavassa kuvassa näkyy Oletus-nimisen sivuston **Määritä sivusto** -valin
 
 Jos sähköisen kaupankäynnin vuokraajassa nimeltä xyz on esimerkiksi sivuston luontiohjelman sivusto nimeltä fabrikam ja määrität sivuston, jolla on tyhjä polku, voit käyttää julkaistua sivuston sisältöä verkkoselaimessa siirtymällä suoraan Commercen luomaan perus-URL-osoitteeseen seuraavasti:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Vaihtoehtoisesti voit käyttää julkaistua sivuston sisältöä selaimessa seuraavan URL-osoitteen avulla, jos olet lisännyt fabrikam-polun sivuston asetusten aikana:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Sivut ja URL-osoitteet
 
@@ -92,16 +95,16 @@ Tuetut isäntänimien arvot ovat käytettävissä. Ne voidaan liittää toimialu
 Jos olet määrittänyt sivuston luontiohjelmassa kaksi sivustoa, joilla on eri toimialueet, voit liittää **?domain=**-määritteen käytettävään URL-osoitteeseen ja käyttää julkaistun sivuston sisältöä selaimessa.
 
 Ajatellaan, että xyz-niminen ympäristö on valmisteltu ja sivuston luontiohjelmassa on luotu ja liitetty kaksi sivustoa. Toisen toimialue on `www.fabrikam.com` ja toisen `www.constoso.com`. Kukin sivusto on määritetty käyttämällä tyhjää polkua. Näitä kahta sivustoa voidaan tämän jälkeen käyttää selaimessa **?domain=**-määritteen avulla seuraavasti:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Kun toimialueen kyselymerkkijonoa ei anneta ympäristössä, jossa on useita toimialueita, Commerce käyttää ensimmäistä toimialuetta. Jos esimerkiksi polku fabrikam annettiin ensin sivuston asetuksen aikana, URL-osoitetta `https://xyz.commerce.dynamics.com` voidaan käyttää julkaistun sivuston sisällön käyttämisessä URL-osoitteessa `www.fabrikam.com`.
+Kun toimialueen kyselymerkkijonoa ei anneta ympäristössä, jossa on useita toimialueita, Commerce käyttää ensimmäistä toimialuetta. Jos esimerkiksi polku fabrikam annettiin ensin sivuston asetuksen aikana, URL-osoitetta `https://xyz.dynamics365commerce.ms` voidaan käyttää julkaistun sivuston sisällön käyttämisessä URL-osoitteessa `www.fabrikam.com`.
 
 ## <a name="traffic-forwarding-in-production"></a>Liikenteen välittäminen tuotannossa
 
-Voit simuloida useita toimialueita käyttämällä toimialueen kyselymerkkijonon parametreja itse commerce.dynamics.com-päätepisteessä. Kun haluat julkaista tuotannon, sinun on välitettävä liikenne muokattuun toimialueeseen `<e-commerce tenant name>.commerce.dynamics.com`-päätepisteessä.
+Voit simuloida useita toimialueita käyttämällä toimialueen kyselymerkkijonon parametreja itse commerce.dynamics.com-päätepisteessä. Kun haluat julkaista tuotannon, sinun on välitettävä liikenne muokattuun toimialueeseen `<e-commerce tenant name>.dynamics365commerce.ms`-päätepisteessä.
 
-`<e-commerce tenant name>.commerce.dynamics.com`-päätepiste ei tue mukautetun toimialueen SSL (Secure Sockets Layer) -salausta. Määritä siis mukautetut toimialueet käyttämällä Front Door Service -palvelua tai sisällön toimitusverkostoa. 
+`<e-commerce tenant name>.dynamics365commerce.ms`-päätepiste ei tue mukautetun toimialueen SSL (Secure Sockets Layer) -salausta. Määritä siis mukautetut toimialueet käyttämällä Front Door Service -palvelua tai sisällön toimitusverkostoa. 
 
 Jos haluat määrittää mukautettuja toimialueita Front Door Service -palvelun tai sisällön toimitusverkoston (CDN) avulla, käytettävissä on seuraavat kaksi vaihtoehtoa:
 

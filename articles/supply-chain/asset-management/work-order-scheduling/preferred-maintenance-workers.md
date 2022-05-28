@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734424"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687666"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Määritä ensisijaiset ylläpitotyöntekijät
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Työtilausten ajoittamisen yhteydessä voit määrittää, mikä ylläpitotyöntekijä tai työntekijäryhmä kohdennetaan ensisijaisesti työtilauksen suorittamiselle. Tämän toiminnon käyttäminen on valinnaista, mutta sen avulla voit tehdä valinnan pätevimman kunnossapitotyöntekijän kanssa työn suorittamiseksi työntekijöiden taitojen ja osaamisen perusteella. Vain ajoitushetkellä käytettävissä olevat kunnossapitotyöntekijät ajoitetaan. Jos ensisijaisen ylläpitotyöntekijän asetus vastaa työtilausta ajoituksen aikana, mutta ylläpitotyöntekijä kohdistetaan muihin töihin, työtilaus ajoitetaan toiselle, käytettävissä olevalle ylläpitotyöntekijälle.
 
@@ -51,13 +49,15 @@ Mitä enemmän valintoja teet samalle tietueelle, sitä tarkempia ovat määrity
 
 3. Aloita luomalla "oletusarvoinen" ylläpitotyöntekijä tai työntekijäryhmä. Tämä tarkoittaa, että valitset vain haluamasi **Ensisijainen ylläpitotyöntekijäryhmä**- tai **Ensisijainen ylläpitotyöntekijä** -kentän. Alla olevassa näyttökuvassa on esimerkki ensimmäisestä tietueesta, jossa kentän **Ensisijainen ylläpitotyöntekijäryhmä** -kentän arvoksi valitaan "Pyynnöt".
 
-    [!NOTE] Tätä oletusasetusta käytetään työtilauksen ajoituksen aikana, jos mikään muu, tarkemmin määritettävä yhdistelmä ei vastaa työtilauksen sisältöä.
+    > [!NOTE]
+    > Tätä oletusasetusta käytetään työtilauksen ajoituksen aikana, jos mikään muu, tarkemmin määritettävä yhdistelmä ei vastaa työtilauksen sisältöä.
 
 4. Luo uusi tietue toistamalla vaihe 2. Tee tarvittavat valinnat ensisijaisen työntekijän tai työntekijäryhmän tietojen yksityiskohtaisuuden tason mukaan. 
 
     *Esimerkki:* Alla olevassa näyttökuvassa kuudennen tietueen ylläpitotyöntekijä Shawn Richardson valitaan ensisijaiseksi työntekijäksi. Hänet valitaan automaattisesti sellaisen työtilauksen ajoituksen yhteydessä, joka sisältää resurssin CH-BP1-03-02 ja ylläpitotyötyypin "Facility Assessment", jos hän on käytettävissä ajoitettuna ajankohtana.
 
-    [!NOTE] Yleensä kun työtilauksen ajoituksessa valitaan ensisijainen kunnossapitotyöntekijä, käyttöomaisuuden hallinta käy läpi kaikki **Ensisijainen ylläpitotyöntekijä** -tietueet ja etsii mahdollisen vastaavuuden tarkistamalla aina tarkimman yhdistelmän ensin. Jos vastinetta ei löydy, käytetään oletustietuetta, jonka valinta on joko **Ensisijainen ylläpitotyöntekijäryhmä** -kentässä tai **Ensisijainen ylläpitotyöntekijä** -kentässä.
+    > [!NOTE]
+    > Yleensä kun työtilauksen ajoituksessa valitaan ensisijainen kunnossapitotyöntekijä, käyttöomaisuuden hallinta käy läpi kaikki **Ensisijainen ylläpitotyöntekijä** -tietueet ja etsii mahdollisen vastaavuuden tarkistamalla aina tarkimman yhdistelmän ensin. Jos vastinetta ei löydy, käytetään oletustietuetta, jonka valinta on joko **Ensisijainen ylläpitotyöntekijäryhmä** -kentässä tai **Ensisijainen ylläpitotyöntekijä** -kentässä.
 
 ![Kuva 1.](media/02-work-order-scheduling.png)
 

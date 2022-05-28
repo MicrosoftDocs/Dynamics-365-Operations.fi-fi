@@ -8,26 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497d49da84f4df90877908bef3031e079bc36066
-ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
+ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "8557875"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735518"
 ---
 # <a name="customer-aging-data-storage"></a>Asiakkaan ikääntymistietojen tallennustila
 
 [!include [banner](../includes/banner.md)]
 
-
-Tässä aiheessa kuvataan asiakkaan erääntymistietojen ulkoisen tallennuksen käyttöprosessia. Microsoft Dynamics 365 Financessa voit suorittaa asiakkaan erääntymistietojen tallennusprosessin, jotta tiedot voidaan viedä ulkoiseen järjestelmään. Kun suoritat prosessin, samat erääntymisraporttivaihtoehdot, jotka ovat käytettävissä järjestelmässä, ovat ulkoisten järjestelmien käytettävissä. Tiedot sisällytetään aina vietyihin tietoihin.
+Tässä aiheessa kuvataan asiakkaan erääntymistietojen ulkoisen tallennuksen käyttöprosessia. Microsoft Dynamics 365 Financessa voit suorittaa **asiakkaan erääntymistietojen tallennusprosessin**, jotta tiedot voidaan viedä ulkoiseen järjestelmään. Kun suoritat prosessin, samat erääntymisraporttivaihtoehdot, jotka ovat käytettävissä järjestelmässä, ovat ulkoisten järjestelmien käytettävissä. Tiedot sisällytetään aina vietyihin tietoihin.
 
 Asiakkaan erääntymistiedot voidaan määrittää ulkoisen järjestelmän käyttöön tallennusta varten, jos tuotoksessa on useita asiakkaita ja/tai useita tapahtumia. Jos **asiakkaan erääntymisraportti** aikakatkaistaan, koska tulostettavana on liian paljon tietoja, tämä ominaisuus tarjoaa vaihtoehtoisen tavan käyttää samoja tietoja.
 

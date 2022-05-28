@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921196"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734155"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Maksukehotusjärjestyksen määrittäminen
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921196"
 
 Tällä menettelyllä luodaan maksukehotusjärjestys. Tässä tehtävässä käytetään esittely-yritystä USMF.
 
-1. Valitse siirtymisruudussa **Moduulit > Luotonvalvonta > Asetukset > Määritä maksukehotusjärjestys**.
+1. Siirry kohtaan **Luotonvalvonta > Asetukset > Määritä maksukehotusjärjestys**.
 2. Valitse **Uusi**.
 3. Syötä **Maksukehotusjärjestys**-kenttään sarjaa kuvaavan järjestyksen tunnus. Sitä käytetään kirjausprofiilin määrittämisessä.
-4. Kirjoita **Kuvaus**-kenttään arvo.  Maksuehdot ovat valinnaisia. Jos syötät tähän arvon, maksukehotuksen perintälaskussa käytetään näitä maksuehtoja asiakkaan tietoihin tallennettujen maksuehtojen sijaan.  
+4. Kirjoita **Kuvaus**-kenttään arvo. Maksuehdot ovat valinnaisia. Jos syötät tähän arvon, maksukehotuksen perintälaskussa käytetään näitä maksuehtoja asiakkaan tietoihin tallennettujen maksuehtojen sijaan.  
 5. Valitse **Maksukehotuskoodi**-kenttään ensimmäisenä lähetettävän maksukehotuksen koodi. Ensimmäinen maksukehotus luodaan laskun eräpäivän, tämän rivin Päivät-kenttään syöttämäsi lisäajan ja muiden tälle riville syöttämiesi tietojen perusteella.  
 6. Kirjoita **Kuvaus**-kenttään arvo. 
 7. Maksun oletusvaluutta on yrityksen valuutta. Tämä valuuttakoodi voi olla eri kuin laskun valuutta.   
@@ -52,9 +52,9 @@ Tällä menettelyllä luodaan maksukehotusjärjestys. Tässä tehtävässä käy
 22. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 23. Syötä **Erääntynyt vähimmäissaldo** -kenttään numero.
 24. Syötä **Päivää**-kenttään numero.
-25. Lopeta asiakkaan lisätoimitukset ja laskutus valitsemalla **Esto**-valintaruutu. Voit poistaa tilin eston valitsemalla Asiakkaat-sivun Pidossa oleva laskutus ja toimitus -kenttään arvon **Ei**.  
+25. Lopeta asiakkaan lisätoimitukset ja laskutus valitsemalla **Esto**-valintaruutu. Voit poistaa tilin eston valitsemalla **Asiakkaat**-sivun **Pidossa oleva laskutus ja toimitus** -kenttään arvon **Ei**.  
 26. Laajenna **Huomautukset**-pikavälilehti.
-27. Kirjoita valitun maksukehotuskoodin maksukehotuksessa näkyvä teksti. Huomautusruudun yläpuolella olevan Käännökset-valikon avulla voit kääntää tämän tekstin useille eri kielille.  
+27. Kirjoita valitun maksukehotuskoodin maksukehotuksessa näkyvä teksti. Huomautusruudun yläpuolella olevan **Käännökset**-valikon avulla voit kääntää tämän tekstin useille eri kielille.  
 
 
 

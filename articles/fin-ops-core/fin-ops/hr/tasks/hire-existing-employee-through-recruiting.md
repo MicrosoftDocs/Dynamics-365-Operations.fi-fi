@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 07dae424f32281a39c3887437ac7976fb3beb8d3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074910"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734920"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Nykyisten työntekijöiden työhönotto rekrytoinnin kautta
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä Finance-infrastruktuurin Human Resources -asiakkaiden käytettävissä.  
+> Tämän ohjeaiheen työhönottotoimintoa kutsutaan työhönottoprojekteiksi, ja siinä keskitytään hakijoihin, hakemuksiin ja työhönottoprojekteihin.  
 
 
 Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töissä. Tässä menettelyssä kerrotaan nykyisen työntekijän palkkaamisesta työhönottoprosessin kautta. Tässä menettelyssä työhönottoprojekti on jo määritetty ja nykyinen työntekijä on jo lähettänyt hakemuksen työhönottoprojektiin. Tämän menettelyn luomisessa käytetty esittely-yritys on **USMF**.

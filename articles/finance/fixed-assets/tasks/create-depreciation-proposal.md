@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6cf285e8764af8c6525fb3f9cbec7306917e57e832777588e8c2c1d4aeed818
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db747bf8e3343082feda204fc56d9608313a280e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719243"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716379"
 ---
 # <a name="create-a-depreciation-proposal"></a>Luo poistoehdotus
 
@@ -28,7 +28,7 @@ Tässä ohjeaiheessa kuvataan, kuinka poiston eräehdotukset toimivat ja kuinka 
 
 
 ## <a name="create-a-depreciation-proposal"></a>Luo poistoehdotus
-1. Siirry siirtymisruudussa kohtaan **Moduulit > Käyttöomaisuuserät > Kirjauskansioviennit > Luo poistoehdotus**.
+1. Siirry siirtymisruudussa kohtaan **Käyttöomaisuuserät > Kirjauskansioviennit > Luo poistoehdotus**.
 2. Valitse **Kirjauskansion nimi**-kentästä vaihtoehto avattavasta valikosta.
 3. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 

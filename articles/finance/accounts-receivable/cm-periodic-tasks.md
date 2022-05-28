@@ -1,29 +1,29 @@
 ---
-title: Kausittaiset luotonhallinnan tehtävät
-description: Tässä ohjeaiheessa käsitellään kausittaisia tehtäviä, jotka ovat välttämätön osa asiakkaiden luottorajojen hallintaprosessia.
+title: Säännölliset luotonhallintatehtävät
+description: Tässä ohjeaiheessa käsitellään kausittaisia tehtäviä, jotka ovat osa asiakkaiden luottorajojen hallintaprosessia.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 398fcd9d45ce0ddfb1f7189e0712f9dac2db012f
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 53b7cd00b3287f18ba65391842ac259ab2434b86
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753504"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735433"
 ---
 # <a name="periodic-credit-management-tasks"></a>Säännölliset luotonhallintatehtävät
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään kausittaisia tehtäviä, jotka ovat välttämätön osa asiakkaiden luottorajojen hallintaprosessia.
+Tässä ohjeaiheessa käsitellään kausittaisia tehtäviä, jotka ovat osa asiakkaiden luottorajojen hallintaprosessia.
 
 ## <a name="update-risk-scores"></a>Päivitä riskipisteet
 

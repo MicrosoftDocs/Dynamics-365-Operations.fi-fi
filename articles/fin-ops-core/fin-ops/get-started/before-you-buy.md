@@ -1,7 +1,7 @@
 ---
 title: Ennen ostamista
 description: Vaiheittaiset ohjeet, joita käytetään harkittaessa Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin tai Dynamics 365 Commercen ostoa.
-author: ShellyBakke
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,29 +10,29 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874581"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713273"
 ---
 # <a name="before-you-buy"></a>Ennen ostamista
 
 [!include [banner](../includes/banner.md)]
 
-Uudet Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin tai Dynamics 365 Commercen käyttäjät Voit käyttää vaihe vaiheelta -opasta silloin, kun arvioit sovellusta tai kun olet valmis hankkimaan sen.
+Oletko uusi Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin tai Dynamics 365 Commercen käyttäjä? Voit käyttää vaihe vaiheelta -opasta silloin, kun arvioit sovellusta tai kun olet valmis hankkimaan sen.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Vaihe 1: Finance and Operationsin maksuton 30 päivän kokeilu
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Ensimmäinen vaihe: Finance and Operationsin maksuton 30 päivän kokeilu
 
-Voit kokeilla Dynamics 365 for Financea, Dynamics 365 Supply Chain Managementia tai Dynamics 365 Commercea 30 päivää rekisteröitymällä sähköpostitse. Finance and Operations -sovellusten kokeiluversiossa on tehtävien aloitusoppaat, joiden vaihe vaiheelta -ohjeilla voi tarkastella tiettyjä skenaarioita käytännössä. Tuotteessa voi tutustua erilaisiin skenaarioihin ja niitä voi harjoitella, mutta sitä ei voi mukauttaa. Esittelytiedot helpottavat tuotteen käyttöä ja takaavat merkityksellisen kokemuksen. Muistutussähköposti lähetetään kolme päivää ennen koeajan päättymistä. Lisätietoja on kohdassa [Kokeiluversioiden tilaaminen](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Voit kokeilla Dynamics 365 for Financea, Dynamics 365 Supply Chain Managementia tai Dynamics 365 Commercea 30 päivää rekisteröitymällä sähköpostitse. Talous- ja toimintosovellusten kokeiluversiossa on tehtävien aloitusoppaat, joiden vaihe vaiheelta -ohjeilla voi tarkastella tiettyjä skenaarioita käytännössä. Tuotteessa voi tutustua erilaisiin skenaarioihin ja niitä voi harjoitella, mutta sitä ei voi mukauttaa. Esittelytiedot helpottavat tuotteen käyttöä ja takaavat merkityksellisen kokemuksen. Muistutussähköposti lähetetään kolme päivää ennen koeajan päättymistä. Lisätietoja on kohdassa [Kokeiluversioiden tilaaminen](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Toinen vaihe: Käyttöönottovaihtoehdon valitseminen
 
-Voit nyt ottaa Finance and Operations -sovellukset käyttöön pilviratkaisuna tai paikallisesti. Pilvikäyttöönotot sisältävät Microsoftin kokonaisuudessaan hallitseman ERP-palvelun, kun taas paikalliset käyttöönotetut toteutetaan paikallisesti asiakkaan palvelinkeskuksessa.
+Voit nyt ottaa talous- ja toimintosovellukset käyttöön pilviratkaisuna tai paikallisesti. Pilvikäyttöönotot sisältävät Microsoftin kokonaisuudessaan hallitseman ERP-palvelun, kun taas paikalliset käyttöönotetut toteutetaan paikallisesti asiakkaan palvelinkeskuksessa.
 
 Seuraavat seikat on otettava huomioon, kun valitset paikallisen käyttöönottovaihtoehdon:
 
@@ -68,7 +68,7 @@ Finance and Operationsin paikallisen version ostaminen edellyttää yhteistyöt�
 
 Jos organisaatiossa on vähintään 250 Dynamics 365:n käyttäjää, harkitse [volyymikäyttöoikeussopimusta](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-Volyymikäyttöoikeuksissa Finance and Operations -sovellukset ovat saatava seuraavasti:
+Talous- ja toimintosovellusten volyymikäyttöoikeus on saatavana seuraavina versioina:
 
 - Enterprise Agreement -sopimus
 - Enterprise Agreement -tilaus

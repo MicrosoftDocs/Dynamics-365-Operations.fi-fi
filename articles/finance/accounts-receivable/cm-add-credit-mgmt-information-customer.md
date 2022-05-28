@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753967"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734454"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Asiakkaiden luotonhallintatietojen lisääminen
 
@@ -32,7 +32,7 @@ Asiakastiedot lisätään **Kaikki asiakkaat** -sivun **Luotonvalvonta**-pikavä
 1. Valitse **Rajoittamaton luottoraja** -asetukseksi **Kyllä**, jos asiakasta ei rajoiteta millään luottorajatestillä.
 2. Valitse **Ohita luotohallinnassa** -asetukseksi **Kyllä**, jos luotonhallintaprosessien aikana yleensä tehtävät toimet ohitetaan asiakkaan kohdalla.
 3. Valitse asiakkaan luotonhallintaryhmä.
-4. Voit laskea luottorajan asiakkaan valuuttana antamalla **Luottaraja asiakkaan valuuttana** -kentässä asiakkaan luottorajan. Yritysvaluutan luottoraja muunnetaan käyttämällä vaihtokursseja, jotka luotonhallinnan parametreissa valittu luottorajan vaihtokurssin tyyppi määrittää.
+4. Voit laskea luottorajan asiakkaan valuuttana antamalla **Luottaraja asiakkaan valuuttana** -kentässä asiakkaan luottorajan. Yritysvaluutan luottoraja muunnetaan käyttämällä vaihtokursseja, jotka **luotonhallinnan parametreissa** valittu luottorajan vaihtokurssin tyyppi määrittää.
 5. Anna **Viimeksi tarkistettu** -kenttään päivämäärä, jolloin luottopäällikkö viimeksi tarkisti asiakkaan luottorajan.
 6. Anna **Seuraava ajoitettu tarkistuspäivä** -kenttään päivämäärä, jolloin asiakkaan luottotarkistus ja -päivitys on ajoitettu.
 7. Anna **Hyväksyttävä luottoraja** -kenttään korkein luottoraja, joka voidaan määrittää asiakkaalle asiakkaan luottotietojen arvioinnin perusteella. Hyväksyttävän luottorajan arvo ei ole välttämättä sama kuin **Luotonvalvonta**-pikavälilehdessä oleva luottoraja.
@@ -46,7 +46,8 @@ Asiakastiedot lisätään **Kaikki asiakkaat** -sivun **Luotonvalvonta**-pikavä
 15. Anna **Asiakas alkaen** -kenttään päivämäärä, jolloin asiakkaan ensimmäiset tapahtumat käsiteltiin. Tätä tietoa käytetään riskipisteitä luotaessa.
 16. Kirjoita muistiinpanoja, jotka auttaa luottoryhmää arvioimaan asiakkaan luottokelpoisuutta.
 
-Huomaa, että osa **Asiakas**-sivulla näkyvistä tiedoista on luotu toisessa prosessissa:
+> [!Note] 
+> Osa **Asiakas**-sivulla näkyvistä tiedoista on luotu toisessa prosessissa:
 
 - **Luottorajan vanhentumispäivä** -kentässä on päivämäärä, jolloin luottoraja vanhenee. Jos kenttää ei määritetä, asiakkaan luottoraja ei vanhene.
 - **Luottorajan päivämäärä** -kentässä on päivämäärä, jolloin luottoraja luotiin. Tämä kenttä päivitetään aina, kun luottorajaa muutetaan.

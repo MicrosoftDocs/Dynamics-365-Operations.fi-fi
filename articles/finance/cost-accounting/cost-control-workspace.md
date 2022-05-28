@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763187"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734601"
 ---
 # <a name="cost-control-workspace"></a>Kustannusseurannan työtila 
 
@@ -54,7 +54,7 @@ Määritä raportin tietoperusta **Tietojen suodatus** -pikavälilehdessä. Täm
 | Kustannuslaskennan kirjanpito                                            | **Kustannuslaskennan kirjanpito**, johon raportti perustuu. Arvo on peräisin **Kustannusseurantayksikkö**-kentästä. |
 | Kustannusseurantayksikkö                                                 | Valitsemasi arvo määrittää kustannuslaskennan kirjanpidon ja kustannusobjektit, joihin tämä raportti perustuu. |
 | Tilastodimension hierarkia, kustannustason dimensiohierarkia | **Kustannusseuranta**-työtilan määritystietue voi ilmoitta joko ei-rahallisen tai rahallisen arvon, mutta molempia ei voi käyttää samassa asettelussa. Raportoi rahalliset arvot valitsemalla arvo **Kustannustason dimensiohierarkia** -kentässä. Raportoi ei-rahalliset arvot valitsemalla arvo **Tilastodimension hierarkia** -kentässä. Valitsemasi dimensiohierarkian tietue määrittää raportointi- ja koostetasojen rakenteen.<blockquote>[!NOTE]<br>Voit tarkastella ei-rahallisia ja rahallisia arvoja rinnakkain viemällä tiedot Microsoft Excelin Microsoft Power BI -sisältöön.</blockquote> |
-| Kustannusobjektin dimensiohierarkia                                   | Valitse määrittämäsi raportoinnin tarkoitusta vastaava kustannusobjektin dimensiohierarkia. |
+| Kustannusobjektin dimensiohierarkia      | Valitse määrittämäsi raportoinnin tarkoitusta vastaava kustannusobjektin dimensiohierarkia. |
 | Budjetin alkuperäinen versio                                           | Valitse budjetin versiotunnus, joka on tämän raportin alkuperäinen budjetti. |
 | Budjetin uusi versio                                            | Valitse budjetin versiotunnus, joka on tämän raportin muutettu budjetti. |
 

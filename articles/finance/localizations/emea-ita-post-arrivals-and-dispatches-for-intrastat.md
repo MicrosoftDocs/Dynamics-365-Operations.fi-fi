@@ -1,20 +1,20 @@
 ---
 title: Tuonnin ja viennin kirjaaminen Intrastat-raportointia varten
 description: Tämän aiheen esimerkki osoittaa, miten tuonti ja vienti kirjataan Intrastat-raportointia varten.
-author: andosip
+author: anasyash
 ms.date: 8/23/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: f7bd1811fd0e580a6b6655244c689268915d320e
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 4ab4402740d199043519773b18732bdde9a0fb2f
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414784"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724780"
 ---
 # <a name="post-arrivals-and-dispatches-for-intrastat"></a>Tuonnin ja viennin kirjaaminen Intrastat-raportointia varten
 

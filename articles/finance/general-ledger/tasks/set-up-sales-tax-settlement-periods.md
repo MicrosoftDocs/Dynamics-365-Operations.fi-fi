@@ -1,6 +1,6 @@
 ---
 title: Määritä arvonlisäveron tilityskaudet
-description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää arvonlisäveron täsmäytyskaudet Dynamics 365 Financessa.
+description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää arvonlisävero tilityskaudet Dynamics 365 Financessa.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732954"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735811"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Määritä arvonlisäveron tilityskaudet
 
@@ -28,7 +28,7 @@ Tässä ohjeaiheessa kuvataan, kuinka voit määrittää arvonlisäveron täsmä
 
 Tässä tehtävässä käytetään esittely-yritystä USMF.
 
-1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Välilliset verot > Arvonlisävero > Arvonlisäveron tilityskaudet**.
+1. Siirry kohtaan **Vero > Välilliset verot > Arvonlisävero > Arvonlisäveron tilityskaudet**.
 2. Valitse **Uusi**.
 3. Kirjoita arvo **Tilityskausi**-kenttään.
 4. Kirjoita **Kuvaus**-kenttään arvo.

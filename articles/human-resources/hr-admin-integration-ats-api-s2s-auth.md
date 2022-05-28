@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064919"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743538"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Palvelimien välinen todennus ATS-integroinnin ohjelmointirajapinnalle
 
@@ -89,7 +89,7 @@ Uudelle roolille täytyy kohdistaa asiaankuuluvat käyttöoikeudet, vähintään
 
 Toinen vaihe on varmistaa, että sovellukselle on myönnetty tarvittavat käyttöoikeudet henkilöstöhallinnon tietoihin linkittämällä se käyttäjään Human Resources -sovelluksessa. Sovelluskäyttäjän osalta palvelimien väliset kutsut Dataverse-virtuaalitaulukoiden kautta tehdään Dataversessa toimintoa kutsuvan käyttäjän (sovelluksen) tunnuksen kontekstissa. Virtuaalitaulukoiden sovitinpalvelu etsii sitten liitetyn käyttäjän Human Resources -sovelluksesta ja suorittaa kyselyn käyttäjän kontekstissa. Tämä tarkoittaa, että käyttäjä on luotava Human Resources -sovelluksessa ja hänelle täytyy kohdistaa oikeat roolit, jotta integroitavalle sovellukselle voidaan myöntää käyttöoikeudet sen tarvitsemiin tietoihin.
 
-Human Resources -käyttäjälle täytyy myös kohdistaa oikeat käyttöoikeudet Human Resources -sovelluksen tietoihin. Käytettävissä oleva **Työhönottosovellus** (HcmRecruitingIntegrator) -rooli sisältää ensisijaisten yksiköiden käyttöoikeudet, jotka tarvitaan työhönottotietojen integroinnissa. Tämä rooli voidaan kohdistaa sovelluskäyttäjälle **Käyttäjät**-sivulta tietojen asiaankuuluvien käyttöoikeuksien myöntämiseksi. Lisätietoja Human Resources -käyttöoikeusrooleista on kohdassa [Rooliperustainen suojaus](/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+Human Resources -käyttäjälle täytyy myös kohdistaa oikeat käyttöoikeudet Human Resources -sovelluksen tietoihin. Käytettävissä oleva **Työhönottosovellus** (HcmRecruitingIntegrator) -rooli sisältää ensisijaisten yksiköiden käyttöoikeudet, jotka tarvitaan työhönottotietojen integroinnissa. Tämä rooli voidaan kohdistaa sovelluskäyttäjälle **Käyttäjät**-sivulta tietojen asiaankuuluvien käyttöoikeuksien myöntämiseksi. Lisätietoja Human Resources -käyttöoikeusrooleista on kohdassa [Rooliperustainen suojaus](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>Uuden käyttäjän määrittäminen asiaankuuluvilla käyttöoikeuksilla
 
