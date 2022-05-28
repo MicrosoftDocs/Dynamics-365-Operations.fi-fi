@@ -1,5 +1,5 @@
 ---
-title: Määritä cross-kurssi
+title: Ostokurssin määrittäminen
 description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 Financen ristikursseista.
 author: abruer
 ms.date: 05/16/2018
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c46ac3324a985810ede61072190014538d0b7ed36f7eedfc387468619cc88cb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed1db707cf6aed7c9def76ebbbdef7032b8776b6
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737014"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735287"
 ---
-# <a name="specify-the-cross-rate"></a>Määritä cross-kurssi
+# <a name="specify-the-cross-rate"></a>Ostokurssin määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan ristikurssin tarkoitus ja kuinka ristikurssi määritetään, kun täsmäytät maksun laskun kanssa. Käytä ristikurssia, kun kaikki seuraavat kriteerit täyttyvät: 
+Tässä ohjeaiheessa kuvataan ristikurssin tarkoitus ja kuinka ristikurssi määritetään, kun täsmäytät maksun laskun kanssa. Käytä ristikurssia, kun seuraavat kriteerit täyttyvät: 
 -   Selvität maksua laskun kanssa. 
 -   Maksurivi ja laskurivi käyttävät eri valuuttoja. 
 -   Kumpikaan valuutta ei ole kirjanpitovaluuttaa. 

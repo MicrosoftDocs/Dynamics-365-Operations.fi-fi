@@ -1,6 +1,6 @@
 ---
 title: Käsittele kirjanpidon kohdistuskirjauskansio
-description: Tässä ohjeaiheessa kerrotaan, miten kohdistuspyyntö käsitellään Dynamics 365 Finance -ohjelmassa.
+description: Tässä ohjeaiheessa kerrotaan, miten kohdistuspyyntö käsitellään Dynamics 365 Financessa.
 author: aprilolson
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d37b1a9869cc130786d0e8fde68184e04c881bad1f64c86943174213025db82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ec3653085aed278eb5d13d47f345c713cd39f1f
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765665"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722136"
 ---
-# <a name="process-ledger-allocation-journal"></a>Käsittele kirjanpidon kohdistuskirjauskansio
+# <a name="process-ledger-allocation-journal"></a>Kirjanpidon kohdistuskirjauskansion käsitteleminen
 
 [!include [banner](../../includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten kohdistuspyyntö käsitellään. Voit luoda Käsittele kohdistuspyyntö -sivulla kohdistuskirjauskansion, joka voidaan tarkistaa ja hyväksyä ennen kirjanpitoon kirjaamista tai kirjata kirjanpitoon suoraan. Ennen kohdistuskirjauskansion luomista käytössä on oltava vähintään yksi aktiivinen kirjanpidon kohdistussääntö. Tässä tehtävässä käytetään esittely-yritystä USMF.
 
-1. Siirry siirtymisruudussa kohtaan **Moduulit > Kirjanpito > Kohdistukset > Käsittele kohdistuspyyntö**.
+1. Siirry siirtymisruudussa kohtaan **Kirjanpito > Kohdistukset > Käsittele kohdistuspyyntö**.
 2. Valitse **Sääntö**-kentässä avattavasta valikosta haluamasi tietue.
 3. Lisää **Alkupäivämäärä** -kenttään päivämäärä.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f76e06f7265a4dc1837a66171d3db13bc2e580
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982506"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694365"
 ---
 # <a name="sales-agreements-overview"></a>Myyntisopimukset – yleiskatsaus
 
@@ -36,7 +36,8 @@ Myyntisopimuksen voimassaoloaika määräytyy sopimuksen **Voimaantulopäivä**-
 
 Voit luoda myyntitilauksen suoraan myyntisopimuksesta käyttämällä **Vapauta tilaus** -toimintoa. Vaihtoehtoisesti voit valita voimassa olevan myyntisopimuksen ottaessasi vastaan tilauksia (katso tämän artikkelin kohtaa Myyntisopimusten käyttäminen tilausprosessissa).  
 
-> [Huomautus!] Aiemmissa versioissa myyntisopimuksia kutsuttiin yleisiksi myyntitilauksiksi.
+> [!NOTE] 
+> Aiemmissa versioissa myyntisopimuksia kutsuttiin yleisiksi myyntitilauksiksi.
 
 ## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen myyntisopimuksen rivi ilmaisee sitoutumisen myydä jotain. Yleensä sitoumuksia on kahdentyyppisiä:

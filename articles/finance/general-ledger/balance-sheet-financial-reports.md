@@ -1,6 +1,6 @@
 ---
 title: Taseen talousraportit
-description: Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin.
+description: Tässä aiheessa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin.
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,32 +8,32 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0fae7ccb216ced0cbcbdb69980b3bae754a4980ecaf9314893368ae89459fa0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 276e877db42361282ad2bf4a01dd971ec02e2af7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734511"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734303"
 ---
 # <a name="balance-sheet-financial-reports"></a>Taseen talousraportit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin. 
+Tässä aiheessa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin. 
 
 ## <a name="default-balance-sheet-reports"></a>Oletustaseraportit
 
 Oletustaseraportteja on kaksi. Osat on pinottu yhteen raporttiin. Osat ovat rinnakkain raportissa.
 
 | Oletusraportti                       | Toiminnot                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------|----------------------------------------------------------------------------------------------|
 | Tase – oletus              | Määrittää organisaation vuoden rahoitusaseman näkymän.                                                                 |
 | Tase rinnakkain – oletus | Määrittää organisaation vuoden rahoitusaseman näkymän. Käyttöomaisuus, velat ja osakkeenomistajien oma pääoma ovat rinnakkain. |
 

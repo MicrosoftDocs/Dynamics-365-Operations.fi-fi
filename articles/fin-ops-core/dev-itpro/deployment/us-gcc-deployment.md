@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance ja Dynamics 365 Supply Chain Management US Government Community Cloud (GCC) -ympäristössä
+title: Dynamics 365 Finance, Supply Chain Management ja Commerce Yhdysvaltain Government Community Cloudissa (GCC)
 description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 US Government -tuotteista, jotka ovat hyväksytyn julkishallinnon tai yksityisen organisaation käytettävissä.
 author: hasaid
 ms.date: 11/12/2021
@@ -9,14 +9,14 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 204bf1886ff7f7393fba5713a54f305274f540d0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062283"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693305"
 ---
-# <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance ja Dynamics 365 Supply Chain Management US Government Community Cloud (GCC) -ympäristössä
+# <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance, Supply Chain Management ja Commerce Yhdysvaltain Government Community Cloudissa (GCC)
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +54,7 @@ Jotkin ominaisuudet eivät ole käytössä GCC-käyttöönotossa, tai niitä ei 
 
 ### <a name="are-dynamics-365-finance-and-dynamics-365-supply-chain-management-supported-in-gcc-high"></a>Tuetaanko Dynamics 365 Financea ja Dynamics 365 Supply Chain Managementia GCC-High-ympäristössä?
 
-Ei Dynamics 365 Financea ja Dynamics 365 Supply Chain Managementia tuetaan vain GCC-ympäristössä.
+Ei Dynamics 365 Financea ja Dynamics 365 Supply Chain Managementia tuetaan vain GCC-ympäristössä?
 
 ### <a name="can-i-use-public-azure-devops-with-finance-and-supply-chain-management-in-gcc"></a>Voinko käyttää julkista Azure DevOpsia Financen ja Supply Chain Managementin kanssa GCC:ssä?
 

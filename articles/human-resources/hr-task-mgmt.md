@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087214"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710218"
 ---
 # <a name="task-management"></a>Tehtävienhallinta
 
@@ -57,18 +56,14 @@ Yrityksellä on sekä kausittaisia työntekijöitä että tavallisia kokoaikaisi
 **Siirrot**-välilehti sisältää **Kaikki tehtävät** -luettelon, jossa näkyvät kaikkien toimia vaihtavien tai äskettäin vaihtaneiden työntekijöiden kaikki tehtävät. Se sisältää myös erääntyneiden tehtävien luettelon sekä nykyiselle käyttäjälle määritettyjen tehtävien luettelon.
 
 Kaikissa kolmessa välilehdessä henkilöstöhallinnon avustajat ja esimiehet voivat suorittaa seuraavat tehtävät:
-
-- Tarkistusluettelon kohdistaminen työntekijälle.
-- Tehtävän tilan päivittäminen.
-- Tehtävän määrittäminen uudelleen.
-- Tehtävän määräpäivän päivittäminen.
+- Tarkistusluettelon kohdistaminen työntekijälle
+- Tehtävän tilan päivittäminen
+- Tehtävän määrittäminen uudelleen
+- Tehtävän määräpäivän päivittäminen
 
 > [!NOTE]
 > **Perehdytys**-välilehdessä näytetään oletusarvoisesti työntekijät, jotka palkattiin edellisen seitsemän päivän aikana. Jos haluat muuttaa tätä asetusta, määritä aikaväli **Viimeksi palkatut** -kenttään **Henkilöstöhallinnon parametrit** -sivun **Yleiset**-välilehdestä. **Viimeksi palkatut** -luettelossa olevat tiedot voidaan näyttää tietyltä päivien, kuukausien tai vuosien ajalta. Jos haluat esimerkiksi nähdä edellisen 14 päivän aikana palkattujen työntekijöiden luettelon, määritä **Kausi**-kentän arvoksi **14** ja **Yksikkö**-kentän arvoksi **Päivät**.
->
-> **Henkilöstöhallinnon parametrit** -sivulla voit myös päivittää poistuvien ja poistuneiden työntekijöiden luettelon päivämäärävälin, jotka näkyvät **Poistuminen**-välilehdessä.
->
-> Nämä asetukset koskevat myös **Henkilöstöhallinta**-työtilaa.
+> **Henkilöstöhallinnon parametrit** -sivulla voit myös päivittää poistuvien ja poistuneiden työntekijöiden luettelon päivämäärävälin, jotka näkyvät **Poistuminen**-välilehdessä. Nämä asetukset koskevat myös **Henkilöstöhallinta**-työtilaa.
 
 ## <a name="setting-up-tasks"></a>Tehtävien määritys
 
@@ -188,6 +183,13 @@ Voit kohdistaa tarkistusluettelon työntekijälle myös avaamalla **Työntekijä
 ## <a name="completing-tasks"></a>Tehtävien suorittaminen
 
 Työntekijä voi tarkastella **työntekijän itsepalvelusivulla** kaikkia hänelle määritettyjä tehtäviä. Jokaiselle määritetylle tehtävälle näytetään **Tehtävä**-, **Kuvaus**-, **Ohjeet**- ja **Yhteyshenkilö**-arvot. Lisäksi työntekijä voi avata kunkin tehtävän ulkoisen Internet-sivun tai liittyvän sivun Dynamics 365 -sovelluksessa.
+
+Tehtävät voidaan näyttää myös oletuskoontinäytössä. Tehtävien näyttäminen oletuskoontinäytössä:
+1. Valitse **Käyttäjän asetukset – Asetukset – Tehtävänhallinta** 
+2. Aseta **Näytä tehtävät oletuskoontinäytössä** -kohdan arvoksi **Käytössä**.  
+
+>[!Note] 
+>**Tehtävänhallinta**-toiminnon on oltava käytössä **ominaisuudenhallinnassa**, jotta se voidaan näyttää **käyttäjän asetuksissa**.
 
 Tehtävät voidaan merkitä **keskeneräisiksi**, **peruutetuiksi** tai **valmiiksi**. Jos tehtävä on määritetty ryhmälle, se merkitään **valmiiksi**, kun yksi ryhmän henkilö suorittaa sen valmiiksi.
 

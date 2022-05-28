@@ -2,25 +2,25 @@
 title: Asiakkaan alkuperäisen maksuennustemallin arvioiminen
 description: Tässä ohjeaiheessa kuvataan vaiheet, joiden avulla opit lisää asiakkaan maksuennustemallista ja voit arvioida sen tehokkuuden.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969109"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677951"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Asiakkaan alkuperäisen maksuennustemallin arvioiminen
 
@@ -93,6 +93,6 @@ Kun olet ymmärtänyt ensimmäisen mallin tulokset paremmin, voit parantaa malli
 
 ## <a name="for-more-information"></a>Lisätietoja
 
-Lisätietoja ennustemallien arvioimisesta on kohdassa [Koneoppimismallien tulokset](/confusion-matrix.md)
+Lisätietoja ennustemallien arvioimisesta on kohdassa [Koneoppimismallien tulokset](confusion-matrix.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

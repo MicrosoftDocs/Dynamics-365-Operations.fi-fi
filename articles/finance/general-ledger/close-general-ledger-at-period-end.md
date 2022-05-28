@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f83ea7a870c52884030125736809ead02b264aef1dcd654f6ff94dab0fbb2004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739999"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717527"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>Sulje kirjanpito kauden lopussa
 
@@ -28,7 +28,7 @@ ms.locfileid: "6739999"
 
 Tässä aiheessa käsitellään tehtäviä, jotka yleensä viimeistellään, kun suoritetaan kirjanpidon kauden sulkemista. 
 
-Kirjanpidossa voit tehdä päätöstoimenpiteet jakson tai vuoden lopussa. Lopetusprosessit valmistavat järjestelmän uudelle jaksolle. Valmistellaksesi järjestelmän uudelle vuodelle, sinun on suoritettava "Vuoden loppu" -sulkemisprosessi. Kussakin organisaatiossa on eri prosessit ja vaiheet, jotka se tekee kauden lopussa. Seuraavassa on joitakin valinnaisia vaiheita kauden loppuun:
+Kirjanpidossa voit tehdä päätöstoimenpiteet jakson tai vuoden lopussa. Lopetusprosessit valmistavat järjestelmän uudelle jaksolle. Valmistautuaksesi uuteen vuoteen, sinun on suoritettava "Vuoden loppu" -sulkemisprosessi. Kussakin organisaatiossa on eri prosessit ja vaiheet, jotka se tekee kauden lopussa. Seuraavassa on joitakin valinnaisia vaiheita kauden loppuun:
 
 -   Suorita valmiiksi kaikki tehtävät kaikissa muissa moduuleissa, esimerkiksi Myyntireskontra, Ostoreskontra ja Varasto.
 -   Varmista, että kaikki kirjauskansiot kirjataan.
@@ -41,7 +41,7 @@ Kirjanpidossa voit tehdä päätöstoimenpiteet jakson tai vuoden lopussa. Lopet
 -   Luo kauden lopun tilinpäätöksiä käyttämällä taloushallinnon raportointia.
 -   Määritä kirjanpitokaudet asentoon **Pidossa** niin, ettei muita kirjauksia tule. Voit myös rajoittaa kauden tietylle käyttäjäryhmälle, loppukauden tehtävien aikana, paremman hallinnan takia. Se ei ole suositeltavaa määrittää jaksoja asentoon **Suljettu pysyvästi**, koska kun kausi on suljettu, sitä ei voi avata uudelleen.
 
-Tilikauden työtilan sulkemista voidaan käyttää järjestämään ja seuraamaan erilaisia kauden lopun prosessien edellyttämiä tehtäviä. 
+**Tilikauden sulkeminen** -työtilaa voidaan käyttää järjestämään ja seuraamaan erilaisia kauden lopun prosessien edellyttämiä tehtäviä. 
 
 
 Lisätietoja on seuraavissa aiheissa:

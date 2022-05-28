@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d206654dcb7964ac2ed9aa9ccf7cec709e1bd38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580501"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689675"
 ---
 # <a name="price-simulation"></a>Hintasimulointi
 
@@ -32,7 +32,8 @@ Tarjouksen hintasimulointi näyttää ehdotettuun uuteen hintaan perustuvan uude
 
 Hintasimulointi ei muuta tarjouksen hintaa. Jos hintasimulointia käytetään koko tarjouksessa, se käsitellään tarjouksen otsikossa erikoisalennuksena. Jos hintasimulointia käytetään tietyissä nimikkeissä, se käsitellään tarjouksen riveillä erikoisalennuksena. Tarjousriville luotu yksikön myyntihinta ei muutu, kun hintasimulaatiota käytetään. Sen sijaan tarjousrivin hinnanalennusta vastaava alennusprosentti kohdistetaan. Kun hintasimulointia on käytetty, yksikön myyntihinta ja alennusprosentti siirretään tarjousriville tai tarjouksen otsikkoon.  
 
->[Huomautus!] Kun suoritat hintasimuloinnin, vain nykyistä myyntivaluuttaa käytetään simuloinnin luontiin. Kuitenkin tarjouksen kokonaismäärien katselun yhteydessä näet perusvaluutan ja myyntivaluutan yhdistelmän.  
+>[!NOTE]
+>Kun suoritat hintasimuloinnin, vain nykyistä myyntivaluuttaa käytetään simuloinnin luontiin. Kuitenkin tarjouksen kokonaismäärien katselun yhteydessä näet perusvaluutan ja myyntivaluutan yhdistelmän.  
 
 Tarjousriveille lisätyt lisänimikkeet voivat aiheuttaa rivialennukset tai monirivialennukset. Ne voivat aiheuttaa myös kokonaisalennuksia, jotka muuttavat tarjousrivien katetuottoja ja -prosentteja ja koko alennuksen.  
 

@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce -arviointiympäristön määritykset
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365 Commercen arviointiympäristön, kun se on valmisteltu.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913724"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747634"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön määritykset
 
@@ -39,7 +39,9 @@ Kun Commercen arviointiympäristö on valmisteltu kokonaisuudessaan, valmistelun
 1. Valitse ympäristö luettelosta.
 1. Valitse oikealla ympäristön tiedoista **Kirjaudu ympäristöön**. Siirryt Commercen pääkonttorisovellukseen.
 1. Varmista, että valittuna on **USRT**-yritys oikealla yläkulmassa.
-2. Siirry kohtaan **Commerce-parametrit > Määritysparametrit** ja varmista, että **ProductSearch.UseAzureSearch**-merkinnän arvo on **tosi**. Jos tämä merkintä puuttuu, voit lisätä tämän merkinnän ja suorittaa **kanavatietokanta > täysi synkronointi** eCommerce-sivustoon liittyvälle Commerce Scale Unitille.
+1. Siirry kohtaan **Commerce-parametrit \> Määritysparametrit** ja varmista, että **ProductSearch.UseAzureSearch**-merkinnän arvo on **tosi**. Jos tämä merkintä puuttuu, voit lisätä tämän merkinnän, määrittää arvoksi **tosi** ja valita **Kanavatietokanta \> Täydellinen tiedon synkronointi** eCommerce-sivustoon liittyvälle Commerce Scale Unitille.
+1. Siirry kohtaan **Retail ja Commerce \> Headquarters-asetukset \> Commerce-ajastus \> Alusta Commerce-ajastus**. Määritä **Alusta Commerce-ajoitustoiminto** -tietoikkunassa **Poista olemassa oleva määritys** -vaihtoehdon arvoksi **Kyllä**. Valitse sitten **OK**.
+1. Jos haluat lisätä kanavia Commerce Scale Unit -yksikköön, valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Commerce-ajastus \>Kanavatietokanta** ja valitse sitten Commerce Scale Unit -yksikkö vasemmanpuoleisesta ruudusta. Lisää **Vähittäismyyntikanava**-pikavälilehdellä **AW-verkkomyymälä**-, **AW Business -verkkomyymälä**- ja **Laajennettu Fabrikam-verkkomyymälä** -kanavat. Vaihtoehtoisesti voit myös lisätä vähittäismyyntiliikkeitä, jos käytät myyntipistettä (esimerkiksi **Seattlea**, **San Franciscoa** tai **San Joseta**).
 
 Varmista Commercen pääkonttorissa tehtävien valmistelun jälkeisten toimintojen aikana, että **USRT**-yritys on koko ajan valittuna.
 
@@ -85,6 +87,7 @@ Voit aloittaa arviointisivuston määrittämisen Commercessa noudattamalla seura
 1. Valitse **en-us** oletuskieleksi.
 1. Jätä **polku** -kentän arvo sellaiseksi kuin se on.
 1. Valitse **OK**. Sivuston sivuluettelo tulee näkyviin.
+1. Toista vaiheet 2-7 **AdventureWorks**-sivustossa (joka yhdistää **AW-verkkokauppa**-kanavaan) ja **AdventureWorks Business**-sivustoon (joka yhdistää **AW Business -verkkokauppa** -kanavaan). Jos **Polku**-kenttä on tyhjä Fabrikam-sivustossa, sinun on lisättävä polut kahteen AdventureWorks -sivustoon (esim. "aw" ja "awbusiness").
 
 ## <a name="enable-jobs"></a>Töiden ottaminen käyttöön
 
@@ -149,6 +152,28 @@ Lisätietoja Commercen arviointiympäristön valinnaisten ominaisuuksien määri
 
 > [!NOTE]
 > Commerce-arviointiympäristöihin ladattu valmiiksi Azure Active Directory (Azure AD) kuluttajakauppavuokraaja esittelyä varten. Arviointiympäristöissä ei tarvitse määrittää omaa Azure AD -kuluttajakauppavuokraajaa. Jos arviointiympäristö kuitenkin määritetään käyttämään omaa Azure AD -kuluttajakauppavuokraajaa, ``https://login.commerce.dynamics.com/_msdyn365/authresp`` on muistettava lisätä Azure AD -kuluttajakauppasovellukseen URL-vastausosoitteena Azure-portaalin kautta.
+
+## <a name="troubleshooting"></a>Vianmääritys
+
+### <a name="site-builder-channel-list-is-empty-when-configuring-site"></a>Sivustonmuodostimen kanavaluettelo on tyhjä, kun sivustoa konfiguroitaan
+
+Jos sivustonmuodostin ei näytä verkkomyymälän kanavia, varmista pääkonttorissa, että kanavat on lisätty Commerce Scale Unit -yksikköön edellä olevassa [Ennen aloittamista](#before-you-start) -osassa kuvatulla tavalla. Suorita myös **Alusta Commerce-ajastus** siten, että **Poista olemassa oleva määritys** -kohdan arvona on **Kyllä**.  Kun nämä vaiheet on suoritettu, suorita **Kanavatietokanta**-sivulla (**Retail ja Commerce \> Pääkonttorin asetukset \> Commerce-ajastus \> Kanavatietokanta**) **9999**-työ Commerce Scale Unitissa.
+
+### <a name="color-swatches-are-not-rendering-on-the-category-page-but-are-rendering-on-the-product-details-page-pdp-page"></a>Väriruudut eivät hahmonnu luokkasivulla, mutta ne hahmontuvat tuotetietosivulla.
+
+Noudattamalla näitä ohjeita voit varmistaa, että väri- ja kokoruudut määritetään tarkennettaviksi.
+
+1. Pääkonttorissa valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
+1. Valitse vasemmanpuoleisesta ruudusta verkkomyymälän kanava ja valitse sitten **Määritä määritteen metatiedot**.
+1. Määritä kohdan **Näytä määrite kanavassa** asetukseksi **Kyllä**, määritä kohdan **Voidaan tarkentaa** -asetukseksi **Kyllä** ja valitse sitten **Tallenna**. 
+1. Palaa verkkomyymälän kanavasivulle ja valitse sitten **Julkaise kanavan päivitykset**.
+1. Valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Commerce-ajastus \> Kanavatietokanta** ja suorita **9999**-työ Commerce Scale Unitissa.
+
+### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Liiketoimintatoiminnot eivät näytä olevan käytössä liiketoimintasivustoa AdventureWorks varten
+
+Varmista pääkonttorissa, että verkkomyymälän kanava on määritetty niin, että **Asiakastyyppinä** on **B2B**. Jos **asiakastyypiksi** on määritetty **B2C**, on luotava uusi kanava, sillä aiemmin luotua kanavaa ei voi muokata. 
+
+Commerce-version 10.0.26 ja sitä aiemmin toimitetuissa versioissa **AW Business -verkkomyymälän** kanava on määritetty väärin. Voit luoda uuden kanavan, jolla on samat asetukset ja konfiguraatiot, lukuun ottamatta **asiakastyyppiä**, jonka on oltava **B2B**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

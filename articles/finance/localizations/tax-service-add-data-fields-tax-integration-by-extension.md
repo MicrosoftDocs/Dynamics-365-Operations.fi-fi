@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649098"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695385"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Vero-integroinnin tietokenttien lisääminen laajennuksen avulla
 
@@ -383,7 +382,7 @@ Kokoa projekti onnistuneesti lisäämällä malliriippuvuuksiin seuraavat viitem
 
 Kun olet suorittanut edelliset vaiheet, voit vahvistaa muutoksesi.
 
-1. Siirry Financessa kohtaan **Ostoreskontra** ja lisää URL-osoitteeseen **&debug=vs%2CconfirmExit&**. Esimerkiksi  https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. Lopun **&** on välttämätön.
+1. Siirry Financessa kohtaan **Ostoreskontra** ja lisää URL-osoitteeseen **&debug=vs%2CconfirmExit&**. Esimerkiksi  `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Lopun **&** on välttämätön.
 2. Voit luoda ostotilauksen avaamalla sivun **Ostotilaus** ja valitsemalla **Uusi**.
 3. Määritä mukautetun kentän arvo ja valitse sitten **Arvonlisävero**. Vianmääritystiedosto etuliitteellä **TaxServiceTroubleshootingLog** latautuu automaattisesti. Tämä tiedosto sisältää veronlaskentapalveluun kirjatut tiedot. 
 4. Tarkista, että lisätty mukautettu kenttä näkyy **Veropalvelun laskennan syöte-JSON** -osassa ja että sen arvo on oikein. Jos arvo ei ole oikein, käy tämän asiakirjan vaiheet läpi uudelleen.

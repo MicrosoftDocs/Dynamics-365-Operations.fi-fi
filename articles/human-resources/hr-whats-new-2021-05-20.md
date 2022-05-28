@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4519e90e19d0652f855999d1a73ca64777b53b53465d6065987afc1cf2494187
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc7e89fabe1651c858097a6c564b4910a524331f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731934"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692748"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-20-2021"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet 20. toukokuuta 2021
 
@@ -42,7 +41,7 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 
 | Ominaisuus | Julkaisusuunnitelma | Dokumentaatio |
 | --- | --- | --- |
-| Platform Update 10.0.18 (42) | -- | [Finance and Operations -sovellusten version 10.0.18 Platform update -päivitykset (toukokuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
+| Platform Update 10.0.18 (42) | -- | [Taloushallinnon ja toimintojen sovellusten (toukokuu 2021) käyttöympäristön päivitysversio 10.0.18](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
 | Henkilöstöhallinto-sovellus Microsoft Teamsille tukee nyt puolipäivämääritysten ja päivän jakamistoimintoa | -- | [Lomapyyntöjen hallinta Teamsissa](/dynamics365/human-resources/hr-teams-leave-app#create-a-new-request) |
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset

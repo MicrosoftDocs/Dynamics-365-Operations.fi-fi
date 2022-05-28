@@ -2,7 +2,7 @@
 title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista pakollisista päivityksistä.
 author: VStamberg
-ms.date: 01/20/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649126"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711911"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -29,11 +29,11 @@ Pakolliset päivitykset ovat toimintoja, jotka tukevat uudet tai muuttuneet maak
 
 Microsoft pyrkii toteuttamaan uudet lainsäädännölliset vaatimukset mahdollisimman aikaisin. Toimituspäivämäärä riippuu lain ilmoituspäivästä, vaatimuksien saatavuudesta paikallisilta viranomaisilta, oikeellisuustarkistustyöklaujen saatavuudeta sekä muutoksen koosta ja monimutkaisuudesta.
 
-On tarkoitus toimittaa säännöstenmukaisuuden päivitykset yhden version palvelupäivityksissä, jotka julkaistaa siten, että asiakkaat olisivat valmiina voimaantulopäivänä (tapahtumapohjaisille säännöspäivityksille) tai ensimmäisenä pakollisena raportoinnin määräaikana (raportointiin liittyville säännöspäivityksille). Asiakkaat ja kumppanit voivat esikatsella säännöspäivityksiä Preview Early Adoption Program (PEAP) -ohjelmassa.
+On tarkoitus toimittaa säännöstenmukaisuuden päivitykset yhden version palvelupäivityksissä, jotka julkaistaa siten, että asiakkaat olisivat valmiina voimaantulopäivänä (tapahtumapohjaisille säännöspäivityksille) tai ensimmäisenä pakollisena raportoinnin määräaikana (raportointiin liittyville säännöspäivityksille). Asiakkaat ja kumppanit voivat esikatsella säännöspäivityksiä esiversiopaketissa, joka annetaan jokaisessa palvelupäivityksessä.
 
 Siltä varalta, että ilmoituspäivämäärä on myöhässä, tai vaatimukset tai oikeellisuustarkistustyökalut saadaan myöhässä tai muutos on poikkeuksellisen suuri tai monimutkainen, säännöspäivitystä ei ehkä voida julkaista kuukausittaisen päivityksen yleisen saatavuuden päivämäärään mennessä. Tällöin pakollinen päivitys toimitetaan hotfix-korjauksina asiaankuuluville kuukausittaisille päivityksille.
 
-Pakolliset päivitykset, jotka julkaistaan osana kuukausittaista päivitystä, on merkitty vain julkaisuversiolla. Pakolliset päivitykset, jotka toimitetaan joko hotfix-korjauksina tai osana julkaisun esikatselua, voidaan tunnistaa lyhenteiden HF ja PEAP avulla. 
+Pakolliset päivitykset, jotka julkaistaan osana kuukausittaista päivitystä, on merkitty vain julkaisuversiolla. Pakolliset päivitykset, jotka toimitetaan joko hotfix-korjauksina tai osana julkaisun esikatselua, voidaan tunnistaa lyhenteiden HF ja Preview avulla. 
 
 Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.   
 

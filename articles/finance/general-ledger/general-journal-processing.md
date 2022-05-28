@@ -1,5 +1,5 @@
 ---
-title: Yleisen kirjauskansion käsittely
+title: Kirjanpidon kirjauskansion käsittely
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Financen ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.
 author: kweekley
 ms.date: 02/28/2022
@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 9cfe4af0c666fb2accb6737edb2de6e0b6e7cdf1
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367877"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8720024"
 ---
 # <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 206c7f590b495278b7899271db0e83b3a4da3edc
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641427"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695757"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 5. lokakuuta 2021
 
@@ -42,7 +41,7 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 
 | Ominaisuus | Julkaisusuunnitelma | Dokumentaatio |
 |---|---|---|
-| Platform Update 10.0.21 (45) | -- | [Finance and Operations -sovellusten version 10.0.21 Platform update -päivitykset (lokakuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
+| Platform Update 10.0.21 (45) | -- | [Taloushallinnon ja toimintojen sovellusten (lokakuu 2021) käyttöympäristön päivitysversio 10.0.21](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
@@ -87,7 +86,7 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 
 | Ominaisuus | Yksityiskohdat |
 |---|---|
-| Platform Update 10.0.22 (46) | Platform update -päivitys 10.0.22 on ajoitettu alkamaan palvelujulkaisun kanssa 1. marraskuuta 2021. Lisätietoja on kohdassa [Finance and Operations -sovellusten version 10.0.22 Platform Update -päivitykset (marraskuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
+| Platform Update 10.0.22 (46) | Platform update -päivitys 10.0.22 on ajoitettu alkamaan palvelujulkaisun kanssa 1. marraskuuta 2021. Lisätietoja on [Rahoitus ja toiminnot -sovellusten version 10.0.22 alustan päivityksissä (marraskuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
 
 
 

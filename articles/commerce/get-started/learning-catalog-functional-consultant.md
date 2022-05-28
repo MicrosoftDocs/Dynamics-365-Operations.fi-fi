@@ -9,16 +9,15 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5539d8531dc5de273d80419135c9bcc224c8e8f0
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 4bab754afa5b35c34c6e1e5087d9268321b75bd0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402615"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688879"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-functional-consultants"></a>Dynamics 365 Commercen toiminnallisen konsultin oppimisluettelo
 
@@ -28,11 +27,11 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 Toiminnallisten konsulttien osalta meidän työtehtäväanalyysimme osoitti, että kaikkien on ymmärrettävä keskeiset sisältöjoukot sekä sovellusalueen.
 
-Lisätietoja muiden Finance and Operations -sovellusten kanssa jaetuista ominaisuuksien opettamisesta on [Dynamics 365 Financen oppimisluettelossa](../../finance/get-started/learning-catalog-functional-consultant.md).
+Lisätietoja muiden talous- ja toimintosovellusten kanssa jaetuista ominaisuuksien opettamisesta on [Dynamics 365 Financen oppimisluettelossa](../../finance/get-started/learning-catalog-functional-consultant.md).
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
-| Sisältö| kuvaus  | Muoto  | Pituus  |
+| Sisältö| Kuvaus  | Muoto  | Pituus  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Tämä oppimiskokemus vie sinut matkalle, joka alkaa näyttämällä, miten digitaalinen muutos ja liiketoimintasovellusten teho voivat muuttaa liiketoimintaasi. Me katsomme, miten Dynamics 365 ja Power Platform auttavat sinua tekemään perusteltuja päätöksiä, jotka perustuvat organisaation tarpeisiin ja tavoitteisiin, digitaalisen muutoksen neljän rakennuspalikan kautta – moderni, yhtenäinen, älykäs ja mukautuva. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 6.5 tuntia |
 | [Dynamics 365 Commercen käytön aloittaminen](/learn/paths/get-started-dynamics-365-commerce/) | Dynamics 365 Commerce, joka perustuu hyväksi todettuihin Dynamics 365 Retail -ominaisuuksiin, tarjoaa kattavan omnikanavaratkaisun, jossa yhdistyvät taustajärjestelmän, myymälän ja digitaaliset kokemukset. Dynamics 365 Commercen avulla voi luoda tuotemerkkiuskollisuutta mukautettujen asiakaskontaktien avulla, lisätä tuottoa ja parantaa työntekijäuskollisuutta, optimoida toimintoja ja pienentää kustannuksia sekä tehostaa toimitusketjua sekä lopulta saavuttaa parempia liiketoimintatuloksia. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
