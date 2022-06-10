@@ -12,11 +12,13 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet
               items:
-                - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet -kotisivu
+                - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
-                - name: Käyttöympäristöpäivitykset versioon 10.0.27 (heinäkuu 2022)
+                - name: Käyttöympäristöpäivitykset versiolle 10.0.28 (elokuu 2022)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
+                - name: Käyttöympäristöpäivitykset versiolle 10.0.27 (heinäkuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Käyttöympäristöpäivitykset versioon 10.0.26 (toukokuu 2022)
+                - name: Käyttöympäristöpäivitykset versiolle 10.0.26 (toukokuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
                 - name: Käyttöympäristöpäivitykset versioon 10.0.25 (huhtikuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-25.md
@@ -1018,6 +1020,8 @@
                   href: lifecycle-services/azure-data-explorer.md
             - name: Ympäristöpalvelujen käynnistäminen uudelleen
               href: lifecycle-services/restart-environment-services.md
+            - name: Ympäristön järjestelmänvalvojan päivittäminen
+              href: lifecycle-services/update-environment-admin.md
             - name: Tuotantokatkoksesta ilmoittaminen
               href: lifecycle-services/report-production-outage.md
             - name: Käyttäjien sisäänkirjautumisten seuraaminen
@@ -1266,6 +1270,8 @@
               items:
                 - name: Apuohjelmien yleiskuvaus
                   href: power-platform/add-ins-overview.md
+            - name: Mobiilikokemusten kehittäminen
+              href: power-platform/build-mobile-experiences.md
             - name: Käytännöt ja tietoliikenne
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobiiliympäristö

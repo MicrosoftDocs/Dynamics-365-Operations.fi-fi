@@ -12,6 +12,8 @@
               items:
                 - name: Financen uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.28 (elokuu)
+                  href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (heinäkuu)
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (toukokuu)
@@ -258,6 +260,8 @@
               href: accounts-payable/positive-pay-overview.md
             - name: Positive pay -tiedostojen määrittäminen ja luominen
               href: accounts-payable/set-up-generate-positive-pay-files.md
+            - name: Positive pay -tiedostojen määritys ja luonti sähköisen raportoinnin avulla
+              href: accounts-payable/set-up-positive-pay-ER.md
             - name: Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit
               href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
             - name: Toimittajan työnkulku
@@ -268,6 +272,8 @@
                   href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Poikkeusten tutkiminen ja selvittäminen
                   href: accounts-payable/tasks/research-resolve-exceptions.md
+            - name: Ostoreskontran kirjaukset
+              href: general-ledger/accts-payble-posting.md
             - name: Toimittajan kirjausprofiilit
               href: accounts-payable/vendor-posting-profiles.md
             - name: Luo kulukoodeja
@@ -346,8 +352,12 @@
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
             - name: Asiakasmaksujen tiedot (esiversio)
               href: accounts-receivable/payment-insights-overview.md
+            - name: Myyntireskontran kirjaukset
+              href: general-ledger/accts-recvble-posting.md
             - name: Asiakkaan kirjausprofiilit
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Luo kulukoodeja
+              href: accounts-receivable/create-charges-codes.md
             - name: Asiakkaiden kopioiminen käyttämällä jaettuja numerosarjoja
               href: accounts-receivable/copy-customer.md
             - name: Asiakkaan työnkulku
@@ -356,7 +366,7 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
-            - name: Myyntireskontran kirjanpito
+            - name: Myyntireskontran kirjaukset
               href: general-ledger/accts-recvble-posting.md
             - name: Asiakkaan kirjausprofiilit
               href: accounts-receivable/customer-posting-profiles.md
@@ -444,6 +454,8 @@
                       href: accounts-receivable/sb-alignment-date-examples.md
                     - name: Tuoton jako
                       href: accounts-receivable/sb-revenue-split.md
+                    - name: Kausittaiset tehtävät
+                      href: accounts-receivable/sb-periodic-tasks.md
                 - name: Tuotto- ja kululykkäykset
                   items:
                     - name: Tuotto- ja kululykkäysten määrittäminen
@@ -466,6 +478,8 @@
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Talleta asiakkaan maksuja
                   href: accounts-receivable/tasks/deposit-customer-payments.md
+                - name: Välitilitapahtumamaksujen määritykset ja käsittely
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: SEPA-suoraveloitusvaltakirja
@@ -662,6 +676,8 @@
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
                 - name: Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen
                   href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
+                - name: Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen sähköisen raportoinnin avulla
+                  href: accounts-payable/import-bai2-er.md
                 - name: Pankkitilin täsmäytyksen vastaavuussääntöjen määrittäminen
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
@@ -1044,6 +1060,14 @@
                       href: general-ledger/recommended-practices-pstg-prfles.md
                     - name: Automaattisten tapahtumien tilit
                       href: general-ledger/accounts-for-auto-transactions.md
+                    - name: Ostoreskontran kirjaukset
+                      href: general-ledger/accts-payble-posting.md
+                    - name: Myyntireskontran kirjaukset
+                      href: general-ledger/accts-recvble-posting.md
+                    - name: Resurssin vuokrauksen kirjaukset
+                      href: asset-leasing/set-up-lease-posting-accts.md
+                    - name: Käyttöomaisuuden kirjaukset
+                      href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Kohdistussäännöt
                   items:
                     - name: Kirjanpidon kohdistussäännöt
@@ -1292,6 +1316,8 @@
                   href: public-sector/accounts-payable-public-sector.md
                 - name: Julkisen sektorin ostotilauskoodit
                   href: public-sector/purchase-order-codes-public-sector.md
+                - name: Ostotilaukset ja siirrettävä budjetti
+                  href: public-sector/determine-carry-forward-budget.md
                 - name: Julkisen sektorin kauppakumppanin koodin luominen ja määrittäminen
                   href: public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: Julkisen sektorin kirjausmääritykset
@@ -1776,8 +1802,10 @@
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: Tapahtumien luominen ja siirtäminen BLWI-lomakkeelle
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
-                - name: Kirjanpitotapahtumien vieminen
+                - name: Kirjanpitotapahtumien vienti
                   href: localizations/emea-bel-export-ledger-transactions.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-bel-eu-sales-list.md
                 - name: INTERVAT-veroilmoitus
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Täsmäytysraportit
@@ -1792,6 +1820,8 @@
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
                 - name: Belgian Intrastat
                   href: localizations/emea-bel-intrastat.md
+                - name: ALV-ilmoitus
+                  href: localizations/emea-bel-vat-declaration-belgium.md
             - name: Brasilia
               items:
                 - name: Brasilia – yleiskatsaus
@@ -2094,6 +2124,8 @@
                   href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
                 - name: Luo ja kirjaa projektilasku julkisen sektorin asiakkaalle
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-dnk-eu-sales-list.md
                 - name: Tuo sähköisen OIOUBL-laskutuksen konfiguraatiot
                   href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
                 - name: Vapaatekstilaskun kirjaaminen maksutositteen kanssa
@@ -2296,6 +2328,8 @@
                   href: localizations/emea-fin-intrastat.md
                 - name: ALV-ilmoitus
                   href: localizations/emea-fin-vat-declaration.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-fin-eu-sales-list.md
             - name: Ranska
               items:
                 - name: Ranska – yleiskatsaus
@@ -3088,6 +3122,8 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: ALV-laskelman tiedot
                   href: localizations/emea-ltu-vat-statement-details.md
+                - name: Liettuan Intrastat
+                  href: localizations/emea-ltu-intrastat.md
                 - name: Liettuan i.SAF-raportointi
                   href: localizations/emea-ltu-isaf.md
                 - name: Verotuksen perustarkistustiedosto (SAF-T) – Liettua
@@ -3230,6 +3266,8 @@
                   href: localizations/emea-pol-correction-notes.md
                 - name: Myyntilaskun kaksoiskappaleiden numerointi
                   href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-pol-eu-sales-list.md
                 - name: Käyttöomaisuuden poisto
                   href: localizations/emea-pol-fixed-assets-depreciation.md
                 - name: Käyttöomaisuuden luovutustoimintojen laajennus
@@ -3548,10 +3586,12 @@
                   href: localizations/emea-esp-bill-of-exchange-options.md
                 - name: "Eräpäivien laskeminen\_ja keskimääräisten maksuaikojen\_raportoiminen"
                   href: localizations/emea-esp-invoice-due-dates.md
-                - name: Suoritusperusteinen arvonlisävero
+                - name: Suoritusperusteinen vero
                   href: localizations/emea-esp-conditional-sales-tax.md
                 - name: Hyvityslaskutus
                   href: localizations/tasks/emea-esp-credit-invoicing.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-esp-sales-list.md
                 - name: Kirjanpitotietojen laskutili
                   href: localizations/emea-esp-fiscal-data-invoice-account.md
                 - name: Käyttöomaisuusryhmän uudelleenarvostus
@@ -3670,6 +3710,8 @@
                       href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Maksukäytäntöjen raportin tilastot
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-uk-eu-sales-list.md
             - name: Yhdysvallat
               items:
                 - name: Yhdysvallat – yleiskatsaus
@@ -4335,10 +4377,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                     - name: VIIVAKOODIN käyttäminen viivakoodikuvien luontiin
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: HAUN tietolähteiden määrittäminen sähköisen raportoinnin sovelluskohtaisten parametrien käyttämiseksi
+                    - name: HAKU-tietolähteiden määrittäminen sähköisen raportoinnin sovelluskohtaisten parametrien käyttämiseksi
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: TIETOJENKERUU-tietolähteiden käyttäminen ER-muodoissa
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: USER INPUT PARAMETER -tietolähteiden käyttäminen luotavan raportin parametrien määrittämiseen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Tietolähteiden vianmääritys
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Tietomallien määrittäminen
