@@ -2,35 +2,32 @@
 title: Dynaamisten sähköisen kaupankäynnin sivujen luominen URL-parametrien perusteella
 description: Tässä aiheessa kuvataan, kuinka määritetään Microsoft Dynamics 365 Commerce -verkkokauppasivu, joka voi tuottaa URL-parametreihin perustuvaa dynaamista sisältöä.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694337"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811028"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dynaamisten sähköisen kaupankäynnin sivujen luominen URL-parametrien perusteella
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan, kuinka määritetään Microsoft Dynamics 365 Commerce -verkkokauppasivu, joka voi tuottaa URL-parametreihin perustuvaa dynaamista sisältöä.
 
-Sähköisen kaupankäyntisivun voi konfiguroida käyttämään erilaista sisältöä URL-polun segmentin perusteella. Näin ollen sivu tunnetaan dynaamisena sivuna. Segmenttiä käytetään sivun sisällön noutamisen parametrina. Voit luoda esimerkiksi sivun, jonka nimi on **blog\_viewer**, ja se liitetään URL-osoitteeseen `https://fabrikam.com/blog`. Tämän sivun avulla voidaan sitten näyttää eri sisältöä URL-polun viimeisen segmentin perusteella. Esimerkiksi URL-osoitteen `https://fabrikam.com/blog/article-1` viimeinen segmentti on **article-1**.
+Sähköisen kaupankäyntisivun voi konfiguroida käyttämään erilaista sisältöä URL-polun segmentin perusteella. Näin ollen sivu tunnetaan dynaamisena sivuna. Segmenttiä käytetään sivun sisällön noutamisen parametrina. Esimerkiksi sivuston muodostimessa luotava sivu, jonka nimeksi tulee **blog\_viewer** siirretään URL-osoitteeksi `https://fabrikam.com/blog`. Tämän sivun avulla voidaan sitten näyttää eri sisältöä URL-polun viimeisen segmentin perusteella. Esimerkiksi URL-osoitteen `https://fabrikam.com/blog/article-1` viimeinen segmentti on **article-1**.
 
-Erilliset dynaamisen sivun ohittavat mukautetut sivut voidaan liittää myös URL-polun segmentteihin. Voit luoda esimerkiksi sivun, jonka nimi on **blog\_summary**, ja se liitetään URL-osoitteeseen `https://fabrikam.com/blog/about-this-blog`. Kun tämä URL-osoite on pyydetty, palautetaan **blog\_summary** -sivu, joka liittyy **/about-this-blog** -parametriin, sen sijaan että palautettaisiin **blog\_viewer** -sivu.
+Voit myös ohittaa parametrisoidun URL-segmentin sivustonmuodostajasivulla. Esimerkiksi sivuston muodostimessa luotava sivu, jonka nimeksi tulee **blog\_summary** voidaan yhdistää URL-osoitteeseen `https://fabrikam.com/blog/about-this-blog`. Kun URL-osoitetta `https://fabrikam.com/blog`, jonka lopussa on segmentti `/about-this-blog`, pyydetään **blog\_summary** -sivun sisältö palautetaan sen sijaan, että `/about-this-blog`-segmentti tulkittaisiin `https://fabrikam.com/blog`-sivun käyttämäksi parametriksi. 
+
+Kun dynaamiselle sivulle välitetyille parametreille valitaan nimiä, dynaamisen sivun nimeä, joka näkyy URL-osoitteessa (`/blog` yllä olevassa esimerkissä), ei voi käyttää parametrin nimenä tai parametrin nimen alimerkkijonona. 
 
 > [!NOTE]
 > Dynaamisen sivusisällön isännöinti-, noutaminen- ja näyttämistoiminnot toteutetaan mukautetulla moduulilla. Lisätietoja on ohjeaiheessa [Online-kanavan laajennettavuus](e-commerce-extensibility/overview.md).
@@ -60,7 +57,7 @@ Määritä dynaamiselle sivulle reititys Commercen sivustonmuodostimessa noudatt
 1. Valitse kohdassa **Parametrisoidut URL-polut** **Lisää** ja kirjoita sitten URL-osoitteen luomisen yhteydessä syötetty URL-polku (tässä esimerkissä **/blog**).
 1. Valitse **Tallenna ja julkaise**.
 
-Kun reititys on konfiguroitu, kaikki parametrisoidun URL-polun pyynnöt palauttavat tähän URL-osoitteeseen liittyvän sivun. Jos pyynnöt sisältävät lisäsegmentin, siihen liittyvä sivu palautetaan ja sivun sisältö haetaan käyttämällä segmenttiä parametrina. Esimerkiksi `https://fabrikam.com/blog/article-1` palauttaa esimerkiksi **blog\_summary** -sivun ja sivun sisältö haetaan käyttämällä **/article-1**-parametria.
+Kun reititys on konfiguroitu, kaikki parametrisoidun URL-polun pyynnöt palauttavat tähän URL-osoitteeseen liittyvän sivun. Jos pyynnöt sisältävät lisäsegmentin, siihen liittyvä sivu palautetaan ja sivun sisältö haetaan käyttämällä segmenttiä parametrina. Esimerkiksi `https://fabrikam.com/blog/article-1` palauttaa esimerkiksi `https://fabrikam.com/blog` -sivun, jossa näkyy sisältö, joka haettiin käyttäen **/article-1**-parametria.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Parametriswoidun URL-osoitteen ohittaminen mukautetulla sivulla
 

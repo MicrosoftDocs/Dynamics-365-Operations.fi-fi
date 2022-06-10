@@ -2,7 +2,7 @@
 title: Alatunnistemoduuli
 description: Tässä ohjeaiheessa on tietoja alatunnistemoduuleista ja niiden muokkaamisesta Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: anupamar-ms
-ms.date: 03/02/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81db5cf32f23b7ee1ca8325eeec2e6ceafda55e0
-ms.sourcegitcommit: 90a553e271e7cd471fed2e4f006d753fdb67b47d
+ms.openlocfilehash: 542796ffce08694954d03878cd7782b01c2c6b27
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8374828"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780256"
 ---
 # <a name="footer-module"></a>Alatunnistemoduuli  
 
@@ -46,15 +46,15 @@ Useimpien säilöjen tapaan alatunnistemoduuli tukee otsikon ja leveyden ominais
 ## <a name="create-a-footer-module"></a>Alatunnistemoduulin lisääminen
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi osa** -valintaikkunassa **Kontti**-moduuli. Syötä osan nimi ja valitse **OK**.
+1. Valitse **Valitse katkelma** -valintaikkunassa **Kontti**-moduuli. Syötä osan nimi ja valitse **OK**.
 1. Valitse kolme pistettä (**...**) **Oletuskontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Alatunnisteluokka**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Alatunnisteluokka**-moduuli ja valitse sitten **OK**.
 1. Valitse kolme pistettä (**...**) **Alatunnisteluokka**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Alatunnistenimike**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Alatunnistenimike**-moduuli ja valitse sitten **OK**.
 1. Valitse **Alatunnistenimike**-paikka ja määritä sitten oikeanpuoleisessa ominaisuusruudussa otsikko, linkki, linkin teksti ja kuvat halutulla tavalla.
 1. Voit lisätä alatunnistenimikkeitä toistamalla kullekin kohtien 5–7 toimet.
 1. Voit lisätä Palaa alkuun -linkin alatunnisteeseen valitsemalla **Alatunnisteluokka**-paikka jäsennyspuussa kolmen pistettä (**...**) ja valitsemalla sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Palaa alkuun** -moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Takaisin ylös**-moduuli ja valitse sitten **OK**.
 1. Valitse **Palaa alkuun**-paikka ja määritä sitten oikeanpuoleisessa ominaisuusruudussa teksti ja muut moduuliominaisuudet halutulla tavalla.
 1. Valitse **Lopeta muokkaus** tallentaaksesi osan ja valitse sitten **Julkaise** julkaistaksesi sen.
 

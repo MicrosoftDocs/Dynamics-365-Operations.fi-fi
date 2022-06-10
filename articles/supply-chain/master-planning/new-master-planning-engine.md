@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469894"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809092"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Siirtyminen suunnittelun optimointiin pääsuunnittelua varten
 
@@ -63,7 +63,7 @@ Tällä hetkellä suunnittelun optimointiin siirtymisen poikkeuksilla on merkity
 
 Kun tarvittavat toiminnot ovat käytettävissä, Microsoft antaa lisäaikaa poikkeuksen päättymiseen saakka. Ympäristön järjestelmänvalvojalla ilmoitetaan, kun tarvittavat toiminnot ovat käytettävissä ja lisäaika on alkanut.
 
-Seuraavassa vuokaaviossa on yhteenveto tämän ohjeaiheen tiedoista, jotta voit nopeasti selvittää, haluatko pyytää poikkeusta. Jos haluat pyytää poikkeusta, täytä ja lähetä [Suunnittelun optimointi -siirto ja poikkeuslomake](https://go.microsoft.com/fwlink/?linkid=2144962).
+Seuraavassa vuokaaviossa on yhteenveto tämän ohjeaiheen tiedoista, jotta voit nopeasti selvittää, haluatko pyytää poikkeusta. Jos haluat pyytää poikkeusta, täytä ja lähetä [Suunnittelun optimointi -siirto ja poikkeuslomake](https://go.microsoft.com/fwlink/?linkid=2144962). Tuoteryhmä vastaa kunkin poikkeuspyynnön arvioinnista ja hyväksymisestä, joten lähetä pyyntösi suoraan tuoteryhmään linkin avulla, älä luo tukipalvelupyyntöä sitä varten. Jos pyyntösi hylätään, älä luo tukipalvelupyyntöä, koska Microsoftin tuki ei voi arvioida uudelleen tai myöntää poikkeuksia.
 
 ![Poikkeuskaavio.](media/exception-diagram.png "Poikkeuskaavio")
 

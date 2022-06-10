@@ -2,7 +2,7 @@
 title: ER-konfiguraatioiden suorituskykyongelmien vianmääritys
 description: Tässä ohjeaiheessa on tietoja sähköisen raportoinnin konfiguraatioiden suorituskykyyn liittyvistä ongelmista ja korjaamisesta.
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744383"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811677"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>ER-konfiguraatioiden suorituskykyongelmien vianmääritys
 
@@ -82,7 +82,7 @@ Avaa sitten jäljitys ER-mallin määritysten suunnitteluohjelmassa ja katso siv
 
 - Vastaako kyselyiden ja noudettujen tietueiden määrä yleistä tietomäärää? Jos asiakirjassa on esimerkiksi 10 riviä, osoittavatko tilastotiedot, että raportti sisältää 10 riviä tai 1 000 riviä? Jos sinulla on noudettuna suuri tietueiden määrä, ota huomioon jokin seuraavista korjauksista:
 
-    - [Käytä **FILTER**-toimintoa **WHERE**-toiminnon asemesta](#filter), kun käsittelet tietoja SQL Serverin puolella.
+    - [Käytä **FILTER**-toimintoa **WHERE**-toiminnon asemesta](#filter), kun käsittelet tietoja Microsoft SQL Serverin puolella.
     - Välimuistiin tallentaminen estää samojen tietojen hakemisen.
     - [Koostavia tietofunktioita käyttämällä](#collected-data) voidaan välttää samojen tietojen hakeminen yhteenvetoa varten.
 
@@ -191,6 +191,10 @@ Tähän lähestymistapaan liittyy muutamia rajoituksia. Sinulla on oltava järje
 
 Vaikka välimuistiin tallentaminen vähentää tietojen hakemiseen tarvittavaa aikaa, se kuluttaa muistia. Käytä välimuistiin tallentamista, kun haettavat tiedot eivät ole hyvin suuria. Lisätietoja ja esimerkki siitä, miten välimuistiin tallentamista käytetään, on kohdassa [Mallin määrityksen parantaminen suoritusjäljityksen tietojen perusteella](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a>Haettujen tietojen määrän pienentäminen
+
+Voit pienentää välimuistin muistin kulutusta rajoittamalla suorituksen aikana haettavan sovellustaulun tietueiden kenttien määrää. Tässä tapauksessa voit noutaa vain ne sovellustaulun kenttäarvot, joita tarvitset ER-mallimäärityksessä. Muita taulun kenttiä ei noudeta. Siksi välimuistiin haetuissa tietueissa tarvittava muistin määrä pienenee. Lisätietoja: [ER-ratkaisujen suorituskyvyn parantaminen vähentämällä ajon aikana haettujen taulukenttien määrää](er-reduce-fetched-fields-number.md).
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>Käytä välimuistiin tallennettua parametrisoitua laskettua kenttää
 
 Joskus arvot on etsittävä toistuvasti. Esimerkkejä tällaisista ovat tilien nimet ja tilinumerot. Voit säästää aikaa luomalla lasketun kentän, jonka parametrit ovat ylimmällä tasolla, ja lisätä sitten kentän välimuistiin.
@@ -218,4 +222,4 @@ ER voi kuluttaa seuraavien lähteiden tietoja:
 - Luokat (**objekti**- ja **luokka**-tietolähteet)
 - Taulut (**taulu**- ja **taulutietue**-tietolähteet)
 
-[ER-sovellusliittymän](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) avulla voi myös lähettää esilasketut tiedot kutsuvasta koodista. Sovellusohjelma sisältää useita esimerkkejä tästä lähestymistavasta.
+[ER-sovellusliittymän (API)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) avulla voi myös lähettää esilasketut tiedot kutsuvasta koodista. Sovellusohjelma sisältää useita esimerkkejä tästä lähestymistavasta.

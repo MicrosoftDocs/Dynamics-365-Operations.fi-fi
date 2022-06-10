@@ -1,5 +1,5 @@
 ---
-title: Suomi – yleiskatsaus
+title: Suomen yleiskatsaus
 description: Tässä ohjeaiheessa on linkkejä Microsoft Dynamics 365 Financen ohjeistukseen Suomessa.
 author: kfend
 ms.date: 03/22/2022
@@ -12,14 +12,14 @@ ms.search.region: Finland
 ms.author: kfend
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 22b5220144927f83d5ad1f7b2f42c8b91ab586a3
-ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
+ms.openlocfilehash: e6bd723d36c063404e5170df3906c684df808dec
+ms.sourcegitcommit: bad53cfd55d478611a61fca598f53ce20abf0c73
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8466851"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "8788397"
 ---
-# <a name="finland-overview"></a>Suomi – yleiskatsaus
+# <a name="finland-overview"></a>Suomen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,5 +31,10 @@ Tässä ohjeaiheessa on tietoja ja linkkejä resursseihin, joiden avulla voidaan
 Tässä ohjeaiheessa on tietoja Suomen Intrastat-raportista.
 
 - [Suomen Intrastat](emea-fin-intrastat.md)
+
+Tässä ohjeaiheessa on tietoja EU-myyntiluettelosta Suomen osalta.
+
+- [Suomen EU-myyntiluettelo](emea-fin-eu-sales-list.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

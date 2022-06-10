@@ -2,24 +2,19 @@
 title: Sivuston hakukoneoptimointia (SEO) koskevia tietoja
 description: Tämä ohjeaihe kattaa hakukoneoptimoinnin sivustossa kehityksestä tuotantoon.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: df92aeae967bbf248b90dffc6bc2239a8d2959183acb9e9181bc344b9e3eff8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f90581766dba3d3a671df52ec08339a1a0fd7dc
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716854"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806402"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Sivuston hakukoneoptimointia (SEO) koskevia tietoja
 
@@ -30,11 +25,15 @@ Tämä ohjeaihe kattaa hakukoneoptimoinnin sivustossa kehityksestä tuotantoon.
 
 ## <a name="a-site-that-is-under-development"></a>Sivustoa kehitetään
 
-Sivuston ollessa kehitettävänä sivuston kaikilla sivuilla tulisi olla **NOINDEX**- ja **NOFOLLOW**-metatunnukset. Näin hakukoneet eivät indeksoi sivuja ja tallenna sivuston kehitysversioita välimuistiin. Voit tehdä tämän määrityksen, jos sivuston sivumalliin on lisätty oletusmetatunnusten moduuli. Oletusarvoiset metatunnusten ominaisuudet ovat tämän jälkeen hakukoneoptimoinnin ominaisuuksien osan käytettävissä sivueditorissa. Näiden ominaisuuksien avulla voit hallita metatunnuksia.
+Jotta hakukoneet eivät indeksoisi työn alla olevia sivustoja, kaikilla sivuston sivuilla tulisi olla **noindex**- ja **nofollow**-metatunnisteet. Hyvä käytäntö on luoda [MetaTags-moduuliin](metatags-module.md) perustuva katkelma, joka sisältää seuraavan metatunnistemerkinnän ja varmistaa, että kyseinen katkelma lisätään sivuston kaikkien mallien HTML \<head\>-osaan.
+
+```html
+<meta name="robots" content="noindex,nofollow" /> 
+```
 
 ## <a name="soft-launch-of-a-site"></a>Sivuston pehmeä käynnistäminen
 
-Pehmeän käynnistämisen aikana sivusto on vain rajoitetun yleisön tai markkina-alueen käyttettävissä ennen täydellisen käyttöönoton tapahtumista. Jos sivustossa tehdään pehmeä käynnistäminen, **NOINDEX**-metatunnukset kannattaa jättää paikoilleen. Näin varmistetaan, että pehmeä käynnistys jää rajoitetun yleisön käyttöön.
+Pehmeän käynnistämisen aikana sivusto on vain rajoitetun yleisön tai markkina-alueen käyttettävissä ennen täydellisen käyttöönoton tapahtumista. Jos sivustossa tehdään pehmeä käynnistäminen, **noindex**-metatunnukset kannattaa jättää paikoilleen. Näin varmistetaan, että pehmeä käynnistys jää rajoitetun yleisön käyttöön.
 
 ## <a name="a-site-that-is-in-production"></a>Sivusto, joka on tuotannossa
 
@@ -44,7 +43,7 @@ Voit optimoida hakukoneindeksoinnin, kun hahmontamisen kehys käyttää sekä Dy
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Sivun hakukoneoptimoinnin asetukset sisäistä esikatselua, rajoitettuja yleisöjä ja kaikkia yleisöjä varten
 
-Koska Dynamics 365 Commerce tukee WYSIWYG-todennettuja esikatseluita visuaalisessa sivunmuodostimessa, tekijät voivat valmistella sivun sisällön niin, ettei heidän tarvitse huolehtia siitä, että tiedot näkyvät sivustolla kävijöille. Jos sivu on julkaistava, mutta sen käyttöä on rajoitettava, sillä on oltava **NOINDEX**-metatunnus. Tällöin hakukoneet eivät indeksoi sitä. Kun sivu on valmis kaikkia varten, kaikki hakukoneoptimoinnin perusmetatiedot ovat olemassa. Näin maksimoidaan hakukoneindeksoinnin tehokkuus. Lisäksi **NOLIMIT**-metatunnus on poistettava.
+Koska Dynamics 365 Commerce tukee WYSIWYG-todennettuja esikatseluita visuaalisessa sivunmuodostimessa, tekijät voivat valmistella sivun sisällön niin, ettei heidän tarvitse huolehtia siitä, että tiedot näkyvät sivustolla kävijöille. Jos sivu on julkaistava, mutta sen käyttöä on rajoitettava, sillä on oltava **noindex**-metatunnus. Tällöin hakukoneet eivät indeksoi sitä. Kun sivu on valmis kaikkia varten, kaikki hakukoneoptimoinnin perusmetatiedot ovat olemassa. Näin maksimoidaan hakukoneindeksoinnin tehokkuus. Lisäksi **nolimit**-metatunnus on poistettava.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

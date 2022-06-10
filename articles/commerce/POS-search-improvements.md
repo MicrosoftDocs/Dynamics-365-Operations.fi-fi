@@ -2,7 +2,7 @@
 title: Ttuote- ja asiakashaku myyntipisteessä (POS)
 description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Dynamics 365 Commercen tuote- ja asiakashakuihin.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700086"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806424"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -106,6 +106,8 @@ Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **Co
 > Jos lisäät liian monta pikavalintaa, myyntipisteen hakuruudun avattava valikko muuttuu sekavaksi, mikä voi vaikuttaa työntekijän hakukokemukseen. Tämän vuoksi vain tarvittavat pikavalinnat kannattaa lisätä.
 
 **Näyttöjärjestys**-kenttä määrittää, missä järjestyksessä pikavalinnat näytetään myyntipisteessä. Näytettävät ehdot ovat valmiita ominaisuuksia, joilla asiakashakualgoritmi hakee asiakkaita. Kumppanit voivat kuitenkin lisätä mukautettuja ominaisuuksia haun pikavalinnoiksi. Järjestelmänvalvoja voi lisätä mukautettuja ominaisuuksia haun pikavalinnoiksi laajentamalla asiakashaun hakuehdoissa käytettäviä laajennettavia valintalistoja ja merkitsemällä sitten kumppanin mukautetut ominaisuudet pikavalinnoiksi. Kumppanit vastaavat tuloksia etsivän koodin kirjoittamisesta, kun heidän mukautettuja pikavalintoja käytetään hauissa.
+
+Pikavalintojen käännökset ovat pakollisia, jos haluat, että pikanäppäimet muodostetaan myyntipisteessä. Jos kanavan kieli ei ole järjestelmän oletuskieli, sinun on määritettävä käännös kullekin pikavalinnalle odotetulla kielellä. Voit määrittää käännökset valitsemalla **Käännä** kullekin pikavalinnalle. 
 
 > [!NOTE]
 > Valintalistaan lisättävä mukautettu ominaisuus ei vaikuta vakioasiakashaun algoritmiin. Asiakashakualgoritmi ei siis tee hakuja mukautetussa ominaisuudessa. Käyttäjät voivat käyttää mukautettua ominaisuutta haussa vain, jos kyseinen mukautettu ominaisuus on lisätty pikavalintoja tai jos oletushakualgoritmi on ohitettu.

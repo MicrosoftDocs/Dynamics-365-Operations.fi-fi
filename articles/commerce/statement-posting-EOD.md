@@ -2,19 +2,19 @@
 title: Laskelman kirjaamisen toiminnallisuuden parannukset
 description: Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649016"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770137"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
@@ -151,6 +151,9 @@ Koottujen tapahtumien näkymä tarjoaa seuraavat edut:
 - Käyttäjä näkee, kuinka tapahtumat kootaan.
 - Käyttäjällä on täydellinen kirjausketju aina tapahtumista myyntitilauksiin ja myyntilaskuihin. Tätä kirjausketjua ei ollut käytettävissä vanhassa laskelman kirjaamistoiminnossa.
 - Koottu XML-tiedosto helpottaa ongelmien tunnistamista myyntitilauksen luonnin ja laskutuksen yhteydessä.
+
+> [!NOTE]
+> Kun transaktiot koostetaan, transaktioon määritetty henkilökunnan jäsen ei ole enää käytössä **Henkilökunnan parhaan myynnin raportille** eli **Henkilökunnan parhaan myynnin raportti** ei näytä kaikkia transaktioita. Ei ole suositeltavaa käyttää **Henkilökunnan parhaan myynnin raporttia** koostettujen transaktioiden yhteydessä.
 
 ### <a name="journal-vouchers"></a>Kirjaustositteet
 

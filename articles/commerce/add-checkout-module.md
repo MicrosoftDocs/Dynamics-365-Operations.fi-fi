@@ -2,7 +2,7 @@
 title: Kassamoduuli
 description: Tässä ohjeaiheessa kuvataan, miten kassamoduuli lisätään sivulle ja miten pakolliset ominaisuudet määritetään.
 author: anupamar-ms
-ms.date: 08/31/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715503"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780511"
 ---
 # <a name="checkout-module"></a>Kassamoduuli
 
@@ -91,14 +91,14 @@ Useimmat kassatiedot, kuten toimitusosoite ja toimitustapa, tallennetaan ostosko
 Voit lisätä kassamoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Siirry kohtaan **Osat** ja **Uusi** luodaksesi uuden osan.
-1. Valitse **Uusi osa** -valintaikkunassa **Kassa**-moduuli.
+1. Valitse **Valitse katkelma** -valintaikkunassa **Kassa**-moduuli.
 1. Kirjoita **Osan nimi** -kohtaan **Kassaosa** ja valitse sitten **OK**.
 1. Valitse **Kassamoduuli**-paikka.
 1. Valitse oikealla olevassa ominaisuudet-ruudussa kynäsymboli, kirjoita otsikko tekstikenttään ja valitse sitten valintamerkkisymboli.
 1. Valitse **Kassatiedot**-paikassa kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Toimitusosoite**, **Toimitusasetukset**, **Kassaosiokontti** ja **Yhteystieto**-moduulit ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Toimitusosoite**, **Toimitusasetukset**, **Kassaosiokontti** ja **Yhteystieto**-moduulit ja valitse sitten **OK**.
 1. Valitse **Kassaosiokontti**-moduulissa kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunan **Lahjakortti**-, **Kanta-asiakkuus**- ja **Maksu**-moduulit ja valitse sitten **OK**. Tällä tavoin varmistat, että kaikki maksutavat näkyvät yhdessä osassa.
+1. Valitse **Valitse moduulit** -valintaikkunan **Lahjakortti**-, **Kanta-asiakkuus**- ja **Maksu**-moduulit ja valitse sitten **OK**. Tällä tavoin varmistat, että kaikki maksutavat näkyvät yhdessä osassa.
 1. Lisää **Käyttöehdot**-moduuliin **Kassan käyttöehdot** -moduuli, jos se on tarpeen. Määritä moduulin ominaisuudet -ruudussa käyttöehtojen teksti tarpeen mukaan.
 1. Valitse **Tallenna** ja esikatsele sitten osaa valitsemalla **Esikatselu**. Joitakin moduuleista ei ehkä hahmonneta esikatselussa, koska niissä ei ole ostoskorikontekstia.
 1. Valitse **Lopeta muokkaus** tallentaaksesi osan ja valitse sitten **Julkaise** julkaistaksesi sen.

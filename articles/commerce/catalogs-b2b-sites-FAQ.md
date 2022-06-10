@@ -2,19 +2,19 @@
 title: Usein kysytyt kysymykset B2B-sivustojen Commerce-luetteloista
 description: Tämä ohjeaihe sisältää vastauksia usein kysyttyihin Microsoft Dynamics 365 Commerce -luetteloiden kysymyksiin.
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 776820e8e77cd0884b3df5412bb95e6e80ca4fc7
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 5bdc7dfcb0e48aa85db2db4d178c5bf62ea0411b
+ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656837"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782859"
 ---
 # <a name="commerce-catalogs-for-b2b-faq"></a>Usein kysytyt kysymykset B2B-sivustojen Commerce-luetteloista
 
@@ -25,7 +25,7 @@ Tämä ohjeaihe sisältää vastauksia usein kysyttyihin Microsoft Dynamics 365 
 
 ## <a name="why-cant-i-configure-a-catalog-specific-navigation-hierarchy-or-see-an-option-to-associate-a-customer-hierarchy"></a>Miksi luettelokohtaista siirtymishierarkiaa ei voi konfiguroida tai ei voi nähdä asiakashierarkian liittämisvaihtoehtoa?
 
-Varmista, että **Ota käyttöön usean luettelon käyttö vähittäismyyntikanavissa** -toiminto on otettu käyttöön Commerce Headquartersin **ominaisuuksien hallinnan** työtilassa. Varmista myös, että ympäristösi käytössä on Commerce versiota 10.0.26 tai sitä myöhempää versiota.
+Varmista, että **Ota käyttöön usean luettelon käyttö vähittäismyyntikanavissa** -toiminto on otettu käyttöön Commerce Headquartersin **ominaisuuksien hallinnan** työtilassa. Varmista myös, että ympäristösi käytössä on Commerce versiota 10.0.27 tai sitä myöhempää versiota.
 
 ## <a name="can-i-view-the-catalog-specific-hierarchy-and-enrich-category-pages-in-commerce-site-builder"></a>Voinko tarkastella luettelokohtaisia hierarkiaa ja rikastaa luokkasivuja Commercen sivustonmuodostimessa?
 

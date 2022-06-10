@@ -3,7 +3,7 @@ title: Myymälän valitsinmoduuli
 description: Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710777"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780636"
 ---
 # <a name="store-selector-module"></a>Myymälän valitsinmoduuli
 
@@ -138,23 +138,26 @@ Voit määrittää myymälöiden valitsinmoduulin aiemmin tämän ohjeaiheen kuv
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Markkinointimalli** ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
-1. Valitse **Valitse malli** -valintaikkunassa **Markkinointimalli**-malli. Kirjoita **Sivun nimi** -kohtaan **Myymälöiden sijainnit** ja valitse sitten **OK**.
+1. Syötä **Luo uusi sivu** -dialogiruudussa, kohdan **Sivun nimi** alla, **Myymälöiden sijainnit** ja valitse sitten **Seuraava**.
+1. Valitse **Valitse malli** -kohdassa luomasi **Markkinointimalli** ja valitse sitten **Seuraava**.
+1. Valitse **Valitse asettelu** -kohdassa sivun asettelu (esimerkiksi **Joustava asettelu**) ja valitse sitten **Seuraava**.
+1. Tarkista sivun konfigurointi kohdassa **Tarkista ja viimeistele**. Jos haluat muokata sivun tietoja, valitse **Takaisin**. Jos sivun tiedot ovat oikein, valitse **Luo sivu**. 
 1. Valitse uudella sivulla **Pää**-paikka. Valitse kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
 1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti ja 2 saraketta** -moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduuli** -valintaikkunassa **Kontti ja 2 saraketta** -moduuli ja valitse sitten **OK**.
 1. Määritä moduulin ominaisuusruudussa **Leveys**-kohdan arvoksi **Täytä kontti**.
 1. Määritä **Erittäin pienen näkymäportin sarakkeen määritys** -kohdan arvoksi **100 %**.
 1. Määritä **Pienen näkymäportin sarakkeen määritys** -kohdan arvoksi **100 %**.
 1. Määritä **Keskikokoisen näkymäportin sarakkeen määritys** -kohdan arvoksi **33 % 67 %**.
 1. Määritä **Suuren näkymäportin sarakkeen määritys** -kohdan arvoksi **33 % 67 %**.
 1. Valitse **Kontti ja 2 saraketta** -paikassa kolme pistettä (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduuli** -valintaikkunassa **Myymälävalitsin**-moduuli ja valitse sitten **OK**.
 1. Määritä moduulin ominaisuusruudussa **Tila**-kohdan arvoksi **Etsi myymälät**.
 1. Määritä **Hakusäde**-arvo maileina.
 1. Määritä halutessasi muita ominaisuuksia, kuten **Määritä ensisijaiseksi myymäläksi**, **Näytä kaikki myymälät** ja **Ota käyttöön automaattiset ehdotukset**.
 1. Valitse **Kontti ja 2 saraketta** -paikassa kolme pistettä (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kartta**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Kartta**-moduuli ja valitse sitten **OK**.
 1. Määritä moduulin ominaisuusruudussa haluamiasi lisäominaisuuksia.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
  

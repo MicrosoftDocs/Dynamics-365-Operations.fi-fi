@@ -2,7 +2,7 @@
 title: Konttimoduuli
 description: Tässä ohjeaiheessa on tietoja säilömoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa4bf7523acee06e91f0ebb983dd8777dec4bac5
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715437"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780711"
 ---
 # <a name="container-module"></a>Konttimoduuli
 
@@ -100,15 +100,18 @@ Voit lisätä säilön toistinmoduulin uudelle sivulle ja määrittää pakollis
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Konttimalli** ja valitse sitten **OK**.
 1. Valitse kolme pistettä (**...**) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**. 
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
-1. Valitse **Valitse malli** -valintaikkunassa luomasi videotoistimen malli. Kirjoita **Sivun nimi** -kohtaan **Konttisivu** ja valitse sitten **OK**.
+1. Syötä **Luo uusi sivu** -dialogiruudussa, kohdan **Sivun nimi** alla, **Konttisivu** ja valitse sitten **Seuraava**.
+1. Valitse **Valitse malli** -kohdassa luomasi **Konttimalli** ja valitse sitten **Seuraava**.
+1. Valitse **Valitse asettelu** -kohdassa sivun asettelu (esimerkiksi **Joustava asettelu**) ja valitse sitten **Seuraava**.
+1. Tarkista sivun konfigurointi kohdassa **Tarkista ja viimeistele**. Jos haluat muokata sivun tietoja, valitse **Takaisin**. Jos sivun tiedot ovat oikein, valitse **Luo sivu**. 
 1. Valitse uudella sivulla **Pää**-paikka. Valitse kolmen pisteen painike (**…**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
 1. Määritä säilömoduulin ominaisuusruudussa **Sarakkeiden määrä** -ominaisuuden arvoksi **1** ja **Leveys**-ominaisuuden arvoksi **Täytä säiliö**.
 1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Sisältölohko**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Sisältölohko**-moduuli ja valitse sitten **OK**.
 1. Määritä sisältölohkomoduulin ominaisuusruudussa otsikko, kuva ja asettelu.
 1. Valitse **Tallenna** ja esikatsele sitten sivua valitsemalla **Esikatselu**. Näkyvissä on yksi säilömoduulin levyinen ominaisuusmoduuli.
 1. Muuta säilömoduulin ominaisuusruudussa **Sarakkeiden määrä** -ominaisuuden arvoksi **3**.

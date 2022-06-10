@@ -2,7 +2,7 @@
 title: Pikanäkymämoduuli
 description: Tässä ohjeaiheessa on tietoja pikanäkymämoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 68808da1ad2b3474852b3544df55db948f8758cd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692697"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780815"
 ---
 # <a name="quick-view-module"></a>Pikanäkymämoduuli
 
@@ -61,7 +61,7 @@ Voit lisätä pikanäkymämoduulin tuotekokoelmamoduuliin Commercen sivustonmuod
 
 1. Siirry kohtaan **Sivut** ja valitse Fabrikam-sivuston aloitussivu.
 1. Siirry mihin tahansa kotisivun **Tuotekokoelma**-moduuliin, valitse kolmepistettä (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Pikanäkymä**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduuli** -valintaikkunassa **Pikanäkymä**-moduuli ja valitse sitten **OK**.
 1. Valitse **Pikanäkymä**-moduulin ominaisuusruudusta **Otsikko**. Määritä **Otsikko**-valintaikkunassa **Otsikkotaso**-kentän arvoksi **H2** ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
 

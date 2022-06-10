@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524462"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786862"
 ---
 # <a name="inventory-visibility-public-apis"></a>Varaston näkyvyyden julkiset ohjelmointirajapinnat
 
@@ -41,17 +41,22 @@ Seuraavassa taulukossa on tällä hetkellä käytettävissä olevat ohjelmointir
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Kirjaa | [Käytettävissä olevien varastosaldomäärien määrittäminen tai ohittaminen](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Kirjaa | [Yhden varaustapahtuman luominen](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Kirjaa | [Useiden varaustapahtumien luominen](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Kirjaa | [Yhden aikataulutetun käytettävissä olevan saldon muutoksen luominen](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Kirjaa | [Useiden aikataulutettujen käytettävissä olevien varastosaldojen muutosten luominen](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Kirjaa | [Yhden aikataulutetun käytettävissä olevan saldon muutoksen luominen](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Kirjaa | [Useiden aikataulutettujen käytettävissä olevien varastosaldojen muutosten luominen](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Kirjaa | [Post-menetelmää käyttävä kysely](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hae | [Get-menetelmää käyttävä kysely](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | Kirjaa | [Yhden kohdistustapahtuman luominen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Kirjaa | [Yhden kohdistuksenpoistotapahtuman luominen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Kirjaa | [Yhden uudelleenkohdistustapahtuman luominen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Kirjaa | [Yhden kulutustapahtuman luominen](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Kirjaa | [Kyselyn kohdistustulos](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > Polun {environmentId}-osa on ympäristötunnus Microsoft Dynamics Lifecycle Servicesissä (LCS).
 > 
 > Joukkotoimintosovellusliittymä voi palauttaa kullekin pyynnölle enintään 512 tietuetta.
 
-Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+Microsoft on antanut käyttöön *Postman*-pyyntökokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Lifecycle Services -ympäristön mukaisen päätepisteen etsiminen
 
@@ -84,7 +89,7 @@ Microsoft on muodostanut Power Appsiin käyttöliittymän, jonka avulla saadaan 
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Todennus
 
-Varaston näkyvyyden julkisen ohjelmointirajapinnan kutsumiseen käytetään ympäristön suojaustunnusta. Siksi sinun on luotava _Azure Active Directory (Azure AD) -tunnus_ Azure AD -sovelluksen avulla. Tämän jälkeen Azure AD -tunnuksen avulla saat _käyttöoikeustunnuksen_ suojauspalvelusta.
+Varaston näkyvyyden julkisen ohjelmointirajapinnan kutsumiseen käytetään ympäristön suojaustunnusta. Siksi sinun on luotava _Azure Active Directory (Azure AD) -tunnus_ käyttämällä Azure AD -sovellustasi. Tämän jälkeen Azure AD -tunnuksen avulla saat _käyttöoikeustunnuksen_ suojauspalvelusta.
 
 Microsoft toimittaa käyttövalmiin *Postman*-tunnusten hakukokoelman. Tämä kokoelma voidaan tuoda *Postman*-ohjelmistoon käyttämällä seuraavaa jaettua linkkiä: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -539,7 +544,7 @@ Seuraavassa esimerkissä on näytteen tekstisisältö.
 }
 ```
 
-Seuraavissa esimerkeissä esitetään, miten kaikkia tuotteita kysellään tietyllä sivustolla ja tietyssä sijainnissa.
+Seuraavassa esimerkissä esitetään, miten kaikkia tuotteita kysellään tietyllä sivustolla ja tietyssä sijainnissa.
 
 ```json
 {
@@ -580,6 +585,10 @@ get URL -esimerkki: Tämä get-pyyntö täsmälleen sama kuin aiemmin annettu po
 
 ## <a name="available-to-promise"></a>Luvattavissa oleva määrä (ATP)
 
-Voit määrittää varaston näkyvyyden sallimaan tulevien käytettävissä olevien muutosten ajoituksen ja ATP-määrien laskemisen. ATP on tuotteen määrä, joka on saatavilla ja joka voidaan luvata asiakkaalle seuraavalla kaudella. ATP-laskelman käyttö voi lisätä tilauksen täyttämiskykyä merkittävästi. Tietoja siitä, miten tämä ominaisuus otetaan käyttöön ja miten varaston näkyvyys otetaan käyttöön sen API-liittymän kautta ominaisuuden käytön jälkeen, on kohdassa [Varaston näkyvyyden käytettävissä olevan varaston muutosaikataulut ja luvattavissa olevat määrät](inventory-visibility-available-to-promise.md).
+Voit määrittää varaston näkyvyyden sallimaan tulevien käytettävissä olevien muutosten ajoituksen ja ATP-määrien laskemisen. ATP on tuotteen määrä, joka on saatavilla ja joka voidaan luvata asiakkaalle seuraavalla kaudella. ATP-laskelman käyttö voi lisätä tilauksen täyttämiskykyä merkittävästi. Tietoja siitä, miten tämä ominaisuus otetaan käyttöön ja miten varaston näkyvyys otetaan käyttöön sen API-liittymän kautta ominaisuuden käytön jälkeen, on kohdassa [Varaston näkyvyyden käytettävissä olevan varaston muutosaikataulut ja luvattavissa olevat määrät](inventory-visibility-available-to-promise.md#api-urls).
+
+## <a name="allocation"></a>Varaus
+
+Kohdistukseen liittyvät ohjelmointirajapinnat sijaitsevat kohdassa [Varaston näkyvyyden kohdistus](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

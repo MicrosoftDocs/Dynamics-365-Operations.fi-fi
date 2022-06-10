@@ -2,7 +2,7 @@
 title: Yksikön tietojen näyttäminen ja päivittäminen Excelissä
 description: Tässä aiheessa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464934"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762622"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Yksikön tietojen näyttäminen ja päivittäminen Excelissä 
 
@@ -110,7 +110,7 @@ Voit säätää työkirjaan automaattisesti lisättäviä sarakkeita suunnitteli
 5. Jos olet lisännyt kentän (sarakkeen), valitse **Päivitä**, niin ohjelma hakee päivitetyn tietojoukon.
 
 ## <a name="change-the-publish-batch-size"></a>Julkaisuerän koon muuttaminen
-Kun käyttäjä julkaisee muutoksia tietotietueisiin Excel-apuohjelmalla, päivitykset lähetetään erissä. Julkaisuerän oletuskoko on 100 riviä. Versiossa 10.0.17 ja sitä uudemmissa versioissa **Julkaisuerän koon määrittämisen salliminen Excel-apuohjelmassa** -toiminto antaa joustavan tavan hallita julkaisuerän kokoa.
+Kun käyttäjä julkaisee muutoksia tietotietueisiin Excel-apuohjelmalla, päivitykset lähetetään erissä. Julkaisuerän koon oletusarvo (ja enimmäismäärä) on 100 riviä, mutta **Salli julkaisun eräkoon konfigurointi Excel-apuohjelmassa** -ominaisuuden avulla saat joustavuutta julkaisuerän koon alentamiseen erityisesti tilanteessa, kun koet aikakatkaisuja yrittäessäsi julkaista päivityksiä Excelistä.
 
 Järjestelmänvalvojat voivat määrittää koko järjestelmää koskevan julkaisuerän kokorajoituksen Avaa Excelissä -työkirjoissa. Määritys tehdään määrittämällä **Julkaisuerän raja** -kenttä **Office-sovelluksen parametrit** -sivun **Sovelluksen parametrit** -osassa.
 

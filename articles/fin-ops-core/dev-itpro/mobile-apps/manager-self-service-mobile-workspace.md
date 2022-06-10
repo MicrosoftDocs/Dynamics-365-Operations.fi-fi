@@ -2,7 +2,7 @@
 title: Oman ryhmän mobiilityötila
 description: Tässä ohjeaiheessa on tietoja oman ryhmän mobiilityötilasta, jossa esimiehet voit tarkastella suoria alaisiaan ja laajennettua henkilökuntaa.
 author: ShielaSogge
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,22 +12,23 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767109"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811054"
 ---
 # <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Tässä ohjeaiheessa on tietoja **oman ryhmän** mobiilityötilasta. Esimiehet voivat tarkastella tässä työtilassa suoria alaisiaan ja laajennettua henkilökuntaa. He voivat myös lähettää kehuja raportointiketjuunsa kuuluville henkilöille.
 
 Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations -mobiilisovelluksen kanssa.
 
-## <a name="overview"></a>Yleiskatsaus 
+## <a name="overview"></a>Yleiskuvaus 
 Esimiehet voit tehdä seuraavia tehtäviä **oman ryhmän** mobiilityötilassa:
 
 - Esimiehen suorista alaisista koostuvan luettelon tarkastelu.
@@ -54,7 +55,7 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 </ul>
 </td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos Finance and Operations -sovellusta ei ole vielä otettu&#39; organisaatiossa käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>. Jos Human Resourcesia ei ole vielä otettu&#39; organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources -sivulta</a>.
+<td>Jos Finance and Operations -sovellusta ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>. Jos Human Resourcesia ei ole vielä otettu&#39; organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources -sivulta</a>.
 </td>
 </tr>
 <tr class="even">

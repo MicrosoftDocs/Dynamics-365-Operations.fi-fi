@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547785"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786835"
 ---
 # <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
 
@@ -60,7 +60,7 @@ Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominai
 
 Jos oikea varaston näkyvyyspalvelun päätepiste ei ole tiedossa, avaa **Määritys**-sivu Power Appsissa ja valitse sitten **Näytä palvelun päätepiste** oikeassa yläkulmassa. Sivulla näkyy oikea palvelun päätepiste.
 
-## <a name="data-source-configuration"></a>Tietolähteen määritykset
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Tietolähteen määritykset
 
 Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 talous- ja toimintosovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
 
@@ -141,7 +141,7 @@ Dimension yhdistämismääritykset lisätään seuraavasti:
 
 Jos tietolähde sisältää esimerkiksi tuotteen väridimension, se voidaan yhdistää `ColorId`-perusdimensioon, jolloin mukautettu `ProductColor`-dimensio lisätään `exterchannel`-tietolähteeseen. Se yhdistetään sitten `ColorId`-perusdimensioon.
 
-### <a name="physical-measures"></a>Fyysiset mitat
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fyysiset mitat
 
 Kun tietolähde kirjaa varastonmuutoksen varaston näkyvyyssovellukseen, muutoksen kirjaamiseen käytetään *fyysisiä mittoja*. Fyysiset mitat muokkaavat määrän vastaamaan varaston tilaa. Fyysiset mitat voidaan määrittää omien tarpeiden mukaan. Kyselyt voivat perustua fyysisiin mittoihin.
 
@@ -175,6 +175,9 @@ Jos tietolähde on Supply Chain Management, fyysisiä oletusmittoja ei tarvitse 
 ### <a name="calculated-measures"></a>Laskennalliset mitat
 
 Varaston näkyvyyssovelluksen avulla voidaan tehdä sekä varaston fyysisiä mittoja että *mukautettuja laskennallisia mittoja* koskevia kyselyjä. Laskennalliset mitat ovat mukautettu laskentakaava, joka koostuu fyysisten mittojen yhdistelmästä. Tämä toiminto antaa mahdollisuuden määrittää lisättävät ja/tai vähennettävät fyysiset mitat, joiden avulla voidaan muodostaa mukautettu mitta.
+
+> [!IMPORTANT]
+> Laskettu mitta on fyysisten mittojen yhdistelmä. Sen kaava voi sisältää vain fyysisiä mittoja ilman kaksoiskappaleita, ei laskettuja mittoja.
 
 Määritys antaa mahdollisuuden määrittää määrejoukon, jota lisäämällä tai vähentämällä saadaan koostetuloksen kokonaismäärä.
 

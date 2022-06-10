@@ -2,7 +2,7 @@
 title: Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 description: Tässä ohjeaiheessa on tietoja Dynamics 365 Commercen myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
 author: jblucher
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc281a691b34731fb0b5986222b41b436912c782
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740679"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811199"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -44,7 +44,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 > [!NOTE]
 > Alla mainitut toiminnot koskevat Commercen uusinta versiota. Osa toiminnosta on ehkä muuttunut tai niitä ei ollut aiemmissa versioissa.
 
-| Tunnus   | Toiminto                                         | Kuvaus                                                                                                                                                                                                    | Käyttäjätoiminto?    | Tapahtumanäyttö | Aloitusnäyttö | Käytettävissä offline-tilassa? | Paikallinen |
+| Tunnus   | Toiminto                                         | Kuvaus                                                                                                                                                                                                    | Käyttäjän toiminnot    | Tapahtumanäyttö | Aloitusnäyttö | Käytettävissä offline-tilassa? | Paikallinen |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Tuotemyynti                                      | Lisää määritetty tuote tapahtumaan.                                                                                                                                                                    | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
 | 101  | Hinnantarkistus                                       | Etsi määrätyn tuotteen hinta.                                                                                                                                        | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
@@ -273,11 +273,11 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 1219 | URL-osoitteen avaaminen myyntipisteessä                                   | Avaa myyntipisteen järjestelmänvalvojan konfiguroitu URL-osoite.                                                                                                                                                                           | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
 | 1220 | Hallitse kassakaappeja                                       | Hallitse kassakaappia eri kassakoneissa.                                                                                                                                                                       | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
 | 1221 | Mitätöi keskeytetyt tapahtumat                       | Mitätöi keskeytetyt tapahtumat.                                                                                                                                                                               | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
-| 1300 | Ohita tilikausirekisteröinti                          | Ohita tilikausirekisteröinti.                                                                                                                                                                                       | Kyllä            | Kyllä                | Kyllä            | Kyllä               | Kyllä             |
-| 1 301 | Merkitse kirjanpidon tapahtuma rekisteröidyksi                      |  Merkitse kirjanpidon tapahtuma rekisteröidyksi.                                                                                                                                                                                  | Kyllä            | Kyllä                | Kyllä            | Kyllä               | Kyllä             |
-| 1302 | Viimeistele kirjanpidon rekisteröintiprosessi              | Viimeistele kirjanpidon rekisteröintiprosessi.                                                                                                                                                                           | Kyllä            | Kyllä                | Kyllä            | Kyllä               | Kyllä             |
-| 1303 | Ohita kuntotarkistuksen virhe                           | Ohita kuntotarkistuksen virhe.                                                                                                                                                                                        | Kyllä            | Kyllä                | Kyllä            | Kyllä               | Kyllä             |
-| 1304 |  Lykkää kirjanpidon rekisteröintiä                     | Lykkää kirjanpidon rekisteröintiä.                                                                                                                                                                                  | Kyllä            | Kyllä                | Kyllä            | Kyllä               | Kyllä             |
+| 1300 | Ohita tilikausirekisteröinti                          | Ohita tilikausirekisteröinti.                                                                                                                                                                                       | En            | En                | En            | Kyllä               | En             |
+| 1 301 | Merkitse kirjanpidon tapahtuma rekisteröidyksi                      |  Merkitse kirjanpidon tapahtuma rekisteröidyksi.                                                                                                                                                                                  | En            | En                | En            | Kyllä               | En             |
+| 1302 | Viimeistele kirjanpidon rekisteröintiprosessi              | Viimeistele kirjanpidon rekisteröintiprosessi.                                                                                                                                                                           | En            | En                | Kyllä            | Kyllä               | Kyllä             |
+| 1303 | Ohita kuntotarkistuksen virhe                           | Ohita kuntotarkistuksen virhe.                                                                                                                                                                                        | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En             |
+| 1304 |  Lykkää kirjanpidon rekisteröintiä                     | Lykkää kirjanpidon rekisteröintiä.                                                                                                                                                                                  | En            | En                | En            | Kyllä               | En             |
 | 1400 | Hallitse tarkistusluetteloita ja tehtäviä                       | Hallitse työntekijän tarkistusluetteloa ja tehtäviä.                                                                                                                                                                        | En             | En                 | Kyllä            | En                | En              |
 | 2000 | Aikataulujen hallinta                               | Tätä toimintoa ei tueta vielä.                                                                                                                                                                           | Kyllä            | Kyllä                | Kyllä            | Ei                | Ei              |
 | 2001 | Aikataulupyynnöt                                 | Tätä toimintoa ei tueta vielä.                                                                                                                                                                           | Kyllä            | Kyllä                | Kyllä            | En                | En              |

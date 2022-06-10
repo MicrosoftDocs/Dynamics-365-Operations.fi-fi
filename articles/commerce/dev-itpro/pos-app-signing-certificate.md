@@ -1,8 +1,8 @@
 ---
-title: MPOS:n allekirjoittaminen koodin allekirjoitusvarmenteella
+title: MPOS:n appx-tiedoston allekirjoittaminen koodin allekirjoitusvarmenteella
 description: Tässä aiheessa kerrotaan, miten MPOS allekirjoitetaan koodin allekirjoitusvarmenteella.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.custom: 28021
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 38c094de6f94381a809fdb68d2e76d410e406934
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741541"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811082"
 ---
-# <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>MPOS:n appx-tiedoston allekirjoittaminen koodin allekirjoitusvarmenteella
+# <a name="sign-the-mpos-appx-file-with-a-code-signing-certificate"></a>MPOS:n appx-tiedoston allekirjoittaminen koodin allekirjoitusvarmenteella
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Jos haluat asentaa Modern POS:n (MPOS), sinun on allekirjoitettava MPOS-sovellus luotettavan palveluntarjoajan koodin allekirjoitusvarmenteella ja asennettava sama varmenne kaikkiin koneisiin, joissa MPOS on asennettu nykyisen käyttäjän luotettuun juurikansioon.
 
@@ -42,7 +43,7 @@ Suojattu tiedosto -tehtävän käyttäminen on suositeltu lähestymistapa Univer
 ![MPOS-sovelluksen allekirjoitusvirta.](media/POSSigningFlow.png)
 
 > [!NOTE]
-> Tällä hetkellä OOB-pakkaus tukee vain appx-tiedoston allekirjoittamista, eri itsepalveluasennusohjelmia, kuten MPOIS, RSSU ja HWS, ei allekirjoiteta tällä prosessilla. Se on allekirjoitettava manuaalisesti SignToolilla tai muiden allekirjoitustyökalujen avulla. Appx-tiedoston allekirjoittamiseen käytettävä varmenne on asennettava koneeseen, johon Modern POS on asennettu.
+> Tällä hetkellä OOB-pakkaus tukee vain .appx-tiedoston allekirjoittamista, eri itsepalveluasennusohjelmia, kuten MPOIS, RSSU ja HWS, ei allekirjoiteta tällä prosessilla. Se on allekirjoitettava manuaalisesti SignToolilla tai muiden allekirjoitustyökalujen avulla. Appx-tiedoston allekirjoittamiseen käytettävä varmenne on asennettava koneeseen, johon Modern POS on asennettu.
 
 ## <a name="steps-to-configure-the-certificate-for-signing-in-azure-pipelines"></a>Vaiheet varmenteen määrittämiseksi Azure Pipelinesissa allekirjoittamista varten
 
@@ -51,21 +52,22 @@ Suojattu tiedosto -tehtävän käyttäminen on suositeltu lähestymistapa Univer
 Lataa [DownloadFile-tehtävä](/visualstudio/msbuild/downloadfile-task) ja lisää se koontiversioprosessin ensimmäiseksi vaiheeksi. Suojattu tiedosto -tehtävän käytön etuna on, että tiedosto salataan ja sijoitetaan levylle koonnin aikana riippumatta siitä, onnistuuko, epäonnistuu tai peruutetaanko koontiprosessi. Tiedosto poistetaan lataussijainnista, kun koontiprosessi on valmis.
 
 1. Lataa Suojattu tiedosto -tehtävä ja lisää se Azuren koontijakson ensimmäiseksi vaiheeksi. Voit ladata Suojattu tiedosto -tehtävän [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile)-kohdasta.
-2. Lataa varmenne Suojattu tiedosto -tehtävään ja määritä viitenimi Tulostusmuuttujat-kohdassa seuraavan kuvan mukaisesti.
+1. Lataa varmenne Suojattu tiedosto -tehtävään ja määritä viitenimi Tulostusmuuttujat-kohdassa seuraavan kuvan mukaisesti.
     > [!div class="mx-imgBorder"]
     > ![Suojattu tiedosto -tehtävä.](media/SecureFile.png)
-3. Luo uusi muuttuja Azure Pipelinesissa valitsemalla **Muuttujat**-välilehdestä **Uusi muuttuja**.
-4. Kirjoita muuttujan nimi arvokenttään, esimerkiksi **MySigningCert**.
-5. Tallenna muuttuja.
-6. Avaa **Customization.settings**-tiedosto kohteesta **RetailSDK\\BuildTools** ja päivitä **ModernPOSPackageCertificateKeyFile** jaksossa luodun muuttujan nimellä (vaihe 3). Esimerkki:
+1. Luo uusi muuttuja Azure Pipelinesissa valitsemalla **Muuttujat**-välilehdestä **Uusi muuttuja**.
+1. Kirjoita muuttujan nimi arvokenttään, esimerkiksi **MySigningCert**.
+1. Tallenna muuttuja.
+1. Avaa **Customization.settings**-tiedosto kohteesta **RetailSDK\\BuildTools** ja päivitä **ModernPOSPackageCertificateKeyFile** jaksossa luodun muuttujan nimellä (vaihe 3). Esimerkki:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     Tämä vaihe on pakollinen, jos varmennetta ei ole suojattu salasanalla. Jos varmenne on suojattu salasanalla, noudata seuraavia ohjeita.
- 
-7. Lisää jakson **Muuttujat**-välilehteen uusi suojaustekstimuuttuja. Määritä nimeksi **MySigningCert.secret** ja määritä varmenteen salasanan arvo. Voit suojata muuttujan valitsemalla lukituskuvakkeen.
-8. Lisää **Powershellin komentosarja** -tehtävä jaksoon (Lataa suojattu tiedosto jälkeen ja ennen koontivaihetta). Anna **Näyttönimi** ja määritä tyypiksi **Sisäinen**. Kopioi ja liitä seuraavat tiedot komentosarjaosaan.
+    
+1. Jos haluat aikaleiman MPOS:n .appx -tiedostoon varmennetta allekirjoitettaessa, avaa **Retail SDK\\Build tool\\Customization.settings** -tiedosto ja päivitä **ModernPOSPackageCertificateTimestamp** -muuttuja aikaleimapalveluntarjoajalla (esimerkiksi `http://timestamp.digicert.com`).
+1. Lisää jakson **Muuttujat**-välilehteen uusi suojaustekstimuuttuja. Määritä nimeksi **MySigningCert.secret** ja määritä varmenteen salasanan arvo. Voit suojata muuttujan valitsemalla lukituskuvakkeen.
+1. Lisää **Powershellin komentosarja** -tehtävä jaksoon (Lataa suojattu tiedosto jälkeen ja ennen koontivaihetta). Anna **Näyttönimi** ja määritä tyypiksi **Sisäinen**. Kopioi ja liitä seuraavat tiedot komentosarjaosaan.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -74,7 +76,7 @@ Lataa [DownloadFile-tehtävä](/visualstudio/msbuild/downloadfile-task) ja lisä
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Avaa **Customization.settings**-tiedosto kohteesta **RetailSDK\\BuildTools** ja päivitä **ModernPOSPackageCertificateThumbprint** varmenteen allekirjoituksen arvolla.
+1. Avaa **Customization.settings**-tiedosto kohteesta **RetailSDK\\BuildTools** ja päivitä **ModernPOSPackageCertificateThumbprint** varmenteen allekirjoituksen arvolla.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -82,7 +84,6 @@ Lataa [DownloadFile-tehtävä](/visualstudio/msbuild/downloadfile-task) ja lisä
  
 Lisätietoja allekirjoituksen saamisesta varmenteelle on kohdassa [varmenteen allekirjoituksen noutaminen](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>Lataa tai luo varmenne allekirjoittaaksesi MPOS-sovelluksen manuaalisesti SDK:n msbuildin avulla
 
 Jos MPOS-sovelluksen allekirjoittamiseen käytetään ladattua tai luotua varmennetta, päivitä **ModernPOSPackageCertificateKeyFile**-solmu **BuildTools\\Customization.settings** -tiedostossa osoittamaan pfx-tiedoston sijaintiin (**$(SdkReferencesPath)\\appxsignkey.pfx**). Esimerkki:

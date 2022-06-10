@@ -2,7 +2,7 @@
 title: Tuotekokoelmamoduulit
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotekokoelmamoduulien yleiskatsaus.
 author: v-chgri
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4ff891eef79835fb4a65535ce8152e5b17023b9c
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984541"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780406"
 ---
 # <a name="product-collection-modules"></a>Tuotekokoelmamoduulit
 
@@ -70,11 +70,14 @@ Tuotekokoelmamoduuli tukee [pikanäkymämoduulia](quick-view-module.md), jonka a
 Lisää tuotekokoelmamoduuli luokkasivulle seuraavasti.
 
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
-1. Valitse **Valitse malli** -valintaikkunassa sama malli, jota käytettiin oletusluokkasivulla. Kirjoita **Sivun nimi** -kohtaan sopiva nimi ja valitse sitten **OK**.
+1. Syötä **Luo uusi sivu** -dialogiruudussa, kohdan **Sivun nimi** alla, sopiva sivun nimi ja valitse sitten **Seuraava**.
+1. Valitse **Valitse malli** -kohdan alla sama malli, jota oletusluokkasivu käyttää ja valitse sitten **Seuraava**.
+1. Valitse **Valitse asettelu** -kohdassa sivun asettelu (esimerkiksi **Joustava asettelu**) ja valitse sitten **Seuraava**.
+1. Tarkista sivun konfigurointi kohdassa **Tarkista ja viimeistele**. Jos haluat muokata sivun tietoja, valitse **Takaisin**. Jos sivun tiedot ovat oikein, valitse **Luo sivu**. 
 1. Valitse kolme pistettä (**...**) **Alialatunniste**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
 1. Valitse kolme pistettä (**...**) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Tuotekokoelma**-moduuli ja valitse sitten **OK**.  
+1. Valitse **Valitse moduuli** -valintaikkunassa **Tuotekokoelma**-moduuli ja valitse sitten **OK**.  
 1. Valitse tuotekokoelmamoduulin ominaisuusruudussa **Lisää tuoteluetteloon**.
 1. Valitse **Valitse tuoteluettelon määritys** -valintaikkunassa luettelon tyyppi, luettelolähde ja anna nimikkeiden määrä. Määritä muut vaihtoehdot, joita voi käyttää luettelotyypissä. Lisätietoja tämän tyyppisistä luettelotyypeistä on seuraavassa taulukossa. 
 1. Valitse **OK**.

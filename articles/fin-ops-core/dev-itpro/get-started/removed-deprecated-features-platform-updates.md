@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644604"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811243"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -31,6 +31,33 @@ Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden po
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
+
+
+## <a name="feature-deprecation-effective-june-2022"></a>Kesäkuussa 2022 poistettavat ominaisuudet
+
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Finance and Operations (Dynamics 365) -mobiilisovellus ja -mobiiliympäristö 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Poistamme Finance and Operations (Dynamics 365) -mobiilisovelluksen ja -mobiiliympäristön, jotta voimme konsolidoida yhteen mobiiliympäristöön, Power Appsiin. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, talous- ja toimintosovellusten tietojen mobiilikokemukset voidaan rakentaa Power Platform -integraation avulla. Katso lisätietoja: [Mobiilikokemusten rakentaminen](../power-platform/build-mobile-experiences.md). |
+| **Tuotealueet, joihin vaikutetaan**         | Taloushallinnon ja toimintojen sovellukset |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut. Tuen päättymisajankohdaksi on suunniteltu lokakuuta 2024. |
+
+
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.29
+
+### <a name="panorama-tab-style"></a>Panoraamavälilehtityyli
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Vaakasuunnassa vieritettävät sivut perustuvat vanhentuneisiin asettelumalleihin, joilla tiedetään olevan käytettävyys- ja helppokäyttöisyysongelmia.  |
+| **Onko toinen ominaisuus korvannut?**   | Ei, mutta muut välilehtityylit ovat silti käytettävissä. |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut. |
+
 
 ## <a name="feature-deprecation-effective-april-2022"></a>Huhtikuussa 2022 poistettavat ominaisuudet
 

@@ -2,7 +2,7 @@
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
 description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645132"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811417"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -288,6 +288,16 @@ Päivitetty malli voidaan tuoda muokattavaan ER-muotoon valitsemalla **Päivitä
 
 ![Luo Excel-taulukkomuotoinen elementti -vaihtoehto Päivitä Excelistä -valintaikkunassa.](./media/er-excel-format-update-template.png)
 
+Versiossa 10.0.28 ja sitä myöhemmissä versioissa voit käyttää **Päivitä Excelin ylä- ja alatunnisteen muotoelementit** -asetusta.
+
+- Kun määrität tämän asetuksen arvoksi **Ei**, Excelin ylätunnisteen ja Excelin alatunnisteen muodon osat säilyvät muuttumattomina, vaikka vastaavat ylätunnisteet tai alatunnisteet olisi päivitetty tuotujen mallien laskentataulukoissa Excel-työkirjamuodossa.
+- Kun määrität tämän asetuksen arvoksi **Kyllä**, Excelin ylätunnisteen ja Excelin alatunnisteen muodon osat muutetaan, kun vastaavat ylätunnisteet tai alatunnisteet päivitetään tuotujen mallien laskentataulukoissa Excel-työkirjamuodossa.
+
+    - Jos laskentataulukon ylä- tai alatunnisteen rakennetta ei ole muutettu tai se on vain lisätty, vastaavan Excel-ylätunnisteen tai Excel-alatunnisteen muodon elementin rakenne päivitetään. Tämän Excelin ylätunnisteen tai Excelin alatunnistemuodon elementin sisäkkäisten muotoelementtien sidonnat säilytetään.
+    - Jos laskentataulukon ylä- tai alatunnisteen rakennetta on muutettu, vastaava Excel-ylätunnisteen tai Excel-alatunnisteen muodon elementti luodaan uudelleen. Tämän Excelin ylätunnisteen tai Excelin alatunnistemuodon elementin sisäkkäisten muotoelementtien sidonnat poistetaan.
+
+![Päivitä Excelin ylä- ja alatunnisteen muotoelementit -vaihtoehto Päivitä Excelistä -valintaikkunassa.](./media/er-excel-format-update-template2.png)
+
 Lisätietoja tästä toiminnosta on kohdan [Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja uudelleen](modify-electronic-reporting-format-reapply-excel-template.md) ohjeissa.
 
 ## <a name="validate-an-er-format"></a>ER-muodon vahvistaminen
@@ -355,7 +365,7 @@ Kun Microsoft Excel -työkirjamuodossa oleva lähtevä asiakirja luodaan, jotkin
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Esimerkki 2: Yhdistettyjen solujen EPPlus-ongelman korjaaminen
 
-Voit luoda lähtevän asiakirjan Excel-työkirjamuodossa suorittamalla ER-muodon. Kun **Ota EPPlus-kirjaston käyttö käyttöön sähköisessä raportointikehyksessä** -ominaisuus on käytössä **Ominaisuudenhallinta**-työtilassa, Excel-laskentataulukon tuotossa käytetään [EPPlus-kirjastoa](https://www.nuget.org/packages/epplus/4.5.2.1). Koska [Excelin toiminta](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) ja EPPlus-kirjaston rajoitus on tiedossa, saattaa kuitenkin ilmetä seuraava poikkeus: "Yhdistettyjä soluja ei voi poistaa tai korvata. Alue yhdistetään osittain toiseen yhdistettyyn alueeseen." Seuraavassa esimerkissä voit lukea, millaiset Excel-mallit voivat aiheuttaa tämän poikkeuksen ja ongelman korjaamisen.
+Voit luoda lähtevän asiakirjan Excel-työkirjamuodossa suorittamalla ER-muodon. Kun **Ota EPPlus-kirjaston käyttö käyttöön sähköisessä raportointikehyksessä** -ominaisuus on käytössä **Ominaisuudenhallinta**-työtilassa, Excel-laskentataulukon tuotossa käytetään [EPPlus-kirjastoa](https://www.nuget.org/packages/epplus/4.5.2.1). Koska [Excelin toiminta](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) ja EPPlus-kirjaston rajoitus on tiedossa, saattaa kuitenkin ilmetä seuraava poikkeus: "Yhdistettyjä soluja ei voi poistaa tai korvata. Alue yhdistetään osittain toiseen yhdistettyyn alueeseen." Seuraavassa esimerkissä voit lukea, millaiset Excel-mallit voivat aiheuttaa tämän poikkeuksen ja ongelman korjaamisen.
 
 1. Luo Excel-työpöytäsovelluksessa uusi Excel-työkirja.
 2. Lisää laskentataulukossa **Sheet1** **ReportTitle**-nimi solulle **A2**.

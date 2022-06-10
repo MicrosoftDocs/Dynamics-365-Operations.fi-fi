@@ -2,7 +2,7 @@
 title: Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) selitteiden käyttöä monikielisten raporttien suunnittelussa ja luonnissa.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313688"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811604"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 
@@ -46,7 +46,7 @@ Kieliriippuvaiset resurssit voidaan määrittää ER-selitteinä. ER-osat voidaa
 
 ER-selitteet voidaan määrittää jokaisessa ER-[konfiguraatiossa](general-electronic-reporting.md#Configuration), jossa on eri osia. Selitteitä voidaan ylläpitää erillään ER-tietomallien, ER-mallimääritysten ja ER-muoto-osien määritetystä logiikasta.
 
-Jokaiselle ER-selitteellä on yksilöivä tunniste, jolla se tunnistetaan selitteen sisältävässä ER-määrityksessä. Jokaisessa selitteessä voi olla seliteteksti jokaisella nykyisessä Microsoft Dynamics 365 Finance -esiintymässä tuetulla kielellä. Nämä tuetut kielet sisältävät käyttöönotettujen mukautusten kielet.
+Jokaiselle ER-selitteellä on yksilöivä tunniste, jolla se tunnistetaan selitteen sisältävässä ER-määrityksessä. Jokaisessa selitteessä voi olla seliteteksti jokaisella nykyisessä Microsoft Microsoft Dynamics 365 Finance -esiintymässä tuetulla kielellä. Nämä tuetut kielet sisältävät käyttöönotettujen mukautusten kielet.
 
 ## <a name="entry"></a>Merkintä
 
@@ -217,6 +217,11 @@ Käännetyt selitteet tuodaan valittuun ER-määritykseen. Tässä ER-määrityk
 Muokattavan ER-osan selitteet säilytetään yhdessä osan muun sisällön kanssa soveltuvassa ER-määrityksen versiossa.
 
 ER-perusosan selitteisiin voidaan viitata siinä ER-osan johdetussa versiossa, joka luodaan muokkauksia varten.
+
+> [!TIP]
+> Kun suunnittelet ER-ratkaisua, voit johtaa oman ER-[tietomallin](er-overview-components.md#data-model-component) komponentin toimitetusta ER-tietomallikomponentista. Tämän johdetun tietomallin avulla voit tuoda käyttöön omat ER-otsikot ja käyttää niitä kaikissa ER-muodoissa, joissa tietomallia käytetään tietolähteenä. Tämän jälkeen voit johtaa oman ER-[muoto](er-overview-components.md#format-component)komponentin toimitetusta valitsemalla johdetun ER-tietomallin sen sijaan toimitetun mallin sijaan. Versiossa 10.0.28 ja myöhemmissä versioissa, voit ottaa käyttöön **Laajennettu nousevan ER-tietomallin otsikoiden käyttöoikeus** -ominaisuus, joka mahdollistaa nousevan ER-tietomallin otsikoiden käytön johdetuissa ER-muodon komponenteissa, vaikka olisit valinnut johdetulle ER-komponentille ER-tietomallin, joka poikkeaa ER-peruskomponentissa käytetystä tietomallista.
+>
+> Kun johdetussa komponentissa ja sen nousevissa komponenteissa käytetään samaa otsikon nimeä, otsikon käännöstä käytetään oleellisimpana.
 
 ER-versiointi määrittää selitteen määrityksen ER-osan määritteisiin. Selitemäärityksen muutokset kirjataan sen muokattavan ER-osan muutosluetteloon (delta), joka on luotu annetun ER-osan johdettuna versiona. Nämä muutokset tarkistetaan, kun johdettu versio pohjustetaan uuteen versioversioon.
 

@@ -2,7 +2,7 @@
 title: Linkkipolkumoduuli
 description: Tässä ohjeaiheessa on tietoja navigointipolkumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: aa7f6e2f2b15c3e5d89cd645b3f1cc4c83c5b8d9
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109729"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780331"
 ---
 # <a name="breadcrumb-module"></a>Navigointipolkumoduuli
 
@@ -64,11 +64,11 @@ Voit lisätä linkkipolkumoduulin PDP:hen ja määrittää pakolliset ominaisuud
 1. Siirry kohtaan **Sivuston asetukset \> Laajennukset** ja valitse sitten **Linkkipolun näyttötyyppi PDP** -asetuksessa **Näytä luokkahierarkia**.
 1. Siirry kohtaan **Mallit** ja valitse PDP-malli.
 1. Valitse **Kontti**-paikka, joka sisältää ostoruutumoduulin. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Linkkipolku**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Navigointipolku**-moduuli ja valitse sitten **OK**.
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Siirry kohtaan **Sivut** ja avaa PDP, joka käyttää PDP-mallia. Jos PDP:tä ei vielä ole olemassa, luo sellainen.
 1. Valitse **Kontti**-paikka, joka sisältää ostoruutumoduulin. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Linkkipolku**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Navigointipolku**-moduuli ja valitse sitten **OK**.
 1. Valitse **Linkkipolku**-paikan ominaisuudet-ruudun **Pääkansio**-kohdasta **Linkitä teksti**.
 1. Kirjoita **Linkin teksti** -valintaikkunaan **Koti** ja valitse sitten **Linkin kohde** -kohdasta **Lisää linkki**.
 1. Valitse **Lisää linkki** -valintaikkunassa linkkipolkupääkansion linkki ja valitse sitten **OK**.

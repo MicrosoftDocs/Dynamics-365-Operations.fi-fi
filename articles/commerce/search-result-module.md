@@ -2,7 +2,7 @@
 title: Hakutulosmoduuli
 description: Tässä ohjeaiheessa on tietoja hakutulosmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644923"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780915"
 ---
 # <a name="search-results-module"></a>Hakutulosmoduuli
 
@@ -65,23 +65,26 @@ Hakutulosmoduuli tukee [pikanäkymämoduulia](quick-view-module.md), jonka avull
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Hakutulosmoduulin lisääminen luokkasivulle
 
-Voit lisätä luokkasivulle hakutulosmoduulin seuraavasti.
+Lisää hakutulosmoduuli luokkasivulle sivustonmuodostimessa seuraavasti.
 
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunassa nimi **Hakutulokset** ja valitse sitten **OK**.
 1. Valitse kolme pistettä (...) **Tekstiosa**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduuli** -valintaikkunassa **Oletussivu**-moduuli ja valitse sitten **OK**.
 1. Valitse **Oletussivu**-moduulin **Pää**-paikka. Valitse kolmen pisteen painike (...) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Kontti**-moduuli ja valitse sitten **OK**.
 1. Valitse kolme pistettä (...) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Linkkipolku**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa **Navigointipolku**-moduuli ja valitse sitten **OK**.
 1. Anna sitten **Navigointipolku**-omiansiuusruudussa arvo **1** kentälle **Toistojen vähimmäismäärä**.
 1. Valitse kolme pistettä (...) **Kontti**-paikassa ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Hakutulokset**-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduuli** -valintaikkunassa **Hakutulokset**-moduuli ja valitse sitten **OK**.
 1. Kirjoita **Hakutulokset**-ominaisuusruudussa arvo **1** kentälle **Toistojen vähimmäismäärä** ja määritä sitten muut hakutulosmoduulin pakolliset ominaisuudet. Kun määrität nämä ominaisuudet malliin, varmistat, että tietyn luokkasivun mukautukset sisältävät nämä asetukset automaattisesti.
 1. Valitse **Lopeta muokkaus** ja valitse sitten **Julkaise** julkaistaksesi mallin.
 1. Siirry kohtaan **Sivut** ja valitse **Uusi** luodaksesi uuden sivun.
-1. Valitse **Valitse malli** -valintaikkunassa luomasi **Hakutulokset**-malli, kirjoita **sivun nimeksi** **Luokkasivu** ja valitse sitten **OK**. Koska kaikki arvot on määritetty mallissa, sivu on valmis julkaistavaksi.
+1. Syötä **Luo uusi sivu** -dialogiruudussa, kohdan **Sivun nimi** alla, **Luokkasivu** ja valitse sitten **Seuraava**.
+1. Valitse **Valitse malli** -kohdassa luomasi **Hakutulokset**-malli ja valitse sitten **Seuraava**.
+1. Valitse **Valitse asettelu** -kohdassa sivun asettelu (esimerkiksi **Joustava asettelu**) ja valitse sitten **Seuraava**.
+1. Tarkista sivun konfigurointi kohdassa **Tarkista ja viimeistele**. Jos haluat muokata sivun tietoja, valitse **Takaisin**. Jos sivun tiedot ovat oikein, valitse **Luo sivu**.
 1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Varastotietoisuuden käyttöönotto hakutulosmoduulissa
@@ -102,7 +105,7 @@ Varastotietoinen tuotehaku käyttää tuotemääritteitä varaston käytettävyy
 
 Noudattamalla seuraavia ohjeita voit luoda erillisiä tuotemääritteitä, jotka tukevat varastotietoista hakutulosmoduulia.
 
-1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Vähittäismyynnin ja kaupan IT \> Tuotteet ja varasto**.
+1. Siirry headquartersissa kohtaan **Jälleenmyynti ja kaupankäynti \> Vähittäismyynnin ja kaupankäynnin IT \> Tuotteet ja varasto**.
 1. Valitse ja avaa **Täytä tuotemääritteisiin varastotaso**.
 1. Lisää seuraavat tiedot valintaikkunassa:
 
@@ -116,11 +119,11 @@ Noudattamalla seuraavia ohjeita voit luoda erillisiä tuotemääritteitä, jotka
 
 Voit konfiguroida online-kanavan tuotemääritteet noudattamalla seuraavia vaiheita. 
 
-1. Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
-2. Valitse online-kanava, jolle varastotietoinen hakutulosmoduuli luodaan.
-3. Valitse ja avaa liittyvä määriteryhmä, ja lisää sitten juuri luotu tuotemäärite siihen.
-4. Valitse Commerce-versiota 10.0.27 vanhemmissa versioissa **Määritä määritteen metatiedot**, valitse juuri lisätty tuotemäärite ja ota sitten käyttöön asetukset **Näytä määrite kanavassa**, **Noudettavissa**, **Voidaan tarkentaa** ja **Voidaan kysellä**.
-5. Siirry kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu** ja suorita työ **1150 (luettelo)**. Jos ajoitat **Täytä tuotemääritteisiin varastotaso** -työn eräkäsittelynä, on suositeltavaa ajoittaa 1150-työ myös eräkäsittelyksi, joka suoritetaan samalla tiheydellä.
+1. Pääkonttorissa valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
+1. Valitse online-kanava, jolle varastotietoinen hakutulosmoduuli luodaan.
+1. Valitse ja avaa liittyvä määriteryhmä, ja lisää sitten juuri luotu tuotemäärite siihen.
+1. Valitse Commerce-versiota 10.0.27 vanhemmissa versioissa **Määritä määritteen metatiedot**, valitse juuri lisätty tuotemäärite ja ota sitten käyttöön asetukset **Näytä määrite kanavassa**, **Noudettavissa**, **Voidaan tarkentaa** ja **Voidaan kysellä**.
+1. Siirry kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu** ja suorita työ **1150 (luettelo)**. Jos ajoitat **Täytä tuotemääritteisiin varastotaso** -työn eräkäsittelynä, on suositeltavaa ajoittaa 1150-työ myös eräkäsittelyksi, joka suoritetaan samalla tiheydellä.
 
 > [!NOTE]
 > Hakutulosmoduulissa näkyvien tuotteiden varastotaso näytetään päätuotetasolla yksittäisen varianttitason sijaan. Sillä on vain kaksi mahdollista arvoa: "saatavilla" ja "loppu varastosta". Arvon todellinen selite haetaan [varastotason profiilin](inventory-buffers-levels.md) määritelmästä. Päätuotteen katsotaan loppuneen varastosta vain, kun kaikki sen variantit ovat loppuneet varastosta.

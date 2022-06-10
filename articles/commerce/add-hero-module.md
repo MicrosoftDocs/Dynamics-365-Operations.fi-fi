@@ -2,7 +2,7 @@
 title: Sisältölohkomoduuli
 description: Tässä ohjeaiheessa on tietoja sisältölohkomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85d101c73e723d246e1f6af61acb51f6d6516a79
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726436"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780356"
 ---
 # <a name="content-block-module"></a>Sisältölohkomoduuli
 
@@ -78,7 +78,7 @@ Voit lisätä hero-moduulin uudelle sivulle ja määrittää pakolliset ominaisu
 1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Luo **Sisältölohkosivu**-niminen sivu käyttämällä juuri luotua hero-mallia.
 1. Valitse oletussivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunan **Valitse moduulit** -kohdassa hero-moduuli ja valitse sitten **OK**.
+1. Valitse **Valitse moduulit** -valintaikkunassa hero-moduuli ja valitse sitten **OK**.
 1. Valitse vasemmanpuoleisen jäsennyspuun sisältölohkomoduuli.
 1. Valitse oikeanpuoleisessa ominaisuusruudussa **Lisää kuva**. Valitse joko olemassa oleva kuva tai lataa uusi kuva.
 1. Valitse **Otsikko**.

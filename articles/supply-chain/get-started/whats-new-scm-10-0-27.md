@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: e8ec20c361f76a6012a7c8e1f03296007f5a05aa
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 77c79c88b08844bf7e399a762bb9eb9746ffb71a
+ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645359"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8812941"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Dynamics 365 Supply Chain Managementin 10.0.27:n esikatselu (heinäkuu 2022)
 
@@ -34,7 +34,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän aih
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
-| Varasto ja logistiikka | [Varaston näkyvyyden lisäosan varaston varaus](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | Tulossa pian | Oletusarvoisesti käytössä |
+| Varasto ja logistiikka | [Varaston näkyvyyden lisäosan varaston varaus](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | [Varaston näkyvyyden varaston kohdistus](../inventory/inventory-visibility-allocation.md) | Oletusarvoisesti käytössä |
 | Valmistus | Tuotannon käyttöliittymän Päivän tehtävät -näkymä | [Miten työntekijät käyttävät tuotannon käyttöliittymää](../production-control/production-floor-execution-use.md) ja [Lomasaldojen näyttäminen tuotannon käyttöliittymässä](../production-control/production-floor-execution-payroll-stats.md) | Toimintojen hallinta:<br>*Tuotannon käyttöliittymän Päivän tehtävät -näkymä* |
 | Suunnittelu | [Alihankinnan tuki suunnittelun optimoinnissa](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-subcontracting) | [Tuotannon alihankintatyön hallinta](../production-control/manage-subcontract-work-production.md) | Oletusarvoisesti käytössä |
 
@@ -69,7 +69,7 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.27 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (kesäkuu 2022) käyttöympäristön päivitysversio 10.0.27.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.27 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (kesäkuu 2022) käyttöympäristön päivitysversio 10.0.27.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

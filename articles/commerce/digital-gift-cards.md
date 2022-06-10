@@ -2,7 +2,7 @@
 title: Sähköisen kaupan digitaaliset lahjakortit
 description: Tässä aiheessa kuvataan, kuinka digitaaliset lahjakortit toimivat sähköisen kaupankäynnin Microsoft Dynamics 365 Commerce -käyttöönotossa. Lisäksi siinä on yleiskatsaus tärkeistä konfigurointivaiheista.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e0cbab05cfd9dcde8ec5caf802d13cd10bc9123716b46307616b0e3e66f0f061
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727554"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809584"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Sähköisen kaupan digitaaliset lahjakortit
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Tässä aiheessa kuvataan, kuinka digitaaliset lahjakortit toimivat sähköisen kaupankäynnin Microsoft Dynamics 365 Commerce -käyttöönotossa. Lisäksi siinä on yleiskatsaus tärkeistä konfigurointivaiheista.
 
@@ -51,15 +50,18 @@ Digitaalisten lahjakorttien tuotteet pitää määrittää Commerce headquarters
 
     ![Lahjakorttituotteen kenttä Commerce headquarters -sovelluksessa.](./media/PostGiftcard.png)
 
-- Jos lahjakortin on tuettava useita ennalta määritettyjä summia (esimerkiksi 25 $, 50 $, ja 100 $), määritä ennalta määritetyt summat **Koko**-dimension avulla. Kukin ennalta määritetty summa on variantti. Lisätietoja on kohdassa [Tuotedimensiot](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
-- Jos asiakkaiden on pystyttävä määrittämään lahjakortille mukautettu summa, määritä ensin muuttuja, joka sallii mukautetun summan. Avaa seuraavaksi tuote **Luokan julkaistut tuotteet** -sivulla ja määritä sitten **Commerce**-pikavälilehdellä **Syötä hinta** -kentän arvoksi **Uusi hinta on näppäiltävä** seuraavan kuvan mukaisesti. Tällä asetuksella varmistetaan, että asiakkaat voivat syöttää hinnan, kun he selaavat tuotetta PDP-sivulla.
+- Jos lahjakortin on tuettava useita ennalta määritettyjä summia (esimerkiksi 25 $, 50 $, ja 100 $), määritä ennalta määritetyt summat **Koko**-dimension avulla. Kukin ennalta määritetty summa on tuotevariantti. Lisätietoja on kohdassa [Tuotedimensiot](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
+- Jos asiakkaiden on pystyttävä määrittämään lahjakortille mukautettu summa esimääritettyjen summien lisäksi, määritä ensin muuttuja, joka sallii mukautetun summan. **Koko**-määrite tukee mukautettuja summamuuttujia. Avaa seuraavaksi tuote **Luokan julkaistut tuotteet** -sivulla ja määritä sitten **Commerce**-pikavälilehdellä **Syötä hinta** -kentän arvoksi **Uusi hinta on näppäiltävä** seuraavan esimerkkikuvan mukaisesti. Tällä asetuksella varmistetaan, että asiakkaat voivat syöttää hinnan, kun he selaavat tuotetta PDP-sivulla.
 
     ![Syötä hinta -kenttä Commerce headquarters -sovelluksessa.](./media/KeyInPrice.png)
+    
+    Seuraavassa esimerkissä havainnollistaa Commerce Headquartersin digitaalisten lahjakorttien tuotevarianttiluetteloa, johon kuuluu kaksi mukautettua hintavarianttia.
+    ![Digitaalisten lahjakorttien tuotevariantit ja mukautettu hintavariantti – esimerkki](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - Digitaalisten lahjakorttien toimitustavaksi on määritettävä **Sähköinen**. Valitse **Toimitustavat**-sivulla (**Retail ja Commerce \> Kanavan asetukset \> Toimitustavat**) **Sähköinen**-toimitustapa luetteloruudussa ja lisää digitaalinen lahjakorttituote ruudukkoon **Tuotteet**-pikavälilehdessä seuraavan kuvan mukaisesti. Lisätietoja on kohdassa [Toimitustapojen määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitaaliset lahjakorttituotteet Commerce headquarters -sovelluksen Toimitustapa-sivulla.](./media/ElectronicMode.PNG)
-
+    
 - Varmista, että Commerce Headquarters -sovelluksen verkkosäilöön on luotu ja liitetty online-toimintoprofiili. Määritä toimintoprofiilissa **Koostetuotteet**-asetuksen arvoksi **Kyllä**. Tällä asetuksella varmistetaan, että kaikki nimikkeet lahjakortteja lukuun ottamatta yhdistetään. Lisätietoja on kohdassa [Online-toimintoprofiilin luominen](online-functionality-profile.md).
 - Voit varmistaa, että asiakkaat saavat sähköpostiviestin lahjakortin laskutuksen jälkeen, luomalla **Sähköposti-ilmoituksen profiili** -sivulle uuden sähköposti-ilmoitustyypin ja valitsemalla **Sähköposti-ilmoitustyyppi**-kentän arvoksi **Myönnä lahjakortti**. Lisätietoja on ohjeaiheessa [Sähköposti-ilmoitusprofiilin määrittäminen](email-notification-profiles.md).
 

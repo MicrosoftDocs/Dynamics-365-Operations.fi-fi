@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a905d752af2cf8397acb4927aa99edb4c23bfa6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688117"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809610"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources -infrastruktuurin yhdistämisen usein kysytyt kysymykset
 
@@ -131,6 +131,9 @@ Se riippuu integroinnin päätepisteestä. Lisätietoja taloushallinnon ja toimi
 Jos Dynamics 365 Human Resources ja taloushallinnon ja toimintojen ympäristöt, jotka liitetään uuden infrastruktuurin ympäristöön yhdistyvät samaan Dataverse-ympäristöön, nämä kaksi sovellusta yhdistyvät jatkossakin samaan Dataverse-ympäristöön siirron jälkeen. Dataverse-laajennuksia varten ei tarvita siirtoa.
 
 Jos kuitenkin Dynamics 365 Human Resources ja taloushallinnon ja toimintojen ympäristöt yhdistyvät tällä hetkellä eri Dataverse-ympäristöihin, nämä kaksi Dataverse-ympäristöä on yhdistettävä, jotta ne yhdistyvät yhteen ympäristöön uudessa infrastruktuurissa. Tätä Dataverse-siirtoa varten Dataverse-henkilöstöresurssiratkaisuissa vakiona olevat taulut voidaan yhdistää ja synkronoida uudelleen uuden Dataverse-ympäristön kanssa. Dataverse-ympäristön laajennuksia ei siirretä automaattisesti, vaan ne on otettava uudelleen käyttöön uudessa ympäristössä. Suosittelemme, että käytät hallittuja ratkaisuja Dataverse-laajennusten hallintaan. Lisätietoja on kohdassa [Johdanto ratkaisuihin](/powerapps/developer/data-platform/introduction-solutions).
+
+### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Käytössä ovat Dynamics 365 Human Resourcesin mukautetut kenttätoiminnot, siirtyvätkö nämä mukautetut kentät automaattisesti?
+Kyllä, lisätyt mukautetut kentät siirtyvät uuteen infrastruktuuriin.
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Olemme määrittäneet Microsoft Power Automate -työnkulkuja ja/tai Microsoft Power Appsin työskentelemään Dynamics 365 Human Resources -järjestelmän kanssa. Siirretäänkö nämä Microsoft Power Platform -komponentit ja toimivatko ne automaattisesti infrastruktuurin muutoksen valmistuttua?
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5c2eb6c8e18770eb149c445f662ab7a90aad81a7
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 73dbc2242639a54d687506e7c325fec4b9a95d12
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660452"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770151"
 ---
 # <a name="revenue-split-templates-in-subscription-billing"></a>Tilauslaskutuksen tuoton jakomallit
 
@@ -99,3 +99,54 @@ Toimi seuraavasti, kun haluat luoda laskutusaikataulun, jolla on tuottojen jakoa
 > - Alinimikkeet lisätään automaattisesti myyntitilauksen tai laskutusaikataulun riville.
 >
 > Jos **Luo tuoton jako automaattisesti** -asetuksena on **Ei**, toimintatapa on kuvattu aiemmin.
+
+## <a name="additional-revenue-split-information"></a>Tuoton jaon lisätiedot
+
+Kun lisäät nimikkeen, joka on osa tuoton jakoa, ota huomioon seuraavat tiedot: 
+
+- Päätason summa ei voi olla lykätty.
+- Alanimikkeiden aloituspäivä-, päättymispäivä-, määrä-, yksikkö-, toimipaikka- ja varastoarvot perustuvat päänimikkeeseen. Näitä alanimikkeiden arvoja ei voi muuttaa. Kaikki muutokset on tehtävä päänimikkeeseen. 
+- Hinnoittelumenetelmä on **Kiinteä**, ja sitä ei voi muuttaa.
+- Alanimikkeitä voi lisätä tai poistaa.
+- Pää- ja alanimikkeissä on käytettävä samaa nimikeryhmää. 
+- Alanimikkeillä voi olla jokin seuraavista asetuksista:
+
+    - Kentät **Laskutustiheys** ja **Laskutusvälit** on määritetty samaan arvoon kuin päänimike. 
+    - Kenttä **Laskutustiheys** on märitetty arvoon **Kerran**. Tässä tapauksessa **Laskutusvälit**-kenttä on määritetty automaattisesti arvoon **1**. 
+
+- Alanimikkeiden nettosummien summa on yhtä suuri kuin päätason summa. Kohdistusmenetelmä on **Nollasumma**, sekä alanimikemäärien summa että päätason summa on 0 (nolla). 
+
+    > [!NOTE]
+    > Jos kohdistusmenetelmä on **Ylätason nollasumma**, alanimikkeiden summa (joka ei ole nolla) ei ole sama kuin päätason summa, joka on 0 (nolla). Tätä kohdistusmenetelmää käytetään sisäisissä tarkoituksissa, jotta työntekijät näkevät alanimikkeet. Asiakkaat näkevät kuitenkin vain päänimikkeen.
+
+- Jos myyntitilauksen usean elementin järjestelyn tyyppi on **Yksittäinen**, vastaava usean elementin tuoton kohdistuksen tapahtumarivi luodaan, kun pää- ja alanimikkeet lisätään. 
+- Jos tuoton jaon kohdistusmenetelmä on **Samat summat** ja päätason määrä on muutettu, kaikkien alarivien määrät lasketaan uudelleen. 
+- Jos tuoton jaon kohdistusmenetelmä on **Muuttuva summa**, tapahtuu seuraavaa:
+
+    - Päänimikkeen nettosumma tulee näkyviin **Päätason summa** -sarakkeeseen. Arvoa voi muokata. Yksikköhinta, nettosumma ja alennus ovat kuitenkin 0 (nolla), eikä niitä voi muokata.
+    - Alanimikkeiden yksikköhinta on 0 (nolla). Voit muokata yksikköhintaa tai nettosummaa. Kun muokkaat yhtä arvoa, toinen arvo päivittyy automaattisesti.
+
+- Jos tuoton jaon kohdistusmenetelmä on **Prosentti**, tapahtuu seuraavaa:
+
+    - Päänimikkeen nettosumma tulee näkyviin **Päätason summa** -sarakkeeseen. Arvoa voi muokata. Yksikköhinta, nettosumma ja alennus ovat kuitenkin 0 (nolla), eikä niitä voi muokata. 
+    - Alanimikkeiden nettosumma lasketaan: *Prosentti* &times; *Päätason summa*.
+
+- Jos tuoton jaon kohdistusmenetelmä on **Sama summa**, tapahtuu seuraavaa:
+
+    - Päänimikkeen nettosumma tulee näkyviin **Päätason summa** -sarakkeeseen. Arvoa voi muokata. Yksikköhinta, nettosumma ja alennus ovat kuitenkin 0 (nolla), eikä niitä voi muokata. 
+    - Alanimikkeiden nettosumma lasketaan jakamalla pääsumma tasaisesti kaikkien alanimikkeiden kesken. 
+    - Jos alanimikkeitä poistetaan tai lisätään, nettosumma ja yksikköhinnat lasketaan uudelleen niin, että kaikkien alarivien summat ovat samat. 
+    - Jos pääsummaa ei voi jakaa tasan, viimeisen alanimikkeen nettosumma ja yksikköhinta saattavat olla hieman pienemmät kuin muiden alanimikkeiden nettosumma ja yksikköhinta. 
+
+- Jos tuoton jaon kohdistusmenetelmä on **Nollasumma**, tapahtuu seuraavaa:
+
+    - Yksikköhintaa, nettosummaa ja alennusta voi muokata. Päätason summa on 0 (nolla), eikä sitä voi muokata. 
+    - Alanimikkeiden määrä-, yksikkö-, toimipaikka- ja varastoarvot perustuvat päänimikkeeseen. Näitä alanimikkeiden arvoja ei voi muuttaa. Kaikki muutokset on tehtävä päänimikkeeseen. 
+    - Alanimikkeiden yksikköhinta ja nettohinta ovat 0 (nolla), eikä niitä voi muokata. 
+
+- Jos tuoton jaon kohdistusmenetelmä on **Ylätason nollasumma**, tapahtuu seuraavaa:
+
+    - Päänimikkeen yksikköhinta, päätason määrä ja nettosumma ovat 0 (nolla).
+    - Laskutusaikataulussa alarivit näkyvät manuaalisesti lisättyinä, ja kaikki arvot päivitetään valitun laskutusaikatauluryhmän perusteella. Näitä arvoja voi muokata. Alanimikkeiden osalta voit käyttää vaihtoehtoja **Eskalointi ja alennus** ja **Hinnoittelun lisäasetukset** käyttämällä kenttiä **Määritetty määrä**, **Yksikköhinta**, **Alennus** ja **Nettosumma** kohdassa **Näytä laskutustiedot**. 
+    - Myyntitilauksessa alarivien alennus ja alennusprosentti ovat 0 (nolla). 
+    - Pää- ja alanimikkeiden laskutustiheys voidaan muuttaa, ja jokaisella rivillä voi olla eri tiheys. Päänimike päivitetään kuitenkin automaattisesti niin, että se käyttää alariviensä lyhyintä tiheyttä. Tuoton jaolla on esimerkiksi kaksi alanimikettä, joista yksi käyttää **Kuukausittain**-laskutustiheyttä ja toinen **Vuosittain**-laskutustiheyttä. Tässä tapauksessa päänimikkeen laskutustiheydeksi päivitetään **Kuukausittain**.

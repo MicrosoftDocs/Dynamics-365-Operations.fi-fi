@@ -2,7 +2,7 @@
 title: Mobiilisovelluksen aloitussivu
 description: Tässä ohjeaiheessa käsitellään Finance and Operations (Dynamics 365) -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729705"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811170"
 ---
 # <a name="mobile-app-home-page"></a>Mobiilisovelluksen aloitussivu
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Tässä ohjeaiheessa käsitellään **Finance and Operations (Dynamics 365)** -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 
@@ -76,7 +77,7 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <tr class="odd">
 <td>1</td>
 <td>Järjestelmänvalvoja</td>
-<td>Ota Finance and Operations -sovellus käyttöön organisaatiossasi.</td>
+<td>Ota talous- ja toimintosovellus käyttöön organisaatiossasi.</td>
 <td><ul><li>Jos et ole vielä ottanut&#39; Microsoft Dynamics 365 -versiota käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>.</li><li>Jos haluat tutustua käytettävissä oleviin mobiilityötilaluetteloihin, lisätietoja on ohjeaiheessa <a href="mobile-workspaces-released.md">Äskettäin vapautetut mobiilityötilat</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -131,8 +132,8 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <td>Käyttäjä</td>
 <td>Lataa ja asenna mobiilisovellus.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations -sovellus Androidille</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations -sovellus iOSille</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations -sovellus Android-laitteille</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations -sovellus iOS-laitteille</a><BR/>
 (Windows Phonea ei tueta)
 </td>
 </tr>
