@@ -1,6 +1,6 @@
 ---
 title: Tuottokirjaus myyntitilauksiin
-description: Tässä aiheessa kuvataan tuottojen myyntitilauksiin ja laskuihin kirjaamisen perustoiminto. Tuottokirjaus on käytettävissä myyntitilauksessa ja laskussa, joka luodaan myyntitilauksen perusteella.
+description: Tässä artikkelissa kuvataan tuottojen myyntitilauksiin ja laskuihin kirjaamisen perustoiminto. Tuottokirjaus on käytettävissä myyntitilauksessa ja laskussa, joka luodaan myyntitilauksen perusteella.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7aaa5e7c3b568400c72a1a84b5f29082579aeeae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725481"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899954"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Tuottokirjaus myyntitilauksiin
 
@@ -27,10 +27,10 @@ ms.locfileid: "8725481"
 > [!NOTE]
 > Tuoton kirjaustoimintoa ei voi ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
 
-Tässä aiheessa kuvataan tuottojen myyntitilauksiin ja laskuihin kirjaamisen perustoiminto. Tuottokirjaus on käytettävissä myyntitilauksessa ja laskussa, joka luodaan myyntitilauksen perusteella. Myyntitilaus voidaan luoda myös aika- ja materiaaliprojektilla.
+Tässä artikkelissa kuvataan tuottojen myyntitilauksiin ja laskuihin kirjaamisen perustoiminto. Tuottokirjaus on käytettävissä myyntitilauksessa ja laskussa, joka luodaan myyntitilauksen perusteella. Myyntitilaus voidaan luoda myös aika- ja materiaaliprojektin kautta.
 
 > [!NOTE]
-> Tämän ohjeaiheen kuvissa, sarakkeita on piilotettu tai lisätty ruudukoihin, jotta konseptit näkyvät selkeämmin. Siten kuvien sivut ja tiedot voivat poiketa siitä, mitä tuotteessa näkyy.
+> Tämän artikkelin kuvissa sarakkeita on piilotettu tai lisätty ruudukoihin, jotta käsitteet näkyvät selkeämmin. Siten kuvien sivut ja tiedot voivat poiketa siitä, mitä tuotteessa näkyy.
 
 ## <a name="enter-a-sales-order"></a>Myyntitilauksen syöttäminen
 

@@ -1,6 +1,6 @@
 ---
 title: Jaettu tilausten hallinta (DOM)
-description: Tässä aiheessa käsitellään Dynamics 365 Commercen jaetun tilausten hallinnan (DOM) toimintoja.
+description: Tässä artikkelissa käsitellään Dynamics 365 Commercen jaetun tilausten hallinnan (DOM) toimintoja.
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
-ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
+ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878509"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (DOM)
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 Commercen jaetun tilausten hallinnan (DOM) toimintoja.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercen jaetun tilausten hallinnan (DOM) toimintoja.
 
 Jaettu tilausten hallinta on monikanavainen tilausten täyttämisen optimointiratkaisu, joka auttaa maksimoimaan tilausten täyttämisen toimitusketjuverkostossa. Jaettu tilausten hallinta auttaa varmistamaan, että asiakkaille toimitetaan oikea määrä tuotteita oikeista lähteistä oikea-aikaisesti. Jaettu tilausten hallinta auttaa myös maksimoimaan voitot ja minimoimaan kustannukset, minkä lisäksi se auttaa vastaamaan palvelutasovaatimuksiin.
 

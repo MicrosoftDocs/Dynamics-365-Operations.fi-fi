@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Managementin aloitussivu
-description: Tällä sivulla on luettelo Supply Chain Managementin toimintoja koskevista ohjeaiheista ja muista resursseista.
+description: Tällä sivulla on luettelo Supply Chain Managementin toimintoja koskevista artikkeleista ja muista resursseista.
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789209"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879073"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Managementin aloitussivu
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on luettelo Dynamics 365 Supply Chain Managementin ohjeaiheista ja muista resursseista.
+Tässä artikkelissa on luettelo Dynamics 365 Supply Chain Managementin artikkeleista ja muista resursseista.
 
 ## <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Dynamics 365 Tiekartta -sivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
+[Dynamics 365:n julkaisusuunnitelman sivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ## <a name="core-concepts-and-tasks"></a>Keskeiset käsitteet ja tehtävät
 
@@ -93,7 +93,7 @@ Seuraavat Tech Conference -tallenteet käsittelevät toimitusketjun hallinnan to
 
 ## <a name="blogs"></a>Blogit
 
-[Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa](/archive/blogs/axmfg/) ja [Dynamics AX:n Supply Chain Managementin tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/dynamicsaxscm/) on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita. Useimmat kirjoitukset koskevat aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.
+[Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa](/archive/blogs/axmfg/) ja [Dynamics AX:n Supply Chain Managementin tutkimus- ja kehitysryhmän blogissa](https://blogs.msdn.microsoft.com/dynamicsaxscm/) on useita valmistusta ja toimitusketjun hallintaa käsitteleviä artikkeleita. Useimmat kirjoitukset koskevat aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.
 
 ## <a name="white-papers"></a>Tulostettavat ohjeet
 

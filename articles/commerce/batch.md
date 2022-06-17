@@ -1,6 +1,6 @@
 ---
 title: Eräseurannassa olevien nimikkeiden parannettu käsitteleminen
-description: Tässä aiheessa kuvataan laskelman kirjausprosessin aikana Microsoft Dynamics 365 Commercessa tehtävän eräseurannassa olevien nimikkeiden käsittelyn parannuksia.
+description: Tässä artikkelissa kuvataan laskelman kirjausprosessin aikana Microsoft Dynamics 365 Commercessa tehtävän eräseurannassa olevien nimikkeiden käsittelyn parannuksia.
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 736ab8dd21f04d7119cca6d53bfeb5e408b8cbd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485780"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881875"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Eräseurannassa olevien nimikkeiden parannettu käsitteleminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan laskelman kirjausprosessin aikana Microsoft Dynamics 365 Commercessa tehtävän eräseurannassa olevien nimikkeiden käsittelyn parannuksia.
+Tässä artikkelissa kuvataan laskelman kirjausprosessin aikana Microsoft Dynamics 365 Commercessa tehtävän eräseurannassa olevien nimikkeiden käsittelyn parannuksia.
 
 Dynamics 365 Commerce -myyntipisteessä eränumeroita ei voi tallentaa eräseurannassa oleville nimikkeille myynnin aikana. Kun myynti kirjataan Commerce-pääkonttorisovelluksessa asiakastilausten tai laskelman kirjauksen avulla, Commerce kuitenkin odottaa, että tietyissä määrityksissä on sallitut eränumerot eräseurannassa oleville nimikkeille ja että niitä käytetään laskutusprosessin aikana.
 

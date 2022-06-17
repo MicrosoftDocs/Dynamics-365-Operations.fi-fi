@@ -1,6 +1,6 @@
 ---
 title: Tuottokirjauksen uudelleenkohdistus – skenaario 2
-description: Tässä ohjeaiheessa käydään läpi uudelleenkohdistusskenaario, jossa syötetään kaksi myyntitilausta ja sitten asiakas lisää nimikkeen sopimukseen ensimmäisen myyntitilauksen laskuttamisen jälkeen. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen.
+description: Tässä artikkelissa käydään läpi uudelleenkohdistusskenaario, jossa syötetään kaksi myyntitilausta ja sitten asiakas lisää nimikkeen sopimukseen ensimmäisen myyntitilauksen laskuttamisen jälkeen. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4026b8c69e51cb33c64bcf71a62a13b28b86bd49
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: dec8dba9848b77e5c0a1007102789c8f88185fbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726151"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904841"
 ---
 # <a name="revenue-recognition-reallocation--scenario-2"></a>Tuottokirjauksen uudelleenkohdistus – skenaario 2
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käydään läpi uudelleenkohdistusskenaario, jossa syötetään kaksi myyntitilausta ja sitten asiakas lisää nimikkeen sopimukseen ensimmäisen myyntitilauksen laskuttamisen jälkeen. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen.
+Tässä artikkelissa käydään läpi uudelleenkohdistusskenaario, jossa syötetään kaksi myyntitilausta ja sitten asiakas lisää nimikkeen sopimukseen ensimmäisen myyntitilauksen laskuttamisen jälkeen. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen.
 
 Tätä skenaariota varten **Kirjaa laskun korjaukset myyntireskontraan** ‑asetukseksi on määritetty **Ei** **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Asetukset \> Kirjanpitoparametrit**).
 

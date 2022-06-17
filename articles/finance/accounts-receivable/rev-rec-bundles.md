@@ -1,6 +1,6 @@
 ---
 title: Tuottokirjauksen myyntirakenteet
-description: Tässä ohjeaiheessa kuvataan myyntireskontran tuottokirjausominaisuuteen sisältyviä myyntirakennetoimintoja. Myyntirakenne koostuu päänimikkeestä ja useasta komponenttinimikkeestä.
+description: Tässä artikkelissa kuvataan myyntireskontran tuottokirjausominaisuuteen sisältyviä myyntirakennetoimintoja. Myyntirakenne koostuu päänimikkeestä ja useasta komponenttinimikkeestä.
 author: kweekley
 ms.date: 01/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 478fdfc69514fba829deb63b4e2904ff3fe1e199
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876293"
 ---
 # <a name="revenue-recognition-bundles"></a>Tuottokirjauksen myyntirakenteet
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan myyntireskontran tuottokirjausominaisuuteen sisältyviä myyntirakennetoimintoja. Myyntirakenne koostuu päänimikkeestä ja useasta komponenttinimikkeestä. Päänimike lisätään myyntitilaukseen, mikä tehostaa tilaustenkäsittelyä. Sen jälkeen se kuitenkin hajotetaan komponenttinimikkeiksi. Komponenttinimikkeet ovat lueteltuina sisäisissä asiakirjoissa, kuten pakkausluettelossa. Ulkoisissa asiakirjoissa näkyy kuitenkin vain päänimike.
+Tässä artikkelissa kuvataan myyntireskontran tuottokirjausominaisuuteen sisältyviä myyntirakennetoimintoja. Myyntirakenne koostuu päänimikkeestä ja useasta komponenttinimikkeestä. Päänimike lisätään myyntitilaukseen, mikä tehostaa tilaustenkäsittelyä. Sen jälkeen se kuitenkin hajotetaan komponenttinimikkeiksi. Komponenttinimikkeet ovat lueteltuina sisäisissä asiakirjoissa, kuten pakkausluettelossa. Ulkoisissa asiakirjoissa näkyy kuitenkin vain päänimike.
 
 > [!NOTE]
 > Microsoft Dynamics 365 Commerce -kanavat, kuten online-kanava, myyntipiste (POS) ja puhelinkeskukset, eivät tue tuottokirjausta (eivätkä sen myyntirakennetoimintoja). Tämä koskee myös Dynamics 365 Supply Chain Managementin ja Dynamics 365 Salesin Prospektista käteiseksi ‑ratkaisua. Nimikkeitä, jotka on määritetty käyttämään tuottokirjausta, ei tulisi lisätä tilauksiin tai tapahtumiin, jotka on luotu Commerce-kanavissa tai Prospektista käteiseksi ‑ratkaisussa.

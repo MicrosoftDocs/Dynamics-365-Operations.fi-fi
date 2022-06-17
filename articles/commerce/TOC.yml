@@ -58,6 +58,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Määritä palvelupäivitykset
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Ennen palvelua ja palvelun jälkeen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
                 - name: Keskeytä palvelupäivitykset
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Vastaanota ilmoituksia palvelupäivityksistä
@@ -254,7 +256,7 @@
                       href: CDX-package-sort.md
                 - name: Modern POS -arkkitehtuuri
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Commercen kaupallisen teknologiapinon (tekninen raportti) modernisointi
+                - name: Commercen kaupallisen teknologiapinon modernisointi (tekninen raportti)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Commercen käyttöönotto offline-tilassa ja vianmääritys
                   href: dev-itpro/implementation-considerations-offline.md
@@ -394,6 +396,8 @@
                   items:
                     - name: Store Commerce -sovellus
                       href: dev-itpro/store-commerce.md
+                    - name: Siirry Modern POS -sovelluksesta Store Commerceen
+                      href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Laitehallinnan käyttöönotto-ohje
                       href: implementation-considerations-devices.md
                     - name: Valitse Store Commerce tai Cloud POS
@@ -2222,9 +2226,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                     - name: Sähköisen raportoinnin kokoonpanojen suorituskykyongelmien vianmääritys
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Suorituksen aikana noudettavien taulun kenttien määrän vähentäminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
                 - name: Liiketoiminta-asiakirjojen hallinta (BDM)
                   items:
-                    - name: 'BDM:n yleiskatsaus'
+                    - name: BDM – yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
                     - name: 'BDM:n uusi asiakirjojen käyttöliittymä'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/commerce/toc.json
@@ -2476,7 +2482,9 @@
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: 'Vanhan Retail SDK:n siirto'
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
-                    - name: Commercen kaupallisen teknologiapinon (tekninen raportti) modernisointi
+                    - name: 'Vanhentuneet ja poistetut ohjelmointirajapinnat, luokat ja menetelmät'
+                      href: dev-itpro/obsolete-apis-classes-methods.md
+                    - name: Commercen kaupallisen teknologiapinon modernisointi (tekninen raportti)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Ympäristön määritys
                   items:
@@ -2560,6 +2568,8 @@
                   items:
                     - name: Cloud Scale Unit -laajennuspaketin luominen
                       href: dev-itpro/CSU-packaging.md
+                    - name: Cloud Scale Unit- laajennuspakettien yhdistäminen käyttöönottoa varten
+                      href: dev-itpro/merge-csu-extensions.md
                     - name: Cloud Scale Unit -laajennusten poistaminen
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2908,6 +2918,14 @@
                       href: dev-itpro/create-retail-experience-app.md
         - name: Vianmääritys
           items:
+            - name: Store Commerce
+              items:
+                - name: Määritys- ja asennusongelmat
+                  href: troubleshoot/store-commerce-setup-installation.md
+                - name: Suorituskykyyn liittyvät ongelmat
+                  href: troubleshoot/store-commerce-performance.md
+                - name: Laajennuksiin liittyvät ongelmat
+                  href: troubleshoot/store-commerce-extensions.md
             - name: Tilauksen käsittely
               items:
                 - name: Maksutyypin on oltava luottokortti -virhe

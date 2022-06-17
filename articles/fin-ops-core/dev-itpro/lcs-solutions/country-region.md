@@ -1,6 +1,6 @@
 ---
 title: Maailmanlaajuisen käytön resurssit
-description: Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista ja tuotteista.
+description: Tässä artikkelissa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista ja tuotteista.
 author: kfend
 ms.date: 02/19/2021
 ms.topic: index-page
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747512"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866534"
 ---
 # <a name="globalization-resources"></a>Maailmanlaajuisen käytön resurssit
 
 ## <a name="local-and-regional-deployments"></a>Paikalliset ja alueelliset käyttöönotot
 Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yrityksellesi tärkeitä tietoja:
 
-[Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa](../deployment/china-local-deployment.md)
+[21Vianetin ylläpitämät talous- ja toimintosovellukset Kiinassa](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations -sovelluksissa on toimintoja, jotka ovat käytössä [tuotteen saatavuusoppaassa](https://aka.ms/dynamics_365_international_availability_deck) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
+Talous- ja toimintosovelluksissa on toimintoja, jotka ovat käytössä [tuotteen lokalisoinnin ja käännösten saatavuusoppaassa](https://aka.ms/dynamics_365_international_availability_deck) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
 
-Tämä ohjeen aihe sisältää luettelon resursseista, joiden avulla voit tehdä seuraavaa: 
+Tämä artikkelin aihe sisältää luettelon resursseista, joiden avulla voit tehdä seuraavaa: 
 - saada lisätietoja kehitysmaiden maa-/aluekohtaisista ratkaisuista
 - hakea maa-/aluekohtaisia päivityksiä
 - saada ja tarkastella lakisääteisiä ilmoituksia
@@ -60,10 +60,10 @@ Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista omi
 -   [Hälytyksien lähettäminen maa- tai aluekohtaisista säädöstenmukaisista ominaisuuksista](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365:n julkaisusuunnitelmat
-[Dynamics 365:n julkaisusuunnitelmissa](/business-applications-release-notes/) kuvataan Dynamics 365 -yrityssovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
+[Dynamics 365:n julkaisusuunnitelmissa](/business-applications-release-notes/) kuvataan Dynamics 365 -liiketoimintasovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations -sovellusten uudet ominaisuudet
-[Finance and Operationsin uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on luettelo ominaisuuksista, jotka sisältyvät tiettyihin Finance and Operations -sovellusten versioihin.
+[Finance and Operationsin uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on lueteltu ominaisuudet, jotka sisältyvät tiettyihin Finance and Operations -sovellusten versioihin.
 
 ### <a name="electronic-reporting"></a>Sähköinen raportointi
 Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisen raportoinnin ansiosta näitä muotoja voi hallita koko niiden elinkaaren ajan. Lisätietoja on seuraavissa aiheissa:

@@ -1,6 +1,6 @@
 ---
 title: Tuottokirjauksen uudelleenkohdistus – skenaario 3
-description: Tässä ohjeaiheessa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luotuun, laskutettuun myyntitilaukseen lisätään uusi rivi. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen.
+description: Tässä artikkelissa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luotuun, laskutettuun myyntitilaukseen lisätään uusi rivi. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b3b41b09cc9f4c56fdb04f6a2c4156bc1637699
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904813"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>Tuottokirjauksen uudelleenkohdistus – skenaario 3
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luotuun, laskutettuun myyntitilaukseen lisätään uusi rivi. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen. Tämä skenaario osoittaa myös, mitä tapahtuu, kun myyntireskontra päivitetään uudelleenkohdistusten vuoksi.
+Tässä artikkelissa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luotuun, laskutettuun myyntitilaukseen lisätään uusi rivi. Kun uusi nimike lisätään sopimukseen, sen voi lisätä uuteen myyntitilaukseen tai aiemmin luotuun myyntitilaukseen. Tämä skenaario osoittaa myös, mitä tapahtuu, kun myyntireskontra päivitetään uudelleenkohdistusten vuoksi.
 
 Tätä skenaariota varten **Kirjaa laskun korjaukset myyntireskontraan** ‑asetukseksi on määritetty **Kyllä** **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Asetukset \> Kirjanpitoparametrit**).
 

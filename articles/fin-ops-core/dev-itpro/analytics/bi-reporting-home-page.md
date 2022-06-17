@@ -1,6 +1,6 @@
 ---
 title: Raportointi ja analysointi Power BI -aloitussivulla
-description: Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja käytettävissä olevista yritystieto- ja raportointityökaluista.
+description: Tässä artikkelissa viitataan resursseihin, joissa on lisätietoja käytettävissä olevista liiketoimintatiedon hallinnan ja raportoinnin työkaluista.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: index-page
@@ -16,23 +16,23 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1c0ee254a5300cfc84eb434e4785b6eceacf0375b983b33991445443957a33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906630"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Raportointi ja analysointi Power BI -aloitussivulla
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja käytettävissä olevista yritystieto (BI)- ja raportointityökaluista.
+Tässä artikkelissa viitataan resursseihin, joissa on lisätietoja käytettävissä olevista liiketoimintatiedon hallinnan (BI) ja raportoinnin työkaluista.
 
 ## <a name="get-started"></a>Aloittaminen
 - [Tietojen käyttö ja raportointi](information-access-reporting.md)
 - [Teknisiä tietoja: Raportointivaihtoehdot](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Power BI:n analysointi- ja raportointipalveluiden blogi](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogi)
+- [Finance and Operations: Power BI Analysointi- ja raportointipalveluiden blogi](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogi)
 
 ## <a name="analytical-workspaces"></a>Analyysityötilat
 Työtiloissa voidaan käyttää monipuolisesti Microsoft Power BI:n tukemia infograafeja ja visuaalisia elementtejä. Näissä infograafeissa ja visuaalisissa elementeissä käytetään monenlaisia kolmansien osapuolien toimittamia ohjausobjekteja. Työtiloista voikin tämän vuoksi muodostaa käyttäjille erittäin visuaalisen ja vuorovaikutteisen kokemuksen.

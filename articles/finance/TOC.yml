@@ -60,6 +60,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Määritä palvelupäivitykset
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                - name: Ennen palvelua ja palvelun jälkeen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
                 - name: Keskeytä palvelupäivitykset
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Vastaanota ilmoituksia palvelupäivityksistä
@@ -1684,6 +1686,8 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Arvonlisäveron laskenta ja pyöristys
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Toimittajan laskun arvonlisäveron laskeminen ja täsmäytys
@@ -2164,10 +2168,12 @@
                   href: localizations/estonia.md
                 - name: Henkilökohtaisten tietojen pyynnöt
                   href: localizations/emea-est-personal-info.md
-                - name: ALV-laskelma
+                - name: ALV-ilmoitus
                   href: localizations/emea-est-vat-statement-details.md
                 - name: Viron Intrastat
                   href: localizations/emea-est-intrastat.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-est-eu-sales-list.md
             - name: Eurooppa
               items:
                 - name: Eurooppa – yleiskatsaus
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: Unkarin arvonlisäveroraportit
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: Unkarin Intrastat
+                  href: localizations/emea-hun-intrastat.md
                 - name: Lykätyn arvonlisäveron laskelmat
                   href: localizations/emea-hun-deferred-vat.md
             - name: Islanti
@@ -3108,10 +3116,12 @@
                   href: localizations/emea-invoices-packing-slips-numbering.md
                 - name: Luonnonvarojen verotusraportti
                   href: localizations/emea-lva-tax-natural-resources.md
-                - name: ALV-laskelman tiedot
+                - name: ALV-ilmoituksen tiedot
                   href: localizations/emea-lva-vat-statement-details.md
-                - name: Latvian intrastat
+                - name: Latvian Intrastat
                   href: localizations/emea-lva-intrastat.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: Liettua
               items:
                 - name: Liettua – yleiskatsaus
@@ -3120,7 +3130,7 @@
                   href: localizations/emea-ltu-fixed-asset-repair-statement.md
                 - name: Käyttöomaisuuden varastojen välisen siirron asiakirjan luominen
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: ALV-laskelman tiedot
+                - name: ALV-ilmoituksen tiedot
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: Liettuan Intrastat
                   href: localizations/emea-ltu-intrastat.md
@@ -3130,6 +3140,8 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: Siirtoasiakirjojen määrittäminen tavaroiden siirrolle yrityksen sisällä
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: Malesia
               items:
                 - name: Malesia – yleiskatsaus
@@ -3228,7 +3240,7 @@
                   href: localizations/tasks/no-00002-customer-payment-based-payment-id.md
                 - name: Nets-tuontimuoto
                   href: localizations/emea-nor-nets-import-format.md
-                - name: ALV-laskelma
+                - name: ALV-ilmoitus
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: ALV-palautus ja suora Altinnille lähetys
                   items:
@@ -4483,9 +4495,11 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Sähköisen raportoinnin kokoonpanojen suorituskykyongelmien vianmääritys
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: Suorituksen aikana noudettavien taulun kenttien määrän vähentäminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: Liiketoiminta-asiakirjojen hallinta (BDM)
                   items:
-                    - name: 'BDM:n yleiskatsaus'
+                    - name: BDM – yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
                     - name: 'BDM:n uusi asiakirjojen käyttöliittymä'
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json

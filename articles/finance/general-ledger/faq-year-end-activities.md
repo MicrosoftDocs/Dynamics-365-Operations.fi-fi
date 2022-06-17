@@ -1,6 +1,6 @@
 ---
 title: Tilinpäätöstehtävien usein kysytyt kysymykset
-description: Tässä ohjeaiheessa on lueteltu kysymyksiä, joita tilinpäätöksen yhteydessä voi ilmetä, sekä niiden vastaukset, joista voi olla apua tilinpäätöstehtävissä.
+description: Tässä artikkelissa on lueteltu kysymyksiä, joita tilinpäätöksen yhteydessä voi ilmetä, sekä niiden vastaukset, joista voi olla apua tilinpäätöstehtävissä.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865737"
 ---
 # <a name="year-end-activities-faq"></a>Tilinpäätöstehtävien usein kysytyt kysymykset 
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on lueteltu kysymyksiä, joita tilinpäätöksen yhteydessä voi ilmetä, sekä niiden vastaukset, joista voi olla apua tilinpäätöstehtävissä. Tämän ohjeaiheen tiedot koskevat ensisijaisesti kirjanpidon ja ostoreskontran tilinpäätöstehtäviä.
+Tässä artikkelissa on lueteltu kysymyksiä, joita tilinpäätöksen yhteydessä voi ilmetä, sekä niiden vastaukset, joista voi olla apua tilinpäätöstehtävissä. Tämän artikkelin tiedot koskevat ensisijaisesti kirjanpidon ja ostoreskontran tilinpäätöstehtäviä.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Kirjanpidon tilinpäätöksen parannukset 
 Version 10.0.20 myötä lisättiin tilinpäätöksen parannus, joka on käytössä oletusarvoisesti versiosta 10.0.25 alkaen. Jos organisaatiossa on käytössä aikaisempi versio kuin 10.0.25, suosittelemme ottamaan tämän ominaisuuden käyttöön ennen tilinpäätösprosessin aloittamista. Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat ominaisuuksien hallinnan työtilassa tarkistaa ominaisuuden tilan sekä ottaa sen käyttöön tarvittaessa. Työtilassa ominaisuus näkyy seuraavalla tavalla:
@@ -75,7 +75,7 @@ Tarpeettomat dimensioyhdistelmät vaikuttavat myös **BudgetDimensionFocusInitia
 [![Taloushallinnon dimensioyhdistelmät.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Tilinpäätösmallin määritykset
-Tilinpäätösmallin avulla organisaatio voi valita ylläpidettävän taloushallinnon dimension tason siirtäessään tulossaldoja jakamattomiin voittoihin. Asetusten avulla organisaatio voi ylläpitää yksityiskohtaisia taloushallinnon dimensioita (**Sulje kaikki**) siirtäessään saldoja jakamattomiin voittoihin tai tehdä summista yhteenvedon yksittäiseen dimensioarvoon (**Sulje yksittäinen**). Tämän voi määrittää kullekin taloushallinnon dimensiolle. Lisätietoja näistä asetuksista on ohjeaiheessa [Tilinpäätös](year-end-close.md).
+Tilinpäätösmallin avulla organisaatio voi valita ylläpidettävän taloushallinnon dimension tason siirtäessään tulossaldoja jakamattomiin voittoihin. Asetusten avulla organisaatio voi ylläpitää yksityiskohtaisia taloushallinnon dimensioita (**Sulje kaikki**) siirtäessään saldoja jakamattomiin voittoihin tai tehdä summista yhteenvedon yksittäiseen dimensioarvoon (**Sulje yksittäinen**). Tämän voi määrittää kullekin taloushallinnon dimensiolle. Lisätietoja näistä asetuksista on artikkelissa [Tilinpäätös](year-end-close.md).
 
 Suosittelemme arvioimaan organisaation tarpeet ja sulkemaan mahdollisimman monta dimensiota käyttämällä tilinpäätöksen **Sulje yksittäinen** ‑vaihtoehtoa suorituskyvyn parantamiseksi. Kun sulkeminen tapahtuu yksittäiseen dimensioarvoon (joka voi olla myös tyhjä arvo), järjestelmä laskee vähemmän yksityiskohtaisia tietoja määrittäessään jakamattomien voittojen tilivientien saldoja.
 

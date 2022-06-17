@@ -1,6 +1,6 @@
 ---
 title: Ostoreskontran aloitussivu
-description: Tässä aiheessa on yleiskuvaus ostoreskontrasta.
+description: Tässä artikkelissa on yleiskuvaus ostoreskontrasta.
 author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "21901"
 - intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5ed6aacb94de14bdb72185cd528f62e74cd3cc15
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595284"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946098"
 ---
 # <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on yleiskuvaus ostoreskontrasta. 
+Tässä artikkelissa on yleiskuvaus ostoreskontrasta. 
 
 Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla. Voit automatisoida tarkistusprosessin laskujen täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla niin, että tietyt ehdot täyttävät laskut hyväksytään automaattisesti. Jäljelle jäävät laskut merkitään valtuutetun käyttäjän tarkistettaviksi.
 
@@ -126,13 +126,13 @@ Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](/dynamics365/release-pla
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [taloushallinnon Microsoft Dynamics 365 Finance -blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) esitetään ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja Dynamics 365 -sovelluksen uutuuksista ja suosituista aiheista.
 
 #### <a name="community-blogs"></a>Yhteisöblogit
 
-[Ostovelkojen hallinta Dynamics 365 Finance -sovelluksessa](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[Ostovelkojen hallinta Dynamics 365 Financessa](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Tehtäväoppaat
 Sovelluksen tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.

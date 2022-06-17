@@ -1,6 +1,6 @@
 ---
 title: Alkusaldot puuttuvat tilinpäätöksestä
-description: Tässä ohjeaiheessa kerrotaan, miksi alkusaldot saattavat puuttua tilinpäätöksen yhteydessä, ja miten nämä puuttuvat saldot muodostetaan uudelleen.
+description: Tässä artikkelissa kerrotaan, miksi alkusaldot saattavat puuttua tilinpäätöksen yhteydessä, ja miten nämä puuttuvat saldot muodostetaan uudelleen.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727169"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894845"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Alkusaldot puuttuvat tilinpäätöksestä
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miksi alkusaldot saattavat puuttua tilinpäätöksen yhteydessä, ja miten nämä puuttuvat saldot muodostetaan uudelleen.
+Tässä artikkelissa kerrotaan, miksi alkusaldot saattavat puuttua tilinpäätöksen yhteydessä, ja miten nämä puuttuvat saldot muodostetaan uudelleen.
 
 ### <a name="symptom"></a>Oire
 
@@ -36,7 +36,7 @@ Tarkista alla olevat kohdat, jos kirjanpidon tilinpäätös on tehty ja tämän 
 
 Jos **Kumoa edellinen sulkeminen** ‑kentän arvoksi on valittu **Kyllä**, edellinen saman tilikauden tilinpäätös peruutetaan. Kun suoritetaan prosessi, joka peruuttaa tilinpäätöksen, kaikki loppusaldo- ja alkusaldomerkinnät poistetaan, ikään kuin tilinpäätöstä ei olisi missään vaiheessa suoritettu. Tositteet poistetaan myös. Tilinpäätösprosessia ei suoriteta uudelleen automaattisesti. Prosessi on aloitettava uudelleen siten, että **Kumoa edellinen sulkeminen** ‑asetuksen arvoksi päivitetään **Ei**.
 
-Tämä skenaario sisältyy aiheeseen, jossa käsitellään tilinpäätöstä koskevia usein kysyttyjä kysymyksiä. Lisätietoja on kohdassa [Vuoden lopun toimintoja koskevat usein kysytyt kysymykset](faq-year-end-activities.md).
+Tämä skenaario sisältyy artikkeliin, jossa käsitellään tilinpäätöstä koskevia usein kysyttyjä kysymyksiä. Lisätietoja on kohdassa [Tilinpäätöstehtävien usein kysytyt kysymykset](faq-year-end-activities.md).
 
 ### <a name="symptom"></a>Oire
 

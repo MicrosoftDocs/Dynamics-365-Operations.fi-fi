@@ -1,6 +1,6 @@
 ---
 title: Tuottokirjauksen uudelleenkohdistus – skenaario 4
-description: Tässä ohjeaiheessa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luodusta, osittain laskutetusta myyntitilauksesta poistetaan rivi. Tämä skenaario tuottaa saman tuloksen riippumatta siitä, poistetaanko rivi myyntitilauksesta vai määritetäänkö sen tilaksi Peruutettu.
+description: Tässä artikkelissa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luodusta, osittain laskutetusta myyntitilauksesta poistetaan rivi. Tämä skenaario tuottaa saman tuloksen riippumatta siitä, poistetaanko rivi myyntitilauksesta vai määritetäänkö sen tilaksi Peruutettu.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7d37877e914856baf5e5e38871f5b0b1c1eff526
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 06e6322ff55259b5c59d570b73199591ab46c767
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725732"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891663"
 ---
 # <a name="revenue-recognition-reallocation--scenario-4"></a>Tuottokirjauksen uudelleenkohdistus – skenaario 4
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luodusta, osittain laskutetusta myyntitilauksesta poistetaan rivi. Tämä skenaario tuottaa saman tuloksen riippumatta siitä, poistetaanko rivi myyntitilauksesta vai määritetäänkö sen tilaksi Peruutettu.
+Tässä artikkelissa käydään läpi uudelleenkohdistusskenaario, jossa aiemmin luodusta, osittain laskutetusta myyntitilauksesta poistetaan rivi. Tämä skenaario tuottaa saman tuloksen riippumatta siitä, poistetaanko rivi myyntitilauksesta vai määritetäänkö sen tilaksi Peruutettu.
 
 Tätä skenaariota varten **Kirjaa laskun korjaukset myyntireskontraan** ‑asetukseksi on määritetty **Ei** **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Asetukset \> Kirjanpitoparametrit**).
 

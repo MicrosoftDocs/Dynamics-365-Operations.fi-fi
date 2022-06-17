@@ -1,6 +1,6 @@
 ---
 title: Tuottokirjauksen uudelleenkohdistus
-description: Tässä ohjeaiheessa kerrotaan uudelleenkohdistuksesta, jonka avulla organisaatiot voivat laskea tuottohinnat uudelleen, kun sopimusmyynnin ehtoja muutetaan. Se sisältää linkkejä muihin aiheisiin, joissa kuvataan, miten tuotto kirjataan erilaisissa skenaarioissa.
+description: Tässä artikkelissa kerrotaan uudelleenkohdistuksesta, jonka avulla organisaatiot voivat laskea tuottohinnat uudelleen, kun sopimusmyynnin ehtoja muutetaan. Se sisältää linkkejä muihin aiheisiin, joissa kuvataan, miten tuotto kirjataan erilaisissa skenaarioissa.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7528202ed140dc2c0a7fc8c595178f155c3c1f75
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726124"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903417"
 ---
 # <a name="revenue-recognition-reallocation"></a>Tuottokirjauksen uudelleenkohdistus
 
@@ -58,7 +58,7 @@ Uudelleenkohdistusprosessiin vaikuttaa yksi parametri.
 
 Koska uudelleenkohdistus voidaan tehdä osittain tai kokonaan laskutetulle myyntitilaukselle, laskun aiemmat kirjanpitomerkinnät on korjattava käyttämällä uusia, uudelleenkohdistettuja tuottohintoja. Tämä korjaus tehdään peruuttamalla alkuperäisen laskun kirjanpitomerkintä ja kirjaamalla uusi kirjanpitomerkintä, joka perustuu uudelleenkohdistettuihin tuottohintoihin.
 
-Organisaation on päätettävä, päivittääkö korjaus vain kirjanpidon vai päivittääkö se myös myyntireskontran. Tehty päätös määrittää oikean **Kirjaa laskun korjaukset myyntireskontraan** ‑asetuksen **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Asetukset \> Kirjanpitoparametrit**). Sopiva asetus riippuu kyseessä olevasta skenaariosta. Saat lisätietoja mahdollisista skenaarioista jäljempänä tässä ohjeaiheessa olevan [Uudelleenkohdistusskenaariot](#scenarios-for-reallocation)-osan linkeistä.
+Organisaation on päätettävä, päivittääkö korjaus vain kirjanpidon vai päivittääkö se myös myyntireskontran. Tehty päätös määrittää oikean **Kirjaa laskun korjaukset myyntireskontraan** ‑asetuksen **Kirjanpitoparametrit**-sivun **Tuottokirjaus**-välilehdessä (**Tuottokirjaus \> Asetukset \> Kirjanpitoparametrit**). Sopiva asetus riippuu kyseessä olevasta skenaariosta. Saat lisätietoja mahdollisista skenaarioista jäljempänä tässä artikkelissa olevan [Uudelleenkohdistusskenaariot](#scenarios-for-reallocation)-osan linkeistä.
 
 [![Kirjanpitoparametrit-sivun Tuottokirjaus-välilehti.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -90,7 +90,7 @@ Voit käynnistää uudelleenkohdistusprosessin valitsemalla **Uudelleenkohdista 
 
 [![Uudelleenkohdista hinta uusilla tilausriveillä ‑sivu.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-**Uudelleenkohdista hinta uusilla tilausriveillä** ‑sivun ylemmän ruudukon nimi on **Myynti**. Siinä on lueteltu asiakkaan myyntitilaukset. Valitse myyntitilaukset, jotka on kohdistettava uudelleen. Jos myyntitilauksella on uudelleenkohdistustunnus, toinen käyttäjä on jo merkinnyt sen uudelleenkohdistettavaksi. Jos jotkin myyntitilaukset on uudelleenkohdistettu jo aiemmin ja sisällytettävä nyt toiseen uudelleenkohdistukseen, kyseisten myyntitilausten uudelleenkohdistus on ensin kumottava. Sen jälkeen ne voidaan sisällyttää uuteen uudelleenkohdistukseen. Lisätietoja on jäljempänä tässä ohjeaiheessa kohdissa [Uudelleenkohdistuksen kumoaminen](#undo-a-reallocation) ja [Uudelleenkohdistaminen useita kertoja](#reallocate-multiple-times).
+**Uudelleenkohdista hinta uusilla tilausriveillä** ‑sivun ylemmän ruudukon nimi on **Myynti**. Siinä on lueteltu asiakkaan myyntitilaukset. Valitse myyntitilaukset, jotka on kohdistettava uudelleen. Jos myyntitilauksella on uudelleenkohdistustunnus, toinen käyttäjä on jo merkinnyt sen uudelleenkohdistettavaksi. Jos jotkin myyntitilaukset on uudelleenkohdistettu jo aiemmin ja sisällytettävä nyt toiseen uudelleenkohdistukseen, kyseisten myyntitilausten uudelleenkohdistus on ensin kumottava. Sen jälkeen ne voidaan sisällyttää uuteen uudelleenkohdistukseen. Lisätietoja on jäljempänä tässä artikkelissa kohdissa [Uudelleenkohdistuksen kumoaminen](#undo-a-reallocation) ja [Uudelleenkohdistaminen useita kertoja](#reallocate-multiple-times).
 
 Sivun alemman ruudukon nimi on **Rivit**. Kun olet valinnut **Myynti**-ruudukosta yhden tai useamman myyntitilauksen, myyntitilausrivit näkyvät **Rivit**-ruudukossa. Valitse myyntitilausrivit, jotka on kohdistettava uudelleen. Jos olet valinnut vain yhden myyntitilauksen, saman myyntitilauksen rivit on kohdistettava uudelleen. Näin voi tapahtua, kun jokin myyntitilausriveistä on laskutettu aiemmin ja sitten on lisätty uusi rivi tai aiemmin luotu rivi on poistettu tai peruutettu. Jos rivi on poistettu, se ei näy ruudukossa. Näin ollen sitä ei voi valita. Se otetaan kuitenkin edelleen huomioon, kun uudelleenkohdistusprosessi suoritetaan.
 

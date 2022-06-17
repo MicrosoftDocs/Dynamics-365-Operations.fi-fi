@@ -410,6 +410,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Varastointisovelluksen määrittäminen paikallisille ympäristöille
                       href: deployment/warehousing-for-on-premise-deployments.md
+                    - name: OTA RSAT käyttöön Finance + Operations (on-premises) -ympäristöissä
+                      href: deployment/onprem-rsat-configuration.md
                     - name: Verkkotulostimien asentaminen paikallisiin ympäristöihin
                       href: analytics/install-network-printer-onprem.md
                     - name: Paikallisten ympäristöjen diagnostiikka
@@ -1048,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps -laajennuksen opetusohjelma (julkinen esiversio)
                   href: lifecycle-services/dts-ado-tutorial.md
-        - name: Microsoft Power Platform -integraatio
+                - name: Dynamics 365 Translation Service Visual Studio Code -laajennus (julkinen esiversio)
+                  href: lifecycle-services/dts-vscode-doc.md
+        - name: Microsoft Power Platform -integrointi
           items:
             - name: Yleiskatsaus
               href: power-platform/overview.md

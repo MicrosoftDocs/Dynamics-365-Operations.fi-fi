@@ -1,6 +1,6 @@
 ---
 title: Tuottokirjauksen määritys
-description: Tässä aiheessa kuvataan tuottokirjauksen määritysasetukset ja niiden vaikutukset.
+description: Tässä artikkelissa kuvataan tuottokirjauksen määritysasetukset ja niiden vaikutukset.
 author: kweekley
 ms.date: 04/28/2022
 ms.topic: index-page
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 86690af303eb87335c980bd7dae3ae34ce06a2a0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: ef294af8d3a8f39a80b98aeba293267dcca1f29b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900010"
 ---
 # <a name="revenue-recognition-setup"></a>Tuottokirjauksen määritys
 [!include [banner](../includes/banner.md)]
 
-Uusi **Tuottokirjauksen** moduuli on lisätty, Se sisältää valikkovaihtoehtoja kaikille tarvittaville määrityksille. Tässä aiheessa kuvataan määritysasetukset ja niiden vaikutukset.
+Uusi **Tuottokirjaus**-moduuli on lisätty. Se sisältää valikkovaihtoehtoja kaikille tarvittaville määrityksille. Tässä artikkelissa kuvataan määritysasetukset ja niiden vaikutukset.
 
 > [!NOTE]
-> Tuoton kirjaustoiminto on nyt oletusarvoisesti käytössä käyttöön ominaisuuksien hallinnan kautta. Jos organisaatiosi ei käytä tätä toimintoa, voit poistaa sen käytöstä **Omaisuuksien hallinta** -työtilassa.
+> Tuoton kirjaustoiminto on nyt oletusarvoisesti otettu käyttöön ominaisuuksien hallinnan kautta. Jos organisaatiosi ei käytä tätä toimintoa, voit poistaa sen käytöstä **Omaisuuksien hallinta** -työtilassa.
 >
 > Tuottokirjausten käyttämistä, myyntirakennetoiminnot mukaan lukien, ei tueta Commerce-kanavissa (verkkokauppa, myyntipiste ja puhelinkeskus). Tuottokirjaukseen määritettyjä nimikkeitä ei tulisi lisätä Commerce-kanavissa luotuihin tilauksiin tai tapahtumiin.
 

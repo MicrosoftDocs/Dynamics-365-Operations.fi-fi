@@ -1,6 +1,6 @@
 ---
 title: Kirjanpito- tai raportointivaluutan muuttaminen
-description: Tässä ohjeaiheessa kerrotaan, miten kirjanpito- tai raportointivaluutta vaihdetaan tai miten raportointivaluutta lisätään kirjanpidon asetuksiin.
+description: Tässä artikkelissa kerrotaan, miten kirjanpito- tai raportointivaluutta vaihdetaan tai miten raportointivaluutta lisätään kirjanpidon asetuksiin.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904611"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Kirjanpito- tai raportointivaluutan muuttaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten kirjanpito- tai raportointivaluutta vaihdetaan tai miten raportointivaluutta lisätään kirjanpidon asetuksiin.
+Tässä artikkelissa kerrotaan, miten kirjanpito- tai raportointivaluutta vaihdetaan tai miten raportointivaluutta lisätään kirjanpidon asetuksiin.
 
 ## <a name="symptom"></a>Oire
 
@@ -73,7 +73,7 @@ Näiden ohjeiden avulla voit kopioida asetukset ja päätiedot nykyisestä yrity
 10. Valitse **Valitut entiteetit** -alueessa **Lisää malli**.
 11. Valitse käytettävät mallit. Uudelle yritykselle ehdotettuja malleja ovat **025 - Kirjanpito** ja **Taloushallinto**. Myös muut käytettävissä olevat mallit kannattaa käydä läpi. Tämän jälkeen voit määrittää, vastaako jokin niistä vaatimuksiasi.
 12. Valitse **Kopioi yritykseen**, jotta voit aloittaa eräprosessin, luoda valitut yksiköt ja kopioida ne kohdeyritykseen.
-13. Kun prosessi on valmis, mutta tapahtumia ei ole vielä kirjattu, siirry kirjanpitoon ja päivitä kirjanpito- ja raportointivaluutat aiemmin tässä ohjeaiheessa kuvatulla tavalla.
+13. Kun prosessi on valmis, mutta tapahtumia ei ole vielä kirjattu, siirry kirjanpitoon ja päivitä kirjanpito- ja raportointivaluutat aiemmin tässä artikkelissa kuvatulla tavalla.
 
 Jos olet luonut uuden yrityksen niin, että muutat kirjanpito- tai raportointivaluuttaa, varmista, että alkusaldot on muutettu vanhan yrityksen valuutoista uuden yrityksen valuutoiksi.
 
