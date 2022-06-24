@@ -1,6 +1,6 @@
 ---
-title: Paikallisen käyttöönoton aloitussivu – yleiskatsaus
-description: Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön.
+title: Paikallisen käyttöönoton aloitussivu
+description: Tässä artikkelissa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön.
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867409"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Voit ottaa käyttöön Dynamics 365 Finance + Operations (on-premises) -ratkaisun. Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta. Tässä ohjeaiheessa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.
+Voit ottaa käyttöön Dynamics 365 Finance + Operations (on-premises) -ratkaisun. Kun valitset paikallisen käyttöönottotyypin, järjestelmävaatimukset, laitteiden koko ja toiminnot poikkeavat pilvikäyttöönotosta. Tässä artikkelissa on linkkejä sisältöön, jossa on paikallisia käyttöönottoja koskevia tietoja.
 
 ## <a name="get-started"></a>Aloittaminen
 - [Paikallinen käyttöönotto – yleiskatsaus](on-premises-overview.md)

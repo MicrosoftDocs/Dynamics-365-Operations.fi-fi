@@ -1,6 +1,6 @@
 ---
-title: Tilityksen yleiskatsaus
-description: Tässä aiheessa on yleisiä tietoja tilitysprosessista. Siinä kuvataan, mitkä tapahtumatyypit voidaan selvittää, sekä ajoitus ja prosessi niiden ratkaisemiseksi. Siinä kuvataan myös selvitysprosessin tulokset.
+title: Tilityksen yleiskuvaus
+description: Tässä artikkelissa on yleisiä tietoja tilitysprosessista. Siinä kuvataan, mitkä tapahtumatyypit voidaan selvittää, sekä ajoitus ja prosessi niiden ratkaisemiseksi. Siinä kuvataan myös selvitysprosessin tulokset.
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1992019570129461f3ecdd5479a87bafd8aeacb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a495a71a95032a0022cbab2783f356db48ee349d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887945"
 ---
 # <a name="settlement-overview"></a>Tilityksen yleiskatsaus
 
@@ -30,7 +30,7 @@ ms.locfileid: "8724894"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Tässä aiheessa on yleisiä tietoja tilitysprosessista. Siinä kuvataan, mitkä tapahtumatyypit voidaan selvittää, sekä ajoitus ja prosessi niiden ratkaisemiseksi. Siinä kuvataan myös selvitysprosessin tulokset.
+Tässä artikkelissa on yleisiä tietoja tilitysprosessista. Siinä kuvataan, mitkä tapahtumatyypit voidaan selvittää, sekä ajoitus ja prosessi niiden ratkaisemiseksi. Siinä kuvataan myös selvitysprosessin tulokset.
 
 Tilityksessä yhden asiakirjan tapahtumat kohdistetaan toisen asiakirjan tapahtumiin, jotta kummankin asiakirjan saldoa voidaan lisätä tai vähentää. Maksun voi esimerkiksi kohdistaa laskuun. Usean tyyppisten tapahtumien täsmäyttäminen on mahdollista eri aikoina ja erilaisin menetelmin. Tilitysprosessi voi myös luoda uusia tapahtumia.
 

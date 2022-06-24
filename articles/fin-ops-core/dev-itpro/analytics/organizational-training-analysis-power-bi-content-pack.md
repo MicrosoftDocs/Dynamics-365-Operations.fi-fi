@@ -1,6 +1,6 @@
 ---
 title: Organisaatiokoulutuksen Power BI -sisältö
-description: Tässä aiheessa kuvataan Finance and Operations - Organisaation opetus Power BI -sisältö.
+description: Tässä artikkelissa käsitellään Finance and Operationsin organisaation koulutuksen Power BI -sisältöä.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cd48c12ea3ea31904c437f678888a51e5381cfcfbeef0e1c709858b0c6cb857d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba332fc0c241969cbe0c25e7985101a2bbe12be4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892418"
 ---
 # <a name="organizational-training-power-bi-content"></a>Organisaatiokoulutuksen Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan Finance and Operations - Organisaation opetus Power BI -sisältö.
+Tässä artikkelissa käsitellään Finance and Operationsin organisaation koulutuksen Power BI -sisältöä.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
 Kun olet liittänyt sisältöpaketin tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja on kohdassa [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.

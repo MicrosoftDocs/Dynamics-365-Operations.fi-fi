@@ -1,6 +1,6 @@
 ---
 title: Etujen Power BI -sisältö
-description: Tässä ohjeaiheessa käsitellään etujen Power BI -sisältöä.
+description: Tässä artikkelissa käsitellään etujen Power BI -sisältöä.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0e7cadc16c5ed6c6eab8c90090cac017221f63f466115b04a6a3b843db44b1c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c78755946c7f07e1be7a57015e6c0c15317e6b76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733168"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848806"
 ---
 # <a name="benefits-power-bi-content"></a>Etujen Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään **etujen** Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältyvät raportit avataan, sekä kerrotaan sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä.
+Tässä artikkelissa käsitellään **etujen** Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältyvät raportit avataan, sekä kerrotaan sisältöpaketin muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 **Etujen** Power BI -sisällön edut näkyvät **Etujen hallinta** -työtilassa, jos käytössäsi on jokin seuraavista tuotteista:

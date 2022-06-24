@@ -1,6 +1,6 @@
 ---
 title: Budjettisuunnittelun päivitys
-description: Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.
+description: Tässä artikkelissa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890403"
 ---
 # <a name="upgrade-budget-planning"></a>Budjettisuunnittelun päivitys
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics AX 2012:n ja Dynamics 365 Financen budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä aiheessa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.  
+Microsoft Dynamics AX 2012:n ja Dynamics 365 Financen budjettisuunnittelutoiminnoissa on merkittäviä eroja. Tiettyjä ominaisuuksia ei ole päivitetty, jonka vuoksi ne on määritettävä uudelleen. Tässä artikkelissa kuvataan, mitä on määritettävä uudelleen sekä kuvaillaan uudet ominaisuudet, joiden käyttöä tulee harkita, kun päivitys on valmis.  
 
-Financen budjettisuunnittelu sisältää useita parannuksia, jotka eivät olleet saatavilla Dynamics AX 2012:ssa. Tässä ohjeaiheessa kerrotaan muutokset, jotka päivittävän asiakkaan on tehtävä. Siinä osoitetaan myös uudet ominaisuuksia, jotka tulisi ottaa huomioon päivitysprosessin aikana. Koska muutokset ovat kattavia, olemassa olevia budjettisuunnitelmia ei voi avata ennen kuin tässä ohjeaiheessa kuvatut muutokset on tehty. Raporttien tulisi toimia, eivätkä ne vaadi lisämuutoksia.
+Financen budjettisuunnittelu sisältää useita parannuksia, jotka eivät olleet saatavilla Dynamics AX 2012:ssa. Tässä artikkelissa kerrotaan muutokset, jotka päivittävän asiakkaan on tehtävä. Siinä osoitetaan myös uudet ominaisuuksia, jotka tulisi ottaa huomioon päivitysprosessin aikana. Koska muutokset ovat kattavia, olemassa olevia budjettisuunnitelmia ei voi avata ennen kuin tässä artikkelissa kuvatut muutokset on tehty. Raporttien tulisi toimia, eivätkä ne vaadi lisämuutoksia.
 
 ## <a name="overview-of-changes"></a>Muutosten yleiskatsaus
-Finance and Operationsin budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Financesta:
+Dynamics 365 for Finance and Operationsin budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Financesta:
 
 -   Budjettisuunnitelman mallit (budjettisuunnittelun konfigurointi)
 -   Budjettisuunnitelman kansiot (budjettisuunnittelun konfigurointi)
@@ -58,7 +58,7 @@ Budjettisuunnitteluprosessit ovat pääsääntöisesti samat kuin AX 2012:ssa. M
 Perusteluasiakirjat tallennettiin liitekansioon AX 2012:ssa. Aiempia perusteluasiakirjoja ei päivitetä. Perusteluasiakirjat tallennetaan nyt tietokantaan. Jos nämä tiedot tulee tallentaa päivitettyyn versioon, voit ladata lopulliset perusteluasiakirjat kunkin suunnitelman liitteeksi käyttämällä toimintoruudun **Perustelu**-painiketta. AX 2012 loi Excel-työkirjat kullekin budjettisuunnitelmalle mallin perusteella. Kaikki suunnitelmat avaavat Financessa asettelun kopion. Excel-tiedostoon ei kuitenkaan tallenneta muutoksia. Kaikki kaavat tai tukitiedot, joita käytettiin suunnitelmakohtaisesti on lisättävä kommenteissa, perusteluasiakirjassa tai jossain toisessa täydentävässä prosessissa.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>AX 2012:sta päivitetyn ympäristön määrittäminen
-Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä budjettiprosessia, jonka avulla opit, miten päivitetty järjestelmä määritetään. Päivitysprosessin auttamiseksi sarakkeille on luotu oletusmääritykset. Voit päivittää tai poistaa nämä oletustiedot, jos ne eivät vastaa määritysvaatimuksiasi. **Huomautus:** järjestelmä ei aseta arvoja uusille, pakollisille kentille. Jos et pysty siirtymään pois esimerkiksi **Budjettisuunnittelun konfigurointi** -sivulta, voit sulkea selaimen ja avata sen uudelleen toiselle sivulle, jotta voit syöttää tiedot oikeassa järjestyksessä. Joitakin pakollisia kenttiä ei ole vielä määritetty. Voit siis kohdata ongelmia, kunnes kaikki on määritetty ja kaikki pakolliset kentät on asetettu. Tässä ohjeaiheessa selitetään, miten nämä kentät määritetään vaatimusten mukaisesti. Seuraavassa on joitakin näistä pakollisista kentistä:
+Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä budjettiprosessia, jonka avulla opit, miten päivitetty järjestelmä määritetään. Päivitysprosessin auttamiseksi sarakkeille on luotu oletusmääritykset. Voit päivittää tai poistaa nämä oletustiedot, jos ne eivät vastaa määritysvaatimuksiasi. **Huomautus:** järjestelmä ei aseta arvoja uusille, pakollisille kentille. Jos et pysty siirtymään pois esimerkiksi **Budjettisuunnittelun konfigurointi** -sivulta, voit sulkea selaimen ja avata sen uudelleen toiselle sivulle, jotta voit syöttää tiedot oikeassa järjestyksessä. Joitakin pakollisia kenttiä ei ole vielä määritetty. Voit siis kohdata ongelmia, kunnes kaikki on määritetty ja kaikki pakolliset kentät on asetettu. Tässä artikkelissa selitetään, miten nämä kentät määritetään vaatimusten mukaisesti. Seuraavassa on joitakin näistä pakollisista kentistä:
 
 -   **Budjettisuunnitteluprosessi**-sivu: **Oletustilirakenne**-kenttä
 -   **Budjettisuunnitteluprosessi**-sivu: **Asettelu**-kenttä **Budjettisuunnittelun vaiheen säännöt ja asettelut** -pikavälilehdessä
@@ -69,7 +69,7 @@ Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä b
    -   Budjettisuunnitelman skenaariot: Todellinen, Perusarvo, Budjettipyyntö, Budjetti hyväksytty
    -   Budjettisuunnitelman rivit kaikille vuoden 2017 skenaarioille ja Todelliset sekä vuodelle 2016 että vuodelle 2017
 
-   Seuraavat sarakkeet luodaan Finance and Operationsissa:
+   Finance and Operationsissa luodaan seuraavat sarakkeet:
 
    | Sarakkeen nimi    | Budjettisuunnitelman skenaario | Sarakkeen ajanjakso | Vuoden siirtymä |
    |----------------|----------------------|--------------------|-------------|

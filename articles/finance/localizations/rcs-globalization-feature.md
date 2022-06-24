@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Services (RCS) – globalisointiominaisuudet
-description: Tässä ohjeaiheessa käsitellään Microsoft Regulatory Configuration Servicesin (RCS) ja yleisen säilön käyttöä globalisointitoiminnon luontiin ja käyttöön.
+description: Tässä artikkelissa käsitellään Microsoft Regulatory Configuration Servicesin (RCS) ja yleisen säilön käyttöä globalisointitoiminnon luontiin ja käyttöön.
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760628"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888891"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – globalisointiominaisuudet
 
@@ -40,7 +40,7 @@ Ennen kuin suoritat toimenpiteet, sinun on suoritettava seuraaviin tehtäviin li
 - Pääsy RCS-esiintymään.
 - Konfigurointipalvelun luominen ja aktivoiminen. Lisätietoja on kohdassa [Määrityspalvelujen luonti ja merkitseminen aktiiviseksi](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Noudata seuraavia ohjeita Finance and Operations -sovellusesiintymässä.
+Tee talous- ja toimintosovelluksissa seuraavat vaiheet.
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Jos yritykseen ei ole valmisteltu RCS-ympäristöä, valitse **Regulatory Services – määritys** -linkki ja valmistele sellainen ohjeiden mukaisesti.
@@ -64,7 +64,7 @@ Jos haluat käyttää globalisointiominaisuutta, sinun on ensin tuotava se yleis
 
 ## <a name="access-globalization-features"></a>Globalisaatio-ominaisuuksien käyttäminen
 
-1. Varmista, että **globalisointitoiminnot** -toiminto on otettu käyttöön ominaisuuksien hallinnassa aiemmin tässä ohjeaiheessa kuvatulla tavalla.
+1. Varmista, että **globalisointitoiminnot** -toiminto on otettu käyttöön ominaisuuksien hallinnassa aiemmin tässä artikkelissa kuvatulla tavalla.
 2. Avaa uusi **globalisointitoiminnot** -työtila ja valitse sitten **Ominaisuudet**-kohdan **sähköinen laskutus** -ruutu.
 
     ![Yleiset ominaisuudet -työtila.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ Konfiguroinneissa ovat käytettävissä seuraavat toiminnot:
 - **Näytä** – Tarkastele pohjana olevia ominaisuuskonfiguraatioita, jotka eivät vaadi päivitystä.
 - **Muokkaa** – Luo valitusta konfiguraatiosta luonnosversio, jotta voit muokata muotoa tai muotomääritystä muodon suunnittelijassa.
 - **Poista** – Poista valittu konfiguraatio ominaisuudesta.
-- **Uudelleenkäytä** – Ominaisuuden uudelleenkäyttäminen. Lisätietoja on jäljempänä tämän ohjeaiheen kohdassa [Uudelleenkäytä johdettuja globalisointiominaisuuksia](#rebase).
+- **Uudelleenkäytä** – Ominaisuuden uudelleenkäyttäminen. Lisätietoja on jäljempänä tämän artikkelin [Uudelleenkäytä johdettuja globalisointiominaisuuksia](#rebase) -osassa.
 
 ### <a name="setups"></a>Asetukset
 
@@ -182,7 +182,7 @@ Ominaisuuksien asennuksissa ovat käytettävissä seuraavat toiminnot:
 
 Ympäristöissä ovat käytettävissä seuraavat toiminnot:
 
-- **Ota käyttöön** – Jos kyseessä on valittu toimintoversio, valitse julkaistu ympäristö ja valitse **voimassa olon alkamispäivämäärä**, kun se on käytettävissä. Lisätietoja on jäljempänä tämän ohjeaiheen kohdassa [Määritä ympäristöjä aktivointia varten](#configureenvironment).
+- **Ota käyttöön** – Jos kyseessä on valittu toimintoversio, valitse julkaistu ympäristö ja valitse **voimassa olon alkamispäivämäärä**, kun se on käytettävissä. Lisätietoja on jäljempänä tämän artikkelin [Määritä ympäristöjä aktivointia varten](#configureenvironment) -osassa.
 - **Peruuta** – Poista ominaisuusasetusten ympäristö.
 
 ### <a name="organizations"></a>Organisaatiot

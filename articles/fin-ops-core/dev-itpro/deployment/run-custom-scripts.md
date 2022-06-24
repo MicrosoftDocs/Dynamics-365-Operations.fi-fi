@@ -1,6 +1,6 @@
 ---
 title: Mukautettujen X++-komentosarjojen ajaminen ilman käyttökatkoa
-description: Tässä aiheessa kuvataan, kuinka voit ladata ja suorittaa käyttöön otettavat paketit, jotka sisältävät mukautettuja X++-komentosarjoja ilman järjestelmän keskeytystä.
+description: Tässä artikkelissa kuvataan, kuinka voit ladata ja suorittaa käyttöön otettavat paketit, jotka sisältävät mukautettuja X++-komentosarjoja ilman järjestelmän keskeytystä.
 author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: fcd0a472fa5116ca0b3a59561b6eeb72181a9113
-ms.sourcegitcommit: 44e6875e974a3a1b3e1d7a24c1a3cff3d3697cdc
+ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867326"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Mukautettujen X++-komentosarjojen ajaminen ilman käyttökatkoa
 
@@ -122,7 +122,7 @@ Lataa ja suorita komentotiedosto seuraavia ohjeita noudattamalla.
 
 1. Siirry taloushallinnon ja toimintojen sovelluksessa kohtaan **Järjestelmänvalvonta \> Kausittaiset tehtävät \> Tietokanta \> Mukautetut komentosarjat**.
 1. Valitse **Lataa palvelimeen**.
-1. Valitse käyttöön otettava paketti, joka on luotu aiemmin tässä ohjeaiheessa kuvatulla tavalla. Näyttöön tule kehote määrittää komentosarjan tarkoitus.
+1. Valitse käyttöön otettava paketti, joka on luotu aiemmin tässä artikkelissa kuvatulla tavalla. Näyttöön tule kehote määrittää komentosarjan tarkoitus.
 1. Komentosarja pitää hyväksyttää nyt toisella käyttäjällä kuin sen palvelimeen ladannut käyttäjä. Hyväksyjän on noudatettava seuraavia ohjeita:
 
     1. Siirry kohtaan **Järjestelmänvalvonta \> Kausittaiset \> Tietokanta \> Mukautetut komentosarjat**.

@@ -1,6 +1,6 @@
 ---
 title: Kalenterien ja työaikojen luominen
-description: Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä aihe auttaa määrittämään työkalenterin työaikamallin perusteella.
+description: Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä artikkeli auttaa määrittämään työkalenterin työaikamallin perusteella.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: business-process
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b49b5393448bc501abd1b96123b64c034d7cc67
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 811f49307a8ae44bbee9906cb40a3ca31101f52b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846326"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Kalenterien ja työaikojen luominen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä Finance-infrastruktuurin Human Resources -asiakkaiden käytettävissä.  
+> Tässä artikkelissa mainittu toiminto on tällä hetkellä Finance-infrastruktuurin Human Resources -asiakkaiden käytettävissä.  
 
 
-Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä aihe auttaa määrittämään työkalenterin työaikamallin perusteella. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
+Kalenterit kuvaavat operatiivisten resurssien kapasiteetin ja työajat. Tämä artikkeli auttaa määrittämään työkalenterin työaikamallin perusteella. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi.
 
 1. Valitse aloitussivulla **Resurssin elinkaaren hallinta**.
 2. Valitse **Kalenterit**.

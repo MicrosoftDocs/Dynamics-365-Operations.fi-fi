@@ -1,6 +1,6 @@
 ---
 title: Vuokrasopimuksen irtisanomisen ehdotus
-description: Tässä ohjeaiheessa kerrotaan, miten ehdotetaan vuokran päättämistä.
+description: Tässä artikkelissa kerrotaan, miten ehdotetaan vuokran päättämistä.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879650"
 ---
 # <a name="propose-a-lease-for-termination"></a>Vuokran ehdottaminen irtisanomista varten
 
 [!include [banner](../includes/banner.md)]
 
-Jos vuokra päätetään etuajassa, käyttöomaisuuden vuokraus voi kirjata irtisanomisen kirjauskansiomerkinnän, joka poistaa vuokravelkaa, käyttöoikeutta (ROU) sekä kertyneitä poistoja, sekä kirjata voiton tai tappion. Varhaisen irtisanomisen prosessi päättää vuokra-ajan ja siihen liittyvät vuokrakirjat. Se ei päätä yksittäisiä vuokrakirjoja. Tässä aiheessa kuvataan toimintoja, jotka mahdollistaa vuokrasopimuksen ehdottamisen irtisanomista varten ja vuokran päättymisen kirjauskansion merkinnän käsittelemisen.
+Jos vuokra päätetään etuajassa, käyttöomaisuuden vuokraus voi kirjata irtisanomisen kirjauskansiomerkinnän, joka poistaa vuokravelkaa, käyttöoikeutta (ROU) sekä kertyneitä poistoja, sekä kirjata voiton tai tappion. Varhaisen irtisanomisen prosessi päättää vuokra-ajan ja siihen liittyvät vuokrakirjat. Se ei päätä yksittäisiä vuokrakirjoja. Tässä artikkelissa kuvataan toimintoja, jotka mahdollistaa vuokrasopimuksen ehdottamisen irtisanomista varten ja vuokran päättymisen kirjauskansion merkinnän käsittelemisen.
 
 Jos vuokra ei ole luokiteltu lykättynä vuokrakäsittelyn vuokrasopimuksina eikä sitä ole liitetty käyttöomaisuuserään, käyttöomaisuuden vuokraus tuottaa seuraava lopetuksen kirjauskansiomerkintä.
 
@@ -121,7 +121,7 @@ Seuraavissa taulukoissa ovat arvot, jotka on määritetty **Yleistiedot**- ja **
 
 ### <a name="steps-for-terminating-the-lease"></a>Vuokran päättämisen vaiheet
 
-1. Kun olet luonut vuokrasopimuksen aiemmin tässä ohjeaiheessa kuvatulla tavalla, siirry vuokrauskirjaan ja vahvista maksuaikataulu. Kirjaa sitten alkuperäinen tuloutuksen kirjauskansiovienti. Alkuperäinen käyttöoikeusomaisuuserä on 71 235,81 $ ja vuokrasopimusvelan on oltava 70 235,81 $. Tässä esimerkissä vuokrasopimus luokiteltiin käyttöleasingsopimukseksi Accounting Standards Codification Topic 842:n (ASC 842) mukaan.
+1. Kun olet luonut vuokrasopimuksen aiemmin tässä artikkelissa kuvatulla tavalla, siirry vuokrauskirjaan ja vahvista maksuaikataulu. Kirjaa sitten alkuperäinen tuloutuksen kirjauskansiovienti. Alkuperäinen käyttöoikeusomaisuuserä on 71 235,81 $ ja vuokrasopimusvelan on oltava 70 235,81 $. Tässä esimerkissä vuokrasopimus luokiteltiin käyttöleasingsopimukseksi Accounting Standards Codification Topic 842:n (ASC 842) mukaan.
 2. Suorita kirjauskansion eräprosessi kolme kertaa, jotta voit simuloida kolmen vuoden kulumista vuokrille, korkokuluille ja poistokuluille.
 3. Kun kaikki kolme erätyötä on suoritettu, siirry takaisin vuokrauskirjaan ja avaa velka- ja resurssitapahtumien taulukot tarkastellaksesi resurssin ja vuokrasopimusvelan nykyistä kirjanpitoarvoa. Kolmen vuoden kuluttua velan arvon on oltava noin -53 893,00 dollaria ja resurssin arvon noin 54 593,00 dollaria.
 

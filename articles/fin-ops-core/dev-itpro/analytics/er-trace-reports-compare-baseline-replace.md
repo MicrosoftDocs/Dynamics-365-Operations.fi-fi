@@ -1,6 +1,6 @@
 ---
 title: Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
-description: Tässä aiheessa käsitellään ER-perusrivitoiminnon parannuksia Microsoft Dynamics 365 for Finance and Operationsin versiossa 10.0.3 (kesäkuu 2019).
+description: Tässä artikkelissa käsitellään ER-perusrivitoiminnon parannuksia Microsoft Dynamics 365 for Finance and Operationsin versiossa 10.0.3 (kesäkuu 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847398"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Luotujen sähköisen raportoinnin raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään ensimmäisiä sähköisen raportoinnin (ER) kehyksen perusviivatoimintoon parannuksia. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operationsin versiossa 10.0.3 (kesäkuu 2019) tai uudemmassa.
+Tässä artikkelissa käsitellään ensimmäisiä sähköisen raportoinnin (ER) kehyksen perusviivatoimintoon parannuksia. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operationsin versiossa 10.0.3 (kesäkuu 2019) tai uudemmassa.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Perusviivasääntöasetusten automatisointi
 
-Ohjeaiheessa [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) käsitellään ER-kehys määrittämistä keräämään tietoja ER-muodon suorituksista ja kyseisten suoritusten arviointia. Tämän ohjeaiheen esimerkki sisältää suoritettavat vaiheet.
+[Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) -artikkelissa käsitellään ER-kehys määrittämistä keräämään tietoja ER-muodon suorituksista ja kyseisten suoritusten arviointia. Tämän artikkelin esimerkki sisältää suoritettavat vaiheet.
 
 Esimerkkejä vaiheista:
 
@@ -45,7 +45,7 @@ Esimerkkejä vaiheista:
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>Esimerkki: Perusviivasääntöasetusten automatisointi
 
-Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin ohjeaiheen [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) esimerkin vaiheet osaan Uuden perusrivin lisääminen suunniteltuun ER-muotoon saakka.
+Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) -artikkelin esimerkin vaiheet Uuden perusrivin lisääminen suunniteltuun ER-muotoon -osaan saakka.
 
 ### <a name="review-added-baseline"></a>Lisätyn perusrivin tarkasteleminen
 
@@ -80,7 +80,7 @@ Perusrivi on lisättyyn valittuun **ER-perusrivien oppimismuoto** -muotoon, mutt
 
 ### <a name="run-the-format"></a>Muodon suorittaminen
 
-Voit nyt suorittaa ohjeaiheen [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) loput vaiheet alkaen osasta Suunnitellun ER-muodon suorittaminen ja tulosten analysointi lokia tarkastelemalla.
+Voit nyt suorittaa [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) -artikkelin loput vaiheet alkaen Suunnitellun ER-muodon suorittaminen ja tulosten analysointi lokia tarkastelemalla -osasta.
 
 > [!NOTE]
 > Jos poistat automaattisesti lisätyn perusrivisäännön **Perusrivit**-pikavälilehdessä, viitattua liitettä ei poisteta automaattisesti.
@@ -91,7 +91,7 @@ Jos ER-muoto on suunniteltu sisältämään tietoja, jotka muuttuvat, kun muoto 
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>Esimerkki: Perusrivin määrittäminen ohittamaan ER-tuloksen jatkuvasti muuttuvat osat
 
-Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin ohjeaiheen [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) esimerkin vaiheet.
+Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md) -artikkelin esimerkin vaiheet.
 
 ### <a name="modify-a-configured-er-format"></a>Määritetyn ER-muodon muokkaaminen
 
@@ -142,7 +142,7 @@ Valittu ER-muoto-osa on lisätty osaluetteloon **Korvaava**-pikavälilehteen. Ku
 
 ### <a name="make-a-new-baseline-rule"></a>Uuden perusrivisäännön luominen
 
-Noudata tämän ohjeaiheen aiemman Esimerkki: Perusviivasääntöasetusten automatisointi -osan ohjeita. Ilmoitus varoittaa, että lähtevä tiedosto on luotu käyttämällä perusrivin asetuksia ja että muodon sidontojen pakotettu korvaus on tehty.
+Noudata tässä artikkelissa aiemmin olleen Esimerkki: Perusviivasääntöasetusten automatisointi -osan ohjeita. Ilmoitus varoittaa, että lähtevä tiedosto on luotu käyttämällä perusrivin asetuksia ja että muodon sidontojen pakotettu korvaus on tehty.
 
 ![Ilmoitus Konfiguroinnit-sivulla.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Näyttökuva ilmoituksesta Konfiguroinnit-sivulla")
 

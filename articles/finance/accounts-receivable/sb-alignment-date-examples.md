@@ -1,6 +1,6 @@
 ---
 title: Kohdistuspäiväskenaariot
-description: Tässä ohjeaiheessa on esimerkkejä, jotka näyttävät, kuinka kohdistuspäivämäärät toimivat tilauslaskutuksen yhteydessä.
+description: Tässä artikkelissa on esimerkkejä, jotka näyttävät, kuinka kohdistuspäivämäärät toimivat tilauslaskutuksen yhteydessä.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 91480fecd16cf8417722df73c28bbd81d029fb07
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 102e3a104be5be287f914172160e95aff65d0b18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872612"
 ---
 # <a name="alignment-date-scenarios"></a>Kohdistuspäiväskenaariot
 
-Tässä ohjeaiheessa on esimerkkejä, jotka näyttävät, kuinka kohdistuspäivämäärät toimivat tilauslaskutuksen yhteydessä.
+Tässä artikkelissa on esimerkkejä, jotka näyttävät, kuinka kohdistuspäivämäärät toimivat tilauslaskutuksen yhteydessä.
 
 Näissä esimerkeissä laskutusaikataulun laskutustietojen kohdistuspäivämäärä on 31.10.2019. Rivin ensimmäiset laskutustiedot päättyvät 31.10.2019, ja on jaettu suhteellisesti vastaavasti. Rivi uusitaan automaattisesti käyttäen uusinnan alkamispäivämäärää 11.11.
 

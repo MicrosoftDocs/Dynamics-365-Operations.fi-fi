@@ -1,6 +1,6 @@
 ---
 title: Tietovaraston osajoukon usein kysytyt kysymykset
-description: Tämä ohjeaihe sisältää vastauksia eräisiin usein kysyttyihin tietovaraston osajoukon kysymyksiin.
+description: Tämä artikkeli sisältää vastauksia eräisiin usein kysyttyihin tietovaraston osajoukon kysymyksiin.
 author: jinniew
 ms.date: 03/21/2022
 ms.topic: article
@@ -13,16 +13,16 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 61c7047096f42e71cde5e9ba1ddc59785383795a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: d2b20ec7af9f0c6b7899617c2b8fdbf0992d7397
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714126"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892389"
 ---
 # <a name="data-mart-resets-faq"></a>Tietovaraston osajoukon usein kysytyt kysymykset
 
-Tämä ohjeaihe sisältää vastauksia eräisiin usein kysyttyihin tietovaraston osajoukon kysymyksiin. Tietojen nollaaminen voi olla aika vievä prosessi, eikä se olosuhteista riippuen välttämättä ole tarvittava ratkaisu. Siksi tämä ohjeaihe sisältää tietoja olosuhteista, joissa tietojen nollaaminen voi auttaa, sekä olosuhteista, joissa se ei todennäköisesti auta.
+Tämä artikkeli sisältää vastauksia eräisiin usein kysyttyihin tietovaraston osajoukon kysymyksiin. Tietojen nollaaminen voi olla aika vievä prosessi, eikä se olosuhteista riippuen välttämättä ole tarvittava ratkaisu. Siksi tämä artikkeli sisältää tietoja olosuhteista, joissa tietojen nollaaminen voi auttaa, sekä olosuhteista, joissa se ei todennäköisesti auta.
 
 ## <a name="what-is-a-data-mart-reset"></a>Mikä on tietovaraston osajoukon palauttaminen?
 

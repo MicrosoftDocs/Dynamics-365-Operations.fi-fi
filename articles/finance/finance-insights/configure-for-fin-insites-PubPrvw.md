@@ -1,6 +1,6 @@
 ---
 title: Finance Insightsin määritys – versio 10.0.20 ja myöhempi
-description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin version ominaisuuksia voi käyttää (versiossa 10.0.20 ja sitä uudemmissa).
+description: Tässä artikkelissa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin version ominaisuuksia voi käyttää (versiossa 10.0.20 ja sitä uudemmissa).
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 61cc002395ac3bc946fa03a04833a7b6d4820194
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868515"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Finance Insightsin määritys – versio 10.0.20 ja myöhempi
 
@@ -29,10 +29,10 @@ ms.locfileid: "8711601"
 
 
 
-Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet Dynamics 365 Finance -versiossa 10.0.20 on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
+Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä artikkelissa kerrotaan, millaiset määritysvaiheet Dynamics 365 Finance -versiossa 10.0.20 on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
 
 > [!NOTE]
-> Tässä ohjeaiheessa kuvatut konfigurointivaiheet koskevat vain Finance-versiota 10.0.20 ja sitä myöhempiä. Jos haluat määrittää Finance Insightsin versiolle 10.0.19 tai sitä aikaisemmalle versiolle, katso [Finance Insightsin määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
+> Tässä artikkelissa kuvatut konfigurointivaiheet koskevat vain Finance-versiota 10.0.20 ja sitä myöhempiä. Jos haluat määrittää Finance Insightsin versiolle 10.0.19 tai sitä aikaisemmalle versiolle, katso [Finance Insightsin määritys versioon 10.0.19 asti](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Ota Finance käyttöön
 

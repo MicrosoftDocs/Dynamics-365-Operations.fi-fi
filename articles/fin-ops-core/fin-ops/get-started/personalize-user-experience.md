@@ -1,8 +1,8 @@
 ---
 title: Käyttäjäkokemuksen mukauttaminen
-description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
+description: Tässä artikkelissa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845439"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8602986"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta. Ohjeaihe sisältää seuraavat aiheet: 
+Tässä artikkelissa kerrotaan, miten voit mukauttaa sovellusta. Ohjeaihe sisältää seuraavat aiheet: 
 
 - **Järjestelmänlaajuiset valinnat** – Nämä mukautusvalinnat tehdään asetussivulla. Ne ovat kaikkien käyttäjien käytettävissä. Väriteema ja aikavyöhyke ovat niistä esimerkkejä. 
 - **Rajoitettu mukautuksen käyttöoikeus** – Tällä tasolla käyttäjän toiminnot, jotka liitetään tyypilliseen sivun käyttöön, tallennetaan automaattisesti sovellukseen ja palautetaan seuraavalla sivunkäyttökerralla. Sovellus tallentaa esimerkiksi ruudukoiden sarakeleveyksiä, jos muutat niitä, sekä pikavälilehtien laajennus- tai tiivistystiloja. 
@@ -58,7 +58,7 @@ Alla on luettelo toiminnoista, jotka kuuluvat tyypilliseen sivun käyttöön ja 
 
 - **Ruudukon sarakkeenleveydet** – Ruudukon sarakkeen leveyttä voidaan säätää valitsemalla koon muuttamiseen tarkoitettu palkki sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle, kunnes sarake on halutun levyinen. Sovellus tallentaa sarakkeelle määritetyn leveyden. Kun seuraavan kerran avaat sivun, sarakkeen koko muutetaan vastaamaan kyseistä leveyttä.
 - **Ruudukon alatunniste ja sarake yhteensä** – *(Käytettävissä vain, kun uuden ruudukon ohjausobjekti on päällä)* Voit päättää, näkyykö kokonaissumma minkä tahansa numeerisen sarakkeen alaosassa ruudukossa ja onko ruudukon alatunnisteen oltava näkyvissä. Sovellus tallentaa nämä määritykset ja käyttää niitä, kun seuraavan kerran avaat sivun. Lisätietoja on aiheessa [Ruudukon ominaisuudet](grid-capabilities.md). 
-- **Pikavälilehdet** – Joillain sivuilla on laajennettavia *pikavälilehtinä* tunnettuja osia. Sovellus tallentaa tietoja laajennetuista ja tiivistetyistä pikavälilehdistä. Kun avaat sivun seuraavan kerran, pikavälilehdet näkyvät joko laajennettuina tai tiivistettyinä sen mukaan, mitä olet valinnut sivulla edellisellä kerralla. Joissain tapauksissa voit parantaa järjestelmän suorituskykyä tiivistämällä pikavälilehden, koska sovellus ei tarvitse noutaa tietoja pikavälilehtiä varten, ennen kuin ne laajennetaan. Jäljempänä tässä aiheessa selitetään, miten voit myös muuttaa sivulla olevien pikavälilehtien järjestystä.
+- **Pikavälilehdet** – Joillain sivuilla on laajennettavia *pikavälilehtinä* tunnettuja osia. Sovellus tallentaa tietoja laajennetuista ja tiivistetyistä pikavälilehdistä. Kun avaat sivun seuraavan kerran, pikavälilehdet näkyvät joko laajennettuina tai tiivistettyinä sen mukaan, mitä olet valinnut sivulla edellisellä kerralla. Joissain tapauksissa voit parantaa järjestelmän suorituskykyä tiivistämällä pikavälilehden, koska sovellus ei tarvitse noutaa tietoja pikavälilehtiä varten, ennen kuin ne laajennetaan. Jäljempänä tässä artikkelissa kerrotaan, miten voit myös muuttaa sivulla olevien pikavälilehtien järjestystä.
 - **Tietoruudut** – Osalla sivuista on **Aiheeseen liittyviä tietoja** -ruutu, jossa näkyy vain luku -tietoja, jotka liittyvät sivun kulloiseenkin aiheeseen. Kukin **Aiheeseen liittyviä tietoja** -ruudun osio on nimeltään *Tietoruutu*. Voit laajentaa tai kutistaa **Aiheeseen liittyviä tietoja**-ruudun. Voit myös laajentaa tai kutistaa yksittäisiä tietoruutuja. Sovellus tallentaa nämä asetukset. Kun seuraavan kerran avaat sivun **Aiheeseen liittyviä tietoja** -ruutu ja yksittäiset tietoruudut ovat joko laajennettuna tai kutistettuna sen mukaan, mitä olet valinnut edellisellä kerralla. Joissain tapauksissa voit parantaa järjestelmän suorituskykyä kutistamalla **Liittyvät tiedot** -ruudun tai tietoruudun, koska sovelluksen ei tarvitse noutaa tietoja tietoruutuja varten, ennen kuin ne laajennetaan.
 - **Toimintoruudut** – *Toimintoruutu* näkyy useimmilla sivuilla yläreunan lähellä. Toimintoruudussa on painikkeita, joilla voi tehdä monia valitulla sivulla tehtäviä toimintoja. Nämä painikkeet on usein järjestetty välilehtiin. Voit *kiinnittää* koko toimintoruudun avoimeksi. Vaihtoehtoisesti se voi olla oletusarvoisesti kutistettuna. Kun tämän jälkeen avaat sivun, toimintoruutu on joko auki tai kutistettuna sen mukaan, mitä olet valinnut edellisellä kerralla. Jos olet kiinnittänyt toimintoruudun avoimeksi, näkyvissä on viimeisin käyttämäsi välilehti.
 - **Pikasuodattimet** – *Pikasuodatin* näkyy monien ruudukoiden yläpuolella. Pikasuodattimia voi käyttää ruudukon suodattamiseen valitun yhden sarakkeen perusteella. Sovellus tallentaa sarakkeen, johon suodatus perustuu. Kun avaat seuraavan kerran sivun, ruudukossa käytetään samaa saraketta suodatuksessa oletusarvoisesti. Voit kuitenkin suodattaa ruudukon tämän jälkeen toisen sarakkeen perusteella.
@@ -173,14 +173,14 @@ Versiosta 10.0.26 alkaen **Salli käyttäjien valita ja muuttaa ruutukokoja** -o
 
 ### <a name="personalizing-your-dashboard"></a>Koontinäytön mukauttaminen
 
-Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat sovelluksen. Se voidaan mukauttaa kuten mikä tahansa muu järjestelmän sivu käyttämällä samoja mekanismeja, jotka on kuvattu aiemmin tässä ohjeaiheessa. 
+Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat sovelluksen. Se voidaan mukauttaa kuten mikä tahansa muu järjestelmän sivu käyttämällä samoja mekanismeja, jotka on kuvattu aiemmin tässä artikkelissa. 
 
 > [!WARNING]
 > Kun nyt piilotat sisältöä koontinäytössä, on tärkeää kohdistaa ruutu suoraan, ei sen ympärillä olevaa tilaa. Jos piilotat ryhmän ruudun ympärillä, tulokset voivat olla odottamattomia, jos lisää ruutuja lisätään myöhemmin tai jos järjestelmä vaihdetaan eri kielelle.
 
 Yksi ainutlaatuinen mukautusominaisuus, joka on käytettävissä koontinäytössä, on mahdollisuus lisätä ruutuja. 
 
-- Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää työtila**. Uusi työtilan ruutu luodaan koontinäytön alareunaan. Voit nimetä tämän uuden työtilan ruudun haluamallasi tavalla. Voit myös lisätä luetteloita, ruutuja ja linkkejä työtilaa aiemmin tämän ohjeaiheen kohdassa [Ruutujen, luetteloiden ja linkkien lisääminen työtilaan](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) kuvatulla tavalla.
+- Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää työtila**. Uusi työtilan ruutu luodaan koontinäytön alareunaan. Voit nimetä tämän uuden työtilan ruudun haluamallasi tavalla. Voit myös lisätä luetteloita, ruutuja ja linkkejä työtilaa aiemmin tämän artikkelin kohdassa [Ruutujen, luetteloiden ja linkkien lisääminen työtilaan](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) kuvatulla tavalla.
 - Jos **Koko sivun sovellukset** -ominaisuus on pois käytöstä, voit lisätä uuden ruudun valitsemalla elementin hiiren oikeanpuoleisella painikkeella koontinäytössä ja valitsemalla sitten **Lisää sovellus**. Määritä valintaikkunassa, haluatko lisätä ruudun uuteen työtilaan tai ruutuun, jolla on sisältöä Power Appsista tai verkkosivulta. Määritä sitten valitsemasi vaihtoehto ohjeiden mukaan. Uusi ruutu luodaan koontinäytön alareunaan. Lisätietoja näiden upotettujen sovellusten lisäämisestä, muokkaamisesta, poistamisesta ja jakamisesta on kohdissa [Pohjaan perustuvien sovellusten upottaminen Power Appsista](embed-power-apps.md) ja [Kolmannen osapuolen sovellusten upottaminen](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Mukauttamisen jakaminen
@@ -236,7 +236,7 @@ Mukautuksia voidaan jakaa myös viennin ja tuonnin kautta. Yksittäiset käyttä
 
 #### <a name="export"></a>Vie
 
-Yleensä voit viedä oman näkymäsi tai mukautuksesi avaamalla haluamasi sivun, avaamalla **Mukauttaminen**-työkalurivin ja valitsemalla sitten **Vie**. Lisätietoja työkalurivistä on tämän aiheen aiemmassa kohdassa [Mukauttamisen työkalurivi](#personalization-toolbar). Jos [tallennetut näkymät](saved-views.md) ovat käytettävissä, voit tarkastella luetteloa kaikista järjestelmän mukautuksista valitsemalla **Asetukset \> Käyttäjän asetukset \> Mukauttaminen**. Sieltä voit valita vietävien näkymien tai mukautusten tiedot ja valita sitten **Vie**.
+Yleensä voit viedä oman näkymäsi tai mukautuksesi avaamalla haluamasi sivun, avaamalla **Mukauttaminen**-työkalurivin ja valitsemalla sitten **Vie**. Lisätietoja työkalurivistä on tämän artikkelin aiemmassa kohdassa [Mukauttamisen työkalurivi](#personalization-toolbar). Jos [tallennetut näkymät](saved-views.md) ovat käytettävissä, voit tarkastella luetteloa kaikista järjestelmän mukautuksista valitsemalla **Asetukset \> Käyttäjän asetukset \> Mukauttaminen**. Sieltä voit valita vietävien näkymien tai mukautusten tiedot ja valita sitten **Vie**.
 
 Järjestelmänvalvojat voivat lisäksi viedä muiden käyttäjien mukautuksia noudattamalla seuraavia vaiheita.
 
@@ -277,7 +277,7 @@ Jos tallennetut näkymät eivät ole käytössä, noudata näitä ohjeita.
 
 **Mukautus**-sivu on keskitetty keskus, jolla hallitaan räätälöintejä organisaatiotasolla. Tämän sivun sisältö ja ominaisuudet määräytyvät sen mukaan, onko **Tallennetut näkymät** -toiminto otettu käyttöön.
 
-Jos asiakas on ottanut käyttöön **Tallennetut näkymät** -toiminnon, lue Tallennettujen näkymien aiheen näkymien hallinta yleisesti [Tallennetut näkymät](saved-views.md) -osasta.
+Jos asiakas on ottanut käyttöön **Tallennetut näkymät** -toiminnon, lue Näkymien hallinta yleisesti -osa [Tallennetut näkymät](saved-views.md) -artikkelista.
 
 Niillä asiakkaila, jotka eivät ole vielä ottaneet käyttöön [Tallennetut näkymät](saved-views.md) -ominaisuutta, tällä sivulla on neljä välilehteä:
 
@@ -285,6 +285,9 @@ Niillä asiakkaila, jotka eivät ole vielä ottaneet käyttöön [Tallennetut n�
 - **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan kaikki mukautukset. Valitse ensin sivu tai työtila. Näet nyt luettelon käyttäjistä, jotka ovat mukauttaneet sitä. Valitse sitten käyttäjät, joiden sivun tai mukautukset on tyhjennettävä. Valitse lopuksi **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
 - **Käyttäjät** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa. Voit sitten sallia käyttäjän käyttävän mukautuksia tietyillä sivuilla tai koko järjestelmässä tai estää sen. Voit myös tuoda, viedä tai tyhjentää käyttäjän mukautuksen. Lisäksi voit palauttaa käyttäjän kuvatekstitoiminnot. Jos käyttäjä tällöin on aiemmin hylännyt uusia ominaisuuksia esitteleviä ponnahdusikkunoita, ne tulevat näkyviin uudelleen, kun kyseinen käyttäjä kohtaa kyseiset ominaisuudet.
 - **Järjestelmä** – Voit poistaa kaikkien järjestelmän käyttäjien mukautukset käytöstä väliaikaisesti. Tällöin kaikkien käyttäjien mukautukset poistetaan ja kaikki sivut palautetaan oletustiloihinsa. Jos otat mukautukset myöhemmin jälleen käyttöön, kaikkia mukautuksia sovelletaan uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Poistettuja mukautuksia ei voi palauttaa. Varmista tämän vuoksi ennen tämän tehtävän suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä tarvitset myöhemmin.
+
+### <a name="service-updates-and-personalization"></a>Palvelupäivitykset ja mukauttaminen
+Mukautustietoja ei tarvitse tyhjentää tai nollata, kun siirrytään tuotteen uuteen versioon. Mukautukset ja tallennettujen näkymien tiedot toimivat päivitysten välillä. Poikkeuksia tähän ovat muutokset itse lomakkeeseen silloin, kun mukautus mitätöidään (kuten poistettu ohjausobjekti) tai muutokset lomakkeen peruskyselyyn. Se muuttaa lomakkeen tietolähteen alipuuta niin, että se ei enää vastaa näkymäkyselyyn liittyvän tietolähteen alipuuta.
 
 ## <a name="personalizing-inventory-dimensions"></a>Varastodimensioiden mukauttaminen
 

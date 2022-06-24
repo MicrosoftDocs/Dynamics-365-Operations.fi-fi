@@ -1,6 +1,6 @@
 ---
-title: Veroa ei lasketa tai veron summa on nolla.
-description: Tässä aiheessa on vianmääritystietoja, jotka voivat auttaa, kun veron summa on 0 (nolla) tai veroa ei lasketa.
+title: Veroa ei lasketa tai veron summa on nolla
+description: Tässä artikkelissa on vianmääritystietoja, jotka voivat auttaa, kun veron summa on 0 (nolla) tai veroa ei lasketa.
 author: shtao
 ms.date: 04/01/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7237980f8d330a7b3f5c966d5bd3fff0eda8b21a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f2a5bb0d1cef93ec1fea2e21c1750fe94a454c18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685853"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849841"
 ---
 # <a name="tax-isnt-calculated-or-the-tax-amount-is-zero"></a>Veroa ei lasketa tai veron summa on nolla.
 

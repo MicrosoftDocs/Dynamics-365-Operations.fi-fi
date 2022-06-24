@@ -1,6 +1,6 @@
 ---
 title: Numerosarjojen määrittäminen ohjatulla toiminnolla
-description: Tässä aiheessa selvitetään, miten kaikki pakolliset numerosarjat voidaan määrittää samanaikaisesti ohjatulla toiminnolla.
+description: Tässä artikkelissa selvitetään, miten kaikki pakolliset numerosarjat voidaan määrittää samanaikaisesti ohjatulla toiminnolla.
 author: SunilGarg
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7388a835147e1e8242463fee98c57c300d062877
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: cae739aad1166eee1abebe3c0adc7939bca55bc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847060"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>Numerosarjojen määrittäminen ohjatulla toiminnolla
 
 [!include [banner](../../includes/banner.md)]
 
-Numerosarjoja käytetään muodostamaan päätietotietueille ja niitä tarvitsevilla tapahtumatietueille luettavia, yksilöllisiä tunnisteita. Tunnisteen vaativaa päätietoa tai tapahtumatietuetta kutsutaan numellä viite. Ennen kuin voit luoda viitteelle uusia tietueita, määritä numerosarja ja kohdista se viitteeseen. Tässä aiheessa selvitetään, miten kaikki pakolliset numerosarjat voidaan määrittää samanaikaisesti ohjatulla toiminnolla. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+Numerosarjoja käytetään muodostamaan päätietotietueille ja niitä tarvitsevilla tapahtumatietueille luettavia, yksilöllisiä tunnisteita. Tunnisteen vaativaa päätietoa tai tapahtumatietuetta kutsutaan numellä viite. Ennen kuin voit luoda viitteelle uusia tietueita, määritä numerosarja ja kohdista se viitteeseen. Tässä artikkelissa selvitetään, miten kaikki pakolliset numerosarjat voidaan määrittää samanaikaisesti ohjatulla toiminnolla. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Organisaation hallinta > Numerosarjat > Numerosarjat**.
 2. Valitse **Luo**.

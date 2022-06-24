@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37698133a959792338abcc2abd75b6fa654177f6
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b684cf16b172432fc3bdb485be98a5c3476c8ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846952"
 ---
 # <a name="cash-discounts"></a>Käteisalennukset
 
@@ -30,7 +30,7 @@ Käteisalennukset määritetään ja jaetaan osto- ja myyntireskontrassa.  Käyt
 
 ## <a name="cash-discounts"></a>Käteisalennukset
 
-Asiakkaiden ja toimittajien käteisalennuksia luodaan Käteisalennukset-sivulla. Voit lisäksi määrittää Seuraava alennuskoodi -kentässä sarjan peräkkäisiä käteisalennuksia, jotka tulevat voimaan, kun edellisen vanhenee. Lisätietoja on myöhemmin tässä aiheessa kohdassa Esimerkki: käteisalennussarja. Jos lasku, hyvitystapahtuma (maksu tai hyvityslasku) tai molemmat annetaan jonain muuna valuuttana kuin yrityksen kirjanpitovaluuttana, käteisalennus lasketaan käyttämällä vaihtokurssia, joka perustuu maksun tai hyvityslaskun päivämäärään. Jos lasku tai luottoasiakirja annetaan eri yrityksille ja jos yrityksillä on eri kirjanpitovaluutat, vaihtokurssi haetaan laskun yrityksestä luottoasiakirjan päivämäärällä. Lisätietoja on myöhemmin tässä aiheessa kohdassa Esimerkki: käteisalennusten vaihtokurssit.
+Asiakkaiden ja toimittajien käteisalennuksia luodaan Käteisalennukset-sivulla. Voit lisäksi määrittää Seuraava alennuskoodi -kentässä sarjan peräkkäisiä käteisalennuksia, jotka tulevat voimaan, kun edellisen vanhenee. Lisätietoja on myöhemmin tässä artikkelissa kohdassa Esimerkki: käteisalennussarja. Jos lasku, hyvitystapahtuma (maksu tai hyvityslasku) tai molemmat annetaan jonain muuna valuuttana kuin yrityksen kirjanpitovaluuttana, käteisalennus lasketaan käyttämällä vaihtokurssia, joka perustuu maksun tai hyvityslaskun päivämäärään. Jos lasku tai luottoasiakirja annetaan eri yrityksille ja jos yrityksillä on eri kirjanpitovaluutat, vaihtokurssi haetaan laskun yrityksestä luottoasiakirjan päivämäärällä. Lisätietoja on myöhemmin tässä artikkelissa kohdassa Esimerkki: käteisalennusten vaihtokurssit.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Käteisalennuksen päätilin oletusjärjestys
 

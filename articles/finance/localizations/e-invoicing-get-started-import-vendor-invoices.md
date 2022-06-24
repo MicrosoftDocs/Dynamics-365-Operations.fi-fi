@@ -1,6 +1,6 @@
 ---
 title: Toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla
-description: Tässä aiheessa on tietoja toimittajan laskujen toimisesta sähköisen laskutuspalvelun avulla.
+description: Tässä artikkelissa on tietoja toimittajan laskujen toimisesta sähköisen laskutuspalvelun avulla.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 2d239bbafad9292ba6cef5534e778a2824a9cc5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "7983820"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865581"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla
 
@@ -30,7 +30,7 @@ ms.locfileid: "7983820"
 
 [!include [banner](../includes/preview-banner.md)]
 
-Tässä aiheessa on tietoja, joiden avulla voidaan aloittaa toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla. Aiheessa on ohjeet Regulatory Configuration Servicesin (RCS), Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin määrittämiseen, ja näitä ohjeita noudattamalla voidaan vastaanottaa toimittajan sähköisiä laskuja toimittajilta.
+Tässä artikkelissa on tietoja, joiden avulla voidaan aloittaa toimittajan laskujen tuominen sähköisen laskutuspalvelun avulla. Aiheessa on ohjeet Regulatory Configuration Servicesin (RCS), Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin määrittämiseen, ja näitä ohjeita noudattamalla voidaan vastaanottaa toimittajan sähköisiä laskuja toimittajilta.
 
 ## <a name="set-up-vendor-invoice-import-in-rcs"></a>Toimittajan laskujen tuonnin määrittäminen RCS:ssä
 Toimittajan laskun tuonti määritetään RCS:ssä seuraavasti:

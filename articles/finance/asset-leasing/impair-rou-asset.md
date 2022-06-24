@@ -1,6 +1,6 @@
 ---
 title: Käyttöoikeusomaisuuserän arvon alentaminen
-description: Tässä ohjeaiheessa kuvataan toiminto, joka tallentaa arvonalentumisen ja muuttaa ASC 842:n mukaista resurssin poistoaikataulua käyttöleasingsopimuksessa.
+description: Tässä artikkelissa kuvataan toiminto, joka tallentaa arvonalentumisen ja muuttaa ASC 842:n mukaista resurssin poistoaikataulua käyttöleasingsopimuksessa.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894110"
 ---
 # <a name="impair-right-of-use-assets"></a>Käyttöoikeusomaisuuserän arvon alentaminen
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Jos käyttöoikeusomaisuuserän kirjanpitosumma ei ole palautettavissa, käyttäjän on ehkä testattava, onko resurssin arvoa alennettu. Jos resurssin arvoa on alennettu, resurssin vuokraus ei voi tallentaa arvonalenemista ja oikaista poistoaikataulua vastaavasti. Tässä ohjeaiheessa kuvataan toiminto, joka tallentaa arvonalentumisen ja muuttaa ASC 842:n mukaista poistoaikataulua käyttöleasingsopimuksessa. Sama menetelmä koskee myös IFRS 16 -vuokrasopimuksia.
+Jos käyttöoikeusomaisuuserän kirjanpitosumma ei ole palautettavissa, käyttäjän on ehkä testattava, onko resurssin arvoa alennettu. Jos resurssin arvoa on alennettu, resurssin vuokraus ei voi tallentaa arvonalenemista ja oikaista poistoaikataulua vastaavasti. Tässä artikkelissa kuvataan toiminto, joka tallentaa arvonalentumisen ja muuttaa ASC 842:n mukaista poistoaikataulua käyttöleasingsopimuksessa. Sama menetelmä koskee myös IFRS 16 -vuokrasopimuksia.
 
 Jäljellä oleva käyttöoikeusomaisuuserän saldo kuoletetaan jäljellä olevien kausien määrän perusteella tasaisesti siitä huolimatta, onko vuokrasopimus luokitelty rahoitusleasingsopimukseksi IFRS 16:n avulla vai käyttöleasingsopimukseksi ASC 842:n avulla.
 
@@ -83,7 +83,7 @@ Seuraavissa taulukoissa ovat arvot, jotka on määritetty **Yleistiedot**- ja **
 
 ### <a name="steps"></a>Vaiheet
 
-1. Kun olet luonut vuokrasopimuksen aiemmin tässä ohjeaiheessa kuvatulla tavalla, siirry vuokrauskirjaan ja vahvista maksuaikataulu. Kirjaa sitten alkuperäinen tuloutuksen kirjauskansiovienti. ALkuperäisen käyttöoikeusomaisuuserän ja vuokrasopimusvelan on oltava 70 235,81 $. Tässä esimerkissä vuokrasopimus luokiteltiin käyttöleasingsopimukseksi ASC 842:n mukaan.
+1. Kun olet luonut vuokrasopimuksen aiemmin tässä artikkelissa kuvatulla tavalla, siirry vuokrauskirjaan ja vahvista maksuaikataulu. Kirjaa sitten alkuperäinen tuloutuksen kirjauskansiovienti. ALkuperäisen käyttöoikeusomaisuuserän ja vuokrasopimusvelan on oltava 70 235,81 $. Tässä esimerkissä vuokrasopimus luokiteltiin käyttöleasingsopimukseksi ASC 842:n mukaan.
 2. Suorita kirjauskansion eräprosessi kolme kertaa, jotta voit simuloida kolmen vuoden kulumista vuokrille, korkokuluille ja poistokuluille.
 3. Kun kaikki kolme erätyötä on suoritettu, siirry takaisin vuokrauskirjaan ja avaa velka- ja resurssitapahtumien taulukot tarkastellaksesi resurssin ja vuokrasopimusvelan nykyistä kirjanpitoarvoa. Kolmen vuoden kuluttua velan arvon on oltava noin -53 893,00 dollaria ja resurssin arvon noin 53 893,00 dollaria. 
 

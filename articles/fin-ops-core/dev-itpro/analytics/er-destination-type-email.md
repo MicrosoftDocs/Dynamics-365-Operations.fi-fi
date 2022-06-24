@@ -1,6 +1,6 @@
 ---
 title: Sähköpostin ER-kohteen tyyppi
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla määritetään sähköpostikohde.
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla määritetään sähköpostikohde.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 08d64b0f21e4957727de1e8f5f13f9067c0fbc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324005"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845654"
 ---
 # <a name="email-er-destination-type"></a>Sähköpostin ER-kohteen tyyppi
 
@@ -120,7 +120,7 @@ Syötä **Kaavasuunnittelija**-sivun **Kaava**-kenttään asiakirjakohtainen vii
 
 ![Sähköpostilähdetilin määritys.](./media/er_destinations-emaildefineaddresssource.gif)
 
-Jos määritetyn roolin tilinumerot ovat yksilöllisiä koko Microsoft Dynamics 365 Finance -esiintymässä, **Sähköpostilähteen yritys** -kenttä dialogi-ikuunassa **Sähköposti vastaanottajalle** voi jäädä tyhjäksi.
+Jos määritetyn roolin tilinumerot ovat yksilöllisiä koko Microsoft Dynamics 365 Finance -esiintymässä, **Sähköpostilähteen yritys** -kenttä dialogi-ikkunassa **Sähköposti vastaanottajalle** voi jäädä tyhjäksi.
 
 Voit myös joutua tilanteeseen, jossa [Yleisen osoitekirjan](../../fin-ops/organization-administration/overview-global-address-book.md) eri osapuolet on rekisteröity eri yrityksiin ([oikeushenkilöihin](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) siten, että ne kaikki käyttävät samaa tilinumeroa määritetyn roolin täyttämiseen. Tässä tapauksessa määritetyn roolin tilinumerot eivät ole yksilöiviä koko Finance-esiintymässä. Tämän vuoksi et voi eksplisiittisesti valita osapuolta vain tilinumeron perusteella. On myös määritettävä yritys, jolle osapuoli on rekisteröity määritetyn roolin täyttämiseksi. Valitse **Sido** -painike (ketjusymboli) **Sähköpostin yritys** -kentän vierestä **Sähköposti vastaanottajalle** -dialogi-ikkunassa avataksesi [Kaavasuunnittelija](general-electronic-reporting-formula-designer.md)-sivun. Voit sitten käyttää tätä sivua määrittääksesi kaavan, joka palauttaa suorituksen aikana sen yrityksen koodin, josta halutun lähteen on löydyttävä.
 
@@ -162,7 +162,7 @@ Seuraavassa kuvassa näkyy sellaisen ER-muodon rakenne, joka on määritetty tuo
 
 [![Lähteviö asiakirjoja luovan ER-muodon rakenne.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-Seuraavassa kuvassa näkyy tässä aiheessa kuvailtu prosessi yksittäisten komponenttien ryhmittelystä ja **Sähköposti**-kohteen ottamisesta käyttöön uudelle ryhmälle maksukehoitushuomautuksen lähettämiseksi liittyvien asiakaslaskujen kanssa sähköpostin liitteinä.
+Seuraavassa kuvassa näkyy tässä artikkelissa kuvailtu prosessi yksittäisten komponenttien ryhmittelystä ja **Sähköposti**-kohteen ottamisesta käyttöön uudelle ryhmälle maksukehotushuomautuksen lähettämiseksi liittyvien asiakaslaskujen kanssa sähköpostin liitteinä.
 
 [![Yksittäisten komponenttien ryhmittely ja Sähköpostikohteen ottaminen käyttöön.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

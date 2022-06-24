@@ -1,8 +1,8 @@
 ---
 title: Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
-description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) selitteiden käyttöä monikielisten raporttien suunnittelussa ja luonnissa.
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) selitteiden käyttöä monikielisten raporttien suunnittelussa ja luonnissa.
 author: NickSelin
-ms.date: 04/28/2022
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: c042d609d68544aa4be5d707109a15b2ab8d422c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845741"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Monikielisten raporttien suunnitteleminen sähköisessä raportoinnissa
 
@@ -142,6 +142,9 @@ Jos ER-muoto määritetään tällä tavoin, raportti luodaan käyttämällä va
 
 Jos viitatussa selitteessä ei ole muodon suorituskontekstin kielistä käännöstä, selitetekstissä käytetään sen sijaan kieltä EN-US.
 
+> [!TIP]
+> Voit määrittää muokattavan sähköisen raportoinnin muodon **KANSIO**-tyypin ja erillisten **TIEDOSTO**-osien tyyppien avulla, miten lähtevä tiedosto luodaan. Jos haluat antaa luodulle tiedostolle nimen, määritä ER:n [lauseke](er-formula-language.md) osan **Tiedostonimi**-parametria varten. Voit käyttää määritetyssä lausekkeessa selitteitä. Koska **Tiedostonimi** parametri on oletusarvoisesti kielestä riippumaton, tässä lausekkeessa viitattujen selitteiden teksti näkyy oletuskielellä EN-US suorituksen aikana. Versiossa 10.0.28 ja myöhemmissä versioissa voit kuitenkin ottaa käyttöön **Käytä Kieliasetus-parametria Tiedoston nimi -lausekkeelle** -ominaisuuden. **Tiedostonimi**-lauseke ottaa tämän jälkeen **Kieliasetukset**-parametrin huomioon laskennan yhteydessä.
+
 ## <a name="language"></a>Kieli
 
 ER tukee erilaisia tapoja määrittää luodun raportin kieli. **Muoto**-välilehden **Kieliasetukset**-kentässä voi valita seuraavat arvot:
@@ -198,7 +201,7 @@ ER-osan määritys tehdään sen ER-määrityksen luonnosversiossa, jossa muokat
 
 ![ER-määrityssivulla voi käyttää määrityksen Luonnos-tilaista versiota.](./media/er-multilingual-labels-configurations.png)
 
-Tarvittavat ER-selitteet voidaan lisätä ER-osaan aiemmin tässä ohjeaiheessa kuvatulla tavalla. Tällä tavoin voit määrittää ER-selitteiden tekstin, joiden kieli on EN-US. Tämän jälkeen ER-osan selitteet viedään sisäisellä ER-toiminnolla. Valitse muokattavan ER-osan sisältävän ER-määrityksen luonnosversio ja valitse **Vaihto \> Vie käyttöliittymätekstit**.
+Tarvittavat ER-selitteet voidaan lisätä ER-osaan aiemmin tässä artikkelissa kuvatulla tavalla. Tällä tavoin voit määrittää ER-selitteiden tekstin, joiden kieli on EN-US. Tämän jälkeen ER-osan selitteet viedään sisäisellä ER-toiminnolla. Valitse muokattavan ER-osan sisältävän ER-määrityksen luonnosversio ja valitse **Vaihto \> Vie käyttöliittymätekstit**.
 
 ![ER-määrityssivu, josta voi viedä ER-selitteitä valitusta määritysversiosta.](./media/er-multilingual-labels-export.png)
 
@@ -229,7 +232,7 @@ ER-versiointi määrittää selitteen määrityksen ER-osan määritteisiin. Sel
 
 Valmiilla [LISTOFFIELDS](er-functions-list-listoffields.md)-ER-funktiolla voi käyttää ER-selitteitä, jotka on määritetty joillekin ER-osien nimikkeille.
 
-Kuten aiemmin tässä ohjeaiheessa todettiin, jokaisen [mallin](#LinkModelEnum) tai [muodon](#LinkFormatEnum) ER-luettelointiarvon **Selite**- tai **Kuvaus**-määritteet voidaan linkittää ER-selitteeseen, jota voidaan käyttää soveltuvassa ER-osassa. ER-lausekkeen voi määrittää, kun **LISTOFFIELDS**-funktio kutsutaan käyttämällä ER-luettelointia argumenttina. Tämä lauseke palauttaa luettelon, joka sisältää kunkin tämän funktion argumentiksi määritetyn ER-luetteloinnin arvon tietueen. Jokainen tietue sisältää ER-luettelointiarvoon linkitetyn ER-selitteen arvon:
+Kuten aiemmin tässä artikkelissa todettiin, jokaisen [mallin](#LinkModelEnum) tai [muodon](#LinkFormatEnum) ER-luettelointiarvon **Selite**- tai **Kuvaus**-määritteet voidaan linkittää ER-selitteeseen, jota voidaan käyttää soveltuvassa ER-osassa. ER-lausekkeen voi määrittää, kun **LISTOFFIELDS**-funktio kutsutaan käyttämällä ER-luettelointia argumenttina. Tämä lauseke palauttaa luettelon, joka sisältää kunkin tämän funktion argumentiksi määritetyn ER-luetteloinnin arvon tietueen. Jokainen tietue sisältää ER-luettelointiarvoon linkitetyn ER-selitteen arvon:
 
 - **Selite**-määritteisiin linkitetyn ER-selitteen arvot tallennetaan palautetun tietueen **Selite**-kenttään.
 - **Kuvaus**-määritteisiin linkitetyn ER-selitteen arvot tallennetaan palautetun tietueen **Kuvaus**-kenttään.

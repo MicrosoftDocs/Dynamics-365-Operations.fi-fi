@@ -1,6 +1,6 @@
 ---
 title: Paranna sähköisen raportoinnin ratkaisujen suorituskykyä lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
-description: Tässä ohjeaiheessa kerrotaan, miten sähköisen raportoinnin ratkaisujen suorituskykyä voi parantaa lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
+description: Tässä artikkelissa kerrotaan, miten sähköisen raportoinnin ratkaisujen suorituskykyä voi parantaa lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850111"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Paranna sähköisen raportoinnin ratkaisujen suorituskykyä lisäämällä parametrisoidut LASKETTU KENTTÄ -tietolähteet.
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten voit [jäljittää suorituskykyä](trace-execution-er-troubleshoot-perf.md) suoritetuissa [sähköisen raportoinnin](general-electronic-reporting.md) muodoissa ja käyttää sitten näitä jäljitystietoja suorituskyvyn parantamisessa määrittämällä parametrisoitu **Laskettu kenttä** -tietolähde.
+Tässä artikkelissa kerrotaan, miten voit [jäljittää suorituskykyä](trace-execution-er-troubleshoot-perf.md) suoritetuissa [sähköisen raportoinnin](general-electronic-reporting.md) muodoissa ja käyttää sitten näitä jäljitystietoja suorituskyvyn parantamisessa määrittämällä parametrisoitu **Laskettu kenttä** -tietolähde.
 
 Osana sähköisen raportoinnin konfiguraation suunnittelua yritysasiakirjojen luomista varten määritetään menetelmä, jonka avulla tiedot haetaan sovelluksesta ja syötetään luotavaan tuotokseen. Kun parametrisoidun sähköisen raportoinnin **Laskettu kenttä** -tyyppinen tietolähde on suunniteltu, voit vähentää tietokantakutsujen määrää sekä vähentää merkittävästi aikaa, joka kuluu sähköisen raportoinnin muodon suorituksen tietojen keräämiseen kuluvaa aikaa ja käytettyjä kustannuksia.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-- Tässä ohjeaiheessa olevien esimerkkien suorittaminen edellyttää käyttöoikeutta johonkin seuraavaan [rooliin](../sysadmin/tasks/assign-users-security-roles.md):
+- Tässä artikkelissa olevien esimerkkien suorittaminen edellyttää käyttöoikeutta johonkin seuraavaan [rooliin](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Sähköisen raportoinnin kehittäjä
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
 - Yritykselle on asetettava **DEMF**.
-- Tämän ohjeaiheen [lisäyksen 1](#appendix1) vaiheiden mukaisesti voit ladata tämän ohjeaiheen esimerkkien suorittamisessa tarvittavien Microsoftin sähköisen raportoinnin näyteratkaisun komponentit.
-- Määritä tämän ohjeaiheen [lisäyksen 2](#appendix2) ohjeiden avulla sähköisen raportoinnin parametrien vähimmäismäärä, joka vaaditaan sähköisen raportoinnin kehystä varten Microsoftin sähköisen raportoinnin näyteratkaisin suorituskyvyn parantamiseksi.
+- Tämän artikkelin [lisäyksen 1](#appendix1) vaiheiden mukaisesti voit ladata tämän artikkelin esimerkkien suorittamisessa tarvittavien Microsoftin sähköisen raportoinnin näyteratkaisun komponentit.
+- Määritä tämän artikkelin [lisäyksen 2](#appendix2) ohjeiden avulla sähköisen raportoinnin parametrien vähimmäismäärä, joka vaaditaan sähköisen raportoinnin kehystä varten Microsoftin sähköisen raportoinnin näyteratkaisin suorituskyvyn parantamiseksi.
 
 ## <a name="import-the-sample-er-solution"></a>Sähköisen raportoinnin näyteratkaisun tuominen
 
@@ -48,7 +48,7 @@ Oletetaan, että sinun on suunniteltava uusi sähköisen raportoinnin ratkaisu, 
 Ensimmäinen vaihe on sähköisen raportoinnin näyteratkaisun tuominen toimittajatapahtumien luomista varten.
 
 1. Kirjaudu Microsoft Dynamics 365 Financen esiintymään, joka on valmisteltu yrityksellesi.
-2. Tässä aiheessa luodaan ja muokataan konfiguraatioita malliyritykselle **Litware, Inc.**. Varmista, että tämä konfiguraation tarjoaja on lisätty Finance-esiintymään ja merkitty aktiiviseksi. Lisätietoja on kohdassa [Määrityspalvelujen luonti ja merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Tässä artikkelissa luodaan ja muokataan konfiguraatioita malliyritykselle **Litware, Inc.**. Varmista, että tämä konfiguraation tarjoaja on lisätty Finance-esiintymään ja merkitty aktiiviseksi. Lisätietoja on kohdassa [Määrityspalvelujen luonti ja merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**-ruutu.
 4. Tuo **Konfiguraatiot** -sivulla lataamasi ER-kokoonpanot Financen edellytyksenä seuraavassa järjestyksessä: tietomalli, metatiedot, mallikartoitus, muoto. Luo kukin mukautus seuraavasti:
 
@@ -220,7 +220,7 @@ Näiden ohjeiden avulla voit käyttää **Laskettu kenttä** -tyyppistä tietol�
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Muokatun ER-ratkaisun suorittaminen jäljityksen suorittamista varten
 
-Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.
+Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän artikkelin aikaisemmissa jaksoissa esitetyt vaiheet.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>Suorituskykyjäljityksen käyttäminen mallin yhdistämismäärityksen oikaisujen analysoimisessa 
 

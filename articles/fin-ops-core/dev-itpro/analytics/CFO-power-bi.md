@@ -1,6 +1,6 @@
 ---
 title: Talousjohtajan yhteenvedon Power BI -sisältö
-description: Tässä ohjeaiheessa käsitellään talousjohtajan yhteenvetoa ja Microsoft Power BI -sisältöä.
+description: Tässä artikkelissa käsitellään talousjohtajan yhteenvedon Microsoft Power BI -sisältöä.
 author: kweekley
 ms.date: 08/24/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3eab89d55ec90f3b5937773502430bf317e491ae
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 1ea8f12102cc2fac1948027f7c15d45bf5d1b15d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416201"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881548"
 ---
 # <a name="cfo-overview-power-bi-content"></a>Talousjohtajan yhteenvedon Power BI -sisältö
 
 [!include [banner](../includes/banner.md)] 
 
-Tässä ohjeaiheessa käsitellään **talousjohtajan yhteenvetoa** ja Microsoft Power BI -sisältöä. Tämä Power BI sisältö koskee käyttäjiä, joilla on Microsoft Dynamics 365 for Finance and Operationsin versio 7.2. Jos käytössä on versio 7.3 tai sitä uudempi versio, lisätietoja on kohdassa [Taloushallinnon tiedot](financial-insights.md).
+Tässä artikkelissa käsitellään **talousjohtajan yhteenvedon** Microsoft Power BI -sisältöä. Tämä Power BI sisältö koskee käyttäjiä, joilla on Microsoft Dynamics 365 for Finance and Operationsin versio 7.2. Jos käytössä on versio 7.3 tai sitä uudempi versio, lisätietoja on kohdassa [Taloushallinnon tiedot](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 

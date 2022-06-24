@@ -1,6 +1,6 @@
 ---
 title: ER-ratkaisujen suorituskyvyn parantaminen vähentämällä ajon aikana haettujen taulukenttien määrää
-description: Tässä aiheessa selitetään suorituskyvyn parantaminen vähentämällä ajon aikana haettujen taulukenttien määrää.
+description: Tässä artikkelissa selitetään suorituskyvyn parantaminen vähentämällä ajon aikana haettujen taulukenttien määrää.
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847448"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>ER-ratkaisujen suorituskyvyn parantaminen vähentämällä ajon aikana haettujen taulukenttien määrää
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811954"
 
 Voit suunnitella [sähköisen raportoinnin](general-electronic-reporting.md) (ER) [muotoja](er-overview-components.md#format-components-for-outgoing-electronic-documents), jotka luovat lähteviä tiedostoja eri muodoissa. Kun asiakirja luodaan, ER-muoto kutsuu tietolähteitä, jotka määritettiin vastaavassa [ER-mallimäärityksessä](er-overview-components.md#model-mapping-component). Voit määrittää tietojen noutamisen käyttöoikeudet sovelluksen tauluihin, kyselyihin tai entiteetteihin käyttämällä ER-tietolähteitä, joiden tyyppi on *Taulukkotietueet*. Oletusarvon mukaan *Taulukkotietue*-tyypin tietolähde hakee kaikkien pyydettyjen tietueiden kenttien arvot. Voit kuitenkin konfiguroida tämäntyyppisen tietolähteen niin, että se hakee vain suoritettavan ER-muodon edellyttämät kenttäarvot. Tämän konfiguraation avulla voidaan vähentää tietojen noutamisen ja tietueiden välimuistiin tallentamisen suorittavan sovelluspalvelimen muistinkulutusta.
 
-Tässä ohjeaiheessa on lisätietoja *Taulukkotietue*-tyypin tietolähteiden noudettujen kenttien luettelon rajoittamisesta, kun suoritat tämän aiheen esimerkin.
+Tässä ohjeaiheessa on lisätietoja *Taulukkotietue*-tyypin tietolähteiden noudettujen kenttien luettelon rajoittamisesta, kun suoritat tämän artikkelin esimerkin.
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Esimerkki: Suorituksen aikana haettujen taulukenttien määrän pienentäminen
 
@@ -49,7 +49,7 @@ Seuraa vaiheita kohdassa [Määritä ER-kehys](er-quick-start2-customize-report.
 
 ### <a name="import-the-sample-er-configurations"></a>ER-mallikonfiguraation tuonti
 
-Jos et ole vielä suorittanut [Uuden sähköisen raportoinnin ratkaisun suunnitteleminen mukautetun raportin tulostamista varten](er-quick-start1-new-solution.md) -aiheen esimerkkiä, lataa XML-tiedostot ja tallenna ne paikallisesti seuraavia tarjotun ER-ratkaisun konfiguraatioita varten.
+Jos et ole vielä suorittanut [Uuden sähköisen raportoinnin ratkaisun suunnitteleminen mukautetun raportin tulostamista varten](er-quick-start1-new-solution.md) -artikkelin esimerkkiä, lataa XML-tiedostot ja tallenna ne paikallisesti seuraavia tarjotun ER-ratkaisun konfiguraatioita varten.
 
 | Sisällön kuvaus            | Tiedoston nimi |
 |--------------------------------|-----------|

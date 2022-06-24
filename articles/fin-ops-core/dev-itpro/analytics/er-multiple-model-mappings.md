@@ -1,6 +1,6 @@
 ---
 title: Yhtä mallin juurta koskevien useiden johdettujen yhdistämismääritysten hallinta
-description: Tässä aiheessa käsitellään yhdelle mallin juurelle määritettyjen useiden johdettujen yhdistämismääritysten hallintaa.
+description: Tässä artikkelissa käsitellään yhdelle mallin juurelle määritettyjen useiden johdettujen yhdistämismääritysten hallintaa.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324109"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892476"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Yhtä mallin juurta koskevien useiden johdettujen yhdistämismääritysten hallinta
 
@@ -32,9 +32,9 @@ ER-mallin yhdistämismääritysosat voivat sijaita ER-tietomallin [määrityksis
 
 Monilla määrityspalveluilla voi olla saman ER-tietomallin ER-mallin yhdistämismäärityksiä. Kyseisissä mallin yhdistämismäärityksissä voi olla eri juurimääritelmien yhdistämismääritysosia. Yhden [palvelun](general-electronic-reporting.md#Provider) tarjoamaa mallin yhdistämismääritystä on mahdollista käyttää yhdessä juurimääritelmässä ja toisen palvelun tarjoamaa mallin yhdistämismääritelmää toisessa juurimääritelmässä.
 
-Tässä aiheessa käsitellään menettelyjä, joilla hallitaan ER-tietomallin useita ER-mallin yhdistämismäärityksiä, kun niissä on erilaisia samalle juurimääritelmälle määritettyjä mallin yhdistämismääritysosia. 
+Tässä artikkelissa käsitellään menettelyjä, joilla hallitaan ER-tietomallin useita ER-mallin yhdistämismäärityksiä, kun niissä on erilaisia samalle juurimääritelmälle määritettyjä mallin yhdistämismääritysosia. 
 
-Tässä aiheessa käsiteltyjen menetelmien suorittaminen edellyttää, että käyttäjälle on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli.
+Tässä artikkelissa käsiteltyjen menetelmien suorittaminen edellyttää, että käyttäjälle on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli.
 
 Kaikkia seuraavia menetelmiä voidaan käyttää USMF-yrityksessä. Koodausta ei tarvita.
 

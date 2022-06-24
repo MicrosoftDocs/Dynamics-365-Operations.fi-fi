@@ -1,6 +1,6 @@
 ---
 title: Kansainvälisen tilinumero (IBAN) tarkistuksen hallinta
-description: Tässä ohjeaiheessa käsitellään kansainvälisen tilinumero (IBAN) tarkistuksen hallintaa.
+description: Tässä artikkelissa käsitellään kansainvälisen tilinumero (IBAN) tarkistuksen hallintaa.
 author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 3d825e8699fbe10e080cd85f15d3d86f8c780f15
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462761"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880896"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Kansainvälisen tilinumero (IBAN) tarkistuksen hallinta
 

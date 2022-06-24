@@ -1,6 +1,6 @@
 ---
-title: ER-muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
-description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) muotojen määrittämistä siten, että ne käyttävät yrityskohtaisesti määritettyjä parametreja.
+title: Sähköisen raportoinnin muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) muotojen määrittämistä siten, että ne käyttävät yrityskohtaisesti määritettyjä parametreja.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858825"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>ER-muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja
 
@@ -37,13 +37,13 @@ Sovelluskohtaisten ER-parametrien avulla tehokäyttäjät voivat määrittää E
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Tämän ohjeaiheen esimerkkien käyttämistä varten tarvitset Regulatory Configuration Services (RCS) -esiintymän, joka on valmisteltu samalle vuokraajalle kuin Finance ja jossa roolina on jokin seuraavista:
+Tämän artikkelin esimerkkien käyttämistä varten tarvitset Regulatory Configuration Services (RCS) -esiintymän, joka on valmisteltu samalle vuokraajalle kuin Finance ja jossa roolina on jokin seuraavista:
 
 - Sähköisen raportoinnin kehittäjä
 - Sähköisen raportoinnin toiminnallinen konsultti
 - Järjestelmänvalvoja
 
-Ohjeaiheen [LASKETTU KENTTÄ -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki](er-calculated-field-type.md) vaiheiden suorittaminen on suositeltavaa. Jos olet jo tehnyt kyseiset vaiheet, voit ohittaa seuraavan osan, **ER-määritysten tuonti RCS:ään**, vaiheet.
+[LASKETTU KENTTÄ -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki](er-calculated-field-type.md) -artikkelin vaiheiden suorittaminen on suositeltavaa. Jos olet jo tehnyt kyseiset vaiheet, voit ohittaa seuraavan osan, **ER-määritysten tuonti RCS:ään**, vaiheet.
 
 ## <a name="import-er-configurations-into-rcs"></a>ER-määritysten tuonti RCS:ään
 
@@ -58,7 +58,7 @@ Lataa ja tallenna seuraavat ER-konfiguraatiot paikallisesti.
 
 Kirjaudu seuraavaksi RCS-esiintymään.
 
-Tässä esimerkissä luodaan määritys esimerkkiyritykselle Litware, Inc. Ennen menettelyn suorittamista sinun on suoritettava RCS:n ohjeaiheen [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheet.
+Tässä esimerkissä luodaan määritys esimerkkiyritykselle Litware, Inc. Ennen menettelyn suorittamista sinun on suoritettava RCS:n [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -artikkelin vaiheet.
 
 1.  Valitse oletuskoontinäytössä **Sähköinen raportointi**.
 2.  Valitse **Raportointikonfiguraatiot**.
@@ -300,7 +300,7 @@ Toista edellä oleva vaiheet **LE-tietojen haun oppimismuoto** -muodon päänimi
 -   Mapping to learn parameterized calls.xml
 -   Model to learn parameterized calls.xml
 
-Lisätietoja määritetyn **LE-tietojen haun oppimismuoto** -ER-muodon käyttämisestä siten, että sillä määritetään yrityskohtainen verokoodijoukko suodattamaan verotapahtumia eri verotustasoilla, on ohjeaiheen [ER-muodon parametrien määrittäminen yrityskohtaisesti](er-app-specific-parameters-set-up.md) ohjeissa.
+Lisätietoja määritetyn **LE-tietojen haun oppimismuoto** -ER-muodon käyttämisestä siten, että sillä määritetään yrityskohtainen verokoodijoukko suodattamaan verotapahtumia eri verotustasoilla, on [ER-muodon parametrien määrittäminen yrityskohtaisesti](er-app-specific-parameters-set-up.md) -artikkelin ohjeissa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

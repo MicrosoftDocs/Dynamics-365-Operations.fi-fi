@@ -1,6 +1,6 @@
 ---
 title: Loma- ja poissaolosuunnitelman luominen
-description: Tässä aiheessa käsitellään eri tyyppisten lomien lomasuunnitelmien luontia Dynamics 365 Human Resourcesissa.
+description: Tässä artikkelissa käsitellään eri tyyppisten lomien lomasuunnitelmien luontia Dynamics 365 Human Resourcesissa.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad5d4b1e7b67d1148d01f393a2d548d06b84de9a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 42f7dbf53ad26107d9919d7e6ccfd6f9d3cff7c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858153"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Loma- ja poissaolosuunnitelman luominen
 
 > [!Important]
-> Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
+> Tässä artikkelissa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

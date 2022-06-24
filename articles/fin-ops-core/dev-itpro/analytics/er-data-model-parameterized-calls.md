@@ -1,6 +1,6 @@
 ---
 title: Sähköisen raportoinnin tietomallien parametrisoitujen kutsujen tukeminen
-description: Tässä aiheessa kerrotaan, miten sähköisen raportoinnin tietomallien parametrisoidut kutsut toteutetaan.
+description: Tässä artikkelissa kerrotaan, miten sähköisen raportoinnin tietomallien parametrisoidut kutsut toteutetaan.
 author: NickSelin
 ms.date: 03/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 968b0769607e9fdbed57c25b727ed44988a92913
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884254"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>Sähköisen raportoinnin tietomallien parametrisoitujen kutsujen tukeminen
 
@@ -160,7 +160,7 @@ Voit määrittää kaikki tietomallikentän parametrit, joille argumentti voidaa
 > [!NOTE]
 > Tietomallikentän parametrin oletusarvoa ei tueta. Jos lisäät parametrin tietomallin kenttään ja kyseisen tietomallin versio on jo julkaistu ja julkaistu, sinun on [pohjustettava](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) kaikki vastaavat mallivastaukset ja -muodot tämän mallin uuteen versioon, koska tämä tietomallin muutos ei ole taaksepäin yhteensopiva.
 
-Voit konfiguroida parametrisoituja tietomallikenttiä niin, että mallimäärityskutsut ovat muotokohtaisia. Tämän menetelmän avulla voit vähentää mallimääritysten määrää, joka on konfiguroitu useassa yksittäisessä tietomallissa. Tämän menetelmän avulla voit myös parantaa muotojen suoritustehoa ja lyhentää liiketoimintatiedostojen luomiseen tarvittavaa aikaa. Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
+Voit konfiguroida parametrisoituja tietomallikenttiä niin, että mallimäärityskutsut ovat muotokohtaisia. Tämän menetelmän avulla voit vähentää mallimääritysten määrää, joka on konfiguroitu useassa yksittäisessä tietomallissa. Tämän menetelmän avulla voit myös parantaa muotojen suoritustehoa ja lyhentää liiketoimintatiedostojen luomiseen tarvittavaa aikaa. Saat lisätietoja tästä toiminnosta suorittamalla tämän artikkelin esimerkin.
 
 ## <a name="example-use-parameterized-calls-of-er-data-models"></a>Esimerkki: Sähköisen raportoinnin tietomallien parametrisoitujen kutsujen käyttäminen
 

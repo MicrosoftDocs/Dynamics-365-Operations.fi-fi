@@ -1,6 +1,6 @@
 ---
 title: Ominaisuuksien hallinnan yleiskatsaus
-description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
+description: Tässä artikkelissa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850048"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -41,7 +41,7 @@ Ominaisuusluettelossa on seuraavat tiedot:
 - **Tila** – Symboli ilmaisee, onko ominaisuus otettu käyttöön (valintamerkki), poistettu käytöstä (tyhjä), aikataulutettu käyttöönotettavaksi (kello) tai onko se pakollinen (lukko), onko siinä tehtävä jotakin ennen käyttöönottoa (varoitussymboli) tai eikä sitä voi ottaa käyttöön (X). Tässä näkyvää asetusta käytetään kaikilla yrityksillä. Huomaa, että vaikka ominaisuus olisi otettu käyttöön, se on edelleen tietoturvan hallinnassa. Tämän vuoksi ne käyttäjät voivat käyttää ominaisuutta, joiden käyttöoikeusrooli sallii ominaisuuden käytön. Se on myös vain niiden yritysten käytettävissä, joihin käyttäjällä on käyttöoikeus.
 - **Ota käyttöön päivämäärä** – Päivämäärä, jolloin toiminto on otettu käyttöön tai on ajoitettu käyttöön.
 - **Ominaisuus lisätty** – toiminto lisättiin ympäristöön. Tämä päivämäärä syötetään automaattisesti, kun päivität ympäristöäsi kuukausittaisten julkaisujaksojen aikana.
-- **Ominaisuuden tila** – Ominaisuuden elinkaaren nykyinen tila: **esiversio**, **julkaistu** (näkyy tyhjänä), **käytössä oletusarvoisesti** ja **pakollinen**. Tiloja käsitellään enemmän jäljempänä tässä aiheessa. 
+- **Ominaisuuden tila** – Ominaisuuden elinkaaren nykyinen tila: **esiversio**, **julkaistu** (näkyy tyhjänä), **käytössä oletusarvoisesti** ja **pakollinen**. Tiloja käsitellään enemmän jäljempänä tässä artikkelissa. 
 - **Moduuli** – moduuli, johon uusi ominaisuus vaikuttaa.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Näiden ominaisuuksien **Ominaisuuden tila** -sarake on tyhjä. Ominaisuuksia, j
 
 ### <a name="on-by-default-features-optional"></a>Oletusarvoisesti käyttöönotetut ominaisuudet (valinnainen)
 
-Vaikka **oletusarvoisesti käyttöönotetuiksi** päivitetyt ominaisuudet otetaan oletusarvoisesti käyttöön, ne voidaan poistaa käytöstä. Kun ominaisuudet, jotka voidaan poistaa käytöstä, ovat olleet **Julkaistu**-tilassa vähintään kuusi kuukautta, niiden odotetaan siirtyvän tähän tilaa seuraavassa pääversion julkaisussa. Oletuksena on, että **Oletusarvoisesti käyttöönotettu**-tilaan siirtyvistä ominaisuuksista ilmoitetaan julkaisun aiheessa [Uudet ominaisuudet](../whats-new-changed.md). Ominaisuuden omistava tuotetiimi käynnistää päivityksen.
+Vaikka **oletusarvoisesti käyttöönotetuiksi** päivitetyt ominaisuudet otetaan oletusarvoisesti käyttöön, ne voidaan poistaa käytöstä. Kun ominaisuudet, jotka voidaan poistaa käytöstä, ovat olleet **Julkaistu**-tilassa vähintään kuusi kuukautta, niiden odotetaan siirtyvän tähän tilaa seuraavassa pääversion julkaisussa. Oletuksena on, että **Oletusarvoisesti käyttöönotettu**-tilaan siirtyvistä ominaisuuksista ilmoitetaan julkaisun artikkelissa [Uudet ominaisuudet](../whats-new-changed.md). Ominaisuuden omistava tuotetiimi käynnistää päivityksen.
 
 > [!NOTE]
 > Koska nämä ominaisuudet otetaan automaattisesti käyttöön, on tärkeää selvittää, onko organisaatio valmis ottamaan nämä ominaisuudet käyttöön vai tarvitaanko vielä lisäaikaa. Jos lisäaikaa tarvitaan, nämä ominaisuudet on ehkä poistettava tilapäisesti käytöstä. Kannattaa muistaa, että ominaisuuden siirtyminen **Oletusarvoisesti käyttöönotettu** -tilaan tapahtuu yleensä pääversion julkaisussa, ennen kuin ominaisuudesta on tarkoitus tulla **pakollinen**. Sen jälkeen ominaisuutta ei voi enää poistaa käytöstä. 

@@ -1,6 +1,6 @@
 ---
 title: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
-description: Tässä ohjeaiheessa on tietoja suorituskykyongelmien vianmäärityksestä sähköisen raportoinnin (ER) suorituskyvyn jäljitystoiminnon avulla.
+description: Tässä artikkelissa on tietoja suorituskykyongelmien vianmäärityksestä sähköisen raportoinnin (ER) suorituskyvyn jäljitystoiminnon avulla.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724390"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851948"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 
@@ -98,7 +98,7 @@ Oletetaan, että olet aloittanut uuden ER-ratkaisun suunnittelun, joka luo toimi
 
 Oletetaan, että olet suunnitellut ER-ratkaisun ensimmäisen version. Nyt haluat testata sitä esiintymässäsi ja analysoida suorituskykyä.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Sähköisen raportoinnin konfiguraation tuominen RCS:stä Finance and Operations -sovellukseen
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER-konfiguraation tuominen RCI:sta Finance and Operationsiin
 
 1. Kirjaudu sisään sovelluksen esiintymään.
 2. Tämän opetusohjelman avulla voit tuoda konfiguraatiot RCS-esiintymästäsi (jossa suunnittelet ER-komponentteja) esiintymääsi (jossa testaat ja lopulta käytät niitä). Siksi on varmistettava, että kaikki vaaditut tiedot on valmisteltu. Ohjeita on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](rcs-download-configurations.md).
@@ -305,27 +305,27 @@ Voi myös olla hyödyllistä vähentää LedgerTransTypeList-tietolähteeseen te
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Tuo muokattu ER-mallin yhdistämismääritys RCS:stä sovellukseen
 
-Toista tämän aiheen [Sähköisen raportoinnin konfiguraation tuominen RCS:stä Finance and Operations -sovellukseen](#import-configuration) -osiossa kuvatut vaiheet tuodaksesi **Suorituskyvyn jäljityskartoitus** -konfiguraation version 1.2.
+Toista tämän artikkelin [Tuo ER-konfiguraatio RCS:stä Finance and Operationsiin](#import-configuration) -osassa kuvatut vaiheet tuodaksesi **Suorituskyvyn jäljityskartoitus** -konfiguraation version 1.2.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Muokatun ER-ratkaisun suorittaminen jäljityksen suorittamista varten
 
 ### <a name="run-the-er-format"></a>Suorita ER-muoto
 
-Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.
+Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän artikkelin aikaisemmissa jaksoissa esitetyt vaiheet.
 
 ## <a name="work-with-the-execution-trace"></a>Suorituksen jäljityksen käsitteleminen
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Vie luotu jäljitys sovelluksesta
 
-Toista tämän aiheen [Vie luotu jäljitys sovelluksesta](#export-trace) -osiossa kuvatut vaiheet tallentaaksesi uuden suorituskyvyn jäljityksen paikallisesti.
+Toista tämän artikkelin [Vie luotu jäljitys sovelluksesta](#export-trace) -osassa kuvatut vaiheet tallentaaksesi uuden suorituskyvyn jäljityksen paikallisesti.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>Tuo tuotettu jälki RCS:ään.
 
-Toista tässä osassa aiemmin kerrotut vaiheet [Tuo luodut jäljet RCS](#import-trace) tuodaksesi uudet suorituskykyjäljet RCS:ään.
+Toista tämän artikkelin [Tuo luodut jäljet RCS](#import-trace) -osassa aiemmin kerrotut vaiheet tuodaksesi uudet suorituskykyjäljet RCS:ään.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys
 
-Suorita aiemmin tämän ohjeaiheen [Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys](#use-trace) -osassa kuvatut suorituskyvyn jäljitys -kohdan vaiheet, kun haluat analysoida viimeisimmän suorituskyvyn jäljityksen.
+Suorita aiemmin tämän artikkelin [Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys](#use-trace) -osassa kuvatut vaiheet, kun haluat analysoida viimeisimmän suorituskyvyn jäljityksen.
 
 Huomaa, että mallimääritykseen tehdyt oikaisut ovat poistaneet tietokannasta päällekkäisiä kyselyitä. Tämän mallimäärityksen tietokantataulukoihin ja tietolähteisiin tehtyjen kutsujen määrä on myös vähennetty. Näin ollen koko ER-ratkaisun suorituskyky on parantunut.
 
@@ -355,7 +355,7 @@ Jos käytät jotakin näistä versioista, voit analysoida luotuja suorituskyvyn 
 
 ### <a name="run-the-er-format"></a>Suorita ER-muoto
 
-Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.
+Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän artikkelin aikaisemmissa jaksoissa esitetyt vaiheet.
 
 Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa. Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla.
 
@@ -379,7 +379,7 @@ ER-kehykseen tehtyjen parannusten ansiosta PerfView-muodossa luotu suorituskyvyn
 
 ### <a name="run-the-er-format"></a>Suorita ER-muoto
 
-Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.
+Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän artikkelin aikaisemmissa jaksoissa esitetyt vaiheet.
 
 Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa. Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla. Tämä jäljitys sisältää nyt tiedot SQL-tietokannan käytöstä ER-muodon suorittamisen aikana.
 

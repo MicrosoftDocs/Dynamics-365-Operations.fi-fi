@@ -1,6 +1,6 @@
 ---
 title: Tulostimen ER-kohteen tyyppi
-description: Tässä aiheessa käsitellään tulostinkohteen määrittämistä sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla.
+description: Tässä artikkelissa käsitellään tulostinkohteen määrittämistä sähköisen raportoinnin (ER) muodon KANSIO- tai TIEDOSTO-osalla.
 author: NickSelin
 ms.date: 02/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2513fc4f86519c71602089cd46e9757813b1a708
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 826455d0901a45ef26755fd323ee2a2737b5eec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845567"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Tulostinkohde
 
@@ -34,7 +34,7 @@ Ennen aloittamista sinun on asennettava ja määritettävä asiakirjan reititysa
 
 ## <a name="make-the-printer-destination-available"></a>Tulostinkohteen käytettäväksi asettaminen
 
-Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoftin Dynamics 365 Financen kulloisessakin esiintymässä, siirry **Ominaisuuksien hallinta** -työtilaan ja ota seuraavat ominaisuudet käyttöön tässä järjestyksessä:
+Jos haluat, että **Tulostin**-kohde on käytettävissä Microsoft Dynamics 365 Financen kulloisessakin esiintymässä, siirry **Ominaisuuksien hallinta** -työtilaan ja ota seuraavat ominaisuudet käyttöön tässä järjestyksessä:
 
 1. Muunna sähköisen raportoinnin lähtevät asiakirjat Microsoft Office -muodoista PDF-muotoon
 2. Asiakirjareitityksen agentti lähtevien asiakirjojen sähköisen raportoinnin kohteena

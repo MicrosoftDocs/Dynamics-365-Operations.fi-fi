@@ -1,6 +1,6 @@
 ---
 title: Miten taloushallinnon dimensioiden tasaus määritetään?
-description: Tässä ohjeaiheessa kuvataan Täsmäyttävä taloushallinnon dimensio -ominaisuuden määrityksen ja käytön vaihtoehdot.
+description: Tässä artikkelissa kuvataan Täsmäyttävä taloushallinnon dimensio -ominaisuuden määrityksen ja käytön vaihtoehdot.
 author: kweekley
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-08-17
 ms.dyn365.ops.version: 10.0.210
-ms.openlocfilehash: cb3033a615200a358c1b28b0991bae4b84470ae0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: dd859629b0eb9f14fa4907699613382f3897d21d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720108"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878009"
 ---
 # <a name="how-do-i-set-up-balancing-financial-dimensions"></a>Miten taloushallinnon dimensioiden tasaus määritetään?
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan Täsmäyttävä taloushallinnon dimensio -ominaisuuden määrityksen ja käytön vaihtoehdot.
+Tässä artikkelissa kuvataan Täsmäyttävä taloushallinnon dimensio -ominaisuuden määrityksen ja käytön vaihtoehdot.
 
 ## <a name="symptom"></a>Oire
 
-Täsmäyttäviä taloushallinnon dimensioita voi määrittää kahdella tavalla. Ensimmäinen vaihtoehto on käyttää **Kirjanpito**-määrityssivun (**Kirjanpito \> Kirjanpidon määritys \> Kirjanpito**) **Täsmäyttävä taloushallinnon dimensio** -kenttää. Toinen vaihtoehto on käyttää **Taloushallinnon dimensiot** -sivun (**Kirjanpito > Tilikartta \> Dimensiot \> Taloushallinnon dimensiot**) **Vaadi dimension täsmäytystä** -kenttää. Tässä ohjeaiheessa kerrotaan näiden kahden vaihtoehdon ero.
+Täsmäyttäviä taloushallinnon dimensioita voi määrittää kahdella tavalla. Ensimmäinen vaihtoehto on käyttää **Kirjanpito**-määrityssivun (**Kirjanpito \> Kirjanpidon määritys \> Kirjanpito**) **Täsmäyttävä taloushallinnon dimensio** -kenttää. Toinen vaihtoehto on käyttää **Taloushallinnon dimensiot** -sivun (**Kirjanpito > Tilikartta \> Dimensiot \> Taloushallinnon dimensiot**) **Vaadi dimension täsmäytystä** -kenttää. Tässä artikkelissa kerrotaan näiden kahden vaihtoehdon ero.
 
 ## <a name="resolution"></a>Ratkaisu
 

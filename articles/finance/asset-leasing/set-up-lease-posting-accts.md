@@ -1,6 +1,6 @@
 ---
 title: Vuokrasopimuksen kirjaustilien määrittäminen
-description: Tässä ohjeaiheessa luetellaan kirjaustilit, joita tarvitaan resurssin vuokratapahtumissa, sekä selitetään, miten tilit kirjataan Vuokrasopimuksen kirjausparametrit -sivulla.
+description: Tässä artikkelissa luetellaan kirjaustilit, joita tarvitaan resurssin vuokratapahtumissa, sekä selitetään, miten tilit kirjataan Vuokrasopimuksen kirjausparametrit -sivulla.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 147d8cd93f9664039b2004b878dcaff96c8b6ce6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e3a0d8dd3bb3e58ca10b2efce0cc88a2f48d2de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859911"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Vuokrasopimuksen kirjaustilien määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa luetellaan kirjaustilit, joita tarvitaan resurssin vuokratapahtumissa, sekä selitetään, miten tilit kirjataan **Vuokrasopimuksen kirjausparametrit** -sivulla.
+Tässä artikkelissa luetellaan kirjaustilit, joita tarvitaan resurssin vuokratapahtumissa, sekä selitetään, miten tilit kirjataan **Vuokrasopimuksen kirjausparametrit** -sivulla.
 
 Jos haluat noudattaa 842 (ASC 842)- ja IFRS 16 -säädöksiä, sinun on ehkä luotava tilit tilikarttaan. Kuitenkaan kaikki tilit, jotka noudattavat ASC- ja IFRS-säädöksiä, eivät ole käyttöomaisuustilejä. ASC 842:n mukaisesti käyttöoikeusomaisuuserä on tallennettu sekä rahoitus- että käyttöleasingsopimuksiin. Nämä vuokrasopimukset ovat erillisiä käyttöomaisuudesta. (Voit silti ylläpitää käyttöoikeusomaisuuserää Käyttöomaisuuserät-kohdan avulla.)
 

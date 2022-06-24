@@ -1,6 +1,6 @@
 ---
-title: Skannattujen asiakirjojen laskuautomaatio
-description: Tässä ohjeaiheessa kerrotaan ominaisuuksista, joita voidaan käyttää toimittajalaskujen päästä päähän -automatisointiin. Tämä koskee myös laskuja, jotka sisältävät liitteitä.
+title: Skannattujen tiedostojen laskujen automatisointi
+description: Tässä artikkelissa kerrotaan ominaisuuksista, joita voidaan käyttää toimittajalaskujen päästä päähän -automatisointiin. Tämä koskee myös laskuja, jotka sisältävät liitteitä.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716391"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883413"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Skannattujen tiedostojen laskujen automatisointi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan tietoyksiköistä, joita voidaan käyttää toimittajalaskujen päästä päähän -automatisointiin. Tämä koskee myös laskuja, jotka sisältävät liitteitä.
+Tässä artikkelissa kerrotaan tietoyksiköistä, joita voidaan käyttää toimittajalaskujen päästä päähän -automatisointiin. Tämä koskee myös laskuja, jotka sisältävät liitteitä.
 
 Organisaatiot, jotka haluavat helpottaa ostoreskontran prosessejaan, määrittelevät usein laskutusprosessin yhdeksi tärkeimmäksi tehostettavaksi prosessialueeksi. Usein nämä organisaatiot siirtävät paperilaskujen käsittelyn ulkoiselle optisten merkkien tunnistuksen (OCR) palveluntarjoajalle. Ne saavat koneellisesti luettavat laskun metatiedot ja jokaisen laskun skannatun kuvan. Automaation avuksi luodaan "viimeisen osuuden" ratkaisu, joka mahdollistaa näiden artefaktien käytön laskutusjärjestelmissä. Nyt tämä viimeisen osuuden automaatio on valmiiksi käytössä laskuautomaatioratkaisun avulla.
 
@@ -46,7 +46,7 @@ Seuraavat komponentit sisältyvät kattavaan ratkaisuun:
 + Laskujen poikkeusten käsittely
 + Laskujen liitteiden rinnakkainen tarkastelu
 
-Tämä aiheohje sisältää myös näiden ratkaisukomponenttien yksityiskohtaiset kuvaukset.
+Tämä artikkeli sisältää myös näiden ratkaisukomponenttien yksityiskohtaiset kuvaukset.
 
 ## <a name="data-entities"></a>Tietoyksiköt
 

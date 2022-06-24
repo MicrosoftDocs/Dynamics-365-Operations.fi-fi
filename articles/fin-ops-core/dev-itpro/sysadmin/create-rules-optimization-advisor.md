@@ -1,6 +1,6 @@
 ---
 title: Optimointityökalun sääntöjen luominen
-description: Tässä ohjeaiheessa käsitellään uusien sääntöjen lisäämistä optimointityökaluun.
+description: Tässä artikkelissa käsitellään uusien sääntöjen lisäämistä optimointityökaluun.
 author: roxanadiaconu
 ms.date: 02/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a65a71da066d70cafc641aafe21538830a9ebe56b607316570ea2435398cda1c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b1d9b14cb67b1dd0a961f6f8618de37147a2c52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850902"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Optimointityökalun sääntöjen luominen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten **optimointityökalun** uusia sääntöjä luodaan. Voit esimerkiksi luoda uuden säännön, joka määrittää millä tarjouspyyntötapauksilla on tyhjä otsikko. Kun tapauksissa käytetään otsikoita, ne on helppo tunnistaa ja niissä on helppo tehdä hakuja. Tämä melko yksinkertainen esimerkki osoittaa, mitä optimointisäännöillä voi saavuttaa. 
+Tässä artikkelissa selitetään, miten **optimointityökalun** uusia sääntöjä luodaan. Voit esimerkiksi luoda uuden säännön, joka määrittää millä tarjouspyyntötapauksilla on tyhjä otsikko. Kun tapauksissa käytetään otsikoita, ne on helppo tunnistaa ja niissä on helppo tehdä hakuja. Tämä melko yksinkertainen esimerkki osoittaa, mitä optimointisäännöillä voi saavuttaa. 
 
 *Sääntö* tarkoittaa sovellustietojen tarkistusta. Jos säännön arvioima ehto täyttyy, luodaan mahdollisuuksia prosessien optimointiin ja tietojen parannukseen. Mahdollisuuksiin voidaan reagoida ja, valinnaisesti, toimintojen vaikutus voidaan mitata. 
 

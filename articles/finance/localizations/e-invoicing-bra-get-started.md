@@ -1,6 +1,6 @@
 ---
 title: Brasilian sähköisen laskutuksen käytön aloittaminen
-description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Brasilian sähköisen laskutuksen käytön Financessa ja Supply Chain Managementissa.
+description: Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Brasilian sähköisen laskutuksen käytön Financessa ja Supply Chain Managementissa.
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -9,30 +9,32 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 82bbf806d207af0b15406e4bec516420db7f2c06
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 74debbca4ee365e05f1c15d45179f0cd1d23c3e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984850"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846581"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Brasilian sähköisen laskutuksen käytön aloittaminen 
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa Brasilian sähköisen laskutuksen käytön. Ohjeaihe ohjaa sinua niissä konfigurointivaiheissa, jotka ovat maa-/aluekohtaisia Regulatory Configuration Services (RCS) -palveluissa ja täydentävät seuraavassa ohjeaiheessa kuvattuja vaiheita: [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Brasilian sähköisen laskutuksen käytön. Artikkeli ohjaa sinua niissä konfigurointivaiheissa, jotka ovat maa-/aluekohtaisia Regulatory Configuration Services (RCS) -palveluissa ja täydentävät artikkelissa kuvattuja vaiheita: [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Sähköisen laskutuksen maakohtainen konfigurointi Brasilian NF-e (BR) – sähköinen laskutus -ominaisuudelle
 
 Osa **Brasilian NF-e (BR) – sähköinen laskutus** -ominaisuuden parametreista julkaistaan oletusarvoilla. Tarkista ja päivitä tarvittaessa arvot liiketoimintasi tarpeisiin sopivaksi, ennen kuin otat sähköisen laskutuksen käyttöön ominaisuuden palveluympäristössä.
 
-Tämä os täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfigurointi sähköisen laskutuksen ominaisuudelle** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+Tämä osa täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfigurointi sähköisen laskutuksen ominaisuudelle** -osaa artikkelissa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
 2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että luomasi sähköisen laskutuksen **Brasilian NF-e (BR)** -ominaisuus on valittuna.
@@ -51,7 +53,7 @@ Tämä os täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfiguroint
 
 Suorita nämä vaiheet, ennen kuin otat sovelluksen määritykset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa.
 
-Tämä os täydentää **Sovellusetusten maa-/aluekohtainen konfigurointi** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+Tämä osa täydentää **Sovellusasetusten maa-/aluekohtainen konfigurointi** -osaa artikkelissa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
 2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että sähköisen laskutuksen **Brasilian NF-e (BR)** -ominaisuus on valittuna.
@@ -71,7 +73,7 @@ Tämä os täydentää **Sovellusetusten maa-/aluekohtainen konfigurointi** -osa
 
 Osa **Brasilian NFS-e ABRASF Curitiba (BR) – sähköinen laskutus** -ominaisuuden parametreista julkaistaan oletusarvoilla. Tarkista ja päivitä tarvittaessa arvot liiketoimintasi tarpeisiin sopivaksi, ennen kuin otat sähköisen laskutuksen käyttöön ominaisuuden palveluympäristössä.
 
-Tämä os täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfigurointi sähköisen laskutuksen ominaisuudelle** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+Tämä osa täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfigurointi sähköisen laskutuksen ominaisuudelle** -osaa artikkelissa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
 2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että luomasi sähköisen laskutuksen **Brasilian NFS-e ABRASF Curitiba (BR)** -ominaisuus on valittuna.
@@ -96,7 +98,7 @@ Tämä os täydentää **Sähköisen laskutuksen maa-/aluekohtainen konfiguroint
 
 Suorita nämä vaiheet, ennen kuin otat sovelluksen määritykset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa.
 
-Tämä os täydentää **Sovellusetusten maa-/aluekohtainen konfigurointi** -osaa ohjeaiheessa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
+Tämä osa täydentää **Sovellusasetusten maa-/aluekohtainen konfigurointi** -osaa artikkelissa [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md).
 
 1. Valitse RCS:ssä **Globalisaatio-ominaisuus** -työtilan **Toiminnot**-osassa **Sähköinen laskutus** -ruutu.
 2. Varmista **Sähköisen laskutuksen ominaisuudet** -sivulla, että sähköisen laskutuksen **Brasilian NFS-e ABRASF Curitiba (BR)** -ominaisuus on valittuna.

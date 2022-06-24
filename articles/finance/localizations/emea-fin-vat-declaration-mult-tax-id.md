@@ -1,6 +1,6 @@
 ---
 title: Tuki useille ALV-rekisteröintinumeroille Suomen ALV-palautuksissa
-description: Tässä ohjeaiheessa on tietoja useiden arvonlisäveron rekisteröintinumeroiden tuesta Suomen alv-palautuksessa.
+description: Tässä artikkelissa on tietoja useiden arvonlisäveron rekisteröintinumeroiden tuesta Suomen alv-palautuksessa.
 author: liza-golub
 ms.date: 03/21/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Finland
 ms.author: elgolu
 ms.search.validFrom: 2022-03-12
 ms.dyn365.ops.version: AX 10.0.24
-ms.openlocfilehash: d1945b70f6ae3efdb3898311c9d531e5f46b18b2
-ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
+ms.openlocfilehash: b8ab6b3ddb27672d3fa62cea15771982c8f41d85
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8466880"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855311"
 ---
 # <a name="support-for-multiple-vat-registration-numbers-in-the-vat-return-of-finland"></a>Tuki useille ALV-rekisteröintinumeroille Suomen ALV-palautuksissa
 

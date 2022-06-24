@@ -1,6 +1,6 @@
 ---
 title: Automaattinen tilitys ja priorisointi
-description: Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
+description: Tässä artikkelissa kuvataan, kuinka tapahtumat selvitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712255"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855517"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automaattinen tilitys ja priorisointi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
+Tässä artikkelissa kuvataan, kuinka tapahtumat selvitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 
 Sinulla on kaksi vaihtoehtoa, kun täsmäytät maksuja laskujen ja muiden tapahtumien kanssa. Voit manuaalisesti valita täsmäytettävät tapahtumat, tai järjestelmä voi valita tapahtumat automaattisesti automaattisella tilitystoiminnolla. Voit myös mukauttaa automaattisten tilitysten käsittelyä **Priorisoi selvitys** -vaihtoehdon avulla. Nämä asetukset ovat osa tilityksen parametreja, joka on määritetty **Myyntireskontran parametrit** -sivulla. Tapahtumien automaattinen täsmäytystapa voi poiketa automaattiseen täsmäytykseen käyttämästäsi menetelmästä riippuen. Käytettävissä ovat seuraavat menetelmät:
 

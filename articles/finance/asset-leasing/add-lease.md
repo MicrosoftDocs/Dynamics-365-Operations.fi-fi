@@ -1,6 +1,6 @@
 ---
 title: Vuokrasopimuksen lisääminen tai kopioiminen (esiversio)
-description: Tässä aiheessa kuvataan, miten uusi vuokrasopimus luodaan antamalla sille tietoja resurssin vuokrauksesta tai kopioimalla tiedot olemassa olevasta vuokrasopimuksesta.
+description: Tässä artikkelissa kuvataan, miten uusi vuokrasopimus luodaan antamalla sille tietoja resurssin vuokrauksesta tai kopioimalla tiedot olemassa olevasta vuokrasopimuksesta.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880929"
 ---
 # <a name="add-or-copy-leases-preview"></a>Vuokrasopimuksen lisääminen tai kopioiminen (esiversio)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten vuokrasopimus luodaan alusta alkaen resurssin vuokrauksessa ja miten vuokrasopimus luodaan kopioimalla olemassa oleva vuokrasopimus. Vuokrasopimuksen luontiprosessi alusta alkaen sisältää uuden vuokrasopimuksen tietojen syöttämisen ja uuden vuokrasopimusaikataulun luomisen. Kun vähintään yksi vuokrasopimus on määritetty, voi olla helpompaa kopioida tietoja olemassa olevasta vuokrasopimuksesta ja muokata sitten tietoja tarpeen mukaan uuden vuokrasopimuksen luomiseksi.
+Tässä artikkelissa kerrotaan, miten vuokrasopimus luodaan alusta alkaen resurssin vuokrauksessa ja miten vuokrasopimus luodaan kopioimalla olemassa oleva vuokrasopimus. Vuokrasopimuksen luontiprosessi alusta alkaen sisältää uuden vuokrasopimuksen tietojen syöttämisen ja uuden vuokrasopimusaikataulun luomisen. Kun vähintään yksi vuokrasopimus on määritetty, voi olla helpompaa kopioida tietoja olemassa olevasta vuokrasopimuksesta ja muokata sitten tietoja tarpeen mukaan uuden vuokrasopimuksen luomiseksi.
 
 ## <a name="create-a-lease"></a>Vuokrasopimuksen luominen
 

@@ -1,6 +1,6 @@
 ---
 title: Poistokirjojen päivityksen yleiskatsaus
-description: Tässä aiheessa kuvataan nykyiset käyttöomaisuuden kirjatoiminto. Tämä toiminto perustuu arvomallitoimintoon, joka oli käytettävissä aiemmissa versioissa, mutta se sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyneet toiminnot.
+description: Tässä artikkelissa kuvataan nykyiset käyttöomaisuuden kirjatoiminto. Tämä toiminto perustuu arvomallitoimintoon, joka oli käytettävissä aiemmissa versioissa, mutta se sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyneet toiminnot.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b43c499928988e98cae63b85f528b8a71e042cc7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 784ec32ae886ef7ea9342b085f893eeeec761961
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713639"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855488"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Poistokirjojen päivityksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan nykyiset käyttöomaisuuden kirjatoiminto. Tämä toiminto perustuu arvomallitoimintoon, joka oli käytettävissä aiemmissa versioissa, mutta se sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyneet toiminnot. Arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, jota kutsutaan kirjaksi. Kirjatoiminnon avulla voit käyttää yksittäistä sivujen, kyselyjen ja raporttien sarjaa kaikkiin organisaation käyttöomaisuusprosesseihin. Tämä aihe sisältää joitakin asioita, jotka on otettava huomioon ennen päivittämistä. 
+Tässä artikkelissa kuvataan nykyiset käyttöomaisuuden kirjatoiminto. Tämä toiminto perustuu arvomallitoimintoon, joka oli käytettävissä aiemmissa versioissa, mutta se sisältää myös kaikki aiemmin pelkästään poistokirjoihin sisältyneet toiminnot. Arvomallin toiminnot ja poistokirjatoiminnot on yhdistetty yhdeksi käsitteeksi, jota kutsutaan kirjaksi. Kirjatoiminnon avulla voit käyttää yksittäistä sivujen, kyselyjen ja raporttien sarjaa kaikkiin organisaation käyttöomaisuusprosesseihin. Tämä artikkeli sisältää joitakin asioita, jotka on otettava huomioon ennen päivittämistä. 
 
 Päivitysprosessi siirtää aiemmin määritetyt asetukset ja kaikki olemassa olevat tapahtumat uuden kirjan rakenteeseen. Arvomallit säilyvät nykyisellään, kirjana joka tekee kirjauksia kirjanpitoon. Poistokirjat siirretään kirjaan, jonka Kirjaa kirjanpitoon -asetus on Ei. Poistokirjan kirjauskansioiden nimet siirretään kirjanpidon kirjauskansion nimeen, jonka kirjanpitotasoksi on määritetty Ei mitään. Poistokirjatapahtumat siirretään käyttöomaisuustapahtumiin.
 

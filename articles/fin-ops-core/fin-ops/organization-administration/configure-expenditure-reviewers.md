@@ -1,6 +1,6 @@
 ---
 title: Menojen tarkistajien määrittäminen
-description: Tässä aiheessa kuvataan, kuinka menojen tarkistajia käytetään valitsemaan dynaamisesti käyttäjä, jolle työnkulkutehtävä, hyväksyntä tai manuaalinen päätös on kohdistettu.
+description: Tässä artikkelissa kuvataan, kuinka menojen tarkistajia käytetään valitsemaan dynaamisesti käyttäjä, jolle työnkulkutehtävä, hyväksyntä tai manuaalinen päätös on kohdistettu.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070143"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863220"
 ---
 # <a name="configure-expenditure-reviewers"></a>Menojen tarkistajien määrittäminen
 [!include[banner](../includes/banner.md)]
@@ -75,7 +75,7 @@ Kun ostotilaus luodaan, **Projekti**-kenttä on määritettävä. Jos et vaadi p
 
 ## <a name="set-up-expenditure-reviewers"></a>Menojen tarkistajien määrittäminen
 
-Tässä esimerkissä näytetään, miten voit määrittää ostosehdotusten menojen tarkistajan. Jos haluat määrittää muun tyyppisiä menojen tarkistajia, korvaa vaiheessa 1 oleva siirtymispolku asiaankuuluvalla polulla tämän ohjeaiheen aiemman [Menojen tarkistajien tyypit](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) -osion taulukosta.
+Tässä esimerkissä näytetään, miten voit määrittää ostosehdotusten menojen tarkistajan. Jos haluat määrittää muun tyyppisiä menojen tarkistajia, korvaa vaiheessa 1 oleva siirtymispolku asiaankuuluvalla polulla tämän artikkelin aiemman [Menojen tarkistajien tyypit](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) -osan taulukosta.
 
 1. Siirry kohtaan **Hankinta \> Asetukset \> Käytännöt \> Ostoehdotusten menojen tarkistajat**.
 2. Valitse **Ostoehdotusten menojen tarkistajat** -sivulta **Uusi**.
