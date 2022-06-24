@@ -1,6 +1,6 @@
 ---
 title: Vuokrasopimusten muuttaminen
-description: Ohjeaiheessa kerrotaan, miten vuokrasopimusta muutetaan. Oikaisu voi olla tarpeen, jos vuokra-aikoja muutetaan, vuokrasopimusta pidennetään tai muita ehtoja muutetaan.
+description: Artikkelissa kerrotaan, miten vuokrasopimusta muutetaan. Oikaisu voi olla tarpeen, jos vuokra-aikoja muutetaan, vuokrasopimusta pidennetään tai muita ehtoja muutetaan.
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 89ec876c9bd967107635eb2955209a4dcb95cde5
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48d1a261a43d6e3a68dfc0aae6f06c0d7d6b82db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712171"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898324"
 ---
 # <a name="adjust-leases"></a>Vuokrasopimusten muuttaminen
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Ohjeaiheessa kerrotaan, miten vuokrasopimusta muutetaan. Oikaisu voi olla tarpeen, jos vuokra-aikoja muutetaan, vuokrasopimusta pidennetään tai muita ehtoja muutetaan. Resurssin vuokraus noudattaa ASC 842:n ja IFRS 16:n ohjeita vuokrasopimuksen muokkauksesta. ASC 842-20-15-1 määrittää vuokrasopimuksen muokkauksen miksi tahansa sopimuksen ehtojen muutokseksi, jos se muuttaa vuokrasopimuksen laajuutta tai kohdetta. IFRS 16:n kappale 39 määrittää, että vuokralle ottajan on uudelleenarvostettava vuokrasopimusvelka niin, että se vastaa vuokrien muutoksia.
+Artikkelissa kerrotaan, miten vuokrasopimusta muutetaan. Oikaisu voi olla tarpeen, jos vuokra-aikoja muutetaan, vuokrasopimusta pidennetään tai muita ehtoja muutetaan. Resurssin vuokraus noudattaa ASC 842:n ja IFRS 16:n ohjeita vuokrasopimuksen muokkauksesta. ASC 842-20-15-1 määrittää vuokrasopimuksen muokkauksen miksi tahansa sopimuksen ehtojen muutokseksi, jos se muuttaa vuokrasopimuksen laajuutta tai kohdetta. IFRS 16:n kappale 39 määrittää, että vuokralle ottajan on uudelleenarvostettava vuokrasopimusvelka niin, että se vastaa vuokrien muutoksia.
 
 ASC 842- ja IFRS 16 -säädöksiä noudattavissa organisaatioissa vuokrasopimus arvioidaan uudelleen niin, että se vastaa tulevan vähimmäisvuokran nykyisen arvon muutosta. Jos tämä arvo kasvaa, luotu kirjauskansiovienti veloitetaan käyttöoikeusomaisuuserän tililtä ja hyvitetään vuokrasopimusvelan tilille uuden ja edellisen arvon välisenä erona. Jos arvo pienenee, kirjauskansiovienti veloitetaan vuokrasopimusvelan tililtä ja ero hyvitetään käyttöoikeusomaisuuserän tilille.
 

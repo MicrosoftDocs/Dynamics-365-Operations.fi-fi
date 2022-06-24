@@ -1,6 +1,6 @@
 ---
 title: Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen
-description: Tässä ohjeaiheessa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan.
+description: Tässä artikkelissa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc4d72fb688733b9c1547346c520dd9d77a3b12f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751488"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883683"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan. Tämä toiminto takaa, että käyttäjät näkevät vain Power BI -tietoja, joihin heillä on käyttöoikeus.
+Tässä artikkelissa kerrotaan, miten Kustannuslaskennan käyttöoikeustason tietoturva täytetään Microsoft Power BI:n rivitason tietoturvaan. Tämä toiminto takaa, että käyttäjät näkevät vain Power BI -tietoja, joihin heillä on käyttöoikeus.
 
 ## <a name="overview"></a>Yleiskuvaus
 

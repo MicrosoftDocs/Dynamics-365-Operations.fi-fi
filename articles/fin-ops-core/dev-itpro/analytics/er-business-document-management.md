@@ -1,6 +1,6 @@
 ---
 title: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
-description: Tässä ohjeaiheessa on tietoja ER-kehyksen liiketoiminnan asiakirjojen hallintatoiminnon käyttämisestä.
+description: Tässä artikkelissa on tietoja ER-kehyksen liiketoiminnan asiakirjojen hallintatoiminnon käyttämisestä.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903614"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
@@ -50,7 +50,7 @@ Täydellinen luettelo kaikista lokakuun 2020 julkaisun suunnitelluista raporteis
 
 Lisää raportteja tulee saataville tulevissa julkaisuissa. Lisäraporttien erityisilmoitukset lähetetään erikseen. Lisätietoja tällä hetkellä saatavilla olevien raporttien luettelon tarkistamisesta on jäljempänä kohdassa [Luettelo Financessa julkaistuista määritettäviä liiketoiminta-asiakirjoja tukevista ER-määrityksistä](#list-of-configurations-cbd).
 
-Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
+Saat lisätietoja tästä toiminnosta suorittamalla tämän artikkelin esimerkin.
 
 ## <a name="configure-er-parameters"></a>Konfiguroi ER-parametrit
 
@@ -231,7 +231,7 @@ Yrityskäyttäjät voivat käyttää yrityksen asiakirjamalleja muokkausta varte
 - **Järjestelmänvalvoja**-rooliin määritetyt käyttäjät.
 - Käyttäjät, jotka on määritetty rooliin, joka pystyy suorittamaan toiminnon **Liiketoiminta-asiakirjamallien hallinta** (AOT-nimi **ERBDManageTemplates**).
 
-Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasiakirjanhallinnan työtilassa. Ennen kuin suoritat nämä toimet, tämän ohje aiheen kaikki edellä mainitut toimenpiteet on suoritettava loppuun.
+Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasiakirjanhallinnan työtilassa. Ennen kuin suoritat nämä toimet, tämän artikkelin kaikki edellä mainitut toimenpiteet on suoritettava loppuun.
 
 1. Kirjaudu sisään käyttäjänä, jolla on Liiketoiminta-asiakirjan hallintatyötilan käyttöoikeus.
 2. Avaa liiketoiminta-asiakirjojen hallinnan työtila.

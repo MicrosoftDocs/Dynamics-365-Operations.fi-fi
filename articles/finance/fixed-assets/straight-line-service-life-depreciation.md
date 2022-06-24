@@ -1,6 +1,6 @@
 ---
 title: Käyttöikään perustuva tasapoisto
-description: Tässä aiheessa on yleiskuvaus käyttöaikaan perustuvasta tasapoistomenetelmästä.
+description: Tässä artikkelissa on yleiskuvaus käyttöikään perustuvasta tasapoistomenetelmästä.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726666"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896460"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Käyttöikään perustuva tasapoisto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on yleiskuvaus käyttöaikaan perustuvasta tasapoistomenetelmästä.
+Tässä artikkelissa on yleiskuvaus käyttöikään perustuvasta tasapoistomenetelmästä.
 
 Jos määrität käyttöomaisuudelle poistoprofiilin ja valitset Tasapoisto - käyttöaika -asetuksen Poistoprofiilit-sivun Menetelmä-kentästä, niiden käyttöomaisuuserien poisto, joille on määritetty tämä poistoprofiili, perustuu käyttöomaisuuden jäljellä olevaan käyttöikään. Tavallisesti poiston määrä on tällöin sama kullakin poistojaksolla. 
 
@@ -41,7 +41,7 @@ Voit valita Poistoprofiilit-sivulla Poistovuosi-kenttään joko Kalenteri tai Ti
 
 Jos valitset Poistovuosi-kentän arvoksi Kalenterivuosi, järjestelmä olettaa kauden olevan 1. tammikuuta–31. joulukuuta, vaikka kirjanpidon vuosikalenteri olisikin määritetty toisin. 
 
-Kalenteri-vaihtoehto päivittää poistokannan, joka on tavallisesti nettokirjanpitoarvo vähennettynä jäännösarvolla, kunkin vuoden tammikuun 1. päivänä. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
+Kalenteri-vaihtoehto päivittää poistokannan, joka on tavallisesti nettokirjanpitoarvo vähennettynä jäännösarvolla, kunkin vuoden tammikuun 1. päivänä. Tämän artikkelin myöhemmässä esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
 
 Jos valitset Kalenteri-vaihtoehdon, Kausiväli-kentässä ovat käytettävissä seuraavat vaihtoehdot, jotka määrittävät poiston jaksotuksen kirjauspäivät ja -määrät kalenterivuoden aikana:
 - Vuosittain – summa kirjataan 31. joulukuuta.

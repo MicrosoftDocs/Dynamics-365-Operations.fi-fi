@@ -1,6 +1,6 @@
 ---
 title: Laskuttamaton tuotto
-description: Tässä aiheessa kuvataan, kuinka nimikkeet ja tilit määritetään käyttämään laskuttamattoman tuoton ominaisuutta tilauslaskutuksessa.
+description: Tässä artikkelissa kuvataan, kuinka nimikkeet ja tilit määritetään käyttämään laskuttamattoman tuoton ominaisuutta tilauslaskutuksessa.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a70786291822a85ec41c98ab8ce706f2ad79b08d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691242"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879679"
 ---
 # <a name="unbilled-revenue"></a>Laskuttamaton tuotto
 
-Tässä aiheessa kuvataan laskuttamattoman tuoton ominaisuutta, jonka avulla voit sisällyttää taseeseen kokonaisten laskutusaikataulujen summat. Nämä summat sisällytetään laskuttamattomaan tuottotiliin ja laskuttamattoman tuoton vastatiliin, ja sopimus laskutetaan erissä.
+Tässä artikkelissa kuvataan laskuttamattoman tuoton ominaisuutta, jonka avulla voit sisällyttää taseeseen kokonaisten laskutusaikataulujen summat. Nämä summat sisällytetään laskuttamattomaan tuottotiliin ja laskuttamattoman tuoton vastatiliin, ja sopimus laskutetaan erissä.
 
 ## <a name="set-up-unbilled-revenue"></a>Laskuttamattoman tuoton määritys
 

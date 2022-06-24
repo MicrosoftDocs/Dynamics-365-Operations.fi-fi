@@ -1,6 +1,6 @@
 ---
 title: Verolaskennan aloittaminen
-description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää verolaskennan.
+description: Tässä artikkelissa kuvataan, kuinka voit määrittää verolaskennan.
 author: wangchen
 ms.date: 03/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685908"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855280"
 ---
 # <a name="get-started-with-tax-calculation"></a>Verolaskennan aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja verolaskennan käytön aloittamisesta. Tämän aiheen osat opastavat sinua Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicen (RCS) ja Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin korkean tason suunnittelu- ja määritysvaiheissa. 
+Tässä artikkelissa on tietoja verolaskennan käytön aloittamisesta. Tämän artikkelin osat opastavat sinua Microsoft Dynamics Lifecycle Servicesin (LCS), Regulatory Configuration Servicen (RCS) ja Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin korkean tason suunnittelu- ja määritysvaiheissa. 
 
 Asetukset koostuvat kolmesta päävaiheesta.
 
@@ -77,11 +77,11 @@ Kun olet suorittanut nämä vaiheet, seuraavat asetukset synkronoidaan automaatt
 - Arvonlisäveroryhmät
 - Nimikkeiden arvonlisäveroryhmät
 
-Loput tämän ohjeaiheen osat sisältävät tarkempia tietoja määritysvaiheista.
+Loput tämän artikkelin osat sisältävät tarkempia tietoja määritysvaiheista.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin voit suorittaa tämän ohjeaiheen loput vaiheet, seuraavien edellytysten on toteuduttava:<!--TO HERE-->
+Ennen kuin voit suorittaa tämän artikkelin loput vaiheet, seuraavien edellytysten on toteuduttava:<!--TO HERE-->
 
 - LCS-tilin käyttöoikeus ja sellainen käyttöönotettu LCS-projekti, jonka vähintään tason 2 ympäristössä on käytössä Dynamics 365:n versio 10.0.21 tai uudempi.
 - Organisaatiolle on luotava RCS-ympäristö ja käytössä on oltava tilin käyttöoikeus. Lisätietoja RCS-ympäristön luomisesta on kohdassa [Regulatory Configuration Servicen yleiskatsaus](rcs-overview.md).
@@ -212,7 +212,7 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     | Myynti            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > Jos verotettavan asiakirjan rivien oletusarvoinen arvonlisäveroryhmä on oikein, jätä tämä matriisi tyhjäksi. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Suorituksenaikainen rakenne](#runtime).
+    > Jos verotettavan asiakirjan rivien oletusarvoinen arvonlisäveroryhmä on oikein, jätä tämä matriisi tyhjäksi. Lisätietoja on myöhemmin tämän artikkelin [Suorituksenaikainen rakenne](#runtime) -osassa.
 
 22. Valitse **Nimikkeen veroryhmän käytettävyys** -välilehdessä sarakkeet, joita tarvitaan oikean verokoodin määrittämiseen, ja valitse sitten **Lisää**. Määritä tai valitse arvot kullekin sarakkeelle. **Nimikkeen veroryhmä** -kenttä on tämän matriisin tuotos. Jos tätä välilehteä ei määritetä, tapahtumarivin nimikkeen arvonlisäveroryhmää käytetään.
 
@@ -224,7 +224,7 @@ Tämän osan vaiheet eivät liity tiettyyn oikeushenkilöön. Sinun on suoritett
     | D0003     | Vähennetty        |
 
     > [!NOTE]
-    > Jos verotettavan nimikeasiakirjan rivien oletusarvoinen arvonlisäveroryhmä on oikein, jätä tämä matriisi tyhjäksi. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Suorituksenaikainen rakenne](#runtime).
+    > Jos verotettavan nimikeasiakirjan rivien oletusarvoinen arvonlisäveroryhmä on oikein, jätä tämä matriisi tyhjäksi. Lisätietoja on myöhemmin tämän artikkelin [Suorituksenaikainen rakenne](#runtime) -osassa.
 
     Lisätietoja verokoodien määrittämisestä verolaskennassa on kohdassa [Arvolisäveroryhmän ja nimikkeen arvonlisäveroryhmän määrityslogiikka](global-sales-tax-group-determination.md).
 
@@ -243,7 +243,7 @@ Tämän osan määritykset tehdään yrityskohtaisesti. Se on määritettävä k
 2. Määritä **Yleiset**-välilehdessä seuraavat kentät:
 
     - **Ota verolaskentapalvelu käyttöön** – Verolaskentaa voidaan ottaa käyttöön yrityksessä valitsemalla tämä valintaruutu. Jos sitä ei ole otettu käyttöön nykyiselle yritykselle, yritys käyttää edelleen aiemmin luotua veromoduulia veron määrittämiseen ja laskemiseen.
-    - **Ominaisuuden määritys** – Valitse yritykselle julkaistun verotoiminnon asetukset ja versio. Lisätietoja julkaistun verotoiminnon määrittämisestä ja suorittamisesta on tämän ohjeaiheen edellisessä osassa.
+    - **Ominaisuuden määritys** – Valitse yritykselle julkaistun verotoiminnon asetukset ja versio. Lisätietoja julkaistun verotoiminnon määrittämisestä ja suorittamisesta on tämän artikkelin edellisessä osassa.
     - **Liiketoimintaprosessi** – Valitse käyttöön otettavat liiketoimintaprosessit.
 
 3. Määritä **Laskelma**-välilehdessä yrityksen odotettu pyöristyssääntö. Lisätietoja pyöristyslogiikasta on kohdassa [Verolaskennan pyöristyssäännöt](https://go.microsoft.com/fwlink/?linkid=2166988).

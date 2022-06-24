@@ -1,6 +1,6 @@
 ---
 title: Meksikon sähköisen laskutuksen käytön aloittaminen
-description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen käytön.
+description: Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen käytön.
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 540b6e6f9b4b669957cc3310e473ad59b9210594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565996"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855326"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Meksikon sähköisen laskutuksen käytön aloittaminen
 
@@ -31,11 +31,11 @@ ms.locfileid: "8565996"
 > [!IMPORTANT]
 > Meksikon sähköinen laskutus ei välttämättä tällä hetkellä tue kaikkia toimintoja, jotka ovat käytettävissä Comprobante Fiscal Digital por Internet (CFDI) -asiakirjassa tai siihen liittyvässä integroinnissa Microsoft Dynamics 365 Financeen tai Dynamics 365 Supply Chain Managementiin.
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen käytön. Se opastaa Regulatory Configuration Servicesin (RCS) ja Financen maakohtaisissa määritysvaiheissa. Saat myös ohjeita siihen, mitä sinun on tehtävä Financessa lähettääksesi CFDI-laskuja palvelulla, ja sinulle selitetään, miten käsittelyn tulokset ja CFDI-laskujen tila arvioidaan.
+Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Meksikon sähköisen laskutuksen käytön. Se opastaa Regulatory Configuration Servicesin (RCS) ja Financen maakohtaisissa määritysvaiheissa. Saat myös ohjeita siihen, mitä sinun on tehtävä Financessa lähettääksesi CFDI-laskuja palvelulla, ja sinulle selitetään, miten käsittelyn tulokset ja CFDI-laskujen tila arvioidaan.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin suoritat tämän aiheen vaiheet, sinun on suoritettava aiheiden [Sähköisen laskutuspalvelun hallinnan käytön aloittaminen](e-invoicing-get-started-service-administration.md) ja [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
+Ennen kuin suoritat tämän artikkelin vaiheet, sinun on suoritettava aiheiden [Sähköisen laskutuspalvelun hallinnan käytön aloittaminen](e-invoicing-get-started-service-administration.md) ja [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) vaiheet.
 
 ## <a name="set-up-the-cadena-xslt"></a>Cadena XSLT:n määrittäminen
 

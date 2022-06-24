@@ -1,6 +1,6 @@
 ---
 title: Sähköisten raportointimääritysten mukauttaminen luomaan sähköinen asiakirja
-description: Tässä aiheessa käsitellään niiden Microsoftin toimittamien sähköisen raportoinnin (ER) määritysten mukauttamista, joilla luodaan mukautettu sähköinen asiakirja.
+description: Tässä artikkelissa käsitellään niiden Microsoftin toimittamien sähköisen raportoinnin (ER) määritysten mukauttamista, joilla luodaan mukautettu sähköinen asiakirja.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661655"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854695"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Sähköisten raportointimääritysten mukauttaminen luomaan sähköinen asiakirja
 
@@ -32,9 +32,9 @@ ms.locfileid: "8661655"
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Tämän aiheen esimerkkiä varten on määritettävä liittovaltion verokoodi uudeksi mukautetuksi määritteeksi jokaiselle asiakkaille, jota laskutetaan sähköisesti. Tämän tällä hetkellä käytössä olevan rakennetta on mukautettava lisäämällä uusi kohde, johon verokoodi on lisättävä jokaisessa luotavassa e-laskussa.
+Tämän artikkelin esimerkkiä varten on määritettävä liittovaltion verokoodi uudeksi mukautetuksi määritteeksi jokaiselle asiakkaille, jota laskutetaan sähköisesti. Tämän tällä hetkellä käytössä olevan rakennetta on mukautettava lisäämällä uusi kohde, johon verokoodi on lisättävä jokaisessa luotavassa e-laskussa.
 
-Tämän ohjeen menettelyissä käsitellään tapaa, jolla järjestelmänvalvojan,sähköisen raportoinnin kehittäjän tai sähköisen raportoinnin toiminnallisen konsultin roolissa oleva käyttäjä voi tehdä seuraavat tehtävät Finance-esiintymässä:
+Tämän artikkelin menettelyissä käsitellään tapaa, jolla järjestelmänvalvojan,sähköisen raportoinnin kehittäjän tai sähköisen raportoinnin toiminnallisen konsultin roolissa oleva käyttäjä voi tehdä seuraavat tehtävät Finance-esiintymässä:
 
 - [ER-kehyksen käytön aloittamiseen tarvittavan ER-parametrien vähimmäisjoukon määrittäminen](#ConfigureER)
 - [E-laskujen luontia varten toimitettujen ER-vakiomääritysten alkuperäisten versioiden tuominen](#ImportERConfigurations1)

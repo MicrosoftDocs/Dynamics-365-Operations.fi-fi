@@ -1,6 +1,6 @@
 ---
 title: Tilin konfiguroiminen
-description: Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä aiheessa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä.
+description: Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä artikkelissa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä.
 author: kweekley
 ms.date: 05/16/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 978c99ddd3e56e6699ab128a154a5594685d5956
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 14ed2999a9ad8ffc64815ca3f8b1556aad27ae48
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910197"
 ---
 # <a name="configure-settlement"></a>Tilin konfiguroiminen
 
 [!include [banner](../includes/banner.md)]
 
-Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä aiheessa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä. 
+Tapahtumien tilityksen ajankohdan ja tavan määrittäminen voi olla monimutkaista, joten on tärkeää, että parametrit ymmärretään ja määritetään oikein. Näin ne vastaavat liiketoimintatarpeita. Tässä artikkelissa esitellään parametrit, joita käytetään ostoreskontran ja myyntireskontran tilityksessä. 
 
 Seuraavat parametrit vaikuttavat siihen, kuinka tilityksiä käsitellään Microsoft Dynamics 365 Financessa. Tilitys on prosessi, jossa selvitetään lasku maksua tai hyvityslaskua vastaan. Nämä parametrit sijaitsevat **Tilityksen** alueella **Myyntireskontran parametrit** ja **Ostoreskontran parametrit** -sivuilla.
 

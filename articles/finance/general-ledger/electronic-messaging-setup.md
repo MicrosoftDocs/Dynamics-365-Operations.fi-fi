@@ -1,6 +1,6 @@
 ---
 title: Sähköisten sanomien määrittäminen
-description: Tässä ohjeaiheessa on tietoja sähköisten sanomien (EM) ominaisuuden määrittämisestä.
+description: Tässä artikkelissa on tietoja sähköisten sanomien (EM) ominaisuuden määrittämisestä.
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874548"
 ---
 # <a name="set-up-electronic-messages"></a>Sähköisten sanomien määrittäminen
 
@@ -66,7 +66,7 @@ Seuraavassa taulukossa käsitellään **Sanomien tilat**-sivun kenttiä.
 |---------------------|-------------|
 | Sanoman tila      | Anna sanoman tilan yksilöivä nimi. Sanomien tilojen avulla kuvaillaan sähköisen sanoman tilaa koko ajan. Annettu nimi näkyy **Sähköiset sanomat** -sivulla ja sähköisiin sanomiin liittyvässä lokissa. |
 | Kuvaus         | Anna sanoman tilan kuvaus. |
-| Vastaustyyppi       | Valitse sanoman tilan vastaustyyppi. Joiden käsiteltävien toimintojen tuloksena voi olla useita vastaustyyppejä. Esimerkiksi **Verkkopalvelu**-tyypin toiminnon seurauksena voi olla **Suoritettu onnistuneesti**- tai **Tekninen virhe** -tyyppi sen mukaan, mikä on suorituksen tulos. Määritä tässä tapauksessa sanomien tilat molemmille vastaustyypeille. Lisätietoja toimintotyypeistä ja niihin liittyvistä vastaustyypeistä on tämän ohjeaiheen myöhemmässä [Sanoman käsittelytoimintojen tyypit](#action-types) -osassa. |
+| Vastaustyyppi       | Valitse sanoman tilan vastaustyyppi. Joiden käsiteltävien toimintojen tuloksena voi olla useita vastaustyyppejä. Esimerkiksi **Verkkopalvelu**-tyypin toiminnon seurauksena voi olla **Suoritettu onnistuneesti**- tai **Tekninen virhe** -tyyppi sen mukaan, mikä on suorituksen tulos. Määritä tässä tapauksessa sanomien tilat molemmille vastaustyypeille. Lisätietoja toimintotyypeistä ja niihin liittyvistä vastaustyypeistä on tämän artikkelin myöhemmässä [Sanoman käsittelytoimintojen tyypit](#action-types) -osassa. |
 | Sanoman nimikkeen tila | Joskus sähköisen sanoman tilan on vaikutettava liittyvien sanoman nimikkeiden tilaan. Valitse tässä kentässä sanoman nimikkeen tila, jonka haluat liittää sanoman tilaan. |
 | Salli poistaminen        | Valitse tämä valintaruutu, jos käyttäjien tulisi saada poistaa sähköisiä sanomia, joilla on tämä tila **Sähköiset sanomat** -sivulla. |
 
@@ -240,7 +240,7 @@ Seuraavissa taulukoissa käsitellään **Sanoman käsittelytoiminnot** -sivun ke
 
 | Kenttä                                     | kuvaus |
 |-------------------------------------------|-------------|
-| Toimenpidetyyppi                               | Valitse toiminnon tyyppi. Lisätietoja käytettävissä olevista asetuksista on tämän ohjeaiheen myöhemmässä kohdassa [Sanoman käsittelytoimintojen tyypit](#action-types). |
+| Toimenpidetyyppi                               | Valitse toiminnon tyyppi. Lisätietoja käytettävissä olevista asetuksista on tämän artkkelin myöhemmässä osassa [Sanoman käsittelytoimintojen tyypit](#action-types). |
 | Muodon määritys                            | Valitse toiminnolle kutsuttava ER-muoto. Kenttä on käytettävissä vain **Sähköisen raportoinnin vienti**-, **Sähköisen raportoinnin tuonti**- ja **Sähköisen raportoinnin vientiviesti** -tyyppien toiminnoille. |
 | Muodon yhdistämisen URL-osoite               | Valitse toiminnolle kutsuttava ER-muoto. Tätä muotoa käytetään muodostamaan URL-osoitteen polku, joka lisätään valitulle verkkopalvelimelle määritettyyn perusverkko-osoitteeseen. Tämä kenttä on käytettävissä vain **Verkkopalvelu** -tyypin toiminnoilla. |
 | Sanoman nimiketyyppi                         | Valitse toiminnon arvioitavien tietueiden tyyppi. Kenttä on käytettävissä **Sanoman nimikkeen suoritustaso**-, **Sähköisen raportoinnin vienti**-, **Sähköisen raportoinnin tuonti**- ja **Verkkopalvelu**-tyyppien sekä muiden tyyppien toiminnoille. Jos tämä kenttä jätetään tyhjäksi, kaikki sanoman käsittelyä varten määritetyt sanoman nimiketyypit arvioidaan. |

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance -kehittäjien oppimisluettelo
-description: Etsi kaikki Dynamics 365 Finance -kehittäjien koulutusvaihtoehdot.
+title: Dynamics 365 Financen kehittäjien oppimisluettelo
+description: Etsi kaikki Dynamics 365 Financen kehittäjien koulutusvaihtoehdot.
 author: margoc
 ms.topic: article
 ms.date: 07/27/2020
@@ -12,14 +12,14 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 866db1307484fd35949e87d02ca17ef0555bb654
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 729fc6a1172d651a24cc0a3bff765b09263e3cd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062258"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903096"
 ---
-# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Finance -kehittäjien oppimisluettelo
+# <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Dynamics 365 Financen kehittäjien oppimisluettelo
 
 
 
@@ -32,7 +32,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | Sisältö | Kuvaus | Muoto | Pituus |
 |---------|-------------|--------|--------|
 | [Taloushallinnon ja toimintojen sovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten taloushallinnon ja toimintojen sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat taloushallinnon ja toimintojen sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2.2 tuntia |
-| [Dynamics 365 Financen käytön aloittaminen](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Financen avulla yrityskäyttäjät voivat nopeasti sopeutua muuttuviin liiketoimintaympäristöihin. Se tarjoaa yrityksille kaiken. Sen avulla voidaan hallita taloutta ja varoja tarkasti ja milloin tahansa taloussuunnitteluun ja ennustamiseen avulla sekä pysyä ajan tasalla analytiikkatyökalujen avulla. Koska talous on kaikkien yritysten tärkein alue, on tärkeää tutustua Dynamics 365 Financen ominaisuuksiin. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |
+| [Dynamics 365 Financen käyttämisen aloittaminen](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Financen avulla yrityskäyttäjät voivat nopeasti sopeutua muuttuviin liiketoimintaympäristöihin. Se tarjoaa yrityksille kaiken. Sen avulla voidaan hallita taloutta ja varoja tarkasti ja milloin tahansa taloussuunnitteluun ja ennustamiseen avulla sekä pysyä ajan tasalla analytiikkatyökalujen avulla. Koska talous on kaikkien yritysten tärkein alue, on tärkeää tutustua Dynamics 365 Financen ominaisuuksiin. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |
 
 ## <a name="core-development-concepts"></a>Kehittämisen keskeiset käsitteet<a name="core-development-concepts"></a>
 

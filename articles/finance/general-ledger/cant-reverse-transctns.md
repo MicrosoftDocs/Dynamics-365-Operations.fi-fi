@@ -1,6 +1,6 @@
 ---
 title: Miksi tapahtuman palauttaminen ei onnistu?
-description: Tässä aiheessa käsitellään syitä, miksi tapahtumien palauttaminen ei onnistu. Siinä käsitellään myös tämän ongelman ratkaisuja.
+description: Tässä artikkelissa käsitellään syitä, miksi tapahtumien palauttaminen ei onnistu. Siinä käsitellään myös tämän ongelman ratkaisuja.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876179"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Miksi tapahtuman palauttaminen ei onnistu?
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään syitä, miksi tapahtumien palauttaminen ei onnistu. Siinä käsitellään myös tämän ongelman ratkaisuja.
+Tässä artikkelissa käsitellään syitä, miksi tapahtumien palauttaminen ei onnistu. Siinä käsitellään myös tämän ongelman ratkaisuja.
 
 ## <a name="symptom"></a>Oire
 
@@ -35,14 +35,14 @@ Organisaatiot voivat kohdata tilanteita, joissa kirjattu tapahtuma on palautetta
 
 ## <a name="resolution"></a>Ratkaisu
 
-Tiettyjen ehtojen on täytyttävä, ennen kuin tapahtumia voidaan palauttaa. Tämän aiheen muissa osissa käsitellään kunkin moduulin vahvistusta. Vaikka tässä aiheessa keskitytään Microsoft Dynamics 365 Financen tapahtumiin, jotkin käsitteet ja vahvistus koskevat myös muita sovelluksia,kuten Dynamics 365 Supply Chain Managementia.
+Tiettyjen ehtojen on täytyttävä, ennen kuin tapahtumia voidaan palauttaa. Tämän artikkelin muissa osissa käsitellään kunkin moduulin vahvistusta. Vaikka tässä artikkelissa keskitytään Microsoft Dynamics 365 Financen tapahtumiin, jotkin käsitteet ja vahvistus koskevat myös muita sovelluksia,kuten Dynamics 365 Supply Chain Managementia.
 
 Lisäksi kohta, jossa tapahtuma palautetaan, voi vaikuttaa siihen, onko tapahtuman palauttaminen mahdollista. Esimerkiksi sekkinä kirjattu toimittajamaksu voidaan palauttaa vain pankkitilien tapahtumasivun **Sekit**-osassa. Sitä ei voi palauttaa kirjanpidon **Tositetapahtumat**-sivulla.
 
 Jos **Useiden asiakirjojen joukkoperuutus** -ominaisuus (jota kutsutaan myös joukkoperuutusominaisuudeksi) on otettu käyttöön **Ominaisuuksien hallinta** -työtilassa, se vaikuttaa siihen, kuinka monta tapahtumaa voidaan palauttaa ja missä ne voidaan palauttaa. Käyttöönotettuna ominaisuudella on kaksi etua:
 
 - Joissakin tapahtumatyypeissä kerralla voidaan valita ja palauttaa useita tapahtumia siitä kirjauskansiosta, josta tapahtuma kirjattiin. Vaihtoehtoisesti voidaan käyttää **Tositetapahtumat**-sivua. Yksittäisten tapahtumien on kuitenkin oltava palautettavissa, ennen kuin ominaisuus otettiin käyttöön. Ennen tämän ominaisuuden käyttöönottoa, tapahtumat oli palautettava yksi kerrallaan.
-- *Jotkin* alareskontran tapahtumat voidaan peruuttaa kirjauskansiosta tai **Tositetapahtumat**-sivulta. Niitä ei tarvitse palauttaa alareskontran sivulta. Esimerkiksi toimittajan laskukirjauskansio voitiin aiemmin palauttaa vain **Toimittajan tapahtumat** -sivulta. Tällainen lasku voidaan kuitenkin palauttaa nyt myös kirjanpidosta, kirjauskansiosta tai **Tositetapahtumat**-sivulta. Kussakin tämän aiheen osassa käsitellään tapahtumatyypit, joissa tätä mahdollisuutta ei ole.
+- *Jotkin* alareskontran tapahtumat voidaan peruuttaa kirjauskansiosta tai **Tositetapahtumat**-sivulta. Niitä ei tarvitse palauttaa alareskontran sivulta. Esimerkiksi toimittajan laskukirjauskansio voitiin aiemmin palauttaa vain **Toimittajan tapahtumat** -sivulta. Tällainen lasku voidaan kuitenkin palauttaa nyt myös kirjanpidosta, kirjauskansiosta tai **Tositetapahtumat**-sivulta. Kussakin tämän artikkelin osassa käsitellään tapahtumatyypit, joissa tätä mahdollisuutta ei ole.
 
 Joukkoperuuttamisominaisuus **ei** anna mahdollisuutta entistä useampien tapahtumatyyppien palauttamiseen. Jos tapahtumatyyppiä ei voitu aiemmin palauttaa, siltä ei voi edelleenkään palauttaa, vaikka ominaisuus olisi otettu käyttöön. Esimerkiksi ostotilauksen toimittajan laskuja ei voi palauttaa riippumatta siitä, onko joukkoperuuttamisominaisuus otettu käyttöön vai ei.
 
@@ -189,7 +189,7 @@ Seuraavia tapahtumatyyppejä ei voi palauttaa:
 
 Monet tapahtumatyypit päivittävät myyntireskontrat. Näitä tapahtumia ovat esimerkiksi myyntitilausten myyntilaskut, kirjanpidon kautta kirjatut myyntilaskut, vapaatekstilaskut, asiakkaan maksut ja poistot.
 
-Jos joukkopalautusominaisuus on poistettu käytöstä, tapahtumat voidaan palauttaa yksittäisinä laskujen osalta **Asiakkaan tapahtumat** -sivulta tai talletusten osalta **Pankkitili**-sivulta. Lisätietoja maksun peruuttamisesta on jäljempänä tässä aiheessa kohdassa [Maksuliikenteen hallinta](cant-reverse-transctns.md#cash-and-bank-management).
+Jos joukkopalautusominaisuus on poistettu käytöstä, tapahtumat voidaan palauttaa yksittäisinä laskujen osalta **Asiakkaan tapahtumat** -sivulta tai talletusten osalta **Pankkitili**-sivulta. Lisätietoja maksun peruuttamisesta on jäljempänä tämän artikkelin [Maksuliikenteen hallinta](cant-reverse-transctns.md#cash-and-bank-management) -osassa.
 
 Jos joukkopalautusominaisuus on otettu käyttöön, yksi tai usea myyntireskontratapahtuma voidaan palauttaa myös **Tositetapahtumat**-sivulta ja siitä kirjauskansiosta, josta tapahtuma kirjattiin. Talletukset voidaan kuitenkin edelleen palauttaa vain pankkitililtä ja vapaatekstilaskut vain alkuperäiseltä sivulta (jos oikaisut salliva ominaisuus on otettu käyttöön). Asiakkaan tapahtumia ei myöskään voida edelleenkään palauttaa kirjanpidon **Kohteen \<main account\> tapahtumat** -sivulta. Ne voidaan kuitenkin palauttaa **Tositetapahtumat**-sivulta.
 

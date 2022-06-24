@@ -1,6 +1,6 @@
 ---
 title: Resurssin vuokrauksen raportit
-description: Tässä ohjeaiheessa luetellaan ja kuvataan lyhyesti resurssin vuokrauksen käytettävissä olevat raportit.
+description: Tässä artikkelissa luetellaan ja kuvataan lyhyesti resurssin vuokrauksen käytettävissä olevat raportit.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856709"
 ---
 # <a name="asset-leasing-reports"></a>Resurssin vuokrauksen raportit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa luetellaan ja kuvataan lyhyesti resurssin vuokrauksen käytettävissä olevat raportit. Useimmat raportit näkyvät sen jälkeen kun tämä vaihe tai nämä vaiheet on suoritettu. Vaiheet ovat keskenään hyvin samankaltaisia. 
+Tässä artikkelissa luetellaan ja kuvataan lyhyesti resurssin vuokrauksen käytettävissä olevat raportit. Useimmat raportit näkyvät sen jälkeen kun tämä vaihe tai nämä vaiheet on suoritettu. Vaiheet ovat keskenään hyvin samankaltaisia. 
 
 - Voit tarkastella useimpia resurssin vuokrauksen raportteja siirtymällä kohtaan **Resurssin vuokrauksen > Kyselyt ja raportit > Vuokrasopimuksen raportit** ja valitsemalla sitten raportin tarkastelua varten. Jos raportti vaatii erilaisen valintapolun, sen avaamiseen vaadittavat vaiheet löytyvät raportin kuvauksesta. 
 - Kun valitset tulostettavan raportin, näyttöön tulee parametrien sivu. Sen avulla voit suodattaa raporttiin sisältyviä tietoja. Anna suodatusehdot ja luo raportti valitsemalla **OK**. Luodussa raportissa näkyvät määritettyjen suodattimien mukaiset tiedot.

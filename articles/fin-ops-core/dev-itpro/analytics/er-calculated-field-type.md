@@ -1,8 +1,8 @@
 ---
 title: Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
-description: Tässä ohjeaiheessa käsitellään ER-tietolähteiden Laskettu kenttä -tyypin käyttöä.
+description: Tässä artikkelissa käsitellään ER-tietolähteiden Laskettu kenttä -tyypin käyttöä.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934701"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) tietolähteiden suunnittelua **Laskettu kenttä** -tyypin avulla. Tietolähteessä voi olla ER-lauseke, jota voidaan suoritettaessa hallita niiden parametriargumenttien arvoilla, jotka on määritetty tätä tietolähdettä kutsuvassa sidonnassa. Jos kyseisen tietolähteelle määritetään parametrisoidut kutsut, voit käyttää yhtä tietolähdettä useissa sidonnoissa, mikä vähentää ER-mallimäärityksissä tai ER-muodoissa määritettävien tietolähteiden kokonaismäärää. Se myös yksinkertaistaa määritettyä ER-komponenttia, mikä puolestaan vähentää ylläpitokustannuksia ja muiden kuluttajien käyttökustannuksia.
+Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) tietolähteiden suunnittelua **Laskettu kenttä** -tyypin avulla. Tietolähteessä voi olla ER-lauseke, jota voidaan suoritettaessa hallita niiden parametriargumenttien arvoilla, jotka on määritetty tätä tietolähdettä kutsuvassa sidonnassa. Jos kyseisen tietolähteelle määritetään parametrisoidut kutsut, voit käyttää yhtä tietolähdettä useissa sidonnoissa, mikä vähentää ER-mallimäärityksissä tai ER-muodoissa määritettävien tietolähteiden kokonaismäärää. Se myös yksinkertaistaa määritettyä ER-komponenttia, mikä puolestaan vähentää ylläpitokustannuksia ja muiden kuluttajien käyttökustannuksia.
 
 ## <a name="prerequisites"></a>Edellytykset
-Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:
+Tämän artikkelin esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:
 
 - Jonkin seuraavan roolin käyttöoikeus:
 
@@ -46,10 +46,10 @@ Seuraavat tiedostot täytyy myös ladata ja tallentaa paikallisesti.
 
 | **Sisältö**                           | **Tiedostonimi**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Esimerkin ER-tietomallin konfigurointi    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Esimerkin ER-metadatan konfigurointi      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Esimerkin ER-mallikartoituksen konfigurointi | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Esimerkin ER-format-konfigurointi        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Esimerkin ER-tietomallin konfigurointi    | [Model to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Esimerkin ER-metadatan konfigurointi      | [Metadata to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Esimerkin ER-mallikartoituksen konfigurointi | [Mapping to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Esimerkin ER-format-konfigurointi        | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Kirjautuminen RCS-esiintymään
 Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi on kuitenkin suoritettava RCS:ssä [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet.
@@ -306,7 +306,7 @@ Kun parametrisoitu laskettu kenttä palauttaa tietueen, tämän tietueen yksitt�
 Voit suorittaa alkuperäiset ja parannetut ER-muodot ja varmistaa tällä tavoin, että määritetyt parametrisoidut lasketut kentät toimivat oikein.
 
 ### <a name="import-er-configurations"></a>ER-konfiguraatioiden tuominen
-Voit tuoda tarkistetut kokoonpanot RCS:stä käyttämällä **RCS**-tyyppistä ER-säilöä. Jos olet jo suorittanut ohjeaiheen [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](rcs-download-configurations.md) vaiheet, tuo aiemmin tässä aiheessa käsitellyt määritykset ympäristöön määritetyn ER-säilön avulla. Toimi muussa tapauksessa seuraavasti:
+Voit tuoda tarkistetut kokoonpanot RCS:stä käyttämällä **RCS**-tyyppistä ER-säilöä. Jos olet jo suorittanut artikkelin [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](rcs-download-configurations.md) vaiheet, tuo aiemmin tässä artikkelissa käsitellyt määritykset ympäristöön määritetyn ER-säilön avulla. Toimi muussa tapauksessa seuraavasti:
 
 1. Valitse **DEMF**-yritys ja valitse oletuskoontinäytössä **Sähköinen raportointi**.
 2. Valitse **Raportointikonfiguraatiot**.

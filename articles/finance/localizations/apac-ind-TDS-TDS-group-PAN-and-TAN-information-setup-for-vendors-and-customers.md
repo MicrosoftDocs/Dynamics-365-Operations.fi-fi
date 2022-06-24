@@ -1,6 +1,6 @@
 ---
 title: Asiakkaiden ja toimittajien TDS-ryhmä-, PAN- ja TAN-tietojen määrittäminen
-description: Tässä aiheessa kerrotaan, miten määritetään toimittajien ja asiakkaiden Vero vähennettynä lähteissä (TDS) -ryhmän tiedot, pysyvä tilinumero (PAN) ja verotilin numero (TAN).
+description: Tässä artikkelissa kerrotaan, miten määritetään toimittajien ja asiakkaiden Vero vähennettynä lähteissä (TDS) -ryhmän tiedot, pysyvä tilinumero (PAN) ja verotilin numero (TAN).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 83ec532e95bde553c3a339e2ca103ebaacdb52ae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1a29f59e380360b6f828dcddbe84cad229b42d17
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859763"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Asiakkaiden ja toimittajien TDS-ryhmä-, PAN- ja TAN-tietojen määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten määritetään toimittajien ja asiakkaiden Vero vähennettynä lähteissä (TDS) -ryhmän tiedot, pysyvä tilinumero (PAN) ja verotilin numero (TAN).
+Tässä artikkelissa kerrotaan, miten määritetään toimittajien ja asiakkaiden Vero vähennettynä lähteissä (TDS) -ryhmän tiedot, pysyvä tilinumero (PAN) ja verotilin numero (TAN).
 
 1. Valitse **Ostoreskontra \> Toimittajat \> Kaikki toimittajat** tai **Myyntireskontra \> Asiakkaat \> Kaikki asiakkaat**.
 

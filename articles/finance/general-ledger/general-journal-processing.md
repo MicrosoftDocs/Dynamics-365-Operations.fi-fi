@@ -1,6 +1,6 @@
 ---
 title: Kirjanpidon kirjauskansion käsittely
-description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Financen ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.
+description: Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Financen ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.
 author: kweekley
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cfe4af0c666fb2accb6737edb2de6e0b6e7cdf1
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 2055c028f7bfe8edc9faec8f791fff2fbfe08bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720024"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896373"
 ---
-# <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
+# <a name="general-journal-processing"></a>Kirjanpidon kirjauskansion käsittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.  
+Tässä artikkelissa kerrotaan ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.  
 
 ## <a name="journal-names"></a>Kirjauskansioiden nimet
 

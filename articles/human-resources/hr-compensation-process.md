@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e4aa910d92c2905d54d96f656e1d3d1c36388636
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 228c891e8c29cf4309856b90139d0b88805a9812
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886157"
 ---
 # <a name="process-compensation"></a>Kompensaation käsittely
 
@@ -27,7 +27,7 @@ ms.locfileid: "8693861"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Voit laskea kompensaation käsittelyssä työntekijöille uudet peruskompensaatiosummat pääoman oikaisujen, pätevyyteen liittyvien palkankorotustavoitteiden ja suorituksen perusteella. Tässä ohjeaiheessa käsitellään kiinteiden kompensaatiosuunnitelmien perustyöntyönkulku kompensaation käsittelyssä ilman, että työntekijän suoritus huomioidaan.
+Voit laskea kompensaation käsittelyssä työntekijöille uudet peruskompensaatiosummat pääoman oikaisujen, pätevyyteen liittyvien palkankorotustavoitteiden ja suorituksen perusteella. Tässä artikkelissa käsitellään kiinteiden kompensaatiosuunnitelmien perustyöntyönkulku kompensaation käsittelyssä ilman, että työntekijän suoritus huomioidaan.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Uusien kompensaatiosummien ja -budjettien suunnittelu
 Jos haluat antaa työntekijöille pätevyyteen liittyvän palkankorotuksen, kiinteä lisäysbudjetti on ensin määritettävä kullekin osastolle:  **Kompensaation hallinta** > **Linkit** > **Pätevyyteen liittyvän palkankorotuksen tavoitteet**. (Vaihtoehtoisesti voit avata tämän lomakkeen osaston kautta: **Organisaatio** > **Osastot**.) Voit määrittää tarkemmin, onko tietyn ammattijärjestön tai toimipaikan työntekijöillä erilainen korotusprosentti. **Budjetti-** ja **Valuutta** -kentät on tarkoitettu vain tiedoksi, ja niiden avulla voi ilmoittaa budjetin valuuttasumman.
@@ -41,7 +41,7 @@ Prosessitapahtuman **-ajankohdan** päivämäärään käytetään vain tiettyje
 
 Kun prosessitapahtuman parametrit on tallennettu, voit valita tähän prosessiajoon sisältyvät suunnitelmat napsauttamalla **Asetukset**-painiketta. Samalla voit ilmoittaa, mitä kiinteän kompensaation toimintoja tehdään kussakin suunnitelmassa.
 
-Lisää kompensaatiosuunnitelma prosessitapahtumaan napsauttamalla **Lisää**-painiketta **Suunnitelmat**-välilehdessä. **Käytä muuta suorituskykykerrointa**-, **Suorituskykykerroin**- ja **Suorituskykykertoimen kuvaus** -sarakkeita käytetään vain muuttuvan kompensaation suunnitelmissa, eikä niitä käsitellä tässä blogikirjoituksessa.
+Lisää kompensaatiosuunnitelma prosessitapahtumaan napsauttamalla **Lisää**-painiketta **Suunnitelmat**-välilehdessä. **Käytä muuta suorituskykykerrointa**-, **Suorituskykykerroin**- ja **Suorituskykykertoimen kuvaus** -sarakkeita käytetään vain muuttuvan kompensaation suunnitelmissa, eikä niitä käsitellä tässä artikkelissa.
 
 Tallenna tietue ja lisää sitten valitun suunnitelman kiinteän kompensaation toiminnot napsauttamalla **Lisää**-painiketta **Toiminnot**-välilehdessä. Käytä **Ota suositus käyttöön** -vaihtoehtoa, jos haluat antaa toiminnon lasketusta ohjekorotuksesta poikkeavan summan. Jos haluat laskea toiminnon, joka perustuu edellisen toiminnon tulokseen, linkittääksesi useita kompensaatiotoimintoja, merkitse **Käytä edellistä tulosta** -vaihtoehto. Kiinteän kompensaation toiminnot ovat kompensaatiologiikan tyyppejä, joille voit antaa kuvailevia nimiä. **Palkkaluokka**- ja **Kompensaatioluokka**-suunnitelmissa voit lisätä vain seuraavan tyyppisiä kiinteän kompensaation toimintoja:
 

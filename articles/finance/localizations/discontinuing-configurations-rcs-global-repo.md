@@ -1,6 +1,6 @@
 ---
 title: Määritysten lopettaminen RCS:n yleisessä säilössä
-description: Tässä aiheessa kuavataan määritysten lopettaminen RCS:n yleisessä säilössä.
+description: Tässä artikkelissa kuvataan määritysten lopettaminen RCS:n yleisessä säilössä.
 author: JaneA07
 ms.date: 02/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 340fc96e7dfe56da9ee8d4831a5980e3e96ec3ee0f2f5a8fb2ab72f713de9737
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4121f45a95e1712f21390c317af532662846a0fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894808"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Määritysten lopettaminen RCS:n yleisessä säilössä
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuavataan määrityksen lopettaminen RCS:n yleisessä säilössä. Aiemmin vain ne konfiguraatiot, joita ei enää tarvita, oli mahdollista poistaa. Nyt voit kuitenkin merkitä vapautetun konfiguraation **Lopetettu**-arvolla RCS:n yleisessä tietovarastossa. Tämän toiminnallisuuden avulla voit myös hallita seuraavia: 
+Tässä artikkelissa kuvataan määrityksen lopettaminen RCS:n yleisessä säilössä. Aiemmin vain ne konfiguraatiot, joita ei enää tarvita, oli mahdollista poistaa. Nyt voit kuitenkin merkitä vapautetun konfiguraation **Lopetettu**-arvolla RCS:n yleisessä tietovarastossa. Tämän toiminnallisuuden avulla voit myös hallita seuraavia: 
  
  - Toimita etukäteisilmoitukset, kun konfiguraatio on tarkoitus lopettaa.
  - Sisällytä korvaavaa konfiguraatiota koskevat soveltuvat tiedot.
@@ -56,7 +56,7 @@ Jos haluat jakaa suunniteltua lopettamista koskevat tiedot ennen varsinaista kon
 
 ## <a name="finance-supports-displaying-this-information-starting-in-version-10014"></a>Finance tukee tämän tiedon näyttämista versiosta 10.0.14 alkaen
 
-Dynamics 365 Finance tukee lopetustietojen näyttämista versiosta 10.0.14 alkaen. **Yleinen tietovarasto** -sivulla voit tarkastella lopettamiseen liittyviä ajantasaisia tietoja. Oletusarvoisesti lopetetut konfiguraatiot suodatetaan pois.
+Dynamics 365 Finance tukee lopetustietojen näyttämistä versiosta 10.0.14 alkaen. **Yleinen tietovarasto** -sivulla voit tarkastella lopettamiseen liittyviä ajantasaisia tietoja. Oletusarvoisesti lopetetut konfiguraatiot suodatetaan pois.
   
 **Tuodut konfiguraatiot** (ERSolutionTable) -sivulla näkyvät konfiguraatiot, jotka on jo lopetettu tuomisen aikana. Jos konfiguraatiot on lopetettu tuonnin jälkeen, lopetustiedot voi synkronoida suorittamalla **Tuo konfiguraatioiden päivitykset** -työn.
 

@@ -1,6 +1,6 @@
 ---
 title: Käyttöomaisuuserien tapahtuma-asetukset
-description: Tässä ohjeaiheessa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät.
+description: Tässä artikkelissa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät.
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 507e263e7267fe96cdf9ed78a84924839c2de982
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 402679b6f1003f14f7e277a326784edaaea719d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719745"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883355"
 ---
 # <a name="fixed-asset-transaction-options"></a>Käyttöomaisuuserien tapahtuma-asetukset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät.
+Tässä artikkelissa kerrotaan käyttöomaisuustapahtumien luomisessa käytettävät menetelmät.
 
 Voit määrittää käyttöomaisuuden integrointiin ostoreskontran, myyntireskontran, hankinnan ja kirjanpidon kanssa. Varastossa olevia nimikkeitä voi myös siirtää käyttöomaisuuteen sisäistä käyttöä varten.
 

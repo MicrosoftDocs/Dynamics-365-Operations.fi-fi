@@ -1,6 +1,6 @@
 ---
 title: Tuo päivitetyt versiot sähköisen raportoinnin konfiguraatioista
-description: Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin (ER) konfiguraatioiden päivitetyt versiot tuodaan Configuration Service -palvelun yleisestä säilöstä.
+description: Tässä artikkelissa selitetään, miten sähköisen raportoinnin (ER) konfiguraatioiden päivitetyt versiot tuodaan Configuration Service -palvelun yleisestä säilöstä.
 author: NickSelin
 ms.date: 06/09/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69eaa3e2ecfbd1e92f23725d97d7fa9f0abe1cea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847543"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Tuo päivitetyt versiot sähköisen raportoinnin konfiguraatioista
 
@@ -28,7 +28,7 @@ ms.locfileid: "6734885"
 
 Sähköisen raportoinnin (ER) [säilöjä](general-electronic-reporting.md#Repository) käytetään [sähköisen raportoinnin konfiguraatioiden](general-electronic-reporting.md#Configuration) jakamiseen. Voit [tuoda](download-electronic-reporting-configuration-lcs.md) sähköisen raportoinnin konfiguraatioita eri säilöistä omaan Microsoft Dynamics 365 Finance -esiintymääsi. Kun tuot sähköisen raportoinnin konfiguraatioita, [konfiguraation lähteet](general-electronic-reporting.md#Provider) voivat julkaista uusia [versioita](general-electronic-reporting.md#component-versioning) säilöistä, jotta ne voidaan jakaa.
 
-Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin konfiguraatioiden päivitetyt versiot tuodaan Configuration Service -palvelun yleisestä säilöstä. Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Tässä artikkelissa selitetään, miten sähköisen raportoinnin konfiguraatioiden päivitetyt versiot tuodaan Configuration Service -palvelun yleisestä säilöstä. Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>Tarkasta saatavilla olevat päivitetyt versiot
 

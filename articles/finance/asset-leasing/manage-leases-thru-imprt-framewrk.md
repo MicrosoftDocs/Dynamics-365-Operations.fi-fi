@@ -1,6 +1,6 @@
 ---
 title: Vuokrausten hallinta vuokrauksen tuonnin kehyksen kautta
-description: Tässä ohjeaiheessa kerrotaan, miten vuokrauksen tuonnin kehystä käytetään useiden vuokrausten muokkaamisessa kerralla.
+description: Tässä artikkelissa kerrotaan, miten vuokrauksen tuonnin kehystä käytetään useiden vuokrausten muokkaamisessa kerralla.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e3443225b5c7cb6d8f758248e538c2a427a89265
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 8cf81ccf61e62ac49e6cb90d13ca5fe50147cc76
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894961"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Vuokrausten hallinta vuokrauksen tuonnin kehyksen kautta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten vuokrauksen tuonnin kehystä käytetään useiden vuokrausten muokkaamisessa yhdessä vaiheessa. Tämän ominaisuuden käyttäminen säästää aikaa, ja voit myös varmistaa tarkat oikaisut vähentämällä inhimillisten virheiden mahdollisuutta. Lisäksi tämä ominaisuus voi yhdistää Microsoft Dynamics 365 Financen ulkoisiin tietoentiteetteihin. Näin voit ladata tietoja tehokkaasti.
+Tässä artikkelissa kerrotaan, miten vuokrauksen tuonnin kehystä käytetään useiden vuokrausten muokkaamisessa yhdessä vaiheessa. Tämän ominaisuuden käyttäminen säästää aikaa, ja voit myös varmistaa tarkat oikaisut vähentämällä inhimillisten virheiden mahdollisuutta. Lisäksi tämä ominaisuus voi yhdistää Microsoft Dynamics 365 Financen ulkoisiin tietoentiteetteihin. Näin voit ladata tietoja tehokkaasti.
 
 Seuraavia tietoentiteettejä voidaan käyttää resurssin vuokrauksen yhdistämisessä ulkoisiin järjestelmiin:
 

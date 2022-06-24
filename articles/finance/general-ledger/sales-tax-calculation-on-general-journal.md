@@ -1,6 +1,6 @@
 ---
 title: Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
-description: Tässä aiheessa selitetään, miten arvonlisäverot lasketaan erityyppisille tileille (toimittaja, asiakas, kirjanpito ja projekti) yleisen kirjauskansioiden riveille.
+description: Tässä artikkelissa selitetään, miten arvonlisäverot lasketaan erityyppisille tileille (toimittaja, asiakas, kirjanpito ja projekti) yleisen kirjauskansioiden riveille.
 author: EricWangChen
 ms.date: 02/16/2022
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: a73e145dd26e930c860e9ea31d7dab4f1593c2a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845284"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa selitetään, miten arvonlisäverot lasketaan erityyppisille tileille (toimittaja, asiakas, kirjanpito ja projekti) yleisen kirjauskansioiden riveille.
+Tässä artikkelissa selitetään, miten arvonlisäverot lasketaan erityyppisille tileille (toimittaja, asiakas, kirjanpito ja projekti) yleisen kirjauskansioiden riveille.
 
 Prosessi voidaan jakaa kolmeen vaiheeseen:
 

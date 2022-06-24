@@ -1,6 +1,6 @@
 ---
 title: Maksuluetteloraportti Euroopassa
-description: Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa.
+description: Tässä artikkelissa on tietoja maksuluetteloraporteista Euroopassa.
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 114d872ea939999afb6d3652f8cd6db34d0d99e1c303d6770d8613647a04f0c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9225e946fc3dd61eb0347a8f50561180f94ae589
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889802"
 ---
 # <a name="payment-slip-report-for-europe"></a>Maksuluetteloraportti Euroopassa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa.
+Tässä artikkelissa on tietoja maksuluetteloraporteista Euroopassa.
 
 Maksuluetteloraporttien toiminnot on käytettävissä yrityksille, joilla on ensisijainen osoite Tanskassa, Belgiassa, Norjassa, Sveitsissä tai Suomessa. Yritykset usein liittävät usein asiakkaiden laskuihin tulostetun maksutositteen, jossa on maksuviite kirjaamista ja tilitystä varten. Maksutositetta voidaan käyttää myynti- ja vapaatekstilaskujen lisäksi projekti- tai palvelulaskuissa, maksukehotteissa, korkolaskussa ja tiliotteissa.
 

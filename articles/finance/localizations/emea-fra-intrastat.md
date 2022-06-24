@@ -1,6 +1,6 @@
 ---
 title: Ranskan Intrastat
-description: Tässä ohjeaiheessa on tietoja Intrastat-ilmoituksesta Ranskassa.
+description: Tässä artikkelissa on tietoja Intrastat-ilmoituksesta Ranskassa.
 author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d38576e1c6b40242d5c6313fb06f08e170b4466
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e86d7c8f28b1b3df0066a588d380965c21dc98a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887850"
 ---
 # <a name="french-intrastat"></a>Ranskan Intrastat
 
@@ -97,7 +97,7 @@ Taulukko ilmaisee myös kentän raporttitason. Kenttä voi olla **4** (yksinkert
     3. Valitse **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kentästä **Intrastat**.
     4. Valitse **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentästä tavaroiden siirroissa käytettävä koodi.
     5. Valitse **Hyvityslasku**-kentässä tavaroiden palautuksissa käytettävä koodi.
-    6. Lisää vientiraportin erittelytaso **Viennin vaatimustaso** -kenttään. Valittu taso vaikuttaa riveihin, jotka näytetään raportissa. Lisätietoja on tämän ohjeaiheen alussa olevissa taulukoissa.
+    6. Lisää vientiraportin erittelytaso **Viennin vaatimustaso** -kenttään. Valittu taso vaikuttaa riveihin, jotka näytetään raportissa. Lisätietoja on tämän artikkelin alussa olevissa taulukoissa.
 
 3. Siirry kohtaan **Organisaation hallinto** > **Organisaatiot** > **Yritykset**, valitse yrityksesi ja seuraa sitten näitä vaiheita:
 

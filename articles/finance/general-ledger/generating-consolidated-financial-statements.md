@@ -1,6 +1,6 @@
 ---
 title: Konsolidoitujen raporttien laatiminen
-description: Tässä ohjeaiheessa käsitellään erilaisia skenaariota, joissa konsolidoituja raportteja voidaan laatia.
+description: Tässä artikkelissa käsitellään erilaisia skenaariota, joissa konsolidoituja raportteja voidaan laatia.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716520"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846796"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään erilaisia skenaariota, joissa konsolidoituja raportteja voidaan laatia.
+Tässä artikkelissa käsitellään erilaisia skenaariota, joissa konsolidoituja raportteja voidaan laatia.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Yksi- ja monitasoiset yritysten väliset konsolidoinnit
 Yksinkertaisin raportteja hyödyntävä konsolidointimenetelmä on koota raporttipuiden avulla tietoja samaa tilikarttaa ja tilikautta käyttävistä yrityksistä. Yleistasolla raporttipuuta käyttävä konsolidointi sisältää seuraavat vaiheet.
@@ -153,7 +153,7 @@ Seuraavassa kuvassa on raportin määrityksen asetukset, joilla voit valita, kä
 ![Raportin määrityksen jaksonumeroon asetukset.](./media/options-report-definition-period-number.png "Raportin määrityksen jaksonumeroon asetukset")
 
 ## <a name="business-unit-consolidations"></a>Liiketoimintayksikön konsolidoinnit
-Tässä ohjeaiheessa on keskitetty raporttipuun määritysten ja organisaatiohierarkioiden käyttöön konsolidoinnissa taloushallinnon raportoinnissa. Voit luoda raporttipuun myös liiketoimintayksikön konsolidointiraportteja, kuten raportteja maailmanlaajuisesti myynnistä tai toiminnoista. Nämä raportit ovat yleinen vaatimus. Voit luoda ne valitsemalla kullekin konsolidoitavalle yksikölle yrityksen ja dimension. Esimerkiksi seuraavassa kuvassa liiketoimintayksikön koonti suoritetaan toistamalla jokainen yritys **Yritys**-sarakkeessa (sarake A) ja määrittämällä yrityskohtainen osaston dimensioarvojen ryhmä **Dimensiot**-sarakkeessa (sarake D).
+Tässä artikkelissa on keskitetty raporttipuun määritysten ja organisaatiohierarkioiden käyttöön konsolidoinnissa taloushallinnon raportoinnissa. Voit luoda raporttipuun myös liiketoimintayksikön konsolidointiraportteja, kuten raportteja maailmanlaajuisesti myynnistä tai toiminnoista. Nämä raportit ovat yleinen vaatimus. Voit luoda ne valitsemalla kullekin konsolidoitavalle yksikölle yrityksen ja dimension. Esimerkiksi seuraavassa kuvassa liiketoimintayksikön koonti suoritetaan toistamalla jokainen yritys **Yritys**-sarakkeessa (sarake A) ja määrittämällä yrityskohtainen osaston dimensioarvojen ryhmä **Dimensiot**-sarakkeessa (sarake D).
 
 ![Liiketoimintayksikön konsolidointiraportit.](./media/business-unit-consolidation-reports.png "Liiketoimintayksikön konsolidointiraportit")
 
@@ -218,7 +218,7 @@ Jos valuuttoja käytettäessä saataisiin oikein muunnetut summat, taloushallinn
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
+Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän artikkelin pääartikkelissa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
 
 Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Verkossa tapahtuva taloushallinnon konsolidointi](./consolidate-online.md).
 

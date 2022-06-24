@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d59b5a2c99813fee2e12e30e8694edf6da7391d9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735315"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909246"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Anna hakijan ja hakemuksen tiedot manuaalisesti
 
 > [!NOTE]
-> Tämän ohjeaiheen työhönottotoimintoa kutsutaan työhönottoprojekteiksi, ja siinä keskitytään hakijoihin, hakemuksiin ja työhönottoprojekteihin.  
+> Tämän artikkelin työhönottotoimintoa kutsutaan työhönottoprojekteiksi, ja siinä keskitytään hakijoihin, hakemuksiin ja työhönottoprojekteihin.  
 
 
 Tässä menettelyssä kerrotaan, miten hakijoiden ja hakemusten tietoja ylläpidetään manuaalisesti. Voit syöttää ja ylläpitää hakijoiden henkilökohtaisia tietoja, haastattelupäivämääriä ja -aikoja, suosituksia, osaamisalueita ja apuvälinepyyntöjä. Voit myös päivittää hakijoiden työhakemusten tilaa ja luoda hakijoille kansilehtiä tai sähköpostiviestejä. Kun hakijatietue on luotu, hakijalle luodaan henkilötietue yleiseen osoitekirjaan. Tämän menettelyn luomisessa käytetty esittely-yritys on **USMF**.

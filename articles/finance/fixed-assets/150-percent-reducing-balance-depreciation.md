@@ -1,6 +1,6 @@
 ---
 title: Jäännöspoisto 150 prosenttia
-description: Tässä ohjeaiheessa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
+description: Tässä artikkelissa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 744461fe372cc1c048fe20599ff7b078d19c0f53
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f3bccb9d64851901d43b55887bb66c9b1b4e5a70
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870217"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>Jäännöspoisto 150 prosenttia
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
+Tässä artikkelissa on yleiskuvaus 150 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Jäännösarvo 150 %** -kentästä valitaan **Menetelmä**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. Tämä prosentti lasketaan omaisuuserän käyttöajan mukaan. Jos omaisuuserän käyttöaika on esimerkiksi viisi vuotta, poistoprosentti on 30 (150 % ÷ 5). 
 
@@ -41,7 +41,7 @@ Oletusarvo on **Kalenteri**. Valinta määrittää, mitä valintoja **Kausiväli
 
 Voit säilyttää **Poistovuosi** -kentässä oletusarvon **Kalenteri**. 
 
-**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
+**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Tämän artikkelin myöhemmässä esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
 
 Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
 

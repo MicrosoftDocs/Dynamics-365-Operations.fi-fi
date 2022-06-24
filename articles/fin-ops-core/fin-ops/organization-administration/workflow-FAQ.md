@@ -1,6 +1,6 @@
 ---
 title: Työnkulun usein kysytyt kysymykset
-description: Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä työnkulkujärjestelmästä.
+description: Tässä artikkelissa on usein kysyttyjä kysymyksiä työnkulkujärjestelmästä.
 author: ChrisGarty
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
-ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
+ms.openlocfilehash: a72fd141bb1178a3a83385c512d1a655064d5b00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370877"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896576"
 ---
 # <a name="workflow-faq"></a>Työnkulun usein kysytyt kysymykset
 
@@ -26,7 +26,7 @@ ms.locfileid: "8370877"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä työnkulkujärjestelmästä.
+Tässä artikkelissa on usein kysyttyjä kysymyksiä työnkulkujärjestelmästä.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Miksi ilmoituksia on useita, kun työnimike hylätään?
 Kun työnimike hylätään, kyseinen työnimike valmistuu hylättynä. Toinen työnimike luodaan ja määritetään aloittajalle. Tämä tarkoittaa, että aloittaja saa ilmoituksen hylätystä työnimikkeestä. Käyttäjä, joka on määritetty uuteen muutospyynnön työnimikkeeseen, saa erillisen ilmoituksen. 

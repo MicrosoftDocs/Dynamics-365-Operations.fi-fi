@@ -1,6 +1,6 @@
 ---
 title: ER-muodon suunnitteleminen muodostettujen asiakirjojen sivuttamista varten Excelissä
-description: Tässä ohjeaiheessa selitetään, miten suunnitellaan sähköisen raportoinnin (ER) muoto, joka sivuttaa muodostetun asiakirjan Microsoft Excelissä.
+description: Tässä artikkelissa selitetään, miten suunnitellaan sähköisen raportoinnin (ER) muoto, joka sivuttaa muodostetun asiakirjan Microsoft Excelissä.
 author: NickSelin
 ms.date: 09/14/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: ce29225c4bce24adc2abefc3d3d6f20774852af4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488336"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909275"
 ---
 # <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>ER-muodon suunnitteleminen muodostettujen asiakirjojen sivuttamista varten Excelissä
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolin käyttäjä voi määrittää [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muodon lähtevien asiakirjojen muodostamiseksi Microsoft Excelissä ja asikirjan sivuttamisen hallitsemiseksi.
+Tässä artikkelissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolin käyttäjä voi määrittää [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muodon lähtevien asiakirjojen muodostamiseksi Microsoft Excelissä ja asiakirjan sivuttamisen hallitsemiseksi.
 
 Tässä esimerkissä muokataan Microsoftin toimittamaa ER-muotoa, jota käytetään valvontaraportin tulostukseen, kun Intrastat-ilmoitus on [muodostettu](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). Tässä raportissa voit ottaa huomioon raportoidut Intrastat-tapahtumat. Muutosten avulla voit hallita muodostettujen valvontaraporttien sivuttamista.
 
-Tässä ohjeaiheessa kuvatut toimenpiteet voidaan suorittaa **DEMF**-yrityksessä. Koodausta ei tarvita. Ennen aloittamista seuraavat tiedostot täytyy ladata ja tallentaa.
+Tässä artikkelissa kuvatut toimenpiteet voidaan suorittaa **DEMF**-yrityksessä. Koodausta ei tarvita. Ennen aloittamista seuraavat tiedostot täytyy ladata ja tallentaa.
 
 | kuvaus       | Tiedostonimi |
 |-------------------|-----------| 
@@ -165,7 +165,7 @@ Muodosta sitten Intrastat-ilmoituksen valvontaraportti käyttämällä mukautett
 
 ### <a name="repeat-the-replacement-of-the-current-excel-template-in-the-custom-er-format"></a>Toista nykyisen Excel-mallin korvaaminen mukautetussa ER-muodossa
 
-1. Noudata vaiheita tämän aiheen [Nykyisen Excel-mallin korvaaminen mukautetussa ER-muodossa](#replace-template) -osassa. Valitse kuitenkin vaiheessa 7 **ERIntrastatReportDemo2.xlsx**-tiedosto.
+1. Noudata vaiheita tämän artikkelin [Nykyisen Excel-mallin korvaaminen mukautetussa ER-muodossa](#replace-template) -osassa. Valitse kuitenkin vaiheessa 7 **ERIntrastatReportDemo2.xlsx**-tiedosto.
 2. Laajenna **Muodon suunnittelu** -sivulla **Intrastat**.
 3. Nimeä muokattavaan ER-malliin lisätyn [Alueen](er-fillable-excel.md#range-component) muotokomponentit niin, että ne synkronoivat rakenteen sovelletun Excel-mallin rakenteen kanssa.
 
@@ -406,7 +406,7 @@ Muuta näkyvyyttä päivittämällä **Käytössä**-ominaisuus komponenteissa *
 
 ## <a name="generate-an-intrastat-declaration-control-report-updated"></a>Intrastat-ilmoituksen valvontaraportin muodostaminen (päivitetty)
 
-1. Varmista, että **Intrastat**-sivulla on 24 tapahtumaa. Toista vaiheet tämän aiheen osassa [Intrastat-ilmoituksen valvontaraportin muodostaminen](#generate-intrastat-control-report), jotta voit muodostaa ja tarkastaa valvontaraportin.
+1. Varmista, että **Intrastat**-sivulla on 24 tapahtumaa. Toista vaiheet tämän artikkelin [Intrastat-ilmoituksen valvontaraportin muodostaminen](#generate-intrastat-control-report) -osassa, jotta voit muodostaa ja tarkastaa valvontaraportin.
 
     Kaikki tapahtumat näytetään ensimmäisellä sivulla. Sivujen kokonaismäärät ja laskurit ovat samat kuin raportin kokonaismäärät ja laskurit. Sivun ylätunnistealue on piilotettu ensimmäisellä sivulla, koska raportin ylätunniste sisältää jo sarakeotsikot. Sivun ylä- ja alatunniste on piilotettu toisella sivulla, koska sivulla ei ole tapahtumia.
 

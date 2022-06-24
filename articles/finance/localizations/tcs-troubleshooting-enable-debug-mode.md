@@ -1,6 +1,6 @@
 ---
-title: Virheenkorjaustilan ottaminen käyttöön Veron laskenta -palvelussa
-description: Tässä aiheessa kuvataan, kuinka virheenkorjaustila otetaan käyttöön veron laskentapalvelussa ongelmien tutkimista varten.
+title: Virheenkorjaustilan ottaminen käyttöön verolaskentapalvelussa
+description: Tässä artikkelissa kuvataan, kuinka virheenkorjaustila otetaan käyttöön veron laskentapalvelussa ongelmien tutkimista varten.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 2f526a2341c7ef682209ed979fe686e31ad62a37
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645426"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887774"
 ---
-# <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Virheenkorjaustilan ottaminen käyttöön Veron laskenta -palvelussa
+# <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Virheenkorjaustilan ottaminen käyttöön verolaskentapalvelussa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka virheenkorjaustila otetaan käyttöön veron laskentapalvelussa ongelmien tutkimista varten.
+Tässä artikkelissa kuvataan, kuinka virheenkorjaustila otetaan käyttöön veron laskentapalvelussa ongelmien tutkimista varten.
 
 1. Lisää **&debug=vs%2CconfirmExit&** Application Object Serverin (AOS) URL-osoitteeseen ja päivitä sivu.
 2. Kun arvonlisäveron laskemista varten valitaan **Arvonlisävero**, avautuu tekstitiedosto nimeltä **TaxServiceTroubleshootingLog.txt**. **TaxServiceTroubleshootingLog.txt**-tiedosto sisältää **TaxableDocument**- ja laskentaparametrin. Nämä tulokset palautetaan veropalvelusta ja poikkeustiedot vianmääritystä varten.

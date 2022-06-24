@@ -1,6 +1,6 @@
 ---
 title: Henkilön osoite
-description: Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin Henkilön osoite -yksikköä.
+description: Tässä artikkelissa kuvataan Dynamics 365 Human Resourcesin Henkilön osoite -yksikköä.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d428c2b1ce69c55fda2e574715021d4763544a6b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: be5cf649771eaddcb4f2198821530e61b76b2cd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065474"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871013"
 ---
 # <a name="person-address"></a>Henkilön osoite
 
@@ -27,7 +27,7 @@ ms.locfileid: "8065474"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin Henkilön osoite -yksikköä.
+Tässä artikkelissa kuvataan Dynamics 365 Human Resourcesin Henkilön osoite -yksikköä.
 
 Fyysinen nimi: mshr_hcmpersonaddressentities
 

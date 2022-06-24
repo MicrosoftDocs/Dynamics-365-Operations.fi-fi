@@ -1,6 +1,6 @@
 ---
 title: Taloudellisen suorituskyvyn PowerBI.com-ratkaisu
-description: Tässä ohjeaiheessa käsitellään taloudellisen suorituskyvyn PowerBI.com-ratkaisua.
+description: Tässä artikkelissa käsitellään taloudellisen suorituskyvyn PowerBI.com-ratkaisua.
 author: kweekley
 ms.date: 05/09/2018
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910412"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Taloudellisen suorituskyvyn PowerBI.com-ratkaisu
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> PowerBI.com -ratkaisu on vanhentunut, kuten on dokumentoitu aiheessa [Poistetut tai vanhentuneet ominaisuudet Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource)issa.
+> Tämä PowerBI.com-ratkaisu on vanhentunut kohdassa [Finance and Operationsin poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) ilmoitetulla tavalla.
 
-Tässä ohjeaiheessa käsitellään **taloudellisen suorituskyvyn** PowerBI.com-ratkaisua. Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä ratkaisun muodostamisessa käytetyistä tietomallista ja yksiköistä.
+Tässä artikkelissa käsitellään **taloudellisen suorituskyvyn** PowerBI.com-ratkaisua. Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä ratkaisun muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="main-account-setup"></a>Päätilin asetukset
 Koska organisaatiot haluavat velkojen ja tuottosummien näkyvän raporteissa positiivisina summina, päätilien määritys on tärkeää. Jotta nämä päätilit näkyisivät positiivisina summina, päätilityypiksi on asetettava **Velka** tai **Tuotto**. Käytettäessä näitä tilityyppejä Power BI -raportointi kääntää etumerkit ja näyttää summat positiivisina.

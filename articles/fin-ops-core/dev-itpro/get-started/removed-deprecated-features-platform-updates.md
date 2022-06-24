@@ -1,6 +1,6 @@
 ---
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
-description: Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
+description: Tässä artikkelissa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811243"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945801"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
+Tässä artikkelissa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
@@ -40,7 +40,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Poistamme Finance and Operations (Dynamics 365) -mobiilisovelluksen ja -mobiiliympäristön, jotta voimme konsolidoida yhteen mobiiliympäristöön, Power Appsiin. |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä, talous- ja toimintosovellusten tietojen mobiilikokemukset voidaan rakentaa Power Platform -integraation avulla. Katso lisätietoja: [Mobiilikokemusten rakentaminen](../power-platform/build-mobile-experiences.md). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, talous- ja toimintosovellusten tietojen mobiilikokemukset voidaan rakentaa Power Platform -integraation avulla. Katso lisätietoja [blogikirjoituksesta](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) ja [Mobiilikokemusten kehittäminen](../power-platform/build-mobile-experiences.md) -kohdasta. |
 | **Tuotealueet, joihin vaikutetaan**         | Taloushallinnon ja toimintojen sovellukset |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut. Tuen päättymisajankohdaksi on suunniteltu lokakuuta 2024. |

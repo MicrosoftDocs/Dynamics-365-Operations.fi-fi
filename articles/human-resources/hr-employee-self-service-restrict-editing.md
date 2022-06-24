@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 98cb7c2f1f57dacf303e2e9bc7779ce3ede6733e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c82114f6600345ee5e2eb9c1c0629ae6c8f0b9a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877682"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Henkilökohtaisten tietojen muokkaamisen rajoittaminen
 
@@ -29,7 +29,7 @@ ms.locfileid: "8695869"
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
 
-Tässä aiheessa kuvataan, kuinka työntekijöitä voi estää muokkaamasta yhteystietoja Dynamics 365 Human Resources -sovelluksessa. Saatat haluta estää työntekijöitä muokkaamasta tiettyjä yhteystietoja, kuten yrityksen sijaintia tai sähköpostiosoitetta.
+Tässä artikkelissa kuvataan, kuinka työntekijöitä voi estää muokkaamasta yhteystietoja Dynamics 365 Human Resources -sovelluksessa. Saatat haluta estää työntekijöitä muokkaamasta tiettyjä yhteystietoja, kuten yrityksen sijaintia tai sähköpostiosoitetta.
 
 > [!NOTE]
 > Ennen kuin voit käyttää tätä ominaisuutta, sinun täytyy ottaa käyttöön **(Esikatselu) Estä työntekijöitä lisäämästä tai muokkaamasta osoite- ja yhteystietoja tiettyihin tarkoituksiin** -ominaisuus käyttöön ominaisuuksien hallinnasta. Lisätietoja esiversiotoimintojen käyttöönotosta on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md).<br><br>![Ota esikatselutoiminto käyttöön.](./media/hr-employee-self-service-restrict-enable.png)

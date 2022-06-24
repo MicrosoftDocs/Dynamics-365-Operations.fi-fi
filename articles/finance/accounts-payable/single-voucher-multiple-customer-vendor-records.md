@@ -1,6 +1,6 @@
 ---
 title: Yksi tosite useille asiakkaan tai toimittajan tietueille
-description: Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 Financen tulevista versioista, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn.
+description: Tämä artikkeli sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan Microsoft Dynamics 365 Financen tulevista versioista, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737038"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889088"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Yksi tosite useille asiakkaan tai toimittajan tietueille
 
 [!include [banner](../includes/banner.md)]
 
-Tämä aihe sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan tulevista versioista, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn. 
+Tämä artikkeli sisältää yhteenvedon siitä, mitä tapahtuu, kun kirjaat yhden tositteen useille asiakkaan tai toimittajan tietueille. Tämä toiminto poistetaan tulevista versioista, minkä vuoksi emme suosittele tämän kirjausmenetelmän käyttöä kirjanpidon vaikutuksen vuoksi tilityskäsittelyyn. 
 
 Tavallisimpia esimerekkejä yhden tositteen käytöstä useita asiakkaita tai toimittajia varten ovat asiakkaiden välisten saldojen siirto ja balansin nettoutus asiakkaiden ja toimittajien välillä samassa organisaatiossa. 
 
@@ -35,7 +35,7 @@ Sama tosite useille asiakkaille tai toimittajille voidaan kirjata jommallakummal
 -   Käyttämällä monirivitosittetta, joissa ei ole kirjanpidon vastatiliä, useille asiakkaille tai toimittajille.
 -   Tositteen määrittäminen tilille ja vastatilille, joka on toimittaja/toimittaja, asiakas/asiakas, toimittaja/asiakas tai asiakas/toimittaja.
 
-Tässä aiheessa kerrotaan, miten tilitystä käsitellään kirjattaessa yksi tosite jossa on useita asiakkaan tai toimittajan tietueita. Tämä aihe sisältää myös ratkaisuehdotuksia, joiden avulla voit selvittää, kuinka vältetään usean asiakkaan tai toimittajan yhteisen tositteen käyttöä. Erityisesti on esimerkkejä, jotka kuvataan kahta yleistä tilitysskenaariota, joihin usean asiakkaan tai toimittajan yhteisen tositteen käyttö vaikuttaa:
+Tässä artikkelissa kerrotaan, miten tilitystä käsitellään kirjattaessa yksi tosite jossa on useita asiakkaan tai toimittajan tietueita. Tämä artikkeli sisältää myös ratkaisuehdotuksia, joiden avulla voit selvittää, kuinka vältetään usean asiakkaan tai toimittajan yhteisen tositteen käyttöä. Erityisesti on esimerkkejä, jotka kuvataan kahta yleistä tilitysskenaariota, joihin usean asiakkaan tai toimittajan yhteisen tositteen käyttö vaikuttaa:
 
 -   Käteisalennuksen laskeminen
 -   Uudelleenarvostuksen laskeminen

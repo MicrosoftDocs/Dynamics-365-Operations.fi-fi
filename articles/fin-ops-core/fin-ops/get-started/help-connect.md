@@ -1,6 +1,6 @@
 ---
 title: Taloushallinnon ja toimintojen sovellusten ohjekokemuksen konfiguroiminen
-description: Tässä ohjeaiheessa käsitellään joidenkin Microsoft Dynamics 365 -sovellusten ohjejärjestelmän osista.
+description: Tässä artikkelissa käsitellään joidenkin Microsoft Dynamics 365 -sovellusten ohjejärjestelmän osista.
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071005"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900126"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ohjekokemuksen konfiguroiminen
 
@@ -29,7 +29,7 @@ ms.locfileid: "8071005"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tässä ohjeaiheessa on taloushallinnon ja toimintojen sovellusten, kuten Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce ja Dynamics 365 Human Resources, ohjejärjestelmän osien yleiskatsaus. Ohjeaiheessa käsitellään myös kyseisten osien yhdistämistä ja annetaan yhteenveto mukautetun ohjeen luontiprosessista.
+Tässä artikkelissa on talous- ja toimintosovellusten, kuten Microsoft Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin, Dynamics 365 Commercen ja Dynamics 365 Human Resourcesin, ohjejärjestelmän osien yleiskatsaus. Artikkelissa käsitellään myös kyseisten osien yhdistämistä ja annetaan yhteenveto mukautetun ohjeen luontiprosessista.
 
 ## <a name="help-architecture"></a>Ohjearkkitehtuuri
 

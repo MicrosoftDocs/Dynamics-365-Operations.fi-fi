@@ -1,6 +1,6 @@
 ---
 title: Sähköisen raportoinnin muodon suunnitteleminen rivien pitämiseksi yhdessä samalla Excel-sivulla
-description: Tässä ohjeaiheessa selitetään, miten suunnitellaan sähköisen raportoinnin (ER) muoto, joka pitää rivit samalla Microsoft Excel -sivulla.
+description: Tässä artikkelissa selitetään, miten suunnitellaan sähköisen raportoinnin (ER) muoto, joka pitää rivit samalla Microsoft Excel -sivulla.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854666"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Sähköisen raportoinnin muodon suunnitteleminen rivien pitämiseksi yhdessä samalla Excel-sivulla
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolin käyttäjä voi määrittää [sähköisen raportoinnin (ER)](general-electronic-reporting.md) [muodon](er-overview-components.md#format-component) lähtevien asiakirjojen muodostamiseksi Microsoft Excelissä ja asiakirjan sivuttamisen hallitsemiseksi siten, että luodut rivit pidetään samalla sivulla.
+Tässä artikkelissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolin käyttäjä voi määrittää [sähköisen raportoinnin (ER)](general-electronic-reporting.md) [muodon](er-overview-components.md#format-component) lähtevien asiakirjojen muodostamiseksi Microsoft Excelissä ja asiakirjan sivuttamisen hallitsemiseksi siten, että luodut rivit pidetään samalla sivulla.
 
 Tässä esimerkissä muokkaat Microsoftin tarjoamaa ER-muotoa, jota käytetään vapaatekstilaskujen tulostamiseen Excelissä. Muutosten avulla voit hallita luodun vapaatekstilaskuraportin sivutusta siten, että yksittäisen laskurivin kaikki rivit säilyvät mahdollisuuksien mukaan samalla sivulla.
 
-Tässä ohjeaiheessa kuvatut toimenpiteet voidaan suorittaa **USMF**-yrityksessä. Koodausta ei tarvita.
+Tässä artikkelissa kuvatut toimenpiteet voidaan suorittaa **USMF**-yrityksessä. Koodausta ei tarvita.
 
 Tässä esimerkissä luodaan pakollisia ER-[konfiguraatioita](general-electronic-reporting.md#Configuration) malliyritykselle **Litware, Inc**. Tarkista, että malliyrityksen **Litware, Inc.** (`http://www.litware.com`) konfiguraatiopalvelu luetteloitu ER-kehyksessä ja merkitty tilaan **Aktiivinen**. Jos tämä määrityspalvelu ei ole luettelossa tai jos se ei ole merkittynä **aktiiviseksi**, noudata ohjeaiheen [Konfiguraatiopalvelun luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheita.
 
@@ -73,7 +73,7 @@ Seuraa vaiheita kohdassa [Tuo ER-muodon vakiokonfiguraatio](er-quick-start2-cust
 
     ![Tarkastellaan luodun vapaatekstilaskun sivutusta Excel-työpöytäsovelluksessa.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-Tämän ohjeaiheen muut toimenpiteet osoittavat, kuinka voit hienosäätää laskuraportin ulkoasua ja luettavuutta säätämällä ER-vakiomuotoa säilyttämällä yksittäisen laskurivin kaiken sisällön samalla sivulla.
+Tämän artikkelin muut toimenpiteet osoittavat, kuinka voit hienosäätää laskuraportin ulkoasua ja luettavuutta säätämällä ER-vakiomuotoa säilyttämällä yksittäisen laskurivin kaiken sisällön samalla sivulla.
 
 ## <a name="create-a-custom-format"></a>Luo mukautettu muoto
 

@@ -1,6 +1,6 @@
 ---
 title: Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
-description: Tässä aiheessa selitetään, miten määritetyt Sähköisen raportoinnin (ER) komponentit voidaan tarkistaa mahdollisten suorituksen aikaisten ongelmien välttämiseksi.
+description: Tässä artikkelissa selitetään, miten määritetyt sähköisen raportoinnin (ER) komponentit voidaan tarkistaa mahdollisten suorituksen aikaisten ongelmien välttämiseksi.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864833"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 
@@ -80,7 +80,7 @@ ER käyttää seuraavia luokkia yhdenmukaisuustarkistustarkastusten ryhmittelemi
 
 ## <a name="list-of-inspections"></a>Luettelo tarkistuksista
 
-Seuraavassa taulukossa on yhteenveto ER:n tarjoamista tarkistuksista. Lisätietoja näistä tarkistuksista saat tämän aiheen asiaankuuluvista osista käyttämällä ensimmäisen sarakkeen linkkejä. Näissä osissa selitetään, minkä tyyppisille komponenteille ER tarjoaa tarkistuksia, ja miten voit määrittää komponentteja uudelleen, jotta ongelmat voidaan estää.
+Seuraavassa taulukossa on yhteenveto ER:n tarjoamista tarkistuksista. Lisätietoja näistä tarkistuksista saat tämän artikkelin asiaankuuluvista osista käyttämällä ensimmäisen sarakkeen linkkejä. Näissä osissa selitetään, minkä tyyppisille komponenteille ER tarjoaa tarkistuksia, ja miten voit määrittää komponentteja uudelleen, jotta ongelmat voidaan estää.
 
 <table>
 <thead>

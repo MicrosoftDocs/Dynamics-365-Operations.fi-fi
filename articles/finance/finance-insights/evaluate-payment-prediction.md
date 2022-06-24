@@ -1,6 +1,6 @@
 ---
 title: Asiakkaan alkuperäisen maksuennustemallin arvioiminen
-description: Tässä ohjeaiheessa kuvataan vaiheet, joiden avulla opit lisää asiakkaan maksuennustemallista ja voit arvioida sen tehokkuuden.
+description: Tässä artikkelissa kuvataan vaiheet, joiden avulla opit lisää asiakkaan maksuennustemallista ja voit arvioida sen tehokkuuden.
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fcdf276505cf58267a38e9d6174a155ad307653b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846999"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Asiakkaan alkuperäisen maksuennustemallin arvioiminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten ennustemalli arvioidaan sen jälkeen, kun Finance Insights on otettu käyttöön ja ensimmäinen malli on luotu ja koulutettu. Tässä ohjeaiheessa käsitellään asiakasmaksujen ennustamiseen liittyviä malleja. Siinä kuvataan vaiheet, joiden avulla opit lisää asiakkaan maksuennustemallista ja voit arvioida sen tehokkuuden.
+Tässä artikkelissa kerrotaan, miten ennustemalli arvioidaan sen jälkeen, kun Finance Insights on otettu käyttöön ja ensimmäinen malli on luotu ja koulutettu. Tässä artikkelissa käsitellään asiakasmaksujen ennustamiseen liittyviä malleja. Siinä kuvataan vaiheet, joiden avulla opit lisää asiakkaan maksuennustemallista ja voit arvioida sen tehokkuuden.
 
 ## <a name="getting-details-about-the-model"></a>Mallin tietojen hakeminen
 

@@ -1,6 +1,6 @@
 ---
 title: Käteisvarojen yleiskatsauksen Power BI -sisältö
-description: Tässä ohjeaiheessa käsitellään käteisvarojen yhteenvetoa ja Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+description: Tässä artikkelissa käsitellään käteisvarojen yhteenvedon Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 author: panolte
 ms.date: 07/16/2020
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bb44dd8203b87ac5fb1f7977b865522faa6ebaeb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 4f841ec5b17c2271010a95f45188832ee5917556
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910226"
 ---
 # <a name="cash-overview-power-bi-content"></a>Käteisvarojen yleiskatsauksen Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään **käteisvarojen yhteenvetoa** ja Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+Tässä artikkelissa käsitellään **käteisvarojen yhteenvedon** Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="overview"></a>Yleiskuvaus
 

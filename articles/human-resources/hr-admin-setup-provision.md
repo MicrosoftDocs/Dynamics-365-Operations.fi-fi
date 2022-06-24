@@ -1,6 +1,6 @@
 ---
 title: Valmistele Human Resources
-description: Tässä aiheessa käsitellään Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710860"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858240"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -27,13 +27,13 @@ ms.locfileid: "8710860"
 
 
 
-Tässä aiheessa käsitellään Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista. 
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista. 
 
 ## <a name="prerequisites"></a>Edellytykset
 
 Seuraavien edellytysten on toteuduttava, ennen kuin tuotantoympäristön valmistelu voidaan aloittaa:
 
-- Human Resources on ostettu pilvipalveluratkaisujen toimittajalta (CSP) tai yritysarkkitehtuurisopimuksen (EA) avulla. Jos nykyinen Microsoft Dynamics 365 -käyttöoikeus sisältää jo Human Resourcesin palvelusopimuksen eikä tämän aiheen ohjeita voida noudattaa, ota yhteys tukeen.
+- Human Resources on ostettu pilvipalveluratkaisujen toimittajalta (CSP) tai yritysarkkitehtuurisopimuksen (EA) avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Human Resourcesin palvelusopimuksen, etkä pysty suorittamaan tämän artikkelin vaiheita, ota yhteys tukeen.
 
 - Yleinen järjestelmänvalvoja on kirjautunut [Microsoft Dynamics Lifecycle Servicesiin](https://lcs.dynamics.com) (LCS) ja luonut uuden Human Resources -projekti. 
 

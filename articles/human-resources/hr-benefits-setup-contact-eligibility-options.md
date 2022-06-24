@@ -1,6 +1,6 @@
 ---
 title: Henkilökohtaisten yhteyshenkilöiden oikeutusasetusten määrittäminen
-description: Tässä aiheessa käsitellään henkilökohtaisten yhteyshenkilöiden kelpoisuusasetusten määrittämistä Microsoft Dynamics 365 Human Resourcesissa.
+description: Tässä artikkelissa käsitellään henkilökohtaisten yhteyshenkilöiden kelpoisuusasetusten määrittämistä Microsoft Dynamics 365 Human Resourcesissa.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e145acf6a6ba3333acfcc6e66dadd1f7d5deac65
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 82bb7c037b4e0ab9950ce4c314c03a0f2d713bbd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692307"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895928"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Henkilökohtaisten yhteyshenkilöiden oikeutusasetusten määrittäminen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8692307"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kerrotaan, miten voit määrittää henkilökohtaisten yhteyshenkilöiden tyyppejä käytettäviksi Microsoft Dynamics 365 Human Resourcesissa. Henkilökohtaiset yhteyshenkilöt ovat henkilöitä, jotka kuuluvat palvelupakettiesi piiriin (riippuvaiset) tai jotka hyötyvät palvelupaketeistasi (edunsaajat). Riippuvaiset ovat tyypillisesti puolisoita tai lapsia. Edunsaajat voivat olla puolisoita, lapsia, säätiöitä tai vanhempia.
+Tässä artikkelissa kerrotaan, miten voit määrittää henkilökohtaisten yhteyshenkilöiden tyyppejä käytettäviksi Microsoft Dynamics 365 Human Resourcesissa. Henkilökohtaiset yhteyshenkilöt ovat henkilöitä, jotka kuuluvat palvelupakettiesi piiriin (riippuvaiset) tai jotka hyötyvät palvelupaketeistasi (edunsaajat). Riippuvaiset ovat tyypillisesti puolisoita tai lapsia. Edunsaajat voivat olla puolisoita, lapsia, säätiöitä tai vanhempia.
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Henkilökohtaisen yhteyshenkilön kelpoisuusasetukset**.
 

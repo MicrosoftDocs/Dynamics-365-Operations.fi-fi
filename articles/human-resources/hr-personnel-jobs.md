@@ -1,6 +1,6 @@
 ---
 title: Työn komponenttien määrittäminen
-description: Tässä aiheessa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi.
+description: Tässä artikkelissa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: de828bc1ab764a8a1bd084a508f38ff19a3947d5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: afe100879a4f83e4ef16048bc4b1acace19b679b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877711"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Työn komponenttien määrittäminen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693581"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi. 
+Tässä artikkelissa kuvataan käsitteellisiä elementtejä, joita työssä voi olla ja annetaan esimerkkejä siitä, miten voit käyttää näitä elementtejä organisaatiossasi. 
 
 Ennen kuin voit luoda uusia töitä, sinun pitää määrittää joitakin viitetietoja. Voit luoda työn, jolla on vain nimi. Kuitenkin antamalla lisätiedot, kuten tehtävänimike, annat oletusarvot toimille, jotka on määritetty työhön. Lisäksi joitakin antamiasi tietoja voidaan käyttää suodattamaan kompensaatiosuunnitelmia tiettyihin töihin. Jos haluat määrittää oikeutuksen, jota voit käyttää suodattamaan kompensaatiosuunnitelmia tiettyyn työhön, sinun on määritettävä työtehtävät ja työtyypit ennen töiden määrittämistä. Kun nämä oletusarvot on käytettävissä, säästät aikaa, kun lisäät toimia työhön. 
 

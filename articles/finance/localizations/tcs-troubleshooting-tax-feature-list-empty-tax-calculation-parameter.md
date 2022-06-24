@@ -1,6 +1,6 @@
 ---
 title: Tyhjä verotoimintoluettelo verolaskennan parametreissa
-description: Tässä aiheessa kuvataan sellaisen ongelman vianmääritystä, jossa veron laskentaparametrien sivun vero-ominaisuuksien luettelo on tyhjä.
+description: Tässä artikkelissa kuvataan sellaisen ongelman vianmääritystä, jossa veron laskentaparametrien sivun vero-ominaisuuksien luettelo on tyhjä.
 author: wangchen
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 0d9286ec313a270da86181ff80ddfd690a757c9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612286"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869949"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Tyhjä verotoimintoluettelo verolaskennan parametreissa
 
@@ -46,7 +46,7 @@ Voit etsiä Finance-ympäristön vuokraajan tunnuksen noudattamalla samoja ohjei
 
 ## <a name="resolution"></a>Ratkaisu
 
-Jos nämä kaksi vuokraajatunnusta eroavat toisistaan, tässä aiheessa kuvattu ongelma ilmenee. Jos ne ovat samoja, olet havainnut liittymättömiä ongelmia. Tässä tapauksessa suosittelemme, että otat yhteyttä Microsoft-tukeen.
+Jos nämä kaksi vuokraajatunnusta eroavat toisistaan, tässä artikkelissa kuvattu ongelma ilmenee. Jos ne ovat samoja, olet havainnut liittymättömiä ongelmia. Tässä tapauksessa suosittelemme, että otat yhteyttä Microsoft-tukeen.
 
 ### <a name="solution-1"></a>Ratkaisu 1
 

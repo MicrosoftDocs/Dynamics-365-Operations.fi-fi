@@ -1,6 +1,6 @@
 ---
 title: Kyselylomakkeet
-description: Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin.
+description: Tässä artikkelissa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: efe0ac953e5c1cb04044256e799ecfc07cf3eebe
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: de38bcbfc89479d6b643ca5ee256c38c88fa7f69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897890"
 ---
 # <a name="questionnaires"></a>Kyselylomakkeet
 
@@ -28,7 +28,7 @@ ms.locfileid: "8690747"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
+Tässä artikkelissa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia. 
 
 Voit mukauttaa kyselyä tarpeitasi vastaavaksi Microsoft Dynamics 365 Financen eri toimintojen avulla. Kyselylomakkeen avulla voit esimerkiksi
 
@@ -40,11 +40,11 @@ Voit mukauttaa kyselyä tarpeitasi vastaavaksi Microsoft Dynamics 365 Financen e
 
 Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihin. Saat lisätietoja napsauttamalla linkkejä.
 
-| Aihe| Kuvaus|
+| Artikkeli | Kuvaus|
 |------|------------|
-| [Lomakkeen suunnitteleminen](hr-learning-design-questionnaires.md) | Tässä aiheessa on tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
-| [Kyselylomakkeiden jakelu ja aikataulutus](hr-learning-distribute-questionnaires.md) | Tässä aiheessa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä. |
-| [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](hr-learning-evaluate-questionnaire-results.md) | Tässä aiheessa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan. |
+| [Lomakkeen suunnitteleminen](hr-learning-design-questionnaires.md) | Tämä artikkeli sisältää tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
+| [Kyselylomakkeiden jakelu ja aikataulutus](hr-learning-distribute-questionnaires.md) | Tässä artikkelissa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä. |
+| [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](hr-learning-evaluate-questionnaire-results.md) | Tässä artikkelissa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

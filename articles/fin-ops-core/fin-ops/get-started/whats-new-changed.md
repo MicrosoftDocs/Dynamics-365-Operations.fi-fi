@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 98add33413f38db52b70b9c39c4ebd004ab3dd57
-ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
+ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "8457395"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908224"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Taloushallinnon ja toimintojen sovellusten aloitussivun uudet ominaisuudet ja muutokset
 
@@ -41,18 +41,18 @@ Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua taloushall
 
 ## <a name="stand-alone-applications"></a>Itsenäiset sovellukset
 
-Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua erillisessä Dynamics 365 Human Resourcesissa on:
+Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua erillisessä Dynamics 365 Human Resourcesissa on:
 
 - **Human Resources:** [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>Ympäristön päivitykset
 
-Lisätietoja taloushallinnon ja toimintojen sovellusten ympäristöpäivitysten uusista tai muuttuneesta päivityksistä on seuraavassa ohjeaiheessa:
+Lisätietoja taloushallinnon ja toimintojen sovellusten ympäristöpäivitysten uusista tai muuttuneesta päivityksistä on seuraavassa artikkelissa:
 
 - [Platform-päivitysten uudet ja muuttuneet ominaisuudet](../../dev-itpro/get-started/whats-new-home-page.md)
 
 ## <a name="lifecycle-services-releases"></a>Lifecycle Services -julkaisut
-Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua Lifecycle Service -sovelluksessa on:
+Seuraavassa artikkelissa on tietoja siitä, mitä uutta tai muutettua Lifecycle Services -sovelluksessa on:
 
 - [Lifecycle Servicesin (LCS) uudet ja muuttuneet ominaisuudet](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 

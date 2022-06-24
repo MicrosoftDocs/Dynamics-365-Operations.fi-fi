@@ -1,6 +1,6 @@
 ---
 title: Ehdota käyttöomaisuuden hankintaa
-description: Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla.
+description: Tässä artikkelissa kerrotaan, miten voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla.
 author: moaamer
 ms.date: 03/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd54642e5ec6c56fbc3a5ebb07fc8fdaf5545926
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 35d2171dc828cb0227f310e81be1d3e3359f41c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909066"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Ehdota käyttöomaisuuden hankintaa
 
 [!include [banner](../../includes/banner.md)]
 
-Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja. Jos aiot hankkia käyttöomaisuuden käyttöomaisuuden ehdotuskirjauskansion avulla, ensin on luotava käyttöomaisuustietue ja sitten määritettävä hankintahinta käyttöomaisuuskirjassa.
+Tässä artikkelissa kerrotaan, miten voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla. Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja. Jos aiot hankkia käyttöomaisuuden käyttöomaisuuden ehdotuskirjauskansion avulla, ensin on luotava käyttöomaisuustietue ja sitten määritettävä hankintahinta käyttöomaisuuskirjassa.
 
 ## <a name="create-an-asset-acquisition-proposal"></a>Käyttöomaisuuden hankintaehdotuksen luominen
 

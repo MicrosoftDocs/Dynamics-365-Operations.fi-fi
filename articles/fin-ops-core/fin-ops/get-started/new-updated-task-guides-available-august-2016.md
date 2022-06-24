@@ -1,6 +1,6 @@
 ---
 title: Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)
-description: Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
+description: Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: be2dbf8307baa37549e2e81ec05f067ab82bfda8e77cace6a4f4731a84f2776d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16777901e66aeac93c8e0bbd2ee024a033fe5b52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733074"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886547"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
+Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (elokuu 2016 - kaikki kielet)
 
-(Elokuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet Finance and Operationsin kotisivulla](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
+(Elokuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Finance and Operations -aloitussivun uudet ja muuttuneet toiminnot](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
 
 ### <a name="data-access"></a>Tietoyhteys
 

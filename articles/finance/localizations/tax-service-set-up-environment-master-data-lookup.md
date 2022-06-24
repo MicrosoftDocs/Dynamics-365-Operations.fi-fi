@@ -1,6 +1,6 @@
 ---
 title: Verolaskentamäärityksen päätietojen haun ottaminen käyttöön
-description: Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista.
+description: Tässä artikkelissa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686708"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879406"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Verolaskentamäärityksen päätietojen haun ottaminen käyttöön 
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista. Käytössä on avattava luettelo, jossa voi valita verolaskentamäärityksen arvoja esimerkiksi **Yritys**, **Toimittajan tili**-, **Nimikekoodi**- ja **Toimitusehto**-kenttiin. Nämä arvot saadaan Microsoft Dataverse -tietolähdettä käyttävästä yhdistetystä Microsoft Dynamics 365 Finance -ympäristöstä.
+Tässä artikkelissa käsitellään verolaskennan päätietojen hakutoiminnon määrittämistä ja käyttöönottamista. Käytössä on avattava luettelo, jossa voi valita verolaskentamäärityksen arvoja esimerkiksi **Yritys**, **Toimittajan tili**-, **Nimikekoodi**- ja **Toimitusehto**-kenttiin. Nämä arvot saadaan Microsoft Dataverse -tietolähdettä käyttävästä yhdistetystä Microsoft Dynamics 365 Finance -ympäristöstä.
 
 > [!NOTE] 
 > Verolaskennan perustietojen hakutoiminto on valinnainen toiminto. Voit ohittaa seuraavat vaiheet, jos poistat **Veropalvelun tietolähde Dataverse-tietolähdetukiominaisuuden** käytöstä RCS (Regulatory Configuration Service) -palvelussa. Tällöin avattava luettelo ei kuitenkaan ole käytettävissä verolaskelman konfiguraatiossa.

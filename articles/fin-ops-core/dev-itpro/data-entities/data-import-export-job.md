@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644456"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860161"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644456"
 Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä **Tietojen hallinta** -työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
 
 > [!NOTE]
-> Tässä ohjeaiheessa oletetaan, että tunnet [tietoyksiköt](data-entities.md).
+> Tässä artikkelissa oletetaan, että tunnet [tietoyksiköt](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Tietojen tuonti- ja vientiprosessi
 Nämä ovat ohjeet tietojen tuontiin tai viemiseen.
@@ -48,7 +48,7 @@ Nämä ovat ohjeet tietojen tuontiin tai viemiseen.
 5. Vahvista, että työ suoritettiin odotetulla tavalla tarkastamalla työhistoria.
 6. Tyhjennä väliaikaiset taulut.
 
-Loput tämän ohjeaiheen osat sisältävät tarkempia tietoja kustakin prosessin vaiheesta.
+Loput tämän artikkelin osat sisältävät tarkempia tietoja kustakin prosessin vaiheesta.
 
 > [!NOTE]
 > Saat uusimmat edistymistiedot näkyviin päivittämällä tietojen tuonti- ja vientilomakkeen päivityskuvakkeella. Selaintason päivitystä ei suositella, koska se keskeyttää mahdolliset erien ulkopuoliset tuonti- ja vientityöt.

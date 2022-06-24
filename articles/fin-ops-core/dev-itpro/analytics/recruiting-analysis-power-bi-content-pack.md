@@ -1,6 +1,6 @@
 ---
 title: Työhönoton Power BI -sisältö
-description: Tässä ohjeaiheessa käsitellään työhönoton Power BI -sisältöä.
+description: Tässä artikkelissa käsitellään työhönoton Power BI -sisältöä.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36ea9f204b50b3d7a6c8e33e69a9c3fd7d82cd79d466e2b9547c6733aa294aea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3240b92993986b32a739b7a6e5c7f7c2df3ed71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765119"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890093"
 ---
 # <a name="recruiting-power-bi-content"></a>Työhönoton Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään **työhönoton** Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+Tässä artikkelissa käsitellään **työhönoton** Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 **Työhönoton** Power BI -sisältö näkyy **Työhönoton hallinta** -työtilassa.

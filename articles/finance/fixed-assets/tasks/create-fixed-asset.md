@@ -1,6 +1,6 @@
 ---
-title: Luo käyttöomaisuuserä
-description: Tässä ohjeaiheessa käsitellään uuden käyttöomaisuustietueen luontia käyttöomaisuuden luettelosivulta.
+title: Käyttöomaisuuden luominen
+description: Tässä artikkelissa käsitellään uuden käyttöomaisuustietueen luontia käyttöomaisuuden luettelosivulta.
 author: moaamer
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a9394c0c7a5e2d9b417cbaee9f4e67f36ae124fb
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 00c72081d20015737aa027cee9474a54e498cef4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868486"
 ---
-# <a name="create-a-fixed-asset"></a>Luo käyttöomaisuuserä
+# <a name="create-a-fixed-asset"></a>Käyttöomaisuuden luominen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään uuden käyttöomaisuustietueen luontia **Käyttöomaisuus**-luettelosivulta.
+Tässä artikkelissa käsitellään uuden käyttöomaisuustietueen luontia **Käyttöomaisuus**-luettelosivulta.
 
 Järjestelmä määrittää käyttöomaisuuserän numeron käyttöomaisuusryhmällä määritetyn numerosarjan perusteella. Jos käyttöomaisuuseriä tuodaan Microsoft Excel -apuohjelman avulla käyttöomaisuusmalleja käyttämällä tai jos käytössä on toinen tuontityö, järjestelmä luo automaattisesti käyttöomaisuustietueet ja kasvattaa käyttöomaisuuserän numeroa.
 

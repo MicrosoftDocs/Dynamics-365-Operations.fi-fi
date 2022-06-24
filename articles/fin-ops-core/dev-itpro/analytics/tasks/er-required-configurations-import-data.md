@@ -1,6 +1,6 @@
 ---
 title: ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) määrityksen suunnittelua tuomaan tietoja Microsoft Dynamics 365 Finance -sovellukseen ulkoisesta tiedostosta.
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) määrityksen suunnittelua tuomaan tietoja Microsoft Dynamics 365 Finance -sovellukseen ulkoisesta tiedostosta.
 author: NickSelin
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7eaa35baae8e030d8a8b7ce903554c4876c874b48cfd72d6ac278cf4c0e8a6e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa1dc55e8cdee7d61e5ababe92e8a9234788664f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720853"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865890"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
 
@@ -241,7 +241,7 @@ Testaa muodon yhdistämismääritys suorittamalla se. Käytä aiemmin ladattua 1
 19. Sulje sivu.
 20. Valitse Muokkaa.
 
-    Jos olet asentanut hotfix-korjauksen KB 4012871 GER-mallien yhdistämismääritysten tuki erillisinä määrityksenä sekä mahdollisuus määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 Financen eri versioissa ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), suorita annetulle muotomääritykselle seuraava vaihe, Mallin määrityksen oletusarvo -merkinnän ottaminen käyttöön. Ohita seuraava vaihe muussa tapauksessa.  
+    Jos olet asentanut hotfix-korjauksen KB 4012871 GER-mallien yhdistämismääritysten tuki erillisinä määrityksenä sekä mahdollisuus määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 Financen eri versioissa ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), suorita annetulle muotomääritykselle seuraava vaihe Mallin määrityksen oletusarvo -merkinnän ottaminen käyttöön. Ohita seuraava vaihe muussa tapauksessa.  
 
 21. Valitse Mallin määrityksen oletusarvo -kentässä Kyllä.
 22. Valitse puussa 1099-maksumalli.

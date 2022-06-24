@@ -1,6 +1,6 @@
 ---
 title: Sähköisten raportointien avulla voit määrittää ja luoda positiivisia maksutiedostoja
-description: Tässä ohjeaiheessa käsitellään Positive pay -toiminnon määrittämistä käyttämällä elektronista raportointia.
+description: Tässä artikkelissa käsitellään Positive pay -toiminnon määrittämistä käyttämällä elektronista raportointia.
 author: panolte
 ms.date: 03/20/2022
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc2f17d62b429b599d5ac5f2a521819275d36b64
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 491048c7274ba6bb52e0a4b7a6ea5cd0f5ff4741
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878215"
 ---
 # <a name="set-up-positive-pay-files-by-using-electronic-reporting"></a>Sähköisten raportointien avulla voit määrittää positiivisia maksutiedostoja
 
-Tässä ohjeaiheessa käsitellään Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista sähköisen raportoinnin avulla.
+Tässä artikkelissa käsitellään Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista sähköisen raportoinnin avulla.
 
 > [!NOTE] 
 > Ennen kuin käytät **Luo pankin Positive pay -tiedosto** -toimintoa, sinun on päivitettävä yksikköluettelo.

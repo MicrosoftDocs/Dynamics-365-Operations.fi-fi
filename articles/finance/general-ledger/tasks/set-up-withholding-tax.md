@@ -1,6 +1,6 @@
 ---
 title: Määritä ennakonpidätys
-description: Tässä ohjeaiheessa kuvataan ennakonpidätyksen määrittäminen.
+description: Tässä artikkelissa kuvataan ennakonpidätyksen määrittäminen.
 author: twheeloc
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3c4992c7ab02793db3650df5624143d0ec090d0
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0cc080df587904568796a9d6794987326be3ad26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907942"
 ---
 # <a name="set-up-withholding-tax"></a>Määritä ennakonpidätys
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan ennakonpidätyksen määrittäminen. *Ennakonpidätys* on toimittajilta perittävä vero, josta ei synny arvonlisäverotapahtumia. Toimittajien maksuista laskettava ennakonpidätys on velkaa. Sen vuoksi ennakonpidätyksen voi kirjata vain tase- tai velkatileille. Tässä tehtävän ohjauksessa kerrotaan, miten ennakonpidätys määritetään.
+Tässä artikkelissa kuvataan ennakonpidätyksen määrittäminen. *Ennakonpidätys* on toimittajilta perittävä vero, josta ei synny arvonlisäverotapahtumia. Toimittajien maksuista laskettava ennakonpidätys on velkaa. Sen vuoksi ennakonpidätyksen voi kirjata vain tase- tai velkatileille. Tässä tehtävän ohjauksessa kerrotaan, miten ennakonpidätys määritetään.
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Välilliset verot > Ennakonpidätys > Ennakonpidätyskoodit**.
 2. Valitse **Uusi**.

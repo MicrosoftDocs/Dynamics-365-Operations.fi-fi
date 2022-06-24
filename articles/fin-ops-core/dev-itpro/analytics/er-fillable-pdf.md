@@ -1,6 +1,6 @@
 ---
 title: Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
-description: Tässä ohjeaiheessa on tietoja sähköisen raportointimuodon suunnittelemiseen PDF-mallin täyttämistä varten.
+description: Tässä artikkelissa on tietoja sähköisen raportointimuodon suunnittelemiseen PDF-mallin täyttämistä varten.
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: ef9b650e9b676d79af8839c08cfbb1000a5aee5f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908587"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 
 [!include[banner](../includes/banner.md)]
 
-Tämän ohjeaiheen menetelmät ovat esimerkkejä, jotka osoittavat, miten **järjestelmänvalvoja**-roolin tai **Sähköisen raportoinnin kehittäjän** roolin käyttäjä voi määrittää sähköisen raportointimuodon (ER), joka luo raportteja PDF-tiedostoja käyttämällä täytettäviä PDF-dokumentteja raporttimalleina. Nämä vaiheet voidaan suorittaa missä tahansa Dynamics 365 Finance -yrityksessä tai Regulatory Configuration Servicesissä (RCS).
+Tämän artikkelin menetelmät ovat esimerkkejä, jotka osoittavat, miten **järjestelmänvalvoja**-roolin tai **Sähköisen raportoinnin kehittäjän** roolin käyttäjä voi määrittää sähköisen raportointimuodon (ER), joka luo raportteja PDF-tiedostoja käyttämällä täytettäviä PDF-dokumentteja raporttimalleina. Nämä vaiheet voidaan suorittaa missä tahansa Dynamics 365 Finance -yrityksessä tai Regulatory Configuration Servicesissä (RCS).
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen aloittamista sinulla on oltava jokin seuraavista käyttötyypeistä sen mukaan, mitä palvelua käytät tämän ohjeaiheen suorittamisessa:
+Ennen aloittamista sinulla on oltava jokin seuraavista käyttötyypeistä sen mukaan, mitä palvelua käytät tämän artikkelin suorittamisessa:
 
 - Finance-käyttöoikeudet seuraaville rooleille:
 

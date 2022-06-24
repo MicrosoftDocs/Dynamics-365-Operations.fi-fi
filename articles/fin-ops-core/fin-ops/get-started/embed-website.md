@@ -1,6 +1,6 @@
 ---
-title: Kolmannen osapuolen sovellusten upottaminen
-description: Tässä ohjeaiheessa käsitellään kolmannen osapuolen sovellusten upottamista laajentamaan tuotteen toimintoja.
+title: Upotetut kolmannen osapuolen sovellukset
+description: Tässä artikkelissa käsitellään kolmannen osapuolen sovellusten upottamista tuotteen toimintojen laajentamiseksi.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488231"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868605"
 ---
 # <a name="embed-third-party-apps"></a>Kolmannen osapuolen sovellusten upottaminen
 
 [!include [banner](../includes/banner.md)]
 
-Monet asiakkaat käyttävät useita sovelluksia liiketoiminnan harjoittamiseen. Osa sovelluksista on kolmannen osapuolen verkkosovelluksia, jotka toimivat yhdessä Finance and Operations -sovellusten kanssa. Jos haluat antaa entistä sujuvamman käyttökokemuksen, voit käyttää **Koko sivun sovellukset** -toimintoa, kun haluat upottaa nämä kolmannen osapuolen sovellukset suoraan Finance and Operations -sovelluksiin (jos kolmannen osapuolen sovellukset sallivat upottamisen). Näin käyttäjät voivat käyttää tarvitsemiaan sivustoja ja sovelluksia ilman, että heidän tarvitsee vaihtaa välilehtiä tai ikkunoita.
+Monet asiakkaat käyttävät useita sovelluksia liiketoiminnan harjoittamiseen. Osa sovelluksista on kolmannen osapuolen verkkosovelluksia, jotka toimivat yhdessä talous- ja toimintosovellusten kanssa. Jos haluat tarjota saumattomamman käyttökokemuksen, voit käyttää **Koko sivun sovellukset** -toimintoa, kun haluat upottaa nämä kolmannen osapuolen sovellukset suoraan talous- ja toimintosovelluksiin (jos kolmannen osapuolen sovellukset sallivat upottamisen). Näin käyttäjät voivat käyttää tarvitsemiaan sivustoja ja sovelluksia ilman, että heidän tarvitsee vaihtaa välilehtiä tai ikkunoita.
 
-Ennen kuin voit upottaa kolmannen osapuolen sovellukset tuotteeseen, ota ominaisuuksien hallinnassa käyttöön **Koko sivun sovellukset**. Sen jälkeen voit upottaa kolmannen osapuolen sovelluksen tai sivuston jollais seuraavista tavoista. Nämä menetelmät ovat analogisia menetelmille, joita käytetään kaaviosovellusten upottamiseen Microsoft Power Apps -sovelluksista Finance and Operations -sovelluksiin.
+Ennen kuin voit upottaa kolmannen osapuolen sovellukset tuotteeseen, ota ominaisuuksien hallinnassa käyttöön **Koko sivun sovellukset**. Sen jälkeen voit upottaa kolmannen osapuolen sovelluksen tai sivuston jollais seuraavista tavoista. Nämä menetelmät ovat analogisia menetelmille, joita käytetään kaaviosovellusten upottamiseen Microsoft Power Apps -sovelluksista talous- ja toimintosovelluksiin.
 
 - Upota sovellus tai sivusto aiemmin luodulle sivulle uutena välilehtenä (pivot-välilehti, pikavälilehti, lehti tai työtilan osa).
 - Luo sovellukselle tai sivustolle uusi koko sivun kokemus koontinäytössä.
@@ -53,14 +53,14 @@ Käytä tätä menettelyä, jos haluat täydentää järjestelmässä olevaa siv
     > - Sovelluksen tai verkkosivuston asetukset on määritettävä niin, että ne sallivat upottamisen.
 
 6. Valitse **Tallenna**, jos haluat upottaa sovelluksen sivulle. Sovellus lisätään ryhmän viimeiseksi välilehdeksi tai osaksi.
-7. Vahvista, että sovellus näkyy odotetulla tavalla. Jos sovellusta ei hahmonneta, katso [Vianmääritys](#troubleshooting)-osa jäljempänä tässä ohjeaiheessa.
+7. Vahvista, että sovellus näkyy odotetulla tavalla. Jos sovellusta ei hahmonneta, katso [Vianmääritys](#troubleshooting)-osa jäljempänä tässä artikkelissa.
 8. Avaa näkymän valitsin ja valitse joko **Tallenna** (jos sovellus liitetään nykyiseen näkymään) tai **Tallenna nimellä** (jos haluat tallentaa sovelluksen eri näkymään).
 
     Jos sivulla ei ole näkymän valitsinta (esimerkiksi sivu on valintaikkuna tai työtila), voit ohittaa tämän vaiheen.
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Upota sivusto koko sivun kokemuksena koontinäytöstä
 
-Käytä tätä menettelyä, jos upotettava sovellus ei liity aiemmin luotuun sivuun tai jos haluat vain koko sivun kokemuksen sovellukselle Finance and Operations -sovelluksessa.
+Käytä tätä menettelyä, jos upotettava sovellus ei liity aiemmin luotuun sivuun tai jos haluat vain koko sivun kokemuksen sovellukselle talous- ja toimintosovelluksessa.
 
 1. Avaa koontinäyttö.
 2. Tee valinta ja pidä se valittuna koontinäytössä (tai napsauta hiiren kakkospainikkeella), valitse sitten **Mukauta** ja valitse lopuksi **Lisää sivu**.
@@ -75,7 +75,7 @@ Käytä tätä menettelyä, jos upotettava sovellus ei liity aiemmin luotuun siv
     > - Sovelluksen tai verkkosivuston asetukset on määritettävä niin, että ne sallivat upottamisen.
 
 5. Lisää sovellus koontinäyttöön uutena ruutuna valitsemalla **Tallenna**.
-6. Valitse uusi ruutu koontinäytöstä ja vahvista, että sovellus näkyy odotetulla tavalla. Jos sovellusta ei hahmonneta, lisätietoja on jäljempänä tässä aiheessa kohdassa [Vianmääritys](#troubleshooting).
+6. Valitse uusi ruutu koontinäytöstä ja vahvista, että sovellus näkyy odotetulla tavalla. Jos sovellusta ei hahmonneta, lisätietoja on jäljempänä tässä artikkelissa kohdassa [Vianmääritys](#troubleshooting).
 
 ## <a name="sharing-embedded-apps"></a>Upotettujen sovellusten jakaminen
 
@@ -89,7 +89,7 @@ Kun olet upottanut sovelluksen käyttämällä jotakin aiemmissa osissa kuvatuis
 
 ## <a name="viewing-embedded-apps"></a>Upotettujen sovellusten tarkasteleminen
 
-Voit tarkastella Finance and Operations -sovelluksien sivulle upotettua sovellusta avaamalla sivun, jolla on upotettu sovellus. Muista, että joillakin sivuilla upotettuja sovelluksia voi käyttää vakiomuotoisen toimintoruudun **Power Apps** -painikkeen avulla. Vaihtoehtoisesti ne voivat tulla näkyviin suoraan sivulla uutena välilehtenä, pikavälilehtenä, lehtenä tai työtilan uutena osana.
+Voit tarkastella talous- ja toimintosovellusten sivulle upotettua sovellusta avaamalla sivun, jolla on upotettu sovellus. Muista, että joillakin sivuilla upotettuja sovelluksia voi käyttää vakiomuotoisen toimintoruudun **Power Apps** -painikkeen avulla. Vaihtoehtoisesti ne voivat tulla näkyviin suoraan sivulla uutena välilehtenä, pikavälilehtenä, lehtenä tai työtilan uutena osana.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Upotettujen sovellusten muokkaaminen tai poistaminen
 
@@ -126,6 +126,6 @@ Jos sivustoa ei hahmonneta oikein sen jälkeen, kun se on upotettu Finance and O
 
 ### <a name="developer-modeling-a-website-on-a-form"></a>[Kehittäjä] Sivuston mallinnus lomakkeelle
 
-Vaikka tämä ohjeaihe on kohdistunut kolmannen osapuolen sovellusten tai sivustoihin upottamiseen mukauttamisen kautta, kehittäjät voivat myös upottaa ne lomakkeeseen Visual Studio -kehittämiskokemusta käyttäen. Lisää vain **WebsiteHostControl** -ohjausobjekti lomakkeeseen. Ohjausobjektin käytettävissä olevat metatietojen ominaisuudet tarjoavat samat ominaisuudet kuin personointikokemuskin.
+Vaikka tämä artikkeli on kohdistunut kolmannen osapuolen sovellusten tai sivustoihin upottamiseen mukauttamisen kautta, kehittäjät voivat myös upottaa ne lomakkeeseen Visual Studio -kehittämiskokemusta käyttäen. Lisää vain **WebsiteHostControl** -ohjausobjekti lomakkeeseen. Ohjausobjektin käytettävissä olevat metatietojen ominaisuudet tarjoavat samat ominaisuudet kuin personointikokemuskin.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Asiakkaan ikääntymistietojen tallennustila
-description: Tässä aiheessa kuvataan asiakkaan erääntymistietojen ulkoisen tallennuksen käyttöprosessia. Suorita asiakkaan erääntymistietojen tallennusprosessi, jotta tiedot voidaan viedä ulkoiseen järjestelmään.
+description: Tässä artikkelissa kuvataan asiakkaan erääntymistietojen ulkoisen tallennuksen käyttöprosessia. Suorita asiakkaan erääntymistietojen tallennusprosessi, jotta tiedot voidaan viedä ulkoiseen järjestelmään.
 author: JodiChristiansen
 ms.date: 10/27/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1af4b4cbf503369565ee64ad8889ee9e59a92b3f
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d7a66485cc9a538f5c3999009b6dbe295d7a5b9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735518"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894139"
 ---
 # <a name="customer-aging-data-storage"></a>Asiakkaan ikääntymistietojen tallennustila
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan asiakkaan erääntymistietojen ulkoisen tallennuksen käyttöprosessia. Microsoft Dynamics 365 Financessa voit suorittaa **asiakkaan erääntymistietojen tallennusprosessin**, jotta tiedot voidaan viedä ulkoiseen järjestelmään. Kun suoritat prosessin, samat erääntymisraporttivaihtoehdot, jotka ovat käytettävissä järjestelmässä, ovat ulkoisten järjestelmien käytettävissä. Tiedot sisällytetään aina vietyihin tietoihin.
+Tässä artikkelissa kuvataan asiakkaan erääntymistietojen ulkoisen tallennuksen käyttöprosessia. Microsoft Dynamics 365 Financessa voit suorittaa **asiakkaan erääntymistietojen tallennusprosessin**, jotta tiedot voidaan viedä ulkoiseen järjestelmään. Kun suoritat prosessin, samat erääntymisraporttivaihtoehdot, jotka ovat käytettävissä järjestelmässä, ovat ulkoisten järjestelmien käytettävissä. Tiedot sisällytetään aina vietyihin tietoihin.
 
 Asiakkaan erääntymistiedot voidaan määrittää ulkoisen järjestelmän käyttöön tallennusta varten, jos tuotoksessa on useita asiakkaita ja/tai useita tapahtumia. Jos **asiakkaan erääntymisraportti** aikakatkaistaan, koska tulostettavana on liian paljon tietoja, tämä ominaisuus tarjoaa vaihtoehtoisen tavan käyttää samoja tietoja.
 

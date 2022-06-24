@@ -1,6 +1,6 @@
 ---
-title: Power BI -sisällön kotisivu
-description: Tässä ohjeaiheessa on luettelo käytettävissä olevista PowerBI.com-ratkaisuista. Ohjeaiheessa käsitellään myös resursseja, jossa on lisätietoja ratkaisuista.
+title: Power BI -sisällön aloitussivu
+description: Tässä artikkelissa on luettelo käytettävissä olevista PowerBI.com-ratkaisuista. Artikkelissa käsitellään myös resursseja, jossa on lisätietoja ratkaisuista.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5c56b6d8ae3c641aab86261f844ed60bd8579969ba6583bb90098436d84b2859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7236f53c84ed21fc6785a11b36f4ed5f253e9d1c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753619"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872908"
 ---
 # <a name="power-bi-content-home-page"></a>Power BI -sisällön aloitussivu
 

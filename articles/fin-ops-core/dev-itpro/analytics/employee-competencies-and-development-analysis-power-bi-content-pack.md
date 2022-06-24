@@ -1,6 +1,6 @@
 ---
 title: Työntekijän osaamisalueiden ja kehittämisen Power BI -sisältö
-description: Tässä ohjeaiheessa käsitellään työntekijän osaamisalueiden ja kehityksen Power BI -sisältöä
+description: Tässä artikkelissa käsitellään työntekijän osaamisalueiden ja kehityksen Power BI -sisältöä
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 572f6bcfa202995d90080e1a31476122f7ec23d71214d5ff0dd44ed919859c57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8fee4d98a3e20fa268d6c3539db09e09a7861a2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851013"
 ---
 # <a name="employee-competencies-and-development-power-bi-content"></a>Työntekijän osaamisalueiden ja kehittämisen Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään työntekijän osaamisalueiden ja kehityksen Power BI -sisältöä 
+Tässä artikkelissa käsitellään työntekijän osaamisalueiden ja kehityksen Power BI -sisältöä 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
 Kun olet liittänyt sisältöpaketin tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja on kohdassa [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.

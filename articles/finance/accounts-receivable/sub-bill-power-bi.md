@@ -1,6 +1,6 @@
 ---
-title: Tilauslaskutuksen Power BI -sisältö
-description: Tässä aiheessa käsitellään tilauslaskutuksen Microsoft Power BI -sisältöä.
+title: Tilauslaskutuksen käytön Power BI -sisältö
+description: Tässä artikkelissa käsitellään tilauslaskutuksen Microsoft Power BI -sisältöä.
 author: JodiChristiansen
 ms.date: 04/13/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-04-13
-ms.openlocfilehash: fad96bdaf60e7772e9ea1ff937435b0274303505
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6cee01eb5b8bb8296b6e7f638b565c999ccc023e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645425"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849957"
 ---
-# <a name="subscription-billing-power-bi-content"></a>Tilauslaskutuksen Power BI -sisältö
+# <a name="subscription-billing-power-bi-content"></a>Tilauslaskutuksen käytön Power BI -sisältö
 
 [!include[banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään tilauslaskutuksen Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä. 
+Tässä artikkelissa käsitellään tilauslaskutuksen Microsoft Power BI -sisältöä. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä. 
 
 ## <a name="overview"></a>Yleiskuvaus
 

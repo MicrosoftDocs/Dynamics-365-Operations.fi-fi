@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722630"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864307"
 ---
 # <a name="elimination-rules"></a>Eliminointisäännöt
 
@@ -34,7 +34,7 @@ Eliminointitapahtumia tarvitaan, kun emoyritys suorittaa liiketoimia vähintää
 -   Talousraportoinnin avulla voidaan näyttää tietyn rivin tai sarakkeen eliminoinnin tilit ja dimensiot.
 -   Eliminointien seuraamisessa käytettävien manuaalisten tapahtumakirjausten kirjaamisessa voidaan käyttää erillistä yritystä.
 
-Tässä ohjeaiheessa keskitytään konsolidointi- tai eliminointiyrityksessä käsiteltäviin eliminointisääntöihin. Määrittämällä eliminointisääntöjä voit luoda eliminointitapahtumia yritykseen, joka on määritetty eliminointien kohdeyritykseksi. Kohdetyritys tunnetaan nimellä eliminointiyritys. Eliminointikirjauskansioita voi muodostaa joko konsolidoinnin aikana tai eliminointikirjauskansion ehdotuksen avulla. Tutustu seuraaviin termeihin, ennen kuin määrität eliminointisääntöjä:
+Tässä artikkelissa keskitytään konsolidointi- tai eliminointiyrityksessä käsiteltäviin eliminointisääntöihin. Määrittämällä eliminointisääntöjä voit luoda eliminointitapahtumia yritykseen, joka on määritetty eliminointien kohdeyritykseksi. Kohdetyritys tunnetaan nimellä eliminointiyritys. Eliminointikirjauskansioita voi muodostaa joko konsolidoinnin aikana tai eliminointikirjauskansion ehdotuksen avulla. Tutustu seuraaviin termeihin, ennen kuin määrität eliminointisääntöjä:
 
 -   **Lähdeyritys** – Yritys, johon eliminoitavat summat kirjataan.
 -   **Kohdeyritys** – Yritys, johon eliminointisäännöt kirjataan.

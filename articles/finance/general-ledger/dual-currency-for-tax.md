@@ -1,6 +1,6 @@
 ---
 title: Veron kaksoisvaluutan tuki
-description: Tässä ohjeaiheessa kerrotaan, miten kaksoisvaluutan kirjanpitotoiminto laajennetaan veroluokkaan, sekä veron laskennan ja kirjaamisen vaikutukset
+description: Tässä artikkelissa kerrotaan, miten kaksoisvaluutan kirjanpitotoiminto laajennetaan veroluokkaan, sekä veron laskennan ja kirjaamisen vaikutukset
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909037"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Arvonlisäveron kaksoisvaluutan tuki
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten kaksoisvaluutan kirjanpitotoiminto laajennetaan arvonlisäverolle, sekä arvonlisäveron laskentojen, kirjaamisen ja tilitysten vaikutukset.
+Tässä artikkelissa kerrotaan, miten kaksoisvaluutan kirjanpitotoiminto laajennetaan arvonlisäverolle, sekä arvonlisäveron laskentojen, kirjaamisen ja tilitysten vaikutukset.
 
 Dynamics 365 Finance -sovelluksen kaksoisvaluuttatoiminto otettiin käyttöön versiossa 8.1 (lokakuu 2018). Se muuttaa raportointivaluutan kirjanpitomerkintöjen laskentatapaa.
 
@@ -89,7 +89,7 @@ Tämä toiminto koskee vain uusia tapahtumia. Jos verotapahtuma on jo tallennett
 
 Jos haluat estää edellä kerrotun skenaarion, suosittelemme tämän parametrin arvon muuttamista uudelle (puhtaalla) verotilityskaudella, joka ei sisällä tilittämättömiä verotapahtumia. Jos haluat muuttaa tätä arvoa veron tilityskauden aikana, suorita Tilitä ja kirjaa arvonlisävero -ohjelma nykyisellä verontilityskaudella ennen kuin muutat tämän parametrin arvoa.
 
-Tämä ominaisuus lisää kirjanpitomerkintöjä, jotka selventävät valuutanvaihdon voittoja ja tappioita. Tiedot tehdään realisoituneilla valuuttaoikaisun tulostileillä, kun uudelleenarvostus tehdään arvonlisäveron tilityksen yhteydessä. Lisätietoja on jäljempänä tässä ohjeaiheessa kohdassa [Verotilitysten automaattinen saldo raportointivaluuttana](#tax-settlement-auto-balance-in-reporting-currency).
+Tämä ominaisuus lisää kirjanpitomerkintöjä, jotka selventävät valuutanvaihdon voittoja ja tappioita. Tiedot tehdään realisoituneilla valuuttaoikaisun tulostileillä, kun uudelleenarvostus tehdään arvonlisäveron tilityksen yhteydessä. Lisätietoja on jäljempänä tässä artikkelissa osassa [Verotilitysten automaattinen saldo raportointivaluuttana](#tax-settlement-auto-balance-in-reporting-currency).
 
 > [!NOTE]
 > Tilityksen aikana taloushallinnon dimensioiden tiedot ovat liikevaihtotilejä eli tasetilejä, jotka syötetään valuuttaoikaisun tuloslaskelmaan eli tulostilille. Koska taloushallinnon dimensioiden arvon rajoitukset eroavat tasetilien ja tulostilien rajoitusten osalta, arvonlisäveron selvitys- ja kirjaamisprosessin aikana voi esiintyä virhe. Jotta tilirakenteita ei tarvitse muokata, voit ottaa käyttöön Täytä taloushallinnon dimensiot toteutuneihin valuuttaoikaisuvoittoihin/-tappiotileihin arvonlisäveron tilittämiseksi -ominaisuuden. Tämä ominaisuus pakottaa taloushallinnon dimensioiden aktivoimisen valuuttaoikaisuvoittojen/-tappioiden tileihin. 

@@ -1,6 +1,6 @@
 ---
 title: Suoritettavan ER-muodon tietolähteiden vianmääritys tiedonkulun ja muunnoksen analysointia varten
-description: Tässä ohjeaiheessa kerrotaan, miten voit korjata suoritetun ER-muodon tietolähteet ja ymmärtää paremmin konfiguroidun tietovuon ja muunnoksen.
+description: Tässä artikkelissa kerrotaan, miten voit korjata suoritetun ER-muodon tietolähteet ja ymmärtää paremmin konfiguroidun tietovuon ja muunnoksen.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323758"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884225"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Suoritettavan ER-muodon tietolähteiden vianmääritys tiedonkulun ja muunnoksen analysointia varten
 
@@ -34,7 +34,7 @@ Joskus luodun tuotoksen tiedot näyttävät erilaisilta kuin samat tiedot sovell
 
 Voit ottaa tietolähteen virheenkorjaustoiminnon käyttöön määrittämällä **Ota tietojen virheenkorjaus käyttöön muodon suorituksen yhteydessä** -vaihtoehdon Suorita vaihtoehdon arvoksi **Kyllä** ER-käyttäjäparametreissa. Tämän jälkeen voit käynnistää tietolähteen virheenkorjauksen, kun luot lähteviä asiakirjoja suorittamalla ER-muodon. **Aloita virheenkorjaus** -vaihtoehdon avulla voit myös aloittaa tietolähteen virheenkorjaustoiminnon, joka on konfiguroitu [ER-työvaiheen suunnittelutoiminnossa](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-Tässä ohjeaiheessa on ohjeita tietolähteen virheenkorjauksen käynnistämiseen suoritettavissa ER-muodoissa. Siinä selitetään, miten tiedot voivat auttaa tietovuon ja tietojen muunnosten ymmärtämiseksi. Tämän ohjeaiheen esimerkeissä käytetään toimittajamaksukäsittelyn liiketoimintaprosessia.
+Tässä artikkelissa on ohjeita tietolähteen virheenkorjauksen käynnistämiseen suoritettavissa ER-muodoissa. Siinä selitetään, miten tiedot voivat auttaa tietovuon ja tietojen muunnosten ymmärtämiseksi. Tämän artikkelin esimerkeissä käytetään toimittajamaksukäsittelyn liiketoimintaprosessia.
 
 ## <a name="limitations"></a>Rajoitukset
 
@@ -49,7 +49,7 @@ Seuraavat ER-muotojen asetukset eivät ole käytettävissä tietolähteen virhee
 
 ## <a name="prerequisites"></a>Edellytykset
 
-- Tässä ohjeaiheessa olevien esimerkkien suorittaminen edellyttää käyttöoikeutta johonkin seuraavaan [rooliin](../sysadmin/tasks/assign-users-security-roles.md):
+- Tässä artikkelissa olevien esimerkkien suorittaminen edellyttää käyttöoikeutta johonkin seuraavaan [rooliin](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Sähköisen raportoinnin kehittäjä
     - Sähköisen raportoinnin toiminnallinen konsultti
@@ -57,12 +57,12 @@ Seuraavat ER-muotojen asetukset eivät ole käytettävissä tietolähteen virhee
 
 - Yritykselle on asetettava **DEMF**.
 
-- Tämän ohjeaiheen [lisäyksen 1](#appendix1) vaiheiden mukaisesti voit ladata toimittajien maksuissa tarvittavien Microsoft er-ratkaisujen komponentit.
-- Tämän ohjeaiheen [Lisäyksessä 2](#appendix2) olevien ohjeiden avulla voit valmistella ostoreskontran toimittajamaksun käsittelyä varten käyttämällä ER-ratkaisua, jonka voit ladata.
+- Tämän artikkelin [lisäyksen 1](#appendix1) vaiheiden mukaisesti voit ladata toimittajien maksuissa tarvittavien Microsoftin sähköisen raportoinnin ratkaisujen komponentit.
+- Tämän artikkelin [lisäyksessä 2](#appendix2) olevien ohjeiden avulla voit valmistella ostoreskontran toimittajamaksun käsittelyä varten käyttämällä sähköisen raportoinnin ratkaisua, jonka voit ladata.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Toimittajamaksun käsitteleminen siten, että se saa maksutiedoston
 
-1. Käsittele toimittajamaksuja tämän ohjeaiheen [Lisäyksen 3](#appendix3) ohjeiden mukaisesti.
+1. Käsittele toimittajamaksuja tämän artikkelin [lisäyksen 3](#appendix3) ohjeiden mukaisesti.
 
     ![Toimittajamaksujen käsittely käynnissä.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ Seuraavat ER-muotojen asetukset eivät ole käytettävissä tietolähteen virhee
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Toimittajan summan käsitteleminen virheen korjausta varten
 
-1. Käsittele toimittajamaksuja tämän ohjeaiheen [Lisäyksen 3](#appendix3) ohjeiden mukaisesti.
+1. Käsittele toimittajamaksuja tämän artikkelin [lisäyksen 3](#appendix3) ohjeiden mukaisesti.
 2. Vahvista, että haluat keskeyttää toimittajan maksujenkäsittelyn ja käynnistää sen sijaan tietolähteen **virheenkorjauksen tietolähteet** -sivulla, valitsemalla sanomaruudun vaihtoehdon **Kyllä**.
 
     ![Vahvistussanomaruutu.](./media/er-data-debugger-start-debugging.png)
@@ -188,7 +188,7 @@ Jos haluat käyttää ER-ratkaisua sähköisen maksutiedoston luomiseen käsitel
 
 ![ER-maksumuodon tuominen konfiguraation tietovarasto -sivulla.](./media/er-data-debugger-import-from-repo.png)
 
-Valitun ER-muodon lisäksi seuraavat [kokoonpanot](general-electronic-reporting.md#Configuration) on tuotava automaattisesti Microsoft Dynamics 365 Finance -instanssiin osana **ISO20022-tilisiirron** ER-ratkaisua:
+Valitun ER-muodon lisäksi seuraavat [kokoonpanot](general-electronic-reporting.md#Configuration) on tuotava automaattisesti Microsoft Dynamics 365 Finance -instanssiin osana **ISO20022-tilisiirron** sähköisen raportoinnin ratkaisua:
 
 - **Maksun malli** ER-tietomallien määritys
 - **ISO20022-tilisiirto** ER-muodon konfiguraatio

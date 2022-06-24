@@ -1,6 +1,6 @@
 ---
 title: Toistuvan sopimuksen laskutusparametrit
-description: Tässä aiheessa kerrotaan, miten määritetään toistuvassa sopimuslaskutuksessa luotujen laskutusaikataulujen oletusarvot. Siinä kerrotaan myös, miten laskutusaikatauluryhmiä luodaan.
+description: Tässä artikkelissa kerrotaan, miten määritetään toistuvassa sopimuslaskutuksessa luotujen laskutusaikataulujen oletusarvot. Siinä kerrotaan myös, miten laskutusaikatauluryhmiä luodaan.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 19fe77ade0523aa7fd6382266457fd739df46d75
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685828"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903331"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Toistuvan sopimuksen laskutusparametrit
 
@@ -27,7 +27,7 @@ ms.locfileid: "8685828"
 
 ## <a name="general-tab"></a>Yleinen-välilehti
 
-1. Valitse **Toistuvat sopimuksen laskutusparametrit** -sivun **Yleiset**-välilehden **Laskutusaikatauluryhmä**-kentästä laskutusaikatauluryhmä. Lisätietoja laskutusaikatauluryhmien määrittämisestä on tässä ohjeaiheessa myöhemmin olevassa [Laskutusaikatauluryhmien määrittäminen](#set-up-billing-schedule-groups) -osassa.
+1. Valitse **Toistuvat sopimuksen laskutusparametrit** -sivun **Yleiset**-välilehden **Laskutusaikatauluryhmä**-kentästä laskutusaikatauluryhmä. Lisätietoja laskutusaikatauluryhmien määrittämisestä on tässä artikkelissa myöhemmin olevassa [Laskutusaikatauluryhmien määrittäminen](#set-up-billing-schedule-groups) -osassa.
 2. Valitse **Irtisanomistyyppi**-kentässä, kuinka lopullinen lasku lasketaan laskutusaikataulun päättämisen yhteydessä:
 
     - **Aikataulun oikaiseminen** – Voit poistaa laskutusaikataulun käytöstä irtisanomispäivänä, muuttaa aikataulun tilaksi **Edellinen laskutus** ja muuttaa siihen liittyvän lykkäysaikataulun peruuttamalla summan, jota ei enää saa tulouttaa. Jos laskutuksen alkamispäivämäärä on päättymispäivän jälkeen, jäljellä olevat laskutuskaudet poistuvat.

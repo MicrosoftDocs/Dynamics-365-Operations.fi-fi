@@ -1,6 +1,6 @@
 ---
 title: Live-synkronoinnin ongelmien vianmääritys
-description: Tässä ohjeaiheessa on vianmääritystietoja, joiden avulla voit korjata ongelmia suoralla synkronoinnilla.
+description: Tässä artikkelissa on vianmääritystietoja, joiden avulla voit korjata ongelmia suoralla synkronoinnilla.
 author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062360"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896702"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-synkronoinnin ongelmien vianmääritys
 
@@ -22,10 +22,10 @@ ms.locfileid: "8062360"
 
 
 
-Tässä ohjeaiheessa on vianetsintätietoja kaksoiskirjoituksen integroinnista taloushallinnon ja toimintojen sovellusten ja Microsoft Dataversen välillä. Erityisesti se tarjoaa tietoja, joiden avulla voit korjata ongelmia suoralla synkronoinnilla.
+Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Microsoft Dataversen välillä. Erityisesti se tarjoaa tietoja, joiden avulla voit korjata ongelmia suoralla synkronoinnilla.
 
 > [!IMPORTANT]
-> Jotkin tämän ohjeaiheen osa-alueet saattavat edellyttää joko järjestelmänvalvojan roolia tai Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tiettyjä tunnistetietoja.
+> Jotkin tämän artikkelin osa-alueet saattavat edellyttää joko järjestelmänvalvojan roolia tai Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tiettyjä tunnistetietoja.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Live-synkronointi näyttää virheen, kun rivi luodaan
 

@@ -1,6 +1,6 @@
 ---
 title: Verkossa tapahtuma taloushallinnon konsolidointi
-description: Tässä ohjeaiheessa käsitellään verkossa tapahtuvia taloushallinnon konsolidointeja kirjanpidossa.
+description: Tässä artikkelissa käsitellään verkossa tapahtuvia taloushallinnon konsolidointeja kirjanpidossa.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d5848960ec5e30c1356a93ca4cb6545cec9e39de
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848546"
 ---
 # <a name="online-financial-consolidations"></a>Verkossa tapahtuma taloushallinnon konsolidointi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään verkossa tapahtuvia taloushallinnon konsolidointeja kirjanpidossa. Lue ennen tämän ohjeaiheen lukemista [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](financial-consolidations-currency-translation.md).
+Tässä artikkelissa käsitellään verkossa tapahtuvia taloushallinnon konsolidointeja kirjanpidossa. Lue ennen tämän artikkelin lukemista artikkeli [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](financial-consolidations-currency-translation.md).
 
 Kun olet määrittänyt asetukset, anna konsolidointitiedot **Konsolidoi [Online]** -sivulla. Kun olet valmis käsittele konsolidointi valitsemalla **OK** tai **Erä**.
 
@@ -90,7 +90,7 @@ Lisätietoja eliminoinnista on kohdassa [Eliminointisäännöt](./elimination-ru
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
+Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän artikkelin pääartikkelissa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
 
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).
 

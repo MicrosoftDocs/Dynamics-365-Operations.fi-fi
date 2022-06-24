@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (6. lokakuuta 2020)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 6. lokakuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 6. lokakuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: jcart1106
 ms.date: 10/06/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4eb3e893c3243d3b2c169cb5a47001d4e0771a20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887715"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (6. lokakuuta 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8062976"
 
 
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
 Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -48,9 +48,9 @@ Seuraava ominaisuus on yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 >[!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän ohjeaiheen päivitykset saattavat sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitykset saattavat sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisin jälkeen.
 
-| Ongelman numero | Varasto-otto | kuvaus |
+| Ongelman numero | Ongelma | Kuvaus |
 | --- | --- | --- |
 | 448806 | **Oletustunnuksen tyyppi** viedään muodossa **RecID** HCM-parametreissa | Tämä Human Resourcesin parametriyksikön muutos lisää lisäsarakkeen, jossa näkyy **Oletustunnuksen tyyppi**. |
 | 492923 | Tehtävätallenteet eivät tallennu Lifecycle Servicesissa (LCS) | Tehtävätallenteet voidaan nyt tallentaa LCS:ssa. |

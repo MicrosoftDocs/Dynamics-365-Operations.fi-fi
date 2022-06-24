@@ -1,6 +1,6 @@
 ---
 title: Sähköisen raportoinnin kehittynyt kaavaeditori
-description: Tässä ohjeaiheessa esitellään, miten kehittynyttä kaavaeditoria voidaan käyttää lausekkeiden määrittämiseen sähköisen raportoinnin (ER) mallin yhdistämismäärityksessä ja muotokomponenteissa.
+description: Tässä artikkelissa esitellään, miten kehittynyttä kaavaeditoria voidaan käyttää lausekkeiden määrittämiseen sähköisen raportoinnin (ER) mallin yhdistämismäärityksessä ja muotokomponenteissa.
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58d7a936f94e1cd453c904ef6404e0db65083c54235c8420b9cfa561bcde1584
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f54ab248e38d87b0a9fb7a73143f56fa704a3f67
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869096"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Sähköisen raportoinnin kehittynyt kaavaeditori
 
 [!include [banner](../includes/banner.md)]
 
-[Sähköisen raportoinnin](general-electronic-reporting.md) [kaavaeditorin](general-electronic-reporting-formula-designer.md) lisäksi voit käyttää kehittynyttä sähköisen raportoinnin kaavaeditoria parantamaan sähköisen raportoinnin (ER) lausekkeiden määrittämisen kokemusta. Kehittynyt editori on selainpohjainen ja perustuu [Monaco-editorille](https://microsoft.github.io/monaco-editor). Yleisimmin käytetyt kehittyneen editorin ominaisuudet kuvataan tässä ohjeaiheessa:
+[Sähköisen raportoinnin](general-electronic-reporting.md) [kaavaeditorin](general-electronic-reporting-formula-designer.md) lisäksi voit käyttää kehittynyttä sähköisen raportoinnin kaavaeditoria parantamaan sähköisen raportoinnin (ER) lausekkeiden määrittämisen kokemusta. Kehittynyt editori on selainpohjainen ja perustuu [Monaco-editorille](https://microsoft.github.io/monaco-editor). Yleisimmin käytetyt kehittyneen editorin ominaisuudet kuvataan tässä artikkelissa:
 
 - [Koodin automaattinen muotoilu](#Autoformatting)
 - [IntelliSense](#IntelliSense)

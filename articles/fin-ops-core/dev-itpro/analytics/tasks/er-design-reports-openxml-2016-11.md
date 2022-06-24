@@ -1,6 +1,6 @@
 ---
 title: ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)
-description: Tässä aiheessa käsitellään sellaisen uuden sähköisen raportoinnin määrityksen luontia, joka sisältää OPENXML-muotoisen sähköisten asiakirjojen luontimallin.
+description: Tässä artikkelissa käsitellään sellaisen uuden sähköisen raportoinnin määrityksen luontia, joka sisältää OPENXML-muotoisen sähköisten asiakirjojen luontimallin.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b2325a5389e0bfe1efff17e5cd117ad8dbcd65d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753025"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908410"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation, joka sisältää sähköisen asiakirjojen OPENXML-muodon luontimallin. Tätä konfiguraatiota käytetään toimittajamaksujen käsittelyyn.
+Tässä artikkelissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation, joka sisältää sähköisen asiakirjojen OPENXML-muodon luontimallin. Tätä konfiguraatiota käytetään toimittajamaksujen käsittelyyn.
 
 Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. Nämä vaiheet voidaan suorittaa GBSI-yrityksessä.
 

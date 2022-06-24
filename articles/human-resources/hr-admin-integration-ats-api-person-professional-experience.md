@@ -1,6 +1,6 @@
 ---
 title: Henkilön ammattikokemus
-description: Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin Henkilön ammattikokemus -yksikköä.
+description: Tässä artikkelissa kuvataan Dynamics 365 Human Resourcesin Henkilön ammattikokemus -yksikköä.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38535b5dd56b3408ea582fbaf1594b7adefcd171
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d306213e4c647ecd4be98598cba92376aba0d5bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068681"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856422"
 ---
 # <a name="person-professional-experience"></a>Henkilön ammattikokemus
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068681"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin Henkilön ammattikokemus -yksikköä.
+Tässä artikkelissa kuvataan Dynamics 365 Human Resourcesin Henkilön ammattikokemus -yksikköä.
 
 Fyysinen nimi: mshr_hcmpersonprofessionalexperienceentity
 

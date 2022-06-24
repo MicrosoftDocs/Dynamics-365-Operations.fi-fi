@@ -1,6 +1,6 @@
 ---
 title: Tositteiden tuonti käyttämällä kirjauskansioyksikköä
-description: Tässä ohjeaiheessa on vihjeitä tietojen tuomisesta kirjauskansioon käyttämällä kirjauskansioyksikköä.
+description: Tässä artikkelissa on vihjeitä tietojen tuomisesta kirjauskansioon käyttämällä kirjauskansioyksikköä.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065067"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867608"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Tositteiden tuonti käyttämällä kirjauskansioyksikköä
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065067"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tässä ohjeaiheessa on vihjeitä tietojen tuomisesta kirjauskansioon käyttämällä kirjauskansioyksikköä.
+Tässä artikkelissa on vihjeitä tietojen tuomisesta kirjauskansioon käyttämällä kirjauskansioyksikköä.
 
 Voit tuoda kirjauskansioyksiköllä vain tositteita, joiden tili- tai vastatilityyppinä on **Kirjanpito**, **Asiakas**, **Toimittaja** tai **Pankki**. Tosite voidaan lisätä yhtenä rivinä, käyttäen sekä **Tili**- että **Vastatili**-kenttiä, tai monirivisenä tositteena, jossa käytetään vain **Tili**-kenttää (**Vastatili**-kenttä jätetään tyhjäksi jokaisella rivillä). Kirjauskansioyksikkö ei tue kaikkia tilityyppejä. Sen sijaan on olemassa muita yksiköitä sellaisiin tilanteisiin, joissa on käytettävä tilityyppien yhdistelmiä. Jos haluat esimerkiksi tuoda projektitapahtuman, voit käyttää projektin kulukirjausyksikköä. Kukin yksikkö on suunniteltu tukemaan tiettyjä skenaarioita. Tämä tarkoittaa, että näissä skenaarioissa voi olla käytettävissä lisäkenttiä. Muissa skenaarioissa ei kuitenkaan ehkä ole käytettävissä muita kenttiä.
 

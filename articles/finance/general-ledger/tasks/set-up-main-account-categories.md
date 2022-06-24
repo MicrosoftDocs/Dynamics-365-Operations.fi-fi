@@ -1,6 +1,6 @@
 ---
-title: Määritä päätilien luokat
-description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää päätilien luokat Dynamics 365 Financessa.
+title: Päätilin luokkien määritys
+description: Tässä artikkelissa kuvataan, kuinka voit määrittää päätilien luokat Dynamics 365 Financessa.
 author: aprilolson
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb41f1b7200363f8846c406d5c20338f6ea242bd
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c48011c9988bdca694851476540db574efef7909
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879560"
 ---
 # <a name="set-up-main-account-categories"></a>Päätilin luokkien määritys
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka voit määrittää päätilien luokat. Päätilin luokkia käytetään raportoinnin oletusraporteissa ja Power BI:ssa. Oletusarvoisesti luodut päätilin luokille voidaan määrittää uusi nimi mutta niitä ei voi poistaa. Tililuokkia voidaan luoda lisää raportointia ja analysointia varten. Tässä aiheessa käytetään USMF-esittely-yritystä.
+Tässä artikkelissa kuvataan, kuinka voit määrittää päätilien luokat. Päätilin luokkia käytetään raportoinnin oletusraporteissa ja Power BI:ssa. Oletusarvoisesti luodut päätilin luokille voidaan määrittää uusi nimi mutta niitä ei voi poistaa. Tililuokkia voidaan luoda lisää raportointia ja analysointia varten. Artikkelissa käytetään USMF-demoyritystä.
 
 ## <a name="create-a-main-account-category"></a>Luo päätilin luokka
 1. Valitse **Siirtymisruutu > Moduulit > Kirjanpito > Tilikartta > Tilit > Päätililuokat**.

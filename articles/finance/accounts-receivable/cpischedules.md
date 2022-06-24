@@ -1,6 +1,6 @@
 ---
 title: Kuluttajahintaindeksin aikataulu
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit luoda luettelon kuluttajahintaindeksin (CPI) aikatauluista, jotka hankit Internetistä tilauslaskutuksen eskalaatiomaksun määrittämiseksi.
+description: Tässä artikkelissa kerrotaan, kuinka voit luoda luettelon kuluttajahintaindeksin (CPI) aikatauluista, jotka hankit Internetistä tilauslaskutuksen eskalaatiomaksun määrittämiseksi.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 54114fae25565ed1aae7056ef9be5a4a159291e9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f08b79ee00baab3713d9ccc24a7595b1de7a7768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904870"
 ---
 # <a name="consumer-price-index-schedule"></a>Kuluttajahintaindeksin aikataulu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten luodaan, poistetaan, tarkistetaan ja käsitellään hintaindeksin (CPI) aikatauluja. CPI-aikataulun avulla voidaan määrittää niiden kulutustavaroiden ja -palvelujen hinnat, jotka lisätään laskutusaikataulun riveille. CPI-ajoitusta voi sitten käyttää laskutusaikataulun eskaloinnin ja alennuksen hinnoittelussa, tai se voidaan käsitellä manuaalisesti laskutusaikataulujen laskutussummien päivittämiseksi. Voit määrittää CPI-ajoituksen manuaalisesti tai voit tuoda ne käyttämällä CPI-ajoituksen yhdistelmäyksikköä.
+Tässä artikkelissa kuvataan, miten luodaan, poistetaan, tarkistetaan ja käsitellään hintaindeksin (CPI) aikatauluja. CPI-aikataulun avulla voidaan määrittää niiden kulutustavaroiden ja -palvelujen hinnat, jotka lisätään laskutusaikataulun riveille. CPI-ajoitusta voi sitten käyttää laskutusaikataulun eskaloinnin ja alennuksen hinnoittelussa, tai se voidaan käsitellä manuaalisesti laskutusaikataulujen laskutussummien päivittämiseksi. Voit määrittää CPI-ajoituksen manuaalisesti tai voit tuoda ne käyttämällä CPI-ajoituksen yhdistelmäyksikköä.
 
 CPI-ajoitus lisätään seuraavasti:
 

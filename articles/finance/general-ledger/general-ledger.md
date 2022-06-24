@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd832c32655aa52fec16852ec5550a34d06f00f4
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 14aaf40ce64c8f8ba6277fa0883318e08505a464
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904554"
 ---
 # <a name="general-ledger-home-page"></a>Kirjanpidon kotisivu
 
@@ -56,8 +56,8 @@ Lisäksi säännöt on päivitettävä säännöllisesti, kun veroviranomaisten 
 
 Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](/dynamics365/release-plans/), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
 
-#### <a name="financial-reporting"></a>Taloushallinnan raportointi
-Lisätietoja taloudellisista raporteista on kohdassa [Financial reportingin yhteenveto](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) -aiheessa.
+#### <a name="financial-reporting"></a>Taloushallinnon raportointi
+Lisätietoja taloudellisista raporteista on [Financial reportingin yhteenveto](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) -artikkelissa.
 
 #### <a name="blogs"></a>Blogit
 

@@ -1,42 +1,42 @@
 ---
 title: Mobiililaskujen hyväksynnät
-description: Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi.
+description: Tämä artikkeli on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f635891e3d92fbd5978e10fe01eb67c0a28542c5
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737352"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946271"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
 [!include [banner](../includes/banner.md)]
 
-Mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
+Mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä artikkeli on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä artikkeli auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-| Edellytys                                                                                            | kuvaus                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Edellytys                                                                                            | Kuvaus                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Ympäristö, johon on asennettu in versio 1611 ja Platform update 3 (marraskuu 2016)                   |
 | Asenna hotfix-korjaus KB 3204341.                                                                              | Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Platform update 3:een (marraskuun 2016 päivitys). |
 | Asenna hotfix-korjaus KB 3207800.                                                                              | Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Platform update 3:een (marraskuun 2016 päivitys).           |
 | Asenna hotfix-korjaus KB 3208224.                                                                              | Sovelluskoodi toimittajan laskujen hyväksynnän mobiilisovellukselle. Tämä sisältyy versioon 7.0.1 (toukokuu 2016).                          |
-| Android-, iOS- tai Windows-laite, jossa on asennettuna mobiilisovellus. | Etsi sovellus omasta sovelluskaupastasi.                                                                                                                     |
+| Android-, iOS- tai Windows-laite, jossa on asennettuna mobiilisovellus. | Etsi sovellus omasta sovelluskaupastasi.                            |
 
 ## <a name="introduction"></a>Johdanto
 Toimittajalaskujen mobiilihyväksyntä vaatii nämä kolme hotfix-korjausta, jotka on mainittu "Edellytykset"-osassa. Nämä hotfix-korjaukset eivät tarjoa työtilaa laskujen hyväksyntään. Perustiedot työtiloista mobiiliympäristössä on mobiilikäsikirjassa, joka mainitaan "Edellytykset"-osassa. Laskun hyväksynnän työtila on suunniteltava. 
@@ -51,11 +51,11 @@ Jokainen organisaatio määrittää oman toimittajan laskujen liiketoimintaprose
     -   Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?
 
     > [!NOTE]
-    > Tässä ohjeaiheessa ei kerrota, kuinka muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiiliskenaarioissa.
+    > Tässä artikkelissa ei kerrota, kuinka muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiiliskenaarioissa.
 
 -   Haluavatko käyttäjät nähdä laskun liitteet laitteella?
 
-Laskun hyväksyntöjen mobiilikokemuksen rakenne vaihtelee riippuen vastauksista näihin kysymyksiin. Tavoitteena on optimoida organisaation liiketoimintaprosessin mobiilikäyttökokemus. Aiheen loppuosassa tarkastelemme kahta skenaarion versiota, jotka perustuvat eri vastauksiin edellisiin kysymyksiin. 
+Laskun hyväksyntöjen mobiilikokemuksen rakenne vaihtelee riippuen vastauksista näihin kysymyksiin. Tavoitteena on optimoida organisaation liiketoimintaprosessin mobiilikäyttökokemus. Artikkelin loppuosassa tarkastelemme kahta skenaarion versiota, jotka perustuvat eri vastauksiin edellisiin kysymyksiin. 
 
 Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanssa, muista julkaista muutokset, jotta päivityksiä ei menetettäisi.
 

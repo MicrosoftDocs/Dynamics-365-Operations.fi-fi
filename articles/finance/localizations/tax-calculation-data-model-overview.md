@@ -1,6 +1,6 @@
 ---
 title: Verolaskennan tietomalli
-description: Tämä ohjeaihe sisältää tietoja verotietomallista ja siitä, miten veronlaskennan tapahtumien konteksti määrittää kunkin tietomallin kenttäarvot.
+description: Tämä artikkeli sisältää tietoja verotietomallista ja siitä, miten veronlaskennan tapahtumien konteksti määrittää kunkin tietomallin kenttäarvot.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859692"
 ---
 # <a name="tax-calculation-data-model"></a>Verolaskennan tietomalli
 
-Tämä ohjeaihe sisältää tietoja siitä, miten verotietomallin kenttäarvot määritetään veronlaskennan tapahtumissa.
+Tämä artikkeli sisältää tietoja siitä, miten verotietomallin kenttäarvot määritetään veronlaskennan tapahtumissa.
 
 *Verotietomalli* koostuu kentistä, joita tarvitaan verolaskennassa. Microsoft tarjoaa *veronlaskennan tietomallin*, joka sisältää rahoitus- ja toiminta -sovelluksissa olevien tapahtuma-asiakirjojen otsikko- ja rivikentät. Veronlaskennan tietomallissa määritetyt kentät ovat veronlaskennan ominaisuusmäärityksen määrityksen käytettävyyssääntötaulukkojen käytettävissä olevat sarakkeet.
 
@@ -99,7 +99,7 @@ Veronlaskennan tietomalli on integroitu rahoitus- ja toiminta -sovelluksiin. Jok
 | Lähetys provinssiin tai osavaltioon          | <ul><li>**Myyntitilaus:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Osavaltio</li></ol></li><li>**Ostotilaus:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Osavaltio</li></ol></li><li>**Siirtotilaus – lähetä:**<ol><li>Otsikko &gt; Kohdevarasto &gt; Ensisijainen osoite &gt; Osavaltio</li><li>Otsikko &gt; Kohdetoimipaikka &gt; Ensisijainen osoite &gt; Osavaltio</li></ol></li><li>**Siirtotilaus – vastaanota:**<ol><li>Otsikko &gt; Kohdevarasto &gt; Ensisijainen osoite &gt; Osavaltio</li><li>Otsikko &gt; Kohdetoimipaikka &gt; Ensisijainen osoite &gt; Osavaltio</li></ol></li><li>**Tarjouspyyntö:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Osavaltio</li></ol></li><li>**Myyntitarjous:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Osavaltio</li></ol></li><li>**Vapaatekstilasku:**<ol><li>Otsikko &gt; Asiakastili &gt; Oletustoimitusosoite &gt; Osavaltio</li><li>Otsikko &gt; Asiakastili &gt; Ensisijainen osoite &gt; Osavaltio</li></ol></li><li>**Kirjauskansio (asiakas):**<ol><li>Asiakastili &gt; Oletustoimitusosoite &gt; Osavaltio</li><li>Asiakastili &gt; Ensisijainen osoite &gt; Osavaltio</li></ol></li><li>**Kirjauskansio (toimittaja):**<ol><li>Yritys &gt; Oletustoimitusosoite &gt; Osavaltio</li><li>Yritys &gt; Ensisijainen osoite &gt; Osavaltio</li></ol></li></ul> |
 | Lähetys postinumeroalueelle                 | <ul><li>**Myyntitilaus:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Postinumero</li></ol></li><li>**Ostotilaus:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Postinumero</li></ol></li><li>**Siirtotilaus – lähetä:**<ol><li>Otsikko &gt; Kohdevarasto &gt; Ensisijainen osoite &gt; Postinumero</li><li>Otsikko &gt; Kohdetoimipaikka &gt; Ensisijainen osoite &gt; Postinumero</li></ol></li><li>**Siirtotilaus – vastaanota:**<ol><li>Otsikko &gt; Kohdevarasto &gt; Ensisijainen osoite &gt; Postinumero</li><li>Otsikko &gt; Kohdetoimipaikka &gt; Ensisijainen osoite &gt; Postinumero</li></ol></li><li>**Tarjouspyyntö:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Postinumero</li></ol></li><li>**Myyntitarjous:**<ol><li>Otsikko &gt; Toimitusosoite &gt; Postinumero</li></ol></li><li>**Vapaatekstilasku:**<ol><li>Otsikko &gt; Asiakastili &gt; Oletustoimitusosoite &gt; Postinumero</li><li>Otsikko &gt; Asiakastili &gt; Ensisijainen osoite &gt; Postinumero</li></ol></li><li>**Kirjauskansio (asiakas):**<ol><li>Asiakastili &gt; Oletustoimitusosoite &gt; Postinumero</li><li>Asiakastili &gt; Ensisijainen osoite &gt; Postinumero</li></ol></li><li>**Kirjauskansio (toimittaja):**<ol><li>Yritys &gt; Oletustoimitusosoite &gt; Postinumero</li><li>Yritys &gt; Ensisijainen osoite &gt; Postinumero</li></ol></li></ul> |
 | Sivusto                             | <ul><li>**Myyntitilaus:** Toimipaikka</li><li>**Ostotilaus:** Toimipaikka</li><li>**Siirtotilaus – lähetä:** Lähdevaraston toimipaikka</li><li>**Siirtotilaus – vastaanota:** Kohdevaraston toimipaikka</li><li>**Tarjouspyyntö:** Toimipaikka</li><li>**Myyntitarjous:** Toimipaikka</li></ul> |
-| Veron suunta                    | <ul><li>**Myyntitilaus:** Toimitus</li><li>**Ostotilaus:** Vastaanotto</li><li>**Siirtotilaus – lähetä:** Toimitus</li><li>**Siirtotilaus – vastaanota:** Vastaanotto</li><li>**Ostoehdotus:** Vastaanotto</li><li>**Tarjouspyyntö:** Vastaanotto</li><li>**Myyntitarjous:** Toimitus</li><li>**Vapaatekstilasku::** Tulos</li></ul> |
+| Veron suunta                    | <ul><li>**Myyntitilaus:** Toimitus</li><li>**Ostotilaus:** Vastaanotto</li><li>**Siirtotilaus – lähetä:** Toimitus</li><li>**Siirtotilaus – vastaanota:** Vastaanotto</li><li>**Ostoehdotus:** Vastaanotto</li><li>**Tarjouspyyntö:** Vastaanotto</li><li>**Myyntitarjous:** Toimitus</li><li>**Vapaatekstilasku::** Tulos</li><li>**Kirjauskansio:** Tulos</li></ul> |
 | Toimittajanro                   | <ul><li>**Ostotilaus:** Toimittajatili</li><li>**Kirjauskansio (toimittaja):** Toimittajatili</li></ul> |
 | Laskutustoimittaja           | <ul><li>**Ostotilaus:** Laskutustili</li><li>**Kirjauskansio (toimittaja):**<ol><li>Toimittajan päätiedot &gt; Laskutustili</li><li>Toimittajanro</li></ol></li></ul> |
 | Varasto                        | <ul><li>**Myyntitilaus:** Varasto</li><li>**Ostotilaus:** Varasto</li><li>**Siirtotilaus – lähetä:** Lähdevarasto</li><li>**Siirtotilaus – vastaanota:** Kohdevarasto</li><li>**Tarjouspyyntö:** Varasto</li><li>**Myyntitarjous:** Varasto</li></ul> |

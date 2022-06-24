@@ -1,6 +1,6 @@
 ---
-title: Päivitä osapuolen osoitekirja ja yleinen osoitekirja
-description: Tässä ohjeaiheessa kuvataan, kuinka kaksoiskirjoitustiedot päivitetään osapuolen ja globaaliin osoitekirjamalliin.
+title: Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
+description: Tässä artikkelissa kuvataan, kuinka kaksoiskirjoitustiedot päivitetään osapuolen ja globaaliin osoitekirjamalliin.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688371"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895273"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
 
@@ -40,7 +40,7 @@ Prosessin lopussa luodaan seuraavat pilkuilla erotettujen arvojen (.csv) tiedost
 | ImportFONewPostalAddress.csv | Tämän tiedoston avulla voit luoda taloushallinnon ja toimintojen sovelluksessa uusia **Postiosoite**-tietueita. |
 | ImportFONewElectronicAddress.csv | Tämän tiedoston avulla voit luoda taloushallinnon ja toimintojen sovelluksessa uusia **Sähköinen osoite**-tietueita. |
 
-Tämä aihe sisältää Data Factory -mallin käytön ja tietojen päivittämisen ohjeet. Jos mukautuksia ei ole, voit käyttää malleja sellaisina kuin ne ovat. Jos olet mukauttanut **Asiakas**-, **Yhteyshenkilö**- ja **Toimittaja**-tietoja, sinun on muokattava malleja tämän aiheen ohjeiden mukaisesti.
+Tämä artikkeli sisältää Data Factory -mallin käytön ja tietojen päivittämisen ohjeet. Jos mukautuksia ei ole, voit käyttää malleja sellaisina kuin ne ovat. Jos olet mukauttanut **Asiakas**-, **Yhteyshenkilö**- ja **Toimittaja**-tietoja, sinun on muokattava malleja tämän artikkelin ohjeiden mukaisesti.
 
 > [!IMPORTANT]
 > On noudatettava erityisohjeita suoritettaessa osapuolen postiosoitteen ja osapuolen sähköisen osoitteen malleja. Sinun on suoritettava ensin osapuolen malli, sitten osapuolen postiosoitemalli ja sitten osapuolen sähköisen osoitteen malli. Kukin malli on suunniteltu tuotavaksi erillisessä datatehtaassa.

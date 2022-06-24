@@ -1,6 +1,6 @@
 ---
 title: Sähköinen laskutus – usein kysytyt kysymykset
-description: Tässä ohjeaiheessa on tietoja sähköistä laskutusta koskevista usein kysytyistä kysymyksistä.
+description: Tässä artikkelissa on tietoja sähköistä laskutusta koskevista usein kysytyistä kysymyksistä.
 author: gionoder
 ms.date: 04/21/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2d4e7c79c83b9d60469c2b87a7b9120e0d4c13a695badfb2254a85cee629c933
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbb43438a9da567460eb744afb64dae5274f04a9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904351"
 ---
 # <a name="electronic-invoicing-faq"></a>Sähköisen laskutuksen usein kysytyt kysymykset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on vastauksia sähköistä laskutuspalvelua koskeviin usein kysyttyihin kysymyksiin. Sähköinen laskutus laajentaa Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin ja Dynamics 365 Project Operationsin sähköisen laskutuksen ominaisuuksia. 
+Tässä artikkelissa on vastauksia sähköistä laskutuspalvelua koskeviin usein kysyttyihin kysymyksiin. Sähköinen laskutus laajentaa Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin ja Dynamics 365 Project Operationsin sähköisen laskutuksen ominaisuuksia. 
 
 ## <a name="what-is-important-about-electronic-invoicing-and-why-should-it-matter-to-my-organization"></a>Mikä on tärkeää sähköisessä laskutuksessa ja miksi se on tärkeää organisaatiolleni?
 

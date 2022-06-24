@@ -1,6 +1,6 @@
 ---
 title: Italian FatturaPA:n ja SDI:n suoran integroinnin määritys
-description: Tässä ohjeaiheessa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen ja määrittää Italian FatturaPA:n suoran integroinnin Exchange-järjestelmään (SDI).
+description: Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen ja määrittää Italian FatturaPA:n suoran integroinnin Exchange-järjestelmään (SDI).
 author: abaryshnikov
 ms.date: 01/15/2022
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853189"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Italian FatturaPA:n ja SDI:n suoran integroinnin määritys
 
@@ -24,21 +24,21 @@ ms.locfileid: "7984800"
 > [!IMPORTANT]
 > Italian sähköinen laskutus ei tällä hetkellä välttämättä tue kaikkia funktioita, jotka ovat käytettävissä Microsoft Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin laskuissa.
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen käytön Financessa ja Supply Chain Managementissa. Se opastaa Regulatory Configuration Servicesin (RCS) maa-/aluekohtaisissa määritysvaiheissa. Nämä vaiheet täydentävät [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) -kohdassa kuvattuja vaiheita.
+Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen käytön Financessa ja Supply Chain Managementissa. Se opastaa Regulatory Configuration Servicesin (RCS) maa-/aluekohtaisissa määritysvaiheissa. Nämä vaiheet täydentävät [Sähköisen laskutuksen käytön aloittaminen](e-invoicing-get-started.md) -kohdassa kuvattuja vaiheita.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin voit suorittaa tämän ohjeaiheen vaiheet loppuun, seuraavien edellytysten on täytyttävä:
+Ennen kuin voit suorittaa tämän artikkelin vaiheet loppuun, seuraavien edellytysten on täytyttävä:
 
 - Suorita vaiheet kohdassa [Sähköisen laskutuksen aloittaminen](e-invoicing-get-started.md).
-- Tuo sähköinen **Italian FatturaPA (IT)** -laskutusominaisuus RCS:ään yleisestä tietovarastosta. Lisätietoja on aiemmin mainitun Sähköisen laskutuksen käytön aloittaminen -ohjeaiheen [Tuo sähköisen laskutuksen ominaisuus Microsoftin konfiguraatiopalvelusta](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider)-osassa.
-- Lisää linkit vaadituista varmenteista palveluympäristöön. Pakollisia todistuksia ovat digitaalisten allekirjoitusten sertifikaatti, sertifikaattiviranomaisen (CA) sertifikaatti ja asiakassertifikaatti. Lisätietoja on [Luo digitaalisen sertifikaatin salasana](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) -osassa ohjeessa Sähköisen laskutuksen käytön aloittaminen.
+- Tuo sähköinen **Italian FatturaPA (IT)** -laskutusominaisuus RCS:ään yleisestä tietovarastosta. Lisätietoja on aiemmin mainitun Sähköisen laskutuksen käytön aloittaminen -artikkelin [Tuo sähköisen laskutuksen ominaisuus Microsoftin konfiguraatiopalvelusta](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider)-osassa.
+- Lisää linkit vaadituista varmenteista palveluympäristöön. Pakollisia todistuksia ovat digitaalisten allekirjoitusten sertifikaatti, sertifikaattiviranomaisen (CA) sertifikaatti ja asiakassertifikaatti. Lisätietoja on [Luo digitaalisen sertifikaatin salasana](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) -osassa Sähköisen laskutuksen käytön aloittaminen -artikkelissa.
 
 ## <a name="country-specific-configuration-for-the-italian-fatturapa-it-electronic-invoicing-feature"></a>Maa-/aluekohtainen konfigurointi Italian FatturaPA (IT) – sähköinen laskutus -ominaisuudelle
 
 Suorita seuraavat vaiheet, ennen kuin otat sovelluksen määritykset käyttöön yhdistetyssä Finance- tai Supply Chain Management -sovelluksessa.
 
-Tämä osa täydentää [Sovellusasetusten maa-/aluekohtainen konfigurointi](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) -osaa ohjeaiheessa Sähköisen laskutuksen käytön aloittaminen.
+Tämä osa täydentää [Sovellusasetusten maa-/aluekohtainen konfigurointi](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) -osaa Sähköisen laskutuksen käytön aloittaminen -artikkelissa.
 
 ### <a name="create-a-new-feature"></a>Luo uusi ominaisuus
 
@@ -87,8 +87,8 @@ Tämä osa täydentää [Sovellusasetusten maa-/aluekohtainen konfigurointi](e-i
 
 ### <a name="deploy-the-feature"></a>Toiminnon käyttöönotto
 
-1. Ominaisuuden viimeisteleminen, julkaiseminen ja ottaminen käyttöön palveluympäristössä. Lisätietoja on aiemmin mainitun Sähköisen laskutuksen käytön aloittaminen -ohjeaiheen [Sähköisen laskutuksen ominaisuuden käyttöönotto palveluympäristössä](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) -osassa.
-2. Ota ominaisuus käyttöön yhdistetyssä sovelluksessa. Lisätietoja on aiemmin mainitun Sähköisen laskutuksen käytön aloittaminen -ohjeaiheen [Sähköisen laskutuksen ominaisuuden käyttöönotto yhdistetyssä sovelluksessa](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) -osassa.
+1. Ominaisuuden viimeisteleminen, julkaiseminen ja ottaminen käyttöön palveluympäristössä. Lisätietoja on aiemmin mainitun Sähköisen laskutuksen käytön aloittaminen -artikkelin [Sähköisen laskutuksen ominaisuuden käyttöönotto palveluympäristössä](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) -osassa.
+2. Ota ominaisuus käyttöön yhdistetyssä sovelluksessa. Lisätietoja on aiemmin mainitun Sähköisen laskutuksen käytön aloittaminen -artikkelin [Sähköisen laskutuksen ominaisuuden käyttöönotto yhdistetyssä sovelluksessa](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) -osassa.
 
 ### <a name="set-up-finance"></a>Financen määrittäminen
 

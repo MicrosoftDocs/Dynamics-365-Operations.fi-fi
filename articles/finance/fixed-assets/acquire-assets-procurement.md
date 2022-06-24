@@ -1,6 +1,6 @@
 ---
 title: Käyttöomaisuuserien hankinta
-description: Tässä ohjeaiheessa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti.
+description: Tässä artikkelissa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712087"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891577"
 ---
 # <a name="acquire-assets-through-procurement"></a>Käyttöomaisuuserien hankinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti. Yksi ostorivi voi luoda yhden käyttöomaisuuden ostorivin määrästä riippumatta. Jos käyttöomaisuuksia on luotava useita, myös ostorivejä on luotava useita.
+Tässä artikkelissa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti. Yksi ostorivi voi luoda yhden käyttöomaisuuden ostorivin määrästä riippumatta. Jos käyttöomaisuuksia on luotava useita, myös ostorivejä on luotava useita.
 
  Järjestelmä sisältää seuraavat menetelmät, joilla käyttöomaisuuserät ja ostoreskontra voidaan integroida. Samaa menetelmää on käytettävä kaikille käyttöomaisuuserille:
 -   Luot käyttöomaisuuserän manuaalisesti, ennen kuin lisäät käyttöomaisuuserän numeron ostotilauksen tai toimittajan laskun riville. Käyttöomaisuuden hankintatapahtuma kirjataan automaattisesti, kun kirjaat toimittajan laskun. Tämä on oletusmenetelmä.
@@ -38,7 +38,7 @@ Valitse ensimmäisestä kahdesta menetelmästä toinen, jos haluat luoda käytt�
 
 Luodaanpa käyttöomaisuuserät manuaalisesti tai joustavampaa tapaa noudattaen, joudut päättämään, voiko hankintatapahtuman kirjata vain käyttöomaisuuteen vai voiko sen kirjata toimittajan laskun kirjaamisen yhteydessä. Joissakin organisaatioissa suositaan sellaista menettelyä, että käyttäjät luovat hankinnan ja hankintatapahtumat manuaalisesti käyttöomaisuuteen manuaalisia kirjauskansiokirjauksia tai ehdotuksia käyttäen. 
 
-Tässä ohjeaiheessa kutakin tapaa käsitellään seikkaperäisesti.
+Tässä artikkelissa kutakin tapaa käsitellään seikkaperäisesti.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a> Menetelmät käyttöomaisuuserien manuaaliseen luomiseen
 Jos Käyttöomaisuuden parametrit -lomakkeen Salli käyttöomaisuuden hankinta ostosta -valintaruutu on valittuna ja kirjaat toimittajan laskun, jonka riveille on lisätty käyttöomaisuuserän numero, hankinta kirjataan automaattisesti ja käyttöomaisuuden tilaksi vaihtuu Avoin. 

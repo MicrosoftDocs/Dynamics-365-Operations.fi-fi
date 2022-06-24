@@ -1,6 +1,6 @@
 ---
 title: Sähköisen raportoinnin (ER) kohteet
-description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
+description: Tässä artikkelissa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: nselin
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851074"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
 [!include [banner](../includes/banner.md)]
 
-Voit määrittää kohteen jokaiselle sähköisen raportoinnin (ER) muotokokoonpanolle ja sen tuloskomponentille (kansio tai tiedosto). Käyttäjät, joilla on tarvittavat käyttöoikeudet, voivat myös muokata kohdeasetuksia suorituksen aikana. Tässä aiheessa käsitellään ER-kohteiden hallintaa, tuettuja kohdetyyppejä ja suojausta.
+Voit määrittää kohteen jokaiselle sähköisen raportoinnin (ER) muotokokoonpanolle ja sen tuloskomponentille (kansio tai tiedosto). Käyttäjät, joilla on tarvittavat käyttöoikeudet, voivat myös muokata kohdeasetuksia suorituksen aikana. Tässä artikkelissa käsitellään ER-kohteiden hallintaa, tuettuja kohdetyyppejä ja suojausta.
 
 ER-muotomäärityksissä on yleensä vähintään yksi tulosteosa: tiedosto. Yleensä määrityksissä on useita eri tyyppisiä tiedostotulosteosia (kuten XML, TXT, XLSX, DOCX tai PDF), jotka on ryhmitelty joko yhteen kansioon tai moneen kansioon. Voit määrittää ER-kohteen hallinnassa valmiiksi, mitä tapahtuu, kun kukin osa suoritetaan. Kun määritys suoritetaan, käyttäjälle näytetään valintaikkuna, jolla tiedoston voi tallentaa tai avata. Sama toiminta toteutuu myös ER-määrityksiä tuotaessa, joten sitä varten ei tarvitse määrittää tiettyä kohdetta. Kun päätulosteosalle on luotu kohde, kyseisen kohde ohittaa oletustoiminnallisuuden ja kansio tai tiedosto lähetetään kohdeasetusten mukaisesti.
 

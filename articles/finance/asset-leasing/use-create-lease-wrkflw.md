@@ -1,6 +1,6 @@
 ---
 title: Vuokrauksen hyväksyntätyönkulkujen käyttäminen
-description: Tässä ohjeaiheessa kerrotaan, miten työnkulkuja käytetään resurssin vuokrausten hyväksymisessä ja miten työnkulkujen tilaa ja historiaa seurataan.
+description: Tässä artikkelissa kerrotaan, miten työnkulkuja käytetään resurssin vuokrausten hyväksymisessä ja miten työnkulkujen tilaa ja historiaa seurataan.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0b35dfa599895cb39cdd6a0a95fdcdcc54c45044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 4205b83919f0b3c30a4b5d8e3290af230f538f39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906439"
 ---
 # <a name="use-lease-approval-workflows"></a>Vuokrauksen hyväksyntätyönkulkujen käyttäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten työnkulkuja käytetään resurssin vuokrausten hyväksymisessä ja miten työnkulkujen tilaa ja historiaa seurataan. Työnkulkujen avulla vuokrasopimusten hyväksyntöjen hallinta on yhdenmukaista, koska käytössä on vakiohyväksyntävaiheet ja tietty käyttäjä, joka hyväksyy prosessin jokaisen vaiheen. Hyväksyjä voi hyväksyä vuokrasopimuksen, hylätä sen, pyytää siihen muutosta tai määrittää sen toiselle käyttäjälle hyväksyttäväksi. Työnkulut voivat myös tuoda hyväksyntäprosessiin lisää näkyvyyttä, kun niiden tilaa ja historiaa seurataan. Lisäksi voit tarkastella keskitettyä työluetteloa, jossa ovat tietyille hyväksyjille määritetyt tehtävät ja hyväksynnät.
+Tässä artikkelissa kerrotaan, miten työnkulkuja käytetään resurssin vuokrausten hyväksymisessä ja miten työnkulkujen tilaa ja historiaa seurataan. Työnkulkujen avulla vuokrasopimusten hyväksyntöjen hallinta on yhdenmukaista, koska käytössä on vakiohyväksyntävaiheet ja tietty käyttäjä, joka hyväksyy prosessin jokaisen vaiheen. Hyväksyjä voi hyväksyä vuokrasopimuksen, hylätä sen, pyytää siihen muutosta tai määrittää sen toiselle käyttäjälle hyväksyttäväksi. Työnkulut voivat myös tuoda hyväksyntäprosessiin lisää näkyvyyttä, kun niiden tilaa ja historiaa seurataan. Lisäksi voit tarkastella keskitettyä työluetteloa, jossa ovat tietyille hyväksyjille määritetyt tehtävät ja hyväksynnät.
 
 Ennen kuin käytät tätä menetelmää, varmista, että ainakin vuokrasopimuksen hyväksyntätyönkulku on luotu. Jos työnkulkua ei ole, luo se. Lisätietoja työnkulun määrittämisestä on kohdassa [Vuokrasopimuksen hyväksyntätyönkulkujen määrittäminen](set-up-lease-wrkflw.md).
 

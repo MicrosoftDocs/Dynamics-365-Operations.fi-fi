@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 22. lokakuuta 2020
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 22. lokakuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 22. lokakuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862798"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 22. lokakuuta 2020
 
@@ -27,7 +27,7 @@ ms.locfileid: "8063515"
 
 
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja. Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
 Lisätietoja uusista ominaisuuksista ja niiden odotetuista yleisen saatavuuden päivämääristä on kohdassa [Dynamics 365 Human Resourcesin vuoden 2020 2. julkaisuaallon yleiskatsaus](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -50,9 +50,9 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän ohjeaiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
-| Ongelman numero| Varasto-otto  | kuvaus|
+| Ongelman numero| Ongelma  | Kuvaus|
 | --- | --- | --- |
 | 437922 | FMLA-tuntien tuominen DMF-entiteetin tulosten avulla vain luku -virheessä. | FMLA-tuntientiteetin käyttäminen tuomaan FMLA-palvelupyyntöön liitettyjä tunteja epäonnistui. Lisätty logiikka varmistaa, että tuodut tunnit eivät ylitä palvelupyynnössä jäljellä olevia tunteja. |
 | 512019 | Virheellinen **Viimeisin siirtokirjaus** -summa. | **Tilannepäivämäärä**-asetuksen muuttaminen **Poissaolo**-sivulla seuraavan tilikauden ensimmäiseen päivään näytti virheellisen **Viimeisin siirtokirjaus** -summan **Vuosiloma**-tyypille. Nyt näkyvissä on oikea summa. |

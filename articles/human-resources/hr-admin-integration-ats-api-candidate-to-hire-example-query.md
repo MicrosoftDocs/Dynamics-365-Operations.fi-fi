@@ -1,6 +1,6 @@
 ---
 title: Esimerkkikysely palkattavalle hakijalle
-description: Tämä ohjeaihe sisältää esimerkkikyselyn Palkattava hakija -yksikölle Dynamics 365 Human Resourcesissa.
+description: Tämä artikkelissa sisältää esimerkkikyselyn Palkattava hakija -yksikölle Dynamics 365 Human Resourcesissa.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edb8687b9dae0afc1bc15a3a5c197e14e7e8cf1e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2dd744665d4f0b6c64f4ee45a01c237081018514
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069218"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848339"
 ---
 # <a name="example-query-for-candidate-to-hire"></a>Esimerkkikysely palkattavalle hakijalle
 
@@ -27,9 +27,9 @@ ms.locfileid: "8069218"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tämä ohjeaihe sisältää esimerkkikyselyn Palkattava hakija -yksikölle Dynamics 365 Human Resourcesissa.
+Tämä artikkelissa sisältää esimerkkikyselyn Palkattava hakija -yksikölle Dynamics 365 Human Resourcesissa.
 
-Tämä ohjeaihe sisältää esimerkin siitä, miten voit luoda uuden hakijan tietueen yksityiskohtaiset tiedot yhdellä API-liittymän toiminnolla *syvän lisäämisen* avulla. Lisätietoja syvästä lisäyksestä on kohdassa [Liittyvien yksikkötietueiden luominen yhdellä toiminnolla](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
+Tämä artikkelissa sisältää esimerkin siitä, miten voit luoda uuden hakijan tietueen yksityiskohtaiset tiedot yhdellä API-liittymän toiminnolla *syvän lisäämisen* avulla. Lisätietoja syvästä lisäyksestä on kohdassa [Liittyvien yksikkötietueiden luominen yhdellä toiminnolla](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
 
 **mshr_hcmcandidatetohireentity**-yksikkö on yksilöivä, koska sillä on suhde **mshr_dirpersonentity**-yksikköön. Monet **mshr_hcmcandidatetohireentity**-yksikön ominaisuuksista (esim. **mshr_firstname**, **mshr_lastname** ja **mshr_birthdate**) johdetaan **mshr_dirpersonentity**-tietueesta. Jos kirjaat uuden hakijan tietueen **mshr_hcmcandidatetohireentity**-yksikköön käyttämättä syviä lisäyksiä, voit määrittää näiden ominaisuuksien arvot suoraan **mshr_hcmcandidatetohireentity**-tietueessa. Liittyvä **mshr_dirpersonentity**-tietua luodaan epäsuorasti ominaisuuksille määritettyjen arvojen kanssa. Tämän jälkeen voit luoda mitä tahansa muita liittyviä yksikkötietueita (kuten osaamisalueita tai koulutuksia) erillisinä API-kutsuina.
 

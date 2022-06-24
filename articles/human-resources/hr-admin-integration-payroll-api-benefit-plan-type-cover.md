@@ -1,6 +1,6 @@
 ---
 title: Etusuunnitelmatyypin kattavuus
-description: Tässä aiheessa käsitellään etuussuunnitelmatyypin kattavuuden asetusjoukkoa Dynamics 365 Human Resourcesissa.
+description: Tässä artikkelissa käsitellään etuussuunnitelmatyypin kattavuuden asetusjoukkoa Dynamics 365 Human Resourcesissa.
 author: marcelbf
 ms.date: 07/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 31ed22a56c0f15c7df3d372faf871cf3c3d9fdeb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 57e7de7e9893430abc92b2814623baba718301b9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859572"
 ---
 # <a name="benefit-plan-type-cover"></a>Etusuunnitelmatyypin kattavuus
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068531"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa käsitellään etuussuunnitelmatyypin kattavuuden asetusjoukkoa Dynamics 365 Human Resourcesissa.
+Tässä artikkelissa käsitellään etuussuunnitelmatyypin kattavuuden asetusjoukkoa Dynamics 365 Human Resourcesissa.
 
 ## <a name="option-set-process-type"></a>Asetusjoukko: Käsittelyn tyyppi
 

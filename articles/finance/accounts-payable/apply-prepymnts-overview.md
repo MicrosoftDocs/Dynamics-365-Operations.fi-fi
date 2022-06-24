@@ -1,6 +1,6 @@
 ---
 title: Ennakkomaksujen kohdistaminen automaattisesti toimittajan laskuihin
-description: Tässä aiheessa kuvataan ennakkomaksujen automattisen toimittajan laskuihin kohdistamisen ominaisuus.
+description: Tässä artikkelissa kuvataan ennakkomaksujen automattisen toimittajan laskuihin kohdistamisen ominaisuus.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358216"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900068"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automaattinen kohdistaminen toimittajan laskuihin
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan ennakkomaksujen automattisen toimittajan laskuihin kohdistamisen ominaisuus. Ostotilaukselle voidaan luoda ennakkomaksu osana ostosopimusta. Kun toimittajan lasku on vastaanotettu, ennakkomaksua voidaan käyttää toimittajan laskun ostoreskontran tilittämiseen. Uuden ominaisuuden ansiosta järjestelmä voi automaattisesti käyttää toimittajan laskun numeroita ostotilauksessa vastaavien ennakkomaksujen hakemiseen, kun toimittajan lasku tuodaan.
+Tässä artikkelissa kuvataan ennakkomaksujen automattisen toimittajan laskuihin kohdistamisen ominaisuus. Ostotilaukselle voidaan luoda ennakkomaksu osana ostosopimusta. Kun toimittajan lasku on vastaanotettu, ennakkomaksua voidaan käyttää toimittajan laskun ostoreskontran tilittämiseen. Uuden ominaisuuden ansiosta järjestelmä voi automaattisesti käyttää toimittajan laskun numeroita ostotilauksessa vastaavien ennakkomaksujen hakemiseen, kun toimittajan lasku tuodaan.
 
 Jos ennakkomaksuja löytyy ja niitä voidaan käyttää, olemassa oleviin laskuriveihin lisätään rivejä niitä varten. Ennakkomaksurivejä ei koskaan oteta huomioon laskun täsmäytysprosessissa.
 

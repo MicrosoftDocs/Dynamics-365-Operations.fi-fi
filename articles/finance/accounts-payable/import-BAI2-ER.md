@@ -1,6 +1,6 @@
 ---
 title: Pankkitilin täsmäytyksen edistyneen tuonnin käyttöönottäminen sähköisen raportoinnin avulla
-description: Tässä ohjeaiheessa kerrotaan, kuinka sähköisen raportoinnin avulla määritetään edistynyt pankkien täsmäytysprosessi.
+description: Tässä artikkelissa kerrotaan, kuinka sähköisen raportoinnin avulla määritetään edistynyt pankkien täsmäytysprosessi.
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 30530a9870ba2ff0546237d2698d1675afa78104
-ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
+ms.openlocfilehash: 2ac8811a5c10490d90f782472d3c198474c7edc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8770191"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889117"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Pankkitilin täsmäytyksen edistyneen tuonnin käyttöönottäminen sähköisen raportoinnin avulla
 
 [!include [banner](../includes/banner.md)]
 
-Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä aiheessa käsitellään tiliotteiden tuontitoimintoa. Tiliotteen tuontiasetukset vaihtelevat sähköisen tiliotteen muodon mukaan. Microsoft Dynamics 365 Finance tukee kolmea tiliotemuotoa, jotka ovat ISO20022, MT940 ja BAI2. 
+Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä artikkelissa käsitellään tiliotteiden tuontitoimintoa. Tiliotteen tuontiasetukset vaihtelevat sähköisen tiliotteen muodon mukaan. Microsoft Dynamics 365 Finance tukee kolmea tiliotemuotoa, jotka ovat ISO20022, MT940 ja BAI2. 
 
 ## <a name="set-up-the-electronic-reporting-configuration"></a>Määritä sähköisen raportoinnin konfiguraatio
 

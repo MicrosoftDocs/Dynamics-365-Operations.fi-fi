@@ -1,6 +1,6 @@
 ---
 title: Taloushallinnon dimensiot ja kirjaaminen
-description: Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä ohjeaiheessa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
+description: Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä artikkelissa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a612f3b703349e1cffe300b75afd44e72ae63b2c
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722796"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910110"
 ---
 # <a name="financial-dimensions-and-posting"></a>Taloushallinnon dimensiot ja kirjaaminen 
 
 [!include [banner](../includes/banner.md)]
 
-Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä ohjeaiheessa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
+Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä artikkelissa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Tilikartan ja taloushallinnon dimension komponentit
 
@@ -46,7 +46,7 @@ Vaihtoehtoisesti voit täsmäyttävän taloushallinnon dimension. Voit määritt
 
 ### <a name="defaultfixed-financial-dimensions-on-the-main-account"></a>Päätilin oletusarvoiset tai kiinteät taloushallinnon dimensiot.
 
-Oletusdimensiot voidaan saadaan useista lähteistä, kuten päätietueista (esimerkiksi asiakkaan tai toimittajan tietuetuista), asiakirjan otsikoista ja päätilistä. Tässä ohjeaiheessa käsitellään lähinnä yrityksen päätilin oletusdimensioita. Voit määrittää, onko kunkin sellaisen taloushallinnon dimension päätilin arvona **Ei kiinnitetty** tai **Kiinteä**, jota käytetään kaikissa kirjanpidon tilirakenteissa. Jos taloushallinnon dimension on **Ei kiinnitetty**, se käyttää oletusarvoa mutta kyseinen arvo voidaan korvata. Tämä toiminto koskee kaikkia järjestelmän oletusarvoja – myös päätietueista saatavia oletusarvoja. Jos taloushallinnon arvoksi on valittu **Kiinteä**, kyseistä arvoa käytetään aina riippumatta siitä, saatiinko se jostain oletusarvona vai antoiko käyttäjä sen.
+Oletusdimensiot voidaan saadaan useista lähteistä, kuten päätietueista (esimerkiksi asiakkaan tai toimittajan tietuetuista), asiakirjan otsikoista ja päätilistä. Tässä artikkelissa käsitellään lähinnä yrityksen päätilin oletusdimensioita. Voit määrittää, onko kunkin sellaisen taloushallinnon dimension päätilin arvona **Ei kiinnitetty** tai **Kiinteä**, jota käytetään kaikissa kirjanpidon tilirakenteissa. Jos taloushallinnon dimension on **Ei kiinnitetty**, se käyttää oletusarvoa mutta kyseinen arvo voidaan korvata. Tämä toiminto koskee kaikkia järjestelmän oletusarvoja – myös päätietueista saatavia oletusarvoja. Jos taloushallinnon arvoksi on valittu **Kiinteä**, kyseistä arvoa käytetään aina riippumatta siitä, saatiinko se jostain oletusarvona vai antoiko käyttäjä sen.
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>Kirjauksen aikana käytettävä oletusdimensioiden järjestys
 

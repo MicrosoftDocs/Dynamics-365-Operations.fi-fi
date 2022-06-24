@@ -1,6 +1,6 @@
 ---
 title: SQL Server Reporting Servicesin määrittäminen paikallisissa käyttöönotoissa
-description: Tässä ohjeaiheessa on tietoja SQL Server Reporting Servicesin (SSRS) määrittämisestä paikallista käyttöönottoa varten.
+description: Tässä artikkelissa on tietoja SQL Server Reporting Servicesin (SSRS) määrittämisestä paikallista käyttöönottoa varten.
 author: PeterRFriis
 ms.date: 06/23/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 16a35a8dae50cc1bc949f33de87b2beab8b528b3
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: ae1e78a268d6c61cc4ab6afd9e3f6d6b1bd1561a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565914"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876918"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>SQL Server Reporting Servicesin määrittäminen paikallisissa käyttöönotoissa
 
 [!include [banner](../includes/banner.md)]
 
-Määritä Microsoft Dynamics 365 Finance + Operations (on-premises)in käyttöönoton SQL Server Reporting Services (SSRS) tämän ohjeaiheen ohjeiden mukaisesti.
+Määritä Microsoft Dynamics 365 Finance + Operations (on-premises)in käyttöönoton SQL Server Reporting Services (SSRS) tämän artikkelin ohjeiden mukaisesti.
 
 1. Avaa Reporting Services -määritystenhallintasovellus
 2. Jätä oletusarvoinen **Palvelimen nimi**, jonka pitäisi olla nykyisen laitteen nimi, ja **Report Server -esiintymä**, **MSSQLSERVER**.

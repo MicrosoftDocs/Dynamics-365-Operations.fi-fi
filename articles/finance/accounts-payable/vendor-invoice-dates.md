@@ -1,6 +1,6 @@
 ---
 title: Toimittajan laskujen päivämäärät
-description: Tässä aiheessa kuvataan toimittajan laskuissa näkyvät päivämäärät. Lisäksi selitetään, miten järjestelmä määritetään niin, että se muuttaa kirjauspäivää automaattisesti.
+description: Tässä artikkelissa kuvataan toimittajan laskuissa näkyvät päivämäärät. Lisäksi selitetään, miten järjestelmä määritetään niin, että se muuttaa kirjauspäivää automaattisesti.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105460"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876409"
 ---
 # <a name="vendor-invoice-dates"></a>Toimittajan laskujen päivämäärät
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan toimittajan laskuissa näkyvät päivämäärät. Lisäksi selitetään, miten järjestelmä määritetään niin, että se muuttaa kirjauspäivää automaattisesti.
+Tässä artikkelissa kuvataan toimittajan laskuissa näkyvät päivämäärät. Lisäksi selitetään, miten järjestelmä määritetään niin, että se muuttaa kirjauspäivää automaattisesti.
 
 **Odotetaan toimittajan laskutietoja** -sivulla laskun otsikossa näkyy neljä päivämäärää: laskun vastaanottopäivä, laskutuspäivä, kirjauspäivä ja eräpäivä. Kun toimittajan lasku luodaan, seuraavat päivämäärät täytetään oletusarvoisesti:
 
@@ -37,7 +37,7 @@ Tässä aiheessa kuvataan toimittajan laskuissa näkyvät päivämäärät. Lis�
 
 Joskus toimittajan lasku voi olla odottavassa tilassa kauan jakson sulkemisen jälkeen. Kun se on valmis kirjattavaksi, käytetään edelleen edellisen kirjausjakson vanhaa kirjauspäivää. Tämä jakso on kuitenkin nyt suljettu. Siksi ostoreskontran käsittelijän on muutettava kaikki kirjauspäivät manuaalisesti uudelle kirjausjaksolle kaikkien odottavien laskujen osalta, jotka on luotu aiemmin.
 
-Tässä aiheessa kuvatun ominaisuuden avulla voit määrittää järjestelmän siten, että se oikaisee kirjauspäivää automaattisesti liiketoimintavaatimusten mukaisesti.
+Tässä artikkelissa kuvatun ominaisuuden avulla voit määrittää järjestelmän siten, että se oikaisee kirjauspäivää automaattisesti liiketoimintavaatimusten mukaisesti.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Toimittajan laskun kirjauspäivän automaattisen oikaisemisen parametri
 

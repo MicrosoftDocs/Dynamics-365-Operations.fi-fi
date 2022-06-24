@@ -1,6 +1,6 @@
 ---
 title: ALV-raportointi Euroopassa
-description: Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.
+description: Tässä artikkelissa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.
 author: ShylaThompson
 ms.date: 03/24/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1f7611dcf713e80f637a4b3f5542763050ac4a6
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: e25b01133bfaa84186faf82c80f24a119b40ac2e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856538"
 ---
 # <a name="vat-reporting-for-europe"></a>ALV-raportointi Euroopassa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.
+Tässä artikkelissa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.
 
-Tämä ohjeaihe sisältää yleisen lähestymistavan ALV-ilmoituksen määrittämiseen ja luomiseen. Tämä lähestymistapa on yhteinen yrityksille seuraavissa maissa/alueilla:
+Tämä artikkeli sisältää yleisen lähestymistavan ALV-ilmoituksen määrittämiseen ja luomiseen. Tämä lähestymistapa on yhteinen yrityksille seuraavissa maissa/alueilla:
 
 -   Itävalta
 -   Belgia
@@ -41,7 +41,7 @@ Tämä ohjeaihe sisältää yleisen lähestymistavan ALV-ilmoituksen määrittä
 -   Ruotsi
 
 > [!IMPORTANT]
-> Tässä aiheessa kuvatut Itävallan, Tšekin tasavallan, Saksan, Alankomaiden ja Ruotsin ominaisuudet ovat vanhentuneet. Lisätietoja on kohdassa [Poistetut ja vanhentuneet ominaisuudet](../get-started/removed-deprecated-features-finance.md).
+> Tässä artikkelissa kuvatut Itävallan, Tšekin tasavallan, Saksan, Alankomaiden ja Ruotsin ominaisuudet ovat vanhentuneet. Lisätietoja on kohdassa [Poistetut ja vanhentuneet ominaisuudet](../get-started/removed-deprecated-features-finance.md).
 > Seuraavan taulukon linkkien avulla saat lisätietoja alv-ilmoitusten uudesta suunnittelusta vastaavissa maissa.
 > 
 >
@@ -60,7 +60,7 @@ Tämä ohjeaihe sisältää yleisen lähestymistavan ALV-ilmoituksen määrittä
 > | UK             | [MTD:n integroinnin valmisteleminen ALV:tä varten](emea-gbr-mtd-vat-integration.md) |
 
 ## <a name="vat-statement-overview"></a>ALV-ilmoituksen yhteenveto
-ALV-ilmoitus perustuu verotapahtumien summiin. ALV-ilmoituksen luomisprosessi kuuluu arvonlisäveron maksamisen prosessiin, joka toteutetaan Tilitä ja kirjaa arvonlisävero -toiminnon avulla. Tämä toiminto laskee arvonlisäveron, joka erääntyy tiettynä aikana. Tilityksen laskenta sisältää kirjatun arvonlisäveron valitulta tilityskaudelta verotapahtumille. ALV-ilmoituksen tietojen laskentaprosessi perustuu arvonlisäverokoodien ja arvonlisäveroilmoituksen koodien suhteeseen, jossa ALV-raporttikoodit vastaavat ALV-ilmoitusten ruutuja (tai XML-tunnisteita). Kullekin arvonlisäverokoodille arvonlisäveron raportointikoodit pitäisi määrittää kunkin tyyppiselle tapahtumalle, kuten verolliselle myynnille, verollisille ostoille tai verolliselle tuonnille. Näiden tapahtumien tyyppi on kuvattu Arvonlisäverokoodit ALV-raportoinnissa -osassa jäljempänä tässä ohjeaiheessa.
+ALV-ilmoitus perustuu verotapahtumien summiin. ALV-ilmoituksen luomisprosessi kuuluu arvonlisäveron maksamisen prosessiin, joka toteutetaan Tilitä ja kirjaa arvonlisävero -toiminnon avulla. Tämä toiminto laskee arvonlisäveron, joka erääntyy tiettynä aikana. Tilityksen laskenta sisältää kirjatun arvonlisäveron valitulta tilityskaudelta verotapahtumille. ALV-ilmoituksen tietojen laskentaprosessi perustuu arvonlisäverokoodien ja arvonlisäveroilmoituksen koodien suhteeseen, jossa ALV-raporttikoodit vastaavat ALV-ilmoitusten ruutuja (tai XML-tunnisteita). Kullekin arvonlisäverokoodille arvonlisäveron raportointikoodit pitäisi määrittää kunkin tyyppiselle tapahtumalle, kuten verolliselle myynnille, verollisille ostoille tai verolliselle tuonnille. Näiden tapahtumien tyyppi on kuvattu Arvonlisäverokoodit ALV-raportoinnissa -osassa jäljempänä tässä artikkelissa.
 
 Jokaiselle arvonlisäveroilmoituksen koodille olisi määritettävä tietty raporttiasettelu. Samaan aikaan arvonlisäverokoodit on linkitetty tiettyyn arvonlisäveroviranomaiseen arvonlisäveron tilityskausien kautta. Jokaiselle arvonlisäveroviranomaiselle olisi määritettävä raporttiasettelu. Näin ollen ainoastaan raportointikoodeja, joilla on sama raporttiasettelu, joka on määritetty ALV-viranomaiselle arvonlisäverokoodin arvonlisäveron tilityskausissa, voidaan valita arvonlisäverokoodin raportin määrityksessä. Arvonlisäverotapahtuma, joka luodaan kirjatessa tilauksen tai päiväkirjan, sisältää arvonlisäverokoodin, arvonlisäveron lähteen, arvonlisäveron suunnan ja tapahtumasummat (veron peruste ja verosumma kirjanpitovaluuttana, ALV-valuutta ja tapahtumavaluutta). Perustuen verotapahtuman määritteiden yhdistelmään, tapahtumasummat koostavat kokonaissummat arvonlisäverokoodeille määritetyille arvonlisäveroilmoituksen koodeille. Seuraavassa on kuvattu tietojen suhdetta.
 

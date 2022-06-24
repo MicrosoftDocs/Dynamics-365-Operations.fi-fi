@@ -1,6 +1,6 @@
 ---
 title: Rekisteröintitunnukset
-description: Tässä ohjeaiheessa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä.
+description: Tässä artikkelissa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883072"
 ---
 # <a name="registration-ids"></a>Rekisteröintitunnukset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä.
+Tässä artikkelissa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä.
 
-Monilla mailla ja alueilla on eri säädökset ja vaatimukset rekisteröintinumeroiden tai -tunnusten tallentamiseen. Tässä aiheessa on yleiskatsaus tuettujen rekisteröintityyppien tarvittavista asetuksista ja käsittelystä, kun osapuolet ovat eri Euroopan maissa/alueilla. Kaikilla mailla/alueilla on omat vaatimukset tuesta erilaisille maakohtaisille toiminnoille, jotka liittyvät eri valtion virastojen antamiin rekisterinumeroihin. Esimerkkejä rekisterinumeroista ovat verovelvollisen tunnistenumero (TIN), henkilötunnus (SSN) ja Euroopan ALV-tunnus (EU VAT ID). Tämä toiminto tarjoaa yhtenäisen kehyksen kaikille maille kaikilla alueilla ottaen huomioon maakohtaiset vaatimukset joissakin Euroopan maissa. Seuraavissa osissa kuvataan rekisteröintitunnusten määrittämisessä ja käsittelyssä käytettävää yleistä tiedonkulkua.
+Monilla mailla ja alueilla on eri säädökset ja vaatimukset rekisteröintinumeroiden tai -tunnusten tallentamiseen. Tässä artikkelissa on yleiskatsaus tuettujen rekisteröintityyppien tarvittavista asetuksista ja käsittelystä, kun osapuolet ovat eri Euroopan maissa/alueilla. Kaikilla mailla/alueilla on omat vaatimukset tuesta erilaisille maakohtaisille toiminnoille, jotka liittyvät eri valtion virastojen antamiin rekisterinumeroihin. Esimerkkejä rekisterinumeroista ovat verovelvollisen tunnistenumero (TIN), henkilötunnus (SSN) ja Euroopan ALV-tunnus (EU VAT ID). Tämä toiminto tarjoaa yhtenäisen kehyksen kaikille maille kaikilla alueilla ottaen huomioon maakohtaiset vaatimukset joissakin Euroopan maissa. Seuraavissa osissa kuvataan rekisteröintitunnusten määrittämisessä ja käsittelyssä käytettävää yleistä tiedonkulkua.
 
 ## <a name="registration-type-creation"></a>Rekisteröintityypin luominen
 Ennen rekisteröintitunnuksen määrittämistä on määritettävä tyypit erilaisille osapuoleen liittyville rekisteröintinumeroille. Siirry **Organisaation hallinta** &gt; **Yleinen osoitekirja** &gt; **Rekisteröintityypit** &gt; **Rekisteröintityypit** -sivun luodaksesi ja hallitaksesi rekisteröintityyppejä toimittajille, asiakkaille, työntekijöille ja yrityksille eri maissa/alueilla.
@@ -51,7 +51,7 @@ Rekisteröintiluokka on maan/alueen rekisteröintitunnus, joka on hyväksytty ti
 |-----------------------|----------------|
 | Rekisteröintityyppi     | Rekisteröintityyppi tietyssä maassa/alueessa.|
 | Rajoitettu:         | Rajoitus, joka koskee verorekisteröinnin tyyppejä Ei mitään, Henkilö ja Organisaatio.|
-| Rekisteröintiluokka | Yksilöllinen rekisteröintitunnus, joka on hyväksytty käyttöön kyseisessä maassa. Täydellinen luettelo tuetuista luokista näytetään myöhemmin tässä ohjeaiheessa. |
+| Rekisteröintiluokka | Yksilöllinen rekisteröintitunnus, joka on hyväksytty käyttöön kyseisessä maassa. Täydellinen luettelo tuetuista luokista näytetään myöhemmin tässä artikkelissa. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Kirjoita yleisen osoitekirjan tietueiden rekisteröintitunnukset
 

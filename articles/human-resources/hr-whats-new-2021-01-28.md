@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (28. tammikuuta 2021)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 28. tammikuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 28. tammikuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: marcelbf
 ms.date: 01/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d59e242421b1b86c32f9009ae6ae17e0f161a2e2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 46bbda21c3eb2b32030b93afc2a40785c22b124e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689295"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909756"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-28-2021"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (28. tammikuuta 2021)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja.
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -48,10 +48,10 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän ohjeaiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
 
-| Ongelman numero | Varasto-otto |  kuvaus |
+| Ongelman numero | Ongelma |  Kuvaus |
 | --- | --- | --- |
 | 539456 | Kalenterissa näkyy lomatyyppi osoitintekstissä, kun vain **Näytä vain poissaolo ilman tietoja** -parametri on otettu käyttöön. | Kun **Näytä vain poissaolo ilman tietoja** on käytössä, pyynnön päivämäärä näkyy nyt osoitettaessa. |
 | 528907 | Kun työntekijäroolille myönnetään käyttöoikeus yritykselle, esimiehet eivät voi nähdä työntekijän itsepalvelun **Oma ryhmä** -alueen työntekijöiden saldoaktiviteetteja. |Kun valitset tämän vaihtoehdon, esimiehet voivat jatkaa saldotehtävän katsomista. |

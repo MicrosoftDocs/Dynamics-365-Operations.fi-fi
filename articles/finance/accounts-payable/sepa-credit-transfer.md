@@ -1,6 +1,6 @@
 ---
 title: SEPA-tilisiirron yleiskatsaus
-description: Tässä aiheessa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut.
+description: Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f3f0c428d9167e9f1a7fb17a292d474448b2d4df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871446"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA-tilisiirron yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut. SEPA-tilisiirto on tietyntyyppinen toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama euromääräinen maksu. Aiheessa selitetään myös tilisiirron maksutiedoston määrittäminen ja siirtäminen.
+Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut. SEPA-tilisiirto on tietyntyyppinen toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama euromääräinen maksu. Artikkelissa selitetään myös tilisiirron maksutiedoston määrittäminen ja siirtäminen.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Mikä on tilisiirron sanoma?
 Tilisiirron sanoma on pyyntö, jonka aloittava osapuoli (oma yrityksesi) lähettää siirtääkseen varoja omalta tililtään velkojan tilille. Tilisiirron sanomille on useita maa/aluekohtaisia ja pankkikohtaisia toteutuksia. Jotkin niistä käytetään yhden maan/alueen sisällä, ja joistakin on muodostumassa standardeja. Yksi vakiintunut yleinen standardi on ISO 20022 ja sen aloitussanomat, kuten Tilisiirto. Seuraavassa kuvassa esitetään valittujen tilisiirron sanomien suhteet ja kattavuus. 
@@ -53,7 +53,7 @@ SEPA-tilisiirto on toisen yrityksen tai henkilön toiselle yritykselle tai henki
 SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsoft Dynamics 365 Financen sähköistä raportointia (ER) ja maksutapatoimintoa. Muilla alueilla käytetään edelleen joitakin tilisiirron muotoja, jotka käyttävät vanhaa maksukehystä. Muiden muotojen lisäksi saatavilla on kaksitoista ISO 20022 -tilisiirron tiedostomuotoa. Nämä vientimuodot ovat SEPA ISO 20022 XML -standardin mukaisia. Niiden avulla muodostetaan ei-euromääräiset maksun siirrot maille/alueille, joissa niitä käytetään sekä euromääräiset maksut sen mukaisesti, mitä EPC:n SEPA-tilisiirtojen sääntökirjan versiossa 8.2 määritetään. Ennen tilisiirtojen käyttöönottoa omasta pankista on pyydettävä ohjelmisto, joka tarvitaan sähköisten pankkitiedostojen lataamiseen. Maksutoimeksiannot sisältävät XML-tiedostot siirretään tällä ohjelmistolla pankkiin.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported"></a>Mitä tilisiirron muotoja tuetaan tällä hetkellä?
-Tarkista Microsoft Dynamics Lifecycle Services (LCS) -palvelun jaetusta omaisuuskirjastosta luettelo uusimmista käytettävissä olevista tiedostoista, joiden tyyppi on **GER-konfigurointi**. Seuraavassa osassa, "Mitä asetuksia on määritettävä?", on linkki ohjeaiheeseen, jossa kerrotaan, miten luot LCS-säilön, josta voit tarkastaa käytettävissä olevat konfiguraatiotiedostot ja tuoda haluamasi tiedostot.
+Tarkista Microsoft Dynamics Lifecycle Services (LCS) -palvelun jaetusta omaisuuskirjastosta luettelo uusimmista käytettävissä olevista tiedostoista, joiden tyyppi on **GER-konfigurointi**. Seuraavassa osassa, "Mitä asetuksia on määritettävä?", on linkki artikkeliin, jossa kerrotaan, miten luot LCS-säilön, josta voit tarkastaa käytettävissä olevat konfiguraatiotiedostot ja tuoda haluamasi tiedostot.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mitä asetuksia on määritettävä?
 -   Ennen tilisiirtotiedostojen luontia vähintään yksi aktiivinen tilisiirtomääritys on tuotava sähköisen raportoinnin määrityksiin. Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).

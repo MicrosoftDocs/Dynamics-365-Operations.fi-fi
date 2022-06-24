@@ -1,6 +1,6 @@
 ---
 title: ER Muotomääritysten luominen (marraskuu 2016)
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muotomäärityksen luontia.
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) muotomäärityksen luontia.
 author: NickSelin
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d59f0f7c914cc6d59ae441e6f6b8ff249a3e9c03c6ee4b4a75421d875f826a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2617f33293c38b7f1aaa61fda7d8de06711c6727
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902651"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Muotomääritysten luominen (marraskuu 2016)
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda muotokonfiguraation sähköiselle raportoinnille (ER). Tämä muotokonfiguraatio määrittää maksujen käsittelyssä käytettävien sähköisten asiakirjojen muodon. Tässä esimerkissä luodaan muotokonfiguraatio Litware, Inc. -malliyritykselle. Voit suorittaa nämä vaiheet suoritettuasi ensin Mallin yhdistäminen valittuihin tietolähteisiin -menettelyn vaiheet.
+Tässä artikkelissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda muotokonfiguraation sähköiselle raportoinnille (ER). Tämä muotokonfiguraatio määrittää maksujen käsittelyssä käytettävien sähköisten asiakirjojen muodon. Tässä esimerkissä luodaan muotokonfiguraatio Litware, Inc. -malliyritykselle. Voit suorittaa nämä vaiheet suoritettuasi ensin Mallin yhdistäminen valittuihin tietolähteisiin -menettelyn vaiheet.
 
 
 ## <a name="create-a-new-format-configuration"></a>Uuden muotokonfiguraation luominen

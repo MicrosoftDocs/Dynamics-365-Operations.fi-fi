@@ -1,6 +1,6 @@
 ---
 title: Egyptin ennakonpidätysilmoitus
-description: Tässä aiheessa kerrotaan, miten Egyptin ennakonpidätysilmoitus konfiguroidaan ja muodostetaan.
+description: Tässä artikkelissa kerrotaan, miten Egyptin ennakonpidätysilmoitus konfiguroidaan ja muodostetaan.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403888"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907684"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Egyptin ennakonpidätysilmoitus (EG-00005)
 
@@ -26,11 +26,11 @@ ms.locfileid: "7403888"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Yleiskuvaus
-Tässä ohjeaiheessa on tietoja ennakonpidätysilmoituksen ja ennakonpidätysilmoituksen lomakkeiden 41 ja 11 määrittämisestä ja luomisesta yrityksille Egyptissä 
+Tässä artikkelissa on tietoja ennakonpidätysilmoituksen ja ennakonpidätysilmoituksen lomakkeiden 41 ja 11 määrittämisestä ja luomisesta yrityksille Egyptissä 
 
 Kaikkien egyptiläisten yritysten on valmisteltava lomake 41, joka sisältää yhteenvedon kaikista paikallisilta toimittajilta ja palveluntuottajilta pidätetyistä veroista. Lomakkeen 41 lisäksi on muodostettava lomake 11, jotta voidaan eritellään kaikki ulkomaisilta toimittajilta pidätetyt verot. 
 
-Dynamics 365 Financen **Ennakonpidätysilmoitus**-raportti sisältää seuraavat raportit:
+**Ennakonpidätysilmoitus**-raportti Dynamics 365 Financessa sisältää seuraavat raportit:
 
 - Ilmoituslomake nro 41
 - Ilmoituslomake nro 11
@@ -58,7 +58,7 @@ Lisätietoja sähköisen raportoinnin konfiguraatioiden tuomisesta on kohdassa [
 
 Egyptin ennakonpidätysilmoituslomakkeiden toteutus, joka perustuu sähköisen raportoinnin konfiguraatioihin. Lisätietoja konfiguroitavan raportoinnin ominaisuuksista ja käsitteistä on kohdassa [Sähköinen raportointi](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-Tuotanto- ja käyttäjähyväksyntätestausympäristöille on ohjeet aiheessa [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palveluista](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+Tuotanto- ja käyttäjähyväksyntätestausympäristöille on ohjeet artikkelissa [Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palveluista](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Jos haluat luoda ennakonpidätysilmoitukset egyptiläisessä yrityksessä, sinun on ladattava palvelimeen seuraavat konfiguraatiot:
 

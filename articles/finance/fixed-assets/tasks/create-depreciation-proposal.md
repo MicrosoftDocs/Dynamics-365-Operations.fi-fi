@@ -1,6 +1,6 @@
 ---
 title: Luo poistoehdotus
-description: Tässä ohjeaiheessa kuvataan, kuinka poiston eräehdotukset toimivat ja kuinka poisto ehdotetaan käyttöomaisuuserille.
+description: Tässä artikkelissa kuvataan, kuinka poiston eräehdotukset toimivat ja kuinka poisto ehdotetaan käyttöomaisuuserille.
 author: abruer
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db747bf8e3343082feda204fc56d9608313a280e
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a1f39a1412c6f96fe0a8261602a88a6a3c3cd6b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716379"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858493"
 ---
 # <a name="create-a-depreciation-proposal"></a>Luo poistoehdotus
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka poiston eräehdotukset toimivat ja kuinka poisto ehdotetaan käyttöomaisuuserille. Tässä tehtävässä käytetään USMF-esittely-yritystä ja kirjanpitäjän roolia.
+Tässä artikkelissa kuvataan, kuinka poiston eräehdotukset toimivat ja kuinka poisto ehdotetaan käyttöomaisuuserille. Tässä tehtävässä käytetään USMF-esittely-yritystä ja kirjanpitäjän roolia.
 
 
 ## <a name="create-a-depreciation-proposal"></a>Luo poistoehdotus

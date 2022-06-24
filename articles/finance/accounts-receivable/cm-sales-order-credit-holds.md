@@ -1,6 +1,6 @@
 ---
 title: Myyntitilausten luottojen pidot
-description: Tässä ohjeaiheessa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon.
+description: Tässä artikkelissa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon.
 author: JodiChristiansen
 ms.date: 07/20/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2d8966f993e7ca82b10a2ef5a023256a05682980
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 44560425056ee1726f21a4279f36c2e718956814
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734330"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856825"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Myyntitilausten luottojen pidot
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon. Luotonhallinnan estosäännöt voidaan ottaa käyttöön yhden asiakkaan tai asiakasryhmän osalta. Estosäännöt määrittävät, mihin seuraaviin tilanteisiin vastataan.
+Tässä artikkelissa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon. Luotonhallinnan estosäännöt voidaan ottaa käyttöön yhden asiakkaan tai asiakasryhmän osalta. Estosäännöt määrittävät, mihin seuraaviin tilanteisiin vastataan.
 
 1. Erääntyneiden päivien lukumäärä
 2. Tilien tila

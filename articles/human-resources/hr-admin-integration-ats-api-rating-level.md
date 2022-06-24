@@ -1,6 +1,6 @@
 ---
 title: Luokitustaso
-description: Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin Luokitustaso-yksikköä.
+description: Tässä artikkelissa kuvataan Dynamics 365 Human Resourcesin Luokitustaso-yksikköä.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a821e3cd90e85571da4a09f5dd564beb2de35989
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: dcd366632456c186eca9682d79a0c8690772e8bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893871"
 ---
 # <a name="rating-level"></a>Luokitustaso
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068631"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kuvataan Dynamics 365 Human Resourcesin Luokitustaso-yksikköä.
+Tässä artikkelissa kuvataan Dynamics 365 Human Resourcesin Luokitustaso-yksikköä.
 
 Fyysinen nimi: mshr_hcmratinglevelentity
 

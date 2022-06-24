@@ -1,6 +1,6 @@
 ---
 title: Koneoppimismallien tulokset
-description: Tämä ohjeaihe sisältää tietoja sekaannusmatriiseista, luokitteluongelmista ja koneoppimismallien tarkkuudesta. Tarkoitus on parantaa koneoppimisennusteiden tulosten ymmärtämistä.
+description: Tämä artikkeli sisältää tietoja sekaannusmatriiseista, luokitteluongelmista ja koneoppimismallien tarkkuudesta. Tarkoitus on parantaa koneoppimisennusteiden tulosten ymmärtämistä.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910168"
 ---
 # <a name="results-of-machine-learning-models"></a>Koneoppimismallien tulokset
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää tietoja sekaannusmatriiseista, luokitteluongelmista ja koneoppimismallien tarkkuudesta. Tarkoitus on parantaa koneoppimisennusteiden tulosten ymmärtämistä. Kohdeyleisöä ovat insinöörit, analysoijat ja esimiehet, jotka haluavat parantaa tietämystään ja taitojaan datatieteen parissa.
+Tämä artikkeli sisältää tietoja sekaannusmatriiseista, luokitteluongelmista ja koneoppimismallien tarkkuudesta. Tarkoitus on parantaa koneoppimisennusteiden tulosten ymmärtämistä. Kohdeyleisöä ovat insinöörit, analysoijat ja esimiehet, jotka haluavat parantaa tietämystään ja taitojaan datatieteen parissa.
 
 ## <a name="confusion-matrix"></a>Sekaannusmatriisi
 Kun valvottu koneoppimisen ongelma on koulutettu aiempien tietojen joukon avulla, se testataan käyttämällä koulutusprosessin tietoja. Näin voidaan vertailla koulutetun mallin ja todellisten arvojen ennusteita. Sekaannusmatriisin avulla voidaan arvioida, miten onnistunut luokitteluongelma on ja missä se tekee virheitä (eli missä kohdassa tapahtuu sekaannus).
@@ -73,16 +73,16 @@ Tarkkuus on tärkeä työkalu kommunikoitaessa domain-asiantuntijoiden kanssa, j
 
 Maksuennusteskenaariossa koneoppimismallille voidaan asettaa tavoite, joka sisältää eri maksutoiminnan tekijöitä. Tavoite on, että mallin tulisi parantaa luonnollista arvausta vähentämällä virheellisten vastausten määrää vähintään 50 prosentilla. Toisin sanoen halutaan, että kohdetavoite jakaa eron luonnollisen arvauksen ja 100 prosentin välillä.
 
-Seuraavassa taulukossa on yhteenveto tämän ohjeaiheen sekaannusmatriisien periaatteesta.
+Seuraavassa taulukossa on yhteenveto tämän artikkelin sekaannusmatriisien periaatteesta.
 
-| Malli   | Luonnollinen arvaus | Tavoite | Mallin tarkkuus | Onko tavoite täyttynyt?                                          |
+| Malli   | Luonnollinen arvaus | Kohde | Mallin tarkkuus | Onko tavoite täyttynyt?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
 | Malli 1 | 0.50        | 0.75   | 0.73           | Lähes. Tämä malli parantaa arvauksia huomattavasti. |
 | Malli 2 | 0.80        | 0.90   | 0.83           | Nro Parannus on tarpeen.                              |
 
 ## <a name="classification-f1-accuracy"></a>Luokituksen F1-tarkkuus
 
-Tässä ohjeaiheessa käsitellään luokituksen koneoppimisen suorituskyvyn lisämittaria, joka on nyt nimeltään F1-tarkkuus.
+Tässä artikkelissa käsitellään luokituksen koneoppimisen suorituskyvyn lisämittaria, joka on nyt nimeltään F1-tarkkuus.
 
 Ennen kuin F1-tarkkuus voidaan määrittää, on otettava käyttöön kaksi lisämittaria: tarkkuus ja saanti. Tarkkuus ilmaisee, kuinka monta positiiviseksi määritettyä ennustetta on määritetty oikein. Tätä mittaria kutsutaan myös positiiviseksi ennakoivaksi arvoksi. Saanti on niiden todellisten positiivisten tapausten määrä, jotka ennustettiin oikein. Tätä mittaria kutsutaan myös herkkyydeksi.
 
@@ -97,7 +97,7 @@ F1-mittari yhdistää tarkkuuden ja saannin. Tuloksena on kahden arvon harmonine
 
 - F1 = 2 × (tarkkuus × saanti) ÷ (tarkkuus + saanti)
 
-Alla on konkreettinen esimerkki. Aiemmin tässä ohjeaiheessa oli esimerkki, jossa ennustettiin eläin koiraksi tai kissaksi. Kuva näytetään myös tässä.
+Alla on konkreettinen esimerkki. Aiemmin tässä artikkelissa oli esimerkki, jossa ennustettiin eläin koiraksi tai kissaksi. Kuva näytetään myös tässä.
 
 [![Lajien ennustamisen esimerkki (toistettu).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
@@ -111,7 +111,7 @@ Kuten nähdään, F1-arvo on tarkkuuden ja saannin välissä.
 
 Vaikka F1-tarkkuuden ymmärtäminen ei ole helppoa, se tuo lisäarvoa tarkkuuden perusarvoon. Se voi myös auttaa epätasapainossa olevien tietojoukkojen käsittelemisessä seuraavan keskustelun tapaan.
 
-Tämän ohjeaiheen [Mallin tarkkuus](#model-accuracy) -osassa vertailtiin seuraavaa kahta sekaannusmatriisia. Vaikka ensimmäisen mallin tarkkuus on toista alhaisempi, se arvotettiin hyödyllisemmäksi malliksi, koska se näytti enemmän parannuksia kuin ajallaan tehdyn maksun oletusarvaus.
+Tämän artikkelin [Mallin tarkkuus](#model-accuracy) -osassa vertailtiin seuraavaa kahta sekaannusmatriisia. Vaikka ensimmäisen mallin tarkkuus on toista alhaisempi, se arvotettiin hyödyllisemmäksi malliksi, koska se näytti enemmän parannuksia kuin ajallaan tehdyn maksun oletusarvaus.
 
 ![Maksuennuste vs. todellisten arvojen esimerkki.](media/payment-prediction-matrix.png)
 

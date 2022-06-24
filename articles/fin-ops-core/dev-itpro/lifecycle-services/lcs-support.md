@@ -1,6 +1,6 @@
 ---
 title: Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
-description: Tässä aiheessa kerrotaan taloushallinnon ja toimintojen sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
+description: Tässä artikkelissa kerrotaan talous- ja toimintosovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e697c574efb0b04db6cb04d01c41066a0ac3974
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068031"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866428"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
 
@@ -28,7 +28,7 @@ ms.locfileid: "8068031"
 
 [!INCLUDE [PEAP](../../../includes/peap-2.md)]
 
-Tässä aiheessa kerrotaan taloushallinnon ja toimintojen sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta. 
+Tässä artikkelissa kerrotaan talous- ja toimintosovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta. 
 
 <table>
 <thead>

@@ -1,6 +1,6 @@
 ---
 title: Integroinnin määrittäminen Dayforcen kanssa
-description: Tässä aiheessa käsitellään määritysvaiheita, joita tarvitaan Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen väliseen integrointiin.
+description: Tässä artikkelissa käsitellään määritysvaiheita, joita tarvitaan Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen väliseen integrointiin.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691329"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896131"
 ---
 # <a name="configure-integration-with-dayforce"></a>Integroinnin määrittäminen Dayforcen kanssa
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691329"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen välinen integrointi käyttää useita konfiguraation vaiheita, jotka on kuvattu tässä ohjeaiheessa. Sekä Human Resourcesin että Dayforcen integrointi on määritettävä ennen kuin voit käsitellä palkka-ajoa.
+Microsoft Dynamics 365 Human Resourcesin ja Ceridian Dayforcen välinen integrointi käyttää useita konfiguraation vaiheita, jotka on kuvattu tässä artikkelissa. Sekä Human Resourcesin että Dayforcen integrointi on määritettävä ennen kuin voit käsitellä palkka-ajoa.
 
 Käytettäessä jotakin palvelua, kuten Dayforcea palkka-ajojen suorittamiseen, on otettava käyttöön integrointi Human Resourcesissa. Integrointi edellyttää tiettyjä tietoja Human Resourcesista. Sinun on varmistettava, että Dayforceen yhdistetyt tiedot on konfiguroitu Human Resourcesissa siten, että ne tukevat integrointia. Integraatio käyttää seuraavanlaisia laajoja tietoryhmiä:
 
@@ -37,7 +37,7 @@ Käytettäessä jotakin palvelua, kuten Dayforcea palkka-ajojen suorittamiseen, 
 - Palkanlaskentatietoja, kuten maksujaksot, maksukaudet ja ansiokoodit
 - Työntekijän tiedot
 
-Tässä aiheessa käsitellään ohjeita, joiden avulla integrointi otetaan käyttöön, sekä tietotyyppejä ja määritystietoja, joita integraatio edellyttää.
+Tässä artikkelissa käsitellään ohjeita, joiden avulla integrointi otetaan käyttöön, sekä tietotyyppejä ja määritystietoja, joita integraatio edellyttää.
 
 ## <a name="enable-the-integration"></a>Ota integraatio käyttöön
 

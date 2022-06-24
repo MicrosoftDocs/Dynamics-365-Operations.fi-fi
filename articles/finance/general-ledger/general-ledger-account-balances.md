@@ -1,6 +1,6 @@
 ---
 title: Kirjanpitotilin saldot
-description: 'Tässä aiheessa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit.'
+description: 'Tässä artikkelissa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit.'
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8470929b6805ddf9b85bd03e3043c2953d5fcfd1
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f00f221765e757d8d4c82e1a0e4b8721e33dc321
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716434"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874490"
 ---
 # <a name="general-ledger-account-balances"></a>Kirjanpitotilin saldot
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään.
+Tässä artikkelissa esitellään kirjanpitotilien saldojen kaksi erilaista tarkastelutapaa: Pääkirja-luettelosivu ja talousraportit. Artikkelissa kerrotaan myös, miten dimensioyhdistelmän saldot päivitetään.
 
 Käyttäjät voivat tarkastella saldoja kirjanpidossa monin eri tavoin. Yleisimpiä vaihtoehtoja ovat:
 

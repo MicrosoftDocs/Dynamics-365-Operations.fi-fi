@@ -1,6 +1,6 @@
 ---
 title: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
-description: 'Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa.'
+description: 'Tämä artikkeli sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa.'
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4a138a26a23c804f5fd358d335b04aee3897dce
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720335"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904525"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Kirjanpidon ulkomaanvaluutan uudelleenarvostus
 
 [!include [banner](../includes/banner.md)]
 
-Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa. 
+Tämä artikkeli sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa. 
 
 Kirjanpidon käytännöt edellyttävät kauden lopussa tehtävää kirjanpitotilien valuuttamääräisten saldojen uudelleenarvostusta käyttäen eri vaihtokurssityyppejä (nykyinen, historiallinen, keskiarvo jne.). Esimerkiksi yksi kirjanpitomenetelmä edellyttää saamisten ja velkojen uudelleenarvostusta nykyisellä vaihtokurssilla, käyttöomaisuuden uudelleenarvostusta historiallisen vaihtokurssin mukaan sekä tulostilien uudelleenarvostusta kuukauden keskiarvon mukaan. Kirjanpidon ulkomaanvaluutan uudelleenarvostusta voidaan käyttää taseen ja tasetilien uudelleenarvostukseen. 
 

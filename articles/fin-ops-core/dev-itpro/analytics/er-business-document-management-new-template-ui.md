@@ -1,6 +1,6 @@
 ---
 title: Microsoft Office -tyylin käyttöliittymä liiketoiminta-asiakirjan hallinnassa (sisältää videon)
-description: Tässä ohjeaiheessa kerrotaan, kuinka uutta käyttöliittymää käytetään sähköisen raportoinnin (ER) kehyksen yritysasiakirjojen hallintatoiminnossa.
+description: Tässä artikkelissa kerrotaan, kuinka uutta käyttöliittymää käytetään sähköisen raportoinnin (ER) kehyksen yritysasiakirjojen hallintatoiminnossa.
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074738"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892222"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office -tyylin käyttöliittymä liiketoiminta-asiakirjan hallinnassa
 
@@ -28,11 +28,11 @@ ms.locfileid: "8074738"
 
 Liiketoiminta-asiakirjojen hallinnan avulla yrityskäyttäjät voivat muokata liiketoiminta-asiakirjamalleja Microsoft Office 365 -palvelun tai asianmukaisen Microsoft Office -työpöytäsovelluksen avulla. Muokkauksia voivat olla esimerkiksi suunnittelumuutoksia tai uusia käyttöönottoja. Käyttäjät voivat myös lisätä paikkamerkkejä tietojen lisäämiseksi ilman lähdekoodin muuttamista. Lisätietoja liiketoiminta-asiakirjojen hallinnan käyttämisestä on kohdassa [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](er-business-document-management.md).
 
-Uusi käyttöliittymä on selkeämpi ja mukavampi käyttää. **Yritystiedosto**-alue näyttää vain nykyisen [aktiivisen](tasks/er-configuration-provider-mark-it-active-2016-11.md) [tarjoajan](general-electronic-reporting.md#Provider) omistamia malleja, jotka sijaitsevat nykyisessä Dynamics 365 Finance -esiintymässä. Edellisessä käyttöliittymässä **Malli**-välilehdessä luetellaan kaikki mallit, jotka olivat kaikkien palveluntarjoajien käytettävissä. Lisäksi se on näyttänyt kaikki kaikkien niiden käyttäjien luomat ja muokatut mallit, joilla on sama rooli.
+Uusi käyttöliittymä on selkeämpi ja mukavampi käyttää. **Yritystiedosto** alue näyttää vain nykyisen [aktiivisen](tasks/er-configuration-provider-mark-it-active-2016-11.md) [tarjoajan](general-electronic-reporting.md#Provider) omistamia malleja, jotka sijaitsevat nykyisessä Dynamics 365 Finance -esiintymässä. Edellisessä käyttöliittymässä **Malli**-välilehdessä luetellaan kaikki mallit, jotka olivat kaikkien palveluntarjoajien käytettävissä. Lisäksi se on näyttänyt kaikki kaikkien niiden käyttäjien luomat ja muokatut mallit, joilla on sama rooli.
 
 **Liiketoiminta-asiakirjan hallinta** -työtilan **Uusi tiedosto** -painikkeen avulla voit luoda ja muokata mallia [sähköisen raportoinnin (ER) ](general-electronic-reporting.md) muodon [konfiguraatiossa](general-electronic-reporting.md#Configuration), jonka toinen tarjoaja sijaitsee nykyisessä Finance-esiintymässä, tai lataa uusi malli Excel-työkirjasta. Lisäksi versiossa 10.0.25 ja sitä myöhemmässä versiossa voit luoda ja muokata **Uusi tiedosto** -painikkeen avulla mallia [yleiseen tietovarastoon](general-electronic-reporting.md#Repository) tallennetussa ER-muodossa.
 
-Tämän ohjeaiheen esimerkeissä aktiivinen toimittaja on Contoso ja luot sen avulla mallin, joka perustuu Microsoftin toimittamaan malliin. Vaihtoehtoisesti voit luoda mallin lataamalla oman mallisi Excel-muodossa.
+Tämän artikkelin esimerkeissä aktiivinen toimittaja on Contoso ja luot sen avulla mallin, joka perustuu Microsoftin toimittamaan malliin. Vaihtoehtoisesti voit luoda mallin lataamalla oman mallisi Excel-muodossa.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

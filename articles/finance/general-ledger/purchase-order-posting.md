@@ -1,6 +1,6 @@
 ---
 title: Ostotilauksen kirjaus
-description: Tässä aiheessa kuvaillaan varastokirjausprofiilit-sivun ostotilausvälilehti.
+description: Tässä artikkelissa kuvaillaan varastokirjausprofiilit-sivun ostotilausvälilehti.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 4b36ab9da22da7d4f3e62bd2d2aba2a2ec80e60f
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8802999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849928"
 ---
 # <a name="purchase-order-posting"></a>Ostotilauksen kirjaus
 
@@ -125,7 +125,7 @@ Ostoehdotukset ja ostotilausvahvistukset voi myös konfiguroida niin, että ne k
 
 ## <a name="procurement-category-posting"></a>Tuotteiden hankintaluettelon kirjaukset
 
-Vaihtoehtona varastokirjauksen määrittämiselle kaikille nimikkeille, tuoteryhmälle tai yksittäiselle nimikkeelle voit määrittää luokkia ja hallita kirjanpitoa hankintaluokkien mukaan. Jos haluat lisätietoja luokkien määrittämisestä ja niiden delegoimisesta tuotteille, siirry tämän aiheen aikaisempaan kohtaan [Malli kirjausprofiilin konfiguraatiosta](#sample-posting-profile-configuration).
+Vaihtoehtona varastokirjauksen määrittämiselle kaikille nimikkeille, tuoteryhmälle tai yksittäiselle nimikkeelle voit määrittää luokkia ja hallita kirjanpitoa hankintaluokkien mukaan. Jos haluat lisätietoja luokkien määrittämisestä ja niiden delegoimisesta tuotteille, siirry tämän artikkelin aikaisempaan kohtaan [Malli kirjausprofiilin konfiguraatiosta](#sample-posting-profile-configuration).
 
 Kun luokkia käytetään ostotilausten ja toimittajalaskujen yhteydessä, luokkahierarkia on määritettävä **Hankintaluokkahierarkia**-tyypille **Luokkahierarkian roolin määritykset** -sivulla.
 

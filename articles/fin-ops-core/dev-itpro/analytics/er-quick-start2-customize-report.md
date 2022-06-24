@@ -1,6 +1,6 @@
 ---
 title: Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
-description: Tässä aiheessa kerrotaan, miten Microsoftin tarjoaman sähköisen raportoinnin (ER) muotoa voidaan säätää siten, että se luo mukautetun sähköisen asiakirjan.
+description: Tässä artikkelissa kerrotaan, miten Microsoftin tarjoaman sähköisen raportoinnin (ER) muotoa voidaan säätää siten, että se luo mukautetun sähköisen asiakirjan.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323814"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886788"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
 
 [!include[banner](../includes/banner.md)]
 
-Tämän ohjeen menettelyissä selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolissa oleva käyttäjä voi tehdä nämä tehtävät:
+Tämän artikkelin menettelyissä selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolissa oleva käyttäjä voi tehdä nämä tehtävät:
 
 - Määritä [sähköisen raportoinnin (ER) kehyksen](general-electronic-reporting.md) parametrit.
 - Tuo ER-konfiguraatiot, jotka Microsoft tarjoaa ja joita käytetään maksutiedoston luomiseen, kun [toimittajan maksua](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) käsitellään.
@@ -135,7 +135,7 @@ Lisätietoja ER-konfiguraation lähteistä on kohdassa [Konfiguraation lähteide
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat1"></a>Tuo ER-vakiokonfiguraatiot
 
-Jos haluat lisätä ER-vakiokonfiguraatiot nykyiseen Microsoft Dynamics 365 Finance -esiintymääsi, sinun on tuotava ne ER-[säilöstä](general-electronic-reporting.md#Repository), joka määritettiin kyseiselle esiintymälle.
+ER-vakiomääritys voidaan lisätä Microsoft Dynamics 365 Financen nykyiseen esiintymään tuomalla ne kyseiselle esiintymällä määritetystä ER-[säilöstä](general-electronic-reporting.md#Repository).
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Valitse **Lokalisoinnin konfiguraatiot**-sivun **Konfiguraation lähteet** -osassa **Microsoft**-ruutu ja valitse sitten **Säilöt** nähdäksesi luettelon Microsoft-toimittajan säilöistä.

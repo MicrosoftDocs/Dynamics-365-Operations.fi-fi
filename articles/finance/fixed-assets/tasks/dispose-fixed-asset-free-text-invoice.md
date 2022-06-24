@@ -1,6 +1,6 @@
 ---
 title: Käyttöomaisuuden poisto vapaatekstilaskua käyttäen
-description: Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla.
+description: Tässä artikkelissa kerrotaan, miten voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla.
 author: moaamer
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711ab4b4798127ca54d7138b0aae02d71fe8bec3
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: bb930bd35aa86c6bc3b2e7a5577ff16e3feb151a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713555"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896431"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Käyttöomaisuuden poisto vapaatekstilaskua käyttäen
 
 [!include [banner](../../includes/banner.md)]
 
-Näiden ohjeiden avulla voit poistaa käyttöomaisuuden käyttämällä vapaatekstilaskua.
+Tässä artikkelissa kerrotaan, miten voit poistaa käyttöomaisuuden käyttämällä vapaatekstilaskua.
 
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Myyntireskontra > Laskut > Kaikki vapaamuotoiset laskut**.
 2. Valitse **Uusi**.

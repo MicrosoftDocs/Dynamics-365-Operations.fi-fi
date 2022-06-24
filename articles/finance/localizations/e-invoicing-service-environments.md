@@ -1,6 +1,6 @@
 ---
 title: Palveluympäristöt
-description: Tässä ohjeaiheessa on tietoja sähköisen laskutuksen palveluympäristöistä ja siitä, miten ne määritetään.
+description: Tässä artikkelissa on tietoja sähköisen laskutuksen palveluympäristöistä ja siitä, miten ne määritetään.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8a135098f71e1413cd20ff8ad4003f090ae3407
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 8c743c5b2fbc7dcc3ae04fa4d7ca0e65de6c2507
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901244"
 ---
 # <a name="service-environments"></a>Palveluympäristöt
 
@@ -37,7 +37,7 @@ Tämäntyyppinen osiointi auttaa varmistamaan, että sähköisen laskutuksen pro
 
 Palveluympäristöt on luotava ja ylläpidettävä Regulatory Configuration Service (RCS) -palvelussa. Kun ne ovat valmiita, ne pitää julkaista sähköiseen laskutuspalveluun. Julkaisuprosessi lähettää palveluympäristön parametrit RCS-instanssista sähköisen laskutuksen palveluun.
 
-Jos julkaisuprosessia ei suoriteta uuden palveluympäristön luomisen tai aiemmin luodun palveluympäristön muokkaamisen (esimerkiksi käyttäjien tai Microsoft Azure Key Vault -salaisuuksien lisääminen tai poistaminen) jälkeen, muutokset eivät tule voimaan. Vain julkaisuja ympäristöjä voi käyttää Dynamics 365 Financesta tai Dynamics 365 Supply Chain Managementista.
+Jos julkaisuprosessia ei suoriteta uuden palveluympäristön luomisen tai aiemmin luodun palveluympäristön muokkaamisen (esimerkiksi käyttäjien tai Microsoft Azure Key Vault -salaisuuksien lisääminen tai poistaminen) jälkeen, muutokset eivät tule voimaan. Vain julkaisuja ympäristöjä voi käyttää Dynamics 365 Financen tai Dynamics 365 Supply Chain Managementin avulla.
 
 ## <a name="service-environment-statuses"></a>Palveluympäristön tilat
 

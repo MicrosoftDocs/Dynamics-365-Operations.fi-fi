@@ -1,6 +1,6 @@
 ---
 title: Finance Insightsin määritysongelmien vianmääritys
-description: Tässä on aiheessa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
+description: Tässä artikkelissa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1ee354a1c3d9b45eb12eeb3a6a29f2a6d5e4c34c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725902"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846912"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Finance Insightsin määritysongelmien vianmääritys
 
 [!include [banner](../includes/banner.md)]
 
-Tässä on aiheessa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
+Tässä artikkelissa on luettelo ongelmista, joita voi esiintyä käytettäessä Finance Insights -ominaisuuksia Aiheessa käsitellään myös kyseisten ongelmien korjaamista.
 
 ## <a name="symptom-why-cant-i-map-the-customer-payment-insights-data-integration-template-destination-column"></a>Oire: Miksi asiakasmaksujen tietojen tietojen integrointimallin kohdesarakkeen yhdistämismääritys ei onnistu?
 
@@ -121,4 +121,4 @@ Lisätietoja **Ajoissa**-, **Myöhässä**- ja **Erittäin myöhässä** -luokki
 
 ### <a name="resolution"></a>Ratkaisu
 
-Ympäristö on saavuttanut Data Lake -palvelujen taulukoiden enimmäismäärän rajan. Lisätietoja: **Ota käyttöön lähes reaaliaikaiset tietomuutokset** -osa aiheessa [Azure Data Lakeen viemisen yleiskuvaus](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+Ympäristö on saavuttanut Data Lake -palvelujen taulukoiden enimmäismäärän rajan. Lisätietoja: **Ota käyttöön lähes reaaliaikaiset tietomuutokset** -osa artikkelissa [Azure Data Lakeen viemisen yleiskuvaus](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

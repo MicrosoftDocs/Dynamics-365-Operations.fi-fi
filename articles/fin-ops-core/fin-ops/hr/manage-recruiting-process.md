@@ -1,6 +1,6 @@
 ---
 title: Työhönottoprosessien hallinta
-description: Tässä ohjeaiheessa kuvataan käsite, jonka avulla rekrytoijat voivat seurata rekrytointiprosessin vaiheita.
+description: Tässä artikkelissa kuvataan käsite, jonka avulla rekrytoijat voivat seurata rekrytointiprosessin vaiheita.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 1ada6dfc9b227c7ae4ca873e8354d1fcc11ecbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735371"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910316"
 ---
 # <a name="manage-recruiting-processes"></a>Työhönottoprosessien hallinta
 
 > [!IMPORTANT]
-> Tämän ohjeaiheen työhönottotoimintoa kutsutaan työhönottoprojekteiksi, ja siinä keskitytään hakijoihin, hakemuksiin ja työhönottoprojekteihin. 
+> Tämän artikkelin työhönottotoimintoa kutsutaan työhönottoprojekteiksi, ja siinä keskitytään hakijoihin, hakemuksiin ja työhönottoprojekteihin. 
 
 
 Tässä artikkelissa esitellään konsepti, jonka avulla työhönottajat voivat seurata työhönottoprosessin vaiheita, mukaan lukien avoimia toimien ilmoittaminen ja hakijoiden työhönotto, hakijoiden ja hakemusten tietojen seuranta, hakijoiden haastattelu ja yhden tai useamman ehdokkaan valinta organisaatiossasi avoinna oleviin toimiin.

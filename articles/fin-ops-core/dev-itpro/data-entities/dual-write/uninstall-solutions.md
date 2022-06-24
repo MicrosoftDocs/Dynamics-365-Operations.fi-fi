@@ -1,6 +1,6 @@
 ---
 title: Kaksoiskirjoitussovelluksen orkestrointiratkaisujen asennuksen poistaminen
-description: Tässä ohjeaiheessa on tietoja kaksoiskirjoitussovelluksen orkestrointiratkaisujen asennuksen poistamisesta.
+description: Tässä artikkelissa on tietoja kaksoiskirjoitussovelluksen orkestrointiratkaisujen asennuksen poistamisesta.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-21
-ms.openlocfilehash: 781b2cb19a563d5712fa65718c93bfdc242f0c4a
-ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
+ms.openlocfilehash: 676802ddabac69db4947cf806e9103f67cece3de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870371"
 ---
 # <a name="uninstall-dual-write-application-orchestration-solutions"></a>Kaksoiskirjoitussovelluksen orkestrointiratkaisujen asennuksen poistaminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja kaksoiskirjoitussovelluksen orkestrointiratkaisujen asennuksen poistamisesta.
+Tässä artikkelissa on tietoja kaksoiskirjoitussovelluksen orkestrointiratkaisujen asennuksen poistamisesta.
 
 Jotkut asiakkaat asentavat tahattomasti kaksoiskirjoitussovellusorkestrointipaketin, joka asentaa useita ratkaisuja heidän Microsoft Dataverse -ympäristöönsä. Ylimääräisien ratkaisujen asentaminen pakettiin voi aiheuttaa odottamattomia ja epämieluisia ongelmia.
 

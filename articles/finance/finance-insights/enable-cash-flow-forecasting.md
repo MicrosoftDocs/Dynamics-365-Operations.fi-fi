@@ -1,6 +1,6 @@
 ---
 title: Kassavirtaennusteiden ottaminen käyttöön
-description: Tässä ohjeaiheessa kerrotaan, miten kassavirtaennusteiden toiminto otetaan käyttöön Finance Insightsissa.
+description: Tässä artikkelissa käsitellään Kassavirtaennusteet-toiminnon ottamista käyttöön Finance Insightsissa.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8dba56af53090d5d78632da4d414143b136f8a8d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 253e3ea9c1c44573b37503f167b4cb3860683c10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713751"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859872"
 ---
 # <a name="enable-cash-flow-forecasting"></a>Kassavirtaennusteiden ottaminen käyttöön
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään Kassavirtaennusteet-toiminnon ottamista käyttöön Finance Insightsissa.
+Tässä artikkelissa käsitellään Kassavirtaennusteet-toiminnon ottamista käyttöön Finance Insightsissa.
 
 > [!NOTE]
 > Jos haluat käyttää kassavirran maksuennusteita, sinun on määritettävä asiakkaan maksuennusteiden toiminto kohdan [Asiakkaan maksuennusteiden käyttöönotto](enable-cust-paymnt-prediction.md) ohjeiden mukaan.

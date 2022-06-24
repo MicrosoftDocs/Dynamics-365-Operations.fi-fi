@@ -1,6 +1,6 @@
 ---
 title: Kirjojen määrä kirjauskansiota kohti
-description: Tässä ohjeaiheessa on tietoja kirjauskansioiden ja resurssin kirjojen välisistä suhteista, kun käyttöomaisuushankinta tai poistoehdotus tehdään erätyön kautta. Voit määrittää kuhunkin hankintaan ja poistoon sisällytettävien kirjojen enimmäismäärän.
+description: Tässä artikkelissa on tietoja kirjauskansioiden ja resurssin kirjojen välisistä suhteista, kun käyttöomaisuushankinta tai poistoehdotus tehdään erätyön kautta. Voit määrittää kuhunkin hankintaan ja poistoon sisällytettävien kirjojen enimmäismäärän.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1e37d40c30d784eea5ba097447f2b2e69920830a
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2dbd50963cf13f00e09b82e884cd8ebc0b67d424
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883326"
 ---
 # <a name="number-of-books-per-journal"></a>Kirjojen määrä kirjauskansiota kohti
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja kirjauskansioiden ja resurssin kirjojen välisistä suhteista, kun käyttöomaisuushankinta tai poistoehdotus tehdään erätyön kautta. Voit määrittää kuhunkin hankintaan ja poistoon sisällytettävien kirjojen enimmäismäärän käyttämällä **Kirjojen määrä kirjauskansion mukaan** -osan **Yleistiedot**-välilehden **Käyttöomaisuusparametrit**-sivun kenttiä (**Käyttöomaisuus \> Asetukset \> Käyttöomaisuusparametrit**). Näiden kenttien avulla voit jakaa käyttöomaisuuskirjojen määrän hankintakirjauskansiota ja poistokirjauskansiota kohden.
+Tässä artikkelissa on tietoja kirjauskansioiden ja resurssin kirjojen välisistä suhteista, kun käyttöomaisuushankinta tai poistoehdotus tehdään erätyön kautta. Voit määrittää kuhunkin hankintaan ja poistoon sisällytettävien kirjojen enimmäismäärän käyttämällä **Kirjojen määrä kirjauskansion mukaan** -osan **Yleistiedot**-välilehden **Käyttöomaisuusparametrit**-sivun kenttiä (**Käyttöomaisuus \> Asetukset \> Käyttöomaisuusparametrit**). Näiden kenttien avulla voit jakaa käyttöomaisuuskirjojen määrän hankintakirjauskansiota ja poistokirjauskansiota kohden.
 
 Hankintaehdotuksen oletusarvo on vähintään 10 000 kirjaa. Poistoehdotuksen oletusarvo on vähintään 2 000 kirjaa.
 

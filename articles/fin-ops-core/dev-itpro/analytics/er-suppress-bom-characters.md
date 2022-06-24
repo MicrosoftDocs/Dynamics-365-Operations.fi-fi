@@ -1,6 +1,6 @@
 ---
 title: Tavujärjestysmerkkejä luoduissa tiedostoissa estävien ER-määritysten suunnitteleminen
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) muotojen määrittäminen luomaan raportteja, jotka estävät tavujärjestysmerkit.
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) muotojen määrittäminen luomaan raportteja, jotka estävät tavujärjestysmerkit.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323737"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847427"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Tavujärjestysmerkkejä luoduissa tiedostoissa estävien ER-määritysten suunnitteleminen
 
@@ -38,7 +38,7 @@ Jos koodaukseksi määritettään **UTF-8**, **UTF-16** tai **UTF-32**, **Estä 
 
 ![Estä tavujärjestysmerkit -vaihtoehdon määrittäminen Muodon suunnittelija -sivulla.](./media/er-suppress-bom-characters-image2.gif)
 
-Toiminnon tarkastelu suorituksen aikana edellyttää soveltuvan menettelyn suorittamista. Voit noudattaa esimerkiksi aiheen [ER-muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md) ohjeissa. Kun kyseisen aiheen kohdan [Muodon muokkaaminen siten, että laskeminen perustuu luotuun tulokseen](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) vaiheet on suoritettu, tee seuraavat lisävaiheet:
+Toiminnon tarkastelu suorituksen aikana edellyttää soveltuvan menettelyn suorittamista. Voit noudattaa esimerkiksi artikkelin [ER-muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md) vaiheita. Kun kyseisen artikkelin [Muodon muokkaaminen siten, että laskeminen perustuu luotuun tulokseen](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) -osan vaiheet on suoritettu, tee seuraavat lisävaiheet:
 
 1. UTF-koodauksen määrittäminen:
 
@@ -48,12 +48,12 @@ Toiminnon tarkastelu suorituksen aikana edellyttää soveltuvan menettelyn suori
 2. Luo XML-tiedosto, joka sisältää tavujärjestysmerkin:
 
     1. Sisällytä tavujärjestysmerkit luotuihin XML-tiedostoihin määrittämällä **Estä tavujärjestysmerkit** -asetukseksi **Ei**.
-    2. Suorita aiheen [ER-muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md) kohdassa [XML-elementin suorittamisen lykkääminen siten, että käytetään laskettua summaa](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) olevat vaiheet ja tallenna luotu tiedosto nimellä **SampleXmlReport.xml**.
+    2. Suorita artikkelin [ER-muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md) osassa [XML-elementin suorittamisen lykkääminen siten, että käytetään laskettua summaa](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) olevat vaiheet ja tallenna luotu tiedosto nimellä **SampleXmlReport.xml**.
 
 3. Luo XML-tiedosto, joka ei sisällä tavujärjestysmerkkiä:
 
     1. Estä tavujärjestysmerkit luoduissa XML-tiedostoissa määrittämällä **Estä tavujärjestysmerkit** -asetukseksi **Kyllä**.
-    2. Suorita aiheen [ER-muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md) kohdassa [XML-elementin suorittamisen lykkääminen siten, että käytetään laskettua summaa](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) olevat vaiheet ja tallenna luotu tiedosto nimellä **SampleXmlReport (1).xml**.
+    2. Suorita artikkelin [ER-muotojen XML-elementtien suorittamisen lykkääminen](er-defer-xml-element.md) osassa [XML-elementin suorittamisen lykkääminen siten, että käytetään laskettua summaa](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) olevat vaiheet ja tallenna luotu tiedosto nimellä **SampleXmlReport (1).xml**.
 
 4. Vertaa luotuja tiedostoja tiedostovertailun apuohjelmassa.
 

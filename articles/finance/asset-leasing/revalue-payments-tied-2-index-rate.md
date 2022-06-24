@@ -1,6 +1,6 @@
 ---
 title: Indeksikorkoon linkitettyjen vuokrien uudelleenarvostus
-description: Tässä ohjeaiheessa kuvataan oikaisu, joka tehdään käyttöoikeusomaisuuserän velan vuokraamista varten, kun muuttuvat vuokrat muuttuvat indeksikoron muuttumisen vuoksi.
+description: Tässä artikkelissa kuvataan oikaisu, joka tehdään käyttöoikeusomaisuuserän velan vuokraamista varten, kun muuttuvat vuokrat muuttuvat indeksikoron muuttumisen vuoksi.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968049"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903244"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Indeksikorkoon linkitettyjen vuokrien uudelleenarvostus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan oikaisu, joka tehdään käyttöoikeusomaisuuserän velan vuokraamista varten, kun muuttuvat vuokrat muuttuvat indeksikoron muuttumisen vuoksi. Vuokravelka ja käyttöoikeusomaisuuserä oikaistaan tilille uusia maksusummia varten. ASC 842 -standardin (joka on Yhdysvaltojen yleisti hyväksytty kirjanpitostardardi US GAAPI) mukaan vain muuttuvat maksut muuttuvat, kun maksuja lisätään tai vähennetään indeksikoron muuttumisen vuoksi, ellei kassavirroissa ole muita muutoksia. Näitä lisämuutoksia voivat olla korkoprosentteihin liittyvät vuokra-aikojen muutokset. Lisätietoja on ASC 842-10-55-225 -asiakirjassa ja IFRS 16:n kappaleessa 42(b).
+Tässä artikkelissa kuvataan oikaisu, joka tehdään käyttöoikeusomaisuuserän velan vuokraamista varten, kun muuttuvat vuokrat muuttuvat indeksikoron muuttumisen vuoksi. Vuokravelka ja käyttöoikeusomaisuuserä oikaistaan tilille uusia maksusummia varten. ASC 842 -standardin (joka on Yhdysvaltojen yleisti hyväksytty kirjanpitostardardi US GAAPI) mukaan vain muuttuvat maksut muuttuvat, kun maksuja lisätään tai vähennetään indeksikoron muuttumisen vuoksi, ellei kassavirroissa ole muita muutoksia. Näitä lisämuutoksia voivat olla korkoprosentteihin liittyvät vuokra-aikojen muutokset. Lisätietoja on ASC 842-10-55-225 -asiakirjassa ja IFRS 16:n kappaleessa 42(b).
 
 ## <a name="adjust-lease-payments"></a>Vuokrien muokkaaminen
 

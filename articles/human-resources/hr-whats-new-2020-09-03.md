@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (03. syyskuuta 2020)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 3. syyskuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 3. syyskuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: andreabichsel
 ms.date: 09/03/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 693c3d770f671edd3f52b22fa9240c641405dbed
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7d558f4b0ddb3e8fe3479567483e2c2349a40774
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687893"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891347"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (3. syyskuuta 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8687893"
 
 
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3504. Joissakin otsikoissa suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.3504. Joissakin otsikoissa suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
 
 Lisätietoja Human Resources -sovelluksen tulevista ominaisuuksista on kohdassa [Dynamics 365 Human Resources -sovelluksen vuoden 2019 julkaisuaallon 2 yleiskatsaus](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/). Lisätietoja Human Resources -sovelluksen päivitysprosessista on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Pankin ulkomaanvaluutan uudelleenarvostus
-description: Tämä ohjeaihe sisältää yhteenvedon pankin ulkomaanvaluutan uudelleenarvostusprosessista. Se sisältää tietoja asetuksista, prosessin suorittamisesta ja laskemisesta sekä uudelleenarvostustapahtumien peruutuksesta.
+description: Tämä artikkelissa sisältää yhteenvedon pankin ulkomaanvaluutan uudelleenarvostusprosessista. Se sisältää tietoja asetuksista, prosessin suorittamisesta ja laskemisesta sekä uudelleenarvostustapahtumien peruutuksesta.
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711200"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863098"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Pankin ulkomaanvaluutan uudelleenarvostus
 
 [!include [banner](../includes/banner.md)]
 
 
-Tämä ohjeaihe sisältää yhteenvedon pankin ulkomaanvaluutan uudelleenarvostusprosessista. Ohjeaiheessa kerrotaan, miten prosessi määritetään ja suoritetaan. Se sisältää myös tietoja prosessin laskennasta. Ohjeaiheessa kerrotaan, miten uudelleenarvostustapahtumia peruutetaan, jos peruutus vaaditaan.
+Tämä artikkelissa sisältää yhteenvedon pankin ulkomaanvaluutan uudelleenarvostusprosessista. Ohjeaiheessa kerrotaan, miten prosessi määritetään ja suoritetaan. Se sisältää myös tietoja prosessin laskennasta. Ohjeaiheessa kerrotaan, miten uudelleenarvostustapahtumia peruutetaan, jos peruutus vaaditaan.
 
 Kirjanpidon käytännöt edellyttävät kauden lopussa tehtävää pankkitilien ulkomaanvaluutan saldojen uudelleenarvostusta käyttäen eri vaihtokurssityyppejä (esimerkiksi nykyinen, historiallinen ja keskiarvo). Pankin ulkomaanvaluutan uudelleenarvostustoimintoa voi käyttää yhden tai usean pankkitilin uudelleenarvostukseen. Toiminto on myös yleinen toiminto. Tämän vuoksi voit uudelleenarvostaa yksittäiseltä sivulta kaikkien yritysten pankit, joiden käyttöoikeus sinulla on.
 

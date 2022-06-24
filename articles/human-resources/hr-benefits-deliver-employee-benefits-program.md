@@ -1,6 +1,6 @@
 ---
 title: Työsuhde-etuohjelman toteuttaminen
-description: Tässä aiheessa käsitellään uuden etuuden luomisessa käytettävien etuuselementtien luontia.
+description: Tässä artikkelissa käsitellään uuden etuuden luomisessa käytettävien etuuselementtien luontia.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: c2ca6712346295454fd0d516816c596d4b010abb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cc063c42ba0b627eb4711b44533c745925d718af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877827"
 ---
 # <a name="deliver-employee-benefits-program"></a>Työsuhde-etuohjelman toteuttaminen
 
@@ -26,7 +26,7 @@ ms.locfileid: "8688285"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa käsitellään uuden etuuden luomisessa käytettävien etuuselementtien luontia. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tehtävä on tarkoitettu etuuspäällikölle.
+Tässä artikkelissa käsitellään uuden etuuden luomisessa käytettävien etuuselementtien luontia. Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tehtävä on tarkoitettu etuuspäällikölle.
 
 
 ## <a name="create-benefit-elements"></a>Edun elementtien luominen

@@ -1,6 +1,6 @@
 ---
 title: Käyttöoikeudet kustannusobjektin vastuuhenkilölle
-description: Tässä ohjeaiheessa on tietoja kustannusobjektin vastuuhenkilöiden käyttöoikeuksista.
+description: Tässä artikkelissa on tietoja kustannusobjektin vastuuhenkilöiden käyttöoikeuksista.
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733875"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903186"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Käyttöoikeudet kustannusobjektin vastuuhenkilölle
 
@@ -35,10 +35,10 @@ Kustannuslaskennassa on neljä yksilöivää roolia.
 |-------------------------|--------------|
 | Kustannuslaskennan hallinta | Tehtävä     |
 | Kustannuslaskija         | Operations   |
-| Kustannuslaskijan apulainen   | Operations   |
+| Kustannuslaskijan apulainen   | Toiminnot   |
 | Kustannusobjektin vastuuhenkilö  | Tiimin jäsenet |
 
-Tässä ohjeaiheessa kerrotaan, miten **kustannusobjektin vastuuhenkilön** määritetään esimiehelle.
+Tässä artikkelissa kerrotaan, miten **kustannusobjektin vastuuhenkilön** määritetään esimiehelle.
 
 Kun **kustannusobjektin vastuuhenkilön** rooli on määritetty esimiehelle, tämä voi suorittaa seuraavat tehtävät:
 
@@ -95,7 +95,7 @@ Käyttöoikeusluettelohierarkian asetuksilla hallitaan seuraavilla alueilla näk
 
 > [!IMPORTANT]
 > - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - Tässä ohjeaiheessa käsitellään edellytykset, joita ilman **kustannusseurannan** työtilaa ei voi käyttää.
+> - Tässä artikkelissa käsitellään edellytykset, joita ilman **kustannusseurannan** työtilaa ei voi käyttää.
 
 Lisäresurssit
 

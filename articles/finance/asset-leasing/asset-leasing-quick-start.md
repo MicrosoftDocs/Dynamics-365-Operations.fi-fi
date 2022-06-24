@@ -1,6 +1,6 @@
 ---
 title: Omaisuuden leasingin aloittaminen
-description: Tässä ohjeaiheessa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä.
+description: Tässä artikkelissa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: df4343031b3b116318f798f31adb4d1f6bed1db9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895135"
 ---
 # <a name="asset-leasing-get-started"></a>Omaisuuden leasingin aloittaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä. Ohjeaiheessa myös määritellään käyttöliittymässä ja ohjeissa käytetyt termit. Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Microsoft Dynamics 365 Financessa. Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842). Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen. Omaisuuden leasing integroituu saumattomasti Dynamics 365 Financen komponentteihin, mukaan lukien käyttöomaisuuseriin, ostoreskontraan ja kirjanpitoon.
+Tässä artikkelissa käsitellään ominaisuuden leasingominaisuutta sekä opastetaan omaisuuden vuokrasopimuksen luomisessa ja kyseisten sopimusten tietojen näyttämisessä. Artikkelissa myös määritellään käyttöliittymässä ja ohjeissa käytetyt termit. Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Microsoft Dynamics 365 Financessa. Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842). Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen. Omaisuuden leasing integroituu saumattomasti Dynamics 365 Financen komponentteihin, mukaan lukien käyttöomaisuuseriin, ostoreskontraan ja kirjanpitoon.
 
 Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Etsi ja valitse **Ominaisuuksien hallinta** -työtilassa toiminto, jonka nimi on **Käyttöomaisuuden vuokraus** ja napsauta sitten **Ota käyttöön nyt** -painiketta.
 

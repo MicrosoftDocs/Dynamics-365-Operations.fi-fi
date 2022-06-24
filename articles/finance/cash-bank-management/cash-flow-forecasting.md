@@ -1,6 +1,6 @@
 ---
 title: Kassavirtaennusteet
-description: Tässä ohjeaiheessa on kassavirran ennusteprosessin yleiskatsaus. Siinä kerrotaan myös kassavirtaennusten integroinnista muihin järjestelmän moduuleihin.
+description: Tässä artikkelissa on kassavirran ennusteprosessin yleiskatsaus. Siinä kerrotaan myös kassavirtaennusten integroinnista muihin järjestelmän moduuleihin.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4979a57c966f25dba62a944a4e44086e5f6aed28
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c811afb0129b25a257bdc3519c511d70ecb44714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712534"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904669"
 ---
 # <a name="cash-flow-forecasting"></a>Kassavirtaennusteet
 
@@ -110,7 +110,7 @@ Lisätietoja: [Ulkoiset tiedot kassavirtaennusteissa](../../finance/finance-insi
 
 Versiossa 10.0.17 uusi ominaisuus mahdollistaa integroinnin projektinhallintaan ja kirjanpitoon sekä kassavirtaennusteisiin. Ota **Ominaisuuksien hallinta** -työtilassa käyttöön **Kassavirtaprojektin ennuste** -ominaisuus, jos haluat sisällyttää ennustetut kustannukset ja tuotot kassavirtaennusteeseen. Valitse **Kassavirtaennusteen asetukset** -sivun **Projektinhallinta ja kirjanpito** -välilehdessä projektityypit ja tapahtumatyypit, jotka sisällytetään kassavirtaennusteeseen. Valitse sitten projektin ennustemalli. Vähennystyypin alimalli toimii parhaiten. Myyntireskontra-asetuksiin syötettyjä maksuvalmiustilejä käytetään maksuvalmiustilien oletusarvona. Tämän vuoksi maksuvalmiustilejä ei tarvitse syöttää kassavirtaennustetta määrittäessä. Budjettimallia voidaan käyttää myös, mutta projektinhallinnan ja kirjanpidon **Kassavirtaennusteen asetukset** -sivulla voidaan valita vain yksi tyyppi. Ennustemalli tarjoaa eniten joustavuutta, kun käytetään projektinhallintaa ja kirjanpitoa tai Project Operationsia.
 
-Kun kassavirtaprojektin ennusteominaisuus on käytössä, kassavirtaennustetta voidaan tarkastella kunkin projektin osalta **Kaikki projektit** -sivulla. Valitse toimintoruudun **Suunnitelma**-välilehden **Ennuste**-ryhmässä **Kassavirtaennuste**. **Kassayhteenveto**-työtiloissa (katso myöhemmin tässä ohjeaiheessa [Raportointi](#reporting)-osa) projektin ennustetapahtumatyyppi näyttää sisäänvirtaukset (projektiennusteen tuotot) ja ulosvirtaukset (projektiennusteen kustannukset). Summat voidaan sisällyttää vain, jos **Kassayhteenveto**-työtilojen **Projektin vaihe** -kentän arvoksi on määritetty **Käsittelyssä**.
+Kun kassavirtaprojektin ennusteominaisuus on käytössä, kassavirtaennustetta voidaan tarkastella kunkin projektin osalta **Kaikki projektit** -sivulla. Valitse toimintoruudun **Suunnitelma**-välilehden **Ennuste**-ryhmässä **Kassavirtaennuste**. **Kassayhteenveto**-työtiloissa (katso myöhemmin tässä artikkelissa [Raportointi](#reporting)-osa) projektin ennustetapahtumatyyppi näyttää sisäänvirtaukset (projektiennusteen tuotot) ja ulosvirtaukset (projektiennusteen kustannukset). Summat voidaan sisällyttää vain, jos **Kassayhteenveto**-työtilojen **Projektin vaihe** -kentän arvoksi on määritetty **Käsittelyssä**.
 
 Projektitapahtumat sisältyvät kassavirtaennusteeseen edelleen monin tavoin riippumatta siitä, onko **Kassavirtaprojektin ennuste** -ominaisuus käytössä. Kirjatut projektilaskut sisällytetään ennusteeseen avoimien asiakastapahtumien osana. Projektista peräisin olevat myynti- ja ostotilaukset sisällytetään ennusteeseen avoimina tilauksina sen jälkeen, kun ne on viety järjestelmään. Voit myös siirtää projektiennusteet kirjanpidon budjettimalliin. Tämä kirjanpidon budjettimalli sisällytetään sitten kassavirtaennusteeseen budjettirekisterimerkintöjen osana. Jos **Kassavirtaprojektin ennuste** -ominaisuus on käytössä, älä siirrä projektiennusteita kirjanpidon budjettimalliin, koska tämä toiminto aiheuttaa projektiennusteiden laskemisen kahteen kertaan.
 

@@ -1,6 +1,6 @@
 ---
 title: Toiminnosta riippuvaisten ER-kohteiden määrittäminen
-description: Tässä aiheessa käsitellään lähteviä asiakirjoja luomaan määritetyn sähköisen raportoinnin (ER) muodon toiminnosta riippuvaisten kohteiden määrittämistä.
+description: Tässä artikkelissa käsitellään lähteviä asiakirjoja luomaan määritetyn sähköisen raportoinnin (ER) muodon toiminnosta riippuvaisten kohteiden määrittämistä.
 author: NickSelin
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876831"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Toiminnosta riippuvaisten ER-kohteiden määrittäminen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323976"
 
 [Kohteet](electronic-reporting-destinations.md) voidaan määrittää kullekin [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muodon [määrityksen](general-electronic-reporting.md#Configuration) tulosteosalle (kansio tai tiedosto), jota käytetään lähtevän asiakirjan luontiin. Tämän tyyppisen ER-muodon suorittavat käyttäjät, joilla on soveltuvat käyttöoikeudet, voivat myös muuttaa määritettyjä kohdeasetuksia suorituksen aikana.
 
-Microsoft Dynamics 365 Financen **versiossa 10.0.17 ja sitä uudemmissa versioissa** ER-muoto voidaan suorittaa [valmistelemalla](er-apis-app10-0-17.md) toimintokoodi, jonka käyttäjä suorittaa suorittamalla ER-muodon. Esimerkiksi **Myyntireskontra**-moduulin tulostuksen hallinta-asetuksissa voidaan valita ER-muoto, joka luo tietyn liiketoiminta-asiakirjan, kuten vapaatekstilaskun. Lasku voidaan sitten esikatsella valitsemalla **Näytä** tai lähettää tulostimeen valitsemalla **Tulosta**. Jos käyttäjän toiminto siirretään suoritettavaan ER-muotoon suorituksen aikana, eri käyttäjän toimien eri ER-kohteita voidaan määrittää. Tässä aiheessa käsitellään tämän tyyppisen ER-muodon ER-kohteiden määrittämistä.
+Microsoft Dynamics 365 Financen **versiossa 10.0.17 ja sitä uudemmissa versioissa** ER-muoto voidaan suorittaa [valmistelemalla](er-apis-app10-0-17.md) toimintokoodi, jonka käyttäjä suorittaa suorittamalla ER-muodon. Esimerkiksi **Myyntireskontra**-moduulin tulostuksen hallinta-asetuksissa voidaan valita ER-muoto, joka luo tietyn liiketoiminta-asiakirjan, kuten vapaatekstilaskun. Lasku voidaan sitten esikatsella valitsemalla **Näytä** tai lähettää tulostimeen valitsemalla **Tulosta**. Jos käyttäjän toiminto siirretään suoritettavaan ER-muotoon suorituksen aikana, eri käyttäjän toimien eri ER-kohteita voidaan määrittää. Tässä artikkelissa käsitellään tämän tyyppisen ER-muodon ER-kohteiden määrittämistä.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Toiminnosta riippuvaisten ER-kohteiden tuominen käyttöön
 
@@ -82,7 +82,7 @@ Seuraava kuva osoittaa, miten sama tulos saavutetaan myös määrittämällä ER
 
 Jos käyttäjän toiminnot valmistelleilla käyttäjillä on soveltuvat [käyttöoikeudet](electronic-reporting-destinations.md#security-considerations) määritettyjen kohdeasetusten muuttamiseen suorituksen aikana, ER-muotoa suoritettaessa avautuu valintaikkuna, jossa on vaihtoehto määritettyjen kohdeasetusten muuttamiseen. Tämä valintaikkuna on valinnainen, ja sen esiintyminen määräytyy sen mukaan, miten ER-muodon suorittamisen kutsuva ER-kehys on toteutettu. Jos tämä valintaikkuna avautuu, siinä olevat ER-kohteet otetaan käyttöön annetun käyttäjän toiminnon mukaisesti.
 
-Seuraavassa kuvassa on esimerkki **Sähköisen raportointimuodon kohteet** -valintaikkunasta, joka avautuu, kun vapaatekstilasku [kirjataan](../../../finance/accounts-receivable/create-free-text-invoice-new.md) ja **Vapaatekstilasku (Excel)** -ER-muoto suoritetaan luomaan tämä asiakirja, jos **Tulostin**-toiminto oli valmisteltu ja ER-kohteet oli määritetty tällä muodolla aiemmin tässä aiheessa kuvatulla tavalla.
+Seuraavassa kuvassa on esimerkki **Sähköisen raportointimuodon kohteet** -valintaikkunasta, joka avautuu, kun vapaatekstilasku [kirjataan](../../../finance/accounts-receivable/create-free-text-invoice-new.md) ja **Vapaatekstilasku (Excel)** -ER-muoto suoritetaan luomaan tämä asiakirja, jos **Tulostin**-toiminto oli valmisteltu ja ER-kohteet oli määritetty tällä muodolla aiemmin tässä artikkelissa kuvatulla tavalla.
 
 ![Valintaikkuna, jossa on vaihtoehto suoritettavan ER-muodon aluksi määritettyjen ER-kohteiden muuttamiseen.](./media/er-destination-action-dependent-02.gif)
 

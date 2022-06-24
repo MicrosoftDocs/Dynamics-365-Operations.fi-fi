@@ -1,6 +1,6 @@
 ---
 title: Työvoiman järjestäminen osastojen, töiden ja toimien avulla
-description: Tässä aiheessa käsitellään osastoja, töitä ja toimia koskevia käsitteellisiä tietoja. Ne ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa.
+description: Tässä artikkelissa käsitellään osastoja, töitä ja toimia koskevia käsitteellisiä tietoja. Ne ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa.
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 717bf7dcbd9a7e19a6dc960648655fdbd3e2465a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0cb4e745eb6531d90a02778ba85e6caf790f2d46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694820"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874272"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Työvoiman järjestäminen osastojen, töiden ja toimien avulla
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694820"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja. 
+Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä artikkelissa kuvataan elementtien käsitteellisiä tietoja. 
 
 Seuraavassa esimerkissä on kuvattu tässä artikkelissa käytettäviä käsitteitä.
 

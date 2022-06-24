@@ -1,6 +1,6 @@
 ---
 title: Henkilön nimen historia
-description: Tämä aiheessa on Henkilön nimen historia -yksikön tietoja ja sitä koskeva esimerkkikysely Dynamics 365 Human Resourcesissa.
+description: Tämä artikkelissa on Henkilön nimen historia -yksikön tietoja ja sitä koskeva esimerkkikysely Dynamics 365 Human Resourcesissa.
 author: twheeloc
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: db22a602c782cef15b6e5769b9c0726dff158160
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: e34b0d7bebd1c4037347161087ff3a4485a58878
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533595"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875768"
 ---
 # <a name="person-name-history"></a>Henkilön nimen historia
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533595"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa käsitellään Dynamics 365 Human Resourcesin Henkilön nimen historia -yksikköä.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin Henkilön nimen historia -yksikköä.
 
 Fyysinen nimi: mshr_dirpersonnamehistoricalentity.
 

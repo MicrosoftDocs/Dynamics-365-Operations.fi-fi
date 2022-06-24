@@ -1,6 +1,6 @@
 ---
 title: Poista esiintymä
-description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessista.
+description: Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessista.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 522989298544fa5a2c0812bc57e9ae4ae21fe250
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692363"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859630"
 ---
 # <a name="remove-an-instance"></a>Poista esiintymä
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessia.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessia.
 
 ## <a name="remove-a-test-drive-environment"></a>Testiympäristön poistaminen
 
@@ -40,7 +40,7 @@ Aiemmin luotu testausympäristö poistetaan. Kun se on poistettu, voit tilata uu
 
 ## <a name="remove-a-production-environment"></a>Tuotantoympäristön poistaminen
 
-Tässä aiheessa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. 
+Artikkelissa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. 
 
 Koska yksi Human Resources -ympäristö toimii yhden Power Apps-ympäristön sisällä, huomioon on otettava kaksi vaihtoehtoa. Ensimmäinen vaihtoehto poistaa koko Power Apps-ympäristön, ja toinen vaihtoehto vain Human Resources -sovelluksen. Ensimmäinen vaihtoehto on parempi, jos olet luonut Power Apps-ympäristön nimenomaan Human Resourcesin valmistelua varten ja olet vasta aloittanut käyttöönoton tai sinulla ei ole muodostettuja integraatioita. Toinen vaihtoehto on parempi, kun olet muodostanut Power Apps -ympäristön, johon täytettyjä monipuolisia tietoja hyödynnetään Power Apps- ja Power Automate -ratkaisuissa.
 

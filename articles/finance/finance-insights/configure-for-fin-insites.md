@@ -1,6 +1,6 @@
 ---
 title: Finance Insightsin määritykset
-description: Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
+description: Tässä artikkelissa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää.
 author: ShivamPandey-msft
 ms.date: 01/27/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac0f0cb078b6e202540fadbff337a01379febc8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710611"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861413"
 ---
 # <a name="configuration-for-finance-insights"></a>Finance Insightsin määritykset
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä ohjeaiheessa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää. Tämän aiheen menettelyjen onnistuminen edellyttää, että käytössä on järjestelmänvalvojan ja järjestelmän mukauttajan käyttöoikeudet [Power Portal -hallintakeskuksessa](https://admin.powerplatform.microsoft.com/), järjestelmänvalvojan käyttöoikeus Dynamics 365 Financessa sekä ympäristöjen luontioikeudet Microsoft Dynamics Lifecycle Servicesissa (LCS).
+Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen, Azuren ja AI Builderin kanssa. Yhdessä nämä tarjoavat tehokkaat ennustetyökalut organisaatiolle. Tässä artikkelissa kerrotaan, millaiset määritysvaiheet järjestelmässä on suoritettava, jotta Finance Insightsin ominaisuuksia voi käyttää. Tämän artikkelin menettelyjen onnistuminen edellyttää, että käytössä on järjestelmänvalvojan ja järjestelmän mukauttajan käyttöoikeudet [Power Portal -hallintakeskuksessa](https://admin.powerplatform.microsoft.com/), järjestelmänvalvojan käyttöoikeus Dynamics 365 Financessa sekä ympäristöjen luontioikeudet Microsoft Dynamics Lifecycle Servicesissa (LCS).
 
 > [!NOTE]
 > Seuraavat Finance Insightsin määrittämismenettelyt koskevat Dynamics 365 Financen versiota 10.0.21 ja sitä uudempia versioita.

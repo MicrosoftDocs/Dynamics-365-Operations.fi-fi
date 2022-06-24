@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693112"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868156"
 ---
 # <a name="configure-rates"></a>Hintojen määrittäminen
 
@@ -47,7 +47,7 @@ Käytä useisiin tekijöihin perustuvia hintoja määrittämään, kuinka paljon
    | **Voimassa** | Päivämäärä, jolloin hinta tulee voimaan. Nykyinen järjestelmän päivämäärä on oletusarvo. Tämän päivämäärän tulee olla etuusjaksolla tai sitä ennen. Hyvä käytäntö on asettaa tämä päivämäärä etuussuunnitelman päivämääräksi. |
    | **Vanhentumisaika** | Hinnan päättymispäivämäärä. 12/31/2154, (joka vastaa ei koskaan -arvoa) on oletusarvo. |
    | **Käytä tasoja** |  Käytä tätä kenttää, jos sinulla on logiikka, jota on käytettävä hinnan määrittämiseen. Jos hinnan on esimerkiksi noustava iän perusteella, valitse arvo tästä. Valitse **Yksi taso** yksitasoiselle etuuden hinnalle tai **Kaksi tasoa** kaksitasoiselle etuuden hinnalle. Kaksi tasoa on esimerkiksi sukupuoleen ja ikään perustuva taso. Kun olet valinnut arvon, valitse **Toiminnot** ja valitse sitten **Tasohinnat**. Jos kiinteä hinta ei muutu, jätä tämä kenttä tyhjäksi. |
-   | **Maksun toistuvuus** | Määritä, kuinka usein etuusvakuutusmaksu maksetaan etuuden tarjoajalle. Myöhemmin tässä ohjeaiheessa kuvatulla sivulla syöttämäsi hinnat perustuvat tässä määrittämääsi maksuväliin. Jos esimerkiksi kirjoitat tähän kenttään **Kuukausittain** ja kirjoitat työntekijämaksuksi **100** euroa, oletetaan, että etu maksaa työntekijälle 100 euroa kuukaudessa. Työntekijälle voidaan kuitenkin maksaa kaksi kertaa kuukaudessa työntekijätietueeseen määritettyjen etuuksien maksutiheyden perusteella. Tässä tapauksessa, kun työntekijä kirjautui **työntekijän itsepalveluun**, hänen maksamaansa summa on 50 euroa, koska **työntekijän itsepalvelun** näyttämä hinta perustuu työntekijän maksutiheyteen. |
+   | **Maksun toistuvuus** | Määritä, kuinka usein etuusvakuutusmaksu maksetaan etuuden tarjoajalle. Myöhemmin tässä artikkelissa kuvatulla sivulla syöttämäsi hinnat perustuvat tässä määrittämääsi maksuväliin. Jos esimerkiksi kirjoitat tähän kenttään **Kuukausittain** ja kirjoitat työntekijämaksuksi **100** euroa, oletetaan, että etu maksaa työntekijälle 100 euroa kuukaudessa. Työntekijälle voidaan kuitenkin maksaa kaksi kertaa kuukaudessa työntekijätietueeseen määritettyjen etuuksien maksutiheyden perusteella. Tässä tapauksessa, kun työntekijä kirjautui **työntekijän itsepalveluun**, hänen maksamaansa summa on 50 euroa, koska **työntekijän itsepalvelun** näyttämä hinta perustuu työntekijän maksutiheyteen. |
    | **Maksutiheyden asteen pyöristys** | Pyöristystavat ovat vakio-, katkaistu, normaali, alaspäin ja ylöspäin pyöristys. </br></br><ul><li>**Vakio** - Pyöristä aina ylöspäin. Esimerkiksi 10,611 pyöristetään 10,62:ksi. -10,231 pyöristetään -10,23:ksi. </li><li>**Katkaistu** - Pyöristä aina alaspäin. Esimerkiksi 10,619 pyöristetään 10,61:ksi. -10,231 pyöristetään -10,24:ksi. </li><li>**Normaali** - Desimaaliarvot, jotka päättyvät tai ovat suurempia kuin 5, pyöristyvät nollasta pois päin. Desimaaliarvot, jotka päättyvät enintään 4:ään pyöristetään nollaa kohti. Esimerkiksi 10,615 pyöristetään 10,62:ksi. -10,235 pyöristetään -10,24:ksi. 10,614 pyöristetään 10,61:ksi. -10,234 pyöristetään -10,23:ksi. </li><li>**Alaspäin** - Pyöristys nollaa kohti. Esimerkiksi 10,619 pyöristetään 10,61:ksi. -10,231 pyöristetään -10,23:ksi. </li><li>**Pyöristys ylös** - Pyöristys nollasta pois päin. Esimerkiksi 10,619 pyöristetään 10,62:ksi. -10,231 pyöristetään -10,24:ksi. |
    | **Tupakoimaton - työntekijän summa** | Summa, jonka edun toimittaja veloittaa tupakoimattomasta työntekijästä. Tämä on summa, jonka työnantaja maksaa edun tarjoajalle ja joka perustuu hinta-asetusten maksutiheyteen. |
    | **Tupakoimaton - työnantajan summa** | Summa, jonka edun toimittaja veloittaa tupakoimattomasta työntekijästä. Tämä on summa, jonka työnantaja maksaa edun tarjoajalle ja joka perustuu hinta-asetusten maksutiheyteen. |

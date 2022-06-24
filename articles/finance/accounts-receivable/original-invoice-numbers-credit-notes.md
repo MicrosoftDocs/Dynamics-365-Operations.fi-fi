@@ -1,6 +1,6 @@
 ---
 title: Viittaukset alkuperäisiin laskuihin hyvityslaskuissa
-description: Tässä aiheessa kerrotaan, miten liittyvissä hyvityslaskuissa määritetään ja tulostetaan alkuperäiset laskunumerot.
+description: Tässä artikkelissa kerrotaan, miten liittyvissä hyvityslaskuissa määritetään ja tulostetaan alkuperäiset laskunumerot.
 author: ilkond
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1362bf41416202631dc4b966338e8166b26a67f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ebfeb43aaf137ef336b460f340fbda50f5918d08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861528"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Viittaukset alkuperäisiin laskuihin hyvityslaskuissa
 
 [!include [banner](../includes/banner.md)]
 
 
-Joissakin maissa ja joillakin alueilla on lakisääteinen vaatimus, että tulostetut hyvityslaskut sisältävät viittauksia alkuperäisiin laskuihin. Tässä aiheessa kerrotaan, miten liittyvissä hyvityslaskuissa määritetään ja tulostetaan alkuperäiset laskunumerot.
+Joissakin maissa ja joillakin alueilla on lakisääteinen vaatimus, että tulostetut hyvityslaskut sisältävät viittauksia alkuperäisiin laskuihin. Tässä artikkelissa kerrotaan, miten liittyvissä hyvityslaskuissa määritetään ja tulostetaan alkuperäiset laskunumerot.
 
 ## <a name="prerequisites"></a>Edellytykset
 
 - Ota **Toimintohallinta**-työtilassa **Myynti- ja projektilaskuraporttien hyvityslaskutusasettelu** -ominaisuus käyttöön. Lisätietoja on kohdassa [Toiminnon hallinnan yleiskatsaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Tarvittavien tiedostojen tulostettavat muodot on konfiguroitava tulostuksenhallinnassa.
 
-Tässä ohjeaiheessa kuvatut toiminnot koskevat seuraavia asiakirjoja:
+Tässä artikkelissa kuvatut toiminnot koskevat seuraavia asiakirjoja:
 
 **Myyntireskontra**
 

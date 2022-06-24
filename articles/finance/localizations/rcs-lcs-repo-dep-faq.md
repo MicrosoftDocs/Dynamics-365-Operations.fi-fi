@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) -tallennustilan vanhentuminen
-description: Tässä aiheessa on tietoja Microsoft Dynamics Lifecycle Services (LCS) -tallennusvaraston poistosta, joka suunnitellaan osana Regulatory Configuration Service (RCS) -yleistietovaraston käyttöönottoa.
+description: Tässä artikkelissa on tietoja Microsoft Dynamics Lifecycle Services (LCS) -tallennusvaraston poistosta, joka suunnitellaan osana Regulatory Configuration Service (RCS) -yleistietovaraston käyttöönottoa.
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849728"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) -tallennustilan vanhentuminen
 
@@ -85,7 +85,7 @@ RCS käyttää *liitetyn sovelluksen* käsitettä. Liitetty sovellus muodostaa y
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Onko joitakin esimerkkejä, jotka näyttävät määritykset ja hallinnan?
 
-Esimerkkejä ei ole, mutta voit edellä tämän ohjeaiheen vaiheiden mukaisesti siirtääksesi konfiguraatiosi RCS:n yleistietovarastoon.
+Esimerkkejä ei ole, mutta voit edellä tämän artikkelin vaiheiden mukaisesti siirtääksesi konfiguraatiosi RCS:n yleistietovarastoon.
 
 ### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Onko RCS edellytys sähköisen raportoinnin määritykselle?
 

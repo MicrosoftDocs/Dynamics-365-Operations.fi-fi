@@ -1,6 +1,6 @@
 ---
 title: Luo tulostettavia FTI-lomakkeita
-description: Tässä ohjeaiheessa käsitellään, miten sähköisen raportoinnin (ER) runkoa käsitellään siten, että tulostettavan vapaatekstilaskun (FTI) lomakkeita luodaan Microsoft Office -asiakirjoina.
+description: Tässä artikkelissa käsitellään, miten sähköisen raportoinnin (ER) runkoa käsitellään siten, että tulostettavan vapaatekstilaskun (FTI) lomakkeita luodaan Microsoft Office -asiakirjoina.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be5e3ef0f6ecb3d8f911b5be5f8bc9102d201fd299425e847a2df233d9b4edf4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d4efbb46bbba2b139bbcf9b07c480a7e8669fd7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868826"
 ---
 # <a name="generate-printable-fti-forms"></a>Tulostettavien FTI-lomakkeiden luominen
 
 [!include[banner](../includes/banner.md)]
 
-Sähköisen raportoinnin (ER) runko sallii sinun luoda tulostettavan vapaatekstilaskun (FTI) lomakkeita Microsoft Office -asiakirjoina. Tässä aiheessa on tietoja siitä, miten voit luoda omia konfiguraatioita sekä tietoja käytettävissä olevien kokoonpanomallien yksityiskohdista.
+Sähköisen raportoinnin (ER) runko sallii sinun luoda tulostettavan vapaatekstilaskun (FTI) lomakkeita Microsoft Office -asiakirjoina. Tässä artikkelissa on tietoja siitä, miten voit luoda omia konfiguraatioita sekä tietoja käytettävissä olevien kokoonpanomallien yksityiskohdista.
 
 ## <a name="overview"></a>Yleiskuvaus
 
 Sen lisäksi, että voit olemassa olevan kyvyn avulla tulostaa FTI-lomakkeita käyttämällä Microsoft SQL Server Reporting Servicesiä (SSRS), voit nyt käyttää ER-runkoa. Voit hallita tulostettavia FTI-lomakkeita Microsoft Office Excelissä ja Wordissa. Voit myös muokata asettelua, tietojen kulkua ja muotoilua vaatimustesi mukaan muuttamatta koodia.
 
 > [!NOTE]
-> Jos haluat aloittaa yleiskuvalla tulostettavien FTI-lomakkeiden ratkaisun olemassa olevista ER-kokoonpanoista, voit siirtyä suoraan osioon **Lataa malli ER-konfiguraatioista tulostettavien FTI-lomakkeiden luomiseksi** myöhemmin tässä ohjeessa.
+> Jos haluat aloittaa yleiskuvalla tulostettavien FTI-lomakkeiden ratkaisun olemassa olevista ER-kokoonpanoista, voit siirtyä suoraan osioon **Lataa malli ER-konfiguraatioista tulostettavien FTI-lomakkeiden luomiseksi** myöhemmin tässä artikkelissa.
 
 ## <a name="create-customized-configurations-for-fti-printable-forms"></a>Luo muokatut kokoonpanot FTI-tulostettaville lomakkeille
 Osana räätälöityä ratkaisua tulostettaviin FTI-lomakkeisiin sinun on luotava joukko ER-kokoonpanoja.

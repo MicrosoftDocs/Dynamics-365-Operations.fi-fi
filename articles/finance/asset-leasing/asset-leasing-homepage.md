@@ -1,6 +1,6 @@
 ---
 title: Resurssin vuokrauksen aloitussivu
-description: Tässä ohjeaiheessa on yleiskatsaus resurssin vuokrauksen dokumentaatiosta ja linkit tiettyihin ohjeaiheisiin.
+description: Tässä artikkelissa on yleiskatsaus resurssin vuokrauksen dokumentaatiosta ja linkit tiettyihin ohjeaiheisiin.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889146"
 ---
 # <a name="asset-leasing-home-page"></a>Resurssin vuokrauksen aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen ohjeaiheet ja linkit tiettyihin ohjeaiheisiin. 
+Tässä artikkelissa kerrotaan resurssin vuokrauksen ohjeaiheet ja linkit tiettyihin ohjeaiheisiin. 
 
 Omaisuuden leasing on lisäominaisuus, jolla hallitaan, seurataan ja automatisoidaan vuokratun omaisuuden rahoitustapahtumia Microsoft Microsoft Dynamics 365 Financessa. Omaisuuden leasing noudattaa kansainvälisiä kirjanpitostandardeja (IFRS 16) ja US GAAP -standardeja (ASC 842). Omaisuuden leasing tallentaa ja käsittelee tärkeimmät vuokrasopimuksia koskevat tiedot ja auttaa luomaan kirjauskansiovientejä koko leasingsopimuksen elinkaaren ajan alkukirjaamisesta, ja kuukausittaisista kirjauskansiovienneistä arvonalennukseen ja leasingsopimuksen päättymiseen.
 
 Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää **Toimintojen hallinnan** työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Etsi ja valitse **Ominaisuuksien hallinta** -työtilassa toiminto, jonka nimi on **Käyttöomaisuuden vuokraus** ja napsauta sitten **Ota käyttöön nyt** -painiketta.
 
 ## <a name="asset-leasing-topics"></a>Resurssin vuokrauksen ohjeaiheet
-Seuraava ohjeaihe auttaa resurssin vuokrauksen määrittämisessä ja käyttämisessä. 
+Seuraava artikkeli auttaa resurssin vuokrauksen määrittämisessä ja käyttämisessä. 
 
- - [Resurssin vuokrauksen aloittaminen](asset-leasing-quick-start.md) – Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen yleisiä ominaisuuksia. Se sisältää myös ohjelmiston ja dokumentaation termit ja kertoo niistä.
+ - [Resurssin vuokrauksen aloittaminen](asset-leasing-quick-start.md) – Tässä artikkelissa kerrotaan resurssin vuokrauksen yleisiä ominaisuuksia. Se sisältää myös ohjelmiston ja dokumentaation termit ja kertoo niistä.
  
  ### <a name="set-up-asset-leasing"></a>Resurssin vuokrauksen määrittäminen
  Tämän ohjeaiheiden ryhmän avulla voit määrittää resurssin vuokrauksen tavalla, joka on optimaalinen organisaation liiketoimintatilanteen kannalta.  
@@ -77,7 +77,7 @@ Tämä ohjeaiheen ryhmä kuvaa vuokrasopimusten lisäämisen, maksujen luomisen,
  - [Vuokrauksen hallinta vuokrauksen tuonnin kehyksen kautta](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>Resurssin vuokrauksen raportoiminen
-Tässä ohjeaiheessa kerrotaan resurssin vuokrauksen käytettävissä olevat raportit. 
+Tässä artikkelissa esitellään resurssin vuokrauksen käytettävissä olevat raportit. 
 
  - [Resurssin vuokrauksen raportit](asset-leasing-rprts.md)
  

@@ -1,6 +1,6 @@
 ---
 title: Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
-description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä aiheessa käsitellään täsmäytysprosessia.
+description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financessa. Tässä artikkelissa käsitellään täsmäytysprosessia.
 author: moaamer
 ms.date: 06/22/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27956cbc4d51c1b907138b49947b57a570d98da1
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e5b229821fc1ca1caa55b733af293aaef65a171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727563"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859861"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
 [!include [banner](../includes/banner.md)]
 
-Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Dynamics 365 Financessa. Tässä aiheessa käsitellään täsmäytysprosessia.  
+Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Dynamics 365 Financessa. Tässä artikkelissa käsitellään täsmäytysprosessia.  
 
 ## <a name="import-an-electronic-bank-statement"></a>Tuo sähköinen tiliote
 

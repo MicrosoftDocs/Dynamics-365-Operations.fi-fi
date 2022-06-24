@@ -1,6 +1,6 @@
 ---
 title: Yksikön tietojen näyttäminen ja päivittäminen Excelissä
-description: Tässä aiheessa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla.
+description: Tässä artikkelissa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla.
 author: jasongre
 ms.date: 05/16/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
-ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
+ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2022
-ms.locfileid: "8762622"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862152"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Yksikön tietojen näyttäminen ja päivittäminen Excelissä 
 
@@ -31,7 +31,7 @@ ms.locfileid: "8762622"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-Tässä aiheessa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai taloushallinnon ja toimintojen sovelluksista.
+Tässä artikkelissa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai taloushallinnon ja toimintojen sovelluksista.
 
 Kun avaat yksikkötietoja Excelissä, voit tarkastella ja muokata nopeasti tietoja Excel-lisäosalla. Apuohjelman käyttö edellyttää vähintään versiota Microsoft Excel 2016.
 

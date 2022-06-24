@@ -1,6 +1,6 @@
 ---
 title: Prospektista käteiseksi -tietojen siirtäminen tietojen integrointiohjelmasta kaksoiskirjoitukseen
-description: Tässä aiheessa käsitellään Prospektista käteiseksi -tietojen siirtämistä tietojen integrointiohjelmasta kaksoiskirjoitukseen.
+description: Tässä artikkelissa käsitellään Prospektista käteiseksi -tietojen siirtämistä tietojen integrointiohjelmasta kaksoiskirjoitukseen.
 author: RamaKrishnamoorthy
 ms.date: 02/01/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894263"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Prospektista käteiseksi -tietojen siirtäminen tietojen integrointiohjelmasta kaksoiskirjoitukseen
 
 [!include [banner](../../includes/banner.md)]
 
-Tietojen integraattorille käytettävissä oleva Prospektista käteiseksi -ratkaisu ei ole yhteensopiva kaksoiskirjoituksen kanssa. Tämän syy on msdynce_AccountNumber-indeksi tilitaulussa, joka tuli osana Prospektista käteiseksi -ratkaisua. Jos tämä indeksi on olemassa, samaa asiakastilinumeroa ei voi luoda kahdessa eri yrityksessä. Voit joko aloittaa alusta kaksoiskirjoituksen kanssa siirtämällä Prospektista käteiseksi -tiedot tietojen integraattorista kaksoiskirjoitukseen tai voit asentaa viimeisimmän Prospektista käteiseksi -ratkaisun dorman-version. Tässä aiheessa kuvataan nämä molemmat vaihtoehdot.
+Tietojen integraattorille käytettävissä oleva Prospektista käteiseksi -ratkaisu ei ole yhteensopiva kaksoiskirjoituksen kanssa. Tämän syy on msdynce_AccountNumber-indeksi tilitaulussa, joka tuli osana Prospektista käteiseksi -ratkaisua. Jos tämä indeksi on olemassa, samaa asiakastilinumeroa ei voi luoda kahdessa eri yrityksessä. Voit joko aloittaa alusta kaksoiskirjoituksen kanssa siirtämällä Prospektista käteiseksi -tiedot tietojen integraattorista kaksoiskirjoitukseen tai voit asentaa viimeisimmän Prospektista käteiseksi -ratkaisun dorman-version. Tässä artikkelissa kuvataan nämä molemmat vaihtoehdot.
 
 ## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Asenna tietojen integroijan Prospektista käteiseksi -ratkaisun viimeisin dorman-versio
 
@@ -50,7 +50,7 @@ Prospektista käteiseksi -tiedot siirretään tietojen integrointiohjelmasta kak
 5. Luo kaksoiskirjoitusyhteys taloushallinnon ja toimintojen sovelluksen ja asiakkaan aktivointisovelluksen välille vähintään yhdessä yrityksessä.
 6. Ota kaksoiskirjoituksen taulujen yhdistämismääritykset käyttöön ja suorita tarvittavien viitetietojen ensimmäinen synkronointi. (Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).) Pakollisia tietoja ovat esimerkiksi asiakasryhmät, maksuehdot ja maksuaikataulut. Älä ota kaksoiskirjoituksen yhdistämismäärityksiä käyttöön tauluissa, jotka on alustettava. Tällaisia tauluja ovat esimerkiksi tili, tarjous, tarjousrivi, tilaus ja tilausrivi.
 7. Valitse asiakkaan aktivointisovelluksessa **Lisäsetukset \> Järjestelmäasetukset \> Tietojen hallinta \> Kaksoiskappaleiden tunnistussäännöt** ja poista kaikki säännöt käytöstä.
-8. Alusta vaiheessa 2 mainitut taulut. Lisätietoja on jäljempänä tässä aiheessa.
+8. Alusta vaiheessa 2 mainitut taulut. Lisätietoja on jäljempänä tässä artikkelissa.
 9. Avaa taloushallinnon ja toimintojen sovellus ja ota käyttöön taulujen yhdistämismääritykset, kuten tilin, tarjouksen, tarjousrivin, tilauksen ja tilausrivin taulujen yhdistämismääritykset. Suorita sitten ensimmäinen synkronointi. (Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).) Tämä prosessi synkronoi taloushallinnon ja toimintojen sovelluksen lisätiedot, kuten käsittelyn tilan, toimitus- ja laskutusosoitteet, toimipaikat ja varastot.
 
 ## <a name="account-table"></a>Tilitaulu
@@ -98,7 +98,7 @@ Koska **Tuotteet**-taulun tiedot on suunniteltu siirtymään vain yhteen suuntaa
 
 ## <a name="quote-and-quote-product-tables"></a>Tarjous- ja tarjoustuotetaulut
 
-Käytä **Tarjous**-taulun osalta tämän aiheen aiemmassa [Tilaustaulu](#order-table)-kohdassa annettuja ohjeita. Käytä **Tarjoustuote**-taulun osalta [Tilaustuotteet-taulu](#order-products-table)-kohdassa annettuja ohjeita.
+Käytä **Tarjous**-taulun osalta tämän artikkelin aiemmassa osassa [Tilaustaulu](#order-table) annettuja ohjeita. Käytä **Tarjoustuote**-taulun osalta [Tilaustuotteet-taulu](#order-products-table)-kohdassa annettuja ohjeita.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

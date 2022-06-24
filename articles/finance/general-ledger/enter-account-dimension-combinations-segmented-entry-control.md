@@ -1,6 +1,6 @@
 ---
 title: Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)
-description: Tässä aiheessa kerrotaan, miten tili- ja dimensioyhdistelmiä tai kirjanpitotilejä kirjataan. Kirjauskokokemusta sanotaan usein segmentoidun kirjauksen hallinnaksi.
+description: Tässä artikkelissa kerrotaan, miten tili- ja dimensioyhdistelmiä tai kirjanpitotilejä kirjataan. Kirjauskokokemusta sanotaan usein segmentoidun kirjauksen hallinnaksi.
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 779c455cb842fda941ce716eb644b9e3020f5e90
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 8bbe36bc42ca501cf3ff48aa4951a3959ea8056a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861355"
 ---
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten tili- ja dimensioyhdistelmiä tai kirjanpitotilejä kirjataan. Kirjauskokokemusta sanotaan usein segmentoidun kirjauksen hallinnaksi.
+Tässä artikkelissa kerrotaan, miten tili- ja dimensioyhdistelmiä tai kirjanpitotilejä kirjataan. Kirjauskokokemusta sanotaan usein segmentoidun kirjauksen hallinnaksi.
 
 Käyttäjät syöttävät tilien ja dimensioiden yhdistelmät eri sivuille, kuten kirjauskansioiden sivuille, budjetointiin ja kirjausmääritelmiin. Voimassaolevat tili- ja dimensioyhdistelmät riippuvat tilirakenteista, jotka on määritetty kirjanpidossa ja kehittyneistä säännöistä, jotka on määritetty tilirakenteisiin. Kun käyttäjät syöttävät yhdistelmän, he voivat joko syöttää arvot manuaalisesti tai hyödyntää syvää hakukokemusta. Kun syötät kenttään, voit aloittaa kirjoittamisen ja se etsii arvon ja kuvauksen. Esimerkiksi jos kirjoitat "180", se etsii kaikki arvot, jotka alkavat kyseisellä numerolla. Tai voit kirjoittaa "Maksu", ja se etsii kaikki arvot, joilla on kuvaus, joka alkaa merkkijonolla Maksu. Voit käyttää myös yleismerkkejä, kuten \*Maksu tai \*180, etsimiseen, jos arvo tai kuvaus sisältää hakuehdon. 
 

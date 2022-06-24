@@ -1,6 +1,6 @@
 ---
 title: Kustannusseurannan mobiilityötila
-description: Tässä ohjeaiheessa on tietoja kustannusseurannan mobiilityötilasta. Kustannuspaikan johtajat voivat käyttää työtilaa tarkastellakseen kustannuspaikan suorituskykytietoja milloin ja missä tahansa.
+description: Tässä artikkelissa on tietoja kustannusseurannan mobiilityötilasta. Kustannuspaikan johtajat voivat käyttää työtilaa tarkastellakseen kustannuspaikan suorituskykytietoja milloin ja missä tahansa.
 author: AndersGirke
 ms.date: 05/24/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 75d8abaeec85b46f0fd0e430040bc7e3a8fd3042
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 9e7d220639f5f3af26e892461928c646746963bb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811321"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874664"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Kustannusseurannan mobiilityötila
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Tässä ohjeaiheessa on tietoja **Kustannusseuranta**-mobiilityötilasta. Kustannuspaikan johtajat voivat käyttää työtilaa tarkastellakseen kustannuspaikan suorituskykytietoja milloin ja missä tahansa.
+Tässä artikkelissa on tietoja **kustannusseurannan** mobiilityötilasta. Kustannuspaikan johtajat voivat käyttää työtilaa tarkastellakseen kustannuspaikan suorituskykytietoja milloin ja missä tahansa.
 
 Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations (Dynamics 365) -mobiilisovelluksen kanssa.
 

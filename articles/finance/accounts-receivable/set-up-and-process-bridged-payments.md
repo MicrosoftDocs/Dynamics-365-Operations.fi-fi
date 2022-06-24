@@ -1,6 +1,6 @@
 ---
 title: Välitilitapahtumamaksujen määritykset ja käsittely
-description: Tässä ohjeaiheessa käsitellään asiakkaiden välitilimaksujen määrittämistä ja lisäämistä. Välitilimaksu on maksu, joka kirjataan kirjanpitoon kahdessa vaiheessa.
+description: Tässä artikkelissa käsitellään asiakkaiden välitilimaksujen määrittämistä ja lisäämistä. Välitilimaksu on maksu, joka kirjataan kirjanpitoon kahdessa vaiheessa.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca93d99ce04e607b137a2755d507022a33ab1be8
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887974"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Välitilitapahtumamaksujen määritykset ja käsittely
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734188"
 
 Välitilimaksu on maksu, joka kirjataan kirjanpitoon kahdessa vaiheessa. Tätä menetelmää käytetään yleensä silloin, kun maksutavaksi on määritetty **Pankki** ja tapahtumat on kirjattava pankkitilille vain, kun tapahtuma on tyhjentänyt pankin. Voit kuitenkin käyttää sitä myös kirjanpitotilinä. Tällöin järjestelmä siirtää summan päätililtä toiselle päätilille, kun välitilikirjaus käsitellään.
 
-Voit luoda välitilimaksuja joko ostoreskontrasta tai myyntireskontrasta. Vaikka tässä ohjeaiheessa kerrotaan, kuinka myyntisaamisten välitilikirjaus määritetään, ostoreskontratapahtumien vaiheet ovat samanlaiset.
+Voit luoda välitilimaksuja joko ostoreskontrasta tai myyntireskontrasta. Vaikka tässä artikkelissa kerrotaan, kuinka myyntisaamisten välitilikirjaus määritetään, ostoreskontratapahtumien vaiheet ovat samanlaiset.
 
 ## <a name="set-up-bridging-posting"></a>Välikirjausten määrittäminen
 

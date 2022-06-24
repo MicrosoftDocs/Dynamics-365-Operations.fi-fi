@@ -1,6 +1,6 @@
 ---
 title: Sähköinen laskutus (Egypti)
-description: Tässä aiheessa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen käytön Egyptissä Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa on tietoja, joiden avulla voit aloittaa sähköisen laskutuksen käytön Egyptissä Microsoft Dynamics 365 Financessa ja Dynamics 365 Supply Chain Managementissa.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: c2a46ef938c5dee62c0d0acd1648584df344c81a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904409"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Sähköinen laskutus (Egypti)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja, joiden avulla voit aloittaa Egyptin sähköisen laskutuksen käytön. Se opastaa Regulatory Configuration Servicesin (RCS) maa-/aluekohtaisissa määritysvaiheissa. Nämä vaiheet täydentävät [Sähköisen laskutuksen määritys](e-invoicing-set-up-overview.md) -kohdassa kuvattuja vaiheita.
+Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Egyptin sähköisen laskutuksen käytön. Se opastaa Regulatory Configuration Servicesin (RCS) maa-/aluekohtaisissa määritysvaiheissa. Nämä vaiheet täydentävät [Sähköisen laskutuksen määritys](e-invoicing-set-up-overview.md) -kohdassa kuvattuja vaiheita.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin voit aloittaa tämän ohjeaiheen vaiheita, seuraavien edellytysten on toteuduttava:
+Ennen kuin voit aloittaa tämän artikkelin vaiheita, seuraavien edellytysten on toteuduttava:
 
 - Tutustu sähköiseen laskutukseen, kuten [sähköisen laskutuksen yleiskatsauksessa](e-invoicing-service-overview.md) on kuvattu.
 - Rekisteröidy RCS:ään ja määritä sähköinen laskutus. Lisätietoja on seuraavissa aiheissa:

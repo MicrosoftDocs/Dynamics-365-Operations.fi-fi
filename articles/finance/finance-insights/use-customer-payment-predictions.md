@@ -1,6 +1,6 @@
 ---
 title: Asiakkaan maksuennusteiden käyttäminen
-description: Tässä ohjeaiheessa kerrotaan edellytyksistä ja vaiheista, jotka Finance Insightsin kokeiluversion käyttäminen edellyttää.
+description: Tässä artikkelissa kerrotaan edellytyksistä ja vaiheista, jotka Finance Insightsin kokeiluversion käyttäminen edellyttää.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 330642624b55a6772ef149b70873021401a6bd83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740621"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901399"
 ---
 # <a name="use-customer-payment-predictions"></a>Asiakkaan maksuennusteiden käyttäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten asiakkaan maksuennusteita käytetään. Ennen kuin käytät tätä toimintoa, varmista, että olet tehnyt sen määritysvaiheet. Lisätietoja on ohjeaiheessa [Asiakkaan maksuennusteiden käyttöönotto](enable-cust-paymnt-prediction.md).
+Tässä artikkelissa kerrotaan, miten asiakkaan maksuennusteita käytetään. Ennen kuin käytät tätä toimintoa, varmista, että olet tehnyt sen määritysvaiheet. Lisätietoja on ohjeaiheessa [Asiakkaan maksuennusteiden käyttöönotto](enable-cust-paymnt-prediction.md).
 
 Voit tarkastella asiakkaan maksuennusteita **Hallitse asiakkaan luotonvalvontaa** -työtilassa ja kahdella uudella luettelosivulla: **Tapahtuman maksuennusteet** ja **Asiakkaan maksuennusteet**.
 

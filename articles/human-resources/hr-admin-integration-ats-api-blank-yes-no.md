@@ -1,6 +1,6 @@
 ---
 title: Tyhjä Kyllä Ei
-description: Tässä aiheessa kuvataan Tyhjä Kyllä Ei -asetusjoukkoa Dynamics 365 Human Resourcesissa.
+description: Tässä artikkelissa kuvataan Tyhjä Kyllä Ei -asetusjoukkoa Dynamics 365 Human Resourcesissa.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2e0547c071f730a89f4d94a83690954caca07211
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 47c4f2ce308e3c32ddb540d19e1a346a3dc359ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068706"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868214"
 ---
 # <a name="blank-yes-no"></a>Tyhjä Kyllä Ei
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068706"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kuvataan Tyhjä Kyllä Ei -asetusjoukkoa Dynamics 365 Human Resourcesissa.
+Tässä artikkelissa kuvataan Tyhjä Kyllä Ei -asetusjoukkoa Dynamics 365 Human Resourcesissa.
 
 Fyysinen nimi: mshr_hrmblankyesno
 

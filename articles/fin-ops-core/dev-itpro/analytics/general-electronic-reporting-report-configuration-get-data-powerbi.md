@@ -1,6 +1,6 @@
 ---
 title: Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
-description: Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta esiintymästä Power BI -palveluihin.
+description: Tässä artikkelissa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta esiintymästä Power BI -palveluihin.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896731"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta esiintymästä Power BI -palveluihin. Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI -raportissa.
+Tässä artikkelissa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta esiintymästä Power BI -palveluihin. Tässä artikkelissa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI -raportissa.
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Microsoft Power BI on kokoelma ohjelmistopalveluita, sovelluksia ja yhdistimiä, jotka yhdessä muuttavat ulkoiset tietolähteet yhdenmukaiseksi, visuaalisesti mukaansatempaavaksi ja interaktiiviseksi tiedoksi. Sähköisen raportoinnin (ER) avulla in käyttäjät voivat helposti määrittää tietolähteet ja järjestää sovelluksen tietojen siirron Power BI -palveluun. Tiedot siirretään tiedostoina OpenXML-laskentataulukkomuodossa (Microsoft Excel -työkirjatiedostona). Siirretyt tiedostot tallennetaan Microsoft SharePoint Serveriin, joka on konfiguroitu tähän tarkoitukseen. Tallennettuja tiedostoja Power BI:ssa laadittaessa raportteja, jotka sisältävät visualisointeja (taulukot, kaaviot, kartat ja niin edelleen). Power BI -raportit jaetaan Power BI -käyttäjille, ja ne saadaan käyttöön Power BI -koontinäytöissä ja sovelluksen sivuilla. Tässä aiheessa esitellään seuraavat tehtävät:
+Microsoft Power BI on kokoelma ohjelmistopalveluita, sovelluksia ja yhdistimiä, jotka yhdessä muuttavat ulkoiset tietolähteet yhdenmukaiseksi, visuaalisesti mukaansatempaavaksi ja interaktiiviseksi tiedoksi. Sähköisen raportoinnin (ER) avulla in käyttäjät voivat helposti määrittää tietolähteet ja järjestää sovelluksen tietojen siirron Power BI -palveluun. Tiedot siirretään tiedostoina OpenXML-laskentataulukkomuodossa (Microsoft Excel -työkirjatiedostona). Siirretyt tiedostot tallennetaan Microsoft SharePoint Serveriin, joka on konfiguroitu tähän tarkoitukseen. Tallennettuja tiedostoja Power BI:ssa laadittaessa raportteja, jotka sisältävät visualisointeja (taulukot, kaaviot, kartat ja niin edelleen). Power BI -raportit jaetaan Power BI -käyttäjille, ja ne saadaan käyttöön Power BI -koontinäytöissä ja sovelluksen sivuilla. Tässä artikkelissa esitellään seuraavat tehtävät:
 
 - Määritä Microsoft Dynamics 365 Finance.
 - Sähköisen raportoinnin konfiguraation valmistelu Finance-sovelluksen tietojen noutoa varten.
@@ -38,7 +38,7 @@ Microsoft Power BI on kokoelma ohjelmistopalveluita, sovelluksia ja yhdistimiä,
 - Power BI -raportin valmistelu Finance-käyttöä varten.
 
 ## <a name="prerequisites"></a>Edellytykset
-Tämän aiheen esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
+Tämän artikkelin esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
 
 - Käyttöoikeudet seuraaville rooleille:
 

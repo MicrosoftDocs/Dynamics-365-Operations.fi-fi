@@ -1,6 +1,6 @@
 ---
 title: Loman rahaksi tai lomapalkan vapaaksi vaihtaminen
-description: Tässä aiheessa kuvataan vapaiden ostamista ja myymistä koskevien pyyntöjen lähettämistä Dynamics 365 Human Resourcesissa.
+description: Tässä artikkelissa kuvataan vapaiden ostamista ja myymistä koskevien pyyntöjen lähettämistä Dynamics 365 Human Resourcesissa.
 author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 695840516849dcfeb69895f6808d828d5878c59b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a6d38a69a73ce14f099beb6b6b560bf6c5686b0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875710"
 ---
 # <a name="buy-and-sell-leave"></a>Loman rahaksi tai lomapalkan vapaaksi vaihtaminen
 
 
 >[!Important]
->Tässä ohjeaiheessa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
+>Tässä artikkelissa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

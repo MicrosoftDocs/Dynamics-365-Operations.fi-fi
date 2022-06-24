@@ -1,6 +1,6 @@
 ---
 title: Tytäryhtiöiden tietojen tuominen tiedostoista
-description: Tässä aiheessa kerrotaan, kuinka tiedot ulkoisista järjestelmistä valmistellaan niin, että ne voidaan tuoda Microsoft Dynamics 365 Financeen.
+description: Tässä artikkelissa kerrotaan, kuinka tiedot ulkoisista järjestelmistä valmistellaan niin, että ne voidaan tuoda Microsoft Dynamics 365 Financeen.
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 045ecd6dfb95ccf38773293d44834531668ac1ff
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6886e2ee79ee9e4ccc067dc4f661c1eea646cfa6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846767"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Tytäryhtiöiden tietojen tuominen tiedostoista
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, kuinka tiedot ulkoisista järjestelmistä valmistellaan niin, että ne voidaan tuoda Microsoft Dynamics 365 Financeen. **Konsolidoi tuonnin kanssa** -sivun (**Konsolidoinnit \> Konsolidoi tuonnin kanssa**) avulla voit valmistella tytäryhtiöiden tietojen siirtämisen ulkoisista järjestelmistä.
+Tässä artikkelissa kerrotaan, kuinka tiedot ulkoisista järjestelmistä valmistellaan niin, että ne voidaan tuoda Microsoft Dynamics 365 Financeen. **Konsolidoi tuonnin kanssa** -sivun (**Konsolidoinnit \> Konsolidoi tuonnin kanssa**) avulla voit valmistella tytäryhtiöiden tietojen siirtämisen ulkoisista järjestelmistä.
 
 1. Luo tytäryhtiön yritys konsolidointia varten. Lisätietoja yritysten luomisesta on kohdassa [yrityksen luominen](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). Lisätietoja on kohdissa [Valmistele yritys, jota voidaan käyttää konsolidoinnissa](prepare-company-for-consolidation.md) ja [Määritä tytäryhtiö konsolidointia varten](set-up-subsidiary-company-for-consolidation.md).
 

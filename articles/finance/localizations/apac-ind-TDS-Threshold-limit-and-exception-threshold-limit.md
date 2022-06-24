@@ -1,6 +1,6 @@
 ---
 title: Raja-arvo ja poikkeusraja-arvo
-description: Tässä aiheessa kuvataan Vero vähennettynä lähteissä (TDS) raja- ja poikkeusraja-arvot.
+description: Tässä artikkelissa kuvataan Vero vähennettynä lähteissä (TDS) raja- ja poikkeusraja-arvot.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877933"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Raja-arvo ja poikkeusraja-arvo
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan Vero vähennettynä lähteissä (TDS) raja- ja poikkeusraja-arvot. Laskujen ja maksujen TDS-tiedot lasketaan aina ottaen huomioon **Ennakonpidätyksen komponentit** -sivulla TDS-verokomponenteille määritetty raja- ja poikkeusraja. TDS-verokomponentit liitetään TDS-verokoodeihin, jotka sisältyvät TDS-veroryhmiin. TDS-veroryhmät liitetään toimittajiin ja asiakkaisiin TDS:n laskemiseksi lasku- tai maksutasolla.
+Tässä artikkelissa kuvataan Vero vähennettynä lähteissä (TDS) raja- ja poikkeusraja-arvot. Laskujen ja maksujen TDS-tiedot lasketaan aina ottaen huomioon **Ennakonpidätyksen komponentit** -sivulla TDS-verokomponenteille määritetty raja- ja poikkeusraja. TDS-verokomponentit liitetään TDS-verokoodeihin, jotka sisältyvät TDS-veroryhmiin. TDS-veroryhmät liitetään toimittajiin ja asiakkaisiin TDS:n laskemiseksi lasku- tai maksutasolla.
 
 TDS lasketaan, jos tapahtuman summa tai tietylle toimittajan TDS-ryhmälle kirjatut kumulatiiviset tapahtumat ylittävät **Ennakonpidätyksen komponentit** -sivulla määritetyn raja-arvon. TDS-tietoja ei lasketa, ennen kuin kumulatiivinen tapahtuman summa ylittää määritetyn raja-arvon.
 

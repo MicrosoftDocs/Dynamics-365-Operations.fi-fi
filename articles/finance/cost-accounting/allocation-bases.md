@@ -1,6 +1,6 @@
 ---
 title: Kohdistusperusteet
-description: Tässä ohjeaiheessa on tietoja kohdistusperusteista. Kohdistusperusteet ovat kustannuslaskennan keskeisiä osia, ja niitä käytetään lähinnä yleiskustannusten kohdistamiseen.
+description: Tässä artikkelissa on tietoja kohdistusperusteista. Kohdistusperusteet ovat kustannuslaskennan keskeisiä osia, ja niitä käytetään lähinnä yleiskustannusten kohdistamiseen.
 author: AndersGirke
 ms.date: 05/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb50fe7d258bdd56529bc5d0ef55dae309d3edec
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 138a1a101610fc0f18ef3d8d2d3d336e5a48a1da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894081"
 ---
 # <a name="allocation-bases"></a>Kohdistusperusteet 
 
@@ -174,7 +174,7 @@ Kustannuslaskenta tukee tilastomittauskokoelmaa seuraavan tietoyhteyden avulla:
 - Tietojen hallinnan tuonti- ja vientityökalu
 - Tilastomittaukset
 
-Tilastomittausten saanti järjestelmästä edellyttää tilastomittauksen lähdemallin käyttöä. Lisätietoja on kohdassa Tilastomittauksen lähdemalli. (Linkki lisätään, kun ohjeaihe on kirjoitettu.)
+Tilastomittausten saanti järjestelmästä edellyttää tilastomittauksen lähdemallin käyttöä. Lisätietoja on kohdassa Tilastomittauksen lähdemalli. (Linkki lisätään, kun artikkeli on kirjoitettu.)
 
 **Tilastomittauksen lähdemallit**
 

@@ -1,6 +1,6 @@
 ---
 title: Mukautetun tallennustilan sijaintien määrittäminen luoduille asiakirjoille
-description: Tässä aiheessa käsitellään sähköisten raportointimuotojen (ER) muodostamien asiakirjojen tallennussijaintien luettelon laajentamista.
+description: Tässä artikkelissa käsitellään sähköisten raportointimuotojen (ER) muodostamien asiakirjojen tallennussijaintien luettelon laajentamista.
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898853"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Mukautetun tallennustilan sijaintien määrittäminen luoduille asiakirjoille
 
 [!include[banner](../includes/banner.md)]
 
-Sähköisen raportoinnin (ER) kehyksen ohjelmointirajapinnan avulla voit laajentaa ER-muotojen muodostamien asiakirjojen tallennussijaintien luetteloa. Tässä aiheessa selitetään, kuinka voit lisätä mukautetun tallennussijainnin muodostetuille tiedostoille delegoimalla ER-sijaintien luontitehtävän oletusarvoiselle kohdetehtaalle ja toteuttamalla sen jälkeen mukautetun luokan, jolla on oma kohdelogiikkansa.
+Sähköisen raportoinnin (ER) kehyksen ohjelmointirajapinnan avulla voit laajentaa ER-muotojen muodostamien asiakirjojen tallennussijaintien luetteloa. Tässä artikkelissa selitetään, kuinka voit lisätä mukautetun tallennussijainnin muodostetuille tiedostoille delegoimalla ER-sijaintien luontitehtävän oletusarvoiselle kohdetehtaalle ja toteuttamalla sen jälkeen mukautetun luokan, jolla on oma kohdelogiikkansa.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -35,7 +35,7 @@ Jatkuvaa koontia tukevan topologian ottaminen käyttöön. Lisätietoja on kohda
 
 Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden.
 
-Kaikki tämän aiheen tehtävät voidaan suorittaa **USMF**-yrityksessä.
+Kaikki tämän artikkelin tehtävät voidaan suorittaa **USMF**-yrityksessä.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>Tuo Kiinteiden resurssien eteenpäin siirtyvä ER-muoto
 

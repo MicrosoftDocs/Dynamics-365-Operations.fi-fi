@@ -1,6 +1,6 @@
 ---
 title: Keskitettyjen maksujen tilityksen yleiskatsaus
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Financen keskitettyjen maksujen tilitystä.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Financen keskitettyjen maksujen tilitystä.
 author: abruer
 ms.date: 08/02/2018
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 979938b7ed69ef745bf220c4d9a864c3c26b4841
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 5d5610b2a2fd62331c41ea9e1f25888128404f80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899868"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Keskitettyjen maksujen tilityksen yleiskatsaus
 

@@ -1,6 +1,6 @@
 ---
 title: Tuottojen ja kulujen lykkäykset tilauslaskutuksen aikana
-description: Tässä aiheessa kerrotaan, miten tuoton ja kulujen lykkäys määritetään tilauslaskutuksessa.
+description: Tässä artikkelissa kerrotaan, miten tuoton ja kulujen lykkäys määritetään tilauslaskutuksessa.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9a12cf52d904db0396aa9914b8e324060289710f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 209afd08c0c7e3cbd63ed95613b1d1dec94856f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908093"
 ---
 # <a name="revenue-and-expense-deferrals-in-subscription-billing"></a>Tuottojen ja kulujen lykkäykset tilauslaskutuksen aikana
 
-Tässä aiheessa kerrotaan, miten tuoton ja kulujen lykkäys määritetään ja miten sitä käytetään tilauslaskutuksessa. Lykkäysaikataulut perustuvat aina pohjana olevaan alkuasiakirjaan tai laskutusaikatauluun. Koska ne luodaan oletusarvojen perusteella, niitä ei voi syöttää eikä luoda erikseen.
+Tässä artikkelissa kerrotaan, miten tuoton ja kulujen lykkäys määritetään ja miten sitä käytetään tilauslaskutuksessa. Lykkäysaikataulut perustuvat aina pohjana olevaan alkuasiakirjaan tai laskutusaikatauluun. Koska ne luodaan oletusarvojen perusteella, niitä ei voi syöttää eikä luoda erikseen.
 
 Tuottojen ja kulujen lykkäysten määrittäminen ja käyttäminen tapahtuu useilla sivuilla:
 

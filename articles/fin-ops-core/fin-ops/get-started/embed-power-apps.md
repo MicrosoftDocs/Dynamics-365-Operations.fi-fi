@@ -1,6 +1,6 @@
 ---
 title: Power Appsin kaavasovellusten upottaminen
-description: Tässä ohjeaiheessa käsitellään Microsoft Power Appsin kaaviosovellusten upottamista asiakasohjelmaan laajentamaan tuotteen toimintoja.
+description: Tässä artikkelissa käsitellään Microsoft Power Appsin kaaviosovellusten upottamista asiakasohjelmaan laajentamaan tuotteen toimintoja.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065098"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898395"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Power Appsin kaavasovellusten upottaminen
 
@@ -33,7 +33,7 @@ Lisätietoja kaaviosovellusten upottamisesta on lyhyessä videossa [Kaaviosovell
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Upotetun Power Apps -kaaviosovelluksen lisääminen sivulle
 
-Ennen kuin Power Apps -kaaviosovellus voidaan upottaa asiakasohjelmaan, käyttäjän on ensin etsittävä tai luotava sovellus, jossa on toivotut visuaaliset elementit tai toiminnot. Tässä ohjeaiheessa ei ole yksityiskohtaista kuvausta sovellusten luontiprosessista. Jos Power Apps ei ole tuttu, tutustu [Power Apps -dokumentaatioon](/powerapps/).
+Ennen kuin Power Apps -kaaviosovellus voidaan upottaa asiakasohjelmaan, käyttäjän on ensin etsittävä tai luotava sovellus, jossa on toivotut visuaaliset elementit tai toiminnot. Tässä artikkelissa ei ole yksityiskohtaista kuvausta sovellusten luontiprosessista. Jos Power Apps ei ole tuttu, tutustu [Power Apps -dokumentaatioon](/powerapps/).
 
 Pohjaan perustuvan sovelluksen voi upottaa taloushallinnon ja toimintojen sovellukseen kolmella tavalla. Valinta voi siis perustua siihen, mikä tapa soveltuu parhaiten skenaarioon. 
 
@@ -60,7 +60,7 @@ Seuraavassa menettelyssä näytetään, miten pohjaan perustuva sovellus upoteta
 
     - Jos sovellusta käytetään **Power Apps** -valikkopainikkeella, **Power Apps** -valikkopainike voidaan valita vakiotoimintoruudussa, jonka jälkeen valitaan **Lisää sovellus**.
 
-3. Määritä upotettu sovellus. Lisätietoja on myöhemmin tämän aiheen kohdassa [Pohjaan perustuvan sovelluksen määrittäminen](#configuring-a-canvas-app).
+3. Määritä upotettu sovellus. Lisätietoja on myöhemmin tämän artikkelin [Pohjaan perustuvan sovelluksen määrittäminen](#configuring-a-canvas-app) -osassa.
 4. Valitse **Lisää** sen jälkeen, kun määrityksen oikeellisuus on tarkistettu.
 
     - Jos **Tallenna näkymät** -ominaisuus on poistettu käytöstä, upotettu sovellus näkyy sen jälkeen, selain on päivitetty.
@@ -76,7 +76,7 @@ Pohjaan perustuvan sovelluksen upottamista koontinäytöstä kannattaa harkita, 
 1. Avaa koontinäyttö.
 2. Pidä sivua valittuna (tai napsauta sitä hiiren kakkospainikkeella), valitse **Mukauta** ja valitse sitten **Lisää sivu**.
 3. Valitse **Lisää sivu** -ruudussa **Power Apps**.
-4. Määritä upotettu sovellus. Lisätietoja on myöhemmin tämän aiheen kohdassa [Pohjaan perustuvan sovelluksen määrittäminen](#configuring-a-canvas-app).
+4. Määritä upotettu sovellus. Lisätietoja on myöhemmin tämän artikkelin [Pohjaan perustuvan sovelluksen määrittäminen](#configuring-a-canvas-app) -osassa.
 5. Lisää sovellus koontinäyttöön uutena ruutuna valitsemalla **Tallenna**.
 6. Valitse koontinäytössä uusi ruutu ja vahvista, että pohjaan perustuva sovellus näkyy odotetulla tavalla.
 
@@ -86,7 +86,7 @@ Seuraavat parametrit on määritettävä pohjaan perustuvaa sovellusta upotettae
 
 - **Nimi** – Kirjoita teksti, joka näkyy upotetun sovelluksen sisältävässä painikkeessa tai välilehdessä. Sovelluksen nimi kannattaa ehkä toistaa tässä kentässä.
 - **Sovelluksen tunnus** – Määrittää upotettavan pohjaan perustuvan sovelluksen GUID-tunnuksen. Voit noutaa tämän arvon etsimällä sovelluksen sivustossa [make.powerapps.com](https://make.powerapps.com) ja siirtymällä sitten **Sovelluksen tunnus** -kenttään **Tiedot**-kohdassa.
-- **Sovelluksen syötekonteksti** – Lisäksi voidaan valita kenttä, joka sisältää sovellukselle syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla sovellus voi käyttää taloushallinnon ja toimintojen sovelluksista lähetettyjä tietoja, on jäljempänä tässä ohjeaiheessa kohdassa [Taloushallinnon ja toimintojen sovellusten tietoja hyödyntävän sovelluksen muodostaminen](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps).
+- **Sovelluksen syötekonteksti** – Lisäksi voidaan valita kenttä, joka sisältää sovellukselle syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla sovellus voi käyttää talous- ja toimintosovelluksista lähetettyjä tietoja, on jäljempänä tämän artikkelin [Talous- ja toimintosovellusten tietoja hyödyntävän sovelluksen muodostaminen](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) -osassa.
 
     Versiosta 10.0.19 alkaen nykyinen yritys välitetään pohjaan perustuvaan sovellukseen myös kontekstina **cmp**-URL-parametrin kautta. Tämä toiminta ei vaikuta pohjaan perustuvaan kohdesovellukseen, ennen kuin kyseisen sovellus käyttää kyseisiä tietoja.
 
@@ -145,7 +145,7 @@ Muokkaa upotetun sovelluksen konfiguraatiota näiden vaiheiden avulla:
 
 Upotetun sovelluksen poistamiseen sivulta tarvittaessa on muutamia tapoja:
 
-- Siirry **Muokkaa sovellusta** -ruutuun tämän ohjeaiheen aiemmin käsitellyn osan [Upotetun sovelluksen muokkaaminen](#editing-an-embedded-app) ohjeiden avulla. Vahvista, että ruudussa on sen upotetun sovelluksen tiedot, jonka haluat poistaa, ja valitse sitten **Poista**-painike.
+- Siirry **Muokkaa sovellusta** -ruutuun tämän artikkelin aiemmin käsitellyn [Upotetun sovelluksen muokkaaminen](#editing-an-embedded-app) -osan ohjeiden avulla. Vahvista, että ruudussa on sen upotetun sovelluksen tiedot, jonka haluat poistaa, ja valitse sitten **Poista**-painike.
 - Jos upotettu sovellus lisättiin koontinäytöstä, avaa koontinäyttö, valitse ja pidä pohjaan perustuvaan sovellukseen liitettyä ruutua valittuna (tai napsauta sitä hiiren kakkospainikkeella), valitse **Mukauta** ja valitse lopuksi **Poista sivu**. 
 - Koska upotettu sovellus on tallennettu mukautuksen tietoina, sivun mukautuksen tyhjentäminen poistaa myös kaikki sivulle upotetut sovellukset. Huomaa, että sivun mukautukset tyhjennetään pysyvästi. Tyhjennystä ei voi peruuttaa. Voit poistaa sivun mukautukset valitsemalla ensin **Asetukset**, sitten **Mukauta tämä sivu** ja lopuksi **Tyhjennä**-painike. Kaikki tämän sivun edelliset mukautukset poistetaan, kun selain päivitetään. Lisätietoja sivujen optimoinnista mukauttamisen avulla on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
 
@@ -153,7 +153,7 @@ Upotetun sovelluksen poistamiseen sivulta tarvittaessa on muutamia tapoja:
 
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Kehittäjä] Kaaviosovelluksen mallinnus lomakkeelle
 
-Vaikka tämä ohjeaihe keskittyy kaaviosovelluksen upottamiseen räätälöinnin kautta, kehittäjillä on myös mahdollisuus lisätä kaaviosovellus lomakkeeseen Visual Studio -kehityskokemusta käyttäen. Voit tehdä tämän lisäämällä lomakkeeseen PowerAppsHostControlin. Ohjausobjektin käytettävissä olevat metatietojen ominaisuudet tarjoavat samat ominaisuudet kuin personointikokemuskin.
+Vaikka tämä artikkeli keskittyy kaaviosovelluksen upottamiseen räätälöinnin kautta, kehittäjillä on myös mahdollisuus lisätä kaaviosovellus lomakkeeseen Visual Studio -kehityskokemusta käyttäen. Voit tehdä tämän lisäämällä lomakkeeseen PowerAppsHostControlin. Ohjausobjektin käytettävissä olevat metatietojen ominaisuudet tarjoavat samat ominaisuudet kuin personointikokemuskin.
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Kehittäjä] Määrittää, minne sovellus voidaan upottaa
 

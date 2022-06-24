@@ -1,6 +1,6 @@
 ---
 title: Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta
-description: Tässä ohjeaiheessa selitetään, miten sähköisiä raportointikokoonpanoja ladataan Configuration Service -palvelun yleisestä tietovarastosta.
+description: Tässä artikkelissa selitetään, miten sähköisiä raportointikokoonpanoja ladataan Configuration Service -palvelun yleisestä tietovarastosta.
 author: NickSelin
 ms.date: 06/02/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 4386e8fdbb2856d14d5b47ee5ab416c8d58b8d63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605328"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891901"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Lataa ER-konfiguraatiot konfigurointipalvelun yleisestä varastosta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](general-electronic-reporting.md#Configuration) ladataan palvelun yleisestä tietovarastosta. Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Tässä artikkelissa selitetään, miten määrityspalvelun yleisestä säilöstä ladataan [sähköisen raportoinnin määrityksiä](general-electronic-reporting.md#Configuration). Lisätietoja on kohdassa [Microsoft Dynamics 365 for Finance and Operations -Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Konfiguraatiosäilön avaaminen
 
@@ -80,7 +80,7 @@ Tässä ohjeaiheessa selitetään, miten [sähköisiä raportointikokoonpanoja](
     ![Konfigurointitietovarastosivu, Versiot-pikavälilehti, Tuo-painike.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
-> ER-asetusten mukaan määritykset tarkistetaan tuonnin jälkeen. Voit saada ilmoituksia havaituista epäyhtenäisyysongelmista. Ennen kuin voit käyttää tuotua konfiguraatioversiota, kyseiset ongelmat on ratkaistava. Lisätietoja saat tähän aiheeseen liittyvistä resursseista.
+> ER-asetusten mukaan määritykset tarkistetaan tuonnin jälkeen. Voit saada ilmoituksia havaituista epäyhtenäisyysongelmista. Ennen kuin voit käyttää tuotua konfiguraatioversiota, kyseiset ongelmat on ratkaistava. Lisätietoja saat tähän artikkeliin liittyvistä resursseista.
 
 > [!NOTE]
 > ER-konfiguraatiot voidaan määrittää riippuvaisiksi muista konfiguraatioista. Tämän vuoksi yhdessä valitun konfiguraation kanssa voidaan automaattisesti tuoda muita konfiguraatioita. Lisätietoja määritysten riippuvuuksista on kohdassa [ER-konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).

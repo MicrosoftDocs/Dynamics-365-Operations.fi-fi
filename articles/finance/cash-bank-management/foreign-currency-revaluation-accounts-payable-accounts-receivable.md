@@ -1,6 +1,6 @@
 ---
 title: Valuutan uudelleenarvostus osto- ja myyntireskontrassa
-description: Tässä aiheessa on tietoja ulkomaanvaluutan uudelleenarvostusprosessista, jonka avulla voidaan päivittää osto- ja myyntireskontran avoimien tapahtumien arvo.
+description: Tässä artikkelissa on tietoja ulkomaanvaluutan uudelleenarvostusprosessista, jonka avulla voidaan päivittää osto- ja myyntireskontran avoimien tapahtumien arvo.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713921"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906381"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Valuutan uudelleenarvostus osto- ja myyntireskontrassa
 
 [!include [banner](../includes/banner.md)]
 
-Valuuttakurssien vaihdellessa avoimien tapahtumien teoreettinen arvo (kirjanpitoarvo) ulkomaan valuuttana vaihtelee ajan myötä. Tässä aiheessa on tietoja ulkomaanvaluutan uudelleenarvostusprosessista, jonka avulla voidaan päivittää osto- ja myyntireskontran avoimien tapahtumien arvo. 
+Valuuttakurssien vaihdellessa avoimien tapahtumien teoreettinen arvo (kirjanpitoarvo) ulkomaan valuuttana vaihtelee ajan myötä. Tässä artikkelissa on tietoja ulkomaanvaluutan uudelleenarvostusprosessista, jonka avulla voidaan päivittää osto- ja myyntireskontran avoimien tapahtumien arvo. 
 
 Avoimien toimittajatapahtumien teoreettinen arvo, eli kirjanpitoarvo ulkomaan valuuttana vaihtelee ajan myötä, kun valuuttakurssit vaihtelevat. Voit päivittää osto- ja myyntireskontran avoimien tapahtumien arvon suorittamalla ulkomaanvaluutan uudelleenarvostusprosessin. Ulkomaanvaluutan uudelleenarvostuksen voi ajaa sekä osto- että myyntireskontrassa. Prosessi uudelleenarvostaa avoimet summat, eli selvittämättömät summat uudella vaihtokurssilla tiettynä päivänä. Alkuperäisten kirjattujen summien ja uudelleenarvostettujen summien väliset erot aiheuttavat toteutumattoman voiton tai tappion jokaiselle avoimelle tapahtumalle. Osto- ja myyntireskontran alareskontrat päivitetään sitten vastaamaan toteutumatonta voittoa tai tappiota, ja kirjanpidon tapahtuma kirjataan kirjanpitoon.
 

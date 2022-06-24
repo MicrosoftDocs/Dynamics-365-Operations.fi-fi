@@ -1,6 +1,6 @@
 ---
 title: Luo tekstimuotoinen lasku
-description: Tässä ohjeaiheessa käsitellään vapaatekstilaskuja.
+description: Tässä artikkelissa käsitellään vapaatekstilaskuja.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 87dc6334baa83ace23b77d94da4d1e464cb0b574
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878157"
 ---
 # <a name="create-a-free-text-invoice"></a>Luo tekstimuotoinen lasku
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään vapaatekstilaskuja. Tässä menettelyssä käytetään **USMF**-demoyritystä.
+Tässä artikkelissa käsitellään vapaatekstilaskuja. Tässä menettelyssä käytetään **USMF**-demoyritystä.
 
 ## <a name="create-a-free-text-invoice"></a>Luo tekstimuotoinen lasku
 
@@ -37,7 +37,7 @@ Tässä ohjeaiheessa käsitellään vapaatekstilaskuja. Tässä menettelyssä k�
     * Kun käytössä on SEPA-valtakirjat, suoraveloitusvaltakirja annetaan automaattisesti asiakastilin valinnan yhteydessä.
 
 4. Anna arvo **Kuvaus**-kentässä.
-5. Määritä **Päätili**-kenttään tilinumero, jolla ei ole dimensioita. Dimensioiden antaminen käsitellään myöhemmin tässä ohjeaiheessa.
+5. Määritä **Päätili**-kenttään tilinumero, jolla ei ole dimensioita. Dimensioiden antaminen käsitellään myöhemmin tässä artikkelissa.
 
     Voit kirjoittaa myös vähintään yhden päätilin merkin ja käyttää valintaa etsiessäsi tiliä.
 

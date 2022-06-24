@@ -1,6 +1,6 @@
 ---
 title: Jäljellä olevan käyttöajan tasapoisto
-description: Tässä aiheessa on yleiskuvaus jäljellä olevaan käyttöaikaan perustuvasta tasapoistomenetelmästä.
+description: Tässä artikkelissa on yleiskuvaus jäljellä olevaan käyttöaikaan perustuvasta tasapoistomenetelmästä.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726694"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853435"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Jäljellä olevan käyttöajan tasapoisto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on yleiskuvaus jäljellä olevaan käyttöaikaan perustuvasta tasapoistomenetelmästä.
+Tässä artikkelissa on yleiskuvaus jäljellä olevaan käyttöaikaan perustuvasta tasapoistomenetelmästä.
 
 Jos määrität käyttöomaisuudelle poistoprofiilin ja valitset **Tasapoisto - jäljellä oleva käyttöaika** -asetuksen **Poistoprofiilit**-sivun **Menetelmä** -kenttään, niiden käyttöomaisuuserien poisto, joille on määritetty tämä poistoprofiili, perustuu käyttöomaisuuden jäljelläoleviin käyttövuosiin. Tavallisesti poiston määrä on tällöin sama kullakin poistojaksolla. Jos haluat määrittää jäljellä olevaan käyttöaikaan perustuvan tasapoiston, valitse **Poistoprofiilit**-sivulla myös **Poistovuosi**- ja **Kausiväli**-kenttien asetukset. **Kausiväli**-kentän käytettävissä olevat vaihtoehdot vaihtelevat **Poistovuosi**-kentässä valitun arvon mukaan.
 
@@ -35,7 +35,7 @@ Voit valita **Poistoprofiilit**-sivulla **Poistovuosi**-kenttään joko **Kalent
 
 ### <a name="calendar"></a>Kalenteri
 
-Jos valitset **Kalenteri** **_Poistovuosi_*_ -kentässä, oletetaan vuosi 1.1.–31.12., vaikka olisit määrittänyt kirjanpidon vuosikalenterin eri tavalla. _* Kalneteri**-asetus päivittää poistokannan 1. tammikuuta joka vuosi. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
+Jos valitset **Kalenteri** **_Poistovuosi_*_ -kentässä, oletetaan vuosi 1.1.–31.12., vaikka olisit määrittänyt kirjanpidon vuosikalenterin eri tavalla. _* Kalneteri**-asetus päivittää poistokannan 1. tammikuuta joka vuosi. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Artikkelissa myöhemmin olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
 
 - **Vuosittain** kirjaa summan 31. joulukuuta.
 - **Kuukausittain** kirjaa kuukausikohtaisen poiston kunkin kuun lopussa.

@@ -1,6 +1,6 @@
 ---
 title: ALV-ilmoitus (Tanska)
-description: Tässä aiheessa kuvataan, miten ALV-ilmoitus määritetään ja luodaan Tanskassa ennakkoon.
+description: Tässä artikkelissa kuvataan, miten ALV-ilmoitus määritetään ja luodaan Tanskassa ennakkoon.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d4a1185fa3c3b059744018b6e4e195de07126c9
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: 666dc96cb169ab28ac3938299a3f245e3b4511ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862996"
 ---
 # <a name="vat-declaration-denmark"></a>ALV-ilmoitus (Tanska)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten ALV-ilmoitus määritetään Tanskassa ja näytetään esiversiona Microsoft Excelissä.
+Tässä artikkelissa kuvataan, miten ALV-ilmoitus määritetään Tanskassa ja näytetään esiversiona Microsoft Excelissä.
 
 Voit luoda raportin automaattisesti luomalla ensin tarpeeksi arvonlisäverokoodeja, jotta voit pitää erillisen ALV-kirjanpidon kutakin ennakko-ALV-ilmoituksen ruutua varten. Lisäksi ALV-ennakonpidätysilmoituksen sähköisen raportoinnin (ER) sovelluskohtaisten parametrien avulla arvonlisäverokoodit liitetään ALV-ilmoituksen ruutujen valintojen hakutuloksiin.
 
-Tanskaa varten on määritettävä **Raporttikentän haku**. Lisätietoja sovelluskohtaisten parametrien määrittämisestä on jäljempänä tässä ohjeaiheessa kohdassa [ALV-ilmoituskenttien sovelluskohtaisten parametrien määrittäminen](#set-up-application-specific-parameters).
+Tanskaa varten on määritettävä **Raporttikentän haku**. Lisätietoja sovelluskohtaisten parametrien määrittämisestä on jäljempänä tässä artikkelissa [ALV-ilmoituskenttien sovelluskohtaisten parametrien määrittäminen](#set-up-application-specific-parameters) -osassa.
 
 Seuraavassa taulukossa Hakutulos-sarakkeessa näkyy hakutulos, joka on määritetty valmiiksi tietylle ALV-ilmoitusriville ALV-ilmoitusmuodossa. Näiden tietojen avulla voit liittää arvonlisäverokoodit oikein hakutuloksiin ja sitten ALV-ilmoituksen riviin.
 
@@ -124,7 +124,7 @@ Seuraavia ohjeita noudattamalla voit määrittää, mitkä arvonlisäverokoodit 
 
     | Kenttä                  | Kuvaus                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Haun tulos          | Valitse raporttikentän arvo. Lisätietoja arvoista ja niiden määrityksestä ALV-ilmoitusriveille on tämän ohjeaiheen aiemmassa kohdassa [ALV-ilmoituksen yhteenveto](#vat-declaration-overview).                                                                                               |
+    | Haun tulos          | Valitse raporttikentän arvo. Lisätietoja arvoista ja niiden määrityksestä ALV-ilmoitusriveille on tämän artikkelin aiemmassa [ALV-ilmoituksen yhteenveto](#vat-declaration-overview) -osassa.                                                                                               |
     | Alv-koodi               | Valitse raporttikenttään liitettävä arvonlisäverokoodi. Valittua arvonlisäverokoodia käyttävät kirjatut verotapahtumat kerätään soveltuvassa ilmoitusruudussa. On suositeltavaa erotella arvonlisäverokoodit siten, että yksi arvonlisäverokoodi luo summia vain yhteen ilmoitusruutuun. |
     | Tapahtumaluokan valitsin | Jos olet luonut tarpeeksi arvonlisäverokoodeja ilmoitusruudun määrittämiseksi, valitse **\*Ei tyhjä\***. Jos et luonut tarpeeksi arvonlisäverokoodeja niin, että yksi arvonlisäverokoodi luo summia vain yhteen ilmoitusruutuun, voit määrittää tapahtumaluokan valitsimen. Seuraavat tapahtumaluokan valitsimet ovat käytettävissä:</br>-   **Osto**</br>-   **PurchaseExempt** (verovapaa osto)</br>-   **PurchaseReverseCharge** (oston käänteisen kulun verosaatavat)</br>-   **Myynti**</br>-   **SalesExempt** (veroton myynti)</br>-   **SalesReverseCharge** (oston käänteisen kulun tai myynnin käänteisen kulun maksettava vero)</br>-   **Käyttövero**. </br>Lisäksi kutakin tapahtumaluokan valitsinta varten on käytettävissä hyvityslaskun luokan valitsin. Yksi näistä luokan valitsimista on esimerkiksi **PurchaseCreditNote** (ostohyvityslasku).</br>Luo jokaiselle arvonlisäverokoodille kaksi riviä: yksi, jolla on tapahtumaluokan valitsimen arvo ja toinen, jolla on tapahtumaluokan valitsin hyvityslaskun arvoa varten. |
 
@@ -212,7 +212,7 @@ Tietopaketti sisältää sähköisen sanoman asetuksia, joita käytetään ALV-i
 
 ## <a name="generate-a-vat-declaration-from-electronic-messages"></a>ALV-ilmoituksen muodostaminen sähköisistä sanomista
 
-Kun muodostat raportin sähköisten viestien avulla, voit kerätä verotietoja useista yrityksistä. Lisätietoja on tässä ohjeaiheessa jäljempänä kohdassa [ALV-ilmoituksen suorittaminen useille yrityksille](#run-vat-declaration).
+Kun muodostat raportin sähköisten viestien avulla, voit kerätä verotietoja useista yrityksistä. Lisätietoja on tässä artikkelissa jäljempänä [ALV-ilmoituksen suorittaminen useille yrityksille](#run-vat-declaration) -osassa.
 
 Seuraavat vaiheet koskevat sähköisen sanoman käsittelyesimerkkiä, jonka olet tuonut aiemmin LCS:n jaetusta käyttöomaisuuskirjastosta.
 
@@ -224,12 +224,12 @@ Seuraavat vaiheet koskevat sähköisen sanoman käsittelyesimerkkiä, jonka olet
    > [!NOTE]
    > Vaiheet 5-7 ovat valinnaisia.
 
-5. Valinnainen: Valitse **Sanomat**-pikavälilehdessä **Kerää tiedot** ja valitse sitten **OK**. Aiemmin luodut arvonlisäveromaksut lisätään sanomaan. Lisätietoja on osassa [Tilitä ja kirjaa arvonlisävero](#settle-and-post-sales-tax) aiemmin tässä aiheessa. Jos ohitat tämän vaiheen, voit silti luoda ALV-ilmoituksen käyttämällä **Veroilmoituksen versio** -kenttää **Ilmoitus**-valintaikkunassa.
+5. Valinnainen: Valitse **Sanomat**-pikavälilehdessä **Kerää tiedot** ja valitse sitten **OK**. Aiemmin luodut arvonlisäveromaksut lisätään sanomaan. Lisätietoja on tämän artikkelin aiemmassa [Tilitä ja kirjaa arvonlisävero](#settle-and-post-sales-tax) -osassa. Jos ohitat tämän vaiheen, voit silti luoda ALV-ilmoituksen käyttämällä **Veroilmoituksen versio** -kenttää **Ilmoitus**-valintaikkunassa.
 6. Valinnainen: Tarkista **Sanomanimikkeet**-pikavälilehdessä käsittelyyn siirretyt arvonlisäveromaksut. Oletusarvon mukaan kaikki valitun kauden arvonlisäveromaksut, jotka eivät sisälly saman käsittelyn muihin sanomaan, sisällytetään mukaan.
 7. Valinnainen: Tarkista arvonlisäveromaksut valitsemalla **Alkuperäinen tiedosto**. Voit myös sulkea arvonlisäveromaksut pois käsittelystä valitsemalla **Poista**. Jos ohitat tämän vaiheen, voit silti luoda ALV-ilmoituksen käyttämällä **Veroilmoituksen versio** -kenttää **Ilmoitus**-valintaikkunassa.
 8. Valitse **Sanomat**-pikavälilehdessä **Päivitä tila**. Valitse **Päivitä tila** -valintaikkunassa **Valmis luotavaksi** ja valitse sitten **OK**. Vahvista, että sanoman tilaksi tulee **Valmis luotavaksi**.
 9. Valitse **Luo raportti**. Voit esikatsella ALV-ilmoituksen summia valitsemalla **Suorita käsittely** -valintaikkunassa **Esikatsele raporttia** ja valitsemalla sitten **OK**.
-10. Aseta **Sähköisen raportoinnin parametrit** -valintaikkunassa kentät kuten on kuvattu osiossa [Esikatsele arvonlisäveroilmoitusta Excelissä Raportoi myyntivero tilikauden määräaikaistehtävästä](#preview-vat-excel) aiemmin tähän aiheeseen ja valitse sitten **OK**.
+10. Aseta **Sähköisen raportoinnin parametrit** -valintaikkunassa kentät, kuten on kuvattu tämän artikkelin aiemmassa [Esikatsele arvonlisäveroilmoitusta Excelissä Raportoi myyntivero tilikauden määräaikaistehtävästä](#preview-vat-excel) -osassa **OK**.
 11. Valitse sivun oikeasta yläkulmasta **Liitteet**-painike (paperiliitinsymboli) ja avaa tiedosto valitsemalla **Avaa**. Tarkista Excel-tiedoston summat.
 
 ## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a><a name="run-vat-declaration"></a>ALV-ilmoituksen suorittaminen useille yrityksille

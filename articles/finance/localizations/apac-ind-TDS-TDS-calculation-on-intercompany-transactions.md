@@ -1,6 +1,6 @@
 ---
 title: TDS-laskenta konserniyritysten välisille tapahtumille
-description: Tässä aiheessa kuvataan prosessia, jota käytetään konserniyritysten välisten tapahtumien Vero vähennettynä lähteissä (TDS) -laskemiseen vaiheittain.
+description: Tässä artikkelissa kuvataan prosessia, jota käytetään konserniyritysten välisten tapahtumien Vero vähennettynä lähteissä (TDS) -laskemiseen vaiheittain.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 381b00c64e3e3a09a245c82cbe1f1599986a49aa
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c27bea997804f2c5eff6be2b20064b272ccd062f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726974"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888970"
 ---
 # <a name="tds-calculation-on-intercompany-transactions"></a>TDS-laskenta konserniyritysten välisille tapahtumille
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan prosessia, jota käytetään konserniyritysten välisten tapahtumien Vero vähennettynä lähteissä (TDS) -laskemiseen vaiheittain.
+Tässä artikkelissa kuvataan prosessia, jota käytetään konserniyritysten välisten tapahtumien Vero vähennettynä lähteissä (TDS) -laskemiseen vaiheittain.
 
 Kun konsernin sisäinen ostotilaus tai myyntitilaus luodaan, asiakkaalle tai toimittajalle määritettyä TDS-oletusryhmää käytetään TDS-summan laskemiseen. TDS-summa kirjataan palautetuille ostoreskontratileille laskun kirjaamisen jälkeen.
 

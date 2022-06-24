@@ -1,6 +1,6 @@
 ---
 title: Kaksoiskirjoituksen yleiskatsaus
-description: Tässä aiheessa on kaksoiskirjoituksen yleiskatsaus, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja taloushallinnon ja toimintojen sovellusten välillä.
+description: Tässä artikkelissa on kaksoiskirjoituksen yleiskatsaus, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja talous- ja toimintosovellusten välillä.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f39322a0c2ef50ef2bbeb256c80096e0687c4642
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2ef4fb1a51bd92db440841eb2a9d9ebcce0e1b1d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061331"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872937"
 ---
 # <a name="dual-write-overview"></a>Kaksoiskirjoituksen yleiskatsaus
 
@@ -73,7 +73,7 @@ Kaksoiskirjoitus luo yhdistämismäärityksen taloushallinnon ja toimintojen sov
 
 Kaksoiskirjoitus mahdollistaa tietojen integroinnin Microsoft Dynamics 365 -sovelluksissa Tämä luotettava kehys linkittää ympäristöt ja mahdollistaa erilaisten liiketoimintasovellusten käyttämisen yhdessä. Seuraavassa kerrotaan tärkeimmät syyt kaksoiskirjoituksen käyttämiseksi:
 
-+ Kaksoiskirjoitus mahdollistaa tiiviisti yhdistetyn ja lähes reaaliaikaisen kaksisuuntaisen integroinnin taloushallinnon toimintojen sovellusten ja asiakasvuorovaikutussovellusten välillä. Tämä integraatio tekee Microsoft Dynamics 365:stä yhden pysähdyksen kaupan kaikille liiketoimintasovelluksille. Asiakkaat, jotka käyttävät Dynamics 365 Finance- ja Dynamics 365 Supply Chain Management -sovellusta, mutta jotka käyttävät asiakkuudenhallintaan (CRM) jotain muuta kuin Microsoftin ratkaisua, siirtyvät kohti Dynamics 365:ttä sen kaksoiskirjoitustuen vuoksi.
++ Kaksoiskirjoitus mahdollistaa tiiviisti yhdistetyn ja lähes reaaliaikaisen kaksisuuntaisen integroinnin taloushallinnon toimintojen sovellusten ja asiakasvuorovaikutussovellusten välillä. Tämä integraatio tekee Microsoft Dynamics 365:stä yhden pysähdyksen kaupan kaikille liiketoimintasovelluksille. Asiakkaat, jotka käyttävät Dynamics 365 Financea ja Dynamics 365 Supply Chain Managementia, mutta jotka käyttävät asiakkuudenhallintaan (CRM) jotain muuta kuin Microsoftin ratkaisua, siirtyvät kohti Dynamics 365:ttä sen kaksoiskirjoitustuen vuoksi.
 + Asiakkaiden, tuotteiden, toimintojen, projektien ja esineiden internetin tiedot siirtyvät automaattisesti Dataverseen kaksoiskirjoituksen kautta. Tämä yhteys on hyödyllinen yrityksille, jotka ovat kiinnostuneita Power Platform -laajennuksista.
 + Kaksoiskirjoitusinfrastruktuuri noudattaa kooditonta / vähäisen koodin periaatetta. Vakiomuotoisten taulukosta taulukkoon -määritysten ja mukautettujen määritysten laajentamisessa ei tarvita paljon kehitystyötä.
 + Kaksoiskirjoitus tukee sekä online- että offline-tilaa. Microsoft on ainoa yritys, joka tarjoaa tukea online-ja offline-tilassa.

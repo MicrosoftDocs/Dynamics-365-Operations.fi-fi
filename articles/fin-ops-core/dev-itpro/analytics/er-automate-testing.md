@@ -1,6 +1,6 @@
 ---
 title: Testauksen automatisointi sähköisen raportoinnin avulla
-description: Tässä ohjeaiheessa käsitellään sähköisen raportointi- eli ER-kehyksen perustoiminnolla tapahtuvaa toimintojen automaattista testaamista.
+description: Tässä artikkelissa käsitellään sähköisen raportointi- eli ER-kehyksen perustoiminnolla tapahtuvaa toimintojen automaattista testaamista.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892766"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Testauksen automatisointi sähköisen raportoinnin avulla
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten sähköisen raportointi- eli ER-kehyksellä automatisoidaan joidenkin toimintojen testaus. Ohjeaiheen esimerkin avulla näytetään, miten toimittajan maksujen käsittely automatisoidaan.
+Tässä artikkelissa selitetään, miten sähköisen raportointi- eli ER-kehyksellä automatisoidaan joidenkin toimintojen testaus. Artikkelin esimerkin avulla näytetään, miten toimittajan maksujen käsittely automatisoidaan.
 
 Sovellus luo ER-kehyksen avulla maksutiedostot ja vastaavat asiakirjat toimittajan maksujen käsittelyn aikana. ER-kehys sisältää tietomallin, mallien yhdistämismääritykset ja muoto-osia, jotka tukevat eri maksutyyppien maksujen käsittelyä ja eri muotoisten asiakirjojen luontia. Nämä osat voi ladata Microsoft Dynamics Lifecycle Servicesistä (LCS) ja tuoda esiintymään.
 
@@ -54,15 +54,15 @@ Tehotoimintakäyttäjät voivat suorittaa käyttäjän hyväksyntä- ja integroi
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten on toteuduttava:
+Ennen kuin voit suorittaa tämän artikkelin tehtäviä, seuraavien edellytysten on toteuduttava:
 
 - Ota käyttöön testauksen automatisointia tukeva topologia. Sinulla on oltava tämän topologiaesiintymän **Järjestelmänvalvoja**-rooli. Topologian on sisällettävä tässä esimerkissä käytettävät demotiedot. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto ja käyttäminen](../perf-test/continuous-build-test-automation.md).
-- Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT:in asentamisesta ja määrittämisestä toimimaan Finance and Operations -sovellusten ja Azure DevOpsin kanssa on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
+- Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT-työkalun asentamisesta ja sen määrittämisestä Finance and Operations -sovelluksissa ja Azure DevOpsissa käytettäväksi on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
 
     ![RSAT-asetukset.](media/GER-Configure.png "Näyttökuva RSAT-asetukset-valintaikkunasta")
 
 - Voit varmistaa testitapausten oikean suoritusjärjestyksen järjestämällä testitapaukset sarjoiksi. Voit kerätä tällä tavoin testauksen suorituslokeja lisäraportointia ja perehtymistä varten. Tätä varten tarvitaan käyttöönotetun topologian Azure DevOpsin käyttöoikeus.
-- Tämän ohjeaiheen esimerkin suorittamista varten kannattaa ladata [RSAT-testien ER-käyttö](https://go.microsoft.com/fwlink/?linkid=874684). Tämä zip-tiedosto sisältää seuraavat tehtäväoppaat:
+- Tämän artikkelin esimerkin suorittamista varten kannattaa ladata [RSAT-testien ER-käyttö](https://go.microsoft.com/fwlink/?linkid=874684). Tämä zip-tiedosto sisältää seuraavat tehtäväoppaat:
 
     | Sisältö                                           | Tiedoston nimi ja sijainti |
     |---------------------------------------------------|------------------------|

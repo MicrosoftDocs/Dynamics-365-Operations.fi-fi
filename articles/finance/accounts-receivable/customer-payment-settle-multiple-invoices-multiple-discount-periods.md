@@ -1,6 +1,6 @@
 ---
 title: Useita alennuskausia kattavien laskujen tilittäminen yhdellä maksulla
-description: Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, miten käteisalennukset voivat vaihdella maksuajankohdan mukaan.
+description: Tässä artikkelissa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, miten käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5187835da33d729e50aad9c813d8753d240fb81
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e6035973abea9dacd4b6d4d8bf2fd3c7d6b10fb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727619"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872641"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Useita alennuskausia kattavien laskujen tilittäminen yhdellä maksulla
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, miten käteisalennukset voivat vaihdella maksuajankohdan mukaan.
+Tässä artikkelissa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, miten käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 
 Fabrikam myy tavaroita asiakkaalle 4032. Fabrikam tarjoaa 1 prosentin käteisalennuksen, jos lasku maksetaan 14 päivän kuluessa. Fabrikam myöntää käteisalennukset myös osamaksuista. Tilityksen parametrit sijaitsevat **Myyntireskontran parametrit** -sivulla.
 

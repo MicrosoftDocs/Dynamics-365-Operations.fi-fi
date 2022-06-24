@@ -1,6 +1,6 @@
 ---
 title: ALV-/GST-mallin käänteinen veloitusmekanismi
-description: Tässä ohjeaiheessa kerrotaan, miten käänteinen arvonlisävero määritetään Euroopan maissa, Saudi-Arabiassa ja Singaporessa.
+description: Tässä artikkelissa kerrotaan, miten käänteinen arvonlisävero määritetään Euroopan maissa, Saudi-Arabiassa ja Singaporessa.
 author: epodkolz
 ms.date: 10/05/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 4176f8e853b7d7c2acc1044cab33371202f10c4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594716"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861259"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>ALV-/GST-mallin käänteinen veloitusmekanismi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan yleinen tapa määrittää käänteisen veloituksen toiminto maissa/alueilla, jotka käyttävät ALV-tai GST-malleja.
+Tässä artikkelissa kuvataan yleinen tapa määrittää käänteisen veloituksen toiminto maissa/alueilla, jotka käyttävät ALV-tai GST-malleja.
                                                                                  
 Toiminnon saatavuutta maassa/alueella hallitaan seuraavilla **Ominaisuuksien hallinta** -työtilan ominaisuuksilla.
 
@@ -33,7 +33,7 @@ Toiminnon saatavuutta maassa/alueella hallitaan seuraavilla **Ominaisuuksien hal
 | Muiden maiden käänteinen   veloitus            | Bahrain  </br>Kuwait  </br>Oman  </br>Qatar                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Ota ALV/GST-veromallin käänteisen verovelvollisuuden mekanismi   käyttöön | Kaikki muut maat/alueet   lukuun ottamatta seuraavia:  </br>Brasilia  </br>Intia  </br>Venäjä                                                                                                                                                                                                                                                                                                                                                                                         |
  
- Lisätietoja on tämän aiheen kohdassa [ALV-/GST-malliominaisuuden käänteisen veloitusmekanismin ottaminen käyttöön](#enable-reverse-charge).
+ Lisätietoja on tämän artikkelin osassa [ALV-/GST-malliominaisuuden käänteisen veloitusmekanismin ottaminen käyttöön](#enable-reverse-charge).
 
 Käänteinen vero on veromalli, jossa ALV:n kirjanpito- ja raportointivastuu siirtyy myyjältä tavaran ja/tai palvelun ostajalle. Tämän vuoksi tavaroiden ja/tai palvelujen vastaanottaja ilmoitta ALV-ilmoituksessa sekä maksettavan veron (myyjän roolissa) että vähennettävän veron (ostajan roolissa)
 

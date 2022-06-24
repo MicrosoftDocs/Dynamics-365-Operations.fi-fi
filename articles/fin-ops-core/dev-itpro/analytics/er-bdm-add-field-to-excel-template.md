@@ -1,6 +1,6 @@
 ---
 title: Uusien kenttien lisääminen liiketoiminta-asiakirjamalliin Microsoft Excelissä
-description: Tässä ohjeaiheessa on tietoja uusien kenttien lisäämisestä liiketoiminta-asiakirjamalliin Microsoft Exceliin liiketoiminta-asiakirjojen hallintatoiminnolla.
+description: Tässä artikkelissa on tietoja uusien kenttien lisäämisestä liiketoiminta-asiakirjamalliin Microsoft Exceliin liiketoiminta-asiakirjojen hallintatoiminnolla.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767239"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869399"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Uusien kenttien lisääminen liiketoiminta-asiakirjamalliin Microsoft Excelissä
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767239"
 
 Voit lisätä uusia kenttiä malliin, jolla luodaan lMicrosoft Excel -muotoisia liiketoiminta-asiakirjoja. Nämä kentät voidaan lisätä paikkamerkkeinä, joiden avulla muodostettuihin asiakirjoihin täytetään tarvittavat tiedot sovelluksesta. Voit määrittää jokaiseen lisättävään kenttään myös sidonnan tietolähteisiin. Tällä tavoin määritetään, mitä sovelluksen tietoja lisätään kenttään, kun liiketoiminta-asiakirjoja luodaan mallin avulla.
 
-Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin. Tämä esimerkki näyttää, miten malli päivitetään täyttämään luotavien vapaatekstilaskujen lomakkeiden kenttiä.
+Saat lisätietoja tästä toiminnosta suorittamalla tämän artikkelin esimerkin. Tämä esimerkki näyttää, miten malli päivitetään täyttämään luotavien vapaatekstilaskujen lomakkeiden kenttiä.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>Mallien muokkaaminen liiketoiminta-asiakirjojen hallinnan avulla
 
 Koska liiketoiminta-asiakirjojen hallinta (BDM) perustuu [sähköisen raportoinnin (ER) yleiskatsauksen](general-electronic-reporting.md) kehykseen, tarvittavat ER- ja BDM-parametrit on määritettävä ennen liiketoiminta-asiakirjojen hallinnan käytön aloittamista.
 
-1.  Kirjaudu Microsoftin Dynamics 365 Financen esiintymään järjestelmänvalvojana.
-2.  Suorita seuraavat ohjeaiheen [Liiketoiminta-asiakirjojen hallinnan yleiskatsaus](er-business-document-management.md) esimerkin vaiheet:
+1.  Kirjaudu Microsoft Dynamics 365 Financen esiintymään järjestelmänvalvojana.
+2.  Suorita seuraavat artikkelin [Liiketoiminta-asiakirjojen hallinnan yleiskatsaus](er-business-document-management.md) esimerkin vaiheet:
 
     1.  Määritä ER-parametrit.
     2.  Ota liiketoiminta-asiakirjojen hallinta käyttöön.
@@ -64,7 +64,7 @@ Lisätietoja ER-määritysten tuonnista on kohdassa [ER-konfiguraation elinkaare
 5.  Kirjoita **Otsikko**-kenttään uuden mallin otsikoksi **Vapaatekstilasku (Excel) Contoso**.
 6.  Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
-BDM-mallieditorin sivu avautuu. Voit muokata valittua mallia verkossa upotetun ohjausobjektin avulla käyttämällä Microsoft 365:ttä.
+BDM-mallieditorin sivu avautuu. Voit muokata valittua mallia verkossa upotetun ohjausobjektin avulla käyttämällä Microsoft 365:tä.
 
 ![BDM-mallieditorin sivu.](./media/BDM-AddFldExcel-EditableTemplate.png)
 
@@ -148,7 +148,7 @@ Päivitetty malli näkyy **Liiketoiminta-asiakirjojen hallinnan** työtilan oike
 2.  Valitse ensin lasku **FTI-00000002** ja sitten **Tulostuksenhallinta**.
 3.  Laajenna vasemmassa ruudussa **Moduuli - Myyntireskontra \> Asiakirjat \> Vapaatekstilasku**.
 4.  Määritä käsiteltävien laskujen vaikutusalue valitsemalla **Vapaatekstilasku**-kohdassa **Alkuperäinen tiedosto** -taso.
-5.  Valitse oikeasta ruudusta ensin **Raportin muoto** -kenttä ja sitten määritetyn asiakirjatason **Vapaatekstilasku (Excel) Contoso** -malli.
+5.  Valitse oikeassa ruudussa ensin **Raportin muoto** -kenttä ja sitten määritetyn asiakirjatason **Vapaatekstilasku (Excel) Contoso** -malli.
 
     ![Vapaatekstilasku (Excel) Contoso -malli valittuna.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 

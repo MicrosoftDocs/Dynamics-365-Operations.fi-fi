@@ -1,6 +1,6 @@
 ---
 title: Ehdokkaiden työhönotto
-description: Tässä aiheessa käsitellään ehdokkaiden työhönottoa Dynamics 365 Human Resourcesissa.
+description: Tässä artikkelissa käsitellään ehdokkaiden työhönottoa Dynamics 365 Human Resourcesssa.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 743c78d3526db2707630229d4cf21531f9641dd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879247"
 ---
 # <a name="recruit-job-candidates"></a>Ehdokkaiden työhönotto
 
@@ -47,11 +47,12 @@ Jos haluat lähettää työhönottopyyntöjä henkilöstöhallinnon työhönotto
 
 Kun ominaisuudet on otettu käyttöön, valitse toiminnot seuraavasti: 
 1. Valitse **Henkilöstöhallinto** > **Asetukset** > **Henkilöstöhallintoparametrit**.
-2. Määritä  **Työhönotto** -välilehdessä **Työhönotto pois käytöstä** -kentän arvoksi **Ei**.
-3. Valitse avattavassa **Työhönottokokemus** -luettelossa **HR-työhönotto**.   
+2. Määritä  **Työhönotto** -välilehdessä **Työhönotto käytössä** -kentän arvoksi **Kyllä**.
+3. Valitse avattavassa **Työhönottokokemus** -luettelossa **HR-työhönotto**.  
+4. Valitse **Tallenna**. 
 
 > [!Note] 
-> Kun **HR-työhönotto** on valittuna, **Työhönottoprojektit** (vanha) ovat vain luku -muodossa. 
+> Kun **HR-työhönotto** on valittuna, **Työhönottoprojektit** (vanha) eivät ole käytettävissä. 
 
 
 ## <a name="add-a-recruiting-request-location"></a>Työhönottopyynnön sijainnin lisääminen

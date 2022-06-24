@@ -1,6 +1,6 @@
 ---
-title: ER-muodon parametrien määrittäminen yrityskohtaisesti
-description: Tässä ohjeaiheessa käsitellään sähköisen raportoinnin (ER) muodon parametrien yrityskohtaista määrittämistä.
+title: Sähköisen raportoinnin muodon parametrien määrittäminen yrityskohtaisesti
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) muodon parametrien yrityskohtaista määrittämistä.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dbcf968dde432da182b5bd2d6a7bcb9f83dad6fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644496"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890209"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>ER-muodon parametrien määrittäminen yrityskohtaisesti
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644496"
 
 Näiden vaiheiden suorittaminen edellyttää, että ensin on suoritettu aiheen [ER-muotojen määrittäminen käyttämään yrityskohtaisesti määritettyjä parametreja](er-app-specific-parameters-configure-format.md) vaiheet.
 
-Tässä ohjeaiheessa olevien esimerkkien suorittaminen edellyttää jonkin seuraavan roolin Microsoft Dynamics 365 Finance -käyttöoikeutta:
+Tässä artikkelissa olevien esimerkkien suorittaminen edellyttää jonkin seuraavan roolin Microsoft Dynamics 365 Finance -käyttöoikeutta:
 
 - Sähköisen raportoinnin kehittäjä
 - Sähköisen raportoinnin toiminnallinen konsultti
@@ -221,7 +221,7 @@ ER-muodon sovelluskohtaiset parametrit ovat yrityskohtaisia. Yhdelle yritykselle
 
 Tällä tuonti-vienti-menetelmällä voit siirtää myös yhteen Financen esiintymään määritettyjä ER-muotoon liittyviä sovelluskohtaisia parametreja toiseen Financen esiintymään.
 
-Jos määrität sovelluskohtaiset parametrit yhdelle ER-muotoa versiolle ja tuot myöhemmin saman muodon myöhemmän version kulloiseenkin Finance-esiintymään, aiemmin luotuja sovelluskohtaisia parametreja ei käytetä tuodussa versiossa, ellet käytä **Käytä sovelluskohtaisia parametreja sähköisen raportoinnin muotojen aiemmista versioista** -ominaisuutta. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Aiemmin luotujen parametrien käyttäminen uudelleen](#reuse-existing-parameters).
+Jos määrität sovelluskohtaiset parametrit yhdelle ER-muotoa versiolle ja tuot myöhemmin saman muodon myöhemmän version kulloiseenkin Finance-esiintymään, aiemmin luotuja sovelluskohtaisia parametreja ei käytetä tuodussa versiossa, ellet käytä **Käytä sovelluskohtaisia parametreja sähköisen raportoinnin muotojen aiemmista versioista** -ominaisuutta. Lisätietoja on myöhemmin tässä artikkelissa osassa [Aiemmin luotujen parametrien käyttäminen uudelleen](#reuse-existing-parameters).
 
 Kun valitset tuotavan tiedoston, kyseisen tiedoston sovelluskohtaisten parametrien rakennetta verrataan vastaavan tuotavaksi valitun ER-muodon **Haku**-tyypin tietolähteiden rakenteeseen. Oletusarvoisesti tuonti suoritetaan vain, jos kunkin sovelluskohtaisen parametrin rakenne vastaa vastaavan tietolähteen rakennetta tuotavaksi valitussa ER-muodossa. Jos rakenteet eivät vastaa toisiaan, saat varoitussanoman, jonka mukaan tuontia ei vois suorittaa. Jos pakotat tuonnin, valitun ER-muodon aiemmin luodut sovelluskohtaiset parametrit tyhjennetään ja ne on määritettävä alusta alkaen.
 

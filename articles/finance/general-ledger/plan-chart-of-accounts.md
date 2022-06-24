@@ -1,6 +1,6 @@
 ---
 title: Tilikartan suunnittelu
-description: Tässä ohjeaiheessa on tietoja, joiden avulla voit suunnitella organisaation tilikartan.
+description: Tässä artikkelissa on tietoja, joiden avulla voit suunnitella organisaation tilikartan.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734276a736cfdb91ec3a129c83dae1c0a6d3955
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722461"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853345"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Tilikartan suunnittelu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja, joiden avulla voit suunnitella organisaation tilikartan.
+Tässä artikkelissa on tietoja, joiden avulla voit suunnitella organisaation tilikartan.
 
 Seuraa ja ylläpidä taloushallinnon tietoja organisaatiossa määrittämällä tilikartta. Se on tilikokoelma, joka määrittää taloudellisen kehikon. Voit parantaa näiden tilien tapahtumien seurantaa lisäämällä segmenttejä. Näitä segmenttejä kutsutaan taloushallinnon dimensioiksi. Kulutili saattaa sisältää esimerkiksi taloushallinnon dimensiot nimeltä osasto, kustannuspaikka ja tarkoitus. Käyttäjän määrittämät säännöt määrittävät, miten nämä taloushallinnon dimensiot liitetään päätileihin ja muihin taloushallinnon dimensioihin sekä miten tapahtumat kirjataan. Käyttäjän määrittämä sääntöjä kutsutaan myös tilirakenteeksi ja lisäsäännöiksi.
 

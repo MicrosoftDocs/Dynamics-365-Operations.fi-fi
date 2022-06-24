@@ -1,6 +1,6 @@
 ---
 title: Tietueiden ryhmittely ja laskelmien kokoaminen GROUPBY-tietolähteiden avulla
-description: Tässä ohjeaiheessa kerrotaan GROUPBY-tietolähteiden käytöstä sähköisessä raportoinnissa (ER).
+description: Tässä artikkelissa kerrotaan GROUPBY-tietolähteiden käytöstä sähköisessä raportoinnissa (ER).
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b79dfe62122a031ae9ed7f51ea7ff578cd47358
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 7b20b5db0794157560f27f15594a84083966642f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462294"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861784"
 ---
 # <a name="group-records-and-aggregate-calculations-by-using-groupby-data-sources"></a>Tietueiden ryhmittely ja laskelmien kokoaminen GROUPBY-tietolähteiden avulla
 
@@ -69,7 +69,7 @@ Lisätietoja tästä ominaisuudesta saa suorittamalla seuraavan esimerkin.
 
 Tämä esimerkki osoittaa, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolin omaava käyttäjä voi määrittää **GROUPBY**-tietolähdettä käyttävän ER-muotomäärityksen sekä miten tällä tavoin lasketaan koostefunktioita ja ryhmitellään tietueita. Tämän mallimäärityksen avulla tulostetaan valvontaraportti, kun Intrastat-ilmoitus luodaan. Tämän raportin avulla voit tarkistaa raportoidut Intrastat-tapahtumat.
 
-Tässä esimerkissä ohjeaiheessa käsitellyt toimenpiteet voidaan suorittaa **DEMF**-yrityksessä Microsoft Dynamics 365 Financessa. 
+Tässä esimerkissä ohjeaiheessa käsitellyt toimenpiteet voidaan suorittaa  **DEMF**-yrityksessä Microsoft Dynamics 365 Financessa. 
 
 ### <a name="prepare-sample-data"></a>Näytetietojen valmisteleminen
 

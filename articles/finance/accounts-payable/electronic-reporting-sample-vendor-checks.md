@@ -1,6 +1,6 @@
 ---
-title: Sähköisen raportoinnin toimittajan mallisekit
-description: Tässä ohjeaiheessa on yleisiä tietoja sähköisen raportoinnin mallisekkimuotojen käyttämisestä.
+title: Toimittajan näytesekkien sähköinen raportointi
+description: Tässä artikkelissa on yleisiä tietoja sähköisen raportoinnin mallisekkimuotojen käyttämisestä.
 author: sunfzam
 ms.date: 06/14/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38a037903a994f6212f4ccce10e10c795eb7364d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d2b26a083540924d2368a298632aea90ecf95e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908180"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Sähköisen raportoinnin toimittajan mallisekit
 
@@ -28,7 +28,7 @@ Voit muotoilla toimittajan sekkejä sähköisellä raportoinnilla. Markkinoilla 
 
 ## <a name="what-check-formats-are-currently-supported"></a>Mitä sekkimuotoja tuetaan tällä hetkellä?
 
-Tarkista Microsoft Dynamics Lifecycle Servicesin (LCS) jaetusta omaisuuskirjastosta luettelo tämän hetkisistä käytettävistä olevista tiedostoista, joiden tyyppi on **GER-määritys**. Seuraavassa Määritettävät asetukset -osiossa on linkki ohjeaiheeseen, jossa kerrotaan, miten luodaan LCS-säilö käytettävissä olevien määritysten tarkastelua varten ja tuodaan valitut määritykset.
+Tarkista Microsoft Dynamics Lifecycle Servicesin (LCS) jaetusta omaisuuskirjastosta luettelo tämän hetkisistä käytettävistä olevista tiedostoista, joiden tyyppi on **GER-määritys**. Seuraavassa Määritettävät asetukset -osiossa on linkki artikkeliin, jossa kerrotaan, miten luodaan LCS-säilö käytettävissä olevien määritysten tarkastelua varten ja tuodaan valitut määritykset.
 
 Microsoft Dynamics 365 Finance sisältää mallimuodon, jossa sekki on ensin ylhäällä ja sitten seuraavana on kaksi maksusuoritusosaa. Siinä on myös mallimuoto, jossa sekki on keskellä kahden maksusuoritusosan välissä. Nämä mallimuodot vastaavat Deluxe-yrityssekkimuotoja.
 

@@ -1,6 +1,6 @@
 ---
 title: Sähköisen laskutuksen määritys
-description: Tämä ohjeaihe sisältää yhteenvedon sähköisen laskutuksen määritys- ja konfigurointiprosessista.
+description: Tämä artikkeli sisältää yhteenvedon sähköisen laskutuksen määritys- ja konfigurointiprosessista.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 8e2aa89119530a0ba00a8561d94006285d67a71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883116"
 ---
 # <a name="electronic-invoicing-setup"></a>Sähköisen laskutuksen määritys
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää yhteenvedon sähköisen laskutuksen määritys- ja konfigurointiprosessista. Asennusvaiheet on suoritettava tässä määritetyssä järjestyksessä. Jos vaihe on pakollinen, mutta ohitat sen, toiminto ei toimi oikein, ja useita virheitä tapahtuu seuraavien vaiheiden aikana tai toimintoa käytettäessä. 
+Tämä artikkeli sisältää yhteenvedon sähköisen laskutuksen määritys- ja konfigurointiprosessista. Asennusvaiheet on suoritettava tässä määritetyssä järjestyksessä. Jos vaihe on pakollinen, mutta ohitat sen, toiminto ei toimi oikein, ja useita virheitä tapahtuu seuraavien vaiheiden aikana tai toimintoa käytettäessä. 
 
 Varmista ennen aloittamista, että kaikki pääkomponentit on määritetty oikein, että olet rekisteröitynyt Regulatory Configuration Serviceen (RCS) ja että sinulla on RCS-esiintymä ja että sähköisen laskutuksen lisäosa on asennettu Microsoft Dynamics 365 Finance- tai Dynamics 365 Supply Chain Management -ympäristöäsi varten. Lisätietoja: [Sähköisen laskutuksen rekisteröiminen ja asennus](e-invoicing-install-add-in-microservices-lcs.md).
 
