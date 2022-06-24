@@ -1,6 +1,6 @@
 ---
 title: Valmistele yritys konsolidointiprosessia varten
-description: Konsolidoinnin aikana kerätään tapahtumia useilta yrityksen tileiltä yhteen yrityksen tilien joukkoon. Tässä ohjeaiheessa kerrotaan, miten yritys valmistellaan konsolidointia varten.
+description: Konsolidoinnin aikana kerätään tapahtumia useilta yrityksen tileiltä yhteen yrityksen tilien joukkoon. Tässä artikkelissa kerrotaan, miten yritys valmistellaan konsolidointia varten.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894023"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Valmistele yritys konsolidointiprosessia varten
 
 [!include [banner](../includes/banner.md)]
 
-Konsolidoinnin aikana kerätään tapahtumia useilta yrityksen tileiltä yhteen yrityksen tilien joukkoon. Tässä ohjeaiheessa kerrotaan, miten yritys valmistellaan konsolidointia varten.
+Konsolidoinnin aikana kerätään tapahtumia useilta yrityksen tileiltä yhteen yrityksen tilien joukkoon. Tässä artikkelissa kerrotaan, miten yritys valmistellaan konsolidointia varten.
 
 > [!NOTE]
 > On suositeltavaa käyttää Microsoft Dynamics 365 Financen Management Reporteria, kun haluat yhdistää useiden yrityksen taloudelliset tulokset konsolidointimuodossa. Management Reporterin avulla voit luoda konsolidointiraportteja eri yrityksille, tuoda konsolidointitietoja muista lähteistä Excelin avulla ja muuntaa summat miksi tahansa raportointivaluutaksi ilman, että konsolidointiprosessia tarvitsee suorittaa Dynamics 365 Financessa.

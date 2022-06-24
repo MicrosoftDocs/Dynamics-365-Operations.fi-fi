@@ -1,6 +1,6 @@
 ---
 title: Kirjauskansioon kirjaamisen epäonnistuminen täsmäämättömyyden vuoksi
-description: Tässä käsitellään, miksi debetit ja kreditit eivät täsmää tositetapahtumissa, mikä puolestaan estää tapahtumien kirjaamisen. Tässä aiheessa on myös ohjeet ongelman korjaamiseen.
+description: Tässä artikkelissa kerrotaan, miksi debetit ja kreditit eivät täsmää tositetapahtumissa, mikä puolestaan estää tapahtumien kirjaamisen. Tässä artikkelissa on myös ohjeet ongelman korjaamiseen.
 author: kweekley
 ms.date: 08/03/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 07408e608496dcc19562b866449b3b27f5f80edd
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f5afded3d5c42f8dab465b668e4c1fcdaed8c215
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719929"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861326"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Kirjauskansioon kirjaamisen epäonnistuminen täsmäämättömyyden vuoksi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä käsitellään, miksi debetit ja kreditit eivät täsmää tositetapahtumissa, mikä puolestaan estää tapahtumien kirjaamisen. Tässä aiheessa on myös ohjeet ongelman korjaamiseen.
+Tässä artikkelissa kerrotaan, miksi debetit ja kreditit eivät täsmää tositetapahtumissa, mikä puolestaan estää tapahtumien kirjaamisen. Tässä artikkelissa on myös ohjeet ongelman korjaamiseen.
 
 ## <a name="symptom"></a>Oire
 

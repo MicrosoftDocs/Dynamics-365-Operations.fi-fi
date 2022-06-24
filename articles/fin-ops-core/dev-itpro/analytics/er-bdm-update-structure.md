@@ -1,6 +1,6 @@
 ---
 title: Liiketoiminta-asiakirjan mallin rakenteen päivittäminen
-description: Tässä aiheessa kerrotaan, kuinka liiketoiminta-asiakirjan malli voidaan päivittää käyttämällä Liiketoiminta-asiakirjan hallintaominaisuutta.
+description: Tässä artikkelissa kerrotaan, kuinka liiketoiminta-asiakirjan malli voidaan päivittää käyttämällä Liiketoiminta-asiakirjan hallintaominaisuutta.
 author: NickSelin
 ms.date: 11/19/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2f57e3f3a84a6e767755c69074bc194e90793e6edd79d0e07ae7449d45ec7539
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2adecba4e988bfe04de2c181501b6c3ef8491dcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775283"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880280"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Liiketoiminta-asiakirjan mallin rakenteen päivittäminen 
 
 [!include[banner](../includes/banner.md)]
 
-Voit muokata liiketoiminta-asiakirjan mallia **Mallin rakenne** -ruudussa [Liiketoiminta-asiakirjan hallinta](er-business-document-management.md)  -mallin editorissa [lisäämällä uusia kenttiä](er-bdm-add-field-to-excel-template.md) malliin Microsoft Excelissä. Mallin rakenne päivitetään automaattisesti Dynamics 365 Finance -järjestelmässä, jotta se vastaa **Mallin rakenne** -ruudussa tehtyjä muutoksia.
+Voit muokata liiketoiminta-asiakirjan mallia **Mallin rakenne** -ruudussa [Liiketoiminta-asiakirjan hallinta](er-business-document-management.md)  -mallin editorissa [lisäämällä uusia kenttiä](er-bdm-add-field-to-excel-template.md) malliin Microsoft Excelissä. Mallin rakenne päivitetään automaattisesti Dynamics 365 Financessa, jotta se vastaa **Mallin rakenne** -ruudussa tehtyjä muutoksia.
 
 Voit myös muokata mallia käyttämällä Office 365:n online-toimintoja. Voit esimerkiksi lisätä uuden nimetyn nimikkeen, kuten kuvan tai muodon, muokattavaan laskentataulukkoon. Tässä tapauksessa mallin rakennetta ei päivitetä automaattisesti Financeen, eikä lisäämäsi nimike näy **Mallin rakenne** -ruudussa. Voit päivittää mallin rakenteen Financessa manuaalisesti valitsemalla **Päivitä rakenne** mallieditorisivulla.
 

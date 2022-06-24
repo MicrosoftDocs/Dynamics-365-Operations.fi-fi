@@ -1,6 +1,6 @@
 ---
 title: Määritä nimikkeiden veroryhmät
-description: Tässä aiheessa kuvataan, miten nimikkeen veroryhmät määritetään Veron laskenta -palvelussa.
+description: Tässä artikkelissa kuvataan, miten nimikkeen veroryhmät määritetään Veron laskenta -palvelussa.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 88dd8e2fd9d4d4e5172dcc7b1bd27a70a2f59f03
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 3bc705bc8173ad2bc8ef883e6dc80b0a187314ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883854"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846460"
 ---
 # <a name="set-up-item-tax-groups"></a>Määritä nimikkeiden veroryhmät
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten nimikkeen veroryhmät määritetään Veron laskenta -palvelussa. Se myös kertoo, miten nimikkeen veroryhmän käytettävyyssäännön matriisi määritetään ja rivejä konfiguroidaan matriisissa.
+Tässä artikkelissa kuvataan, miten nimikkeen veroryhmät määritetään Veron laskenta -palvelussa. Se myös kertoo, miten nimikkeen veroryhmän käytettävyyssäännön matriisi määritetään ja rivejä konfiguroidaan matriisissa.
 
 Arvonlisäveron laskentapalvelun nimikkeen veroryhmien käsite muistuttaa nimikkeen arvonlisäveroryhmien käsitettä Microsoft Dynamics 365 Financessa. Ne ovat verokoodien ryhmiä. Veron laskentapalvelu määrittää verokoodit veroryhmän ja nimikkeen veroryhmän välityksen avulla.
 

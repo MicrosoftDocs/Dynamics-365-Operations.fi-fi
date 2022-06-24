@@ -1,6 +1,6 @@
 ---
 title: Kaksoisvaluutta
-description: Tässä ohjeaiheessa käsitellään kaksoisvaluuttaa eli tilannetta, jossa raportointivaluuttaa käytetään Microsoft Dynamics 365 Financen toisena kirjanpitovaluuttana.
+description: Tässä artikkelissa käsitellään kaksoisvaluuttaa eli tilannetta, jossa raportointivaluuttaa käytetään Microsoft Dynamics 365 Financen toisena kirjanpitovaluuttana.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713582"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906352"
 ---
 # <a name="dual-currency"></a>Kaksoisvaluutta
 
@@ -36,7 +36,7 @@ Lisäksi useita moduuleja on täydennetty niin, että voivat seurata, raportoida
 - Käyttöomaisuuserät 
 - Konsolidoinnit
 
-Päivityksen jälkeen Maksuliikenteen hallinta- ja Käyttöomaisuuserät-moduuleissa on suoritettava tietyt vaiheet. Lue sen vuoksi asiaan liittyvät osat huolellisesti tässä ohjeaiheessa.
+Päivityksen jälkeen Maksuliikenteen hallinta- ja Käyttöomaisuuserät-moduuleissa on suoritettava tietyt vaiheet. Lue sen vuoksi asiaan liittyvät osat huolellisesti tässä artikkelissa.
 
 ## <a name="posting-process"></a>Kirjausprosessi
 
@@ -93,7 +93,7 @@ Jos raportointivaluutta määritettiin kirjanpidossa, kirjanpito seurasi jo joka
 - Raportointivaluutalle voidaan määrittää kirjanpidossa erillinen vaihtokurssityyppi. Jos organisaatio ei halua käyttää eri vaihtokurssityyppiä, voit jättää raportointivaluutan vaihtokurssityypin kentän tyhjäksi. Vaihtoehtoisesti voit valita sen vaihtokurssityypin, jota käytetään kirjanpitovaluutassa. Jos jätät kentän tyhjäksi, järjestelmä käyttää kirjanpitovaluutan vaihtokurssityyppiä.
 - Uusi raportointivaluutan muutosten kirjauskansio ottaa käyttöön oikaisut, jotka kirjataan kirjanpitotileille vain raportointivaluuttana. Tämän kirjauskansion avulla kirjaukset voidaan tehdä vain kirjanpitotileille. Se ei tue konsernin sisäistä kirjausta, ja valuutan on oltava sama kuin sen yrityksen raportointivaluutta, jossa kirjauskansio kirjataan. Kun kirjauskansio kirjataan, tapahtumavaluutan ja kirjanpitovaluutan summa on 0 (nolla). Lisäksi raportointivaluutan summaksi kirjataan summa, joka on viety tapahtumaan. Koska raportointivaluutan käyttötapa on muuttunut **Ostoreskontra**-, **Myyntireskontra**- ja **Käyttöomaisuuserät**-moduuleissa, tätä kirjauskansioita voi käyttää oikaisuissa päivityksen jälkeen. Esimerkkejä kirjauskansion käytöstä on kyseisiä moduuleja käsittelevissä osissa.
 - Kaudenkohdistusprosessia on päivitetty siten, että summat kohdistetaan tapahtuma-, kirjanpito- ja raportointivaluutoissa. Aiemmin summa kohdistettiin tapahtuma- ja kirjanpitovaluutoissa, jonka jälkeen kirjanpitovaluutan summa muunnettiin raportointivaluutaksi. Tämän vuoksi kirjanpitotilin saldo saattoi jäädä raportointivaluutaksi. Nyt kun summat lasketaan ja niitä käytetään kirjanpitomerkinnässä, muutoksia ei tarvitse tehdä.
-- Ulkomaanvaluutan uudelleenarvostusprosessi on jo tehnyt summien uudelleenarvostuksen raportointivaluutassa. Raportointivaluutan summa lasketaan kuitenkin nyt tapahtumavaluutan summan kautta. Tämä menettely selitettiin aiemmin tämän ohjeaiheen kohdassa [Kirjausprosessi](#posting-process).
+- Ulkomaanvaluutan uudelleenarvostusprosessi on jo tehnyt summien uudelleenarvostuksen raportointivaluutassa. Raportointivaluutan summa lasketaan kuitenkin nyt tapahtumavaluutan summan kautta. Tämä menettely selitettiin aiemmin tämän artikkelin osassa [Kirjausprosessi](#posting-process).
 - Monet kirjanpidon raportit ja kyselyt sisälsivät jo raportointivaluutan, mutta muutamissa sitä ei ollut. Tällainen on esimerkiksi **Pääkirja**-luettelosivu. Luettelosivulla on nyt kirjanpitovaluutan että raportointivaluutan sarakkeet. Huomaa, että raportointivaluutan sarakkeet on piilotettu, jos kirjanpito- ja raportointivaluutta on sama tai jos raportointivaluuttaa ei ole määritetty kirjanpidossa.
 
 ### <a name="financial-reporting"></a>Taloushallinnon raportointi

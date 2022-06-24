@@ -1,6 +1,6 @@
 ---
 title: Vakiokustannusten varianssin kirjaus
-description: Tässä aiheessa on tietoja kirjausprofiilien ja vakiokustannusten määrittämisestä.
+description: Tässä artikkelissa on tietoja kirjausprofiilien ja vakiokustannusten määrittämisestä.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,16 +10,16 @@ ms.search.form: InventPosting, InventItemGroup
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: bc4f1bd7c1bf7a8f214f20460b10d371d8f3c790
-ms.sourcegitcommit: 1ea145dc606e243c7f51d91a5c0dd9e385bbda4a
+ms.openlocfilehash: e7b2d04f32b75dbd1354b3ef74a41ea1b6469c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "8804607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894874"
 ---
 # <a name="standard-cost-variance-posting"></a>Vakiokustannusten varianssin kirjaus
 
-Kun käytät standardikustannuslaskentaa yhdelle tai usealle tuotteelle organisaatiossasi, sinun on määritettävä [standardikustannuslaskennan edellytykset](/supply-chain/cost-management/prerequisites-standard-costs.md). Tässä aiheessa kuvataan kirjaustilit, joita tarvitaan seuraavien edellytysten vaiheessa 3: "Määritä standardikustannusvariansseihin liittyvät tilit varastokirjauksiin".
+Kun käytät standardikustannuslaskentaa yhdelle tai usealle tuotteelle organisaatiossasi, sinun on määritettävä [standardikustannuslaskennan edellytykset](/supply-chain/cost-management/prerequisites-standard-costs.md). Tässä artikkelissa kuvataan kirjaustilit, joita tarvitaan seuraavien edellytysten vaiheessa 3: "Määritä standardikustannusvariansseihin liittyvät tilit varastokirjauksiin".
 
 Ostoissa ja tuotantotilauksissa voi esiintyä erilaisia variansseja. Esimerkkejä tuotantovariansseista: [Tuotannon varianssien yhteiset lähteet](/supply-chain/cost-management/common-sources-of-production-variances.md). Ostotilauksen hinnan varianssit tapahtuvat, kun käytetään ostetun nimikkeen standardikustannusta, ja tuotteen standardikustannuksen ja ostotilauksen laskutetun määrän välillä on ero.
 

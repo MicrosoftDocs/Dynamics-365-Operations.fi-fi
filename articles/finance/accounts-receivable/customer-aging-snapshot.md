@@ -1,6 +1,6 @@
 ---
 title: Asiakkaan erääntymistilannevedokset
-description: Tässä ohjeaiheessa on tietoja asiakkaan erääntymistilannevedoksista. Erääntymistilannevedos laskee asiakasryhmän erääntyneet saldot kyseisenä ajankohtana.
+description: Tässä artikkelissa on tietoja asiakkaan erääntymistilannevedoksista. Erääntymistilannevedos laskee asiakasryhmän erääntyneet saldot kyseisenä ajankohtana.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54db3e53cd31936ce80f0cdf1147535216d0d4b4
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c1a83f2648b52e436d19a11862e58dc33313f341
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722992"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902570"
 ---
 # <a name="customer-aging-snapshots"></a>Asiakkaan erääntymistilannevedokset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja asiakkaan erääntymistilannevedoksista. Erääntymistilannevedos laskee asiakasryhmän erääntyneet saldot kyseisenä ajankohtana. Voit luoda erääntymistilannevedostietueita joko kaikkia asiakkaita tai asiakaspoolin asiakkaita varten.
+Tässä artikkelissa on tietoja asiakkaan erääntymistilannevedoksista. Erääntymistilannevedos laskee asiakasryhmän erääntyneet saldot kyseisenä ajankohtana. Voit luoda erääntymistilannevedostietueita joko kaikkia asiakkaita tai asiakaspoolin asiakkaita varten.
 
 Erääntymistilannevedostiedot näytetään **Erääntyneet saldot** -luettelosivulla ja **Perintä**-sivulla. Erääntymistilannevedos on luotava, ennen kuin **Erääntyneet saldot** -luettelosivua voi käyttää. Luettelosivulla näkyvät vain ne asiakkaat, joita varten on luotu erääntymistilannevedos.
 

@@ -1,6 +1,6 @@
 ---
 title: Egyptin ALV-ilmoitus
-description: Tässä aiheessa kerrotaan, miten Egyptin ALV-palautuslomake konfiguroidaan ja muodostetaan.
+description: Tässä artikkelissa kerrotaan, miten Egyptin ALV-palautuslomake konfiguroidaan ja muodostetaan.
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870032"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Egyptin ALV-ilmoitus (EG-00002)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403945"
 
 [!include[banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten ALV-palautuslomake sekä myynti- ja ostokirjat määritetään ja luodaan yrityksille Egyptissä.
+Tässä artikkelissa kerrotaan, miten ALV-palautuslomake sekä myynti- ja ostokirjat määritetään ja luodaan yrityksille Egyptissä.
 
 Egyptin ALV-palautuslomake on virallinen asiakirja, joka sisältää yhteenvedon tuloksena syntyvän arvonlisäveron erääntyvästä kokonaissummasta, syötetyn arvonlisäveron palautuksen kokonaissumman sekä näihin liittyvästä arvonlisäverosumman velasta. Lomaketta käytetään kaikille verovelvollisen tyypeille, ja se tulee täyttää manuaalisesti veroviranomaisen portaalin kautta. ALV-palautuslomaketta kutsutaan yleisesti ALV-palautusilmoitukseksi.
 

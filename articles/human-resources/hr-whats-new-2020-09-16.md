@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (16. syyskuuta 2020)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 16. syyskuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 16. syyskuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: jcart1106
 ms.date: 09/16/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 591a6f3f4aabdb164e4fde5e80259fb6872167d9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca98f4b3a1e702ed5f02bc6e09675a5861ec902a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862827"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet (16. syyskuuta 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8694449"
 
 
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3557. Joidenkin toimintojen vieressä suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.3557. Joidenkin toimintojen vieressä suluissa olevat luvut viittaavat Lifecycle Services (LCS) -palveluiden tukinumeroihin.
 
 ## <a name="included-in-this-release"></a>Tässä julkaisussa mukana olevat ominaisuudet
 

@@ -1,6 +1,6 @@
 ---
 title: Taloushallinnon dimensiot
-description: Tässä ohjeaiheessa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä.
+description: Tässä artikkelissa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä.
 author: aprilolson
 ms.date: 03/07/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1360139a06909c1df922570f6e577d1d310b1c48
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3ad92e006351adbf2494a1b32325d2d4a83b76a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849986"
 ---
 # <a name="financial-dimensions"></a>Taloushallinnon dimensiot
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään erityyppisiä taloushallinnon dimensioita ja niiden määrittämistä.
+Tässä artikkelissa käsitellään erityyppisiä taloushallinnon dimensioita ja niiden määrittämistä.
 
 Luo **Taloushallinnon dimensiot** -sivun avulla tilikartan tilisegmentteinä käytettäviä taloushallinnon dimensioita. Taloushallinnon dimensioita on kahdenlaisia: mukautettuja ja yksikön tukemia dimensioita. Mukautetut dimensiot jaetaan yritysten välillä, ja käyttäjät vastaavat arvojen antamisesta ja ylläpidosta. Arvot määritetään yksikön tukemille dimensioille muualla järjestelmässä, esimerkiksi Asiakkaat- tai Myymälät-yksiköissä. Jotkin yksikön tukemat dimensiot jaetaan yritysten välillä, kun taas toiset yksikön tukemat dimensiot ovat yrityskohtaisia.
 

@@ -1,6 +1,6 @@
 ---
 title: Excelin budjettisuunnittelumallit
-description: Tässä ohjeaiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
+description: Tässä artikkelissa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711973"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872496"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Excelin budjettisuunnittelumallit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
+Tässä artikkelissa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
 
-Tässä ohjeaiheessa kuvataan, miten luodaan Excel-malleja, joita käytetään budjettisuunnitelmissa käyttämällä vakionäytetietoja ja Järjestelmänvalvoja-käyttäjätunnusta. Lisätietoja budjettisuunnittelusta on kohdassa [Budjettisuunnittelun yleiskatsaus](budget-planning-overview-configuration.md). Voit myös seurata [Budjettisuunnittelun perusteet](budget-plan.md) -opastusta, jossa on perustiedot moduulin määrityksestä sekä käytön periaatteet.
+Tässä artikkelissa kuvataan, miten luodaan Excel-malleja, joita käytetään budjettisuunnitelmissa käyttämällä vakionäytetietoja ja Järjestelmänvalvoja-käyttäjätunnusta. Lisätietoja budjettisuunnittelusta on kohdassa [Budjettisuunnittelun yleiskatsaus](budget-planning-overview-configuration.md). Voit myös seurata [Budjettisuunnittelun perusteet](budget-plan.md) -opastusta, jossa on perustiedot moduulin määrityksestä sekä käytön periaatteet.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Luo laskentataulukko budjettisuunnitelman asiakirja-asettelun avulla
 
-Budjettisuunnitelma-asiakirjoja voi tarkastella ja muokata käyttämällä yhtä tai useampaa asettelua. Kussakin asettelussa voi olla liitetty budjettisuunnitelman asiakirjamalli, jotta budjettisuunnitelman tietoja voidaan tarkastella ja muokata Excel-laskentataulukossa. Tässä ohjeaiheessa luodaan budjettisuunnitelman asiakirjamalli käyttämällä valmista asettelumääritystä. 
+Budjettisuunnitelma-asiakirjoja voi tarkastella ja muokata käyttämällä yhtä tai useampaa asettelua. Kussakin asettelussa voi olla liitetty budjettisuunnitelman asiakirjamalli, jotta budjettisuunnitelman tietoja voidaan tarkastella ja muokata Excel-laskentataulukossa. Tässä artikkelissa luodaan budjettisuunnitelman asiakirjamalli käyttämällä valmista asettelumääritystä. 
 
 1. Avaa **Budjettisuunnitelmien luettelo** (**Budjetointi** &gt; **Budjettisuunnitelmat**). 
 2. Luo uusi budjettisuunnitelma-asiakirja valitsemalla **Uusi**. 

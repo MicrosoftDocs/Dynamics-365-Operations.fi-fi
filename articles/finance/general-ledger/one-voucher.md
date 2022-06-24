@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722489"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896402"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
@@ -37,7 +37,7 @@ Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjaus
     [![Yksi rivi.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Yhden tositteen määritelmä **ei** koske tapauksia, joissa kirjauskansion nimet on määritetty **vain yhdeksi tositenumeroksi** mutta käyttäjä kirjaa sitten tositteen, joka sisältää vain kirjanpitotilityyppejä. Tässä ohjeaiheessa yksi tosite tarkoittaa, että yhdessä tositteessa on enemmän kuin yksi toimittaja, asiakas, pankki, käyttöomaisuuserä tai projekti.
+    > Yhden tositteen määritelmä **ei** koske tapauksia, joissa kirjauskansion nimet on määritetty **vain yhdeksi tositenumeroksi** mutta käyttäjä kirjaa sitten tositteen, joka sisältää vain kirjanpitotilityyppejä. Tässä artikkelissa yksi tosite tarkoittaa, että yhdessä tositteessa on enemmän kuin yksi toimittaja, asiakas, pankki, käyttöomaisuuserä tai projekti.
 
 - Syötä usean rivin tosite, jossa ei ole vastatiliä.
 
@@ -63,16 +63,16 @@ Voit sitten luoda **Toimittajakohtaiset kulut** -raportin **Taloushallinnon tied
 
 Yksi tosite -toimintoa käytettäessä mahdollisesti ilmenevien ongelmien vuoksi tämä toiminto lopulta poistetaan. Toimintoa ei kuitenkaan poisteta käytöstä kerralla, koska jotkin toiminnalliset aukot saattavat olla riippuvaisia tästä toiminnosta. Sen sijaan käytetään seuraavaa aikataulua:
 
-- **Kevään 2018 versio** – Tämä toiminto poistettiin käytöstä **Kirjanpitoparametrit**-sivun **Yleiset**-välilehden **Salli useita tapahtumia yhdessä tositteessa** -parametrilla. Voit ottaa toiminnon uudelleen käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa käsitellyn toiminnallisen aukon.
+- **Kevään 2018 versio** – Tämä toiminto poistettiin käytöstä **Kirjanpitoparametrit**-sivun **Yleiset**-välilehden **Salli useita tapahtumia yhdessä tositteessa** -parametrilla. Voit ottaa toiminnon uudelleen käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä artikkelissa käsitellyn toiminnallisen aukon.
 
-    - Jos liiketoimintaskenaariosi ei vaadi Yksi tosite -toimintoa, on suositeltavaa, että jätät toiminnon pois käytöstä. Jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu, Microsoft ei korjaa myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä.
+    - Jos liiketoimintaskenaariosi ei vaadi Yksi tosite -toimintoa, on suositeltavaa, että jätät toiminnon pois käytöstä. Jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu, Microsoft ei korjaa myöhemmin tässä artikkelissa mainituilla alueilla esiintyviä virheitä.
     - On suositeltavaa lopettaa yhden tositteen käyttö integrointien yhteydessä, ellei jokin dokumentoiduista toiminnallisista aukoista edellytä toiminnon käyttöä.
 
 - **Myöhemmät julkaisut** – Monet liiketoiminnan tarpeista voidaan toteuttaa vain käyttämällä yhtä tositetta. Microsoftin on varmistettava, että kaikki tunnistettuihin liiketoimintavaatimuksiin voidaan vastata järjestelmässä, kun toiminto vanhentuu. Siksi toiminta-aukkojen täyttämiseksi on ehkä lisättävä uusia toimintoja. Microsoft ei voi määrittää tiettyä ratkaisua, koska kukin toimintoaukko on erilainen, ja se on arvioitava liiketoimintavaatimusten perusteella. Joitakin toimintoaukkoja todennäköisesti korvataan ominaisuuksilla, jotka auttavat täyttämään tietyt liiketoimintavaatimukset. Muita aukkoja voidaan kuitenkin täyttää sallimalla kirjauskansion kirjaaminen samalla tavoin kuin silloin, kun käytetään yhtä tositetta, mutta järjestelmä voi tarvittaessa jäljittää yksityiskohtaisempia tietoja.
 
 Kun kaikki toiminta-aukot on täytetty, Microsoft ilmoittaa, että toiminto vanhentuu. Vanhentuminen tulee kuitenkin voimaan aikaisintaan vuoden kuluttua ilmoituksesta. Vaikka Microsoft ei voikaan antaa täsmällistä arviota Yksi tosite -toiminnon vanhentumisesta, kestää todennäköisesti vähintään kaksi vuotta ennen vanhentumista. Microsoftin käytäntö on jättää vähintään 12 kuukautta vanhentuneesta toiminnosta ilmoittamisen ja todellisen poiston väliin, jotta asiakkaat ja riippumattomat ohjelmistotoimittajat voivat reagoida muutokseen. Organisaatioiden on ehkä esimerkiksi päivitettävä liiketoimintaprosessit, yksiköt ja integroinnit.
 
-Yksi tosite- toiminnon vanhentuminen on tärkeä muutos, josta tiedotetaan paljon. Osana tätä viestintää Microsoft päivittää tämän aiheen, julkaisee blogiviestin Microsoft Dynamics 365 Finance -blogissa, päivittää "Poistetut tai vanhentuneet ominaisuudet" -aiheen, ilmoittaa muutoksesta asianmukaisissa Microsoftin tapahtumissa ja niin edelleen.
+Yksi tosite- toiminnon vanhentuminen on tärkeä muutos, josta tiedotetaan paljon. Osana tätä viestintää Microsoft päivittää tämän artikkelin, julkaisee blogiviestin Microsoft Dynamics 365 Finance -blogissa, päivittää "Poistetut tai vanhentuneet ominaisuudet" -artikkelin, ilmoittaa muutoksesta asianmukaisissa Microsoftin tapahtumissa ja niin edelleen.
 
 ## <a name="why-use-one-voucher"></a>Yhden tositteen käytön syitä
 

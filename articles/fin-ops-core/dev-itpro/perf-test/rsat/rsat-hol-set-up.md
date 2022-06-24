@@ -1,6 +1,6 @@
 ---
 title: Regression Suite Automation Tool -oppaan määrittäminen ja asentaminen
-description: Tämä ohjeaihe on opas, joka käsittelee Regression Suite Automation Tool (RSAT) -työkalun määrittämistä ja asentamista.
+description: Tämä artikkeli on opas, joka käsittelee Regression Suite Automation Tool (RSAT) -työkalun määrittämistä ja asentamista.
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858587"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -oppaan määrittäminen ja asentaminen
 
-Tämä opas auttaa RSAT-työkalun asennuksessa sekä RSAT-työkalun ja sen käyttöön liittyvien työkalujen käytön aloittamisessa.
+Tämä artikkeli auttaa RSAT-työkalun asennuksessa sekä RSAT-työkalun ja sen käyttöön liittyvien työkalujen käytön aloittamisessa.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -111,7 +111,7 @@ Tässä oppaassa testitapauskirjasto luodaan ja testitapaukset synkronoidaan Azu
 
 ## <a name="configure-the-lcs-project"></a>LCS-projektin määrittäminen
 
-Päätestikirjastoa varten tarvitaan Lifecycle Services (LCS) -projekti. LCS:n liiketoimintaprosessien mallintajaa (BPM) käytetään testitapausten pääkirjastona. Liiketoimintaprosessien mallintajan avulla hallitaan ja jaetaan LCS-projektien kirjastoja. Esimerkiksi testikirjastoja muodostava Microsoftin kumppani tai riippumaton ohjelmistotoimittaja (ISV) julkaisee testitapaukset BPM-kirjastoina. Liiketoimintaprosessien mallintajassa testitapaukset on järjestetty liiketoimintaprosessien perusteella. Liiketoimintaprosessien mallintaja ei määritä suoritusjärjestystä eikä testausvälejä. Näitä tietoja hallitaan Azure DevOpsissa myöhemmin tässä ohjeaiheessa käsiteltävällä tavalla.  
+Päätestikirjastoa varten tarvitaan Lifecycle Services (LCS) -projekti. LCS:n liiketoimintaprosessien mallintajaa (BPM) käytetään testitapausten pääkirjastona. Liiketoimintaprosessien mallintajan avulla hallitaan ja jaetaan LCS-projektien kirjastoja. Esimerkiksi testikirjastoja muodostava Microsoftin kumppani tai riippumaton ohjelmistotoimittaja (ISV) julkaisee testitapaukset BPM-kirjastoina. Liiketoimintaprosessien mallintajassa testitapaukset on järjestetty liiketoimintaprosessien perusteella. Liiketoimintaprosessien mallintaja ei määritä suoritusjärjestystä eikä testausvälejä. Näitä tietoja hallitaan Azure DevOpsissa myöhemmin tässä artikkelissa käsiteltävällä tavalla.  
 
 LCS-projektissa voidaan käyttää asiakkaan nykyistä käyttöönottoa tai kumppanin projektia.
 

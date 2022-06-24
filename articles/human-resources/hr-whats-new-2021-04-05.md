@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet 5. huhtikuuta 2021
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 5. huhtikuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 5. huhtikuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: marcelbf
 ms.date: 04/05/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 19ac856de0fed9253bf79cb4c06d4347e5a19c77
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1b8074877b8d2b2c05596406cbf2d98febd2e8cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693469"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899524"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet 5. huhtikuuta 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja.
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän ohjeaiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
-| Ongelman numero | Varasto-otto |  kuvaus |
+| Ongelman numero | Ongelma |  Kuvaus |
 | --- | --- | --- |
 | 550852 | **Hyväksyntä**-painike ei vahvista pakollisten kenttien hyväksymistä **Tarkistus**-lomakkeessa. | Kun määrität **Tarkistus**-lomakkeen kentän pakolliseksi ja julkaiset hallintaroolin muutokset, lomaketta ei vahvistaa odotetulla tavalla. |
 | 559564 | Kiinteän kompensaation muutoksen historialliset työntekijätoiminnot antavat virheilmoituksen työsuhteen päättäneille käyttäjille. | Poistuneen työntekijän kompensaation työntekijätoiminto antaa virheilmoituksen. Kun työntekijä on poistunut, ylennys ennen työsuhteen päättämistä aiheuttaa virheen. |

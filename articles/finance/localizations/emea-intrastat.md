@@ -1,6 +1,6 @@
 ---
 title: Intrastat – yleiskatsaus
-description: Tämä aihe sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa.
+description: Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa.
 author: EvgenyPopovMBS
 ms.date: 01/13/2021
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 97c2b4068f3b8d38281e637ec80f04b19d19be61
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9360f97506ac7bdf67bb2f1b296f01b6ed49b39f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894777"
 ---
 # <a name="intrastat-overview"></a>Intrastat – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tämä aihe sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Tämä artikkeli sisältää myös raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset.
+Tämä artikkeli sisältää tietoja Intrastat-raportoinnista, jota käytetään Euroopan unionin (EU) jäsenvaltioiden ja alueiden välillä käytävän tavaroiden (ja joissakin tapauksessa myös palveluiden) kaupan raportoinnissa. Tämä artikkeli sisältää myös raportointiprosessin yleiskatsauksen ja kertoo pakolliset asetukset ja edellytykset.
 
 Intrastat on järjestelmä, jolla kerätään tietoja ja muodostetaan tilastoja Euroopan unionin (EU) jäsenvaltioiden ja alueiden välisestä kaupasta. Intrastat-raportointi on pakollista aina, kun tuote ylittää EU-maan tai -alueen rajan. Monissa maissa ja monilla alueilla Intrastat-raportointi koskee myös palveluja. Intrastat-raporteissa voidaan kerätä pakollisia ja valinnaisia elementtejä. Seuraavat elementit ovat pakollisia: tietojen ilmoittamisesta vastuussa olevan osapuolen arvonlisäveronumero (ALV-numero), viitekausi, suunta (saapuva vai lähtevä), 8-numeroinen tavarankoodi, kumppanin jäsenvaltio (lähettäjäjäsenvaltio saapuvissa ja määräjäsenvaltio lähetyksissä), tavaroiden arvo, tavaroiden määrä (nettopaino ja lisäyksikkö) ja tapahtuman luonne. Maat ja alueet voivat myös kerätä erilaisten ehtojen mukaisesti valinnaisia elementtejä. Valinnaisia elementtejä ovat esimerkiksi alkuperämaa tai -alue, toimitusehdot, kuljetustapa, yksityiskohtaisempi tavaran koodi kuin CN8, alkuperäalue lähetyksissä ja määräalue saapuvissa, tilastomenettely, tilastoarvo, tavaroiden kuvaus sekä kuormauksen tai kuorman purkamisen satama tai lentoasema.
 
@@ -152,7 +152,7 @@ Määritä seuraavan taulun parametrit **Ulkomaankaupan parametrit** -sivulla.
 
 ### <a name="transaction-codes-and-miscellaneous-charges"></a><a name= "transaction-codes-and-miscellaneous-charges"></a>Tapahtumakoodit ja muut kulut
 
-Tässä ohjeaiheessa käsitellään skenaariota, jossa Saksassa sijaitsevan yrityksen täytyy ostaa tuotteita Italiassa olevalta yritykseltä. Jotta tämä osto voidaan tehdä, saksalaisen yrityksen on määritettävä uudet tapahtumakoodit ja määritettävä laskusumman ja tilastollisen summan laskentasäännöt kyseisiä tapahtumakoodeja varten. Lisäksi yrityksen on määritettävä muut kulut ja niiden prosentit, kun yritys luo laskun. Näitä arvoja käytetään tilastollisen arvon laskelmassa.
+Tässä artikkelissa käsitellään skenaariota, jossa Saksassa sijaitsevan yrityksen täytyy ostaa tuotteita Italiassa olevalta yritykseltä. Jotta tämä osto voidaan tehdä, saksalaisen yrityksen on määritettävä uudet tapahtumakoodit ja määritettävä laskusumman ja tilastollisen summan laskentasäännöt kyseisiä tapahtumakoodeja varten. Lisäksi yrityksen on määritettävä muut kulut ja niiden prosentit, kun yritys luo laskun. Näitä arvoja käytetään tilastollisen arvon laskelmassa.
 
 Tässä skenaariossa käytetään **DEMF**-yritystä.
 
@@ -187,7 +187,7 @@ Tässä skenaariossa käytetään **DEMF**-yritystä.
 #### <a name="set-up-foreign-trade-parameters"></a>Määritä ulkomaankaupan parametrit
 
 1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuma****koodi**-kentässä **11**.
+2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **11**.
 3. Varmista, että **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kenttään on määritetty **Intrastat**.
 
 #### <a name="create-a-purchase-order"></a>Luo ostotilaus
@@ -196,7 +196,7 @@ Tässä skenaariossa käytetään **DEMF**-yritystä.
 2. Valitse toimintoruudussa **Uusi**.
 3. Valitse **Luo ostotilaus** -valintaikkunan **Toimittajatili**-kentässä **DE-001**.
 4. Valitse **OK**.
-5. Tarkista **Otsikko**-välilehden **Ulkomaan****kauppa**-pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **11**.
+5. Tarkista **Otsikko**-välilehden **Ulkomaankauppa**-pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **11**.
 6. Valitse **Rivit**-välilehden **Ostotilauksen rivit** -pikavälilehden **Nimikkeen numero** -kentässä **D0003**. Anna sitten **Määrä**-kenttään **10**.
 7. Varmista **Rivin tiedot**-pikavälilehden **Ulkomaankauppa**-välilehden **Ulkomaankauppa**-osiossa, että **Tapahtumakoodi**-kenttä on asetettu automaattisesti.
 8. Valitse **Kulut**-osan **Myyntitiedot**-valikon **Ostotilausrivit**-pikavälilehdestä **Ylläpidä kuluja**.
@@ -312,7 +312,7 @@ Tässä esimerkissä Saksan yrityksen on ostettava 10 yksikköä Italian yrityks
 1. Valitse **Organisaation hallinta** > **Organisaatio** > **Yritykset** ja valitse **DEMF**.
 2. Varmista **Osoitteet**-pikavälilehdellä, että **Maa/alue**-kentän arvoksi on määritetty **DEU(Saksa)**.
 3. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-4. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuma****koodi**-kentässä **11**.
+4. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **11**.
 5. Varmista, että **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kenttään on määritetty **Intrastat**.
 6. Valitse **Ostoreskontra** > **Toimittajat** > **Kaikki toimittajat**.
 7. Valitse ruudukossa **DE-001**.

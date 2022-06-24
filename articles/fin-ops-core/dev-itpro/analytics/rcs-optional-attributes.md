@@ -1,6 +1,6 @@
 ---
 title: Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä
-description: Tässä ohjeaiheessa on tietoja sellaisten ER-muotojen suunnittelemisesta, joissa määritetään XML-määritteet jäsentämään saapuvat sähköiset asiakirjat XML-muodossa.
+description: Tässä artikkelissa on tietoja sellaisten ER-muotojen suunnittelemisesta, joissa määritetään XML-määritteet jäsentämään saapuvat sähköiset asiakirjat XML-muodossa.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 81156cf13e003a67fde0a73bdcd69b2c997f23a33c464fad82132f7768f8a99f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b25b51a4f59bf9c308bcaeb140e2737597798e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757294"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873219"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä
 
@@ -26,7 +26,7 @@ ms.locfileid: "6757294"
 
 Voit suunnitella sähköisen raportoinnin (ER) muodot jäsentämään saapuvat sähköiset asiakirjat XML-muodossa. Tietyt XML-elementtien määritteet voidaan määrittää suunnitellussa ER-muodossa valinnaisina. Sen avulla voit käsitellä saapuvia tiedostoja asianmukaisesti riippumatta siitä, onko siinä kyseiset määritteet vai ei. Sitten voit käyttää näiden tiedostojen sisältöä sovelluksen tietojen päivittämiseen.
 
-Saat lisätietoja tästä ominaisuudesta suorittamalla ohjeaiheen [(RCS) Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä](tasks/import-files-xml-format-optional-attributes.md) vaiheet. Se on osa 7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677) -liiketoimintaprosessia. Voit ladata kyseisen tehtäväoppaan ja liitetyt mallitiedostot [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=874684).
+Saat lisätietoja tästä ominaisuudesta suorittamalla artikkelin [(RCS) Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä](tasks/import-files-xml-format-optional-attributes.md) vaiheet. Se on osa 7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677) -liiketoimintaprosessia. Voit ladata kyseisen tehtäväoppaan ja liitetyt mallitiedostot [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=874684).
 
 
 | Sisällön kuvaus       | Tiedosto                                                         |
@@ -38,7 +38,7 @@ Saat lisätietoja tästä ominaisuudesta suorittamalla ohjeaiheen [(RCS) Tiedost
 Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella ER-muotomäärityksen tuomaan valinnaisia määritteitä sisältävän XML-muotoisia tiedostoja. Näitä vaiheita varten on ensin suoritettava menettelyssä [Konfiguraation lähteiden luominen ja merkitseminen aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Ennen kuin aloitat, lataa ja tallenna IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-tiedosto paikallisesti Microsoft Download Centeristä (https://go.microsoft.com/fwlink/?linkid=874684 ).
 
 1. Valitse **Organisaation hallinto** > **Työtilat** > **Sähköinen raportointi**.
-2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita ohjeaiheen [Konfiguraation lähteiden luominen ja merkitseminen aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheet.
+2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita artikkelin [Konfiguraation lähteiden luominen ja merkitseminen aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheet.
 3. Valitse **Raportointikonfiguraatiot**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Uuden tietomallin konfiguraation luominen

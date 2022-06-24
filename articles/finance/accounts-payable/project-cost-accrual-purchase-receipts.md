@@ -1,6 +1,6 @@
 ---
-title: Projektikustannusten jaksottaminen ostojen vastaanotoissa
-description: Tässä aiheessa kerrotaan, miten ostojen vastaanottojen jaksotettuja projektikustannuksia voidaan seurata Microsoft Dynamics 365 Financessa.
+title: Projektikustannusten jaksotus ostokuiteissa
+description: Tässä artikkelissa kerrotaan, miten ostojen vastaanottojen jaksotettuja projektikustannuksia voidaan seurata Microsoft Dynamics 365 Financessa.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e435002bca8fd4deb58c16c50db55237a3e9053
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: a138fd41269fad2e9ac489664ca81c3ee12f830d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856854"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektikustannusten jaksotus ostokuiteissa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten ostojen vastaanottojen jaksotettuja projektikustannuksia voidaan seurata Microsoft Dynamics 365 Financessa. 
+Tässä artikkelissa kerrotaan, miten ostojen vastaanottojen jaksotettuja projektikustannuksia voidaan seurata Microsoft Dynamics 365 Financessa. 
 
 Projektin laskut saapuvat usein tavaroiden ja palveluiden toimituksen jälkeen. Tällä saattaa olla merkittävä vaikutus projektin suorituskykyilmaisimiin. On tärkeää, että näitä tapahtumia pystytään seuraamaan sekä tilinpäätöksissä että projektiraporteissa.
 

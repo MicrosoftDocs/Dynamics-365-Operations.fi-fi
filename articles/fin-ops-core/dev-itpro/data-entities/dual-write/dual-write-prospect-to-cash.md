@@ -1,6 +1,6 @@
 ---
 title: Prospektista käteiseksi -kaksoiskirjoitus
-description: Tässä ohjeaiheessa on tietoja prospektista käteiseksi -kaksoiskirjoituksesta.
+description: Tässä artikkelissa on tietoja prospektista käteiseksi -kaksoiskirjoituksesta.
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860106"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospektista käteiseksi -kaksoiskirjoitus
 
@@ -29,7 +29,7 @@ Sovellusliittymissä voit käyttää käsittelyn tiloja ja laskun tietoja reaali
 Lisätietoja asiakkaan ja yhteyshenkilön integroinnista on kohdassa [Integroidut asiakkaan päätiedot](customer-mapping.md). Lisätietoja tuotteen integroinnista on kohdassa [Yhtenäinen tuotekokemus](product-mapping.md).
 
 > [!NOTE]
-> Dynamics 365 Salesissa sekä prospekti että asiakas viittaa tietueeseen **Tili**-taulussa, jossa **RelationshipType**-sarake on joko **Prospekti** tai **Asiakas**. Jos liiketoimintalogiikka sisältää **Tili**-hyväksyntäprosessin, jossa **Tili**-tietue luodaan ja hyväksytään ensin prospektiksi ja sitten asiakkaaksi, kyseinen tietue synkronoituu Finance and Operations -sovellukseen vasta, kun se on asiakas (`RelationshipType=Customer`). Jos **Tili**-rivi halutaan synkronoida prospektina, prospektin tietojen integrointiin tarvitaan mukautettu yhdistämismääritys.
+> Dynamics 365 Salesissa sekä prospekti että asiakas viittaa tietueeseen **Tili**-taulussa, jossa **RelationshipType**-sarake on joko **Prospekti** tai **Asiakas**. Jos liiketoimintalogiikka sisältää **Tili**-hyväksyntäprosessin, jossa **Tili**-tietue luodaan ja hyväksytään ensin prospektiksi ja sitten asiakkaaksi, kyseinen tietue synkronoituu talous- ja toimintosovelluksiin vasta, kun se on asiakas (`RelationshipType=Customer`). Jos **Tili**-rivi halutaan synkronoida prospektina, prospektin tietojen integrointiin tarvitaan mukautettu yhdistämismääritys.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
@@ -111,7 +111,7 @@ Myyntilaskut luodaan Supply Chain Managementissa ja synkronoidaan Salesiin. Huom
 
 Prospektista käteiseksi -toiminto sisältää perustaulukarttojen kokoelman, joita käytetään yhdessä tietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-| Finance and Operations -sovellukset | Asiakkaiden aktivointisovellukset | kuvaus |
+| Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset | Kuvaus |
 |-----------------------------|-----------------------------------|-------------|
 [Kaikki tuotteet](mapping-reference.md#138) | msdyn_globalproducts | |
 [Asiakkaat V3](mapping-reference.md#101) | tilit | |
@@ -122,7 +122,7 @@ Prospektista käteiseksi -toiminto sisältää perustaulukarttojen kokoelman, jo
 [CDS-myyntitarjouksen otsikko](mapping-reference.md#215) | tarjoukset | |
 [CDS-myyntitarjousrivit](mapping-reference.md#214) | quotedetails | |
 [Vapautetut tuotteet V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Myyntilaskun otsikot V2](mapping-reference.md#118) | laskut | Finance and Operations -sovelluksen Myyntilaskun otsikot V2 -taulu sisältää myyntitilausten laskut ja vapaatekstilaskut. Dataversessa käytetään kaksoiskirjoituksen suodatinta, joka suodattaa pois vapaatekstilaskuasiakirjat. |
+[Myyntilaskun otsikot V2](mapping-reference.md#118) | laskut | Talous- ja toimintosovellusten Myyntilaskun otsikot V2 -taulu sisältää myyntitilausten laskut ja vapaatekstilaskut. Dataversessa käytetään kaksoiskirjoituksen suodatinta, joka suodattaa pois vapaatekstilaskuasiakirjat. |
 [Myyntilaskun rivit V2](mapping-reference.md#117) | invoicedetails | |
 [Myyntitilausten alkuperän koodit](mapping-reference.md#186) | msdyn_salesorderorigins | |
 

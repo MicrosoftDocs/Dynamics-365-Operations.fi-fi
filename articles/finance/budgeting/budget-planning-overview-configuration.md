@@ -1,6 +1,6 @@
 ---
 title: Budjettisuunnittelun yleiskatsaus
-description: Tässä ohjeaiheessa kuvataan budjettisuunnittelua. Se sisältää tietoja, jotka voivat auttaa budjettisuunnittelun ja budjettisuunnitteluprosessien määrittämisessä.
+description: Tässä artikkelissa kuvataan budjettisuunnittelua. Se sisältää tietoja, jotka voivat auttaa budjettisuunnittelun ja budjettisuunnitteluprosessien määrittämisessä.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 1f1ecf830953362636c8b0369586d8b76499ebb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711740"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853551"
 ---
 # <a name="budget-planning-overview"></a>Budjettisuunnittelun yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan budjettisuunnittelua. Se sisältää tietoja, jotka voivat auttaa budjettisuunnittelun ja budjettisuunnitteluprosessien määrittämisessä.
+Tässä artikkelissa kuvataan budjettisuunnittelua. Se sisältää tietoja, jotka voivat auttaa budjettisuunnittelun ja budjettisuunnitteluprosessien määrittämisessä.
 
 ## <a name="overview-of-budget-planning"></a>Yleiskatsaus budjettisuunnitteluun
 
@@ -91,7 +91,7 @@ Budjettisuunnittelun työnkulku koostuu järjestetystä joukosta vaiheita, joide
 
 Budjettisuunnittelun työnkulku luodaan **Budjettisuunnittelun konfigurointi** -sivun **Työnkulun vaiheet** -osassa. Tämän jälkeen valitaan vaiheet ja käytettävä budjetoinnin työnkulku. Lisäasetukset määritetään myös tässä vaiheessa.
 
-Budjettisuunnittelun työnkulku kannattaa luoda jokaiselle budjetointihierarkian tasolle. Tämän jälkeen liitetään budjettisuunnittelun työnkulun vaiheita vastaavia elementtejä sisältävä budjetoinnin työnkulku. Aiemmin tässä ohjeaiheessa esitetyssä esimerkkimallissa luodaan yksi budjettisuunnittelun työnkulku myyntiosastoille ja toinen pääkonttorille. Budjetoinnin työnkulku siirtää budjettisuunnitelmat vaiheiden läpi.
+Budjettisuunnittelun työnkulku kannattaa luoda jokaiselle budjetointihierarkian tasolle. Tämän jälkeen liitetään budjettisuunnittelun työnkulun vaiheita vastaavia elementtejä sisältävä budjetoinnin työnkulku. Aiemmin tässä artikkelissa esitetyssä esimerkkimallissa luodaan yksi budjettisuunnittelun työnkulku myyntiosastoille ja toinen pääkonttorille. Budjetoinnin työnkulku siirtää budjettisuunnitelmat vaiheiden läpi.
 
 Budjettisuunnittelun budjetoinnin työnkulku luodaan **Budjetoinnin työnkulut** -sivulla. Prosessi muistuttaa muiden työnkulkujen luontia. Seuraavassa kuvassa on esimerkki pääkonttorin työnkulusta.
 
@@ -141,7 +141,7 @@ Vaiheen kohdistuksia käytetään budjettisuunnitelmien automaattiseen kohdistuk
 
 Määrittäessäsi vaiheen kohdistuksen liität budjetti suunnitelman työnkulun ja vaiheen kohdistuksen aikatauluun. Budjettisuunnittelun työnkulku on liitettävä budjetoinnin työnkulkuun, joka käyttää automatisoitua **Budjetin suunnitteluvaiheen kohdistus** -työnkulkutehtävää. Työnkulun saavuttaessa tietyn vaiheen kohdistus tapahtuu automaattisesti. Automaattista tehtävää voidaan käyttää budjettisuunnitelmarivien luomiseen uudessa skenaariossa.
 
-Aiemmin tässä ohjeaiheessa esitetyssä esimerkkimallissa suoritetaan kohdistus, jossa siirretään summat pääkonttorin perusvaiheen budjettisuunnitelmasta ja -skenaarioista myyntiosaston arviointivaiheen toiseen budjettisuunnitelmaan ja -skenaarioihin. Seuraavassa kuvassa näytetään esimerkkimallin kyseinen osa.
+Aiemmin tässä artikkelissa esitetyssä esimerkkimallissa suoritetaan kohdistus, jossa siirretään summat pääkonttorin perusvaiheen budjettisuunnitelmasta ja -skenaarioista myyntiosaston arviointivaiheen toiseen budjettisuunnitelmaan ja -skenaarioihin. Seuraavassa kuvassa näytetään esimerkkimallin kyseinen osa.
 
 [![Vaiheen kohdistus.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

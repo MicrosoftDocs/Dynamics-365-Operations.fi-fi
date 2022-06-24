@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (22. maaliskuuta 2021)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 22. maaliskuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 22. maaliskuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: marcelbf
 ms.date: 03/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 13520ca55c98fb1acb6185af393550b12fbc2072
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2cfdd0fc1ca7ba206b0f447ecabd801a5a4e8c57
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859485"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-22-2021"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (22. maaliskuuta 2021)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja.
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän ohjeaiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
-| Ongelman numero | Varasto-otto |  kuvaus |
+| Ongelman numero | Ongelma |  Kuvaus |
 | --- | --- | --- |
 | 554239 | **BusinessProcessTaskAssignment**-tauluun liittyvien yksiköiden suorituskyvyn parannukset | Parantaa **BusinessProcessTaskAssignment**-tauluun liittyvien yksiköiden suorituskykyä lisäämällä ehdotettuja indeksejä tauluun. |
 | 566061 | Poista V2-yksikön varakoodi yön aikana suoritettavasta synkronoinnista | Poista Dataversen yösynkronoinnin V2-varakoodi. Varakoodi ei ole enää tarpeen, ja se estää suodatetun synkronoinnin toimimasta odotetulla tavalla. Muutos parantaa Dataverse-tietojen synkronoinnin yhdenmukaisuutta. |

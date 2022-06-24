@@ -1,6 +1,6 @@
 ---
 title: Luotonvalvonnan hallinnan Power BI-sisältö
-description: Tässä ohjeaiheessa kerrotaan, mitä luotonvalvonnan hallinnan Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytettävistä tietomallista ja yksiköistä.
+description: Tässä artikkelissa kerrotaan, mitä luotonvalvonnan hallinnan Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytettävistä tietomallista ja yksiköistä.
 author: ShivamPandey-msft
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 291eeddf754ef86bf7eb8f534ac36b1151e39b3a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 350c7ff2f0fa93d4ff99e2a11b9418413854a076
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889929"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Luotonvalvonnan hallinnan Power BI-sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, mitä **luotonvalvonnan hallinnan** Microsoft Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+Tässä artikkelissa kerrotaan, mitä **luotonvalvonnan hallinnan** Microsoft Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="overview"></a>Yleiskuvaus
 

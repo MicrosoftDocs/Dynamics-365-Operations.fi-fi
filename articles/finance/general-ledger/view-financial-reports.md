@@ -1,6 +1,6 @@
 ---
-title: Raporttien tarkasteleminen
-description: Tässä ohjeaiheessa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 Financessa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
+title: Näytä raportit
+description: Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 Financessa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 author: kweekley
 ms.date: 03/25/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fec130ce7b05a8e0b8182a63679cf7b20983f1d0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907889"
 ---
-# <a name="view-financial-reports"></a>Raporttien tarkasteleminen
+# <a name="view-financial-reports"></a>Näytä raportit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
+Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 
 ## <a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
 

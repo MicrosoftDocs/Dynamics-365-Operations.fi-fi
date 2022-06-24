@@ -1,6 +1,6 @@
 ---
 title: Muuttuvien kompensaatiosuunnitelmien luominen
-description: Tässä aiheessa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
+description: Tässä artikkelissa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 589990c48d115266b57589f905de20572e76a040
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853071"
 ---
 # <a name="create-variable-compensation-plans"></a>Luo muuttuvia kompensaatiosuunnitelmia
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688654"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä aiheessa selitetään, miten määritetään komponentit, jotka tarvitaan muuttuvan kompensaation käyttämiseen ja työntekijöiden määrittämiseen muuttuvaan kompensaatiosuunnitelmaan.
+Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä artikkelissa selitetään, miten määritetään komponentit, jotka tarvitaan muuttuvan kompensaation käyttämiseen ja työntekijöiden määrittämiseen muuttuvaan kompensaatiosuunnitelmaan.
 
 Useat tekijät, kuten työntekijän suorituskyky, työntekijän kompensaatiotaso ja osaston suorituskyky, voivat vaikuttaa työntekijöiden muuttuvien kompensaatiosummien laskennassa.
 

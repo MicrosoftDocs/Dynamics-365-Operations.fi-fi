@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet 2. joulukuuta 2020
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 2. joulukuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 2. joulukuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: marcelbf
 ms.date: 12/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e02586ad3e6b4428f2ba826851db6ebc3172bdf1760b483032f5159e7864a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cecef6d2e73b42126b1be100dca52ebd8d9270fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848104"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet 2. joulukuuta 2020
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja.
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -52,9 +52,9 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän ohjeaiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
-| Ongelman numero | Varasto-otto | kuvaus |
+| Ongelman numero | Ongelma | Kuvaus |
 | --- | --- | --- |
 | 514087 | BenefitEligibilityProcessResult-kohdassa tulee olla päivämäärä ja aika, joita käytettiin käsittelyssä. | BenefitEligibity-kohdan käsittelytuloksessa on nyt edellisen käsittelyn datetimestamp. Aiemmin tämä puuttui. |
 | 526903 | Edun rekisteröiminen epäonnistuu huollettavia sisältävissä suunnitelmissa, jos **Valitse edustajat automaattisesti** -kohta on otettu käyttöön **Henkilöstöhallinnon jaetut parametrit** -kohdassa. | Ratkaistiin ongelma, jossa huollettavien edun rekisteröiminen epäonnistui, kun **Valitse edustajan automaattisesti** -vaihtoehto on otettu käyttöön oletusedustajille. |

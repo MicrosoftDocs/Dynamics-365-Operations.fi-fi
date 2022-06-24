@@ -1,6 +1,6 @@
 ---
 title: Helppokäyttötoiminnot
-description: Tässä ohjeaiheessa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä.
+description: Tässä artikkelissa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä.
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: af17b7933aed2a40d81fbc4e7b79e4e716aaf59b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881048"
 ---
 # <a name="accessibility-features"></a>Helppokäyttötoiminnot
 
@@ -26,7 +26,7 @@ ms.locfileid: "8071055"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tässä ohjeaiheessa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä käyttämään tämä sovellusta. Käytettävissä on esimerkiksi toimintoja henkilöille, joilla on käytössä näkövammaisille tarkoitettua teknologiaa, kuten Microsoft Windows Narrator.
+Tässä artikkelissa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä tämän sovelluksen käyttämisessä. Käytettävissä on esimerkiksi toimintoja henkilöille, joilla on käytössä näkövammaisille tarkoitettua teknologiaa, kuten Microsoft Windows Narrator.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows Narrator ja vain näppäimistökäyttö
 
@@ -49,7 +49,7 @@ Lisätietoja on kohdassa [Siirtymishaku](navigation-search.md).
 
 ## <a name="action-search-for-keyboard-only-users-or-for-heads-down-data-entry"></a>Toimintohaku vain näppäimistöä käyttäville tai kun tiedot syötetään ilman virheentarkistusta
 
-Jokaista sivun toimintoa voi käyttää näppäimistön sarkainjärjestyksen avulla. Jäljempänä tässä ohjeaihessa on tietoja sarkainjärjestyksestä. Toiminnot voi suorittaa suoraan käyttämällä toimintojen hakutoimintoa.
+Jokaista sivun toimintoa voi käyttää näppäimistön sarkainjärjestyksen avulla. Jäljempänä tässä artikkelissa on tietoja sarkainjärjestyksestä. Toiminnot voi suorittaa suoraan käyttämällä toimintojen hakutoimintoa.
 
 ### <a name="example"></a>Esimerkki
 

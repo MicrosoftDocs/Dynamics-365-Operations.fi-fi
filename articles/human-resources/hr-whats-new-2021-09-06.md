@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 6. syyskuuta 2021
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 6. syyskuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 6. syyskuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: marcelbf
 ms.date: 09/06/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 314d836db9b7560c2ed95ad1b9d2eba753e39d2b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 776498b32f8323b1a06f39b518cdc1ae534f9bcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690579"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872149"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-6-2021"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 6. syyskuuta 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja.
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -50,9 +50,9 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän aiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
-| Ongelman numero | Ongelma | kuvaus |
+| Ongelman numero | Ongelma | Kuvaus |
 |---|---|---|
 | 610128 | Virhe tietojen julkaisussa käytettäessä kohdetta HcmDiscussionOverallCommentEntity | Kun tietoja julkaistaan Excel-työkirjasta HcmDiscussionOverralCommentEntity-entiteettiin, tapahtuu seuraava virhe: "Tietolähdetietuetta tyyppiä HcmTopicOverrall ei löydy." |
 | 589073 | EEO-1-raportti laskee "Määrittämätön"-arvoja ja tyhjiä arvoja **Sukupuoli**-kentälle "Nainen"-arvona. | Jos arvoa **Mies** ei määritetä **Sukupuoli**-kentälle, EEO-1-raportti muodostaa oletusarvon **Nainen**. |

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet 19. huhtikuuta 2021
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 19. huhtikuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 19. huhtikuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: marcelbf
 ms.date: 04/19/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685739"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846297"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet 19. huhtikuuta 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja.
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän ohjeaiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
-| Ongelman numero | Varasto-otto |  kuvaus |
+| Ongelman numero | Ongelma |  Kuvaus |
 | --- | --- | --- |
 | 552164 | **Tallennettu näkymä** kohdassa **Työntekijän itsepalvelu > Avoimet kurssit** ei toimi kursseille, jotka sisältävät työjärjestyksen | Jos tallennettua näkymää käytetään avointen kurssien (ESS) yhteydessä ja toiseen kurssiin on liitetty työjärjestys, näkymässä ei enää näy useita rivejä kurssille. |
 | 560614 | **Edut > Elinkaaritapahtumat** näyttävät ristiriitaisuuksia työkaluvihjeen dokumentaatiossa ja koodissa. | Päivitetyt työkaluvihjeet **Elinkaaritapahtumat**-kohdassa oikean toiminnan näyttämistä varten. |

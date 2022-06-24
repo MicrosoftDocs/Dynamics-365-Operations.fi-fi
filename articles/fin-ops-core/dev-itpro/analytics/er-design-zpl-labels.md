@@ -1,6 +1,6 @@
 ---
-title: Suunnittele uusi ER-ratkaisu ZPL-etikettien tulostamista varten
-description: Tässä ohjeaiheessa kerrotaan miten uusi ER-ratkaisu suunnitellaan tulostamaan Zebra Programming Language (ZPL) -etikettejä.
+title: Uuden sähköisen raportoinnin ratkaisun suunnitteleminen ZPL-etikettien tulostamista varten
+description: Tässä artikkelissa kerrotaan miten uusi ER-ratkaisu suunnitellaan tulostamaan Zebra Programming Language (ZPL) -etikettejä.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: f861fe63c6d7d00d0a9f84d33c0d1b1b23735b61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612351"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845712"
 ---
-# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Suunnittele uusi ER-ratkaisu ZPL-etikettien tulostamista varten
+# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Uuden sähköisen raportoinnin ratkaisun suunnitteleminen ZPL-etikettien tulostamista varten
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä aiheessa selitetään, miten järjestelmänvalvoja-, sähköisen raportoinnin kehittäjä- tai sähköisen raportoinnin toiminnallinen konsultti -roolin käyttäjä voi määrittää [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehyksen parametrit, suunnitella uuden ER-ratkaisun vaaditut ER-[kokoonpanot](general-electronic-reporting.md#Configuration) käyttämään varastonhallintajärjestelmää ja luoda mukautettuja varaston sijainnin etikettejä Zebra Programming Language (ZPL) II -muodossa. Nämä vaiheet voidaan suorittaa **USRT**-yrityksessä.
+Tässä artikkelissa kerrotaan, miten järjestelmänvalvoja-, sähköisen raportoinnin kehittäjä- tai sähköisen raportoinnin toiminnallinen konsultti -roolin käyttäjä voi määrittää [Sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehyksen parametrit, suunnitella uuden ER-ratkaisun vaaditut ER-[kokoonpanot](general-electronic-reporting.md#Configuration) käyttämään varastonhallintajärjestelmää ja luoda mukautettuja varaston sijainnin etikettejä Zebra Programming Language (ZPL) II -muodossa. Nämä vaiheet voidaan suorittaa **USRT**-yrityksessä.
 
 ## <a name="business-scenario"></a>Liiketoimintaskenaario
 

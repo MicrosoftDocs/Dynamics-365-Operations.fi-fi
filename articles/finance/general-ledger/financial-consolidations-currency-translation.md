@@ -1,6 +1,6 @@
 ---
 title: Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
-description: Tässä ohjeaiheessa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja.
+description: Tässä artikkelissa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713865"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846854"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään tapaa, jolla sekä Microsoft Dynamics 365 Financen että talousraportointi tekevät konsolidointeja. Siinä käsitellään skenaarioita, joihin sisältyy monen yrityksen raportointi, koonti, eliminointi ja vähimmäisosuus. Siinä selitään myös, miten käsitellään erikoistilanteita, kuten skenaarioita, joissa yrityksillä on erilaiset tilikaudet tai tilikartat.
+Tässä artikkelissa käsitellään tapaa, jolla sekä Microsoft Dynamics 365 Finance että talousraportointi tekevät konsolidointeja. Siinä käsitellään skenaarioita, joihin sisältyy monen yrityksen raportointi, koonti, eliminointi ja vähimmäisosuus. Siinä selitään myös, miten käsitellään erikoistilanteita, kuten skenaarioita, joissa yrityksillä on erilaiset tilikaudet tai tilikartat.
 
-Tämä ohjeaihe on kirjoitettu käyttäjille ja toiminnallisille konsulteille. Siinä oletetaan, että lukijoilla on yleistason tietämys Financesta ja taloushallinnon raportoinnista. Perusasetuksia ei käsitellä.
+Tämä artikkeli on kirjoitettu käyttäjille ja toiminnallisille konsulteille. Siinä oletetaan, että lukijoilla on yleistason tietämys Financesta ja taloushallinnon raportoinnista. Perusasetuksia ei käsitellä.
 
 > [!NOTE]
-> Financessa käytetään termiä *yritys*, kun taas taloushallinnon raportoinnissa puhutaan usein *yhtiöstä*. Kumpaakin termiä käytetään tässä ohjeaiheessa. Tämän ohjeaiheen tarkoituksen kannata niiden merkityksessä ei ole eroa.
+> Financessa käytetään termiä *yritys*, kun taas taloushallinnon raportoinnissa puhutaan usein *yhtiöstä*. Kumpaakin termiä käytetään tässä artikkelissa. Tämän artikkelin tarkoituksen kannalta niiden merkityksessä ei ole eroa.
 
 ## <a name="audience"></a>Yleisö
-Tämä ohjeaihe on tarkoitettu taloushallinnon ja kirjanpidon käyttäjille sekä sovelluskonsulteille, jotka haluavat konsolidoida monen yrityksen tietoja ja tietoja, joissa on käytössä monta valuuttaa, Finance and Reportingin ja taloushallinnon raporttien avulla.
+Tämä artikkeli on tarkoitettu taloushallinnon ja kirjanpidon käyttäjille sekä sovelluskonsulteille, jotka haluavat konsolidoida Finance and Reportingin sekä taloushallinnon raportoinnin avulla monen yrityksen tietoja ja tietoja, joissa on käytössä monta valuuttaa.
 
 ## <a name="approach"></a>Menetelmä
 Finance käsittelee konsolidoinnin erillisen yrityksen avulla. Tällä tavoin konsolidointi voidaan tehdä yhdessä esiintymässä samalla, kun tietoja on mahdollista tuoda muista lähteistä. Konsolidointiprosessi on suoritettava aina, kun lähdeyrityksiin tehdään muutoksia.

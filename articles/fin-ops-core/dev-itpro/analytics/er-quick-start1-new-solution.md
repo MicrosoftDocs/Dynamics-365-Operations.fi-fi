@@ -1,6 +1,6 @@
 ---
-title: Suunnittele uusi ER-ratkaisu mukautetun raportin tulostamiseen
-description: Tässä ohjeaiheessa kerrotaan miten ER-ratkaisu mukautetun raportin tulostamiseen suunnitellaan.
+title: Uuden sähköisen raportoinnin ratkaisun suunnitteleminen mukautetun raportin tulostamista varten
+description: Tässä artikkelissa kerrotaan, miten ER-ratkaisu mukautetun raportin tulostamiseen suunnitellaan.
 author: NickSelin
 ms.date: 08/10/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 7194fa9243362d4eb61d6ce706e30a66c9cf3217
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323839"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847485"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Suunnittele uusi ER-ratkaisu mukautetun raportin tulostamiseen
 

@@ -1,6 +1,6 @@
 ---
 title: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
-description: Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa.
+description: Tässä artikkelissa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa.
 author: sericks007
 ms.date: 01/14/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 68082ad0ae264b76a852d8d12412af8c4ad917703441c41e67743d1b499a8d73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4096089978032f150bf6d711711a948cf1d3232f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879772"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa esitetään vertailu pilvessä ja paikan päällä käytettävissä olevien ominaisuuksien välillä seuraavien sovellusten osalta:
+Tässä artikkelissa esitetään vertailu pilvessä ja paikan päällä käytettävissä olevien ominaisuuksien välillä seuraavien sovellusten osalta:
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)

@@ -1,6 +1,6 @@
 ---
 title: Tallennetut näkymät
-description: Tässä aiheessa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
+description: Tässä artikkelissa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845410"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -196,7 +196,7 @@ Luetteloon sivun kaikista julkaistuista näkymistä on käytettävissä seuraava
 
 ## <a name="managing-views-globally"></a>Näkymien hallinta globaalisti
 
-Vaikka jotkin hallintaominaisuudet näkyvät kaikilla sivuilla, kuten tässä ohjeaiheessa on mainittu, **Järjestelmän järjestelmänvalvojat** ja **Tallennetut näkymän järjestelmänvalvojat** voivat hallita näkymiä automaattisesti **Mukautus**-sivun kautta. Erityisesti tällä sivulla on seuraavat osiot ja ominaisuudet: 
+Vaikka jotkin hallintaominaisuudet näkyvät kaikilla sivuilla, kuten tässä artikkelissa on mainittu, **Järjestelmän järjestelmänvalvojat** ja **Tallennetut näkymän järjestelmänvalvojat** voivat hallita näkymiä automaattisesti **Mukautus**-sivun kautta. Erityisesti tällä sivulla on seuraavat osiot ja ominaisuudet: 
 
 - **Julkaistut näkymät** – Tässä osassa luetellaan kaikki organisaatiollesi julkaistut näkymät. Tässä voit julkaista näkymän uudelleen sen jälkeen, kun olet oikaissut näkymän kohteena olevat käyttöoikeusroolit tai yritykset. Voit myös viedä ja poistaa näkymiä sekä peruuttaa niiden julkaisun. Voit luoda näkymästä henkilökohtaisen kopion **Tallenna henkilökohtaiseksi** -toiminnon avulla, jolloin voit päivittää näkymän tai saada paremman käsityksen sen sisällöstä. 
 - **Julkaisemattomat näkymät** – Tässä osassa luetellaan kaikki järjestelmän organisaationäkymät, joita ei ole tällä hetkellä julkaistu. Nämä näkymät tulevat useimmiten järjestelmään tuontitoiminnon avulla. Voit julkaista, viedä ja poistaa näitä näkymiä. Versioon 10.0.12 lisätty **Pikajulkaisu**-toiminto mahdollistaa useiden tämän osan näkymien julkaisemisen yhdessä toiminnossa käyttämällä aiemmin luotua käyttöoikeusroolia ja yritysten konfiguraatioita. Voit luoda näkymästä henkilökohtaisia kopioita **Tallenna henkilökohtaisena** -toiminnon avulla, jolloin saada paremman käsityksen niiden sisällöstä.

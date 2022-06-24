@@ -1,6 +1,6 @@
 ---
 title: Ennakkomaksulaskujen ja ennakkomaksujen vertailu
-description: Tässä ohjeaiheessa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin.
+description: Tässä artikkelissa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f05f1d8d2a1fb454f3f227d2cc8138f2b779ff87
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895193"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskujen ja ennakkomaksujen vertailu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Yksi menetelmä luo ennakkomaksulaskun, joka on liitetty ostotilaukseen. Toinen menetelmä luo ennakkomaksukirjauskansion tositteita luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi.
+Tässä artikkelissa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Yksi menetelmä luo ennakkomaksulaskun, joka on liitetty ostotilaukseen. Toinen menetelmä luo ennakkomaksukirjauskansion tositteita luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi.
 
 Yritykset saattavat suorittaa ennakkomaksuja toimittajille tavaroista tai palveluista jo ennen niiden toimittamista. Ennakkomaksuja voidaan suorittaa toimittajille kahdella tavalla. Riskien minimoimiseksi ennakkomaksuja voi seurata määrittämällä ennakkomaksun ostotilaukselle. Tällöin on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Tätä menetelmää kutsutaan ennakkomaksun laskuttamiseksi. Yritykset, jotka eivät halua seurata ennakkomaksuja kovin tarkasti tai eivät saa toimittajalta ennakkomaksulaskuja, voivat käyttää ennakkomaksujen laskutusmenetelmän sijaan ennakkomaksukirjauskansion tositteita. Ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi. Tässä menetelmässä ei voi seurata, mitkä ennakkomaksut toimittajalle vastaavat mitäkin ostotilausta. Voit kuitenkin merkitä kirjatun ennakkomaksun tilitettäväksi ostotilausta vastaan.
 

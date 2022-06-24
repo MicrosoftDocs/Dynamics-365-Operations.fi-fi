@@ -1,6 +1,6 @@
 ---
-title: Vero-integroinnin tietokenttien lisääminen laajennusten avulla
-description: Tässä aiheessa kerrotaan, kuinka X++ -laajennuksia käytetään tietokenttien lisäämiseen verointegrointiin.
+title: Tietokenttien lisääminen verointegrointiin laajennusten avulla
+description: Tässä artikkelissa kerrotaan, kuinka X++ -laajennuksia käytetään tietokenttien lisäämiseen verointegrointiin.
 author: qire
 ms.date: 04/27/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 64c68ef6804297f86b5d9dc1933b0c16a0d42aae
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 184012dcc0b68e017bb28d8d73caa9e8415bdbfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695385"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871046"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Vero-integroinnin tietokenttien lisääminen laajennuksen avulla
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä aiheessa kerrotaan, kuinka X++ -laajennuksia käytetään tietokenttien lisäämiseen verointegrointiin. Nämä kentät voidaan laajentaa veropalvelun verotietomalliin, ja niitä voidaan käyttää verokoodien määrittämiseen. Lisätietoja on kohdassa [Tietokenttien lisääminen verokonfiguraatioihin](tax-service-add-data-fields-tax-configurations.md).
+Tässä artikkelissa kerrotaan, kuinka X++ -laajennuksia käytetään tietokenttien lisäämiseen verointegrointiin. Nämä kentät voidaan laajentaa veropalvelun verotietomalliin, ja niitä voidaan käyttää verokoodien määrittämiseen. Lisätietoja on kohdassa [Tietokenttien lisääminen verokonfiguraatioihin](tax-service-add-data-fields-tax-configurations.md).
 
 ## <a name="data-model"></a>Tietomalli
 
@@ -359,7 +359,7 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 Tässä koodissa `_destination` on paketointiobjekti, jota käytetään pyynnön luonnissa ja `_source` on `TaxIntegrationLineObject`-objekti.
 
 > [!NOTE]
-> Määritä kentän nimi, jota käytetään pyynnössä nimellä **private const str**. Merkkijonon on oltava täsmälleen sama kuin solmun nimi (ei selite), joka lisättiin aiheessa [Tietokenttien lisääminen veromäärityksiin](tax-service-add-data-fields-tax-configurations.md).
+> Määritä kentän nimi, jota käytetään pyynnössä nimellä **private const str**. Merkkijonon on oltava täsmälleen sama kuin solmun nimi (ei selite), joka lisättiin artikkelissa [Tietokenttien lisääminen veromäärityksiin](tax-service-add-data-fields-tax-configurations.md).
 > 
 > Määritä kenttä menetelmässä **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** käyttämällä **SetField**-menetelmää. Toisen parametrin tietotyypin on oltava **merkkijono**. Jos tietotyyppi ei ole **merkkijono**, muunna se merkkijonoksi.
 > Jos tietotyyppi on X++ -kielen **luettelointityyppi**, suosittelemme luettelointiarvon muuntamiseen merkkijonoksi **enum2Symbol**-menetelmää. Veromäärityksessä lisätyn luettelointiarvon on täsmättävä täysin luetteloinnin nimen kanssa. Seuraavassa on luettelo luettelointiarvon, selitteen ja nimen eroista.

@@ -1,6 +1,6 @@
 ---
 title: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
-description: Tässä aiheessa käsitellään toimintoja, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations ista ja aiemmista versioista.
+description: Tässä artikkelissa käsitellään toimintoja, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations ista ja aiemmista versioista.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063234"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866182"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -28,9 +28,9 @@ ms.locfileid: "8063234"
 
 
 > [!IMPORTANT]
-> Tätä ohjeaihetta ei enää päivitetä. Jos haluat nähdä taloushallinnon ja toimintojen sovelluksista poistettujen tai niiden vanhentuneiden toimintojen luettelon, hae **Poistetut ja vanhentuneet toiminnot** -sisältö, joka viittaa käyttämääsi sovellukseen.
+> Tätä artikkelia ei enää päivitetä. Jos haluat nähdä taloushallinnon ja toimintojen sovelluksista poistettujen tai niiden vanhentuneiden toimintojen luettelon, hae **Poistetut ja vanhentuneet toiminnot** -sisältö, joka viittaa käyttämääsi sovellukseen.
 
-Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhentuneet Dynamics 365 for Finance and Operations -sovelluksessa ja tuotteen aiemmissa versioissa.
+Tässä artikkelissa kuvataan toiminnot, jotka on poistettu tai jotka ovat vanhentuneet Dynamics 365 for Finance and Operations -sovelluksessa ja tuotteen aiemmissa versioissa.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
@@ -889,7 +889,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- ja AxBC-integraatiot
 
-Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd \<Document\>** -luokkia.
+Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana. Dynamics AX sisältää asiakirjoihin ja .NET Business Connector (AxBC) -ratkaisuun perustuvia palveluja. Asiakirja luodaan XML-muotoisena. XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois. Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset. Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana. Asiakirjoihin perustuvat palvelut käyttävät **Axd \<Document\>** -luokkia.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|

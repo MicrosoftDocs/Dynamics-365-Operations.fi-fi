@@ -1,6 +1,6 @@
 ---
 title: Etujen hallinnan yleiskatsaus
-description: Tässä aiheessa on Dynamics 365 Human Resourcesin etujen hallintaominaisuuden yleiskatsaus.
+description: Tässä artikkelissa on Dynamics 365 Human Resourcesin etujen hallintaominaisuuden yleiskatsaus.
 author: twheeloc
 ms.date: 12/06/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e53a68aed2e4b1e0b0d7797e7326e223c47443f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687188"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901144"
 ---
 # <a name="benefits-management-overview"></a>Etujen hallinnan yleiskatsaus
 
@@ -44,7 +44,7 @@ Jos haluat käyttää demotietoja, sinun on otettava eristysympäristösi uudell
 
 ## <a name="enable-benefits-management"></a>Etujen hallinnan käyttöönotto
 
-Tässä aiheessa esitellään, miten ominaisuudet otetaan käyttöön Human Resourcesissa. Siinä käsitellään myös, mitkä Human Resourcesin olemassa olevat ominaisuudet etujen hallinta korvaa ja mitkä ominaisuudet poistetaan käytöstä sen jälkeen, kun etujen hallinta otetaan käyttöön.
+Tässä artikkeleissa esitellään, miten ominaisuudet otetaan käyttöön Human Resourcesissa. Siinä käsitellään myös, mitkä Human Resourcesin olemassa olevat ominaisuudet etujen hallinta korvaa ja mitkä ominaisuudet poistetaan käytöstä sen jälkeen, kun etujen hallinta otetaan käyttöön.
 
 > [!IMPORTANT]
 > Kun etujenhallinta on otettu käyttöön **Tuotanto**-ympäristössä, sitä ei voi poistaa käytöstä. On suositeltavaa ottaa käyttöön ja testata etujenhallinta **Eristys**-ympäristössä, ennen kuin otat sen käyttöön **Tuotanto** -ympäristössä. Vanhojen etutoimintojen ja uusien etujen hallintatoimintojen välillä on huomattavia eroja, jotka edellyttävät lisäasetuksia ja jotka on testattava ennen niiden asettamista tuotantoon.

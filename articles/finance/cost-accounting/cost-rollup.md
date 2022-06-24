@@ -1,6 +1,6 @@
 ---
 title: Kustannusten koontikäytäntö ja yleiskustannuslaskenta
-description: Tässä ohjeaiheessa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt.
+description: Tässä artikkelissa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f35bf3e900b8dd9c1864be8668f7ff7296924c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734426"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874606"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
@@ -33,7 +33,7 @@ Kustannuslaskennan avulla saat tietoja siitä, miten voit kustannusvirta liittyy
 -   Yleiskustannuslaskenta voi luoda erittäin suuren määrän kustannusmerkintöjä.
 -   Kustannusobjektien välistä kustannusvirtaa ei voi jäljittää.
 
-Nämä vaikutukset voi välttää määrittämällä kustannusten kohdistuksen kustannuslaskennassa organisaation johdon raportointivaatimusten mukaisiksi. Tässä ohjeaiheessa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt.
+Nämä vaikutukset voi välttää määrittämällä kustannusten kohdistuksen kustannuslaskennassa organisaation johdon raportointivaatimusten mukaisiksi. Tässä artikkelissa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt.
 
 > [!NOTE]
 > Voit määrityksiä, jos raportointivaatimukset muuttuvat.

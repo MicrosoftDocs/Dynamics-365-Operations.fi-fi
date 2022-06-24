@@ -1,6 +1,6 @@
 ---
 title: Vuokrausten tallentaminen ulkomaan valuuttana
-description: Tässä ohjeaiheessa kerrotaan, miten vuokrasopimukset tallennetaan muuna kuin kirjanpito- tai raportointivaluuttana.
+description: Tässä artikkelissa kerrotaan, miten vuokrasopimukset tallennetaan muuna kuin kirjanpito- tai raportointivaluuttana.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7da4ddb5939d4f950eb7f8c39a9c56edb2ec4db9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 56c15e648d6aa515192a6f41ba06df6405ca79f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878099"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Vuokrausten tallentaminen ulkomaan valuuttana
 
 [!include [banner](../includes/banner.md)]
 
-Resurssin vuokrauksen tilit vuokrauksille, joiden valuutta on muu kuin kirjanpito- tai raportointivaluutta, luodaan **Kirjanpidon asetus** -sivulla. Kaikki vuokrasopimukset on syötettävä niiden tapahtumavaluuttana. Toisin sanoen ne on syötettävä vuokrasopimuksessa määritettynä valuuttana. Tässä ohjeaiheessa kerrotaan, miten vuokrasopimukset tallennetaan muuna kuin kirjanpito- tai raportointivaluuttana.
+Resurssin vuokrauksen tilit vuokrauksille, joiden valuutta on muu kuin kirjanpito- tai raportointivaluutta, luodaan **Kirjanpidon asetus** -sivulla. Kaikki vuokrasopimukset on syötettävä niiden tapahtumavaluuttana. Toisin sanoen ne on syötettävä vuokrasopimuksessa määritettynä valuuttana. Tässä artikkelissa kerrotaan, miten vuokrasopimukset tallennetaan muuna kuin kirjanpito- tai raportointivaluuttana.
 
 Jos määrität vuokrasopimuksen ulkomaan valuuttana, käyttöoikeusomaisuuserälle tehdään poistoja sekä kirjanpitovaluuttana että raportointivaluuttana. Nämä valuutat määritetään **Kirjanpidon asetukset** -sivulla. Tätä toimintoa käytetään myös käyttöomaisuudessa. Kun luot vuokrauksen ulkomaanvaluuttana, valitse tapahtumavaluutta **Valuutta**-kentässä.
 

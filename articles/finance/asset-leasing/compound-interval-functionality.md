@@ -1,6 +1,6 @@
 ---
 title: Yhdistämisvälin toiminto
-description: Tässä ohje aiheessa on tietoja, joiden avulla voit valita kuukausittaisten, neljännesvuosittaisten, puolivuosittaisten ja vuosittaisten yhdistämisvälin.
+description: Tässä artikkelissa on tietoja, joiden avulla voit valita kuukausittaisten, neljännesvuosittaisten, puolivuosittaisten ja vuosittaisten yhdistämisvälin.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710439"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886411"
 ---
 # <a name="compounding-interval-functionality"></a>Yhdistämisvälin toiminto
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohje aiheessa on tietoja, joiden avulla voit valita kuukausittaisten, neljännesvuosittaisten, puolivuosittaisten ja vuosittaisten yhdistämisvälin. Yhdistämisvälin toimintoa käytetään määritettäessä yhdistämiskausien määrä vuodessa vuokrasopimuksen maksuaikataulussa. Tämän ohjeaiheen kaikki neljä esimerkkiä osoittavat, miltä vuokrasopimuksen maksuaikataulu näyttää eri väleissä.
+Tässä artikkelissa on tietoja, joiden avulla voit valita kuukausittaisten, neljännesvuosittaisten, puolivuosittaisten ja vuosittaisten yhdistämisvälin. Yhdistämisvälin toimintoa käytetään määritettäessä yhdistämiskausien määrä vuodessa vuokrasopimuksen maksuaikataulussa. Tämän artikkelin kaikki neljä esimerkkiä osoittavat, miltä vuokrasopimuksen maksuaikataulu näyttää eri väleissä.
 
 Et voi valita yhdistämisväliä, joka toistuu vuokrasopimuksen maksutiheyttä harvemmin. Esimerkiksi neljännesvuosittaista yhdistämisväliä ei voi käyttää kuukausittaisen maksutiheyden kanssa, eikä vuosittaista yhdistämisväliä puolivuosittaisen maksutiheyden kanssa. Jos yrität valita yhdistämisvälin, joka toistuu vuokrasopimuksen maksutiheyttä harvemmin, näyttöön tulee virhesanoma.
 
 > [!NOTE]
-> Tämän ohjeaiheen neljässä esimerkissä yhdistämisväli vastaa maksutiheyttä.
+> Tämän artikkelin neljässä esimerkissä yhdistämisväli vastaa maksutiheyttä.
 
 ## <a name="examples"></a>Esimerkkejä
 

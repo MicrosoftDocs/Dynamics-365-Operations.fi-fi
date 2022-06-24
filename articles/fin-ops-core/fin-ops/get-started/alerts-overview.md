@@ -1,6 +1,6 @@
 ---
 title: Hälytysten yleiskuvaus (sisältää videon)
-description: Tämä ohjeaihe sisältää yleisiä tietoja hälytyksistä. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana.
+description: Tässä artikkelissa on yleistietoja hälytyksistä. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana.
 author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4b63ac8a09efb9ab449b651d030bd14a24d5cc36
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850061"
 ---
 # <a name="alerts-overview"></a>Hälytysten yleiskuvaus
 
