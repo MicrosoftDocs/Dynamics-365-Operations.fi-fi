@@ -1,6 +1,6 @@
 ---
-title: Toimittajalaskun arvonlisäveron laskeminen ja täsmäytys
-description: Tässä ohjeaiheessa kerrotaan, miten toimittajan laskun arvonlisäveroa oikaistaan Dynamics 365 Financessa.
+title: Toimittajan laskun arvonlisäveron laskeminen ja täsmäytys
+description: Tässä artikkelissa kerrotaan, miten toimittajan laskun arvonlisäveroa oikaistaan Dynamics 365 Financessa.
 author: twheeloc
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d4d6a23f6f58906730c5ce00c5fe06885aaa6da
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 9a1093631688351d065d6b55bc65055b6f92d256
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734686"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868358"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Toimittajan laskun arvonlisäveron laskeminen ja täsmäytys
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään toimittajan laskun arvonlisäveron oikaisemista. Jos alkuperäinen lähdeasiakirja sisältää eri verosummat kuin lasketut summat, voit oikaista summat ennen kirjaamista. Tässä tehtävässä käytetään esittely-yritystä DEMF.
+Tässä artikkelissa käsitellään toimittajan laskun arvonlisäveron oikaisemista. Jos alkuperäinen lähdeasiakirja sisältää eri verosummat kuin lasketut summat, voit oikaista summat ennen kirjaamista. Tässä tehtävässä käytetään esittely-yritystä DEMF.
 
 1. Siirry kohtaan **Ostoreskontra > Laskut > Laskun kirjauskansio**.
 2. Valitse **Uusi**.

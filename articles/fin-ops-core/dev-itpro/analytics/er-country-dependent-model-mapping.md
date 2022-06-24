@@ -1,6 +1,6 @@
 ---
-title: Maakontekstin mukaan määräytyvien ER-mallimääritysten määrittäminen
-description: Tässä ohjeaiheessa käsitellään ER-mallimääritysten määrittämistä siten, että ne määräytyvät sen yrityksen maa- tai aluekontekstista, jonka määrittää niiden käytön.
+title: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
+description: Tässä artikkelissa käsitellään ER-mallimääritysten määrittämistä siten, että ne määräytyvät sen yrityksen maa- tai aluekontekstista, jonka määrittää niiden käytön.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605368"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883872"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Maakontekstin mukaan määräytyvien ER-mallimääritysten määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
-Voit määrittää sähköisen raporttimallin (ER-mallin) määritykset siten, että ne noudattavat yleistä ER-tietomallia mutta koskevat Dynamics 365 Financea. Tässä ohjeaiheessa käsitellä tapaa, jolla ER-tietomalliin määritetään useita ER-mallimäärityksiä. Niiden tarkoituksena on hallita sitä, miten vastaavat ER-muodot käyttävät niitä, kun näitä ER-muotoja suorittavissa yrityksissä ei ole sama maa- tai aluekonteksti.
+Voit määrittää sähköisen raporttimallin (ER-mallin) määritykset siten, että ne noudattavat yleistä ER-tietomallia mutta koskevat Dynamics 365 Financea. Tässä artikkelissa käsitellä tapaa, jolla ER-tietomalliin määritetään useita ER-mallimäärityksiä. Niiden tarkoituksena on hallita sitä, miten vastaavat ER-muodot käyttävät niitä, kun näitä ER-muotoja suorittavissa yrityksissä ei ole sama maa- tai aluekonteksti.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:
+Tämän artikkelin esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:
 
 - Finance-käyttöoikeudet seuraaville rooleille:
     - Sähköisen raportoinnin kehittäjä
@@ -42,11 +42,11 @@ Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksi
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
-Joissakin tämän ohjeaiheen vaiheissa on suoritettava ER-muoto. Joissakin tapauksissa sen yrityksen maa- tai aluekonteksti, johon olet kirjautuneena, vaikuttaa ER-muodon suorittamiseen. Voit suorittaa ER-muodon nykyisessä RCS-esiintymässä, jos yrityksen, jossa tarvittava maa- tai aluekonteksti on, on käytettävissä RCS:ssä. Muussa tapauksessa Finance-esiintymään on ladattava ER-tietomallia käyttävän ER-mallin määrityksen ja ER-muodon määritysten täydellinen versio ja ER-muoto on sitten suoritettava Finance-esiintymässä. Lisätietoja RCS:n määritysten tuomisesta Finance-esiintymään on kohdassa [Määritysten tuonti RCS:stä](rcs-download-configurations.md).
+Joissakin tämän artikkelin vaiheissa on suoritettava ER-muoto. Joissakin tapauksissa sen yrityksen maa- tai aluekonteksti, johon olet kirjautuneena, vaikuttaa ER-muodon suorittamiseen. Voit suorittaa ER-muodon nykyisessä RCS-esiintymässä, jos yrityksen, jossa tarvittava maa- tai aluekonteksti on, on käytettävissä RCS:ssä. Muussa tapauksessa Finance-esiintymään on ladattava ER-tietomallia käyttävän ER-mallin määrityksen ja ER-muodon määritysten täydellinen versio ja ER-muoto on sitten suoritettava Finance-esiintymässä. Lisätietoja RCS:n määritysten tuomisesta Finance-esiintymään on kohdassa [Määritysten tuonti RCS:stä](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>Yhden mallin yhdistäminen
 
-Suunnittele tarvittavat ER-osat tämän ohjeaiheen [Liitteen 1](#appendix1) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)** -mallin yhdistämismääritys, joka sisältää **Aloituskohta 1** -määritelmän mallimäärityksen.
+Suunnittele tarvittavat ER-osat tämän artikkelin [liitteen 1](#appendix1) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)** -mallin yhdistämismääritys, joka sisältää **Aloituskohta 1** -määritelmän mallimäärityksen.
 
 ![ER-konfiguraatiot -sivu, Muoto määrityskonfiguraation oppimiseksi.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Huomaa, että selain ehdottaa suoritetun ER-muodon muodostaman tekstitiedoston l
 
 ## <a name="multiple-shared-model-mappings-case"></a>Usean jaetun mallin yhdistäminen
 
-Suunnittele tarvittavat ER-osat tämän ohjeaiheen [Liitteen 2](#appendix2) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)**- ja **Yhdistämismääritys (yleinen), mukautettu** -mallin yhdistämismääritykset, joista kumpikin sisältää **Aloituskohta 1** -määritelmän mallimäärityksen.
+Suunnittele tarvittavat ER-osat tämän artikkelin [liitteen 2](#appendix2) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)**- ja **Yhdistämismääritys (yleinen), mukautettu** -mallin yhdistämismääritykset, joista kumpikin sisältää **Aloituskohta 1** -määritelmän mallimäärityksen.
 
 ![ER-konfiguroinnit -sivu, yleisen mukautetun konfiguraation määritys.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Huomaa, että valitun ER-muodon suorittaminen onnistuu. Selain ehdottaa suoritet
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Usean yhdistelmämallin yhdistämismääritykset
 
-Suunnittele tarvittavat ER-osat tämän ohjeaiheen [Liitteen 3](#appendix3) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)**-, **Yhdistämismääritys (yleinen), mukautettu**- ja **Yhdistämismääritys (FR)** -mallin yhdistämismääritykset, jotka sisältävät **Aloituskohta 1** -määritelmän mallimäärityksen.
+Suunnittele tarvittavat ER-osat tämän artikkelin [liitteen 3](#appendix3) ohjeiden mukaan. Sinulla on nyt **Yhdistämismääritys (yleinen)**-, **Yhdistämismääritys (yleinen), mukautettu**- ja **Yhdistämismääritys (FR)** -mallin yhdistämismääritykset, jotka sisältävät **Aloituskohta 1** -määritelmän mallimäärityksen.
 
 Huomaa, että **Yhdistämismääritys (FR)** -mallin yhdistämismäärityksen versio 1 on määritetty siten, että se koskee vain niissä Finance-yrityksissä suoritettavia **Yhdistämismääritysten oppimismalli** -mallin ER-muotoja, joissa on ranskalainen maa- tai aluekonteksti.
 
@@ -138,10 +138,10 @@ Huomaa, että valitun ER-muodon suorittaminen onnistuu. Selain ehdottaa suoritet
 
 Kuten edellä on huomattu, ER-muodon suorittamiseen valittu mallimääritys toimii seuraavasti:
 
-- ER-muodon käyttämä mallimäärityksen määritelmä määritetään (tämän ohjeaiheen esimerkeissä **Aloituskohta 1**).
-- Kaikkia yhdistämismäärityksiä, joissa määritetyn määritelmän sisältämä yhdistämismääritys on ja jotka vastaavat määritettyjä maa- tai aluekohtaisia rajoituksia, on mahdollista käyttää ER-muodon suorittamiseen (tämän ohjeaiheen esimerkeissä **Yhdistämismääritykset (Yleinen)**, **Yhdistämismääritykset (Yleinen), mukautettu** ja **Yhdistämismääritys (FR)**).
-- Maa- tai aluekohtaisia rajoituksia sisältävän oletusmallimäärityksen valintaprioriteetti on korkein (tämän ohjeaiheen esimerkeissä **Yhdistämismääritys (FR)**).
-- Oletusmallimäärityksellä, jossa ei ole maa- tai aluekohtaisia rajoituksia, on seuraavaksi korkein valintaprioriteetti (tämän ohjeaiheen esimerkeissä **Yhdistämismääritys (Yleinen), mukautettu**).
+- ER-muodon käyttämä mallimäärityksen määritelmä määritetään (tämän artikkelin esimerkeissä **Aloituskohta 1**).
+- Kaikkia yhdistämismäärityksiä, joissa määritetyn määritelmän sisältämä yhdistämismääritys on ja jotka vastaavat määritettyjä maa- tai aluekohtaisia rajoituksia, on mahdollista käyttää ER-muodon suorittamiseen (tämän artikkelin esimerkeissä **Yhdistämismääritykset (Yleinen)**, **Yhdistämismääritykset (Yleinen), mukautettu** ja **Yhdistämismääritys (FR)**).
+- Maa- tai aluekohtaisia rajoituksia sisältävän oletusmallimäärityksen valintaprioriteetti on korkein (tämän artikkelin esimerkeissä **Yhdistämismääritys (FR)**).
+- Oletusmallimäärityksellä, jossa ei ole maa- tai aluekohtaisia rajoituksia, on seuraavaksi korkein valintaprioriteetti (tämän artikkelin esimerkeissä **Yhdistämismääritys (Yleinen), mukautettu**).
 - Jos mallimäärityksellä on maa- tai aluekohtaisia rajoituksia, sen valintaprioriteetti on korkeampi kuin mallimääritys, jossa ei ole maa- tai aluekohtaisia rajoituksia.
 
 Seuraavassa taulukossa on tietoja mallin määritysvalinnasta kaikissa mahdollisissa mallin määritysasetustilanteissa:

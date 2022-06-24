@@ -1,6 +1,6 @@
 ---
 title: ER-muodon suunnittelu Excel-muotoisen raportin luomiseksi ja kuvien upottamiseksi sivun ylä- ja alatunnisteisiin
-description: Tässä aiheessa käsitellään sähköisen raportoinnin (ER) käyttämistä sellaisten liiketoiminta-asiakirjojen luomiseen, joiden sivujen ylä- ja alatunnisteisiin on upotettu kuvia ja muotoja.
+description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) käyttämistä sellaisten liiketoiminta-asiakirjojen luomiseen, joiden sivujen ylä- ja alatunnisteisiin on upotettu kuvia ja muotoja.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323772"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854840"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>ER-muodon suunnittelu Excel-muotoisen raportin luomiseksi ja kuvien upottamiseksi sivun ylä- ja alatunnisteisiin
 
 [!include[banner](../includes/banner.md)]
 
-Tämän ohjeessa selitetään, miten, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolissa oleva käyttäjä voi suorittaa nämä tehtävät:
+Tämän artikkelissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin toiminnallisen konsultin roolissa oleva käyttäjä voi suorittaa nämä tehtävät:
 
 - Määritä [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehyksen parametrit.
 - Tuo ER-[konfiguraatiot](general-electronic-reporting.md#Configuration), jotka Microsoft on [tarjonnut](general-electronic-reporting.md#Provider) ja joita käytetään [vapaamuotolaskujen](../../../finance/accounts-receivable/create-free-text-invoice-new.md) luomiseen [mallin](er-fillable-excel.md#excel-file-component) perusteella Microsoft Excel -muodossa.
 - Luo [mukautettu (johdettu)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) versio ER-muodon vakiokonfiguraatiosta, jonka Microsoft tarjoaa.
 - Muokkaa mukautettua ER-muotokonfiguraatiota siten, että se luo vapaatekstilaskuraportin, jossa on yrityksen logokuva alatunnisteessa.
 
-Tässä ohjeaiheessa kuvatut toimenpiteet voidaan suorittaa **USMF**-yrityksessä. Koodausta ei tarvita. Lataa ja tallenna seuraava tiedosto ennen aloittamista.
+Tässä artikkelissa kuvatut toimenpiteet voidaan suorittaa **USMF**-yrityksessä. Koodausta ei tarvita. Lataa ja tallenna seuraava tiedosto ennen aloittamista.
 
 | kuvaus        | Tiedostonimi |
 |--------------------|-----------|
@@ -132,7 +132,7 @@ Lisätietoja ER-konfiguraation lähteistä on kohdassa [Konfiguraation lähteide
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a>Tuo ER-vakiokonfiguraatiot
 
-Jos haluat lisätä ER-vakiokonfiguraatiot nykyiseen Dynamics 365 Finance -esiintymääsi, sinun on tuotava ne ER-[säilöstä](general-electronic-reporting.md#Repository), joka määritettiin kyseiselle esiintymälle.
+ER-vakiomääritys voidaan lisätä Dynamics 365 Financen nykyiseen esiintymään tuomalla ne kyseiselle esiintymällä määritetystä ER-[säilöstä](general-electronic-reporting.md#Repository).
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Valitse **Lokalisoinnin konfiguraatiot** -sivun **Konfiguraation lähteet** -osassa **Microsoft**-ruutu ja valitse sitten **Säilöt** nähdäksesi luettelon **Microsoft**-toimittajan säilöistä.

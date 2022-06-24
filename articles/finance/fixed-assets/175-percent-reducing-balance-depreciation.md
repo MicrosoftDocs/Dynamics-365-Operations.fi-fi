@@ -1,6 +1,6 @@
 ---
 title: 175 prosentin jäännöspoisto
-description: Tässä ohjeaiheessa on yleiskuvaus 175 prosentin jäännösarvon poistomenetelmästä.
+description: Tässä artikkelissa on yleiskuvaus 175 prosentin jäännösarvon poistomenetelmästä.
 author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9424741fa50034a97e9971dcd2d7416968c964
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 68c10a1fe221731f7304fc0da92ed314b66dc13f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870188"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175 prosentin jäännöspoisto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yleiskuvaus 175 prosentin jäännösarvon poistomenetelmästä.
+Tässä artikkelissa on yleiskuvaus 175 prosentin jäännösarvon poistomenetelmästä.
 
 Kun käyttöomaisuuden poistoprofiili määritetään ja **Poistoprofiilit**-sivun **Menetelmä** -kentästä valitaan **Jäännösarvo 175 %**, tähän poistoprofiiliin liitetyn käyttöomaisuuden poistoprosentti on sama kullakin poistojaksolla. 
 
@@ -41,7 +41,7 @@ Valinta määrittää, mitä valintoja **Kausiväli**-kentässä on käytettävi
 
 Voit säilyttää **Poistovuosi** -kentässä oletusarvon **Kalenteri**. 
 
-**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Alla olevissa esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
+**Kalenteri**-vaihtoehto päivittää joka vuosi poistokannan 1. tammikuuta. Yleensä poistokanta on nettokirjanpitoarvo vähennettynä jäännösarvolla. Tämän artikkelin myöhemmässä esimerkeissä poistokanta on laskentasarakkeen ensimmäisen lausekkeen osoittaja. 
 
 Jos poistovuodeksi valitaan **Kalenteri**, **Kausiväli**-kentässä ovat käytettävissä seuraavat vaihtoehdot:
 

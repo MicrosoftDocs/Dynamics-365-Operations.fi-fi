@@ -1,6 +1,6 @@
 ---
 title: Käytä ER-mallimäärityksissä JOIN-tietolähteitä saadaksesi tietoja useista sovellustaulukoista
-description: Tässä ohjeaiheessa kerrotaan JOIN-tietolähteiden käytöstä sähköisessä raportoinnissa (ER).
+description: Tässä artikkelissa kerrotaan JOIN-tietolähteiden käytöstä sähköisessä raportoinnissa (ER).
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845515"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Käytä sähköisen raportoinnin (ER) mallimäärityksissä JOIN-tietolähteitä saadaksesi tietoja useista sovellustaulukoista
 
@@ -40,15 +40,15 @@ Kun määritetyn **Liitä**-tietolähteen kaikki tietolähteet ovat tyyppiä **T
 > [!NOTE]
 > **VALUEIN**-toiminnon käyttämistä ER-lausekkeissa, joissa määritetään ehtoja tietueiden liittämiselle toisiinsa Liitä-tyypin tietolähteissä, ei vielä tueta. Kohdassa [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md) esitetään lisätietoja tästä toiminnosta.
 
-Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
+Saat lisätietoja tästä toiminnosta suorittamalla tämän artikkelin esimerkin.
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>Esimerkki: JOIN-tietolähteiden käyttö ER-mallimäärityksissä
 
-Seuraavissa vaiheissa selitetään, miten järjestelmänvalvoja tai sähköisen raportoinnin kehittävä voi määrittää sähköisen raportoinnin (ER) mallimäärityksen saadakseen tietoja samanaikaisesti useista sovellustaulukoista käyttämällä **Liitos**-tyypin tietolähteitä parantaakseen tietojen käytön suorituskykyä. Nämä vaiheet voidaan suorittaa mitä tahansa Dynamics 365 Finance -yrityksestä tai Regulatory Configuration Serviceä (RCS) varten.
+Seuraavissa vaiheissa selitetään, miten järjestelmänvalvoja tai sähköisen raportoinnin kehittävä voi määrittää sähköisen raportoinnin (ER) mallimäärityksen saadakseen tietoja samanaikaisesti useista sovellustaulukoista käyttämällä **Liitos**-tyypin tietolähteitä parantaakseen tietojen käytön suorituskykyä. Nämä vaiheet voidaan suorittaa missä tahansa Dynamics 365 Finance -yrityksessä tai Regulatory Configuration Servicesissä (RCS).
 
 ### <a name="prerequisites"></a>Edellytykset
 
-Tämän aiheen esimerkkien suorittaminen edellyttää käyttöoikeuksia johonkin seuraavista riippuen siitä, mitä palvelua vaiheiden suorittamiseen käytetään:
+Tämän artikkelin esimerkkien suorittaminen edellyttää käyttöoikeuksia johonkin seuraavista riippuen siitä, mitä palvelua vaiheiden suorittamiseen käytetään:
 
 **Finance-käyttöoikeudet seuraaville rooleille:**
 
@@ -257,7 +257,7 @@ Tarkista ER-mallin yhdistämismäärityskomponentin asetukset. Komponentti on m�
 
 ## <a name="limitations"></a>Rajoitukset
 
-Kuten tämän ohjeaiheen esimerkistä voi nähdä, **LIITOS**-tietolähde voidaan muodostaa useista tietolähteistä, jotka kuvaavat niitä tietueissa olevia tietoja, jotka on lopulta yhdistettävä. Voit määrittää nämä tietolähteet valmiin ER-[SUODATIN](er-functions-list-filter.md)-toiminnon avulla. Kun määrität tietolähteen niin, että sitä kutsutaan **LIITOS**-tietolähteen ulkopuolelle, voit käyttää yrityksen alueita tietojen valinnan ehdon osana. **LIITOS**-tietolähteen ensimmäinen toteutus ei tue tämäntyyppisiä tietolähteitä. Jos esimerkiksi soitat [SUODATIN](er-functions-list-filter.md)-perusteisen tietolähteen suoritusalueella olevaan suodattimeen perustuvaan tietolähteeseen, näyttöön tulee poikkeus, **LIITOS**-tietolähde, jos kutsuttu tietolähde sisältää yritysalueita osana tietojen valitsemisen ehtoa.
+Kuten tämän artikkelin esimerkistä voi nähdä, **LIITOS**-tietolähde voidaan muodostaa useista tietolähteistä, jotka kuvaavat niitä tietueissa olevia tietoja, jotka on lopulta yhdistettävä. Voit määrittää nämä tietolähteet valmiin ER-[SUODATIN](er-functions-list-filter.md)-toiminnon avulla. Kun määrität tietolähteen niin, että sitä kutsutaan **LIITOS**-tietolähteen ulkopuolelle, voit käyttää yrityksen alueita tietojen valinnan ehdon osana. **LIITOS**-tietolähteen ensimmäinen toteutus ei tue tämäntyyppisiä tietolähteitä. Jos esimerkiksi soitat [SUODATIN](er-functions-list-filter.md)-perusteisen tietolähteen suoritusalueella olevaan suodattimeen perustuvaan tietolähteeseen, näyttöön tulee poikkeus, **LIITOS**-tietolähde, jos kutsuttu tietolähde sisältää yritysalueita osana tietojen valitsemisen ehtoa.
 
 Microsoft Dynamics 365 Finance -version 10.0.12 (elokuu 2020) avulla voit käyttää yrityksen alueita, kun haluat määrittää tietojen valitsemisen ehdoksi [SUODATUKSEEN](er-functions-list-filter.md) perustuvissa tietolähteissä, joita kutsutaan **LIITOS**-tietolähteen suoritusalueella. Sovellus [kysely](../dev-ref/xpp-library-objects.md#query-object-model)-muodostimen rajoitusten vuoksi yritysalueita tuetaan vain **LIITOS**-tietolähteen ensimmäisellä tietolähteellä.
 

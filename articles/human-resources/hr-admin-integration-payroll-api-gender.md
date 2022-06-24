@@ -1,6 +1,6 @@
 ---
 title: Palkanlaskennan ohjelmointirajapinnan Sukupuoli-asetusjoukko
-description: Tässä ohjeaiheessa kuvataan Dynamics 365 Human Resourcesin palkanlaskennan ohjelmointirajapinnan Sukupuoli-asetusjoukko.
+description: Tässä artikkelissa kuvataan Dynamics 365 Human Resourcesin palkanlaskennan ohjelmointirajapinnan Sukupuoli-asetusjoukko.
 author: marcelbf
 ms.date: 06/23/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c84c0e43f149224ff5a57220c71b507c42b44e0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 024646b6b8e9a06478f24aed844219443310d589
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068506"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880506"
 ---
 # <a name="payroll---gender-option-set"></a>Palkanlaskenta - Sukupuoli-asetusjoukko
 
@@ -27,7 +27,7 @@ ms.locfileid: "8068506"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kuvataan Sukupuoli-asetusjoukkoa Dynamics 365 Human Resourcesissa.
+Tässä artikkelissa kuvataan Sukupuoli-asetusjoukkoa Dynamics 365 Human Resourcesissa.
 
 ## <a name="option-set-gender-option"></a>Asetusjoukko: Sukupuoli-asetus
 

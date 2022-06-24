@@ -1,6 +1,6 @@
 ---
 title: Tietojen SharePointista tuonnin määrittäminen
-description: Tässä ohjeaiheessa käsitellään tietojen tuominen Microsoft SharePointista.
+description: Tässä artikkelissa käsitellään tietojen tuominen Microsoft SharePointista.
 author: NickSelin
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 0163ece2f61735073567b32a45d3dc6df8be1864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074763"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864775"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Tietojen SharePointista tuonnin määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
-Tietojen tuominen saapuvasta tiedostosta käyttämällä sähköisen raportoinnin (ER) kehystä: on määritettävä ER-muoto, joka tukee tuontia, ja sitten suorittaa mallin määritys **Kohteeseen**-tyypille, joka käyttää kyseistä muotoa tietolähteenä. Tietojen tuomiseksi siirry tiedostoon, jonka haluat tuoda. Käyttäjä voi valita manuaalisesti saapuvan tiedoston. Uuden sähköisen raportoinnin ominaisuuden kanssa, joka tukee tietojen tuomista Microsoft SharePointista, tämä prosessi voidaan määrittää automaattiseksi. Voit käyttää ER-määrityksiä suorittaaksesi tietojen tuonnin tiedostoista, jotka on tallennettu Microsoft SharePoint -kansioihin. Tässä ohjeaiheessa kerrotaan, miten voit viimeistellä tuonnin SharePointista. Esimerkissä käytetään toimittajatapahtumia liiketoimintatietoina.
+Tietojen tuominen saapuvasta tiedostosta käyttämällä sähköisen raportoinnin (ER) kehystä: on määritettävä ER-muoto, joka tukee tuontia, ja sitten suorittaa mallin määritys **Kohteeseen**-tyypille, joka käyttää kyseistä muotoa tietolähteenä. Tietojen tuomiseksi siirry tiedostoon, jonka haluat tuoda. Käyttäjä voi valita manuaalisesti saapuvan tiedoston. Uuden sähköisen raportoinnin ominaisuuden kanssa, joka tukee tietojen tuomista Microsoft SharePointista, tämä prosessi voidaan määrittää automaattiseksi. Voit käyttää ER-määrityksiä suorittaaksesi tietojen tuonnin tiedostoista, jotka on tallennettu Microsoft SharePoint -kansioihin. Tässä artikkelissa kerrotaan, miten voit viimeistellä tuonnin SharePointista. Esimerkissä käytetään toimittajatapahtumia liiketoimintatietoina.
 
 ## <a name="prerequisites"></a>Edellytykset
-Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:
+Tämän artikkelin esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:
 
 - Käytä jotain seuraavista rooleista:
 

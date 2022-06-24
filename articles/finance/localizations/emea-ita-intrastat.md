@@ -1,6 +1,6 @@
 ---
-title: Italian Intrastat
-description: Tässä ohjeaiheessa on tietoja Intrastat-raportoinnista Italiassa.
+title: Italian intrastat
+description: Tässä artikkelissa on tietoja Intrastat-raportoinnista Italiassa.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488256"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874360"
 ---
 # <a name="italian-intrastat"></a>Italian Intrastat
 
@@ -631,7 +631,7 @@ Määritä italialaiset asetukset Intrastat-käyttöä varten noudattamalla näi
 
     Lisätietoja on aiheessa [Lataa sähköisen raportoinnin määritykset Lifecycle Servicesistä](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2. Valitse Dynamics 365 Financessa **Vero** > **Määritys** > **Ulkomaankaupan parametrit**.
+2. Siirry Dynamics 365 Financessa kohtaan **Vero** > **Asetukset** > **Ulkomaankaupan parametrit**.
 3. Määritä **Intrastat**-välilehden **Yleiset**-pikavälilehdessä seuraavat kentät:
 
     - **Alkuperä-/kohdemaakunta**: Valitse yrityksen maakunta. Tätä maakuntaa käytetään lähetyksissä.
@@ -650,7 +650,7 @@ Määritä italialaiset asetukset Intrastat-käyttöä varten noudattamalla näi
 6. Määritä **Tilastollinen arvo** -pikavälilehdessä **Tilastotietojen tulostaminen ja vieminen**  -asetuksen arvoksi tarvittaessa **Kyllä**. Tämä asetus aktivoi tilastollisen osan siirron. Tilastollinen sisältää painoja, lisäyksiköitä, tilastoarvoja, toimitusehtoja, toimitusaikatauluja, kuljetustapoja ja alkuperäalueita koskevat tiedot.
 
     > [!NOTE]
-    > Neljännesvuosittaisen ilmoituksen Instrastat-raportti ei sisällä tilastollista osaa tai tietoja toimitusehdoista ja välitystavoista. Lisätietoja on taulukossa tämän aiheen [Yleiskatsaus](#overview)-osassa.
+    > Neljännesvuosittaisen ilmoituksen Instrastat-raportti ei sisällä tilastollista osaa tai tietoja toimitusehdoista ja välitystavoista. Lisätietoja on taulukossa tämän artikkelin [Yleiskatsaus](#overview)-osassa.
 
 7. Tee **maa-/alueominaisuuksien** välilehdessä luettelo kaikista maista tai alueista, joiden kanssa organisaatiosi käy liiketoimintaa. Määritä kullekin maalle tai alueelle seuraavat kentät:
 

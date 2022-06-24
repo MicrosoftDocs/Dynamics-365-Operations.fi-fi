@@ -1,20 +1,20 @@
 ---
 title: Taulumäärityksen kuntotarkistusta koskevat virhekoodit
-description: Tässä aiheessa kuvataan taulumäärityksen kuntotarkistusta koskevat virhekoodit.
-author: nhelgren
-ms.date: 10/04/2021
+description: Tässä artikkelissa kuvataan taulumäärityksen kuntotarkistusta koskevat virhekoodit.
+author: RamaKrishnamoorthy
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
-ms.author: nhelgren
+ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061275"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884080"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Taulumäärityksen kuntotarkistusta koskevat virhekoodit
 
@@ -22,7 +22,7 @@ ms.locfileid: "8061275"
 
 
 
-Tässä aiheessa kuvataan taulumäärityksen kuntotarkistusta koskevat virhekoodit.
+Tässä artikkelissa kuvataan taulumäärityksen kuntotarkistusta koskevat virhekoodit.
 
 ## <a name="error-100"></a>Virhe 100
 
@@ -32,13 +32,13 @@ Ominaisuus vaatii Platform update -päivitykset taloushallinnon ja toimintojen s
 
 ## <a name="error-400"></a>Virhe 400
 
-Virhesanoma on "Yksiköstä \{Taloushallinto ja toiminnot UniqueEntityName\} ei löydetty liiketapahtumien rekisteröintitietoja, mikä tarkoittaa, että määritys ei ole käynnissä tai kaikki kenttämääritykset ovat yksisuuntaisia".
+Virhesanoma on "Yksiköstä \{Finance and Operations UniqueEntityName\} ei löydetty liiketapahtumien rekisteröintitietoja, mikä tarkoittaa, että määritys ei ole käynnissä tai kaikki kenttämääritykset ovat yksisuuntaisia".
 
 ## <a name="error-500"></a>Virhe 500
 
-Virhesanoma on Projektille \{projektin nimi\} ei löydy projektimäärityksiä. Tämä voi johtua joko siitä, että projekti ei ole käytössä tai kaikki kenttämääritykset ovat yksisuuntaisia asiakasvuorovaikutussovelluksesta taloushallintoon ja toimintoihin.
+Virhesanoma on Projektille \{projektin nimi\} ei löydy projektimäärityksiä. Tämä voi johtua joko siitä, että projekti ei ole käytössä tai kaikki kenttämääritykset ovat yksisuuntaisia asiakasvuorovaikutussovelluksesta talous- ja toimintosovelluksiin.
 
-Tarkista taulumäärityksen määritykset. Jos ne ovat yksisuuntaisia asiakasvuorovaikutussovelluksista taloushallinnon ja toimintojen sovelluksiin, reaaliaikaiselle synkronoinnille taloushallinnon ja toimintojen sovelluksista Dataverseen ei luoda liikennettä.
+Tarkista taulumäärityksen määritykset. Jos ne ovat yksisuuntaisia asiakasvuorovaikutussovelluksista talous- ja toimintosovelluksiin, reaaliaikaiselle synkronoinnille talous- ja toimintosovelluksista Dataverseen ei luoda liikennettä.
 
 ## <a name="error-900"></a>Virhe 900
 
@@ -79,5 +79,20 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 Virhesanoma on Yksikön \{datasourceTable.Key.entityName\} taulua \{datasourceTable.Key.subscribedTableName\} jäljitetään yksikön \{origTableToEntityMaps.EntityName\} osalta. Useiden taulujen seuraaminen useiden yksikköjen osalta voi vaikutta järjestelmän suorituskykyyn reaaliaikaisissa synkronointitapahtumissa.
 
 Jos useammat yksiköt seuraavat samaa taulua, muutokset tauluun käynnistävät kaksoiskirjoituksen arvioinnin linkitettyjen yksikköjen osalta. Vaikka suodatinlausekkeet lähettävät vain kelvolliset tietueet, arviointi saattaa aiheuttaa suorituskykyongelman, jos on olemassa pitkäkestoisia kyselyjä tai optimoimattomia kyselysuunnitelmia. Tätä ongelmaa ei ehkä voi välttää liiketoiminnan näkökulmasta. Jos kuitenkin useilla yksiköillä on useita risteäviä tauluja, kannattaa harkita yksikön yksinkertaistamista tai yksikkökyselyjen optimointien tarkistamista.
+
+## <a name="error-1800"></a>Virhe 1800
+Virhesanoma on seuraava: "Datasource : {} yksikölle CustCustomerV3Entity sisältää aluearvon. Yksikön aluearvot voivat vaikuttaa saapuvan tietueen lisäyksiin Dataversesta talous- ja toimintosovelluksiin. Testaa tietueen päivitykset Dataversesta talous- ja toimintosovelluksiin tietueilla, jotka eivät vastaa suodatusehtoja, jotta voit vahvistaa asetukset."
+
+Jos talous- ja toimintosovellusten yksikölle on määritetty arvoalue, saapuva synkronointi Dataversesta talous- ja toimintosovelluksiin tulee testata sellaisten tietueiden toiminnan päivittämiseksi, jotka eivät vastaa arvoalueen ehtoja. Entiteetti käsittelee lisäystoimintona kaikkia tietueita, jotka eivät vastaa arvoaluetta. Jos pohjana olevassa taulussa on olemassa oleva tietue, lisäys epäonnistuu. Tämä käyttötapaus kannattaa testata kaikissa skenaarioissa ennen ottamista tuotantoon.
+
+## <a name="error-1900"></a>Virhe 1900
+Virhesanoma on seuraava: "Yksiköllä on {} tietolähdettä, joita lähtevä kaksoiskirjoitus ei seuraa. Tämä voi vaikuttaa live-synkronoinnin kyselyn suorituskykyyn. Muodosta malli uudelleen Finance and Operationsissa, jos haluat poistaa käyttämättömät tietolähteet ja taulut tai ottaa käyttöön taulun getEntityRecordIdsImpactedByTableChange suorituksenaikaisten kyselyjen optimoimiseksi."
+
+Jos löytyy useita tietolähteitä, joita ei käytetä toteutuneen live-synkronoinnin seuraamiseen talous- ja toimintosovelluksista, yksikön suorituskyky voi vaikuttaa live-synkronointiin. Voit optimoida seuratut taulut käyttämällä getEntityRecordIdsImpactedByTableChange-menetelmää.
+
+## <a name="error-5000"></a>Virhe 5000
+Virhesanoma on seuraava: "Synkronoinnin laajennukset on rekisteröity yksikön tilien tiedonhallinnan tapahtumia varten. Ne voivat vaikuttaa alkuperäisen synkronoinnin ja live-synkronoinnin tuonnin suorituskykyyn Dataversessa. Muuta laajennukset asynkronista käsittelyä varten parhaan suorituskyvyn saamiseksi. Rekisteröityjen laajennusten luettelo {}."
+
+Dataverse-yksikön synkroniset laajennukset voivat vaikuttaa live-synkronointiin ja alkuperäiseen synkronoinnin suorituskykyyn, koska se lisää tapahtumakuormitusta. Suositeltu tapa on poistaa laajennukset käytöstä tai tehdä näistä laajennuksista asynkronisia, jos alkuperäisen synkronoinnin tai live-synkronoinnin latausajat ovat pitkiä.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

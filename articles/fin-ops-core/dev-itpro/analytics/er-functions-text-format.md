@@ -1,6 +1,6 @@
 ---
 title: FORMAT ER-funktio
-description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) FORMAT-funktiota käytetään.
+description: Tässä artikkelissa on tietoja siitä, miten sähköisen raportoinnin (ER) FORMAT-funktiota käytetään.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dbde3ebfd2670639a2fff19d83ea9bd8d15c22b09b43ab49ae1b9e35562625a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ce9dd95dc347416f6f9c3024b0b1de3f60f88bfb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720877"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876773"
 ---
 # <a name="format-er-function"></a>FORMAT ER-funktio
 
@@ -92,7 +92,7 @@ Jos sama raportti käsitellään asiakkaalle **Litware Retail** 17.12.2015 ja ma
 >[!NOTE]
 > Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 >
-> - **Etikettejä varten Microsoft  Dynamics 365 Finance -sovelluksen resursseista**: **\@X**, jossa **X** on sovellusobjektipuun (AOT) etikettitunnus
+> - **Etikettejä varten Microsoft Dynamics 365 Finance -sovelluksen resursseista**: **\@X**, jossa **X** on sovellusobjektipuun (AOT) etikettitunnus
 > - **ER-määrityksissä sijaitsevat otsikot:** **@"GER_LABEL:X"**, jossa **X** on ER-määrityksen otsikon tunnus
 
 ## <a name="additional-resources"></a>Lisäresurssit

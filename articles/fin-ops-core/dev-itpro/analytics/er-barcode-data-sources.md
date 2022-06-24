@@ -1,6 +1,6 @@
 ---
 title: Viivakoodikuvien luominen viivakoodin tietolähteiden avulla
-description: Tässä ohjeaiheessa käsitellään tapaa, jolla viivakoodikuvia voidaan luoda viivakoodin tietolähteiden avulla.
+description: Tässä artikkelissa käsitellään tapaa, jolla viivakoodikuvia voidaan luoda viivakoodin tietolähteiden avulla.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: c8e755b664656a1a10672a990dc581969f6a7b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323949"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880309"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Viivakoodikuvien luominen viivakoodin tietolähteiden avulla
 
@@ -77,7 +77,7 @@ Viivakoodikuvia voidaan lisätä raporttimalleihin seuraavien paikkamerkkien avu
 >
 > Kun **Viivakoodi**-tietolähde sidotaan muodon soluelementtiin ja soluelementti ilmaisee joko Wordin sisällön ohjausobjektin tai Excelin kuvan, tietolähde ilmaistaan kyseisessä sidonnassa funktiona, jolla on yksi **Merkkijono**-tyyppinen parametri. Tätä parametria on käytettävä määrittämään teksti, joka on muunnettava viivakoodikuvaksi ja luettava, kun luotu viivakoodi luetaan.
 
-Saat lisätietoja tästä toiminnosta suorittamalla tässä ohjeaiheessa olevat esimerkit.
+Saat lisätietoja tästä toiminnosta suorittamalla tässä artikkelissa olevat esimerkit.
 
 ## <a name="example-generate-a-payment-check-that-contains-a-bar-code-that-encodes-the-payable-amount"></a>Esimerkki: maksettavan summan koodaavan viivakoodin sisältävän maksun sekin luonti
 
@@ -112,7 +112,7 @@ Tämän esimerkin suorittaminen edellyttää Financessa jonkin seuraavan roolin 
 - Sähköisen raportoinnin toiminnallinen konsultti
 - Järjestelmänvalvoja
 
-Jos et ole vielä suorittanut tätä esimerkkiä ohjeaiheessa [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](electronic-reporting-embed-images-shapes.md), lataa seuraavat esimerkkinä käytettävän ER-ratkaisun määritykset.
+Jos et ole vielä suorittanut tätä esimerkkiä [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](electronic-reporting-embed-images-shapes.md) -artikkelissa, lataa seuraavat esimerkkinä käytettävän ER-ratkaisun määritykset.
 
 | Sisällön kuvaus         | Tiedostonimi                   |
 |-----------------------------|-----------------------------|
@@ -128,7 +128,7 @@ Lataa lisäksi seuraava Excel-tiedosto, joka sisältää annetun ER-ratkaisun mu
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivoi määrityslähde
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Tarkista **Lokalisointimääritykset**-sivun **Määrityksen lähteet** -osassa, että näyteyrityksen **Litware, Inc.** [määrityksen lähde](general-electronic-reporting.md#Provider) on luettelossa ja että sen tila on aktiivinen. Jos sitä ei ole luettelossa tai jos sitä ei ole merkitty aktiiviseksi, noudata ohjeaiheen [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) ohjeita.
+2. Tarkista **Lokalisointimääritykset**-sivun **Määrityksen lähteet** -osassa, että näyteyrityksen **Litware, Inc.** [määrityksen lähde](general-electronic-reporting.md#Provider) on luettelossa ja että sen tila on aktiivinen. Jos sitä ei ole luettelossa tai jos sitä ei ole merkitty aktiiviseksi, noudata [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -artikkelin ohjeita.
 
 ![Näyteyrityksen määrittäminen aktiiviseksi Lokalisointimääritykset-sivulla.](./media/er-barcode-data-source-active-provider.png)
 
@@ -284,7 +284,7 @@ Valitun muodon luonnosversio merkitään käytettäväksi, kun valittu muoto suo
 
 ### <a name="convert-the-generated-check-to-a-pdf"></a><a name="ExampleConvertToPDF"></a>Luodun sekin muuntaminen PDF-tiedostoksi
 
-Kuten ohjeaiheessa [Tulostettavien FTI-lomakkeiden luominen](er-generate-printable-fti-forms.md#finland) on kuvattu, erikoisfonttia voi käyttää viivakoodin tuottamiseen luodussa asiakirjassa. Tässä tapauksessa luodun asiakirjan lisämuunnokset voivat määräytyä sen mukaan, onko kyseinen fontti käytettävissä muunnosympäristössä. Jos asiakirja yritetään esimerkiksi muuntaa PDF-muotoon tai jos sitä yritetään esikatsella ympäristössä, josta fontti puuttuu, viivakoodeja ei hahmonneta oikein.
+Kuten [Tulostettavien FTI-lomakkeiden luominen](er-generate-printable-fti-forms.md#finland) -artikkelissa on kuvattu, erikoisfonttia voi käyttää viivakoodin tuottamiseen luodussa asiakirjassa. Tässä tapauksessa luodun asiakirjan lisämuunnokset voivat määräytyä sen mukaan, onko kyseinen fontti käytettävissä muunnosympäristössä. Jos asiakirja yritetään esimerkiksi muuntaa PDF-muotoon tai jos sitä yritetään esikatsella ympäristössä, josta fontti puuttuu, viivakoodeja ei hahmonneta oikein.
 
 Jos viivakoodit kuitenkin tuotetaan käyttämällä **Viivakoodi**-tietolähdettä, kyseisten viivakoodien hahmonnus ei määräydy minkään fontin mukaan. Tämän vuoksi viivakoodeja sisältävien asiakirjojen muuntaminen PDF-muotoon on helppoa. Seuraavassa kuvassa on sellaisen luodun maksettavan sekin esikatselu, joka on [muunnettu](electronic-reporting-destinations.md#OutputConversionToPDF) PDF-muotoon määritetyn ER-[kohteen](electronic-reporting-destinations.md) asetuksen mukaan.
 

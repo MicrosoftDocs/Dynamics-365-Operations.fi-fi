@@ -1,6 +1,6 @@
 ---
-title: Mukautetun tallennussijainnin määrittäminen luoduille asiakirjoille
-description: Tässä ohjeaiheessa käsitellään sähköisten raportointimuotojen muodostamien asiakirjojen tallennussijaintiluettelon laajentamista.
+title: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
+description: Tässä artikkelissa käsitellään sähköisten raportointimuotojen muodostamien asiakirjojen tallennussijaintiluettelon laajentamista.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718498"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864743"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Mukautetun tallennussijainnin määrittäminen luoduille asiakirjoille
 
 [!include[banner](../includes/banner.md)]
 
-Sähköisen raportoinnin (ER) kehyksen ohjelmointirajapinnan avulla voit laajentaa ER-muotojen muodostamien asiakirjojen tallennussijaintien luetteloa. Tässä ohjeaiheessa on niiden päätehtävien yleiskatsaus, jotka on tehtävä, jotta mukautettu tallennussijainti voidaan lisätä.
+Sähköisen raportoinnin (ER) kehyksen ohjelmointirajapinnan avulla voit laajentaa ER-muotojen muodostamien asiakirjojen tallennussijaintien luetteloa. Tässä artikkelissa on niiden päätehtävien yleiskatsaus, jotka on tehtävä, jotta mukautettu tallennussijainti voidaan lisätä.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -118,7 +118,7 @@ public DocuRef insertFile(
 ## <a name="configure-an-er-destination"></a>ER-kohteen määrittäminen
 
 1. Määritä luodun tai tuodun ER-muodon yhden edellä mainitun elementin (tiedosto, kansio, yhdistämistoiminto tai liite) arkistokohde. Lisätietoja on kohdassa [ER Kohteiden määrittäminen](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Käytä asiakirjatyyppiä, jonka lisäsit määritetylle kohteelle aiemmin. (Tämä ohjeaiheen esimerkissä asiakirjatyyppi on **FileX**.)
+2. Käytä asiakirjatyyppiä, jonka lisäsit määritetylle kohteelle aiemmin. (Tämä artikkelin esimerkissä asiakirjatyyppi on **FileX**.)
 
 ![Kohdeasetukset-valintaikkuna.](media/er-extend-file-storages-destination.png)
 

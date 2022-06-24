@@ -1,6 +1,6 @@
 ---
-title: Kaksoiskirjoitusmääritysten tarkistus taloushallinnon ja toimintojen sovelluksissa ja Dataversessä
-description: Tässä ohjeaiheessa kerrotaan, miten voit määrittää, onko taloushallinnon ja toimintojen sovelluksissa ja Dataversessa määritetty kaksoiskirjoitus.
+title: Kaksoiskirjoitusmääritysten tarkistus Finance and Operations -sovelluksissa sekä Dataversessä
+description: Tässä artikkelissa kerrotaan, miten voit määrittää, onko talous- ja toimintosovelluksissa ja Dataversessa määritetty kaksoiskirjoitus.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3fa16a450032464e445ae166f0699fe0dc388071
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884456"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Kaksoiskirjoitusmääritysten tarkistus taloushallinnon ja toimintojen sovelluksissa ja Dataversessä
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Kaksoiskirjoitusmääritysten tarkistus Finance and Operations -sovelluksissa sekä Dataversessä
 
 [!include [banner](../../includes/banner.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "8062797"
 
 
 
-Tässä ohjeaiheessa on vianetsintätietoja kaksoiskirjoituksen integroinnista taloushallinnon ja toimintojen sovellusten ja Dataversen välillä. Erityisesti se selittää miten voit määrittää, onko taloushallinnon ja toimintojen sovelluksissa ja Dataversessa määritetty kaksoiskirjoitus.
+Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Dataversen välillä. Erityisesti se selittää miten voit määrittää, onko taloushallinnon ja toimintojen sovelluksissa ja Dataversessa määritetty kaksoiskirjoitus.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Kaksoiskirjoitusmääritysten tarkistus taloushallinnon ja toimintojen sovelluksessa
 

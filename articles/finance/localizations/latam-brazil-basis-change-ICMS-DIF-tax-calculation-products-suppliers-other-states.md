@@ -1,6 +1,6 @@
 ---
 title: Muiden osavaltioiden toimittajien tuotteiden ICMS-DIF-verolaskelmien muutoksen perusta
-description: Tässä ohjeaiheessa kuvataan ICMS-DIF-verotyypin laskelmien konfiguraatio, kun veroasiakirja vastaanotetaan Brasilian Rio Grande do Sulin (RS) tai São Paulon (SP) osavaltiossa.
+description: Tässä artikkelin kuvataan ICMS-DIF-verotyypin laskelmien konfiguraatio, kun veroasiakirja vastaanotetaan Brasilian Rio Grande do Sulin (RS) tai São Paulon (SP) osavaltiossa.
 author: Kai-Cloud
 ms.date: 1/20/2022
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2022-1-17
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 63e3cbaaf77456b55f08ea91831ba9d49cb57185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1fde18c79f375db4db6bc52cdb5c40a61625ae63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689153"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868259"
 ---
 # <a name="basis-change-in-icms-dif-tax-calculations-for-products-from-suppliers-in-other-states"></a>Muiden osavaltioiden toimittajien tuotteiden ICMS-DIF-verolaskelmien muutoksen perusta
 
-Tässä ohjeaiheessa kuvataan **ICMS-DIF**-verotyypin laskelmien konfiguraatio, kun veroasiakirja vastaanotetaan Brasilian Rio Grande do Sulin (RS) tai São Paulon (SP) osavaltiossa.
+Tässä artikkelin kuvataan **ICMS-DIF**-verotyypin laskelmien konfiguraatio, kun veroasiakirja vastaanotetaan Brasilian Rio Grande do Sulin (RS) tai São Paulon (SP) osavaltiossa.
 
 Valtion lain määritelmän mukaan kerätyn Imposto sobre Circulação de Mercadorias e Serviçosin (ICMS) on noudatettava tätä sääntöä:
 

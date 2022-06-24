@@ -1,6 +1,6 @@
 ---
 title: Automaattisten toimittajan laskutusprosessien yleiskuvaus
-description: Tässä ohjeaiheessa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja.
+description: Tässä artikkelissa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja.
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: d2c629ed2d064a3350ec8ffe53940098d12ab0b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358427"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883442"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automaattisten toimittajan laskutusprosessien yleiskuvaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja. Tässä ominaisuudessa on toimintoja, jotka otetaan käyttöön ominaisuuksien hallinnassa. Nämä toiminnot koskevat vain toimittajan laskuja; ne eivät siis koske laskuja, jotka käsitellään **Laskukirjauskansio**- tai **Laskurekisterikirjauskansio**-sivulla.
+Tässä artikkelissa käsitellään toimittajan laskujen käsittelyn automatisointiominaisuutta ja automatisoidun prosessin etuja. Tässä ominaisuudessa on toimintoja, jotka otetaan käyttöön ominaisuuksien hallinnassa. Nämä toiminnot koskevat vain toimittajan laskuja; ne eivät siis koske laskuja, jotka käsitellään **Laskukirjauskansio**- tai **Laskurekisterikirjauskansio**-sivulla.
 
 Organisaatiot käyttävät usein kolmansia osapuolia paperilaskujen käsittelyssä hyödyntämällä OCR-tekstintunnistuspalvelua. Tällainen palvelu palauttaa koneellisesti luettavat laskun metatiedot. Ostoreskontran automaatiotoiminnot edistävät automatisointia, sillä näitä artefakteja voidaan käyttää ostoreskontrasta.
 

@@ -1,6 +1,6 @@
 ---
-title: Suodatuksen ja kyselysyntaksin lisäasetukset
-description: Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot Lisäsuodatus/-lajittelu-valintaikkunalle vastaavuusoperaattorille Suodatin-ruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
+title: Suodatuksen ja kyselyn lisäsyntaksi
+description: Tässä artikkelissa kuvataan suodatus- ja kyselyvaihtoehdot Lisäsuodatus/-lajittelu-valintaikkunalle vastaavuusoperaattorille Suodatin-ruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 520c8b32099024e9a9619a6ecdcd3ba7b97c7ecf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856915"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Suodatuksen ja kyselysyntaksin lisäasetukset
 
@@ -29,7 +29,7 @@ ms.locfileid: "8070006"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan **vastaavuusoperaattoria** Suodatinruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
+Tässä ohjeaiheessa kuvataan suodatus- ja kyselyvaihtoehdot, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan **vastaavuus** operaattoria Suodatinruudussa tai ruudukon sarakkeen otsikkosuodattimissa.
 
 ## <a name="advanced-query-syntax"></a>Kyselyn lisäsyntaksi
 

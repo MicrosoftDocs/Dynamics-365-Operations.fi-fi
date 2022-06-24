@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
-ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
+ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "8756960"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876322"
 ---
 # <a name="create-a-customer-invoice"></a>Myyntilaskun luominen
 
@@ -33,11 +33,8 @@ ms.locfileid: "8756960"
 Lisätietoja:
 
 [Luo vapaatekstilaskut](../accounts-receivable/create-free-text-invoice-new.md)
-
 [Luo vapaatekstilaskumalli](../accounts-receivable/create-free-text-invoice-template-new.md)
-
-[Vapaatekstilaskun mallin määrittäminen asiakkaalle](tasks/assign-free-text-invoice-template-customer.md)
-
+[Määritä vapaatekstilaskumalli asiakkaalle](tasks/assign-free-text-invoice-template-customer.md)
 [Luo ja kirjaa toistuvat vapaatekstilaskut](tasks/post-recurring-free-text-invoices.md)
 
 
@@ -91,8 +88,8 @@ Voit valita **Myyntitilaus**-luettelosivulla useita laskuja ja konsolidoida ne s
  - Valitse **Jaa laskun toimipaikan perusteella** -vaihtoehto, kun haluat luoda kirjauksen yhteydessä yhden laskun toimipaikkaa kohti. 
  - Valitse **Jaa laskun toimitustietojen perusteella** -vaihtoehto, kun haluat luoda yhden laskun yhtä myyntitilausrivin toimitusosoitetta kohden. 
 
-## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Kirjaa hinnattomat myyntitilauksen rivit Tuotto-tilille
-Voit myös päivittää **kirjanpidon** **tuotto** tilin myyntitilausriveille, joissa ei ole hintaa. Voit määrittää tai tarkastella näitä tietoja **myyntireskontran parametri** -sivun **Kirjanpito ja arvonlisävero** -välilehdessä kohdassa **Kirjaa tuottotilille nollahintaisille myyntitilauslaskun riveille**. (**Myyntireskontra > Asetukset > Myyntireskontran parametrit**). Valitse **Kyllä**, jos haluat päivittää sellaisen myyntitilauslaskurivin **tuotto** tilin, jossa ei ole hintaa. Tuottotili määritetään **Varastokirjauksen** parametrisivulla **Myyntitilaus**-tilimääritysvälilehdessä. Jos tätä vaihtoehtoa ei ole valittu, **tuotto**-tilille ei kirjata rivejä, riveillä, riveillä ei ole hintatietoja.
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Kirjaa Tuotto-tilille myyntitilauksen rivit, joilla ei ole hintaa eikä kustannusta
+Voit myös päivittää **kirjanpidon** **Tuotto**-tilin myyntitilausriveille, joilla ei ole hintaa eikä kustannusta. Voit määrittää tai tarkastella näitä tietoja **Myyntireskontran parametri** -sivun **Kirjanpito ja arvonlisävero** -välilehdessä kohdassa **Kirjaa Tuotto-tilille myyntitilauslaskun rivit, joiden hinta ja kustannus on nolla**. (**Myyntireskontra > Asetukset > Myyntireskontran parametrit**). Valitse **Kyllä**, jos haluat päivittää sellaisen myyntitilauslaskurivin **Tuotto** tilin, jolla ei ole hintaa eikä kustannusta. Jos tämä vaihtoehto on valittuna, tosite sisältää 0,00 merkintää **Asiakkaan saldo**- ja **Tuotto**-kirjaustyypeiltä. Tuottotili määritetään **Varastokirjauksen** parametrisivulla **Myyntitilaus**-tilimääritysvälilehdessä. Jos tätä vaihtoehtoa ei ole valittu, **Tuotto**-tilille ei kirjata rivejä, joilla ei ole hinta- tai kustannustietoja. Tämän sijaan tosite sisältää 0,00 merkintää **Asiakkaan saldo** -kirjaustyypiltä.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Kirjaustoimintoa muuttavat lisäasetukset
 Seuraavat kentät muuttaa kirjausprosessin toimintaa.

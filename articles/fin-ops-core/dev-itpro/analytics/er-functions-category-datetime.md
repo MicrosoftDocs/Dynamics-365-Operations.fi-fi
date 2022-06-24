@@ -1,6 +1,6 @@
 ---
 title: Luettelo ER-funktioista päivämäärä- ja aikaluokassa
-description: Tässä ohjeaiheessa on tietoja sähköisen raportoinnin (ER) tukemista päivämäärä- ja aikafunktioista.
+description: Tässä artikkelissa on tietoja sähköisen raportoinnin (ER) tukemista päivämäärä- ja aikafunktioista.
 author: NickSelin
 ms.date: 09/09/2021
 ms.prod: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: e6e15d143bad016883f03ecf0125ce9429215a71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880236"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Luettelo ER-funktioista päivämäärä- ja aikaluokassa
 
 [!include [banner](../includes/banner.md)]
 
-Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan poimia tietoja päivämäärä- ja aika-arvoista sekä suorittaa niitä koskevia toimintoja. Tässä aiheessa on yhteenveto näistä funktioista.
+Sähköisen raportoinnin (ER) päivämäärä- ja aikafunktioiden avulla voidaan poimia tietoja päivämäärä- ja aika-arvoista sekä suorittaa niitä koskevia toimintoja. Tässä artikkelissa on yhteenveto näistä funktioista.
 
 ## <a name="list-of-supported-functions"></a>Luettelo tuetuista toiminnoista
 

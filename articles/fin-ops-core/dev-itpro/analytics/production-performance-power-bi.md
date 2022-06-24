@@ -1,6 +1,6 @@
 ---
 title: Tuotannon suorituskyvyn Power BI -sisältö
-description: Tässä ohjeaiheessa kerrotaan, mitä tuotannon suorituskyvyn Power BI -sisältö sisältää.
+description: Tässä artikkelissa kerrotaan, mitä tuotannon suorituskyvyn Power BI -sisältö sisältää.
 author: AndersGirke
 ms.date: 12/19/2017
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 940e49b43ec1dba0917c67ad6ef4562351d175bcb1c0be7f98d00e73371e5346
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf0d2bdc37efb66f7aee40f237413a2ef5d9f9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761413"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881458"
 ---
 # <a name="production-performance-power-bi-content"></a>Tuotannon suorituskyvyn Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, mitä **tuotannon suorituskyvyn** Microsoft Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
+Tässä artikkelissa kerrotaan, mitä **tuotannon suorituskyvyn** Microsoft Power BI -sisältöön kuuluu. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="overview"></a>Yleiskuvaus
 

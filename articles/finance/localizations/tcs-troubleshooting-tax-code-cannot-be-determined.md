@@ -1,6 +1,6 @@
 ---
 title: Verokoodia ei voi määrittää
-description: Tässä aiheessa kerrotaan, miten verolaskentapalvelun "Verokoodia ei voi määrittää" -virhettä korjataan.
+description: Tässä artikkelissa kerrotaan, miten verolaskentapalvelun virhettä Verokoodia ei voi määrittää korjataan.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 3c0914f0013ad2de61cd5a59e3092fef149742e4
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6a74724de38cf362900277ab9addc8e6894f7689
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645389"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877856"
 ---
 # <a name="tax-code-cannot-be-determined"></a>Verokoodia ei voi määrittää
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten tehdään vianetsintää, kun verolaskentapalvelun "Verokoodia ei voi määrittää" -virhettä korjataan.
+Tässä artikkelissa kerrotaan, miten tehdään vianetsintää, kun verolaskentapalvelun virhettä Verokoodia ei voi määrittää korjataan.
 
 ## <a name="symptom"></a>Oire
 
@@ -121,7 +121,7 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 
 ## <a name="mitigation"></a>Lievennys
 
-1. Käy tämän ohjeaiheen [Vianmääritys](#troubleshoot)-osa läpi ja korjaa asetukset tarvittaessa. Jos veroryhmää ja nimikkeen veroryhmää ei ole määritetty oikein, katso lisätietoja kohdasta [Vastaavia tuloksia ei löydy](tcs-troubleshooting-no-matching-result.md).
+1. Käy tämän artikkelin [Vianmääritys](#troubleshoot)-osa läpi ja korjaa asetukset tarvittaessa. Jos veroryhmää ja nimikkeen veroryhmää ei ole määritetty oikein, katso lisätietoja kohdasta [Vastaavia tuloksia ei löydy](tcs-troubleshooting-no-matching-result.md).
 2. Jos veroryhmällä ja nimikkeen veroryhmällä ei ole yhteisiä arvoja, luo uusi toimintoversio RCS:ssä ja korjaa asetukset.
 
     - Siirry kohtaan **Vero-ominaisuudet** \> **Verokoodit ja -ryhmät** >  **Nimikkeen veroryhmä**.

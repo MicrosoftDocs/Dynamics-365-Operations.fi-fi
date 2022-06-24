@@ -1,6 +1,6 @@
 ---
-title: ER-muotoisten XML-elementtien suorittamisen lykkäys
-description: Tässä ohjeaiheessa selitetään, miten sähköisen raportoinnin (ER) muotoisten XML-elementtien suorittamista lykätään.
+title: Sähköisen raportoinnin muotojen XML-elementtien suorittamisen lykkääminen
+description: Tässä artikkelissa selitetään, miten sähköisen raportoinnin (ER) muotoisten XML-elementtien suorittamista lykätään.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 074b14cbb018a8e34b99124b8aaec3a5bdb30be2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323712"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861842"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER-muotoisten XML-elementtien suorittamisen lykkäys
 
@@ -32,7 +32,7 @@ Voit käyttää [Sähköisen raportoinnin (ER)](general-electronic-reporting.md)
 
 Ottamalla käyttöön määritetyssä muodossa olevan XML-elementin <a name="DeferredXmlElementExecution"></a>**Lykätty suorittaminen** -asetuksen voit lykätä (siirtää myöhemmäksi) kyseisen elementin suorittamista. Tällöin elementtiä ei suoriteta, ennen kuin kaikki muut sen pääelementin osat on suoritettu.
 
-Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
+Saat lisätietoja tästä toiminnosta suorittamalla tämän artikkelin esimerkin.
 
 ## <a name="limitations"></a>Rajoitukset
 
@@ -55,7 +55,7 @@ Tämän esimerkin suorittaminen edellyttää Financessa jonkin seuraavan roolin 
 - Sähköisen raportoinnin toiminnallinen konsultti
 - Järjestelmänvalvoja
 
-Jos et ole vielä suorittanut tätä esimerkkiä ohjeaiheessa [ER-muotoisten sarjaelementtien suorittamisen lykkäys](er-defer-sequence-element.md#Example), lataa seuraavat esimerkkinä käytettävän ER-ratkaisun [määritykset](general-electronic-reporting.md#Configuration).
+Jos et ole vielä suorittanut tätä esimerkkiä artikkelissa [ER-muotoisten sarjaelementtien suorittamisen lykkäys](er-defer-sequence-element.md#Example), lataa seuraavat esimerkkinä käytettävän ER-ratkaisun [määritykset](general-electronic-reporting.md#Configuration).
 
 | Sisällön kuvaus            | Tiedostonimi |
 |--------------------------------|-----------|
@@ -95,7 +95,7 @@ Ennen kuin aloitat, sinun on myös ladattava ja tallennettava seuraavat esimerkk
 ### <a name="activate-a-configuration-provider"></a>Aktivoi määrityslähde
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Tarkista **Lokalisointikonfiguroinnit**-sivun **Konfiguraation lähteet** -osassa, että näyteyrityksen Litware, Inc. [konfiguraation lähde on luettelossa ja että sen tila on](general-electronic-reporting.md#Provider) aktiivinen (`http://www.litware.com`). Jos tämä määrityspalvelu ei ole luettelossa tai jos se ei ole merkittynä aktiiviseksi, noudata ohjeaiheen [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](./tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheita.
+2. Tarkista **Lokalisointikonfiguroinnit**-sivun **Konfiguraation lähteet** -osassa, että näyteyrityksen Litware, Inc. [konfiguraation lähde on luettelossa ja että sen tila on](general-electronic-reporting.md#Provider) aktiivinen (`http://www.litware.com`). Jos tämä määrityspalvelu ei ole luettelossa tai jos se ei ole merkittynä aktiiviseksi, noudata artikkelin [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](./tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheita.
 
     ![Lokalisointimääritykset-sivun esimerkkiyritys Litware, Inc.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Sovellusluokkamenetelmän kutsulausekkeiden suunnittelu (ER)
-description: Tässä aiheessa käsitellään aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin määrityksissä kutsumalla sovellusluokkien pakollisia menetelmiä.
+description: Tässä artikkelissa käsitellään aiemmin luodun sovelluslogiikan käyttämisestä uudelleen sähköisen raportoinnin määrityksissä kutsumalla sovellusluokkien pakollisia menetelmiä.
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: business-process
@@ -12,30 +12,30 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 0fb0a9725d882fdc330d7adbb49bd3dcadf7805f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751703"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883622"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Sovellusluokkamenetelmän kutsulausekkeiden suunnittelu (ER)
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa käsitellään aiemmin luodun sovelluslogiikan uudelleenkäyttöä [sähköisen raportoinnin (ER)](../general-electronic-reporting.md) määrityksissä kutsumalla sovellusluokkien pakollisia menetelmiä ER-lausekkeissa. Luokkien kutsuargumenttien arvot voidaan määrittää dynaamisesti suorituksen aikana. Arvot voivat esimerkiksi perustua jäsennettävän asiakirjan tietoihin, mikä varmistaa arvojen oikeellisuuden.
+Tässä artikkelissa käsitellään aiemmin luodun sovelluslogiikan uudelleenkäyttöä [sähköisen raportoinnin (ER)](../general-electronic-reporting.md) määrityksissä kutsumalla sovellusluokkien pakollisia menetelmiä ER-lausekkeissa. Luokkien kutsuargumenttien arvot voidaan määrittää dynaamisesti suorituksen aikana. Arvot voivat esimerkiksi perustua jäsennettävän asiakirjan tietoihin, mikä varmistaa arvojen oikeellisuuden.
 
-Esimerkiksi tässä aiheessa suunnitellaan prosessi, joka jäsentää saapuvat tiliotteet sovellustietojen päivitystä varten. Saapuvat tiliotteet vastaanotetaan tekstitiedostoina (.txt), jotka sisältävät IBAN-koodit (kansainvälisen tilinumeron). IBAN-koodit on tarkistettava tiliotteiden tuontiprosessin osana. Tähän tarkistukseen käytetään sisältyvää logiikkaa.
+Esimerkiksi tässä artikkelissa suunnitellaan prosessi, joka jäsentää saapuvat tiliotteet sovellustietojen päivitystä varten. Saapuvat tiliotteet vastaanotetaan tekstitiedostoina (.txt), jotka sisältävät IBAN-koodit (kansainvälisen tilinumeron). IBAN-koodit on tarkistettava tiliotteiden tuontiprosessin osana. Tähän tarkistukseen käytetään sisältyvää logiikkaa.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-Tämän aiheen menettelyt on tarkoitettu käyttäjille, joille on määritetty **järjestelmänvalvojan** tai **sähköisen raportoinnin kehittäjän** rooli.
+Tämän artikkelin menettelyt on tarkoitettu käyttäjille, joille on määritetty **järjestelmänvalvojan** tai **sähköisen raportoinnin kehittäjän** rooli.
 
 Menettelyt voidaan suorittaa minkä tahansa tietojoukon avulla.
 
 Niiden suorittamista varten ladattava ja tallennettava seuraava tiedosto: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-Tässä aiheessa luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Tämän vuoksi ennen tämän aiheen menettelyjen suorittamista on toimittava seuraavasti:
+Tässä artikkelissa luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware, Inc. Tämän vuoksi ennen tämän artikkelin menettelyjen suorittamista on toimittava alla olevien vaiheiden mukaisesti.
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Tarkista **Lokalisoinnin konfiguraatiot** -sivulla, että malliyrityksen **Litware, Inc.** konfiguraation lähde on käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita ensin vaiheet kohdassa [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](er-configuration-provider-mark-it-active-2016-11.md).

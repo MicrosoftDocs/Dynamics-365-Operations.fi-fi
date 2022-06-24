@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 15b1796367338bf40b434cfab9368ed3386aed99
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876499"
 ---
 # <a name="develop-and-open-job-requisition"></a>Työehdotusten kehittäminen ja avaaminen
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Tämän ohjeaiheen työhönottotoimintoa kutsutaan työhönottoprojekteiksi, ja siinä keskitytään hakijoihin, hakemuksiin ja työhönottoprojekteihin.  
+> Tämän artikkelin työhönottotoimintoa kutsutaan työhönottoprojekteiksi, ja siinä keskitytään hakijoihin, hakemuksiin ja työhönottoprojekteihin.  
 
 
 Työhönottoprojektit auttavat rekrytointiprosessissa. Voit määrittää jokaiselle työhönottoprojektille tietoja, kuten työn, johon rekrytoidaan, rekrytoijan nimen, projektin tilan ja osaston, jossa työ sijaitsee. Kun työhönottoprojekti on luotu, voit kirjoittaa sille työilmoituksen, julkaista sen **työntekijöiden itsepalvelu** -sivuilla, liittää työhakemukset projektiin ja seurata kyseisen projektin aktiviteetteja. Tämän menettelyn luomisessa käytetty esittely-yritys on **USMF**.

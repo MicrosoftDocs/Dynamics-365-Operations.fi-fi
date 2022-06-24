@@ -1,6 +1,6 @@
 ---
 title: Integroidut toimipaikat ja varastot
-description: Tässä aiheessa kuvataan toimipaikkojen ja varastojen tietojen integraatiota Finance and Operationsin ja Dataversen välillä.
+description: Tässä artikkelissa kuvataan toimipaikkojen ja varastojen tietojen integraatiota Finance and Operationsin ja Dataversen välillä.
 author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cd1293094f670c43eb46bc14b8bfe0f2afe43047
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063209"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852595"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integroidut toimipaikat ja varastot
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063209"
 
 
 
-Tässä aiheessa kuvataan toimipaikkojen ja varastojen tietojen integraatiota Finance and Operationsin ja Dataversen välillä. Toiminnalliset toimipaikat ja varastot ovat Supply Chain Management -sovelluksen yleisiä käsitteitä. Niitä käytetään yrityksen toimitusketjun mallintamiseen.
+Tässä artikkelissa kuvataan toimipaikkojen ja varastojen tietojen integraatiota Finance and Operationsin ja Dataversen välillä. Toiminnalliset toimipaikat ja varastot ovat Supply Chain Management -sovelluksen yleisiä käsitteitä. Niitä käytetään yrityksen toimitusketjun mallintamiseen.
 
 ## <a name="templates"></a>Mallit
 

@@ -1,6 +1,6 @@
 ---
 title: Konfiguraatioiden suunnitteleminen asiakirjojen luomiseksi Excel-muodossa
-description: Tässä aiheessa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
+description: Tässä artikkelissa käsitellään Excel-mallin täyttävän sähköisen raportointimuodon (ER-muodon) suunnittelua ja lähtevien Excel-muotoisten tiedostojen luontia.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811417"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854811"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Excel-muotoisia tiedostoja luovan määrityksen suunnitteleminen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811417"
 
 Voit suunnitella [sähköisen raportoinnin (ER)](general-electronic-reporting.md) muotomäärityksen, jonka ER-muoto-osan voi määrittää luomaan lähtevän tiedoston Microsoft Excel -muotoisena työkirjana. Tätä tarkoitusta varten on käytettävä tiettyjä ER-muoto-osia.
 
-Lisätietoja tästä toiminnosta on ohjeaiheen [Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md) ohjeissa.
+Lisätietoja tästä toiminnosta on artikkelin [Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md) ohjeissa.
 
 ## <a name="add-a-new-er-format"></a>Uuden ER-muodon lisääminen
 
@@ -263,7 +263,7 @@ Voit lisätä yksittäiselle **Laskentataulukko**-komponentille useita **alatunn
 
 Lisää lisätyn **alatunniste**-komponentin kohdassa sisäkkäiset komponentit **Text\\String**, **Text\\DateTime** tai muu tyyppi. Määritä näiden komponenttien sidonnat ja määritä, miten sivun alatunniste täytetään.
 
-Erityisten [muotoilukoodien](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) avulla voit muotoilla luodun alatunnisteen sisällön oikein. Lisätietoja tämän menetelmän käytöstä on jäljempänä tässä ohjeaiheessa [esimerkin 1](#example-1) vaiheiden mukaisesti.
+Erityisten [muotoilukoodien](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) avulla voit muotoilla luodun alatunnisteen sisällön oikein. Lisätietoja tämän menetelmän käytöstä on jäljempänä tässä artikkelissa [esimerkin 1](#example-1) vaiheiden mukaisesti.
 
 > [!NOTE]
 > Kun määrität ER-muotoja, muista ottaa huomioon Excelin [rajoitus](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) ja yksittäisen ylä- tai alatunnisteen enimmäismerkkimäärä.
