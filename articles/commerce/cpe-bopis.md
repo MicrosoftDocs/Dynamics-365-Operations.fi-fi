@@ -1,6 +1,6 @@
 ---
-title: BOPIS:n määrittäminen Dynamics 365 Commerce -arviointiympäristössä
-description: Tässä ohjeaiheessa selitetään, miten osta verkosta, nouda myymälästä (BOPIS) määritetään Microsoft Dynamics 365 Commerce -arviointiympäristössä, kun se on valmisteltu.
+title: BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä
+description: Tässä artikkelissa selitetään, miten osta verkosta, nouda myymälästä (BOPIS) määritetään Microsoft Dynamics 365 Commerce -arviointiympäristössä, kun se on valmisteltu.
 author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861963"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS:n määritykset Dynamics 365 Commerce -arviointiympäristössä
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten osta verkosta, nouda myymälästä (BOPIS) määritetään Microsoft Dynamics 365 Commerce -arvoiointiympäristössä, kun ympäristö on valmisteltu.
+Tässä artikkelissa selitetään, miten osta verkosta, nouda myymälästä (BOPIS) määritetään Microsoft Dynamics 365 Commerce -arvoiointiympäristössä, kun ympäristö on valmisteltu.
 
 ## <a name="prerequisite"></a>Edellytys
 
-Suorita tämän ohjeaiheen toimet vasta, kun Commercen arviointiympäristö on valmisteltu ja määritetty. Lisätietoja ympäristön valmistelusta ja määrittämisestä on kohdissa [Dynamics 365 Commerce -arviointiympäristön valmisteleminen](provisioning-guide.md) ja [Dynamics 365 Commerce -arviointiympäristön määrittäminen](./cpe-post-provisioning.md).
+Suorita tämän artikkelin toimet vasta, kun Commercen arviointiympäristö on valmisteltu ja määritetty. Lisätietoja ympäristön valmistelusta ja määrittämisestä on kohdissa [Dynamics 365 Commerce -arviointiympäristön valmisteleminen](provisioning-guide.md) ja [Dynamics 365 Commerce -arviointiympäristön määrittäminen](./cpe-post-provisioning.md).
 
-Kun Commerce-ympäristö on valmisteltu ja määritetty päättyneeksi, voit ottaa käyttöön BOPIS-skenaariot tämän ohjeaiheen avulla.
+Kun Commerce-ympäristö on valmisteltu ja määritetty päättyneeksi, voit ottaa käyttöön BOPIS-skenaariot tämän artikkelin avulla.
 
 ## <a name="configure-the-pos"></a>Määritä POS
 
 ### <a name="configure-modern-pos"></a>Modern POS:in määrittäminen
 
-BOPIS-skenaariot, joihin liittyy luottokorttimaksu, edellyttävät laitteistoasemaa. Laiteasema muodostetaan Windowsin Modern POS:iin Windowsille ja Androidille. Jos käytät iOS POS-tai Modern POS-sovellusta iOS:lle, myyntipisteasiakasohjelman on muodostettava laitepari jaetun laiteaseman kanssa. Tässä ohjeaiheessa selitetään, kuinka BOPIS määritetään Windows- ja Android-asiakkaita varten. Lisätietoja jaetun laiteaseman asentamisesta on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](./retail-hardware-station-configuration-installation.md).
+BOPIS-skenaariot, joihin liittyy luottokorttimaksu, edellyttävät laitteistoasemaa. Laiteasema muodostetaan Windowsin Modern POS:iin Windowsille ja Androidille. Jos käytät iOS POS-tai Modern POS-sovellusta iOS:lle, myyntipisteasiakasohjelman on muodostettava laitepari jaetun laiteaseman kanssa. Tässä artikkelissa selitetään, kuinka BOPIS määritetään Windows- ja Android-asiakkaita varten. Lisätietoja jaetun laiteaseman asentamisesta on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](./retail-hardware-station-configuration-installation.md).
 
 1. Siirry kohtaan **Vähittäismyynti ja kauppa \> Kanavan asetukset \> POS-asetukset \> Kassakoneet**.
 2. Valitse rekisteröi **SANFRAN-5** ja valitse sitten **Muokkaa**.
@@ -67,7 +67,7 @@ BOPIS-skenaariot, joihin liittyy luottokorttimaksu, edellyttävät laitteistoase
 5. Näyttöön tulee todennusvalintaikkuna. Valitse tili, joka käyttää sähköpostiosoitetta, joka yhdistettiin aiemmin työntekijään **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Jos et ole vielä liittänyt työntekijää henkilöllisyytesi, aktivointi epäonnistuu. Noudata tässä tapauksessa Liitä työntekijä henkilöllisyyteesi -kohdan ohjeita ohjeaiheessa [Määritä Dynamics 365 Commerce -arviointiympäristö](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Jos et ole vielä liittänyt työntekijää henkilöllisyytesi, aktivointi epäonnistuu. Noudata tässä tapauksessa Liitä työntekijä henkilöllisyyteesi -kohdan ohjeita artikkelissa [Määritä Dynamics 365 Commerce -arviointiympäristö](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Kun sinua kehotetaan antamaan organisaatiosi hallita laitetta, valitse **Vain tämä sovellus**.
 7. Kun aktivointi on tehty, valitse **Aloita**.

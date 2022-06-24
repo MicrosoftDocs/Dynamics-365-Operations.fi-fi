@@ -1,6 +1,6 @@
 ---
 title: Tuotteen valmius
-description: Tässä aiheessa käsitellään valmiustarkistusten käyttöä sen varmistamiseen, että tuotteen pakolliset päätiedot ovat valmiit, ennen kuin tuotetta käytetään tapahtumissa.
+description: Tässä artikkelissa käsitellään valmiustarkistusten käyttöä varmistamaan, että tuotteen pakolliset päätiedot ovat valmiit, ennen kuin tuotetta käytetään tapahtumissa.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: a8e76d5fc786b6f4cac7cd0430399ca3ad13a7bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856219"
 ---
 # <a name="product-readiness"></a>Tuotteen valmius
 
@@ -61,7 +61,7 @@ Jos suunnittelutuotteelle luodaan uusi *versio*, järjestelmä tarkistaa, koskee
 - Suunnitteluversio määritetään passiiviseksi, mikä estää tuotteen käytön.
 
 > [!NOTE]
-> Voit myös määrittää valmiustarkistuksia vakiotuotteille (ei-tekninen suunnittelu). Lisätietoja on jäljempänä tässä ohjeaiheessa [Standardituotteiden valmiustarkistus](#standard-products) -osassa.
+> Voit myös määrittää valmiustarkistuksia vakiotuotteille (ei-tekninen suunnittelu). Lisätietoja on jäljempänä tässä artikkelissa [Standardituotteiden valmiustarkistus](#standard-products) -osassa.
 
 ## <a name="view-readiness-checks"></a>Valmiustarkistusten näyttäminen
 
@@ -151,7 +151,7 @@ Määritä seuraavat kentät jokaiselle lisättävälle riville.
 | Yhtiö | Jos **Suoritetaan kohteessa** -kentän asetuksena on *Yksi yhtiö*, valitse yhtiö. |
 | Omistajan tyyppi | Valitse, määritetäänkö rivin luomat valmiustarkistukset henkilölle vain ryhmälle. |
 | Omistaja | Valitse henkilö tai ryhmä, jolle rivin luomat valmiustarkistukset määritetään. |
-| Kyselylomake | Valitse tarkistusluettelossa käytettävä kyselylomake. Tarkistusluettelon paikallinen tarkistusluettelo siinä yhtiössä, jossa valmiustarkistus tehdään. Järjestelmän on voitava arvioida kyselylomakkeessa annettujen vastausten oikeellisuus. Tämän vuoksi kyselylomake on määritettävä siten, että arviointi tehdään oikeiden vastausten perusteella. Lisätietoja kyselylomakkeiden luomisesta on kohdassa [Kyselylomakkeiden käyttäminen](/dynamicsax-2012/appuser-itpro/using-questionnaires) ja siihen liittyvissä aiheissa. |
+| Kyselylomake | Valitse tarkistusluettelossa käytettävä kyselylomake. Tarkistusluettelon paikallinen tarkistusluettelo siinä yhtiössä, jossa valmiustarkistus tehdään. Järjestelmän on voitava arvioida kyselylomakkeessa annettujen vastausten oikeellisuus. Tämän vuoksi kyselylomake on määritettävä siten, että arviointi tehdään oikeiden vastausten perusteella. Lisätietoja kyselylomakkeiden luomisesta on kohdassa [Kyselylomakkeiden käyttäminen](/dynamicsax-2012/appuser-itpro/using-questionnaires) ja siihen liittyvissä artikkeleissa. |
 | Automaattinen hyväksyntä | Valmiustarkistustietueissa on **Hyväksytty**-valintaruutu, joka ilmaisee hyväksynnän tilan. Valitse **Automaattinen hyväksyntä** -valintaruutu niissä tarkistuksissa, jotka on määritettävä hyväksytyiksi heti, kun määritetty käyttäjä on suorittanut ne. Poista tämän valintaruudun valinta, jos hyväksyntään tarvitaan erillinen lisävaihe. |
 | Pakollinen | Valitse tämä valintaruutu tarkistuksissa, jotka määritetyn käyttäjän on tehtävä. Pakollisia tarkistuksia ei voi ohittaa. |
 
@@ -159,7 +159,7 @@ Määritä seuraavat kentät jokaiselle lisättävälle riville.
 
 ## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Vakio- ja suunnittelutuotteiden valmiuskäytäntöjen määrittäminen
 
-Kun luot uuden suunnitteluluokkaan perustuvan tuotteen, luot sekä *vapautetun tuotteen* että liittyvän *jaetun tuotteen*. Tapa, jolla valmiuskäytännöt ratkaistaan vapautetun tuotteen osalta, määräytyy sen mukaan, onko *Tuotteen valmiustarkistukset* -toiminto käytössä järjestelmässäsi (katso osasta [Vakiotuotteiden valmiustarkistukset](#standard-products) jäljempänä tässä aiheessa tietoja tästä toiminnosta ja siitä, miten se otetaan käyttöön ja poistetaan käytöstä).
+Kun luot uuden suunnitteluluokkaan perustuvan tuotteen, luot sekä *vapautetun tuotteen* että liittyvän *jaetun tuotteen*. Tapa, jolla valmiuskäytännöt ratkaistaan vapautetun tuotteen osalta, määräytyy sen mukaan, onko *Tuotteen valmiustarkistukset* -toiminto käytössä järjestelmässäsi (katso osasta [Vakiotuotteiden valmiustarkistukset](#standard-products) jäljempänä tässä artikkelissa tietoja tästä toiminnosta ja siitä, miten se otetaan käyttöön ja poistetaan käytöstä).
 
 - Kun *tuotevalmiuden tarkistus* -toiminto on *poistettu käytöstä* järjestelmässä, valmiuskäytäntö määritetään ja näkyy vain [suunnitteluluokan](engineering-versions-product-category.md) tietueissa. Jos haluat tietää, mitä menettelyä vapautettavaan tuotteeseen liittyy, järjestelmä tarkistaa liittyvän suunnitteluluokan **Tuotevalmiuskäytäntö**-kentän. Voit muuttaa olemassa olevan tuotteen valmiuskäytäntöä muokkaamalla siihen liittyvää suunnitteluluokkaa (ei jaettua tuotetta).
 - Kun *tuotevalmiuden tarkistus* -toiminto on *käytössä*, se lisää **tuotevalmiuskäytännön** kentän **tuote**-sivulle (jossa yhteiset tuotteet on määritetty) ja **vapautetun tuotteen** sivulle (jossa arvo on vain luku ja otetaan liittyvästä jaetusta tuotteesta). Järjestelmä löytää vapautetun tuotteen valmiuskäytännön tarkistamalla liittyvän jaetun tuotteen. Kun luot uuden suunnittelutuotteen käyttämällä suunnitteluluokkaa, järjestelmä luo sekä jaetun tuotteen että vapautetun tuotteen sekä kopioi uuteen jaettuun tuotteeseen suunnitteluluokan **tuotevalmiuden käytäntö** -asetuksen. Voit sitten muuttaa olemassa olevan tuotteen valmiuskäytäntöä muokkaamalla siihen liittyvää jaettua tuotetta (ei vapautettua suunnitteluluokkaa).
@@ -188,14 +188,14 @@ Tämä toiminto edellyttää, että toiminnot *Suunnittelun muutosten hallinta* 
 
 ### <a name="create-readiness-policies-for-standard-products"></a>Valmiuskäytäntöjen luominen vakiotuotteille
 
-Luot valmiuskäytännöt vakiotuotteille aivan samoin kuin tuotteiden suunnittelussa. Tietoja on jo käsitelty aiemmin tässä aiheessa.
+Luot valmiuskäytännöt vakiotuotteille aivan samoin kuin tuotteiden suunnittelussa. Tietoja on jo käsitelty aiemmin tässä artikkelissa.
 
 ### <a name="assign-readiness-policies-to-standard-products"></a>Valmiuskäytäntöjen määrittäminen vakiotuotteille
 
-Voit määrittää valmiuskäytännön vakiotuotteelle avaamalla liittyvän jaetun tuotteen ja määrittämällä **tuotteen valmiuskäytännön** kenttään sen käytännön nimen, jota on sovellettava. Lisätietoja on tämän ohjeaiheen aiemmassa kohdassa [Määritä valmiuskäytännöt vakio- ja suunnittelutuotteille](#assign-policy).
+Voit määrittää valmiuskäytännön vakiotuotteelle avaamalla liittyvän jaetun tuotteen ja määrittämällä **tuotteen valmiuskäytännön** kenttään sen käytännön nimen, jota on sovellettava. Lisätietoja on tämän artikkelin aiemmassa kohdassa [Määritä valmiuskäytännöt vakio- ja suunnittelutuotteille](#assign-policy).
 
 ### <a name="view-and-process-readiness-checks-on-standard-products"></a>Vakiotuotteiden valmiustarkistusten tarkastelu ja käsittely
 
-Kun tämä ominaisuus on käytössä, voit tarkastella ja käsitellä vakiotuotteiden valmiustarkistuksia aivan samoin kuin suunnittelutuotteessakin. Tietoja on jo käsitelty aiemmin tässä aiheessa.
+Kun tämä ominaisuus on käytössä, voit tarkastella ja käsitellä vakiotuotteiden valmiustarkistuksia aivan samoin kuin suunnittelutuotteessakin. Tietoja on jo käsitelty aiemmin tässä artikkelissa.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

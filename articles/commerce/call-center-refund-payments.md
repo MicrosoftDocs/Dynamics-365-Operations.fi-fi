@@ -1,6 +1,6 @@
 ---
 title: Hyvitysmaksujen käsittely puhelinkeskuksissa
-description: Tässä ohjeaiheessa kerrotaan, miten maksun hyvitykset luodaan puhelinkeskuksen kautta, kun palautukset luodaan tai kun tilaukset tai tilausrivit peruutetaan.
+description: Tässä artikkelissa kerrotaan, miten maksun hyvitykset luodaan puhelinkeskuksen kautta, kun palautukset luodaan tai kun tilaukset tai tilausrivit peruutetaan.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 330674a31dc59e99ffedb82d0896c64214562eb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944710"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880111"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Hyvitysmaksujen käsittely puhelinkeskuksissa
 
-Tässä ohjeaiheessa kerrotaan, miten maksun hyvitykset luodaan puhelinkeskuksen kautta, kun palautukset luodaan tai kun tilaukset tai tilausrivit peruutetaan.
+Tässä artikkelissa kerrotaan, miten maksun hyvitykset luodaan puhelinkeskuksen kautta, kun palautukset luodaan tai kun tilaukset tai tilausrivit peruutetaan.
 
 Käyttäjä, joka luo asiakkaalle palautustilauksen puhelukeskuksen käyttäjänä Microsoft Dynamics 365 Commerce headquarters -sovelluksessa, luo palautuksen valtuutuksen (RMA) **Palautustilaus** -sivulla. RMA määrittää tuotteet, jotka asiakas haluaa palauttaa tai vaihtaa, ja se luo linkitetyn palautusmyyntitilauksen, jonka tilaustyyppi on **Palautettu tilaus**. Tätä linkitettyä palautettua tilausta käytetään seuraamaan palautetun varaston kirjaamista sekä kirjattuja hyvityslaskuja tai maksun palautuksia.
 
@@ -92,7 +92,7 @@ Kun korvaavan tilauksen maksut käsitellään, organisaatioilla on kaksi vaihtoe
 
 ## <a name="payment-overrides-for-call-center-returns"></a>Puhelukeskuksen palautusten maksun ohitukset
 
-Vaikka puhelukeskuksen logiikka systemaattisesti määrittää hyvitysmaksutavan aiemmin tässä ohjeaiheessa kuvatulla tavalla, käyttäjät voivat joskus haluta ohittaa nämä maksut. Käyttäjä voi esimerkiksi muokata tai poistaa aiemmin luotuja hyvitysmaksurivejä ja ottaa käyttöön uusia maksurivejä. Järjestelmän laskemia hyvitysmaksuja voivat muuttaa vain käyttäjät, joilla on oikeat ohitusoikeudet. Nämä käyttöoikeudet voidaan konfiguroida Retailin ja Commercen **Ohitusoikeudet** -sivulla. Jos haluat käyttää hyvitysmaksun ohitusta, käyttäjä on linkitettävä suojausrooliin, jossa **Salli vaihtoehtoinen maksu** -asetuksen arvo on **Kyllä** **Ohitusoikeudet**-sivulla.
+Vaikka puhelukeskuksen logiikka systemaattisesti määrittää hyvitysmaksutavan aiemmin tässä artikkelissa kuvatulla tavalla, käyttäjät voivat joskus haluta ohittaa nämä maksut. Käyttäjä voi esimerkiksi muokata tai poistaa aiemmin luotuja hyvitysmaksurivejä ja ottaa käyttöön uusia maksurivejä. Järjestelmän laskemia hyvitysmaksuja voivat muuttaa vain käyttäjät, joilla on oikeat ohitusoikeudet. Nämä käyttöoikeudet voidaan konfiguroida Retailin ja Commercen **Ohitusoikeudet** -sivulla. Jos haluat käyttää hyvitysmaksun ohitusta, käyttäjä on linkitettävä suojausrooliin, jossa **Salli vaihtoehtoinen maksu** -asetuksen arvo on **Kyllä** **Ohitusoikeudet**-sivulla.
 
 ![Salli vaihtoehtoinen maksu -vaihtoehto Ohitusoikeudet-sivulla.](media/overridepermissions.png)
 

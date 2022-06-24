@@ -1,6 +1,6 @@
 ---
 title: Myymälöiden asiakashallinta
-description: Tässä ohjeaiheessa on tietoja siitä, miten vähittäismyyjät voivat ottaa käyttöön asiakashallintatoimintoja myyntipisteessä Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa on tietoja siitä, miten vähittäismyyjät voivat ottaa käyttöön asiakashallintatoimintoja myyntipisteessä Microsoft Dynamics 365 Commercessa.
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5a352ba479ca5e635ef521b99f31bd26d5d837ac
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 805d0b5894b18e2fc34f481bdc32ada7a4b1aee0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687330"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863484"
 ---
 # <a name="customer-management-in-stores"></a>Myymälöiden asiakashallinta
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja siitä, miten vähittäismyyjät voivat ottaa käyttöön asiakashallintatoimintoja myyntipisteessä Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa on tietoja siitä, miten vähittäismyyjät voivat ottaa käyttöön asiakashallintatoimintoja myyntipisteessä Microsoft Dynamics 365 Commercessa.
 
 On tärkeää, että myymälän myyjät voivat luoda ja muokata asiakastietueita myyntipisteessä. Näin he voivat siepata asiakastietojen päivityksiä, kuten sähköpostiosoitteen, puhelinnumeron ja osoitteen. Näistä tiedoista on hyötyä esimerkiksi markkinoinnissa, koska näiden järjestelmien tehokkuus riippuu asiakkaiden tietojen tarkkuudesta.
 

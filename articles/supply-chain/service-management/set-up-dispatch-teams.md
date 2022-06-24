@@ -1,6 +1,6 @@
 ---
 title: Määritä resursointiryhmät
-description: Tässä ohjeaiheessa kuvataan, kuinka resursointiryhmä luodaan.
+description: Tässä artikkelissa kuvataan, kuinka resursointiryhmä luodaan.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 742cb79076662e9595b98bb7acf91ffed5e0ac82
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2051ccdbe5786a347c1eba5bd36a0d6c77ad72a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847843"
 ---
 # <a name="set-up-dispatch-teams"></a>Määritä resursointiryhmät 
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa kuvataan, kuinka resursointiryhmä luodaan. Kun olet luonut resursointiryhmän, voit määrittää ryhmän työntekijät. Kun huoltotilaus luodaan, voit sitten liittää resursointiryhmän jäsenen huoltotilauksen aktiviteettiin.
+Tässä artikkelissa kuvataan, kuinka resursointiryhmä luodaan. Kun olet luonut resursointiryhmän, voit määrittää ryhmän työntekijät. Kun huoltotilaus luodaan, voit sitten liittää resursointiryhmän jäsenen huoltotilauksen aktiviteettiin.
 
 1.  Valitse **Huoltohallinta** \> **Asetukset** \> **Resursointiryhmät**.
 

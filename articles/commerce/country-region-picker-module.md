@@ -1,6 +1,6 @@
 ---
 title: Maan tai alueen valitsinmoduuli
-description: Tässä ohjeaiheessa käsitellään maan tai alueen valitsinmoduulia ja kuvataan, miten se määritetään Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa käsitellään maan tai alueen valitsinmoduulia ja kuvataan, miten se määritetään Microsoft Dynamics 365 Commercessa.
 author: stuharg
 ms.date: 04/06/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 9c20e614053b7a79cf962990dbd13ca0f45d5a00
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: d20b3be008a37b1c86e6fefe0ccc90c581e18340
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861989"
 ---
 # <a name="countryregion-picker-module"></a>Maan tai alueen valitsinmoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään maan tai alueen valitsinmoduulia ja kuvataan, miten se määritetään Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa käsitellään maan tai alueen valitsinmoduulia ja kuvataan, miten se määritetään Microsoft Dynamics 365 Commercessa.
 
 Maan tai alueen valitsinmoduuli käyttää Dynamics 365 Commercen [maantieteellisen sijainnin tunnistuksen ja uudelleenohjauksen](geo-detection-redirection.md) oinaisuutta näyttääkseen suositeltuja sivustoja asiakkaille, jotka pyytävät sellaisen sähköisen kaupankäyntisivuston URL-osoitetta, joka ei liity heidän maahansa tai alueeseensa.
 

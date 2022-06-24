@@ -1,6 +1,6 @@
 ---
-title: Tuotemäärän rajojen asettaminen B2B-verkkokauppasivustoille
-description: Tässä aiheessa kuvataan, kuinka määritetään tuotemäärän rajat yritysten (B2B) verkkokauppasivustoissa.
+title: Tuotemäärän rajojen asettaminen yritysten välisille sähköisille kaupankäyntisivustoille
+description: Tässä artikkelissa kuvataan, kuinka määritetään tuotemäärän rajat yritysten (B2B) verkkokauppasivustoissa.
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 18dc138693dc9fb0e8cf8727de77b5f8584cde79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 034441f8f712c676dbcc89f0009361d0a4a65721
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690192"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877002"
 ---
-# <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Tuotemäärän rajojen asettaminen B2B-verkkokauppasivustoille
+# <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Tuotemäärän rajojen asettaminen yritysten välisille sähköisille kaupankäyntisivustoille
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka määritetään tuotemäärän rajat yritysten (B2B) verkkokauppasivustoissa.
+Tässä artikkelissa kuvataan, kuinka määritetään tuotemäärän rajat yritysten (B2B) verkkokauppasivustoissa.
 
 Useimmilla tuotteilla on ryhmittelyn määrittävä mittayksikkö. Ryhmittely vaikuttaa siihen, miten tuotteita voidaan myydä. Joillakin tuotteilla saattaa olla määrille lisäryhmittelyitä. Tämä ryhmittely määrittää, voidaanko tuotteet myydä yksittäisinä yksikköinä vai ryhminä, ja se, onko olemassa vähimmäis- tai enimmäistilausmäärän raja, jota on noudatettava.
 

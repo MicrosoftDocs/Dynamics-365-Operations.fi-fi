@@ -1,6 +1,6 @@
 ---
 title: Kustannuslaskennan parametriarvojen määrittäminen
-description: Kun määrität Aiheutunut kustannus -moduulia, voit määrittää useita yhteisten arvojen joukkoja, jotka ovat käytettävissä, kun valitset tietyntyyppisiä kustannuslaskennan parametriarvoja sovelluksen muissa osissa. Tässä ohjeaiheessa selitetään, kuinka nämä arvojoukot määritetään.
+description: Kun määrität Aiheutunut kustannus -moduulia, voit määrittää useita yhteisten arvojen joukkoja, jotka ovat käytettävissä, kun valitset tietyntyyppisiä kustannuslaskennan parametriarvoja sovelluksen muissa osissa. Tässä artikkelissa selitetään, kuinka nämä arvojoukot määritetään.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ed20181201a2f3f84c3dc08549f4f107d46a50a2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca3633cd8a3fb053bda597b968003685aa2326ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689744"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852328"
 ---
 # <a name="costing-parameter-values-setup"></a>Kustannuslaskennan parametriarvojen määrittäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Kun määrität **Aiheutunut kustannus** -moduulia, voit määrittää useita yhteisten arvojen joukkoja ja arvokohtaisia asetuksia. Nämä arvot ovat käytettävissä, kun valitset tietyntyyppisiä kustannuslaskennan parametriarvoja sovelluksen muissa osiossa. Tässä ohjeaiheessa selitetään, kuinka nämä arvojoukot määritetään.
+Kun määrität **Aiheutunut kustannus** -moduulia, voit määrittää useita yhteisten arvojen joukkoja ja arvokohtaisia asetuksia. Nämä arvot ovat käytettävissä, kun valitset tietyntyyppisiä kustannuslaskennan parametriarvoja sovelluksen muissa osiossa. Tässä artikkelissa selitetään, kuinka nämä arvojoukot määritetään.
 
 ## <a name="set-up-cost-type-codes"></a>Kustannustyyppien koodien määrittäminen
 

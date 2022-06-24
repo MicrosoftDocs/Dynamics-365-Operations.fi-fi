@@ -1,6 +1,6 @@
 ---
-title: Vahvista ja siirrä
-description: Tässä aiheessa kerrotaan vahvistus- ja siirtotoiminnosta, joiden avulla käyttäjien on mahdollista lähettää kuormia varastosta ennen kuin kaikki kuormiin liittyvät työt on hoidettu.
+title: Vahvistus ja siirtäminen
+description: Tässä artikkelissa kerrotaan vahvistus- ja siirtotoiminnosta, joiden avulla käyttäjien on mahdollista lähettää kuormia varastosta ennen kuin kaikki kuormiin liittyvät työt on hoidettu.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900561"
 ---
 # <a name="confirm-and-transfer"></a>Vahvista ja siirrä
 
@@ -55,11 +55,11 @@ Voit jakaa vain ne kuormat, jotka täyttävät kaikki seuraavat ehdot:
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Vahvista ja siirrä -toiminnon käyttöönotto tai käytöstä poisto
 
-Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Vahvista ja siirrä* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Vahvista ja siirrä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Tässä artikkelissa kuvatun toiminnon käyttäminen edellyttää, että *Vahvista ja siirrä* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Vahvista ja siirrä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-confirm-and-transfer"></a>Vahvistuksen ja siirron määrittäminen
 
-Jos haluat käyttää *Vahvistus ja siirto* -toimintoa, sinun on otettava se käyttöön kaikissa olennaisissa kuormamalleissa. Voit myös tarpeen mukaan valmistella toimintoon kanssa yhteensopivia työmalleja. Jos haluat kokeilla tässä aiheessa myöhemmin esiteltävää esimerkkitilannetta, määritä järjestelmäsi tämän osion ohjeiden mukaan. (Esimerkkitilanne perustuu **USMF**-esittelytietoihin.)
+Jos haluat käyttää *Vahvistus ja siirto* -toimintoa, sinun on otettava se käyttöön kaikissa olennaisissa kuormamalleissa. Voit myös tarpeen mukaan valmistella toimintoon kanssa yhteensopivia työmalleja. Jos haluat kokeilla tässä artikkelissa myöhemmin esiteltävää esimerkkitilannetta, määritä järjestelmäsi tämän osion ohjeiden mukaan. (Esimerkkitilanne perustuu **USMF**-esittelytietoihin.)
 
 ### <a name="prepare-your-load-templates"></a>Kuormamallien valmisteleminen
 
@@ -69,7 +69,7 @@ Jos haluat käyttää *Vahvistus ja siirto* -toimintoa, sinun on otettava se kä
 
 ### <a name="prepare-your-work-templates"></a>Työmallien valmisteleminen
 
-Tätä asetusta ei vaadita kaikissa tilanteissa. Tässä näytetyn esimerkin avulla taataan, että työ voidaan jakaa lähetyksen mukaan, mikä tukee myöhemmin tässä aiheessa esiteltävää esimerkkitilannetta. Tähän lopputulokseen voi päätyä myös muilla tavoilla.
+Tätä asetusta ei vaadita kaikissa tilanteissa. Tässä näytetyn esimerkin avulla taataan, että työ voidaan jakaa lähetyksen mukaan, mikä tukee myöhemmin tässä artikkelissa esiteltävää esimerkkitilannetta. Tähän lopputulokseen voi päätyä myös muilla tavoilla.
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Työ \> Työmallit**.
 1. Valitse sivun yläosan ruudukossa aiemmin luotu työmalli, jota varten haluat määrittää *Vahvistus ja siirto* -toiminnon. (Jos hyödynnät **USMF**-esittelytietoja, valitse kohta **51 Poiminta** -työmalli.) Voit myös luoda uuden työmallin.

@@ -1,6 +1,6 @@
 ---
 title: Tuo saapuvat ASN:t V3-tietoyksikön kautta
-description: Tässä aiheessa kerrotaan, miten saapuvien lisätoimitusilmoitusten (ASN-koodien) tuontia hallitaan saapuvan ASN-tietoyksikön kautta.
+description: Tässä artikkelissa kerrotaan, miten saapuvien lisätoimitusilmoitusten (ASN-koodien) tuontia hallitaan saapuvan ASN-tietoyksikön kautta.
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 44ec0230236451a413d483b3e9f3ddc58b49a0b0
-ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
+ms.openlocfilehash: 0ac45e070d0473547c48da1380377de3d4bf60bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907113"
 ---
 # <a name="import-inbound-asns-through-the-v3-data-entity"></a>Tuo saapuvat ASN:t V3-tietoyksikön kautta
 
@@ -26,7 +26,7 @@ Advanced shipping notices (ASNs) ilmoittaa toimittajien toimituksista. Niiden av
 
 ASN-määritykset voivat auttaa varastotyöntekijöitä tietämään, mitä saapuu milloin. Siksi he voivat valmistautua. Varastotyöntekijät voivat myös täsmätä ASN-numeroiden avulla lähetyksen tiedot aiemmin luotuun ostotilaukseen.
 
-Tämä ohjeaihe sisältää skenaariokokoelman, jotka näyttävät esimerkkien avulla, miten ASN-tiedostoja käytetään.
+Tämä artikkeli sisältää skenaariokokoelman, jotka näyttävät esimerkkien avulla, miten ASN-tiedostoja käytetään.
 
 > [!IMPORTANT]
 > *Saapuva ASN* -tuonti koskee vain nimikkeitä, jotka on otettu käyttöön varaston lisähallinnassa (WMS). Ennen ASN-ilmoituksen vastaanottamista järjestelmään on rekisteröitävä ostotilaus ASN:in lähettävää toimittajaa vastaan.

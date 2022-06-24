@@ -1,6 +1,6 @@
 ---
 title: Palautusten luominen myyntipisteessä
-description: Tässä aiheessa käsitellään palautusten käynnistämistä käteis- ja siirtotapahtumista tai asiakastilauksista Microsoft Dynamics 365 Commerce -myyntipistesovelluksessa.
+description: Tässä artikkelissa käsitellään palautusten käynnistämistä käteis- ja siirtotapahtumista tai asiakastilauksista Microsoft Dynamics 365 Commerce -myyntipistesovelluksessa.
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856995"
 ---
 # <a name="create-returns-in-pos"></a>Palautusten luominen myyntipisteessä
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa käsitellään palautusten käynnistämistä käteis- ja siirtotapahtumista tai asiakastilauksista Microsoft Dynamics 365 Commerce -myyntipistesovelluksessa.
+Tässä artikkelissa käsitellään palautusten käynnistämistä käteis- ja siirtotapahtumista tai asiakastilauksista Microsoft Dynamics 365 Commerce -myyntipistesovelluksessa.
 
 > [!NOTE]
 > Commerce-versiossa 10.0.20 ja sitä myöhemmissä versioissa on uusi toiminto nimeltä **Myyntipisteen yhdistetty palautuksen käsittelykokemus**. Tämä ominaisuus tarjoaa myyntipisteessä yhdenmukaisen ja yhdistetyn palautusprosessin riippumatta tapahtuman tyypistä (käteis- ja siirtotapahtuma tai asiakastilaus) tai alkuperäisestä kanavasta, jossa tilaus luotiin. On suositeltavaa, että kaikki organisaatiot käyttävät tätä uutta ominaisuutta, jotta palautusten käsittelyn yleistä luotettavuutta voidaan parantaa myyntipisteessä.

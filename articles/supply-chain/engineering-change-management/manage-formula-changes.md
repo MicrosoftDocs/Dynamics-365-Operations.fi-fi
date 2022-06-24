@@ -1,6 +1,6 @@
 ---
 title: Kaavojen ja niiden osien muutosten hallinta
-description: Tässä aiheessa kuvataan, miten kaavojen hallintaa ja prosessin valmistuksen perustietojen muutoksia hallitaan.
+description: Tässä artikkelissa kuvataan, miten kaavojen hallintaa ja prosessin valmistuksen perustietojen muutoksia hallitaan.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904069"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Kaavojen ja niiden osien muutosten hallinta
 
@@ -29,7 +29,7 @@ Jos käytät Microsoft Dynamics 365 Supply Chain Managementin prosessivalmistust
 
 ## <a name="turn-this-feature-on-or-off"></a>Toiminnon ottaminen käyttöön tai pois käytöstä
 
-Tässä aiheessa kuvattu toiminto edellyttää, että toiminnot *Suunnittelun muutosten hallinta* ja *Hallitse kaavojen ja niiden ainesosien muutoksia* ovat käytössä järjestelmässä. Tietoja näiden toimintojen ottamisesta käyttöön tai pois käytöstä: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
+Tässä artikkelissa kuvattu toiminto edellyttää, että toiminnot *Suunnittelun muutosten hallinta* ja *Hallitse kaavojen ja niiden ainesosien muutoksia* ovat käytössä järjestelmässä. Tietoja näiden toimintojen ottamisesta käyttöön tai pois käytöstä: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Ominaisuuksien nimeämiskäytäntöjä
 
@@ -46,7 +46,7 @@ Seuraavassa luettelossa on yhteenveto siitä, miten kaavojen hallintaan sovellet
 - **Valmiuden hallinta** – Järjestelmän tarkistusten ja käyttäjän ohjeiden (kyselylomakkeiden ja tarkistusluetteloiden) avulla voit varmistaa, että kaikki tarvittavat tuotetiedot lisätään kokonaan ennen tuotteen vapauttamista. Lisätietoja on kohdassa [Tuotteen valmius](product-readiness.md).
 - **Paranneltu tuotejulkaisutoiminto** – Vapauttaa tuotteen ja sen kaavan kokonaan määritetyt versiot organisaatiosta (yrityksestä) toisille yrityksille. Voit myös päättää, tuleeko tuotetiedot tarkistaa tai muokata, ennen kuin ne voidaan vapauttaa. Lisätietoja on kohdassa [Tuoterakenteiden vapauttaminen](release-product-structure.md).
 
-Huomaa, että useimmat edellisessä luettelossa linkitetyt ohjeaiheet ovat esimerkkejä tuoterakenteista. Kaavat toimivat kuitenkin samalla tavalla. Seuraavassa on lisäkäsitteitä, jotka ovat hyödyllisiä kaavojen ja tuoterakenteiden hallinnassa, kun käytät muutoksenhallintaa (tai vain kaavan muutoksen hallintaa):
+Huomaa, että useimmat edellisessä luettelossa linkitetyt artikkelit ovat esimerkkejä tuoterakenteista. Kaavat toimivat kuitenkin samalla tavalla. Seuraavassa on lisäkäsitteitä, jotka ovat hyödyllisiä kaavojen ja tuoterakenteiden hallinnassa, kun käytät muutoksenhallintaa (tai vain kaavan muutoksen hallintaa):
 
 - Voit määrittää kullekin [tuotesuunnitteluluokalle](engineering-versions-product-category.md) tuotantotyypin (tuoterakenne, resepti tai suunnittelunimike). Voit myös määrittää, tarvitaanko tätä luokkaa luokiteltavassa tuotteiden todellisen painon tukea.
 - Oheistuotteet ja sivutuotteet eivät ole suunnittelutuotteita. Siksi niitä ei versioida. Jos niitä on muutettava, luo vain uusi tuote. Tämä tapa helpottaa ylläpitoa.

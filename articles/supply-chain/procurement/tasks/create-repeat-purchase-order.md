@@ -1,6 +1,6 @@
 ---
 title: Toistuvan ostotilauksen luonti
-description: Tässä aiheessa kuvataan, miten luot toistuvan ostotilauksen (PO) kopioimalla rivejä vanhasta ostotilauksesta uuteen tai vanhaan ostotilaukseen.
+description: Tässä artikkelissa kuvataan, miten luot toistuvan ostotilauksen (PO) kopioimalla rivejä vanhasta ostotilauksesta uuteen tai vanhaan ostotilaukseen.
 author: GalynaFedorova
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be4eca824794b8d45c7a6f40cb68aff7c4a53cd0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 42bfbc7a10d21a475055ee87e76c89db0ad64165
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865089"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Toistuvan ostotilauksen luonti
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten luot toistuvan ostotilauksen (PO) kopioimalla rivejä vanhasta ostotilauksesta uuteen tai vanhaan ostotilaukseen. Toistuvien tilausten luomiseen on kaksi tapaa. Voit käyttää käytettävissä olevia asiakirjatason toimintoja toimintoruudusta tai rivin tietojen toimintoja. Asiakirjan tason toiminnot on tarkoitettu pääasiassa uuden ostotilauksen luomiseen lisäämällä otsikkotiedot ja rivit toisesta tilauksesta, ja rivin tietojen toiminnot on taas tarkoitettu rivien lisäämiseen vanhaan tilaukseen. Tämän oppaan esimerkissä käytetään esittely-yritys USMF:n tietoja. Yleensä ostoedustaja tekee tämän tehtävän.
+Tässä artikkelissa kuvataan, miten luot toistuvan ostotilauksen (PO) kopioimalla rivejä vanhasta ostotilauksesta uuteen tai vanhaan ostotilaukseen. Toistuvien tilausten luomiseen on kaksi tapaa. Voit käyttää käytettävissä olevia asiakirjatason toimintoja toimintoruudusta tai rivin tietojen toimintoja. Asiakirjan tason toiminnot on tarkoitettu pääasiassa uuden ostotilauksen luomiseen lisäämällä otsikkotiedot ja rivit toisesta tilauksesta, ja rivin tietojen toiminnot on taas tarkoitettu rivien lisäämiseen vanhaan tilaukseen. Tämän oppaan esimerkissä käytetään esittely-yritys USMF:n tietoja. Yleensä ostoedustaja tekee tämän tehtävän.
 
 
 ## <a name="create-a-new-repeat-purchase-order"></a>Luo uusi toistuva ostotilaus

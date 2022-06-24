@@ -1,6 +1,6 @@
 ---
 title: Tuotannon käyttöliittymän määrittäminen
-description: Tässä ohjeaiheessa käsitellään tuotannon käyttöliittymämääritysten luontia. Kun tuotannon käyttöliittymä avataan, se lataa automaattisesti selain- ja laitekohtaisen valitun määrityksen ja työsuodattimen. Määrityksessä määritetään käytännöt, joita on käytettävä tietyssä käyttötilanteessa.
+description: Tässä artikkelissa käsitellään tuotannon käyttöliittymämääritysten luontia. Kun tuotannon käyttöliittymä avataan, se lataa automaattisesti selain- ja laitekohtaisen valitun määrityksen ja työsuodattimen. Määrityksessä määritetään käytännöt, joita on käytettävä tietyssä käyttötilanteessa.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644341"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899408"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -31,15 +31,15 @@ Kun tuotannon käyttöliittymä avataan, se lataa automaattisesti selain- ja lai
 - Laite on yrityksen aulassa, ja työntekijät kuittaavat itsensä sisään, kun he tulevat töihin, ja ulos, kun he lähtevät kotiin.
 - Laite on tuotantotiloissa, ja koneen käyttäjät rekisteröivät milloin he aloittavat ja lopettavat työt. Tämän he rekisteröivät tauot ja epäsuorat tehtävät.
 
-Tässä aiheessa kuvataan eri vaihtoehdot tuotannon käyttöliittymän määritykselle kullekin toimipaikassa olevalle laitteelle.
+Tässä artikkelissa kuvataan eri vaihtoehdot tuotannon käyttöliittymän määritykselle kullekin toimipaikassa olevalle laitteelle.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Tuotannon käyttöliittymän ja siihen liittyvien valinnaisten ominaisuuksien ottaminen käyttöön
 
-Tuotannon käyttöliittymä sekä monet tässä aiheessa käsiteltävät valinnaiset asetukset on otettava järjestelmässä käyttöön, ennen kuin niitä voi käyttää. Ota tarvittaessa näitä ominaisuuksia käyttöön [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla seuraavissa alaosissa kuvatulla tavalla.
+Tuotannon käyttöliittymä sekä monet tässä artikkelissa käsiteltävät valinnaiset asetukset on otettava järjestelmässä käyttöön, ennen kuin niitä voi käyttää. Ota tarvittaessa näitä ominaisuuksia käyttöön [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla seuraavissa alaosissa kuvatulla tavalla.
 
 ### <a name="the-production-floor-execution-interface"></a>Tuotannon käyttöliittymä
 
-Tämä on ensisijainen tässä aiheessa kuvattu toiminto ja edellytys kaikille muille tässä osassa mainitulle toiminnolle. Supply Chain Managementin versiosta 10.0.25 alkaen se on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Tuotannon toteutus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Tämä on ensisijainen tässä artikkelissa kuvattu toiminto ja edellytys kaikille muille tässä osassa mainitulle toiminnolle. Supply Chain Managementin versiosta 10.0.25 alkaen se on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Tuotannon toteutus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="generate-license-plates"></a>Rekisterikilpien muodostaminen
 
@@ -146,7 +146,7 @@ Tämä ominaisuus lisää seuraavien toimintojen asetukset **Määritä tuotanno
 - Ota käyttöön materiaalikulutuksen oikaisut **Raportointi on meneillään** -valintaikkunassa. (Tämä toiminto edellyttää myös *Rekisteröi materiaalin kulutus tuotannon käyttöliittymässä (muu kuin VHJ)* -toimintoa.)
 - Ota projektin tunnus käyttöön hakuperusteena.
 
-Tietoja asetusten käytöstä on jäljempänä tässä ohjeaiheessa.
+Tietoja asetusten käytöstä on jäljempänä tässä artikkelissa.
 
 Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

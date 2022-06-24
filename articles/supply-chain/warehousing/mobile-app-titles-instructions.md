@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen
-description: Tässä aiheessa käsitellään kunkin Warehouse Management -mobiilisovelluksen määritetyn tehtävätyönkulun kunkin vaiheen mukautettujen ohjeiden luontia ja näyttämistä.
+description: Tässä artikkelissa käsitellään kunkin Warehouse Management -mobiilisovelluksen määritetyn tehtävätyönkulun kunkin vaiheen mukautettujen ohjeiden luontia ja näyttämistä.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902244"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895493"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen
 
 > [!IMPORTANT]
-> Tässä aiheessa käsitellyt toiminnot koskevat vain uutta Warehouse Management -mobiilisovellusta. Niillä ei ole vaikutusta vanhaan varastosovellukseen, joka on nyt vanhentunut.
+> Tässä artikkelissa käsitellyt toiminnot koskevat vain uutta Warehouse Management -mobiilisovellusta. Niillä ei ole vaikutusta vanhaan varastosovellukseen, joka on nyt vanhentunut.
 
-Tässä aiheessa käsitellään jokaisen Warehouse Management -mobiilisovellukseen määritetyn tehtävätyönkulun jokaisen vaiheen mukautettujen ohjeiden luontia ja näyttämistä. Kun varastotyöntekijöiden käytössä on hyvin kirjoitettuja ohjeita, he voivat aloittaa heti uusien työnkulkujen käyttämisen ilman edeltävää koulutusta. Tämän toiminnon edut:
+Tässä artikkelissa käsitellään jokaisen Warehouse Management -mobiilisovellukseen määritetyn tehtävätyönkulun jokaisen vaiheen mukautettujen ohjeiden luontia ja näyttämistä. Kun varastotyöntekijöiden käytössä on hyvin kirjoitettuja ohjeita, he voivat aloittaa heti uusien työnkulkujen käyttämisen ilman edeltävää koulutusta. Tämän toiminnon edut:
 
 - **Työntekijät pääsevät alkuun entistä nopeammin, sillä he voivat toimia selkeiden ohjeiden mukaan tehtävän jokaisessa vaiheessa.** Työnkulun jokaisessa vaiheessa annetaan ohjeita, joiden avulla kenttätyöntekijät ymmärtävät, mistä tehtävässä on kyse.
 - **Ohjeet vastaavat omia prosesseja.** Omat ohjeet kirjoitetaan omien liiketoiminta- ja varastoprosessien mukaisesti. Terminologia voi esimerkiksi perustua käytössä olevaan fyysiseen tilaan ja paikallisiin lyhenteisiin.

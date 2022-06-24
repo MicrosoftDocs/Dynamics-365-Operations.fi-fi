@@ -1,6 +1,6 @@
 ---
 title: Vahvista suunnitellut tilaukset
-description: Tässä ohjeaiheessa kerrotaan, miten suunnitellut tilaukset voidaan vahvistaa. Kun suunnitellut tilaukset vahvistetaan, ne muunnetaan varsinaisiksi osto-, siirto- tai tuotantotilauksiksi.
+description: Tässä artikkelissa kerrotaan, miten suunnitellut tilaukset voidaan vahvistaa. Kun suunnitellut tilaukset vahvistetaan, ne muunnetaan varsinaisiksi osto-, siirto- tai tuotantotilauksiksi.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857515"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -29,11 +29,11 @@ Suunniteltuja tilauksia voi vahvistaa kolmella tavalla:
 - **Automaattinen vahvistus** – Määritä kattavuusryhmien, yksittäisten nimikkeiden ja nimike- ja pääsuunnitelmien yhdistelmien vahvistamisen oletusaikaraja. Tällöin pääsuunnittelun ajon aikana suunnitellut tilaukset vahvistetaan automaattisesti, jos tilauspäivä on määritetyn vahvistamisen aikarajan sisällä.
 - **Kyselypohjainen vahvistaminen** – Määritä kysely, jossa valitaan suunnitellut tilaukset niiden ominaisuuksien mukaan. Voit määrittää erätyön, joka suorittaa kyselyn ja vahvistaa täsmäytystilaukset säännöllisesti.
 
-Tässä aiheessa kuvataan kutakin menetelmää yksityiskohtaisesti.
+Tässä artikkelissa kuvataan kutakin menetelmää yksityiskohtaisesti.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>Tässä ohjeaiheessa kuvattujen ominaisuuksien ottaminen käyttöön
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Tässä artikkelissa kuvattujen ominaisuuksien ottaminen käyttöön
 
-Useimmat suunnitellut tilaustoiminnot ovat käytettävissä kaikissa Microsoft Dynamics 365 Supply Chain Managementin vakioasennuksissa, joissa käytetään suunnittelun optimointia. Joitakin tässä ohjeaiheessa kuvatuista ominaisuuksista on kuitenkin otettava käyttöön ominaisuuksien hallinnassa, ennen kuin niitä voi käyttää.
+Useimmat suunnitellut tilaustoiminnot ovat käytettävissä kaikissa Microsoft Dynamics 365 Supply Chain Managementin vakioasennuksissa, joissa käytetään suunnittelun optimointia. Joitakin tässä artikkelissa kuvatuista ominaisuuksista on kuitenkin otettava käyttöön ominaisuuksien hallinnassa, ennen kuin niitä voi käyttää.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Suunniteltujen tilausten rinnakkaisen vahvistuksen ottaminen käyttöön tai käytöstä poistaminen
 
@@ -97,7 +97,7 @@ Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuu
 > Vahvistetuissa johdetuissa tilauksissa (alihankintaostotilauksissa) näkyy *Tarkistettavana*-tila, kun muutosten seuranta on otettu käyttöön.
 
 > [!IMPORTANT]
-> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää suunnittelun optimoinnissa, [*Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuus](#enable-features) on otettava käyttöön järjestelmässä tämän ohjeaiheen alussa kuvatulla tavalla. Automaattista vahvistusta voidaan käyttää aina sisäänrakennetun pääsuunnittelumoduulin kanssa.
+> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää suunnittelun optimoinnissa, [*Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuus](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla. Automaattista vahvistusta voidaan käyttää aina sisäänrakennetun pääsuunnittelumoduulin kanssa.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automaattinen vahvistus suunnittelun optimoinnilla vs. sisäänrakennettu suunnittelumoduuli
 
@@ -130,7 +130,7 @@ Kyselypohjaisen vahvistamisen avulla voit suunnitella vahvistuksen etukäteen m�
 Voit yhdistää automaattisen vahvistuksen kyselypohjaiseen vahvistukseen. Kyselypohjaisessa vahvistustyössä on esimerkiksi eteenpäin toimitettava aikaraja, joka on pidempi kuin täsmäyttävän automaattisen vahvistuksen kattavuuskonfiguraation aikaraja. Siksi kyselypohjainen vahvistustyö käsittelee suunnitellut tilaukset ennen automaattisen vahvistuksen käynnistämistä. Voit käyttää hyväksesi tätä toimintatapaa, kun haluat ajoittaa tiettyjen toimittajien tilaukset eri tavalla kuin muiden toimittajien samankaltaisten tuotteiden tilaukset.
 
 > [!IMPORTANT]
-> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää, [*Suunniteltujen tilausten vahvistaminen suodatuksen avulla* -ominaisuus](#enable-features) on otettava käyttöön järjestelmässä tämän ohjeaiheen alussa kuvatulla tavalla.
+> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää, [*Suunniteltujen tilausten vahvistaminen suodatuksen avulla* -ominaisuus](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla.
 
 Toimi seuraavasti, kun haluat vahvistaa suunnitellun tilauksen käyttämällä kyselyyn perustuvaa vahvistamisprosessia.
 

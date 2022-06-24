@@ -1,6 +1,6 @@
 ---
 title: Oheislaitteet
-description: Tässä aiheessa esitellään Commercen oheislaitteisiin liittyvät käsitteet.
+description: Tässä artikkelissa esitellään Commercen oheislaitteisiin liittyvät käsitteet.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 76ce17777a2d13b46e5faed96dbde5e0d93782eb
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462238"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880078"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
 [!include[banner](includes/banner.md)]
 
-Tässä aiheessa esitellään myymälän oheislaitteisiin liittyvät käsitteet. Artikkelissa kerrotaan, miten oheislaitteet voidaan yhdistää myyntipisteeseen, ja esitellään komponentit, jotka ovat vastuussa myyntipisteen yhteyden hallinnasta.
+Tässä artikkelissa esitellään myymälän oheislaitteisiin liittyvät käsitteet. Artikkelissa kerrotaan, miten oheislaitteet voidaan yhdistää myyntipisteeseen, ja esitellään komponentit, jotka ovat vastuussa myyntipisteen yhteyden hallinnasta.
 
 ## <a name="concepts"></a>Käsitteet
 
@@ -55,7 +55,7 @@ Modern POS Androidille onModern POS-ohjelman Android-pohjainen versio, joka void
 
 ### <a name="pos-peripherals"></a>Myyntipisteen oheislaitteet
 
-Myyntipisteen oheislaitteet ovat laitteita, joita tuetaan eksplisiittisesti myyntipisteen toiminnoissa. Nämä oheislaitteet jaetaan tavallisesti tiettyihin luokkiin. Lisätietoja näistä luokista on tämän aiheen Laiteluokat-kohdassa.
+Myyntipisteen oheislaitteet ovat laitteita, joita tuetaan eksplisiittisesti myyntipisteen toiminnoissa. Nämä oheislaitteet jaetaan tavallisesti tiettyihin luokkiin. Lisätietoja näistä luokista on tämän artikkelin Laiteluokat-kohdassa.
 
 ### <a name="hardware-station"></a>Laiteasema
 

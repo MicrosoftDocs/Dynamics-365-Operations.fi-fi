@@ -1,6 +1,6 @@
 ---
 title: Lähtevän kuormituksen visualisointi
-description: Tässä aiheessa on tietoja lähtevän kuormituksen visualisoinnista. Varastopäälliköt ja työnjohtajat voivat luoda tällä toiminnolla mukautettuja kuormituskaavioita, joilla voidaan seurata nykyisen työn edistymistä ja jäljellä olevia summia. Varastopäälliköt voivat luoda useita näkymiä ja määrittää tarvittavan automaattisen päivityksen.
+description: Tässä artikkelissa on tietoja lähtevän kuormituksen visualisoinnista. Varastopäälliköt ja työnjohtajat voivat luoda tällä toiminnolla mukautettuja kuormituskaavioita, joilla voidaan seurata nykyisen työn edistymistä ja jäljellä olevia summia. Varastopäälliköt voivat luoda useita näkymiä ja määrittää tarvittavan automaattisen päivityksen.
 author: Mirzaab
 ms.date: 08/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db6ceb40279e53e9c4751a7ceb3db895e889a7c0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851330"
 ---
 # <a name="outbound-workload-visualization"></a>Lähtevän kuormituksen visualisointi
 

@@ -1,6 +1,6 @@
 ---
 title: Kysynnän ennusteiden asetukset
-description: Tässä ohjeaiheessa kuvataan asetustehtävät, jotka sinun on suoritettava kysynnän ennusteita valmistellessasi.
+description: Tässä artikkelissa kuvataan asetustehtävät, jotka sinun on suoritettava kysynnän ennusteita valmistellessasi.
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900999"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään kysynnän ennusteen määrittämistä.  
+Tässä artikkelissa käsitellään kysynnän ennusteen määrittämistä.  
 
 ## <a name="item-allocation-keys"></a>Nimikkeenkohdistustunnukset
 
@@ -245,7 +245,7 @@ Luo uusi koneoppimisen työtila seuraavien ohjeiden mukaan.
 1. Suorita ohjattu toiminto loppuun noudattamalla näyttöön tulevia ohjeita. Pidä seuraavat seikat mielessäsi:
 
     - Käytä oletusasetuksia, ellei muissa tämän luettelon pisteissä suositella eri asetuksia.
-    - Varmista, että valitset sen maantieteellisen alueen, joka vastaa sitä aluetta, jossa Supply Chain Managementin esiintymä on otettu käyttöön. Muutoin osa tiedoistasi voi läpäistä aluerajat. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Tietosuojailmoitus](#privacy).
+    - Varmista, että valitset sen maantieteellisen alueen, joka vastaa sitä aluetta, jossa Supply Chain Managementin esiintymä on otettu käyttöön. Muutoin osa tiedoistasi voi läpäistä aluerajat. Lisätietoja on myöhemmin tässä artikkelissa kohdassa [Tietosuojailmoitus](#privacy).
     - Käytä varattuja resursseja, kuten resurssiryhmiä, varastointitilejä, konttirekisteröintejä, Azuren avainsäilöjä ja verkkoresursseja.
     - Määritä tallennustilin nimi ohjatussa toiminnossa **Määritä Azuren koneoppimispalvelun -yhteyden parametrit** -sivulla. Käytä kysyntäennusteeseen varattua tiliä. Tähän tallennustiliin tallennetaan tarve-ennusteen syöttö- ja tulostustiedot.
 

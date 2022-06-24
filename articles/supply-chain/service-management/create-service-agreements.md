@@ -1,6 +1,6 @@
 ---
 title: Huoltosopimusten luominen
-description: Tässä aiheessa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanpito -moduulien ominaisuuksia käytetään huoltosopimusten luonnissa.
+description: Tässä artikkelissa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanpito -moduulien ominaisuuksia käytetään huoltosopimusten luonnissa.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677251"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901760"
 ---
 # <a name="create-service-agreements"></a>Huoltosopimusten luominen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanpito -moduulien ominaisuuksia käytetään huoltosopimusten luonnissa.
+Tässä artikkelissa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanpito -moduulien ominaisuuksia käytetään huoltosopimusten luonnissa.
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Huoltosopimuksen luominen Huoltohallinnassa
 
@@ -51,10 +51,10 @@ Tässä aiheessa kuvataan, miten Huoltohallinta- ja Projektinhallinta ja kirjanp
 2. Valitse **Kaikki projektit**.
 3. Valitse projekti luettelosta.
 4. Valitse **Toimintoruutu**-osiosta **Hallinta**. Valitse **Uusi**-toimintoryhmästä **Huolto** ja sitten **Huoltosopimus**.
-5. Anna projektiviite noudattamalla osan **Huoltosopimuksen luominen** vaiheita, kuten on kuvattu aiemmin tässä ohjeaiheessa.
+5. Anna projektiviite noudattamalla osan **Huoltosopimuksen luominen** vaiheita, kuten on kuvattu aiemmin tässä artikkelissa.
 
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Huoltosopimusten laatiminen ja luominen – yleiskatsaus](service-agreements.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Toiminnallisen sijainnin elinkaaren tilat
-description: Tässä ohjeaiheessa kuvataan, miten toiminnalliset sijaintitilat ja elinkaarimallit määritetään resurssien hallinnassa.
+description: Tässä artikkelissa kuvataan, miten toiminnalliset sijaintitilat ja elinkaarimallit määritetään resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934659"
 ---
 # <a name="functional-location-lifecycle-states"></a>Toiminnallisen sijainnin elinkaaren tilat
 
@@ -28,7 +28,7 @@ ms.locfileid: "6360967"
 
  
 
-Tässä ohjeaiheessa kuvataan, miten toiminnallisten sijaintien elinkaaritilat ja elinkaarimallit määritetään resurssien hallinnassa. Toiminnallisen sijainnin elinkaaritilat määrittävät tilat, jotka toiminnallinen sijainti voi käydä läpi, esimerkiksi, Luotu, Aktiivinen ja Päättynyt. **Kaikki toiminnalliset sijainnit**- luettelosivulla voit tarkastella kaikkia toiminnallisia sijainteja riippumatta niiden elinkaaren tilasta. Voit muuttaa toiminnallisen sijainnin tilaa valitsemalla sen **Kaikki toiminnalliset sijainnit** -luettelosivulla ja valitsemalla **Päivitä toiminnallisen sijainnin tila.**
+Tässä artikkelissa kuvataan, miten toiminnallisten sijaintien elinkaaritilat ja elinkaarimallit määritetään resurssien hallinnassa. Toiminnallisen sijainnin elinkaaritilat määrittävät tilat, jotka toiminnallinen sijainti voi käydä läpi, esimerkiksi, Luotu, Aktiivinen ja Päättynyt. **Kaikki toiminnalliset sijainnit**- luettelosivulla voit tarkastella kaikkia toiminnallisia sijainteja riippumatta niiden elinkaaren tilasta. Voit muuttaa toiminnallisen sijainnin tilaa valitsemalla sen **Kaikki toiminnalliset sijainnit** -luettelosivulla ja valitsemalla **Päivitä toiminnallisen sijainnin tila.**
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Toiminnallisen sijainnin elinkaaren tilojen määrittäminen
 
@@ -39,6 +39,7 @@ Tässä ohjeaiheessa kuvataan, miten toiminnallisten sijaintien elinkaaritilat j
 5. Valitse Kyllä **Luo resurssit** -vaihtopainikkeessa, jos haluat luoda automaattisesti resurssin, jolla on sama nimi kuin toiminnallisella sijainnilla, ja asentaa sen toiminnalliseen sijaintiin, joka on tässä tilassa.  
 >[!NOTE]
 >Tämä vaihto painike liittyy **resurssityyppi**-kenttään **Yleiset**-pikavälilehdessä **toiminnallisen sijainnin tyypit** -lomakkeella (**resurssien hallinta** > **Asetukset** > **Toiminnalliset sijainnit** > **Toiminnalliset sijaintityypit**).
+
 6. Valitse Kyllä **Nimeä sijainti uudelleen**-vaihtopainikkeessa, jos tämän tilan toiminnallisen sijainnin nimeä pitäisi olla mahdollista muuttaa.
 7. Valitse Kyllä **Uudet alisijainnit**-vaihtopainikkeessa, jos tämän tilan toiminnalliseen sijaintiin pitäisi olla mahdollista lisätä uusia alisijainteja.
 8. Valitse Kyllä **Resurssien asentaminen**-vaihtopainikkeessa, jos tämän tilan toiminnallisessa sijainnissa pitäisi olla mahdollista asentaa resursseja.

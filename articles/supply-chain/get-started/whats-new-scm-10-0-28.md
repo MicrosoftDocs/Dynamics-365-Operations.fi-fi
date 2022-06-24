@@ -1,6 +1,6 @@
 ---
 title: Esiversio – Dynamics 365 Supply Chain Management 10.0.28 (elokuu 2022)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.28 uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin 10.0.28 uusia tai muuttuneita toimintoja.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 306ff9be80c7a7a947b9132e3c9b4b9ec799b265
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8813070"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902050"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Esiversio – Dynamics 365 Supply Chain Management 10.0.28 (elokuu 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esikatseluversion 10.0.28 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1264. Se on käytettävissä seuraavan aikataulun mukaisesti:
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esikatseluversion 10.0.28 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1264. Se on käytettävissä seuraavan aikataulun mukaisesti:
 
 - **Julkaisun esiversio:** Toukokuu 2022
 - **Julkaisun yleinen saatavuus (itsepäivitys):** heinäkuu 2022
@@ -30,15 +30,14 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän aiheen päivitys saattaa sisältää ominaisuuksia, jotka on lisätty koontiversioon tämän ohjeaiheen alkuperäisen julkaisun jälkeen.
+Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän artikkelin päivitys saattaa sisältää ominaisuuksia, jotka on lisätty koontiversioon tämän artikkelin alkuperäisen julkaisun jälkeen.
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
 | Varasto ja logistiikka | [Aiheutuneen kustannuksen integrointiyksiköt kolmannen osapuolen huolitsijoita varten](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Aiheutuneet kustannukset -entiteettien yleiskuvaus](../landed-cost/landed-cost-entities-overview.md) | Oletusarvoisesti käytössä |
-| Suunnittelu | [Säilyvyysajan tuki suunnittelun optimoinnissa](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Tulossa pian <!-- KFM: Vendor is preparing this. Expected May 20. --> | Oletusarvoisesti käytössä |
-
-<!-- KFM: Confirm status of this feature:
-| Planning | [Demand Driven Material Requirements Planning (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Coming soon | Feature management:<br>*(Preview) DDMRP for Planning Optimization* | -->
+| Suunnittelu | [Kysyntäperustainen materiaalitarvesuunnittelu (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Tulossa pian | Toimintojen hallinta:<br>*(Esiversio) DDMRP – suunnittelun optimointi* |
+| Suunnittelu | [Suunnittelun optimoinnin tuki saatavuudelle (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Tulossa pian | Toimintojen hallinta:<br>*(Esiversio) CTP suunnittelun optimointia varten* |
+| Suunnittelu | [Säilyvyysajan tuki suunnittelun optimoinnissa](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Tulossa pian | Oletusarvoisesti käytössä |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnon parannukset
 
@@ -56,9 +55,9 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 
-Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittävästi. Nämä ohjeaiheet eivät välttämättä liity tällä julkaisulla lisättyihin, edellisissä osissa lueteltuihin uusiin ominaisuuksiin. Niiden avulla saatat kuitenkin saada enemmän irti olemassa olevista ominaisuuksista.
+Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merkittävästi. Nämä artikkelit eivät välttämättä liity tällä julkaisulla lisättyihin, edellisissä osissa lueteltuihin uusiin ominaisuuksiin. Niiden avulla saatat kuitenkin saada enemmän irti olemassa olevista ominaisuuksista.
 
-| Ominaisuusalue | Uudet tai päivitetyt ohjeaiheet |
+| Ominaisuusalue | Uudet tai päivitetyt artikkelit |
 |---|---|
 | Kustannushintojen hallinta | [Kiinteä vastaanottohinta](../cost-management/fixed-receipt-price.md) |
 | Kustannushintojen hallinta | [Varaston kustannuslaskennan usein kysytyt kysymykset](../cost-management/inventory-costing-faq.md) |
@@ -69,7 +68,7 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.28 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (kesäkuu 2022) käyttöympäristön päivitysversio 10.0.28.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.28 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (kesäkuu 2022) käyttöympäristön päivitysversio 10.0.28.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -83,12 +82,12 @@ Katso [Dynamics 365:n ja toimialan pilvipalvelu: 2022 julkaisuaalto 1 -suunnitel
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
-[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
+[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
 
-Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
+Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 

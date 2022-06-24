@@ -1,6 +1,6 @@
 ---
 title: Mittayksiköiden hallinta
-description: Tässä aiheessa kerrotaan, miten mittayksikkö määritetään, miten yksikkö ja sen kuvaukset käännetään ja miten liittyvien yksiköiden muunnossäännöt määritetään.
+description: Tässä artikkelissa kerrotaan, miten mittayksikkö määritetään, miten yksikkö ja sen kuvaukset käännetään ja miten liittyvien yksiköiden muunnossäännöt määritetään.
 author: t-benebo
 ms.date: 04/09/2021
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e13897396810507bb4b2cbb415b873eb3dd7f4e8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8e2c21756b270ef7d914dc74a0cf61727953206a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863908"
 ---
 # <a name="manage-units-of-measure"></a>Mittayksiköiden hallinta
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten mittayksikkö määritetään, miten yksikkö ja sen kuvaukset käännetään ja miten liittyvien yksiköiden muunnossäännöt määritetään.
+Tässä artikkelissa kerrotaan, miten mittayksikkö määritetään, miten yksikkö ja sen kuvaukset käännetään ja miten liittyvien yksiköiden muunnossäännöt määritetään.
 
 ## <a name="open-the-units-page"></a>Avaa Yksiköt-sivu
 
 Jos haluat luoda ja käyttää järjestelmässä käytettävissä olevia mittayksiköitä, siirry kohtaan **Organisaation hallinto \> Asetukset \> Yksiköt \> Yksiköt**.
 
-Tämän ohjeaiheen muut osat kuvaavat, mitä voit tehdä **Yksiköt**-sivulla.
+Tämän artikkelin muut osat kuvaavat, mitä voit tehdä **Yksiköt**-sivulla.
 
 ## <a name="create-standard-units-and-conversions"></a>Vakioyksiköiden ja muunnosten luominen
 

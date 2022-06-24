@@ -1,6 +1,6 @@
 ---
 title: Toimittajan ostohyvitykset
-description: Tämä ohjeaihe sisältää yhteenvedon yleisimmistä tehtävistä, joita suoritetaan toimittajan ostohyvitysten yhteydessä. Toimittajan ostohyvitysten avulla yritykset voivat hallita toimittajan ostohyvitysohjelmiaan paremmin automatisoimalla tehtäviä, joilla hallitaan, seurataan ja haetaan ansaittuja ostohyvityksiä.
+description: Tämä artikkeli sisältää yhteenvedon yleisimmistä tehtävistä, joita suoritetaan toimittajan ostohyvitysten yhteydessä. Toimittajan ostohyvitysten avulla yritykset voivat hallita toimittajan ostohyvitysohjelmiaan paremmin automatisoimalla tehtäviä, joilla hallitaan, seurataan ja haetaan ansaittuja ostohyvityksiä.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890796"
 ---
 # <a name="vendor-rebates"></a>Toimittajan ostohyvitykset
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672959"
 
 Toimittajan ostohyvitysten avulla yritykset voivat hallita toimittajan ostohyvitysohjelmiaan paremmin automatisoimalla tehtäviä, joilla hallitaan, seurataan ja haetaan ansaittuja ostohyvityksiä.
 
-Tämä ohjeaihe sisältää yhteenvedon yleisimmistä tehtävistä, joita suoritetaan toimittajan ostohyvitysten yhteydessä. Yhteenveto kattaa seuraavat tehtävät:
+Tämä artikkeli sisältää yhteenvedon yleisimmistä tehtävistä, joita suoritetaan toimittajan ostohyvitysten yhteydessä. Yhteenveto kattaa seuraavat tehtävät:
 
 - Ostohyvityssopimuksen tietojen tarkastelu
 - Tunnista tilaukset, jotka ovat oikeutettuja ostohyvitykseen ja luo ostohyvitysvaatimuksia.
@@ -34,7 +34,7 @@ Tämä ohjeaihe sisältää yhteenvedon yleisimmistä tehtävistä, joita suorit
 
 ## <a name="audience-and-purpose"></a>Käyttäjäryhmät ja tarkoitus
 
-Tämän ohjeaiheen tiedot on tarkoitettu konserniyritysten päätöksentekijöille, kuten ostopäälliköille, talousjohtajille (CFO) ja kirjanpidon päälliköille, joilla on seuraavat vastuut:
+Tämän artikkelin tiedot on tarkoitettu konserniyritysten päätöksentekijöille, kuten ostopäälliköille, talousjohtajille (CFO) ja kirjanpidon päälliköille, joilla on seuraavat vastuut:
 
 - Toimittajahintojen, alennusten ja ostohyvityssopimusten neuvottelu.
 - Ostohyvitysvaatimuksia käsittelevien ja maksuja keräävien työntekijöiden johtaminen.

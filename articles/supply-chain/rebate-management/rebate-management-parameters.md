@@ -1,6 +1,6 @@
 ---
 title: Ostohyvitysten hallinnan parametrit
-description: Tässä aiheessa kuvataan Ostohyvityksen hallinnan parametrit -sivua. Tällä sivulla on asetuksia, jotka vaikuttavat kirjaamiseen, tilan päivityksiin, numerosarjoihin ja muuhun toiminnallisuuteen.
+description: Tässä artikkelissa kuvataan Ostohyvityksen hallinnan parametrit -sivua. Tällä sivulla on asetuksia, jotka vaikuttavat kirjaamiseen, tilan päivityksiin, numerosarjoihin ja muuhun toiminnallisuuteen.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895522"
 ---
 # <a name="rebate-management-parameters"></a>Ostohyvitysten hallinnan parametrit
 
@@ -45,9 +45,9 @@ Seuraavassa taulukossa käsitellään kenttiä, jotka ovat käytettävissä **Os
 
 ## <a name="number-sequences-tab"></a>Numerosarjat-välilehti
 
-**Ostohyvityksen hallinnan parametrit** -sivun **Numerosarjat**-välilehdessä voit määrittää numerosarjakoodeja erilaisille numerosarjoille, joita Ostohyvityksen hallinta käyttää. Seuraavassa taulukossa kuvataan näiden numerosarjojen tarkoitukset. Lisätietoja numerosarjoista on kohdassa [Numerosarjojen yleiskuvaus](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) ja siihen liittyvissä ohjeaiheissa.
+**Ostohyvityksen hallinnan parametrit** -sivun **Numerosarjat**-välilehdessä voit määrittää numerosarjakoodeja erilaisille numerosarjoille, joita Ostohyvityksen hallinta käyttää. Seuraavassa taulukossa kuvataan näiden numerosarjojen tarkoitukset. Lisätietoja numerosarjoista on kohdassa [Numerosarjojen yleiskuvaus](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) ja siihen liittyvissä artikkeleissa.
 
-| Viite | kuvaus |
+| Viite | Kuvaus |
 |---|---|
 | Ostohyvitysten hallintasopimus | Numerosarja määrittää kullekin ostohyvityssopimukselle yksilöivän avaimen arvon. Tätä avainta käytetään, kun sopimuksia luodaan. |
 | Ostohyvitysten hallintanumero | Numerosarja määrittää kullekin ostohyvitykselle yksilöivän avaimen arvon. Tätä avainta käytetään ostohyvityssuhteiden tunnistamiseen. |

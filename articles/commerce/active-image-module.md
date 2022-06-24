@@ -1,6 +1,6 @@
 ---
 title: Aktiivinen kuvamoduuli
-description: Tässä ohjeaiheessa kerrotaan aktiivisista kuvamoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa kerrotaan aktiivisista kuvamoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 3d532d21f847a80a16af814eeaf097a616605795
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853847"
 ---
 # <a name="active-image-module"></a>Aktiivinen kuvamoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan aktiivisista kuvamoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kerrotaan aktiivisista kuvamoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
 Aktiivista kuvamoduulia voidaan käyttää tuotetunnisteiden upottamiseksi kuvaan. Tämän jälkeen sähköisen kaupankäynnin sivuston käyttäjät voivat siirtää osoittimensa tunnisteiden ylle esikatsellakseen kuvassa näytettyjä tuotteita. Esikatselut näytetään ponnahdusikkunoissa. Käyttäjät voivat valita esikatselun ponnahdusikkunan siirtyäkseen suoraan vastaavan tuotteen tuotetietosivulle (PDP).
 

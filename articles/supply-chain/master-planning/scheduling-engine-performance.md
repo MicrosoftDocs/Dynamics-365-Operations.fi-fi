@@ -1,6 +1,6 @@
 ---
 title: Ajoitusmoduulin suorituskyvyn parantaminen
-description: Tässä ohjeaiheessa on tietoja ajoitusmoduulista ja sen suorituskyvyn parantamisesta.
+description: Tässä artikkelissa on tietoja ajoitusmoduulista ja sen suorituskyvyn parantamisesta.
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469003"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854294"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Ajoitusmoduulin suorituskyvyn parantaminen
 
@@ -29,7 +29,7 @@ ms.locfileid: "8469003"
 
 Resurssien ajoitusmoduulia käytetään suunniteltujen ja vapautettujen tuotantotilausten reittien aikatauluttamiseen. Moduuli julkaistiin alun perin Dynamics AX 2012:n osana, ja sitä on parannettu useita kertoja julkaisun jälkeen.
 
-[JSS (job shop scheduling) -ongelma](https://en.wikipedia.org/wiki/Job_shop_scheduling) on erittäin monimutkainen kombinatorinen ongelma, jossa ratkaisuaika kasvaa eksponentiaalisesti päätöksen muuttujien määrän mukaan. Asiakkaat määrittävät usein tuotantoreitit ja liittyvät tiedot siten, että tuloksena on aikataulutusongelma, jota ei ratkaista kohtuullisessa ajassa kaikkein uusimmillakaan laitteilla. Tässä ohjeaiheessa käsitellään ajoitusmoduulia ja tapaa, jolla tietyt määritykset voivat vaikuttaa suorituskykyyn.
+[JSS (job shop scheduling) -ongelma](https://en.wikipedia.org/wiki/Job_shop_scheduling) on erittäin monimutkainen kombinatorinen ongelma, jossa ratkaisuaika kasvaa eksponentiaalisesti päätöksen muuttujien määrän mukaan. Asiakkaat määrittävät usein tuotantoreitit ja liittyvät tiedot siten, että tuloksena on aikataulutusongelma, jota ei ratkaista kohtuullisessa ajassa kaikkein uusimmillakaan laitteilla. Tässä artikkelissa käsitellään ajoitusmoduulia ja tapaa, jolla tietyt määritykset voivat vaikuttaa suorituskykyyn.
 
 Aikatauluttamisen suorituskykyä parannettaessa yleisesti suositellaan yksinkertaistamaan ongelmaa, joka moduulin on ratkaistava. Keskeisiä suorituskykyyn vaikuttavia tekijöitä ovat esimerkiksi seuraavat:
 

@@ -1,6 +1,6 @@
 ---
 title: Standardikustannusten edellytykset – yleiskatsaus
-description: Tässä ohjeaiheessa käsitellään standardikustannusten käyttämiseen liittyvät perusvaiheet.
+description: Tässä artikkelissa käsitellään standardikustannusten käyttämiseen liittyvät perusvaiheet.
 author: JennySong-SH
 ms.date: 07/25/2019
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cf37ae8d2cfa2a3f372e37eb66c22711e76dd59
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: bf02653b1d1a2cf5ed45f0fc6bd9affe098e7396
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672315"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895783"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Standardikustannusten edellytykset – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään standardikustannusten käyttämiseen liittyvät perusvaiheet. Sen jälkeen vaiheet määräytyvät yrityksen työvaiheiden mukaan. Vaiheet ovat esimerkiksi erilaiset muussa kuin valmistusympäristössä, valmistusympäristössä ilman työvaiheistuksia ja valmistusympäristössä, jossa käytetään työvaiheistuksia. 
+Tässä artikkelissa käsitellään standardikustannusten käyttämiseen liittyvät perusvaiheet. Sen jälkeen vaiheet määräytyvät yrityksen työvaiheiden mukaan. Vaiheet ovat esimerkiksi erilaiset muussa kuin valmistusympäristössä, valmistusympäristössä ilman työvaiheistuksia ja valmistusympäristössä, jossa käytetään työvaiheistuksia. 
 
 Voit määrittää standardikustannukset seuraavien ohjeiden mukaisesti.
 
@@ -65,7 +65,7 @@ Luo **Kustannuslaskentaversion määritys** -sivulla standardikustannuksille vä
 Jos asiakas haluaa muuttaa aiemmin luodut nimikkeensä standardikustannusvarastomallin mukaisiksi, hänen on käytettävä **Standardikustannusmuunnot**-sivua.
 
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Standardikustannuksen muuntamisen yleiskuvaus](standard-cost-conversion-overview.md)
 

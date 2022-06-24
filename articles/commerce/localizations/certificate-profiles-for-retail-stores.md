@@ -1,6 +1,6 @@
 ---
 title: Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
-description: Tässä ohjeaiheessa on yleiskatsaus varmenteiden käytöstä vähittäismyymälöissä.
+description: Tässä artikkelissa on yleiskatsaus varmenteiden käytöstä vähittäismyymälöissä.
 author: josaw
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b40c74efa56a6e18af907e000554b9ab269bb31
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873026"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Käyttäjän määrittämät vähittäismyymälöiden varmenneprofiilit
 
@@ -28,7 +28,7 @@ ms.locfileid: "6719927"
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Tämä ohjeaihe on yleiskatsaus varmenneprofiileista, jotka ovat käytettävissä Microsoft Dynamics 365 Commercessa. Tämä toimintaa laajentaa [Vähittäismyyntikanavien salaisuuksien hallinta](../dev-itpro/manage-secrets.md) -ominaisuutta lisäämällä paikallisten varmenteiden tuen.
+Tämä artikkeli on yleiskatsaus varmenneprofiileista, jotka ovat käytettävissä Microsoft Dynamics 365 Commercessa. Tämä toimintaa laajentaa [Vähittäismyyntikanavien salaisuuksien hallinta](../dev-itpro/manage-secrets.md) -ominaisuutta lisäämällä paikallisten varmenteiden tuen.
 
 Jos myyntipistettä käytetään offline-tilassa, se voi käyttää avainsäilöön tallennettuja varmenteita. Silloin onkin käytettävä paikallista varmennetta. Tuetut ominaisuudet:
 

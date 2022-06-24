@@ -1,6 +1,6 @@
 ---
 title: Yleisen varastokirjanpidon käytön aloittaminen
-description: Tässä aiheessa kuvataan, kuinka yleinen varastokirjanpito otetaan käyttöön.
+description: Tässä artikkelissa kuvataan, kuinka yleinen varastokirjanpito otetaan käyttöön.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679440"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891086"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Yleisen varastokirjanpidon käytön aloittaminen
 
@@ -38,12 +38,18 @@ Yleinen varastokirjanpito on apuohjelma. Jos haluat käyttää sen toimintoja, s
 
 Yleinen varastolaskenta ei tällä hetkellä tue kaikkia Supply Chain Managementiin integroituja kustannustenhallintaominaisuuksia. Tämän vuoksi on tärkeää arvioida, vastaako tällä hetkellä käytössä oleva toimintojoukko tarpeitasi.
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>Yleisen varastolaskennan julkisen esiversion saaminen
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a>Yleisen varastolaskennan apuohjelman saaminen
 
 > [!IMPORTANT]
 > Jotta voit käyttää yleistä varastokirjanpitoa, sinulla on oltava LCS-yhteensopiva korkean käytettävyyden ympäristö (ei OneBox-ympäristö). Lisäksi käytössä tulee olla Supply Chain Managementin versio 10.0.19 tai sitä myöhempi.
 
-Jos haluat rekisteröityä yleisen varastokirjanpidon julkiseen esiversioon, lähetä LCS-ympäristötunnus sähköpostitse [yleiselle varastokirjanpitotiimille](mailto:GlobalInvAccount@microsoft.com). Kun olet hyväksynyt ohjelman, tiimi lähettää sinulle seurantasähköpostiviestin, joka sisältää yleisen varastokirjanpidon beta-avaimen ja huollon päätepisteet. Kun olet saanut beta-avaimen, [voit asentaa lisäosan](#install).
+### <a name="supply-chain-management-version-10019-to-10026"></a>Supply Chain Management -versio 10.0.19 – 10.0.26
+
+Asenna yleinen varastokirjanpito Supply Chain Management -versiolle 10.0.19 – 10.0.26 [asentamalla ensin lisäosa](#install). Lähetä sitten LCS-ympäristötunnus ja yrityksen nimi sähköpostitse [yleiselle varastokirjanpitotiimille](mailto:GlobalInvAccount@microsoft.com). Tiimi lähettää sinulle seurantasähköpostiviestin, joka sisältää yleisen varastokirjanpidon huollon päätepisteet.
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Supply Chain Managementin versio 10.0.27 ja uudempi
+
+Asenna yleinen varastokirjanpito Supply Chain Management -versiolle 10.0.27 tai uudemmalle [asentamalla lisäosa](#install). Näissä Supply Chain Management -versioissa yleisen varastonlaskennan palvelun päätepisteet määritetään automaattisesti, joten niitä ei tarvitse etsiä manuaalisesti. Jos apuohjelman määrittämisessä ilmenee ongelmia, ota yhteyttä [yleiseen varastokirjanpitotiimiin](mailto:GlobalInvAccount@microsoft.com).
 
 ## <a name="licensing"></a>Käyttöoikeudet
 
@@ -98,12 +104,7 @@ Jos Dataverse-asennuksen oletuskieli ei ole englanti, noudata seuraavia ohjeita.
 
 Asenna lisäosa noudattamalla seuraavia ohjeita, jotta voit käyttää yleistä varastokirjanpitoa.
 
-1. [Kirjaudu](#sign-up) yleisen varastolaskennan julkisen esiversioon.
 1. Kirjaudu sisään [LCS:ään](https://lcs.dynamics.com/Logon/Index).
-1. Mene kohtaan **Toimintojen hallinnan esiversio**.
-1. Valitse plusmerkki (**+**).
-1. Syötä **Koodi**-kenttään yleisen varastokirjanpidon apuohjelman beeta-avain. (Sinun olisi pitänyt saada beeta-avain sähköpostitse rekisteröityessäsi.)
-1. Valitse **Poista esto**.
 1. Avaa LCS-ympäristö, johon haluat lisätä palvelun.
 1. Valitse **Kaikki tiedot**.
 1. Siirry **Power Platform -integrointiin** ja valitse **Asetukset**.
@@ -124,6 +125,8 @@ Seuraavia ohjeita noudattamalla voit määrittää yleisen varastokirjanpidon ja
 1. Etsi **Kaikki**-välilehdestä toiminto, jonka nimi on *(Esiversio) Yleinen varastokirjanpito*.
 1. Valitse **Ota käyttöön nyt**.
 1. Siirry kohtaan **Yleinen varastokirjanpito \> Asetukset \> Yleisen varastokirjanpidon parametrit \> Integrointi-parametrit**.
-1. Kirjoita **Tietopalvelun päätepiste**- ja **Yleisen varastokirjanpidon päätepiste** -kenttiin sen sähköpostiviestin URL-osoitteet, jonka yleinen varastokirjanpitotiimi on lähettänyt rekisteröityessäsi esiversioon.
+1. Tee jokin seuraavista toimista käytettävän Supply Chain Management -version mukaan:
+    - **Supply Chain Management -versio 10.0.19 – 10.0.26**: Syötä **Tietopalvelun päätepiste**- ja **Yleinen varastokirjanpidon päätepiste** -kenttiin URL-osoitteet, jotka on lähetetty sinulle sähköpostitse yleiseltä varastokirjanpidon tiimiltä (katso myös [Yleisen varastolaskennan apuohjelman saaminen](#sign-up)).
+    - **Supply Chain Management -versio 10.0.27 ja sitä uudempi**: Päätepisteitä ei tarvitse määrittää, joten voit ohittaa tämän vaiheen.
 
 Yleinen varastokirjanpito on nyt valmis käytettäväksi.

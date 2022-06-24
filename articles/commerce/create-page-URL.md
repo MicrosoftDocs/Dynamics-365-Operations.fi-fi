@@ -1,6 +1,6 @@
 ---
 title: Sivun URL-osoitteen luominen
-description: Tässä ohjeaiheessa kerrotaan sivuston URL-osoitteiden luomisen peruskäsitteistä ja proseduureista.
+description: Tässä artikkelissa kerrotaan sivuston URL-osoitteiden luomisen peruskäsitteistä ja proseduureista.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 923723ce6e3f92c5186cd8a562a6e3fee3fdf70dfe8db29c86192cb1db515b1a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1798c4812b535ef007cbd5ff310b534e64a2f11e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717720"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892301"
 ---
 # <a name="create-a-page-url"></a>Sivun URL-osoitteen luominen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan sivuston URL-osoitteiden luomisen peruskäsitteistä ja proseduureista.
+Tässä artikkelissa kerrotaan sivuston URL-osoitteiden luomisen peruskäsitteistä ja proseduureista.
 
 Täydellinen tai absoluuttinen URL-osoite, joka osoittaa sivuston tietyt osat sisältävälle sivulle. Esimerkiksi URL-osoitteessa `https://www.contoso.com/en-us/contactus` on seuraavat osat:
 

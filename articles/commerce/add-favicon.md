@@ -1,6 +1,6 @@
 ---
 title: Favicon-kuvakkeen lisääminen
-description: Tässä ohjeaiheessa kerrotaan, kuinka favicon-kuvake lisätään sivustoon.
+description: Tässä artikkelissa kerrotaan, kuinka favicon-kuvake lisätään sivustoon.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2047a0c30c9e723c717657475a111181299aaa8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964729"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855792"
 ---
 # <a name="add-a-favicon"></a>Favicon-kuvakkeen lisääminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka favicon-kuvake lisätään sivustoon.
+Tässä artikkelissa kerrotaan, kuinka favicon-kuvake lisätään sivustoon.
 
 Favicon on pieni grafiikkatiedosto, joka näkyy selaimen välilehdessä, osoitepalkissa, selaushistoriassa sekä muissa paikoissa, kuten kirjanmerkeissä tai suosikeissa. Suosittelemme, että lisäät favicon-kuvakkeen sivustoon, koska se edustaa ja vahvistaa omaa tuotemerkkiä ja auttaa sivuston erottumisessa muista sivustoista, joilla asiakkaat käyvät.
 
-Voit lisätä useita eri kokoisia favicon-kuvakkeita ja erilaisia favicon-tiedostoja sivustoon. Tässä ohjeaiheessa kerrotaan, miten voit lisätä yhden favicon-kohteen. Samaa prosessia ja sijaintia käytetään useiden favicon-kohteiden lisäämisessä.
+Voit lisätä useita eri kokoisia favicon-kuvakkeita ja erilaisia favicon-tiedostoja sivustoon. Tässä artikkelissa kerrotaan, miten voit lisätä yhden favicon-kohteen. Samaa prosessia ja sijaintia käytetään useiden favicon-kohteiden lisäämisessä.
 
 ## <a name="upload-a-favicon-to-your-sites-asset-collection"></a>Lataa favicon sivuston resurssikokoelmaan
 

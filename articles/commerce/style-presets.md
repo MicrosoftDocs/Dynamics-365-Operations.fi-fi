@@ -1,6 +1,6 @@
 ---
 title: Tyylien esimääritysten käyttäminen
-description: Tässä ohjeaiheessa käsitellään sivuston tyylin esiasetuksia Microsoft Dynamics 365 Commercen sivustotyökalussa.
+description: Tässä artikkelissa käsitellään sivuston tyylin esiasetuksia Microsoft Dynamics 365 Commercen sivustotyökalussa.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 0a06052ab29502c57a2ad5a25e5bec870585ef4a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964850"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900357"
 ---
 # <a name="work-with-style-presets"></a>Tyylien esimääritysten käyttäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään sivuston tyylin esiasetuksia Microsoft Dynamics 365 Commercen sivustotyökalussa.
+Tässä artikkelissa käsitellään sivuston tyylin esiasetuksia Microsoft Dynamics 365 Commercen sivustotyökalussa.
 
 Tyylin esimääritys on tallennettu joukko kaikkia sivuston teemaan tallennettuja tyyliarvoja. Sen avulla voidaan välittömästi muuttaa sivuston ulkoasua sivustonmuodostustyökalun avulla. Tyylien esimääritykset antavat Commercen sivustonmuodostustyökalun kirjoittajien muuttaa, esikatsella ja aktivoida tyyliarvoja koko sivustollaan ilman CSS-tyylisivuja (CSS) tai teemojen käyttöönottoa. Kirjasintyylit, painiketyylit ja sivuston värit ovat tyypillisiä esimerkkejä tyylimuuttujista, joita voidaan hallita tyylien esimääritysten avulla.
 

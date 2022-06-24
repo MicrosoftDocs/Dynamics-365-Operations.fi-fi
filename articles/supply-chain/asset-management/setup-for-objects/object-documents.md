@@ -1,6 +1,6 @@
 ---
 title: Resurssin asiakirjat
-description: Tässä ohjeaiheessa kerrotaan resurssien asiakirjoista resurssien hallinnassa.
+description: Tässä artikkelissa kerrotaan resurssien asiakirjoista resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77b7265b1ba56dbd1cd955f5d90afea02f589ce2eebdd05a2fef3a7ddebc0ee1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2e8d72dc938c43e266c6b7c39329f827c56607a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899466"
 ---
 # <a name="asset-documents"></a>Resurssin asiakirjat
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722484"
 
  
 
-Tässä ohjeaiheessa kerrotaan resurssien asiakirjoista resurssien hallinnassa.
+Tässä artikkelissa kerrotaan resurssien asiakirjoista resurssien hallinnassa.
 
 Resurssien hallinnassa voit määrittää asiakirjoja niin, että ne liittyvät automaattisesti esimerkiksi työtyyppeihin, resurssien valmistajiin, resurssityyppeihin tai resursseihin. Tämä toiminto on hyödyllinen, kun päivitetyt tiedostoversiot vapautetaan. Tällöin sinun on vain asetettava päivitetty asiakirja Supply Chain Managementin asiakirjojen vakiosijaintiin ja liitettävä asiakirja luomaasi resurssin asiakirjatietueeseen. Päivitettyä asiakirjaa voi sitten käyttää valikkokohteissa **Kaikki resurssit**, **Aktiiviset resurssit**, **Omat aktiiviset resurssit**, **Kaikki työtilaukset** ja **Aktiivisten työtilausten työt**. Prosessi, jossa asiakirjoja liitetään resurssin asiakirjatietueeseen, käyttää asiakirjojen vakiokäsittelyjärjestelmää.
 

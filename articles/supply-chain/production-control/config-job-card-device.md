@@ -1,6 +1,6 @@
 ---
-title: Konfiguroi työkortti laitteita varten
-description: Tässä ohjeaiheessa kuvataan työkorttilaitteen konfiguroinnissa käytettävissä olevat eri asetukset.
+title: Laitteiden työnkortin määrittäminen
+description: Tässä artikkelissa kuvataan työkorttilaitteen konfiguroinnissa käytettävissä olevat eri asetukset.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860722"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfiguroi työkortti laitteita varten
 
 [!include [banner](../includes/banner.md)]
 
-Työntekijät käyttävät työkorttilaitetta rekisteröimään päivittäisen työnsä, esimerkiksi töiden aloittamisen, töiden palautteen ilmoittamisen, epäsuorien tehtävien rekisteröimisen ja poissaolon raportoinnin. Nämä rekisteröinnit ovat perusta, jolla seurataan tuotantotilausten edistymistä ja kustannuksia sekä lasketaan työntekijöiden palkan perusta. Tässä ohjeaiheessa kuvataan työkorttilaitteiden konfiguroinnissa käytettävissä olevat eri asetukset.
+Työntekijät käyttävät työkorttilaitetta rekisteröimään päivittäisen työnsä, esimerkiksi töiden aloittamisen, töiden palautteen ilmoittamisen, epäsuorien tehtävien rekisteröimisen ja poissaolon raportoinnin. Nämä rekisteröinnit ovat perusta, jolla seurataan tuotantotilausten edistymistä ja kustannuksia sekä lasketaan työntekijöiden palkan perusta. Tässä artikkelissa kuvataan työkorttilaitteiden konfiguroinnissa käytettävissä olevat eri asetukset.
 
 ## <a name="enable-new-features-in-feature-management"></a>Ominaisuuksien hallinnan uusien ominaisuuksien ottaminen käyttöön
 
-Jotkin tässä ohjeaiheessa kuvatut asetukset on otettava käyttöön järjestelmässä, ennen kuin ne ovat käytettävissäsi. Käytä [ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivua, kun haluat ottaa käyttöön jotkin tai kaikki seuraavat ominaisuudet tarpeen mukaan.
+Jotkin tässä artikkelissa kuvatut asetukset on otettava käyttöön järjestelmässä, ennen kuin ne ovat käytettävissäsi. Käytä [ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivua, kun haluat ottaa käyttöön jotkin tai kaikki seuraavat ominaisuudet tarpeen mukaan.
 
 ### <a name="generate-license-plate"></a>Muodosta rekisterikilpi
 

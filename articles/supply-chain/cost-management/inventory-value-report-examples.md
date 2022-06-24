@@ -1,6 +1,6 @@
 ---
 title: Varaston arvon raporttien esimerkit ja logiikka
-description: Tässä aiheessa on esimerkkejä tuloksista, jotka koskevat kutakin varaston arvon raporttityyppiä. Varaston arvon raporteissa on tietoja varastotilanteen ja kirjanpitovaraston määristä ja summista.
+description: Tässä artikkelissa on esimerkkejä tuloksista, jotka koskevat kutakin varaston arvon raporttityyppiä. Varaston arvon raporteissa on tietoja varastotilanteen ja kirjanpitovaraston määristä ja summista.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675316"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877650"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Varaston arvon raporttien esimerkit ja logiikka
 
 [!include [banner](../includes/banner.md)]
 
-Varaston arvon raporteissa on tietoja varastotilanteen ja kirjanpitovaraston määristä ja summista. Tässä aiheessa on esimerkkejä tuloksista, jotka koskevat kutakin varaston arvon raporttityyppiä.
+Varaston arvon raporteissa on tietoja varastotilanteen ja kirjanpitovaraston määristä ja summista. Tässä artikkelissa on esimerkkejä tuloksista, jotka koskevat kutakin varaston arvon raporttityyppiä.
 
 Lisätietoja kunkin varaston arvon raporttityypin luomisesta ja käyttämisestä on kohdassa [Varaston arvon raportit](inventory-value-report-storage.md).
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Esimerkeissä käytettävät mallitiedot
 
-Ohjeaiheen esimerkit perustuvat tässä osassa käsiteltäviin varastotapahtuman mallitietoihin.
+Artikkelin esimerkit perustuvat tässä osassa käsiteltäviin varastotapahtuman mallitietoihin.
 
 ### <a name="storage-dimension-setup"></a>Varastodimensioryhmän määritys
 
@@ -70,9 +70,9 @@ Esimerkkijärjestelmän varaston arvon raporttimäärityksessä on seuraavat ase
 
 ## <a name="inventory-value-report-example-1"></a>Varaston arvon raporttiesimerkki 1
 
-Seuraavassa taulukossa ja kuvissa on tuloksia, jotka saadaan käytettäessä aiemmin tässä aiheessa käsiteltyjä näytetietoja ja raporttimääritystä.
+Seuraavassa taulukossa ja kuvissa on tuloksia, jotka saadaan käytettäessä aiemmin tässä artikkelissa käsiteltyjä näytetietoja ja raporttimääritystä.
 
-| Resurssityyppi | Resurssi | Toimipaikka | Viite | Varasto: rahoitusmäärä | Varasto: rahoitussumma | Varasto: kirjattu fyysinen määrä | Varasto: kirjattu fyysinen summa | Varasto: Määrä | Varasto: summa | Keskimääräinen yksikkökustannus |
+| Resurssityyppi | Resurssi | Sivusto | Viite | Varasto: rahoitusmäärä | Varasto: rahoitussumma | Varasto: kirjattu fyysinen määrä | Varasto: kirjattu fyysinen summa | Varasto: Määrä | Varasto: summa | Keskimääräinen yksikkökustannus |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Materiaali | B0001 | 1 | Loppusaldo | 9.00 | 908.33 | 5.00 | 375.00 | 14,00 | 1,283.33 | 91.67 |
 | Materiaali | B0001 | 2 | Loppusaldo | 10.00 | 2,000.00 | 0,00 | 0,00 | 10.00 | 2,000.00 | 200.00 |
@@ -91,7 +91,7 @@ Seuraavassa kuvassa on esimerkin 1 **Varaston arvon raportin tallennustila** -ra
 
 ## <a name="inventory-value-report-example-2"></a>Varaston arvon raporttiesimerkki 2
 
-Seuraavassa taulukossa ja kuvissa on tuloksia, jotka saadaan käytettäessä aiemmin tässä aiheessa käsiteltyä raporttimääritystä. **Taso**-kentän arvoksi voidaan myös vaihtaa *Tapahtumat* raporttimäärityksissä ja **Päivämäärästä**-kentän asetukseksi määritetään *15. maaliskuuta*, kun raportti suoritetaan.
+Seuraavassa taulukossa ja kuvissa on tuloksia, jotka saadaan käytettäessä aiemmin tässä artikkelissa käsiteltyä raporttimääritystä. **Taso**-kentän arvoksi voidaan myös vaihtaa *Tapahtumat* raporttimäärityksissä ja **Päivämäärästä**-kentän asetukseksi määritetään *15. maaliskuuta*, kun raportti suoritetaan.
 
 | Resurssityyppi | Resurssi | Toimipaikka | Päivämäärä | Numero | Viite | Varasto: rahoitusmäärä | Varasto: rahoitussumma | Varasto: kirjattu fyysinen määrä | Varasto: kirjattu fyysinen summa | Varasto: Määrä | Varasto: summa |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ Seuraavissa aliosissa näkyy ne varaston arvon raportit 30. toukokuuhun saakka, 
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>Esimerkki 3 käytettäessä Summat-tasoa
 
-Seuraavassa taulukossa on tuloksia, jotka saadaan käytettäessä aiemmin tässä aiheessa käsiteltyjä näytetietoja ja raporttimääritystä. (Kyseisessä raporttimäärityksissä **Taso**-kentän asetuksena on *Summat*.)
+Seuraavassa taulukossa on tuloksia, jotka saadaan käytettäessä aiemmin tässä artikkelissa käsiteltyjä näytetietoja ja raporttimääritystä. (Kyseisessä raporttimäärityksissä **Taso**-kentän asetuksena on *Summat*.)
 
 | Resurssityyppi | Resurssi | Toimipaikka | Viite | Varasto: rahoitusmäärä | Varasto: rahoitussumma | Varasto: kirjattu fyysinen määrä | Varasto: kirjattu fyysinen summa | Varasto: Määrä | Varasto: summa | Keskimääräinen yksikkökustannus |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ Seuraavassa taulukossa on tuloksia, jotka saadaan käytettäessä aiemmin täss�
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>Esimerkki 3 käytettäessä Tapahtumat-tasoa
 
-Seuraavassa taulukossa on tulokset, kun käytetään aiemmin tässä aiheessa käsiteltyjä esimerkkitietoja mutta **Taso**-kentän arvoksi vaihdetaan raporttimäärityksissä *Tapahtumat*.
+Seuraavassa taulukossa on tulokset, kun käytetään aiemmin tässä artikkelissa käsiteltyjä esimerkkitietoja mutta **Taso**-kentän arvoksi vaihdetaan raporttimäärityksissä *Tapahtumat*.
 
 | Resurssityyppi | Resurssi | Toimipaikka | Päivämäärä | Numero | Viite | Varasto: rahoitusmäärä | Varasto: rahoitussumma | Varasto: kirjattu fyysinen määrä | Varasto: kirjattu fyysinen summa | Varasto: Määrä | Varasto: summa |
 |---|---|---|---|---|---|---|---|---|---|---|---|

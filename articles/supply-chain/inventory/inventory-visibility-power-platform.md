@@ -1,8 +1,8 @@
 ---
 title: Varaston näkyvyyssovellus
-description: Tässä aiheessa käsitellään varaston näkyvyyssovelluksen käyttämistä.
+description: Tässä artikkelissa käsitellään varaston näkyvyyssovelluksen käyttämistä.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 359f89f98ca6954a0bbafd63fffa1d505a43f0c8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060969"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895754"
 ---
-# <a name="use-the-inventory-visibility-app"></a>Varaston näkyvyyssovelluksen käyttö
+# <a name="use-the-inventory-visibility-app"></a>Inventory Visibility -sovelluksen käyttäminen
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä aiheessa käsitellään varaston näkyvyyssovelluksen käyttämistä.
+Tässä artikkelissa käsitellään varaston näkyvyyssovelluksen käyttämistä.
 
 Varaston näkyvyys on mallipohjainen visualisointisovellus. Sovelluksessa on kolme sivua: **Määritys**, **Toiminnon aikainen näkyvyys** ja **Varaston yhteenveto**. Siinä on seuraavat ominaisuudet:
 
@@ -70,7 +70,10 @@ Varauspyynnön kirjaaminen edellyttää, että arvo annetaan pyynnön tekstiosas
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Varaston yhteenveto
 
-**Varaston yhteenveto** on mukautettu *Varastosaldon summa* -yksikön näkymä. Se sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Ennen kuin voit nähdä tiedot **Varaston yhteenveto**-välilehdessä, sinun on otettava käyttöön *OnHandMostSpecificBackgroundService*-ominaisuus **Ominaisuuksienhallinta**-välilehdessä.
+**Varaston yhteenveto** on mukautettu *Varastosaldon summa* -yksikön näkymä. Se sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä 15 minuutin välein. Ennen kuin voit nähdä tiedot **Varaston yhteenveto** -välilehdessä, sinun on otettava käyttöön *OnHandMostSpecificBackgroundService*-ominaisuus **Ominaisuuksienhallinta**-välilehdessä ja valittava **Päivitä konfigurointi**.
+
+> [!NOTE]
+> *OnHandMostSpecificBackgroundService*-ominaisuus seuraa vain tuotteen käytettävissä olevan tuotteen muutoksia, jotka ovat tapahtuneet sen jälkeen, kun ominaisuus on otettu käyttöön. Niiden tuotteiden tietoja, jotka eivät ole muuttuneet sen jälkeen, kun olet ottanut toiminnon käyttöön, ei synkronoida varastopalvelun välimuistista ympäristöön Dataverse. Jos **Varaston yhteenveto** -sivulla ei ole kaikkia odotettuja käytettävissä olevia tietoja, siirry kohtaan **Varastonhallinta > Kausittaiset tehtävät > Varaston näkyvyyden integrointi**, poista erätyö käytöstä ja ota se uudelleen käyttöön. Tämä toimii alkusysäyksenä, ja kaikki tiedot synkronoidaan *Käytettävissä olevan varaston summa* -yksikköön seuraavan 15 minuutin kuluttua. Jos haluat käyttää tätä toimintoa, on suositeltavaa ottaa se käyttöön ennen käytettävissä olevan varaston muutosten luontia ja ottaa käyttöön **Varaston näkyvyyden integrointi** -erätyö.
 
 Dataversen **lisäsuodattimen** avulla voi luoda oman näkymän, jossa on näkyvissä itselle tärkeät rivit. Lisäsuodatinvaihtoehtojen avulla voi luoda monenlaisia niin yksinkertaisia kuin monimutkaisiakin näkymiä. Lisäksi niiden avulla voidaan lisätä ryhmiteltyjä ja sisäkkäisiä ehtoja suodattimiin. Lisätietoja **lisäsuodattimen** käyttämisestä on kohdassa [Omien näkymien muokkaaminen tai luominen lisäruudukkosuodattimien avulla](/powerapps/user/grid-filters-advanced).
 

@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a61e501d843e220259f9e26aac4309e6902d7a22
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a9ff9cb71b08d94e45e82c2b8f81550c9f8aba64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669654"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897745"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Dynamics 365 Supply Chain Managementn järjestelmänvalvojien oppimisluettelo
 
@@ -42,7 +42,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 | [Taloushallinnon ja toimintojen sovelluksiin siirtyminen ja niiden käyttö](/learn/paths/migrate-data-go-live-finance-operations/) | Toiminnallisena konsulttina sinun on ymmärrettävä, miten voit valmistella asiakkaan tiedot siirtoa varten, käsitellä tietojen hallintaa ja suorittaa käyttäjän hyväksymistestauksen, jotta voit julkaista taloushallinnon ja toimintojen sovellusten avulla. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia |
 | [Analysoinnin ja raportoinnin käyttäminen Finance and Operationsissa](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | Liiketoiminnan johtajat voivat tehdä tärkeitä päätöksiä yrityksessä, jos heillä on tarkat tiedot taustalla olevasta taloudellisesta ja operatiivisesta datasta. Ilman tietojen näkyvyyttä yritysjohtajat haastetaan lähes mahdottomaan tehtävään. Käyttämällä analyyseja ja raportointia talous- ja toimintosovelluksissa voit valtuuttaa jokaisen yrityskäyttäjän käyttöoikeuksista riippuen saamaan tarvitsemansa tiedot näiden tärkeiden valintojen tekemiseksi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 1.5 tuntia |
 | [Finance and Operationsin käyttöönottoprojektin hallinta](/learn/paths/implement-finance-operations/) | Opi tärkeimmät elementit ja parhaat käytännöt onnistuneen Finance and Operations -käyttöönottoprojektin hallintaa varten. Ensimmäisestä askeleesta, jossa suunnittelet ja muotoilet projektin metodologiaa, FastTrack-palveluiden käyttöä, kehitysstrategiaa, tiedonhallintaa ja muita toimintoja, parhaisiin tapoihin ylläpitää ja seurata toimintojasi julkaisun jälkeen. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 11.5 tuntia |
-| [Järjestelmän hallinnan aloitussivu](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Tämä ohje aihe viittaa Microsoft Dynamics 365 for Finance and Operations -järjestelmän järjestelmänvalvojien sisältöön. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi. | Dokumentaatio | |
+| [Järjestelmän hallinnan aloitussivu](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Tämä artikkeli viittaa Microsoft Dynamics 365 for Finance and Operations -järjestelmän järjestelmänvalvojien sisältöön. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi. | Dokumentaatio | |
 | [Finance and Operations: Perehdytys Dynamics 365:een (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FasTrack tarjoaa perehdytyspalvelun jokaiseen Dynamics 365 for Finance and Operations -projektiin. Tässä TechTalkissa kerromme perehdytysprosessista, esittelemme sisältöä perehdytysistunnosta ja paljastamme, miten teemme perehdytyksistä tehokkaampia ja kätevämpiä lähitulevaisuudessa. Tämä istunto on erityisen merkityksellinen kaikille asiakkaille, jotka työskentelevät projektin alkuvaiheissa, lisenssisopimuksen tekemisen ja toteutusprojektin aloittamisen välillä. | Verkkokokouksen maksuton tallenne | 62 minuuttia |
 | [Paikallinen (paikalliset liiketoimintatiedot) käyttöönotto (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Liity tähän tekniseen keskusteluun ja tutustu Dynamics 365 for Finance and Operations, Enterprise Editionin paikalliseen käyttöönottovaihtoehtoon. Tässä istunnossa tarkastellaan paikallisen käyttöönoton sovellusarkkitehtuuria, ALM-näkökohtia, järjestelmävaatimuksia ja elinkaaripalvelujen projektin valmistelua. | Verkkokokouksen maksuton tallenne | 48 minuuttia |
 | [Kopiointi yritykseen (DYN383PAL)](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | Tässä istunnossa keskustelemme uudesta ominaisuudesta tietojen hallinnan kehyksessä, Kopiointi yritykseen. Katsomme ensin lyhyesti tietojen hallinnan kehykseen lisätyt uudet ominaisuudet platform 8:ssä – työtilat, mallit ja tietoprojektit. Sitteen keskustelemme sitten lisätystä lisätoiminnoista nimeltään Kopiointi yritykseen. | Verkkokokouksen maksuton tallenne | 54 minuuttia |

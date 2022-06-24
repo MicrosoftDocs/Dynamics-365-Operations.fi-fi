@@ -1,6 +1,6 @@
 ---
 title: Varastosovelluksen asentaminen ja yhdistäminen
-description: Tässä ohjeaiheessa käsitellään varastosovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
+description: Tässä artikkelissa käsitellään varastosovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
 author: Mirzaab
 ms.date: 05/25/2020
 ms.topic: article
@@ -16,26 +16,26 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f123f217aabcc7500832fafb15199043048b5e5
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 8ed770e45aa7f9909b98a92b493dd2931c6a3981
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902268"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885751"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Varastosovelluksen asentaminen ja yhdistäminen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tässä ohjeaiheessa kuvataan, miten vanha varastosovellus (joka on nyt vanhentunut) määritetään. Lisätietoja uuden varaston hallinnan mobiilisovelluksen määrittämisestä on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](install-configure-warehouse-management-app.md).
+> Tässä artikkelissa kuvataan, miten vanha varastosovellus (joka on nyt vanhentunut) määritetään. Lisätietoja uuden varaston hallinnan mobiilisovelluksen määrittämisestä on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Tässä aiheessa käsitellään pilvikäyttöönottojen varastointisovellusta. Lisätietoja varastointisovelluksen määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönotoissa](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Tässä artikkelissa käsitellään pilvikäyttöönottojen varastointisovellusta. Lisätietoja varastointisovelluksen määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönotoissa](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Varastosovellus on saatavilla Google Play Storesta ja Microsoft Storesta. Se toimitetaan erillisenä osana. Niinpä se onkin ladattava kuhunkin laitteeseen ja määritettävä muodostamaan yhteys Microsoft Dynamics 365 Supply Chain Management -ympäristöön.
 
-Tässä ohjeaiheessa käsitellään varastosovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
+Tässä artikkelissa käsitellään varastosovelluksen asentamista mobiililaitteisiin ja niiden määrittämistä muodostamaan yhteys Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 
@@ -76,11 +76,11 @@ Varastosovelluksen käyttö tietyn Supply Chain Management -palvelimen kanssa ed
 
     ![Ohjattu sovelluksen rekisteröintitoiminto.](media/app-connect-azure-register-wizard.png "Ohjattu sovelluksen rekisteröintitoiminto")
 
-1. Uusi sovelluksen rekisteröinti avautuu. Kirjoita **Sovelluksen (asiakasohjelman) tunnus** -kohdan arvo muistiin, sillä tarvitset sitä myöhemmin. Tätä tunnusta kutsutaan myöhemmin tässä ohjeaiheessa *asiakasohjelman tunnukseksi*.
+1. Uusi sovelluksen rekisteröinti avautuu. Kirjoita **Sovelluksen (asiakasohjelman) tunnus** -kohdan arvo muistiin, sillä tarvitset sitä myöhemmin. Tätä tunnusta kutsutaan myöhemmin tässä artikkelissa *asiakasohjelman tunnukseksi*.
 
     ![Sovelluksen (asiakasohjelman) tunnus.](media/app-connect-azure-app-id.png "Sovelluksen (asiakasohjelman) tunnus")
 
-1. Valitse **Hallinta**-luettelossa **Varmenne ja salaisuudet**. Valitse sitten jokin seuraavista painikkeista sen mukaan, miten haluat määrittää todennuksen sovelluksessa. (Lisätietoja on jäljempänä tässä ohjeaiheessa kohdassa [Todennus käyttämällä varmennetta tai asiakasohjelman salaisuutta](#authenticate).)
+1. Valitse **Hallinta**-luettelossa **Varmenne ja salaisuudet**. Valitse sitten jokin seuraavista painikkeista sen mukaan, miten haluat määrittää todennuksen sovelluksessa. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Todennus käyttämällä varmennetta tai asiakasohjelman salaisuutta](#authenticate).)
 
     - **Lataa varmenne** – Lataa salaisuutena käytettävä varmenne. Tätä menetelmää kannattaa käyttää, sillä se on turvallinen ja se on laajemmin automatisoitavissa. Jos varastosovellusta käytetään Windows-laitteissa, kirjoita muistiin varmenteen lataamisen jälkeen näkyvän **allekirjoituksen** arvo. Tätä arvoa tarvitaan varmenteen määrittämiseen Windows-laitteissa.
     - **Uusi asiakasohjelman salasana** – Luo avain antamalla avaimen kuvaus ja sen kesto **Salasanat**-osassa ja valitse sitten **Lisää**. Kopioi avain ja tallenna se turvalliseen paikaan.
@@ -90,7 +90,7 @@ Varastosovelluksen käyttö tietyn Supply Chain Management -palvelimen kanssa ed
 Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä on seuraavissa resursseissa:
 
 - Lisätietoja verkkopalvelusovellusten määrittämisestä Azure AD:ssä Windows PowerShellin avulla on kohdassa [Ohje: Varmennetta käyttävän palvelun päänimen luominen Azure PowerShellin avulla](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- Lisätietoja verkkopalvelusovelluksen luomisesta Azure AD:ssä on seuraavissa ohjeaiheissa:
+- Lisätietoja verkkopalvelusovelluksen luomisesta Azure AD:ssä on seuraavissa artikkeleissa:
 
     - [Pika-aloitus: Sovelluksen rekisteröinti Microsoftin käyttäjätietoympäristöön](/azure/active-directory/develop/quickstart-register-app)
     - [Toimintaohje: Azure AD -sovelluksen ja resursseja käyttävän palvelun päänimen luonti portaalin avulla](/azure/active-directory/develop/howto-create-service-principal-portal)

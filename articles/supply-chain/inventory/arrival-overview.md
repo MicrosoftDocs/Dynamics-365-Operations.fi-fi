@@ -1,6 +1,6 @@
 ---
 title: Saapumisten yhteenveto
-description: Tässä aiheessa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yleiskuva -sivu on osa tätä ominaisuutta ja se tarjoaa yhteenvedon kaikista saapuvista nimikkeistä, joita odotetaan.
+description: Tässä artikkelissa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yleiskuva -sivu on osa tätä ominaisuutta ja se tarjoaa yhteenvedon kaikista saapuvista nimikkeistä, joita odotetaan.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,22 +18,22 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8118db9469c01c43b23c64ee383ac1d383a0ba7a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874069"
 ---
 # <a name="arrival-overview"></a>Saapumisten yhteenveto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yleiskuva -sivu on osa tätä ominaisuutta ja se tarjoaa yhteenvedon kaikista saapuvista nimikkeistä, joita odotetaan.
+Tässä artikkelissa on tietoja Saapumisen yleiskuva -ominaisuudesta. Saapumisen yleiskuva -sivu on osa tätä ominaisuutta ja se tarjoaa yhteenvedon kaikista saapuvista nimikkeistä, joita odotetaan.
 
-**Saapumisen yleiskuva** -sivulla on yhteenveto kaikista saapumista odottavista nimikkeistä. Siinä näytetään myös saapumiset, jotka voidaan alustaa yhteenvedon perusteella. Tässä ohjeaiheessa keskitytään vastaanottoprosessiin.
+**Saapumisen yleiskuva** -sivulla on yhteenveto kaikista saapumista odottavista nimikkeistä. Siinä näytetään myös saapumiset, jotka voidaan alustaa yhteenvedon perusteella. Tässä artikkelissa keskitytään vastaanottoprosessiin.
 
-## <a name="business-scenario"></a>Yrityksen skenaario
+## <a name="business-scenario"></a>Liiketoimintaskenaario
 Seuraavana on esimerkki saapuvien prosessista.
 
 [![Yrityksen skenaario.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)

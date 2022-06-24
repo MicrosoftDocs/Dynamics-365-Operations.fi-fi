@@ -1,6 +1,6 @@
 ---
 title: Aallon etiketin tulostus
-description: Tässä ohjeaiheessa käsitellään aallon etikettitulostusta ja sen määrittämistä.
+description: Tässä artikkelissa käsitellään aallon etikettitulostusta ja sen määrittämistä.
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 18620602c5f3cf6a69a36ef7248f35e5509337b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778080"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901818"
 ---
 # <a name="wave-label-printing"></a>Aallon etiketin tulostus
 
@@ -49,7 +49,7 @@ Aallon etikettitulostukseen liittyvät parannukset:
 Nämä parannukset tehostavat etikettien käyttöä pakkauksissa ennen pakkausta kuormalavalle. Niistä on hyötyä etenkin suurille jälleenmyyjille lähettäville yrityksille, sillä ne vahvistavat tilausten vastaanotan lukemalla kunkin pakkauksen erikseen.
 
 > [!NOTE]
-> Tässä ohjeaiheessa käsiteltävät määritysskenaariot voidaan toteuttaa joko erikseen tai yhdistelminä sen mukaan, mikä vastaa parhaiten liiketoimintarpeita. Voit suunnitella useita aallon sarjana käytettäviä etikettimalleja (josta on esimerkki skenaariossa 3). Voit esimerkiksi käyttää skenaariota 1 pakkausten etikettien tulostamiseen ja skenaariota 2 kuormalavan etikettien tulostamiseen (jos varaston kuormalavojen koossa ja kokoonpanossa on eroja):
+> Tässä artikkelissa käsiteltävät määritysskenaariot voidaan toteuttaa joko erikseen tai yhdistelminä sen mukaan, mikä vastaa parhaiten liiketoimintarpeita. Voit suunnitella useita aallon sarjana käytettäviä etikettimalleja (josta on esimerkki skenaariossa 3). Voit esimerkiksi käyttää skenaariota 1 pakkausten etikettien tulostamiseen ja skenaariota 2 kuormalavan etikettien tulostamiseen (jos varaston kuormalavojen koossa ja kokoonpanossa on eroja):
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Aallon etiketin tulostustoiminnon ottaminen käyttöön
 

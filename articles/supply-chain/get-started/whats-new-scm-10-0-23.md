@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Management 10.0.23:n uudet tai muuttuneet ominaisuudet (tammikuu 2022)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.23 uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin 10.0.23 uusia tai muuttuneita toimintoja.
 author: kamaybac
 ms.date: 10/15/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: acffe97cf1844f16a70c716a7f2078b1e9a072d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849471"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Dynamics 365 Supply Chain Management 10.0.23:n uudet tai muuttuneet ominaisuudet (tammikuu 2022)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.23 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1037. Se on käytettävissä seuraavasti:
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.23 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1037. Se on käytettävissä seuraavasti:
 
 - **Esiversio:** lokakuu 2021
 - **Version yleinen saatavuus (oma päivitys):** joulukuu 2021
@@ -29,7 +29,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. *Ominaisuus*-sarakkeessa on linkki [julkaisusuunnitelmaan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), jossa voit tarkastella kuinkin ominaisuuden virallisia julkaisupäiviä. *Lisätietoja*-sarakkeessa on lisätietoja ja/tai linkkejä liittyvään dokumentaatioon. Ominaisuuden käyttöönottotapa selviää *Mahdollistaja*-sarakkeesta. Lisätietoja ominaisuuksienhallinen käytöstä: [Ominaisuuksienhallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tämän aiheen päivitys saattaa sisältää ominaisuuksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. *Ominaisuus*-sarakkeessa on linkki [julkaisusuunnitelmaan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), jossa voit tarkastella kuinkin ominaisuuden virallisia julkaisupäiviä. *Lisätietoja*-sarakkeessa on lisätietoja ja/tai linkkejä liittyvään dokumentaatioon. Ominaisuuden käyttöönottotapa selviää *Mahdollistaja*-sarakkeesta. Lisätietoja ominaisuuksienhallinen käytöstä: [Ominaisuuksienhallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tämän artikkelin päivitys saattaa sisältää ominaisuuksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisin jälkeen.
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
@@ -63,9 +63,9 @@ Jos haluat ottaa näitä ominaisuuksista käyttöön tai poistaa niitä käytös
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 
-Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittävästi. Nämä ohjeaiheet eivät välttämättä liity tällä julkaisulla lisättyihin, edellisessä osassa lueteltuihin uusiin ominaisuuksiin. Niiden avulla saatat kuitenkin saada enemmän irti olemassa olevista ominaisuuksista.
+Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merkittävästi. Nämä artikkelit eivät välttämättä liity tällä julkaisulla lisättyihin, edellisessä osassa lueteltuihin uusiin ominaisuuksiin. Niiden avulla saatat kuitenkin saada enemmän irti olemassa olevista ominaisuuksista.
 
-| Ominaisuusalue | Uudet tai päivitetyt ohjeaiheet |
+| Ominaisuusalue | Uudet tai päivitetyt artikkelit |
 |---|---|
 | Suunnittelun muutosten hallinta | [Suunnittelumääritteet ja suunnittelumääritteiden haku](../engineering-change-management/engineering-attributes-and-search.md) kuvaa nyt, miten suunnittelumääritteiden periminen toimii. |
 | Pääsuunnittelu | [Pääsuunnittelu ja kysynnän ennusteet](../master-planning/planning-optimization/demand-forecast.md) ja [Ennusteen vähennysavaimet](../master-planning/reduction-keys.md) antavat nyt enemmän tietoja siitä, miten vähennysavaimia käytetään. |
@@ -74,9 +74,9 @@ Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittä
 | Pääsuunnittelu | [Toimitusaikataulu](../master-planning/supply-schedule.md) |
 | Varastonhallinta   | [Yleiset mobiililaitteen parametrit](../warehousing/mobile-device-parameters.md) |
 | Varastonhallinta   | [Ankkurointi](../warehousing/anchoring.md) |
-| Myynti ja markkinointi | Konsernin sisäinen kaupankäynti on nyt kuvattu yksityiskohtaisesti alkaen aiheesta [Konsernin sisäisen kaupankäynnin määrittäminen](../sales-marketing/intercompany-trade-set-up.md) ja siihen liittyvistä aiheista. |
+| Myynti ja markkinointi | Konsernin sisäinen kaupankäynti on nyt kuvattu yksityiskohtaisesti alkaen aiheesta [Konsernin sisäisen kaupankäynnin määrittäminen](../sales-marketing/intercompany-trade-set-up.md) ja siihen liittyvistä artikkeleista. |
 | Myynti ja markkinointi | [Myyntihistorian puhdistuksen suorituskyvyn parannukset](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
-| Inventoinnin- ja varastonhallinta | Varaston näkyvyyden ohjeet on laajennettu ja päivitetty alkaen aiheesta [Varaston näkyvyyden apuohjelman yleiskatsaus](../inventory/inventory-visibility.md) ja siihen liittyvistä aiheista. |
+| Inventoinnin- ja varastonhallinta | Varaston näkyvyyden ohjeet on laajennettu ja päivitetty alkaen aiheesta [Varaston näkyvyyden apuohjelman yleiskatsaus](../inventory/inventory-visibility.md) ja siihen liittyvistä artikkeleista. |
 | Varastonhallinta   | [Mobiililaitteen käyttäjätilit](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Lisäresurssit
@@ -97,12 +97,12 @@ Katso [Dynamics 365:n ja toimialan pilvipalvelu: 2021 julkaisuaalto 2 -suunnitel
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
-[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
+[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
 
-Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
+Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 

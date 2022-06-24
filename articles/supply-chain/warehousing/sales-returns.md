@@ -1,6 +1,6 @@
 ---
 title: Myyntipalautukset
-description: Tässä aiheessa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
+description: Tässä artikkelissa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9e8045ec39b9caf9bf0dc2b2d331419efb54e6d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695560"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860403"
 ---
 # <a name="sales-returns"></a>Myyntipalautukset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
+Tässä artikkelissa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
 
 Asiakas voi palauttaa nimikkeitä useista syistä. Nimike saattaa olla viallinen tai se ei ehkä täytä asiakkaan odotuksia. Palautusprosessi alkaa, kun asiakas lähettää nimikkeen palautuspyynnön. Kun asiakkaan pyyntö on vastaanotettu, palautustilaus luodaan.
 
@@ -84,7 +84,7 @@ Kun palautuksen otsikko on valmis, voit luoda palautusrivejä jollakin seuraavis
 -   Luo palautusrivi käyttämällä **Etsi myyntitilaus** -toimintoa. Suosittelemme, että käytät tätä toimintoa, kun luot palautustilauksen. **Etsi myyntitilaus** -toiminto määrittää viitteen palautusriviltä laskutetulle myyntitilausriville ja hakee rivin tiedot, kuten nimiketunnuksen, määrän, hinnan, alennuksen ja kustannusarvot myyntiriviltä. Viittaus takaa, että kun tuote palautetaan yritykselle, se arvostetaan samalle yksikkökustannukselle, jolla se myytiin. Viittaus myös varmistaa, että palautustilauksia ei ole luotu määrälle, joka yrittää laskulla myydyn määrän.
 
 >[!NOTE] 
->Palautusrivejä, joilla on viittaus myyntitilaukseen, käsitellään myynnin korjauksina tai peruutuksina. Lisätietoja jäljempänä tämän aiheen osiossa “Kirjaa kirjanpitoon”.
+>Palautusrivejä, joilla on viittaus myyntitilaukseen, käsitellään myynnin korjauksina tai peruutuksina. Lisätietoja jäljempänä tämän artikkelin osiossa “Kirjaa kirjanpitoon”.
 
 ### <a name="charges"></a>Kulut
 
@@ -179,7 +179,7 @@ Ennen kuin voit vastaanottaa palautetut nimikkeet varastoon fyysisesti kirjaamal
 
 [![Saapumisprosessi.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Prosessilla on useita muunnelmia, joita ei käsitellä tässä ohjeaiheessa. Tässä on esimerkkejä kyseisistä muunnelmista:
+Prosessilla on useita muunnelmia, joita ei käsitellä tässä artikkelissa. Tässä on esimerkkejä kyseisistä muunnelmista:
 
 -   Älä käytä **Saapumisten yhteenveto** -luetteloa Saapumisen kirjauskansion luomiseen. Luo Saapumisen kirjauskansio manuaalisesti sen sijaan. Palautustilausten viitteenä on **Myyntitilaus**.
 -   Jos käytät Varastonhallintaa, luo kuormalavakuljetukset. Palautusrivin tila on **Saapunut** kuormalavakuljetuksen aikana.

@@ -1,6 +1,6 @@
 ---
 title: Luokitusten ja arvosteluiden moduulit
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Commercen tuotetietojen sivuilla käytettäviä luokitus- ja arviointimoduuleja.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercen tuotetietojen sivuilla käytettäviä luokitus- ja arviointimoduuleja.
 author: gvrmohanreddy
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 66ee2d4185cad45b70b19fb474c64ae77a2868e835b20d5275e21610c0150370
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5829ccf9fad78e8669f5109d6c15e71af2ca768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761559"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894407"
 ---
 # <a name="ratings-and-reviews-modules"></a>Luokitusten ja arvosteluiden moduulit
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Commercen tuotetietojen sivuilla (PDP) käytettäviä luokitus- ja arviointimoduuleja.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercen tuotetietojen sivuilla (PDP) käytettäviä luokitus- ja arviointimoduuleja.
 
 Sähköisen kaupankäynnin sivustojen luokitukset ja arvostelut auttavat asiakkaita saamaan tietoja tuotteista ennen ostopäätöksen tekemistä. Niiden avulla voi myös kerätä asiakkaiden tuotteita koskevaa palautetta. 
 

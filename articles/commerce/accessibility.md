@@ -1,6 +1,6 @@
 ---
 title: Helppokäyttöisyyden toiminnot ja ominaisuudet
-description: Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.
+description: Tässä artikkelissa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f4e73ebaf6dc3fc6eb97f69df8545c9ab9fa9df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853899"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Helppokäyttöisyyden toiminnot ja ominaisuudet
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.
+Tässä artikkelissa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercen eri versioissa.
 
 Helppokäyttöominaisuudet ja -toiminnot mahdollistavat kaikkien käyttäjien toimintojen käytön ja suorittamisen, jotta he voivat saavuttaa tavoitteensa. Tämä laaja käyttäjäryhmä voi tarvita apuvälineitä kuulo-, näkö-, liikkuvuus- tai neurodiversiteetin vuoksi.
 
 Voit rakentaa sivustosi Dynamics 365 Commercessa erilaisten ominaisuuksien avulla niin, että se sisältää aputoimintoja. Kun suunnittelet sivustoa, harkitse helppokäyttötoimintojen alueita, jotka mainitaan [Microsoft Accessibility Centerissä](https://www.microsoft.com/accessibility). 
 
-Tässä ohjeaiheessa käsitellään helppokäyttötoimintojen lisätoimintoja, jotka kannattaa ottaa huomioon, kun käytät Dynamics 365 Commercea.
+Tässä artikkelissa käsitellään helppokäyttötoimintojen lisätoimintoja, jotka kannattaa ottaa huomioon, kun käytät Dynamics 365 Commercea.
 
 ## <a name="image-alt-text"></a>Kuvan vaihtoehtoinen teksti
 

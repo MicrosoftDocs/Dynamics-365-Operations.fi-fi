@@ -1,6 +1,6 @@
 ---
 title: Laadunhallinta varastoprosesseja varten
-description: Tämä ohjeaihe sisältää tietoja varastoprosessiominaisuuksien laadunhallinnasta. Tämä ominaisuus laajentaa laadunhallinnan ominaisuuksia ja antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallinnan lisähallintaa.
+description: Tämä artikkeli sisältää tietoja varastoprosessiominaisuuksien laadunhallinnasta. Tämä ominaisuus laajentaa laadunhallinnan ominaisuuksia ja antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallinnan lisähallintaa.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679048"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857834"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Laadunhallinta varastoprosesseja varten
 
@@ -69,7 +69,7 @@ Ennen kuin varastotyö voidaan luoda automaattisesti, jotta varasto voidaan siir
 1. Määritä kullekin työtilaustyypille sijaintidirektiivit, joissa käytetään oikeita laadunvalvontasijainteja, joihin varasto siirretään. Kun laadunvalvonta on suoritettu, _laatutilauksen_ työtilaustyypin sijaintidirektiivin avulla varmistetaan, että uusi kohdesijainti valitaan siten, että varasto voidaan siirtää laadunvalvontasijainnista.
 1. Määritä asianmukaiset mobiililaitteen valikkovaihtoehdot, jotka tukevat vastaanotetun varaston siirtoa laadunvalvonnan sijaintiin, sekä varastonsiirtoa, joka ohittaa laadunvalvonnan sijainnin tai jättää sen uuteen sijaintiin.
 
-Jos haluat vaiheittaisen esimerkin, joka ilmaisee, miten nämä määritykset on suoritettava, katso [esimerkkiskenaario](#example-scenario) tämän ohjeaiheen lopussa.
+Jos haluat vaiheittaisen esimerkin, joka ilmaisee, miten nämä määritykset on suoritettava, katso [esimerkkiskenaario](#example-scenario) tämän artikkelin lopussa.
 
 ## <a name="enable-a-warehouse-for-quality-management"></a>Ota käyttöön varastoprosessien laadunhallinta
 
@@ -188,7 +188,7 @@ Seuraavien esimerkkien **Viitetyypin** arvo on _Osto_- ja **Tapahtumatyypin** ar
 | Kuorma | Koko rekisterikilpi | Kyllä _(lukittu/ei muokattavissa)_ | <p>Paikka: Kyllä</p><p>Rekisterikilpi: Kyllä _(lukittu/ei muokattavissa)_</p> | Kyllä | 3 | <p>**Kaksi nimikettä:**</p><ul><li>**Nimikkeen A tilausrivien määrä: 120 EA (4 kuormalavaa)**</li><li>**Nimikkeen B tilausrivien määrä: 90 EA (3 kuormalavaa)**</li></ul><p>**Yksi kuormitus, kaksi kuormaviivaa ja tilausrivi**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP1<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP2<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP3<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP4<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle B, 30 EA, LP5<p>Laatunimikkeen otantatyötä 30 EA:lle</p><p>Laatutilaus 1 30 EA:lle</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle B, 30 EA, LP6<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa nimikkeelle A, 30 EA, LP7<p>Ostotilaustyö 30 EA:lle (hyllytys)</p></li></ol> |
 | Kuorma | Prosentti = 10 | Kyllä _(lukittu/ei muokattavissa)_ | <p>Sijainti: Ei</p><p>Rekisterikilpi: Ei</p> | Ei | Ei käytettävissä | <p>**Tilausrivin määrä: 100 EA**</p><p>**Kuormituksia ei ole luotu. Tilauksen laajuutta käytetään.**</p><ol><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP1<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li><li>Rekisteröintikuitti varastonhallinnnan mobiilisovelluksessa kohteelle 50 EA, LP2<p>Laatunimikkeen otantatyötä 5 EA:lle</p><p>Laatutilaus 1 5 EA:lle</p><p>Ostotilaustyö 45 EA:lle (hyllytys)</p></li></ol> |
 
-Kun työntekijä vahvistaa jonkin edellisessä taulussa näytetyistä laatutilauksista, järjestelmä luo automaattisesti laatutilaustyön, jonka avulla varasto siirretään laadunhallintasijainnista sijaintiin, joka on määritetty _laatutilauksen_ työtilaustyypin sijaintidirektiivissä. Voit määrittää tähän tarkoitukseen minkä tahansa sijaintipaikan, kuten palautuksen tai varastopaikan, laatutilauksen testituloksen mukaan. Esimerkki tästä asennuksesta on tämän ohjeaiheen lopussa olevassa [esimerkkiskenaariossa](#example-scenario).
+Kun työntekijä vahvistaa jonkin edellisessä taulussa näytetyistä laatutilauksista, järjestelmä luo automaattisesti laatutilaustyön, jonka avulla varasto siirretään laadunhallintasijainnista sijaintiin, joka on määritetty _laatutilauksen_ työtilaustyypin sijaintidirektiivissä. Voit määrittää tähän tarkoitukseen minkä tahansa sijaintipaikan, kuten palautuksen tai varastopaikan, laatutilauksen testituloksen mukaan. Esimerkki tästä asennuksesta on tämän artikkelin lopussa olevassa [esimerkkiskenaariossa](#example-scenario).
 
 Voit avata uudelleen laatutilauksen, joka on jo vahvistettu. Jos laatutilauksen työ, joka liittyy varaston siirtämiseen laadunvalvontasijainnista, ei ole *suljetun* tai *käynnissä olevan* **työn tilan** arvo.
 

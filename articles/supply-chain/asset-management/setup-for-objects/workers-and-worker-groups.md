@@ -1,6 +1,6 @@
 ---
 title: Ylläpitotyöntekijät ja -työntekijäryhmät
-description: Tässä ohjeaiheessa kerrotaan, kuinka ylläpitopitotyöntekijät ja -työntekijäryhmät määritetään resurssien hallinnassa.
+description: Tässä artikkelissa kerrotaan, kuinka ylläpitopitotyöntekijät ja -työntekijäryhmät määritetään resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860896"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Ylläpitotyöntekijät ja -työntekijäryhmät
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750121"
 
  
 
-Tässä ohjeaiheessa kerrotaan, kuinka ylläpitopitotyöntekijät ja -työntekijäryhmät määritetään resurssien hallinnassa. Resurssien hallinnassa voit liittää kunnossapitotyöntekijöitä toiminnallisiin sijainteihin. (Lisätietoja toiminnallisista sijainneista on kohdassa [luo toiminnallisia sijainteja](../functional-locations/create-functional-locations.md).) Tämä toiminto voi olla hyödyllinen esimerkiksi silloin, kun olet aikatauluttamasta kunnossapitotyötä koneelle, joka sijaitsee toiminnallisessa sijainnissa 01, ja haluat kohdistaa ylläpitotyöntekijät samasta sijainnista, jotta työ voidaan suorittaa.
+Tässä artikkelissa kerrotaan, kuinka ylläpitopitotyöntekijät ja -työntekijäryhmät määritetään resurssien hallinnassa. Resurssien hallinnassa voit liittää kunnossapitotyöntekijöitä toiminnallisiin sijainteihin. (Lisätietoja toiminnallisista sijainneista on kohdassa [luo toiminnallisia sijainteja](../functional-locations/create-functional-locations.md).) Tämä toiminto voi olla hyödyllinen esimerkiksi silloin, kun olet aikatauluttamasta kunnossapitotyötä koneelle, joka sijaitsee toiminnallisessa sijainnissa 01, ja haluat kohdistaa ylläpitotyöntekijät samasta sijainnista, jotta työ voidaan suorittaa.
 
 Voit myös luoda kunnossapitotyöntekijäryhmiä ja liittää niitä kunnosapitotyöntekijöihin. Tästä toiminnosta on hyötyä, kun teet yksinkertaisia työtilausten ajoituksia ja haluat ajoittaa huoltotyöntekijäryhmän työtilaukseen. Kunnossapitotyöntekijöiden ja kunnossapitotyöntekijäryhmien avulla voit määrittää ensisijaisia huoltotyöntekijöitä ja vastuuvelvollisia huoltotyöntekijöitä. 
 

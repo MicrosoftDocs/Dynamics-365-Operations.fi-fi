@@ -1,6 +1,6 @@
 ---
 title: Sanoman käsittelijän sanomat
-description: Tässä ohjeaiheessa on tietoja sanoman käsittelijän sanomaominaisuudesta scale unitin kuormitusta varten.
+description: Tässä artikkelissa on tietoja sanoman käsittelijän sanomaominaisuudesta scale unitin kuormitusta varten.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a5f8d48ba697df389150f70ac159e690156de33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069426"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893610"
 ---
 # <a name="message-processor-messages"></a>Sanoman käsittelijän sanomat
 

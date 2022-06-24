@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: f71ce701adbe60b69b25e41810dda7adeec1d390
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 5d1ea1517c75393b1c8d7c95c8aa2405042b4532
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850638"
 ---
 # <a name="product-lifecycle-state-overview"></a>Tuotteen elinkaaren tila – yleiskatsaus
 
@@ -74,7 +74,7 @@ Tietoyksiköt tukevat tuotteen elinkaaren tiloja ja elinkaaren tilaa voidaan ase
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Vanhentuneiden tuotteiden ja tuotevarianttien etsiminen
 
-Voit etsiä vanhentuneita vapautettuja tuotteita ja tuotevariantteja suorittamalla simulointianalyysin ja päivittää sitten niiden tuotteen elinkaaren tilan. Lisätietoja vanhentuneiden tuotteiden etsimisestä on kohdassa [Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan määrittäminen](tasks/obsolete-product-variants.md). Tässä aiheessa käsitellään vanhentuneiden vapautettujen tuotteiden tai tuotevarianttien etsimisestä ja tuotteen elinkaaren tilan liittämistä vanhentuneisiin tuotteisiin. Siinä kerrotaan myös miten simulointituloksia tarkastellaan ja miten useita tuotteita ja tuotevariantteja liitetään uuteen tuotteen elinkaaren tilaan, kun päivitys suoritetaan ilman simulointia.  
+Voit etsiä vanhentuneita vapautettuja tuotteita ja tuotevariantteja suorittamalla simulointianalyysin ja päivittää sitten niiden tuotteen elinkaaren tilan. Lisätietoja vanhentuneiden tuotteiden etsimisestä on kohdassa [Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan määrittäminen](tasks/obsolete-product-variants.md). Tässä artikkelissa käsitellään vanhentuneiden vapautettujen tuotteiden tai tuotevarianttien etsimisestä ja tuotteen elinkaaren tilan liittämistä vanhentuneisiin tuotteisiin. Siinä kerrotaan myös miten simulointituloksia tarkastellaan ja miten useita tuotteita ja tuotevariantteja liitetään uuteen tuotteen elinkaaren tilaan, kun päivitys suoritetaan ilman simulointia.  
 
 Kun analyysi suoritetaan simulointitilassa, vanhentuneiksi tunnistetut tuotteet ja tuotevariantit näkyvät erillisessä lomakkeessa, jossa niitä on helppo tarkastella. Analyysi hakee tapahtumia ja tiettyjä päätietoja, joilla voi tunnistaa tuotteet, joilla ei ole ollut kysyntää muutettavan ajanjakson aikana ja joilla ei ole kysyntänä ilmeneviä päätietoja. Analyysin ulkopuolelle voidaan jättää uudet vapautetut tuotteet muutettavan ajanjakson ajalta. Kun analyysisimuloinnin tulos on odotettu, käyttäjä voi suorittaa analyysin ja määrittää kaikille analyysin vanhentuneiksi tunnistamille tuotteille uuden tuotteen elinkaaren tilan.  
 
@@ -97,7 +97,7 @@ Valitse ja päivitä vapautetut tuotteet ja tuotevariantit seuraavien ehtojen mu
 - Tuotteella tai tuotevariantilla ei ole aktiivisia tai tulevia myynti- tai ostosopimusrivejä.
 - Tuotetta tai tuotevarianttia ei käytetä sellaisessa tuoterakenteessa, joka on liitetty ei-vanhentuneeseen hyväksyttyyn suunnittelussa käytettävissä olevaan tuotteen tai variantin tuoterakenneversioon.
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 - [Luo uusi tuotteen elinkaaren tila](tasks/new-product-lifecycle-state.md)
 - [Luo tuotteen elinkaaren oletustila](tasks/default-product-lifecycle-state.md)

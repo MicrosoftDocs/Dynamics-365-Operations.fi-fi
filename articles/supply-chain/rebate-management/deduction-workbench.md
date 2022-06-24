@@ -1,6 +1,6 @@
 ---
 title: Hallitse vähennyksiä käyttämällä vähennyksen työtilaa
-description: Tässä ohjeaiheessa kuvataan vähennyksen työtilan käyttö, jonka avulla voit käsitellä asiakkaan maksuja, jotka sisältävät vähennyksiä.
+description: Tässä artikkelissa kuvataan vähennyksen työtilan käyttö, jonka avulla voit käsitellä asiakkaan maksuja, jotka sisältävät vähennyksiä.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500399"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873605"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Hallitse vähennyksiä käyttämällä vähennyksen työtilaa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan vähennyksen työtilan käyttö, jonka avulla voit käsitellä asiakkaan maksuja, jotka sisältävät vähennyksiä.
+Tässä artikkelissa kuvataan vähennyksen työtilan käyttö, jonka avulla voit käsitellä asiakkaan maksuja, jotka sisältävät vähennyksiä.
 
 Asiakas, joka on oikeutettu ostohyvitykseen, voi lunastaa ostohyvityksen heti. Sen sijaan asiakas voi lähettää maksun, joka sisältää ostohyvityksen suuruisen vähennyksen. Jos haluat käsitellä tämän tyyppistä tapahtumaa, voit käyttää vähennyksen työtilaa vähennysten täsmäyttämiseen avointen luottotapahtumien kanssa, vähennysten jakamiseen ja vähennysten pois kirjaamiseen.
 
 > [!NOTE]
-> Vähennyksen työtila on ollut osa Microsoft Dynamics 365 Supply Chain Managementin myynti- ja markkinointitoimintoja jo kauan aikaa. Sitä on nyt parannettu siten, että se toimii myös uuden **ostohyvityksen hallinta** -moduulin kanssa. Tässä aiheessa kuvataan, miten vähennyksen työtilan sekä vanhempia ominaisuuksia että ostohyvitysten hallintatoimintoja käytetään. Jos [järjestelmän **ostohyvitysten hallinta** -moduulia ei ole otettu käyttöön](rebate-management-enable.md), osa tässä kuvatuista toiminnoista ei kuitenkaan ole käytettävissä.
+> Vähennyksen työtila on ollut osa Microsoft Dynamics 365 Supply Chain Managementin myynti- ja markkinointitoimintoja jo kauan aikaa. Sitä on nyt parannettu siten, että se toimii myös uuden **ostohyvityksen hallinta** -moduulin kanssa. Tässä artikkelissa kuvataan, miten vähennyksen työtilan sekä vanhempia ominaisuuksia että ostohyvitysten hallintatoimintoja käytetään. Jos [järjestelmän **ostohyvitysten hallinta** -moduulia ei ole otettu käyttöön](rebate-management-enable.md), osa tässä kuvatuista toiminnoista ei kuitenkaan ole käytettävissä.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -159,11 +159,11 @@ Luo uusi vähennys vähennystyötilassa seuraavien ohjeiden avulla.
         - *Määräperuste* – Negatiivisen myyntitilauksen tai palautustilauksen luominen.
 
     - **Vaatimuspäivä** – Valitse vaatimuksen päivämäärä. Oletusarvo on nykyinen päivämäärä.
-    - **Vaatimuksen syy** – Valitse nykyiseen vähennykseen sisältyvä syykoodi. Valitsemasi vaatimusperuste vaikuttaa valittuihin asetuksiin. Lisätietoja tässä kohdassa valittavissa olevien vähennysten syiden luo ja konfiguroinnista on tämän ohjeaiheen aiemmassa [Luo vähennyksen syyt](#deduction-reasons) -osassa.
+    - **Vaatimuksen syy** – Valitse nykyiseen vähennykseen sisältyvä syykoodi. Valitsemasi vaatimusperuste vaikuttaa valittuihin asetuksiin. Lisätietoja tässä kohdassa valittavissa olevien vähennysten syiden luo ja konfiguroinnista on tämän artikkelin aiemmassa [Luo vähennyksen syyt](#deduction-reasons) -osassa.
     - **Huomautukset** – Lisää mahdolliset huomautukset. Kun vaatimus hyväksytään, hyväksyjä voi muokata tai lisätä vaatimuksen huomautuksia.
     - **Luo vaatimuskirjauskansio** – Valitsemalla tämän vaihtoehdon voit määrittää, luodaanko vaatimuskirjauskansio, kun vaatimus tai vähennys luodaan:
 
-        - *Kyllä* – Järjestelmä luo ja kirjaa yleisen kirjauskansion käyttämällä **Myyntireskontran parametrit** -sivulla määritettyä vaatimuskirjauskansiota. (Lisätietoja on kohdassa [Määritä myyntireskontran ja vähennysten](#accounts-receivable-deductions) osa aiemmin tässä ohjeaiheessa.) Kun lasku on liitetty vaatimukseen, vaatimuskirjauskansion avulla vähennetään sovellettavaa laskua. Jos vaatimus hylätään myöhemmin, hakemuskirjauskansio ja tilitys (jos lasku on liitetty) peruutetaan.
+        - *Kyllä* – Järjestelmä luo ja kirjaa yleisen kirjauskansion käyttämällä **Myyntireskontran parametrit** -sivulla määritettyä vaatimuskirjauskansiota. (Lisätietoja on kohdassa [Määritä myyntireskontran ja vähennysten](#accounts-receivable-deductions) osa aiemmin tässä artikkelissa.) Kun lasku on liitetty vaatimukseen, vaatimuskirjauskansion avulla vähennetään sovellettavaa laskua. Jos vaatimus hylätään myöhemmin, hakemuskirjauskansio ja tilitys (jos lasku on liitetty) peruutetaan.
         - *Ei* – Tällä hetkellä ei luoda vaatimuskirjauskansiota. Se luodaan, kun vaatimus hyväksytään. Lasku voidaan vielä liittää uuteen vaatimukseen, vaikka vaatimuskirjauskansiota ei luoda. Selvitystä ei kuitenkaan voi tehdä ilman vaatimuskirjauskansiota.
 
 1. Valitse **OK**.
@@ -197,11 +197,11 @@ Prosessi, jossa vähennys luodaan asiakastilityksistä, muistuttaa vähennysten 
         - *Määräperuste* – Negatiivisen myyntitilauksen tai palautustilauksen luominen.
 
     - **Vaatimuspäivä** – Valitse vaatimuksen päivämäärä. Oletusarvo on nykyinen päivämäärä.
-    - **Vaatimuksen syy** – Valitse nykyiseen vähennykseen sisältyvä syykoodi. Valitsemasi vaatimusperuste vaikuttaa valittuihin asetuksiin. Lisätietoja tässä kohdassa valittavissa olevien vähennysten syiden luo ja konfiguroinnista on tämän ohjeaiheen aiemmassa [Luo vähennyksen syyt](#deduction-reasons) -osassa.
+    - **Vaatimuksen syy** – Valitse nykyiseen vähennykseen sisältyvä syykoodi. Valitsemasi vaatimusperuste vaikuttaa valittuihin asetuksiin. Lisätietoja tässä kohdassa valittavissa olevien vähennysten syiden luo ja konfiguroinnista on tämän artikkelin aiemmassa [Luo vähennyksen syyt](#deduction-reasons) -osassa.
     - **Huomautukset** – Lisää mahdolliset huomautukset. Kun vaatimus hyväksytään, hyväksyjä voi muokata tai lisätä vaatimuksen huomautuksia.
     - **Luo vaatimuskirjauskansio** – Valitsemalla tämän vaihtoehdon voit määrittää, luodaanko vaatimuskirjauskansio, kun vaatimus tai vähennys luodaan:
 
-        - *Kyllä* – Järjestelmä luo ja kirjaa yleisen kirjauskansion käyttämällä **Myyntireskontran parametrit** -sivulla määritettyä vaatimuskirjauskansiota. (Lisätietoja on kohdassa [Määritä myyntireskontran ja vähennysten](#accounts-receivable-deductions) osa aiemmin tässä ohjeaiheessa.) Kun lasku on liitetty vaatimukseen, vaatimuskirjauskansion avulla vähennetään sovellettavaa laskua. Jos vaatimus hylätään myöhemmin, hakemuskirjauskansio ja tilitys (jos lasku on liitetty) peruutetaan.
+        - *Kyllä* – Järjestelmä luo ja kirjaa yleisen kirjauskansion käyttämällä **Myyntireskontran parametrit** -sivulla määritettyä vaatimuskirjauskansiota. (Lisätietoja on kohdassa [Määritä myyntireskontran ja vähennysten](#accounts-receivable-deductions) osa aiemmin tässä artikkelissa.) Kun lasku on liitetty vaatimukseen, vaatimuskirjauskansion avulla vähennetään sovellettavaa laskua. Jos vaatimus hylätään myöhemmin, hakemuskirjauskansio ja tilitys (jos lasku on liitetty) peruutetaan.
         - *Ei* – Tällä hetkellä ei luoda vaatimuskirjauskansiota. Se luodaan, kun vaatimus hyväksytään. Lasku voidaan vielä liittää uuteen vaatimukseen, vaikka vaatimuskirjauskansiota ei luoda. Selvitystä ei kuitenkaan voi tehdä ilman vaatimuskirjauskansiota.
 
 1. Valitse **OK**.
@@ -235,11 +235,11 @@ Prosessi, jossa vähennys luodaan asiakassivulta, muistuttaa vähennysten luomis
         - *Määräperuste* – Negatiivisen myyntitilauksen tai palautustilauksen luominen.
 
     - **Vaatimuspäivä** – Valitse vaatimuksen päivämäärä. Oletusarvo on nykyinen päivämäärä.
-    - **Vaatimuksen syy** – Valitse nykyiseen vähennykseen sisältyvä syykoodi. Valitsemasi vaatimusperuste vaikuttaa valittuihin asetuksiin. Lisätietoja tässä kohdassa valittavissa olevien vähennysten syiden luo ja konfiguroinnista on tämän ohjeaiheen aiemmassa [Luo vähennyksen syyt](#deduction-reasons) -osassa.
+    - **Vaatimuksen syy** – Valitse nykyiseen vähennykseen sisältyvä syykoodi. Valitsemasi vaatimusperuste vaikuttaa valittuihin asetuksiin. Lisätietoja tässä kohdassa valittavissa olevien vähennysten syiden luo ja konfiguroinnista on tämän artikkelin aiemmassa [Luo vähennyksen syyt](#deduction-reasons) -osassa.
     - **Huomautukset** – Lisää mahdolliset huomautukset. Kun vaatimus hyväksytään, hyväksyjä voi muokata tai lisätä vaatimuksen huomautuksia.
     - **Luo vaatimuskirjauskansio** – Valitsemalla tämän vaihtoehdon voit määrittää, luodaanko vaatimuskirjauskansio, kun vaatimus tai vähennys luodaan:
 
-        - *Kyllä* – Järjestelmä luo ja kirjaa yleisen kirjauskansion käyttämällä **Myyntireskontran parametrit** -sivulla määritettyä vaatimuskirjauskansiota. (Lisätietoja on kohdassa [Määritä myyntireskontran ja vähennysten](#accounts-receivable-deductions) osa aiemmin tässä ohjeaiheessa.) Kun lasku on liitetty vaatimukseen, vaatimuskirjauskansion avulla vähennetään sovellettavaa laskua. Jos vaatimus hylätään myöhemmin, hakemuskirjauskansio ja tilitys (jos lasku on liitetty) peruutetaan.
+        - *Kyllä* – Järjestelmä luo ja kirjaa yleisen kirjauskansion käyttämällä **Myyntireskontran parametrit** -sivulla määritettyä vaatimuskirjauskansiota. (Lisätietoja on kohdassa [Määritä myyntireskontran ja vähennysten](#accounts-receivable-deductions) osa aiemmin tässä artikkelissa.) Kun lasku on liitetty vaatimukseen, vaatimuskirjauskansion avulla vähennetään sovellettavaa laskua. Jos vaatimus hylätään myöhemmin, hakemuskirjauskansio ja tilitys (jos lasku on liitetty) peruutetaan.
         - *Ei* – Tällä hetkellä ei luoda vaatimuskirjauskansiota. Se luodaan, kun vaatimus hyväksytään. Lasku voidaan vielä liittää uuteen vaatimukseen, vaikka vaatimuskirjauskansiota ei luoda. Selvitystä ei kuitenkaan voi tehdä ilman vaatimuskirjauskansiota.
 
 1. Valitse **OK**.
@@ -280,7 +280,7 @@ Voit täsmäyttää vähennyksen saldoon noudattamalla seuraavia vaiheita.
 1. Valitse toimintoruudussa **Ylläpidä \> Täsmäytä**. Järjestelmä täsmäyttää vähennyksen kredit-arvoon. Jos saldo jää vähennykseen, se näkyy **Vähennykset**-välilehden **Jäljellä oleva summa** -kentässä.
 
     > [!NOTE]
-    > Vähennyksille, jotka on luotu käyttämällä **Uusi vähennys** -komentoa vähennyksen työpöydällä, asiakkaan selvityksessä tai asiakassivulla, **Ylläpidä \> Täsmäytä** -komento on käytettävissä vain, jos **Vaatimuksen tila** -kentän arvoksi on asetettu *Hyväksytty*. Tämän komennon avulla voit täsmätä hinta- tai määräpohjaisen tapahtuman manuaalisesti siihen liittyvään hyvitykseen **Avoimet tapahtumat** -osassa. Tämä hyvitys luodaan joko vähennyksen hyväksymisen yhteydessä (käyttämällä **Ylläpidä \> Hyväksy vähennys** -komentoa) tai kun se on liitetty olemassa olevaan hyvitykseen, kuten on kuvattu tässä aiheessa myöhemmin kohdassa [Hyväksytyn vähennysprosessin ulkopuolella luodut saldot](#credits-outside-approval). *Selvitä hyväksytyt vähennykset* -kausittainen tehtävä (**Myynnin markkinointi \> Kausittaiset tehtävät \> Selvitä hyväksytyt vähennykset**) -tehtävää voidaan käyttää myös niiden vähennysten ja hyvitysten automaattiseen täsmäyttämiseen, joissa on täsmäytyksen **Vähennystunnus**-arvot ja -summat.
+    > Vähennyksille, jotka on luotu käyttämällä **Uusi vähennys** -komentoa vähennyksen työpöydällä, asiakkaan selvityksessä tai asiakassivulla, **Ylläpidä \> Täsmäytä** -komento on käytettävissä vain, jos **Vaatimuksen tila** -kentän arvoksi on asetettu *Hyväksytty*. Tämän komennon avulla voit täsmätä hinta- tai määräpohjaisen tapahtuman manuaalisesti siihen liittyvään hyvitykseen **Avoimet tapahtumat** -osassa. Tämä hyvitys luodaan joko vähennyksen hyväksymisen yhteydessä (käyttämällä **Ylläpidä \> Hyväksy vähennys** -komentoa) tai kun se on liitetty olemassa olevaan hyvitykseen, kuten on kuvattu tässä artikkelissa myöhemmin kohdassa [Hyväksytyn vähennysprosessin ulkopuolella luodut saldot](#credits-outside-approval). *Selvitä hyväksytyt vähennykset* -kausittainen tehtävä (**Myynnin markkinointi \> Kausittaiset tehtävät \> Selvitä hyväksytyt vähennykset**) -tehtävää voidaan käyttää myös niiden vähennysten ja hyvitysten automaattiseen täsmäyttämiseen, joissa on täsmäytyksen **Vähennystunnus**-arvot ja -summat.
 
 ### <a name="split-a-deduction"></a>Vähennyksen jakaminen
 

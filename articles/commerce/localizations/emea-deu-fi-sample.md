@@ -1,6 +1,6 @@
 ---
 title: Saksan tilikausirekisteröintipalvelun integroinnin malli
-description: Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
+description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
-ms.openlocfilehash: 16079ba5ca830625c4f18df9fe6b5b307217183d
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: a218989263580ea08947d3366b79e3b19b506375
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614041"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867755"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Saksan tilikausirekisteröintipalvelun integroinnin malli
 
 [!include[banner](../includes/banner.md)]
 
-Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
+Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Saksa).
 
 Vaatimuksille, jotka liittyvät kassojen paikallisiin verotusvaatimuksiin Saksassa, Microsoft Dynamics 365 Commerce -toiminnallisuus Saksalle sisältää esimerkki-integraation myyntipisteestä ulkoiseen verorekisteröintipalveluun. Esimerkki laajentaa [kirjanpidon integrointitoimintoja](fiscal-integration-for-retail-channel.md). Se perustuu [EFSTA](https://www.efsta.eu/de/)-järjestelmän [EFR (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) -ratkaisuun, ja se ottaa yhteyden EFR-palveluun HTTPS-protokollan kautta. EFR-palvelun tulee olla isännöity joko Retail Hardware Stationissa tai erillisellä tietokoneella, johon voidaan yhdistää Hardware Stationilta. Näyte toimitetaan lähdekoodin muodossa, ja se on osa Retail-ohjelmiston kehityssarjaa (SDK).
 

@@ -1,6 +1,6 @@
 ---
 title: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
-description: Tässä aiheessa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallinnan lisäprosessit.
+description: Tässä artikkelissa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallinnan lisäprosessit.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565252"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863618"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallinnan lisäprosessit. Vastaanottoassistentti tekee yleensä tämän tehtävän.
+Tässä artikkelissa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallinnan lisäprosessit. Vastaanottoassistentti tekee yleensä tämän tehtävän.
 
 ## <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 
-Tässä skenaariossa voi käyttää tässä ohjeaiheessa määritettyjä esimerkkitietueita ja -arvoja, kun vakiosittelytiedot asennettuna ja *USMF*-yritys on valittava ennen aloittamista.
+Tässä skenaariossa voi käyttää tässä artikkelissa määritettyjä esimerkkitietueita ja -arvoja, kun vakiosittelytiedot asennettuna ja *USMF*-yritys on valittava ennen aloittamista.
 
 Voit myös käyttää tätä skenaariota korvaamalla arvot omista tiedoista, jos käytettävissäsi ovat seuraavat tiedot:
 

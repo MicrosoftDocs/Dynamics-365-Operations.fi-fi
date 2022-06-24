@@ -1,6 +1,6 @@
 ---
 title: Varastopaikoitus
-description: Tässä ohjeaiheessa on tietoja varastopaikoitusta. Varastopaikoituksen avulla voit konsolidoida kysynnän nimikkeen ja mittayksikön mukaan tilauksista, joiden tila on tilattu, varattu tai vapautettu. Sen avulla varastopäälliköt voivat suunnitella poimintasijainnit älykkäästi, ennen kuin ne vapauttavat tilauksia varastoon ja luovat poimintatöitä.
+description: Tässä artikkelissa on tietoja varastopaikoitusta. Varastopaikoituksen avulla voit konsolidoida kysynnän nimikkeen ja mittayksikön mukaan tilauksista, joiden tila on tilattu, varattu tai vapautettu. Sen avulla varastopäälliköt voivat suunnitella poimintasijainnit älykkäästi, ennen kuin ne vapauttavat tilauksia varastoon ja luovat poimintatöitä.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897252"
 ---
 # <a name="warehouse-slotting"></a>Varastopaikoitus
 
@@ -156,7 +156,7 @@ Voit lisätä kullekin luotavalle myyntitilausmallille rivin kutakin paikoitusm�
 
     - **Mittayksikön taso:** _EaBoxPl_
 
-        Tämä kenttä määrittää riville kelvolliset kysynnän mittayksiköt. (Lisätietoja on aiemmin tässä ohjeaiheessa olevassa [Määritä paikoituksen mittayksikön tasot](#unit-tiers) -osassa.)
+        Tämä kenttä määrittää riville kelvolliset kysynnän mittayksiköt. (Lisätietoja on aiemmin tässä artikkelissa olevassa [Määritä paikoituksen mittayksikön tasot](#unit-tiers) -osassa.)
 
     - **Määritä paikan kriteerit:** _Harkitse määrä_
 

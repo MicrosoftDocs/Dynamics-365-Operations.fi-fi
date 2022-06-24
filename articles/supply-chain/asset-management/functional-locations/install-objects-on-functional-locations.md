@@ -1,6 +1,6 @@
 ---
 title: Asenna toiminnallisten sijaintien resurssit
-description: Tässä ohjeaiheessa kerrotaan, miten resursseja asennetaan toiminnallisiin sijainteihin resurssien hallinnassa.
+description: Tässä artikkelissa kerrotaan, miten resursseja asennetaan toiminnallisiin sijainteihin resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775744"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894498"
 ---
 # <a name="install-assets-on-functional-locations"></a>Asenna toiminnallisten sijaintien resurssit
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775744"
 
  
 
-Kun olet luonut toiminnalliset sijaintirakenteet, seuraava vaihe on asentaa resurssit asiaankuuluviin toiminnallisiin sijainteihin. Tässä ohjeaiheessa kerrotaan, miten resursseja asennetaan näihin toiminnallisiin sijainteihin resurssien hallinnassa. Lisätietoja resurssien luomisesta on kohdassa [Resurssien esittely](../objects/introduction-to-objects.md).
+Kun olet luonut toiminnalliset sijaintirakenteet, seuraava vaihe on asentaa resurssit asiaankuuluviin toiminnallisiin sijainteihin. Tässä artikkelissa kerrotaan, miten resursseja asennetaan näihin toiminnallisiin sijainteihin resurssien hallinnassa. Lisätietoja resurssien luomisesta on kohdassa [Resurssien esittely](../objects/introduction-to-objects.md).
 
 Jos olet luonut resurssirakenteen, koko resurssirakenne on asennettava toiminnalliseen sijaintiin. Tämän vuoksi toiminnalliseen sijaintiin voidaan valita vain pääresursseja (ylätason resurssit, joilla ei ole pääresursseja). Kaikki liittyvät aliresurssit asennetaan myös kyseiseen toiminnalliseen sijaintiin. Kun asennat resursseja toiminnalliseen sijaintiin, toiminnallisen sijainnin taloushallinnon dimensiot voidaan siirtää niille automaattisesti toiminnalliseen sijaintiin valitun toiminnallisen sijaintityypin asetusten mukaan. Lisätietoja toiminnallisten sijaintityyppien määrittämisestä on kohdassa [Toiminnalliset sijaintityypit](../setup-for-functional-locations/functional-location-types.md).
 

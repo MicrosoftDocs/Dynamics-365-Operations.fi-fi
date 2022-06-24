@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Managementin tallennetut vakionäkymät
-description: Tässä aiheessa käsitellään käytettävissä olevia tallennettuja vakionäkymiä ja niiden käyttöön ottamista.
+description: Tässä artikkelissa käsitellään käytettävissä olevia tallennettuja vakionäkymiä ja niiden käyttöön ottamista.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887555"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Managementin tallennetut vakionäkymät
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management sisältää useita tallennettuja näkyviä, jotka voidaan ottaa käyttöön ja joita voidaan käyttää tarvittaessa. Osa näistä tallennetuista vakionäkymistä on optimoitu ja nimetty tietyn roolin tai tehtävän mukaan (kuten Laadunvalvonta tai Vastaanotto). Muut on optimoitu siten, että ne sisältävät vain kentät ja asetukset, joita asiakkaat Microsoftin käyttötilastojen mukaan käyttävät eniten. Näitä tallennettuja näkymiä kutsutaan yleensä *yksinkertaistetuiksi* näkymiksi. Tässä aiheessa käsitellään käytettävissä olevia tallennettuja vakionäkymiä sekä niiden käyttöön ottamista ja mukauttamista.
+Microsoft Dynamics 365 Supply Chain Management sisältää useita tallennettuja näkyviä, jotka voidaan ottaa käyttöön ja joita voidaan käyttää tarvittaessa. Osa näistä tallennetuista vakionäkymistä on optimoitu ja nimetty tietyn roolin tai tehtävän mukaan (kuten Laadunvalvonta tai Vastaanotto). Muut on optimoitu siten, että ne sisältävät vain kentät ja asetukset, joita asiakkaat Microsoftin käyttötilastojen mukaan käyttävät eniten. Näitä tallennettuja näkymiä kutsutaan yleensä *yksinkertaistetuiksi* näkymiksi. Tässä artikkelissa käsitellään käytettävissä olevia tallennettuja vakionäkymiä sekä niiden käyttöön ottamista ja mukauttamista.
 
 Lisätietoja tallennettujen näkymien, mukaan lukien tallennettujen vakionäkymien käyttämisestä sen jälkeen, kun ne on otettu käyttöön, on kohdassa [Tallennetut näkymät](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ Lisätietoja tallennettujen näkymien mukauttamisesta ja nimeämisestä uudellee
 
 Tallennettujen näkymien käyttäminen riippumatta siitä, käytetäänkö tallennettuja vakionäkymiä, edellyttää, että *Tallennetut näkymät* -toiminto otetaan käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (versiosta 10.0.21 tämä toiminto on oletusarvoisesti käytössä).
 
-Tämän aiheen muut osat koostuvat taulukoista, joissa käsitellään tällä hetkellä kussakin moduulissa käytettävissä olevia tallennettuja vakionäkymiä. Kussakin taulukossa on kunkin tallennetun näkymän nimi ja sen kuvaus sekä sivu, jolta sen löytää. Kussakin taulukossa on myös tallennetun näkymän sisältävän toiminnon nimi. Tallennettujen vakionäkymien näyttäminen järjestelmässä edellyttää, että määritetty toiminto otetaan käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Versiosta 10.0.25 alkaen kaikki luetellut näkymät ovat oletusarvoisesti käytössä.
+Tämän artikkelin muut osat koostuvat taulukoista, joissa käsitellään tällä hetkellä kussakin moduulissa käytettävissä olevia tallennettuja vakionäkymiä. Kussakin taulukossa on kunkin tallennetun näkymän nimi ja sen kuvaus sekä sivu, jolta sen löytää. Kussakin taulukossa on myös tallennetun näkymän sisältävän toiminnon nimi. Tallennettujen vakionäkymien näyttäminen järjestelmässä edellyttää, että määritetty toiminto otetaan käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Versiosta 10.0.25 alkaen kaikki luetellut näkymät ovat oletusarvoisesti käytössä.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Inventoinnin- ja varastonhallintamoduulin tallennetut näkymät
 

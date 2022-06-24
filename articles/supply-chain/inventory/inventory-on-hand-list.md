@@ -1,6 +1,6 @@
 ---
 title: Käytettävissä olevan varaston luettelo
-description: Tässä aiheessa kuvataan Käytettävissä oleva varasto sivun käytettävissä olevan varaston tietojen tarkastaminen. Aiheessa on tietoja tavoista, joilla erilaiset suodatus- ja lajitteluasetukset toimivat yhdessä, sekä yhdistelmien mahdollisista odottamattomista tuloksista.
+description: Tässä artikkelissa kuvataan Käytettävissä oleva varasto -sivun käytettävissä olevan varaston tietojen tarkastaminen. Aiheessa on tietoja tavoista, joilla erilaiset suodatus- ja lajitteluasetukset toimivat yhdessä, sekä yhdistelmien mahdollisista odottamattomista tuloksista.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5747ae985e1791de8ddd93b678c2449a4a1802da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879045"
 ---
 # <a name="inventory-on-hand-list"></a>Käytettävissä olevan varaston luettelo
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan **Käytettävissä oleva varasto** -sivun käytettävissä olevan varaston tietojen tarkastaminen. Aiheessa on tietoja tavoista, joilla erilaiset suodatus- ja lajitteluasetukset toimivat yhdessä, sekä yhdistelmien mahdollisista odottamattomista tuloksista.
+Tässä artikkelissa kuvataan **Käytettävissä oleva varasto** -sivun käytettävissä olevan varaston tietojen tarkastaminen. Aiheessa on tietoja tavoista, joilla erilaiset suodatus- ja lajitteluasetukset toimivat yhdessä, sekä yhdistelmien mahdollisista odottamattomista tuloksista.
 
 ## <a name="query-your-on-hand-inventory"></a>Kyselyn tekeminen käytettävissä olevasta varastosta
 
@@ -35,9 +35,9 @@ Jos haluat tarkistaa varaston käytettävyyden, siirry kohtaan **Varastonhallint
 Seuraavien työkalujen avulla voit etsiä haluamaasi tuotejoukkoa:
 
 - Valitse toimintoruudussa [**Dimensiot**](#dimensions), jos haluat avata valintaikkunan, jossa voit lisätä tai poistaa **Käytettävissä oleva** -ruudukon sarakkeita.
-- Anna [**Suodattimet**-ruudussa](#filters-pane) tiettyjen kenttien arvot, jotta näkyviin tulevat vain näitä arvoja vastaavat tietueet. Huomaa, että tässä määrittämäsi suodattimet koskevat lähdetaulukoita, jotka voidaan koota myöhemmin uudelleen näytettäväksi valittujen dimensioiden mukaan. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
+- Anna [**Suodattimet**-ruudussa](#filters-pane) tiettyjen kenttien arvot, jotta näkyviin tulevat vain näitä arvoja vastaavat tietueet. Huomaa, että tässä määrittämäsi suodattimet koskevat lähdetaulukoita, jotka voidaan koota myöhemmin uudelleen näytettäväksi valittujen dimensioiden mukaan. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän artikkelin [esimerkeissä](#examples).
 - Valitse **Suodattimet**-ruudussa **Käytä**, jos haluat luoda luettelon käytettävissä olevasta varastosta **Käytettävissä oleva** -ruudukossa.
-- Valitse **Käytettävissä oleva** -ruudukossa mikä tahansa sarakeotsikko, jota käytetään lajittelussa tai suodatuksessa arvojen mukaan. Ruudukon yläosassa oleva pikasuodatin sisältää lisäsuodatusmahdollisuuksia. Nämä suodattimet koskevat tuloksia, eivät lähdetaulukoita. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
+- Valitse **Käytettävissä oleva** -ruudukossa mikä tahansa sarakeotsikko, jota käytetään lajittelussa tai suodatuksessa arvojen mukaan. Ruudukon yläosassa oleva pikasuodatin sisältää lisäsuodatusmahdollisuuksia. Nämä suodattimet koskevat tuloksia, eivät lähdetaulukoita. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän artikkelin [esimerkeissä](#examples).
 
 **Käytettävissä oleva** -ruudukko sisältää jokaisen vastaavan nimikkeen varaston tietojen seuraavat sarakkeet.
 
@@ -64,7 +64,7 @@ Seuraavien työkalujen avulla voit etsiä haluamaasi tuotejoukkoa:
 > [!IMPORTANT]
 > **Käytettävissä olevien luettelo** -sivu kootaan yksityiskohtaisesta käytettävissä olevan varaston taulukosta, joka sisältää kaikki käytettävissä olevat dimensiot. Tämän sivun luettelo on kuitenkin yhteenveto. Näin ollen se saattaa yhdistää rivit lähdetaulukosta koostamalla arvot näytettävän dimension mukaan.
 >
-> **Suodattimet**-ruudussa määritettyjä suodattimia käytetään lähdetaulukossa, ei kootussa luettelossa. Tämä toiminta voi joskus aiheuttaa odottamattomia tuloksia. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
+> **Suodattimet**-ruudussa määritettyjä suodattimia käytetään lähdetaulukossa, ei kootussa luettelossa. Tämä toiminta voi joskus aiheuttaa odottamattomia tuloksia. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän artikkelin [esimerkeissä](#examples).
 > 
 > Kuitenkin [ruudukossa olevat suodattimet](#grid-filters) *kohdistetaan* koottuun luetteloon. Nämä suodattimet sisältävät sekä pikasuodattimen ruudukon yläosassa että kunkin sarakeotsikon suodattimen.
 
@@ -75,7 +75,7 @@ Voit muokata **Suodattimet**-ruudun suodatinjoukkoa alla olevien vaiheiden avull
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Näytettävien dimensioiden valitseminen
 
-Dimensioiden avulla saat lisätietoja kustakin käytettävissä olevan varaston luettelon nimikkeestä ja voit lajitella ja suodattaa luettelon. Näytettäväksi valitut dimensiot vaikuttavat myös siihen, miten rivit koostetaan **Käytettävissä olevien luettelo** -sivulla. Tämä kooste vuorostaan voi vaikuttaa siihen, miten lähdetaulukkojen rivit yhdistetään näytettävissä tuloksissa. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
+Dimensioiden avulla saat lisätietoja kustakin käytettävissä olevan varaston luettelon nimikkeestä ja voit lajitella ja suodattaa luettelon. Näytettäväksi valitut dimensiot vaikuttavat myös siihen, miten rivit koostetaan **Käytettävissä olevien luettelo** -sivulla. Tämä kooste vuorostaan voi vaikuttaa siihen, miten lähdetaulukkojen rivit yhdistetään näytettävissä tuloksissa. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän artikkelin [esimerkeissä](#examples).
 
 Jos haluat mukauttaa näkyvissä olevien varastodimensioiden valintaa, noudata näitä ohjeita.
 
@@ -89,7 +89,7 @@ Jos haluat mukauttaa näkyvissä olevien varastodimensioiden valintaa, noudata n
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Varaston käytettävissä olevien luettelon tuloksen suodattaminen
 
-Valitse **Käytettävissä oleva** -ruudukossa mikä tahansa sarakeotsikko, jota käytetään lajittelussa tai suodatuksessa arvojen mukaan. Ruudukon yläosassa oleva pikasuodatin sisältää lisäsuodatusmahdollisuuksia. Nämä suodattimet koskevat tuloksia, eivät lähdetaulukoita. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän ohjeaiheen [esimerkeissä](#examples).
+Valitse **Käytettävissä oleva** -ruudukossa mikä tahansa sarakeotsikko, jota käytetään lajittelussa tai suodatuksessa arvojen mukaan. Ruudukon yläosassa oleva pikasuodatin sisältää lisäsuodatusmahdollisuuksia. Nämä suodattimet koskevat tuloksia, eivät lähdetaulukoita. Lisätietoja siitä, miten tämä toiminta voi vaikuttaa tuloksiin, on myöhemmin tämän artikkelin [esimerkeissä](#examples).
 
 > [!NOTE]
 > Kaikkia sarakkeita ei voi suodattaa ja lajitella. Suurin osa määräsarakkeista ei sisällä lajittelu- ja suodatusohjausobjekteja, koska ne ovat laskettuja kenttiä. **Tilauksessa**-sarake on poikkeus.

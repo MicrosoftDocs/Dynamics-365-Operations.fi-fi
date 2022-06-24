@@ -1,6 +1,6 @@
 ---
 title: Vaarallisten aineiden kyselyt ja raportit
-description: Tässä ohjeaiheessa käsitellään erilaisten vaarallisiin aineisiin liittyvien raporttien käyttämistä. Monet näistä raporteista ovat pakollisia, sillä niiden avulla voidaan osoittaa, että lähetyksen ja säilytyksen aikana on noudatettu vaarallisia aineita koskevia määräyksiä.
+description: Tässä artikkelissa käsitellään erilaisten vaarallisiin aineisiin liittyvien raporttien käyttämistä. Monet näistä raporteista ovat pakollisia, sillä niiden avulla voidaan osoittaa, että lähetyksen ja säilytyksen aikana on noudatettu vaarallisia aineita koskevia määräyksiä.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568540"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846037"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Vaarallisten aineiden kyselyt ja raportit
 
@@ -63,7 +63,7 @@ Voit tarkastella raporttia valitsemalla **Tuotetietojen hallinta \> Kyselyt ja r
 
 Lisätietoja vapautetun tuotteen varastointirajojen määrittämisestä on kohdassa [Vaarallisten tuotteiden varastointirajojen määrittäminen](hazmat-items.md#stock-limits).
 
-Varastointirajoissa käytetty määräys määritetään **Varastonhallinnan parametrit** -sivulla. Valitse **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit** ja määritä sitten määräyksen koodi **Raportit**-välilehden **Vaarallisten aineiden varastointiraja** -kohdassa. Lisätietoja on aiemmin tässä ohjeaiheessa kohdassa [Vaarallisten aineiden raportoinnin määrittäminen](#set-up).
+Varastointirajoissa käytetty määräys määritetään **Varastonhallinnan parametrit** -sivulla. Valitse **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit** ja määritä sitten määräyksen koodi **Raportit**-välilehden **Vaarallisten aineiden varastointiraja** -kohdassa. Lisätietoja on aiemmin tässä artikkelissa kohdassa [Vaarallisten aineiden raportoinnin määrittäminen](#set-up).
 
 ## <a name="verified-gross-mass-report"></a>Vahvistettu bruttopaino -raportti
 

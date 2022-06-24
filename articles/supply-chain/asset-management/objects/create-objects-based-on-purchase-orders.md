@@ -1,6 +1,6 @@
 ---
 title: Luo ostotilauksiin perustuvia resursseja
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit luoda luettelon resursseista, joita voidaan käyttää perustana luotaessa resursseja resurssien hallinnan kunnossapitotöille.
+description: Tässä artikkelissa kerrotaan, kuinka voit luoda luettelon resursseista, joita voidaan käyttää perustana luotaessa resursseja resurssien hallinnan kunnossapitotöille.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893697"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Luo ostotilauksiin perustuvia resursseja
 
@@ -28,7 +28,7 @@ ms.locfileid: "6754104"
 
  
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit luoda luettelon resursseista, joita voidaan käyttää perustana luotaessa resursseja resurssien hallinnan kunnossapitotöille. Resurssien perusteella voit tarkastella luetteloa ostotilausriveistä, jotka on luotu kyseisiin nimikkeisiin. Tämän toiminnon tarkoituksena on helposti luoda resurssi resurssien hallinnassa ostotilauksen perusteella.
+Tässä artikkelissa kerrotaan, kuinka voit luoda luettelon resursseista, joita voidaan käyttää perustana luotaessa resursseja resurssien hallinnan kunnossapitotöille. Resurssien perusteella voit tarkastella luetteloa ostotilausriveistä, jotka on luotu kyseisiin nimikkeisiin. Tämän toiminnon tarkoituksena on helposti luoda resurssi resurssien hallinnassa ostotilauksen perusteella.
 
 Ensin määritetään nimikkeet, joita käytetään resurssien luomiseen ostotilauksesta kohdassa **Resurssinimikkeet**. Kun olet luonut ostotilausrivin, voit luoda resurssit **Odottavat resurssit** -kohdassa. On mahdollista päättää, missä ostotilauksen vaiheessa resurssi on luotava.
 

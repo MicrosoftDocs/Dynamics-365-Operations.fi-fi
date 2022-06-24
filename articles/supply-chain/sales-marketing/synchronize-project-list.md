@@ -1,6 +1,6 @@
 ---
 title: Projektiluettelon synkronointi Supply Chain Managementista Field Serviceen
-description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla projekteja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceeen.
+description: Tässä artikkelissa käsitellään malleja ja taustatehtäviä, joilla projekteja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceeen.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b825e2fce61e96b963ba0d41f8db49ca9ba646f6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 71c0580953f01c2d29e99fa2928a0b4a3937d5c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899350"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Projektiluettelon synkronointi Supply Chain Managementista Field Serviceen
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla projekteja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceeen.
+Tässä artikkelissa käsitellään malleja ja taustatehtäviä, joilla projekteja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceeen.
 
 [![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Asiakashallinnan yleiskatsaus
-description: Tässä ohjeaiheessa on myymäläsovellukseen sisältyvien uusienasiakashallinnan ominaisuuksien yleiskatsaus.
+title: Asiakashallinnan yleiskuvaus
+description: Tässä artikkelissa on myymäläsovellukseen sisältyvien uusienasiakashallinnan ominaisuuksien yleiskatsaus.
 author: bebeale
 ms.date: 02/01/2021
 ms.topic: overview
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b1e1b7a67141ffec01d926b7f917ebd4e1f24741
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3d60004367840208f239d69220b3c181109f83d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885608"
 ---
 # <a name="clienteling-overview"></a>Asiakashallinnan yleiskuvaus
 
@@ -81,7 +81,7 @@ Ota asiakashallintatoiminnot käyttöön ympäristössä seuraavien ohjeiden muk
     - Määritä määritteiden näyttöjärjestys. Näyttöjärjestys määrittää, mitkä määritteet näytetään asiakaskirjan asiakaskortissa. Näyttöjärjestys 1 on korkeampi kuin näyttöjärjestys 2. Tämän vuoksi määrite, jonka näyttöjärjestys on 1, näytetään ennen määritettä, jonka näyttöjärjestys on 2.
 
     > [!NOTE]
-    > Voit määrittää Customer Insightsin käytettäväksi samalta sivulta. Azuren sovellustunnus ja salauskoodi on kuitenkin luotava todennusta varten. (Lisätietoja on vaatimuksista on jäljempänä tässä ohjeaiheessa kohdassa [Customer Insightsin ja Commercen integroinnin ottaminen käyttöön](#turn-on-the-integration-of-customer-insights-with-commerce).) Jos Customer Insights on otettu käyttöön ja valitset asiakaskortissa näytettävät mittarit, kyseiset mittarit näytetään ensin. Seuraavaksi näytetään asiakaskirjan määriteryhmät näyttöjärjestyksen mukaisesti. Jos valitset esimerkiksi kaksi mittaria Customer Insightsista, nämä kaksi mittaria ja yksi asiakaskirjan määrite näytetään asiakaskortissa. (Näytettävä asiakaskirjan määrite on määrite, jolla on korkein näyttöjärjestys.)
+    > Voit määrittää Customer Insightsin käytettäväksi samalta sivulta. Azuren sovellustunnus ja salauskoodi on kuitenkin luotava todennusta varten. (Lisätietoja on vaatimuksista on jäljempänä tässä artikkelissa kohdassa [Customer Insightsin ja Commercen integroinnin ottaminen käyttöön](#turn-on-the-integration-of-customer-insights-with-commerce).) Jos Customer Insights on otettu käyttöön ja valitset asiakaskortissa näytettävät mittarit, kyseiset mittarit näytetään ensin. Seuraavaksi näytetään asiakaskirjan määriteryhmät näyttöjärjestyksen mukaisesti. Jos valitset esimerkiksi kaksi mittaria Customer Insightsista, nämä kaksi mittaria ja yksi asiakaskirjan määrite näytetään asiakaskortissa. (Näytettävä asiakaskirjan määrite on määrite, jolla on korkein näyttöjärjestys.)
 
 6. Valitse **Commercen parametrit** -sivun **Asiakashallinta**-välilehden **Asiakaskirjan määriteryhmä** -kentässä juuri luotu määriteryhmä.
 

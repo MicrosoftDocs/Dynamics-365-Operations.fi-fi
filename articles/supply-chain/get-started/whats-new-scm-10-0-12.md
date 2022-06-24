@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.12. (elokuu 2020)
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.12 uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Dynamics 365 Supply Chain Managementin 10.0.12 uusia tai muuttuneita toimintoja.
 author: kamaybac
 ms.date: 05/29/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 89959095eb64c66e92c9d93d0a3f4caabe7d14bf7121683a7d35d3719a3e36ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44b56a59c3b6bb123151988c403382d7c57efd29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845022"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.12. (elokuu 2020)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin version 10.0.12 uudet tai muuttuneet ominaisuudet. Tämän version koontinumero on 10.0.507. Se on käytettävissä seuraavasti:
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin 10.0.12 uusia tai muuttuneita toimintoja. Tämän version koontinumero on 10.0.507. Se on käytettävissä seuraavasti:
 
 - **Ennakkoesitys:** Toukokuu 2020
 - **Yleinen saatavuus (oma päivitys):** Heinäkuu 2020
@@ -47,7 +47,7 @@ Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lis
 
 - [Rekisterikilven vastaanoton parannukset varastosovelluksessa (jatkuu)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Lisätietoja on kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen avulla](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Fyysisen varastoinnin mobiilisovelluksen laajamittainen käyttöönotto](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Lisätietoja on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md).
+- [Joukkokäyttöönotto kohteelle Warehouse mobile app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Lisätietoja on kohdassa [Varastonhallinnan mobiilisovelluksen asentaminen ja yhdistäminen](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Varastonhallinnan käytettävissä olevan varaston merkintöjen siivoustyön enimmäissuoritusaika](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Lisätietoja on kohdassa [Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö](../warehousing/onhand-cleanup.md).
 
@@ -55,9 +55,9 @@ Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lis
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.12 sisältää Platform updateja. Lisätietoja on kohdassa [Finance and Operations -sovellusten (elokuu 2020) käyttöympäristön päivitysversio 10.0.12](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.12 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (elokuu 2020) käyttöympäristön päivitysversio 10.0.12.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -71,12 +71,12 @@ Tutustu kohtaan [Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma](/dynami
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
-[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
+[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
 
-Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
+Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 

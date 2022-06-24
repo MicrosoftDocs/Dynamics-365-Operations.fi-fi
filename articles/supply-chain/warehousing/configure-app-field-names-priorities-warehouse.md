@@ -1,6 +1,6 @@
 ---
-title: Varastonhallinnan mobiilisovelluksen kenttien konfigurointi
-description: Tässä ohjeaiheessa kerrotaan, miten varastonhallinnan mobiilisovelluksessa näytettävien kenttien nimet ja prioriteetit määritetään.
+title: Warehouse Management ‑mobiilisovelluksen kenttien määrittäminen
+description: Tässä artikkelissa kerrotaan, miten varastonhallinnan mobiilisovelluksessa näytettävien kenttien nimet ja prioriteetit määritetään.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 1ce274c997119c7fdba193fa9559832e63febddc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893233"
 ---
-# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Varastonhallinnan mobiilisovelluksen kenttien konfigurointi
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen kenttien määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten varastonhallinnan mobiilisovelluksessa näytettävien kenttien nimet ja prioriteetit määritetään.
+Tässä artikkelissa kerrotaan, miten varastonhallinnan mobiilisovelluksessa näytettävien kenttien nimet ja prioriteetit määritetään.
 
 > [!NOTE]
-> Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Varastonhallinnan mobiilisovellus on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä. Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää. Tässä ohjeaiheessa kerrotaan, miten nämä varastonhallinnan mobiilisovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään varastointisovelluksessa.
+> Tämä artikkeli koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Varastonhallinnan mobiilisovellus on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä. Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää. Tässä artikkelissa kerrotaan, miten nämä varastonhallinnan mobiilisovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään varastointisovelluksessa.
 
 ## <a name="configure-warehouse-app-field-names"></a>Warehousing-sovelluksen kenttien nimien määrittäminen
 

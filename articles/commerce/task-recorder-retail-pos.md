@@ -1,6 +1,6 @@
 ---
 title: Retail Modern POS:n (MPOS) ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje
-description: Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS:ssa ja pilvimyyntipisteessä.
+description: Tässä artikkelissa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS:ssa ja pilvimyyntipisteessä.
 author: mugunthanm
 ms.date: 06/19/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730752"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847597"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS:ssa ja pilvimyyntipisteessä.
+Tässä artikkelissa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS:ssa ja pilvimyyntipisteessä.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -139,7 +139,7 @@ Voit näyttää omat mukautetut tehtävätallenteet Retail Modern POS:n ja pilvi
 
 [![Ohje-painike.](./media/help.jpg)](./media/help.jpg)
 
-Kun valitset hakutuloksista tehtäväoppaan, voit tarkastella vaiheita ohjeaiheena tai viedä ne Word-asiakirjaan.
+Kun valitset hakutuloksista tehtäväoppaan, voit tarkastella vaiheita ohjeartikkelina tai viedä ne Word-asiakirjaan.
 
 > [!NOTE]
 > Retail Modern POS:n ja pilvimyyntipisteen ohje ei anna tehtäväohjeita sen mukaan, mikä lomake tai tehtävä on käsiteltävänä. Kirjoita hakukenttään prosessin nimi ja valitse sitten on **Haku**.

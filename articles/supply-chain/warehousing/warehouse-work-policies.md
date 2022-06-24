@@ -1,6 +1,6 @@
 ---
 title: Työkäytännöt
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää työkäytännöt.
+description: Tässä artikkelissa kerrotaan, kuinka voit määrittää työkäytännöt.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855845"
 ---
 # <a name="work-policies"></a>Työkäytännöt
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten järjestelmä ja varastonhallinnan mobiilisovellus määritetään niin, että ne tukevat työkäytäntöjä. Tämän toiminnon avulla voit rekisteröidä varaston nopeasti ilman hyllytystyön luomista silloin, kun vastaanotat osto- ja siirtotilauksia ja kun viimeistelet valmistusprosesseja. Tämä ohjeaihe sisältää yleistietoja. Saat yksityiskohtaisia tietoja rekisterikilven vastaanotosta kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
+Tässä artikkelissa kerrotaan, miten järjestelmä ja varastonhallinnan mobiilisovellus määritetään niin, että ne tukevat työkäytäntöjä. Tämän toiminnon avulla voit rekisteröidä varaston nopeasti ilman hyllytystyön luomista silloin, kun vastaanotat osto- ja siirtotilauksia ja kun viimeistelet valmistusprosesseja. Tässä artikkelissa on yleistietoja. Saat yksityiskohtaisia tietoja rekisterikilven vastaanotosta kohdassa [Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Työkäytäntö määrittää, luodaanko varastotyö valmistetun nimikkeen valmiiksi raportoinnin yhteydessä vai silloin, kun tavarat vastaanotetaan käyttämällä varastonhallinnan mobiilisovellusta. Voit määrittää kunkin työkäytännön määrittämällä sen ehdot: työtilaustyypit ja -prosessit, varaston sijainnin ja (vaihtoehtoisesti) tuotteet. Esimerkiksi ostotilaus tuotteelle *A0001* on vastaanotettava sijainnissa *RECV* varastossa *24*. Myöhemmin tuotetta kulutetaan toisessa prosessissa sijainnissa *RECV*. Tässä tapauksessa määrität työkäytännön, joka estää hyllytystyön luomisen, kun työntekijä raportoi tuotteen *A0001* vastaanotetuksi sijainnissa *RECV*.
 
@@ -35,7 +35,7 @@ Työkäytäntö määrittää, luodaanko varastotyö valmistetun nimikkeen valmi
 
 ## <a name="activate-the-features-in-your-system"></a>Järjestelmän ominaisuuksien aktivoiminen
 
-Voit ottaa tämän ohjeaiheen kaikki toiminnot käyttöön järjestelmässä ottamalla seuraavat kaksi ominaisuutta käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Voit ottaa tämän artikkelin kaikki toiminnot käyttöön järjestelmässä ottamalla seuraavat kaksi ominaisuutta käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Rekisterikilven vastaanoton parannukset
 - Saapuvan työn työkäytäntöjen parannukset

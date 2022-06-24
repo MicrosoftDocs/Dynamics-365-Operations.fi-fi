@@ -1,6 +1,6 @@
 ---
 title: Vapauta varastoon
-description: Tämä ohjeaihe sisältää tietoja varastoon vapauttamisen prosessista. Siinä kuvataan yksiköt, jotka luodaan, kun vapautat tilauksen varastoon sekä valinnat, joita voi käyttää prosessin käynnistämiseen.
+description: Tämä artikkeli sisältää tietoja varastoon vapauttamisen prosessista. Siinä kuvataan yksiköt, jotka luodaan, kun vapautat tilauksen varastoon sekä valinnat, joita voi käyttää prosessin käynnistämiseen.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893175"
 ---
 # <a name="release-to-warehouse"></a>Vapauta varastoon
 
 [!include [banner](../../includes/banner.md)]
 
-Tämä ohjeaihe sisältää tietoja varastoon vapauttamisen prosessista. Siinä kuvataan yksiköt, jotka luodaan, kun vapautat tilauksen varastoon sekä valinnat, joita voi käyttää prosessin käynnistämiseen.
+Tämä artikkeli sisältää tietoja varastoon vapauttamisen prosessista. Siinä kuvataan yksiköt, jotka luodaan, kun vapautat tilauksen varastoon sekä valinnat, joita voi käyttää prosessin käynnistämiseen.
 
 ## <a name="release-to-warehouse-overview"></a>Varastoon vapauttamisen yhteenveto
 
-Varastoon vapauttaminen on prosessi, jossa varastotuotteet valmistellaan lähetyskäsittelyä varten. Kun vapautat tilauksen varastoon, järjestelmä luo kuormarivit ja lähetykset. Jos automaattinen aallonkäsittely on määritetty, myös kuormat ja vaadittu työ luodaan. Asiaan liittyvien yksikköjen määritys riippuu järjestelmän asetuksista. Tässä ohjeaiheen osassa käsitellään varastoon vapauttamisen aikana luotuja yksikköjä sekä ne määrittäviä järjestelmän asetuksia.
+Varastoon vapauttaminen on prosessi, jossa varastotuotteet valmistellaan lähetyskäsittelyä varten. Kun vapautat tilauksen varastoon, järjestelmä luo kuormarivit ja lähetykset. Jos automaattinen aallonkäsittely on määritetty, myös kuormat ja vaadittu työ luodaan. Asiaan liittyvien yksikköjen määritys riippuu järjestelmän asetuksista. Tässä artikkelin osassa käsitellään varastoon vapauttamisen aikana luotuja yksikköjä sekä ne määrittäviä järjestelmän asetuksia.
 
 *Lähetys* on myynti- tai siirtotilausrivien ryhmä samalle asiakkaalle tai samalle toimitusosoitteelle.
 
@@ -67,7 +67,7 @@ Kun tilaus lopulta vapautetaan varastoon, pisimmälle automatisoitu työnkulku t
 
 Aaltomalleista, työmalleista ja sijaintidirektiiviasetuksista riippuen jotkut tämän työnkulun vaiheet voivat olla manuaalisia. Kokonaistyönkulku pysyy kuitenkin samana.
 
-Voit vapauttaa tilauksen varastoon usealla eri tavoilla. Voit suorittaa työvaiheen manuaalisesti tai voit määrittää erätyön. Tämän ohjeaiheen jäljellä olevissa osissa tarkastellaan yksityiskohtaisesti eri tapoja, joilla varastoon vapauttaminen voidaan suorittaa.
+Voit vapauttaa tilauksen varastoon usealla eri tavoilla. Voit suorittaa työvaiheen manuaalisesti tai voit määrittää erätyön. Tämän artikkelin jäljellä olevissa osissa tarkastellaan yksityiskohtaisesti eri tapoja, joilla varastoon vapauttaminen voidaan suorittaa.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Manuaalinen varastoon vapauttaminen Myyntitilaukset- ja Siirtotilaukset-sivuilta
 

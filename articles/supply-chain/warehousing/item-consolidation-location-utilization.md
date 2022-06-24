@@ -1,6 +1,6 @@
 ---
 title: Nimikkeen konsolidointi – sijainnin käyttöaste
-description: Tässä aiheessa käsitellään toimintoja, joiden avulla varastopäälliköiden on helppo tarkastella ja suodattaa varaston sijaintien tilavuusperusteista käyttöastetta. Päälliköt voivat valita sijainteja ja luoda varaston siirtotyön suoraan Nimikkeen konsolidointi -sivulla nimikkeiden konsolidointi varten, mikä parantaa varastotilan käyttöä.
+description: Tässä artikkelissa käsitellään toimintoja, joiden avulla varastopäälliköiden on helppo tarkastella ja suodattaa varaston sijaintien tilavuusperusteista käyttöastetta. Päälliköt voivat valita sijainteja ja luoda varaston siirtotyön suoraan Nimikkeen konsolidointi -sivulla nimikkeiden konsolidointi varten, mikä parantaa varastotilan käyttöä.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578605"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849181"
 ---
 # <a name="item-consolidation---location-utilization"></a>Nimikkeen konsolidointi – sijainnin käyttöaste
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään toimintoja, joiden avulla varastopäälliköiden on helppo tarkastella ja suodattaa varaston sijaintien tilavuusperusteista käyttöastetta. Päälliköt voivat valita sijainteja ja luoda varaston siirtotyön suoraan **Nimikkeen konsolidointi** -sivulla nimikkeiden konsolidointi varten, mikä parantaa varastotilan käyttöä.
+Tässä artikkelissa käsitellään toimintoja, joiden avulla varastopäälliköiden on helppo tarkastella ja suodattaa varaston sijaintien tilavuusperusteista käyttöastetta. Päälliköt voivat valita sijainteja ja luoda varaston siirtotyön suoraan **Nimikkeen konsolidointi** -sivulla nimikkeiden konsolidointi varten, mikä parantaa varastotilan käyttöä.
 
 ## <a name="turn-on-the-features"></a>Toimintojen ottaminen käyttöön
 
-Ennen tässä aiheessa käsiteltyjen toimintojen käyttöä ne on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat tarkistaa näiden toimintojen tilan ja ottaa ne tarvittaessa käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa. Ota seuraavat toiminnot käyttöön ilmoitetussa järjestyksessä. (Molemmat toiminnot ovat **Varastonhallinta**-moduulissa.)
+Ennen tässä artikkelissa käsiteltyjen toimintojen käyttöä ne on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat tarkistaa näiden toimintojen tilan ja ottaa ne tarvittaessa käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa. Ota seuraavat toiminnot käyttöön ilmoitetussa järjestyksessä. (Molemmat toiminnot ovat **Varastonhallinta**-moduulissa.)
 
 1. Varastosijainnin tila
 2. Nimikkeen konsolidointisijainnin käyttöaste
@@ -51,7 +51,7 @@ Näiden kenttien avulla varastopäälliköt saavat paremman yleiskuvan varaston 
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Nimikkeen konsolidointi ja sijainnin käyttöasteen määrittäminen
 
-Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimikkeen konsolidointia ja sijainnin käyttöastetta. Menettelyssä käytetään vakioesittelytietojen näytearvoja. Jos aiot käyttää myöhemmin tässä ohjeaiheessa käsiteltyä esimerkkiskenaariota, valitse **USMF**-yritys (joka sisältää vakioesittelytiedot) ja luo jokainen tässä osassa kuvattu tietue. Jos et aio käyttää esimerkkiskenaariota, tässä annettuja arvoja voi pitää esimerkkeinä asetustyypeistä, jotka on tehtävä toimintojen käyttöä varten.
+Tässä osassa käsitellään järjestelmän valmistelemista käyttämään nimikkeen konsolidointia ja sijainnin käyttöastetta. Menettelyssä käytetään vakioesittelytietojen näytearvoja. Jos aiot käyttää myöhemmin tässä artikkelissa käsiteltyä esimerkkiskenaariota, valitse **USMF**-yritys (joka sisältää vakioesittelytiedot) ja luo jokainen tässä osassa kuvattu tietue. Jos et aio käyttää esimerkkiskenaariota, tässä annettuja arvoja voi pitää esimerkkeinä asetustyypeistä, jotka on tehtävä toimintojen käyttöä varten.
 
 ### <a name="released-product"></a>Vapautettu tuote
 

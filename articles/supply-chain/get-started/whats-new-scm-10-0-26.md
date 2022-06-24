@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.26. (toukokuu 2022)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.26 uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin 10.0.26 uusia tai muuttuneita toimintoja.
 author: kamaybac
 ms.date: 03/01/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 0724045824f39f316c8b3dbb06a48eb6ca6dbef3
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850754"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.26. (toukokuu 2022)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.26 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1192. Se on käytettävissä seuraavasti:
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.26 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.1192. Se on käytettävissä seuraavasti:
 
 - **Julkaisun esikatselu:** Maaliskuu 2022
 - **Julkaisun yleinen saatavuus (itsepäivitys):** Huhtikuu 2022
@@ -29,7 +29,7 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
-Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän aiheen päivitys saattaa sisältää ominaisuuksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän artikkelin päivitys saattaa sisältää ominaisuuksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisin jälkeen.
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
@@ -56,11 +56,11 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 
-Seuraavat ohjeaiheet on lisätty äskettäin tai niitä on päivitetty merkittävästi. Nämä ohjeaiheet eivät välttämättä liity tällä julkaisulla lisättyihin, edellisissä osissa lueteltuihin uusiin ominaisuuksiin. Niiden avulla saatat kuitenkin saada enemmän irti olemassa olevista ominaisuuksista.
+Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merkittävästi. Nämä artikkelit eivät välttämättä liity tällä julkaisulla lisättyihin, edellisissä osissa lueteltuihin uusiin ominaisuuksiin. Niiden avulla saatat kuitenkin saada enemmän irti olemassa olevista ominaisuuksista.
 
-| Ominaisuusalue | Uudet tai päivitetyt ohjeaiheet |
+| Ominaisuusalue | Uudet tai päivitetyt artikkelit |
 |---|---|
-| Kustannushintojen hallinta | Päivitettyjä esimerkkejä ja kaavioita on lisätty seuraaviin ohjeaiheisiin:<ul><li>[FIFO-merkintä ja fyysinen arvo](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO-merkintä ja fyysinen arvo](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO-päivämäärä, fyysinen arvo ja merkintä](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Kustannushinnan käyttökeskiarvo](../cost-management/running-average-cost-price.md)</li><li>[Painotettu keskiarvo sekä fyysinen arvo ja merkintä](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
+| Kustannushintojen hallinta | Päivitettyjä esimerkkejä ja kaavioita on lisätty seuraaviin artikkeleihin:<ul><li>[FIFO-merkintä ja fyysinen arvo](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO-merkintä ja fyysinen arvo](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO-päivämäärä, fyysinen arvo ja merkintä](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Kustannushinnan käyttökeskiarvo](../cost-management/running-average-cost-price.md)</li><li>[Painotettu keskiarvo sekä fyysinen arvo ja merkintä](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
 | Hankinta | [Ostotilausrivin tietoristiriidat](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>Lisäresurssit
@@ -81,12 +81,12 @@ Katso [Dynamics 365:n ja toimialan pilvipalvelu: 2022 julkaisuaalto 1 -suunnitel
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
-[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
+[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
 
-Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
+Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 

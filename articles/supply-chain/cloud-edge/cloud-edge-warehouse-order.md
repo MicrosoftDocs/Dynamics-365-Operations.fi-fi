@@ -1,6 +1,6 @@
 ---
 title: Varastotilausten pilvi- ja reunapalvelujen scale unitit
-description: Tässä aiheessa käsitellään varastotilausominaisuutta, jota käytetään varaston scale unitin työkuorman osana.
+description: Tässä artikkelissa käsitellään varastotilausominaisuutta, jota käytetään varaston scale unitin työkuorman osana.
 author: perlynne
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: db254216e6c34b81f83c87a8fda454d0aeb1cece
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893523"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Varastotilausten pilvi- ja reunapalvelujen scale unitit
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Kaikkia liiketoimintatoimintoja ei tueta kokonaisuudessaan julkisessa esiversiossa, kun scale unitin kuormituksia käytetään. Jos scale unitit ovat käytössä, on varmistettava, että vain niitä prosesseja käytetään, joiden tuesta nimenomaisesti ilmoitetaan tässä aiheessa.
+> Kaikkia liiketoimintatoimintoja ei tueta kokonaisuudessaan julkisessa esiversiossa, kun scale unitin kuormituksia käytetään. Jos scale unitit ovat käytössä, on varmistettava, että vain niitä prosesseja käytetään, joiden tuesta nimenomaisesti ilmoitetaan tässä artikkelissa.
 
 ## <a name="what-are-warehouse-orders"></a>Mitä varastotilaukset ovat?
 

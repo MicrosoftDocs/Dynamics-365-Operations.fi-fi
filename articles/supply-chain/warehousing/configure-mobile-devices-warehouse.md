@@ -1,6 +1,6 @@
 ---
 title: Varastotyön mobiililaitteiden määrittäminen
-description: Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
+description: Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905570"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
+Tässä artikkelissa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
 
 > [!NOTE]
-> Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Valikkovaihtoehdot, jotka näkyvät valikoissa varaston mobiililaitteessa, määritetään **Mobiililaitteen valikkovaihtoehdot** -sivulla. Koska samat valikkovaihtoehdot voivat olla eri valikoissa, on helppo määrittää valikkorakenteet niin, että vain tietyntyyppiset työt näkyvät tietyille käyttäjille. Voit määrittää valikkovaihtoehdot suorittamaan seuraavat tehtävät:
+> Tämä artikkeli koskee varastonhallintamoduulin ominaisuuksia. Se ei koske inventaariohallintamoduulin ominaisuuksia. Valikkovaihtoehdot, jotka näkyvät valikoissa varaston mobiililaitteessa, määritetään **Mobiililaitteen valikkovaihtoehdot** -sivulla. Koska samat valikkovaihtoehdot voivat olla eri valikoissa, on helppo määrittää valikkorakenteet niin, että vain tietyntyyppiset työt näkyvät tietyille käyttäjille. Voit määrittää valikkovaihtoehdot suorittamaan seuraavat tehtävät:
 
 - Käsittele kysely tai suorita tehtävä, kuten tarran tulostus, rekisterikilven numeroiden luonti, tuotantotilauksen aloitus tai toimipaikan nimikkeiden tietojen pikahaku.
 - Luo työ, joka suoritetaan toisen prosessin kautta. Esimerkiksi nimikkeen vastaanotto ostotilaukselle saattaa luoda hyllytystyön toiselle työntekijälle.
@@ -38,7 +38,7 @@ Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteel
 Jos haluat luoda kyselyn tai toiminnon valikkovaihtoehdon, määritä asetuksen **Tila** arvoksi **Epäsuora**. Luettelo **Toimintokoodi**-asetuksista tulee saataville siten, että voit valita kyselyn tai toiminnon tyypin, jota varten valikkokohde on. Voit luoda valikkovaihtoehdon fyysisen varastoinnin työn luomiseen, määritä **Tila**-kentän arvoksi **Työ**. Näkyviin tulee luettelo **Työn luontiprosessi** -vaihtoehdoista. Jos haluat luoda valikkovaihtoehdon nykyisen varastotyön käsittelyyn, määritä **Tila** kentän arvoksi **Työ** ja määritä **Käytä nykyistä työtä** -asetukseksi **Kyllä**. 
 
 > [!NOTE]
-> Valikkovaihtoehdolle on käytettävissä lisäkenttiä sille valitun tilan mukaan ja sen mukaan, käytetäänkö valikkovaihtoehtoa suorittamaan olemassa oleva työ. Lisätietoja lisäkenttien valinnasta on jäljempänä tässä ohjeaiheessa kohdassa Lisävalikkovaihtoehdot.
+> Valikkovaihtoehdolle on käytettävissä lisäkenttiä sille valitun tilan mukaan ja sen mukaan, käytetäänkö valikkovaihtoehtoa suorittamaan olemassa oleva työ. Lisätietoja lisäkenttien valinnasta on osiossa “Lisävalikkovaihtoehdot” myöhemmin tässä aiheessa.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Toimintojen ja kyselyjen valikkovaihtoehtojen määrittäminen
 

@@ -1,6 +1,6 @@
 ---
 title: Työn luonnin aikatauluttaminen aallon aikana
-description: Tässä aiheessa käsitellään työn luonnin aikatauluttamisen aaltokäsittelymenetelmän määrittämistä ja käyttämistä.
+description: Tässä artikkelissa käsitellään työn luonnin aikatauluttamisen aaltokäsittelymenetelmän määrittämistä ja käyttämistä.
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8b4505d66c37134bc8f672b38d195f4f677df9bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691128"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852067"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Työn luonnin aikatauluttaminen aallon aikana
 
@@ -30,7 +30,7 @@ Kun toiminto on otettu käyttöön, suunniteltu työ luodaan automaattisesti, ja
 
 ## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>Ajoitetun työnluontiominaisuuden käyttöön ottaminen käyttöön ominaisuuksien hallinnassa
 
-Jos haluat käyttää tässä ohjeaiheessa kuvattuja ominaisuuksia, niiden on oltava käytössä järjestelmässäsi. Ota [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa käyttöön seuraavat ominaisuudet seuraavassa järjestyksessä:
+Jos haluat käyttää tässä artikkelissa kuvattuja ominaisuuksia, niiden on oltava käytössä järjestelmässäsi. Ota [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa käyttöön seuraavat ominaisuudet seuraavassa järjestyksessä:
 
 1. **Organisaation laajuinen töiden nesto** – Tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
 1. **Työn luomisen ajoitus** – Tarvitaan ajoitetun työn luomisen sekä manuaaliseen että automaattiseen määritykseen.

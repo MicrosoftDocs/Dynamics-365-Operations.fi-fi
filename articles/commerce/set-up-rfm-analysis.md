@@ -1,6 +1,6 @@
 ---
 title: Määritä Recency, Frequency, and Monetary (RFM) -analyysi
-description: Tässä ohjeaiheessa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.
+description: Tässä artikkelissa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 153759ac6b70235b79c080e934819536c2861371
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765215"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850168"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Määritä Recency, Frequency, and Monetary (RFM) -analyysi
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.
+Tässä artikkelissa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.
 
 Recency, Frequency, and Monetary (RFM)-analyysi on työkalu, jonka avulla organisaatio voi arvioida asiakasostojen muodostamat tiedot. Kun olet määrittänyt RFM-analyysin, asiakkaille määritetään laskettu RFM-pistemäärä heidän tehdessään ostoksia. RFM-pisteytys voi olla kolmenumeroinen luokitus tai yhteenlaskettu numero, riippuen siitä, kuinka organisaatio on määrittänyt RFM-analyysin. Luokitus toimii seuraavasti, jos organisaatio käyttää pisteytykseen kolminumeroista luokitusta:
 

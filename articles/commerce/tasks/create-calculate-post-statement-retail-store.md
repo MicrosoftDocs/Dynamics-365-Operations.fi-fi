@@ -1,6 +1,6 @@
 ---
-title: Laskelmien luonti, laskenta ja kirjaaminen vähittäismyymälälle
-description: Tässä aiheessa kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet.
+title: Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen
+description: Tässä artikkelissa kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet.
 author: jashanno
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a3d82daed16c1b37d10653f04c1dc473cd5c5abc3a6443972da6e8ecf9820f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 740857e6a902e21588855eef5e36cac68e560898
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873275"
 ---
-# <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Laskelmien luonti, laskenta ja kirjaaminen vähittäismyymälälle
+# <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet. Samalle tehtävälle voidaan määrittää myös erätöitä. Erätöiden määrittämisen ja suorittamisen vaiheet löytyvät myös muista aiheista. Tämän menettelyn suorittaminen edellyttää myyntipisteellä tehtyjä ja Dynamics 365 Commerceiin siirrettyjä tapahtumia. Tämä tallenne käyttää esittelytietojen USRT-yritystä.
+Tässä artikkelissa kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet. Samalle tehtävälle voidaan määrittää myös erätöitä. Erätöiden määrittämisen ja suorittamisen vaiheet löytyvät myös muista artikkeleista. Tämän menettelyn suorittaminen edellyttää myyntipisteellä tehtyjä ja Dynamics 365 Commerceiin siirrettyjä tapahtumia. Tämä tallenne käyttää esittelytietojen USRT-yritystä.
 
 1. Valitse kotisivulla **Myymälän myyntitiedot**.
 2. Valitse **Uusi laskelma**.

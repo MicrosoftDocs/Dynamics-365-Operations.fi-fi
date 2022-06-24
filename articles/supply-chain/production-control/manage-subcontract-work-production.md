@@ -1,6 +1,6 @@
 ---
 title: Tuotannon alihankintatyön hallinta
-description: Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Dynamics 365 Supply Chain Managementissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
+description: Tässä artikkelissa kerrotaan, miten alihankkijatoimintoja hallitaan Dynamics 365 Supply Chain Managementissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e80efc751ccf9243163d23ed48fd17923326f89
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a0021d409f9f4a9b36effbd80a99766812572d5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579376"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863792"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Tuotannon alihankintatyön hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Dynamics 365 Supply Chain Managementissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
+Tässä artikkelissa kerrotaan, miten alihankkijatoimintoja hallitaan Dynamics 365 Supply Chain Managementissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 
 [Tuotantoprosessin](production-process-overview.md) töitä voivat tehdä resurssit, joita omistaa tai hallinnoi toimittajat. Yleensä toimittajan resursseja käytetään tasaamaan jaksoittaista suurempaa kysyntää, joka ylittää yhtiön omien resurssien kapasiteetin. Toimittaja voi myös pystyä tarjoamaan erityisiä [resurssin ominaisuuksia](resource-capabilities.md) tai resursseja alempaan hintaan.  
 
@@ -63,7 +63,7 @@ Kun tätä määritystä käytetään, luodaan ostotilaus liittyvälle palvelutu
 Tuotantotilauksella voi olla monta toimintoa, ja kukin toiminto voidaan kohdistaa eri toimittajalle. Tämän vuoksi päästä-päähän-tuotantotilaus voi aiheuttaa useita ostotilauksia.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Tuotantovirran tehtävien alihankinta
-[Lean-valmistuksen](lean-manufacturing-overview.md) lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy [tuotantovirran](tasks/create-production-flow-version.md) tehtävään (tehtäväoppaan aihe). Siksi tämäntyyppinen alihankinta on niin sanottu [toimintoperusteisen alihankinta.](activity-based-subcontracting.md) Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu valmiiden tuotteiden tuoterakenteeseen (BOM). Lean-valmistusta käytettäessä kaikki tehtävät määritellään kanbaneina, jotka voidaan liittää yhteen tai useampaan tuotantovirran tehtävään. Tähän mennessä selitys kuulostaa aivan samalta kuin tuotantotilauksissa. Mutta siinä missä tuotantotilausten on aina päätyttävä valmiiseen tuotteeseen, voit luoda kanbaneita tukemaan puolivalmiita tuotteita. Sinun ei tarvitse ottaa käyttöön uutta tuotetta ja tuoterakenteen tasoa.  
+[Lean-valmistuksen](lean-manufacturing-overview.md) lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy [tuotantovirran](tasks/create-production-flow-version.md) tehtävään (tehtäväoppaan artikkeli). Siksi tämäntyyppinen alihankinta on niin sanottu [toimintoperusteisen alihankinta.](activity-based-subcontracting.md) Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu valmiiden tuotteiden tuoterakenteeseen (BOM). Lean-valmistusta käytettäessä kaikki tehtävät määritellään kanbaneina, jotka voidaan liittää yhteen tai useampaan tuotantovirran tehtävään. Tähän mennessä selitys kuulostaa aivan samalta kuin tuotantotilauksissa. Mutta siinä missä tuotantotilausten on aina päätyttävä valmiiseen tuotteeseen, voit luoda kanbaneita tukemaan puolivalmiita tuotteita. Sinun ei tarvitse ottaa käyttöön uutta tuotetta ja tuoterakenteen tasoa.  
 
 Koska kanban-säännöt voivat olla erittäin dynaamisia, voit mallintaa saman tuotteen toimittamisen variantteja tuotantovirrassa. Kun käytät lean-alihankintaa, materiaalivirta ja taloushallinnon työnkulku erotetaan tiukasti toisistaan. Kaikki materiaalivirta esitetään kanban-toimintoina. Palvelutuotteiden ja näiden palvelujen vastaanottokirjauksien ostotilaukset voidaan automatisoida tuotantovirran kanban-töiden tilan perusteella. Kanban-työt voidaan aloittaa ja suorittaa jopa ennen ostotilausten luomista. Alihankinta-asiakirjat (ostotilaus ja palvelun oston vastaanotto) voidaan koostaa ajanjakson ja palvelun mukaan. Tämän vuoksi ostoasiakirjojen ja niiden rivien määrä voidaan säilyttää pienenä jopa hyvin toistuvissa toiminnoissa, jossa toimittajat tarjoavat alihankintapalveluja yhden vaiheen työnkulun avulla.
 

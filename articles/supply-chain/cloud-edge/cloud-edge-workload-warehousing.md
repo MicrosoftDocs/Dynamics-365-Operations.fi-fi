@@ -1,6 +1,6 @@
 ---
-title: Varastonhallinnan kuormitusten pilvi- ja reunapalvelujen scale unitit
-description: Tässä aiheessa on tietoja toiminnossa, jonka avulla scale unitit voivat suorittaa valittuja prosesseja varastonhallinnan kuormituksesta.
+title: Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
+description: Tässä artikkelissa on tietoja toiminnossa, jonka avulla scale unitit voivat suorittaa valittuja prosesseja varastonhallinnan kuormituksesta.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384481"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893494"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Varaston hallinnan kuormitukset pilven ja reunan asteikon yksiköitä varten
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Kaikkia varastonhallinnan liiketoimintatoimintoja ei tueta täysin varastoissa, joissa on käytössä scale unitin työkuorma. Varmista, että käytät vain niitä prosesseja, joiden tuesta nimenomaisesti ilmoitetaan tässä aiheessa.
+> Kaikkia varastonhallinnan liiketoimintatoimintoja ei tueta täysin varastoissa, joissa on käytössä scale unitin työkuorma. Varmista, että käytät vain niitä prosesseja, joiden tuesta nimenomaisesti ilmoitetaan tässä artikkelissa.
 
 ## <a name="warehouse-execution-on-scale-units"></a>Scale unitien varastonohjaus
 
@@ -184,7 +184,7 @@ Scale uniteissa ei tueta tällä hetkellä minkään muun tyyppistä lähdeasiak
 >
 > Warehouse Management -mobiilisovelluksen määrittäminen pilvipalvelun tai reunan skaalausyksikölle edellyttää joitakin lisävaiheita. Lisätietoja on kohdassa [Määritä Warehouse Management -mobiilisovellus pilvi- ja reunapalvelujen Scale Uniteille](cloud-edge-workload-setup-warehouse-app.md).
 >
-> Jos työkuorma suoritetaan scale unitissa, prosesseja, joita ei tueta, ei voi suorittaa kyseisen varaston osalta keskuksessa. Tässä aiheessa on jäljempänä taulukoita, joissa on luettelo tuetuista ominaisuuksista.
+> Jos työkuorma suoritetaan scale unitissa, prosesseja, joita ei tueta, ei voi suorittaa kyseisen varaston osalta keskuksessa. Tässä artikkelissa on jäljempänä taulukoita, joissa on luettelo tuetuista ominaisuuksista.
 >
 > Valitut varastotyötyypit voidaan luoda sekä keskuksessa että scale uniteissa, mutta vain omistava keskus tai scale unit voi ylläpitää niitä (tiedot luonut käyttöönotto).
 >

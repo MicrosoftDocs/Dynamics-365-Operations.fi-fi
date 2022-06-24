@@ -1,6 +1,6 @@
 ---
 title: Myyntitilausten ja siirtotilausten ylikeräily
-description: Tässä ohjeaiheessa kerrotaan, miten ylikeräily otetaan käyttöön myynti- ja siirtotilauksille.
+description: Tässä artikkelissa kerrotaan, miten ylikeräily otetaan käyttöön myynti- ja siirtotilauksille.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678405"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897281"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Myyntitilausten ja siirtotilausten ylikeräily
 
 [!include [banner](../includes/banner.md)]
 
-Tämä aihe esittelee skenaarion, joka osoittaa, miten joko tietty työntekijä tai kaikki työntekijät voivat valita ylikeräilyn. Ylikeräilyprosessi mahdollistaa valvotun ylikeräilyn keräilyn aikana.
+Tämä artikkeli esittelee skenaarion, joka osoittaa, miten joko tietty työntekijä tai kaikki työntekijät voivat valita ylikeräilyn. Ylikeräilyprosessi mahdollistaa valvotun ylikeräilyn keräilyn aikana.
 
 Varaston ylikeräily on yksinkertainen käsite. Järjestelmän avulla työntekijät voivat poimia tilaukseen määritettyä enemmän nimikkeitä. Se kuitenkin ottaa huomioon ylitoimitusrajan, joka on määritetty siirtotilauksen tai myyntitilauksen rivitasolla. Jos raja ylittyy, Warehouse Management -sovellus ilmoittaa työntekijöille, että he ylittävät ylitoimitusrajan.
 
@@ -41,11 +41,11 @@ Ylipoimintatoiminto auttaa työntekijöitä säästämään aikaa ja työtä nim
 > [!IMPORTANT]
 > Ylipoimintatoiminto koskee vain myyntitilausta ja siirtotilauksen keräilyä ja käsittelyä. Täydennys ei tue ylikeräilyä. Kun täydennystyö suoritetaan, käyttäjät eivät voi suorittaa ylipoimintaa.
 
-Tässä aiheessa näytetään esimerkkitilanne tämän toiminnon määrittämisestä ja ylipoimintaominaisuuden käytöstä.
+Tässä artikkelissa näytetään esimerkkitilanne tämän toiminnon määrittämisestä ja ylipoimintaominaisuuden käytöstä.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Skenaarion edellytykset: Esittelytietojen käyttö
 
-Ohjeaiheen skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu *USMF* ennen aloittamista.
+Artikkelin skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu *USMF* ennen aloittamista.
 
 ## <a name="scenario-setup"></a>Skenaarion määrittäminen
 

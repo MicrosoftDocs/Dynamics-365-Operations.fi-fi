@@ -1,6 +1,6 @@
 ---
 title: Resurssityypit
-description: Tässä ohjeaiheessa kerrotaan, kuinka resurssityypit luodaan resurssien hallinnassa. Siinä kuvataan myös resurssityyppeihin liittyvät elementit.
+description: Tässä artikkelissa kerrotaan, kuinka resurssityypit luodaan resurssien hallinnassa. Siinä kuvataan myös resurssityyppeihin liittyvät elementit.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3a51fdb55e9158e88e89549e3d0049e699c233e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730367"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887628"
 ---
 # <a name="asset-types"></a>Resurssityypit
 
@@ -28,7 +28,7 @@ ms.locfileid: "6730367"
 
 
 
-Tässä ohjeaiheessa kerrotaan, miten voit luoda resurssityyppejä. Siinä kuvataan myös resurssityyppeihin liittyvät elementit. Resurssityypit ovat resurssien yleisiä luokkia. Esimerkkejä ovat CNC-koneet, mittauslaitteet ja kuorma-autojen moottorit. Resurssityyppien avulla hallitaan ylläpitotyötyyppejä (ylläpitotehtäviä), resurssin elinkaaritiloja, laskureita, resurssimääritteitä, kunnon arviointimalleja ja resurssimalleja, jotka voidaan valita resurssille. Resurssityyppi on määritettävä resurssin luomisen yhteydessä.
+Tässä artikkelissa kerrotaan, miten voit luoda resurssityyppejä. Siinä kuvataan myös resurssityyppeihin liittyvät elementit. Resurssityypit ovat resurssien yleisiä luokkia. Esimerkkejä ovat CNC-koneet, mittauslaitteet ja kuorma-autojen moottorit. Resurssityyppien avulla hallitaan ylläpitotyötyyppejä (ylläpitotehtäviä), resurssin elinkaaritiloja, laskureita, resurssimääritteitä, kunnon arviointimalleja ja resurssimalleja, jotka voidaan valita resurssille. Resurssityyppi on määritettävä resurssin luomisen yhteydessä.
 
 Kunkin resurssityypin osalta voidaan määrittää resurssityypin asetusten muunnoksia. Jos sinulla on esimerkiksi resurssityyppi, jonka nimi on **Kuorma-autot**, voit luoda kyseisen resurssityypin variaatioita resurssin eri valmistajille ja malleille. Kuhunkin resurssityypin määritykseen voidaan lisätä tarvittavat varaosat ja huoltosuunnitelmat.
 

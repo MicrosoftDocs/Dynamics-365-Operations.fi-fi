@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio10.0.6 (marraskuu 2019)
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.6 uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Dynamics 365 Supply Chain Managementin 10.0.6 uusia tai muuttuneita toimintoja.
 author: kamaybac
 ms.date: 10/28/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 87bcda25b89135e052a5a883b816ea0bb430479a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8c97e4e5544c49d2e6a13b34061abfbf50e2932a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844435"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1006-november-2019"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio10.0.6 (marraskuu 2019)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin version 10.0.6 uusia tai muuttuneita ominaisuuksia. Tämän version koontiversion numero on 10.0.234. Kun yleisen saatavuuden päivämäärä on marraskuussa, uudet toiminnot ovat käytettävissä lokakuun esiversiossa. Lisätietoja versiosta 10.0.6 on kohdassa [Lisäresurssit](whats-new-scm-10-0-6.md#additional-resources).
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin 10.0.6 uusia tai muuttuneita toimintoja. Tämän version koontiversion numero on 10.0.234. Kun yleisen saatavuuden päivämäärä on marraskuussa, uudet toiminnot ovat käytettävissä lokakuun esiversiossa. Lisätietoja versiosta 10.0.6 on kohdassa [Lisäresurssit](whats-new-scm-10-0-6.md#additional-resources).
 
 ## <a name="product-configuration-models-v2-data-entity"></a>Tuotekonfiguraatiomallien V2:n tietoyksikkö
 
@@ -60,12 +60,12 @@ Tutustu kohtaan [Dynamics 365: vuoden 2019 julkaisuaallon 2 suunnitelma](/dynami
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Poistetut ja vanhentuneet Supply Chain Management -toiminnot
 
-[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
+[Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa kerrotaan toiminnoista, jotka on ajoitettu poistettaviksi tai vanhentuviksi tai jotka on poistettu Supply Chain Managementissa.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
 
-Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentunisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -ohjeaiheessa 12 kuukautta ennen poistoa.
+Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [Dynamics 365 Supply Chain Managementin poistetut tai vanhentuneet toiminnot](removed-deprecated-features-scm-updates.md) -artikkelissa 12 kuukautta ennen poistoa.
 
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 

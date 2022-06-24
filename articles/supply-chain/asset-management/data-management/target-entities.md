@@ -1,6 +1,6 @@
 ---
 title: Kohdeyksiköt
-description: Tässä ohjeaiheessa selitetään, miten voit saada yleiskuvan kohdeyksiköistä resurssien hallinnassa.
+description: Tässä artikkelissa selitetään, miten voit saada yleiskuvan kohdeyksiköistä resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 09/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c2d08781ff75b2435e9b71531ce77a59dbee2d90e647087d7c2c58bb4b1227e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 172f49c13c183eb4df986dc3e30ff3955bc1a605
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772565"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860983"
 ---
 # <a name="target-entities"></a>Kohdeyksiköt
 
@@ -30,7 +30,7 @@ ms.locfileid: "6772565"
 
 **Tietojen hallinta** -työtilassa on yleiskatsaus kohde-entiteetteihin, niihin liittyviin yksikkötyyppeihin ja **Resurssien hallinta** -moduuliin liittyviin vaihetauluihin. 
 
-1. Napsauta näytön vasemmassa yläkulmassa olevaa **Finance and Operations**-painiketta ja valitse **Tietojen hallinta**.
+1. Napsauta näytön vasemmassa yläkulmassa olevaa **Finance and Operations**-painiketta ja valitse **Tietojen hallinta.**
 
 2. Valitse **Tuonti/vienti** -osasta **Tietoyksiköt**. 
 

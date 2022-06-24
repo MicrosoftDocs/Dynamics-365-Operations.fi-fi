@@ -1,6 +1,6 @@
 ---
 title: Resurssit ja työtilaukset
-description: Tässä ohjeaiheessa kerrotaan resursseista ja työtilauksista resurssien hallinnassa.
+description: Tässä artikkelissa kerrotaan resursseista ja työtilauksista resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2872dc84ec11ae7fad9fd5b225b9207f13280db334cc0d010a3d6749a591ee2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2d0fcc5162900ad2ad67f2629d14015f694bd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718104"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869688"
 ---
 # <a name="assets-and-work-orders"></a>Resurssit ja työtilaukset
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718104"
 
  
 
-Tässä ohjeaiheessa kerrotaan resursseista ja työtilauksista resurssien hallinnassa. Resurssit ja työtilaukset ovat resurssien hallinnan keskeisiä osia. *Resurssi* on kone tai koneen osa, joka vaatii jatkuvaa ylläpitoa ja huoltoa. Resursseja voidaan luoda hierarkkisessa rakenteessa, ja ne voivat liittyä toiminnallisiin sijainteihin. Ylläpitotöitä voidaan suunnitella kaikilla resurssirakenteen tasoilla.
+Tässä artikkelissa kerrotaan resursseista ja työtilauksista resurssien hallinnassa. Resurssit ja työtilaukset ovat resurssien hallinnan keskeisiä osia. *Resurssi* on kone tai koneen osa, joka vaatii jatkuvaa ylläpitoa ja huoltoa. Resursseja voidaan luoda hierarkkisessa rakenteessa, ja ne voivat liittyä toiminnallisiin sijainteihin. Ylläpitotöitä voidaan suunnitella kaikilla resurssirakenteen tasoilla.
 
 Eri tiedot, kuten tuotetiedot ja resurssien määritykset sekä vaaditut huoltosuunnitelmat määritetään kullekin resurssille. Seuraavassa kuvassa on yhteenveto resurssin tiedoista ja resurssien liitoksista työtyyppeihin. Punaista tekstiä käytetään esimerkeissä, jotka näyttävät periytymisen ja riippuvuudet.
 

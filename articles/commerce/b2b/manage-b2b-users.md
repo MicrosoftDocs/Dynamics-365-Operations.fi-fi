@@ -1,6 +1,6 @@
 ---
 title: Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
-description: Tässä aiheessa kuvataan, miten liikekumppanikäyttäjiä lisätään, poistetaan ja muokataan Microsoft Dynamics 365 Commercen yritysten välisillä (B2B) verkkokauppasivustoilla ja Commerce headquarters -sovelluksessa.
+description: Tässä artikkelissa kuvataan, miten liikekumppanikäyttäjiä lisätään, poistetaan ja muokataan Microsoft Dynamics 365 Commercen yritysten välisillä (B2B) verkkokauppasivustoilla ja Commerce headquarters -sovelluksessa.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ef8ae583f18048fc6a36adf38ee7be0fb5b02fcd
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4a3d1c7bf7e7ea545590315d9e185fa525b5d5e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686321"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860292"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten liikekumppanikäyttäjiä lisätään, poistetaan ja muokataan Microsoft Dynamics 365 Commercen yritysten välisillä (B2B) verkkokauppasivustoilla ja Commerce headquarters -sovelluksessa.
+Tässä artikkelissa kuvataan, miten liikekumppanikäyttäjiä lisätään, poistetaan ja muokataan Microsoft Dynamics 365 Commercen yritysten välisillä (B2B) verkkokauppasivustoilla ja Commerce headquarters -sovelluksessa.
 
 > [!NOTE]
-> - Aihe [B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla](partners-customer-hierarchies.md) on edellytys tälle asiakirjalle.
+> - Artikkeli [B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla](partners-customer-hierarchies.md) on edellytys tälle asiakirjalle.
 > - Varmista, että alustat Commerce Headquarters -asiakirjatyyppien yksikön avaamalla **Tiedostotyypit**-lomakkeen kohdassa **Organisaation hallinta \> Tiedostojen hallinta \> Asiakirjatyypit**.
 
 B2B-verkkokauppasivustot edellyttävät, että organisaatiot rekisteröityvät liikeyhteistyökumppaneina. Kun organisaatio on lähettänyt rekisteröintitiedot B2B-verkkokauppasivustoon, rekisteröintipyyntö käy läpi hyväksyntäprosessin. Jos organisaatio on hyväksytty onnistuneesti, se on mukana liikekumppanina.
@@ -121,7 +121,7 @@ Voit ottaa käyttöön liikekumppaneita ja käyttäjia Commerce headquarters -so
 
 ## <a name="additional-information"></a>Lisätiedot
 
-- Kaikki tässä ohjeaiheessa mainitut työt voidaan konfiguroida suoritettavaksi aikataulussa erämuodossa. Odotus on se, että liikekumppanit konfiguroivat erätyöt tarpeen mukaan.
+- Kaikki tässä artikkelissa mainitut työt voidaan konfiguroida suoritettavaksi aikataulussa erämuodossa. Odotus on se, että liikekumppanit konfiguroivat erätyöt tarpeen mukaan.
 - Järjestelmänvalvojakäyttäjäksi voidaan määrittää tällä hetkellä vain yksi käyttäjä tai asiakastietue, ja tätä roolia voi muuttaa vain Commerce headquarters -sovelluksessa. Ei ole tukea itsepalvelutoiminnoille, joilla liikekumppanit voivat määrittää useita järjestelmänvalvojia tai muuttaa B2B-verkkokauppasivustojen järjestelmänvalvojia.
 - Vaikka käyttäjille voidaankin määrittää kulutuksen rajat, kulutuksen rajojen pakottamista tilaustenkäsittelyprosessin aikana ei ole vielä otettu käyttöön.
 - Kaikki käyttäjäkokemuksen liiketoimintalogiikka ja oikeellisuustarkistus B2B-verkkokauppasivustossa perustuu sen asiakastietueen konfigurointiin, joka on yhdistetty Commerce headquarters -sovelluksen käyttäjään.

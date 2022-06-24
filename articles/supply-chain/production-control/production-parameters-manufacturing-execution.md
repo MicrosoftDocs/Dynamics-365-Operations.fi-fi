@@ -1,6 +1,6 @@
 ---
 title: Tuotannonohjauksen tuotantoparametrit
-description: Tässä ohjeaiheessa on tietoja tuotannonohjauksen tuotantoparametrien asetuksista.
+description: Tässä artikkelissa on tietoja tuotannonohjauksen tuotantoparametrien asetuksista.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ce0dadd353df756a468384e3bf8e68c0ad2033a7042b4986fce41aa0764afdbc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74b6c82c573810da9cbfe14745f997f40d408fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752727"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873663"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Tuotannonohjauksen tuotantoparametrit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja tuotannonohjauksen tuotantoparametrien asetuksista.
+Tässä artikkelissa on tietoja tuotannonohjauksen tuotantoparametrien asetuksista.
 
 **Tuotannonohjaus**-moduuli on suunnattu ensisijaisesti tuotantoyrityksille. Sillä voidaan rekisteröidä ajan ja nimikkeen kulutuksen tuotantotöissä tai -projekteissa. Ennen kuin töitä voidaan rekisteröidä tuotannonohjauksella, useat tuotantoparametrit on määritettävä. Nämä parametrit määrittävät miten ja milloin rekisteröinnit kirjataan tuotantoprosessin aikana. Tuotantoparametrien asetukset vaikuttavat varastonhallintaan, tuotantoon hallinnan ja kustannuslaskentaan.
 

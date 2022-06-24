@@ -1,6 +1,6 @@
 ---
 title: B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla
-description: Tässä aiheessa kuvataan, miten asiakashierarkioita käytetään liikekumppaneiden hallitsemiseen Microsoft Dynamics 365 Commercen yritysten välisten (B2B) verkkokauppasivustojen osalta.
+description: Tässä artikkelissa kuvataan, miten asiakashierarkioita käytetään liikekumppaneiden hallitsemiseen Microsoft Dynamics 365 Commercen yritysten välisten (B2B) verkkokauppasivustojen osalta.
 author: josaw1
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 70acdf469be2fcddd9e2bf755e958c1b20ee2fcf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ddd02045b5df3ce20160a4feaa23339475823d3d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864978"
 ---
 # <a name="manage-b2b-business-partners-using-customer-hierarchies"></a>B2B-liikekumppaneiden hallinta asiakashierarkioiden avulla
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten asiakashierarkioita käytetään liikekumppaneiden hallitsemiseen Microsoft Dynamics 365 Commercen yritysten välisten (B2B) verkkokauppasivustojen osalta.
+Tässä artikkelissa kuvataan, miten asiakashierarkioita käytetään liikekumppaneiden hallitsemiseen Microsoft Dynamics 365 Commercen yritysten välisten (B2B) verkkokauppasivustojen osalta.
 
 Commerce headquarters -sovelluksessa käytetään *asiakashierarkia*-entiteettiä edustamaan liikekumppaniorganisaatioita, jotka tulevat käyttämään B2B-verkkokauppasivustoasi. Ennen kuin voit alkaa käyttää asiakashierarkioita liikekumppanien hallitsemiseen, sinun on otettava B2B-verkkokauppaominaisuudet käyttöön Commerce headquarters -sovelluksessa ja sitten määritettävä asiakashierarkialle numerosarja.
 

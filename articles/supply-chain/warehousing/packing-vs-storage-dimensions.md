@@ -1,6 +1,6 @@
 ---
 title: Eri dimensioiden määrittäminen pakkausta ja varastointia varten
-description: Tässä aiheessa käsitellään, miten määritetään, missä prosessissa (pakkaus, varastointi ja sisäkkäinen pakkaus) kutakin määritettyä dimensiota käytetään.
+description: Tässä artikkelissa käsitellään, miten määritetään, missä prosessissa (pakkaus, varastointi ja sisäkkäinen pakkaus) kutakin määritettyä dimensiota käytetään.
 author: Mirzaab
 ms.date: 01/28/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 090a6f653b50d8f22a2f34354172f129624813f1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687642"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905483"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Eri dimensioiden määrittäminen pakkausta ja varastointia varten
 
@@ -33,7 +33,7 @@ Jotkin nimikkeet pakataan tai tallennetaan siten, että fyysisiä dimensioita on
 *Varastodimensioita* tuetaan myös silloin, kun *Pakkauksen tuotedimensiot* -toimintoa ei ole otettu käyttöön. Ne määritetään **Fyysiset dimensiot** -sivulla Supply Chain Managementissa. Kaikki prosessit, joissa pakkauksen ja sisäkkäisen pakkauksen dimensioita ei ole määritetty, käyttävät näitä dimensioita.
 
 *Pakkauksen* ja *sisäkkäisen pakkauksen* dimensiot määritetään **Fyysiset tuotedimensiot** -sivulla, joka lisätään, kun *Pakkauksen tuotedimensiot* -toiminto otetaan käyttöön.
-Tässä aiheessa on skenaario, joka näyttää, miten tätä toimintoa käytetään.
+Tässä artikkelissa on skenaario, joka näyttää, miten tätä toimintoa käytetään.
 
 ## <a name="turn-on-the-packaging-product-dimensions-feature"></a>Pakkauksen tuotedimensiot -toiminnon ottaminen käyttöön
 

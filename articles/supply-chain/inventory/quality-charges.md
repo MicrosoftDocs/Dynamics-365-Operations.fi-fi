@@ -1,6 +1,6 @@
 ---
 title: Määrityksistä poikkeamisen toimintojen kulut
-description: Tässä aiheessa kuvataan, kuinka luodaan laatukuluja, joita voidaan käyttää määrityksistä poikkeamisen toiminnoissa.
+description: Tässä artikkelissa kuvataan, kuinka luodaan laatukuluja, joita voidaan käyttää määrityksistä poikkeamisen toiminnoissa.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580957"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850725"
 ---
 # <a name="charges-for-nonconformance-operations"></a>Määrityksistä poikkeamisen toimintojen kulut
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka luodaan laatukuluja, joita voidaan käyttää määrityksistä poikkeamisen toiminnoissa.
+Tässä artikkelissa kuvataan, kuinka luodaan laatukuluja, joita voidaan käyttää määrityksistä poikkeamisen toiminnoissa.
 
 Määritä **Laadun kulut** -sivulla kulujen tyypit, jotka voidaan lisätä määrityksistä poikkeamiseen liittyviin toimintoihin. Kulujen avulla voit seurata tietoja maksuista tai kuluista, jotka olet velkaa asiakkaalle määrityksistä poikkeavista tuotteista tai jotka toimittaja on velkaa sinulle saamistasi määrityksistä poikkeavista tuotteista. Kulujen avulla voit myös seurata kustannuksia, joita edellytetään ulkoisilta toimittajilta tai palveluilta toiminnon suorittamiseen.
 

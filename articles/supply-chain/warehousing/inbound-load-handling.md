@@ -1,6 +1,6 @@
 ---
 title: Ostotilausten saapuvien kuormien varastokäsittely
-description: Tässä aiheessa kuvataan ostotilausten saapuvien kuormien fyysisen varastoinnin käsittelyprosessi.
+description: Tässä artikkelissa kuvataan ostotilausten saapuvien kuormien fyysisen varastoinnin käsittelyprosessi.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778056"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855929"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Ostotilausten saapuvien kuormien varastokäsittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan ostotilausten saapuvien kuormien fyysisen varastoinnin käsittelyprosessi.
+Tässä artikkelissa kuvataan ostotilausten saapuvien kuormien fyysisen varastoinnin käsittelyprosessi.
 
 Jokaisessa saapuvassa kuormassa järjestelmässä on jo oltava liittyvä myyntitilaus, ja se voi sisältää myös liittyvän kuormamäärityksen ja/tai kuljetussuunnitelman. Lisätietoja saapuvien kuormien luomisesta ja hallinnasta on kohdassa [Liiketoimintaprosessi: saapuvien kuormien kuljetusten suunnitteleminen](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -209,7 +209,7 @@ Seuraavassa taulukossa on yhteenveto **Salli usean tuotteen vastaanottaminen kuo
 | Kyllä | Ei päivityksiä | _Vastaanotettu_, jos rekisteröity kokonaiskuormamäärä on yhtä suuri tai suurempi kuin kuormamäärä | |
 | Kyllä | Ei päivityksiä | _Lähetetty_ tai _työn alla_, jos rekisteröity kokonaiskuormamäärä on vähemmän kuin kuormamäärä | |
 
-Kun **Kuorman tila** -kentän arvoksi on määritetty _vastaanotettu_, kyseistä kuormaa varten ei voi tehdä enempää tuotteen vastaanoton kirjauksia. Työntekijä voi kuitenkin rekisteröidä jäljellä olevan tilausmäärän vastaanotetuksi kuormalle seuraavien ehtojen mukaisesti. (Lisätietoja on tämän ohjeaiheen edellä olevassa osassa [Kuorman ylivastaanotto](#load-over-receiving).)
+Kun **Kuorman tila** -kentän arvoksi on määritetty _vastaanotettu_, kyseistä kuormaa varten ei voi tehdä enempää tuotteen vastaanoton kirjauksia. Työntekijä voi kuitenkin rekisteröidä jäljellä olevan tilausmäärän vastaanotetuksi kuormalle seuraavien ehtojen mukaisesti. (Lisätietoja on tämän artikkelin edellä olevassa osassa [Kuorman ylivastaanotto](#load-over-receiving).)
 
 - Supply Chain Managementin versio on vanhempi kuin versio 10.0.11.
 - _Kuormamäärien ylivastaanotto_ -toiminto on käytössä ja **kuorman määrän ylivastaanotto** -kentän mobiililaitteen valikkokohteen kuormakohteen vastaanottotoiminnoksi on asetettu _Salli_.

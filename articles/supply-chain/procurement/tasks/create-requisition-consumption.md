@@ -1,6 +1,6 @@
 ---
 title: Luo kulutusehdotus
-description: Tässä aiheessa kuvataan ehdotuksen luontiprosessia.
+description: Tässä artikkelissa kuvataan ehdotuksen luontiprosessia.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5881e8a415ad37ff4bdb61b1043901c0b87ef743
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b4fc4a9f0dbd5c413300d27640512df69df30122
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888467"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Luo kulutusehdotus
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan ehdotuksen luontiprosessia. Siinä näytetään erilaisia tapoja hakea tuotteiden hankintaluettelon tuotteita sekä millä tavoin lisätään tuote, jota ei ole luettelossa. Varmista ennen menettelyn aloittamista, että ostokäytäntö on määritetty siten, että ehdotuksen oletustyyppi on Kulutus. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi. Menettelyn voi suorittaa vain käyttäjäprofiili, joka on määritetty työntekijäksi. Työntekijä suorittaa yleensä tämän tehtävän. **Työntekijä**-käyttöoikeusroolin ansiosta voit suorittaa tehtävät. Jos käytössä on USMF, voit kirjautua sisään tunnuksella **Alicia**.
+Tässä artikkelissa kuvataan ehdotuksen luontiprosessia. Siinä näytetään erilaisia tapoja hakea tuotteiden hankintaluettelon tuotteita sekä millä tavoin lisätään tuote, jota ei ole luettelossa. Varmista ennen menettelyn aloittamista, että ostokäytäntö on määritetty siten, että ehdotuksen oletustyyppi on Kulutus. Voit käydä tämän menettelyn läpi emotietojen yrityksen USMF avulla tai käyttää omia tietojasi. Menettelyn voi suorittaa vain käyttäjäprofiili, joka on määritetty työntekijäksi. Työntekijä suorittaa yleensä tämän tehtävän. **Työntekijä**-käyttöoikeusroolin ansiosta voit suorittaa tehtävät. Jos käytössä on USMF, voit kirjautua sisään tunnuksella **Alicia**.
 
 
 ## <a name="create-a-new-requisition"></a>Luo uusi ehdotus

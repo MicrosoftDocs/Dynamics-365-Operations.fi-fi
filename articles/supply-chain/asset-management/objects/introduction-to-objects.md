@@ -1,6 +1,6 @@
 ---
 title: Resurssien esittely
-description: Tässä aiheessa on yleiskatsaus resurssien hallinnan resursseihin.
+description: Tässä artikkelissa on yleiskatsaus resurssien hallinnan resursseihin.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767505"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874185"
 ---
 # <a name="introduction-to-assets"></a>Resurssien esittely
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767505"
 
  
 
-Tässä aiheessa on yleiskatsaus resurssien hallinnan resursseihin. *Resurssi* on minkä tahansa tyyppinen laite, kuten kone tai koneen osa, joka edellyttää ylläpitoa, huoltoa tai korjausta.
+Tässä artikkelissa on yleiskatsaus resurssien hallinnan resursseihin. *Resurssi* on minkä tahansa tyyppinen laite, kuten kone tai koneen osa, joka edellyttää ylläpitoa, huoltoa tai korjausta.
 
-Resurssiiin päivitetään automaattisesti ja siihen liittyvät tiedot. Nämä liittyvät tiedot voivat olla esimerkiksi uusista tai päivitetyistä työtilauksista. Voit luoda resursseja käyttämällä joko **Kaikki resurssit** -valikkonimikettä tai **Odottavat resurssit** -valikkonimikettä. Tässä ohjeaiheessa kerrotaan, kuinka resurssit luodaan käyttämällä **Kaikki resurssit**-valikkonimikettä. Lisätietoja resurssien luomisesta **Odottavat resurssit** -valikkovaihtoehdon avulla on kohdassa [Resurssien luominen ostotilausten perusteella](../objects/create-objects-based-on-purchase-orders.md).
+Resurssiiin päivitetään automaattisesti ja siihen liittyvät tiedot. Nämä liittyvät tiedot voivat olla esimerkiksi uusista tai päivitetyistä työtilauksista. Voit luoda resursseja käyttämällä joko **Kaikki resurssit** -valikkonimikettä tai **Odottavat resurssit** -valikkonimikettä. Tässä artikkelissa kerrotaan, kuinka resurssit luodaan käyttämällä **Kaikki resurssit**-valikkonimikettä. Lisätietoja resurssien luomisesta **Odottavat resurssit** -valikkovaihtoehdon avulla on kohdassa [Resurssien luominen ostotilausten perusteella](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Kaikki käyttöomaisuus
 

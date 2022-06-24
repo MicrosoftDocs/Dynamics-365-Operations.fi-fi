@@ -1,6 +1,6 @@
 ---
 title: Sijaintidirektiivin varastonkeräilyn erääntyminen
-description: Tässä ohjeaiheessa käsitellään FIFO- ja LIFO-sijaintidirektiivistrategioita keräilyn aikana.
+description: Tässä artikkelissa käsitellään FIFO- ja LIFO-sijaintidirektiivistrategioita keräilyn aikana.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676268"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885693"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Sijaintidirektiivin varastonkeräilyn erääntyminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään FIFO- ja LIFO-sijaintidirektiivistrategioita keräilyn aikana. Näitä strategioita käytetään yhdessä sijainnille kirjattujen erääntymispäivämäärien kanssa ja niiden avulla seurataan, milloin varasto saapui varastoon ensimmäisen kerran. *Sijaintidirektiivin varastonkeräilyn erääntyminen* -toiminto määrittää erääntymisen sijainnin päivämäärän perusteella. *Varastosijainnin tila* -toiminto päivittää sijainnin päivämäärän rekisterikilven päivämäärän perusteella.
+Tässä artikkelissa käsitellään FIFO- ja LIFO-sijaintidirektiivistrategioita keräilyn aikana. Näitä strategioita käytetään yhdessä sijainnille kirjattujen erääntymispäivämäärien kanssa ja niiden avulla seurataan, milloin varasto saapui varastoon ensimmäisen kerran. *Sijaintidirektiivin varastonkeräilyn erääntyminen* -toiminto määrittää erääntymisen sijainnin päivämäärän perusteella. *Varastosijainnin tila* -toiminto päivittää sijainnin päivämäärän rekisterikilven päivämäärän perusteella.
 
 FIFO- ja LIFO-strategioita voi käyttää sekä eräseurattujen nimikkeiden että ei-eräseurattujen nimikkeiden lähettämiseen sen päivämäärän perusteella, jolloin varastoa saapui fyysiseen varastoon. Tätä ominaisuus voi kätevä etenkin ei-eräseuratun varaston osalta, jos vanhentumispäivä ei ole käytettävissä lajittelun varten.
 

@@ -1,6 +1,6 @@
 ---
-title: Luo uusi varastoasettelu
-description: Tässä ohjeaiheessa kuvataan, kuinka voit varastosijainteihin liittyvät tiedot.
+title: Uuden varastoasettelun luonti
+description: Tässä artikkelissa kuvataan, kuinka voit varastosijainteihin liittyvät tiedot.
 author: yufeihuang
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf5c5203aa0a4c8522b8f9d04fc6a8cd306a64a3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 143648e5317e6dce1b1a76a96d6069abe5d0e351
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859311"
 ---
-# <a name="create-a-new-warehouse-layout"></a>Luo uusi varastoasettelu
+# <a name="create-a-new-warehouse-layout"></a>Uuden varastoasettelun luonti
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka voit varastosijainteihin liittyvät tiedot. Tämä koskee vain varastoinninhallintamoduulissa Perusvarastointi-asetuksen avulla luotuja varastoja, ei varastonhallintamoduulissa luotuja varastoja. Voit käyttää tätä menettelyä emotietojen yrityksen USMF kanssa tai käyttää omia tietojasi.
+Tässä artikkelissa kuvataan, kuinka voit varastosijainteihin liittyvät tiedot. Tämä koskee vain varastoinninhallintamoduulissa Perusvarastointi-asetuksen avulla luotuja varastoja, ei varastonhallintamoduulissa luotuja varastoja. Voit käyttää tätä menettelyä emotietojen yrityksen USMF kanssa tai käyttää omia tietojasi.
 
 
 ## <a name="set-the-default-location-capacity"></a>Oletussijainnin kapasiteetin määrittäminen

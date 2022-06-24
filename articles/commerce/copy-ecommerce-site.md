@@ -1,26 +1,26 @@
 ---
 title: Sähköisen kaupankäynnin sivuston kopioiminen
-description: Tässä aiheessa kuvataan, kuinka voit kopioida aiemmin luodun sähköisen kaupankäynnin sivuston sähköisen kaupankäynnin ympäristön sisällä tai ympäristöjen välillä Microsoft Dynamics 365 Commerce -sivustonmuodostajassa.
+description: Tässä artikkelissa kuvataan, kuinka voit kopioida aiemmin luodun sähköisen kaupankäynnin sivuston sähköisen kaupankäynnin ympäristön sisällä tai ympäristöjen välillä Microsoft Dynamics 365 Commerce -sivustonmuodostajassa.
 author: psimolin
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: a23f544cbd1e960cb704d2b9666b7db4c3894b5e
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: cb53a76b2ebe5b511bf5009727f20f20755e5720
+ms.sourcegitcommit: 13c7a1cc4c90417e3e88db59b7d2165b3c40a56c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462323"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "8935741"
 ---
 # <a name="copy-an-e-commerce-site"></a>Sähköisen kaupankäynnin sivuston kopioiminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka voit kopioida aiemmin luodun sähköisen kaupankäynnin sivuston sähköisen kaupankäynnin ympäristön sisällä tai ympäristöjen välillä Microsoft Dynamics 365 Commerce -sivustonmuodostajassa.
+Tässä artikkelissa kuvataan, kuinka voit kopioida aiemmin luodun sähköisen kaupankäynnin sivuston sähköisen kaupankäynnin ympäristön sisällä tai ympäristöjen välillä Microsoft Dynamics 365 Commerce -sivustonmuodostajassa.
 
 Dynamics 365 Commerce tukee sivustojen kopioimista tai kloonaamista itsepalvelutoiminnointina Commerce-sivustonmuodostimessa. Sivustot voidaan kopioida yhdessä verkkokauppaympäristössä tai kahden sähköisen kaupankäyntiympäristön välillä. Sivuston kopiointitoiminnon aloittavan käyttäjän on oltava vuokraajan järjestelmänvalvoja sekä lähde- että kohdeverkkokauppaympäristössä.
 
@@ -40,23 +40,23 @@ Voit kopioida sivuston sähköisen kaupankäynnin ympäristön sisällä noudatt
 1. Kirjaudu sisään sen ympäristön sivustonmuodostajaan, jossa haluat suorittaa kopiointitoiminnon.
 1. Avaa sivustoluettelonäkymän valitsemalla oikeasta yläkulmasta **Sivuston valitsin** ja valitsemalla sitten **Sivustojen hallinta**.
 1. Etsi sivustoista ja valitse kopioitavan tai kloonattavan sivuston vieressä valintaruutu.
-1. Valitse toimintoruudussa **Kopioi sivusto**.
-1. Anna uuden sivuston nimi **Kopioi sivusto** -valintaikkunan **Uuden sivuston nimi** -kenttään. Uuden sivuston nimen on oltava yksilöivä sähköisen kaupankäynnin ympäristössä. **Lähdevuokraaja**- ja **Lähdesivusto**-kenttiin määritetään automaattisesti nykyisen vuokraajan ja valitun sivuston tiedot.
+1. Valitse komentopalkissa **Kopioi sivusto**.
+1. Anna uuden sivuston nimi **Kopioi sivusto** -valintaikkunan **Uuden sivuston nimi** -lisätietokenttään. Uuden sivuston nimen on oltava yksilöivä sähköisen kaupankäynnin ympäristössä. **Lähdevuokraaja**- ja **Lähdesivusto**-kenttiin määritetään automaattisesti nykyisen vuokraajan ja valitun sivuston tiedot.
 1. Valitse **Luo kopio**.
 
 Kun tiedot on vahvistettu, ilmoitus ilmaisee, että uusi sivuston kopio on luotu. Voit valvoa työn etenemistä [**Vuokraajan työt** -sivun oikeanpuoleisessa ruudussa](#monitor-the-site-copy-operation). Kun kopiointitoiminto on suoritettu onnistuneesti loppuun, uusi sivusto tulee näkyviin sivustojen luetteloon sivustoluettelonäkymässä.
 
-Seuraavassa kuvassa näkyy esimerkki **Kopioi sivusto**- valintaikkunasta sivustonmuodostimessa.
+Seuraavassa kuvassa näkyy esimerkki **Kopioi sivusto**- lisätietokentästä sivustonmuodostimessa.
 
-![Kopioi sivusto -valintaruutu sivuston luontiohjelmassa.](media/site-copy_1.png)
+![Kopioi sivusto -lisätietoikkunaan sivuston luontiohjelmassa.](media/site-copy_1.png)
 
 ## <a name="copy-a-site-between-two-e-commerce-environments"></a>Sivuston kopioiminen kahden eri sähköisen kaupankäynnin ympäristön välillä
 
 Voit kopioida sivuston kahden sähköisen kaupankäynnin ympäristön välillä noudattamalla seuraavia ohjeita.
 
 1. Kirjaudu sisään sivuston luontiohjelmaan sähköisen kaupankäynnin kohdeympäristössä.
-1. Valitse toimintoruudussa **Kopioi sivusto**.
-1. Anna uuden sivuston nimi **Kopioi sivusto** -valintaikkunan **Uuden sivuston nimi** -kenttään. Uuden sivuston nimen on oltava yksilöivä sähköisen kaupankäynnin ympäristössä.
+1. Valitse komentopalkissa **Kopioi sivusto**.
+1. Anna uuden sivuston nimi **Kopioi sivusto** -valintaikkunan **Uuden sivuston nimi** -lisätietokenttään. Uuden sivuston nimen on oltava yksilöivä sähköisen kaupankäynnin ympäristössä.
 1. Valitse **Lähdevuokraaja**-kentässä lähdevuokraaja.
 1. Valitse **Lähdesivusto**-kentässä lähdesivusto.
 1. Valitse **Luo kopio**.
@@ -66,6 +66,32 @@ Voit kopioida sivuston kahden sähköisen kaupankäynnin ympäristön välillä 
 
 Kun tiedot on vahvistettu, ilmoitus ilmaisee, että uusi sivuston kopio on luotu. Voit valvoa työn etenemistä [**Vuokraajan työt** -sivun oikeanpuoleisessa ruudussa](#monitor-the-site-copy-operation). Kun kopiointitoiminto on suoritettu onnistuneesti loppuun, uusi sivusto tulee näkyviin sivustojen luetteloon sivustoluettelonäkymässä.
 
+## <a name="map-channels-during-the-site-copy-operation-optional"></a>Kanavien liitäminen sivuston kopiointitoiminnon aikana (valinnainen)
+
+Lähteen kanavat ja aluekohtaiset kanavat voidaan määrittää kohdekanaviin ja aluekohtaisiin kanaviin osana sivuston kopiointitoimintoa. Jos kanavakartoitus tehdään osana sivuston kopiointitoimintoa, sivuston alustaminen FRE-prosessia käyttäen ja kanavien konfiguroiminen toimipaikka-asetuksissa ei ole pakollinen. 
+
+Jos haluat yhdistää kaikki kanavat ja paikalliset "sellaisenaan" (1-to-1) sivustonmuodostajassa, noudata seuraavia ohjeita.
+
+1. Avaa sivustoluettelonäkymän valitsemalla oikeasta yläkulmasta **Sivuston valitsin** ja valitsemalla sitten **Sivustojen hallinta**.
+1. Etsi sivustoista ja valitse kopioitavan tai kloonattavan sivuston vieressä valintaruutu.
+1. Valitse komentopalkissa **Kopioi sivusto**.
+1. Kirjoita **Kopioi sivusto** -lisätietoikkunaan arvot kohteille **Uusi sivuston nimi**, **Lähteen vuokraaja** ja **Lähdesivusto** (jos ne eivät ole vielä olemassa).
+1. Valitse **Lisää kanavan kartoitukset**.
+1. **Määritä sivuston kanavat ja aluekohtaiset asetukset** -lisätietoikkunassa valitse **Lähdekanava** ja valitse sitten lähdekanava.  
+1. Valitse **Kohdekanava** ja valitse sitten sama kanava kuin lähdekanava. 
+1. Valitse **Lisää aluekohtaiset asetukset**.
+1. Valitse **Lähteen aluekohtaiset asetukset** ja valitse sitten lähteen aluekohtaiset asetukset.
+1. Valitse **Kohdekielialue** ja valitse sitten sama kielialue kuin kohdekielialue. 
+1. Syötä **URL-polkua** varten yksilöivä URL-polku, jota ei käytetä tällä hetkellä kohdeympäristössä.
+1. Toista vaiheet 8-11 kullekin kanavalle määritettävälle aluekohtaiselle asetukselle.
+1. Valitse **Käytä**.
+1. Toista vaiheet 6–11 jokaisen lähdekanavan kohdalla.
+1. Valitse **Sulje**.
+1. Tarkista konfiguraation tarkkuus ja valitse sitten **Kopioi sivusto**.
+
+> [!NOTE]
+> Kaikki lähdekanavat ja aluekohtaisen asetukset on oltava määritettyjä, ja ne voi määrittää vain kerran.
+
 ## <a name="monitor-the-site-copy-operation"></a>Sivuston kopiointitoiminnon valvominen
 
 Noudattamalla seuraavia ohjeita voit valvoa sivuston kopiointitoiminnon etenemistä.
@@ -74,9 +100,9 @@ Noudattamalla seuraavia ohjeita voit valvoa sivuston kopiointitoiminnon etenemis
 1. Valitse vasemmanpuoleisessa ruudussa **Vuokraajan työt**.
 1. Etsi ja valitse luettelosta sivuston kopiointityö **Vuokraajan työt** -sivulla. Oikealla puolella näkyy ruutu, joka sisältää valitun työn tilan ja tiedot.
 
-Voit peruuttaa työn, jonka tila on **Käynnissä**. Valitse työ luettelosta ja valitse sitten toimintoruudussa **Peruuta**.
+Voit peruuttaa työn, jonka tila on **Käynnissä**. Valitse työ luettelosta ja valitse sitten komentorivillä **Peruuta**.
 
-Voit yrittää uudelleen työtä, jonka tila on **Epäonnistunut** tai **Valmis, sisältää virheitä**. Valitse työ luettelosta ja valitse sitten toimintoruudussa **Yritä uudelleen**.
+Voit yrittää uudelleen työtä, jonka tila on **Epäonnistunut** tai **Valmis, sisältää virheitä**. Valitse työ luettelosta ja valitse sitten komentorivillä **Yritä uudelleen**.
 
 > [!NOTE]
 > Videoresurssien käsittely saattaa jatkua, kun sivuston kopiointityö on valmis.

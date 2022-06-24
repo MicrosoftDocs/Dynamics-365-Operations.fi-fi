@@ -1,6 +1,6 @@
 ---
 title: Organisaatiohierarkioiden määrittäminen
-description: Tässä ohjeaiheessa käsitellään organisaatiohierarkioiden määrittämistä Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa käsitellään organisaatiohierarkioiden määrittämistä Microsoft Dynamics 365 Commercessa.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01ba05566e966eb62a4df0b7b97ee3a442027936
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847677"
 ---
 # <a name="set-up-organization-hierarchies"></a>Organisaatiohierarkioiden määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään organisaatiohierarkioiden määrittämistä Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa käsitellään organisaatiohierarkioiden määrittämistä Microsoft Dynamics 365 Commercessa.
 
 Ennen kanavien luontia on varmistettava, että organisaatiohierarkiat on määritetty.
 
@@ -34,7 +34,7 @@ Voit käyttää organisaatiohierarkioita liiketoiminnan tarkastelemiseen ja rapo
 Ennen organisaatiohierarkian luomista sinun on luotava organisaatiot. Lisätietoja on kohdassa [Yritysten luominen](channels-legal-entities.md) tai [Toimintayksiköiden luominen](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json).
 
 
-Lisätietoja on seuraavissa aiheissa:
+Lisätietoja on seuraavissa artikkeleissa.
 - [Organisaatiot ja organisaatiohierarkiat – yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 - [Organisaatiohierarkian suunnitteleminen](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 - [Organisaation hierarkian luominen](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)

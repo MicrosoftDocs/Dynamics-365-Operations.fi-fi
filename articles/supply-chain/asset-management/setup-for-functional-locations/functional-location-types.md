@@ -1,6 +1,6 @@
 ---
-title: Toiminnallisen sijainnin tyypit
-description: Tässä ohjeaiheessa kerrotaan toiminnallisten sijaintien tyyppien luonnista resurssien hallinnassa.
+title: Toiminnallisten sijaintien tyypit
+description: Tässä artikkelissa kerrotaan toiminnallisten sijaintien tyyppien luonnista resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879218"
 ---
-# <a name="functional-location-types"></a>Toiminnallisen sijainnin tyypit
+# <a name="functional-location-types"></a>Toiminnallisten sijaintien tyypit
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Tässä ohjeaiheessa kerrotaan toiminnallisten sijaintien tyyppien luonnista resurssien hallinnassa. Toiminnallisten sijaintityyppien avulla hallitaan toiminnallisten sijaintien vaatimuksia, kuten sitä, miten resurssit asennetaan toiminnallisessa sijainnissa. Voit määrittää resurssityyppejä, ylläpitosuunnitelmia, toiminnallisia sijaintimääritteitä ja resurssin määrite vaatimuksia, joita käytetään tiettyä toiminnallista sijaintityyppiä käyttävässä toiminnallisessa sijainnissa. Kun luot toiminnallisen sijainnin, toiminnallisen sijainnin tyyppi on pakollinen.
+Tässä artikkelissa kerrotaan toiminnallisten sijaintien tyyppien luonnista resurssien hallinnassa. Toiminnallisten sijaintityyppien avulla hallitaan toiminnallisten sijaintien vaatimuksia, kuten sitä, miten resurssit asennetaan toiminnallisessa sijainnissa. Voit määrittää resurssityyppejä, ylläpitosuunnitelmia, toiminnallisia sijaintimääritteitä ja resurssin määrite vaatimuksia, joita käytetään tiettyä toiminnallista sijaintityyppiä käyttävässä toiminnallisessa sijainnissa. Kun luot toiminnallisen sijainnin, toiminnallisen sijainnin tyyppi on pakollinen.
 
 >[!NOTE] 
 >Jotta voit käyttää toiminnallisia sijainteja, sinun on luotava toiminnallinen oletussijainti, jota käytetään vain uusien resurssien luomiseen. Oletusarvoiselle toiminnalliselle sijainnille on luotava oletustoiminnallinen sijaintityyppi, joka on todella yksinkertainen, ja sallii useiden resurssien asentamisen oletusarvoiseen toiminnalliseen sijaintiin. Lisätietoja toiminnallisten sijaintien määrittämisestä on kohdassa [Luo toiminnallisia sijainteja](../functional-locations/create-functional-locations.md).

@@ -1,6 +1,6 @@
 ---
 title: Hallitse matkoja
-description: Tässä aiheessa kuvataan, miten matkoja käsitellään. Matka edustaa yleensä alusta. Käytäntöjen ja menettelyiden mukaan se voi kuitenkin edustaa toimittajaa, ostotilausta tai muuta organisaation kannalta järkevää asiaa.
+description: Tässä artikkelissa kuvataan, miten matkoja käsitellään. Matka edustaa yleensä alusta. Käytäntöjen ja menettelyiden mukaan se voi kuitenkin edustaa toimittajaa, ostotilausta tai muuta organisaation kannalta järkevää asiaa.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7d85ef86351f5d6ac662bb72c88d464fba82f561
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696163"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905860"
 ---
 # <a name="manage-voyages"></a>Hallitse matkoja
 
@@ -96,7 +96,7 @@ Voit avata **Rivit**-näkymän avaamalla matkan ja valitsemalla sitten **Rivit**
 
 ### <a name="information-on-the-voyage-header-fasttab"></a>Matkan otsikon pikavälilehden tiedot
 
-**Matkan otsikko**-pikavälilehti matkan **Rivit**-näkymässä sisältää matkaa kuvaavia perustietoja. Monet tällä pikavälilehdellä näkyvistä kentistä näkyvät myös **Otsikko**-näkymässä tässä ohjeaiheessa myöhemmin kuvatulla tavalla.
+**Matkan otsikko**-pikavälilehti matkan **Rivit**-näkymässä sisältää matkaa kuvaavia perustietoja. Monet tällä pikavälilehdellä näkyvistä kentistä näkyvät myös **Otsikko**-näkymässä tässä artikkelissa myöhemmin kuvatulla tavalla.
 
 ### <a name="information-on-the-voyage-lines-fasttab"></a>Matkan rivien pikavälilehden tiedot
 

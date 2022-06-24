@@ -1,6 +1,6 @@
 ---
 title: Kuljetettavien tuotteiden käsittely
-description: Tässä ohjeaiheessa käsitellään kuljetettavien tuotteiden tilauksia. Kun tilaus tai merikuljetus on määritetty käyttämään kuljetettavien tuotteiden käsittelyä, tuotteet voidaan laskuttaa, ennen kuin ne on vastaanotettu varastoon kulutusta varten.
+description: Tässä artikkelissa käsitellään kuljetettavien tuotteiden tilauksia. Kun tilaus tai merikuljetus on määritetty käyttämään kuljetettavien tuotteiden käsittelyä, tuotteet voidaan laskuttaa, ennen kuin ne on vastaanotettu varastoon kulutusta varten.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694652"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854381"
 ---
 # <a name="goods-in-transit-processing"></a>Kuljetettavien tuotteiden käsittely
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään kuljetettavien tuotteiden tilauksia. Tätä tilaustyyppiä käytetään vain **Aiheutunut kustannus** -moduulissa. Kun tilaus tai merikuljetus on määritetty käyttämään kuljetettavien tuotteiden käsittelyä, tavarat voidaan laskuttaa jo ennen kuin ne on vastaanotettu varastoon. Sen sijaan tuotteet laskutetaan, kun ne lähtevät toimittajan varastosta tai lähtösatamasta, ja taloudelliset kustannukset tunnistetaan, kun merikuljetus alkaa. Tämän toiminnon avulla voit ottaa oikein varaston omistajuuden, koska tavaroista tulee usein organisaation omaisuutta, kun ne lähtevät lähtösatamasta.
+Tässä artikkelissa käsitellään kuljetettavien tuotteiden tilauksia. Tätä tilaustyyppiä käytetään vain **Aiheutunut kustannus** -moduulissa. Kun tilaus tai merikuljetus on määritetty käyttämään kuljetettavien tuotteiden käsittelyä, tavarat voidaan laskuttaa jo ennen kuin ne on vastaanotettu varastoon. Sen sijaan tuotteet laskutetaan, kun ne lähtevät toimittajan varastosta tai lähtösatamasta, ja taloudelliset kustannukset tunnistetaan, kun merikuljetus alkaa. Tämän toiminnon avulla voit ottaa oikein varaston omistajuuden, koska tavaroista tulee usein organisaation omaisuutta, kun ne lähtevät lähtösatamasta.
 
 Kun kuljetettavien tuotteiden tilauksia käytetään, taloudellisesti päivitetyt nimikkeet vastaanotetaan väliaikaiseen varastoon, jota kutsutaan kuljetettavien tuotteiden varastoksi. Tämän jälkeen tavarat ovat tässä varastossa, kunnes ne voidaan vastaanottaa lopullisessa kohdevarastossa (joka on ostorivillä määritetty varasto). Niitä ei voi poistaa manuaalisesti.
 

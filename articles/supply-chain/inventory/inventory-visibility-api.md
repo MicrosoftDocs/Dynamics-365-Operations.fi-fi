@@ -1,6 +1,6 @@
 ---
 title: Varaston näkyvyyden julkiset ohjelmointirajapinnat
-description: Tässä aiheessa käsitellään varaston näkyvyyden julkisia ohjelmointirajapintoja.
+description: Tässä artikkelissa käsitellään varaston näkyvyyden julkisia ohjelmointirajapintoja.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786862"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902021"
 ---
 # <a name="inventory-visibility-public-apis"></a>Varaston näkyvyyden julkiset ohjelmointirajapinnat
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä aiheessa käsitellään varaston näkyvyyden julkisia ohjelmointirajapintoja.
+Tässä artikkelissa käsitellään varaston näkyvyyden julkisia ohjelmointirajapintoja.
 
 Varaston näkyvyyden apuohjelman julkinen REST API sisältää useita nimenomaisia integroinnin päätepisteitä. Se tukee neljää pääasiallista vuorovaikutustyyppiä:
 
@@ -160,7 +160,7 @@ Palvelun suojaustunnus haetaan seuraavasti:
    ```
 
 > [!IMPORTANT]
-> Kun *Postman*-pyyntökokoelmalla kutsutaan varaston näkyvyyden julkinen ohjelmointirajapinta, jokaiseen pyyntöön on lisättävä haltijatunnus. Haltijatunnuksen voi etsiä valitsemalla **Valtuutus**-välilehden pyynnön URL-osoitteessa, valitsemalla **Haltijatunnus**-tyypin ja kopioimalla edellisessä vaiheessa noudetun käyttöoikeustietueen. Tämä aiheen myöhemmissä osissa `$access_token` ilmaisee tunnuksen, joka noudettiin viimeisessä vaiheessa.
+> Kun *Postman*-pyyntökokoelmalla kutsutaan varaston näkyvyyden julkinen ohjelmointirajapinta, jokaiseen pyyntöön on lisättävä haltijatunnus. Haltijatunnuksen voi etsiä valitsemalla **Valtuutus**-välilehden pyynnön URL-osoitteessa, valitsemalla **Haltijatunnus**-tyypin ja kopioimalla edellisessä vaiheessa noudetun käyttöoikeustietueen. Tämä artikkelin myöhemmissä osissa `$access_token` ilmaisee tunnuksen, joka noudettiin viimeisessä vaiheessa.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Käytettävissä olevan varastosaldon muutostapahtumien luominen
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-Seuraavassa esimerkissä on näytteen tekstisisältö. Tämän ohjelmointirajapinnan toiminta eroaa aiemmin tässä aiheessa kohdassa [Käytettävissä olevan varastosaldon muutostapahtumien luominen](#create-onhand-change-event) kuvattujen ohjelmointirajapintojen toiminnasta. Tässä näytteessä *T-paita*-tuotteen määräksi määritetään 1.
+Seuraavassa esimerkissä on näytteen tekstisisältö. Tämän ohjelmointirajapinnan toiminta eroaa aiemmin tässä artikkelissa kohdassa [Käytettävissä olevan varastosaldon muutostapahtumien luominen](#create-onhand-change-event) kuvattujen ohjelmointirajapintojen toiminnasta. Tässä näytteessä *T-paita*-tuotteen määräksi määritetään 1.
 
 ```json
 [

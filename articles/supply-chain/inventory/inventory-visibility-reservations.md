@@ -1,6 +1,6 @@
 ---
-title: Varaston näkyvyyden varaukset
-description: Tässä aiheessa käsitellään varausominaisuuden määrittämistä luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella.
+title: Inventory Visibilityn varaukset
+description: Tässä artikkelissa käsitellään varausominaisuuden määrittämistä luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3b74907709ab97ddf4cc829dba324df213ca229f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061701"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895725"
 ---
-# <a name="inventory-visibility-reservations"></a>Varaston näkyvyyden varaukset
+# <a name="inventory-visibility-reservations"></a>Inventory Visibilityn varaukset
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä aiheessa käsitellään varausominaisuuden määrittämistä luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella.
+Tässä artikkelissa käsitellään varausominaisuuden määrittämistä luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella.
 
 Varauksilla merkitään varastomäärä, joka käytetään myöhemmin. Varausta luotaessa järjestelmä estää muita tilauksia varaamasta tai käyttämästä varattuja tavaroita siihen saakka, että varaus joko käytetään tai varaus poistetaan. Varaukset luodaan, niitä käytetään ja ne peruutetaan käyttämällä ohjelmointirajapintakutsuja varaston näkyvyyspalveluun.
 

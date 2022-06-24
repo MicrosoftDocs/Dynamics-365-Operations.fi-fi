@@ -1,6 +1,6 @@
 ---
 title: Lähetyksen automaattiset päivitykset
-description: Tässä ohjeaiheessa on yleiskuvaus lähetysten automaattisesta päivitystoiminnosta.
+description: Tässä artikkelissa on yleiskuvaus lähetysten automaattisesta päivitystoiminnosta.
 author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3402a4c90299cf52e489e85ed55aff9762796545
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580093"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903750"
 ---
 # <a name="shipment-auto-updates"></a>Lähetyksen automaattiset päivitykset
 

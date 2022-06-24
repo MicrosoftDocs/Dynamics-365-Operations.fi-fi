@@ -1,6 +1,6 @@
 ---
 title: Sinetöityjen Commerce-itsepalvelukomponenttien joukkokäyttöönotto
-description: Tässä aiheessa kerrotaan, kuinka itsepalvelukomponentin asennusohjelman kehystä käytetään käyttöönottojen valvomattomaan asennukseen ja huoltoon.
+description: Tässä artikkelissa kerrotaan, kuinka itsepalvelukomponentin asennusohjelman kehystä käytetään käyttöönottojen valvomattomaan asennukseen ja huoltoon.
 author: jashanno
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 5cb27fd0ea366d12c8bd6ee1cdb0c6d584375862
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741542"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898576"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Sinetöityjen Commerce-itsepalvelukomponenttien joukkokäyttöönotto
 
 [!include [banner](../includes/banner.md)]
 
-Tämä aihe koskee suljettua kehystä, komponenttien asennusohjelmia, jotka julkaistaan kuukausittain versiosta 10.0.18 alkaen ja jotka ovat saatavilla jaetun omaisuuden kirjastossa, Microsoft Dynamics Lifecycle Servicesissä (LCS). Huomaa, että näiden uusien asennusohjelmien ensimmäiset useat julkaisuversiot on määritetty **(esiversiona)**. Tämän määrityksen ainoa tarkoitus on kuitenkin eritellä uudet asennusohjelmat, kun taas Microsoft määrittää, onko niitä varten käytössä muita toimintavaatimuksia. Se ei tarkoita, että asennusohjelmat eivät kelpaa tuotantoon. Näiden uusien asennusohjelmien julkaisun perusteella Microsoft aikoo poistaa vanhat asennusohjelmat lokakuussa 2023 tai sen jälkeen. 
+Tämä artikkeli koskee suljettua kehystä, komponenttien asennusohjelmia, jotka julkaistaan kuukausittain versiosta 10.0.18 alkaen ja jotka ovat saatavilla jaetun omaisuuden kirjastossa, Microsoft Dynamics Lifecycle Servicesissä (LCS). Huomaa, että näiden uusien asennusohjelmien ensimmäiset useat julkaisuversiot on määritetty **(esiversiona)**. Tämän määrityksen ainoa tarkoitus on kuitenkin eritellä uudet asennusohjelmat, kun taas Microsoft määrittää, onko niitä varten käytössä muita toimintavaatimuksia. Se ei tarkoita, että asennusohjelmat eivät kelpaa tuotantoon. Näiden uusien asennusohjelmien julkaisun perusteella Microsoft aikoo poistaa vanhat asennusohjelmat lokakuussa 2023 tai sen jälkeen. 
 
-Tässä aiheessa kerrotaan, miten uusia asennusohjelmia käytetään valvomattomien asennus- ja huoltopäivitysten suorittamiseen komentoriviargumenttien kautta. Näiden argumenttien avulla voit käyttää joukkokäyttöönottoja useilla eri tavoilla.
+Tässä artikkelissa kerrotaan, miten uusia asennusohjelmia käytetään valvomattomien asennus- ja huoltopäivitysten suorittamiseen komentoriviargumenttien kautta. Näiden argumenttien avulla voit käyttää joukkokäyttöönottoja useilla eri tavoilla.
 
 > [!NOTE]
 > Uusia itsepalvelumallin suljettuja asennusohjelmia ei voi käyttää pääkonttoreissa, ja niitä voi ladata vain LCS:n kautta.
@@ -108,7 +108,7 @@ Siirtyminen vanhasta itsepalvelukehyksen komponenttien asennusohjelmasta uusiin 
 
 ### <a name="before-you-begin"></a>Ennen aloittamista
 
-On tärkeää, että poistat vanhan, paikallisen ympäristön modernin myyntipisteen komponentin. Lisätietoja on siirtymisvaiheissa aiemmin tässä aiheessa.
+On tärkeää, että poistat vanhan, paikallisen ympäristön modernin myyntipisteen komponentin. Lisätietoja on siirtymisvaiheissa aiemmin tässä artikkelissa.
 
 ### <a name="examples-of-silent-deployment"></a>Esimerkkejä valvomattomasta käyttöönotosta
 
@@ -125,7 +125,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> Moderni POS ei vaadi määritystiedostoa. Asennusohjelmalla on nyt parametrit (jotka näkyvät aiemmin tässä ohjeaiheessa) niiden arvojen yhteydessä, joita käytetään laitteen aktivoinnin aikana.
+> Moderni POS ei vaadi määritystiedostoa. Asennusohjelmalla on nyt parametrit (jotka näkyvät aiemmin tässä artikkelissa) niiden arvojen yhteydessä, joita käytetään laitteen aktivoinnin aikana.
 
 Seuraava komento määrittää kaikki parametrit, joita on käytettävä laiteaktivoinnin aikana sen jälkeen, kun Moderni POS -sovellus on asennettu. Tässä esimerkissä käytetään **Houston-3**-rekisteriä, joka on yleisesti käytetty arvo Dynamics 365 Commerce -demotiedoissa.
 
@@ -145,7 +145,7 @@ Voit yhdistellä näitä käsitteitä haluamasi asennustuloksen saamiseksi.
 
 ### <a name="before-you-begin"></a>Ennen aloittamista
 
-On tärkeää, että poistat vanhan, paikallisen ympäristön hardware station -komponentin. Lisätietoja on siirtymisvaiheissa aiemmin tässä aiheessa. Ei ole enää Merchant Account Information Tool -työkalua. Sen sijaan myyjätilin tiedot asennetaan kassapäätteen asennuksen yhteydessä. On erittäin suositeltavaa suorittaa tämä komento ensimmäistä kertaa testattaessa asennusohjelmaa:
+On tärkeää, että poistat vanhan, paikallisen ympäristön hardware station -komponentin. Lisätietoja on siirtymisvaiheissa aiemmin tässä artikkelissa. Ei ole enää Merchant Account Information Tool -työkalua. Sen sijaan myyjätilin tiedot asennetaan kassapäätteen asennuksen yhteydessä. On erittäin suositeltavaa suorittaa tämä komento ensimmäistä kertaa testattaessa asennusohjelmaa:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -166,7 +166,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> Hardware station ei vaadi määritystiedostoa. Asennusohjelmalla on nyt parametrit (jotka näkyvät aiemmin tässä ohjeaiheessa) tarvittaville arvoille.
+> Hardware station ei vaadi määritystiedostoa. Asennusohjelmalla on nyt parametrit (jotka näkyvät aiemmin tässä artikkelissa) tarvittaville arvoille.
 
 Seuraava komento määrittää kaikki parametrit, joita tarvitaan edellytysten tarkistusten ohittamiseksi vakioasennuksen aikana. 
 
@@ -189,7 +189,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### <a name="before-you-begin"></a>Ennen aloittamista
 
-On tärkeää, että poistat vanhan, paikallisen ympäristön CSU-komponentin. Lisätietoja on siirtymisvaiheissa aiemmin tässä aiheessa.
+On tärkeää, että poistat vanhan, paikallisen ympäristön CSU-komponentin. Lisätietoja on siirtymisvaiheissa aiemmin tässä artikkelissa.
 
 ### <a name="examples-of-silent-deployment"></a>Esimerkkejä valvomattomasta käyttöönotosta
 

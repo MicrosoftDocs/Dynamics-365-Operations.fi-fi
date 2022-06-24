@@ -1,6 +1,6 @@
 ---
 title: Korotettujen kenttien määrittäminen Warehouse Managementin mobiilisovelluksen vaiheita varten
-description: Tässä aiheessa kuvataan, miten korotetaan ja korostetaan tiettyjä tietoja minkä tahansa Warehouse Managementin mobiilisovelluksen vaiheen osalta.
+description: Tässä artikkelissa kuvataan, miten korotetaan ja korostetaan tiettyjä tietoja minkä tahansa Warehouse Managementin mobiilisovelluksen vaiheen osalta.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857051"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Korotettujen kenttien määrittäminen Warehouse Managementin mobiilisovelluksen vaiheita varten
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Tässä aiheessa käsitellyt toiminnot koskevat vain uutta Warehouse Management -mobiilisovellusta. Niillä ei ole vaikutusta vanhaan varastosovellukseen, joka on nyt vanhentunut.
+> Tässä artikkelissa käsitellyt toiminnot koskevat vain uutta Warehouse Management -mobiilisovellusta. Niillä ei ole vaikutusta vanhaan varastosovellukseen, joka on nyt vanhentunut.
 
-Tässä aiheessa kuvataan, miten korotetaan ja korostetaan tiettyjä tietoja minkä tahansa Warehouse Managementin mobiilisovelluksen vaiheen osalta. Tämä ominaisuus auttaa kohdistamaan työntekijöiden huomiota tärkeimpiin kenttiin työnkulun suorittamisen aikana. Järjestelmänvalvojat voivat jokaisen prosessin vaiheen osalta valita, mitkä kentät korotetaan ja mitkä korostetaan.
+Tässä artikkelissa kuvataan, miten korotetaan ja korostetaan tiettyjä tietoja minkä tahansa Warehouse Managementin mobiilisovelluksen vaiheen osalta. Tämä ominaisuus auttaa kohdistamaan työntekijöiden huomiota tärkeimpiin kenttiin työnkulun suorittamisen aikana. Järjestelmänvalvojat voivat jokaisen prosessin vaiheen osalta valita, mitkä kentät korotetaan ja mitkä korostetaan.
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Korotettujen kenttien käyttöönotto järjestelmässä
 
@@ -44,7 +44,7 @@ Ennen kuin voit määrittää korotettuja kenttiä, sinun suoritettava seuraava 
     - **Moduuli:** *Varastonhallinta*
     - **Ominaisuuden nimi:** *Varastosovelluksen korotetut kentät*
 
-    Tämä ominaisuus kuvataan tässä aiheessa.
+    Tämä ominaisuus kuvataan tässä artikkelissa.
 
 1. Päivitä Warehouse Management -mobiilisovelluksen kenttänimet siirtymällä kohtaan **Varastonhallinta \> Määritys \> Mobiililaite \> Varastosovelluksen kenttänimet** ja valitsemalla **Luo oletusmääritys**. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
 1. Toista edellinen vaihe kullekin yritykselle, jossa käytät Warehouse Management -mobiilisovellusta.
@@ -56,7 +56,7 @@ Seuraavien ohjeiden avulla voit määrittää korottuja kenttiä.
 1. Luo valikkokohtainen ohitus kulloisellekin valikolle ja vaiheelle kohdan [Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen](mobile-app-titles-instructions.md) ohjeiden mukaisesti.
 1. Etsi muokattavat **Vaiheen tunnus**- ja **Valikkovaihtoehdon nimi** -arvot ja valitse sitten arvo **Vaiheen tunnus** -sarakkeessa.
 1. Valitse näkyviin tulevan sivun **Valitse korotetut kentät** -pikavälilehden työkalupalkin **Valitse kentät**.
-1. Valitse **Korotetut kentät** -valintaikkunassa kentät, jotka haluat korottaa. Voit myös korostaa enintään kaksi valituista kentistä. Korostetut kentät näytetään lihavoituna Warehouse Managementin mobiilisovelluksessa. Kun valitset kenttiä, ota huomioon, että joissakin näytöissä voi niiden koon vuoksi näkyä vain yksi tai kaksi ylimmistä korotetuista kentistä. Esimerkin näiden asetusten käyttämisestä löydät myöhemmin tässä aiheessa esitettävästä skenaariosta.
+1. Valitse **Korotetut kentät** -valintaikkunassa kentät, jotka haluat korottaa. Voit myös korostaa enintään kaksi valituista kentistä. Korostetut kentät näytetään lihavoituna Warehouse Managementin mobiilisovelluksessa. Kun valitset kenttiä, ota huomioon, että joissakin näytöissä voi niiden koon vuoksi näkyä vain yksi tai kaksi ylimmistä korotetuista kentistä. Esimerkin näiden asetusten käyttämisestä löydät myöhemmin tässä artikkelissa esitettävästä skenaariosta.
 
     > [!NOTE]
     > **Käytettävissä olevat kentät** -luettelo on rajattu kenttiin, jotka voivat tulla näkyviin valikkokohteen osalta. Muut tekijät (kuten nimikkeen kokoonpano) kuitenkin määrittävät, näkyykö kenttä todella Warehouse Managementin mobiilisovelluksessa. Jos olet määrittänyt korotettuja kenttiä, vain valitut kentät näkyvät Warehouse Managementin mobiilisovelluksen pääsivulla. Työntekijät voivat kuitenkin tarkastella muitakin kenttiä napauttamalla tietosivua.

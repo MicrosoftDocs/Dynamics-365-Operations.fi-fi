@@ -1,6 +1,6 @@
 ---
 title: Tuotedimensioiden näyttöasetusten kohdistaminen
-description: Tässä ohjeaiheessa kerrotaan tuotedimensioiden näyttöasetuksista ja niiden käytöstä Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa kerrotaan tuotedimensioiden näyttöasetuksista ja niiden käytöstä Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 ms.date: 05/28/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80a0861c51ea14ddb6bce02d757667adac34e740cd04311e26211d9bdbae4ed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d7575e205a9732259b00e424f66eeadfe8c659ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899172"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Tuotedimensioiden näyttöasetusten kohdistaminen
 
 [!include [banner](includes/banner.md)]
 
 
-Tässä ohjeaiheessa kerrotaan tuotedimensioiden näyttöasetuksista ja niiden käytöstä Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kerrotaan tuotedimensioiden näyttöasetuksista ja niiden käytöstä Microsoft Dynamics 365 Commercessa.
 
 Dynamics 365 Commerce tukee koko-, tyyli- ja väridimensioita, jotta tuotemuuttujat erotetaan toisistaan. Dimensiot näytetään yleensä tekstiarvoina, kuten "pieni", "keskikokoinen" ja "suuri" kokoja varten, ja väreistä "musta" ja "ruskea". Jos tuote tukee useita muunnelmia, tuotemuuttujan selaaminen voi olla vaikeaa, koska kunkin muuttujan kuvan tarkasteleminen edellyttää useita valintoja. Commercen versio 10.0.20 voi helpottaa tuotemuuttujan selaamista, koska se käyttää kuvia ja heksadesimaalikoodeja (hex) dimensioiden näyttämiseen väriruutuina.
 

@@ -1,6 +1,6 @@
 ---
 title: Myyntipisteen asiakastilaukset
-description: Tässä aiheessa on tietoja myyntipisteen asiakastilauksista. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
+description: Tässä artikkelissa on tietoja myyntipisteen asiakastilauksista. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Artikkeli sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982815"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850379"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Myyntipisteen asiakastilaukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja asiakastilauksen luomisesta ja hallinnasta myyntipistesovelluksessa. Asiakastilauksia voi käyttää myynnin tallentamisessa silloin, kun ostajat haluavat noutaa tuotteet myöhemmin, noutaa ne eri sijainnista tai valita nimikkeiden toimituksen. 
+Tässä artikkelissa on tietoja asiakastilauksen luomisesta ja hallinnasta myyntipistesovelluksessa. Asiakastilauksia voi käyttää myynnin tallentamisessa silloin, kun ostajat haluavat noutaa tuotteet myöhemmin, noutaa ne eri sijainnista tai valita nimikkeiden toimituksen. 
 
 Monikanavaisessa kaupan maailmassa monet vähittäiskauppiaat tarjoavat asiakastilausten eli erikoistilausten mahdollisuuden täyttääkseen erilaisia eri tuote- ja palveluvaatimuksia. Seuraavassa on joitakin tyypillisiä skenaarioita:
 

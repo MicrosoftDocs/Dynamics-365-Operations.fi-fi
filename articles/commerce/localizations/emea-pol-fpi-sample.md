@@ -1,6 +1,6 @@
 ---
 title: Näyte verotusta varten olevan tulostimen integroinnista Puolassa
-description: Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Puola).
+description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Puola).
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076833"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876946"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Näyte verotusta varten olevan tulostimen integroinnista Puolassa
 
 [!include[banner](../includes/banner.md)]
 
-Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Puola).
+Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Puola).
 
 Puolan Dynamics 365 Commerce -toiminnot sisältävät esimerkki-integroinnit myyntipisteestä verotulostimeen. Esimerkki laajentaa [verointegraation toimintoja](fiscal-integration-for-retail-channel.md) ja tukee [Posnet Polska S.A](https://www.posnet.com.pl):n verotulostimia varten POSNET THERMAL HD 2.02 -protokollaa. Esimerkki ottaa käyttöön tietoliikenteen verotulostimen kanssa, joka on yhdistetty COM-portin kautta alkuperäisen ohjelmistoajurin avulla. Se on otettu käyttöön ja testattu käyttäen Posnetin Posnet Thermal HD FV EJ -verotulostinta varten toimittamaa ohjelmistoemulaattoria. Näyte toimitetaan lähdekoodin muodossa, ja se on osa Retail-ohjelmiston kehityssarjaa (SDK).
 

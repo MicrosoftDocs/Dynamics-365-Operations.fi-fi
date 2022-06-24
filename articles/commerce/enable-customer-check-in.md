@@ -1,6 +1,6 @@
 ---
-title: Asiakkaan sisäänkuittausilmoitusten ottaminen käyttöön myyntipisteessä
-description: Tässä aiheessa kuvataan, kuinka asiakkaan sisäänkuittausilmoitukset otetaan käyttöön Microsoft Dynamics 365 Commerce -myyntipisteessä (POS).
+title: Ota käyttöön asiakkaan sisäänkuittausten ilmoitukset myyntipisteissä
+description: Tässä artikkelissa kuvataan, kuinka asiakkaan sisäänkuittausilmoitukset otetaan käyttöön Microsoft Dynamics 365 Commerce -myyntipisteessä (POS).
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983158"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885142"
 ---
-# <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Asiakkaan sisäänkuittausilmoitusten ottaminen käyttöön myyntipisteessä
+# <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Ota käyttöön asiakkaan sisäänkuittausten ilmoitukset myyntipisteissä
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka asiakkaan sisäänkuittausilmoitukset otetaan käyttöön Microsoft Dynamics 365 Commerce -myyntipisteessä (POS).
+Tässä artikkelissa kuvataan, kuinka asiakkaan sisäänkuittausilmoitukset otetaan käyttöön Microsoft Dynamics 365 Commerce -myyntipisteessä (POS).
 
 Organisaatiot voivat lähettää sähköpostien "Tilaus valmis noudettavaksi" -sähköpostiviestissä linkin tai painikkeen, jonka avulla asiakkaat ilmoittavat myymälälle, että he ovat paikan päällä ja odottavat paketin tuontia. Tämän jälkeen asiakkaat saavat sisäänkuittausvahvistuksen, ja myymälä saa ilmoituksen tehtävänä myyntipistesovelluksessa. Tämä tehtävä toimii kehotteena myyntiedustajalle toimittaa tilaus asiakkaan ajoneuvoon. Asiakkaan ei siis tarvitse mennä sisään myymälään.
 
@@ -70,7 +70,7 @@ Voit testata asiakkaan sisään sisäänkirjautumisominaisuuden noudattamalla se
 1. Kirjaa sivu sisään, mutta älä julkaise sitä.
 1. Lisää seuraava linkki sähköpostimalliin, jonka pakkaus on valmis -ilmoitustyyppi kutsuu noutotavalle. Lue lisätietoja kohdasta [Tapahtuman tapahtumien sähköpostimallien luominen](email-templates-transactions.md).
 
-    - **Esituotantoympäristöihin (UAT):** Lisää koodin katkelma aiemmin tässä ohjeaiheessa kuvatusta [Tapahtumasähköpostimallien määrittäminen](#configure-the-transactional-email-template) -osasta.
+    - **Esituotantoympäristöihin (UAT):** Lisää koodin katkelma aiemmin tässä artikkelissa kuvatusta [Tapahtumasähköpostimallien määrittäminen](#configure-the-transactional-email-template) -osasta.
     - **Tuotantoympäristöissä:** Lisää seuraava huomautuskoodi, jotta asiakkaalla ei ole vaikutusta aiemmin luotuihin asiakkaisiin.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

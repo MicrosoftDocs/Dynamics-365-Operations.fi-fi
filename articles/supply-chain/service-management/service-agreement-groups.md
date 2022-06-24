@@ -1,6 +1,6 @@
 ---
 title: Huoltosopimusten yleiskatsaus
-description: Tässä aiheessa on yhteenveto huoltosopimusten toiminnasta.
+description: Tässä artikkelissa on yhteenveto huoltosopimusten toiminnasta.
 author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc0be99cf492d672f9eaecff25c93b700e7ed230
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5566f559da6340a82ca015fb5dee2dae7887202e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862450"
 ---
 # <a name="service-agreements-overview"></a>Huoltosopimusten yleiskatsaus
 
@@ -35,7 +35,7 @@ Voit määrittää **Huoltohallinnan parametrit** -sivun **Huoltosopimusryhmä**
 - Olet määrittänyt yritykselle kolme sopimusryhmää: Kulta, Hopea ja Pronssi.
 - Yritykseen on palkattu uusi palvelutilipäällikkö. Huoltopäällikkö vastaa kaikista Kulta-sopimusryhmän asiakkaista. Suodattamalla Kulta-sopimusryhmän tietueet voit etsiä kaikki sopimukset, joihin on päivitettävä uuden huoltopäällikön tiedot.
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Huoltosopimusryhmien luominen](create-service-agreement-groups.md)
 

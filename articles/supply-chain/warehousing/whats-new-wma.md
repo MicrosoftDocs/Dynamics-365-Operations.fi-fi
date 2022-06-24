@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
-description: Tässä aiheessa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
+description: Tässä artikkelissa luetellaan jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version uudet ja muuttuneet ominaisuudet.
 author: Mirzaab
 ms.date: 04/25/2022
 ms.topic: article
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c79b18d24c8b9cb90a570496882fdfe91dc6ba51
-ms.sourcegitcommit: a4dc7d170f1504631127c3e92af0c6b03468d375
+ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/02/2022
-ms.locfileid: "8661822"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945720"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+Tässä artikkelissa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20240"></a>Versio 2.0.24.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Parannellut skannerisivut lukuvaihtoehdon käyttöön ottamiseksi **Erittely**-sivuilla.
+- Parannetut eleet, kuten kosketus-/napautusnäyttö.
+- Parannetut suorituskykyongelmat kohteelle Android.
+- Korjattu useiden ylätunnisteiden sijainti, jonka avulla useammat kortit voivat näkyä **Kysely**-sivulla.
+- Parannettu vierittäminen siten, että vierityksen sivutukselle on käytössä pienempi etäisyys.
+- Lisätty pitkä painallus, joka tuo lisätekstin näkyviin **Kysely**-sivulla.
+- Korjattu puuttuvat laitetunnustiedot kohteelle Android.
+- Parempi vakaus.
+- Optimoitu kirjautumisasettelu.
+- Lisätty oikealle sipaisun ele numeronäppäimistön, **erittely** sivun ja syöttösivujen ponnahdusikkunasivujen sulkemiseksi.
 
 ## <a name="version-20220"></a>Versio 2.0.22.0
 

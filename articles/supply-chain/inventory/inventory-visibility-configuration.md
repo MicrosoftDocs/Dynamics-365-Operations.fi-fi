@@ -1,8 +1,8 @@
 ---
-title: Varaston näkyvyyden määrittäminen
-description: Tässä aiheessa käsitellään varaston näkyvyyden määrittämistä.
+title: Inventory Visibilityn määrittäminen
+description: Tässä artikkelissa käsitellään varaston näkyvyyden määrittämistä.
 author: yufeihuang
-ms.date: 12/09/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895812"
 ---
-# <a name="configure-inventory-visibility"></a>Varaston näkyvyyden määrittäminen
+# <a name="configure-inventory-visibility"></a>Inventory Visibilityn määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä aiheessa käsitellään varaston näkyvyyden määrittämistä varaston näkyvyyssovelluksen avulla Power Appsissa.
+Tässä artikkelissa käsitellään varaston näkyvyyden määrittämistä varaston näkyvyyssovelluksen avulla Power Appsissa.
 
 ## <a name="introduction"></a><a name="introduction"></a>Johdanto
 
-Ennen varaston näkyvyyssovelluksen käytön aloittamista on tehtävä seuraavat määritykset tässä aiheessa kuvatulla tavalla:
+Ennen varaston näkyvyyssovelluksen käytön aloittamista on tehtävä seuraavat määritykset tässä artikkelissa kuvatulla tavalla:
 
 - [Tietolähteen määritykset](#data-source-configuration)
 - [Osion määritykset](#partition-configuration)
@@ -41,7 +41,7 @@ Varaston näkyvyyden apuohjelma on asennettava ja määritettävä ennen aloitta
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Varaston näkyvyyssovelluksen määrityssivu
 
-Power Appsissa [varaston näkyvyyssovelluksen](inventory-visibility-power-platform.md) **Määritys**-sivu auttaa määrittämään käytettävissä olevan varaston ja alustavan varauksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin arvon (`fno`-tietolähde). Oletusasetukset voidaan tarkistaa. Määritystä voidaan lisäksi muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä. Tämän ohjeaiheen jäljellä olevissa osissa selitetään, miten kutakin **Määritys**-sivun osaa käytetään.
+Power Appsissa [varaston näkyvyyssovelluksen](inventory-visibility-power-platform.md) **Määritys**-sivu auttaa määrittämään käytettävissä olevan varaston ja alustavan varauksen. Kun apuohjelma on asennettu, oletusmääritys sisältää Microsoft Dynamics 365 Supply Chain Managementin arvon (`fno`-tietolähde). Oletusasetukset voidaan tarkistaa. Määritystä voidaan lisäksi muokata liiketoimintatarpeiden ja ulkoisen järjestelmän varastokirjaustarpeiden mukaan siten, että useissa järjestelmissä käytetään standardoitua varastomuutosten kirjausta, järjestämistä ja kyselyä. Tämän artikkelin jäljellä olevissa osissa selitetään, miten kutakin **Määritys**-sivun osaa käytetään.
 
 Kun määritykset on tehty, muista valita sovelluksessa **Päivitä määritys**.
 
@@ -54,6 +54,7 @@ Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominai
 | *OnHandReservation* | Tämä ominaisuus auttaa sinua luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Tämä valinnainen ominaisuus ottaa käyttöön käytettävissä olevan vaihtoaikataulun ja luvattavissa olevan määrän (ATP) ominaisuudet. Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulu ja luvattavissa ole aikataulu](inventory-visibility-available-to-promise.md). |
+| *Varaus* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys voi mahdollistaa varaston suojauksen (ringfencing) ja ylimyynnin hallinnan. Lisätietoja on kohdassa [Varaston näkyvyyden varaston kohdistus](inventory-visibility-allocation.md). |
 | *Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys tukee nimikkeitä, jotka on otettu käyttöön varaston lisäprosesseissa (WHS-nimikkeet). Lisätietoja on kohdassa [Varaston näkyvyyden tuki WHS-nimikkeille](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Palvelun päätepisteen etsiminen
@@ -318,7 +319,14 @@ Tuotehierarkiaindeksi määritetään seuraavasti:
 1. Indeksiluettelo annetaan oletusarvoisesti. Muokkaa aiemmin luotua indeksiä valitsemalla **Muokkaa** tai **Lisää** kyseisen indeksin kohdalla. Luo uusi indeksijoukko valitsemalla **Uusi indeksijoukko**. Tee indeksijoukon kunkin rivin **Dimensio**-kentässä valinta perusdimensioluettelossa. Seuraavien kenttien arvot luodaan automaattisesti:
 
     - **Joukon numero** – samaan ryhmään (indeksiin) kuuluvat dimensiot ryhmitellään yhteen ja niille määritetään sama joukon numero.
-    - **Hierarkia** – Hierarkian avulla määritetään tuetut dimensioyhdistelmät, joissa voidaan tehdä kyselyjä dimensioryhmässä (indeksissä). Jos määritetään esimerkiksi dimensioryhmä, jonka hierarkia järjestys on *tyyli*, *väri* ja *koko*, järjestelmän tukee kolmen kyselyryhmän tuloksia. Ensimmäinen ryhmä on vain tyyli. Toinen ryhmä on tyylin ja värin yhdistelmä. Kolmas ryhmä on puolestaan tyylin, värin ja koon yhdistelmä. Muita yhdistelmiä ei tueta.
+    - **Hierarkia** – Hierarkian avulla määritetään tuetut dimensioyhdistelmät, joissa voidaan tehdä kyselyjä dimensioryhmässä (indeksissä). Jos määritetään esimerkiksi dimensioryhmä, jonka hierarkiajärjestys on *tyyli*, *väri* ja *koko*, järjestelmän tukee kolmen kyselyryhmän tuloksia. Ensimmäinen ryhmä on vain tyyli. Toinen ryhmä on tyylin ja värin yhdistelmä. Kolmas ryhmä on puolestaan tyylin, värin ja koon yhdistelmä. Muita yhdistelmiä ei tueta.
+
+> [!TIP]
+> Seuraavassa on muutamia vinkkejä, jotka on hyvä pitää mielessä, kun määrität indeksihierarkiaa:
+>
+> - Osiomäärityksessä määritettyjä perusdimensioita ei saa määrittää indeksimäärityksissä. Jos indeksikonfiguraatiossa on määritetty uudelleen perusdimensio, tällä indeksillä ei voi tehdä kyselyä.
+> - Jos sinun tarvitsee kysellä vain varastoa, joka koostetaan kaikkien dimensioyhdistelmien perusteella, voit määrittää yksittäisen hakemiston, joka sisältää perusdimension `Empty`.
+> - Sinulla on oltava vähintään yksi indeksihierarkia (esimerkiksi joka sisältää perusdimension `Empty`), muussa tapauksessa kyselyt epäonnistuvat virheellä "Indeksihierarkiaa ei ole määritetty".
 
 ### <a name="example"></a>Esimerkki
 
@@ -372,11 +380,6 @@ Indeksin antaa mahdollisuuden tehdä kyselyjä käytettävissä olevassa varasto
     - T-paita, punainen, S, normaali, 6
     - T-paita, punainen, L, normaali, 7
 
-> [!NOTE]
-> Osiomäärityksessä määritettyjä perusdimensioita ei saa määrittää indeksimäärityksissä.
-> 
-> Jos sinun tarvitsee kysellä vain varastoa, joka koostetaan kaikkien dimensioyhdistelmien perusteella, voit määrittää yksittäisen hakemiston, joka sisältää perusdimension `Empty`.
-
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Varausmääritykset (valinnainen)
 
 Varausmääritys on välttämätön, jos alustavaa varaustoimintoa halutaan käyttää. Määrityksessä on kaksi keskeistä osaa:
@@ -390,7 +393,7 @@ Varausta tehtäessä halutaan ehkä tietää, riittääkö käytettävissä olev
 
 Kun yhdistämismääritys määritetään fyysisestä mitasta laskennalliseen mittaan, varaston näkyvyyspalvelu voi tarkistaa automaattisesti varauksen saatavuuden fyysisen mitan perusteella.
 
-Ennen kuin tämä yhdistämismääritys voidaan määrittää, fyysiset mitat, laskennalliset mitat ja niiden tietolähteet on määritettävä Power Appsin **Määritys**-sivun **Tietolähde**- ja **Laskennallinen mitta** -välilehdissä (aiemmin tässä aiheessa kuvatulla tavalla).
+Ennen kuin tämä yhdistämismääritys voidaan määrittää, fyysiset mitat, laskennalliset mitat ja niiden tietolähteet on määritettävä Power Appsin **Määritys**-sivun **Tietolähde**- ja **Laskennallinen mitta** -välilehdissä (aiemmin tässä artikkelissa kuvatulla tavalla).
 
 Alustavan varauksen yhdistämismääritys määritetään seuraavasti:
 
@@ -718,7 +721,7 @@ Laskennallinen `AvailQuantity`-mitta määritetään `pos`-tietolähteelle kuten
 |---|---|---|
 | Lisäys | `fno` | `AvailPhysical` |
 | Lisäys | `pos` | `PosInbound` |
-| Vähennyslasku | `pos` | `PosOutbound` |
+| Vähennys | `pos` | `PosOutbound` |
 
 #### <a name="configuration-of-the-iom-data-source"></a>iom-tietolähteen määritykset
 

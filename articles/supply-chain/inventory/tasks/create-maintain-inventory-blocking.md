@@ -1,6 +1,6 @@
 ---
 title: Luo ja ylläpidä varastoesto
-description: Tässä aiheessa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla.
+description: Tässä artikkelissa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bad7d4e5794dc543bd750912ef0d3e4460e611b1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ba95b689bedfc76598dfa81548a074f4fb7c833a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572838"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859340"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Luo ja ylläpidä varastoesto
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla. Aloita tämän aiheen menettelyt vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.
+Tässä artikkelissa kerrotaan, miten fyysisen käytettävissä olevan varaston varaaminen estetään muilta lähteviltä asiakirjoilta varastoeston avulla. Aloita tämän artikkelin menettelyt vasta, kun käytettävissä on fyysistä käytettävissä olevaa varastoa omaava nimike.
 
 ## <a name="block-inventory"></a>Varastoesto
 

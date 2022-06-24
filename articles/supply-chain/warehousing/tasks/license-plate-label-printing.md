@@ -1,6 +1,6 @@
 ---
 title: Rekisterikilven etiketin tulostuksen ottaminen käyttöön
-description: Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti voidaan tulostaa automaattisesti varastosta viimeksi kerätyn nimikkeen jälkeen myynnin keräystyöprosessissa.
+description: Tässä artikkelissa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti voidaan tulostaa automaattisesti varastosta viimeksi kerätyn nimikkeen jälkeen myynnin keräystyöprosessissa.
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b3895961f1f682a3fd06800a83a497afaf2fa65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dec552cac505b3fdc24dd453dbf723fa1d009ced
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903663"
 ---
 # <a name="enable-license-plate-label-printing"></a>Rekisterikilven etiketin tulostuksen ottaminen käyttöön
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti voidaan tulostaa automaattisesti varastosta viimeksi kerätyn nimikkeen jälkeen myynnin keräystyöprosessissa. Voit suorittaa tämän menettelyn esittely-yrityksessä USMF. Jos suoritit menettelyn omien tietojen avulla, rekisterikilville on määritettävä numerosarja. Määritä etikettitulostin, ennen kuin aloitat tämän tehtävän. Valitse Organisaation hallinta > Asetukset > Verkkotulostimet. Valitse toimintoruudussa Asetukset ja valitse sitten Lataa asiakirjan reititysagentin asennusohjelma -painike. Suorita asennusohjelma ja varmista, että toimiva verkkotulostin on määritetty aktiiviseksi, ennen kuin jatkat.
+Tässä artikkelissa näytetään, miten sarjatoimitusyksikkökoodin (SSCC) etiketti voidaan tulostaa automaattisesti varastosta viimeksi kerätyn nimikkeen jälkeen myynnin keräystyöprosessissa. Voit suorittaa tämän menettelyn esittely-yrityksessä USMF. Jos suoritit menettelyn omien tietojen avulla, rekisterikilville on määritettävä numerosarja. Määritä etikettitulostin, ennen kuin aloitat tämän tehtävän. Valitse Organisaation hallinta > Asetukset > Verkkotulostimet. Valitse toimintoruudussa Asetukset ja valitse sitten Lataa asiakirjan reititysagentin asennusohjelma -painike. Suorita asennusohjelma ja varmista, että toimiva verkkotulostin on määritetty aktiiviseksi, ennen kuin jatkat.
 
 
 ## <a name="set-up-the-gs1-company-prefix"></a>Yrityksen GS1-etuliitteen määrittäminen

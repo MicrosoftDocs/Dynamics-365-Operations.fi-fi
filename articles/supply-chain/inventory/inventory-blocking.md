@@ -1,6 +1,6 @@
 ---
 title: Varastoesto
-description: Tässä aiheessa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
+description: Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
 author: yufeihuang
 ms.date: 03/02/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 606bc23f552b57d0f4e3fdad28d1144cdf43e5d5
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103535"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857805"
 ---
 # <a name="inventory-blocking"></a>Varastoesto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
+Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
 
 Voit estää varastonimikkeitä seuraavilla tavoilla:
 

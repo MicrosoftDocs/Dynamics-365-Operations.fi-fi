@@ -1,6 +1,6 @@
 ---
 title: Asiakirjan tilat ja elinkaari
-description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen sivuelementtien eri asiakirjatiloista.
+description: Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Commercen sivuelementtien eri asiakirjatiloista.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ad8547fe6b36caf75ce78cb09fb2caf901c63afe43fa4755bb9e5c69427829d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04836ecf80fc86ab6abb96e4255779c8c03988d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909455"
 ---
 # <a name="document-states-and-lifecycle"></a>Asiakirjan tilat ja elinkaari
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen sivuelementtien eri asiakirjatiloista.
+Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Commercen sivuelementtien eri asiakirjatiloista.
 
 ## <a name="document-state-descriptions"></a>Asiakirjan tilan kuvaukset
 
-[Sivuelementit](page-elements-overview.md)-ohjeaiheessa on sisällönhallintajärjestelmän (CMS) eri asiakirjatyyppejä. Näillä asiakirjatyypeillä voi olla useita tiloja muokkaustyökalussa. Asiakirjan tilat auttavat estämään tietoristiriitoja ja ottavat käyttöön versionhallinnan. Ne määrittävät, ketkä voivat muuttaa asiakirjoja, milloin asiakirjoja voi muuttaa ja milloin muut voivat tarkastella muutoksia.
+[Sivuelementit](page-elements-overview.md)-artikkelissa on sisällönhallintajärjestelmän (CMS) eri asiakirjatyyppejä. Näillä asiakirjatyypeillä voi olla useita tiloja muokkaustyökalussa. Asiakirjan tilat auttavat estämään tietoristiriitoja ja ottavat käyttöön versionhallinnan. Ne määrittävät, ketkä voivat muuttaa asiakirjoja, milloin asiakirjoja voi muuttaa ja milloin muut voivat tarkastella muutoksia.
 
 Seuraavassa taulukossa esitetään sivuelementtien mahdolliset asiakirjojen tilat Commercessa.
 

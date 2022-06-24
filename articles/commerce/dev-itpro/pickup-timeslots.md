@@ -1,6 +1,6 @@
 ---
 title: Asiakasnoudon ajankohtien luominen ja päivittäminen
-description: Tässä aiheessa kuvataan, miten asiakasnoudon aikavälit luodaan, määritetään ja päivitetään Commerce Headquarters -sovelluksessa.
+description: Tässä artikkelissa kuvataan, miten asiakasnoudon aikavälit luodaan, määritetään ja päivitetään Commerce Headquarters -sovelluksessa.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a135f592225e4b388b5c9fdaa5fe23e60baf0185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713418"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882230"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Asiakasnoudon ajankohtien luominen ja päivittäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten asiakasnoudon aikavälit luodaan, määritetään ja päivitetään Commerce Headquarters -sovelluksessa.
+Tässä artikkelissa kuvataan, miten asiakasnoudon aikavälit luodaan, määritetään ja päivitetään Commerce Headquarters -sovelluksessa.
 
 Aikaväliominaisuuden avulla jälleenmyyjät voivat määrittää aikavälin nimikkeille, joille asiakasnouto-toimitustapa on otettu käyttöön. Aikavälien avulla jälleenmyyjät voivat määrittää päivät ja ajat, jolloin tilaukset voidaan noutaa myymälästä. Vähittäiskauppiaat voivat myös määrittää tilausten määrän, joka voidaan noutaa tietyn jakson aikana. Näin vähittäiskauppiaat voivat rajoittaa tiettynä päivänä ja tiettynä ajankohtana kerättävissä olevien tilausten määrää. Tuloksena on laadukkaampi kokemus asiakkaille.
 

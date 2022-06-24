@@ -1,6 +1,6 @@
 ---
 title: Luo ostotilaus, jolla on toimitusaikataulu
-description: Tässä ohjeessa esitellään, miten ostotilaukselle luodaan toimitusaikataulu.
+description: Tässä artikkelissa esitellään, miten ostotilaukselle luodaan toimitusaikataulu.
 author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e13103f374be838a5ea0fb5e08c449b419905cab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677447"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875243"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Luo ostotilaus, jolla on toimitusaikataulu
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeessa esitellään, miten ostotilaukselle luodaan toimitusaikataulu. Toimitusaikataulua käytetään, kun tilauksen tai kirjauskansion määrä pyydetään toimittamaan useissa lähetyksissä. Tämän oppaan esimerkissä käytetään esittely-yritys USMF:n tietoja. Tämä on yleensä ostoedustajan tehtävä.
+Tässä artikkelissa esitellään, miten ostotilaukselle luodaan toimitusaikataulu. Toimitusaikataulua käytetään, kun tilauksen tai kirjauskansion määrä pyydetään toimittamaan useissa lähetyksissä. Tämän oppaan esimerkissä käytetään esittely-yritys USMF:n tietoja. Tämä on yleensä ostoedustajan tehtävä.
 
 ## <a name="create-a-delivery-schedule"></a>Toimitusaikataulun luominen
 1. Siirry siirtymisruudussa kohtaan **Moduulit > Hankinta > Ostotilaukset > Kaikki ostotilaukset**.

@@ -1,6 +1,6 @@
 ---
 title: Luokitusten ja arvostelujen tuominen ja vieminen
-description: Tässä aiheessa kuvataan, kuinka tuoteluokituksia ja -arvioita tuodaan ja viedään Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa kuvataan, kuinka tuoteluokituksia ja -arvioita tuodaan ja viedään Microsoft Dynamics 365 Commercessa.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 3ae85f21f7a78d56621aed60527207badcee9c75
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 97407f62d462c0ae370e9ea0d2799d3f30ecacfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863398"
 ---
 # <a name="import-and-export-ratings-and-reviews"></a>Luokitusten ja arvostelujen tuominen ja vieminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka tuoteluokituksia ja -arvioita tuodaan ja viedään Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kuvataan, kuinka tuoteluokituksia ja -arvioita tuodaan ja viedään Microsoft Dynamics 365 Commercessa.
 
 Dynamics 365 Commerce tarjoaa [luokitukset ja arvostelut](ratings-reviews-overview.md) monikanavaratkaisuna. Kun siirryt Dynamics 365 Commercen luokituksiin ja arviointiratkaisuun, haluat ehkä siirtää aiemmin luodut luokitukset ja arviot tiedot Commerce-alustalle. Voit myös viedä Commercen luokituksia ja arvioita liiketoimintavaatimusten mukaan. Power Automaten liittimen avulla voit tuoda luokituksia ja arvioita Commerceen ja viedä ne Commercesta.
 

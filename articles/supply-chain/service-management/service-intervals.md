@@ -1,6 +1,6 @@
 ---
 title: Huoltovälit
-description: Tässä aiheessa on yhteenveto huoltovälien käyttämisestä. Huoltosopimusväli ilmaisee tiheyden, jolla huoltosopimusriveille luodaan huoltotilausrivejä, kun huoltotilaukset luodaan automaattisesti.
+description: Tässä artikkelissa on yhteenveto huoltovälien käyttämisestä. Huoltosopimusväli ilmaisee tiheyden, jolla huoltosopimusriveille luodaan huoltotilausrivejä, kun huoltotilaukset luodaan automaattisesti.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df15340a82bf36f67baa7195e2e318a4216d2c56
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 62708258ac3dca9ac03b44efdc96e3bfd643a255
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887222"
 ---
 # <a name="service-intervals"></a>Huoltovälit
 
@@ -87,7 +87,7 @@ Koska huoltotilausta ei ole ryhmitelty (jonka määrittää **Yhdistä huoltotil
 
 **Luo huoltotilaukset** -valintaikkunassa määritetylle aikavälille on luotu kolme huoltotilausriviä. Voit tarkastella huoltotilausrivejä **Huoltosopimukset**-sivulla (**toimintoruutu** \> **Toimita**-välilehti \>**Näytä**-painike).
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Huoltovälien määrittäminen](set-up-service-intervals.md)  
 

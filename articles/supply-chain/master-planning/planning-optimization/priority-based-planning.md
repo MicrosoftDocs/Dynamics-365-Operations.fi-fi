@@ -1,6 +1,6 @@
 ---
 title: Prioriteettipohjainen suunnittelu
-description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta.
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873808"
 ---
 # <a name="priority-based-planning"></a>Prioriteettipohjainen suunnittelu
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta. Tämä ominaisuus lisää kysyntäperustaisen suunnittelun tuen, mikä on yksi kysyntäperustaisen tarvelaskennan (DDMRP) vaihe. Prioriteettipohjaisessa suunnittelussa suunnittelun optimointi voi luoda suunnittelun prioriteetteihin eikä tarvepäiviin perustuvia suunniteltuja tilauksia.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta. Tämä ominaisuus lisää kysyntäperustaisen suunnittelun tuen, mikä on yksi kysyntäperustaisen tarvelaskennan (DDMRP) vaihe. Prioriteettipohjaisessa suunnittelussa suunnittelun optimointi voi luoda suunnittelun prioriteetteihin eikä tarvepäiviin perustuvia suunniteltuja tilauksia.
 
 Prioriteettipohjaisessa suunnittelussa voidaan priorisoida täydennystilaukset, mikä varmistaa, että kiireinen tarve priorisoidaan vähemmän tärkeän tarpeen kustannuksella. Niinpä esimerkiksi negatiivisen varaston täydennystilaus priorisoidaan tavalliseen täydennyksen täyttötilaukseen nähden. Järjestelmä vo jakaa suuret tilaukset automaattisesti pienemmiksi tilauksiksi, joissa tilausrivit ryhmitellään prioriteetin mukaan. Sen jälkeen kaikki korkean prioriteetin tilaukset voidaan käsitellä ensin.
 

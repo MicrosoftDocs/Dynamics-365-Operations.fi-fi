@@ -1,6 +1,6 @@
 ---
 title: Mobiililaitteen valikkovaihtoehdon määrittäminen tuottamaan keräilyrivin yhteenvedon
-description: Tässä ohjeaiheessa selitetään, miten voit määrittää, milloin kaikkien työrivien luettelo näytetään varastotyöntekijöille, jotka käsittelevät varastotyötä mobiililaitteilla. Tämä ominaisuus voi olla hyödyllinen varastotyöntekijöille, jotka tarvitsevat usein yhteenvedon työtilauksen keräilyriveistä, jotta he voivat optimoida keräilyjärjestyksen.
+description: Tässä artikkelissa selitetään, miten voit määrittää, milloin kaikkien työrivien luettelo näytetään varastotyöntekijöille, jotka käsittelevät varastotyötä mobiililaitteilla. Tämä ominaisuus voi olla hyödyllinen varastotyöntekijöille, jotka tarvitsevat usein yhteenvedon työtilauksen keräilyriveistä, jotta he voivat optimoida keräilyjärjestyksen.
 author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885664"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Mobiililaitteen valikkovaihtoehdon määrittäminen tuottamaan keräilyrivin yhteenvedon
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten määritetään keräilyrivien mobiililaitteille tarkoitettuun yhteenvetoon liittyvät valikkovaihtoehdot, joita käytetään keräilytyön käsittelyssä. Keräilyrivin yhteenvedon avulla varastotyöntekijät pystyvät tarkastelemaan ja valitsemaan töitä luettelosta, joka sisältää kaikki heidän kulloiseenkin tehtäväänsä liittyvät työrivit. Tämä ominaisuus voi auttaa työntekijöitä optimoimaan keräilyjärjestyksensä. Toiminto sisältää vaihtoehtoja vakiomuotoisen **Ohitus**-painikkeen korvaamiseksi. Tällä painikkeella työntekijät voivat käydä rivit läpi yksi kerrallaan kiinteässä järjestyksessä. (Painikkeen käyttäminen on kuitenkin edelleen mahdollista.)
+Tässä artikkelissa selitetään, miten määritetään keräilyrivien mobiililaitteille tarkoitettuun yhteenvetoon liittyvät valikkovaihtoehdot, joita käytetään keräilytyön käsittelyssä. Keräilyrivin yhteenvedon avulla varastotyöntekijät pystyvät tarkastelemaan ja valitsemaan töitä luettelosta, joka sisältää kaikki heidän kulloiseenkin tehtäväänsä liittyvät työrivit. Tämä ominaisuus voi auttaa työntekijöitä optimoimaan keräilyjärjestyksensä. Toiminto sisältää vaihtoehtoja vakiomuotoisen **Ohitus**-painikkeen korvaamiseksi. Tällä painikkeella työntekijät voivat käydä rivit läpi yksi kerrallaan kiinteässä järjestyksessä. (Painikkeen käyttäminen on kuitenkin edelleen mahdollista.)
 
 Järjestelmänvalvojat voivat määrittää kunkin valikkovaihtoehdon erikseen ja hallita miten, milloin ja missä varastonhallinnan mobiilisovellus esittää keräilyrivin yhteenvedon.
 

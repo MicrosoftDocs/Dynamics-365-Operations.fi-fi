@@ -1,6 +1,6 @@
 ---
 title: Täydennys yli sijainnin kapasiteetin
-description: Tässä ohjeaiheessa on tietoja Täydennys sijainnin kapasiteetilla -ominaisuudesta. Tämä ominaisuus ottaa käyttöön kaiken täydennystyön, joka vaaditaan luontipäivänä. Se myös hallitsee täydennystyön käytettävyyttä ja varmistaa näin, että varasto ei koskaan lopu keräilysijainnista eikä kapasiteettia ylitetä.
+description: Tässä artikkelissa on tietoja Täydennys sijainnin kapasiteetilla -ominaisuudesta. Tämä ominaisuus ottaa käyttöön kaiken täydennystyön, joka vaaditaan luontipäivänä. Se myös hallitsee täydennystyön käytettävyyttä ja varmistaa näin, että varasto ei koskaan lopu keräilysijainnista eikä kapasiteettia ylitetä.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899234"
 ---
 # <a name="replenishment-over-location-capacity"></a>Täydennys yli sijainnin kapasiteetin
 
@@ -37,7 +37,7 @@ Voit käyttää tätä ominaisuutta ottamalla seuraavat ominaisuudet käyttöön
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Määritä ominaisuus tälle esimerkkiskenaariolle
 
-Tässä ohjeaiheessa on ohjeita ja esimerkki, jossa kerrotaan tämä ominaisuuden määrityksestä ja tässä ohjeaiheessa myöhemmin olevan esimerkkiskenaarion näytetietojen valmistelemisesta.
+Tässä ohjeaiheessa on ohjeita ja esimerkki, jossa kerrotaan tämä ominaisuuden määrityksestä ja tässä artikkelissa myöhemmin olevan esimerkkiskenaarion näytetietojen valmistelemisesta.
 
 ### <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 
@@ -145,7 +145,7 @@ Täydennysmallit ovat sääntöjoukko, joka määrittää, milloin ja miten sija
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
-Kun olet tehnyt kaikki edellä mainitut näytetiedot käytettäviksi ja määrittänyt ne, voit käyttää tätä skenaariota ja kokeilla *Täydennys sijainnin kapasiteetilla* -toimintoa. Tämän skenaarion arvoissa oletetaan, että käsittelet vakionäytetietoja, valittuna on **USMF**-yritys ja että aiemmin tässä ohjeaiheessa kuvatut näytetietueet on valmisteltu. Tämä skenaario on myös esimerkki siitä, miten ominaisuutta voidaan käyttää tuotannon määrityksessä.
+Kun olet tehnyt kaikki edellä mainitut näytetiedot käytettäviksi ja määrittänyt ne, voit käyttää tätä skenaariota ja kokeilla *Täydennys sijainnin kapasiteetilla* -toimintoa. Tämän skenaarion arvoissa oletetaan, että käsittelet vakionäytetietoja, valittuna on **USMF**-yritys ja että aiemmin tässä artikkelissa kuvatut näytetietueet on valmisteltu. Tämä skenaario on myös esimerkki siitä, miten ominaisuutta voidaan käyttää tuotannon määrityksessä.
 
 ### <a name="create-replenishment-work"></a>Luo täydennystyö
 

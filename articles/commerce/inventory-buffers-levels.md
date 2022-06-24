@@ -1,6 +1,6 @@
 ---
 title: Varastopuskureiden ja varastotasojen konfiguroiminen
-description: Tässä ohjeaiheessa selitetään, miten määritetään varastopuskureita ja varastotasoja, jotka määrittävät varaston käytettävyysviestit Microsoft Dynamics 365 Commerce -sivustoissa.
+description: Tässä artikkelissa selitetään, miten määritetään varastopuskureita ja varastotasoja, jotka määrittävät varaston käytettävyysviestit Microsoft Dynamics 365 Commerce -sivustoissa.
 author: boycezhu
 ms.date: 06/01/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: acfe71f7fb55f1bc701297bb3949e91d6450d9e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727530"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853790"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Varastopuskureiden ja varastotasojen konfiguroiminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, miten määritetään varastopuskureita ja varastotasoja, jotka määrittävät varaston käytettävyyttä koskevat viestit Microsoft Dynamics 365 Commerce -sivustoissa.
+Tässä artikkelissa selitetään, miten määritetään varastopuskureita ja varastotasoja, jotka määrittävät varaston käytettävyyttä koskevat viestit Microsoft Dynamics 365 Commerce -sivustoissa.
 
 Dynamics 365 Commerce -pääkonttori sisältää varastotiedot ja erilaisia kanavia, kuten myyntipisteen (POS) sovellukset, sähköisen kaupankäynnin julkisivut ja muut mukautetut integroidut sovellukset, jotka vetävät ja työntävät varastoa ympäri asynkronisesti. Näin ollen käytettävissä olevat varastoarvot, jotka saadaan Commerce Headquarters -sovelluksen myyntipistekäyttöliittymän (POS) ja sähköisen kaupan varaston käytettävyyden API-liittymien kautta, eivät aina ole 100-prosenttisen oikeita reaaliaikaisesti.
 

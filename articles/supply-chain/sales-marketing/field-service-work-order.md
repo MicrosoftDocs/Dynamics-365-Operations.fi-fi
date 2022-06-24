@@ -1,6 +1,6 @@
 ---
 title: Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin
-description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Field Servicen työtilaukset synkronoidaan Supply Chain Managementin myyntitilauksiin.
+description: Tässä artikkelissa käsitellään malleja ja taustalla olevia tehtäviä, joilla Field Servicen työtilaukset synkronoidaan Supply Chain Managementin myyntitilauksiin.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e64c9a954e8f5c4410f8ba370b40b7c6e76e8ae0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860519"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061306"
 
 
 
-Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Field Servicen työtilaukset synkronoidaan Dynamics 365 Supply Chain Managementin myyntitilauksiin.
+Tässä artikkelissa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Field Servicen työtilaukset synkronoidaan Dynamics 365 Supply Chain Managementin myyntitilauksiin.
 
 [![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
@@ -165,7 +165,7 @@ Voit seurata Supply Chain Managementissa työtilauksista peräisin olevia myynti
 
 Yhdistämismääritys valitsee myynnin alkuperäksi oletusarvoisesti **Työtilauksen integrointi** -asetuksen myynnin alkuperän tyypin kaikille työtilauksille luoduille myyntitilauksille. Tämä on kätevää, jos käsittelet myyntitilauksia Supply Chain Managementissa. Muista varmistaa, että työtilauksista peräisin olevia myyntitilauksia ei synkronoida takaisin Field Serviceen työtilauksina.
 
-Lisätietoja oikean myynnin alkuperän luomisesta Supply Chain Managementissa on tämän ohjeaiheen kohdassa Edellytykset ja yhdistämismääritykset.
+Lisätietoja oikean myynnin alkuperän luomisesta Supply Chain Managementissa on tämän artikkelin kohdassa Edellytykset ja yhdistämismääritykset.
 
 ### <a name="status"></a>Tila
 

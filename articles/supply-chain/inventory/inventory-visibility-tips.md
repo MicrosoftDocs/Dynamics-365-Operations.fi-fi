@@ -1,6 +1,6 @@
 ---
 title: Varaston näkyvyyden vihjeet
-description: Tässä ohjeaiheessa on muutamia vinkkejä, jotka kannattaa ottaa huomioon varaston näkyvyyden lisäosaa määrittäessäsi ja käyttäessäsi.
+description: Tässä artikkelissa on muutamia vinkkejä, jotka kannattaa ottaa huomioon varaston näkyvyyden lisäosaa määrittäessäsi ja käyttäessäsi.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885954"
 ---
 # <a name="inventory-visibility-tips"></a>Varaston näkyvyyden vihjeet
 
@@ -34,5 +34,6 @@ Tässä on muutamia vinkkejä, jotka kannattaa ottaa huomioon varaston näkyvyyd
 - Jos lisäät Supply Chain Management -ympäristöön uusia toimenpiteitä, lisää ne myös varaston näkyvyyteen. Kaikkien uusien toimenpiteiden määrän muutosten on kuitenkin oltava peräisin Supply Chain Management -ympäristöstä.
 - Tällä hetkellä [osiointimääritys](inventory-visibility-configuration.md#partition-configuration) koostuu kahdesta perusdimensiosta (`SiteId` ja `LocationId`), jotka ilmaisevat tietojen jakelun. Samaan osiointiin liittyvät toiminnot voivat tuottaa suuremman suorituskyvyn alhaisemmin kustannuksin. Ratkaisu sisältää oletusarvon mukaan tämän osiointimäärityksen. Näin ollen *sinun ei tarvitse määrittää sitä itse*. Älä mukauta oletusosiointimääritystä. Jos poistat tai muutat sitä, se aiheuttaa todennäköisesti odottamattoman virheen.
 - Osiomäärityksessä määritettyjä perusdimensioita ei saa määrittää [tuotteen indeksihierarkian määrityksissä](inventory-visibility-configuration.md#index-configuration).
+- Sinulla on oltava vähintään yksi indeksihierarkia (esimerkiksi joka sisältää perusdimension `Empty`) [tuotteen indeksihierarkian määrityksessä](inventory-visibility-configuration.md#index-configuration), muussa tapauksessa kyselyt epäonnistuvat virheellä "Indeksihierarkiaa ei ole määritetty".
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

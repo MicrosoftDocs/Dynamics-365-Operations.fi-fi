@@ -1,6 +1,6 @@
 ---
-title: Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
-description: Tässä ohjeaiheessa käsitellään Commerce-kanavan tilausten automaattisten kulujen laskemisen ja kohdistamisen lisäominaisuuksia käyttämällä automaattista etukäteisveloitustoimintoa.
+title: Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille
+description: Tässä artikkelissa käsitellään Commerce-kanavan tilausten automaattisten kulujen laskemisen ja kohdistamisen lisäominaisuuksia käyttämällä automaattista etukäteisveloitustoimintoa.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b41aa7b012b161626a98fc4aa2d37134552a57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774506"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886929"
 ---
-# <a name="prorate-header-charges-to-matching-sales-lines"></a>Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
+# <a name="prorate-header-charges-to-matching-sales-lines"></a>Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään otsikkotason automaattisten kulujen ryhmittämistoimintoa ja niiden jakamista suhteellisti kaupan myyntiriveille. Tätä toimintoa voi käyttää tapahtumissa, josta on luotu myyntipisteessä Retail-versiolla 10.0.1 ja myynneissä, jotka on luotu puhelinkeskuksessa Retail-versiolla 10.0.2.
+Tässä artikkelissa käsitellään otsikkotason automaattisten kulujen ryhmittämistoimintoa ja niiden jakamista suhteellisti kaupan myyntiriveille. Tätä toimintoa voi käyttää tapahtumissa, josta on luotu myyntipisteessä Retail-versiolla 10.0.1 ja myynneissä, jotka on luotu puhelinkeskuksessa Retail-versiolla 10.0.2.
 
 Tämä toiminto on käytettävissä vain, jos [automaattiset etukäteisveloitukset](/dynamics365/unified-operations/retail/omni-auto-charges) on otettu käyttöön **Commercen parametrit** -sivun asetuksella. Automaattisten kulujen laajennettua laskentamenetelmään voidaan lisäksi käyttää vain myyntitilauksissa, jotka on luotu myyntikanavissa (myyntipiste, puhelinkeskus ja Dynamicsin sähköinen kaupankäyntiympäristö).
 

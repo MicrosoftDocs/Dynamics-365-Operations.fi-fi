@@ -1,6 +1,6 @@
 ---
 title: Automaattisten kustannusten määrittäminen
-description: Tässä aiheessa kuvataan, miten voit määrittää kustannussääntöjä saapuvien merikuljetusten eri tasoille. Järjestelmä laskee kustannukset ja lisää ne automaattisesti näiden sääntöjen perusteella. Käyttäjien ei siis tarvitse lisätä kustannuksia manuaalisesti.
+description: Tässä artikkelissa kuvataan, miten voit määrittää kustannussääntöjä saapuvien merikuljetusten eri tasoille. Järjestelmä laskee kustannukset ja lisää ne automaattisesti näiden sääntöjen perusteella. Käyttäjien ei siis tarvitse lisätä kustannuksia manuaalisesti.
 author: Weijiesa
 ms.date: 01/21/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea788ea8d21c4cb6511188e937166bc3df3cd45a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02c78789fc7531c267cee936fa30a395e6d0b62f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695329"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852386"
 ---
 # <a name="auto-costs-setup"></a>Automaattisten kustannusten määrittäminen
 
@@ -26,7 +26,7 @@ ms.locfileid: "8695329"
 
 Voit käyttää **Automaattiset kustannukset** -sivua määrittääksesi kustannussääntöjä erilaisille kustannusalueille (kuten merikuljetuksille, konteille, pakkauksille, ostotilauksille, nimikkeille tai siirtotilausriveille). Järjestelmä laskee kustannukset ja lisää ne automaattisesti näiden sääntöjen perusteella sekä niiden kenttien perusteella, jotka käyttäjät valitsevat luodessaan tietueita jollekin kustannusalueista. Käyttäjien ei siis tarvitse lisätä kustannuksia manuaalisesti.
 
-Voit työstää automaattisia kustannuksia valitsemalla **Aiheutunut kustannus \> Kustannuslaskennan asetukset \> Automaattiset kustannukset**. Määritä sitten automaattisten kustannusten sääntösi tässä aiheessa kuvatulla tavalla.
+Voit työstää automaattisia kustannuksia valitsemalla **Aiheutunut kustannus \> Kustannuslaskennan asetukset \> Automaattiset kustannukset**. Määritä sitten automaattisten kustannusten sääntösi tässä artikkelissa kuvatulla tavalla.
 
 ## <a name="work-with-cost-areas"></a>Kustannusalueiden työstäminen
 

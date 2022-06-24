@@ -1,6 +1,6 @@
 ---
-title: Vaihda työpoolia työssä
-description: Tässä ohjeaiheessa käsitellään aiemmin luodun työn työpoolin vaihtaminen käyttämällä työnimikkeiden Vaihda työpoolia -painikkeella.
+title: Työpoolin vaihtaminen työssä
+description: Tässä artikkelissa käsitellään aiemmin luodun työn työpoolin vaihtaminen käyttämällä työnimikkeiden Vaihda työpoolia -painikkeella.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669849"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900619"
 ---
 # <a name="change-work-pool-on-work"></a>Vaihda työpoolia työssä
 
@@ -34,14 +34,14 @@ Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Vaihda työpoolia työssä -toiminnon määrittäminen
 
-Toiminnon käyttö edellyttää, että muutamia työpooleja on määritetty. Myös työmallit voidaan määrittää siten, että ne määrittävät poolin automaattisesti. Jos haluat kokeilla tässä aiheessa myöhemmin esiteltävää esimerkkitilannetta, määritä järjestelmäsi tämän osion ohjeiden mukaan.
+Toiminnon käyttö edellyttää, että muutamia työpooleja on määritetty. Myös työmallit voidaan määrittää siten, että ne määrittävät poolin automaattisesti. Jos haluat kokeilla tässä artikkelissa myöhemmin esiteltävää esimerkkitilannetta, määritä järjestelmäsi tämän osion ohjeiden mukaan.
 
 ### <a name="set-up-work-pools"></a>Työpoolien määrittäminen
 
 Työnimikkeet voidaan järjestää tyypin mukaan työpoolien avulla. *Vaihda työpoolia työssä* -toiminnon käyttöä varten käytettävissä on oltava vähintään kaksi työpoolia. Työpooleja voi tarkastella ja lisätä seuraavasti:
 
 1. Valitse **Varastonhallinta \> Asetukset \> Työ \> Työpoolit**.
-1. Jos käytät **USMF**-yrityksen esittelytietoja ja tässä aiheessa jäljempänä olevaa esimerkkiskenaariota, lisää kaksi työpoolia, joissa on seuraavat asetukset:
+1. Jos käytät **USMF**-yrityksen esittelytietoja ja tässä artikkelissa jäljempänä olevaa esimerkkiskenaariota, lisää kaksi työpoolia, joissa on seuraavat asetukset:
 
     - Työpooli 1:
 
@@ -57,7 +57,7 @@ Työnimikkeet voidaan järjestää tyypin mukaan työpoolien avulla. *Vaihda ty�
 
 ### <a name="set-up-work-templates"></a>Määritä työmallit
 
-Kullekin työmallille voi määrittää tarpeen mukaan oletustyöpoolin. Kussakin soveltuvassa mallissa työpooli määritetään **Työpoolin tunnus** -sarakkeessa. Tässä tapauksessa kaikki työnimikkeet luodaan siten, että annettu malli perii automaattisesti määritetyn työpoolin. Jos käytät **USMF**-yrityksen esittelytietoja ja tässä aiheessa jäljempänä olevaa esimerkkiskenaariota, toimi seuraavasti:
+Kullekin työmallille voi määrittää tarpeen mukaan oletustyöpoolin. Kussakin soveltuvassa mallissa työpooli määritetään **Työpoolin tunnus** -sarakkeessa. Tässä tapauksessa kaikki työnimikkeet luodaan siten, että annettu malli perii automaattisesti määritetyn työpoolin. Jos käytät **USMF**-yrityksen esittelytietoja ja tässä artikkelissa jäljempänä olevaa esimerkkiskenaariota, toimi seuraavasti:
 
 1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Työ \> Työmallit**.
 1. Siirrä sivu muokkaustilaan valitsemalla toimintoruudussa **Muokkaa**.
@@ -70,7 +70,7 @@ Kullekin työmallille voi määrittää tarpeen mukaan oletustyöpoolin. Kussaki
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
-Tämä skenaario näyttää, miten aiemmin luodun työnimikkeen käsittelyvirtaa muutetaan muuttamalla sen työpoolia. Se käyttää **USMF**-yrityksen esittelytietoja ja aiemmin tässä ohjeaiheessa suositeltuja asetuksia.
+Tämä skenaario näyttää, miten aiemmin luodun työnimikkeen käsittelyvirtaa muutetaan muuttamalla sen työpoolia. Se käyttää **USMF**-yrityksen esittelytietoja ja aiemmin tässä artikkelissa suositeltuja asetuksia.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Myyntitilauksen luominen ja sen vapauttaminen varastoon
 

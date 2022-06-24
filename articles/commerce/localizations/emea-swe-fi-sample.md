@@ -1,6 +1,6 @@
 ---
 title: Tarkistusyksikön integrointimalli – Ruotsi
-description: Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Ruotsi).
+description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Ruotsi).
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: ace1bd5b1a06317b6753a34779ecfa96e519a63e
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 11ce0b146f2e64092b0d03dc7416660d76380cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077010"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885399"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Tarkistusyksikön integrointimalli – Ruotsi
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Ruotsi).
+Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Ruotsi).
 
 > [!NOTE]
 > Tässä esimerkissä verointegraatiotoiminto korvaa aiemman [POS-integrointi tarkistusyksiköiden kanssa -esimerkin (Ruotsi)](retail-sdk-control-unit-sample.md)kanssa. Aiempi malli ei hyödynnä [verointegraatiokehystä](./fiscal-integration-for-retail-channel.md), ja se vanhentuu myöhemmissä päivityksissä. Tietoja siitä, miten voit siirtyä aiemmasta esimerkistä Dynamics 365 Commerce -versiota **10.0.22 ja aiempia versioita** vastaavaan esimerkkiin on kohdassa [Siirtyminen aiemmasta integrointiesimerkistä](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
@@ -83,7 +83,7 @@ Lisää **Mukautetut kentät** -sivulla seuraavat tietueet kuitin asettelun muka
 
 Muuta jokaisessa vaaditussa kuittimuodossa **Tulostustoiminta**-kentän arvoksi **Tulosta aina**.
 
-Lisää kuittien muodon suunnittelussa seuraavat mukautetut kentät **Alatunniste**-osaan. Huomaa, että kenttien nimet vastaavat tämän aiheen edellisessä osassa määritettyjä kielitekstejä.
+Lisää kuittien muodon suunnittelussa seuraavat mukautetut kentät **Alatunniste**-osaan. Huomaa, että kenttien nimet vastaavat tämän artikkelin edellisessä osassa määritettyjä kielitekstejä.
 
 - **Rekisteröi ohjauskoodi** – Tämä kenttä tulostaa ohjauskoodin.
 - **Rekisteröi laite** – Tämä kenttä tulostaa ohjausyksikön valmistusnumeron.

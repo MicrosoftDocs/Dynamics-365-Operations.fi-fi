@@ -1,8 +1,8 @@
 ---
 title: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
-description: Tässä ohjeaiheessa käsitellään, miten suunnittelun optimointitoiminnon käynnistämien suunnittelutöiden historiatietoja tarkastellaan.
+description: Tässä artikkelissa käsitellään, miten suunnittelun optimointitoiminnon käynnistämien suunnittelutöiden historiatietoja tarkastellaan.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863937"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Suunnitelman historia- ja suunnittelulokien tarkasteleminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään, miten Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimointitoiminnon käynnistämien suunnittelutöiden historiatietoja tarkastellaan.
+Tässä artikkelissa käsitellään, miten Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimointitoiminnon käynnistämien suunnittelutöiden historiatietoja tarkastellaan.
 
 Voit tarkastella suunnitelman historiaa avaamalla suunnitelman valitsemalla ensin **Pääsuunnittelu** \> **Asetukset** \> **Suunnitelmat** \> **Pääsuunnitelmat** ja sitten **Historia**. Historiatiedoissa on luettelo kaikista valitun suunnitelman töistä. Luettelo sisältää valmiit ja aktiiviset työt.
 
-Suunnittelun optimoinnin pääsuunnittelun ajojen töiden historia sisältää enintään 60 tietuetta pääsuunnitelmaa kohden. Kun suoritat uuden pääsuunnittelun laskennan, tämän suunnitelman varhaisin historiatietue poistetaan.
+Järjestelmä säilyttää pääsuunnitelmaa kohden enintään 60 historiatietuetta ja poistaa tietueita, jotka ovat yli 30 päivää vanhoja. Aina kun suoritat uuden pääsuunnittelun laskennan, järjestelmä lisää uuden historiatietueen ja puhdistaa sitten vanhimmat tietueet tarpeen mukaan.
 
 Töiden alkamisajan ja tilan lisäksi voit tarkastella tietyn työn lokia. Loki sisältää lisätietoja ja varoituksia. Kaikilla töillä ei ole lokia. Voit tarkastella työn lokia valitsemalla **Loki**. Lokimerkinnät tallennetaan vain 30 päivän ajan työn valmistumispäivämäärästä sen jälkeen, kun ne poistetaan automaattisesti.
 

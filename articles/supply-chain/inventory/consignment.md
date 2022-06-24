@@ -1,6 +1,6 @@
 ---
 title: Tavaralähetyksen määrittäminen
-description: Tässä aiheessa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja.
+description: Tässä artikkelissa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a1b96d18048a1ae6e380374f32d2bfa2270ae24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 66215811c8c48412fb137967107abca3774f5f0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577717"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872033"
 ---
 # <a name="set-up-consignment"></a>Tavaralähetyksen määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja.
+Tässä artikkelissa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja.
 
-Tavaralähetysvarasto on varasto, joka on toimittajan omistaa mutta joka on varastoituna yrityksesi toimipaikalle. Kun haluat käyttää osan varastosta tai koko varaston, varaston omistajuus siirtyy yrityksellesi. Tässä ohjeaiheessa on tietoja siitä, miten vastaanottaa fyysisesti toimittajan omistuksessa olevaa varastoa luomatta KP-tapahtumia, sekä siitä, miten käynnistetään tuotantoprosessi, jossa toimittajan omistamaa varastoa voidaan fyysisesti varata. ja miten muutetaan raaka-aineiden omistajuutta, jotta kulutuksia voidaan käsitellä osana tuotantotilauksen käsittelyä. Aiheessa on myös tietoja siitä, miten toimittajat voivat seurata omistamansa varaston kulutusta toimittajayhteistyöliittymän avulla.
+Tavaralähetysvarasto on varasto, joka on toimittajan omistaa mutta joka on varastoituna yrityksesi toimipaikalle. Kun haluat käyttää osan varastosta tai koko varaston, varaston omistajuus siirtyy yrityksellesi. Tässä artikkelissa on tietoja siitä, miten vastaanottaa fyysisesti toimittajan omistuksessa olevaa varastoa luomatta KP-tapahtumia, sekä siitä, miten käynnistetään tuotantoprosessi, jossa toimittajan omistamaa varastoa voidaan fyysisesti varata. ja miten muutetaan raaka-aineiden omistajuutta, jotta kulutuksia voidaan käsitellä osana tuotantotilauksen käsittelyä. Aiheessa on myös tietoja siitä, miten toimittajat voivat seurata omistamansa varaston kulutusta toimittajayhteistyöliittymän avulla.
 
 ## <a name="overview-of-the-consignment-process"></a>Tavaralähetysprosessin yleiskatsaus
 

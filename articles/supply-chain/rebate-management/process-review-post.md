@@ -1,6 +1,6 @@
 ---
 title: Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen
-description: Tässä aiheessa kuvataan, miten ostohyvitysten hallinnan tarjoukset käsitellään, miten niiden alennukset lasketaan, luodut tapahtumat tarkistetaan, tapahtumat kirjataan ja kirjaukset tarkistetaan.
+description: Tässä artikkelissa kuvataan, miten ostohyvitysten hallinnan tarjoukset käsitellään, miten niiden alennukset lasketaan, luodut tapahtumat tarkistetaan, tapahtumat kirjataan ja kirjaukset tarkistetaan.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690271"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901934"
 ---
 # <a name="process-review-and-post-rebates"></a>Ostohyvitysten käsitteleminen, tarkistaminen ja kirjaaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten ostohyvitysten hallinnan tarjoukset käsitellään, miten niiden alennukset lasketaan, luodut tapahtumat tarkistetaan, tapahtumat kirjataan ja kirjaukset tarkistetaan.
+Tässä artikkelissa kuvataan, miten ostohyvitysten hallinnan tarjoukset käsitellään, miten niiden alennukset lasketaan, luodut tapahtumat tarkistetaan, tapahtumat kirjataan ja kirjaukset tarkistetaan.
 
 ## <a name="change-the-status-of-a-deal"></a>Sopimuksen tilan muuttaminen
 
@@ -45,7 +45,7 @@ Siirry kohtaan **Ostohyvitysten hallinta \> Kausittaiset tehtävät \> Laske FIF
 
 Voit luoda myynti- tai ostotilauksia, joissa on lähdetapahtumia joko ennen sovellettavien ostohyvitystenhallintasopimuksen luontia tai sen jälkeen.
 
-Voit määrittää jokaisen sopimusrivin niin, että se luo automaattisesti ostohyvitysehdotuksen kirjaamalla myyntitilauksen tai ostotilauksen toimituksen tai laskun. Määritä sopimusrivin **tapahtumalajin** kentän arvoksi *Toimitus* tai *Lasku* ja määritä **Kirjausprosessissa**-asetuksen arvoksi *Kyllä*. Jos **Tapahtumalaji**-kentän arvoksi määritetään *Tilaus*, kirjaamisen käsittely poistetaan käytöstä. Lähdetapahtumille, jotka on luotu kaupan aktivoinnin jälkeen, voit silti käsitellä varausta tämän aiheen myöhemmässä [Prosessihyvitysten hallintasopimukset](#process-deals) -osiossa kuvatulla tavalla.
+Voit määrittää jokaisen sopimusrivin niin, että se luo automaattisesti ostohyvitysehdotuksen kirjaamalla myyntitilauksen tai ostotilauksen toimituksen tai laskun. Määritä sopimusrivin **tapahtumalajin** kentän arvoksi *Toimitus* tai *Lasku* ja määritä **Kirjausprosessissa**-asetuksen arvoksi *Kyllä*. Jos **Tapahtumalaji**-kentän arvoksi määritetään *Tilaus*, kirjaamisen käsittely poistetaan käytöstä. Lähdetapahtumille, jotka on luotu kaupan aktivoinnin jälkeen, voit silti käsitellä varausta tämän artikkelin myöhemmässä [Prosessihyvitysten hallintasopimukset](#process-deals) -osiossa kuvatulla tavalla.
 
 ### <a name="enable-price-details"></a>Ota käyttöön hintatiedot
 

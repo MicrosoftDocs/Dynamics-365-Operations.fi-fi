@@ -1,6 +1,6 @@
 ---
 title: Tšekin tasavallan verorekisteröintipalvelun integroinnin malli
-description: Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Tšekin tasavalta).
+description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Tšekin tasavalta).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: d255b03242a4cb7a72cef1e8e6fab901ecf953e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910495"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Tšekin tasavallan verorekisteröintipalvelun integroinnin malli
 
 [!include[banner](../includes/banner.md)]
 
-Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Tšekin tasavalta).
+Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Tšekin tasavalta).
 
 Vaatimuksille, jotka liittyvät kassojen paikallisiin verotusvaatimuksiin Tšekin tasavallassa, Dynamics 365 Commerce -toiminnallisuus Tšekin tasavallalle sisältää esimerkki-integraation myyntipisteestä ulkoiseen verorekisteröintipalveluun. Esimerkki laajentaa [kirjanpidon integrointitoimintoja](fiscal-integration-for-retail-channel.md). Se perustuu [EFSTA](https://efsta.org/)-järjestelmän [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) -ratkaisuun, ja se ottaa yhteyden EFR-palveluun HTTPS-protokollan kautta. EFR-palvelu varmistaa myynnin sähköisen rekisteröinnin (EET - Elektronická evidence tržeb) eli myyntitietojen online-siirron veroviranomaisten verkkopalveluun.
 

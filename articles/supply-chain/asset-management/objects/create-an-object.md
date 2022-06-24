@@ -1,6 +1,6 @@
 ---
 title: Luo resurssi
-description: Tässä ohjeaiheessa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
+description: Tässä artikkelissa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9c2b81e97a7b08dfdb596fbf6822ac94c7358dccd0b92c0677467dbc0c2e26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721508"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860925"
 ---
 # <a name="create-an-asset"></a>Luo resurssi
 
@@ -28,7 +28,7 @@ ms.locfileid: "6721508"
 
  
 
-Tässä ohjeaiheessa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
+Tässä artikkelissa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
 
 1. Valitse **Resurssien hallinta** > **Yhteiset** > **resurssit** > **Kaikki resurssi** tai **Aktiiviset resurssit**.
 2. Valitse **Uusi**-painike.

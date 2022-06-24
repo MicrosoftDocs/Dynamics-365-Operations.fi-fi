@@ -1,6 +1,6 @@
 ---
-title: Konsernin sisäinen suunnittelu
-description: Tässä aiheessa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin avulla.
+title: Yritysten välinen suunnittelu
+description: Tässä artikkelissa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin avulla.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850667"
 ---
 # <a name="intercompany-planning"></a>Konsernin sisäinen suunnittelu
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468493"
 
 Joissakin organisaatioissa logistiikkatoiminnot ovat riippuvaisia organisaation muista yrityksistä. Näitä toimintoja käsitellään konsernin sisäisten myyntien ja ostojen avulla, koska kullakin yrityksellä on erillinen tilikartta.
 
-Tässä aiheessa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin avulla.
+Tässä artikkelissa käsitellään konsernin sisäistä suunnittelua ja konsernin sisäisen suunnittelun määrittämistä Microsoft Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin avulla.
 
-Tässä aiheessa käytetään seuraavia tärkeitä konsernin sisäisiä käsitteitä:
+Tässä artikkelissa käytetään seuraavia tärkeitä konsernin sisäisiä käsitteitä:
 
 - **Yläpuolinen** – Suhteellinen viittaus vahvistus- tai toimitusketjussa. Se ilmaisee raaka-aineen toimittajaan päin suuntautuvaa liikettä.
 - **Alapuolinen** – Suhteellinen viittaus vahvistus- tai toimitusketjussa. Se ilmaisee asiakkaaseen päin suuntautuvaa liikettä.

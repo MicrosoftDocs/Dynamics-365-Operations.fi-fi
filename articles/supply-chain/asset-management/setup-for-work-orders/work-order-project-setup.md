@@ -1,6 +1,6 @@
 ---
 title: Työtilauksen projektiasetukset
-description: Tässä ohjeaiheessa selitetään työtilausten projektin määritys käyttöomaisuuden hallinnassa.
+description: Tässä artikkelissa selitetään työtilausten projektin määritys käyttöomaisuuden hallinnassa.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754080"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874127"
 ---
 # <a name="work-order-project-setup"></a>Työtilauksen projektiasetukset
 
@@ -80,7 +80,7 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 ![Työtilausten projektinmäärityssivu, työtilauksen lisääminen.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Aina, kun työtilausrivi luodaan, käyttöomaisuuden hallinta etsii projektiryhmää, joka liittyy työtilaustyön projektiin. Haku perustuu tässä ohjeaiheessa kuvattuihin asetuksiin. Jokaisella projektiryhmällä on siihen liittyvä projektityyppi. Projektiryhmät, joissa on **Aika ja materiaali**- tai **Kiinteähintainen** projektityyppi, ovat kelvollisia vain asiakastiliin liittyvissä resursseissa.
+> Aina, kun työtilausrivi luodaan, käyttöomaisuuden hallinta etsii projektiryhmää, joka liittyy työtilaustyön projektiin. Haku perustuu tässä artikkelissa kuvattuihin asetuksiin. Jokaisella projektiryhmällä on siihen liittyvä projektityyppi. Projektiryhmät, joissa on **Aika ja materiaali**- tai **Kiinteähintainen** projektityyppi, ovat kelvollisia vain asiakastiliin liittyvissä resursseissa.
 >
 > Kun järjestelmä valitsee käytettävissä olevan työtilausprojektin tai projektiryhmän pääprojekteille ja projektiryhmille, valinta perustuu edellä kuvatun menetelmän avulla luomiisi tietueisiin. Käyttöomaisuuden hallinta käy läpi työtilausprojektiin liittyvät tietueet ja tarkistaa mahdolliset vastineet. Se tarkistaa aina kaikkein erikoisimman yhdistelmän ensin. Toisin sanoen resurssien hallinta tarkistaa työtilauksen pääprojektille ensin mahdollisen **Resurssi**-kentän vastaavuuden. Jos vastaavuutta ei löydy, se tarkistaa **Resurssityyppi**-kentän vastaavuuden. Jos vastaavuutta ei löydy, se tarkistaa **Toiminnallinen sijainti** -kentän vastaavuuden ja niin edelleen. Kuten näet **Työtilausprojektin asetukset** -sivun asettelussa, tämä tarkoittaa sitä, että jos haluat löytää erityisen yhdistelmän, resurssien hallinta tarkistaa kunkin tietueen oikealta vasemmalle, jotta se vastaa toisiaan. Jos vastinetta ei löydy, käytetään oletustietuetta, jossa valitaan vain projektitunnus. Liittyvän projektiryhmän hakuprosessi on samankaltainen. Käyttöomaisuuden hallinta tarkistaa ensin **Resurssi**-kentän mahdollisen vastaavuuden, sitten **Resurssityyppi** -kentän ja sitten **Työtilauksen tyyppi** -kentän vastaavuuden. Jos vastinetta ei löydy, käytetään oletustietuetta, jossa valitaan vain projektiryhmä.
 

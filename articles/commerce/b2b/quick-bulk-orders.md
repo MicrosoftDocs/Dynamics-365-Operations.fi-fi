@@ -1,6 +1,6 @@
 ---
 title: Tilausten nopea tekeminen B2B-verkkosivustolla
-description: Tässä aiheessa kuvataan Microsoft Dynamics 365 Commercen ominaisuudet, joiden avulla yritysten välisten (B2B) sivustojen käyttäjät voivat tehdä joukkotilauksia ja toistuvia tilauksia nopeasti.
+description: Tässä artikkelissa kuvataan Microsoft Dynamics 365 Commercen ominaisuudet, joiden avulla yritysten välisten (B2B) sivustojen käyttäjät voivat tehdä joukkotilauksia ja toistuvia tilauksia nopeasti.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b13fb49c49b0a540b192f4dd0f3a847fb5dd8a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686543"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881358"
 ---
 # <a name="place-b2b-website-orders-quickly"></a>Tilausten nopea tekeminen B2B-verkkosivustolla
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan Microsoft Dynamics 365 Commercen ominaisuudet, joiden avulla yritysten välisten (B2B) sivustojen käyttäjät voivat tehdä joukkotilauksia ja toistuvia tilauksia nopeasti.
+Tässä artikkelissa kuvataan Microsoft Dynamics 365 Commercen ominaisuudet, joiden avulla yritysten välisten (B2B) sivustojen käyttäjät voivat tehdä joukkotilauksia ja toistuvia tilauksia nopeasti.
 
 Dynamics 365 Commercen B2B-verkkokauppasivustot sallivat käyttäjien suorittaa vakiotoimintoja, kuten uusien tuotteiden löytämistä etsimällä ja selailemalla, tuotetietojen tarkastelemista, nimikkeiden koriin laittamista ja uloskuittausta. Yritysten ja kuluttajien välisten (B2C) sivustojen asiakkaat kuitenkin yleensä tilaavat pieniä nimikemääriä vain kerran, kun taas B2B-asiakkaat yleensä tilaavat suuria nimikemääriä toistuvasti. Koska nämä asiakkaat tietävät yleensä tarkalleen, mitä nimikkeitä he haluavat ostaa, he ohittavat usein tuotteenetsinnän ja siirtyvät suoraan tilaamiseen. Vastatakseen asiakkaidensa tarpeisiin Commercen B2B-verkkokaupoissa on useita ominaisuuksia, jotka mahdollistavat nopeat tilaukset.
 
@@ -65,4 +65,4 @@ Seuraavassa kuvassa on esimerkki käyttäjän tilaushistoriasta ja asetukset nim
 
 ![Uudelleentilaus tilaushistoriasta.](../media/Reorder.png)
 
-Tässä aiheessa on kuvattu vain joitakin tapoja, joilla Commercen B2B-sivustot auttavat käyttäjiä löytämään, tilaamaan ja tilaamaan uudelleen haluamiaan tuotteita. Joukkotilausten taltioinnin yksinkertaistamiseksi edelleen on kehitteillä lisää ominaisuuksia.
+Tässä artikkelissa on kuvattu vain joitakin tapoja, joilla Commercen B2B-sivustot auttavat käyttäjiä löytämään, tilaamaan ja tilaamaan uudelleen haluamiaan tuotteita. Joukkotilausten taltioinnin yksinkertaistamiseksi edelleen on kehitteillä lisää ominaisuuksia.

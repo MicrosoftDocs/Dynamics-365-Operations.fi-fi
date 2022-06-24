@@ -1,6 +1,6 @@
 ---
 title: Aloitussivun yleiskatsaus
-description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
+description: Tässä artikkelissa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844669"
 ---
 # <a name="home-page-overview"></a>Aloitussivun yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
+Tässä artikkelissa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
 
 Aloitussivu on oletussivu, jolle ostajat tulevat sähköisen kaupankäynnin sivustoon siirtyessään. Yleensä tällä sivulla on tuotteiden ja kampanjoiden esittelyjä. Tämä tehdään markkinointimoduulien yhdistelmällä. Aloitussivun tulisi olla monipuolinen ja sisältää kuvia ja tekstiä, jotta ostajien mielenkiinto säilyy.
 
@@ -33,7 +33,7 @@ Seuraavassa kuvassa on esimerkki aloitussivusta, joka on luotu verkon moduulikir
 
 ![Esimerkki aloitussivusta.](./media/Homepage2.PNG)
 
-Aloitussivun yläosassa on ylätunniste, joka sisältää kaikki tuoteluokat ja muut sivut, joita jälleenmyyjä haluaa asiakkaiden selaavan. Aloitussivun alaosassa on alatunniste, joka sisältää pikalinkkejä erilaisiin asiakasta mahdollisesti kiinnostaviin aiheisiin.
+Aloitussivun yläosassa on ylätunniste, joka sisältää kaikki tuoteluokat ja muut sivut, joita jälleenmyyjä haluaa asiakkaiden selaavan. Aloitussivun alaosassa on alatunniste, joka sisältää pikalinkkejä erilaisiin asiakasta mahdollisesti kiinnostaviin artikkeleihin.
 
 Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tietoja Dynamics 365 Commercen eri moduulien avulla seuraavasti:
 
@@ -49,8 +49,8 @@ Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tieto
 
     ![Esimerkkejä ominaisuusmoduuleista.](./media/Feature.PNG)
 
-- **Laatta** – Sisältölohkon asettelumoduulin laattojen asettelua käytetään useiden tuotteiden tai tuoteluokkien esittelyyn käyttämällä monisarakkeisessa asettelussa olevien kuvien ja tekstien yhdistelmää. Aiemmin tässä ohjeaiheessa olleen aloitussivun kuvassa käytettiin laattojen asettelua kolmisarakkeisen asettelun **Kauppa - naiset**-, **Kauppa - miehet**- ja **Kauppa - lisävarusteet** -nimikkeissä.
-- **Videotoistin** – Videotoistinmoduulin avulla voidaan esitellä videosisältöä aloitussivulla. Aiemmin tässä ohjeaiheessa olleen aloitussivun kuva sisältää videotoistinmoduulin.
+- **Laatta** – Sisältölohkon asettelumoduulin laattojen asettelua käytetään useiden tuotteiden tai tuoteluokkien esittelyyn käyttämällä monisarakkeisessa asettelussa olevien kuvien ja tekstien yhdistelmää. Aiemmin tässä artikkelissa olleen aloitussivun kuvassa käytettiin laattojen asettelua kolmisarakkeisen asettelun **Kauppa - naiset**-, **Kauppa - miehet**- ja **Kauppa - lisävarusteet** -nimikkeissä.
+- **Videotoistin** – Videotoistinmoduulin avulla voidaan esitellä videosisältöä aloitussivulla. Aiemmin tässä artikkelissa olleen aloitussivun kuva sisältää videotoistinmoduulin.
 - **Tekstilohko** – Sisällöntäyteistä lohkomoduulia voi käyttää tekstisisällön esittelyssä aloitussivulla yhden sarakkeen tai usean sarakkeen asettelussa.
 - **Tuotesuositukset** – Tuotesuositusten moduuleja käytetään näytettäessä aloitussivulla luetteloita, kuten **Uudet**, **Suositut** ja **Myydyimmät**. Näissä luetteloissa näytetään tuotteet ostotrendien perusteella. Ne voidaan luoda algoritmien avulla tai niitä voi kuratoida manuaalisesti. Luetteloiden avulla asiakkaat löytävät nopeasti suosituimmat tuotteet ja voivat jatkaa ostosten tekemistä.
 

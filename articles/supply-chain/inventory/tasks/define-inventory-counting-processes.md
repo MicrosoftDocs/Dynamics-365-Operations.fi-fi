@@ -1,6 +1,6 @@
 ---
 title: Varastoinventoinnin prosessien määrittäminen
-description: Tässä aiheessa kuvataan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio.
+description: Tässä artikkelissa kuvataan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio.
 author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee47b04ba7ec9f3d74230b7a41b1c295eaea9313
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bb86c99e74dc8251ed48c0b749c0b0ef1ce75e34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580837"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879016"
 ---
 # <a name="define-inventory-counting-processes"></a>Varastoinventoinnin prosessien määrittäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio. Menettelyssä kerrotaan myös, miten varasto- ja nimiketason inventointikäytännöt otetaan käyttöön. Varaston esimies tekee yleensä nämä tehtävät. Edellytyksenä on, että olemassa on joitakin aiemmin määritettyjä vapautettuja tuotteita ja varastoja. Jos käytössä on esittelytietojen yritys, voit suorittaa tämän menettelyn käyttämällä USMF-yritystä ja mitä tahansa varastoitua nimikettä.
+Tässä artikkelissa kuvataan, miten perusvarastoinventoinnin prosessien konfigurointi tehdään luomalla inventointiryhmä ja inventoinnin kirjauskansio. Menettelyssä kerrotaan myös, miten varasto- ja nimiketason inventointikäytännöt otetaan käyttöön. Varaston esimies tekee yleensä nämä tehtävät. Edellytyksenä on, että olemassa on joitakin aiemmin määritettyjä vapautettuja tuotteita ja varastoja. Jos käytössä on esittelytietojen yritys, voit suorittaa tämän menettelyn käyttämällä USMF-yritystä ja mitä tahansa varastoitua nimikettä.
 
 
 ## <a name="create-a-counting-group"></a>Luo inventointiryhmä.

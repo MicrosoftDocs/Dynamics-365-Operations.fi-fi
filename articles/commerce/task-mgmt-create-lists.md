@@ -1,6 +1,6 @@
 ---
 title: Tehtäväluetteloiden luominen ja tehtävien lisääminen
-description: Tässä ohjeaiheessa kerrotaan, miten tehtäväluettelot luodaan ja miten niihin lisätään tehtäviä Microsoft Dynamics 365 Commerce -sovelluksessa.
+description: Tässä artikkelissa kerrotaan, miten tehtäväluettelot luodaan ja miten niihin lisätään tehtäviä Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a299be239d911e4605ed26625a313c93bd3020b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881628"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Tehtäväluetteloiden luominen ja tehtävien lisääminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten tehtäväluettelot luodaan ja miten niihin lisätään tehtäviä Microsoft Dynamics 365 Commerce -sovelluksessa.
+Tässä artikkelissa kerrotaan, miten tehtäväluettelot luodaan ja miten niihin lisätään tehtäviä Microsoft Dynamics 365 Commerce -sovelluksessa.
 
 *Tehtävä* määrittää tietyn työn tai toiminnon, joka on suoritettava tiettynä eräpäivänä tai ennen sitä. Dynamics 365 Commerce -sovelluksessa tehtävä voi sisältää eriteltyjä ohjeita ja tietoja yhteyshenkilöstä. Se voi sisältää myös linkkejä taustatoimintoihin, myyntipistetoimintoihin tai sivuston sivuihin. Tämä auttaa parantamaan tuottavuutta ja määrittämään kontekstin, jonka avulla tehtävän omistaja voi suorittaa tehtävän tehokkaasti.
 

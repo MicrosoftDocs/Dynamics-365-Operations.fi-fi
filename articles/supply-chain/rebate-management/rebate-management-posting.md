@@ -1,6 +1,6 @@
 ---
 title: Ostohyvitysten hallinnan kirjausasetukset
-description: Tässä aiheessa käsitellään kirjausprofiilien määrittämistä. Kirjausprofiilien avulla määritetään ostohyvityksen hallinnan laskentarivien kirjausmerkinnät.
+description: Tässä artikkelissa käsitellään kirjausprofiilien määrittämistä. Kirjausprofiilien avulla määritetään ostohyvityksen hallinnan laskentarivien kirjausmerkinnät.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5ed28e99e36fafa4e1275421159420a3f3380c7c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7a519b7153b307bf7d8cc9093572ca2711432970
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690243"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873576"
 ---
 # <a name="rebate-management-posting-setup"></a>Ostohyvitysten hallinnan kirjausasetukset
 
@@ -30,7 +30,7 @@ Tämä toiminto toimii yritysten (oikeushenkilöiden) välillä. Voit määritt�
 
 Voit määrittää ostohyvitystenhallinnan kirjausprofiilit asiakkaille ja toimittajille kohdassa **Ostohyvitysten hallinta \> Ostohyvitysten hallinnan kirjausasetukset \> Ostohyvitysten hallinnan kirjausprofiilit**. **Ostohyvitysten hallinnan kirjausprofiilit** -sivulla on luetteloruutu, jossa näkyvät kaikki aiemmin luodut profiilit. Lisätä profiileja luetteloon tai poista niitä ruudukosta työkalurivin painikkeilla.
 
-Tämän ohjeaiheen muut osat kuvaavat, kuinka käytettävissä olevia kenttiä käytetään profiilia luotaessa tai muokatessa.
+Tämän artikkelin muut osat kuvaavat, kuinka käytettävissä olevia kenttiä käytetään profiilia luotaessa tai muokatessa.
 
 ## <a name="posting-profile-header"></a>Kirjausprofiilin otsikko
 

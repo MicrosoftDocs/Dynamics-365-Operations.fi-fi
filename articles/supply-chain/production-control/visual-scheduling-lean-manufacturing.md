@@ -1,6 +1,6 @@
 ---
 title: Lean-valmistuksen visuaalinen ajoitus
-description: Tässä ohjeaiheessa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
+description: Tässä artikkelissa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a743be96867c1f325e6fe01f23355c27cb4d0cc0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875185"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Lean-valmistuksen visuaalinen ajoitus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
+Tässä artikkelissa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
 
-Tässä ohjeaiheessa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
+Tässä artikkelissa on tietoja Kanban-aikataulusta, jota tuotannon suunnittelija käyttää kanban-töiden tuotantosuunnitelman valvontaan ja optimointiin.
 
 Kanban-aikataulun avulla suunnittelija valvoo ja optimoi kanban-töiden tuotantosuunnitelman. Se tekee kanban-töiden työnkuluista avoimia ja antaa tuotannon suunnittelijalle työkaluja, joilla optimoidaan ja säädetään tuotantosuunnitelman Lean-valmistuksen työsoluja.
 

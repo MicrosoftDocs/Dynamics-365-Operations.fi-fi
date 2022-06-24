@@ -1,6 +1,6 @@
 ---
 title: GS1-viivakoodit
-description: Tässä aiheessa käsitellään GS1-viivakoodien ja QR-koodien määrittämistä siten, että etiketit voidaan skannata varastossa.
+description: Tässä artikkelissa käsitellään GS1-viivakoodien ja QR-koodien määrittämistä siten, että etiketit voidaan skannata varastossa.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625275"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907142"
 ---
 # <a name="gs1-bar-codes"></a>GS1-viivakoodit
 
@@ -30,11 +30,11 @@ Supply Chain Management GS1-tuki yksinkertaistaa huomattavasti skannausprosessia
 
 Logistiikkapäälliköiden on määritettävä pakollisten sovellustunnisteiden luettelo ja liittää kukin tunniste soveltuviin mobiililaitteen valikkovaihtoehtoon. Sovellustunnisteita voidaan käyttää koko varastossa yleisenä siirto- ja pakkausasetuksena. Näin ollen kaikkien osoitetarrojen muoto on yhtenäinen.
 
-Ellei toisin mainita, *viivakoodi* viittaa tässä aiheessa sekä lineaarisiin (1D) viivakoodeihin että 2D-viivakoodeihin.
+Ellei toisin mainita, *viivakoodi* viittaa tässä artikkelissa sekä lineaarisiin (1D) viivakoodeihin että 2D-viivakoodeihin.
 
 ## <a name="the-gs1-bar-code-format"></a>GS1-viivakoodin muoto
 
-GS1:n yleiset tiedot määrittävät, mitä symbolit ovat käytössä GS1-viivakoodeissa ja miten viivakoodin tiedot koodataan. Tässä osassa on lyhyt esittely aiheeseen. Tarkempia tietoja on GS1:n julkaisuissa [GS1:n yleisissä määrityksessä](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf). GS1-määritysasiakirjaa päivitetään säännöllisesti, ja sen tiedot ovat ajan tasalla GS1:n yleisessä määrityksen versiossa 22.0.
+GS1:n yleiset tiedot määrittävät, mitä symbolit ovat käytössä GS1-viivakoodeissa ja miten viivakoodin tiedot koodataan. Tässä artikkelissa on lyhyt esittely aiheeseen. Tarkempia tietoja on GS1:n julkaisuissa [GS1:n yleisissä määrityksessä](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf). GS1-määritysasiakirjaa päivitetään säännöllisesti, ja sen tiedot ovat ajan tasalla GS1:n yleisessä määrityksen versiossa 22.0.
 
 GS1-viivakoodit käyttävät seuraavia symboleja:
 

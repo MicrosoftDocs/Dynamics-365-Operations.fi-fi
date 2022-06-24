@@ -1,6 +1,6 @@
 ---
 title: Varastotapahtumien arkistointi
-description: Tässä aiheessa kuvataan, miten voit arkistoida varastotapahtumien tietoja järjestelmän suorituskyvyn parantamiseksi.
+description: Tässä artikkelissa kuvataan, miten voit arkistoida varastotapahtumien tietoja järjestelmän suorituskyvyn parantamiseksi.
 author: yufeihuang
 ms.date: 05/10/2022
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: c63cdee862e2e22649a3eb58ae37597741770e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874098"
 ---
 # <a name="archive-inventory-transactions"></a>Varastotapahtumien arkistointi
 
 [!include [banner](../../includes/banner.md)]
 
-Ajan mittaan varastotapahtumien taulukko (`InventTrans`) kasvaa ja kuluttaa enemmän tietokannan tilaa. Tästä syystä taulukolle tehdyt kyselyt hidastuvat ajan myötä. Tässä aiheessa kuvataan, kuinka voit käyttää *Varastotapahtumien arkisto* -ominaisuutta varastotapahtumien tietojen arkistoimiseksi ja järjestelmän suorituskyvyn parantamiseksi.
+Ajan mittaan varastotapahtumien taulukko (`InventTrans`) kasvaa ja kuluttaa enemmän tietokannan tilaa. Tästä syystä taulukolle tehdyt kyselyt hidastuvat ajan myötä. Tässä artikkelissa kuvataan, kuinka voit käyttää *Varastotapahtumien arkisto* -ominaisuutta varastotapahtumien tietojen arkistoimiseksi ja järjestelmän suorituskyvyn parantamiseksi.
 
 > [!NOTE]
 > Vain kirjanpidollisesti päivityt varastotapahtumat voidaan arkistoida valitulta suljetulta kirjanpitokaudelta. Jotta kirjanpidollisesti päivitetyt lähtevät varastotapahtumat voidaan arkistoida, niiden varasto-oton tilan täytyy olla *Myyty*, ja saapuvien maksutapahtumien vastaanoton tilan täytyy olla *Ostettu*.
@@ -35,7 +35,7 @@ Jos `itemId`- ja `inventDimId`-yhdistelmä sisältää vain yhden vastaanotto- t
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Toiminnon ottaminen käyttöön järjestelmässä
 
-Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Varastotapahtumien arkisto* -ominaisuus käyttöön. Huomaa, että tätä toimintoa ei voi poistaa käytöstä, kun se on otettu käyttöön.
+Jos järjestelmäsi ei vielä sisällä tässä artikkelissa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Varastotapahtumien arkisto* -ominaisuus käyttöön. Huomaa, että tätä toimintoa ei voi poistaa käytöstä, kun se on otettu käyttöön.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Ennen varastotapahtumien arkistointia huomioitavat asiat
 

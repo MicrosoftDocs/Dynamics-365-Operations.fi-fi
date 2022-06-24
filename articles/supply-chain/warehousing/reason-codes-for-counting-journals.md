@@ -1,6 +1,6 @@
 ---
 title: Varastoinventoinnin syykoodit
-description: Tässä ohjeaiheessa käsitellään inventointitehtävin syykoodin määrittämistä ja käyttämistä.
+description: Tässä artikkelissa käsitellään inventointitehtävin syykoodin määrittämistä ja käyttämistä.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 7d182f1d979543eeec700924d2bd180ee06be8ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500587"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857109"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Varastoinventoinnin syykoodit
 
@@ -42,7 +42,7 @@ Ennen järjestelmän määrittämistä kannattaa määrittää syykoodien käytt
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Syykoodiominaisuuksien käyttöönottaminen järjestelmässä
 
-Jos et näe kaikkia tässä aiheessa kuvattuja ominaisuuksia järjestelmässäsi, sinun on todennäköisesti otettava käyttöön *Kirjaa varastosta -oikaisut käyttämällä konfiguroitavissa olevia syykoodeja, jotka on liitetty vastatili* -toiminto. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Jos et näe kaikkia tässä artikkelissa kuvattuja ominaisuuksia järjestelmässäsi, sinun on todennäköisesti otettava käyttöön *Kirjaa varastosta -oikaisut käyttämällä konfiguroitavissa olevia syykoodeja, jotka on liitetty vastatili* -toiminto. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön, jos sitä vaaditaan. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Varastonhallinta*
 - **Ominaisuuden nimi:** *Kirjaa käyttökelpoisia oikaisuja käyttäen vastatileihin liitettyjä konfiguroitavissa olevia syykoodeja*
@@ -111,7 +111,7 @@ Voit määrittää inventoinnin syykoodit seuraavasti.
 
 ### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Inventoinnin syykoodiryhmien määrittäminen
 
-*Inventoinnin syykoodiryhmiä* voidaan käyttää Warehouse Management -mobiilisovelluksen *oikaisu*- ja *korjaus*-valikkojen nimikkeissä inventoinnin syykoodien luettelon rajoittamiseksi. (Lisätietoja inventoinnin syykoodiryhmistä on kohdassa [Määritä kannettavan laitteen valikkovaihtoehdot oikaisua ja korjausta varten](#setup-adjustment-in-out) jäljempänä tässä ohjeaiheessa.)
+*Inventoinnin syykoodiryhmiä* voidaan käyttää Warehouse Management -mobiilisovelluksen *oikaisu*- ja *korjaus*-valikkojen nimikkeissä inventoinnin syykoodien luettelon rajoittamiseksi. (Lisätietoja inventoinnin syykoodiryhmistä on kohdassa [Määritä kannettavan laitteen valikkovaihtoehdot oikaisua ja korjausta varten](#setup-adjustment-in-out) jäljempänä tässä artikkelissa.)
 
 1. Siirry kohtaan **Varastonhallinta** \> **Määritys** \> **Varasto** \> **Inventoinnin syykoodiryhmät**.
 1. Lisää ryhmä valitsemalla toimintoruudussa **Uusi**.
@@ -174,7 +174,7 @@ Määritä mobiililaitteen Oikaisu sisään- ja Oikaisu ulos -valikkovaihtoehto 
         - *Piilota* – Älä näytä syykoodia.
 
     - **Muokkaa inventoinnin syykoodia** – Aseta asetukseksi *Kyllä*, jotta työntekijä voi muokata syykoodia, kun se näkyy mobiililaitteessa laskennan aikana. Määritä arvoksi *Ei*, jos haluat estää työntekijää muokkaamasta koodia.
-    - **Inventoinnin syykoodiryhmä** – Valitse syykoodiryhmä, jos haluat rajoittaa työntekijöille esiteltyjen asetusten luetteloa. Lisätietoja syykoodiryhmien määrittämisestä on tässä ohjeaiheessa aiemmin olevassa [Inventoinnin syykoodiryhmien määrittäminen](#reason-groups) -osassa. 
+    - **Inventoinnin syykoodiryhmä** – Valitse syykoodiryhmä, jos haluat rajoittaa työntekijöille esiteltyjen asetusten luetteloa. Lisätietoja syykoodiryhmien määrittämisestä on tässä artikkelissa aiemmin olevassa [Inventoinnin syykoodiryhmien määrittäminen](#reason-groups) -osassa. 
 
 > [!NOTE]
 > Kun liität inventoinnin syykoodiryhmän *Oikaisu sisään*- ja *Oikaisu ulos* -valikkokohteisiin, joissa **Käytä prosessiopasta** -asetus on *Kyllä*, voit saada rajoitetun luettelon inventoinnin syykoodeista osana käsittelyä Warehouse Management-mobiilisovelluksessa.

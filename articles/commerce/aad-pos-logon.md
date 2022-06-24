@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory -todennuksen määrittäminen myyntipistekirjautumisessa
-description: Tässä aiheessa kerrotaan, miten Azure Active Directory määritetään todennusmenetelmäksi Microsoft Dynamics 365 Commerce -myyntipisteessä.
+description: Tässä artikkelissa kerrotaan, miten Azure Active Directory määritetään todennusmenetelmäksi Microsoft Dynamics 365 Commerce -myyntipisteessä.
 author: boycezhu
 ms.date: 04/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 47da2c78cef2bbee324fbc2202898fbabd927c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402148"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853925"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory -todennuksen määrittäminen myyntipistekirjautumisessa
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten Azure Active Directory (Azure AD) määritetään todennusmenetelmäksi Microsoft Dynamics 365 Commerce -myyntipisteessä.
+Tässä artikkelissa kerrotaan, miten Azure Active Directory (Azure AD) määritetään todennusmenetelmäksi Microsoft Dynamics 365 Commerce -myyntipisteessä.
 
 Vähittäismyyjät, jotka käyttävät Dynamics 365 Commercea yhdessä muiden Microsoftin pilvipalveluiden kanssa, kuten Microsoft Azure, Microsoft 365 ja Microsoft Teams, yleensä haluavat käyttää Azure AD:tä keskitettyä hallintaa varten suojattuun ja sujuvaan kirjautumiseen sovelluksissa. Jotta Azure AD -todennusta voi käyttää Commercen myyntipisteelle, todennusmenetelmäksi on ensin määritettävä Azure AD Commerce-pääkonttorisovelluksessa.
 

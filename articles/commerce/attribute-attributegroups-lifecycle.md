@@ -1,6 +1,6 @@
 ---
 title: Määritteiden ja määriteryhmien hallinta
-description: Näiden ohjeiden avulla voit kuvata tuotteen ja sen ominaisuudet käyttäjän kenttämääritteiden avulla.
+description: Näiden artikkelissa avulla voit kuvata tuotteen ja sen ominaisuudet käyttäjän kenttämääritteiden avulla.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727651"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876661"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Määritteiden ja määriteryhmien hallinta
 
@@ -85,7 +85,7 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
 
 *Määritteen metatiedoissa* voit valita asetuksia, jotka määrittävät, miten kunkin tuotteen määritteet toimivat. Voit esimerkiksi määrittää, ovatko määritteet pakollisia sekä voiko niitä käyttää hauissa ja suodattimina.
 
-Tuotteiden määritteiden metatietoasetukset voidaan korvata kanavatasolla. Tätä ominaisuutta käsitellään myöhemmin tässä ohjeaiheessa.
+Tuotteiden määritteiden metatietoasetukset voidaan korvata kanavatasolla. Tätä ominaisuutta käsitellään myöhemmin tässä artikkelissa.
 
 Olet ehkä huomannutkin, että **Määritteet**-sivulla on määritteen metatietoihin liittyviä vaihtoehtoja. **POS:n määritteen metatiedot** -kohdan **Voidaan tarkentaa** -asetus vaikuttaa määritearvojen toimintaan myyntipisteessä tai tapaan, jolla järjestelmä käsittelee kyseisiä määritearvoja. Vain määritteet, joiden **Voidaan tarkentaa** -asetukseksi voi valita **Kyllä**, näkyvät myyntipisteessä tuotteiden tarkennusta tai suodatusta varten.
 

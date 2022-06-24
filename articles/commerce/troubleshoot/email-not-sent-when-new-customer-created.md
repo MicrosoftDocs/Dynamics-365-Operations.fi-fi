@@ -1,6 +1,6 @@
 ---
 title: Tervetuloa-sähköpostia ei lähetetä, kun uusia asiakkaita luodaan
-description: Tämä ohjeaihe antaa vianmääritysohjeet, jotka voivat auttaa, jos Tervetuloa-sähköposti-ilmoitusta ei lähetetä, kun uusi asiakas luodaan Microsoft Dynamics 365 Commercessa.
+description: Tämä artikkeli antaa vianmääritysohjeet, jotka voivat auttaa, jos Tervetuloa-sähköposti-ilmoitusta ei lähetetä, kun uusi asiakas luodaan Microsoft Dynamics 365 Commercessa.
 author: gvrmohanreddy
 ms.date: 02/24/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 1a4faf6cd189f69232e7f9ab8d0e79b320cfe2d9
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 8e95b33d4b8a9af13c613ab89dd33de6b4934694
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349945"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853680"
 ---
 # <a name="welcome-email-is-not-sent-when-new-customers-are-created"></a>Tervetuloa-sähköpostia ei lähetetä, kun uusia asiakkaita luodaan
 
 [!include [banner](../../includes/banner.md)]
 
-Tämä ohjeaihe antaa vianmääritysohjeet, jotka voivat auttaa, jos Tervetuloa-sähköposti-ilmoitusta ei lähetetä, kun uusi asiakas luodaan Microsoft Dynamics 365 Commercessa.
+Tämä artikkeli antaa vianmääritysohjeet, jotka voivat auttaa, jos Tervetuloa-sähköposti-ilmoitusta ei lähetetä, kun uusi asiakas luodaan Microsoft Dynamics 365 Commercessa.
 
 ## <a name="description"></a>Kuvaus
 

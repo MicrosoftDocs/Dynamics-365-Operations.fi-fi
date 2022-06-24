@@ -1,6 +1,6 @@
 ---
 title: Lahjakortti- ja hyvityslaskutoimintojen saumaton offline-tilaan vaihtaminen
-description: Tässä ohjeaiheessa on yleiskatsaus parannuksiin, jotka tarjoavat saumattoman offline-kytkimen tietyille maksutyypeille.
+description: Tässä artikkelissa on yleiskatsaus parannuksiin, jotka tarjoavat saumattoman offline-kytkimen tietyille maksutyypeille.
 author: BrianShook
 ms.date: 02/11/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 59f1a0b213bd22906ba8b2c3e7da38a9818f6d4f
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: e0416a61bd5fd3b875b427ad8a6313d0e9936f0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779489"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869158"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Lahjakortti- ja hyvityslaskutoimintojen saumaton offline-tilaan vaihtaminen
 
 [!include [banner](../includes/banner.md)]
 
-Jos myyntipisteen laite menettää yhteyden kanavan tietokantaan, suurinta osa meneillään olevista myyntipistetoiminnoista ja -tapahtumista voidaan jatkaa sen jälkeen, kun kassanhoitaja vastaanottaa varoitussanoman yhteyden menettämisestä. Joissakin tapauksissa tapahtumilla on elementtejä, jotka edellyttävät reaaliaikaista palvelua. Näitä elementtejä ei tueta, jos myyntipiste on offline-tilassa. Tässä ohjeaiheessa kuvataan joitakin toimintoja, jotka auttavat vähentämään menetetyn yhteyden vaikutusta näissä skenaarioissa.
+Jos myyntipisteen laite menettää yhteyden kanavan tietokantaan, suurinta osa meneillään olevista myyntipistetoiminnoista ja -tapahtumista voidaan jatkaa sen jälkeen, kun kassanhoitaja vastaanottaa varoitussanoman yhteyden menettämisestä. Joissakin tapauksissa tapahtumilla on elementtejä, jotka edellyttävät reaaliaikaista palvelua. Näitä elementtejä ei tueta, jos myyntipiste on offline-tilassa. Tässä artikkelissa kuvataan joitakin toimintoja, jotka auttavat vähentämään menetetyn yhteyden vaikutusta näissä skenaarioissa.
 
 ## <a name="completing-gift-card-transactions-in-offline-mode"></a>Lahjakorttitapahtumien päättäminen offline-tilassa
 
@@ -50,7 +50,7 @@ Jos haluat, että toiminto voi tehdä hyvityslaskutapahtumat offline-tilaan siir
 
 Commerce-parametrit ovat yleensä välimuistissa. Siksi tämän parametrin päivittämisen ja jakeluaikataulun kanavaan synkronoinnin aloittamisen jälkeen muutoksen voimaantulo voi kestää jopa 24 tuntia. Jos haluat, että muutos on voimassa heti, nollaa IIS.
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 - [Myyntipistetoiminto offline-tilassa](../pos-offline-functionality.md)
 - [Myyntipisteen toiminnot (POS) verkossa ja paikallisesti](../pos-operations.md)

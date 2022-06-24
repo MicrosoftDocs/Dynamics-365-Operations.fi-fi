@@ -1,6 +1,6 @@
 ---
 title: Lähtevien prosessien yleiskuvaus
-description: Tässä aiheessa on yleiskatsaus varastonhallinnan lähtevien tuotteiden prosessista.
+description: Tässä artikkelissa on yleiskatsaus varastonhallinnan lähtevien tuotteiden prosessista.
 author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 85012ada693a98652325a142ba4649a9a826b22b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4e3c97862858e219d98b4ef9a81b52c6ab1623ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982376"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852473"
 ---
 # <a name="outbound-process-overview"></a>Lähtevien prosessien yleiskuvaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on yleiskatsaus varastonhallinnan lähtevien tuotteiden prosessista.
+Tässä artikkelissa on yleiskatsaus varastonhallinnan lähtevien tuotteiden prosessista.
 
 ## <a name="output-orders"></a>Toimitustilaukset
 

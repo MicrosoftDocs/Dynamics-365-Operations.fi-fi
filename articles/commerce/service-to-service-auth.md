@@ -1,6 +1,6 @@
 ---
 title: Palvelujen välisen todennuksen määrittäminen
-description: Tässä aiheessa kuvataan, kuinka määritetään huollon todennuksen määrittäminen Microsoft Dynamics 365 Commercessa niin, että luokitukset ja arviot kutsuvat palvelun sovellusliittymiä suojatusti.
+description: Tässä artikkelissa kuvataan, kuinka määritetään huollon todennuksen määrittäminen Microsoft Dynamics 365 Commercessa niin, että luokitukset ja arviot kutsuvat palvelun sovellusliittymiä suojatusti.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: da780de5f15d72bdac85a261eae809125c830260
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: acb3a6220d146d32bbeb5bd8169033bc897ec3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968513"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871604"
 ---
 # <a name="configure-service-to-service-authentication"></a>Palvelujen välisen todennuksen määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka sivustojen välinen (S2S) -todennus määritetään Microsoft Dynamics 365 Commercessa kutsumaan turvallisesti palvelusovellusohjelmointirajapintoja (API) arvioita ja arvosteluja varten.
+Tässä artikkelissa kuvataan, kuinka sivustojen välinen (S2S) -todennus määritetään Microsoft Dynamics 365 Commercessa kutsumaan turvallisesti palvelusovellusohjelmointirajapintoja (API) arvioita ja arvosteluja varten.
 
-Dynamics 365 Commerce tarjoaa [luokitukset ja arvostelut](ratings-reviews-overview.md) monikanavaratkaisuna. Tämä ratkaisu mahdollistaa huollon API:n käytön Commercen ulkopuolelta, jotta erilaisia tehtäviä voidaan suorittaa. Näitä tehtäviä ovat luokitusten ja arviointien tuominen ulkoisesta järjestelmästä Commerceen sekä luokitusten ja arviointien vieminen Commerce-järjestelmästä. Jotta Commerce voi kutsua luokitus- ja arvostelupalvelusovellusliittymiä turvallisesti, sinun on ensin määritettävä S2S-todennus suorittamalla tämän aiheen toimenpiteet.
+Dynamics 365 Commerce tarjoaa [luokitukset ja arvostelut](ratings-reviews-overview.md) monikanavaratkaisuna. Tämä ratkaisu mahdollistaa huollon API:n käytön Commercen ulkopuolelta, jotta erilaisia tehtäviä voidaan suorittaa. Näitä tehtäviä ovat luokitusten ja arviointien tuominen ulkoisesta järjestelmästä Commerceen sekä luokitusten ja arviointien vieminen Commerce-järjestelmästä. Jotta Commerce voi kutsua luokitus- ja arvostelupalvelusovellusliittymiä turvallisesti, sinun on ensin määritettävä S2S-todennus suorittamalla tämän artikkelin toimenpiteet.
 
 ## <a name="add-a-new-app-registration"></a>Lisää uusi sovelluksen rekisteröinti
 

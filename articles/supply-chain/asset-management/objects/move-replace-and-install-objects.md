@@ -1,6 +1,6 @@
 ---
 title: Resurssien siirtäminen, korvaaminen ja asentaminen
-description: Tässä ohjeaiheessa kerrotaan, miten resursseja siirretään, korvataan ja asennetaan resurssien hallinnassa.
+description: Tässä artikkelissa kerrotaan, miten resursseja siirretään, korvataan ja asennetaan resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769632"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872121"
 ---
 # <a name="move-replace-and-install-assets"></a>Resurssien siirtäminen, korvaaminen ja asentaminen
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769632"
 
  
 
-Tässä ohjeaiheessa kerrotaan, miten resursseja siirretään, korvataan ja asennetaan resurssien hallinnassa. Voit luoda yksittäisiä resursseja, joilla ei ole suhteita muihin resursseihin, tai voit luoda resurssirakenteen, joka sisältää pääresurssin (ylätason resurssi) ja siihen liittyvät aliresurssit. Resurssien hallinnassa on kolme lähestymistapaa, joilla resurssin sijaintia siirretään ja muutetaan:
+Tässä artikkelissa kerrotaan, miten resursseja siirretään, korvataan ja asennetaan resurssien hallinnassa. Voit luoda yksittäisiä resursseja, joilla ei ole suhteita muihin resursseihin, tai voit luoda resurssirakenteen, joka sisältää pääresurssin (ylätason resurssi) ja siihen liittyvät aliresurssit. Resurssien hallinnassa on kolme lähestymistapaa, joilla resurssin sijaintia siirretään ja muutetaan:
 
 - **Siirrä** – Siirrä resurssi joko toiseen resurssirakenteeseen tai toiseen sijaintiin samassa resurssirakenteessa.
 - **Korvaa** – Poista resurssi resurssirakenteesta tilapäisesti, jotta se voidaan korjata tai kunnostaa, ja lisätä sitten kunnostettu resurssi takaisin resurssirakenteeseen myöhemmin. Vaihtoehtoisesti voit korvata käytetyn resurssin pysyvästi uudella resurssilla.
@@ -42,7 +42,7 @@ Tässä ohjeaiheessa kerrotaan, miten resursseja siirretään, korvataan ja asen
 Käytä **Siirrä resurssi** -toimintoa siirtääksesi resurssin joko toiseen resurssirakenteeseen tai toiseen sijaintiin samassa resurssirakenteessa. Voit myös siirtää resurssin pois resurssirakenteesta niin, että siitä tulee itsenäinen resurssi, jolla ei ole rakennesuhteita.
 
 > [!NOTE]
-> Älä käytä tätä toimintoa, jos resursseja korjataan tai vaihdetaan väliaikaisesti. Käytä sen sijaan **Korvaa resurssi** -toimintoa, joka on kuvattu myöhemmin tässä ohjeaiheessa.
+> Älä käytä tätä toimintoa, jos resursseja korjataan tai vaihdetaan väliaikaisesti. Käytä sen sijaan **Korvaa resurssi** -toimintoa, joka on kuvattu myöhemmin tässä artikkelissa.
 
 1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
 2. Valitse luettelosta siirrettävä resurssi. Jos resurssilla on aliresursseja, siirrät myös kyseiset resurssit.

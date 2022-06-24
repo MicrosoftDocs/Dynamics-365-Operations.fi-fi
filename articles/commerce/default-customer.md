@@ -1,6 +1,6 @@
 ---
 title: Oletusasiakkaan luominen
-description: Tässä aiheessa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Microsoft Dynamics 365 Commercessa luodaan kanavaa.
+description: Tässä artikkelissa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Microsoft Dynamics 365 Commercessa luodaan kanavaa.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4658356e268d045fcb7065b397411ffc5161864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720956"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894526"
 ---
 # <a name="create-a-default-customer"></a>Oletusasiakkaan luominen
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Microsoft Dynamics 365 Commercessa luodaan kanavaa.
+Tässä artikkelissa esitellään, miten luodaan oletusasiakas käytettäväksi, kun Microsoft Dynamics 365 Commercessa luodaan kanavaa.
 
 Kun luot kanavaa, sinun on määritettävä oletusasiakas. Oletusasiakas on helppo luoda, kun asiakasryhmä ja asiakasosoitekirja on luotu ensin.
 

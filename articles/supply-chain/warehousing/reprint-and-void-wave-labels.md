@@ -1,6 +1,6 @@
 ---
 title: Aallon etikettien uudelleentulostus ja mitätöinti
-description: Tässä ohjeaiheessa käsitellään aiemmin luotujen aallon etikettien mitätöintiä ja uudelleentulostusta.
+description: Tässä artikkelissa käsitellään aiemmin luotujen aallon etikettien mitätöintiä ja uudelleentulostusta.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572334"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871830"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Aallon etikettien uudelleentulostus ja mitätöinti
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään aaltokäsittelyn luomien etikettien hallintaa. (Tarkka kuvaus ja määritysohjeet ovat kohdassa [Aallon etikettitulostuksen määrittäminen](../warehousing/configure-wave-label-printing.md).)
+Tässä artikkelissa käsitellään aaltokäsittelyn luomien etikettien hallintaa. (Tarkka kuvaus ja määritysohjeet ovat kohdassa [Aallon etikettitulostuksen määrittäminen](../warehousing/configure-wave-label-printing.md).)
 
 Aallon etikettejä voi tulostaa uudelleen koska tahansa. Yksittäin etiketti voidaan esimerkiksi tulostaa siinä tapauksessa, että nykyinen on kadonnut tai vaurioitunut. Tai sitten varaston työntekijä tai työnjohtaja voi haluta tulostaa koko etikettirullan, jos aallon etikettisarjan numero ja/tai koostumus on muuttunut (esimerkiksi puuttuvan varaston tai jonkin muun syyn vuoksi). Usein koko rulla on tulostettava uudelleen, vaikka vain laatikoiden määrä olisi muuttunut, jotta kokonaismäärä pysyy oikeana kunkin etiketin Laatikko X/Y -osassa.
 
@@ -32,10 +32,10 @@ Aallon etiketin uudelleentulostustoiminto tukee seuraavia toimintoja:
 - Etikettien mitätöinti ja uudelleentulostus samanaikaisesti. (Etikettien mitätöintimahdollisuus on upotettu esimerkiksi lyhyisiin keräilyskenaarioihin.)
 - Aallon etikettihistorian tyhjentäminen.
 
-Tämä ohjeaihe sisältää skenaariokokoelman, jotka näyttävät esimerkkien avulla, miten kutakin aallon etikettien uudelleentulostustoimintoa käytetään.
+Tämä artikkeli sisältää skenaariokokoelman, jotka näyttävät esimerkkien avulla, miten kutakin aallon etikettien uudelleentulostustoimintoa käytetään.
 
 > [!IMPORTANT]
-> Ohjeaiheen skenaarioiden käyttäminen edellyttää, että kyseiset aallon tulostustoiminnot otetaan käyttöön ja määritetään kohdassa [Aallon etikettitulostuksen määrittäminen](../warehousing/configure-wave-label-printing.md) kuvatulla tavalla. Useissa skenaarioissa lisäksi edellytetään aiheen skenaarioiden suorittamista, jotta tarvittavat näytetiedot ovat käytettävissä.
+> Artikkelin skenaarioiden käyttäminen edellyttää, että kyseiset aallon tulostustoiminnot otetaan käyttöön ja määritetään kohdassa [Aallon etikettitulostuksen määrittäminen](../warehousing/configure-wave-label-printing.md) kuvatulla tavalla. Useissa skenaarioissa lisäksi edellytetään artikkelin skenaarioiden suorittamista, jotta tarvittavat näytetiedot ovat käytettävissä.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Skenaario 1: Etikettien uudelleentulostus verkkoasiakasohjelmasta
 

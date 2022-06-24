@@ -1,6 +1,6 @@
 ---
-title: B2B-verkkokauppasivuston määrittäminen
-description: Tässä aiheessa kuvataan, kuinka määritetään yritysten (B2B) verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla.
+title: Yritystenvälisen sähköisen kaupankäyntisivuston määrittäminen
+description: Tässä artikkelissa kuvataan, kuinka määritetään yritysten (B2B) verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881903"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Yritystenvälisen yhteistyön sähköisen kaupankäynnin sivuston määrittäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Yritysten välisillä (B2B) verkkokauppasivustoilla on joitakin avaintoimintoja, jotka optimoivat B2B-käyttäjän työnkulun. Tässä aiheessa kuvataan, kuinka määritetään B2B-verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla. Se käy läpi moduulit ja sivuston asetukset, jotka pitää olla konfiguroitu B2B-skenaarioiden käyttöön ottamiseksi.
+Yritysten välisillä (B2B) verkkokauppasivustoilla on joitakin avaintoimintoja, jotka optimoivat B2B-käyttäjän työnkulun. Tässä artikkelissa kuvataan, kuinka määritetään B2B-verkkokauppasivusto Microsoft Dynamics 365 Commercen avulla. Se käy läpi moduulit ja sivuston asetukset, jotka pitää olla konfiguroitu B2B-skenaarioiden käyttöön ottamiseksi.
 
 ## <a name="prerequisites"></a>Edellytykset
 
-- Jotta voit määrittää B2B-verkkokauppasivuston, tietyt Commerce Headquarters -toiminnot on otettava käyttöön ja määritettävä tässä ohjeaiheessa kuvatulla tavalla.
+- Jotta voit määrittää B2B-verkkokauppasivuston, tietyt Commerce Headquarters -toiminnot on otettava käyttöön ja määritettävä tässä artikkelissa kuvatulla tavalla.
 - Ydinkokemuksia, kuten tuotteiden hakua, tuotetietosivuja, ostoskoria ja uloskuittausta, ylläpitävät samat moduulit, joita käytetään kuluttajakaupan (B2C) verkkokauppasivustoissa. Sivuston laatijoiden tulisi tutustua kaikkiin moduuleihin, joita Dynamics 365 Commerce tukee. Lisätietoja on ohjeaiheessa [Moduulikirjaston yleiskatsaus](../starter-kit-overview.md).
-- Tässä aiheessa oletetaan, että sivuston laatijat ymmärtävät perustiedot Commercen sivuston luontitoiminnosta, malleista, katkelmista ja sivuista, jotta he voivat ottaa käyttöön B2B-toiminnot sähköistä kaupankäyntiä varten.
+- Tässä artikkelissa oletetaan, että sivuston laatijat ymmärtävät perustiedot Commercen sivuston luontitoiminnosta, malleista, katkelmista ja sivuista, jotta he voivat ottaa käyttöön B2B-toiminnot sähköistä kaupankäyntiä varten.
 
 ## <a name="site-level-settings"></a>Sivustotason asetukset
 

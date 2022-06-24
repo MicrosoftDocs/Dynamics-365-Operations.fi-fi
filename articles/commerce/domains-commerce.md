@@ -1,6 +1,6 @@
 ---
 title: Toimialueet Dynamics 365 Commercessa
-description: Tässä aiheessa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
-ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
+ms.openlocfilehash: c48c8bd57d90a8c7d47bfa4263cd9ab38002629b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8737343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848951"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 
-Toimialueet ovat verkko-osoitteita, joiden avulla siirrytään Dynamics 365 Commerce -sivustoissa selaimen avulla. Voit ohjata toimialueen hallintaa valitun toimialuenimipalvelimen (DNS) tarjoajan avulla. Toimialueisiin viitataan Dynamics 365 Commerce -sivuston luontiohjelmassa. Niiden avulla määritetään, miten sivustoa käytetään julkaisun jälkeen. Tässä aiheessa on tietoja toimialueiden käsittelemisestä ja niihin viittaamisesta Commerce-sivuston kehityksen ja käynnistyksen elinkaaren aikana.
+Toimialueet ovat verkko-osoitteita, joiden avulla siirrytään Dynamics 365 Commerce -sivustoissa selaimen avulla. Voit ohjata toimialueen hallintaa valitun toimialuenimipalvelimen (DNS) tarjoajan avulla. Toimialueisiin viitataan Dynamics 365 Commerce -sivuston luontiohjelmassa. Niiden avulla määritetään, miten sivustoa käytetään julkaisun jälkeen. Tässä artikkelissa on tietoja toimialueiden käsittelemisestä ja niihin viittaamisesta Commerce-sivuston kehityksen ja käynnistyksen elinkaaren aikana.
 
 > [!NOTE]
 > Kaikille Dynamics 365 Commerce -ohjelmassa luoduille ympäristöille valmistellaan `.dynamics365commerce.ms`-toimialue 6.5.2022 alkaen aiemman mallin `.commerce.dynamics.com` tilalle. `.commerce.dynamics.com`-toimialueeseen liittyvät aiemmin luodut ympäristöt jatkavat toimimista.

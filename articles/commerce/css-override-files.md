@@ -1,6 +1,6 @@
 ---
 title: Työskentely CSS-korvaustiedostojen kanssa
-description: Tässä ohjeaiheessa kerrotaan, miksi, milloin ja miten CSS-tyylisivuja (CSS) käytetään ohittamaan tiedostot Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa kerrotaan, miksi, milloin ja miten CSS-tyylisivuja (CSS) käytetään ohittamaan tiedostot Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964601"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892857"
 ---
 # <a name="work-with-css-override-files"></a>Työskentely CSS-korvaustiedostojen kanssa
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miksi, milloin ja miten CSS-tyylisivuja (CSS) käytetään ohittamaan tiedostot Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kerrotaan, miksi, milloin ja miten CSS-tyylisivuja (CSS) käytetään ohittamaan tiedostot Microsoft Dynamics 365 Commercessa.
 
 Pysyviä sivustotyylejä tulisi yleensä käsitellä sivuston teemalla. Teemat sisältävät perus-CSS- ja tyyliasetuksia mille tahansa sivustosi sivulla oleville moduuleille. Teemat luodaan käyttämällä Dynamics 365 Commerce online Software Development Kit (SDK) -pakettia, ja ne otetaan käyttöön sivustoillesi Microsoft Dynamics Lifecycle Servicesin (LCS) kautta. SDK-ohjesivuston kehittäjien teeman virheenkorjausominaisuudet ja moduuliliittymän määritykset luovat mukautettavia ja yhtenäisiä sivustonsuunnittelupaketteja. Kun nämä suunnittelupaketit otetaan käyttöön sivustossa, sivuston tekijät voivat keskittyä sisällön luomiseen, muokkaamiseen ja julkaisemiseen sivuston kehittämisen sijasta.
 

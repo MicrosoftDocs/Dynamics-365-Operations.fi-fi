@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 857e9e023aa5648a06ae564936f06c491ea7cefc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ccbb9cf71ff1df7aa336deb5bf9d7dacb8004134
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678091"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862392"
 ---
 # <a name="time-windows"></a>Aikaikkunat  
 
@@ -38,7 +38,7 @@ Aikaikkunat määrittävät, miten pitkälle huoltotilausrivi voidaan siirtää 
 
 Jos huoltosopimuksen riville ei ole määritetty aikaikkunaa, huoltosopimuksesta johdettu huoltotilausrivi on suoritettava täsmälleen sinä päivänä, jolle se on alun perin ajoitettu.
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Aikaikkunoiden luominen](create-time-windows.md)
 

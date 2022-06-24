@@ -1,6 +1,6 @@
 ---
 title: Sarjoitettujen nimikkeiden käyttäminen myyntipisteessä
-description: Tässä ohjeaiheessa selitetään, kuinka sarjoitettuja nimikkeitä hallitaan myyntipisteen (POS) sovelluksessa.
+description: Tässä artikkelissa selitetään, kuinka sarjoitettuja nimikkeitä hallitaan myyntipisteen (POS) sovelluksessa.
 author: boycezhu
 ms.date: 01/08/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a715a9d025f36656506daeb9e611bfacdafa102
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737575"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880026"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Sarjoitettujen nimikkeiden käyttäminen myyntipisteessä
 
 [!include [banner](includes/banner.md)]
 
-Monet jälleenmyyjät myyvät tuotteita, jotka edellyttävät sarjavalvontaa. Näitä tuotteita kutsutaan *sarjoitetuiksi nimikkeiksi*. Jotkin vähittäismyyjät haluavat ehkä ylläpitää sarjanumeroita myymälässä tai varastossa seurantaa varten. Muut jälleenmyyjät saattavat haluta kaapata sarjanumeroita myyntiprosessin aikana huoltoa ja takuuta varten. Tässä ohjeaiheessa selitetään, kuinka voit hallita sarjoitettuja nimikkeitä Microsoft Dynamics 365 Commerce -myyntipisteen (POS) sovelluksessa.
+Monet jälleenmyyjät myyvät tuotteita, jotka edellyttävät sarjavalvontaa. Näitä tuotteita kutsutaan *sarjoitetuiksi nimikkeiksi*. Jotkin vähittäismyyjät haluavat ehkä ylläpitää sarjanumeroita myymälässä tai varastossa seurantaa varten. Muut jälleenmyyjät saattavat haluta kaapata sarjanumeroita myyntiprosessin aikana huoltoa ja takuuta varten. Tässä artikkelissa selitetään, kuinka voit hallita sarjoitettuja nimikkeitä Microsoft Dynamics 365 Commerce -myyntipisteen (POS) sovelluksessa.
 
 ## <a name="serial-number-configurations"></a>Sarjanumerokonfiguraatiot
 
@@ -124,7 +124,7 @@ Myyntipisteen käyttäjät voivat jättää sarjanumeron syöttämisen väliin a
 
 ### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Sarjanumeroiden kohdistaminen asiakkaan tilauksen täyttämisen tai noudon yhteydessä
 
-Kun sarjoitettujen tuotteiden asiakastilausrivit täytetään myyntipisteen **Tilauksen täyttäminen** -toiminnon avulla, myyntipiste pakottaa sarjanumeron siepauksen ennen lopullista täyttämistä. Jos siis ei ole annettu sarjanumeroa alkuperäisessä tilauksen sieppaamisessa, se on siepattava myyntipisteen nouto-, pakkaus- tai lähetysprosessien aikana. Oikeellisuustarkistus tehdään jokaisessa vaiheessa, ja käyttäjältä pyydetään sarjanumerotiedot vain, jos ne puuttuvat tai eivät enää ole voimassa. Jos käyttäjä esimerkiksi ohittaa nouto- tai pakkausvaiheet ja aloittaa lähetyksen heti eikä riville ole rekisteröity sarjanumeroa, myyntipiste edellyttää sarjanumeron syömistä ennen lopullisen laskuvaiheen valmistumista. Kun pakotetaan sarjanumeron sieppaus myyntipisteen tilauksen täyttämistoimintojen aikana, kaikki edellä tässä ohjeaiheessa mainitut säännöt ovat voimassa. Vain **aktiiviseksi** määritetyt sarjoitetut nimikkeet käyvät läpi sarjanumeron varaston oikeellisuustarkistuksen. **Aktiivinen myyntiprosessissa** -konfiguroituja nimikkeitä ei tarkisteta. Jos **aktiivisten** tuotteiden **Fyysinen negatiivinen varasto** sallitaan, mikä tahansa sarjanumero hyväksytään varaston saatavuudesta riippumatta. Sekä **Aktiivinen**- että **Aktiivinen myyntiprosessissa** -nimikkeille käyttäjä voi jättää sarjanumerot haluttaessa tyhjiksi nouto-, pakkaus- ja lähetysvaiheissa, jos **Tyhjä varasto-otto sallitaan** on määritetty.
+Kun sarjoitettujen tuotteiden asiakastilausrivit täytetään myyntipisteen **Tilauksen täyttäminen** -toiminnon avulla, myyntipiste pakottaa sarjanumeron siepauksen ennen lopullista täyttämistä. Jos siis ei ole annettu sarjanumeroa alkuperäisessä tilauksen sieppaamisessa, se on siepattava myyntipisteen nouto-, pakkaus- tai lähetysprosessien aikana. Oikeellisuustarkistus tehdään jokaisessa vaiheessa, ja käyttäjältä pyydetään sarjanumerotiedot vain, jos ne puuttuvat tai eivät enää ole voimassa. Jos käyttäjä esimerkiksi ohittaa nouto- tai pakkausvaiheet ja aloittaa lähetyksen heti eikä riville ole rekisteröity sarjanumeroa, myyntipiste edellyttää sarjanumeron syömistä ennen lopullisen laskuvaiheen valmistumista. Kun pakotetaan sarjanumeron sieppaus myyntipisteen tilauksen täyttämistoimintojen aikana, kaikki edellä tässä artikkelissa mainitut säännöt ovat voimassa. Vain **aktiiviseksi** määritetyt sarjoitetut nimikkeet käyvät läpi sarjanumeron varaston oikeellisuustarkistuksen. **Aktiivinen myyntiprosessissa** -konfiguroituja nimikkeitä ei tarkisteta. Jos **aktiivisten** tuotteiden **Fyysinen negatiivinen varasto** sallitaan, mikä tahansa sarjanumero hyväksytään varaston saatavuudesta riippumatta. Sekä **Aktiivinen**- että **Aktiivinen myyntiprosessissa** -nimikkeille käyttäjä voi jättää sarjanumerot haluttaessa tyhjiksi nouto-, pakkaus- ja lähetysvaiheissa, jos **Tyhjä varasto-otto sallitaan** on määritetty.
 
 Sarjanumeroiden oikeellisuustarkistuksia tehdään myös silloin, kun käyttäjä suorittaa noutotoimintoja myyntipisteen asiakastilauksissa. Myyntipistesovellus ei salli sarjoitettuun tuotteeseen poiminnan viimeistelyä, ennen kuin se läpäisee oikeellisuustarkistukset aiemmin mainitulla tavalla. Oikeellisuustarkistukset perustuvat aina tuotteen seurantadimensioon ja myyntivaraston konfiguraatioihin. 
 

@@ -1,6 +1,6 @@
 ---
-title: Monikanavaisten maksujen yleiskatsaus
-description: Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa.
+title: Monikanavamaksujen yleiskatsaus
+description: Tässä artikkelissa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa.
 author: BrianShook
 ms.date: 09/17/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 593a647caeaf7d06aa1f2067954466db7dac6a1d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984163"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881706"
 ---
-# <a name="omni-channel-payments-overview"></a>Omnikanavan maksujen yleiskatsaus
+# <a name="omni-channel-payments-overview"></a>Monikanavamaksujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa. Se sisältää kattavan luettelon tuetuista skenaarioista, tietoja toiminnoista, asetuksista ja vianmäärityksestä sekä joidenkin tavallisten ongelmien kuvauksia.
+Tässä artikkelissa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commercessa. Se sisältää kattavan luettelon tuetuista skenaarioista, tietoja toiminnoista, asetuksista ja vianmäärityksestä sekä joidenkin tavallisten ongelmien kuvauksia.
 
 ## <a name="key-terms"></a>Tärkeimmät termit
 
@@ -45,15 +45,15 @@ Tässä ohjeaiheessa on yhteenveto Omni-Channel-maksuista Dynamics 365 Commerces
 
 Yleensä termi *Omni-Channel-maksu* kuvaa mahdollisuutta luoda tilauksen yhdellä kanavalla ja täyttää sen toisella kanavalla. Omni-Channel-tuki tuen avain on, että maksut säilyvät yhdessä muiden tilaustietojen kanssa ja että näitä maksuja koskevia tietoja käytetään, kun tilaus palautetaan tai sitä käsitellään toisessa kanavassa. Klassinen esimerkki on "Osta verkosta, nouda myymälästä" -skenaario. Tässä skenaariossa maksutiedot lisätään, kun tilaus luodaan verkossa. Tämän jälkeen ne palautetaan myyntipisteessä asiakkaan maksukortin veloittamiseksi noutohetkellä. 
 
-Kaikki tässä ohjeaiheessa kuvatut skenaariot voidaan toteuttaa Kauppa-ohjelmiston vakiomaksuohjelmiston kehityspaketin (SDK) avulla. [Adyen-järjestelmän Dynamics 365 -maksuyhdysliitin](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) sisältää kaikki tässä kuvatut skenaariot. 
+Kaikki tässä artikkelissa kuvatut skenaariot voidaan toteuttaa Kauppa-ohjelmiston vakiomaksuohjelmiston kehityspaketin (SDK) avulla. [Adyen-järjestelmän Dynamics 365 -maksuyhdysliitin](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) sisältää kaikki tässä kuvatut skenaariot. 
 
 ### <a name="prerequisites"></a>Edellytykset
 
-Kaikissa tässä ohjeaiheessa kuvatuissa skenaarioissa on määritettävä maksuyhteys, joka tukee Omni-Channel-maksuja. Myös valmiiksi määritettyä Adyen-liitintä voidaan käyttää, koska se tukee skenaarioita, jotka ovat käytettävissä Payments SDK:n kautta. Lisätietoja maksuyhdistimien toteuttamisesta ja Retail SDK:sta yleensä on [IT-ammattilaisten ja -kehittäjien kotisivulla](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Kaikissa tässä artikkelissa kuvatuissa skenaarioissa on määritettävä maksuyhteys, joka tukee Omni-Channel-maksuja. Myös valmiiksi määritettyä Adyen-liitintä voidaan käyttää, koska se tukee skenaarioita, jotka ovat käytettävissä Payments SDK:n kautta. Lisätietoja maksuyhdistimien toteuttamisesta ja Retail SDK:sta yleensä on [IT-ammattilaisten ja -kehittäjien kotisivulla](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### <a name="supported-versions"></a>Tuetut versiot
 
-Tässä ohjeaiheessa kuvatut Omni-Channel-maksuominaisuudet on julkaistu osana Microsoft Dynamics 365 for Retail -versiota 8.1.3. 
+Tässä artikkelissa kuvatut Omni-Channel-maksuominaisuudet on julkaistu osana Microsoft Dynamics 365 for Retail -versiota 8.1.3. 
 
 #### <a name="card-present-and-card-not-present-connectors"></a>Kortti on käytössä ja Kortti ei ole käytössä -yhdistimet
 
@@ -66,7 +66,7 @@ Toinen ohjelmointirajapinta on nimeltään **iNamedRequestHandler**. Se tukee Ko
 Seuraavat komponentit ja asetusvaiheet ovat pakollisia:
 
 - **eCommerce-integrointi**: Kauppaintegroinnin on tuettava tilanteita, joissa tilauksen lähtöpaikka on online-myymälä. Lisätietoja Retail e-Commerce SDK:sta on kohdassa [Sähköisen kaupankäynnin Platform Software Development Kit (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). Demo-ympäristössä viitemyymälä tukee Omni-Channel-maksuskenaarioita. 
-- **Online-maksun määritys**: Online-kanavan asetusten on sisällettävä maksuyhteys, joka on päivitetty tukemaan Omni-Channel-maksuja. Vaihtoehtoisesti voidaan käyttää käyttövalmista maksuyhdistintä. Lisätietoja Adyen-maksuyhdistimestä verkkokauppojen konfiguroinnissa on kohdassa [Adyen-maksuyhdistin](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Tässä ohjeaiheessa kuvattujen verkkokaupan määritysvaiheiden lisäksi **Salli säästö tiedot e-Commerce** -parametrin asetuksen arvoksi on määritettävä **Tosi** Adyen-liittimen asetuksissa. 
+- **Online-maksun määritys**: Online-kanavan asetusten on sisällettävä maksuyhteys, joka on päivitetty tukemaan Omni-Channel-maksuja. Vaihtoehtoisesti voidaan käyttää käyttövalmista maksuyhdistintä. Lisätietoja Adyen-maksuyhdistimestä verkkokauppojen konfiguroinnissa on kohdassa [Adyen-maksuyhdistin](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Tässä artikkelissa kuvattujen verkkokaupan määritysvaiheiden lisäksi **Salli säästö tiedot e-Commerce** -parametrin asetuksen arvoksi on määritettävä **Tosi** Adyen-liittimen asetuksissa. 
 - **Omni-Channel-maksujen konfiguraatio**: Siirry taustajärjestelmäsovelluksessa kohtaan **Vähittäismyynti ja kauppa \> Headquarters-sovelluksen asetus \> Parametrit \> Kaupan jaetut parametrit**. Aseta sitten **Omni-Channel-maksujen** -välilehdessä **Käytä Omni-Channel-maksuja** -asetukseksi **Kyllä**. Commercen versiossa 10.0.12 ja uudemmissa versioissa tämä asetus on **Ominaisuuksien hallinta** -työtilassa. Valitse **Monikanavan maksut** -ominaisuus ja valitse sitten **Ota käyttöön nyt**. 
 - **Maksupalvelut:** Call center käyttää **Maksupalvelut**-sivun oletusmaksuyhdistintä maksujen käsittelemiseen. Jos haluat tukea skenaarioita, kuten Osta call centeristä, poimi myymälästä, tämän oletusmaksuyhdistimen on oltava Adyen-maksuyhdistin tai maksuyhdistin, joka täyttää Omni-Channel-maksuissa käytettävät toteutusvaatimukset.
 - **EFT-palvelu**: Maksupäätteen kautta suoritettavat maksut on määritettävä laitteistoprofiilin **EFT-palvelu**-pikavälilehdessä. Adyen-yhdistin tukee käyttövalmiita Omni-Channel-maksuskenaarioita. Myös muita **iNamedRequestHandler**-maksuyhdistimiä voidaan käyttää, jos ne tukevat Omni-Channel-maksuja.
@@ -231,7 +231,7 @@ Jos tilauksen luonnissa käytetty kortti ei ole enää voimassa, kun tuotteet va
 
 Kun tilaus, jolla on useita tarjouksia ja useita rivejä, on noudettavissa, kassanhoitaja saa ensin käyttöön **Käytettävissä olevan maksutavan** kehotteen. Jos on useita kortteja ja kassanhoitaja valitsee **Käytä käytettävissä olevaa maksutapaa**, olemassa olevat korttimaksuvälinerivit siepataan, kunnes saldo täyttyy parhaillaan kerättävissä tavaroissa. Kassanhoitajilla ei ole mahdollisuutta valita korttia, jota käytetään noudettavissa tuotteissa. 
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 - [Maksut – usein kysytyt kysymykset](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 -maksuyhdistin Adyenia varten](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)

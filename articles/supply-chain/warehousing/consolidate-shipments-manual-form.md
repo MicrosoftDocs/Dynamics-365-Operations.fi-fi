@@ -1,6 +1,6 @@
 ---
 title: Lähetysten konsolidointi manuaalisesti käyttämällä Konsolidoi lähetykset -sivua
-description: Tässä ohjeaiheessa käsitellään skenaariota, jossa useita tilauksia vapautetaan varastoon ja jotka myöhemmin konsolidoidaan Konsolidoi lähetykset -sivulla.
+description: Tässä artikkelissa käsitellään skenaariota, jossa useita tilauksia vapautetaan varastoon ja jotka myöhemmin konsolidoidaan Konsolidoi lähetykset -sivulla.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 5a2f4a9ed05460f9beedf8653ec80b01c84a7b26
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d24542a126d64621525f62e694bbc7174b474810
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677475"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897339"
 ---
 # <a name="consolidate-shipments-manually-by-using-the-consolidate-shipments-page"></a>Lähetysten konsolidointi manuaalisesti käyttämällä Konsolidoi lähetykset -sivua
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään skenaariota, jossa useita tilauksia vapautetaan varastoon ja jotka myöhemmin konsolidoidaan **Konsolidoi lähetykset** -sivulla.
+Tässä artikkelissa käsitellään skenaariota, jossa useita tilauksia vapautetaan varastoon ja jotka myöhemmin konsolidoidaan **Konsolidoi lähetykset** -sivulla.
 
 ## <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Ohjeaiheen skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu **USMF** ennen aloittamista.
+Artikkelin skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu **USMF** ennen aloittamista.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Lähetyksen konsolidointikäytäntöjen ja tuotesuodattimien määrittäminen
 

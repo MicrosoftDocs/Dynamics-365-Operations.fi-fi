@@ -1,6 +1,6 @@
 ---
 title: Ostohyvitysten hallintasopimukset
-description: Tässä ohjeaiheessa kerrotaan, miten luodaan ostohyvitysten hallintasopimukset. Sopimuksia käytetään eri menetelmien ja perusteiden hallintaan maksujen ja rojaltien laskemiseksi. Niihin sisältyy sisällyttämistä ja poissulkemista koskevia sääntöjä.
+description: Tässä artikkelissa kerrotaan, miten luodaan ostohyvitysten hallintasopimukset. Sopimuksia käytetään eri menetelmien ja perusteiden hallintaan maksujen ja rojaltien laskemiseksi. Niihin sisältyy sisällyttämistä ja poissulkemista koskevia sääntöjä.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689660"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851591"
 ---
 # <a name="rebate-management-deals"></a>Ostohyvitysten hallintasopimukset
 
 [!include [banner](../includes/banner.md)]
 
-Ostohyvitysten hallintasopimuksia käytetään eri menetelmien ja perusteiden hallintaan maksujen ja rojaltien laskemiseksi. Niihin sisältyy sisällyttämistä ja poissulkemista koskevia sääntöjä. Ostohyvitysten hallintasopimuksia on kolmenlaisia: asiakashyvitykset, asiakasrojaltit ja toimittajahyvitykset. Kaikki kolme tyyppiä käyttävät samanlaisia asetuksia. Tässä aiheessa kuvataan erot siellä, missä niitä on.
+Ostohyvitysten hallintasopimuksia käytetään eri menetelmien ja perusteiden hallintaan maksujen ja rojaltien laskemiseksi. Niihin sisältyy sisällyttämistä ja poissulkemista koskevia sääntöjä. Ostohyvitysten hallintasopimuksia on kolmenlaisia: asiakashyvitykset, asiakasrojaltit ja toimittajahyvitykset. Kaikki kolme tyyppiä käyttävät samanlaisia asetuksia. Tässä artikkelissa kuvataan erot siellä, missä niitä on.
 
 ## <a name="create-a-deal"></a>Sopimuksen luominen
 
@@ -118,7 +118,7 @@ Jokaiselle sopimuksen riville on määritettävä tiedot **Ostohyvityksen hallin
 
 | Kenttä | kuvaus |
 |---|---|
-| Laskentatapa | Valitse menetelmä, jota käytetään, kun valittu sopimusrivi yhdistetään muihin sopimusriveihin (*Vaiheittainen*, *Kumulatiivinen*, *Juokseva* tai *Yhteensä*). Tämän kentän arvo voi vaikuttaa merkittävästi ostohyvityslaskelmien tulokseen. Kunkin menetelmän täydellinen kuvaus sekä esimerkkejä, jotka osoittavat, miten se vaikuttaa ostohyvityksen laskentaan, on jäljempänä tässä ohjeaiheessa kohdassa [Sopimusrivien laskentamenetelmät](#calc-methods). |
+| Laskentatapa | Valitse menetelmä, jota käytetään, kun valittu sopimusrivi yhdistetään muihin sopimusriveihin (*Vaiheittainen*, *Kumulatiivinen*, *Juokseva* tai *Yhteensä*). Tämän kentän arvo voi vaikuttaa merkittävästi ostohyvityslaskelmien tulokseen. Kunkin menetelmän täydellinen kuvaus sekä esimerkkejä, jotka osoittavat, miten se vaikuttaa ostohyvityksen laskentaan, on jäljempänä tässä artikkelissa kohdassa [Sopimusrivien laskentamenetelmät](#calc-methods). |
 | Peruste | Valitse, käytetäänkö ostohyvitystä määrän perusteella (eli ostettujen tai myytyjen yksiköiden kokonaismäärän) vai arvon (eli ostettujen tai myytyjen tuotteiden kokonaishinnan) perusteella. |
 | Tapahtumatyyppi | <p>Valitse prosessin piste, jossa laskenta suoritetaan:</p><ul><li>*Tilaus* – Käytä laskelman pohjana tilattua määrää tai arvoa.</li><li>*Toimitettu* – Käytä laskelman pohjana toimitettua määrää tai arvoa.</li><li>*Lasku* – Käytä laskelman pohjana laskutettua määrää tai arvoa.</li></ul> |
 | Yksikkö | Jos valitsit **Peruste**-kentästä *Määrä*, valitse yksikkö, jossa määrä on määritettävä. |

@@ -1,6 +1,6 @@
 ---
 title: Interaktiivinen ominaisuusmoduuli
-description: Tässä ohjeaiheessa on tietoja interaktiivista ominaisuusmoduuleista ja niiden lisäämisestä Microsoft Microsoft Dynamics 365 Commercen sivuston sivuille.
+description: Tässä artikkelissa on tietoja interaktiivista ominaisuusmoduuleista ja niiden lisäämisestä Microsoft Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3ab325189812289390740e31fd673ee9892f9759
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: deee7c35cfc4293480fda74665429121b71bbfab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780736"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898516"
 ---
 # <a name="interactive-feature-module"></a>Interaktiivinen ominaisuusmoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja interaktiivista ominaisuusmoduuleista ja niiden lisäämisestä Microsoft Microsoft Dynamics 365 Commercen sivuston sivuille.
+Tässä artikkelissa on tietoja interaktiivista ominaisuusmoduuleista ja niiden lisäämisestä Microsoft Microsoft Dynamics 365 Commercen sivuston sivuille.
 
 Interaktiiviset ominaisuusmoduulit ovat mosaiikkimaisia moduuleja, joita voidaan käyttää useiden tuoteluokkien tai tuotemerkkien markkinoimiseen käyttämällä kuvien ja tekstien yhdistelmää. Esimerkiksi vähittäismyyjä voi lisätä interaktiivisen ominaisuusmoduulin sähköisen kaupankäynnin sivuston aloitussivulle mainostaakseen myydyimpiä tuoteluokkia. Interaktiivinen ominaisuusmoduuli muistuttaa ruutuluettelomoduulia, mutta sillä on erilainen asettelu ja erilaiset interaktiiviset toiminnot.
 

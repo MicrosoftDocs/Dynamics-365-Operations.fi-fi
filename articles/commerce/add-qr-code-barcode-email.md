@@ -1,6 +1,6 @@
 ---
 title: QR-koodin tai viivakoodin lisääminen tapahtuma- ja kuittisähköposteihin
-description: Tässä aiheessa kerrotaan, miten QR-koodeja ja viivakoodeja, jotka kuvaavat tilaustunnuksia, lisätään Microsoft Dynamics 365 Commercessa tapahtuma- ja kuittisähköposteihin.
+description: Tässä artikkelissa kerrotaan, miten QR-koodeja ja viivakoodeja, jotka kuvaavat tilaustunnuksia, lisätään Microsoft Dynamics 365 Commercessa tapahtuma- ja kuittisähköposteihin.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688962"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872881"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>QR-koodin tai viivakoodin lisääminen tapahtuma- ja kuittisähköposteihin
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten QR-koodeja ja viivakoodeja, jotka kuvaavat tilaustunnuksia, lisätään Microsoft Dynamics 365 Commercessa tapahtuma- ja kuittisähköposteihin.
+Tässä artikkelissa kerrotaan, miten QR-koodeja ja viivakoodeja, jotka kuvaavat tilaustunnuksia, lisätään Microsoft Dynamics 365 Commercessa tapahtuma- ja kuittisähköposteihin.
 
 Tapahtumasähköposteihin voidaan helposti sisällyttää QR-koodeja ja viivakoodeja, jotka nopeuttavat tilausten hakuprosessia vähittäismyyntiympäristössä. Jos haluat lisätä sähköpostiviesteihin QR-koodeja ja viivakoodeja, käytät HTML:n **\<img\>**-tunnisteita, jotka pyytävät luomis- ja muodostamispalvelusta QR-koodin tai viivakoodin kuvan. Microsoft ei toimita tätä palvelua. On kuitenkin monia maksuttomia tai edullisia palveluita, jotka voivat tuottaa QR-koodeja ja viivakoodeja,, jotka luodaan dynaamisesti kyselymerkkijonossa välitetyn arvon perusteella.
 

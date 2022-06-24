@@ -1,6 +1,6 @@
 ---
 title: Työtilausten ja projektin synkronointi Field Servicesta Supply Chain Managementiin
-description: Ohjeaiheessa käsitellään malleja ja taustalla olevaa tehtävää, joilla projektinumeron sisältävät työtilaukset synkronoidaan Dynamics 365 Field Servicestä Dynamics 365 Supply Chain Managementiin.
+description: Artikkelissa käsitellään malleja ja taustalla olevaa tehtävää, joilla projektinumeron sisältävät työtilaukset synkronoidaan Dynamics 365 Field Servicestä Dynamics 365 Supply Chain Managementiin.
 author: Henrikan
 ms.date: 03/12/2019
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f0b3214aba5882a585664030d6c1aebe34de455c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a43a7f7e900205bdb23fb9a35ca1518369683a42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860490"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Työtilausten ja projektin synkronointi Field Servicesta Supply Chain Managementiin
 
 [!include[banner](../includes/banner.md)]
 
-Ohjeaiheessa käsitellään malleja ja taustalla olevaa tehtävää, joilla projektinumeron sisältävät työtilaukset synkronoidaan Dynamics 365 Field Servicestä Dynamics 365 Supply Chain Managementiin.
+Artikkelissa käsitellään malleja ja taustalla olevaa tehtävää, joilla projektinumeron sisältävät työtilaukset synkronoidaan Dynamics 365 Field Servicestä Dynamics 365 Supply Chain Managementiin.
 
 [![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 Käytetty **Projektin työtilaukset (Field Servicesta Supply Chain Managementiin)** -malli perustuu **Työtilaukset (Field Servicesta Supply Chain Managementiin)** -malliin. Lisätietoja on kohdassa [Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
-Tässä ohjeaiheessa käsitellään kahden mallin eroja:
+Tässä artikkelissa käsitellään kahden mallin eroja:
 - **Projektin työtilaukset (Field Servicesta Supply Chain Managementiin)**
 - **Työtilaukset (Field Servicesta Supply Chain Managementiin)**
 

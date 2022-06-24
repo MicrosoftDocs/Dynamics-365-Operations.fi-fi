@@ -1,6 +1,6 @@
 ---
 title: Aaltokäsittelyn konfiguroinnin esimerkki
-description: Tässä ohjeaiheessa kuvataan esimerkki ehdoista, jotka määrittävät mitä töitä luodaa aallon käsittelyn yhteydessä varastolle ja käsitelläänkö aallot manuaalisesti vai automaattisesti.
+description: Tässä artikkelissa kuvataan esimerkki ehdoista, jotka määrittävät mitä töitä luodaan aallon käsittelyn yhteydessä varastolle ja käsitelläänkö aallot manuaalisesti vai automaattisesti.
 author: Mirzaab
 ms.date: 03/17/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39c3fecf9250ee89c22003d5dff4ea662c3042e3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860345"
 ---
 # <a name="configure-wave-processing-example"></a>Aaltokäsittelyn konfiguroinnin esimerkki
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan esimerkki ehdoista, jotka määrittävät mitä töitä luodaa aallon käsittelyn yhteydessä varastolle ja käsitelläänkö aallot manuaalisesti vai automaattisesti. Voit määrittää ehdot asettamalla aaltomallit ja kyselyt, jotka vastaavat aaltoa myyntitilausten, tuotantotilausten ja kanban-tilausten vapautettujen rivien kanssa.
+Tässä artikkelissa kuvataan esimerkki ehdoista, jotka määrittävät mitä töitä luodaan aallon käsittelyn yhteydessä varastolle ja käsitelläänkö aallot manuaalisesti vai automaattisesti. Voit määrittää ehdot asettamalla aaltomallit ja kyselyt, jotka vastaavat aaltoa myyntitilausten, tuotantotilausten ja kanban-tilausten vapautettujen rivien kanssa.
 
 ## <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 

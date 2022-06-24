@@ -1,6 +1,6 @@
 ---
 title: Varaston kustannuslaskenta – UKK
-description: Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä ja vastauksia Microsoft Dynamics 365 Supply Chain Managementin kustannuslaskennasta.
+description: Tässä artikkelissa on usein kysyttyjä kysymyksiä ja vastauksia Microsoft Dynamics 365 Supply Chain Managementin kustannuslaskennasta.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850841"
 ---
 # <a name="inventory-costing-faq"></a>Varaston kustannuslaskenta – UKK
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä ja vastauksia Microsoft Dynamics 365 Supply Chain Managementin kustannuslaskennasta.
+Tässä artikkelissa on usein kysyttyjä kysymyksiä ja vastauksia Microsoft Dynamics 365 Supply Chain Managementin kustannuslaskennasta.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Varaston sulkeminen, oikaisut ja uudelleenlaskenta
 
@@ -359,7 +359,7 @@ On suositeltavaa seurata ja korjata negatiivista varastoa säännöllisesti, kun
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Onko uusi nimike luotava, jos varastoni on muuttunut negatiiviseksi ja kun käytössä on liukuva keskiarvo?
 
-Ei Jos organisaatiosi sallii varaston mennä fyysisesti negatiiviseksi ja käytät varastomallina liukuvaa keskiarvoa, järjestelmä käyttää **Varasto ja varastonhallinnan parametrit** -sivulla määritettyä varakustannussarjaa, joka määrittää, miten kustannukset määritetään varasto-otoille. On suositeltavaa välttää fyysisen negatiivisten varaston sallimista. Lisätietoja on muissa kysymyksissä tämän aiheen [Negatiivinen varasto](#negative-inventory)-osassa.
+Ei Jos organisaatiosi sallii varaston mennä fyysisesti negatiiviseksi ja käytät varastomallina liukuvaa keskiarvoa, järjestelmä käyttää **Varasto ja varastonhallinnan parametrit** -sivulla määritettyä varakustannussarjaa, joka määrittää, miten kustannukset määritetään varasto-otoille. On suositeltavaa välttää fyysisen negatiivisten varaston sallimista. Lisätietoja on muissa kysymyksissä tämän artikkelin [Negatiivinen varasto](#negative-inventory)-osassa.
 
 ## <a name="not-stocked-products"></a>Ei-varastoitavat tuotteet
 
@@ -433,7 +433,7 @@ Kun fyysisen päivityksen kirjauksen ja vastaanoton taloudellisen päivityksen v
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>Mitä tapahtuu, kun käytetään liukuvaa keskiarvoa, ja varasto-otto on ennen vastaanottoa?
 
-Tavallisesti ennen vastaanottoa voi olla varasto-otto, koska sallit nimikemalliryhmälle fyysisen negatiivisen varaston tai koska varasto-otto on takautuva. Lisätietoja on osassa [Negatiivinen varasto](#negative-inventory) tässä aiheessa.
+Tavallisesti ennen vastaanottoa voi olla varasto-otto, koska sallit nimikemalliryhmälle fyysisen negatiivisen varaston tai koska varasto-otto on takautuva. Lisätietoja on osassa [Negatiivinen varasto](#negative-inventory) tässä artikkelissa.
 
 Jos teet takautuvia tapahtumia, on suositeltavaa harkita tarkkaan liiketoimintaprosessia ja toimintoja sen selvittämiseksi, miten tämä skenaario voidaan välttää. Jos teet takautuvan tapahtuman nimikkeelle, joka käyttää liukuvaa keskiarvoa, järjestelmä määrittää tapahtumalle nykyisen liukuvan keskiarvon. Myöhempiä varasto-ottoja ei oikaista. Lisätietoja liukuvasta keskiarvosta takautuvissa tapahtumissa on kohdassa [Liukuva keskiarvo](moving-average.md).
 

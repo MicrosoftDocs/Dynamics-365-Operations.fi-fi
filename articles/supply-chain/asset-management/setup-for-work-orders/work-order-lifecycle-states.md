@@ -1,6 +1,6 @@
 ---
 title: Työtilauksen elinkaaren tilat
-description: Tässä ohjeaiheessa selitetään työtilausten elinkaaren tilat käyttöomaisuuden hallinnassa.
+description: Tässä artikkelissa selitetään työtilausten elinkaaren tilat käyttöomaisuuden hallinnassa.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768663"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860867"
 ---
 # <a name="work-order-lifecycle-states"></a>Työtilauksen elinkaaren tilat
 
@@ -69,7 +69,7 @@ Seuraavassa taulukossa on kuvattu vaihtoehdot **Työtilaus**- ja **Ajoita**-osis
 
     **Tiedot**-pikavälilehden **Elinkaarimallit**-kentässä näkyy niiden työtilausten elinkaarimallien määrä, jotka käyttävät tätä elinkaaritilaa.
 
-8. Valitse **Yleiset**-pikavälilehden **Työtilaus**-osassa toiminnot, jotka ovat käytettävissä tässä elinkaaritilassa, määrittämällä asianmukaisten asetusten arvoksi **Kyllä**. Asetusten kuvaukset ovat tässä ohjeaiheessa edellä eistetyssä taulukossa.
+8. Valitse **Yleiset**-pikavälilehden **Työtilaus**-osassa toiminnot, jotka ovat käytettävissä tässä elinkaaritilassa, määrittämällä asianmukaisten asetusten arvoksi **Kyllä**. Asetusten kuvaukset ovat tässä artikkelissa edellä esitetyssä taulukossa.
 9. Valitse **Projekti**-osan **Vaihe**-kentästä projektin vaihe, joka liittyy tähän elinkaaritilaan.
 10. Määritä **Projekti**-osassa **Sulje tehtävät** -asetukseksi **Kyllä**, jos kuhunkin työtilaustyöhön liittyvät projektitehtävät suljetaan automaattisesti, kun työtilaus on tässä elinkaaritilassa.
 
@@ -77,7 +77,7 @@ Seuraavassa taulukossa on kuvattu vaihtoehdot **Työtilaus**- ja **Ajoita**-osis
     > Voit etsiä työtilaustyöhön liittyvän projektitehtävän numeron valitsemalla **Resurssien hallinta** \> **yhteiset** \> **työtilaukset** \> **Kaikki työtilaukset**, **Aktiiviset työtilaukset** tai **Omat aktiiviset työtilaukset**. Avaa työtilaus ja valitse sitten työtilauksen työ. Tehtävän numero näkyy **Rivin tiedot** -pikavälilehden **Yleiset**-välilehden **Projekti**-osan **Tehtävän numero**-kentässä.
 
 11. Määritä **Ennuste**-osassa **Kopioi tuntiennuste**-, **Kopioi nimike-ennuste**- ja/tai **Kopioi kuluennuste** -asetukseksi **Kyllä**, jos työtilauksen projektiennusteet tulisi kopioida automaattisesti työtilauksen kirjauskansioihin, kun työtilaus on tässä elinkaaritilassa.
-12. Määritä **Ajoita**-osassa jokin vaihtoehdoista arvoksi **Kyllä**, jos työtilauksen töiden ajoituksen tila tulisi päivittää, kun työtilaus on tässä elinkaaritilassa. Lisätietoja **Valmis**- **Aloitus**-, **Loppu**- ja **Poista ajoitusrivit** -asetuksista on aiemmin tässä ohjeaiheessa olevassa taulukossa.
+12. Määritä **Ajoita**-osassa jokin vaihtoehdoista arvoksi **Kyllä**, jos työtilauksen töiden ajoituksen tila tulisi päivittää, kun työtilaus on tässä elinkaaritilassa. Lisätietoja **Valmis**- **Aloitus**-, **Loppu**- ja **Poista ajoitusrivit** -asetuksista on aiemmin tässä artikkelissa olevassa taulukossa.
 
     > [!NOTE]
     > Voit tarkastella työtilaustyöhön liittyviä ajoitusrivejä valitsemalla **Resurssien hallinta** \> **yhteiset** \> **työtilaukset** \> **Kaikki työtilaukset**, **Aktiiviset työtilaukset** tai **Omat aktiiviset työtilaukset**. Avaa työtilaus, valitse työtilauksen työ **Työtilauksen työ**-pikavälilehdessä ja tarkastele liittyviä tietoja **Rivin tiedot** -pikavälilehdessä. **Ajoitus**-välilehden **Tila**-kentässä näkyy työtilaustyön tila. **Tila** -kentän arvoksi voidaan määrittää seuraavat arvot: **Ajoitettu**, **valmis**, **aloitettu**, **pysäytetty** ja **päättynyt.**

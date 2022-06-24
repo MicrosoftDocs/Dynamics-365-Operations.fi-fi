@@ -1,6 +1,6 @@
 ---
 title: Aaltojen luominen ja käsittely
-description: Tässä ohjeaiheessa kuvataan, kuinka aalto luodaan, käsitellään ja vapautetaan keräilytyön luomiseksi kuormalle, lähetykselle, tuotantotilaukselle tai kanban-tilaukselle.
+description: Tässä artikkelissa kuvataan, kuinka aalto luodaan, käsitellään ja vapautetaan keräilytyön luomiseksi kuormalle, lähetykselle, tuotantotilaukselle tai kanban-tilaukselle.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 349285f089ecab00c4c1c0a0315c4223314e3e79
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687501"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851272"
 ---
 # <a name="wave-creation-and-processing"></a>Aaltojen luominen ja käsittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka aalto luodaan, käsitellään ja vapautetaan keräilytyön luomiseksi kuormalle, lähetykselle, tuotantotilaukselle tai kanban-tilaukselle. Voit luoda aaltoja seuraaville tilaustyypeille:
+Tässä artikkelissa kuvataan, kuinka aalto luodaan, käsitellään ja vapautetaan keräilytyön luomiseksi kuormalle, lähetykselle, tuotantotilaukselle tai kanban-tilaukselle. Voit luoda aaltoja seuraaville tilaustyypeille:
 
 - **Myyntitilaukset** – ota myyntitilauksien rivit mukaan lähetysaaltojen avulla. Kun myyntitilaus on vapautettu varastoon, myyntitilauksen rivit voidaan sisällyttää aaltoon.
 - **Tuotantotilaukset** – Käytä tuotantoaaltoja ottaaksesi mukaan tuotteen tuoterakenteen (BOM) rivit.

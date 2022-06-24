@@ -1,6 +1,6 @@
 ---
 title: Konsernin sisäisten asiakastietojen synkronoiminen
-description: Tässä aiheessa käsitellään konsernin sisäisten tilausten asiakastietojen synkronointia
+description: Tässä artikkelissa käsitellään konsernin sisäisten tilausten asiakastietojen synkronointia
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1949cb69f22ade6b0e03a02c93ad78e8b7e550ae
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a3a67c9bcf93f88375d2d4d78d87175200626d50
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897513"
 ---
 # <a name="synchronize-intercompany-customer-information"></a>Konsernin sisäisten asiakastietojen synkronoiminen
 

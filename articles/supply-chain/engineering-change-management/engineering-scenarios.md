@@ -1,6 +1,6 @@
 ---
 title: Suunnittelun muutostenhallintatoiminnon esittely
-description: Tässä aiheessa esitellään ja käsitellään kattavasti suunnittelun muutostenhallinnan käyttämistä.
+description: Tässä artikkelissa esitellään ja käsitellään kattavasti suunnittelun muutostenhallinnan käyttämistä.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889632"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Suunnittelun muutostenhallintatoiminnon esittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa esitellään ja käsitellään kattavasti suunnittelun muutostenhallinnan käyttämistä. Siinä käsitellään tärkeimmät skenaariot:
+Tässä artikkelissa esitellään ja käsitellään kattavasti suunnittelun muutostenhallinnan käyttämistä. Siinä käsitellään tärkeimmät skenaariot:
 
 - Perustoiminnon määritys
 - Uuden suunnittelutuotteen luonti suunnitteluyrityksessä
@@ -35,13 +35,13 @@ Tässä aiheessa esitellään ja käsitellään kattavasti suunnittelun muutoste
 - Pyydettyjen muutosten ajoittaminen ja toteuttaminen luomalla suunnittelun muutostilaus
 - Muutetun tuotteen vapauttaminen
 
-Kaikissa tämän aiheen harjoituksissa käytetään Microsoft Dynamics 365 Supply Chain Managementin vakiomallitietoja. Tämän lisäksi kukin harjoitus perustuu edelliseen harjoitukseen. Harjoitukset kannattaakin tämän vuoksi tehdä järjestyksessä alusta loppuun. Tämä on erityisen hyödyllistä silloin, jos suunnittelun muutoksenhallintatoimintoa ei ole käytetty aiemmin. Tällä tavoin toiminnosta kattava kokonaiskuva.
+Kaikissa tämän artikkelin harjoituksissa käytetään Microsoft Dynamics 365 Supply Chain Managementin vakiomallitietoja. Tämän lisäksi kukin harjoitus perustuu edelliseen harjoitukseen. Harjoitukset kannattaakin tämän vuoksi tehdä järjestyksessä alusta loppuun. Tämä on erityisen hyödyllistä silloin, jos suunnittelun muutoksenhallintatoimintoa ei ole käytetty aiemmin. Tällä tavoin toiminnosta kattava kokonaiskuva.
 
 ## <a name="set-up-for-the-sample-scenario"></a>Malliskenaarion määrittäminen
 
-Tässä aiheessa olevan malliskenaarion toteuttaminen edellyttää, että toiminto valmistellaan ottamalla esittelytiedot käyttöön ja lisäämällä muutamia mukautettuja tietueita.
+Tässä artikkelissa olevan malliskenaarion toteuttaminen edellyttää, että toiminto valmistellaan ottamalla esittelytiedot käyttöön ja lisäämällä muutamia mukautettuja tietueita.
 
-Ennen tässä aiheessa olevien harjoitusten tekemistä on toimittava seuraavien alaosien ohjeiden mukaisesti. Näissä alaosissa käsitellään useita tärkeitä asetussivuja, joita käytetään määritettäessä suunnittelun muutostenhallintaa organisaatiossa.
+Ennen tässä artikkelissa olevien harjoitusten tekemistä on toimittava seuraavien alaosien ohjeiden mukaisesti. Näissä alaosissa käsitellään useita tärkeitä asetussivuja, joita käytetään määritettäessä suunnittelun muutostenhallintaa organisaatiossa.
 
 ### <a name="make-standard-demo-data-available"></a>Vakioesittelytietojen ottaminen käyttöön
 

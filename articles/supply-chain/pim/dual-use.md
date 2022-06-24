@@ -1,6 +1,6 @@
 ---
 title: Kaksikäyttötuotteet
-description: Tässä ohjeaiheessa käsitellään kaksikäyttötuotteiden jäljittämistä, kunkin tällaisen tuotteen varmennenumeroiden ja kohdemaan tallennusta sekä kelpaavien varmennenumeroiden tulostamista liittyviin laskuihin, pakkausluetteloihin ja/tai myyntitilauksiin.
+description: Tässä artikkelissa käsitellään kaksikäyttötuotteiden jäljittämistä, kunkin tällaisen tuotteen varmennenumeroiden ja kohdemaan tallennusta sekä kelpaavien varmennenumeroiden tulostamista liittyviin laskuihin, pakkausluetteloihin ja/tai myyntitilauksiin.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878900"
 ---
 # <a name="dual-use-goods"></a>Kaksikäyttötuotteet
 
@@ -42,7 +42,7 @@ Esimerkkiskenaarioita:
 
 6. Tilaus sisältää tuotteen X-100, tuote lähetetään Ranskaan ja tuotteella on ranskalainen varmenne. Varmenne on kuitenkin vanhentunut. Niinpä näyttöön tulevaa varoitus, jonka mukaan vähintään yhden tämän myyntitilauksen kaksikäyttönimikkeen kaksikäyttövarmenne ei ole voimassa. Haluatko jatkaa vahvistamista?
 
-Tässä ohjeaiheessa kaikkien niiden asetusten määrittämistä, jotka tarvitaan kaksikäyttötuotteiden määrittämiseen ja tämän skenaarion tukemiseen.
+Tässä artikkelissa kaikkien niiden asetusten määrittämistä, jotka tarvitaan kaksikäyttötuotteiden määrittämiseen ja tämän skenaarion tukemiseen.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Kaksikäyttöedellytysten määrittäminen kullekin liittyvälle maalle
 

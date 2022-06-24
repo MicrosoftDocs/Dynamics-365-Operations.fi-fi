@@ -1,6 +1,6 @@
 ---
-title: Kaupankäynnin entiteettien lajittelujärjestyksen muuttaminen
-description: Tässä ohjeaiheessa selitetään käsitteitä, jotka liittyvät useiden kaupankäyntiin liittyvien entiteettien näyttöjärjestyksen valvontaan Dynamics 365 Commercessa.
+title: Myynninedistämiskohteiden lajittelujärjestyksen muuttaminen
+description: Tässä artikkelissa selitetään käsitteitä, jotka liittyvät useiden kaupankäyntiin liittyvien entiteettien näyttöjärjestyksen valvontaan Dynamics 365 Commercessa.
 author: josaw1
 ms.date: 08/05/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 4e7a7bd42b0ef72ae6bc3f52a8857602b6282907
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779539"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847651"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Kaupankäynnin entiteettien lajittelujärjestyksen muuttaminen
 
@@ -29,7 +29,7 @@ ms.locfileid: "7779539"
 
 Vähittäiskauppiaat pitävät tuotteen etsintätyökalua ensisijaisena työkaluna asiakkaan vuorovaikutuksessa kaikkien kanavien kautta. Eri toiminnot voivat auttaa asiakkaita löytämään tuotteita helposti. He voivat esimerkiksi selata luokkia, hakua ja suodatusta.
 
-Tässä ohjeaiheessa selitetään käsitteitä, jotka liittyvät useiden kaupankäyntiin liittyvien entiteettien näyttöjärjestyksen valvontaan. Siinä selitetään myös lajittelujärjestyksen muuttaminen.
+Tässä artikkelissa selitetään käsitteitä, jotka liittyvät useiden kaupankäyntiin liittyvien entiteettien näyttöjärjestyksen valvontaan. Siinä selitetään myös lajittelujärjestyksen muuttaminen.
 
 ## <a name="overview"></a>Yleiskuvaus
 

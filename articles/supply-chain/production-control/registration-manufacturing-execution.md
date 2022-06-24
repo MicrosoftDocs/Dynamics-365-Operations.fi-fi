@@ -1,6 +1,6 @@
 ---
 title: Tuotannon suorittamisen rekisteröinti
-description: Tässä aiheessa on tietoja käsitteistä ja termeistä, joita tarvitaan tuotannonohjausprosessin määrittämisessä ja käyttämisessä.
+description: Tässä artikkelissa on tietoja käsitteistä ja termeistä, joita tarvitaan tuotannonohjausprosessin määrittämisessä ja käyttämisessä.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c843bc87c7b9c0676211c8f3363ec3e05ee97d20b3eedc940b9ffaee2d3211fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c43a9d847045f2c029f232d6317268d91ee0129a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907200"
 ---
 # <a name="registration-for-manufacturing-execution"></a>Tuotannon suorittamisen rekisteröinti
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja käsitteistä ja termeistä, joita tarvitaan tuotannonohjausprosessin määrittämisessä ja käyttämisessä. 
+Tässä artikkelissa on tietoja käsitteistä ja termeistä, joita tarvitaan tuotannonohjausprosessin määrittämisessä ja käyttämisessä. 
 
 Tuotannonohjaus on tarkoitettu ensisijaisesti tuotantoyritysten käytettäväksi. Työntekijät voivat rekisteröidä ajan ja nimikkeen kulutuksen tuotantotöissä **Työn rekisteröinti** -lomakkeella. Kaikki rekisteröinnit hyväksytään ja siirretään myöhemmin asianmukaisiin moduuleihin. Rekisteröintien jatkuva hyväksyntä ja siirto antavat esimiehille mahdollisuuden seurata helposti tuotantotilausten toteutuneita kustannuksia.
 

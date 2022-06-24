@@ -1,6 +1,6 @@
 ---
-title: Varaston erääntymisraporttien esimerkkejä ja logiikka
-description: Tässä ohjeaiheessa on esimerkkejä, jotka auttavat tulkitsemaan varaston erääntymisraportin tuloksia.
+title: Varaston erääntymisraporttien esimerkit ja logiikka
+description: Tässä artikkelissa on esimerkkejä, jotka auttavat tulkitsemaan varaston erääntymisraportin tuloksia.
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848017"
 ---
-# <a name="inventory-aging-report-examples-and-logic"></a>Varaston erääntymisraporttien esimerkkejä ja logiikka
+# <a name="inventory-aging-report-examples-and-logic"></a>Varaston erääntymisraporttien esimerkit ja logiikka
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on esimerkkejä, jotka auttavat tulkitsemaan **Varaston erääntyminen** -raportin tuloksia. Tämä raportti luokittelee valitun nimikkeen tai nimikeryhmän varastosaldon ja varastoarvot useisiin aikaväleihin. Ohjeaiheessa myös näytetään raportin sisäinen logiikka.
+Tässä artikkelissa on esimerkkejä, jotka auttavat tulkitsemaan **varaston erääntymisraportin** tuloksia. Tämä raportti luokittelee valitun nimikkeen tai nimikeryhmän varastosaldon ja varastoarvot useisiin aikaväleihin. Artikkelissa myös näytetään raportin sisäinen logiikka.
 
-Ohjeaiheen esimerkeissä näytetään tulokset, jotka esitetään **Varaston erääntyminen** -vakioraportissa. Yleensä kannattaa kuitenkin käyttää tämän raportin [Varaston erääntymisraportin tallennus](inventory-aging-report-storage.md) -versiota, etenkin jos käsiteltäviä nimikkeitä ja varastoja on paljon. Varaston erääntymisraportin tallennus tallentaa jokaisen luodun raportin, näyttää tulokset vuorovaikutteisena sivuna ja kaaviona sekä sallii minkä tahansa tallennetun raportin viennin.
+Artikkelin esimerkeissä näytetään tulokset, jotka esitetään **Varaston erääntyminen** -vakioraportissa. Yleensä kannattaa kuitenkin käyttää tämän raportin [Varaston erääntymisraportin tallennus](inventory-aging-report-storage.md) -versiota, etenkin jos käsiteltäviä nimikkeitä ja varastoja on paljon. Varaston erääntymisraportin tallennus tallentaa jokaisen luodun raportin, näyttää tulokset vuorovaikutteisena sivuna ja kaaviona sekä sallii minkä tahansa tallennetun raportin viennin.
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Esimerkeissä käytettävät mallitiedot
 
-Ohjeaiheen esimerkit perustuvat tässä osassa käsiteltäviin varastotapahtuman mallitietoihin.
+Artikkelin esimerkit perustuvat tässä osassa käsiteltäviin varastotapahtuman mallitietoihin.
 
 ### <a name="storage-dimension-setup"></a>Varastodimensioryhmän määritys
 

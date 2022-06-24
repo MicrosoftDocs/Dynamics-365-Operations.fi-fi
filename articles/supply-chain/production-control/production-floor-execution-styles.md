@@ -1,6 +1,6 @@
 ---
-title: Tuotannon käyttöliittymän tyylin määrittäminen
-description: Tässä aiheessa selitetään, miten lomakkeiden ohjausobjekteja määritetään siten, että niihin sovelletaan tuotannon oletusarvoisia toteutustyylejä.
+title: Tuotannon käyttöliittymän tyylittely
+description: Tässä artikkelissa selitetään, miten lomakkeiden ohjausobjekteja määritetään siten, että niihin sovelletaan tuotannon oletusarvoisia toteutustyylejä.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790887"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859137"
 ---
-# <a name="style-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän tyylin määrittäminen
+# <a name="style-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän tyylittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa selitetään, miten lomakkeiden ohjausobjekteja määritetään siten, että niihin sovelletaan tuotannon oletusarvoisia toteutustyylejä.
+Tässä artikkelissa selitetään, miten lomakkeiden ohjausobjekteja määritetään siten, että niihin sovelletaan tuotannon oletusarvoisia toteutustyylejä.
 
 ## <a name="forms-and-dialogs"></a>Lomakkeet ja valintaikkunat
 
@@ -31,7 +31,7 @@ Tyylejä voidaan soveltaa lomakkeessa tai valintaikkunassa vain, jos seuraavat v
 - Jos lomakkeen pitäisi muistuttaa aiemmin luodun raportin edistymislomaketta, lomakkeen tai ikkunan nimen on alussa on oltava `JmgProductionFloorExecutionCustomInputDialog`.
 - Lomake tai valintaikkuna voi sisältää tietolomakeosan. Jos siinä halutaan käyttää tyylejä, tietolomakeosan nimen alussa on oltava `JmgProductionFloorExecutionCustomDetailsDialog`.
 - Jos lomakkeella tai valintaikkunalla on tarkoitus olla yksinkertainen näkymä, yksinkertaisen näkymän nimen alussa on oltava `JmgProductionFloorExecutionCustomDialog`. Esimerkkejä lomakkeista, joissa on yksinkertainen näkymä, ovat esimerkiksi aloituslomake ja epäsuoran toiminnon lomake.
-- Kaikki valintaikkunan ohjausobjektit on määritettävä tässä aiheessa kuvatulla tavalla.
+- Kaikki valintaikkunan ohjausobjektit on määritettävä tässä artikkelissa kuvatulla tavalla.
 
 > [!IMPORTANT]
 > Tämän luettelon kahdessa ensimmäisessä kohdassa mainitut ominaisuudet vaativat Supply Chain Managementin versiota 10.0.19 tai sitä uudempaa.

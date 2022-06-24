@@ -1,6 +1,6 @@
 ---
-title: Luo ostosopimus
-description: Tämä ohjeaihe opastaa luomaan ostosopimuksen.
+title: Ostosopimuksen luominen
+description: Tämä artikkeli opastaa luomaan ostosopimuksen.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3456e1c6e2ec65329e0f2e984f99ced0994c240b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 108c3a47132b262ebe2e15f00d26191b75469959
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670129"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877563"
 ---
-# <a name="create-a-purchase-agreement"></a>Luo ostosopimus
+# <a name="create-a-purchase-agreement"></a>Ostosopimuksen luominen
 
 [!include [banner](../../includes/banner.md)]
 
-Tämä ohjeaihe opastaa luomaan ostosopimuksen. Se on yleensä ostopäällikön tehtävä. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Ennen aloittamista on määritettävä ostosopimusluokitukset. Kun olet luonut sopimuksen, voit luoda sen avulla ostotilauksen, jolloin ostotilauksen ehdot kopioituvat otsikkoon ja niille tilauksen riveille, joihin sopimus vaikuttaa.
+Tämä artikkeli opastaa luomaan ostosopimuksen. Se on yleensä ostopäällikön tehtävä. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Ennen aloittamista on määritettävä ostosopimusluokitukset. Kun olet luonut sopimuksen, voit luoda sen avulla ostotilauksen, jolloin ostotilauksen ehdot kopioituvat otsikkoon ja niille tilauksen riveille, joihin sopimus vaikuttaa.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Luo uusi ostosopimus

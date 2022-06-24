@@ -1,6 +1,6 @@
 ---
 title: Kuvaluettelomoduuli
-description: Tässä ohjeaiheessa kerrotaan kuvaluettelomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa kerrotaan kuvaluettelomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 67da83410d819d01396d0b7d421076ee3b0f17ec
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 8e47c9806c21de24f0e519d0132374d2e1ff2bbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780840"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892797"
 ---
 # <a name="image-list-module"></a>Kuvaluettelomoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan kuvaluettelomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kerrotaan kuvaluettelomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
 Kuvaluettelomoduulin avulla kuvien kokoelmia (taulukoita) voidaan lisätä helposti sivuston sivuille. Jokaiseen taulukon sisältämään kuvaan voidaan lisätä kappaletekstiä ja URL-linkkejä. Kuvaluettelomoduuli sopii parhaiten logojen tai logoja sisältävän luettelon esittämiseen.
 

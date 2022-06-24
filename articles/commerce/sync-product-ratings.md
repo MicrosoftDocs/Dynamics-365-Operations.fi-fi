@@ -1,6 +1,6 @@
 ---
 title: Synkronoi tuoteluokitukset Dynamics 365 Commercessa
-description: Tässä ohjeaiheessa kerrotaan, miten tuoteluokitukset synkronoidaan Microsoft Dynamics 365 Commerce -sovelluksessa.
+description: Tässä artikkelissa kerrotaan, miten tuoteluokitukset synkronoidaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: ac94a8b4505aba509f0a71ed36d32adac864aedf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909332"
 ---
-# <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronoi tuoteluokitukset Dynamics 365 Commerceissa
+# <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronoi tuoteluokitukset Dynamics 365 Commercessa
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten tuoteluokitukset synkronoidaan Microsoft Dynamics 365 Commerce -sovelluksessa.
+Tässä artikkelissa kerrotaan, miten tuoteluokitukset synkronoidaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 
 Jotta monikanavien, kuten myyntipisteen ja puhelinkeskusten, tuoteluokituksia voidaan käyttää, luokitusten ja arvostelujen palvelun tuotteiden luokitukset on tuotava Commerce-sovelluksen kanavatietokantaan. Kun tuoteluokitukset ovat käytettävissä monikanavissa, ne auttavat asiakkaita epäsuorasti myyjien kanssa tehtävässä vuorovaikutuksessa.
 
-Tässä ohjeaiheessa esitellään seuraavat tehtävät:
+Tässä artikkelissa esitellään seuraavat tehtävät:
 
 1. **Tuoteluokitusten synkronointityön** määrittäminen erätyönä tuoteluokitusten synkronoimiseksi **Luokitus- ja arvostelupalvelussa**.
 1. Tarkista, että tuoteluokituksen synkronoinnin erätyö onnistui.

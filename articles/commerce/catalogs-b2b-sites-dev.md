@@ -1,6 +1,6 @@
 ---
-title: Commerce-luetteloiden laajennettavuusvaikutus B2B-mukautuksia varten
-description: Tässä aiheessa kuvataan B2B-ominaisuuden Commerce-luetteloiden laajennettavuusvaikutuksia Microsoft Dynamics 365 Commercessa.
+title: Commerce-luetteloiden laajennettavuusvaikutus yritysten välisiä mukautuksia varten
+description: Tässä artikkelissa kuvataan B2B-ominaisuuden Commerce-luetteloiden laajennettavuusvaikutuksia Microsoft Dynamics 365 Commercessa.
 author: ashishmsft
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: aff333bfe8003233dd5d8181aa8c5dd7eaeffcd0
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: f21d3375db69dd412325d00261bfc18e26d0c257
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656847"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849012"
 ---
-# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Commerce-luetteloiden laajennettavuusvaikutus B2B-mukautuksia varten
+# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Commerce-luetteloiden laajennettavuusvaikutus yritysten välisiä mukautuksia varten
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Tässä aiheessa kuvataan **B2B-ominaisuuden Commerce-luetteloiden** laajennettavuusvaikutuksia Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kuvataan **B2B-ominaisuuden Commerce-luetteloiden** laajennettavuusvaikutuksia Microsoft Dynamics 365 Commercessa.
 
 Jos haluat laajentaa luettelokontekstin mukautetuille skenaarioille, mukautuksesi on ehkä päivitettävä. Tämä päivitys noudattaa vakioprosessia, jota asiakkaiden on noudatettava, koska mukautukset eivät ehkä tue automaattisesti uusimpia ominaisuuksia päivitysten jälkeen. Jos mukautuksissa on uusia ominaisuuksia tai virheenkorjauksia, suosittelemme, että päivität mukautuskoodin vastaavasti. Päivitys muistuttaa muutoksia, jotka Microsoft on voinut tehdä ydinkoodiin.
 

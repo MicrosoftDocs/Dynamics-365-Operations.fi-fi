@@ -1,6 +1,6 @@
 ---
-title: Resurssin mittarit
-description: Tässä ohjeaiheessa kerrotaan, kuinka resurssin mittarityypit luodaan resurssien hallinnassa.
+title: Resurssien mittarit
+description: Tässä artikkelissa kerrotaan, kuinka resurssin mittarityypit luodaan resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723572"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909669"
 ---
 # <a name="counters"></a>Laskurit
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka resurssienhallinnassa luodaan laskurityyppejä. Laskurityyppejä käytetään resurssien laskurirekisteröintien tekemiseen esimerkiksi tuotantotuntien määrän tai resurssin tuottaman määrän osalta. Resurssityypit liittyvät laskurityyppeihin. Tämä tarkoittaa sitä, että laskuria voidaan käyttää resurssin vain, jos laskuri on määritetty resurssiin käytetylle resurssityypille.
+Tässä artikkelissa kerrotaan, kuinka resurssienhallinnassa luodaan laskurityyppejä. Laskurityyppejä käytetään resurssien laskurirekisteröintien tekemiseen esimerkiksi tuotantotuntien määrän tai resurssin tuottaman määrän osalta. Resurssityypit liittyvät laskurityyppeihin. Tämä tarkoittaa sitä, että laskuria voidaan käyttää resurssin vain, jos laskuri on määritetty resurssiin käytetylle resurssityypille.
 
 Ennen kuin voit tehdä laskurirekisteröintejä resursseille, luo ensin ne laskurityypit, joita haluat käyttää **Laskurit**-kohdassa. Seuraavaksi voit luoda laskurirekisteröintejä kohdassa **Laskurit**. 
 

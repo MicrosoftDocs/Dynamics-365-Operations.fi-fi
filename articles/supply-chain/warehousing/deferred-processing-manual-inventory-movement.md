@@ -1,6 +1,6 @@
 ---
 title: Manuaalisen varastosiirron lykätty käsittely
-description: Tässä aiheessa kuvataan, miten manuaalisen varastosiirron lykättyä käsittelyä käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa kuvataan, miten manuaalisen varastosiirron lykättyä käsittelyä käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c2e7296d77332b665e5d618d39804216f4347ca2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863734"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Manuaalisen varastosiirron lykätty käsittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten manuaalisen varastosiirron lykättyä käsittelyä käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
+Tässä artikkelissa kuvataan, miten manuaalisen varastosiirron lykättyä käsittelyä käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
 
 Lykätyn käsittelyn avulla varastotyöntekijät jatkavat työskentelyä, kun hyllytystoimintoa käsitellään taustalla. Lykätty käsittely on hyödyllinen silloin, kun palvelimella voi olla satunnaisia tai suunnittelemattomia lisäyksiä käsittelyaikaan, ja lisääntynyt käsittelyaika saattaa vaikuttaa työntekijän tuottavuuteen. *Varastosiirto*-työtyyppi on nyt lisätty tämän toiminnon tukemiin työlajeihin.
 

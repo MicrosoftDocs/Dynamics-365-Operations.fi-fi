@@ -1,6 +1,6 @@
 ---
 title: Mobiililaitteen käyttäjäasetukset
-description: Tässä aiheessa kuvataan varastotyöntekijöiden mobiililaitteen käyttäjäasetusten hallinta.
+description: Tässä artikkelissa kuvataan varastotyöntekijöiden mobiililaitteen käyttäjäasetusten hallinta.
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 15f9ce1768e1ed9dc6f7e84d245082b46a7f122c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103710"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882341"
 ---
 # <a name="mobile-device-user-settings"></a>Mobiililaitteen käyttäjäasetukset
 
@@ -41,7 +41,7 @@ Tämän toiminnon avulla työntekijät voivat aloittaa uuden laitteen käytön n
 
 ## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Mobiililaitteen käyttäjäasetustoiminnon käyttöönotto tai käytöstä poisto
 
-Tässä aiheessa kuvatun toiminnon käyttöä varten järjestelmässäsi on oltava käytössä *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toiminto. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Tässä artikkelissa kuvatun toiminnon käyttöä varten järjestelmässäsi on oltava käytössä *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toiminto. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="create-and-manage-user-settings"></a>Käyttäjäasetusten luonti ja hallinta
 

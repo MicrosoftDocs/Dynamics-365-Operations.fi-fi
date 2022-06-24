@@ -1,6 +1,6 @@
 ---
 title: Varastotasotietojen synkronointi Supply Chain Managementista Field Serviceen
-description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varastotasotiedot synkronoidaan Dynamics 365 Field Serviceen.
+description: Tässä artikkelissa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varastotasotiedot synkronoidaan Dynamics 365 Field Serviceen.
 author: Henrikan
 ms.date: 05/07/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fc14fc63bc1a69a57b10f39b2cb9fb8014e6f70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844790"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Varastotasotietojen synkronointi Supply Chain Managementista Field Serviceen 
 
@@ -29,7 +29,7 @@ ms.locfileid: "8060942"
 
 
 
-Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varastotasotiedot synkronoidaan Dynamics 365 Field Serviceen.
+Tässä artikkelissa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varastotasotiedot synkronoidaan Dynamics 365 Field Serviceen.
 
 [![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 

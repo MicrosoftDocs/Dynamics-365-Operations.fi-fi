@@ -1,6 +1,6 @@
 ---
 title: Tuotantoprosessin yleiskatsaus
-description: Tässä ohjeaiheessa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen.
+description: Tässä artikkelissa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen.
 author: johanhoffmann
 ms.date: 09/13/2019
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c9eac4d3f984b6fe511d7cc5ebab67e6c24c722
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a8ebf0418a7d8b93e2ac58f90a686c63fd859355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852212"
 ---
 # <a name="production-process-overview"></a>Tuotantoprosessin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen.
+Tässä artikkelissa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen.
 
 Tuotteiden tuotanto, jota kutsutaan toisinaan myös tuotannon elinkaareksi, noudattaa tiettyjä nimikkeen valmistamiseen vaadittavia vaiheita. Elinkaari alkaa tuotantotilauksen, erätilaus tai kanbanin luonnista. Se päättyy valmiiseen nimikkeeseen, joka on valmiina toimitettavaksi asiakkaalle tai toiseen tuotantovaiheeseen. Elinkaaren kussakin vaiheessa tarvitaan erilaisia tietoja prosessin suorittamiseksi. Kunkin vaiheen valmistuminen näkyy tuotantotilauksessa, erätilauksessa tai kanbanissa tuotannon tilan muuttumisena. Erityyppiset tuotteet edellyttävät erilaisia valmistusprosesseja.
 

@@ -1,6 +1,6 @@
 ---
-title: Ostotilauksen luominen
-description: Tässä aiheessa näytetään, miten ostotilaus luodaan manuaalisesti.
+title: Luo ostotilaus
+description: Tässä artikkelissa näytetään, miten ostotilaus luodaan manuaalisesti.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2fd627b9874b3e3f7aad71fb2970ddcc333a608
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2a04a9f4a512a307efecb19703cd3df638ba5ff5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677391"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856074"
 ---
-# <a name="create-a-purchase-order"></a>Ostotilauksen luominen
+# <a name="create-a-purchase-order"></a>Luo ostotilaus
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa näytetään, miten ostotilaus luodaan manuaalisesti. Ostotilaukset luodaan yleensä automaattisesti pääsuunnittelun, suoratoimituksen ja muiden prosessien tuloksena. Ostotilaukset luo yleensä ostoedustaja. Tätä esimerkkiä voidaan käyttää USMF-esimerkkiyrityksessä eri vaiheiden muistiinpanoissa ehdotetuin arvoin.
+Tässä artikkelissa näytetään, miten ostotilaus luodaan manuaalisesti. Ostotilaukset luodaan yleensä automaattisesti pääsuunnittelun, suoratoimituksen ja muiden prosessien tuloksena. Ostotilaukset luo yleensä ostoedustaja. Tätä esimerkkiä voidaan käyttää USMF-esimerkkiyrityksessä eri vaiheiden muistiinpanoissa ehdotetuin arvoin.
 
 
 ## <a name="create-the-purchase-order-header"></a>Luo ostotilauksen otsikko

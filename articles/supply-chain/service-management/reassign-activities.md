@@ -1,6 +1,6 @@
 ---
 title: Tehtävien kohdistaminen uudelleen
-description: Tässä ohjeaiheessa kuvataan, kuinka huoltotehtävät voidaan määrittää uudelleen yhdeltä työntekijältä toiselle työntekijälle.
+description: Tässä artikkelissa kuvataan, kuinka huoltotehtävät voidaan määrittää uudelleen yhdeltä työntekijältä toiselle työntekijälle.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55ebcda19aba074191a2820d2ac7faf27313db8e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 5f6cd7523a9185de0bb2dfd81ffb3fe5e7dba5e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860461"
 ---
 # <a name="reassign-activities"></a>Tehtävien kohdistaminen uudelleen 
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa kuvataan, kuinka huoltotehtävät voidaan määrittää uudelleen yhdeltä työntekijältä toiselle työntekijälle. Voit määrittää huoltotehtäviä uudelleen työntekijältä toiselle. Voit valita myös eri resursointiryhmiin kuuluvia työntekijöitä.
+Tässä artikkelissa kuvataan, kuinka huoltotehtävät voidaan määrittää uudelleen yhdeltä työntekijältä toiselle työntekijälle. Voit määrittää huoltotehtäviä uudelleen työntekijältä toiselle. Voit valita myös eri resursointiryhmiin kuuluvia työntekijöitä.
 
 Seuraavien ohjeiden avulla voit määrittää tehtävän uudelleen toiselle työntekijälle:
 

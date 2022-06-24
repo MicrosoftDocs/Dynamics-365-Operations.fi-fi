@@ -1,6 +1,6 @@
 ---
-title: Sisältöverkon (CDN) tuen lisääminen
-description: Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
+title: Sisällön toimitusverkoston (CDN) tuen lisääminen
+description: Tässä artikkelissa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: caed13c37c9043a2acea751c8a8b15261f26ecb2e10b6e64c0ce50f6ce9a68de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2ed8f66d447e1d9e890c0885fd20e9b55c66ac0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855873"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisällön toimitusverkoston (CDN) tuen lisääminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
+Tässä artikkelissa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
 
 Kun määrität Dynamics 365 Commerce -sovelluksessa sähköisen kaupankäynnin ympäristöä, voit määrittää sen käyttämään CDN-palvelua. 
 
@@ -60,7 +60,7 @@ CDN-määritysprosessi koostuu seuraavista yleisistä vaiheista:
 
 ### <a name="add-a-front-end-host"></a>Lisää edustaisäntä
 
-Mitä tahansa CDN-palvelua voi käyttää. Tämän ohjeaiheen esimerkissä käytetään Azure Front Door Service -palvelua. 
+Mitä tahansa CDN-palvelua voi käyttää. Tämän artikkelin esimerkissä käytetään Azure Front Door Service -palvelua. 
 
 Lisätietoja Azure Front Door Service -palvelusta on kohdassa [Pika-aloitus: Luo Front Door erittäin käytettävissä olevalle yleiselle verkkosovellukselle](/azure/frontdoor/quickstart-create-front-door).
 
@@ -101,7 +101,7 @@ Määritä reitityssääntö Azure Front Door Service -palvelussa seuraavasti.
 
 
 > [!WARNING]
-> Jos käytettävä toimialue on jo aktiivinen ja julkaistu, luo tukipalvelupyyntö **Tuki**-ruudussa [Microsoft Dynamics Lifecycle Services -sovelluksessa](https://lcs.dynamics.com/). Näin saat apua seuraavissa vaiheissa. Lisätietoja on kohdassa [Tuen pyytäminen Finance and Operations -sovelluksia tai Lifecycle Services (LCS) -sovellusta varten](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+> Jos käytettävä toimialue on jo aktiivinen ja julkaistu, luo tukipalvelupyyntö **Tuki**-ruudussa [Microsoft Dynamics Lifecycle Services -sovelluksessa](https://lcs.dynamics.com/). Näin saat apua seuraavissa vaiheissa. Lisätietoa on kohdassa [Talous- ja toimintosovellusten tai Lifecycle Servicesin (LCS) tuki](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 Jos toimialueesi on uusi, eikä se ole aiemmin määritetty julkaistu toimialue, voit lisätä mukautetun toimialueen määritykseen Azure Front Door Service -palvelussa. Tämän jälkeen verkkoliikenne voi ohjata sivuston Azure Front Door -ilmentymän kautta. Jos haluat lisätä mukautetun toimialueen (esimerkiksi `www.fabrikam.com`), määritä toimialueelle kanoninen nimi (CNAME).
 

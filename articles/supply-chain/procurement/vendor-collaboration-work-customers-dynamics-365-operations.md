@@ -1,6 +1,6 @@
 ---
 title: Toimittajayhteistyö asiakkaiden kanssa
-description: Tässä aiheessa kuvataan, miten voit käyttää ostotilauksia ja valvoa tavaralähetysvarastoa toimittajayhteistyön avulla.
+description: Tässä artikkelissa kuvataan, miten voit käyttää ostotilauksia ja valvoa tavaralähetysvarastoa toimittajayhteistyön avulla.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673771"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859166"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Toimittajayhteistyö asiakkaiden kanssa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten voit käyttää toimittajayhteistyötä työskennelläksesi asiakkaiden kanssa Microsoft Dynamics 365 Supply Chain Managementissa. Toimittajat voivat suorittaa liiketoimintaprosessien sarjan seuraavista työtiloista:
+Tässä artikkelissa kuvataan, miten voit käyttää toimittajayhteistyötä työskennelläksesi asiakkaiden kanssa Microsoft Dynamics 365 Supply Chain Managementissa. Toimittajat voivat suorittaa liiketoimintaprosessien sarjan seuraavista työtiloista:
 
 - **Ostotilauksen vahvistus** – ostotilausten seuranta ja niihin vastaaminen.
 - **Toimittajan tarjoukset** – tarjouspyyntöjen tarkastelu ja niihin vastaaminen tekemällä tarjouksia.
 - **Toimittajatiedot** – toimittajan päätietojen tarkastelu ja päivittäminen.
-- **Laskutus** – laskujen käsittely. Tässä ohjeaiheessa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Laskutus** – laskujen käsittely. Tässä artikkelissa ei käsitellä **Laskutus**-työtilaa. Lisätietoja kyseisestä työtilasta on kohdassa [Toimittajayhteistyön laskutustyötila](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Toimittajat voivat seurata myös tavaralähetysvaraston tietoja.
 
@@ -47,9 +47,9 @@ Voit vastata **Ostotilauksen vahvistus** -työtilassa ostotilauksiin, jotka on l
 
 Voit käsitellä ostotilauksia seuraavilla sivuilla:
 
-- **Tarkistettavat ostotilaukset** – Tällä sivulla on samat tiedot kuin työtilan **Tarkistettavat ostotilaukset** -luettelossa. Luetteloa on jo käsitelty aiemmin tässä aiheessa.
+- **Tarkistettavat ostotilaukset** – Tällä sivulla on samat tiedot kuin työtilan **Tarkistettavat ostotilaukset** -luettelossa. Luetteloa on jo käsitelty aiemmin tässä artikkelissa.
 - **Ostotilausten toimittajan vahvistushistoria** – Tällä sinulla on kaikki toimittajalle lähetetyt ostotilaukset ja ostotilausten kaikki versiot. Se sisältää myös kaikki toimittajan palauttamat vastaukset.
-- **Avoimet vahvistetut ostotilaukset** – Tällä sivulla on samat tiedot kuin työtilan **Avoimet vahvistetut ostotilaukset** -luettelossa. Luetteloa on jo käsitelty aiemmin tässä aiheessa.
+- **Avoimet vahvistetut ostotilaukset** – Tällä sivulla on samat tiedot kuin työtilan **Avoimet vahvistetut ostotilaukset** -luettelossa. Luetteloa on jo käsitelty aiemmin tässä artikkelissa.
 - **Kaikki vahvistetut ostotilaukset** – Tällä sivulla on kaikki vahvistetut ostotilaukset. Tämä sivulla on näkyvissä myös ne ostotilaukset, joiden tuotteet tai palvelut on vastaanotettu. Tämän luettelon avulla voit seurata ostotilauksia, jotka voidaan laskuttaa.
 
 ### <a name="responding-to-pos"></a>Ostotilauksiin vastaaminen

@@ -1,6 +1,6 @@
 ---
 title: Alennusten näyttäminen myyntipisteessä
-description: Tässä ohjeaiheessa kerrotaan, miten myyjät saavat Microsoft Dynamics 365 Commercesta tietoja kampanjoista ja niiden käyttämisestä ristiinmyynti- ja lisämahdollisuuksista.
+description: Tässä artikkelissa kerrotaan, miten myyjät saavat Microsoft Dynamics 365 Commercesta tietoja kampanjoista ja niiden käyttämisestä ristiinmyynti- ja lisämahdollisuuksista.
 author: ShalabhjainMSFT
 ms.date: 07/29/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3ec16c5051088ed2777309899b26094e8d67743
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878537"
 ---
 # <a name="show-discounts-in-pos"></a>Alennusten näyttäminen myyntipisteessä
 
 [!include [banner](includes/banner.md)]
 
-Kampanjat ovat tärkeä osa ostopäätöksiä tekevien asiakkaiden motivoinnissa. Esimerkiksi lomat voivat tuottaa vähittäismyyjille suurimman myyntimäärän, koska vähittäismyyntimarkkinat ovat täynnä houkuttelevia kampanjoita ja alennuksia. Jos myyjät tietävät käytettävissä olevista kampanjoista ja ymmärtävät niitä, he voivat helposti hyödyntää niitä ristiin- ja lisämyynnissä. Tässä ohjeaiheessa kerrotaan, miten myyjät saavat Microsoft Dynamics 365 Commercesta tietoja kampanjoista ja niiden käyttämisestä ristiinmyynti- ja lisämahdollisuuksista.
+Kampanjat ovat tärkeä osa ostopäätöksiä tekevien asiakkaiden motivoinnissa. Esimerkiksi lomat voivat tuottaa vähittäismyyjille suurimman myyntimäärän, koska vähittäismyyntimarkkinat ovat täynnä houkuttelevia kampanjoita ja alennuksia. Jos myyjät tietävät käytettävissä olevista kampanjoista ja ymmärtävät niitä, he voivat helposti hyödyntää niitä ristiin- ja lisämyynnissä. Tässä artikkelissa kerrotaan, miten myyjät saavat Microsoft Dynamics 365 Commercesta tietoja kampanjoista ja niiden käyttämisestä ristiinmyynti- ja lisämahdollisuuksista.
 
 ## <a name="learn-about-store-discounts"></a>Lisätietoja myymälän alennuksista
 

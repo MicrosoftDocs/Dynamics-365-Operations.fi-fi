@@ -1,8 +1,8 @@
 ---
 title: Varaston näkyvyyden lisäapuohjelman asentaminen
-description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelman asentamista.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelman asentamista.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062647"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895696"
 ---
-# <a name="install-and-set-up-inventory-visibility"></a>Varaston näkyvyyden asennus ja määritys
+# <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibilityn asentaminen ja määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelman asentamista.
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin varaston näkyvyyden apuohjelman asentamista.
+Varaston näkyvyyden apuohjelman asentamiseen on käytettävä Microsoft Dynamics Lifecycle Servicesiä (LCS). LCS on yhteistyöportaali, jonka muodostamassa ympäristössä ja jonka säännöllisesti päivitetyillä palveluilla voi hallita taloushallinnon ja toimintojen sovellusten elinkaarta. Lisätietoja on kohdassa [Lifecycle Services -resurssit](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-Varaston näkyvyyden apuohjelman asentamiseen on käytettävä Microsoft Dynamics Lifecycle Servicesiä (LCS). LCS on yhteistyöportaali, jonka muodostamassa ympäristössä ja jonka säännöllisesti päivitetyillä palveluilla voi hallita taloushallinnon ja toimintojen sovellusten elinkaarta.
-
-Lisätietoja on kohdassa [Lifecycle Services -resurssit](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+> [!TIP]
+> On suositeltavaa liittyä Varaston näkyvyyden lisäosa -käyttäjäryhmään, josta on käyttökelpoisia ohjeita, saada uusimpia päivityksiä ja kirjata varaston näkyvyyteen mahdollisesti liittyvät kysymykset. Jos haluat liittyä, lähetä sähköpostia varaston näkyvyyden tuotetiimille osoitteeseen [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) ja sisällytä Supply Chain Management -ympäristön tunnus.
 
 ## <a name="inventory-visibility-prerequisites"></a>Varaston näkyvyyden apuohjelman edellytykset
 
@@ -44,6 +44,9 @@ Jos sinulla on näitä edellytyksiä koskevia kysymyksiä, ota yhteys varaston n
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Varaston näkyvyyden lisäapuohjelman asentaminen
 
 Rekisteröi sovellus ennen apuohjelman asentamista ja lisää asiakasohjelman salasana Azure Active Directoryyn (Azure AD) Azure-tilauksessa. Lisätietoja on kohdassa [Sovelluksen rekisteröinti](/azure/active-directory/develop/quickstart-register-app) ja [Asiakasohjelman salasanan lisääminen](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Muista kirjoittaa **Sovelluksen (asiakasohjelman) tunnus**-, **Asiakasohjelman salasana**- ja **Vuokraajan tunnus** -arvot muistiin, sillä niitä tarvitaan myöhemmin.
+
+> [!IMPORTANT]
+> Jos sinulla on useita LCS-ympäristöjä, luo kullekin ympäristölle erilainen Azure AD -sovellus. Jos käytät samaa sovellustunnusta ja vuokraajatunnusta varaston näkyvyyden lisäosan asentamisessa eri ympäristöihin, vanhemmissa ympäristöissä ilmenee tunnusongelma. Tuloksena vain viimeinen asennus on kelvollinen.
 
 Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:hen, asenna varaston näkyvyyden apuohjelma seuraavasti:
 
@@ -72,11 +75,18 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 1. Valitse **Asenna**. Apuohjelman tilana näkyy nyt **Asennetaan**. Kun asennus on valmis, päivitä sivu. Tilan pitäisi olla nyt **Asennettu**.
 1. Valitse Dataversen vasemmassa siirtymisruudussa **Sovellukset**-osa ja varmista, että **Varaston näkyvyys** Power Apps -asennus onnistui. Jos **Sovellukset**-osaa ei ole, ota yhteys varaston näkyvyyden tuotetiimiin osoitteessa [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
-> [!TIP]
-> On suositeltavaa liittyä Varaston näkyvyyden lisäosa -käyttäjäryhmään, josta on käyttökelpoisia ohjeita, saada uusimpia päivityksiä ja kirjata varaston näkyvyyteen mahdollisesti liittyvät kysymykset. Jos haluat liittyä, lähetä sähköpostia varaston näkyvyyden tuotetiimille osoitteeseen [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) ja sisällytä Supply Chain Management -ympäristön tunnus.
-
-> [!IMPORTANT]
-> Jos sinulla on useita LCS-ympäristöjä, luo kullekin ympäristölle erilainen Azure AD -sovellus. Jos käytät samaa sovellustunnusta ja vuokraajatunnusta varaston näkyvyyden lisäosan asentamisessa eri ympäristöihin, vanhemmissa ympäristöissä ilmenee tunnusongelma. Vain viimeinen asennus on kelvollinen.
+> [!NOTE]
+> Jos asennus LCS-sivulta kestää yli tunnin, käyttäjätililtä ei ehkä ole käyttöoikeutta asentaa ratkaisuja ympäristöön Dataverse. Korjaa ongelma seuraavien ohjeiden mukaisesti:
+>
+> 1. Varaston näkyvyyden apuohjelman asennus peruutetaan LCS-sivulla.
+> 1. Kirjaudu sisään [Microsoft 365-hallintakeskukseen](https://admin.microsoft.com) ja varmista, että lisäosan asennuksessa käytettävälle käyttäjätilille on määritetty "Dynamics 365 Unified Operations-suunnitelman" käyttöoikeus. Määritä käyttöoikeus tarvittaessa.
+> 1. Kirjaudu [Power Platform-hallintakeskukseen](https://admin.powerplatform.microsoft.com) asiaankuuluvaa käyttäjätiliä käyttäen. Asenna sitten varaston näkyvyyden apuohjelma noudattamalla seuraavia vaiheita:
+>     1. Valitse ympäristö, johon haluat asentaa apuohjelman.
+>     1. Valitse **Dynamics 365 -sovellukset**.
+>     1. Valitse **Asenna sovellus**.
+>     1. Valitse **Varaston näkyvyys**
+>
+> 1. Kun asennus on valmis, siirry takaisin LCS-sivulle ja yritä asentaa **Varaston näkyvyys** -lisäosa uudelleen.
 
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Varaston näkyvyyden apuohjelman asennuksen poistaminen
 

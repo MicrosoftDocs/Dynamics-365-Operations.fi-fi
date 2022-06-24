@@ -1,6 +1,6 @@
 ---
 title: Käyttöönotto-ohjeet Norjan kassakoneille
-description: Tässä aiheessa on ohjeita kassan käyttötoimintojen käyttöönottamisesta Norjan Microsoft Dynamics 365 Commerce -lokalisointia varten.
+description: Tässä artikkelissa on ohjeita kassan käyttötoimintojen käyttöönottamisesta Norjan Microsoft Dynamics 365 Commerce -lokalisointia varten.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: f0744b18ed59c692ae336c92e488d339ae158368
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 1f2226432237662e28b9e26017020ab81bb6026b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077137"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899064"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Käyttöönotto-ohjeet Norjan kassakoneille
 
 [!include[banner](../includes/banner.md)]
 
-Tässä aiheessa on ohjeita kassan käyttötoimintojen käyttöönottamisesta Norjan Microsoft Dynamics 365 Commerce -lokalisointia varten. Lokalisointiin kuuluu useita komponenttien laajennuksia. Näiden laajennusten avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md). Lisätietoja Commercen määrittämisestä Norjassa on kohdassa [Commercen määrittäminen (Norja)](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+Tässä artikkelissa on ohjeita kassan käyttötoimintojen käyttöönottamisesta Norjan Microsoft Dynamics 365 Commerce -lokalisointia varten. Lokalisointiin kuuluu useita komponenttien laajennuksia. Näiden laajennusten avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md). Lisätietoja Commercen määrittämisestä Norjassa on kohdassa [Commercen määrittäminen (Norja)](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
 > [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä lokalisointitoiminnallisuudessa. Sinun on käytettävä Norjan digitaalisten allekirjoitusten esimerkkiversiota Retail-ohjelmiston kehityssarjan (SDK) aiemmassa versiossa kehittäjän virtuaalikoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja: [Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha)](./emea-nor-loc-deployment-guidelines.md).

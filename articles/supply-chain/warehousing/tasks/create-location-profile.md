@@ -1,6 +1,6 @@
 ---
-title: Luo toimipaikkaprofiili
-description: Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 Supply Chain Managementissa.
+title: Sijaintiprofiilin luonti
+description: Tässä artikkelissa käsitellään sijaintiprofiilin luonti Dynamics 365 Supply Chain Managementissa.
 author: Mirzaab
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74141cdad6841a602c7fb061e897646fae072a73
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 98537f3ad45d66e348ecd489c60d95ef875e5c07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875040"
 ---
-# <a name="create-a-location-profile"></a>Luo toimipaikkaprofiili
+# <a name="create-a-location-profile"></a>Sijaintiprofiilin luonti
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 Supply Chain Managementissa. Jokaisella varastosijainnilla on oltava liitetty sijaintiprofiili, joka kuvaa sijainnin ominaisuudet, kuten sen, salliiko sijainti yhdistetyt nimikkeet. Tässä menettelyssä luodaan profiili sijainnille, jossa ei vaadita rekisterikilpiohjausta. Ota käyttöön yhdistetyt nimikkeet ja yhdistetyt varastoinnin tilat, sekä salli inventointi. Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.
+Tässä artikkelissa käsitellään sijaintiprofiilin luonti Dynamics 365 Supply Chain Managementissa. Jokaisella varastosijainnilla on oltava liitetty sijaintiprofiili, joka kuvaa sijainnin ominaisuudet, kuten sen, salliiko sijainti yhdistetyt nimikkeet. Tässä menettelyssä luodaan profiili sijainnille, jossa ei vaadita rekisterikilpiohjausta. Ota käyttöön yhdistetyt nimikkeet ja yhdistetyt varastoinnin tilat, sekä salli inventointi. Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.
 
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Varasto > Sijaintiprofiilit**.

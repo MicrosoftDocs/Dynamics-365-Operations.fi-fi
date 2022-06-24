@@ -1,6 +1,6 @@
 ---
 title: Kuorma-autokuormaa pienemmät (LTL) luokat
-description: Tässä aiheessa selitetään, mitkä ovat kuorma-autokuormaa pienemmät (LTL) luokat ja miten ne määritetään Microsoft Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa selitetään, mitkä ovat kuorma-autokuormaa pienemmät (LTL) luokat ja miten ne määritetään Microsoft Dynamics 365 Supply Chain Managementissa.
 author: Weijiesa
 ms.date: 04/05/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a6e05ea7534ee081778a899d5956e6ca7cd104cb
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9ab05e1bc5d0ae2c8b5d98dda32660d2436676e9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678063"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857196"
 ---
 # <a name="less-than-truckload-ltl-classes"></a>Kuorma-autokuormaa pienemmät (LTL) luokat
 
@@ -33,7 +33,7 @@ Toiminnolla voi suorittaa seuraavia tehtäviä järjestelmää käyttämällä:
 - Voit määrittää kunkin LTL-luokan pakkausvaatimukset tarkistamalla kansainväliset LTL-standardit. Näin varmistat, että tuotteesi suojataan ja toimitetaan varmasti.
 - Hae tarkat lähetysarviot kunkin tuotteen LTL-rahtiluokan perusteella.
 
-Tässä ohjeaiheessa käsitellään LTL-luokkien luontia Microsoft Dynamics 365 Supply Chain Managementissa.
+Tässä artikkelissa käsitellään LTL-luokkien luontia Microsoft Dynamics 365 Supply Chain Managementissa.
 
 ## <a name="create-an-ltl-class"></a>Luo LTL-luokka
 

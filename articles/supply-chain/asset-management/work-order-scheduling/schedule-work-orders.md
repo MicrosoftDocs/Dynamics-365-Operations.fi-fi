@@ -1,6 +1,6 @@
 ---
 title: Ajoita työtilauksia
-description: Tässä ohjeaiheessa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa.
+description: Tässä artikkelissa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718056"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845051"
 ---
 # <a name="schedule-work-orders"></a>Ajoita työtilauksia
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718056"
 
  
 
-Tässä ohjeaiheessa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa. 
+Tässä artikkelissa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa. 
 
 Työtilauksen vaadittu tuntimäärä määritetään ennustettujen tuntien summana vähennettynä kirjattujen tuntien määrällä. Jos aikaa tarvitaan enemmän, ennustetta on muutettava vastaavasti. Kohdassa **Resurssien hallinta** > **yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset** voit tarkastella tai muokata työtilauksen ennusteita valitsemalla työtilauksen ja valitsemalla **Ennuste** **Työtilaus**-välilehdessä. Kun työtilaukset on luotu ja arvioitu, seuraavaksi on kohdistettava tarvittavat kunnossapitotyöntekijät ja työkalut työtilausten suorittamista varten.
 

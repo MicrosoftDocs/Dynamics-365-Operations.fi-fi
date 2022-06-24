@@ -1,6 +1,6 @@
 ---
 title: Vähittäismyynnin hintojen hallinta
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Commercen myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
+description: Tässä artikkelissa käsitellään Dynamics 365 Commercen myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16c948e6e14309f4e340bf622fac42b14e6ee591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887007"
 ---
-# <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
+# <a name="retail-sales-price-management"></a>Vähittäismyynnin hintojen hallinta
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja myyntihintojen luonti- ja hallintaprosessista Dynamics 365 Commercessa. Aiheessa keskitytään tähän prosessiin liittyviin käsitteisiin ja siihen, mitä vaikutuksia erilaisilla määritysvaihtoehdoilla on myyntihintoihin.
+Tässä artikkelissa on tietoja myyntihintojen luonti- ja hallintaprosessista Dynamics 365 Commercessa. Aiheessa keskitytään tähän prosessiin liittyviin käsitteisiin ja siihen, mitä vaikutuksia erilaisilla määritysvaihtoehdoilla on myyntihintoihin.
 
 ## <a name="terminology"></a>Termit
 
-Ohjeaiheessa käytetään seuraavia termejä.
+Artikkelissa käytetään seuraavia termejä.
 
 | Kausi | Määritelmä, käyttö ja huomautukset |
 |---|---|
-| Hinta | Myyntipisteasiakasohjelmassa tai myyntitilauksessa myytävien tuotteiden yksi yksikkösumma. Tässä ohjeaiheessa termi *hinta* tarkoittaa aina myyntihintaa ei varasto- tai kustannushintaa. |
+| Hinta | Myyntipisteasiakasohjelmassa tai myyntitilauksessa myytävien tuotteiden yksi yksikkösumma. Tässä artikkelissa termi *hinta* tarkoittaa aina myyntihintaa ei varasto- tai kustannushintaa. |
 | Perushinta | Vapautetun tuotteen **Hinta**-kentässä määritetty hinta. |
 | Kauppasopimuksen hinta | Tuotteelle tai variantille **Hinta (myynti)** -tyypin kauppasopimuksella määritetty hinta. |
-| Paras hinta | Kun tuotteessa on käytettävissä useita hintoja ja alennusta, pienin hinnan summa ja/tai alennussumma, jolla saadaan pienin mahdollinen asiakkaan maksettavaksi tuleva nettosumma. Parhaan hinnan käsitettä kutsutaan tässä ohjeaiheessa aina parhaaksi hinnaksi. Paras hinta ei ole sama asia kuin alennuksen samanaikaisuustilan **Paras hinta** -luettelointiarvo, eikä näitä kahta käsitettä saa sekoittaa keskenään. |
+| Paras hinta | Kun tuotteessa on käytettävissä useita hintoja ja alennusta, pienin hinnan summa ja/tai alennussumma, jolla saadaan pienin mahdollinen asiakkaan maksettavaksi tuleva nettosumma. Parhaan hinnan käsitettä kutsutaan tässä artikkelissa aina parhaaksi hinnaksi. Paras hinta ei ole sama asia kuin alennuksen samanaikaisuustilan **Paras hinta** -luettelointiarvo, eikä näitä kahta käsitettä saa sekoittaa keskenään. |
 
 ## <a name="price-groups"></a>Hintaryhmät
 
@@ -97,7 +97,7 @@ Jos haluat käyttää hintojen hinnoitteluprioriteettia, hinnoitteluprioriteetti
 
 Hinnoitteluprioriteettitoiminto otettiin käyttöön tukemaan skenaariota, jossa vähittäismyyjä haluaa käyttää korkeampia hintoja tietyssä myymäläjoukossa. Esimerkki: Vähittäismyyjä on määrittänyt aluehinnat Yhdysvaltojen itärannikolle mutta haluaa korkeammat hinnat joillekin tuotteille New York Cityn myymälöissä, koska tuotteiden myynti siellä on kalliimpaa ja/tai koska paikalliset markkinat hyväksyvät korkeammat hinnat.
 
-Kuten tämän ohjeaiheen Paras hinta -osassa kerrottiin, hinnoittelumoduuli valitsee normaalista kahdesta hinnasta alhaisemman. Jälleenmyyjä ei tämän vuoksi yleensä voi käyttää kahdesta hinnasta korkeampaa myymälässä, jossa on sekä itärannikon että New Yorkin hintaryhmät. Ennen hinnoitteluprioriteettitoiminnon ottamisesta käyttöön jälleenmyyjä ratkaisi tämän ongelman määrittämällä hinnat jokaiselle tuotteelle kahdesti ja jättämällä molemmat hintaryhmät määrittämättä. Vaihtoehtoisesti jälleenmyyjältä oli luotava ylimääräiset hintaryhmät eristämään korkeampia hintoja käyttävät tuotteet tuotteista, joilla oli tavalliset alhaisemmat hinnat.
+Kuten tämän artikkelin Paras hinta -osassa kerrottiin, hinnoittelumoduuli valitsee normaalista kahdesta hinnasta alhaisemman. Jälleenmyyjä ei tämän vuoksi yleensä voi käyttää kahdesta hinnasta korkeampaa myymälässä, jossa on sekä itärannikon että New Yorkin hintaryhmät. Ennen hinnoitteluprioriteettitoiminnon ottamisesta käyttöön jälleenmyyjä ratkaisi tämän ongelman määrittämällä hinnat jokaiselle tuotteelle kahdesti ja jättämällä molemmat hintaryhmät määrittämättä. Vaihtoehtoisesti jälleenmyyjältä oli luotava ylimääräiset hintaryhmät eristämään korkeampia hintoja käyttävät tuotteet tuotteista, joilla oli tavalliset alhaisemmat hinnat.
 
 Hinnoitteluprioriteettitoiminnon avulla jälleenmyyjä voi kuitenkin luoda myymälän hinnoille hinnoitteluprioriteetin, joka on korkeampi kuin alueellisten hintojen hinnoitteluprioriteetti. Vaihtoehtoisesti jälleenmyyjä voi luoda hinnoitteluprioriteetin vain myymälän hinnoille ja jättää alueellisille hinnoille oletushinnoitteluprioriteetti, joka on 0 (nolla). Kummatkin asetukset auttavat varmistamaan, että myymälän hintoja käytetään aina ennen alueellisia hintoja.
 
@@ -151,7 +151,7 @@ Voit luoda kauppasopimuksen kirjauskansion avulla kullekin tuotteelle myyntihinn
 
 Myyntihinnan **Taulu**-asiakassopimus on tarkoitettu yhdelle, suoraan kauppasopimuksessa määritetylle asiakkaalle. Tämä skenaario ei ole tavallinen B2C-skenaariossa. Jos se kuitenkin tapahtuu, hinnoittelumoduuli käyttää hinnan määrityksessä **Taulu**-kauppasopimuksia.
 
-Myyntihinnan **Ryhmä**-kauppasopimus on tyyppi, jota käytetään eniten. Commercen ulkopuolella myyntihinnan **Ryhmä**-kauppasopimukset on tarkoitettu yksinkertaiselle asiakasryhmälle. Asiakasryhmän käsitettä on kuitenkin laajennettu Commercessa siten, että se on yleinen hintaryhmä. Hintaryhmä voidaan linkittää kanavaan, liitokseen, kanta-asiakasohjelmaan tai luetteloon. Lisätietoja hintaryhmistä on aiemmin tässä ohjeaiheessa Hintaryhmät-osassa.
+Myyntihinnan **Ryhmä**-kauppasopimus on tyyppi, jota käytetään eniten. Commercen ulkopuolella myyntihinnan **Ryhmä**-kauppasopimukset on tarkoitettu yksinkertaiselle asiakasryhmälle. Asiakasryhmän käsitettä on kuitenkin laajennettu Commercessa siten, että se on yleinen hintaryhmä. Hintaryhmä voidaan linkittää kanavaan, liitokseen, kanta-asiakasohjelmaan tai luetteloon. Lisätietoja hintaryhmistä on aiemmin tässä artikkelissa Hintaryhmät-osassa.
 
 > [!NOTE]
 > Kauppasopimuksen hintaa käytetään aina ennen perushintaa.

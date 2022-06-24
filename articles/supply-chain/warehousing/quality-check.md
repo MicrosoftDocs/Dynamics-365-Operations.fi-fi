@@ -1,6 +1,6 @@
 ---
 title: Laaduntarkistus
-description: Tässä ohjeaiheessa on tietoja laaduntarkistusominaisuudesta. Tämän ominaisuuden avulla varaston työntekijät voivat tehdä nopeita laaduntarkistuksia samalla, kun nimikkeitä vastaanotetaan laiturialueelle.
+description: Tässä artikkelissa on tietoja laaduntarkistusominaisuudesta. Tämän ominaisuuden avulla varaston työntekijät voivat tehdä nopeita laaduntarkistuksia samalla, kun nimikkeitä vastaanotetaan laiturialueelle.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c5a4b380529ca8cb9c3474b363c7f9ba4220ff2b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855054"
 ---
 # <a name="quality-check"></a>Laaduntarkistus
 
@@ -41,11 +41,11 @@ Tämä prosessi voidaan määrittää myös siten, että kaikki skannatut rekist
 
 ## <a name="turn-the-quality-check-feature-on-or-off"></a>Laaduntarkistusominaisuuden ottaminen käyttöön tai käytöstä poistaminen
 
-Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Laaduntarkistus* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Laaduntarkistus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Tässä artikkelissa kuvatun toiminnon käyttäminen edellyttää, että *Laaduntarkistus* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Laaduntarkistus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Määritä ominaisuus tälle esimerkkiskenaariolle
 
-Tässä ohjeaiheessa on ohjeita ja esimerkki, jossa kerrotaan *laaduntarkistustoiminnon* määrityksestä ja tässä ohjeaiheessa myöhemmin olevan esimerkkiskenaarion näytetietojen valmistelemisesta.
+Tässä ohjeaiheessa on ohjeita ja esimerkki, jossa kerrotaan *laaduntarkistustoiminnon* määrityksestä ja tässä artikkelissa myöhemmin olevan esimerkkiskenaarion näytetietojen valmistelemisesta.
 
 ### <a name="make-sample-data-available"></a>Ota mallitiedot käyttöön
 
@@ -270,7 +270,7 @@ Määritä valikkonimike niin, että mobiililaitteet voivat suorittaa **Laadunta
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Esimerkkiskenaario
 
-Kun olet tehnyt kaikki edellä mainitut näytetiedot käytettäviksi ja määrittänyt ne, voit käyttää tätä skenaariota ja kokeilla *Laaduntarkistus*-toimintoa. Tämän skenaarion arvoissa oletetaan, että käsittelet vakionäytetietoja, valittuna on **USMF**-yritys ja että aiemmin tässä ohjeaiheessa kuvatut näytetietueet on valmisteltu. Tämä skenaario on myös esimerkki siitä, miten ominaisuutta voidaan käyttää tuotannon määrityksessä.
+Kun olet tehnyt kaikki edellä mainitut näytetiedot käytettäviksi ja määrittänyt ne, voit käyttää tätä skenaariota ja kokeilla *Laaduntarkistus*-toimintoa. Tämän skenaarion arvoissa oletetaan, että käsittelet vakionäytetietoja, valittuna on **USMF**-yritys ja että aiemmin tässä artikkelissa kuvatut näytetietueet on valmisteltu. Tämä skenaario on myös esimerkki siitä, miten ominaisuutta voidaan käyttää tuotannon määrityksessä.
 
 ### <a name="create-a-purchase-order"></a>Ostotilauksen luominen
 
@@ -357,7 +357,7 @@ Tässä skenaariossa kuormalava 2 hylätään.
 
 Olet nyt tehnyt laatutarkistuksen ja luonut hylätyn kuormalavan laatutilauksen. Jos haluat tarkastella luotua laatutilausta, siirry kohtaan **Varastonhallinta \> Kausittaiset tehtävät \> Laadunhallinta \> Laatutilaukset**.
 
-Laatutilauksen testausta voidaan nyt käsitellä. Tässä ohjeaiheessa ei käsitellä laatutestausta.
+Laatutilauksen testausta voidaan nyt käsitellä. Tässä artikkelissa ei käsitellä laatutestausta.
 
 Lisätietoja laadunhallinnasta on kohdassa [Laadunhallinnan yleiskuvaus](../inventory/enable-quality-management.md)
 

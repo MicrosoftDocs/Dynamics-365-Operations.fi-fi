@@ -1,6 +1,6 @@
 ---
 title: Tuotannon suunnittelu
-description: Tässä aiheessa käsitellään tuotannon suunnittelua ja suunniteltujen tuotantotilausten muokkaamista tuotannon optimoinnin avulla.
+description: Tässä artikkelissa käsitellään tuotannon suunnittelua ja suunniteltujen tuotantotilausten muokkaamista tuotannon optimoinnin avulla.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469055"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873779"
 ---
 # <a name="production-planning"></a>Tuotannon suunnittelu
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469055"
 
 Suunnittelun optimointi tukee useita tuotantoskenaarioita. Jos siirtyminen tapahtuu nykyisestä sisäisestä pääsuunnittelumoduulista, on tärkeää ottaa huomioon tietyt toiminnasta tapahtuneet muutokset.
 
-Seuraavassa videossa esitetään lyhyt johdanto joihinkin tässä aiheessa käsiteltyihin käsitteisiin: [Dynamics 365 Supply Chain Management: Suunnitteluoptimoinnin parannukset](https://youtu.be/u1pcmZuZBTw).
+Seuraavassa videossa esitetään lyhyt johdanto joihinkin tässä artikkelissa käsiteltyihin käsitteisiin: [Dynamics 365 Supply Chain Management: Suunnitteluoptimoinnin parannukset](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Tämän ominaisuuden ottaminen käyttöön järjestelmällesi
 
-Jos järjestelmäsi ei vielä sisällä tässä aiheessa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Suunnitellut tuotantotilaukset tuotannon optimoinnille* -ominaisuus käyttöön.
+Jos järjestelmäsi ei vielä sisällä tässä artikkelissa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Suunnitellut tuotantotilaukset tuotannon optimoinnille* -ominaisuus käyttöön.
 
 ## <a name="planned-production-orders"></a>Suunnitellut tuotantotilaukset
 
@@ -65,7 +65,7 @@ Suunniteltuun tilaukseen tehdyn muutoksen vaikutus liittyviin materiaalitarpeisi
 2. Hyväksy suunniteltu tilaus.
 3. Suorita pääsuunnittelu.
 
-Jos suunnitellut tuotantotilaukset sisältyvät suoritettavaan pääsuunnitteluun, suodattimia ei voi käyttää. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Suodattimet](#filters).
+Jos suunnitellut tuotantotilaukset sisältyvät suoritettavaan pääsuunnitteluun, suodattimia ei voi käyttää. Lisätietoja on myöhemmin tässä artikkelissa kohdassa [Suodattimet](#filters).
 
 > [!NOTE]
 > Jos suunnitellun tilauksen toimituspäivä muutetaan myöhempään ajankohtaan, tarvekohdistus saatetaan tehdä uuden suunnitellun tilauksen perusteella. Näin tapahtuu, jos uusi tarjontapäivä viivästyttää tarvekohdistusta mutta läpimenoasetusten perusteella viive voidaan välttää.

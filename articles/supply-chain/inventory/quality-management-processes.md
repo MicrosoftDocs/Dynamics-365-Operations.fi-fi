@@ -1,6 +1,6 @@
 ---
-title: Laadun ja määrityksistä poikkeamisen hallinnan yleiskatsaus
-description: Tässä aiheessa esitellään laadun ja määrityksistä poikkeamisen hallintatoiminnot Microsoft Dynamics 365 Supply Chain Managementissa ja kerrotaan, miten ne voivat parantaa toimitusketjun tuotteiden laatua.
+title: Laadun ja määrityksistä poikkeamisen hallinnan yleiskuvaus
+description: Tässä artikkelissa esitellään laadun ja määrityksistä poikkeamisen hallintatoiminnot Microsoft Dynamics 365 Supply Chain Managementissa ja kerrotaan, miten ne voivat parantaa toimitusketjun tuotteiden laatua.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985506"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907490"
 ---
-# <a name="quality-and-nonconformance-management-overview"></a>Laadun ja määrityksistä poikkeamisen hallinnan yleiskatsaus
+# <a name="quality-and-nonconformance-management-overview"></a>Laadun ja määrityksistä poikkeamisen hallinnan yleiskuvaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa esitellään laadun ja määrityksistä poikkeamisen hallintatoiminnot Microsoft Dynamics 365 Supply Chain Managementissa ja kerrotaan, miten ne voivat parantaa toimitusketjun tuotteiden laatua.
+Tässä artikkelissa esitellään laadun ja määrityksistä poikkeamisen hallintatoiminnot Microsoft Dynamics 365 Supply Chain Managementissa ja kerrotaan, miten ne voivat parantaa toimitusketjun tuotteiden laatua.
 
 Laadunvarmistus käsittää määrityksistä poikkeavan materiaalin tuotetestausta ja hallintaa. Laadunhallintaprosessit auttavat varmistamaan toimitusketjun tuotteiden korkean tason. Nämä prosessit auttavat myös optimoimaan toimitusketjuprosesseja ja parantamaan asiakastyytyväisyyttä. Laadunhallinnan avulla voit hallita määrityksestä poikkeavien tuotteiden käsittelyaikaa kyseisten tuotteiden lähtöpisteestä riippumatta. Voit linkittää diagnostiikkatulokset korjauksen tehtäviin. Järjestelmä voi ajoittaa tehtäviä korjaamaan ongelmat ja estämään siten niiden toistumisen tulevaisuudessa. Voit seurata laadunhallinnan avulla myös ongelmia ongelmantyypin perusteella (myös sisäiset ongelmat) sekä tunnistaa lyhyt- tai pitkäaikaiset ratkaisut. Suorituskykyilmaisimia (KPI) koskevat tilastot antavat tietoja aiemmista määrityksistä poikkeamiseen liittyvistä ongelmista ja niiden korjaamiseen käytetyistä ratkaisuista. Voit tarkistaa historiallisten tietojen avulla, kuinka tehokkaita aiemmat laatutoimet ovat olleet, ja määrittää, mitkä toimet soveltuvat jatkossa käytettäviksi.
 

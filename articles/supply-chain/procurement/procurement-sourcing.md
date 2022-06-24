@@ -1,6 +1,6 @@
 ---
 title: Hankinnan aloitussivu
-description: Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista.
+description: Tässä artikkelissa on luettelo hankinnan artikkeleista ja muista resursseista.
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885867"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista.
+Tässä artikkelissa on luettelo hankinnan artikkeleista ja muista resursseista.
 
 Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen hankintaan, vastaanottamiseen, laskuttamiseen ja maksujen käsittelyyn toimittajalla. Hankintaprosessit voidaan määrittää tiettyjä liiketoimintatarpeita varten määrittämällä ostokäytäntöjä ja työnkulkuja. Yleistietoja on kohdassa [Yleiskatsaus hankintaan](procurement-sourcing-overview.md). Muita resursseja on lueteltu alla.
 

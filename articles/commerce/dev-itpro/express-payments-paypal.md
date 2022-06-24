@@ -1,6 +1,6 @@
 ---
 title: PayPalin pikamaksujen määrittäminen
-description: Tässä aiheessa kuvataan, kuinka määritetään PayPalin pikamaksut, jotta maksaminen nopeutuu Microsoft Dynamics 365 Commerce -ohjelmassa.
+description: Tässä artikkelissa kuvataan, kuinka määritetään PayPalin pikamaksut, jotta maksaminen nopeutuu Microsoft Dynamics 365 Commerce -ohjelmassa.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905279"
 ---
 # <a name="configure-express-payments-for-paypal"></a>PayPalin pikamaksujen määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka määritetään PayPalin pikamaksut, jotta maksaminen nopeutuu Microsoft Dynamics 365 Commerce -ohjelmassa.
+Tässä artikkelissa kuvataan, kuinka määritetään PayPalin pikamaksut, jotta maksaminen nopeutuu Microsoft Dynamics 365 Commerce -ohjelmassa.
 
 ## <a name="key-terms"></a>Tärkeimmät termit
 
@@ -28,7 +28,7 @@ Tässä aiheessa kuvataan, kuinka määritetään PayPalin pikamaksut, jotta mak
 |---|---|
 | PayPal Wallet | PayPal-liittimen tukema asiakaskokemus ja integrointi. Se tunnetaan myös PayPal-painikkeena. |
 | Lompakko | Maksutyyppi, joka ei sisällä perinteisiä maksuominaisuuksia, kuten pankin tunnusnumeron (BIN) aluetta ja erääntymispäivää, joita käytetään erottamaan luotto- ja pankkikorttityypit toisistaan. |
-| Pikamaksu | Commerce-moduuli, joka tukee nopeampaa uloskirjautumiskäyttämistä, kun käytössä on tuettuja maksutapoja. Tässä aiheessa käsitellään pikamaksumoduulin käyttöä PayPalin kanssa. |
+| Pikamaksu | Commerce-moduuli, joka tukee nopeampaa uloskirjautumiskäyttämistä, kun käytössä on tuettuja maksutapoja. Tässä artikkelissa käsitellään pikamaksumoduulin käyttöä PayPalin kanssa. |
 
 Dynamics 365 Commerce tarjoaa valmiin PayPal Walletin integraation. Kun Dynamics 365 Payment Connector PayPalia varten on konfiguroitu, PayPal-painike näkyy valittavana maksutapana verkkotilauksen kassalla. Kun käyttäjät valitsevat PayPalin, heidät ohjataan suorittamaan maksu suoraan PayPalin kautta, minkä jälkeen heidät palautetaan verkkokauppaan viimeistelemään tilauksensa. PayPal-ostoskorin kassalla asiakkaat voivat käyttää maksutilitietojaan kassalomakkeen esitäyttöön, jotta he voivat suorittaa maksuprosessin nopeammin.
 

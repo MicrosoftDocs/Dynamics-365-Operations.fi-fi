@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568988"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893117"
 ---
 # <a name="zone-threshold-replenishment"></a>Vyöhykkeen rajatäydennys
 
@@ -45,7 +45,7 @@ Ennen kuin voit käyttää *Vyöhykeraja-arvon täydennys* -toimintoa, sen pitä
 
 ## <a name="set-up-zone-based-replenishment"></a><a name="setup"></a>Aseta vyöhykkeeseen perustuva täydennys
 
-Jos haluat määrittää vyöhykkeeseen perustuvan täydennyksen, sinun on konfiguroitava useita järjestelmän osia. Tässä osassa esitellään eri asetukset ja annetaan demoarvot, jotka voit määrittää, jos haluat käsitellä tämän ohjeaiheen lopussa olevaa skenaariota.
+Jos haluat määrittää vyöhykkeeseen perustuvan täydennyksen, sinun on konfiguroitava useita järjestelmän osia. Tässä osassa esitellään eri asetukset ja annetaan demoarvot, jotka voit määrittää, jos haluat käsitellä tämän artikkelin lopussa olevaa skenaariota.
 
 ### <a name="set-up-directive-codes"></a>Määritä direktiivikoodit
 
@@ -57,7 +57,7 @@ Jos haluat tarkastella tai muokata direktiivikoodeja, siirry kohtaan **Varaston 
 
 #### <a name="prepare-demo-data-directive-codes"></a>Demotietodirektiivin koodien valmisteleminen
 
-Tässä esimerkissä kuvataan, miten direktiivikoodi valmistellaan. Jos aiot käsitellä tämän ohjeaiheen lopussa olevaa skenaariota, käytä tässä annettuja demoarvoja. Muussa tapauksessa käytä omia arvoja.
+Tässä esimerkissä kuvataan, miten direktiivikoodi valmistellaan. Jos aiot käsitellä tämän artikkelin lopussa olevaa skenaariota, käytä tässä annettuja demoarvoja. Muussa tapauksessa käytä omia arvoja.
 
 1. Valitse **USMF**-yritys, joka käyttää demotietoja.
 1. Valitse **Varastonhallinta \> Asetukset \> Direktiivikoodit**.
@@ -79,7 +79,7 @@ Täydennysmalli on sääntöjoukko, joka määrittää, milloin ja miten sijaint
 
 #### <a name="prepare-a-demo-data-replenishment-template"></a>Demotietojen täydennysmallin valmisteleminen
 
-Tässä esimerkissä kuvataan, miten täydennysmalli valmistellaan. Jos aiot käsitellä tämän ohjeaiheen lopussa olevaa skenaariota, käytä tässä annettuja demoarvoja. Muussa tapauksessa käytä omia arvoja.
+Tässä esimerkissä kuvataan, miten täydennysmalli valmistellaan. Jos aiot käsitellä tämän artikkelin lopussa olevaa skenaariota, käytä tässä annettuja demoarvoja. Muussa tapauksessa käytä omia arvoja.
 
 1. Valitse **USMF**-yritys, joka käyttää demotietoja.
 1. Valitse **Varastonhallinta \> Asetukset \> Täydennys \> Täydennysmallit**.
@@ -144,7 +144,7 @@ Seuraavassa osassa on esimerkkejä siitä, miten voit luoda tarvittavat poiminta
 
 #### <a name="prepare-demo-data-location-directives"></a>Demotietosijaintidirektiivien valmisteleminen
 
-Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän ohjeaiheen lopussa olevassa skenaariossa, sinun on luotava kaksi sijaintidirektiiviä: yksi poimintaa ja yksi hyllytystä varten.
+Jos haluat valmistella demotietoja, jotta sitä voidaan käyttää tämän artikkelin lopussa olevassa skenaariossa, sinun on luotava kaksi sijaintidirektiiviä: yksi poimintaa ja yksi hyllytystä varten.
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Luo täydennyspoimintadirektiivi
 
@@ -258,7 +258,7 @@ Tässä osassa on esimerkkiskenaario, jossa kerrotaan, kuinka toimintoa käytet�
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-sample-scenario"></a>Esimerkkiskenaarion mukaisten esimerkkiskenaarioiden valmisteleminen
 
-Ennen kuin aloitat skenaarion käsittelyn, sinun on aktivoitava mallitiedot ja määritettävä ominaisuus tässä osassa ja aiemmissa tämän ohjeaiheen osissa kuvatulla tavalla.
+Ennen kuin aloitat skenaarion käsittelyn, sinun on aktivoitava mallitiedot ja määritettävä ominaisuus tässä osassa ja aiemmissa tämän artikkelin osissa kuvatulla tavalla.
 
 #### <a name="use-the-usmf-legal-entity"></a>Käytä USFM-yritystä
 
@@ -266,7 +266,7 @@ Tämän skenaarion käyttäminen määritettyjen mallitietojen ja -arvojen avull
 
 #### <a name="prepare-additional-sample-data"></a>Lisä mallitietojen valmisteleminen
 
-Kun olet valinnut **USMF**-yrityksen, lisää tarvittavat näytetiedot, jotka on kuvattu aiemmin tämän ohjeaiheen kohdassa [Määritä vyöhykkeeseen perustuva täydennys](#setup) -osa.
+Kun olet valinnut **USMF**-yrityksen, lisää tarvittavat näytetiedot, jotka on kuvattu aiemmin tämän artikkelin kohdassa [Määritä vyöhykkeeseen perustuva täydennys](#setup) -osa.
 
 #### <a name="check-your-on-hand-inventory"></a>Tarkista käytettävissä olevat varastosi
 

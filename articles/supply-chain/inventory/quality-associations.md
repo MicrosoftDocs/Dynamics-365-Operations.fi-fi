@@ -1,6 +1,6 @@
 ---
 title: Laatuliitokset
-description: Tässä aiheessa kuvataan, kuinka voit käyttää laatuliitoksia Microsoft Dynamics 365 Supply Chain Managementissa luodaksesi automaattisesti myynti-, osto- ja tuotantoprosesseihin liittyviä laatutilauksia.
+description: Tässä artikkelissa kuvataan, kuinka voit käyttää laatuliitoksia Microsoft Dynamics 365 Supply Chain Managementissa luodaksesi automaattisesti myynti-, osto- ja tuotantoprosesseihin liittyviä laatutilauksia.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28984730e5660414eec1ba087eb5de1eba4cbbb8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 4e96f301d8dec255e57f0f0fbfa9c8e1a5922ae9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887512"
 ---
 # <a name="quality-associations"></a>Laatuliitokset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka voit käyttää laatuliitoksia Microsoft Dynamics 365 Supply Chain Managementissa luodaksesi automaattisesti myynti-, osto- ja tuotantoprosesseihin liittyviä laatutilauksia.
+Tässä artikkelissa kuvataan, kuinka voit käyttää laatuliitoksia Microsoft Dynamics 365 Supply Chain Managementissa luodaksesi automaattisesti myynti-, osto- ja tuotantoprosesseihin liittyviä laatutilauksia.
 
 Laatuliitos määrittää kaikki seuraavat muodostettavan laatutilauksen tiedot:
 

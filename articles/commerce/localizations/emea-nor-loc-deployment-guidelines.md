@@ -1,6 +1,6 @@
 ---
 title: Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha)
-description: Tämä ohjeaihe on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa.
+description: Tämä artikkeli on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,27 +9,27 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.openlocfilehash: 019bac01abdc0b2e16718c08953b44fbccef83a3
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 7a6450215f152779428d3b0fd83bf09761e2ad98
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944785"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894459"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha)
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa. Lokalisointiin kuuluu useita Commerce-komponenttien laajennuksia. Laajennusten avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa X- ja Z-raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md).
+Tämä artikkeli on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa. Lokalisointiin kuuluu useita Commerce-komponenttien laajennuksia. Laajennusten avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa X- ja Z-raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md).
 
 Tämä esimerkki kuuluu Retail-ohjelmiston kehityspakettiin (SDK). Lisätietoja SDK:sta on kohdassa [Retail-kehityspaketin (SDK) arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Tämä esimerkki koostuu Commerce runtime (CRT)-, Retail Server- ja POS-laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT-, Retail Server- ja POS-projektit. Suosittelemme, että teet tässä aiheessa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Microsoft Visual Studio Onlinea (VSO), jossa tiedostoja ei ole vielä muutettu.
+Tämä esimerkki koostuu Commerce runtime (CRT)-, Retail Server- ja POS-laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT-, Retail Server- ja POS-projektit. Suosittelemme, että teet tässä artikkelissa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Microsoft Visual Studio Onlinea (VSO), jossa tiedostoja ei ole vielä muutettu.
 
 > [!NOTE]
-> Commerce 10.0.8:ssa tai sitä uudemmissa versioissa Retail Serveristä käytetään nimeä Commerce Scale Unit. Koska tämä ohjeaihe koskee sovelluksen useita aiempia versioita, *Retail Server* -nimeä käytetään koko ohjeaiheessa.
+> Commerce 10.0.8:ssa tai sitä uudemmissa versioissa Retail Serveristä käytetään nimeä Commerce Scale Unit. Koska tämä artikkeli koskee sovelluksen useita aiempia versioita, *Retail Server* -nimeä käytetään koko artikkelissa.
 >
-> Jotkin tämän ohjeaiheen vaiheet vaihtelevat käyttämäsi Commerce-version mukaan. Lisätietoja esitetään kohdassa [Dynamics 365 Retailin uudet ja muuttuneet ominaisuudet](../get-started/whats-new.md).
+> Jotkin tämän artikkelin vaiheet vaihtelevat käyttämäsi Commerce-version mukaan. Lisätietoja esitetään kohdassa [Dynamics 365 Retailin uudet ja muuttuneet ominaisuudet](../get-started/whats-new.md).
 
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce-kanavien sertifikaattiprofiilien käyttäminen
 
@@ -1252,7 +1252,7 @@ Lisätietoja on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-register
 
 Luo Commerce-komponentteja sisältävät käyttöön otettavat paketit ja ota paketit käyttöön tuotantoympäristössä noudattamalla näitä ohjeita.
 
-1. Noudata aiemmin tässä ohjeaiheessa olevassa [Cloud POS -laajennusosien](#cloud-pos-extension-components) tai [Modern POS -laajennusosien](#modern-pos-extension-components) osissa olevia vaiheita.
+1. Noudata aiemmin tässä artikkelissa olevassa [Cloud POS -laajennusosien](#cloud-pos-extension-components) tai [Modern POS -laajennusosien](#modern-pos-extension-components) osissa olevia vaiheita.
 2. Tee seuraavat muutokset **RetailSdk\\Assets**-kansion paketin konfiguraatiotiedostoihin:
 
     1. Lisää **commerceruntime.ext.config**- ja **CommerceRuntime.MPOSOffline.Ext.config**-määritystiedostoihin seuraavat rivit **composition**-osaan:

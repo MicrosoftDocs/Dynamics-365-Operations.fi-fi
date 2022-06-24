@@ -1,6 +1,6 @@
 ---
 title: Tuotetunnukset
-description: Tässä ohjeaiheessa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin.
+description: Tässä artikkelissa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3fc2d5c01209f15a9cb680e3bb569087f08c08d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063338"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851707"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset
 
@@ -29,7 +29,7 @@ ms.locfileid: "8063338"
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin.
+Tässä artikkelissa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin.
 
 Kun käsittelet tuotteita Microsoft Dynamics ERP:n tai Microsoft Dynamics CRM:n työnohjauksessa tai varastossa, tarvitse hyvän strategian kyseisten tuotteiden ja tuotevarianttien tunnistamiseen.
 
@@ -125,7 +125,7 @@ Ulkoisten koodien avulla tehtävään tuotehakuun ei ole valitettavasti mitään
 | Tuotteet V2 | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero voidaan luoda automaattisesti tuonnin yhteydessä tuotenumeron yksiköstä ja numerosarjasta riippuen. |
 | Tuotevariantit | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero voidaan luoda automaattisesti tuonnin yhteydessä tuotenimikkeistömallista riippuen. Voit kuitenkin tuoda minkä tahansa tuotenumeron. Tuotenumeron ei tarvitse noudattaa tuotenimikkeistömallin rakennetta. |
 | Tuotekäännökset | Tuotteen nimi, tuotteen kuvaus | Tuotteen nimi, tuotteen kuvaus | Tämä yksikkö korvaa minkä tahansa kielen. Kun yrityksen ensisijaisen kielen kuvaus on korvattu, tuotteen nimi ja kuvaus muuttuvat. |
-| Vapautetun tuotteen luominen V2 | Nimikenumero, tuotenumero, nimikkeen haun nimi| Nimikenumero, tuotenumero, nimikkeen haun nimi, tuotteen haun nimi, tuotteen nimi | Tämä yksikkö voi olla haastava, kun numerosarjoja käytetään luotaessa uusia vapautettuja tuotteita. Sekä **nimikenumeron** että **tuotenumeron** numerosarjalla on vaikutusta. **Nimikenumeron** numerosarja on yrityskohtainen, kun taas **tuotenumeron** numerosarja on yleinen. Tämän vuoksi **Nimiketunnus**-numerosarjan käyttöä ei suositella otettaessa käyttöön uusia tuotteita. Kun yksikköä käytetään aiemmin luodun tuotteen julkaisussa, yksikölle on tietysti annettava tuotenumero. Lisätietoja on tämän ohjeaiheen Tuotteiden ja nimikkeiden numerosarjat -osassa. |
+| Vapautetun tuotteen luominen V2 | Nimikenumero, tuotenumero, nimikkeen haun nimi| Nimikenumero, tuotenumero, nimikkeen haun nimi, tuotteen haun nimi, tuotteen nimi | Tämä yksikkö voi olla haastava, kun numerosarjoja käytetään luotaessa uusia vapautettuja tuotteita. Sekä **nimikenumeron** että **tuotenumeron** numerosarjalla on vaikutusta. **Nimikenumeron** numerosarja on yrityskohtainen, kun taas **tuotenumeron** numerosarja on yleinen. Tämän vuoksi **Nimiketunnus**-numerosarjan käyttöä ei suositella otettaessa käyttöön uusia tuotteita. Kun yksikköä käytetään aiemmin luodun tuotteen julkaisussa, yksikölle on tietysti annettava tuotenumero. Lisätietoja on tämän artikkelin Tuotteiden ja nimikkeiden numerosarjat -osassa. |
 | Vapautetut tuotevariantit | Nimikenumero, tuotedimensiot, tuotenumero | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus, tuotteen dimensiot | Tätä yksikköä voi käyttää **Tuotevariantit**-yksikön tapaan, kun uusia tuotteita luodaan joko tuotenimikkeistömallin seuraamista tai variantin omien tuotenumeroiden käyttämistä varten. |
 | Asiakkaiden ulkoinen nimikekuvauus | Asiakkaan nimikenumero, asiakkaan nimikkeen nimi, asiakkaan kuvaus, asiakastili | Asiakkaan nimikenumero, asiakkaan nimikkeen nimi, asiakkaan kuvaus, asiakastili | Asiakkaista koostuva ryhmä (esimerkiksi ostajayhdistys) voidaan koota yhdeksi ryhmäksi **Ulkoisen nimikekuvauksen asiakasryhmät** -yksikön avulla. |
 | Toimittajien ulkoinen nimikekuvaus | Toimittajan nimikkeen tunnus, toimittajan nimikkeen nimi, toimittajan kuvaus, toimittajatili | Toimittajan nimikkeen tunnus, toimittajan nimikkeen nimi, toimittajan kuvaus, toimittajatili | Toimittajista koostuva ryhmä (esimerkiksi myyntiyhdistys toimialan organisaatio) tai voidaan koota yhdeksi ryhmäksi **Ulkoisen nimikekuvauksen toimittajaryhmät** -yksikön avulla. |
@@ -184,7 +184,7 @@ Määritä ympäristö näiden ohjeiden avulla.
 
 Voit nyt käyttää **Tuoteyksikön Common Data Service -tunnisteen yksikkö**-, **Tuoteyksikön tunnistekoodi** ja **Tuoteyksikön tunnisteen vaikutusalue** -tietoyksiköitä ja viedä niiden avulla tunnisteita mihin tahansa kohdejärjestelmään.
 
-## <a name="related-topic"></a>Liittyvä aihe
+## <a name="related-article"></a>Liittyvä artikkeli
 
 [Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana](search-products-product-variants.md)
 

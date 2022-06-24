@@ -1,6 +1,6 @@
 ---
 title: Aiheutuneiden kustannusten arviointi ja hallinta
-description: Järjestelmä käyttää automaattisten kustannusten asetuksiasi aiheutuneen kustannuksen arvion määrittämiseen. Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää erilaisia skenaarioita tarjotaksesi tarkemman arvion.
+description: Järjestelmä käyttää automaattisten kustannusten asetuksiasi aiheutuneen kustannuksen arvion määrittämiseen. Tässä artikkelissa kerrotaan, kuinka voit määrittää erilaisia skenaarioita tarjotaksesi tarkemman arvion.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696204"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854438"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Aiheutuneiden kustannusten arviointi ja hallinta
 
@@ -50,7 +50,7 @@ Seuraavassa taulukossa kuvataan kentät, jotka ovat käytettävissä kullekin ma
 
 Käytä **Kustannusarvio**-valintaikkunaa luodaksesi uuden kustannusarvion, joka perustuu valittuun kustannusmalliin, valittuun nimikejoukkoon ja muihin matkan tietoihin. Näitä asetuksia käytetään määrittämään tavaroiden arvioidut aiheutuneet kustannukset. Näitä kustannusarvioita käytetään ensisijaisesti standardikustannusnimikkeiden kanssa. Kun arvioidut aiheutuneet kustannukset lisätään varastossa olevien tavaroiden standardikustannukseen, tapahtumien varianssin tulisi olla pienempi, kun tavarat lisätään merikuljetukseen, koska standardikustannus vastaa kyseisten aiheutuneiden kustannusten arvioita.
 
-Avaa **Kustannusarvio**-valintaikkuna valitsemalla **Aiheutunut kustannus \>Kausittaiset tehtävät \> Kustannusarvio**. Määritä sitten seuraavissa osioissa kuvatut kentät. Valitse lopuksi **OK** luodaksesi arvion. **Kustannusarvio**-sivu (**Aiheutunut kustannus \> Kyselyt \> Kustannusarviot**) avautuu ja näyttää sinulle arvion tässä ohjeaiheessa myöhemmin kuvatulla tavalla.
+Avaa **Kustannusarvio**-valintaikkuna valitsemalla **Aiheutunut kustannus \>Kausittaiset tehtävät \> Kustannusarvio**. Määritä sitten seuraavissa osioissa kuvatut kentät. Valitse lopuksi **OK** luodaksesi arvion. **Kustannusarvio**-sivu (**Aiheutunut kustannus \> Kyselyt \> Kustannusarviot**) avautuu ja näyttää sinulle arvion tässä artikkelissa myöhemmin kuvatulla tavalla.
 
 ### <a name="settings-on-the-parameters-tab"></a>Parametrit-välilehden asetukset
 
@@ -91,7 +91,7 @@ Voit tarkastella tai muokata nimikkeen tilavuus- ja/tai painotietoja valitsemall
 
 ## <a name="manage-estimated-costs"></a>Arvioitujen kustannusten hallinta
 
-Voit tarkastella ja muokata luomiasi kustannusarvioita valitsemalla **Aiheutunut kustannus \> Kyselyt \> Kustannusarviot**. **Kustannusarviot**-sivun vasemmassa laidassa oleva luetteloruutu näyttää kaikki tämänhetkiset kustannusarviot. Voit käsitellä valittua arviointia toimintoruudun painikkeiden avulla. Huomaa, ettet voi luoda uutta kustannusarviota **Kustannusarviot**-sivulta. Käytä sen sijaan **Kustannusarvio**-valintaikkunaa (**Aiheutunut kustannus \> Kausittaiset tehtävät \> Kustannusarvio**) aiemmin tässä ohjeaiheessa kuvatulla tavalla.
+Voit tarkastella ja muokata luomiasi kustannusarvioita valitsemalla **Aiheutunut kustannus \> Kyselyt \> Kustannusarviot**. **Kustannusarviot**-sivun vasemmassa laidassa oleva luetteloruutu näyttää kaikki tämänhetkiset kustannusarviot. Voit käsitellä valittua arviointia toimintoruudun painikkeiden avulla. Huomaa, ettet voi luoda uutta kustannusarviota **Kustannusarviot**-sivulta. Käytä sen sijaan **Kustannusarvio**-valintaikkunaa (**Aiheutunut kustannus \> Kausittaiset tehtävät \> Kustannusarvio**) aiemmin tässä artikkelissa kuvatulla tavalla.
 
 **Kustannusarviot**-sivulla näytetään, miten jokainen arvioitu kustannus on laskettu. Se näyttää myös kunkin nimikkeen arvioidun aiheutuneen kustannuksen. Voit muokata kustannusarviota muuttamalla eri tavaroihin liitettyä kustannushintaa ja/tai valuuttaa. Voit myös muokata asiaankuuluvia merikuljetuksen kustannuksia merikuljetuksen ja kontin tasolla. Kun muokkaat kustannuksia tältä sivulta, sinua pyydetään laskemaan arvioidut kustannukset uudelleen kustannusarvioon sisältyville nimikkeille. Kun olet valmis, voit käyttää arvioita päivittääksesi kustannusmalliin sisältyvien nimikkeiden kustannushinnan.
 

@@ -1,6 +1,6 @@
 ---
 title: Materiaalin käsittelylaitteiden rajapinta (MHAX)
-description: Tässä aiheessa kuvataan, miten materiaalin käsittelylaitteiden rajapinta (MHAX) määritetään siten, että voit muodostaa yhteyden fyysisiin ulkoisiin materiaalinkäsittelyjärjestelmiin (MH).
+description: Tässä artikkelissa kuvataan, miten materiaalin käsittelylaitteiden rajapinta (MHAX) määritetään siten, että voit muodostaa yhteyden fyysisiin ulkoisiin materiaalinkäsittelyjärjestelmiin (MH).
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695588"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907084"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Materiaalin käsittelylaitteiden rajapinta (MHAX)
 
@@ -88,7 +88,7 @@ Voit luoda tilauksen valitsemalla **Materiaalin käsittelylaitteiden rajapinta \
 
 Kuhunkin tilaukseen voidaan liittää kysely. Tämä kysely suodattaa työrivejä ja otsikkoja, jotta rajoitettaisiin entisestään töitä, jotka käyttävät tilausta tapahtumien luomiseen. Voit lisätä kyselyn tilaukseen valitsemalla kulloisenkin tilauksen **Suorita kysely** -valintaruudun **Tilaukset**-sivulla ja valitsemalla sitten toimintoruudusta **Muokkaa kyselyä**. Näkyviin tulee vakiomuotoinen Supply Chain Managementin kyselyeditori.
 
-Lisäksi tilauksella on *tilauskartta*, joka yhdistää kenttiä joko työn otsikosta tai työriviltä kaikkiin tai joihinkin lähtevän tapahtuman 10 vapaasta tietokentästä tarpeen mukaan. Tietojen palauttamiseksi MHAX-palveluun sisällytetään yleensä työrivitietueen tunnus tai *työriviparin tunnus*. (Työriviparin tunnus on uusi ominaisuus, jonka avulla järjestelmä voi käyttää yksittäistä palautuskomentoa poiminta- ja asetusrivien käsittelemiseen.) Muut kentät määräytyvät käyttötapauksen mukaan. Esimerkkejä esitetään myöhemmin tässä aiheessa.
+Lisäksi tilauksella on *tilauskartta*, joka yhdistää kenttiä joko työn otsikosta tai työriviltä kaikkiin tai joihinkin lähtevän tapahtuman 10 vapaasta tietokentästä tarpeen mukaan. Tietojen palauttamiseksi MHAX-palveluun sisällytetään yleensä työrivitietueen tunnus tai *työriviparin tunnus*. (Työriviparin tunnus on uusi ominaisuus, jonka avulla järjestelmä voi käyttää yksittäistä palautuskomentoa poiminta- ja asetusrivien käsittelemiseen.) Muut kentät määräytyvät käyttötapauksen mukaan. Esimerkkejä esitetään myöhemmin tässä artikkelissa.
 
 Voit luoda tilauskartan valitsemalla kulloisenkin tilauksen **Tilaukset**-sivulta ja valitsemalla sitten toimintoruudusta **Tilauskartta**. Näkyviin tulevassa **Tilauskartta**-valintaikkunassa voit määrittää taulukon ja kentän kullekin käytettävissä olevalle tietokentälle tarpeen mukaan.
 
@@ -161,7 +161,7 @@ Jos työriviparin tunnus annetaan, suoritetaan peräkkäin kaikki poiminta-, ase
 
 Paikat, joita hallitaan poimimalla rivejä rekisterikilvestä, edellyttävät, että **tieto03** määrittää rekisterikilven, josta poimitaan, riippumatta siitä, onko rivit merkitty työrivitietueen tunnuksella vai työriviparin tunnuksella. **tieto04**-kentässä on määritettävä työotsikon poiminnan kohteena oleva rekisterikilpi.
 
-Asetusriveillä ei voi olla muita tietoja. Ne suoritetaan vain nykyisen työrivin sijainnin sekä työn kohteena olevan rekisterikilven perusteella. Jos asetus on suoritettava eri sijainnissa, muuta työrivin sijaintia myöhemmin tässä aiheessa olevassa [Ohitustapahtumat](#override-events)-osassa kuvatulla tavalla.
+Asetusriveillä ei voi olla muita tietoja. Ne suoritetaan vain nykyisen työrivin sijainnin sekä työn kohteena olevan rekisterikilven perusteella. Jos asetus on suoritettava eri sijainnissa, muuta työrivin sijaintia myöhemmin tässä artikkelissa olevassa [Ohitustapahtumat](#override-events)-osassa kuvatulla tavalla.
 
 Mukautetut työrivit eivät edellytä eivätkä tue muita tietoja saapuvassa tapahtumassa.
 
@@ -220,7 +220,7 @@ Ennen pitkää saapuvien jono täyttyy jonokohteista, jotka on jo käsitelty. Vo
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Nopean yleiskuvan saaminen jononhallinnan avulla
 
-Kun haluat nopean yleiskuvan kaikista saapuviin ja lähtevien jonoihin liittyvistä toimista, valitse **Materiaalin käsittelylaitteiden rajapinta \> Työtilat \> Jononhallinta**. **Jononhallinta**-sivulla on joukon välilehtiä ja ruutuja, joita voit käyttää jonojen valvomiseen ja tutkimiseen. Se sisältää myös hyödyllisiä linkkejä useimmille muille tässä aiheessa mainituille sivuille.
+Kun haluat nopean yleiskuvan kaikista saapuviin ja lähtevien jonoihin liittyvistä toimista, valitse **Materiaalin käsittelylaitteiden rajapinta \> Työtilat \> Jononhallinta**. **Jononhallinta**-sivulla on joukon välilehtiä ja ruutuja, joita voit käyttää jonojen valvomiseen ja tutkimiseen. Se sisältää myös hyödyllisiä linkkejä useimmille muille tässä artikkelissa mainituille sivuille.
 
 ## <a name="connect-to-the-mhax-service"></a>Yhteyden muodostaminen MHAX-palveluun
 

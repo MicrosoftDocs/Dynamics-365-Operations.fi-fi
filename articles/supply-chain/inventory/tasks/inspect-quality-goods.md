@@ -1,6 +1,6 @@
 ---
 title: Tarkista tavaroiden laatu
-description: Tässä ohjeaiheessa kerrotaan, kuinka laatutilauksia käsitellään.
+description: Tässä artikkelissa kerrotaan, kuinka laatutilauksia käsitellään.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -14,20 +14,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575845"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857573"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Tarkista tavaroiden laatu
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka laatutilauksia käsitellään. Laatuassistentti suorittaa yleensä laatutarkastukset.
+Tässä artikkelissa kerrotaan, kuinka laatutilauksia käsitellään. Laatuassistentti suorittaa yleensä laatutarkastukset.
 
-Jos vakioesittely on asennettu, voit suorittaa sen avulla tässä ohjeaiheessa olevat toimenpiteet. Valitse *USMF*-yritys ennen kuin aloitat, jotta voit käyttää esittelytietoja. Sen jälkeen on vahvistettava ostotilaus *000016* ja kirjattava tuotteen vastaanotto. Laatutilaus luodaan automaattisesti.
+Jos vakioesittely on asennettu, voit suorittaa sen avulla tässä artikkelissa olevat toimenpiteet. Valitse *USMF*-yritys ennen kuin aloitat, jotta voit käyttää esittelytietoja. Sen jälkeen on vahvistettava ostotilaus *000016* ja kirjattava tuotteen vastaanotto. Laatutilaus luodaan automaattisesti.
 
 ## <a name="step-1-select-a-quality-order"></a>Vaihe 1: Valitse laatutilaus
 

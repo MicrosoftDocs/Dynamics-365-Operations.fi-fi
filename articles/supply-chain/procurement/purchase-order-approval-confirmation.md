@@ -1,6 +1,6 @@
 ---
 title: Ostotilausten hyväksyminen ja vahvistaminen
-description: Tässä ohjeaiheessa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
+description: Tässä artikkelissa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
 author: GalynaFedorova
 ms.date: 04/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d38a486c604dc761dcaf12b839d8b9b89b5e0414
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907374"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
+Tässä artikkelissa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
 
 Kun ostotilaus on luotu, sen on ehkä läpäistävä hyväksyntäprosessi. Kun toimittaja on hyväksynyt tilauksen, ostotilauksen tilaksi määritetään **Vahvistettu**.
 

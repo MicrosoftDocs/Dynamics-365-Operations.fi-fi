@@ -1,6 +1,6 @@
 ---
-title: "\"Osta samankaltaisia tyylejä\" -suositusten käyttöönotto"
-description: Tässä ohjeaiheessa kuvataan, kuinka voit ottaa käyttöön "Osta samankaltaisia tyylejä" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
+title: Vastaavien tuotteiden ostosuositusten ottaminen käyttöön
+description: Tässä artikkelissa kuvataan, kuinka voit ottaa käyttöön "Osta samankaltaisia tyylejä" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
 author: bebeale
 ms.date: 08/06/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3024e832de5e6a60b49c5b0c8bfbe36b2c416379
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884574"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Vastaavien tuotteiden ostosuositusten ottaminen käyttöön
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka voit ottaa käyttöön "Osta samankaltaisia tyylejä" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kuvataan, kuinka voit ottaa käyttöön "Osta samankaltaisia tyylejä" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
 
 Dynamics 365 Commercen "Osta samankaltaisia tyylejä" -suositusominaisuus, joka käyttää tekoälyä ja koneoppimista (AI-ML) antaakseen suosituksia visuaalisesti vastaavista tuotteista asiakkaille. Tekemällä "Osta samankaltaisia tyylejä" -suosituksia kaikille Commercen kanaville vähittäiskauppiaat voivat lisätä asiakastyytyväisyyttä auttamalla asiakkaita löytämään haluamansa helposti.
 

@@ -1,6 +1,6 @@
 ---
 title: Varastosiirtojen ja -oikaisujen synkronointi Field Servicesta Supply Chain Managementiin
-description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varaston oikaisut ja siirrot synkronoidaan Dynamics 365 Field Serviceen.
+description: Tässä artikkelissa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varaston oikaisut ja siirrot synkronoidaan Dynamics 365 Field Serviceen.
 author: Henrikan
 ms.date: 04/30/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: cfa7f617cbc4cd75d669972b35f8d33ba3cbcc56
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e59e50a4f54bac749b3d860404a3ecd444d99a89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854091"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Varastosiirtojen ja -oikaisujen synkronointi Field Servicesta Supply Chain Managementiin
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061676"
 
 
 
-Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varaston oikaisut ja siirrot synkronoidaan Dynamics 365 Field Serviceen.
+Tässä artikkelissa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varaston oikaisut ja siirrot synkronoidaan Dynamics 365 Field Serviceen.
 
 [![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSTransAdjOW.png)](./media/FSTransAdjOW.png)
 

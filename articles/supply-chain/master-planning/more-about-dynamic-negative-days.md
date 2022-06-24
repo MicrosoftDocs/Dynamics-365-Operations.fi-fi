@@ -1,6 +1,6 @@
 ---
 title: Negatiiviset päivät ja dynaamiset negatiiviset päivät
-description: Tässä ohjeaiheessa on tietoja negatiivisista ja dynaamisista negatiivisista päivistä sekä siitä, miten niillä voi edistää liiketoimintaa.
+description: Tässä artikkelissa on tietoja negatiivisista ja dynaamisista negatiivisista päivistä sekä siitä, miten niillä voi edistää liiketoimintaa.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d88517c99a274911e8abd8de4bcd318139822a5
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469866"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846124"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatiiviset päivät ja dynaamiset negatiiviset päivät
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja negatiivisista ja dynaamisista negatiivisista päivistä sekä siitä, miten niillä voi edistää liiketoimintaa. *Negatiivisten päivien aikaraja* ilmaisee päivien määrän, jonka olet valmis odottamaan ennen uuden täydennyksen tilaamista, kun varasto on negatiivinen.
+Tässä artikkelissa on tietoja negatiivisista ja dynaamisista negatiivisista päivistä sekä siitä, miten niillä voi edistää liiketoimintaa. *Negatiivisten päivien aikaraja* ilmaisee päivien määrän, jonka olet valmis odottamaan ennen uuden täydennyksen tilaamista, kun varasto on negatiivinen.
 
-Ohjeaiheessa käsitellään seuraavia tietoja:
+Artikkelissa käsitellään seuraavia tietoja:
 
 - Suunniteltujen tilausten luonti
 - Negatiivisen päivien aikarajan ja nimikkeen läpimenoajan välinen korrelaatio
 - Dynaamisten negatiivisten päivien aikarajan laskeminen ja nimikkeen läpimenoajan ottaminen huomioon laskelmassa
 - Negatiivisiin päiviin liittyvien [materiaalitarpeiden suunnittelun (MRP) (pääsuunnittelun) suoritusajan parannusehdotukset](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx)
 
-Tässä ohjeaiheessa käytetään kolmea hypoteettista skenaariota, jotka auttavat ymmärtämään näitä tietoja. Skenaarioiden välinen ero on kohta, jossa kysyntä saadaan: ennen nimikkeen läpimenoajankohtaa, sen aikana tai sen jälkeen.
+Tässä artikkelissa käytetään kolmea hypoteettista skenaariota, jotka auttavat ymmärtämään näitä tietoja. Skenaarioiden välinen ero on kohta, jossa kysyntä saadaan: ennen nimikkeen läpimenoajankohtaa, sen aikana tai sen jälkeen.
 
 ## <a name="scenario-1-you-get-demand-before-the-items-lead-time-period"></a>Skenaario 1: kysyntä saadaan ennen nimikkeen läpimenokautta
 
@@ -93,7 +93,7 @@ Seuraava kuva on graafinen esitys siitä, mitä tapauksessa tapahtuu.
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Tapaus E: sekä arvoltaan nimikkeen läpimenoaikaa suuremman negatiivisten päivien että dynaamisten negatiivisten päivien aikarajan käyttäminen
 
-Jos määrität negatiivisten päivien arvon suuremmaksi kuin nimikkeen läpimenoaika ja jos käytät myös dynaamisten negatiivisten päivien aikarajaa, dynaamisten negatiivisten päivien aikaraja on 6 + 6 + 0 = 12 päivää. Tällä tavoin seurauksena voi olla erittäin pitkäkestoinen aikaraja, jossa tarvesuunnittelun on etsittävä tuloksia. Lisätietoja siitä, miten tapaus E liittyy tilanteeseen, jossa negatiivisille päiville määritetään pitkä aikaraja, on tämän ohjeaiheen osassa [Johtopäätökset](#conclusion).
+Jos määrität negatiivisten päivien arvon suuremmaksi kuin nimikkeen läpimenoaika ja jos käytät myös dynaamisten negatiivisten päivien aikarajaa, dynaamisten negatiivisten päivien aikaraja on 6 + 6 + 0 = 12 päivää. Tällä tavoin seurauksena voi olla erittäin pitkäkestoinen aikaraja, jossa tarvesuunnittelun on etsittävä tuloksia. Lisätietoja siitä, miten tapaus E liittyy tilanteeseen, jossa negatiivisille päiville määritetään pitkä aikaraja, on tämän artikkelin osassa [Johtopäätökset](#conclusion).
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>Skenaario 2: kysyntä saadaan nimikkeen läpimenokauden aikana
 
@@ -142,7 +142,7 @@ Jos määrität negatiivisten päivien arvoksi **0** (nolla) ja käytät vain dy
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Tapaus E: sekä arvoltaan nimikkeen läpimenoaikaa suuremman negatiivisten päivien että dynaamisten negatiivisten päivien aikarajan käyttäminen
 
-Jos määrität negatiivisten päivien arvon suuremmaksi kuin nimikkeen läpimenoaika ja jos käytät myös dynaamisten negatiivisten päivien aikarajaa, dynaamisten negatiivisten päivien aikaraja on 6 + 6 – 4 = 8 päivää. Tällä tavoin seurauksena voi olla erittäin pitkäkestoinen aikaraja, jossa tarvesuunnittelun on etsittävä tuloksia. Lisätietoja siitä, miten tapaus E liittyy tilanteeseen, jossa negatiivisille päiville määritetään pitkä aikaraja, on tämän ohjeaiheen osassa [Johtopäätökset](#conclusion).
+Jos määrität negatiivisten päivien arvon suuremmaksi kuin nimikkeen läpimenoaika ja jos käytät myös dynaamisten negatiivisten päivien aikarajaa, dynaamisten negatiivisten päivien aikaraja on 6 + 6 – 4 = 8 päivää. Tällä tavoin seurauksena voi olla erittäin pitkäkestoinen aikaraja, jossa tarvesuunnittelun on etsittävä tuloksia. Lisätietoja siitä, miten tapaus E liittyy tilanteeseen, jossa negatiivisille päiville määritetään pitkä aikaraja, on tämän artikkelin osassa [Johtopäätökset](#conclusion).
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>Skenaario 3: kysyntä saadaan nimikkeen läpimenokauden jälkeen
 
@@ -204,7 +204,7 @@ Tämä tapaus on sama kuin skenaarioiden 1 ja 2 tapaus E. Se on käytännössä 
 
 ## <a name="conclusion"></a>Johtopäätökset
 
-Kuten tämän ohjeaiheen kolme skenaariota on osoittanut, negatiivisten päivien arvo kannattaa määrittää suuremmaksi kuin kattavuusryhmän nimikkeiden läpimenoaika. Lisäksi kannattaa käyttää vain dynaamisia negatiivisia päiviä ja määrittää negatiivisten päivien arvoksi se määrä päiviä, jonka olet valmis odottamaan, ennen kuin tilaat uuden täydennyksen varaston ollessa negatiivinen. (Toisin sanoen kyse on siitä, kuinka monta päivää olet valmis viivästyttämään kysyntää lisää). Lisäksi saman kattavuusryhmän nimikkeillä on oltava samanlaiset läpimenoajat.
+Kuten tämän artikkelin kolme skenaariota on osoittanut, negatiivisten päivien arvo kannattaa määrittää suuremmaksi kuin kattavuusryhmän nimikkeiden läpimenoaika. Lisäksi kannattaa käyttää vain dynaamisia negatiivisia päiviä ja määrittää negatiivisten päivien arvoksi se määrä päiviä, jonka olet valmis odottamaan, ennen kuin tilaat uuden täydennyksen varaston ollessa negatiivinen. (Toisin sanoen kyse on siitä, kuinka monta päivää olet valmis viivästyttämään kysyntää lisää). Lisäksi saman kattavuusryhmän nimikkeillä on oltava samanlaiset läpimenoajat.
 
 Jos määrität negatiivisten päivien arvoksi **0** (nolla) etkä käytä dynaamisia negatiivisia päiviä, tarvesuunnittelu luo aina uuden suunnittelun tilauksen täyttämään kysynnän. Tässä tilanteessa on tärkeää, että käytät toimenpidesanomia, sillä voit estää niiden avulla varaston kasaantumisen.
 

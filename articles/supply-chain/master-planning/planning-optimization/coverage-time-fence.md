@@ -1,6 +1,6 @@
 ---
 title: Kattavuuden aikarajat
-description: Tässä aiheessa käsitellään kattavuuden aikarajojen määrittämistä suunnittelun optimointia käytettäessä. Kattavuuden aikaraja ilmaiseen suunnitteluhorisontin ja -rajoituksen.
+description: Tässä artikkelissa käsitellään kattavuuden aikarajojen määrittämistä suunnittelun optimointia käytettäessä. Kattavuuden aikaraja ilmaiseen suunnitteluhorisontin ja -rajoituksen.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 12deca22fd6ff3cb4556e0525ab831e1aea0ee33
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847930"
 ---
 # <a name="coverage-time-fences"></a>Kattavuuden aikarajat
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa käsitellään *kattavuuden aikarajojen* määrittämistä suunnittelun optimointia käytettäessä. Suunnittelijat voiva määrittää suunnitteluhorisontin (kattavuuden aikarajan päivinä) sekä jättää pois kyseisen horisontin ulkopuolella olevan kysynnän ja tarjonnan. Niinpä kattavuuden aikarajat auttavat estämään sellaiset sekaannusta aiheuttavat toimitusehdotukset, joihin ei tarvitse reagoida kuin vasta kuukausien kuluttua. Esimerkkejä ovat esimerkiksi seuraavan vuoden ennuste ja asiakastilaukset, joiden läpimenoaika ylittää selvästi normaalin.
+Tässä artikkelissa käsitellään *kattavuuden aikarajojen* määrittämistä suunnittelun optimointia käytettäessä. Suunnittelijat voiva määrittää suunnitteluhorisontin (kattavuuden aikarajan päivinä) sekä jättää pois kyseisen horisontin ulkopuolella olevan kysynnän ja tarjonnan. Niinpä kattavuuden aikarajat auttavat estämään sellaiset sekaannusta aiheuttavat toimitusehdotukset, joihin ei tarvitse reagoida kuin vasta kuukausien kuluttua. Esimerkkejä ovat esimerkiksi seuraavan vuoden ennuste ja asiakastilaukset, joiden läpimenoaika ylittää selvästi normaalin.
 
 Kattavuuden aikaraja on päivien määrä kuluvan päivän jälkeen (tai tarkemmin sanottuna päivän, jolloin suunnitteluajo tehdään), jolloin toimitus ja kysyntä suljetaan pois. Viiveiden estämiseksi on varmistettava, että kattavuuden aikaraja on pidempi kuin kokonaisläpimenoaika. Järjestelmän oletusarvo on 100 päivää.
 

@@ -1,6 +1,6 @@
 ---
 title: Varastotapahtumatiedot
-description: Tämä ohjeaihe sisältää yhteenvedon tapahtumatietosivusta, jossa näkyvät valitun varastotapahtuman tiedot.
+description: Tämä artikkeli sisältää yhteenvedon tapahtumatietosivusta, jossa näkyvät valitun varastotapahtuman tiedot.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735911"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859384"
 ---
 # <a name="inventory-transaction-details"></a>Varastotapahtumatiedot
 
@@ -36,8 +36,8 @@ Avaa **Tapahtuman tiedot** -sivu seuraavasti.
 
 | Pikavälilehti | Kuvaus |
 |---|---|
-| Yleiset | Tässä pikavälilehdessä näkyvät valitun varastotapahtuman perustiedot. **Varastotapahtumat**-sivulla näkyvien kenttien lisäksi sivulla on lisäkenttiä, jotka on kuvattu jäljempänä tässä ohjeaiheessa. |
-| Päivitykset | Tässä pikavälilehdessä näkyvät valitun varastotapahtuman fyysisiin, kirjanpidollisiin ja tilitystapahtumiin liittyvät tiedot. Jotkin kentät saattavat olla tyhjiä tapahtuman nykyisestä tilasta riippuen. Nämä kentät määritetään kuitenkin automaattisesti tapahtumien kirjaamista varten. **Varastotapahtumat**-sivulla näkyvien kenttien lisäksi pikavälilehdessä on lisäkenttiä, jotka on kuvattu jäljempänä tässä ohjeaiheessa. |
+| Yleiset | Tässä pikavälilehdessä näkyvät valitun varastotapahtuman perustiedot. **Varastotapahtumat**-sivulla näkyvien kenttien lisäksi sivulla on lisäkenttiä, jotka on kuvattu jäljempänä tässä artikkelissa. |
+| Päivitykset | Tässä pikavälilehdessä näkyvät valitun varastotapahtuman fyysisiin, kirjanpidollisiin ja tilitystapahtumiin liittyvät tiedot. Jotkin kentät saattavat olla tyhjiä tapahtuman nykyisestä tilasta riippuen. Nämä kentät määritetään kuitenkin automaattisesti tapahtumien kirjaamista varten. **Varastotapahtumat**-sivulla näkyvien kenttien lisäksi pikavälilehdessä on lisäkenttiä, jotka on kuvattu jäljempänä tässä artikkelissa. |
 | Kirjanpidon kirjaukset | Tässä pikavälilehdessä näkyy kirjaustyyppi ja kirjanpitotili, joita käytetään valittuun varastotapahtumaan liittyviin fyysiseen päivitykseen, kirjanpitopäivitykseen, fyysiseen tuottoon, fyysisiin kuluihin, kirjanpitotuottoihin ja kirjanpitokuluihin. |
 | Viitteet | Tässä pikavälilehdessä on lisätietoja valitun varastotapahtuman luomasta lähdetapahtumasta. Nämä tiedot voivat sisältää esimerkiksi ostotilauksen tai myyntitilauksen tietoja. |
 | Aiheeseen liittyviä tietoja | Tässä pikavälilehdessä näkyvät valitun varastotapahtuman lisätiedot. Kenttiä ei ehkä voi määrittää, jos jotkin toiminnot, kuten hankintaluokat tai projektit, eivät ole käytössä. |

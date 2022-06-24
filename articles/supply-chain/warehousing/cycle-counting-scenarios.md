@@ -1,6 +1,6 @@
 ---
 title: Inventoinnin esimerkkiskenaariot
-description: Tämä ohjeaihe sisältää kokoelman skenaarioita, jotka tutustuvat Microsoft Dynamics 365 Supply Chain Managementin inventointiominaisuuksiin.
+description: Tämä artikkeli sisältää kokoelman skenaarioita, jotka tutustuvat Microsoft Dynamics 365 Supply Chain Managementin inventointiominaisuuksiin.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674698"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899321"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Inventoinnin esimerkkiskenaariot
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää kokoelman skenaarioita, jotka tutustuvat Microsoft Dynamics 365 Supply Chain Managementin inventointiominaisuuksiin. Tässä kuvataan ensin aiemmin luodun Supply Chain Management -ympäristön vaatimukset. Sen jälkeen selitetään, miten inventointi konfiguroidaan ja miten kaikki inventoinnin vaiheet kuvataan. Kun olet lukenut ohjeen, sinulle on tuttu inventointi, myös ohjattu inventointi, sokkoinventointi, pisteinventointi, inventointirajat ja inventointisuunnitelmat.
+Tämä artikkeli sisältää kokoelman skenaarioita, jotka tutustuvat Microsoft Dynamics 365 Supply Chain Managementin inventointiominaisuuksiin. Tässä kuvataan ensin aiemmin luodun Supply Chain Management -ympäristön vaatimukset. Sen jälkeen selitetään, miten inventointi konfiguroidaan ja miten kaikki inventoinnin vaiheet kuvataan. Kun olet lukenut ohjeen, sinulle on tuttu inventointi, myös ohjattu inventointi, sokkoinventointi, pisteinventointi, inventointirajat ja inventointisuunnitelmat.
 
 ## <a name="prerequisites"></a>Edellytykset
 
 ### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Tämän ohjeen kussakin skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Supply Chain Management -sovelluksen vakiodemotietoihin. Jos haluat käyttää skenaarioiden työstämisessä näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu **USMF** ennen aloittamista.
+Tämän artikkelin kussakin skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Supply Chain Management -sovelluksen vakiodemotietoihin. Jos haluat käyttää skenaarioiden työstämisessä näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu **USMF** ennen aloittamista.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen tuen käyttöönotto
 
@@ -158,7 +158,7 @@ Luo varastossa *61* nimikkeen sijainnille *01A02R2S2B* (BULK-06) inventointityö
 
 Kun inventointityö on luotu, voit suorittaa sen laskemalla varastosijainnin nimikkeet ja kirjaamalla tulokset Supply Chain Managementiin mobiililaitteella. Noudata näitä ohjeita, kun haluat tehdä inventoinnin Warehouse Management -mobiilisovelluksessa.
 
-1. Kirjaudu sisään Warehouse Management -mobiilisovellukseen aiemmin tässä ohjeaiheessa kohdassa [Skenaarioiden esittelytietojen valmistelu](#prepare-demo-data) määritettynä työkäyttäjänä. Tässä aiheessa esimerkissä nimenä on *Julia Funderburk*, ja on määritetty varasto *61*. (USMF-demotietojen avulla voit kirjautua sisään tänä työkäyttäjänä antamalla tunnukseksi *61* ja salasanaksi *1*.)
+1. Kirjaudu sisään Warehouse Management -mobiilisovellukseen aiemmin tässä artikkelissa kohdassa [Skenaarioiden esittelytietojen valmistelu](#prepare-demo-data) määritettynä työkäyttäjänä. Tässä artikkelissa esimerkissä nimenä on *Julia Funderburk*, ja on määritetty varasto *61*. (USMF-demotietojen avulla voit kirjautua sisään tänä työkäyttäjänä antamalla tunnukseksi *61* ja salasanaksi *1*.)
 1. Valitse päävalikossa **Varasto**.
 1. Valitse **Varasto**-valikosta **Ohjattu inventointi**.
 1. Valitse **Määrä**-kenttä, anna arvoksi *9* numeronäppäimistöllä ja valitse sitten **OK** (valintamerkkipainike).
@@ -227,7 +227,7 @@ Ennen kuin sokkoinventointi voi tapahtua, sinun on luotava joitakin töitä. Luo
 
 Noudata näitä ohjeita, kun haluat tehdä inventointityön luomisen jälkeen työn Warehouse Management -mobiilisovelluksessa.
 
-1. Kirjaudu sisään Warehouse Management -mobiilisovellukseen aiemmin tässä ohjeaiheessa kohdassa [Skenaarioiden esittelytietojen valmistelu](#prepare-demo-data) määritettynä työkäyttäjänä. Tässä aiheessa esimerkissä nimenä on *Julia Funderburk*, ja on määritetty varasto *61*. (USMF-demotietojen avulla voit kirjautua sisään tänä työkäyttäjänä antamalla tunnukseksi *61* ja salasanaksi *1*.)
+1. Kirjaudu sisään Warehouse Management -mobiilisovellukseen aiemmin tässä artikkelissa kohdassa [Skenaarioiden esittelytietojen valmistelu](#prepare-demo-data) määritettynä työkäyttäjänä. Tässä artikkelissa esimerkissä nimenä on *Julia Funderburk*, ja on määritetty varasto *61*. (USMF-demotietojen avulla voit kirjautua sisään tänä työkäyttäjänä antamalla tunnukseksi *61* ja salasanaksi *1*.)
 1. Valitse päävalikossa **Varasto**.
 1. Valitse **Varasto**-valikosta **Sokkoinventointi**.
 1. Valitse **Vyöhyketunnus** -kenttä, kirjoita *BULK06* ja valitse sitten **OK** (valintamerkkipainike).
@@ -259,7 +259,7 @@ Käytettävissä olevan varaston tietue ilmaisee, että nimikkeellä *L0101* on 
 
 Noudata näitä ohjeita, kun haluat tehdä inventoinnin Warehouse Management -mobiilisovelluksessa.
 
-1. Kirjaudu sisään Warehouse Management -mobiilisovellukseen aiemmin tässä ohjeaiheessa kohdassa [Skenaarioiden esittelytietojen valmistelu](#prepare-demo-data) määritettynä työkäyttäjänä. Tässä aiheessa esimerkissä nimenä on *Julia Funderburk*, ja on määritetty varasto *61*. (USMF-demotietojen avulla voit kirjautua sisään tänä työkäyttäjänä antamalla tunnukseksi *61* ja salasanaksi *1*.)
+1. Kirjaudu sisään Warehouse Management -mobiilisovellukseen aiemmin tässä artikkelissa kohdassa [Skenaarioiden esittelytietojen valmistelu](#prepare-demo-data) määritettynä työkäyttäjänä. Tässä artikkelissa esimerkissä nimenä on *Julia Funderburk*, ja on määritetty varasto *61*. (USMF-demotietojen avulla voit kirjautua sisään tänä työkäyttäjänä antamalla tunnukseksi *61* ja salasanaksi *1*.)
 1. Valitse päävalikossa **Varasto**.
 1. Valitse **Varasto**-valikosta **Pisteinventointi**.
 1. Valitse **Sijainti**-kenttä, kirjoita *01A02R2S1B* ja valitse sitten **OK** (valintamerkkipainike).

@@ -1,6 +1,6 @@
 ---
 title: Jälkikustannuslaskenta
-description: Tässä aiheessa esitellään jälkikustannuslaskennan käsite, jota käytetään Lean-valmistuksessa.
+description: Tässä artikkelissa esitellään jälkikustannuslaskennan käsite, jota käytetään Lean-valmistuksessa.
 author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: a5b0ac26a1f6b209be7c9d52aaad9bb689a8a656
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 33cb7bf70d8867ccd067144e661c3bdf1c0b778d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674023"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906092"
 ---
 # <a name="backflush-costing"></a>Jälkikustannuslaskenta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa esitellään jälkikustannuslaskennan käsite, jota käytetään Lean-valmistuksessa. 
+Tässä artikkelissa esitellään jälkikustannuslaskennan käsite, jota käytetään Lean-valmistuksessa. 
 
 Lean-valmistuksen kustannuslaskenta mahdollistaa jälkikustannuslaskentana tunnetun kustannuskertymämenetelmän käytön tuotantovirrassa. Jälkikustannuslaskentamenetelmässä kulutettavat suorat materiaalit kerätään tuotantovirran keskeneräisten töiden (KET) kustannustilille. Menetelmässä käytetään standardikustannusten varastomalliryhmää. Tuotantovirrasta vastaanotetut tuotteet vähennetään KET-tililtä niiden vakiokustannuksen mukaisesti. Tärkein ero jälkikustannuslaskennan ja vakiokustannuksen välillä on, että jälkikustannuslaskennassa variansseja ei lasketa kanban- tai lopputuotekohtaisesti. Sen sijaan varianssit lasketaan tuotantovirtakohtaisesti tietyllä aikavälillä. Tämä menetelmä esittelee todellisen Lean-konseptin materiaalikulutuksen raportointiin. Kohdistettuja materiaalin poimintamääriä ei raportoida kanbaniin tai tuotantotilaukseen. Sen sijaan kokonaiset erät tai materiaalin käsittely-yksiköt vaiheistetaan tuotantovirtaan. Kun erät tai materiaalin käsittely-yksiköt rekisteröidään tyhjiksi, ne ilmoitetaan kulutetuiksi. Erityiskulutusta voidaan käyttää, riippuen [tuotantovirran konfiguraatiosta](../production-control/lean-manufacturing-modeling-lean-organization.md). Jotta erityiskulutusta voisi käyttää, organisaatioiden on sallittava materiaalin katoaminen tuotantovirran keskeneräisistä töistä. Ajoittainen jälkikustannuslaskenta määrittää keskeneräisten töiden voimassa olevan arvon kauden loppuun. Tämä määritys perustuu kanbanin materiaalin käsittely-yksiköihin ja kanban-työn tilaan. Voimassa olevien arvojen ja todellisten KET-arvojen väliset erot kustannusryhmittäin ja nimikkeittäin lasketaan ja näytetään variansseina.
 

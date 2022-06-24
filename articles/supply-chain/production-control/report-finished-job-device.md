@@ -1,6 +1,6 @@
 ---
-title: Ilmoita valmiiksi työkorttilaitteesta
-description: Tässä aiheessa kuvataan, miten järjestelmä konfiguroidaan niin, että työkorttilaitteen käyttäjät voivat raportoida valmiit tuotteet tuotantotilauksesta varastoon.
+title: Ilmoittaminen valmiiksi työkorttilaitteesta
+description: Tässä artikkelissa kuvataan, miten järjestelmä konfiguroidaan niin, että työkorttilaitteen käyttäjät voivat raportoida valmiit tuotteet tuotantotilauksesta varastoon.
 author: johanhoffmann
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 67fa97c938f091c23a41ddd5aaf34a32c5a13c93
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102807"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857370"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ilmoita valmiiksi työkorttilaitteesta
 
 [!include [banner](../includes/banner.md)]
 
-Työntekijät käyttävät työkorttilaitteen **Raportin edistyminen** -sivua tuotantotyötä varten valmistuneiden määrien raportoinnissa. Tässä ohjeaiheessa kuvataan, miten määritetään erilaisia asetuksia, jotka määrittävät, miten työntekijät voivat tehdä ilmoituksen valmistumisesta tämän sivun avulla. Ohjeaihe sisältää myös tietoja seuraavista toiminnoista. Vaihtoehtoja ovat:
+Työntekijät käyttävät työkorttilaitteen **Raportin edistyminen** -sivua tuotantotyötä varten valmistuneiden määrien raportoinnissa. Tässä artikkelissa kuvataan, miten määritetään erilaisia asetuksia, jotka määrittävät, miten työntekijät voivat tehdä ilmoituksen valmistumisesta tämän sivun avulla. Ohjeaihe sisältää myös tietoja seuraavista toiminnoista. Vaihtoehtoja ovat:
 
 - Määrittää, lisätäänkö valmiiksi ilmoitetut määrät varastoon ja miten ne lisätään.
 - Määrittää, luodaanko eränumerot, niiden luontitavan sekä määrittää, käytetäänkö niitä valmiiksi-ilmoittamisen yhteydessä.

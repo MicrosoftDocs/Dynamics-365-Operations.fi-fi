@@ -1,6 +1,6 @@
 ---
-title: Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
-description: Tässä ohjeaiheessa kerrotaan, paikallisia reunapalvelujen scale uniteja valmistellaan käyttämällä mukautettua laitteistoa ja käyttöönottoa, joka perustuu paikallisiin liiketoimintatietoihin.
+title: Ota Edge Scale Unitit käyttöön mukautetussa laitteistossa LBD:n avulla
+description: Tässä artikkelissa kerrotaan, paikallisia reunapalvelujen scale uniteja valmistellaan käyttämällä mukautettua laitteistoa ja käyttöönottoa, joka perustuu paikallisiin liiketoimintatietoihin.
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674083"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882747"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Ota reunan asteikon yksiköt käyttöön mukautetussa laitteistossa LBD:n avulla
 
@@ -27,7 +27,7 @@ Reunan asteen yksiköillä on tärkeä rooli toimitusketjun hallinnan hajautetus
 
 Reunapalvelujen scale unitit voidaan ottaa käyttöön luomalla paikallisen yritystiedon (LBD) [paikallinen ympäristö](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) ja määrittämällä se sitten toimimaan scale unitina toimitusketjun hallinnan hajautetussa hybriditopologiassa. Tämä saavutetaan yhdistämällä paikallinen LBD-ympäristö pilvessä toimivaan Supply Chain Management -ympäristöön, joka on määritetty toimimaan keskuksena.  
 
-Tässä aiheessa kuvataan, miten paikallinen LBD-ympäristö määritetään reunapalvelujen scale unitiksi ja yhdistetään sitten keskukseen.
+Tässä artikkelissa kuvataan, miten paikallinen LBD-ympäristö määritetään reunapalvelujen scale unitiksi ja yhdistetään sitten keskukseen.
 
 ## <a name="infrastructure-considerations"></a>Infrastruktuuriin liittyvät seikat
 
@@ -44,21 +44,21 @@ Tässä on käyttöönottovaiheiden yleiskatsaus.
 
 1. **Määritä ja ota käyttöön LBD-ympäristö *tyhjällä* tietokannalla.**
 
-    Käytä LCS:ää LBD-ympäristön käyttöönottoon viimeisimmällä topologialla ja tyhjällä tietokannalla. Lisätietoja on myöhemmin tämän aiheen kohdassa [LBD-ympäristön määritys ja käyttöönotto tyhjällä tietokannalla](#set-up-deploy). Keskus- ja scale unit -ympäristössä on käytettävä vähintään Supply Chain Managementin versiota 10.0.21.
+    Käytä LCS:ää LBD-ympäristön käyttöönottoon viimeisimmällä topologialla ja tyhjällä tietokannalla. Lisätietoja on myöhemmin tämän artikkelin kohdassa [LBD-ympäristön määritys ja käyttöönotto tyhjällä tietokannalla](#set-up-deploy). Keskus- ja scale unit -ympäristössä on käytettävä vähintään Supply Chain Managementin versiota 10.0.21.
 
 1. **Lataa kohdepaketit LCS:n LBD-projektiresursseihin**
 
-    Valmistele sovellus-, ympäristö- ja mukautuspaketit, joita käytät keskuksessa ja reunapalvelujen scale unitissa. Lisätietoja on myöhemmin tämän aiheen osassa [Kohdepakettien lataaminen LBD-projektiresursseihin LCS:ssä](#upload-packages).
+    Valmistele sovellus-, ympäristö- ja mukautuspaketit, joita käytät keskuksessa ja reunapalvelujen scale unitissa. Lisätietoja on myöhemmin tämän artikkelin osassa [Kohdepakettien lataaminen LBD-projektiresursseihin LCS:ssä](#upload-packages).
 
 1. **Anna kohdepaketit LBD-ympäristön käyttöön.**
 
-    Tällä vaiheella varmistetaan, että sama koontiversio ja samat mukautukset otetaan käyttöön keskuksessa ja sijainnissa. Lisätietoja on myöhemmin tämän aiheen osassa [Anna kohdepaketit LBD-ympäristön käyttöön](#service-target-packages).
+    Tällä vaiheella varmistetaan, että sama koontiversio ja samat mukautukset otetaan käyttöön keskuksessa ja sijainnissa. Lisätietoja on myöhemmin tämän artikkelin osassa [Anna kohdepaketit LBD-ympäristön käyttöön](#service-target-packages).
 
 1. **Suorita scale unitin määritys ja työkuorman kohdistus.**
 
-    Lisätietoja on myöhemmin tämän aiheen osassa [Kohdista LBD:n reunapalvelujen scale unit keskukseen](#assign-edge-to-hub).
+    Lisätietoja on myöhemmin tämän artikkelin osassa [Kohdista LBD:n reunapalvelujen scale unit keskukseen](#assign-edge-to-hub).
 
-Loput tämän ohjeaiheen osat sisältävät tarkempia tietoja näiden vaiheiden suorittamisesta.
+Loput tämän artikkelin osat sisältävät tarkempia tietoja näiden vaiheiden suorittamisesta.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Määritä ja ota käyttöön LBD-ympäristö tyhjällä tietokannalla
 
@@ -67,7 +67,7 @@ Tämä vaihe luo toimivan LBD-ympäristön. Ympäristöllä ei kuitenkaan vältt
 1. Noudata kohdan [Paikallisten ympäristöjen määrittäminen ja käyttöönotto (Platform update 41 ja uudemmat)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) ohjeita. Keskus- ja scale unit -ympäristössä on käytettävä vähintään Supply Chain Managementin versiota 10.0.21. Lisäksi infrastruktuurikomentosarjoissa on oltava käytössä vähintään versio 2.12.0. 
 
     > [!IMPORTANT]
-    > Lue tämän osan loppuosa, **ennen** kuin suoritat kyseisen aiheen vaiheet.
+    > Lue tämän osan loppuosa, **ennen** kuin suoritat kyseisen artikkelin vaiheet.
 
 1. Suorita seuraava komentosarja, ennen kuin kuvaat määrityksesi tiedostossa infrastructure\\ConfigTemplate.xml:
 

@@ -1,6 +1,6 @@
 ---
 title: Tarkan hinnan ja alennuksen laskemisen viive suorituskyvyn parantamiseksi
-description: Tässä aiheessa kuvaillaan viivytetty hinnan laskemisen toiminto, joka on käytössä Microsoft Dynamics 365 Commerce -myyntipisteessä (POS) ja -puhelinkeskuksessa.
+description: Tässä artikkelissa kuvaillaan viivytetty hinnan laskemisen toiminto, joka on käytössä Microsoft Dynamics 365 Commerce -myyntipisteessä (POS) ja -puhelinkeskuksessa.
 author: boycezhu
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 8c4264c3a4c71e6aab0e1ef8d7d8cfffad065a46
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 6926c288a91dbe66b6ffc2e6c06f866d3ebd7652
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488360"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845894"
 ---
 # <a name="delay-exact-price-and-discount-calculation-for-improved-performance"></a>Tarkan hinnan ja alennuksen laskemisen viive suorituskyvyn parantamiseksi
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvaillaan viivytetty hinnan laskemisen toiminto, joka on käytössä Microsoft Dynamics 365 Commerce -myyntipisteessä (POS) ja -puhelinkeskuksessa.
+Tässä artikkelissa kuvaillaan viivytetty hinnan laskemisen toiminto, joka on käytössä Microsoft Dynamics 365 Commerce -myyntipisteessä (POS) ja -puhelinkeskuksessa.
 
 Dynamics 365 Commerce tukee monirivialennusten luomista, jota käytetään, kun myyntitilauksen tai myyntitarjouksen useita myyntirivejä yhdistetään. Alennuksiin kuuluvat yhdistelmä-, rajan ylittyessä- ja määräalennukset.
 

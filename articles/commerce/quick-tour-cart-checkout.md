@@ -1,6 +1,6 @@
 ---
 title: Ostoskorin ja maksusivun yleiskatsaus
-description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
+description: Tässä artikkelissa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e911a1be1f06fcb3c2af08bab835a2b1ab5590f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982965"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853764"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Ostoskorin ja maksusivun yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
+Tässä artikkelissa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
 
 Sähköisen kaupankäynnin sivuston ostoskorisivulla näkyvät kaikki nimikkeet, jotka asiakas on lisännyt koriin. Ostoskorisivu luodaan ostoskorimoduulin avulla. Ostoskorimoduuli on säilö, joka isännöi kaikkia niitä moduuleja, joita tarvitaan näytettäessä ostoskorin nimikkeet. Ostoskorimoduuli voi käyttää myös muita moduuleja tilauksen yhteenvedon ja mahdollisten asiakastilausta koskevien tarjouskoodien näyttämisessä.
 

@@ -1,6 +1,6 @@
 ---
 title: Myyntitilausten synkronointi suoraan Salesin ja Supply Chain Managementin välillä
-description: Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin suoraan Dynamics 365 Salesin ja Dynamics 365 Supply Chain Managementin välillä.
+description: Artikkelissa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin suoraan Dynamics 365 Salesin ja Dynamics 365 Supply Chain Managementin välillä.
 author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 63a9be9bedabe1f15ad8db583151aa7fa480473b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854149"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Myyntitilausten synkronointi suoraan Salesin ja Supply Chain Managementin välillä
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061515"
 
 
 
-Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin suoraan Dynamics 365 Salesin ja Dynamics 365 Supply Chain Managementin välillä.
+Artikkelissa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin suoraan Dynamics 365 Salesin ja Dynamics 365 Supply Chain Managementin välillä.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
@@ -203,7 +203,7 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 [![Myyntitilausten tietojen integroinnin mallin yhdistämismääritys (Salesista Supply Chain Managementiin) – suora: OrderLine](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Prospektista käteiseksi](prospect-to-cash.md)
 

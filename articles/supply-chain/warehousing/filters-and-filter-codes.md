@@ -1,6 +1,6 @@
 ---
 title: Varastotapahtumien tuotesuodattimien määrittäminen
-description: Tässä aiheessa käsitellään tuotesuodattimien ja suodatinkoodien määrittämistä luokittelemaan varastonimikkeitä varastossa. Suodattimilla voidaan myös määrittää asiakkaat, jotka voivat tilata tietyn nimikkeen, ja määrittää nimikkeet, joita voidaan ostaa tietyltä toimittajalta.
+description: Tässä artikkelissa käsitellään tuotesuodattimien ja suodatinkoodien määrittämistä luokittelemaan varastonimikkeitä varastossa. Suodattimilla voidaan myös määrittää asiakkaat, jotka voivat tilata tietyn nimikkeen, ja määrittää nimikkeet, joita voidaan ostaa tietyltä toimittajalta.
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850435"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Varastotapahtumien tuotesuodattimien määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään tuotesuodattimien ja suodatinkoodien määrittämistä luokittelemaan varastonimikkeitä varastossa. Suodattimilla voidaan myös määrittää asiakkaat, jotka voivat tilata tietyn nimikkeen, ja määrittää nimikkeet, joita voidaan ostaa tietyltä toimittajalta.
+Tässä artikkelissa käsitellään tuotesuodattimien ja suodatinkoodien määrittämistä luokittelemaan varastonimikkeitä varastossa. Suodattimilla voidaan myös määrittää asiakkaat, jotka voivat tilata tietyn nimikkeen, ja määrittää nimikkeet, joita voidaan ostaa tietyltä toimittajalta.
 
 Lisäksi voidaan määrittää ja käyttää tuotesuodattimia varastonimikkeiden automaattiseen järjestämiseen ja suodatettujen nimikkeiden yhdistämiseen suodatusryhmiksi. Suodattimien avulla nimikkeitä voidaan sijoittaa luokkiin käsittely-, osto- ja myyntiprosesseja varten. Nimikkeitä halutaan ehkä ryhmitellä tai erottaa toisistaan silloin, kun niiden käsittelytapa perustuu painoon tai käsittelyrajoituksiin. Lisäksi voidaan määrittää asiakkaat tai toimittajat, joille nimike voidaan myydä tai joilta se voidaan ostaa.
 
@@ -48,7 +48,7 @@ Tuotesuodattimessa voi olla enintään 10 **Suodattimen otsikko** -ominaisuutta,
 
     ![Tuotesuodattimen määrittäminen.](media/Product_Filters10.png "Tuotesuodattimen määrittäminen")
 
-1. Anna koodi nimi **Kuvaus**-kentässä. Esimerkiksi *Koodi 2* voi viitata toimittajiin. Tämän jälkeen tietylle toimittajalle tai toimittajaryhmällä voidaan luoda tuotesuodatin. Lisätietoja on jäljempänä tämän aiheen kohdassa [Toimittajan suodatinkoodien määrittäminen](#vendor-product-filters).
+1. Anna koodi nimi **Kuvaus**-kentässä. Esimerkiksi *Koodi 2* voi viitata toimittajiin. Tämän jälkeen tietylle toimittajalle tai toimittajaryhmällä voidaan luoda tuotesuodatin. Lisätietoja on jäljempänä tämän artikkelin kohdassa [Toimittajan suodatinkoodien määrittäminen](#vendor-product-filters).
 
     ![Tuotesuodattimien joukko.](media/Product_Filters.png "Tuotesuodattimien joukko")
 

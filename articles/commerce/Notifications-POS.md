@@ -1,6 +1,6 @@
 ---
 title: Tilausilmoitusten näyttäminen myyntipisteessä (POS)
-description: Tässä ohjeaiheessa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja ilmoituskehikkoa.
+description: Tässä artikkelissa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja ilmoituskehikkoa.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714135"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853977"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Tilausilmoitusten näyttäminen myyntipisteessä (POS)
 
@@ -65,10 +65,10 @@ Sekä tilauksen täyttämiselle että peruuttamiselle, kun prosessi poimii uusia
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Live-sisällön ottaminen käyttöön POS-painikkeilla
 
-POS-painikkeissa voi nyt näkyä lukua, joiden avulla työntekijöiden on helppo päätellä, mitkä tehtävät on tehtävä heti. Jos haluat, että tämä luku näkyy POS-painikkeessa, aiemmin tässä ohjeaiheessa selityt ilmoitusasetukset on tehtävä. (Toiminnon ilmoitukset on siis otettava käyttöön, ilmoitusväli määritettävä ja työntekijän myyntipisteen käyttöoikeusryhmä on päivitettävä.) Lisäksi on sinun on avattava painikeruudukon suunnittelutoiminto, tarkasteltava painikkeen ominaisuuksia ja valittava **Ota live-sisältö käyttöön** -valintaruutu. Voit valita **Sisällön tasaus** -kentässä, näkyykö luku painikkeen oikeassa yläkulmassa (**Ylös oikealle**) vai keskellä (**Keskelle**).
+POS-painikkeissa voi nyt näkyä lukua, joiden avulla työntekijöiden on helppo päätellä, mitkä tehtävät on tehtävä heti. Jos haluat, että tämä luku näkyy POS-painikkeessa, aiemmin tässä artikkelissa selitetyt ilmoitusasetukset on tehtävä. (Toiminnon ilmoitukset on siis otettava käyttöön, ilmoitusväli määritettävä ja työntekijän myyntipisteen käyttöoikeusryhmä on päivitettävä.) Lisäksi on sinun on avattava painikeruudukon suunnittelutoiminto, tarkasteltava painikkeen ominaisuuksia ja valittava **Ota live-sisältö käyttöön** -valintaruutu. Voit valita **Sisällön tasaus** -kentässä, näkyykö luku painikkeen oikeassa yläkulmassa (**Ylös oikealle**) vai keskellä (**Keskelle**).
 
 > [!NOTE]
-> Live-sisältö voidaan ottaa toiminnoille käyttöön vain, jos **Ota ilmoitukset käyttöön** -valintaruutu on valittu niille **POS-toiminnot**-sivulla aiemmin tässä ohjeaiheessa kuvatulla tavalla.
+> Live-sisältö voidaan ottaa toiminnoille käyttöön vain, jos **Ota ilmoitukset käyttöön** -valintaruutu on valittu niille **POS-toiminnot**-sivulla aiemmin tässä artikkelissa kuvatulla tavalla.
 
 Seuraavassa kuvassa on live-sisällön asetukset painikeruudukon suunnittelutoiminnossa.
 

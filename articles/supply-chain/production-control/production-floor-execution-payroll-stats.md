@@ -1,6 +1,6 @@
 ---
-title: Lomasaldojen näyttäminen tuotannon käyttöliittymässä
-description: Tämä ohjeaihe sisältää esimerkkiskenaarion, jossa esitetään, miten Microsoft Dynamics 365 Supply Chain Management määritetään antamaan työntekijöille palkanlaskennan tilastotietojen avulla yhteenvedon nykyisen vuoden lomasaldosta.
+title: Näytä lomasaldot tuotannon käyttöliittymässä
+description: Tämä artikkeli sisältää esimerkkiskenaarion, jossa esitetään, miten Microsoft Dynamics 365 Supply Chain Management määritetään antamaan työntekijöille palkanlaskennan tilastotietojen avulla yhteenvedon nykyisen vuoden lomasaldosta.
 author: johanhoffmann
 ms.date: 04/22/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.XX
-ms.openlocfilehash: a97858c72b0be50609cee552bd0635e2d68ea478
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2a6b6f52bfa7539b7c9bb5841536b0d564d0274c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852270"
 ---
-# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Lomasaldojen näyttäminen tuotannon käyttöliittymässä
+# <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Näytä lomasaldot tuotannon käyttöliittymässä
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää esimerkkiskenaarion, jossa esitetään, miten Microsoft Dynamics 365 Supply Chain Management määritetään antamaan kullekin työntekijälle palkanlaskennan tilastotietojen avulla yhteenvedon nykyisen vuoden lomasaldosta. Työntekijät voivat nähdä lomasaldonsa tuotannon käyttöliittymän **Päivän tehtävät** -valintaikkunassa.
+Tämä artikkeli sisältää esimerkkiskenaarion, jossa esitetään, miten Microsoft Dynamics 365 Supply Chain Management määritetään antamaan kullekin työntekijälle palkanlaskennan tilastotietojen avulla yhteenvedon nykyisen vuoden lomasaldosta. Työntekijät voivat nähdä lomasaldonsa tuotannon käyttöliittymän **Päivän tehtävät** -valintaikkunassa.
 
 Tässä skenaariossa käytetään Tanskan lomalainsäädäntöä, jossa lomavuosi ulottuu välille 1.9. - 31.8. Tässä skenaariossa yritys on palkannut uuden työntekijän ja myöntää työntekijälle 10 lomapäivän saldon lomavuoden loppuun.
 

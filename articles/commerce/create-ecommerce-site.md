@@ -1,6 +1,6 @@
 ---
 title: Sähköisen kaupankäynnin sivuston luominen
-description: Tämä ohjeaihe sisältää ohjeet ja tiedot, jotka tarvitaan uuden sähköisen kaupankäynnin sivun luomiseen Dynamics 365 Commerce sivustonmuodostimessa.
+description: Tämä artikkeli sisältää ohjeet ja tiedot, jotka tarvitaan uuden sähköisen kaupankäynnin sivun luomiseen Dynamics 365 Commerce sivustonmuodostimessa.
 author: bicyclingfool
 ms.date: 03/10/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: b4ac8d1b930c89bf330a2332c0b510dadb92e51f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402772"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855766"
 ---
 # <a name="create-an-e-commerce-site"></a>Sähköisen kaupankäynnin sivuston luominen
 
 [!include [banner](includes/banner.md)]
 
-Tämä ohjeaihe sisältää ohjeet ja tiedot, jotka tarvitaan uuden sähköisen kaupankäynnin sivun luomiseen Dynamics 365 Commerce sivustonmuodostimessa.
+Tämä artikkeli sisältää ohjeet ja tiedot, jotka tarvitaan uuden sähköisen kaupankäynnin sivun luomiseen Dynamics 365 Commerce sivustonmuodostimessa.
 
 Kun lisensoit Dynamics 365 Commercen ominaisuuksia, sivuston luontiohjelmalle valmistellaan aloitussivusto, jota voit käyttää oman sivustosi pohjana. Jos kuitenkin haluat tehdä kaiken alusta tai jos haluat luoda toisen sivuston, sinun on luotava uusi sivusto sivuston muokkausympäristössä. 
 

@@ -1,6 +1,6 @@
 ---
-title: Resurssien palvelutasot
-description: Tässä ohjeaiheessa kerrotaan resurssien palvelutasoista resurssien hallinnassa.
+title: Resurssin palvelutasot
+description: Tässä artikkelissa kerrotaan resurssien palvelutasoista resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4f7daa10931ce406a5d2bdbbc1dced067e3de5065cdb61cce369d617709d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f7429b30253f540925e67ff9239667a0a404f26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908682"
 ---
-# <a name="asset-service-levels"></a>Resurssien palvelutasot
+# <a name="asset-service-levels"></a>Resurssin palvelutasot
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Tässä ohjeaiheessa kerrotaan resurssien palvelutasoista resurssien hallinnassa. Resurssien palvelutasot liittyvät varoihin, ja ne siirretään ylläpitopyyntöihin ja työtilauksiin. Niitä käytetään työtilausten prioriteetin laskemiseen työtilausten ajoituksen aikana. Resurssien palvelutasoja voidaan muuttaa, jos muutoksia tarvitaan.
+Tässä artikkelissa kerrotaan resurssien palvelutasoista resurssien hallinnassa. Resurssien palvelutasot liittyvät varoihin, ja ne siirretään ylläpitopyyntöihin ja työtilauksiin. Niitä käytetään työtilausten prioriteetin laskemiseen työtilausten ajoituksen aikana. Resurssien palvelutasoja voidaan muuttaa, jos muutoksia tarvitaan.
 
 Lisätietoja asetuksista, jotka liittyvät työtilausten ajoituksen luokituspisteiden laskentaan, on kohdassa [Resurssien hallinnan parametrit.](../setup-for-objects/enterprise-asset-management-parameters.md) Vähintään yksi oletustietue on määritettävä resurssien palvelutasolle. Tätä oletustietuetta käytetään, jos työtilauksen ajoituksen aikana ei löydy muuta vastaavuutta.
 

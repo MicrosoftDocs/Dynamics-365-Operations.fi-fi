@@ -1,6 +1,6 @@
 ---
-title: Käytä mittayksikön asetuksia
-description: Tässä ohjeaiheessa käsitellään mittayksikön asetuksia ja kuvataan, miten niitä käytetään Microsoft Dynamics 365 Commerce -ohjelmassa.
+title: Mittayksikön asetusten käyttäminen
+description: Tässä artikkelissa käsitellään mittayksikön asetuksia ja kuvataan, miten niitä käytetään Microsoft Dynamics 365 Commerce -ohjelmassa.
 author: anupamar-ms
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7fe5cf6b57a8897a0bd541146cb1ad17b496d5633c0a1df9d58b2a4fbc868139
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca95bd31af8f244f60f12120bc6df121f48cc7ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884812"
 ---
-# <a name="apply-unit-of-measure-settings"></a>Käytä mittayksikön asetuksia
+# <a name="apply-unit-of-measure-settings"></a>Mittayksikön asetusten käyttäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään mittayksikön asetuksia ja kuvataan, miten niitä käytetään Microsoft Dynamics 365 Commerce -ohjelmassa.
+Tässä artikkelissa käsitellään mittayksikön asetuksia ja kuvataan, miten niitä käytetään Microsoft Dynamics 365 Commerce -ohjelmassa.
 
 Tuote voidaan myydä eri yksikköinä, esimerkiksi "kappale", "pari" ja "tusina". Commerce-pääkonttorisovelluksessa tuotteen myyntimittayksikkö voidaan määrittää ja se voidaan näyttää sähköisenä kauppapaikkana. Jos esimerkiksi jälleenmyyjä myy tuotteen sekä yksittäin että tusinana, käytettävissä olevat mittayksiköt voidaan näyttää yhdessä muiden tuotetietojen kanssa.
 

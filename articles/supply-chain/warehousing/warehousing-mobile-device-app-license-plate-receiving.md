@@ -1,6 +1,6 @@
 ---
-title: Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksella
-description: Tässä ohjeaiheessa selitetään, kuinka varastonhallinnan mobiilisovellus määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+title: Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
+description: Tässä artikkelissa selitetään, kuinka varastonhallinnan mobiilisovellus määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103060"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906997"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Rekisterikilven vastaanotto varastonhallinnan mobiilisovelluksella
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa selitetään, kuinka varastonhallinnan mobiilisovellus määritetään niin ,että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+Tässä artikkelissa selitetään, kuinka varastonhallinnan mobiilisovellus määritetään niin ,että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 
 Tämän toiminnon avulla voit nopeasti kirjata saapuvaa varastoa koskevan vastaanoton, joka liittyy ennakkoilmoitukseen (ASN). Järjestelmä luo automaattisesti ASN-arvon, kun siirtotilauksen lähetys suoritetaan varastoinnin hallintaprosessien avulla. Ostotilausprosessin aikana ASN voidaan tallentaa manuaalisesti, tai se voidaan tuoda automaattisesti käyttämällä saapuvan ASN-tietoyksikkö prosessia.
 

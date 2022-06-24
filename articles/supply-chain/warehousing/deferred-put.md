@@ -1,6 +1,6 @@
 ---
 title: Varastotyön lykätty käsittely
-description: Tässä ohjeaiheessa käsitellään toimintoja, joiden avulla varastotyön lykätty käsittely on mahdollista Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa käsitellään toimintoja, joiden avulla varastotyön lykätty käsittely on mahdollista Dynamics 365 Supply Chain Managementissa.
 author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f4eeea0805c2cecedbd6b42926191ab02022df9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577861"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899292"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Varastotyön lykätty käsittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan toimintoja, joiden avulla varastotyön lykätty käsittely on mahdollista Dynamics 365 Supply Chain Managementissa.
+Tässä artikkelissa kuvataan toimintoja, joiden avulla varastotyön lykätty käsittely on mahdollista Dynamics 365 Supply Chain Managementissa.
 
 Lykätyn käsittely toiminnon avulla varastotyöntekijät jatkavat työskentelyä, kun hyllytystoimintoa käsitellään taustalla. Lykätty käsittely on kätevää, kun useita työrivejä on käsiteltävä ja työntekijä voi antaa työn käsittelyn toimia asynkronisesti. Se on hyödyllinen myös silloin, kun palvelimella voi olla ad-hoc-tai suunnittelemattomia lisäyksiä käsittelyaikaan, ja lisääntynyt käsittelyaika saattaa vaikuttaa käyttäjän tuottavuuteen.
 

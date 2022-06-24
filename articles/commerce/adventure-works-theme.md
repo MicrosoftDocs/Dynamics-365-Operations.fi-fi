@@ -1,6 +1,6 @@
 ---
 title: Adventure Works -teeman yleiskatsaus
-description: Tässä aiheessa on yleiskatsaus Adventure Works -teemasta ja sen käyttämisestä sivuston sivuilla Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa on yleiskatsaus Adventure Works -teemasta ja sen käyttämisestä sivuston sivuilla Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 ms.date: 12/03/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 34ea24e2d81a69d720973455492f9e05ed34dd81
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4f13d6c1c4b0e2764c22dc3d7311c726fac7989d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983691"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874984"
 ---
 # <a name="adventure-works-theme-overview"></a>Adventure Works -teeman yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on yleiskatsaus Adventure Works -teemasta ja sen käyttämisestä sivuston sivuilla Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa on yleiskatsaus Adventure Works -teemasta ja sen käyttämisestä sivuston sivuilla Microsoft Dynamics 365 Commercessa.
 
 Dynamics 365 Commerce sisältää sähköisen kaupankäynnin teeman, jonka nimi on Adventure Works. Adventure Works -teema esittelee urheilutuotteita ja vapaa-ajan tuotteita, ja se on optimoitu monipuolista ja paranneltua tarinoidenkerrontaa varten. Se tarjoaa modernin ulkoasun, uusia asetteluita ja animaatiotehosteita, joiden avulla voit luoda sähköisen kaupan asiakkaille houkuttelevan ja mukaansatempaavan verkko-ostoskokemuksen.
 

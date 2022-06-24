@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Commercen sähköisen kaupankäynnin lokalisointiopas
-description: Tässä aiheessa kuvataan, kuinka Microsoft Dynamics 365 Commercem sähköinen kauppasivusto voidaan lokalisoida eri kielille ja määrittää sivusto niin, että se tukee useita kanavia.
+description: Tässä artikkelissa kuvataan, kuinka Microsoft Dynamics 365 Commercen sähköinen kauppasivusto voidaan lokalisoida eri kielille ja määrittää sivusto niin, että se tukee useita kanavia.
 author: bicyclingfool
 ms.date: 04/29/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1e9d91036ceeb9161dc8ee903532b2cf3ca435e2
-ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
+ms.openlocfilehash: 955a85340f6d35f1e203d74920d07b5dc6ff8654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873381"
 ---
 # <a name="dynamics-365-commerce-e-commerce-localization-guide"></a>Dynamics 365 Commercen sähköisen kaupankäynnin lokalisointiopas
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka Microsoft Dynamics 365 Commercen sähköinen kaupankäyntisivusto voidaan lokalisoida useille kielille ja määrittää sivusto niin, että se tukee useita kanavia. Lisäksi se sisältää prosessiin liittyvät käsitteet ja termit.
+Tässä artikkelissa kuvataan, kuinka Microsoft Dynamics 365 Commercen sähköinen kaupankäyntisivusto voidaan lokalisoida useille kielille ja määrittää sivusto niin, että se tukee useita kanavia. Lisäksi se sisältää prosessiin liittyvät käsitteet ja termit.
 
 Dynamics 365 Commercen sähköisen kaupan toiminnot on suunniteltu siten, että ne mahdollistavat verkkokokemuksia, jotka voidaan räätälöidä tiettyihin maihin/alueisiin ja kieliin, mutta joiden avulla malleja, sivuja, sisältöä ja mediaa voidaan käyttää mahdollisimman paljon uudelleen. Voit myös luoda perussivuston ja laajentaa sen jälkeen uusille markkina-alueille lisäämällä tuen lisämaille/-alueille ja -kielille ajan mittaan.
 
@@ -79,7 +79,7 @@ Tässä konfiguraatiossa asiakkaat ja liikekumppanit yleensä kehittävät kaikk
 ![Dynamics 365 Commercen käyttövalmis sähköisen kaupankäynnin sivusto](media/loc-guide-1.png)
 
 > [!NOTE]
-> Fabrikamin esittelysivuston voi konfiguroida lisäkieltä varten, jotta sisällön kehitystä voidaan tehdä tällä kielellä. Lisätietoja uuden kielen lisäämisestä sivustoon ja kanavaan on jäljempänä tässä ohjeaiheessa [Määritä sivustolle lisäkieli](#configure-an-additional-language-for-your-site) -kohdassa.
+> Fabrikamin esittelysivuston voi konfiguroida lisäkieltä varten, jotta sisällön kehitystä voidaan tehdä tällä kielellä. Lisätietoja uuden kielen lisäämisestä sivustoon ja kanavaan on jäljempänä tässä artikkelissa [Määritä sivustolle lisäkieli](#configure-an-additional-language-for-your-site) -kohdassa.
 
 Dynamics 365 Commercen sähköisen kaupankäynnin sivustojen sisällönhallintajärjestelmä (CMS) ja sivumalli on kuitenkin suunniteltu siten, että ne mahdollistavat laajentamisen uusille markkinoille ja kielialueille. Näin ollen voit hallita yhden sähköisen kauppasivuston kautta verkkokaupan resursseja, jotka kattavat useita markkinoita ja kieliä.
 
@@ -117,7 +117,7 @@ Voit lisätä kielen sivustonmuodostimessa kanavaan noudattamalla seuraavia ohje
 
 Kun palaat Commercen sivustonmuodostimen **Sivut**-näkymään, uusi kieli on käytettävissä kanavan ja kielialueen valitsimessa oikeassa yläkulmassa. Voit nyt luoda lokalisoituja versioita peruskielellä tehdyistä sivuista.
 
-Prosessi, jossa voit lokalisoida sivusi ja katkelmasi käsitellään jäljempänä tässä ohjeaiheessa kohdassa [Sähköisen kaupankäynnin sivuston sisällön lokalisoiminen](#localize-e-commerce-site-content).
+Prosessi, jossa voit lokalisoida sivusi ja katkelmasi käsitellään jäljempänä tässä artikkelissa kohdassa [Sähköisen kaupankäynnin sivuston sisällön lokalisoiminen](#localize-e-commerce-site-content).
 
 ### <a name="configure-a-new-channel-for-your-site"></a>Uuden kanavan konfiguroiminen sivustoa varten
 
@@ -156,7 +156,7 @@ Seuraavat sähköisen kaupankäynnin sivuston resurssit voi lokalisoida sivuston
 
 Kaikki uudet sivut, katkelmat ja mediaresurssit luodaan kanavan ja kielen yhteydessä, jotka ovat valittuna kanava- ja aluepalkista. Tämä kieli on yleensä peruskielesi, jos et ole konfiguroinut muita kieliä tai kanavia. Jos konfiguroit useita kanavia ja kieliä sivustossa, **Kanavat**-sivun kanavan ja kielialuekohtaisten oletusasetusten mukaan määritetään "peruskieli".
 
-Sivujen, katkelmien ja mediaresurssien sisällön lokalisointivaiheet ovat samankaltaisia. Poikkeuksista ja eroista huomautetaan seuraavissa osissa. Moduulisisällön lokalisointivaiheet eroavat kuitenkin toisistaan. Lisätietoja on myöhemmin tässä aiheessa kohdassa [Moduulien lokalisointi](#localize-modules).
+Sivujen, katkelmien ja mediaresurssien sisällön lokalisointivaiheet ovat samankaltaisia. Poikkeuksista ja eroista huomautetaan seuraavissa osissa. Moduulisisällön lokalisointivaiheet eroavat kuitenkin toisistaan. Lisätietoja on myöhemmin tässä artikkelissa kohdassa [Moduulien lokalisointi](#localize-modules).
 
 #### <a name="step-1-export-an-xliff-file"></a>Vaihe 1: XLIFF-tiedoston vieminen
 

@@ -1,6 +1,6 @@
 ---
 title: Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit
-description: Tässä aiheessa on tietoja suunnittelun optimoinnin aikana käytettävistä päivämäärä- ja aikaparametreista.
+description: Tässä artikkelissa on tietoja suunnittelun optimoinnin aikana käytettävistä päivämäärä- ja aikaparametreista.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 0708404f286253449e0400fc65680e903f6d1e9b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885896"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Suunnittelun optimoinnissa käytetyt päivämäärä- ja aikaparametrit
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa on tietoja suunnittelun optimoinnin aikana käytettävistä päivämäärä- ja aikaparametreista.
+Tässä artikkelissa on tietoja suunnittelun optimoinnin aikana käytettävistä päivämäärä- ja aikaparametreista.
 
 Kun sisäinen pääsuunnittelumoduuli käyttää kaikissa laskelmissa tapahtumapäivämääriä, suunnittelun optimointi käyttää päivämäärä- ja aika-arvoja, jotka muunnetaan päivämääriksi. Tämä toimintaero voi aiheuttaa tilanteita, joissa esimerkiksi pääsuunnittelun suorituspäivänä keskiyöllä luotuja ennustetapahtumia ei oteta huomioon, koska suunnittelun optimointi katsoo, että ne on luotu ennen kuluvaa päivämäärää.
 

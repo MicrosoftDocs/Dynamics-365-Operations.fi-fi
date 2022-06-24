@@ -1,6 +1,6 @@
 ---
 title: Järjestelmäohjattu työjärjestys
-description: Tässä ohjeaiheessa on tietoja järjestelmän ohjaamien töiden jaksotuksesta. Tämän toiminnon avulla voit lajitella ja suodattaa ne työtilaukset, jotka järjestelmä esittää käyttäjille suorittamista varten. Se on hyödyllinen tilanteissa, joissa fyysisen varastoinnin poimintaprosessin ajo edellyttää lisäehtoja.
+description: Tässä artikkelissa on tietoja järjestelmän ohjaamien töiden jaksotuksesta. Tämän toiminnon avulla voit lajitella ja suodattaa ne työtilaukset, jotka järjestelmä esittää käyttäjille suorittamista varten. Se on hyödyllinen tilanteissa, joissa fyysisen varastoinnin poimintaprosessin ajo edellyttää lisäehtoja.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849123"
 ---
 # <a name="system-directed-work-sequencing"></a>Järjestelmäohjattu työjärjestys
 
@@ -44,7 +44,7 @@ Ennen kuin voit käyttää järjestelmäohjattua työjärjestystoimintoa, sen pi
 
 ### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Jos haluat käsitellä skenaariota käyttämällä tässä aiheessa esitettyjä arvoja, sinun on työskenneltävä järjestelmässä, johon on asennettu vakiodemotiedot. Sinun on myös valittava **USMF**-yritys. Skenaario käyttää varastoa *51* demotiedoista.
+Jos haluat käsitellä skenaariota käyttämällä tässä artikkelissa esitettyjä arvoja, sinun on työskenneltävä järjestelmässä, johon on asennettu vakiodemotiedot. Sinun on myös valittava **USMF**-yritys. Skenaario käyttää varastoa *51* demotiedoista.
 
 > [!IMPORTANT]
 > Ennen kuin vapautat tilaukset varastoon, varmista, että poiminnan sijainneissa on tarpeeksi varastoa tilausten kaikille nimikkeille.

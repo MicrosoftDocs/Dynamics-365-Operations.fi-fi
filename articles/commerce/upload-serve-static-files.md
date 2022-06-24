@@ -1,6 +1,6 @@
 ---
 title: Staattisten tiedostojen lataaminen ja käyttäminen
-description: Tässä aiheessa kuvataan, miten voit ladata staattisen tiedoston Microsoft Dynamics 365 Commerce -sivuston muodostimeen ja miten voit luoda mukautetun URL-osoitteen ja tiedostonimen, joita voidaan käyttää tiedoston pyytämisessä.
+description: Tässä artikkelissa kuvataan, miten voit ladata staattisen tiedoston Microsoft Dynamics 365 Commerce -sivuston muodostimeen ja miten voit luoda mukautetun URL-osoitteen ja tiedostonimen, joita voidaan käyttää tiedoston pyytämisessä.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714680"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885319"
 ---
 # <a name="upload-and-serve-static-files"></a>Staattisten tiedostojen lataaminen ja käyttäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten voit ladata staattisen tiedoston Microsoft Dynamics 365 Commerce -sivuston muodostimeen ja miten voit luoda mukautetun URL-osoitteen ja tiedostonimen, joita voidaan käyttää tiedoston pyytämisessä.
+Tässä artikkelissa kuvataan, miten voit ladata staattisen tiedoston Microsoft Dynamics 365 Commerce -sivuston muodostimeen ja miten voit luoda mukautetun URL-osoitteen ja tiedostonimen, joita voidaan käyttää tiedoston pyytämisessä.
 
-Jotkin kolmannen osapuolen liittimet edellyttävät, että tiedostoa isännöidään ja tarjoillaan verkkokauppasivustosta. Nämä liittimet odottavat, että tiedosto palautetaan pyynnöillä tiettyyn takaisinkutsun URL-polkuun ja tiedostonimeen. Tämän vuoksi tässä ohjeaiheessa kerrotaan, kuinka voit ladata ja käyttää staattista tiedostoa, jonka URL-osoite ja tiedostonimi ovat käyttäjän määritettävissä Dynamics 365 Commerce -verkkokauppasivustossa.
+Jotkin kolmannen osapuolen liittimet edellyttävät, että tiedostoa isännöidään ja tarjoillaan verkkokauppasivustosta. Nämä liittimet odottavat, että tiedosto palautetaan pyynnöillä tiettyyn takaisinkutsun URL-polkuun ja tiedostonimeen. Tämän vuoksi tässä artikkelissa kerrotaan, kuinka voit ladata ja käyttää staattista tiedostoa, jonka URL-osoite ja tiedostonimi ovat käyttäjän määritettävissä Dynamics 365 Commerce -verkkokauppasivustossa.
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>Staattisen tiedoston palauttavan sivuston URL-osoitteen luominen
 
@@ -86,7 +86,7 @@ Kun URL-osoite on luotu, sen polkua ei voi muuttaa. Jos sinun on muutettava URL-
 
 Voit muuttaa URL-polkua seuraavasti.
 
-1. Jos haluat luoda uuden URL-osoitteen ja yhdistää sen aiemmin luotuun tiedostoon tai muuhun resurssiin, noudata aiemmin tässä ohjeaiheessa olevan osan [Staattisen tiedoston palauttavan sivuston URL-osoitteen luominen](#create-a-site-url-that-returns-a-static-file) ohjeita.
+1. Jos haluat luoda uuden URL-osoitteen ja yhdistää sen aiemmin luotuun tiedostoon tai muuhun resurssiin, noudata aiemmin tässä artikkelissa olevan osan [Staattisen tiedoston palauttavan sivuston URL-osoitteen luominen](#create-a-site-url-that-returns-a-static-file) ohjeita.
 1. Valitse uusi URL-osoite ja valitse komentopalkissa **Julkaise**. Uusi URL-osoite julkaistaan.
 1. Voit peruuttaa vanhan URL-osoitteen julkaisemisen valitsemalla osoitteen ja valitsemalla sitten komentopalkissa **Peruuta julkaisu**. Voit nyt poistaa vanhan URL-osoitteen halutessasi.
 

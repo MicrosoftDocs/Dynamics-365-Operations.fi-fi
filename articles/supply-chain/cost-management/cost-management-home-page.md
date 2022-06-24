@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c5d7e8f9561ba81e0be93220df9afcd493179f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e9ba69f637087298bf6a93dbb049d78dff739aaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672483"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891144"
 ---
 # <a name="cost-management-home-page"></a>Kustannushintojen hallinnan aloitussivu
 
@@ -53,7 +53,7 @@ Valmistuksen kirjanpidossa voit käsitellä [työtilausten kustannuslaskentaa](p
 
 #### <a name="white-paper"></a>Tekninen raportti
 
-[Tuoterakenteen laskenta kustannuslaskentalomakkeen avulla](https://www.microsoft.com/download/details.aspx?id=101937) on ohje, jossa selvitetään, miten materiaalin ja valmistuksen sisältävät kustannuslaskentalomakkeet määritetään ja miten määritys vaikuttaa tuorerakennelaskennan tuloksiin. Näitä ohjeaiheita selventämässä on konkreettisia skenaarioita ja tietoja, jotka osoittavat, mitä vaikutuksia eri asetuksilla ja määrityksillä on.
+[Tuoterakenteen laskenta kustannuslaskentalomakkeen avulla](https://www.microsoft.com/download/details.aspx?id=101937) on ohje, jossa selvitetään, miten materiaalin ja valmistuksen sisältävät kustannuslaskentalomakkeet määritetään ja miten määritys vaikuttaa tuorerakennelaskennan tuloksiin. Näitä artikkeleita selventämässä on konkreettisia skenaarioita ja tietoja, jotka osoittavat, mitä vaikutuksia eri asetuksilla ja määrityksillä on.
 
 #### <a name="blogs"></a>Blogit
 

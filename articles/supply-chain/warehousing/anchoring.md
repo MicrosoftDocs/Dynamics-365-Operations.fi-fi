@@ -1,6 +1,6 @@
 ---
 title: Ankkurointi
-description: Tässä aiheessa kerrotaan, miten ankkurointi otetaan käyttöön ja miten ankkurointia käytetään.
+description: Tässä artikkelissa kerrotaan, miten ankkurointi otetaan käyttöön ja miten ankkurointia käytetään.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903808"
 ---
 # <a name="anchoring"></a>Ankkurointi
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää tietoja ankkurointiprosessista. Se kuvaa vaadittavan konfiguraation ja suoritettavan logiikan, kun varastotyöntekijä muuttaa joko vaiheistus- tai lastaussijaintia.
+Tämä artikkeli sisältää tietoja ankkurointiprosessista. Se kuvaa vaadittavan konfiguraation ja suoritettavan logiikan, kun varastotyöntekijä muuttaa joko vaiheistus- tai lastaussijaintia.
 
 Ankkurointitoiminnon avulla voit ohittaa vaiheistus- tai lastaussijainnin. Kaikki avoimet sijoitukset ohjataan sitten määrittämääsi uuteen vaiheistus- tai lastaussijaintiin.
 
@@ -36,11 +36,11 @@ Voit määrittää ankkuroinnin mobiililaitteen valikkonimikkeille käyttämäll
 > [!IMPORTANT]
 > Seuraavien avointen sijoitusten sijaintia muutetaan vain niistä työriveistä, jotka luodaan samalta työmalliriviltä. Toisin sanoen järjestelmä ankkuroi sijoitusrivit, jotka ovat peräisin samasta työmallirivistä.
 
-Tässä aiheessa esitellään skenaario, joka näyttää, miten ankkurointi toimii. Tämän skenaarion aikana luodaan myyntitilausjoukko, ja joukko vapautetaan varastoon. Tämän jälkeen ohitat ehdotetun vaiheistussijainnin ja varmistat, että kaikki jäljellä olevat hyllytystyöt on kohdistettu uuteen sijaintiin.
+Tässä artikkelissa esitellään skenaario, joka näyttää, miten ankkurointi toimii. Tämän skenaarion aikana luodaan myyntitilausjoukko, ja joukko vapautetaan varastoon. Tämän jälkeen ohitat ehdotetun vaiheistussijainnin ja varmistat, että kaikki jäljellä olevat hyllytystyöt on kohdistettu uuteen sijaintiin.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Skenaarion edellytykset: Esittelytietojen käyttö
 
-Ohjeaiheen skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu *USMF* ennen aloittamista.
+Artikkelin skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu *USMF* ennen aloittamista.
 
 ## <a name="scenario-setup"></a>Skenaarion määrittäminen
 

@@ -1,6 +1,6 @@
 ---
 title: Varastojen synkronointi Supply Chain Managementista Field Serviceen
-description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla varastoja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
+description: Tässä artikkelissa käsitellään malleja ja taustatehtäviä, joilla varastoja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
 author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f38d2dfdba1f2afa1005bd740cba27afe9dcb0ec
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7fac40ebd8a1f7994997e12f1231e5522a0c0e24
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062133"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865060"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Varastojen synkronointi Supply Chain Managementista Field Serviceen
 
@@ -29,7 +29,7 @@ ms.locfileid: "8062133"
 
 
 
-Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla varastoja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
+Tässä artikkelissa käsitellään malleja ja taustatehtäviä, joilla varastoja synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
 
 [![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä.](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 

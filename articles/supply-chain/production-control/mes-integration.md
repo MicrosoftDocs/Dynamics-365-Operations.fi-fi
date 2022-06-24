@@ -1,6 +1,6 @@
 ---
 title: Integrointi kolmannen osapuolen tuotannonohjausjärjestelmiin
-description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin integrointia kolmannen osapuolen tuotannonohjausjärjestelmien (MES) kanssa.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin integrointia kolmannen osapuolen tuotannonohjausjärjestelmien (MES) kanssa.
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678684"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860635"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrointi kolmannen osapuolen tuotannonohjausjärjestelmiin
 
@@ -238,7 +238,7 @@ Seuraavassa taulukossa on kentät, joita kukin `ProdProductionOrderRouteCard`-sa
 
 ## <a name="other-production-information"></a>Muut tuotantotiedot
 
-Sanomat tukevat toimenpiteitä tai tapahtumia, jotka tapahtuvat tuotannossa. Ne käsitellään tässä ohjeaiheessa kuvatun MES-integroinnin kehyksen avulla. Suunnittelussa oletetaan, että muut MES:n kanssa jaettavat viitetiedot (kuten tuotteeseen liittyvät tiedot tai tietyssä tuotantotilauksessa käytetty materiaaliluettelo tai reitti (jossa on erityiset asetukset ja määritysajat)) noudetaan järjestelmästä käyttämällä [tietoyksiköitä](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) tiedostonsiirron tai OData:n kautta.
+Sanomat tukevat toimenpiteitä tai tapahtumia, jotka tapahtuvat tuotannossa. Ne käsitellään tässä artikkelissa kuvatun MES-integroinnin kehyksen avulla. Suunnittelussa oletetaan, että muut MES:n kanssa jaettavat viitetiedot (kuten tuotteeseen liittyvät tiedot tai tietyssä tuotantotilauksessa käytetty materiaaliluettelo tai reitti (jossa on erityiset asetukset ja määritysajat)) noudetaan järjestelmästä käyttämällä [tietoyksiköitä](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) tiedostonsiirron tai OData:n kautta.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Sanoman tilaa koskevan palautteen vastaanottaminen
 
@@ -251,7 +251,7 @@ Sen jälkeen kun MES on lähettänyt sanoman Supply Chain Managementiin, Supply 
 
 Näissä tilanteissa voidaan hyödyntää Supply Chain Managementin vakiohälytysominaisuutta. Lisätietoja vakiohälytysten käytöstä on seuraavissa resursseissa:
 
-- Ohjeaihe: [Hälytysten yleiskuvaus](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Ohjeartikkeli: [Hälytysten yleiskuvaus](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: [Dynamics 365 for Finance and Operationsin hälytyssääntövaihtoehdot](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Esimerkiksi seuraavat hälytykset voidaan määrittää antamaan palautetta sanoman tilasta:

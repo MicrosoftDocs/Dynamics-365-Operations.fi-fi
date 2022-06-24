@@ -1,6 +1,6 @@
 ---
 title: Asiakasportaalin mukauttaminen ja käyttäminen
-description: Tässä ohjeaiheessa kerrotaan, kuinka asiakasportaalia mukautetaan sen jälkeen, kun se on lisätty järjestelmään.
+description: Tässä artikkelissa kerrotaan, kuinka asiakasportaalia mukautetaan sen jälkeen, kun se on lisätty järjestelmään.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063490"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878871"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Asiakasportaalin mukauttaminen ja käyttäminen
 
 [!include [banner](../includes/banner.md)]
 
 
-Tässä ohjeaiheessa esitellään eri sivut, jotka ovat valmiina käytettävissä asiakasportaalissa. Siinä selitetään, mitä sivut tekevät ja miten niitä voi mukauttaa.
+Tässä artikkelissa esitellään eri sivut, jotka ovat valmiina käytettävissä asiakasportaalissa. Siinä selitetään, mitä sivut tekevät ja miten niitä voi mukauttaa.
 
 Asiakasportaali tarjoaa joitakin valmiita verkkosivuja ja toimintoja. Seuraavassa sivustokartassa on yleiskatsaus kyseisistä verkkosivuista ja toiminnoista sekä tehtävistä, jotka voivat suorittaa toimenpiteet.
 
@@ -32,16 +32,16 @@ Asiakasportaali tarjoaa joitakin valmiita verkkosivuja ja toimintoja. Seuraavass
 
 ## <a name="typical-customizations"></a>Tyypilliset mukautukset
 
-Seuraavissa ohjeaiheissa on tietoja Power Apps -portaalien perustoiminnoista ja portaalien mukauttamisesta:
+Seuraavissa artikkeleissa on tietoja Power Apps -portaalien perustoiminnoista ja portaalien mukauttamisesta:
 
-- [Mallien käsitteleminen](/powerapps/maker/portals/work-with-templates) – Tämä ohjeaihe sisältää yleiskatsauksen Power Apps -portaalien toiminnasta ja siitä, miten voit tehdä portaalien yksinkertaisia mukautuksia.
-- [Portaalin sisällönhallinta](/dynamics365/portals/manage-portal-content) – Tässä ohjeaiheessa kerrotaan, kuinka voit hallita ja mukauttaa portaalissasi näkyvää sisältöä.
-- [Muokkaa CSS:tä](/powerapps/maker/portals/edit-css) – Tämän ohjeaiheen avulla voit tehdä monimutkaisempia mukautuksia portaalin käyttöliittymään.
-- [Luo portaaliin teema](/dynamics365/portals/create-theme) – Tämän ohjeaiheen avulla voit luoda portaalin käyttöliittymän teeman.
-- [Portaalin sisällön luominen ja tuominen näkymiin helposti](/dynamics365/portals/create-expose-portal-content) – Tämä aiheen auttaa hallitsemaan portaalissa käytettyjä tietoja ja tauluja.
-- [Yhteyshenkilön määrittäminen käytettäväksi portaalissa](/powerapps/maker/portals/configure/configure-contacts) – Tässä ohjeaiheessa kerrotaan, kuinka käyttäjärooleja luodaan ja mukautetaan sekä kuinka suojaus ja todennus toimivat Power Apps -portaaleissa.
-- [Taululomakkeiden ja portaalien verkkolomakkeiden huomautusten määrittäminen](/powerapps/maker/portals/configure-notes) – Tässä aiheessa käsitellään asiakirjojen ja tallennustilan lisäämistä portaaliin.
-- [Portaalin verkkosivuston virheenkäsittely](/powerapps/maker/portals/admin/view-portal-error-log) – Tässä ohjeaiheessa kerrotaan, kuinka portaalin virhelokeja voidaan tarkastella ja tallentaa Microsoft Azure -Blob-objektisäilötilille.
+- [Mallien käsitteleminen](/powerapps/maker/portals/work-with-templates) – Tämä artikkeli sisältää yleiskatsauksen Power Apps -portaalien toiminnasta ja siitä, miten voit tehdä portaalien yksinkertaisia mukautuksia.
+- [Portaalin sisällönhallinta](/dynamics365/portals/manage-portal-content) – Tässä artikkelissa kerrotaan, kuinka voit hallita ja mukauttaa portaalissasi näkyvää sisältöä.
+- [Muokkaa CSS:tä](/powerapps/maker/portals/edit-css) – Tämän artikkelin avulla voit tehdä monimutkaisempia mukautuksia portaalin käyttöliittymään.
+- [Luo portaaliin teema](/dynamics365/portals/create-theme) – Tämän artikkelin avulla voit luoda portaalin käyttöliittymän teeman.
+- [Portaalin sisällön luominen ja tuominen näkymiin helposti](/dynamics365/portals/create-expose-portal-content) – Tämä artikkeli auttaa hallitsemaan portaalissa käytettyjä tietoja ja tauluja.
+- [Yhteyshenkilön määrittäminen käytettäväksi portaalissa](/powerapps/maker/portals/configure/configure-contacts) – Tässä artikkelissa kerrotaan, kuinka käyttäjärooleja luodaan ja mukautetaan sekä kuinka suojaus ja todennus toimivat Power Apps -portaaleissa.
+- [Taululomakkeiden ja portaalien verkkolomakkeiden huomautusten määrittäminen](/powerapps/maker/portals/configure-notes) – Tässä artikkelissa käsitellään asiakirjojen ja tallennustilan lisäämistä portaaliin.
+- [Portaalin verkkosivuston virheenkäsittely](/powerapps/maker/portals/admin/view-portal-error-log) – Tässä artikkelissa kerrotaan, kuinka portaalin virhelokeja voidaan tarkastella ja tallentaa Microsoft Azure -Blob-objektisäilötilille.
 
 ## <a name="customize-the-order-creation-process"></a>Tilauksen luomisprosessin mukauttaminen
 

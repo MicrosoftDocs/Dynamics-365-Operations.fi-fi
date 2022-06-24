@@ -1,6 +1,6 @@
 ---
-title: Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön
-description: Tässä ohjeaiheessa kerrotaan, miten voit ottaa muutostenhallinta käyttöön aiemmin luoduille tuotteille. Siinä kuvataan myös tapauksia, joissa muutostenhallinnan käyttöönottoa on rajoitettu.
+title: Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön
+description: Tässä artikkelissa kerrotaan, miten voit ottaa muutostenhallinta käyttöön aiemmin luoduille tuotteille. Siinä kuvataan myös tapauksia, joissa muutostenhallinnan käyttöönottoa on rajoitettu.
 author: t-benebo
 ms.date: 02/05/2021
 ms.topic: article
@@ -12,24 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9f99529abebdf5490f158c6f0a7be4519449e9f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103610"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893465"
 ---
-# <a name="enable-change-management-on-existing-products"></a>Ota aiemmin luotujen tuotteiden muutostenhallinta käyttöön
+# <a name="enable-change-management-on-existing-products"></a>Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten voit ottaa muutostenhallinta käyttöön aiemmin luoduille tuotteille. Siinä kuvataan myös tapauksia, joissa muutostenhallinnan käyttöönottoa on rajoitettu.
+Tässä artikkelissa kerrotaan, miten voit ottaa muutostenhallinta käyttöön aiemmin luoduille tuotteille. Siinä kuvataan myös tapauksia, joissa muutostenhallinnan käyttöönottoa on rajoitettu.
 
 Kun otat muutostenhallinnan käyttöön aiemmin luodulle tuotteelle, voit luoda tuotteesta eri versioita ja seurata siihen tehtyjä muutoksia sen koko elinkaaren ajalta. Näin voit seurata näitä muutoksia käyttämällä muutostilauksia. Sinun täytyy muuntaa tuotteet *suunnittelunimikkeiksi* (joita kutsutaan myös suunnittelutuotteiksi) ottaaksesi muutostenhallinnan niille käyttöön. Suunnittelutuotteet ovat tuotteita, jotka on versioitu ja joita hallitaan muutostenhallinnan avulla. Ohjattu toiminto opastaa sinua muuntoprosessissa.
 
 ## <a name="turn-this-feature-on-or-off"></a>Toiminnon ottaminen käyttöön tai pois käytöstä
 
-Tässä aiheessa kuvattu toiminto edellyttää, että toiminnot *Suunnittelun muutosten hallinta* ja *Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön* ovat käytössä järjestelmässä. Tietoja näiden toimintojen ottamisesta käyttöön tai pois käytöstä: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
+Tässä artikkelissa kuvattu toiminto edellyttää, että toiminnot *Suunnittelun muutosten hallinta* ja *Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön* ovat käytössä järjestelmässä. Tietoja näiden toimintojen ottamisesta käyttöön tai pois käytöstä: [Suunnittelun muutostenhallinnan yleiskuvaus](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Rajoitukset
 
@@ -38,7 +38,7 @@ Kaikkia tuotetyyppejä ei voi muuntaa kaikiksi muiksi tyypeiksi. Seuraavat rajoi
 - Kun muunnat tuotteen suunnittelutuotteeksi, se pysyy *tuotteena*. Siitä ei tule *päätuotetta*.
 - Kun muunnat päätuotteen, jolla on tietty dimensiojoukko, dimensiot säilyvät muutoksen jälkeen. Jos muunnat esimerkiksi päätuotteen, jolla on kokodimensio, se säilyttää kokodimension.
 
-Jos sinulla on siis erillinen tuote, voit muuttaa sen vain suunnittelutuotteeksi, joka ei seuraa tuotedimensiota tapahtumissa (eli versiodimensiota ei käytetä). Katso lisätietoja näistä ongelmista tämän aiheen myöhemmistä osioista.
+Jos sinulla on siis erillinen tuote, voit muuttaa sen vain suunnittelutuotteeksi, joka ei seuraa tuotedimensiota tapahtumissa (eli versiodimensiota ei käytetä). Katso lisätietoja näistä ongelmista tämän artikkelin myöhemmistä osioista.
 
 ## <a name="prepare-for-conversion-by-creating-all-required-engineering-product-categories"></a>Valmistaudu muuntamiseen luomalla kaikki tarvittavat suunnittelun tuoteluokat
 
@@ -81,7 +81,7 @@ Noudata näitä ohjeita suorittaaksesi ohjatun **Muunna suunnittelutuotteeksi** 
 
     - **Tuotenumero** – Tuotenumero.
     - **Tuotteen nimi** – Tuotteen nimi.
-    - **Suunnitteluluokka** – Valitse suunnittelun tuoteluokka, johon tuotteen tulisi kuulua sen muuntamisen jälkeen. Jokaiselle tuotteelle täytyy olla sopiva luokka, niin kuin tämän aiheen edellisessä osiossa kuvattiin. Sinun täytyy määrittää luokka jokaiselle tuotteelle.
+    - **Suunnitteluluokka** – Valitse suunnittelun tuoteluokka, johon tuotteen tulisi kuulua sen muuntamisen jälkeen. Jokaiselle tuotteelle täytyy olla sopiva luokka, niin kuin tämän artikkelin edellisessä osiossa kuvattiin. Sinun täytyy määrittää luokka jokaiselle tuotteelle.
     - **Versio** – Syötä tuoteversio, joka kohdistetaan tuotteelle sen muuntamisen jälkeen. Voit esimerkiksi valita numeron, joka sopii luokkasi tällä hetkellä käyttämään numerojärjestykseen. Kuhunkin suunnitteluversioon tallennetaan versiokohtaisia suunnitteluun liittyviä tietoja. Lisätietoja on kohdassa [Suunnitteluversiot ja suunnittelun tuoteluokat](engineering-versions-product-category.md).
     - **Tuotteen elinkaaren tila** – Valitse tuotteen elinkaaren tila, jossa tuotteen tulisi olla sen muuntamisen jälkeen. Tuotteen elinkaaren tila sallii sinun hallita, mitkä tapahtumat sallitaan tietylle suunnitteluversiolle. Lisätietoja on kohdassa [Tuotteen elinkaaren tilat ja tapahtumat](product-lifecycle-state-transactions.md).
     - **Sisältää tuoterakenteen** – Valittu valintamerkki osoittaa, että tuotteella on tuoterakenne. Tämän valintaruudun asetuksella voit päättää, miten nykyinen **Nykyistä tuoterakennetta käytetään suunnittelutuotteessa** -valintaruutu määritetään.

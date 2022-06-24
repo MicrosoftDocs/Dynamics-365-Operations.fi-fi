@@ -1,6 +1,6 @@
 ---
 title: Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
-description: Tässä aiheessa kuvataan, miten voidaan määrittää kiertoteitä valikkokohteille, jotta työntekijät voivat pysäyttää kulloisenkin tehtävän, suorittaa toisen tehtävän ja palata alkuperäiseen tehtävään tietoja menettämättä.
+description: Tässä artikkelissa kuvataan, miten voidaan määrittää kiertoteitä valikkokohteille, jotta työntekijät voivat pysäyttää kulloisenkin tehtävän, suorittaa toisen tehtävän ja palata alkuperäiseen tehtävään tietoja menettämättä.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863589"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Tässä aiheessa käsitellyt toiminnot koskevat vain uutta Warehouse Management -mobiilisovellusta. Niillä ei ole vaikutusta vanhaan varastosovellukseen, joka on nyt vanhentunut.
+> Tässä artikkelissa käsitellyt toiminnot koskevat vain uutta Warehouse Management -mobiilisovellusta. Niillä ei ole vaikutusta vanhaan varastosovellukseen, joka on nyt vanhentunut.
 
-Tässä aiheessa kuvataan, miten voidaan määrittää kiertoteitä valikkokohteille, jotta työntekijät voivat pysäyttää kulloisenkin tehtävän, suorittaa toisen tehtävän ja palata alkuperäiseen tehtävään tietoja menettämättä.
+Tässä artikkelissa kuvataan, miten voidaan määrittää kiertoteitä valikkokohteille, jotta työntekijät voivat pysäyttää kulloisenkin tehtävän, suorittaa toisen tehtävän ja palata alkuperäiseen tehtävään tietoja menettämättä.
 
 Kiertotie on erillinen valikkokohde, joka voidaan avata päätehtävän vaiheesta. Kiertotien päätyessä työntekijä palautetaan paikkaan, jossa hän poistui päätehtävästä. Määrityksen aikana määritetään valikkokohde, joka toimii kiertotienä. Siinä valitaan myös, mitkä päätehtävän kenttäarvot lähetetään automaattisesti eteenpäin (kopioidaan) kiertotiehen ja lisätään siihen. Siksi on ymmärrettävä, missä kohdassa tehtävänkulkua kiertotien on tarkoitus olla työntekijöiden käytettävissä. Sinun on myös varmistettava, että tiedot, jotka on kopioitava kiertotiehen, ovat käytettävissä tehtävänkulun kyseisessä vaiheessa.
 
@@ -46,7 +46,7 @@ Ennen kuin voit määrittää mobiililaitteiden valikkokohteiden vaiheiden kiert
     - **Moduuli:** *Varastonhallinta*
     - **Ominaisuuden nimi:** *Warehouse Management -sovelluksen kiertotiet*
 
-    Tämä ominaisuus kuvataan tässä aiheessa.
+    Tämä ominaisuus kuvataan tässä artikkelissa.
 
 1. Päivitä Warehouse Management -mobiilisovelluksen kenttänimet siirtymällä kohtaan **Varastonhallinta \> Määritys \> Mobiililaite \> Varastosovelluksen kenttänimet** ja valitsemalla **Luo oletusmääritys**. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
 1. Toista edellinen vaihe kullekin yritykselle, jossa käytät Warehouse Management -mobiilisovellusta.
@@ -57,7 +57,7 @@ Seuraavalla menettelyllä voit määrittää valikkokohtaisen ohituksen kertotie
 
 1. Luo valikkokohtainen ohitus kulloisellekin valikolle ja vaiheelle kohdan [Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen](mobile-app-titles-instructions.md) ohjeiden mukaisesti.
 1. Etsi muokattavat **Vaiheen tunnus**- ja **Valikkovaihtoehdon nimi** -arvot ja valitse sitten arvo **Vaiheen tunnus** -sarakkeessa.
-1. Valitse näkyviin tulevan sivun **Käytettävissä olevat kiertotiet (valikkokohteet)** -pikavälilehdellä voit määrittää valikkokohteen, joka toimii kiertotienä. Voit valita myös, mitkä päätehtävän kenttäarvot kopioidaan automaattisesti kiertotiehen ja kiertotieltä. Esimerkkejä näiden asetusten käytöstä on skenaarioissa myöhemmin tässä aiheessa.
+1. Valitse näkyviin tulevan sivun **Käytettävissä olevat kiertotiet (valikkokohteet)** -pikavälilehdellä voit määrittää valikkokohteen, joka toimii kiertotienä. Voit valita myös, mitkä päätehtävän kenttäarvot kopioidaan automaattisesti kiertotiehen ja kiertotieltä. Esimerkkejä näiden asetusten käytöstä on skenaarioissa myöhemmin tässä artikkelissa.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Esimerkkiskenaario 1: Myynnin keräily, jossa sijaintikysely toimii kiertotienä
 

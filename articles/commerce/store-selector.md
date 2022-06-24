@@ -1,6 +1,6 @@
 ---
 title: Myymälän valitsinmoduuli
-description: Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780636"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881680"
 ---
 # <a name="store-selector-module"></a>Myymälän valitsinmoduuli
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa käsitellään myymälän valitsinmoduulia ja sen lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
 Asiakkaat voivat käyttää myymälän valitsinmoduulia ja noutaa tuotteen valitusta myymälästä verkko-oston jälkeen. Commerce-versiossa 10.0.13 myymälän valitsinmoduuli sisältää myös lisäominaisuuksia, jotka voivat esitellä lähistöllä olevat myymälät näyttävän **Etsi myymälä** -sivun.
 
@@ -132,7 +132,7 @@ Myymälän valintamoduuli noudattaa [Lisää tuote ostoskoriin -asetuksia](add-c
 - Lisätietoja myymälän valitsinmoduulin lisäämisestä ostomoduuliin on kohdassa [Ostomoduuli](add-buy-box.md). 
 - Lisätietoja myymälän valitsinmoduulin lisäämisestä ostoskorimoduuliin on kohdassa [Ostoskorimoduuli](add-cart-module.md)
 
-Voit määrittää myymälöiden valitsinmoduulin aiemmin tämän ohjeaiheen kuvassa osoitetulla tavalla. Tämän jälkeen myymälöiden sijaintien sivulla näkyvät käytettävissä olevat myymälät.
+Voit määrittää myymälöiden valitsinmoduulin aiemmin tämän artikkelin kuvassa osoitetulla tavalla. Tämän jälkeen myymälöiden sijaintien sivulla näkyvät käytettävissä olevat myymälät.
 
 1. Siirry kohtaan **Mallit** ja valitse **Uusi** luodaksesi uuden sivumallin.
 1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Markkinointimalli** ja valitse sitten **OK**.

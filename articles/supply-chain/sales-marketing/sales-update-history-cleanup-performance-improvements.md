@@ -1,6 +1,6 @@
 ---
 title: Myyntihistorian tietojen tyhjennyksen ajoitus
-description: Tässä ohjeaiheessa kuvataan, kuinka voit parantaa järjestelmän suorituskykyä ajoittamalla myyntipäivityshistorian säännöllisen puhdistustehtävän suoritettavaksi säännöllisin väliajoin.
+description: Tässä artikkelissa kuvataan, kuinka voit parantaa järjestelmän suorituskykyä ajoittamalla myyntipäivityshistorian säännöllisen puhdistustehtävän suoritettavaksi säännöllisin väliajoin.
 author: myvakalo
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 6c6c1e08d45f2a7d1e1267010b286111bad01a6c
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570363"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900822"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Myyntihistorian tietojen tyhjennyksen ajoitus
 
@@ -28,7 +28,7 @@ Jos käytät *Myyntihistorian puhdistuksen* säännöllistä tehtävää, suosit
 
 ## <a name="turn-on-the-sales-history-cleanup-features"></a>Myyntihistorian puhdistusominaisuuksien käyttöönottaaminen
 
-Jotta voit määrittää ja käyttää *Myynnin päivityshistorian puhdistuksen* säännöllistä tehtävää yhdessä kaikkien tässä aiheessa kuvattujen ominaisuuksien kanssa, sinun on otettava käyttöön *Myyntihistorian puhdistamisen suorituskyvyn parannukset* ja *Siivoa myyntipäivityshistoria iän perusteella* ominaisuuksia Ominaisuuksien hallinnassa seuraavissa alaosissa kuvatulla tavalla.
+Jotta voit määrittää ja käyttää *Myynnin päivityshistorian puhdistuksen* säännöllistä tehtävää yhdessä kaikkien tässä artikkelissa kuvattujen ominaisuuksien kanssa, sinun on otettava käyttöön *Myyntihistorian puhdistamisen suorituskyvyn parannukset* ja *Siivoa myyntipäivityshistoria iän perusteella* ominaisuuksia Ominaisuuksien hallinnassa seuraavissa alaosissa kuvatulla tavalla.
 
 ### <a name="sales-history-cleanup-performance-improvements"></a>Myyntihistorian puhdistuksen suorituskyvyn parannukset
 

@@ -1,6 +1,6 @@
 ---
 title: Resurssin kriittisyystyypit
-description: Aiheessa selitetään resurssin kriittisyystyypit resurssien hallinnassa.
+description: Artikkelissa selitetään resurssin kriittisyystyypit resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776917"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899495"
 ---
 # <a name="asset-criticality-types"></a>Resurssin kriittisyystyypit
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776917"
 
  
 
-Aiheessa selitetään resurssin kriittisyystyypit resurssien hallinnassa. Resurssin kriittisyys liittyy resursseihin ja ne siirretään työtilauksiin. Sitä ei voi muuttaa työtilauksessa. Resurssin kriittisyyttä käytetään laskettaessa työtilauksen kriittisyyttä työtilausten ajoituksessa. Toisin sanoen sen avulla lasketaan, missä määrin resurssin kunnossapitotyö vaikuttaa yrityksen tuotantoaikatauluun ja tuottavuuteen. Lisätietoja asetuksista, jotka liittyvät työtilausten ajoituksen luokituspisteiden laskentaan, on kohdassa [Resurssien hallinnan parametrit.](../setup-for-objects/enterprise-asset-management-parameters.md)
+Artikkelissa selitetään resurssin kriittisyystyypit resurssien hallinnassa. Resurssin kriittisyys liittyy resursseihin ja ne siirretään työtilauksiin. Sitä ei voi muuttaa työtilauksessa. Resurssin kriittisyyttä käytetään laskettaessa työtilauksen kriittisyyttä työtilausten ajoituksessa. Toisin sanoen sen avulla lasketaan, missä määrin resurssin kunnossapitotyö vaikuttaa yrityksen tuotantoaikatauluun ja tuottavuuteen. Lisätietoja asetuksista, jotka liittyvät työtilausten ajoituksen luokituspisteiden laskentaan, on kohdassa [Resurssien hallinnan parametrit.](../setup-for-objects/enterprise-asset-management-parameters.md)
 
 Voit määrittää kriittisyyden määrittämällä ensin kriittisyystyypit, joita käytetään resurssin asetuksissa. Sen jälkeen määritetään resurssin kriittisyydet.
 

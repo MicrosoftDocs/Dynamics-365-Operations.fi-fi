@@ -1,6 +1,6 @@
 ---
-title: Valitse Store Commerce- tai Cloud POS -myyntipiste
-description: Tässä aiheessa kerrotaan Store Commerce- ja Cloud POS -myyntipisteen väliset erot ja kuvataan useita tekijöitä, joiden avulla Dynamics 365 Commercen käyttöön ottavat vähittäismyyjät voivat valita parhaan vaihtoehdon tarpeidensa mukaan.
+title: Valitse Store Commerce tai Cloud POS
+description: Tässä artikkelissa kerrotaan Store Commerce- ja Cloud POS -myyntipisteen väliset erot ja kuvataan useita tekijöitä, joiden avulla Dynamics 365 Commercen käyttöön ottavat vähittäismyyjät voivat valita parhaan vaihtoehdon tarpeidensa mukaan.
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629287"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854003"
 ---
-# <a name="choose-between-store-commerce-and-cloud-pos"></a>Valitse Store Commerce- tai Cloud POS -myyntipiste
+# <a name="choose-between-store-commerce-and-cloud-pos"></a>Valitse Store Commerce tai Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kerrotaan Store Commerce- ja Cloud POS -myyntipisteen väliset erot ja kuvataan useita tekijöitä, joiden avulla Dynamics 365 Commercen käyttöön ottavat vähittäismyyjät voivat valita parhaan vaihtoehdon tarpeidensa mukaan. Tämä ohjeaihe sisältää käyttöönoton suorittajille tarkoitettuja lisätietoja taustasta sekä vihjeitä ja ohjeita seikoista, jotka tulee ottaa huomioon ennen Dynamics 365 Commercen käyttöönottoa. Käyttöönoton suorittajat voivat välttää käyttäjien tyytyväisyyteen tai suorituskykyyn liittyviä ongelmia tutustumalla ja seuraamalla näitä ohjeita käyttöönottoprosessin osana.
+Tässä artikkelissa kerrotaan Store Commerce- ja Cloud POS -myyntipisteen väliset erot ja kuvataan useita tekijöitä, joiden avulla Dynamics 365 Commercen käyttöön ottavat vähittäismyyjät voivat valita parhaan vaihtoehdon tarpeidensa mukaan. Tämä ohjeaihe sisältää käyttöönoton suorittajille tarkoitettuja lisätietoja taustasta sekä vihjeitä ja ohjeita seikoista, jotka tulee ottaa huomioon ennen Dynamics 365 Commercen käyttöönottoa. Käyttöönoton suorittajat voivat välttää käyttäjien tyytyväisyyteen tai suorituskykyyn liittyviä ongelmia tutustumalla ja seuraamalla näitä ohjeita käyttöönottoprosessin osana.
 
 ## <a name="insights"></a>Tietoja
 
@@ -44,7 +44,7 @@ Commerce tukee seuraavia myyntipisteen vaihtoehtoja:
 Kaikissa tapauksissa myyntipisteet (Store Commerce ja CPOS) jakavat saman ydinsovelluksen koodin. Tämä on tärkeää seuraavista syistä:
 
 - Käyttöliittymän on yhdenmukainen ympäristöstä tai lomakekertoimesta riippumatta.
-- Useimmat toiminnalliset kapasiteetit ovat samat ympäristöstä ja lomakekertoimesta riippumatta. Niillä on kuitenkin tärkeitä eroavaisuuksiakin. Niistä kerrotaan tässä ohjeaiheessa.
+- Useimmat toiminnalliset kapasiteetit ovat samat ympäristöstä ja lomakekertoimesta riippumatta. Niillä on kuitenkin tärkeitä eroavaisuuksiakin. Niistä kerrotaan tässä artikkelissa.
 - Myyntipisteiden vaihtelut voidaan yhdistää ja suorittaa samanaikaisesti kussakin myymälässä. Esimerkiksi pääkassakoneissa jälleenmyyjä voi käyttää Store Commercea Windows-käyttöjärjestelmän tietokoneissa. Jälleenmyyjä voi kuitenkin täydentää kassakoneita selainpohjaisilla päätteillä tai mobiililaitteilla.
 - Ympäristöissä ja lomakekertoimissa voidaan tehdä helposti mukautuksia ja laajennuksia. Koska ydinsovelluksen koodi on jaettu, useimmat mukautukset voidaan ottaa käyttöön vain kerran useiden kertojen sijaan.
 

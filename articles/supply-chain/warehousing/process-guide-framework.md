@@ -1,6 +1,6 @@
 ---
 title: Prosessioppaan kehys
-description: Tässä aiheessa on tietoja prosessiopaskehyksestä kehittäjille, jotka laajentavat varaston mobiiliprosesseja X++:ssa.
+description: Tässä artikkelissa on tietoja prosessiopaskehyksestä kehittäjille, jotka laajentavat varaston mobiiliprosesseja X++:ssa.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860432"
 ---
 # <a name="process-guide-framework"></a>Prosessioppaan kehys
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tietoja prosessiopaskehyksestä kehittäjille, jotka laajentavat varaston mobiiliprosesseja X++:ssa. Varaston mobiiliprosessit ovat laajennettavissa, koska prosessit jaetaan pieniin vaiheisiin. Kunkin vaiheen liiketoimintalogiikka ja käyttöliittymän kehittäminen on jaettu yksittäisiin luokkiin, mikä mahdollistaa laajennettavuuden.
+Tässä artikkelissa on tietoja prosessiopaskehyksestä kehittäjille, jotka laajentavat varaston mobiiliprosesseja X++:ssa. Varaston mobiiliprosessit ovat laajennettavissa, koska prosessit jaetaan pieniin vaiheisiin. Kunkin vaiheen liiketoimintalogiikka ja käyttöliittymän kehittäminen on jaettu yksittäisiin luokkiin, mikä mahdollistaa laajennettavuuden.
 
 ## <a name="overview-of-the-existing-design"></a>Olemassa olevan rakenteen yleiskatsaus
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> Saman X++-menetelmien lähdekoodin löytää tästä aiheesta käyttämällä sovellusten hallintaa. Suodata luokan nimen perusteella, napsauta luokan nimeä hiiren kakkospainikkeella ja valitse **Näytä koodi**.
+> Saman X++-menetelmien lähdekoodin löytää tästä artikkelista käyttämällä sovellusten hallintaa. Suodata luokan nimen perusteella, napsauta luokan nimeä hiiren kakkospainikkeella ja valitse **Näytä koodi**.
 
 ### <a name="step-3-start-the-production-order"></a>Vaihe 3: Tuotantotilauksen käynnistys
 
@@ -421,7 +421,7 @@ Tässä yhteydessä se pyytää vaihetta luomaan toimintoluokan välitetylle nim
 
 ### <a name="summary"></a>Yhteenveto
 
-Seuraavassa vedetään yhteen kaikki tässä aiheessa selitetty kattavassa yhteenvedossa prosessia varten tarvittavasta koodista:
+Seuraavassa vedetään yhteen kaikki tässä artikkelissa selitetty kattavassa yhteenvedossa prosessia varten tarvittavasta koodista:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Seuraavassa vedetään yhteen kaikki tässä aiheessa selitetty kattavassa yhtee
         ```
 
         > [!NOTE]
-        > **generateItemInfoForProdId()**-menetelmä, jota käytetään nimikkeen tieto-otsikkojen luomiseen on jätetty pois tästä aiheesta. Tässä menetelmässä lähetetään kyselyjä joillekin taulukoille nimikkeen tunnuksen, kuvauksen ja mittojen noutamista varten. Paremman kuvan **generateItemInfoForProdId()**-menetelmästä saat tarkastelemalla lähdekoodia.
+        > **generateItemInfoForProdId()**-menetelmä, jota käytetään nimikkeen tieto-otsikkojen luomiseen on jätetty pois tästä artikkelista. Tässä menetelmässä lähetetään kyselyjä joillekin taulukoille nimikkeen tunnuksen, kuvauksen ja mittojen noutamista varten. Paremman kuvan **generateItemInfoForProdId()**-menetelmästä saat tarkastelemalla lähdekoodia.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Seuraavassa vedetään yhteen kaikki tässä aiheessa selitetty kattavassa yhtee
 
 ### <a name="extending-a-business-process"></a>Liiketoimintaprosessin laajentaminen
 
-Tähän mennessä tässä aiheessa on esitetty, miten rakennetaan uusi prosessi **ProcessGuide**-kehystä käyttäen. Tässä viimeisessä osassa on esimerkkejä siitä, miten tätä liiketoimintaprosessia voi laajentaa.
+Tähän mennessä tässä artikkelissa on esitetty, miten rakennetaan uusi prosessi **ProcessGuide**-kehystä käyttäen. Tässä viimeisessä osassa on esimerkkejä siitä, miten tätä liiketoimintaprosessia voi laajentaa.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Vaiheen lisääminen työnkulkuun (ProcessGuideNavigationAgentDefault)
 

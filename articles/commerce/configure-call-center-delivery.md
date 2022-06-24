@@ -1,6 +1,6 @@
 ---
 title: Määritä puhelinkeskuksen toimitustavat ja kulut
-description: Tässä aiheessa kuvataan, miten puhelinkeskuksen toimitustavat ja kulut määritetään Dynamics 365 Commercessa.
+description: Tässä artikkelissa kuvataan, miten puhelinkeskuksen toimitustavat ja kulut määritetään Dynamics 365 Commercessa.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888295"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Määritä puhelinkeskuksen toimitustavat ja kulut
 
@@ -35,7 +35,7 @@ Commercessa on ominaisuuksia, joiden avulla käyttäjät voivat rajoittaa toimit
 
 Ennen kuin määrität puhelinkeskuksen tilausten toimitustavat ja määrität liittyvät säännöt ja kulut, on määritettävä toimitustavat. Siirry kohtaan **Myynti ja markkinointi \> Asetukset \> Jakelu \> Toimitustavat**. Luo uusi toimitustila valitsemalla **Uusi**. Voit myös valita aiemmin luodun toimitustavan luettelosta ja valita sitten **Muokkaa** tehdäksesi muutoksia.
 
-**Toimitustapa**-kenttään voit syöttää minkä tahansa yhdistelmän aakkosnumeerisia merkkejä liiketoimintasi tarpeen mukaan. **Kuvaus**-kentässä voit antaa lisätietoja. **Kuluryhmä**- ja **Nopeuta**-kentät ovat valinnaisia ja ne selitetään tässä ohjeaiheessa tarkemmin myöhemmin.
+**Toimitustapa**-kenttään voit syöttää minkä tahansa yhdistelmän aakkosnumeerisia merkkejä liiketoimintasi tarpeen mukaan. **Kuvaus**-kentässä voit antaa lisätietoja. **Kuluryhmä**- ja **Nopeuta**-kentät ovat valinnaisia ja ne selitetään tässä artikkelissa tarkemmin myöhemmin.
 
 **Commerce-kanavat**-pikavälilehdessä voit lisätä kaikki kanavat, joiden tulisi voida käyttää tätä toimitustapaa kyseisen kanavan myyntitapahtumien luonnin yhteydessä.
 

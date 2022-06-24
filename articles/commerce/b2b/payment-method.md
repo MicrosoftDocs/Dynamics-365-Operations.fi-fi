@@ -1,6 +1,6 @@
 ---
-title: Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille
-description: Tässä aiheessa kuvataan asiakkaan maksutavan määrittäminen Microsoft Dynamics 365 Commercessä. Siinä kuvataan myös, miten luottorajat vaikuttavat tilimaksujen taltiointiin yritystenvälisillä (B2B) verkkokauppasivustoilla.
+title: Asiakastilin maksutavan määrittäminen yritysten välisille sähköisille kaupankäyntisivustoille
+description: Tässä artikkelissa kuvataan asiakkaan maksutavan määrittäminen Microsoft Dynamics 365 Commercessä. Siinä kuvataan myös, miten luottorajat vaikuttavat tilimaksujen taltiointiin yritystenvälisillä (B2B) verkkokauppasivustoilla.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a55a5d4c9dbf7909af5219843fc4310b6cdd4ed7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 20af517b9a69f4fb490d4d93ada8bc4063e895dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689634"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878644"
 ---
-# <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Asiakastilin maksutavan määrittäminen B2B-verkkokauppasivustoille
+# <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Asiakastilin maksutavan määrittäminen yritysten välisille sähköisille kaupankäyntisivustoille
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa kuvataan asiakkaan maksutavan määrittäminen Microsoft Dynamics 365 Commercessä. Siinä kuvataan myös, miten luottorajat vaikuttavat tilimaksujen taltiointiin yritystenvälisillä (B2B) verkkokauppasivustoilla.
+Tässä artikkelissa kuvataan asiakkaan maksutavan määrittäminen Microsoft Dynamics 365 Commercessä. Siinä kuvataan myös, miten luottorajat vaikuttavat tilimaksujen taltiointiin yritystenvälisillä (B2B) verkkokauppasivustoilla.
 
 Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja verkkokauppakanavissaan myymistään tuotteista ja palveluista. Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä Dynamics 365 Commercessa, kun järjestelmä määritetään. Asiakastilin (tai tilillä olevan) maksutavan on oltava tuettuna B2B-verkkokauppasivustoissa. 
 

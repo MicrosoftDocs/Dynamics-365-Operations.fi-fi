@@ -1,6 +1,6 @@
 ---
 title: Vaarallisten aineiden yleiskatsaus
-description: Tässä ohjeaiheessa on sellaisten vaarallisten aineiden käsittelyyn ja dokumentointiin liittyvien toimintojen yleiskatsaus, joita käytetään tuotetietojen hallinnassa ja varastonhallinnassa.
+description: Tässä artikkelissa on sellaisten vaarallisten aineiden käsittelyyn ja dokumentointiin liittyvien toimintojen yleiskatsaus, joita käytetään tuotetietojen hallinnassa ja varastonhallinnassa.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c2cae4cb65dd163e9fbf1d24cff5a0a040e3ce3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986273"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905802"
 ---
 # <a name="hazardous-materials-overview"></a>Vaarallisten aineiden yleiskatsaus
 
@@ -50,7 +50,7 @@ Tämän toiminnon kehittämisessä käytettiin seuraavia yleisiä määräyksiä
 
 Kukin määräysjoukko sisältää vaarallisten aineiden ja viitekoodien standardoidut luettelot. Supply Chain Managementissa onkin näissä luetteloissa olevien yleisten koodien viitetaulukko. Jokaisessa luettelossa on myös joitakin yksilöllisiä, määritettäviä koodeja.
 
-Lisätietoja vaarallisten aineiden määräysten ja arvojen määrittämisestä ja arvojen määrittämisestä tuotteisiin on seuraavissa ohjeaiheissa:
+Lisätietoja vaarallisten aineiden määräysten ja arvojen määrittämisestä ja arvojen määrittämisestä tuotteisiin on seuraavissa artikkeleissa:
 
 - [Vaarallisten aineiden määrittäminen](hazmat-setup.md)
 - [Tuotteiden, tilausten, lähetysten ja kuormien vaaralliset aineet](hazmat-items.md)

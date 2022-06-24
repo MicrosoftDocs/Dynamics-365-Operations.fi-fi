@@ -1,6 +1,6 @@
 ---
 title: Rahdin täsmäytys kuljetustenhallinnassa
-description: Tässä aiheessa käsitellään rahdin täsmäytysprosessia.
+description: Tässä artikkelissa käsitellään rahdin täsmäytysprosessia.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 520a0fc78a136b416c943cfb72db1b2be7d2ed0c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ff29de62de12e8ca8bea0f374921a51b5819222e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674782"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844220"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Rahdin täsmäytys kuljetustenhallinnassa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään rahdin täsmäytysprosessia.
+Tässä artikkelissa käsitellään rahdin täsmäytysprosessia.
 
 Rahti voidaan täsmäyttää manuaalisesti tai se voidaan määrittää tapahtumaan automaattisesti. Jos haluat käyttää rahdin automaattista täsmäytystä, sinun on määritettävä päätarkistus, jossa voit määrittää ehdot määrittämään automaattisesti täsmäytettävät rahtilaskut.
 

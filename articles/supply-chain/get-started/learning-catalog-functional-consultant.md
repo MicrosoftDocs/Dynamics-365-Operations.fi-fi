@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296cee4c5da82d8bfcab298a5a2a13d982f8f808
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 05f2f11408dac93faa8f71cb0396893c03cdb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672091"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851881"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Dynamics 365 Supply Chain Managementn toiminnallisen konsultin oppimisluettelo
 
@@ -68,7 +68,7 @@ Toiminnallisten konsulttien osalta meidän työtehtäväanalyysimme osoitti, ett
 | [Kurssi MB-300T01-A: keskeiset Dynamics 365 for Finance and Operationsin ominaisuudet](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Kurssilla käsitellään Microsoft Dynamics 365 for Finance and Operationsin tärkeimpiä yleisiä piirteitä. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
 | [Kurssi MB-300T02-A: Dynamics 365 for Finance and Operationsin perusmääritykset](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Tämä kurssi käsittelee peruskonfigurointitehtäviä Microsoft Dynamics 365 for Finance and Operationsissa. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
 | [Kurssi MB-300T03-A: Tietojen siirtäminen ja valmistautuminen Dynamics 365 for Finance and Operationsin julkaisuun](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Tämä kurssi käsittelee tietojen siirtoa ja Microsoft Dynamics 365 for Finance and Operationsin julkaisun valmistelua. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
-| [Käyttöönoton elinkaaren aloitussivu](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Nämä ohjeaiheet kuvaavat ohjelmia, työkaluja ja prosesseja, jotka ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations -projektin toteutuskaaren aikana. | Dokumentaatio | |
+| [Käyttöönoton elinkaaren aloitussivu](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Nämä artikkelit kuvaavat ohjelmia, työkaluja ja prosesseja, jotka ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations -projektin toteutuskaaren aikana. | Dokumentaatio | |
 
 ## <a name="migration-and-upgrade"></a>Siirto ja päivitys<a name="migration"></a>
 
@@ -105,7 +105,7 @@ Toiminnallisten konsulttien osalta meidän työtehtäväanalyysimme osoitti, ett
 | [Varaston mobiilisovellus (VIR816PAL) ](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | Tämä Tech Talk kertoo kehittyneestä varastointijärjestelmästä Dynamics 365 for Operationsissa ja siitä, mikä on tulossa kehittyneen varastointisovelluksen suhteen. Tutkimme uuden mobiilisovelluksen, joka on julkistettu ja miten se vertautuu vanhaan WMDP-ohjelmaan. Opimme, mitä tämän mobiilisovelluksen asentamiseen, konfiguroimiseen ja käyttämiseen tarvitaan ja miten sitä voidaan käyttää toteutuksissa. | Verkkokokouksen maksuton tallenne | 54 minuuttia |
 | [Toimittajayhteistyö (DYN327PAL)](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | Tämä Tech Talk tarjoaa tietoa toimittajayhteistyön ominaisuudesta, mukaan lukien Toimittajan vastauksen kulutus -ominaisuus, joka sisältyy heinäkuun (kevät) julkaisuun. | Verkkokokouksen maksuton tallenne | 58 minuuttia |
 | [Nimikkeen ja varaston siirtoprosessi varastonhallinnan lisätoimintojen käyttämiseksi (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | Tässä Tech Talk -keskustelussa opetamme, miten voit siirtää aiemmin luodut varaston asetukset ja nimikkeet, joilla on avoimia tapahtumia, edistyneeseen varastonhallintaan käyttämällä uusia ominaisuuksia, joiden avulla voit muuttaa nimikkeiden varastodimensioryhmää ja ottaa fyysisissä varastoissa käyttöön edistyneet varastonhallintaprosessit. | Verkkokokouksen maksuton tallenne | 54 minuuttia |
-| [Toimitusketjun hallinnan kotisivu](/dynamics365/unified-operations/supply-chain/) | Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman toimitusketjun hallintaa koskevista ohjeaiheista ja muista resursseista. | Dokumentaatio | |
+| [Toimitusketjun hallinnan kotisivu](/dynamics365/unified-operations/supply-chain/) | Tässä artikkelissa on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman toimitusketjun hallintaa koskevista artikkeleista ja muista resursseista. | Dokumentaatio | |
 | [Kysynnän täydennys raaka-aineiden keräilyä varten (DYN333PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | Tämä TechTalk kattaa raaka-aineiden keräilyn ja kysynnän täydennyksen raaka-aineiden keräilyä varten. | Verkkokokouksen maksuton tallenne | 38 minuuttia |
 | [Kurssi MB-330T01-A: Määritä ja käytä toimitusketjun hallintaa Dynamics 365 for Finance and Operationsissa](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | Tämä kurssi käsittelee toimitusketjun hallinnan konfigurointia ja käyttöä Dynamics 365 for Finance and Operations -ohjelmassa. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 2 päivää |
 | [Kurssi MB-330T02-A: Käytä laadunhallintaa, konserniyritysten välistä kauppaa ja pääsuunnittelua Dynamics 365 for Finance and Operationsissa](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | Tässä kurssisa opetetaan, miten käytetään laadunhallintaa, konserniyritysten välistä kauppaa ja pääsuunnittelua Dynamics 365 for Finance and Operationsissa. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |

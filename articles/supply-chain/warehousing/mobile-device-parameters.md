@@ -1,6 +1,6 @@
 ---
 title: Yleiset mobiililaitteen parametrit
-description: Tässä aiheessa kuvataan, kuinka mobiililaitteen asetukset määritetään Varastonhallinnan parametrit -sivulla.
+description: Tässä artikkelissa kuvataan, kuinka mobiililaitteen asetukset määritetään Varastonhallinnan parametrit -sivulla.
 author: Mirzaab
 ms.date: 08/13/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ae04c86ff1eafb649fcef7c34ace66bdc3e5cb8
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6e03414edd9243fcc4156195928455b30a7cee9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679162"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847756"
 ---
 # <a name="global-mobile-device-parameters"></a>Yleiset mobiililaitteen parametrit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka määritetään yleiset varastonhallinnan parametrit, jotka vaikuttavat siihen, miten järjestelmä käy vuorovaikutusta mobiililaitteiden kanssa.
+Tässä artikkelissa kuvataan, kuinka määritetään yleiset varastonhallinnan parametrit, jotka vaikuttavat siihen, miten järjestelmä käy vuorovaikutusta mobiililaitteiden kanssa.
 
 Lisätietoja siitä, miten varastotyöntekijät määritetään, löytyy kohdasta [Varastotyöntekijän hallinta](manage-warehouse-workers.md). Lisätietoja rekisterikilven käsittelystä mobiililaitteilla on kohdassa [Rekisterikilven vastaanotto Warehouse Managementin mobiilisovelluksen kautta](warehousing-mobile-device-app-license-plate-receiving.md). Lisätietoja inventoinnin prosesseista on kohdissa [Inventointi](cycle-counting.md) ja [Inventoinnin esimerkkiskenaariot](cycle-counting-scenarios.md).
 
 ## <a name="open-the-warehouse-management-parameters-page"></a>Avaa varastonhallinnan parametrien sivu
 
-Avataksesi **Varastonhallinnan parametrit** -sivun siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**. Tämän jälkeen voit määrittää mobiililaitteilla työskentelyyn liittyvät kentät tämän aiheen seuraavassa osassa kuvatulla tavalla.
+Avataksesi **Varastonhallinnan parametrit** -sivun siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**. Tämän jälkeen voit määrittää mobiililaitteilla työskentelyyn liittyvät kentät tämän artikkelin seuraavassa osassa kuvatulla tavalla.
 
 ## <a name="mobile-device-fasttab-on-the-general-tab"></a>Mobiililaite-pikavälilehti Yleiset-välilehdessä
 

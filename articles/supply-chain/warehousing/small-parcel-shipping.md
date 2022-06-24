@@ -1,6 +1,6 @@
 ---
 title: Pienten pakettien lähettäminen
-description: Tässä aiheessa on tietoja pienten pakettien lähetystoiminnosta. Tämän toiminnon avulla Microsoft Dynamics 365 Supply Chain Management voi lähettää tietoja pakatusta kontista rahdinkuljettajalle sekä saada kyseiseltä rahdinkuljettajalta osoitetarran, lähetyshinnan ja seurantanumeron.
+description: Tässä artikkelissa on tietoja pienten pakettien lähetystoiminnosta. Tämän toiminnon avulla Microsoft Dynamics 365 Supply Chain Management voi lähettää tietoja pakatusta kontista rahdinkuljettajalle sekä saada kyseiseltä rahdinkuljettajalta osoitetarran, lähetyshinnan ja seurantanumeron.
 author: Mirzaab
 ms.date: 01/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e8e2bda39b9de241d17fcf3cb9acce2b8015efd2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7bafd4a5118de5ca6025c6bd74fe436aa6abd1c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687613"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855900"
 ---
 # <a name="small-parcel-shipping"></a>Pienten pakettien lähettäminen
 
@@ -54,7 +54,7 @@ Hinnan laskennan esittelymoduuli haetaan seuraavasti:
 
 #### <a name="create-and-deploy-functional-rate-engines"></a>Toiminnallisten hinnan laskentamoduulien luominen ja ottaminen käyttöön
 
-Lisätietoja toiminnallisten tuotanto- tai testiympäristössä käytettävien hinnan laskentamoduulien luomisesta ja ottamisesta käyttöön on seuraavissa aiheissa:
+Lisätietoja toiminnallisten tuotanto- tai testiympäristössä käytettävien hinnan laskentamoduulien luomisesta ja ottamisesta käyttöön on seuraavissa artikkeleissa:
 
 - [Uuden kuljetuksenhallintamoduulin luominen](../transportation/create-new-transportation-management-engine.md)
 - [Kuljetustenhallintamoduulien määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-transportation-management-engines)
@@ -77,7 +77,7 @@ Kun pienten pakettien hinnan laskentamoduuli on luotu ja otettu käyttöön, se 
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
-Tässä esimerkkiskenaariossa näytetään, miten pienten pakettien lähetystoiminto määritetään ja miten sitä käytetään sen jälkeen, kun järjestelmä on valmisteltu aiemmin tässä aiheessa kuvatulla tavalla. Tässä skenaariossa käytetään edellä mainittua hinnan laskennan esittelymoduulia.
+Tässä esimerkkiskenaariossa näytetään, miten pienten pakettien lähetystoiminto määritetään ja miten sitä käytetään sen jälkeen, kun järjestelmä on valmisteltu aiemmin tässä artikkelissa kuvatulla tavalla. Tässä skenaariossa käytetään edellä mainittua hinnan laskennan esittelymoduulia.
 
 ### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
@@ -147,7 +147,7 @@ Rahdinkuljetuspalvelutili määritetään seuraavasti:
 
 Kontin pakkauskäytäntö määritetään seuraavasti:
 
-1. Jos ZPL-tulostinmääritystä ei ole vielä tehty, määritä se asiakirjan reititysagenttisovelluksella. Lisätietoja on kohdassa [Asiakirjojen tulostamisen yleiskatsaus](../../fin-ops-core/dev-itpro/analytics/print-documents.md) ja siihen liittyvissä aiheissa.
+1. Jos ZPL-tulostinmääritystä ei ole vielä tehty, määritä se asiakirjan reititysagenttisovelluksella. Lisätietoja on kohdassa [Asiakirjojen tulostamisen yleiskatsaus](../../fin-ops-core/dev-itpro/analytics/print-documents.md) ja siihen liittyvissä artikkeleissa.
 1. Valitse **Varastonhallinta \> Asetukset \> Kontit \> Kontin pakkauskäytännöt**.
 1. Lisää kontin pakkauskäytäntö valitsemalla toimintoruudussa **Uusi**.
 1. Määritä uuden käytännön otsikossa seuraavat arvot:

@@ -1,8 +1,8 @@
 ---
-title: Varaston näkyvyyden varaston kohdistus
-description: Tässä ohjeaiheessa kerrotaan, miten varastonkohdistustoiminto määritetään ja kuinka sitä käytetään. Tämän toiminnon avulla voit varata erillisen varaston, jotta voit käsitellä kannattavimmat kanavat tai asiakkaat.
+title: Inventory Visibilityn varaston kohdistus
+description: Tässä artikkelissa kerrotaan, miten varastonkohdistustoiminto määritetään ja kuinka sitä käytetään. Tämän toiminnon avulla voit varata erillisen varaston, jotta voit käsitellä kannattavimmat kanavat tai asiakkaat.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852502"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Varaston näkyvyyden varaston kohdistus
 
@@ -98,7 +98,7 @@ Alkuperäiset lasketut määreet ovat seuraavat:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Lisää muita fyysisiä määreitä laskettuun käytettävissä kohdistuksessa -määreeseen
 
-Kohdistusta varten on määritettävä laskettu käytettävissä kohdistuksessa -määre (`@iv`.`@available_to_allocate`). Sinulla on esimerkiksi `fno`-tietolähde ja `onordered`-määre, `pos`-tietolähde ja `inbound`-määre, ja haluat tehdä kohdistuksen käytettävissä olevaan summalla `fno.onordered` ja `pos.inbound`. Tässä tapauksessa `@iv.@available_to_allocate`:n tulisi sisältää `pos.inbound` ja `fno.onordered` kaavassa. Tässä on esimerkki:
+Kohdistusta varten on määritettävä laskettu käytettävissä kohdistuksessa -määre (`@iv.@available_to_allocate`). Sinulla on esimerkiksi `fno`-tietolähde ja `onordered`-määre, `pos`-tietolähde ja `inbound`-määre, ja haluat tehdä kohdistuksen käytettävissä olevaan summalla `fno.onordered` ja `pos.inbound`. Tässä tapauksessa `@iv.@available_to_allocate`:n tulisi sisältää `pos.inbound` ja `fno.onordered` kaavassa. Tässä on esimerkki:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,11 +110,12 @@ Ryhmien nimet määritetään **Varaston näkyvyyden Power App -määritys** -si
 
 Jos käytät esimerkiksi neljää ryhmän nimeä ja määrität ne muotoihin \[`channel`, `customerGroup`, `region`, `orderType`\], kyseiset nimet ovat kelvollisia kohdistukseen liittyvissä pyynnöissä, kun kutsut määrityksen päivityksen ohjelmointirajapintaa.
 
-### <a name="allcoation-using-tips"></a>Kohdistus vihjeiden avulla.
+### <a name="allocation-using-tips"></a>Kohdistus vihjeiden avulla.
 
-- Jokaisessa tuotteessa kohdistustoiminnon tulisi käyttää samaa dimensiotasoa, joka vastaa tuotteen indeksihierarkiaa, jonka määritit [tuotteen indeksihierarkian määrityksissä](inventory-visibility-configuration.md#index-configuration). Indeksihierarkia voi olla esimerkiksi toimipaikka, sijainti, väri, koko. Jos kohdistat jonkin määrän tuotteelle toimipaikka-, sijainti-, väritasolla. Kun seuraavan kerran kohdistusta käytetään, sen tulisi olla myös toimipaikka-, sijainti-, väritasolla, jos käytät toimipaikka-, sijainti-, väri-, kokotasoa tai toimipaikka-, sijaintitasoa, jotta tiedot olisivat yhdenmukaiset.
+- Jokaisessa tuotteessa kohdistustoiminnon tulisi käyttää samaa *dimensiotasoa*, joka vastaa tuotteen indeksihierarkiaa, jonka määritit [tuotteen indeksihierarkian määrityksissä](inventory-visibility-configuration.md#index-configuration). Oletetaan esimerkiksi, että indeksihierarkiasi on \[`Site`, `Location`, `Color`, `Size`\]. Jos kohdistat dimensiotasolla \[`Site`, `Location`, `Color`\] yhdelle tuotteelle määrän, kun haluat kohdistaa tämän tuotteen seuraavan kerran, se on tehtävä samalla tasolla, \[`Site`, `Location`, `Color`\]. Jos käytät tasoa \[`Site`, `Location`, `Color`, `Size`\] tai \[`Site`, `Location`\], tiedot ovat ristiriitaisia.
 - Kohdistusryhmän nimen muuttaminen ei vaikuta palveluun tallennettuihin tietoihin.
 - Kohdistuksen tulisi tapahtua, kun tuotteen käytettävissä oleva määrä on positiivinen.
+- Jos haluat kohdistaa korkean *kohdistustason* ryhmän tuotteet aliryhmään, käytä `Reallocate`-ohjelmointirajapintaa. Olet esimerkiksi kohdistanut kohdistusryhmän hierarkian \[`channel`, `customerGroup`, `region`, `orderType`\]haluat kohdistaa joitakin tuotteita kohdistusryhmästä \[Online, VIP \] alakohdistusryhmään \[Online, VIP, EU\], käytä `Reallocate`-ohjelmointirajapintaa määrän siirtämiseen. Jos käytät `Allocate`-ohjelmointirajapintaa, se kohdistaa määrän virtuaalisesta yleisestä poolista.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>Kohdistuksen ohjelmointirajapinnan käyttäminen
 

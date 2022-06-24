@@ -1,6 +1,6 @@
 ---
 title: Ylläpitopyynnöt
-description: Tässä aiheessa on yleiskatsaus ylläpitopyyntöjen hallintaan resurssien hallinnassa.
+description: Tässä artikkelissa on yleiskatsaus ylläpitopyyntöjen hallintaan resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6d247457b83036dba2fad8fd9f94e04c29a3aa5e
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3d6f7861d5c242d512c4ac984e9e9f1d0890c5dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848075"
 ---
 # <a name="maintenance-requests"></a>Ylläpitopyynnöt
 

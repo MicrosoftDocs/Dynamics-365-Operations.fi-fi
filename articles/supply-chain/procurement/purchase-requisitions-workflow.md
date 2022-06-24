@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849355"
 ---
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
@@ -89,7 +89,7 @@ Tässä esimerkissä hankintapyyntölinjojen työnkulkuprosessi sisältää seur
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Ostoehdotusten työnkulun määrittäminen
 Lähettääksesi hankintapyynnön tarkistettavaksi, sinun tulee määrittää hankintapyynnön työnkulkuprosessi. Määrittelemäsi työnkulkuprosessi ohjaa vuorovaikutusta käyttäjän, joka pyysi artikkeleita (pyytäjä) ja työnkulun tarkastajan sekä hyväksyjän välillä. Ostoehdotuksen reititys riippuu työnkulun konfiguraatiossa määritetyistä ehdoista. Nämä ehdot määrittävät esimerkiksi, milloin ostoehdotus määritetään, reitityksen kohteena olevan käyttäjän tai roolin sekä toiminnot, joita käyttäjät voivat suorittaa.  
 
-Tämän aiheen esimerkit näyttävät, kuinka ostoehdotus voidaan reitittää työnkulun läpi yksittäisenä asiakirjana tai yksittäisinä ostoehdotusriveinä. Voit myös määrittää ostoehdotusten työnkulun, joka kuvaa organisaatiosi sisäistä ostoehdotusten tarkastusta.  
+Tämän artikkelin esimerkit näyttävät, kuinka ostoehdotus voidaan reitittää työnkulun läpi yksittäisenä asiakirjana tai yksittäisinä ostoehdotusriveinä. Voit myös määrittää ostoehdotusten työnkulun, joka kuvaa organisaatiosi sisäistä ostoehdotusten tarkastusta.  
 
 Osallistujat tai tarkistajat, joille tehtävä määritetään työnkulussa, voivat olla tietyn käyttäjäryhmän jäseniä, käyttäjiä, joilla on tietty käyttöoikeusrooli, käyttäjiä, jotka on liitetty lähettäjän kanssa esimieshierarkiaan tai nimettyjä käyttäjiä tai käyttäjiä, joilla on tietyt menovastuualueet.
 

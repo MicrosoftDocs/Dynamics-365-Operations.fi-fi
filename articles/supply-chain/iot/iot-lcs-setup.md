@@ -1,6 +1,6 @@
 ---
 title: IoT-analytiikkalisäosan asentaminen LCS:ssä
-description: Tässä ohjeaiheessa käsitellään IoT-analytiikkalisäosan asentamista Microsoft Dynamics Lifecycle Servicesiin (LCS).
+description: Tässä artikkelissa käsitellään IoT-analytiikkalisäosan asentamista Microsoft Dynamics Lifecycle Servicesiin (LCS).
 author: johanhoffmann
 ms.date: 07/07/2020
 ms.topic: article
@@ -14,25 +14,25 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 12ffa71dc1c2badaffdc2e419a47d855635016f2
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 52fe4c4a79378aca5f1e64c8b3f4fa85199c9911
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679020"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887483"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>IoT-analytiikkalisäosan asentaminen LCS:ssä
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään IoT-analytiikkalisäosan asentamista Microsoft Dynamics Lifecycle Servicesiin (LCS). Huomaa, että lisäosia ei voi asentaa esittely- tai kokeiluympäristöön. Ennen lisäosan asentamista on [luotava Azure-resurssit](iot-azure-setup.md).
+Tässä artikkelissa käsitellään IoT-analytiikkalisäosan asentamista Microsoft Dynamics Lifecycle Servicesiin (LCS). Huomaa, että lisäosia ei voi asentaa esittely- tai kokeiluympäristöön. Ennen lisäosan asentamista on [luotava Azure-resurssit](iot-azure-setup.md).
 
 Voit määrittää IoT-analyysin ilman koodin kirjoittamista. Seuraavassa on perusvaiheet.
 
 1. [Azure-resurssien määrittäminen](iot-azure-setup.md) – Luo IoT Hub, Redis-välimuisti ja avainsäilö, joita voi käyttää Supply Chain Managementista.
 2. [IoT Hubin sanomarakenteen muodot](iot-schema-format.md) – Määritä laitteesi lähettämään sanomia IoT Hubille ja määritä JavaScript Object Notationin (JSON) sanomamuoto.
 3. Ota ominaisuuksienhallinnassa käyttöön IoT-analyysin toimintomerkintä.
-4. Asenna IoT-analyysin lisäosa Microsoft Dynamics Lifecycle Servicesiin (LCS) – Asenna lisäosa LCS:ään ja määritä Azuren salaiset koodit (kuten kuvattu tässä aiheessa).
+4. Asenna IoT-analyysin lisäosa Microsoft Dynamics Lifecycle Servicesiin (LCS) – Asenna lisäosa LCS:ään ja määritä Azuren salaiset koodit (kuten kuvattu tässä artikkelissa).
 5. [Mittareiden määrittäminen](iot-metrics-setup.md) – Määritä mittareita Supply Chain Managementissa.
 6. [Skenaarion määritys](iot-scenario-setup.md) – Määritä skenaariot Supply Chain Managementissa.
 

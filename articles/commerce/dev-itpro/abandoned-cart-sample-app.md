@@ -1,6 +1,6 @@
 ---
 title: Hylättyjen ostoskorien tunnistaminen ja ilmoitusten lähettäminen asiakkaille
-description: Tässä aiheessa kuvataan, kuinka voit mukauttaa Microsoft Dynamics 365 Commercen hylättyjen ostoskorien liittimen näytesovelluksen hylättyjen ostoskorien havaitsemiseksi ja muistutussähköpostiviestin lähettämiseksi asiakkaille.
+description: Tässä artikkelissa kuvataan, kuinka voit mukauttaa Microsoft Dynamics 365 Commercen hylättyjen ostoskorien liittimen näytesovelluksen hylättyjen ostoskorien havaitsemiseksi ja muistutussähköpostiviestin lähettämiseksi asiakkaille.
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489027"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899207"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Hylättyjen ostoskorien tunnistaminen ja ilmoitusten lähettäminen asiakkaille
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka voit mukauttaa Microsoft Dynamics 365 Commercen hylättyjen ostoskorien liittimen näytesovelluksen hylättyjen ostoskorien havaitsemiseksi ja muistutussähköpostiviestin lähettämiseksi asiakkaille.
+Tässä artikkelissa kuvataan, kuinka voit mukauttaa Microsoft Dynamics 365 Commercen hylättyjen ostoskorien liittimen näytesovelluksen hylättyjen ostoskorien havaitsemiseksi ja muistutussähköpostiviestin lähettämiseksi asiakkaille.
 
 Mahdollisuus parantaa tuottoa ja säilyttää asiakkaat hylättyjen ostoskorien ilmoitusten avulla on tärkeä ominaisuus, jota Dynamics 365 Commerce tukee. Mukauttamalla Commercen hylätyn ostoskärryn näytesovelluksen, vähittäismyyjät voivat käyttää Retail Serverissä ostoskärryjä, joita ei ole muutettu vähittäismyyjien määrittämän aikaikkunan aikana. Nämä ostoskorit voidaan sitten hakea, laajentaa tuote- ja asiakastiedoilla ja siirtää kolmannen osapuolen sähköpostimarkkinoinnin tarjoajalle, joka voi luoda sähköposti-ilmoituksia ja lähettää niitä asiakkaille.
 

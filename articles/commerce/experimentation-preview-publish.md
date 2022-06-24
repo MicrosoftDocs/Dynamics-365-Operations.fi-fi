@@ -1,30 +1,24 @@
 ---
 title: Kokeen esikatselu ja julkaisu
-description: Tässä ohjeaiheessa käsitellään kokeen esikatselua ja julkaisua Dynamics 365 Commercessa.
+description: Tässä artikkelissa käsitellään kokeen esikatselua ja julkaisua Dynamics 365 Commercessa.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5da7a4e3c17057278d02ebd45702d1de404f0dc6
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740380"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946129"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Kokeen esikatselu ja julkaisu
 
-Tässä ohjeaiheessa käsitellään kokeen esikatselua ja julkaisua Dynamics 365 Commercessa sen jälkeen, kun [koe on yhdistetty ja variaatiot muokattu](experimentation-connect-edit.md). Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä ohjeaiheissa.
+Tässä artikkelissa käsitellään kokeen esikatselua ja julkaisua Dynamics 365 Commercessa sen jälkeen, kun [koe on yhdistetty ja variaatiot muokattu](experimentation-connect-edit.md). Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä artikkeleissa.
 
 [ ![Kokeilun käyttäjän siirtymä – esikatselu ja julkaisu.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
@@ -52,11 +46,15 @@ Kun julkaisuryhmiä käytetään kokeissa, tietyt tärkeät seikat on otettava h
 - Kun julkaiset tai aikataulutat julkaisuryhmän, koko julkaisuryhmän sisältö julkaistaan riippumatta siitä, onko julkaisuryhmään liitetty koe vai ei.
 - Koska julkaisuryhmä jää pysyväksi, kun se on julkaistu live-sivustoon, myös julkaisuryhmässä olevat kokeet jäävät pysyviksi. Tämän vuoksi muita kokeita voi liittää samalla sivulla tai samassa ryhmässä. Tämä rajoitus voidaan välttää poistamalla kaikki julkaisuryhmät, joissa on pysyviä kokeita. Jos vastaavasti poista kokeen live-sivustossa, joka on myös julkaisuryhmässä, poista se ensin julkaisuryhmästä.
 
+### <a name="force-variations-for-testing"></a>Testin variaatioiden pakotus
+
+Kun kokeilu on live-tilassa, voit liittää koetunnuksen ja variaatiotunnuksen sivun oletus-URL-osoitteeseen ja pakottaa variaatiot testausta tai automaatiota varten. Jos sivun oletus-URL-osoite on esimerkiksi `https://fabrikam.com/modern/homepage`, voit pakottaa variaation URL-osoitteella kuten `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. Voit saada kokeilutunnuksen ja variaatiotunnuksen edellä selitettyä esikatselukokemusta varten esiversio-URL-osoitteesta edellä selitetystä **Esiversio**-kokemuksesta.
+
 ## <a name="previous-step"></a>Edellinen vaihe
 [Kokeilun yhdistäminen ja muokkaaminen](experimentation-connect-edit.md)
 
 ## <a name="next-step"></a>Seuraava vaihe
-[Kokeen suorittaminen ja seuranta](experimentation-run-monitor.md)
+[Kokeilun suoritus ja seuranta](experimentation-run-monitor.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

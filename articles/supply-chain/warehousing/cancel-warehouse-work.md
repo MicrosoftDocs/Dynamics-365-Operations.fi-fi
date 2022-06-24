@@ -1,6 +1,6 @@
 ---
 title: Varastotyön peruutus poikkeusten käsittelyä varten
-description: Tässä aiheessa kuvaillaan Peruuta työ -toiminto, jonka avulla varastojen esimiehet voivat käsitellä estynyttä työtä.
+description: Tässä artikkelissa kuvaillaan Peruuta työ -toiminto, jonka avulla varastojen esimiehet voivat käsitellä estynyttä työtä.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af0c147eefbfe22cb6b6d531f514e6f293d66689
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9a5c0cc988141b102cf3659ab4599e025f8f4640
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572406"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907171"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Varastotyön peruutus poikkeusten käsittelyä varten
 

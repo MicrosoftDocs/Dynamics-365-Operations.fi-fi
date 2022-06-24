@@ -1,6 +1,6 @@
 ---
-title: Arvonlisäveron laskeminen online-tilauksille
-description: Tässä ohjeaiheessa on yhteenveto eri online-tilaustyyppien arvonlisäveroryhmän valinnasta Dynamics 365 Commercessa.
+title: Arvonlisäveron määrittäminen online-tilauksille
+description: Tässä artikkelissa on yhteenveto eri online-tilaustyyppien arvonlisäveroryhmän valinnasta Dynamics 365 Commercessa.
 author: gvrmohanreddy
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 5801bbfb5b5850cb4c9ae06140bff5adca9b368febdc06d69c538fc49f9ee40a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac9fefe68663d76b3461d3209530976f66b113ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772958"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906883"
 ---
-# <a name="configure-sales-tax-for-online-orders"></a>Arvonlisäveron laskeminen online-tilauksille
+# <a name="configure-sales-tax-for-online-orders"></a>Arvonlisäveron määrittäminen online-tilauksille
 
 [!include [banner](includes/banner.md)]
 
-Tämä ohjeaihe sisältää yhteenvedon arvonlisäveroryhmän valinnasta eri online-tilaustyypeille joko kohteeseen perustuvien tai asiakastiliin perustuvien veroasetusten avulla. 
+Tämä artikkeli sisältää yhteenvedon arvonlisäveroryhmän valinnasta eri online-tilaustyypeille joko kohteeseen perustuvien tai asiakastiliin perustuvien veroasetusten avulla. 
 
 Haluat ehkä sähköisen kaupankäynnin kanavasi tukevan online-tilausten vaihtoehtoja, kuten toimittamista tai noutoa. Arvonlisäveron sovellettavuus perustuu online-asiakkaiden valitsemaan vaihtoehtoon. 
 

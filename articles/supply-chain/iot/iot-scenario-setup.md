@@ -1,6 +1,6 @@
 ---
 title: IoT-analytiikkaskenaarion määrittäminen
-description: Tässä ohjeaiheessa kerrotaan, miten IoT-analytiikan skenaarioita voidaan määrittää Microsoft Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa kerrotaan, miten IoT-analytiikan skenaarioita voidaan määrittää Microsoft Dynamics 365 Supply Chain Managementissa.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dddc282ef3e479d524b1dfa0c60091cad1c231e0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3172bdb81e00d20c5b1d1f3f8e4299ca69c59434
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889603"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>IoT-analytiikkaskenaarion määrittäminen
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten IoT-analytiikan skenaarioita voidaan määrittää Microsoft Dynamics 365 Supply Chain Managementissa. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
+Tässä artikkelissa kerrotaan, miten IoT-analytiikan skenaarioita voidaan määrittää Microsoft Dynamics 365 Supply Chain Managementissa. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
-Tässä ohjeaiheessa määritetään **Laiteseisokki**-skenaario siten, että Supply Chain Managementissa luodaan ilmoitus, kun kone sammuu. Tässä kerrotaan myös, miten **Tuotteen laatu** -skenaario määritetään siten, että järjestelmä luo ilmoituksen, jos nimikkeen määrite on määritetyn alueen ulkopuolella, ja miten **Tuotantoviiveet**-skenaario määritetään siten, että järjestelmä luo ilmoituksen, jos tuotantomäärä alittaa raja-arvon.
+Tässä artikkelissa määritetään **Laiteseisokki**-skenaario siten, että Supply Chain Managementissa luodaan ilmoitus, kun kone sammuu. Tässä kerrotaan myös, miten **Tuotteen laatu** -skenaario määritetään siten, että järjestelmä luo ilmoituksen, jos nimikkeen määrite on määritetyn alueen ulkopuolella, ja miten **Tuotantoviiveet**-skenaario määritetään siten, että järjestelmä luo ilmoituksen, jos tuotantomäärä alittaa raja-arvon.
 
 ## <a name="configure-the-equipment-downtime-scenario-in-supply-chain-management"></a>Laiteseisokki-skenaarion määrittäminen Supply Chain Managementissa
 

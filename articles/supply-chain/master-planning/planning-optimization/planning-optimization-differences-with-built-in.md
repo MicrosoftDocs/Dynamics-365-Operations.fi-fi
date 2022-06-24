@@ -1,6 +1,6 @@
 ---
 title: Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
-description: Tässä aiheessa on luettelo ominaisuuksista, joita suunnittelun optimointi ei vielä tue ja joita ei mainita suunnittelun optimoinnin sopivuusanalyysisivulla.
+description: Tässä artikkelissa on luettelo ominaisuuksista, joita suunnittelun optimointi ei vielä tue ja joita ei mainita suunnittelun optimoinnin sopivuusanalyysisivulla.
 author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
-ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
+ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "8618257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897571"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Sisäisen pääsuunnittelun ja suunnittelun optimoinnin erot
 
 [!include [banner](../../includes/banner.md)]
 
-Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuunnittelumoduulin tulokset. Erot voivat johtua odottavista ominaisuuksista. Tässä aiheessa on luettelo ominaisuuksista, joita suunnittelun optimointi ei vielä tue ja joita ei mainita **[Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)** -sivulla.
+Suunnittelun optimoinnin tulokset voivat olla erilaiset kuin sisäisen pääsuunnittelumoduulin tulokset. Erot voivat johtua odottavista ominaisuuksista. Tässä artikkelissa on luettelo ominaisuuksista, joita suunnittelun optimointi ei vielä tue ja joita ei mainita **[Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)** -sivulla.
 
 | Ominaisuus | Nykyinen suunnittelun optimoinnin toiminta |
 |---|---|

@@ -1,6 +1,6 @@
 ---
 title: Sinetöidyt tarjoukset tarjouspyyntöihin
-description: Tässä aiheessa kuvaillaan, miten määritetään eriävät lausekkeet, jotta toimittajien tarjousvastaukset voidaan säilyttää, kunnes ostohenkilöstö ei hallitse niitä.
+description: Tässä artikkelissa kuvaillaan, miten määritetään eriävät lausekkeet, jotta toimittajien tarjousvastaukset voidaan säilyttää, kunnes ostohenkilöstö ei hallitse niitä.
 author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: dfc19646d6724627c8a25bcfc8a6b2a70a73c261
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40f1735d7efa5131b1462963758b6b48eec78fea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675146"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890883"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Sinetöidyt tarjoukset tarjouspyyntöihin
 
@@ -148,7 +148,7 @@ Prosessi, jossa luodaan tarjouspyyntö, on miltei samanlainen kuin se prosessi, 
 Suljetuissa tarjouspyyntötapauksissa **tarjouspyynnön** arvon tulee olla *Suljettu*. Tämän arvon voi liittää tarjouspyyntöpyyntöön kolmella tavalla:
 
 - Määritä arvo suoraan tarjouspyyntöpyyntöön sen jälkeen, kun olet luonut sen.
-- Määritä suljettu hintatarjous oletustarjoustyypiksi kaikille tarjouspyyntötapauksille osto- ja hankintaparametreissa. (Lisätietoja on [Määritä oletustarjoustyyppi](#set-default-bid-type) -osassa aiemmin tässä aiheessa.)
+- Määritä suljettu hintatarjous oletustarjoustyypiksi kaikille tarjouspyyntötapauksille osto- ja hankintaparametreissa. (Lisätietoja on [Määritä oletustarjoustyyppi](#set-default-bid-type) -osassa aiemmin tässä artikkelissa.)
 - Kun luot uuden tarjouspyyntötapauksen, valitse pyyntötyypiksi se, joka sisältää suljetun tarjouksen. (Lisätietoja on kohdassa [Määritä oletustarjoustyyppi](#set-default-bid-type).)
 
 Suljetussa tarjouksessa tarjouspyyntötapauksen **viimeinen voimassaolopäivä ja -aika** määrittää, milloin lähetetyt tarjoukset voidaan purkaa. Kunkin rivin **vanhenemispäivämäärä ja -aika** vastaavat otsikon arvoa.

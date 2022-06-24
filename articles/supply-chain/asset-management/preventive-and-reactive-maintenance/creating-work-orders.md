@@ -1,6 +1,6 @@
 ---
 title: Työtilauksien luonti
-description: Tässä ohjeaiheessa selitetään, miten työtilaukset luodaan käyttöomaisuuden hallinnassa.
+description: Tässä artikkelissa selitetään, miten työtilaukset luodaan käyttöomaisuuden hallinnassa.
 author: johanhoffmann
 ms.date: 02/01/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c1477e3c1b99172d84d2cdc64fc0ed01c057e0fa59422b30c17868ca400de4d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1b8b3d8d83bdad2efe49bd4e878793cca6c49f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891202"
 ---
 # <a name="creating-work-orders"></a>Työtilauksien luonti
 
@@ -60,7 +60,7 @@ Ylläpitoaikatauluun perustuvia työtilauksia luodaan seuraavasti:
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Ylläpitosuunnitelman suorittamisen aikana automaattisesti luotavien työtilausrivien ryhmitteleminen
 
-Tällä toiminnolla voidaan määrittää ylläpitosuunnitelman perusteella säännöt, joilla työtilausrivit ryhmitellään yhteen työtilaukseen, kun järjestelmä on määritetty luomaan työtilauksia automaattisesti. Aiemmin automaattisesti luoduissa työtilauksissa saattoi olla vain yksi rivi. Työtilaukset voidaan kuitenkin nyt ryhmitellä esimerkiksi resurssin, resurssin tyypin tai toiminnallisen sijainnin perusteella. (Tällainen ryhmittely oli jo mahdollisesti manuaalisesti luoduissa työtilauksissa tämän aiheen edellisessä osassa kuvatulla tavalla.)
+Tällä toiminnolla voidaan määrittää ylläpitosuunnitelman perusteella säännöt, joilla työtilausrivit ryhmitellään yhteen työtilaukseen, kun järjestelmä on määritetty luomaan työtilauksia automaattisesti. Aiemmin automaattisesti luoduissa työtilauksissa saattoi olla vain yksi rivi. Työtilaukset voidaan kuitenkin nyt ryhmitellä esimerkiksi resurssin, resurssin tyypin tai toiminnallisen sijainnin perusteella. (Tällainen ryhmittely oli jo mahdollisesti manuaalisesti luoduissa työtilauksissa tämän artikkelin edellisessä osassa kuvatulla tavalla.)
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Automaattisesti luotujen työtilausten ryhmittelyn ottaminen käyttöön
 

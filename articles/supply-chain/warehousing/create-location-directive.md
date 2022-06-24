@@ -1,6 +1,6 @@
 ---
 title: Sijaintidirektiivien käyttäminen
-description: Tässä aiheessa käsitellään sijaintidirektiivien käyttämistä. Sijaintidirektiivit ovat käyttäjän määrittämiä sääntöjä, jotka auttavat tunnistamaan keräily- ja poispanosijainnit varaston siirrossa.
+description: Tässä artikkelissa käsitellään sijaintidirektiivien käyttämistä. Sijaintidirektiivit ovat käyttäjän määrittämiä sääntöjä, jotka auttavat tunnistamaan keräily- ja poispanosijainnit varaston siirrossa.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103135"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903692"
 ---
 # <a name="work-with-location-directives"></a>Sijaintidirektiivien käyttäminen
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103135"
 Sijaintidirektiivit ovat sääntöjä, jotka auttavat tunnistamaan keräily- ja poispanosijainnit varaston siirrossa. Esimerkiksi myyntitilaustapahtumassa sijaintidirektiivi määrittää, mistä nimikkeet kerätään ja minne kerätyt nimikkeet sijoitetaan. Sijaintidirektiiveissä on otsikko ja liitettyjä rivejä. Niitä luodaan tietyille *työtilaustyypeille*.
 
 > [!NOTE]
-> Tämä ohjeaihe koskee **Varastonhallinta**-moduulin ominaisuuksia. Se ei koske [Inventoinnin- ja varastonhallinta](../inventory/inventory-home-page.md) -moduulin ominaisuuksia.
+> Tämä artikkeli koskee **Varastonhallinta**-moduulin ominaisuuksia. Se ei koske [Inventoinnin- ja varastonhallinta](../inventory/inventory-home-page.md) -moduulin ominaisuuksia.
 
 Voit käyttää sijaintidirektiiviä seuraavien tehtävien suorittamiseen:
 
@@ -109,7 +109,7 @@ Seuraavassa taulukossa on työtilaustyyppikohtaiset kentät.
 
 Avaa **Sijaintidirektiivit**-sivu valitsemalla **Varaston hallinta \> Määritys \> Sijaintidirektiivit**.
 
-Tällä sivulla voi tarkastella, luoda ja muokata sijaintidirektiivejä toimintoruudun komennoilla. Tämä aiheen muissa osissa on tietoja kaikkien sivulla olevien kenttien käyttämisestä.
+Tällä sivulla voi tarkastella, luoda ja muokata sijaintidirektiivejä toimintoruudun komennoilla. Tämä artikkelin muissa osissa on tietoja kaikkien sivulla olevien kenttien käyttämisestä.
 
 ## <a name="action-pane"></a>Toimintoruutu
 
@@ -162,7 +162,7 @@ Sijaintidirektiivin otsikko sisältää seuraavat järjestysnumeron kentät ja s
 - **Käytettävä jakelukoodi** – Määritä, onko sijaintidirektiivin käsittelykoodin vastattava nimikettä vastaanotettaessa käytettävää käsittelykoodia vai voiko sijaintidirektiivin valita minkä tahansa käsittelykoodin perusteella. Jos valitset *Tarkka vastine* ja **Käsittelykoodi**-kenttä on tyhjä, vain käsittelykoodit otetaan huomioon tässä sijaintidirektiivissä.
 
     > [!NOTE]
-    > Tämä kenttä on käytettävissä vain valituissa työtilaustyypeissä, joissa sallitaan täydennys. Täydellinen on aiemmin tässä aiheessa kohdassa [Työtilaustyyppikohtaiset kentät](#fields-specific-types).
+    > Tämä kenttä on käytettävissä vain valituissa työtilaustyypeissä, joissa sallitaan täydennys. Täydellinen on aiemmin tässä artikkelissa kohdassa [Työtilaustyyppikohtaiset kentät](#fields-specific-types).
 
 - **Etsintäperuste** – Määritä, onko hyllytysmäärä koko rekisterikilven määrä vai onko se nimikekohtainen. Tämän kentän avulla voi varmistaa, että koko rekisterikilven sisältö hyllytetään yhteen sijaintiin ja että järjestelmä ei ehdota sisällön jakamista useisiin sijainteihin seuraavissa prosesseissa: **ASN** (rekisterikilven vastaanotto), **Yhdistetyn rekisterikilven vastaanotto** ja **Klusteri**-vastaanotto. (**Klusteri**-vastaanottoprosessi edellyttää, että [klusterihyllytystoiminto](putaway-clusters.md) on otettu käyttöön.) Sijaintidirektiivikyselyn, rivien ja sijaintidirektiivitoimintojen toiminta vaihtelee valitun arvon mukaan. **Rivit**-pikavälilehteä käytetään vain, kun **etsintäperusteena** on *nimike*.
 
@@ -254,7 +254,7 @@ Kun olet luonut sijaintidirektiivit, voit liittää kunkin direktiivikoodin työ
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - Video: [Perusteellinen varastonhallinnan määrityksen tarkastelu](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Ohjeaihe: [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](control-warehouse-location-directives.md)
+- Ohjeartikkeli: [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

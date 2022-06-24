@@ -1,6 +1,6 @@
 ---
 title: Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
-description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
+description: Tämä artikkeli on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 00c68155088ff2aabbe2fe0c4f431b665aebcd0a
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: ea1de0791a0eaffa2a8b1ac57143bdfd753f855b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462520"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884841"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Commerce-kanavien kirjanpidon integroinnin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista. 
+Tämä artikkeli on yleiskatsaus Dynamics 365 Commercen kirjanpidon integrointitoiminnoista. 
 
 Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa myynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
 

@@ -1,6 +1,6 @@
 ---
 title: Modern POS:n (MPOS:n) ja pilvimyyntipisteen esittelytietojen näyttöasettelut
-description: Tässä ohjeaiheessa on tietoja Dynamics 365 Commerce -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
+description: Tässä artikkelissa on tietoja Dynamics 365 Commerce -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761659"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897222"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Modern POS:n (MPOS:n) ja pilvimyyntipisteen esittelytietojen näyttöasettelut
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja Dynamics 365 Commerce -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
+Tässä artikkelissa on tietoja Dynamics 365 Commerce -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Commerce-demotietoihin sisältyvissä mallinäyttöasetteluissa on sisältöä, joka on optimoitu useita vähittäismyyntisegmenttejä, myymälän työntekijöiden rooleja ja laitteita varten. Yksi asettelu voi sisältää useita painikeruudukoiden asettelukokoja ja -yhdistelmiä. Näin myymälän työntekijät voiva siirtyä laitteiden ja asemien välillä. Tässä ohjeaiheessa käsitellään näiden asetteluiden välisiä eroja, asetteluiden työvaiheita ja niiden mahdollistamia yleisiä käyttökokemuksia.
+Commerce-demotietoihin sisältyvissä mallinäyttöasetteluissa on sisältöä, joka on optimoitu useita vähittäismyyntisegmenttejä, myymälän työntekijöiden rooleja ja laitteita varten. Yksi asettelu voi sisältää useita painikeruudukoiden asettelukokoja ja -yhdistelmiä. Näin myymälän työntekijät voiva siirtyä laitteiden ja asemien välillä. Tässä artikkelissa käsitellään näiden asetteluiden välisiä eroja, asetteluiden työvaiheita ja niiden mahdollistamia yleisiä käyttökokemuksia.
 
 ![Laitteiden välisten demotietojen asettelut.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -47,13 +47,13 @@ Näyttöasetteluiden tunnuksissa voi olla enintään 10 merkkiä. Tunnus on merk
 2. Asetteluversio
 3. Henkilötyyppi
 
-### <a name="company"></a>Yhtiö
+### <a name="company"></a>Yritys 
 
-| Kirje | Yhtiö         |
+| Kirje | Yritys          |
 |--------|-----------------|
 | A      | Adventure Works |
-| F      | Fabrikam        |
-| K      | Contoso         |
+| P      | Fabrikam:        |
+| Y      | Contoso         |
 
 ### <a name="layout-version"></a>Asetteluversio
 
@@ -141,7 +141,7 @@ Seuraavissa kuvissa ovat kolmen kuvitteellisen yrityksen aloitussivut ja tapahtu
 
 ### <a name="contoso"></a>Contoso
 
-![Contoson demotietojen asettelut.](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Contoso demotietojen asettelut.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Käyttäjän sisäänkirjausmatriisi
 

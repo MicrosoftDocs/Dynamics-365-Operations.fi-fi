@@ -1,6 +1,6 @@
 ---
-title: Myymälöiden tilauksen täyttämisen määrittäminen
-description: Tässä aiheessa käsitellään myymälän tilauksen täyttämisen määrittämistä.
+title: Tilauksen täyttämisen määrittäminen myymälöille
+description: Tässä artikkelissa käsitellään myymälän tilauksen täyttämisen määrittämistä.
 author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ed709c2a15a2d9e1675da55fc87284127e64ba39
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 12c60de59f1007256b67a56a5ede0b83857b73bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779593"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855027"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Tilauksen täyttämisen määrittäminen myymälöille
 

@@ -1,6 +1,6 @@
 ---
 title: Myyntipisteen lähtevä varastotoiminto
-description: Tässä ohjeaiheessa kuvataan myyntipisteen lähtevä varastotoiminto.
+description: Tässä artikkelissa kuvataan myyntipisteen lähtevä varastotoiminto.
 author: hhaines
 ms.date: 07/30/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: dd2c124660643628ca4c19dc3a49366b67f29ad3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850220"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Myyntipisteen lähtevä varastotoiminto
 
@@ -187,7 +187,7 @@ Kun asiakirjan tila on **Pyydetty**, se on valmis lähtevän varaston täyttämi
 
 Kokonaan lähetetyt siirtotilaukset siirretään **Valmis**-välilehteen **Lähtevä toiminto** -asiakirjaluettelossa. Ne näkyvät siellä lähtevän myymälän tai varaston käyttäjille vain luku -tilassa seitsemän päivän ajan.
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Myyntipisteen saapuva varastotoiminto](pos-inbound-inventory-operation.md)
 

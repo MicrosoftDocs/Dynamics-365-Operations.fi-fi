@@ -1,6 +1,6 @@
 ---
 title: Aallon kohdistus
-description: Tässä aiheessa kuvataan, miten voit määrittää aallon kohdistusvaiheen. Tässä aiheessa kuvataan myös, miten sen rinnakkaiskäsittely otetaan käyttöön.
+description: Tässä artikkelissa kuvataan, miten voit määrittää aallon kohdistusvaiheen. Tässä aiheessa kuvataan myös, miten sen rinnakkaiskäsittely otetaan käyttöön.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 08781b26a4e066a026d4efa14670f073b04ec185
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c6b89364afd57b9c4b4413d0319b86e725433594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906948"
 ---
 # <a name="wave-allocation"></a>Aallon kohdistus
 
@@ -25,7 +25,7 @@ ms.locfileid: "8695532"
 
 Aallon käsittelyssä voi kulua kauan, ja suurin osa käsittelyajasta kuluu kohdistusvaiheessa ja työn luontivaiheessa.
 
-Kaikki nämä vaiheet on nyt mahdollista suorittaa rinnakkain, mikä voi parantaa aallon käsittelyn suorituskykyä ja mahdollistaa suuremman määrän aaltojen samassa varastossa. Tässä aiheessa kerrotaan, miten voit määrittää aallon kohdistusmenetelmän, joka suoritetaan rinnakkain. Lisätietoja siitä, miten työn luonti määritetään samanaikaista ajoa varten, on kohdassa [Aikatauluta työn luonti aallon aikana](configure-wave-schedule-work-creation.md).
+Kaikki nämä vaiheet on nyt mahdollista suorittaa rinnakkain, mikä voi parantaa aallon käsittelyn suorituskykyä ja mahdollistaa suuremman määrän aaltojen samassa varastossa. Tässä artikkelissa kerrotaan, miten voit määrittää aallon kohdistusmenetelmän, joka suoritetaan rinnakkain. Lisätietoja siitä, miten työn luonti määritetään samanaikaista ajoa varten, on kohdassa [Aikatauluta työn luonti aallon aikana](configure-wave-schedule-work-creation.md).
 
 Aiemmin varastossa voi kohdistaa vain yhden aallon kerrallaan. Tämä rajoitus on poistettu ja korvattu uudella rajoituksella, joka lukitsee vain ne nimikkeet ja dimensiot, jotka ovat varaushierarkiassa yläpuolella. Sijainnin yläpuolella olevat dimensiot sisältävät aina tuotedimensioita. Jos nimike on määritetty esimerkiksi *Väri*-määrityksen avulla, *punaisen*, *sinisen* ja *keltaisen* variantin voi kunkin käsitellä rinnakkain.
 

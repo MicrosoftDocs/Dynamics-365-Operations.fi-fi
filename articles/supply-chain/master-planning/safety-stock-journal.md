@@ -1,6 +1,6 @@
 ---
 title: Varmuusvaraston kirjauskansion käyttäminen tuotteiden vähimmäiskattavuuden päivittämiseen
-description: Tässä aiheessa käsitellään varmuusvaraston kirjauskansion käyttämistä nimikkeiden varmuusvaraston määrän päivittämiseen. Se tehdään laskemalla historiallisiin tapahtumiin perustuvat vähimmäiskattavuusehdotukset.
+description: Tässä artikkelissa käsitellään varmuusvaraston kirjauskansion käyttämistä nimikkeiden varmuusvaraston määrän päivittämiseen. Se tehdään laskemalla historiallisiin tapahtumiin perustuvat vähimmäiskattavuusehdotukset.
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468535"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851766"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>Varmuusvaraston kirjauskansion käyttäminen tuotteiden vähimmäiskattavuuden päivittämiseen
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468535"
 
 Varmuusvarasto ilmaisee, kuinka paljon ylimääräisiä nimikkeitä on varastossa, jotta nimikkeen loppuminen varastosta voidaan estää. Varmuusvarastoa käytetään puskurivarastona siltä varalta, että toimittaja ei voi toimittaa koko myyntitilausta vastaavaa määrää pyydettyyn lähetyspäivämäärään mennessä.
 
-Tässä aiheessa käsitellään varmuusvaraston kirjauskansion käyttämistä vähimmäiskattavuuden ehdotusten laskemista historiallisen tapahtumien perusteella ja päivittämistä nimikekattavuuden ehdotusten mukaiseksi.
+Tässä artikkelissa käsitellään varmuusvaraston kirjauskansion käyttämistä vähimmäiskattavuuden ehdotusten laskemista historiallisen tapahtumien perusteella ja päivittämistä nimikekattavuuden ehdotusten mukaiseksi.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>Vähimmäiskattavuuden käytön yleiskuvaus
 
@@ -43,7 +43,7 @@ Varmuusvarasto määritetään kunkin nimikkeen **Nimikkeen kattavuus** -sivulla
 
 Varmuusvaraston kirjauskansioita käytetään laskemaan ehdotettu vähimmäismäärä nimikkeen historiallisen käytön perusteella joko minimi- tai maksimikäyttöä tai varastosuunnitelmakäyttöä varten. Historiallinen käyttö ilmaisee kaikki varasto-ottotapahtumat määritettynä ajanjaksona. Nämä varasto-ottotapahtumat sisältävät myyntitilaustapahtumat ja varastonmuutokset. Laskelmat määrittävät myös ehdotetun minimimäärän vaikutuksen varastoarvoon ja varastoarvon muutoksen nykyisiin minimimääriin verrattuna.
 
-Kukin varmuusvaraston kirjauskansion rivi ilmaisee nimikkeen ja sen kattavuusdimensiot. Nämä kirjauskansion rivit luodaan ja näytetään **Varmuusvaraston kirjauskansion rivit** -sivulla (**Pääsuunnittelu \> Pääsuunnittelu \> Suorita \> Varmuusvaraston laskenta**). Liiketoimintaprosessia, jolla ehdotetut vähimmäismäärät lasketaan varmuusvaraston kirjauskansioiden avulla, käsitellä jäljempänä tässä aiheessa.
+Kukin varmuusvaraston kirjauskansion rivi ilmaisee nimikkeen ja sen kattavuusdimensiot. Nämä kirjauskansion rivit luodaan ja näytetään **Varmuusvaraston kirjauskansion rivit** -sivulla (**Pääsuunnittelu \> Pääsuunnittelu \> Suorita \> Varmuusvaraston laskenta**). Liiketoimintaprosessia, jolla ehdotetut vähimmäismäärät lasketaan varmuusvaraston kirjauskansioiden avulla, käsitellä jäljempänä tässä artikkelissa.
 
 Suunnittelija laskee varmuusvaraston kirjauskansion avulla valittujen nimikkeiden ehdotetut vähimmäismäärät sen perusteella, mikä oli historiallinen käyttö valittuina ajanjaksoina. Ehdotetut minimit voidaan ohittaa tarvittaessa manuaalisesti, ja ehdotettujen minimien mahdollista vaikutusta varastoarvoon voidaan tarkastella. Kun kirjauskansio kirjataan, liittyvät vähimmäismäärät päivitetään automaattisesti nimikkeen kattavuudessa.
 
@@ -89,7 +89,7 @@ Kirjauskansion rivit luodaan automaattisesti seuraavasti:
 
     - **Päivämäärästä** – valitse sen ajanjakson alkamispäivä, jonka aikaiset varasto-otot on sisällytettävä laskelmaan.
     - **Päivämäärään** – Valitse sen ajanjakson päättymispäivä, jonka aikaiset varasto-otot on sisällytettävä laskelmaan. Alkamis- ja päättymispäivien välissä on oltava vähintään kaksi kuukautta.
-    - **Laske vakiopoikkeama** – Laske keskihajonta valitsemalla tässä asetukseksi *Kyllä*. Asetuksena on oltava *Kyllä*, jos **Käytä palvelutasoa** -vaihtoehtoa halutaan käyttää ehdotusta laskettaessa. (Lisätietoja on jäljempänä tässä aiheessa.)
+    - **Laske vakiopoikkeama** – Laske keskihajonta valitsemalla tässä asetukseksi *Kyllä*. Asetuksena on oltava *Kyllä*, jos **Käytä palvelutasoa** -vaihtoehtoa halutaan käyttää ehdotusta laskettaessa. (Lisätietoja on jäljempänä tässä artikkelissa.)
 
 1. **Sisällytettävät tietueet** -pikavälilehdessä voidaan määrittää suodattimet ja rajoitteet, joiden avulla määritetään raporttiin sisällytettävät nimikkeet. (Suodatusperusteena voi olla esimerkiksi **Kattavuusryhmä** -arvo.) Avaa vakiokyselyeditorin valintaikkuna valitsemalla **Suodatus**. Tässä ikkunassa voidaan määrittää valinta- ja lajitteluehdot sekä liitokset. Kentät toimivat samalla tavalla kuin muissakin Microsoft Dynamics 365 Supply Chain Managementin kyselyissä.
 1. Valitse **Suorita taustalla** -pikavälilehdessä, suoritetaanko työ erätilassa, ja/tai määritä toistuva aikataulu. Kentät toimivat samalla tavalla kuin muissakin [taustatöissä](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) Supply Chain Managementissa.
@@ -110,7 +110,7 @@ Tässä vaiheessa lasketaan ehdotettu minimi kullekin kirjauskansion riville ja 
 Näytettävät laskelmat eivät vaikuta kunkin tuotteiden todellisen vähimmäismäärän arvoihin ennen **Kirjaa**-asetuksen valintaa toimintoruudussa. Siinä vaiheessa **Uusi vähimmäismäärä** -arvoja käytetään kussakin tuotteessa.
 
 1. Valitse **Pääsuunnittelu \> Pääsuunnittelu \> Suorita \> Varmuusvaraston laskenta**.
-1. Avaa kirjauskansio, jolle ehdotus lasketaan. Vaihtoehtoisesti voit luoda uuden kirjauskansion aiemmin tässä aiheessa kuvatulla tavalla.
+1. Avaa kirjauskansio, jolle ehdotus lasketaan. Vaihtoehtoisesti voit luoda uuden kirjauskansion aiemmin tässä artikkelissa kuvatulla tavalla.
 1. Valitse **Kirjauskansion rivit**-pikavälilehden työkalurivillä **Laske ehdotus**. (Rivejä ei tarvitse valita.)
 1. Määritä **Laske ehdotus varaston vähimmäistasolle** -valintaikkunassa seuraavat kentät:
 

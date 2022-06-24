@@ -1,6 +1,6 @@
 ---
 title: Tuotedimensioiden yhdistäminen sijainnissa
-description: Tässä ohjeaiheessa on tietoja tuotteiden useiden eri mittojen yhtäaikaisesta käytöstä samassa toimipaikassa. Tämä toimipaikkaprofiilin toiminto auttaa parantamaan toimipaikan varastonhallintaa, kun tuotteesta on varastossa useita variantteja tai tuotteiden ominaisuudet vaihtelevat, kuten muotiteollisuudessa. Sen avulla voit määrittää, voidaanko toimipaikkaprofiilissa sekoittaa tuotteita kokoonpanon, värin, tyylin ja värin mukaan vai voidaanko samassa toimipaikassa varastoida vain yhtä tietyn ominaisuuden tai ominaisuusyhdistelmän tuotetta.
+description: Tässä artikkelissa on tietoja tuotteiden useiden eri mittojen yhtäaikaisesta käytöstä samassa toimipaikassa. Tämä toimipaikkaprofiilin toiminto auttaa parantamaan toimipaikan varastonhallintaa, kun tuotteesta on varastossa useita variantteja tai tuotteiden ominaisuudet vaihtelevat, kuten muotiteollisuudessa. Sen avulla voit määrittää, voidaanko toimipaikkaprofiilissa sekoittaa tuotteita kokoonpanon, värin, tyylin ja värin mukaan vai voidaanko samassa toimipaikassa varastoida vain yhtä tietyn ominaisuuden tai ominaisuusyhdistelmän tuotetta.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103485"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885722"
 ---
 # <a name="location-product-dimension-mixing"></a>Tuotedimensioiden yhdistäminen sijainnissa
 
@@ -28,7 +28,7 @@ Tuotedimensioiden yhdistäminen sijainnissa on toimipaikkaprofiilin toiminto, jo
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Ota Tuotedimensioiden yhdistäminen sijainnissa käyttöön tai pois käytöstä
 
-Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Tuotedimensioiden yhdistäminen sijainnissa* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Tuotedimensioiden yhdistäminen sijainnissa* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Tässä artikkelissa kuvatun toiminnon käyttäminen edellyttää, että *Tuotedimensioiden yhdistäminen sijainnissa* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Tuotedimensioiden yhdistäminen sijainnissa* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="setup"></a>Asetukset
 
@@ -44,7 +44,7 @@ Jokaisella varastosijainnilla on oltava oma sijaintiprofiili, joka määrittää
     > [!NOTE]
     > Voit määrittää tämän asetuksen arvoksi *Kyllä* vain, jos **Salli yhdistetyt nimikkeet** -asetuksen arvoksi on määritetty *Ei*.
 
-1. Määritä **Sallitut tuotedimensioiden yhdistämiset** -pikavälilehdessä asetuksen **Koko** arvoksi *Kyllä*. Tässä ohjeaiheessa kuvatussa skenaariossa voidaan yhdistää vain tuotteita, joiden **Koko**-dimensiot eroavat toisistaan. Myös muita asetuksia on käytettävissä.
+1. Määritä **Sallitut tuotedimensioiden yhdistämiset** -pikavälilehdessä asetuksen **Koko** arvoksi *Kyllä*. Tässä artikkelissa kuvatussa skenaariossa voidaan yhdistää vain tuotteita, joiden **Koko**-dimensiot eroavat toisistaan. Myös muita asetuksia on käytettävissä.
 1. Valitse **Tallenna**.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Luo uusi päätuote ja tuotevariantit

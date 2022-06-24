@@ -1,6 +1,6 @@
 ---
 title: Tarkistusyksikön integrointiesimerkin käyttöönoton ohjeet (Ruotsi) (vanha)
-description: Tässä aiheessa on ohjeita Ruotsin tarkistusyksikön integrointiesimerkin käyttöönottamiseksi Retail -ohjelmistokehityspaketista (SDK)
+description: Tässä artikkelissa on ohjeita Ruotsin tarkistusyksikön integrointiesimerkin käyttöönottamiseksi Retail -ohjelmistokehityspaketista (SDK)
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077035"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870544"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Tarkistusyksikön integrointiesimerkin käyttöönoton ohjeet (Ruotsi) (vanha)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on ohjeita, jotka koskevat Ruotsin tarkistusyksikön integrointiesimerkin käyttöönottoa Retail -ohjelmistokehityspaketista (SDK) kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja tästä kirjanpidon integroinnin esimerkistä on kohdassa [Ruotsin tarkistusyksikön integrointiesimerkki](emea-swe-fi-sample.md). 
+Tässä artikkelissa on ohjeita, jotka koskevat Ruotsin tarkistusyksikön integrointiesimerkin käyttöönottoa Retail -ohjelmistokehityspaketista (SDK) kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja tästä kirjanpidon integroinnin esimerkistä on kohdassa [Ruotsin tarkistusyksikön integrointiesimerkki](emea-swe-fi-sample.md). 
 
-Ruotsin verointegraation esimerkki kuuluu Retail SDK -pakettiin. Lisätietoja SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tämä esimerkki koostuu Commerce runtime (CRT)-, Hardware Station- ja myyntipiste (POS) -laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT-, Hardware Station- ja POS-projektit. Suosittelemme, että teet tässä aiheessa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Azure DevOpsia, jossa tiedostoja ei ole vielä muutettu.
+Ruotsin verointegraation esimerkki kuuluu Retail SDK -pakettiin. Lisätietoja SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tämä esimerkki koostuu Commerce runtime (CRT)-, Hardware Station- ja myyntipiste (POS) -laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT-, Hardware Station- ja POS-projektit. Suosittelemme, että teet tässä artikkelissa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Azure DevOpsia, jossa tiedostoja ei ole vielä muutettu.
 
 ## <a name="development-environment"></a>Kehitysympäristö
 
@@ -257,7 +257,7 @@ Siirtoprosessin tulisi koostua seuraavista vaiheista.
 1. Päivitä POS- ja Hardware station -komponentit, poista aiempaan esimerkkiin liittyvät laajennukset käytöstä ja ota käyttöön nykyisen esimerkin laajennukset.
 
     > [!NOTE]
-    > Ympäristötyypin mukaan siirtoprosessista on teknisiä lisätietoja joko tämän ohjeaiheen [Kehitysympäristön siirto](#migration-in-a-development-environment) -osassa tai [Tuotantoympäristön siirto](#migration-in-a-production-environment) -osassa.
+    > Ympäristötyypin mukaan siirtoprosessista on teknisiä lisätietoja joko tämän artikkelin [Kehitysympäristön siirto](#migration-in-a-development-environment) -osassa tai [Tuotantoympäristön siirto](#migration-in-a-production-environment) -osassa.
 
 ### <a name="migration-in-a-development-environment"></a>Kehitysympäristön siirto
 

@@ -1,6 +1,6 @@
 ---
 title: Kokeen tilan tarkistaminen
-description: Tässä ohjeaiheessa käsitellään kokeen tilaa kokeilun elinkaaren aikana Dynamics 365 Commercessa.
+description: Tässä artikkelissa käsitellään kokeen tilaa kokeilun elinkaaren aikana Dynamics 365 Commercessa.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: af19a1c2e6a3205cd76c9fe998d1c8268f9077661b96c43b9aa9733286bd32d9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 818435a7c901d2a6b876b9c9db27faffc8b322fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877246"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Kokeen tilan tarkistaminen
 Kokeen määrittäminen ja suorittaminen Dynamics 365 Commercessa on monivaiheinen prosessi. Lisätietoja kokeilun elinkaaresta on kohdassa [Kokeilut Dynamics 365 Commercessa](experimentation-overview.md).

@@ -1,6 +1,6 @@
 ---
 title: Yhdistä oheislaitteet myyntipisteeseen (POS)
-description: Tässä aiheessa käsitellään oheislaitteiden liittämistä Retail POS:hon.
+description: Tässä artikkelissa käsitellään oheislaitteiden liittämistä Retail POS:hon.
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
-ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
+ms.openlocfilehash: ffee75e1713c7c9d31b1d023cd055c2f1a3fc43d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897105"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Yhdistä oheislaitteet myyntipisteeseen (POS)
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa käsitellään oheislaitteiden liittämistä Retail POS:hon.
+Tässä artikkelissa käsitellään oheislaitteiden liittämistä Retail POS:hon.
 
 > [!NOTE]
 > Tarkat asennusohjeet ovat kohdissa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md) ja [Moderni POS (MPOS) -ratkaisun määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
@@ -157,7 +157,7 @@ Kuittiprofiilit määritetään tulostimeen laiteprofiilissa. Niillä määritet
 
 #### <a name="hardware-profiles"></a>Laiteprofiilit
 
-Laiteprofiilit on käsitelty aiemmin tässä aiheessa asiakasohjelman asetusten osana. Laiteprofiilit liitetään suoraan myyntipisteen kassakoneeseen tai jaettuun laiteasemaan, ja niiden avulla määritetään laitetyypit, joita tietty POS-kassapääte tai laiteasema käyttää. Laiteprofiileilla määritetään myös sähköisen rahansiirron asetukset, joita käytetään tiedonsiirtoon maksu-SDK:n kanssa.
+Laiteprofiilit on käsitelty aiemmin tässä artikkelissa asiakasohjelman asetusten osana. Laiteprofiilit liitetään suoraan myyntipisteen kassakoneeseen tai jaettuun laiteasemaan, ja niiden avulla määritetään laitetyypit, joita tietty POS-kassapääte tai laiteasema käyttää. Laiteprofiileilla määritetään myös sähköisen rahansiirron asetukset, joita käytetään tiedonsiirtoon maksu-SDK:n kanssa.
 
 #### <a name="visual-profiles"></a>Visuaaliset profiilit
 

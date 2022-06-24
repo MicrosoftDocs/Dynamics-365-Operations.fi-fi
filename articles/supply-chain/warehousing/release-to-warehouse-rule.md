@@ -1,6 +1,6 @@
 ---
 title: Vapauta varastoon -sääntö
-description: Tässä ohjeaiheessa on tietoja vapauta varastoon -sääntöominaisuudesta, joka mahdollistaa joustavuuden varastoon vapauttaessa. Se lisää konfigurointivaihtoehdon, joka määrittää, salliko järjestelmä osittaisten varattujen tilausrivien vapauttamisen.
+description: Tässä artikkelissa on tietoja vapauta varastoon -sääntöominaisuudesta, joka mahdollistaa joustavuuden varastoon vapauttaessa. Se lisää konfigurointivaihtoehdon, joka määrittää, salliko järjestelmä osittaisten varattujen tilausrivien vapauttamisen.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5fef1d942f2e9d3467fb8a00c6d89cc5c018a5aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895464"
 ---
 # <a name="release-to-warehouse-rule"></a>Vapauta varastoon -sääntö
 
@@ -78,7 +78,7 @@ Voit hyödyntää näitä skenaarioita ominaisuuden ohjeena, kun työskentelet t
 Tämä skenaario näyttää, miten toiminto toimii sellaisissa varastoissa, joiden arvoksi on määritetty **Vaadi täysi varaus**.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Varastot**.
-1. Jos kyseessä on varasto _62_, määritä **varaston varaustarve** -kentän arvoksi **edellyttää täyttä varausta**, joka on kuvattu aiemmin tässä ohjeaiheessa olevan [Määritä vapautus fyysiseen varastoon](#set-option-warehouse) -säännön mukaisesti.
+1. Jos kyseessä on varasto _62_, määritä **varaston varaustarve** -kentän arvoksi **edellyttää täyttä varausta**, joka on kuvattu aiemmin tässä artikkelissa olevan [Määritä vapautus fyysiseen varastoon](#set-option-warehouse) -säännön mukaisesti.
 1. Valitse **Myynti ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset**.
 1. Luo uusi myyntitilaus valitsemalla **Uusi**.
 1. Aseta **Luo myyntitilaus** -valintaikkunassa seuraavat arvot:
@@ -112,7 +112,7 @@ Tämä skenaario näyttää, miten toiminto toimii sellaisissa varastoissa, joid
 Tämä skenaario näyttää, miten toiminto toimii sellaisissa varastoissa, joiden arvoksi on määritetty **Salli osittainen vapautus**.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Varastot**.
-1. Jos kyseessä on varasto _62_, määritä **varaston varaustarve** -kentän arvoksi **Salli osittainen varaus**, joka on kuvattu aiemmin tässä ohjeaiheessa olevan [Määritä vapautus fyysiseen varastoon](#set-option-warehouse) -säännön mukaisesti.
+1. Jos kyseessä on varasto _62_, määritä **varaston varaustarve** -kentän arvoksi **Salli osittainen varaus**, joka on kuvattu aiemmin tässä artikkelissa olevan [Määritä vapautus fyysiseen varastoon](#set-option-warehouse) -säännön mukaisesti.
 1. Kuten teit [edellisessä skenaariossa](#scenario1), siirry kohtaan **Myynti- ja markkinointi \> Myyntitilaukset \> Kaikki myyntitilaukset** ja luo myyntitilaus asiakastilille _US-004_ varastosta _62_. Lisää seuraavat kaksi tilausriviä:
 
     - **Rivi 1:** Aseta **Nimiketunnus**-kentän arvoksi _A0001_, **Määrä**-kentän arvoksi _2_ ja **Yksikkö**-kentän arvoksi _kpl_.

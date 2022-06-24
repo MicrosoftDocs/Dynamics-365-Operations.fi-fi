@@ -1,6 +1,6 @@
 ---
 title: Varastoennusteet
-description: Tässä aiheessa kuvataan tarjonta- ja kysyntäennustetoimintoa, jota voidaan käyttää varastoennusteiden luomiseen Microsoft Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa kuvataan tarjonta- ja kysyntäennustetoimintoa, jota voidaan käyttää varastoennusteiden luomiseen Microsoft Dynamics 365 Supply Chain Managementissa.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548164"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844522"
 ---
 # <a name="inventory-forecasts"></a>Varastoennusteet
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten varastoennusteita voidaan tarkastella ja luoda. Voit luoda ja tarkastella nimikkeiden, nimikeryhmien, nimikkeiden kohdistustunnusten, asiakastilien, asiakasryhmien, toimittajatilien ja toimittajaryhmien tarjonta- ja kysyntäennusteita.
+Tässä artikkelissa kuvataan, miten varastoennusteita voidaan tarkastella ja luoda. Voit luoda ja tarkastella nimikkeiden, nimikeryhmien, nimikkeiden kohdistustunnusten, asiakastilien, asiakasryhmien, toimittajatilien ja toimittajaryhmien tarjonta- ja kysyntäennusteita.
 
 Voit valita kullekin ennusteriville käytetyn ennustemallin. Sen jälkeen voit määrittää nimikkeen tai nimikeryhmän sekä määrän tai tapahtumasumman. Voit määrittää myös aikavälit ennustemäärän kohdistusta varten.
 
@@ -60,7 +60,7 @@ Vaiheen 1 taulukossa näkyvät eri tavat käyttää käytettyjä sivuja.
     Näyttöön tulee **Tarjontaennuste**- tai **Kysyntäennuste**-sivu valintasi mukaan. Siinä näkyvät ennen sivun avaamista valitun tietueen ennusterivit.
 
 1. Valitse toimintoruudussa **Uusi** lisätäksesi ennusterivin ruudukkoon sivun yläosassa.
-1. Valitse uuden rivin **Malli**-kentästä käytettävä ennustemalli. Syötä sitten muut tarvittavat tiedot, kuten nimike, nimikeryhmä, asiakas- tai toimittajatili tai -ryhmä, nimikemäärä tai tapahtuman kokonaissumma. Tässä ohjeaiheessa jäljempänä on tietoja **Tarjontaennuste**- ja **Kysyntäennuste**-sivuilla käytettävissä olevista kentistä.
+1. Valitse uuden rivin **Malli**-kentästä käytettävä ennustemalli. Syötä sitten muut tarvittavat tiedot, kuten nimike, nimikeryhmä, asiakas- tai toimittajatili tai -ryhmä, nimikemäärä tai tapahtuman kokonaissumma. Tässä artikkelissa jäljempänä on tietoja **Tarjontaennuste**- ja **Kysyntäennuste**-sivuilla käytettävissä olevista kentistä.
 1. Jos haluat jakaa ennusteen kaudelle, valitse **Yhteenveto**-välilehdestä **Kohdista ennuste** työkaluriviltä.
 1. Tarkista **Kohdistus**-ruudukossa aikajakso ja aikavälit ennustemäärien jakelua varten.
 
@@ -68,7 +68,7 @@ Vaiheen 1 taulukossa näkyvät eri tavat käyttää käytettyjä sivuja.
 
 Tarjontaennusteen avulla voit luoda suunnitelman ostettaville nimikkeille. Se kertoo hankintatyöntekijöille, mitä heidän odotetaan tilaavan.
 
-Voit määrittää tarjontaennusteen nimikkeen, nimikeryhmän, nimikkeen varaustunnuksen, toimittajan ja toimittajaryhmän mukaan. Tietoja kaikista tavoista, joilla eri yksiköiden ja tietueiden **Tarjontaennuste**-sivu voidaan avata, on tämän ohjeaiheen aiemmassa kohdassa [Ennusterivien tarkasteleminen ja manuaalinen syöttäminen](#manual-entry).
+Voit määrittää tarjontaennusteen nimikkeen, nimikeryhmän, nimikkeen varaustunnuksen, toimittajan ja toimittajaryhmän mukaan. Tietoja kaikista tavoista, joilla eri yksiköiden ja tietueiden **Tarjontaennuste**-sivu voidaan avata, on tämän artikkelin aiemmassa kohdassa [Ennusterivien tarkasteleminen ja manuaalinen syöttäminen](#manual-entry).
 
 **Tarjontaennuste**-sivun yläosassa on tarjontaennusterivien ruudukko sekä välilehtijoukko, jonka avulla voit tarkastella ja määrittää lisätietoja valitusta ennusterivistä. Sivun alaosassa on **Kohdistus**-ruudukko.
 
@@ -94,9 +94,9 @@ Seuraavassa taulukossa kuvataan komennot, jotka ovat käytettävissä **Tarjonta
 
 | Komento | kuvaus |
 |---|---|
-| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennusteen kohdistus](#allocate-forecast).) |
-| Joukkopäivitys | Avaa **Muokkaa ennustetapahtumia** -sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennustetapahtumien joukkopäivitys](#bulk-update).) |
-| Varastoennuste | Avaa valitulle nimike-/malliyhdistelmälle suodatettu **Varastoennuste**-sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Varastoennusteet](#inventory-forecast).) |
+| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Ennusteen kohdistus](#allocate-forecast).) |
+| Joukkopäivitys | Avaa **Muokkaa ennustetapahtumia** -sivu. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Ennustetapahtumien joukkopäivitys](#bulk-update).) |
+| Varastoennuste | Avaa valitulle nimike-/malliyhdistelmälle suodatettu **Varastoennuste**-sivu. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Varastoennusteet](#inventory-forecast).) |
 | Luo nimiketarve | Avaa valintaikkuna, jossa voit luoda nimiketarpeet sekä projektiin liittyvien ennustetapahtumien myyntitilaus- tai nimikekirjauskansion rivit. Vaikka tämä komento on käytettävissä sekä tarjontaennusteriveillä että kysyntäennusteriveillä, sitä ei voi käyttää **Tarjontaennuste**-sivulla. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>Tarjontaennuste-sivun Yhteenveto-välilehti
@@ -173,7 +173,7 @@ Jos käytät nimikkeenkohdistustunnusta tai olet syöttänyt nimike-ennusteen yh
 
 Kysyntäennusteen avulla voit määrittää tai luoda asiakkaalle kysyntää. Se auttaa myynti- ja markkinointityöntekijöitä tiedottamaan pääsuunnittelun työntekijöille odotetusta kysynnästä tulevan ennustekauden aikana.
 
-Voit määrittää kysyntäennusteen nimikkeen, nimikeryhmän, nimikkeen varaustunnuksen, asiakkaan ja asiakasryhmän mukaan. Tietoja kaikista tavoista, joilla eri yksiköiden ja tietueiden **Kysyntäennuste**-sivu voidaan avata, on tämän ohjeaiheen aiemmassa kohdassa [Ennusterivien tarkasteleminen ja manuaalinen syöttäminen](#manual-entry).
+Voit määrittää kysyntäennusteen nimikkeen, nimikeryhmän, nimikkeen varaustunnuksen, asiakkaan ja asiakasryhmän mukaan. Tietoja kaikista tavoista, joilla eri yksiköiden ja tietueiden **Kysyntäennuste**-sivu voidaan avata, on tämän artikkelin aiemmassa kohdassa [Ennusterivien tarkasteleminen ja manuaalinen syöttäminen](#manual-entry).
 
 **Kysyntäennuste**-sivun yläosassa on kysyntäennusterivien ruudukko sekä välilehtijoukko, jonka avulla voit tarkastella ja määrittää lisätietoja valitusta ennusterivistä. Sivun alaosassa on **Kohdistus**-ruudukko.
 
@@ -201,9 +201,9 @@ Seuraavassa taulukossa kuvataan komennot, jotka ovat käytettävissä **Kysyntä
 
 | Komento | kuvaus |
 |---|---|
-| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennusteen kohdistus](#allocate-forecast).)|
-| Joukkopäivitys | Avaa **Muokkaa ennustetapahtumia** -sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennustetapahtumien joukkopäivitys](#bulk-update).) |
-| Varastoennuste | Avaa valitulle nimike-/malliyhdistelmälle suodatettu **Varastoennuste**-sivu. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Varastoennusteet](#inventory-forecast).) |
+| Kohdista ennuste | Jos käytät kohdistusmenetelmää, luo yksittäiset ajoitusrivit ennustetapahtumalle. Rivin määrä jaetaan sitten päivämäärän (valittujen aikavälien mukaan), määrän ja summan mukaan koko aikajaksolle. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Ennusteen kohdistus](#allocate-forecast).)|
+| Joukkopäivitys | Avaa **Muokkaa ennustetapahtumia** -sivu. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Ennustetapahtumien joukkopäivitys](#bulk-update).) |
+| Varastoennuste | Avaa valitulle nimike-/malliyhdistelmälle suodatettu **Varastoennuste**-sivu. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Varastoennusteet](#inventory-forecast).) |
 | Luo nimiketarve | Avaa valintaikkuna, jossa voit luoda nimiketarpeet sekä projektiin liittyvien ennustetapahtumien myyntitilaus- tai nimikekirjauskansion rivit. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>Kysyntäennuste-sivun Yhteenveto-välilehti
@@ -296,7 +296,7 @@ Seuraavassa taulukossa kuvataan **Kysyntäennuste**-sivun **Yhteenveto**-välile
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Kysyntäennuste-sivun Kohdistus-ruudukko
 
-Jos käytät nimikkeenkohdistustunnusta tai olet syöttänyt nimike-ennusteen yhdelle tai useammalle tulevalle kaudelle, voit kohdistaa ennusteen valitsemalla **Yhteenveto**-välilehden työkaluriviltä **Kohdista ennuste**. Määrä jaetaan **Kohdistus**-ruudukon rivien osoittamalla tavalla. (Lisätietoja on jäljempänä tässä ohjeessa kohdassa [Ennusteen kohdistus](#allocate-forecast).)
+Jos käytät nimikkeenkohdistustunnusta tai olet syöttänyt nimike-ennusteen yhdelle tai useammalle tulevalle kaudelle, voit kohdistaa ennusteen valitsemalla **Yhteenveto**-välilehden työkaluriviltä **Kohdista ennuste**. Määrä jaetaan **Kohdistus**-ruudukon rivien osoittamalla tavalla. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Ennusteen kohdistus](#allocate-forecast).)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Varastoennuste
 

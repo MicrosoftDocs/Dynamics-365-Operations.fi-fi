@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579901"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851243"
 ---
 # <a name="wave-template-grouping"></a>Aallon mallipohjan ryhmittely
 
@@ -41,7 +41,7 @@ Ennen kuin voit käyttää *Aaltomallin ryhmittely* -toimintoa, sen pitää olla
 Voit määrittää aaltomalliryhmittelyn seuraavien [aaltomalli](tasks/configure-wave-processing.md)-ohjeiden avulla.
 
 1. Valitse **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit**.
-1. Valitse vasemmasta ruudusta aaltomalli, jonka haluat määrittää. Jos valmistelet työskentelyä tämän ohjeaiheen mukaan myöhemmin tässä aiheessa käyttämällä demotietoja, valitse **62 toimituksen oletus** -malli.
+1. Valitse vasemmasta ruudusta aaltomalli, jonka haluat määrittää. Jos valmistelet työskentelyä tämän ohjeaiheen mukaan myöhemmin tässä artikkelissa käyttämällä demotietoja, valitse **62 toimituksen oletus** -malli.
 1. Valitse **Muokkaa**, jotta saat sivun muokkaustilaan.
 1. Määritä **Yleiset**-pikavälilehdessä seuraavat arvot:
 
@@ -84,7 +84,7 @@ Voit hyödyntää tätä skenaariota myös ohjeena, kun työskentelet tuotantoj�
 
 Tämä skenaario näyttää, miten Aaltomalli-ryhmittelyä käytetään luomaan automaattisesti useita aaltoja aaltomallissa määritettyjen kriteerien mukaan. Tässä skenaariossa aaltomalli määritetään järjestelmään, jolloin luodaan yksi aalto operaattoripalvelua kohden.
 
-Ennen kuin aloitat, valmistele aaltomalli [Määritä aaltomalli käyttääksesi aaltomallin ryhmittelyä](#set-up-template) -kohdassa aiemmin tässä ohjeaiheessa kuvatulla tavalla. Jos aiot käyttää tämän skenaarion demotietoja, varmista, että käytät tässä toimintosarjassa ehdotettuja demotietoarvoja. Tämän asetuksen avulla voit ryhmitellä aallot kullekin myyntitilaukselle määritetyn rahdinkuljetuspalvelun mukaan.
+Ennen kuin aloitat, valmistele aaltomalli [Määritä aaltomalli käyttääksesi aaltomallin ryhmittelyä](#set-up-template) -kohdassa aiemmin tässä artikkelissa kuvatulla tavalla. Jos aiot käyttää tämän skenaarion demotietoja, varmista, että käytät tässä toimintosarjassa ehdotettuja demotietoarvoja. Tämän asetuksen avulla voit ryhmitellä aallot kullekin myyntitilaukselle määritetyn rahdinkuljetuspalvelun mukaan.
 
 #### <a name="create-sales-order-1"></a>Luo myyntitilaus 1
 

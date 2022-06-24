@@ -1,6 +1,6 @@
 ---
 title: Myymälöiden ja tiimien yhdistämismääritykset, jos Microsoft Teamsissa on ennestään tiimejä
-description: Tässä ohjeaiheessa käsitellään myymälöiden ja niitä vastaavien ryhmien määritystä Dynamics 365 Commerce headquartersissa, jos organisaatio on jo luonut ryhmiä Microsoft Teamsissa ennen Commerce-integrointia.
+description: Tässä artikkelissa käsitellään myymälöiden ja niitä vastaavien ryhmien määritystä Dynamics 365 Commerce headquartersissa, jos organisaatio on jo luonut ryhmiä Microsoft Teamsissa ennen Commerce-integrointia.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cb18affd0df59dc986602a684a3fe3d418644fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691102"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902734"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Myymälöiden ja tiimien yhdistämismääritykset, jos Microsoft Teamsissa on ennestään tiimejä
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään myymälöiden ja niitä vastaavien ryhmien määritystä Dynamics 365 Commerce headquartersissa, jos organisaatio on jo luonut ryhmiä Microsoft Teamsissa ennen Commerce-integrointia.
+Tässä artikkelissa käsitellään myymälöiden ja niitä vastaavien ryhmien määritystä Dynamics 365 Commerce headquartersissa, jos organisaatio on jo luonut ryhmiä Microsoft Teamsissa ennen Commerce-integrointia.
 
 Organisaatiossasi voi olla ryhmiä luotuja joihinkin tai kaikkiin myymälöihin ennen Dynamics 365 Commercen ja Microsoft Teamsin integroimista. Tässä tapauksessa voit määrittää Commerce-myyntipisteen ja Microsoft Teamsin välisen tehtävän synkronoinnin antamalla myymälöiden ja vastaavien tiimien määritykset Commerce headquartersissa.
 

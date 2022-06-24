@@ -1,6 +1,6 @@
 ---
 title: Kanavien yhdistäminen sähköisen kaupankäynnin sivustoihin
-description: Tässä aiheessa kuvataan joitakin yleisimpiä Microsoft Dynamics 365 Commerce -ohjelman kanavan määritysskenaarioita, joita voidaan ekstrapoloida useimpien muiden liiketoimintavaatimusten osalta.
+description: Tässä artikkelissa kuvataan joitakin yleisimpiä Microsoft Dynamics 365 Commerce -ohjelman kanavan määritysskenaarioita, joita voidaan ekstrapoloida useimpien muiden liiketoimintavaatimusten osalta.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743569"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902760"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>Kanavien yhdistäminen sähköisen kaupankäynnin sivustoihin
 
-Tässä aiheessa kuvataan joitakin yleisimpiä Microsoft Dynamics 365 Commerce -ohjelman kanavan määritysskenaarioita, joita voidaan ekstrapoloida useimpien muiden liiketoimintavaatimusten osalta.
+Tässä artikkelissa kuvataan joitakin yleisimpiä Microsoft Dynamics 365 Commerce -ohjelman kanavan määritysskenaarioita, joita voidaan ekstrapoloida useimpien muiden liiketoimintavaatimusten osalta.
 
 Dynamics 365 Commerce tukee useita liiketoimintaskenaarioita , joita käytetään [online-kanavien](#channels) määrityksessä, joissa on määritetty tuote, hinta ja alennukset [sähköisen kaupankäynnin sivuston](#e-commerce-sites) kokemuksille asiakkaille.
 
-Tämä aihe kattaa seuraavat skenaariot:
+Tämä artikkeli kattaa seuraavat skenaariot:
 
 - **Yksikielinen kanava, jolla on yksi sähköisen kaupankäynnin sivuston kokemus.** Tämä skenaario voi koskea esimerkiksi yksittäistä brändisivustoa, joka on määritetty Yhdysvaltain englanninkielisille markkina-alueille.
 - **Monikielinen kanava, jolla on yksi lokalisoitu sivuston kokemus.** Tämä skenaario voi koskea esimerkiksi yksittäistä brändisivustoa, joka on määritetty Kanadaan ranskankieliselle ja englanninkieliselle tuelle. Tässä skenaariossa eri kieliä valitsevilla käyttäjillä on sama sivustokokemus, mutta se on lokalisoitu käyttäjän valitulle kielelle.
@@ -63,7 +63,7 @@ Seuraavassa esimerkkikuvassa on Commerce headquartersin kanavamääritys. Täss�
 
 ![Commerce headquarters -sovelluksessa korostetut Adventure Works -verkkokaupan yritys-, valuutta- ja kieliarvot.](media/channel-mapping-3.png)
 
-Yksittäinen online-kanava voidaan määrittää yhteen verkkokaupan sivustoon sivuston muodostimessa. Lisätietoja uuden sivuston luomisesta ja sen liittämisestä kanavaan on tämän ohjeaiheen kohdassa [Kanavan liittäminen sivustoon sivuston muodostimessa](#map-a-channel-to-a-site-in-site-builder).
+Yksittäinen online-kanava voidaan määrittää yhteen verkkokaupan sivustoon sivuston muodostimessa. Lisätietoja uuden sivuston luomisesta ja sen liittämisestä kanavaan on tämän artikkelin kohdassa [Kanavan liittäminen sivustoon sivuston muodostimessa](#map-a-channel-to-a-site-in-site-builder).
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>Monikielinen kanava, jolla on yksi lokalisoitu sivuston kokemus
 
@@ -73,7 +73,7 @@ Tämän skenaarion rajoitus on se, että yksi kanava voidaan konfiguroida vain y
 
 Kanavan eri kielet voidaan konfiguroida omalla toimialuenimellään. `www.adventure-works.ca`-toimialue voidaan konfiguroida esimerkiksi Kanadan englanninkieliseksi versioksi, ja `www.adventure-works-fr.ca`-toimialueen voi konfiguroida Kanadan ranskankieliseksi versioksi. Vaihtoehtoisesti kanavan eri kielet voidaan konfiguroida yhdessä toimialueessa, ja sitten kullekin kielelle voidaan käyttää eri polkua. `www.adventure-works.ca`-toimialue voidaan konfiguroida esimerkiksi Kanadan englanninkieliseksi versioksi, ja sitten `www.adventure-works.ca/fr`-polkua voidaan käyttää Kanadan ranskankieliselle versiolle. [Maantieteellisen sijainnin tunnistus](geo-detection-redirection.md) on myös mahdollista määrittää, jotta käyttäjä voidaan ohjata automaattisesti oikeaan sivustoon käyttäjän sijainnin perusteella.
 
-Lisätietoja siitä, miten asiakkaat voivat vaihtaa kieliä manuaalisesti, on tämän ohjeaiheen [Sivuston valitsinmoduulin lisääminen ja määritys](#add-and-configure-the-site-picker-module). Lisätietoja lokalisoitujen sivujen ja osien mukauttamisesta on kohdassa [Useita kanavia ja kieliä sisältävän sivuston sisällön hallinta](#manage-site-content-that-has-multiple-channels-and-languages).
+Lisätietoja siitä, miten asiakkaat voivat vaihtaa kieliä manuaalisesti, on tämän artikkelin [Sivuston valitsinmoduulin lisääminen ja määritys](#add-and-configure-the-site-picker-module). Lisätietoja lokalisoitujen sivujen ja osien mukauttamisesta on kohdassa [Useita kanavia ja kieliä sisältävän sivuston sisällön hallinta](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>Monikielinen kanava, jolla on eri sivuston kokemus kieltä kohden
 
@@ -87,7 +87,7 @@ Brändisivusto voi edellyttää useita verkkokanavia aluetta kohden tukeakseen e
 
 Tässä skenaariossa kukin markkina-alue voidaan konfiguroida omalla toimialuenimellään. `www.adventure-works.com`-toimialue voidaan konfiguroida esimerkiksi Yhdysvaltojen markkinoille, ja `www.adventure-works.de`-toimialueen voi konfiguroida Saksan markkinoille. Vaihtoehtoisesti jokainen markkina-alue voidaan konfiguroida käyttämään eri polkua. `www.adventure-works.com`-toimialue voidaan konfiguroida esimerkiksi Yhdysvaltojen markkinoille, ja sitten `www.adventure-works.com/de`-polkua voidaan käyttää Saksan markkinoille. [Maantieteellisen sijainnin tunnistus](geo-detection-redirection.md) on myös mahdollista määrittää, jotta käyttäjät voidaan ohjata automaattisesti oikeaan sivustoon alueensa perusteella.
 
-Voit myös määrittää, että sivustosi tarjoaa avattavan luettelon, jonka avulla käyttäjät voivat vaihtaa tietylle markkina-alueelle manuaalisesti. Lisätietoja on tämän ohjeaiheen kohdassa [Sivuston valitsinmoduulin lisääminen ja määritys](#add-and-configure-the-site-picker-module).
+Voit myös määrittää, että sivustosi tarjoaa avattavan luettelon, jonka avulla käyttäjät voivat vaihtaa tietylle markkina-alueelle manuaalisesti. Lisätietoja on tämän artikkelin kohdassa [Sivuston valitsinmoduulin lisääminen ja määritys](#add-and-configure-the-site-picker-module).
 
 Lisätietoja useiden kanavien määrittämisestä yhdessä sivustossa on kohdassa [Sähköisen kaupankäynnin sivuston useiden kanavien määritys](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -180,7 +180,7 @@ Sen sijaan, että loisit kunkin sivun ja osan manuaalisesti, voit viedä kunkin 
 
 Sivusto, jossa on useita kanavia ja/tai kieliä, tallentaa kunkin sivun ja osan yksilöllisen variantin kullekin kanavan ja kielen yhdistelmälle. Näin sivumuuttujat voivat sisältää lokalisoituja tietoja, mutta voit myös joustavasti muuttaa tietyn variantin sivun ulkoasua.
 
-Lisätietoja sivumuuttujien käyttämisestä on tämän ohjeaiheen [Ota sivun muuttujat käyttöön kullekin kielelle](#implement-page-variants-for-each-language) -osassa.
+Lisätietoja sivumuuttujien käyttämisestä on tämän artikkelin [Ota sivun muuttujat käyttöön kullekin kielelle](#implement-page-variants-for-each-language) -osassa.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Sähköisen kaupankäynnin sivuston useiden kanavien määritys
 

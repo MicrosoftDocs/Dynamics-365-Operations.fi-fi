@@ -1,6 +1,6 @@
 ---
 title: Erän tasaus
-description: Tässä ohjeaiheessa käsitellään erän tasausprosessia.
+description: Tässä artikkelissa käsitellään erän tasausprosessia.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a9e69b4d9213e57e5a920c7adda934ba845d17410c17d9c8a6356d717870ac23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780073"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856045"
 ---
 # <a name="batch-balancing"></a>Erän tasaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään erän tasausprosessin tukea.
+Tässä artikkelissa käsitellään erän tasausprosessin tukea.
 
 Lisätietoja saa katsomalla [erän tasausta käsittelevän videon](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -149,7 +149,7 @@ Täyteainesosan täsmäytetty määrä lasketaan 100 litran eräkoon ja ainesosi
 Erän tasausprosessi suoritetaan **Erän tasaus** -sivulla.
 Valitse ensin **Kustannushintojen hallinta \> Erätilaukset** ja sitten **Prosessi**-välilehdessä **Erän tasaus**. Erän tasaus on käytettävissä erätilauksissa, joiden tila on **Aloitettu**.
 
-Erän tasausta voidaan yleensä käyttää erätilauksissa, jos reseptissä on ainakin yksi reseptirivi, jonka **ainesosatyyppi** on *Aktiivinen*. (Tämän säännön poikkeusta käsitellään jäljempänä tässä ohjeaiheessa kohdassa Erätilaukset, joissa ei voi käyttää erän tasausta.)
+Erän tasausta voidaan yleensä käyttää erätilauksissa, jos reseptissä on ainakin yksi reseptirivi, jonka **ainesosatyyppi** on *Aktiivinen*. (Tämän säännön poikkeusta käsitellään jäljempänä tässä artikkelissa kohdassa Erätilaukset, joissa ei voi käyttää erän tasausta.)
 
 Erän tasausprosessi voidaan jakaa kahteen aliprosessiin:
 

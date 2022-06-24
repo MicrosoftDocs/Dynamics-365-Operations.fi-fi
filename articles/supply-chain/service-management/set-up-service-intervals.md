@@ -1,6 +1,6 @@
 ---
 title: Huoltovälien määrittäminen
-description: Tässä aiheessa käsitellään huoltovälien määrittämistä. Huoltoväli ilmaisee tiheyden, jolla huoltosopimusriveille luodaan huoltotilausrivejä, kun huoltotilaukset luodaan.
+description: Tässä artikkelissa käsitellään huoltovälien määrittämistä. Huoltoväli ilmaisee tiheyden, jolla huoltosopimusriveille luodaan huoltotilausrivejä, kun huoltotilaukset luodaan.
 author: sorenva
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 943ed0b8f329b45225b61247998e15a1d82356aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 56b8a31af061b90aeddfb460f6e86c2c5636b280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845950"
 ---
 # <a name="set-up-service-intervals"></a>Huoltovälien määrittäminen  
 
@@ -48,7 +48,7 @@ Haluat luoda 10 päivän huoltovälin.
 5. Kirjoita **Tiheys**-kenttään 10.
 6. Tallenna huoltoväli näppäinyhdistelmällä **Alt+S**.
 
-## <a name="related-topics"></a>Liittyvät aiheet
+## <a name="related-articles"></a>Liittyvät artikkelit
 
 [Huoltovälit ](service-intervals.md)  
 

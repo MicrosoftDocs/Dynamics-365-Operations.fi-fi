@@ -1,6 +1,6 @@
 ---
 title: Laadunhallinnan testit
-description: Tässä aiheessa kuvataan, kuinka luodaan testejä, joita voidaan käyttää laatutilauksissa Microsoft Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa kuvataan, kuinka luodaan testejä, joita voidaan käyttää laatutilauksissa Microsoft Dynamics 365 Supply Chain Managementissa.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c10b67f86fc29b5e8c08081a9b789d4f42c24cf4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac67ee97a4890c646daefa6b09feae25c4f15d0d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857602"
 ---
 # <a name="quality-management-tests"></a>Laadunhallinnan testit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka luodaan testejä, joita voidaan käyttää laatutilauksissa Microsoft Dynamics 365 Supply Chain Managementissa.
+Tässä artikkelissa kuvataan, kuinka luodaan testejä, joita voidaan käyttää laatutilauksissa Microsoft Dynamics 365 Supply Chain Managementissa.
 
 Voit määrittää ja tarkastella **Testit**-sivulla yksittäisiä testejä, joiden mukaan määräytyy, ovatko tuotteet laatuvaatimusten mukaisia. Voit määrittää testiryhmälle vähintään yhden yksittäisen testin. Siinä tapauksessa määrität myös testikohtaiset tiedot, kuten hyväksyttävät mitta-arvot. Mitta-arvoja käytetään määrällisissä testeissä. Laadullisia testejä varten käytetään testimuuttujia.
 

@@ -1,6 +1,6 @@
 ---
-title: Varianttiryhmän luonti
-description: Tässä aiheessa kuvataan, miten tuotteelle luodaan koko-, tyyli- tai värivarianttiryhmiä Microsoft Dynamics 365 Commercessa.
+title: Varianttiryhmän luominen
+description: Tässä artikkelissa kuvataan, miten tuotteelle luodaan koko-, tyyli- tai värivarianttiryhmiä Microsoft Dynamics 365 Commercessa.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a46dc9fd5cdb848818964e771d373924b217147a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874958"
 ---
 # <a name="create-a-variant-group"></a>Varianttiryhmän luominen
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten tuotteelle luodaan koko-, tyyli- tai värivarianttiryhmiä Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kuvataan, miten tuotteelle luodaan koko-, tyyli- tai värivarianttiryhmiä Microsoft Dynamics 365 Commercessa.
 
 ## <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Commerce tukee tuotteelle useita variantteja. Varianttiryhmien määrittäminen eri tuoteluokille on paras ratkaisu. Esimerkiksi t-paidoille voidaan luoda kokoryhmä, joka sisältää koot XS, S, M, L ja XL, tai väriryhmä, joka sisältää kaikki tuotteen saatavilla olevat värivaihtoehdot. Varianttiryhmät kannattaa lisätä ennen tuotteiden lisäämistä.
 
-Tässä ohjeaiheessa luodaan ja määritetään kokoryhmä. Vastaavia menettelyjä voidaan käyttää tyyli- ja väriryhmien lisäämiseen ja määrittämiseen.
+Tässä artikkelissa luodaan ja määritetään kokoryhmä. Vastaavia menettelyjä voidaan käyttää tyyli- ja väriryhmien lisäämiseen ja määrittämiseen.
 
 ## <a name="create-a-size-group"></a>Kokoryhmän luominen
 

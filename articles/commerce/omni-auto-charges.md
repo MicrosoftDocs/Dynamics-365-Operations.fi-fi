@@ -1,6 +1,6 @@
 ---
 title: Omnikanavan automaattiset etukäteisveloitukset
-description: Tässä ohjeaiheessa käsitellään Commerce-kanavan tilausten lisäkulujen hallintaa edistyneiden automaattisten kuluominaisuuksien avulla.
+description: Tässä artikkelissa käsitellään Commerce-kanavan tilausten lisäkulujen hallintaa edistyneiden automaattisten kuluominaisuuksien avulla.
 author: hhaines
 ms.date: 03/24/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
-ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
+ms.openlocfilehash: 412f5befa255d12914444b57918f14ab51243bfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "8489615"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851128"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanavan automaattiset etukäteisveloitukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja edistyneiden automaattisten kulujen määrittämisestä ja käyttöönottamisesta. Nämä ominaisuudet ovat käytössä Dynamics 365 for Retailin versiossa 10.0.
+Tässä artikkelissa on tietoja edistyneiden automaattisten kulujen määrittämisestä ja käyttöönottamisesta. Nämä ominaisuudet ovat käytössä Dynamics 365 for Retailin versiossa 10.0.
 
 Kun edistyneet automaattiset kuluominaisuudet on otettu käyttöön, missä tahansa tuetussa Commerce-kanavassa (myyntipiste, puhelinkeskus tai verkko) luoduissa tilauksissa voi käyttää [automaattisten kulujen](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä, jotka on määritetty ERP-sovelluksessa otsikko- ja rivitason kuluille.
 

@@ -1,6 +1,6 @@
 ---
 title: Työaikarekisteröinti – yleiskatsaus
-description: Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä ohjeaiheessa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin.
+description: Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä artikkelissa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin.
 author: johanhoffmann
 ms.date: 07/25/2019
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af257427661cb9a0d976800b657d3eb4afe7feca
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f648663d81cd37a1df7794ee9d5ad6598fb16594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986116"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875214"
 ---
 # <a name="time-and-attendance-registration-overview"></a>Työaikarekisteröinti – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä ohjeaiheessa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin.
+Aikarekisteröinnin työntekijät voivat määrittää erityyppisiä ajan rekisteröintejä, joita ovat esimerkiksi saapuminen, poistuminen, epäsuorien toimintojen rekisteröinti sekä poissaolorekisteröinti. Tässä artikkelissa kuvataan rekisteröintejä, niiden laskemista, hyväksyntää sekä työnkulkua, jolla voidaan lisätä rakenne ja automaattinen hyväksyntä työaikaraporttien hyväksyntäprosessiin.
 
 ## <a name="registrations"></a>Rekisteröitymiset
 

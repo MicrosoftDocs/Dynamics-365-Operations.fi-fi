@@ -1,6 +1,6 @@
 ---
 title: Tarjouspyynnöt – yleiskatsaus
-description: Tässä aiheessa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta.
+description: Tässä artikkelissa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta.
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895580"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Tarjouspyynnöt – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität.
+Tässä artikkelissa on tarjouspyyntöjen yleiskuvaus. Organisaatiot tekevät tarjouspyyntöjä, kun ne haluavat ostaa tarvitsemiaan nimikkeitä tai palveluita ja haluavat saada kilpailukykyisiä tarjouksia useilta toimittajilta. Tarjouspyynnössä pyydät toimittajilta hinnat ja toimitusaikoja nimikkeiden määrille, jotka määrität.
 Voit myös pyytää toimittajia määrittämään, liittyykö tarjoukseen satunnaisia kuluja, esimerkiksi lähetyskustannuksia, tai tarjoaako toimittaja alennuksia suurista tilauksista tai toimittajalaskun maksamisesta aikaisin.
 
 Tarjouspyyntöprosessi muodostuu seuraavista tehtävistä:
@@ -45,7 +45,7 @@ Voit luoda tarjouspyyntötapauksen suunnitelluista tilauksista, ostoehdotuksesta
 
 Kun olet valmistellut tarjouspyyntötapauksen ja lisännyt toimittajat, valitse tarjouspyyntötapauksessa **Lähetä** (**Lähetä ja julkaise** julkisella sektorilla). Tarjouspyynnön kirjauskansio luodaan jokaiselle toimittajalle, jolle lähetät tarjouspyynnön. Voit määrittää Lähetä-toiminnon tulostusasetukset joko tulostamaan raportin jokaisesta toimittajasta arkistoon vai lähettämään raportin kunkin toimittajan sähköpostiosoitteeseen. Voit lisäksi luoda kunkin toimittajan tarjouspyynnön kirjauskansiossa raportin, jonka voit lähettää toimittajalle tai lähettää sen myöhemmin uudelleen. Voit myös määrittää Lähetä-toiminnon luomaan vastauslomakkeen, jonka toimittaja voi täyttää.
 
-Tässä aiheessa käsitellään tarjouspyyntöjen käsittelyprosessi silloin, kun toimittajayhteistyö ei ole käytössä. Jos järjestelmä on määritetty toimittajayhteistyötä varten, toimittajat voivat antaa tarjouksia suoraan Supply Chain Managementissa. Lisätietoja on kohdassa [Toimittajayhteistyö asiakkaisen kanssa](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) ja [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
+Tässä artikkelissa käsitellään tarjouspyyntöjen käsittelyprosessi silloin, kun toimittajayhteistyö ei ole käytössä. Jos järjestelmä on määritetty toimittajayhteistyötä varten, toimittajat voivat antaa tarjouksia suoraan Supply Chain Managementissa. Lisätietoja on kohdassa [Toimittajayhteistyö asiakkaisen kanssa](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) ja [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
 
 Jos tarjouspyyntöä on muutettava lähettämisen jälkeen, voit lähettää tarjouspyynnön uudelleen toimittajille, kun olet käyttänyt kahta muutostoimintoa: luontia ja viimeistelyä.
 
@@ -59,7 +59,7 @@ Kun olet valinnut tarjouksen tai tarjouksen rivejä, voit hyväksyä kaikki rivi
 
 Tarjouspyyntötapauksessa on kaksi tilaa: alin ja ylin. Voit tarkastella tilaa **Kaikki tarjouspyynnöt** -luettelosivulla. Alin tila on minkä tahansa tarjouspyyntötapauksen rivin vähiten edistynyt vaihe, ja korkein tila on minkä tahansa tarjouspyyntötapauksen rivin kaikkein edistynein vaihe. Jos esimerkiksi kolmirivinen tarjouspyyntötapaus lähetetään kahdelle toimittajalle, tarjouspyyntöjä on kaksi ja kullakin on kolme riviä. Kaikkien rivien tila on **Lähetetty**. Tarjouspyyntö on nyt annettu jostakin toimittajasta ja tarjouspyynnön rivien tilaksi tulee **Vastaanotettu**. Tämän vuoksi tarjouspyyntötapauksen kaikkien kolmen rivin tila yhdessä tarjouspyynnössä **Lähetty** ja toisessa **Vastaanotettu**. Alin tila on sitten **Lähetetty** ja ylin tila **Vastaanotettu.**
 
-Näitä tiloja käsitellään tarkemmin jäljempänä tässä aiheessa.
+Näitä tiloja käsitellään tarkemmin jäljempänä tässä artikkelissa.
 
 ## <a name="setting-up-rfq-functionality"></a>Tarjouspyyntötoimintojen asetukset
 

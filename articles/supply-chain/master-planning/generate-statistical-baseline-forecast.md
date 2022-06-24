@@ -1,6 +1,6 @@
 ---
-title: Tilastollisen perusennusteen luominen
-description: Tässä ohjeaiheessa on tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista.
+title: Luo tilastollinen perusennuste
+description: Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista.
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b2a71faeeb4de35e26b5a346e17caa0d8d353f8
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c45d763a1f3d199c91f3cf6181c22f4b8130fabc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468701"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844935"
 ---
-# <a name="generate-a-statistical-baseline-forecast"></a>Tilastollisen perusennusteen luominen
+# <a name="generate-a-statistical-baseline-forecast"></a>Luo tilastollinen perusennuste
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista. 
+Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista. 
 
 Kun luot perusennusteen, määritä ensin laskennassa käytettävät parametrit ja suodattimet. Voit esimerkiksi luoda perusennusteen, joka arvioi kysyntää tietyn yrityksen edellisen vuoden tapahtumatietojen perusteella tulevalle kuukaudelle ja valitulle nimikeryhmälle. 
 

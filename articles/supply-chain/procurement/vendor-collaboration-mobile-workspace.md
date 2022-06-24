@@ -1,6 +1,6 @@
 ---
 title: Toimittajayhteistyön mobiilityötila
-description: Tässä ohjeaiheessa on tietoja toimittajayhteistyön mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja.
+description: Tässä artikkelissa on tietoja toimittajayhteistyön mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811711"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851649"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötila
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Tässä ohjeaiheessa on tietoja **toimittajayhteistyön** mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja.
+Tässä artikkelissa on tietoja **toimittajayhteistyön** mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja.
 
 Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations (Dynamics 365) -mobiilisovelluksen kanssa.
 
@@ -97,7 +97,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 </tr>
 <tr class="even">
 <td>Toimittajakäyttäjällä on oltava käyttöoikeus toimittajayhteistyön web-liittymään WWW-asiakasohjelmassa sekä määritettävä toimittajayhteistyön käyttäjä.</td><td>Hankintahenkilöstö ja järjestelmänvalvoja</td>
-<td>Noudata seuraavien ohjeaiheiden vaiheita määrittääksesi toimittajayhteistyön web-liittymän käyttöä varten.
+<td>Noudata seuraavien artikkeleiden vaiheita määrittääksesi toimittajayhteistyön web-liittymän käyttöä varten.
 <ul>
 <li><a href="vendor-collaboration-work-external-vendors.md">Toimittajayhteistyön käyttäminen ulkoisten toimittajien kanssa</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Toimittajayhteistyön käyttäjien hallinta</a></li>

@@ -1,6 +1,6 @@
 ---
 title: Toimitusaikataulu
-description: Tässä aiheessa on tietoja toimitusaikataulusivusta ja sen ominaisuuksista.
+description: Tässä artikkelissa on tietoja toimitusaikataulusivusta ja sen ominaisuuksista.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 89b8ce96a5c34902187751cfa523ed99a94500b3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 0e3937dd4cffc464f38b5770674364579bdb06d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851736"
 ---
 # <a name="supply-schedule"></a>Toimitusaikataulu
 
@@ -28,7 +28,7 @@ ms.locfileid: "8468673"
 
 Voit avata **Toimitusaikataulu**-sivun seuraavilla tavoilla:
 
-- Valitse **Pääsuunnittelu \> Pääsuunnittelu \> Toimitusaikataulu**. Määritä **Muokkaa suodatinta** -valintaikkunassa etsimäsi suunnitelma tai tuote syöttämällä suodatinarvot kenttiin. (Muualla tässä aiheessa lisäämistäsi suodatinarvoista käytetään nimitystä "suodatin" tai "nykyinen suodatin".) Kun olet valmis, valitse **OK**.
+- Valitse **Pääsuunnittelu \> Pääsuunnittelu \> Toimitusaikataulu**. Määritä **Muokkaa suodatinta** -valintaikkunassa etsimäsi suunnitelma tai tuote syöttämällä suodatinarvot kenttiin. (Muualla tässä artikkelissa lisäämistäsi suodatinarvoista käytetään nimitystä "suodatin" tai "nykyinen suodatin".) Kun olet valmis, valitse **OK**.
 - Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**. Valitse tai avaa tuote. Valitse sitten toimintoruudun **Suunnittelu**-välilehden **Näytä**-ryhmässä **Toimitusaikataulu**.
 - Avaa **Pääsuunnittelu \> Määritys \> Kysynnän ennuste \> Nimikkeen kohdistustunnukset**. Valitse tuoteperheenä käytettävä nimikkeen kohdistustunnus. Valitse sitten toimintoruudussa **Toimitusaikataulu**.
 - Valitse **Pääsuunnittelu \> Pääsuunnittelu \> Suunnitellut tilaukset**. Valitse tai avaa suunniteltu tilaus. Valitse sitten toimintoruudun **Näytä**-välilehden **Näytä**-ryhmässä **Toimitusaikataulu**.

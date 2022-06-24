@@ -1,6 +1,6 @@
 ---
 title: Konttien pakkausstrategiat
-description: Tässä aiheessa kuvataan konttien pakkausstrategioiden eroja ja annetaan esimerkkejä.
+description: Tässä artikkelissa kuvataan konttien pakkausstrategioiden eroja ja annetaan esimerkkejä.
 author: GalynaFedorova
 ms.date: 06/11/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ab34cee7fd495ec26f6b20da2aa43895f49f677c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676380"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862363"
 ---
 # <a name="container-packing-strategies"></a>Konttien pakkausstrategiat
 
 [!include [banner](../includes/banner.md)]
 
-*Kontin pakkausstrategia* on strategia, jonka avulla voidaan määrittää nimikkeiden kohdistukset konttien välillä. Tässä aiheessa kerrotaan *Pakkaa kaikkiin avoimiin kontteihin* -strategian ja *Pakkaa vain nykyiseen konttiin* -strategian eroista.
+*Kontin pakkausstrategia* on strategia, jonka avulla voidaan määrittää nimikkeiden kohdistukset konttien välillä. Tässä artikkelissa kerrotaan *Pakkaa kaikkiin avoimiin kontteihin* -strategian ja *Pakkaa vain nykyiseen konttiin* -strategian eroista.
 
 - **Pakkaa kaikkiin avoimiin kontteihin** - Järjestelmän on tarkistettava kaikki avoimet kontit, jotka on jo luotu konttisyklin aikana, jotta voidaan varmistaa, että nimike sopii yhteen niistä. Pakkauksen aikana järjestelmä tarkistaa kunkin nimikkeen ja määrittää, sopiiko se aiemmin luotuihin kontteihin. Jos nimike ei mahdu aiemmin luotuun konttiin, järjestelmä luo uuden kontin ja jatkaa sitä, kunnes koko tilaus on pakattu valmiiksi.
 

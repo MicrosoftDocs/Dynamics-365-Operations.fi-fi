@@ -1,6 +1,6 @@
 ---
 title: Varaston näkyvyyden käytössä olevat muutosaikataulut ja luvattavissa olevat määrät
-description: Tässä aiheessa kuvataan, kuinka voidaan ajoittaa tulevia käytettävissä olevan määrän muutoksia ja laskea luvattavissa olevat (ATP) määrät.
+description: Tässä artikkelissa kuvataan, kuinka voidaan ajoittaa tulevia käytettävissä olevan määrän muutoksia ja laskea luvattavissa olevat (ATP) määrät.
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
-ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
+ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856190"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Varaston näkyvyyden käytössä olevat muutosaikataulut ja luvattavissa olevat määrät
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka *Käytössä oleva muutosaikataulu* -ominaisuus määritetään tulevien ajankohtaisten muutosten ajoittamiseksi ja ATP-määrien laskemiseksi. ATP on tuotteen määrä, joka on saatavilla ja joka voidaan luvata asiakkaalle seuraavalla kaudella. Tämän laskelman käyttö voi lisätä tilauksen täyttämiskykyä merkittävästi.
+Tässä artikkelissa kuvataan, kuinka *Käytössä oleva muutosaikataulu* -ominaisuus määritetään tulevien ajankohtaisten muutosten ajoittamiseksi ja ATP-määrien laskemiseksi. ATP on tuotteen määrä, joka on saatavilla ja joka voidaan luvata asiakkaalle seuraavalla kaudella. Tämän laskelman käyttö voi lisätä tilauksen täyttämiskykyä merkittävästi.
 
 Monille valmistajille, vähittäismyyjille tai myyjille ei riitä, että vain tietää, mitä on käytettävissä. Niillä on oltava täysi näkyvyys tulevaan käytettävyyteen. Tämän tulevan saatavuuden tulisi ottaa huomioon tuleva toimitus, tuleva kysyntä ja ATP.
 

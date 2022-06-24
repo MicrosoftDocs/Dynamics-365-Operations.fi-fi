@@ -1,6 +1,6 @@
 ---
 title: Erilliset maksupäätteet ja kehotteet tulostinta ja käteislaatikkoa varten
-description: Tässä ohjeaiheessa on tietoja siitä, miten voit määrittää erillisen maksupäätteen ja pyytää käyttäjää valitsemaan kassan ja kuittitulostimen.
+description: Tässä artikkelissa on tietoja siitä, miten voit määrittää erillisen maksupäätteen ja pyytää käyttäjää valitsemaan kassan ja kuittitulostimen.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779767"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874918"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Erilliset maksupäätteet ja kehotteet tulostinta ja käteislaatikkoa varten
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja siitä, miten voit määrittää erillisen maksupäätteen ja pyytää käyttäjää valitsemaan kassan ja kuittitulostimen.
+Tässä artikkelissa on tietoja siitä, miten voit määrittää erillisen maksupäätteen ja pyytää käyttäjää valitsemaan kassan ja kuittitulostimen.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce tukee näitä trendejä mahdollistaen tilanteen,
 
 ## <a name="supported-pos-clients-and-devices"></a>Tuetut POS-asiakkaat ja -laitteet
 
-Tässä ohjeaiheessa kuvatut toiminnot ovat tuettuja modernissa POS for Windows -sovelluksessa ja Modern POS for Android -asiakasohjelmissa.
+Tässä artikkelissa kuvatut toiminnot ovat tuettuja modernissa POS for Windows -sovelluksessa ja Modern POS for Android -asiakasohjelmissa.
 
 Tämä toiminto tukee verkkopohjaisia maksupäätteitä ja kuittitulostimia. Voit antaa kassalaatikon tuen liittämällä kassalaatikon verkkovastaanottotulostimeen d/k-portin kautta.
 

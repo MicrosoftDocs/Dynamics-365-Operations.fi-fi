@@ -1,6 +1,6 @@
 ---
 title: Uuden kuljetuksenhallintamoduulin luominen
-description: Tässä aiheessa kuvataan, miten luodaan uusi kuljetustenhallintamoduuli Dynamics 365 Supply Chain Managementissa.
+description: Tässä artikkelissa kuvataan, miten luodaan uusi kuljetustenhallintamoduuli Dynamics 365 Supply Chain Managementissa.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be52c6afb66e88b36f3b2cdf5af14e17b3d3005f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678119"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857254"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>Uuden kuljetuksenhallintamoduulin luominen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten luodaan uusi kuljetustenhallintamoduuli Dynamics 365 Supply Chain Managementissa. 
+Tässä artikkelissa kuvataan, miten luodaan uusi kuljetustenhallintamoduuli Dynamics 365 Supply Chain Managementissa. 
 
 Kuljetustenhallinnan(TMS) moduulit määrittävät logiikan, jota käytetään kuljetushintojen luomiseen ja käsittelemiseen Kuljetuksenhallinnassa. Supply Chain Management tarjoaa useita eri moduulityyppejä, jotka laskevat erilaisia parametreja, kuten hintoja, kuljetusaikoja ja kuljetuksessa ylitettävien vyöhykkeiden määriä. Tässä artikkelissa kerrotaan, miten Microsoft Visual Studio -kehitysympäristöä ja Supply Chain Managementin kehitystyökaluja käytetään uuden TMS-moduulin luontiin ja käyttöönottoon ja miten moduuli sitten määritetään Operationsissa. Lisätietoja moduuleista: [Kuljetustenhallintamoduulit](transportation-management-engines.md).
 

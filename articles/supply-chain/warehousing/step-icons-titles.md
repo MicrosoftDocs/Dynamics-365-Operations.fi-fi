@@ -1,6 +1,6 @@
 ---
 title: Warehouse Management -mobiilisovelluksen vaihekuvakkeiden ja otsikoiden määrittäminen
-description: Tässä aiheessa kuvataan, miten määritetään Warehouse Managementin mobiilisovelluksen uusien tai mukautettujen tehtävävirtojen vaihekuvakkeet ja otsikot.
+description: Tässä artikkelissa kuvataan, miten määritetään Warehouse Managementin mobiilisovelluksen uusien tai mukautettujen tehtävävirtojen vaihekuvakkeet ja otsikot.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103310"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890593"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen vaihekuvakkeiden ja otsikoiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten määritetään Warehouse Managementin mobiilisovelluksen uusien tai mukautettujen tehtävävirtojen vaihekuvakkeet ja vaiheiden otsikot.
+Tässä artikkelissa kuvataan, miten määritetään Warehouse Managementin mobiilisovelluksen uusien tai mukautettujen tehtävävirtojen vaihekuvakkeet ja vaiheiden otsikot.
 
 Seuraavissa kuvissa näytetään, miten vaihekuvakkeet ja otsikot näkyvät Warehouse Management -mobiilisovelluksessa.
 
@@ -29,7 +29,7 @@ Seuraavissa kuvissa näytetään, miten vaihekuvakkeet ja otsikot näkyvät Ware
 
 ## <a name="turn-this-feature-on-or-off"></a>Toiminnon ottaminen käyttöön tai pois käytöstä
 
-Tässä aiheessa kuvatun toiminnon käyttöä varten järjestelmässäsi on oltava käytössä *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toiminto. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Tässä artikkelissa kuvatun toiminnon käyttöä varten järjestelmässäsi on oltava käytössä *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toiminto. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Uuden varastosovelluksen käyttäjäasetukset, kuvakkeet ja vaiheotsikot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Vakiovaihetunnukset, -luokat ja -kuvakkeet
 
@@ -39,7 +39,7 @@ Jokainen tehtävätyönkulun vaihe on määritetty vaiheen tunnuksen perusteella
 
 Seuraavassa taulukossa luetellaan kaikki käytettävissä olevat vaihetunnukset, ja vaiheluokka on sitä vastaava. Ensisijaisen syöttökentän ohjausobjektin nimeä käytetään vaiheen tunnuksena.
 
-Katso esimerkki `WHSMobileAppStepInfoBuilder.stepId()` -menetelmän toteutuksesta, joka osoittaa, kuinka näitä vaihetunnuksia ja luokkia käytetään on kohdassa [Esimerkki: Vaihekuvakkeiden ja otsikoiden määrittäminen muokatulle työnkululle](#example) jäljempänä tässä ohjeaiheessa.
+Katso esimerkki `WHSMobileAppStepInfoBuilder.stepId()` -menetelmän toteutuksesta, joka osoittaa, kuinka näitä vaihetunnuksia ja luokkia käytetään on kohdassa [Esimerkki: Vaihekuvakkeiden ja otsikoiden määrittäminen muokatulle työnkululle](#example) jäljempänä tässä artikkelissa.
 
 | Vaihetunnus | Vaiheluokka |
 |-|-|
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 Vaiheen kuvakkeen tunnus tallennetaan `defaultStepIcon`-luokan jäseneksi ja vaiheen otsikko tallennetaan `defaultStepTitle`-luokan jäseneksi.
 
-Jos haluat määrittää vaihekuvakkeen, aseta `defaultStepIcon` jollekin kuvaketunnukselle, joita on lueteltu aiemmin tässä ohjeaiheessa olevassa [Käytettävissä olevan vaiheen kuvakkeet](#step-icons) -osassa.
+Jos haluat määrittää vaihekuvakkeen, aseta `defaultStepIcon` jollekin kuvaketunnukselle, joita on lueteltu aiemmin tässä artikkelissa olevassa [Käytettävissä olevan vaiheen kuvakkeet](#step-icons) -osassa.
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Painosyötön vakiokuvakkeen tai mukautetun vaiheen kuvakkeen ja otsikon käyttö
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Sen jälkeen luot vaiheluokan `NewWeight`-vaiheelle. Koodin pitäisi muistuttaa aiemmin tässä ohjeaiheessa näkyvää `ContainerId`-esimerkkiä.
+Sen jälkeen luot vaiheluokan `NewWeight`-vaiheelle. Koodin pitäisi muistuttaa aiemmin tässä artikkelissa näkyvää `ContainerId`-esimerkkiä.
 
 #### <a name="override-the-stepinfo-method"></a>StepInfo()-menetelmän ohittaminen
 

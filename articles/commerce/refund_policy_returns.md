@@ -1,6 +1,6 @@
 ---
-title: Kanavan palautus- ja hyvityskäytännön luominen ja päivittäminen
-description: Tässä ohjeaiheessa kerrotaan, miten kanavan palautus- ja hyvityskäytäntö määritetään.
+title: Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
+description: Tässä artikkelissa kerrotaan, miten kanavan palautus- ja hyvityskäytäntö määritetään.
 author: ShalabhjainMSFT
 ms.date: 07/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
-ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
+ms.openlocfilehash: 54dd19134aea68f73de51086fbaa096961447b62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7388930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873301"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
 
@@ -27,7 +27,7 @@ ms.locfileid: "7388930"
 
 Kanavan palautuskäytännön avulla jälleenmyyjät voivat määrittää Dynamics 365 Commercessa, mitkä maksutarjoukset voidaan sallia myyntipisteen (POS) palautuksen käsittelyyn.  
 
-Tässä ohjeaiheessa kuvataan, miten kanavan palautus- ja hyvityskäytäntö määritetään.
+Tässä artikkelissa kuvataan, miten kanavan palautus- ja hyvityskäytäntö määritetään.
 
 Tämän käytännön soveltamisala rajoittuu tällä hetkellä siihen, että voidaan määrittää kanaville sallitut maksutarjoukset. Sallittu-luettelo perustuu oston tekemiseen käytettyihin maksutapoihin. Esimerkki:
 

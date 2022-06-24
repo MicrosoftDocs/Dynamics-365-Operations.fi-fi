@@ -1,6 +1,6 @@
 ---
 title: Suunnittelun muutosten hallinnan parametrit
-description: Tässä aiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementn suunnittelun muutostenhallintatoimintojen määrittämistä.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementn suunnittelun muutostenhallintatoimintojen määrittämistä.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ef4113077c538ca1a54009aacbdeaf2ccbd0232
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581005"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875507"
 ---
 # <a name="engineering-change-management-parameters"></a>Suunnittelun muutosten hallinnan parametrit
 
@@ -27,7 +27,7 @@ ms.locfileid: "7581005"
 
 ## <a name="open-the-engineering-change-management-parameters-page"></a>Suunnittelun muutostenhallinnan parametrit -sivun avaaminen
 
-Avaa **Suunnittelun muutostenhallinnan parametrit** -sivu valitsemalla **Suunnittelun muutostenhallinta \> Määritys \> Suunnittelun muutostenhallinnan parametrit**. Kentät voidaan sitten määrittää jäljempänä tässä aiheessa kuvatussa tavalla.
+Avaa **Suunnittelun muutostenhallinnan parametrit** -sivu valitsemalla **Suunnittelun muutostenhallinta \> Määritys \> Suunnittelun muutostenhallinnan parametrit**. Kentät voidaan sitten määrittää jäljempänä tässä artikkelissa kuvatulla tavalla.
 
 ## <a name="release-control-tab"></a>Vapauta hallinta -välilehti
 

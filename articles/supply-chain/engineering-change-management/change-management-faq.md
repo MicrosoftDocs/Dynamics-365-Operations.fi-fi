@@ -1,6 +1,6 @@
 ---
 title: Suunnittelun muutosten hallinnan usein kysytyt kysymykset
-description: Tässä aiheessa on vastauksia suunnittelun muutosten hallinnan usein kysyttyihin kysymyksiin.
+description: Tässä artikkelissa on vastauksia suunnittelun muutosten hallinnan usein kysyttyihin kysymyksiin.
 author: t-benebo
 ms.date: 03/25/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dee16f9d6f8ea583f221a7f6eb466675c8c622d0
-ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.openlocfilehash: 16d29fa6485bae866a5209a855dfb928e8bc4783
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8007604"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870779"
 ---
 # <a name="engineering-change-management-faq"></a>Suunnittelun muutosten hallinnan usein kysytyt kysymykset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa on vastauksia suunnittelun muutosten hallinnan usein kysyttyihin kysymyksiin.
+Tässä artikkelissa on vastauksia suunnittelun muutosten hallinnan usein kysyttyihin kysymyksiin.
 
 ## <a name="should-i-track-the-version-in-transactions"></a>Pitäisikö seurata tapahtumien versiota?
 

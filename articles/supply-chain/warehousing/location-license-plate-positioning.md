@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: e52b313e0a00c04edf9003aa6292146936f837d4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102786"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889425"
 ---
 # <a name="location-license-plate-positioning"></a>Toimipaikan rekisterikilpien paikannus
 
@@ -28,11 +28,11 @@ Toimipaikan rekisterikilpien paikannuksen avulla voit nähdä, missä rekisterik
 
 Toiminto lisää järjestysnumeron kuhunkin varastointipaikkaan sijoitettavaan rekisterikilpeen. Tämän järjestysnumeron avulla voidaan tilata varastointipaikkaan rekisterikilpiä. Niinpä toiminto tukee älykkäästi tilanteita, joissa asiakkaan käyttävät painovoimaan perustuvaa hyllyjärjestelmää ja heidän on tavaroiden varastosta noutoa varten tiedettävä, mikä rekisterikilpi näkyy pakkauksen edestä päin.
 
-Tässä aiheessa esitellään esimerkkitilanne tämän toiminnon määrittämisestä ja käytöstä.
+Tässä artikkelissa esitellään esimerkkitilanne tämän toiminnon määrittämisestä ja käytöstä.
 
 ## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>Ota Toimipaikan rekisterikilpien paikannustoiminto käyttöön tai pois käytöstä
 
-Tässä aiheessa kuvatun toiminnon käyttäminen edellyttää, että *Toimipaikan rekisterikilpien paikannus* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Toimipaikan rekisterikilpien paikannus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Tässä artikkelissa kuvatun toiminnon käyttäminen edellyttää, että *Toimipaikan rekisterikilpien paikannus* -toiminto on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Toimipaikan rekisterikilpien paikannus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="example-scenario"></a>Esimerkkiskenaario
 
@@ -42,7 +42,7 @@ Jos haluat käsitellä tätä skenaariota käyttämällä tässä ehdotettuja ar
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>Määritä toiminto tälle skenaariolle
 
-Määritä *Toimipaikan rekisterikilpien paikannus* tässä aiheessa käsiteltävää skenaariota varten suorittamalla seuraavassa esitetyt toimenpiteet.
+Määritä *Toimipaikan rekisterikilpien paikannus* tässä artikkelissa käsiteltävää skenaariota varten suorittamalla seuraavassa esitetyt toimenpiteet.
 
 #### <a name="location-profiles"></a>Sijaintiprofiilit
 

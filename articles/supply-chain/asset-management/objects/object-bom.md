@@ -1,6 +1,6 @@
 ---
 title: Resurssien tuoterakenteet
-description: Tässä ohjeaiheessa kuvataan resurssin tuoterakenteita resurssien hallinnassa.
+description: Tässä artikkelissa kuvataan resurssin tuoterakenteita resurssien hallinnassa.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751982"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882776"
 ---
 # <a name="asset-boms"></a>Resurssien tuoterakenteet
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751982"
 
  
 
-Tässä ohjeaiheessa kuvataan resurssin tuoterakenteita resurssien hallinnassa. **Resurssin tuoterakenne** -sivulla näkyy luettelo kaikista nimikkeistä (varaosista ja muista nimikkeistä), joita resurssin koko käyttöiän aikana käytetään. Kun luot uuden resurssin, sinun kannattaa harkita resurssin tuoterakenteen määrittämistä osana asetusmenettelyä. Tällä tavoin voit seurata resurssin nimikehistoriaa luontipäivästä lähtien.
+Tässä artikkelissa kuvataan resurssin tuoterakenteita resurssien hallinnassa. **Resurssin tuoterakenne** -sivulla näkyy luettelo kaikista nimikkeistä (varaosista ja muista nimikkeistä), joita resurssin koko käyttöiän aikana käytetään. Kun luot uuden resurssin, sinun kannattaa harkita resurssin tuoterakenteen määrittämistä osana asetusmenettelyä. Tällä tavoin voit seurata resurssin nimikehistoriaa luontipäivästä lähtien.
 
 Kun kunnossapitotyö on suoritettu ja nimikekulutus on rekisteröity työtilaukseen, voit seurata varaosien ja muiden resurssin käyttämien nimikkeiden kulutusta. Tämän toiminnon avulla voit säilyttää täydellisen nimikekulutustietueen kaikille resursseille. Voit käyttää tietuetta esimerkiksi valvomaan, onko tietty varaosa usein korvattu, tai seurata varaosia tai muita nimikkeitä, joita käytetään tällä hetkellä käyttö resurssissa.
 

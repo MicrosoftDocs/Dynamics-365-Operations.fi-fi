@@ -1,6 +1,6 @@
 ---
 title: Toimittajayhteistyön määrittäminen ja hallinta
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit toimittajayhteistyön Dynamics 365 Supply Chain Managementissa. Tässä kerrotaan myös, miten uudet toimittajayhteistyön käyttäjät valmistellaan ja miten näiden käyttäjien käyttöoikeusrooleja hallitaan.
+description: Tässä artikkelissa kerrotaan, kuinka voit toimittajayhteistyön Dynamics 365 Supply Chain Managementissa. Tässä kerrotaan myös, miten uudet toimittajayhteistyön käyttäjät valmistellaan ja miten näiden käyttäjien käyttöoikeusrooleja hallitaan.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677559"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890825"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Toimittajayhteistyön määrittäminen ja hallinta
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677559"
 
 Toimittajayhteistyöliittymästä saadaan rajoitettu joukko tietoja ostotilauksista, laskuista ja lähetysvarastosta ulkoisille toimittajakäyttäjille. Tässä käyttöliittymässä toimittaja voi myös vastata tarjouspyyntöihin sekä tarkastella ja muokata yrityksen perustietoja.
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit toimittajayhteistyön Dynamics 365 Supply Chain Managementissa. Tässä kerrotaan myös, miten määritetään työnkulku uusien toimittajayhteistyön käyttäjien valmistelulle ja miten näiden käyttäjien käyttöoikeusrooleja hallitaan.
+Tässä artikkelissa kerrotaan, kuinka voit toimittajayhteistyön Dynamics 365 Supply Chain Managementissa. Tässä kerrotaan myös, miten määritetään työnkulku uusien toimittajayhteistyön käyttäjien valmistelulle ja miten näiden käyttäjien käyttöoikeusrooleja hallitaan.
 
 > [!NOTE]
 > Toimittajayhteistyön käyttöoikeusroolien määrittämistä koskevat tiedot pätevät vain Finance and Operationsin nykyiseen versioon. Microsoft Dynamics AX 7.0 (helmikuu 2016)- ja Microsoft Dynamics AX 7.0.1 (toukokuu 2016) -versioissa yhteistyö toimittajien kanssa tapahtuu **Toimittajaportaali**-moduulissa. Tietoja Microsoft Dynamics AX:n toimittajaportaalin käyttöoikeuksista: [Toimittajaportaalin käyttäjäsuojaus](configure-security-vendor-portal-users.md).
@@ -77,7 +77,7 @@ Jos aiot määrittää toimittajan yhteyshenkilöt ja käyttäjät manuaalisesti
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>Mahdollisten toimittajien aktivoinnissa käytettävien käyttöoikeusroolien määrittäminen
 
-Mahdollisen toimittajan rekisteröintipyynnöllä luotavien toimittajien aktivointia varten on määritettävä ulkoinen käyttöoikeusrooli. Tämä rooli määritetään uusille käyttäjille sen valmisteluprosessin aikana, jota ohjataan tyypin **Käyttäjäpyynnön työnkulku (ympäristö)** työnkululla. Lisätietoja on myöhemmin tässä aiheessa osassa [Toimittajayhteistyön käyttäjäpyyntöjen käsittelyn työnkulkujen määrittäminen](#set-up-workflows-to-process-vendor-collaboration-user-requests).
+Mahdollisen toimittajan rekisteröintipyynnöllä luotavien toimittajien aktivointia varten on määritettävä ulkoinen käyttöoikeusrooli. Tämä rooli määritetään uusille käyttäjille sen valmisteluprosessin aikana, jota ohjataan tyypin **Käyttäjäpyynnön työnkulku (ympäristö)** työnkululla. Lisätietoja on myöhemmin tässä artikkelissa osassa [Toimittajayhteistyön käyttäjäpyyntöjen käsittelyn työnkulkujen määrittäminen](#set-up-workflows-to-process-vendor-collaboration-user-requests).
 
 Tietoja mahdollisten toimittajien aktivoinnista: [Toimittajien aktivointi](vendor-onboarding.md).
 

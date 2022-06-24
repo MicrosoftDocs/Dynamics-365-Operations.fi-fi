@@ -1,6 +1,6 @@
 ---
-title: Lähetyksen konsolidointikäytäntöjen määrittäminen
-description: Tässä ohjeaiheessa käsitellään lähetyksen oletusarvoisten ja mukautettujen konsolidointikäytäntöjen määrittämistä.
+title: Lähetyksen konsolidoinnin käytäntöjen määrittäminen
+description: Tässä artikkelissa käsitellään lähetyksen oletusarvoisten ja mukautettujen konsolidointikäytäntöjen määrittämistä.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672567"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845921"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Lähetyksen konsolidointikäytäntöjen määrittäminen
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672567"
 
 Lähetyksen konsolidointikäytäntöjä käyttävän lähetyksen konsolidointiprosessin avulla voidaan tehdä automaattinen lähetyksen konsolidointi automaattisen ja manuaaliseen varastoon vapautuksen aikana. Ensimmäiset käytännöt on määritettävä, kun toiminto otetaan käyttöön. Jos käytäntöjä ei määritetä, jokainen myyntirivi luo erillisen lähetyksen, jossa on yksi kuormarivi.
 
-Tämän ohjeaiheen skenaarioiden avulla näytetään, miten määritetään oletusarvoiset ja mukautetut lähetyksen konsolidointikäytännöt.
+Tämän artikkelin skenaarioiden avulla näytetään, miten määritetään oletusarvoiset ja mukautetut lähetyksen konsolidointikäytännöt.
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Lähetyksen konsolidointikäytäntötoiminnon ottaminen käyttöön
 
 > [!IMPORTANT]
-> Ohjeaiheen [ensimmäisessä skenaariossa](#scenario-1) määritetään ensin varasto siten, että se käyttää aiemman lähetyksen konsolidointitoimintoa. Tämän jälkeen otetaan käyttöön lähetyksen konsolidointikäytännöt. Tällä tavoin näytetään, miten päivitysskenaario toimii. Jos ensimmäisessä skenaariossa on tarkoitus käyttää demotietoympäristöä, älä ota toimintoa käyttöön ennen skenaarioon toteuttamista.
+> Artikkelin [ensimmäisessä skenaariossa](#scenario-1) määritetään ensin varasto siten, että se käyttää aiemman lähetyksen konsolidointitoimintoa. Tämän jälkeen otetaan käyttöön lähetyksen konsolidointikäytännöt. Tällä tavoin näytetään, miten päivitysskenaario toimii. Jos ensimmäisessä skenaariossa on tarkoitus käyttää demotietoympäristöä, älä ota toimintoa käyttöön ennen skenaarioon toteuttamista.
 
 *Lähetyksen konsolidointikäytännöt* -toiminto on otettava järjestelmässä käyttöön, ennen kuin sitä voi käyttää. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
@@ -40,7 +40,7 @@ Tämän ohjeaiheen skenaarioiden avulla näytetään, miten määritetään olet
 
 ## <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Ohjeaiheen kaikissa skenaarioissa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu **USMF** ennen aloittamista.
+Artikkelin kaikissa skenaarioissa viitataan arvoihin ja tietueisiin, jotka sisältyvät Microsoft Dynamics 365 Supply Chain Managementin vakiodemotietoihin. Jos haluat käyttää harjoituksissa näitä annettuja arvoja, varmista, että demotiedot on asennettu työskentely-ympäristöön ja että yritykseksi on valittu **USMF** ennen aloittamista.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Skenaario 1: Lähetyksen oletusarvoisten konsolidointikäytäntöjen määrittäminen
 
@@ -339,7 +339,7 @@ Nyt kun kaikki käytännöt on luotu, niiden käyttöjärjestys on määritettä
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Esimerkkiskenaarioita lähetyksen konsolidointikäytäntöjen käyttämisestä
 
-Seuraavat skenaariot näyttävät, miten tämän ohjeaiheen mukaisesti luotuja lähetyksen konsolidointikäytäntöjä voidaan käyttää. Kukin skenaario käsittelee lähetyksen konsolidointiprosessia, joka käyttää lähetyksen konsolidointikäytäntöjä automaattisen tai manuaaliseen varastoon vapautuksen aikana:
+Seuraavat skenaariot näyttävät, miten tämän artikkelin mukaisesti luotuja lähetyksen konsolidointikäytäntöjä voidaan käyttää. Kukin skenaario käsittelee lähetyksen konsolidointiprosessia, joka käyttää lähetyksen konsolidointikäytäntöjä automaattisen tai manuaaliseen varastoon vapautuksen aikana:
 
 - Skenaario 1: [Lähetysten konsolidointi, kun ne vapautetaan varastoon myyntitilausten automaattisella vapauttamisella](../warehousing/consolidate-shipments-automatic.md)
 - Skenaario 2: [Lähetysten konsolidointi, kun lähetyksen konsolidointikäytäntö korvataan Vapauta varastoon -sivulla](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

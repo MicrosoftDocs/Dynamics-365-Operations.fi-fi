@@ -1,6 +1,6 @@
 ---
 title: Yleisen varastokirjanpidon tukemat yritysasiakirjat
-description: Tässä aiheessa luetellaan liiketoiminta-asiakirjat, joita yleinen varastokirjanpito tukee. Se sisältää myös yksityiskohtaisen esimerkin ostotilausasiakirjoista.
+description: Tässä artikkelissa luetellaan liiketoiminta-asiakirjat, joita yleinen varastokirjanpito tukee. Se sisältää myös yksityiskohtaisen esimerkin ostotilausasiakirjoista.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: dc88d095c039b22ac347db949f6b61d5a89dc4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875420"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Yleisen varastokirjanpidon tukemat yritysasiakirjat
 
@@ -32,7 +32,7 @@ Yritysasiakirjoja on kahta eri tyyppiä:
 - **Asiakirjat, joissa on kirjauskansio** – Näitä asiakirjoja ovat tuotteen vastaanotto, ostolasku, pakkausluettelo ja myyntilaskuasiakirjat.
 - **Asiakirjat, joihin ei ole kirjauskansiota** – Näitä asiakirjoja ovat inventointi-, siirto- ja varasto-oikaisuasiakirjat.
 
-Ostotilauksia käytetään myöhemmin tässä ohjeaiheessa prosessin havainnollistamisena.
+Ostotilauksia käytetään myöhemmin tässä artikkelissa prosessin havainnollistamisena.
 
 Seuraavassa taulukossa luetellaan tiedostot, joita nykyinen versio tukee.
 

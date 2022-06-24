@@ -1,6 +1,6 @@
 ---
-title: Määritä työmalli ostotilauksia varten
-description: Tässä aiheessa käsitellään vastaanotettujen nimikkeiden poispanossa käytettävän yksinkertaisen työmallin määrittämistä.
+title: Työmallin määrittäminen ostotilauksia varten
+description: Tässä artikkelissa käsitellään vastaanotettujen nimikkeiden poispanossa käytettävän yksinkertaisen työmallin määrittämistä.
 author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32dbdd8243c6b37cfe0c42d2e7b06adfa32a947a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ee6bc896a979c326001e1596e4a463753005fabf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572286"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877360"
 ---
-# <a name="set-up-a-work-template-for-purchase-orders"></a>Määritä työmalli ostotilauksia varten
+# <a name="set-up-a-work-template-for-purchase-orders"></a>Työmallin määrittäminen ostotilauksia varten
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä aiheessa käsitellään vastaanotettujen nimikkeiden poispanossa käytettävän yksinkertaisen työmallin määrittämistä. Työmallit määrittävät varastotyöntekijälle mobiililaitteessa näytettävät ohjeet, kun nimikkeitä siirretään vastaanotosta. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoissa mainituilla tiedoilla. Luo työpoolin tunnus ennen tämän opastuksen aloittamista. Tässä esimerkissä käytetään Saapuva-asetuksessa kutsuttua työpoolin tunnusta. Tämä menettely on tarkoitettu varastopäällikölle.
+Tässä artikkelissa käsitellään vastaanotettujen nimikkeiden poispanossa käytettävän yksinkertaisen työmallin määrittämistä. Työmallit määrittävät varastotyöntekijälle mobiililaitteessa näytettävät ohjeet, kun nimikkeitä siirretään vastaanotosta. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoissa mainituilla tiedoilla. Luo työpoolin tunnus ennen tämän opastuksen aloittamista. Tässä esimerkissä käytetään Saapuva-asetuksessa kutsuttua työpoolin tunnusta. Tämä menettely on tarkoitettu varastopäällikölle.
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Työ > Työmallit**.
 2. Valitse **Työtilaustyyppi**-kentässä **Ostotilaukset**.

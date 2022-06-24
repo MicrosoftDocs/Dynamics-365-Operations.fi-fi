@@ -1,6 +1,6 @@
 ---
 title: Kassakoneen toiminnot, Norja
-description: Tämä ohjeaihe sisältää Norjassa käytettävissä olevien kassakoneessa Microsoft Dynamics 365 Commercessa käytettävissä olevien toimintojen yhteenvedon sekä ohjeita toiminnon määrittämiseen.
+description: Tämä artikkeli sisältää Norjassa käytettävissä olevien kassakoneessa Microsoft Dynamics 365 Commercessa käytettävissä olevien toimintojen yhteenvedon sekä ohjeita toiminnon määrittämiseen.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906696"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassakoneen toiminnot, Norja
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on yleiskatsaus kassakonetoiminnoista, joita Norjassa voi käyttää Dynamics 365 Commercessa. Lisäksi ohjeissa on ohjeita toiminnon määrittämisestä. Toiminnot koostuvat seuraavista osista:
+Tässä artikkelissa on yleiskatsaus kassakonetoiminnoista, joita Norjassa voi käyttää Dynamics 365 Commercessa. Lisäksi ohjeissa on ohjeita toiminnon määrittämisestä. Toiminnot koostuvat seuraavista osista:
 
 - Yleiset myyntipistetoiminnot, jotka ovat asiakkaiden käytettävissä kaikissa maissa tai kaikilla alueilla. Esimerkkinä on asetus, jonka avulla voit estää kuitin kopion tulostamisen useammin kuin kerran.
 - Norjan maakohtaisia toimintoja, kuten myyntitapahtumien digitaalisia allekirjoituksia.

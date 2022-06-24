@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Managementin tuotteiden synkronointi Field Servicen tuotteisiin
-description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
+description: Tässä artikkelissa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
 author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 09460139ba2ae7c9be78b1441e1d095952b405f8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 114550f01f3aed197480fb6830fe913dbfa7b570
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566476"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860548"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Supply Chain Managementin tuotteiden synkronointi Field Servicen tuotteisiin
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
+Tässä artikkelissa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
 
 Käytetty **Field Servicen tuotteet (Supply Chain Managementista Field Serviceen)** -malli perustuu Prospektista käteiseksi -ratkaisun **Tuotteet (Supply Chain Managementista Salesiin) – suora** -malliin. Lisätietoja on kohdassa [Tuotteet (Supply Chain Managementista Salesiin) – suora](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
-Tässä ohjeaiheessa käsitellään ainoastaan **Field Servicen tuotteet (Supply Chain Managementista Field Serviceen)**- ja **Tuotteet (Supply Chain Managementista Salesiin) – suora** -mallien eroja.
+Tässä artikkelissa käsitellään ainoastaan **Field Servicen tuotteet (Supply Chain Managementista Field Serviceen)**- ja **Tuotteet (Supply Chain Managementista Salesiin) – suora** -mallien eroja.
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 

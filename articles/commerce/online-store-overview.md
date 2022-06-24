@@ -1,6 +1,6 @@
 ---
 title: Sähköisen kaupankäynnin sivuston yleiskuvaus
-description: Tässä aiheessa on yleiskatsaus verkkokauppasivustojen tuesta Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa on yleiskatsaus verkkokauppasivustojen tuesta Microsoft Dynamics 365 Commercessa.
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487765"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899118"
 ---
 # <a name="e-commerce-site-overview"></a>Sähköisen kaupankäynnin sivuston yleiskuvaus
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on yleiskatsaus verkkokauppasivustojen tuesta Microsoft Dynamics 365 Commercessa. Se sisältää tietoja siitä, miten sähköisen kaupan verkkokaupat alustetaan ja hallitaan Dynamics 365 Commercessa. Se tarjoaa myös linkkejä lisätietoihin verkkokaupoista ja tietoja sähköisen kaupankäynnin sivuston asentamisesta määrittämisestä. Vaikka tämä ohje aihe kattaa monet perusasiat, se ei kata kaikkea, mikä on tarpeen sähköisen kaupankäynnin tuotantosivuston määrittämistä varten. Edistyneitä aiheita on Dynamics 365 Commercen dokumentaatiossa.
+Tässä artikkelissa on yleiskatsaus verkkokauppasivustojen tuesta Microsoft Dynamics 365 Commercessa. Se sisältää tietoja siitä, miten sähköisen kaupan verkkokaupat alustetaan ja hallitaan Dynamics 365 Commercessa. Se tarjoaa myös linkkejä lisätietoihin verkkokaupoista ja tietoja sähköisen kaupankäynnin sivuston asentamisesta määrittämisestä. Vaikka tämä artikkeli kattaa monet perusasiat, se ei kata kaikkea, mikä on tarpeen sähköisen kaupankäynnin tuotantosivuston määrittämistä varten. Edistyneitä artikkeleita on Dynamics 365 Commercen dokumentaatiossa.
 
 ## <a name="online-store-channel"></a>Verkkokauppakanava
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce käyttää Azure Active Directory (Azure AD) B2C -ratkaisu
 
 ## <a name="overview-of-the-default-site-pages"></a>Oletussivuston sivujen yleiskatsaus
 
-**Oletus**- ja **fabrikam**-sivustoissa on valmiiksi määritettyjä malleja, katkelmia ja sivuja, joiden avulla pääset alkuun. Lisätietoja on seuraavissa aiheissa:
+**Oletus**- ja **fabrikam**-sivustoissa on valmiiksi määritettyjä malleja, katkelmia ja sivuja, joiden avulla pääset alkuun. Lisätietoja on seuraavissa artikkeleissa:
 
 - [Aloitussivun yleiskatsaus](quick-tour-home-page.md)
 - [Tuotetietosivun yleiskatsaus](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Dynamics 365 Commerce käyttää Azure Active Directory (Azure AD) B2C -ratkaisu
 
 ## <a name="manage-site-settings"></a>Sivuston asetusten hallinta
 
-Lisätietoja asetusten hallinnasta on seuraavissa ohjeaiheissa:
+Lisätietoja asetusten hallinnasta on seuraavissa artikkeleissa:
 
 - [Sähköisen kaupankäynnin käyttäjien ja roolien hallinta](manage-ecommerce-users-roles.md)
 - [Sivuston hakukoneoptimointia (SEO) koskevia tietoja](search-engine-optimization-considerations.md)
@@ -92,7 +92,7 @@ Lisätietoja asetusten hallinnasta on seuraavissa ohjeaiheissa:
 
 ## <a name="manage-site-content"></a>Sivuston sisällön hallinta
 
-Lisätietoja sisällön hallinnasta on seuraavissa ohjeaiheissa:
+Lisätietoja sisällön hallinnasta on seuraavissa artikkeleissa:
 
 - [Sivumallisanasto](page-elements-overview.md)
 - [Asiakirjan tilat ja elinkaari](document-states-overview.md)

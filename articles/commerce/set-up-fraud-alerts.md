@@ -1,6 +1,6 @@
 ---
 title: Puhelinkeskuksen petosilmoitusten määrittäminen ja niiden käyttäminen
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää säännöt, jotka hälyttävät asiakaspalvelun edustajalle, kun tilausten käsittelyn aikana havaitaan mahdollisia vilpillisiä tietoja. Voit määrittää tietyt koodit, joilla epäilyttävät tilaukset asetetaan automaattisesti tai manuaalisesti pitoon.
+description: Tässä artikkelissa kerrotaan, kuinka voit määrittää säännöt, jotka hälyttävät asiakaspalvelun edustajalle, kun tilausten käsittelyn aikana havaitaan mahdollisia vilpillisiä tietoja. Voit määrittää tietyt koodit, joilla epäilyttävät tilaukset asetetaan automaattisesti tai manuaalisesti pitoon.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885345"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Puhelinkeskuksen petosilmoitusten määrittäminen ja niiden käyttäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten ehdot ja säännöt määritetään siten, että mahdolliset vilpilliset myyntitilaukset voidaan asettaa niiden avulla pitoon myöhempää tarkistusta varten. Petostarkistusominaisuudella voidaan tarkistaa myyntitilauksen tietojen oikeellisuus. Jos myyntitilauksen tiedot näyttävät kyseenalaisilta organisaation petosehtojen ja -sääntöjen perusteella, tilaus voidaan asettaa pitoon myöhempää tarkistusta varten. Siinä tapauksessa tilausta ei vapauteta varastoon lisäkäsittelyä varten, ennen kuin se on poistettu pidosta.
+Tässä artikkelissa kerrotaan, miten ehdot ja säännöt määritetään siten, että mahdolliset vilpilliset myyntitilaukset voidaan asettaa niiden avulla pitoon myöhempää tarkistusta varten. Petostarkistusominaisuudella voidaan tarkistaa myyntitilauksen tietojen oikeellisuus. Jos myyntitilauksen tiedot näyttävät kyseenalaisilta organisaation petosehtojen ja -sääntöjen perusteella, tilaus voidaan asettaa pitoon myöhempää tarkistusta varten. Siinä tapauksessa tilausta ei vapauteta varastoon lisäkäsittelyä varten, ennen kuin se on poistettu pidosta.
 
 > [!NOTE]
 > Tätä toimintoa käytetään vain Commerce-puhelinkeskuskanavan myyntitilausten käsittelyssä.

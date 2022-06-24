@@ -1,6 +1,6 @@
 ---
-title: Määrityksistä poikkeamisia hyväksyvät työntekijät
-description: Tässä aiheessa kuvataan, kuinka määritetään määrityksistä poikkeamisia hyväksyvät työntekijät.
+title: Määrityksistä poikkeamien hyväksyneet työntekijät
+description: Tässä artikkelissa kuvataan, kuinka määritetään määrityksistä poikkeamisia hyväksyvät työntekijät.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fd1c7c86ac8627bd332bc578e98b4d7f091cdc8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a108fc1f8954e32719c93656a64d1d27fda03fb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575893"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907403"
 ---
-# <a name="workers-responsible-for-approving-nonconformances"></a>Määrityksistä poikkeamisia hyväksyvät työntekijät
+# <a name="workers-responsible-for-approving-nonconformances"></a>Määrityksistä poikkeamien hyväksyneet työntekijät
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka määritetään määrityksistä poikkeamisia hyväksyvät työntekijät.
+Tässä artikkelissa kuvataan, kuinka määritetään määrityksistä poikkeamisia hyväksyvät työntekijät.
 
 Määrityksistä poikkeamiset on hyväksyttävä, ennen kuin käyttäjät voivat alkaa syöttää tietoja, kuten korjauksia tai työvaiheita. Ennen kuin käyttäjät voivat hyväksyä tai hylätä määrityksistä poikkeamisia, käyttäjätunnus (käyttäjätietue) on linkitettävä työntekijätietueeseen. Voit vaihtoehtoisesti määrittää laadusta vastaavat työntekijät ja sallia sitten yhden työntekijän hyväksyä työt toisen työntekijän puolesta.
 

@@ -1,6 +1,6 @@
 ---
-title: Määritä online-myymälät
-description: Tässä artikkelissa on linkkejä ohjeaiheisiin, joiden avulla voit keskitetysti määrittää ja hallita verkkokauppaa.
+title: Online-myymälöiden määrittäminen
+description: Tässä artikkelissa on linkkejä artikkeleihin, joiden avulla voit keskitetysti määrittää ja hallita verkkokauppaa.
 author: kfend
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87607e2c42ee67d62a7ce2e87744e9d9143dcf81
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c8a5b13189eb93d4df81a427a932b81ab8d830be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734101"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861876"
 ---
-# <a name="configure-online-stores"></a>Määritä online-myymälät
+# <a name="configure-online-stores"></a>Online-myymälöiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on linkkejä ohjeaiheisiin, joiden avulla voit keskitetysti määrittää ja hallita verkkokauppaa.
+Tässä artikkelissa on linkkejä artikkeleihin, joiden avulla voit keskitetysti määrittää ja hallita verkkokauppaa.
 
-Seuraavassa taulukossa on luettelo ohjeaiheista, jotka auttavat määrittämään Commerce-komponentit ja verkkokaupan asiakasohjelmassa.
+Seuraavassa taulukossa on luettelo artikkeleista, jotka auttavat määrittämään Commerce-komponentit ja verkkokaupan asiakasohjelmassa.
 
 ## <a name="configure-an-online-store"></a>Määritä online-myymälä
 
-| Tehtävä                                                | Yksityiskohdat                                                                                                                                                                                                                                                                                                                                                   | Aiheet                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Tehtävä                                                | Lisätietoja                                                                                                                                                                                                                                                                                                                                                   | Artikkelit                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfiguroi komponentit.                        | Määritä ja ylläpidä kaupankäyntitoimintojen tietoja. Näitä tietoja ovat myymälät, verot, tuotteet, lahjakortit, tarjoukset ja alennukset.                                                                                                                                                                                                          | [Retailin määritys ja ylläpito](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-retail) (TechNet-sisältöä Microsoft Dynamics AX 2012:lle)                                                                                                                                                                                                                                                                                          |
 | Määritä kanavan siirtymishierarkia.    | Luo kanavan siirtymisluokkahierarkia, jonka avulla voidaan määrittää verkkokaupan kautta tarjottujen tuotteiden luokkarakenne. Voit määrittää luokkahierarkian ja liittää tämän jälkeen tuotteet, tuotemääriteryhmät ja määritearvot luokkiin. Liitä luokkahierarkia tämän jälkeen verkkokauppaan.                            | [Aseta vähittäismyyntihierarkia](/dynamicsax-2012/appuser-itpro/set-up-a-retail-hierarchy)</br> (AX 2012:n TechNet-sisältö)</br> [Määritä määritteet ja määritetyypit](/dynamicsax-2012/appuser-itpro/set-up-attributes-and-attribute-types) (AX 2012:n TechNet-sisältö)</br> [Määritä vähittäismyynnin määriteryhmiä](/dynamicsax-2012/appuser-itpro/set-up-retail-attribute-groups) (AX 2012:n TechNet-sisältö) |
@@ -41,7 +41,7 @@ Seuraavassa taulukossa on luettelo ohjeaiheista, jotka auttavat määrittämää
 
 ## <a name="configure-online-store-products"></a>Verkkokauppatuotteiden konfigurointi
 
-| Tehtävä                                 | Yksityiskohdat                                                                                                                                           | Aiheet                                                                                                                                                                                                                                                                            |
+| Tehtävä                                 | Lisätietoja                                                                                                                                           | Artikkelit                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lisää valikoimia verkkokauppaan. | Lisää tuotevalikoimat, joihin kuuluvat verkkokaupassa saatavilla olevat tuotteet.                                                                  | [Verkkokaupan määrittäminen](/dynamicsax-2012/appuser-itpro/set-up-an-online-store) (AX 2012:n TechNet-sisältö)                                                                                                                                              |
 | Luetteloiden hallinta.                     | Voit käyttää tuote-esitteitä tunnistaaksesi tuotteet, joita haluat tarjota kaupoissasi.                                                              | [Päätehtävät: Vähittäismyynnin tuoteluetteloiden luominen](/dynamicsax-2012/appuser-itpro/key-tasks-create-retail-product-catalogs) (AX 2012:n TechNet-sisältö)                                                                                                                           |
@@ -52,7 +52,7 @@ Seuraavassa taulukossa on luettelo ohjeaiheista, jotka auttavat määrittämää
 
 ## <a name="set-up-data-exchange-between-commerce-and-the-online-store"></a>Määritä Commercen ja verkkokaupan välinen tiedonsiirto
 
-| Tehtävä                                 | Yksityiskohdat                                                                                                                               | Aiheet                                                                                                                                                                                                                                                                                  |
+| Tehtävä                                 | Lisätietoja                                                                                                                               | Artikkelit                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Määritä kanavan integrointiprofiilit. | Profiilien avulla Commerce-komponentit voivat kommunikoida toistensa kanssa. Määritä profiilit ennen tietojen vaihdon asetusten määrittämistä. | [Reaaliaikaisen palveluprofiilin määritys](/dynamicsax-2012/appuser-itpro/set-up-a-real-time-service-profile) (AX 2012:n TechNet-sisältö)</br> [Kanavaprofiilin määritys](/dynamicsax-2012/appuser-itpro/set-up-a-channel-profile) (AX 2012:n TechNet-sisältö) |
 

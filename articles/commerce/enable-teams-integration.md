@@ -1,6 +1,6 @@
 ---
 title: Ota Dynamics 365 Commercen ja Microsoft Teamsin integraatio käyttöön
-description: Tässä aiheessa kuvataan, kuinka otetaan käyttöön Microsoft Dynamics 365 Commercen ja Microsoft Teamsin integrointi.
+description: Tässä artikkelissa kuvataan, kuinka otetaan käyttöön Microsoft Dynamics 365 Commercen ja Microsoft Teamsin integrointi.
 author: gvrmohanreddy
 ms.date: 02/17/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dfada577ab97fdb9912c22d2399529f934b25d54
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 505e3854818e4d5b73fc1a22724be16036300c3b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872825"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Ota Dynamics 365 Commercen ja Microsoft Teamsin integraatio käyttöön
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka otetaan käyttöön Microsoft Dynamics 365 Commercen ja Microsoft Teamsin integrointi.
+Tässä artikkelissa kuvataan, kuinka otetaan käyttöön Microsoft Dynamics 365 Commercen ja Microsoft Teamsin integrointi.
 
 Jotta Teams voidaan valmistella Dynamics 365 Commercen tiedoilla ja Teams-sovelluksen ja myyntipisteen välinen tehtävänhallinta voidaan synkronoida, integrointitoiminnot on otettava käyttöön Commerce headquartersissa.
 

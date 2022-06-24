@@ -1,6 +1,6 @@
 ---
 title: Suunnitteluversiot ja suunnittelun tuoteluokat
-description: Tässä aiheessa käsitellään suunnitteluversiota koskevia tietoja. Suunnitteluversioilla voidaan varmistaa, että tuotteen eri tilat ja sen tiedot pysyvät ajan tasalla ja selkeinä ja että ne voidaan visualisoida järjestelmässä.
+description: Tässä artikkelissa käsitellään suunnitteluversiota koskevia tietoja. Suunnitteluversioilla voidaan varmistaa, että tuotteen eri tilat ja sen tiedot pysyvät ajan tasalla ja selkeinä ja että ne voidaan visualisoida järjestelmässä.
 author: t-benebo
 ms.date: 04/07/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
-ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.openlocfilehash: a98ead81a61ceac2ed721848847164f76e758f80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8553359"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872062"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Suunnitteluversiot ja suunnittelun tuoteluokat
 
@@ -60,7 +60,7 @@ Huomaa, että suunnittelutuote on voi olla samanaikaisesti vain yhdessä suunnit
 
 ## <a name="track-versions-in-transactions"></a>Versioiden seuranta tapahtumissa
 
-Suunnittelun muutostenhallintaa käytettäessä tuotteen päätietoihin sisältyy aina vähintään yksi suunnitteluversio. Suunnittelutuotteiden asetuksissa voidaan valita, onko suunnitteluversio myös *logististen tapahtumien* osa. (Lisätietoja on jäljempänä tässä aiheessa kohdassa [Suunnittelun tuoteluokkien määrittäminen](#product-category).) Jos logistisella vaikutuksella on merkitystä, se eroaa tuote- ja yrityskohtaisesti. Joskus käytetään vain tuotteen uusinta versiota. Siinä tapauksessa uuden version ottaminen käyttöön tarkoittaa, ettei edellistä versiota voi enää käyttää. Muissa tapauksissa edellistä versiota tarvitaan logistisissa tapahtumissa seuraavien haasteiden selvittämistä varten:
+Suunnittelun muutostenhallintaa käytettäessä tuotteen päätietoihin sisältyy aina vähintään yksi suunnitteluversio. Suunnittelutuotteiden asetuksissa voidaan valita, onko suunnitteluversio myös *logististen tapahtumien* osa. (Lisätietoja on jäljempänä tässä artikkelissa kohdassa [Suunnittelun tuoteluokkien määrittäminen](#product-category).) Jos logistisella vaikutuksella on merkitystä, se eroaa tuote- ja yrityskohtaisesti. Joskus käytetään vain tuotteen uusinta versiota. Siinä tapauksessa uuden version ottaminen käyttöön tarkoittaa, ettei edellistä versiota voi enää käyttää. Muissa tapauksissa edellistä versiota tarvitaan logistisissa tapahtumissa seuraavien haasteiden selvittämistä varten:
 
 - Logistiikkaosaston on lähetettävä kaksi kappaletta tuotetta asiakkaalle. Tässä tapauksessa on päätettävä, haluatko lähettää kaksi eri versiota tai sallitaanko kahden eri version lähettäminen.
 - Myöhemmin havaitaan tiettyyn muutokseen liittyvä ongelma. Tässä tapauksessa saattaa on hyödyllistä selvittää tarkasti, mikä versio kussakin tilauksessa lähetettiin.
@@ -118,7 +118,7 @@ Määritä seuraavat kentät suunnittelun tuoteluokan **Tiedot**-pikavalikossa.
 | Tuotedimensioryhmä | **Version seuranta tapahtumissa** -asetuksella voidaan valita tuotteen dimensioryhmä. Jos version seuranta tapahtumissa on määritetty, tuotedimensioryhmät, joissa käytetään *version* dimensioita, näytetään. Muussa tapauksessa vain ne tuotedimensioryhmät, joissa *versio* ei ole aktiivinen dimensio, näytetään. |
 | Tuotteen elinkaaren tila luotaessa | Määritä oletusarvoinen tuotteen elinkaaren tila, joka suunnitelmatuotteella on, kun se luodaan ensimmäisen kerran. Lisätietoja on kohdassa [Tuotteen elinkaaren tilat ja tapahtumat](product-lifecycle-state-transactions.md). |
 | Versionumerosääntö | Valitse luokkaa koskeva versionumerosääntö:<ul><li>**Manuaalinen** – valitse kunkin uuden version versionumero.</li><li>**Automaattinen** – Järjestelmä määrittää versionumeron määritetyn muodon perusteella. Käytä muodon määrittämisestä numeromerkkiä (\#) ilmaisemaan numeron ja muut merkit, jotka ilmaisevat vakioarvon. Jos muodosti määritetään esimerkiksi *V-\#\#*, ensimmäinen versio on V-01, toinen versio on V-02 ja niin edelleen.</li><li>**Luettelo** – järjestelmä hakee seuraavan numeron määritettyjen mukautettujen arvojen esimääritetystä luettelosta.</li></ul> |
-| Pakota voimassaolo | Valitse, onko suunnitteluversioiden voimassaolopäivämäärien oltava peräkkäisiä tai voiko niiden välillä olla aukkoja ja päällekkäisyyksiä. Tämä asetus vaikuttaa tapaan, jolla kunkin sellaisen suunnitteluversion **Voimassaolo alkaa**- ja **Voimassaolo päättyy** -kenttää käytetään, jota luokka koskee.<ul><li>Jos tämän asetuksen arvo on *Kyllä*, **Voimassaolo alkaa** -arvo on määritettävä kullekin versiolle eikä versioiden välillä saa olla päällekkäisyyksiä tai aukkoja. Kun suunnitteluversion päivämääräalue yhdistetään suoraan edelliseen ja seuraavaan suunnitteluversioon, jos sellaiset ovat olemassa. Tässä skenaariossa käytetään aina uusinta versiota eikä vanhoja versioita enää käytetä.</li><li>Jos tämän vaihtoehdon asetuksena on **Ei**, suunnitteluversioiden voimassaolon alkamispäivämääräkentillä ei ole rajoituksia ja sekä päällekkäisyydet ja aukot sallitaan. Tässä skenaariossa useita versioita voi olla aktiivisena samanaikaisesti ja mitä tahansa aktiivista versiota voi käyttää.</li></ul><p>Tämä vaihtoehto vaikuttaa myös tuoterakenteisiin ja reitteihin, jotka on yhdistetty tuoteversioon. Lisätietoja on jäljempänä tämän aiheen kohdassa [Tuoterakenteiden ja reittien yhdistäminen suunnitteluversioihin](#boms-routes).</p> |
+| Pakota voimassaolo | Valitse, onko suunnitteluversioiden voimassaolopäivämäärien oltava peräkkäisiä tai voiko niiden välillä olla aukkoja ja päällekkäisyyksiä. Tämä asetus vaikuttaa tapaan, jolla kunkin sellaisen suunnitteluversion **Voimassaolo alkaa**- ja **Voimassaolo päättyy** -kenttää käytetään, jota luokka koskee.<ul><li>Jos tämän asetuksen arvo on *Kyllä*, **Voimassaolo alkaa** -arvo on määritettävä kullekin versiolle eikä versioiden välillä saa olla päällekkäisyyksiä tai aukkoja. Kun suunnitteluversion päivämääräalue yhdistetään suoraan edelliseen ja seuraavaan suunnitteluversioon, jos sellaiset ovat olemassa. Tässä skenaariossa käytetään aina uusinta versiota eikä vanhoja versioita enää käytetä.</li><li>Jos tämän vaihtoehdon asetuksena on **Ei**, suunnitteluversioiden voimassaolon alkamispäivämääräkentillä ei ole rajoituksia ja sekä päällekkäisyydet ja aukot sallitaan. Tässä skenaariossa useita versioita voi olla aktiivisena samanaikaisesti ja mitä tahansa aktiivista versiota voi käyttää.</li></ul><p>Tämä vaihtoehto vaikuttaa myös tuoterakenteisiin ja reitteihin, jotka on yhdistetty tuoteversioon. Lisätietoja on jäljempänä tämän artikkelin kohdassa [Tuoterakenteiden ja reittien yhdistäminen suunnitteluversioihin](#boms-routes).</p> |
 | Käytä numeron säännön nimikkeistöä | Määrittämällä tämän vaihtoehdon asetukseksi *Kyllä* voit ottaa käyttöön säännöt, joilla tuotenumero määritetään käyttämällä numerosarjoja, suunnittelumääritteen nimiä ja arvoja sekä tekstivakioita segmentteinä. Voit luoda tai muokata sääntöjä valitsemalla **Muokkaa**-painike. |
 | Käytä nimen säännön nimikkeistöä | Määrittämällä tämän vaihtoehdon asetukseksi *Kyllä* voit ottaa käyttöön säännöt, joilla nimi määritetään käyttämällä suunnittelumääritteen nimiä ja arvoja sekä tekstivakioita segmentteinä. Voit luoda tai muokata sääntöjä valitsemalla **Muokkaa**-painike. |
 | Käytä kuvauksen säännön nimikkeistöä | Määrittämällä tämän vaihtoehdon asetukseksi *Kyllä* voit ottaa käyttöön säännöt, joilla kuvaus määritetään käyttämällä suunnittelumääritteen nimiä ja arvoja sekä tekstivakioita segmentteinä. Voit luoda tai muokata sääntöjä valitsemalla **Muokkaa**-painike. |

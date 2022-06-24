@@ -1,6 +1,6 @@
 ---
 title: Tilinhallintasivujen yleiskatsaus
-description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tilinhallintasivujen yleiskatsaus.
+description: Tässä artikkelissa on Microsoft Dynamics 365 Commercen tilinhallintasivujen yleiskatsaus.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9cc70f48371fb90f4e3529173d30baffd6fe4e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984516"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868880"
 ---
 # <a name="account-management-pages-overview"></a>Tilinhallintasivujen yleiskatsaus
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tilinhallintasivujen yleiskatsaus.
+Tässä artikkelissa on Microsoft Dynamics 365 Commercen tilinhallintasivujen yleiskatsaus.
 
 Tilinhallintasivujen avulla asiakkaat voivat tarkastella tietoja, jotka liittyvät heidän tiliinsä ja tilauksiin. Tilinhallinnan sivut sisältävät tilinhallinnan saapumissivun, käyttäjäprofiilisivun, osoitteiden sivun, tilaushistoriasivun, tilaustietojen sivun, kanta-asiakaspisteiden sivun ja toivomusluettelosivun.
 

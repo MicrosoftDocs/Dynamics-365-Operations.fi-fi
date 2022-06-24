@@ -1,6 +1,6 @@
 ---
 title: Tuotteiden, tilausten, lähetysten ja kuormien vaaralliset aineet
-description: Tässä ohjeaiheessa käsitellään vapautettujen tuotteiden vaarallisten aineiden ominaisuuksien määrittämistä, vaarallisten nimikkeiden varastointirajoitusten asettamista ja vaarallisten aineiden sisällyttämistä myyntitilaukseen, lähetykseen tai kuormaan.
+description: Tässä artikkelissa käsitellään vapautettujen tuotteiden vaarallisten aineiden ominaisuuksien määrittämistä, vaarallisten nimikkeiden varastointirajoitusten asettamista ja vaarallisten aineiden sisällyttämistä myyntitilaukseen, lähetykseen tai kuormaan.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570702"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860693"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Tuotteiden, tilausten, lähetysten ja kuormien vaaralliset aineet
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään vapautettujen tuotteiden vaarallisten aineiden ominaisuuksien määrittämistä, vaarallisten nimikkeiden varastointirajoitusten asettamista ja vaarallisten aineiden sisällyttämistä myyntitilaukseen, lähetykseen tai kuormaan.
+Tässä artikkelissa käsitellään vapautettujen tuotteiden vaarallisten aineiden ominaisuuksien määrittämistä, vaarallisten nimikkeiden varastointirajoitusten asettamista ja vaarallisten aineiden sisällyttämistä myyntitilaukseen, lähetykseen tai kuormaan.
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>Tuotteiden vaarallisten aineiden määritysten määrittäminen
 
@@ -109,11 +109,11 @@ Kaavan selitys:
 - *&lt;UnitConversion&gt;* on muuntokerroin, jota käytetään muunnettaessa kuormarivin määrässä käytettyä yksikköä ja **Materiaalien hallinta** -pikavälilehden **Yksikkö**-kentässä määritettyä yksikköä.
 - *&lt;Multiplier&gt;* on tuotteelle **Materiaalien hallinta** -pikavälilehden **Kerroin**-kentässä määritetty kerroin.
 
-Pistemäärä ilmoitetaan jokaiselle kuormariville, joka sisältää tuotteen, joille nämä arvot on määritetty. Lisätietoja on jäljempänä tässä ohjeaiheessa kohdissa [Vaarallisia aineita sisältävät lähetykset](#hazmat-shipments) ja [Vaarallisia aineita sisältävät kuormat](#hazmat-loads).
+Pistemäärä ilmoitetaan jokaiselle kuormariville, joka sisältää tuotteen, joille nämä arvot on määritetty. Lisätietoja on jäljempänä tässä artikkelissa kohdissa [Vaarallisia aineita sisältävät lähetykset](#hazmat-shipments) ja [Vaarallisia aineita sisältävät kuormat](#hazmat-loads).
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>Vaarallisen aineen painon laskeminen
 
-Sellaisten kuormien ja kuormarivien tuotteiden osalta, joiden **Materiaalien hallinta** -pikavälilehden **Rajoitettu määrä** -asetuksena on **Kyllä**, näytetään vaarallisen aineen kokonaispaino. Tätä käsitellään jäljempänä tämän ohjeaiheessa kohdissa [Vaarallisia aineita sisältävät lähetykset](#hazmat-shipments) ja [Vaarallisia aineita sisältävät kuormat](#hazmat-loads). Vaarallisen aineen paino lasketaan seuraavalla kaavalla:
+Sellaisten kuormien ja kuormarivien tuotteiden osalta, joiden **Materiaalien hallinta** -pikavälilehden **Rajoitettu määrä** -asetuksena on **Kyllä**, näytetään vaarallisen aineen kokonaispaino. Tätä käsitellään jäljempänä tämän artikkelin kohdissa [Vaarallisia aineita sisältävät lähetykset](#hazmat-shipments) ja [Vaarallisia aineita sisältävät kuormat](#hazmat-loads). Vaarallisen aineen paino lasketaan seuraavalla kaavalla:
 
 Vaarallisen aineen paino = *&lt;LineQty&gt;* × *&lt;ProductWeight&gt;* × *&lt;UnitConversion&gt;*
 

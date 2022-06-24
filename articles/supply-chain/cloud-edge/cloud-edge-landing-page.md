@@ -1,6 +1,6 @@
 ---
-title: Asteikon yksiköt jaetussa hybriditopologiassa
-description: Tässä aiheessa on lisätietoja valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Uniteista.
+title: Scale Unitit jaetussa hybriditopologiassa
+description: Tässä artikkelissa on lisätietoja valmistuksen ja varastoinnin hallinnan kuormitusten pilvi- ja reunapalvelujen Scale Uniteista.
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893668"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Asteikon yksiköt jaetussa hybriditopologiassa
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676325"
 > [!IMPORTANT]
 > Microsoft Dynamics 365 Supply Chain Managementin skaalausyksikköominaisuudet ovat käytettävissäsi palvelun käyttöä säätelevillä ehdoilla. Lisätietoja on kohdassa [Microsoft Dynamicsin oikeudelliset tiedot](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjältä pyydetään vahvistus, että hän ymmärtää, että joitakin pilvi- ja reunapalvelujen scale unitien määrityksiin ja käsittelyyn liittyviä tietoja voidaan tallentaa Yhdysvalloissa sijaitsevaan palvelinkeskukseen. Lisätietoja pilvipalvelun ja reunan skaalausyksiköiden tietojenkäsittelystä on [tietojenkäsittely skaalausyksiköiden hallinnan aikana](#data-processing-management) -osassa myöhemmin tässä aiheessa.
+> Ottamalla pilvi- ja reunapalvelujen scale unitit käyttöön käyttäjältä pyydetään vahvistus, että hän ymmärtää, että joitakin pilvi- ja reunapalvelujen scale unitien määrityksiin ja käsittelyyn liittyviä tietoja voidaan tallentaa Yhdysvalloissa sijaitsevaan palvelinkeskukseen. Lisätietoja pilvipalvelun ja reunan skaalausyksiköiden tietojenkäsittelystä on [tietojenkäsittely skaalausyksiköiden hallinnan aikana](#data-processing-management) -osassa myöhemmin tässä artikkelissa.
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Jaetun hybriditopologian ydinarvoehdotus
 
@@ -48,7 +48,7 @@ Skaalausyksiköt tarjoavat määritetyn kuormituksen sietokykyä, luotettavuutta
 
 *Kuormitus* määritetään liiketoimintatoimintojen joukkona, joka voidaan jättää huomioimatta ja delegoida scale unitiin. Vaikka varastonhallinnan kuormitus on vapautettu, valmistuksen suorittamisen kuormitus on vielä esikatselussa.
 
-Voit määrittää keskittimesi ympäristön ja cloud scale unitit valituille kuormituksille käyttämällä [Scale Unit -hallintaportaalia](https://sum.dynamics.com). Voit myös määrittää useita kuormituksia scale unitia kohti. Lisätietoja nykyisen version cloud scale unitien edellytyksistä ja rajoituksista on jäljempänä [cloud scale unitien edellytykset ja rajoitukset](#cloud-scale-unit-prerequisites) -osassa myöhemmin tässä ohjeaiheessaa.
+Voit määrittää keskittimesi ympäristön ja cloud scale unitit valituille kuormituksille käyttämällä [Scale Unit -hallintaportaalia](https://sum.dynamics.com). Voit myös määrittää useita kuormituksia scale unitia kohti. Lisätietoja nykyisen version cloud scale unitien edellytyksistä ja rajoituksista on jäljempänä [cloud scale unitien edellytykset ja rajoitukset](#cloud-scale-unit-prerequisites) -osassa myöhemmin tässä artikkelissa.
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Scale unitin erillisen varastonhallinnan kuormituksen ominaisuudet
 

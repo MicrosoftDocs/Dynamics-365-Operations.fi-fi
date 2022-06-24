@@ -1,6 +1,6 @@
 ---
 title: Lisää tuote ostoskoriin -asetusten käyttäminen
-description: Tässä ohjeaiheessa kuvataan "Lisää tuote ostoskoriin" -asetukset ja miten käyttää niitä Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa kuvataan "Lisää tuote ostoskoriin" -asetukset ja miten käyttää niitä Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 ms.date: 07/08/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6299a1c815978ab9f748b6110980e673e1fbae927ed08a5e2e080f89ef063115
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 336bea289b22e4f6f98077f915d7d35f2a48682d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712811"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866027"
 ---
 # <a name="apply-add-product-to-cart-settings"></a>Lisää tuote ostoskoriin -asetusten käyttäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan **Lisää tuote ostoskoriin** -asetukset ja miten käyttää niitä Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kuvataan **Lisää tuote ostoskoriin** -asetukset ja miten käyttää niitä Microsoft Dynamics 365 Commercessa.
 
 Eri työnkulkuja tuetaan, kun ostoskoriin lisätään tuote sähköisen kaupankäynnin Dynamics 365 Commerce -sivustolla. Sivuston käyttäjä voidaan esimerkiksi siirtää ostoskorin sivulle. Vaihtoehtoisesti käyttäjä saattaa jäädä nykyiselle sivulle, mutta hän saa ilmoituksen, jossa vahvistetaan, että tuote on lisätty ostoskoriin.
 

@@ -1,6 +1,6 @@
 ---
 title: Mallien käyttö
-description: Tässä ohjeaiheessa käsitellään mallien käsittelemistä Microsoft Dynamics 365 Commercessa.
+description: Tässä artikkelissa käsitellään mallien käsittelemistä Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: c234ddb0cdc212bead4f722f7881fbf21d608675
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881576"
 ---
 # <a name="work-with-templates"></a>Mallien käyttö
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään mallien käsittelemistä Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa käsitellään mallien käsittelemistä Microsoft Dynamics 365 Commercessa.
 
 Mallit määrittävät tietoja verkosta tietoja lataavien tekijöiden käytettävissä olevat asetusjoukot, kuten ohjeaiheessa [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md) kerrotaan. Mallit ovat hyödyllisiä yrityksen verkkoluontiryhmälle useiden syiden vuoksi. Hyvin suunnitellut mallit voivat auttaa seuraavien tavoitteiden saavuttamisessa:
 

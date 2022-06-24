@@ -1,6 +1,6 @@
 ---
-title: "\"Tuotteet, joissa samankaltainen kuvaus\" -suositusten ottaminen käyttöön"
-description: Tässä ohjeaiheessa kuvataan, kuinka voit ottaa käyttöön "Tuotteet, joissa samankaltainen kuvaus" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
+title: Vastaavien tuotteiden kuvaukseen perustuvien suositusten ottaminen käyttöön
+description: Tässä artikkelissa kuvataan, kuinka voit ottaa käyttöön "Tuotteet, joissa samankaltainen kuvaus" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
 author: bsokolov
 ms.date: 01/13/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 733b21870f9dd7ffa42fce3bccf669a59d633b14
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b935731b24f96753c814e3b496ffeeb7a92d9cc1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691000"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852005"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>Vastaavien tuotteiden kuvaukseen perustuvien suositusten ottaminen käyttöön
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka voit ottaa käyttöön "Tuotteet, joissa samankaltainen kuvaus" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
+Tässä artikkelissa kuvataan, kuinka voit ottaa käyttöön "Tuotteet, joissa samankaltainen kuvaus" -tuotesuositukset Microsoft Dynamics 365 Commercessa.
 
 Dynamics 365 Commercen "Tuotteet, joissa samankaltainen kuvaus" -suositusominaisuus, joka käyttää tekoälyä ja koneoppimista (AI-ML) antaakseen suosituksia tuotteista, joiden kuvaukset ovat samankaltaisia, kuin mitä asiakas etsii. Tekemällä "Tuotteet, joissa samankaltainen kuvaus" -suosituksia kaikille Commercen kanaville vähittäiskauppiaat voivat auttaa asiakkaita löytämään haluamansa helposti.
 

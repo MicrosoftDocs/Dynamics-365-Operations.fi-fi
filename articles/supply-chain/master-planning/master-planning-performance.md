@@ -1,7 +1,7 @@
 ---
 title: Pääsuunnittelun suorituskyvyn parantaminen
-description: Tässä ohjeaiheessa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun tai vianmääritysongelmien suorituskykyä.
-author: ChristianRytt
+description: Tässä artikkelissa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun tai vianmääritysongelmien suorituskykyä.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897600"
 ---
 # <a name="improve-master-planning-performance"></a>Pääsuunnittelun suorituskyvyn parantaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun tai vianmääritysongelmien suorituskykyä. Siinä on tietoja parametreista ja asetuksista sekä suositelluista määrityksistä ja toiminnoista. Se sisältää myös yhteenvedon kaikista tärkeistä parametreista, jotka kannattaa ottaa huomioon pitkäkestoisissa pääsuunnittelutöissä.
+Tässä artikkelissa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun tai vianmääritysongelmien suorituskykyä. Siinä on tietoja parametreista ja asetuksista sekä suositelluista määrityksistä ja toiminnoista. Se sisältää myös yhteenvedon kaikista tärkeistä parametreista, jotka kannattaa ottaa huomioon pitkäkestoisissa pääsuunnittelutöissä.
 
-Tämä ohjeaihe on tarkoitettu järjestelmänvalvojille tai IT-käyttäjille, jotka voivat tehdä vianmääritystä. Se on tarkoitettu myös tuotannon tai toimituksen suunnittelijoille, koska siinä on tietoja liiketoiminnan suunnittelutarpeisiin liittyvistä parametreista. 
+Tämä artikkeli on tarkoitettu järjestelmänvalvojille tai IT-käyttäjille, jotka voivat tehdä vianmääritystä. Se on tarkoitettu myös tuotannon tai toimituksen suunnittelijoille, koska siinä on tietoja liiketoiminnan suunnittelutarpeisiin liittyvistä parametreista. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Pääsuunnittelun suorituskykyyn liittyvät parametrit
 
@@ -151,9 +151,9 @@ Ennen kattavuusvaihetta otetaan käyttöön esikattavuusvaihe, jonka aikana nimi
 ## <a name="performance-checklist-summary"></a>Suorituskyvyn tarkistusluettelon yhteenveto
 
 - **Säikeiden määrä** – määritä arvo suuremmaksi kuin **0** (nolla).
-- **Lisätyöaseman tehtävänipun tehtävien määrä** – Määritä arvo suuremmaksi kuin **0** (nolla). (Käytä aiemmin tässä ohjeaiheessa annettuja kaavoja.)
+- **Lisätyöaseman tehtävänipun tehtävien määrä** – Määritä arvo suuremmaksi kuin **0** (nolla). (Käytä aiemmin tässä artikkelissa annettuja kaavoja.)
 - **Välimuistin käyttö** – määritä arvoksi **Maksimi**, ellei järjestelmän muisti on vähissä.
-- **Vahvistusmyyntirakenteen tilausten määrä** – Määritä arvo suuremmaksi kuin **0** (nolla). (Käytä aiemmin tässä ohjeaiheessa annettu kaava.)
+- **Vahvistusmyyntirakenteen tilausten määrä** – Määritä arvo suuremmaksi kuin **0** (nolla). (Käytä aiemmin tässä artikkelissa annettua kaavaa.)
 - **Aikarajat** – säädä liiketoimintatarpeiden mukaan.
 - **Toiminnot ja viivästykset** – poista toiminnot ja viivästykset, jos et käytä niitä.
 - **Yksi kuormittava rutiini kerrallaan** – älä suorita pääsuunnittelu yhdessä muiden kuormittavien rutiinien kanssa.

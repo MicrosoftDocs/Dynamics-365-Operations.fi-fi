@@ -1,6 +1,6 @@
 ---
-title: Valinnaisten toimintojen määrittäminen Dynamics 365 Commerce -arviointiympäristöä varten
-description: Tässä ohjeaiheessa kerrotaan, miten valinnaiset toiminnot määritetään Microsoft Dynamics 365 Commercen arviointiympäristössä.
+title: Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset
+description: Tässä artikkelissa kerrotaan, miten valinnaiset toiminnot määritetään Microsoft Dynamics 365 Commercen arviointiympäristössä.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728288"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861911"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce -arviointiympäristön valinnaisten ominaisuuksien määritykset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten valinnaiset toiminnot määritetään Microsoft Dynamics 365 Commercen arviointiympäristössä.
+Tässä artikkelissa kerrotaan, miten valinnaiset toiminnot määritetään Microsoft Dynamics 365 Commercen arviointiympäristössä.
 
 ## <a name="prerequisites"></a>Edellytykset
 
@@ -108,7 +108,7 @@ Haluat ehkä mukauttaa sähköpostimalleja niin, että ne käyttävät eri kuvia
     - Pakkaustilauksen malli
     - Keräystilauksen malli
 
-1. Mukauta malleja teksti- tai HTML-editorin avulla. Katso [tuettujen tunnusten](#supported-tokens-in-the-email-template) luettelo myöhemmin tässä ohjeaiheessa.
+1. Mukauta malleja teksti- tai HTML-editorin avulla. Katso [tuettujen tunnusten](#supported-tokens-in-the-email-template) luettelo myöhemmin tässä artikkelissa.
 1. Kirjaudu sisään Commerce-sovellukseen.
 1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Organisaation hallinta \> Asetukset \> Organisaation sähköpostimallit**.
 1. Laajenna vasemmanpuoleista luetteloa, niin näet kaikki mallit.

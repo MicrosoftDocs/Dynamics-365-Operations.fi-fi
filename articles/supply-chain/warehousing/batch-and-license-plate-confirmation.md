@@ -1,6 +1,6 @@
 ---
 title: Erän ja rekisterikilven tiedot
-description: Tässä ohjeaiheessa kerrotaan erän ja rekisterikilven vahvistuksen määrittämisestä ja käyttämisestä mobiililaitteessa.
+description: Tässä artikkelissa kerrotaan erän ja rekisterikilven vahvistuksen määrittämisestä ja käyttämisestä mobiililaitteessa.
 author: Mirzaab
 ms.date: 11/11/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 13e246f9a496dcc38829eef788d09c50300c99fb95daffad134012733341e4af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef0d528d23c1ee9424e35e29d39121d42ba548e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726534"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903721"
 ---
 # <a name="batch-and-license-plate-confirmation"></a>Erän ja rekisterikilven tiedot
 

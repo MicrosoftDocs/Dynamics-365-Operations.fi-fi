@@ -1,6 +1,6 @@
 ---
 title: Tuoterakenteen suunnittelutoiminto
-description: Tässä ohjeaiheessa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä.
+description: Tässä artikkelissa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c068e7f5f4f36663766e21e14cf8e75cf1442f50
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fda2b1d835afdcf06a50528748861fecc6792f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844204"
 ---
 # <a name="bom-designer-functionality"></a>Tuoterakenteen suunnittelutoiminto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä. Valitsemalla Asetukset voit valita erilaisia konfiguraatioita ja määrittää, mitkä tiedot puurakenteen riveillä näkyvät.
+Tässä artikkelissa kuvataan, miten tuoterakennesuunnittelijan sivua käytetään tuoterakenteiden puurakenteiden suunnittelussa ja käsittelyssä. Valitsemalla Asetukset voit valita erilaisia konfiguraatioita ja määrittää, mitkä tiedot puurakenteen riveillä näkyvät.
 
 Kun avaat **Graafisen rakennesuunnittelun** sivun **Julkaistut tuotteet** -sivulta, näytetään siinä aktiivisten ja hyväksyttyjen tuoterakenteiden hierarkia hierarkian valitulle nimikkeelle, nimikkeen oletustilaussivusto ja todellinen päivämäärä.  
 

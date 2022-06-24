@@ -1,6 +1,6 @@
 ---
-title: Tilausyhteenvedon välisumma ei sisällä veroja kuluista, kun käytetään mukautettuja tilausyhteenvetomoduuleita
-description: Tämä aihe antaa vianmäärityksen ohjeita, jotka auttavat mukautettujen tilausyhteenvetomoduulien käytössä sekä tilanteissa, joissa tilausyhteenvedon välisumma ei sisällä veroja kuluista "hinta sisältää arvonlisäveron" -skenaariossa.
+title: Tilausyhteenvedon välisumma ei sisällä kulujen veroja, kun käytetään mukautettuja tilausyhteenvetomoduuleita
+description: Tämä artikkeli antaa vianmäärityksen ohjeita, jotka auttavat mukautettujen tilausyhteenvetomoduulien käytössä sekä tilanteissa, joissa tilausyhteenvedon välisumma ei sisällä veroja kuluista "hinta sisältää arvonlisäveron" -skenaariossa.
 author: gvrmohanreddy
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,16 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-04-22
-ms.openlocfilehash: 1a47561a3ac984bc554b5b93546592237c16cf18
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: 260dcb6bc1585615195e32adfcd1da6bfbca294e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767947"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848834"
 ---
-# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>Tilausyhteenvedon välisumma ei sisällä veroja kuluista, kun käytetään mukautettuja tilausyhteenvetomoduuleita
+# <a name="order-summary-subtotal-doesnt-include-taxes-on-charges-when-using-customized-order-summary-modules"></a>Tilausyhteenvedon välisumma ei sisällä kulujen veroja, kun käytetään mukautettuja tilausyhteenvetomoduuleita
 
-Tämä aihe antaa vianmäärityksen ohjeita, jotka auttavat mukautettujen tilausyhteenvetomoduulien käytössä sekä tilanteissa, joissa tilausyhteenvedon välisumma ei sisällä veroja kuluista "hinta sisältää arvonlisäveron" -skenaariossa.
+Tämä artikkeli antaa vianmäärityksen ohjeita, jotka auttavat mukautettujen tilausyhteenvetomoduulien käytössä sekä tilanteissa, joissa tilausyhteenvedon välisumma ei sisällä veroja kuluista "hinta sisältää arvonlisäveron" -skenaariossa.
 
 ## <a name="description"></a>Kuvaus
 

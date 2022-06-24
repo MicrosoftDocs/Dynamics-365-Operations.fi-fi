@@ -1,6 +1,6 @@
 ---
 title: Varastokirjauskansion hyväksyntätyönkulut
-description: Tässä ohjeaiheessa käsitellään varastokirjauskansioiden hyväksyntätyönkulut määritetään ja miten niitä käytetään erityyppisten varastotilannetapahtumien kirjaamisessa. Varastokirjauskansion työnkulkujen avulla voit varmistaa, että vain hyväksytyt varastokirjauskansiot voidaan kirjata tapahtumille.
+description: Tässä artikkelissa käsitellään varastokirjauskansioiden hyväksyntätyönkulut määritetään ja miten niitä käytetään erityyppisten varastotilannetapahtumien kirjaamisessa. Varastokirjauskansion työnkulkujen avulla voit varmistaa, että vain hyväksytyt varastokirjauskansiot voidaan kirjata tapahtumille.
 author: yufeihuang
 ms.date: 07/21/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873982"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Varastokirjauskansion hyväksyntätyönkulut
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten varastokirjauskansion hyväksyntätyönkulkuja käytetään varastotilannetapahtumien eri tyypeissä, kuten varasto-otoissa ja -vastaanotoissa, varaston siirroissa, tuoterakenteissa ja fyysisen varaston täsmäytyksessä. Varastokirjauskansion työnkulkujen avulla voit varmistaa, että vain hyväksytyt varastokirjauskansiot voidaan kirjata tapahtumille.
+Tässä artikkelissa kerrotaan, miten varastokirjauskansion hyväksyntätyönkulkuja käytetään varastotilannetapahtumien eri tyypeissä, kuten varasto-otoissa ja -vastaanotoissa, varaston siirroissa, tuoterakenteissa ja fyysisen varaston täsmäytyksessä. Varastokirjauskansion työnkulkujen avulla voit varmistaa, että vain hyväksytyt varastokirjauskansiot voidaan kirjata tapahtumille.
 
 > [!NOTE]
 > Varastokirjauskansion hyväksymistyönkulkuja käytetään vain varastonhallintamoduulin avulla tallennettuihin tapahtumiin. Ne eivät toimi varastonhallintamoduulista käynnistettyjen varastokirjauskansioiden kanssa.

@@ -1,6 +1,6 @@
 ---
 title: Tuotteen elinkaaren tilat ja tapahtumat
-description: Tässä aiheessa käsitellään niiden tapahtumien hallintaa, jotka ovat sallittuja kussakin elinkaaren tilassa suunnittelutuotteen elinkaaren eri vaiheissa.
+description: Tässä artikkelissa käsitellään niiden tapahtumien hallintaa, jotka ovat sallittuja kussakin elinkaaren tilassa suunnittelutuotteen elinkaaren eri vaiheissa.
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
-ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
+ms.openlocfilehash: dd9155f799c66e8297b93d8ffbeeced1acd14220
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322741"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867953"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Tuotteen elinkaaren tilat ja tapahtumat
 
@@ -37,7 +37,7 @@ Voit käyttää tuotteen elinkaaren tiloja valitsemalla **Suunnittelun muutosten
 - Poista aiemmin luotu elinkaaren tila valitsemalla se luetteloruudussa ja valitsemalla sitten toimintoruudussa **Poista**.
 
 > [!NOTE]
-> Suunnittelutuotteet käyttävät samoja tuotteen elinkaaren tiloja kuin (muut kuin suunnittelut) vakiotuotteet. Voit avata myös tässä aiheessa käsitellyn **Tuotteen elinkaaren tila** -sivun valitsemalla **Tuotetietojen hallinta \> Määritys \> Tuotteen elinkaaren tila**. Lisätietoja sekä suunnittelutuotteiden että vakiotuotteiden tuotteen elinkaaren tiloista on kohdassa [Tuotteen elinkaaren tilan yleiskatsaus](../pim/product-lifecycle.md).
+> Suunnittelutuotteet käyttävät samoja tuotteen elinkaaren tiloja kuin (muut kuin suunnittelut) vakiotuotteet. Voit avata myös tässä artikkelissa käsitellyn **Tuotteen elinkaaren tila** -sivun valitsemalla **Tuotetietojen hallinta \> Määritys \> Tuotteen elinkaaren tila**. Lisätietoja sekä suunnittelutuotteiden että vakiotuotteiden tuotteen elinkaaren tiloista on kohdassa [Tuotteen elinkaaren tilan yleiskatsaus](../pim/product-lifecycle.md).
 
 ### <a name="header"></a>Otsikko
 

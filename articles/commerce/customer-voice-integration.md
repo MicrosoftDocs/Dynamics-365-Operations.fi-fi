@@ -1,6 +1,6 @@
 ---
-title: Customer Voicen integroiminen verkkokauppasivuston sivuihin
-description: Tässä aiheessa kuvataan, kuinka integroidaan Microsoft Dynamics 365 Customer Voice Dynamics 365 Commerce -verkkokauppasivuston sivuihin..
+title: Customer Voicen integroiminen sähköisen kaupankäynnin sivustoihin
+description: Tässä artikkelissa kuvataan, kuinka integroidaan Microsoft Dynamics 365 Customer Voice Dynamics 365 Commerce -verkkokauppasivuston sivuihin..
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850327"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Customer Voicen integroiminen verkkokauppasivuston sivuihin
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Customer Voicen integroiminen sähköisen kaupankäynnin sivustoihin
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, kuinka integroidaan Microsoft Dynamics 365 Customer Voice Dynamics 365 Commerce -verkkokauppasivuston sivuihin..
+Tässä artikkelissa kuvataan, kuinka integroidaan Microsoft Dynamics 365 Customer Voice Dynamics 365 Commerce -verkkokauppasivuston sivuihin..
 
 Voit integroida [Customer Voicen](https://dynamics.microsoft.com/customer-voice/overview/) osaksi sähköistä sivustoa kerätäksesi, analysoidaksesi ja seurataksesi reaaliaikaista asiakaspalautetta. Integroinnin aloittaminen edellyttää, että luot tilin ja valitset Customer Voice -projektimallin kerättävälle palautetyypille.
 
@@ -37,7 +37,7 @@ Voit valita Customer Voice -projektimallin noudattamalla seuraavia vaiheita.
 1. Valitse kerättävälle palautetyypille projektimalli ja valitse sitten **Seuraava**.
 1. Valitse upotettu muoto **Lähetä**-välilehden **Valitse upotusmuoto** -kohdasta. **Upotettu koodi** -kentässä näkyy koodi, joka on upotettava Commerce-sivustonmuodostimeen.
 
-Tämän ohjeaiheen esimerkeissä käytetään **Kausittainen asiakaskysely** - projektimallia ja **Painike**-upotusmuotoa.
+Tämän artikkelin esimerkeissä käytetään **Kausittainen asiakaskysely** - projektimallia ja **Painike**-upotusmuotoa.
 
 Seuraavassa esimerkissä havainnollistetaan **Kausittainen asiakaskysely** -projektimallin sivu,jossa **Painike**-upotusmuodon asetus on valittuna ja asetuksen upotuskoodi näkyy **Upotettu koodi** -kentässä. Sivuston sivuihin koodin upottaminen edellyttää kolme erillistä tehtävää seuraavien osien mukaisesti.
 

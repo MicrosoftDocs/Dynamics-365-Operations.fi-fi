@@ -1,6 +1,6 @@
 ---
 title: Aiheutunut kustannus vs. kuljetustenhallinta
-description: 'Microsoft Dynamics 365 Supply Chain Management tarjoaa kaksi eri moduulia kuljetusten kanssa työskentelyä varten: kuljetustenhallinnan (TMS) ja aiheutuneen kustannuksen. Tässä ohjeaiheessa on yhteenveto toiminnoista, jotka moduuleilla ovat yhteisiä, ja korostaa niiden väliset erot.'
+description: 'Microsoft Dynamics 365 Supply Chain Management tarjoaa kaksi eri moduulia kuljetusten kanssa työskentelyä varten: kuljetustenhallinnan (TMS) ja aiheutuneen kustannuksen. Tässä artikkelissa on yhteenveto toiminnoista, jotka moduuleilla ovat yhteisiä, ja korostaa niiden väliset erot.'
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690369"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905918"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Aiheutunut kustannus vs. kuljetustenhallinta
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management tarjoaa kaksi eri moduulia kuljetusten kanssa työskentelyä varten: **kuljetustenhallinnan** (TMS) ja **aiheutuneen kustannuksent**. Tässä ohjeaiheessa on yhteenveto toiminnoista, jotka moduuleilla ovat yhteisiä, ja korostaa niiden väliset erot. Voit käyttää näitä tietoja päättääksesi, mikä moduuli sopii parhaiten liiketoimintakäytäntöihin. Saattaa olla, että jotkin liiketoimintakäytännöt toimivat paremmin kuljetustenhallinnan kanssa, kun taas toiset toimivat parhaiten aiheutuneessa kustannuksessa. Sen jälkeen voit liiketoimintavaatimusten mukaan valita yksinomaan yhden moduulin tai voit yhdistää nämä kaksi moduulia.
+Microsoft Dynamics 365 Supply Chain Management tarjoaa kaksi eri moduulia kuljetusten kanssa työskentelyä varten: **kuljetustenhallinnan** (TMS) ja **aiheutuneen kustannuksent**. Tässä artikkelissa on yhteenveto toiminnoista, jotka moduuleilla ovat yhteisiä, ja korostaa niiden väliset erot. Voit käyttää näitä tietoja päättääksesi, mikä moduuli sopii parhaiten liiketoimintakäytäntöihin. Saattaa olla, että jotkin liiketoimintakäytännöt toimivat paremmin kuljetustenhallinnan kanssa, kun taas toiset toimivat parhaiten aiheutuneessa kustannuksessa. Sen jälkeen voit liiketoimintavaatimusten mukaan valita yksinomaan yhden moduulin tai voit yhdistää nämä kaksi moduulia.
 
-Tämä ohjeaihe ei käsittele kattavasti kaikkia kummankaan moduulin ominaisuuksia. Sen sijaan se korostaa käytettävissä olevat toiminnot liittyen tuotteiden kuljetukseen toimittajalta yrityksesi varastoon, jossa se voidaan kuluttaa.
+Tämä artikkeli ei käsittele kattavasti kaikkia kummankaan moduulin ominaisuuksia. Sen sijaan se korostaa käytettävissä olevat toiminnot liittyen tuotteiden kuljetukseen toimittajalta yrityksesi varastoon, jossa se voidaan kuluttaa.
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>Termit, viitetiedot ja raportointierot
 

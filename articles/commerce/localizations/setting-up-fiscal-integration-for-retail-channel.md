@@ -1,6 +1,6 @@
 ---
 title: Kaupan kirjanpidon integroinnin määrittäminen
-description: Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen.
+description: Tässä artikkelissa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen.
 author: EvgenyPopovMBS
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 13bdbcc2d52846b8b5d04773c986cd3a4a59e7b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661746"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889396"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Kaupan kirjanpidon integroinnin määrittäminen
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen. Lisätietoja kirjanpidon integroinnista on kohdassa [Commerce-kanavan kirjanpidon integroinnin yleiskatsaus](fiscal-integration-for-retail-channel.md).
+Tässä artikkelissa on ohjeet Commerce-kanavien kirjanpidon integrointitoiminnon määrittämiseen. Lisätietoja kirjanpidon integroinnista on kohdassa [Commerce-kanavan kirjanpidon integroinnin yleiskatsaus](fiscal-integration-for-retail-channel.md).
 
 ## <a name="enable-features-in-commerce-headquarters"></a>Ominaisuuksien ottaminen käyttöön Commerce headquarters -sovelluksessa
 

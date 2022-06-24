@@ -1,30 +1,24 @@
 ---
 title: Variaation määrittäminen ja kokeen päättäminen
-description: Tässä ohjeaiheessa käsitellään onnistuneen variaation korottamista ja kokeen päättämistä Dynamics 365 Commercessa.
+description: Tässä artikkelissa käsitellään onnistuneen variaation korottamista ja kokeen päättämistä Dynamics 365 Commercessa.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/07/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 48d66e84ce52e77e83843853e3d528f9394a7676cadc4a4be5198065696dd10e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e9a978551622bbb14d9213f607d9dfabe42672a
+ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738743"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8942734"
 ---
 # <a name="promote-a-variation-and-complete-an-experiment"></a>Variaation määrittäminen ja kokeen päättäminen
 
-Tässä ohjeaiheessa käsitellään kokeessa parhaan tuloksen tuottaneen variaation korottamista ja kokeen päättämistä. Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä ohjeaiheissa.
+Tässä artikkelissa käsitellään kokeessa parhaan tuloksen tuottaneen variaation korottamista ja kokeen päättämistä. Seuraavassa kaaviossa on kaikki vaiheet, jotka sisältyvät kokeen määrittämiseen ja suorittamiseen sähköisessä kaupankäyntisivustossa Dynamics 365 Commercessa. Muut vaiheet käsitellään erillisissä artikkeleissa.
 
 [ ![Kokeilun käyttäjän siirtymä – arviointi ja päättäminen.](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
 
@@ -48,7 +42,7 @@ Voittajavariaatio korotetaan seuraavasti:
 ## <a name="delete-your-experiment"></a>Kokeen poistaminen
 Vaikka Commercessa päättynyttä koetta ei ole pakko poistaa, sen voi poistaa, mikä säästää tilaa ja siistii työntilaa. 
 
-Kokeen voi poistaa Commercen sivustonmuodostimessa seuraavasti:
+Valmiin kokeen voi poistaa Commercen sivustonmuodostimessa seuraavasti:
 
 1. Valitse Commercen vasemmassa siirtymisruudussa ensin **Kokeet** ja sitten koe. 
     > [!NOTE]
