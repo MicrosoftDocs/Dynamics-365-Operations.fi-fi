@@ -1,6 +1,6 @@
 ---
 title: Ennakonpidätyksen raportointikoodien määrittäminen TDS-verotyypille
-description: Ennakonpidätyksen raportointikoodien avulla luodaan lomakkeen 26Q ja lomakkeen 27Q ilmoitukset Vero vähennettynä lähteissä (TDS) -tiedoille. Tässä ohjeaiheessa kerrotaan, miten ennakonpidätyksen raportointikoodien vaiheet määritetään TDS-raportointikoodien määrittämiseksi.
+description: Ennakonpidätyksen raportointikoodien avulla luodaan lomakkeen 26Q ja lomakkeen 27Q ilmoitukset Vero vähennettynä lähteissä (TDS) -tiedoille. Tässä artikkelissa kerrotaan, miten ennakonpidätyksen raportointikoodien vaiheet määritetään TDS-raportointikoodien määrittämiseksi.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 769159fc10c3edfba8c2f626e7bff702e3e5cd7f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: bdd2e89d29807dc31d8f2d4684ee413470b1dbde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907795"
 ---
 # <a name="set-up-withholding-tax-reporting-codes-for-the-tds-tax-type"></a>Ennakonpidätyksen raportointikoodien määrittäminen TDS-verotyypille
 
 [!include [banner](../includes/banner.md)]
 
-Ennakonpidätyksen raportointikoodien avulla luodaan lomakkeen 26Q ja lomakkeen 27Q ilmoitukset Vero vähennettynä lähteissä (TDS) -tiedoille. Tässä ohjeaiheessa kerrotaan, miten ennakonpidätyksen raportointikoodien vaiheet määritetään TDS-raportointikoodien määrittämiseksi.
+Ennakonpidätyksen raportointikoodien avulla luodaan lomakkeen 26Q ja lomakkeen 27Q ilmoitukset Vero vähennettynä lähteissä (TDS) -tiedoille. Tässä artikkelissa kerrotaan, miten ennakonpidätyksen raportointikoodien vaiheet määritetään TDS-raportointikoodien määrittämiseksi.
 
 1. Siirry kohtaan **Vero \> Asetukset \> Ennakonpidätys \> Ennakonpidätyksen raportointikoodit**.
 

@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet, 23. huhtikuuta 2021
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 23. elokuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 23. elokuuta 2021 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: marcelbf
 ms.date: 08/23/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 21c3448c373600ffebca82be41fb5849b952dfe1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 91c2cd396ca26cc78c3fd4fab40a29b98a7826c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909727"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-23-2021"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet, 23. huhtikuuta 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin uusia, muuttuneita tai pian tulossa olevia ominaisuuksia.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin uusia, muuttuneita tai tulevia toimintoja.
 
 Lisätietoja päivitysprosessista ja aikataulusta on kohdassa [Päivitysprosessi](hr-admin-setup-update-process.md).
 
@@ -40,9 +40,9 @@ Tämä julkaisu sisältää seuraavat uudet ominaisuudet ja ohjelmakorjaukset. M
 Tämä julkaisu sisältää seuraavat ohjelmakorjaukset.
 
 > [!NOTE]
-> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän aiheen päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän ohjeaiheen alkuperäisen julkaisin jälkeen.
+> Tavoitteena on, että nämä tiedot ovat käytettävissä mahdollisimman pian. Tämän artikkelin päivitys saattaa sisältää ohjelmakorjauksia, jotka on otettu käyttöön koontiversiossa tämän artikkelin alkuperäisen julkaisun jälkeen.
 
-| Ongelman numero | Ongelma | kuvaus |
+| Ongelman numero | Ongelma | Kuvaus |
 | --- | --- | --- |
 | 594066 | Yhteystietojen poistaminen ei onnistu | Kun valitset työntekijän yhteystietotietueen poistamisen, jokin muu yhteystietotietue poistetaan sen sijaan. |
 | 611339 | Mukauttaminen aiheuttaa sen, että pankkitili ohittaa suodattimen ja noutaa ensimmäisen tietueen | Mukautuksen lisääminen aiheuttaa sen, että pankkitililuettelo suorittaa mukautuskyselyn, kun tietolähdekysely on suoritettu, jolloin kysely noutaa ylimmän tietueen riippumatta työntekijästä, jonka tietoja tarkastellaan. |

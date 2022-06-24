@@ -1,6 +1,6 @@
 ---
 title: Ohjejärjestelmä (sisältää videon)
-description: Tämä ohjeaihe sisältää taloushallinnon ja toimintojen sovellusten ohjejärjestelmän yleiskatsauksen.
+description: Tämä artikkeli sisältää talous- ja toimintosovellusten ohjejärjestelmän yleiskatsauksen.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070498"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898366"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -70,7 +70,7 @@ Voit vaihtoehtoisesti tilata RSS-syötteen sovelluksella:
 
 ### <a name="leave-us-feedback"></a>Jätä meille palautetta
 
-Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
+Artikkeliin liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 
 1. Pääset sivun alaosassa oleviin kommentteihin valitsemalla **Palaute**. Valitse sitten joko **Tuotteen palaute** tai **Anna palautetta dokumentaatiosta kirjautumalla sisään**.
 
@@ -83,7 +83,7 @@ Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 
 ## <a name="contribute-to-the-documentation"></a>Dokumentaatioon osallistuminen
 
-Voit osallistua dokumentaation tekemiseen ja muokkaukseen. Aloita valitsemalla aiheen **Muokkaa**-painike (kynäkuvake). Seuraavassa videossa osoitetaan, miten voit osallistua dokumentaation tekemiseen.
+Voit osallistua dokumentaation tekemiseen ja muokkaukseen. Aloita valitsemalla artikkelin **Muokkaa**-painike (kynäkuvake). Seuraavassa videossa osoitetaan, miten voit osallistua dokumentaation tekemiseen.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -98,7 +98,7 @@ Lisätietoja on [Docs-sisällöntuottajan oppaassa](/contribute). Tämän oppaan
 
 Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit avata (toistaa) tehtäväoppaan **Ohje**-ruudusta. Kun valitset tehtäväoppaan ensimmäisen kerran, **Ohje**-ruutuun tulee näkyviin tehtävän vaiheittaiset ohjeet. Saatavana on lokalisoituja tehtäväoppaita.
 
-Microsoft julkaisi tuoteversioiden tehtäväopaskirjastoa joulukuun 2017 Dynamics 365 for Finance and Operations -versioon saakka. Tämän ohjeaiheen kohdassa [Tehtäväoppaiden käyttö ohjeruudusta](#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
+Microsoft julkaisi tuoteversioiden tehtäväopaskirjastoa joulukuun 2017 Dynamics 365 for Finance and Operations -versioon saakka. Tämän artikkelin osassa [Tehtäväoppaiden käyttö ohjeruudusta](#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
 
 ![Tehtäväoppaan lukunäkymä.](./media/task-guide-ops.png)
 
@@ -121,7 +121,7 @@ Ohjesisältö avautuu valitsemalla ensin **Ohje**-painike (**?**) ja sitten **Oh
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Ohjeaiheiden käyttö ohjeruudusta
 
-Voit avata **Ohje**-ruudussa asiakasohjelmaa koskevia aiheita. Kun avaat **Ohje**-ruudun ensimmäisen kerran, **Ohje**-välilehdessä näkyy avointa sivua käsitteleviä aiheita. Jos aiheita ei löydy, tarkenna hakua avainsanoilla. Kun valitset aiheen **Ohje**-ruudussa, se avautuu selaimessa uuteen välilehteen.
+Voit avata **Ohje**-ruudussa asiakasohjelmaa koskevia aiheita. Kun avaat **Ohje**-ruudun ensimmäisen kerran, **Ohje**-välilehdessä näkyy avointa sivua käsitteleviä aiheita. Jos aiheita ei löydy, tarkenna hakua avainsanoilla. Kun valitset artikkelin **Ohje**-ruudussa, se avautuu selaimessa uuteen välilehteen.
 
 > [!IMPORTANT]
 > Tämä osa ei koske Dynamics 365 Human Resourcesia. Human Resourcesin ohjejärjestelmä yhdistetään automaattisesti tuotteen tehtäväoppaisiin. Human Resourcesissa ei voi myöskään luoda mukautettuja tehtäväoppaita.

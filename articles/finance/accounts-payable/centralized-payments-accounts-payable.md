@@ -1,6 +1,6 @@
 ---
 title: Ostoreskontran keskitetyt maksut
-description: Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja maksuja ei tarvitse lisätä useisiin yrityksiin. Tässä aiheessa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
+description: Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja maksuja ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 5478a2ac61fb7304bc617f3d2614e68cda6154de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8331739"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903446"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Ostoreskontran keskitetyt maksut
 
 [!include [banner](../includes/banner.md)]
 
-Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja maksuja ei tarvitse lisätä useisiin yrityksiin. Tässä aiheessa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
+Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja maksuja ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
 
 Maksujen keskittämiseen tarkoitetussa organisaatiossa on useita toimintaa harjoittavia yrityksiä, ja jokainen toimintaa harjoittava yritys hallitsee omia toimittajalaskujaan. Maksut kaikille toimintaa harjoittaville yrityksille luodaan yhdestä yrityksestä, joka toimii maksun yrityksenä. Selvitysprosessin aikana sovellettavissa olevat erääntymiskohteen ja -lähteen tapahtumat muodostetaan. Voit määrittää, mikä organisaatioon kuuluva yritys vastaanottaa toteutuneet voitto- tai tappiotapahtumat ja kuinka yritysten välisiin maksuihin liittyvät käteisalennustapahtumat käsitellään. Keskitetyn maksukirjauskansion rivin **tilityypiksi** on määritettävä toimittaja. **Vastatilin tapahtumalajiksi** on määritettävä pankki tai kirjanpito. Pankkitilin on oltava nykyisessä yrityksessä. 
 

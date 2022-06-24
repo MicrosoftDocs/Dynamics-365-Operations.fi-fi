@@ -1,6 +1,6 @@
 ---
 title: Microsoft Power Apps -portaalien käyttö osapuolen tietomallin kanssa
-description: Tässä ohjeaiheessa kuvataan Microsoft Power Apps -portaalien verkkorooleihin kaksoiskirjoituksen osapuolen tietomallin vuoksi tehdyt muutokset.
+description: Tässä artikkelissa kuvataan Microsoft Power Apps -portaalien verkkorooleihin kaksoiskirjoituksen osapuolen tietomallin vuoksi tehdyt muutokset.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060917"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898943"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Microsoft Power Apps -portaalien käyttö osapuolen tietomallin kanssa
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060917"
 
 Kaksoiskirjoituksen sovellusorkestrointiratkaisun versio 2.0.999.0 ja uudemmat sisältävät tietomallin muutokset Tili- ja Yhteyshenkilö-tauluihin osapuolen ja yleisessä osoitekirjassa. Muutokset mahdollistavat monta-moneen-suhteet, jotka tukevat kehittyneitä liiketoimintaskenaarioita. Näitä muutoksia eivät tue portaalin verkkoroolit, mukaan lukien asiakasportaali, jotka toimitetaan käyttövalmiina tai jotka olivat ympäristössäsi ennen kaksoiskirjoituksen asentamista. Jotta verkkoroolit toimisivat odotetulla tavalla, sinun on luotava uusia verkkorooleja uuden tietomallin avulla. 
 
-Yhteenvetona voidaan sanoa, että taulukoiden vuorovaikutus on muuttunut, mutta asiakasportaalin taulukon käyttöoikeudet eivät ole muuttuneet. Tässä ohjeaiheessa kerrotaan, miten luodaan uusia verkkorooleja, jotka toimivat uuden kehittyneen tietomallin kanssa.
+Yhteenvetona voidaan sanoa, että taulukoiden vuorovaikutus on muuttunut, mutta asiakasportaalin taulukon käyttöoikeudet eivät ole muuttuneet. Tässä artikkelissa kerrotaan, miten luodaan uusia verkkorooleja, jotka toimivat uuden kehittyneen tietomallin kanssa.
 
 Tässä kaaviossa esitetään taulukon yhteys **ilman** osapuolen ja yleisen osoitekirjan tietomallia:
 

@@ -1,6 +1,6 @@
 ---
 title: Kompensaatiorakenteen kehittäminen
-description: Tässä aiheessa kerrotaan kiinteän kompensaatiosuunnitelman luomisesta ja siitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla.
+description: Tässä artikkelissa kerrotaan kiinteän kompensaatiosuunnitelman luomisesta ja siitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f069d4e982a9c02070c2010b894b2ec7a9c7f6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86953e6d54843f17d0d6090a9def8bc256624f21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693084"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902964"
 ---
 # <a name="develop-a-compensation-structure"></a>Kompensaatiorakenteen kehittäminen
 
@@ -26,7 +26,7 @@ ms.locfileid: "8693084"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tässä aiheessa kuvaillaan kiinteän kompensaatiosuunnitelman luomista ja sitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla. Tässä aiheessa käytetään USMF-esittelytietoja. Artikkeli on tarkoitettu kompensaatio- ja etuuspäälliköille.
+Tässä artikkelissa kuvaillaan kiinteän kompensaatiosuunnitelman luomista ja sitä, miten työntekijät voivat rekisteröityä suunnitelmaan oikeutussääntöjen avulla. Tässä artikkelissa käytetään USMF-esittelytietoja. Artikkeli on tarkoitettu kompensaatio- ja etuuspäälliköille.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Luo kiinteä kompensaatiosuunnitelma
 

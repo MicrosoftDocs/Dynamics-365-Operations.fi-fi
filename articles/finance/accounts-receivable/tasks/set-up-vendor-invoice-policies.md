@@ -1,6 +1,6 @@
 ---
 title: Määritä toimittajan laskutuskäytännöt
-description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt.
+description: Tässä artikkelissa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904727"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Määritä toimittajan laskutuskäytännöt
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt. Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan **Toimittajan lasku** -sivun avulla ja kun toimittajan laskun **Käytäntörikkomukset**-sivu avataan. Voit myös määrittää toimittajan laskun työnkulun, kun haluat suorittaa toimittajan laskukäytännöt aina, kun lasku lähetetään työnkulkuun. 
+Tässä artikkelissa kerrotaan, kuinka voit määrittää toimittajan laskutuskäytännöt. Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan **Toimittajan lasku** -sivun avulla ja kun toimittajan laskun **Käytäntörikkomukset**-sivu avataan. Voit myös määrittää toimittajan laskun työnkulun, kun haluat suorittaa toimittajan laskukäytännöt aina, kun lasku lähetetään työnkulkuun. 
 
 - Toimittajan laskukäytännöt eivät koske laskurekisteriin tai laskukirjauskansioon luotuja laskuja.  
 - Laskun täsmäytyksen vahvistuksessa ei käytetä toimittajan laskukäytäntöjä, vaan **Ostoreskontran parametrit** -määritettyjä käytäntöjä.  

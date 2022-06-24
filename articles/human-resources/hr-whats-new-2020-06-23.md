@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (25. kesäkuuta 2020)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Human Resourcesin 23. kesäkuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin 23. kesäkuuta 2020 julkaistuja uusia tai muuttuneita ominaisuuksia.
 author: andreabichsel
 ms.date: 06/25/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1a5be61325a919762d690f2483c37b9eec020d3
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7fe8b685a2b492fe5ad23b410f6a99d81991e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689828"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904098"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet (23. kesäkuuta 2020)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8689828"
 
 
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita ominaisuuksia. Muutokset koskevat koontiversion numeroa 8.1.3347. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.3347. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin LCS-palveluissa.
 
 ## <a name="when-an-enrollment-is-expired-for-a-terminated-employee-the-leave-type-balance-and-amount-are-all-cleared-in-the-leave-enrollment-form-444867"></a>Kun poistetun työntekijän rekisteröityminen vanhenee, loman tyyppi, saldo ja määrä nollataan loman rekisteröintilomakkeessa (444867)
 

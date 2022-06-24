@@ -1,6 +1,6 @@
 ---
 title: Perintäprosessin automaation parametrien määrittäminen
-description: Tässä aiheessa kuvataan automaattisen perinnän prosesseihin vaikuttavia parametreja ja annetaan ohjeita niiden määrittämisestä siten, että automaatisoitu prosessi vastaa aikomuksiasi ja odotuksiasi.
+description: Tässä artikkelissa kuvataan automaattisen perinnän prosesseihin vaikuttavia parametreja ja annetaan ohjeita niiden määrittämisestä siten, että automatisoitu prosessi vastaa aikomuksiasi ja odotuksiasi.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900039"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Perintäprosessin automaation parametrien määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan automaattisen perinnän prosesseihin vaikuttavia parametreja ja annetaan ohjeita niiden määrittämisestä siten, että automaatisoitu prosessi vastaa aikomuksiasi ja odotuksiasi. Lisätietoja perintäprosessien automatisoinnista on kohdassa [Perintäprosessin automatisointi](collections-process-automate.md).
+Tässä artikkelissa kuvataan automaattisen perinnän prosesseihin vaikuttavia parametreja ja annetaan ohjeita niiden määrittämisestä siten, että automatisoitu prosessi vastaa aikomuksiasi ja odotuksiasi. Lisätietoja perintäprosessien automatisoinnista on kohdassa [Perintäprosessin automatisointi](collections-process-automate.md).
 
 ## <a name="general"></a>Yleistä
 Syötä numero kohtaan **Asiakkaiden prosentti erätyötä kohden** määrittääksesi erätöiden määrän automaatioprosessia kohden. Määritä **Kirjaa maksukehotuskirjeet automaattisesti** arvoon **Kyllä**, jotta maksukehotuskirjeen toimintotyyppi kirjaa kirjeen automaation aikana. Määritä **Luo aktiviteetteja automaatioille** arvoon **Kyllä** luodaksesi ja sulkeaksesi ei-aktiviteettia-toimintotyyppien aktiviteetit ja tarkastellaksesi kaikki asiakkaan automatisoidut vaiheet. Määritä päivien lukumäärä sille, miten kauan perintähistoriaa tallennetaan, kohtaan **Perintäprosessin automaatiohistorian säilytysaika päivinä**. Kun lasku tulee perintäprosessin viimeiseen vaiheeseen, sitä ei käytetä tulevien prosessiautomaation toimintotyyppien luomiseen, jos kohta **Jätä lasku pois viimeisen prosessivaiheen aktivoinnin jälkeen** on määritetty arvoon **Kyllä**. Seuraavaksi vanhin lasku määrittää seuraavan prosessien automaation vaiheen, jotta perintäprosessien automaatiotoimintojen jatkuminen varmistetaan. 
