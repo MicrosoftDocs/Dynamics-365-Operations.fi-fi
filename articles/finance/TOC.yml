@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (toukokuu)
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: Finance 10.0.25 (huhtikuu)
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
@@ -462,6 +460,8 @@
                   items:
                     - name: Tuotto- ja kululykkäysten määrittäminen
                       href: accounts-receivable/sb-deferrals.md
+                    - name: Lykkäyskirjausmenetelmä
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: Lykkäysaikataulujen luominen
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Lykkäyksen oletustapahtumat
@@ -1214,9 +1214,11 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Taloushallinnon raportin komponentit
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Tarkastele ja suunnittele ja raportteja
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: Taloushallinnon raportoinnin valuutta-ominaisuudet
               href: general-ledger/financial-reporting-currency-capability.md
-            - name: Jakamattoman voiton laskenta Financial Reportingissa
+            - name: Jakamattoman voiton laskenta taloushallinnon raportoinnissa
               href: general-ledger/retained-earnings-enhancements.md
             - name: Taseraportit
               href: general-ledger/balance-sheet-financial-reports.md
@@ -1978,6 +1980,8 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Määritä Brasilian pankkitilinumerot
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: Siirtotilaukset
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: Verot
                   items:
                     - name: Brasilian verojen yleiskatsaus
@@ -2116,6 +2120,8 @@
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: Tilinpäätös
                   href: localizations/emea-cze-hun-year-end.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: Tanska
               items:
                 - name: Tanska – yleiskatsaus
@@ -2130,8 +2136,8 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: EU-myyntiluettelo
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: Tuo sähköisen OIOUBL-laskutuksen konfiguraatiot
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: Asiakkaiden sähköiset laskut Tanskassa
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: Vapaatekstilaskun kirjaaminen maksutositteen kanssa
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: Projektilaskun kirjaaminen maksutositteen kanssa
@@ -2220,6 +2226,8 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: Tuo ISO20022-suoraveloituksen konfiguraatio
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+                    - name: ISO 20022 -tilisiirtomuodon edellytykset
+                      href: localizations/emea-fra-ISO20022-international.md
                     - name: Tuo ISO20022-tilisiirron konfiguraatio
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
                     - name: Määritä yrityksen pankkitilit ISO20022-tilisiirtoja varten
@@ -2462,6 +2470,8 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: Lykätyn arvonlisäveron laskelmat
                   href: localizations/emea-hun-deferred-vat.md
+                - name: EU-myyntiluettelo
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: Islanti
               items:
                 - name: Islanti – yleiskatsaus
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: 'TDS:n rekisteröintinumeroiden määrittäminen yrityksille'
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: 'TDS:n verotyypin ennakonpidätyksen komponenttiryhmien määrittäminen'
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: 'TDS:n verotyypin ennakonpidätysveroviranomaisten määrittäminen'
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: 'TDS:n verotyypin verokomponenttien määrittäminen'
@@ -2968,6 +2980,8 @@
                   href: localizations/tasks/configure-depreciation-profile-posting.md
                 - name: Määritä päätilit käyttöomaisuuden käytöstäpoistositoumuksen kirjausta ja markkinadiskonttokorkoja varten
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: Kulutusveroraportti
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: Konsolidoidut laskut
                   href: localizations/apac-jpn-consolidate-invoices.md
                 - name: Luo käyttöomaisuus lisäpoistolla
@@ -3416,7 +3430,9 @@
                           href: localizations/rus-register-acquisition.md
                         - name: "Käyttöomaisuuden hankkiminen ja ottaminen\_käyttöön"
                           href: localizations/rus-fixed-asset-acquisition.md
-                        - name: Poiston laskeminen
+                        - name: Ajoneuvot ja kiinteistöt käyttöomaisuuseränä
+                          href: localizations/rus-vehicles-realty.md
+                        - name: Laske poisto
                           href: localizations/rus-depreciation-calculation.md
                         - name: Käyttöomaisuuden osittainen purku (selvitystila)
                           href: localizations/rus-fixed-assets-disassembly.md
@@ -3444,6 +3460,8 @@
                       items:
                         - name: 'Ei-arvokkaat käyttöomaisuuserät (NVFA:t) (Venäjä)'
                           href: localizations/rus-not-valuable-assets.md
+                        - name: 'NVFA:n ensisijaiset lomakkeet, työvaatteet ja erikoisvarustukset (Venäjä)'
+                          href: localizations/rus-nvfa.md
                         - name: Työvaatteiden/erikoisvarustuksen kirjanpito (Venäjä)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: Käyttöomaisuuden integrointi resurssienhallintamoduuliin
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: Voittojen veroilmoitus
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: Jäljitettävissä olevia tavaroita koskevien työvaiheiden raportti
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: Organisaation hallinto
                   items:
                     - name: Osoitteeseen liittyvät verorekisteröintitiedot

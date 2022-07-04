@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Käyttöympäristöpäivitykset versiolle 10.0.26 (toukokuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Käyttöympäristöpäivitykset versioon 10.0.25 (huhtikuu 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
@@ -376,11 +374,11 @@
                       href: deployment/on-premises-overview.md
                     - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
                       href: deployment/plan-onprem-deployment.md
-                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) -ratkaisun tukemat ohjelmistot
+                    - name: Paikallisesti tuettu ohjelmisto
                       href: deployment/onprem-compatibility.md
                     - name: Laitteiston kokovaatimukset
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Todennus Dynamics 365 Finance + Operations (on-premises) -ratkaisussa
+                    - name: Paikallisten ympäristöjen todennus
                       href: deployment/authentication-onprem.md
                 - name: Paikallisten ympäristöjen asennus ja käyttöönotto
                   items:
@@ -408,9 +406,9 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Välityspalvelimien konfigurointi paikallisia ympäristöjä varten
                       href: deployment/onprem-reverseproxy.md
-                    - name: Varastointisovelluksen määrittäminen paikallisille ympäristöille
+                    - name: Warehousing-sovelluksen määrittäminen paikallisille ympäristöille
                       href: deployment/warehousing-for-on-premise-deployments.md
-                    - name: OTA RSAT käyttöön Finance + Operations (on-premises) -ympäristöissä
+                    - name: Etäpalvelimen hallintatyökalujen käyttöönotto paikallisissa ympäristöissä
                       href: deployment/onprem-rsat-configuration.md
                     - name: Verkkotulostimien asentaminen paikallisiin ympäristöihin
                       href: analytics/install-network-printer-onprem.md
@@ -428,9 +426,9 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Saman AD FS -esiintymän käyttäminen uudelleen useissa ympäristöissä
                       href: deployment/onprem-reuseadfs.md
-                    - name: Windows Serverin päivittäminen Microsoft Dynamics 365 Finance + Operations (on-premises) -ympäristöissä
+                    - name: Windows Serverin päivitys paikallisissa ympäristöissä
                       href: deployment/onprem-upgrade-os.md
-                    - name: SQL Server -esiintymän päivittäminen Microsoft Dynamics 365 Finance + Operations (on-premises) -ympäristöissä
+                    - name: SQL Server -esiintymän paikallisten ympäristöjen päivittäminen tai korvaaminen
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Paikallinen edustaja
                   items:
@@ -980,8 +978,10 @@
               items:
                 - name: Määritystenhallinnan yleiskatsaus
                   href: lifecycle-services/configuration-manager-lcs.md
-                - name: Määritystenhallinnan määrittäminen
+                - name: Määritä määritystenhallinta
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
+                - name: Kopioi määritykset
+                  href: lifecycle-services/copy-configuration-lcs.md
             - name: Koodin päivityspalvelun määrittäminen
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Metodologioiden luominen tai päivittäminen
@@ -1050,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps -laajennuksen opetusohjelma (julkinen esiversio)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Dynamics 365 Translation Service Visual Studio Code -laajennus (julkinen esiversio)
+                - name: Visual Studio -laajennus (yksityinen esiversio)
+                  href: lifecycle-services/dts-visual-studio.md
+                - name: Visual Studio -koodilaajennus (julkinen esiversio)
                   href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform -integrointi
           items:
@@ -1602,13 +1604,15 @@
               href: sysadmin/implement-b2b.md
             - name: Tietojen ylläpito
               href: sysadmin/DataMaintenancePortal.md
+            - name: Kaikkien yritysyksiköiden verkkotulostimien käytön hallinta
+              href: sysadmin/sys-admin-tools-network-printer.md
             - name: Suojaus
               items:
                 - name: Rooliperustainen suojaus
                   href: sysadmin/role-based-security.md
                 - name: Suojausarkkitehtuuri
                   href: sysadmin/security-architecture.md
-                - name: Salaus Finance and Operations -sovelluksissa
+                - name: Salaus talous- ja toimintosovelluksissa
                   href: sysadmin/encryption.md
                 - name: Passiivisen istunnon aikakatkaisun määrittäminen
                   href: sysadmin/session-idle-timeout.md

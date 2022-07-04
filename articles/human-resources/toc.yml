@@ -496,6 +496,8 @@
                   items:
                     - name: Työhönottoprojektien prosessien hallinta
                       href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Määritä työhönottoprojektit
+                      href: hr-personnel-develop-open-job-requisition.md
                     - name: Hakijan ja hakemustietojen manuaalinen syöttäminen
                       href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                     - name: Työehdotusten kehittäminen ja avaaminen
@@ -626,6 +628,10 @@
                   items:
                     - name: Etusuunnitelmien määrittäminen
                       href: hr-benefits-plans-setup.md
+                    - name: Työntekijän etusuunnitelmien luominen
+                      href: hr-benefits-plans-worker.md
+                    - name: Tulevien elämäntapahtumien määrittäminen
+                      href: hr-benefits-plans-future-life-events.md
                     - name: Liukumahyvitysohjelmien määrittäminen
                       href: hr-benefits-plans-flex-credit-programs.md
                 - name: Etusuunnitelmien käsittely
@@ -836,6 +842,10 @@
               href: hr-developer-api-authentication.md
             - name: Yksiköt
               items:
+                - name: Työn tiedot
+                  href: hr-admin-integration-api-job-detail.md
+                - name: Työsuhteen tyyppivaihtoehto
+                  href: hr-admin-integration-payroll-api-hcmemploymenttype.md
                 - name: MyLeaveRequests
                   items:
                     - name: MyLeaveRequests – yleiskatsaus
