@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76eba18fb9228c3b9c2accf17cb938e7f2a12dbe
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fc0dee0747c26b073d750d19328a6a59c234fd3f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671699"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016397"
 ---
 # <a name="service-tasks-overview"></a>Huoltotehtävät – yleiskatsaus
 
@@ -82,7 +82,7 @@ Kun luot huoltotilaukset automaattisesti, voit käyttää huoltotehtäviä ryhmi
 
 **Ryhmitteleminen huoltotehtävien perusteella**
 
-1. Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.
+1. Valitse **Palvelujen hallinta** \> **Huoltosopimukset** \> **Huoltosopimukset**.
 2. Valitse **Asetukset**-välilehdessä **Huoltotehtävän mukaan** **Yhdistä huoltotilaukset** -kentässä.
 
 

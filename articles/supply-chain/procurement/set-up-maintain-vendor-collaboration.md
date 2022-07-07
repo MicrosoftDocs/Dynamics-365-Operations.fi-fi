@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890825"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023757"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Toimittajayhteistyön määrittäminen ja hallinta
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890825"
 Toimittajayhteistyöliittymästä saadaan rajoitettu joukko tietoja ostotilauksista, laskuista ja lähetysvarastosta ulkoisille toimittajakäyttäjille. Tässä käyttöliittymässä toimittaja voi myös vastata tarjouspyyntöihin sekä tarkastella ja muokata yrityksen perustietoja.
 
 Tässä artikkelissa kerrotaan, kuinka voit toimittajayhteistyön Dynamics 365 Supply Chain Managementissa. Tässä kerrotaan myös, miten määritetään työnkulku uusien toimittajayhteistyön käyttäjien valmistelulle ja miten näiden käyttäjien käyttöoikeusrooleja hallitaan.
-
-> [!NOTE]
-> Toimittajayhteistyön käyttöoikeusroolien määrittämistä koskevat tiedot pätevät vain Finance and Operationsin nykyiseen versioon. Microsoft Dynamics AX 7.0 (helmikuu 2016)- ja Microsoft Dynamics AX 7.0.1 (toukokuu 2016) -versioissa yhteistyö toimittajien kanssa tapahtuu **Toimittajaportaali**-moduulissa. Tietoja Microsoft Dynamics AX:n toimittajaportaalin käyttöoikeuksista: [Toimittajaportaalin käyttäjäsuojaus](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Toimittajayhteistyön käyttöoikeusroolien määrittäminen
 
@@ -138,13 +135,7 @@ Luo tyypin **Poista käyttäjäpyynnön työnkulkuympäristö** työnkulku ja li
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Tietyn toimittajan toimittajayhteistyön käyttöönotto
 
-Ennen kuin luot käyttäjätilin henkilölle, joka tulee käyttämään toimittajayhteistyötä, sinun on määritettävä kyseinen toimittaja siten, että se voi käyttää toimittajayhteistyötä. Määritä **Toimittajat**-sivun **Yleinen**-välilehdessä **Yhteistyön aktivointi**-kenttä. Käytettävissä ovat seuraavat asetukset:
-
-- **Aktiivinen (ostotilaus vahvistetaan automaattisesti)** – Ostotilaukset vahvistetaan automaattisesti, jos toimittaja hyväksyy sen pyytämättä muutoksia.
-- **Aktiivinen (ostotilausta ei vahvisteta automaattisesti)** – Organisaation on vahvistettava ostotilaukset manuaalisesti, kun toimittaja on hyväksynyt ne.
-
-> [!NOTE]
-> Myös yrityksen hankinta-asiantuntijat voivat suorittaa tämän tehtävän.
+Ennen kuin luot käyttäjätilin henkilölle, joka tulee käyttämään toimittajayhteistyötä, sinun on määritettävä kyseinen toimittaja siten, että se voi käyttää toimittajayhteistyötä. Lisätietoja tästä on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Uusien toimittajayhteistyön käyttäjien valmistelun vianmääritys
 

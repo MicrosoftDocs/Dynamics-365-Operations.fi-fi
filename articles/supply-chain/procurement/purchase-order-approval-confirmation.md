@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af33dbd38b1eb70e79392860e48c6943a4192f78
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907374"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016446"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
 
@@ -50,7 +50,7 @@ Kun muutoksenhallinta on otettu käyttöön, ostotilaukset läpäisevät kuusi h
 ## <a name="confirming-purchase-orders"></a>Ostotilausten vahvistaminen
 Ostotilausten, joiden hyväksyntätila on **Hyväksytty**, on ehkä läpäistävä lisävaiheita ennen vahvistusta. Toimittajalle on ehkä esimerkiksi lähetettävä hintoja, alennuksia tai toimituspäiviä koskeva kysely. Tässä tapauksessa voit määrittää ostotilauksen tilaksi **Ulkoisessa tarkistuksessa** **Ostokysely**-toiminnolla.
 
-Toimittajaportaalin käyttöoikeudet omaavat toimittajat voivat tarkastella tilauksia portaalissa ja joko hyväksyä tai hylätä ne. Tämän tarkistusprosessin aikana ostotilauksen tila on **Ulkoisessa tarkistuksessa**. Toimittajaportaali voidaan määrittää siten, että toimittaja vahvistaa tilauksen automaattisesti Supply Chain Managementissa. Voit vaihtoehtoisesti vahvistaa tilauksen manuaalisesti, kun on saanut vahvistuksen toimittajalta. Jos toimittaja hylkää ostotilauksen, hylkäyksen lisäksi toimitetaan hylkäyksen syy ja muutosehdotukset. Tässä tapauksessa ostotilauksen tilaksi jää **Ulkoisessa tarkistuksessa**.
+Toimittajan yhteistyömoduulin käyttöoikeudet omaavat toimittajat voivat tarkastella tilauksia portaalissa ja joko hyväksyä tai hylätä ne. Tämän tarkistusprosessin aikana ostotilauksen tila on **Ulkoisessa tarkistuksessa**. Toimittajan yhteistyömoduuli voidaan määrittää siten, että toimittaja vahvistaa tilauksen automaattisesti Supply Chain Managementissa. Voit vaihtoehtoisesti vahvistaa tilauksen manuaalisesti, kun on saanut vahvistuksen toimittajalta. Jos toimittaja hylkää ostotilauksen, hylkäyksen lisäksi toimitetaan hylkäyksen syy ja muutosehdotukset. Tässä tapauksessa ostotilauksen tilaksi jää **Ulkoisessa tarkistuksessa**.
 
 Lisäksi käytettävissä on vaihtoehto, jolla tilaukselle voi luoda proforma-vahvistuksen ennen varsinaisen vahvistuksen käsittelyä. Tällä vaihtoehdolla vain luodaan raportti, jonka voit jakaa toimittajan kanssa. Sillä ei luoda kirjauskansiotietoja.
 

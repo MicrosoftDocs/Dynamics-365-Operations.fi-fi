@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f7c36fe230db38bfdbfd70fec7bdfd0a313d5a15
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869717"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015838"
 ---
 # <a name="create-functional-locations"></a>Luo toiminnalliset sijainnit
 
@@ -41,7 +41,7 @@ Jotta voit työskennellä toiminnallisten sijaintien kanssa, aloita luomalla kak
 
 Kun käytät toiminnallisia sijainteja,aloita luomalla yksi oletussijainti, jota käytetään luodessasi uusia resursseja. tämä toiminnallinen sijainti on se, jonka valitset kohdassa **Resurssien hallinta** > **Asetukset** > **Resurssienhallinnan parametrit** > **Resurssit** -linkki > **Toiminnallinen oletussijainti** -kenttä. Oletusarvoinen toiminnallinen sijaintia voidaan käyttää luotaessa uusia resursseja, etkä ole vielä määrittänyt toiminnallista sijaintirakennetta näille resursseille.
 
-1. Valitse **Resurssien hallinta** > **Yhteiset** > **Toiminnalliset sijainnit** > **Kaikki toiminnalliset sijainnit**.  
+1. Valitse **Resurssien hallinta** > **Toiminnalliset sijainnit** > **Kaikki toiminnalliset sijainnit**.  
 2. Valitse **Kaikki toiminnalliset sijainnit** -kohdassa **Uusi**.
 3. Lisää tunnus **Toiminnallinen sijainti** -kenttään, esimerkiksi "0000" tai "Oletus", osoittamaan, että tämä on erityinen toiminnallinen sijainti.
 4. Kirjoita **Nimi**-kenttään toiminnallisen oletussiajiannin nimi.
@@ -53,7 +53,7 @@ Kun käytät toiminnallisia sijainteja,aloita luomalla yksi oletussijainti, jota
 
 Seuraavassa menettelyssä kuvaillaan, miten yrityksesi ylläpidon hallintaan tarvittavat toiminnalliset sijainnit luodaan.
 
-1. Valitse **Resurssien hallinta** > **Yhteiset** > **Toiminnalliset sijainnit** > **Kaikki toiminnalliset sijainnit**. Voit luoda toiminnallisen sijainnin ruudukkonäkymästä tai Tiedot-näkymästä.
+1. Valitse **Resurssien hallinta** > **Toiminnalliset sijainnit** > **Kaikki toiminnalliset sijainnit**. Voit luoda toiminnallisen sijainnin ruudukkonäkymästä tai Tiedot-näkymästä.
 2. Valitse **Uusi**-painike.
 3. Lisää tunnus **Toiminnallinen sijainti** -kenttään.
 4. Kirjoita **Nimi**-kenttään toiminnallisen sijainnin nimi.

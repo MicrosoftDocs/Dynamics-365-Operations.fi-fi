@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 99613369084ca1e708761179dfb2688014b011f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 72813325c19c639c3c8e7ea9c7436730d23eb61b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849616"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017026"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Ajoitetut työtilauksen ylläpitotyöt
 
@@ -32,7 +32,7 @@ ms.locfileid: "8849616"
 
 ## <a name="view-scheduled-work-order-maintenance-jobs"></a>Näytä ajoitetut työtilauksen ylläpitotyöt
 
-1. Valitse **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Ajoitetut työtilauksen ylläpitotyöt**. Näet luettelon kaikista työtilauksista, jotka on asetettu työtilauksen elinkaaren tilaan "ajoitettu" tai "käynnissä".
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Ajoitetut työtilauksen ylläpitotyöt**. Näet luettelon kaikista työtilauksista, jotka on asetettu työtilauksen elinkaaren tilaan "ajoitettu" tai "käynnissä".
 
 2. Voit lajitella luettelon esimerkiksi kunnossapitotyöntekijän mukaan. Voit myös käyttää suodatinta rajoittamaan luetteloa niin, että se näyttää tietylle resurssille tai kunnossapitotyöntekijälle kohdistetut työtilaukset.
 

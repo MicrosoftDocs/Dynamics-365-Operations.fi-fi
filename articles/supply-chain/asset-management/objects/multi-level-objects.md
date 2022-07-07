@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908769"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017142"
 ---
 # <a name="multi-level-assets"></a>Monitasoiset resurssit
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908769"
 
 Tässä artikkelissa kerrotaan, kuinka voit luoda ja poistaa monitasoisia resursseja. Voit luoda resursseja ja niihin liittyviä alaresursseja hierarkkisessa puurakenteessa. Näin voit näyttää suhteet ja riippuvuudet resurssien välillä. Ylläpitotöitä voidaan liittää kaikkiin puurakenteen tasoihin. Tilastoja voidaan luoda myös yksittäiselle tasolle tai kaikkien aliresurssitasojen summana.
 
-**Kaikki resurssit** -luettelosivun (**Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit**) **Resurssi**-sarakkeessa on resurssit hirarkkisessa jäsjestyksessä. **Ylätaso**-sarakkeessa näkyy liittyvä ylätaso. Lisäksi jos resurssit ja aliresurssit on jo luotu,**Liittyvät tiedot** -ruudun **Resurssipuu**-osassa näkyvät resurssit puurakenteessa.
+Resurssit ovat hierarkkisessa järjestyksessä **Kaikki resurssit** -luettelosivun (**Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit**) **Resurssi**-sarakkeessa. **Ylätaso**-sarakkeessa näkyy liittyvä ylätaso. Lisäksi jos resurssit ja aliresurssit on jo luotu,**Liittyvät tiedot** -ruudun **Resurssipuu**-osassa näkyvät resurssit puurakenteessa.
 
 Lisä tietoja resurssien luomisesta on kohdassa [Resurssin luominen](../objects/create-an-object.md). Jos haluat luoda aliresurssin, valitse ylätason resurssi **Ylätaso**-kentässä **Yleiset**-pikavälilehdessä.
 
@@ -38,7 +38,7 @@ Lisä tietoja resurssien luomisesta on kohdassa [Resurssin luominen](../objects/
 
 Jos yritykselläsi on useita samankaltaisia resurssirakenteita, voit luoda ne nopeasti käyttämällä resurssien hallinnan Kopioi-toimintoa.
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit**.
+1. Valitse **Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit**.
 2. Valitse **Kaikki resurssit** -luettelosivulla kopioitava resurssi. Jos esimerkiksi haluat kopioida koko resurssirakenteen, mukaan lukien aliresurssit, valitse ylätason resurssi.
 3. Valitse **Kopioi resurssi**. **Kopioi kohteesta**-osassa **Resurssi**-kentän arvoksi on valittu resurssi, jonka valitsit luettelosivulla.
 4. Kirjoita **Kopioi kohteeseen** -osassa **Resurssi**-kenttään uuden resurssin nimi.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907287"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023785"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Toimittajayhteistyö ulkoisten toimittajien kanssa
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907287"
 **Toimittajayhteistyö**-moduuli on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics 365 Supply Chain Management -integrointia. Toimittajat voivat käsitellä siinä ostotilauksia, laskuja, tavaralähetysvaraston tietoja ja tarjouspyyntöjä. Lisäksi he voivat käyttää joitakin osia toimittajan päätiedoista. Tässä artikkelissa selitetään, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa, jotka käsittelevät toimittajayhteistyöliittymässä ostotilauksia, tarjouspyyntöjä ja tavaralähetysvarastoja. Siinä selitetään myös, miten toimittajayhteistyö voidaan ottaa käyttöön tietylle toimittajalle ja miten kaikkien määritetään tiedot, jotka kaikki toimittajat näkevät, kun he vastaavat ostotilaukseen.
 
 Lisätietoja siitä, mitä ulkoiset toimittajat voivat tehdä toimittajan toimittajayhteistyöliittymällä, on kohdassa [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md).
-
-> [!NOTE]
-> Tämän artikkelin toimittajayhteistyön tiedot koskevat vain Supply Chain Managementin nykyistä versiota. Microsoft Dynamics AX 7.0 (helmikuu 2016)- ja Microsoft Dynamics AX 7.0.1 (toukokuu 2016) -versioissa yhteistyö toimittajien kanssa tapahtuu **Toimittajaportaali**-moduulissa. Lisätietoja **Toimittajaportaali**-moduulista on kohdassa [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md).
 
 Lisätietoja siitä, kuinka toimittajat voivat käyttää toimittajayhteistyötä laskutusprosesseissa, on kohdassa [Toimittajayhteistyön laskutustyötila](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Tietoja siitä, miten uusia toimittajayhteistyön käyttäjiä voidaan valmistella, on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ Järjestelmänvalvoja määrittää toimittajayhteistyön yleiset asetukset, kut
 
 Ennen käyttäjätilien luontia ulkoiselle toimittajalle on määritettävä toimittajatili, jotta toimittaja voi käyttää toimittajayhteistyötä. Määritä **Toimittajat**-sivun **Yleinen**-välilehdessä **Yhteistyön aktivointi**-kenttä. Käytettävissä ovat seuraavat asetukset:
 
-- **Aktiivinen (ostotilaus vahvistetaan automaattisesti)**– ostotilaukset vahvistetaan automaattisesti, jos toimittaja hyväksyy sen ilman muutoksia.
+- **Aktiivinen (ostotilaus vahvistetaan automaattisesti)**– ostotilaukset vahvistetaan automaattisesti, jos toimittaja hyväksyy sen ilman muutoksia. Jos käytät tätä vaihtoehtoa, varmista, että ajoitat *Vahvista hyväksytyt ostotilaukset toimittajayhteistyöstä* -erätyön. Se on vastuussa vahvistusten käsittelemisestä. Lisätietoja on seuraavassa osassa.
 - **Aktiivinen (ostotilausta ei vahvisteta automaattisesti)**– organisaation on vahvistettava ostotilaukset manuaalisesti, kun toimittaja on hyväksynyt ne.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Automaattisen vahvistuksen erätyön ajoittaminen
+
+Jos käytät yhdellä tai usealla toimittajalla **Aktiivinen (ostotilaus vahvistetaan automaattisesti)** -vaihtoehtoa (kuten edellisessä osassa on kerrottu), ajoita *Vahvista hyväksytyt ostotilaukset toimittajayhteistyöstä* -erätyö, joka on vastuussa ostotilausten käsittelemisestä ja vahvistamisesta. Muussa tapauksessa automaattisia vahvistuksia ei tehdä koskaan. Ajoita tämä työ seuraavien ohjeiden mukaan.
+
+1. Siirry kohtaan **Hankinta \> Ostotilaukset \> Ostotilauksen vahvistus \> Vahvista hyväksytyt ostotilaukset toimittajayhteistyöstä**.
+1. Valitse **Vahvista hyväksytyt ostotilaukset toimittajayhteistyöstä** -valintaikkunassa **Suorita taustalla** -pikavälilehdessä **Toistuminen**.
+1. Määritä **Määritä toistuvuus** -valintaikkunassa työn suoritusaikataulu. Kun valitset aikataulun, ota huomioon seuraavat seikat:
+
+    - Jos järjestelmä käsittelee suuria tietomääriä ja suorittaa useita erätöitä, suorituskyky saattaa huonontua. Tässä tapauksessa työtä ei todennäköisesti kannata ajaa useammin kuin 10 minuutin välein (muista vaatimuksista riippuen). Jos suorituskyky ei huonone, voit suorittaa työn jopa 1-2 minuutin välein tarvittaessa.
+    - Jos toimittaja toimittaa tavarat yleensä nopeasti (lupaamansa päivän aikana), työ voidaan määrittää toistuvaksi (10–30 minuutin välein). Tällöin varastotyöntekijät voivat vastaanottaa tavarat vahvistettua ostotilausta vastaan vahvistuksen jälkeen.
+    - Jos toimittajalla on pitkä toimitusaika (yli 24 tuntia), voit määrittää tämän tehtävän suoritettavaksi vain esimerkiksi kerran päivässä.
+
+1. Valitse **OK**, jos haluat käyttää aikataulua ja palata **Vahvista hyväksytyt ostotilaukset toimittajayhteistyöstä** -valintaikkunaan.
+1. Määritä tarvittavat tausta-asetukset. Valintaikkunassa ovat normaalit vaihtoehdot Supply Chain Managementin erätöiden määrittämistä varten.
+
+Lisätietoja erätöistä on kohdassa [Eräkäsittelyn yleiskatsaus](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Hintatietojen näkyvyyden määrittäminen toimittajille
 

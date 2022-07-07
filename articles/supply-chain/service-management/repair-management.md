@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7026453bf3a0eda2b9bc4d8538150974bd6aa634
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 32372a6a54e2adfbf511e2247be4a9baa28b4b53
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847901"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015198"
 ---
 # <a name="repair-management"></a>Korjausten hallinta       
 
@@ -75,7 +75,7 @@ Voit luoda korjausrivejä jokaisessa korjausprosessin vaiheessa.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Korjausrivin luominen huoltotilaukseen
 
-1.  Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1.  Siirry kohtaan **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 
 2.  Valitse huoltotilaus, jossa korjausta kaipaava huoltokohde on.
 

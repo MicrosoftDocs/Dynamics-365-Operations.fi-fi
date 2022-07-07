@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862305"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014717"
 ---
 # <a name="set-up-cluster-picking"></a>Klusterikeräilyn määrittäminen
 
@@ -74,9 +74,14 @@ Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärk
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Nimiketarkistuksen määrittäminen klusterikeräilyssä
 
-1. Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** \> **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
+1. Siirry kohtaan **Varastonhallinta** > **Asetukset** > **Mobiililaite** > **Mobiililaitteen valikkovaihtoehdot**.
+1. Valitse ruudussa valikkovaihtoehto, jonka haluat määrittää.
+1. Valitse toimintoruudussa **Työn vahvistusasetukset**.
+1. Tee jokin seuraavista toiminnoista:
+    - Jos määritettävällä **työtyypillä** on jo rivi, valitse se ja valitse sitten toimintoruudussa **Muokkaa**.
+    - Jos sopivaa riviä ei ole, valitse toimintoruudussa **Uusi** ja määritä soveltuva **työtyyppi**.
+1. Valitse uuden tai valitun rivin **Tuotteen vahvistus** -valintaruutu. Näin työntekijät voivat tarkistaa kunkin varaston nimikkeen mobiililaitteen avulla.
 
-1. Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**. **Tuotteen vahvistus** -asetuksella voi tarkistaa kunkin varastokappaleen mobiililaitteessa skannauksen yhteydessä.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

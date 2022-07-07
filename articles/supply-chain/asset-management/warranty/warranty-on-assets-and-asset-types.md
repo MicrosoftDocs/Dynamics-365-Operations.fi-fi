@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa4fe7af46996e8de76ea61d5395327e7617e736
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e63161aa32ecbc99baace9bb0cc649aedc600ed
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906121"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015989"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Resurssien ja resurssityyppien takuut
 
@@ -39,7 +39,7 @@ Tässä artikkelissa kerrotaan, kuinka voit määrittää resurssien ja resurssi
 
 ## <a name="set-up-a-warranty-on-an-asset"></a>Takuun määrittäminen resurssille
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit**.
+1. Valitse **Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit**.
 2. Valitse käyttöomaisuuserä ja valitse sitten **Muokkaa**.
 3. Valitse takuusopimus **Toimittaja**-pikavälilehden **Toimittajan takuu**-osan **Takuu**-kentässä.
 4. Valitse **Takuun alkamispäivämäärä**- ja **Takuun päättymispäivämäärä** -kentissä alkamis- ja päättymispäivämäärät.

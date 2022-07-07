@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 73f2f9a819312d8d6e111b998c68b65ba85e7818
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850754"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954478"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.26. (toukokuu 2022)
 
@@ -61,7 +61,6 @@ Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merki
 | Ominaisuusalue | Uudet tai päivitetyt artikkelit |
 |---|---|
 | Kustannushintojen hallinta | Päivitettyjä esimerkkejä ja kaavioita on lisätty seuraaviin artikkeleihin:<ul><li>[FIFO-merkintä ja fyysinen arvo](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO-merkintä ja fyysinen arvo](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO-päivämäärä, fyysinen arvo ja merkintä](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Kustannushinnan käyttökeskiarvo](../cost-management/running-average-cost-price.md)</li><li>[Painotettu keskiarvo sekä fyysinen arvo ja merkintä](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
-| Hankinta | [Ostotilausrivin tietoristiriidat](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

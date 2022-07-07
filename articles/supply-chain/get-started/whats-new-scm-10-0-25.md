@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 1fa2ec6e21026552a4f14a67188db0720d3feae5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850783"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954488"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.25 (huhtikuu 2022)
 
@@ -155,7 +155,7 @@ Taulukossa luetellaan myös aiemmat julkisen esiversion ominaisuudet, mutta jotk
 | Varastonhallinta   | [Manuaalisen varastosiirtotoiminnon lykätty käsittely](../warehousing/deferred-processing-manual-inventory-movement.md) | Pakollinen |
 | Varastonhallinta   | Älä salli sellaisten kuormien luomista, jotka eivät täytä aallon kuormanrakennusmallin vaatimuksia | Pakollinen |
 | Varastonhallinta   | [Laajennetut rekisterikilpien etikettien asettelut](../warehousing/document-routing-layout-for-license-plates.md) | Pakollinen |
-| Varastonhallinta   | [Arvioi kaikki useiden varastointiyksiköiden sijaintidirektiivien toiminnot](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Pakollinen |
+| Varastonhallinta   | [Arvioi kaikki useiden varastointiyksiköiden sijaintidirektiivien toiminnot](/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions) | Pakollinen |
 | Varastonhallinta   | Piilota Kokonaisarvo-kenttä Kaikki kuormat- ja Kuorman tiedot -sivuilla | Pakollinen |
 | Varastonhallinta   | Rekisterikilven etiketin koontiversiomääritys | Pakollinen |
 | Varastonhallinta   | Kuormarivin manuaalinen korjaus järjestelmänvalvojille tai vastaaville luotettaville käyttäjille | Pakollinen |

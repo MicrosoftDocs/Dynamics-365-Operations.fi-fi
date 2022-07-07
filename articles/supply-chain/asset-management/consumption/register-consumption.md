@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886041"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015082"
 ---
 # <a name="register-consumption"></a>Kulutuksen rekisteröinti
 
@@ -35,7 +35,7 @@ Joissakin tapauksissa voit lisätä tai poistaa työtilauksen ennusterivejä. Ty
 >[!NOTE]
 >Kirjauskansioiden automaattisen kirjauksen voi määrittää työtilauksen elinkaaritilalle. Lisätietoja on kohdassa [Työtilauksen elinkaaren tilat](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 2. Valitse työtilaus ja valitse **Kirjauskansiot**.
 
@@ -61,7 +61,7 @@ Alla oleva kuvakaappaus näyttää esimerkin tunti- ja nimikerekisteröinneistä
 
 Jos työtilaus sisältää useita työtilaustöitä, voit rekisteröidä työtunnit käyttämällä **Jaa tunnit** -toimintoa eli yksi tuntien rekisteröintirivi voidaan jakaa tasaisesti kullekin työtilaustyölle.
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 2. Valitse työtilaus ja valitse **Kirjauskansiot**.
 

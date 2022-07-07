@@ -15,17 +15,16 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aa1ca9c057b8a1332cd52f73a24adf2089ebef3a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852716"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027280"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Useimmat käyttäjien myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Dynamics 365 Commercen taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Jotta työvaihe olisi käytettävissä painikeruudukon lisäämiseksi painikeruudukon suunnittelussa, se on ensin merkittävä Commerce headquartersin myyntipistetoimintojen näkymässä käyttäjäksi (**Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> Myyntipiste \> Myyntipistetoiminnot**).
 

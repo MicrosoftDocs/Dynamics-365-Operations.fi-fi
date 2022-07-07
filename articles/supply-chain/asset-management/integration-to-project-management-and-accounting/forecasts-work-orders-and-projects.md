@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880448"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016794"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Ennusteet, työtilaukset ja projektit
 
@@ -60,7 +60,7 @@ Esimerkiksi seuraavassa kuvassa **Truck Engine** -käyttöomaisuustyypin määri
 
 ![Kuva 1.](media/01-integration-to-pma.png)
 
-Työtilaustyön projektitunnuksen ja siihen liittyvän tehtävän numeron tarkoitus on jäljittää työtilaustyöhön liittyvät kustannukset ja sille valittu käyttöomaisuuserä **Projektinhallinta ja kirjanpito** -moduulissa. (Voit tarkastella projektin tunnusta ja tehtävän numeroa valitsemalla **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** ja valitsemalla sitten työtilauksen. **Rivin tiedot**-pikavälilehdessä **Projektitunnus**-kentässä näkyy projektin tunnus, ja **Tehtävän numero** -kentässä näkyy tehtävä numero.) Lisätietoja käyttöomaisuuden hallinnan kustannusten hallinnasta on kohdassa [Kustannusten ja päivämäärien hallinta](../controlling-and-reporting/cost-and-date-control.md).
+Työtilaustyön projektitunnuksen ja siihen liittyvän tehtävän numeron tarkoitus on jäljittää työtilaustyöhön liittyvät kustannukset ja sille valittu käyttöomaisuuserä **Projektinhallinta ja kirjanpito** -moduulissa. (Voit tarkastella projektin tunnusta ja tehtävän numeroa valitsemalla **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** ja valitsemalla sitten työtilauksen. **Rivin tiedot**-pikavälilehdessä **Projektitunnus**-kentässä näkyy projektin tunnus, ja **Tehtävän numero** -kentässä näkyy tehtävä numero.) Lisätietoja käyttöomaisuuden hallinnan kustannusten hallinnasta on kohdassa [Kustannusten ja päivämäärien hallinta](../controlling-and-reporting/cost-and-date-control.md).
 
 Seuraavassaolevassa kuvassa näkyy graafinen yleiskatsaus työtilausprojekteista ja niihin liittyvistä projektitehtävistä.
 

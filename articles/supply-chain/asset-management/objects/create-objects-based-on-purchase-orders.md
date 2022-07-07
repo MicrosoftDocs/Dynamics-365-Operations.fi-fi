@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ccd14493aac6484dc54ccf51ae159a071c8697a5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893697"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015606"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Luo ostotilauksiin perustuvia resursseja
 
@@ -45,7 +45,7 @@ Ensin määritetään nimikkeet, joita käytetään resurssien luomiseen ostotil
 
 ## <a name="create-assets-from-pending-assets"></a>Resurssien luominen odottavista resursseista
 
-1. Valitse **resurssien hallinta** > **yhteiset** > **resurssit** > **odottavat resurssit**.
+1. Valitse **Resurssien hallinta** > **Resurssit** > **Odottavat resurssit**.
 2. Näet päivitetyn luettelon ostotilauksista, jotka perustuvat **resurssinimikkeet** -kohdassa valittuihin nimikkeisiin.
 3. Voit suodattaa ostotilausten tiloja ja valita, missä elinkaaren tilassa resurssi luodaan. Haluat ehkä esimerkiksi luoda resursseja vain, kun tuotteen vastaanotto on kirjattu ostotilaukseen.
 4. Valitse ostotilausrivin **Viitenumero**-linkki, jos haluat tarkastella nimikkeen yksityiskohtaisia tietoja.

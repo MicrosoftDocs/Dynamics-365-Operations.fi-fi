@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c3def1b8ebd75da44588732d9f54a1cc03c999c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 92f3a2bc3d2a4d5d1c3be0c6dda2674dc3e7d0bb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891231"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016823"
 ---
 # <a name="create-maintenance-requests"></a>Luo ylläpitopyyntöjä
 
@@ -32,9 +32,9 @@ Ylläpitopyyntöjä voidaan käyttää, jos huoltotyöntekijät tai tuotannon ty
 
 **Esimerkki:** Kun kunnossapitotyöntekijä tekee korjauksen, hän havaitsee, että samassa sijainnissa on huollettava toinenkin resurssi. Huoltotyöntekijällä ei kuitenkaan ole aikaa tai tarvittavia varaosia korjaustyön tekemistä varten. Tämän vuoksi hän luo resurssille ylläpitopyynnön ja kirjoittaa ongelmasta lyhyen kuvauksen.
 
-**Aktiiviset ylläpitopyynnöt** -osa **Aiheeseen liittyviä tietoja** -ruudussa **Kaikki resurssit**- tai **Aktiiviset resurssit** -sivulla (**Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**) näyttää aktiiviset ylläpitopyynnöt, jotka on liitetty valittuuun resurssiin.
+**Aktiiviset ylläpitopyynnöt** -osa **Aiheeseen liittyviä tietoja** -ruudussa **Kaikki resurssit**- tai **Aktiiviset resurssit** -sivun oikealla puolella (**Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**) näyttää aktiiviset ylläpitopyynnöt, jotka on liitetty valittuun resurssiin.
 
-1. Valitse **Resurssien hallinta** \> **yhteiset** \> **Ylläpitopyynnöt** \> **Kaikki ylläpitopyynnöt** ta **Aktiiviset ylläpitopyynnöt**.
+1. Valitse **Resurssien hallinta** \> **Ylläpitopyynnöt** \> **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt**.
 2. Valitse **Uusi**.
 3. Valitse **Luo pyyntö** -valintaikkunan **Ylläpitopyynnön tyyppi** -kentässä ylläpitopyynnön tyyppi. Ehdotetaan oletustyyppiä.
 4. Kirjoita **kuvaus**-kenttään nimi tai otsikko, joka kuvaa lyhyesti ylläpitopyyntöä.

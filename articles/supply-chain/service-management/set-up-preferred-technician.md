@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671671"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017200"
 ---
 # <a name="set-up-a-preferred-technician"></a>Ensisijaisen teknikon määrittäminen 
 
@@ -31,13 +31,13 @@ Voit valita minkä tahansa työntekijän ensisijaiseksi teknikoksi huoltosopimuk
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Työntekijän määrittäminen resursointiryhmään
 
-1.  Valitse **Henkilöstöhallinto** \> **Yleinen** \> **Työntekijät** \> **Työntekijät**. Kaksoisnapsauta työntekijää avataksesi työntekijän tiedot -sivun. Valitse **toimintoruudussa** **Asetukset** \>**Resursointiryhmä** avataksesi **Resursoi työntekijöitä** -lomakkeen.
+1.  Valitse **Henkilöstöhallinto** \> **Työntekijät** \> **Työntekijät**. Kaksoisnapsauta työntekijää avataksesi työntekijän tiedot -sivun. Valitse **toimintoruudussa** **Asetukset** \>**Resursointiryhmä** avataksesi **Resursoi työntekijöitä** -lomakkeen.
 
 2.  Valitse **Resursointiryhmä**-kentässä työntekijään liitettävä ryhmä.
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Ensisijaisen teknikon määrittäminen huoltosopimukseen
 
-1.  Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**. Avaa tietolomake kaksoisnapsauttamalla huoltosopimusta.
+1.  Valitse **Palvelujen hallinta** \> **Huoltosopimukset** \> **Huoltosopimukset**. Avaa tietolomake kaksoisnapsauttamalla huoltosopimusta.
 
 2.  Valitse **Yleinen**-välilehdellä **Ensisijainen teknikko** -kenttä ja valitse sitten sopivan resursointiryhmän jäsen huoltosopimuksen ensisijaiseksi teknikoksi.
 

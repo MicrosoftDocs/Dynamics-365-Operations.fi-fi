@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb29c5e7170011b95151d9aaf2a96a570563096d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2cc1f5b8eccb51b6bea8655fdee243c1a2df55
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902079"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015024"
 ---
 # <a name="manually-created-work-orders"></a>Manuaalisesti luodut työtilaukset
 
@@ -34,7 +34,7 @@ Voit luoda työtilauksia manuaalisesti kahdella tavalla:
 
 ## <a name="create-work-order"></a>Luo työtilaus
 
-1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 2. Valitse **Uusi**.
 
@@ -82,7 +82,7 @@ Huomaa seuraavat seikat:
 
 Voit luoda työtilauksen, joka liittyy olemassa olevaan työtilaukseen. Tämä ominaisuus on käytännöllinen, jos esimerkiksi haluat käyttää ensisijaisia ja toissijaisia työtilauksia. Uusi työtilaus perustuu aiemmin luodun työtilauksen työtilaustyöhön.
 
-1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 2. Valitse työtilaus, jolle luodaan liittyvä työtilaus.
 
@@ -120,7 +120,7 @@ Seuraavassa kuvassa on esimerkki **Luo liittyvä työtilaus** -valintaikkunasta.
 
 Uuden työtilauksen voi luoda nopeasti aiemmin luodusta työtilauksesta. Tämä tapa käyttää työtilauksia eroaa työtilausten luomisesta [ylläpitosuunnitelmien](../preventive-and-reactive-maintenance/maintenance-plans.md) perusteella. Siitä on hyötyä, jos työtilaus esimerkiksi sisältää useita työtilaustehtäviä ja nämä eri tehtävät on suoritettava eri resursseille säännöllisin väliajoin.
 
-1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 2. Valitse työtilaus, josta sisältöä kopioidaan.
 
@@ -142,7 +142,7 @@ Seuraavassa kuvassa on esimerkki **Kopioi työtilaus** -valintaikkunasta.
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Työtilauksen luominen ylläpitopyynnön perusteella
 
-1. Valitse **Resurssien hallinta** > **Yhteiset** > **Ylläpitopyynnöt** > **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt**.
+1. Valitse **Resurssien hallinta** > **Ylläpitopyynnöt** > **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt**.
 
 2. Valitse ylläpitopyyntö, jolle luodaan työtilaus, ja valitse sitten **Muokkaa**.
 

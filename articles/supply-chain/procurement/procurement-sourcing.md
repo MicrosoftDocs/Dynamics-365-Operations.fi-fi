@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ec5a9dac1d3b1288d060fe92ec94e6a105f84be8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885867"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015285"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
 
@@ -56,8 +56,6 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Toimittajayhteistyön määrittäminen ja hallinta](set-up-maintain-vendor-collaboration.md)
 -   [Microsoft Dynamics 365 for Finance and Operationsin saapuvan tavaralähetyksen esittelykomentosarja](https://www.microsoft.com/download/details.aspx?id=101945)(tiedote)
 -   [Tavaralähetysvaraston valvonta toimittajayhteistyön avulla](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
--   [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md) (vain helmikuun ja toukokuun 2016 Dynamics AX -versiot)
--   [Toimittajaportaalin käyttäjäsuojaus](configure-security-vendor-portal-users.md) (vain Finance and Operationsin toukokuun 2016 versiot)
 -   [Toimittajayhteistyön mobiilityötila](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Tuoteluokan hallinta

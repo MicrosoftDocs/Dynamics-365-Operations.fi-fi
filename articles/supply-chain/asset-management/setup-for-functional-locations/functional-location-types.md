@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0c44e503900bd157d7f0159cdf2b2d0c1fb3393f
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879218"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015780"
 ---
 # <a name="functional-location-types"></a>Toiminnallisten sijaintien tyypit
 
@@ -57,7 +57,7 @@ Nyt luodaan oletusarvoinen toiminnallinen sijaintityyppi, jota käytetään vain
 7. **Resurssityyppi**-kenttää käytetään, jos haluat luoda toimintosijainnille automaattisesti *yhden* resurssin, jolla on sama tunnus ja nimi kuin luotavalla toiminnallisella sijainnilla. Tämä voi olla tarpeen esimerkiksi, jos luot staattisen funktionaalisen sijainnin, kuten rakennuksen tai putkiston. Valitse tällöin resurssityyppi, jota haluat käyttää automaattisesti luodussa resurssissa. Muista, että jos teet valinnan tässä kentässä, **Useita resursseja** -vaihtoainikkeeksi on määritettävä "Ei".
 8. Valitse **Resurssityypit**-pikavälilehdessä resurssityypit, jotka liittyvät toiminnalliseen sijaintityyppiin. Valitse **Lisää rivi** ja valitse resurssityypit. Jos lisäät resurssityypit tähän, vain näitä resurssityyppejä käyttävät resurssit voidaan asentaa toiminnalliseen sijaintiin käyttämällä tätä toimintosijaintityyppiä. Jos resurssityyppejä ei valita **resurssityypit**-pikavälilehdessä, kaikkia resurssityyppejä voidaan asentaa.
 9. Valitse **Ylläpitosuunnitelmat**-pikavälilehdessä ylläpitosuunnitelmat, jotka määritetään automaattisesti uusille toiminnallisille sijainneille käyttämällä tätä toimintosijaintityyppiä. Valitse **Lisää rivi** ja valitse ylläpitosuunnitelmat. Jos lisäät huoltosuunnitelmia tähän, vain näitä suunnitelmia voidaan käyttää toiminnallisessa sijainnissa, jotka käyttävät tätä toimintosijaintityyppiä.
-10. Määritä **Resurssimääritteiden vaatimukset** -pikavälilehdessä resurssimääritteet, jotka määritetään automaattisesti uusille toiminnallisille sijainneille käyttämällä tätä toimintosijaintityyppiä. Valitse **Lisää rivi** ja valitse määrite. Nämä määritevaatimukset toimivat ohjeina. Niitä ei tarkisteta resurssiin määritettyihin määritteisiin verraten (**Resurssien hallinta** > **Yhteiset** > **Resurssit** > **Kaikki resurssit** > valitse resurssi luettelosivlla > **Yleiset**-välilehti > **Määritteet**-painike). Määriteaatimukset näytetään, kun resursseja asennetaan toiminnallisiin sijainteihin.
+10. Määritä **Resurssimääritteiden vaatimukset** -pikavälilehdessä resurssimääritteet, jotka määritetään automaattisesti uusille toiminnallisille sijainneille käyttämällä tätä toimintosijaintityyppiä. Valitse **Lisää rivi** ja valitse määrite. Nämä määritevaatimukset toimivat ohjeina. Niitä ei tarkisteta resurssiin määritettyihin määritteisiin verraten (**Resurssien hallinta** > **Resurssit** > **Kaikki resurssit**, valitse sitten luettelosivulta resurssi ja valitse sitten **Yleiset**-välilehti > **Määritteet**-painike). Määriteaatimukset näytetään, kun resursseja asennetaan toiminnallisiin sijainteihin.
 11. Valitse **Sallitut tyypit** -pikavälilehdellä toiminnalliset sijaintityypit, joiden pitäisi olla voimassa ylemmän tason toiminnallisen sijainnin tyyppiin liittyvissä toiminnallisissa alisijaintityypeissä, jotka käyttävät valittua toiminnallisen sijainnin tyyppiä.
 12. Valitse **Määritteet**-pikavälilehdessä toiminnallisen sijainnin määritteet, jotka määritetään automaattisesti uusille toiminnallisille sijainneille käyttämällä tätä toimintosijaintityyppiä. Valitse **Lisää rivi** ja valitse määrite.
 

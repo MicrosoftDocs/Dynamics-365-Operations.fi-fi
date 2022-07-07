@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e75ed6e30ece1f4807ff036d831c269774d941a7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 228b76d6f6f0bb048662c8e82df76f51b7cb3652
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670969"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017373"
 ---
 # <a name="cancel-service-orders"></a>Peruuta huoltotilaukset   
 
@@ -36,11 +36,11 @@ Voit peruuttaa huoltotilauksen tai huoltotilausrivin suoraan huoltotilauksesta t
 
 ## <a name="cancel-a-service-order-in-the-service-orders-form"></a>Huoltotilauksen peruuttaminen Huoltotilaukset-lomakkeessa
 
-1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**. Valitse huoltotilaus ja valitse sitten **Peruuta tilaus** toimintoruudusta.
+1.  Valitse **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**. Valitse huoltotilaus ja valitse sitten **Peruuta tilaus** toimintoruudusta.
 
 ## <a name="cancel-a-service-order-line"></a>Huoltotilausrivin peruuttaminen
 
-1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**. Kaksoisnapsauta huoltotilausta, joka sisältää peruutettavan rivin.
+1.  Valitse **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**. Kaksoisnapsauta huoltotilausta, joka sisältää peruutettavan rivin.
 
 2.  Valitse huoltotilausrivi, jonka haluat peruuttaa ja valitse sitten **Peruuta tilausrivi**, niin rivin tilaksi muuttuu **Peruutettu**.
 

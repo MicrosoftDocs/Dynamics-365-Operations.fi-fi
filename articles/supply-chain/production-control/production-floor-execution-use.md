@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860664"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022501"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -263,9 +263,6 @@ Työntekijä kirjaa tauon valitsemalla **Tauko**-vaihtoehdon ja valitsemalla sit
 
 ## <a name="view-the-my-day-dialog"></a>Näytä Päivän tehtävät -valintaikkuna
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 **Päivän tehtävät** -valintaikkunassa on työntekijöille rekisteröintien ja saldojen yhteenveto. Valintaikkuna on jaettu seuraaviin kolmeen osaan:
 
 - Pääosa sisältää nykyisen työntekijän valittuna päivänä tekemät rekisteröinnit. Se avautuu, ja siinä näkyvät kuluvan päivän rekisteröinnit. Siinä näkyy päivämäärän valitsin, jonka avulla työntekijä voi tarkastella muita päiviä.
@@ -275,9 +272,6 @@ Työntekijä kirjaa tauon valitsemalla **Tauko**-vaihtoehdon ja valitsemalla sit
 Järjestelmänvalvojat voivat lisätä tämän ominaisuuden käyttöliittymäin asettamalla **Päivän tehtävät**-painikkeen kunkin asiaankuuluvan välilehden työkaluriviin, kuten on kuvattu kohdassa [Tuotannon käyttöliittymän suunnitteleminen](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>Työskentely ryhmissä
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Kun samaan tuotantotyöhön on liitetty useita työntekijöitä, he voivat muodostaa ryhmän. Tiimi voi nimetä yhden työntekijän vetäjäksi. Jäljellä olevista työntekijöistä tulee tämän jälkeen automaattisesti tämän vetäjän avustajia. Tuloksena olevassa ryhmässä vain vetäjän on rekisteröitävä työn tila. Aikatietueita käytetään kaikille ryhmän jäsenille.
 

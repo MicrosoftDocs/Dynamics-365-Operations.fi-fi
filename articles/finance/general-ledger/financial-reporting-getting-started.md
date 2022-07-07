@@ -2,7 +2,7 @@
 title: Taloushallinnon raportoinnin yleiskatsaus
 description: Tässä artikkelissa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 Financessa ja miten käytät taloudellisen raportoinnin ominaisuuksia.
 author: aprilolson
-ms.date: 03/31/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b09adc738ac36625436e5cc3197e79603fff9b8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853406"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033657"
 ---
 # <a name="get-started-with-financial-reporting"></a>Taloushallinnon raportoinnin aloittaminen 
 
@@ -30,14 +30,17 @@ ms.locfileid: "8853406"
 
 Tässä artikkelissa kerrotaan, miten löydät taloushallinnan raportoinnin ja miten käytät taloushallinnan raportoinnin ominaisuuksia. Se sisältää myös kuvauksen oletusraporteista, jotka toimitetaan.
 
+## <a name="enable-financial-reporting"></a>Taloushallinnon raportoinnin käyttöönotto
+Jotta taloushallinnon raportointipalvelua voidaan käyttää organisaatiossa, Lifecycle Services (LCS) -järjestelmänvalvojan on otettava käyttöön tämä palvelu organisaation LCS-portaalissa. Jos ympäristössä ei ole otettu käyttöön taloushallinnon raportointia, ota yhteyttä LCS-järjestelmänvalvojaan palvelun ottamiseksi käyttöön. 
+
 ## <a name="accessing-financial-reporting"></a>Taloushallinnon raportoinnin käyttäminen
 
 **Talousraportointi**-valikko sijaitsee seuraavissa sijainneissa:
 
-- **Kirjanpito** &gt; **Kyselyt ja raportit**
-- **Budjetointi** &gt; **Kyselyt ja raportit** &gt; **Perusbudjetointi**
-- **Budjetointi** &gt; **Kyselyt ja raportit** &gt; **Budjettisuunnittelu**
-- **Budjetointi** &gt; **Kyselyt ja raportit** &gt; **Budjetin hallinta**
+- **Kirjanpito** > **Kyselyt ja raportit**
+- **Budjetointi** > **Kyselyt ja raportit** > **Perusbudjetointi**
+- **Budjetointi** > **Kyselyt ja raportit** > **Budjettisuunnittelu**
+- **Budjetointi** > **Kyselyt ja raportit** > **Budjetin hallinta**
 - Konsolidoinnit
 
 Yrityksen talousraporttien luontia ja muodostamista varten kyseiselle yrityksen on määritettävä seuraavat tiedot:

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899408"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022561"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -113,9 +113,6 @@ Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttö
 
 ### <a name="enable-the-my-day-dialog"></a>Päivän tehtävät -valintaikkunan ottaminen käyttöön
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 **Päivän tehtävät** -valintaikkunassa työntekijöille on yleiskuvaus päivittäisistä rekisteröinneistä ja palkallisen ajan, palkallisen ylityöajan, poissaolojen ja palkallisen poissaolon nykyisistä saldoista.
 
 Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -124,9 +121,6 @@ Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttö
 
 ### <a name="enable-teams"></a>Ota ryhmät käyttöön
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Kun samaan tuotantotyöhön on liitetty useita työntekijöitä, he voivat muodostaa ryhmän. Tiimi voi nimetä yhden työntekijän vetäjäksi. Jäljellä olevista työntekijöistä tulee tämän jälkeen automaattisesti tämän vetäjän avustajia. Tuloksena olevassa ryhmässä vain vetäjän on rekisteröitävä työn tila. Aikatietueita käytetään kaikille ryhmän jäsenille.
 
 Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -134,9 +128,6 @@ Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttö
 - *Tuotantoryhmät tuotannon käyttöliittymässä*
 
 ### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Ota käyttöön lisämääritys tuotannon käyttöliittymässä
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Tämä ominaisuus lisää seuraavien toimintojen asetukset **Määritä tuotannon suoritus** -sivulle:
 

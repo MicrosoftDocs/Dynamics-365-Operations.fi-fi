@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dfb75d69f20c68a40242bb1c0c25ca77f85e0c14
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 519431d84652e45dcd45aefbbaaa2a0e2afe6349
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852868"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016504"
 ---
 # <a name="maintenance-rounds"></a>Ylläpitokierrokset
 
@@ -87,7 +87,7 @@ Alla oleva kuva osoittaa esimerkin huoltokierroksesta, joka sisältää kolme k�
 
 Kun olet määrittänyt kunnossapitokierroksen, voit ajoittaa kaikki huoltokierrokseen liittyvät työt suorittamalla ajoitustyön.
 
-1. Valitse **Resurssien hallinta** > **Kausittainen** > **Ennalta ehkäisevä ylläpito** > **Ajoita ylläpitokierrokset** tai **Resurssien hallinta** > **Yhteiset** > **Ylläpitoaikataulu** > **Kaikki ylläpitoaikataulut** tai **Avoimet ylläpitoaikataulurivit** tai **Avoimet ylläpitoaikataulupoolit** > valitse ylläpitoaikataulurivi luettelosta > **Ylläpitokierrokset** -painike.
+1. Valitse **Resurssien hallinta** > **Kausittainen** > **Ennalta ehkäisevä ylläpito** > **Ajoita ylläpitokierrokset** tai **Resurssien hallinta** > **Ylläpitoaikataulu** > **Kaikki ylläpitoaikataulut** tai **Avoimet ylläpitoaikataulurivit** tai **Avoimet ylläpitoaikataulupoolit** tai valitse ylläpitoaikatauluriviluettelosta **Ylläpitokierrokset**-painike.
 
 2. Valitse **Kausi**-kentässä kausityyppi, jota käytetään aikataulutuksessa.
 
@@ -102,7 +102,7 @@ Kun olet määrittänyt kunnossapitokierroksen, voit ajoittaa kaikki huoltokierr
 
 6. Valitse **OK**.
 
-7. Näet nyt ylläpitokierroksen työt kohdassa **Resurssien hallinta** > **Yhteiset** > **Ylläpitoaikataulu** > **Kaikki ylläpitoaikataulut** tai **Avoimet ylläpitoaikataulurivit**. Jos ajoitetut kierrokset on liitetty työtilauspooliin, huoltoaikataulurivit näkyvät myös kohdassa **Avoimet ylläpitoaikataulupoolit**. Kierroksesta luoduilla ylläpitoaikatauluriveillä on viitetyyppi "Ylläpitokierrokset".
+7. Näet nyt ylläpitokierroksen työt kohdassa **Resurssien hallinta** > **Ylläpitoaikataulu** > **Kaikki ylläpitoaikataulut** tai **Avoimet ylläpitoaikataulurivit**. Jos ajoitetut kierrokset on liitetty työtilauspooliin, huoltoaikataulurivit näkyvät myös kohdassa **Avoimet ylläpitoaikataulupoolit**. Kierroksesta luoduilla ylläpitoaikatauluriveillä on viitetyyppi "Ylläpitokierrokset".
 
 Alla olevat kaksi kuvitusta näyttävät työn aikataulutuksen **Ajoita ylläpitokierroksia** -valintaikkunassa ja huoltoaikataulu rivit, jotka on luotu **Kaikki ylläpitoaikataulut** -kohdassa kyseisen ajoitustyön perusteella.
 

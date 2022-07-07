@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90b41b57dfa6db8b5874bbc2d4bcac7b4c634f20
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5ab715be3bfdc380f5736fadd901af3ed78d7035
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860925"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016301"
 ---
 # <a name="create-an-asset"></a>Luo resurssi
 
@@ -30,7 +30,7 @@ ms.locfileid: "8860925"
 
 Tässä artikkelissa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
 
-1. Valitse **Resurssien hallinta** > **Yhteiset** > **resurssit** > **Kaikki resurssi** tai **Aktiiviset resurssit**.
+1. Valitse **Resurssien hallinta** > **Resurssit** > **Kaikki resurssi** tai **Aktiiviset resurssit**.
 2. Valitse **Uusi**-painike.
 3. Lisää **Luo resursseja** -valintaikkunaan tiedot koskien **resurssia** (resurssin tunnus) ja resurssin nimeä. Valitse resurssille päivämäärä ja aika **Voimassa**-kentässä. Kyseisestä päivästä eteenpäin voit asentaa resurssin toiminnalliseen sijaintipaikkaan sekä siirtää ja korvata resurssin resurssirakenteessa.
 4. Valitse **resurssityyppi** -kentässä resurssin tyyppi (pakollinen kenttä). Valitse tarvittaessa **resurssin valmistaja** ja **resurssin malli**. Jos vain yksi tuote on määritetty, kyseinen tuote valitaan automaattisesti **resurssin valmistaja** -kentässä. **Resurssin valmistaja**- ja **Resurssin malli** -kentissä käytettävissä olevat valinnat määräytyvät [resurssin valmistajien ja mallien](../setup-for-objects/product-and-model.md) asetusten mukaan.

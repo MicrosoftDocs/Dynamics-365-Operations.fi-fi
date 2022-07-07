@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e09419f802b696179901c394b2b95c9208a12b26
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8f0469d7a3ada0dc30977978a7e9c616e8cf9781
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678287"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017402"
 ---
 # <a name="cancel-a-return-order"></a>Palautustilauksen peruuttaminen 
 
@@ -34,11 +34,11 @@ Poistamisen sijaan voit peruuttaa palautustilauksen, kun haluat tallentaa tiedot
 > <P>Vain palautustilaukset, joiden tilana on <STRONG>Luotu</STRONG>, voidaan peruuttaa. Palautustilauksia, joiden tilana on <STRONG>Avoin</STRONG> tai <STRONG>Suljettu</STRONG>, ei voi peruuttaa.</P>
 
 
-1.  Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Palautustilaukset** \> **Kaikki palautustilaukset**.
+1.  Valitse **Myynti ja markkinointi** \> **Myyntipalautukset** \> **Kaikki palautustilaukset**.
     
     –TAI–
     
-    Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Palautustilaukset** \> **Luodut palautustilaukset**.
+    Valitse **Myynti ja markkinointi** \> **Myyntipalautukset** \> **Luodut palautustilaukset**.
 
 2.  Valitse peruutettava tilaus.
 

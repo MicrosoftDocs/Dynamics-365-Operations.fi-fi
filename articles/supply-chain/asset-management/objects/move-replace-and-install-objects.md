@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0a6b5a2904d21782ae422d06eaaf03c5d5e51ab9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872121"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015576"
 ---
 # <a name="move-replace-and-install-assets"></a>Resurssien siirtäminen, korvaaminen ja asentaminen
 
@@ -44,7 +44,7 @@ Käytä **Siirrä resurssi** -toimintoa siirtääksesi resurssin joko toiseen re
 > [!NOTE]
 > Älä käytä tätä toimintoa, jos resursseja korjataan tai vaihdetaan väliaikaisesti. Käytä sen sijaan **Korvaa resurssi** -toimintoa, joka on kuvattu myöhemmin tässä artikkelissa.
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
+1. Valitse **Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
 2. Valitse luettelosta siirrettävä resurssi. Jos resurssilla on aliresursseja, siirrät myös kyseiset resurssit.
 3. Valitse **Siirrä resurssi**.
 4. Jos haluat siirtää resurssin siten, että siitä tulee osa resurssirakennetta, valitse uusi pääresurssi **Pääresurssi**-kentässä. Jos siirrät alatason resurssin ja haluat tehdä siitä erillisen resurssin, jolla ei ole rakennesuhteita, jätä **Pääresurssi**-kenttä tyhjäksi.
@@ -58,7 +58,7 @@ Käytä **Korvaa resurssi** -toimintoa resurssin korjausten, kunnostuksen tai ku
 > [!NOTE]
 > Jos korjausosasto liittyy tuotanto-osastoosi, voit luoda toiminnallisia sijainteja, kuten **Korjaus**, **Hävikki** ja **Varastointi**, jotta voidaan käsitellä resurssien korjausta ja korvaamista.
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
+1. Valitse **Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
 2. Valitse luettelosta korvattava aliresurssi. Jos resurssilla on aliresursseja, korvaat myös kyseiset resurssit.
 3. Valitse **Korvaa resurssi**.
 
@@ -79,7 +79,7 @@ Käytä **Asenna resurssi** -toimintoa resurssirakenteen asentamiseen toiminnall
 > [!NOTE]
 > Valitse aina pääresurssi. Pääresurssi ja siihen liittyvät aliresurssit siirretään valittuun toiminnalliseen sijaintiin.
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
+1. Valitse **Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
 2. Valitse luettelosta pääresurssi, joka asennetaan toiseen toiminnalliseen sijaintiin.
 3. Valitse **Asenna resurssi**.
 

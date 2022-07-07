@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75e30c8b2d74cc2f1ca538b64e5fc801f9ca130a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42e8ba4e19333cb25464203a2583175ef082ad98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897687"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016475"
 ---
 # <a name="maintenance-downtime-activities"></a>Ylläpidon käyttökatkon tehtävät
 
@@ -38,14 +38,14 @@ Kun kunnossapitoseisokkirekisteröinnissä on valittu käyttöomaisuudet, kaikki
 
 ## <a name="maintenance-downtime-activities"></a>Ylläpidon käyttökatkon tehtävät
 
-Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin toimintoihin liittyviä tietoja valitsemalla **Resurssien hallinta** > **Yhteiset** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot**. Avaa tietonäkymä napsauttamalla **Ylläpidon käyttökatkojen toiminnot** -sarakkeen linkkiä. Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -luettelosta.
+Voit avata kaikkien huoltoseisokkitehtävien luettelon ja tarkastella joitakin toimintoihin liittyviä tietoja valitsemalla **Resurssien hallinta** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot**. Avaa tietonäkymä napsauttamalla **Ylläpidon käyttökatkojen toiminnot** -sarakkeen linkkiä. Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -luettelosta.
 
 ![Kuva 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Kunnossapitoseisokkien toiminnon luominen
 
-1. Valitse **Resurssien hallinta** > **Yhteiset** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot** tai **Aktiiviset ylläpidon käyttökatkojen toiminnot**.
+1. Valitse **Resurssien hallinta** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot** tai **Aktiiviset ylläpidon käyttökatkojen toiminnot**.
 
 2. Valitse **Uusi**.
 

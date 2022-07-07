@@ -2,7 +2,7 @@
 title: EU:n arvonlisäveron yhteenvetoilmoitus
 description: Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 8dfd3fafdfc011973b169516cd4e2d239751e96d
+ms.sourcegitcommit: f5b156f2e5ca99ad05b3d6e4a5d118631fd3064e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323473"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012497"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-myyntiluettelon raportointi
 
@@ -150,7 +150,7 @@ Seuraavanlaisia tapahtumatyyppejä voidaan pitää EU:n sisäisinä myyntitapaht
 -   Projektin laskut
 -   Toimittajan laskut
 
-Tapahtumaa pidetään EU:n sisäisenä myyntitapahtumana, jos tapahtuman toimitusosoite on EU:n jäsenmaassa. Tällaisille maille/alueille tulee olla tietue **Ulkomaankaupan parametrit** -sivun **Maa/alue** -välilehdellä, ja **Maa/alue** -arvo tulee asettaa arvoksi **EU**. EU:n sisäiset myyntitapahtumat merkitään **Luettelokoodi**-kenttään. Tämän kentän avulla voit myös erotella yleiset EU:n sisäiset myyntitapahtumat kolmikantakauppatapahtumista. Voit kerätä tietoja EU:n sisäisistä myyntitapahtumista **EU-myyntiluettelo**-sivulta (valitse **Vero** &gt; **Ilmoitukset** &gt; **Ulkomaankauppa** &gt; **EU-myyntiluettelo**) käyttämällä **Siirrä**-toimintoa. Tämän toiminnon avulla voit sisällyttää tapahtumat, joilla on eri raportointityypin summia (kuten nimikkeitä tai palveluita) tapahtumariveillä määritellyn nimikkeen alv-ryhmän perusteella. Voit myös käyttää muita suodattimia määritelläksesi, mitkä tapahtumat tulee sisällyttää. **Siirrä**-toiminto luo tietueen **EU-myyntiluettelo**-sivulle kutakin sisällytettyä EU:n sisäistä myyntitapahtumaa kohti, ja määrittää vastapuolen tilinumeron, maan/alueen, verovapausnumeron, laskun numeron ja päivämäärän, sekä rivien raportointityyppikohtaisen kokonaismäärän. Se myös kopioi **Luettelokoodi**-arvon tapahtumasta. Voit muuttaa tapahtuman luettelokoodin manuaalisesti **EU-myyntiluettelo**-sivulla. **Siirrä**-toiminto luo tietueita, joissa **Raportoinnin tila** -arvo on asetettu arvoksi **Sisällytetty**. Voit vahvistaa **EU-myyntiluettelo**-sivulle kerätyt tiedot käyttämällä **Vahvista**-toimintoa.
+Tapahtumaa pidetään EU:n sisäisenä myyntitapahtumana, jos tapahtuman toimitusosoite on EU:n jäsenmaassa. Tällaisille maille/alueille tulee olla tietue **Ulkomaankaupan parametrit** -sivun **Maa/alue** -välilehdellä, ja **Maa/alue** -arvo tulee asettaa arvoksi **EU**. EU:n sisäiset myyntitapahtumat merkitään **Luettelokoodi**-kenttään. Tämän kentän avulla voit myös erotella yleiset EU:n sisäiset myyntitapahtumat kolmikantakauppatapahtumista. Voit kerätä tietoja EU:n sisäisistä myyntitapahtumista **EU-myyntiluettelo**-sivulta (valitse **Vero** &gt; **Ilmoitukset** &gt; **Ulkomaankauppa** &gt; **EU-myyntiluettelo**) käyttämällä **Siirrä**-toimintoa. Tämän toiminnon avulla voit sisällyttää tapahtumat, joilla on eri raportointityypin summia (kuten nimikkeitä tai palveluita) tapahtumariveillä määritellyn nimikkeen alv-ryhmän perusteella. Voit myös käyttää muita suodattimia määritelläksesi, mitkä tapahtumat tulee sisällyttää. **Siirrä**-toiminto luo tietueen **EU-myyntiluettelo**-sivulle kutakin sisällytettyä EU:n sisäistä myyntitapahtumaa kohti, ja määrittää vastapuolen tilinumeron, maan/alueen, verovapausnumeron, laskun numeron ja päivämäärän, sekä rivien raportointityyppikohtaisen kokonaismäärän. Se myös kopioi **Luettelokoodi**-arvon tapahtumasta. Voit muuttaa tapahtuman luettelokoodin manuaalisesti **EU-myyntiluettelo**-sivulla. **Siirrä**-toiminto luo tietueita, joissa **Raportoinnin tila** -arvo on asetettu arvoksi **Sisällytetty**. Voit vahvistaa **EU-myyntiluettelo**-sivulle kerätyt tiedot käyttämällä **Vahvista**-toimintoa. Saat yksityiskohtaisia tietoja laskusta (myynnin suuntaa varten) käyttämällä **Yhteensä**-toimintoa.
 
 ### <a name="generating-the-eu-sales-list-report"></a>EU:n arvonlisäveron yhteenvetoilmoituksen luominen
 
@@ -160,8 +160,26 @@ Voit luoda **EU:n arvonlisäveron yhteenvetoilmoituksen** käyttämällä **Rapo
 
 Saatettuasi tietyn kauden raportointiprosessin päätökseen (esimerkiksi, kun veroviranomaiset ovat hyväksyneet **EU:n arvonlisäveron yhteenvetoilmoituksen**), voit merkitä raporttiin sisältyneet kauden ESL-tietueet asettamalla **Raportoinnin tila** -arvoksi **Suljettu**. Aseta tämä tila käyttämällä **Merkitse suljetuksi**-toimintoa **EU-myyntiluettelo**-sivulla. Jos palautat kauden sulkemisen, voit merkitä ESL-tietueet asettamalla **Raportoinnin tilan** arvoksi **Sisällytetty**. Nämä tietueet voidaan sitten sisällyttää uudelleen **EU:n arvonlisäveron yhteenvetoilmoituksella**. Aseta tämä tila käyttämällä **Merkitse** **sisällytetyksi**-toimintoa **EU-myyntiluettelo**-sivulla.
 
+## <a name="list-of-country-specific-topics"></a>Luettelo maakohtaisista aiheista
 
-
+| Maa tai alue          | Linkitä      |
+|------------------|-----------|
+| Itävalta          | [Itävallan EU-myyntiluettelo](emea-aut-eu-sales-list.md)| 
+| Belgia          |[Belgian EU-myyntiluettelo](emea-bel-eu-sales-list.md)|
+| Tšekin tasavalta          |[Tšekin tasavallan EU-myyntiluettelo](emea-cze-eu-sales-list.md)|
+| Tanska          |[Tanskan EU-myyntiluettelo](emea-dnk-eu-sales-list.md)|
+| Viro          |[Viron EU-myyntiluettelo](emea-est-eu-sales-list.md)|
+| Suomi          |[Suomen EU-myyntiluettelo](emea-fin-eu-sales-list.md)|
+| Ranska          |[Ranskan EU-myyntiluettelo](emea-fra-eu-sales-list.md)|
+| Saksa          |[Saksan EU-myyntiluettelo](emea-deu-eu-sales-list.md)|
+| Unkari          |[Unkarin EU-myyntiluettelo](emea-hun-eu-sales-list.md)|
+| Latvia          |[Latvian EU-myyntiluettelo](emea-lva-eu-sales-list.md)|
+| Liettua          |[Liettuan EU-myyntiluettelo](emea-ltu-eu-sales-list.md)|
+| Alankomaat          |[Alankomaiden EU-myyntiluettelo](emea-nl-eu-sales-list.md)|
+| Puola          |[Puolan EU-myyntiluettelo](emea-pol-eu-sales-list.md)|
+| Espanja          |[Espanjan EU-myyntiluettelo (raportti 349)](emea-esp-sales-list.md)|
+| Ruotsi          |[Ruotsin EU-myyntiluettelo](emea-swe-eu-sales-list.md)|
+| Yhdistynyt kuningaskunta (Pohjois-Irlanti)          |[Yhdistyneen kuningaskunnan (Pohjois-Irlannin) EU-myyntiluettelo](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

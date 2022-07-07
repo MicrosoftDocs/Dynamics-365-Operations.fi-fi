@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6fc97c8a65afe24bfe730e6d13eb178ddcafc2d9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc9eaf82c2f3336f8c3400fcd3f1165ed4fa56d8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849558"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014936"
 ---
 # <a name="work-order-pools"></a>Työtilauspoolit
 
@@ -44,7 +44,7 @@ Tarvittaessa voit laittaa yhden työtilauksen useaan työtilauspooliin.
 
 Luettelosivulla **Kaikki työtilauspoolit** tai **Aktiiviset työtilauspoolit** saat yleiskuvan työtilauspooleista ja voit luoda uusia pooleja.
 
-1. Valitse **Resurssien hallinta** > **yhteiset** > **Työtilauspoolit** > **Kaikki työtilauspoolit** tai **Aktiiviset työtilauspoolit**.
+1. Valitse **Resurssien hallinta** > **Työtilauspoolit** > **Kaikki työtilauspoolit** tai **Aktiiviset työtilauspoolit**.
 
 2. Valitse **Uusi**.
 

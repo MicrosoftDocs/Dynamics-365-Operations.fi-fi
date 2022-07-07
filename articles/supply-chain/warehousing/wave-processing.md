@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851272"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014616"
 ---
 # <a name="wave-creation-and-processing"></a>Aaltojen luominen ja käsittely
 
@@ -60,9 +60,9 @@ Luo aalto manuaalisesti seuraavien ohjeiden avulla:
 1. Varmista, että asiaankuuluvia [aaltomalleja](wave-templates.md) ei ole määritetty automaattisesti luomaan varastolle ja tilaustyypille aaltoa, kun haluat tehdä sen manuaalisesti.
 1. Napsauta yhtä seuraavista riippuen luotavan aallon tyypistä:
 
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
+    - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
+    - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
+    - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
 
 1. Kirjoita **Kuvaus**-kenttään aallon lyhyt kuvaus. Tästä tulisi käydä ilmi, mitä aallossa käsitellään.
 
@@ -87,9 +87,9 @@ Kun aalto on luotu, mutta sitä ei ole vielä vapautettu, voit määrittää man
 
 1. Suorita jokin seuraavista riippuen aallon tyypistä, johon rivit lisätään:
 
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
+    - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
+    - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
+    - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
 
 1. Valitse aalto. Valitse toimintoruudussa yksi seuraavista:
 
@@ -121,9 +121,9 @@ Jos haluat manuaalisesti käsitellä aallon, jossa on kaikki sen edellyttämät 
 
 1. Tee jokin seuraavista riippuen käsiteltävän aallon tyypistä:
 
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
-    - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
+    - Valitse **Varastonhallinta** \> **Lähtevät aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
+    - Valitse **Varastonhallinta** \> **Lähtevät aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
+    - Valitse **Varastonhallinta** \> **Lähtevät aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
 
 1. Valitse aalto, jonka haluat käsitellä. Valitse toimintoruudussa **Käsittely**.
 
@@ -141,9 +141,9 @@ Vapauta aalto manauaalisesti seuraavien ohjeiden avulla:
 
 1. Tee jokin seuraavista riippuen vapautettavan aallon tyypistä:
 
-      - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
-      - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
-      - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
+      - Valitse **Varastonhallinta** \> **Lähtevät aallot** \> **Lähetysaallot** \> **Kaikki aallot**. Valitse toimintoruudussa **Aalto**.
+      - Valitse **Varastonhallinta** \> **Lähtevät aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**. Valitse toimintoruudussa **Tuotantoaalto**.
+      - Valitse **Varastonhallinta** \> **Lähtevät aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**. Valitse toimintoruudussa **Luo aalto**.
 
 1. Valitse aalto, jonka haluat vapauttaa. Valitse toimintoruudussa **Vapauta aalto**.
 
@@ -179,9 +179,9 @@ Tarvittaessa voit peruuttaa aallon, joka on käsitelty. Voit peruuttaa aallon ja
 
 1. Tee jokin seuraavista riippuen peruutettavan aallon tyypistä:
 
-      - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Lähetysaallot** \> **Kaikki aallot**.
-      - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**.
-      - Valitse **Varastonhallinta** \> **Yhteiset** \> **Aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**.
+      - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Lähetysaallot** \> **Kaikki aallot**.
+      - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Tuotantoaallot** \> **Kaikki tuotantoaallot**.
+      - Siirry kohtaan **Varastonhallinta** \> **Lähtevät aallot** \> **Kanban-aallot** \> **Kaikki kanban-aallot**.
 
 1. Valitse aalto, jonka haluat peruuttaa. Valitse toimintoruudun **Työ**-välilehdessä **Peruuta**.
 

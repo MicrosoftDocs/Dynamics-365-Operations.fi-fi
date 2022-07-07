@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a94b366dc725db3af01c156ae517a241213f7d52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882834"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016040"
 ---
 # <a name="introduction-to-functional-locations"></a>Toiminnallisten sijaintien esittely
 
@@ -59,7 +59,7 @@ Kun olet luonut toiminnallisen sijainnin hierarkian, seuraava vaihe on asentaa r
 
 ## <a name="all-functional-locations"></a>Kaikki toiminnalliset sijainnit
 
-Valitse **resurssien hallinta** \> **Yhteiset** \> **Toiminnalliset sijainnit** \> **Kaikki toiminnalliset sijainnit** avataksesi **Kaikki toiminnalliset sijainnit** -luettelosivun. Tällä sivulla näkyvät kaikki toiminnalliset sijainnit ja jotkin kuhunkin liittyvät tiedot. Jos haluat tarkastella vain aktiivisia toiminnallisia sijainteja , valitse **Aktiiviset toiminnalliset sijainnit**. Jos haluat tarkastella vain toiminnallisia sijainteja, joihin olet yhteydessä työntekijänä, valitse **Omat aktiiviset toiminnalliset sijainnit**. (Tämä suhde määritetään **Työntekijät**-sivulla. Lisätietoja on kohdassa [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md).)
+Valitse **Resurssien hallinta** \> **Toiminnalliset sijainnit** \> **Kaikki toiminnalliset sijainnit**, jos haluat avata **Kaikki toiminnalliset sijainnit** -luettelosivun. Tällä sivulla näkyvät kaikki toiminnalliset sijainnit ja jotkin kuhunkin liittyvät tiedot. Jos haluat tarkastella vain aktiivisia toiminnallisia sijainteja , valitse **Aktiiviset toiminnalliset sijainnit**. Jos haluat tarkastella vain toiminnallisia sijainteja, joihin olet yhteydessä työntekijänä, valitse **Omat aktiiviset toiminnalliset sijainnit**. (Tämä suhde määritetään **Työntekijät**-sivulla. Lisätietoja on kohdassa [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md).)
 
 Valitse **Kaikki toiminnalliset sijainnit**-luettelosivulla **Toiminnallinen sijainti** -sarakkeesta linkki, jos haluat tarkastella valitun tietueen tietoja. Muokkaa toiminnallista sijaintia valitsemalla **Muokkaa**-painike. Tiedot-näkymässä näkyvät sijaintiin liittyvät yksityiskohtaiset tiedot. Se sisältää myös oikealla olevan **Aiheeseen liittyvät tiedot** -ruudun. Tässä ruudussa näkyy toiminnallisen sijainnin hierarkia. Voit laajentaa ja tiivistää **Aiheeseen liittyvät tiedot** -ruudun.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874185"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016011"
 ---
 # <a name="introduction-to-assets"></a>Resurssien esittely
 
@@ -36,7 +36,7 @@ Resurssiiin päivitetään automaattisesti ja siihen liittyvät tiedot. Nämä l
 
 ## <a name="all-assets"></a>Kaikki käyttöomaisuus
 
-Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit**. **Kaikki resurssit** -luettelosivulla näkyvät kaikki resurssit ja niihin liittyvät tiedot. Jos haluat tarkastella vain aktiivisia resursseja, valitse **Aktiiviset resurssit**. Jos haluat tarkastella vain toiminnallisiin sijainteihin asennettuja resursseja, joihin olet yhteydessä ylläpitotyöntekijänä, valitse **Omat aktiiviset resurssit**. (Tämä suhde määritetään **Työntekijät**-sivulla. Lisätietoja on kohdassa [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md).)
+Valitse **Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit**. **Kaikki resurssit** -luettelosivulla näkyvät kaikki resurssit ja niihin liittyvät tiedot. Jos haluat tarkastella vain aktiivisia resursseja, valitse **Aktiiviset resurssit**. Jos haluat tarkastella vain toiminnallisiin sijainteihin asennettuja resursseja, joihin olet yhteydessä ylläpitotyöntekijänä, valitse **Omat aktiiviset resurssit**. (Tämä suhde määritetään **Työntekijät**-sivulla. Lisätietoja on kohdassa [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md).)
 
 Valitse **Kaikki resurssit**-ruudukkonäkymässä **Resurssi**-sarakkeesta linkki, jos haluat tarkastella valitun tietueen tietoja. Muokkaa tietuetta valitsemalla **Muokkaa**-painike. Tiedot-näkymässä näkyvät resurssiin liittyvät yksityiskohtaiset tiedot. Oikeanpuoleinen **Aiheeseen liittyvät tiedot** -ruutu sisältää muita resurssiin liittyviä tietoja. Laajenna ruutu, jos haluat näyttää valitun resurssin liittyvät tiedot.
 

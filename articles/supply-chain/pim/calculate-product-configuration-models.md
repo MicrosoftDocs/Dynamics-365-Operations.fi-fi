@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 593f6a8e28c789a378515ddc8e4163c331442e8b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4424ebbf64ccdcb9bffc840520952ac915606209
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890941"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015490"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Tuotemääritysmallien laskelmat – usein kysytyt kysymykset
 
@@ -73,7 +73,7 @@ Voit korvata arvon, joka lasketaan kohteen määritteelle, ellei kohteen määri
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Kohdemääritteen määrittäminen piilotetuksi tai vain luettavaksi?
 Aseta määrite piilotetuksi tai vain luku -tilaan noudattamalla seuraavia ohjeita.
 
-1.  Napsauta **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Tuotekonfiguraation mallit**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Tuotekonfiguraation mallit**.
 2.  Valitse tuotemallin konfiguraatio ja napsauta toimintoruudulta **Muokkaa**-toimintoa.
 3.  Valitse kohdemääritteenä käytettävä määrite **Rajoituspohjaisen tuotemääritysmallin tiedot** -sivulla.
 4.  Valitse **Määritteet** -pikavälilehdeltä **Piilotettu** tai **Vain luku-**.
@@ -96,7 +96,7 @@ Tämä sanoma tulee näkyviin, kun laskelma sisältää virheen tai vähintään
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Miksi näyttöön tulee virhesanoma, vaikka tuotemallini on vahvistettu onnistuneesti?
 Oikeellisuustarkistukseen ei sisällytetä laskentaa. Sinun on testattava tuotemääritysmalli laskelmien virheiden löytämiseksi. Seuraavat vaiheet kuvaavat tuotekonfiguraatiomallin testaamisen.
 
-1.  Napsauta **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Tuotekonfiguraation mallit**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Tuotekonfiguraation mallit**.
 2.  Valitse tuotemallin konfiguraatio ja napsauta toimintoruudun **Suorita**-ryhmästä **Testi**-toimintoa.
 
 

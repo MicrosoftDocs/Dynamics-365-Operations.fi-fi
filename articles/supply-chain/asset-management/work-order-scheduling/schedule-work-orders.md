@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6592b94105777525c777950132d5099d1e8abb0e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845051"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016736"
 ---
 # <a name="schedule-work-orders"></a>Ajoita työtilauksia
 
@@ -30,11 +30,11 @@ ms.locfileid: "8845051"
 
 Tässä artikkelissa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa. 
 
-Työtilauksen vaadittu tuntimäärä määritetään ennustettujen tuntien summana vähennettynä kirjattujen tuntien määrällä. Jos aikaa tarvitaan enemmän, ennustetta on muutettava vastaavasti. Kohdassa **Resurssien hallinta** > **yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset** voit tarkastella tai muokata työtilauksen ennusteita valitsemalla työtilauksen ja valitsemalla **Ennuste** **Työtilaus**-välilehdessä. Kun työtilaukset on luotu ja arvioitu, seuraavaksi on kohdistettava tarvittavat kunnossapitotyöntekijät ja työkalut työtilausten suorittamista varten.
+Työtilauksen vaadittu tuntimäärä määritetään ennustettujen tuntien summana vähennettynä kirjattujen tuntien määrällä. Jos aikaa tarvitaan enemmän, ennustetta on muutettava vastaavasti. Kohdassa **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset** voit tarkastella tai muokata työtilauksen ennusteita valitsemalla **Ennuste**-kohdan **Työtilaus**-välilehdessä. Kun työtilaukset on luotu ja arvioitu, seuraavaksi on kohdistettava tarvittavat kunnossapitotyöntekijät ja työkalut työtilausten suorittamista varten.
 
 Voidaan ajoittaa vain työtilaukset, joissa on työtilauksen elinkaaritila, joka sallii ajoituksen. Ajoitus sallitaan kohdan **Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Elinkaaren tilat** > **Yleiset** -pikavälilehti > **Salli ajoitus** -valitsin.
 
-1. Valitse **Resurssien hallinta** > **yhteiset** > **työtilaukset** > **kaikki työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset**.
 
 2. Valitse luettelosta työtilaukset, jotka haluat ajoittaa. Voit esimerkiksi lajitella luettelon **Nykyinen elinkaaren tila** -kentän mukaan.
 

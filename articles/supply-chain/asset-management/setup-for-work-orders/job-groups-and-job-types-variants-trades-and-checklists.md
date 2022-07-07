@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d4385fdd3e94d48a65baf195efa1d687fbf95c3
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887599"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016765"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Ylläpitotyön tyypit, luokat, muuttujat, kauppa- ja tarkistusluettelot
 
@@ -243,7 +243,7 @@ Voit määrittää erätyön päivittämään kunnossapitotyön tyypin oletusvii
 
 Kun olet luonut tarvittavat ylläpitotyötyypin oletusyhdistelmät, voit käyttää **Kaikki resurssit** -sivua ja tarkastella nykyisen kunnossapitotyön tyypin oletusarvoa, joka liittyy tiettyyn käyttöomaisuuserään. Yhteenvedossa näkyvät kaikki kunnossapitotyön tyypin oletusyhdistelmät, joita voidaan käyttää käyttöomaisuuserän tyypille. Nämä yhdistelmät sisältävät yhdistelmiä, joissa on kunnossapitotöiden tyypin variantteja ja kunnossapitotöiden toimialoja.
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
+1. Valitse **Resurssien hallinta** \> **Resurssit** \> **Kaikki resurssit** tai **Aktiiviset resurssit**.
 2. Valitse luettelosta käyttöomaisuuserä, jonka kunnossapitotöiden tyyppiyhdistelmät haluat nähdä.
 3. Valitse toimintoruudun **Yleiset**-välilehden **Aiheeseen liittyvät tiedot**-ryhmästä **Ylläpitotyön tyypit**.
 

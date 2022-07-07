@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893639"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014949"
 ---
 # <a name="procurement"></a>Hankinta
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893639"
 
 Resurssienhallinnassa voit saada yleiskatsauksen työtilauksiin liittyvistä ostoehdotuksista ja ostotilauksista. Voit myös luoda työtilauksesta ostotilauksen tai ostoehdotuksen.
 
-**Työtilauksen ostoehdotus** -luettelosivulla (**Resurssien hallinta** > **Yhteiset** > **Hankinta** > **Työtilauksen ostoehdotus**), näkyy luettelo työtilauksiin liittyvistä ostoehdotuksista. Kun valitset työtilaustehtävän tällä sivulla, voit käyttää **Näytä**-ryhmän painikkeita toimintoruudun **Työtilauksen ostoehdotus** -välilehdessä suorittaaksesi erilaisia toimintoja:
+**Työtilauksen ostoehdotus** -luettelosivulla (**Resurssien hallinta** > **Hankinta** > **Työtilauksen ostoehdotus**) näkyy luettelo työtilauksiin liittyvistä ostoehdotuksista. Kun valitset työtilaustehtävän tällä sivulla, voit käyttää **Näytä**-ryhmän painikkeita toimintoruudun **Työtilauksen ostoehdotus** -välilehdessä suorittaaksesi erilaisia toimintoja:
 
 - Avaa liittyvä ostoehdotus valitsemalla **Ostoehdotus**. 
 - Avaa liittyvä työtilaus valitsemalla **Työtilaus**.
@@ -39,7 +39,7 @@ Seuraavassa kuvassa on esimerkki **Työtilauksen ostoehdotus** -luettelosivusta.
 ![Kuva 1.](media/08-work-orders.png)
 
 
-**Työtilauksen osto** -luettelosivulla (**Resurssien hallinta** > **Yhteiset** > **Hankinta** > **Työtilauksen osto**), näkyy luettelo työtilauksiin liittyvistä ostotilauksista. Kun valitset työtilaustehtävän tällä sivulla, voit käyttää **Näytä**-ryhmän painikkeita toimintoruudun **Työtilauksen osto** -välilehdessä suorittaaksesi erilaisia toimintoja:
+**Työtilauksen osto** -luettelosivulla (**Resurssien hallinta** > **Hankinta** > **Työtilauksen osto**) näkyy luettelo työtilauksiin liittyvistä ostotilauksista. Kun valitset työtilaustehtävän tällä sivulla, voit käyttää **Näytä**-ryhmän painikkeita toimintoruudun **Työtilauksen osto** -välilehdessä suorittaaksesi erilaisia toimintoja:
 
 - Avaa liittyvä ostotilaus valitsemalla **Ostotilaus**. 
 - Avaa liittyvä työtilaus valitsemalla **Työtilaus**.
@@ -69,7 +69,7 @@ Kaikissa ostoehdotuksessa mahdollisen viivästyksen laskemiseen käytetään **O
 
 **Kaikki työtilaukset** -luettelosivulla voit valita työtilaustehtävän ja sitten luoda siihen liittyvän ostotilauksen tai ostoehdotuksen. Näin autat varmistamaan, että ostotilauksen tai ostoehdotuksen ja työtilauksen välillä on projektisuhteita.
 
-1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 2. Valitse työtilaus, jolle tehdään ostotilaus, ja sitten **Muokkaa**.
 

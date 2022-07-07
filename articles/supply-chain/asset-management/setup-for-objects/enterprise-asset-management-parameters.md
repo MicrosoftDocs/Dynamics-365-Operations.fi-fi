@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 750776412ce9d87389a635ef108a34cffe12b68b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870808"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015809"
 ---
 # <a name="asset-management-parameters"></a>Resurssienhallinnan parametrit
 
@@ -37,7 +37,7 @@ Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työt
 
 - **Oletusarvoinen toiminnallinen sijainti** on toiminnallinen vakuisijainti, joka valitaan automaattisesti resursseille, kun luot uusia resursseja.  
 - Valitse **Vakiokalenteri**-kentässä kalenteri, jota käytetään resurssin suorituskykyilmaisien laskemiseen, jos resurssille ei ole valittu resurssia.  
-- Valitse **Näytä**-kentässä vakionäkymä, joka näytetään, kun avaat **resurssinäkymän** (**Resurssien hallinta** > **Yleinen** > **Resurssit** > **Resurssinäkymä**).
+- Valitse **Näytä**-kentässä vakionäkymä, joka näytetään, kun avaat **resurssinäkymän** (**Resurssien hallinta** > **Resurssit** > **Resurssinäkymä**).
 - **Oletuspyyntötyyppi** on huoltopyynnön vakiotyyppi, joka valitaan automaattisesti, kun luot uuden pyynnön.  
 - Työtyyppien ennusteet tallennetaan **Ennusteprojekti**-kentässä valittuun projektiin. Jokaiselle työtyypille luodaan automaattisesti uusi aktiviteetti ennusteprojektiin. Työtyypin ennusteet tallennetaan ennusteprojektiin.  
 - Valitse **Malli**-kentässä projektityypissä ja työtilausennusteissa käytettävä ennustemalli.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1db12600aa47f537da6918c82ef3164c2123a8ac
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 2b90618d5d283b16ac8374f3b8b2df48611ba270
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670801"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014660"
 ---
 # <a name="service-level-agreements-overview"></a>Palvelutasosopimukset – yleiskatsaus       
 
@@ -50,7 +50,7 @@ Automaattisesti luotavia huoltotilauksia ei liitetä palvelutasosopimukseen.
 
 ## <a name="apply-the-service-level-agreement-to-the-service-agreement"></a>Palvelutasosopimuksen kohdistaminen huoltosopimukseen
 
-1.  Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**. Valitse huoltosopimus, jota haluat käyttää palvelutasosopimuksessa, ja valitse sitten **Muokkaa** **toimintoruudussa**.
+1.  Valitse **Palvelujen hallinta** \> **Huoltosopimukset** \> **Huoltosopimukset**. Valitse huoltosopimus, jota haluat käyttää palvelutasosopimuksessa, ja valitse sitten **Muokkaa** **toimintoruudussa**.
 
 2.  Valitse **Palvelutasosopimus**-kentässä palvelutasosopimus, joka liitetään.
 

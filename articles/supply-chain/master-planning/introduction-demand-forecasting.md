@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7a69cbca6e6f32812ea00a63751c931a8477991
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
+ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469251"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "8960171"
 ---
 # <a name="demand-forecasting-overview"></a>Kysynnän ennustepalveluiden yleiskatsaus
 
@@ -91,19 +91,13 @@ Huomaa, että kysynnän ennusteen mittayksiköllä ei tarvitse tiettyä merkitys
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)
-
-[Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
-
-[Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
-
-[Oikaistun ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
-
-[Ennusteen tarkkuuden seuranta](monitor-forecast-accuracy.md)
-
-[Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta](remove-historical-outliers-calculating-demand-forecast.md)
-
-[Kysynnän ennustetoimintojen laajentaminen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
+- [Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)
+- [Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
+- [Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
+- [Oikaistun ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
+- [Ennusteen tarkkuuden seuranta](monitor-forecast-accuracy.md)
+- [Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta](remove-historical-outliers-calculating-demand-forecast.md)
+- [Video: Kysynnän ennustetoimintojen laajentaminen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+- [Verkkoseminaari: Kysynnän ennustaminen Azuren koneoppimispalvelun sarjojen avulla](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

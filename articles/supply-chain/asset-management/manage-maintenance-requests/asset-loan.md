@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ced5ec174fe1885273241be5f9fd48b7947129af
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f70b29ef69b80160f108e6f53edda12b86c2c9db
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846268"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015751"
 ---
 # <a name="asset-loans"></a>Lainatut resurssit
 
@@ -32,7 +32,7 @@ Jos yrityksesi saa resursseja korjaus-tai huoltotöihin joko sisäisistä sijain
 
 ## <a name="register-asset-loans-on-a-maintenance-request"></a>Rekisteröi kunnossapitopyynnön resurssilainat
 
-1. Valitse **Resurssien hallinta** \> **yhteiset** \> **Ylläpitopyynnöt** \> **Kaikki ylläpitopyynnöt** ta **Aktiiviset ylläpitopyynnöt**.
+1. Valitse **Resurssien hallinta** \> **Ylläpitopyynnöt** \> **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt**.
 2. Valitse ylläpitopyyntö, johon resurssilaina rekisteröidään, ja valitse sitten **Muokkaa**.
 3. Valitse **Pyyntö**-sivulla **Lähetä lainaresurssi**.
 4. Valitse resurssi ja syötä odotettu palautuspäivämäärä.
@@ -42,7 +42,7 @@ Jos yrityksesi saa resursseja korjaus-tai huoltotöihin joko sisäisistä sijain
 > - Voit lähettää lainaresurssin vain, jos saman resurssityypin resurssi on käytettävissä.
 > - Lainatulla resurssilla on oltava resurssien elinkaaritila, jonka avulla sitä voidaan käyttää lainaresurssina, kuten **InStorage**. Kun resurssilaina on rekisteröity, resurssin elinkaaren tila päivitetään automaattisesti esimerkiksi tilaan **onLoan**.
 
-Voit tarkastella luettelosa kaikista resursseista, jotka olet lainannut muihin siajinetihin tai asiakkaille valitsemalla **Resurssien hallinta** \> **Yhteiset** \> **Resurssin laina** \> **Kaikki resurssilainat**. Jos **Päättynyt** -valintaruutu on valittuna resurssille, resurssi on rekisteröity palautetuksi yritykseesi.
+Voit tarkastella luetteloa kaikista resursseista, jotka olet lainannut muihin sijainteihin tai muille asiakkaille, valitsemalla **Resurssien hallinta** \> **Lainattu resurssi** \> **Kaikki lainatut resurssit**. Jos **Päättynyt** -valintaruutu on valittuna resurssille, resurssi on rekisteröity palautetuksi yritykseesi.
 
 ![Ylläpitopyyntöjen hallinta.](media/06-manage-maintenance-requests.png)
 
@@ -50,7 +50,7 @@ Voit tarkastella luettelosa kaikista resursseista, jotka olet lainannut muihin s
 
 ## <a name="register-loan-assets-as-returned"></a>Rekisteröi lainaresurssit palautetuksi
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssin laina** \> **Aktiiviset resurssilainat**.
+1. Valitse **Resurssien hallinta** \> **Lainattu resurssi** \> **Aktiiviset lainatut resurssit**.
 2. Valitse resurssilaina, jonka haluat rekisteröidä palautetuksi, ja valitse sitten **Palauta resurssilaina**.
 3. Määritä päivämäärä ja kellonaika **Palautettu**-kentässä.
 4. Valitse **OK**.

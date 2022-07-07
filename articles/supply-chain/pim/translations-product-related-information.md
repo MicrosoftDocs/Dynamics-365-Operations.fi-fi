@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 079e6de00d1a946d998648378d5ca24c1fd26218
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850551"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015403"
 ---
 # <a name="product-related-translations-faq"></a>Tuotteeseen liittyvien käännösten usein kysytyt kysymykset
 
@@ -43,20 +43,20 @@ Voit tarkastella minkä tahansa ulkoisen lähdeasiakirjan, kuten laskun, tuottei
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Tuotteeseen liittyvien tietojen käännösten luominen
 Luo tuotteelle käännöksiä noudattamalla seuraavia ohjeita:
-1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Vapautetut tuotteet**.
 2.  Valitse tuote ja sitten Toimintoruutu, **Kielet** -ryhmässä valitse **Kielet**.
 3.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä lisää kieliä laajentamalla **Language** -kentän ja napsauttamalla sitten **OK**.
 4.  **Käännetty teksti** -ryhmässä kirjoita käännökset **Kuvaus** ja **Tuotteen nimi** -kenttiin.
 
 Luo tuotemääritteille käännöksiä noudattamalla seuraavia ohjeita:
-1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Vapautetut tuotteet**.
 2.  Valitse **asetukset**, valitse **määritteet**, ja valitse sitten **määritteet**.
 3.  Valitse **määritteet** -sivulta **Käännä**.
 4.  **Tekstin käännös** -sivulta **kieli** , valitse kieli. Voit lisätä lisää kieliä laajentamalla **Language** -kentän ja napsauttamalla sitten **OK**.
 5.  **Käännetty teksti** -ryhmässä kirjoita käännökset **Kuvaus** ja **Tuotteen nimi** ja and **Ohjeteksti** -kenttiin.
 
 Luo tuotedimensioiden arvoille käännöksiä noudattamalla seuraavia ohjeita:
-1.  Valitse **Tuotetietojen hallinta** &gt; **Yleinen** &gt; **Vapautetut tuotteet**.
+1.  Valitse **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Vapautetut tuotteet**.
 2.  Valitse tuote ja valitse sitten **Tuotedimensiot** .
 3.  Valitse jokin tuotemallin dimensioiden linkeistä: **Konfiguroinnit** **Koot**, **Värit** tai **Tyyli**.
 4.  Valitse dimensioarvo ja sitten **Käännä**.

@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 34ac023bc5ee44987f6a36a1636cd343576e5d90
-ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
+ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
+ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945720"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954660"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20250"></a>Versio 2.0.25.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Parantunut suorituskyky.
+- Parempi vakaus.
+- **Kysely**-sivua on parannettu niin, että aliotsikoiden pitkiä tekstejä tuetaan.
+- Otettiin käyttöön mahdollisuus peruuttaa työnkulku heti yhdellä napautuksella tai napsautuksella (kun **Peruuta** on ainoa vaihtoehto **Lisää toimintoja** -kohdassa).
+- Korjattiin ongelma, jossa kohdistus saatetaan joskus kadottaa **Muokkaa yhteyttä** -sivun ja mukautettujen sivujen merkinnän ohjausobjektien välillä.
+- Korjattiin ongelma, jossa painikkeet eivät joskus toimineet ja jäivät näkyviin valittuina, kun ne olivat mukana vieritysnäkymässä.
+- Korjattiin ongelma, jossa käytettiin joskus väärää asettelua pääsivulla.
 
 ## <a name="version-20240"></a>Versio 2.0.24.0
 

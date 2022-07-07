@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
+ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891086"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013552"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Yleisen varastokirjanpidon käytön aloittaminen
 
@@ -69,37 +69,6 @@ Ennen kuin voit ottaa apuohjelmatoiminnon käyttöön, sinun on integroitava Mic
 
 Lisätietoja on ohjeaiheessa [Salliminen ympäristön käyttöönoton jälkeen](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Määritä Dataverse
-
-Lisää yleiset varastokirjanpidon palveluperiaatteet vuokraajaasi ennen Dataversen käyttöä seuraavasti:
-
-1. Asenna Azure AD Module for Windows PowerShell v2, kuten kuvattu kohdassa [Asenna Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-1. Suorita seuraava PowerShell-komento.
-
-    ```powershell
-    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
-
-    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"
-
-    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
-    ```
-
-Luo seuraavaksi sovelluskäyttäjät yleistä varastokirjanpitoa varten Dataversessä noudattamalla seuraavia ohjeita.
-
-1. Avaa Dataverse-ympäristön URL-osoite.
-1. Valitse **Lisäasetukset \> Järjestelmä \> Suojaus \> Käyttäjät** ja luo sovelluskäyttäjä. Vaihda sivunäkymäksi *Sovelluskäyttäjät* **Näkymä**-valikossa.
-1. Valitse **Uusi**.
-1. Määritä **Sovellustunnus**-kentän arvoksi *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Valitse **Määritä rooli** ja valitse sitten *Järjestelmänvalvoja*. Jos saatavana on rooli nimeltä *Common Data Service -käyttäjä*, valitse myös se.
-1. Toista edelliset vaiheet, mutta määritä **Sovellustunnus**-kentän arvoksi *5f58fc56-0202-49a8-ac9e-0946b049718b*.
-
-Lisätietoja on kohdassa [Sovelluskäyttäjän luominen](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
-
-Jos Dataverse-asennuksen oletuskieli ei ole englanti, noudata seuraavia ohjeita.
-
-1. Siirry kohtaan **Lisäasetukset \> Hallinta \> Kielet**.
-1. Valitse *englanti* (*LanguageCode=1033*) ja valitse **Ota käyttöön**.
-
 ## <a name="install-the-add-in"></a><a name="install"></a>Lisäosan asentaminen
 
 Asenna lisäosa noudattamalla seuraavia ohjeita, jotta voit käyttää yleistä varastokirjanpitoa.
@@ -109,11 +78,21 @@ Asenna lisäosa noudattamalla seuraavia ohjeita, jotta voit käyttää yleistä 
 1. Valitse **Kaikki tiedot**.
 1. Siirry **Power Platform -integrointiin** ja valitse **Asetukset**.
 1. Valitse valintaruutu **Power platform -ympäristön asetus** -valintaikkunassa ja valitse sitten **Asetukset**. Asetusten määritys kestää yleensä 60 - 90 minuuttia.
-1. Kun Microsoft Power Platform -ympäristö on tehty valmiiksi, valitse **Ympäristö-lisäosat**-pikavälilehdillä **Asenna uusi lisäosa**.
+1. Kun Microsoft Power Platformin ympäristön asetukset on määritetty, kirjaudu sisään [Power Platform -hallintakeskukseen](https://admin.powerplatform.microsoft.com) ja asenna yleisen varastolaskennan apuohjelma seuraavasti:
+   1. Valitse ympäristö, johon haluat asentaa apuohjelman.
+   1. Valitse **Dynamics 365 -sovellukset**.
+   1. Valitse **Asenna sovellus**.
+   1. Valitse **Dynamics 365:n yleinen varastokirjanpito**.
+   1. Asenna valitsemalla **Seuraava**.
+1. Siirry takaisin LCS-ympäristöön. Valitse **Ympäristöapuohjelmat**-pikavälilehdessä **Asenna uusi apuohjelma**.
 1. Valitse **Yleinen varastokirjanpito**.
 1. Noudata asennusoppaan ohjeita ja hyväksy käyttöehdot.
 1. Valitse **Asenna**.
 1. **Ympäristön apuohjelmat** -pikavälilehdessä näkyy, että yleistä varastokirjanpitoa asennetaan. Muutaman minuutin kuluttua tilan pitäisi muuttua tilasta *Asennetaan* tilaan *Asennettu*. (Sivu on ehkä päivitettävä, jotta näet tämän muutoksen.) Tässä vaiheessa yleinen varastokirjanpito on valmis käytettäväksi.
+
+Jos Dataverse-asennuksen oletuskieli ei ole englanti, noudata seuraavia ohjeita:
+1. Siirry kohtaan **Lisäasetukset \> Hallinta \> Kielet**.
+1. Valitse *englanti* (*LanguageCode=1033*) ja valitse **Ota käyttöön**.
 
 ## <a name="set-up-the-integration"></a>Määritä integraatio
 

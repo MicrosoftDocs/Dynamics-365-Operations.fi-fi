@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903866"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015315"
 ---
 # <a name="credit-limits-for-customers"></a>Asiakkaiden luottorajat
 
@@ -117,7 +117,7 @@ Määritä **Myyntireskontran parametrit** -lomakkeessa, näytetäänkö varoitu
 
 Voit määrittää luottorajan määrän tietylle asiakkaalle **Asiakkaat**-lomakkeessa. Sinulla on oltava käyttöoikeusrooli, jolla on Ylläpidä asiakkaiden päätietoja (CustCustomersMaintain) -velvollisuus, jotta voit tehdä muutoksia lomakkeeseen.
 
-1.  Valitse **Myyntireskontra** \> **Yleinen** \> **Asiakkaat** \> **Kaikki asiakkaat**. Kaksoisnapsauta asiakastiliä.
+1.  Valitse **Myyntireskontra** \> **Asiakkaat** \> **Kaikki asiakkaat**. Kaksoisnapsauta asiakastiliä.
 
 2.  Valitse **Asiakkaat**-lomakkeen toimintoruudusta **Muokkaa**.
 
@@ -132,7 +132,7 @@ Voit määrittää luottorajan määrän tietylle asiakkaalle **Asiakkaat**-loma
 
 Voit joutua tarkistamaan asiakkaan luottorajan manuaalisesti. Voit esimerkiksi tarkistaa asiakkaan luottorajan manuaalisesti ennen myyntitilauksen täyttämistä. Luottorajan voi tarkistaa manuaalisesti **Myyntitilaus** -lomakkeessa. Sinulla on oltava käyttöoikeusrooli, jolla on Ylläpidä myyntitilauksia (SalesOrderMaintain) -velvollisuus, jotta voit tehdä muutoksia lomakkeeseen.
 
-1.  Valitse **Myynti ja markkinointi** \> **Yleinen** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**. Kaksoisnapsauta myyntitilausta.
+1.  Valitse **Myynti ja markkinointi** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**. Kaksoisnapsauta myyntitilausta.
 
 2.  Valitse **Myyntitilaus**-lomakkeen toimintoruudun **Hallinta**-välilehdessä **Luottorajan tarkistus**.
 

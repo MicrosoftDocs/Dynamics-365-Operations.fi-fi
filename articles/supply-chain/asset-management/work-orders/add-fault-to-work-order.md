@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857892"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014995"
 ---
 # <a name="add-fault-to-work-order"></a>Vian lisääminen työtilaukseen
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857892"
 
 Voit lisätä vikasuunnittelijassa määritettyjä vikamäärityksiä työtilaukseen. Vähintään yhden vikatietueen on liityttävä työtilauksessa valitussa resurssissa käytettyihin resurssityyppeihin. Lisätietoja määrityksestä esitetään kohdassa [Vikojen hallinta](../setup-for-work-orders/fault-management.md).
 
-1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssien hallinta** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
 2. Valitse työtilaus, jolle vikarekisteröinti tehdään ja valitse sitten **Resurssin vika** **Resurssi**-ryhmän **Työtilaus**-välilehden toimintoruudussa.
 
@@ -64,7 +64,7 @@ Alla olevassa kuvassa näkyy esimerkki vikarekisteröinnistä.
 
 **Kaikki resurssit** luettelosivulla voit tulostaa omaisuusvikaraportin, jossa näkyvät kaikki vikarekisteröinnit sekä graafisen yhteenveto vikatilastoista.
 
-1. Valitse **Resurssienhallinta** > **Yhteiset** > **Resurssit** > **Kaikki resurssit**.
+1. Valitse **Resurssien hallinta** > **Resurssit** > **Kaikki resurssit**.
 
 2. Valitse resurssi, jolle tulostetaan vikaraportti.
 

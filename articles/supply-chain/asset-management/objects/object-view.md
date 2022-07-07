@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a416dbea0bab8f6a506ae5cfbfc4feeae8edfe29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 495f3dbf9bab9d550ebdbb7dda52aca80d5ea635
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882718"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017113"
 ---
 # <a name="asset-view"></a>Resurssinäkymä
 
@@ -30,7 +30,7 @@ ms.locfileid: "8882718"
 
 Tässä artikkelissa kuvataan resurssien hallinnan resurssinäkymää **Resurssinäkymä** -sivulla näkyvät aktiiviset resurssit ja toiminnalliset sijainnit puunäkymässä. Tämän vuoksi voit helposti saada yhteenvedon resurssien suhteista toiminnallisiin sijainteihin. Lisäksi voit tarkastella yksityiskohtaisia tietoja toiminnallisista sijainneista, resursseista ja niihin liittyvistä tuoterakenteista. Voit myös saada nopean yleiskatsauksen aktiivisiin ylläpitopyyntöihin ja työtilauksiin, jotka liittyvät resurssiin.
 
-1. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Resurssit** \> **Resurssinäkymä**.
+1. Valitse **Resurssien hallinta** \> **Resurssit** \> **Resurssinäkymä**.
 2. Jos haluat muuttaa sivulla näkyviä näkymää, valitse uusi arvo **Näkymä**-kentässä.
 
     > [!NOTE]

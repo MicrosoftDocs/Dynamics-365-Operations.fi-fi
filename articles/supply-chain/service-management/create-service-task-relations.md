@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 80980d83248612037999c665b6058c4d0bbf6a7c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 51ea26a0f6519d26f5207a7b6c8afbcdfa358be9
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678231"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015256"
 ---
 # <a name="create-service-task-relations"></a>Huoltotehtävän suhteiden luominen    
 
@@ -30,7 +30,7 @@ Voi liittää huoltotehtäviä huoltosopimuksiin tai huoltotilauksiin kuvatakses
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Suhteen luominen huoltosopimukseen
 
-1.  Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltosopimukset** \> **Huoltosopimukset**.
+1.  Siirry kohtaan **Palvelujen hallinta** \> **Huoltosopimukset** \> **Huoltosopimukset**.
 
 2.  Valitse nykyinen huoltosopimus tai luo uusi huoltosopimus.
 
@@ -48,7 +48,7 @@ Huoltosopimukselle luotavat huoltotehtäväsuhteet ovat käytettävissä kaikiss
 
 ## <a name="create-a-relation-with-a-service-order"></a>Suhteen luominen huoltotilaukseen
 
-1.  Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1.  Siirry kohtaan **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 
 2.  Valitse nykyinen huoltotilaus tai luo uusi huoltotilaus.
 

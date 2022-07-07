@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858240"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015343"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
@@ -143,7 +143,9 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
 6. Kaksoiskirjoitustoimintoa voidaan käyttää henkilöstötietojen integroimiseen Power Apps -ympäristön kanssa vain, jos **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehto on valittu ympäristölle. Siirry [Kaksoiskirjoituksen kotisivulle](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), kun haluat lisätietoja kaksoiskirjoituksesta.
 
     > [!NOTE]
-    > **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehdon on oltava valittuna sillä hetkellä, kun Power Apps -ympäristö luodaan. Jos vaihtoehto ei ole valittuna valmistelun aikana, et voi käyttää kaksoiskirjoitusta integroidaksesi tietoja Dynamics 365 Human Resourcesin ja Power Apps -ympäristön välillä, etkä voi asentaa Dynamics 365 -sovelluksia (kuten Dynamics 365 Sales, Field Service) ympäristöön. Tätä vaihtoehtoa ei voi perua. Lisätietoja löytyy kohdasta [Huomioon otettavia asioita uutta ympäristöä luotaessa](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) Power Platform -ohjesivustolla.
+    > **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehdon on oltava valittuna sillä hetkellä, kun Power Apps -ympäristö luodaan. Jos vaihtoehto ei ole valittuna valmistelun aikana, et voi käyttää kaksoiskirjoitusta integroidaksesi tietoja Dynamics 365 Human Resourcesin ja Power Apps -ympäristön välillä, etkä voi asentaa Dynamics 365 -sovelluksia (kuten Dynamics 365 Sales, Field Service) ympäristöön. Tätä vaihtoehtoa ei voi perua. 
+    > -  Human Resources ei tue linkitetyn Dataverse-esiintymän muuttamista sen jälkeen, kun Human Resources on otettu käyttöön esiintymässä. </br></br>
+    > Lisätietoja löytyy kohdasta [Huomioon otettavia asioita uutta ympäristöä luotaessa](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) Power Platform -ohjesivustolla.  
 
 7. Kun olet määrittänyt oikean ympäristön, voit jatkaa valmisteluprosessia. 
 

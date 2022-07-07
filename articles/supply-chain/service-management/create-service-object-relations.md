@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e89039356f167ef2f06824ffee8645f74f8a2b53
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4d9424b5678a6f37d46203e5d4e359b020fda7a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890651"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016967"
 ---
 # <a name="create-service-object-relations"></a>Huoltokohteen suhteiden luominen 
 
@@ -33,7 +33,7 @@ Tässä artikkelissa kuvataan, kuinka huoltosopimukselle ja huoltotilaukselle vo
 
 Luo uusi huoltokohteen suhde huoltosopimukselle seuraavien ohjeiden avulla:
 
-1.  Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.
+1.  Valitse **Palvelujen hallinta** \> **Huoltosopimukset** \> **Huoltosopimukset**.
 
 2.  Valitse **Huoltosopimukset**-luettelosta aiemmin luotu huoltosopimus tai valitse **Uusi** luodaksesi uuden huoltosopimuksen.
 
@@ -47,7 +47,7 @@ Luo uusi huoltokohteen suhde huoltosopimukselle seuraavien ohjeiden avulla:
 
 Luo uusi huoltokohteen suhde huoltotilaukselle seuraavien ohjeiden avulla:
 
-1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1.  Valitse **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 
 2.  **Huoltotilaukset**-luettelosta valitse nykyinen huoltotilaus tai luo uusi huoltotilaus.
 

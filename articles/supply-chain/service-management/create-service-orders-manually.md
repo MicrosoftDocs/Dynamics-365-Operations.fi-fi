@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678259"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014848"
 ---
 # <a name="create-service-orders-manually"></a>Huoltotilausten luominen manuaalisesti    
 
@@ -34,7 +34,7 @@ Voit luoda huoltotilauksia manuaalisesti huoltosopimuksen tai **Huoltotilaukset*
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Huoltotilauksen luominen manuaalisesti huoltosopimuksesta
 
-1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltosopimukset** \> **Huoltosopimukset**.
+1.  Valitse **Palveluiden hallinta** \> **Huoltosopimukset** \> **Huoltosopimukset**.
 
 2.  Valitse huoltosopimus tai luo uusi huoltosopimus.
 
@@ -42,7 +42,7 @@ Voit luoda huoltotilauksia manuaalisesti huoltosopimuksen tai **Huoltotilaukset*
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Huoltotilauksen luominen manuaalisesti Huoltotilaukset-lomakkeessa
 
-1.  Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1.  Valitse **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 
 2.  Valitse **Uusi** luodaksesi uuden palvelutilauksen.
 
@@ -53,7 +53,7 @@ Voit luoda huoltotilauksia manuaalisesti huoltosopimuksen tai **Huoltotilaukset*
 
 ## <a name="create-a-service-order-from-a-project"></a>Huoltotilauksen luominen projektista
 
-1.  Avaa **Projektinhallinta ja kirjanpito** \> **Yleinen** \> **Projektit** \> **Kaikki projektit**.
+1.  Valitse **Projektinhallinta ja kirjanpito** \> **Projektit** \> **Kaikki projektit**.
 
 2.  Valitse **Projektit**-lomakkeen **Toimintoruutu**-osiosta **Hallinta**-välilehti \> valitse **Huolto** \> **Huoltotilaukset**.
 
@@ -66,7 +66,7 @@ Voit luoda huoltotilauksia manuaalisesti huoltosopimuksen tai **Huoltotilaukset*
 
 Voit luoda huoltotilauksen **Myyntitilaukset**-lomakkeesta käyttämällä **Luo uusi huoltotilaus myyntitilauksen perusteella** -ohjattua toimintoa.
 
-1.  Avaa **Myynti ja markkinointi** \> **Yleinen** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**.
+1.  Siirry kohtaan **Myynti ja markkinointi** \> **Myyntitilaukset** \> **Kaikki myyntitilaukset**.
 
 2.  Avaa asianmukainen myyntitilaus.
 

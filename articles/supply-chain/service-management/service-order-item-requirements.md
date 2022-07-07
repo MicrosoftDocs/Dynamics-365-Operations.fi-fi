@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f12b0dd1facc753bfcde820eea26a4052caf67
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 376cda6bbe1800611e6f24c347b9035469a30a14
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882399"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015169"
 ---
 # <a name="service-order-item-requirements"></a>Huoltotilauksen nimiketarpeet
 
@@ -36,7 +36,7 @@ Nimiketarvetta voi katsella heti, kun se on luotu huoltotilaukseen, yksittäisen
 
 ## <a name="view-an-item-requirement-from-a-service-order"></a>Nimiketarpeen tarkasteleminen huoltotilauksesta
 
-1. Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1. Siirry kohtaan **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 1. Valitse **Lähetys** ja avaa sitten **Nimiketarpeet**-lomake valitsemalla **Nimiketarve**.
 1. Valitse **Projekti**-välilehti ja tarkista **Huoltotilaus**-kentässä nimiketarpeen palvelutilaukset.
 
@@ -44,13 +44,13 @@ Nimiketarvetta voi katsella heti, kun se on luotu huoltotilaukseen, yksittäisen
 
 Jos huoltotilaukselle luodaan nimiketarve, et voi poistaa huoltotilausta. Sinun on poistettava nimiketarve ennen kuin voit poistaa huoltotilauksen.
 
-1. Avaa **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.
+1. Siirry kohtaan **Palveluiden hallinta** \> **Huoltotilaukset** \> **Huoltotilaukset**.
 1. Valitse **Lähetys** ja avaa sitten **Nimiketarpeet**-lomake valitsemalla **Nimiketarve**. Tässä lomakkeessa näkyvät kaikki huoltotilaukseen luodut nimiketarpeet.
 1. Valitse poistettava nimiketarve ja valitse sitten **Poista**.
 
 –TAI–
 
-1. Avaa **Projektinhallinta ja kirjanpito** \> **Yleinen** \> **Projektit** \> **Kaikki projektit**.
+1. Valitse **Projektinhallinta ja kirjanpito** \> **Projektit** \> **Kaikki projektit**.
 1. Avaa projekti, joka sisältää palvelutilauksen, jossa nimiketarve on luotu.
 1. Valitse **Projektit**-lomakkeen oikeassa ruudussa **Nimiketarpeet**. **Nimiketarpeet**-lomake avautuu, ja siinä näkyvät valittuun projektiin liittyvät nimiketarpeet.
 1. Valitse poistettava nimiketarve ja valitse sitten **Poista**.
