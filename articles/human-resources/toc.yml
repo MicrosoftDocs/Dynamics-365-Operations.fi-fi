@@ -58,6 +58,12 @@
                       href: hr-whats-new-2021-01-28.md
                     - name: 21. tammikuuta 2021
                       href: hr-whats-new-2021-01-21.md
+                - name: Poistetut tai vanhentuneet ominaisuudet
+                  items:
+                    - name: Poistetut tai vanhentuneet ominaisuudet -aloitussivu
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                    - name: Poistetut tai vanhentuneet Dynamics 365 Human Resources -ominaisuudet
+                      href: get-started/removed-deprecated-features-hr.md
         - name: Aloittaminen
           items:
             - name: Yleiskatsaus
@@ -66,14 +72,18 @@
               href: hr-admin-system-requirements.md
             - name: Määritä ja hallitse esiintymiä
               items:
-                - name: Valmistele Human Resources
-                  href: hr-admin-setup-provision.md
-                - name: Kopioi esiintymä
-                  href: hr-admin-setup-copy-instance.md
-                - name: Poista esiintymä
-                  href: hr-admin-setup-remove-instance.md
-                - name: Päivitysprosessi
-                  href: hr-admin-setup-update-process.md
+                - name: Human Resourcesin tarjoaminen talous- ja toimintojen infrastruktuurissa
+                  href: hr-admin-setup-provision-fo.md
+                - name: Human Resourcesin tarjoaminen talous- ja toimintojen itsenäisessä infrastruktuurissa
+                  items:
+                    - name: Valmistele Human Resources
+                      href: hr-admin-setup-provision.md
+                    - name: Kopioi esiintymä
+                      href: hr-admin-setup-copy-instance.md
+                    - name: Poista esiintymä
+                      href: hr-admin-setup-remove-instance.md
+                    - name: Päivitysprosessi
+                      href: hr-admin-setup-update-process.md
             - name: Määritä tietojen integrointi
               items:
                 - name: Valitse tietojen integrointiteknologia
@@ -99,91 +109,91 @@
                 - name: Office-integraatio
                   items:
                     - name: Office-integraation opasohjelma
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?context=/dynamics365/context/human-resources
                     - name: Yksikkötietojen päivittäminen Excelissä
-                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?context=/dynamics365/context/human-resources
                     - name: Avaa Excelissä -kokemusten usein kysytyt kysymykset
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?context=/dynamics365/context/human-resources
                     - name: Office-integraation vianmääritys
-                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?context=/dynamics365/context/human-resources
                 - name: Tiedonhallinnan määrittäminen
                   items:
                     - name: Tietojen hallintakehyksen yleiskatsaus
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?context=/dynamics365/context/human-resources
                     - name: Tietoyksiköt
                       items:
                         - name: Tietoyksiköiden yleiskatsaus
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?context=/dynamics365/context/human-resources
                         - name: Konfigurointitietoprojektit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?context=/dynamics365/context/human-resources
                     - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
                       items:
                         - name: Konfigurointitietojen kopiointi – yleiskatsaus
-                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?context=/dynamics365/context/human-resources
                         - name: Konfigurointitietopaketit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                         - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                         - name: Konfigurointitietomallit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?context=/dynamics365/context/human-resources
                         - name: Muutosten seuranta yksikköön
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?context=/dynamics365/context/human-resources
                         - name: Tietojen etsiminen vakiotietoyksiköistä
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?context=/dynamics365/context/human-resources
                         - name: Useita laskentataulukoita sisältävät tietomallit
-                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?context=/dynamics365/context/human-resources
                         - name: Muutosten seurannan ottaminen käyttöön yksiköille
-                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?context=/dynamics365/context/human-resources
                         - name: Konfigurointiavaimet ja tietoyksiköt
-                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?context=/dynamics365/context/human-resources
                         - name: Konfigurointitietopaketit
-                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?context=/dynamics365/context/human-resources
                     - name: Tietojen tuonti- ja vientityöt
                       items:
                         - name: Tietojen tuonti- ja vientityöt – yleiskatsaus
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?context=/dynamics365/context/human-resources
                         - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
-                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?context=/dynamics365/context/human-resources
                     - name: Tietoyksiköiden kehittäminen
                       items:
                         - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
-                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?context=/dynamics365/context/human-resources
                         - name: Uusien tietoyksiköiden luominen
-                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?context=/dynamics365/context/human-resources
                         - name: Tietoyksiköiden ominaisuudet
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?context=/dynamics365/context/human-resources
                         - name: Laskettavien sarakkeiden ja virtuaalikenttien luominen
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?context=/dynamics365/context/human-resources
                         - name: Yritystenvälinen toiminta
-                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?context=/dynamics365/context/human-resources
                         - name: Maa-/aluekoodien käsitteleminen
-                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?context=/dynamics365/context/human-resources
                         - name: Periytyvyysmallit
-                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?context=/dynamics365/context/human-resources
                         - name: Ohjatun tietoyksikkötoiminnon säännöt
-                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?context=/dynamics365/context/human-resources
                         - name: Metatietojen ominaisuudet
-                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?context=/dynamics365/context/human-resources
                         - name: 'Tarkistukset, oletukset ja yhdistämättömät kentät'
-                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?context=/dynamics365/context/human-resources
                         - name: Suojaus ja tietoyksiköt
-                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?context=/dynamics365/context/human-resources
                         - name: Kolmannen osapuolen palvelun testausapuohjelmien käyttäminen
-                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?context=/dynamics365/context/human-resources
                         - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
-                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?context=/dynamics365/context/human-resources
                     - name: Tuo oma tietokantasi
-                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?context=/dynamics365/context/human-resources
                     - name: BYOD-erätöiden optimointi
                       href: hr-admin-integration-byod-batch-jobs.md
                     - name: Yksikkösäilön automaattinen päivitys
-                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?context=/dynamics365/context/human-resources
                     - name: Tietotehtävän automaatio
-                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/human-resources
                     - name: Tietojen tarkistuksen tarkistusluettelon työtila
-                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?context=/dynamics365/context/human-resources
                     - name: Tietojenhallintavirheiden kuvaukset
-                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?context=/dynamics365/context/human-resources
                     - name: Ominaisuuksien hallinta
                       href: hr-admin-manage-features.md
                     - name: Tietokannan lokikirjauksen määrittäminen ja hallinta
@@ -234,6 +244,8 @@
                   href: hr-admin-go-live-faq.md
                 - name: Human Resources -infrastruktuurin yhdistämisen usein kysytyt kysymykset
                   href: hr-infrastructure-merge-faq.md
+                - name: Human Resourcesin asiakassiirron UKK
+                  href: customer-migration.md
                 - name: Dokumentaatioresurssit
                   items:
                     - name: Ohjejärjestelmä

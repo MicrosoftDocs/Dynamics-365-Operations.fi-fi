@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbf77b57f7a107918c3b8a03290e208ed1c4803b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879073"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066054"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Managementin aloitussivu
 
@@ -56,16 +56,16 @@ Lisätietoja Dynamics 365 Financesta on [Financen aloitussivulla](../finance/ind
 
 ## <a name="videos"></a>Videot
 
-Tässä lyhyessä videossa on tiivistelmä uusista toimitusketjun hallinnan toiminnoista, jotka on lisätty Microsoft Dynamics 365 for Finance and Operationsin versioon 8.0 (huhtikuu 2018).
+Tässä lyhyessä videossa on tiivistelmä uusista toimitusketjun hallinnan toiminnoista, jotka on lisätty Microsoft Dynamics 365 Financen versioon 8.0 (huhtikuu 2018).
 
-- [Työtilauksen synkronointi Field Servicen ja Finance and Operationsin välillä](https://youtu.be/hAB4TDVMjxU)
+- [Työtilauksen synkronointi Field Servicen ja talous- ja toimintosovellusten välillä](https://youtu.be/hAB4TDVMjxU)
 
-Näissä lyhyissä videoissa on tiivistelmä uusista toimitusketjun hallinnan toiminnoista, jotka on lisätty Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 -versioon (joulukuu 2017).
+Näissä lyhyissä videoissa on tiivistelmä uusista toimitusketjun hallinnan toiminnoista, jotka on lisätty Microsoft Dynamics 365 Finance, Enterprise edition 7.3 -versioon (joulukuu 2017).
 
 - [Optimointiavustaja](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfiguraation kopioiminen varaston hallintamallista](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Näissä lyhyissä videoissa on tiivistelmä uusista Supply Chain Management -toiminnoista, jotka on lisätty Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -versioon (heinäkuu 2017).
+Näissä lyhyissä videoissa on tiivistelmä uusista toimitusketjun hallinnan toiminnoista, jotka on lisätty Microsoft Dynamics 365 Finance, Enterprise edition -versioon (heinäkuu 2017).
 
 - [Kustannuslaskennan käytön aloittaminen](https://youtu.be/1pUDtJQZ8FU)
 - [Kustannusseurannan mobiilityötila](https://youtu.be/imsuTg8rUVk)
@@ -73,7 +73,7 @@ Näissä lyhyissä videoissa on tiivistelmä uusista Supply Chain Management -to
 - [Ostotilausten hyväksyminen mobiililaitteella](https://youtu.be/gZ-gOlJe7H8)
 - [Visuaalinen ajoitus tuotanto- ja erätilausten Gantt-kaavion avulla](https://youtu.be/BtbuShkGj4I)
 
-Seuraavat Tech Conference -tallenteet käsittelevät toimitusketjun hallinnan toimintoja Finance and Operationsin aiemmissa versioissa. Tämä toiminto kuuluu nyt Dynamics 365 Supply Chain Managementiin. Konseptit ja menettelyt ovat samat kuin aiemmissa versioissa.
+Seuraavat Tech Conference -tallenteet käsittelevät toimitusketjun hallinnan toimintoja talous- ja toimintosovellusten aiemmissa versioissa. Tämä toiminto kuuluu nyt Dynamics 365 Supply Chain Managementiin. Konseptit ja menettelyt ovat samat kuin aiemmissa versioissa.
 
 - **Kustannusten hallinta:**
   - [Kustannusten hallinnan yhteenveto](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -106,3 +106,4 @@ Online-kursseista ja koulutuksesta saat tietoa [Dynamics 365 Supply Chain Manage
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

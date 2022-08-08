@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: abfba49c1b5e410cdc47db9965ffee26fbaebb9e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866534"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067679"
 ---
 # <a name="globalization-resources"></a>Maailmanlaajuisen käytön resurssit
 
 ## <a name="local-and-regional-deployments"></a>Paikalliset ja alueelliset käyttöönotot
-Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yrityksellesi tärkeitä tietoja:
+Jos maasi/alueesi viranomaisasetuksissa edellytetään, että tiedot tallennetaan tai niitä käsitellään eri tavalla kuin muissa maissa tai muilla alueilla, käyttöönotossa voi olla tarpeen noudattaa maa- tai aluekohtaisia vaatimuksia. Seuraavissa resursseissa voi olla yritykselle tärkeitä tietoja:
 
 [21Vianetin ylläpitämät talous- ja toimintosovellukset Kiinassa](../deployment/china-local-deployment.md)
 
@@ -62,8 +62,8 @@ Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista omi
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365:n julkaisusuunnitelmat
 [Dynamics 365:n julkaisusuunnitelmissa](/business-applications-release-notes/) kuvataan Dynamics 365 -liiketoimintasovellusten ja sovellusympäristöjen suunnitellut uudet ja parannetut ominaisuudet. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations -sovellusten uudet ominaisuudet
-[Finance and Operationsin uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on lueteltu ominaisuudet, jotka sisältyvät tiettyihin Finance and Operations -sovellusten versioihin.
+#### <a name="finance-and-operations-apps-whats-new"></a>Talous- ja toimintosovellusten uudet ominaisuudet
+[Talous- ja toimintojen uudet ja muuttuneet ominaisuudet -aloitussivulla](../../fin-ops/get-started/whats-new-changed.md) on lueteltu ominaisuudet, jotka sisältyvät tiettyihin talous- ja toimintosovellusten versioihin.
 
 ### <a name="electronic-reporting"></a>Sähköinen raportointi
 Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisen raportoinnin ansiosta näitä muotoja voi hallita koko niiden elinkaaren ajan. Lisätietoja on seuraavissa aiheissa:
@@ -133,3 +133,4 @@ Lisätietoja on [ohjejärjestelmässä](../../fin-ops/get-started/help-overview.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

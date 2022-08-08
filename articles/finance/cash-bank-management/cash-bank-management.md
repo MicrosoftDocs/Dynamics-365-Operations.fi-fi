@@ -1,7 +1,7 @@
 ---
 title: Maksuliikenteen kotisivu
 description: Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja kyseisiin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon.
-author: kfend
+author: angelad116
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: kfend
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: e49c9f514e79552dda2e7a6e10c7d84fa2560c2e
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710722"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151966"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Maksuliikenteen kotisivu
 
@@ -89,7 +89,7 @@ Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](/dynamics365/release-pla
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 -talous- ja toimintosovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja Dynamics 365 -sovelluksen uutuuksista ja suosituista aiheista.
 
@@ -102,3 +102,4 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
