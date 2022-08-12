@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f97244f48cdfde6f9e91a459b123068480b9c80b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 81c20432a3094ef0fe3013c0867044ef3014adcb
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891115"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124615"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-supply-chain-management"></a>Oppimisluettelo yrityksen päätöksentekijöille, jotka harkitsevat Dynamics 365 Supply Chain Managementn käyttöönottoa
 
@@ -31,7 +31,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 |---------|-------------|--------|--------|
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia |
-| [Taloushallinnon ja toimintojen sovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten taloushallinnon ja toimintojen sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat taloushallinnon ja toimintojen sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
+| [Talous- ja toimintosovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten talous- ja toimintosovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat talous- ja toimintosovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Kurssi MB-900T01-A: Dynamics 365:n perusteet](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Kurssi tutustuttaa oppijan Dynamics 365:n toimintoihin ja liiketoiminta-arvoon. Kurssi kattaa Dynamics 365 -sovellukset, Power Platformin, pilvipalvelun käsitteet, suojausmallin sekä lisensointinäkökohdat. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
 | [Käyttöomaisuuden hallinnan käytön aloittaminen Dynamics 365 Supply Chain Managementissa](/learn/modules/get-started-asset-management/index) | Resurssien hallinta on moduuli resurssien ja kunnossapitotöiden hallintaan Dynamics 365 Supply Chain Managementissa. Resurssien hallinnan avulla voit hallita ja suorittaa tehokkaasti monenlaisiin laitteisiin, kuten koneisiin, tuotantolaitteisiin ja ajoneuvojoihin liittyviä tehtäviä, kuten laitteiden hallinta ja huolto. Resurssien hallinta tukee ratkaisuja monilla eri aloilla. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |
 | [Dynamics 365 Supply Chain Managementin suunnittelun muutosten hallinnan apuohjelma](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management valtuuttaa työntekijät ja organisaatiot hankkimaan yhdistetyn näkymän varastosaldoihin, fyysisiin varastoihin, valmistukseen, palveluihin ja logistiikkaan ennakoivalla analytiikalla, joka muuttaa tiedot oivalluksiksi ja tukee parempia strategisia päätöksiä. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 2 tuntia |

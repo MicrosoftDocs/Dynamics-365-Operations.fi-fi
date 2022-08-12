@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 00da7c69ff18abd02ca0cd7984e9b2de5e453a0c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595383"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103322"
 ---
 # <a name="create-new-users"></a>Uusien käyttäjien luominen
 
 [!include [banner](../../includes/banner.md)]
 
-Ennen kuin Finance and Operations -sovellukset ovat käytettävissä, käyttäjä on lisättävä **Käyttäjät**-sivulle (**Järjestelmän hallinta \> Käyttäjät \> Käyttäjät**). Käyttäjät voivat organisaation sisäisiä työntekijöitä tai ulkoisia asiakkaita ja toimittajia. Käyttäjät voidaan tuoda tai lisätä manuaalisesti. Kaikilla käyttäjillä on oltava oikeanlaiset käyttöoikeudet.
+Ennen kuin talous- ja toimintosovellukset ovat käytettävissä, käyttäjä on lisättävä **Käyttäjät**-sivulle (**Järjestelmän hallinta \> Käyttäjät \> Käyttäjät**). Käyttäjät voivat organisaation sisäisiä työntekijöitä tai ulkoisia asiakkaita ja toimittajia. Käyttäjät voidaan tuoda tai lisätä manuaalisesti. Kaikilla käyttäjillä on oltava oikeanlaiset käyttöoikeudet.
 
-Lisätietoja Finance and Operations -sovellusten käyttöoikeuksien ostamisesta ja myöntämisestä on [Microsoft Dynamics 365:n käyttöoikeusoppaassa](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
+Lisätietoja talous- ja toimintosovellusten käyttöoikeuksien ostamisesta ja myöntämisestä on [Microsoft Dynamics 365:n käyttöoikeusoppaassa](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Käyttöoikeuden määrittäminen käyttäjälle
 Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) [Microsoft 365 -hallintakeskuksessa](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Ulkoisen käyttäjän lisääminen Azure AD:ssa ja käyttöoikeuden määrittäminen 
-Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta heille voidaan määrittää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Finance and Operations -sovellusten edellytyksenä on, että vieraskäyttäjän yritys käyttää Azure AD:ta. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](/azure/active-directory/b2b/add-users-administrator).
+Ulkoisien käyttäjien on oltava mukana vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta heille voidaan määrittää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Talous- ja toimintosovellusten edellytyksenä on, että vieraskäyttäjän yritys käyttää Azure AD:tä. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Uusien käyttäjien tuominen Azure AD:sta 
 1. Valitse **Järjestelmän hallinta** \> **Käyttäjät** \> **Käyttäjät**.

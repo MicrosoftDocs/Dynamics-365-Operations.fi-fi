@@ -1,6 +1,6 @@
 ---
 title: Yrityskonsepti Dataversessä
-description: Tässä artikkelissa kuvataan yrityksen tietojen integraatiota Finance and Operationsin ja Dataversen välillä.
+description: Tässä artikkelissa käsitellään yrityksen tietojen integraatiota talous- ja toimintosovellusten sekä Dataversen välillä.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,29 +9,31 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873175"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205933"
 ---
-# <a name="company-concept-in-dataverse"></a>Yrityksen käsite Dataversessa
+# <a name="company-concept-in-dataverse"></a>Yrityskonsepti Dataversessä
 
 [!include [banner](../../includes/banner.md)]
 
 
 
 
-Finance and Operationsin *yritys*-käsite on sekä oikeudellinen että liiketoiminnallinen yksikkö. Se on myös tietojen suojauksen ja näkyvyyden raja. Käyttäjät työskentelevät aina yksittäisen yrityksen kontekstissa, ja suurin osa tiedoista on yrityksen omistamia.
+Talous- ja toimintosovelluksissa *yritys*-käsite on sekä oikeudellinen että liiketoiminnallinen yksikkö. Se on myös tietojen suojauksen ja näkyvyyden raja. Käyttäjät työskentelevät aina yksittäisen yrityksen kontekstissa, ja suurin osa tiedoista on yrityksen omistamia.
 
 Dataversessa ei ole vastaavaa käsitettä. Lähin käsite on *liiketoimintayksikkö*, joka on ensisijaisesti tietoturvan ja näkyvyyden raja käyttäjätiedoille. Tällä käsitteellä ei ole sama oikeudellisia tai liiketoiminnan vaikutuksia kuin yrityksen käsitteellä.
 
 Koska liiketoimintayksikkö ja yritys eivät ole vastaavia käsitteitä, ei ole mahdollista pakottaa yksi-yhteen (1:1)-vastaavuutta niiden välillä Dataverse -integrointia varten. Koska käyttäjien on kuitenkin oletusarvoisesti pystyttävä näkemään samat rivit sovelluksessa ja Dataversessa, Microsoft on ottanut käyttöön uuden taulun Dataversessa, jonka nimi on cdm\_Company. Tämä taulu vastaa sovelluksen Yritys-taulua. Jos haluat varmistaa, että rivien näkyvyys vastaa toisiaan sovelluksen ja Dataversen välillä heti käyttöönotettaessa, suosittelemme seuraavaa tietojen määritystä Dataversessa:
 
-+ Jokaiselle taloushallinnon ja toimintojen Yritys-riville, jolle on otettu käyttöön kaksoiskirjoitus, luodaan liittyvä cdm\_Company-rivi.
-+ Kun cdm\_Company-rivi luodaan ja otetaan käyttöön kaksoiskirjoitukselle, luodaan oletusliiketoimintayksikkö, jolla on sama nimi. Vaikka kyseiselle liiketoimintayksikölle luodaan automaattisesti oletusryhmä, liiketoimintayksikköä ei käytetä.
-+ Luodaan erillinen omistajaryhmä, jolla on sama nimi. Se liittyy myös liiketoimintayksikköön.
++ Jokaiselle talous- ja toimintosovellusten Yritys-riville, jossa on otettu käyttöön kaksoiskirjoitus, luodaan liittyvä cdm\_Company-rivi.
+
++ Kun cdm\_Company-rivi luodaan ja otetaan käyttöön kaksoiskirjoitukselle, luodaan oletusliiketoimintayksikkö, jolla on sama nimi. Vaikka kyseiselle liiketoimintayksikölle luodaan automaattisesti oletusomistajaryhmä, liiketoimintayksikköä ei käytetä.
++ Luodaan erillinen omistajaryhmä, jolla on sama nimi ja kaksoiskirjoituksen loppuliite. Se liittyy myös liiketoimintayksikköön.
+
 + Oletusarvoisesti minkä tahansa sovelluksessa luodun ja Dataverseen kaksoiskirjoitetun rivin omistajaksi määritetään DW Owner -ryhmä, joka on linkitetty liitettyyn liiketoimintayksikköön.
 
 Seuraavassa kuvassa on esimerkki tästä tietojen määrityksestä Dataversessa.
@@ -43,7 +45,7 @@ Tämän määrityksen vuoksi kaikki USMF-yritykseen liittyvät rivit omistaa ryh
 + Myyntipäällikkö-rooli määritetään USMF Sales -tiimin jäsenille.
 + Käyttäjät, joilla on Myyntipäällikkö-rooli, voivat käyttää mitä tahansa tilin rivejä, jotka ovat saman liiketoimintayksikön jäseniä.
 + USMF Sales -tiimi on linkitetty aiemmin mainittuun USMF-liiketoimintayksikköön.
-+ Tämän vuoksi USMF Sales -tiimin jäsenet näkevät minkä tahansa tilin, jonka omistaa USMF DW, joka olisi tullut USMF-yrityksen taulusta taloushallinnossa ja toiminnoissa.
++ Tämän vuoksi USMF Sales -tiimin jäsenet näkevät minkä tahansa tilin, jonka omistaa USMF DW, joka olisi tullut USMF-yrityksen taulusta talous- ja toimintosovelluksissa.
 
 ![Miten ryhmiä voidaan käyttää.](media/dual-write-company-2.png)
 

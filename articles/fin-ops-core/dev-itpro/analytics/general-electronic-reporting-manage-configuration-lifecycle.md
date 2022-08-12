@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0220fa03283119471b3d1f78a23a04ed4036264e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906794"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109079"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 
@@ -73,7 +73,7 @@ Sähköisen raportoinnin konfiguraatioiden elinkaareen liittyvät seuraavat rool
 | Ostoreskontran maksuliikenneassistentti            | Sähköisen raportoinnin artefaktien käyttäminen määrätyssä liiketoimintaprosessissa.                | Esimerkiksi **Ostoreskontran maksuliikenneassistentti** -rooli, joka sallii sähköisten maksuviestien luomisen laskujen käsittelyä varten tietylle maksutavalle määritetyn sähköisen raportoinnin muodon perusteella. |
 
 ## <a name="er-configuration-development-lifecycle"></a>Sähköisen raportoinnin konfiguraation kehityksen elinkaari
-On suositeltavaa, että sähköisen raportoinnin konfiguraatiot suunnitellaan kehitysympäristössä erillisenä Finance and Operations -esiintymänä seuraavista sähköiseen raportointiin liittyvistä syistä:
+On suositeltavaa, että sähköisen raportoinnin konfiguraatiot suunnitellaan kehitysympäristössä erillisenä talous- ja toimintosovellusten esiintymänä seuraavista sähköiseen raportointiin liittyvistä syistä:
 
 - Käyttäjät, joilla on joko **Sähköisen raportoinnin kehittäjä**- tai **Sähköisen raportoinnin toiminnallinen konsultti** -rooli, voivat muokata konfiguraatioita ja suorittaa ne sitten testitarkoituksissa. Tämä skenaario saattaa aiheuttaa kutsuja luokkien tai taulujen menetelmistä, jotka voivat olla vahingollisia liiketoimintatiedoille ja esiintymän suorituskyvylle.
 - Aloituskohdat ja kirjattu yrityksen sisältö eivät rajoita luokkien ja taulujen menetelmien kutsuja sähköisen raportoinnin tietolähteinä tai konfiguraatioina. Niinpä käyttäjät, joilla on joko **Sähköisen raportoinnin kehittäjä**- tai **Sähköisen raportoinnin toiminnallinen konsultti** -rooli, voivat päästä käsiksi salassa pidettäviin tietoihin.
@@ -113,3 +113,4 @@ Joissakin tapauksissa saatetaan edellyttää, että järjestelmä ohittaa määr
 [Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

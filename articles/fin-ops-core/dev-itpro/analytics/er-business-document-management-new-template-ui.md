@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 208cfc91f11d4893785538ce4874e85a5725e993
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892222"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109257"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Microsoft Office -tyylin käyttöliittymä liiketoiminta-asiakirjan hallinnassa
 
@@ -36,7 +36,7 @@ Tämän artikkelin esimerkeissä aktiivinen toimittaja on Contoso ja luot sen av
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 
-[Luo uusi liiketoiminta-asiakirja käyttämällä Liiketoimintatiedostojen hallinta](https://youtu.be/gAIYl-mM_pw) -video (näkyy yllä) on lisätty [Taloushallinnon ja toimintojen toistolistalle](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavilla YouTubessa.
+[Luo uusi liiketoiminta-asiakirja käyttämällä liiketoimintatiedostojen hallintaa](https://youtu.be/gAIYl-mM_pw) -video (näkyy yllä) on lisätty [Talous- ja toimintosovellusten toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavilla YouTubessa.
 
 ## <a name="make-the-new-document-ui-in-business-document-management-available"></a>Uuden liiketoiminta-asiakirjojen hallinnan asiakirjojen käyttöliittymän käyttöön tarjoaminen
 
@@ -145,3 +145,4 @@ Tässä esimerkissä kerrotaan, miten voit **Liiketoiminta-asiakirjan hallinta**
 7. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

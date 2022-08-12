@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 27470f302b91fa3fa22f47438fa0f936beb7e7d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846181"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135454"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Yleisen varastokirjanpidon aloitussivu
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Viranomaiset painostavat kansainvälisiä organisaatioita yhä enemmän noudattamaan paikallisia ja maailmanlaajuisia kirjanpitostandardeja. Varaston uudelleenarvostus on tärkeä rooli yhteensopivuuden varmistamisessa. Microsoft Dynamics 365 Supply Chain Managementin yleinen varastokirjanpitolisäosa tarjoaa kattavan ratkaisun, jonka avulla organisaatiot (erityisesti kansainväliset organisaatiot) voivat käyttää useita kustannuslaskennan kirjanpitoja varastokirjanpitoon. Siksi organisaatiot voivat noudattaa useita kirjanpidon standardeja ja sisäisen hallinnan kirjanpitoa samanaikaisesti.
 

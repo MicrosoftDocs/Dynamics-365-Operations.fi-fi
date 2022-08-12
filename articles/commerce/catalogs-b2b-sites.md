@@ -2,19 +2,19 @@
 title: Commerce-luetteloiden luominen yritysten välisille sivustoille
 description: Tässä artikkelissa kuvataan, kuinka luodaan Commerce-luetteloita Microsoft Dynamics 365 Commercen B2B-sivustoille.
 author: ashishmsft
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 2cc9014d273b4ab6f23a38140d0cfcd3ffa4d630
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 7d4ed3e2a76924c2c3c0ba55e21ba648e8da7b76
+ms.sourcegitcommit: d1491362421bf2fcf72a81dc2dc2d13d3b98122b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027029"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9136823"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce-luetteloiden luominen yritysten välisille sivustoille
 
@@ -25,10 +25,13 @@ Tässä artikkelissa kuvataan, kuinka luodaan Commerce-tuoteluetteloita Microsof
 > [!NOTE]
 > Tämä artikkeli koskee Dynamics 365 Commercen versiota 10.0.27 ja sitä uudempia versioita.
 
-Voit käyttää Commerce-esitteitä tunnistaaksesi tuotteet, joita haluat tarjota B2B-verkkokaupoissasi. Kun luot luettelon, määrität online-myymälät, joissa tuotteita tarjotaan, lisäät sisällytettävät tuotteet ja parannat tuotetarjoomaa lisäämällä myynninedistämistietoja. Kullekin B2B-verkkosivustolle voi luoda useita luetteloita.
+Voit käyttää Commerce-esitteitä tunnistaaksesi tuotteet, joita haluat tarjota B2B-verkkokaupoissasi. Kun luot luettelon, määrität online-myymälät, joissa tuotteita tarjotaan, lisäät sisällytettävät tuotteet ja parannat tuotetarjoomaa lisäämällä myynninedistämistietoja. Kullekin yritystenväliselle verkkokaupalle voi luoda useita luetteloita kuten seuraavassa kuvassa.
+
+![Commerce-tuoteluetteloiden esikatselu](./media/Commerce_Catalogs.png)
 
 Commerce-tuoteluetteloiden avulla voit määrittää seuraavat tiedot:
 
+- **Luettelotyyppi** – Määritä arvoksi **Yritystenvälinen**. Yritystenvälisen luetteloon voidaan määrittää ominaisuuksia, kuten siirtymishierarkian, asiakashierarkian ja luettelon määritteen metatiedot. 
 - **Luettelokohtainen siirtymishierarkia** – Organisaatiot voivat luoda erillisen luokkarakenteen omaa luetteloaan varten.
 - **Luettelokohtaiset määritemetatiedot** – Määritteet sisältävät tietoja tuotteesta. Kun liität määritteitä siirtymishierarkian luokkaan, voit määrittää määritteiden arvot tähän luokkaan liitettyjen tuotteiden tasolla. Organisaatiot voivat sitten suorittaa seuraavat tehtävät:
 
@@ -41,11 +44,14 @@ Commerce-tuoteluetteloiden avulla voit määrittää seuraavat tiedot:
 - **Hintaryhmät** – Voit määrittää tiettyyn luetteloon liittyvät hinnat ja kampanjat. Tämä ominaisuus on olennaista sille, että luettelo määritetään B2B-kanavaa varten. Luetteloiden hintaryhmien avulla organisaatiot voivat antaa tuotteita tiettyjen B2B-organisaatioiden käyttöön ja käyttää ensisijaista hinnoitteluaan ja alennuksiaan. B2B-asiakkaat, jotka tilaavat konfiguroidusta luettelosta, voivat saada erityishintoja ja tarjouksia, kun he kirjautuvat Commerce B2B -sivustoon. Voit määrittää luettelokohtaiset hinnat valitsemalla **Hintaryhmät**-asetuksen **Luettelot**-välilehdessä linkittääksesi yhden tai useamman hintaryhmän luetteloon. Kaikki kauppasopimukset, hinnanoikaisun kirjauskansiot ja lisäalennukset, jotka on linkitetty samaan hintaryhmään otetaan käyttöön, kun asiakkaat tilaavat kyseisestä luettelosta. (Lisäalennuksiin kuuluvat raja- ja määräalennukset sekä yhdistelmäalennukset.) Lisätietoja hintaryhmistä on kohdassa [Hintaryhmät](price-management.md#price-groups).
 
 > [!NOTE]
-> Tämä ominaisuus on käytettävissä Dynamics 365 Commerce-version 10.0.27 julkaisusta eteenpäin. Voit konfiguroida luettelokohtaisia konfiguraatioita, kuten siirtymishierarkiaa ja asiakashierarkiaa, avaamalla Commerce Headquartersissa **ominaisuudenhallinnan** työtilan (**Järjestelmän hallinta \>Työtilat \> Ominaisuuksien hallinta**), ottamalla käyttöön **Ota käyttöön usean luettelon käyttö vähittäismyyntikanavissa.** -ominaisuuden ja suorittamalla sitten **1110 CDX** -työn.
+> Tämä ominaisuus on saatavana Dynamics 365 Commercen versiosta 10.0.27 alkaen. Luettelokohtaiset määritykset, kuten siirtymishierarkia ja asiakashierarkia, voidaan määrittää siirtymällä Commerce headquartersissa **Ominaisuudenhallinta** -työtilaan (**Järjestelmän hallinta \>Työtilat \> Ominaisuuksien hallinta**), ottamalla käyttöön **Ota käyttöön usean luettelon käyttö vähittäismyyntikanavissa** -ominaisuuden ja suorittamalla sitten **1110 CDX** -työn. Kun tämä ominaisuus otetaan käyttöön, kaikkiin aiemmin luotuihin luetteloihin, joita käytetään myymälöiden myyntipisteissä tai puhelinkeskuksissa, lisätään **Luettelot**-sivulla merkintä **Luettelotyyppi = Yritystenvälinen**. Vain ne aiemmin luodut tai uudet luettelot, joissa on merkintä **Luettelotyyppi = Yritystenvälinen**, ovat käytettävissä myymälöiden myyntipisteissä ja puhelinkeskuksessa. 
 
-## <a name="catalog-process-flow"></a>Luettelon prosessityönkulku
+## <a name="b2b-catalog-process-flow"></a>Yritystenvälisen luettelon prosessityönkulku
 
 Luettelon luonti- ja käsittelyprosessi sisältää neljä yleistä vaihetta. Jokainen vaihe on selitetty seuraavassa osassa yksityiskohtaisemmin.
+
+> [!NOTE]
+> Ennen jatkamista on varmistettava, että luettelossa on merkintä **Luettelotyyppi = Yritystenvälinen**.
 
 1. **[Konfiguraatio](#configure-the-catalog)**
 
@@ -73,7 +79,7 @@ Tämän osan tietojen avulla voit määrittää luettelon.
 
 Siirry Commerce headquarters -sovelluksessa kohtaan **Retail ja Commerce \> Luettelot ja valikoimat \> Kaikki luettelot** määrittääksesi luettelon.
 
-Kun uusi luettelo luodaan, luettelo on liitettävä vähintään yhteen kanavaan. Vain sellaisia nimikkeitä voi käyttää luetteloa luodessa, jotka on linkitetty valitun kanavan [valikoimiin](/dynamics365/unified-operations/retail/assortments). Voit liittää luettelon yhteen tai useaan kanaviaan valitsemalla **Luettelon asetukset** -sivun **Commerce-kanavat**-pikavälilehdessä **Lisää**.
+Kun uusi luettelo luodaan, luettelo on liitettävä vähintään yhteen kanavaan. Vain sellaisia nimikkeitä voi käyttää luetteloa luodessa, jotka on linkitetty valitun kanavan [valikoimiin](/dynamics365/unified-operations/retail/assortments). Voit liittää luettelon yhteen tai useaan kanaviaan valitsemalla **Luettelon asetukset** -sivun **Commerce-kanavat**-pikavälilehdessä **Lisää**. Varmista, että luettelossa on merkintä **Luettelotyyppi = Yritystenvälinen**.
 
 #### <a name="associate-the-navigation-hierarchy"></a>Liitä siirtymishierarkia
 
@@ -90,6 +96,17 @@ Siirry Commerce headquarters -sovelluksessa kohtaan **Retail ja Commerce \> Luet
 Vaihtoehtoisesti voit valita solmun siirtymishierarkiasta. Tämän jälkeen voit lisätä tuotteita suoraan luettelon luokkaan.
 
 #### <a name="associate-price-groups"></a>Liitä hintaryhmät
+
+Siirry Commerce headquarters -sovelluksessa kohtaan **Retail ja Commerce \> Luettelot ja valikoimat \> Kaikki luettelot** määrittääksesi luetteloon lisättävät tuotteet. Valitse sitten **Luettelot**-välilehdessä **Lisää tuotteet**. 
+
+Tuotteet, jotka lisättiin luetteloon siirtymishierarkian juurisolmusta valitsemalla toimintoruudussa **Lisää tuotteita**, perivät luokat, jos myös lähteen siirtymishierarkia on liitetty luetteloon. Lähteen siirtymishierarkian luokkiin tehdyt muutokset siirtyvät heti luetteloihin. Kanavat päivitetään julkaisemalla luettelot uudelleen.
+
+Vaihtoehtoisesti siirtymishierarkiassa voidaan valita solmu ja lisätä tuotteet suoraan valittuun luettelon luokkaan. 
+
+Kun tuotteita lisätään **Sisällytä kaikki variantit automaattisesti vain, kun päätuote on valittuna** -vaihtoehto on käytettävissä. Kaikkien varianttien sisällyttäminen voidaan estää valitsemalla ainakin yksi päätuotteen variantti. 
+
+> [!NOTE]
+> Jos valitaan kaikkien varianttien automaattinen sisällyttäminen suuressa päätuotevalikoimassa, käsittelyaika voi pidentyä. Suurissa valinnoissa on suositeltavaa valita luettelosivun toimintoruudussa **Sisällytä kaikki variantit** ja suorittaa toiminto erätilassa. Jos sisällytetään vain luettelon päätuote eikä yhtään varianttia, varianttivalitsin ei ehkä ole käytettävissä tuotetietosivulle siirryttäessä. 
 
 Jotta luettelokohtaiset hinnat voidaan konfiguroida, vähintään yksi hintaryhmä on linkitettävä luetteloon. Siirry Commerce headquarters -sovelluksessa kohtaan **Retail ja Commerce \> Luettelot ja valikoimat \> Kaikki luettelot** liittääksesi hintaryhmät luetteloon. Valitse sitten **Hintaryhmät** **Luettelot**-välilehden **Hinnoittelu**-kohdasta. Kaikki kauppasopimukset, hinnanoikaisun kirjauskansiot ja lisäalennukset (raja- ja määräalennus sekä yhdistelmäalennus), jotka on linkitetty samaan hintaryhmään otetaan käyttöön, kun asiakkaat tilaavat kyseisestä luettelosta.
 
@@ -122,6 +139,9 @@ Vahvista luettelo seuraavien ohjeiden avulla.
 1. Suorita oikeellisuustarkistus valitsemalla **Vahvista luettelo** **Kaikki luettelot** -sivun **Luettelot**-välilehden **Vahvista**-kohdasta. Tämä vaihe on pakollinen. Se tarkistaa, että pakolliset määritykset ovat tarkkoja.
 1. Näet tarkistuksen tulokset valitsemalla **Näytä tulokset**. Jos löytyy virheitä, korjaa tiedot ja suorita oikeellisuustarkistus uudelleen kunnes oikeellisuustarkistus on läpäisty.
 
+> [!NOTE]
+> Jos kyseessä **Luettelotyyppi = Yritystenvälinen**, tarkistus epäonnistuu, myymälöiden myyntipisteet tai puhelinkeskus lisättiin luetteloon. Yritystenvälisiin luetteloihin on oltava liitettyinä vain yritystenvälisiä verkkokanavia. Tarkistus epäonnistuu myös silloin, jos yritystenväliseen luetteloon ei ole liitetty yhtään asiakashierarkiaa. 
+
 ### <a name="approve-the-catalog"></a>Hyväksy luettelo
 
 Kun luettelo on vahvistettu, se pitää hyväksyä.
@@ -143,3 +163,5 @@ Kun luettelon tila on **Hyväksytty**, voit julkaista sen valitsemalla **Luettel
 [Commerce-luetteloiden laajennettavuusvaikutus B2B-mukautuksia varten](catalogs-b2b-sites-dev.md)
 
 [Usein kysytyt kysymykset B2B-sivustojen Commerce-luetteloista](catalogs-b2b-sites-FAQ.md)
+
+[Luettelon valitsinmoduuli](catalog-picker.md)

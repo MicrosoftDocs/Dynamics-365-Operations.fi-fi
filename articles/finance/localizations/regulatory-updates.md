@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 04cc8b4272bcedc7db27b0d76eccdc6375641933
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 129e4e1d44018da206d0e797dcfd389c9e6adeba
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904278"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206164"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -39,27 +39,19 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 
 |Maa tai alue|Vapautuspäivä|Julkaisuversio|Pakollinen päivitys|
 |--------------------|---------------|-------|-------| 
-|      Brasilia         |   2021. joulukuuta         | 10.0.25         |    SPED-verotuksen asettelu 2022  |
-|      Brasilia         |   Maaliskuun 2022.    | 10.0.25HF, 10.0.26HF, 10.0.27        |    ICMS-DIFAL-kokoelma ei-veronmaksajille suunnatussa toiminnassa (täydennyslakinumero 190/22)  |
-|      Brasilia         |   Maaliskuun 2022.         | 10.0.26HF         |    Sped Fiscal - Saapuvat veroasiakirjat -tietueen C500 (34-40) uudet kentät  |
+|      Brasilia         |   Maaliskuun 2022.    | 10.0.27        |    ICMS-DIFAL-kokoelma ei-veronmaksajille suunnatussa toiminnassa (täydennyslakinumero 190/22)  |
 |      Brasilia         |   Maaliskuun 2022.         | 10.0.27         |    NF-e NT2021.004 v1.00 - Asettelun ja oikeellisuustarkistussääntöjen päivitykset  |
 |      Brasilia         |   Maaliskuun 2022.         | 10.0.27         |    NF-e NT2021.004 v1.00 - Asettelun ja oikeellisuustarkistussääntöjen päivitykset – Retail  |
-|      Tanska         |   2022. tammikuuta  | 10.0.25HF         |    ALV-ilmoituksen esiversio Excelissä |
-|      Suomi         |   2022. tammikuuta  | 10.0.26         |    ALV-ilmoitus TXT-muodossa ja esikatselu Excelissä |
-|      Ranska   |   marraskuu 2021 | 10.0.25         |    Ranskan tietojen arkistointivienti (FEC) - "Puuttuvat numerot perusteltava" -liite |
-|      Italia         |   Helmikuun 2022. | 10.0.25HF, 10.0.26| Unique Certification - 2022 Dynamics 365 Financessa  |
-|      Liettua|   Helmikuun 2022. | 10.0.25HF, 10.0.26HF, 10.0.27 | i.SAF-muutokset 2022-01-01 alkaen Dynamics 365 Financessa  |
-|      Malesia|   Helmikuun 2022. |10.0.26HF | SST-02-veronpalautusilmoitus. Muutoksia ruuduissa  |
-|      Meksiko         |   2022. tammikuuta      | 10.0.26      |   MX - CFDI -versio 4.0 (peruutus)  |
-|      Meksiko         |   Maaliskuun 2022.      | 10.0.25, 10.0.26, 10.0.26      |   CFDI-muotojen versio 4.0 (laskut ja maksut)  |
+|      Brasilia         |   Huhtikuun 2022.         | 10.0.27HF, 10.0.28         |    SPED ECF - ASETTELU 8  |
+|      Itä-Eurooppa         |   Heinäkuu 2022         | 10.0.27HF, 10.0.28HF, 10.0.29         |    Kirjanpidon laskelma päätilin mukaan  |
+|      Liettua|   Helmikuun 2022. | 10.0.27 | i.SAF-muutokset 2022-01-01 alkaen Dynamics 365 Financessa  |
+|      Meksiko         |   Maaliskuun 2022.      | 10.0.27      |   CFDI-muotojen versio 4.0 (laskut ja maksut)  |
 |      Meksiko         |   Helmikuun 2022.      | 10.0.27      |   1.1.2022 CFDI -versio 4.0 tulee voimaan siten, että versiot 3.3 ja 4.0 ovat yhtä aikaa voimassa 1.1.–30.6.2022.  |
-|      Meksiko         |   Maaliskuun 2022.      | 10.0.25, 10.0.26, 10.0.27      |   CFDI-muotojen versio 4.0 (ennakonpidätys)  |
-|      Puola          |   Huhtikuun 2022.     | 10.0.25HF, 10.0.26HF, 10.0.27HF     |   JPK_FA-versio 4 alkaen 1.4.2022; JPK_V7M - uusi skeemaversio tammikuusta 2022 |
-|      Venäjä          |   2022. tammikuuta     | 10.0.25    |   Ota käyttöön sähköisen raportoinnin (ER) kohde venäläisten kirjanpitoasiakirjojen (ensisijaiset asiakirjat ja kirjanpitoraportit) tallentamiseen|
-|      Venäjä          |   2021. joulukuuta     | 10.0.25    |   Käyttöomaisuuden integrointimoduulin (Venäjä) integrointi resurssienhallintamoduuliin|
-|      Venäjä          |   Maaliskuu–huhtikuu 2022     | 10.0.25, 10.0.26    |  Uusi kuljetuslaskun muoto (Valtioneuvoston asetus N 2116 30.11.2021)|
-|      Espanja      |   Maaliskuun 2022.| 10.0.25HF, 10.0.26HF, 10.0.27 | ALV-ilmoitusmalli 303 muuttuu 1.1.2022 Dynamics 365 Financessa|
-
+|      Meksiko         |   Maaliskuun 2022.      | 10.0.27      |   CFDI-muotojen versio 4.0 (ennakonpidätys)  |
+|      Puola          |   Huhtikuun 2022.     | 10.0.27HF, 10.0.28     |   JPK_FA-versio 4 alkaen 1.4.2022; JPK_V7M - uusi skeemaversio tammikuusta 2022 |
+|      Venäjä          |   2022. kesäkuuta     | 10.0.27    |  Raportointi toiminnoista, joissa on jäljitettäviä tuotteita (ostettujen, jäljitettävien tavaroiden, kuten näyttöjen, jääkaappien ja toimistohuonekalujen, poisto omaan käyttöön)|
+|      Singapore      |   Heinäkuu 2022| 10.0.27HF, 10.0.28HF, 10.0.29 | IRAS-tarkistustiedosto (IAF) TXT-muodossa|
+|      Espanja      |   Maaliskuun 2022.| 10.0.27 | ALV-ilmoitusmalli 303 muuttuu 1.1.2022 Dynamics 365 Financessa|
 
 
 ## <a name="additional-resources"></a>Lisäresurssit

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890055"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124707"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -35,10 +35,10 @@ Uusi ruudukon ohjausobjekti sisältää useita hyödyllisiä ja tehokkaita omina
 - Venytettävät sarakkeet
 
 ## <a name="calculating-totals"></a>Lasketaan kokonaissummia
-Taloushallinnon ja toimintojen sovelluksissa käyttäjät voivat tarkastella summia ruudukkojen numeeristen sarakkeiden alla. Nämä kokonaissummat näkyvät alatunnisteosassa ruudukon alareunassa. 
+Talous- ja toimintosovelluksissa käyttäjät voivat tarkastella summia ruudukkojen numeeristen sarakkeiden alla. Nämä kokonaissummat näkyvät alatunnisteosassa ruudukon alareunassa. 
 
 ### <a name="showing-the-grid-footer"></a>Ruudukon alatunnisteen näyttäminen
-Taloushallinnon ja toimintojen sovellusten jokaisen taulukkomuotoisen ruudukon alaosassa on alatunnistealue. Alatunniste voi näyttää arvokkaita tietoja, jotka liittyvät ruudukossa näkyviin tietoihin. Seuraavassa on joitakin esimerkkejä näistä tiedoista:
+Talous- ja toimintosovellusten jokaisen taulukkomuotoisen ruudukon alaosassa on alatunnistealue. Alatunniste voi näyttää arvokkaita tietoja, jotka liittyvät ruudukossa näkyviin tietoihin. Seuraavassa on joitakin esimerkkejä näistä tiedoista:
 
 - Taulukossa vallittuna olevien rivien määrä (kun vähintään kaksi tietuetta on valittuna)
 - Kokonaismäärät määritettyjen numeeristen sarakkeiden alla
@@ -86,7 +86,7 @@ Tämän uuden toiminnon tukemiseksi rivitilan sarakkeen oikealle puolelle on lis
 Kun käyttäjät syöttävät tietoja ennen palvelimen käsittelemisen paikkaa, he voivat odottaa, että tietojen syöttämisessä ilmenee joitakin heikentymistä, kuten hakujen puuttumista, ohjaustason tarkistamista ja oletusarvojen syöttämistä. Käyttäjiä, jotka tarvitsevat avattavan luettelon löytääkseen arvon, kehotetaan odottamaan, että palvelin on kiinni nykyiselle riville. Ohjaustason oikeellisuustarkistus ja oletusarvojen määritys tapahtuvat myös, kun palvelin käsittelee rivin.
 
 ### <a name="pasting-from-excel"></a>Liittäminen Excelistä
-Käyttäjät ovat aina voineet viedä tietoja taloushallinnon ja toimintojen sovelluksista Microsoft Exceliin käyttämällä **Vie Exceliin** -mekanismia. Mahdollisuus syöttää tietoja ennen järjestelmää mahdollistaa kuitenkin sen, että uusi ruudukko tukee taulujen kopioimista Excelistä ja liittämistä suoraan taloushallinnon ja toimintojen sovellusten ruudukkoihin. Ruudukon solu, josta liittämistoiminto käynnistetään, määrittää, mihin kopioitu taulukko alkaa liittää. Kopioidun taulun sisältö korvaa ruudukon sisällön lukuun ottamatta kahta tapausta:
+Käyttäjät ovat aina voineet viedä tietoja talous- ja toimintosovelluksista Microsoft Exceliin käyttämällä **Vie Exceliin** -mekanismia. Mahdollisuus syöttää tietoja ennen järjestelmää mahdollistaa kuitenkin sen, että uusi ruudukko tukee taulujen kopioimista Excelistä ja liittämistä suoraan talous- ja toimintosovellusten ruudukkoihin. Ruudukon solu, josta liittämistoiminto käynnistetään, määrittää, mihin kopioitu taulukko alkaa liittää. Kopioidun taulun sisältö korvaa ruudukon sisällön lukuun ottamatta kahta tapausta:
 
 - Jos kopioidun taulukon sarakkeiden määrä ylittää ruudukon jäljellä olevien sarakkeiden määrän, alkaen liittämissijainnista, käyttäjälle ilmoitetaan, että ylimääräiset sarakkeet on ohitettu. 
 - Jos kopioidun taulukon rivien määrä ylittää ruudukon rivien määrän alkaen liittämissijainnista, aiemmin luodut solut korvataan liitetystä sisällöstä ja kopioidun taulukon ylimääräiset rivit lisätään uusina riveinä ruudukon alaosaan. 
@@ -97,7 +97,7 @@ Tuottavuutta tehostaakseen käyttäjät voivat antaa matemaattisia kaavoja ruudu
 Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsuuruusmerkillä (**=**). Lisätietoja tuetuista operaattoreista ja syntaksista on kohdassa [Tuetut matemaattiset symbolit](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Taulukkomuotoisten tietojen ryhmittely
-Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, **Ryhmittely ruudukoissa** -toimintoa (joka on erillinen uuden ruudukon ohjausominaisuus), käyttäjät voivat järjestää taulukkomuotoiset tiedot mielenkiintoisilla tavoilla taloushallinnon ja toimintojen sovelluksia käyttäen. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
+Yrityskäyttäjien on usein suoritettava tiedoille ad-hoc-analyyseja. Vaikka tämä voidaan tehdä viemällä tiedot Microsoft Exceliin ja käyttämällä pivot-taulukoita, **Ryhmittely ruudukoissa** -toimintoa (joka on erillinen uuden ruudukon ohjausominaisuus), käyttäjät voivat järjestää taulukkomuotoiset tiedot mielenkiintoisilla tavoilla talous- ja toimintosovelluksia käyttäen. Koska tämä toiminto laajentaa **Summat**-toimintoa, **Ryhmittely** mahdollistaa myös merkityksellisten tietojen hankkimisen datasta tarjoamalla ryhmätason välisummia.
 
 Jos haluat käyttää tätä toimintoa, napsauta hiiren kakkospainikkeella saraketta, jota haluat käyttää ryhmittelyperusteena ja valitse **Ryhmittele tämän sarakkeen perusteella**. Tämä toiminto lajittelee tiedot valitun sarakkeen mukaan, lisää uuden **Ryhmittelyperuste**-sarakkeen ruudukon alkuun ja lisää otsikkorivit kunkin ryhmän alkuun. Nämä otsikkorivit sisältävät seuraavat tiedot kustakin ryhmästä:
 
@@ -168,7 +168,7 @@ Jos yksittäinen sivu on jätetty pois uudesta ruudukosta, uusi ruudukko halutaa
 ## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Kehittäjä] Yksittäisten ruudukoiden poisvalitseminen Järjestelmän ennakoiva kirjoitus -toiminnosta
 Jotkin skenaariot eivät toimi hyvin ruudukon *Järjestelmän ennakoiva kirjoitus* -ominaisuuden kanssa. (Esimerkiksi jokin koodi, joka laukeaa, kun rivi tarkistetaan, aiheuttaa tietolähdetutkimusta, ja tutkimus voi tämän jälkeen aiheuttaa vahvistamattomien muokkausten vahingoittumisen aiemmin luoduilla riveillä.) Jos organisaatiosi havaitsee tällaisia skenaarioita, käytettävissä on sovellusliittymä, jonka avulla kehittäjä voi poisvalita yksittäisen ruudukon asynkronisesta rivitarkistuksesta ja palauttaa sen vanhaan toimintoon.
 
-Kun asynkroninen rivitarkistus poistetaan käytöstä ruudukossa, käyttäjät eivät voi luoda uutta riviä tai siirtyä ruudukon eri riville, kun nykyisellä rivillä on oikeellisuustarkistusongelmia. Tämän toimenpiteen sivuvaikutuksena tauluja ei voi liittää Excelistä taloushallinnon ja toimintojen sovellusten ruudukkoihin.
+Kun asynkroninen rivitarkistus poistetaan käytöstä ruudukossa, käyttäjät eivät voi luoda uutta riviä tai siirtyä ruudukon eri riville, kun nykyisellä rivillä on oikeellisuustarkistusongelmia. Tämän toimenpiteen sivuvaikutuksena tauluja ei voi liittää Excelistä talous- ja toimintosovellusten ruudukkoihin.
 
 Jos haluat kieltää ruudukolta asynkronisen rivitarkistuksen käyttämisen, lisää seuraava kutsu `super()`-kohdan jälkeen lomakkeen `run()`-menetelmään.
 
@@ -200,3 +200,4 @@ Tässä osassa luettelo uuden ruudukko-ohjausobjektin tunnetuista ongelmista.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

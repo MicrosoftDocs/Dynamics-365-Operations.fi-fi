@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91cc0e59405bc085e09f01f05ef02e4a0260481e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894263"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111891"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Prospektista käteiseksi -tietojen siirtäminen tietojen integrointiohjelmasta kaksoiskirjoitukseen
 
@@ -32,7 +32,7 @@ Se on asennettava manuaalisesti. Asennuksen jälkeen kaikki pysyy samana, paitsi
 
 Prospektista käteiseksi -tiedot siirretään tietojen integrointiohjelmasta kaksoiskirjoitukseen seuraavien ohjeiden mukaisesti.
 
-1. Tee viimeinen täydellinen synkronointi suorittamalla tietojen integrointiohjelman Prospektista käteiseksi -työt. Tällä tavoin varmistetaan, että molemmissa järjestelmissä (taloushallinnon ja toimintojen sovelluksissa ja asiakkaiden aktivointisovelluksissa) on kaikki tiedot.
+1. Tee viimeinen täydellinen synkronointi suorittamalla tietojen integrointiohjelman Prospektista käteiseksi -työt. Tällä tavoin varmistetaan, että molemmissa järjestelmissä (talous- ja toimintosovelluksissa sekä asiakkaiden aktivointisovelluksissa) on kaikki tiedot.
 2. Mahdolliset tietohävikit estetään viemällä Prospektista käteiseksi -tiedot Microsoft Dynamics 365 Salesista Excel-tiedostoon tai CSV-tiedostoon. Vie seuraavien entiteettien tiedot:
 
     - [Tili](#account-table)
@@ -47,25 +47,25 @@ Prospektista käteiseksi -tiedot siirretään tietojen integrointiohjelmasta kak
 
 3. Poista Prospektista käteiseksi -ratkaisun asennus Sales-ympäristöstä. Tämä vaihe poistaa sarakkeet ja vastaavat tiedot, jotka Prospektista käteiseksi -ratkaisu otti käyttöön.
 4. Asenna kaksoiskirjoitusratkaisu.
-5. Luo kaksoiskirjoitusyhteys taloushallinnon ja toimintojen sovelluksen ja asiakkaan aktivointisovelluksen välille vähintään yhdessä yrityksessä.
+5. Luo kaksoiskirjoitusyhteys talous- ja toimintosovelluksen sekä asiakkaan aktivointisovelluksen välille vähintään yhdessä yrityksessä.
 6. Ota kaksoiskirjoituksen taulujen yhdistämismääritykset käyttöön ja suorita tarvittavien viitetietojen ensimmäinen synkronointi. (Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).) Pakollisia tietoja ovat esimerkiksi asiakasryhmät, maksuehdot ja maksuaikataulut. Älä ota kaksoiskirjoituksen yhdistämismäärityksiä käyttöön tauluissa, jotka on alustettava. Tällaisia tauluja ovat esimerkiksi tili, tarjous, tarjousrivi, tilaus ja tilausrivi.
 7. Valitse asiakkaan aktivointisovelluksessa **Lisäsetukset \> Järjestelmäasetukset \> Tietojen hallinta \> Kaksoiskappaleiden tunnistussäännöt** ja poista kaikki säännöt käytöstä.
 8. Alusta vaiheessa 2 mainitut taulut. Lisätietoja on jäljempänä tässä artikkelissa.
-9. Avaa taloushallinnon ja toimintojen sovellus ja ota käyttöön taulujen yhdistämismääritykset, kuten tilin, tarjouksen, tarjousrivin, tilauksen ja tilausrivin taulujen yhdistämismääritykset. Suorita sitten ensimmäinen synkronointi. (Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).) Tämä prosessi synkronoi taloushallinnon ja toimintojen sovelluksen lisätiedot, kuten käsittelyn tilan, toimitus- ja laskutusosoitteet, toimipaikat ja varastot.
+9. Avaa talous- ja toimintosovellus ja ota käyttöön taulujen yhdistämismääritykset, kuten tilin, tarjouksen, tarjousrivin, tilauksen ja tilausrivin taulujen yhdistämismääritykset. Suorita sitten ensimmäinen synkronointi. (Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).) Tämä prosessi synkronoi talous- ja toimintosovelluksen lisätiedot, kuten käsittelyn tilan, toimitus- ja laskutusosoitteet, toimipaikat ja varastot.
 
 ## <a name="account-table"></a>Tilitaulu
 
 1. Anna yrityksen nimi, kuten **USMF**, **Yritys**-sarakkeessa.
 2. Anna **Asiakas** staattisen arvona **Suhteen tyyppi** -sarakkeessa. Jokaista tilityyppiä ei ehkä kannata luokitella asiakkaaksi liiketoimintalogiikassa.
-3. Anna **Asiakasryhmän tunnus** -sarakkeessa asiakasryhmän numero taloushallinnon ja toimintojen sovelluksesta. Prospektista käteiseksi -ratkaisun oletusarvo on **10**.
-4. Jos käytössä on Prospektista käteiseksi -ratkaisua, jossa **asiakasnumeroa** ei ole mukautettu, anna **Asiakasnumero**-arvon **Osapuolinumero**-sarakkeessa. Jos mukautuksia on tehty etkä tiedä osapuolinumeroa, nouda tämä tieto taloushallinnon ja toimintojen sovelluksesta.
+3. Anna **Asiakasryhmän tunnus** -sarakkeessa asiakasryhmän numero talous- ja toimintosovelluksesta. Prospektista käteiseksi -ratkaisun oletusarvo on **10**.
+4. Jos käytössä on Prospektista käteiseksi -ratkaisua, jossa **asiakasnumeroa** ei ole mukautettu, anna **Asiakasnumero**-arvon **Osapuolinumero**-sarakkeessa. Jos mukautuksia on tehty etkä tiedä osapuolinumeroa, nouda tämä tietotalous- ja toimintosovelluksesta.
 
 ## <a name="contact-table"></a>Yhteyshenkilötaulu
 
 1. Anna yrityksen nimi, kuten **USMF**, **Yritys**-sarakkeessa.
 2. Määritä seuraavat sarakkeet CSV-tiedoston **IsActiveCustomer**-arvon perusteella:
 
-    - Jos **IsActiveCustomer**-arvoksi on CSV-tiedostossa määritetty **Kyllä**, määritä **Myytävissä**-sarakkeen arvoksi **Kyllä**. Anna **Asiakasryhmän tunnus** -sarakkeessa asiakasryhmän numero taloushallinnon ja toimintojen sovelluksesta. Prospektista käteiseksi -ratkaisun oletusarvo on **10**.
+    - Jos **IsActiveCustomer**-arvoksi on CSV-tiedostossa määritetty **Kyllä**, määritä **Myytävissä**-sarakkeen arvoksi **Kyllä**. Anna **Asiakasryhmän tunnus** -sarakkeessa asiakasryhmän numero talous- ja toimintosovelluksesta. Prospektista käteiseksi -ratkaisun oletusarvo on **10**.
     - Jos **IsActiveCustomer**-arvoksi on CSV-tiedostossa määritetty **Ei**, määritä **Myytävissä**-sarakkeen arvoksi **Ei** ja **Yhteyshenkilö kohteelle** -sarakkeen arvoksi **Asiakas**.
 
 3. Jos käytössä Prospektista käteiseksi -ratkaisu, jossa **yhteyshenkilön numeroa** ei ole mukautettu, määritä seuraavat sarakkeet:
@@ -76,7 +76,7 @@ Prospektista käteiseksi -tiedot siirretään tietojen integrointiohjelmasta kak
 
 ## <a name="invoice-table"></a>Laskutaulu
 
-Koska **Lasku**-taulun tiedot on suunniteltu siirtymään vain yhteen suuntaan, taloushallinnon ja toimintojen sovelluksesta asiakkaan aktivointisovellukseen, alustusta ei tarvita. Ensimmäisen synkronoinnin suorittaminen siirtää kaikki tarvittavat tiedot taloushallinnon ja toimintojen sovelluksesta asiakkaan aktivointisovellukseen. Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).
+Koska **Lasku**-taulun tiedot on suunniteltu siirtymään vain yhteen suuntaan, talous- ja toimintosovelluksesta asiakkaan aktivointisovellukseen, alustusta ei tarvita. Ensimmäisen synkronoinnin suorittaminen siirtää kaikki tarvittavat tiedot talous- ja toimintosovelluksesta asiakkaan aktivointisovellukseen. Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Tilaustaulu
 
@@ -94,7 +94,7 @@ Koska **Lasku**-taulun tiedot on suunniteltu siirtymään vain yhteen suuntaan, 
 
 ## <a name="products-table"></a>Tuotteet-taulu
 
-Koska **Tuotteet**-taulun tiedot on suunniteltu siirtymään vain yhteen suuntaan, taloushallinnon ja toimintojen sovelluksesta asiakkaan aktivointisovellukseen, alustusta ei tarvita. Ensimmäisen synkronoinnin suorittaminen siirtää kaikki tarvittavat tiedot taloushallinnon ja toimintojen sovelluksesta asiakkaan aktivointisovellukseen. Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).
+Koska **Tuotteet**-taulun tiedot on suunniteltu siirtymään vain yhteen suuntaan, talous- ja toimintosovelluksesta asiakkaan aktivointisovellukseen, alustusta ei tarvita. Ensimmäisen synkronoinnin suorittaminen siirtää kaikki tarvittavat tiedot talous- ja toimintosovelluksesta asiakkaan aktivointisovellukseen. Lisätietoja on kohdassa [Alustavaa synkronointia koskevia huomautuksia](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Tarjous- ja tarjoustuotetaulut
 
@@ -102,3 +102,4 @@ Käytä **Tarjous**-taulun osalta tämän artikkelin aiemmassa osassa [Tilaustau
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

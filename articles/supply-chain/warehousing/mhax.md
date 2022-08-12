@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907084"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068356"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Materiaalin käsittelylaitteiden rajapinta (MHAX)
 
 [!include [banner](../../includes/banner.md)]
 
-*Materiaalin käsittelylaitteiden rajapintaa* (MHAX) voi käyttää yhteyden muodostamiseen edistynyttä varastonhallintaa (WMS) Microsoft Dynamics 365 Supply Chain Managementissa käyttävän varaston ja ulkoisten fyysisten materiaalinkäsittelyjärjestelmien (MH) välille. WMS- ja MH-järjestelmien välinen rajapinta koostuu kahdesta jonosta: yksi lähteville tapahtumille (WMS -> MH) ja toinen saapuville tapahtumille (MH -> WMS). WMS-järjestelmä luo lähteviä tapahtumia niiden työrivien perusteella, jotka luodaan työn luomisen ja suorittamisen eri prosessien aikana. Tämän jälkeen MH-järjestelmä kyselee WMS-järjestelmältä säännöllisesti uusia tapahtumia ja käsittelee vastaukset. Kun MH-järjestelmä on lopettanut tapahtumien käsittelyn työohjeiden mukaisesti, se lähettää saapuvia tapahtumia, kuten työrivien valmistumisia ja lyhyitä keräilyjä.
+*Materiaalin käsittelylaitteiden liittymää* (MHAX) voi käyttää yhteyden muodostamiseen varastonhallintaprosesseja (WMS) Microsoft Dynamics 365 Supply Chain Managementissa käyttävän varaston ja ulkoisten fyysisten materiaalinkäsittelyjärjestelmien (MH) välille. WMS- ja MH-järjestelmien välinen rajapinta koostuu kahdesta jonosta: yksi lähteville tapahtumille (WMS -> MH) ja toinen saapuville tapahtumille (MH -> WMS). WMS-järjestelmä luo lähteviä tapahtumia niiden työrivien perusteella, jotka luodaan työn luomisen ja suorittamisen eri prosessien aikana. Tämän jälkeen MH-järjestelmä kyselee WMS-järjestelmältä säännöllisesti uusia tapahtumia ja käsittelee vastaukset. Kun MH-järjestelmä on lopettanut tapahtumien käsittelyn työohjeiden mukaisesti, se lähettää saapuvia tapahtumia, kuten työrivien valmistumisia ja lyhyitä keräilyjä.
 
 Seuraavassa kuvassa esitetään eri elementit sekä järjestys, jossa prosessit tapahtuvat, kun käytetään MHAX-integrointia.
 

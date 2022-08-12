@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692419"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178530"
 ---
 # <a name="copy-an-instance"></a>Kopioi esiintymä
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Kohde:** Human Resources itsenäisessä infrastruktuurissa_ 
 
+> [!NOTE]
+> Kesäkuusta 2022 alkaen Human Resources -ympäristöt voidaan käyttöön vain talous- ja toimintosovellusinfrastruktuurissa. Lisätietoja kohdassa [Human Resourcesin valmisteleminen talous- ja toimintosovellusinfrastruktuurissa](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Talous- ja toimintosovellusinfrastruktuuri ei tue esiintymään kopiointia. Uusia ympäristöjä voidaan ottaa käyttöön ja käyttää tietokantasiirtoja kopioiden luontiin. Lisätietoja itsepalvelun käyttöönotoista on kohdassa [Itsepalvelun käyttöönoton yleiskatsaus](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). Lisätietoja tietokantasiirroista talous- ja toimintosovellusinfrastruktuurissa on kohdassa [Tietokannan siirtotoimintojen aloitussivu](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 Microsoft Dynamics 365 Human Resources -tietokannan voi kopioida eristysympäristöön Microsoft Dynamics Lifecycle Servicesin (LCS) avulla. Jos käytössä on toinen eristysympäristö, voit kopioida myös tietokannan siitä kohde-eristysympäristöön.
 
@@ -50,7 +55,7 @@ Human Resources -tietokannan kopioinnin yhteydessä tapahtuu seuraavaa:
 
 - Microsoft Azure Blob -tallennustilassa olevia asiakirjoja ei kopioida ympäristöstä toiseen. Tämän vuoksi liitettyjä asiakirjoja ja malleja ei kopioida, ja ne jäävät lähdeympäristöön.
 
-- Mitkään käyttäjät, paitsi käyttäjät, joilla on järjestelmänvalvojan käyttöoikeusrooli ja muu sisäisen palvelun käyttäjätili, eivät ole käytettävissä. Järjestelmänvalvojakäyttäjä voi poistaa tietoja tai piilottaa niitä näkyvistä, ennen kuin muut käyttäjät pääsevät takaisin järjestelmään.
+- Mitkään käyttäjät, paitsi käyttäjät, joilla on järjestelmänvalvojan käyttöoikeusrooli ja muu sisäisen palvelun käyttäjätili, eivät ole käytettävissä. Järjestelmänvalvojakäyttäjä voi poistaa tietoja, ennen kuin muut käyttäjät pääsevät takaisin järjestelmään.
 
 - Käyttäjän, jolla on järjestelmänvalvojan käyttöoikeusrooli, on suoritettava vaadittavat muutokset määrityksiin, kuten yhdistettävä integroinnin päätepisteet uudelleen tiettyihin palveluihin tai URL-osoitteisiin.
 
@@ -76,6 +81,8 @@ Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sit
    ![[Valitse Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Valitse kopioitava Power Apps-ympäristö ja sitten **Kopioi**.
+
+Lisätietoja Power Apps -ympäristöjen kopioinnista on kohdassa [Ympäristön kopioiminen](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. Kun kopiointiprosessi on valmis, kirjaudu kohde-esiintymään ja ota Dataverse -integrointi käyttöön. Lisätietoja ja -ohjeita on kohdassa [Dataverse -integroinnin määrittäminen](./hr-admin-integration-common-data-service.md).
 

@@ -1,6 +1,6 @@
 ---
 title: Organisaatiohierarkia Dataversessa
-description: Tässä artikkelissa kuvataan organisaation tietojen integraatiota talous- ja toimintosovellusten ja Dataversen välillä.
+description: Tässä artikkelissa käsitellään organisaation tietojen integraatiota talous- ja toimintosovellusten sekä Dataversen välillä.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4edaf5b9c50e9d8781ff703328ac786d71ee782
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f900637855bee3e21916652a373c683e6bf1392
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884729"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112015"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisaatiohierarkia Dataversessa
 
@@ -28,11 +28,11 @@ Vaikka Dataversessa ei ole käsitettä organisaatiohierarkia, siinä on joitakin
 
 ## <a name="data-flow"></a>Tietojen virtaus
 
-Liiketoiminnan ekosysteemillä, joka koostuu taloushallinnon ja toimintojen sovelluksesta ja Dataversesta, on jatkossakin organisaatiohierarkia. Tämä organisaatiohierarkia perustuu taloushallinnon ja toimintojen sovelluksiin, mutta se näkyy Dataversessa tiedon jakamista ja laajennettavuutta varten. Seuraavassa kuvassa näkyy organisaatiohierarkian tiedot, jotka näkyvät Dataversessa yksisuuntaisena tiedonkulkuna Finance and Operations- sovelluksista Dataverseen.
+Liiketoiminnan ekosysteemillä, joka koostuu talous- ja toimintosovelluksista sekä Dataversesta, on jatkossakin organisaatiohierarkia. Tämä organisaatiohierarkia perustuu talous- ja toimintosovelluksiin, mutta se näkyy Dataversessa tiedon jakamista ja laajennettavuutta varten. Seuraavassa kuvassa näkyy organisaatiohierarkian tiedot, jotka näkyvät Dataversessa yksisuuntaisena tiedonkulkuna talous- ja toimintosovelluksista Dataverseen.
 
 ![Arkkitehtuurikuva.](media/dual-write-data-flow.png)
 
-Organisaatiohierarkian taulukoiden yhdistämismääritykset ovat käytettävissä yksisuuntaiseen tietojen synkronointiin taloushallinnon ja toimintojen sovelluksista Dataverseen.
+Organisaatiohierarkian taulukoiden yhdistämismääritykset ovat käytettävissä yksisuuntaiseen tietojen synkronointiin talous- ja toimintosovelluksista Dataverseen.
 
 ## <a name="templates"></a>Mallit
 
@@ -52,3 +52,4 @@ Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset  
 Sisäisen organisaation tiedot ovat Dataversessa peräisin kahdesta taulusta: **Toimintoyksikkö** ja **Yritykset**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -9,22 +9,22 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 33b4f17cd46338b62bed96f0a285e7b9634cc87a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886903"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067816"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations7.3.2 -versiossa.
+Tässä artikkelissa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 Financen versiossa 7.3.2.
 
 ## <a name="activation"></a>Aktivointi
 
-Oletusarvon mukaan Finance and Operations 7.3.2:n käyttöönoton yhteydessä ohjelma määritetään käyttämään vanhaa ominaisuutta laskelman kirjauksia varten. Ottaaksesi käyttöön parannetun laskelman kirjaustoiminnon sinun on otettava käyttöön sen määritysavain.
+Talous- ja toimintosovellusten version 7.3.2 käyttöönoton yhteydessä ohjelma määritetään oletusarvoisesti käyttämään vanhaa ominaisuutta laskelman kirjauksia varten. Ottaaksesi käyttöön parannetun laskelman kirjaustoiminnon sinun on otettava käyttöön sen määritysavain.
 
 - Siirry kohtaan **Järjestelmän hallinta** \> **Asetukset** \> **Käyttöoikeuden konfiguraatio**, ja poista sitten **Vähittäismyynti ja kauppa**-solmusta poista **Laskelmat (vanhat)** -valintaruutu ja valitse **Laskelmat**-valintaruutu.
 
@@ -190,3 +190,4 @@ Laskelman kirjaamistoimintoon on tehty muita taustajärjestelmän parannuksia, j
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

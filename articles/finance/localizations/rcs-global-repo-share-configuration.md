@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f789fd86904c1e625be8fc5be3bfe456fe0659b4
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888920"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068745"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Microsoft Regulatory Configuration Servicesin yleisen säilön sähköisen raportoinnin (ER) määritysten jakaminen ulkoisten organisaatioiden kanssa
 
@@ -36,7 +36,7 @@ Seuraavissa menettelyissä selitetään, miten RCS-käyttäjä voi jakaa RCS-esi
 
 Lisäksi on varmistettava, että RCS-ympäristö on valmisteltu yritykseen.
 
-1. Valitse rahoitus- ja toiminta -sovelluksessa **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
+1. Valitse talous- ja toimintosovelluksessa **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
 2. Jos yritykseen ei ole valmisteltu RCS-ympäristöä, valitse **Regulatory Services – ulkoinen määritys** -linkki ja valmistele sitten sellainen ohjeiden mukaisesti.
 
 Jos yritykseen on valmisteltu RCS-ympäristö, siirry siihen sivun URL-osoitteen avulla valitsemalla kirjautumisvaihtoehto.

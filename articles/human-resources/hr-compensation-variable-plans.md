@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853071"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070555"
 ---
 # <a name="create-variable-compensation-plans"></a>Luo muuttuvia kompensaatiosuunnitelmia
 
@@ -42,7 +42,11 @@ Useat tekijät, kuten työntekijän suorituskyky, työntekijän kompensaatiotaso
 Vaihtoehtoisesti, yritykset voivat määrittää **hyvityssäännöt**. **Hyvityssäännöt** kuvaavat, kuinka muuttuva palkkio olisi jaettava ajan mittaan. Esimerkiksi hyvityssääntö saattaa määrittää, että työntekijä saa 25 prosenttia kokonaispalkkiostaan vuosittain seuraavan neljän vuoden ajan. Hyvityssäännöt ovat vain tiedoksi.
 
 ## <a name="variable-compensation-plans"></a>Muuttuvat kompensaatiosuunnitelmat
-**Muuttuvassa kompensaatiosuunnitelmassa** on säännöt, laskentamenetelmät ja oletusarvot muuttuvan kompensaation laskemiseksi rekisteröityneille työntekijöille. Kun luot muuttuvan kompensaatiosuunnitelman, muuttuvan kompensaation tyyppi on määritettävä. Muuttuvan kompensaation tyyppi määrittää, onko laskeeko järjestelmä valuuttasumman tai yksiköiden määrän palkkioksi. Määritä myös laskentamenetelmä:
+**Muuttuvassa kompensaatiosuunnitelmassa** on säännöt, laskentamenetelmät ja oletusarvot muuttuvan kompensaation laskemiseksi rekisteröityneille työntekijöille. Kun luot muuttuvan kompensaatiosuunnitelman, muuttuvan kompensaation tyyppi on määritettävä. Muuttuvan kompensaation tyyppi määrittää, onko laskeeko järjestelmä valuuttasumman tai yksiköiden määrän palkkioksi. 
+
+**Rajoita käyttö valittuihin rooleihin** -parametri rajoittaa kompensaatiosuunnitelman käytön niille valituille käyttöoikeusrooleille, jotka on määritetty kyseiseen suunnitelmaan Human Resourcesissa. Kun kompensaatiosuunnitelmia luodaan esimerkiksi johtajille eikä niiden pitäisi näkyä kaikille HR-rooleille, kyseisten kompensaatiosuunnitelmien käyttöoikeutta voi rajoittaa tämän parametrin avulla. 
+
+Määritä myös laskentamenetelmä:
 
 -   **Ajankohta** – muuttuvien palkkioiden laskeminen perustuu kiinteään kompensaatioon, joka työntekijällä oli tiettynä päivänä. Päivämäärä määritetään prosessitapahtumassa, kun uusia kompensaatiosummia käsitellään.
 -   **Yhdistelmä** – palkkiosumma lasketaan kullekin yksilölliselle kiinteän kompensaation palkkiolle, joka työntekijällä oli jakson alkamispäivämäärän ja prosessitapahtuman päättymispäivän välillä. Sen jälkeen hinnat lisätään yhteen lopullisen palkkion määrittämiseksi. Esimerkiksi syklin aikana työntekijä siirretään toiseen toimeen, jossa on eri taksa. Tässä tapauksessa, muuttuvaa palkkiota oikaistaan sille aikavälille, jolla työntekijällä oli kukin palkka.

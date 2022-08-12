@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c7199f5a5a401e627bb5fac9dece3950900e5f97
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903779"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067908"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Lähetyksen automaattinen vapautus cross-dockingia varten
 
@@ -40,8 +40,8 @@ Tällä cross-docking-toiminnolla on kaksi etua:
 
 | Edellytys | Kuvaus |
 |---|---|
-| Kohde | Nimike on otettava käyttöön varastonhallintaprosesseille.<p>**Huomautus:** Tavaroita, joissa sovelletaan todellista painoa, ei voi sisällyttää cross-docking-prosesseihin.</p> |
-| Varasto | Varastossa on oltava käytössä varastonhallintaprosessit. |
+| Kohde | Nimike on otettava käyttöön varastonhallintaprosesseille (WMS).<p>**Huomautus:** Tavaroita, joissa sovelletaan todellista painoa, ei voi sisällyttää cross-docking-prosesseihin.</p> |
+| Varasto | Varastossa on oltava käytössä varastonhallintaprosessit (WMS). |
 | Cross-docking-mallit | Jokaisessa varastossa on oltava käytössä vähintään yksi cross-docking-malli, jossa käytetään kysynnän vapautuskäytäntöä **Tarjonnan vastaanoton yhteydessä**. |
 | Työluokka | **Cross-docking**-työtilaustyypille on luotava cross-docking-työluokan tunnus. |
 | Työmallit | **Cross-docking**-työtilaustyypin työmallien on luotava cross-dockingin keräily- ja asetustöitä. |

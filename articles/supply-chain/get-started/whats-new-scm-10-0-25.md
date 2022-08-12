@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954488"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167728"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Dynamics 365 Supply Chain Management -sovelluksen uudet tai muuttuneet ominaisuudet, versio 10.0.25 (huhtikuu 2022)
 
@@ -36,8 +36,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän art
 | Varasto&nbsp;ja&nbsp;logistiikka | [Vaarallisten materiaalien parannukset](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Tulossa pian | Toimintojen hallinta:<br>*Vaarallisten materiaalien parannukset* |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Pakkausasemien pakkaustyö](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Tulossa pian | Toimintojen hallinta:<br>*Pakkausasemien pakkaustyö* |
 | Varasto&nbsp;ja&nbsp;logistiikka | [Skannaa varaston viivakoodit GS1-muotostandardien avulla](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-viivakoodit ja QR-koodit](../warehousing/gs1-barcodes.md) | Toimintojen hallinta:<br>*Skannaa GS1-viivakoodit* |
-| Valmistus | [Materiaalin kulutus ja varaukset tuotannon käyttöliittymässä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md) | Toimintojen hallinta:<br>*(Esiversio) Rekisteröi materiaalin kulutus tuotannon käyttöliittymässä (muu kuin VHJ)*<br><br>Ja/tai:<br><br>Toimintojen hallinta:<br>*(Esiversio) Rekisteröi materiaalikulutus tuotannon käyttöliittymässä (käytössä WMS:ssä)* |
-| Valmistus | [Rekisteröi materiaalikulutus skaalausyksiköissä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Valmistuksen suorituksen kuormitukset pilven ja reunan asteikon yksiköitä varten](../cloud-edge/cloud-edge-workload-manufacturing.md) | Toimintojen hallinta:<br>*Rekisteröi materiaalikulutus skaalausyksikön mobiilisovelluksessa* |
+| Valmistus | [Materiaalin kulutus ja varaukset tuotannon käyttöliittymässä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md) | Toimintojen hallinta:<br>*Rekisteröi materiaalinkulutus tuotannon käyttöliittymässä (muu kuin WMS)*<br><br>Ja/tai:<br><br>Toimintojen hallinta:<br>*(Esiversio) Rekisteröi materiaalikulutus tuotannon käyttöliittymässä (käytössä WMS:ssä)* |
 | Suunnittelu | [Suunnittelun optimointi - keskitetty kalenterin ylläpito](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalenterit ja pääsuunnittelu](../master-planning/supply-chain-calendars-master-planning.md) | Oletusarvoisesti käytössä |
 | Suunnittelu | [Optimointiehdotusten suunnittelu aiemmin luodun toimituksen optimointia varten](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Toimintosanomat](../master-planning/action-messages.md) | Oletusarvoisesti käytössä |
 | Suunnittelu | Yksinkertaiset suunnitellut tilaukset | [Yksinkertaiset suunnitellut tilaukset](../master-planning/planning-optimization/planned-orders-simplified.md ) | Toimintojen hallinta:<br>*Yksinkertaiset suunnitellut tilaukset* |
@@ -183,9 +182,9 @@ Taulukossa luetellaan myös aiemmat julkisen esiversion ominaisuudet, mutta jotk
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.25 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (huhtikuu 2022) käyttöympäristön päivitysversio 10.0.25.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.25 sisältää Platform updateja. Lisätietoja on kohdassa [Talous- ja toimintosovellusten (huhtikuu 2022) käyttöympäristön päivitysversio 10.0.25](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -209,3 +208,4 @@ Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

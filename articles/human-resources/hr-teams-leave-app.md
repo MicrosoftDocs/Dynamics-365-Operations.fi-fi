@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4843e5bc0cc97f47e212c0cb4a6ddc4a2032f306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cdfd8db68647623e2b5f1b9eca93b57776e1bfe9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858124"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067028"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Lomapyyntöjen hallinta Teamsissa
 
@@ -185,7 +185,7 @@ Valitse Human Resources -sovelluksesta **Asetukset** ja sitten **Käyttäjän as
 
 ![Human Resources -sovelluksen Käyttäjän asetukset -osio.](./media/hr-teams-leave-app-user-options.png)
 
-Jos sinulla edelleen ilmenee käännöksiin liittyviä ongelmia, kerro niistä meille. Lisätietoa on kohdassa [Talous- ja toimintosovellusten tai Lifecycle Servicesin (LCS) tuki](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+Jos sinulla edelleen ilmenee käännöksiin liittyviä ongelmia, kerro niistä meille. Lisätietoa on kohdassa [Talous- ja toimintosovellusten tai Lifecycle Servicesin (LCS) tuen hakeminen](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Virhe hyväksyttäessä lomapyyntöjä Human Resources -sovelluksessa Teamsissa
 
@@ -245,3 +245,4 @@ Ohjeet Human Resources -sovelluksen käyttöoikeuksien rajoittamiseen Microsoft 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

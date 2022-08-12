@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 14a49d1d6c956b37ff9b2bec387615dc75d060e1
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022561"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167758"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -92,9 +92,9 @@ Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistett
 
 Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Joillekin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen materiaalien jäljitettävyyden.
 
-Tästä ominaisuudesta on kaksi versiota. Yksi toiminto tukee vain nimikkeitä, joita *ei ole* otettu käyttöön varaston lisäprosessien (WMS) käytössä. Toinen tukee nimikkeitä, jotka *on* otettu käyttöön käyttämään WMS:ää. Voit käyttää tätä toimintoa ottamalla käyttöön seuraavat ominaisuudet [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (tässä järjestyksessä) yhdellä tai molemmilla toiminnoilla sen mukaan, onko käytössä WMS-nimikkeitä:
+Tästä ominaisuudesta on kaksi versiota. Yksi toiminto tukee vain nimikkeitä, joissa *ei ole* otettu käyttöön varastonhallintaprosesseja (WMS). Toinen tukee nimikkeitä, jotka *on* otettu käyttöön käyttämään WMS:ää. Voit käyttää tätä toimintoa ottamalla käyttöön seuraavat ominaisuudet [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (tässä järjestyksessä) yhdellä tai molemmilla toiminnoilla sen mukaan, onko käytössä WMS-nimikkeitä:
 
-- *(Esiversio) Rekisteröi materiaalin kulutus tuotannon käyttöliittymässä (muu kuin VHJ)*
+- *Rekisteröi materiaalinkulutus tuotannon käyttöliittymässä (muu kuin WMS)*
 - *(Esiversio) Rekisteröi materiaalikulutus tuotannon käyttöliittymässä (käytössä WMS:ssä)*
 
 > [!IMPORTANT]

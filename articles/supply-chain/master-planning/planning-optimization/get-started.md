@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900967"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112177"
 ---
 # <a name="get-started-with-planning-optimization"></a>Suunnittelun optimoinnin aloittaminen
 
@@ -40,7 +40,7 @@ Ennen suunnittelun optimoinnin ottamista käyttöön on syytä arvioida suunnitt
 
 ## <a name="availability"></a>Saatavuus
 
-Suunnittelun optimointi on tällä hetkellä käytettävissä seuraavilla Azuren maantieteellisillä alueilla: Yhdysvallat, Kanada, Brasilia, Eurooppa, Yhdistynyt kuningaskunta, Australia, Tyynenmeren Aasia, Japani ja Intia. Jos yrität asentaa apuohjelman toiselta maantieteelliseltä alueelta, LCS näyttää sanoman, jonka mukaan tätä maantieteellistä aluetta ei tueta. Lisätietoja Azuren maantieteellisistä alueista ja niihin liittyvistä alueista on ohjeaiheessa [Azuren maantieteelliset alueet](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Suunnittelun optimointi on tällä hetkellä käytettävissä seuraavilla Azuren maantieteellisillä alueilla: Yhdysvallat, Kanada, Brasilia, Eurooppa, Ranska, Yhdistynyt kuningaskunta, Australia, Tyynenmeren Aasia, Japani ja Intia. Jos yrität asentaa apuohjelman toiselta maantieteelliseltä alueelta, LCS näyttää sanoman, jonka mukaan tätä maantieteellistä aluetta ei tueta. Lisätietoja Azuren maantieteellisistä alueista ja niihin liittyvistä alueista on ohjeaiheessa [Azuren maantieteelliset alueet](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Huomaa, että suunnittelun optimointi ei tue Dynamics 365 Supply Chain Management -järjestelmän paikallisia käyttöönottoja.
 
@@ -58,7 +58,7 @@ Ennen kuin suunnittelu optimoinnin apuohjelma voidaan asentaa, seuraavien edelly
 
 - Supply Chain Managementia on käytettävä korkean käytettävyyden ympäristössä, jossa LCS on käytössä, taso 2 tai korkeampi (ei OneBox-ympäristö). Käytössä on Dynamics 365 Supply Chain Managementin versio 10.0.7 tai uudempi versio. Jos yrität asentaa apuohjelman OneBox-ympäristöön, asennus ei ole valmis ja sinun on peruutettava asennus.
 
-- Järjestelmä on määritettävä Power Platform -integrointia varten. Lisätietoja on kohdassa [Microsoft Power Platformin ja talous- ja toimintosovellusten integrointi](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+- Järjestelmä on määritettävä Power Platform -integrointia varten. Lisätietoja on kohdassa [Microsoft Power Platformin sekä talous- ja toimintosovellusten integrointi](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Suunnittelun optimoinnin käyttöoikeuden ottaminen käyttöön
 
@@ -135,3 +135,4 @@ Jos suunnittelun optimointi on otettu käyttöön, suunnittelun optimoinnin apuo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

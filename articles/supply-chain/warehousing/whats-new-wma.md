@@ -10,18 +10,35 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 19193cc445bc9c7d79463734d7d5787737ecc4f7
+ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954660"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "9188988"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen uudet ja muuttuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa luetellaan ominaisuudet, korjaukset, parannukset ja tunnetut ongelmat jokaisen Microsoft Dynamics 365 Supply Chain Managementin Warehouse Management -mobiilisovelluksen vapautetun version osalta.
+
+## <a name="version-20300"></a>Versio 2.0.30.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Parannettu vakaus.
+
+## <a name="version-20280"></a>Versio 2.0.28.0
+
+Tämä versio sisältää seuraavat uudet ominaisuudet, korjaukset ja parannukset:
+
+- Parannettu vakaus.
+- Otettiin käyttöön mahdollisuus jatkaa tarkistamista, vaikka virheikkuna näkyy näytössä.
+- Lisätty ASCII 10 -tuki viivakoodeihin.
+- Parannettu vaiheohjeiden ikkunoiden käytettävyyttä.
+- Korjattiin ongelma, jossa tyhjä ikkuna näytettiin joskus.
+- Korjattiin ongelma, jossa luetteloita ei vieritä oikein Microsoft Windowsissa suoritettaessa.
 
 ## <a name="version-20250"></a>Versio 2.0.25.0
 

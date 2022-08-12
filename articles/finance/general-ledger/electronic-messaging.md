@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: cf9ee77b2588283f0b34f2099d6f8d78e15a5af5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4e765c6d56e0ab6d209c27a70fd4b7e52273c103
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934680"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069877"
 ---
 # <a name="electronic-messaging"></a>Sähköiset sanomat
 
@@ -76,7 +76,7 @@ Seuraavassa taulukossa on tietoja joistakin maakohtaisiin säännöksiin perustu
 |-------------|--------------|------------------------|
 | Espanja       | [ALV-tietojen välitön lähetys (Suministro Inmediato de Información del IVA, SII)](../localizations/emea-esp-sii.md) | |
 | Unkari     | [Verkkolaskutusjärjestelmä](../localizations/emea-hun-online-invoicing.md) | |
-| Yhdistynyt kuningaskunta | [Making Tax Digital (MTD) – ALV-ilmoituksen lähetys](../localizations/emea-gbr-mtd-vat-integration.md) | [Finance and Operations: UK Digital Tax - ALV-ilmoitus Dynamics 365:ssa](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
+| Yhdistynyt kuningaskunta | [Making Tax Digital (MTD) – ALV-ilmoituksen lähetys](../localizations/emea-gbr-mtd-vat-integration.md) | [Talous- ja toimintosovellukset: UK Digital Tax - ALV-ilmoitus Dynamics 365:ssä](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
 | Liettua   | [i.SAF-raportointi](../localizations/emea-ltu-isaf.md) | |
 | Puola      | [ALV-ilmoitus ja rekisterit (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: SAF/JPK:n ALV-auditointirekisterit](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
 | Alankomaat | [Alankomaiden ALV-ilmoitus](../localizations/emea-nl-vat-declaration-netherlands.md) | |
@@ -97,4 +97,5 @@ Seuraavassa taulukossa on tietoja joistakin maakohtaisiin säännöksiin perustu
 | Sveitsi | [ALV-ilmoitus (Sveitsi)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857370"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070466"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ilmoita valmiiksi työkorttilaitteesta
 
@@ -50,7 +50,7 @@ Lisätietoja **Tuotantotilauksen oletukset** -sivun käyttämisestä on kohdassa
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Eräohjattujen nimikkeiden ilmoittaminen valmiiksi
 
-Työkorttilaite tukee kolmea eränimikkeiden raportointiskenaariota. Nämä skenaariot koskevat sekä nimikkeitä, jotka on otettu käyttöön lisävarastoprosesseja varten, että nimikkeitä, jotka eivät ole käytössä lisävarastoprosesseissa.
+Työkorttilaite tukee kolmea eränimikkeiden raportointiskenaariota. Nämä skenaariot koskevat sekä nimikkeitä, joissa varastonhallintaprosessit (WMS) otettu käyttöön, että nimikkeitä, joissa WMS:ää ei ole otettu käyttöön.
 
 - **Manuaalisesti määritellyt eränumerot** - Työntekijät voivat määrittää mukautetun eränumeron. Tämä eränumero voi olla peräisin ulkoisesta lähteestä, jota järjestelmä ei tunne.
 - **Ennalta määritetyt eränumerot** - Työntekijät valitsevat eränumeron niiden eränumeroiden luettelosta, jotka järjestelmä luo automaattisesti, ennen kuin tuotantotilaus vapautetaan työkorttilaitteeseen.
@@ -129,7 +129,7 @@ Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -si
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Sarjaohjattujen nimikkeiden ilmoittaminen valmiiksi
 
-Työkorttilaite tukee kolmea sarjaohjattujen nimikkeiden raportointiskenaariota. Nämä skenaariot koskevat sekä nimikkeitä, jotka on otettu käyttöön lisävarastoprosesseja varten, että nimikkeitä, jotka eivät ole käytössä lisävarastoprosesseissa.
+Työkorttilaite tukee kolmea sarjaohjattujen nimikkeiden raportointiskenaariota. Nämä skenaariot koskevat sekä nimikkeitä, joissa varastonhallintaprosessit (WMS) otettu käyttöön, että nimikkeitä, joissa WMS:ää ei ole otettu käyttöön.
 
 - **Manuaalisesti määritellyt sarjanumerot** - Työntekijät voivat määrittää mukautetun sarjanumeron. Tämä sarjanumero voi olla peräisin ulkoisesta lähteestä, jota järjestelmä ei tunne.
 - **Ennalta määritetyt sarjanumerot** - Työntekijät valitsevat sarjanumerot niiden sarjanumeroiden luettelosta, jotka järjestelmä luo automaattisesti, ennen kuin tuotantotilaus vapautetaan työkorttilaitteeseen.
@@ -212,7 +212,7 @@ Kun käytät tätä skenaariota, työkorttilaitteen **Raportin edistyminen** -si
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Ilmoita valmistuneeksi rekisterikilpeen
 
-Lisävarastoprosessit voivat käyttää käyttöoikeuskilpi-dimensiota tähän tarkoitukseen määritettyjen varastosijaintien varastonseurantaan. Tässä tapauksessa rekisterinumero on pakollinen, kun työntekijä ilmoittaa määrät valmiiksi.
+Varastohallintaprosessit (WMS) voivat käyttää rekisterikilpidimensiota tähän tarkoitukseen määritettyjen varastosijaintien varastonseurantaan. Tässä tapauksessa rekisterinumero on pakollinen, kun työntekijä ilmoittaa määrät valmiiksi.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Rekisterikilven raportoinnin ja etiketin tulostuksen ottaminen käyttöön
 

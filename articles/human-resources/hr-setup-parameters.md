@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13a25d3f1f72d8053ed3951b036522cfa3a15959
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856277"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065641"
 ---
 # <a name="configure-human-resources-parameters"></a>Human Resources -parametrien määrittäminen
 
@@ -27,7 +27,7 @@ ms.locfileid: "8856277"
 
 Joidenkin henkilöstöhallinnon parametrien asetukset ovat yhteisiä eri yrityksissä, kun taas muiden parametrien asetukset ovat yrityskohtaisia. Tässä artikkelissa kerrotaan, miten voit määrittää yrityskohtaisia henkilöstöhallinnon parametreja.
 
-Henkilöstöhallinnon parametrien määrittämiseen käytetään kahta sivua. Käytä yhtiöiden kesken jaettujen parametrien määrittämiseen **Henkilöstöhallinnon jaetut parametrit** -sivua. Käytä yhtiökohtaisten (ts. asetukset koskevat yhtä yhtiötä) parametrien määrittämiseen **Henkilöstöparametrit**-sivua.
+Henkilöstöhallinnon parametrien määrittämiseen käytetään kahta sivua. Käytä yhtiöiden kesken jaettujen parametrien määrittämiseen **Henkilöstöhallinnon jaetut parametrit** -sivua. Käytä yhtiökohtaisten parametrien määrittämiseen **Henkilöstöhallinnon parametrit** -sivua.
 
 ![Valitse Henkilöstöhallintoparametrit.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -74,9 +74,10 @@ Dynamics 365 Financen **Kompensaatio**-välilehden asetukset määrittävät, on
 
 Voit käyttää henkilöstöhallinnon **Kompensaatio**-välilehteä rajoittaaksesi kompensaatiosuunnitelmien käyttöoikeuksia ja määrittääksesi oletusvaluutan.
 
-Lisätietoja kompensaatiosta on kohdassa [Kompensaatiosuunnitelmien yleiskuvaus](hr-compensation-overview.md).
+> [!NOTE]
+> Yhdistetyssä infrastruktuurissa **Henkilöstöhallintoparametrit**-sivun **Kompensaatio**-välilehden **Valuutta**-oletusparametri on poistettu. Jatkossa valuutan käsittelyssä käytetään **Kirjanpidon valuutta** -parametrin avulla, mikä varmistaa, ettei nykyisen talous- ja toimintosovellusten toimintojen välillä ole ristiriitoja. Lisäksi estetään kaksoiskappaleet. Lisätietoja Kirjanpidon valuutta -toiminnon käyttämisestä on kohdassa [Kirjanpitojen määrittäminen](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Kompensaatio-välilehti.](./media/hr-setup-parameters-compensation.png)
+Lisätietoja kompensaatiosta on kohdassa [Kompensaatiosuunnitelmien yleiskuvaus](hr-compensation-overview.md).
 
 ## <a name="number-sequences"></a>Numerosarjat
 
@@ -122,7 +123,7 @@ Lisätietoja **työntekijän itsepalvelun** määrittämisestä on kohdassa [Ty�
 **Esimiehen itsepalvelu** -välilehden asetukset vaikuttavat siihen, mitä esimiehet näkevät **esimiehen itsepalvelussa**. Tästä välilehdestä voit määrittää seuraavat vaihtoehdot:
 
 - Vanhentuvien tietueiden ajanjakso
-- Tiedot, jotka esimiehet näkevät vanhentuvissa tietueissa
+- Tiedot, jotka esihenkilöt näkevät vanhentuvissa tietueissa
 - Voivatko esimiehet tarkastella laajennettujen raporttien avoimia toimia
 - Poistuvien työntekijöiden näkymät
 - Hyödyllisiä linkkejä esimiehille

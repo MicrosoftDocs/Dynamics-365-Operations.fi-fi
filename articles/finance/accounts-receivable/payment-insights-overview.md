@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 54655d2b1cfb4b11f32842d4c3cff2f4d8e97ef5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d2c811ac48a6bf29267192f61a33b6b47721659
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856796"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068163"
 ---
 # <a name="customer-payment-insights-preview"></a>Asiakasmaksujen tiedot (esiversio)
 
@@ -69,9 +69,10 @@ Lähetä sähköpostia osoitteeseen [Asiakasmaksujen tiedot (esiversio)](mailto:
 
 ## <a name="privacy-notice"></a>Tietosuojatiedot
 
-Esikatselut (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) ei pidä käyttää henkilötietojen tai muiden sellaisten tietojen prosessoimiseen, joita koskevat lait tai määräykset, ja (4) sillä on rajoitettu tuki.
+Esikatselut (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365:n talous- ja toimintosovelluspalvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) ei pidä käyttää henkilötietojen tai muiden sellaisten tietojen prosessoimiseen, joita koskevat lait tai määräykset, ja (4) sillä on rajoitettu tuki.
 
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

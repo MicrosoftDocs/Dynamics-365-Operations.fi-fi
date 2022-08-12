@@ -2,7 +2,7 @@
 title: Prosessien automatisointi
 description: Tässä artikkelissa on tietoja siitä, miten prosessien automatisointi mahdollistaa eräpalvelimen käyttämien prosessien yksinkertaisen aikatauluttamisen.
 author: RyanCCarlson2
-ms.date: 04/20/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: f13392fd6610735f8c539d42b62cf71cece71fba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
+ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898606"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9114932"
 ---
 # <a name="process-automation"></a>Prosessien automatisointi
 
@@ -30,7 +30,7 @@ Prosessien automatisointi mahdollistaa eräpalvelimen käyttämien prosessien yk
 
 Kaikkien prosessien automatisointien keskitetty hallintasivu löytyy **Asetukset**-valikon Järjestelmänhallinta-moduulista. Tällä sivulla luetellaan kaikki järjestelmään määritetyt automaattiset prosessit (sarjat). Sen avulla voit myös lisätä uusia prosessiautomaatioita suoraan tältä sivulta. Kun sarja on määritetty, voit hallita kutakin sarjaa tästä luettelosta. Voit halutessasi muokata koko sarjaa, poistaa sen, tarkastella kaikkia luettelonäkymän esiintymiä tai poistaa sarjan käytöstä, jos haluat keskeyttää ajoitetun työn tietyksi aikaa. 
 
-Kaikki ominaisuuksien hallinnassa käytöstä poistetut prosessit eivät näy, kun toiminto on poistettu käytöstä. Lisäksi prosessiautomaation ajoitusmoduuli ei ajoita esiintymiä tai taustaprosesseja käytöstä poistetun ominaisuuden osalta. Kun ominaisuus otetaan uudelleen käyttöön, kaikki ajoitetut esiintymät tai taustaprosessit suoritetaan heti. Prosessin automatisoinnin ajoitusmoduuli käyttää suorituksessa järjestelmän erätyötä, **Prosessin automatisoinnin kyselyjärjestelmän työ**. Työtä ei saa muuttaa eikä peukaloida missään vaiheessa. 
+Kaikki ominaisuuksien hallinnassa käytöstä poistetut prosessit eivät näy, kun toiminto on poistettu käytöstä. Lisäksi prosessiautomaation ajoitusmoduuli ei ajoita esiintymiä tai taustaprosesseja käytöstä poistetun ominaisuuden osalta. Kun ominaisuus otetaan uudelleen käyttöön, kaikki ajoitetut esiintymät tai taustaprosessit suoritetaan heti. Prosessin automatisoinnin ajoitusmoduuli käyttää suorituksessa järjestelmän erätyötä, **Prosessin automatisoinnin kyselyjärjestelmän työ**. Työtä ei saa muuttaa eikä peukaloida missään vaiheessa. Jos tämä erätyö ei ole käynnissä tai jos se on virhetilassa, nollaa erätyö valitsemalla **Alusta prosessien automatisoinnit**. Tämä nollaus varmistaa, että uudet automatisoinnit, jotka on julkaistu sovelluksen uudemmassa versiossa, alustetaan. 
 
 ## <a name="calendar-view"></a>Kalenterinäkymä
 

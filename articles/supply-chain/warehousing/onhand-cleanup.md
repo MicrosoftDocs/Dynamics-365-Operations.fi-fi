@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900503"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065116"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Varastonhallinnan käytettävissä olevien merkintöjen tyhjennystyö
 
@@ -26,11 +26,11 @@ ms.locfileid: "8900503"
 
 Käytettävissä olevan varaston laskennassa käytettävien kyselyiden suorituskyky vaikuttaa siihen, kuinka monta tietuetta taulukoissa on mukana. Yksi tapa parantaa suorituskykyä on vähentää niiden tietojen määrää, joita tietokannan on harkittava.
 
-Tässä artikkelissa kuvataan käytettävissä olevien tapahtumien tyhjennystyö, joka poistaa tarpeettomat tietueet InventSum- ja WHSInventReserve-tauluista. Näissä taulukoissa on tietoja nimikkeistä, jotka on otettu käyttöön varastonhallinnan käsittelyä varten. (Näitä nimikkeitä kutsutaan WHS-nimikkeiksi.) Näiden tietojen poistaminen voi merkittävästi parantaa käytettävissä olevien laskelmien suorituskykyä.
+Tässä artikkelissa käsitellään käytettävissä olevien tapahtumien tyhjennystyötä, joka poistaa tarpeettomat tietueet `InventSum`- ja `WHSInventReserve`-tauluista. Näissä taulukoissa on tietoja nimikkeistä, jotka on otettu käyttöön varastonhallinnan käsittelyä varten. (Näitä nimikkeitä kutsutaan WMS-nimikkeiksi.) Näiden tietojen poistaminen voi merkittävästi parantaa käytettävissä olevien laskelmien suorituskykyä.
 
 ## <a name="what-the-cleanup-job-does"></a>Mitä puhdistustyö tekee
 
-Käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki WHSInventReserve- ja InventSum-taulujen tietueet, joissa kentän arvot ovat *0* (nolla). Nämä tiedot voidaan poistaa, koska ne eivät vaikuta käytettävissä oleviin tietoihin. Työtehtävä poistaa vain ne tiedot, jotka ovat **Sijainti**-tason alapuolella.
+Käytettävissä olevien tapahtumien tyhjennystyö poistaa kaikki `WHSInventReserve`- ja `InventSum`-taulujen tietueet, joissa kentän arvot ovat *0* (nolla). Nämä tiedot voidaan poistaa, koska ne eivät vaikuta käytettävissä oleviin tietoihin. Työtehtävä poistaa vain ne tiedot, jotka ovat **Sijainti**-tason alapuolella.
 
 Jos negatiivinen fyysinen varasto on sallittu, tyhjennystyö ei ehkä voi poistaa kaikkia asiaankuuluvia merkintöjä. Tämän rajoituksen syy on se, että työn on sallittava tietty tilanne, jossa rekisterikilvessä on useita sarjanumeroita ja jokin näistä sarjanumeroista on muuttunut negatiiviseksi. Esimerkiksi järjestelmä on nolla, joka on käytettävissä rekisterikilven tasolla, kun rekisterikilvessä on +1 kpl sarjanumero 1:tä ja –1 kpl sarjanumero 2:ta. Tässä erityisessä skenaariossa työ tekee leveää ensimmäistä poistoa, jossa se yrittää poistaa ensin alemmasta tasosta.
 

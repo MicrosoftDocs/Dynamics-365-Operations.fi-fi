@@ -1,6 +1,6 @@
 ---
 title: Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa
-description: Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset varastoon, jossa uusi varastonhallintajärjestelmä on otettu käyttöön. (Kyse on varastosta, jossa käytetään varastonhallinnan lisäprosesseja.)
+description: Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset varastoon, jossa uusi varastonhallintajärjestelmä on otettu käyttöön. (Kyse on varastosta, jossa käytetään varastonhallintaprosesseja (WMS).)
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599345"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067270"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Sijaintien määrittäminen varastonhallintajärjestelmää käyttävässä varastossa
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset varastoon, jossa uusi varastonhallintajärjestelmä on otettu käyttöön. (Kyse on varastosta, jossa käytetään varastonhallinnan lisäprosesseja.) Yleensä tämän prosessin tekee varastopäällikkö. Voit suorittaa opastuksen USMF-demoyrityksen tiedoilla tai käyttää omia tietoja. Edellytyksenä on, että vähintään yksi toimipaikka on määritetty.
+Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset varastoon, jossa uusi varastonhallintajärjestelmä on otettu käyttöön. (Kyse on varastosta, jossa käytetään varastonhallintaprosesseja (WMS).) Yleensä tämän prosessin tekee varastopäällikkö. Voit suorittaa opastuksen USMF-demoyrityksen tiedoilla tai käyttää omia tietoja. Edellytyksenä on, että vähintään yksi toimipaikka on määritetty.
 
 
 ## <a name="create-a-new-warehouse"></a>Luo uusi varasto
@@ -35,7 +35,7 @@ Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset va
 4. Kirjoita arvo **Nimi**-kenttään.
 5. Valitse tai kirjoita **Toimipaikka**-kentässä olemassa olevan toimipaikan arvo.
 6. Laajenna **Varasto**-osa.
-7. Valitse **Käyttäjän varastonhallintaprosessien virheloki** -asetukseksi Kyllä. Voit suorittaa tällä asetuksella varastoinnin lisäprosesseja varastotyön ja mobiililaitteiden avulla.
+7. Valitse **Käyttäjän varastonhallintaprosessien virheloki** -asetukseksi Kyllä. Voit suorittaa tällä asetuksella varastonhallinnanprosesseja (WMS) varastotyön ja mobiililaitteiden avulla.
 8. Sulje sivu.
 
 ## <a name="define-a-location-format"></a>Määritä sijainnin muoto
@@ -68,7 +68,7 @@ Tässä opastuksessa selvitetään, miten voit määrittää sijaintiasetuset va
 5. Sulje sivu.
 
 ## <a name="define-location-profile"></a>Määritä sijaintiprofiili
-1. Valitse **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Varasto > Sijaintiprofiilit**. Sijaintiprofiilien määritys on erittäin tärkeä. Ryhmiteltyjä sijaintien kapasiteettia voidaan hallita täällä. Lisäksi vodaan hallita käytäntöjä, jotka liittyvät varastoitavan varaston valitsemiseen ja varastointitapaan. Sijaintiprofiileja voidaan käyttää suodatusasetuksina, joilla voi ohjata erilaisia varastonhallintaprosesseja. Ainakin käyttäjän sijaintiprofiili on luotava, jotta varastonhallintaprosessit voidaan ottaa käyttöön.
+1. Valitse **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Varasto > Sijaintiprofiilit**. Sijaintiprofiilien määritys on erittäin tärkeä. Ryhmiteltyjä sijaintien kapasiteettia voidaan hallita täällä. Lisäksi vodaan hallita käytäntöjä, jotka liittyvät varastoitavan varaston valitsemiseen ja varastointitapaan. Sijaintiprofiileja voidaan käyttää suodatusasetuksina, joilla voi ohjata erilaisia varastonhallintaprosesseja. Ainakin käyttäjän sijaintiprofiili on luotava, jotta WMS voidaan ottaa käyttöön.
 2. Valitse **Uusi**.
 3. Kirjoita **Sijainnin profiilitunnus** -kenttään arvo.
 4. Kirjoita arvo **Nimi**-kenttään.

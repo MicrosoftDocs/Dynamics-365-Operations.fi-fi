@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c280eef995664c640e382817dda9d6e1cde154c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6866956efcc76a7da6c3aa5fb36058de78d5472e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871492"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111295"
 ---
 # <a name="troubleshoot-issues-related-to-solution-awareness"></a>Ratkaisujen käyttäjien osaamistasoon liittyvien ongelmien vianmääritys
 
@@ -24,7 +24,7 @@ ms.locfileid: "8871492"
 
 
 
-Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Dataversen välillä. Erityisesti se tarjoaa tietoja, joiden avulla voit korjata ratkaisutietoisuuteen liittyviä ongelmia.
+Tässä artikkelissa on vianmääritystietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten sekä Dataversen välillä. Erityisesti se tarjoaa tietoja, joiden avulla voit korjata ratkaisutietoisuuteen liittyviä ongelmia.
 
 > [!IMPORTANT]
 > Jotkin tämän artikkelin osoitteet saattavat edellyttää joko järjestelmänvalvojan roolia tai Microsoft Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tunnistetietoja.

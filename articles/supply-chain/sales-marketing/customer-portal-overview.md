@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ff074e62489fe74f0c2de6dae0e02d1da7e7f6ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f34acd78966cc9f26242653e9d0d16fdf22e0b2
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901905"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103827"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Asiakasportaali Dynamics 365 Supply Chain Managementin yhteenvedoksi
 
@@ -42,7 +42,7 @@ Asiakasportaalimallissa on kaikki mukautustoiminnot, joita Power Appsin portaali
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-[Yleiskatsaus Dynamics 365 Supply Chain Managementin asiakasportaalimallista](https://youtu.be/nPrqoLuHfV8) -video (edellä) sisältyy [taloushallinnon ja toimintojen sovellusten toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
+[Yleiskatsaus Dynamics 365 Supply Chain Managementin asiakasportaalimallista](https://youtu.be/nPrqoLuHfV8) -video (edellä) sisältyy [talous- ja toimintosovellusten toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
 
 ## <a name="who-should-use-it"></a>Kenen pitäisi käyttää sitä?
 
@@ -62,7 +62,7 @@ Asiakasportaali toimitetaan Power Apps -portaalien mallina. Se on riippuvainen P
 
 [Power Apps -portaalit](/powerapps/maker/portals/overview) on ominaisuus, jonka avulla käyttäjät voivat luoda ulkoisen sivuston, johon organisaation ulkopuolelta tulevat henkilöt voisivat kirjautua. Portaalien tekemiseen tarvitaan vain vähän koodausta. Asiakasportaali on yksi monista Microsoftin käytettävissä olevista [Dynamics 365 -portaalin malleista](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365).
 
-[Kaksoiskirjoitus](/powerapps/maker/portals/overview) on valmis infrastruktuurituote, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten ja taloushallinnon ja toimintojen sovellusten välillä. Kaksoiskirjoitus sisältää kaksisuuntaisen integroinnin taloushallinnon ja toimintojen sovellusten ja Microsoft Dataversen välillä. Tästä syystä tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa. Asiakasportaali määräytyy niiden taulukoiden mukaan, jotka on synkronoitu kaksoiskirjoituksella. Ennen kuin Supply Chain Managementin tiedot voidaan tuoda esiin asiakasportaalissa, kaksoiskirjoitus on otettava käyttöön kaikissa soveltuvissa taulukoissa.
+[Kaksoiskirjoitus](/powerapps/maker/portals/overview) on valmis infrastruktuurituote, joka sisältää lähes reaaliaikaisen vuorovaikutuksen asiakkaiden aktivointisovellusten sekä talous- ja toimintosovellusten välillä. Kaksoiskirjoitus sisältää kaksisuuntaisen integroinnin talous- ja toimintosovellusten sekä Microsoft Dataversen välillä. Tästä syystä tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa. Asiakasportaali määräytyy niiden taulukoiden mukaan, jotka on synkronoitu kaksoiskirjoituksella. Ennen kuin Supply Chain Managementin tiedot voidaan tuoda esiin asiakasportaalissa, kaksoiskirjoitus on otettava käyttöön kaikissa soveltuvissa taulukoissa.
 
 ![Asiakasportaalin riippuvuudet.](media/customer-portal-elements.png "Asiakasportaalin riippuvuudet")
 

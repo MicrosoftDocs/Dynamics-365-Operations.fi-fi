@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714833"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069119"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Mittayksikköä ja varastointikäytännöt
 
@@ -28,7 +28,7 @@ ms.locfileid: "6714833"
 
 Tässä artikkelissa kerrotaan, kuinka oletusyksiköitä, yksikön sarjoja ja yksikkömuunnoksia käytetään varastoprosesseissa.
 
-Yksikön sarjaryhmä määrittää varastotoimenpiteissä käytettävän yksiköiden sarjan. Ne luodaan **Yksikön sarjaryhmät** -sivulla. Sarja osoittaa eri yksiköiden välisen suhteen. Esimerkki: Varastoit kuormalavoja, joiden sisältämät laatikot sisältävät yksittäisiä nimikkeitä. Tällöin sinun on syötettävä kolme eri yksikköä ja tasojen looginen järjestys. Yksikön sarjaryhmien avulla voit määritellä rekisterikilpien ryhmittelykäytäntöjä ja oletusyksiköitä, joita eri varastoprosesseissa on käytettävä. Tämä artikkeli koskee sekä varastonhallinnassa käytettävää edistyksellistä varastonhallintaratkaisua että inventaarionhallinnassa käytettävää perustason varastonhallintaratkaisua.
+Yksikön sarjaryhmä määrittää varastotoimenpiteissä käytettävän yksiköiden sarjan. Ne luodaan **Yksikön sarjaryhmät** -sivulla. Sarja osoittaa eri yksiköiden välisen suhteen. Esimerkki: Varastoit kuormalavoja, joiden sisältämät laatikot sisältävät yksittäisiä nimikkeitä. Tällöin sinun on syötettävä kolme eri yksikköä ja tasojen looginen järjestys. Yksikön sarjaryhmien avulla voit määritellä rekisterikilpien ryhmittelykäytäntöjä ja oletusyksiköitä, joita eri varastoprosesseissa on käytettävä. Tämä artikkeli koskee sekä varastonhallintamoduulissa käytettäviä varastonhallintaprosesseja (WMS) että inventoinnin- ja varastonhallintamoduulissa käytettävää perustason varastonhallintaratkaisua.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Yksikön sarjaryhmät vapautetuille tuotteille
 Jos haluat käyttää vapautettuja tuotteita varaston työprosesseissa, niille täytyy määrittää yksikön sarjaryhmä. Jos vahvistat tuotteen, joka on liitetty johonkin varastodimensioryhmään ja kyseisen varastodimensioryhmän **Käytä varastonhallintaprosesseja** -vaihtoehdoksi on asetettu **Kyllä**, näyttöön tulee virhesanoma, jos yksikön sarjaryhmän tunnusta ei ole määritetty tuotteelle. Jos käyttämässäsi yksikön numerosarjaryhmässä on useita rivejä (ja siten useita yksiköitä), yksiköiden välille on määritettävä yksikkömuunnos. Tämän asetuksen voi tehdä **Yksikkömuunnokset**-sivulla. Vapautettuun tuotteeseen liitettävän sarjaryhmän pienimmän yksikön on täsmättävä vastaavalle tuotteelle määritetyn varastoyksikön kanssa. Varastoyksikkö on yksikkö, jota käytetään käytettävissä olevan varaston peruslaskutoimituksissa. Voit myös määrittää mittayksikkömuunnokset päätuotteiden tuotevarianteille käyttämällä **Ota käyttöön mittayksiköiden muunnokset** -vaihtoehtoa.

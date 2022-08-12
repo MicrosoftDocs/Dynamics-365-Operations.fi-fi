@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 782545ea38a209eb4430607f5bca96e4e930efdc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 274f9b368a6074725d1938de5f2172d2810a5985
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897629"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066637"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Varaston näkyvyyden apuohjelman yleiskatsaus
 
@@ -61,9 +61,9 @@ Näkyvyys lähellä tulevaan arvioituun varastoon (mukaan lukien tarjonta, kysyn
 
 ATP-ominaisuus on helppo ottaa käyttöön päivittäisessä tilauksen täyttämisprosessissa. Muiden varastonäkyvyyksien lisäksi ATP-ominaisuus on *yleinen ja reaaliaikainen*. Voit näin ollen määrittää useita ATP-laskentakaavoja, jos haluat, että koko varaston käytettävyyskyselyt kattavat kaikki liiketoimintasi kanavat ja tietolähteet. Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulut ja luvattavissa olevat aikataulut](inventory-visibility-available-to-promise.md).
 
-### <a name="compatibility-with-advanced-warehouse-management-items"></a>Yhteensopivuus kehittyneen varastonhallinnan nimikkeiden kanssa
+### <a name="compatibility-with-warehouse-management-processes-wms-items"></a>Yhteensopivuus varastonhallintaprosessien (WMS) kanssa
 
-Microsoftin tavoitteena on integroida valmiiksi edistyneeseen varastohallintaan (WHS), jotta myös WHS-asiakkaat voivat nauttia varaston näkyvyyspalvelun eduista. Vuoden 2022 1. julkaisuaallon (julkinen esiversio maaliskuussa) varastopalvelu tukee WHS-nimikkeen käytettävissä olevan varaston kyselyitä ja ATP:tä. Pehmeää varausta ja kohdistustoimintoa tuetaan WHS:n asiakkaille seuraavassa aallossa. Lisätietoja on kohdassa [Varaston näkyvyyden tuki WHS-nimikkeille](inventory-visibility-whs-support.md).
+Microsoftin tavoitteena on tuottaa käyttövalmis varastohallintaprosessien (WMS) integrointi, jotta myös WMS-asiakkaat voivat nauttia varaston näkyvyyspalvelun eduista. Vuoden 2022 1. julkaisuaallon (julkinen esiversio maaliskuussa) varastopalvelu tukee WMS-nimikkeen käytettävissä olevan varaston kyselyitä ja ATP:tä. Pehmeää varausta ja kohdistustoimintoa tuetaan WMS:n asiakkaille seuraavassa aallossa. Lisätietoja on kohdassa [Varaston näkyvyyden tuki WMS-nimikkeille](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Käyttöoikeudet
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e46c5721853ebfe3b9d5955ca5f4e7a4ead570c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fffe9c042c71dc220179bb6d1ba7fd59d5e53cc0
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846297"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069530"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Dynamics 365 Human Resources -sovelluksen uudet tai muuttuneet ominaisuudet 19. huhtikuuta 2021
 
@@ -41,7 +41,7 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 
 | Ominaisuus | Julkaisusuunnitelma | Dokumentaatio |
 | --- | --- | --- |
-| Platform Update 10.0.17 (41) | -- | [Taloushallinnon ja toimintojen sovellusten (huhtikuu 2021) käyttöympäristön päivitysversio 10.0.17](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Platform Update 10.0.17 (41) | -- | [Talous- ja toimintosovellusten (huhtikuu 2021) käyttöympäristön päivitysversio 10.0.17](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Etujen hallinnan lomakkeiden mukautettujen kenttien tuki | [Etujen hallinnan mukautettujen kenttien tuki](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Etujen hallinnan yleiskatsaus](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
@@ -77,7 +77,7 @@ Seuraavat uudet ominaisuudet ovat esiversioita. Lisätietoja ominaisuuksien otta
 | Ominaisuus | Lisätietoja |
 | --- | --- |
 | Työnkulku voi hyväksyä työntekijöidensä esimiehen syöttämät osaamisalueet automaattisesti. | Tulossa pian. |
-| Platform Update 10.0.18 (42) | Ympäristön päivitys 10.0.18 on ajoitettu alkamaan julkaisun kanssa 17.5.2021. Lisätietoja on [Rahoitus ja toiminnot -sovellusten version 10.0.18 alustan päivityksissä (toukokuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Platform Update 10.0.18 (42) | Ympäristön päivitys 10.0.18 on ajoitettu alkamaan julkaisun kanssa 17.5.2021. Lisätietoja on [Talous- ja toimintosovellusten version 10.0.18 käyttöympäristön päivityksissä (toukokuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Etujen hallinnan kelpoisuussääntöjen mukautettujen kenttien tuki  | [Mukautetun kentän tuki kelpoisuuskäsittelylle](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuista julkaisuista on kohdassa [Dynamics 365 Human Resourcesin vuoden 2021 1. julkaisuaallon yleiskatsaus](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
@@ -90,3 +90,4 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

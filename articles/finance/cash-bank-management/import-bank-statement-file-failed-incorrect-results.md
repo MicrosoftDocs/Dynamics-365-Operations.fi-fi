@@ -1,7 +1,7 @@
 ---
 title: Pankin tiliotteen tiedoston tuomisen vianmääritys
 description: Tässä artikkelissa kerrotaan, miten korjata ongelmia, jotka johtuvat pienistä eroista tiliotetiedostossa.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711170"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151757"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Pankin tiliotteen tiedoston tuomisen vianmääritys
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Tämä toiminto vanhentuu syyskuussa 2022, joten uusien käyttäjien kannattaa käyttää sähköistä raportointia.
 
 On tärkeää, että pankin tiliotetiedosto vastaa asetteluja, jotka ovat tuettuja Microsoft Dynamics 365 Financessa. Tiliotteiden tiukkojen standardien vuoksi suurin osa integraatioista toimii oikein. Kuitenkin joskus tiliotetiedostoa ei voi tuoda tai se sisältää virheellisiä tuloksia. Yleensä ongelmat johtuvat pienistä eroista tiliotetiedostossa. Tässä artikkelissa selitetään, miten nämä erot ja niistä johtuvat ongelmat korjataan.
 
@@ -39,7 +42,7 @@ Kun tiliotetiedoston tuontia on yritetty, siirry Tietojen hallinnan työhistoria
 Vertaa pankkitiedoston asettelumääritystä Financen tuontimääritykseen ja kiinnitä huomiota kenttien ja elementtien eroihin. Vertaa tiliotetiedostoa liittyvään Finance-näytetiedostoon. ISO20022-tiedostoissa on erot helppo nähdä.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Tuotujen tililaskelmien aikavyöhyke-erot
-Tuontitiedoston päivämäärän ja ajan arvot voivat poiketa Finance and Operationsin päivämäärä- ja aika-arvoista. Voit estää tämän ristiriidan määrittämällä aikavyöhykeasetukset **Määritä tietolähteet** -sivulla. Lisätietoja aikavyöhyke asetusten määrittämisestä on kohdassa [Pankin täsmäytyksen lisätuontiprosessin määrittäminen](set-up-advanced-bank-reconciliation-import-process.md).
+Tuontitiedoston päivämäärän ja ajan arvot voivat poiketa talous- ja toimintosovellusten päivämäärä- ja aika-arvoista. Voit estää tämän ristiriidan määrittämällä aikavyöhykeasetukset **Määritä tietolähteet** -sivulla. Lisätietoja aikavyöhyke asetusten määrittämisestä on kohdassa [Pankin täsmäytyksen lisätuontiprosessin määrittäminen](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## <a name="transformations"></a>Muunnokset
 Yleensä muutokset on tehtävä johonkin kolmesta muunnoksesta. Jokaisen muunnos on kirjoitettu tiettyyn standardiin.
@@ -109,3 +112,4 @@ Seuraavassa taulukossa on esimerkkejä tuonnin lisäasetuksista pankkitilin täs
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

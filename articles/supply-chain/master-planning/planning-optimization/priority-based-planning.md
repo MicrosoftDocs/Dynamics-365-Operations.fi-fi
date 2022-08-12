@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873808"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186480"
 ---
 # <a name="priority-based-planning"></a>Prioriteettipohjainen suunnittelu
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta. Tämä ominaisuus lisää kysyntäperustaisen suunnittelun tuen, mikä on yksi kysyntäperustaisen tarvelaskennan (DDMRP) vaihe. Prioriteettipohjaisessa suunnittelussa suunnittelun optimointi voi luoda suunnittelun prioriteetteihin eikä tarvepäiviin perustuvia suunniteltuja tilauksia.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin prioriteettipohjaista suunnitteluominaisuutta. Tämä ominaisuus lisää kysyntäperustaisen suunnittelun tuen, mikä on yksi [kysyntäperustaisen tarvelaskennan (DDMRP)](ddmrp-overview.md) vaihe. Prioriteettipohjaisessa suunnittelussa suunnittelun optimointi voi luoda suunnittelun prioriteetteihin eikä tarvepäiviin perustuvia suunniteltuja tilauksia.
 
 Prioriteettipohjaisessa suunnittelussa voidaan priorisoida täydennystilaukset, mikä varmistaa, että kiireinen tarve priorisoidaan vähemmän tärkeän tarpeen kustannuksella. Niinpä esimerkiksi negatiivisen varaston täydennystilaus priorisoidaan tavalliseen täydennyksen täyttötilaukseen nähden. Järjestelmä vo jakaa suuret tilaukset automaattisesti pienemmiksi tilauksiksi, joissa tilausrivit ryhmitellään prioriteetin mukaan. Sen jälkeen kaikki korkean prioriteetin tilaukset voidaan käsitellä ensin.
 

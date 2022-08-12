@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19a1fd53f19575a16ee8d8b7391c30f0cacf26a8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876712"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111453"
 ---
 # <a name="note-integration"></a>Muistiinpanojen integrointi
 
@@ -30,7 +30,7 @@ Asiakastiedot voidaan luokitella seuraavilla tavoilla:
 + **Dynamics 365 -käyttäjän tiedot toiminnan pohjaksi** – Esimerkiksi Surface-yksikköä ostava asiakas määrittää erityisohjeet, jotka ilmaisevat, että laitteen tulee olla lahjapaketissa ennen toimitusta. Nämä ohjeet ovat toimintakelpoisia tietoja, joita pakkauksesta vastaavan Contoso-työntekijän tulisi käsitellä.
 + **Ei-toimittavissa olevat tiedot** – Asiakas esimerkiksi käy Contoso-myymälässä ja ilmaisee myyjälle kiinnostuksen *Halo*-peleihin ja -pelivälineisiin. Myyjä kirjoittaa nämä tiedot muistiinpanoihin. Tämän jälkeen tuotesuositusten ohjelma antaa asiakkaalle suosituksia tiedon perusteella.
 
-Yleisesti ottaen toiminnalliset tiedot siepataan *aktiviteetteina* taloushallinnon ja toimintojen sovelluksissa ja asiakasvuorovaikutussovelluksissa. Ei-toiminnalliset tiedot siepataan *muistiinpanoina* taloushallinnon ja toimintojen sovelluksissa ja *huomautuksina* asiakasvuorovaikutussovelluksissa.
+Yleisesti ottaen toiminnalliset tiedot siepataan *aktiviteetteina* talous- ja toimintosovelluksissa sekä asiakasvuorovaikutussovelluksissa. Ei-toiminnalliset tiedot siepataan *muistiinpanoina* talous- ja toimintosovelluksissa sekä *huomautuksina* asiakasvuorovaikutussovelluksissa.
 
 > [!TIP]
 > Vaikka muistiinpanot on tarkoitettu ei-toimintakelpoisten tietojen käsittelemiseen, sovellukset eivät estä niiden käyttämistä toimintakelpoisten tietojen tallennukseen ja käsittelyyn, jos haluat käyttää niitä tällä tavalla.
@@ -39,7 +39,7 @@ Microsoft julkaisee parhaillaan muistiinpanojen integraation toiminnallisuutta. 
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Muistiinpanon luominen asiakasvuorovaikutussovelluksessa
 
-Noudattamalla seuraavia ohjeita voit luoda muistiinpanon asiakasvuorovaikutussovelluksessa ja sitten synkronoida sen taloushallinnon ja toimintojen sovellukseen.
+Noudattamalla seuraavia ohjeita voit luoda muistiinpanon asiakasvuorovaikutussovelluksessa sekä synkronoida sen sitten talous- ja toimintosovellukseen.
 
 1. Avaa asiakkaan tilitietue asiakasvuorovaikutussovelluksessa.
 2. Valitse **Aikajana**-ruudusta plusmerkki (**+**) ja luo muistiinpano valitsemalla **Muistiinpano**.
@@ -54,7 +54,7 @@ Noudattamalla seuraavia ohjeita voit luoda muistiinpanon asiakasvuorovaikutussov
 
     ![Asiakkaan aikajanan uusi muistiinpano.](media/notes-ce-3.png)
 
-4. Kirjaudu taloushallinnon ja toimintojen sovellukseen ja avaa sama asiakastietue. Huomaa, että oikeassa yläkulmassa oleva **Liitteet**-painike (paperiliitinsymboli) ilmaisee, että tietueella on liite.
+4. Kirjaudu talous- ja toimintosovellukseen ja avaa sama asiakastietue. Huomaa, että oikeassa yläkulmassa oleva **Liitteet**-painike (paperiliitinsymboli) ilmaisee, että tietueella on liite.
 
     ![Ilmoitus liitteestä.](media/notes-ce-4.png)
 
@@ -62,17 +62,17 @@ Noudattamalla seuraavia ohjeita voit luoda muistiinpanon asiakasvuorovaikutussov
 
     ![Muistiinpano asiakasvuorovaikutussovelluksesta.](media/notes-ce-5.png)
 
-Muistiinpanon päivitykset synkronoidaan taloushallinnon ja toimintojen sovelluksen ja asiakasvuorovaikutussovelluksen välillä.
+Muistiinpanon päivitykset synkronoidaan talous- ja toimintosovelluksen sekä asiakasvuorovaikutussovelluksen välillä.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Luo muistiinpano taloushallinnon ja toimintojen sovelluksessa
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Muistiinpanon luominen talous- ja toimintosovelluksessa
 
-Voit luoda muistiinpanon myös taloushallinnon ja toimintojen sovelluksessa ja se sitten synkronoidaan asiakasvuorovaikutussovellukseen.
+Voit luoda muistiinpanon myös talous- ja toimintosovelluksessa, ja se synkronoidaan sitten asiakasvuorovaikutussovellukseen.
 
-Noudattamalla seuraavia ohjeita voit luoda muistiinpanon taloushallinnon ja toimintojen sovelluksessa ja sitten synkronoida sen asiakasvuorovaikutussovellukseen.
+Muistiinpano voidaan luoda seuraavasti talous- ja toimintosovelluksessa sekä synkronoida se sitten asiakasvuorovaikutussovellukseen.
 
-1. Valitse taloushallinnon ja toimintojen sovelluksen **Liitteet**-sivulla **Uusi** \> **Muistiinpano**.
+1. Valitse talous- ja toimintosovelluksen **Liitteet**-sivulla **Uusi** \> **Muistiinpano**.
 
-    ![Muistiinpanon luominen taloushallinnon ja toimintojen sovelluksessa.](media/notes-fo-1.png)
+    ![Muistiinpanon luominen talous- ja toimintosovelluksessa.](media/notes-fo-1.png)
 
 2. Kirjoita otsikko, lyhyt ohjejoukko ja valitse sitten **Tallenna**.
 
@@ -84,17 +84,17 @@ Noudattamalla seuraavia ohjeita voit luoda muistiinpanon taloushallinnon ja toim
 
 Voit luokitella muistiinpanon sisäiseksi tai ulkoiseksi.
 
-- Avaa taloushallinnon ja toimintojen sovelluksessa **Liitteet**-sivulla muistiinpano ja valitse sitten **Rajoitus**-kentästä **Sisäinen** tai **Ulkoinen**.
+- Avaa talous- ja toimintosovelluksessa **Liitteet**-sivulla muistiinpano ja valitse sitten **Rajoitus**-kentästä **Sisäinen** tai **Ulkoinen**.
 
     ![Rajoituskenttä.](media/notes-fo-4.png)
 
 Voit myös luoda URL-osoitteen.
 
-1. Valitse taloushallinnon ja toimintojen sovelluksen **Liitteet**-sivulla **Uusi** \> **URL-osoite**.
+1. Valitse talous- ja toimintosovelluksen **Liitteet**-sivulla **Uusi** \> **URL-osoite**.
 2. Kirjoita otsikko ja URL-osoite.
 3. Valitse **Rajoitus**-kentästä **Sisäinen** tai **Ulkoinen**.
 
-    ![URL-osoitteen luominen taloushallinnon ja toimintojen sovelluksessa.](media/notes-fo-5.png)
+    ![URL-osoitteen luominen talous- ja toimintosovelluksessa.](media/notes-fo-5.png)
 
 4. Valitse **Tallenna**.
 
@@ -109,7 +109,7 @@ Voit myös luoda URL-osoitteen.
 
 Muistiinpanojen integraatio sisältää taulukarttojen kokoelman, joita käytetään yhdessä tietojen vuorovaikutuksen aikana seuraavan taulukon mukaisesti.
 
-| Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellus | Kuvaus |
+| Talous- ja toimintosovellus | Asiakkaiden aktivointisovellus | Kuvaus |
 |----------------------------|-------------------------|-------------|
 | [Asiakkaan liitteet](mapping-reference.md#230) | Huomautukset | Yritykset, jotka käyttävät tavallista tekstiä ja URL-osoitteita asiakaskohtaisten tietojen keräämiseen (sekä organisaatioille että henkilöille). |
 | [Toimittajan asiakirjaliitteet](mapping-reference.md#231) | Huomautukset | Yritykset, jotka käyttävät tavallista tekstiä ja URL-osoitteita toimittajakohtaisten tietojen keräämiseen (sekä organisaatioille että henkilöille). |
@@ -121,3 +121,4 @@ Muistiinpanojen integraatio sisältää taulukarttojen kokoelman, joita käytet�
 Kun olet asentanut huomautusratkaisun, sen asennusta ei voi poistaa. 
 
 Lisätietoja on [kaksoiskirjoituksen yhdistämismäärityksen viitteessä](mapping-reference.md).
+

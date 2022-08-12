@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7dc45e56c5fa616c288ebb4b919f039b7358794
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898395"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123651"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Power Appsin kaavasovellusten upottaminen
 
@@ -27,7 +27,7 @@ ms.locfileid: "8898395"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Microsoft Power Apps on palvelu, joka sallii kehittäjien ja muiden kuin teknisten käyttäjien muokata yrityssovelluksia mobiililaitteille, tableteille ja verkkoon ilman, että heidän tarvitsee kirjoittaa koodia. Taloushallinnon ja toimintojen sovellukset tukevat integrointia Power Appsin kanssa. Sinun, organisaatiosi tai laajemman ekosysteemin kehittämät kaaviosovellukset voidaan upottaa taloushallinnon ja toimintojen sovelluksiin laajentamaan tuotteen toimintoja. Voit esimerkiksi luoda Power Apps -kaaviosovelluksen, joka täydentää taloushallinnon ja toimintojen sovellusta toisesta järjestelmästä haetuilla tiedoilla.
+Microsoft Power Apps on palvelu, joka sallii kehittäjien ja muiden kuin teknisten käyttäjien muokata yrityssovelluksia mobiililaitteille, tableteille ja verkkoon ilman, että heidän tarvitsee kirjoittaa koodia. Talous- ja toimintosovellukset tukevat integrointia Power Appsin kanssa. Sinun, organisaatiosi tai laajemman ekosysteemin kehittämät pohjaan perustuvat sovellukset voidaan upottaa talous- ja toimintosovelluksiin laajentamaan tuotteen toimintoja. Voit esimerkiksi luoda pohjaan perustuvan Power Apps -sovelluksen, joka täydentää talous- ja toimintosovellusta toisesta järjestelmästä haetuilla tiedoilla.
 
 Lisätietoja kaaviosovellusten upottamisesta on lyhyessä videossa [Kaaviosovellusten upottaminen](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
@@ -35,7 +35,7 @@ Lisätietoja kaaviosovellusten upottamisesta on lyhyessä videossa [Kaaviosovell
 
 Ennen kuin Power Apps -kaaviosovellus voidaan upottaa asiakasohjelmaan, käyttäjän on ensin etsittävä tai luotava sovellus, jossa on toivotut visuaaliset elementit tai toiminnot. Tässä artikkelissa ei ole yksityiskohtaista kuvausta sovellusten luontiprosessista. Jos Power Apps ei ole tuttu, tutustu [Power Apps -dokumentaatioon](/powerapps/).
 
-Pohjaan perustuvan sovelluksen voi upottaa taloushallinnon ja toimintojen sovellukseen kolmella tavalla. Valinta voi siis perustua siihen, mikä tapa soveltuu parhaiten skenaarioon. 
+Pohjaan perustuvan sovelluksen voi upottaa talous- ja toimintosovellukseen kolmella tavalla. Valinta voi siis perustua siihen, mikä tapa soveltuu parhaiten skenaarioon. 
 
 - Pohjaan perustuvan sovelluksen upottaminen **Power Apps** -painikkeeseen sivun vakiotoimintoruudussa. Tällä tavoin lisätyt sovellukset näkyvät vaihtoehtoina **Power Apps** -valikkopainikkeessa, ja sovellukset avautuvat sivuruuduissa. 
 - Pohjaan perustuvan sovelluksen upottaminen suoraan aiemmin luodulle sivulle uutena välilehtenä (pivot-välilehti, pikavälilehti, lehti tai työtilan osa).
@@ -68,7 +68,7 @@ Seuraavassa menettelyssä näytetään, miten pohjaan perustuva sovellus upoteta
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Pohjaan perustuvan sovelluksen upottaminen koko sivun kokemuksena koontinäytöstä
 
-Pohjaan perustuvan sovelluksen upottamista koontinäytöstä kannattaa harkita, jos sovellus ei liity aiemmin luotuun sivuun tai jos sovelluksen halutaan näkyvän koko sivun kokemuksena taloushallinnon ja toimintojen sovelluksessa.
+Pohjaan perustuvan sovelluksen upottamista koontinäytöstä kannattaa harkita, jos sovellus ei liity aiemmin luotuun sivuun tai jos sovelluksen halutaan näkyvän koko sivun kokemuksena talous- ja toimintosovelluksessa.
 
 > [!NOTE]
 > Tämä ominaisuus saadaan käyttöön ottamalla **Koko sivun sovellukset** -ominaisuus käyttöön ominaisuuksien hallinnassa. 
@@ -107,15 +107,15 @@ Kun pohjaan perustuva sovellus on upotettu sivulle ja kun on vahvistettu, että 
     - Jos **Tallennetut näkymät** -ominaisuus on poistettu käytöstä, järjestelmänvalvoja voi antaa pohjaan perustuvan sovelluksen sisältävän mukautuksen soveltuvalle käyttäjäjoukolle **Mukauttaminen**-sivun kautta. Vaihtoehtoisesti sivun mukautukset voidaan viedä, jonka jälkeen ne lähetetään käyttäjille. Kukin kyseisistä käyttäjistä voi sitten tuoda mukautuksen. Mukauttamisen työkalurivillä on painikkeita, joilla viedä ja tuoda mukautuksia.
 
 > [!NOTE]
-> Jos kaaviosovellus on jaettu ulkoisten käyttäjien kanssa, kyseiset käyttäjät eivät voi käyttää upotettua sovellusta taloushallinnon ja toimintojen sovelluksissa. He voivat kuitenkin käyttää sovellusta suoraan Power Appsissa. Ulkoiset käyttäjät ovat vieraita ja käyttäjiä, jotka eivät kuulu siihen Microsoft 365:n Azure-hakemistoon, jossa taloushallinnon ja toimintojen sovellus on otettu käyttöön.
+> Jos pohjaan perustuva sovellus on jaettu ulkoisten käyttäjien kanssa, kyseiset käyttäjät eivät voi käyttää upotettua sovellusta talous- ja toimintosovelluksissa. He voivat kuitenkin käyttää sovellusta suoraan Power Appsissa. Ulkoiset käyttäjät ovat vieraita ja käyttäjiä, jotka eivät kuulu siihen Microsoft 365:n Azure-hakemistoon, jossa talous- ja toimintosovellus on otettu käyttöön.
 
 Lisätietoja tuotteen mukauttamistoiminnoista ja niiden käytöstä on kohdassa [Käyttökokemuksen mukauttaminen](personalize-user-experience.md).
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovelluksista lähetettyjä tietoja käyttävän kaaviosovelluksen luominen
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Talous- ja toimintosovelluksista lähetettyjä tietoja käyttävän pohjaan perustuvan sovelluksen luominen
 
-Kun luot kaaviosovelluksen, joka upotetaan taloushallinnon ja toimintojen sovellukseen, tärkeä osa prosessia on käyttää kyseisen taloushallinnon ja toimintojen sovelluksen syöttötietoja. Power Apps -kehityskokemuksessa taloushallinnon ja toimintojen sovelluksesta välitettyjä tietoja voidaan käyttää käyttämällä muuttujaa **Param("EntityId")**. Lisäksi versiosta 10.0.19 alkaen nykyinen yritys välitetään myös kaaviosovellukselle **Param("cmp")**-muuttujan kautta. 
+Kun luot pohjaan perustuvan sovelluksen, joka upotetaan talous- ja toimintosovellukseen, tärkeä osa prosessia on käyttää kyseisen talous- ja toimintosovelluksen syöttötietoja. Power Apps -kehityskokemuksessa talous- ja toimintosovelluksesta välitettyjä tietoja voidaan käyttää käyttämällä muuttujaa **Param("EntityId")**. Lisäksi versiosta 10.0.19 alkaen nykyinen yritys välitetään myös kaaviosovellukselle **Param("cmp")**-muuttujan kautta. 
 
-Esimerkiksi sovelluksen OnStart-toiminnolle voi määrittää syöttötiedot taloushallinnon ja toimintojen sovelluksista muuttujalle seuraavalla tavalla:
+Esimerkiksi sovelluksen OnStart-toiminnolle voi määrittää syöttötiedot talous- ja toimintosovelluksista muuttujalle seuraavalla tavalla:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -125,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Kaaviosovelluksen tarkasteleminen
 
-Voit tarkastella taloushallinnon ja toimintojen sovelluksien sivulle upotettua kaaviosovellusta siirtymällä sivulle, jolla on upotettu sovellus. Muista, että sovelluksia voi käyttää vakiomuotoisen toimintoruudun **Power Apps** -painikkeen avulla. Vaihtoehtoisesti ne voivat tulla näkyviin suoraan sivulla uutena välilehtenä, pikavälilehtenä, lehtenä tai työtilan uutena osana. Kun käyttäjät yrittävät ladata sovelluksen sivulla ensimmäistä kertaa, heitä kehotetaan kirjautumaan sisään. Tällä vaiheella varmistetaan, että käyttäjillä on tarvittavat käyttöoikeudet sovelluksen käyttämiseen.
+Voit tarkastella talous- ja toimintosovellusten sivulle upotettua pohjaan perustuvaa sovellusta siirtymällä sivulle, jolla on upotettu sovellus. Muista, että sovelluksia voi käyttää vakiomuotoisen toimintoruudun **Power Apps** -painikkeen avulla. Vaihtoehtoisesti ne voivat tulla näkyviin suoraan sivulla uutena välilehtenä, pikavälilehtenä, lehtenä tai työtilan uutena osana. Kun käyttäjät yrittävät ladata sovelluksen sivulla ensimmäistä kertaa, heitä kehotetaan kirjautumaan sisään. Tällä vaiheella varmistetaan, että käyttäjillä on tarvittavat käyttöoikeudet sovelluksen käyttämiseen.
 
 ## <a name="editing-an-embedded-app"></a>Upotetun sovelluksen muokkaaminen
 
@@ -184,3 +184,4 @@ public final class ClassTest_Extension
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

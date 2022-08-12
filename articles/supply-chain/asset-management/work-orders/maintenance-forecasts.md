@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: be6ef12f34e85b90c24c43c6e55ad169c271810a
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 4e3da8ab9a739c8455d2c1d2720f94f91a42927d
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016620"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111597"
 ---
 # <a name="maintenance-forecasts"></a>Ylläpitoennusteet
 
@@ -107,7 +107,7 @@ Seuraavassa kuvassa on esimerkki **Työtilauksen ylläpitoennuste** -sivusta.
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Työtilausennusteiden automaattinen päivitys
 
-Jos tuntikustannuksia, nimikekustannuksia ja kuluja päivitetään muissa Microsoft Dynamics 365 for Finance and Operations -moduuleissa, resurssienhallinnan työtilausten ennusteet voidaan päivittää automaattisesti kyseisten muutosten mukaisesti. Tämä ominaisuus auttaa varmistamaan, että työtilausennusteissa käytetään aina viimeisimpiä kustannushintoja. Samanlaisia päivityksiä voidaan tehdä myös [kunnossapitotöiden tyyppien ennusteille.](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+Jos tuntikustannuksia, nimikekustannuksia ja kuluja päivitetään muissa moduuleissa, resurssien hallinnan työtilausten ennusteet voidaan päivittää automaattisesti kyseisten muutosten mukaisesti. Tämä ominaisuus auttaa varmistamaan, että työtilausennusteissa käytetään aina viimeisimpiä kustannushintoja. Samanlaisia päivityksiä voidaan tehdä myös [kunnossapitotöiden tyyppien ennusteille.](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
 1. Valitse **Resurssienhallinta** > **Kausittainen** > **Ennuste** > **Päivitä työtilauksen ennuste**.
 

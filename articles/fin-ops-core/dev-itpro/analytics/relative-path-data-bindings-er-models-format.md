@@ -13,23 +13,23 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: be2c0f921fde13598685553ea01bfcf3f8255362
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313564"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108668"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa
 
 [!include[banner](../includes/banner.md)]
 
-Sähköisellä raportointityökalun (ER) avulla käyttäjät voivat määrittää sähköisen muodon rakenteita ja kuvailla sitten, miten kyseiset rakenteet täytetään sovelluksessa olevilla tiedoilla ja algoritmeilla. Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden luominen](electronic-reporting-configuration.md) Voit määrittää Finance and Operations -tietojen noutamiseen tarvittavan tietovirran ja sen avulla luotavan sähköisen asiakirjan seuraavasti:
+Sähköisellä raportointityökalun (ER) avulla käyttäjät voivat määrittää sähköisen muodon rakenteita ja kuvailla sitten, miten kyseiset rakenteet täytetään sovelluksessa olevilla tiedoilla ja algoritmeilla. Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden luominen](electronic-reporting-configuration.md) Voit määrittää talous- ja toimintosovellusten tietojen noutamiseen tarvittavan tietovuon ja sen avulla luotavan sähköisen asiakirjan seuraavasti:
 
 - Sido määritetyt tietolähteet suunnitellun toimialuekohtaisen tietomallin elementteihin. Mallin rakenne ja valitut tietolähteet voivat olla osa monimutkaista hierarkkista rakennetta. Tämän vuoksi lopulliset sidonnat voivat olla suuria ja niissä voi olla useita erityyppisiä elementtejä (kuten suhteita, tauluja ja menetelmiä). Sidontojen luettavuus heikkenee ja niiden tarkistaminen ja ymmärtäminen voi olla hankalaa etenkin muille kuin omistajille. 
 - Sitomalla tietomallin elementit muodon osiin voit määrittää, mitkä tiedot täytetään tietomallista luodun muodon tulokseen.
 
-ER-yhdistämismääritysten suunnitteluohjelmien käytettävyyttä parantamaan on julkaistu [suhteellisen polun](er-formula-language.md#relative-path) ominaisuus. Suhteellisen polun esitysvaihtoehto on oletusarvoisesti otettu käyttöön sovelluksen kaikissa uusissa esiintymissä, joissa ER-suunnittelukokemus on otettu käyttöön (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Suhteellisen polun parametri on toteutettu, jotta käyttäjät voivat jatkaa täydellisen polun käyttämistä, kun he käsittelevät ER-sidontojen tätä esitystä.
+ER-yhdistämismääritysten suunnitteluohjelmien käytettävyyttä parantamaan on julkaistu [suhteellisen polun](er-formula-language.md#relative-path) ominaisuus. Suhteellisen polun esitysvaihtoehto on oletusarvoisesti otettu käyttöön sovelluksen kaikissa uusissa esiintymissä, joissa ER-suunnittelukokemus on otettu käyttöön (Microsoft Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Suhteellisen polun parametri on toteutettu, jotta käyttäjät voivat jatkaa täydellisen polun käyttämistä, kun he käsittelevät ER-sidontojen tätä esitystä.
 
 [![Käyttäjän parametrit.](./media/relative-path-01.png)](./media/relative-path-01.png)
 
@@ -58,3 +58,4 @@ Tämä toiminto ei katkaise ER-kehyksen yhteensopivuutta aiempien versioiden kan
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

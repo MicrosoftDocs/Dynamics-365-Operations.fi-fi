@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849297"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065551"
 ---
 # <a name="flushing-principles"></a>Materiaaliottosäännöt
 
@@ -50,7 +50,7 @@ Materiaalinottosäännöt määritetään hierarkian oletusarvoissa. Hierarkia a
 ## <a name="description-of-the-flushing-principles"></a>Materiaalinottosääntöjen kuvaus
 
 ### <a name="manual"></a>Manuaalinen
-Manuaalinen materiaalinottosääntö ilmaisee, että materiaalikulutuksen rekisteröinti on manuaalinen toiminto. Tällä säännöllä on merkitystä, jos haluat esimerkiksi seurata aikaa, ja kulutettujen eränumeroiden tai sarjanumeroiden määrästä on oltava selvillä seurantaa varten. Manuaalinen kulutus rekisteröidään tuotannon keräysluettelon kirjauskansioon. Jos edistykselliset varastoprosessit on otettu käyttöön nimikkeissä, voidaan käyttää käsikäyttöistä työnkulkua.
+Manuaalinen materiaalinottosääntö ilmaisee, että materiaalikulutuksen rekisteröinti on manuaalinen toiminto. Tällä säännöllä on merkitystä, jos haluat esimerkiksi seurata aikaa, ja kulutettujen eränumeroiden tai sarjanumeroiden määrästä on oltava selvillä seurantaa varten. Manuaalinen kulutus rekisteröidään tuotannon keräysluettelon kirjauskansioon. Jos varastonhallintaprosessit (WMS) on otettu käyttöön nimikkeissä, voidaan käyttää käsikäyttöistä työnkulkua.
 
 ### <a name="start"></a>Alku
 Alku-materiaaliottosääntö ilmaisee, että materiaali kulutetaan automaattisesti, kun tuotantotilaus käynnistetään. Kulutetun materiaalin määrä on suhteessa käynnistettyyn määrään. Kun Alku-materiaaliottosääntöä käytetään yhdessä tuotannonohjausjärjestelmän kanssa, sitä voidaan käyttää materiaaliottoihin, kun toiminto tai prosessityö on aloitettu. Säännöllä on merkitystä, jos esimerkiksi kulutuksen varianssi on pieni, materiaalit ovat arvoiltaan vähäisiä, seurantaa ei tarvita tai toimenpiteen suoritusaika on lyhyt. 

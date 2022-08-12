@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: fc3cf3b5d28a4e512f921db6ba090dd5731391cc
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713273"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123979"
 ---
 # <a name="before-you-buy"></a>Ennen ostamista
 
@@ -26,7 +26,7 @@ ms.locfileid: "8713273"
 
 Oletko uusi Dynamics 365 Financen, Dynamics 365 Supply Chain Managementin tai Dynamics 365 Commercen käyttäjä? Voit käyttää vaihe vaiheelta -opasta silloin, kun arvioit sovellusta tai kun olet valmis hankkimaan sen.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Ensimmäinen vaihe: Finance and Operationsin maksuton 30 päivän kokeilu
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Ensimmäinen vaihe: talous- ja toimintosovellusten maksuton 30 päivän kokeilu
 
 Voit kokeilla Dynamics 365 for Financea, Dynamics 365 Supply Chain Managementia tai Dynamics 365 Commercea 30 päivää rekisteröitymällä sähköpostitse. Talous- ja toimintosovellusten kokeiluversiossa on tehtävien aloitusoppaat, joiden vaihe vaiheelta -ohjeilla voi tarkastella tiettyjä skenaarioita käytännössä. Tuotteessa voi tutustua erilaisiin skenaarioihin ja niitä voi harjoitella, mutta sitä ei voi mukauttaa. Esittelytiedot helpottavat tuotteen käyttöä ja takaavat merkityksellisen kokemuksen. Muistutussähköposti lähetetään kolme päivää ennen koeajan päättymistä. Lisätietoja on kohdassa [Kokeiluversioiden tilaaminen](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
@@ -62,7 +62,7 @@ Microsoftin pilvipalveluratkaisujen toimittaja selvittää yhteistyössä kanssa
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Voit ostaa sen Dynamics-kumppanilta (paikallinen).
 
-Finance and Operationsin paikallisen version ostaminen edellyttää yhteistyötä kumppanin kanssa. Lisätietoja on kohdassa [Finance and Operationsin (on-premises) ostaminen](purchase-on-premises.md).
+Finance + Operations (on-premises) -version ostaminen edellyttää yhteistyötä kumppanin kanssa. Lisätietoja on kohdassa [Finance and Operationsin (on-premises) ostaminen](purchase-on-premises.md).
 
 ### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Voit käyttää ostamiseen volyymikäyttöoikeuksia (pilvi tai paikallinen).
 
@@ -94,3 +94,4 @@ Jos olet asiakas, joka päivittää Microsoft Dynamics AX 2012:sta tai siirtyy M
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

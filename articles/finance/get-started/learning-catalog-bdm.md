@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c0ec643046d871000220fbe82df04866599bcdf7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eba7c10d08ade65f7ddf93cae06446b7e3452e37
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907831"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065268"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-finance"></a>Oppimisluettelo yrityksen päätöksentekijöille ja teknisille päätöksentekijöille, jotka harkitsevat Dynamics 365 Financen käyttöönottoa
 
@@ -31,7 +31,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 |---------|-------------|--------|--------|
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 7 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia |
-| [Taloushallinnon ja toimintojen sovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten taloushallinnon ja toimintojen sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat taloushallinnon ja toimintojen sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
+| [Talous- ja toimintosovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten talous- ja toimintosovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat talous- ja toimintosovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Dynamics 365 Financen käyttämisen aloittaminen](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Financen avulla yrityskäyttäjät voivat nopeasti sopeutua muuttuviin liiketoimintaympäristöihin. Se tarjoaa yrityksille kaiken. Sen avulla voidaan hallita taloutta ja varoja tarkasti ja milloin tahansa taloussuunnitteluun ja ennustamiseen avulla sekä pysyä ajan tasalla analytiikkatyökalujen avulla. Koska talous on kaikkien yritysten tärkein alue, on tärkeää tutustua Dynamics 365 Financen ominaisuuksiin. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 1 tunti |
 | [Aloita kulujen hallinnan käyttö Dynamics 365 Project Operationsissa](/learn/modules/get-started-expense-management/) | Dynamics 365 Project Operationsin kulujen hallinnan moduulin avulla organisaatiot voivat seurata ja hallita työntekijöiden kuluja. Kulujenhallinnan avulla voit tallentaa maksutietoja, tuoda luottokorttitapahtumia ja seurata työntekijöiden organisaatiolle kerryttämiä kustannuksia. Voit myös määrittää kulukäytäntöjä, automatisoida hyväksyntöjä ja tehostaa liiketoimintaprosessia Project Operationsin avulla. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 1 tunti |
 | [Dynamics 365 Intelligent Order Managementn käytön aloittaminen](/learn/modules/get-started-intelligent-order-management/) | Asiakkaat voivat hallita Dynamics 365 Intelligent Order Managementin avulla tilausten orkestrointia täyttämiseen saakka. Näiden ominaisuuksien avulla organisaatiot voivat orkestroida tilauksen työnkulut eri ympäristöissä ja sovelluksissa. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 30 minuuttia |

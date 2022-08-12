@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859692"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068845"
 ---
 # <a name="tax-calculation-data-model"></a>Verolaskennan tietomalli
 
 Tämä artikkeli sisältää tietoja siitä, miten verotietomallin kenttäarvot määritetään veronlaskennan tapahtumissa.
 
-*Verotietomalli* koostuu kentistä, joita tarvitaan verolaskennassa. Microsoft tarjoaa *veronlaskennan tietomallin*, joka sisältää rahoitus- ja toiminta -sovelluksissa olevien tapahtuma-asiakirjojen otsikko- ja rivikentät. Veronlaskennan tietomallissa määritetyt kentät ovat veronlaskennan ominaisuusmäärityksen määrityksen käytettävyyssääntötaulukkojen käytettävissä olevat sarakkeet.
+*Verotietomalli* koostuu kentistä, joita tarvitaan verolaskennassa. Microsoft tarjoaa *veronlaskennan tietomallin*, joka sisältää talous- ja toimintosovelluksissa olevien tapahtuma-asiakirjojen otsikko- ja rivikentät. Veronlaskennan tietomallissa määritetyt kentät ovat veronlaskennan ominaisuusmäärityksen määrityksen käytettävyyssääntötaulukkojen käytettävissä olevat sarakkeet.
 
 > [!NOTE] 
 > Osa tietomallissa määritetyistä solmuista, kuten **Tietuetunnus** ja **Taulukkotunnus**, on suunniteltu teknisiä tarkoituksia varten. Ne eivät ole käytettävissä olevia sarakkeita veronlaskennan ominaisuusmäärityksessä.
@@ -54,7 +54,7 @@ Voit myös tarkastella veronlaskennan tietomallia ja käytettävyyssääntötaul
 
     [![Hallitse sarakkeita.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Veronlaskennan tietomalli on integroitu rahoitus- ja toiminta -sovelluksiin. Jokaisen veronlaskentaan liittyvän tapahtuman aikana käytettävyyssääntöjen taulukoissa määritettyjen kenttien arvot kerätään ja lähetetään veronlaskentapalveluun laskettavaksi. Versiossa 40.46 on käytettävissä 57 ennalta määritettyä tietomallia seuraaville tapahtumatyypeille: ostotilaukset, myyntitilaukset, siirtotilaukset, ostoehdotukset, tarjouspyynnöt ja myyntitarjoukset.
+Veronlaskennan tietomalli on integroitu talous- ja toimintosovelluksiin. Jokaisen veronlaskentaan liittyvän tapahtuman aikana käytettävyyssääntöjen taulukoissa määritettyjen kenttien arvot kerätään ja lähetetään veronlaskentapalveluun laskettavaksi. Versiossa 40.46 on käytettävissä 57 ennalta määritettyä tietomallia seuraaville tapahtumatyypeille: ostotilaukset, myyntitilaukset, siirtotilaukset, ostoehdotukset, tarjouspyynnöt ja myyntitarjoukset.
 
 ## <a name="version-updates-and-restrictions"></a>Versiopäivitykset ja rajoitukset
 
@@ -134,3 +134,4 @@ Veronlaskennan tietomalli on integroitu rahoitus- ja toiminta -sovelluksiin. Jok
 | Yksikkö                          | <ul><li>**Myyntitilaus:** Yksikkö</li><li>**Ostotilaus:** Yksikkö</li><li>**Siirtotilaus – lähetä:** Yksikkö</li><li>**Siirtotilaus – vastaanota:** Yksikkö</li><li>**Ostoehdotus:** Yksikkö</li><li>**Tarjouspyyntö:** Yksikkö</li><li>**Myyntitarjous:** Yksikkö</li></ul> |
 | Muuttujan numero                | <ul><li>**Myyntitilaus:** Varianttinumero</li><li>**Ostotilaus:** Varianttinumero</li><li>**Myyntitarjous:** Varianttinumero</li></ul> |
 | Varasto                     | <ul><li>**Myyntitilaus:**<ol><li>Rivi &gt; Varasto</li><li>Tuote &gt; Varasto</li></ol></li><li>**Ostotilaus:**<ol><li>Rivi &gt; Varasto</li><li>Tuote &gt; Varasto</li></ol></li><li>**Siirtotilaus – lähetä:** Lähdevarasto</li><li>**Siirtotilaus – vastaanota:** Kohdevarasto</li><li>**Ostoehdotus:** Rivi &gt; Varasto</li><li>**Tarjouspyyntö:** Rivi &gt; Varasto</li><li>**Myyntitarjous:**<ol><li>Rivi &gt; Varasto</li><li>Tuote &gt; Varasto</li></ol></li></ul> |
+

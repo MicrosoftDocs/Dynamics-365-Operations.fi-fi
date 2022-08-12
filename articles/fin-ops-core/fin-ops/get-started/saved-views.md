@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845410"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125147"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -215,7 +215,7 @@ Lisätietoja tunnetuista ongelmista ja tallennetuista näkymistä on kohdassa [T
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Miten voin ottaa tallennetut näkymät käyttöön omassa ympäristössäni?
 
 > [!NOTE]
-> **Tallennetut näkymät** -toiminto edellyttää, että mukautusjärjestelmä taloushallinnossa ja toiminnoissa otetaan käyttöön. Jos mukauttaminen on poistettu käytöstä koko ympäristössä, näkymät poistetaan käytöstä, vaikka noudattaisit alla mainittuja vaiheita. 
+> **Tallennetut näkymät** -toiminto edellyttää, että talous- ja toimintosovellusten mukautusjärjestelmä otetaan käyttöön. Jos mukauttaminen on poistettu käytöstä koko ympäristössä, näkymät poistetaan käytöstä, vaikka noudattaisit alla mainittuja vaiheita. 
 
 **Tallennetut näkymät** -toiminto voidaan ottaa käyttöön ja poistaa käytöstä ominaisuuksien hallinnassa kaikissa ympäristöissä. Kun toiminto on otettu käyttöön, tallennetut näkyvät ovat käytössä kaikissa seuraavissa käyttäjäistunnoissa.
 
@@ -255,3 +255,4 @@ Jos näkymä julkaistaan tietyssä yrityksessä mutta kyseistä näkymää ei ju
 - **Version 10.0.21 tai uudempi:** Jos **Tallennettujen näkyvien parannettu yritystuki** -ominaisuus on otettu käyttöön, näkymänvalitsin näyttää näkymän aina vain määritetyille yrityksille. Tämä toiminta johtuu siitä, että näkymät (mukaan lukien omat näkymät) voidaan linkittää tiettyihin yrityksiin.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

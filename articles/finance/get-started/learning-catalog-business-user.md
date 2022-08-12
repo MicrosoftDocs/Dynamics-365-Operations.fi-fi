@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2c7b1faac6af3356e4621d932031e798413b6563
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c883a425610d9b04812ba77c666b0b220184d5af
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889897"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069281"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Dynamics 365 Financen käyttäjien oppimisluettelo
 
@@ -31,7 +31,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 |---------|-------------|--------|--------|
 | [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 8 tuntia |
 | [Dynamics 365:n ja Power Platformin perusteet](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 5.5 tuntia   |
-| [Taloushallinnon ja toimintojen sovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten talous- ja toimintosovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä.   Kun aloitat talous- ja toimintosovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
+| [Talous- ja toimintosovellusten käyttämisen aloittaminen](/learn/paths/get-started-finance-operations/) | Katso, miten talous- ja toimintosovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä.   Kun aloitat talous- ja toimintosovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 2 tuntia |
 | [Dynamics 365 Intelligent Order Managementn käytön aloittaminen](/learn/modules/get-started-intelligent-order-management/) | Asiakkaat voivat hallita Dynamics 365 Intelligent Order Managementin avulla tilausten orkestrointia täyttämiseen saakka. Näiden ominaisuuksien avulla organisaatiot voivat orkestroida tilauksen työnkulut eri ympäristöissä ja sovelluksissa. | Maksuton, omaan tahtiin etenevä verkko-oppimismoduuli | 30 minuuttia |
 | [Kurssi MB-900T01-A: Dynamics 365:n perusteet](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Kurssi tutustuttaa oppijan Dynamics 365:n toimintoihin ja liiketoiminta-arvoon. Kurssi kattaa Dynamics 365 -sovellukset, Power Platformin, pilvipalvelun käsitteet, suojausmallin sekä lisensointinäkökohdat. | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä |
 
@@ -39,7 +39,7 @@ Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin
 
 | Sisältö | Kuvaus | Muoto | Pituus |
 |---------|-------------|--------|--------|
-| [Määritä organisaatiosi talous- ja toimintosovellukset](/learn/paths/configure-your-organization-finance-ops/) | Talous- ja toimintosovellusten kanssa toimivana toiminnallisena konsulttina sinun on ymmärrettävä, miten voit määrittää asiakkaan organisaation. Tämä oppimispolku näyttää muun muassa, miten voit määrittää yritykset, ottaa käyttöön suojausasetukset, mukauttaa käyttäjien käyttöliittymää, suunnitella ja muodostaa mobiilisovelluksia sekä toteuttaa yleisiä integrointeja. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 12 tuntia  |
+| [Organisaation määrittäminen talous- ja toimintosovelluksissa](/learn/paths/configure-your-organization-finance-ops/) | Talous- ja toimintosovellusten kanssa toimivana toiminnallisena konsulttina on ymmärrettävä, miten voit määrittää asiakkaan organisaation. Tämä oppimispolku näyttää muun muassa, miten voit määrittää yritykset, ottaa käyttöön suojausasetukset, mukauttaa käyttäjien käyttöliittymää, suunnitella ja muodostaa mobiilisovelluksia sekä toteuttaa yleisiä integrointeja. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 12 tuntia  |
 | [Analysoinnin ja raportoinnin määrittäminen talous- ja toimintosovelluksissa](/learn/paths/configure-analytics-reporting-finance-operations/) | Liiketoiminnan johtajat voivat tehdä tärkeitä päätöksiä yrityksessä, jos heillä on tarkat tiedot taustalla olevasta taloudellisesta ja operatiivisesta datasta. Yrityskäyttäjä voi myös määrittää ja käyttää sähköistä raportointityökalua ilman yhtä koodia, ottaa käyttöön uusia lainsäädännöllisiä vaatimuksia ja luoda liikeasiakirjoja vaaditussa muodossa tietojen vaihtamiseksi sähköisesti viranomaisten, pankkien ja muiden osapuolten kanssa. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku | 4 tuntia   |
 
 ## <a name="financial-management"></a>Taloushallinto<a name="financial-management"></a>

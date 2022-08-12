@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 330683da986a551a9694833655122768d30499b1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b24d865bff0e81f79e7edde360fd5115d8637b42
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906765"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111228"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla
 
 [!include [banner](../../includes/banner.md)]
 
-Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava Regulatory Configuration Service (RCS) -käyttäjä voi suunnitella uuden sähköisen raportoinnin ER-mallin yhdistämisen Finance and Operationsin metatietojen avulla. Sovelluksen metatietoja käytetään verkossa RCS:n yhdistetyllä sovelluksella. ER-näytemallin yhdistäminen määritetään käyttämään ulkomaankauppatapahtumia. Näitä vaiheita varten on ensin suoritettava RCS:ssä artikkelissa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Jos olet suorittanut artikkelin [Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](access-application-metadata-er-configuration.md) vaiheet, lataa [Esimerkki sähköisestä raportoinnista](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) ja tallenna seuraavat ER-konfiguraatiot: Ulkomaankaupan metatiedot.xml, Ulkomaankauppamalli.xml ja Ulkomaankaupan yhdistäminen.xml. Suorita lopuksi toimenpiteen vaiheet.
+Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava Regulatory Configuration Service (RCS) -käyttäjä voi suunnitella uuden sähköisen raportoinnin ER-mallin yhdistämisen talous- ja toimintosovellusten metatietojen avulla. Sovelluksen metatietoja käytetään verkossa RCS:n yhdistetyllä sovelluksella. ER-näytemallin yhdistäminen määritetään käyttämään ulkomaankauppatapahtumia. Näitä vaiheita varten on ensin suoritettava RCS:ssä artikkelissa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Jos olet suorittanut artikkelin [Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](access-application-metadata-er-configuration.md) vaiheet, lataa [Esimerkki sähköisestä raportoinnista](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) ja tallenna seuraavat ER-konfiguraatiot: Ulkomaankaupan metatiedot.xml, Ulkomaankauppamalli.xml ja Ulkomaankaupan yhdistäminen.xml. Suorita lopuksi toimenpiteen vaiheet.
 
 ## <a name="prerequisites"></a>Edellytykset
 1. Valitse **Kaikki työtilat** > **Sähköinen raportointi**. 
@@ -114,3 +114,4 @@ Kun tämä malli on arvioitava käyttämällä toisen version sovelluksen metati
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

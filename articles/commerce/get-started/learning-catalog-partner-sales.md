@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4fdf8cd9d27b0ea6a629339e9c09c2cfc0924957
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eb0a3f26761f922225aa4b50bc709ae64aab9934
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864887"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070250"
 ---
 # <a name="learning-catalog-for-commerce-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-commerce"></a>Commercen Microsoft-kumppaneiden myynti- ja markkinointiroolien oppimisluettelo Dynamics 365 Commercessa
 
@@ -25,7 +25,7 @@ Oletko vastuussa siitä, että autat asiakkaitasi ostamaan oikean ratkaisun?
 
 Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin ja helpoimmista kehittyneimpiin. Jos sisältöä on useissa muodoissa, se on mainittu, jotta voit valita tarpeitasi parhaiten vastaavan koulutusmuodon.
 
-Lisätietoja muiden talous- ja toimintosovellusten kanssa jaetuista ominaisuuksien opettamisesta on [Dynamics 365 Financen oppimisluettelossa](../../finance/get-started/learning-catalog-partner-sales.md).
+Lisätietoja muiden talous- ja toimintosovellusten kanssa jaettujen ominaisuuksien opettamisesta on [Dynamics 365 Financen oppimisluettelossa](../../finance/get-started/learning-catalog-partner-sales.md).
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
@@ -37,3 +37,4 @@ Lisätietoja muiden talous- ja toimintosovellusten kanssa jaetuista ominaisuuksi
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

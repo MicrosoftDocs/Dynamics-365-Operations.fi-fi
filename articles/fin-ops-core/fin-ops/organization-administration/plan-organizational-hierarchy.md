@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771869"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108761"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Organisaatiohierarkian suunnitteleminen
 
@@ -42,7 +42,7 @@ Kun suunnittelet hierarkiat, on myös tärkeää ottaa huomioon suhde organisaat
 
 Sinulla on oltava vähintään yksi yritys yrityksellesi. Yritys voi solmia lainmukaisia sopimuksia ja jolta edellytetään suorituskykyä kuvaavien raporttien laatimista.
 
-Yrityksiä voidaan käyttää tapahtumasidonnaiseen liiketoimintaan tai konsolidointia varten. Tämä tarkoittaa, että Finance and Operationsissa oleva yksikkö ei välttämättä vastaa todellista yksikköä yrityksessäsi. Esimerkiksi tapahtumiin osallistuva yritys voi omistaa tytäryhtiöitä. Tässä skenaariossa tapahtumat vaativat yrityksen ja tytäryhtiöiden saldojen ja tulosten konsolidointiin vaaditaan virtuaaliyritys.
+Yrityksiä voidaan käyttää tapahtumasidonnaiseen liiketoimintaan tai konsolidointia varten. Tämä tarkoittaa, että talous- ja toimintosovelluksissa oleva yritys ei välttämättä vastaa todellista yksikköä yrityksessä. Esimerkiksi tapahtumiin osallistuva yritys voi omistaa tytäryhtiöitä. Tässä skenaariossa tapahtumat vaativat yrityksen ja tytäryhtiöiden saldojen ja tulosten konsolidointiin vaaditaan virtuaaliyritys.
 
 Liiketoimintasi sisäiset organisaatiot, kuten aluekohtaiset toimistot, voidaan kuvata lisäyrityksinä tai pääyrityksen toimintayksiköinä. Toimintayksikön ei tarvitse olla oikeudellisesti määritetty organisaatio. Toimintayksiköitä käytetään hallitsemaan liiketoiminnan taloudellisia resursseja ja operatiivisia prosesseja. Esimerkiksi osastot ja kustannuspaikat ovat toimintayksiköitä.
 
@@ -171,7 +171,7 @@ Tuettujen maiden tai alueiden kohdalla voidaan luoda useimmat lakisääteiset ra
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Jos organisaatio perustuu liiketoiminnan yksikköihin
 
-Lakisääteiset raportit on luotava käyttämällä toista sovellusta. Sinun on varmistettava, että Finance and Operations -sovelluksissa kerätään tiedot jokaisen toimintayksikön vaatimusten tukemiseksi, kun ne poikkeavat pääkonttorin vaatimuksista.
+Lakisääteiset raportit on luotava käyttämällä toista sovellusta. Sinun on varmistettava, että talous- ja toimintosovelluksissa kerätään tiedot jokaisen toimintayksikön vaatimusten tukemiseksi, kun ne poikkeavat pääkonttorin vaatimuksista.
 
 ### <a name="currency"></a>Valuutta
 
@@ -242,3 +242,4 @@ Ota huomioon seuraavat suositeltavat menetelmät organisaatiohierarkian käyttö
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879276"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067613"
 ---
 # <a name="integration-with-finance-faq"></a>Financeen integroinnin usein kysytyt kysymykset
 
@@ -88,7 +88,7 @@ Poikkeuksen käsittelyyn ei tarvita mitään erityisiä asetuksia. Tietojen inte
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Voinko määrittää kaksisuuntaisen integroinnin?
 
-Ei, sillä tällä hetkellä integrointi on yksisuuntaista (Human Resourcesista taloushallintoon ja toimintoihin). Käytettävissä on kuitenkin oletusmalli, jolla tietoja voi lähettää Human Resourcesista Financeen.
+Ei. Tällä hetkellä integrointi on yksisuuntaista (Human Resourcesista taloushallinto- ja toimintosovelluksiin). Käytettävissä on kuitenkin oletusmalli, jolla tietoja voi lähettää Human Resourcesista Financeen.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Voinko sallia tietueiden poiston integroinnin osana?
 
@@ -118,7 +118,7 @@ Tämän virheen syy voi olla jokin seuraavista:
 
 - Tiedonsiirto aiheutti sen, että tietueet noudettiin lähteestä (Dataverse) kahdesti.
 
-- Tiedonsiirrossa Finance and Operationsin pakollisilla kentillä on tyhjäarvo. Tarkista, että tiedot ovat Dataversessä ja että ne vastaavat Finance and Operationsin vaatimuksia.
+- Tiedonsiirrossa talous- ja toimintosovelluksiin pakollisilla kentillä on tyhjäarvo. Tarkista, että tiedot ovat Dataversessä ja että ne vastaavat Finance and Operationsin vaatimuksia.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Jos tapahtuu suoritusvirheitä eikä työntekijätunnus synkronoitunut, miten löydän työhistoria, joka sisältää epäonnistuneen työntekijätietueen?
 
@@ -150,7 +150,7 @@ Jos yksikköä tuetaan ja tiedot ovat käytettävissä Dataversessä, tarkista, 
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Työntekijöiden osoitteet ovat virheellisiä Financeen tuonnin jälkeen. Mitä minun pitäisi tehdä?
 
-**Sijainnin tunnus** -asetuksen numerosarja käyttää samaa mallia sekä Human Resourcesissa että Financessa. Kummallakin puolella on oltava yksilöllinen numerosarja, jotta osoiteongelmia ei tule, kun tiedot integroidaan Dataversestä Finance and Operationsiin.
+**Sijainnin tunnus** -asetuksen numerosarja käyttää samaa mallia sekä Human Resourcesissa että Financessa. Kummallakin puolella on oltava yksilöllinen numerosarja, jotta osoiteongelmia ei tule, kun tiedot integroidaan Dataversesta talous- ja toimintosovelluksiin.
 
 Tarkista Human Resourcesin toteutuksen aikana, että Human Resourcesissa ja Financessa ei käytetä samaa numerosarjaa. Tarkista, että kaikki numerosarjat eivät ole samanlaisia siellä, missä tietoja ehkä ylläpidetään molemmissa järjestelmissä.
 
@@ -184,3 +184,4 @@ Päivitä Financen tietoyksiköt valitsemalla **Tietojen hallinta \> Kehikkopara
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

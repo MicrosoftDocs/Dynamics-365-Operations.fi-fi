@@ -2,19 +2,19 @@
 title: Ongelmien vianmääritys synkronoinnin aikana
 description: Tässä artikkelissa on vianmääritys tietoja, joiden avulla voit korjata, joita saattaa ilmetä alkuperäisen synkronoinnin aikana.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: bb3db4c651aaac521974d92753be5a8219bfe1ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8fb27a6af2962be31288a3d2260110e5fe6a201
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892354"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112079"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Ongelmien vianmääritys synkronoinnin aikana
 
@@ -22,12 +22,12 @@ ms.locfileid: "8892354"
 
 
 
-Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Dataversen välillä. Erityisesti se tarjoaa tietoa, joiden avulla voit korjata virheitä, joita saattaa ilmetä alkuperäisen synkronoinnin aikana.
+Tässä artikkelissa on vianmääritystietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten sekä Dataversen välillä. Erityisesti se tarjoaa tietoa, joiden avulla voit korjata virheitä, joita saattaa ilmetä alkuperäisen synkronoinnin aikana.
 
 > [!IMPORTANT]
 > Jotkin tämän artikkelin osoitteet saattavat edellyttää joko järjestelmänvalvojan roolia tai Microsoft Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tunnistetietoja.
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Tarkista ensimmäisen synkronoinnin virheet taloushallinnon ja toimintojen sovelluksessa
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Tarkista ensimmäisen synkronoinnin virheet talous- ja toimintosovelluksessa
 
 Kun otat yhdistämismallit käyttöön, karttojen tilan on oltava **Käytössä**. Jos tila on **ei käynnissä**, alkuperäisen synkronoinnin aikana ilmeni virheitä. Voit tarkastella virheitä valitsemalla **kaksoiskirjoitus**-sivun **ensimmäiset synkronointitiedot**-välilehden.
 
@@ -63,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 Jos tämä virhe ilmenee jatkuvasti etkä voi suorittaa alkuperäistä synkronointia loppuun, korjaa ongelma noudattamalla seuraavia ohjeita.
 
-1. Kirjaudu sisään taloushallinnon ja toimintojen sovelluksen virtuaalikoneeseen (VM).
+1. Kirjaudu sisään talous- ja toimintosovelluksen näennäiskoneeseen (VM).
 2. Avaa Microsoft Management Console.
 3. Varmista **Palvelut**-ruudussa, että Microsoft Dynamics 365 -tietojen tuonnin vientikehyspalvelu on käytössä. Käynnistä se uudelleen, jos se on pysäytetty, koska ensimmäinen synkronointi edellyttää sitä.
 
@@ -75,7 +75,7 @@ Seuraava virhesanoma saattaa tulla näyttöön alkuperäisen synkronoinnin aikan
 
 Korjaa ongelma seuraavien ohjeiden mukaisesti.
 
-1. Kirjaudu taloushallinnon ja toimintojen sovellus.
+1. Kirjaudu talous- ja toimintosovellukseen.
 2. Poista **Azure Active Directory -sovellukset** -sivulla **DtAppID**-asiakasohjelma ja lisää se sitten uudelleen.
 
 ![DtAppID-asiakasohjelma Azure AD -sovellusten luettelossa.](media/aad_applications.png)
@@ -102,9 +102,9 @@ Seuraavassa on muutamia esimerkkejä:
 
 Jos toimittajataulun rivien **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-sarakkeissa on arvoja, suorita ensimmäinen synkronointi loppuun seuraavien ohjeiden mukaisesti:
 
-1. Poista taloushallinnon ja toimintojen sovelluksessa **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-sarakkeet yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
+1. Poista talous- ja toimintosovelluksessa **PrimaryContactPersonId**- ja **InvoiceVendorAccountNumber**-sarakkeet yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
 
-    1. Valitse **Toimittajat V2 (msdyn\_vendors)** -kaksoiskirjoituksen määrityssivun **Taulujen yhdistämismääritykset** -välilehden vasemmassa suodattimessa **Taloushallinnon ja toimintojen sovellukset.Toimittajat V2**. Valitse oikeanpuoleisesta suodattimesta **Sales.Vendor**.
+    1. Valitse **Toimittajat V2 (msdyn\_vendors)** -kaksoiskirjoituksen määrityssivun **Taulujen yhdistämismääritykset** -välilehden vasemmassa suodattimessa **Talous- ja toimintosovellukset.Toimittajat V2**. Valitse oikeanpuoleisesta suodattimesta **Sales.Vendor**.
     2. Käytä hakusanaa **primarycontactperson** ja etsi **PrimaryContactPersonId**-lähdesarake.
     3. Valitse ensin **Toiminnot** ja sitten **Poista**.
 
@@ -149,9 +149,9 @@ Seuraavassa on muutamia esimerkkejä:
 
 Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa on arvoja, suorita ensimmäinen synkronointi loppuun seuraavien ohjeiden mukaisesti: Tämän menetelmän avulla voit käyttää kaikkia valmiita tauluja, kuten **Tilejä** ja **Yhteyshenkilöitä**.
 
-1. Poista taloushallinnon ja toimintojen sovelluksessa **ContactPersonID**- ja **InvoiceAccount** -sarakkeissa **Asiakkaat V3 (tilit)** -yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
+1. Poista talous- ja toimintosovelluksessa **ContactPersonID**- ja **InvoiceAccount** -sarakkeissa **Asiakkaat V3 (tilit)** -yhdistämismäärityksestä ja tallenna sitten yhdistämismääritys.
 
-    1. Valitse **Asiakkaat V3 (tilit)** -kaksoiskirjoituksen määrityssivun **Taulujen yhdistämismääritykset** -välilehden vasemmassa suodattimessa **Taloushallinnon ja toimintojen sovellus.Asiakkaat V3**. Valitse oikeanpuoleisesta suodattimesta **Dataverse.Account**.
+    1. Valitse **Asiakkaat V3 (tilit)** -kaksoiskirjoituksen määrityssivun **Taulujen yhdistämismääritykset** -välilehden vasemmassa suodattimessa **Talous- ja toimintosovellus.Asiakkaat V3**. Valitse oikeanpuoleisesta suodattimesta **Dataverse.Account**.
     2. Käytä hakusanaa **contactperson** ja etsi **ContactPersonID** lähdesarake.
     3. Valitse ensin **Toiminnot** ja sitten **Poista**.
 
@@ -182,16 +182,16 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
     > Kahdella yhdistämismäärityksellä on sama nimi. Varmista, että valitse yhdistämismäärityksen, jonka **Tiedot**-välilehdessä on seuraava kuvaus: **Kaksoiskirjoitusmalli synkronointiin FO.CDS Toimittajayhteyshenkilöiden V2 ja CDS.Contacts välillä. Tarvitaan uusi paketti \[Dynamics365SupplyChainExtended\].**
 
 5. Lisää **InvoiceAccount**- ja **ContactPersonId** -sarakkeet takaisin **Asiakkaat V3 (tilit)** -yhdistämismääritykseen ja tallenna sitten yhdistämismääritys. Sekä **InvoiceAccount**- että **ContactPersonId**-sarakkeet ovat nyt taas synkronoinnin live-tilan osa. Seuraavassa vaiheessa tehdään näiden sarakkeiden ensimmäinen synkronointi.
-6. Suorita uudelleen **Asiakkaat V3 (tilit)** -yhdistämismäärityksen ensimmäinen synkronointi. Koska muutosten seuranta on poistettu käytöstä, **InvoiceAccount**- ja **ContactPersonId** -tiedot synkronoidaan taloushallinnon ja toimintojen sovelluksesta Dataverseen.
-7. **InvoiceAccount**- ja **ContactPersonId** -tietojen synkronoinnissa Dataversesta taloushallinnon ja toimintojen sovellukseen on käytettävä tietojen integrointiprojektia.
+6. Suorita uudelleen **Asiakkaat V3 (tilit)** -yhdistämismäärityksen ensimmäinen synkronointi. Koska muutosten seuranta on poistettu käytöstä, **InvoiceAccount**- ja **ContactPersonId** -tiedot synkronoidaan talous- ja toimintosovelluksesta Dataverseen.
+7. **InvoiceAccount**- ja **ContactPersonId** -tietojen synkronoinnissa Dataversesta talous- ja toimintosovellukseen on käytettävä tietojen integrointiprojektia.
 
-    1. Luo Power Appsissa tietojen integrointiprojekti **Sales.Account**- ja **Taloushallinnon ja toimintojen sovellukset.Asiakkaat V3** -taulujen välille. Tietojen suunnan on oltava Dataversestä taloushallinnon ja toimintojen sovellukseen. Koska **InvoiceAccount** on uusi kaksoiskirjoituksen määrite, sen ensimmäinen synkronointi kannattaa ehkä ohittaa. Lisätietoja on kohdassa [Tietojen integrointi Dataverse -ratkaisuun](/power-platform/admin/data-integrator).
+    1. Luo Power Appsissa tietojen integrointiprojekti **Sales.Account**- ja **Talous- ja toimintosovellukset.Asiakkaat V3** -taulujen välille. Tietojen suunnan on oltava Dataversestä talous- ja toimintosovellukseen. Koska **InvoiceAccount** on uusi kaksoiskirjoituksen määrite, sen ensimmäinen synkronointi kannattaa ehkä ohittaa. Lisätietoja on kohdassa [Tietojen integrointi Dataverse -ratkaisuun](/power-platform/admin/data-integrator).
 
         Seuraavassa kuvassa on projekti, joka päivittää **CustomerAccount**- ja **ContactPersonId**-määritteet.
 
         ![CustomerAccount- ja ContactPersonId-määritteet päivittävä tietojen integrointiprojekti.](media/cust_selfref6.png)
 
-    2. Lisää yrityksen ehdot suodattimen Dataversen puolelle, jotta vain suodatusehtoja vastaavat rivit päivitetään taloushallinnon ja toimintojen sovelluksessa. Lisää suodatin valitsemalla suodatinpainike. Voit sitten lisätä **Muokkaa kyselytä** -valintaikkunassa suodatinkyselyn, kuten **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Lisää yrityksen ehdot suodattimen Dataversen puolelle, jotta vain suodatusehtoja vastaavat rivit päivitetään talous- ja toimintosovelluksessa. Lisää suodatin valitsemalla suodatinpainike. Voit sitten lisätä **Muokkaa kyselytä** -valintaikkunassa suodatinkyselyn, kuten **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [HUOMAUTUS] Jos suodatinpainike ei ole näkyvissä, luo tukipyyntö, jotta tietojen integrointiryhmä voi ottaa suodattimen käyttöön vuokraajassa.
 
@@ -201,7 +201,7 @@ Jos asiakastaulun rivien **ContactPersonID**- ja **InvoiceAccount**-sarakkeissa 
 
     Rivien ensimmäinen synkronointi on nyt valmis.
 
-8. Ota muutosten seuranta taas käyttöön taloushallinnon ja toimintojen sovelluksen **Asiakkaat V3** -taulussa.
+8. Ota muutosten seuranta taas käyttöön talous- ja toimintosovelluksen **Asiakkaat V3** -taulussa.
 
 ## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Ensimmäisen synkronoinnin virheet, kun yhdistämisissä on yli 10 hakukenttää.
 
@@ -227,12 +227,21 @@ Seuraava virhesanoma voi avautua kun osapuolen postiosoitteen ja osapuolen sähk
 
 *Osapuolen numeroa ei löytynyt Dataversesta.*
 
-Tämä alue määritetään taloushallinnon ja toimintojen sovellusten **DirPartyCDSEntity**-kohdassa suodattamaan **Henkilö**- ja **Organisaatio**-tyypin osapuolia. Tämän vuoksi **CDS-osapuolet – msdyn_parties** -yhdistämismäärityksen ensimmäinen synkronointi ei synkronoi muita osapuolityyppejä, kuten **Yritys** ja **Toimintayksikkö**. Virhe voi esiintyä, kun ensimmäistä **CDS-osapuolen postiosoitteet (msdyn_partypostaladdresses)**- tai **Osapuolen yhteyshenkilöt V3 (msdyn_partyelectronicaddresses)** -synkronointia.
+Tämä alue määritetään talous- ja toimintosovellusten **DirPartyCDSEntity**-kohdassa suodattamaan **Henkilö**- ja **Organisaatio**-tyypin osapuolia. Tämän vuoksi **CDS-osapuolet – msdyn_parties** -yhdistämismäärityksen ensimmäinen synkronointi ei synkronoi muita osapuolityyppejä, kuten **Yritys** ja **Toimintayksikkö**. Virhe voi esiintyä, kun ensimmäistä **CDS-osapuolen postiosoitteet (msdyn_partypostaladdresses)**- tai **Osapuolen yhteyshenkilöt V3 (msdyn_partyelectronicaddresses)** -synkronointia.
 
-Korjausta, jolla osapuolityyppialue voidaan poistaa taloushallinnon ja toimintojen entiteetistä, kehitetään, jotta kaiken tyyppisten osapuolien synkronointi Dataverseen onnistuu.
+Korjausta, jolla osapuolityyppialue voidaan poistaa talous- ja toimintosovellusentiteetistä, kehitetään, jotta kaiken tyyppisten osapuolien synkronointi Dataverseen onnistuu.
 
 ## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Esiintyykö asiakas- tai yhteyshenkilötietojen ensimmäisessä synkronoinnissa suorituskykyongelmia?
 
 Jos **Asiakas**-tietojen ensimmäinen synkronointi on suoritettu ja **Asiakas**-yhdistämismäärityksiä suoritetaan, minkä jälkeen suoritetaan **Yhteyshenkilöt**-tietojen ensimmäisen synkronointi, **Yhteyshenkilöt**-osoitteiden **LogisticsPostalAddress**- ja **LogisticsElectronicAddress**-taulukkoja koskevien lisäysten ja päivitysten aikana voi esiintyä suorituskykyongelmia. Samaa yleistä postiosoitteen ja sähköisen osoitteen taulukoita seurataan **CustCustomerV3Entity**- ja **VendVendorV2Entity**-entiteettien osalta, minkä lisäksi kaksoiskirjoitus yrittää muodostaa lisää kyselyjä kirjoittamaan tietoja toiselle puolelle. Jos ensimmäinen **Asiakas**-synkronointi on jo suoritettu, pysäytä vastaava yhdistämismääritys **Yhteyshenkilöt**-tietojen ensimmäisen synkronoinnin ajaksi. Tee samoin **Toimittaja**-tietojen kohdalla. Kun ensimmäinen synkronointi on valmis, kaikki yhdistämismääritykset voidaan sitten suorittaa ohittamalla ensimmäinen synkronointi.
 
+## <a name="float-data-type-that-has-a-zero-value-cant-be-synchronized"></a>Liukuluku-tietotyyppiä, jolla on nolla-arvo, ei voi synkronoida
+
+Ensimmäinen synkronointi voi epäonnistua niiden tietueiden osalta, joiden hintakentässä on nolla-arvo. Tällaisia kenttiä ovat esimerkiksi **Kiinteä maksun summa** tai **Summa** tapahtumavaluuttana. Tässä tapauksessa tuloksena seuraavaa esimerkkiä muistuttava virhesanoma:
+
+*Syöteparametreja tarkistettaessa tapahtui virhe: Microsoft.OData.ODataException: literaalia 000000 ei voi muuntaa odotetuksi arvoksi type'Edm.Decimal',...*
+
+Ongelma liittyy **Kielen aluekohtainen asetus** -arvoon **Tietojen hallinta** -moduulin **Lähdetietojen muodot** -kohdassa. Vaihda **Kielen aluekohtainen asetus** -kentän arvoksi **en-us** ja yritä sitten uudelleen.
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

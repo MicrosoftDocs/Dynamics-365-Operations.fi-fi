@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
-ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
+ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "8945801"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069919"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -30,23 +30,23 @@ Tässä artikkelissa käsitellään toimintoja, jotka on poistettu tai joiden po
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
+Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Kesäkuussa 2022 poistettavat ominaisuudet
 
-### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Finance and Operations (Dynamics 365) -mobiilisovellus ja -mobiiliympäristö 
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Talous- ja toimintosovellusten (Dynamics 365) mobiilisovellus ja mobiiliympäristö 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Poistamme Finance and Operations (Dynamics 365) -mobiilisovelluksen ja -mobiiliympäristön, jotta voimme konsolidoida yhteen mobiiliympäristöön, Power Appsiin. |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä, talous- ja toimintosovellusten tietojen mobiilikokemukset voidaan rakentaa Power Platform -integraation avulla. Katso lisätietoja [blogikirjoituksesta](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) ja [Mobiilikokemusten kehittäminen](../power-platform/build-mobile-experiences.md) -kohdasta. |
+| **Poiston tai vanhentumisen syy** | Talous- ja toimintosovellusten (Dynamics 365) mobiilisovellus ja mobiiliympäristö poistetaan yhteen mobiiliympäristöön, Power Appsiin, konsolidointia varten. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, talous- ja toimintosovellusten tietojen mobiilikokemukset voidaan muodostaa Power Platform -integraation avulla. Katso lisätietoja [blogikirjoituksesta](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) ja [Mobiilikokemusten kehittäminen](../power-platform/build-mobile-experiences.md) -kohdasta. |
 | **Tuotealueet, joihin vaikutetaan**         | Taloushallinnon ja toimintojen sovellukset |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut. Tuen päättymisajankohdaksi on suunniteltu lokakuuta 2024. |
 
 
-## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.29
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.29 ympäristöpäivitykset
 
 ### <a name="panorama-tab-style"></a>Panoraamavälilehtityyli
 
@@ -118,7 +118,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut  |
 
-## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.23
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.23 ympäristöpäivitykset
 
 ### <a name="ondbsynchronize-event"></a>OnDBSynchronize-tapahtuma
 
@@ -141,7 +141,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut. Poisto on suunniteltu huhtikuulle 2023. |
 
-## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.21
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.21 ympäristöpäivitykset
 
 ### <a name="skype-for-business-online-support"></a>Skype for Business Online -tuki
 
@@ -201,7 +201,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | **Tila**                         | Tämä toiminto on poistettu. |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.17
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.17 ympäristöpäivitykset
 
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
@@ -229,7 +229,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Dynamics AX 2012 -yritysportaaliin (EP) liitetyt metatietojen artefaktit ovat vanhentuneet, sillä EP:tä ei koskaan tuettu talous- ja toimintosovelluksissa. |
-| **Onko toinen ominaisuus korvannut?**   | Ei |
+| **Onko toinen ominaisuus korvannut?**   | En |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Kaikki EP-koodit on ajoitettu poistettavaksi lokakuun 2021 julkaisussa. |
@@ -246,7 +246,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | **Käytön asetukset**              | Kaikki|
 | **Tila**                         | Vanhentunut: Internet Explorer 11:tä ei tueta elokuun 2021 jälkeen.|
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.15
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.15 ympäristöpäivitykset
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio -apuohjelma metatietojen hotfix-korjausten käyttämiseen
 
@@ -259,7 +259,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | **Tila**                         | Versiossa 10.0.15 myötä apuohjelma ei enää sisälly Visual Studio Toolsiin. |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.14
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.14 ympäristöpäivitykset
 
 ### <a name="online-users-page"></a>Online-käyttäjien sivu 
 
@@ -272,7 +272,7 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | **Tila**                         | Tämä lomake poistetaan lokakuuhun 2021 mennessä.   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.13
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.13 ympäristöpäivitykset
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>SSRS-raportin ominaisuuksissa määritetty mukautettu koodi 
@@ -316,19 +316,19 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 | **Tila**                         | Versiossa 10.0.13 / Platform update 37 tallennettujen näkymien ominaisuus on yleisesti käytettävissä. Asiakkaat voivat halutessaan ottaa tämän ominaisuuden käyttöön. Tallennettujen näkymien ominaisuus on pakollinen lokakuun 2021 julkaisussa. |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.12
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.12 ympäristöpäivitykset
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Ruudukko- tai ryhmäohjausobjektin lomakelaajennukset, jotka sisältävät virheellisiä kenttäviittauksia
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ruudukko- tai ryhmäohjausobjektien tietoryhmäominaisuuden avulla voidaan automaattisesti näyttää kaikki kenttäryhmän kentät. Laajennuksessa lisätty ruudukko tai ryhmäohjausobjekti voi sisältää kenttiä, joita ei ole enää määritetty kenttäryhmässä, tai kenttäryhmään määritettyjä kenttiä ei ehkä löydy. Tämä voi aiheuttaa epäjohdonmukaista käyttäytymistä suorituksen aikana. Talous- ja toimintosovellusten versio 10.0.12:n päivitykset luokittelevat nyt tämän ongelman kääntäjän *varoitukseksi*. Voit korjata tämän ongelman avaamalla lomakelaajennuksen ja tallentamalla sen.
+| **Poiston tai vanhentumisen syy** | Ruudukko- tai ryhmäohjausobjektien tietoryhmäominaisuuden avulla voidaan automaattisesti näyttää kaikki kenttäryhmän kentät. Laajennuksessa lisätty ruudukko tai ryhmäohjausobjekti voi sisältää kenttiä, joita ei ole enää määritetty kenttäryhmässä, tai kenttäryhmään määritettyjä kenttiä ei ehkä löydy. Tämä voi aiheuttaa epäjohdonmukaista käyttäytymistä suorituksen aikana. Talous- ja toimintosovellusten version 10.0.12 ympäristöpäivitykset luokittelevat nyt tämän ongelman kääntäjän *varoitukseksi*. Voit korjata tämän ongelman avaamalla lomakelaajennuksen ja tallentamalla sen.
 | **Onko toinen ominaisuus korvannut?**   | Tämä kääntäjän varoitus korvataan kääntäjän virheellä tulevassa päivityksessä. |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Kääntäjävaroitus esiintyy talous- ja toimintosovellusten alustan päivityksen versiossa 10.0.12. |
+| **Tila**                         | Kääntäjävaroitus otetaan käyttöön talous- ja toimintosovellusten version 10.0.12 ympäristöpäivityksissä. |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristön päivitysversio 10.0.11
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Talous- ja toimintosovellusten version 10.0.11 ympäristöpäivitykset
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Selkeä turvallisten osoitteiden luettelo itsepalveluympäristöissä
 
@@ -354,11 +354,11 @@ Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sove
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Taulun metatietomääritysten kenttäryhmät voivat sisältää kenttäviittauksia, jotka eivät ole kelvollisia. Jos nämä kenttäryhmät otetaan käyttöön, ne voivat aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja Microsoft SQL Server Reporting Servicesissa (SSRS). Platform Update 23 sisälsi kääntäjän *varoituksen*, joka mahdollisti tämän metatieto-ongelman käsittelemisen. Talous- ja toimintosovellusten versio 10.0.11:n päivitykset luokittelevat tämän ongelman kääntäjän *virheeksi*.<p>Korjaa tämä ongelma seuraavien ohjeiden mukaisesti.</p><ol><li>Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.</li><li>Käännä uudelleen.</li><li>Varmista, että mahdolliset virheet on korjattu.</li></ol> |
+| **Poiston tai vanhentumisen syy** | Taulun metatietomääritysten kenttäryhmät voivat sisältää kenttäviittauksia, jotka eivät ole kelvollisia. Jos nämä kenttäryhmät otetaan käyttöön, ne voivat aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja Microsoft SQL Server Reporting Servicesissa (SSRS). Platform Update 23 sisälsi kääntäjän *varoituksen*, joka mahdollisti tämän metatieto-ongelman käsittelemisen. Talous- ja toimintosovellusten version 10.0.11 ympäristöpäivitykset luokittelevat tämän ongelman kääntäjän *virheeksi*.<p>Korjaa tämä ongelma seuraavien ohjeiden mukaisesti.</p><ol><li>Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.</li><li>Käännä uudelleen.</li><li>Varmista, että mahdolliset virheet on korjattu.</li></ol> |
 | **Onko toinen ominaisuus korvannut?**   | Tämä kääntäjän virhe korvaa kääntäjän varoituksen pysyvästi.  |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Kääntäjän varoitus on nyt kääntäjän virhe taloushallinnon ja toimintojen sovellusten alustan päivityksen versiossa 10.0.11. |
+| **Tila**                         | Vanhentunut: Kääntäjän varoitus on nyt kääntäjän virhe talous- ja toimintosovellusten version 10.0.11 ympäristöpäivityksissä. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>SHA1-hajautusalgoritmin avulla luodut ohjelmistotoimittajien lisenssit
 
@@ -398,3 +398,4 @@ Lisätietoja poistetuista tai vanhentuneista toiminnoista aiemmissa versioissa o
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

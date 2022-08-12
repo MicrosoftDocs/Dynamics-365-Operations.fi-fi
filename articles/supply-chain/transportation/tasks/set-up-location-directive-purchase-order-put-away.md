@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25484efd7be026bfc3a209fb52822b87d6b76cc2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873489"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065491"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Sijaintidirektiivin määrittäminen ostotilauksen hyllytykselle
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa käsitellään, kuinka määritetään yksinkertainen sijaintidirektiivi. Näytetyssä esimerkissä luodaan sijaintidirektiivi, jolla määrätään, mihin ostotilaukseen vastaanotetut nimikkeet määritetään. Voit toistaa tämän tehtäväopastuksen mainituilla tiedoilla käyttämällä USMF-esittely-yrityksen tietoja. Edellytykset: Sinun on luotava käsittelykoodi. Tässä menettelyssä käytetään Relabel-käsittelykoodia. Jos olet luomassa sijaintidirektiivin omissa tiedoissasi, varastonhallinnan lisäasetusten on oltava määritettynä varastolle ja nimikkeille. Tämä menettely on tarkoitettu varastopäällikölle.
+Tässä artikkelissa käsitellään, kuinka määritetään yksinkertainen sijaintidirektiivi. Näytetyssä esimerkissä luodaan sijaintidirektiivi, jolla määrätään, mihin ostotilaukseen vastaanotetut nimikkeet määritetään. Voit toistaa tämän tehtäväopastuksen mainituilla tiedoilla käyttämällä USMF-esittely-yrityksen tietoja. Edellytykset: Sinun on luotava käsittelykoodi. Tässä menettelyssä käytetään Relabel-käsittelykoodia. Jos olet luomassa sijaintidirektiivin omissa tiedoissasi, varastonhallintaprosessien (WMS) on oltava määritettynä varastolle ja nimikkeille. Tämä menettely on tarkoitettu varastopäällikölle.
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Sijaintidirektiivit**.
 2. Valitse **Työtilaustyyppi**-kentässä **Ostotilaukset**.

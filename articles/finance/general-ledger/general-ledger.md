@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14aaf40ce64c8f8ba6277fa0883318e08505a464
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6cceabe652429e1c50d27db865700926e211958a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904554"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066356"
 ---
 # <a name="general-ledger-home-page"></a>Kirjanpidon kotisivu
 
@@ -61,7 +61,7 @@ Lisätietoja taloudellisista raporteista on [Financial reportingin yhteenveto](.
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 talous- ja toimintosovellusten taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja Dynamics 365:n uutuuksista ja suosituista aiheista.
 
@@ -71,8 +71,9 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 
 #### <a name="community-blogs"></a>Yhteisöblogit
 
-- [Tärkeitä tietoja Dynamics 365 for Finance and Operationsin kirjanpidosta](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
+- [Tärkeitä tietoja Dynamics 365 Financen kirjanpidosta](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

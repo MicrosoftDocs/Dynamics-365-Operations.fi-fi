@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849928"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151029"
 ---
 # <a name="purchase-order-posting"></a>Ostotilauksen kirjaus
 
@@ -93,10 +93,10 @@ Seuraavassa taulukossa on esimerkkejä oletuskirjaustyypeistä sekä esimerkkej�
 
 | Kirjaustyyppi | Päätiliesimerkki. | Päätilin nimen esimerkki | Tilityyppi | Veloitus/hyvitys? | Selvitystili | P/F | Seuraa | Kuvaus |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Vastaanotettujen laskutettujen ostettujen materiaalien kustannus | 140100</br>140101 | Materiaalivarasto</br>Lähetetyt, laskuttamattomat materiaalit | Resurssi | Veloitus | Kyllä | P | Laskutettujen ostettujen materiaalien kustannus | Käytetään, kun ostotilauksen tuotevastaanotto kirjataan. Tilin vastatili on Ostomeno, laskuttamaton. Tämän tilin summa peruutetaan, kun ostotilauslasku kirjataan. |
+| Vastaanotettujen laskutettujen ostettujen materiaalien kustannus | 140100</br>140101 | Materiaalivarasto</br>Lähetetyt, laskuttamattomat materiaalit | Resurssi | Veloitus | Kyllä | P | Laskutettujen ostettujen materiaalien kustannus | Käytetään, kun ostotilauksen tuotevastaanottoa kirjatessa vastatili on Ostomeno, laskuttamaton. Tämän tilin summa peruutetaan, kun ostotilauslasku kirjataan. |
 | Ostomeno, laskuttamaton | 600180 | Materiaalivastaanotot | Kulut | Veloitus | Kyllä | P | |Käytetään, kun ostotilauksen tuotevastaanotto kirjataan. Vastaanottoon luodaan kaksi tositetta, joita käytetään ostohinnan varianssin seuraamiseen, kun vakiokustannusta käytetään. Ensimmäisen tositteen tilin vastatili on Osto, jaksotus. Toisen tositteen tilin vastatili on Vastaanotettujen laskutettujen ostettujen materiaalien kustannus- ja Ostohintavarianssi-tilien summa. Tälle tilille kirjatut summat peruutetaan, kun ostotilauslasku kirjataan. |
 | Laskutettujen ostettujen materiaalien kustannus | 140100 | Materiaalivarasto | Resurssi | Veloitus | En | F  |Vastaanotettujen laskutettujen ostettujen materiaalien kustannus | Käytetään, kun ostotilauksen lasku kirjataan. Tämän tilin vastatili on Tuotteen ostomeno. Tämä tili edustaa taseen varastoa. Käytetty tili on tavallisesti sama tili, jota käytetään myyntitilaukselle (Toimitettujen yksiköiden kustannus ja Yksiköiden kustannukset – laskutettu). |
-| Tuotteen ostomeno | 600180 | Materiaalivastaanotto | Kulut | Hyvitys | En | F  | |Käytetään, kun ostotilauksen lasku kirjataan. Tilin vastatili on Laskutettujen ostettujen materiaalien kustannus. Tämä tili edustaa taseen varastoa. |
+| Tuotteen ostomeno | 600180 | Materiaalivastaanotto | Kulut | Hyvitys | Kyllä | F  | |Käytetään, kun ostotilauksen lasku kirjataan. Laskuun luodaan kaksi tositetta, joita käytetään ostohinnan varianssin seuraamiseen, kun vakiokustannusta käytetään. Tämän tilin vastatili on Ostomeno, laskuttamaton -tili, jota käytetään vastaanoton kirjauksessa ja palautuksessa laskun kirjauksen aikana. Ilmaisee laskutuksessa ostetun varaston kustannukset, jotka eivät näy taseen varastotilillä. Tämä ostohintavarianssin tuloksen kirjaus nähdään useimmin standardikustannusnimikkeiden ostoissa.|
 | Kiinteän vastaanottohinnan voitto (Osto, kiinteän vastaanottohinnan voitto*) | 510310 | Ostohintavarianssi | Kulut | Hyvitys | En | F | Kiinteän vastaanottohinnan tappio | Käytetään, kun ostotilauslasku on kirjattu ja laskutetun hinnan ja nimikkeen oletuskustannuksen välillä on ero. Tätä tiliä käytetään, kun ero on suurempi. Tämän tilin vastatili on Kiinteän vastaanottohinnan vastakirjaus. |
 | Kiinteän vastaanottohinnan tappio (Osto, kiinteän vastaanottohinnan tappio*) | 510310 | Ostohintavarianssi | Kulut | Veloitus | En | F | Kiinteän vastaanottohinnan voitto | Käytetään, kun ostotilauslasku on kirjattu ja laskutetun hinnan ja nimikkeen oletuskustannuksen välillä on ero. Tätä tiliä käytetään, kun ero on pienempi. Tämän tilin vastatili on Kiinteän vastaanottohinnan vastakirjaus. |
 | Kiinteän vastaanottohinnan vastakirjaus (Osto, kiinteän vastaanottohinnan vastakirjaus*) | 140900 | Varastomuutos | Resurssi | Molemmat | En | F  | |Käytetään, kun ostotilauslasku on kirjattu ja laskutetun hinnan ja nimikkeen oletuskustannuksen välillä on ero. Tämän tilin vastatilit ovat Kiinteän vastaanottohinnan tulostilit. |
@@ -109,7 +109,7 @@ Seuraavassa taulukossa on esimerkkejä oletuskirjaustyypeistä sekä esimerkkej�
 | Ennakkomaksu | 132190 | Ennalta maksettu kulu | Resurssi | Veloitus | N | Molemmat | | Käytetään käsiteltäessä ostotilauksen ennakkomaksulaskua. |
 
 
-\*Sulkeissa näkyvät arvot edustavat arvoa, jota käytetään **Tositetapahtumat**-sivun **Kirjaamistyyppi**-kentässä. Voit tarkastella **kirjaustyyppiä** **Tositetapahtumat**-sivun **Yleiset**-välilehdessä.
+\*Sulkeissa näkyvät arvot ilmaisevat arvon, jota käytetään **Tositetapahtumat**-sivun **Kirjaamistyyppi**-kentässä. Voit tarkastella **kirjaustyyppiä** **Tositetapahtumat**-sivun **Yleiset**-välilehdessä.
 
 ## <a name="fixed-asset-posting-with-purchase-orders"></a>Käyttöomaisuuden kirjaus ostotilauksilla
 

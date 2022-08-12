@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 075e74845eb8e0363cdb706f1f3af0dc9cfddfaa
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893088"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069179"
 ---
 # <a name="replenishment-overview"></a>Täydennys – yleiskatsaus
 
@@ -70,8 +70,8 @@ Sen sijaan, että kysyntä laskettaisiin yhteen kohdistusprosessin lopussa ja t�
 
 |      Edellytys       |                                                                                                                                kuvaus                                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Nimike           |                                                                                                        Nimike on otettava käyttöön varastonhallintaprosesseille.                                                                                                        |
-|        Varasto        | Varastossa on oltava käytössä varastonhallintaprosessit. Valitse <strong>Varastot</strong>-sivulta varasto ja sitten <strong>Käytä varastonhallintaprosesseja</strong> -vaihtoehto, jos haluat aktivoida varaston varastonhallintaprosesseja varten. |
+|          Nimike           |                                                                                                        Nimike on otettava käyttöön varastonhallintaprosesseille (WMS).                                                                                                        |
+|        Varasto        | Varastossa on oltava käytössä varastonhallintaprosessit (WMS). Valitse <strong>Varastot</strong>-sivulta WMS:n varasto ja sitten <strong>Käytä varastonhallintaprosesseja</strong> -vaihtoehto, jos haluat aktivoida varaston WMS:ää varten. |
 | Täydennysmallit |                                                                   Vähimmäis- tai enimmäistäydennykselle, aallon kysynnän täydennykselle tai kuorman kysynnän täydennykselle on määritettävä vähintään yksi täydennysmalli.                                                                   |
 |        Sijainnit        |                                                                                                       Sijainnit on luotava ja liitettävä sijaintiprofiiliin.                                                                                                       |
 |    Sijaintiprofiilit    |                                                                                                        Sijaintiprofiilit tarvitaan sijaintien luontiin.                                                                                                        |

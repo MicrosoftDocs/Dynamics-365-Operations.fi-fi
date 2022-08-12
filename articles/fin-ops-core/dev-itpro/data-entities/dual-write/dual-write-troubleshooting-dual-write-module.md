@@ -1,6 +1,6 @@
 ---
-title: Taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusongelmien vianmääritys
-description: Tässä artikkelissa on vianmääritys tietoja, joiden avulla voit korjata talous- ja toimintosovellusten kaksoiskirjoitusmoduulin ongelmia.
+title: Talous- ja toimintosovellusten kaksoiskirjoitusongelmien vianmääritys
+description: Tässä artikkelissa on vianmääritystietoja, joiden avulla voidaan korjata talous- ja toimintosovellusten kaksoiskirjoitusmoduulin ongelmia.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864569"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111167"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten kaksoiskirjoitusongelmien vianmääritys
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Talous- ja toimintosovellusten kaksoiskirjoitusongelmien vianmääritys
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Dataversen välillä. Erityisesti se tarjoaa vianmääritystietoja, joiden avulla voit korjata taloushallinnon ja toimintojen sovellusten **Kaksoiskirjoitus**-moduulin ongelmia.
+Tässä artikkelissa on vianmääritystietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten sekä Dataversen välillä. Erityisesti se sisältää vianmääritystietoja, joiden avulla voidaan korjata talous- ja toimintosovellusten **Kaksoiskirjoitus**-moduulin ongelmia.
 
 > [!IMPORTANT]
 > Jotkin tämän artikkelin osoitteet saattavat edellyttää joko järjestelmänvalvojan roolia tai Microsoft Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tunnistetietoja.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Kaksoiskirjoitusmoduulia ei voi ladata taloushallinnon ja toimintojen sovellukseen
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Kaksoiskirjoitusmoduulia ei voi ladata talous- ja toimintosovellukseen
 
 Jos **Kaksoiskirjoitus**-sivua ei voi avata valitsemalla **Tietojen hallinta** -työtilassa **Kaksoiskirjoitus**-ruutu, tietojen integrointipalvelu ei todennäköisesti ole toiminnassa. Luo tukipyyntö, joka pyytää tietojen integrointipalvelun uudelleenkäynnistystä.
 
@@ -49,7 +49,7 @@ Jos haluat korjata ongelman, kirjaudu sisään käyttämällä InPrivate-ikkunaa
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Virhe yhdistettäessä ympäristöä kaksoiskirjoittamista tai uuden taulun yhdistämismääritystä varten
 
-**Ongelman korjaamisen edellyttämä rooli:** Järjestelmänvalvoja sekä taloushallinnon ja toimintojen sovelluksessa että Dataversessä.
+**Ongelman korjaamisen edellyttämä rooli:** Järjestelmänvalvoja sekä talous- ja toimintosovelluksessa että Dataversessä.
 
 Saatat kohdata seuraavan virheen linkittäessäsi tai luodessasi karttoja:
 
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-Tämä virhe voi ilmetä, jos sinulla ei ole riittäviä oikeuksia yhdistää kaksoiskirjoitukseen tai luoda karttoja. Tämä virhe voi ilmetä myös, jos Dataverse -ympäristö nollautuu ilman kaksoiskirjoituksen linkityksen poistamista. Kuka tahansa käyttäjä, jolla on järjestelmänvalvojan rooli sekä taloushallinnon ja toimintojen sovelluksissa että Dataversessä voi linkittää ympäristöt. Vain kaksoiskirjoitusyhteyden asetusten luonut käyttäjä voi lisätä uusia taulujen yhdistämismäärityksiä. Asennuksen jälkeen kuka tahansa järjestelmänvalvoja, jolla on järjestelmänvalvojan rooli, voi valvoa tilaa ja muokata yhdistämismäärityksiä.
+Tämä virhe voi ilmetä, jos sinulla ei ole riittäviä oikeuksia yhdistää kaksoiskirjoitukseen tai luoda karttoja. Tämä virhe voi ilmetä myös, jos Dataverse -ympäristö nollautuu ilman kaksoiskirjoituksen linkityksen poistamista. Kuka tahansa käyttäjä, jolla on järjestelmänvalvojan rooli sekä talous- ja toimintosovelluksissa että Dataversessä, voi linkittää ympäristöt. Vain kaksoiskirjoitusyhteyden asetusten luonut käyttäjä voi lisätä uusia taulujen yhdistämismäärityksiä. Asennuksen jälkeen kuka tahansa järjestelmänvalvoja, jolla on järjestelmänvalvojan rooli, voi valvoa tilaa ja muokata yhdistämismäärityksiä.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Virhe yritettäessä pysäyttää taulun yhdistämismääritystä
 
@@ -75,7 +75,7 @@ Voit korjata ongelman luomalla pyynnön tietojen integrointitiimille. Liitä ver
 
 Rinnakkaisen käsittelyn käyttöönotto saattaa lyhentää aikaa, joka tarvitaan tietojen tuontiin Dynamics 365 Customer Engagement -sovelluksista ja Microsoft Dataversesta talous- ja toimintosovelluksiin. 
 
-Tee seuraavat toimet rinnakkaiskäsittelyn käyttöönottamiseksi talous- ja toimintosovelluksissa.
+Rinnakkaiskäsittely otetaan käyttöön seuraavasti talous- ja toimintosovelluksissa.
 
 1. Kirjaudu talous- ja toimintosovellusympäristöön.
 2. Valitse **Tietojen hallinta > Kehyksen parametrit**.
@@ -97,7 +97,7 @@ Näyttöön saattaa tulla seuraavankaltainen virhe, kun tietojen ensimmäinen sy
 Tämä virhe voidaan saada, kun yhdistämismäärityksen kyseiseksi tilaksi yritetään määrittää **Käytössä**. Korjaus määräytyy virheen syyn mukaan:
 
 + Jos yhdistämismääritykset ovat riippuvaisia määrityksistä, varmista, että otat käyttöön tämän taulun yhdistämismäärityksen sidonnaiset määritykset.
-+ Yhdistämismäärityksestä saattaa puuttua lähde- tai kohdesarakkeet. Jos taloushallinnon ja toimintojen sovelluksen sarake puuttuu, noudata [Puuttuvien taulukkosarakkeiden ongelma yhdistämismäärityksissä](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) -kohdan ohjeita. Jos Dataversen sarake puuttuu, valitse yhdistämismäärityksessä **Päivitä taulut** -painike, jotta sarakkeet täytetään automaattisesti takaisin yhdistämismääritykseen.
++ Yhdistämismäärityksestä saattaa puuttua lähde- tai kohdesarakkeet. Jos talous- ja toimintosovelluksen sarake puuttuu, noudata [Puuttuvien taulukkosarakkeiden ongelma yhdistämismäärityksissä](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps) -kohdan ohjeita. Jos Dataversen sarake puuttuu, valitse yhdistämismäärityksessä **Päivitä taulut** -painike, jotta sarakkeet täytetään automaattisesti takaisin yhdistämismääritykseen.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Versioristiriitavirhe ja kaksoiskirjoitusratkaisujen päivittäminen
 
@@ -112,3 +112,4 @@ Seuraavat virheet voidaan saada, kun taulukon yhdistämismääritykset yritetä�
 Ongelmat korjataan päivittämällä kaksoiskirjoitusratkaisut Dataversessa. Päivitys on muistettava tehdä uusimpaan tarvittavaa ratkaisuversiota vastaavaan ratkaisuun.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

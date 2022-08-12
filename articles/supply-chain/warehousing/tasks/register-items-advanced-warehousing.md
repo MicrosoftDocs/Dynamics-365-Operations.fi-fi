@@ -1,6 +1,6 @@
 ---
-title: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
-description: Tässä artikkelissa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallinnan lisäprosessit.
+title: Varastohallintaprosessit käyttöönottaneiden nimikkeiden rekisteröinti nimikkeen saapumisen kirjauskansion avulla
+description: Tässä artikkelissa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallintaprosessit (WMS).
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863618"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066964"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Varastohallintaprosessit käyttöönottaneiden nimikkeiden rekisteröinti nimikkeen saapumisen kirjauskansion avulla
 
 [!include [banner](../../includes/banner.md)]
 
-Tässä artikkelissa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallinnan lisäprosessit. Vastaanottoassistentti tekee yleensä tämän tehtävän.
+Tässä artikkelissa käsitellään tilannetta, jossa nimikkeet rekisteröidään käyttämällä nimikkeen saapumisen kirjauskansiota, kun käytössä on varastonhallintaprosessit (WMS). Vastaanottoassistentti tekee yleensä tämän tehtävän.
 
 ## <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 
@@ -36,7 +36,7 @@ Voit myös käyttää tätä skenaariota korvaamalla arvot omista tiedoista, jos
 - Olet vahvistanut ostotilauksen, jossa on avoin ostotilausrivi.
 - Rivin nimike on varastoitava. Se ei saa käyttää tuotevariantteja eikä sillä saa olla seurantadimensioita.
 - Nimike on liitettävä varastodimensioryhmään, jossa varastonhallintaprosessi on otettu käyttöön.
-- Varastonhallintaprosessit on oltava otettuna käyttöön käytettävässä varastossa ja vastaanottoa on ohjattava käytettävässä toimipaikassa rekisterikilvillä.
+- WMS on oltava otettuna käyttöön käytettävässä varastossa ja vastaanottoa on ohjattava käytettävässä toimipaikassa rekisterikilvillä.
 
 ## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Varastonhallintaa käyttävän nimikkeen saapumisen kirjauskansion otsikon luominen
 

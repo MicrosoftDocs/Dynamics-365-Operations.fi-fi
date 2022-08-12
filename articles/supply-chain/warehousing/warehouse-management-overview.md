@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa2b62a0bfda57879850771488e6576592fbb894
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d22ed879f309c0fbb999bf166aefd13f27376042
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982849"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069089"
 ---
 # <a name="warehouse-management-overview"></a>Varastonhallinnan yleiskatsaus
 
@@ -39,7 +39,7 @@ Määritä lähtevän ja saapuvan varastointiprosessien komponentit liiketoiminn
 - [Määritä sijaintidirektiivi ostotilauksen poispanolle](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 - [Määritä työmalli ostotilauksia varten](./tasks/set-up-work-template-purchase-orders.md)
 
-## <a name="warehouse-management-processes"></a>Varastonhallinnan prosessit
+## <a name="warehouse-management-processes-wms"></a>Varastonhallintaprosessit (WMS)
 - Integroitu tuki myyntitilausten, palautusten, siirtotilausten, tuotantotilausten ja kanbanien lähdeasiakirjoille  
 - Joustava, kyselyihin perustuva saapuvan ja lähtevän materiaalin työnkulun tuki
 - Täysi integraatio Valmistus- ja Kuljetusratkaisujen tarjontaan

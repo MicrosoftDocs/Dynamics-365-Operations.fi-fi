@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ed2baff1851eba488233c050cef1f8f73b6bcee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890593"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067299"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Warehouse Management -mobiilisovelluksen vaihekuvakkeiden ja otsikoiden määrittäminen
 
@@ -317,8 +317,8 @@ Seuraavassa taulukossa näkyvät kaikki käytettävissä olevat vakiovaihekuvakk
 <td><img src="media/step-icons-weight-to-consume.png" alt="Weight to consume step icon" title="Kulutettavan painon vaiheen kuvake"><br>WeightToConsume</td>
 </tr>
 <tr>
-<td><img src="media/step-icons-whs-adjustment-type.png" alt="WHS adjustment type step icon" title="WHS-oikaisutyypin vaiheen kuvake"><br>WHSAdjustmentType</td>
-<td><img src="media/step-icons-whs-receiving-exception.png" alt="WHS receiving exception step icon" title="WHS-vastaanottopoikkeusvaiheen kuvake"><br>WHSReceivingException</td>
+<td><img src="media/step-icons-whs-adjustment-type.png" alt="WMS adjustment type step icon" title="WMS-oikaisutyypin vaiheen kuvake"><br>WHSAdjustmentType</td>
+<td><img src="media/step-icons-whs-receiving-exception.png" alt="WMS receiving exception step icon" title="WMS-vastaanottopoikkeusvaiheen kuvake"><br>WHSReceivingException</td>
 <td><img src="media/step-icons-wms-location-id.png" alt="WMS location ID step icon" title="WMS-sijainnin tunnus -vaiheen kuvake"><br>WMSLocationID</td>
 <td><img src="media/step-icons-work-id.png" alt="Work ID step icon" title="Työn tunnus -vaiheen kuvake"><br>WorkId</td>
 </tr>

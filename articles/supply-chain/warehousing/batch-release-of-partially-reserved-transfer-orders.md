@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 591c93eef61992507188323909f37e3f33550a7d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0b21c0000f6bf1cbbb318c898a519e51ca7e9b8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888380"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068628"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Osittain varattujen siirtotilauserien vapautus
 
@@ -28,7 +28,7 @@ ms.locfileid: "8888380"
 Osittain varattujen siirtotilausten vapauttamisen erätoiminto mahdollistaa siirtotilausten osittaisen vapauttamisen varastoon erätyön avulla.
 Koska voit vapauttaa osan määrästä, sinun ei tarvitse odottaa, että koko määrä on saatavilla varastossa ennen kuin vapautat tilauksen.
 
-Tilausten vapauttaminen varastoon on varastonhallinnan lisäprosessi. Tämä prosessi käsittää tehtäviä, kuten keräily, pakkaus ja toimitus, jotka varastotyöntekijä voi tehdä mobiililaitteen avulla.
+Tilausten vapauttaminen varastoon on varastonhallintaprosessi (WMS). Tämä prosessi käsittää tehtäviä, kuten keräily, pakkaus ja toimitus, jotka varastotyöntekijä voi tehdä mobiililaitteen avulla.
 
 ## <a name="where-it-applies"></a>Käyttö
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670437"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135566"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO-merkintä ja fyysinen arvo
 
@@ -128,7 +128,7 @@ Seuraavassa on kuvattu näitä tapahtumia:
 - 6a. Varaston fyysinen varastostaotto määrälle 1 kustannushintaan 23,00 USD (taloudellisesti kirjattujen tapahtumien käyttökeskiarvo)
 - 7\. Varaston sulkeminen on suoritettu. LIFO-menetelmää käyttävän merkintäperiaatteen mukaan merkityt tapahtumat täsmäytetään toisiaan vasten. Tässä esimerkissä 3b täsmäytetään 2b:tä vasten ja 6,00 USD kirjataan 3b:lle, jolloin arvo on 22,00 USD. Tässä esimerkissä ei tehdä muita tilitysitä, koska sulkeminen luo täsmäytyksen vain taloudellisesti päivitettyjä tapahtumia varten.
 
-Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan.
+Uusi kustannushinnan käyttökeskiarvo 17,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan.
 
 Seuraavassa kuvassa havainnollistetaan LIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä.
 

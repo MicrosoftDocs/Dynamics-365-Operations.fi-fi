@@ -1,6 +1,6 @@
 ---
 title: Rahtikirjan luonti
-description: Tässä artikkelissa kuvataan, miten luot rahtikirjoja, kun käytät varastonhallintaprosesseja.
+description: Tässä artikkelissa kuvataan, miten luot rahtikirjoja, kun käytät varastonhallintaprosesseja (WMS).
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 68a703475191255ff6ceaee25ef8e2bdf33ba0c2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885780"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069693"
 ---
 # <a name="create-a-bill-of-lading"></a>Rahtikirjan luonti
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan, miten luot rahtikirjoja, kun käytät varastonhallintaprosesseja.  
+Tässä artikkelissa kuvataan, miten luot rahtikirjoja, kun käytät varastonhallintaprosesseja (WMS).  
 
 Rahtikirja on lakisääteinen tosite nimikkeiden lähettäjän ja kuljettajan välillä. Asiakirja liitetään toimitettuihin nimikkeisiin ja se toimii lähetyksen vastaanottokuittina, kun nimikkeet toimitetaan kohteeseen. Jos käytät varastonhallintaa, rahtikirjoja voi luoda kahdella tavalla:
 

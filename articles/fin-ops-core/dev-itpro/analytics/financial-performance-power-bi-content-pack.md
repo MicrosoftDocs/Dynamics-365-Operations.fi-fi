@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7b6fb9643873178f1cb93e3da15e83598af51de0
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910412"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109547"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Taloudellisen suorituskyvyn PowerBI.com-ratkaisu
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tämä PowerBI.com-ratkaisu on vanhentunut kohdassa [Finance and Operationsin poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) ilmoitetulla tavalla.
+> Tämä PowerBI.com-ratkaisu on vanhentunut kohdassa [Talous- ja toimintosovellusten poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) ilmoitetulla tavalla.
 
 Tässä artikkelissa käsitellään **taloudellisen suorituskyvyn** PowerBI.com-ratkaisua. Siinä kerrotaan sisältyvistä koontinäytöistä ja raporteista sekä ratkaisun muodostamisessa käytetyistä tietomallista ja yksiköistä.
 

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16c79a788b66830b77b2cdfb33fd2416c530f7d2
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884080"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111563"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Taulumäärityksen kuntotarkistusta koskevat virhekoodit
 
@@ -26,13 +26,13 @@ Tässä artikkelissa kuvataan taulumäärityksen kuntotarkistusta koskevat virhe
 
 ## <a name="error-100"></a>Virhe 100
 
-Virheilmoitus on "Taloushallinnon ja toimintojen alustan vähimmäisvaatimusversio on PU 43 taloushallinnon ja toimintojen suositusten suorittamista varten."
+Virheilmoitus on Talous- ja toimintosovellusten ympäristöversion on oltava vähintään PU 43, jotta talous- ja toimintosovellussuositukset voidaan suorittaa.
 
-Ominaisuus vaatii Platform update -päivitykset taloushallinnon ja toimintojen sovellusten versioon 10.0.19 tai sitä uudempiin.
+Ominaisuus vaatii talous- ja toimintosovellusten version 10.0.19 tai sitä uudempien Platform update -päivitykset.
 
 ## <a name="error-400"></a>Virhe 400
 
-Virhesanoma on "Yksiköstä \{Finance and Operations UniqueEntityName\} ei löydetty liiketapahtumien rekisteröintitietoja, mikä tarkoittaa, että määritys ei ole käynnissä tai kaikki kenttämääritykset ovat yksisuuntaisia".
+Virhesanoma on Yksiköstä \{Talous- ja toimintosovellusten UniqueEntityName\} ei löydetty liiketapahtumien rekisteröintitietoja, mikä tarkoittaa, että määritys ei ole käynnissä tai että kaikki kenttämääritykset ovat yksisuuntaisia.
 
 ## <a name="error-500"></a>Virhe 500
 
@@ -42,21 +42,21 @@ Tarkista taulumäärityksen määritykset. Jos ne ovat yksisuuntaisia asiakasvuo
 
 ## <a name="error-900"></a>Virhe 900
 
-Virhesanomana on "Virheellinen lähdesuodattimen \{sourceFilter\} muoto yksikölle \{Taloushallinto ja toiminnot UniqueEntityName\}."
+Virhesanomana on Virheellinen lähdesuodattimen \{sourceFilter\} muoto yksikölle \{Talous- ja toimintosovellusten UniqueEntityName\}.
 
-Taloushallinnon ja toimintojen sovellusten taulumäärityksessä määritetty lähdesuodatin ei ole syntaktisesti oikein. Ohjeet suodatinperusteiden tarkistamiseen: [Reaaliaikaisen synkronoinnin ongelmien vianmääritys](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
+Talous- ja toimintosovellusten taulumäärityksessä määritetty lähdesuodatin ei ole syntaktisesti oikein. Ohjeet suodatinperusteiden tarkistamiseen: [Reaaliaikaisen synkronoinnin ongelmien vianmääritys](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
 
 ## <a name="error-1000"></a>Virhe 1000
 
-Virhesanoma on "Yksikön \{Taloushallinto ja toiminnot UniqueEntityName\} kaksoiskirjoituksen reaaliaikaiseen synkronointiin käytetty kysely on \{Taloushallinto ja toiminnot EntityFilterQueryString\}". Tietueet, jotka täyttävät kyselyperusteet noudetaan reaaliaikaista synkronointia varten.
+Virhesanoma on Yksikön \{Talous- ja toimintosovellusten UniqueEntityName\} kaksoiskirjoituksen reaaliaikaiseen synkronointiin käytetty kysely on \{Talous- ja toimintosovellusten EntityFilterQueryString\}". Tietueet, jotka täyttävät kyselyperusteet noudetaan reaaliaikaista synkronointia varten.
 
 Palautettu yksikkökysely on yksikön SQL-kyselyn taustakysely. Tarkista sisäliitosten tai kyselysuodattimien varalta, jotka määrittävät reaaliaikaista synkronointia varten noudettavat liiketoimintatiedot. Sisäliitokset ja suodattimet ovat pakollisia ehtoja, jotka on täytettävä jokaisen kaksoiskirjoituksen reaaliaikaiseen synkronointiin noudettavan tietueen osalta.
 
 ## <a name="error-1300"></a>Virhe 1300
 
-Virhesanoma on "Yksikön \{Taloushallinto ja toiminnot EntityMetadata.EntityProperties.LogicalEntityName\} virtuaalikenttiä \{s.EntityFieldName\} ei voi jäljittää kaksoiskirjoituksen osalta".
+Virhesanoma on Yksikön \{Talous- ja toimintosovellusten EntityMetadata.EntityProperties.LogicalEntityName\} virtuaalikenttiä \{s.EntityFieldName\} ei voi jäljittää kaksoiskirjoituksen osalta.
 
-Taloushallinnon ja toimintojen taulujen virtuaalikenttiä ei voi jäljittää. Reaaliaikainen synkronointi voi synkronoida tiedot, mutta se ei voi noutaa sarakkeisiin tehtyjä muutoksia.
+Talous- ja toimintosovellusten taulujen virtuaalikenttiä ei voi jäljittää. Reaaliaikainen synkronointi voi synkronoida tiedot, mutta se ei voi noutaa sarakkeisiin tehtyjä muutoksia.
 
 ## <a name="error-1500"></a>Virhe 1500
 
@@ -66,9 +66,9 @@ Yksikön tietolähteellä ei ole kaksoiskirjoitusta varten määritettyä kentt�
 
 ## <a name="error-1600"></a>Virhe 1600
 
-Virhesanoma on "Yksikön \{Taloushallinto ja toiminnot EntityMetadata.EntityProperties.LogicalEntityName\} tietolähteellä \{datasource.DataSourceName\} on alue. Vain alue-ehtoa vastaavat tietueet noudetaan lähteviä varten.
+Virhesanoma on Yksikön \{Talous- ja toimintosovellusten EntityMetadata.EntityProperties.LogicalEntityName\} tietolähteellä \{datasource.DataSourceName\} on alue. Vain alue-ehtoa vastaavat tietueet noudetaan lähteviä varten.
 
-Taloushallinnon ja toimintojen sovellusten yksiköillä voi olla tietolähteitä, joissa on käytössä suodatinalueita. Nämä alueet määrittävät tietueet, jotka noudetaan reaaliaikaiseen synkronointiin. Jos joitakin tietueita ohitetaan taloushallinnon ja toimintojen sovelluksesta Dataverseen, tarkista, täyttävätkö tietueet yksikön alueperusteet. Yksinkertainen tapa tehdä tämä tarkistus on suorittaa SQL-kysely, joka muistuttaa seuraavaa esimerkkiä.
+Talous- ja toimintosovellusten yksiköillä voi olla tietolähteitä, joissa on käytössä suodatinalueita. Nämä alueet määrittävät tietueet, jotka noudetaan reaaliaikaiseen synkronointiin. Jos joitakin tietueita ohitetaan talous- ja toimintosovelluksesta Dataverseen, tarkista, täyttävätkö tietueet yksikön alueperusteet. Yksinkertainen tapa tehdä tämä tarkistus on suorittaa SQL-kysely, joka muistuttaa seuraavaa esimerkkiä.
 
 ```sql
 select * from <EntityName> where <filter criteria for the records> on SQL.
@@ -86,7 +86,7 @@ Virhesanoma on seuraava: "Datasource : {} yksikölle CustCustomerV3Entity sisäl
 Jos talous- ja toimintosovellusten yksikölle on määritetty arvoalue, saapuva synkronointi Dataversesta talous- ja toimintosovelluksiin tulee testata sellaisten tietueiden toiminnan päivittämiseksi, jotka eivät vastaa arvoalueen ehtoja. Entiteetti käsittelee lisäystoimintona kaikkia tietueita, jotka eivät vastaa arvoaluetta. Jos pohjana olevassa taulussa on olemassa oleva tietue, lisäys epäonnistuu. Tämä käyttötapaus kannattaa testata kaikissa skenaarioissa ennen ottamista tuotantoon.
 
 ## <a name="error-1900"></a>Virhe 1900
-Virhesanoma on seuraava: "Yksiköllä on {} tietolähdettä, joita lähtevä kaksoiskirjoitus ei seuraa. Tämä voi vaikuttaa live-synkronoinnin kyselyn suorituskykyyn. Muodosta malli uudelleen Finance and Operationsissa, jos haluat poistaa käyttämättömät tietolähteet ja taulut tai ottaa käyttöön taulun getEntityRecordIdsImpactedByTableChange suorituksenaikaisten kyselyjen optimoimiseksi."
+Virhesanoma on seuraava: "Yksiköllä on {} tietolähdettä, joita lähtevä kaksoiskirjoitus ei seuraa. Tämä voi vaikuttaa live-synkronoinnin kyselyn suorituskykyyn. Muodosta malli uudelleen talous- ja toimintosovelluksissa, jos haluat poistaa käyttämättömät tietolähteet ja taulut tai ottaa käyttöön taulun getEntityRecordIdsImpactedByTableChange suorituksenaikaisten kyselyjen optimoimiseksi."
 
 Jos löytyy useita tietolähteitä, joita ei käytetä toteutuneen live-synkronoinnin seuraamiseen talous- ja toimintosovelluksista, yksikön suorituskyky voi vaikuttaa live-synkronointiin. Voit optimoida seuratut taulut käyttämällä getEntityRecordIdsImpactedByTableChange-menetelmää.
 
@@ -96,3 +96,4 @@ Virhesanoma on seuraava: "Synkronoinnin laajennukset on rekisteröity yksikön t
 Dataverse-yksikön synkroniset laajennukset voivat vaikuttaa live-synkronointiin ja alkuperäiseen synkronoinnin suorituskykyyn, koska se lisää tapahtumakuormitusta. Suositeltu tapa on poistaa laajennukset käytöstä tai tehdä näistä laajennuksista asynkronisia, jos alkuperäisen synkronoinnin tai live-synkronoinnin latausajat ovat pitkiä.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aad48fbd3ee2f28f39f6061b5e922f5c4f47c8f6
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867326"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103517"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Mukautettujen X++-komentosarjojen ajaminen ilman käyttökatkoa
 
@@ -120,7 +120,7 @@ Seuraavassa luettelossa on kuvattu komentotiedoston onnistuneesti kirjoittamisen
 
 Lataa ja suorita komentotiedosto seuraavia ohjeita noudattamalla.
 
-1. Siirry taloushallinnon ja toimintojen sovelluksessa kohtaan **Järjestelmänvalvonta \> Kausittaiset tehtävät \> Tietokanta \> Mukautetut komentosarjat**.
+1. Valitse talous- ja toimintosovelluksessa **Järjestelmänvalvonta \> Kausittaiset tehtävät \> Tietokanta \> Mukautetut komentosarjat**.
 1. Valitse **Lataa palvelimeen**.
 1. Valitse käyttöön otettava paketti, joka on luotu aiemmin tässä artikkelissa kuvatulla tavalla. Näyttöön tule kehote määrittää komentosarjan tarkoitus.
 1. Komentosarja pitää hyväksyttää nyt toisella käyttäjällä kuin sen palvelimeen ladannut käyttäjä. Hyväksyjän on noudatettava seuraavia ohjeita:
@@ -149,6 +149,7 @@ Viimeisessä vaiheessa valintasi määrittää komentotiedoston lopullisen tilan
 
 ## <a name="upload-and-run-a-deployable-package-through-lcs"></a>Käyttöön otettavan paketin lataaminen palvelimeen ja ajaminen LCS:n kautta
 
-Sen sijaan, että otat käyttöön käyttöönotettavan pakettisi taloushallinnon ja toimintojen sovelluksen käyttöliittymässä edellisessä osassa kuvatulla tavalla, voit ladata sen LCS-palveluun ja ottaa sen käyttöön tavallisen menetelmän avulla. Lisätietoja: [Käyttöönotettavien pakettien asentaminen komentoriviltä](../deployment/install-deployable-package.md).
+Sen sijaan, että otat käyttöön käyttöönotettavan paketin talous- ja toimintosovellusten käyttöliittymässä edellisessä osassa kuvatulla tavalla, voit ladata sen LCS-palveluun ja ottaa sen käyttöön tavalliseen tapaan. Lisätietoja: [Käyttöönotettavien pakettien asentaminen komentoriviltä](../deployment/install-deployable-package.md).
 
 Vaikka tällä menetelmällä on vähemmän rajoituksia, se antaa vähemmän virhesuojaa. Lisäksi, koska kaikki palvelimet on käynnistettävä uudelleen, se aiheuttaa käyttökatkoksen.
+

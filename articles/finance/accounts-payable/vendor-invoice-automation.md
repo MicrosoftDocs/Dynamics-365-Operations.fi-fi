@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0449a13989bad45cf0456a2678e5724036d2af3d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883413"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070691"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Skannattujen tiedostojen laskujen automatisointi
 
@@ -86,7 +86,7 @@ Tietopakettien kautta tuodut laskut voidaan liittää ne omistaviin yrityksiin k
 
 ## <a name="exception-processing"></a>Poikkeuksen käsittely
 
-Skenaarioissa, joissa toimittajalaskut tulevat Finance and Operations -palveluun integroinnin kautta, ostoreskontratiimin jäsenellä on oltava helppo tapa käsitellä poikkeuksia tai epäonnistuneita laskuja ja keino luoda odottavia laskuja epäonnistuneista laskuista. Toimittajan laskujen poikkeusten käsittely on nyt osa Finance and Operations -palvelua.
+Skenaarioissa, joissa toimittajalaskut tulevat talous- ja toimintasovelluksiin integroinnin kautta, ostoreskontratiimin jäsenellä on oltava helppo tapa käsitellä poikkeuksia tai epäonnistuneita laskuja ja keino luoda odottavia laskuja epäonnistuneista laskuista. Toimittajan laskujen poikkeusten käsittely on nyt osa talous- ja toimintasovelluksia.
 
 ### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Luettelosivulle tuonnissa epäonnistuneet toimittajan laskut
 
@@ -225,3 +225,4 @@ Oletusarvoisesti jos käyttäjärooli antaa muokkausoikeudet mille tahansa sivul
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

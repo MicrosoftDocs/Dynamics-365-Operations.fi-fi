@@ -1,7 +1,7 @@
 ---
 title: Pankkitilin täsmäytyksen täsmäytyssääntöjen asetukset
 description: Tässä artikkelissa kerrotaan, miten määritetään täsmäytyssäännöt ja täsmäytyksen sääntöjoukot, jotka helpottavat pankkitilin täsmäytysprosessia. Täsmäytyssäännöt ovat ehtojoukko, joilla suodatetaan tiliotteen ja pankkitositteen rivejä täsmäytysprosessin aikana.
-author: panolte
+author: angelad116
 ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: baea7ea7ec98c905e9ae896a8cf1e4ac54fb4a9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed8572eca14beb8a0e3c382f0f328cc6d118491c
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899926"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151308"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Pankkitilin täsmäytyksen täsmäytyssääntöjen asetukset
 
@@ -44,7 +44,8 @@ Täsmäytyssäännöt täsmäyttävät oletusarvoisesti ensimmäisen pankkiasiak
 |--------|---------------|----------------------------------------------------------|
 | **Täsmäytä pankkitositteen kanssa**       | Luo ehdot, joilla voit määrittää, miten pankkitosite- ja tilioterivit täsmäytetään, kun täsmäytyssääntö suoritetaan **Pankkitilin täsmäytyksen laskentataulukko** -sivun avulla. Tapahtumarivit valitaan pikavälilehdissä määritettyjen lisäehtojen mukaan.                                | **Vaihe 1: määritä täsmäytyssääntö** – Valitse ehdot, jotka määrittävät, mitkä tiliotteet ja Financen pankkitapahtumat täsmäytetään. **Vaihe 2 (valinnainen): valitse tiliotteen rivit, joiden kanssa täsmäytyssäännöt suoritetaan:** Ota käyttöön sen tiliotteen rivin suodatin, jonka kanssa sääntö suoritetaan.                                                                                                                                                                                                                                                                                                               |
 | **Tyhjennä palautuslaskelman rivit** | Luo ehdot, joilla määritetään, miten palautuslaskelmat rivit olisi poistettava **Pankkitilin täsmäytyksen laskentataulukko** -sivulta, kun täsmäytyssääntö suoritetaan. Tätä vaihtoehtoa käytetään, kun tuodussa tiliotteessa on pankin virheen vuoksi kaksi tilioteriviä ja rivit on täsmäytettävä. | **Vaihe 1**:**etsi palautuslaskelman rivit**– Lisää valintaperusteet, joilla valitaan tiliotteen palautuslaskelman rivit. Esimerkiksi vain sekit voidaan valita valitsemalla Kenttä-kentässä **Pankkitapahtuman koodi**, valitsemalla sitten **Operaattori**-kentässä plus-merkki (+) ja syöttämällä Arvo-kenttään **Sekit**. **Vaihe 2: etsi alkuperäisen tiliotteen rivit** – Voit lisätä valintaperusteet, joilla pankkitositteen rivit täsmäytetään tiliotteen riveihin. **Vaihe 3: etsi Finance-pankkitapahtumat** – Voit lisätä valintaperusteet, joilla Financen pankkitapahtumat täsmäytetään tiliotteen riveihin. |
-| **Merkitse uusia tapahtumia**          | Luo ehdot, joilla määritetään, miten uudet tapahtumat merkitään **Pankkitilin täsmäytyksen laskentataulukko** -sivulla, kun täsmäytyssääntö suoritetaan.                                                                                                                                                                 | **Step 1: etsi tiliotteen rivit**– Lisää valintakentät ja määritä, mitkä tiliotteen rivit **Pankkitilin täsmäytyksen laskentataulukko** -sivulla valitaan. **Vaihe 2: etsi Finance and Operations** – Voit lisätä valintaperusteet, joiden avulla haetaan pankkitositteiden rivejä. Jos pankkitositetta ei löydy, tiliotteen rivi merkitään uudeksi tapahtumaksi.                                                                                                                                                                                                                                             |
+| **Merkitse uusia tapahtumia**          | Luo ehdot, joilla määritetään, miten uudet tapahtumat merkitään **Pankkitilin täsmäytyksen laskentataulukko** -sivulla, kun täsmäytyssääntö suoritetaan.                                                                                                                                                                 | **Step 1: etsi tiliotteen rivit**– Lisää valintakentät ja määritä, mitkä tiliotteen rivit **Pankkitilin täsmäytyksen laskentataulukko** -sivulla valitaan. **Vaihe 2: etsi talous- ja toimintosovellukset** – Voit lisätä valintaperusteet, joiden avulla haetaan pankkitositteiden rivejä. Jos pankkitositetta ei löydy, tiliotteen rivi merkitään uudeksi tapahtumaksi.                                                                                                                                                                                                                                             |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

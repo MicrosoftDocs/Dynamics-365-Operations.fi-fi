@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 65d45eaf618075e0c78881634fc77bda0fab277e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849728"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065671"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) -tallennustilan vanhentuminen
 
@@ -29,8 +29,8 @@ ms.locfileid: "8849728"
 Microsoft Dynamics Lifecycle Services (LCS) -palveluiden käyttö sähköisen raportoinnin (ER) konfiguraatioiden tallennusvarastona on vanhentunut. Tämä poisto käsittää seuraavat muutokset:
 
 - Microsoftin tuottamia Microsoft Dynamics 365 -sovellusten käyttämiä konfiguraatioita ei enää julkaista jaetussa käyttöomaisuuskirjastossa LCS:ssä. Sen sijaan ne julkaistaan vain RCS Global -tietovaraston kautta. Dynamics AX 2012:n konfiguraatiot julkaistaan kuitenkin edelleen jaetussa käyttöomaisuuskirjastossa LCS:ssä, kunnes AX:n vuoden 2012 elinkaaren tuki päättyy.
-- Toiminnot, jonka avulla voit ladata konfiguraatioita LCS:n projektin käyttöomaisuuskirjastoon talous- ja toimintosovelluksista ja RCS:stä, poistetaan käytöstä. Voit kuitenkin ladata konfiguraatiot projektin käyttöomaisuuskirjastoon LCS-järjestelmän selaimen avulla. Näin ollen voit edelleen lisätä konfiguraatioita LCS:han, jotta ne voidaan sisällyttää ratkaisupaketteihin.
-- Konfiguraatioiden tuonti LCS:stä on edelleen käytettävissä ja tuettu talous- ja toimintosovelluksissa ja RCS:ssä jonkin aikaa. Toiminto kuitenkin vanhentuu pian. (Täsmällinen poistopäivämäärä ilmoitetaan myöhemmin.)
+- Toiminnot, jonka avulla voidaan ladata määrityksiä LCS:n projektin resurssikirjastoon talous- ja toimintosovelluksista ja RCS:stä, poistetaan käytöstä. Voit kuitenkin ladata konfiguraatiot projektin käyttöomaisuuskirjastoon LCS-järjestelmän selaimen avulla. Näin ollen voit edelleen lisätä konfiguraatioita LCS:han, jotta ne voidaan sisällyttää ratkaisupaketteihin.
+- Määritysten tuonti LCS:stä on edelleen käytettävissä, ja sitä tuetaan tuettu talous- ja toimintosovelluksissa ja RCS:ssä jonkin aikaa. Toiminto kuitenkin vanhentuu pian. (Täsmällinen poistopäivämäärä ilmoitetaan myöhemmin.)
 
 ## <a name="deprecation-notice"></a>Poistoilmoitus
 
@@ -73,7 +73,7 @@ Käytä Globalisointisäilöä seuraaviin tarkoituksiin:
 
 ### <a name="does-this-change-mean-that-lcs-cant-be-used-as-central-storage-for-configurations"></a>Tarkoittaako tämä muutos, että LCS:ää ei voi käyttää konfiguraatioiden keskitettynä tallennuspaikkana?
 
-Kyllä. Toiminnot, jonka avulla voit ladata konfiguraatioita LCS:n projektin käyttöomaisuuskirjastoon talous- ja toimintosovelluksista, poistetaan käytöstä. Voit kuitenkin edelleen ladata konfiguraatiot projektin käyttöomaisuuskirjastoon LCS-järjestelmän selaimen avulla tarpeen mukaan.
+Kyllä. Toiminnot, jonka avulla voidaan ladata määrityksiä LCS:n projektin resurssikirjastoon talous- ja toimintosovelluksista, poistetaan käytöstä. Voit kuitenkin edelleen ladata konfiguraatiot projektin käyttöomaisuuskirjastoon LCS-järjestelmän selaimen avulla tarpeen mukaan.
 
 ### <a name="i-thought-that-rcs-was-a-replacement-repository-for-importing-global-template-files-i-didnt-think-that-its-used-to-store-configurations-which-is-correct"></a>Luulin, että RCS on korvaava tietovarasto yleismallitiedostojen tuomista varten. En ajatellut, että sitä käytetään konfiguraatioiden tallentamiseen. Mikä pitää paikkansa?
 
@@ -81,7 +81,7 @@ RCS on suunnittelupalvelu, jossa voi luoda ja muokata ER-konfiguraatioita. RCS:l
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>Ilman LCS:ää, mikä on ehdotettu tapa tallentaa konfiguraatiot niin, että "testi" ja "tuotanto" -konfiguraatioita voi helposti hallita ja siirtää?
 
-RCS käyttää *liitetyn sovelluksen* käsitettä. Liitetty sovellus muodostaa yhteyden RCS:n ja kaikkien talous- ja toimintosovellusten esiintymien välille. Koska RCS:n avulla voidaan muokata konfiguraatioita, liitettyä sovellusta voidaan käyttää viemällä konfiguraatiot suoraan suunnitteluohjelmasta talous- ja toimintosovellusympäristöihin. Näin ollen voit nopeasti muuttaa ja testata konfiguraatioita sen sijaan, että käyt läpi LCS:n projektitason varastoa.
+RCS käyttää *liitetyn sovelluksen* käsitettä. Liitetty sovellus muodostaa yhteyden RCS:n sekä kaikkien talous- ja toimintosovellusesiintymien välille. Koska RCS:n avulla voidaan muokata konfiguraatioita, liitettyä sovellusta voidaan käyttää viemällä konfiguraatiot suoraan suunnitteluohjelmasta talous- ja toimintosovellusympäristöihin. Näin ollen voit nopeasti muuttaa ja testata konfiguraatioita sen sijaan, että käyt läpi LCS:n projektitason varastoa.
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Onko joitakin esimerkkejä, jotka näyttävät määritykset ja hallinnan?
 

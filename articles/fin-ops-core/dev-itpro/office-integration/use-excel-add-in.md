@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a05c34454e27244bb08bfff84f2ada6ff498f23
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 388be651164af622dbabd7b2c7b3437233454bea
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862152"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108598"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Yksikön tietojen näyttäminen ja päivittäminen Excelissä 
 
@@ -31,7 +31,7 @@ ms.locfileid: "8862152"
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 
-Tässä artikkelissa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai taloushallinnon ja toimintojen sovelluksista.
+Tässä artikkelissa käsitellään yksikkötietojen avaamista Microsoft Excelissä sekä tietojen näyttämistä, päivittämistä ja muokkaamista Microsoft Dynamicsin Excel-apuohjelmalla. Voit aloittaa yksikkötietojen avaamisen joko Excelistä tai talous- ja toimintosovelluksista.
 
 Kun avaat yksikkötietoja Excelissä, voit tarkastella ja muokata nopeasti tietoja Excel-lisäosalla. Apuohjelman käyttö edellyttää vähintään versiota Microsoft Excel 2016.
 
@@ -40,15 +40,15 @@ Kun avaat yksikkötietoja Excelissä, voit tarkastella ja muokata nopeasti tieto
 
 Lisätietoja Excel-apuohjelman käyttämisestä lyhyessä videossa [Excel-mallin luominen otsikolle ja rivimalleille](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Yksikkötietojen avaaminen Excelissä, kun aloitat taloushallinnon ja toimintojen sovelluksesta
-1. Valitse taloushallinnon ja toimintojen sovelluksessa **Avaa Microsoft Officessa**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Yksikkötietojen avaaminen Excelissä, kun aloitat talous- ja toimintosovelluksesta
+1. Valitse talous- ja toimintosovelluksessa **Avaa Microsoft Officessa**.
 
     Jos sivun juuritietolähde (taulukko) on sama kuin minkä tahansa yksikön juuritietolähde, sivulle muodostetaan oletusasetuksena **Avaa Excelissä**. **Avaa Excelissä** -vaihtoehto löytyy usein käytetyillä sivuilla, kuten **Kaikki toimittajat** ja **Kaikki asiakkaat**.
  
 2. Valitse **Avaa Excelissä** -vaihtoehto ja avaa luotu työkirja. Tämä työkirja sisältää yksikön sidostiedot, osoitin ympäristöön ja osoitin Excel-lisäosaan.
 3. Valitse Excelin **Ota muokkaus käyttöön** -painike, jotta voit ajaa Excel-lisäosan. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan**.
-5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut taloushallinnon ja toimintojen sovelluksiin. Excel-apuohjelma käyttää aiempaa sisäänkirjautumista selaimesta ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. (Käyttöjärjestelmäkohtaisia lisätietoja käytetystä selaimesta on kohdassa [Office-apuohjelmien käyttämät selaimet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Kirjautumisen onnistumisen voi varmistaa tarkistamalla, mikä nimi on Excel-apuohjelman oikeassa yläkulmassa. 
+5. Jos näet kirjautumisruudun, valitse **Kirjaudu sisään** samoilla tunnuksilla, joilla kirjaudut talous- ja toimintosovelluksiin. Excel-apuohjelma käyttää aiempaa sisäänkirjautumista selaimesta ja kirjaa sinut sisään automaattisesti, jos se on mahdollista. (Käyttöjärjestelmäkohtaisia lisätietoja käytetystä selaimesta on kohdassa [Office-apuohjelmien käyttämät selaimet](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). Kirjautumisen onnistumisen voi varmistaa tarkistamalla, mikä nimi on Excel-apuohjelman oikeassa yläkulmassa. 
 
 Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että työkirjassa ei ole tietoja ennen kuin Excel-lisäosa on lukenut tiedot.
 
@@ -57,7 +57,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 2. Etsi Office-kaupasta avainsanalla **Dynamics** ja valitse **Lisää** **Microsoft Dynamics Office -lisäosa** -kohdan vieressä (Excel-lisäosa).
 3. Jos käytät Excel-lisäosaa ensimmäistä kertaa, valitse **Luota tähän lisäosaan** voidaksesi käyttää sitä. Excel-lisäosa toimii Excel-ikkunan oikealla puolella olevassa ruudussa.
 4. Avaa **Asetukset**-ruutu valitsemalla **Lisää palvelimen tiedot** -painike.
-5. Kopioi kohteena olevan taloushallinnon ja toimintojen sovellusesiintymän URL-osoite selaimessa, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
+5. Kopioi kohteena olevan talous- ja toimintosovellusesiintymän URL-osoite selaimessa, liitä se **Palvelimen URL-osoite** -kenttään ja poista kaikki teksti isäntänimen jälkeen. URL-osoitteessa tulisi olla vain isäntänimi.
 
     Jos URL-osoite on esimerkiksi `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, poista kaikki kaikki muut tiedot paitsi `https://xxx.dynamics.com`.
 
@@ -76,7 +76,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 Kun Excel-lisäosa lukee yksikön tiedot työkirjaan, voit päivittää tiedot milloin tahansa valitsemalla Excel-lisäosassa **Päivitä**.
 
 ## <a name="edit-entity-data-in-excel"></a>Muokkaa yksikön tietoja Excelissä
-Voit muuttaa yksikön tietoja tarpeen mukaan ja julkaista muutokset takaisin taloushallinnon ja toimintojen sovelluksiin valitsemalla Excel-apuohjelmassa **Julkaise**. Jos haluat muokata tietuetta, valitse työkirjassa solu ja muuta sitten solun arvoa. Jos haluat lisätä uuden tietueen, seuraa jotakin näistä vaiheista:
+Voit muuttaa yksikön tietoja tarpeen mukaan ja julkaista muutokset takaisin talous- ja toimintosovelluksiin valitsemalla Excel-apuohjelmassa **Julkaise**. Jos haluat muokata tietuetta, valitse työkirjassa solu ja muuta sitten solun arvoa. Jos haluat lisätä uuden tietueen, seuraa jotakin näistä vaiheista:
 
 - Napsauta tietolähdetaulun jotakin kohtaa ja valitse sitten **Uusi** Excel-lisäosassa.
 - Napsauta tietolähdetaulun viimeistä riviä ja paina sarkainpainiketta, kunnes kohdistin siirtyy pois rivin viimeisestä sarakkeesta ja luo uuden rivin.
@@ -146,3 +146,4 @@ Tietyt ongelmat ovat ratkaistavissa muutaman helpon vaiheen kautta.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

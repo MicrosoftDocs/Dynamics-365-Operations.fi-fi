@@ -1,22 +1,22 @@
 ---
 title: Commerce Scale Unitin alustaminen (pilvi)
 description: Tässä artikkelissa kerrotaan, miten Commerce Scale Unit (pilvi) alustetaan Microsoft Dynamics 365 Commercessa.
-author: AamirAllaq
-ms.date: 06/03/2022
+author: jashanno
+ms.date: 07/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2018-4-30
-ms.openlocfilehash: 969dd220a7b73a676b9cf5ac26223ebd9b3f2296
-ms.sourcegitcommit: ddcb62bb5fbf26a1178c2bb1aec45a3d2362339e
+ms.openlocfilehash: 93fbf2893fecc7b731f946797907bce4f8448309
+ms.sourcegitcommit: 8032d6275e6d9994ef9759ee16e743b483f7689e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8942849"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183360"
 ---
 # <a name="initialize-commerce-scale-unit-cloud"></a>Commerce Scale Unitin alustaminen (pilvi)
 
@@ -51,30 +51,30 @@ Commerce Scale Unitia voi käyttää seuraavilla alueilla.
 
 | Globaali sijainti | Alue              | Saatavuus        | Kommentit                  |
 |-----------------|---------------------|---------------------|---------------------------|
-| AMERIKAN MANNER        | Itä-Yhdysvallat             | Yleisesti saatavilla |                           |
-| AMERIKAN MANNER        | Itä-Yhdysvallat 2           | Yleisesti saatavilla |                           |
-| AMERIKAN MANNER        | Keskinen Pohjois-Yhdysvallat    | Rajallinen kapasiteetti    |                           |
-| AMERIKAN MANNER        | Keskinen Etelä-Yhdysvallat    | Rajallinen kapasiteetti    |                           |
-| AMERIKAN MANNER        | Keskinen Yhdysvallat          | Yleisesti saatavilla |                           |
-| AMERIKAN MANNER        | Länsi-Yhdysvallat             | Yleisesti saatavilla |                           |
-| AMERIKAN MANNER        | Länsi-Yhdysvallat 2           | Yleisesti saatavilla |                           |
-| AMERIKAN MANNER        | Kanada, keskinen      | Rajallinen kapasiteetti    |                           |
-| AMERIKAN MANNER        | Kanada, itäinen         | Rajallinen kapasiteetti    |                           |
-| AMERIKAN MANNER        | Keskinen Länsi-Yhdysvallat     | Rajallinen kapasiteetti    |                           |
-| APAC            | Itä-Australia      | Yleisesti saatavilla |                           |
-| APAC            | Kaakkois-Aasia      | Rajoitettu kapasiteetti | Käyttöönottoja ei sallita    |
-| APAC            | Itä-Japani          | Yleisesti saatavilla |                           |
-| APAC            | Länsi-Japani          | Yleisesti saatavilla |                           |
-| APAC            | Kaakkois-Australia | Yleisesti saatavilla |                           |
-| APAC            | Itä-Aasia           | Rajallinen kapasiteetti    |                           |
-| APAC            | Intia, etelä         | Rajoitettu kapasiteetti | Käyttöönottoja ei sallita    |
-| APAC            | Keskinen Intia       | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin |
-| EMEA            | Länsi-Eurooppa         | Yleisesti saatavilla |                           |
-| EMEA            | Pohjois-Eurooppa        | Yleisesti saatavilla |                           |
-| EMEA            | Yhdistynyt kuningaskunta, etelä            | Rajallinen kapasiteetti    |                           |
-| EMEA            | Yhdistynyt kuningaskunta, länsi             | Rajallinen kapasiteetti    |                           |
-| Sveitsi     | Sveitsi, pohjoinen   | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin |
-| Yhdistyneet arabiemiirikunnat             | Yhdistyneet arabiemiirikunnat, pohjoinen           | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin |
+| AMERIKAN MANNER        | Itä-Yhdysvallat             | Yleisesti saatavilla |  Ei kommentteja.                         |
+| AMERIKAN MANNER        | Itä-Yhdysvallat 2           | Yleisesti saatavilla |  Ei kommentteja.                          |
+| AMERIKAN MANNER        | Keskinen Pohjois-Yhdysvallat    | Rajallinen kapasiteetti    |  Ei kommentteja.                            |
+| AMERIKAN MANNER        | Keskinen Etelä-Yhdysvallat    | Rajallinen kapasiteetti    |  Ei kommentteja.                            |
+| AMERIKAN MANNER        | Keskinen Yhdysvallat          | Yleisesti saatavilla |  Ei kommentteja.                            |
+| AMERIKAN MANNER        | Länsi-Yhdysvallat             | Yleisesti saatavilla |  Ei kommentteja.                            |
+| AMERIKAN MANNER        | Länsi-Yhdysvallat 2           | Yleisesti saatavilla |  Ei kommentteja.                            |
+| AMERIKAN MANNER        | Kanada, keskinen      | Rajallinen kapasiteetti    |  Ei kommentteja.                            |
+| AMERIKAN MANNER        | Kanada, itäinen         | Rajallinen kapasiteetti    |   Ei kommentteja.                           |
+| AMERIKAN MANNER        | Keskinen Länsi-Yhdysvallat     | Rajallinen kapasiteetti    |   Ei kommentteja.                           |
+| APAC            | Itä-Australia      | Yleisesti saatavilla |   Ei kommentteja.                           |
+| APAC            | Kaakkois-Aasia      | Rajoitettu kapasiteetti | Käyttöönottoja ei sallita.    |
+| APAC            | Itä-Japani          | Yleisesti saatavilla |  Ei kommentteja.                            |
+| APAC            | Länsi-Japani          | Yleisesti saatavilla |   Ei kommentteja.                           |
+| APAC            | Kaakkois-Australia | Yleisesti saatavilla |   Ei kommentteja.                           |
+| APAC            | Itä-Aasia           | Rajallinen kapasiteetti    |   Ei kommentteja.                           |
+| APAC            | Intia, etelä         | Rajoitettu kapasiteetti | Käyttöönottoja ei sallita.    |
+| APAC            | Keskinen Intia       | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin. |
+| EMEA            | Länsi-Eurooppa         | Rajallinen kapasiteetti    | Ei saatavana LCS:ssä tällä hetkellä. |
+| EMEA            | Pohjois-Eurooppa        | Rajallinen kapasiteetti    | Ei saatavana LCS:ssä tällä hetkellä. |
+| EMEA            | Yhdistynyt kuningaskunta, etelä            | Yleisesti saatavilla |    Ei kommentteja.                          |
+| EMEA            | Yhdistynyt kuningaskunta, länsi             | Yleisesti saatavilla |    Ei kommentteja.                          |
+| Sveitsi     | Sveitsi, pohjoinen   | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin. |
+| Yhdistyneet arabiemiirikunnat             | Yhdistyneet arabiemiirikunnat, pohjoinen           | Rajallinen kapasiteetti    | Vaatii hyväksyntäprosessin. |
 
 Rajallisen kapasiteetin alueilla on erittäin rajoitettu käyttökapasiteetti. Käyttöönottopyynnöt arvioidaan tapauskohtaisesti. Jos rajallisen kapasiteetin alueilla on tehtävä liiketoimintaa, voit lisätä tukipyynnön odotusluetteloon. Rajoitetun kapasiteetin alueet eivät tällä hetkellä mahdollista Commerce Scale Unit -käyttöönottoa. 
 

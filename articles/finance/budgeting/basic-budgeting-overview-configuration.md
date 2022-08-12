@@ -1,6 +1,6 @@
 ---
 title: Budjetoinnin yhteenveto
-description: Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 Financen Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
+description: Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 Financen Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen talous- ja toimintosovelluksissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 author: panolte
 ms.date: 04/29/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48fcfec7126b4835b7d05e431bbc6ad7b9176bbe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 380afc399a050215bb2d7b1e5ddb20088226f654
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710410"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068957"
 ---
-# <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus 
+# <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 Financen Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
+Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 Financen Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen talous- ja toimintosovelluksissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -89,3 +89,4 @@ Budjettisuunnittelutoimintoa käyttävä yritys voi luoda ja käyttää *budjett
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

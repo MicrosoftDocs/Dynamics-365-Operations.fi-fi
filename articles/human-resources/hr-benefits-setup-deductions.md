@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4817cd6370166b6dfdf17b3d733b13374db8f49
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fb5f5b0b50f407f58193aafd79f28dd1fd432ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694904"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066789"
 ---
 # <a name="configure-deductions"></a>Vähennysten määrittäminen
 
@@ -45,7 +45,7 @@ Microsoft Dynamics 365 Human Resourcesin vähennysten avulla voit määrittää,
    | **Otsikko** | Palkanlaskentajärjestelmän otsikkokoodi, jota tämä vähennys käyttää vähennyksen työntekijäosuudesta, kun etuja käsitellään palkanlaskennassa. Tätä käytetään, kun käytetään kolmannen osapuolen palkanlaskennan tarjoajaa. |
    | **Työntekijän palkanlaskennan vähennyksen viite** | Palkanlaskentajärjestelmän vähennyskoodi, jota tämä vähennys käyttää vähennyksen työntekijän osassa, kun etuja käsitellään palkanlaskentaa varten. |
    | **Summan otsikko** | Palkanlaskentajärjestelmän otsikkokoodi, jota tämä vähennysmäärä käyttää vähennyksen työntekijäosuudesta, kun etuja käsitellään palkanlaskennassa. Tätä käytetään yleensä, kun käytetään kolmannen osapuolen palkanlaskennan tarjoajaa. |
-   | **Voi poistaa** | Määrittää, voiko Dynamics 365 for Finance and Operationsista viety arvo aiheuttaa arvon poistamisen palkanlaskentajärjestelmässä. |
+   | **Voi poistaa** | Määrittää, voiko Dynamics 365 Financesta viety arvo aiheuttaa arvon poistamisen palkanlaskentajärjestelmässä. |
    | **Yhdistetyt sarakkeet** | Määrittää, viedäänkö otsikko ja vähennysmäärä palkanlaskentajärjestelmä vierekkäisissä sarakkeissa. |
    | **Muutoksen voimaantulopäivämäärä** | Edun vähennysmuutoksen voimaantulon päivämäärä. Tänä päivämääränä edun vähennys muuttuu ja kaikki tähän vähennykseen liittyvät etuussuunnitelmat päivitetään, kunhan **Vähennysmuutoksen päivitys** -käsittelyn suoritetaan. |
    | **Vähennyksen muutos valmis** | **Vähennysmuutos suoritettu** -valintaruutu valitaan automaattisesti sen jälkeen, kun edun vähennysmuutokset on tehty vähennyksen päivityksen muutoskäsittelyn jälkeen. |
@@ -56,3 +56,4 @@ Microsoft Dynamics 365 Human Resourcesin vähennysten avulla voit määrittää,
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 47a46b7210b718aea7ec737971cb826eb5d0652d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 59f1b0e3c35d1dce045b4a3932d99fab398e5516
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858095"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069753"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-20-2021"></a>Dynamics 365 Human Resources:n uudet tai muuttuneet ominaisuudet 20. syyskuuta 2021
 
@@ -83,7 +83,7 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 
 | Ominaisuus | Lisätietoja |
 |---|---|
-| Platform Update 10.0.21 (45) | Platform update -päivitys 10.0.21 on ajoitettu alkamaan palvelujulkaisun kanssa 4. lokakuuta 2021. Lisätietoja on [Rahoitus ja toiminnot -sovellusten version 10.0.21 alustan päivityksissä (lokakuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+| Platform Update 10.0.21 (45) | Platform update -päivitys 10.0.21 on ajoitettu alkamaan palvelujulkaisun kanssa 4. lokakuuta 2021. Lisätietoja on [Talous- ja toimintosovellusten version 10.0.21 käyttöympäristön päivityksissä (lokakuu 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
 |Suorituskyvyn kirjauskansioiden laajennettu raporttinäkymä | Tämä ominaisuus otetaan käyttöön oletusarvoisesti seuraavassa käyttöönotossa. |
 
 
@@ -95,3 +95,4 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

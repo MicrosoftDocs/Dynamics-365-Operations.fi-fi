@@ -1,6 +1,6 @@
 ---
 title: Yleinen vianmääritys
-description: Tässä artikkelissa on yleisiä vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Dataversen välillä.
+description: Tässä artikkelissa on yleisiä vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten sekä Dataversen välillä.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853652"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112361"
 ---
 # <a name="general-troubleshooting"></a>Yleinen vianmääritys
 
@@ -22,7 +22,7 @@ ms.locfileid: "8853652"
 
 
 
-Tässä artikkelissa on yleisiä vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Dataversen välillä.
+Tässä artikkelissa on yleisiä vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten sekä Dataversen välillä.
 
 > [!IMPORTANT]
 > Jotkin tämän artikkelin osoitteet saattavat edellyttää joko järjestelmänvalvojan roolia tai Microsoft Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tunnistetietoja.
@@ -55,28 +55,28 @@ Jäljitysloki näytetään seuraavasti.
 
 Voit kopioida jäljityslokien sisällön ja liittää ne toiseen sovellukseen, kuten Muistioon tai muihin työkaluihin, jotta voit tarkastella lokeja tai tekstitiedostoja helpommin koko sisällössä. 
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Virheenkorjaustilan käyttöönotto taloushallinnon ja toimintojen sovellusten live-synkronointiongelmien vianmäärityksessä
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Virheenkorjaustilan käyttöönotto talous- ja toimintosovellusten live-synkronointiongelmien vianmäärityksessä
 
 **Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvoja
 
-Sovellukseen perustuvat kaksoiskirjoitusvirheet Dataversessä voivat näkyä taloushallinnon ja toimintojen sovelluksessa. Virheiden sanatarkka kirjaaminen otetaan käyttöön seuraavasti:
+Sovellukseen perustuvat kaksoiskirjoitusvirheet Dataversessä voivat näkyä talous- ja toimintosovelluksessa. Virheiden sanatarkka kirjaaminen otetaan käyttöön seuraavasti:
 
-1. Kaikissa taloushallinnon ja toimintojen sovelluksen projektimäärityksessä on **IsDebugMode**-merkintä **DualWriteProjectConfiguration**-taulukossa.
-2. Avaa **DualWriteProjectConfiguration** käyttämällä Excel-apuohjelmaa. Apuohjelman käyttöä varten on otettava käyttöön suunnittelutila taloushallinnon ja toimintojen sovelluksen Excel-apuohjelmassa ja lisättävä **DualWriteProjectConfiguration** taulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
+1. Kaikissa talous- ja toimintosovelluksen projektimäärityksissä on **IsDebugMode**-merkintä **DualWriteProjectConfiguration**-taulukossa.
+2. Avaa **DualWriteProjectConfiguration** käyttämällä Excel-apuohjelmaa. Apuohjelman käyttöä varten on otettava käyttöön suunnittelutila talous- ja toimintosovelluksen Excel-apuohjelmassa ja lisättävä **DualWriteProjectConfiguration** taulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
 3. Määritä projekti **IsDebugMode**-asetukseksi **Kyllä**.
 4. Suorita virheitä tuottava skenaario.
 5. Sanatarkat lokit tallennetaan **DualWriteErrorLog**-taulukossa.
 6. Taulukon tietoja haetaan käyttämällä selaimessa linkkiä `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog` ja korvaamalla `999` tarvittaessa.
 7. Päivitys tehdään uudelleen päivityksen [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe) jälkeen, ja se on saatavana platform update 37- ja sen jälkeisissä päivityksissä. Jos tämä korjaus on asennettu, virheenkorjaustilalla siepataan lisää lokeja.Jos olet asentanut tämän korjauksen, virheenkorjaustila kerää enemmän lokeja.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Taloushallinnon ja toimintojen sovelluksen virtuaalikoneen synkronointivirheiden tarkistaminen
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Talous- ja toimintosovelluksen näennäiskoneen synkronointivirheiden tarkistaminen
 
 **Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvoja
 
 1. Kirjaudu Microsoft Dynamics Lifecycle Servicesiin (LCS).
 2. Avaa LCS-projekti, jonka valitsit kaksoiskirjoitustestauksen suorittamista varten.
 3. Valitse **Pilvipalveluympäristöt**-ruutu.
-4. Voit kirjautua taloushallinnon ja toimintojen sovelluksen virtuaalikoneeseen (VM) etätyöpöydän avulla. Käytä LCS:ssä näkyvää paikallista tiliä.
+4. Voit kirjautua talous- ja toimintosovelluksen näennäiskoneeseen (VM) etätyöpöydän avulla. Käytä LCS:ssä näkyvää paikallista tiliä.
 5. Avaa tapahtumien katseluohjelma.
 6. Valitse **Sovellusten ja palveluiden lokit \> Microsoft \> Dynamics \> AX -DualWriteSync \> Toiminnassa**.
 7. Tarkista viimeaikaisten virheiden luettelo.
@@ -109,11 +109,11 @@ Kolmannen osapuolen evästeet on sallittava selaimen asetuksissa.
 1.  Siirry kohtaan Asetukset -> sivuston käyttöoikeudet - > evästeet ja sivuston tiedot.
 2.  Poista Estä kolmannen osapuolen evästeet käytöstä.  
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Toisen Dataverse -ympäristön linkityksen poistaminen ja linkittäminen taloushallinnon ja toimintojen sovelluksesta
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Toisen Dataverse-ympäristön linkityksen poistaminen ja linkittäminen talous- ja toimintosovelluksesta
 
-**Ympäristön linkityksen poistamiseen vaadittu rooli:** Joko taloushallinnon ja toimintojen sovelluksen tai Dataversen järjestelmänvalvoja.
+**Ympäristön linkityksen poistamiseen vaadittu rooli:** Joko talous- ja toimintosovelluksen tai Dataversen järjestelmänvalvoja.
 
-1. Kirjaudu taloushallinnon ja toimintojen sovellus.
+1. Kirjaudu talous- ja toimintosovellukseen.
 2. Siirry kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Kaksoiskirjoitus**-ruutu.
 3. Valitse kaikki käynnissä olevat yhdistämismääritykset ja valitse sitten **Pysäytä**.
 4. Valitse **Poista ympäristön linkitys**.
@@ -132,23 +132,23 @@ Voit ottaa **Tieto**-lomakevaihtoehdon uudelleen käyttöön seuraavasti:
 3. Valitse **Tieto**-lomake ja valitse **Ota käyttöön käyttöoikeusroolit**.
 4. Muuta suojausasetukseksi **Näytä kaikille**.
 
-## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Miten varmistetaan, että tietojen integrointi käyttää uusinta talous- ja toimintoskeemaa
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Uusimman talous- ja toimintosovellusten rakenteen käytön varmistaminen tietojen integroinnissa
 
 Tietojen integroinnissa saattaa kohdata tieto-ongelmia, jos ajan tasalla olevaa skeemaa ei käytetä. Seuraavien vaiheiden avulla voit päivittää talous- ja toimintosovellusten entiteettiluettelon ja tietojen integroijan entiteetit.
 
-### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Päivitä talous- ja toimintosovellusympäristön entiteettiluettelo
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Talous- ja toimintosovellusympäristön entiteettiluettelon päivittäminen
 1.  Kirjaudu talous- ja toimintosovellusympäristöön.
 2.  Valitse **Tietojen hallinta**.
 3.  Valitse Tietojen hallinta -kohdassa **Kehyksen parametrit**.
 4.  Valitse **Tietojen tuonti- ja vientiympäristön parametrit** -sivulla **Yksikön asetukset** -välilehti ja valitse sitten **Päivitä yksikköluettelo**. Päivitys saattaa kestää yli 30 minuuttia sen mukaan, kuinka monta yksikköä on mukana.
-5.  Siirry **Tietojen hallinta** -kohtaan ja tarkista odotetut entiteetit valitsemalla **Tietoyksiköt**. Jos odotetut entiteetit eivät ole luettelossa, tarkista, että entiteetit näkyvät talous- ja toimintoympäristössä, ja palauta puuttuvat entiteetit tarpeen mukaan.
+5.  Siirry **Tietojen hallinta** -kohtaan ja tarkista odotetut entiteetit valitsemalla **Tietoyksiköt**. Jos odotetut entiteetit eivät ole luettelossa, tarkista, että entiteetit näkyvät talous- ja toimintosovellusympäristössä, ja palauta puuttuvat entiteetit tarpeen mukaan.
 
 #### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Jos päivitys ei ratkaise ongelmaa, poista entiteetit ja lisää ne uudelleen.
 
 > [!NOTE]
 > Sinun on ehkä pysäytettävä kaikki käsittelyryhmät, jotka käyttävät yksiköitä aktiivisesti ennen poistoa.
 
-1.  Valitse talous- ja toimintoympäristössä **Tietojen hallinta** ja valitse sitten **Tietoyksiköt**.
+1.  Valitse talous- ja toimintosovellusympäristössä **Tietojen hallinta** ja valitse sitten **Tietoyksiköt**.
 2.  Hae ongelmallisia entiteettejä ja kirjoita muistiin kohdeyksikön, valmistelutaulun, yksikön nimen ja muiden asetusten tiedot. Poista entiteetti tai entiteetit luettelosta.
 3.  Valitse **Uusi** ja lisää entiteetti tai entiteetit uudelleen vaiheen 2 tietoja käyttäen. 
 
@@ -174,3 +174,4 @@ Tukitiimin on ehkä tarkistettava verkkojäljitykset ongelmien vianmääritystä
 4. Vie tulokset HAR-tiedostona valitsemalla **tallenna**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

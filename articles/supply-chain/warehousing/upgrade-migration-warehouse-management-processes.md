@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d85f4e5c44db511970b3e22490341228fa0d1abd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7a88c5a615ec860890578873eaee736fabbeaf08
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857080"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065807"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Varastonhallinnan päivittäminen Microsoft Dynamics AX 2012:sta Supply Chain Managementiin 
 
@@ -37,11 +37,11 @@ Päivityksen aikana kaikki Kuormalavatunnus-varastodimensiota käyttävään var
 Päivityksen jälkeen voit kuitenkin käyttää asetuksia **Vaihda nimikkeen varastodimensioryhmä** -lomakkeessa ja poistaa käyttöeston tuotteista, jotka on estetty päivityksen aikana. Sen jälkeen voit käsitellä näiden tuotteiden tapahtumia.
 
 ### <a name="enabling-items-in-supply-chain-management"></a>Nimikkeiden ottaminen käyttöön Supply Chain Managementissa 
-Tämä muutos on pakollinen, koska FinanceSupply Chain Managementissa nimikkeiden seuranta on osa varastonhallintaprosesseja. Näissä prosesseissa kaikki varastot ja niiden sijainnit pitää liittää sijainnin profiiliin. Jos haluat käyttää varaston hallintaprosesseja, seuraavat tiedot on määritettävä:
--   Kaikkien kohteiden ja varastojen on oltava käytössä varastonhallintaprosesseja varten 
--   Aiemmin vapautetut tuotteet täytyy liittää varastodimensioryhmään, joka käyttää varaston hallintaprosesseja 
+Tämä muutos on pakollinen, koska Supply Chain Managementissa nimikkeiden seuranta on osa varastonhallintaprosesseja (WMS). Näissä prosesseissa kaikki varastot ja niiden sijainnit pitää liittää sijainnin profiiliin. Jos haluat käyttää WMS:ää, seuraavat on määritettävä:
+-   WMS on otettava käyttöön aiemmin luoduissa varastoissa 
+-   Aiemmin vapautetut tuotteet on liitettävä varastodimensioryhmään, joka käyttää WMS:ää 
 
-Jos lähdevarastodimensioryhmät käyttävät kuormalavatunnus-varastodimensiota, aiemmin käytettävissä olevan varaston, jota käytti kuormalavatunnus-varastodimensiota, sijainnit pitää liittää sijaintiprofiiliin, missä **Käytä rekisterikilven seurantaa**-parametri on valittuna. Jos olemassa olevia varastoja ei saa ottaa käyttöön varaston hallintaprosessien käyttämiseksi, voit muuttaa olemassa olevan varaston varastodimensioryhmät ryhmiin, jotka käsittelevät vain toimipaikka-, varasto- ja sijaintivarastodimensioita. 
+Jos lähdevarastodimensioryhmät käyttävät kuormalavatunnus-varastodimensiota, aiemmin käytettävissä olevan varaston, jota käytti kuormalavatunnus-varastodimensiota, sijainnit pitää liittää sijaintiprofiiliin, missä **Käytä rekisterikilven seurantaa**-parametri on valittuna. Jos WMS:ää ei saa ottaa käyttöön aiemmin luoduissa varastoissa, voit muuttaa aiemmin luodun käytettävissä olevan varaston varastodimensioryhmät ryhmiin, jotka käsittelevät vain toimipaikka-, varasto- ja sijaintivarastodimensioita. 
 
 > [!NOTE] 
 >  Voit vaihtaa nimikkeiden varastodimensioryhmän vaikka varastotapahtumia on avoimena.
@@ -56,12 +56,12 @@ Jotta nimikeittä voidaan käyttää osana varaston hallintaprosessia, se täyty
 Tuotteet, jotka on estetty päivityksen yhteydessä, pitää valita uusi varastodimensioryhmä tuotteille. Huomaa, että voit vaihtaa varastodimensioryhmän vaikka varastotapahtumia on avoimena. Voit käyttää nimikkeitä, jotka on estetty päivityksen yhteydessä, voit valita toisen seuraavista vaihtoehdoista:
 
 -   Muuta varastodimensioryhmä nimikkeelle varastodimensioryhmässä, joka käyttää vain toimipaikka-, varasto- ja toimipaikka-varastodimensioita. Tämän muutoksen tuloksena kuormalavatunnus-varastodimensio ei ole enää käytössä.
--   Muuta varastodimensioryhmä nimikkeelle varastodimensioryhmässä, joka käyttää vain varastonhallintaprosesseja. Tämän muutoksen tuloksena rekisterikilpi-varastodimensio on nyt käytössä.
+-   Muuta nimikkeen varastodimensioryhmä varastodimensioryhmään, joka käyttää WMS:ää. Tämän muutoksen tuloksena rekisterikilpi-varastodimensio on nyt käytössä.
 
-## <a name="configure-warehouse-management-processes"></a>Varastonhallintaprosessien määrittäminen
+## <a name="configure-wms"></a>Konfiguroi WMS
 Ennen kuin voit käyttää vapautettuja tuotteita **Varastonhallinta**-moduulissa, tuotteiden on käytettävä varastodimensioryhmää, missä **Käytä varastonhallintaprosesseja** -parametri on valittuna.
 
-### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Ota varastot käyttöön varastonhallintaprosesseja varten
+### <a name="enable-warehouses-to-use-wms"></a>Ota WMS käyttöön varastoissa
 
 1.  Luo vähintään yksi uusi sijaintiprofiili.
 2.  Valitse **Varastonhallinta** &gt; **Asetukset** &gt; **Ota varastonhallintaprosessit käyttöön** &gt; **Ota varaston asetukset käyttöön**.
@@ -70,7 +70,7 @@ Ennen kuin voit käyttää vapautettuja tuotteita **Varastonhallinta**-moduuliss
 5.  Vahvista muutokset. Vahvistusprosessin osana suoritetaan erilaisia tietojen eheyden vahvistusprosesseja. Suuremman päivitysprosessin yhteydessä ilmeneviä ongelmia saatetaan joutua säätämään lähteen käyttöönoton yhteydessä. Tässä tapauksessa tarvitaan lisätietopäivitystä.
 6.  Muutosten käsittely.
 
-### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Nimikkeiden varastodimensioryhmän muuttaminen siten, että se käyttää varastonhallintaprosesseja
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-wms"></a>Nimikkeiden varastodimensioryhmän muuttaminen siten, että se käyttää WMS:ää
 
 1.  Luo uusi **Varaston tila** -arvo ja määritä **Oletusvarastotilan tunnus** -arvo **Varastonhallinnan parametrit** -asetuksista.
 2.  Luo uusi varastodimensioryhmä, missä **Käytä varastonhallintaprosesseja** -parametri on valittuna.

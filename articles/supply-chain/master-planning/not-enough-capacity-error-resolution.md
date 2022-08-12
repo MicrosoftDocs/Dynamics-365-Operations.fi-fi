@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d4f54c06a07b3cdd0b8fe2cc52614189ff31ba7f
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891028"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135596"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Ajoistusmoduulin "Kapasiteettia ei löytynyt riittävästi" -virheen korjaaminen
 
@@ -111,5 +111,41 @@ Voit tarkistaa resurssiryhmän käytettävissä olevan kapasiteetin noudattamall
 Kun työvaiheita ajoitetaan, pääsuunnittelu suunnittelee kapasiteetin ensisijaisen resurssiryhmän kalenterin mukaisesti. Se kirjaa toissijaisen työvaiheen yhtä aikaa kuin ensisijainen työvaihe, eikä se ota huomioon toissijaisen työvaiheen kalentereita tai kapasiteettia. Tällöin tuotantotilaus ajoitetaan suljettuun kalenteriin tai kun toissijainen työvaihe ei ole käytettävissä (kalenteri suljettu, ei kapasiteettia).
 
 Töiden ajoitusta käytettäessä pääsuunnittelu ottaa huomioon sekä ensisijaisen että toissijaisen työvaiheen kapasiteetin ja kalenterin tilausta ajoitettaessa. Jotta tilaus voidaan ajoittaa, molempien työvaiheiden resurssien kalenterien on oltava avoimia ja niiden kapasiteetti on oltava käytettävissä.
+
+## <a name="maximum-job-lead-time-is-too-short"></a>Työn enimmäisläpimenoaika on liian lyhyt.
+
+Ajoitusmoduuli ei voi aikatauluttaa tilausta, jos toimipaikalle määritetty **Työn enimmäisläpimenoaika** on lyhyempi kuin läpimenoaika, joka on määritetty nimikkeelle tilauksen tai kattavuuden oletusasetuksissa.
+
+Toimipaikan **Työn enimmäisläpimenoaika** -asetusta voi tarkastella tai muokata valitsemalla **Tuotannonhallinta \> Määritys \> Tuotannonhallinnan parametrit** ja avaamalla **Yleiset**-välilehden.
+
+Nimikkeen oletustilausasetuksia voi tarkastella tai muokata seuraavasti:
+
+1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
+1. Etsi soveltuva tuote luettelosta ja valitse se.
+1. Avaa toimintoruudussa **Hallitse varastoa** -välilehti ja valitse **Tilauksen oletusasetukset**.
+1. Laajenna **Varasto**-pikavälilehti ja tarkastele tai muokkaa **Varaston läpimenoaika** -asetuksia tarpeen mukaan.
+
+Nimikkeen kattavuusasetuksia voi tarkastella tai muokata seuraavasti:
+
+1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
+1. Etsi soveltuva tuote luettelosta ja valitse se.
+1. Avaa toimintoruudun **Suunnitelma**-välilehti ja valitse **Nimikkeen kattavuus**.
+1. Avaa **Läpimenoaika**-välilehti ja tarkastele tai muokkaa **Tuotantoaika**-arvoa tarpeen mukaan.
+
+## <a name="excessive-quantity-of-required-resources"></a>Liian suuri määrä vaadittuja resursseja
+
+Moduuli yrittää täsmäyttää ajoituksen aikana reitityksen työvaiheelle määritetyn vaaditun resurssimäärän käytettävissä oleviin resursseihin työvaiheen resurssitarpeiden mukaisesti. Resurssin määrän määrittäminen liian suureksi voi johtaa siihen, että reititys ei ole mahdollista, mikä tuottaa aikataulutusvirheen.
+
+Sekä määritetty määrä että valitussa tuotteessa, reitityksessä ja reitityksen työvaiheessa käytettävissä olevat resurssit voidaan tarkistaa seuraavasti:
+
+1. Mene **Tuotetietojen hallinta \> Tuotteet \> Vapautetut tuotteet**.
+1. Etsi soveltuva tuote ruudukossa ja valitse se.
+1. Avaa toimintoruudun **Suunnittele**-välilehti ja valitse **Reititys**.
+1. Etsi soveltuva reititys ruudukossa ja valitse se.
+1. Avaa **Yleiskatsaus**-välilehti sivun alareunassa.
+1. Valitse työvaihe valittujen reitityksen työvaiheiden luettelosta.
+1. Avaa valintaikkuna, jossa voi tarkastella valitun reitityksen työvaiheen käytettävissä olevia resursseja, valitsemalla **Käytettävissä olevat resurssit**.
+1. Avaa **Resurssin kuormitus** -välilehti. Tässä **Määrä**-kenttää näyttää valitussa reitityksen työvaiheessa vaadittu resurssin määrä. Tarkastele ja/tai muokkaa sitä tarpeen mukaan.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

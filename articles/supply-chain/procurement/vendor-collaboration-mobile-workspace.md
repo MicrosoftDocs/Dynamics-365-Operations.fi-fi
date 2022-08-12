@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 75c044d1133e1c4765cd97f4ab7e2a08ba998c35
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851649"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112147"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötila
 
@@ -28,7 +28,7 @@ ms.locfileid: "8851649"
 
 Tässä artikkelissa on tietoja **toimittajayhteistyön** mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja.
 
-Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations (Dynamics 365) -mobiilisovelluksen kanssa.
+Tämä mobiilityötila on tarkoitettu käytettäväksi talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus 
 **Toimittajayhteistyö**-mobiilityötila pitää toimittajat ajan tasalla uusista ostotilauksista, jotta he voivat tarkastella ostotilauksia ja sitten vastata niihin verkkoasiakasohjelmassa. 
@@ -110,7 +110,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
-Finance and Operations (Dynamics 365) -mobiilisovelluksen lataaminen ja asentaminen:
+Talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -171,3 +171,4 @@ Kun asiakas on vahvistanut ostotilauksen, (ts. ostotilaus on siirretty **Vahvist
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

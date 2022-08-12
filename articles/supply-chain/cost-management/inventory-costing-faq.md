@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850841"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068390"
 ---
 # <a name="inventory-costing-faq"></a>Varaston kustannuslaskenta – UKK
 
@@ -112,11 +112,11 @@ Ei, et voi ottaa **Kirjanpitovarasto**-asetusta käyttöön **Sijainti**-dimensi
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>Pitäisikö varastonhallintaprosessiasetus ottaa käyttöön varastodimensioryhmälle?
 
-Jos haluat ehkä käyttää varastonhallinnan lisätoimintoja tulevaisuudessa, ota käyttöön **Käytä varastonhallintaprosesseja** -vaihtoehto. Kun olet tallentanut varastodimensioryhmän, et voi enää muuttaa **Käytä varastonhallintaprosesseja** -vaihtoehdon asetusta. Jos päätät myöhemmin käyttää varastonhallintaprosesseja, sinun on luotava uusi varasto, jossa asetus on käytössä. Ei ole automaattista prosessia, jota voi käyttää koko varaston siirtoon varastosta toiseen tai siihen liittyvien konfiguraatioiden kopioimiseen uuteen varastoon.
+Jos haluat ehkä käyttää varastonhallintaprosesseja (WMS) tulevaisuudessa, ota käyttöön **Käytä varastonhallintaprosesseja** -vaihtoehto. Kun olet tallentanut varastodimensioryhmän, et voi enää muuttaa **Käytä varastonhallintaprosesseja** -vaihtoehdon asetusta. Jos päätät myöhemmin käyttää varastonhallintaprosesseja, sinun on luotava uusi varasto, jossa asetus on käytössä. Ei ole automaattista prosessia, jota voi käyttää koko varaston siirtoon varastosta toiseen tai siihen liittyvien konfiguraatioiden kopioimiseen uuteen varastoon.
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>Voiko varastonhallinnan prosessit ottaa käyttöön varastodimensioryhmässä, vaikka en olisikaan aikomassa käyttää edistynyttä varastointia?
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>Voiko varastonhallintaprosessit ottaa käyttöön varastodimensioryhmässä, vaikka en aikoisikaan käyttää varastonhallintaprosesseja (WMS)?
 
-Kyllä, vaikka et aio käyttää edistyneen varastonhallinnan ominaisuuksia, voit ottaa **Varastonhallintaprosessien käyttö** -vaihtoehdon käyttöön varastodimensioryhmälle. Jotta voit luoda ja käsitellä tapahtumia, sinun on suoritettava vähimmäiskonfiguraatio, kuten varaushierarkiat ja yksikköjärjestysryhmät. Edistyneen varastoinnin asetukset ohitetaan kuitenkin yleensä, kun keräysluetteloita, pakkausluetteloita ja tuotteiden vastaanottoja käsitellään manuaalisesti (esimerkiksi myyntitilaus- ja ostotilaussivuilla).
+Kyllä. Vaikka et aikoisi käyttää varastonhallintaprosessien (WMS) ominaisuuksia, voit ottaa **Varastonhallintaprosessien käyttö** -vaihtoehdon käyttöön varastodimensioryhmälle. Jotta voit luoda ja käsitellä tapahtumia, sinun on suoritettava vähimmäiskonfiguraatio, kuten varaushierarkiat ja yksikköjärjestysryhmät. WMS-asetukset ohitetaan kuitenkin yleensä, kun keräysluetteloita, pakkausluetteloita ja tuotteiden vastaanottoja käsitellään manuaalisesti (esimerkiksi myyntitilaus- ja ostotilaussivuilla).
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>Milloin varastotilanne on otettava käyttöön varastolle tai seurantadimensioryhmälle?
 

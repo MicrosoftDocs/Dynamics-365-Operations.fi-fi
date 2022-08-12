@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 90e64fec512307af209ace128d5897475de7aee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 41789d574cc7348dbf8a18db97da9c428da09602
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867270"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103935"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance, Supply Chain Management ja Commerce Yhdysvaltain Government Community Cloudissa (GCC)
 
@@ -38,9 +38,9 @@ Kun alustava perehdytys on valmis, noudata [projektin perehdytyksen](../lifecycl
 
 ## <a name="environment-deployment"></a>Ympäristön käyttöönotto
 
-Kun projektin perehdytys on valmis, voit tarkistaa LCS:n lisäominaisuudet, jotka on kuvattu kohdassa [Lifecycle Services (LCS) taloushallinnon ja toimintojen sovellusasiakkaille](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Siirry sitten ympäristön käyttöönottoon.
+Kun projektin perehdytys on valmis, voit tarkistaa LCS:n lisäominaisuudet, jotka on kuvattu kohdassa [Lifecycle Services (LCS) talous- ja toimintosovellusten asiakkaille](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Siirry sitten ympäristön käyttöönottoon.
 
-- Voit ottaa Microsoftin hallitsemia ympäristöjä käyttöön LCS:n kautta noudattamalla kohdan [Lifecycle Services (LCS) taloushallinnon ja toimintojen sovellusasiakkaille](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience) ohjeita.
+- Voit ottaa Microsoftin hallitsemia ympäristöjä käyttöön LCS:n kautta noudattamalla kohdan [Lifecycle Services (LCS) talous- ja toimintosovellusten asiakkaille](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience) ohjeita.
 - Lisätietoja pilvipalvelussa ylläpidetyistä ympäristöistä on kohdassa [Kehitysympäristöjen käyttöönotto ja käyttö](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Sinun on myös suoritettava liittimien Resource Manager -perehdytysprosessi, kuten on kuvattu kohdassa [Azure Resource Manager -perehdytysprosessin suorittaminen Yhdysvaltain julkishallinnon Lifecycle Services -projekteille](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
@@ -84,3 +84,4 @@ Kyllä. Jos yhteistyökumppanisi käyttää ei-GCC-tunnistetietoja, tukilippu oh
 - [Pilvikäyttöönoton yleiskatsaus](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

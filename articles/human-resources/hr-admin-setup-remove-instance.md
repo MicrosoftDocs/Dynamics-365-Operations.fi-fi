@@ -1,6 +1,6 @@
 ---
 title: Poista esiintymä
-description: Tässä artikkelissa kerrotaan Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessista.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin testiversio- tai tuotantoympäristön poistoprosessia.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,16 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ce676c93e133cc04ad9c49417ed2ca0d6791e93
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859630"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178469"
 ---
 # <a name="remove-an-instance"></a>Poista esiintymä
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Kohde:** Human Resources itsenäisessä infrastruktuurissa_ 
+
+> [!NOTE]
+> Kesäkuusta 2022 alkaen uusia Human Resources -ympäristöjä ei voi valmistella erillisessä Human Resources -infrastruktuurissa, eikä siinä voi myöskään luoda uusia Microsoft Dynamics Lifecycle Services (LCS) -projekteja. Asiakkaat voiva ottaa Human Resources -ympäristöt voidaan käyttöön vain talous- ja toimintosovellusinfrastruktuurissa. Lisätietoja kohdassa [Human Resourcesin valmisteleminen talous- ja toimintosovellusinfrastruktuurissa](/hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Talous- ja toimintosovellusinfrastruktuuri tukee ympäristön poistoa. Lisätietoja ympäristön poistamisesta on kohdassa [Ympäristön poistaminen](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin testi- tai tuotantoympäristön poistoprosessia.
 
@@ -42,10 +48,13 @@ Aiemmin luotu testausympäristö poistetaan. Kun se on poistettu, voit tilata uu
 
 Artikkelissa oletetaan, että olet ostanut Human Resourcesin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. 
 
-Koska yksi Human Resources -ympäristö toimii yhden Power Apps-ympäristön sisällä, huomioon on otettava kaksi vaihtoehtoa. Ensimmäinen vaihtoehto poistaa koko Power Apps-ympäristön, ja toinen vaihtoehto vain Human Resources -sovelluksen. Ensimmäinen vaihtoehto on parempi, jos olet luonut Power Apps-ympäristön nimenomaan Human Resourcesin valmistelua varten ja olet vasta aloittanut käyttöönoton tai sinulla ei ole muodostettuja integraatioita. Toinen vaihtoehto on parempi, kun olet muodostanut Power Apps -ympäristön, johon täytettyjä monipuolisia tietoja hyödynnetään Power Apps- ja Power Automate -ratkaisuissa.
+Koska yksi Human Resources -ympäristö toimii yhden Power Apps-ympäristön sisällä, ympäristön poistamiseen on kaksi vaihtoehtoa: 
+- **Koko Power Apps -ympäristön poistaminen.** Tämä vaihtoehto on parempi, jos Power Apps-ympäristö luotiin nimenomaan Human Resourcesin valmistelua varten ja toteutus on vasta aloitettu tai vakiintuneita integraatioita ei ole.  
+- **Vain Human Resourcesin poistaminen.** Tämä vaihtoehto sopii tilanteissa, joissa kyse on vakiintuneesta Power Apps -ympäristöstä, johon on täytetty Microsoft Power Appsissa ja Power Automatessa käytettäviä tietoja.
+
 
 > [!Important]
-> Varmista ennen Power Apps-ympäristön poistamista, että sitä ei käytetä monipuolisissa tietojen integroinneissa Human Resources -sovelluksen ulkopuolella. Huomaa myös, että Power Apps-oletusympäristöjä ei voi poistaa. 
+> Varmista ennen Power Apps-ympäristön poistamista, että sitä ei käytetä Human Resources -sovelluksen ulkopuolisissa integroinneissa. Huomaa myös, että Power Apps-oletusympäristöjä ei voi poistaa. 
 
 Koko Power Apps-ympäristön poistaminen, mukaan lukien Human Resources ja siihen liittyvät sovellukset ja työnkulut:
 
@@ -73,7 +82,7 @@ Voit poistaa Human Resources -ympäristön aiemmin luodusta Power Apps-ympärist
 
 ## <a name="recover-a-soft-deleted-environment"></a>Alustavasti poistetun ympäristön palauttaminen
 
-Jos poistat Power Apps -ympäristön, johon Human Resources -ympäristö on yhdistetty, Human Resources -ympäristön tila Lifecycle Services -sovelluksessa on **Alustavasti poistettu**. Tässä tapauksessa käyttäjät eivät voi muodostaa yhteyttä Human Resources -sovellukseen.
+Jos poistat Power Apps -ympäristön, johon Human Resources -ympäristö on yhdistetty, Human Resources -ympäristön tila LCS:ssä on **Alustavasti poistettu**. Tässä tapauksessa käyttäjät eivät voi muodostaa yhteyttä Human Resources -sovellukseen.
 
 Voit palauttaa ympäristön seuraavasti:
 

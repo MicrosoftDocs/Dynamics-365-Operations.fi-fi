@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 00e536241710fc8a75158472688757320abf4247
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710354"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067205"
 ---
 # <a name="collections-in-accounts-receivable"></a>Perinnät myyntireskontrassa
 
@@ -65,7 +65,7 @@ Seuraavat luettelosivut ovat hyödyllisiä perintätietojen järjestämisessä.
 
 > [!NOTE]
 > Erääntymistilannevedos on luotava ennen kuin voit tarkastella kyseisten luettelosivujen tietoja. Näkyvissä ovat vain niiden asiakkaiden tiedot, joita varten on luotu erääntymistilannevedos. Luettelosivulla näkyvät tietueet voi suodattaa seuraavasti:
-> <li>Oletusarvoisesti Finance and Operationsin käyttäjällä on käyttöoikeus kaikkiin asiakkaisiin, joilla on erääntymistilannevedos.</li>
+> <li>Oletusarvoisesti talous- ja toimintosovellusten käyttäjällä on käyttöoikeus kaikkiin asiakkaisiin, joilla on erääntymistilannevedos.</li>
 > <li>Jos järjestelmässä on asiakaspooleja, käyttäjä on määritettävä perimisasiamieheksi voidakseen käyttää pooleja perinnän luettelosivun tietojen suodattamiseen. Tiedot rajoitetaan asiakkaisiin, jotka kuuluvat valittuun asiakaspooliin.</li>
 > <li>Jos käyttäjä on määritetty perimisasiamieheksi, ainoastaan kyseiselle perimisasiamiehelle valitut poolit ovat saatavilla luettelosivulla. Jos Anna edustajan tarkastella kaikkia asiakaspooleja -asetus on valittuna perimisasiamiehen Perimisasiamies-sivulla, kyseinen edustaja voi käyttää kaikkia pooleja.</li>
 
@@ -110,3 +110,4 @@ Voit käsitellä NSF-maksuja napsauttamalla Perintä-sivulla NSF-maksu -kohtaa. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

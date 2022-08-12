@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d05403113c9b178553134ce1a9066bb2acf59b0f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868515"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068102"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Finance Insightsin määritys – versio 10.0.20 ja myöhempi
 
@@ -38,7 +38,7 @@ Finance Insights yhdistää Microsoft Dynamics 365 Financen toiminnot Dataversen
 
 Määritä ympäristöt näiden ohjeiden avulla.
 
-1. Luo tai päivitä Finance-ympäristö Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa. Ympäristö edellyttää taloushallinnon ja toimintojen sovellusten sovellusversiota 10.0.20 tai uudempaa.
+1. Luo tai päivitä Finance-ympäristö Microsoft Dynamics Lifecycle Services (LCS) -sovelluksessa. Ympäristö edellyttää talous- ja toimintosovellusten sovellusversiota 10.0.20 tai uudempaa.
 2. Ympäristön on oltava korkean käytettävyyden ympäristö eristysympäristössä. (Tämä ympäristötyyppi tunnetaan myös tason 2 ympäristönä.) Lisätietoja on kohdassa [Ympäristön suunnittelu](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Jos olet konfiguroimassa Finance Insightsia eristysympäristössä, tuotantotiedot on ehkä kopioitava tähän ympäristöön, jotta ennusteet toimisivat. Ennustemallissa käytetään useiden vuosien tietoja ennusteiden luomiseen. Contoso-esittelytiedot eivät sisällä riittävästi historiatietoja ennustemallin kouluttamiseen. 
 
@@ -126,7 +126,7 @@ Jos et löydä ainoatakaan edellisistä sovelluksista, kokeile alla mainittuja v
         - **Suorituskyky** – Suorituskyvyn arvoksi kannattaa valita **Standardi**.
         - **Tilin tyyppi** – Valitse **TallennustilaV2**.
 
-    3. Valitse **Data Laken tallennustila Gen2** -asetuksen **Lisäasetukset**-valintaikkunassa **Ota käyttöön** **Hierarkkiset nimitilat**-toiminnon alla. Jos et ota tätä toimintoa käyttöön, et voi käyttää taloushallinnon ja toimintojen sovellusten kirjoittamia tietoja käyttämällä palveluita, kuten Power BI:n tiedonkulkuja.
+    3. Valitse **Data Laken tallennustila Gen2** -asetuksen **Lisäasetukset**-valintaikkunassa **Ota käyttöön** **Hierarkkiset nimitilat**-toiminnon alla. Jos et ota tätä toimintoa käyttöön, et voi käyttää talous- ja toimintosovellusten kirjoittamia tietoja käyttämällä palveluita, kuten Power BI:n tietovoita.
     4. Valitse **Tarkista ja luo**. Kun käyttöönotto on valmis, uusi resurssi näkyy Azure-portaalissa.
     5. Siirry luotuun tallennustiliin.
     6. Valitse vasemmanpuoleisessa valikossa **Käyttöoikeusavaimet**.
@@ -755,3 +755,4 @@ Apuohjelman asentaminen voi kestää useita minuutteja.
 Lähetä sähköpostiviesti [Finance Insights](mailto:fiap@microsoft.com) -tiimille, jos haluat antaa palautetta tai tarvitset tukea.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

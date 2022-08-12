@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851948"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108853"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 
@@ -98,7 +98,7 @@ Oletetaan, että olet aloittanut uuden ER-ratkaisun suunnittelun, joka luo toimi
 
 Oletetaan, että olet suunnitellut ER-ratkaisun ensimmäisen version. Nyt haluat testata sitä esiintymässäsi ja analysoida suorituskykyä.
 
-### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER-konfiguraation tuominen RCI:sta Finance and Operationsiin
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>ER-määritysten tuonti RCS:stä talous- ja toimintosovelluksiin
 
 1. Kirjaudu sisään sovelluksen esiintymään.
 2. Tämän opetusohjelman avulla voit tuoda konfiguraatiot RCS-esiintymästäsi (jossa suunnittelet ER-komponentteja) esiintymääsi (jossa testaat ja lopulta käytät niitä). Siksi on varmistettava, että kaikki vaaditut tiedot on valmisteltu. Ohjeita on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](rcs-download-configurations.md).
@@ -305,7 +305,7 @@ Voi myös olla hyödyllistä vähentää LedgerTransTypeList-tietolähteeseen te
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Tuo muokattu ER-mallin yhdistämismääritys RCS:stä sovellukseen
 
-Toista tämän artikkelin [Tuo ER-konfiguraatio RCS:stä Finance and Operationsiin](#import-configuration) -osassa kuvatut vaiheet tuodaksesi **Suorituskyvyn jäljityskartoitus** -konfiguraation version 1.2.
+Toista tämän artikkelin [ER-määrityksen tuonti RCS:stä talous- ja toimintosovelluksiin](#import-configuration) -osassa kuvatut vaiheet tuodaksesi **Suorituskyvyn jäljityskartoitus** -määritysten versio 1.2.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Muokatun ER-ratkaisun suorittaminen jäljityksen suorittamista varten
 
@@ -363,7 +363,7 @@ Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedost
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Tietokantakyselyjä sisältävän suorituksen jäljityksen tarkastelemisen arviointi ulkoisilla työkaluilla
 
-ER-kehykseen tehtyjen parannusten ansiosta PerfView-muodossa luotu suorituskyvyn jäljitys sisältää nyt enemmän tietoja ER-muodon suorittamisesta. Microsoft Dynamics 365 for Finance and Operations -versiossa 10.0.4 (heinäkuu 2019) tämä jäljitys voi sisältää myös tietoja suoritetuista sovellustietokannan SQL-kyselyistä.
+ER-kehykseen tehtyjen parannusten ansiosta PerfView-muodossa luotu suorituskyvyn jäljitys sisältää nyt enemmän tietoja ER-muodon suorittamisesta. Microsoft Dynamics 365 Financen versiossa 10.0.4 (heinäkuu 2019) tämä jäljitys voi sisältää myös tietoja suoritetuista sovellustietokannan SQL-kyselyistä.
 
 ### <a name="configure-user-parameters"></a>Konfiguroi käyttäjäparametrit
 
@@ -392,3 +392,4 @@ Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedost
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

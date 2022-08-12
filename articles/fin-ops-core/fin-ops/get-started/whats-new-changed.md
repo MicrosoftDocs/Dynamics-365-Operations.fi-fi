@@ -1,6 +1,6 @@
 ---
-title: Taloushallinnon ja toimintojen sovellusten aloitussivun uudet ominaisuudet ja muutokset
-description: Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien taloushallinnon ja toimintojen sovellusten uusista ominaisuuksista.
+title: Talous- ja toimintosovellusten aloitussivun uudet ominaisuudet ja muutokset
+description: Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien talous- ja toimintosovellusten uusista ominaisuuksista.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0dc3b9b39fb5cb3aaae1247f0229d802410ea5f8
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908224"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125113"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Taloushallinnon ja toimintojen sovellusten aloitussivun uudet ominaisuudet ja muutokset
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Talous- ja toimintosovellusten aloitussivun uudet ominaisuudet ja muutokset
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="application-releases"></a>Sovelluksen versiot
 
-Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua taloushallinnon ja toimintojen sovelluksen jokaisessa versiossa on.
+Seuraavissa ohjeaiheissa on tietoja siitä, mitä uutta tai muutettua talous- ja toimintosovelluksen jokaisessa versiossa on:
 
 - **Finance:** [Dynamics 365 Financen uudet ja muuttuneet ominaisuudet](../../../finance/get-started/whats-new-home-page.md)
 - **Human Resources (yhdistetty infrastruktuuri):**[Uutta tai muuttunutta Microsoft Dynamics 365 Human Resourcesissa](../../../human-resources/get-started/hr-whats-new-changed-10-0-26.md)  
@@ -47,7 +47,7 @@ Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua erillises
 
 ## <a name="platform-updates"></a>Ympäristön päivitykset
 
-Lisätietoja taloushallinnon ja toimintojen sovellusten ympäristöpäivitysten uusista tai muuttuneesta päivityksistä on seuraavassa artikkelissa:
+Lisätietoja talous- ja toimintosovellusten ympäristöpäivitysten uusista tai muuttuneesta päivityksistä on seuraavassa artikkelissa:
 
 - [Platform-päivitysten uudet ja muuttuneet ominaisuudet](../../dev-itpro/get-started/whats-new-home-page.md)
 
@@ -60,3 +60,4 @@ Seuraavassa artikkelissa on tietoja siitä, mitä uutta tai muutettua Lifecycle 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

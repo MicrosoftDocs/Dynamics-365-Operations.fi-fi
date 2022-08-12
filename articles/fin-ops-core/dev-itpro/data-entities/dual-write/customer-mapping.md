@@ -1,6 +1,6 @@
 ---
 title: Integroidut asiakkaan päätiedot
-description: Tässä artikkelissa kuvataan asiakastietojen integraatiota Finance and Operationsin ja Dataversen välillä.
+description: Tässä artikkelissa kuvataan asiakastietojen integraatiota talous- ja toimintosovellusten sekä Dataversen välillä.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890453"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111721"
 ---
 # <a name="integrated-customer-master"></a>Integroidut asiakkaan päätiedot
 
@@ -30,9 +30,9 @@ Asiakastietoja voidaan hallita useammassa kuin yhdessä Dynamics 365 -sovellukse
 
 ![Asiakastietojen virta.](media/dual-write-customer-data-flow.png)
 
-Asiakkaat voidaan luokitella laajasti kahteen eri luokkaan: kaupalliset/organisaation asiakkaat ja kuluttajat/loppukäyttäjät. Nämä kaksiasiakas tyyppiä tallennetaan ja käsitellään eri tavalla Finance and Operationsissa ja Dataversessa.
+Asiakkaat voidaan luokitella laajasti kahteen eri luokkaan: kaupalliset/organisaation asiakkaat ja kuluttajat/loppukäyttäjät. Nämä kaksiasiakas tyyppiä tallennetaan ja käsitellään eri tavalla talous- ja toimintosovelluksissa ja Dataversessa.
 
-Finance and Operationsissa sekä kaupalliset/organisaation asiakkaat että kuluttajat/loppukäyttäjät hallittaan yhdessä taulukossa, jonka nimi on **CustTable** (CustCustomerV3Entity), ja ne luokitellaan **Tyyppi**-määritteen avulla. (Jos **tyypiksi** on määritetty **Organisaatio**, asiakas on kaupallinen/organisaation asiakas ja jos **tyypiksi** on määritetty **Henkilö**, asiakas on kuluttaja/loppukäyttäjä.) Ensisijaisen yhteyshenkilön tietoja käsitellään SMMContactPersonEntity-taulukossa.
+Talous- ja toimintosovelluksissa sekä kaupalliset/organisaation asiakkaat että kuluttajat/loppukäyttäjät hallittaan yhdessä taulukossa, jonka nimi on **CustTable** (CustCustomerV3Entity), ja ne luokitellaan **Tyyppi**-määritteen avulla. (Jos **tyypiksi** on määritetty **Organisaatio**, asiakas on kaupallinen/organisaation asiakas ja jos **tyypiksi** on määritetty **Henkilö**, asiakas on kuluttaja/loppukäyttäjä.) Ensisijaisen yhteyshenkilön tietoja käsitellään SMMContactPersonEntity-taulukossa.
 
 Dataversessa kaupallisia/organisaation asiakkaita hallitaan Asiakas-taulukossa ja heidät tunnistetaan asiakkaiksi, kun **RelationshipType** -määritteeksi on määritetty **Asiakas**. Yhteyshenkilö-taulukko edustaa sekä kuluttajia/loppukäyttäjiä että yhteyshenkilöitä. Jotta kuluttajan/loppukäyttäjän ja yhteyshenkilön välillä olisi selvä ero **Yhteyshenkilö** taulukossa on **Myytävissä**-niminen totuusarvomerkintä. Kun **Myytävissä**-arvo on **Tosi**, kontakti on kuluttaja/loppukäyttäjä ja tarjouksia ja tilauksia voidaan luoda kyseiselle kontaktille. Kun **Myytävissä**-arvo **Epätosi**, kontakti on vain asiakkaan ensisijainen yhteyshenkilö.
 
@@ -57,3 +57,4 @@ Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset  
 [Maksuehdot](mapping-reference.md#161) | msdyn_paymentterms | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksuehtojen (maksuehdot) viitetiedot.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

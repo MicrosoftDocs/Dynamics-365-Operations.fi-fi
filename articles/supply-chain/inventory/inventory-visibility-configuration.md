@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895812"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066667"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibilityn määrittäminen
 
@@ -55,7 +55,7 @@ Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominai
 | *OnHandMostSpecificBackgroundService* | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Tämä valinnainen ominaisuus ottaa käyttöön käytettävissä olevan vaihtoaikataulun ja luvattavissa olevan määrän (ATP) ominaisuudet. Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulu ja luvattavissa ole aikataulu](inventory-visibility-available-to-promise.md). |
 | *Varaus* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys voi mahdollistaa varaston suojauksen (ringfencing) ja ylimyynnin hallinnan. Lisätietoja on kohdassa [Varaston näkyvyyden varaston kohdistus](inventory-visibility-allocation.md). |
-| *Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys tukee nimikkeitä, jotka on otettu käyttöön varaston lisäprosesseissa (WHS-nimikkeet). Lisätietoja on kohdassa [Varaston näkyvyyden tuki WHS-nimikkeille](inventory-visibility-whs-support.md). |
+| *Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys tukee nimikkeitä, jotka on otettu käyttöön varastonhallintaprosesseissa (WMS). Lisätietoja on kohdassa [Varaston näkyvyyden tuki WMS-nimikkeille](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Palvelun päätepisteen etsiminen
 
@@ -63,7 +63,7 @@ Jos oikea varaston näkyvyyspalvelun päätepiste ei ole tiedossa, avaa **Määr
 
 ## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Tietolähteen määritykset
 
-Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365 talous- ja toimintosovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
+Kukin tietolähde ilmaisee järjestelmän, josta tiedot tulevat. Esimerkkejä tietolähteiden nimistä ovat `fno` (eli Dynamics 365:n talous- ja toimintosovellukset) ja `pos` (eli myyntipiste). Supply Chain Management määritetään oletusarvoisesti varaston näkyvyyssovelluksen oletustietolähteeksi (`fno`).
 
 > [!NOTE]
 > `fno`-tietolähde on varattu Supply Chain Managementia varten. Jos varaston näkyvyyden lisäosa on integroitu Supply Chain Management -ympäristöön, on suositeltavaa, ettei `fno`-tietolähteeseen liittyviä konfiguraatioita poisteta.
@@ -809,3 +809,4 @@ Seuraavassa taulukossa on varauksen oletushierarkia.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

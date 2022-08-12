@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 46f6db3dd9942131b379216e6fffe5551d6c8fc3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860635"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068028"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrointi kolmannen osapuolen tuotannonohjausjärjestelmiin
 
@@ -252,9 +252,10 @@ Sen jälkeen kun MES on lähettänyt sanoman Supply Chain Managementiin, Supply 
 Näissä tilanteissa voidaan hyödyntää Supply Chain Managementin vakiohälytysominaisuutta. Lisätietoja vakiohälytysten käytöstä on seuraavissa resursseissa:
 
 - Ohjeartikkeli: [Hälytysten yleiskuvaus](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
-- Video: [Dynamics 365 for Finance and Operationsin hälytyssääntövaihtoehdot](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
+- Video: [Talous- ja toimintosovellusten hälytyssääntövaihtoehdot](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Esimerkiksi seuraavat hälytykset voidaan määrittää antamaan palautetta sanoman tilasta:
 
 - Luo liiketoimintapahtuma (Lähetä ulkoisesti), jota käytetään, kun sanoman tila on *Epäonnistui*.
 - Lähetä ilmoitus ja sähköpostiviesti IT-järjestelmänvalvojalle tai tuotannon esimiehelle.
+

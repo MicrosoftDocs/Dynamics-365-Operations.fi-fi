@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867409"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103969"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
@@ -53,7 +53,7 @@ Voit ottaa käyttöön Dynamics 365 Finance + Operations (on-premises) -ratkaisu
 - [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Asiakirjan luonti, julkaiseminen ja tulostaminen paikallisissa ympäristöissä](../analytics/printing-capabilities-on-premises.md)
 - [Välityspalvelimien määrittäminen paikallisiin ympäristöihin](onprem-reverseproxy.md)
-- [Finance and Operations -sovellusten teknisen tuen määrittäminen](../lifecycle-services/support-experience.md)
+- [Talous- ja toimintosovellusten teknisen tuen määrittäminen](../lifecycle-services/support-experience.md)
 - [Asiakasohjelman Internet-yhteys](../user-interface/client-disconnected.md)
 - [Päivitysten käyttöönotto paikallisissa ympäristöissä](apply-updates-on-premises.md)
 - [Käyttöönotto uudelleen paikallisissa ympäristöissä](redeploy-on-prem.md)
@@ -73,9 +73,10 @@ Voit ottaa käyttöön Dynamics 365 Finance + Operations (on-premises) -ratkaisu
 - [Komentosarjat, joilla voidaan ratkaista paikallisten ympäristöjen ongelmia](onprem-tsg-implementations.md)
 - [Varmenteiden kierrättäminen](certificate-rotation-on-prem.md)
 - [Paikallisten ympäristöjen diagnostiikka](on-premises-diagnostics.md)
-- [Finance and Operationsin poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md)
+- [Talous- ja toimintosovellusten poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md)
 - [Ohjelmiston elinkaarikäytäntö ja paikalliset versiot](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

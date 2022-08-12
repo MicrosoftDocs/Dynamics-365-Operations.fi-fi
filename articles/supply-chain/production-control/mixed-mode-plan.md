@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 186dcdca9d6db5ca16d84f084c66700ddfe8bb5d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 335bdc9690b3111f4a04adc7e82d62de36ff4caf
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857428"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065985"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Monijärjestelmäsuunnittelu: erillisen, prosessi- ja Lean-hankinnan yhdistäminen
 
@@ -33,7 +33,7 @@ Voit valita tuotteen tarjoamiselle yleisen strategian tuoterakenteesta riippumat
 
 Sinulla voi esimerkiksi olla kokoonpanossa kanban-ohjaus, jossa materiaalit hankitaan kokoonpanoalueelle tuotantotilausten, kanbaneiden, siirtojen, erätilausten tai minkä tahansa muun toimitusketjusi ominaisuuksiin soveltuvan yhdistelmän perusteella, mutta sinulla on silti täysi näkyvyys kaikkiin toimittajiin. Tämä ominaisuus johtaa optimoituihin toimitusketjun prosesseihin ja parannettuun toimitusketjuasi koskevaan näkyvyyteen.  
 
-Toimituskäytäntöjen pääajoituksessa käytettävä rakeisuus riippuu kattavuusdimensioina käyttöön otetuista varastodimensioista. Kun haluat ottaa käyttöön pääajoituksen ohjaamaan erityyppisten sijaintien täydennystä ja toimituksia (esimerkiksi erottamalla tuotannon eri tuotantoyksiköihin tai erottamalla erityyppisten materiaalien ja valmiiden tuotteiden varastot), suosittelemme, että otat käyttöön Toimipaikka ja varasto -asetuksen kattavuusdimensioina. Vaihtoehtoisesti, Varasto voidaan jättää pois kattavuusdimensioista. Siinä tapauksessa, käyttäessäsi varastonhallinnan lisätoimintoja, kaikkia varaston sisäisiä siirtoja ohjaa varastossa tehtävä työ, kun taas kaikkia varastojen välisiä siirtoja ohjaavat otto-kanbanit.
+Toimituskäytäntöjen pääajoituksessa käytettävä rakeisuus riippuu kattavuusdimensioina käyttöön otetuista varastodimensioista. Kun haluat ottaa käyttöön pääajoituksen ohjaamaan erityyppisten sijaintien täydennystä ja toimituksia (esimerkiksi erottamalla tuotannon eri tuotantoyksiköihin tai erottamalla erityyppisten materiaalien ja valmiiden tuotteiden varastot), suosittelemme, että otat käyttöön Toimipaikka ja varasto -asetuksen kattavuusdimensioina. Vaihtoehtoisesti, Varasto voidaan jättää pois kattavuusdimensioista. Siinä tapauksessa varastonhallintaprosesseja (WMS) käytettäessä kaikkia varaston sisäisiä siirtoja ohjaa varastossa tehtävä työ, kun taas kaikkia varastojen välisiä siirtoja ohjaavat otto-kanbanit.
 
 ## <a name="supply-policies"></a>Toimituskäytännöt
 Monijärjestelmäsuunnittelu ohjaa sitä, miten tuote toimitetaan, ja miten toimituksen perusteella johdetut tarpeet (nimikkeiden kulutus tuoterakenteesta \[BOM\]) luodaan. Järjestelmä hankkii automaattisesti tarpeita vastaavat materiaalit tilaustyypin perusteella.  

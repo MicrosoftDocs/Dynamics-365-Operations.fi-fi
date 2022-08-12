@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0b8723da9b80d007cd0a3196affdfa854eff095f
+ms.sourcegitcommit: 45bb77244a31fa174adf85d1b54e9700109ca0c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847597"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9198377"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje
 
@@ -107,7 +107,7 @@ Voit jatkaa tallennusistuntoa keskeytyksen jälkeen, kun valitset **Jatka**.
 Tehtävien tallennustoiminto voi tallentaa Retail Modern POS -käyttöliittymän näyttökuvia liiketoimintaprosessin tallennuksen aikana. Voit ottaa näyttökuvatoiminnon käyttöön määrittämällä **Tallenna näyttökuvia** -asetukseksi **Kyllä** ja tekemällä tallenteen. Kun tallenne on valmis, valitse **Pysäytä** ja lataa Word-asiakirja. Asiakirja sisältää vaiheet ja liittyvät näyttökuvat.
 
 > [!NOTE]
-> Näyttökuvien tallennustoimintoa ei tueta pilvimyyntipisteessä.
+> Näyttökuvan sieppaustoimintoa ei tueta Store Commercessa, Commerce Modern POS:ssä ja Cloud POS:ssä.
 
 ### <a name="start-task-and-end-task"></a>Tehtävän aloittaminen ja lopettaminen
 

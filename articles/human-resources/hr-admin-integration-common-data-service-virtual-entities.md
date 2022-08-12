@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0154faec8a9f3e968ea1b665e2a815cc9ec02379
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45155dba5063981eb3aeeed4dda1d79a57b7c8af
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899727"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067095"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Määritä Dataverse-virtuaalitaulukot
 
@@ -121,10 +121,10 @@ Seuraavaksi määritetään virtuaalitaulukon tietolähde Power Apps -ympärist�
 
 4. Valitse **Ratkaisun kunnon keskus** -kohdassa **Erikoishaku**-kuvake sovellussivun oikeassa yläkulmassa.
 
-5. Valitse **Erikoishaku**-sivun avattavassa **Etsi**-luettelossa **Taloushallinnon ja toimintojen virtuaalitietolähteen määritykset**.
+5. Valitse **Erikoishaku**-sivun avattavassa **Etsi**-luettelossa **Talous- ja toimintosovellusten virtuaalitietolähteen määritykset**.
 
    > [!NOTE]
-   > Virtuaalitaulusovelluksen asentaminen edellisestä asennusvaiheesta voi kestää muutaman minuutin. Jos **Taloushallinnon ja toimintojen virtuaalitietolähteen määritykset** eivät ole käytettävissä luettelossa, odota minuutti ja päivitä luettelo.
+   > Virtuaalitaulusovelluksen asentaminen edellisestä asennusvaiheesta voi kestää muutaman minuutin. Jos **Talous- ja toimintosovellusten virtuaalitietolähteen määritykset** eivät ole käytettävissä luettelossa, odota minuutti ja päivitä luettelo.
 
 6. Valitse **Tulokset**.
 
@@ -218,3 +218,4 @@ Esiin tulevassa ruudussa näkyy prosessin viimeksi suoritetut tulokset. Voit tar
 [Yleiskatsaus sovellusten luonnista Power Appsissa](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

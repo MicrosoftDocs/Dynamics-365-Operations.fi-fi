@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a420c5b2a036ac63a1a179f93462d152c3941fda
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853614"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124221"
 ---
 # <a name="create-alert-rules"></a>Hälytyssääntöjen luominen
 
@@ -75,7 +75,7 @@ Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytystapa**-pikavälil
 
 ## <a name="alerts-as-business-events"></a>Hälytykset liiketoimintatapahtumina
 
-Hälytyksiä voidaan lähettää ulkoisesti liiketoimintatapahtuman kehyksen avulla. Kun luot hälytyksen, määritä **Organisaation laajuinen** -kohdan arvoksi **Ei** ja **Lähetä ulkoisesti** -kohdan arvoksi **Kyllä**. Kun hälytys käynnistää liiketoimintatapahtuman, voit käynnistää Power Automaten luoman työnkulun käyttämällä **Kun liiketoimintatapahtuma ilmenee** -käynnistimen Finance and Operations -yhdistimessä tai lähettää tapahtuman liiketoimintatapahtumien päätepisteeseen **Liiketoimintatapahtumien luettelo** -kohdan avulla.
+Hälytyksiä voidaan lähettää ulkoisesti liiketoimintatapahtuman kehyksen avulla. Kun luot hälytyksen, määritä **Organisaation laajuinen** -kohdan arvoksi **Ei** ja **Lähetä ulkoisesti** -kohdan arvoksi **Kyllä**. Kun hälytys käynnistää liiketoimintatapahtuman, voit käynnistää Power Automaten luoman työnkulun käyttämällä **Kun liiketoimintatapahtuma ilmenee** -käynnistimen talous- ja toimintosovellusten yhdistimessä tai lähettää tapahtuman liiketoimintatapahtumien päätepisteeseen **Liiketoimintatapahtumien luettelo** -kohdan avulla.
 
 ## <a name="create-an-alert-rule"></a>Luo hälytyssääntö
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef392fd744a68c54bc0438152b3487233ac5c7f3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905570"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070346"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
@@ -123,13 +123,13 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 <td>Siirtotilausnimikkeen vastaanotto</td>
 <td>Rekisteröi nimikkeen määrän vastaanotto ja luo hyllytystyö toiselle työntekijälle.
 
-<strong>Huomautus:</strong> Käytä tätä vaihtoehtoa vain, jos nimikkeet on lähetetty varastosta, jolle ei ole aktivoitu varastonhallintaprosesseja.</td>
+<strong>Huomautus:</strong> Käytä tätä vaihtoehtoa vain, jos nimikkeet on lähetetty varastosta, jolle ei ole aktivoitu varastonhallintaprosesseja (WMS).</td>
 </tr>
 <tr>
 <td>Siirtotilausnimikkeen vastaanotto ja poispano</td>
 <td>Rekisteröi nimikkeen määrän vastaanotto ja pane nimikkeet pois. Sama työntekijä suorittaa molemmat toiminnot.
 
-<strong>Huomautus:</strong> Käytä tätä vaihtoehtoa vain, jos nimikkeet on lähetetty varastosta, jolle ei ole aktivoitu varastonhallintaprosesseja.</td>
+<strong>Huomautus:</strong> Käytä tätä vaihtoehtoa vain, jos nimikkeet on lähetetty varastosta, jolle ei ole aktivoitu varastonhallintaprosesseja (WMS).</td>
 </tr>
 <tr>
 <td>Siirtotilausrivin vastaanotto</td>

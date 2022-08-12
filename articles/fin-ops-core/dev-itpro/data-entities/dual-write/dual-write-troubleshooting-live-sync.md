@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1211f7da15686f1c55a4c942f04c73d671e0ba6b
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896702"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111423"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-synkronoinnin ongelmien vianmääritys
 
@@ -22,14 +22,14 @@ ms.locfileid: "8896702"
 
 
 
-Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten ja Microsoft Dataversen välillä. Erityisesti se tarjoaa tietoja, joiden avulla voit korjata ongelmia suoralla synkronoinnilla.
+Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten sekä Microsoft Dataversen välillä. Erityisesti se tarjoaa tietoja, joiden avulla voit korjata ongelmia suoralla synkronoinnilla.
 
 > [!IMPORTANT]
 > Jotkin tämän artikkelin osa-alueet saattavat edellyttää joko järjestelmänvalvojan roolia tai Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tiettyjä tunnistetietoja.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Live-synkronointi näyttää virheen, kun rivi luodaan
 
-Näyttöön saattaa tulla seuraava virhesanoma, kun luot rivin taloushallinnon ja toimintojen sovelluksessa:
+Näyttöön saattaa tulla seuraava virhesanoma, kun luot rivin talous- ja toimintosovelluksessa:
 
 *\[{\\"virhe\\":{\\"koodi\\":\\"0x80072560\\",\\"viesti\\":\\"Käyttäjä ei ole organisaation jäsen.\\"}}\], Etäpalvelin palautti virheen: (403) Kielletty."}}".*
 
@@ -39,27 +39,27 @@ Voit korjata ongelman noudattamalla [Järjestelmän vaatimukset ja edellytykset]
 
 **Ongelman korjaamiseen tarvittava rooli:** Järjestelmänvalvoja
 
-Näyttöön saattaa tulla seuraava virhesanoma, kun yrität tallentaa taulukkotietoja taloushallinnon ja toimintojen sovelluksessa:
+Näyttöön saattaa tulla seuraava virhesanoma, kun yrität tallentaa taulukkotietoja talous- ja toimintosovelluksessa:
 
 *Muutoksia ei voi tallentaa tietokantaan. Työyksikkö ei voi sitoutua tapahtumaan. Tietoja ei voi kirjoittaa yksikön mittayksikköön. Kirjoitukset UnitOfMeasureEntity-kohtaan epäonnistuivat ja näkyviin tuli virhesanoma Ei voi synkronoida mittayksikön kanssa.*
 
-Voit korjata ongelman varmistamalla, että sekä taloushallinnon ja toimintojen sovelluksessa että Dataversessä on tarvittavat viitetiedot. Jos esimerkiksi asiakastietue kuuluu tiettyyn asiakasryhmään, varmista, että asiakasryhmätietue on olemassa Dataversessä.
+Voit korjata ongelman varmistamalla, että sekä talous- ja toimintosovelluksessa että Dataversessä on tarvittavat viitetiedot. Jos esimerkiksi asiakastietue kuuluu tiettyyn asiakasryhmään, varmista, että asiakasryhmätietue on olemassa Dataversessä.
 
 Jos molemmissa sijainnissa on tietoja ja olet vahvistanut, että ongelma ei liity tietoihin, toimi seuraavasti.
 
-1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Lisäosan käyttöä varten on otettava käyttöön suunnittelutila taloushallinnon ja toimintojen Excel-lisäosassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
+1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Apuohjelman käyttöä varten on otettava käyttöön suunnittelutila talous- ja toimintosovellusten Excel-apuohjelmassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
 2. Valitse ja poista tietueet, joissa on ongelmia kaksoiskirjoituksen yhdistämismäärityksessä ja projektissa. Jokaista kaksoiskirjoituksen yhdistämismääritystä kohden on kaksi tietuetta.
 3. Julkaise muutokset Excel-lisäosan avulla. Tämä vaihe on tärkeä, koska se poistaa tietueet yksiköstä ja sen pohjana olevista taulukoista.
 
-## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Luku- tai kirjoitusoikeusvirheiden käsitteleminen taloushallinnon ja toimintojen sovelluksen tietojen luonnin yhteydessä
+## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Luku- tai kirjoitusoikeusvirheiden käsitteleminen talous- ja toimintosovelluksen tietojen luonnin yhteydessä
 
-Näyttöön saattaa tulla virheellisestä pyynnöstä ilmoittava virhesanoma, kun luot tietoa taloushallinnon ja toimintojen sovelluksessa.
+Näyttöön saattaa tulla virheellisestä pyynnöstä ilmoittava virhesanoma, kun luot tietoja talous- ja toimintosovelluksessa.
 
 ![Esimerkki virheellisen pyynnön virhesanomasta.](media/error_record_id_source.png)
 
 Ongelman korjaaminen edellyttää puuttuvan oikeuden käyttöön ottamista määrittämällä oikea käyttöoikeusrooli yhdistetyn Dynamics 365 Sales- tai Dynamics 365 Customer Service -liiketoimintayksikköjen ryhmälle.
 
-1. Etsi taloushallinnon ja toimintojen sovelluksessa liiketoimintayksikkö, joka on yhdistetty tietojen integroinnin yhteysjoukkoon.
+1. Etsi talous- ja toimintosovelluksessa liiketoimintayksikkö, joka on yhdistetty tietojen integroinnin yhteysjoukkoon.
 
     ![Organisaation yhdistämismääritys.](media/mapped_business_unit.png)
 
@@ -77,7 +77,7 @@ Ongelman korjaaminen edellyttää puuttuvan oikeuden käyttöön ottamista mää
 
 **Ongelman korjaamiseen tarvittava rooli:** Järjestelmänvalvoja
 
-Näyttöön saattaa tulla seuraava virhesanoma, kun luot tietoja taloushallinnon ja toimintojen sovelluksessa:
+Näyttöön saattaa tulla seuraava virhesanoma, kun luot tietoja talous- ja toimintosovelluksessa:
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Hyötykuormaa ei voida luoda yksikölle CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Hyötykuorman luonti epäonnistui, väärä URI: URI on tyhjä."}\],"isErrorCountUpdated":true}*
 
@@ -85,19 +85,19 @@ Virhesanoma näyttää tältä asiakasvuorovaikutussovelluksessa:
 
 > Odottamaton virhe ISV-koodista. (ErrorType = ClientError) Odottamaton poikkeus laajennuksesta (Suorita): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: yksikön tilin käsittely epäonnistui - (yhteysyritys epäonnistui, koska yhdistetty osapuoli ei vastannut oikein tietyn ajanjakson jälkeen tai muodostettu yhteys epäonnistui, koska liitetty isäntä ei vastannut.
 
-Tämä virhe ilmenee, jos Dataverse-ympäristö palautetaan virheellisesti, kun yrität luoda tietoja taloushallinnon ja toimintojen sovelluksessa.
+Tämä virhe ilmenee, jos Dataverse-ympäristö palautetaan virheellisesti, kun yrität luoda tietoja talous- ja toimintosovelluksessa.
 
 > [!IMPORTANT]
 > Jos olet linkittänyt ympäristöt uudelleen, sinun on pysäytettävä kaikki yksikköjen yhdistämismääritykset, ennen kuin voit jatkaa korjaustoimia.
 
-Ongelman korjaamiseksi sinun on suoritettava toimenpiteitä sekä Dataversessä että taloushallinnon ja toimintojen sovelluksessa.
+Ongelman korjaamiseksi sinun on suoritettava toimenpiteitä sekä Dataversessä että talous- ja toimintosovelluksessa.
 
-1. Toimi taloushallinnon ja toimintojen sovelluksessa seuraavasti:
+1. Toimi talous- ja toimintosovelluksessa seuraavasti:
 
-    1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Lisäosan käyttöä varten on otettava käyttöön suunnittelutila taloushallinnon ja toimintojen Excel-lisäosassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
+    1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Apuohjelman käyttöä varten on otettava käyttöön suunnittelutila talous- ja toimintosovellusten Excel-apuohjelmassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
     2. Valitse ja poista tietueet, joissa on ongelmia kaksoiskirjoituksen yhdistämismäärityksessä ja projektissa. Jokaista kaksoiskirjoituksen yhdistämismääritystä kohden on kaksi tietuetta.
     3. Julkaise muutokset Excel-lisäosan avulla. Tämä vaihe on tärkeä, koska se poistaa tietueet yksiköstä ja sen pohjana olevista taulukoista.
-    4. Jos haluat estää virheet, kun linkität taloushallinnon ja toimintojen tai Dataversen ympäristöjä uudelleen, varmista, että kaksoiskirjoituksen määrityksiä ei ole jäljellä.
+    4. Jos haluat estää virheet, kun linkität talous- ja toimintosovellusten tai Dataversen ympäristöjä uudelleen, varmista, että kaksoiskirjoituksen määrityksiä ei ole jäljellä.
 
 2. Noudata Dataversessä näitä ohjeita:
 
@@ -108,12 +108,12 @@ Ongelman korjaamiseksi sinun on suoritettava toimenpiteitä sekä Dataversessä 
     5. Tarkastele määrityksiä valitsemalla **Tulokset**.
     6. Poista kaikki esiintymät.
 
-3. Toimi taloushallinnon ja toimintojen sovelluksessa seuraavasti:
+3. Toimi talous- ja toimintosovelluksessa seuraavasti:
 
-    1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Lisäosan käyttöä varten on otettava käyttöön suunnittelutila taloushallinnon ja toimintojen Excel-lisäosassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
+    1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Apuohjelman käyttöä varten on otettava käyttöön suunnittelutila talous- ja toimintosovellusten Excel-apuohjelmassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
     2. Valitse ja poista tietueet, joissa on ongelmia kaksoiskirjoituksen yhdistämismäärityksessä ja projektissa. Jokaista kaksoiskirjoituksen yhdistämismääritystä kohden on kaksi tietuetta.
     3. Julkaise muutokset Excel-lisäosan avulla. Tämä vaihe on tärkeä, koska se poistaa tietueet yksiköstä ja sen pohjana olevista taulukoista.
-    4. Jos haluat estää virheet, kun linkität taloushallinnon ja toimintojen tai Dataversen ympäristöjä uudelleen, varmista, että kaksoiskirjoituksen määrityksiä ei ole jäljellä.
+    4. Jos haluat estää virheet, kun linkität talous- ja toimintosovellusten tai Dataversen ympäristöjä uudelleen, varmista, että kaksoiskirjoituksen määrityksiä ei ole jäljellä.
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>Live-synkronoinnin virhe, kun koko tietokanta on kopioitu
 
@@ -189,9 +189,9 @@ while(qRun.next())
 }
 ```
 
-## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Taloushallinnon ja toimintojen sovellusten tietoja ei synkronoida Dataversen kanssa
+## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>Talous- ja toimintosovellusten tietoja ei synkronoida Dataversen kanssa
 
-Live-synkronoinnin aikana saattaa ilmetä ongelma, jossa vain osa tiedoista synkronoidaan taloushallinnon ja toimintojen sovelluksista Dataverseen tai tietoja ei synkronoida lainkaan.
+Live-synkronoinnin aikana saattaa ilmetä ongelma, jossa vain osa tiedoista synkronoidaan talous- ja toimintosovelluksista Dataverseen tai tietoja ei synkronoida lainkaan.
 
 > [!NOTE]
 > Tämä ongelma on korjattava kehityksen aikana.
@@ -200,13 +200,13 @@ Tarkista seuraavat edellytykset ennen ongelman korjaamisen aloittamista:
 
 + Varmista, että mukautetut muutokset on kirjoitettu yhteen tapahtuma-alueeseen.
 + Liiketoimintatapahtumat ja kaksoiskirjoituskehys eivät käsittele toimintoja `doinsert()`, `doUpdate()` tai `recordset()` eivätkä tietueita, joissa `skipBusinessEvents(true)` on merkittynä. Jos koodi on näiden toimintojen sisällä, kaksoiskirjoitusta ei käynnistetä.
-+ Liiketoimintatapahtumat on rekisteröitävä yhdistettyä tietolähdettä varten. Joissakin tietolähteissä käytetään ulkoliitosta, ja ne voivat olla merkittynä vain luettaviksi taloushallinnon ja toimintojen sovelluksissa. Näitä tietolähteitä ei seurata.
++ Liiketoimintatapahtumat on rekisteröitävä yhdistettyä tietolähdettä varten. Joissakin tietolähteissä käytetään ulkoliitosta, ja ne voivat olla merkittynä vain luettaviksi talous- ja toimintosovelluksissa. Näitä tietolähteitä ei seurata.
 + Muutokset tehdään vain, jos muutokset on tehty yhdistettyihin kenttiin. Muutokset muihin kuin yhdistettyihin kenttiin eivät käynnistä kaksoiskirjoitusta.
 + Varmista, että suodatinarvioinnit tuottavat kelvollisen tuloksen.
 
 ### <a name="troubleshooting-steps"></a>Vianmääritysvaiheet
 
-1. Tarkista kenttien yhdistämismääritykset kaksoiskirjoituksen järjestelmänvalvojan sivulta. Jos kenttää ei ole yhdistetty taloushallinnon ja toimintojen sovelluksista Dataverseen, sitä ei seurata. Seuraavassa kuvassa **Kuvaus**-kenttää seurataan Dataversessä, mutta ei taloushallinnon ja toimintojen sovelluksissa. Tähän kenttään taloushallinnon ja toimintojen sovelluksissa tehtäviä muutoksia ei seurata.
+1. Tarkista kenttien yhdistämismääritykset kaksoiskirjoituksen järjestelmänvalvojan sivulta. Jos kenttää ei ole yhdistetty talous- ja toimintosovelluksista Dataverseen, sitä ei seurata. Seuraavassa kuvassa **Kuvaus**-kenttää seurataan Dataversessä, mutta ei talous- ja toimintosovelluksissa. Tähän kenttään talous- ja toimintosovelluksissa tehtäviä muutoksia ei seurata.
 
     ![Seurattu kenttä.](media/live-sync-troubleshooting-1.png)
 
@@ -220,9 +220,9 @@ Tarkista seuraavat edellytykset ennen ongelman korjaamisen aloittamista:
 
 ### <a name="sample-scenario"></a>Esimerkkiskenaario
 
-Taloushallinnon ja toimintojen sovelluksissa on päivitetty yhteyshenkilötietueen osoitetta, mutta muutos ei synkronoidu Dataverseen. Tämä tapahtuu, koska missään **BusinessEventsDefinition**-taulukon tietueessa ei ole kulloisenkin taulukon ja yksikön yhdistelmää. Tarkemmin ottaen **LogisticsPostalAddress**-taulukko ei ole **smmContactpersonCDSV**-yksikön suora tietolähde. **smmContactpersonCDSV2Entity**-yksikön tietolähteenä on **smmContactPersonV2Entity** ja **smmContactPersonV2Entity**-yksiköllä vuorostaan tietolähteenä on **LogisticsPostalAddressBaseEntity**. **LogisticsPostalAddress**-taulukko on **LogisticsPostalAddressBaseEntity**-yksikön tietolähde.
+Talous- ja toimintosovelluksissa on päivitetty yhteyshenkilötietueen osoitetta, mutta muutos ei synkronoidu Dataverseen. Tämä tapahtuu, koska missään **BusinessEventsDefinition**-taulukon tietueessa ei ole kulloisenkin taulukon ja yksikön yhdistelmää. Tarkemmin ottaen **LogisticsPostalAddress**-taulukko ei ole **smmContactpersonCDSV**-yksikön suora tietolähde. **smmContactpersonCDSV2Entity**-yksikön tietolähteenä on **smmContactPersonV2Entity** ja **smmContactPersonV2Entity**-yksiköllä vuorostaan tietolähteenä on **LogisticsPostalAddressBaseEntity**. **LogisticsPostalAddress**-taulukko on **LogisticsPostalAddressBaseEntity**-yksikön tietolähde.
 
-Sama voi toistua erikoistilanteissa, kuten silloin, kun taloushallinnon ja toimintojen sovelluksissa muokattavaa taulukkoa ei ole selkeästi linkitetty yksikköön, joka sisältää sen. Esimerkiksi ensisijaiset osoitetiedot voidaan laskea **smmContactPersonCDSV2Entity**-yksikössä. Kaksoiskirjoituskehys yrittää määrittää, miten alitaulukon muutos yhdistetään takaisin yksikköihin. Yleensä tämä menetelmä riittää. Joissakin tapauksissa linkki on kuitenkin niin monimutkainen, että sen kanssa on oltava tarkka. Sinun on varmistettava, että asiaan liittyvän taulukon **RecId** on saatavilla suoraan yksikössä. Lisää sitten staattinen menetelmä taulukon seuraamiseksi muutosten osalta.
+Sama voi toistua erikoistilanteissa, kuten silloin, kun talous- ja toimintosovelluksissa muokattavaa taulukkoa ei ole selkeästi linkitetty yksikköön, joka sisältää sen. Esimerkiksi ensisijaiset osoitetiedot voidaan laskea **smmContactPersonCDSV2Entity**-yksikössä. Kaksoiskirjoituskehys yrittää määrittää, miten alitaulukon muutos yhdistetään takaisin yksikköihin. Yleensä tämä menetelmä riittää. Joissakin tapauksissa linkki on kuitenkin niin monimutkainen, että sen kanssa on oltava tarkka. Sinun on varmistettava, että asiaan liittyvän taulukon **RecId** on saatavilla suoraan yksikössä. Lisää sitten staattinen menetelmä taulukon seuraamiseksi muutosten osalta.
 
 Esimerkkinä tästä on tarkista **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()** -menetelmä. **CustCustomerV3entity** ja **VendVendorV2Entity** on mukautettu tämän tilanteen käsittelemiseksi.
 
@@ -250,19 +250,19 @@ Korjaa ongelma seuraavien ohjeiden mukaisesti.
 5. Keskeytä kaikki kaksoiskirjoituksen yhdistämismääritykset, jotka luodaan **smmContactPersonCDSV2Entity**-yksikköön.
 6. Käynnistä yhdistämismääritys. Näkyviin pitäisi tulla uusi taulukko (**LogisticsPostalAddress** tässä esimerkissä), jonka seurannan olet aloittanut käyttämällä **RefTableName**-saraketta riville, jossa **refentityname**-arvo on sama kuin **smmContactPersonCDSV2Entity** **BusinessEventsDefinition**-taulukossa.
 
-## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Virhe luotaessa tietuetta, jossa useita tietueita lähetetään taloushallinnon ja toimintojen sovelluksesta Dataverseen samassa erässä
+## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Virhe luotaessa tietuetta, jossa useita tietueita lähetetään talous- ja toimintosovelluksesta Dataverseen samassa erässä
 
-Taloushallinnon ja toimintojen sovellus luo tietoerän mitä tahansa tapahtumaa varten ja lähettää sen eränä Dataverseen. Jos kaksi tietuetta luodaan osana samaa tapahtumaa ja ne viittaavat toisiinsa, tuloksena voi olla virhesanoma, joka muistuttaa seuraavaa esimerkkiä taloushallinnon ja toimintojen sovelluksessa:
+Talous- ja toimintosovellus luo tietoerän mitä tahansa tapahtumaa varten ja lähettää sen eränä Dataverseen. Jos kaksi tietuetta luodaan osana samaa tapahtumaa ja ne viittaavat toisiinsa, tuloksena voi olla virhesanoma, joka muistuttaa seuraavaa esimerkkiä talous- ja toimintosovelluksessa:
 
 *Tietoja ei voi kirjoittaa yksikköön aaa_fundingsources. ebecsfs_contracts-yksikköä, jonka arvot ovat {PC00...} ei voi noutaa. aaa_fundingsources-yksikköä, jonka arvot ovat {PC00...} ei voi noutaa. Kirjoittaminen aaa_fundingsources-yksikköön epäonnistui ja virhesanomana on poikkeussanoma: Etäpalvelin palautti virheen: (400) Virheellinen pyyntö.*
 
-Voit korjata ongelman luomalla yksikkösuhteita taloushallinnon ja toimintojen sovelluksessa ilmaisemaan, että kaksi yksikköä liittyvät toisiinsa ja että toisiinsa liittyvät tietueet käsitellään samassa tapahtumassa.
+Voit korjata ongelman luomalla yksikkösuhteita talous- ja toimintosovelluksessa ilmaisemaan, että kaksi yksikköä liittyvät toisiinsa ja että toisiinsa liittyvät tietueet käsitellään samassa tapahtumassa.
 
 ## <a name="enable-verbose-logging-of-error-messages"></a>Virhesanomien sanallisen kirjaamisen käyttöönotto
 
-Taloushallinnon ja toimintojen sovelluksessa saattaa ilmetä virheitä, jotka liittyvät Dataverse-ympäristöön. Virhesanoma ei välttämättä sisällä sanoman koko tekstiä tai kaikkia muita merkityksellisiä tietoja. Lisätietoja saat ottamalla sanallisen kirjaamisen käyttöön määrittämällä **DualWriteProjectConfigurationEntity**-yksikössä kaikissa taloushallinnon ja toimintojen sovellusten projektimäärityksissä olevan **IsDebugMode**-merkinnän.
+Talous- ja toimintosovelluksessa saattaa ilmetä virheitä, jotka liittyvät Dataverse-ympäristöön. Virhesanoma ei välttämättä sisällä sanoman koko tekstiä tai kaikkia muita merkityksellisiä tietoja. Lisätietoja saa ottamalla sanallisen kirjaamisen käyttöön määrittämällä **DualWriteProjectConfigurationEntity**-yksikössä kaikissa talous- ja toimintosovellusten projektimäärityksissä olevan **IsDebugMode**-merkinnän.
 
-1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Lisäosan käyttöä varten on otettava käyttöön suunnittelutila taloushallinnon ja toimintojen Excel-lisäosassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
+1. Avaa **DualWriteProjectConfigurationEntity**-yksikkö käyttämällä Excel-lisäosaa. Apuohjelman käyttöä varten on otettava käyttöön suunnittelutila talous- ja toimintosovellusten Excel-apuohjelmassa ja lisättävä **DualWriteProjectConfigurationEntity** laskentataulukkoon. Lisätietoja on kohdassa [Yksikön tietojen näyttäminen ja päivittäminen Excelissä](../../office-integration/use-excel-add-in.md).
 2. Määritä **IsDebugMode**-merkinnän arvoksi **Kyllä** projektissa.
 3. Suorita skenaario.
 4. Sanalliset lokit ovat käytettävissä **DualWriteErrorLog**-taulussa. Voit etsiä tietoja taulukkoselaimella käyttäen seuraavaa URL-osoitetta: `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
@@ -270,7 +270,7 @@ Taloushallinnon ja toimintojen sovelluksessa saattaa ilmetä virheitä, jotka li
 
 ## <a name="error-when-you-add-an-address-for-a-customer-or-contact"></a>Virhe lisättäessä asiakkaan tai yhteyshenkilön osoitetta
 
-Saatat saada seuraavan virhesanoman, kun yrität lisätä asiakkaan tai yhteyshenkilön osoitetta taloushallinnon ja toimintojen sovelluksissa tai Dataversessä:
+Saatat saada seuraavan virhesanoman, kun yrität lisätä asiakkaan tai yhteyshenkilön osoitetta talous- ja toimintosovelluksissa tai Dataversessä:
 
 *Yksikköön msdyn_partypostaladdresses ei voi kirjoittaa tietoja.Kirjoittaminen DirPartyPostalAddressLocationCDSEntity-yksikköön epäonnistui tilakoodilla BadRequest ja CDS-virhekoodi : 0x80040265 vastaussanoma: Lisäosassa tapahtui virhe. Tietue, jolla on määritearvot Sijaintitunnus on jo olemassa. Yksikön sijaintitunnuksen avain vaatii, että tämä määritesarja sisältää yksilöllisiä arvoja. Valitse yksilölliset arvot ja yritä uudelleen.*
 
@@ -290,7 +290,7 @@ Näyttöön saattaa tulla seuraava virhesanoma, kun yrität lisätä asiakkaan D
 
 *"RecordError0":"Kirjoitus yksikössä Customers V3 epäonnistui tuntemattomalla poikkeuksella – Osapuolitietuetta ei löytynyt osapuolityypille 'Organisaatio'"}.*
 
-Kun asiakas luodaan Dataversessä, uusi osapuolinumero luodaan. Virhesanoma tulee näkyviin, kun asiakastietua synkronoidaan yhdessä osapuolen kanssa taloushallinnon ja toimintojen sovelluksiin, mutta olemassa on jo asiakastietue, jolla on eri osapuolinumero.
+Kun asiakas luodaan Dataversessä, uusi osapuolinumero luodaan. Virhesanoma tulee näkyviin, kun asiakastietua synkronoidaan yhdessä osapuolen kanssa talous- ja toimintosovelluksiin, mutta olemassa on jo asiakastietue, jolla on eri osapuolinumero.
 
 Voit korjata ongelman hakemalla asiakkaan osapuolihaulla. Jos asiakasta ei ole olemassa, luo uusi asiakastietue. Jos asiakas on olemassa, käytä olemassa olevaa osapuolta uuden asiakastietueen luomiseen.
 
@@ -300,7 +300,7 @@ Saatat saada seuraavan virhesanoman, kun yrität luoda uuden asiakkaan, toimitta
 
 *Osapuolen tyyppiä ei voi päivittää arvosta 'DirOrganization' arvoksi 'DirPerson', sen sijaan olemassa oleva osapuoli on poistettava ja uusi tyyppi on lisättävä.*
 
-Dataversen **msdyn_party**-taulukossa on numerosarja. Kun Dataversessä luodaan tili, luodaan uusi osapuoli (esimerkiksi **Organisaatio**-tyyppiä oleva **Osapuoli-001**). Nämä tiedot lähetetään taloushallinnon ja toimintojen sovellukseen. Jos Dataverse-ympäristö palautetaan tai taloushallinnon ja toimintojen ympäristö linkitetään eri Dataverse-ympäristöön ja uusi yhteyshenkilötietue luodaan Dataversessä, luodaan uusi osapuoliarvo, joka alkaa **Osapuoli-001**. Tällä kertaa luodaan **Henkilö**-tyyppiä oleva **Osapuoli-001**-osapuolitietue. Kun nämä tiedot on synkronoitu, edellinen virhesanoma näkyy taloushallinnon ja toimintojen sovelluksissa, koska tyyppiä **Organisaatio** oleva **Osapuoli-001**-osapuolitietue on jo olemassa.
+Dataversen **msdyn_party**-taulukossa on numerosarja. Kun Dataversessä luodaan tili, luodaan uusi osapuoli (esimerkiksi **Organisaatio**-tyyppiä oleva **Osapuoli-001**). Nämä tiedot lähetetään talous- ja toimintosovellukseen. Jos Dataverse-ympäristö palautetaan tai talous- ja toimintosovellusympäristö linkitetään eri Dataverse-ympäristöön ja uusi yhteyshenkilötietue luodaan Dataversessä, luodaan uusi osapuoliarvo, joka alkaa **Osapuoli-001**. Tällä kertaa luodaan **Henkilö**-tyyppiä oleva **Osapuoli-001**-osapuolitietue. Kun nämä tiedot on synkronoitu, edellinen virhesanoma näkyy talous- ja toimintosovelluksissa, koska tyyppiä **Organisaatio** oleva **Osapuoli-001**-osapuolitietue on jo olemassa.
 
 Voit korjata tämän ongelman muuttamalla Dataversen **msdyn_party**-taulukon **msdyn_partynumber**-kentän automaattisen numerosarjan eri automaattiseksi numerosarjaksi.
 
@@ -355,3 +355,4 @@ Kun olet päivittänyt menetelmät, noudata seuraavia ohjeita.
 3. Käynnistä yhdistämismääritys. Nyt yksiköissä **smmContactPersonCDSV2Entity** ja **CustCustomerV3Entity** sekä taulukossa **BusinessEventsDefinition** pitäisi olla vähemmän tietueita ja suorituskyky saattaa parantua hieman.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

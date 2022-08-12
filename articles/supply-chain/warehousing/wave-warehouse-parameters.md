@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e02cd80a3b7692f496fc70e50b812fae358103bc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909609"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067848"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Varaston parametrit aaltokäsittelyä varten
 
@@ -52,7 +52,7 @@ Määritä varastonhallinnan parametrit aaltojen käsittelylle seuraavien ohjeid
 > [!NOTE]
 > Aallon käsittelemiseen käytettävässä aaltomallissa voit määrittää asetukset, jotka automatisoivat aallon käsittelyä. Jos määrität aikataulun erätyölle, ajoitus on syytä koordinoida automaation aaltomallin asetuksilla. Lisätietoja on kohdassa [Aaltomallin luominen](wave-templates.md).
 >
-> Jos käytät *kuljetustenhallintaa* ja *edistynyttä varastonhallintaa*, voit määrittää, konsolidoidaanko kuormitukset aaltoa käsitellessäsi. Tämä on hyödyllistä esimerkiksi silloin, kun useita pieniä kuormia voidaan lähettää samaan aikaan. Jos haluat yhdistää kuormitukset aaltoa käsiteltäessä, valitse **Kuormitukset**-välilehdessä **Konsolidoi kuormitukset aallon käsittelyn aikana** -valintaruutu.</P>
+> Jos käytät *kuljetustenhallintaa* ja *varastonhallintaprosesseja (WMS)*, voit määrittää, konsolidoidaanko kuormitukset aaltoa käsitellessäsi. Tämä on hyödyllistä esimerkiksi silloin, kun useita pieniä kuormia voidaan lähettää samaan aikaan. Jos haluat yhdistää kuormitukset aaltoa käsiteltäessä, valitse **Kuormitukset**-välilehdessä **Konsolidoi kuormitukset aallon käsittelyn aikana** -valintaruutu.</P>
 
 ## <a name="set-up-full-or-partial-reservation-for-production-waves"></a>Määritä tuotannon aaltojen varaus kokonaan tai osittain
 

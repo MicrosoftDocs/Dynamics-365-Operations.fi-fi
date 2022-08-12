@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9adbf8f5baa829fb28977d618a4f8beee31ef080
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4d423b149957e624269231aede510190f0c14c7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870130"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068777"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Käyttöomaisuuden eteenpäin siirron raportti
 
@@ -30,7 +30,7 @@ ms.locfileid: "8870130"
 
 **Käyttöomaisuuden siirto eteenpäin** -raportti käyttää sähköistä raportointi- eli ER-kehystä. Käyttömaisuusmallin ja käyttöomaisuuden eteenpäinsiirron määrityksen on tuotava ennen raportin suorittamista Microsoft Dynamics Lifecycle Servicesistä (LCS). Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-Raportti on saatavana Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin versiossa 7.3 tai hotfix-korjauksena Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin heinäkuun 2017 versiossa. Heinäkuun 2017 versiota käyttävissä ympäristöissä on otettava käyttöön kolme hotfix-korjausta:
+Raportti on saatavana Microsoft Dynamics 365 Finance, Enterprise editionin versiossa 7.3 tai hotfix-korjauksena Microsoft Dynamics 365 Finance, Enterprise editionin heinäkuun 2017 versiossa. Heinäkuun 2017 versiota käyttävissä ympäristöissä on otettava käyttöön kolme hotfix-korjausta:
 
 - **KB 4041754:** sähköisen raportoinnin (ER) määritystä ei voi ladata LCS:stä, sillä sitä ei voi käyttää nykyisessä versiossa sen jälkeen, kun ympäristön päivityspaketti on otettu käyttöön
 - **KB 4056107:** sähköisen raportoinnin (GER) kumulatiivinen päivitys 5
@@ -67,3 +67,4 @@ Seuraavassa taulussa käsitellään raportissa valittavina olevat kentät.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

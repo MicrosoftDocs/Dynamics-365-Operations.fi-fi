@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 3948fff15108568df514406ad443d4f538653e62
+ms.sourcegitcommit: 1af2b01aea6b5a4d88ee3fae6faa0eaf1976c5dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027280"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9146482"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -271,7 +271,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 1218 | Pakota oheislaitteen lukituksen poisto                           | Järjestelmä käyttää tätä toimintoa sisäisesti myyntipisteen oheislaitteiden lukituksen poistamiseen.                                                                                                                                           | Ei käytettävissä | Ei käytettävissä     | Ei käytettävissä | Ei käytettävissä    | En              |
 | 1219 | URL-osoitteen avaaminen myyntipisteessä                                   | Avaa myyntipisteen järjestelmänvalvojan konfiguroitu URL-osoite.                                                                                                                                                                           | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
 | 1220 | Hallitse kassakaappeja                                       | Hallitse kassakaappia eri kassakoneissa.                                                                                                                                                                       | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
-| 1221 | Mitätöi keskeytetyt tapahtumat                       | Mitätöi keskeytetyt tapahtumat.                                                                                                                                                                               | Kyllä            | Kyllä                | Kyllä            | Kyllä               | En              |
+| 1221 | Mitätöi keskeytetyt tapahtumat                       | Mitätöi keskeytetyt tapahtumat.                                                                                                                                                                               | Kyllä            | En                | En            | Kyllä               | En              |
 | 1300 | Ohita tilikausirekisteröinti                          | Ohita tilikausirekisteröinti.                                                                                                                                                                                       | En            | En                | En            | Kyllä               | En             |
 | 1 301 | Merkitse kirjanpidon tapahtuma rekisteröidyksi                      |  Merkitse kirjanpidon tapahtuma rekisteröidyksi.                                                                                                                                                                                  | En            | En                | En            | Kyllä               | En             |
 | 1302 | Viimeistele kirjanpidon rekisteröintiprosessi              | Viimeistele kirjanpidon rekisteröintiprosessi.                                                                                                                                                                           | En            | En                | Kyllä            | Kyllä               | Kyllä             |

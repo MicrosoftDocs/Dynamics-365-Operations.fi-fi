@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869254"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109577"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -66,7 +66,7 @@ Sähköinen raportointi tukee tällä hetkellä TEXT, XML, JSON, PDF, Microsoft 
 
 Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 
-- Se on yksi yhteinen, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista sähköisen raportoinnin moduulia.
+- Se on yksi yhteinen, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista talous- ja toimintosovellusten sähköisen raportoinnin moduulia.
 - Se eristää raportin muodon nykyisestä käyttöönotosta. Toisin sanoen muotoa voi käyttää eri versioissa.
 - Se tukee alkuperäiseen muotoon perustuvan mukautetun muodon luontia. Sen toiminnoilla voi myös päivittää automaattisesti mukautetut muodot, kun alkuperäiseen muotoon on tehty muutoksia. Tämä onnistuu lokalisointi- ja mukautusvaatimusten avulla.
 - Siitä tulee ensisijainen vakiotyökalu lokalisointivaatimusten tukemiseen sähköisessä raportoinnissa – sekä Microsoftille että sen kumppaneille.
@@ -126,7 +126,7 @@ Sähköiset raportointimääritykset jaetaan sovelluksen yrityksille.
 
 #### <a name="provider"></a><a name="Provider"></a>Palvelu
 
-Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Finance and Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
+Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille talous- ja toimintosovellusratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
 
 Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtäväoppaassa **ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi** (liiketoimintaprosessin **7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677)** osa).
 
@@ -143,7 +143,7 @@ Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säil
 
 **Jaettu LCS-kirjasto** -säilön kautta voi käyttää Lifecycle Servicesin (LCS) jaetun omaisuuskirjaston määritysluetteloa. Tämä ER-rekisterityyppi voidaan rekisteröidä vain Microsoft-palvelulle. Voit tuoda jaetusta LCS-kirjastosta ER-määritysten uusimmat versiot nykyiseen esiintymään.
 
-**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin, kun säilö rekisteröintiin. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen rahoitus- ja toiminta -sovelluksen esiintymään.
+**LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin, kun säilö rekisteröintiin. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen talous- ja toimintosovellusesiintymään.
 
 **Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat xml-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen esiintymään. 
 
@@ -270,3 +270,4 @@ Financen ER-määritysten luetteloa päivitetään jatkuvasti. Tällä hetkellä
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

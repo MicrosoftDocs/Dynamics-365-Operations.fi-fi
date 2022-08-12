@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6c4c2a0954c8554da0b4c859d837ab6ca4839b36
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883506"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111925"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio
 
@@ -119,7 +119,7 @@ Muuta suunnitellun muotomäärityksen tila Luonnos-tilasta Valmis-tilaan. Täll�
     Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.1.1. Tämä tarkoittaa, että kyseessä on mukautetun BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) versio 1, joka perustuu BACS-muodon versioon 1, joka perustuu Maksut-tietomallin versioon 1 (yksinkertaistettu malli).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Mukautetun muodon maksutiedostojen luonnin testaaminen
-Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Finance and Operations -istunnossa. Valitse BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa. Varmista, että luotu maksutiedosto sisältää on viimeisimmän XML-solmun, joka vastaa IBAN-koodia aluekohtaisten vaatimusten mukaisesti.  
+Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa talous- ja toimintosovellusistunnossa. Valitse BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa. Varmista, että luotu maksutiedosto sisältää on viimeisimmän XML-solmun, joka vastaa IBAN-koodia aluekohtaisten vaatimusten mukaisesti.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Olemassaolevien maakohtaisten konfiguraatioiden päivittäminen
 Litware, Inc. haluaa päivittää BACS-konfiguraation (Iso-Britannia, kuvitteellinen) ja ottaa käyttöön uudet maavaatimukset sähköisen asiakirjan muodon hallinnassa. Tämä sisältyy tulevaan konfiguraation versiopäivitykseen, joka tarjotaan palvelun tilaajille, joihin Proseware, Inc. kuuluu.  
@@ -239,7 +239,7 @@ Tämän vuoksi Proseware, Inc:n on muutettava peruskonfiguraation versiota mukau
     Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.2.2: BACS-perusmuodon (Iso-Britannia, kuvitteellinen ja mukautettu) versiona 2, joka perustuu BACS-perusmuodon (Iso-Britannia, kuvitteellinen) versioon 2, joka perustuu maksujen tietomallin versioon 1 (yksinkertaistettu malli).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Mukautetun muodon maksutiedostojen luonnin testaaminen
-Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Finance and Operations -istunnossa. Valitse luotu BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa. Varmista, että luotu maksutiedosto sisältää on viimeisimmän Proseware, Inc:n XML-solmun, joka vastaa IBAN-tilikoodia aluekohtaisten vaatimusten mukaisesti. Tiedoston pitäisi myös sisältää viimeisin Litware, Inc:n XML-solmu, joka edustaa SWIFT-pankkikoodia maakohtaisten vaatimusten mukaisesti.  
+Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa talous- ja toimintosovellusistunnossa. Valitse luotu BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa. Varmista, että luotu maksutiedosto sisältää on viimeisimmän Proseware, Inc:n XML-solmun, joka vastaa IBAN-tilikoodia aluekohtaisten vaatimusten mukaisesti. Tiedoston pitäisi myös sisältää viimeisin Litware, Inc:n XML-solmu, joka edustaa SWIFT-pankkikoodia maakohtaisten vaatimusten mukaisesti.  
 
 
 

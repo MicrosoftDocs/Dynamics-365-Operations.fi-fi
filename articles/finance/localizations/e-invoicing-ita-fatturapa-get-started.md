@@ -2,7 +2,7 @@
 title: Italian FatturaPA:n ja SDI:n suoran integroinnin määritys
 description: Tässä artikkelissa on tietoja, joiden avulla voit aloittaa Italian sähköisen laskutuksen ja määrittää Italian FatturaPA:n suoran integroinnin Exchange-järjestelmään (SDI).
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 510cf05e7bbc925478f9a1a4ea2ea27fe397c570
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 363b7b5e3d5abbb990fea8f8ad4d0c1bebf80102
+ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853189"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9203166"
 ---
 # <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Italian FatturaPA:n ja SDI:n suoran integroinnin määritys
 
@@ -69,10 +69,13 @@ Tämä osa täydentää [Sovellusasetusten maa-/aluekohtainen konfigurointi](e-i
     - Määritä **Allekirjoita tiedosto** -toiminnossa **Sertifikaatin nimi** -kenttään digitaalinen allekirjoitussertifikaatti.
     - Määritä **Lähetä**- toimille **URL-osoite**- ja **Sertifikaatti**-kentät. **Sertifikaatit**-kentän arvo on sertifikaattien ketju, joista ensimmäinen on juuri-CA-sertifikaatti (caentrate.cer) ja toinen asiakassertifikaatti.
 
-4. Varmista valitsemalla **Vahvista**, että kaikki pakolliset kentät on määritetty.
-5. Tallenna muutokset ja sulje sivu.
-6. Valitse **Asetukset**-välilehdessä ensin **Projektilaskut** ja sitten **Muokkaa**.
-7. Tee vaiheet 3-5 uudelleen projektilaskuille.
+4. Tutustu **Soveltuvuussäännöt**-osassa lausekkeisiin sekä tarkista tai määritä pakolliset kentät:
+    - Tarkista **LegalEntityID**-lauseke ja päivitä oikea arvo yrityksestä.
+
+5. Varmista valitsemalla **Vahvista**, että kaikki pakolliset kentät on määritetty.
+6. Tallenna muutokset ja sulje sivu.
+7. Valitse **Asetukset**-välilehdessä ensin **Projektilaskut** ja sitten **Muokkaa**.
+8. Tee vaiheet 3-6 uudelleen projektilaskuille.
 
 ### <a name="configure-the-processing-pipeline-for-import"></a>Käsittelyputken konfiguroiminen tuontia varten
 

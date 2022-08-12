@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876121"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135840"
 ---
 # <a name="posting-profiles-overview"></a>Kirjausprofiilien yleiskuvaus
 
-Taloushallinnointi- ja työvaihesovellusten termillä *kirjausprofiilit* kuvaillaan konfiguroinnit, jotka ohjaavat, miten alakirjanpitotilit muunnetaan päätileille, jotta niitä voidaan käyttää kirjanpitoon kirjattaessa. Ne ohjaavat esimerkiksi, miten asiakas muunnetaan myyntireskontran päätilille laskun kirjaamista varten.
+Talous- ja toimintosovellusten termillä *kirjausprofiilit* kuvaillaan määritykset, jotka ohjaavat alareskontratilit muunnetaan päätileille, jotta niitä voidaan käyttää kirjanpitoon kirjattaessa. Ne ohjaavat esimerkiksi, miten asiakas muunnetaan myyntireskontran päätilille laskun kirjaamista varten.
 
 Joillakin moduuleilla ja ominaisuuksilla on sivu, joka sisältää nimen sanat "kirjausprofiili" (esimerkiksi **asiakkaan kirjausprofiili** tai **toimittajan kirjausprofiili**). Lisäksi joillakin moduuleilla on useita asetuksia, joilla määritetään alareskontran avulla luotujen tapahtumien kirjanpitokirjaus. Voit esimerkiksi määrittää **tuotannonhallinta**-moduulissa kirjauksen tuotantoryhmän, resurssin tai resurssiryhmän mukaan.
 
@@ -34,7 +34,7 @@ Ennen kuin voit konfiguroida kirjausprofiilit, kirjausmääritykset tai **automa
 
 ## <a name="posting-types"></a>Kirjaustyypit
 
-Rahoitus- ja toiminta -sovellusten kirjaustyypin avulla määritetään yleinen veloituksen tai hyvityksen luokka. Tämä luokka ei ole riippumaton kirjanpidon päätilistä. Kirjanpitoon on kirjaustyyppejä kutakin debet- tai kredit-kirjausta varten.
+Talous- ja toimintosovellusten kirjaustyypin avulla määritetään yleinen veloituksen tai hyvityksen luokka. Tämä luokka ei ole riippumaton kirjanpidon päätilistä. Kirjanpitoon on kirjaustyyppejä kutakin debet- tai kredit-kirjausta varten.
 
 Yhdellä tositteella voi olla useita kirjaustyyppejä. Esimerkiksi tapahtuman, joka kirjataan yleisen päiväkirjan kautta, jossa tili ja vastatili on asetettu arvoon **Kirjanpito**, kirjaustyyppi on **Kirjanpidon kirjauskansio** sekä veloituksen että hyvityksen osalta. Sen sijaan toimittajan laskulla on useita kirjaustyyppejä. Kirjaustyyppeihin kuuluu yksi rivi toimittajan saldoa varten ja vastakirjauksen lisärivit, kuten **kirjanpidon kirjauskansio**.
 
@@ -111,13 +111,14 @@ Monissa Dynamics 365 Finance-, Dynamics 365 Supply Chain Management-, Dynamics 3
 - Kulujen hallinnan kirjaaminen (Tulossa pian)
 - [Käyttöomaisuuserän kirjausprofiili](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Konserniyritysten välisen laskennan kirjaaminen (Tulossa pian)
-- Varaston kirjausprofiili (tulossa pian)
+- [Varastokirjaus](inventory-posting.md)
 - [Aiheutuneiden kustannusten kirjaaminen](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Kirjausmääritysten yleiskatsaus](posting-definitions.md)
-- Tuotannonohjauksen kirjaaminen (Tulossa pian)
+- [Tuotannon kirjaus](production-posting.md)
 - Projektinhallinnan ja kirjanpidon kirjaaminen (Tulossa pian)
 - Palvelujen hallinnan kirjaaminen (Tulossa pian)
 - Verojen kirjaaminen (Tulossa pian)
 - Aika- ja läsnäolokirjaus (Tulossa pian)
 - Kuljetuksen hallinnan kirjaaminen (Tulossa pian)
 - Ostohyvitysten hallinnan kirjausprofiilit (Tulossa pian)
+

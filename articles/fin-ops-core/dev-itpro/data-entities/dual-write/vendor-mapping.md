@@ -1,6 +1,6 @@
 ---
 title: Integroidut toimittajan päätiedot
-description: Tässä artikkelissa käsitellään toimittajan tietojen integrointia taloushallinnon ja toimintojen sovellusten ja Dataversen välillä.
+description: Tässä artikkelissa käsitellään toimittajan tietojen integrointia talous- ja toimintosovellusten sekä Dataversen välillä.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 394bb19000076eace6377e07bb3a939c8345da8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a2c32ef546a5bc74e090591c0ac9d51529299041
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905312"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112191"
 ---
 # <a name="integrated-vendor-master"></a>Integroidut toimittajan päätiedot
 
@@ -37,7 +37,7 @@ Jos haluat edelleen tallentaa toimittajatietoja **Asiakkuus/yhteyshenkilö**-tau
 ![Laajennettu toimittajatietojen virta.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Jos käytät itsepalvelutoimittajien Power Apps -portaaleja, toimittajatiedot voivat virrata suoraan taloushallinnon ja toimintojen sovelluksiin.
+> Jos käytät itsepalvelutoimittajien Power Apps -portaaleja, toimittajatiedot voivat siirtyä suoraan talous- ja toimintosovelluksiin.
 
 ## <a name="templates"></a>Mallit
 
@@ -52,8 +52,9 @@ Taloushallinnon ja toimintojen sovellukset | Asiakkaiden aktivointisovellukset  
 [Maksusuunnitelmarivit](mapping-reference.md#159) | msdyn_paymentschedulelines | Synkronoi sekä asiakkaiden että toimittajien maksusuunnitelmarivien viitetiedot.
 [Maksusuunnitelma](mapping-reference.md#160) | msdyn_paymentschedules | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksusuunnitelman viitetiedot.
 [Maksuehdot](mapping-reference.md#161) | msdyn_paymentterms | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksuehtojen (maksuehdot) viitetiedot.
-[Toimittajat V2](mapping-reference.md#202) | msdyn_vendors | Yritykset, jotka käyttävät mukautettua toimittajaratkaisua, voivat hyödyntää käyttövalmista toimittajakäsitettä, joka otetaan käyttöön Dataversessa taloushallinnon ja toimintojen sovellusten integroinnin ansiosta.
+[Toimittajat V2](mapping-reference.md#202) | msdyn_vendors | Yritykset, jotka käyttävät mukautettua toimittajaratkaisua, voivat hyödyntää käyttövalmista toimittajakäsitettä, joka otetaan käyttöön Dataversessa talous- ja toimintosovellusten integroinnin ansiosta.
 [Toimittajaryhmät](mapping-reference.md#200) | msdyn_vendorgroups | Tämä malli synkronoi toimittajaryhmän tiedot.
 [Toimittajan maksutapa](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Tämä malli synkronoi toimittajan maksutavan tiedot.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

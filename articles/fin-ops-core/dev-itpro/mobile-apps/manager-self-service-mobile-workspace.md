@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 11a4b1667e3d97b651b8019c9dbe577ab30aed67
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868695"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068196"
 ---
 # <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868695"
 
 Tässä artikkelissa on tietoja **oman ryhmän** mobiilityötilasta. Esimiehet voivat tarkastella tässä työtilassa suoria alaisiaan ja laajennettua henkilökuntaa. He voivat myös lähettää kehuja raportointiketjuunsa kuuluville henkilöille.
 
-Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations -mobiilisovelluksen kanssa.
+Tämä mobiilityötila on tarkoitettu käytettäväksi talous- ja toimintosovellusten mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus 
 Esimiehet voit tehdä seuraavia tehtäviä **oman ryhmän** mobiilityötilassa:
@@ -50,12 +50,12 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 <tbody>
 <tr class="odd">
 <td>Organisaatiossa on oltava käytössä jokin seuraavista tuotteista:
-<ul><li>Finance and Operations -sovellus</li>
+<ul><li>Talous- ja toimintosovellukset</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos Finance and Operations -sovellusta ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>. Jos Human Resourcesia ei ole vielä otettu&#39; organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources -sivulta</a>.
+<td>Jos talous- ja toimintosovellusta ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>. Jos Human Resourcesia ei ole vielä otettu&#39; organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources -sivulta</a>.
 </td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
-Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
+Talous- ja toimintosovelluksen mobiiliversion lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -99,3 +99,4 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

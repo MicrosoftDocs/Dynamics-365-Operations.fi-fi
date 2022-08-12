@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853345"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070631"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Tilikartan suunnittelu
 
@@ -43,7 +43,7 @@ Tilikartan rakennetta suunniteltaessa täytyy kiinnittää huomiota esimerkiksi 
 Voit luoda tilikarttoja **Tilikartat**-sivulla. Voit luoda päätilejä **Tilikartat**- tai **Päätilit**-sivulla. Päätileillä ei tule käyttää erikoismerkkejä, joita käytetään tilikartoissa erottimina. Muussa tapauksena seurauksena voi olla toiminnan epävakautta tai tilien ja dimensioiden yhdistelmien kirjaamiseen on ehkä aina käytettävä hakua ja valintaikkunaa. Lisätietoja on ohjeaiheessa [Päätilin luominen](tasks/create-main-account.md).
 
 > [!NOTE]
-> Voit muokata tilikartan erotinta Dynamics 365 for Finance and Operationsin version 8.0 (huhtikuu 2018) **Kirjanpitoparametrit**-sivulla.
+> Voit muokata tilikartan erotinta Dynamics 365 Financen version 8.0 (huhtikuu 2018) **Kirjanpitoparametrit**-sivulla.
 
 Päätilit kannattaa linkittää päätililuokkiin, jolloin oletusraportteja voidaan käyttää ilman muutoksia. Tällöin voit suunnitella ja ylläpitää raportteja nopeasti ja helposti.
 
@@ -60,3 +60,4 @@ Lisätietoja on seuraavissa aiheissa:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

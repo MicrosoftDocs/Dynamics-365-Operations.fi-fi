@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 description: Tässä artikkelissa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Commercesta.
 author: josaw
-ms.date: 04/27/2022
+ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
+ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910521"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9138583"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -31,7 +31,20 @@ Tässä artikkelissa käsitellään ominaisuuksia, jotka on poistettu tai joiden
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
+> Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
+
+## <a name="feature-deprecation-effective-july-2022"></a>Heinäkuussa 2022 vanhentuvat ominaisuudet
+
+### <a name="commerce-analytics-preview"></a>Commercen analytiikka (esiversio)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Dynamics 365 Commerce -tiimi on analysoinut Commerce analytiikka (esiversio) -ominaisuuden käyttöä ja käyttöönottoa sekä päättänyt, että ominaisuuden kehittämistä ei jatketa yleiseen saatavuuteen.   |
+| **Onko toinen ominaisuus korvannut?**   | Commerce-analytiikka (esiversio) -ominaisuutta ei tällä hetkellä korvata toisella ominaisuudella tai ratkaisulla. Tapahtumien raakatietoja ja päätietojen vienti talous- ja toimintosovelluksista Azure Data Lakeen on edelleen saatavana, mistä on lisätietoja kohdassa [Vienti Data Lakeen talous- ja toimintosovelluksissa](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Kumppanit ja asiakkaat voivat hyödyntää kyseistä tietovirtaa liiketoiminatarpeita vastaavien analyysiraporttien laatimiseen.
+| **Tuotealueet, joihin vaikutetaan**         | Commercen analytiikka (esiversio) |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Tämä ominaisuus on tarkoitus poistaa käytöstä 30. elokuuta 2022 mennessä.  Kyseisen päivämäärän jälkeen nykyisiä Commerce-analytiikan (esiversio) tuottamia Power BI -raportteja ei päivitetä.     |
+
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Commercen version 10.0.25 poistetut tai vanhentuneet ominaisuudet
 
@@ -195,3 +208,4 @@ Lisätietoja poistetuista tai vanhentuneista toiminnoista aiemmissa versioissa o
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

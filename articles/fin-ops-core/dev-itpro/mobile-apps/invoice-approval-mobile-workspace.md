@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4cc05d9fcea129cfb2ed8ed8df4bd4034a1fed4c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868666"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066387"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Laskujen hyväksyntöjen mobiilityötila
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868666"
 
 Tässä artikkelissa on tietoja **laskujen hyväksyntöjen** mobiilityötilasta. Tässä työtilassa on luettelo laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa. 
 
-Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations -mobiilisovelluksen kanssa.
+Tämä mobiilityötila on tarkoitettu käytettäväksi talous- ja toimintosovellusten mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -61,7 +61,7 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
-Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
+Talous- ja toimintosovelluksen mobiiliversion lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -88,3 +88,4 @@ Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

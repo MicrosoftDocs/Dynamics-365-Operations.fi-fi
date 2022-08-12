@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f44574abddb71e1a994ae60960e8c9c79242aff0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860106"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112109"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospektista käteiseksi -kaksoiskirjoitus
 
@@ -135,3 +135,4 @@ Lisätietoja hinnastoista on kohdassa [Yhtenäinen tuotekokemus](product-mapping
 - Taloushallinnon dimensiot on määritettävä päätiedoille, kuten asiakkaalle ja toimittajalle. Kun asiakas lisätään tarjoukseen tai myyntitilaukseen, asiakastietueeseen liitetyt taloushallinnon dimensiot siirtyvät automaattisesti tilaukseen. Kaksoiskirjoitus ei sisällä tällä hetkellä päätietojen taloushallinnon dimensioiden tietoja.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

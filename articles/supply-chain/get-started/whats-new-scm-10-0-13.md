@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3916e70e4c9e3bc4ceae3a82e58bc4b0697ddb9f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7fd1cf208b9bae86bf25b19f4652890c15a617c9
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888669"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124984"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Dynamics 365 Supply Chain Managementin version 10.0.13 uudet tai muuttuneet ominaisuudet (lokakuu 2020)
 
@@ -53,9 +53,9 @@ Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lis
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.13 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (lokakuu 2020) käyttöympäristön päivitysversio 10.0.13.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 sisältää Platform updateja. Lisätietoja on kohdassa [Talous- ja toimintosovellusten (lokakuu 2020) käyttöympäristön päivitysversio 10.0.13](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

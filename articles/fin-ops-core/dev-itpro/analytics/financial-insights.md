@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464906"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109109"
 ---
 # <a name="financial-analysis"></a>Talousanalyysi
 
@@ -40,7 +40,7 @@ ms.locfileid: "8464906"
 
 - [Power BI -visualisointien lisääminen tai muokkaaminen koontinäytössä](/powerapps/user/add-powerbi-dashboards)
 
-## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance -asetukset
+## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance -määritys
 **Kirjanpito**
 
 Päätilityypin ja päätililuokkien avulla täytetään **talousanalyysin** **Tase**-raportin ja erilaisten **Tuloslaskelma**-raporttien oletuspäätilit.
@@ -78,7 +78,7 @@ Upotettujen Power BI -raporttien tietoja ei voi tällä hetkellä rajoittaa niih
 | Tulli                                    | Roolit | kuvaus |
 |-----------------------------------------|-------|------------|
 | Näytä nykyisen yrityksen talousanalyysi | <ul><li>Kirjanpitäjä</li><li>Laskentapäällikkö</li><li>Taloushallintopäällikkö</li><li>Tilintarkastaja</li><li>Budjettipäällikkö</li><li>Pääjohtaja</li><li>Talousjohtaja</li><li>Laskentatoimen controller</li></ul> | Tämä velvollisuus antaa Talousanalyysi -työtilan käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Et voi lisätä muita yrityksiä. |
-| Näytä kaikkien yritysten talousanalyysi   | Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin versiossa 7.3 tätä velvollisuutta ei ole määritetty rooliin. Seuraavassa versiossa tämä velvollisuus määritetään talousjohtajan rooliin. | Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan valikkovaihtoehdon käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta. |
+| Näytä kaikkien yritysten talousanalyysi   | Microsoft Dynamics 365 Finance, Enterprise editionin versiossa 7.3 tätä velvollisuutta ei ole määritetty rooliin. Seuraavassa versiossa tämä velvollisuus määritetään talousjohtajan rooliin. | Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan valikkovaihtoehdon käyttöoikeuden. Aktiivista yritystä käytetään oletusarvoisesti suodattimena. Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Financial Reporting vs. Talousanalyysi
@@ -96,7 +96,7 @@ Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:
 | **Raportointihierarkian/organisaatiohierarkian tuki**   | Kyllä                                                               | Ei |
 | **Alareskontran tietojen raportti**                             | Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen                              | Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne. |
 | **Raportointivaluutta**                                   | Kyllä Kirjanpitovaluutta ja muuntaminen raportointivaluutaksi       | Ei Vain kirjanpitovaluutta |
-| **Suojaus**                                             | Kyllä Financen ja raporttipuun suojauksen noudattaminen | Rajoitettu kaikkien yritysten raporttien näyttäminen (Finance and Operationsin suojauksesta riippumatta) tai vain aktiivinen yritys |
+| **Suojaus**                                             | Kyllä Financen ja raporttipuun suojauksen noudattaminen | Rajoitettu kaikkien yritysten raporttien näyttäminen (talous- ja toimintosovellusten suojauksesta riippumatta) tai vain aktiivinen yritys |
 | **Erilaisten tilikarttojen ja tilivuosien tuki** | Kyllä                                                               | Ei |
 | **Ulkoisten tietojen raportti**                              | Ei                                                                | Ei |
 | **Konsolidointien tuki**                               | Kyllä                                                               | Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö |
@@ -244,3 +244,4 @@ Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

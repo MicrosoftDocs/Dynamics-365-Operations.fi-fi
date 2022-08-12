@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0278b57ccfa2da9dba6b5ea77821fdc47ad2d078
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846651"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068919"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -31,7 +31,7 @@ Tässä artikkelissa käsitellään ominaisuuksia, jotka on poistettu tai joiden
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 > [!NOTE]
-> Seuraavissa raporteissa on tarkempia tietoja taloushallinnon ja toimintojen sovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin taloushallinnon ja toimintojen sovellusten versiossa.
+> Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Financen version 10.0.26 poistetut tai vanhentuneet ominaisuudet
 
@@ -218,3 +218,4 @@ Lisätietoja poistetuista tai vanhentuneista toiminnoista aiemmissa versioissa o
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

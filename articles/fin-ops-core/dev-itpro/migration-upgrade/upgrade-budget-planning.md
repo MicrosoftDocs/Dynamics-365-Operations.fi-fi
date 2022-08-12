@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d8d59def24fd138b4cf1d36e286b786e13b096e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890403"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124025"
 ---
 # <a name="upgrade-budget-planning"></a>Budjettisuunnittelun päivitys
 
@@ -30,7 +30,7 @@ Microsoft Dynamics AX 2012:n ja Dynamics 365 Financen budjettisuunnittelutoiminn
 Financen budjettisuunnittelu sisältää useita parannuksia, jotka eivät olleet saatavilla Dynamics AX 2012:ssa. Tässä artikkelissa kerrotaan muutokset, jotka päivittävän asiakkaan on tehtävä. Siinä osoitetaan myös uudet ominaisuuksia, jotka tulisi ottaa huomioon päivitysprosessin aikana. Koska muutokset ovat kattavia, olemassa olevia budjettisuunnitelmia ei voi avata ennen kuin tässä artikkelissa kuvatut muutokset on tehty. Raporttien tulisi toimia, eivätkä ne vaadi lisämuutoksia.
 
 ## <a name="overview-of-changes"></a>Muutosten yleiskatsaus
-Dynamics 365 for Finance and Operationsin budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Financesta:
+Talous- ja toimintosovellusten budjetointiin on tehty merkittävä muutoksia. Nämä muutokset helpottavat budjettisuunnittelun määrittämistä ja uudelleen käyttöä, vähentäen ajan kuluessa tarvittavaa ylläpitoa ja määrittämistä. Seuraavat AX 2012:n alueet on poistettu Financesta:
 
 -   Budjettisuunnitelman mallit (budjettisuunnittelun konfigurointi)
 -   Budjettisuunnitelman kansiot (budjettisuunnittelun konfigurointi)
@@ -47,7 +47,7 @@ Sarakkeet ovat uusi konsepti, jotka korvaavat osia Excel-mallista sekä matriisi
 
 ### <a name="layouts"></a>Asettelut
 
-Asettelut ovat uusi konsepti, joka korvaa Excel-mallin. Asettelut sisältävät sarakkeita, jotka määrittävät mitkä budjetti- tai todelliset tiedot ja kaudet tulisi näyttää. Asettelut ovat yhteisiä niin asiakasohjelmassa kuin Excel-apuohjelmassa. Tietojen syöttämisen tai katselun käyttökokemus on Finance and Operations -asiakasohjelmassa siis parempi kuin AX 2012:ssa. Tietojen syöttö Finance-asiakasohjelmassa ei ole enää rajoitettu yhden skenaarion syöttämiseen ja tarkasteluun tapahtumanäkymässä. Voit sen sijaan käyttää vertailunäkymää, josta voit tarkastella ja muokata helposti useiden kausien ja tilien summia samanaikaisesti. Asettelut voi myös määrittää niin, että voit syöttää ja tarkastella valuuttoja, kommentteja tai muita vaihtoehtoisia tietoja. Asettelujen avulla voit myös määrittää, mitkä kirjanpitodimensiot ja dimensiokuvaukset näytetään. Asettelut sisältävät myös skenaariorajoituksia, joilla voi määrittää mitkä mallin sarakkeet ovat muokattavissa ja mitkä niistä ovat käytettävissä Excelissä. Kun asettelu on määritetty, sille luodaan malli. Tämä malli sijastaan luo vastaavan Excel-mallin. Voit sitten muokata Excel-mallia ja lisätä siihen kaavoja ja muotoilua, ja ladata sen takaisin. Asettelut määritetään sitten kullekin vaihesäännölle **Budjettisuunnitteluprosessi**-sivulla. Asettelut siis korvaavat mallit, jotka määritettiin ja joita käytettiin samalla tavalla.
+Asettelut ovat uusi konsepti, joka korvaa Excel-mallin. Asettelut sisältävät sarakkeita, jotka määrittävät mitkä budjetti- tai todelliset tiedot ja kaudet tulisi näyttää. Asettelut ovat yhteisiä niin asiakasohjelmassa kuin Excel-apuohjelmassa. Tietojen syöttämisen tai katselun käyttökokemus on talous- ja toimintosovellusten asiakasohjelmassa siis parempi kuin AX 2012:ssa. Tietojen syöttö Finance-asiakasohjelmassa ei ole enää rajoitettu yhden skenaarion syöttämiseen ja tarkasteluun tapahtumanäkymässä. Voit sen sijaan käyttää vertailunäkymää, josta voit tarkastella ja muokata helposti useiden kausien ja tilien summia samanaikaisesti. Asettelut voi myös määrittää niin, että voit syöttää ja tarkastella valuuttoja, kommentteja tai muita vaihtoehtoisia tietoja. Asettelujen avulla voit myös määrittää, mitkä kirjanpitodimensiot ja dimensiokuvaukset näytetään. Asettelut sisältävät myös skenaariorajoituksia, joilla voi määrittää mitkä mallin sarakkeet ovat muokattavissa ja mitkä niistä ovat käytettävissä Excelissä. Kun asettelu on määritetty, sille luodaan malli. Tämä malli sijastaan luo vastaavan Excel-mallin. Voit sitten muokata Excel-mallia ja lisätä siihen kaavoja ja muotoilua, ja ladata sen takaisin. Asettelut määritetään sitten kullekin vaihesäännölle **Budjettisuunnitteluprosessi**-sivulla. Asettelut siis korvaavat mallit, jotka määritettiin ja joita käytettiin samalla tavalla.
 
 ### <a name="budget-planning-processes"></a>Budjettisuunnitteluprosessit
 
@@ -69,7 +69,7 @@ Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä b
    -   Budjettisuunnitelman skenaariot: Todellinen, Perusarvo, Budjettipyyntö, Budjetti hyväksytty
    -   Budjettisuunnitelman rivit kaikille vuoden 2017 skenaarioille ja Todelliset sekä vuodelle 2016 että vuodelle 2017
 
-   Finance and Operationsissa luodaan seuraavat sarakkeet:
+   Talous- ja toimintosovelluksissa luodaan seuraavat sarakkeet:
 
    | Sarakkeen nimi    | Budjettisuunnitelman skenaario | Sarakkeen ajanjakso | Vuoden siirtymä |
    |----------------|----------------------|--------------------|-------------|

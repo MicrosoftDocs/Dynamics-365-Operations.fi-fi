@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900677"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070406"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -82,7 +82,7 @@ Jos todellinen paino kirjataan pakkausasemalla kontin pakkausprosessien aikana, 
 > [!NOTE]
 > Koska **Pakkaus**-asetus aiheuttaa varaston päivittämisen keskimääräisellä keräillyllä paino, se voi käynnistää ristiriidan, joka voi aiheuttaa todellisen painon voiton/tappion oikaisun ja/tai eron varaston todellisen painon ja todellisen painon tunnisteen painon välillä.
 
-Sisäisissä varastonhallintaprosesseissa, kuten inventoinnin ja oikaisun korjauksissa, voidaan määrittää, taltioidaanko paino. Jos sitä ei taltioida, käytetään nimellispainoa. Muilla vaihtoehdoilla voi taltioida painon todellisen painoyksikön mukaan ja laskentamäärän mukaan.
+Sisäisissä prosesseissa, kuten inventoinnin ja oikaisun korjauksissa, voidaan määrittää, siepataanko paino. Jos sitä ei taltioida, käytetään nimellispainoa. Muilla vaihtoehdoilla voi taltioida painon todellisen painoyksikön mukaan ja laskentamäärän mukaan.
 
 Voit myös määrittää, miten paino taltioidaan. Todellisen painon tunnisteita seurataan ja käytetään painon taltioimiseen kahdessa pääasiallisessa työnkulussa. Toisessa työnkulussa todellisen painon tunnisteita ei seurata.
 
@@ -183,7 +183,7 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Muita rajoituksia ja toimintoja, jotka liittyvät todellisen painon tuotteen käsittelyyn varastonhallinnan avulla
 
 - Jos käyttäjää ei pyydetä määrittämään seurantadimensioita keräilyprosessien aikana, paino määritetään keskimääräisen painon perusteella. Näin tapahtuu esimerkiksi silloin, kun seurantadimensioiden yhdistelmää käytetään samassa sijainnissa ja sijainnissa on jäljellä vain yksi seurantadimension arvon sen jälkeen, kun käyttäjä on käsitellyt keräilyn.
-- Kun varasto on varattu tuotteelle, joka on määritetty varastonhallintaprosesseja varten, tehty varaus perustuu määritettyyn minimipainoon, vaikka tämä määrä on viimeksi käsitellyn määrän varastosaldo. Tämä toiminta poikkeaa niiden nimikkeiden toiminnasta, joita ei ole määritetty varastonhallintaprosesseja varten. Tähän rajoitukseen on yksi poikkeus. Kun tuotannon keräilyn sarjanumero-ohjatun todellisen painon tuotteen viimeksi käsitelty määrä kerätään, todellista painoa käytetään.
+- Kun varasto on varattu tuotteelle, joka on määritetty varastonhallintaprosesseja (WMS) varten, tehty varaus perustuu määritettyyn minimipainoon, vaikka tämä määrä on viimeksi käsitellyn määrän varastosaldo. Tämä toiminta poikkeaa niiden nimikkeiden toiminnasta, joita ei ole määritetty WMS:ää varten. Tähän rajoitukseen on yksi poikkeus. Kun tuotannon keräilyn sarjanumero-ohjatun todellisen painon tuotteen viimeksi käsitelty määrä kerätään, todellista painoa käytetään.
 - Varaston todellista painoa ei käytetä prosesseissa, joissa painoa käytetään kapasiteettilaskemien osana (kuten aallon raja-arvot, työn pisimmät tauot, suurin kontti ja sijainnin kuormakapasiteetti). Prosessit perustuvat sen sijaan tuotteelle määritettyyn fyysiseen käsittelypainoon.
 - Kaupallisia toimintoja ei yleisesti ottaen tueta todellisen painon tuotteissa.
 - Todellisen painon tuotteiden varaston tilaa ei voi päivittää **Varaston tilamuutos** -kohdassa.

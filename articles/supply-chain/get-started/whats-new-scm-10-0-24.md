@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 94e465616338b0c905ccf6b8244324c18c7a59e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849442"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166872"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.24 (helmikuu 2022)
 
@@ -46,7 +46,7 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 | Moduuli | Ominaisuuden nimi ominaisuuksienhallinnassa | Lisätietoja |
 |---|---|---|
 | Tuotannonhallinta | Tuotantotilausten käytettävissä olevan materiaalin saatavuustarkistus | Tämä ominaisuus nopeuttaa **tuotantotilausten avaamista vapautus**-sivulle, joka on käytettävissä **tuotannonhallinnan** työtilassa. Jos tätä toimintoa ei ole, järjestelmä tarkistaa automaattisesti, onko kaikkien luetteloitujen tuotantotilausten käytettävissä materiaaleja heti, kun avaat sivun. Tämä voi kestää huomattavan kauan, jos tilauksia on paljon. Kun tämä ominaisuus on käytössä, järjestelmä käyttää työkalurivin painiketta, jonka avulla voit käynnistää materiaalien tarkistamisen vain valittujen tilausten osalta ja tarvittaessa. |
-| Tuotannonhallinta | (Esiversio) Rekisteröi materiaalin kulutus tuotannon käyttöliittymässä (muu kuin VHJ) | Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Tämä toiminto tukee vain nimikkeitä, joita ei ole otettu käyttöön varaston lisäprosessien (WMS) käytössä. WMS-käytössä olevien nimikkeiden tuki on ajoitettu tulevaan versioon.<p>Joidenkin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen, että materiaalista ei ole mitään materiaalia valmistava. |
+| Tuotannonhallinta | Rekisteröi materiaalinkulutus tuotannon käyttöliittymässä (muu kuin WMS) | Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Tämä toiminto tukee vain nimikkeitä, joita ei ole otettu käyttöön varastonhallintaprosessien (WMS) käytössä. WMS-käytössä olevien nimikkeiden tuki on ajoitettu tulevaan versioon.<p>Joidenkin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen, että materiaalista ei ole mitään materiaalia valmistava. |
 | Tuotannonhallinta | Raportoi valmiiksi pilvi- ja reunamittakaavayksikön varastonhallinnan työmäärästä | Tämän ominaisuuden avulla työntekijät voivat Warehouse Management -mobiilisovelluksen avulla ilmoittaa tuotannon tai erätilauksen valmiiksi, kun sovellus on käynnissä varastonhallinnan kuormitusta pilvipalvelussa tai reunalla. Lisätietoja on kohdassa [Ilmoita valmiiksi ja aseta mittayksikköön](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Varastonhallinta   | Uudet kuormasuunnittelun työtilan sivut | Ottaa käyttöön uudet kuormasuunnittelun työtilan sivut: **Saapuvan kuormasuunnittelun työtila** ja **Lähtevän kuormasuunnittelun työtila**. |
 
@@ -68,9 +68,9 @@ Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merki
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (helmikuu 2022) käyttöympäristön päivitysversio 10.0.24.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 sisältää Platform updateja. Lisätietoja on kohdassa [Talous- ja toimintosovellusten (helmikuu 2022) käyttöympäristön päivitysversio 10.0.24](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -94,3 +94,4 @@ Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

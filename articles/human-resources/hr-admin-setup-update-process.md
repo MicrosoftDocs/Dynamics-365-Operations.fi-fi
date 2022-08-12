@@ -14,18 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b9ab27b443e5ec675ea03e13aa7be4ea84bfb45
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722238"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178440"
 ---
 # <a name="update-process"></a>Päivitysprosessi
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Kohde:** Human Resources itsenäisessä infrastruktuurissa_ 
 
+> [!NOTE]
+> Kesäkuusta 2022 alkaen uusia Human Resources -ympäristöjä ei voi valmistella erillisessä Human Resources -infrastruktuurissa, eikä siinä voi myöskään luoda uusia Microsoft Dynamics Lifecycle Services (LCS) -projekteja. Asiakkaat voiva ottaa Human Resources -ympäristöt voidaan käyttöön vain talous- ja toimintosovellusinfrastruktuurissa. Lisätietoja kohdassa [Human Resourcesin valmisteleminen talous- ja toimintosovellusinfrastruktuurissa](/hr-admin-setup-provision-fo.md).
 
+> [!IMPORTANT]
+> Talous- ja toimintosovellusinfrastruktuurin päivitys- ja hotfix-korjausprosessi eroaa erillisen Human Resources -version päivitys- ja hotfix-korjausprosessista. Lisätietoja päivitysprosessista on kohdassa [Talous- ja toimintosovellusten uusimpaan päivitykseen siirtymisprosessi](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Lisätietoja hotfix-korjauksista on kohdassa [Päivitysten lataaminen Lifecycle Servicesistä (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
 
 Microsoft Dynamics 365 Human Resourceson todellinen ohjelmisto palveluna (SaaS), joka tarjoaa jatkuvia ja kosketusvapaita palvelupäivityksiä. Nämä päivitykset sisältävät sekä sovellus -että ympäristömuutoksia, jotka usein tarjoavat tärkeitä parannuksia palveluun, lakisääteiset päivitykset mukaan luettuna.
 
@@ -37,16 +41,14 @@ Päivitykset julkaistaan säännöllisesti kaikkiin ympäristöihin. Human Resou
 
 Human Resources -päivitykset tehdään kaikissa ympäristöissä automaattisesti. Human Resourcesiin liittyy kahdenlaisia julkaisuja:
 
-- **Palvelupäivitykset**: Kahden viikon välein ilmestyvät päivitykset, joissa on virheiden korjauksia ja uusia toimintoja. Palvelupäivityksiin kuuluvat myös soveltuvat Platformin päivitykset, kun ne julkaistaan. Lisätietoja ympäristön julkaisuista esitetään kohdassa [Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Kahdesti viikossa ilmestyvillä päivityksillä on vaiheittainen maailmanlaajuinen käyttöönotto alueiden välillä. Lisätietoja kahdesti viikossa ilmestyvistä päivityksistä esitetään kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md).
-
-    Kaikki tuetut palvelinkeskukset päivittyvät kahden viikon välein, ellei muuta mainita. Alueet Yhdysvallat, Australia, Eurooppa, Yhdistynyt kuningaskunta ja Kanada kuuluvat kahdesti viikossa ilmestyvien päivitysten piiriin. 
+- **Palvelupäivitykset**: Kahden viikon välein ilmestyvät päivitykset, joissa on virheiden korjauksia ja uusia toimintoja. Palvelupäivityksiä ovat myös soveltuvat Platform update -päivitykset, kun ne julkaistaan. Lisätietoja ympäristön julkaisuista esitetään kohdassa [Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Päivityksillä on vaiheittainen maailmanlaajuinen käyttöönotto eri alueilla. Lisätietoja päivityksistä on kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md).
 
 - **Dataverse -ratkaisujen päivitykset**: Nämä päivitykset suoritetaan noin kuuden viikon välein tarpeen mukaan. Niihin kuuluu uusia yksikköjä ja muutoksia olemassa oleviin yksikköihin Dataversessä. Nämä päivitykset julkaistaan samoilla alueilla kuin kahdesti viikossa ilmestyvät päivitykset, ja niiden replikointi kaikissa palvelinkeskuksissa kestää noin kuusi viikkoa. Ratkaisupäivitykset saattavat olla linjassa kahdesti viikossa ilmestyvien palvelupäivitysten kanssa.
 
 > [!NOTE]
 > Ratkaisupäivitykset ovat käytettävissä kaikissa palvelinkeskuksissa, kun ne on julkaistu. Jos et halua odottaa päivitysten automaattista replikointia, voit suorittaa nämä päivitykset manuaalisesti minkä tahansa palvelinkeskuksen missä tahansa ympäristössä.
 
-Tarvittaessa Human Resources tarjoaa myös seuraavanlaisia korjauksia:
+Tarvittaessa Human Resources toimittaa seuraavanlaisia korjauksia:
 
 - **Aliversio (hotfix)**: Ohjelmakorjauksia, jotka voidaan suorittaa joko kahdesti viikossa ilmestyvien palvelupäivitysjulkaisun yhteydessä tai erillään siitä
 
@@ -83,11 +85,11 @@ Tietoa siitä, mitä Human Resourcesin osalta suunnitellaan ja mitä siihen liit
 
 Voit varmentaa esikatseluominaisuudet eristysympäristössä, ennen kuin otat ne käyttöön tuotantoympäristössä. Lisätietoja uusien ominaisuuksien käyttöönotosta on kohdassa [ominaisuuksien hallinnan yleiskuvaus](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Kaikki uudet toiminnot pysyvät esiversiossa ainakin 30 päivää ja yleensä 30–60 päivää. Tärkeimmät toiminnot ovat yleensä saatavana kunkin vuoden lokakuussa ja huhtikuussa esiversiojakson jälkeen. Voit ottaa uudet ominaisuudet käyttöön heti, kun näet ne Toimintojen hallinta -työtilassa. Jotkin toiminnot on ehkä otettu käyttöön oletusarvoisesti.
+Kaikki uudet toiminnot pysyvät esiversiossa ainakin 30 päivää ja yleensä 30–60 päivää. Tärkeimmät toiminnot ovat yleensä saatavana kunkin vuoden lokakuussa ja huhtikuussa esiversiojakson jälkeen. Voit ottaa uudet ominaisuudet käyttöön heti, kun näet ne **Toimintojen hallinta** -työtilassa. Jotkin toiminnot on ehkä otettu käyttöön oletusarvoisesti.
 
 Joskus keskeinen toiminto on otettu käyttöön oletusarvoisesti eikä sitä voi poistaa käytöstä (esimerkiksi Toimintojen hallinta -työtilassa).
 
-Kun toiminto on yleisesti saatavana, se voidaan ottaa käyttöön tai poistaa käytöstä tuotantoympäristöissä. Toimintojen hallinta -työtila ilmaisee, milloin esiversiotoiminto tulee pakolliseksi. Tämä päivämäärä on yleensä 1. lokakuuta tai 1. huhtikuuta eli ne vastaavat puolivuotisia julkaisusuunnitelmia. Pakollisia toimintoja ei voi poistaa käytöstä. Toiminnon voi ottaa käyttöön ja poistaa käytöstä kaikissa ympäristöissä siihen saakka, että muuttuu pakolliseksi.
+Kun toiminto on yleisesti saatavana, se voidaan ottaa käyttöön tai poistaa käytöstä tuotantoympäristöissä. **Toimintojen hallinta** -työtila ilmaisee, milloin esiversiotoiminto tulee pakolliseksi. Tämä päivämäärä on yleensä 1. lokakuuta tai 1. huhtikuuta eli ne vastaavat puolivuotisia julkaisusuunnitelmia. Pakollisia toimintoja ei voi poistaa käytöstä. Toiminnon voi ottaa käyttöön ja poistaa käytöstä kaikissa ympäristöissä siihen saakka, että muuttuu pakolliseksi.
 
 Suosittelemme vahvasti ominaisuuksien esikatselua eristys- tai kokeiluympäristössä. On parasta luoda kopio nykyisestä tuotantoympäristöstä tai tietokannasta eristetyssä ympäristössä, jotta voit tutustua uusien ominaisuuksien kokonaiskokemukseen tietojasi käyttäen.
 

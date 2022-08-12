@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013552"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177145"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Yleisen varastokirjanpidon käytön aloittaminen
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Yleisen varastokirjanpidon avulla voit suorittaa useita varastokirjanpitoja määrittämissäsi yleisissä varastokirjanpitorekistereissä. Kukin yleinen varastokirjanpitotapahtuma liitetään *käytäntöön*. Yleissopimus on kokoelma seuraavantyyppisiä kirjanpitokäytäntöjä:
 
@@ -69,28 +67,34 @@ Ennen kuin voit ottaa apuohjelmatoiminnon käyttöön, sinun on integroitava Mic
 
 Lisätietoja on ohjeaiheessa [Salliminen ympäristön käyttöönoton jälkeen](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Lisäosan asentaminen
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a>Apuohjelman ja ratkaisun asentaminen tai päivittäminen
 
-Asenna lisäosa noudattamalla seuraavia ohjeita, jotta voit käyttää yleistä varastokirjanpitoa.
+Yleinen varastokirjanpito -apuohjelma ja -ratkaisu asennetaan tai päivitetään seuraavien ohjeiden mukaisesti. Noudatettavat ohjeet määräytyvät sen mukaan, onko kyse ensiasennuksesta tai aiemmin asennetun ratkaisun päivityksestä.
+
+- Jos apuohjelmaa ei ole asennettu koskaan aiemmin, noudata sen apuohjelman että ratkaisun asennusohjeita.
+- Jos yleinen varastokirjanpito on jo käytössä mutta ratkaisu on päivitettävä [Power Platform -hallintakeskuksessa](https://admin.powerplatform.microsoft.com), vain vaihe 6 on suoritettava ja muut vaiheet voidaan ohittaa.
+
+Apuohjelman ja ratkaisun asentaminen tai päivittäminen:
 
 1. Kirjaudu sisään [LCS:ään](https://lcs.dynamics.com/Logon/Index).
 1. Avaa LCS-ympäristö, johon haluat lisätä palvelun.
 1. Valitse **Kaikki tiedot**.
-1. Siirry **Power Platform -integrointiin** ja valitse **Asetukset**.
+1. Valitse ensin **Power Platform -integrointi** ja sitten **Asetukset**.
 1. Valitse valintaruutu **Power platform -ympäristön asetus** -valintaikkunassa ja valitse sitten **Asetukset**. Asetusten määritys kestää yleensä 60 - 90 minuuttia.
-1. Kun Microsoft Power Platformin ympäristön asetukset on määritetty, kirjaudu sisään [Power Platform -hallintakeskukseen](https://admin.powerplatform.microsoft.com) ja asenna yleisen varastolaskennan apuohjelma seuraavasti:
-   1. Valitse ympäristö, johon haluat asentaa apuohjelman.
+1. Kun Microsoft Power Platformin ympäristömääritys on valmis, kirjaudu sisään [Power Platform -hallintakeskukseen](https://admin.powerplatform.microsoft.com) ja asenna tai päivitä Yleinen varastokirjanpito -ratkaisu seuraavasti:
+   1. Valitse ympäristö, johon ratkaisu asennetaan tai jossa se päivitetään.
    1. Valitse **Dynamics 365 -sovellukset**.
    1. Valitse **Asenna sovellus**.
    1. Valitse **Dynamics 365:n yleinen varastokirjanpito**.
    1. Asenna valitsemalla **Seuraava**.
-1. Siirry takaisin LCS-ympäristöön. Valitse **Ympäristöapuohjelmat**-pikavälilehdessä **Asenna uusi apuohjelma**.
+1. Kun ratkaisu on asennettu, palaa LCS-ympäristöön. Valitse **Ympäristöapuohjelmat**-pikavälilehdessä **Asenna uusi apuohjelma**.
 1. Valitse **Yleinen varastokirjanpito**.
 1. Noudata asennusoppaan ohjeita ja hyväksy käyttöehdot.
 1. Valitse **Asenna**.
 1. **Ympäristön apuohjelmat** -pikavälilehdessä näkyy, että yleistä varastokirjanpitoa asennetaan. Muutaman minuutin kuluttua tilan pitäisi muuttua tilasta *Asennetaan* tilaan *Asennettu*. (Sivu on ehkä päivitettävä, jotta näet tämän muutoksen.) Tässä vaiheessa yleinen varastokirjanpito on valmis käytettäväksi.
 
 Jos Dataverse-asennuksen oletuskieli ei ole englanti, noudata seuraavia ohjeita:
+
 1. Siirry kohtaan **Lisäasetukset \> Hallinta \> Kielet**.
 1. Valitse *englanti* (*LanguageCode=1033*) ja valitse **Ota käyttöön**.
 

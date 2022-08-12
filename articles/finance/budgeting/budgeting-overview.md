@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6a00bdae34e2aebcc4a015626eb044d90cd2887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db15c52ddde08bcc9d390c51efc676c20aac0a7e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864394"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067426"
 ---
 # <a name="budgeting-home-page"></a>Budjetoinnin aloitussivu
 
@@ -38,7 +38,7 @@ Yrityksen resurssien suunnittelujakso koostuu yleensä suunnittelu-, budjetointi
 
 Sekä pitkän aikavälin strategisen suunnittelun että vuosittaisen budjetin suunnittelun prosesseja tuetaan budjettisuunnitelman avulla. Budjettisuunnitelman asiakirjat on integroitu tiiviisti Microsoft Exceliin. Käyttäjien määrittämien rahallisten ja määrällisten skenaarioiden määrää ei rajoiteta. Käyttäjät voivat myös määrittää budjetoinnin organisaatiohierarkian tukemaan sekä ylhäältä alaspäin että alhaalta ylöspäin suuntautuvia budjetointimenetelmiä. Kun budjetti on laadittu ja hyväksytty sovelluksessa, voit muuntaa budjettisuunnitelman budjettirekisteritapahtumaksi. Budjettirekisteritapahtumat tarjoavat työkaluja budjetin ylläpitämiseen ja summien jäljittämiseen budjettikoodien avulla. Budjettirekisteritapahtumien avulla voit korjata alkuperäisiä budjetteja, suorittaa siirtoja ja tehdä budjettisummien siirtokirjauksia edelliseltä vuodelta. Yritys voi ottaa muodostettuun budjettiin perustuvan budjetin hallinnan käyttöön. Hallinnan taso määräytyy organisaatiokulttuurin ja organisaation kypsyystason mukaan. Alhaisen kypsyystason organisaatiot voivat antaa budjetin olla koskemattomana, ja ne ehkä enemminkin reagoivat kuin toimivat ennakoivasti, jos budjetti ei vastaa odotuksia. Toiset organisaatiot voivat ottaa käyttöön budjetin hallintakäytännöt, jotka estävät käyttäjien ostot, jos budjettirahoitusta ei ole.
 
-Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaatiokulttuuri, jossa työntekijöille kerrotaan organisaation tavoitteista ja siitä, miten kyseisiä tavoitteita voidaan toteuttaa erilaisten käytäntöjen avulla. Tällainen käytäntö voi olla esimerkiksi verkkotapaamisten järjestäminen matkustamisen sijaan aina, kun se on mahdollista. Sovellus sisältää budjetin hallintakehikon. Sen avulla yritysjohto voi valita joko tiukan hallinnan (joka estää budjetin ylittävät kirjaukset) tai pehmeän hallinnan (jossa käyttäjiä varoitetaan budjettirahoituksen ylittymisestä, mutta käyttäjät voivat itse päättää, mitä he tekevät). Käytössä on myös juoksevat ennusteet. Juoksevassa ennusteessa todellisia kuluja verrataan säännöllisesti budjettiin, ja sen perusteella määritetään, miten yritys toimii budjettiin verrattuna. Juoksevan ennusteen perusteella voidaan tunnistaa myös trendejä. Finance and Operations tukee juoksevia ennusteita budjettisuunnitelman asiakirjan alkuperäisinä suunnittelutehtävinä. Juoksevat ennusteet voidaan tehdä rinnakkain tulevan budjettijakson suunnittelun kanssa.
+Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaatiokulttuuri, jossa työntekijöille kerrotaan organisaation tavoitteista ja siitä, miten kyseisiä tavoitteita voidaan toteuttaa erilaisten käytäntöjen avulla. Tällainen käytäntö voi olla esimerkiksi verkkotapaamisten järjestäminen matkustamisen sijaan aina, kun se on mahdollista. Sovellus sisältää budjetin hallintakehikon. Sen avulla yritysjohto voi valita joko tiukan hallinnan (joka estää budjetin ylittävät kirjaukset) tai pehmeän hallinnan (jossa käyttäjiä varoitetaan budjettirahoituksen ylittymisestä, mutta käyttäjät voivat itse päättää, mitä he tekevät). Käytössä on myös juoksevat ennusteet. Juoksevassa ennusteessa todellisia kuluja verrataan säännöllisesti budjettiin, ja sen perusteella määritetään, miten yritys toimii budjettiin verrattuna. Juoksevan ennusteen perusteella voidaan tunnistaa myös trendejä. Talous- ja toimintosovellukset tukevat juoksevia ennusteita budjettisuunnitteluasiakirjan alkuperäisinä suunnittelutehtävinä. Juoksevat ennusteet voidaan tehdä rinnakkain tulevan budjettijakson suunnittelun kanssa.
 
 -   [Budjetoinnin yleiskatsaus](basic-budgeting-overview-configuration.md)
 -   [Budjetin hallinnan yleiskatsaus](budget-control-overview-configuration.md)
@@ -72,3 +72,4 @@ Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja m
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

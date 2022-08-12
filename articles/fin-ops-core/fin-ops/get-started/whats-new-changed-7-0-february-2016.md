@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e92e6aeab949567e65a13ebdd92f0e5b306ccd30
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f9e6472fa9024f19b5c35e91b3c7c36eb311bc31
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861702"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125079"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
 
@@ -1028,9 +1028,10 @@ Uusia ominaisuuksia ei ole lisätty.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset](whats-new-changed.md)
+[Talous- ja toimintosovellusten aloitussivun uudet ominaisuudet ja muutokset](whats-new-changed.md)
 
 [Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

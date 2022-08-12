@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855929"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070316"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Ostotilausten saapuvien kuormien varastokäsittely
 
@@ -56,7 +56,7 @@ Seuraavassa kuvassa näkyy tyypillinen kulku, jolla käsitellään saapuvia kuor
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Saapuvaan kuormaan saapuvien nimikemäärien rekisteröiminen
 
-Microsoft Dynamics 365 Supply Chain Management tukee useita toiminnallisia lähestymistapoja tilattujen tuotteiden saapumisen kirjaamiseen. Tämän vuoksi voit määrittää järjestelmän vastaamaan tiettyjä liiketoiminnan vaatimuksia. Tässä osassa kuvataan saapuvien nimikkeiden määrien rekisteröiminen matkaviestimen avulla, kun järjestelmän laajennettu varastonhallinta on otettu käyttöön. On kuitenkin olemassa vaihtoehtoinen kulku, joka perustuu nimikkeen saapumisen kirjauskansioon mobiililaitteen asemesta. Lue lisätietoja tästä kulusta kohdasta [Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota](tasks/register-items-advanced-warehousing.md).
+Microsoft Dynamics 365 Supply Chain Management tukee useita toiminnallisia lähestymistapoja tilattujen tuotteiden saapumisen kirjaamiseen. Tämän vuoksi voit määrittää järjestelmän vastaamaan tiettyjä liiketoiminnan vaatimuksia. Tässä osassa kuvataan saapuvien nimikkeiden määrien rekisteröiminen matkaviestimen avulla, kun järjestelmän varastonhallintaprosessit (WMs) on otettu käyttöön. On kuitenkin olemassa vaihtoehtoinen kulku, joka perustuu nimikkeen saapumisen kirjauskansioon mobiililaitteen asemesta. Lisätietoja työnkulusta on kohdassa[Varastohallintaprosessit käyttöönottaneiden nimikkeiden rekisteröinti nimikkeen saapumisen kirjauskansion avulla](tasks/register-items-advanced-warehousing.md).
 
 Kun saapuva kuorma saapuu varastoon ensimmäisen kerran, varastotyöntekijöiden on rekisteröitävä lähetykseen sisältyvät nimikemäärät. Yleensä he käyttävät käsiskannereita. Tämä työnkulku on käytettävissä vain, jos järjestelmässä on seuraavat nimikkeet:
 

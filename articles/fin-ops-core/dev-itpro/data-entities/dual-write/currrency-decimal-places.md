@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 809906c3926b200e7beac84e780314aec1f8c2ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 85b3a45c054144e414aebb28b3d8080ab295f52f
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855584"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112271"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Valuutta-tietotyypin siirto kaksoiskirjoitusta varten
 
@@ -29,7 +29,7 @@ Desimaalien määrään muuttamisessa on kaksi vaihetta:
 1. Siirtoa pyydetään Microsoftilta.
 2. Desimaalien määrää muutetaan Dataversessa.
 
-Taloushallinnon ja toimintojen sovelluksen ja Dataversen on tuettava samaa valuutta-arvojen desimaalimäärää. Muussa tapauksessa tietoja menetetään, kun tietoja synkronoidaan sovellusten välillä. Vaikka siirtoprosessi määrittää uudelleen tavan, jolla valuutta- ja vaihtokurssiarvot tallennetaan, itse tiedot eivät muutu. Kun siirto on valmis, desimaalien määrää voi lisätä valuuttakoodeissa ja hinnoittelussa, minkä lisäksi käyttäjien antamien ja tarkastelemien tietojen desimaalitarkkuus voi parantua.
+Talous- ja toimintosovelluksen sekä Dataversen on tuettava samaa valuutta-arvojen desimaalimäärää. Muussa tapauksessa tietoja menetetään, kun tietoja synkronoidaan sovellusten välillä. Vaikka siirtoprosessi määrittää uudelleen tavan, jolla valuutta- ja vaihtokurssiarvot tallennetaan, itse tiedot eivät muutu. Kun siirto on valmis, desimaalien määrää voi lisätä valuuttakoodeissa ja hinnoittelussa, minkä lisäksi käyttäjien antamien ja tarkastelemien tietojen desimaalitarkkuus voi parantua.
 
 Siirto on valinnainen toiminto. Jos desimaalien lisäämisestä saattaa olla hyötyä, siirtoa kannattaa harkita. Organisaatioiden, jotka eivät tarvitse yli neljän desimaalin arvoja, ei tarvitse siirtyä.
 
@@ -37,7 +37,7 @@ Siirto on valinnainen toiminto. Jos desimaalien lisäämisestä saattaa olla hy�
 
 Dataversen nykyisten valuuttasarakkeiden tallennustila hyväksyy enintään neljä desimaalia. Tämän vuoksi valuutta-arvot kopioidaan siirtoprosessin aikana tietokannan uusiin, sisäisiin sarakkeisiin. Tämä prosessi jatkuu siihen saakka, että kaikki tiedot on siirretty. Vaikka siirron päätyttyä uudet tallennustilatyypit korvaavat sisäisesti vanhat tallennustilat, tietoarvot eivät ole muuttuneet. Valuuttasarakkeet voivat tämän jälkeen tukea enintään 10 desimaalia. Dataversen käyttöä voi jatkaa siirtoprosessin aikana ilman keskeytyksiä.
 
-Valuuttakursseja muokataan samanaikaisesti siten, että ne tukevat enintään 12 desimaalia nykyisen 10 desimaalin rajan sijaan. Tämä muutos on välttämätön, jotta desimaalien määrä on sama taloushallinnon ja toimintojen sovelluksessa ja Dataversessa.
+Valuuttakursseja muokataan samanaikaisesti siten, että ne tukevat enintään 12 desimaalia nykyisen 10 desimaalin rajan sijaan. Tämä muutos on välttämätön, jotta desimaalien määrä on sama talous- ja toimintosovelluksessa sekä Dataversessa.
 
 Siirto ei muuta tietoja millään tavalla. Kun valuutta- ja vaihtokurssisarakkeet on muunnettu, järjestelmänvalvojat voivat määrittää järjestelmän käyttämään valuuttasarakkeissa 10 desimaalia. Se tehdään määrittämällä kunkin tapahtuman valuutan ja hinnoittelun desimaalien määrä.
 
@@ -100,3 +100,4 @@ Seuraavassa taulussa on lisätietoja oletusvaluutan desimaalitarkkuusmallista si
 |          | Tietokannan ja tietokantakyselyn tulosten käyttöliittymän enimmäisdesimaalitarkkuus | 10 numeroa. Kuitenkin vain neljä on merkittäviä, kun kaikki on nollia neljän desimaalin ulkopuolella. Tämä helpottaa ja nopeuttaa organisaation siirtoa tarpeen mukaan. | 10 numeroa      | 10 numeroa     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

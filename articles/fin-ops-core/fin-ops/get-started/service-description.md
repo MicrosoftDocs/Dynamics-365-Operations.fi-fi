@@ -1,6 +1,6 @@
 ---
 title: Talous- ja toimintosovellusten palvelukuvaus
-description: Tässä artikkelissa esitetään talous- ja toimintosovellusten palvelukuvaus.
+description: Tässä artikkelissa on talous- ja toimintosovellusten palvelukuvaus.
 author: tomhig
 ms.date: 04/27/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 756895ab0ccdbd2bc42f0a750ad9895ee7b284a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9e5160cc3961703475ffb8dc4a4daf2ae872aaba
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847157"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124922"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten palvelukuvaus
 
@@ -37,8 +37,8 @@ Yhdessä [yritystietojen](/power-bi/fundamentals/power-bi-service-overview), [in
 
 Asiakkaat valitsevat ratkaisuvaihtoehtonsa vaatimustensa perusteella. Ne määrittävät, kehittävät ja testaavat ratkaisunsa yhteistyössä käyttöönottokumppaninsa kanssa käyttämällä [Microsoft Dynamics Lifecycle Servicesin (LCS)](../../dev-itpro/lifecycle-services/lcs.md) työkaluja ja parhaita käytäntöjä. Yleisiä skenaarioita on neljä:
 
-- Talous- ja toimintovakiosovellusten käyttövalmis konfigurointi (ei laajennuksia)
-- Talous- ja toimintosovellusten konfigurointi, joka sisältää vähintään yhden ISV-ratkaisun
+- Talous- ja toimintovakiosovellusten käyttövalmiit määritykset (ei laajennuksia)
+- Talous- ja toimintosovellusten määritykset, jotka sisältävät vähintään yhden ISV-ratkaisun
 - Talous- ja toimintosovellusten määritys, johon kuuluu vähintään yksi asiakaskohtainen laajennus
 - Talous- ja toimintosovellusten määritys, johon kuuluu yhdistelmä asiakaskohtaisista laajennuksista ja vähintään yhdestä ISV-ratkaisusta
 
@@ -93,7 +93,7 @@ Microsoft määrittää asiakkaan tuotantoympäristöt, jotka mitoitetaan käsit
 
 Varmistaakseen, että toteutus on määritetty korkeaa suorituskykyä varten asiakkaiden on suoritettava seuraavat tehtävät:
 
-- Tarkkojen talous- ja toimintototeutuksen käyttötietojen antaminen [LCS:n tilauksen arviointityökalussa](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- Tarkkojen talous- ja toimintosovellusten toteutuksen käyttötietojen antaminen [LCS:n tilauksen arviointityökalussa](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Suorituskyvyn ja koon laajennusten kehittäminen ja testaus
 - Tietomääritysten asianmukainen testaus suorituskyvyn osalta
 - Skaalautuvuuden varmistaminen suorittamalla [suorituskykytestausta](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) ennen lopullista käyttöönottoa.
@@ -182,7 +182,7 @@ LCS tarjoaa [valmistelua itsepalveluna](../../dev-itpro/deployment/infrastructur
 
 ## <a name="data-backup-and-retention"></a>Tietojen varmuuskopiointi ja säilytys
 
-SaaS-tilauksen Talous- ja toimintoympäristöjen tietokannat suojataan automaattisin varmuuskopioin. Tuotantoympäristöjen osalta automaattisia varmuuskopioita säilytetään 28 päivää, ellei Microsoft suorita palautusta. Eristysympäristöjen (taso 2–) osalta ne säilytetään seitsemän päivää. Tuotantoympäristön palautus voidaan suorittaa, jos tapahtuu virhe minkä tahansa suunnitellun ylläpitopäivityksen yhteydessä.
+SaaS-tilauksen talous- ja toimintoympäristöjen tietokannat suojataan automaattisin varmuuskopioin. Tuotantoympäristöjen osalta automaattisia varmuuskopioita säilytetään 28 päivää, ellei Microsoft suorita palautusta. Eristysympäristöjen (taso 2–) osalta ne säilytetään seitsemän päivää. Tuotantoympäristön palautus voidaan suorittaa, jos tapahtuu virhe minkä tahansa suunnitellun ylläpitopäivityksen yhteydessä.
 
 Lisätietoja automaattisista varmuuskopioista: [Automaattiset varmuuskopiot – Azuren SQL-tietokanta ja SQL:n hallittu esiintymä](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -317,7 +317,7 @@ Tekninen tuki on saatavilla markkina-alueilla, joilla tarjotaan talous- ja toimi
 - [Integroitu tekninen tuki](../../dev-itpro/lifecycle-services/support-experience.md) talous- ja toimintosovelluksissa
 - [Tuen pilvipalvelu](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md) LCS:ssä
 
-Microsoft tarjoaa talous- ja toimintoasiakkaille kolme tukisopimusta: Premier, suora ammattilaistuki ja tilaukseen sisältyvä tuki. Tuen taso vaihtelee sopimuksen mukaan. Seuraavassa taulukossa esitetään kolmen sopimuksen vertailu.
+Microsoft tarjoaa talous- ja toimintosovellusten asiakkaille kolme tukisopimusta: Premier, suora ammattilaistuki ja tilaukseen sisältyvä tuki. Tuen taso vaihtelee sopimuksen mukaan. Seuraavassa taulukossa esitetään kolmen sopimuksen vertailu.
 
 | Tukitoiminto | Premier | Suora Professional-tuki | Tilaus |
 |---|---|---|---|
@@ -340,7 +340,7 @@ Microsoft on sitoutunut palvelun 99,9-prosenttiseen kuukausittaiseen käytettäv
 
 ## <a name="important-resources"></a>Tärkeät resurssit
 
-- **[Trust Center](https://www.microsoft.com/trust-center)** – Hanki tietoja siitä, mihin talous- ja toimintotietosi on tallennettu sekä lisätietoja yksityisyyden, vaatimustenmukaisuuden ja suojauksen menettelyistä.
+- **[Luottamuskeskus](https://www.microsoft.com/trust-center)** – Hanki tietoja siitä, mihin talous- ja toimintotietosi on tallennettu sekä lisätietoja yksityisyyden, vaatimustenmukaisuuden ja suojauksen menettelyistä.
 - **[Käyttöoikeusehdot ja -dokumentaatio](https://www.microsoftvolumelicensing.com/)** – Hanki nopea pääsy käyttöoikeuksien ehtoihin, edellytyksiin ja täydentäviin tietoihin, jotka ovat merkityksellisiä Microsoftin volyymikäyttöoikeusohjelmien kautta lisensoitujen tuotteiden ja palvelujen käytön kannalta.
 - **[Käyttöoikeusehdot](https://www.microsoft.com/licensing/product-licensing/)** – Tämän sivun resurssit määrittävät niiden ohjelmisto- ja verkkopalvelutuotteiden ehdot ja edellytykset, jotka ostat Microsoftin kaupallisten lisensointiohjelmien kautta.
 - **[Microsoftin elinkaarikäytäntö](/lifecycle/)** – Tämä sivu tarjoaa yhdenmukaisia ja ennustettavissa olevia ohjeita tuen käytettävyydestä koko tuotteen elinkaaren ajalta.
@@ -403,7 +403,7 @@ Lisätietoja tasoista 2–5: [Oikean tason 2 tai sitä korkeamman tason ympäris
 
 ### <a name="production-instance"></a>Tuotantoesiintymä
 
-Talous- ja toimintoympäristö, jota asiakas käyttää "suorien" päivittäisten tapahtumiensa ja liiketoimintaprosessiensa hallintaan.
+Talous- ja toimintosovellusympäristö, jota asiakas käyttää "suorien" päivittäisten tapahtumiensa ja liiketoimintaprosessiensa hallintaan.
 
 ### <a name="sandbox-environment"></a>Eristysympäristö
 
@@ -411,7 +411,7 @@ Muu kuin tuotantoympäristö, jota asiakas käyttää esittelyihin, koulutuksen,
 
 ### <a name="service"></a>Palvelu
 
-Mikä tahansa talous- ja toimintosovelluksiin sisältyvä ydinprosessi.
+Mikä tahansa talous- ja toimintosovelluksiin sisältyvä ydinpalvelu.
 
 ### <a name="service-level-agreement-sla-for-microsoft-online-services"></a>Microsoftin verkkopalveluita koskeva palvelutasosopimus (SLA)
 
@@ -419,7 +419,7 @@ Microsoftin verkkopalveluihin sovellettava palvelutasosopimus. Lisätietoja: [Pa
 
 ### <a name="service-update"></a>Palvelupäivitys
 
-Microsoft huoltaa talous- ja toimintoympäristöjä jatkuvasti palvelupäivitysten kautta. Asiakkaat määrittävät oman palvelupäivityskalenterinsa liiketoiminnan tarpeiden mukaan. Lisätietoja: [Yhden version palvelupäivitykset](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+Microsoft huoltaa talous- ja toimintosovellusympäristöjä jatkuvasti palvelupäivitysten kautta. Asiakkaat määrittävät oman palvelupäivityskalenterinsa liiketoiminnan tarpeiden mukaan. Lisätietoja: [Yhden version palvelupäivitykset](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
 
@@ -427,4 +427,5 @@ Kehys, joka ohjaa toteutusta järjestelmällisesti arvioinneilla kriittisissä v
 
 ### <a name="user"></a>Käyttäjä
 
-Yksittäinen henkilö, joka käyttää talous- ja toimintoympäristöjä ja joka liittyy asiakkaan vuokraajaan.
+Yksittäinen henkilö, joka käyttää talous- ja toimintosovellusympäristöjä ja joka liittyy asiakkaan vuokraajaan.
+

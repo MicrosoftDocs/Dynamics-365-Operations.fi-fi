@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015343"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178500"
 ---
 # <a name="provision-human-resources"></a>Valmistele Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Kohde:** Human Resources itsenäisessä infrastruktuurissa_ 
 
-
+> [!NOTE]
+> Kesäkuusta 2022 alkaen Human Resources -ympäristöt voidaan käyttöön vain talous- ja toimintosovellusinfrastruktuurissa. Lisätietoja kohdassa [Human Resourcesin valmisteleminen talous- ja toimintosovellusinfrastruktuurissa](hr-admin-setup-provision-fo.md).
 
 Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin uuden tuotantoympäristön valmisteluprosessista. 
 
@@ -40,14 +41,14 @@ Seuraavien edellytysten on toteuduttava, ennen kuin tuotantoympäristön valmist
 ## <a name="provision-a-human-resources-trial-environment"></a>Henkilöstöhallinnon koeympäristön valmistelu
 
 >[!NOTE]
-> Human Resourcesin koeympäristöt eivät ole käytettävissä itsenäisissä sovelluksissa huhtikuussa 2022. Mahdolliset asiakkaat, jotka haluavat arvioida Human Resourcesin ominaisuuksia talous- ja toimintosovellusten avulla, voivat käyttää ilmaista 30 päivän kokeiluversiota ja esittelytietoja. Dynamics 365 Finance sisältää Human Resources -ominaisuudet, jotka tuodaan Finance-infrastruktuuriin yhdistäen itsenäisen sovelluksen. Lisätietoja kohdasta [henkilöstöhallinnon tarjousten yhdistäminen asiakkaille](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) Lisätietoja Dynamics 365 Financen kokeiluversioista saat vaiheittaista [oppaasta](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> Human Resourcesin koeympäristöt eivät ole käytettävissä itsenäisissä sovelluksissa huhtikuussa 2022. Mahdolliset asiakkaat, jotka haluavat arvioida Human Resourcesin ominaisuuksia talous- ja toimintosovellusten avulla, voivat käyttää ilmaista 30 päivän kokeiluversiota ja esittelytietoja. Dynamics 365 Finance sisältää Human Resources -ominaisuudet, jotka tuodaan Finance-infrastruktuuriin yhdistäen itsenäisen sovelluksen. Lisätietoja on kohdassa [HR-tuotteiden yhdistäminen tuo ominaisuudet samaan paikkaan asiakkaalle](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Lisätietoja Dynamics 365 Finance -kokeiluversioista on vaiheittaisessa [oppaassa](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Ennen ensimmäisen tuotantoympäristön tai tuotantoympäristön varausta voit varata [henkilöstöhallinnon koeympäristön](https://go.microsoft.com/fwlink/p/?LinkId=2115962) henkilöstöhallinnon toimintojen tarkistamista varten. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon järjestelmänhallintakokemuksen kautta. 
 
-Koeympäristöt tarjoavat mahdollisuuden arvioida henkilöstöresurssitoimintoja niiden henkilöiden osalta, joilla ei ole vielä henkilöstöresurssiympäristön käyttöoikeutta. Jos olet valmistelemassa koeympäristöä ja todennetulla käyttäjällä on jo käyttöoikeus yhteen tai useampaan olemassa olevaan henkilöstöresurssiympäristöön, käyttäjä ohjataan aiemmin luotuun ympäristöön tai ympäristöjen luetteloon.
+Kokeiluympäristöt helpottavat henkilönhallintatoimintojen arviointia niiden henkilöiden osalta, joilla ei ole vielä Human Resources -ympäristön käyttöoikeutta. Jos olet valmistelemassa koeympäristöä ja todennetulla käyttäjällä on jo käyttöoikeus yhteen tai useampaan olemassa olevaan henkilöstöresurssiympäristöön, käyttäjä ohjataan aiemmin luotuun ympäristöön tai ympäristöjen luetteloon.
 
-Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Koeajan kesto on enintään 30 päivää. Kun kokeiluympäristö vanhenee, ympäristö ja sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Ympäristöä ei voi muuntaa tuotantotilauksen tai tuotantoympäristön muotoon. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
+Koeympäristöjä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Koeajan kesto on enintään 30 päivää. Kun kokeiluympäristö vanhenee, ympäristö ja sen kaikki tiedot poistetaan, eikä niitä voi palauttaa. Ympäristöä ei voi muuntaa eristys- tai tuotantoympäristöksi. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
 
 Kun luot henkilöstöhallinnon koeympäristön, vuokraajalla luodaan myös Power Apps -koeympäristö, joka linkitetään henkilöstöhallinnon ympäristöön. Power Apps -ympäristöllä, jonka nimi on TestDrive, on sama koeaika kuin henkilöstöhallinnon ympäristöllä.
 
@@ -56,14 +57,14 @@ Kun luot henkilöstöhallinnon koeympäristön, vuokraajalla luodaan myös Power
 
 ## <a name="plan-human-resources-environments"></a>Human Resources -ympäristöjen suunnitteleminen
 
-Ennen ensimmäisen Human Resources -ympäristön luontia sinun tulee suunnitella huolellisesti projektin ympäristötarpeet. Human Resourcesin perustilaus sisältää kaksi ympäristöä: tuotantoympäristön ja eristysympäristön. Projektin monimutkaisuuden mukaan projektitoimintojen tueksi voi olla tarpeen ostaa ylimääräisiä eristysympäristöjä. 
+Ennen ensimmäisen Human Resources -ympäristön luontia sinun tulee suunnitella huolellisesti projektin ympäristötarpeet. Human Resourcesin perustilaus sisältää kaksi ympäristöä: tuotantoympäristön ja eristysympäristön. Projektin monimutkaisuuden mukaan projektitoimintojen tueksi voi olla tarpeen ostaa lisäeristysympäristöjä. 
 
 Lisäympäristöjä koskevia lisähuomioita:
 
-- **Tietojen siirto**: Sinun on ehkä harkittava lisäympäristöä tietojen siirtoa varten, jotta eristysympäristöä voidaan käyttää testaustarkoituksiin koko projektin ajan. Lisäympäristön ansiosta tietojen siirtotoiminnot voivat jatkua, kun testaus- ja konfigurointitoiminnot tapahtuvat samanaikaisesti toisessa ympäristössä.
-- **Integrointi**: On ehkä otettava huomioon lisäympäristö integrointien konfiguroinnissa ja testaamisessa. Tällaisia integrointeja voivat olla esimerkiksi Ceridian Dayforce- tai LinkedIn Talent Hub -integroinnit, tai mukautetut integroinnit, kuten palkanlaskenta-, hakijaseuranta- ja etujärjestelmät ja -toimittajat.
-- **Koulutus**: Tarvitset ehkä erillisen ympäristön, jossa on käytössä koulutustietojoukko, jotta työntekijät voidaan kouluttaa käyttämään uutta järjestelmää. 
-- **Monivaiheinen projekti**: Saatat tarvita lisäympäristön, joka tukee konfigurointeja, tietojen siirtoa, testausta tai muita projektin vaiheen tehtäviä, jotka on suunniteltu projektin ensimmäisen julkaisun jälkeen.
+- **Tietojen siirto**; Tietojen siirtämisen avulla eristysympäristöä voidaan käyttää testaustarkoituksiin koko projektin ajan. Lisäympäristön ansiosta tietojen siirtotoiminnot voivat jatkua, kun testaus- ja konfigurointitoiminnot tapahtuvat samanaikaisesti toisessa ympäristössä.
+- **Integrointi**: Integrointien määrittäminen ja testaus voi koskea alkuperäisiä integrointeja, kuten Ceridian Dayforcea, tai mukautettuja integrointeja.
+- **Koulutus**: työntekijöiden kouluttaminen uuden järjestelmän käyttäjäksi voi edellyttää erillistä ympäristönä, jossa on käytössä koulutustietojoukko. 
+- **Monivaiheinen projekti**: määritysten, tietosiirtämisen, testauksen tai muiden aktiviteettien tukeminen projektin siinä vaiheessa, joka on tarkoitus suorittaa projektin ensimmäisen julkaisun jälkeen.
 
  > [!IMPORTANT]
  > Ympäristöä harkittaessa kannattaa ottaa seuraavat huomioon:
@@ -100,7 +101,7 @@ Kun LCS-projekti on luotu, voit valmistella Human Resources -sovelluksen ympäri
 2. Määritä, onko tämä ympäristö Human Resourcesin eristys- vai tuotantoesiintymä. Varhaisia esikatselutoimintoja voi olla käytettävissä Sandbox-esiintymissä, jotta varhainen palaute ja testaaminen olisi mahdollista.
    
     > [!NOTE]
-    > Human Resources-ilmentymätyyppiä ei voi muuttaa kerran määritettynä. Tarkista, että oikea ilmentymätyyppi on valittuna, ennen kuin jatkat.</br></br>
+    > Human Resources -esiintymätyyppiä ei voi muuttaa, kun se on määritetty. Tarkista, että oikea ilmentymätyyppi on valittuna, ennen kuin jatkat.</br></br>
     > Human Resources -esiintymätyyppi on erillään Microsoft Power Apps-ympäristön esiintymätyypistä, jonka määrität Power Apps-hallintakeskuksesta.
     
 3. Valitse **Sisällytä esittelytiedot** -vaihtoehto, jos haluat ympäristön sisältävän saman esittelytietojoukon, jota käytetään Human Resources -kokeiluympäristönä. Esittelytiedot ovat hyödyllisiä pitkän aikavälin esittely- tai koulutusympäristöissä, eikä niitä tule koskaan käyttää tuotantoympäristöissä. Tämä asetus on valittava ensimmäisen käyttöönoton yhteydessä. Et voi päivittää aiemmin luotua käyttöönottoa myöhemmin.
@@ -140,7 +141,7 @@ Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Human R
    
     - **Maantieteelliset alueet, joita ei tueta** - Ympäristön on oltava tuetulla maantieteellisellä alueella. Lisätietoja on kohdassa [Tuetut maantieteelliset alueet](hr-admin-setup-provision.md#supported-geographies).
 
-6. Kaksoiskirjoitustoimintoa voidaan käyttää henkilöstötietojen integroimiseen Power Apps -ympäristön kanssa vain, jos **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehto on valittu ympäristölle. Siirry [Kaksoiskirjoituksen kotisivulle](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), kun haluat lisätietoja kaksoiskirjoituksesta.
+6. Kaksoiskirjoitustoimintoa voidaan käyttää henkilöstötietojen integroimiseen Power Apps -ympäristön kanssa vain, jos **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehto on valittu ympäristölle. Lisätietoja on kohdassa [Kaksoiskirjoituksen aloitussivu](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > **Ota käyttöön Dynamics 365 -sovellukset** -vaihtoehdon on oltava valittuna sillä hetkellä, kun Power Apps -ympäristö luodaan. Jos vaihtoehto ei ole valittuna valmistelun aikana, et voi käyttää kaksoiskirjoitusta integroidaksesi tietoja Dynamics 365 Human Resourcesin ja Power Apps -ympäristön välillä, etkä voi asentaa Dynamics 365 -sovelluksia (kuten Dynamics 365 Sales, Field Service) ympäristöön. Tätä vaihtoehtoa ei voi perua. 
@@ -175,3 +176,4 @@ Oletusarvoisesti vain ympäristön luonut yleinen järjestelmänvalvoja voi käy
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

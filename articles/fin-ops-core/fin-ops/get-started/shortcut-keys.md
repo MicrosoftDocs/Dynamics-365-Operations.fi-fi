@@ -2,7 +2,7 @@
 title: Pikanäppäimet
 description: Tässä artikkelissa on yleiskuvaus pikanäppäinyhdistelmistä, joita voit käyttää, kun käsittelet talous- ja toimintosovelluksia.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
+ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866114"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9140436"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
@@ -27,7 +27,7 @@ ms.locfileid: "8866114"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti taloushallinnon ja toimintojen sovelluksissa. 
+Pikanäppäimet voivat auttaa sinua syöttämään tietoja nopeasti ja tehokkaasti talous- ja toimintasovelluksissa. 
 
 > [!NOTE]
 > Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
@@ -197,6 +197,7 @@ Käyttäjät voivat löytää käytettävissä olevat pikanäppäimet suoraan k�
 | Sulje tietolomakkeen siirtymisluettelo (kun kohdistus on siirtymisluettelossa) | Esc                        |
 | Siirry pääsivun sisältöön (kun kohdistus on toisessa ruudussa)                    | Alt+M,M                    |
 | Siirry tietoruutuun (voi sisältää ruudun avaamisen)                       | ALT + M,B tai Ctrl + F2         |
+| Siirry seuraavaan ominaisuuksien kuvaselitteeseen                                              | Alt+M,C                    |
 
 > [!NOTE]
 > Versiossa 10.0.26 käyttöön otettavan **Virtaviivaista sarkainnäppäimen toiminta koko sivun lomakkeissa** -toiminnon avulla käyttäjät voivat siirtyä sarkaimen avulla sivun kaikilla alueilla ilman, että hiiren tai näppäimistön pikanäppäimen on siirrettävä eri alueiden välillä. Voit silti siirtyä nopeasti sivun alueiden välillä käyttämällä aiemmin luotuja pikanäppäimiä (kuten Alt+M-pikanäppäimiä).
@@ -269,3 +270,4 @@ Kohdistuksenhallinta kuvaa, miten käyttäjän kohdistusta käsitellään sovell
 [Puuttuvien tilien analyysin pikanäppäimet](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

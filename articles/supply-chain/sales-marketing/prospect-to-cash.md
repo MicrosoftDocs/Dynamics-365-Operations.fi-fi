@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 40398a481d23b8abed59556a3c6d70e783756017
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ea07b40c0a1a7eae7cd167f46796556b1e0ecc46
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857225"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103591"
 ---
 # <a name="prospect-to-cash"></a>Prospektista käteiseksi
 
@@ -43,13 +43,13 @@ Nykyisessä versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat 
 ## <a name="system-requirements-for-supply-chain-management"></a>Supply Chain Managementin järjestelmävaatimukset
 Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (joulukuu 2017)
+### <a name="microsoft-dynamics-365-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365:n talous- ja toimintosovellukset, Enterprise edition 7.3 (joulukuu 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (joulukuu 2017) – sovelluksen koontiversio 7.3.11971.56116 ja Platform Update 12 (7.0.4709.41129)
+- Dynamics 365:n talous- ja toimintosovellukset, Enterprise edition (joulukuu 2017) – sovelluksen koontiversio 7.3.11971.56116 ja Platform Update 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017)
+### <a name="dynamics-365-finance-enterprise-edition-july-2017"></a>Dynamics 365 Finance, Enterprise edition (heinäkuu 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017) – platform update 8 (sovelluksen 7.2.11792.56024 ja ympäristön koontiversio 7.0.4565.16212).
+- Dynamics 365:n talous- ja toimintosovellukset, Enterprise edition (heinäkuu 2017) – sekä platform update 8 (sovelluksen koontiversio 7.2.11792.56024 ja ympäristön koontiversio 7.0.4565.16212).
 - Seuraavat hotfix-korjaukset ovat pakollisia:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Tämä korjaus mahdollistaa myyntitilausten synkronoinnin Salesista Supply Chain Managementiin tietojen integrointitoiminnolla. Se sisältää myös useita parannuksia.
@@ -59,9 +59,9 @@ Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
     > [!NOTE]
     > Ainoastaan KB4045570 on asennettava, sillä sen asennus sisältää muiden hotfix-korjausten muutokset. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operationsin versio 1611 (marraskuu 2016)
+### <a name="dynamics-365-finance-and-operations-version-1611-november-2016"></a>Dynamics 365:n talous- ja toimintosovellusten versio 1611 (marraskuu 2016)
 
-- Dynamics 365 for Finance and Operationsin versio 1611 (marraskuu 2016) ja platform update 8 tai uudempi
+- Dynamics 365:n talous- ja toimintosovellusten versio 1611 (marraskuu 2016) ja vähintään platform update 8
 
 - Seuraavat hotfix-korjaukset ovat pakollisia:
 

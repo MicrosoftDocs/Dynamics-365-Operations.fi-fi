@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903750"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067878"
 ---
 # <a name="shipment-auto-updates"></a>Lähetyksen automaattiset päivitykset
 
@@ -30,7 +30,7 @@ Lähetyksen automaattinen päivitystoiminto päivittää automaattisesti lähety
 
 Jos lähetyksen automaattista päivitystoimintoa ei käytetä, vain määrän vähennykset siirtyvät automaattisesti varastotyön luontiin saakka. Käyttäjien on päivitettävä tai poistettava rivit manuaalisesti, minkä jälkeen rivit on vapautettava manuaalisesti uudelleen, jos määrät kasvavat tai uusia tilausrivejä lisätään. Lähetyksen automaattisen päivitystoiminnon avulla yritykset voivat tehdä varastopäivitykset sujuvasti ilman, että oltava huolissaan siitä, miten liittyvät lähetykset ja kuormat vaikuttavat tilausrivipäivityksiin.
 
-Lähetyksen automaattista päivitystoimintoa käytetään sekä myyntitilaus- että siirtotilausriveillä ja se otetaan käyttöön tietyssä varastossa. Niinpä yritykset voivat tarvittaessa käyttää erilaisia lähetyksen automaattisia päivityskäytäntöjä eri varastoissa. Määrän vähennystä koskevaa lähetyksen automaattista päivityskäytäntöä käytetään oletusarvoisesti kaikissa varastonhallintaprosesseja käyttävissä varastoissa. Jos oletuskäytäntöasetus on käytössä, vain määrän vähennykset siirtyvät automaattisesti lähetykseen ja kuormaan varastotyön luontiin saakka. Tämä toiminta tapa muistuttaa toimintaa, jota käytettiin ennen lähetyksen automaattisen päivitystoiminnon käyttöönottoa.
+Lähetyksen automaattista päivitystoimintoa käytetään sekä myyntitilaus- että siirtotilausriveillä ja se otetaan käyttöön tietyssä varastossa. Niinpä yritykset voivat tarvittaessa käyttää erilaisia lähetyksen automaattisia päivityskäytäntöjä eri varastoissa. Määrän vähennystä koskevaa lähetyksen automaattista päivityskäytäntöä käytetään oletusarvoisesti kaikissa varastonhallintaprosesseja (WMS) käyttävissä varastoissa. Jos oletuskäytäntöasetus on käytössä, vain määrän vähennykset siirtyvät automaattisesti lähetykseen ja kuormaan varastotyön luontiin saakka. Tämä toiminta tapa muistuttaa toimintaa, jota käytettiin ennen lähetyksen automaattisen päivitystoiminnon käyttöönottoa.
 
 ## <a name="main-elements-of-the-functionality"></a>Toiminnon pääelementit
 

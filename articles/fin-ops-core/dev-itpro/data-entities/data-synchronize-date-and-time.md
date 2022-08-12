@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b8faa7b73349c48d3a02b685546b47c4969c6027
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403838"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109429"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>Tuontitöiden päivämäärän ja ajan synkronoiminen
 
@@ -27,7 +27,7 @@ On tärkeää, että tuontityön aikavyöhykkeeksi määritetään koordinoitu y
 
 Tämän kaksoismuunnon vuoksi päivämäärät muuttavat sovellusten välillä. Kaksoismuunto voi aiheuttaa esimerkiksi sen, että työntekijällä on eri alkamispäivä Dynamics 365 Human Resourcesissa ja Dynamics 365 Financessa paikallisten aikavyöhykkeiden erojen vuoksi. Tämä ongelma ratkaistaan määrittämällä tuontityöhön UTC-aika.
 
-1. Valitse Dynamics 365 Finance and Operationsissa **Tiedonhallinta**.
+1. Valitse Dynamics 365:n talous- ja toimintosovelluksissa **Tietojen hallinta**.
 
 2. Valitse ensin **Tuo projektit** ja sitten projekti.
 
@@ -41,3 +41,4 @@ Tämän kaksoismuunnon vuoksi päivämäärät muuttavat sovellusten välillä. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

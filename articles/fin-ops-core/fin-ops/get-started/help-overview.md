@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898366"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124191"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -53,7 +53,7 @@ Docs.microsoft.com-sivuston sisältöä voi etsiä millä tahansa hakukoneella. 
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Tiedot muutoksista RSS-syötteillä
 
-Jos haluat tilata kaikkien docs.microsoft.com-sisältöön taloushallinnon ja toimintojen sovelluksissa tehtyjen päivitysten RSS-syötteen, käytä seuraavaa linkkiä:
+Jos haluat tilata kaikkien docs.microsoft.com-sisältöön talous- ja toimintosovelluksissa tehtyjen päivitysten RSS-syötteen, käytä seuraavaa linkkiä:
 
 [RSS-syöte](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -98,7 +98,7 @@ Lisätietoja on [Docs-sisällöntuottajan oppaassa](/contribute). Tämän oppaan
 
 Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit avata (toistaa) tehtäväoppaan **Ohje**-ruudusta. Kun valitset tehtäväoppaan ensimmäisen kerran, **Ohje**-ruutuun tulee näkyviin tehtävän vaiheittaiset ohjeet. Saatavana on lokalisoituja tehtäväoppaita.
 
-Microsoft julkaisi tuoteversioiden tehtäväopaskirjastoa joulukuun 2017 Dynamics 365 for Finance and Operations -versioon saakka. Tämän artikkelin osassa [Tehtäväoppaiden käyttö ohjeruudusta](#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
+Microsoft julkaisi tuoteversioiden tehtäväopaskirjastoa Dynamics 365 talous- ja toimintosovellusten joulukuun 2017 julkaisuun saakka. Tämän artikkelin osassa [Tehtäväoppaiden käyttö ohjeruudusta](#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
 
 ![Tehtäväoppaan lukunäkymä.](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

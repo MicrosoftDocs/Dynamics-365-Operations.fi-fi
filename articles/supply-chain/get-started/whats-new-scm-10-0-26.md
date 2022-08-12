@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: d47f3f377a7de87b9c24a18e4542e5a48235d270
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 8be79f259505c084a8680c453ec15a4cef1a890f
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954478"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124491"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.26. (toukokuu 2022)
 
@@ -33,7 +33,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän art
 
 | Ominaisuusalue | Ominaisuus | Lisätietoja | Käyttöönottaja:   |
 |---|---|---|---|
-| Varasto ja logistiikka | [Käytettävissä olevan varaston Varaston näkyvyys -kysely tukee varastonhallinnan lisänimikkeitä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibilityn WHS-nimikkeiden tuki](../inventory/inventory-visibility-whs-support.md) | Toimintojen hallinta:<br>*Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* |
+| Varasto ja logistiikka | [Käytettävissä olevan varaston Varaston näkyvyys -kysely tukee varastonhallinnan lisänimikkeitä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibilityn WMS-nimikkeiden tuki](../inventory/inventory-visibility-whs-support.md) | Toimintojen hallinta:<br>*Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* |
 | Varasto ja logistiikka | [Varaston näkyvyyden lisäosan luvattavissa oleva määrä](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Varaston näkyvyyden käytössä olevat muutosaikataulut ja luvattavissa olevat määrät](../inventory/inventory-visibility-available-to-promise.md) | Palvelumääritysten käyttöönottama |
 | Valmistus | [Todellisen painon nimikkeet tuotannon työnohjausliittymälle](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md) | Toimintojen hallinta:<br>*(Esiversio) Todellisen painon nimikkeiden raportointi tuotannon käyttöliittymästä* |
 | Valmistus | Omat työt -välilehti tuotannon käyttöliittymässä <!-- KFM: Add link to release plan when available --> | [Tuotannon käyttöliittymän käytön ohjeet työntekijöille](../production-control/production-floor-execution-use.md) | Toimintojen hallinta:<br>*Omat työt -välilehti tuotannon käyttöliittymässä* |
@@ -47,9 +47,9 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 | Moduuli | Ominaisuuden nimi ominaisuuksienhallinnassa | Lisätietoja |
 |---|---|---|
 | Hankinta | Kirjaa varastoitujen tuotteiden ja jäljellä olevien ei-varastoitavien tuotteiden rekisteröidyt määrät vastaanottoja ja toimittajan laskuja varten | Tämä ominaisuus muuttaa sitä, miten varastoimattoman tuotteen (kuten palveluiden) määrät kirjataan käsiteltäessä toimittajan laskuja ja saapuvia toimituksia ostotilauksiin verrattuna. Ominaisuus muuttaa *Rekisteröity määrä ja rekisteröidyt palvelut* -määrävaihtoehdon toimintatapaa vastaanottojen ja toimittajan laskujen kirjaamista varten. Se muuttaa sen vastaamaan *Rekisteröity määrä ja ei-varastoitavat tuotteet* -asetusta, joka on jo annettu myyntipakkausluetteloiden määrien kirjaamisen yhteydessä.<br><br>Kun kirjaat tuotteen vastaanoton tai toimittajan laskun käyttämällä *Rekisteröity määrä ja palvelut* -asetusta, järjestelmä kirjaa varastoitujen tuotteiden rekisteröidyn määrän mutta kirjaa ei-varastoitavien tuotteiden jäljellä olevan määrän (mukaan lukien sekä palvelut että muut kuin palvelut). Ilman tätä ominaisuutta järjestelmä kirjaa edelleen varastoitujen tuotteiden rekisteröidyn määrän (mukaan lukien varastoitaviksi nimikkeiksi määritetyt palvelut) mutta kirjaa aina ei-varastoitavien palvelutuotteiden täyden tilatun määrän (ja ohittaa ei-varastoitavat tuotteet, jotka eivät ole *Palvelu*-tyyppiä). |
-| Hankinta | Synkronoi seurantadimensiot konsernin sisäisillä myynti- ja ostotilausriveillä | Tämän ominaisuuden avulla voit määrittää, synkronoidaanko sarja- ja eränumeroiden seurantadimensiot konsernin sisäisten myynti- ja ostotilausrivien välillä. Se lisää uusia asetuksia asiakkaiden ja toimittajien **Konsernin sisäinen** -määrityssivun **Ostotilauskäytännöt**- ja **Myyntitilauskäytännöt** -välilehdille. Se päivittää selvyyden vuoksi myös muutaman liittyvän asetuksen nimen.<br><br>Jos käytät edistynyttä varastonhallintaa (WMS), huomaa, että tämä ominaisuus synkronoi erä- ja sarjanumerot vain silloin, kun nämä dimensiot ovat sijainnin yläpuolella kohdevaraushierarkiassa. |
+| Hankinta | Synkronoi seurantadimensiot konsernin sisäisillä myynti- ja ostotilausriveillä | Tämän ominaisuuden avulla voit määrittää, synkronoidaanko sarja- ja eränumeroiden seurantadimensiot konsernin sisäisten myynti- ja ostotilausrivien välillä. Se lisää uusia asetuksia asiakkaiden ja toimittajien **Konsernin sisäinen** -määrityssivun **Ostotilauskäytännöt**- ja **Myyntitilauskäytännöt** -välilehdille. Se päivittää selvyyden vuoksi myös muutaman liittyvän asetuksen nimen.<br><br>Jos käytät varastonhallintaprosesseja (WMS), huomaa, että tämä ominaisuus synkronoi erä- ja sarjanumerot vain silloin, kun nämä dimensiot ovat sijainnin yläpuolella kohdevaraushierarkiassa. |
 | Tuotetietojen hallinta | Tyhjennä tuotemääritearvot | Tämä ominaisuus lisää kausittaisen **Tyhjennä tuotemääritearvot** -nimisen tehtävän, joka tyhjentää tuotemääritteen arvotietueet, joita ei enää ole liitetty mihinkään tuotteeseen tuoteluokan kautta. |
-| Varastonhallinta | (Venäjä) Estä ristiriidat, kun GTD-ilmoituksia käytetään ostotilauksissa, joissa on varastonhallintajärjestelmää käyttäviä nimikkeitä | Tämä ominaisuus on tarkoitettu vain Venäjän lokalisointiin. Se estää ristiriitoja, jotka tapahtuvat, kun myönnetään Venäjän tulli-ilmoitusnumeroita (GTD) tuontiostotilauksiin, joissa on varastonhallinnan lisätoiminnon (WMS) nimikkeitä. GTD:n myöntämisprosessi muuttaa mukautettuun kirjauskansioon sisältyvien laskujen liittyvien varastotapahtumien varastodimensioarvoja, mikä aiheuttaa ristiriidan ostotilauksen työtietueiden ja oston varastotapahtumien välillä. Kun tämä ominaisuus on käytössä, GTD-myöntämisprosessi luo oikaisutyöt, jotka eliminoivat tällaiset ristiriidat. |
+| Varastonhallinta | (Venäjä) Estä ristiriidat, kun GTD-ilmoituksia käytetään ostotilauksissa, joissa on varastonhallintajärjestelmää käyttäviä nimikkeitä | Tämä ominaisuus on tarkoitettu vain Venäjän lokalisointiin. Se estää ristiriitoja, jotka tapahtuvat, kun myönnetään Venäjän tulli-ilmoitusnumeroita (GTD) tuontiostotilauksiin, joissa on varastonhallintaprosesseja (WMS) käyttäviä nimikkeitä. GTD:n myöntämisprosessi muuttaa mukautettuun kirjauskansioon sisältyvien laskujen liittyvien varastotapahtumien varastodimensioarvoja, mikä aiheuttaa ristiriidan ostotilauksen työtietueiden ja oston varastotapahtumien välillä. Kun tämä ominaisuus on käytössä, GTD-myöntämisprosessi luo oikaisutyöt, jotka eliminoivat tällaiset ristiriidat. |
 | Varastonhallinta   | GS1-viivakoodien parannettu jäsennin | Tämä ominaisuus lisää GS1-symbolitietojen parannetun jäsentimen. Uusi jäsennin ottaa käyttöön GS1-yleismääritysalgoritmin GS1-symbolien jäsentämiseen ja antaa vahvempia tietojen oikeellisuustarkistuksia. Lisätietoja on kohdassa [GS1-viivakoodin skannaus](../warehousing/gs1-barcodes.md). |
 | Varastonhallinta   | Uudet kuormasuunnittelun työtilan sivut | Lisää uudet kuormasuunnittelun työtilan sivut: **Saapuvan kuormasuunnittelun työtila** ja **Lähtevän kuormasuunnittelun työtila**. |
 | Varastonhallinta   | Warehouse Management -sovellus – tyhjä GTD | Tämä ominaisuus on tarkoitettu vain Venäjän lokalisointiin. Warehouse Management -mobiilisovellusta käyttävät työntekijät voivat tarvittaessa jättää Venäjän tulli-ilmoitusnumerot (GTD) tyhjiksi. Jos GTD-seurantadimensio on määritetty sallimaan tyhjät arvot, järjestelmä hyväksyy GTD:n tyhjät arvot käytettävissä olevan varaston käytettävissä olevalle varastolle. |
@@ -64,9 +64,9 @@ Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merki
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (toukokuu 2022) käyttöympäristön päivitysversio 10.0.26.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 sisältää Platform updateja. Lisätietoja on kohdassa [Talous- ja toimintosovellusten (toukokuu 2022) käyttöympäristön päivitysversio 10.0.26](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -90,3 +90,4 @@ Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

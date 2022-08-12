@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dafd51a46b19f3709963ffc12b3c8c77b6c809ac
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856103"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070436"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Varaston määrittäminen varaston konfigurointimallin avulla
 
@@ -90,7 +90,7 @@ Voit ladata tietopaketin zip-tiedoston. Tämä tiedosto sisältää kaikki tiedo
 
 **Näytä suoritusloki** sisältää tarkkoja tietoja jokaisesta tuotavasta tietoyksiköstä. Pääset nopeasti kohdetietoihin väliaikaisen tallennuksen tiedoista. Näet tällä tavoin, miltä tuodut tiedot näyttävät sovelluksen sivuilla. Oletustietomalleja käytettäessä kunkin tietoyksikön tuontijakso toimii ennalta määritetyllä tavalla. Tämä auttaa varmistamaan, että kaikki riippuvat tiedot tuodaan ensimmäiseksi. Jos projektissa on mukautettuja tietoyksiköitä, varmista, että oikea järjestys on määritetty. Lisätietoja on kohdassa [Konfigurointitietomallit](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Jos haluat lisätietoja tavasta, jolla varastomääritys voidaan kopioida varastomallin avulla yrityksen varastosta uuteen yritykseen samassa esiintymässä, katso tämä 3 minuuttia kestävä YouTube-video, joka käsittelee [Finance ja Operationsin määritysten kopiointia varastomallilla](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Jos haluat lisätietoja tavasta, jolla varastomääritys voidaan kopioida varastomallin avulla yrityksen varastosta uuteen yritykseen samassa esiintymässä, katso tämä 3 minuuttia kestävä YouTube-video, joka käsittelee [talous- ja toimintosovellusten määritysten kopiointia varastomallin avulla](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-article"></a>Liittyvä artikkeli
 

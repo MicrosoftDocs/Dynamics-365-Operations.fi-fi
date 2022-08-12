@@ -1,6 +1,6 @@
 ---
 title: Laadunhallinta varastoprosesseja varten
-description: Tämä artikkeli sisältää tietoja varastoprosessiominaisuuksien laadunhallinnasta. Tämä ominaisuus laajentaa laadunhallinnan ominaisuuksia ja antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallinnan lisähallintaa.
+description: Tämä artikkeli sisältää tietoja varastoprosessiominaisuuksien laadunhallinnasta. Tämä ominaisuus laajentaa laadunhallinnan ominaisuuksia ja antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallintaprosesseja (WMS).
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857834"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069239"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Laadunhallinta varastoprosesseja varten
 
 [!include [banner](../includes/banner.md)]
 
-_Varastoprosessien laadunhallinnan ominaisuudet_ -ominaisuus antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallinnan lisähallintaa. Varastotyön voi luoda automaattisesti, jotta varasto voidaan siirtää laadunvalvontasijaintiin, joka perustuu prosenttiosuuteen tai kiinteään määrään, tai joka perustuu jokaiseen *n*:teen-rekisterikilpeen. Kun laatutilaus on suoritettu, työt voidaan luoda automaattisesti, jotta varasto siirtyy prosessin seuraavaan sijaintiin laatutulosten mukaan.
+_Varastoprosessien laadunhallinnan ominaisuudet_ -ominaisuus antaa käyttäjien integroida nimikkeen otantakomponentit fyysiseen varastoon vastaanotettaessa käyttämällä varastonhallintaprosesseja (WMS). Varastotyön voi luoda automaattisesti, jotta varasto voidaan siirtää laadunvalvontasijaintiin, joka perustuu prosenttiosuuteen tai kiinteään määrään, tai joka perustuu jokaiseen *n*:teen-rekisterikilpeen. Kun laatutilaus on suoritettu, työt voidaan luoda automaattisesti, jotta varasto siirtyy prosessin seuraavaan sijaintiin laatutulosten mukaan.
 
 _Varastoprosessien laadunhallinta_ -ominaisuus laajentaa peruslaadunhallinnan ominaisuuksia. Se tarjoaa mahdollisuuden luoda laatutilauksia varastolle, joka lähetetään laadunvalvonnan sijaintiin, vaikka laatutilauksia ei aina tarvita. Näin ollen se mahdollistaa kevyen laadunvalvontaprosessin, joka perustuu varastotyöhön.
 
@@ -77,7 +77,7 @@ Ennen kuin _Varastoprosessien laadunhallinta_ -toimintoa voidaan käyttää tiet
 
 1. Valitse **Varastonhallinta \> Asetukset \> Varasto \> Varastot**.
 1. Valitse varasto ottaaksesi käyttöön laadunhallinnan.
-1. Määritä **varasto**-pikavälilehdessä **Ota käyttöön laatutilaus varastoprosesseja varten** -asetukseksi _Kyllä_. (Huomaa, että tämän vaihtoehdon arvoksi voidaan määrittää _Kyllä_ vain varastoille, joissa käytetään varastonhallintaprosesseja.)
+1. Määritä **varasto**-pikavälilehdessä **Ota käyttöön laatutilaus varastoprosesseja varten** -asetukseksi _Kyllä_. (Huomaa, että tämän vaihtoehdon arvoksi voidaan määrittää _Kyllä_ vain varastoille, joissa käytetään varastonhallintaprosesseja (WMS).)
 
 Kun **Ota käyttöön laatutilaus varastoprosesseja varten** -asetus on _Kyllä_, laatuliitosasetukset määrittävät, sovelletaanko _laadunhallinta varastoprosesseja varten_ -ominaisuutta valittuun varastoon. Voit muuttaa vaihtoehdon asetukseksi _Ei_ milloin tahansa. Tällöin toiminto ei enää koske varastoa laatuliitoksen asetuksista riippumatta.
 
@@ -97,7 +97,7 @@ Jokaisessa [laatuliitostietueessa](enable-quality-management.md) määritetään
     - **Kaikki** - Poista käytöstä _Varastoprosessien laadunhallinta_ -ominaisuus. Valitse tämä arvo kaikille viitetyypeille lukuun ottamatta *Ostoa* ja *Tuotantoa*.
 
 > [!NOTE]
-> _Varastoprosessien laadunhallinta_ -ominaisuus tulee voimaan vain, jos lähdeasiakirjan rivillä oleva nimike käyttää kehittyneitä varastonhallintaprosesseja ja jos **Ota käyttöön laatutilaus varastoprosesseja varten** -asetukseksi on valittu _Kyllä_, kun kyseessä on lähdeasiakirjan rivillä oleva varasto.
+> _Varastoprosessien laadunhallinta_ -ominaisuus tulee voimaan vain, jos lähdeasiakirjan rivillä oleva nimike käyttää varastonhallintaprosesseja (WMS) ja jos **Ota käyttöön laatutilaus varastoprosesseja varten** -asetukseksi on valittu _Kyllä_, kun kyseessä on lähdeasiakirjan rivillä oleva varasto.
 
 Kun jokainen nimike on rekisteröity (tai ilmoitettu valmiiksi), järjestelmä määrittää, mitä laatuliitoksia siihen sovelletaan.
 

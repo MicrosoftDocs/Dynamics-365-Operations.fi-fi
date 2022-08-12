@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: a50fcbe313901beab610400d8c59dd375f1af93e
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: ff92e6904b8042232159a0aea095d7a91c17d4b7
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022618"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124097"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10027-july-2022"></a>Dynamics 365 Supply Chain Management 10.0.27:n uudet ja muuttuneet ominaisuudet (Heinäkuu 2022)
 
@@ -66,9 +66,9 @@ Seuraavat ohjeartikkelit on lisätty äskettäin tai niitä on päivitetty merki
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ympäristöpäivitykset
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten ympäristöpäivitykset
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.27 sisältää Platform updateja. Lisätietoja on kohdassa [taloushallinnon ja toimintojen sovellusten (kesäkuu 2022) käyttöympäristön päivitysversio 10.0.27.](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.27 sisältää Platform updateja. Lisätietoja on kohdassa [Talous- ja toimintosovellusten (kesäkuu 2022) käyttöympäristön päivitysversio 10.0.27](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -92,3 +92,4 @@ Ennen kuin toiminto poistetaan tuotteesta, siitä annetaan vanhentumisilmoitus [
 Jos muutokset vaikuttavat vain käännösaikaan, mutta ne ovat binaarisesti yhteensopivia Sandbox- ja tuotantoympäristön kanssa, vanhentumisaika on lyhyempi kuin 12 kuukautta. Yleensä nämä toiminnalliset päivitykset on tehtävä kääntäjään.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c9bfcdef91ad07b8346498b8944e1d741d623a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862653"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067389"
 ---
 # <a name="engineering-change-management-overview"></a>Suunnittelun muutostenhallinnan yleiskuvaus
 
@@ -40,7 +40,7 @@ Suunnittelun muutostenhallinta auttaa suunnittelemaan ja hallitsemaan tuotteen v
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Edellä oleva video ([Dynamics 365 Supply Chain Managementin muutostenhallinnan ominaisuudet](https://youtu.be/N313FqvRuBc)) sisältyy [rahoitus- ja toiminta -toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
+Edellä oleva video ([Dynamics 365 Supply Chain Managementin muutostenhallinnan ominaisuudet](https://youtu.be/N313FqvRuBc)) sisältyy [talous- ja toimintosovellusten toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavana YouTubessa.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Järjestelmän suunnittelun muutostenhallinnan ominaisuuksien ottaminen käyttöön
 
@@ -88,3 +88,4 @@ Kun olet ottanut suunnittelun muutostenhallinnan perusominaisuudet ja niiden mä
 | Muuttujien luominen suunnittelun tuotteille | <p>Tämän ominaisuuden avulla voit luoda suunnittelutuotteiden muuttuja käytettävissä olevien dimensioarvojen perusteella.</p><p>Lisätietoja [Versioiden luominen suunnittelutuotteista](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

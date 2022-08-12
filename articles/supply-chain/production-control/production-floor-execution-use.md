@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022501"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069783"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän käytön ohjeet työntekijöille
 
@@ -217,7 +217,7 @@ Työntekijät voivat oikaista todellisen painon nimikkeiden materiaalikulutuksen
 
 **Materiaalien oikaiseminen** -valintaikkunassa työntekijä voi tehdä ja oikaista materiaalivarauksia valitsemalla **Varaa materiaali**. Näyttöön tulevassa **Varaa materiaali** -valintaikkunassa näkyy nimikkeen fyysisesti saatavilla oleva varasto kutakin varasto- ja seurantadimensiota varten.
 
-Jos materiaali on otettu käyttöön lisävarastoprosesseissa, luettelossa näkyy vain tuotannon syötteen materiaalin sijainnin fyysisesti käytettävissä oleva varasto. Tuotannon syötteen sijainti määritetään resurssissa, jossa tuotantotyö suunnitellaan. Jos nimiketunnusta ohjataan erä- tai sarjanumerolla, näkyvissä on fyysisesti käytettävissä olevien erä- ja sarjanumeroiden luettelo. Jos haluat määrittää varattavan määrän, työntekijä voi valita **Varaa materiaali**. Jos haluat poistaa aiemmin luodun varauksen, työntekijä voi valita **Poista varaus**.
+Jos materiaali on otettu käyttöön varastonhallintaprosesseissa (WMS), luettelossa näkyy vain tuotannon syötteen materiaalin sijainnin fyysisesti käytettävissä oleva varasto. Tuotannon syötteen sijainti määritetään resurssissa, jossa tuotantotyö suunnitellaan. Jos nimiketunnusta ohjataan erä- tai sarjanumerolla, näkyvissä on fyysisesti käytettävissä olevien erä- ja sarjanumeroiden luettelo. Jos haluat määrittää varattavan määrän, työntekijä voi valita **Varaa materiaali**. Jos haluat poistaa aiemmin luodun varauksen, työntekijä voi valita **Poista varaus**.
 
 Lisätietoja tuotannon syötesijainnin määrittämisestä on seuraavassa blogikirjoituksessa: [Tuotannon syötesijainnin määrittäminen](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

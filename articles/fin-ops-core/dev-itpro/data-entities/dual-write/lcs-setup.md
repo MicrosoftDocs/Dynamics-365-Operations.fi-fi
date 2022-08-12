@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879801"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111967"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
 
@@ -53,7 +53,7 @@ Noudattamalla näitä ohjeita voit määrittää kaksoiskirjoituksen LCS-**ympä
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Yhdistä Power Platform -ympäristöön.":::
 
-8. Kun yhdistäminen on valmis, hyperlinkki tulee näkyviin. Linkin avulla voit kirjautua sisään kaksoiskirjoitusalueelle taloushallinnon ja toimintojen ympäristössä. Siellä voit tehdä entiteettien yhdistämismäärityksiä.
+8. Kun yhdistäminen on valmis, hyperlinkki tulee näkyviin. Linkin avulla voit kirjautua sisään kaksoiskirjoitusalueelle talous- ja toimintosovellusympäristössä. Siellä voit tehdä entiteettien yhdistämismäärityksiä.
 
 ## <a name="linking-mismatch"></a>Linkitysristiriita
 
@@ -71,3 +71,4 @@ Jos saat tämän varoituksen, kokeile jotakin seuraavista ratkaisuista:
 Aiemmin oli käytettävissä manuaalinen tukipalvelupyyntövaihtoehto, mutta se oli ennen kuin yllä kuvattu vaihtoehto 1 oli olemassa.  Microsoft ei enää tue tukipalvelupyynnön kautta lähetettäviä manuaalisia uudelleenlinkittämispyyntöjä.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

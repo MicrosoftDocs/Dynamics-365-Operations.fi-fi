@@ -16,19 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
-ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
+ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941763"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171452"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen asentaminen ja yhteyden muodostaminen
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> Tässä artikkelissa käsitellään uutta varastonhallinnan mobiilisovellusta. Lisätietoja vanhan varastointisovelluksen (nyt vanhentunut) määrittämisestä on kohdassa [Varastointisovelluksen asentaminen ja yhteyden muodostaminen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 Tässä artikkelissa käsitellään varastonhallinnan mobiilisovelluksen lataamista ja asentamista mobiililaitteisiin ja sovelluksen määrittämistä muodostamaan yhteys Supply Chain Management -ympäristöön. Voit määrittää kunkin laitteen manuaalisesti tai voit tuoda yhteysasetukset käyttämällä tiedostoa tai lukemalla QR-koodin.
 

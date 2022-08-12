@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934701"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108326"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
 
@@ -36,7 +36,7 @@ Tämän artikkelin esimerkkien suorittaminen edellyttää seuraavia käyttöoike
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
-- Sellaisen Regulatory Configuration Servicesin (RCS) käyttöoikeus, joka on valmisteltu samalle vuokralaiselle kuin Finance and Operations yhdessä seuraavista rooleista:
+- Sellaisen Regulatory Configuration Servicesin (RCS) käyttöoikeus, joka on valmisteltu samalle vuokraajalle kuin talous- ja toimintosovelluksissa jossakin seuraavista rooleista:
 
     - Sähköisen raportoinnin kehittäjä
     - Sähköisen raportoinnin toiminnallinen konsultti
@@ -84,7 +84,7 @@ Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi o
             - Veroarvojen summa.
             - Käytetyn veroprosentin vähimmäisarvo.
 
-    Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen ja Finance and Operationsissa suoritettujen ER-muotojen perustietomallia. Tämän vuoksi **Tax**- ja **Gr**-tietolähteiden sisältö näkyy ER-muodoissa abstrakteina tietolähteinä.
+    Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen sekä talous- ja toimintosovelluksissa suoritettujen ER-muotojen perustietomallia. Tämän vuoksi **Tax**- ja **Gr**-tietolähteiden sisältö näkyy ER-muodoissa abstrakteina tietolähteinä.
 
     ![Tax- ja Gr-tietolähteet näkyvät mallimäärityksen suunnittelusivulla.](media/er-calculated-field-type-01.png)
 
@@ -343,3 +343,4 @@ Voit tuoda tarkistetut kokoonpanot RCS:stä käyttämällä **RCS**-tyyppistä E
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

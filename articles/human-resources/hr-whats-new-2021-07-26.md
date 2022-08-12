@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-26
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6c7211135733f45a9841ae5a80607b01999d7c69
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14041dfc753b508a0d68b90ee99d79510d07e622
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870926"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070077"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-26-2021"></a>Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet 26. heinäkuuta 2021
 
@@ -41,7 +41,7 @@ Seuraavat ominaisuudet ovat yleisesti saatavana tässä julkaisussa.
 
 | Ominaisuus | Julkaisusuunnitelma | Dokumentaatio |
 | --- | --- | --- |
-| Ympäristön update 10.0.20 -päivitys | -- | [Taloushallinnon ja toimintojen sovellusten (elokuu 2021) käyttöympäristön päivitysversio 10.0.20](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
+| Ympäristön update 10.0.20 -päivitys | -- | [Talous- ja toimintosovellusten (elokuu 2021) käyttöympäristön päivitysversio 10.0.20](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
@@ -83,3 +83,4 @@ Täydellinen luettelo suunnitelluista ominaisuuksista ja niiden aikataulutetuist
 [Ominaisuuksien hallinta](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

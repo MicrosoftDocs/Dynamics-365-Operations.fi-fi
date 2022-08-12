@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899437"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201863"
 ---
 # <a name="reserve-inventory-quantities"></a>Varastomäärien varaaminen
 
@@ -75,7 +75,7 @@ Automaattisesti varattava myyntitilaus, jonka toimituspäivä on 4.4.2002, varaa
 
 Varauksiin liittyy kaksi vaihtoehtoa **Varasto ja varastonhallinnan parametrit** -sivulla:
 -   Valitse **Varaa tilatut nimikkeet** -vaihtoehto **Yleistä**-välilehdessä, jos haluat varata nimikkeiden vastaanotot, jotka on tilattu nimikkeiden varasto-ottoja kohden Myyntireskontra-, Projektinhallinta ja kirjanpito- sekä Tuotannonhallinta-kohdissa. Jos poistat tämän vaihtoehdon valinnan, voit varata vain fyysisesti vastaanotettuja nimikkeitä. Jos jonkin nimikkeen asetuksissa hyväksytään negatiivinen varasto, tällä kentällä ei ole merkitystä.
--   **Varaa nimikkeet automaattisesti** -vaihtoehto **Kuljetus** -välilehdessä määrittää oletusasetukseksi, että nimikkeet varataan automaattisesti siirtotilauksia varten. Oletusasetuksen voi ohittaa yksittäisissä tilauksissa.
+-   **Varaa nimikkeet automaattisesti** -vaihtoehto **Siirto**-välilehdessä määrittää oletusasetukseksi, että nimikkeet varataan automaattisesti siirtotilauksia varten. Oletusasetuksen voi ohittaa yksittäisissä tilauksissa.
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Varastovarauskäytännöt Tuotantoparametrit -sivulla
 

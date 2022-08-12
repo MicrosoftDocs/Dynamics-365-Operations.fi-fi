@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aceb883e9182090a336c4c91aa0022a79495ce40
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883565"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111691"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Sähköisen raportoinnin konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
 
@@ -25,7 +25,7 @@ ms.locfileid: "8883565"
 
 Voit suorittaa nämä vaiheet, jos ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet on suoritettu ja sinulla on Microsoft Dynamics Lifecycle Services (LCS) -palvelun käyttöoikeus.
 
-Tässä menettelyssä kerrotaan, miten sähköisen raportoinnin (ER) konfiguraatio suunnitellaan ja miten sen riippuvuus muista ohjelmistojen komponenteista määritetään. Näin voit varmistaa, että konfiguraatio ladataan oikein tiettyyn Finance and Operationsin versioon. Tässä esimerkissä luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware, Inc. 
+Tässä menettelyssä kerrotaan, miten sähköisen raportoinnin (ER) konfiguraatio suunnitellaan ja miten sen riippuvuus muista ohjelmistojen komponenteista määritetään. Näin voit varmistaa, että konfiguraatio ladataan oikein tiettyyn talous- ja toimintosovellusten versioon. Tässä esimerkissä luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware, Inc. 
 
 Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska yritykset jakavat ER-konfiguraatiot. 
 
@@ -46,7 +46,7 @@ Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmä
 7. Valitse Microsoft Dynamics 365 for Operations (1611).
 8. Kirjoita Versio-kenttään [7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
-    * Annetut riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä. Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen. Jos se on ladattu etukäteen, se on tehtävä valmiiksi Finance and Operations -versiossa 7.1.1541.3036 tai uudemmassa. Versio ei kuitenkaan saa olla uudempi kuin pääversio 8.   
+    * Annetut riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä. Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen. Jos se on ladattu etukäteen, se on tehtävä valmiiksi talous- ja toimintosovellusten versiossa 7.1.1541.3036 tai uudemmassa. Versio ei kuitenkaan saa olla uudempi kuin pääversio 8.   
 9. Valitse Tallenna.
 10. Sulje sivu.
 11. Voit muuttaa tilaa valitsemalla Muuta.
@@ -59,7 +59,7 @@ Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmä
 18. Valitse Microsoft Dynamics AX 7.0 RTW.
 19. Kirjoita Versio-kenttään [7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
-    * Riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä. Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen. Jos se on ladattu etukäteen, se on tehtävä valmiiksi Microsoft Dynamics 365 for Finance and Operations, Enterprise editionissa, jonka version on oltava 7.0.1265.3015 tai uudempi. Versio ei kuitenkaan saa olla uudempi kuin aliversio 1.   
+    * Riippuvuudet arvioidaan, kun tämä konfiguraatio ladataan mistä tahansa sähköisen raportoinnin säilöstä. Tämä konfiguraation versio ladataan sähköisen raportoinnin säilöstä, kun Tietomallin esimerkki -konfiguraation versio 1 on jo paikallaan tai ladattu etukäteen. Jos se on ladattu etukäteen, se on tehtävä valmiiksi Microsoft Dynamics 365 Financessa, Enterprise editionissa, jonka version on oltava 7.0.1265.3015 tai uudempi. Versio ei kuitenkaan saa olla uudempi kuin aliversio 1.   
 20. Valitse Tallenna.
 21. Sulje sivu.
 22. Voit muuttaa tilaa valitsemalla Muuta.
@@ -136,10 +136,11 @@ Luodut konfiguraatiot poistetaan järjestelmästä ja ladataan takaisin LCS-säi
 25. Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.
 26. Laajenna puussa Sample data model.
     * Huomaa, että Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraatio on ladattu yhdessä valitun tietomallin konfiguraation kanssa. Nämä kaksi tiedostoa ladataan yhdessä, koska Esimerkkiyhdistämismääritys-konfiguraatio on määritetty valitun tietomallin toteutuksessa. Se on myös käytössä sovelluksessa. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatiota ei ladattu, koska pakollisen sovellusversion ehtoja ei täytetä.   
-    * Jos kirjaudut sisään Finance and Operationsiin, rekisteröit saman tarjoajan, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation, Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
+    * Jos kirjaudut sisään talous- ja toimintosovelluksiin, rekisteröit saman tarjoajan, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation, Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

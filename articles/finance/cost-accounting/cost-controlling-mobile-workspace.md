@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9e7d220639f5f3af26e892461928c646746963bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d6d3fdcc0b0387a92f138b0ba7cf537f473b91a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874664"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069560"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Kustannusseurannan mobiilityötila
 
@@ -29,7 +29,7 @@ ms.locfileid: "8874664"
 
 Tässä artikkelissa on tietoja **kustannusseurannan** mobiilityötilasta. Kustannuspaikan johtajat voivat käyttää työtilaa tarkastellakseen kustannuspaikan suorituskykytietoja milloin ja missä tahansa.
 
-Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations (Dynamics 365) -mobiilisovelluksen kanssa.
+Tämä mobiilityötila on tarkoitettu käytettäväksi talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus
 **Kustannusten hallinnan** mobiilityötila sisältää kustannuspaikkojen nykyisen suorituskyvyn välittömän näkymän vertaamalla toteutuneita kustannuksia budjetoituihin kustannuksiin. Voit porautua yksittäisten kustannuselementtien tilaan.
@@ -114,7 +114,7 @@ Jos organisaatiossa on otettu käyttöön versio 1611 ja Platform update 3 tai u
 
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
-Finance and Operations (Dynamics 365) -mobiilisovelluksen lataaminen ja asentaminen:
+Talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -146,3 +146,4 @@ Finance and Operations (Dynamics 365) -mobiilisovelluksen lataaminen ja asentami
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

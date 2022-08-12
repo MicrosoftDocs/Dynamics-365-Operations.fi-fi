@@ -1,6 +1,6 @@
 ---
 title: Videot
-description: Tämä sivu sisältää luettelon Microsoftin luomista ohjevideoista ja Finance and Operations -sovelluksia koskevista teknisistä videoista, jotka ovat saatavilla YouTubessa ja muilla sivustoilla.
+description: Tämä sivu sisältää luettelon Microsoftin luomista ohjevideoista ja talous- ja toimintasovelluksia koskevista teknisistä videoista, jotka ovat saatavana YouTubessa ja muissa sivustoissa.
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -14,27 +14,27 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: a21a9122badc308940c0182061a18051bfcc0abd
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958135"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124948"
 ---
 # <a name="videos"></a>Videot 
 
 [!include [banner](../includes/banner.md)]
 
-[Microsoft Dynamics 365:n YouTube-kanavalta](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) löydät Microsoftin luomia videoita, jotka esittelevät kattavasti Dynamics 365 -tuotteiden liiketoimintaratkaisuja. Tässä osiossa on luettelo kanvalla isännöidyistä Finance and Operations -sovellusten opetusvideoista.
+[Microsoft Dynamics 365:n YouTube-kanavalta](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) löydät Microsoftin luomia videoita, jotka esittelevät kattavasti Dynamics 365 -tuotteiden liiketoimintaratkaisuja. Tässä osiossa on luettelo kanavalla isännöidyistä talous- ja toimintasovellusten opetusvideoista.
 
 > [!Note]
 > Joissakin luettelossa olevissa videoissa mainitaan vanha tuotenimi, mutta niiden tiedot ovat edelleen voimassa.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Finance and Operationsin kehittämistä ja hallintaa koskevat videot
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Talous- ja toimintasovellusten kehittämistä ja hallintaa koskevat videot
 
 ### <a name="data-integration"></a>Tietojen integrointi
 
-- [Työtilauksen synkronointi Dynamics 365 for Field Servicen ja Finance and Operations -sovellusten välillä](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Työtilauksen synkronointi Dynamics 365 for Field Servicen sekä talous- ja toimintasovellusten välillä](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Tietojen hallinta
 
@@ -50,8 +50,8 @@ ms.locfileid: "8958135"
 ### <a name="intelligence"></a>Tiedot
 
 - [Upotetun raportin muokkaaminen analyysityötilassa](https://youtu.be/_8WlwmSggcQ)
-- [PowerBI.com-raporttien upottaminen Finance and Operations -sovelluksiin](https://youtu.be/gGWuNJDoi-M)
-- [Oman tietokannan tuonti Finance and Operations -sovelluksiin](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [PowerBI.com-raporttien upottaminen talous- ja toimintasovelluksiin](https://youtu.be/gGWuNJDoi-M)
+- [Oman tietokannan tuonti talous- ja toimintasovelluksiin](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Kustannustenhallinnan Power BI -sisällön käyttö Dynamics 365:ssä](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -169,3 +169,4 @@ ms.locfileid: "8958135"
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,5 +1,5 @@
 ---
-title: Taloushallinnon ja toimintojen sovellusten ohjekokemuksen konfiguroiminen
+title: Talous- ja toimintosovellusten ohjekokemuksen määrittäminen
 description: Tässä artikkelissa käsitellään joidenkin Microsoft Dynamics 365 -sovellusten ohjejärjestelmän osista.
 author: margoc
 ms.date: 08/11/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b002b374e5da619460c496b8f0d7a70b7194afd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 35f5d73075d118079ccb0616fbd1c5e1a8e00424
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900126"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123621"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Taloushallinnon ja toimintojen sovellusten ohjekokemuksen konfiguroiminen
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Talous- ja toimintosovellusten ohjekokemuksen määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,7 +33,7 @@ Tässä artikkelissa on talous- ja toimintosovellusten, kuten Microsoft Dynamics
 
 ## <a name="help-architecture"></a>Ohjearkkitehtuuri
 
-Taloushallinnon ja toimintojen sovellukset sisältävä käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [Microsoft Dynamics 365 -ohjeet](/dynamics365/) -sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
+Talous- ja toimintosovellukset sisältävät käsitteellisiä yleiskatsauksia ja muita aiheita, jotka on julkaistu [Microsoft Dynamics 365 -ohjeet](/dynamics365/) -sivustossa. Tätä sisältöä voidaan sitten käyttöön tuotteen **Ohje**-ruudussa. Seuraavassa kuvassa on osa ohjejärjestelmästä.
 
 [![Ohjearkkitehtuuri.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -63,7 +63,7 @@ Ratkaisun tehtäväoppaiden määrittämisohjeet ovat **Järjestelmän parametri
 2. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
 3. Määritä BPM-kirjastojen näyttöjärjestys. Näyttöjärjestys määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
 
-Kun olet suorittanut nämä vaiheet, voit avata **ohjeruudun** ja valita **Tehtäväoppaat**-välilehden, jolla on näkyvissä on avointa taloushallinnon ja toimintojen sovelluksen sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
+Kun olet suorittanut nämä vaiheet, voit avata **ohjeruudun** ja valita **Tehtäväoppaat**-välilehden, jolla on näkyvissä on avointa talous- ja toimintosovellusten sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
 
 ### <a name="showing-translated-task-guides"></a>Käännettyjen tehtäväoppaiden näyttäminen
 
@@ -87,7 +87,7 @@ Kumppanit voivat puolestaan siirtää kirjaston yrityskirjastoon ja sisällyttä
 
 ### <a name="connect-a-custom-help-site"></a>Yhdistäminen mukautettuun ohjesivustoon
 
-Taloushallinnon ja toimintojen sovelluksia käytetään vain harvoin sellaisenaan. Ratkaisu sen mukautetaan ja laajennetaan organisaation tarpeita vastaavaksi. Myös ohjekokemusta voi mukauttaa ja laajentaa. Mukautetun ohjeen voi esimerkiksi lisätä tuotteen **Ohje**-ruutuun.
+Talous- ja toimintosovelluksia käytetään vain harvoin sellaisenaan. Ratkaisu sen mukautetaan ja laajennetaan organisaation tarpeita vastaavaksi. Myös ohjekokemusta voi mukauttaa ja laajentaa. Mukautetun ohjeen voi esimerkiksi lisätä tuotteen **Ohje**-ruutuun.
 
 Microsoftilla on työkalut, joilla mukautetun ohjeen voi ottaa käyttöön **Ohje**-ruudussa ja yhdistää siihen. Lisätietoja **Ohje**-ruutuun yhdistetyn mukautetun ohjeratkaisun määrittämisestä on kohdassa [Mukautetun ohjeen yleiskatsaus](../../dev-itpro/help/custom-help-overview.md).
 
@@ -103,3 +103,4 @@ Jos haluat tehdä Microsoftin kanssa yhteistyötä ohjeen mukauttamistyökalujen
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

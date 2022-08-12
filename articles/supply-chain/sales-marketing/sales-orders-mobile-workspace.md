@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: fc04a90c0c071508c9ebee57862a029de0e58f9a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38971f2a5f3f3d2692de0e52365e2215170101cc
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844761"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103177"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Myyntitilausten mobiilityötila
 
@@ -29,7 +29,7 @@ ms.locfileid: "8844761"
 
 Tässä artikkelissa on tietoja **Myyntitilaukset**-mobiilityötilasta. Tämän työtilan avulla pysyt ajan tasalla myyntitilauksista milloin ja missä tahansa. 
 
-Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations (Dynamics 365) -mobiilisovelluksen kanssa.
+Tämä mobiilityötila on tarkoitettu käytettäväksi talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus
 **Myyntitilaukset** -mobiilin työtilan avulla voit tarkastella kunkin myyntitilauksen yksityiskohtaisia tietoja. Näihin tietoihin kuuluvat tilauksen tila, asiakkaan yhteystiedot ja tilauksen vastaanottajan yhteystiedot. **Myyntitilausten** mobiilityötilassa on pikanäyttö myyntitilauksista. Voit tarkastella myyntitilauksia asiakaskohtaisesti, näyttää kaikki myyntitilaukset tai tarkastella yksittäisen myyntitilauksen tietoja. 
@@ -118,7 +118,7 @@ Jos organisaatiossa on otettu käyttöön Dynamics 365 for Operationsin versio 1
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
-Finance and Operations (Dynamics 365) -mobiilisovelluksen lataaminen ja asentaminen:
+Talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -143,3 +143,4 @@ Finance and Operations (Dynamics 365) -mobiilisovelluksen lataaminen ja asentami
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

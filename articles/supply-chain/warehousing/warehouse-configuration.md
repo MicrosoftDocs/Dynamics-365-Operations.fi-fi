@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982999"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065183"
 ---
 # <a name="warehouse-configuration-overview"></a>Varaston konfigurointi – yleiskatsaus
 
@@ -31,10 +31,10 @@ ms.locfileid: "7982999"
 Tässä artikkelissa kerrotaan, miten varasto määritetään. Artikkeli sisältää tietoja varastoasettelun ja -prosessien ottamisesta käyttöön.
 
 > [!NOTE]
-> Tässä artikkelissa käsitellään **Varastonhallinta**-moduulin toimintoja (varaston lisätoiminnot). Se ei koske **Inventoinnin- ja varastonhallinta** -moduulin varasto-ominaisuuksia.
+> Tämä artikkeli koskee **Varastonhallinta**-moduulin ominaisuuksia. Se ei koske **Inventoinnin- ja varastonhallinta** -moduulin varasto-ominaisuuksia.
 
 ## <a name="warehouse-layout"></a>Varastoasettelu
-Supply Chain Managementin varastonhallintajärjestelmä mahdollistaa varastoasettelun määrittämisen joustavasti muuttuvien tarpeiden mukaan siten, että varastoa voidaan käyttää mahdollisimman tehokkaasti.
+Supply Chain Managementin varastonhallintaprosessit (WMS) mahdollistavat varastoasettelun määrittämisen joustavasti muuttuvien tarpeiden mukaan siten, että varastoa voidaan käyttää mahdollisimman tehokkaasti.
 
 -   Voit määrittää suuren ja pienen prioriteetin varastoalueita tavaroiden optimaalisen sijoitusta varten.
 -   Voit jakaa varaston vyöhykkeisiin erilaisten varastotarpeiden mukaan, joita ovat esimerkiksi lämpötilavaatimukset tai nimikkeiden erilaiset läpimenoajat.
@@ -42,7 +42,7 @@ Supply Chain Managementin varastonhallintajärjestelmä mahdollistaa varastoaset
 -   Voit ryhmittää sijainnit fyysisen kapasiteetin rajoitusasetuksilla.
 -   Voit määrittää kyselymäärityssäännöillä, miten nimikkeet varastoidaan ja kerätään.
 
-Supply Chain Managementin varastonhallinnan käyttöä varten on luotava varasto ja otettava käyttöön varastonhallinnan lisä- tai erikoistoiminnot. Valitse **Varastot**-sivulla **Käytä varastonhallintaprosesseja**.
+WMS:n käyttö Supply Chain Managementissa edellyttää, että varasto luodaan ja WMS otetaan siinä käyttöön. Valitse **Varastot**-sivulla **Käytä varastonhallintaprosesseja**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Vyöhykeryhmät, vyöhykkeet, sijaintityypit ja sijainnit
 

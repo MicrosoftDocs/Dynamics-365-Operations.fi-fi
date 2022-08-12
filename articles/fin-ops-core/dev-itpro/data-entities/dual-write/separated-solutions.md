@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874809"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111657"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Erillinen kaksoiskirjoitussovelluksen hallintapaketti
 
@@ -26,14 +26,14 @@ ms.locfileid: "8874809"
 Aiemmin kaksoiskirjoitussovelluksen hallintapaketti oli vain yksi paketti, joka sisälsi seuraavat ratkaisut:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Common Anchor
-- Dynamics 365 Finance and Operations – kaksoiskirjoituksen entiteettien yhdistämismääritykset
+- Dynamics 365:n talous- ja toimintosovellusten yleinen ankkuri
+- Dynamics 365:n talous- ja toimintosovellusten kaksoiskirjoituksen entiteettien yhdistämismääritykset
 - Dynamics 365 resurssien hallintasovellus
 - Dynamics 365 resurssien hallinta
 - HCM, yhteinen
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Dynamics 365:n talous- ja toimintosovellukset yleinen
 - Dynamics 365 Company
 - Currency Exchange Rates
 - Field Service Common
@@ -247,7 +247,7 @@ Muistiinpanojen kaksoiskirjoituspaketti sisältää muistiinpanojen ja huomautus
 
 Tässä paketissa käytettävissä ovat seuraavat yhdistämismääritykset.
 
-| Finance and Operations                     | Customer Engagement |
+| Talous- ja toimintosovellukset                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Myyntitilauksen otsikkoasiakirjan liitteet    | huomautukset         |
 | Asiakkaan liitteet                       | huomautukset         |
@@ -344,3 +344,4 @@ Kaksoiskirjoituksen osapuoli ja yleinen osoitekirja -ratkaisut määräytyvät s
 - Kaksoiskirjoituksen sovellusydinpaketti
 - Financen kaksoiskirjoituspaketti
 - Toimitusketjun kaksoiskirjoituspaketti
+

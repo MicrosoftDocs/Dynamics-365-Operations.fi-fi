@@ -1,6 +1,6 @@
 ---
 title: Useita laskentataulukoita sisältävät tietomallit
-description: Tässä artikkelissa käsitellään tietojen tuontia Finance and Operationsiin Excelin tietoyksikkömallien avulla.
+description: Tässä artikkelissa käsitellään tietojen tuontia talous- ja toimintosovellusten Excelin tietoyksikkömallien avulla.
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: eaad6f433329dd42c7ab6db839f2f9e61de91a13
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f0845b111afb18205677b885c91fe1585b24ab14
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881098"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108803"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Useita laskentataulukoita sisältävät tietomallit
 
@@ -53,3 +53,4 @@ Voit ladata Excel-tiedoston samalla, kun tuot projektin **Suorita projektit** -a
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

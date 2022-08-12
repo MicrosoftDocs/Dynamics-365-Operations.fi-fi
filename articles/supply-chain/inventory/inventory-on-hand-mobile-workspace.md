@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d493164b754b86a9df9ce4dcf9df8b20eeb55c5c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 640a45e29627ffe56535c7d05419309688e8ecb6
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859427"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069813"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Käytettävissä olevan varaston mobiilityötila
 
@@ -29,7 +29,7 @@ ms.locfileid: "8859427"
 
 Tässä artikkelissa on tietoja **käytettävissä olevan varaston** mobiilityötilasta. Tämä työtila auttaa syventämään näkemyksiä varatusta ja käytettävissä olevasta varastosta milloin tahansa ja missä tahansa.
 
-Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations (Dynamics 365) -mobiilisovelluksen kanssa.
+Tämä mobiilityötila on tarkoitettu käytettäväksi talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus
 Yleensä yrityksillä on useita varaston toimituksia ja vastaanottoja joka päivä. Näiden siirrot muuttavat jatkuvasti käytettävissä olevan varaston tilaa. **Käytettävissä olevan varaston** mobiilityötilassa näet koko yrityksen käytettävissä olevan varaston tilan, jolloin voit hyödyntää uusimpia varastotietoja haluamassasi mobiililaitteessa. Riippumatta siitä, työskenteletkö fyysisessä varastossa, ostossa, myynnissä, tuotannossa, yrityksen johdossa tai muussa roolissa, voit käyttää käytettävissä olevan varaston tietoja milloin tahansa ja missä tahansa. 
@@ -94,7 +94,7 @@ Jos organisaatiossa on otettu käyttöön Platform update 3 tai uudempi, järjes
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
-Finance and Operations (Dynamics 365) -mobiilisovelluksen lataaminen ja asentaminen:
+Talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -131,3 +131,4 @@ Finance and Operations (Dynamics 365) -mobiilisovelluksen lataaminen ja asentami
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

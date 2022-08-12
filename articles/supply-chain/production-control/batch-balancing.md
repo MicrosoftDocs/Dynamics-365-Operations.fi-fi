@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856045"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066543"
 ---
 # <a name="batch-balancing"></a>Erän tasaus
 
@@ -165,22 +165,22 @@ Erän tasauksen ainesosat -aliprosessissa tuotantoerässä käytettyjen ainesosi
 
 ### <a name="confirm-and-release-the-formula"></a>Vahvista ja vapauta resepti
 
-Kun ainesosien määrät on laskettu, voit vahvistaa ja vapauttaa reseptin. Vapautusprosessi vaihtelee sen mukaan, onko varastonhallintaprosessit otettu käyttöön tuotteissa.
+Kun ainesosien määrät on laskettu, voit vahvistaa ja vapauttaa reseptin. Vapautusprosessi vaihtelee sen mukaan, onko varastonhallintaprosessit (WMS) otettu käyttöön tuotteissa:
 
-- Jos varastonhallintaprosessit on otettu käyttöön tuotteessa, reseptirivi vapautetaan varastoon varastonhallintaprosessien periaatteiden mukaan. Reseptirivi vapautetaan täsmäytettyä määriä vastaavina määrinä. Se vapautetaan erityiserille, jotka on valittu vaikuttavilla ainesosille.
+- Jos WMS otettu käyttöön tuotteessa, reseptirivi vapautetaan varastoon WMS-periaatteiden mukaan. Reseptirivi vapautetaan täsmäytettyä määriä vastaavina määrinä. Se vapautetaan erityiserille, jotka on valittu vaikuttavilla ainesosille.
 
     > [!NOTE]
     > Reseptirivit voidaan vapauttaa varastoon vain erän tasausprosessin osana. Vaikka tuotantomateriaalien vapauttamiseen varastoon on muita vaihtoehtoja, niitä ei voi käyttää reseptiriveillä.
 
-- Jos varastonhallintaprosesseja ei ole otettu käyttöön tuotteessa, tuotteelle luodaan tuotannon keräysluettelo, kun vahvistat ja vapautat reseptin.
+- Jos WMS:ää ei ole otettu käyttöön tuotteessa, tuotteelle luodaan tuotannon keräysluettelo, kun vahvistat ja vapautat reseptin.
 
-Voit yhdistää yhteen reseptiin tuotteet, joissa varastonhallintaprosessit on otettu käyttöön, ja tuotteet, joissa näin ei ole tehty. Kun yhdessä reseptissä kahden tyyppisiä tuotteita, tuotteet, joissa varastonhallintaprosessit on otettu käyttöön, vapautetaan varastoon. Tuotteille, joissa varastonhallintaprosesseja ei ole otettu käyttöön, luodaan keräysluettelo, kun resepti vahvistetaan ja vapautetaan.
+Voit yhdistää yhteen reseptiin tuotteet, joissa varastonhallintaprosessit on otettu käyttöön, ja tuotteet, joissa näin ei ole tehty. Kun yhdessä reseptissä kahden tyyppisiä tuotteita, tuotteet, joissa WMS on otettu käyttöön, vapautetaan varastoon. Tuotteille, joissa WMS:ää ei ole otettu käyttöön, luodaan keräysluettelo, kun resepti vahvistetaan ja vapautetaan.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Erätilaukset, joissa ei voi käyttää erän tasausta
 
 On olemassa kaksi poikkeusta sääntöön, jonka mukaan erätilauksissa voi käyttää erän tasausta, jos reseptissä on ainakin yksi reseptirivi, jonka **ainesosatyyppi** on *Aktiivinen*.
 
-1. Jos reseptissä on vaikuttava ainesosa tuotteelle, jossa varastonhallintaprosessit on otettu käyttöön mutta jonka eränumero on varaushierarkian sijainnin alapuolella, erätilauksessa ei voi käyttää erän tasausta.
+1. Jos reseptissä on vaikuttava ainesosa tuotteelle, jossa WMS on otettu käyttöön mutta jonka eränumero on varaushierarkian sijainnin alapuolella, erätilauksessa ei voi käyttää erän tasausta.
 1. Jos reseptin mittayksikkö ei ole sama kuin vaikuttavan ainesosan varastomittayksikkö, erän tasauta ei voi käyttää erätilauksessa.
 
 Jos erätilauksessa ei voi käyttää erän tasausta, se käsitellään erätilausten tavallisen prosessisyklin mukaisesti.

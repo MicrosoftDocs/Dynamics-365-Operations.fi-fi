@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850435"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067525"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Varastotapahtumien tuotesuodattimien määrittäminen
 
@@ -95,7 +95,7 @@ Suodatinkoodit määritetään nimikeryhmissä seuraavasti:
     Jos esimerkiksi **Käytä suodatinkoodia 1** ja **Käytä suodatinkoodia 2** -valintaruudut on valittu, nimikkeen suodatinkoodin 1 ja suodatinkoodin 2 on vastattava nimikeryhmän suodatinryhmän määritystä, ennen kuin suodatinryhmä voidaan valita. Uutta nimikettä luotaessa valittu suodatinryhmä on **Vapautetun tuotteen tiedot** -sivun **Varasto**-pikavälilehden **Ryhmä 1**- ja **Ryhmä 2** -kenttien oletussuodatinryhmä.
 
 > [!IMPORTANT]
-> Tuotteen suodatinkoodit ovat käytössä vain nimikkeissä, joissa käytetään edistynyttä varastonhallintaa.
+> Tuotteen suodatinkoodit ovat käytössä vain nimikkeissä, joissa käytetään varastonhallintaprosesseja (WMS).
 
 ## <a name="specify-filter-codes-for-released-products"></a>Vapautettujen tuotteiden suodatinkoodien määrittäminen
 
@@ -158,7 +158,7 @@ Toimittajan suodatinkoodit määritetään seuraavasti:
 1. Valitse kentissä **Koodi 1**–**Koodi 10** suodatinkoodit, joiden perusteella rajoitetaan toimittajan saatavilla olevia nimikkeitä valitussa nimikeryhmässä. Valinta on tehtävä jokaisen nimikeryhmässä määritetyn suodatinkoodin osalta.
 
 > [!NOTE]
-> Toimittajan tuotesuodattimien määritykset koskeva sellaisia vapautettuja tuotteita, joissa varastonhallintaprosessit on otettu käyttöön liitetyssä varastodimensioryhmässä. Suodatinkoodien avulla määritetään ostotilausrivejä luotaessa, antaako järjestelmä käyttäjien ostaa tietyn toimittajan tietyn nimikkeen. Microsoft Dynamics 365 Supply Chain Managementissa on kaksi tapaa käsitellä toimittajan hyväksyntää. Jos vähintään yhdessä vapautetussa tuotteessa **Hyväksytyn toimittajan tarkistusmenetelmä** -kentän määrityksenä on *Vain varoitus* tai *Ei sallittu*, kumpikin toimittajan hyväksyntämenetelmä voidaan ottaa käyttöön kyseisissä nimikkeissä. Tämä tilanne voi aiheuttaa ongelmia, kun käyttäjät luovat ostotilausrivejä.
+> Toimittajan tuotesuodattimien määritykset koskeva sellaisia vapautettuja tuotteita, joissa varastonhallintaprosessit (WMS) on otettu käyttöön liitetyssä varastodimensioryhmässä. Suodatinkoodien avulla määritetään ostotilausrivejä luotaessa, antaako järjestelmä käyttäjien ostaa tietyn toimittajan tietyn nimikkeen. Microsoft Dynamics 365 Supply Chain Managementissa on kaksi tapaa käsitellä toimittajan hyväksyntää. Jos vähintään yhdessä vapautetussa tuotteessa **Hyväksytyn toimittajan tarkistusmenetelmä** -kentän määrityksenä on *Vain varoitus* tai *Ei sallittu*, kumpikin toimittajan hyväksyntämenetelmä voidaan ottaa käyttöön kyseisissä nimikkeissä. Tämä tilanne voi aiheuttaa ongelmia, kun käyttäjät luovat ostotilausrivejä.
 
 ## <a name="see-also"></a>Lisätietoja
 

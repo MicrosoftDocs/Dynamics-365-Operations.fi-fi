@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657c29ec6ddfb2be918424e06eaf219f51a30a02
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906997"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069059"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
 
@@ -26,7 +26,7 @@ ms.locfileid: "8906997"
 
 Tässä artikkelissa selitetään, kuinka varastonhallinnan mobiilisovellus määritetään niin ,että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 
-Tämän toiminnon avulla voit nopeasti kirjata saapuvaa varastoa koskevan vastaanoton, joka liittyy ennakkoilmoitukseen (ASN). Järjestelmä luo automaattisesti ASN-arvon, kun siirtotilauksen lähetys suoritetaan varastoinnin hallintaprosessien avulla. Ostotilausprosessin aikana ASN voidaan tallentaa manuaalisesti, tai se voidaan tuoda automaattisesti käyttämällä saapuvan ASN-tietoyksikkö prosessia.
+Tämän toiminnon avulla voit nopeasti kirjata saapuvaa varastoa koskevan vastaanoton, joka liittyy ennakkoilmoitukseen (ASN). Järjestelmä luo automaattisesti ASN-arvon, kun siirtotilauksen lähetys suoritetaan varastoinnin hallintaprosessien (WMS) avulla. Ostotilausprosessin aikana ASN voidaan tallentaa manuaalisesti, tai se voidaan tuoda automaattisesti käyttämällä saapuvan ASN-tietoyksikkö prosessia.
 
 ASN-tiedot linkitetään kuormiin ja lähetyksiin *pakkausrakenteiden* kautta, joissa kuormalavat (päärekisterikilvet) voivat sisältää palvelupyyntöjä (sisäkkäisiä rekisterikilpiä).
 

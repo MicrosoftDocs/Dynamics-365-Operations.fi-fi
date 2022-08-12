@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 1c79e1df53dfabc33aeacb56096b113e62b765d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a53dfd02ac2f42fd680eb71509dbd41214160f19
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8875330"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066015"
 ---
 # <a name="master-planning-setup-wizard"></a>Pääsuunnittelun asetusten ohjattu toiminto
 
@@ -31,7 +31,7 @@ Tässä artikkelissa on opas **pääsuunnittelun asetusten ohjattuun toimintoon*
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-[Pääsuunnittelun asetusten ohjattu toiminto Dynamics 365 Supply Chain Managementissa](https://youtu.be/c-e6n-8rZb4) -video (näkyy ylempänä) sisältyy [Finance and Operations -soittolistaan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavilla YouTubessa.
+[Pääsuunnittelun asetusten ohjattu toiminto Dynamics 365 Supply Chain Managementissa](https://youtu.be/c-e6n-8rZb4) -video (näkyy ylempänä) sisältyy [talous- ja toimintosovellusten toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavilla YouTubessa.
 
 
 ## <a name="specific-requirements-of-your-company"></a>Yrityksesi erityisvaatimukset

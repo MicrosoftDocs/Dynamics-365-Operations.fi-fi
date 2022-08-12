@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: afbd23768c86775e8007f72cb8af4126e4452336
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5d1a1a2a5f4bc3d2bdea8ae87865fb3dbfc8c7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897069"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066934"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-commerce"></a>Dynamics 365 Commercen käyttäjien oppimisluettelo
 
@@ -25,7 +25,7 @@ Saitko juuri uuden sovelluksen käyttöösi?
 
 Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin ja helpoimmista kehittyneimpiin. Jos sisältöä on useissa muodoissa, se on mainittu, jotta voit valita tarpeitasi parhaiten vastaavan koulutusmuodon.
 
-Lisätietoja muiden talous- ja toimintosovellusten kanssa jaetuista ominaisuuksien opettamisesta on [Dynamics 365 Financen oppimisluettelossa](../../finance/get-started/learning-catalog-business-user.md).
+Lisätietoja muiden talous- ja toimintosovellusten kanssa jaettujen ominaisuuksien opettamisesta on [Dynamics 365 Financen oppimisluettelossa](../../finance/get-started/learning-catalog-business-user.md).
 
 ## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
 
@@ -53,3 +53,4 @@ Lisätietoja muiden talous- ja toimintosovellusten kanssa jaetuista ominaisuuksi
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

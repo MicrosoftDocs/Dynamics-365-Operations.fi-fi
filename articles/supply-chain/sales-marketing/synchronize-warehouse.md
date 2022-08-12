@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 7fac40ebd8a1f7994997e12f1231e5522a0c0e24
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b86b6a59344299a7a2d277543c3186ed2b8cee4
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865060"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103230"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Varastojen synkronointi Supply Chain Managementista Field Serviceen
 
@@ -58,7 +58,7 @@ Field Servicen ja Supply Chain Managementin integraation tukemiseen tarvitaan Fi
 **Ylläpidetään ulkoisesti** -sarake auttaa hallitsemaan varaston tasojen, oikaisujen, siirtojen ja käytön synkronointia työtilauksissa. Vain varastoja, joiden **Ylläpidetään ulkoisesti** -asetuksena on **Kyllä**, voidaan käyttää suoraan synkronointiin toisessa järjestelmässä olevaan samaan varastoon. 
 
 > [!NOTE]
-> Field Servicessä voi luoda useita varastoja (kun **Ylläpidetään ulkoisesti** = Ei) ja ne voi sitten yhdistää yhteen varastoon kyselyn ja suodatuksen lisäasetustoiminnolla. Tämä menettelyä käytetään tilanteissa, joissa Field Servicella halutaan hallita tarkkaa varastotasoa ja joissa vain päivitykset lähetetään Supply Chain Managementiin. Tässä tapauksessa Field Service ei saa varastotasopäivityksiä Supply Chain Managementista. Lisätietoja on kohdissa [Field Servicen varasto-oikaisujen synkronointi Finance and Operationsiin](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) ja [Field Servicen työtilausten synkronointi projekteihin Finance and Operationsissa linkitettyihin myyntitilauksiin](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Field Servicessä voi luoda useita varastoja (kun **Ylläpidetään ulkoisesti** = Ei) ja ne voi sitten yhdistää yhteen varastoon kyselyn ja suodatuksen lisäasetustoiminnolla. Tämä menettelyä käytetään tilanteissa, joissa Field Servicella halutaan hallita tarkkaa varastotasoa ja joissa vain päivitykset lähetetään Supply Chain Managementiin. Tässä tapauksessa Field Service ei saa varastotasopäivityksiä Supply Chain Managementista. Lisätietoja on kohdissa [Varasto-oikaisujen synkronointi Field Servicesta Supply Chain Managementiin](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) ja [Field Servicen työtilausten synkronointi projekteihin linkitettyihin myyntitilauksiin Supply Chain Managementissa](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 ### <a name="data-integration-project"></a>Tietojen integrointiprojekti

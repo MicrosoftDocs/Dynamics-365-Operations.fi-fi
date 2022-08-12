@@ -1,6 +1,6 @@
 ---
 title: Resurssien hallinnan mobiilityötilan määrittäminen
-description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin ja Finance and Operations (Dynamics 365) -mobiilisovelluksen määrittämistä suorittamaan Resurssien hallinta -mobiilityötila, jota työntekijät voivat käyttää resurssien hallintatehtävien suorittamiseen.
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin sekä talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen määrittämistä suorittamaan Resurssien hallinta -mobiilityötila, jota työntekijät voivat käyttää resurssien hallintatehtävien suorittamiseen.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef4e6bf2ae59adb05c7d4aacc3f5675a5adcafc9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870839"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070050"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Resurssien hallinnan mobiilityötilan määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin ja Finance and Operations (Dynamics 365) -mobiilisovelluksen määrittämistä suorittamaan **Resurssien hallinta** -mobiilityötila, jota työntekijät voivat käyttää resurssien hallintatehtävien suorittamiseen.
+Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Managementin sekä talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen määrittämistä suorittamaan **Resurssien hallinta** -mobiilityötila, jota työntekijät voivat käyttää resurssien hallintatehtävien suorittamiseen.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Ylläpitotyöntekijäkäyttäjien määrittäminen Supply Chain Managementissa
 
@@ -41,7 +41,7 @@ Tässä artikkelissa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>Resurssien hallinnan mobiilityötilan julkaiseminen
 
-Resurssien hallinnan toimintojen käyttöönottaminen Finance and Operations (Dynamics 365) -mobiilisovelluksessa edellyttää **Resurssien hallinta** -mobiilityötilan julkaisemista.
+Resurssien hallinnan toimintojen käyttöönottaminen talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksessa edellyttää **Resurssien hallinta** -mobiilityötilan julkaisemista.
 
 1. Valitse Supply Chain Managementissa **Asetukset**-painike (rataskuvake oikeassa yläkulmassa) ja valitse sitten valikossa **Mobiilisovellus**.
 1. Etsi **Mobiilisovelluksen hallinta** -valintaikkunassa **Resurssien hallinta** -ruutu. Jos siinä on teksti Metatiedoissa – ei julkaistu, työtilaa ei ole vielä julkaistu. Jos siinä on teksti Metatiedoissa – julkaistu, työtila on jo julkaistu ja tämän menettelyn muut vaiheet voidaan ohittaa.
@@ -50,9 +50,9 @@ Resurssien hallinnan toimintojen käyttöönottaminen Finance and Operations (Dy
 
 1. Valitse ensin **Resurssien hallinta** -ruutu ja sitten työkalurivillä **Julkaise**. Muutaman sekunnin kuluttua pitäisi avautua ilmoitus, jonka mukaan työtilan julkaisu on onnistunut. Lisäksi ruudussa olevan tekstin pitäisi olla nyt Metatiedoissa – julkaistu.
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Finance and Operations (Dynamics 365) -mobiilisovelluksen asentaminen ja määrittäminen
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksen asentaminen ja määrittäminen
 
-1. Asenna **Microsoft Finance and Operations (Dynamics 365)** -sovellus mobiililaitteeseen siirtymällä johonkin seuraavista sovelluskaupoista:
+1. Asenna **Microsoftin talous- ja toimintosovellusten (Dynamics 365)** mobiilisovellus mobiililaitteeseen siirtymällä johonkin seuraavista sovelluskaupoista:
 
     - [Google Android -laitteet](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Apple iOS -laitteet](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -80,7 +80,7 @@ Resurssien hallinnan toimintojen käyttöönottaminen Finance and Operations (Dy
 
 Lisätietoja **Resurssien hallinta** -mobiilityötilan käyttämisestä on kohdassa [Resurssien hallinnan mobiilityötilan käyttäminen](asset-management-mobile-workspace.md).
 
-Lisätietoja Finance and Operations (Dynamics 365) -mobiilisovelluksesta on kohdassa [Mobiilisovelluksen aloitussivu](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+Lisätietoja talous- ja toimintosovellusten (Dynamics 365) mobiilisovelluksesta on kohdassa [Mobiilisovelluksen aloitussivu](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

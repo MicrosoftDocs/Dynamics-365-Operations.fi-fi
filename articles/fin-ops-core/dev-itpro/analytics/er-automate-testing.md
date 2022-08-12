@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6254d15d13e40007396c9f2a36a8cd3122dc2609
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892766"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109337"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Testauksen automatisointi sähköisen raportoinnin avulla
 
@@ -57,7 +57,7 @@ Tehotoimintakäyttäjät voivat suorittaa käyttäjän hyväksyntä- ja integroi
 Ennen kuin voit suorittaa tämän artikkelin tehtäviä, seuraavien edellytysten on toteuduttava:
 
 - Ota käyttöön testauksen automatisointia tukeva topologia. Sinulla on oltava tämän topologiaesiintymän **Järjestelmänvalvoja**-rooli. Topologian on sisällettävä tässä esimerkissä käytettävät demotiedot. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto ja käyttäminen](../perf-test/continuous-build-test-automation.md).
-- Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT-työkalun asentamisesta ja sen määrittämisestä Finance and Operations -sovelluksissa ja Azure DevOpsissa käytettäväksi on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
+- Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT-työkalun asentamisesta ja sen määrittämisestä talous- ja toimintosovelluksissa sekä Azure DevOpsissa käytettäväksi on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
 
     ![RSAT-asetukset.](media/GER-Configure.png "Näyttökuva RSAT-asetukset-valintaikkunasta")
 

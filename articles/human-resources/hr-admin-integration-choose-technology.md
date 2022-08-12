@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c542684642e4f6eda0f862623889a68f85b2b20
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887792"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068875"
 ---
 # <a name="choose-a-data-integration-technology"></a>Valitse tietojen integrointiteknologia
 
@@ -70,7 +70,7 @@ Dataverse-taulukot ja niihin liittyvät ohjelmointirajapinnat ovat paras vaihtoe
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-yksiköt
 
-Human Resources, joka on rakennettu ensisijaisesti samalle alustalle kuin taloushallinnon ja toimintojen sovellukset, tarjoavat [Tietojenhallintakehyksen (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF tunnetaan myös tietojen tuonnin vientikehyksenä (DIXF). Henkilöstöhallinnossa on joukko tietokokonaisuuksia, joita voidaan käyttää henkilöstöhallinnon tietojen tuomiseen ja viemiseen. Vaikka Dataverse-taulukot ovat ensisijainen tietojen integrointirajapinta Human Resourcesia varten, DMF-yksiköt ovat edelleen hyödyllisiä joissakin olosuhteissa, kuten:
+Human Resources, joka on muodostettu ensisijaisesti samassa ympäristössä kuin talous- ja toimintosovellukset, sisältää [tietojenhallintakehyksen (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF tunnetaan myös tietojen tuonnin vientikehyksenä (DIXF). Henkilöstöhallinnossa on joukko tietokokonaisuuksia, joita voidaan käyttää henkilöstöhallinnon tietojen tuomiseen ja viemiseen. Vaikka Dataverse-taulukot ovat ensisijainen tietojen integrointirajapinta Human Resourcesia varten, DMF-yksiköt ovat edelleen hyödyllisiä joissakin olosuhteissa, kuten:
 
 - Dataverse-taulukot eivät ole vielä käytettävissä.
 
@@ -113,7 +113,7 @@ BYOD soveltuu raportointiratkaisuihin, tietojen integrointiin, tietojen yhdistä
 
 ### <a name="odata-enabled-entities"></a>OData-yhteensopivat yksiköt
 
-Useimpia DMF-yksikköjä voi käyttää myös Human Resources -tietopalvelun kautta (OData). [Taloushallinnon ja toimintojen OData-palvelua](/dynamics365/unified-operations/dev-itpro/data-entities/odata) koskevat asiakirjat koskevat henkilöresursseja, lukuun ottamatta omien ODatan suojaamien yksiköiden luomista.
+Useimpia DMF-yksikköjä voi käyttää myös Human Resources -tietopalvelun kautta (OData). [Talous- ja toimintosovellusten OData-palvelua](/dynamics365/unified-operations/dev-itpro/data-entities/odata) koskevat asiakirjat koskevat henkilöresursseja, lukuun ottamatta omien ODatan suojaamien yksiköiden luomista.
 
 Vaikka Dataverse ja Dataversen tarjoama OData-täytäntöönpano ([Dynamics 365:n verkko-ohjelmointirajapinnalla](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) on suositeltava Human Resourcesin tietopalvelun sijaan, Human Resourcesin tietopalvelu kattaa tällä hetkellä Human Resources -tietojen yksiköt laajemmin.
 
@@ -153,3 +153,4 @@ Kun tarjolla on niin monta erilaista integrointiteknologiaa, integrointimenetelm
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

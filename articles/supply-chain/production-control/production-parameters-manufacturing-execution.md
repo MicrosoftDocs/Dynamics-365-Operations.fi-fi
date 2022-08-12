@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016156"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070376"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Tuotannonohjauksen tuotantoparametrit
 
@@ -71,7 +71,7 @@ Voit valita kussakin vaiheessa **Automaattinen tuoterakennekulutus** -kentässä
   - Tyhjä (yhtään vaihtoehtoa ei valita).
   - **Käytettävissä sijainnissa**
 
-    Jos tuotannonohjauksessa on valittu **Materiaaliottosääntö** **Alku**-välilehden **Automaattinen tuoterakennekulutus** -kentässä, kaikki tuoterakenteen materiaalit, joissa on valittu **Alku**, vähennetään varastosta työvaiheen alkaessa. **Käytettävissä sijainnissa** -vaihtoehtoa käytetään tuotteissa, joissa edistykselliset varastoprosessit on otettu käyttöön. Jos valitset tämän materiaalinottosäännön, materiaali otetaan, kun raaka-aineen keräyksen varastotyö on valmis. Materiaali otetaan myös silloin, kun tätä materiaaliottosääntöä käyttävä tuoterakenteen rivi vapautetaan varastoon ja materiaali on saatavana tuotannon varastosijainnissa.
+    Jos tuotannonohjauksessa on valittu **Materiaaliottosääntö** **Alku**-välilehden **Automaattinen tuoterakennekulutus** -kentässä, kaikki tuoterakenteen materiaalit, joissa on valittu **Alku**, vähennetään varastosta työvaiheen alkaessa. **Käytettävissä sijainnissa** -vaihtoehtoa käytetään tuotteissa, joissa varastonhallintaprosessit (WMS) on otettu käyttöön. Jos valitset tämän materiaalinottosäännön, materiaali otetaan, kun raaka-aineen keräyksen varastotyö on valmis. Materiaali otetaan myös silloin, kun tätä materiaaliottosääntöä käyttävä tuoterakenteen rivi vapautetaan varastoon ja materiaali on saatavana tuotannon varastosijainnissa.
 
     > [!NOTE]
     > Jos **Materiaaliottosääntö**-kenttä on valittu tuotannonohjauksen **Alku**-välilehdessä, sama sääntö on valittava myös joko **Työvaiheet**- tai **Ilmoita valmiiksi** -välilehdessä. Tämä edellytys auttaa varmistamaan, että materiaalit vähennetään varastoista niissä tuoterakenteissa, joissa tuotantotilauksen materiaaliottosäännöksi on valittu **Lopetus**. Jos samaa materiaaliottosääntöä ei valita joko **Työvaiheet**- tai **Ilmoita valmiiksi** -välilehdessä, on mahdollista, että materiaalit vähennetään varastosta kahdesti.

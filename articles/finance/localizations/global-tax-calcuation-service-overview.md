@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 24d4a722ee143dc0869f758475aaf377e7a9e084
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954518"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166836"
 ---
 # <a name="tax-calculation-overview"></a>Verolaskennan yleiskatsaus
 
@@ -29,7 +29,7 @@ Verolaskenta on hyperskaalautuva monivuokaajapalvelu, jonka avulla Global Tax En
 Verolaskenta integroituu Dynamics 365 Financen ja Dynamics 365 Supply Chain Managementin kanssa. Lopulta se tulee integroitumaan myös Dynamics 365 Project Operationsiin, Dynamics 365 Commerceen ja muihin ensimmäisen ja kolmannen osapuolen sovelluksiin.
 
 > [!IMPORTANT]
-> Kun veron laskentapalvelu otetaan käyttöön, joitakin liittyvien tietojen toimintoja voidaan suorittaa muissa kuin palvelun tietoja ylläpitävässä palvelinkeskuksessa. Tutustu [käyttöehtoihin](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md), ennen kuin otat veron laskentapalvelun käyttöön. Tietosuojasi on meille tärkeä. Lisätietoja on [tietosuojalausekkeessa](https://go.microsoft.com/fwlink/?LinkId=521839).
+> Kun veron laskentapalvelu otetaan käyttöön, joitakin liittyvien tietojen toimintoja voidaan suorittaa muissa kuin palvelun tietoja ylläpitävässä palvelinkeskuksessa. Tutustu [käyttöehtoihin](https://go.microsoft.com/fwlink/?linkid=2156043), ennen kuin otat veron laskentapalvelun käyttöön. Tietosuojasi on meille tärkeä. Lisätietoja on [tietosuojalausekkeessa](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Verolaskenta on mikropalvelupohjainen veromoduuli, jonka äärimmäinen skaalautuva ja jolla voi suorittaa seuraavat tehtävät:
 

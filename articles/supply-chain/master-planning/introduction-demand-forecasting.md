@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
-ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
+ms.openlocfilehash: 5c764cc186b5c8742ccfd90b5928f6625f3360c8
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8960171"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065594"
 ---
 # <a name="demand-forecasting-overview"></a>Kysynnän ennustepalveluiden yleiskatsaus
 
@@ -56,7 +56,7 @@ Kysynnän ennusteissa käytetään kolmea pääteemaa:
 - **Modulaarisuus** – Kysynnän ennusteet ovat modulaarisia ja helposti määritettäviä. Voit ottaa toiminnon käyttöön ja poistaa sen käytöstä muuttamalla konfigurointiavain kohdassa **Kauppa** &gt; **Varastoennuste** &gt; **Kysynnän ennuste**.
 - **Microsoft Stackin uudelleenkäyttö** – Automaattianalyysipalvelu, joka on osa Microsoft Cortana Analytics Suite -ohjelmistoa, tarjoaa mahdollisuuden luoda nopeasti ja helposti ennustavia analyysikokeiluja, kuten kysynnän arviokokeiluja, käyttämällä algoritmeja R tai Python-ohjelmointikieltä sekä yksinkertaista vedä-ja-pudota-käyttöliittymää.
   - Voit ladata kysynnän ennusteen kokeilut, muuttaa niitä niin, että ne vastaavat liiketoimintasi tarpeita, julkaista ne verkkopalvelussa Azuressa ja käyttää niitä kysynnän ennusteiden luomiseen. Kokeilut ovat ladattavissa, jos olet ostanut tuotannon suunnittelutoiminnon Supply Chain Management -tilauksen yritystason käyttäjänä.
-  - Voit ladata minkä tahansa saatavilla olevan kysynnän ennustekokeilun kohdasta [Cortana Analytics -galleria](https://gallery.cortanaanalytics.com/). Kysynnän ennusteen kokeilut integroidaan automaattisesti Supply Chain Managementiin, mutta asiakkaiden ja kumppanien on käsiteltävä niiden kokeilujen integraatiot, jotka he lataavat [Cortana Analytics -galleriasta](https://gallery.cortanaanalytics.com/). Näin ollen [Cortana Analytics -gallerian](https://gallery.cortanaanalytics.com/) kokeilujen käyttö ei ole yhtä suoraviivaista kuin Finance and Operationsin kysynnän ennusteen kokeilujen käyttö. Sinun on muokattava kokeilujen koodia niin, että ne käyttävät Finance and Operationsin ohjelmointirajapintaa.
+  - Voit ladata minkä tahansa saatavilla olevan kysynnän ennustekokeilun kohdasta [Cortana Analytics -galleria](https://gallery.cortanaanalytics.com/). Kysynnän ennusteen kokeilut integroidaan automaattisesti Supply Chain Managementiin, mutta asiakkaiden ja kumppanien on käsiteltävä niiden kokeilujen integraatiot, jotka he lataavat [Cortana Analytics -galleriasta](https://gallery.cortanaanalytics.com/). Näin ollen [Cortana Analytics -valikoiman](https://gallery.cortanaanalytics.com/) kokeilujen käyttö ei ole yhtä suoraviivaista kuin talous- ja toimintosovellusten kysynnän ennusteen kokeilujen käyttö. Sinun on muokattava kokeilujen koodia niin, että ne käyttävät talous- ja toimintosovellusten ohjelmointirajapintaa.
   - Voit luoda omat kokeilusi Microsoft Azuren automaattianalyysipalvelussa (perinteinen), julkaista ne Azuren palveluissa ja käyttää niitä kysynnän ennusteiden luomiseen.
   - Jos et tarvitse korkeaa suorituskykyä tai jos sinun ei tarvitse käsitellä suurta tietojen määrää, voit käyttää automaattianalyysipalveluiden vapaata tasoa. Suosittelemme, että aloitat aina tältä tasolta, etenkin käyttöönotto- ja testausvaiheiden aikana. Jos tarvitset korkeampaa suorituskykyä ja lisätallennustilaa, voit käyttää automaattianalyysipalveluiden standarditasoa. Tämä taso vaatii Azure-tilauksen ja siihen liittyy lisäkustannuksia. Saat lisätietoja automaattianalyysipalveluiden hinnoittelusta kohdassa [Automaattianalyysipalveluiden hinnoittelu](https://aka.ms/machine-learning-price-info).
 - **Ennusteen vähennys missä tahansa erotuskohdassa** – Tähän toimintoon perustuvien koontien kysynnän ennusteessa, jonka avulla voit ennustaa sekä sidonnaista että riippumatonta kysyntää missä tahansa erotuskohdassa.
@@ -101,3 +101,4 @@ Huomaa, että kysynnän ennusteen mittayksiköllä ei tarvitse tiettyä merkitys
 - [Verkkoseminaari: Kysynnän ennustaminen Azuren koneoppimispalvelun sarjojen avulla](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
