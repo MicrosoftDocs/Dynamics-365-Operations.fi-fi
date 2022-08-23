@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7141f9c7ae4e27013bd655ce78892fc44c181315
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111815"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242979"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Päivitä osapuolen osoitekirjan ja yleisen osoitekirjan malliin
 
@@ -274,7 +274,7 @@ Tässä osassa kuvaillaan asetukset, jotka on suoritettava ennen osapuolen posti
 
     ![Osapuolen Dataverse-tietueiden tuominen.](media/data-factory-import-party.png)
 
-9. Suorita Data Factoryssa osapuolen postiosoitteen ja osapuolen sähköisen osoitteen mallit toisensa perään.
+9. Suorita Data Factoryssa osapuolen sähköisen osoitteen ja osapuolen postiosoitteen mallit peräkkäin.
 
     + Osapuolen postiosoitemalli päivittää ja lisää (upsert) kaikki asiakasvuorovaikutussovelluksen postiosoitetietueet ja liittää ne vastaaviin **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-tietueisiin. Lisäksi se luo kolme .csv-tiedostoa: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv ja ImportFONewPostalAddress.csv.
     + Osapuolen sähköisen osoitteen malli päivittää ja lisää (upsert) kaikki asiakasvuorovaikutussovelluksen sähköisten osoitteiden tietueet ja liittää ne vastaaviin **Tili**-, **Yhteyshenkilö**- ja **Toimittaja**-tietueisiin. Se luo myös yhden .csv-tiedoston: ImportFONewElectronicAddress.csv.

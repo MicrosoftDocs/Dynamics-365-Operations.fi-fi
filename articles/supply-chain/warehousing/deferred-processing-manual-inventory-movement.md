@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863734"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219805"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Manuaalisen varastosiirron lykätty käsittely
 
@@ -33,7 +33,7 @@ Taustakäsittely saadaan aikaan käyttämällä [Käsittele varastosovelluksen t
 Jos haluat käyttää tätä toimintoa, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Ne on otettava käyttöön tässä järjestyksessä:
 
 1. *Organisaation laajuinen työn esto*<br>(Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
-1. *Käsittele varastosovelluksen tapahtumat*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+1. *Käsittele varastosovelluksen tapahtumat*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on pakollinen. Siksi se on oletusarvoisesti käytössä eikä sitä voi enää poistaa käytöstä.)
 1. *Lykätyt hyllytystoiminnot*
 1. *Manuaalisen varastosiirtotoiminnon lykätty käsittely*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
 

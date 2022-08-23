@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e3d709a185796152b03f8ed83088cb5c3d137bae
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895464"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219745"
 ---
 # <a name="release-to-warehouse-rule"></a>Vapauta varastoon -sääntö
 
@@ -69,7 +69,7 @@ Tässä osassa on kaksi skenaariota, joiden avulla voit selvittää, mitä toimi
 
 ### <a name="make-sample-data-available"></a>Ota mallitiedot käyttöön
 
-Näiden skenaarioiden käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen kuin aloitat.
+Näiden skenaarioiden käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../fin-ops-core/fin-ops/get-started/demo-data.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen kuin aloitat.
 
 Voit hyödyntää näitä skenaarioita ominaisuuden ohjeena, kun työskentelet tuotantojärjestelmän parissa. Tässä tapauksessa sinun on kuitenkin korvattava omat arvosi, ja sinulta saattaa puuttua joitakin pakollisia tietoja, joita vakiodemotiedot sisältävät.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123805"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219151"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Dynamics 365 Supply Chain Managementin uudet ja muuttuneet ominaisuudet 10.0.20. (elokuu 2021)
 
@@ -49,7 +49,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toimintojen parannukse
 | Moduuli | Ominaisuuden&nbsp;nimi&nbsp;ominaisuuksien&nbsp;hallinnassa | Lisätietoja |
 |---|---|---|
 | Pääsuunnittelu | Oikaistun kysynnän ennusteen rinnakkainen valtuuttaminen | Tämä ominaisuus sallii oikaistun tarve-ennusteen rinnakkaisen valtuuttamisen **oikaistun kysynnän ennuste** -sivulta. Tämän ominaisuuden tarkoituksena on parantaa suorituskykyä, kun suuri määrä ennusteita on valtuutettu. Valtuutettaessa käyttäjä voi määrittää **säikeiden määrän** valtuuttamisen valintaikkunassa. |
-| Pääsuunnittelu | (Esiversio) Suunniteltujen bulkki- ja pakkauserätilausten eräkelpoinen vahvistaminen ja konsolidointi | Tämän ominaisuuden avulla voit käyttää erätöitä bulkki- ja pakkaustilausten vahvistamiseen ja konsolidointiin. |
+| Pääsuunnittelu | Suunniteltujen suur- ja pakkauserätilausten eräkelpoinen vahvistaminen ja konsolidointi | Tämän ominaisuuden avulla voit käyttää erätöitä bulkki- ja pakkaustilausten vahvistamiseen ja konsolidointiin. |
 | Tuotannonhallinta | Kopioi yleiset reitit | Tämä ominaisuus parantaa reitityskopioita, jotta käyttäjät voivat kopioida reitityksiä, jotka eivät ole nimikekohtaisia. Sen avulla järjestelmä voi päivittää kaikki merkitykselliset tiedot (kuten toimipaikka, reititysryhmä, resurssivaatimukset ja eri ajat) sen jälkeen, kun kopiointireititystoimintoa on käytetty korvaamaan nimikkeeseen vielä käyttämättä olevan reitityksen. |
 | Tuotannonhallinta | Päivitä liittyvät resurssivaatimukset, kun reittitoimintoa muutetaan | Tämän ominaisuuden avulla järjestelmä voi päivittää liittyvät resurssivaatimukset sen jälkeen, kun käyttäjä on muuttanut aiemmin luodun reittivaiheen toimintoa. |
 | Tuotetietojen hallinta | Tuoterakenneraportin esikäsittely aikakatkaisun estämiseksi | Tämä ominaisuus aiheuttaa tuoterakenneraportin esikäsiteltävän toiminnon. Näin vältytaan aikakatkaisulta, kun raportissa on suuri tietokuormitus. |

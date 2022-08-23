@@ -1,20 +1,20 @@
 ---
 title: Saksan Intrastat
 description: Tässä artikkelissa on tietoja Saksan Intrastat-ilmoituksesta.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 9516a4516488282820659da141fe3ad33fbe3a9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ae978b28098d92d84415c29bbe76157144f862d8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848457"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269431"
 ---
 # <a name="german-intrastat"></a>Saksan Intrastat
 
@@ -150,7 +150,7 @@ Tässä esimerkissä näytetään, miten tuonti ja vienti kirjataan Intrastat-ra
 
     1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Tapahtumakoodit**.
     2. Valitse toimintoruudussa **Uusi**.
-    3. Anna **Tapahtumakoodi**-kenttään **21**.
+    3. Anna **Tapahtuma****koodi**-kenttään **21**.
     4. Anna **Nimi**-kenttään **Tavaroiden palautus**.
     5. Valitse toimintoruudussa **Tallenna**.
 
@@ -170,7 +170,7 @@ Tässä esimerkissä näytetään, miten tuonti ja vienti kirjataan Intrastat-ra
 5. Määritä ulkomaankaupan parametrit.
 
     1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-    2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **11**.
+    2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuma****koodi**-kentässä **11**.
     3. Valitse **Hyvityslasku**-kentässä **21**.
     4. Valitse **Viranomainen**-kentässä **TA**.
     5. Valitse **Sähköisen raportoinnin** pikavälilehden **Tiedostomuodon määritys** -kentästä **INSTAT XML (DE)**.

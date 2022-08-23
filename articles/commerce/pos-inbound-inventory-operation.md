@@ -1,27 +1,27 @@
 ---
 title: Myyntipisteen saapuva varastotoiminto
 description: Tässä artikkelissa kuvataan myyntipisteen saapuva varastotoiminto.
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858879"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288349"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Myyntipisteen saapuva varastotoiminto
 
@@ -141,7 +141,7 @@ Ostotilausrivin alitoimituksen toleranssiprosentti voidaan määrittää tuottei
 
 Kun organisaatio on määrittänyt ostotilauksen alitoimituksen, myyntipisteen käyttäjät näkevät **Sulje jäljellä oleva määrä** -vaihtoehdon **Tiedot**-ruudussa, kun saapuva ostotilausrivi valitaan **Saapuva varasto** -toiminnossa. Jos käyttäjä sulkee jäljellä olevan määrän, myyntipiste vahvistaa, onko suljettava määrä ostotilausrivillä määritetyn alitoimituksen toleranssiprosentin mukainen. Jos alitoimitustoleranssi ylittyy, virhesanoma avautuu eikä käyttäjä voi sulkea jäljillä olevaa määrää, ennen kuin aiemmin vastaanotettu määrä ja siihen lisätty **Vastaanotto nyt** -määrä vastaavat tai ylittävät vastaanotettavan alitoimituksen toleranssiprosenttiin perustuvan vähimmäismäärän. 
 
-Kun **Sulje jäljellä oleva määrä** -vaihtoehto on otettu käyttöön ostotilausrivillä ja käyttäjä suorittaa vastaanoton loppuun **Viimeistele vastaanotto** -toiminnon, sulkemispyyntö lähetetään myös Commerce Headquartersiin ja tämän tilauksen vielä vastaanottamaton määrä peruutetaan. Tässä vaiheessa rivi katsotaan täysin vastaanotetuksi. 
+Kun **Sulje jäljellä oleva määrä** -vaihtoehto on otettu käyttöön ostotilausrivillä ja käyttäjä suorittaa vastaanoton loppuun **Viimeistele vastaanotto** -toiminnon, sulkemispyyntö lähetetään myös Commerce Headquartersiin ja tämän tilausrivin vielä vastaanottamaton määrä peruutetaan. Tässä vaiheessa rivi katsotaan täysin vastaanotetuksi. 
 
 ### <a name="receiving-location-controlled-items"></a>Vastaanoton sijaintiohjatut nimikkeet
 
@@ -155,15 +155,13 @@ Voit halutessasi valita **Vastaanota kaikki** sovelluspalkissa ja päivittää k
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Suunnittelemattomien nimikkeiden vastaanotto ostotilauksissa
 
-Käyttäjät voivat vastaanottaa Commercessa versiosta 10.0.14 alkaen tuotteen, jota ei ollut alun perin ostotilauksessa. Tämä toiminto otetaan käyttöön ottamalla **Lisää rivejä ostotilaukseen myyntipisteen vastaanoton aikana**.  
-
-Tämä toiminto toimii vain ostotilauksen vastaanottamisessa. Nimikkeitä ei voi vastaanottaa siirtotilausten perusteella, jos nimikkeitä ei ole tilattu aiemmin ja lähetetty lähtevästä varastosta.
+Käyttäjät voivat vastaanottaa Commercessa versiosta 10.0.14 alkaen tuotteen, jota ei ollut alun perin ostotilauksessa. Tämä toiminto toimii vain ostotilauksen vastaanottamisessa. Nimikkeitä ei voi vastaanottaa siirtotilausten perusteella, jos nimikkeitä ei ole tilattu aiemmin ja lähetetty lähtevästä varastosta.
 
 Käyttäjät eivät voi lisätä uusia tuotteita ostotilaukseen myyntipisteen vastaanoton aikana, jos ostotilauksen [muutosten hallinnan työnkulku](../supply-chain/procurement/purchase-order-approval-confirmation.md) on otettu käyttöön Commercen pääkonttoriversiossa (HQ). Muutosten hallinnan käyttöönotto edellyttää, että kaikki ostotilauksen muutokset on hyväksyttävä, ennen kuin vastaanotto sallitaan. Koska vastaanottaja voi tämän prosessin myötä lisätä uusia rivejä ostotilaukseen, vastaanotto epäonnistuu, jos muutosten hallinnan työnkulku on otettu käyttöön. Jos muutosten hallinta on otettu käyttöön kaikissa ostotilauksissa tai toimittaja on linkitetty ostotilaukseen, jota vastaanotetaan aktiivisesti myyntipisteessä, käyttäjä ei voi lisätä myyntipisteessä uusia tuotteita ostotilaukseen vastaanoton aikana.
 
 Rivien lisäämisen mahdollistavaa toimintoa ei voi käyttää keinona vastaanottaa lisää ostotilauksessa jo olevia tuotteita. Ylivastaanottoa hallitaan ostotilauksen tuoterivin [ylivastaanoton](#over-receiving-validations) vakioasetuksilla.
 
-Jos **Lisää rivejä ostotilaukseen myyntipisteen vastaanoton aikana** on otettu käyttöön ja käyttäjä käyttää myyntipisteessä vastaanottoon **saapuvaa toimintoa** ja jos käyttäjä lukee tai näppäilee tuotteen viivakoodin tai tuotenumeron, jota ei tunnisteta nykyisen ostotilauksen nimikkeeksi mutta joka tunnistetaan kelvolliseksi nimikkeeksi, käyttäjä vastaanottaa ilmoituksen nimikkeen lisäämisestä ostotilaukseen. Jos käyttäjä lisää nimikkeen ostotilaukseen, **Vastaanotto nyt** -kohdassa annettua arvoa pidetään ostotilausrivin tilattuna määränä.
+Kun käyttäjä käyttää myyntipisteessä vastaanottoon **saapuvaa toimintoa** ja lukee tai näppäilee tuotteen viivakoodin tai tuotenumeron, joka tunnistetaan kelvolliseksi nimikkeeksi, mutta ei nykyisen ostotilauksen nimikkeeksi, käyttäjää kehotetaan lisäämään nimike ostotilaukseen. Jos käyttäjä lisää nimikkeen ostotilaukseen, **Vastaanotto nyt** -kohdassa annettua arvoa pidetään ostotilausrivin tilattuna määränä.
 
 Kun ostotilaus on vastaanotettu ja lähetetty käsiteltäväksi pääkonttoriversioon, lisätyt rivit luodaan ostotilauksen pääasiakirjaan. Pääkonttoriversion ostotilausrivillä on **Myyntipiste lisännyt** -merkintä ostotilausrivin **Yleiset**-välilehdessä. **Myyntipiste lisännyt** -merkintä ilmaisee, että myyntipisteen vastaanottoprosessi lisäsi ostotilausrivin ja että rivi ei ollut ostotilauksessa ennen vastaanottoa.
 

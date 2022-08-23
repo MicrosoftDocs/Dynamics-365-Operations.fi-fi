@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 description: Tässä artikkelissa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Financesta.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068919"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219565"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -32,6 +32,20 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > [!NOTE]
 > Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Financen version 10.0.29 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero
+
+[Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Poiston tai vanhentumisen syy** | Korvattu parannetulla [Intian varastosiirtotilaukset](../../finance/localizations/apac-ind-stock-transfer.md) -ominaisuudella|
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan** | Hakemus |
+| **Käytön asetukset** | Kaikki |
+| **Tila** | Vanhentunut: **Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero** -ominaisuutta ei enää tueta huhtikuun 2023 jälkeen, eli sille ei tarjota enää virheiden korjauksia tai tietoturvakorjauksia. Pyydämme asiakkaita käyttämään parannettua [Intian varastosiirtotilaukset](../../finance/localizations/apac-ind-stock-transfer.md) -ominaisuutta. **Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero** -ominaisuus ei ole enää käytettävissä lokakuun 2023 jälkeen, ja asiakkaita pyydetään käyttämään parannettua ominaisuutta. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Financen version 10.0.26 poistetut tai vanhentuneet ominaisuudet
 

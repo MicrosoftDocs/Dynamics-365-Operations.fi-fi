@@ -1,26 +1,26 @@
 ---
 title: Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 description: Tässä artikkelissa selitetään, miten määritetyt sähköisen raportoinnin (ER) komponentit voidaan tarkistaa mahdollisten suorituksen aikaisten ongelmien välttämiseksi.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314
+ms.assetid: ''
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
+ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864833"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277847"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Tarkista määritetty ER-komponentti estääksesi suorituksen aikaiset ongelmat
 
@@ -30,8 +30,8 @@ Jokainen määritetty [Sähköisen raportoinnin (ER)](general-electronic-reporti
 
 Oletusarvon mukaan oikeellisuustarkistusta käytetään seuraavissa tapauksissa automaattisesti ER-kokoonpanossa, joka sisältää aiemmin mainitut ER-komponentit:
 
-- [Tuot](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) uuden ER-kokoonpanon [version](general-electronic-reporting.md#component-versioning) Microsoft Dynamics 365 Finance -esiintymääsi.
-- Muutat muokattavan ER-määrityksen [tilan](general-electronic-reporting.md#component-versioning) arvosta **Luonnos** arvoksi **Valmis**.
+- [Tuot](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) uuden ER-kokoonpanon version Microsoft Dynamics 365 Finance -esiintymääsi.
+- Muutat muokattavan ER-määrityksen tilan arvosta **Luonnos** arvoksi **Valmis**.
 - [Vaihdat perusversiota](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) muokattavalle ER-määritykselle suorittamalla uuden perusversion.
 
 Voit suorittaa tämän oikeellisuustarkistuksen eksplisiittisesti. Valitse jokin seuraavista kolmesta vaihtoehdosta ja noudata annettuja vaiheita:
@@ -770,7 +770,7 @@ Muokkaa määritettyä muotoa poistamalla sidonta muodotelementistä **Lauseke\\
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Ei linkitetty malli
 
-Kun määrität [manuaalisesti](er-fillable-excel.md#manual-entry) ER-muotokomponentin käyttämään mallia lähtevän asiakirjan luomiseen, sinun on manuaalisesti lisättävä **Excel\\Tiedosto**-elementti, lisättävä vaadittu malli muokattavan komponentin liitteeksi ja valittava kyseinen liite lisätyssä **Excel\\Tiedosto**-elementissä. Tällä tavoin voit määrittää, että lisätty elementti täyttää valitun mallin suorituksen aikana. Kun määrität muotokomponentin version **Luonnos** [tilassa](general-electronic-reporting.md#component-versioning), saatat lisätä useita malleja muokattavaan komponenttiin ja sitten valita kunkin mallin **Excel\\Tiedosto**-elementissä suorittamaan ER-muodon. Näin voit nähdä, miten eri mallit täytetään suorituksen aikana. Jos sinulla on malleja, joita ei ole valittu missään **Excel\\Tiedosto**-elementissä, ER-muodon suunnittelija varoittaa, että kyseiset mallit poistetaan muokattavan ER-muodon komponenttiversiosta ,kun sen tila muutetaan arvosta **Luonnos** arvoksi **Valmis**.
+Kun määrität [manuaalisesti](er-fillable-excel.md#manual-entry) ER-muotokomponentin käyttämään mallia lähtevän asiakirjan luomiseen, sinun on manuaalisesti lisättävä **Excel\\Tiedosto**-elementti, lisättävä vaadittu malli muokattavan komponentin liitteeksi ja valittava kyseinen liite lisätyssä **Excel\\Tiedosto**-elementissä. Tällä tavoin voit määrittää, että lisätty elementti täyttää valitun mallin suorituksen aikana. Kun määrität muotokomponentin version **Luonnos** tilassa, saatat lisätä useita malleja muokattavaan komponenttiin ja sitten valita kunkin mallin **Excel\\Tiedosto**-elementissä suorittamaan ER-muodon. Näin voit nähdä, miten eri mallit täytetään suorituksen aikana. Jos sinulla on malleja, joita ei ole valittu missään **Excel\\Tiedosto**-elementissä, ER-muodon suunnittelija varoittaa, että kyseiset mallit poistetaan muokattavan ER-muodon komponenttiversiosta ,kun sen tila muutetaan arvosta **Luonnos** arvoksi **Valmis**.
 
 Seuraavissa vaiheissa näkyy, miten tämä ongelma voi ilmetä.
 

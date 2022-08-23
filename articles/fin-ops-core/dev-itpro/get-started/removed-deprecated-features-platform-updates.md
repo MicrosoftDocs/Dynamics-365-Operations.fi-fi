@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Platform-ominaisuudet
 description: Tässä artikkelissa käsitellään toimintoja, jotka on poistettu tai joiden poistoa suunnitellaan talous- ja toimintosovellusten ympäristöpäivityksissä.
 author: sericks007
-ms.date: 05/24/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 16c77d719171e8e5cfef71178f8917d462f6d84b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
+ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069919"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9262295"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Poistetut tai vanhentuneet Platform-ominaisuudet
 
@@ -31,6 +31,50 @@ Tässä artikkelissa käsitellään toimintoja, jotka on poistettu tai joiden po
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
 Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/global/axtechrefrep_61). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
+
+## <a name="feature-deprecation-effective-august-2022"></a>Elokuussa 2022 poistettavat ominaisuudet
+
+### <a name="lifecycle-services-lcs-features-deprecated-in-august-2022"></a>Lifecycle Servicesin (LCS) elokuussa 2022 vanhentuneet ominaisuudet
+
+Seuraavat LCS-ominaisuudet on poistettu käytöstä osana [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) -alustan kehitystä.
+
+| Toiminnon nimi | Käytetäänkö AX 2012:n kanssa? | Käytetäänkö talous- ja toimintosovellusten kanssa? | Onko toinen ominaisuus korvannut? |
+|--------------|--------------------|----------------------------------------|------------------------------|
+| Ilmoitukset | Kyllä | Kyllä | Kyllä: Ilmoituksille on bannerit yksittäisillä projekti- ja ympäristösivuilla. |
+| Määritystenhallinta | Kyllä | En | En |
+| Kaatumisvedosanalyysi | Kyllä | En | En |
+| Palaute ja virheet | Kyllä | Kyllä | En |
+| Ylläpitosopimukseni | Kyllä | Kyllä | En |
+| Office 365 | Kyllä | Kyllä | Kyllä: Azure Active Directory- tai Microsoft-hallintaportaali. |
+| Vaikutusanalyysi | En | Kyllä | En |
+| Taloudellisten kokonaisvaikutusten arviointityökalu | En | Kyllä | En |
+| Palvelupyynnöt | En | Kyllä | Kyllä: [Itsepalvelukäyttöönotot](../deployment/infrastructure-stack.md) |
+| SharePoint -integrointi | Kyllä | Kyllä | En |
+| Määritysten ja tietojen hallinta | En | Kyllä | En |
+| Prosessitietopaketit | En | Kyllä | Kyllä: tietojen tuonti- ja vientiympäristö (DIXF) |
+| Ympäristön päivitys | En | Kyllä | Kyllä: [One Version](../lifecycle-services/oneversion-overview.md) -palvelupäivitykset ovat käytettävissä. |
+| Infrastruktuurin arviointityökalu | Kyllä | En | En |
+| Käyttöoikeuksien määrän arviointi | Kyllä | En | En |
+| Käytön määritys | Kyllä | En | En |
+| Mukautusten analyysi | Kyllä | En | En |
+| Järjestelmän diagnostiikka | Kyllä | Kyllä | En |
+| Liiketoimintaprosessien mallintajan Visio-hallinta | Kyllä | Kyllä | En |
+| AX 2012 -pilviympäristöjen hallinta | Kyllä | En | En |
+| RDFE Azure -yhdistimet | Kyllä | Kyllä | En |
+| AX 2012 -versiot | Kyllä | En | En |
+| LCS-tallennustilaan tallennetut työnimikkeet | Kyllä | Kyllä | En |
+| Hotfix-pyynnöt | Kyllä | Kyllä | En |
+
+
+### <a name="transport-layer-security-tls-rsa-cipher-suites"></a>Transport Layer Security (TLS) RSA -salausohjelmistot
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Poistamme seuraavat salausohjelmistot noudattaaksemme nykyisiä tietoturvaprotokolliamme.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
+| **Onko toinen ominaisuus korvannut?**   | Asiakkaat voivat käyttää vain  [standardisalausohjelmistoja](/power-platform/admin/server-cipher-tls-requirements) 30. marraskuuta 2022 alkaen. Tämä muutos vaikuttaa asiakkaisiisi ja palvelimiisi, jotka kommunikoivat meidän palvelimemme kanssa. Se voi vaikuttaa esimerkiksi kolmansien osapuolten integraatioihin, jotka eivät noudata standardisalausohjelmistojemme vaatimuksia. |
+| **Tuotealueet, joihin vaikutetaan**         | Taloushallinnon ja toimintojen sovellukset |
+| **Käytön asetukset**              | Pilvikäyttöönotot |
+| **Tila**                         | Vanhentunut. Asiakkaiden täytyy päivittää palvelimensa 30. marraskuuta 2022 mennessä. Lisätietoja TLS-salausohjelmistojärjestyksen määrittämisestä on kohdassa  [Transport Layer Securityn (TLS) hallinta](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Kesäkuussa 2022 poistettavat ominaisuudet

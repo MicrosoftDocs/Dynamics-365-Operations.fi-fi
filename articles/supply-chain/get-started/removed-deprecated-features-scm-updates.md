@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 description: Tässä artikkelissa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Supply Chain Managementsta.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171512"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218799"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
 
@@ -33,6 +33,17 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > [!NOTE]
 > Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Supply Chain Managementin version 10.0.29 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Poiston tai vanhentumisen syy** | [Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) -ominaisuus korvataan [Intian varastosiirtotilaukset](../../finance/localizations/apac-ind-stock-transfer.md) -ominaisuudella. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, [Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) -ominaisuus korvataan [Intian varastosiirtotilaukset](../../finance/localizations/apac-ind-stock-transfer.md) -ominaisuudella. |
+| **Tuotealueet, joihin vaikutetaan** | Supply Chain Management – varasto |
+| **Käytön asetukset** | Pilsi ja paikallinen käyttöönotto |
+| **Tila** | <p>Poistetaan pian käytöstä. *Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero* -ominaisuutta ei enää tueta pian, eli sille ei tarjota enää virheiden korjauksia tai tietoturvakorjauksia.</p><p>Asiakkaita pyydetään käyttämään parannettua *Intian varastosiirtotilaukset* -ominaisuutta oletusarvoisesti huhtikuun 2023 jälkeen. *Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero* -ominaisuus ei ole enää käytettävissä lokakuun 2023 jälkeen, ja asiakkaita pyydetään käyttämään parannettua *Intian varastosiirtotilaukset* -ominaisuutta.</p><p>Lisätietoja on kohdassa [Intian varastosiirtotilaukset](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Supply Chain Managementin version 10.0.19 poistetut tai vanhentuneet ominaisuudet
 

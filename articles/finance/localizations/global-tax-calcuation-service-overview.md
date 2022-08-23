@@ -1,24 +1,24 @@
 ---
 title: Verolaskennan yleiskatsaus
 description: Tässä artikkelissa selitetään verolaskentamahdollisuuden yleinen laajuus ja ominaisuudet.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166836"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270662"
 ---
 # <a name="tax-calculation-overview"></a>Verolaskennan yleiskatsaus
 
@@ -54,10 +54,15 @@ Verolaskenta otetaan käyttöön seuraavilla Azuren maantieteellisillä alueilla
 
 - Aasia ja Tyynenmeren alue
 - Australia
+- Brasilia
 - Kanada
 - Eurooppa
+- Ranska
+- Intia
 - Japani
+- Etelä-Afrikka
 - Sveitsi
+- Yhdistyneet arabiemiirikunnat
 - Yhdistynyt kuningaskunta
 - Yhdysvallat
 
@@ -149,11 +154,15 @@ Seuraavia tapahtumia tuetaan versiossa 10.0.28:
 - Toimittajan maksukirjauskansio
 - Asiakkaan maksukirjauskansio
 
+Seuraavia tapahtumia tuetaan versiossa 10.0.29: 
+
+- Kausikirjauskansio
+
 ## <a name="supported-countriesregions"></a>Tuetut maat/alueet
 
-Yritys voi ottaa verolaskennan käyttöön. 
+Verolaskelma voidaan suorittaa yhdessä seuraavien maiden/alueiden tuettujen lokisointiominaisuuksien kanssa yrityksen ensisijaista osoitetta varten: 
 
-Versiossa 10.0.21 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+Tuettu versiossa 10.0.21:
 
 - Itävalta
 - Belgia
@@ -173,10 +182,10 @@ Versiossa 10.0.21 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena 
 - Puola
 - Ruotsi
 - Sveitsi
-- Iso-Britannia
+- Yhdistynyt kuningaskunta
 - Yhdysvallat
 
-Versiossa 10.0.22 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+Tuettu versiossa 10.0.22:
 
 - Australia
 - Bahrain
@@ -191,22 +200,24 @@ Versiossa 10.0.22 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena 
 - Etelä-Afrikka
 - Yhdistyneet arabiemiirikunnat
 
-Versiossa 10.0.23 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+Tuettu versiossa 10.0.23:
 
 - Thaimaa
 - Japani
 - Malesia
 - Singapore
 
-Versiossa 10.0.24 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+Tuettu versiossa 10.0.24:
 
 - Meksiko
 
-Versiossa 10.0.26 tuetaan seuraavia maita tai alueita yrityksenä ensisijaisena osoitteena:
+Tuettu versiossa 10.0.26:
 
 - Kiina
 - Tšekin tasavalta
 - Espanja
+
+Verolaskelman voi ottaa käyttöön ja suorittaa myös muissa yleisissä ominaisuuksissa, kun maa tai alue ei ole Microsoftin lokalisoima.
 
 ## <a name="related-resources"></a>Liittyvät resurssit
 

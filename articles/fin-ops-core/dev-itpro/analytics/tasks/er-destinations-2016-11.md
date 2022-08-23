@@ -1,24 +1,24 @@
 ---
 title: ER Kohteiden määrittäminen
 description: Tässä menettelyssä esitellään, miten sähköisen raportoinnin (ER) tuloskomponenteille, kuten kansioille tai tiedostoille, voi käyttää eri kohteita.
-author: NickSelin
+author: kfend
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1e679b52b28ff1ca117c5224fc7e2825feb26e5e5aea1c8b5bc3a88d1eaf235
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
+ms.openlocfilehash: 3c8d03e9783013183fbe76cb36014fa9e1e1cbed
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743260"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291051"
 ---
 # <a name="er-configure-destinations"></a>ER Kohteiden määrittäminen
 
@@ -26,7 +26,7 @@ ms.locfileid: "6743260"
 
 Tässä menettelyssä esitellään, miten sähköisen raportoinnin (ER) tuloskomponenteille, kuten kansioille tai tiedostoille, voi käyttää eri kohteita. Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF. Saksan on yrityksen ensisijaisen osoitteen maa/alue, mutta tässä menettelyssä voit käyttää mitä tahansa yritystä. 
 
-Esimerkissä käytetty muoto on ISO20022 Tilisiirto, mutta voit käyttää mitä tahansa aiemmin tuomaasi muotoa. Huomaa, että tämä menettely on esimerkki yhden tiedoston ja yhden kohteen määrityksestä. Lisätietoja sähköisen raportoinnin kohdehallinnasta löydät Dynamics 365 Finance -sovelluksen ohjeesta.
+Esimerkissä käytetty muoto on ISO20022 Tilisiirto, mutta voit käyttää mitä tahansa aiemmin tuomaasi muotoa. Huomaa, että tämä menettely on esimerkki yhden tiedoston ja yhden kohteen määrityksestä. Lisätietoja sähköisen raportoinnin kohdehallinnasta löydät Dynamics 365 Finance -ohjeesta.
 
 1. Valitse Organisaation hallinto > Sähköinen raportointi > Sähköisen raportoinnin kohde.
 2. Luo muodolle uusi kohdejoukko painamalla Uusi.

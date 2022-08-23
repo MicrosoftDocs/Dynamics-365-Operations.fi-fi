@@ -1,7 +1,7 @@
 ---
 title: ALV-ilmoitus (Suomi)
 description: Tässä artikkelissa kuvataan, miten ALV-ilmoitus määritetään ja luodaan Suomessa.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Finland
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c0e495aee7ab17be441450fd223f9e64082a787a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6ea171f21531d42f9ad22872e9304cfd84042069
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896239"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269353"
 ---
 # <a name="vat-declaration-finland"></a>ALV-ilmoitus (Suomi)
 

@@ -1,20 +1,20 @@
 ---
 title: Saapumisten ja lähetysten kirjaaminen Intrastatiin
 description: Tämän artikkelin esimerkki osoittaa, miten tuonti ja vienti kirjataan Intrastat-raportointia varten.
-author: anasyash
-ms.date: 8/23/2021
+author: AdamTrukawka
+ms.date: 08/23/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: aef20f0261e103be7fe231a7efb39751ab4d1151
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b6d46efd477f526c4bec3515086e10aa8172c579
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862961"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280684"
 ---
 # <a name="post-arrivals-and-dispatches-for-intrastat"></a>Saapumisten ja lähetysten kirjaaminen Intrastatiin
 
@@ -60,13 +60,13 @@ Tämän artikkelin esimerkki osoittaa, miten tuonti ja vienti kirjataan Intrasta
 
     3. Valitse **Uusi** ja määritä palautusten tapahtumakoodi.
 
-        - Anna **Tapahtumakoodi**-kenttään **2**.
+        - Anna **Tapahtuma****koodi**-kenttään **2**.
         - Anna **Nimi**-kenttään **Tavaroiden palautus**.
 
 5.  Määritä ulkomaankaupan parametrit.
 
     1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-    2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **1**.
+    2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuma****koodi**-kentässä **1**.
     3. Valitse **Hyvityslasku**-kentässä **2**.
     4. Valitse **Myynnin raportointikausi** -kentässä **Kuukausi**.
     5. Valitse **Ostojen raportointikausi** -kentässä **Kuukausi**.
@@ -188,7 +188,7 @@ Esimerkin tässä osassa näytetään, miten tavaroita (nimikkeitä) ostetaan Eu
 3.  Valitse **Luo ostotilaus** -valintaikkunan **Toimittajatili**-kentässä **UE-toimittaja**.
 4.  Valitse **Hallinta**-pikavälilehden **Kieli**-kentässä **it**.
 5.  Valitse **OK**.
-6.  Tarkista **Ulkomaankauppa**-pikavälilehden **Otsikko**-näkymässä, että **Tapahtumakoodi**-kentän määrityksenä on **1**.
+6.  Tarkista **Ulkomaan****kauppa**-pikavälilehden **Otsikko**-näkymässä, että **Tapahtumakoodi**-kentän määrityksenä on **1**.
 7.  Tarkista, että **Alkuperä-/kohdemaa**-kentän määrityksenä on **RM**.
 8.  Valitse **Toimitus**-pikavälilehden **Toimitus**-osan **Toimitustapa**-kentässä **1**.
 9.  Valitse **Toimitusehdot**-kentässä **CFR**.

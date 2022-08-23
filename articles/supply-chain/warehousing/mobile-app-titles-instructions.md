@@ -4,19 +4,19 @@ description: Tässä artikkelissa käsitellään kunkin Warehouse Management -mo
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895493"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220146"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen
 
@@ -30,10 +30,7 @@ Tässä artikkelissa käsitellään jokaisen Warehouse Management -mobiilisovell
 
 ## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Varastosovelluksen vaiheiden ohjetoiminnon ottaminen käyttöön
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat tarkistaa toiminnon tilan ja ottaa sen käyttöön [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetusten avulla. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Varastosovelluksen vaiheohjeet*
+Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän ominaisuuden käyttöön tai pois käytöstä hakemalla *Varastosovelluksen vaiheohjeet* -ominaisuutta [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilasta.
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Vaiheiden otsikot ja ohjeet sovelluksessa
 

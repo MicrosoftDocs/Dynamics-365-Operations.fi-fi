@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845921"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219529"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Lähetyksen konsolidointikäytäntöjen määrittäminen
 
@@ -61,7 +61,6 @@ Oletusarvoiset lähetyksen konsolidointikäytännöt määritetään seuraavien 
 1. Valitse **Varasto**-pikavälilehdessä **Konsolidoi lähetys varastoon vapautettaessa** -asetukseksi *Kyllä*.
 1. Toista vaiheet 2–4 kaikissa varastoissa, joissa on tehtävä konsolidointi.
 1. Sulje sivu.
-1. Ota *Lähetyksen konsolidointikäytännöt* -toiminto käyttöön [toiminnon hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). **Toiminnon hallinta** -työtilassa toiminnon nimi on *Lähetyksen konsolidointi*.
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**. Selain on ehkä päivitettävä, ennen kuin uusi **Lähetyksen konsolidointikäytännöt** -valikkovaihtoehto näkyy toiminnon käyttöönottamisen jälkeen.
 1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset**:
 
@@ -81,7 +80,6 @@ Oletusarvoiset lähetyksen konsolidointikäytännöt määritetään seuraavien 
 
 Määritä lähetyksen oletusarvoiset konsolidointikäytännöt seuraavien ohjeiden mukaisesti:
 
-1. Ota *Lähetyksen konsolidointikäytännöt* -toiminto käyttöön [toiminnon hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), jos toimintoa ei ole vielä otettu käyttöön. **Toiminnon hallinta** -työtilassa toiminnon nimi on *Lähetyksen konsolidointi*.
 1. Valitse **Varastonhallinta \> Asetukset \> Vapauta varastoon \> Lähetyksen konsolidointikäytännöt**.
 1. Luo seuraavat käytännöt valitsemalla toimintoruudussa **Luo oletusasetukset**:
 

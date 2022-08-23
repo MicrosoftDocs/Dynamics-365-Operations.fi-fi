@@ -1,25 +1,25 @@
 ---
 title: Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa Dynamics 365 Salesin avulla
 description: Tässä artikkelissa kuvataan, miten Microsoft Dynamics 365 Salesia käytetään liikekumppanien hyväksymisten hallitsemiseen Dynamics 365 Commercen yritysten välisten (B2B) verkkosivustojen osalta.
-author: shajain
-ms.date: 2/16/2022
+author: ShalabhjainMSFT
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac4aa15f2c6e7f557105254c2c8ce743a9466985
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.industry: retail
+ms.search.form: ''
+ms.openlocfilehash: d178e619fca7915286181aa803376cd564f60a26
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878618"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278648"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites-using-dynamics-365-sales"></a>Liikekumppanikäyttäjien hallinta B2B-verkkokauppasivustoissa Dynamics 365 Salesin avulla
 

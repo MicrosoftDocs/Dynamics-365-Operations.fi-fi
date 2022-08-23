@@ -5,22 +5,20 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: d33fc6f4895b53f16cc6957a3a2fc6b1abe90a2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111197"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289511"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Ongelmien vianmääritys alkumäärityksen aikana
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Tässä artikkelissa on vianmääritystietoja kaksoiskirjoituksen integroinnista talous- ja toimintosovellusten sekä Dataversen välillä. Erityisesti se tarjoaa tietoa vianmääritystietoja, joiden avulla voit korjata ongelmat, joita voi ilmetä kaksoiskirjoituksen integroinnin alkuasennuksen aikana.
 
@@ -87,6 +85,19 @@ Kaksi seikkaa voi aiheuttaa ongelman, jos ympäristö ei ole löydettävissä:
 
 + Kirjautumiseen käytetty käyttäjä ei ole samassa vuokraajassa kuin talous- ja toimintosovellusesiintymä.
 + Joissakin vanhoissa Microsoftin isännöimissä talous- ja toimintosovellusesiintymissä oli löydettävyyteen liittyvä ongelma. Ongelma korjataan päivittämällä talous- ja toimintosovellusesiintymä. Ympäristöstä tulee löydettävä millä tahansa päivityksellä.
+
+## <a name="403-forbidden-error-while-connections-are-being-created"></a>403 (Kielletty) -virhe yhteyksien luomisen aikana
+
+Kaksoiskirjoituksen linkitysprosessin osana luodaan kaksi Power Apps -yhteyttä (tunnetaan myös *Apihub*-yhteyksinä), jotka ovat käyttäjän puolesta luotuja linkitetyssä Dataverse-ympäristössä. Jos asiakkaalla ei ole lisenssiä Power Apps -ympäristölle, ApiHub-yhteyksien luominen epäonnistuu ja näkyviin tulee 403 (Kielletty) -virhe. Esimerkki täydestä virheviestistä:
+
+> MSG=\[Kaksoiskirjoitusympäristön asetus epäonnistui. Virhetiedot: Vastauksen tilakoodi ei tarkoita onnistumista: 403 (Kielletty). - Vastauksen tilakoodi ei tarkoita onnistumista: 403 (Kielletty).\] STACKTRACE=\[   kohteessa Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297 --- Pinon jäljityksen lopetus aiemmassa sijainnissa, jossa poikkeus oli --- kohteessa System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() kohteessa System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) kohteessa Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
+
+Tämä virhe johtuu Power Apps -käyttöoikeuden puutteesta. Määritä käyttäjälle asianmukainen lisenssi (esimerkiksi Power Apps -kokeiluversio 2), jotta käyttäjällä on käyttöoikeudet luoda yhteydet. Käyttöoikeuden tarkistamiseksi asiakas voi tarkastella käyttäjälle määritettyjä käyttöoikeuksia [Oman tili](https://portal.office.com/account/?ref=MeControl#subscriptions) -sivustossa.
+
+Katso lisätietoja Power Apps -käyttöoikeudesta seuraavista artikkeleista:
+
+- [Määritä käyttöoikeuksia käyttäjille](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Osta Power Apps organisaatiollesi](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 

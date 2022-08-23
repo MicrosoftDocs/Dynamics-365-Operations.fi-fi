@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2f1902ba76db59b61b0437eb3cd68ee94018b7c5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844464"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219934"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Varaston merkintä suunnittelun optimoinnin avulla
 
@@ -43,9 +43,15 @@ Tarvekohdistus alkaa sisällyttämällä liittyvä merkintä, käytettävissä o
 
 Kun vahvistat suunnitellun tilauksen, **Vahvistus**-valintaikkunan **Päivitä merkintä** -kentässä voi määrittää vahvistuksen aikana luotujen tilausten merkintävaihtoehdot. Valitse jokin seuraavista:
 
-- **Ei** – varastomerkintää ei käytetä.
-- **Vakio** – varastomerkintä päivitetään tarvekohdistuksen mukaan. Tarvetilaus (kysyntä) merkitään täyttötilauksen (tarjonta) mukaan. Jos täyttötilaukseen jää jäljelle jokin määrä, sitä ei merkitä ja viitetiedot jätetään tyhjäksi. Jos esimerkiksi 100 kappaleen myyntitilaus tarvekohdistetaan 150 kappaleen ostotilaukseen, viitetiedot määritetään vain myyntitilaukseen.
-- **Laajennettu** – sekä tarvetilaus (kysyntä) että täyttötilaus (tarjonta) merkitään riippumatta siitä, jääkö täyttötilaukseen jäljelle jokin määrä. Jos esimerkiksi 100 kappaleen myyntitilaus tarvekohdistetaan 150 kappaleen ostotilaukseen, viitetiedot määritetään sekä myyntitilaukseen tai ostotilaukseen.
+- *Ei* – varastomerkintää ei käytetä.
+- *Vakio* – varastomerkintä päivitetään tarvekohdistuksen mukaan. Tarvetilaus (kysyntä) merkitään täyttötilauksen (tarjonta) mukaan. Jos täyttötilaukseen jää jäljelle jokin määrä, sitä ei merkitä ja viitetiedot jätetään tyhjäksi. Jos esimerkiksi 100 kappaleen myyntitilaus tarvekohdistetaan 150 kappaleen ostotilaukseen, viitetiedot määritetään vain myyntitilaukseen.
+- *Laajennettu* – sekä tarvetilaus (kysyntä) että täyttötilaus (tarjonta) merkitään riippumatta siitä, jääkö täyttötilaukseen jäljelle jokin määrä. Jos esimerkiksi 100 kappaleen myyntitilaus tarvekohdistetaan 150 kappaleen ostotilaukseen, viitetiedot määritetään sekä myyntitilaukseen tai ostotilaukseen.
+- *Yksitasoinen vakio* – Käytetään yksitasoista merkintää. Yksitasoinen merkintä merkitsee vain päänimikkeen, ei sen tuoterakennekomponentteja (BOM). Näin ollen voit pitää tuotantotilausten komponenttien määrityksen joustavana vahvistuksen jälkeen. Yksitasoinen merkintä sallii järjestelmän optimoida viime hetken muutokset kysynnässä. Kun yksitasoisen merkinnän tyyppi on *vakio*, tarvetilaukset merkitään niiden täyttämistilausten mukaan, mutta täyttämistilauksia ei merkitä, jos niillä on jäljellä oleva määrä.
+- *Yksitasoinen laajennettu* – Käytetään yksitasoista merkintää. Kun yksitasoisen merkinnän tyyppi on *laajennettu*, tarvetilaukset merkitään niiden täyttämistilausten mukaan ja täyttämistilaukset merkitään aina riippumatta jäljellä olevasta määrästä.
 
+Jos haluat määrittää järjestelmäsi oletusarvoisen merkintävaihtoehdon, siirry kohtaan **Pääsuunnittelu \> Asetukset \> Pääsuunnittelun parametrit**. Valitse sitten haluamasi vaihtoehto **Vakiopäivitys**-välilehden **Päivitä merkintä** -kentästä.
+
+> [!NOTE]
+> *Yksitasoinen vakio*- ja *Yksitasoinen laajennettu* -vaihtoehdot ovat käytettävissä vain, jos *Tilauksesta valmistukseen -tarjonnan automatisointi* -ominaisuus on käytössä järjestelmässäsi. Lisätietoja tästä ominaisuudesta ja sen ottamisesta käyttöön on kohdassa [Tilauksesta valmistukseen -tarjonnan automatisointi](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

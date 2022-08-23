@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: db6c46d471e3b54982132df3e4819236833cf4a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878483"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292132"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Sähköposti-ilmoitusprofiilin määrittäminen
 
@@ -31,17 +31,9 @@ Kun luot kanavia, voit määrittää sähköposti-ilmoitusprofiilin. Sähköpost
 
 Lisätietoja sähköpostin määrittämisestä on kohdassa [Sähköpostiviestin määrittäminen ja lähettäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
-## <a name="create-an-email-notification-profile"></a>Sähköpostin ilmoitusprofiilin luominen
 
-Luo sähköposti-ilmoitusprofiili noudattamalla seuraavia ohjeita.
 
-1. Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.
-1. Napsauta Toimintoruudussa **Uusi**.
-1. Anna **Sähköposti-ilmoitusprofiili**-kentässä profiilille nimi.
-1. Syötä **Kuvaus**-kenttään asianmukainen kuvaus.
-1. Aseta **Aktiivinen**-kytkin asentoon **Kyllä**.
-
-### <a name="create-an-email-template"></a>Luo sähköpostimalli
+## <a name="create-an-email-template"></a>Luo sähköpostimalli
 
 Ennen sähköposti-ilmoitustyypin käyttöä on luotava organisaation sähköpostimalli Commerce Headquarters -sovelluksessa jokaiselle halutulle ilmoitustyypille. Tässä mallissa määritetään kullakin tuettavalla kielellä sähköpostien aihe, lähettäjä, oletuskieli ja sähköpostin perusteksti.
 
@@ -63,14 +55,24 @@ Seuraavassa kuvassa näkyy esimerkkejä sähköpostimallin asetuksista.
 
 Lisätietoja sähköpostimallien luomisesta on kohdassa [Sähköpostimallien luominen tapahtumille](email-templates-transactions.md). 
 
-### <a name="create-an-email-event"></a>Luo sähköpostitapahtuma
+## <a name="create-an-email-notification-profile"></a>Sähköpostin ilmoitusprofiilin luominen
+
+Luo sähköposti-ilmoitusprofiili headquartersissa noudattamalla seuraavia ohjeita.
+
+1. Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Anna **Sähköposti-ilmoitusprofiili**-kentässä profiilille nimi.
+1. Syötä **Kuvaus**-kenttään asianmukainen kuvaus.
+1. Aseta **Aktiivinen**-kytkin asentoon **Kyllä**.
+
+## <a name="add-a-notification-type"></a>Lisää ilmoituksen tyyppi
 
 Voit luoda sähköpostitapahtuman seuraavien ohjeiden avulla.
 
 1. Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.
-1. Etsi haluamasi tietue luettelosta ja valitse se. 
-1. Valitse sähköpostimalliryhmän avattavasta **Sähköpostitunnus**-luettelosta.
+1. Valitse **Vähittäismyynnin sähköposti-ilmoituksen asetukset** -kohdasta **Uusi**.
 1. Valitse avattavasta luettelosta asianmukainen **Sähköposti-ilmoitustyyppi**.
+1. Valitse yllä luomasi sähköpostimalliryhmä avattavasta **Sähköpostitunnus**-luettelosta.
 1. Valitse **Käytössä**-valintaruutu.
 1. Valitse toimintoruudussa **Tallenna**.
 
@@ -78,14 +80,12 @@ Seuraavassa kuvassa näkyy esimerkkejä tapahtuman ilmoitusasetuksista.
 
 ![Tapahtuman ilmoitusasetukset.](media/email-notification-profile.png)
 
-> [!NOTE]
-> Asiakkaan luoma ilmoitustyyppi edellyttää mukautusta, ennen kuin sähköposti-ilmoitus voidaan lähettää.
 
-### <a name="schedule-a-recurring-email-notification-process-job"></a>Toistuvan sähköposti-ilmoitusprosessityön ajoittaminen
+## <a name="schedule-a-recurring-email-notification-process-job"></a>Toistuvan sähköposti-ilmoitusprosessityön ajoittaminen
 
 Sähköposti-ilmoitusten lähettämistä varten työn **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** on oltava käynnissä.
 
-Jos et ole vielä määrittänyt työtä **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** Commerce headquarters -sovelluksessa, voit määrittää sen seuraavasti.
+Voit määrittää headquartersissa erätyön tapahtumasähköpostien lähettämistä varten noudattamalla seuraavia ohjeita.
 
 1. Siirry kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Sähköposti ja ilmoitukset \> Lähetä sähköposti-ilmoitus**.
 1. Valitse **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** -valintaikkunassa **Toistuminen**.
@@ -94,9 +94,9 @@ Jos et ole vielä määrittänyt työtä **Vähittäismyyntitilauksen sähköpos
 1. Palaa **Vähittäismyyntitilauksen sähköposti-ilmoituksen käsittely** -valintaikkunaan valitsemalla **OK**.
 1. Viimeistele työn määritys valitsemalla **OK**.
 
-### <a name="next-steps"></a>Seuraavat vaiheet
+## <a name="next-steps"></a>Seuraavat vaiheet
 
-Ennen kuin voit lähettää viestejä, sinun on määritettävä lähtevä postipalvelu ja määritettävä erätyö. Lisätietoja on kohdassa [Sähköpostin lähettäminen ja määrittäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+Ennen kuin voit lähettää viestejä, sinun on määritettävä lähtevä postipalvelu. Lisätietoja on kohdassa [Sähköpostin lähettäminen ja määrittäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

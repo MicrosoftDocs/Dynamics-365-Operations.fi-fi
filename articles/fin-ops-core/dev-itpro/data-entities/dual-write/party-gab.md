@@ -2,19 +2,19 @@
 title: Osapuolen ja yleinen osoitekirja
 description: Tässä artikkelissa kuvataan kaksoiskirjoituksen osapuolen ja yleinen osoitekirja.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892190"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228987"
 ---
 # <a name="party-and-global-address-book"></a>Osapuolen ja yleinen osoitekirja
 
@@ -119,11 +119,11 @@ Ruudukko sisältää seuraavat sarakkeet:
 
 Voit luoda niin monta postiosoitetta kuin haluat ruudukon yläpuolella olevalla **Uusi osoite** -painikkeella.
 
-**Tili**-sivun **Yhteenveto**-välilehden **Osoite 1**- ja **Osoite 2**-kentät vastaavat **toimitus**- ja **laskutusosoitteita**.
+Kun käyttäjä syöttää osoitteita asiakasvuorovaikutussovellusten **Tilit**-sivun **Yhteenveto**-välilehteen, **Osoite 1**- ja **Osoite 2** -kentät vastaavat **toimitus**- ja **laskuosoitteita** tässä järjestyksessä. Kun käyttäjä kuitenkin luo postiosoitteen talous- ja toimintosovelluksissa, asiakastietueen kaksi ensimmäistä osoitetta näytetään **Address1**- ja **Address2**-kentissä, ja käyttäjä voi muuttaa osoitteen tyypiksi **Toimitus** tai **Lasku**.
 
 ![Postiosoitteiden Yhteenveto-välilehti.](media/party-gab-image5.png)
 
-**Yhteyshenkilö**-sivun **Yhteenveto**-välilehden **Osoite 1**-, **Osoite 2**- ja **Osoite 3** -kentät vastaavat **yritys**-, **toimitus**- ja **laskutusosoitteita**.
+**Yhteyshenkilö**-sivun **Yhteenveto**-välilehden **Osoite 1**-, **Osoite 2**- ja **Osoite 3** -kentät vastaavat **yritys**-, **toimitus**- ja **laskutusosoitteita** vastaavalla tavalla.
 
 ## <a name="electronic-addresses"></a>Sähköiset osoitteet
 

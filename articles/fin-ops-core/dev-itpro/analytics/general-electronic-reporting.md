@@ -1,28 +1,26 @@
 ---
 title: Sähköisen raportoinnin (ER) yleiskatsaus
 description: Tässä artikkelissa on sähköisen raportointityökalun yleiskatsaus. Siinä käsitellään keskeisiä käsitteitä, tuettuja skenaarioita ja muotoja, jotka osa ratkaisua.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109577"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269688"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -78,7 +76,7 @@ Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 
 [![ER:n päätietovirta.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Komponentit
+### <a name="component"></a>Komponentti
 
 ER tukee seuraavia osatyyppejä:
 
@@ -89,32 +87,7 @@ ER tukee seuraavia osatyyppejä:
 
 Lisätietoja on kohdassa [Sähköisen raportoinnin osat](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Komponenttien versionhallinta
-
-Sähköisissä raportointiosissa tuetaan versionhallintaa. Sähköisen raportoinnin komponenteissa muutoksia hallitaan seuraavalla työnkululla:
-
-1. Ensimmäisenä luotu versio merkitään **Luonnos**-versioksi. Tätä versiota voidaan muokata ja sillä voi suorittaa testiajoja.
-2. **Luonnos**-versio voidaan muuntaa **Valmis**-versioksi. Tätä versiota voidaan käyttää paikallisissa raportointiprosesseissa.
-3. **Valmis**-versio voidaan muuntaa **Jaettu**-versioksi. Tämä versio julkaistaan LCS:ssä ja sitä voidaan käyttää yleisissä raportoinnin prosesseissa.
-4. **Jaettu**-versio voidaan muuntaa **Lopetettu**-versioksi. Tämä versio voidaan sitten poistaa.
-
-Versioita, joiden tila on joko **Valmis** tai **Jaettu**, voidaan käyttää muissa tiedonsiirroissa. Seuraavat toimet voidaan suorittaa komponentissa, jolla on nämä tilat:
-
-- Komponentit voidaan sarjoittaa XML-muodossa ja viedä XML-muotoisena tiedostona.
-- Komponentti voidaan sarjoittaa uudelleen XML-tiedostosta ja tuoda sovellukseen ER-komponentin uutena versiona.
-
-#### <a name="component-date-effectivity"></a>Komponentin päivämäärän voimassaolo
-
-Sähköisen raportointikomponentin versioilla on voimassaolopäivämäärät. Voit määrittää sähköiselle raportointikomponentille **Voimaantulopäivä**-arvon määrittämään päivän, josta lähtien kyseinen komponentti on voimassa raportointiprosesseissa. Sovellusistunnon päivämäärää käytetään määrittämään, voiko osan suorittaa. Jos tiettynä päivänä on voimassa useampia kuin yksi versio, viimeisintä versiota käytetään raportointiprosessissa.
-
-#### <a name="component-access"></a>Komponenttien käyttöoikeudet
-
-Sähköisten raportointiosien käyttöoikeus määräytyy maan/alueen ISO-koodiasetuksista. Jos tämä asetus on tyhjä muotomääritysten valitussa versiossa, muoto-osaa voidaan käyttää suorituksenaikainen missä tahansa yrityksessä. Jos asetuksessa on ISO-maa-/aluekoodeja, muoto-osia voidaan käyttää vain niissä yrityksissä, joiden ensisijainen osoite on määritetty joksikin muoto-osan ISO-maa-/aluekoodiksi.
-
-Tietomuoto-osien eri versioilla voi olla erilaiset ISO-maa/aluekoodeja koskevat asetukset.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Määritys
+### <a name="configuration"></a><a name="Configuration"></a>Määritys
 
 Sähköinen raportointimääritys on tietyn sähköisen raportointikomponentin paketoija. Kyse voi olla joko tietomallikomponentista tai muotokomponentista. Määritykset voivat sisältää sähköisen raportointikomponentin eri versioita. Kukin määritys merkitään tietyn määrityslähteen omistamaksi. Määritysten osan **Luonnos**-versiota voidaan muokata, jos kyseisten määritysten omistaja on valittu sovelluksen sähköisten raportointiasetusten aktiiviseksi lähteeksi.
 
@@ -124,13 +97,13 @@ Luodussa muotomäärityksessä on muotokomponentti. Alkuperäisten mallimäärit
 
 Sähköiset raportointimääritykset jaetaan sovelluksen yrityksille.
 
-#### <a name="provider"></a><a name="Provider"></a>Palvelu
+### <a name="provider"></a><a name="Provider"></a>Palvelu
 
 Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille talous- ja toimintosovellusratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
 
 Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtäväoppaassa **ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi** (liiketoimintaprosessin **7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677)** osa).
 
-#### <a name="repository"></a><a name="Repository"></a>Säilö
+### <a name="repository"></a><a name="Repository"></a>Säilö
 
 Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan seuraavia ER-säilötyyppejä: 
 
@@ -145,7 +118,7 @@ Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säil
 
 **LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin, kun säilö rekisteröintiin. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen talous- ja toimintosovellusesiintymään.
 
-**Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat xml-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen esiintymään. 
+**Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat XML-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen esiintymään. 
 
 Huomaa, että tätä säilötyyppiä voi käyttää seuraavista ympäristöistä:
 
@@ -265,7 +238,8 @@ Financen ER-määritysten luetteloa päivitetään jatkuvasti. Tällä hetkellä
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Sähköisen raportoinnin (ER) määritysten luominen](electronic-reporting-configuration.md)
+- [Sähköisen raportoinnin osat](er-overview-components.md)
+- [Sähköisen raportoinnin määritysten luominen](electronic-reporting-configuration.md)
 - [Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
 
 

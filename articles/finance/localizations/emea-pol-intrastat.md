@@ -1,20 +1,20 @@
 ---
 title: Puolan Intrastat
 description: Tässä artikkelissa on tietoja Intrastat-raportoinnista Puolassa.
-author: andosip
+author: AdamTrukawka
 ms.date: 11/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 45bd1d3c90d0a8a8ad5db6d0b80c5eed0aa489e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 473581fa4f3f1e8cac06d5748f28116e6615215e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871098"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281639"
 ---
 # <a name="polish-intrastat"></a>Puolan Intrastat
 
@@ -269,7 +269,7 @@ Seuraavien ER-määritysten uusin versio on tuotava:
 ### <a name="set-up-foreign-trade-parameters"></a>Määritä ulkomaankaupan parametrit
 
 1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **11**.
+2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuma****koodi**-kentässä **11**.
 3. Valitse **Sähköinen raportointi** -pikavälilehden **Tiedostomuodon määritys** -kentässä **Intrastat (PL)**.
 4. Valitse **Raporttimuodon yhdistäminen** -kentässä **Intrastat-raportti**.
 5. Varmista, että **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kenttään on määritetty **Intrastat**.

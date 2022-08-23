@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895193"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227772"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskujen ja ennakkomaksujen vertailu
 
@@ -78,6 +78,8 @@ Ennakkomaksu voidaan poistaa ostotilauksesta, ellet ole jo tilittänyt maksua ki
 Jos haluat kirjata toimittajan ennakkomaksulaskun, siirry **Toimittajan lasku** -sivulle valitsemalla **Ennakkomaksulasku** -vaihtoehdon **Ostotilaukset** -sivulla (**Ostoreskontra \> Yhteiset \> Ostotilaukset \> Kaikki ostotilaukset \> Lasku-välilehti \> Ennakkomaksulasku**). Kirjoita tiedot ennakkomaksulaskulle, mukaan lukien laskun numero. Et voi muuttaa ennakkomaksun laskun määriä. Jos toimittaja on laskuttanut ostotilauksessa määritetyn ennakkomaksun arvon osasumman, voit päivittää yksikköhintaa vastaamaan osittaista arvoa.
 
 Toimittajan saldo ja ennakkomaksutili päivitetään, kun ennakkomaksulasku kirjataan. Myös ostotilauksen sisältämän ennakkomaksumäärityksen **Ennakkomaksun kohdistus** -arvo päivitetään. Kirjatun ennakkomaksutositteen taloushallinnon oletusdimensiomerkinnät tulevat ostotilauksen otsikkotiedoista.
+
+Jos **Lukitse taloushallinnon dimensiot toimittajan ennakkomaksulaskun laskuriveillä** -ominaisuus on otettu käyttöön **Ominaisuuksien hallinta** -sivulla, ennakkomaksun otsikossa tai riveillä olevia dimensioita ei voi päivittää. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Ennakkomaksulaskun kirjaaminen ja selvittäminen
 Seuraavaksi ennakkomaksulasku maksetaan **Maksukirjauskansio**-sivulla. Voit käyttää maksukirjauskansioita valitsemalla **Ostoreskontra \> Kirjauskansiot \> Maksut \> Maksukirjauskansio**. Kun maksun tilitys on tehty ennakkomaksulaskuun, ostotilauksen **Ennakkomaksun kohdistus jäljellä** -arvo päivitetään.

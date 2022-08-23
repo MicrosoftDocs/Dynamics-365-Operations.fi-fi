@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849123"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219685"
 ---
 # <a name="system-directed-work-sequencing"></a>Järjestelmäohjattu työjärjestys
 
@@ -44,7 +44,7 @@ Ennen kuin voit käyttää järjestelmäohjattua työjärjestystoimintoa, sen pi
 
 ### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 
-Jos haluat käsitellä skenaariota käyttämällä tässä artikkelissa esitettyjä arvoja, sinun on työskenneltävä järjestelmässä, johon on asennettu vakiodemotiedot. Sinun on myös valittava **USMF**-yritys. Skenaario käyttää varastoa *51* demotiedoista.
+Jos haluat käydä tämän skenaarion läpi käyttämällä tässä artikkelissa esitettyjä arvoja, sinun täytyy käyttää järjestelmää, johon on asennettu vakiomuotoiset [demotiedot](../../fin-ops-core/fin-ops/get-started/demo-data.md). Sinun on myös valittava **USMF**-yritys. Skenaario käyttää varastoa *51* demotiedoista.
 
 > [!IMPORTANT]
 > Ennen kuin vapautat tilaukset varastoon, varmista, että poiminnan sijainneissa on tarpeeksi varastoa tilausten kaikille nimikkeille.

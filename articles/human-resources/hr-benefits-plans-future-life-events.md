@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 183d0f13a17ffac723fac6c4801bd187dd54e976
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2cb3ca03e0d9d7e5423a405f1eb0372e1c19588d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888851"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227982"
 ---
 # <a name="configure-future-life-events"></a>Tulevien elämäntapahtumien määrittäminen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Voit ajoittaa tulevia elämäntapahtumia Dynamics 365 Human Resourcesissa.
 
@@ -41,9 +42,10 @@ Voit ajoittaa tulevia elämäntapahtumia Dynamics 365 Human Resourcesissa.
    | Elinkaaritapahtuman tyypin tunnus | Elämäntapahtumatyypin yksilöllinen tunniste. |
    | Elinkaaritapahtuman tyyppi | Työntekijän eturekisteröinnin päivittämisen katalysaattori. Lisätietoja on osassa Elämäntapahtumien käynnistimet. |
    | Tila | Onko elämäntapahtuma käsitelty. |
-   | Linja | Tulevan elämäntapahtuman rivinumero. |
+   | Rivi | Tulevan elämäntapahtuman rivinumero. |
 
 4. Valitse **Tallenna**. 
 
+Voit poistaa tulevia elämäntapahtumia. Jos käsitelty tuleva elämäntapahtuma poistetaan, myös tuleva tietue poistetaan. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

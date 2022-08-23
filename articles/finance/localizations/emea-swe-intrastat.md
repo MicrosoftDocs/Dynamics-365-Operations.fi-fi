@@ -1,20 +1,20 @@
 ---
 title: Ruotsin Intrastat
 description: Tässä artikkelissa on tietoja Intrastat-raportoinnista Ruotsissa.
-author: anasyash
-ms.date: 8/24/2021
+author: AdamTrukawka
+ms.date: 08/24/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: a81f0c19923d1a4747c2ecb8ab03dd86b45497ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e13076a6b8f18374c012a5b56f13e752010256b8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886257"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279228"
 ---
 # <a name="swedish-intrastat"></a>Ruotsin Intrastat
 
@@ -108,14 +108,14 @@ Tässä esimerkissä näytetään, miten tuonti ja vienti kirjataan Intrastat-ra
 
 1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Tapahtumakoodit**.
 2. Valitse toimintoruudussa **Uusi**.
-3. Anna **Tapahtumakoodi**-kenttään **1**.
+3. Anna **Tapahtuma****koodi**-kenttään **1**.
 4. Anna **Nimi**-kentässä **Normaalit tapahtumat**.
 5. Valitse toimintoruudussa **Tallenna**.
 
 ### <a name="set-up-foreign-trade-parameters"></a>Määritä ulkomaankaupan parametrit
 
 1. Valitse **Vero** > **Määritys** > **Ulkomaankauppa** > **Ulkomaankaupan parametrit**.
-2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtumakoodi**-kentässä **1**.
+2. Valitse **Intrastat**-välilehden **Yleiset**-pikavälilehden **Tapahtuma****koodi**-kentässä **1**.
 3. Valitse **Sähköinen raportointi** -pikavälilehden **Tiedostomuodon määritys** -kentässä **Intrastat (SE)**.
 4. Valitse **Raporttimuodon yhdistäminen** -kentässä **Intrastat-raportti**.
 5. Varmista, että **Kauppatavarakoodihierarkia**-pikavälilehden **Luokkahierarkia**-kentässä on valittu **Intrastat**.
@@ -193,7 +193,7 @@ Tässä esimerkissä näytetään, miten tuonti ja vienti kirjataan Intrastat-ra
 2. Valitse toimintoruudussa **Uusi**.
 3. Valitse **Luo ostotilaus** -valintaikkunan **Toimittajatili**-kentässä **DE-001**.
 4. Valitse **OK**.
-5. Tarkista **Otsikko**-välilehden **Ulkomaankauppa**-pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **1**.
+5. Tarkista **Otsikko**-välilehden **Ulkomaan****kauppa**-pikavälilehdessä, että **Tapahtumakoodi**-kentän määrityksenä on **1**.
 6. Valitse **Rivit**-välilehden **Ostotilauksen rivit** -pikavälilehden **Nimikkeen numero** -kentässä **D0001**. Anna sitten **Määrä**-kenttään **6**.
 7. Valitse toimintoruudun **Ostot**-välilehden **Toiminnot**-ryhmässä **Vahvista**.
 8. Valitse Toimintoruudun **Laskutus**-välilehden **Luo**-ryhmässä **Lasku**.

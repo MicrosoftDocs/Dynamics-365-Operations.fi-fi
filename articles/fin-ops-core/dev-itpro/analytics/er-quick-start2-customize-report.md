@@ -1,28 +1,26 @@
 ---
 title: Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
 description: Tässä artikkelissa kerrotaan, miten Microsoftin tarjoaman sähköisen raportoinnin (ER) muotoa voidaan säätää siten, että se luo mukautetun sähköisen asiakirjan.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886788"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283555"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Luo mukautettu sähköinen asiakirja muokkaamalla ER-muotoa
 
@@ -271,7 +269,7 @@ Tässä tapauksessa Litware, Inc. -yhtiön edustajana sinun on luotava uusi ER-m
 
 6. Valitse **Luo konfiguraatio**.
 
-**BACS (Iso-Britannia, mukautettu)** -ER-muotokonfiguraation versio 1.1.1 luodaan. Tämän version [tila](general-electronic-reporting.md#component-versioning) on **Luonnos**, ja sitä voidaan muokata. Mukautetun ER-muodon nykyinen sisältö vastaa Microsoftin toimittaman muodon sisältöä.
+**BACS (Iso-Britannia, mukautettu)** -ER-muotokonfiguraation versio 1.1.1 luodaan. Tämän version tila on **Luonnos**, ja sitä voidaan muokata. Mukautetun ER-muodon nykyinen sisältö vastaa Microsoftin toimittaman muodon sisältöä.
 
 ![Konfiguraatiosivu, jossa BACS (Yhdistynyt kuningaskunta, mukautettu) -ER-muotokonfiguraation versio 1.1.1.](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Sinun on määritettävä mukautettu muoto, jotta se täyttää pankkikohtaiset 
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Merkitse mukautettu muoto suoritettavaksi
 
-Nyt kun mukautetun muotosi ensimmäinen versio on luotu, ja sen tila on **Luonnos**, voit suorittaa sen testaustarkoituksia varten. Raportin suorittamista varten sinun on käsiteltävä toimittajamaksu käyttämällä maksutapaa, joka viittaa mukautettuun ER-muotoosi. Oletuksena kun kutsut ER-muodon sovelluksesta, vain versiot, joiden tila on **Valmis** tai **Jaettu**, otetaan [huomioon](general-electronic-reporting.md#component-versioning). Tämä käytös auttaa estämään sellaisten ER-muotojen käyttöä, joiden mallit eivät ole valmiit. Testiajoissasi voit kuitenkin pakottaa sovelluksen käyttämään ER-muotosi versiota, jonka tila on **Luonnos**. Tällä tavoin voit säätää nykyistä muotoversiota, jos muokkauksia tarvitaan. Lisätietoja on kohdassa [Soveltuvuus](electronic-reporting-destinations.md#applicability).
+Nyt kun mukautetun muotosi ensimmäinen versio on luotu, ja sen tila on **Luonnos**, voit suorittaa sen testaustarkoituksia varten. Raportin suorittamista varten sinun on käsiteltävä toimittajamaksu käyttämällä maksutapaa, joka viittaa mukautettuun ER-muotoosi. Oletuksena kun kutsut ER-muodon sovelluksesta, vain versiot, joiden tila on **Valmis** tai **Jaettu**, otetaan huomioon. Tämä käytös auttaa estämään sellaisten ER-muotojen käyttöä, joiden mallit eivät ole valmiit. Testiajoissasi voit kuitenkin pakottaa sovelluksen käyttämään ER-muotosi versiota, jonka tila on **Luonnos**. Tällä tavoin voit säätää nykyistä muotoversiota, jos muokkauksia tarvitaan. Lisätietoja on kohdassa [Soveltuvuus](electronic-reporting-destinations.md#applicability).
 
 Käyttääksesi ER-muodon luonnosversiota sinun on merkittävä ER-muoto selkeästi.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aae3d53c1005f096551b107c46ddafb37357f03c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868156"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219835"
 ---
 # <a name="configure-rates"></a>Hintojen määrittäminen
 
@@ -84,7 +84,7 @@ Voit myös käyttää kaksinkertaista tasoa. Jos valitset **hinta-asetus**-lomak
    | **Kuvaus** | **Kuvaus**-kentän arvo otetaan käyttöön kurssimääritystietueessa olevasta kuvauksesta. Tämän avulla voit määrittää, mihin hinnan asetuksiin tasohinnat on linkitetty. |
    | **Tasokoodi** | Tasokoodin valitseminen. **Tasokoodit** määritetään tasokoodit-lomakkeessa. Järjestelmä näyttää automaattisesti tasokoodin kuvauksen vasemmalla puolella olevassa ruudukossa. |
    | **Tasotyyppi** | Määrittää, mitä kenttää tulisi käyttää valintakriteerinä tason hinnan laskennassa. Esimerkki:</br></br><ul><li>Jos **ikää** käytetään, järjestelmä käyttää työntekijän syntymäaikaa edun hinnan laskennassa.</li><li>Jos **palkkaa** käytetään, järjestelmä käyttää työntekijän vuosittaista etuuspalkkaa edun hinnan laskennassa.</li><li>Jos **työtyyppiä** käytetään, työntekijän nykyistä aktiivista toimitietuetta käytetään työtyypin määrittämiseen toimeen liitetyn työtietueen perusteella.</li></ul></br></br>Määrittämistasotyypit ovat **ikä**, **palkka**, **fyysinen**, **sukupuoli**, **kokopäiväinen**, **työlaji**, **kompensaatioalue** ja **taso**. | 
-   | **Tasaa** | Arvo, jota käytetään tasotyypin kanssa edun hinnan laskennassa. Esimerkki:</br></br><ul><li>Jos tasotyyppi on **ikä**, tämä on ikäarvo.</li><li>Jos tasotyyppi on **palkka**, tämä on palkka-arvo.</li><li> Jos tasotyyppi on **työtyyppi**, tämä on työtyyppi.</li></ul></br></br>Kun tasotyyppi on **ikä** tai **palkka**, **Taso**-kentän arvo esittää tason ylemmän sidonnan. Kun tasotyyppi on **työlaji**, käytetään tarkan vastaavuuden määrittämistapaa tason valinnassa. |
+   | **Tasaa** | Arvo, jota käytetään tasotyypin kanssa edun hinnan laskennassa. Esimerkki:</br></br><ul><li>Jos tasotyyppi on **ikä**, tämä on ikäarvo.</li><li>Jos tasotyyppi on **palkka**, tämä on palkka-arvo.</li><li> Jos tasotyyppi on **työtyyppi**, tämä on työtyyppi.</li></ul></br></br>Kun tasotyyppi on **ikä** tai **palkka**, **Taso**-kentän arvo esittää tason alemman sidonnan. Kun tasotyyppi on **työlaji**, käytetään tarkan vastaavuuden määrittämistapaa tason valinnassa. |
    | **Laskentalaji** | Määrittää, miten summaa käytetään Laske summa -kentässä ja mitä matemaattisia laskelmia tarvittaessa suoritetaan. Jos laskentatyyppi on tasasumma, käytetään summakenttiä sellaisenaan. Jos laskutyyppi on per $ palkan tai kattavuuden summa, käytetään laskutoimituksia ja laskusuuntaa matemaattisessa laskennassa.</br></br>Jos laskenta tyyppi on per $ summapalkkaa, käytetään seuraavaa matemaattista yhtälöä:</br></br>Vuotuinen etuuspalkka jaettuna laskun summalla (pyöristettynä ylös tai alas) kertaa työntekijän tai työnantajan tupakoitsijan tai tupakoimattomien määrät.</br></br>Jos laskenta tyyppi on per $ kattavuuden summa, käytetään seuraavaa matemaattista yhtälöä:</br></br>Kattavuussumma jaettuna laskun summalla (pyöristettynä ylös tai alas) kertaa työntekijän tai työnantajan tupakoitsijan tai tupakoimattomien määrät.)</br></br>Molemmissa laskelmissa laskentasuuntaa käytetään sen määrittämiseen, pyöristetäänkö vuosittainen etuuspalkka vai kattavuussumma laskemalla summa ylös- tai alaspäin. |
    | **Laskentasumma** | Edun hinnan laskentaprosessissa käytettävä summa. Tämä summa on jakajana tasokoron matemaattisen laskemisen aikana. |
    | **Laskelman suunta** | Lasketun tulosmäärän pyöristyksen suunta. Järjestelmä tukee kolmea laskentasuuntaa: tyhjää (tarkkaa menetelmää), **lisäystä** ja **laskua**.</br></br><ul><li>Jos arvo on tyhjä, järjestelmä käyttää palkan tai kattavuuden tarkkaa laskemista jaettuna laskennassa. Jos tällä arvolla on murtoluku, tätä käytetään laskennassa.</li><li>Jos **korotus**, kasvatetaan palkan/kattavuuden matemaattisten arvojen laskemista jaettuna laskusummalla seuraavaan kokonaislukuun, mikä tarkoittaa, että 12,25 suurenisi arvoon 13.</li><li>Jos **lasku**, vähennetään palkan/kattavuuden matemaattisten arvojen laskemista jaettuna laskusummalla tämänhetkiseen kokonaislukuun, mikä tarkoittaa, että 12,25 pienenisi arvoon 12.</li></ul> |

@@ -1,24 +1,26 @@
 ---
 title: Uuden sähköisen raportoinnin konfiguraation suunnitteleminen raporttien luomiseksi Word-muodossa
 description: Tässä artikkelissa käsitellään tapaa, jolla käyttävät voivat määrittää uuden sähköisen raportoinnin (ER) muodon luomaan raportteja Microsoft Word -asiakirjoina.
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893009"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273335"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Uuden ER-määrityksen suunnitteleminen luomaan Word-muotoisia raportteja
 
@@ -35,7 +37,7 @@ Word-asiakirjaa voi käyttää Word-muotoisten raporttien mallina määrittämä
 
 ![Muodon määrityksen luominen Määritykset-sivulla.](./media/er-design-configuration-word-image2.gif)
 
-Ratkaisun ER-muoto-osan on sisällettävä **Excel\\Tiedosto**-muotoelementti, ja kyseinen muotoelementti on linkitettävä siihen Word-asiakirjaan, jota käytetään luotavien raporttien mallina suorituksen aikana. ER-muoto-osan määrittämistä varten on avattava luodun ER-määrityksen [luonnos](general-electronic-reporting.md#component-versioning) ER-muodon suunnittelutoiminnossa. Tämän jälkeen lisätään **Excel\\Tiedosto**-elementti, liitetään Word-malli muokattavaan ER-muotoon ja linkitetään kyseinen malli lisättyyn **Excel\\Tiedosto**-elementtiin.
+Ratkaisun ER-muoto-osan on sisällettävä **Excel\\Tiedosto**-muotoelementti, ja kyseinen muotoelementti on linkitettävä siihen Word-asiakirjaan, jota käytetään luotavien raporttien mallina suorituksen aikana. ER-muoto-osan määrittämistä varten on avattava luodun ER-määrityksen luonnos ER-muodon suunnittelutoiminnossa. Tämän jälkeen lisätään **Excel\\Tiedosto**-elementti, liitetään Word-malli muokattavaan ER-muotoon ja linkitetään kyseinen malli lisättyyn **Excel\\Tiedosto**-elementtiin.
 
 > [!NOTE]
 > Mallia liitettäessä on käytettävä [asiakirjatyyppiä](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), joka on [määritetty](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) aiemmin ER-parametreissa tallentamaan ER-muotojen mallit.

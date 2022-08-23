@@ -1,32 +1,32 @@
 ---
 title: Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 description: Tässä artikkelissa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 Finance -ratkaisussa.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109079"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271580"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaaren hallintaa Dynamics 365 Finance -ratkaisussa.
+Tässä artikkelissa kuvataan [sähköisen raportoinnin](general-electronic-reporting.md) [konfiguraatioiden](general-electronic-reporting.md#Configuration) elinkaaren hallintaa Dynamics 365 Finance -ratkaisussa.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -105,6 +105,41 @@ Joissakin tapauksissa saatetaan edellyttää, että järjestelmä ohittaa määr
 
     > [!NOTE]
     > Tämä parametri on käyttäjä- ja yrityskohtainen.
+
+## <a name="dependencies-on-other-components"></a>Muiden komponenttien riippuvuudet
+
+ER-konfiguraatiot voidaan määrittää [riippuvaisiksi](er-download-configurations-global-repo.md#import-filtered-configurations) muista konfiguraatioista. Voit esimerkiksi [tuoda](er-download-configurations-global-repo.md) ER-[tietomallin](er-overview-components.md#data-model-component) konfiguraation yleisestä tietovarastosta [Microsoft Regulatory Configuration Servicesiin (RCS)](../../../finance/localizations/rcs-overview.md) tai Dynamics 365 Finance -instanssiin ja luoda sitten uuden ER-[muoto](er-overview-components.md#format-component)konfiguraation, joka [johdetaan](er-quick-start2-customize-report.md#DeriveProvidedFormat) tuodusta ER-tietomallin konfiguroinnista. Johdettu ER-muotomääritys on riippuvainen ER-perustietomallin konfiguraatiosta.
+
+![Johdettu ER-muodon määritys Määritykset-sivulla.](./media/ger-configuration-lifecycle-img1.png)
+
+Kun olet suunnitellut muodon, voit muuttaa ER-muotokonfiguraation alkuperäisen [version](general-electronic-reporting.md#component-versioning) tilasta **Luonnos** tilaan **Valmis**. Sen jälkeen voit jakaa ER-muotokonfiguraation valmiin version [julkaisemalla](../../../finance/localizations/rcs-global-repo-upload.md) sen yleisessä tietovarastossa. Seuraavaksi voit käyttää yleistä tietovarastoa mistä tahansa RCS:n tai Financen pilviesiintymästä. Tämän jälkeen voit tuoda minkä tahansa sovellukseen sovellettavan ER-konfiguraatioversion yleisestä tietovarastosta kyseiseen sovellukseen.
+
+![Julkaistu ER-muotomääritys konfiguraation tietovarasto -sivulla.](./media/ger-configuration-lifecycle-img2.png)
+
+Määrityksen riippuvuuden perusteella kun valitset yleisestä tietovarastosta ER-muotokonfiguraation tuomista varten uuteen RCS:n tai Financen esiintymään, ER-tietomallin peruskonfiguraatio löytyy automaattisesti yleisestä tietovarastosta ja se tuodaan yhdessä valitun ER-muodon konfiguraation kanssa peruskonfiguraationa.
+
+Voit myös viedä ER-muotoisen konfigurointiversion nykyisestä RCS:n tai Financen esiintymästä ja tallentaa sen paikallisesti XML-tiedostona.
+
+![ER-muodon konfiguraatioversion vieminen XML-muotoon konfigurointisivulla.](./media/ger-configuration-lifecycle-img3.png)
+
+Financen versioissa **ennen versiota 10.0.29**, kun yrität tuoda ER-muotokonfiguraatioversion XML-tiedostosta tai mistä tahansa muusta tietovarastosta kuin yleisestä tietovarastosta vastikään käyttöön otettuun RCS:n tai Financen esiintymään, joka ei vielä sisällä ER-konfiguraatioita, seuraava poikkeus ilmenee kertoen, ettei peruskonfiguraatiota voi saada:
+
+> Selvittämättömiä viitteitä jäljellä<br>
+Objektin \<imported configuration name\> viittausta objektiin 'Perus' (\<globally unique identifier of the missed base configuration\>, \<version of the missed base configuration\>) ei voi muodostaa
+
+![ER-muodon konfiguraatioversion tuominen konfiguraation tietovarasto -sivulla.](./media/ger-configuration-lifecycle-img4.gif)
+
+Jos yrität tuoda samaa konfiguraatiota **versiossa 10.0.29 ja sitä uudemmassa versiossa**, jos peruskonfiguraatiota ei löydy nykyisestä sovellusesiintymästä tai lähdetietovarastosta, joka on käytössä (soveltuvin osin), ER-kehys yrittää automaattisesti etsiä puuttuvan peruskonfiguraation nimen yleisen tietovaraston välimuistista. Sen jälkeen se esittää puuttuvan peruskonfiguraation nimen ja GUID-tunnuksen annettavan poikkeuksen tekstissä.
+
+> Selvittämättömiä viitteitä jäljellä<br>
+Objektin \<imported configuration name\> viittausta objektiin 'Perus' (\<name of the missed base configuration\> \<globally unique identifier of the missed base configuration\>, \<version of the missed base configuration\>) ei voi muodostaa
+
+![Poikkeus konfigurointitietovarastosivulla, kun peruskonfiguraatiota ei löydy.](./media/ger-configuration-lifecycle-img5.png)
+
+Voit etsiä peruskonfiguraation käyttämällä annettua nimeä ja tuoda sen sitten manuaalisesti.
+
+> [!NOTE]
+> Tämä uusi vaihtoehto toimii vain , jos vähintään yksi käyttäjä on jo kirjautunut yleiseen tietovarastoon käyttämällä [Konfiguraatiosäilöt](er-download-configurations-global-repo.md#open-configurations-repository)-sivua tai yhtä nykyisen Finance-esiintymän yleisen tietovaraston [hakukenttää](er-extended-format-lookup.md) ja kun yleisen tietovaraston sisältö on tallennettu välimuistiin.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -1,24 +1,26 @@
 ---
 title: Piilota Word-sisällön ohjausobjektit luoduissa raporteissa
 description: Tässä artikkelissa kerrotaan, miten määritetään sähköisen raportoinnin (ER) muoto, jotta raportit voidaan luoda Microsoft Word -tiedostoina, joissa sisällön ohjausobjektit on piilotettu.
-author: NickSelin
+author: kfend
 ms.date: 02/11/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: e11b697b78c89a1758fa9e81c901bd29fe281539
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: 8787d43a0c453d49dd1d0efcbb7b5d276721be9e
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882110"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267311"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Piilota Word-sisällön ohjausobjektit luoduissa raporteissa
 
@@ -42,7 +44,7 @@ Näiden vaiheiden edellytyksenä on seuraavien tehtäväoppaiden vaiheiden suori
 Kun suoritat näiden tehtäväoppaiden vaiheet, seuraavat kohteet valmistellaan:
 
 - **Laskentataulukon malliraportti** -ER-muoto, joka on määritetty luomaan asiakirja Word-muodossa
-- **Mallilaskentataulukon** ER-muodon [luonnosversio](general-electronic-reporting.md#component-versioning), joka on merkitty **Runnable**
+- **Mallilaskentataulukon** ER-muodon luonnosversio, joka on merkitty **Runnable**
 - **Sähköiset** maksutavat, jotka on määritetty käyttämään toimittajan maksujen käsittelyssä **laskentataulukon esimerkkiraportin** ER-muotoa
 
 Lisäksi malliraporttia varten on ladattava ja tallennettava seuraava malli:

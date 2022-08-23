@@ -1,26 +1,26 @@
 ---
 title: Sähköisen raportoinnin (ER) kohteet
 description: Tässä artikkelissa esitetään tietoja sähköisen raportoinnin kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851074"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281964"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -118,7 +118,7 @@ Kun määrität valitun muodon tiedostokohteita, määrität ne koko muotoa vart
 
 [![Määrityslinkki.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Samalla sinulla voi olla useita [versioita](general-electronic-reporting.md#component-versioning) siitä muodosta, joka on tuotu kulloiseenkin Finance-esiintymään. Voit tarkastella niitä valitsemalla **Määritys**-linkin, joka tarjotaan, kun valitset **Viite**-kentän.
+Samalla sinulla voi olla useita versioita siitä muodosta, joka on tuotu kulloiseenkin Finance-esiintymään. Voit tarkastella niitä valitsemalla **Määritys**-linkin, joka tarjotaan, kun valitset **Viite**-kentän.
 
 [![Määritysversiot.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -180,6 +180,16 @@ Tuloksena olevan PDF-tiedoston enimmäispituus on 300 sivua.
 Financen **versiossa 10.0.9** ja siitä eteenpäin tuetaan tällä hetkellä vain vaakasuuntaista asettelua Excel-tuloksesta luotavassa PDF-asiakirjassa. Financen **versiossa 10.0.10 ja sitä myöhemmissä versioissa** voidaan [määrittää sivun suunta](#SelectPdfPageOrientation) PDF-tiedostossa, joka tuotetaan Excelin tulosteesta samalla, kun ER-kohde määritetään.
 
 Sellaisten tulosten muuntamisessa, jotka eivät sisällä upotettuja fontteja, käytetään vain Windows-käyttöjärjestelmän yleisiä järjestelmäfontteja.
+
+### <a name="resources"></a>Resurssit
+
+Ennen Financen versiota 10.0.29 PDF-muunnos voitiin tehdä vain nykyisen Finance-esiintymän ulkopuolella. Luotu tiedosto lähetettiin Financesta muuntopalveluun ja palvelu palautti muunnetun tiedoston. Versiossa **10.0.29 ja sitä myöhemmissä versioissa** **Muunna sähköisen raportoinnin lähtevät asiakirjat Microsoft Office --muodoista PDF -muotoon** -ominaisuuden lisäksi voit kuitenkin ottaa käyttöön **Käytä sovellusresursseja CBD-asiakirjojen muuntamiseen Word-muodosta PDF-muotoon** -ominaisuuden. Tämän ominaisuuden avulla voit muuntaa luodut Word-tiedostot PDF-muotoon paikallisesti käyttämällä nykyisen Finance-esiintymän sovelluspalvelinresursseja. 
+
+Tässä ovat paikallisten PDF-muunnosten edut, kun **Käytä sovellusresursseja CBD-asiakirjojen muuntamiseen Word-muodosta PDF-muotoon** -ominaisuus on otettu käyttöön:
+
+- Tuloksena olevan PDF-tiedoston enimmäispituutta ei ole [rajoitettu](#limitations).
+- Muunnettu Word-asiakirja voi sisältää [suuren määrän sisältöohjausobjekteja](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Internet-yhteys ei ole pakollinen paikallisissa käyttöönotoissa.
 
 ### <a name="use-the-pdf-conversion-option"></a>PDF-muunnosasetuksen käyttö
 

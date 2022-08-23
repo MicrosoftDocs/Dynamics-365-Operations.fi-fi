@@ -1,26 +1,26 @@
 ---
 title: ER-muodon suunnittelu Excel-muotoisen raportin luomiseksi ja kuvien upottamiseksi sivun ylä- ja alatunnisteisiin
 description: Tässä artikkelissa käsitellään sähköisen raportoinnin (ER) käyttämistä sellaisten liiketoiminta-asiakirjojen luomiseen, joiden sivujen ylä- ja alatunnisteisiin on upotettu kuvia ja muotoja.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854840"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281809"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>ER-muodon suunnittelu Excel-muotoisen raportin luomiseksi ja kuvien upottamiseksi sivun ylä- ja alatunnisteisiin
 
@@ -196,7 +196,7 @@ Tässä tapauksessa Litware, Inc. -yhtiön edustajana sinun on luotava uusi ER-m
 
 ![Mukautetun maksumuodon konfiguraation luominen Luo konfiguraatio -valintaikkunan avattavasta valikosta.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-**Vapaatekstilasku (Excel) mukautettu** -ER-muodon konfiguraation versio 240.112.1 luodaan. Tämän version [tila](general-electronic-reporting.md#component-versioning) on **Luonnos**, ja sitä voidaan muokata. Mukautetun ER-muodon nykyinen sisältö vastaa Microsoftin toimittaman muodon sisältöä.
+**Vapaatekstilasku (Excel) mukautettu** -ER-muodon konfiguraation versio 240.112.1 luodaan. Tämän version tila on **Luonnos**, ja sitä voidaan muokata. Mukautetun ER-muodon nykyinen sisältö vastaa Microsoftin toimittaman muodon sisältöä.
 
 ![ER-muodon konfiguraation uusi versio luotuna Konfiguraatiot-sivulla.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Määritä mukautettu muoto siten, että yrityksen logokuva lisätään raportin
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Merkitse mukautettu muoto suoritettavaksi
 
-Koska mukautetun muodon ensimmäinen versio on luotu ja sen tila on **Luonnos**, voit suorittaa muodon testaustarkoituksia varten. Jos haluat suorittaa raportin, käsittele toimittajamaksu käyttämällä maksutapaa, joka viittaa mukautettuun ER-muotoosi. Oletuksena kun kutsut ER-muodon sovelluksesta, vain versiot, joiden tila on **Valmis** tai **Jaettu**, otetaan [huomioon](general-electronic-reporting.md#component-versioning). Tämä käytös auttaa estämään sellaisten ER-muotojen käyttöä, joiden mallit eivät ole valmiit. Testiajoissasi voit kuitenkin pakottaa sovelluksen käyttämään ER-muotosi versiota, jonka tila on **Luonnos**. Tällä tavoin voit säätää nykyistä muotoversiota, jos muokkauksia tarvitaan. Lisätietoja on kohdassa [Soveltuvuus](electronic-reporting-destinations.md#applicability).
+Koska mukautetun muodon ensimmäinen versio on luotu ja sen tila on **Luonnos**, voit suorittaa muodon testaustarkoituksia varten. Jos haluat suorittaa raportin, käsittele toimittajamaksu käyttämällä maksutapaa, joka viittaa mukautettuun ER-muotoosi. Oletuksena kun kutsut ER-muodon sovelluksesta, vain versiot, joiden tila on **Valmis** tai **Jaettu**, otetaan huomioon. Tämä käytös auttaa estämään sellaisten ER-muotojen käyttöä, joiden mallit eivät ole valmiit. Testiajoissasi voit kuitenkin pakottaa sovelluksen käyttämään ER-muotosi versiota, jonka tila on **Luonnos**. Tällä tavoin voit säätää nykyistä muotoversiota, jos muokkauksia tarvitaan. Lisätietoja on kohdassa [Soveltuvuus](electronic-reporting-destinations.md#applicability).
 
 Käyttääksesi ER-muodon luonnosversiota sinun on merkittävä ER-muoto selkeästi.
 

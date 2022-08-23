@@ -1,28 +1,26 @@
 ---
 title: Sähköisten raportointimääritysten mukauttaminen luomaan sähköinen asiakirja
 description: Tässä artikkelissa käsitellään niiden Microsoftin toimittamien sähköisen raportoinnin (ER) määritysten mukauttamista, joilla luodaan mukautettu sähköinen asiakirja.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854695"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278943"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Sähköisten raportointimääritysten mukauttaminen luomaan sähköinen asiakirja
 
@@ -310,7 +308,7 @@ Sähköisen raportoinnin toiminnallisen konsultin roolia käyttävä käyttäjä
 5. Kirjoita **Nimi**-kenttään **Laskumalli (Litware)**.
 6. Lisää uusi ER-määritys valitsemalla **Luo määritys**.
 
-ER-tietomallin suunnitteluohjelmassa voi nyt muokata **Luonnos**-[tilassa](general-electronic-reporting.md#component-versioning) olevaa **Laskumalli (Litware)** -ER-määrityksen versiota 50.1.
+ER-tietomallin suunnitteluohjelmassa voi nyt muokata **Luonnos**-tilassa olevaa **Laskumalli (Litware)** -ER-määrityksen versiota 50.1.
 
 ![ER-määrityksen versio 50.1 Määritykset-sivulla.](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ Mukautettua tietomallia on muokattava lisäämällä uusi kenttä antamaa liitto
 
 #### <a name="complete-a-custom-data-model-configuration"></a>Mukautetun tietomallimäärityksen viimeisteleminen
 
-Mukautetun ER-tietomallin määrityksen version 50.1 käsitteleminen on [päätettävä](general-electronic-reporting.md#component-versioning), ennen kuin se on käytettävissä ja ennen kuin siihen voidaan lisätä muita mukautettuja ER-määrityksiä.
+Mukautetun ER-tietomallin määrityksen version 50.1 käsitteleminen on päätettävä, ennen kuin se on käytettävissä ja ennen kuin siihen voidaan lisätä muita mukautettuja ER-määrityksiä.
 
 1. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Konfiguraatiot**.
 2. Laajenna **Määritykset**-sivun määrityspuun vasemmassa ruudussa **Laskumalli** ja valitse **Laskumalli (Litware)**.
@@ -394,7 +392,7 @@ Mukautettua mallin yhdistämismääritystä on muokattava. Lisäksi on määrite
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>Mukautetun mallin yhdistämismäärityksen määrityksen viimeisteleminen
 
-Mukautetun ER-mallin yhdistämismäärityksen version 50.19.1 määritys on [päätettävä](general-electronic-reporting.md#component-versioning), ennen kuin määritys on käytettävissä.
+Mukautetun ER-mallin yhdistämismäärityksen version 50.19.1 määritys on päätettävä, ennen kuin määritys on käytettävissä.
 
 1. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Konfiguraatiot**.
 2. Laajenna **Määritykset**-sivun määrityspuun vasemmassa ruudussa **Myyntilaskumalli** \> **Myyntilaskumallin yhdistämismääritys** ja valitse **Laskumallin yhdistämismääritys (Litware)**.
@@ -428,7 +426,7 @@ Sähköisen raportoinnin toiminnallisen konsultin roolia käyttävä käyttäjä
 
 ![Mukautetun muodon määrityksen lisääminen Määritykset-sivulla.](./media/er-quick-start3-adding-custom-format.png)
 
-ER-toimintojen suunnitteluohjelmassa voi nyt muokata **Luonnos**-[tilassa](general-electronic-reporting.md#component-versioning) olevaa **Peppol-myyntilasku (Litware)** -ER-määrityksen versiota 11.2.2.1.
+ER-toimintojen suunnitteluohjelmassa voi nyt muokata **Luonnos**-tilassa olevaa **Peppol-myyntilasku (Litware)** -ER-määrityksen versiota 11.2.2.1.
 
 ![ER-määrityksen versio 11.2.2.1 Määritykset-sivulla.](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Mukautettua muotoa on muokattava lisäämällä uusi muotoelementti täyttämä�
 
 #### <a name="complete-a-custom-format-configuration"></a>Mukautetun muotomäärityksen viimeisteleminen
 
-Mukautetun ER-muotomäärityksen version 11.2.2.1 määritys on [päätettävä](general-electronic-reporting.md#component-versioning), ennen kuin määritys on käytettävissä.
+Mukautetun ER-muotomäärityksen version 11.2.2.1 määritys on päätettävä, ennen kuin määritys on käytettävissä.
 
 1. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Konfiguraatiot**.
 2. Laajenna **Määritykset**-sivun määrityspuun vasemmassa ruudussa **Myyntilaskumalli** \> **UBL-myyntilasku** \> **Peppol-myyntilasku** ja valitse **Peppol-myyntilasku (Litware)**.
@@ -650,7 +648,7 @@ Version 32.6.7.2 tila muuttuu tilasta **Luonnos** tilaksi **Valmis** ja versio m
 3. Valitse toimintoruudun **Asiakirjat**-ryhmässä **Lähetä** \> **Alkuperäinen**.
 
     > [!NOTE] 
-    > Koska **Peppol-myyntilasku (Litware)** -ER-muodon määrityksistä on nyt kaksi versiota eikä kummallakaan versiolla ole [voimaantulopäivän](general-electronic-reporting.md#component-date-effectivity) arvoa, e-lasku luodaan uusimmalla versiolla.
+    > Koska **Peppol-myyntilasku (Litware)** -ER-muodon määrityksistä on nyt kaksi versiota eikä kummallakaan versiolla ole voimaantulopäivän arvoa, e-lasku luodaan uusimmalla versiolla.
 
 4. Sulje **Vapaatekstilasku**-sivu.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901144"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227894"
 ---
 # <a name="benefits-management-overview"></a>Etujen hallinnan yleiskatsaus
 
@@ -147,6 +147,16 @@ Ennen kuin voit käsitellä elämäntapahtumia, avoin rekisteröinti on suoritet
 - [Elämäntapahtumien käsittely](hr-benefits-process-life-events.md)
 - [Elämäntapahtumien muutosten käsittely](hr-benefits-process-life-event-changes.md)
 - [Elämäntapahtumien oikeutusten käsittely](hr-benefits-process-life-event-eligibility.md)
+
+Kun elämäntapahtuman käsittely on suoritettu loppuun ja niin kauan kuin elämäntapahtuman rekisteröinti on avoinna, työntekijät voivat tehdä muutoksia suunnitelman asetuksiin, joihin elämäntapahtuma vaikuttaa. Järjestelmänvalvojat voivat tehdä muutoksia työntekijöiden puolesta. Kun rekisteröintikausi on päättynyt eikä mitään vahvistamattomia suunnitelmatyyppejä liity elämäntapahtuman transaktioon, transaktio suljetaan.
+
+Kaikkien niiden suunnitelmien, joihin elämäntapahtuma vaikuttaa, on oltava joko valittu tai peruutettava ja vahvistettava. Jos suunnitelmaa ei ole valittu, eikä sitä peruuteta eikä sitä ole siten vahvistettu, elämäntapahtuman transaktiota ei suljeta.
+
+Järjestelmänvalvojat voivat tarvittaessa sulkea elämäntapahtuman transaktion manuaalisesti valitsemalla sen ja valitsemalla sitten **Sulje**. Jos transaktiossa on vahvistamattomia suunnitelmia ja järjestelmänvalvoja haluaa sulkea sen, elämäntapahtuman sulkeminen voi rajoittaa muokkausta näihin suunnitelmiin.
+
+Suljettuja elämäntapahtumia ei voi poistaa.
+
+Järjestelmänvalvojat voivat tarvittaessa avata uudelleen elämäntapahtuman transaktion manuaalisesti valitsemalla sen ja valitsemalla sitten **Avaa uudestaan**.
 
 ## <a name="rate-updates-optional"></a>Hintojen päivitykset (valinnainen)
 

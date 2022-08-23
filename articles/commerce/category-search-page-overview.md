@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: 1f2e4eb8825dd690f926f7f0bdfc39f1eb5fb83c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881849"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276370"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Luokan oletussaapumissivun ja oletushakutulossivun yleiskatsaus
 
@@ -46,6 +46,12 @@ Seuraavat komponentit ovat olennaisia luokassa:
     - Tuotteen nimi – \[Ö-A\]
     - Luokitukset – matalasta korkeaan
     - Luokitukset – korkeasta matalaan
+
+- **Lajittelun lisäasetusten** avulla sivuston vierailijat voivat lajitella tuotteet käyttämällä älykkäitä kriteereitä. Kun [Tuotesuositukset](product-recommendations.md) otetaan käyttöön, seuraavat lajitteluvaihtoehdot ovat käytettävissä. Lisätietoja on [Tuotesuositusten tyypit](product-recommendations.md#types-of-product-recommendations) -artikkelissa.
+
+    - Uusi
+    - Parhaiten myyvä
+    - Suosittu
 
 - **Sivutuksen** avulla sivuston vierailijat voivat siirtyä yhdeltä luokitellun tuotteen sivulta toiselle.
 - **Kokonaismäärä** määrittää luokkaan määritettyjen tuotteiden kokonaismäärän.
@@ -78,7 +84,7 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
 
 - **Tuotesijoitteluruudut** näyttävät käyttäjän haun tuotteet. Oletusarvoisesti nämä ruudut lajitellaan pilvipohjaisen hakurelevanssin pisteiden mukaan käyttäjähaussa.
 - **Tarkennusten ja valinnan yhteenveto** ovat suodattimia määriä varten. Niiden avulla voi myös tarkentaa nimikkeitä. Myynninedistämispäällikkö määrittää ne osana kanavaluokkien ja tuotemääritteiden metatietojen määritystä.
-- **Lajitteluasetusten** avulla sivuston vierailijat voivat lajitella tuotteet. Oletusarvoisesti käytettävissä ovat seuraavat lajitteluvaihtoehdot:
+- **Lajittelun vakioasetusten** avulla sivuston vierailijat voivat lajitella tuotteet. Oletusarvoisesti käytettävissä ovat seuraavat lajitteluvaihtoehdot:
 
     - Hinta – matalasta korkeaan
     - Hinta – korkeasta matalaan
@@ -86,7 +92,16 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
     - Tuotteen nimi – \[Ö-A\]
     - Luokitukset – matalasta korkeaan
     - Luokitukset – korkeasta matalaan
-    - Oletus
+    - Oletus 
+    
+    > [!NOTE]
+    > Jos siirtymispalkinhierarkiassa tuotteille on määritetty **Näyttöjärjestys**-arvot, luokkasivun lajitteleminen oletusarvon mukaan on **näyttöjärjestyksen** arvojen mukainen. Muussa tapauksessa lajittelu tapahtuu **tuotenumeron** mukaan.)
+    
+- **Lajittelun lisäasetusten** avulla sivuston vierailijat voivat lajitella tuotteet käyttämällä älykkäitä kriteereitä. Kun [Tuotesuositukset](product-recommendations.md) otetaan käyttöön, seuraavat lajitteluvaihtoehdot ovat käytettävissä. Lisätietoja on [Tuotesuositusten tyypit](product-recommendations.md#types-of-product-recommendations) -artikkelissa.
+
+    - Uusi
+    - Parhaiten myyvä
+    - Suosittu
 
 - **Sivutuksen** avulla sivuston vierailijat voivat siirtyä yhdeltä luokitellun tuotteen sivulta toiselle.
 - **Kokonaismäärä** määrittää luokkaan määritettyjen ja hakuehtoja vastaavien tuotteiden kokonaismäärän.
@@ -94,6 +109,8 @@ Seuraavat osat ovat olennaisia hakutulossivulla:
 >[!NOTE]
 >Nämä pilvipohjaiset hakutoiminnot ovat saatavilla versiosta 10.0.8 alkaen. Varmista, että valikossa **Kaupan parametrit > Määrityksen parametrit** on merkintä ProductSearch.UseAzureSearch set to 'true'. 
 ![Määrityksen parametrit pilvipohjaiselle haulle.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Lisäksi [tuotesuositukset](product-recommendations.md) on otettava käyttöön ympäristöäsi varten, jotta voit käyttää lajittelun lisävaihtoehtoja, kuten uusi, parhaiten myyvä ja suosittu. Lajittelun lisävaihtoehdot ovat käytettävissä Commerce SDK -versiossa 9.35+ ja Commerce-versiossa 10.0.20.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

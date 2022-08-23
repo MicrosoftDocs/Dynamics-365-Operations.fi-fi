@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124525"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219121"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Dynamics 365 Supply Chain Management 10.0.23:n uudet tai muuttuneet ominaisuudet (tammikuu 2022)
 
@@ -55,7 +55,7 @@ Jos haluat ottaa näitä ominaisuuksista käyttöön tai poistaa niitä käytös
 | Varastonhallinta | (Venäjä) Käytä tapahtumia paikallisella kielellä maa- tai aluekohtaisissa ensisijaisissa lomakkeissa varastonhallinnassa | Venäjänkielisten Supply Chain Managementin lokalisointien osalta tämä ominaisuus ottaa käyttöön tuotteiden/nimikkeiden nimien ja mittayksiköiden venäjänkieliset käännökset seuraavissa venäjänkielisissä varaston tulosteissa: Inventointiluettelo (INV-3),Inventointiluettelo (INV-5) ja Inventointiluettelo (INV-6). |
 | Pääsuunnittelu | Azuren koneoppimispalvelu kysynnän ennustetta varten | Tämän ominaisuuden avulla Azuren koneoppimispalvelu voi luoda kysyntäennusteita historiallisten tietojen perusteella. Lisätietoja on kohdassa [Kysynnän ennusteen määritys](../master-planning/demand-forecasting-setup.md). |
 | Hankinta | Tyhjennä ostotilauksen päivityshistoria | Tämän ominaisuuden avulla voit puhdistaa ostotilausten päivityksiin liittyvät väliaikaiset historiatietueet. Se lisää uuden **Puhdista ostopäivityshistoria** -painikkeen **Kaikki ostotilaukset** -sivun toimintoruutuun. Tämä ominaisuus on oletusarvoisesti käytössä. |
-| Tuotannonhallinta | (Esiversio) Varastomateriaalien automaattinen keräily automaattisesti kirjattuja keräysluetteloita varten | Tämän ominaisuuden avulla voidaan tehdä keräily automaattisesti ja ratkaista varastodimensiot automaattisesti kirjattuja, jaettuja ja jälkikustannuslaskennassa olleita keräysluettelon kirjauskansioita varten. |
+| Tuotannonhallinta | Varastomateriaalien automaattinen keräily automaattisesti kirjattuja keräysluetteloita varten | Tämän ominaisuuden avulla voidaan tehdä keräily automaattisesti ja ratkaista varastodimensiot automaattisesti kirjattuja, jaettuja ja jälkikustannuslaskennassa olleita keräysluettelon kirjauskansioita varten. |
 | Tuotannonhallinta | Raaka-aineiden vanhenemisen tarkistaminen suunnitellun käyttöpäivän perusteella | Tämä ominaisuus muuttaa sitä, miten erien vanhanemispäivät tarkistetaan, kun raaka-aine-erä varataan käytettäväksi tuotannossa. Kun tämä ominaisuus on käytössä, erän vanhenemispäivä tarkistetaan tuotannon tuoterakennerivillä tai erätilauksen kaavarivillä esitetyn suunnitellun käyttöpäivämäärän (eli raaka-ainepäivämäärään) perusteella. Kun tämä ominaisuus ei ole käytössä, erän vanhentumispäivä tarkistetaan tuotannon tai erätilauksen suunnitellun toimituspäivän perusteella (kuten aiemmin). |
 | Myynti ja markkinointi | Myynnin päivityshistorian tyhjentäminen iän perusteella | Tällä toiminnolla voi määrittää säilytettävien tietueiden enimmäisiän, kun kausittainen **Myynnin päivityshistorian puhdistus**-tehtävä suoritetaan. Määritystä vanhemmat tietueet poistetaan. Tämä on kätevää, kun tehtävä määritetään suoritettavaksi kausittain, sillä ikä lasketaan aina suhteessa päivään, jolloin tehtävä suoritetaan. Ilman tätä toimintoa vanhimmille säilytettäville tietueille voidaan vain määrittää tietty päivämäärä. Lisätietoja on kohdassa [Ajoita myyntihistorian tietojen puhdistus](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Myynti ja markkinointi | Paranna 100 parasta -asiakasraportin suorituskykyä | Tämä ominaisuus parantaa **100 parasta** -asiakasraportin suorituskykyä siten, että se suoritetaan aina kaikille asiakkaille (niin kuin se on tarkoitettukin) mukautettujen kyselyjen sallimisen sijaan. Kun tämä ominaisuus on käytössä, kaikki **Sisällytettävät tietueet** -asetukset poistetaan käytöstä **100 parasta** -raporttivalintaikkunassa. |

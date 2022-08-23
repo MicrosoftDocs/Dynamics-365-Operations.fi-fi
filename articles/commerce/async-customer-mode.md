@@ -2,23 +2,24 @@
 title: Asynkroninen asiakkaan luontitila
 description: Tässä artikkelissa kuvataan asynkronista asiakkaan luontitilaa Microsoft Dynamics 365 Commercessa.
 author: gvrmohanreddy
-ms.date: 12/10/2021
+ms.date: 08/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: 4ca63fe06a804035e976a3432454078c1cca0020
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1ac1bc842d5d12ece8951ffed18157e6f9b50d14
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880137"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228720"
 ---
 # <a name="asynchronous-customer-creation-mode"></a>Asynkroninen asiakkaan luontitila
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Tässä artikkelissa kuvataan asynkronista asiakkaan luontitilaa Microsoft Dynamics 365 Commercessa.
 
@@ -27,24 +28,35 @@ Commercessa asiakkaan luomisessa on kaksi eri tilaa: Synkroninen ja Asynkroninen
 Jos **Luo asiakas asynkronisessa tilassa** -asetus on **Kyllä** myymälän toimintoprofiilissa (**Retail ja Commerce \> Kanavan asetukset \> Verkkokaupan määritys \> Toimintoprofiilit**), Real-time Service -kutsuja ei käytetä asiakastietueiden luomiseen kanavatietokannassa. Asynroninen asiakkaan luontitila ei vaikuta Commerce headquarters -ohjelman suorituskykyyn. Jokaiselle uudelle asynkroniselle asiakastietueelle liitetään väliaikainen, yleinen yksilöivä tunnus (GUID), jota käytetään asiakastilin tunnuksena. GUID ei näy myyntipisteen (POS) käyttäjille. Sen sijaan käyttäjät näkevät **Odottaa synkronointia** asiakastilin tunnuksena.
 
 > [!IMPORTANT]
-> Kun myyntipiste siirtyy offline-tilaan, järjestelmä luo asiakkaat automaattisesti asynkronisesti, vaikka asynkronisen asiakasluonnin tila olisi pois käytöstä. Siksi Commerce-pääkonttorin järjestelmänvalvojien on riippumatta siitä, oletko valinnut synkronisen vai asynkronisen asiakasluonnin, luotava ja ajoitettava toistuva erätyö **P-työlle**, **Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työlle (ennen "**Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työ") ja **1010**-työlle, jotta kaikki asynkroniset asiakkaat muunnetaan Commerce-pääkonttorissa synkronoiduiksi asiakkaiksi.
+> Kun myyntipiste siirtyy offline-tilaan, järjestelmä luo asiakkaat automaattisesti asynkronisesti, vaikka asynkronisen asiakasluonnin tila olisi pois käytöstä. Siksi riippumatta siitä, oletko valinnut synkronisen vai asynkronisen asiakasluonnin, Commerce headquartersin järjestelmänvalvojien on luotava ja ajoitettava toistuva erätyö **P-työlle**, **Synkronoi asiakkaat ja yrityskumppanit asynkronisesta tilasta** -työlle ja **1010**-työlle, jotta kaikki asynkroniset asiakkaat muunnetaan Commerce-pääkonttorissa synkronoiduiksi asiakkaiksi.
 
 ## <a name="async-customer-limitations"></a>Asynkronisen asiakkaan rajoitukset
 
-Asynkronisen asiakkaan toiminnallisuuteen liittyy tällä hetkellä seuraavat rajoitukset:
+Asynkronisen asiakkaan toiminnallisuuteen liittyy tällä hetkellä seuraava rajoitus:
 
-- Asynkronisen asiakkaan tietueita ei voi muokata, ellei asiakasta ole luotu Commerce headquarters -sovelluksessa ja uutta asiakastilin tunnusta ole synkronoitu takaisin kanavaan.
 - Kanta-asiakaskortteja ei voi myöntää asynkronisille asiakkaille, ellei uutta asiakastilitunnusta ole synkronoitu takaisin kanavaan.
 
 ## <a name="async-customer-enhancements"></a>Asynkronisen asiakkaan parannukset
 
-Commerce 10.0.24 -versiosta alkaen voit ottaa käyttöön **Ota käyttöön laajennetun asiakkaan luonti** -ominaisuuden **Ominaisuuksien hallinta** -työtilassa. Tämä ominaisuus katkaisee kuilun asynkronisten ja synkronoitujen asiakkaiden luontitilojen välillä myyntipisteissä ja verkkokaupassa seuraavilla tavoilla:
+Kun haluat auttaa organisaatioita käyttämään asynkronista asiakkaan luontitilaa asiakkaiden hallintaan ja vähentämään reaaliaikaista viestintää Commerce Headquartersin kanssa, on tehty seuraavat parannukset, jotka tuovat pariteetin kanavien synkronisen ja asynkronisen tilan välillä. 
 
-- Liitoksia ei voi liittää asynkronisiin asiakkaisiin.
-- Asynkronisiin asiakkaisiin voi lisätä otsikoita.
-- Toissijaisia sähköpostiosoitteita ja puhelinnumeroita ei voi siepata asynkronisille asiakkaille.
+| Ominaisuuksien parannukset | Commerce-versio | Ominaisuuden tiedot |
+|---|---|---|
+| Suorituskykyä koskevat parannukset, kun asiakastietoja haetaan kanavatietokannasta | 10.0.20 ja sitä uudempi | Suorituskyvyn parantamiseksi asiakasentiteetti jakautuu pienemmiksi entiteeteiksi. Järjestelmä hakee sitten vain tarvittavat tiedot kanavatietokannasta. |
+| Kyky luoda osoite asynkronisesti uloskuittauksen aikana | 10.0.22 ja sitä uudempi | <p>Ominaisuusvalitsin: **Asynkronisen luomisen käyttöönotto asiakkaan osoitteissa**</p><p>Ominaisuuden tiedot:</p><ul><li>Kyky lisätä osoitteita ilman reaaliaikaisia palvelukutsuja Commerce headquartersissa</li><li>Mahdollisuus tunnistaa kanavan tietokannan osoitteet yksilöllisesti ilman tietuetunnusta (**RecId**-arvo)</li><li>Ajanseurannan aikaleimat osoitteen luomista varten</li><li>Osoitteiden synkronointi Commerce headquartersissa</li></ul><p>Tämä ominaisuus vaikuttaa sekä synkronoituihin että asynkronoituihin asiakkaisiin. Jos haluat muokata osoitteita asynkronisesti sekä luoda ne asynkronisesti, ota käyttöön **asiakkaiden muokkaaminen asynkronisessa tilassa**.</p> |
+| Ota käyttöön pariteetti synkronisen ja asynkronisen asiakkaan luonnin välillä. | 10.0.24 ja sitä uudempi | <p>Ominaisuusvalitsin: **Ota käyttöön laajennettu asynkronisen asiakkaan luonti**</p><p>Ominaisuuksien tiedot: Mahdollisuus siepata lisätietoja, kuten otsikko, liitokset oletusasiakkaalta sekä toissijaiset yhteystiedot (puhelinnumero ja sähköpostiosoite), kun asiakkaita luodaan asynkronisesti</p> |
+| Käyttäjäystävälliset virhesanomat | 10.0.28 ja sitä uudempi | Nämä parannukset auttavat parantamaan käyttäjäystävällisiä virhesanomia, jos käyttäjä ei voi muokata tietoja heti synkronoinnin aikana. Voit ottaa nämä parannukset käyttöön käyttämällä **Salli se, että asynkroninen asiakas ei voi muokata tiettyjä käyttöliittymäelementtejä** -asetusta kohdassa **Sivuston asetukset \> Laajennukset** Commercen sivustonmuodostimessa. |
+| Mahdollisuus muokata asiakastietoja asynkronisesti | 10.0.29 ja sitä uudempi | <p>Ominaisuusvalitsin: **Ota käyttöön asiakkaiden muokkaaminen asynkronisessa tilassa**</p><p>Ominaisuuksien tiedot: Mahdollisuus muokata asiakastietoja asynkronisesti</p><p>Vastauksia yleisiin kysymyksiin, jotka liittyvät asiakastietojen asynkroniseen muokkaamiseen, on kohdassa [Asynkroninen asiakkaan luontitila – Usein kysytyt kysymykset](async-customer-mode-faq.md).</p> |
 
-Commerce 10.0.22 -versiosta alkaen voit ottaa käyttöön **Ota käyttöön asynkronoitu asiakkaan osoitteen luonti** -ominaisuuden **Ominaisuuksien hallinta** -työtilassa. Tämän ominaisuuden avulla uudet asiakkaan osoitteet voidaan tallentaa asynkronisesti sekä synkronoiduille että asynkronoiduille asiakkaille.
+### <a name="feature-switch-hierarchy"></a>Ominaisuusvalitsimen hierarkia
+
+Ominaisuusvalitsimien hierarkian vuoksi seuraavat toiminnot on otettava käyttöön ennen **Ota käyttöön asiakkaiden muokkaaminen asynkronisessa tilassa** -ominaisuuden ottamista käyttöön: 
+
+- **Asiakastilausten ja -tapahtumien suorituskyvyn parannukset** – Tämä ominaisuus on ollut pakollinen Commerce-version 10.0.28 julkaisun jälkeen. 
+- **Ota käyttöön laajennettu asynkronisen asiakkaan luonti**
+- **Asynkronisen luomisen käyttöönotto asiakkaan osoitteissa**
+
+Vastaukset yleisiin vianmäärityskysymyksiin on kohdassa [Asynkroninen asiakkaan luontitila – Usein kysytyt kysymykset](async-customer-mode-faq.md). 
 
 Kun olet ottanut aiemmin mainitut ominaisuudet käyttöön, sinun on ajoitettava toistuva erätyö **P-työlle**, **Synkronoi asiakkaat ja liikekumppanit asynkronisesta tilasta** -työlle ja **1010**-työlle, jotta kaikki asynkroniset asiakkaat muunnetaan synkronointiasiakkaiksi Commerce headquartersissa.
 

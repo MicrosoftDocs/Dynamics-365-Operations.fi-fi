@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854294"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219904"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Ajoitusmoduulin suorituskyvyn parantaminen
 
@@ -294,7 +294,9 @@ Samanaikaisten työvaiheiden tilalla voi käyttää joko parien mallintamista vi
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Reitti, joissa resurssien määrä on suurempi kuin 1
 
-Jos työvaiheeseen tarvittavien resurssien määrä on määritetty suurempi kuin yksi, tulos on käytännössä sama kuin käytettäessä ensisijaisia/toissijaisia työvaiheita, koska moduuliin lähetetään useita samanaikaisia töitä. Tässä tapauksessa ei kuitenkaan ole mahdollisuutta käyttää tietyn resurssin määrityksiä, koska määrän ollessa suurempi kuin yksi työvaiheessa on oltava käytettävissä useampi kuin yksi resurssi.
+Jos työvaiheelle tarvittavien resurssien määräksi on määritetty suurempi kuin yksi, tulos on käytännössä sama kuin käytettäessä ensisijaisia/toissijaisia työvaiheita, koska moduuliin lähetetään useita samanaikaisia töitä. Tässä tapauksessa ei kuitenkaan ole mahdollista käyttää tietyn resurssin määrityksiä, koska määrän ollessa suurempi kuin yksi työvaiheessa on oltava käytettävissä useampi kuin yksi resurssi.
+
+Toissijainen työvaihe, jonka resurssikuormituksen määrä on suurempi kuin yksi, tarkoittaa, että jokaiselle ensisijaisen työvaiheen resurssille tarvitaan määritetty määrä toissijaisia resursseja. Jos ensisijaisen työvaiheen resurssien määrä on esimerkiksi kaksi ja toissijaisen työvaiheen resurssien määrä on kolme, toissijaiselle työvaiheelle tarvitaan yhteensä kuusi resurssia.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Liiallinen rajallisen kapasiteetin käyttö
 

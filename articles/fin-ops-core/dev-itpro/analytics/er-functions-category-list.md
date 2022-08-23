@@ -1,25 +1,25 @@
 ---
 title: Luettelo ER-funktioista luetteloluokassa
 description: Tässä artikkelissa on tietoja sähköisen raportoinnin (ER) tukemista luettelofunktioista.
-author: NickSelin
+author: kfend
 ms.date: 04/01/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 6c28445f731393857cdb0c75c1244e557b5ff4a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869052"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277689"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Luettelo ER-funktioista luetteloluokassa
 
@@ -47,6 +47,7 @@ Sähköisen raportoinnin (ER) luettelofunktioiden avulla voidaan poimia tietoja 
 | [ListOfFields](er-functions-list-listoffields.md)         | Tämä funktio palauttaa *Tietueluettelon* arvon, joka luodaan *luettelointi*- tai *säilö (tietue)* -tyypin määritetyn argumentin rakenteen perusteella. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Tämä funktio palauttaa uuden *Tietueluettelon* arvon, joka koostuu vain määritetyn luettelon ensimmäisestä tietueesta.|
 | [OrderBy](er-functions-list-orderby.md)                   | Tämä funktio palauttaa määritetyn luettelon *Tietueluettelon* arvoksi sen jälkeen, kun se on lajiteltu määritettyjen argumenttien mukaan. Nämä argumentit voivaan määrittää lausekkeina. |
+| [Toista](er-functions-list-repeat.md)                     | Tämä toiminto muodostaa tietueen, jonka sisältämän kentän arvo vastaa määritettyä syötettä. Sen jälkeen se palauttaa tietueen uuden *tietueluettelon*, joka toistetaan määritetyn määrän kertoja. |
 | [Käänteinen](er-functions-list-reverse.md)                   | Tämä funktio palauttaa määritetyn luettelon *Tietueluettelon* arvoksi käänteisen lajittelujärjestyksen. |
 | [Jako](er-functions-list-split.md)                       | Tämä funktio jakaa määritetyn syötemerkkijonon arvon alimerkkijonoiksi ja palauttaa tuloksen uudeksi *Tietueluettelon* arvoksi. |
 | [SplitList](er-functions-list-splitlist.md)               | Tämä funktio jakaa määritetyn luettelon aliluetteloiksi (tai eriksi), joissa on tietty määrä tietueita. Sitten se palauttaa tuloksen uutena *Tietueluettelon* arvona, joka koostuu eristä. |

@@ -2,7 +2,7 @@
 title: Tallennetut näkymät
 description: Tässä artikkelissa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125147"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220329"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -46,7 +46,12 @@ Kun näkymät on määritetty käytettäviksi ympäristössä, kaikkien näkymi�
 Näkymän valitsimessa on kaksi kokovaihtoehtoa: 
 
 - **Suuret näkymävalitsimet** – Sivuilla, jotka ovat näkyvästi esillä luettelossa on suurempi näkymävalitsin muutamista syistä. Mikä tärkeintä, suuremman näkymän valitsin ilmaisee sivut, joilla näkymässä voi olla käyttäjän määrittämiä suodattimia ja lajitteluita. Koska suodattimet ja lajittelut sisältyvät näkymään, suuremman valitsimen koko on myös oikeutettu, koska näkymien nimet ovat usein paras kuvaus näytössä näytettyjen tietojen kuvauksessa, ja oletuksena on, että käyttäjät vaihtavat näkymää useammin näillä sivutyypeillä. Ryhmitys ruudukossa voidaan myös tallentaa sivun näkymiin suuren näkymän valitsimien avulla. 
+    
+    [![Suuren näkymän valitsin, joka tukee kyselyiden muutoksia näkymässä.](./media/views-largeViewSelector.png)](./media/views-largeViewSelector.png)
+
 - **Pienet näkymävalitsimet** – Kaikilla muilla koko näytön sivuilla (paitsi työtiloissa ja koontinäytöissä) on pienempi näyttövalitsin, joka näkyy sivun otsikon vieressä. Näillä sivuilla olevat näkymät sisältävät vain mukautukset, eivät käyttäjän määrittämiä suodattimia. Näillä sivuilla otsikko tai tietueen otsikko on usein tärkein tieto sivun yläosassa. Näkymävalitsimen pienempi koko kuvaa myös näiden sivujen odotettua pienempää näyttökertojen määrää. 
+    
+    [![Pienen näkymän valitsin, joka ei tue kyselyiden muutoksia näkymässä.](./media/views-smallViewSelector.png)](./media/views-smallViewSelector.png)
  
 Jos valitset näkymän nimen, näyttöön tulee valintaikkunanäkymä, jossa näkyy käytettävissä olevien näkymien luettelo.
 
@@ -64,6 +69,8 @@ Jos haluat siirtyä toiseen näkymään, avaa ensin näkymävalitsin ja valitse 
 Toisin kuin perinteisen mukautuksen näkymät, näitä ei tallenneta automaattisesti käyttäjän mukauttaessa sivua tai käyttäjän kohdistaessa luetteloon suodattimen tai lajitellessa suodatinta. Muutosten tallentaminen näkymään edellyttää täsmällistä toimenpidettä. Tämän vaatimuksen avulla käyttäjät voivat joustavasti luoda näkymän ennen muutosten liittämistä näkymään tai sen jälkeen. Tämä varmistaa myös sen, että kertasuodattimet tai mukautukset eivät vahingossa muuta näkymän määrityksiä. Huomaa, että tyypillisen sivun käytön nimikkeet (esimerkiksi sarakkeiden leveydet tai osien laajennettu tai tiivistetty tila) tallennetaan automaattisesti nykyiseen näkymään, myös lukituissa näkymissä.
 
 Tarkista, että nykyisen näkymän nimen vieressä on tähti (\*). Näin voit varmistaa, että näkymän nykyinen tila on tiedossa, kun aloitat näkymän muuttamisen mukauttamalla tai suodattamalla. Tämä symboli osoittaa, että näkymä on tallentamaton ja muokattu versio.
+
+[![Näkymässä on tallentamattomia muutoksia.](./media/views-unsavedChanges.png)](./media/views-unsavedChanges.png)
 
 Jos haluat tallentaa muutokset, toimi seuraavasti.
 
@@ -140,7 +147,7 @@ Julkaise näkymä seuraavien ohjeiden avulla:
     > [!NOTE]
     > Seuraava toiminta on otettava huomioon, kun näkymä julkaistaan oletusnäkymänä:
     >
-    > - Jos näkymä julkaistaan joidenkin tai kaikkien yritysten oletusnäkymänä, toiminta on seuraavanlaista:
+    > - Jos näkymä julkaistaan joidenkin tai kaikkien yritysten oletusnäkymänä, tapahtuu näin:
     >
     >    - Jos vain **Tallennetut näkymät** -perusominaisuus otetaan käyttöön, jokaiselle kohdennetulle käyttäjälle vaihdetaan yksi, yleinen oletusnäkymä. 
     >    - **Versio 10.0.21 tai uudempi:** jos **Tallennettujen näkymien parannettu yritystuki** -ominaisuus otetaan käyttöön ja näkymä julkaistaan yritysten alijoukolle, kyseisten yritysten oletusnäkymä muuttuu jokaisen kohdennetun käyttäjän osalta.
@@ -184,7 +191,7 @@ Jos julkaistuun näkymään tehdyt muutokset edellyttävät näkymään liittyvi
 
 Omien näkymien hallinnan tapaan **Omien näkymien hallinta** -valintaikkunan avulla käyttäjät, joilla on julkaisuoikeudet, voivat käyttää tämän sivun julkaistuja näkymiä (omien henkilökohtaisten näkymien lisäksi). Avaa tämä sivu valitsemalla näkymän nimeä, jolloin näkyviin tulee avattava valikko. Valitse **Lisää** ja valitse sitten **Omien näkymien hallinta**.
 
-Vaikka kaikilla käyttäjillä on **Omat näkymät** -välilehti, jossa näkyvät omat näkymät, julkaisuoikeudet omaavilla käyttäjillä on myös **Organisaationäkymät**-välilehti. Se sisältää kyseisen sivun kaikki julkaistut ja julkaisemattomat näkymät. Koska useat käyttäjät voivat julkaista näkymiä, on tärkeää pystyä hallitsemaan täydellistä luetteloa julkaistuista näkymistä riippumatta siitä, kuka on julkaissut näkymän.
+Vaikka kaikilla käyttäjillä on **Omat näkymät** -välilehti, joka näyttää heidän omat näkymänsä, julkaisuoikeudet omaavilla käyttäjillä on myös **Organisaationäkymät**-välilehti. Se sisältää kyseisen sivun kaikki julkaistut ja julkaisemattomat näkymät. Koska useat käyttäjät voivat julkaista näkymiä, on tärkeää pystyä hallitsemaan täydellistä luetteloa julkaistuista näkymistä riippumatta siitä, kuka on julkaissut näkymän.
 
 Luetteloon sivun kaikista julkaistuista näkymistä on käytettävissä seuraavat toiminnot. 
 
@@ -225,7 +232,7 @@ Kun näkymät ovat käytössä, käyttäjän ja lomakkeen aiemmat mukautukset ta
 
 ### <a name="what-pages-support-views"></a>Mitkä sivut tukevat näkymiä? 
 
-Näkymiä voi käyttää useimmilla, mutta ei kaikilla sivuilla. Näkymät ovat tällä hetkellä käytettävissä kaikilla koko näytön sivuilla lukuun ottamatta koontinäyttöjä ja työtiloja. Muut kuin kokonäytön sivut, joihin sisältyvät valintaikkunat, avattavat dialogit, haut ja parannetut esikatselut, eivät tue näkymiä. Lisäsivutyyppien, kuten työtilojen ja valintaikkunoiden, tuen tarkasteleminen voidaan ottaa huomioon tulevassa päivityksessä.
+Näkymiä voi käyttää useimmilla, mutta ei kaikilla sivuilla. Näkymät ovat tällä hetkellä käytettävissä kaikilla koko näytön sivuilla, lukuun ottamatta koontinäyttöjä. Työtilojen näkymien tuki on käytettävissä **Tallennettujen näkymien tuki työtiloille** -ominaisuuden avulla. Useimmat ei-koko näytön sivut, joihin sisältyvät valintaikkunat, haut ja parannetut esikatselut, eivät tue näkymiä tällä hetkellä. Valintaikkunoiden näkymien tuki on käytettävissä **Tallennettujen näkymien tuki dialogeille** -ominaisuuden avulla.
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kuka saa julkaista näkymiä?
 

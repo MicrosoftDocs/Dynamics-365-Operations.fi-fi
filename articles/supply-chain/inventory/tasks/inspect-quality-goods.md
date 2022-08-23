@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b881f9c6f872061864d4254ce880d981ca71c479
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857573"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219031"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Tarkista tavaroiden laatu
 
@@ -27,7 +27,7 @@ ms.locfileid: "8857573"
 
 Tässä artikkelissa kerrotaan, kuinka laatutilauksia käsitellään. Laatuassistentti suorittaa yleensä laatutarkastukset.
 
-Jos vakioesittely on asennettu, voit suorittaa sen avulla tässä artikkelissa olevat toimenpiteet. Valitse *USMF*-yritys ennen kuin aloitat, jotta voit käyttää esittelytietoja. Sen jälkeen on vahvistettava ostotilaus *000016* ja kirjattava tuotteen vastaanotto. Laatutilaus luodaan automaattisesti.
+Jos vakio[esittelytiedot](../../../fin-ops-core/fin-ops/get-started/demo-data.md) on asennettu, voit suorittaa sen avulla tässä artikkelissa olevat toimenpiteet. Valitse *USMF*-yritys ennen kuin aloitat, jotta voit käyttää esittelytietoja. Sen jälkeen on vahvistettava ostotilaus *000016* ja kirjattava tuotteen vastaanotto. Laatutilaus luodaan automaattisesti.
 
 ## <a name="step-1-select-a-quality-order"></a>Vaihe 1: Valitse laatutilaus
 

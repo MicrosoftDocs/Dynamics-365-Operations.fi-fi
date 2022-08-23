@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a8c088f8726573e4b1fcad1944676547391a9bf
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860345"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219625"
 ---
 # <a name="configure-wave-processing-example"></a>Aaltokäsittelyn konfiguroinnin esimerkki
 
@@ -29,7 +29,7 @@ Tässä artikkelissa kuvataan esimerkki ehdoista, jotka määrittävät mitä t�
 
 ## <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 
-Tämän skenaarion käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-demotiedot on asennettu. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
+Tämän skenaarion käyttäminen tässä määritettyjen mallitietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakio-[demotiedot](../../../fin-ops-core/fin-ops/get-started/demo-data.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
 
 ## <a name="example-scenario-configure-wave-processing"></a>Esimerkkiskenaario: aaltokäsittelyn konfigurointi
 

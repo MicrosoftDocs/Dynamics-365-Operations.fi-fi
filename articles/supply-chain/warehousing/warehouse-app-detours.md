@@ -4,19 +4,19 @@ description: Tässä artikkelissa kuvataan, miten voidaan määrittää kiertote
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863589"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219001"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
 
@@ -34,20 +34,8 @@ Kiertotie on erillinen valikkokohde, joka voidaan avata päätehtävän vaiheest
 Ennen kuin voit määrittää mobiililaitteiden valikkokohteiden vaiheiden kiertoteitä, sinun suoritettava seuraava menettely, jolla otetaan käyttöön tarvittavat ominaisuudet ja luodaan tarvittavat kenttänimet Warehouse Management -mobiilisovelluksessa.
 
 1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
-1. Ota [**Ominaisuuksien hallinta** -työtilassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) luetteloitu ominaisuus käyttöön seuraavalla tavalla:
-
-    - **Moduuli:** *Varastonhallinta*
-    - **Toiminnon nimi:** *Varastosovelluksen vaiheohjeet*
-
-    Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md). Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen kiertotiet* -ominaisuudelle.
-
-1. Ota luetteloitu toiminto käyttöön seuraavasti:
-
-    - **Moduuli:** *Varastonhallinta*
-    - **Ominaisuuden nimi:** *Warehouse Management -sovelluksen kiertotiet*
-
-    Tämä ominaisuus kuvataan tässä artikkelissa.
-
+1. Varmista, että *Varastosovelluksen vaiheohjeet* -ominaisuus on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md). Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen kiertotiet* -ominaisuudelle.
+1. Ota *Warehouse Management -sovelluksen kiertotiet* -ominaisuus käyttöön. Tämä ominaisuus kuvataan tässä artikkelissa.
 1. Päivitä Warehouse Management -mobiilisovelluksen kenttänimet siirtymällä kohtaan **Varastonhallinta \> Määritys \> Mobiililaite \> Varastosovelluksen kenttänimet** ja valitsemalla **Luo oletusmääritys**. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
 1. Toista edellinen vaihe kullekin yritykselle, jossa käytät Warehouse Management -mobiilisovellusta.
 
@@ -65,7 +53,7 @@ Tässä skenaariossa esitetään, miten sijaintikysely määritetään kiertotie
 
 ### <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 
-Jotta voit käyttää tämän skenaarion läpi käymisessä tarvittavia mallitietueita ja -arvoja, sinun on käytettävä järjestelmää, johon on asennettu vakio-demotiedot. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
+Jos haluat suorittaa tämän skenaarion käyttämällä määritettyjä esimerkkitietueita ja -arvoja, sinun täytyy käyttää järjestelmää, johon vakiomuotoiset [demotiedot](../../fin-ops-core/fin-ops/get-started/demo-data.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Valikkokohteisen ohituksen luominen ja skenaarion 1 kiertotien määrittäminen
 
@@ -118,7 +106,7 @@ Voit korvata sijaintikyselyn tarvittaessa rekisterikilpikyselyllä tai nimikekys
 
 ### <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 
-Jotta voit käyttää tämän skenaarion läpi käymisessä tarvittavia mallitietueita ja -arvoja, sinun on käytettävä järjestelmää, johon on asennettu vakio-demotiedot. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
+Jos haluat suorittaa tämän skenaarion käyttämällä määritettyjä esimerkkitietueita ja -arvoja, sinun täytyy käyttää järjestelmää, johon vakiomuotoiset [demotiedot](../../fin-ops-core/fin-ops/get-started/demo-data.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Valikkokohteisen ohituksen luominen ja skenaarion 2 kiertotien määrittäminen
 

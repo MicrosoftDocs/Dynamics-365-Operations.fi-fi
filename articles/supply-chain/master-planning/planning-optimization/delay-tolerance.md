@@ -10,28 +10,35 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4bd6042f9dd33ba15773b251911e965cb870c5aa
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865118"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219964"
 ---
 # <a name="delay-tolerance-negative-days"></a>Viivetoleranssi (negatiiviset päivät)
 
 [!include [banner](../../includes/banner.md)]
 
-Viivetoleranssitoiminnon ansiosta suunnittelun optimointi voi ottaa huomioon kattavuusryhmille määritetyn **negatiivisten päivien** arvon. Sitä käytetään pääsuunnittelussa käytetyn viivetoleranssikauden pidennykseen. Näin voidaan välttää uusien toimitustilausten luominen, jos olemassa oleva toimitus voi kattaa kysynnän lyhyen viiveen jälkeen. Toiminnon tarkoitus on määrittää, onko tarpeen luoda uusi toimitustilaus annettua kysyntää varten.
+Viivetoleranssitoiminnon ansiosta suunnittelun optimointi voi ottaa huomioon kattavuusryhmille, nimikkeen kattavuudelle ja/tai pääsuunnitelmille määritetyn **negatiivisten päivien** arvon. Sitä käytetään pääsuunnittelussa käytetyn viivetoleranssikauden pidennykseen. Näin voidaan välttää uusien toimitustilausten luominen, jos olemassa oleva toimitus voi kattaa kysynnän lyhyen viiveen jälkeen. Toiminnon tarkoitus on määrittää, onko tarpeen luoda uusi toimitustilaus annettua kysyntää varten.
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Toiminnon ottaminen käyttöön järjestelmässä
 
-Voit ottaa viivetoleranssin toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunnittelun optimoinnin negatiiviset päivät* -ominaisuuden käyttöön.
+Voit ottaa viivetoleranssin toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla käyttöön seuraavat ominaisuudet:
+
+- *Negatiiviset päivät suunnittelun optimoinnissa* – Tämä ominaisuus ottaa käyttöön kattavuusryhmien ja nimikkeiden kattavuuden negatiiviset päivät.
+- *Tilauksesta valmistukseen -tarjonnan automatisointi* – Tämä ominaisuus ottaa käyttöön pääsuunnitelmien negatiiviset päivät. (Lisätietoja on kohdassa [Tilauksesta valmistukseen -tarjonnan automatisointi](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Suunnittelun optimoinnin viivetoleranssi
 
 Viivetoleranssi tarkoittaa läpimenoajan ylittävän päivien määrää, jonka olet valmis odottamaan ennen uuden täydennyksen tilaamista, kun olemassa oleva toimitus on jo suunniteltu. Viivetoleranssi määritetään käyttämällä kalenteripäiviä, ei työpäiviä.
 
-Kun pääsuunnittelun aikana järjestelmä laskee viivetoleranssin, se ottaa huomioon **negatiivisten päivien** asetuksen. Voit määrittää **Negatiiviset päivät** -arvon joko **Kattavuusryhmät**- tai **Nimikkeen kattavuus** -sivuilla.
+Kun pääsuunnittelun aikana järjestelmä laskee viivetoleranssin, se ottaa huomioon **negatiivisten päivien** asetuksen. Voit määrittää **Negatiiviset päivät** -arvon **Kattavuusryhmät**,- **Nimikkeen kattavuus** tai **Pääsuunnitelmat**-sivuilla. Jos negatiiviset päivät on määritetty useammalla kuin yhdellä tasolla, järjestelmä määrittää käytettävän asetuksen seuraavan hierarkian mukaan:
+
+- Jos **Pääsuunnitelmat**-sivulla on otettu käyttöön negatiivisia päiviä, kyseinen asetus ohittaa kaikki muut negatiivisten päivien asetukset, kun suunnitelma suoritetaan.
+- Jos negatiiviset päivät on määritetty **Nimikkeen kattavuus** -sivulla, kyseinen asetus korvaa kattavuusryhmän asetuksen.
+- **Kattavuusryhmät**-sivulla määritetyt negatiiviset päivät ovat voimassa vain, jos asiaankuuluvalle nimikkeelle tai suunnitelmalle ei ole määritetty negatiivisia päiviä.
 
 Järjestelmä linkittää viivetoleranssin laskennan *aikaisimpaan täydennyspäivämäärään*, joka on sama kuin tämän päivän päivämäärä plus läpimenoaika. Viivetoleranssi lasketaan seuraavan kaavan avulla, jossa *max()* hakee suuremman kahdesta arvosta:
 

@@ -1,20 +1,20 @@
 ---
 title: Italian intrastat
 description: Tässä artikkelissa on tietoja Intrastat-raportoinnista Italiassa.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9e687a0353ff3bece8d6830bca9304ebb7fadc2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874360"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9267695"
 ---
 # <a name="italian-intrastat"></a>Italian Intrastat
 

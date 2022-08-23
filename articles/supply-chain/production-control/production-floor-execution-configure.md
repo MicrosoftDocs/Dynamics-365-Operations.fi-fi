@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167758"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220359"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -87,29 +87,23 @@ Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistett
 
 ### <a name="enable-registering-of-material-consumption"></a>Ota käyttöön materiaalikulutuksen rekisteröinti
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Joillekin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen materiaalien jäljitettävyyden.
 
 Tästä ominaisuudesta on kaksi versiota. Yksi toiminto tukee vain nimikkeitä, joissa *ei ole* otettu käyttöön varastonhallintaprosesseja (WMS). Toinen tukee nimikkeitä, jotka *on* otettu käyttöön käyttämään WMS:ää. Voit käyttää tätä toimintoa ottamalla käyttöön seuraavat ominaisuudet [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (tässä järjestyksessä) yhdellä tai molemmilla toiminnoilla sen mukaan, onko käytössä WMS-nimikkeitä:
 
 - *Rekisteröi materiaalinkulutus tuotannon käyttöliittymässä (muu kuin WMS)*
-- *(Esiversio) Rekisteröi materiaalikulutus tuotannon käyttöliittymässä (käytössä WMS:ssä)*
+- *Rekisteröi materiaalikulutus tuotannon käyttöliittymässä (käytössä WMS:ssä)*
 
 > [!IMPORTANT]
 > Voit käyttää ei-WMS-toimintoa erikseen. Jos kuitenkin käytät WMS:ää, molemmat toiminnot on otettava käyttöön.
 
 ### <a name="enable-reporting-on-catch-weight-items"></a>Todellisen painon nimikkeiden raportoinnin ottaminen käyttöön
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Työntekijät voivat käyttää tuotannon suoritusliittymää todellisen painon nimikkeiden erätilausten edistymisen raportointiin. Erätilaukset luodaan kaavojen perusteella, ja nämä kaavat voidaan määritellä siten, että niissä on todellisen painon nimikkeet kaavanimikkeinä, oheistuotteina ja sivutuotteina. Kaavan voi määrittää myös, jos kaavarivit on määritetty todellisen painon ainesosille. Todellisen painon nimikkeissä käytetään kahta mittayksikköä varaston seuraamiseksi: todellisen painon määrä ja varastomäärä. Esimerkiksi elintarviketeollisuudessa laatikollinen lihaa voidaan määrittää todellisen painon nimikkeeksi, jossa todellisen painon määrää käytetään laatikoiden määrän seuraamiseen, ja varastomäärää käytetään laatikoiden painon seuraamiseen.
 
 Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Esiversio) Todellisen painon nimikkeiden raportointi tuotannon käyttöliittymästä*
+- *Todellisen painon nimikkeiden raportointi tuotannon käyttöliittymästä*
 
 ### <a name="enable-the-my-day-dialog"></a>Päivän tehtävät -valintaikkunan ottaminen käyttöön
 

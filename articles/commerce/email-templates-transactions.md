@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910547"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279565"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tapahtuman tapahtumien sähköpostimallien luominen
 
@@ -117,7 +117,29 @@ Lisätietoja lahjakorteista: [Sähköisen kaupankäynnin digitaaliset lahjakorti
 
 ### <a name="customer-created"></a>Asiakas on luotu
 
-*Asiakas luotu* -ilmoitustyyppi käynnistyy, kun Commerce-pääkonttorisovelluksessa luodaan uusi asiakasyksikkö.
+*Asiakas luotu* -ilmoitustyyppi käynnistyy, kun Commerce-pääkonttorisovelluksessa luodaan uusi asiakasyksikkö. 
+
+Voit ottaa asiakkaan luomat ilmoitukset Commerce headquarters -sovelluksessa kohdassa **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Commerce-parametrit \> Yleinen**. Valitse avattavasta **Sähköposti-ilmoitusprofiili**-luettelosta sähköposti-ilmoitusprofiili, joka sisältää asiakkaan luoman ilmoitustyypin. 
+
+Oletusarvon mukaan asiakkaan luomat tapahtumat ladataan pääkonttoriin **Synkronoi asiakkaat ja kanavapyynnöt** -erätyön kanssa. Jos haluat lähettää nämä tapahtumat reaaliaikaisen palvelukutsun avulla, määritä asiakkaan luoman mallin sähköpostitunnukseksi **newCust**. Tätä ei kuitenkaan suositella, koska reaaliaikaiset palvelukutsut ovat "fire and forget" -kutsuja, eikä niissä ole erätöiden kaltaista ole varmistus- tai uudelleenyrityslogiikkaa.
+
+> [!NOTE] 
+> Kun otat käyttöön asiakkaan luomat ilmoitukset, asiakkaille, jotka luodaan yrityksen kaikissa kanavissa, lähetetään asiakkaan luoma sähköposti. Asiakkaan luomat ilmoitukset eivät tällä hetkellä rajoitu yhteen kanavaan.  
+
+Kun toiminto käynnistetään erätyön kautta, asiakkaan luoma ilmoitustyyppi tukee seuraavaa paikkamerkkiä.
+
+| Paikkamerkin nimi | Kuvaus                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | Tilin luoneen asiakkaan etu- ja sukunimi. |
+
+Kun toiminto käynnistetään reaaliaikaisen palvelukutsun kautta, asiakkaan luoma ilmoitustyyppi tukee seuraavia paikkamerkkejä.
+
+| Paikkamerkin nimi | Kuvaus                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Nimi             | Tilin luoneen asiakkaan etu- ja sukunimi. |
+| Sähköpostiosoite            | Tilin luoneen asiakkaan sähköpostiosoite.    |
+| Puhelinnumero            | Tilin luoneen asiakkaan puhelinnumero.      |
+| URL-osoite              | Asiakkaan tilin luomisen yhteydessä toimittama URL-osoite. |
 
 ### <a name="b2b-prospect-approved"></a>B2B-prospekti hyväksytty
 

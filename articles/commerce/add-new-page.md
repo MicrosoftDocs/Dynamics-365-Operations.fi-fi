@@ -1,25 +1,25 @@
 ---
 title: Uuden sivuston sivun lisääminen
 description: Tässä artikkelissa kerrotaan, miten uusi sivu lisätään Microsoft Dynamics 365 Commerce -sovelluksessa.
-author: psimolin
+author: josaw1
 ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 76fc3f52746943d5cbf1cb31e677344a1d14bee3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: f6714463c9d5dc844b03f78f0f6ff60c5f270da3
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871725"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270315"
 ---
 # <a name="add-a-new-site-page"></a>Uuden sivuston sivun lisääminen
 

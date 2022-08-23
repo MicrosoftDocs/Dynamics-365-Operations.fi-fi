@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 87be947c829641ba809e6850ccf41ea6d142161d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687104"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228957"
 ---
 # <a name="plan-type-overview"></a>Suunnitelman tyypin yleiskatsaus
 
@@ -27,6 +27,8 @@ ms.locfileid: "8687104"
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Suunnitelmatyyppi on tietynlaisten etuuksien ylätason ryhmittely. Kullakin suunnitelmatyypillä on suunnitelmatyypin koodi, joka määrittää suunnitelmatyypin säännöt. Erimerkiksi palvelupakettityypillä **Perushenkivakuutus** on **Henkivakuutus**-palvelupakettityypin koodi, koska se on henkivakuutuspalvelupaketin tyyppiä ja sen on noudatettava sääntöjä, jotka on määritetty **Henkivakuutus**-palvelupaketin tyyppikoodille. Toinen palvelupakettityyppi voi olla **Lisähenkivakuutus**. Tällä palvelupakettityypillä on myös **Henkivakuutus**-palvelupaketin tyyppikoodi.
 
@@ -67,12 +69,12 @@ Suunnitelmatyyppi voi määrittää kattavuusasetukset. Kattavuusasetukset mää
    | --- | --- |
    | **Suunnitelman tyyppi** | Suunnitelmatyyppi, jonka avulla elinkaaritapahtumavaihtoehdot määritetään. |
    | **Elinkaaritapahtuman tyypin tunnus** | Elinkaaritapahtumatyypin tunnus. |
-   | **Salli peruutus** | Määrittää, voiko työntekijä peruuttaa etuussuunnitelman elinkaaritapahtuman aikana. |
    | **Vaihda kattavuusvaihtoehtoa** | Määrittää, voiko työntekijä muuttaa kattavuusasetukset elinkaaritapahtuman aikana. |
    | **Vaihda uuteen suunnitelmaan** | Määrittää, voiko työntekijä muuttaa suunnitelmia elinkaaritapahtuman aikana. |
-   | **Peruuta suunnitelma automaattisesti** | Määrittää, peruutetaanko suunnitelma automaattisesti elinkaaritapahtuman aikana. |
    | **Avaa kelpoisuuden tarkistus automaattisesti uudelleen** | Määrittää, avataanko etujen rekisteröintikelpoisuuden tarkistus automaattisesti uudelleen elinkaaritapahtuman aikana. |
-   | **Raportointi-ikkuna** | Määrittää elinkaaritapahtuman raportointi-ikkunan päivinä. **Huomautus**: Jos et syötä määrää, järjestelmä olettaa raportointi-ikkunan olevan nolla eikä käsittele elinkaaritapahtumaa. |
+   | **Elinkaaritapahtuman rekisteröintikausi** | Määrittää elinkaaritapahtuman raportointi-ikkunan päivinä. **Huomautus**: Jos et syötä määrää, järjestelmä olettaa raportointi-ikkunan olevan nolla eikä käsittele elinkaaritapahtumaa. |
+   | **Vain järjestelmänvalvojien muokattavissa** | Määrittää, voivatko järjestelmänvalvojat peruuttaa tai muokata suunnitelmaa elinkaaritapahtuman aikana. Työntekijä ei voi tehdä muutoksia **Työntekijän itsepalvelu** -työtilassa. |
+   | **Peruuta suunnitelma automaattisesti** | Määrittää, peruutetaanko suunnitelma automaattisesti elinkaaritapahtuman aikana. Kun elinkaaritapahtumaan tehdyt muutokset on käsitelty, **Peruuta suunnitelma automaattisesti** -vaihtoehto säilyttää suunnitelman valinnan. Vain **Vahvistettu**- tai **Kuitattu ulos** -tila poistetaan. Suunnitelma pysyy valittuna. Siksi työntekijät, jotka eivät tee suunnitelman valintoja elinkaaritapahtuman rekisteröintijakson aikana, eivät menetä suunnitelman valintaa. 
 
 5. Valitse **Tallenna**. 
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ebea86e5ea63ab4f5a844cd3d0936c0d65bbe2b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905483"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220239"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Eri dimensioiden määrittäminen pakkausta ja varastointia varten
 
@@ -50,7 +50,7 @@ Ennen esimerkkiskenaarion suorittamista järjestelmä on valmisteltava tässä o
 
 #### <a name="enable-demo-data"></a>Esittelytietojen ottaminen käyttöön
 
-Tämän skenaarion käyttäminen tässä määritettyjen esittelytietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakiomuotoiset [esittelytiedot](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) on asennettu. Sinun on myös valittava *USMF*-yritys ennen kuin aloitat.
+Tämän skenaarion käyttäminen tässä määritettyjen esittelytietojen ja -arvojen avulla edellyttää, että käytössä on järjestelmä, johon vakiomuotoiset [esittelytiedot](../../fin-ops-core/fin-ops/get-started/demo-data.md) on asennettu. Sinun on myös valittava *USMF*-yritys ennen kuin aloitat.
 
 #### <a name="add-a-new-physical-dimension-to-a-product"></a>Uuden fyysisen dimension lisääminen tuotteeseen
 

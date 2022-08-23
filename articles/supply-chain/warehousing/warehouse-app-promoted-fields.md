@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857051"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218971"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Korotettujen kenttien määrittäminen Warehouse Managementin mobiilisovelluksen vaiheita varten
 
@@ -32,13 +32,7 @@ Tässä artikkelissa kuvataan, miten korotetaan ja korostetaan tiettyjä tietoja
 Ennen kuin voit määrittää korotettuja kenttiä, sinun suoritettava seuraava menettely, jolla otetaan käyttöön tarvittavat ominaisuudet ja luodaan tarvittavat kenttänimet Warehouse Managementin mobiilisovelluksessa.
 
 1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
-1. Ota [**Ominaisuuksien hallinta** -työtilassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) luetteloitu ominaisuus käyttöön seuraavalla tavalla:
-
-    - **Moduuli:** *Varastonhallinta*
-    - **Toiminnon nimi:** *Varastosovelluksen vaiheohjeet*
-
-    Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md). Tämä ominaisuus on edellytys *Varastosovelluksen korotetut kentät* -ominaisuudelle.
-
+1. Varmista, että *Varastosovelluksen vaiheohjeet* -ominaisuus on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md). Tämä ominaisuus on edellytys *Varastosovelluksen korotetut kentät* -ominaisuudelle.
 1. Ota luetteloitu toiminto käyttöön seuraavasti:
 
     - **Moduuli:** *Varastonhallinta*
@@ -67,7 +61,7 @@ Seuraavien ohjeiden avulla voit määrittää korottuja kenttiä.
 
 ### <a name="enable-sample-data"></a>Mallitietojen ottaminen käyttöön
 
-Jotta voit käyttää tämän skenaarion läpi käymisessä tarvittavia mallitietueita ja -arvoja, sinun on käytettävä järjestelmää, johon on asennettu vakio-demotiedot. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
+Jos haluat suorittaa tämän skenaarion käyttämällä määritettyjä esimerkkitietueita ja -arvoja, sinun täytyy käyttää järjestelmää, johon vakiomuotoiset [demotiedot](../../fin-ops-core/fin-ops/get-started/demo-data.md) on asennettu. Sinun on myös valittava **USMF**-yritys ennen aloittamista.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Myyntikeräilyn määrittäminen korotetuilla vaiheilla rekisterikilpivaiheessa
 

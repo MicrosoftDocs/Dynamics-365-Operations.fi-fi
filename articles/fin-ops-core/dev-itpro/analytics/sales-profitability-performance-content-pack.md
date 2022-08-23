@@ -12,16 +12,15 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom:
-- "260674"
+ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.form: SalesProfitabilityPerformancePowerBI
-ms.openlocfilehash: 2a3e0a46656f54a423a3bdfb05b87e3b7ad68efd
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: 77271ad9f5a1d7c131e1d7750de280f0c70daaa4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9205598"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274656"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Myynnin ja tuottavuuden suorituskyvyn Power BI -sisältö
 
@@ -77,7 +76,7 @@ Kannattavuutta voidaan analysoida seuraavasti:
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 **Myynnin ja tuottavuuden suorituskyvyn** Power BI -sisällön raportissa käytetään seuraavia tietoja. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on kohdassa [Power BI:n ja yksikkösäilön integraatio](power-bi-integration-entity-store.md).
 
-Sisällön koostetut mittaukset ovat alijoukko Microsoft Dynamics AX 2012:n ja Microsoft Dynamics AX 2012 R3:n myyntikuutiossa saatavilla olleista koostetuista mittauksista. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update).
+Tämän sisällön koostetut mittaukset ovat Microsoft Dynamics AX 2012:n ja Microsoft Dynamics AX 2012 R3:n myyntikuutiossa saatavilla olleiden koostettujen mittausten osajoukko. Jotta kuution koostetut mittaukset voi tallentaa yksikkösäilöön, niistä on tehtävä käyttöönottokelpoisia. Lue lisätietoja koostettujen mittausten tallentamisesta yksikkösäilöön blogikirjoituksesta [Power BI -integraatio yksikkösäilöön Dynamicsissa](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update).
 
 Seuraavia tärkeitä koostettuja laskurivi-yksikön rivien mittoja käytetään sisällön perustana.
 
@@ -95,7 +94,7 @@ Seuraavassa taulukossa on esitetty, miten laskurivi-yksikön tärkeitä koostemi
 | Käyttökate      | SUM(Bruttovoitto / (Tuotto – Arvonlisävero (sisältyy asiakkaan laskurivin summaan)))             |
 | Tuotto edellisenä vuonna | Tuotto edellisenä vuonna = CALCULATE(SUM('Invoice lines'\[Revenue\]), SAMEPERIODLASTYEAR(Dates\[Date\]) |
 
-Suodattimina myyntikuutiossa käytetään seuraavia tärkeimpiä dimensioita osittamaan koostemitat, jotta saavutetaan suurempi rakeisuus ja saadaan syvempiä analyyttisiä näkemyksiä.
+Myyntikuutiossa käytetään suodattimina seuraavia tärkeimpiä dimensioita osittamaan koostemitat, jotta saavutetaan suurempi rakeisuus ja saadaan syvempiä analyyttisiä näkemyksiä.
 
 | Kokonaisuus           | Esimerkkejä määritteistä                               |
 |------------------|------------------------------------------------------|
