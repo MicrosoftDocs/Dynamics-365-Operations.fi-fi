@@ -12,6 +12,8 @@
               items:
                 - name: Supply Chain Managementin uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.29 (lokakuu 2022)
+                  href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (elokuu 2022)
                   href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (heinäkuu 2022)
@@ -58,10 +60,12 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/supply-chain
                 - name: Ennen palvelua ja palvelun jälkeen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?context=/dynamics365/context/supply-chain
-                - name: Keskeytä palvelupäivitykset
+                - name: Palvelupäivitysten keskeyttäminen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/supply-chain
-                - name: Vastaanota ilmoituksia palvelupäivityksistä
+                - name: Palvelupäivityksiä koskevien ilmoitusten vastaanottaminen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/supply-chain
+                - name: Ennakoivat laatupäivitykset
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
                 - name: Tietotehtävän automaatio
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
                 - name: Riippumattomien ohjelmistotoimittajien ratkaisujen toimittaminen One Versionin avulla
@@ -330,6 +334,8 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Egyptin sähköisen laskutuksen käytön aloittaminen
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+                        - name: Ranskan sähköisen laskutuksen käytön aloittaminen
+                          href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Meksikon sähköisen laskutuksen käytön aloittaminen
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
                         - name: Saudi-Arabian sähköisen laskutuksen käytön aloittaminen
@@ -1053,9 +1059,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
-                        - name: Käänteinen
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
-                        - name: Jako
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/supply-chain
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/supply-chain
@@ -1763,9 +1771,11 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Tuotannon suunnittelu
                   href: master-planning/planning-optimization/production-planning.md
-                - name: Äärettömän kapasiteetin aikatauluttaminen
+                - name: Rajatun säilyvyysajan tuotteiden pääsuunnittelu
+                  href: master-planning/planning-optimization/shelf-life.md
+                - name: Aikatauluttaminen äärettömällä kapasiteetilla
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
-                - name: Aikataulutus resurssien valinnalla kykyjen perusteella
+                - name: Aikatauluttaminen resurssien valinnalla kykyjen perusteella
                   href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Prioriteettipohjainen suunnittelu
                   href: master-planning/planning-optimization/priority-based-planning.md
@@ -1809,6 +1819,8 @@
                   href: master-planning/planning-optimization/cancel-planning-job.md
                 - name: Toimintosanomat
                   href: master-planning/action-messages.md
+                - name: Myyntitilauksen toimituspäivien laskeminen saatavuudella (CTP)
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Suunnittelun optimoinnin vianmääritys
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Suunnittelun optimoinnin laajennettavuus
@@ -1879,6 +1891,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Nettotarpeet ja tarvekohdistustiedot sisäänrakennetun pääsuunnittelun avulla
                   href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Tilauksesta valmistukseen -tarjonnan automatisointi
+                  href: master-planning/make-to-order-supply-automation.md
             - name: Ennusteet
               items:
                 - name: Kysynnän ja tarjonnan ennusteet
@@ -2467,6 +2481,8 @@
               href: production-control/mixed-mode-plan.md
             - name: Tuotannon alihankintatyön hallinta
               href: production-control/manage-subcontract-work-production.md
+            - name: Tee valmiista tavaroista fyysisesti saatavilla olevia ennen kirjauskansioihin kirjaamista
+              href: production-control/deferred-posting.md
             - name: Työtunnusten yhtenäinen numerosarja
               href: production-control/unified-job-ids.md
             - name: Laadukkaiden tilausten luominen luomalla prosessiautomaatiotyönkulkuja
@@ -2809,6 +2825,8 @@
               items:
                 - name: Luvatut tilaukset
                   href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Myyntitilauksen toimituspäivien laskeminen saatavuudella (CTP)
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
                 - name: Tilaustenkäsittelyn määräajat
                   href: sales-marketing/order-entry-deadlines.md
                 - name: Toimitusvaihtoehdot
@@ -2945,6 +2963,8 @@
               href: sales-marketing/trade-allowance.md
             - name: Uuden kauppasopimuksen luominen
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Rivin nettosummien laskeminen uudelleen tuonnin yhteydessä
+              href: sales-marketing/calc-line-net-amounts-import.md
             - name: Myyntihistorian tietojen tyhjennyksen ajoitus
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Palveluiden hallinta
@@ -3387,8 +3407,10 @@
                       href: warehousing/piece-picking-confirmation.md
                     - name: Pakkausmateriaalit ja maksut
                       href: warehousing/pack-materials-packing-material-fees.md
-                    - name: Manuaalisen pakkaamisen määrittäminen (vain helmikuu ja toukokuu 2016)
-                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Konttien pakkaaminen lähetystä varten
+                      href: warehousing/packing-containers.md
+                    - name: Lähtevien konttien pakkaaminen ja toimitusten käsittely
+                      href: warehousing/packing-work.md
                     - name: Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Varaston työn peruuttaminen poikkeuksien käsittelyä varten
@@ -3545,6 +3567,8 @@
                       href: warehousing/warehouse-app-promoted-fields.md
                     - name: Mobiililaitteen valikkokohteiden vaiheiden kiertämisen määrittäminen
                       href: warehousing/warehouse-app-detours.md
+                    - name: Tietojen kyseleminen Warehouse Management ‑mobiilisovelluksen kiertoteillä
+                      href: warehousing/warehouse-app-data-inquiry.md
                     - name: Rekisterikilven vastaanotto Warehouse Management ‑mobiilisovelluksella
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten

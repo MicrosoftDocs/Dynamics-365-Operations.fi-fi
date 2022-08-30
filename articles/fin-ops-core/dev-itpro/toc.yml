@@ -14,9 +14,11 @@
               items:
                 - name: Käyttöympäristöpäivitysten uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
-                - name: Käyttöympäristöpäivitykset versiolle 10.0.28 (elokuu 2022)
+                - name: Käyttöympäristöpäivitykset versioon 10.0.29 (lokakuu 2022)
+                  href: get-started/whats-new-platform-updates-10-0-29.md
+                - name: Käyttöympäristöpäivitykset versioon 10.0.28 (elokuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-28.md
-                - name: Käyttöympäristöpäivitykset versiolle 10.0.27 (heinäkuu 2022)
+                - name: Käyttöympäristöpäivitykset versioon 10.0.27 (heinäkuu 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
@@ -1090,6 +1092,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Kaksoiskirjoituksen entiteettien yhdistämismäärityksen ottaminen käyttöön
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Viiden minuutin istunnon aikakatkaisuikkunan ottaminen käyttöön kaksoiskirjoitusistunnoille
+                      href: data-entities/dual-write/5-minute-mode.md
                     - name: Erillinen kaksoiskirjoitussovelluksen hallintapaketti
                       href: data-entities/dual-write/separated-solutions.md
                     - name: Valuuttatietotyyppien siirto kaksoiskirjoitusta varten

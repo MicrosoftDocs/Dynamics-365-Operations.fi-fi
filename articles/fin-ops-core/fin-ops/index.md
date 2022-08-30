@@ -1,25 +1,25 @@
 ---
 title: Talous- ja toimintosovellusten dokumentaatio
 description: Talous- ja toimintosovellusten dokumentaatio.
-author: tonyafehr
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DefaultDashboard
 audience: Application User
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f9776038530438ba8d8046b735d95b2a5701594
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.custom: intro-internal
+ms.search.form: DefaultDashboard
+ms.openlocfilehash: 784207d6e7500319e06b8d092e464fb7c5a7180d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067459"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291699"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Talous- ja toimintosovellusten dokumentaatio
 
@@ -57,8 +57,8 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 C
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Päivitysten käyttöönotto pilviympäristöissä</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Määritä palvelupäivitykset</a></p>
-<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Keskeytä palvelupäivitykset</a></p>
-<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Vastaanota ilmoituksia palvelupäivityksistä</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Palvelupäivitysten keskeyttäminen</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Palvelupäivityksiä koskevien ilmoitusten vastaanottaminen</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Tietotehtävän automaatio</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
 

@@ -12,6 +12,8 @@
               items:
                 - name: Commercen uudet ja muuttuneet ominaisuudet -aloitussivu
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (lokakuu 2022)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (heinäkuu 2022)
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (heinäkuu 2022)
@@ -56,10 +58,12 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/commerce
                 - name: Ennen palvelua ja palvelun jälkeen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?context=/dynamics365/context/commerce
-                - name: Keskeytä palvelupäivitykset
+                - name: Palvelupäivitysten keskeyttäminen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
-                - name: Vastaanota ilmoituksia palvelupäivityksistä
+                - name: Palvelupäivityksiä koskevien ilmoitusten vastaanottaminen
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: Ennakoivat laatupäivitykset
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: Tietotehtävän automaatio
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: Riippumattomien ohjelmistotoimittajien ratkaisujen toimittaminen One Versionin avulla
@@ -422,6 +426,8 @@
                       href: hide-non-carrier-modes.md
                     - name: 'MPOS:n ja Cloud POS:in tehtävien tallennustoiminto sekä ohje'
                       href: task-recorder-retail-pos.md
+                    - name: 'CPOS:n määrittäminen käyttämään mukautettua Azure AD -sovellusta'
+                      href: cpos-custom-aad.md
                     - name: Laitteiston oheislaitteet
                       items:
                         - name: Oheislaitteet
@@ -698,8 +704,8 @@
                   href: prevent-discounts.md
                 - name: Maksuvälineeseen perustuvat alennukset
                   href: tender_based_discounts.md
-                - name: Lähetyskulujen alennusten yleiskatsaus
-                  href: retail-shipping-discount.md
+                - name: Lähetyksen alennus
+                  href: shipping-discount.md
                 - name: Lahjan määrittäminen ostokampanjoiden avulla
                   href: gift-with-purchase.md
                 - name: Kuponkien määrittäminen
@@ -714,6 +720,10 @@
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: Tarkan hinnan ja alennuksen laskennan viivytys
                   href: delayed-price-calculation.md
+                - name: Myyntipisteen hinnoittelutoiminnot
+                  href: pos-pricing-functions.md
+                - name: Commercen hinnoittelun ohjelmointirajapinnat
+                  href: pricing-apis.md
             - name: Suositukset
               items:
                 - name: Tuotesuositusten yleiskatsaus
@@ -872,6 +882,8 @@
               href: async-customer-mode.md
             - name: Asynkronisten asiakkaiden muuntaminen synkronisiksi asiakkaiksi
               href: convert-async-to-sync.md
+            - name: Asynkroninen asiakkaan luontitila – usein kysytyt kysymykset
+              href: async-customer-mode-faq.md
             - name: Asiakashallinta
               items:
                 - name: Asiakashallinnan yleiskuvaus
@@ -1252,6 +1264,10 @@
                       href: product-collection-module-overview.md
                     - name: Pikanäkymämoduuli
                       href: quick-view-module.md
+                - name: Tuotevertailumoduulit
+                  items:
+                    - name: Tuotevertailumoduulit
+                      href: product-comparison-modules.md
                 - name: Siirtymismoduulit
                   items:
                     - name: Navigointipolkumoduuli
@@ -1272,6 +1288,10 @@
                   items:
                     - name: Evästeiden hyväksynnän moduuli
                       href: cookie-consent-module.md
+                - name: Keskustelumoduulit
+                  items:
+                    - name: Commercen keskustelumoduuli
+                      href: commerce-chat-module.md
             - name: Haku
               items:
                 - name: Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus
@@ -1404,8 +1424,6 @@
               items:
                 - name: Itävallan tilikausirekisteröintipalvelun integrointimalli
                   href: localizations/emea-aut-fi-sample.md
-                - name: Käyttöönotto-ohjeet Itävallan kassakoneille
-                  href: localizations/emea-aut-deployment.md
                 - name: Itävallan kirjanpidon integrointimallin käyttöönotto-ohjeet (vanha)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasilia
@@ -1502,6 +1520,8 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Kassakoneiden käyttöönotto-ohjeet
                   href: localizations/emea-nor-fi-deployment.md
+                - name: Siirtyminen Norjan vanhoista toiminnoista
+                  href: localizations/emea-nor-fi-migration.md
                 - name: Kassakoneiden käyttöönotto-ohjeet (vanha)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Venäjä
@@ -1764,9 +1784,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
-                        - name: Käänteinen
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
-                        - name: Jako
+                        - name: Split
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?context=/dynamics365/context/commerce
                         - name: SplitList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?context=/dynamics365/context/commerce
@@ -2482,7 +2504,7 @@
               items:
                 - name: 'Commerce SDK:n yleiskatsaus'
                   items:
-                    - name: Näytteet ja viitepaketit
+                    - name: 'Commerce SDK:n näytteiden ja viitepakettien lataaminen'
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: 'Vanhan Retail SDK:n siirto'
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
