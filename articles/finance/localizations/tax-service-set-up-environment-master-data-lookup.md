@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181121"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306200"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Verolaskentamäärityksen päätietojen haun ottaminen käyttöön 
 
@@ -108,7 +108,7 @@ Dataverse kutsuu talous- ja toimintosovelluksia juuri luodun Azure AD -sovelluks
     - **Palvelu** – määritä tämän kentän arvoksi **NonAAD**.
     - **Sähköposti** – Anna **dataverseintegration** tai jokin muu arvo. (Arvon ei tarvitse olla kelvollinen sähköpostitili.)
 
-3. Määritä käyttäjälle **CDS-virtuaaliyksikön sovellus** -käyttöoikeusrooli.
+3. Delegoi käyttäjälle **Dataverse-virtuaalientiteettien integrointisovellus** -käyttöoikeusrooli.
 4. Poista kaikki muut roolit, myös **Järjestelmän käyttäjä**.
 5. Rekisteröi Dataverse valitsemalla **Järjestelmän hallinta** \> **Määritys** \> **Azure Active Directory -sovellukset**. 
 6. Lisää rivi ja anna sitten **Asiakasohjelman tunnus** -kentässä aiemmin muistiin kirjoitettu **Sovelluksen (asiakasohjelman) tunnus** -arvo.
@@ -199,17 +199,11 @@ Lisätietoja: [Microsoft Dataversen virtuaaliyksikköjen käyttöönotto](../../
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a>Verolaskennan yhdistetyn sovelluksen määrittäminen
 
-1. Avaa **Ominaisuuksien hallinta** -työtila RCS:ssä ja ota käyttöön seuraavat ominaisuudet:
-
-    - Sähköisen raportoinnin Dataverse-tietolähteiden tuki
-    - Veropalvelun Dataverse-tietolähteiden tuki
-    - Globalisaatio-ominaisuudet
-
-2. Valitse **Sähköinen raportointi** ja valitse sitten **Liittyvät linkit** -osassa **Yhdistetyt sovellukset**.
+1. Valitse **Sähköinen raportointi** ja valitse sitten **Liittyvät linkit** -osassa **Yhdistetyt sovellukset**.
 
     [![Yhdistetyt sovellukset](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Lisää tietue valitsemalla **Uusi** ja anna seuraavat tiedot.
+2. Lisää tietue valitsemalla **Uusi** ja anna seuraavat tiedot.
 
     - **Nimi** – Syötä nimi.
     - **Tyyppi** – valitse **Dataverse**.
@@ -217,12 +211,18 @@ Lisätietoja: [Microsoft Dataversen virtuaaliyksikköjen käyttöönotto](../../
     - **Vuokraaja** – anna vuokraaja.
     - **Mukautettu URL-osoite** – anna Dataversen URL-osoite ja liitä **/api/data/v9.1** siihen.
 
-4. Valitse **Tarkista yhteys** ja valitse sitten avautuvassa valintaikkunassa **Yhdistä valittuun etäsovellukseen napsauttamalla tätä**.
+3. Valitse **Tarkista yhteys** ja valitse sitten valintaikkunassa **Yhdistä valittuun etäsovellukseen napsauttamalla tätä**.
 
     [![Yhteyden tarkistaminen](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Varmista, että saat onnistumisesta ilmoittavan sanoman, joka ilmaisee, että yhteyden muodostaminen on onnistunut.
+4. Varmista, että saat onnistumisesta ilmoittavan sanoman, joka ilmaisee, että yhteyden muodostaminen on onnistunut.
 
     [![Onnistumissanoma](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. Avaa **Ominaisuuksien hallinta** -työtila RCS:ssä ja ota käyttöön seuraavat ominaisuudet:
+
+    - Globalisaatio-ominaisuudet
+    - Sähköisen raportoinnin Dataverse-tietolähteiden tuki
+    - Veropalvelun Dataverse-tietolähteiden tuki
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a>Dataverse-mallin yhdistämismääritysten tuominen ja määrittäminen
 

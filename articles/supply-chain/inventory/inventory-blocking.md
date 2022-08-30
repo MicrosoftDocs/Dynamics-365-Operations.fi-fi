@@ -2,7 +2,7 @@
 title: Varastoesto
 description: Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857805"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334682"
 ---
 # <a name="inventory-blocking"></a>Varastoesto
 
@@ -96,11 +96,11 @@ Kun **Varaa tilatut nimikkeet** poistetaan käytöstä, odotettuja vastaanottoja
 
 Huomaa ero tapahtuman tilassa ja dimensioissa kahden tapauksen välillä. Tästä syystä on suositeltavaa ottaa käyttöön **Varaa tilatut nimikkeet** -vaihtoehto.
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Poista odotetut vastaanotot käytöstä laatutilauksissa, jotka ottavat näytteitä estetystä varastosta -toiminto
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>Poista odotettujen vastaanottojen käyttö laatutilauksissa, joihin varastot ovat estotilassa
 
 Järjestelmässä on odotetut vastaanotot laatutilauksilta poistava toiminto varastotapahtumien helpottamiseksi sellaisissa tapauksissa, että laatutilaukset ottavat näytteitä varastoista, jotka on estetty varaston tilan perusteella. Koska estetty varastotila estää odotetun vastaanoton välittömästi, tämä muutos ei vaikuta käytettävissä olevaan varastoon.
 
-Oletusarvon mukaan tämä asetus on pois käytöstä. Järjestelmänvalvojat voivat poistaa sen käytöstä hakemalla *Poista odotetut vastaanotot käytöstä laatutilauksissa, jotka ottavat näytteitä estetystä varastosta* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat poistaa tämän toiminnon käytöstä hakemalla *Poista odotetut vastaanotot käytöstä laatutilauksissa, jotka ottavat näytteitä estetystä varastosta* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

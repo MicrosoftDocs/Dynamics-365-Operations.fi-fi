@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9112177"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295925"
 ---
 # <a name="get-started-with-planning-optimization"></a>Suunnittelun optimoinnin aloittaminen
 
@@ -29,7 +29,7 @@ ms.locfileid: "9112177"
 
 Kuten [aiemmin ilmoitettiin](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), suunnittelun optimointi on aikataulutettu korvaamaan nykyinen sisäinen pääsuunnittelumoduuli.
 
-Jos sisäinen pääsuunnittelumoduuli on tällä hetkellä käytössä, suunnittelun optimointiin siirtymisen suunnittelu on syytä aloittaa nyt. Siirtoprosessi on tärkeää aloittaa heti, koska toiminnot voivat häiriintyä, kun vanhentumista ei voi estää. Siirtyminen kannattaa toteuttaa 1. joulukuuta 2020 mennessä, jotta vanhentumisesta aiheutuvat viime hetken ongelmat voidaan välttää. 
+Jos sisäinen pääsuunnittelumoduuli on tällä hetkellä käytössä, suunnittelun optimointiin siirtymisen suunnittelu on syytä aloittaa nyt. On tärkeää aloittaa heti, koska vanheneminen voi muuten vaikuttaa toimintoihin (vaikka vanhenemista ei ole vielä ajoitettu). Siirto kannattaa tehdä heti, kun suunnittelun optimointi tukee tarvitsemiasi toimintoja. Tällöin voit aloittaa useiden suorituskyvyn parannusten hyödyntämisen ja muiden uuden palvelun ominaisuuksien käyttämisen.
 
 Suunnittelun optimointitoiminto ei tällä hetkellä tue kaikki niitä toimintoja, joita on Supply Chain Managementin sisäisessä suunnittelumoduulissa. Tämän vuoksi on tärkeää arvioida, vastaako suunnittelun optimoinnissa tällä hetkellä käytössä oleva toimintojoukko tarpeitasi. Suunnittelun optimointi ei ole tällä hetkellä oletusarvoisesti otettuna käyttöön Dynamics Lifecycle Servicesissä (LCS), joten arvionti on mahdollista tehdä ennen ominaisuuden ottamista käyttöön.
 

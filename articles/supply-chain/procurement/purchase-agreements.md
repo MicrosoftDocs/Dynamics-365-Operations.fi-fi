@@ -2,7 +2,7 @@
 title: Ostosopimukset
 description: Tässä artikkelissa on tietoja ostosopimuksista. Ostosopimus on sopimus, joka velvoittaa organisaation ostamaan tietyn määrän tai tietyllä summalla, käyttämällä useita ostotilauksia jonkin ajanjakson aikana. Vastineeksi tästä sitoumuksesta, ostaja saa erityiset hinnat ja alennukset.
 author: GalynaFedorova
-ms.date: 06/20/2017
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 188a71ec660787b0b942a3d3bf4967b747c4469f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669542"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335882"
 ---
 # <a name="purchase-agreements"></a>Ostosopimukset
 
@@ -41,7 +41,7 @@ Voit estää ostosopimuksen käytön ja vahvistamisen merkitsemällä sopimuksen
 Voit määrittää ensisijaisen vastuullisen työntekijän ja toissijaisen vastuullisen työntekijän ostosopimuksen luokittelussa. Nämä arvot periytyvät tuloksena olevasta ostosopimuksesta. Sinun ei tarvitse lisätä vastuullisia työntekijöitä ostosopimukseen, ja niitä voidaan muokata suoraan tapauskohtaisesti ostosopimuksen perusteella. Et voi määrittää toissijaista vastuutyöntekijää ilman ensisijaista vastuullista työntekijää, vaikka sinulla ei ole toissijaista vastuutyöntekijää. Et voi määrittää samaa työntekijää sekä ensisijaiseksi että toissijaiseksi vastuulliseksi työntekijäksi.
 
 > [!IMPORTANT]
-> Jotta voit käyttää vastuullinen osapuoli -toimintoa, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Ostosopimuksen vastuullinen osapuoli* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+> Jotta voit käyttää vastuullinen osapuoli -toimintoa, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Ostosopimuksen vastuullinen osapuoli* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen rivi ostosopimuksessa velvoittaa ostamaan jotakin. Voit täyttää sitoumuksen käyttämällä useiden ostotilausten rivejä. On neljänlaisia sitoumuksia:

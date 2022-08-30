@@ -2,27 +2,28 @@
 title: Itävallan tilikausirekisteröintipalvelun integroinnin malli
 description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Itävalta).
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 7f4f1d796028330d2d655b1e13d3e36bbef95403
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: da4deb37b260ffa2a68e2a36aef01965cbf098b2
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287562"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313798"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Itävallan tilikausirekisteröintipalvelun integroinnin malli
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Itävalta).
 
-Vaatimuksille, jotka liittyvät kassojen paikallisiin verotusvaatimuksiin Itävallassa, Dynamics 365 Retail -toiminnallisuus Itävallalle sisältää esimerkki-integraation myyntipisteestä ulkoiseen verorekisteröintipalveluun. Esimerkki laajentaa [kirjanpidon integrointitoimintoja](fiscal-integration-for-retail-channel.md). Se perustuu [EFSTA](https://www.efsta.eu/at/)-järjestelmän [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) -ratkaisuun, ja se ottaa yhteyden EFR-palveluun HTTPS-protokollan kautta. EFR-palvelun tulee olla isännöity joko Retail Hardware Stationissa tai erillisellä koneella, johon voidaan yhdistää Hardware Stationilta. Näyte toimitetaan lähdekoodin muodossa, ja se on osa Retail-ohjelmiston kehityssarjaa (SDK).
+Vaatimuksille, jotka liittyvät kassojen paikallisiin verotusvaatimuksiin Itävallassa, Dynamics 365 Retail -toiminnallisuus Itävallalle sisältää esimerkki-integraation myyntipisteestä ulkoiseen verorekisteröintipalveluun. Esimerkki laajentaa [kirjanpidon integrointitoimintoja](fiscal-integration-for-retail-channel.md). Se perustuu [EFSTA](https://www.efsta.eu/at/)-järjestelmän [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) -ratkaisuun, ja se ottaa yhteyden EFR-palveluun HTTPS-protokollan kautta. EFR-palvelun tulee olla isännöity joko Retail Hardware Stationissa tai erillisellä koneella, johon voidaan yhdistää Hardware Stationilta. Näyte toimitetaan lähdekoodin muodossa, ja se on osa Commerce-ohjelmiston kehityssarjaa (SDK).
 
 Microsoft ei julkaise EFSTA:n laitteistoja, ohjelmistoja tai dokumentaatioita. Jos haluat lisätietoja EFR-ratkaisun saamiseksi ja sen toiminnan ylläpitämiseksi, ota yhteyttä [EFSTA:han](https://www.efsta.eu/at/kontakt).
 
@@ -102,6 +103,13 @@ Ennen kuin voit käyttää Itävallan maa-/aluekohtaista toimintoa, sinun on mä
 - Jos myymälä sijaitsee Itävallassa, määritä sen POS-toimintoprofiilissa **ISO-koodi**-kentän arvoksi **AT** (Itävalta).
 
 Sinun on määritettävä myös seuraavat asetukset Itävallassa. Huomaa, että asianmukaiset jakelutyöt on suoritettava asetusten määrityksen jälkeen.
+
+### <a name="enable-features-for-austria"></a>Toimintojen käyttöönotto Itävaltaa varten
+
+Ota käyttöön seuraavat toiminnot **Toimintojen hallinta** -työtilassa:
+
+- (Itävalta) Ota lisätarkistustapahtumat käyttöön myyntipisteessä
+- (Itävalta) Ota lisätiedot käyttöön myyntipisteen päivän lopun laskelmissa
 
 ### <a name="set-up-vat-per-austrian-requirements"></a>Arvonlisäveron määrittäminen Itävallan vaatimusten mukaan
 
@@ -204,10 +212,10 @@ Lisätietoja kuittimuotojen ja kuittien muotojen suunnittelusta on kohdassa [Kui
 
 ## <a name="set-up-fiscal-integration-for-austria"></a>Kirjanpidon integroinnin määrittäminen (Itävalta)
 
-Itävallan verorekisteröintipalvelun integraatioesimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Retail SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\Efr** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä (esim. [julkaisun 9.33 esimerkki](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) veroasiakirjan tarjoajasta, joka on Commerce runtimen (CRT) ja veroliittimen laajennus, joka on Commerce Hardware Stationin laajennus. Lisätietoja Retail SDK:n käytöstä on kohdissa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Määritä itsenäisen pakkaus-SDK:n koontiversioputki](../dev-itpro/build-pipeline.md).
+Itävallan verorekisteröintipalvelun integraatioesimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Commerce SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\Efr** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä. [Esimerkki](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) koostuu veroasiakirjan tarjoajasta, joka on Commerce runtimen (CRT) laajennus, ja veroliitin, joka on Commerce Hardware Stationin laajennus. Lisätietoja Commerce SDK:n käyttämisestä on kohdissa [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja  NuGetista](../dev-itpro/retail-sdk/sdk-github.md) ja [Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja: [Verointegroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)](emea-aut-fi-sample-sdk.md). Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
+> [!NOTE]
+> Itävallan verorekisteröintipalvelun integraatioesimerkki on saatavilla Commerce SDK:ssa Commercen versiosta 10.0.29 alkaen. Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa Microsoft Dynamics Lifecycle Servicesissa (LCS). Lisätietoja: [Verointegroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)](emea-aut-fi-sample-sdk.md).
 
 Suorita verointegraation määritysvaiheet [Commerce-kanavien kirjanpidon integroinnin määrittäminen](setting-up-fiscal-integration-for-retail-channel.md) -kohdassa kuvatulla tavalla:
 
@@ -223,18 +231,20 @@ Voit ottaa rekisteröintiprosessin käyttöön Commerce headquarters -sovellukse
 1. Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritystiedostot.
 
     1. Avaa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilö.
-    1. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan (esim. **[julkaisu 9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan.
     1. Avaa **src \> FiscalIntegration \> Efr**.
-    1. Avaa **Configurations \> DocumentProviders** ja lataa kirjanpitoasiakirjan toimittajan konfiguraatiotiedostot: **DocumentProviderFiscalEFRSampleAustria.xml** ja **DocumentProviderNonFiscalEFRSampleAustria.xml** (esim. [julkaisun 9.33 tiedostojen sijainti](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
-    1. Lataa veroyhdistimen konfigurointitiedosto kohdasta **Configurations \> Connectors \> ConnectorEFRSample.xml** (esim. [julkaisun 9.33 tiedosto](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+    1. Avaa kohta **Määritykset \> DocumentProviders** ja lataa seuraavat veroasiakirjan tarjoajan määritystiedostot: 
 
-    > [!WARNING]
-    > [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa LCS:ssä. Tämän verointegraatioesimerkin konfiguraatiotiedostot sijaitsevat seuraavissa Retail SDK -sovelluksen kansioissa kehittäjän virtuaalikoneessa LCS:ssä:
+        - DocumentProviderFiscalEFRSampleAustria.xml
+        - DocumentProviderNonFiscalEFRSampleAustria.xml
+
+    1. Lataa veroliittimen määritystiedosto kohdassa **Määritykset \> Liittimet \> ConnectorEFRSample.xml**.
+
+    > [!NOTE]
+    > Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa LCS:ssä. Tämän verointegraatioesimerkin konfiguraatiotiedostot sijaitsevat seuraavissa Retail SDK -sovelluksen kansioissa kehittäjän virtuaalikoneessa LCS:ssä:
     >
     > - **Veroasiakirjan tarjoajan konfigurointitiedostot:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration
     > - **Veroyhdistimen konfigurointitiedosto:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration
-    > 
-    > Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
 
 1. Valitse **Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Kaupan jaetut parametrit**. Määritä **Yleiset**-pikavälilehdessä **Ota kirjanpidon integrointi käyttöön**-asetukseksi **Kyllä**.
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpitoasiakirjan toimittajat**, ja lataa aiemmin lataamasi kirjanpitoasiakirjan toimittajan konfigurointitiedostot.
@@ -244,7 +254,7 @@ Voit ottaa rekisteröintiprosessin käyttöön Commerce headquarters -sovellukse
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmät**. Luo kaksi uutta veroliitinryhmää, yksi kullekin aiemmin luomallesi liittimen toimintoprofiilille.
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessit**. Luo uusi kirjanpidon rekisteröintiprosessi ja kaksi verorekisteröintiprosessin vaihetta ja valitse aiemmin luomasi kirjanpidon yhdistinryhmät.
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**. Valitse siihen myymälään linkitetty toimintoprofiili, jossa rekisteröintiprosessi tulee aktivoida. Valitse **Kirjanpidon rekisteröintiprosessi** -pikavälilehdessä aiemmin luomasi kirjanpidon rekisteröintiprosessi. Voit ottaa muiden kuin verotapahtumien rekisteröinnin käyttöön myyntipisteessä valitsemalla **Toiminnot**-pikavälilehden **POS**-kohdasta **Kirjaus**-asetuksen arvoksi **Kyllä**.
-1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Laiteprofiilit**. Valitse Hardware stationiin liitetty laiteprofiili, johon verotulostin liitetään. Valitse **Kirjanpidon oheislaitteet** -pikavälilehdessä aiemmin luomasi liittimen tekninen profiili.
+1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Laiteprofiilit**. Valitse Hardware Stationiin liitetty laiteprofiili, johon verorekisteröintipalvelu liitetään. Valitse **Kirjanpidon oheislaitteet** -pikavälilehdessä aiemmin luomasi liittimen tekninen profiili.
 1. Avaa jakeluaikataulu (**Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**) ja valitse työt **1070** ja **1090** siirtääksesi tiedot kanavatietokantaan.
 
 #### <a name="default-data-mapping"></a>Tietojen oletusmääritys
@@ -269,16 +279,15 @@ Seuraavat asetukset sisältyvät veroyhdistimen konfiguraatioon, joka toimitetaa
 
 ### <a name="configure-channel-components"></a>Määritä kanavakomponentit
 
-> [!WARNING]
-> [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verointegroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)](emea-aut-fi-sample-sdk.md).
->
-> Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
+> [!NOTE]
+> - Itävallan verorekisteröintipalvelun integraatioesimerkki on saatavilla Commerce SDK:ssa Commercen versiosta 10.0.29 alkaen. Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verointegroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)](emea-aut-fi-sample-sdk.md).
+> - Ympäristössä käyttöönotettuja Commerce-esimerkkejä ei päivitetä automaattisesti, kun Commerce-osien palvelu- tai laatupäivitykset otetaan käyttöön. Vaaditut esimerkit on päivitettävä manuaalisesti.
 
 #### <a name="set-up-the-development-environment"></a>Kehitysympäristön määrittäminen
 
 Suorita nämä vaiheet, kun haluat määrittää kehitysympäristön, jonka avulla voit testata ja laajentaa esimerkkiä.
 
-1. Kloonaa tai lataa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) -säilö. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan. Lisätietoja: [Retail SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md).
+1. Kloonaa tai lataa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) -säilö. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan. Lisätietoja: [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md).
 1. Avaa EFR-ratkaisu kohdassa **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln** ja muodosta se.
 1. Asenna CRT-laajennukset:
 
@@ -330,10 +339,10 @@ Luo ja julkaise verointegraatioesimerkin Cloud Scale Unit ja itsepalveluna käyt
 
 ## <a name="design-of-extensions"></a>Laajennusten rakenne
 
-Itävallan verorekisteröintipalvelun integraatioesimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Retail SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\Efr** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä (esim. [julkaisun 9.33 esimerkki](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) veroasiakirjan tarjoajasta, joka on CRT:n ja veroliittimen laajennus, joka on Commerce Hardware Stationin laajennus. Lisätietoja Retail SDK:n käytöstä on kohdissa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Määritä itsenäisen pakkaus-SDK:n koontiversioputki](../dev-itpro/build-pipeline.md).
+Itävallan verorekisteröintipalvelun integraatioesimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Commerce SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\Efr** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä. Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) veroasiakirjan tarjoajasta, joka on CRT:n ja veroliittimen laajennus, joka on Commerce Hardware Stationin laajennus. Lisätietoja Commerce SDK:n käyttämisestä on kohdissa [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja  NuGetista](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verointegroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)](emea-aut-fi-sample-sdk.md). Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
+> [!NOTE]
+> Itävallan verorekisteröintipalvelun integraatioesimerkki on saatavilla Commerce SDK:ssa Commercen versiosta 10.0.29 alkaen. Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verointegroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)](emea-aut-fi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime -laajennusten rakenne 
 

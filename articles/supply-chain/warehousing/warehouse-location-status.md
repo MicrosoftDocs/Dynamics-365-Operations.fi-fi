@@ -2,7 +2,7 @@
 title: Varastosijainnin tila
 description: Tässä artikkelissa on yleiskatsaus fyysisen varaston sijainnin tila -ominaisuudesta.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 2b3c408f5a5e4ce85a235ac83c15b648e43b5e10
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9b12a7d6a7ce388c8fd049c4aef79ea57c82ae60
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220054"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336092"
 ---
 # <a name="warehouse-location-status"></a>Varastosijainnin tila
 
@@ -40,9 +40,9 @@ Seuraavat neljä **Toimipaikat**-sivulla olevaa kenttää ovat sijainnin nykyise
     - **Poiminta** – Lähtevät tapahtumat on suoritettu sijainnille, koska se oli viimeksi tyhjä.
     - **Varasto** – Vain saapuvat tapahtumat on suoritettu sijainnille, koska sijainti oli viimeksi tyhjä.
 
-## <a name="turn-on-the-warehouse-location-status-feature"></a>Varaston tilatoiminnon käyttöönotto
+## <a name="turn-the-warehouse-location-status-feature-on-or-off"></a>Varaston tilatoiminnon käyttöönotto tai käytöstäpoisto
 
-Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän ominaisuuden käyttöön tai pois käytöstä hakemalla *Varastosijainnin tila* -ominaisuutta [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilasta.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Varastosijainnin tila* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-warehouse-location-status"></a>Määritä varastosijainnin tila
 

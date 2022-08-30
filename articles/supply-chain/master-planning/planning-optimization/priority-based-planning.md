@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186480"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335282"
 ---
 # <a name="priority-based-planning"></a>Prioriteettipohjainen suunnittelu
 
@@ -30,7 +30,7 @@ Seuraavasta videosta ominaisuudesta saa nopean yleiskäsityksen: [Suunnittelun o
 
 ## <a name="turn-on-priority-based-planning-in-your-system"></a>Prioriteettipohjaisen suunnittelun ottaminen käyttöön järjestelmässä
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Pääsuunnittelu*
 - **Ominaisuuden nimi:** *Suunnittelun optimoinnin prioriteettipohjaisen tarvelaskennan tuki*

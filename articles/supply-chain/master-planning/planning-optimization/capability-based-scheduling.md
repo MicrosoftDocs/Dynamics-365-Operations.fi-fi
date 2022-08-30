@@ -2,7 +2,7 @@
 title: Aikataulutus resurssien valinnalla kykyjen perusteella
 description: Tässä artikkelissa kuvataan resurssin valintaa rajattoman kapasiteetin ajoituksen aikana, kun toimintoja määritetään operaation resurssitarpeiksi.
 author: t-benebo
-ms.date: 9/3/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847959"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335402"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Ajoitus resurssivalintojen avulla toiminnon perusteella
 
@@ -24,12 +24,9 @@ ms.locfileid: "8847959"
 
 Määrittämällä tuotantoreitityksen operaation resurssitarpeet voit määrittää, mitä operaation suorittamiseen tarvitaan. Operaatio voi esimerkiksi edellyttää tiettyä resurssia, resurssiryhmää tai taitojen tai toimintojen yhdistelmää. Tässä artikkelissa kuvataan resurssin valintaa rajattoman kapasiteetin ajoituksen aikana, kun toimintoja määritetään operaation resurssitarpeiksi.
 
-## <a name="turn-on-the-capability-based-scheduling-feature"></a>Ota käyttöön toimintopohjainen ajoitusominaisuus
+## <a name="turn-the-capability-based-scheduling-feature-on-or-off"></a>Toimintopohjainen ajoitus -toiminnon käyttöönotto tai käytöstäpoisto
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Pääsuunnittelu*
-- **Toiminnon nimi:** *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus*
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Suunnittelun optimoinnin ääretön kapasiteetin ajoitus* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilasta.
 
 Lisätietoja tästä ominaisuudesta on kohdassa [Ajoittaminen rajattoman kapasiteetin avulla](infinite-capacity-planning.md).
 

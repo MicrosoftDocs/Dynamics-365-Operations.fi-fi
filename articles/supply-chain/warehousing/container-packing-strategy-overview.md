@@ -2,7 +2,7 @@
 title: Konttien pakkausstrategiat
 description: Tässä artikkelissa kuvataan konttien pakkausstrategioiden eroja ja annetaan esimerkkejä.
 author: GalynaFedorova
-ms.date: 06/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a9a0066abaa76294faebcb15d5091ba36e8a60d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862363"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335762"
 ---
 # <a name="container-packing-strategies"></a>Konttien pakkausstrategiat
 
@@ -77,7 +77,7 @@ Tässä skenaariossa kerrotaan, miten pakkausten aikana arvioitujen konttien mä
 
 #### <a name="turn-on-the-consolidate-shipments-feature-in-your-system"></a>Lähetysten konsolidointiominaisuuden käyttöön ottaminen järjestelmässä
 
-Tässä skenaariossa käytetään *Konsolidoi lähetykset* -toimintoa. Jos tämä toiminto ei ole vielä käytettävissä järjestelmässä, se on otettava käyttöön käyttämällä [Ominaisuuksien hallintaa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Tässä skenaariossa käytetään *Konsolidoi lähetykset* -toimintoa. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Konsolidoi lähetykset* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 #### <a name="make-demo-data-available"></a>Demotietojen ottaminen käyttöön
 

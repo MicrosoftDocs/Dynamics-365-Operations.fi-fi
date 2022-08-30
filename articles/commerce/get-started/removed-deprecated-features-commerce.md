@@ -2,7 +2,7 @@
 title: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 description: Tässä artikkelissa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan Dynamics 365 Commercesta.
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287620"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337593"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
 
@@ -33,32 +33,49 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > [!NOTE]
 > Seuraavissa raporteissa on lisätietoja talous- ja toimintosovellusten objekteista: [Tekniset viitetiedot](/dynamics/s-e/). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin talous- ja toimintosovellusten versiossa.
 
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Commercen version 10.0.29 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Commercen parametrien asetus – Salli hinnanoikaisut, jotka nostavat tuotteen hintaa
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tämä asetus määrittää, salliiko hinnanoikaisutoiminto tuotteen hinnan nostamisen. Kun tämä parametri on poistettu käytöstä ja käytössä on hinnanoikaisutoiminto, organisaatiot voivat määrittää tuotteen yksikköhinnan vain alemmaksi kuin sen perushinta ja kauppasopimuksen myyntihinta. Tämä asetus vanhenee, koska hinnanoikaisutoimintoa on päivitetty niin, että se tukee valmiita kaksisuuntaisia oikaisuja (nosto tai lasku). |
+| **Onko toinen ominaisuus korvannut?**   | En |
+| **Tuotealueet, joihin vaikutetaan**         | Hinnoittelu ja alennukset |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Tämä asetus on otettu käyttöön oletusarvoisesti Commercen versiossa 10.0.29. Se poistetaan vuoden 2023 lokakuussa. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Commercen parametrien asetus – Ota käyttöön vähittäismyymälän hintaraportti
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tämä asetus määritti, onko hintaraporttitoiminto käytettävissä myymälän määrityslomakkeessa. Tämä asetus on vanhentunut, koska myymälän määrityslomaketta on päivitetty niin, että hintaraporttitoiminto näkyy aina vakiotoimintona. |
+| **Onko toinen ominaisuus korvannut?**   | En |
+| **Tuotealueet, joihin vaikutetaan**         | Hinnoittelu ja alennukset |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Tämä asetus poistetaan vuoden 2023 lokakuussa. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Commercen parametrien asetus – Käytä tämän päivän päivämäärää hintojen laskemisessa
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Supply Chain Managementin (SCM) hinnoittelumoduuli tukee hinnoittelun laskemista, joka perustuu pyydettyyn lähetyspäivään tai pyydettyyn vastaanottopäivään sekä tämän päivän päivämäärään. Commercen hinnoittelumoduuli tukee hinnoittelun laskentaa vain tämän päivän päivämäärän perusteella. Jos asiakas käyttää sekä SCM- että Commerce-ominaisuuksia, asiakkaiden tulisi määrittää tämän asetuksen arvoksi aina **Kyllä**, jotta kaksi hinnoittelumoduulia voivat toimia yhdessä. Tämä asetus ei vanhene, koska se ei muuta laskennan toimintaa, vaan on tarpeeton. |
+| **Onko toinen ominaisuus korvannut?**   | En |
+| **Tuotealueet, joihin vaikutetaan**         | Hinnoittelu ja alennukset |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Tämä asetus on otettu käyttöön oletusarvoisesti Commercen versiossa 10.0.29. Se poistetaan vuoden 2023 lokakuussa. |
+
 ## <a name="feature-deprecation-effective-july-2022"></a>Heinäkuussa 2022 vanhentuvat ominaisuudet
 
 ### <a name="commerce-analytics-preview"></a>Commercen analytiikka (esiversio)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Dynamics 365 Commerce -tiimi on analysoinut Commerce analytiikka (esiversio) -ominaisuuden käyttöä ja käyttöönottoa sekä päättänyt, että ominaisuuden kehittämistä ei jatketa yleiseen saatavuuteen.   |
+| **Poiston tai vanhentumisen syy** | Dynamics 365 Commerce -tiimi on analysoinut Commerce-analytiikka (esiversio) -ominaisuuden käyttöä ja käyttöönottoa sekä päättänyt, että ominaisuuden kehittämistä ei jatketa yleiseen saatavuuteen.   |
 | **Onko toinen ominaisuus korvannut?**   | Commerce-analytiikka (esiversio) -ominaisuutta ei tällä hetkellä korvata toisella ominaisuudella tai ratkaisulla. Tapahtumien raakatietoja ja päätietojen vienti talous- ja toimintosovelluksista Azure Data Lakeen on edelleen saatavana, mistä on lisätietoja kohdassa [Vienti Data Lakeen talous- ja toimintosovelluksissa](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Kumppanit ja asiakkaat voivat hyödyntää kyseistä tietovirtaa liiketoiminatarpeita vastaavien analyysiraporttien laatimiseen.
 | **Tuotealueet, joihin vaikutetaan**         | Commercen analytiikka (esiversio) |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Tämä ominaisuus on tarkoitus poistaa käytöstä 30. elokuuta 2022 mennessä.  Kyseisen päivämäärän jälkeen nykyisiä Commerce-analytiikan (esiversio) tuottamia Power BI -raportteja ei päivitetä.     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Commercen version 10.0.25 poistetut tai vanhentuneet ominaisuudet
-
-### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
-
-Modern Point of Sale (MPOS) -sovellus vanhentuu Commerce-versiossa 10.0.25 ja se korvataan Store Commerce -sovelluksella.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Myymäläsovellukset ovat Dynamics 365 Commercen monikanavaisen tarjonnan kulmakivi. Kehitämme jatkuvasti innovaatioita tarjotaksemme nykyaikaisen ja älykkään myymäläkokemuksen. Tämän lisäksi nykyaikaistamme ratkaisuamme ottamalla käyttöön uusia muutoksia, jotka parantavat IT-toimintojen ja käyttäjien kokemusta merkittävästi Windows-myymäläsovelluksissamme. Uusi Store Commerce -sovellus on olemassa olevan MPOS-sovelluksen tekniikkapäivitys. Se parantaa suorituskykyä, luotettavuutta ja pitkäaikaista tukea Windows-alustalla, eikä sovellusta tarvitse pakata uudelleen kullakin päivityksellä. |
-| **Onko toinen ominaisuus korvannut?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Tuotealueet, joihin vaikutetaan**         | Modern Point of Sale |
-| **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Commerce-versiosta 10.0.25 alkaen MPOS-asennusohjelma, joka lähetetään LCS-virtuaalikoneiden kautta, poistetaan lokakuussa 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Commercen version 10.0.21 poistetut tai vanhentuneet ominaisuudet
 
@@ -194,11 +211,11 @@ Myyntipistelaajennuksen kehittäminen ModernPos.sln-, CloudPos.sln-, POS.Extensi
 
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Commercen version 10.0.7 poistetut tai vanhentuneet ominaisuudet
-### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Commerce GetProductAvailabilities- ja GetAvailableInventoryNearby ohjelmointirajapintaliittymät
+### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Commerce GetProductAvailabilities- ja GetAvailableInventoryNearby-ohjelmointirajapinnat
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Uudet optimoidut ohjelmointirajapinnat on luotu korvaamaan GetProductAvailabilities- ja GetAvailableInventoryNearby-ohjelmointirajapinnat. |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä: sen tilalle tulee GetEstimatedAvailabilty ja GetEstimatedProductWarehouseAvailability -ohjelmointirajapinnat. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä: Sen tilalle tulee GetEstimatedAvailabilty- ja GetEstimatedProductWarehouseAvailability-ohjelmointirajapinnat. |
 | **Tuotealueet, joihin vaikutetaan**         | e-Commerce-sovellus-SDK |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Julkaisuversiosta 10.0.7 alkaen kohteille GetProductAvailabilities ja GetAvailableInventoryNearby ei tehdä enää teknisiä investointeja. Organisaatiot, jotka käyttävät näitä ohjelmointirajapintaliittymiä verkkokaupan käyttöönotoissa, on muunnettava uuteen GetEstimatedAvailabilty- ja GetEstimatedProductWarehouseAvailability-ohjelmointirajapintaliittymiin ja otettava käyttöön [Optimoitu tuotteen saatavuuden laskentaominaisuus](../calculated-inventory-retail-channels.md).  |

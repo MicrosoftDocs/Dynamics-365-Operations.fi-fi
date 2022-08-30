@@ -2,7 +2,7 @@
 title: Varastokirjauskansion hyväksyntätyönkulut
 description: Tässä artikkelissa käsitellään varastokirjauskansioiden hyväksyntätyönkulut määritetään ja miten niitä käytetään erityyppisten varastotilannetapahtumien kirjaamisessa. Varastokirjauskansion työnkulkujen avulla voit varmistaa, että vain hyväksytyt varastokirjauskansiot voidaan kirjata tapahtumille.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873982"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334652"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Varastokirjauskansion hyväksyntätyönkulut
 
@@ -29,12 +29,9 @@ Tässä artikkelissa kerrotaan, miten varastokirjauskansion hyväksyntätyönkul
 > [!NOTE]
 > Varastokirjauskansion hyväksymistyönkulkuja käytetään vain varastonhallintamoduulin avulla tallennettuihin tapahtumiin. Ne eivät toimi varastonhallintamoduulista käynnistettyjen varastokirjauskansioiden kanssa.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Varastokirjauskansion hyväksyntätyönkulut -toiminnon ottaminen käyttöön
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>Varastokirjauskansion hyväksyntätyönkulut -toiminnon käyttöönotto tai käytöstäpoisto
 
-Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -sivulla toiminnon tilan sekä ottaa sen käyttöön tai poistaa sen käytöstä tarvittaessa. Toiminto näkyy seuraavasti:
-
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Varastokirjauskansion hyväksyntätyönkulku*
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Varaston kirjauskansion hyväksynnän työnkulku* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Varastokirjauskansion hyväksyntätyönkulun luominen
 

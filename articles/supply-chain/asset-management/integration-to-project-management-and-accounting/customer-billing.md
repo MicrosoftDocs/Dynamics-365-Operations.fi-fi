@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b7c2c07f3e3eb76ff20e37e8d5d485dc08232c7a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c0d067ec4f2110b1c146ef0229b90e309578eaa7
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220419"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335072"
 ---
 # <a name="bill-for-maintenance-on-customer-owned-assets"></a>Asiakkaan omistamien resurssien ylläpidon laskuttaminen
 
@@ -40,7 +40,7 @@ Toiminnossa on lisäksi seuraavat toiminnot:
 
 ## <a name="turn-on-the-customer-billing-feature"></a>Asiakkaan laskutustoiminnon ottaminen käyttöön
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Projektinhallinta ja kirjanpito*
 - **Toiminnon nimi:** *Työtilauksen laskutus*

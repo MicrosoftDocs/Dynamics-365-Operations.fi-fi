@@ -2,7 +2,7 @@
 title: Ilmoittaminen valmiiksi työkorttilaitteesta
 description: Tässä artikkelissa kuvataan, miten järjestelmä konfiguroidaan niin, että työkorttilaitteen käyttäjät voivat raportoida valmiit tuotteet tuotantotilauksesta varastoon.
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 56d19a966d93202668c34ffaaef561d72b7669ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070466"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334622"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ilmoita valmiiksi työkorttilaitteesta
 
@@ -56,13 +56,12 @@ Työkorttilaite tukee kolmea eränimikkeiden raportointiskenaariota. Nämä sken
 - **Ennalta määritetyt eränumerot** - Työntekijät valitsevat eränumeron niiden eränumeroiden luettelosta, jotka järjestelmä luo automaattisesti, ennen kuin tuotantotilaus vapautetaan työkorttilaitteeseen.
 - **Kiinteät eränumerot** - Työntekijät eivät voi syöttää tai valita eränumeroa. Sen sijaan järjestelmä liittää tuotantotilaukseen automaattisesti eränumeron ennen kuin se on vapautettu.
 
-
 ### <a name="enable-the-feature-on-your-system"></a>Ominaisuuden ottaminen käyttöön järjestelmässä
 
-Jos haluat, että työkorttilaitteet hyväksyvät eränumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat ominaisuudet käyttöön (tässä järjestyksessä) [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
+Jos haluat, että työkorttilaitteet hyväksyvät eränumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat toiminnot käyttöön [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
 
-1. Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa
-1. Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta
+- *Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa*
+- *Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta*<br>(Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä.)
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Niiden tuotteiden määrittäminen, jotka edellyttävät eränumeroraportointia
 
@@ -137,10 +136,10 @@ Työkorttilaite tukee kolmea sarjaohjattujen nimikkeiden raportointiskenaariota.
 
 ### <a name="enable-the-feature-on-your-system"></a>Ominaisuuden ottaminen käyttöön järjestelmässä
 
-Jos haluat, että työkorttilaitteet hyväksyvät sarjanumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat ominaisuudet käyttöön (tässä järjestyksessä) [ominaisuuksien hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
+Jos haluat, että työkorttilaitteet hyväksyvät sarjanumeron valmiiksi ilmoittamisen aikana, sinun on otettava seuraavat toiminnot käyttöön [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) avulla:
 
-1. Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa
-1. Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta
+- *Parannettu Raportointi on meneillään -valintaikkunan käyttäjäkokemus työkorttilaitteessa*
+- *Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta*<br>(Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä.)
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Niiden tuotteiden määrittäminen, jotka edellyttävät sarjanumeroraportointia
 

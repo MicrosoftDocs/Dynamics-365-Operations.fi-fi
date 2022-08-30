@@ -2,7 +2,7 @@
 title: Sijainnin lisävyöhykkeet
 description: Tässä artikkelissa annetaan yleiskatsaus uusista sijainnin vyöhykkeistä, jotka on lisätty Microsoft Dynamics 365 Supply Chain Management -järjestelmään.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: c20225cfb3c44fff955d0ad4e96c7fecf0ddf715
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 819330e0f6e6cd419da441f919d68ff996b6475c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900648"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336512"
 ---
 # <a name="additional-location-zones"></a>Sijainnin lisävyöhykkeet
 
@@ -32,7 +32,7 @@ Vyöhykekenttien käyttö ei vaadi lisäasetuksia.
 
 ## <a name="turn-the-additional-location-zone-feature-on-or-off"></a>Lisävyöhyketoiminnon käyttöönotto tai käytöstä poisto
 
-Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Sijainnin lisävyöhyke* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Sijainnin lisävyöhyke* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="use-location-zones"></a>Sijainnin vyöhykkeiden käyttäminen
 

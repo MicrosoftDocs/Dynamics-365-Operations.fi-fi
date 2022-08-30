@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886099"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336923"
 ---
 # <a name="configure-the-absence-manager-role"></a>Poissaolopäällikön roolin määrittäminen
 
->[!Important]
->Tässä artikkelissa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ Joissakin organisaatioissa ihmisten esimiehet eivät ehkä hallitse tiiminsä lo
 ## <a name="turn-on-the-feature"></a>Toiminnon ottaminen käyttöön
 
 1. Valitse **Järjestelmänvalvojan**-työtilassa **Ominaisuuksien hallinta**.
-
 2. Ota **Ominaisuuksien hallinta** -välilehdessä käyttöön **Poissaolopäällikkö hallitsee vapaata** -ominaisuus.
 
 ## <a name="define-a-custom-hierarchy"></a>Mukautetun hierarkian määrittäminen
@@ -45,23 +42,16 @@ Joissakin organisaatioissa ihmisten esimiehet eivät ehkä hallitse tiiminsä lo
 Poissaolopäällikkötoiminto käyttää mukautettua hierarkiaa, joka on määritettävä.
 
 1. Valitse **Organisaation hallinta** -työtilassa **Hierarkiatyypit**.
-
 2. Luo hieratkiatyyppi, jonka nimi on **Vapaa**.
-
 3. Valitse **Loma ja poissaolo** -työtilan **Linkit** -kohdassa **Loma- ja Poissaoloparametrit**.
-
 4. Valitse **Yleiset**-välilehden avattavasta **Poissaolohierarkia**-luettelosta aiemmin luomasi **Vapaa**-hierarkiatyyppi. Tämä Vapaa-hierarkian liitos on suoritettava kaikille yrityksille, joissa käytetään poissaolopäällikön toimintoja.
 
 Kun hierarkiatyyppi on määritetty, tehtävään on määritettävä tehtävähierarkiarapotti.
 
 1. Valitse **Organisaation hallinta** -työtilassa **Kaikki tehtävät**.
-
 2. Valitse tehtävä, johon Vapaa-hierarkia lisätään.
-
 3. Valitse **Suhteet**-välilehdessä **Lisää**.
-
 4. Valitse **Hierarkian nimi** -kentästä **Vapaa**.
-
 5. Valitse **Raportoi henkilölle** -kentässä arvo. Työntekijän nimi täytetään automaattisesti, kun olet valinnut toimen.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>Poissaolopäällikön roolin määrittäminen käyttäjälle
@@ -69,13 +59,9 @@ Kun hierarkiatyyppi on määritetty, tehtävään on määritettävä tehtäväh
 Poissaolopäällikön rooli on määritettävä työntekijöille, jotta he voivat hyväksyä tai estää lomapyynnöt.
 
 1. Valitse **Järjestelmänvalvojan** työtilassa **Linkit**.
-
 2. Valitse **Käyttäjät**-osiossa **Käyttäjät**-linkki.
-
 3. Valitse käyttäjäluettelosta käyttäjä, jolle Poissaolopäällikön rooli määritetään.
-
 4. Valitse **Käyttäjän roolit** -välilehdessä **Määritä roolit**.
-
 5. Valitse -luettelosta **Poissaolopäällikön** rooli. Valitse sitten **OK**.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ Poissaolopäällikön rooli on määritettävä työntekijöille, jotta he voiva
 6. Kun olet luonut Vapaa-hierarkian, voit tarkastella sitä seuraavasti:
 
     1. Valitse **Organisaation hallinta** -työtilassa **Tehtävähierarkia**.
-    
     2. Valitse **Hierarkian nimi** -kentästä **Vapaa**.
 
 ## <a name="absence-manager-workspace"></a>Poissaolojen esimiehen työtila
@@ -115,9 +100,7 @@ Poissaolopäälliköt voivat hyväksyä tai hylätä työntekijöiden lomapyynn�
 > Lisätietoja lomapyyntöjen työnkulun luomisesta on kohdassa [Lomapyyntötyönkulun luominen](hr-leave-and-absence-workflow.md).
 
 1. Valitse **Työntekijän itsepalvelu** -työtilassa **Poissaolojen hallinta**-välilehti.
-
 2. Valitse **Poissaolopyynnöt**-välilehdessä käsiteltävät poissaolopyynnöt. Tässä luettelonäkymässä voidaan valita useita tietueita.
-
 3. Ruudukon yläreunassa on toimintopainikkeet poissaolopyynnön hyväksymiseen, hylkäämiseen ja delegointiin. 
 
 Käyttäjä voi vaihtoehtoisesti vasemmalla olevaa **Poissaolopyynnöt**-ruutua ja siirtyä kaikki poissaolopyyntöjen työkohteet sisältävään luetteloon. 
@@ -130,9 +113,7 @@ Poissaolopäällikkö-roolin käyttäjät voivat tarkastella poissaolopyyntöjä
 > Järjestelmänvalvojan on määritettävä poissaolojen hallinnan kalenterin näkymäasetukset. **Loma- ja poissaoloparametrit**-sivun **Kalenteri**-välilehdessä on vaihtoehtoja, joilla syntymäpäivät, poissaolot ilman tietoja, poissaolot ja odottavat lomapyynnöt piilotetaan tai näytetään. Voit myös suodattaa kalenterinäkymän vaihtoehdon työntekijätyypin mukaan.
 
 1. Valitse **Työntekijän itsepalvelu** -työtilassa **Poissaolojen hallinta** ja sitten **Poissaolopäällikön kalenteri**.
-
 2. Syötä **Päivämäärä**-kenttään halutut päivämäärät.
-
 3. Päivitä näkymän asetukset tarpeen mukaan.
 
 Poissaolopäällikön kalenterissa näkyvät kaikki poissaolopäällikölle raportoivien työntekijöiden tietueet Vapaa-hierarkiassa.

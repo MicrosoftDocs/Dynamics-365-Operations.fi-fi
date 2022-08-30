@@ -1,81 +1,63 @@
 ---
-ms.openlocfilehash: b17bd56f9f3e4def341658626915adbd7f5aada6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+title: Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha)
+description: Tämä artikkeli on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa.
+author: EvgenyPopovMBS
+ms.date: 08/23/2022
+ms.topic: article
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2018-2-28
+ms.openlocfilehash: fb597add48ac3508a88142e63d80f405b6b5f8b4
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281535"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9346042"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha)
----
 
-otsikko: Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha) [!include [banner](../includes/banner.md)]
-kuvaus: Tämä artikkeli on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa.
+[!include [banner](../includes/banner.md)]
 
-tekijä: EvgenyPopovMBS Tämä artikkeli on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa. Lokalisointiin kuuluu useita Commerce-komponenttien laajennuksia. Laajennusten avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa X- ja Z-raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md).
-ms.date: 20.12.2021
+> [!WARNING]
+> Tämä verointegrointimallitoiminto ei hyödynnä [verotuksen integrointikehystä](./fiscal-integration-for-retail-channel.md), ja se vanhentuu myöhemmissä päivityksissä. Käytä sen sijaan [toimintoa, joka perustuu verotuksen integrointikehykseen](./emea-nor-fi-deployment.md).
 
-ms.topic: artikkeli Tämä esimerkki kuuluu Retail-ohjelmiston kehityspakettiin (SDK). Lisätietoja SDK:sta on kohdassa [Retail-kehityspaketin (SDK) arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-kohderyhmä: sovelluksen käyttäjä, kehittäjä, IT Pro
+Tämä artikkeli on käyttöönotto-opas, jossa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -lokalisointi otetaan käyttöön Norjassa. Lokalisointiin kuuluu useita Commerce-komponenttien laajennuksia. Laajennusten avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa X- ja Z-raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md).
 
-ms.reviewer: v-chgriffin Tämä esimerkki koostuu Commerce runtime (CRT)-, Retail Server- ja POS-laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT-, Retail Server- ja POS-projektit. Suosittelemme, että teet tässä artikkelissa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Microsoft Visual Studio Onlinea (VSO), jossa tiedostoja ei ole vielä muutettu.
-ms.search.region: Yleinen
+Tämä esimerkki kuuluu Retail-ohjelmiston kehityspakettiin (SDK). Lisätietoja SDK:sta on kohdassa [Retail-kehityspaketin (SDK) arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-ms.author: josaw
+Tämä esimerkki koostuu Commerce runtime (CRT)-, Retail Server- ja POS-laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT-, Retail Server- ja POS-projektit. Suosittelemme, että teet tässä artikkelissa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Microsoft Visual Studio Onlinea (VSO), jossa tiedostoja ei ole vielä muutettu.
+
 > [!NOTE]
-ms.search.validFrom: 28.02.2018 Commerce 10.0.8:ssa tai sitä uudemmissa versioissa Retail Serveristä käytetään nimeä Commerce Scale Unit. Koska tämä artikkeli koskee sovelluksen useita aiempia versioita, *Retail Server* -nimeä käytetään koko artikkelissa.
+> Commerce 10.0.8:ssa tai sitä uudemmissa versioissa Retail Serveristä käytetään nimeä Commerce Scale Unit. Koska tämä artikkeli koskee sovelluksen useita aiempia versioita, *Retail Server* -nimeä käytetään koko artikkelissa.
 >
----
 > Jotkin tämän artikkelin vaiheet vaihtelevat käyttämäsi Commerce-version mukaan. Lisätietoja esitetään kohdassa [Dynamics 365 Retailin uudet ja muuttuneet ominaisuudet](../get-started/whats-new.md).
 
-
-6. Päivitä Retail Serverin konfigurointitiedosto. Lisää **RetailSDK\\Packages\\RetailServer\\Code\\web.config** -tiedostossa seuraavat rivit **extensionComposition**-osaan.
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Commerce-kanavien sertifikaattiprofiilien käyttäminen
 
-
-    ``` xml
 Commerce-versioissa 10.0.15 ja sitä myöhemmissä versioissa voit käyttää [vähittäismyymälöiden käyttäjän määrittämiä sertifikaattiprofiileja](./certificate-profiles-for-retail-stores.md). Tämä ominaisuus tukee varatoimintaa offline-tilassa, kun Key Vault tai Commerce headquarters eivät ole käytettävissä. Tämä ominaisuus laajentaa [Vähittäismyynnin kanavien salaisuuksien hallinta](../dev-itpro/manage-secrets.md) -toimintoa.
-    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
 
-    ```
 Noudata näitä ohjeita, jotta voit käyttää tätä toimintoa CRT-laajennuksessa.
 
-
-7. Luo käyttöön otettavat paketit ajamalla koko Retail SDK -sovelluksen **msbuild**.
 1. Luo uusi CRT-laajennusprojekti (C#-luokkakirjaston projektityyppi). Käytä Retail-ohjelmistokehityspaketin (SDK) näytemalleja (RetailSDK\SampleExtensions\CommerceRuntime).
-8. Ota paketit käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) kautta tai manuaalisesti. Lisätietoja on ohjeaiheessa [Käyttöönottopakettien luominen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
 
 2. Lisää mukautettu käsittelijä kohteelle CertificateSignatureServiceRequest SequentialSignatureRegister-projektissa.
-### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Ota digitaalinen allekirjoitus käyttöön offline-tilassa Modern POS -sovelluksessa
-
 
 3. Jos haluat lukea salaisuuden, kutsu `GetUserDefinedSecretCertificateServiceRequest` käyttäen konstruktoria, jossa on profileId-parametri. Tämä käynnistää toiminnon toimimaan sertifikaattiprofiilien asetusten kanssa. Asetusten perusteella sertifikaatti noudetaan joko Azure Key Vaultista tai paikallisen koneen tallennustilasta.
-Jos haluat ottaa digitaalisten allekirjoituksen käyttöön offline-tilassa Modern POS -sovellusta varten, noudata näitä ohjeita, kun olet aktivoinut Modern POS:n uudella laitteella.
-
 
     ```csharp
-1. Sign in to POS.
     GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
-2. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
     GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
-3. Sign out of POS.
 
-4. Wait a while for the offline database to be fully synchronized.
     X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
-5. Sign in to POS.
     ```
-6. Varmista **Tietokantayhteyden tila** -sivulla, että offline-tietokanta on täysin synkronoitu. Kun **Offline-tietokannan odottavat tapahtumat** kentän arvo on **0** (nolla), tietokanta on täysin synkronoitu.
 
-7. Käynnistä Modern POS uudelleen.
 4. Kun sertifikaatti noudetaan, jatka tietojen allekirjoitusta.
 
-
-
 5. Muodosta CRT-laajennusprojekti.
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
-6. Kopioi tulosluokkakirjasto ja liitä se kohtaan ...\RetailServer\webroot\bin\Ext manuaalista testausta varten.
+6. Kopioi tulosluokkakirjasto ja liitä se kohtaan ...\RetailServer\webroot\bin\Ext manuaalista testausta varten.
 
 7. Päivitä CommerceRuntime.Ext.config-tiedostossa laajennuksen kokoonpano-osaan mukautetun kirjaston tiedot.
 
@@ -1633,3 +1615,27 @@ Luo Commerce-komponentteja sisältävät käyttöön otettavat paketit ja ota pa
     Tiedoston nimi **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** ja se on kohdassa **Extensions.SequentialSignatureRegister\\bin\\Debug**.
 
     ---
+
+6. Päivitä Retail Serverin konfigurointitiedosto. Lisää **RetailSDK\\Packages\\RetailServer\\Code\\web.config** -tiedostossa seuraavat rivit **extensionComposition**-osaan.
+
+    ``` xml
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
+    ```
+
+7. Luo käyttöön otettavat paketit ajamalla koko Retail SDK -sovelluksen **msbuild**.
+8. Ota paketit käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) kautta tai manuaalisesti. Lisätietoja on ohjeaiheessa [Käyttöönottopakettien luominen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Ota digitaalinen allekirjoitus käyttöön offline-tilassa Modern POS -sovelluksessa
+
+Jos haluat ottaa digitaalisten allekirjoituksen käyttöön offline-tilassa Modern POS -sovellusta varten, noudata näitä ohjeita, kun olet aktivoinut Modern POS:n uudella laitteella.
+
+1. Kirjaudu sisään POS:ään.
+2. Varmista **Tietokantayhteyden tila** -sivulla, että offline-tietokanta on täysin synkronoitu. Kun **Odottavat lataukset** kentän arvo on **0** (nolla), tietokanta on täysin synkronoitu.
+3. Kirjaudu ulos myyntipisteestä.
+4. Odota, kunnes offline-tietokanta synkronoidaan täysin.
+5. Kirjaudu sisään POS:ään.
+6. Varmista **Tietokantayhteyden tila** -sivulla, että offline-tietokanta on täysin synkronoitu. Kun **Offline-tietokannan odottavat tapahtumat** kentän arvo on **0** (nolla), tietokanta on täysin synkronoitu.
+7. Käynnistä Modern POS uudelleen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

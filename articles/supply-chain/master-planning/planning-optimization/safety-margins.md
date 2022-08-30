@@ -2,7 +2,7 @@
 title: Varmuusmarginaalit
 description: Tässä artikkelissa kerrotaan, miten varmuusmarginaaleja voidaan käyttää suunnittelun optimoinnin lisäosassa Microsoft Dynamics 365 Supply Chain Management -sovelluksessa.
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: c792c33edea9a7f4e2973383b1fcce5b4e8ec998
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854236"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335192"
 ---
 # <a name="safety-margins"></a>Varmuusmarginaalit
 
@@ -79,12 +79,9 @@ Huomaa, että kun toimitusmarginaalia käytetään, siihen liittyvät tarjonnan 
 
 ## <a name="set-up-safety-margins"></a>Varmuusmarginaalien määrittäminen
 
-### <a name="turn-on-safety-margins-in-feature-management"></a>Varmuusmarginaalien ottaminen käyttöön ominaisuuksien hallinnassa
+### <a name="turn-safety-margins-on-or-off"></a>Varmuusmarginaalien käyttöönotto tai käytöstäpoisto
 
-Ennen kuin käytät tätä toimintoa suunnittelun optimoinnin kanssa, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
-
-- **Moduuli:** _Pääsuunnittelu_
-- **Ominaisuuden nimi:** _Suunnittelun optimoinnin marginaalit_
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Suunnittelun optimoinnin marginaalit* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="define-safety-margins"></a>Varmuusmarginaalien määrittäminen
 

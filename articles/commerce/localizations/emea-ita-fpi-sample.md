@@ -2,27 +2,28 @@
 title: Näyte verotusta varten olevan tulostimen integroinnista Italiassa
 description: Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Italia).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: e63f8d68b8b79143771c0b1c757cb78659183b67
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280265"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336682"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Näyte verotusta varten olevan tulostimen integroinnista Italiassa
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tämä artikkeli on yleiskatsaus Microsoft Dynamics 365 Commercen kirjanpidon integrointiesimerkistä (Italia).
 
-Italian Commerce-toiminnot sisältävät esimerkki-integroinnit myyntipisteestä verotulostimeen. Esimerkki laajentaa [verointegraation toimintoja](fiscal-integration-for-retail-channel.md) siten, että se toimii [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) -tulostimen kanssa ja mahdollistaa tietoliikenteen verotulostimen kanssa verkkopalvelintilassa EpsonFPMate-verkkopalvelun kautta käyttäen Fiscal ePOS-Print API -ohjelmointirajapintaa. Esimerkki tukee vain Registratore Telematico (RT) -tilaa. Näyte toimitetaan lähdekoodin muodossa, ja se on osa Retail-ohjelmiston kehityssarjaa (SDK).
+Italian Commerce-toiminnot sisältävät esimerkki-integroinnit myyntipisteestä verotulostimeen. Esimerkki laajentaa [verointegraation toimintoja](fiscal-integration-for-retail-channel.md) siten, että se toimii [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) -tulostimen kanssa ja mahdollistaa tietoliikenteen verotulostimen kanssa verkkopalvelintilassa EpsonFPMate-verkkopalvelun kautta käyttäen Fiscal ePOS-Print API -ohjelmointirajapintaa. Esimerkki tukee vain Registratore Telematico (RT) -tilaa. Näyte toimitetaan lähdekoodin muodossa, ja se on osa Commerce-ohjelmiston kehityssarjaa (SDK).
 
 Microsoft ei julkaise Epsonin laitteistoja, ohjelmistoja tai dokumentaatioita. Jos haluat lisätietoja verotulostimen hankkimisesta ja käyttämisestä, ota yhteyttä [Epson Italia S.p.A:han.](https://www.epson.it)
 
@@ -99,12 +100,10 @@ Verotulostimen integrointiesimerkissä otetaan käyttöön seuraavat säännöt,
 
 ## <a name="set-up-fiscal-integration-for-italy"></a>Kirjanpidon integroinnin määrittäminen (Italia)
 
-Italian verotulostimen esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Retail SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\EpsonFP90IIISample** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä (esim. [julkaisun 9.33 esimerkki](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) veroasiakirjan tarjoajasta, joka on Commerce runtimen (CRT) ja veroliittimen laajennus, joka on Commerce Hardware Stationin laajennus. Lisätietoja Retail SDK:n käytöstä on kohdissa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Määritä itsenäisen pakkaus-SDK:n koontiversioputki](../dev-itpro/build-pipeline.md).
+Italian verotulostimen esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Commerce SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\EpsonFP90IIISample** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä. [Esimerkki](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) koostuu veroasiakirjan tarjoajasta, joka on Commerce runtimen (CRT) laajennus, ja veroliitin, joka on Commerce Hardware Stationin laajennus. Lisätietoja Commerce SDK:n käyttämisestä on kohdissa [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja  NuGetista](../dev-itpro/retail-sdk/sdk-github.md) ja [Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja: [Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)](emea-ita-fpi-sample-sdk.md).
->
-> Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
+> [!NOTE]
+> Verotulostimen integrointiesimerkki Italiaa varten on saatavissa Commerce SDK:ssa Commercen versiosta 10.0.29 alkaen. Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa Microsoft Dynamics Lifecycle Servicesissa (LCS). Lisätietoja: [Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)](emea-ita-fpi-sample-sdk.md).
 
 Suorita verointegraation määritysvaiheet [Commerce-kanavien kirjanpidon integroinnin määrittäminen](setting-up-fiscal-integration-for-retail-channel.md) -kohdassa kuvatulla tavalla.
 
@@ -123,18 +122,16 @@ Voit ottaa rekisteröintiprosessin käyttöön Commerce headquarters -sovellukse
 1. Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritystiedostot.
 
     1. Avaa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilö.
-    1. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan (esim. **[julkaisu 9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan.
     1. Avaa **src \> FiscalIntegration \> EpsonFP90IIISample**.
-    1. Lataa veroasiakirjan tarjoajan konfigurointitiedosto kohdasta **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Configuration \> DocumentProviderEpsonFP90IIISample.xml** (esim. [julkaisun 9.33 tiedosto](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/CommerceRuntime/DocumentProvider.EpsonFP90IIISample/Configuration/DocumentProviderEpsonFP90IIISample.xml)).
-    1. Lataa veroliittimen konfiguraatiotiedosto kohdasta **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Configuration \> ConnectorEpsonFP90IIISample.xml** (esim. [julkaisun 9.33 tiedosto](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/HardwareStation/EpsonFP90IIIFiscalDeviceSample/Configuration/ConnectorEpsonFP90IIISample.xml).
+    1. Lataa veroasiakirjan tarjoajan määritystiedosto kohdassa **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Määritys \> DocumentProviderEpsonFP90IIISample.xml**.
+    1. Lataa veroliittimen määritystiedosto kohdassa **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Määritys \> ConnectorEpsonFP90IIISample.xml**.
 
-    > [!WARNING]
-    > [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa LCS:ssä. Tämän verointegraatioesimerkin konfiguraatiotiedostot sijaitsevat seuraavissa Retail SDK -sovelluksen kansioissa kehittäjän virtuaalikoneessa LCS:ssä:
+    > [!NOTE]
+    > Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa LCS:ssä. Tämän verointegraatioesimerkin konfiguraatiotiedostot sijaitsevat seuraavissa Retail SDK -sovelluksen kansioissa kehittäjän virtuaalikoneessa LCS:ssä:
     >
     > - **Veroasiakirjan tarjoajan konfigurointitiedosto:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml
     > - **Veroyhdistimen konfigurointitiedosto:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml
-    > 
-    > Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
 
 1. Valitse **Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Kaupan jaetut parametrit**. Määritä **Yleiset**-pikavälilehdessä **Ota kirjanpidon integrointi käyttöön**-asetukseksi **Kyllä**.
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpitoasiakirjan toimittajat**, ja lataa aiemmin lataamasi kirjanpitoasiakirjan toimittajan konfigurointitiedosto.
@@ -256,16 +253,15 @@ Seuraavat asetukset sisältyvät veroyhdistimen konfiguraatioon, joka toimitetaa
 
 ### <a name="configure-channel-components"></a>Määritä kanavakomponentit
 
-> [!WARNING]
-> [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)](emea-ita-fpi-sample-sdk.md).
->
-> Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
+> [!NOTE]
+> - Verotulostimen integrointiesimerkki Italiaa varten on saatavissa Commerce SDK:ssa Commercen versiosta 10.0.29 alkaen. Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)](emea-ita-fpi-sample-sdk.md).
+> - Ympäristössä käyttöönotettuja Commerce-esimerkkejä ei päivitetä automaattisesti, kun Commerce-osien palvelu- tai laatupäivitykset otetaan käyttöön. Vaaditut esimerkit on päivitettävä manuaalisesti.
 
 #### <a name="set-up-the-development-environment"></a>Kehitysympäristön määrittäminen
 
 Suorita nämä vaiheet, kun haluat määrittää kehitysympäristön, jonka avulla voit testata ja laajentaa esimerkkiä.
 
-1. Kloonaa tai lataa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) -säilö. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan. Lisätietoja: [Retail SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md).
+1. Kloonaa tai lataa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) -säilö. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan. Lisätietoja: [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md).
 1. Avaa verotulostimen integraatioratkaisu kohdassa **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln** ja muodosta se.
 1. Asenna CRT-laajennukset:
 
@@ -303,10 +299,10 @@ Luo ja julkaise verointegraatioesimerkin Cloud Scale Unit ja itsepalveluna käyt
 
 ## <a name="design-of-extensions"></a>Laajennusten rakenne
 
-Italian verotulostimen esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Retail SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\EpsonFP90IIISample** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä (esim. [julkaisun 9.33 esimerkki](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) veroasiakirjan tarjoajasta, joka on CRT:n ja veroliittimen laajennus, joka on Commerce Hardware Stationin laajennus. Lisätietoja Retail SDK:n käytöstä on kohdissa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Määritä itsenäisen pakkaus-SDK:n koontiversioputki](../dev-itpro/build-pipeline.md).
+Italian verotulostimen esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Commerce SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\EpsonFP90IIISample** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä. [Esimerkki](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) koostuu veroasiakirjan tarjoajasta, joka on CRT:n laajennus, ja veroliittimestä, joka on Commerce Hardware Stationin laajennus. Lisätietoja Commerce SDK:n käyttämisestä on kohdissa [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja  NuGetista](../dev-itpro/retail-sdk/sdk-github.md) ja [Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä verointegraatioesimerkissä. Retail SDK:n edellistä versiota on käytettävä kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)](emea-ita-fpi-sample-sdk.md). Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
+> [!NOTE]
+> Verotulostimen integrointiesimerkki Italiaa varten on saatavissa Commerce SDK:ssa Commercen versiosta 10.0.29 alkaen. Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa LCS:ssä. Lisätietoja: [Verotulostimen integrointiesimerkkiä koskevat käyttöönoton ohjeet (Italia) (vanha)](emea-ita-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime -laajennusten rakenne
 

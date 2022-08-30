@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 9b4b538e6d50013626739e19fee2a050b630bf7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166872"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334802"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.24 (helmikuu 2022)
 
@@ -48,7 +48,7 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 | Tuotannonhallinta | Tuotantotilausten käytettävissä olevan materiaalin saatavuustarkistus | Tämä ominaisuus nopeuttaa **tuotantotilausten avaamista vapautus**-sivulle, joka on käytettävissä **tuotannonhallinnan** työtilassa. Jos tätä toimintoa ei ole, järjestelmä tarkistaa automaattisesti, onko kaikkien luetteloitujen tuotantotilausten käytettävissä materiaaleja heti, kun avaat sivun. Tämä voi kestää huomattavan kauan, jos tilauksia on paljon. Kun tämä ominaisuus on käytössä, järjestelmä käyttää työkalurivin painiketta, jonka avulla voit käynnistää materiaalien tarkistamisen vain valittujen tilausten osalta ja tarvittaessa. |
 | Tuotannonhallinta | Rekisteröi materiaalinkulutus tuotannon käyttöliittymässä (muu kuin WMS) | Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Tämä toiminto tukee vain nimikkeitä, joita ei ole otettu käyttöön varastonhallintaprosessien (WMS) käytössä. WMS-käytössä olevien nimikkeiden tuki on ajoitettu tulevaan versioon.<p>Joidenkin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen, että materiaalista ei ole mitään materiaalia valmistava. |
 | Tuotannonhallinta | Raportoi valmiiksi pilvi- ja reunamittakaavayksikön varastonhallinnan työmäärästä | Tämän ominaisuuden avulla työntekijät voivat Warehouse Management -mobiilisovelluksen avulla ilmoittaa tuotannon tai erätilauksen valmiiksi, kun sovellus on käynnissä varastonhallinnan kuormitusta pilvipalvelussa tai reunalla. Lisätietoja on kohdassa [Ilmoita valmiiksi ja aseta mittayksikköön](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Varastonhallinta   | Uudet kuormasuunnittelun työtilan sivut | Ottaa käyttöön uudet kuormasuunnittelun työtilan sivut: **Saapuvan kuormasuunnittelun työtila** ja **Lähtevän kuormasuunnittelun työtila**. |
+| Varastonhallinta   | Uudet kuormasuunnittelun työtilan sivut | Lisää uudet kuormasuunnittelun työtilan sivut: **Saapuvan kuormasuunnittelun työtila** ja **Lähtevän kuormasuunnittelun työtila**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit
 

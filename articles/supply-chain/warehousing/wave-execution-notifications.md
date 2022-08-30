@@ -2,7 +2,7 @@
 title: Aallon suoritusilmoitukset
 description: Tässä artikkelissa käsitellään aallon suoritusilmoituksia ja niiden määrittämistä.
 author: Mirzaab
-ms.date: 04/03/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 5c8fa259e51f024d19c1f2f7e84ed7edd0ddb7e1
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: a6a554965c11eea3b4fa53fe4dbc4bac04624026
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069025"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336572"
 ---
 # <a name="wave-execution-notifications"></a>Aallon suoritusilmoitukset
 
@@ -32,7 +32,7 @@ Liiketoimintatapahtumat tapahtuvat, kun liiketoimintaprosesseja suoritetaan. Lii
 
 ## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>Aallon suoritusilmoitukset -toiminnon ottaminen käyttöön tai pois käytöstä
 
-Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Aallon suoritusilmoitukset* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Aallon suoritusilmoitukset* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="scenario-send-wave-batch-execution-notifications-to-the-action-center"></a>Skenaario: Aallon eräsuorituksen ilmoitusten lähettäminen toimintokeskukseen
 

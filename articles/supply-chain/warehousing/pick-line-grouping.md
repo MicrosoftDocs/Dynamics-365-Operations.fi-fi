@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: f9e6cbf0f520f0f30c01cefba03689e9c119f2cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 00a4e07ac38a83cd4569006f3b6e2bdd59ed1a42
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890622"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334532"
 ---
 # <a name="pick-line-grouping"></a>Keräilyrivin ryhmittely
 
@@ -30,7 +30,7 @@ Keräilyrivin ryhmittelyssä useita työrivejä, joilla on sama nimike ja sijain
 
 ## <a name="turn-on-the-pick-line-grouping-feature"></a>Työn keräilyrivien ryhmittelytoiminnon ottaminen käyttöön
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa toiminnon tilan ja ottaa sen tarvittaessa käyttöön. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
+Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa toiminnon tilan ja ottaa sen tarvittaessa käyttöön. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
 
 - **Moduuli:** *Varastonhallinta*
 - **Toiminnon nimi:** *Keräilyrivin ryhmittely*

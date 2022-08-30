@@ -2,7 +2,7 @@
 title: Pääsuunnittelu ja ostokauppasopimukset
 description: Tässä artikkelissa kuvataan, miten suunnittelun optimointi voi löytää suunnitellun tilauksen toimittajan ja/tai läpimenoajan, joka perustuu parhaaseen hintaan tai toimitusaikaan, joka löytyy ostosopimuksista.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873750"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335222"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Pääsuunnittelu ja ostokauppasopimukset
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873750"
 
 Tässä artikkelissa kuvataan, miten suunnittelun optimointi voi löytää suunnitellun tilauksen toimittajan ja/tai läpimenoajan, joka perustuu parhaaseen hintaan tai toimitusaikaan, joka löytyy ostosopimuksista, jotka on määritetty tietylle tuotteelle.
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Ostosopimusten ottaminen käyttöön suunnittelun optimointitoimintoa varten
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Ostosopimusten ottaminen käyttöön suunnittelun optimointitoimintoa varten tai niiden käytöstäpoisto
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [Toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) työtilaa tarkistaakseen toiminnon tilan sekä laittaa sen päälle, jos sitä vaaditaan. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
-
-- **Moduuli:** *Pääsuunnittelu*
-- **Ominaisuuden nimi:** *Ostosopimukset suunnittelun optimointitoimintoa varten*
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Ostokauppasopimukset suunnittelun optimointia varten* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Valmistele järjestelmä arvioimaan ostosopimukset pääsuunnittelun aikana
 

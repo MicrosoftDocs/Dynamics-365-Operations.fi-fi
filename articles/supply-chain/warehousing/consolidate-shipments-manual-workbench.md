@@ -2,7 +2,7 @@
 title: Lähetysten konsolidointi käyttämällä lähetyksen konsolidoinnin työtilaa
 description: Tässä artikkelissa käsitellään skenaariota, jossa useita tilauksia vapautetaan varastoon ja jotka sitten konsolidoidaan lähetyksiksi lähetysten konsolidoinnin työtilassa.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: a33189cdcbb66304eef80558e931209ea236f576
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: db8dc5101b223a0033284d8e6c494721871809d8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218615"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335792"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Lähetysten konsolidointi käyttämällä lähetyksen konsolidoinnin työtilaa
 
@@ -34,14 +34,11 @@ Artikkelin skenaariossa viitataan arvoihin ja tietueisiin, jotka sisältyvät Mi
 
 Tässä skenaariossa oletetaan, että toiminto on jo otettu käyttöön ohjeaiheen [Lähetyksen konsolidointikäytäntöjen määrittäminen](configure-shipment-consolidation-policies.md) harjoitukset on tehty sekä tässä kuvatut käytännöt ja muut tietueet on luotu. Varmista, että nämä harjoitukset on tehty ennen jatkamista tässä skenaariossa.
 
-## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>Manuaalisen lähetyksen konsolidointitoiminnon ottaminen käyttöön
+## <a name="turn-the-manual-shipment-consolidation-feature-on-or-off"></a>Manuaalisen lähetyksen konsolidointitoiminnon ottaminen käyttöön tai poistaminen käytöstä
 
-*Lähetyksen manuaalinen konsolidointi* -toiminto on otettava järjestelmässä käyttöön, ennen kuin sitä voi käyttää. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Jos haluat käyttää manuaalista lähetyksen konsolidointia, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Manuaalinen lähetyksen konsolidointi* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-- **Moduuli:** *Varastonhallinta*
-- **Toiminnon nimi:** *Manuaalinen lähetyksen konsolidointi*
-
-*Konsolidoi lähetys* -toiminto on otettava käyttöön, ennen kuin käytäntöjä voidaan luoda. Lisätietoja: [Lähetyksen konsolidoinnin käytäntöjen määrittäminen](configure-shipment-consolidation-policies.md).
+Ota käyttöön *Konsolidoi lähetys* -toiminto ennen kuin luot käytännöt (Supply Chain Managementin versiosta 10.0.29 alkaen toiminto on pakollinen, eikä sitä voi poistaa käytöstä). Lisätietoja: [Lähetyksen konsolidoinnin käytäntöjen määrittäminen](configure-shipment-consolidation-policies.md).
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Myyntitilausten luonti skenaarioon
 

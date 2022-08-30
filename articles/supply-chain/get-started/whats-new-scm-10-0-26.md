@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: b44b044bf10115a7fcaf347a3b6f1759c2a68cb6
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219061"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334712"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.26. (toukokuu 2022)
 
@@ -51,7 +51,6 @@ Jos haluat ottaa jonkin näistä ominaisuuksista käyttöön tai poistaa ne käy
 | Tuotetietojen hallinta | Tyhjennä tuotemääritearvot | Tämä ominaisuus lisää kausittaisen **Tyhjennä tuotemääritearvot** -nimisen tehtävän, joka tyhjentää tuotemääritteen arvotietueet, joita ei enää ole liitetty mihinkään tuotteeseen tuoteluokan kautta. |
 | Varastonhallinta | (Venäjä) Estä ristiriidat, kun GTD-ilmoituksia käytetään ostotilauksissa, joissa on varastonhallintajärjestelmää käyttäviä nimikkeitä | Tämä ominaisuus on tarkoitettu vain Venäjän lokalisointiin. Se estää ristiriitoja, jotka tapahtuvat, kun myönnetään Venäjän tulli-ilmoitusnumeroita (GTD) tuontiostotilauksiin, joissa on varastonhallintaprosesseja (WMS) käyttäviä nimikkeitä. GTD:n myöntämisprosessi muuttaa mukautettuun kirjauskansioon sisältyvien laskujen liittyvien varastotapahtumien varastodimensioarvoja, mikä aiheuttaa ristiriidan ostotilauksen työtietueiden ja oston varastotapahtumien välillä. Kun tämä ominaisuus on käytössä, GTD-myöntämisprosessi luo oikaisutyöt, jotka eliminoivat tällaiset ristiriidat. |
 | Varastonhallinta   | GS1-viivakoodien parannettu jäsennin | Tämä ominaisuus lisää GS1-symbolitietojen parannetun jäsentimen. Uusi jäsennin ottaa käyttöön GS1-yleismääritysalgoritmin GS1-symbolien jäsentämiseen ja antaa vahvempia tietojen oikeellisuustarkistuksia. Lisätietoja on kohdassa [GS1-viivakoodin skannaus](../warehousing/gs1-barcodes.md). |
-| Varastonhallinta   | Uudet kuormasuunnittelun työtilan sivut | Lisää uudet kuormasuunnittelun työtilan sivut: **Saapuvan kuormasuunnittelun työtila** ja **Lähtevän kuormasuunnittelun työtila**. |
 | Varastonhallinta   | Warehouse Management -sovellus – tyhjä GTD | Tämä ominaisuus on tarkoitettu vain Venäjän lokalisointiin. Warehouse Management -mobiilisovellusta käyttävät työntekijät voivat tarvittaessa jättää Venäjän tulli-ilmoitusnumerot (GTD) tyhjiksi. Jos GTD-seurantadimensio on määritetty sallimaan tyhjät arvot, järjestelmä hyväksyy GTD:n tyhjät arvot käytettävissä olevan varaston käytettävissä olevalle varastolle. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Uudet ja päivitetyt asiakirjaresurssit

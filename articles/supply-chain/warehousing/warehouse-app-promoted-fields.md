@@ -2,7 +2,7 @@
 title: Korotettujen kenttien määrittäminen Warehouse Managementin mobiilisovelluksen vaiheita varten
 description: Tässä artikkelissa kuvataan, miten korotetaan ja korostetaan tiettyjä tietoja minkä tahansa Warehouse Managementin mobiilisovelluksen vaiheen osalta.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218971"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336062"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Korotettujen kenttien määrittäminen Warehouse Managementin mobiilisovelluksen vaiheita varten
 
@@ -29,19 +29,12 @@ Tässä artikkelissa kuvataan, miten korotetaan ja korostetaan tiettyjä tietoja
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Korotettujen kenttien käyttöönotto järjestelmässä
 
-Ennen kuin voit määrittää korotettuja kenttiä, sinun suoritettava seuraava menettely, jolla otetaan käyttöön tarvittavat ominaisuudet ja luodaan tarvittavat kenttänimet Warehouse Managementin mobiilisovelluksessa.
+Jos käytössä on Supply Chain Managementin version 10.0.28 tai aiempi versio, sinun suoritettava ennen korotettuja kenttien määrittämistä seuraava menettely, jolla otetaan käyttöön tarvittavat toiminnot ja luodaan tarvittavat kenttänimet Warehouse Managementin mobiilisovelluksessa. Jos käytössä on Supply Chain Managementin versio 10.0.29 tai uudempi versio, toiminnot ovat pakollisia, eikä niitä voi poistaa käytöstä. Voit siis ohittaa tämän menettelyn.
 
-1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
-1. Varmista, että *Varastosovelluksen vaiheohjeet* -ominaisuus on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md). Tämä ominaisuus on edellytys *Varastosovelluksen korotetut kentät* -ominaisuudelle.
-1. Ota luetteloitu toiminto käyttöön seuraavasti:
-
-    - **Moduuli:** *Varastonhallinta*
-    - **Ominaisuuden nimi:** *Varastosovelluksen korotetut kentät*
-
-    Tämä ominaisuus kuvataan tässä artikkelissa.
-
-1. Päivitä Warehouse Management -mobiilisovelluksen kenttänimet siirtymällä kohtaan **Varastonhallinta \> Määritys \> Mobiililaite \> Varastosovelluksen kenttänimet** ja valitsemalla **Luo oletusmääritys**. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
-1. Toista edellinen vaihe kullekin yritykselle, jossa käytät Warehouse Management -mobiilisovellusta.
+1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**. (Katso lisätietoja tästä sivusta kohdasta [Toimintojen hallinnan yleiskuvaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
+1. Varmista, että *Varastosovelluksen vaiheohjeet* -ominaisuus on käytössä järjestelmässäsi. Tämä ominaisuus on edellytys *Varastosovelluksen korotetut kentät* -ominaisuudelle. Supply Chain Managementin versiosta 10.0.29 alkaen se on pakollinen, eikä sitä voi poistaa käytöstä. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md).
+1. Varmista, että *Varastosovelluksen ylemmälle tasolle siirretyt kentät* -toiminto on käytössä järjestelmässäsi. Tätä toimintoa käsitellään tässä artikkelissa. Supply Chain Managementin versiosta 10.0.29 alkaen se on pakollinen, eikä sitä voi poistaa käytöstä.
+1. Päivitä Warehouse Management -mobiilisovelluksen kenttänimet siirtymällä kohtaan **Varastonhallinta \> Määritys \> Mobiililaite \> Varastosovelluksen kenttänimet** ja valitsemalla **Luo oletusmääritys**. Toista tämä vaihe jokaiselle yritykselle, jossa käytät Warehouse Management -mobiilisovellusta. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Valikkokohtaisen ohituksen korotettujen kenttien määrittäminen
 

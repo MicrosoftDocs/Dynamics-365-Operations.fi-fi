@@ -2,7 +2,7 @@
 title: Lähtevän kuormituksen visualisointi
 description: Tässä artikkelissa on tietoja lähtevän kuormituksen visualisoinnista. Varastopäälliköt ja työnjohtajat voivat luoda tällä toiminnolla mukautettuja kuormituskaavioita, joilla voidaan seurata nykyisen työn edistymistä ja jäljellä olevia summia. Varastopäälliköt voivat luoda useita näkymiä ja määrittää tarvittavan automaattisen päivityksen.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0e5a2cd2aa458217ff212d45c0dd13c9d0623bd0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 78d0d81095bb52a314936dd7590a5690d94ecb15
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851330"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334412"
 ---
 # <a name="outbound-workload-visualization"></a>Lähtevän kuormituksen visualisointi
 
@@ -29,7 +29,7 @@ Tämän toiminnon avulla voidaan seurata keräilytyön etenemistä. Tämä toimi
 
 ## <a name="turn-the-outbound-workload-visualization-feature-on-or-off"></a>Lähtevän kuormituksen visualisointitoiminnon ottaminen käyttöön tai pois käytöstä
 
-Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Lähtevän kuormituksen visualisointi* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Lähtevän kuormituksen visualisointi* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-outbound-workload-visualizations"></a>Lähtevän kuormituksen visualisoinnin määrittäminen
 

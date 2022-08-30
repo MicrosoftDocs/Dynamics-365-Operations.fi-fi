@@ -2,7 +2,7 @@
 title: Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
 description: Tässä artikkelissa kuvataan, miten voidaan määrittää kiertoteitä valikkokohteille, jotta työntekijät voivat pysäyttää kulloisenkin tehtävän, suorittaa toisen tehtävän ja palata alkuperäiseen tehtävään tietoja menettämättä.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219001"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336122"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille
 
@@ -35,9 +35,8 @@ Ennen kuin voit määrittää mobiililaitteiden valikkokohteiden vaiheiden kiert
 
 1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**.
 1. Varmista, että *Varastosovelluksen vaiheohjeet* -ominaisuus on käytössä järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md). Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen kiertotiet* -ominaisuudelle.
-1. Ota *Warehouse Management -sovelluksen kiertotiet* -ominaisuus käyttöön. Tämä ominaisuus kuvataan tässä artikkelissa.
-1. Päivitä Warehouse Management -mobiilisovelluksen kenttänimet siirtymällä kohtaan **Varastonhallinta \> Määritys \> Mobiililaite \> Varastosovelluksen kenttänimet** ja valitsemalla **Luo oletusmääritys**. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
-1. Toista edellinen vaihe kullekin yritykselle, jossa käytät Warehouse Management -mobiilisovellusta.
+1. Ota *Warehouse Management -sovelluksen kiertotiet* -ominaisuus käyttöön. Tämä ominaisuus kuvataan tässä artikkelissa. Supply Chain Managementin versiosta 10.0.29 alkaen se on poistettu oletusarvoisesti käytöstä.
+1. Jos *Warehouse Management -sovelluksen kiertotiet* -ominaisuus ei ole vielä käytössä, päivitä kenttien nimet Warehouse Management -mobiilisovelluksessa valitsemalla **Varastonhallinta \> Asetukset \> Mobiililaite \> Varastosovelluksen kenttien nimet** ja valitsemalla **Luo oletusasetus**. Toista tämä vaihe jokaiselle yritykselle, jossa käytät Warehouse Management -mobiilisovellusta. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Valikkokohtaisen ohituksen kiertotien määrittäminen
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066667"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306315"
 ---
 # <a name="configure-inventory-visibility"></a>Inventory Visibilityn määrittäminen
 
@@ -52,7 +52,7 @@ Varaston näkyvyyden lisäosa lisää Power Apps-asennukseen useita uusia ominai
 | Ominaisuuksien hallinnan nimi | Kuvaus |
 |---|---|
 | *OnHandReservation* | Tämä ominaisuus auttaa sinua luomaan varauksia, käyttämään varauksia ja/tai poistamaan määritettyjen varastomäärien varauksia varaston näkyvyyssovelluksella. Lisätietoja on kohdassa [Varaston näkyvyyden varaukset](inventory-visibility-reservations.md). |
-| *OnHandMostSpecificBackgroundService* | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnHandMostSpecificBackgroundService* | Tämä ominaisuus sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä. Synkronoinnin oletustiheys on 15 minuuttia. Se voidaan määrittää tehtäväksi enintään 5 minuutin välein. Lisätietoja on kohdassa [Varastoyhteenveto](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Tämä valinnainen ominaisuus ottaa käyttöön käytettävissä olevan vaihtoaikataulun ja luvattavissa olevan määrän (ATP) ominaisuudet. Lisätietoja on kohdassa [Käytettävissä olevan varaston näkyvyyden muutosaikataulu ja luvattavissa ole aikataulu](inventory-visibility-available-to-promise.md). |
 | *Varaus* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys voi mahdollistaa varaston suojauksen (ringfencing) ja ylimyynnin hallinnan. Lisätietoja on kohdassa [Varaston näkyvyyden varaston kohdistus](inventory-visibility-allocation.md). |
 | *Ota varastonimikkeet käyttöön Varaston näkyvyys -kohdassa* | Tämän valinnaisen ominaisuuden avulla varaston näkyvyys tukee nimikkeitä, jotka on otettu käyttöön varastonhallintaprosesseissa (WMS). Lisätietoja on kohdassa [Varaston näkyvyyden tuki WMS-nimikkeille](inventory-visibility-whs-support.md). |

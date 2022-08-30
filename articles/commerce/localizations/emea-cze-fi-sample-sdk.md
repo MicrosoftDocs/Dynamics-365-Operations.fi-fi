@@ -2,25 +2,29 @@
 title: Verorekisteröintipalvelun integroinnin esimerkkiä koskevat käyttöönoton ohjeet (Tšekin tasavalta) (vanha)
 description: Tässä artikkelissa on ohjeita Tšekin tasavallan verointegroinnin esimerkin käyttöönottamiseksi Microsoft Dynamics 365 Commerce Retail -ohjelmistokehityspaketista (SDK).
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: d689e5b48fb8274a58d0c3a18e70b598aca2c310
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8338b1e11e1bd4fe7482b914ac6bf5f60ebc2e36
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287535"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313826"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Verorekisteröintipalvelun integroinnin esimerkkiä koskevat käyttöönoton ohjeet (Tšekin tasavalta) (vanha)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Tässä artikkelissa on ohjeita, jotka koskevat Tšekin tasavallan verorekisteröintipalvelun integroinnin käyttöönottoa Microsoft Dynamics 365 Commerce Retail -ohjelmistokehityspaketista (SDK) kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja verointegroinnin esimerkistä on kohdassa [Verorekisteröintipalvelun integroinnin esimerkki (Tšekin tasavalta)](emea-cze-fi-sample.md). 
+> [!IMPORTANT]
+> Seuraa tämän artikkelin ohjeita vain, jos käytössä on Microsoft Dynamics 365 Commercen versio 10.0.28 tai aiempi versio. Tšekin tasavallan verorekisteröintipalvelun integraatioesimerkki on saatavilla Commercen versiosta 10.0.29 alkaen Commerce SDK:ssa. Lisätietoja on kohdassa [Kanavan osien määrittäminen](./emea-cze-fi-sample.md#configure-channel-components).
+
+Tässä artikkelissa on ohjeita, jotka koskevat Tšekin tasavallan verorekisteröintipalvelun integroinnin käyttöönottoa Dynamics 365 Commerce Retail SDK:sta kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja verointegroinnin esimerkistä on kohdassa [Verorekisteröintipalvelun integroinnin esimerkki (Tšekin tasavalta)](emea-cze-fi-sample.md). 
 
 Tšekin tasavallan verointegraation esimerkki kuuluu Retail SDK -pakettiin. Lisätietoja SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md). Tämä esimerkki koostuu Commerce runtime (CRT)- ja Hardware Station -laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT- ja Hardware Station -projektit. Suosittelemme, että teet tässä artikkelissa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Azure DevOpsia, jossa tiedostoja ei ole vielä muutettu.
 

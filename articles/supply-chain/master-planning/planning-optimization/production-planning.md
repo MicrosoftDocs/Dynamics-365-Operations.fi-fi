@@ -2,7 +2,7 @@
 title: Tuotannon suunnittelu
 description: Tässä artikkelissa käsitellään tuotannon suunnittelua ja suunniteltujen tuotantotilausten muokkaamista tuotannon optimoinnin avulla.
 author: t-benebo
-ms.date: 06/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873779"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335252"
 ---
 # <a name="production-planning"></a>Tuotannon suunnittelu
 
@@ -26,9 +26,9 @@ Suunnittelun optimointi tukee useita tuotantoskenaarioita. Jos siirtyminen tapah
 
 Seuraavassa videossa esitetään lyhyt johdanto joihinkin tässä artikkelissa käsiteltyihin käsitteisiin: [Dynamics 365 Supply Chain Management: Suunnitteluoptimoinnin parannukset](https://youtu.be/u1pcmZuZBTw).
 
-## <a name="turn-on-this-feature-for-your-system"></a>Tämän ominaisuuden ottaminen käyttöön järjestelmällesi
+## <a name="turn-this-feature-on-or-off-for-your-system"></a>Tämän toiminnon käyttöönotto tai käytöstäpoisto järjestelmässä
 
-Jos järjestelmäsi ei vielä sisällä tässä artikkelissa kuvattuja ominaisuuksia, avaa [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ota *Suunnitellut tuotantotilaukset tuotannon optimoinnille* -ominaisuus käyttöön.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Suunnittelun optimoinnin suunnitellut tuotantotilaukset* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="planned-production-orders"></a>Suunnitellut tuotantotilaukset
 

@@ -2,7 +2,7 @@
 title: Suunnittelun muutostenhallinnan yleiskatsaus (sisältää videon)
 description: Tässä artikkelissa on yleiskatsaus suunnittelun muutostenhallintaan, jonka avulla voi suunnitella ja hallita tuotteen versiointia sekä hallita tuotteen elinkaaria ja suunnittelun muutoksia.
 author: t-benebo
-ms.date: 01/11/2022
+ms.date: 08/09/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067389"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334862"
 ---
 # <a name="engineering-change-management-overview"></a>Suunnittelun muutostenhallinnan yleiskuvaus
 
@@ -76,16 +76,16 @@ Ota seuraavaksi määritysavaimet käyttöön seuraavia vaiheita noudattamalla. 
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Suunnittelun muutostenhallinnan lisäominaisuuksien ottaminen käyttöön
 
-Kun olet ottanut suunnittelun muutostenhallinnan perusominaisuudet ja niiden määritysavaimet käyttöön, ominaisuuksien hallintaan lisätään useita suunnittelun muutostenhallinnan lisäominaisuuksia ja valinnaisia ominaisuuksia. Kaikki nämä ominaisuudet on lueteltu **Suunnittelun muutostenhallinta** -moduulissa. Seuraavassa taulukossa kuvataan kaikki lisäominaisuudet ja annetaan linkkejä lisätietoihin. Supply Chain Managementin versiosta 10.0.25 alkaen kaikki nämä toiminnot ovat oletusarvoisesti käytössä, mutta voit edelleen poistaa ne käytöstä.
+Kun olet ottanut suunnittelun muutostenhallinnan perusominaisuudet ja niiden määritysavaimet käyttöön, ominaisuuksien hallintaan lisätään useita suunnittelun muutostenhallinnan lisäominaisuuksia ja valinnaisia ominaisuuksia. Kaikki nämä ominaisuudet on lueteltu **Suunnittelun muutostenhallinta** -moduulissa. Seuraavassa taulukossa kuvataan kaikki lisäominaisuudet ja annetaan linkkejä lisätietoihin.
 
 | Ominaisuuden nimi ominaisuuksienhallinnassa | Kuvaus | Ominaisuuden tila |
 |---|---|---|
-| Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön | <p>Tämän ominaisuuden avulla voit muuntaa olemassa olevia tuotteita suunnittelutuotteiksi, jotta voit alkaa hallita niitä käyttäen suunnittelun muutostenhallintaa.</p><p>Lisätietoja: [Ota olemassa olevien tuotteiden muutostenhallinta käyttöön](change-management-existing-products.md).</p> |
-| Suunnittelun ilmoitukset tuotannolle | <p>Kun tuotetta muutetaan suunnittelussa, voi olla tärkeää ilmoittaa muutoksista tuotantoon. Tällöin tuotantotyöntekijät voivat ryhtyä asianmukaisiin toimenpiteisiin, kuten komponenttien korvaamiseen, tuoterakenteen korvaamiseen tai reitityksen korvaamiseen. Tämän ominaisuuden avulla voit ilmoittaa tuotantoon tuotettavien tuotteiden muutoksista.</p><p>Lisätietoja on kohdassa [Suunnittelutuotteiden muutosten hallinta](engineering-change-management.md).</p> |
-| Parannettu suunnittelun muutostenhallinnan määritteiden periytyvyys | <p>Tämä ominaisuus yksinkertaistaa valmiiden tuotteiden tai välinimikkeiden määritteiden hallintaa. Kun tämä ominaisuus on käytössä, on helpompi tunnistaa kaikki nimikkeelle kuuluvat määritteet. Voit myös valita määritteet, jotka välitetään kyseiseltä nimikkeeltä päänimikkeelle. Tämä ominaisuus on hyödyllinen esimerkiksi silloin, kun jokin valmiin tuotteen komponentti on särkyvä, myrkyllinen tai helposti syttyvä, koska voit helposti tunnistaa särkyvän, myrkyllisen tai helposti syttyvän määritteen ja välittää sen valmiiseen tuotteeseen.</p><p>Lisätietoja: [Suunnittelumääritteet ja suunnittelumääritteiden haku](engineering-attributes-and-search.md).</p> |
-| Tuotteen valmiustarkistukset | <p>Tämän toiminon avulla voit määrittää vakiotuotteille (ei suunniteltu) suoritettavia valmiustarkistuksia. Tuotteiden valmiustarkistusten avulla voit varmistaa, että kukin tuote on täydellisesti määritetty ja että kaikki tarvittavat käytännöt on määritetty, ennen kuin tuote otetaan käyttöön ja sitä käytetään tapahtumissa. Jos poistat tämän ominaisuuden käytöstä, kun olet käyttänyt sitä jonkin aikaa, kaikki vakiotuotteiden valmiustarkistukset poistetaan.</p><p>Lisätietoja on kohdassa [Tuotteen valmius](product-readiness.md).</p> |
-| Hallitse kaavojen ja niiden ainesosien muutoksia | <p>Tämän ominaisuuden avulla voit seurata muutoksia reseptin ainesosiin, oheistuotteisiin ja sivutuotteisiin.</p><p>Lisätietoja on kohdassa [Kaavojen ja niiden osien muutosten hallinta](manage-formula-changes.md).</p> |
-| Muuttujien luominen suunnittelun tuotteille | <p>Tämän ominaisuuden avulla voit luoda suunnittelutuotteiden muuttuja käytettävissä olevien dimensioarvojen perusteella.</p><p>Lisätietoja [Versioiden luominen suunnittelutuotteista](engineering-variants.md).</p> |
+| Aiemmin luotujen tuotteiden muutostenhallinnan ottaminen käyttöön | <p>Tämän ominaisuuden avulla voit muuntaa olemassa olevia tuotteita suunnittelutuotteiksi, jotta voit alkaa hallita niitä käyttäen suunnittelun muutostenhallintaa.</p><p>Lisätietoja: [Ota olemassa olevien tuotteiden muutostenhallinta käyttöön](change-management-existing-products.md).</p> | Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. |
+| Suunnittelun ilmoitukset tuotannolle | <p>Kun tuotetta muutetaan suunnittelussa, voi olla tärkeää ilmoittaa muutoksista tuotantoon. Tällöin tuotantotyöntekijät voivat ryhtyä asianmukaisiin toimenpiteisiin, kuten komponenttien korvaamiseen, tuoterakenteen korvaamiseen tai reitityksen korvaamiseen. Tämän ominaisuuden avulla voit ilmoittaa tuotantoon tuotettavien tuotteiden muutoksista.</p><p>Lisätietoja on kohdassa [Suunnittelutuotteiden muutosten hallinta](engineering-change-management.md).</p> |  Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. |
+| Parannettu suunnittelun muutostenhallinnan määritteiden periytyvyys | <p>Tämä ominaisuus yksinkertaistaa valmiiden tuotteiden tai välinimikkeiden määritteiden hallintaa. Kun tämä ominaisuus on käytössä, on helpompi tunnistaa kaikki nimikkeelle kuuluvat määritteet. Voit myös valita määritteet, jotka välitetään kyseiseltä nimikkeeltä päänimikkeelle. Tämä ominaisuus on hyödyllinen esimerkiksi silloin, kun jokin valmiin tuotteen komponentti on särkyvä, myrkyllinen tai helposti syttyvä, koska voit helposti tunnistaa särkyvän, myrkyllisen tai helposti syttyvän määritteen ja välittää sen valmiiseen tuotteeseen.</p><p>Lisätietoja: [Suunnittelumääritteet ja suunnittelumääritteiden haku](engineering-attributes-and-search.md).</p> |  Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. |
+| Tuotteen valmiustarkistukset | <p>Tämän toiminon avulla voit määrittää vakiotuotteille (ei suunniteltu) suoritettavia valmiustarkistuksia. Tuotteiden valmiustarkistusten avulla voit varmistaa, että kukin tuote on täydellisesti määritetty ja että kaikki tarvittavat käytännöt on määritetty, ennen kuin tuote otetaan käyttöön ja sitä käytetään tapahtumissa. Jos poistat tämän ominaisuuden käytöstä, kun olet käyttänyt sitä jonkin aikaa, kaikki vakiotuotteiden valmiustarkistukset poistetaan.</p><p>Lisätietoja on kohdassa [Tuotteen valmius](product-readiness.md).</p> |  Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. |
+| Hallitse kaavojen ja niiden ainesosien muutoksia | <p>Tämän ominaisuuden avulla voit seurata muutoksia reseptin ainesosiin, oheistuotteisiin ja sivutuotteisiin.</p><p>Lisätietoja on kohdassa [Kaavojen ja niiden osien muutosten hallinta](manage-formula-changes.md).</p> |  Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. |
+| Muuttujien luominen suunnittelun tuotteille | <p>Tämän ominaisuuden avulla voit luoda suunnittelutuotteiden muuttuja käytettävissä olevien dimensioarvojen perusteella.</p><p>Lisätietoja [Versioiden luominen suunnittelutuotteista](engineering-variants.md).</p> |  Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

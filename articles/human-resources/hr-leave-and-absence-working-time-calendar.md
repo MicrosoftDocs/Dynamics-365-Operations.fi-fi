@@ -14,18 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 35fcb7c4068ff2f68970d9c0127491e4a63dab4c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dac3ad583be9e4cbd6eacbc6d228819bd298628b
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861070"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323570"
 ---
 # <a name="create-a-working-time-calendar"></a>Työaikakalenterin luominen
 
-
-> [!Important]
-> Tässä artikkelissa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -49,7 +46,7 @@ Määritä vähintään yksi työaikakalenteri, joka näyttää päivät ja työ
 
 3. Valitse **Luonnin asetukset**-kohdasta organisaation työpäivät ja määritä työajat. 
    - Jos haluat lisätä loman tai sulkemisen, valitse **Lomien ja sulkemisten** vieressä oleva **Lisää**-painike.
-   - Jos haluat lisätä muun kuin työajan, kuten lounaan tai tauon, valitse **Lisää** **Muu kuin työaika** -kohdassa ja kirjoita nimi ja aikaväli.
+   - Jos haluat lisätä muun kuin työajan, kuten lounaan tai tauon, valitse **Lisää**-vaihtoehto **Muu kuin työaika** -kohdassa ja kirjoita nimi ja aikaväli.
 
 4. Valitse **Päivät**-kohdassa **Luo** päivien luomiseksi kalenteriin. Kirjoita kalenterin päivämääräväli ja valitse **Luo päiviä**.
 
@@ -67,7 +64,7 @@ Voit lisätä tai muuttaa lomia ja sulkemisia erillään työaikakalenterista.
 
 Voit lisätä tai muuttaa muita kuin työaikoja erillään työaikakalenterista.
 
-1. Valitse **Organisaation hallinto** -sivulla **MUU KUIN TYÖAIKA**.
+1. Valitse **Organisaation hallinto** -sivulta **Muu kuin työaika**.
 
 2. Valitse **Uusi** ja kirjoita vapaa-ajan nimi ja aika-alue.
 

@@ -2,7 +2,7 @@
 title: Aaltojen luominen ja käsittely
 description: Tässä artikkelissa kuvataan, kuinka aalto luodaan, käsitellään ja vapautetaan keräilytyön luomiseksi kuormalle, lähetykselle, tuotantotilaukselle tai kanban-tilaukselle.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 0466019990773ee93e063a255c15a7d64eecdf78
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9014616"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336002"
 ---
 # <a name="wave-creation-and-processing"></a>Aaltojen luominen ja käsittely
 
@@ -191,7 +191,7 @@ Tarvittaessa voit peruuttaa aallon, joka on käsitelty. Voit peruuttaa aallon ja
 
 ### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Ota Aallon eräajon tiedot -sivu käyttöön tai pois käytöstä
 
-Supply Chain Managementin versiosta 10.0.25 alkaen **Aallon erätyön tiedot** -sivu on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Aallon erätyön tiedot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Aallon erätyön tiedot* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Käytä Aallon eräajon tiedot -sivua
 

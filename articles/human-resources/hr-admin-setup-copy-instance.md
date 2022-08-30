@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178530"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324257"
 ---
 # <a name="copy-an-instance"></a>Kopioi esiintymä
 
@@ -47,13 +47,14 @@ Esiintymää kopioitaessa kannattaa muistaa seuraavat vinkit:
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Human Resources -tietokannan kopioinnin vaikutukset
 
+> [!Note]
+> Vuoden 2022 elokuusta alkaen Microsoft Azure Blob -tallennustilan asiakirjat sisällytetään, kun tuotantoympäristö kopioidaan eristysympäristöön. Kaikki liitetyt asiakirjat ja mallit kopioidaan lähdeympäristöstä kohdeympäristöön.
+
 Human Resources -tietokannan kopioinnin yhteydessä tapahtuu seuraavaa:
 
 - Kopiointiprosessi poistaa aiemmin luodun tietokannan kohdeympäristöstä. Kun kopiointiprosessi on suoritettu, et voi palauttaa aiemmin luotua tietokantaa.
 
 - Kohdeympäristö ei ole käytettävissä, ennen kuin kopiointiprosessi on valmis.
-
-- Microsoft Azure Blob -tallennustilassa olevia asiakirjoja ei kopioida ympäristöstä toiseen. Tämän vuoksi liitettyjä asiakirjoja ja malleja ei kopioida, ja ne jäävät lähdeympäristöön.
 
 - Mitkään käyttäjät, paitsi käyttäjät, joilla on järjestelmänvalvojan käyttöoikeusrooli ja muu sisäisen palvelun käyttäjätili, eivät ole käytettävissä. Järjestelmänvalvojakäyttäjä voi poistaa tietoja, ennen kuin muut käyttäjät pääsevät takaisin järjestelmään.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852502"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306111"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Varaston näkyvyyden varaston kohdistus
 
@@ -63,12 +63,11 @@ Varaston kohdistustoiminto koostuu seuraavista osista:
 - Ennalta määritetyt kohdistukseen liittyvä tietolähde, fyysiset mitat ja laskennalliset mitat.
 - Mukautettavat kohdistusryhmät, joilla on enintään kahdeksan tasoa.
 - Joukko kohdistuksen ohjelmointirajapintoja:
-
-    - kohdista
-    - uudelleenkohdista
-    - poista kohdistus
-    - kuluta
-    - kysely
+  - kohdista
+  - uudelleenkohdista
+  - poista kohdistus
+  - kuluta
+  - kysely
 
 Kohdistusominaisuuden konfiguroinnissa on kaksi vaihetta:
 
@@ -84,23 +83,26 @@ Tietolähde on nimeltään `@iv`.
 Alkuperäiset fyysiset määreet ovat seuraavat:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Alkuperäiset lasketut määreet ovat seuraavat:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Lisää muita fyysisiä määreitä laskettuun käytettävissä kohdistuksessa -määreeseen
 
 Kohdistusta varten on määritettävä laskettu käytettävissä kohdistuksessa -määre (`@iv.@available_to_allocate`). Sinulla on esimerkiksi `fno`-tietolähde ja `onordered`-määre, `pos`-tietolähde ja `inbound`-määre, ja haluat tehdä kohdistuksen käytettävissä olevaan summalla `fno.onordered` ja `pos.inbound`. Tässä tapauksessa `@iv.@available_to_allocate`:n tulisi sisältää `pos.inbound` ja `fno.onordered` kaavassa. Tässä on esimerkki:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
+
+> [!NOTE]
+> Tietolähde `@iv` on ennalta määritetty tietolähde. Kohdassa `@iv` etuliitteen `@` kanssa määritetyt fyysiset mittausarvot ovat ennalta määritettyjä mittausarvoja. Nämä mittausarvot ovat kohdistustoiminnon ennalta määritetty määritys, joten niitä ei voi muuttaa eikä poistaa. Jos näin tehdään, kohdistustoiminnon käyttämisen yhteydessä tapahtuu todennäköisesti odottamattomia virheitä.
+>
+> Voit lisätä uusia fyysisiä mittausarvoja ennalta määritettyyn laskettuun mittausarvoon `@iv.@available_to_allocate`, mutta sen nimeä ei saa muuttaa.
 
 ### <a name="change-the-allocation-group-name"></a>Kohdistusryhmän nimen muuttaminen
 
@@ -136,7 +138,7 @@ Kutsu `Allocate`-ohjelmointirajapintaa kohdistaaksesi tuotteen, jolla on erityis
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Haluat esimerkiksi kohdistaa 10 kappaleen määrän tuotetta *Polkupyörä*, toi
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Käytä `Reallocate`-ohjelmointirajapintaa siirtääksesi jonkin kohdistetun mä
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Voit esimerkiksi siirtää kaksi polkupyörää, joilla on dimensiot \[toimipaik
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Käytä `Consume`-ohjelmointirajapintaa kirjataksesi kulutetun määrän kohdist
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Nyt on myyty kolme polkupyörää, ja ne on otettu kohdistusjoukosta. Voit rekis
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ Kun haluat kuluttaa määrän 3 ja varata suoraan tämän määrän, voit tehdä
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1f8a6de85f68a924a8d285d8cdd306ab774661fb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6303af9a9d4d4565deba9ca8893535554d03c274
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897803"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335012"
 ---
 # <a name="maintenance-plans"></a>Ylläpitosuunnitelmat
 
@@ -202,7 +202,7 @@ Seuraavassa kuvassa on esimerkki **Kaikki resurssit**-sivulla resurssille määr
 
 ### <a name="turn-on-the-counter-based-maintenance-enhancements-feature"></a>Laskuripohjaiset ylläpidon parannukset -toiminnon ottamine käyttöön
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Resurssien hallinta*
 - **Toiminnon nimi:** *Laskuripohjaiset ylläpidon parannukset*

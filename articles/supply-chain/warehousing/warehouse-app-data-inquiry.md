@@ -2,7 +2,7 @@
 title: Tietojen kyseleminen Warehouse Management ‑mobiilisovelluksen kiertoteillä
 description: Tässä artikkelissa kuvataan, kuinka tietoja kyselevät mobiililaitteen valikkovaihtoehdot määritetään ja kuinka niitä käytetään osana kiertoteitä.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220537"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336602"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Tietojen kyseleminen Warehouse Management ‑mobiilisovelluksen kiertoteillä
 
@@ -35,19 +35,19 @@ Oletetaan esimerkiksi, että ostotilauksen numeron täytyy vastata saapuvaa vara
 Ennen kuin voit käyttää tässä artikkelissa kuvattuja toimintoja, sinun täytyy ottaa vaaditut ominaisuudet käyttöön noudattamalla seuraavia ohjeita.
 
 1. Valitse **Järjestelmänvalvoja \> Työtilat \> Ominaisuuksien hallinta**. (Lisätietoja **Ominaisuuksien hallinta** -työtilan käyttämisestä on kohdassa [Ominaisuuksien hallinnan yleiskatsaus](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Ota luettelossa näytetty ominaisuus käyttöön seuraavalla tavalla:
+1. Jos käytössä on Supply Chain Managementin versio 10.0.28 tai aiempi versio, tämä toiminto otetaan käyttöön seuraavasti:
 
     - **Moduuli:** *Varastonhallinta*
     - **Toiminnon nimi:** *Varastosovelluksen vaiheohjeet*
 
-    Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen tietokyselyn kulku* -ominaisuudelle. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md).
+    Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen tietokyselyn kulku* -ominaisuudelle. Supply Chain Managementin versiosta 10.0.29 alkaen se on pakollinen, eikä sitä voi poistaa käytöstä. Lisätietoja *Varastosovelluksen vaiheohjeet*-toiminnosta: [Vaiheotsikkojen ja ohjeiden mukauttaminen Warehouse Management -mobiilisovelluksessa](mobile-app-titles-instructions.md).
 
 1. Ota luettelossa näytetty ominaisuus käyttöön seuraavalla tavalla:
 
     - **Moduuli:** *Varastonhallinta*
     - **Ominaisuuden nimi:** *Warehouse Management -sovelluksen kiertotiet*
 
-    Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen tietokyselyn kulku* -ominaisuudelle. Lisätietoja *Warehouse Management -sovelluksen kiertotiet* -ominaisuudesta on kohdassa [Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille](warehouse-app-detours.md).
+    Tämä ominaisuus on edellytys *Warehouse Management -sovelluksen tietokyselyn kulku* -ominaisuudelle. Supply Chain Managementin versiosta 10.0.29 alkaen se on poistettu oletusarvoisesti käytöstä. Lisätietoja *Warehouse Management -sovelluksen kiertotiet* -ominaisuudesta on kohdassa [Kiertoteiden määritys mobiililaitteiden valikkokohteiden vaiheille](warehouse-app-detours.md).
 
 1. Jos *Warehouse Management -sovelluksen kiertotiet* -ominaisuus ei ole vielä käytössä, päivitä kenttien nimet Warehouse Management -mobiilisovelluksessa valitsemalla **Varastonhallinta \> Asetukset \> Mobiililaite \> Varastosovelluksen kenttien nimet** ja valitsemalla **Luo oletusasetus**. Toista tämä vaihe jokaiselle yritykselle, jossa käytät Warehouse Management -mobiilisovellusta. Lisätietoja: [Varastonhallinnan mobiilisovelluksen kenttien konfigurointi](configure-app-field-names-priorities-warehouse.md).
 1. Ota luettelossa näytetty ominaisuus käyttöön seuraavalla tavalla:

@@ -2,7 +2,7 @@
 title: Pienten pakettien lähettäminen
 description: Tässä artikkelissa on tietoja pienten pakettien lähetystoiminnosta. Tämän toiminnon avulla Microsoft Dynamics 365 Supply Chain Management voi lähettää tietoja pakatusta kontista rahdinkuljettajalle sekä saada kyseiseltä rahdinkuljettajalta osoitetarran, lähetyshinnan ja seurantanumeron.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219715"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336152"
 ---
 # <a name="small-parcel-shipping"></a>Pienten pakettien lähettäminen
 
@@ -34,12 +34,9 @@ Palautettu lähetyshinta lisätään lähetykseen liittyvään myyntitilaukseen 
 
 Ennen pienten pakettien lähetystoiminnon käytön aloittamista se on otettava käyttöön ominaisuuksien hallinnassa, hinnan laskentamoduuli on lisättävä sekä **Kuljetuksenhallinta**- ja **Varastonhallinta**-moduulit on määritettävä tukemaan toimintoja.
 
-### <a name="turn-on-the-sps-feature"></a>Pienten pakettien lähetystoiminnon ottaminen käyttöön
+### <a name="turn-the-sps-feature-on-or-off"></a>Pienten pakettien lähetystoiminnon käyttöönotto tai käytöstäpoisto
 
-Ennen kuin pienten pakettien lähetystoimintotoa voidaan käyttää, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat tarkistaa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa toiminnon tilan ja ottaa sen tarvittaessa käyttöön. Tässä tapauksessa toiminto näkyy seuraavalla tavalla:
-
-- **Moduuli:** *Kuljetustenhallinta*
-- **Toiminnon nimi:** *Pienten pakettien lähetys*
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Pienten pakettien lähettäminen* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ### <a name="deploy-and-set-up-rate-engines"></a>Hinnan laskentamoduulinen ottaminen käyttöön ja määrittäminen
 

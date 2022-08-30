@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42c2c287e2a813f8bb07ce0c7f21f4224a217946
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895696"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306051"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Inventory Visibilityn asentaminen ja määrittäminen
 
@@ -88,20 +88,6 @@ Kun sovellus rekisteröidään ja asiakasohjelman salasana lisätään Azure AD:
 >
 > 1. Kun asennus on valmis, siirry takaisin LCS-sivulle ja yritä asentaa **Varaston näkyvyys** -lisäosa uudelleen.
 
-## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Varaston näkyvyyden apuohjelman asennuksen poistaminen
-
-Varaston näkyvyyden apuohjelma poistetaan valitsemalla **Poista asennus** LCS-sivulla. Asennuksen poistoprosessi lopettaa varaston näkyvyyden apuohjelman, poistaa apuohjelman rekisteröinnin LCS:stä ja poista mahdolliset varaston näkyvyyden apuohjelman tietojen välimuistiin tallennetut tilapäiset tiedot. Dataverse-tilaukseen tallennettuja ensisijaisia varastotietoja ei kuitenkaan poisteta.
-
-Dataverse-tilaukseen tallennettujen varastotietojen asennus poistetaan avaamalla [Power Apps](https://make.powerapps.com), valitsemalla siirtymispalkissa **Ympäristö** ja valitsemalla sitten Dataverse-ympäristö, joka on sidottu LCS-ympäristöön. Valitse sitten **Ratkaisut** ja poista seuraavat viisi ratkaisua mainitussa järjestyksessä:
-
-1. Varaston näkyvyyssovelluksen ankkurisovellus Dynamics 365 -ratkaisuissa
-1. Dynamics 365 FNO SCM:n varaston näkyvyyden sovellusratkaisu
-1. Varastopalvelumääritykset
-1. Erillinen varaston näkyvyys
-1. Dynamics 365 FNO SCM:n varaston näkyvyyden perusratkaisu
-
-Kun nämä ratkaisut on poistettu, myös taulukoihin tallennetut tiedot poistetaan.
-
 ## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Varaston näkyvyyden määritys Supply Chain Managementissa
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Varaston näkyvyyden integrointipaketin käyttöönotto
@@ -135,10 +121,45 @@ Kun olet asentanut lisäosan, valmistele Supply Chain Management -järjestelmäs
 
 1. Jos olet ottanut valinnaisen *Varaston näkyvyyden integrointi varauksen vastakirjauksella* -ominaisuuden, avaa **Varauksen vastakirjaus** -välilehti ja määritä seuraavat asetukset:
     - **Ota varauksen vastakirjaus käyttöön** – Voit ottaa tämän toiminnon käyttöön asettamalla arvoksi *Kyllä*.
-    - **Varauksen vastakirjauksen muuttuja** – Valitse varaston tapahtumatila, joka vastakirjaa varaston näkyvyydessä tehdyt varaukset. Tämä asetus määrittää tilauksen käsittelytilan, joka käynnistää vastakirjaukset. Vaihetta seurataan tilauksen varastotapahtuman tilan perusteella. Valitse yksi seuraavista:
+    - **Varauksen vastakirjauksen muuttuja** – Valitse varaston tapahtumatila, joka vastakirjaa varaston näkyvyydessä tehdyt varaukset. Tämä asetus määrittää tilauksen käsittelytilan, joka käynnistää vastakirjaukset. Vaihetta seurataan tilauksen varastotapahtuman tilan perusteella. Valitse jompikumpi seuraavista vaihtoehdoista:
         - *Tilauksessa* – kun tilana on *Tapahtumassa*, tilaus lähettää vastakirjauspyynnön, kun se luodaan. Vastakirjauksen määrä on luodun tilauksen määrä.
         - *Varaus* – Kun tilana on *Varaa tilattu tapahtuma*, tilaus lähettää vastakirjauspyynnön, kun tilaus varataan tai poimitaan, kun sen pakkausluettelo kirjataan tai kun se laskutetaan. Pyyntö käynnistetään vain kerran ensimmäisessä vaiheessa, kun mainittu prosessi tapahtuu. Vastakirjauksen määrä on määrä, jossa varastotapahtuman tila muuttui tilasta *Tilauksessa* tilaan *Tilaukseen varattu* (tai myöhempään tilaan) kulloisellakin tilausrivillä.
 
 1. Valitse **Varastonhallinta \> Kausittainen \> Varaston näkyvyyden integraatio** ja ota työ käyttöön. Kaikki Supply Chain Managementin varastomuutostapahtumat kirjataan nyt varaston näkyvyyteen.
+
+## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Varaston näkyvyyden apuohjelman asennuksen poistaminen
+
+Seuraavien ohjeiden avulla voit poistaa varaston näkyvyyden apuohjelman asennuksen:
+
+1. Kirjaudu Supply Chain Managementiin.
+1. Valitse **Varastonhallinta \> Kausittainen \> Varaston näkyvyyden integraatio** ja poista työ käytöstä.
+1. Siirry LCS:ään ja avaa sen ympäristön sivu, jossa haluat poistaa apuohjelman asennuksen (katso myös [Varaston näkyvyyden apuohjelman asentaminen](#install-add-in)).
+1. Valitse **Poista asennus**.
+1. Asennuksen poistoprosessi lopettaa nyt varaston näkyvyyden apuohjelman, poistaa apuohjelman rekisteröinnin LCS:stä ja poista mahdolliset varaston näkyvyyden apuohjelman tietojen välimuistiin tallennetut tilapäiset tiedot. Dataverse-tilaukseen synkronoidut ensisijaiset varastotiedot tallennetaan yhä sinne. Jos haluat poistaa nämä tiedot, tee nämä toiminnot loppuun.
+1. Avaa [Power Apps](https://make.powerapps.com).
+1. Valitse siirtymispalkissa **Ympäristö**
+1. Valitse Dataverse-ympäristö, joka on sidottu LCS-ympäristöön.
+1. Valitse **Ratkaisut** ja poista nämä viisi ratkaisua seuraavassa järjestyksessä:
+    1. Ankkuriratkaisu Inventory Visibility ‑sovellukselle Dynamics 365 ‑ratkaisuissa.
+    1. Dynamics 365 FNO SCM:n varaston näkyvyyden sovellusratkaisu
+    1. Varastopalvelumääritykset
+    1. Erillinen varaston näkyvyys
+    1. Dynamics 365 FNO SCM:n varaston näkyvyyden perusratkaisu
+
+    Kun nämä ratkaisut on poistettu, myös taulukoihin tallennetut tiedot poistetaan.
+
+> [!NOTE]
+> Jos palautat Supply Chain Management -tietokannan sen varaston näkyvyyden apuohjelman asennuksen poistamisen jälkeen ja haluat sitten asentaa sen uudelleen, varmista ennen lisäosan uudelleenasennusta, että olet poistanut Dataverse-tilaukseen (edellisissä ohjeissa kuvatulla tavalla) tallennetut varaston näkyvyyden vanhat tiedot. Näin estät muussa tapauksessa mahdollisesti esiintyvät ristiriidat tietojen välillä.
+
+## <a name="clean-inventory-visibility-data-from-dataverse-before-restoring-the-supply-chain-management-database"></a><a name="restore-environment-database"></a>Varaston näkyvyyden tietojen tyhjentäminen Dataversesta ennen Supply Chain Management -tietokannan palauttamista
+
+Jos käytössä on varaston näkyvyys ja palautat Supply Chain Management -tietokannan, palautettu tietokanta voi sisältää tietoja, jotka ovat ristiriidassa niiden tietojen kanssa, jotka varaston näkyvyys on synkronoinut aiemmin Dataverseen. Tämä ristiriita tiedoissa voi aiheuttaa järjestelmävirheitä ja muita ongelmia. Tämän vuoksi on tärkeää, että tyhjennät aina kaikki varaston näkyvyyden tiedot Dataversesta ennen Supply Chain Management -tietokannan palautusta.
+
+Jos haluat palauttaa Supply Chain Management -tietokannan, toimi seuraavasti:
+
+1. Poista varaston näkyvyyden apuohjelman asennus ja poista kaikki liittyvät tiedot Dataversesta [Varaston näkyvyyden apuohjelman asennuksen poistaminen](#uninstall-add-in) -kohdan ohjeiden mukaan
+1. Palauta Supply Chain Management -tietokanta esimerkiksi [Tietokannan tietyn ajankohdan palautus](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md)- tai [Tuotantotietokannan ajankohdan palautus eristysympäristöön](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md) -kohdan ohjeiden mukaan.
+1. Jos haluat yhä käyttää sitä, poista asennus ja määritä varaston näkyvyyden apuohjelma [Varaston näkyvyyden lisäapuohjelman asentaminen](#install-add-in)- ja [Varaston näkyvyyden integraation määrittäminen](#setup-inventory-visibility-integration) -kohdan ohjeiden mukaan
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

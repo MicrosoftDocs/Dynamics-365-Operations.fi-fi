@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895754"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306170"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Inventory Visibility -sovelluksen käyttäminen
 
@@ -70,10 +70,24 @@ Varauspyynnön kirjaaminen edellyttää, että arvo annetaan pyynnön tekstiosas
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Varaston yhteenveto
 
-**Varaston yhteenveto** on mukautettu *Varastosaldon summa* -yksikön näkymä. Se sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä 15 minuutin välein. Ennen kuin voit nähdä tiedot **Varaston yhteenveto** -välilehdessä, sinun on otettava käyttöön *OnHandMostSpecificBackgroundService*-ominaisuus **Ominaisuuksienhallinta**-välilehdessä ja valittava **Päivitä konfigurointi**.
+**Varaston yhteenveto** -sivu sisältää tuotteiden ja kaikkien dimensioiden varaston yhteenvedon. Se on mukautettu *Varastosaldon summa* -yksikön näkymä. Varaston yhteenvetotiedot synkronoidaan säännöllisesti varaston näkyvyydestä.
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>Varaston yhteenvedon ottaminen käyttöön ja synkronointivälin määrittäminen
+
+Seuraavien ohjeiden avulla voit ottaa **Varaston yhteenveto** -sivun käyttöön ja määrittää synkronointivälin:
+
+1. Avaa **Määritykset**-sivu.
+1. Avaa **Ominaisuuksien hallinta ja asetukset** -välilehti.
+1. Määritä **OnHandMostSpecificBackgroundService**-toiminnon vaihtopainikkeen arvoksi *Kyllä*.
+1. Kun toiminto on otettu käyttöön **Palvelun määritys** -osa on käytettävissä ja sisältää rivin **OnHandMostSpecificBackgroundService**-toiminnon määrittämistä varten. Tämän asetuksen avulla voit valita varaston yhteenvetotietojen synkronointivälin. Muuta synkronoinnin välistä aikaa **Arvo**-sarakkeen **Ylös**- ja **Alas**-painikkeiden avulla (pienin mahdollinen väli on 5 minuuttia). Valitse sitten **Tallenna**.
+1. Tallenna kaikki muutokset valitsemalla **Päivitä määritys**.
+
+![OnHandMostSpecificBackgroundService-asetus](media/inventory-visibility-ohms-freq.PNG "OnHandMostSpecificBackgroundService-asetus")
 
 > [!NOTE]
 > *OnHandMostSpecificBackgroundService*-ominaisuus seuraa vain tuotteen käytettävissä olevan tuotteen muutoksia, jotka ovat tapahtuneet sen jälkeen, kun ominaisuus on otettu käyttöön. Niiden tuotteiden tietoja, jotka eivät ole muuttuneet sen jälkeen, kun olet ottanut toiminnon käyttöön, ei synkronoida varastopalvelun välimuistista ympäristöön Dataverse. Jos **Varaston yhteenveto** -sivulla ei ole kaikkia odotettuja käytettävissä olevia tietoja, siirry kohtaan **Varastonhallinta > Kausittaiset tehtävät > Varaston näkyvyyden integrointi**, poista erätyö käytöstä ja ota se uudelleen käyttöön. Tämä toimii alkusysäyksenä, ja kaikki tiedot synkronoidaan *Käytettävissä olevan varaston summa* -yksikköön seuraavan 15 minuutin kuluttua. Jos haluat käyttää tätä toimintoa, on suositeltavaa ottaa se käyttöön ennen käytettävissä olevan varaston muutosten luontia ja ottaa käyttöön **Varaston näkyvyyden integrointi** -erätyö.
+
+### <a name="work-with-the-inventory-summary"></a>Varaston yhteenvedon käyttäminen
 
 Dataversen **lisäsuodattimen** avulla voi luoda oman näkymän, jossa on näkyvissä itselle tärkeät rivit. Lisäsuodatinvaihtoehtojen avulla voi luoda monenlaisia niin yksinkertaisia kuin monimutkaisiakin näkymiä. Lisäksi niiden avulla voidaan lisätä ryhmiteltyjä ja sisäkkäisiä ehtoja suodattimiin. Lisätietoja **lisäsuodattimen** käyttämisestä on kohdassa [Omien näkymien muokkaaminen tai luominen lisäruudukkosuodattimien avulla](/powerapps/user/grid-filters-advanced).
 
@@ -85,4 +99,4 @@ Mukautetun näkymän alareunassa on tietoja, kuten 50 tietuetta (29 valittu) tai
 
 Näkymän alareunassa on **Lataa lisää** -painike, jolla voi ladata lisää tietueita Dataversesta. Ladattavien tietueiden oletusmäärä on 50. Kun **Lataa lisää** valitaan, seuraavat 1 000 käytettävissä olevaa tietuetta ladataan näkymään. **Lataa lisää** -painikkeessa oleva luku ilmaisee ladattuina olevien tietueiden määrän ja **Lisäsuodatin**-tuloksen tietueiden kokonaismäärän.
 
-![Varaston yhteenveto](media/inventory-visibility-onhand-list.png "Varaston yhteenveto")
+![Varaston yhteenveto](media/inventory-visibility-onhand-list.png "Varastoyhteenveto")

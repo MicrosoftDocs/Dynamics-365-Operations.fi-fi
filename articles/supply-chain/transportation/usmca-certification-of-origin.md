@@ -2,7 +2,7 @@
 title: USMCA-alkuperätodistus
 description: Tämän toiminnon avulla voidaan tulostaa USMCA (United States-Mexico-Canada) -sopimuksen edellyttämät alkuperätodistusasiakirjat.
 author: Weijiesa
-ms.date: 10/23/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 2a87e1aa27085f1b4821d27cece782dffbcd2096
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851359"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336542"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA-alkuperätodistus
 
@@ -33,12 +33,9 @@ Asiakirjaa voi käyttää vain, jos yrityksen ensisijainen osoite on Yhdysvalloi
 
 Asiakirjan tulostusvalinnan mukaan asiakirjaan voidaan täyttää valmiiksi järjestelmässä olevia tietoja. Tulostetun asiakirjan tietoja voidaan vaihtaa tai niitä voidaan lisätä viemällä tulostettu asiakirja muokattavassa muodossa, kuten Microsoft Word -asiakirjana. Viennin jälkeen tarvittavat muutokset voidaan tehdä ennen ilmoituksen tekemistä.
 
-## <a name="turn-on-the-usmca-feature"></a>USMCA-toiminnon ottaminen käyttöön
+## <a name="turn-the-usmca-feature-on-or-off"></a>USMCA-toiminnon käyttöönotto tai käytöstäpoisto
 
-Ennen kuin USMCA-toimintoa voidaan käyttää, se on otettava käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Kuljetustenhallinta*
-- **Toiminnon nimi:** *USMCA-alkuperätodistusasiakirja*
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *USMCA-alkuperätodistusasiakirja* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="document-content"></a>Asiakirjan sisältö
 

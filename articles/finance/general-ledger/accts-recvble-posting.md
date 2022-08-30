@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874571"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324326"
 ---
 # <a name="accounts-receivable-posting"></a>Myyntireskontran kirjaus
 
 [!include [banner](../includes/banner.md)]
 
 **Myyntireskontra**-moduulin ensisijainen kirjausprofiili on asiakkaan kirjausprofiili. Tämä kirjausprofiili määrittää yhteenvetotilin, jota käytetään, kun asiakkaan saldot kirjataan kirjanpitoon. Yhteenvetotili on päätili. Sitä kutsutaan myös myyntireskontran kauppatiliksi.
+
+**Asiakas kirjanpidon täsmäytykseen** -raporttia voi käyttää kirjauksen jälkeen asiakas- ja kirjanpitotilien saldojen täsmäyttämisessä. Raportti käyttää asiakkaan kirjausprofiilin yhteenvetotilin tietoja. Se ei käytä asiakirjalle luotua kirjanpidon yhteenvetotiliä. Jos muutat asiakkaan kirjausprofiilia tai asiakasryhmää, joka on delegoitu asiakkaalle tapahtumien kirjaamisen jälkeen, raportissa voi olla eroja asiakas- ja kirjanpitotilien saldoissa. Jos haluat tarkastella vain rivejä, jotka ovat erilaisia, ja rivejä, joiden asiakastilit ja kirjanpitotili ovat nollia, valitse **Vain erot** -parametri raporttia tulostettaessa.
 
 Lisätietoja on kohdassa [Asiakkaan kirjausprofiilit](../accounts-receivable/customer-posting-profiles.md).
 

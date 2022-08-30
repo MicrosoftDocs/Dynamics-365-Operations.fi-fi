@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce 10.0.29:n esiversio (lokakuu 2022)
 description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Commercein 10.0.29 uusia tai muuttuneita toimintoja.
 author: josaw1
-ms.date: 08/02/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c1f85fcd8f79106a3af93489d3bef608b9840bf3
-ms.sourcegitcommit: 91f58a9863f4e8f30ac787c2a9771c1ff6a05f72
+ms.openlocfilehash: 1e05f53f9ecb0a1994828172f6999a0bd5c208bc
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9224235"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306229"
 ---
 # <a name="preview-of-dynamics-365-commerce-10029-october-2022"></a>Dynamics 365 Commerce 10.0.29:n esiversio (lokakuu 2022)
 
@@ -38,6 +38,7 @@ Seuraavassa taulukossa on tämän julkaisun sisältämät toiminnot. Tämän art
 | Customer Service | [Asiakaspalvelun ottaminen käyttöön Dynamics 365 Omnichannel for Customer Service -ratkaisulla](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) | Ensiluokkainen asiakastukikokemus on välttämätöntä henkilökohtaisen ja miellyttävän kaupankäyntikokemuksen tarjoamiseksi kuluttajille. Kaupankäynnille on nykyään useita kosketuspisteitä, kuten fyysiset myymälät, online-kanavat ja sosiaaliset kanavat. Asiakkaat odottavat henkilökohtaista tukikokemusta kaikissa näissä kosketuspisteissä. Tämä ominaisuus auttaa sinua vauhdittamaan asiakkaiden ostopäätöksiä, lisäämään henkilökohtaista yhteydenpitoa asiakkaiden kanssa ja parantamaan asiakaspalvelua Dynamics 365 Omnichannel for Customer Service -ratkaisun integroinnilla. | Järjestelmänvalvoja/päättäjät ottavat käyttöön |
 | Sähköinen kaupankäynti | Verkkokaupan tuotevertailun tuki | Salli ostajien vertailla tuotteita eri luokkien välillä, jotta he voivat tehdä oikean ostopäätöksen itse. Tämä ominaisuus on käytettävissä sekä B2C- että B2B-sivustoilla. | Sivuston luontiohjelma | 
 | Lahjakortit | Vähittäismyynnin lahjakorttitaulujen tuki tietojen jakamiseksi yritysten välillä | Dynamics headquarters tukee tietojen jakamisen sallimista yritysten välillä tiettyjen taulujen osalta Dynamics-arkkitehtuurissa. Tässä ominaisuudessa Dynamics 365 Commerce sallii tietojen jakamisen yritysten välillä myös vähittäismyynnin lahjakorttitaulujen osalta. Näin ollen yhdessä yrityksessä olevan lahjakortin tiedot voidaan nyt kopioida toiseen samassa ympäristössä olevaan yritykseen. Alkuperäisen yrityksen lahjakorttitauluun tehdyt muutokset välitetään toisen yrityksen kopioituun lahjakorttitauluun. | Kehittäjät |
+| Maailmanlaajuinen toiminta | [Commerce-lokalisointitoimintojen käyttöönotto uutta Commerce SDK:tä varten](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Uusi toiminto mahdollistaa Commerce-lokalisointitoimintojen käyttöönoton Commerce headquartersissa toimintojen hallintakehyksen tai -parametrien avulla. Kirjanpidon integrointimallit ovat nyt mukana uudessa Commerce SDK:ssa. Ne tukevat itsenäistä pakkausta. Tämä toiminto ottaa käyttöön myös Store Commerce -sovelluksen käyttöönoton yleisten Commerce-asiakkaiden mukaan.<p><p>Tämä julkaisu sisältää Commerce-lokalisointitoiminnot ja kirjanpidon integrointimallit [Itävaltaa](../localizations/emea-aut-fi-sample.md), [Tšekin tasavaltaa](../localizations/emea-cze-fi-sample.md), [Ranskaa](../localizations/emea-fra-cash-registers.md), [Germany](../localizations/emea-deu-fi-sample.md), [Italiaa](../localizations/emea-ita-fpi-sample.md), [Norjaa](../localizations/emea-nor-cash-registers.md) ja [Puolaa](../localizations/emea-pol-fpi-sample.md) varten. | Järjestelmänvalvoja/päättäjät ottavat käyttöön |
 | Suorituskyky | RTS-riippuvuuden poistaminen "Muokkaa asiakasta" -skenaarioissa | Hyvä saatavuus ja korkea suorituskyky ovat normaaleja odotuksia myyntipisteiden (POS) ja sähköisen kaupankäynnin kanavissa. Näiden odotusten täyttämiseksi Dynamics 365 Commerce -kanavien ei tarvitse enää olla riippuvaisia reaaliaikaisesta kommunikoinnista Commerce headquarters -sovelluksen kanssa, kun asiakastietoja muokataan. Kyky muokata asynkronisten ja ei-asynkronisten asiakkaiden asiakastietoja asynkronisesti voi auttaa vähentämään reaaliaikaisia kutsuja Commerce headquarters -sovellukseen. | Järjestelmänvalvoja/päättäjät ottavat käyttöön |
 
 ## <a name="feature-state-changes-in-this-release"></a>Tämän julkaisun toiminnon tilan muutokset

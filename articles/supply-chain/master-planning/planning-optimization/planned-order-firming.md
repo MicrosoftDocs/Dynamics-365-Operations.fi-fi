@@ -2,7 +2,7 @@
 title: Vahvista suunnitellut tilaukset
 description: Tässä artikkelissa kerrotaan, miten suunnitellut tilaukset voidaan vahvistaa. Kun suunnitellut tilaukset vahvistetaan, ne muunnetaan varsinaisiksi osto-, siirto- tai tuotantotilauksiksi.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857515"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335342"
 ---
 # <a name="firm-planned-orders"></a>Vahvista suunnitellut tilaukset
 
@@ -37,19 +37,21 @@ Useimmat suunnitellut tilaustoiminnot ovat käytettävissä kaikissa Microsoft D
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Suunniteltujen tilausten rinnakkaisen vahvistuksen ottaminen käyttöön tai käytöstä poistaminen
 
-Rinnakkainen vahvistus nopeuttaa vahvistusprosessia rinnakkaistamalla sen useissa säikeissä. Tämä menetelmä voi olla hyödyllinen, kun useita suunniteltuja tilauksia vahvistetaan. Tämän toiminnon käyttö edellyttää, että järjestelmässä on käytössä *Suunniteltujen tilausten rinnakkainen vahvistaminen* -toiminto. Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, voit ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla [Toimintojen hallinnasta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) toimintoa *Suunniteltujen tilausten rinnakkainen vahvistaminen*.
+Rinnakkainen vahvistus nopeuttaa vahvistusprosessia rinnakkaistamalla sen useissa säikeissä. Tämä menetelmä voi olla hyödyllinen, kun useita suunniteltuja tilauksia vahvistetaan. Tämän toiminnon käyttö edellyttää, että järjestelmässä on käytössä *Suunniteltujen tilausten rinnakkainen vahvistaminen* -toiminto. 
 
-### <a name="enable-planned-order-firming-with-filtering"></a>Ota suunniteltujen tilausten vahvistaminen käyttöön suodatuksen avulla
+Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.25, voit ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla [Toimintojen hallinnasta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) toimintoa *Suunniteltujen tilausten rinnakkainen vahvistaminen*.
+
+### <a name="turn-planned-order-firming-with-filtering-on-or-off"></a>Suunniteltujen tilausten vahvistaminen suodatuksen avulla – käyttöönotto ja käytöstäpoisto
 
 Suunniteltujen tilausten vahvistaminen suodatuksella mahdollistaa loogisten ehtojen määrittämisen sen valitsemiseksi, mitkä suunnitellut tilaukset haluat vahvistaa. Voit myös esikatsella valittuja suunniteltuja tilauksia, suorittaa prosessin taustalla ja/tai ajoittaa sen erätyönä.
 
-Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Suunnitellun tilauksen vahvistaminen suodatuksen kanssa* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Suunnitellun tilauksen vahvistaminen suodatuksen kanssa* -toimintoa [Toimintojen hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-### <a name="enable-auto-firming-for-planning-optimization"></a>Ota käyttöön automaattinen vahvistus suunnittelun optimoinnille
+### <a name="turn-auto-firming-for-planning-optimization-on-or-off"></a>Automaattinen vahvistus suunnittelun optimoinnille – käyttöönotto ja käytöstäpoisto
 
 Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuunnitteluprosessin osana vahvistuksen aikarajan aikana. Automaattista vahvistamista tuetaan aina suunnittelumoduulissa, joka on integroitu Supply Chain Managementiin. Kuitenkin jos sitä käytetään myös suunnittelun optimointiin, ominaisuus on otettava käyttöön.
 
-Voit ottaa tämän toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla *Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuuden käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä.)
+Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, voit ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla [Toimintojen hallinnasta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) *Suunnittelun optimoinnin automaattinen vahvistus* -toimintoa.
 
 ## <a name="manually-firm-planned-orders"></a>Vahvista suunnitellut tilaukset manuaalisesti
 
@@ -67,8 +69,8 @@ Voit vahvistaa suunnitellut tilaukset manuaalisesti etsimällä ja valitsemalla 
 
     - **Päivitä merkintä** – Valitse käytettävä varaston merkintämenettely vahvistettaessa suunniteltuja tilauksia.
     - **Lopeta vahvistus virhetilanteessa** – Määritä tämän asetuksen arvoksi *Kyllä*, jos haluat lopettaa kaikkien valittujen suunniteltujen tilausten vahvistamisen, jos jossakin niistä on virheitä. Asetuksen arvona on oltava *Ei*, jos **Rinnakkainen vahvistus** -asetuksena on *Kyllä*.
-    - **Rinnakkainen vahvistus** – Tämä vaihtoehto on käytettävissä vain, jos [*Suunniteltujen tilausten rinnakkainen vahvistus* -ominaisuus](#enable-features) on käytössä järjestelmässä ja jos olet valinnut vähintään kaksi suunniteltua tilausta vahvistusta varten. Määritä arvoksi *Kyllä*, jos haluat suorittaa vahvistusprosessit rinnakkain. Rinnakkainen vahvistus voi parantaa suorituskykyä.
-    - **Säikeiden määrä** – Tämä vaihtoehto on käytettävissä vain, jos [*Suunniteltujen tilausten rinnakkainen vahvistus* -ominaisuus](#enable-features) on käytössä järjestelmässä ja jos **Rinnakkainen vahvistus** -vaihtoehdon arvona on *Kyllä*. Määritä vahvistusprosessin rinnakkaistamisessa käytettävien säikeiden määrä. Ohjeita tämän vaihtoehdon käytöstä pääsuunnittelussa on kohdassa [Pääsuunnittelun suorituskyvyn parantaminen](../master-planning-performance.md#number-of-threads).
+    - **Rinnakkainen vahvistus** – Tämä vaihtoehto on käytettävissä vain, jos [*Suunniteltujen tilausten rinnakkainen vahvistus* -toiminto](#enable-features) on käytössä järjestelmässä ja jos olet valinnut vähintään kaksi suunniteltua tilausta vahvistusta varten. Määritä arvoksi *Kyllä*, jos haluat suorittaa vahvistusprosessit rinnakkain. Rinnakkainen vahvistus voi parantaa suorituskykyä.
+    - **Säikeiden määrä** – Tämä vaihtoehto on käytettävissä vain, jos [*Suunniteltujen tilausten rinnakkainen vahvistus* -toiminto](#enable-features) on käytössä järjestelmässä ja jos **Rinnakkainen vahvistus** -vaihtoehdon arvona on *Kyllä*. Määritä vahvistusprosessin rinnakkaistamisessa käytettävien säikeiden määrä. Ohjeita tämän vaihtoehdon käytöstä pääsuunnittelussa on kohdassa [Pääsuunnittelun suorituskyvyn parantaminen](../master-planning-performance.md#number-of-threads).
 
         > [!NOTE]
         > **Säikeiden määrä** -kentän arvo *0* (nolla) pidentää pääsuunnittelun ajoaikaa. Tämän vuoksi tämän kentän arvo kannattaa määrittää suuremmaksi kuin 0.
@@ -97,7 +99,7 @@ Automaattisen vahvistuksen avulla voit vahvistaa suunnitellut tilaukset pääsuu
 > Vahvistetuissa johdetuissa tilauksissa (alihankintaostotilauksissa) näkyy *Tarkistettavana*-tila, kun muutosten seuranta on otettu käyttöön.
 
 > [!IMPORTANT]
-> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää suunnittelun optimoinnissa, [*Suunnittelun optimoinnin automaattinen vahvistus* -ominaisuus](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla. Automaattista vahvistusta voidaan käyttää aina sisäänrakennetun pääsuunnittelumoduulin kanssa.
+> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää suunnittelun optimoinnissa, [*Suunnittelun optimoinnin automaattinen vahvistus* -toiminto](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla. Automaattista vahvistusta voidaan käyttää aina sisäänrakennetun pääsuunnittelumoduulin kanssa.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automaattinen vahvistus suunnittelun optimoinnilla vs. sisäänrakennettu suunnittelumoduuli
 
@@ -130,7 +132,7 @@ Kyselypohjaisen vahvistamisen avulla voit suunnitella vahvistuksen etukäteen m�
 Voit yhdistää automaattisen vahvistuksen kyselypohjaiseen vahvistukseen. Kyselypohjaisessa vahvistustyössä on esimerkiksi eteenpäin toimitettava aikaraja, joka on pidempi kuin täsmäyttävän automaattisen vahvistuksen kattavuuskonfiguraation aikaraja. Siksi kyselypohjainen vahvistustyö käsittelee suunnitellut tilaukset ennen automaattisen vahvistuksen käynnistämistä. Voit käyttää hyväksesi tätä toimintatapaa, kun haluat ajoittaa tiettyjen toimittajien tilaukset eri tavalla kuin muiden toimittajien samankaltaisten tuotteiden tilaukset.
 
 > [!IMPORTANT]
-> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää, [*Suunniteltujen tilausten vahvistaminen suodatuksen avulla* -ominaisuus](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla.
+> Ennen kuin tässä osassa kuvattua ominaisuutta voi käyttää, [*Suunniteltujen tilausten vahvistaminen suodatuksen avulla* -toiminto](#enable-features) on otettava käyttöön järjestelmässä tämän artikkelin alussa kuvatulla tavalla.
 
 Toimi seuraavasti, kun haluat vahvistaa suunnitellun tilauksen käyttämällä kyselyyn perustuvaa vahvistamisprosessia.
 

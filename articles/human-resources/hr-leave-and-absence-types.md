@@ -14,17 +14,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59fe5ece00500f7dafab282c00d572575706f790
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894582"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9323955"
 ---
 # <a name="configure-leave-and-absence-types"></a>Määritä loman ja poissaolon tyypit
-
-> [!Important]
-> Tässä artikkelissa mainittu toiminto on tällä hetkellä Dynamics 365 Human Resourcesin erillistä versiota käyttävien asiakkaiden käytettävissä. Osa toiminnoista tai kaikki toiminnot ovat saatavana osana Finance-infrastruktuurin tulevaa versiota, Finance-julkaisun 10.0.26 jälkeen.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,31 +38,21 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 
 ## <a name="add-a-leave-type"></a>Lomatyypin lisääminen
 
-1. Valitse **Lomat ja poissaolot** -sivulla **Linkit**-välilehti.
-
+1. Valitse **Lomat ja poissaolot** -työtilassa **Linkit**-välilehti.
 2. Valitse **Asetukset**-kohdasta **Loma- ja poissaolotyypit**.
-
 3. Valitse **Uusi**.
-
 4. Kirjoita lomatyypin nimi **Tyyppi**-kohtaan, valitse työnkulku **Työnkulun tunnus** -kohdasta ja kirjoita kuvaus **Kuvaus**-kohtaan.
-
 5. Valitse **Yleinen**-kohdasta **Ei mitään**, **Ajoitettu** tai **Ennakoimaton** **Luokan** avattavasta luettelosta.
-
 6. Valitse ansaitsemiskoodi avattavasta **Ansaitsemiskoodi**-valikosta.
-
 7. Valitse **Vaadittu syykoodi** -kohdassa, haluatko vaatia syykoodin. Jos haluat vaatia syykoodeja, ne on ehkä lisättävä. Valitse **Syykoodit**-kohdasta **Lisää**, valitse syykoodi ja valitse sitten sen vieressä oleva **Käytössä** valintaruutu.
-
 8. Valitse **Rajoita käyttöoikeuksia valittuihin rooleihin** -kohdassa, haluatko rajoittaa käyttöä. Valitse sitten käyttöoikeusroolit **Tämän lomatyypin käyttöoikeusroolit** -kohdasta. Käyttöoikeusroolit määritetään työnkulussa, jonka valitsit **Työnkulun tunnus** -kohdasta aiemmin tässä toimintosarjassa.
-
 9. Valitse **Kalenterin väri** -kohdassa, mikä väri näytetään tämän lomatyypin loma- ja poissaolokalentereissa. 
-
 10. Valitse **Keskeytyssuhteet**-kohdassa haluatko, että tämä lomatyyppi keskeyttää toisen lomatyypin tai tulee toisen lomatyypin keskeyttämäksi. Kun poissaoloa koskeva poissaolopyyntö jätetään, keskeytetyn loman tyypiksi luodaan automaattisesti loman keskeytys. 
-
-10. Valitse **Tallenna**.
+11. Valitse **Tallenna**.
 
 ## <a name="configure-leave-type-rules"></a>Lomatyypin sääntöjen määrittäminen
 
-1. Määritä lomatyypin pyöristysasetukset. Vaihtoehtoja ovat **Ei mitään**, **Ylös**, **Alas** ja **Lähin**. Voit myös määrittää lomatyypin pyöristystarkkuuden.
+1. Määritä **Loma ja poissaolo** -tyypin pyöristysasetukset. Vaihtoehtoja ovat **Ei mitään**, **Ylös**, **Alas** ja **Lähin**. Voit myös määrittää lomatyypin pyöristystarkkuuden.
 
 2. Määritä lomatyypin **Lomakorjaukset**. Kun valitset tämän vaihtoehdon, työpäivään kuuluvien lomien määrää käytetään sen määrittämiseen, miten lomatyypille voidaan jaksottaa aikaa. Jos esimerkiksi joulupäivä osuu maanantaihin, henkilöstöhallinto vähentää yhden päivän lomatyypistä jaksotusten käsittelyn yhteydessä.
 

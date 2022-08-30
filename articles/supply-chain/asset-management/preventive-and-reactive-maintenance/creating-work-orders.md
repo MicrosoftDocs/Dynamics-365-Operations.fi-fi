@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1b8b3d8d83bdad2efe49bd4e878793cca6c49f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ba01a90f805300a27e4550e1371fb55d5e3a7536
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891202"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335042"
 ---
 # <a name="creating-work-orders"></a>Työtilauksien luonti
 
@@ -64,7 +64,7 @@ Tällä toiminnolla voidaan määrittää ylläpitosuunnitelman perusteella sä�
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Automaattisesti luotujen työtilausten ryhmittelyn ottaminen käyttöön
 
-Ennen kuin käytät tätä toimintoa, sen on oltava päällä järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
+Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
 
 - **Moduuli:** *Resurssien hallinta*
 - **Toiminnon nimi:** *Työtilausten ryhmittelysääntöjen käyttäminen ylläpitosuunnitelmaa suoritettaessa*

@@ -2,7 +2,7 @@
 title: Myyntihistorian tietojen tyhjennyksen ajoitus
 description: Tässä artikkelissa kuvataan, kuinka voit parantaa järjestelmän suorituskykyä ajoittamalla myyntipäivityshistorian säännöllisen puhdistustehtävän suoritettavaksi säännöllisin väliajoin.
 author: myvakalo
-ms.date: 03/21/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2c9436fbb5020065f8f6ec30eedeca342d8aa9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e9a4dd5372afa8a0452449d1cb9121107e6e1610
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900822"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335500"
 ---
 # <a name="schedule-sales-history-data-cleanup"></a>Myyntihistorian tietojen tyhjennyksen ajoitus
 
@@ -51,10 +51,7 @@ Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järj
 
 *Myynnin päivityshistorian puhdistaminen iän perusteella* -ominaisuuden avulla voit määrittää tallennettavien tietueiden enimmäisiän, kun *Myynnin päivityshistorian puhdistuksen* säännöllinen tehtävä suoritetaan. Määritystä vanhemmat tietueet poistetaan. Tämä ominaisuus on kätevä, kun tehtävä määritetään suoritettavaksi kausittain, sillä ikä lasketaan aina suhteessa päivään, jolloin tehtävä suoritetaan. Jos et käytä tätä toimintoa, vanhimmille säilytettäville tietueille voidaan vain määrittää tietty päivämäärä.
 
-Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) asetuksia ja tarkistaa toiminnon tilan sekä laittaa sen päälle tarvittaessa. **Ominaisuuksien hallinta** -työtilassa ominaisuus on luetteloitu seuraavalla tavalla:
-
-- **Moduuli:** *Myynti ja markkinointi*
-- **Ominaisuuden nimi:** *Myynnin päivityshistorian tyhjentäminen iän perusteella*
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Myynnin päivityshistorian tyhjentäminen iän perusteella* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="set-up-and-schedule-the-sales-history-cleanup-periodic-task"></a>Myyntihistorian kausittaisen puhdistustehtävän järjestäminen ja ajoittaminen
 

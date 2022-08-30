@@ -14,19 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8569cabf72871396b9935a14a5637e5e645705fb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f9c107e31e58ba1302cd02e2e82aa405dda0fdef
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848221"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336900"
 ---
 # <a name="create-coverage-options"></a>Kattavuusasetusten luominen
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kattavuusvaihtoehdot määrittävät, kuka katetaan tai kuinka paljon vakuutuspaketissa on vakuutusturvaa. Esimerkiksi lääketieteellisessä palvelupaketissa sinulla voi olla **Vain työntekijä** -vaihtoehto, **Työntekijä + 1** -vaihtoehto ja **Perhe**-vaihtoehto. Henkivakuutuksen osalta voit tarjota vakuutusturvaa **1 x palkalla** tai **2 x palkalla**.
 

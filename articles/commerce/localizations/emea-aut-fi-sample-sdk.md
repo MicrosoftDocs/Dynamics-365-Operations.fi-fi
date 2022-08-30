@@ -2,25 +2,29 @@
 title: Verorekisteröintipalvelun integroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)
 description: Tässä artikkelissa on ohjeita Itävallan verointegroinnin esimerkin käyttöönottamiseksi Microsoft Dynamics 365 Commerce Retail -ohjelmistokehityspaketista (SDK).
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: 203904f60888464a473cb2997652db497fba6f57
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: f5f12dbd638c8228dbc63c1fae8f3dfffc7bfe9c
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276098"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313769"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-austria-legacy"></a>Verorekisteröintipalvelun integroinnin esimerkkiä koskevat käyttöönoton ohjeet (Itävalta) (vanha)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-Tässä artikkelissa on ohjeita, jotka koskevat Itävallan verorekisteröintipalvelun integroinnin käyttöönottoa Microsoft Dynamics 365 Commerce Retail -ohjelmistokehityspaketista (SDK) kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja verointegroinnin esimerkistä on kohdassa [Verorekisteröintipalvelun integroinnin esimerkki (Itävalta)](emea-aut-fi-sample.md). 
+> [!IMPORTANT]
+> Seuraa tämän artikkelin ohjeita vain, jos käytössä on Microsoft Dynamics 365 Commercen versio 10.0.28 tai aiempi versio. Itävallan verorekisteröintipalvelun integraatioesimerkki on saatavilla Commercen versiosta 10.0.29 alkaen Commerce SDK:ssa. Lisätietoja on kohdassa [Kanavan osien määrittäminen](./emea-aut-fi-sample.md#configure-channel-components).
+
+Tässä artikkelissa on ohjeita, jotka koskevat Itävallan verorekisteröintipalvelun integroinnin käyttöönottoa Dynamics 365 Commerce Retail SDK:sta kehittäjän virtuaalitietokoneessa (VM) Microsoft Dynamics Lifecycle Servicesissa (LCS). Lisätietoja verointegroinnin esimerkistä on kohdassa [Verorekisteröintipalvelun integroinnin esimerkki (Itävalta)](emea-aut-fi-sample.md). 
 
 Itävallan verointegraation esimerkki kuuluu Retail SDK -pakettiin. Lisätietoja SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md). Verointegraation esimerkki koostuu Commerce runtime (CRT)-, Hardware Station- ja myyntipiste (POS) -laajennusosista. Voit suorittaa tämän näyteversion muokkaamalla ja rakentamalla CRT-, Hardware Station- ja POS-projektit. Suosittelemme, että teet tässä artikkelissa kuvatut muutokset käyttämällä Retail SDK -pakettia, jota ei ole muutettu. On myös suositeltavaa käyttää lähteenhallintajärjestelmää, kuten Azure DevOpsia, jossa tiedostoja ei ole vielä muutettu.
 

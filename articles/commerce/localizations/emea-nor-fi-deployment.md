@@ -2,34 +2,32 @@
 title: Käyttöönotto-ohjeet Norjan kassakoneille
 description: Tässä artikkelissa on ohjeita kassan käyttötoimintojen käyttöönottamisesta Norjan Microsoft Dynamics 365 Commerce -lokalisointia varten.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
-ms.openlocfilehash: b19fc35a96c3194cf516ea505b6980072571a595
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9149e9da7222699e9ca996b69e56fff07b77a737
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281014"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9345988"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway"></a>Käyttöönotto-ohjeet Norjan kassakoneille
 
 [!include[banner](../includes/banner.md)]
 
-Tässä artikkelissa on ohjeita kassan käyttötoimintojen käyttöönottamisesta Norjan Microsoft Dynamics 365 Commerce -lokalisointia varten. Lokalisointiin kuuluu useita komponenttien laajennuksia. Näiden laajennusten avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md). Lisätietoja Commercen määrittämisestä Norjassa on kohdassa [Commercen määrittäminen (Norja)](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+> [!IMPORTANT]
+> Ota tässä artikkelissa kuvatut vaiheet käyttöön vain, jos käytössä on Microsoft Dynamics 365 Commercen versio 10.0.29 tai uudempi versio. Commercen versiossa 10.0.28 ja aiemmissa versioissa on käytettävä Retail SDK:n edellistä versiota kehittäjän virtuaalikoneessa Microsoft Dynamics Lifecycle Servicesissa (LCS). Lisätietoja: [Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha)](./emea-nor-loc-deployment-guidelines.md). Jos käytössä on Commercen versio 10.0.28 tai aiempi versio ja olet siirtymässä Commercen versioon 10.0.29 tai uudempaan versioon, noudata [Siirtyminen Norjan vanhoista Commerce-toiminnoista](./emea-nor-fi-migration.md) -kohdan ohjeita.
 
-> [!WARNING]
-> [Uuden itsenäisen pakkaus- ja laajennusmallin](../dev-itpro/build-pipeline.md) rajoitusten vuoksi sitä ei voi tällä hetkellä käyttää tässä lokalisointitoiminnallisuudessa. Sinun on käytettävä Norjan digitaalisten allekirjoitusten esimerkkiversiota Retail-ohjelmiston kehityssarjan (SDK) aiemmassa versiossa kehittäjän virtuaalikoneessa (VM) Microsoft Dynamics Lifecycle Servicesissä (LCS). Lisätietoja: [Kassakoneiden käyttöönotto-ohjeet (Norja) (vanha)](./emea-nor-loc-deployment-guidelines.md).
->
-> Verointegrointiesimerkkien uuden itsenäisen pakkaus- ja laajennusmallin tukea suunnitellaan myöhempiä versioita varten.
+Tässä artikkelissa on ohjeita kassan käyttötoimintojen käyttöönottamisesta Norjan Commerce-lokalisointia varten. Lokalisointi sisältää useita osalaajennuksia, joiden avulla voit esimerkiksi tulostaa mukautettuja kenttiä kuitteihin, rekisteröidä muita kirjaustapahtumia, myyntitapahtumia ja maksutapahtumia myyntipisteessä (POS), allekirjoittaa myyntitapahtumia digitaalisesti sekä tulostaa raportteja paikallisissa muodoissa. Lisätietoja Norjan lokalisoinnista on kohdassa [Kassakoneen toiminnot, Norja](./emea-nor-cash-registers.md). Lisätietoja Commercen määrittämisestä Norjassa on kohdassa [Commercen määrittäminen (Norja)](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 ## <a name="set-up-fiscal-registration-for-norway"></a>Kirjanpidon rekisteröinnin määrittäminen (Norja)
 
-Norjan verorekisteröinnin esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Retail SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\SequentialSignatureNorway** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä (esim. [julkaisun 9.34 esimerkki](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)). Esimerkki [koostuu](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) veroasiakirjan tarjoajasta ja veroliittimestä, jotka ovat Commerce Runtimen (CRT) laajennuksia. Lisätietoja Retail SDK:n käytöstä on kohdissa [Retail SDK -arkkitehtuuri](../dev-itpro/retail-sdk/retail-sdk-overview.md) ja [Määritä itsenäisen pakkaus-SDK:n koontiversioputki](../dev-itpro/build-pipeline.md).
+Norjan verorekisteröinnin esimerkki perustuu [verointegraation toimintoihin](fiscal-integration-for-retail-channel.md) ja se kuuluu osana Commerce SDK -pakettiin. Esimerkki sijaitsee **src\\FiscalIntegration\\SequentialSignatureNorway** -kansiossa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilössä. [Esimerkki](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) koostuu veroasiakirjan tarjoajasta ja veroliittimestä, jotka ovat Commerce Runtimen (CRT) laajennuksia. Lisätietoja Commerce SDK:n käyttämisestä on kohdissa [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja  NuGetista](../dev-itpro/retail-sdk/sdk-github.md) ja [Koontijakson asetusten määrittäminen riippumattoman pakkauksen SDK:ta varten](../dev-itpro/build-pipeline.md).
 
 Suorita verorekisteröinnin määritysvaiheet [Commerce-kanavien kirjanpidon integroinnin määrittäminen](./setting-up-fiscal-integration-for-retail-channel.md) -kohdassa kuvatulla tavalla:
 
@@ -45,10 +43,10 @@ Voit ottaa Norjan verorekisteröintiprosessin käyttöön Commerce headquarters 
 1. Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritystiedostot Commerce SDK:sta:
 
     1. Avaa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) -säilö.
-    1. Avaa viimeinen käytettävissä oleva julkaisuhaara (esim. **[julkaisu 9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)**).
+    1. Avaa viimeinen käytettävissä oleva julkaisuhaara.
     1. Avaa **src \> FiscalIntegration \> SequentialSignatureNorway \> CommerceRuntime**.
-    1. Lataa veroasiakirjan tarjoajan konfigurointitiedosto kohdasta **DocumentProvider.SequentialSignNorway \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml** (esim. [julkaisun 9.34 tiedosto](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignNorway/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml)).
-    1. Lataa veroliittimen konfiguraatiotiedosto kohdasta **Connector.SequentialSignNorway \> Configuration \> ConnectorSequentialSignatureNorwaySample.xml** (esim. [julkaisun 9.34 tiedosto](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignNorway/Configuration/ConnectorSequentialSignatureNorwaySample.xml)).
+    1. Lataa veroasiakirjan tarjoajan määritystiedosto kohdassa **DocumentProvider.SequentialSignNorway \> Määritys \> DocumentProviderSequentialSignatureNorwaySample.xml**.
+    1. Lataa veroliittimen määritysasiakirja kohdassa **Connector.SequentialSignNorway \> Määritys \> ConnectorSequentialSignatureNorwaySample.xml**.
 
 1. Valitse **Retail ja Commerce \> Pääkonttorin asetukset \> Parametrit \> Jaetut parametrit**. Määritä **Yleiset**-pikavälilehdessä **Ota kirjanpidon integrointi käyttöön**-asetukseksi **Kyllä**.
 1. Siirry kohtaan **Retail ja Commerce \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistimet**, ja lataa aiemmin lataamasi kirjanpidon yhdistimen konfigurointitiedosto.
@@ -99,11 +97,11 @@ Seuraavaksi sinun on konfiguroitava niiden sertifikaattien liitin, jotka on tall
 
 ### <a name="configure-channel-components"></a>Määritä kanavakomponentit
 
-### <a name="development-environment"></a>Kehitysympäristö
+#### <a name="development-environment"></a>Kehitysympäristö
 
 Suorita nämä vaiheet, kun haluat määrittää kehitysympäristön, jonka avulla voit testata ja laajentaa näytettä.
 
-1. Kloonaa tai lataa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) -säilö. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan. Lisätietoja: [Retail SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md).
+1. Kloonaa tai lataa [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) -säilö. Valitse oikea julkaisuhaaran versio SDK-/sovellusversion mukaan. Lisätietoja: [Commerce SDK -esimerkkien ja -viitepakettien lataaminen GitHubista ja NuGetista](../dev-itpro/retail-sdk/sdk-github.md).
 1. Avaa **SequentialSignatureNorway.sln** -ratkaisu kohdassa **Dynamics365Commerce.Solutions\\FiscalIntegration\\SequentialSignatureNorway** ja muodosta se.
 1. Asenna CRT-laajennukset:
 
@@ -126,7 +124,7 @@ Suorita nämä vaiheet, kun haluat määrittää kehitysympäristön, jonka avul
             ModernPOS.SequentialSignNorway.Installer.exe install --verbosity 0
             ```
 
-### <a name="production-environment"></a>Tuotantoympäristö
+#### <a name="production-environment"></a>Tuotantoympäristö
 
 Luo ja julkaise verointegraatioesimerkin Cloud Scale Unit ja itsepalveluna käyttöönotettavat paketit noudattamalla [Määritä koontijakso verointegraatioesimerkille](fiscal-integration-sample-build-pipeline.md) -ohjeen vaiheita. **SequentialSignatureNorway build-pipeline.yaml**-niminen YAML-mallitiedosto löytyy **Pipeline\\YAML_Files** -kansiosta[Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) -säilöstä.
 

@@ -13,19 +13,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: 2e3fa839b6e0f3cbaea8d2225b5a42ee8a368272
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9227894"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336933"
 ---
 # <a name="benefits-management-overview"></a>Etujen hallinnan yleiskatsaus
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Pysyäksesi kilpailukykyisenä sinun on tarjottava laaja etuvalikoima. Näin houkuttelet parhaita työntekijöitä ja saat heidät pidettyä. Vakioetujen, kuten terveyshuollon ja hammashoidon lisäksi, sinun kannattaa ehkä tarjota myös laajennettuja palveluja, kuten adoptioapua, virkistysohjelmia ja vaatetuslisiä. Microsoft Dynamics 365 Human Resourcesin etujen hallinta on joustava ratkaisu, joka tukee monenlaisia etuvaihtoehtoja. Human Resources sisältää myös helppokäyttöisen työntekijäkokemuksen, joka esittelee valikoimasi.
 

@@ -2,7 +2,7 @@
 title: Manuaalisen varastosiirron lykätty käsittely
 description: Tässä artikkelissa kuvataan, miten manuaalisen varastosiirron lykättyä käsittelyä käytetään Microsoft Dynamics 365 Supply Chain Managementissa.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219805"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336392"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Manuaalisen varastosiirron lykätty käsittely
 
@@ -32,10 +32,10 @@ Taustakäsittely saadaan aikaan käyttämällä [Käsittele varastosovelluksen t
 
 Jos haluat käyttää tätä toimintoa, ota seuraavat ominaisuudet käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Ne on otettava käyttöön tässä järjestyksessä:
 
-1. *Organisaation laajuinen työn esto*<br>(Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
-1. *Käsittele varastosovelluksen tapahtumat*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on pakollinen. Siksi se on oletusarvoisesti käytössä eikä sitä voi enää poistaa käytöstä.)
-1. *Lykätyt hyllytystoiminnot*
-1. *Manuaalisen varastosiirtotoiminnon lykätty käsittely*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on pakollinen, joten se on oletusarvoisesti otettu käyttöön eikä sitä poistaa uudelleen käytöstä.)
+1. *Organisaation laajuinen työn esto*<br>(Supply Chain Managementin versiosta 10.0.21 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
+1. *Käsittele varastosovelluksen tapahtumat*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
+1. *Lykätyt hyllytystoiminnot*<br>(Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
+1. *Manuaalisen varastosiirtotoiminnon lykätty käsittely*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
 
 ## <a name="configure-the-work-processing-policies"></a>Työn käsittelykäytäntöjen konfiguroiminen
 

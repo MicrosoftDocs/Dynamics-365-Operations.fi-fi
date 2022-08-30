@@ -2,7 +2,7 @@
 title: Tuotannon materiaalien oletusvarausperiaatteen ohittaminen
 description: Tässä artikkelissa käsitellään kunkin nimikemalliryhmän oletusvarausperiaatteen määrittämistä siten, että kussakin tuotannon tuoterakenteen tai erätilauskaavan nimikkeessä käytetään automaattisesti eri varausperiaatetta.
 author: johanhoffmann
-ms.date: 12/10/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 381b7fa5046df8f2734e4b242058eb9a673388cf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87f10efd7eebdc034af3f7c9081d2674a6190b38
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907229"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334592"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Tuotannon materiaalien oletusvarausperiaatteen ohittaminen
 
@@ -32,7 +32,7 @@ Jos esimerkiksi raaka-aineet tai ainesosat edellyttävät keräilytyötä, kysei
 
 ## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Ohita tuotannon oletusvaraus -toiminnon ottaminen käyttöön tai pois käytöstä
 
-Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Ohita tuotannon oletusvaraus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Ohita oletustuotantovaraus* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tuotannon varauskäytännön määrittäminen nimikemalliryhmään
 

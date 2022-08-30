@@ -2,7 +2,7 @@
 title: Toimialueet Dynamics 365 Commercessa
 description: Tässä artikkelissa kerrotaan, miten toimialueita käsitellään Microsoft Dynamics 365 Commercessa.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
 ms.search.industry: retail
 ms.search.form: ''
-ms.openlocfilehash: 9bd925b7bf27748b3c17946de72a76bc0d0200d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288446"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336666"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Toimialueet Dynamics 365 Commercessa
 
@@ -109,6 +109,10 @@ Voit simuloida useita toimialueita käyttämällä toimialueen kyselymerkkijonon
 Jos haluat määrittää mukautettuja toimialueita Front Door Service -palvelun tai sisällön toimitusverkoston (CDN) avulla, käytettävissä on seuraavat kaksi vaihtoehtoa:
 
 - Määritä Front Door Service -palvelu, kuten Azure Front Door Service, joka käsittelee edustaliikennettä, ja muodosta yhteys Commerce-ympäristöön. Tämä parantaa toimialueiden ja varmenteiden hallintaa sekä enemmän yksityiskohtaisia suojauskäytäntöjä.
+
+> [!NOTE]
+> Jos käytössä on ulkoinen CDN tai Front Door Service -palvelu, varmista, että Commerce-ympäristöön saapuvalla pyynnöllä on Commercen antaman isäntänimi, mutta X-Forwarded-Host (XFH) -otsikko \<custom-domain\>. Jos esimerkiksi Commerce-päätepiste on `xyz.dynamics365commerce.ms` ja mukautettu toimialue `www.fabrikam.com`, edelleenlähetetyn pyynnön isännän otsikon on oltava `xyz.dynamics365commerce.ms` ja XFH-otsikon `www.fabrikam.com`.
+
 - Käytä Commercen mukana toimitettua Azure Front Door -esiintymää. Tämä edellyttää Dynamics 365 Commercen ryhmän koordinointitoimintoja toimialueen todentamiseksi ja SSL-varmenteiden hankkimista tuotannon toimialueelle.
 
 Lisätietoja CDN-palvelun määrittämisestä suoraan on kohdassa [Sisällön toimitusverkoston (CDN) tuen lisääminen](add-cdn-support.md).
@@ -141,14 +145,18 @@ Olemassa olevat / aktiiviset toimialueet:
 
 ## <a name="apex-domains"></a>Apex-toimialueet
 
-Commercen toimittama Azure Front Door -esiintymä ei tue apex-toimialueita (juuritoimialueita, jotka eivät sisällä aliverkkotunnuksia). Apex-toimialueet vaativat IP-osoitteen selvittämisen, ja Commercen Azure Front Door -esiintymä on olemassa vain virtuaalisten päätepisteiden yhteydessä. Jos haluat käyttää apex-toimialuetta, sinulla on kaksi vaihtoehtoa:
+Commercen toimittama Azure Front Door -esiintymä ei tue Apex-toimialueita (juuritoimialueita, jotka eivät sisällä aliverkkotunnuksia). Apex-toimialueet vaativat IP-osoitteen selvittämisen, ja Commercen Azure Front Door -esiintymä on olemassa vain virtuaalisten päätepisteiden yhteydessä. Jos haluat käyttää Apex-toimialuetta, käytettävissä ovat seuraavat vaihtoehdot:
 
-- **Vaihtoehto 1**: Käytä DNS-toimittajaa ja ohjaa apex-toimialue uudelleen www-toimialueelle. Esimerkiksi fabrikam.com ohjaa uudelleen osoitteeseen `www.fabrikam.com`, jossa `www.fabrikam.com` on CNAME-tietue, joka viittaa Commercen isännöimään Azure Front Door -esiintymään.
+- **Vaihtoehto 1**: Käytä DNS-toimittajaa ja ohjaa Apex-toimialue uudelleen www-toimialueelle. Esimerkiksi fabrikam.com ohjaa uudelleen osoitteeseen `www.fabrikam.com`, jossa `www.fabrikam.com` on CNAME-tietue, joka viittaa Commercen isännöimään Azure Front Door -esiintymään.
 
-- **Vaihtoehto 2** - Määritä CDN / Front Door -esiintymään itse, jolloin voit isännöidä apex-toimialuetta.
+- **Vaihtoehto 2** – Jos DNS-palveluntarjoaja tukee ALIAS-tietueita, voit osoittaa Apex-toimialueen Front Door -päätepisteeseen. Näin varmistat, että Front Door -päätepisteen tekemä IP-osoitteen muutos otetaan huomioon.
+  
+- **Vaihtoehto 3** – Jos DNS-palveluntarjoaja ei tue ALIAS-tietueita, määritä CDN tai Front Door -esiintymä itse Apex-toimialueen isännöintiä varten.
 
 > [!NOTE]
-> Jos käytät Azure Front Door -palvelua, sinun on määritettävä myös Azure DNS -palvelu samassa tilauksessa. Azure DNS:n isännöimä apex-toimialue voi osoittaa Azure Front Door -palveluun alias-tietueena. Tämä on ainoa ratkaisu, koska apex-toimialueiden on aina osoitettava IP-osoitteeseen.
+> Jos käytät Azure Front Door -palvelua, sinun on määritettävä myös Azure DNS -palvelu samassa tilauksessa. Azure DNS:n isännöimä Apex-toimialue voi osoittaa Azure Front Door -palveluun alias-tietueena. Tämä on ainoa ratkaisu, koska Apex-toimialueiden on aina osoitettava IP-osoitteeseen.
+  
+Jos sinulla on Apex-toimialueiden toimintaan liittyviä kysymyksiä, ole yhteydessä [Microsoft-tukeen](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>Lisäresurssit
 

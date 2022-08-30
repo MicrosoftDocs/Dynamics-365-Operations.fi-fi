@@ -2,7 +2,7 @@
 title: Tuotannon käyttöliittymän määrittäminen
 description: Tässä artikkelissa käsitellään tuotannon käyttöliittymämääritysten luontia. Kun tuotannon käyttöliittymä avataan, se lataa automaattisesti selain- ja laitekohtaisen valitun määrityksen ja työsuodattimen. Määrityksessä määritetään käytännöt, joita on käytettävä tietyssä käyttötilanteessa.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220359"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336182"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Tuotannon käyttöliittymän määrittäminen
 
@@ -63,29 +63,32 @@ Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on poistett
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Tuotannonohjausliittymän käyttöomaisuuden hallintatoiminto
 
-Tämä toiminto lisää resurssien hallinnan välilehden tuotannon käyttöliittymään. Työtekijät voivat valita tässä välilehdessä siihen koneresurssiin liittyvän resurssin, joka on työluettelon valitussa suodattimessa. Työtekijä voi tarkastella valitun koneresurssin tilaa ja kuntoa enintään neljän valitun laskurin arvojen avulla. Jos haluat käyttää tätä toimintoa, ota seuraava toiminto käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tämä toiminto lisää resurssien hallinnan välilehden tuotannon käyttöliittymään. Työtekijät voivat valita tässä välilehdessä siihen koneresurssiin liittyvän resurssin, joka on työluettelon valitussa suodattimessa. Työtekijä voi tarkastella valitun koneresurssin tilaa ja kuntoa enintään neljän valitun laskurin arvojen avulla.
 
-- *Tuotannonohjausliittymän käyttöomaisuuden hallintatoiminto*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä.)
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Tuotannonohjausliittymän käyttöomaisuuden hallintatoiminto* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-### <a name="enable-job-search"></a>Työhaun ottaminen käyttöön
+### <a name="job-search"></a>Töiden haku
 
-Tämän ominaisuuden avulla voit lisätä hakukentän työluetteloon. Työntekijät voivat etsiä tietyn työn syöttämällä työtunnuksen tai etsimällä tietyn tilauksen kaikki työt antamalla tilaustunnuksen. Työntekijät voivat syöttää tunnuksen näppäimistön avulla tai skannaamalla viivakoodia. Jos haluat käyttää sitä, ota seuraava ominaisuus käyttöön [ominaisuuksien hallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tämän ominaisuuden avulla voit lisätä hakukentän työluetteloon. Työntekijät voivat etsiä tietyn työn syöttämällä työtunnuksen tai etsimällä tietyn tilauksen kaikki työt antamalla tilaustunnuksen. Työntekijät voivat syöttää tunnuksen näppäimistön avulla tai skannaamalla viivakoodia.
 
-- *Töiden haku tuotannon työnohjausliittymälle*<br>(Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä.)
+Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Töiden haku tuotannon työnohjausliittymälle* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Oheis- ja sivutuotteiden raportoinnin käyttöönotto
+### <a name="report-on-co-products-and-by-products"></a>Oheis- ja sivutuotteiden raportointi
 
-Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon suoritusliittymää erätilausten edistymisen raportointiin. Tähän raportointiin kuuluu oheis- ja sivutuotteita koskeva raportointi. Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon suoritusliittymää erätilausten edistymisen raportointiin. Tähän raportointiin kuuluu oheis- ja sivutuotteita koskeva raportointi.
 
-- *Raportti tuotannon käyttöliittymän rinnakkais- ja sivutuotteista*
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Raportti tuotannon käyttöliittymän rinnakkais- ja sivutuotteista* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Ota käyttöön täysien sarjanumeroiden, eränumeroiden ja rekisterikilpinumeroiden näyttäminen
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Täysien sarjanumeroiden, eränumeroiden ja rekisterikilpinumeroiden näyttäminen
 
 Tämä ominaisuus tarjoaa paremman käyttökokemuksen sarja-, erä- ja lisenssinumeroiden tarkastelusta tuotannonohjausliittymässä. Näyttö muuttuu korttinäkymästä niin, että näkyvissä on rajallinen määrä merkkejä luettelonäkymään, jossa on tarpeeksi tilaa näyttää kaikki arvot. Luettelossa on myös mahdollisuus etsiä tiettyjä numeroita.
 
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytössä on vanhempi versio kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Näytä täydet sarja-, erä- ja rekisterinumerot tuotannon käyttöliittymässä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
+
+
 Supply Chain Managementin versiosta 10.0.25 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Näytä täydet sarja-, erä- ja rekisterinumerot tuotannon käyttöliittymässä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-### <a name="enable-registering-of-material-consumption"></a>Ota käyttöön materiaalikulutuksen rekisteröinti
+### <a name="register-material-consumption"></a>Rekisteröi materiaalikulutus
 
 Tämän ominaisuuden avulla työntekijät voivat käyttää tuotannon työnohjausliittymää materiaalin kulutuksen, eränumeroiden ja sarjanumeroiden rekisteröimiseen. Joillekin valmistajille, erityisesti prosessiteollisuusalojen valmistajille, on nimenomaisesti rekisteröitävä kussakin erässä tai tuotantotilauksissa kulutettu materiaalimäärä. Työntekijät voivat esimerkiksi käyttää vaakaa punnitsemaan työssään kulutetun materiaalin määrän. Organisaatioiden on myös kirjattava kunkin tuotteen valmistamisen eränumerot varmistaakseen materiaalien jäljitettävyyden.
 
@@ -97,7 +100,7 @@ Tästä ominaisuudesta on kaksi versiota. Yksi toiminto tukee vain nimikkeitä, 
 > [!IMPORTANT]
 > Voit käyttää ei-WMS-toimintoa erikseen. Jos kuitenkin käytät WMS:ää, molemmat toiminnot on otettava käyttöön.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>Todellisen painon nimikkeiden raportoinnin ottaminen käyttöön
+### <a name="report-on-catch-weight-items"></a>Todellisen painon nimikkeiden raportointi
 
 Työntekijät voivat käyttää tuotannon suoritusliittymää todellisen painon nimikkeiden erätilausten edistymisen raportointiin. Erätilaukset luodaan kaavojen perusteella, ja nämä kaavat voidaan määritellä siten, että niissä on todellisen painon nimikkeet kaavanimikkeinä, oheistuotteina ja sivutuotteina. Kaavan voi määrittää myös, jos kaavarivit on määritetty todellisen painon ainesosille. Todellisen painon nimikkeissä käytetään kahta mittayksikköä varaston seuraamiseksi: todellisen painon määrä ja varastomäärä. Esimerkiksi elintarviketeollisuudessa laatikollinen lihaa voidaan määrittää todellisen painon nimikkeeksi, jossa todellisen painon määrää käytetään laatikoiden määrän seuraamiseen, ja varastomäärää käytetään laatikoiden painon seuraamiseen.
 
@@ -105,15 +108,13 @@ Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttö
 
 - *Todellisen painon nimikkeiden raportointi tuotannon käyttöliittymästä*
 
-### <a name="enable-the-my-day-dialog"></a>Päivän tehtävät -valintaikkunan ottaminen käyttöön
+### <a name="the-my-day-dialog"></a>Päivän tehtävät -valintaikkuna
 
 **Päivän tehtävät** -valintaikkunassa työntekijöille on yleiskuvaus päivittäisistä rekisteröinneistä ja palkallisen ajan, palkallisen ylityöajan, poissaolojen ja palkallisen poissaolon nykyisistä saldoista.
 
-Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Jos haluat käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässä. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Järjestelmänvalvojat voivat ottaa tämän toiminnon käyttöön tai pois käytöstä hakemalla *Tuotannon käyttöliittymän Päivän tehtävät -näkymä* -toimintoa [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa.
 
-- *Tuotannon käyttöliittymän Päivän tehtävät -näkymä*
-
-### <a name="enable-teams"></a>Ota ryhmät käyttöön
+### <a name="teams"></a>Ryhmät
 
 Kun samaan tuotantotyöhön on liitetty useita työntekijöitä, he voivat muodostaa ryhmän. Tiimi voi nimetä yhden työntekijän vetäjäksi. Jäljellä olevista työntekijöistä tulee tämän jälkeen automaattisesti tämän vetäjän avustajia. Tuloksena olevassa ryhmässä vain vetäjän on rekisteröitävä työn tila. Aikatietueita käytetään kaikille ryhmän jäsenille.
 
@@ -121,7 +122,7 @@ Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttö
 
 - *Tuotantoryhmät tuotannon käyttöliittymässä*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Ota käyttöön lisämääritys tuotannon käyttöliittymässä
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>Lisämääritys tuotannon käyttöliittymässä
 
 Tämä ominaisuus lisää seuraavien toimintojen asetukset **Määritä tuotannon suoritus** -sivulle:
 
@@ -136,7 +137,6 @@ Tietoja asetusten käytöstä on jäljempänä tässä artikkelissa.
 Jos haluat käyttää tätä toiminnallisuutta, ota seuraava ominaisuus käyttöön [Ominaisuuksienhallinnassa](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Lisämääritys tuotannon käyttöliittymässä*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Tuotannon käyttöliittymämääritysten käyttäminen
 

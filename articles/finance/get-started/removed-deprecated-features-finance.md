@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219565"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313880"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -46,6 +46,17 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Tuotealueet, joihin vaikutetaan** | Hakemus |
 | **Käytön asetukset** | Kaikki |
 | **Tila** | Vanhentunut: **Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero** -ominaisuutta ei enää tueta huhtikuun 2023 jälkeen, eli sille ei tarjota enää virheiden korjauksia tai tietoturvakorjauksia. Pyydämme asiakkaita käyttämään parannettua [Intian varastosiirtotilaukset](../../finance/localizations/apac-ind-stock-transfer.md) -ominaisuutta. **Varastosiirtotilaukset, joiden siirron hintaan sisältyy vero** -ominaisuus ei ole enää käytettävissä lokakuun 2023 jälkeen, ja asiakkaita pyydetään käyttämään parannettua ominaisuutta. |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>Tiliotteen tuonti ja vienti Positive pay -tiedostolle
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Poiston tai vanhentumisen syy** |Korvattu parannetulla toiminnolla – tiliotteiden tuonti ja Positive Pay -tiedostojen vienti.| 
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: XSLT-toiminnot tiedostojen tuonnissa ja viennissä ei enää tueta ohjelma- ja suojauskorjauksia. Asiakkaita pyydetään käyttämään parannettua toimintoa: [Positive Pay -tiedostojen määrittäminen sähköisen raportoinnin avulla](../../finance/accounts-payable/set-up-positive-pay-er.md) ja [Pankkitilin täsmäytyksen tuonnin lisätoimintojen määrittäminen sähköisen raportoinnin avulla](../../finance/accounts-payable/import-bai2-er.md). Vuoden 2022 syyskuun jälkeen XSLT-toiminnot eivät ole enää käytettävissä. Asiakkaita pyydetään siirtymään parannettujen toimintojen käyttäjiksi.|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Financen version 10.0.26 poistetut tai vanhentuneet ominaisuudet
 

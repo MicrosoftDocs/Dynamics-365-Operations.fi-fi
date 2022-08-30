@@ -2,7 +2,7 @@
 title: Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen
 description: Tässä artikkelissa käsitellään kunkin Warehouse Management -mobiilisovelluksen määritetyn tehtävätyönkulun kunkin vaiheen mukautettujen ohjeiden luontia ja näyttämistä.
 author: Mirzaab
-ms.date: 08/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: faa9bfa320823664603153601c56654170e7e23a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220146"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334473"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Warehouse Management ‑mobiilisovelluksen vaiheiden otsikoiden ja ohjeiden mukauttaminen
 
@@ -28,9 +28,9 @@ Tässä artikkelissa käsitellään jokaisen Warehouse Management -mobiilisovell
 - **Työntekijät pääsevät alkuun entistä nopeammin, sillä he voivat toimia selkeiden ohjeiden mukaan tehtävän jokaisessa vaiheessa.** Työnkulun jokaisessa vaiheessa annetaan ohjeita, joiden avulla kenttätyöntekijät ymmärtävät, mistä tehtävässä on kyse.
 - **Ohjeet vastaavat omia prosesseja.** Omat ohjeet kirjoitetaan omien liiketoiminta- ja varastoprosessien mukaisesti. Terminologia voi esimerkiksi perustua käytössä olevaan fyysiseen tilaan ja paikallisiin lyhenteisiin.
 
-## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Varastosovelluksen vaiheiden ohjetoiminnon ottaminen käyttöön
+## <a name="turn-the-warehouse-app-step-instructions-feature-on-or-off"></a>Varastosovelluksen vaiheohjeet -toiminnon käyttöönotto tai käytöstäpoisto
 
-Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä ominaisuus on poistettu oletusarvoisesti käytöstä. Järjestelmänvalvojat voivat ottaa tämän ominaisuuden käyttöön tai pois käytöstä hakemalla *Varastosovelluksen vaiheohjeet* -ominaisuutta [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilasta.
+Ennen kuin voit käyttää tätä ominaisuutta, se on otettava käyttöön järjestelmässäsi. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä. Jos käytät vanhempaa versiota kuin 10.0.29, järjestelmänvalvojat voivat ottaa tämän ominaisuuden käyttöön tai pois käytöstä hakemalla *Varastosovelluksen vaiheohjeet* -toimintoa [Ominaisuuksien hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilasta.
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Vaiheiden otsikot ja ohjeet sovelluksessa
 

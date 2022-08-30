@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885954"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306082"
 ---
 # <a name="inventory-visibility-tips"></a>Varaston näkyvyyden vihjeet
 
@@ -35,5 +35,8 @@ Tässä on muutamia vinkkejä, jotka kannattaa ottaa huomioon varaston näkyvyyd
 - Tällä hetkellä [osiointimääritys](inventory-visibility-configuration.md#partition-configuration) koostuu kahdesta perusdimensiosta (`SiteId` ja `LocationId`), jotka ilmaisevat tietojen jakelun. Samaan osiointiin liittyvät toiminnot voivat tuottaa suuremman suorituskyvyn alhaisemmin kustannuksin. Ratkaisu sisältää oletusarvon mukaan tämän osiointimäärityksen. Näin ollen *sinun ei tarvitse määrittää sitä itse*. Älä mukauta oletusosiointimääritystä. Jos poistat tai muutat sitä, se aiheuttaa todennäköisesti odottamattoman virheen.
 - Osiomäärityksessä määritettyjä perusdimensioita ei saa määrittää [tuotteen indeksihierarkian määrityksissä](inventory-visibility-configuration.md#index-configuration).
 - Sinulla on oltava vähintään yksi indeksihierarkia (esimerkiksi joka sisältää perusdimension `Empty`) [tuotteen indeksihierarkian määrityksessä](inventory-visibility-configuration.md#index-configuration), muussa tapauksessa kyselyt epäonnistuvat virheellä "Indeksihierarkiaa ei ole määritetty".
+- Tietolähde `@iv` on ennalta määritetty tietolähde. Kohdassa `@iv` etuliitteen `@` kanssa määritetyt fyysiset mittausarvot ovat ennalta määritettyjä mittausarvoja. Nämä mittausarvot ovat kohdistustoiminnon ennalta määritetty määritys, joten niitä ei voi muuttaa eikä poistaa. Jos näin tehdään, kohdistustoiminnon käyttämisen yhteydessä tapahtuu todennäköisesti odottamattomia virheitä.
+- Voit lisätä uusia fyysisiä mittausarvoja ennalta määritettyyn laskettuun mittausarvoon `@iv.@available_to_allocate`, mutta sen nimeä ei saa muuttaa.
+- Jos palautat Supply Chain Management -tietokannan, palautettu tietokanta voi sisältää tietoja, jotka ovat ristiriidassa niiden tietojen kanssa, jotka varaston näkyvyys on synkronoinut aiemmin Dataverseen. Tämä ristiriita tiedoissa voi aiheuttaa järjestelmävirheitä ja muita ongelmia. Tämän vuoksi on tärkeää, että tyhjennät aina kaikki liittyvät varaston näkyvyyden tiedot Dataversesta ennen Supply Chain Management -tietokannan palautusta. Lisätietoja on kohdassa [Varaston näkyvyyden tietojen tyhjentäminen Dataversesta ennen Supply Chain Management -tietokannan palauttamista](inventory-visibility-setup.md#restore-environment-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

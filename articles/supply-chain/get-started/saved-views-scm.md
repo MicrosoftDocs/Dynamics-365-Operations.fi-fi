@@ -2,7 +2,7 @@
 title: Supply Chain Managementin tallennetut vakionäkymät
 description: Tässä artikkelissa käsitellään käytettävissä olevia tallennettuja vakionäkymiä ja niiden käyttöön ottamista.
 author: kamaybac
-ms.date: 02/03/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f94fffb9aa2c208b8c2c0005a2892853eda66a01
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887555"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334832"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Supply Chain Managementin tallennetut vakionäkymät
 
@@ -47,15 +47,15 @@ Seuraavassa taulukossa käsitellään Inventoinnin- ja varastonhallintamoduuliss
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Varastoluettelo | Myyntitiedot | Tässä yksinkertaistetussa näkymässä voi keskittyä taloushallinnon tietoihin käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Varastoluettelo | Laadunvalvonta | Tässä yksinkertaistetussa näkymässä voi keskittyä laadunvalvontaan käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Varastoluettelo | Vastaanotto | Tässä yksinkertaistetussa näkymässä voi keskittyä vastaanottotoimintoihin käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Varastoluettelo | Toimitus | Tässä yksinkertaistetussa näkymässä voi keskittyä lähetystoimintoihin käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Tapahtumat | Yksinkertaistettu | Tässä yksinkertaistetussa näkymässä voi tarkastella varaston tilaa ilman taloushallinnon tietoja ja muita harvemmin käytettyjä kenttiä. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Siirtotilaukset | Toimitus | Tässä yksinkertaistetussa näkymässä voi keskittyä lähetystoimintoihin siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Siirtotilaukset | Vastaanotto | Tässä yksinkertaistetussa näkymässä voi keskittyä vastaanottotoimintoihin siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Siirtotilaukset | Laadunvalvonta | Tässä yksinkertaistetussa näkymässä voi keskittyä laadunvalvontaan siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Siirtotilaukset | Myyntitiedot | Tässä yksinkertaistetussa näkymässä voi keskittyä taloushallinnon tietoihin siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
+| Varastoluettelo | Myyntitiedot | Tässä yksinkertaistetussa näkymässä voi keskittyä taloushallinnon tietoihin käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Varastoluettelo | Laadunvalvonta | Tässä yksinkertaistetussa näkymässä voi keskittyä laadunvalvontaan käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Varastoluettelo | Vastaanotto | Tässä yksinkertaistetussa näkymässä voi keskittyä vastaanottotoimintoihin käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Varastoluettelo | Lähetys | Tässä yksinkertaistetussa näkymässä voi keskittyä lähetystoimintoihin käytettävissä olevaa varastoa hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Tapahtumat | Yksinkertaistettu | Tässä yksinkertaistetussa näkymässä voi tarkastella varaston tilaa ilman taloushallinnon tietoja ja muita harvemmin käytettyjä kenttiä. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Siirtotilaukset | Lähetys | Tässä yksinkertaistetussa näkymässä voi keskittyä lähetystoimintoihin siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Siirtotilaukset | Vastaanotto | Tässä yksinkertaistetussa näkymässä voi keskittyä vastaanottotoimintoihin siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Siirtotilaukset | Laadunvalvonta | Tässä yksinkertaistetussa näkymässä voi keskittyä laadunvalvontaan siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Siirtotilaukset | Myyntitiedot | Tässä yksinkertaistetussa näkymässä voi keskittyä taloushallinnon tietoihin siirtotilauksia hallittaessa. | Inventoinnin- ja varastonhallinnan tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Pääsuunnittelumoduulin tallennetut näkymät
 
@@ -63,8 +63,8 @@ Seuraavassa taulukossa käsitellään pääsuunnittelumoduulissa käytettäviss�
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Suunnitellut tilaukset: Suunnitellun tilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain kentät, joita käytetään eniten yksittäisen suunnitellun tilauksen tietojen käsittelyyn. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Suunniteltujen tilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Suunnitellut tilaukset: Suunniteltujen tilausten luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain kentät, joita käytetään eniten suunniteltujen tilausten luettelon käsittelyyn. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Suunniteltujen tilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
+| Suunnitellut tilaukset: Suunnitellun tilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain kentät, joita käytetään eniten yksittäisen suunnitellun tilauksen tietojen käsittelyyn. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Suunniteltujen tilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Suunnitellut tilaukset: Suunniteltujen tilausten luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain kentät, joita käytetään eniten suunniteltujen tilausten luettelon käsittelyyn. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Suunniteltujen tilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
 
 ## <a name="saved-views-for-the-procurement-and-sourcing-module"></a>Hankintamoduulin tallennetut näkymät
 
@@ -72,10 +72,10 @@ Seuraavassa taulukossa käsitellään hankintamoduulissa käytettävissä olevia
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Ostotilauksen tiedot | Tilauksen luonti | Tämä yksinkertaistettu näkymä on optimoitu uusien ostotilausten luontia varten. | Ostotilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Ostotilauksen tiedot | Inventoinnin- ja varastonhallinta | Tämä yksinkertaistettu näkymä on optimoitu varastoon liittyvien tehtävien suorittamiseen, kuten vastaanotetun varaston seurantaan, varaston vastaanottoon, nettotarpeiden tarkistamiseen ja tilausmäärien oikaisemiseen. | Ostotilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Ostotilauksen tiedot | Taloushallinto | Tämä yksinkertaistettu näkymä on optimoitu taloushallintoon liittyvien tehtävien suorittamiseen, kuten laskutukseen sekä hintojen, yhteissummien ja kulujen tarkistamiseen. | Ostotilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Ostotilauksen tiedot | Tilauksen hyväksyntä | Tämä yksinkertaistettu näkymä on optimoitu ostotilausten hyväksymiseen. | Ostotilausten tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
+| Ostotilauksen tiedot | Tilauksen luonti | Tämä yksinkertaistettu näkymä on optimoitu uusien ostotilausten luontia varten. | Ostotilausten tallennetut näkymät<br><br>Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. Poistettu versiosta 10.0.29 alkaen.) |
+| Ostotilauksen tiedot | Inventoinnin- ja varastonhallinta | Tämä yksinkertaistettu näkymä on optimoitu varastoon liittyvien tehtävien suorittamiseen, kuten vastaanotetun varaston seurantaan, varaston vastaanottoon, nettotarpeiden tarkistamiseen ja tilausmäärien oikaisemiseen. | Ostotilausten tallennetut näkymät<br><br>Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. Poistettu versiosta 10.0.29 alkaen.) |
+| Ostotilauksen tiedot | Taloushallinto | Tämä yksinkertaistettu näkymä on optimoitu taloushallintoon liittyvien tehtävien suorittamiseen, kuten laskutukseen sekä hintojen, yhteissummien ja kulujen tarkistamiseen. | Ostotilausten tallennetut näkymät<br><br>Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. Poistettu versiosta 10.0.29 alkaen.) |
+| Ostotilauksen tiedot | Tilauksen hyväksyntä | Tämä yksinkertaistettu näkymä on optimoitu ostotilausten hyväksymiseen. | Ostotilausten tallennetut näkymät<br><br>Käytössä oletusarvoisesti versiosta 10.0.25 alkaen. Poistettu versiosta 10.0.29 alkaen.) |
 
 ## <a name="saved-views-for-the-product-information-management-module"></a>Tuotetietohallintamoduulin tallennetut näkymät
 
@@ -83,11 +83,11 @@ Seuraavassa taulukossa käsitellään tuotetietohallintamoduulissa käytettävis
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Julkaistujen tuotteiden luettelo | Tuotteen luonti | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden luonnin aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Vapautetun tuotteen tiedot | Tuotteen luonti | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden luonnin aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Vapautetun tuotteen tiedot | Logistiikkatietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden logistiikkatietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Vapautetun tuotteen tiedot | Ostotietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden ostotietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Vapautetun tuotteen tiedot | Myyntitietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden myyntiin liittyvien tietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
+| Julkaistujen tuotteiden luettelo | Tuotteen luonti | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden luonnin aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Vapautetun tuotteen tiedot | Tuotteen luonti | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden luonnin aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Vapautetun tuotteen tiedot | Logistiikkatietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden logistiikkatietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Vapautetun tuotteen tiedot | Ostotietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden ostotietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Vapautetun tuotteen tiedot | Myyntitietojen hallinta | Yksinkertaistettu sivunäkymä, joka sisältää vain kentät, joita käytetään useimmin tuotteiden myyntiin liittyvien tietojen hallinnan aikana. | Julkaistujen tuotteiden tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
 
 ## <a name="saved-views-for-the-production-control-module"></a>Tuotannonhallintamoduulin tallennetut näkymät
 
@@ -95,10 +95,10 @@ Seuraavassa taulukossa käsitellään tuotannonhallintamoduulissa käytettäviss
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Tuotantotilauksen tuoterakenne -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Tuotantotilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Tuotantotilauksen keräysluettelo -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
-| Tuotantotilauksen luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen) |
+| Tuotantotilauksen tuoterakenne -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Tuotantotilauksen tiedot -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Tuotantotilauksen keräysluettelo -sivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Tuotantotilauksen luettelosivu | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tuotannonohjauksen tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.21 alkaen Poistettu versiosta 10.0.29 alkaen.) |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Myynti- ja markkinointimoduulin tallennetut näkymät
 
@@ -106,10 +106,10 @@ Seuraavassa taulukossa käsitellään myynti- ja markkinointimoduulissa käytett
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Pakkausluettelokirjauskansio | Kirjauskansion tarkastelu | Tämä yksinkertaistettu näkymä sisältää vain pakkausluettelokirjauskansioiden tarkastelussa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Myyntitilaus | Tilauksen luonti | Tämä yksinkertaistettu näkymä sisältää vain myyntitilausten luonnissa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Myyntitilaus | Tilauksen tarkistus | Tämä yksinkertaistettu näkymä sisältää vain myyntitilausten tarkastelussa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Myyntitarjous | Tarjouksen luonti | Tämä yksinkertaistettu näkymä sisältää vain myyntitarjousten luonnissa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
+| Pakkausluettelokirjauskansio | Kirjauskansion tarkastelu | Tämä yksinkertaistettu näkymä sisältää vain pakkausluettelokirjauskansioiden tarkastelussa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Myyntitilaus | Tilauksen luonti | Tämä yksinkertaistettu näkymä sisältää vain myyntitilausten luonnissa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Myyntitilaus | Tilauksen tarkistus | Tämä yksinkertaistettu näkymä sisältää vain myyntitilausten tarkastelussa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Myyntitarjous | Tarjouksen luonti | Tämä yksinkertaistettu näkymä sisältää vain myyntitarjousten luonnissa eniten käytetyt kentät. | Myynnin ja markkinoinnin tallennetut näkymät<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
 
 ## <a name="saved-views-for-the-warehouse-management-module"></a>Varastonhallintamoduulin tallennetut näkymät
 
@@ -117,13 +117,13 @@ Seuraavassa taulukossa käsitellään varastonhallintamoduulissa käytettäviss�
 
 | Sivu | Näkymän nimi | Näkymän kuvaus | Toiminnon nimi |
 |---|---|---|---|
-| Kaikki kuormat | Saapuvien käsittely | Tämä yksinkertaistettu näkymä sisältää vain saapuvien kuormien käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät kuorman käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Kaikki kuormat | Lähtevien käsittely | Tämä yksinkertaistettu näkymä sisältää vain lähtevien kuormien käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät kuorman käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Kaikki lähetykset | Saapuvien käsittely | Tämä yksinkertaistettu näkymä sisältää vain saapuvien lähetysten käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät lähetyksen käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Kaikki lähetykset | Lähtevien käsittely | Tämä yksinkertaistettu näkymä sisältää vain lähtevien lähetysten käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät lähetyksen käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Kaikki aallot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tallennettu näkymä aallon käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Kuormasuunnittelun työtila | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tallennettu näkymä kuormasuunnittelun työtilaa varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
-| Työn tiedot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Työn tietosivun tallennettu näkymä<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen) |
+| Kaikki kuormat | Saapuvien käsittely | Tämä yksinkertaistettu näkymä sisältää vain saapuvien kuormien käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät kuorman käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Kaikki kuormat | Lähtevien käsittely | Tämä yksinkertaistettu näkymä sisältää vain lähtevien kuormien käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät kuorman käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Kaikki lähetykset | Saapuvien käsittely | Tämä yksinkertaistettu näkymä sisältää vain saapuvien lähetysten käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät lähetyksen käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Kaikki lähetykset | Lähtevien käsittely | Tämä yksinkertaistettu näkymä sisältää vain lähtevien lähetysten käsittelyssä eniten käytetyt kentät. | Tallennetut näkymät lähetyksen käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Kaikki aallot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tallennettu näkymä aallon käsittelyä varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Kuormasuunnittelun työtila | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Tallennettu näkymä kuormasuunnittelun työtilaa varten<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
+| Työn tiedot | Yksinkertaistettu | Tämä yksinkertaistettu näkymä sisältää vain eniten käytetyt kentät. Tällä tavoin näkymästä saa nopean yleiskatsauksen ja työprosessi on sujuva. | Työn tietosivun tallennettu näkymä<br><br>(Käytössä oletusarvoisesti versiosta 10.0.25 alkaen Poistettu versiosta 10.0.29 alkaen.) |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

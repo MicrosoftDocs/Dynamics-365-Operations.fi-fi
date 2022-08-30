@@ -2,7 +2,7 @@
 title: Viivetoleranssi (negatiiviset päivät)
 description: Tässä artikkelissa on tietoja viivetoleranssin laskennasta ja siitä, miten se vaikuttaa suunnitellun tilauksen luontiin suunnittelun optimoinnissa.
 author: t-benebo
-ms.date: 07/30/2021
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e1c9a9b618184303efe2bd10975e46423cca9ccc
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219964"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335372"
 ---
 # <a name="delay-tolerance-negative-days"></a>Viivetoleranssi (negatiiviset päivät)
 
@@ -23,11 +23,11 @@ ms.locfileid: "9219964"
 
 Viivetoleranssitoiminnon ansiosta suunnittelun optimointi voi ottaa huomioon kattavuusryhmille, nimikkeen kattavuudelle ja/tai pääsuunnitelmille määritetyn **negatiivisten päivien** arvon. Sitä käytetään pääsuunnittelussa käytetyn viivetoleranssikauden pidennykseen. Näin voidaan välttää uusien toimitustilausten luominen, jos olemassa oleva toimitus voi kattaa kysynnän lyhyen viiveen jälkeen. Toiminnon tarkoitus on määrittää, onko tarpeen luoda uusi toimitustilaus annettua kysyntää varten.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Toiminnon ottaminen käyttöön järjestelmässä
+## <a name="turn-delay-tolerance-features-on-or-off"></a>Viivetoleranssin toimintojen käyttöönotto tai käytöstäpoisto
 
 Voit ottaa viivetoleranssin toiminnon käyttöön järjestelmässäsi valitsemalla [Ominaisuuksien hallinta](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) ja ottamalla käyttöön seuraavat ominaisuudet:
 
-- *Negatiiviset päivät suunnittelun optimoinnissa* – Tämä ominaisuus ottaa käyttöön kattavuusryhmien ja nimikkeiden kattavuuden negatiiviset päivät.
+- *Negatiiviset päivät suunnittelun optimoinnissa* – Tämä ominaisuus ottaa käyttöön kattavuusryhmien ja nimikkeiden kattavuuden negatiiviset päivät. Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.
 - *Tilauksesta valmistukseen -tarjonnan automatisointi* – Tämä ominaisuus ottaa käyttöön pääsuunnitelmien negatiiviset päivät. (Lisätietoja on kohdassa [Tilauksesta valmistukseen -tarjonnan automatisointi](../make-to-order-supply-automation.md).)
 
 ## <a name="delay-tolerance-in-planning-optimization"></a>Suunnittelun optimoinnin viivetoleranssi

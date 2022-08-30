@@ -2,7 +2,7 @@
 title: Siirtotilausten luominen varastosovelluksesta
 description: Tässä artikkelissa käsitellään siirtotilausten luontia ja käsittelyä varastonhallinnan mobiilisovelluksessa
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877447"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336452"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Siirtotilausten luominen varastosovelluksesta
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877447"
 
 Varastotyöntekijät voivat luoda ja käsitellä tällä ominaisuudella siirtotilauksia suoraan varastonhallinnan mobiilisovelluksessa. Työntekijä aloittaa valitsemalla kohdevaraston. Tämän jälkeen lisäävät rekisterikilvet siirtotilaukseen lukemalla vähintään yhden rekisterikilven. Kun varastotyöntekijä valitsee **Suorita tilaus**, erätyö luo tarvittavan siirtotilauksen ja tarvittavat tilausrivit kyseisille rekisterikilville rekisteröidyn käytettävissä olevan varaston perusteella.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Toiminnon ottaminen käyttöön tai pois käytöstä
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Ota käyttöön tämä toiminto ja sen edellytykset
 
 Ennen kuin tätä toimintoa voidaan käyttää, se on otettava edellytyksineen käyttöön järjestelmässä. Järjestelmänvalvojat voivat käyttää [toimintojen hallinnan](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) sivua ja tarkistaa toiminnon tilan sekä ottaa sen käyttöön tarvittaessa.
 
 1. Ota seuraavat kaksi toimintoa (järjestyksessä) käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -työtilassa. Supply Chain Managementin versiosta 10.0.25 alkaen nämä molemmat toiminnot ovat oletusarvoisesti käytössä.
-    1. *Käsittele varastosovelluksen tapahtumat*
-    1. *Luo ja käsittele siirtotilauksia varastosovelluksesta*
-1. Jos lähtevien lähetysten käsittely halutaan automatisoida, myös [Vahvista lähtevät lähetykset erätöissä](confirm-outbound-shipments-from-batch-jobs.md) -ominaisuus on otettava käyttöön.
+    1. *Käsittele varastosovelluksen tapahtumat*<br>(Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
+    1. *Luo ja käsittele siirtotilauksia varastosovelluksesta*<br>(Supply Chain Managementin versiosta 10.0.29 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
+1. Jos lähtevien lähetysten käsittely halutaan automatisoida, myös [*Vahvista lähtevät lähetykset erätöissä*](confirm-outbound-shipments-from-batch-jobs.md) -toiminto on otettava käyttöön. (Supply Chain Managementin versiosta 10.0.21 alkaen tämä ominaisuus on oletusarvoisesti käytössä. Supply Chain Managementin versiosta 10.0.25 alkaen tämä toiminto on pakollinen, eikä sitä voi poistaa käytöstä.)
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Mobiililaitteen valikkokohteen määrittäminen luomaan siirtotilauksia
 
@@ -307,11 +307,11 @@ Ei. Siirtotilaukseen, jossa on **Suorita siirtotilaus** -varastosovellustapahtum
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Miten käytettävä aiemmin luotu siirtotilaus löydetään varastonhallinnan mobiilisovelluksen Valitse siirtotilaus -painikkeella, jos tilausta ei ole vielä luotu taustajärjestelmässä?
 
-Vaikka tilauksia ei voi tällä hetkellä hakea sovelluksessa, siirtotilauksen numeroita voi etsiä **Varastosovellustapahtumat**-sivulla. Lisätietoja on kohdassa [Varastosovellustapahtumien kysely](#inquire-the-warehouse-app-events).
+Voit antaa työntekijöille mahdollisuuden etsiä siirtotilausnumeroita Warehouse Management -mobiilisovelluksesta käyttämällä sen [tietokyselyominaisuutta](warehouse-app-data-inquiry.md). Voit esimerkiksi luoda [kiertotien](warehouse-app-detours.md) mobiililaitteen valikon vaihtoehdolle, joka tekee kyselyn WWW-asiakasohjelman **Varastosovelluksen tapahtumat** -sivulla (`WHSMobileDeviceQueueMessageCollection`) näytettävistä tiedoista *Valitse tilaus – MobileDeviceQueueMessageCollectionIdentifierId* -vaiheen osana. Siirtotilauksen numero vastaa **Tunniste**-kentässä näytettävää arvoa. Katso myös [Varastosovellustapahtumien kysely](#inquire-the-warehouse-app-events).
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Voidaanko varastonhallinnan mobiilisovelluksessa käytettävä siirtotilauksen numero valita manuaalisesti?
 
-Vain automaattisesti numerojärjestystä käyttävää siirtotilauksen numeroiden luontia tuetaan.
+Vain automaattisesti numerojärjestystä käyttävää siirtotilauksen numeroiden luontia tuetaan. Katso myös vastaus edelliseen kysymykseen, joka koskee **Valitse siirtotilaus** -painikkeen määrittämistä. Lisätietoja siirtotilauksen numeroiden etsimisestä on kohdassa [Varastosovellustapahtumien kysely](#inquire-the-warehouse-app-events).
 
 ### <a name="background-processing"></a>Taustaprosessi
 

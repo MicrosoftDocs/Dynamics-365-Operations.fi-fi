@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: af7f4b09fd624aeda2ff002292e11cf84fd02991
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
+ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262325"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9347286"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Suunnittelun optimoinnin sopivuusanalyysi
 
@@ -77,10 +77,10 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Lukitusaikaraja | Kohteen kattavuustietueet, joissa on lukitusaikaraja määritetty: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä lukitusaikarajan asetus ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 |
 | Lukitusaikaraja | Pääsuunnitelmat, joissa on lukitusaikaraja määritetty: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä lukitusaikarajan asetus ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 |
 | Konsernin sisäinen | Pääsuunnitelmat, mukaan lukien suunniteltu tuotantovirran kysyntä: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Konsernin sisäinen suunnittelu](Intercompany-planning.md) | Tuettu |
-| Kanban | Kohteen kattavuusrekisterit, joissa on suunniteltu tilaustyyppi kanban: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä kanbaniin määritetty nimikekattavuus ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Kanban-suunnitellun tilauksen tyyppi luo varoituksen pääsuunnittelun aikana, ja suunnitellut ostotilaukset luodaan kattamaan liittyvä kysyntä. | 2023 tai uudempi |
-| Kanban | Nimikkeet, joiden oletusjärjestystyyppi on kanban: *\#* | Tällä hetkellä kanbaniin määritetty oletustilaustyyppi ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Kanban-oletuksen tilauksen tyyppi luo varoituksen pääsuunnittelun aikana, ja suunnitellut ostotilaukset luodaan kattamaan liittyvä kysyntä. | 2023 tai uudempi |
+| Kanban | Kohteen kattavuusrekisterit, joissa on suunniteltu tilaustyyppi kanban: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä kanbaniin määritetty nimikekattavuus ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Kanban-suunnitellun tilauksen tyyppi luo varoituksen pääsuunnittelun aikana, ja suunnitellut ostotilaukset luodaan kattamaan liittyvä kysyntä. | Tuleva aalto |
+| Kanban | Nimikkeet, joiden oletusjärjestystyyppi on kanban: *\#* | Tällä hetkellä kanbaniin määritetty oletustilaustyyppi ohitetaan, kun suunnittelun optimointi on otettu käyttöön. Kanban-oletuksen tilauksen tyyppi luo varoituksen pääsuunnittelun aikana, ja suunnitellut ostotilaukset luodaan kattamaan liittyvä kysyntä. | Tuleva aalto |
 | Tuotteen elinkaaren tila | Tuotteen elinkaaren tilat eivät ole aktiivisia suunnittelulle: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Sulje pois tuotteita, joissa on tietty tuotteen elinkaaren tila](product-lifecycle-state.md) | Tuettu |
-| Tuotantoympäristö | Tuoterakennerivit, joilla on pyöristys tai useita asetuksia: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä pyöristystä ja useita asetuksia ei oteta huomioon tuoterakenneriveillä, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen liittyvästä asetuksesta. | 2023 tai uudempi |
+| Tuotantoympäristö | Tuoterakennerivit, joilla on pyöristys tai useita asetuksia: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä pyöristystä ja useita asetuksia ei oteta huomioon tuoterakenneriveillä, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen liittyvästä asetuksesta. | Tuleva aalto|
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla on kaavan mittaus:*\#* | Tämä ominaisuus odottaa. Tällä hetkellä kaavan mittaa ei oteta huomioon tuoterakenneriveillä ja kaavassa, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen liittyvästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla käytetään nimikkeen korvausta (suunnitteluryhmät): *\#* | Tämä ominaisuus odottaa. Tällä hetkellä nimikkeen korvausta (suunnitteluryhmät) ei oteta huomioon tuoterakenneriveillä ja kaavassa, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen liittyvästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Tuoterakenteen/kaavan rivit, joilla on negatiivinen määrä: *\#* | Tämä ominaisuus odottaa. Tuoterakenne- ja kaavarivit, joilla on negatiivinen määrä, sisällytetään määrään 0 (nolla), ja järjestelmä antaa varoituksen, kun suunnittelun optimointi on otettu käyttöön. Päivitä päätiedot ja varoitusten välttämiseksi. | Vuoden 2022 julkaisuaalto 2 |
@@ -93,11 +93,11 @@ Seuraavassa taulukossa esitetään eri tulokset, jotka voidaan näyttää sopiva
 | Tuotantoympäristö | Kaavan versiot, joissa on oheis-/sivutuotteita: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä kaavaversioon liittyvät oheistuotteet ja sivutuotteet ohitetaan, kun suunnittelun optimointi on käytössä. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Kaavan versiot ja saanto: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tuotto, joka liittyy kaavaversioon ohitetaan, kun suunnittelun optimointi on käytössä. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Suunnitelmat, joissa käytetään järjestystä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä järjestys ohitetaan, kun suunnittelun optimointi on käytössä riippumatta tästä asetukseen. | Vuoden 2022 julkaisuaalto 2 |
-| Tuotantoympäristö | Aloittamattomat vapautetut tuotantotilaukset, joiden aikataulutettu aloitus on ennen kuluvaa päivää: *\#* | Tämä ominaisuus odottaa. Jos tuotantotilaus tällä hetkellä viivästyy, pääsuunnittelu olettaa, että se valmistuu saman päivän aikana. Tällä on merkitystä vapautetuille tuotantotilauksille, joiden toimituspäivä on menneisyydessä mutta joita ei ole vielä saatu valmiiksi. | 2023 tai uudempi |
+| Tuotantoympäristö | Aloittamattomat vapautetut tuotantotilaukset, joiden aikataulutettu aloitus on ennen kuluvaa päivää: *\#* | Tämä ominaisuus odottaa. Jos tuotantotilaus tällä hetkellä viivästyy, pääsuunnittelu olettaa, että se valmistuu saman päivän aikana. Tällä on merkitystä vapautetuille tuotantotilauksille, joiden toimituspäivä on menneisyydessä mutta joita ei ole vielä saatu valmiiksi. | Tuleva aalto |
 | Tuotantoympäristö | Aikataulutetut resurssit, joilla on rajallinen kapasiteetti: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä rajallisella kapasiteetilla ajoitetut resurssit ohitetaan, kun suunnittelun optimointi on käytössä. Ajoittaminen tapahtuu tuotteen oletusläpimenoajan perusteella. | Vuoden 2022 julkaisuaalto 2 |
 | Tuotantoympäristö | Suunnittelussa käytetyt reitit: *\#* | Tätä ominaisuutta tuetaan. | Tuettu |
-| Tuotantoympäristö | Hajotusta käyttävä myyntirivin varaus: *\#* | Hajotustoimintoa käyttävä myyntirivin varaus ei ole tuettu, kun suunnittelun optimointi on käytössä. | 2023 tai uudempi |
-| Tuotantoympäristö | Aikataulutus tuotantotilausten hajotuksen kanssa: *\#* | Aikataulu, joka käyttää tuotantotilausten räjähdystä ei ole tuettu, kun suunnittelun optimointi on käytössä. Tuotantotilaukset voidaan ajoittaa yksitellen. | 2023 tai uudempi |
+| Tuotantoympäristö | Hajotusta käyttävä myyntirivin varaus: *\#* | Hajotustoimintoa käyttävä myyntirivin varaus ei ole tuettu, kun suunnittelun optimointi on käytössä. | Tuleva aalto |
+| Tuotantoympäristö | Aikataulutus tuotantotilausten hajotuksen kanssa: *\#* | Aikataulu, joka käyttää tuotantotilausten räjähdystä ei ole tuettu, kun suunnittelun optimointi on käytössä. Tuotantotilaukset voidaan ajoittaa yksitellen. | Tuleva aalto |
 | Tarjouspyyntö | Pääsuunnitelmat ja tarjouspyyntö käytössä: *\#* | Tämä ominaisuus odottaa. Tällä hetkellä tarjouspyyntöjä (RFQs) ei pidetä vaatimuksina, kun suunnittelun optimointi on otettu käyttöön. Ne ohitetaan riippumatta tästä asetuksesta. | Vuoden 2022 julkaisuaalto 2 |
 | Ehdotukset | Pääsuunnitelmat, joissa ehdotukset on otettu käyttöön: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Ostoehdotukset](purchase-requisitions.md) | Tuettu |
 | Varmuusmarginaalit | Kattavuusryhmät varmuusmarginaalin kanssa: *\#* | Tätä ominaisuutta tuetaan tällä hetkellä. Lisätietoja on kohdassa [Varmuusmarginaalit](safety-margins.md) | Tuettu |

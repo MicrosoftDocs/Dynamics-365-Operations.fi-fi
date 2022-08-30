@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7f5691c5784b7b381ff805b0431d8adb1a25f1cb
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266395"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334742"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Dynamics 365 Supply Chain Management 10.0.29:n esiversio (lokakuu 2022)
 
@@ -74,10 +74,7 @@ Taulukko sisältää myös ominaisuudet, jotka olivat aiemmin julkisen esiversio
 
 | Moduuli | Toiminnon nimi | Uuden ominaisuuden tila |
 | --- | --- | --- |
-| Resurssien hallinta | [Käytä sääntöjä työtilausten ryhmittelyyn ylläpitosuunnitelman ollessa käynnissä](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Pakollinen |
 | Resurssien hallinta | [Tuotannonohjausliittymän käyttöomaisuuden hallintatoiminto](../production-control/production-floor-execution-configure.md) | Pakollinen |
-| Resurssien hallinta | [Vastaperusteiset ylläpitoparannukset](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Käytössä oletusarvoisesti |
-| Resurssien hallinta | [Työtilauksen laskutus](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Pakollinen |
 | Kustannushintojen hallinta | [Muuta peruutuksen otsikkoa sulkemisen ja palautusoikaisun yhteydessä](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Pakollinen |
 | Kustannushintojen hallinta | Tyhjennä tuoterakenteen laskennan erittelyn liittyvät kustannuslaskentaversiot | Pakollinen |
 | Kustannushintojen hallinta | [Nimikkeiden hintavertailun tallennus](../cost-management/compare-item-price.md) | Pakollinen |
@@ -102,7 +99,7 @@ Taulukko sisältää myös ominaisuudet, jotka olivat aiemmin julkisen esiversio
 | Varastonhallinta | Käytetään mittayksikköä ja yksikkömäärää varastokirjauskansioissa | Pakollinen |
 | Varastonhallinta | Avaa varastokirjauskansion lukitus | Pakollinen |
 | Valmistus | [Varastomateriaalien automaattinen keräily automaattisesti kirjattuja keräysluetteloita varten](whats-new-scm-10-0-23.md) | Yleisesti saatavilla |
-| Valmistus | Ota käyttöön varastodimensiot tuotantoreititystoimintojen materiaaliluettelossa | Käytössä oletusarvoisesti |
+| Valmistus | Ota käyttöön varastodimensiot tuotantoreititystoimintojen materiaaliluettelossa | Pakollinen |
 | Valmistus | [Ota erä- ja sarjanumeroiden antaminen käyttöön, kun valmistuminen ilmoitetaan työkorttilaitteesta](../production-control/report-finished-job-device.md) | Käytössä oletusarvoisesti |
 | Valmistus | Parantunut tuotannon todellisen painon määrän keräily | Käytössä oletusarvoisesti |
 | Valmistus | [Töiden haku tuotannon työnohjausliittymälle](../production-control/production-floor-execution-configure.md) | Pakollinen |
@@ -127,20 +124,19 @@ Taulukko sisältää myös ominaisuudet, jotka olivat aiemmin julkisen esiversio
 | Pääsuunnittelu | [Suunnitellun tilauksen vahvistaminen suodatuksen kanssa](../master-planning/planning-optimization/planned-order-firming.md) | Pakollinen |
 | Pääsuunnittelu | [Suunnittelun optimoinnin suunnitellut tuotantotilaukset](../master-planning/planning-optimization/production-planning.md) | Pakollinen |
 | Pääsuunnittelu | [Ostokauppasopimukset suunnittelun optimointia varten](../master-planning/planning-optimization/purchase-trade-agreement.md) | Pakollinen |
-| Pääsuunnittelu | Resurssien suunnittelu ja ylläpito | Pakollinen |
 | Pääsuunnittelu | [Suunniteltujen tilausten tallennetut näkymät](saved-views-scm.md) | Pakollinen |
 | Hankinta | Ostotilausten veloitusten lähde- ja kohdesummat | Pakollinen |
 | Hankinta | Poista ostoehdotuksen jakelun palautuspainike käytöstä | Käytössä oletusarvoisesti |
 | Hankinta | [Ota käyttöön hankintaan liittyvien työnkulkujen nollaus](whats-new-scm-10-0-20.md) | Käytössä oletusarvoisesti |
 | Hankinta | [Rajoita ostotilausrivien määrää erätehtävää kohden](whats-new-scm-10-0-27.md) | Käytössä oletusarvoisesti |
 | Hankinta | [Yhdistä sen toimittajan taloushallinnon dimensiot, jolla on aktiivisen dimension linkin taloushallinnon dimensio ostotilauksessa](whats-new-scm-10-0-25.md) | Pakollinen |
+| Hankinta | [Kirjaa varastoitujen tuotteiden ja jäljellä olevien ei-varastoitavien tuotteiden rekisteröidyt määrät vastaanottoja ja toimittajan laskuja varten](whats-new-scm-10-0-26.md) | Yleisesti saatavilla |
 | Hankinta | [Estä yleisten budjettivarausten ylikulutus, kun työnkulussa on useita ostoehdotuksia](whats-new-scm-10-0-21.md) | Käytössä oletusarvoisesti |
 | Hankinta | [Ostosopimuksen vastuullinen osapuoli](../procurement/purchase-agreements.md) | Pakollinen |
 | Hankinta | [Ostotilausten tallennetut näkymät](saved-views-scm.md) | Pakollinen |
 | Tuotetietojen hallinta | Tuoterakenteen raportin esikäsittely aikakatkaisun välttämiseksi | Pakollinen |
 | Tuotetietojen hallinta | Taloushallinnon oletusdimensiot erikseen, kun käytetään nimikemalleja | Pakollinen |
 | Tuotetietojen hallinta | Ota tuotedimensioryhmät käyttöön nimikemalleille | Pakollinen |
-| Tuotetietojen hallinta | [Parannettu suunnittelun muutostenhallinnan määritteiden periytyvyys](../engineering-change-management/engineering-attributes-and-search.md) | Pakollinen |
 | Tuotetietojen hallinta | Nimike–viivakoodiyksikön parannukset | Pakollinen |
 | Tuotetietojen hallinta | Luo tuotevarianttien nimet uudelleen nimikkeistön perusteella | Pakollinen |
 | Tuotetietojen hallinta | [Julkaistujen tuotteiden tallennetut näkymät](saved-views-scm.md) | Pakollinen |
@@ -161,27 +157,30 @@ Taulukko sisältää myös ominaisuudet, jotka olivat aiemmin julkisen esiversio
 | Myynti ja markkinointi | [Myyntitilauksen vahvistus yhdellä napsautuksella](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Pakollinen |
 | Kuljetustenhallinta | Salli rahtilaskujen täsmäytyksen poistaminen rahtilaskun riveiltä ilman kirjatun toimittajan laskun kirjauskansiota | Käytössä oletusarvoisesti |
 | Kuljetustenhallinta | [Ota käyttöön toimittajan laskukirjauskansion luonti rahtilaskun hylkäämisen yhteydessä](whats-new-scm-10-0-20.md) | Käytössä oletusarvoisesti |
-| Kuljetustenhallinta | [Pienten pakettien lähetys](../warehousing/small-parcel-shipping.md) | Käytössä oletusarvoisesti |
+| Kuljetustenhallinta | [Pienten pakettien lähetys](../warehousing/small-parcel-shipping.md) | Pakollinen |
 | Kuljetustenhallinta | [USMCA-alkuperätodistusasiakirja](../transportation/usmca-certification-of-origin.md) | Käytössä oletusarvoisesti |
 | Varastonhallinta   | [Sijainnin lisävyöhyke](../warehousing/additional-location-zones.md) | Pakollinen |
 | Varastonhallinta   | [Peruuta työ](../warehousing/cancel-warehouse-work.md) | Pakollinen |
-| Varastonhallinta   | [Konsolidoi lähetys](../warehousing/configure-shipment-consolidation-policies.md) | Käytössä oletusarvoisesti |
+| Varastonhallinta   | [Konsolidoi lähetys](../warehousing/configure-shipment-consolidation-policies.md) | Pakollinen |
 | Varastonhallinta   | [Luo ja käsittele siirtotilauksia varastosovelluksesta](../warehousing/create-transfer-order-from-warehouse-app.md) | Pakollinen |
-| Varastonhallinta   | Cross-docking-mallit ja sijaintidirektiivit | Käytössä oletusarvoisesti |
-| Varastonhallinta   | [Erota hyllytys lähetysilmoituksista (ASN)](whats-new-scm-10-0-21.md) | Käytössä oletusarvoisesti |
-| Varastonhallinta   | [Lykätyt hyllytystoiminnot](../warehousing/deferred-processing-manual-inventory-movement.md) | Käytössä oletusarvoisesti |
+| Varastonhallinta   | Cross docking -mallit ja sijaintidirektiivit | Käytössä oletusarvoisesti |
+| Varastonhallinta   | [Erota hyllytys lähetysilmoituksista (ASN)](whats-new-scm-10-0-21.md) | Pakollinen |
+| Varastonhallinta   | [Lykätyt hyllytystoiminnot](../warehousing/deferred-processing-manual-inventory-movement.md) | Pakollinen |
 | Varastonhallinta   | Lykätty hyllytys – kontti | Käytössä oletusarvoisesti |
 | Varastonhallinta   | Lykätyn hyllytyksen käsittely – ota käyttöön tarkistusmallin ominaisuudelle, jonka käynnistintapahtumaksi on määritetty Aiempi | Pakollinen |
 | Varastonhallinta   | [Poista odotettujen vastaanottojen käyttö laatutilauksissa, joihin varastot ovat estotilassa](../inventory/inventory-blocking.md) | Käytössä oletusarvoisesti |
 | Varastonhallinta   | Ota käyttöön varaston mobiililaitteiden nopea oikeellisuustarkistus | Pakollinen |
-| Varastonhallinta   | [Joustava varastotason dimensiovaraus](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Käytössä oletusarvoisesti |
-| Varastonhallinta   | [Joustava tilaukseen sidottu rekisterikilven varaus](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Käytössä oletusarvoisesti |
-| Varastonhallinta   | [Lähtevän kuormituksen visualisointi](../warehousing/outbound-workload-visualization.md) | Pakollinen |
+| Varastonhallinta   | [GS1-viivakoodien parannettu jäsennin](../warehousing/gs1-barcodes.md) | Yleisesti saatavilla |
+| Varastonhallinta   | [Joustava tilaukseen sidottu rekisterikilven varaus](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Pakollinen |
+| Varastonhallinta   | [Joustava varastotason dimensiovaraus](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Pakollinen |
 | Varastonhallinta   | [Nimikkeen konsolidointisijainnin käyttöaste](../warehousing/item-consolidation-location-utilization.md) | Käytössä oletusarvoisesti |
 | Varastonhallinta   | Rekisterikilven vastaanottohistoria | Käytössä oletusarvoisesti |
 | Varastonhallinta   | [Manuaalisen lähetyksen konsolidointi](../warehousing/consolidate-shipments-manual-workbench.md) | Käytössä oletusarvoisesti |
+| Varastonhallinta   | [Manuaalinen siirtorivin keräyspalvelu järjestelmänvalvojalle tai vastaaville luotettaville käyttäjille](whats-new-scm-10-0-28.md) | Yleisesti saatavilla |
 | Varastonhallinta   | [Materiaalin käsittelylaitteiden rajapinta](../warehousing/mhax.md) | Pakollinen |
-| Varastonhallinta   | [Suunniteltu cross-docking](../warehousing/planned-cross-docking.md) | Käytössä oletusarvoisesti |
+| Varastonhallinta   | [Uudet kuormasuunnittelun työtilan sivut](whats-new-scm-10-0-24.md) | Yleisesti saatavilla |
+| Varastonhallinta   | [Lähtevän kuormituksen visualisointi](../warehousing/outbound-workload-visualization.md) | Pakollinen |
+| Varastonhallinta   | [Suunniteltu cross-docking](../warehousing/planned-cross-docking.md) | Pakollinen |
 | Varastonhallinta   | [Käsittele varastosovelluksen tapahtumat](../warehousing/warehouse-app-events.md) | Pakollinen |
 | Varastonhallinta   | Rinnakkaistuotteen ja sivutuotteen poispanon työmallin kyselyn parannus | Pakollinen |
 | Varastonhallinta   | [Pyöristä määrät alaspäin lähimpään myyntiyksikköön varastoon vapautuksen yhteydessä](whats-new-scm-10-0-19.md) | Pakollinen |
@@ -190,13 +189,14 @@ Taulukko sisältää myös ominaisuudet, jotka olivat aiemmin julkisen esiversio
 | Varastonhallinta   | [Tallennettu näkymä aallon käsittelyä varten](saved-views-scm.md) | Pakollinen |
 | Varastonhallinta   | [Tallennetut näkymät kuorman käsittelyä varten](saved-views-scm.md) | Pakollinen |
 | Varastonhallinta   | [Tallennetut näkymät lähetyksen käsittelyä varten](saved-views-scm.md) | Pakollinen |
-| Varastonhallinta   | Lähetysaallon etikettien tiedot | Käytössä oletusarvoisesti |
+| Varastonhallinta   | [Skannaa GS1-viivakoodit](../warehousing/gs1-barcodes.md) | Yleisesti saatavilla |
+| Varastonhallinta   | Lähetysaallon etikettien tiedot | Pakollinen |
 | Varastonhallinta   | [Paikoita yhdistetyt yksiköt](whats-new-scm-10-0-21.md) | Pakollinen |
 | Varastonhallinta   | [Käytä nopeampaa ohjelmointirajapintaa konttien sulkemiseen/uudelleenavaamiseen pakkausasemalla](whats-new-scm-10-0-21.md) | Käytössä oletusarvoisesti |
 | Varastonhallinta   | [Tarkista täydennystöitä varten valitut mallit](whats-new-scm-10-0-20.md) | Käytössä oletusarvoisesti |
-| Varastonhallinta   | [Varastosovelluksen ylemmälle tasolle siirretyt kentät](../warehousing/warehouse-app-promoted-fields.md) | Käytössä oletusarvoisesti |
-| Varastonhallinta   | [Varastosovelluksen vaiheohjeet](../warehousing/mobile-app-titles-instructions.md) | Käytössä oletusarvoisesti |
-| Varastonhallinta   | [Varastosijainnin tila](../warehousing/warehouse-location-status.md) | Käytössä oletusarvoisesti |
+| Varastonhallinta   | [Varastosovelluksen ylemmälle tasolle siirretyt kentät](../warehousing/warehouse-app-promoted-fields.md) | Pakollinen |
+| Varastonhallinta   | [Varastosovelluksen vaiheohjeet](../warehousing/mobile-app-titles-instructions.md) | Pakollinen |
+| Varastonhallinta   | [Varastosijainnin tila](../warehousing/warehouse-location-status.md) | Pakollinen |
 | Varastonhallinta   | [Warehouse Management -sovelluksen kiertotie](../warehousing/warehouse-app-detours.md) | Käytössä oletusarvoisesti |
 | Varastonhallinta   | [Aallon erätyön tiedot](../warehousing/wave-processing.md) | Pakollinen |
 | Varastonhallinta   | [Aallon suoritusilmoitukset](../warehousing/wave-execution-notifications.md) | Pakollinen |
