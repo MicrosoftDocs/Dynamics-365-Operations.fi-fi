@@ -466,6 +466,8 @@
                           items:
                             - name: Ulkoisten lahjakorttien tuki
                               href: dev-itpro/gift-card.md
+                            - name: Yritysten välisten tietojen jakaminen lahjakortteja varten
+                              href: dev-itpro/data-sharing-gift-cards.md
                     - name: RSAT
                       items:
                         - name: 'Testien tallennustoiminto ja Regression Suite Automation Tool Cloud POS:ää varten'
